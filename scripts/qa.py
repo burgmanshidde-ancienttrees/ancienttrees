@@ -2359,6 +2359,10 @@ def check_every_language_gets_the_same_controls():
                 continue
             en = twin.read_text(encoding="utf-8", errors="ignore")
             tr = page.read_text(encoding="utf-8", errors="ignore")
+            # A redirect stub under /[lang]/ (the fallback URLs of 2026-09-17,
+            # redirected to English since 2026-10-09) is not a page to compare.
+            if "Moved:" in tr and 'http-equiv="refresh"' in tr.lower():
+                continue
             for marker in PARTS:
                 if marker in en and marker not in tr:
                     key = (marker, kind)

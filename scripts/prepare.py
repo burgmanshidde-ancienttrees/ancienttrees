@@ -210,11 +210,13 @@ def pipeline_status():
     except Exception as e:  # never let the printer die on its own advice
         nxt = f"enrich.py could not run ({e})"
     print("  *** ENRICH THE INDEXED PAGES FIRST (Hidde, 2026-10-06): register record, measurement,")
-    print("      access facts, season, on tree pages that HAVE a photograph, proven cities first. ***")
+    print("      access facts, season, pin evidence, on EVERY tree page of a proven city, indexed first (2026-10-09). ***")
     print("      " + nxt)
     print("      claim it (passcheck.py --claim <city> --kind enrich, push), verify agent on the brief, then enrich.py --apply out/enrich/<city>.answer.json")
-    print("      A pass that closed nothing: enrich.py --done <city>. Only when this says nothing to do,")
+    print("      A pass that closed nothing: enrich.py --done <city> (dead-ends the briefed gaps, 90 days). Only when this says nothing to do,")
     print("      take the rest of THE LINE below (new trees, refill, backup).")
+    print("      NEW TREES ship only RICH (findable + register + measurement + access) or reader-sent (Hidde, 2026-10-09);")
+    print("      preflight refuses the rest, so a verify pass delivers those fields or files the tree as a lead.")
     # Rung 1 before any of the stages below it, because a photograph somebody
     # walked to a tree to take outranks anything the machine found by itself.
     # Printed here rather than left to memory: the queue is written by a

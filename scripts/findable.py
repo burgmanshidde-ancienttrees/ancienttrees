@@ -58,3 +58,45 @@ def on_a_small_site(tree):
 def findable(tree):
     return has_photo(tree) or tree.get("location_precision") == "confirmed" \
         or on_a_small_site(tree)
+
+
+# INDEXED again by being FINISHED, on top of a photograph (2026-10-09, Hidde:
+# "do this", on being shown that INDEX_NEEDS_PHOTO had taken 2,311 of the 2,822
+# tree pages in the proven cities out of Google, pages Google had already been
+# showing). A tree page in a proven city (data/depth-roster-frozen.json) returns
+# to the index when the enrichment pass has finished it: the tree is findable
+# on the ground AND the page carries a measurement, the official register or
+# authority record, and concrete visiting facts. That is Google's own
+# description of a page worth indexing ("a substantial, complete description",
+# "beyond the obvious") and it is what distinguishes the page from the
+# AI-drafted-story-alone shape that was demoted. scripts/enrich.py says which
+# of the three a tree still lacks (its gaps()); thin_pages.py reads this.
+# Outside the proven cities a photograph is still the only way in.
+ENRICHED_NEEDS = ("register", "measurement", "access")
+
+
+def enriched(tree, gaps):
+    """gaps: the tree's open gaps from scripts/enrich.py gaps()."""
+    return findable(tree) and not (set(ENRICHED_NEEDS) & set(gaps))
+
+
+# NO NEW TREE UNLESS ITS PAGE IS RICH OR A READER ADDED IT (Hidde, 2026-10-09:
+# "Let's not add any more trees unless rich page and or added by user right?").
+# Rich is enriched() above, the same rule that returns a page to the index, so
+# a tree that may ship is by construction a tree Google may see. A reader's
+# tree is the exception because a person who stood there is the validation
+# this whole project is walking toward (CLAUDE.md, "What validates a tree");
+# it still meets the ordinary bar, and thin_pages.py decides its indexing.
+# Trees live that day are in data/rich-baseline.json and stay (hard rule 3).
+# preflight's check_a_new_tree_is_rich_or_a_readers() reads this; False
+# switches it off and needs Hidde.
+ADD_NEEDS_RICH = True
+
+
+def reader_added(tree):
+    """A tree that came through a reader: a sighting id on it or on its
+    photograph, or a contributor's photograph (source + contributor_user_id,
+    the pair sightings_publish.py writes)."""
+    import json as _json
+    blob = _json.dumps(tree)
+    return '"sighting_id"' in blob or '"contributor_user_id"' in blob

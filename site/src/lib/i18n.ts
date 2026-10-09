@@ -14,7 +14,6 @@ import path from "node:path";
 import { DATA } from "./data-dir";
 import { BASE_URL } from "./schema";
 import { cityHasQuestionPage } from "./question-page";
-import { fitTitle } from "./title";
 
 export interface TreeTranslation {
   name: string;
@@ -2712,14 +2711,12 @@ export function pathInEveryLanguage(enPath: string): Record<string, string> {
     // A one-segment path is only a city if we publish one by that name; this is
     // what keeps /privacy and /sponsor out without naming them.
     if (!fs.existsSync(path.join(DATA, "cities", `${slug}.json`))) return {};
-    // A TREE page exists only where the city is genuinely translated, since
-    // 2026-09-17 dropped the 21,042 fallback ones. City and question pages
-    // still render as fallbacks, so those keep all seven. Offering a language
-    // whose page was just deleted is how the picker produced 48,629 dead
-    // links, and it is the third time in a day that removing pages left the
-    // links behind: the pages are the easy half.
-    const isTree = !!leafSeg && leafSeg !== "oldest-tree";
-    const usable = isTree ? languagesForCity(slug) : langs;
+    // A city, tree or question page exists only where the city is genuinely
+    // translated: the tree fallbacks went on 2026-09-17 and the city and
+    // question fallbacks on 2026-10-09. Offering a language whose page was
+    // just deleted is how the picker produced 48,629 dead links, so the one
+    // question asked here is whether an overlay exists.
+    const usable = languagesForCity(slug);
     for (const l of usable) {
       out[l] = !leaf
         ? `/${l}/${slug}`
@@ -2797,69 +2794,36 @@ export async function translatedCityPaths(lang: string, allCities: CityLike[]) {
   });
 }
 
-/** An untranslated city, dressed in the reader's language.
+/** Every city in this language: REAL translations only, since 2026-10-09.
  *
- * Hidde's call, 2026-09-17: follow the convention. AllTrails serves every trail
- * under /es/ and komoot every tour under /de-de/, with the frame in the
- * reader's language and the content in whatever language it was written in.
- * We had the opposite, translated leaf pages inside an English site, and a
- * reader who landed on /es/cadiz had 19 of 27 links back into English.
+ * The fallback layer of 2026-09-17 (an untranslated city dressed in the
+ * reader's language, the English text on a /es/ URL, canonical to English) is
+ * gone, on Hidde's "do this" of 2026-10-09. It followed the competitors'
+ * whole-site-per-locale convention and it was also 8,025 of the 11,526 pages
+ * on the recovery noindex list: seven copies of every English page, which is
+ * the scaled shape the September 2026 spam update demoted. Noindex did not
+ * make them disappear from Google's crawl, and a noindex beside a canonical to
+ * another URL is two instructions on one page. So the pages are not built;
+ * every old URL redirects to its English page (redirect-map.ts, hard rule 3),
+ * and a city regains its language URL the day a real overlay lands.
  *
- * So this builds a CityTranslation out of the ENGLISH city file. Nothing is
- * translated and nothing is invented: the frame, the navigation, the labels
- * and the buttons come from ui(lang), and the words about the tree stay as
- * they were written. The page carries rel=canonical to the English URL, which
- * is Google's documented answer for the same language on a second URL, and it
- * stays out of the sitemap. It exists to be navigated to, not to rank.
- *
- * The title is deliberately the plain pattern rather than the English page's
- * generated one. That generator lives in [city].astro and weighs an age hook
- * against a count against a length budget; porting it here would be the same
- * rule written twice, for a page that is canonicalised away and never
- * competes. A short honest title is all this page owes anybody.
- */
-export function fallbackCityTranslation(city: any): CityTranslation {
-  const d = city.data;
-  const trees: Record<string, TreeTranslation> = {};
-  for (const t of d.trees ?? []) {
-    trees[t.id] = {
-      name: t.name ?? "",
-      species: t.species ?? "",
-      age_estimate: t.age_estimate ?? "",
-      access: t.access ?? "",
-      transport: t.transport ?? "",
-      story: t.story ?? "",
-    };
-  }
-  return {
-    city: d.city,
-    title: `Ancient Trees in ${d.city}`,
-    meta_description: d.meta_description ?? "",
-    intro: d.intro ?? "",
-    // A long park name (Great Smoky Mountains National Park, 36 chars) can
-    // push the full phrase past TITLE_MAX with nothing here to shorten it,
-    // unlike the English page's own fitTitle chain. Same shorter fallback.
-    question_title: fitTitle([`What is the oldest tree in ${d.city}?`, `Oldest tree in ${d.city}`]),
-    question_meta: d.question_meta ?? "",
-    question_answer: d.question_answer ?? "",
-    question_context: d.question_context ?? "",
-    faq: Array.isArray(d.faq) ? d.faq : [],
-    trees,
-  };
-}
-
-/** Every city in this language: the real overlays, then the rest as fallbacks.
- * The `fallback` flag is what the page reads to decide its canonical. */
+ * The chrome keeps the reader's language where a page exists in it (the home,
+ * /[lang]/cities, /[lang]/explore, the translated cities) and links an
+ * untranslated city at its English URL, exactly as treeHref() has done for
+ * tree pages since 2026-09-17. The `fallback` flag stays false everywhere and
+ * is kept only so the components need no second edit. */
 export async function allCityPathsFor(lang: string, allCities: CityLike[]) {
   const real = await translatedCityPaths(lang, allCities);
-  const done = new Set(real.map((r: any) => r.params.city));
-  const rest = allCities
-    .filter((c) => !done.has(c.id))
-    .map((city) => ({
-      params: { city: city.id },
-      props: { city, tr: fallbackCityTranslation(city), fallback: true },
-    }));
-  return [...real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } })), ...rest];
+  return real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } }));
+}
+
+/** The path a city link takes in this language: the translated page where one
+ * exists, the English page otherwise. The one rule for every city link in the
+ * translated chrome (cities index, nearby cities, the home), so a removed page
+ * can never again leave its links behind (qa found 25,208 dead ones the first
+ * time pages went and links stayed, 2026-09-17). */
+export function cityHref(lang: string, slug: string): string {
+  return lang !== "en" && languagesForCity(slug).includes(lang) ? `/${lang}/${slug}` : `/${slug}`;
 }
 
 /** Every tree in this language: real translations, then the rest as fallbacks.
@@ -2885,26 +2849,12 @@ export async function allTreePathsFor(lang: string, allCities: any[], renderable
   return real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } }));
 }
 
-/** Every question page in this language, real then fallback. */
+/** Every question page in this language: real translations only (see allCityPathsFor). */
 export async function allQuestionPathsFor(lang: string, allCities: any[], renderableTrees: any) {
   const real = await translatedQuestionPaths(lang, allCities, renderableTrees);
-  const done = new Set(real.map((r: any) => r.params.city));
-  // main added cityHasQuestionPage while this branch was open: a city only
-  // earns a question page once it has enough trees to answer one. The fallback
-  // half has to honour it too, or an untranslated city would get a question
-  // page its English twin does not have.
-  const rest = allCities
-    .filter((c) => !done.has(c.id))
-    .filter((c) => cityHasQuestionPage(renderableTrees(c).length))
-    .map((city) => ({ params: { city: city.id }, props: { city, tr: fallbackCityTranslation(city), fallback: true } }));
-  return [...real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } })), ...rest];
+  return real.map((r: any) => ({ ...r, props: { ...r.props, fallback: false } }));
 }
 
-
-interface CityLike { id: string; data: any }
-
-/** getStaticPaths for a language's tree pages. The 150-250 word bar applies in
- * every language, so it is enforced here rather than trusted. */
 export async function translatedTreePaths(lang: string, allCities: any[], renderableTrees: any, treeSlugsForCity: any) {
   const paths: { params: { city: string; tree: string }; props: any }[] = [];
   for (const slug of translatedCities(lang)) {

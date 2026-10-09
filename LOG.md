@@ -11,6 +11,18 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-09 (session) - fallback pages redirected, finished pages back in the index, enrichment reworked
+
+- **Hidde:** a strategy session ("have a high level look"), then "should we get rid of the 8000 english translation sites", "is the nightrun now enriching by this priority", "have we genuinly changed our content", "Ok do this". The record is DECISIONS.md 2026-10-09.
+- **Measured first:** of 3,471 trees live on 09-27, 4 stories changed since, 215 gained a register link, 62 a girth, 70 a height, 27 a photo, 8 a confirmed pin; 245 added. 52 cities marked enriched in two days with their gaps open; the newest runs were adding trees in Salzburg and Stuttgart. 2,311 of 2,822 tree pages in the proven cities noindexed. 8,025 of 11,526 noindexed pages were fallback language pages.
+- **Done, live with this deploy:**
+  - The /[lang]/<city> and /[lang]/<city>/<question> fallback pages are no longer built; every URL redirects to its English page (redirect-map.ts). Translated chrome links untranslated cities at their English URL (`cityHref()`). Noindex list: 11,526 to about 4,500 paths.
+  - `enriched()` in scripts/findable.py: a tree page in a proven city is indexed without a photograph once it is findable and carries register, measurement and access. 182 qualify; `RETURN_PER_BUILD = 60` in thin_pages.py phases them under qa's 80-url guard.
+  - scripts/enrich.py: every tree in a proven city in scope, indexed first, 20 per brief; dead ends per tree and gap (data/enrich-done.json, 90 days) instead of a city-level done mark; `pin` gap closable with a sourced small site or a sourced coordinate within 300 m; `--status` prints what the rule returns. The old city-level ledger is dropped, deliberately. `--next` now says Singapore (19 gaps on 34 trees) instead of Tallinn.
+  - **No new tree unless rich or reader-added (Hidde, same session).** `check_a_new_tree_is_rich_or_a_readers()` in preflight, `ADD_NEEDS_RICH` and `reader_added()` in findable.py, data/rich-baseline.json (3,716 ids). BRIEF_RESEARCH.md, passcheck's brief and prepare.py say it to the runs.
+- **Not done, advised only:** the 90-day freeze on new places, the twelve hero cities, the north-star change. Hidde's to rule on.
+
+
 ## 2026-10-08 Sequoia National Park enrichment
 
 General Sherman got the NPS page for the tree, an 83.8 m height and the fee and trail facts; the other three got the fee line only. No girth (the NPS figure is a base measure), no season (no giant sequoia moment worth the trip).

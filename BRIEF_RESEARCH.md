@@ -16,6 +16,17 @@ A tree qualifies if it is genuinely old OR visually spectacular OR historically
 significant, AND publicly accessible. A register saying "protected" is not by
 itself "worth the walk": judge each one.
 
+## Since 2026-10-09: a NEW tree ships only when its page is RICH, or a reader added it
+
+Hidde, 2026-10-09, after a measurement showed that eleven days of "recovery" had changed 4 stories and added 245 trees: "Let's not add any more trees unless rich page and or added by user right?" preflight refuses a new tree that is not rich (`check_a_new_tree_is_rich_or_a_readers`), so a candidate that cannot end rich is wasted work. Rich means ALL of:
+
+- **findable**: a photograph, a confirmed pin, or a small named site (radius 50 m at most) plus a recognition line;
+- **the official register record**: the authority's own page or entry for THIS tree (register_url, or register_name plus register_id);
+- **a measurement**: girth_cm or height_m from the register, a plaque or the authority, with its source;
+- **concrete access**: free or the price, and opening days or hours where the site publishes them.
+
+Deliver those fields with the tree. A candidate that will end short on any of them goes to data/leads/ with what is missing, not to the verified file. The exception is a tree a reader sent (a sighting), which meets the ordinary bar below and ships without the richness, because a person stood there.
+
 ## Since 2026-10-01: a tree ships only with a photograph or an exact pin
 
 Google demoted the site on 09-28 for pages at scale, and Hidde's answer is "zo min mogelijk bomen met geen foto en geen exacte pin - we moeten met goede content komen". preflight now refuses a NEW tree anywhere that has neither, so a candidate that will end with neither is wasted work.
