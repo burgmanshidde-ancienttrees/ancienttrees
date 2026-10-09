@@ -849,7 +849,12 @@ def zero_click_queries(pages, pairs):
     return out
 
 
-def gsc_section(gsc):
+def gsc_section(gsc, under_table=None):
+    """The Search Console block. `under_table` is the Bing block (bing_section),
+    spliced in directly under Google's day-by-day table on Hidde's ask of
+    2026-10-09, so the two engines read side by side; it is computed by the
+    caller in its own try so a Bing failure cannot take Google down with it,
+    nor the other way round."""
     if gsc is None:
         return ("Search Console: GSC_* secrets not configured; section skipped.", None)
     days, queries, pages, gap_queries, pairs = gsc[:5]
@@ -939,6 +944,7 @@ def gsc_section(gsc):
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
+        *([under_table] if under_table else []),
         *recovery_lines(pages),
         *demand_lines(pages, pairs),
         *learning_lines(pages, pairs),
@@ -2738,21 +2744,34 @@ def app_section(today):
 
 
 def bing_section(_today=None):
-    """What Bing shows and sends, beside Google's table (2026-10-09).
+    """What Bing shows, sends, crawls and indexes, directly under Google's
+    day table (2026-10-09).
 
     Hidde opened Bing Webmaster Tools the day the noindex split went live and
     it showed more clicks than Google was sending in the same five days, a
-    number Cloudflare's referrer table had rounded to zero. It gets its own
-    block, like Apple's, so a Search Console failure cannot take it down with
-    it, and like every other fetch here it prints nothing without its key."""
-    if not (os.environ.get("BING_API_KEY") or os.environ.get("BING_WEBMASTER_KEY")):
-        return ""
+    number Cloudflare's referrer table had rounded to zero. The same split
+    left Bing as the one engine still shown 3,815 photo-less tree pages, and
+    he asked whether Bing would demote us as Google did; nothing measured it,
+    so the table carries pages crawled and pages in Bing's index beside the
+    traffic, with a one-line watchdog when the week's impressions halve or
+    the indexed count drops by a fifth (scripts/bing_search.py).
+
+    Without the key, or when the call fails, it prints one line and no table,
+    like the Search Console block does. The key is BING_API_KEY, the same
+    secret indexnow.yml passes; the first version of this block read a name
+    that was never stored and was silent for a day."""
     sys.path.insert(0, os.path.dirname(__file__))
-    from bing_search import fetch, lines
-    got = fetch(days=7)
+    from bing_search import fetch, key, lines
+    head = "**What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)"
+    if not key():
+        return head + "\n\n- Bing Webmaster Tools: BING_API_KEY not set; the Bing table is skipped."
+    try:
+        got = fetch(days=7)
+    except Exception as e:
+        return head + "\n\n- Bing Webmaster Tools: fetch failed today (%s); numbers resume tomorrow." % str(e)[:90]
     if got is None:
-        return ""
-    return "**What Bing shows and sends** (last 7 days, Bing Webmaster Tools)\n\n" + "\n".join(lines(*got))
+        return head + "\n\n- Bing Webmaster Tools: BING_API_KEY not set; the Bing table is skipped."
+    return head + "\n\n" + "\n".join(lines(*got))
 
 
 def app_store_section(_today=None):
@@ -2995,16 +3014,23 @@ def main():
 
     gsc_latest = None
     gsc_data = None
+    # Bing first, in its own try, so it can be spliced directly under Google's
+    # day table (Hidde, 2026-10-09) without either fetch taking the other down.
+    try:
+        bing_text = bing_section(today)
+    except Exception as e:
+        bing_text = "bing_section: failed today (%s)." % str(e)[:90]
     try:
         gsc_data = fetch_gsc(today)
-        gsc_text, gsc_latest = gsc_section(gsc_data)
+        gsc_text, gsc_latest = gsc_section(gsc_data, under_table=bing_text)
         blocks.append("**Where demand is going to waste**\n\n" + gsc_text)
         trend = trend_section(gsc_data)
         if trend:
             blocks.append(trend.strip())
     except Exception as e:
         blocks.append("Search Console: fetch failed today (%s); numbers resume tomorrow." % e)
-    block(bing_section, today)
+        if bing_text:
+            blocks.append(bing_text)
 
     # Monday gets the full audience cut, every other day gets the three lines
     # that can actually move. A 28-day window barely differs from yesterday's

@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Bing gets a real table under Google's, with a demotion watchdog
+
+**Why:** since the googlebot-only noindex split of 10-08, Bing is the one engine still shown the 3,815 photo-less tree pages, and Hidde asked whether Bing would demote us the way Google did on 09-28. Nothing measured Bing. The digest's Bing block from this morning had also never printed a row: it read a secret named `BING_WEBMASTER_KEY` that was never stored, while the real one is `BING_API_KEY` (indexnow.yml).
+
+**What changed:** `scripts/bing_search.py` now reads three Bing Webmaster API calls with the request shape of indexnow.py's bwt_call() and 20-second timeouts: traffic (impressions, clicks), crawl stats (pages crawled, pages in Bing's index) and the top queries. One table, the newest seven days Bing has data for (rows, not calendar days, because Bing lags two days), one row per day with impressions, clicks, CTR, pages crawled and pages in index, and a totals row. Under it one line: a **BING WATCHDOG** when the week's impressions are under half of the week before, or the indexed count is more than a fifth below the previous week's peak; otherwise the week-before figures and "no Bing demotion in sight". The block sits directly under Google's day-by-day table inside the Search Console section (`gsc_section(gsc, under_table=...)` in daily_digest.py), computed in its own try so neither fetch takes the other down; the table list and its order are unchanged. Without the key, or on a failed call, one line and no table. data-digest.yml passes `BING_API_KEY`. 19 offline tests in `scripts/test_bing_search.py`, fed with rows in Bing's own `/Date(ms)/` form; qa --source-only clean.
+
+**Dispatched:** one data-digest.yml run with force, so today's DATA.md entry carries the Bing table with real numbers; the result is checked below this line once the run finishes.
+
 ## 2026-10-09 (session) - Bing hears about changed pages again, through the Webmaster API
 
 **Why:** Hidde: "fix the bing thing with this api key". Bing's IndexNow endpoint has refused our key since 10-01 (403 UserForbiddedToAccessSite), so nothing changed on the site had reached Bing for eight days, and Bing is the index ChatGPT's search reads and the one engine that never demoted us.
