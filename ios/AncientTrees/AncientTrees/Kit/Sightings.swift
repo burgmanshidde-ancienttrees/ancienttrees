@@ -58,7 +58,7 @@ final class Sightings {
             case .mine: "Yours"
             case .sent: "Sent to us"
             case .checking: "Being checked"
-            case .published: "Official"
+            case .published: "Approved"
             case .declined: "Not this time"
             }
         }

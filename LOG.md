@@ -17,7 +17,7 @@
 
 ## 2026-10-09 (session) - "Official" for your own tree, and search stays at full height
 
-**Changed:** a reader's own tree that makes it onto Ancient Trees now says "Official" (app card, website My trees) and its page says "An official Ancient Tree"; "On the map" was wrong because your own trees are on the map too (Hidde). The map's search field now grows into the list's header as the list is dragged to full height, the Apple Maps and Google Maps convention, so search is reachable at every height (app).
+**Changed:** a reader's own tree that makes it onto Ancient Trees now says "Approved" (app card, website My trees, and its page), Google Maps' word for a contribution it accepted; "On the map" was wrong because your own trees are on the map too (Hidde). The map's search field now grows into the list's header as the list is dragged to full height, the Apple Maps and Google Maps convention, so search is reachable at every height (app).
 **Kept, on Hidde's word:** the website's photo thank-you still promises "you will hear what happened to yours"; people should end up with a message when their tree joins the database. Today that message is the "Official" upgrade in the app; a mail for it is not built.
 
 ## 2026-10-09 (night run) - Salt Lake City opened (5), Salzburg +1
@@ -53,7 +53,7 @@
 
 **Tree page:** the official register row is gone from the app (and from the feed) and moved on the website from the fact card to the first line of Sources. The line under the name is a breadcrumb, Country · City · District, both surfaces; the district is plain text. Discover more shows places only, no collections, both surfaces. The access and transport lines are reading size with a moss glyph.
 
-**Tags:** "Seen" is the white pill everywhere (the app's MineCard and the website's no-photo cards were green); the app's season chips carry the website's glyphs. Your own trees say "Your tree" until they make the map and then "Official" (renamed 10-09: your own trees are on the map too); no pending or declined wording anywhere.
+**Tags:** "Seen" is the white pill everywhere (the app's MineCard and the website's no-photo cards were green); the app's season chips carry the website's glyphs. Your own trees say "Your tree" until they make the map and then "Approved" (Google Maps' word; renamed 10-09); no pending or declined wording anywhere.
 
 **Ambassador:** the seat opens a sheet explaining the role (photographs, facts and missing trees, walks) with Apply, app and website in eight languages; sign-in from it says "Sign in to apply". The seat has been on the app's city page since 10-07 15:39; a build from before that only had it on the city's map page, which is why it looked random.
 

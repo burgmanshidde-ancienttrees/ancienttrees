@@ -60,7 +60,7 @@ export const MY_TREES_JS = `
   // (Sightings.Status.label). Copied rather than reworded: the two surfaces
   // must not describe one state in two ways.
   var LABEL = { mine: 'Yours', sent: 'Sent to us', checking: 'Being checked',
-                published: 'Official', declined: 'Not this time' };
+                published: 'Approved', declined: 'Not this time' };
 
   function esc(t) { return String(t == null ? '' : t)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }

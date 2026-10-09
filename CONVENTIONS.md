@@ -3190,3 +3190,16 @@ Hidde: "zijn die nummers echt nodig? mss subtieler?" AllTrails, Google Maps and 
 - **A destructive action is red** (Apple HIG, Buttons: "destructive" role; iOS Settings, Strava and AllTrails all draw Delete account in red). Kept as it is.
 - **An info row under a place: brand-coloured glyph in a fixed column, text at reading size** (Google Maps and Apple Maps place pages). The access and transport lines on the app's tree page were grey footnote text.
 - **A location button that has never been allowed asks** (Apple Maps' own button raises the system dialog on the first tap); only a refused permission sends you to Settings.
+
+## The word for your own tree once we accept it (2026-10-09, looked up)
+
+Asked because "On the map" (your own trees are on the map too) and "Official" both read wrong to Hidde. What the references show the contributor:
+
+| Product | While it waits | Once accepted |
+|---|---|---|
+| Google Maps (your Edits and added places) | Pending | **Approved** (older builds: Accepted); else Not applied |
+| iNaturalist (an observation) | Needs ID | **Research Grade**, a domain term for "the community confirmed it" |
+| AllTrails (a suggested trail) | moderation, no label | no label: it simply becomes searchable for everyone |
+| Atlas Obscura (a submitted place) | pending | published after editorial review |
+
+We take Google Maps' word, **Approved**, and keep the 2026-10-08 ruling that nothing is shown while it waits (the iNaturalist half). Sources: support.google.com/maps/answer/7055486, help.inaturalist.org/support/solutions/articles/151000169936, support.alltrails.com/hc/en-us/articles/360053460631.
