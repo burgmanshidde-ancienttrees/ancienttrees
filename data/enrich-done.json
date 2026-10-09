@@ -649,6 +649,49 @@
   },
   "sgp_031": {
    "season": "2026-10-09"
+  },
+  "tok_002": {
+   "measurement": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_003": {
+   "season": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_004": {
+   "register": "2026-10-09"
+  },
+  "tok_006": {
+   "measurement": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_007": {
+   "measurement": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_008": {
+   "measurement": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_009": {
+   "measurement": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_010": {
+   "measurement": "2026-10-09",
+   "season": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_012": {
+   "season": "2026-10-09",
+   "register": "2026-10-09"
+  },
+  "tok_013": {
+   "register": "2026-10-09"
+  },
+  "tok_022": {
+   "season": "2026-10-09",
+   "register": "2026-10-09"
   }
  },
  "_note": "Dead ends per tree and gap: a pass briefed on this tree looked for this and found nothing, on this date. Expires after 90 days. Written by scripts/enrich.py --apply / --done, read by --next; a city stays in the queue until every gap is closed or dead-ended."

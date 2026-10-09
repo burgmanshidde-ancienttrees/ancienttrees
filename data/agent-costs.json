@@ -10212,6 +10212,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "tokyo",
+   "kind": "enrich",
+   "tokens": 213757,
+   "trees": 7,
+   "note": "national and Tokyo register links on 5 trees, camphor access corrected, 76 tool calls"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
