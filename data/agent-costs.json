@@ -10172,6 +10172,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "berlin",
+   "kind": "enrich",
+   "tokens": 186129,
+   "trees": 18,
+   "note": "batch 3: register ids on 18, girth/height on 10 from Baumkataster WFS, 2 best_time"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
