@@ -1650,6 +1650,79 @@ def check_a_permission_covers_the_photographer_it_names():
     return out
 
 
+def check_a_readers_new_tree_carries_their_photograph():
+    """A reader's NEW tree, judged publish and now live, must carry their photograph.
+
+    Hidde, 2026-10-09, on the congratulation mail: "are we done is the workflow
+    ready". The last link was nowhere enforced. A tree a reader added reaches a
+    page through a run or a session, and everything after that keys on the
+    reader's photograph riding along with `sighting_id` and `source:
+    contributor`: sightings_link.py flips their sighting to published (the app's
+    "Approved"), and tree_approved.py sends the mail with the link. A write that
+    drops the photograph publishes the tree and tells the reader nothing, ever.
+
+    The case refused, narrowly: a sighting in data/leads/_sightings.json from a
+    reader (never our own accounts), whose verdict in data/judgements.json is
+    publish, with a published tree within 30 m that does not carry its
+    sighting_id. Attach the photograph to that tree (sightings_publish.py's
+    photo block) or, if the tree there is a different one, change the verdict.
+    """
+    import math
+    try:
+        import ours
+        leads = json.load(open("data/leads/_sightings.json", encoding="utf-8"))
+        judged = {j["id"]: j for j in json.load(open("data/judgements.json", encoding="utf-8")).get("judgements", [])}
+    except Exception:
+        return []
+    items = []
+
+    def walk(o):
+        if isinstance(o, dict):
+            if o.get("sighting_id") and o.get("latitude") is not None:
+                items.append(o)
+            else:
+                for v in o.values():
+                    walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+    walk(leads)
+
+    def metres(a, b, c, d):
+        r = math.radians
+        h = math.sin(r(c - a) / 2) ** 2 + math.cos(r(a)) * math.cos(r(c)) * math.sin(r(d - b) / 2) ** 2
+        return 2 * 6371000 * math.asin(math.sqrt(h))
+
+    trees = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees", []):
+            loc = t.get("location") or {}
+            if loc.get("latitude") is None:
+                continue
+            sids = {str(p.get("sighting_id") or "").lower()
+                    for p in [t.get("photo") or {}] + (t.get("photos") or [])}
+            trees.append((d.get("city"), t, loc, sids))
+    out = []
+    for l in items:
+        sid = str(l["sighting_id"]).lower()
+        if ours.is_ours(l.get("user_id")):
+            continue
+        j = judged.get("sight:" + sid) or {}
+        if j.get("verdict") != "publish":
+            continue
+        near = [(city, t) for city, t, loc, sids in trees
+                if metres(l["latitude"], l["longitude"], loc["latitude"], loc["longitude"]) <= 30]
+        if near and not any(sid in sids for _c, _t, _l, sids in trees):
+            city, t = near[0]
+            out.append("%s/%s stands where a reader's new tree was judged publish (sighting %s), "
+                       "but no page carries their photograph. Attach it with sighting_id and "
+                       "source contributor, or the app never shows Approved and "
+                       "tree_approved.py never mails them." % (city, t["id"], sid[:8]))
+    return out
+
+
 def check_every_submission_got_a_verdict():
     """A tree somebody sent in gets a written verdict, and Hidde can overrule it.
 
@@ -2874,6 +2947,7 @@ def main():
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
                 + check_every_submission_got_a_verdict()
+                + check_a_readers_new_tree_carries_their_photograph()
                 + check_a_permission_covers_the_photographer_it_names()
                 + check_photos_are_not_the_lead_twice()
                 + check_one_photograph_per_tree()
