@@ -2745,7 +2745,7 @@ def bing_section(_today=None):
     number Cloudflare's referrer table had rounded to zero. It gets its own
     block, like Apple's, so a Search Console failure cannot take it down with
     it, and like every other fetch here it prints nothing without its key."""
-    if not os.environ.get("BING_WEBMASTER_KEY"):
+    if not (os.environ.get("BING_API_KEY") or os.environ.get("BING_WEBMASTER_KEY")):
         return ""
     sys.path.insert(0, os.path.dirname(__file__))
     from bing_search import fetch, lines

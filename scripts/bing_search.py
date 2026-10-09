@@ -30,14 +30,15 @@ API = "https://ssl.bing.com/webmaster/api.svc/json/"
 
 
 def key():
-    return os.environ.get("BING_WEBMASTER_KEY", "").strip() or None
+    return (os.environ.get("BING_API_KEY", "").strip()
+            or os.environ.get("BING_WEBMASTER_KEY", "").strip() or None)
 
 
 def _get(method, **params):
     params = {"siteUrl": SITE, "apikey": key(), **params}
     url = API + method + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": "ancienttrees-digest"})
-    with urllib.request.urlopen(req, timeout=30) as r:
+    with urllib.request.urlopen(req, timeout=20) as r:
         return json.load(r).get("d") or []
 
 
