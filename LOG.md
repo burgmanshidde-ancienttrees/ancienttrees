@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Four more replies: Woodland Trust pauses, Freiburg points to its Naturdenkmale, Paulo declines the ambassador role and sends two photos
+
+**Woodland Trust (ATI):** all requests to show ATI records publicly are paused for at least six months, and commercial use will later be charged for. Recorded in data/register-scouting.json; the London gate stands. Reply drafted.
+**Freiburg:** the Forstamt says Freiburg has 95 tree Naturdenkmale and points to the Umweltschutzamt. The city's page names none of them and states no licence, and the Baden-Wuerttemberg register is non-commercial. Drafted: thanks to the Forstamt, and one ask to the Umweltschutzamt for the list with locations and permission to use it.
+**Paulo (Dias com Arvores, Porto):** prefers his name only as photo author, so his Porto ambassador row is removed (it was never public) and Porto shows the open seat again. He sent photos of por_002 (Magnolia of Casa Tait) and por_003 (Metrosidero of the Library), both photo-less; downloading them waits on Hidde's yes. His reply is drafted and held until they are live.
+**Wilder:** a new Meet link for the interview on 15 October, 10:00 Lisbon (11:00 NL). Confirmation drafted.
+**Drafts:** drafts/batches/replies-2026-10-09-c.json and replies-2026-10-09-paulo.json, mailcheck clean.
+
 ## 2026-10-09 (session) - Replies sent; BUND Leipzig got its thank-you twice, and the cause is closed
 
 **Sent on Hidde's "send":** Kerry Pickett (Brighton), Friends of Alexandra Park (Manchester), IVN Amersfoort.

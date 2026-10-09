@@ -16,18 +16,6 @@
     },
     {
       "user_id": null,
-      "place_slug": "porto",
-      "place_name": "Porto",
-      "public": false,
-      "since": "2026-10-02",
-      "display_name": "Paulo V. Araujo",
-      "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)",
-      "address_hmac": [
-        "7e7e48be67681f280b40e962d7c12a0689aab27adbb7f983cc964db811dddece"
-      ]
-    },
-    {
-      "user_id": null,
       "place_slug": "florence",
       "place_name": "Florence",
       "public": true,
@@ -239,39 +227,6 @@
         "cop_047",
         "cop_048",
         "cop_049"
-      ],
-      "since": "2026-10-06",
-      "mailed": []
-    },
-    "porto": {
-      "trees": [
-        "por_001",
-        "por_002",
-        "por_003",
-        "por_004",
-        "por_005",
-        "por_006",
-        "por_007",
-        "por_008",
-        "por_009",
-        "por_010",
-        "por_011",
-        "por_012",
-        "por_013",
-        "por_014",
-        "por_015",
-        "por_016",
-        "por_017",
-        "por_018",
-        "por_019",
-        "por_020",
-        "por_021",
-        "por_022",
-        "por_023",
-        "por_024",
-        "por_025",
-        "por_026",
-        "por_027"
       ],
       "since": "2026-10-06",
       "mailed": []
