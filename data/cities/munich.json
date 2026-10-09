@@ -661,12 +661,12 @@
       "age_estimate": "",
       "location": {
         "address": "",
-        "latitude": 48.171876,
-        "longitude": 11.610919,
+        "latitude": 48.17295,
+        "longitude": 11.61225,
         "neighbourhood": ""
       },
       "story": "This lime is already drawn on a plan of the park from 1807, which makes it one of very few trees in Munich with a paper trail.\n\nMunich's protection ordinance says so in as many words: historic lime, already present in plans from the year 1807. Read that as a floor rather than an age. A tree worth drawing was not a sapling, so it was standing when Bavaria was a kingdom barely a year old and when the Englischer Garten itself was under twenty years into its existence. The park had been laid out from 1789 on the orders of Elector Karl Theodor, at the urging of Benjamin Thompson, and was unusual in Europe for being open to everyone rather than to a court.\n\nWhat the tree has watched since is the whole modern history of the city, from the first generation of Müncheners allowed to walk in a royal park to whoever is crossing the meadow this afternoon.\n\nBeyond that 1807 drawing there is no age and no girth on record, so anything more precise would be invention. Large-leaved lime flowers in June, ahead of the other European limes, and an old one like this holds a broad, heavy, slightly lopsided crown that reads as a single dome from right across the grass.",
-      "location_precision": "confirmed",
+      "location_precision": "approximate",
       "curation_status": "flagged",
       "access": "Free, in the public Englischer Garten, west of the Friedrich-Ludwig-von-Sckell-Weg about 250 m south of the Amphitheater.",
       "verified_sources": [
@@ -688,12 +688,6 @@
       "official_register": {
         "name": "Naturdenkmal (Bayern LfU), no. ND-07044",
         "url": null
-      },
-      "pin_source": {
-        "kind": "enrich",
-        "url": "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete%3Anaturdenkmal_punktfoermig&srsName=EPSG%3A4326&FILTER=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsEqualTo%3E%3Cfes%3AValueReference%3Eid%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3END-07044%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsEqualTo%3E%3C%2Ffes%3AFilter%3E",
-        "date": "2026-10-09",
-        "moved_m": 155
       }
     },
     {
