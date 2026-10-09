@@ -10372,6 +10372,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "madrid",
+   "kind": "enrich",
+   "tokens": 199073,
+   "trees": 5,
+   "note": "pruned to authority sources: 2 register URLs, 3 heights, 1 girth, botanic garden access; third-party Jimdo catalogue ids withheld"
+  },
+  {
+   "date": "2026-10-09",
    "target": "athens",
    "kind": "enrich",
    "tokens": 137151,
