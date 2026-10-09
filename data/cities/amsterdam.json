@@ -66,7 +66,12 @@
       "location_precision": "confirmed",
       "paid_entry": true,
       "girth_cm": 390,
-      "how_to_recognise": "The one tree in Artis older than the zoo itself: a pedunculate oak 3.9 metres round, with two bracket fungi growing in the trunk."
+      "how_to_recognise": "The one tree in Artis older than the zoo itself: a pedunculate oak 3.9 metres round, with two bracket fungi growing in the trunk.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1693793",
+        "url": null
+      },
+      "height_m": 35
     },
     {
       "id": "ams_002",
@@ -84,7 +89,8 @@
       "story": "When the city needed to widen a bridge in 1925, Amsterdam moved two fully grown plane trees rather than fell them. Residents near Leidseplein had objected loudly enough that engineers floated the two trunks on rafts and winched them several meters sideways, roots and all, to clear space for a new roundabout. A century later both trees have more than doubled their girth: each now measures over seven meters around, the thickest trunks in the city. A small wooden woodcutter figure, carved by an anonymous sculptor in 1989, sits astride one tree appearing to saw off the very branch supporting it. When that branch actually needed removing around 2020, city gardeners moved the sculpture to the other tree rather than let the joke become true. Amsterdam has since proposed the pair for national monument status, an unusual honor for something that is, after all, still just two street trees that once got in the way of traffic planning. They stand a two minute walk from Leidseplein's trams and taxis, indifferent to both.",
       "verified_sources": [
         "https://nl.wikipedia.org/wiki/De_dikke_platanen_van_het_Leidsebosje",
-        "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/"
+        "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, public park",
       "transport": "Tram 1/2/12, Leidseplein, 2 min walk",
@@ -122,7 +128,8 @@
       "story": "One of the tallest trees in Amsterdam stands on the edge of a bicycle path, not in a forest. Sources disagree on exactly when this Canadian poplar went into the ground, sometime between the park's founding around 1870 and a specifically documented 1885, but either way it has reached roughly 38.5 meters, taller than most buildings in the surrounding Oud-Zuid neighborhood. Its trunk measures 617 centimeters around, the third thickest in the city behind only the two plane trees in Leidsebosje. Poplars grow fast and die relatively young for a tree, rarely making it past 150 years, so this one is closer to the end of its run than the beginning, and unlike an oak it will not get centuries more to look forward to. Vondelpark's own written guide to its old trees singles this poplar out specifically, distinguishing it from an ash of similar age elsewhere in the park that never got nearly as large. Whether anything in the city stands taller is an open question: the elm at the Oudemanhuispoort is the usual rival and we have found no measurement of it we trust, so if you know one, tell us. Cyclists and joggers pass beneath this crown on Van Eeghenlaan every day without registering that one of the tallest trees in a city of canals and gabled houses is a poplar nobody planted to be a landmark.",
       "verified_sources": [
         "http://www.bomeninfo.nl/amsterdam.htm",
-        "https://www.inhetvondelpark.nl/oudebomen.html"
+        "https://www.inhetvondelpark.nl/oudebomen.html",
+        "https://www.monumentalebomen.nl"
       ],
       "access": "Free, public park, open 24 hours",
       "transport": "Tram 2, Emmastraat, or Tram 3/12, Van Baerlestraat, then 5-10 min walk into the park",
@@ -136,7 +143,11 @@
       "notes": "Sources disagree on planting date (park-establishment era around 1870 vs a specific 1885 date); age range widened to cover both. Coordinates now geocoded precisely to Van Eeghenlaan 27 (Nominatim/OpenStreetMap), the address the tree stands directly opposite on the park side; multiple sources independently describe it that way (bomeninfo.nl: \"opposite house number 27\"; inhetvondelpark.nl: \"on the slope between the raised Van Eeghenlaan and the sunken Vondelpark\"). Not a surveyed trunk position, but a specific, walkable spot rather than a general park area. Cross-checked 2026-07-26 against Amsterdam's municipal tree registry (stamgegevens WFS): exactly two Populus canadensis 'Serotina' trees are marked 'Monumentale boom' in this stretch of the park, ids 989556 (planted 1862) and 989580 (planted 1892), about 30m apart and both within the existing pin's radius. Neither planting year lines up cleanly with the 140-156 age range already carried here, and there is no way from this dataset alone to tell which of the two is the specific record-holder the sources describe, so the address-based pin stands rather than moving to either registry point on a guess. No photo found for either candidate.",
       "location_precision": "confirmed",
       "girth_cm": 642,
-      "how_to_recognise": "On the edge of the cycle path opposite Van Eeghenlaan, 6.4 metres round and about 38 metres up, the third thickest trunk in Amsterdam."
+      "how_to_recognise": "On the edge of the cycle path opposite Van Eeghenlaan, 6.4 metres round and about 38 metres up, the third thickest trunk in Amsterdam.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690648",
+        "url": null
+      }
     },
     {
       "id": "ams_004",
@@ -308,7 +319,8 @@
       "verified_sources": [
         "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf",
         "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/",
-        "https://api.data.amsterdam.nl/v1/wfs/bomen/ (stamgegevens.999049)"
+        "https://api.data.amsterdam.nl/v1/wfs/bomen/ (stamgegevens.999049)",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, public street",
       "transport": "Tram 3 or 4, Amsteldijk/Rivierenbuurt area",
@@ -329,7 +341,11 @@
         "label": "May and June, when the small yellow flowers scent the whole street"
       },
       "girth_cm": 175,
-      "how_to_recognise": "On the Amstelkade along the Amstelkanaal, narrow silvery leaves that look like a willow's on a trunk 1.75 metres round."
+      "how_to_recognise": "On the Amstelkade along the Amstelkanaal, narrow silvery leaves that look like a willow's on a trunk 1.75 metres round.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696156",
+        "url": null
+      }
     },
     {
       "id": "ams_009",
@@ -348,7 +364,8 @@
       "verified_sources": [
         "https://rudolfmisset.wordpress.com/2006/06/14/vleugelnootbomen-amstelveld-de-onzorgvuldigheid-van-hans-kaljee/",
         "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf",
-        "https://api.data.amsterdam.nl/v1/wfs/bomen/ (stamgegevens 1158361, 1158363, 1158364)"
+        "https://api.data.amsterdam.nl/v1/wfs/bomen/ (stamgegevens 1158361, 1158363, 1158364)",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, public square",
       "transport": "Tram 4, Prinsengracht or Frederiksplein, few min walk",
@@ -372,7 +389,11 @@
         "kind": "catkins"
       },
       "girth_cm": 229,
-      "how_to_recognise": "The whole stand around the square rather than one trunk, the three oldest in the southwest corner by the Amstelkerk, and surface roots pushing up the paving everywhere you walk."
+      "how_to_recognise": "The whole stand around the square rather than one trunk, the three oldest in the southwest corner by the Amstelkerk, and surface roots pushing up the paving everywhere you walk.",
+      "official_register": {
+        "name": "Bijzondere Bomen (Gemeente Amsterdam), no. 341439",
+        "url": null
+      }
     },
     {
       "id": "ams_010",
@@ -437,7 +458,8 @@
       "verified_sources": [
         "https://www.bomenstichting.nl/infotheek-en-faq/informatie-over-bomen/boomhazelaar.html",
         "https://www.monumentaltrees.com/nl/nld/noordholland/amsterdam/206_hortusbotanicusuva/1892/",
-        "https://www.botanischetuinen.nl/nl/plant/1546/boomhazelaar-of-bosnoot-of-turkse-hazelaar"
+        "https://www.botanischetuinen.nl/nl/plant/1546/boomhazelaar-of-bosnoot-of-turkse-hazelaar",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Paid entry, Hortus Botanicus ticket required",
       "transport": "Tram 14, Artis stop, directly outside (same stop as the Hortus's already-published cycad)",
@@ -452,7 +474,11 @@
       "location_precision": "confirmed",
       "paid_entry": true,
       "girth_cm": 308,
-      "how_to_recognise": "Three metres round with a broad pyramidal crown, and in January the one tree in the garden hung with catkins while everything around it is bare."
+      "how_to_recognise": "Three metres round with a broad pyramidal crown, and in January the one tree in the garden hung with catkins while everything around it is bare.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686149",
+        "url": null
+      }
     },
     {
       "id": "ams_016",
@@ -470,7 +496,8 @@
       "story": "This oak does not drop its leaves in autumn. It holds them, dark and leathery, through the whole Dutch winter, and only lets go in spring when new growth physically pushes the old leaves off the twig. Turner's oak is a hybrid raised in an English nursery in the late eighteenth century, a cross between the evergreen holm oak of the Mediterranean and the pedunculate oak of northern Europe, and it took half its habit from each parent. It grows slowly and stops at around ten metres, which for an oak is nothing at all. The acorns hang on long stalks. The graft union is still visible about thirty centimetres above the ground, the seam where a nurseryman joined this tree to somebody else's roots. When that happened is contested. Amsterdam's register of protected trees says 1865; the Bomenstichting guide to the city's monumental trees says 1895. Thirty years apart, the same tree, and neither shows its working, so read the age as somewhere between 130 and 160 years. Either way it stood here for a century before the University of Amsterdam let go of the garden in 1987 and a private foundation took it on, which is why the register lists this tree's owner as a private party rather than the city. January is the month to come, when the rest of the garden is bare and this one is not. Entry needs a Hortus ticket.",
       "verified_sources": [
         "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id N1778, plant year 1865, status Beschermwaardige houtopstand, owner listed as Particulier i.e. the Hortus's own private foundation rather than the municipality)",
-        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (Bomenstichting guide, entry 'Oostenrijkse of wintergroene eik, Quercus x turneri Pseudoturneri, NR 1679235 op monumentalebomen.nl, PLANTJAAR 1895, HORTUS BOTANICUS AMSTERDAM')"
+        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (Bomenstichting guide, entry 'Oostenrijkse of wintergroene eik, Quercus x turneri Pseudoturneri, NR 1679235 op monumentalebomen.nl, PLANTJAAR 1895, HORTUS BOTANICUS AMSTERDAM')",
+        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf"
       ],
       "access": "Paid entry, Hortus Botanicus ticket required",
       "transport": "Tram 14, Artis stop, directly outside",
@@ -485,7 +512,11 @@
       "location_precision": "confirmed",
       "paid_entry": true,
       "girth_cm": 263,
-      "how_to_recognise": "A small oak, about ten metres, that keeps its dark leathery leaves right through the winter, with the graft seam still visible thirty centimetres above the ground."
+      "how_to_recognise": "A small oak, about ten metres, that keeps its dark leathery leaves right through the winter, with the graft seam still visible thirty centimetres above the ground.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679235",
+        "url": null
+      }
     },
     {
       "id": "ams_018",
@@ -503,7 +534,8 @@
       "story": "Five metres of trunk in a hundred and twenty-five years is quick work. Amsterdam's register of special trees puts this plane's planting at 1900 and its girth at 500 centimetres; the Dutch Tree Foundation, surveying the same park for its own walking guide to the city's monumental trees, describes a plane here with a trunk of almost five metres. Two institutions, one measurement, no argument.\n\nLondon planes grow fast when young, and this one had good ground for it. Wertheimpark was laid out in 1812 as Amsterdam's first public park, on the edge of the Plantage, a quarter the city had set aside for gardens rather than housing over a century earlier. The park has stayed small, barely three quarters of a hectare, which packs around fifteen trees over a century old into a two minute walk.\n\nThis is the west side specimen, on the Plantage Parklaan flank, a short distance from Jan Wolkers' Auschwitz memorial of 1977: broken mirrors set into the ground so the sky comes back cracked. The plane was already forty years old when the deportations that monument answers to began.\n\nThe city files it as beschermwaardige houtopstand, its settled protected class rather than the provisional tier. That guarantees nothing about a tree's health, but it does mean somebody with a clipboard comes back.",
       "verified_sources": [
         "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id 346253, plant year 1900, trunk girth 500 cm, status Beschermwaardige houtopstand, owner Gemeente)",
-        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (De Bomenstichting, 'Langs monumentale bomen in het centrum van Amsterdam', 2021 edition: lists a Gewone plataan at Wertheimpark (westkant), Plantage Parklaan, described as having 'een stamomtrek van bijna vijf meter' [a trunk girth of almost five metres], matching this register entry's 500cm almost exactly)"
+        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (De Bomenstichting, 'Langs monumentale bomen in het centrum van Amsterdam', 2021 edition: lists a Gewone plataan at Wertheimpark (westkant), Plantage Parklaan, described as having 'een stamomtrek van bijna vijf meter' [a trunk girth of almost five metres], matching this register entry's 500cm almost exactly)",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, public park (Wertheimpark)",
       "transport": "Tram 14, Artis stop, about 5 min walk",
@@ -516,7 +548,11 @@
         "status": "missing"
       },
       "girth_cm": 500,
-      "how_to_recognise": "On the Plantage Parklaan flank of the park, five metres round, a short walk from Jan Wolkers' memorial of broken mirrors set into the ground."
+      "how_to_recognise": "On the Plantage Parklaan flank of the park, five metres round, a short walk from Jan Wolkers' memorial of broken mirrors set into the ground.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686163",
+        "url": null
+      }
     },
     {
       "id": "ams_019",
@@ -534,7 +570,8 @@
       "story": "In a bad summer this plane stays green while its cousins go brown. Plane anthracnose, the leaf blight that leaves common planes blotchy and half bare by August, troubles the Oriental plane much less, which is one way to pick this tree out of the group standing along Wertheimpark's water.\n\nIts age is a real disagreement rather than a rounding error. Amsterdam's register of special trees gives a planting year of 1900. The Dutch Tree Foundation's guide to the city's monumental trees dates what reads as the same tree to 1880 or 1890. Nobody has reconciled the two, so the honest answer is somewhere between 126 and 146 years old, and this page is not going to pick a winner for the sake of a tidy number.\n\nThe trunk measures 4.42 metres around. Platanus orientalis is the older half of the London plane's parentage, a species from the eastern Mediterranean and western Asia that European gardens have been planting since the sixteenth century, and its leaves are cut deeper, into narrower fingers, than the hybrid lining most Amsterdam streets. In a park this small you can stand under both within two minutes and see it.\n\nIt sits in a tight group of five or six registered trees along the water, including two Caucasian wingnuts of roughly its own age, which makes this corner of the park the densest thing of its kind in central Amsterdam.",
       "verified_sources": [
         "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id 341852, plant year 1900, trunk girth 442 cm, status Beschermwaardige houtopstand, owner Gemeente)",
-        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf plus web search of its content (De Bomenstichting, 'Langs monumentale bomen in het centrum van Amsterdam', 2021 edition): independently names an Oosterse plataan (Oriental Plane) in Wertheimpark, planted 1880-1890, and separately marks a cluster along the park's water carrying an Oosterse plataan, Gewone es, two Kaukasische vleugelnoot and a Gewone plataan, matching this register cluster's contents almost entry for entry"
+        "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf plus web search of its content (De Bomenstichting, 'Langs monumentale bomen in het centrum van Amsterdam', 2021 edition): independently names an Oosterse plataan (Oriental Plane) in Wertheimpark, planted 1880-1890, and separately marks a cluster along the park's water carrying an Oosterse plataan, Gewone es, two Kaukasische vleugelnoot and a Gewone plataan, matching this register cluster's contents almost entry for entry",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, public park (Wertheimpark)",
       "transport": "Tram 14, Artis stop, about 5 min walk",
@@ -547,7 +584,11 @@
         "status": "missing"
       },
       "girth_cm": 442,
-      "how_to_recognise": "Along the water, 4.42 metres round, its leaves cut deeper into narrower fingers than the London planes beside it, and still green in August when theirs are blotchy."
+      "how_to_recognise": "Along the water, 4.42 metres round, its leaves cut deeper into narrower fingers than the London planes beside it, and still green in August when theirs are blotchy.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690797",
+        "url": null
+      }
     },
     {
       "id": "ams_020",
@@ -573,7 +614,8 @@
       },
       "verified_sources": [
         "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id 341869, species_latin Acer platanoides 'Leopoldii', plant year 1920, trunk girth 262 cm, status Beschermwaardige houtopstand, owner Gemeente)",
-        "General species reference for Acer platanoides 'Leopoldii' (a 19th-century Belgian ornamental cultivar, cross-checked against Dutch nursery and arboretum descriptions) confirms the cultivar's known trait of pink-and-white variegated spring growth, consistent with why the municipality would single out this individual specimen for the special-trees register rather than a plain Norway maple"
+        "General species reference for Acer platanoides 'Leopoldii' (a 19th-century Belgian ornamental cultivar, cross-checked against Dutch nursery and arboretum descriptions) confirms the cultivar's known trait of pink-and-white variegated spring growth, consistent with why the municipality would single out this individual specimen for the special-trees register rather than a plain Norway maple",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, public park (Wertheimpark)",
       "transport": "Tram 14, Artis stop, about 5 min walk",
@@ -586,7 +628,11 @@
         "status": "missing"
       },
       "girth_cm": 262,
-      "how_to_recognise": "Along the water beside the planes and the wingnuts, 2.6 metres round; in late April it is the one in the group with pink and white streaked new leaves."
+      "how_to_recognise": "Along the water beside the planes and the wingnuts, 2.6 metres round; in late April it is the one in the group with pink and white streaked new leaves.",
+      "official_register": {
+        "name": "Bijzondere Bomen (Gemeente Amsterdam), no. 341869",
+        "url": null
+      }
     },
     {
       "id": "ams_021",
@@ -604,7 +650,8 @@
       "story": "The tallest tree in Amsterdam stands in a courtyard barely wider than it is tall. The Hollandse iep in the Oudemanhuispoort reaches 35 metres, higher than anything else in the city, and the enclosure is the reason. Brick buildings surround the garden on four sides, so a tree here has exactly one direction available to it, and this one took it. The register puts the planting at 1890.\n\nThe Oudemanhuispoort was built in the eighteenth century as an almshouse for the city's elderly poor. It belongs to the University of Amsterdam now, and the vaulted passage along one side has carried a second-hand book market for well over a century. Thousands of students walk past the trunk every day on the way to a lecture, which is a lot of foot traffic for a tree almost nobody has heard of.\n\nThe species is the other half of it. Dutch elm disease reached the Netherlands in the 1920s and killed elms here by the hundred thousand, and Amsterdam, an elm city by tradition, lost a great deal of its stock. This one was already about thirty years old when the disease arrived, and it is still going.\n\nGo on a weekday, in from the Kloveniersburgwal end, and look into the southwest corner. It is not a tree that announces itself from the street, because from the street you cannot see it at all.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1692908: Hollandse Iep - Oudemanhuispoort, In de zuidwesthoek van de binnentuin van de Oudemanhuispoort, planting band 1890-1900, reason for protection 'dendrologisch', owner gemeente, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free. The inner courtyard of the Oudemanhuispoort passage, open in the daytime on weekdays.",
       "transport": "Metro or tram to Rokin, about 5 min walk",
@@ -617,7 +664,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 472,
-      "how_to_recognise": "In the southwest corner of the inner courtyard, 35 metres up inside an enclosure barely wider than it is tall, and not visible from the street at all."
+      "how_to_recognise": "In the southwest corner of the inner courtyard, 35 metres up inside an enclosure barely wider than it is tall, and not visible from the street at all.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692908",
+        "url": null
+      }
     },
     {
       "id": "ams_022",
@@ -635,7 +686,8 @@
       "story": "Wilhelmina had been queen for eight years before anyone crowned her. She inherited the throne in 1890 at the age of ten, her mother governed as regent until she came of age, and the inauguration finally happened in September 1898. Amsterdam marked it by planting a lime, and the lime is still standing on the Kalverstraat.\n\nThe address is the odd part. The Kalverstraat is the busiest shopping street in the Netherlands, a canyon of chain stores that hundreds of thousands of people walk down in a week, and the coronation tree sits just off it by the Amsterdam Museum, in the complex that was the city's civic orphanage for four centuries.\n\nCommemorative trees are usually the most forgettable objects in a city. They go in at a ceremony, the plaque weathers, and within a generation nobody remembers the occasion. This one outlived its occasion in the most literal way available: Wilhelmina reigned for fifty-eight years, through two world wars and five years of broadcasting to the occupied Netherlands from London, and abdicated in 1948. The tree was fifty. Early in 2025 it was added to Amsterdam's list of two hundred champion trees.\n\nWhat it is not is old. At around 128 it is younger than half the trees on this page, and limes routinely pass three hundred. We have not established which lime it is; several species and hybrids are planted here under the same name. If you know, tell us.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686754: Wilhelminalinde, Amsterdam Museum, Kalverstraat 92, Amsterdam, planting band 1890-1900, reason for protection 'herdenkingsboom', owner gemeente, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, beside the Amsterdam Museum on the Kalverstraat.",
       "transport": "Tram to Spui or Dam, about 3 min walk",
@@ -648,7 +700,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 251,
-      "how_to_recognise": "Just off the Kalverstraat beside the Amsterdam Museum, 2.5 metres round. Nobody has established which lime it is, so tell us if you know."
+      "how_to_recognise": "Just off the Kalverstraat beside the Amsterdam Museum, 2.5 metres round. Nobody has established which lime it is, so tell us if you know.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686754",
+        "url": null
+      }
     },
     {
       "id": "ams_023",
@@ -666,9 +722,10 @@
       "story": "The best evidence for this tree's age is a photograph. In Museum Van Loon's own collection sits a picture from 1923 showing the beech as a young tree, which is what puts its planting in the 1890s and makes it around 130 years old now.\n\nIt stands in one of the last intact canal-house gardens in Amsterdam. The house at Keizersgracht 672 went up in 1672, its first resident was Ferdinand Bol, who trained in Rembrandt's workshop, and the Van Loon family bought it in 1884. Behind the formal parterres stands a coach house dressed up with a classical front, and the garden between the two survived the century in which most Amsterdam back gardens were built over, subdivided or paved for cars.\n\nA copper beech is not a wild plant in any meaningful sense. It is a colour mutation of the common beech that appears now and then in European woods and was propagated by nurseries because people liked the look of it, so every purple beech in a nineteenth-century garden is there because somebody chose it and paid for it. This one was a wealthy family's ornamental decision, taken when their house was already two hundred years old, and it is still standing exactly where they put it.\n\nThe garden opens with a museum ticket. It is small, walled and quiet, in the middle of a canal ring that is neither.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1692220: Bruine beuk, Tuin Museum Van Loon, Keizersgracht 672, Amsterdam, planting band 1890-1900, reason for protection 'monumentaal', owner stichting, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
-      "access": "Paid entry, the garden of Museum Van Loon.",
+      "access": "Paid entry: the garden is part of Museum Van Loon, which charges admission and is open daily 10:00 to 17:00 according to the museum's own site.",
       "transport": "Tram 24 to Keizersgracht, about 3 min walk",
       "photo": {
         "url": null,
@@ -680,7 +737,19 @@
       "location_precision": "confirmed",
       "paid_entry": true,
       "girth_cm": 366,
-      "how_to_recognise": "In the walled garden behind the house, purple-leaved and 3.7 metres round, standing between the formal parterres and the classical coach house front."
+      "how_to_recognise": "In the walled garden behind the house, purple-leaved and 3.7 metres round, standing between the formal parterres and the classical coach house front.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692220",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when the purple leaves turn copper before they fall",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ams_024",
@@ -698,7 +767,8 @@
       "story": "This poplar was planted as architecture. The Rijksmuseum opened in 1885 and the ground around it was laid out as an outdoor annexe of the collection, filled with fragments rescued from demolished Dutch buildings: gateways, doorframes, a pavilion. Early in the twentieth century a line of Italian poplars went in to frame one of those historic gates, and this is one of them.\n\nThe choice makes sense the moment you look at the tree. Populus nigra 'Italica' barely spreads. It grows as a narrow column, which is why it was planted in rows across Europe for two centuries to line roads, mark boundaries and give flat country a vertical. In a garden of salvaged stone doorways it does the work of a pilaster.\n\nThe register puts the planting between 1910 and 1920, so it is around 110 years old, and for this cultivar that is a considerable age. Lombardy poplars are fast, soft-wooded and short-lived by the standards of the trees on this page, and most of those planted in the same decade elsewhere in Europe are long gone. This one stood through the wartime evacuation of the museum's collection to shelters outside the city, and through the ten-year rebuild that gutted the building and reopened it in 2013, while the garden around it was redesigned more than once.\n\nFree, with the garden. The Jan Luijkenstraat side is the quiet way in.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686058: Italiaanse populier, Tuin bij Rijksmuseum, Jan Luijkenstraat t.o.nr 18,Amsterdam, planting band 1910-1920, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, the Rijksmuseum garden, open daily.",
       "transport": "Tram 2 or 12 to Rijksmuseum, about 3 min walk",
@@ -711,7 +781,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 502,
-      "how_to_recognise": "The narrow column of a tree framing one of the salvaged stone gateways, on the Jan Luijkenstraat side of the garden, five metres round."
+      "how_to_recognise": "The narrow column of a tree framing one of the salvaged stone gateways, on the Jan Luijkenstraat side of the garden, five metres round.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686058",
+        "url": null
+      }
     },
     {
       "id": "ams_025",
@@ -729,7 +803,8 @@
       "story": "Nobody knows when this elm was planted and the register says so outright: history unknown, planting somewhere between 1900 and 1910. What is documented is what stands in front of it. The Van Randwijk monument on the Weteringplantsoen carries the best known line in Dutch resistance writing, Henk van Randwijk's warning that a people which yields to tyrants will lose more than life and property, and then the light goes out. Van Randwijk edited the underground paper Vrij Nederland through the occupation.\n\nThe tree behind the monument is a wych elm, and that is the interesting part of the label. Ulmus glabra is usually counted as the only elm truly native to the Netherlands, and it is highly susceptible to Dutch elm disease, which arrived in the 1920s and worked through the country for the rest of the century. A mature wych elm standing in a Dutch city centre is not a common thing. This one is around 120 years old, so it was here before either world war and has stood through both.\n\nIt sits in a strip of grass and gravel between the Weteringschans and the water, the sort of triangle a city ends up with where two roads fail to meet cleanly. Free, always open, and a few minutes' walk from the Rijksmuseum. Three more trees on this list stand within two minutes of it.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686109: Ruwe iep, Weteringplantsoen achter het Van Randwijk-monument, Amsterdam, planting band 1900-1910, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://www.monumentalebomen.nl"
       ],
       "access": "Free, public planting, always open.",
       "transport": "Tram to Weteringcircuit, the stop is beside the plantsoen",
@@ -742,7 +817,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 357,
-      "how_to_recognise": "Directly behind the Van Randwijk monument on the grass strip, 3.6 metres round, and the only mature wych elm in this group."
+      "how_to_recognise": "Directly behind the Van Randwijk monument on the grass strip, 3.6 metres round, and the only mature wych elm in this group.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686109",
+        "url": null
+      }
     },
     {
       "id": "ams_026",
@@ -760,7 +839,8 @@
       "story": "There is a ginkgo growing on a traffic island on the Weteringschans, and it is the least likely thing on this list. The species is around 200 million years old, older than the flowering plants, and it survives in the wild in a handful of Chinese valleys. Its Dutch name, tempelboom, records how it got through: monks planted it in temple grounds and kept it going while it disappeared everywhere else. This one lives between lanes of traffic.\n\nAmsterdam put it in somewhere between 1910 and 1920 and the register records no history for it whatsoever, which suits a tree that simply gets on with things. Ginkgo tolerates exactly the conditions that kill other street trees: compacted soil, road salt, exhaust, root space measured in single square metres. Several ginkgos within two kilometres of the Hiroshima hypocentre survived the bomb and are still growing.\n\nCome in November. For eleven months this is a green tree with odd fan-shaped leaves that people walk past without a glance. Then over about a week the whole crown turns a flat saturated gold, and then it drops the lot, often in a day or two, leaving a gold ring on the tarmac around it. Traffic islands rarely get a moment like that.\n\nFree, always visible, and easy to miss for most of the year. The wych elm, the leaning poplar and the plane are all a minute or two away.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686108: Tempelboom, Verkeersplein Weteringplantsoen, Amsterdam, planting band 1910-1920, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://www.monumentalebomen.nl"
       ],
       "access": "Free, on the public traffic island, always visible.",
       "transport": "Tram to Weteringcircuit, the stop is beside the tree",
@@ -780,7 +860,11 @@
         "label": "mid November, when the fans turn gold and drop within days"
       },
       "girth_cm": 391,
-      "how_to_recognise": "On the traffic island itself, 3.9 metres round, with fan-shaped leaves in two lobes; in November it drops the whole gold crown onto the tarmac within a day or two."
+      "how_to_recognise": "On the traffic island itself, 3.9 metres round, with fan-shaped leaves in two lobes; in November it drops the whole gold crown onto the tarmac within a day or two.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686108",
+        "url": null
+      }
     },
     {
       "id": "ams_027",
@@ -798,7 +882,8 @@
       "story": "Every year Amsterdam inspects this poplar and decides whether it can stay another one. It leans, visibly and considerably, out over the Weteringschans, and a trunk more than five metres round leaning towards a busy road is a question a city has to keep answering. So far the answer has been yes.\n\nThe reason it can be is under the pavement. A tree growing off vertical loads one side of its root plate far harder than the other and responds by laying down extra wood exactly where the pull is, thickening those roots into anchors. Leaning is not the same as unstable, and this one has had a century to engineer itself. The city prunes the heavy limbs on the road side to keep the load down, and inspects it annually.\n\nIt is a Canadapopulier, a cross between two other poplars that appeared in France around 1750 and was then planted across the continent for its speed. Speed is the point of the species and also the catch: poplars grow fast, get large and are not built for the long term, which makes a specimen of this girth at 116 to 126 years old worth stopping for.\n\nThe street it leans over was laid on Amsterdam's city ramparts after they were levelled between 1820 and 1840, and kept the name Schans until 1850. Free, always there, and impossible to confuse with the trees around it.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686110: Scheve populier Weteringschans, Amsterdam, Eerste Weteringplantsoen (Weteringschans, hoek Weteringcircuit), planting band 1900-1910, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://maps.amsterdam.nl/bomen_bijzonder/"
       ],
       "access": "Free, public planting, always open.",
       "transport": "Tram to Weteringcircuit, on the corner of the Weteringcircuit",
@@ -811,7 +896,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 555,
-      "how_to_recognise": "The one leaning visibly out over the Weteringschans, five and a half metres round, with the heavy limbs on the road side kept pruned back."
+      "how_to_recognise": "The one leaning visibly out over the Weteringschans, five and a half metres round, with the heavy limbs on the road side kept pruned back.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686110",
+        "url": null
+      }
     },
     {
       "id": "ams_028",
