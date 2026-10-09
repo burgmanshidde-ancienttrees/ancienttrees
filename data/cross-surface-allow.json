@@ -1,5 +1,11 @@
 {
   "_note": "Feed fields that legitimately live on one surface only. Every entry needs a reason, so an exception is a decision rather than a silence (scripts/crosscheck.py, 2026-09-12). Empty is the healthy state: the two surfaces agreed field for field on the day this was written.",
-  "web_only": [],
+  "web_only": [
+    {
+      "field": "tree.register",
+      "why": "The official register record is evidence for Google and for a reader arriving from search; it is on the tree page's fact card for that reason. Hidde, 2026-10-09: 'app doesnt need to please google right'. A person standing at the tree with the app does not need the registry number, so the app does not read it.",
+      "date": "2026-10-09"
+    }
+  ],
   "app_only": []
 }
