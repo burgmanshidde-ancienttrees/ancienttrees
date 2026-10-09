@@ -37,18 +37,20 @@
       "height_m": 20.1,
       "location": {
         "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
-        "latitude": 21.3167,
-        "longitude": -157.8592,
+        "latitude": 21.3159422,
+        "longitude": -157.8578728,
         "neighbourhood": "Chinatown / Downtown Honolulu"
       },
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 1)",
         "http://www.edohawaii.com/baobab/foster.html",
-        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/",
+        "https://www.honolulu.gov/dpr/honolulu-botanical-gardens/foster-botanical-garden/",
+        "https://www.openstreetmap.org/node/2485949469 (Adansonia digitata, Foster Botanical Garden; the only baobab in the garden)"
       ],
-      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "access": "Paid entry: adults $5, Hawaii residents $3, children 6 to 12 $1, under 5 free, annual family pass $25. Open daily 9am to 4pm (last admission 3:30pm), closed Christmas Day and New Year's Day.",
       "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "story": "Honolulu calls this one the Dead Rat Tree. The nickname is the seed pods: grey, furred, hanging on long stalks all around the crown, and once you have seen them you cannot unsee them. Under the pods is an African baobab, planted in Foster Botanical Garden in the 1930s and already carrying a trunk close to thirteen metres around. Ninety-odd years for that waistline is quick work, even for a species that grows a trunk largely to store water in it. The city's Exceptional Trees register gives its height as about twenty metres and rates its condition good.\n\nBaobabs belong to dry African savanna, where they stand bare for months and flower at night for bats. This one has spent its whole life on fourteen acres of downtown Honolulu at the edge of Chinatown, on ground that was a private botanical collection long before the city took it over. It sat out a 1.26 million dollar renovation that closed the garden completely, and was still standing when the gates reopened in August 2023.\n\nAbout twenty five of Oahu's hundred or so protected Exceptional Trees grow inside these same fourteen acres. That is the argument for the entrance fee: nowhere else on the island puts this many designated trees within a five minute walk of each other.",
       "photo": {
@@ -58,7 +60,17 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the grey furred seed pods hanging on long stalks all around the crown, and by a trunk close to thirteen metres round. It stands in Foster Botanical Garden, about twenty metres tall."
+      "how_to_recognise": "You can recognise it by the grey furred seed pods hanging on long stalks all around the crown, and by a trunk close to thirteen metres round. It stands in Foster Botanical Garden, about twenty metres tall.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 1",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.openstreetmap.org/node/2485949469 (Adansonia digitata, Foster Botanical Garden; the only baobab in the garden)",
+        "date": "2026-10-09",
+        "moved_m": 161
+      }
     },
     {
       "id": "hnl_002",
@@ -71,18 +83,20 @@
       "height_m": 15.4,
       "location": {
         "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
-        "latitude": 21.3167,
-        "longitude": -157.8592,
+        "latitude": 21.3169168,
+        "longitude": -157.8578994,
         "neighbourhood": "Chinatown / Downtown Honolulu"
       },
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 420)",
         "https://en.wikipedia.org/wiki/Bodhi_Tree_in_Honolulu",
-        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/",
+        "https://www.honolulu.gov/dpr/honolulu-botanical-gardens/foster-botanical-garden/",
+        "https://www.openstreetmap.org/node/2485949492 (Ficus religiosa tagged as a state exceptional tree, Foster Botanical Garden)"
       ],
-      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "access": "Paid entry: adults $5, Hawaii residents $3, children 6 to 12 $1, under 5 free, annual family pass $25. Open daily 9am to 4pm (last admission 3:30pm), closed Christmas Day and New Year's Day.",
       "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "story": "The tree the Buddha is said to have sat under has descendants, and one of them grows in downtown Honolulu. This sacred fig was raised from a cutting of the Bodh Gaya lineage in India and arrived as a sapling in 1913, a gift to Mary Foster from Anagarika Dharmapala, the Sri Lankan reformer who spent his life campaigning to return that Indian temple to Buddhist hands. Foster planted it in her garden and went on to become a major patron of Buddhism in Hawaii, paying for the islands' first Buddhist temple.\n\nThe tree is about 113 years old now, roughly fifteen metres tall, with a trunk over seven metres around, and the city's Exceptional Trees register rates its condition excellent. Sacred figs are easy to identify once someone shows you the leaf: heart-shaped, drawn out into a long thin tail, hung so loosely on its stalk that the whole crown moves in air you cannot feel on your own skin. A tree that moves on a still day is the sort of thing people build religions around.\n\nIt is one of the few trees in this garden whose value has nothing to do with its size. There are bigger and far stranger specimens within a hundred metres of it. This is the one with a paper trail back to India and a woman who knew exactly what she had been given.",
       "photo": {
@@ -92,7 +106,17 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the leaves, heart shaped and drawn out into a long thin tail, hung so loosely that the crown moves on a still day. It stands in Foster Botanical Garden, fifteen metres tall."
+      "how_to_recognise": "You can recognise it by the leaves, heart shaped and drawn out into a long thin tail, hung so loosely that the crown moves on a still day. It stands in Foster Botanical Garden, fifteen metres tall.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 420",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.openstreetmap.org/node/2485949492 (Ficus religiosa tagged as a state exceptional tree, Foster Botanical Garden)",
+        "date": "2026-10-09",
+        "moved_m": 137
+      }
     },
     {
       "id": "hnl_003",
@@ -112,9 +136,10 @@
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 116)",
         "https://www.honolulumagazine.com/see-photos-of-some-of-honolulus-exceptional-trees/",
-        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/",
+        "https://www.honolulu.gov/dpr/honolulu-botanical-gardens/foster-botanical-garden/"
       ],
-      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "access": "Paid entry: adults $5, Hawaii residents $3, children 6 to 12 $1, under 5 free, annual family pass $25. Open daily 9am to 4pm (last admission 3:30pm), closed Christmas Day and New Year's Day.",
       "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
       "location_precision": "approximate",
       "curation_status": "flagged",
@@ -126,7 +151,11 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the buttress roots, thin walls rising past head height and dividing the ground around the trunk into rooms. It stands in Foster Botanical Garden, 27 metres tall and its oldest tree."
+      "how_to_recognise": "You can recognise it by the buttress roots, thin walls rising past head height and dividing the ground around the trunk into rooms. It stands in Foster Botanical Garden, 27 metres tall and its oldest tree.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 116",
+        "url": null
+      }
     },
     {
       "id": "hnl_004",
@@ -137,18 +166,20 @@
       "height_m": 29.0,
       "location": {
         "address": "180 N. Vineyard Blvd, Honolulu, HI 96817 (Foster Botanical Garden)",
-        "latitude": 21.3167,
-        "longitude": -157.8592,
+        "latitude": 21.3160363,
+        "longitude": -157.857258,
         "neighbourhood": "Chinatown / Downtown Honolulu"
       },
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 118)",
         "https://www.facebook.com/FosterBotanicalGarden/posts/cannonball-tree-couroupita-guianensis-watch-out-for-falling-cannonballs-this-tre/929431895882545/",
-        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/"
+        "https://www.staradvertiser.com/2023/08/27/features/honolulus-foster-botanical-garden-reopens-as-a-spruced-up-oasis/",
+        "https://www.honolulu.gov/dpr/honolulu-botanical-gardens/foster-botanical-garden/",
+        "https://www.openstreetmap.org/node/2485949477 (Cannonball Tree, Foster Botanical Garden)"
       ],
-      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "access": "Paid entry: adults $5, Hawaii residents $3, children 6 to 12 $1, under 5 free, annual family pass $25. Open daily 9am to 4pm (last admission 3:30pm), closed Christmas Day and New Year's Day.",
       "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "story": "The garden has put up a sign beside this tree warning visitors about falling cannonballs, and it is not a joke. Couroupita guianensis grows its fruit straight out of the trunk rather than from the branches, woody spheres somewhere between a grapefruit and a shot put, hanging on thick stalks that push out of the bark itself. Botanists call the habit cauliflory. Gravity calls it a hazard. A ripe one comes down from height and splits open with a smell that carries.\n\nThe flowers work the same way and are the reason to come: waxy, orange and pink, each one a shell-shaped hood over a dense spray of stamens, opening in ropes down the trunk at eye level while the crown sails on 29 metres above. It is a South American tree, from the Amazon and the Guianas, soft-wooded and fast, and the city's Exceptional Trees register rates this specimen's condition excellent. It is the most straightforwardly strange thing in a garden that is not short of competition.\n\nOne thing about it is missing: nobody has recorded when it went into the ground. If you know the planting date, or know someone at the garden who does, tell us and it goes on the page.",
       "photo": {
@@ -158,7 +189,17 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the flowers and the woody fruit growing straight out of the trunk at eye level, and by the sign warning about falling cannonballs. It stands in Foster Botanical Garden, 29 metres tall."
+      "how_to_recognise": "You can recognise it by the flowers and the woody fruit growing straight out of the trunk at eye level, and by the sign warning about falling cannonballs. It stands in Foster Botanical Garden, 29 metres tall.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 118",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.openstreetmap.org/node/2485949477 (Cannonball Tree, Foster Botanical Garden)",
+        "date": "2026-10-09",
+        "moved_m": 214
+      }
     },
     {
       "id": "hnl_005",
@@ -177,9 +218,10 @@
       },
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 114)",
-        "http://hawaii50trees.blogspot.com/2009/01/week-of-january-25-quipo-tree-at-foster.html"
+        "http://hawaii50trees.blogspot.com/2009/01/week-of-january-25-quipo-tree-at-foster.html",
+        "https://www.honolulu.gov/dpr/honolulu-botanical-gardens/foster-botanical-garden/"
       ],
-      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "access": "Paid entry: adults $5, Hawaii residents $3, children 6 to 12 $1, under 5 free, annual family pass $25. Open daily 9am to 4pm (last admission 3:30pm), closed Christmas Day and New Year's Day.",
       "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
       "location_precision": "approximate",
       "curation_status": "ai_generated",
@@ -191,7 +233,11 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the trunk, smooth and greenish grey, swollen low down and tapering upward more like a water tank than a tree. It stands near the centre of Foster Botanical Garden."
+      "how_to_recognise": "You can recognise it by the trunk, smooth and greenish grey, swollen low down and tapering upward more like a water tank than a tree. It stands near the centre of Foster Botanical Garden.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 114",
+        "url": null
+      }
     },
     {
       "id": "hnl_006",
@@ -270,7 +316,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them by the arrangement, four banyans ringing the park's central fountain. They stand in Thomas Square, across Beretania Street from the Honolulu Museum of Art."
+      "how_to_recognise": "You can recognise them by the arrangement, four banyans ringing the park's central fountain. They stand in Thomas Square, across Beretania Street from the Honolulu Museum of Art.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 1290",
+        "url": null
+      },
+      "height_m": 18.3
     },
     {
       "id": "hnl_008",
@@ -304,7 +355,11 @@
       },
       "verify_notes": "Species, girth (320cm, checked consistent with the recorded 101.6cm diameter) and height (47ft/14.3m) come from the City and County of Honolulu's Exceptional Trees register (Act 105 of 1975, CC0), cross-checked against the department's own earlier printed survey of the same designation. Both are the same city program rather than fully independent sources, and no age is recorded anywhere, so this stays flagged. The register's coordinates are only grid-rounded to about 1.1km, so the pin marks the park itself (Wikipedia's own coordinate for the park matches the register's rounded point) rather than the tree's exact spot within it.",
       "story": "Ala Moana Beach Park has roughly forty banyans planted for its 1937 Banyan Garden, and one tree in the park belongs to none of them. Officially it is a Black Olive, Bucida buceras, but it earned its nickname, the Geometry Tree, from the way it grows: branches stack outward in flat, level tiers rather than the tangled shape most trees settle into. Some Black Olives are pruned hard to force that look; this one has done most of the work on its own.\n\nThe species is native to the Caribbean and Central America and arrived in Hawaii as a landscaping ornamental, prized for exactly this tiered habit. The City and County of Honolulu designated it an Exceptional Tree under the state's 1975 tree-protection law, recording a trunk just over three metres round and a crown reaching about fourteen metres, rated in excellent health at its last survey.\n\nAla Moana itself has been public land since the 1930s, built from reclaimed wetland into Honolulu's busiest beach park, free to enter every day between four in the morning and ten at night. No ticket, no gate, and the tree stands among the park's open lawns rather than off any marked path, worth hunting down once you know the odd, stacked shape to look for.",
-      "how_to_recognise": "You can recognise it by the branches, stacked outward in flat level tiers rather than tangled. It stands on the open lawns of Ala Moana Beach Park, apart from the forty banyans of the Banyan Garden."
+      "how_to_recognise": "You can recognise it by the branches, stacked outward in flat level tiers rather than tangled. It stands on the open lawns of Ala Moana Beach Park, apart from the forty banyans of the Banyan Garden.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 69",
+        "url": null
+      }
     },
     {
       "id": "hnl_009",
@@ -342,7 +397,7 @@
       "story": "When the University of Hawaii tore down Gilmore Hall in 1973, one thing did not move. Art faculty and students had grown fond of the baobab already standing beside the old building, and when its replacement went up, the tree stayed exactly where it was and the new Art Building was built around it. More than fifty years later it still stands pressed against the exterior wall, close enough that photographs make it look almost part of the structure.\n\nThe University calls it the largest baobab in the United States, and the claim is plausible: baobabs are native to Africa and Madagascar and rarely reach this size far outside the tropics they evolved in, let alone on a university campus in the middle of the Pacific. The tree was already about 30 years old when the building rose around it, which puts its planting somewhere in the early 1940s, before Hawaii became a state.\n\nNobody has taped its girth for the record, and no register lists one. What survives instead is the story everyone on campus already knows: a tree stubborn enough, and loved enough, that an entire building changed shape to keep it standing.",
       "how_to_recognise": "You can recognise it by its baobab trunk pressed right against the Art Building's outer wall, the building built around it. It stands beside McCarthy Mall on the UH Manoa campus.",
       "official_register": {
-        "name": "Exceptional Trees register (City and County of Honolulu, Act 105 of 1975), no. dataset object 1294 (Baobab, 'UHM campus near Art building'; no measurements recorded)",
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 1294",
         "url": null
       }
     },
@@ -377,7 +432,12 @@
       },
       "verify_notes": "Register: Hawaii Exceptional Trees list, id 119, locality 'University of Hawaii - Manoa, Sinclair Library', girth 313.9cm, height ~18m, vitality Good. hawaii.edu itself unreachable from this environment; used the Wayback Machine's archived copies of UH Botany faculty member G. Carr's 'Campus Plants' pages instead (independently fetchable, UH's own primary source): page8.htm places it 'Makai of visitor's parking kiosk, Ewa-mauka of Bachman'; page14.htm cross-references it as a landmark between Bachman Hall and Sinclair Library, consistent with the register locality. Alive-now: UH News's own 'Image of the Week: Cannonball flower' (archived, dated 2025-01-15) is recent, dated, first-party evidence of blooming. A widely repeated claim that it was planted in 1933 by playwright Thornton Wilder appears only in search-summary form on unreachable hawaii.edu pages and is not used per the search-summary-is-a-lead rule; age left empty. No tree-level coordinate exists; pin anchored on Bachman Hall's geocoded building coordinate as the nearest fixed point and marked approximate.",
       "story": "Its flowers grow straight out of the trunk, and so, eventually, does fruit the size of cannonballs. Couroupita guianensis is native to the rainforests of Guiana, and on the UH Manoa campus, tucked between Bachman Hall and Sinclair Library near the visitor parking kiosk, one specimen has grown a trunk 314 centimetres round with the species' strange, tangled flower stems still running down its bark.\n\nThe flowers themselves are large, fragrant and short-lived, which is presumably why UH's own news office photographed one in bloom for its January 2025 'Image of the Week'. The fruit that follows is genuinely cannonball-sized, round and hard-shelled, and it drops rather than clings, so anyone standing directly underneath should keep half an eye up.\n\nNo age is recorded for this tree anywhere UH has published. A widely repeated claim online says it was planted in 1933 by the playwright Thornton Wilder during a stint teaching at the university; it could not be independently confirmed this pass, so it is left out rather than repeated on faith. Free to see, on open campus ground, a short walk from Sinclair Library.",
-      "how_to_recognise": "You can recognise it by the tangled flower stems running down the bark of a trunk 314 centimetres round. It stands between Bachman Hall and Sinclair Library, near the visitor parking kiosk."
+      "how_to_recognise": "You can recognise it by the tangled flower stems running down the bark of a trunk 314 centimetres round. It stands between Bachman Hall and Sinclair Library, near the visitor parking kiosk.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 119",
+        "url": null
+      },
+      "height_m": 18.0
     },
     {
       "id": "hnl_011",
@@ -409,7 +469,11 @@
       },
       "verify_notes": "Register: Hawaii Exceptional Trees list, id 1208, locality 'Nuuanu Park', girth 585.2cm, height ~15.5m, vitality Excellent. A second, adjacent register entry (id 1207, Chinese Banyan, same locality, 1332cm girth) is a lead, not shipped: no independent write-up naming that specific banyan was found. honolulumagazine.com's Playground Guide to Nuuanu Valley Park independently confirms the address as a free public park with 'enormous monkeypod trees', describing gigantic lower branches low enough that children climb them, with a rock placed underneath one to help access it. A separate honolulumagazine.com exceptional-trees gallery independently corroborates the park as a real, current Exceptional Tree site (naming a different registered mango there). Alive-now: a 2026-09-01 Hawaii Public Radio storm-damage roundup on Oahu's exceptional trees named other sites with storm losses and did not mention Nuuanu Park, the best available signal though not proof. Species named 'Monkeypod' locally, matched to Rain Tree (Samanea saman) per hard rule 9's canonical-name convention already used for Kauai and Singapore. No age or planting record found; girth alone cannot fix one honestly for a fast-growing species, so left empty.",
       "story": "Someone has wedged a rock under one of the low branches here, presumably to help visitors reach it, because the rain trees of Nuuanu Valley Park, known locally as monkeypods, grow their canopy close enough to the ground that children climb, sit and walk along the branches themselves. The largest carries a trunk 585 centimetres round, registered by the City and County of Honolulu as an Exceptional Tree and rated in excellent health.\n\nThe rain tree, Samanea saman, is native to Central and South America and was brought to Hawaii as shade. It grows fast and wide rather than tall, which is exactly what makes its low, spreading branches so easy to reach. Nuuanu Valley Park itself sits a short drive up Pali Highway from downtown Honolulu, an ordinary public playground and picnic ground with its own parking lot, and a second Exceptional Tree, an enormous banyan more than thirteen metres round, grows in the same park.\n\nNo age or planting record survives, and girth alone cannot fix one honestly for a fast-growing species like this. Free, open, no ticket, and the shade is the point.",
-      "how_to_recognise": "You can recognise it by the low spreading branches, close enough to the ground to sit on, with a rock wedged under one of them. It stands in Nuuanu Valley Park on a trunk 585 centimetres round."
+      "how_to_recognise": "You can recognise it by the low spreading branches, close enough to the ground to sit on, with a rock wedged under one of them. It stands in Nuuanu Valley Park on a trunk 585 centimetres round.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 1208",
+        "url": null
+      }
     },
     {
       "id": "hnl_012",
@@ -478,7 +542,12 @@
         ],
         "kind": "flowers",
         "label": "late March, when it flowers in garish pink shaving brushes"
-      }
+      },
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 667",
+        "url": null
+      },
+      "height_m": 10.2
     },
     {
       "id": "hnl_014",
@@ -503,7 +572,12 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "A sign in Foster Botanical Garden sends visitors away from its own baobab. The oldest baobab in town, it says, is not the one in the garden but this one, under a mile away on the lawn of a working hospital.\n\nOlder, then, but not bigger. This trunk goes 11.8 metres round and Foster's is thicker still, so the claim rests entirely on age, and age is the one thing nobody has. The city's Exceptional Trees register records the species, the girth and a condition of good, and leaves the age blank. The enthusiast survey that has catalogued Honolulu's baobabs one by one, and that walked here with a hand-held GPS to fix the spot on the ground, found no planting date either. A second Honolulu photographer gets as far as massive and ancient. So nobody has dated this tree. If you know when it went in, tell us and it goes on the page.\n\nWhat is not in question is the bulk. Adansonia digitata puts on that kind of trunk largely to hold water through a dry African season it will never meet on Punchbowl Street, and having been planted somewhere it never has to ration anything, it has simply kept going. It stands outdoors on the street side of the hospital grounds, free to walk up to, ten minutes from Iolani Palace.",
-      "how_to_recognise": "You can recognise it by the trunk, 11.8 metres round. It stands outdoors on the street-facing grounds of the Queen's Medical Center; the campus's other listed tree, the pink bombax by the roundabout, is a third as thick."
+      "how_to_recognise": "You can recognise it by the trunk, 11.8 metres round. It stands outdoors on the street-facing grounds of the Queen's Medical Center; the campus's other listed tree, the pink bombax by the roundabout, is a third as thick.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 2",
+        "url": null
+      },
+      "height_m": 16.6
     },
     {
       "id": "hnl_015",
@@ -575,7 +649,12 @@
         "note": "Banyan on sand by the beach, iNat location accuracy 1.4 km, nothing shows the hotel Banyan Court.",
         "width": 375,
         "height": 500
-      }
+      },
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 392",
+        "url": null
+      },
+      "height_m": 22.9
     },
     {
       "id": "hnl_017",
@@ -587,21 +666,32 @@
       "girth_cm": null,
       "location": {
         "address": "2330 Kalakaua Avenue, Waikiki, Honolulu, HI 96815 (centre of the International Market Place, under the open-air lattice canopy structure)",
-        "latitude": 21.2776233,
-        "longitude": -157.8269007,
+        "latitude": 21.2778615,
+        "longitude": -157.826757,
         "neighbourhood": "Waikiki"
       },
       "verified_sources": [
         "https://www.hawaiimagazine.com/new-international-market-place-to-save-this-iconic-100-year-old-waikiki-banyan-tree/",
         "https://www.honolulumagazine.com/the-rise-fall-and-rebirth-of-waikikis-international-market-place/",
-        "https://en.wikipedia.org/wiki/International_Market_Place"
+        "https://en.wikipedia.org/wiki/International_Market_Place",
+        "https://www.openstreetmap.org/node/4949949283 (Ficus benghalensis landmark, about 30 m from our pin)"
       ],
       "access": "Free. Stands at the centre of the open-air International Market Place shopping centre in Waikiki, publicly walkable with no ticket or entry fee.",
       "transport": "Central Waikiki, on Kalakaua Ave; TheBus routes along Kalakaua/Kuhio stop within a few minutes' walk.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Don the Beachcomber ran his office out of this tree. In the 1950s the restaurateur Donn Beach had a workspace built up in the branches of the banyan at the centre of the International Market Place, and the tree has outlasted him and two versions of the shopping centre around it.\n\nHow old it is depends on who you ask, and the gap is wide enough to notice. Hawaii Magazine and Wikipedia both settle for a century old. Honolulu Magazine tells a longer story: planted in the mid-1850s by the New Zealand entrepreneur Harry Macfarlane, on ground that later belonged to King Lunalilo, who died there in 1874, and after him to Queen Emma. That version makes it about 170. We have not picked a winner, so the honest answer is somewhere between 100 and 176 years, and it was standing here long before the market place opened around it in 1957.\n\nWhat is not in dispute is 2013. The whole place was demolished and rebuilt at a cost in the hundreds of millions, and the banyan stayed. The new open-air canopy was engineered to route its steel around the tree rather than take the tree out, and an arborist looks it over daily. That arborist, Steve Nimz, has been minding it since 1971.\n\nIt is free to walk up to, in the open middle of the shops on Kalakaua Avenue.",
-      "how_to_recognise": "You can recognise it by the roof: the lattice canopy over the International Market Place was built to bend around this one tree. It stands alone at the centre of the open-air mall, off Kalakaua Avenue."
+      "how_to_recognise": "You can recognise it by the roof: the lattice canopy over the International Market Place was built to bend around this one tree. It stands alone at the centre of the open-air mall, off Kalakaua Avenue.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 394",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.openstreetmap.org/node/4949949283 (Ficus benghalensis landmark, about 30 m from our pin)",
+        "date": "2026-10-09",
+        "moved_m": 30
+      }
     },
     {
       "id": "hnl_018",
@@ -626,7 +716,12 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "Once a year part of the University of Hawaii's Manoa campus starts to smell like a stable, and it takes people a while to work out why. The source is this one. Sterculia foetida flowers once a year, the flowers stink for about three weeks, and the Latin means foul-smelling; the campus calls it the skunk tree. A library staffer told the student paper that on a hot, humid day the smell settles into the open space and sits there. Richard Criley, emeritus professor of tropical plant and soil sciences, was kinder: this is one of the sort of tree that calls attention to itself.\n\nWhen to catch it is not settled. The Ka Leo O Hawaii feature that put all this on the record in 2019 has it blooming around that May, while other accounts give a January to March window, so pick your month at your own risk. Nobody has dated the tree either. The city register gives a trunk 2.9 metres round on a tree only about 7.5 metres tall, condition good, and no age at all.\n\nNor is it perfectly clear which tree. The register puts its entry near George Hall. The same student feature describes two skunk trees on campus, one by Sinclair Library and one beside the Architecture Building, and names neither as George Hall. All of those stand a few hundred metres apart, so the pin sits on George Hall and says approximate. In flower, your nose will settle it.",
-      "how_to_recognise": "You can recognise it in flower by the smell, and otherwise by a trunk 2.9 metres round on a tree only about 7.5 metres tall. It stands in open landscaping near George Hall; a second skunk tree grows elsewhere on campus."
+      "how_to_recognise": "You can recognise it in flower by the smell, and otherwise by a trunk 2.9 metres round on a tree only about 7.5 metres tall. It stands in open landscaping near George Hall; a second skunk tree grows elsewhere on campus.",
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 910",
+        "url": null
+      },
+      "height_m": 7.5
     },
     {
       "id": "hnl_019",
@@ -686,9 +781,10 @@
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 106)",
         "https://www.queerhistoriesofhawaii.org/rainbow-shower-tree",
-        "https://plantpono.org/pono-plants/cassia-x-nealiae-rainbow-shower/"
+        "https://plantpono.org/pono-plants/cassia-x-nealiae-rainbow-shower/",
+        "https://www.honolulu.gov/dpr/honolulu-botanical-gardens/foster-botanical-garden/"
       ],
-      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "access": "Paid entry: adults $5, Hawaii residents $3, children 6 to 12 $1, under 5 free, annual family pass $25. Open daily 9am to 4pm (last admission 3:30pm), closed Christmas Day and New Year's Day.",
       "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
       "location_precision": "approximate",
       "curation_status": "ai_generated",
@@ -704,6 +800,10 @@
         "note": "Cannonball tree (Couroupita), not a rainbow shower tree.",
         "width": 2448,
         "height": 3264
+      },
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 106",
+        "url": null
       }
     },
     {
@@ -723,9 +823,10 @@
       },
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json (City and County of Honolulu, Exceptional Trees register, register_id 594)",
-        "https://www.hawaii.edu/news/2020/03/02/cultivating-a-uh-legacy/"
+        "https://www.hawaii.edu/news/2020/03/02/cultivating-a-uh-legacy/",
+        "https://www.honolulu.gov/dpr/honolulu-botanical-gardens/foster-botanical-garden/"
       ],
-      "access": "Paid entry: $1-5 general admission, $3 for Hawaii residents, $25 annual family pass. Open 9am-4pm daily except Christmas and New Year's Day.",
+      "access": "Paid entry: adults $5, Hawaii residents $3, children 6 to 12 $1, under 5 free, annual family pass $25. Open daily 9am to 4pm (last admission 3:30pm), closed Christmas Day and New Year's Day.",
       "transport": "On N. Vineyard Blvd in downtown Honolulu, on the edge of Chinatown; several TheBus routes run along Vineyard Blvd past the garden entrance.",
       "location_precision": "approximate",
       "curation_status": "flagged",
@@ -738,6 +839,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Exceptional Trees (City and County of Honolulu, Department of Parks and Recreation), no. 594",
+        "url": null
       }
     }
   ]

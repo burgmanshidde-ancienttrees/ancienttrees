@@ -10204,6 +10204,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "oahu",
+   "kind": "enrich",
+   "tokens": 183767,
+   "trees": 17,
+   "note": "Honolulu register ids and measurements, Foster garden prices, 4 OSM pins"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,

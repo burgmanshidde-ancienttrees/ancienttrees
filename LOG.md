@@ -15,6 +15,7 @@
 **Rome:** MASAF register ids on 15 trees (all by distance and genus; rom_007 at 32 m, the only one past 30), girth and height on rom_007, Orto Botanico hours on rom_004. No season peaks (no striking moments in those species files); rom_002 to 004 have no matching MASAF row.
 **Rome batch 2:** MASAF ids on rom_029 to 031, girth on the almond. rom_021 and rom_022 (Villa Borghese) have no register row within 195 m.
 **Palermo:** MASAF ids on 11 trees (all 0 m, species agreeing); Villa Malfitano is NOT free (15 euro timed visits, booking, from the Whitaker Foundation), corrected on pal_009 and pal_013. Fig girths not taken: the register's 24 to 36 m reads as the whole buttressed mass. The Piazza Marina fig had an illness story in Il Post, March 2026, not read; worth a life check.
+**Oahu:** Honolulu Exceptional Trees register ids on 17 trees and girth or height on 15, Foster Botanical Garden prices and hours on seven trees, four pins moved to OpenStreetMap tree nodes (hnl_001, 002, 004, 017; still approximate). The first apply refused the pins because the source was a node id, not a URL; re-applied with OSM URLs.
 **Open:** 15 Berlin trees still have no measurement source (monumentaltrees.com refuses automated fetches); recorded as 90-day dead ends.
 
 ## 2026-10-09 (night run) - Seville enrichment batch 3
