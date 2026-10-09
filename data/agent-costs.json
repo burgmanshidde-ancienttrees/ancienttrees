@@ -10236,6 +10236,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "munich",
+   "kind": "enrich",
+   "tokens": 163719,
+   "trees": 20,
+   "note": "batch 3: LfU ids on 19, 16 register pins, 1 girth; muc_037/049 duplicate flagged"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
