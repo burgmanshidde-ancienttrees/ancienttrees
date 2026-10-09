@@ -149,3 +149,22 @@ website or in the app (the knock runs `--sync`). The reply carries one line for 
 > Your name is on the [city] page now. If you sign in on ancienttrees.app or in
 > the app with this email address, you'll see the ambassador badge on your own
 > profile too.
+
+## The cold ask, Hidde's own text (2026-10-09)
+
+For organisations and people who have never written to us. Mail 1 asks for help only; the ambassador role is made official in mail 2, once they have said yes or sent something.
+
+**Mail 1** (Hidde: "Were working on this app which include the page of city. Were looking for a local enthusiast to help us improve this list add photos and trees etc. Could you help us or know somebody who can? And than maybe make the ambassador official in mail 2"):
+
+> Subject: Could you help with the [city] page?
+>
+> Hi,
+>
+> We're working on an app about remarkable old trees, and it has a page for [city]: [link]. We're looking for a local enthusiast to help us improve the list: add photos and trees, and tell us what's missing.
+>
+> Could you help us, or do you know somebody who can?
+>
+> Thanks either way,
+> Hidde
+
+**Mail 2**, to anyone who says yes or sends a tree or photo: thank them for what they sent, then make it official: "We'd love to name you as the [city] ambassador on the page, the person who helps look after it." Their name only on their yes (two consents, CLAUDE.md), and the line about signing in with this address so the badge finds their account.
