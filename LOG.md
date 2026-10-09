@@ -15,10 +15,10 @@
 **Done:** one `has_lead()` test in sightings_publish.py that knows `none` (the inbox's ranking reads the same list); an approve now PROMOTES an extra of the same sighting instead of showing the picture twice, and drops its separately named file. The sighting was reopened, re-queued, looked at again (a broad domed sycamore maple on the Vonarstraeti corner, the street sign in frame, a tour group beneath it) and published through the script as the lead: rey_003 carries `source: contributor` with the reader's id, the judgement record says publish with his overrule as the reason. Preflight 0 problems; qa runs in CI (no build here).
 **Notes:** the same reader's other photographs (rey_001, rey_002 and Seville's El Gran Capitan) were already live; nothing else of theirs is held. rey_003's pin was already moved to his fix on 2026-10-05 and is untouched.
 
-## 2026-10-09 (session) - "Official" for your own tree, and search stays at full height
+## 2026-10-09 (session) - "Approved" for your own tree, and search stays at full height
 
 **Changed:** a reader's own tree that makes it onto Ancient Trees now says "Approved" (app card, website My trees, and its page), Google Maps' word for a contribution it accepted; "On the map" was wrong because your own trees are on the map too (Hidde). The map's search field now grows into the list's header as the list is dragged to full height, the Apple Maps and Google Maps convention, so search is reachable at every height (app).
-**Kept, on Hidde's word:** the website's photo thank-you still promises "you will hear what happened to yours"; people should end up with a message when their tree joins the database. Today that message is the "Official" upgrade in the app; a mail for it is not built.
+**Kept, on Hidde's word:** the website's photo thank-you still promises "you will hear what happened to yours"; people should end up with a message when their tree joins the database. Today that message is the "Approved" label in the app; a mail for it is not built.
 
 ## 2026-10-09 (night run) - Salt Lake City opened (5), Salzburg +1
 
