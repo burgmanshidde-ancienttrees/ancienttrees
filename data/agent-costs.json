@@ -10220,6 +10220,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "munich",
+   "kind": "enrich",
+   "tokens": 162271,
+   "trees": 19,
+   "note": "batch 1: LfU Bayern register ids on 19 trees, 4 girths"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
