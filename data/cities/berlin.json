@@ -640,9 +640,10 @@
       },
       "story": "Forty five metres from Pfaueninsel's Great Oak stands a second, stranger oak that Berlin protects for an entirely different reason. Where its famous neighbour earned Naturdenkmal status for size and disputed age, this one is registered for rarity alone: a cut-leaf sessile oak, Quercus petraea var. laciniata, a naturally occurring variety with deeply dissected, almost fern-like foliage instead of the plain oval leaf every other oak on the island carries. The two trees stand close enough that a visitor could assume the register was describing the same tree twice. It is not. The government ordinance that protects both lists them under separate numbers, at separate coordinates, for separate reasons, one for its bulk, the other purely because its leaf shape almost never occurs in the wild. No age is recorded for this one at all, since rarity rather than antiquity is the whole case for protecting it, and no source beyond the designation record itself has been found describing this specific tree. Find the Great Oak first, then look forty five metres further for its odd, deeply cut cousin, the rarer of the two despite standing in its more famous neighbour's shadow.",
       "verified_sources": [
-        "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, DL-DE-Zero 2.0)"
+        "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, DL-DE-Zero 2.0)",
+        "https://www.spsg.de/schloesser-gaerten/objekt/pfaueninsel/"
       ],
-      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
+      "access": "Reached only by the Pfaueninsel ferry: 6 EUR (5 reduced) return, tickets online or at the machine at the dock (coins only for cash). Ferry and island run March to October daily 10:00 to 18:00, November and December 10:00 to 16:00; last crossing 45 minutes before closing. Walking the island is then free.",
       "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly 10-15 minutes into the island to the area northeast of the Schloss, close to the Great Oak.",
       "photo": {
         "url": null,
@@ -653,7 +654,11 @@
       "curation_status": "flagged",
       "notes": "Berlin Naturdenkmal register_id 6-108/B, designated 1993-03-02, reason 'Seltenheit' (rarity) for the cut-leaf variety specifically ('Geschlitzblaettrige Trauben-Eiche' in the ordinance text). Distinctness confirmed against the already-published ber_011 (45m away, register 6-102/B): baumkunde.de's entry for ber_011's exact coordinates describes an ordinary crown with no cut-leaf note, while the ordinance separately and specifically designates 6-108/B for its dissected foliage at a distinct coordinate, so these are two real trees, not one register duplicate. Only one source found (the register/ordinance, one government designation read two ways, not two independent sources); two verify passes searched baumkunde.de, ostdeutsches-baumarchiv.de and monumentaltrees.com (403-blocked) without finding a tree-specific second source. Commons geosearch within 100m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the deeply cut, almost fern-like leaves, unlike the plain oval leaf of every other oak on the island. It stands forty five metres from the Great Oak, roughly 150 metres northeast of the Schloss."
+      "how_to_recognise": "You can recognise it by the deeply cut, almost fern-like leaves, unlike the plain oval leaf of every other oak on the island. It stands forty five metres from the Great Oak, roughly 150 metres northeast of the Schloss.",
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-108/B",
+        "url": null
+      }
     },
     {
       "id": "ber_016",
@@ -1014,6 +1019,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 7-15/B",
+        "url": null
       }
     },
     {
@@ -1102,6 +1111,10 @@
         ],
         "label": "July to September: long green catkins of winged nutlets hang from every branch",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-40/B",
+        "url": null
       }
     },
     {
@@ -1219,7 +1232,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-77/B-1",
+        "url": null
+      }
     },
     {
       "id": "ber_030",
@@ -1412,6 +1429,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-36/B",
+        "url": null
       }
     },
     {
@@ -1452,6 +1473,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-90/B",
+        "url": null
       }
     },
     {
@@ -1485,6 +1510,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-38/B",
+        "url": null
       }
     },
     {
@@ -1518,6 +1547,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-37/B",
+        "url": null
       }
     },
     {
@@ -1558,6 +1591,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-43/B",
+        "url": null
       }
     },
     {
@@ -1598,6 +1635,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-35/B",
+        "url": null
       }
     },
     {
@@ -1632,6 +1673,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-31/B",
+        "url": null
       }
     },
     {
@@ -1665,6 +1710,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-49/B",
+        "url": null
       }
     },
     {
@@ -1705,6 +1754,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-42/B",
+        "url": null
       }
     },
     {
@@ -1746,6 +1799,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-44/B",
+        "url": null
       }
     },
     {
@@ -1779,6 +1836,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-102/B-2",
+        "url": null
       }
     },
     {
@@ -1812,6 +1873,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-53/B",
+        "url": null
       }
     },
     {
@@ -1853,6 +1918,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-54/B",
+        "url": null
       }
     },
     {

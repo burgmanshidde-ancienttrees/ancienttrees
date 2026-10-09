@@ -10164,6 +10164,14 @@
  "2026-10-09": [
   {
    "date": "2026-10-09",
+   "target": "berlin",
+   "kind": "enrich",
+   "tokens": 165195,
+   "trees": 18,
+   "note": "batch 2: register ids on 17 trees, ferry fare on one; ber_031 possibly felled"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,

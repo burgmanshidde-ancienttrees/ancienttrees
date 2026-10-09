@@ -10,6 +10,7 @@
 ## 2026-10-09 (night run, 22:08 window) - Bath and Berlin enrichment
 
 **Done:** Bath (UK, no per-tree register): current access and price for the Great Dell redwood and the Prior Park yews, everything else a dead end. Berlin: girth on the Humboldt, Steinlanke and both Pfaueninsel oaks, height on the Humboldt Oak and the Queen's Oak, register ids 6-101/B and 6-102/B on the Pfaueninsel oaks. The Berlin register carries no measurements.
+**Berlin batch 2:** register ids on 17 more trees (all 0 m from our pins), true ferry fare and hours on ber_015. **ber_031 may be felled** (Wikipedia list, Nov 2024); noted in CURATION.md for a rung-3 check.
 **Open:** 15 Berlin trees still have no measurement source (monumentaltrees.com refuses automated fetches); recorded as 90-day dead ends.
 
 ## 2026-10-09 (night run) - Seville enrichment batch 3
