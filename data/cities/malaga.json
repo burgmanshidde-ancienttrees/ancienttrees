@@ -71,7 +71,11 @@
       },
       "paid_entry": true,
       "how_to_recognise": "In the Mediterranean collection rather than in any old grove: an olive dug up whole 40 km along the coast and replanted here.",
-      "girth_cm": 330
+      "girth_cm": 330,
+      "official_register": {
+        "name": "Historic Plants (Jardin Botanico-Historico La Concepcion, Ayuntamiento de Malaga)",
+        "url": "https://laconcepcion.malaga.eu/en/the-garden/historics-plants/detail-historics-plants/The-olive-tree/"
+      }
     },
     {
       "id": "mlg_002",
@@ -186,7 +190,8 @@
         ],
         "label": "October into November, when it drops its leaves and flowers pink at the same time"
       },
-      "how_to_recognise": "Built into the remodelled paving near the cathedral rather than cleared for it, and carrying one of the city's ten singular-tree tags."
+      "how_to_recognise": "Built into the remodelled paving near the cathedral rather than cleared for it, and carrying one of the city's ten singular-tree tags.",
+      "height_m": 23
     },
     {
       "id": "mlg_005",
@@ -239,9 +244,10 @@
       "story": "Hackberry wood was cheap and ordinary enough that for centuries nobody thought to plant it for looks: it went into barrel staves, walking sticks, fishing rods and farm tools, and children used its small dark berries as ammunition for peashooters, the kind of tree valued for use rather than admired for size. This one at La Concepcion grew past all of that. Standing beside a building the garden calls the Casita de los Cipreses (Cypress Cottage), it now measures roughly 24 metres tall with a trunk 3.72 metres around, dimensions the garden's own record and an independent tree-history blog both describe as probably the largest and best-preserved hackberry anywhere in Malaga province. Celtis australis can live to six hundred years in the right conditions, which makes this specimen, at an estimated two centuries old, still comfortably short of its own species' ceiling. It grows within a botanical collection assembled since 1855 specifically to bring together trees too large or too rare to encounter anywhere else nearby, and next to the garden's showier imports, palms and figs from three continents, this unglamorous, useful species holds its own purely on scale.",
       "verified_sources": [
         "https://laconcepcion.malaga.eu/en/the-garden/historics-plants/detail-historics-plants/The-hackberry/",
-        "https://www.arbolesconhistoria.com/2019/06/14/jardin-historico-la-concepcion-malaga-arboles/"
+        "https://www.arbolesconhistoria.com/2019/06/14/jardin-historico-la-concepcion-malaga-arboles/",
+        "https://laconcepcion.malaga.eu/en/visits/"
       ],
-      "access": "Paid entry, Jardin Botanico-Historico La Concepcion",
+      "access": "Paid entry: standard ticket 5.20 euro, reduced 3.10 euro, bought at the box office on arrival. Open 9:30 to 20:30 from 1 April to 30 September and 9:30 to 17:30 from 1 October to 31 March. Closed Mondays, 25 December and 1 January.",
       "transport": "Bus from city centre to the garden entrance on Camino del Jardin Botanico",
       "photo": {
         "url": null,
@@ -253,7 +259,13 @@
       "notes": "Age (approximately 200 years), height (24m) and perimeter (3.72m) corroborated across the garden's own official page and an independent tree-history blog (arbolesconhistoria.com), both giving matching figures. No usable photo found on Wikimedia Commons or iNaturalist for this specific specimen despite a genuine search. Location confirmed 2026-07-27: an OpenStreetMap tree node (species-tagged Celtis australis) sits about 8m from the garden's own stated location for this tree, 'al lado de la Casita de los Cipreses' (beside the Cypress Cottage building this tree is named for), an independent geocode of that named building landing within the same few metres.",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "Beside the cypress cottage in the botanical garden, a plain grey trunk and small dark berries among a collection otherwise made of exotics."
+      "how_to_recognise": "Beside the cypress cottage in the botanical garden, a plain grey trunk and small dark berries among a collection otherwise made of exotics.",
+      "official_register": {
+        "name": "Historic Plants (Jardin Botanico-Historico La Concepcion, Ayuntamiento de Malaga)",
+        "url": "https://laconcepcion.malaga.eu/en/the-garden/historics-plants/detail-historics-plants/The-hackberry/"
+      },
+      "girth_cm": 372,
+      "height_m": 24
     },
     {
       "id": "mlg_007",
@@ -290,7 +302,11 @@
       "location_precision": "approximate",
       "paid_entry": true,
       "how_to_recognise": "Beside the waterfall, its branches in perfectly regular tiers around one straight trunk, and the tallest of its kind in the province.",
-      "height_m": 46
+      "height_m": 46,
+      "official_register": {
+        "name": "Especies monumentales (Jardin Botanico-Historico La Concepcion, Ayuntamiento de Malaga)",
+        "url": "https://laconcepcion.malaga.eu/es/el-jardin/especies-monumentales/detalle-de-la-especie/La-araucaria-o-pino-de-pisos/"
+      }
     },
     {
       "id": "mlg_008",
@@ -321,7 +337,8 @@
       "curation_status": "flagged",
       "notes": "Both sources report the same official TreeTags figures (19m height, 0.9m diameter); treated as two republications of one municipal source. No planting date or age documented; described as mature rather than assigned a specific figure. No usable photo found for this specific specimen.",
       "location_precision": "approximate",
-      "how_to_recognise": "The one native tree in a park assembled from five continents: dark evergreen, with small hard leaves."
+      "how_to_recognise": "The one native tree in a park assembled from five continents: dark evergreen, with small hard leaves.",
+      "height_m": 19
     },
     {
       "id": "mlg_009",
@@ -352,7 +369,8 @@
       "curation_status": "flagged",
       "notes": "Both sources report the same official TreeTags figures (13m height, 0.5m diameter); treated as two republications of one municipal source rather than fully independent corroboration. No planting date or age documented. No usable photo found for this specific specimen. Location confirmed 2026-07-27: an OpenStreetMap tree node species-tagged Peltophorum dubium (an exact and rare species match) sits inside Parque de Malaga, moving this pin off the shared park-centroid estimate it previously sat on with mlg_008.",
       "location_precision": "confirmed",
-      "how_to_recognise": "Thirteen metres on a trunk half a metre through, modest beside the park's giant figs and araucarias, and carrying its own identification label."
+      "how_to_recognise": "Thirteen metres on a trunk half a metre through, modest beside the park's giant figs and araucarias, and carrying its own identification label.",
+      "height_m": 13
     }
   ]
 }
