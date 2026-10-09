@@ -10300,6 +10300,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "paris",
+   "kind": "enrich",
+   "tokens": 161866,
+   "trees": 11,
+   "note": "Paris register ids with sheet PDFs on 11 trees"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
