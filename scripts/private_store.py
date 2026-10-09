@@ -123,12 +123,28 @@ def _union(a, b):
     return a
 
 
+def _merge_batch(mine, theirs):
+    """A draft batch is EDITED, not appended to, so its mails merge by address
+    with the local copy winning. Added 2026-10-09: the value-union above
+    re-added the old wording of a reply on every push, and mailcheck refused
+    the batch for 'same address twice' twice in one afternoon. The sent log
+    keeps the value union, because there a row is a fact and never edited."""
+    out = dict(theirs)
+    out.update({k: v for k, v in mine.items() if k != "mails"})
+    seen = {m.get("to") for m in mine.get("mails", [])}
+    out["mails"] = list(mine.get("mails", [])) + [m for m in theirs.get("mails", []) if m.get("to") not in seen]
+    return out
+
+
 def merged(path, mine, theirs):
     if mine == theirs or theirs is None:
         return mine
     if path.endswith(".json"):
         try:
-            return json.dumps(_union(json.loads(mine), json.loads(theirs)), indent=1, ensure_ascii=False) + "\n"
+            a, b = json.loads(mine), json.loads(theirs)
+            if path.startswith("drafts/batches/") and isinstance(a, dict) and isinstance(b, dict):
+                return json.dumps(_merge_batch(a, b), indent=1, ensure_ascii=False) + "\n"
+            return json.dumps(_union(a, b), indent=1, ensure_ascii=False) + "\n"
         except ValueError:
             pass
     return mine
