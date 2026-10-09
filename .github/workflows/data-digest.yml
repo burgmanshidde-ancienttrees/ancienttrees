@@ -94,8 +94,14 @@ jobs:
       # How much autumn is in each seasonal tree's lead photograph, so the
       # app's autumn shelves lead with gold (2026-10-08). Only new or changed
       # photographs are fetched, throttled, and a failure costs a number.
+      # 180 seconds, not 900: the job's ceiling is 10 minutes, and a guard
+      # longer than the job is no guard. On 2026-10-09 two runs in a row died
+      # here at the ten-minute mark, so the commit step never ran and the
+      # digest entries were thrown away. The script saves after every
+      # photograph (one every three seconds), so a cut costs nothing: the next
+      # run continues where this one stopped.
       - name: Score autumn photographs
-        run: timeout 900 python3 scripts/photo_autumn.py || true
+        run: timeout 180 python3 scripts/photo_autumn.py || true
 
       # The mutual watchdog. The night runs already redispatch THIS workflow
       # when it goes stale (CLAUDE.md rung 2); until now nothing did the
