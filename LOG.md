@@ -13,6 +13,7 @@
 **Berlin batch 2:** register ids on 17 more trees (all 0 m from our pins), true ferry fare and hours on ber_015. **ber_031 may be felled** (Wikipedia list, Nov 2024); noted in CURATION.md for a rung-3 check.
 **Berlin batch 3:** register ids on 18 more trees (Berlin is now near-fully register-linked), girth and height on 10 from Berlin's Baumkataster WFS (gdi.berlin.de/services/wfs/baumbestand, same-genus record within 3 m of the register point; its licence was not checked, worth a look; two species mismatches flagged in measure_source: ber_053, ber_063), autumn-colour best_time on ber_054 and ber_019, zoo and Spandau hours. Humboldt University site sits behind a bot wall.
 **Rome:** MASAF register ids on 15 trees (all by distance and genus; rom_007 at 32 m, the only one past 30), girth and height on rom_007, Orto Botanico hours on rom_004. No season peaks (no striking moments in those species files); rom_002 to 004 have no matching MASAF row.
+**Rome batch 2:** MASAF ids on rom_029 to 031, girth on the almond. rom_021 and rom_022 (Villa Borghese) have no register row within 195 m.
 **Open:** 15 Berlin trees still have no measurement source (monumentaltrees.com refuses automated fetches); recorded as 90-day dead ends.
 
 ## 2026-10-09 (night run) - Seville enrichment batch 3

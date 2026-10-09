@@ -1172,7 +1172,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 294,
-      "how_to_recognise": "The palm on Viale Leducq with stiff blue-grey fronds that read as metal rather than leaf, twenty metres up, its flower spikes hanging well below the crown."
+      "how_to_recognise": "The palm on Viale Leducq with stiff blue-grey fronds that read as metal rather than leaf, twenty metres up, its flower spikes hanging well below the crown.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 74/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_030",
@@ -1204,7 +1208,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "The thickest trunk in the eucalyptus wood around the old fort, 4.9 metres round and 18 tall. The fort's interior stays shut; the wood around it does not."
+      "how_to_recognise": "The thickest trunk in the eucalyptus wood around the old fort, 4.9 metres round and 18 tall. The fort's interior stays shut; the wood around it does not.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 61/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_031",
@@ -1239,7 +1247,11 @@
       },
       "how_to_recognise": "You can recognise it by its trunk, 3.6 metres round, thick for an almond tree. It stands in the open park at Via delle Vigne Nuove 280; a second, smaller almond stands about 110 metres away.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 360 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 360 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 58/H501/RM/12",
+        "url": null
+      }
     }
   ],
   "hero_tree_id": "rom_001"

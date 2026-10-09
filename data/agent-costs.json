@@ -10188,6 +10188,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "rome",
+   "kind": "enrich",
+   "tokens": 136044,
+   "trees": 3,
+   "note": "batch 2: MASAF ids on 3 trees, one girth"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
