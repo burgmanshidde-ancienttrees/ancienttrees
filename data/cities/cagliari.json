@@ -303,7 +303,11 @@
       "girth_cm": 340,
       "height_m": 19.5,
       "verify_notes": "Height 19.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise the larger by its 3.4 metre trunk in the open piazza; the smaller stands a metre narrower inside the cathedral's walled forecourt. They stand at Piazza San Pantaleo, Dolianova."
+      "how_to_recognise": "You can recognise the larger by its 3.4 metre trunk in the open piazza; the smaller stands a metre narrower inside the cathedral's walled forecourt. They stand at Piazza San Pantaleo, Dolianova.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/D323/CA/20",
+        "url": null
+      }
     },
     {
       "id": "cag_009",
@@ -371,7 +375,11 @@
       },
       "how_to_recognise": "You can recognise it by its trunk, 2.6 metres round and 18 metres tall, standing where the valley holds water and shelter both. It stands at the historic Corongiu dam site above Sinnai.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 260 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 260 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 05/I752/CA/20",
+        "url": null
+      }
     },
     {
       "id": "cag_011",
@@ -394,9 +402,10 @@
         "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
         "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
         "https://www.inaturalist.org/observations/23043126",
-        "https://www.inaturalist.org/observations/339587710"
+        "https://www.inaturalist.org/observations/339587710",
+        "https://sites.unica.it/hbk/orari-e-tariffe/"
       ],
-      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups per italianbotanicalheritage.com). Open Monday to Saturday, closed Sundays and some public holidays.",
+      "access": "Paid entry, euro 4 (euro 2 reduced; free for children under 6, disabled visitors and their companion, and university students and staff). Open Tuesday to Sunday and holidays, 9:00 to 18:00 April to October and 9:00 to 14:00 November to March; closed Mondays. Guided visits by booking (minimum 10 people). Hours as printed on the garden's own tariff page, which shows a 2016 update date, so check before travelling.",
       "transport": "In central Cagliari; about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003), roughly 700m-1.2km from the other Piazza Matteotti/Ingrao figs (cag_004, cag_005).",
       "photo": {
         "url": null,
@@ -418,8 +427,8 @@
       "girth_cm": null,
       "location": {
         "address": "Orto Botanico di Cagliari, Viale Sant'Ignazio da Laconi 1, Cagliari",
-        "latitude": 39.2223,
-        "longitude": 9.1114,
+        "latitude": 39.2226498,
+        "longitude": 9.1122833,
         "neighbourhood": "Stampace, Valle di Palabanda"
       },
       "story": "The ombu is not built like a tree. Phytolacca dioica is a pachycaul, a plant that puts its bulk into a broad soft water-holding stem instead of into hard timber, which is how a South American relative of pokeweed ends up thickening at the base in a way no timber tree does.\n\nCagliari's grows along the main avenue of the botanical garden, past the bald cypresses and short of the Pampanini fountain, which is where the garden's own visitor route places it. Both the Italian parks and gardens association and the Italian Botanical Heritage survey list it among the garden's significant specimens, which is good company for a species most visitors would walk past without a second look.\n\nIts age comes from the garden's own account, which says the notable trees are the oldest on the ground because they were planted during the founding phase, and names the Phytolacca dioica among them. The garden opened on 15 November 1866, so the ombu is up to about 160 years old, give or take however long that first planting ran on. What nobody has published is a girth, and on a trunk of this shape that is the measurement worth having. If you have stood beside it with a tape, tell us.",
@@ -429,9 +438,11 @@
         "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
         "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
         "https://www.inaturalist.org/observations/120986565",
-        "https://www.inaturalist.org/observations/29103958"
+        "https://www.inaturalist.org/observations/29103958",
+        "https://sites.unica.it/hbk/orari-e-tariffe/",
+        "https://www.openstreetmap.org/node/13786993661"
       ],
-      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups). Open Monday to Saturday, closed Sundays and some public holidays.",
+      "access": "Paid entry, euro 4 (euro 2 reduced; free for children under 6, disabled visitors and their companion, and university students and staff). Open Tuesday to Sunday and holidays, 9:00 to 18:00 April to October and 9:00 to 14:00 November to March; closed Mondays. Guided visits by booking (minimum 10 people). Hours as printed on the garden's own tariff page, which shows a 2016 update date, so check before travelling.",
       "transport": "In central Cagliari; about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003).",
       "photo": {
         "url": null,
@@ -439,9 +450,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
-      "paid_entry": true
+      "paid_entry": true,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.openstreetmap.org/node/13786993661",
+        "date": "2026-10-09",
+        "moved_m": 85
+      }
     },
     {
       "id": "cag_013",
@@ -453,8 +470,8 @@
       "girth_cm": null,
       "location": {
         "address": "Orto Botanico di Cagliari, near the Dipartimento di Scienze della Vita e dell'Ambiente building, Viale Sant'Ignazio da Laconi 1, Cagliari",
-        "latitude": 39.223,
-        "longitude": 9.1109,
+        "latitude": 39.2229881,
+        "longitude": 9.1110973,
         "neighbourhood": "Stampace, Valle di Palabanda"
       },
       "story": "Cut a dragon tree and it bleeds. The red resin that runs out is what gave Dracaena draco its name and what made the species worth shipping off the Canary Islands for centuries, as a dye, a varnish and a medicine.\n\nThis one stands near the Department of Botanical Sciences building at the top of Cagliari's botanical garden, and it is an odd thing to meet in Sardinia. Not a conifer and not a palm: a succulent that has worked out the shape of a tree, thickening slowly and dividing its crown into fistfuls of stiff sword-shaped leaves. The older it gets, the more branched and the more particular that crown becomes.\n\nDating one is hard, because a dragon tree lays down none of the annual rings you can count in an oak, and its age is usually read from how often the crown has forked. Here the figure comes from the garden instead. Its own account of its notable trees says they are the oldest specimens on the ground because they were planted during the founding phase, and it names the Dracaena draco in that list beside the ombu and the Moreton Bay fig. The garden opened on 15 November 1866 in the Valle di Palabanda, above Roman cisterns and the site of an amphitheatre, so this dragon tree has had up to about 160 years to build the head it carries now. Nobody has measured its trunk.",
@@ -464,9 +481,10 @@
         "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
         "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
         "https://www.inaturalist.org/observations/299477412",
-        "https://www.inaturalist.org/observations/66819968"
+        "https://www.inaturalist.org/observations/66819968",
+        "https://sites.unica.it/hbk/orari-e-tariffe/"
       ],
-      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups). Open Monday to Saturday, closed Sundays and some public holidays.",
+      "access": "Paid entry, euro 4 (euro 2 reduced; free for children under 6, disabled visitors and their companion, and university students and staff). Open Tuesday to Sunday and holidays, 9:00 to 18:00 April to October and 9:00 to 14:00 November to March; closed Mondays. Guided visits by booking (minimum 10 people). Hours as printed on the garden's own tariff page, which shows a 2016 update date, so check before travelling.",
       "transport": "In central Cagliari; about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003).",
       "photo": {
         "url": null,
@@ -474,9 +492,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
-      "paid_entry": true
+      "paid_entry": true,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.inaturalist.org/observations/299477412",
+        "date": "2026-10-09",
+        "moved_m": 17
+      }
     },
     {
       "id": "cag_014",
@@ -495,9 +519,10 @@
       "verified_sources": [
         "https://www.apgi.it/giardino/orto-botanico-di-cagliari/",
         "https://luoghi.italianbotanicalheritage.com/en/cagliari-university-botanical-garden/",
-        "https://ricerca.uniba.it/handle/11586/129694"
+        "https://ricerca.uniba.it/handle/11586/129694",
+        "https://sites.unica.it/hbk/orari-e-tariffe/"
       ],
-      "access": "Paid entry, euro 4 (reduced/free for children under 6, over 65s, disabled visitors and school groups). Open Monday to Saturday, closed Sundays and some public holidays. Same garden and terms as cag_011-013.",
+      "access": "Paid entry, euro 4 (euro 2 reduced; free for children under 6, disabled visitors and their companion, and university students and staff). Open Tuesday to Sunday and holidays, 9:00 to 18:00 April to October and 9:00 to 14:00 November to March; closed Mondays. Guided visits by booking (minimum 10 people). Hours as printed on the garden's own tariff page, which shows a 2016 update date, so check before travelling.",
       "transport": "In central Cagliari, same site as cag_011-013 (the Moreton Bay Fig, Ombu and Dragon Tree of the Orto Botanico); about a 15 minute walk from the Giardini Pubblici cluster (cag_001-003).",
       "location_precision": "approximate",
       "curation_status": "flagged",
