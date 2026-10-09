@@ -55,6 +55,11 @@ struct CollectView: View {
     /// SwiftUI watches.
     final class PlaceMemo { var tree: [UUID: Tree?] = [:] }
     @State private var placeMemo = PlaceMemo()
+    /// TRIAL, three ways to show the numbers (Hidde, 2026-10-09: "de
+    /// statistieken nemen heel veel space op"): -stats=a Instagram's counts
+    /// in the header, -stats=b one line under the name, -stats=c none.
+    static let statsStyle: String? = ProcessInfo.processInfo.arguments
+        .first { $0.hasPrefix("-stats=") }.map { String($0.dropFirst(7)) }
     /// Trees this account sent us through the website's form. The app's camera
     /// writes to sightings; the form writes to submissions, and until
     /// 2026-09-23 neither surface read the second one back (see
@@ -378,7 +383,7 @@ struct CollectView: View {
             // way they do on the page this is copied from. They sat in the
             // header, where they were both a wall between the name and the
             // list and a row of tap targets in the drag area.
-            statsRow
+            if Self.statsStyle == nil { statsRow }
             // Signed out this opened the sign-in sheet, which the lane's own
             // button already does one screenful lower. See signedOutLane.
             // NO ADD BUTTON HERE (Hidde, 2026-10-01: "I want to get rid of
@@ -585,7 +590,7 @@ struct CollectView: View {
                     // dot.
                     yourMap
                     whoYouAre
-                    statsCard
+                    if Self.statsStyle == nil { statsCard }
                     stampCard
                 }
                 if !account.isSignedIn && saved.savedCount > 0 { backupBar }
@@ -904,6 +909,22 @@ struct CollectView: View {
                         // Polarsteps, Strava and Instagram all open a list from
                         // exactly here, and following back is the whole point
                         // of knowing you have a follower.
+                        if Self.statsStyle == "b" {
+                            Text("\(collectedCount) trees · \(collectedSpecies.count) species · \(countries) \(countries == 1 ? "country" : "countries")")
+                                .font(.subheadline.weight(.semibold))
+                                .foregroundStyle(Brand.ink)
+                                .padding(.top, 3)
+                        }
+                        if Self.statsStyle == "a" {
+                            HStack(spacing: 22) {
+                                instaCount(collectedCount, "trees")
+                                Button { peopleList = .followers } label: { instaCount(profiles.followers, "followers") }
+                                    .buttonStyle(.plain)
+                                Button { peopleList = .following } label: { instaCount(profiles.following, "following") }
+                                    .buttonStyle(.plain)
+                            }
+                            .padding(.top, 6)
+                        } else {
                         HStack(spacing: 14) {
                             // GENUINELY 44 TALL, not the merge artifact the
                             // 2026-09-08 fix removed from the row above (2026-09-09).
@@ -941,6 +962,7 @@ struct CollectView: View {
                         // stories and the page copy below scale all the way,
                         // which is where reading actually happens.
                         .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                        }
                     } else {
                         Text(SignInReason.prompt)
                             .font(.caption).foregroundStyle(Brand.inkSoft)
@@ -1034,6 +1056,13 @@ struct CollectView: View {
             // rather than him, which is the wrong subject on the one page that
             // is about him, and a paragraph under a stat row is not what a stat
             // row is for. Polarsteps runs three numbers and nothing else.
+        }
+    }
+
+    private func instaCount(_ n: Int, _ label: String) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("\(n)").font(.brand(17, .heavy)).foregroundStyle(Brand.ink)
+            Text(label).font(.caption).foregroundStyle(Brand.inkSoft)
         }
     }
 

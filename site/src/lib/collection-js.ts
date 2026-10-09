@@ -163,7 +163,7 @@ window.atCollection = (function() {
     // The tag row (TreeCard.astro, 2026-10-04): season first, then Seen.
     var seen = visited ? '<span class="tree-card-seen">'
       + '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#4A6B2A"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-      + '<span>Seen</span></span>' : '';
+      + '<span>Collected</span></span>' : '';
     var tags = (chip || seen) ? '<div class="tag-row' + (c.p ? '' : ' tag-row-under') + '">' + chip + seen + '</div>' : '';
     var on = hearted !== false;
     // The card heart (TreeCard.astro, 2026-10-04): on the photograph, or at

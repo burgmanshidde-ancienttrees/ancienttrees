@@ -279,7 +279,7 @@ struct TreeCard: View {
 /// website draws the same pill (.tree-card-seen in style.css).
 struct SeenTag: View {
     var body: some View {
-        Label("Seen", systemImage: "checkmark.circle.fill")
+        Label("Collected", systemImage: "checkmark.circle.fill")
             .font(.caption.weight(.semibold))
             .foregroundStyle(Brand.canopy)
             .padding(.horizontal, 10).padding(.vertical, 5)

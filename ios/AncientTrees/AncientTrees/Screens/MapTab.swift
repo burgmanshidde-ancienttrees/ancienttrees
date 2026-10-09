@@ -706,7 +706,7 @@ struct MapTab: View {
                 }
                 saved.toggleVisited(t.id)
             } label: {
-                Label(saved.isVisited(t.id) ? "Seen" : "I have seen this one",
+                Label(saved.isVisited(t.id) ? "Collected" : "Mark as collected",
                       systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "checkmark.seal")
                     .font(.subheadline.weight(.semibold))
                     .frame(maxWidth: .infinity).padding(.vertical, 13)
