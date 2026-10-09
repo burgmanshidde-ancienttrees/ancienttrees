@@ -456,7 +456,12 @@ def check_no_unshipped_feature(path, body):
     pat = (r'public static let (\w+) = ProcessInfo\.processInfo'
            r'\.arguments\.contains\("-show-[\w-]+"\)')
     hidden = re.findall(pat, src)
-    WORDS = {"walks": [r"\bwalks?\b"],
+    # The FEATURE, never the verb (2026-10-09): "a bur oak people can walk up
+    # to" and "worth a walk" promise nothing, and the bare \bwalks?\b refused
+    # both. What names the feature: walks as a thing, a walking route, a walk
+    # past several trees, a tree walk.
+    WORDS = {"walks": [r"\bwalks\b", r"\bwalking routes?\b", r"\ba (?:short )?walk past\b",
+                       r"\b(?:tree|guided|curated) walks?\b", r"\bwalk (?:route|feature)s?\b"],
              "season": [r"\bseason radar\b", r"\bseason story\b"],
              "plus": [r"\bAncient Trees Plus\b"]}
     # A sentence that says we are GOING TO BUILD something cannot send anybody
