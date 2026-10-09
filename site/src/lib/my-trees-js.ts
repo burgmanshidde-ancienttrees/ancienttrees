@@ -154,30 +154,14 @@ export const MY_TREES_JS = `
         img.loading = 'lazy';
         var named = art.querySelector('.tree-name');
         img.alt = 'Your photograph of ' + ((named && named.textContent) || 'this tree');
-        var tag = document.createElement('span');
-        tag.className = 'tree-card-yours';
-        tag.textContent = 'Your photograph';
         box.appendChild(img);
-        box.appendChild(tag);
         art.insertBefore(box, art.firstChild);
       });
     });
-    // A photograph of yours that is on the tree's page is very likely the one
-    // this card is wearing, so it wears the same tag rather than a line under
-    // the facts (Hidde, 2026-10-09: "i like the your photograph tag better
-    // than the not designed line bellow the card ... please only do the tag").
-    Object.keys(yourState).forEach(function(id) {
-      if (!yourState[id]) return;
-      var cards = document.querySelectorAll('[data-tree-id="' + id.replace(/[^A-Za-z0-9_-]/g, '') + '"]');
-      Array.prototype.forEach.call(cards, function(art) {
-        var box = art.querySelector('.tree-card-photo');
-        if (!box || box.querySelector('.tree-card-yours')) return;
-        var tag = document.createElement('span');
-        tag.className = 'tree-card-yours';
-        tag.textContent = 'Your photograph';
-        box.appendChild(tag);
-      });
-    });
+    // NO "Your photograph" TAG any more, on either surface (Hidde,
+    // 2026-10-09: "ik zie op web your photograph tag overal staan die mag ook
+    // weg laten we dit consistent over web en app trekken"). Your picture
+    // still fills an empty card; it no longer says so.
   }
 
   // WHAT YOU SENT US THROUGH THE FORM. A row in submissions rather than in

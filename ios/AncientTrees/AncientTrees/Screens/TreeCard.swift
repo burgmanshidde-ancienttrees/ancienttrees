@@ -56,20 +56,8 @@ struct TreeCard: View {
                 image
                 if showHeart { SaveHeart(tree: tree, look: .onPhoto).padding(6) }
                 tagRow
-                // YOUR PHOTOGRAPH, a tag on the picture rather than a line
-                // under the facts (Hidde, 2026-10-09: "i like the your
-                // photograph tag better than the not designed line bellow the
-                // card ... please only do the tag"). The website's
-                // .tree-card-yours: bottom left, clear of Seen and the heart.
-                if ownPhoto != nil || ownState != nil {
-                    Text("Your photograph")
-                        .font(.caption.weight(.semibold)).foregroundStyle(.white)
-                        .padding(.horizontal, 9).padding(.vertical, 5)
-                        .background(.black.opacity(0.62), in: .capsule)
-                        .padding(10)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                        .accessibilityIdentifier("tree-card-own-state")
-                }
+                // No "Your photograph" tag (Hidde, 2026-10-09: "die mag ook
+                // weg laten we dit consistent over web en app trekken").
             }
             VStack(alignment: .leading, spacing: 5) {
                 Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink)
