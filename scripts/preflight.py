@@ -1330,6 +1330,52 @@ def check_covered_countries_want_a_photo_or_a_pin():
     return out
 
 
+def check_a_new_tree_is_rich_or_a_readers():
+    """No new tree unless its page is rich, or a reader added it.
+
+    Hidde, 2026-10-09, in the session that measured what the recovery had
+    changed (of 3,471 trees live on 09-27: 4 stories, 215 register links, 62
+    girths, 70 heights, while 245 trees were ADDED): "Let's not add any more
+    trees unless rich page and or added by user right?"
+
+    Rich is scripts/findable.py enriched(): findable on the ground (photo,
+    confirmed pin, or small site plus a recognition line) AND the official
+    register record AND a measurement AND concrete access. It is the same rule
+    that returns a page to Google's index, so a tree that may ship is one
+    Google may see; a thin tree is a lead in data/leads/ until a pass finishes
+    it. A reader's tree (findable.reader_added) is exempt from the richness,
+    never from the bar: somebody stood there, which is the validation this
+    project is built to collect. Trees live that day sit in
+    data/rich-baseline.json and stay. Removing this needs Hidde.
+    """
+    from findable import ADD_NEEDS_RICH, enriched, reader_added
+    if not ADD_NEEDS_RICH:
+        return []
+    try:
+        from enrich import gaps as enrich_gaps
+        with open(os.path.join("data", "rich-baseline.json"), encoding="utf-8") as fh:
+            base = set(json.load(fh).get("ids", []))
+    except (OSError, ValueError, ImportError):
+        return []
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            if tree.get("id") in base or reader_added(tree):
+                continue
+            g = enrich_gaps(tree)
+            if enriched(tree, g):
+                continue
+            missing = [x for x in ("pin", "register", "measurement", "access") if x in g]
+            out.append("%s: %s (%s) is new and its page is not rich: missing %s. Since "
+                       "2026-10-09 a new tree ships only with a findable pin, the official "
+                       "register record, a measurement and concrete access (scripts/findable.py "
+                       "enriched()), or when a reader added it. Finish it or keep it in data/leads/."
+                       % (path, tree.get("id"), tree.get("name"), ", ".join(missing) or "(a photo-less, unfindable pin)"))
+    return out
+
+
 def note_a_reader_photograph_is_not_a_reason():
     """The Nara shape, rekeyed after why_go was removed (2026-09-12).
 
@@ -2959,6 +3005,7 @@ def main():
                 + check_species_copy_states_no_count()
                 + check_a_tree_can_be_told_apart()
                 + check_covered_countries_want_a_photo_or_a_pin()
+                + check_a_new_tree_is_rich_or_a_readers()
                 + check_story_length()
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()

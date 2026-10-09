@@ -50,7 +50,7 @@ import { byCityListOrderEntry } from "../lib/city-order";
 import { FAVOURITE_CITIES } from "../lib/favourites";
 import { SPECIES_ICONS } from "../lib/species-icons";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
-import { ui, languagesForCity, hreflangSet, translatedLanguages } from "../lib/i18n";
+import { ui, languagesForCity, cityHref, hreflangSet, translatedLanguages } from "../lib/i18n";
 
 const u = ui(lang);
 /** A page that exists in every language: the city pages, /cities, /explore. */
@@ -109,7 +109,7 @@ const speciesSlugs = [...qualifying].map((common) => [common, slugify(common)] a
 
 // --- Directory block (the four-column "anywhere" grid) ---
 const rankedCities = [...published].sort((a, b) => b.count - a.count);
-const citiesCol = rankedCities.slice(0, 10).map((p) => `<a href="${L(`/${p.slug}`)}" data-ev="home-dir-city" data-detail="${esc(p.slug)}">${esc(p.city)}</a>`).join("");
+const citiesCol = rankedCities.slice(0, 10).map((p) => `<a href="${cityHref(lang, p.slug)}" data-ev="home-dir-city" data-detail="${esc(p.slug)}">${esc(p.city)}</a>`).join("");
 // Ten, like every other column in this block. It used to print every
 // qualifying species, which was 30 when the site had 13 species pages and
 // would have been 84 the moment the catch-up batch landed: one column three
@@ -321,7 +321,7 @@ for (const cs of FAVOURITE_CITIES) {
   if (!photo) continue;
   usedPhotos.add(photo.url);
   favCards.push(
-    `<a class="shelf-card" href="${L(`/${cs}`)}" data-ev="home-fav" data-detail="${esc(cs)}">` +
+    `<a class="shelf-card" href="${cityHref(lang, cs)}" data-ev="home-fav" data-detail="${esc(cs)}">` +
       `<span class="shelf-ph"><img ${cardImg(photo.url, "(max-width: 800px) 72vw, 20vw")} alt="" loading="lazy"></span>` +
       `<b>${esc(e.data.city)}</b>` +
       `<span class="shelf-meta">${esc(u.homeShelfMeta(e.data.trees.length, e.data.country))}</span></a>`,

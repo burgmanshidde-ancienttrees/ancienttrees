@@ -18,8 +18,12 @@ Groups:
      tree pages, and any real translations of them. A place that earned real
      impressions (data/city-queue.json, 10 days) is kept indexed.
   B. Real translations of a city whose English page earns almost nothing.
-  C. Fallback pages: the English text on a /de/, /es/ ... URL, for every city
-     with no translation. Already canonical to English; noindex says it plainly.
+  C. (Until 2026-10-09) Fallback pages: the English text on a /de/, /es/ ... URL,
+     for every city with no translation. REMOVED that day on Hidde's "do this":
+     they were 8,025 of the 11,526 pages on this list, seven crawled copies of
+     every English page, and a noindex does not stop the crawl. The pages are no
+     longer built and every URL redirects to its English page
+     (site/src/lib/redirect-map.ts), so there is nothing left to noindex.
 """
 import glob
 import json
@@ -27,7 +31,8 @@ import os
 import re
 import unicodedata
 
-from findable import findable, has_photo
+from findable import findable, has_photo, enriched
+from enrich import gaps as enrich_gaps
 
 # Only a tree page WITH a photograph stays in Google's index (Hidde, 2026-10-06:
 # "laten we voor stap 2 gaan", after the demotion had held flat for eight days
@@ -38,6 +43,18 @@ from findable import findable, has_photo
 # The page stays live, and it returns to the index on the next deploy after it
 # gains a photograph. False restores the findable rule of 2026-10-04.
 INDEX_NEEDS_PHOTO = True
+
+# Finished pages in a proven city RETURN to the index at most this many per
+# build (2026-10-09). qa.py's check_index_grows_with_the_trees() refuses a
+# deploy adding more than 80 new indexable urls against the live sitemap, and
+# that guard is Hidde's; 182 pages qualified the day the enriched rule was
+# written. deploy.yml runs this before every build and deploys happen several
+# times a day, so the backlog clears in a day or two, most readers first, and
+# Google sees each page come back as a change rather than as a burst. A page
+# already off the list stays off; the budget counts only pages still on it.
+# 40 rather than 60 so that a deploy carrying new photographed trees as well
+# stays under the guard.
+RETURN_PER_BUILD = 40
 
 # THE SPLIT, Hidde 2026-10-08 ("Ok do the split"). The robots meta is read by
 # every engine, so the 2026-10-01 noindex also took 11,500 pages out of Bing,
@@ -148,11 +165,26 @@ def main():
                   for lang in LANGS}
     q_keep = question_evidence()
     on_roster = roster()
+    try:
+        roster_imps = {k: (v or {}).get("impressions", 0) for k, v in
+                       json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json")))["cities"].items()}
+    except (OSError, ValueError, KeyError, AttributeError):
+        roster_imps = {}
     t_keep = page_evidence()
 
     groups = {"fallback": [], "thin_places": [], "question_pages": [], "weak_trees": []}
     kept_thin, a_places = [], []
     total_pages = 0
+    nf = os.path.join(ROOT, "data", "noindex.json")
+    try:
+        prev = json.load(open(nf)).get("paths") or {}
+        if isinstance(prev, list):
+            prev = {p: "2026-10-01" for p in prev}
+    except (OSError, ValueError):
+        prev = {}
+    # Finished pages still on the list, in roster order (most readers first);
+    # the first RETURN_PER_BUILD leave it this build, the rest wait.
+    returning = []
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         slug = os.path.basename(path)[:-5]
         d = json.load(open(path))
@@ -163,13 +195,10 @@ def main():
         n = len(trees)
         has_q = n >= 2
         langs_real = [lang for lang in LANGS if slug in translated[lang]]
-        total_pages += (1 + has_q + n) * (1 + len(langs_real)) + (1 + has_q) * (len(LANGS) - len(langs_real))
-        city_urls = [f"{BASE}/{slug}"] + [f"{BASE}/{lang}/{slug}" for lang in LANGS]
-        q_urls = ([f"{BASE}/{slug}/{QSLUG['en']}"] + [f"{BASE}/{lang}/{slug}/{QSLUG[lang]}" for lang in LANGS]) if has_q else []
-        # 1. Fallback pages: the English text on a /de/, /es/ ... URL.
-        for lang in LANGS:
-            if lang not in langs_real:
-                groups["fallback"] += [f"{BASE}/{lang}/{slug}"] + ([f"{BASE}/{lang}/{slug}/{QSLUG[lang]}"] if has_q else [])
+        total_pages += (1 + has_q + n) * (1 + len(langs_real))
+        city_urls = [f"{BASE}/{slug}"] + [f"{BASE}/{lang}/{slug}" for lang in langs_real]
+        q_urls = ([f"{BASE}/{slug}/{QSLUG['en']}"] + [f"{BASE}/{lang}/{slug}/{QSLUG[lang]}" for lang in langs_real]) if has_q else []
+        # 1. Fallback pages: gone since 2026-10-09 (redirects now, see the docstring).
         # 4. Tree pages with neither a photograph nor a confirmed pin (Hidde,
         #    2026-10-01: "zo min mogelijk bomen met geen foto en geen exacte pin").
         #    Recomputed every deploy, so a tree returns to the index the day it
@@ -177,8 +206,23 @@ def main():
         #    Widened 2026-10-04: a pin on a small named site plus a recognition
         #    line counts as findable too (scripts/findable.py, shared with preflight).
         #    Narrowed 2026-10-06: a photograph is required (INDEX_NEEDS_PHOTO).
+        #    Widened again 2026-10-09 (Hidde: "do this"): in a PROVEN city a
+        #    tree page also stays indexed when the enrichment pass has
+        #    finished it (findable.enriched(): findable on the ground, plus the
+        #    register record, a measurement and concrete access), because
+        #    INDEX_NEEDS_PHOTO alone had taken 2,311 of the 2,822 tree pages in
+        #    those cities out of Google, pages it had already been showing, and
+        #    a finished page is the opposite of the demoted shape. 182 pages
+        #    qualified the day this was written; scripts/enrich.py works
+        #    toward the rest, city by city, most readers first.
         for t, ts in zip(trees, tslugs):
             if has_photo(t) if INDEX_NEEDS_PHOTO else findable(t):
+                continue
+            if INDEX_NEEDS_PHOTO and slug in on_roster and enriched(t, enrich_gaps(t)):
+                en_url = f"{BASE}/{slug}/{ts}"
+                if en_url[len(BASE):] not in prev:
+                    continue  # already back
+                returning.append((roster_imps.get(slug, 0), en_url, [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]))
                 continue
             urls = [f"{BASE}/{slug}/{ts}"] + [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]
             # A tree page readers found before 09-28 stays while it waits
@@ -217,19 +261,16 @@ def main():
         # chased one query.
         groups["question_pages"] += q_urls
 
+    returning.sort(key=lambda r: -r[0])
+    held_back = returning[RETURN_PER_BUILD:]
+    for _, en_url, lang_urls in held_back:
+        groups["weak_trees"] += [en_url] + lang_urls
     every = sorted(set(sum(groups.values(), [])))
     today = __import__("datetime").date.today().isoformat()
     # Each path keeps the date it was FIRST listed, so the recrawl sitemap's
     # lastmod stays true across rebuilds. deploy.yml reruns this before every
     # build, which is what keeps a place opened tonight from shipping fourteen
     # indexable language copies and a template question page by default.
-    nf = os.path.join(ROOT, "data", "noindex.json")
-    try:
-        prev = json.load(open(nf)).get("paths") or {}
-        if isinstance(prev, list):
-            prev = {p: "2026-10-01" for p in prev}
-    except (OSError, ValueError):
-        prev = {}
     paths = {p: prev.get(p, today) for p in sorted({u[len(BASE):] for u in every})}
     # Google-only: a weak tree page that is on NO other list. A tree page of a
     # thin place is not on the thin_places list (that list holds place and
@@ -237,6 +278,9 @@ def main():
     # subtraction is what keeps it true if a group ever grows to include one.
     others = {u[len(BASE):] for k, v in groups.items() if k != "weak_trees" for u in v}
     google_only = sorted({u[len(BASE):] for u in groups["weak_trees"]} - others) if GOOGLE_ONLY_WEAK_TREES else []
+    if returning:
+        print(f"finished pages returning to the index this build: {min(len(returning), RETURN_PER_BUILD)} of {len(returning)} "
+              f"(RETURN_PER_BUILD {RETURN_PER_BUILD}); {len(held_back)} wait for a later build")
     json.dump({"generated": "scripts/thin_pages.py",
                "approved": "Hidde, 2026-10-01, in session: 'start with point 1 to 4'; the engine split 2026-10-08: 'Ok do the split'",
                "note": "Every path here leaves sitemap.xml and renders a self canonical (site/src/layouts/Base.astro). A path in google_only renders <meta name=googlebot content=noindex>, which only Google reads, and is offered to Bing in sitemap-bing.xml; every other path renders <meta name=robots content=noindex> for every engine. Pages stay live. Undo by emptying 'paths' and removing the thin_pages step from deploy.yml.",
@@ -248,10 +292,10 @@ def main():
     out = ["# Noindex list (live)\n",
            "Generated by `scripts/thin_pages.py`, approved by Hidde 2026-10-01. Pages stay live for readers and keep their URLs; noindex only takes them out of Google. Undo by emptying `paths` in data/noindex.json.\n",
            "| Group | What | Pages |", "|---|---|---:|",
-           f"| 1 | Fallback language pages: the English text on a /de/, /es/ ... URL | {len(set(groups['fallback']))} |",
+           f"| 1 | Fallback language pages (English text on a /de/, /es/ ... URL): removed 2026-10-09, every URL redirects to its English page | {len(set(groups['fallback']))} |",
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
-           f"| 4 | Tree pages without a photograph (since 2026-10-06; before that: without a photo, a confirmed pin or a small site). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
+           f"| 4 | Tree pages without a photograph (since 2026-10-06), unless in a proven city and finished: findable + register + measurement + access (since 2026-10-09). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | of which Google-only (the googlebot tag) | {len(google_only)} |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",

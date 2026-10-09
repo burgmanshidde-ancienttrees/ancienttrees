@@ -1623,6 +1623,18 @@ these languages have no single country.
 AllTrails uses `/de/parks/...`, `/es/parques/...`, English again on the bare
 path.
 
+**What we no longer copy, and why (2026-10-09).** komoot and AllTrails serve
+every page under every locale, with the frame translated and the content in
+whatever language it was written. We did the same from 2026-09-17 to 2026-10-09
+(the fallback pages) and took it out on Hidde's "do this": under the September
+2026 scaled-content demotion those pages were 8,025 of the 11,526 URLs we were
+asking Google to ignore, seven crawled copies of every English page. The
+reference sites can afford it because their locale pages carry real
+translations and real user content; ours carried English text and a canonical.
+So a translated page exists only where a real overlay exists, an untranslated
+city is linked at its English URL from the translated chrome (`cityHref()` in
+site/src/lib/i18n.ts), and the old URLs redirect. DECISIONS.md 2026-10-09.
+
 **And AllTrails translates the PATH SEGMENT, not just the content:**
 `/parks/us/california/yosemite-national-park` becomes `/parken/...` in Dutch,
 `/parcs/...` in French, `/parchi/...` in Italian, `/parques/...` in Spanish and

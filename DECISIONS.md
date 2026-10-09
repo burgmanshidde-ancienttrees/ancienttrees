@@ -1,5 +1,22 @@
 # Decisions
 
+## 2026-10-09: the fallback language pages go, finished pages return to the index, and enrichment covers whole cities
+
+A strategy session Hidde opened with "have a high level look at the goal product and market response so far", eleven days into the Google demotion. Three questions and one word, "Ok do this".
+
+**What the measurement said.** Of the 3,471 trees live on 09-27, the page for nine in ten was byte-for-byte the one Google demoted: 4 stories changed, 215 gained a register link, 62 a girth, 70 a height, 27 a photograph, 8 a confirmed pin. 245 trees were added. The enrichment pass, the recovery's stated default work, had marked 52 cities done on 10-06 and 10-07 with Singapore still at 3 gaps, Lisbon 13, Seville 19, London 48 and Munich 40, and the night runs had fallen through to adding trees in Salzburg and Stuttgart. INDEX_NEEDS_PHOTO had taken 2,311 of the 2,822 tree pages in the proven cities out of Google, pages it had already been showing. And 8,025 of the 11,526 noindexed pages were the fallback language pages: seven crawled copies of every English page.
+
+**His questions, and the answers that stand.** A new domain: no, unless Search Console shows a manual action; an algorithmic classification follows the content, and the domain carries the backlinks, the App Store listing and six ambassadors. Punished forever: no, but recovery follows CHANGED content at a core update, months not weeks, and hiding pages is not changing them. Bring the top pages back: yes, when they are finished, not as they stand.
+
+**Decided, and built the same day.**
+
+1. **The fallback pages are removed.** This reverses his own 2026-09-17 call to follow the whole-site-per-locale convention (CONVENTIONS.md, "Switching the language of a page"); the convention was right for readers and wrong for a site under a scaled-content demotion. Every old URL redirects to its English page (hard rule 3: nothing retired). The translated chrome links an untranslated city at its English URL, the rule tree links have followed since 2026-09-17. The 23 real translated sets are untouched and translation work continues.
+2. **A finished page in a proven city is indexed without a photograph.** `enriched()` in scripts/findable.py: findable on the ground, plus the official register record, a measurement and concrete access. 182 pages qualified; they return at most 40 per build so qa's 80-url burst guard holds and Google sees each as a change rather than a burst.
+3. **Enrichment covers every tree in a proven city, indexed first, and a city leaves the queue only when every gap is closed or dead-ended per tree and gap** (data/enrich-done.json, 90-day expiry). The brief gained a `pin` gap: a small named site with a source, or a register, Wikidata, OSM or aerial coordinate within 300 m, never a coordinate reasoned into place.
+
+4. **No new tree unless its page is rich or a reader added it** (Hidde, later the same session: "Let's not add any more trees unless rich page and or added by user right?"). Rich is the same `enriched()` rule, so what is added is what Google may see; `check_a_new_tree_is_rich_or_a_readers()` in preflight refuses the rest, data/rich-baseline.json holds the 3,716 trees live that day, BRIEF_RESEARCH.md and passcheck's brief carry it to the verify pass. It narrows the 2026-10-05 "adding is not indexing" ruling without reversing it.
+
+**What was advised and NOT decided, recorded so it is a choice later and not a drift:** a 90-day freeze on new places, twelve hero cities, the app as the product and the site as its brochure, a weekly outreach rhythm as the ambassador channel, and "people who stood at a tree this week" as the north star. Hidde has not ruled on any of these.
 ## 2026-10-08: the noindex is Google's alone where only Google objects
 
 Hidde, asked whether Bing needs the same noindex as Google: "Ok do the split."

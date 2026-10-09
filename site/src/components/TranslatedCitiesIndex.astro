@@ -13,16 +13,17 @@
 // What this lists: EVERY city, since 2026-09-17. It listed only the
 // translated ones for a few hours, and Hidde asked the right question about
 // that ("beetje jammer als je maar een klein gedeelte te zien krijgt"): it
-// showed 17 of 607 and misrepresented what the site holds. Now that every
-// city renders under /[lang]/ as a fallback, every link here stays in the
-// reader's language, so the reason for the subset is gone.
+// showed 17 of 607 and misrepresented what the site holds. It still lists
+// every city; since 2026-10-09 (the fallback pages gone) a translated city
+// links to its page in this language and the rest link to their English page
+// (cityHref), the convention treeHref has followed since 2026-09-17.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, renderableTrees } from "../lib/trees";
 import { cityFace, NO_PHOTO_CARD } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { byCityListOrderEntry } from "../lib/city-order";
-import { ui, translatedCities, cityTranslation, hreflangSet, translatedLanguages } from "../lib/i18n";
+import { ui, translatedCities, cityTranslation, cityHref, hreflangSet, translatedLanguages } from "../lib/i18n";
 
 interface Props { lang: string }
 const { lang } = Astro.props;
@@ -60,7 +61,7 @@ function card(p: (typeof published)[number]): string {
   const ph = p.face
     ? `<span class="exc-ph"><img src="${esc(p.face)}" alt="" loading="lazy"></span>`
     : NO_PHOTO_CARD;
-  return `<a class="exc-card" href="/${lang}/${p.slug}">${ph}<span class="exc-body"><b>${esc(p.city)}</b><span>${p.count}</span></span></a>`;
+  return `<a class="exc-card" href="${cityHref(lang, p.slug)}">${ph}<span class="exc-body"><b>${esc(p.city)}</b><span>${p.count}</span></span></a>`;
 }
 
 const canonical = `${BASE_URL}/${lang}/cities`;
@@ -77,7 +78,7 @@ const graph = [
     "@type": "ItemList",
     name: U.citiesTitle,
     itemListElement: published.map((p, i) => ({
-      "@type": "ListItem", position: i + 1, name: p.city, url: `${BASE_URL}/${lang}/${p.slug}`,
+      "@type": "ListItem", position: i + 1, name: p.city, url: `${BASE_URL}${cityHref(lang, p.slug)}`,
     })),
   },
   breadcrumbSchema(crumbItems, canonical),

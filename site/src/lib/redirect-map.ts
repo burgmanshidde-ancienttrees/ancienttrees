@@ -24,6 +24,7 @@ import { DATA } from "./data-dir";
 // dependency-free module rather than in the two copies that were here before.
 import { slugify, legacySlugify } from "./slug";
 import { cityHasQuestionPage } from "./question-page";
+import { QUESTION_SLUG, translatedLanguages, languagesForCity } from "./i18n";
 
 const BASE_URL = "https://ancienttrees.app";
 
@@ -302,6 +303,29 @@ export function buildRedirectStubs(): RedirectStub[] {
     canonical: `${BASE_URL}/species`,
     title: "Moved: Species",
   });
+  // /[lang]/<city> and /[lang]/<city>/<question> for a city with no overlay in
+  // that language: the FALLBACK pages of 2026-09-17 (English text on a language
+  // URL, canonical to English), removed 2026-10-09 because they were 8,025 of
+  // the 11,526 pages Google was being asked to ignore after the 09-28
+  // demotion, and a noindexed page is still a crawled copy. Every one of
+  // those URLs was live for three weeks, so each keeps resolving, to the
+  // English page it always pointed its canonical at (hard rule 3). A city
+  // with a real overlay in a language gets no stub there: its page exists.
+  // Both GitHub Pages shapes are written, like the city stubs above.
+  for (const lang of translatedLanguages()) {
+    const q = QUESTION_SLUG[lang] ?? "oldest-tree";
+    for (const slug of published) {
+      if (languagesForCity(slug).includes(lang)) continue;
+      const title = `Moved: Ancient Trees in ${cityName(slug)}`;
+      stubs.push({ outputPath: `${lang}/${slug}.html`, targetRelative: `../${slug}`, canonical: `${BASE_URL}/${slug}`, title });
+      stubs.push({ outputPath: `${lang}/${slug}/index.html`, targetRelative: `../../${slug}`, canonical: `${BASE_URL}/${slug}`, title });
+      if (cityHasQuestionPage(readCityTrees(slug).filter((t: any) => treeIsRenderable(t)).length)) {
+        const qc = `${BASE_URL}/${slug}/oldest-tree`;
+        stubs.push({ outputPath: `${lang}/${slug}/${q}.html`, targetRelative: `../../${slug}/oldest-tree`, canonical: qc, title });
+        stubs.push({ outputPath: `${lang}/${slug}/${q}/index.html`, targetRelative: `../../../${slug}/oldest-tree`, canonical: qc, title });
+      }
+    }
+  }
   // /plus was a sibling fakedoor page, closed 2026-07-29 a day after going
   // public; stays resolvable per hard rule 3. Mirrors build_site.py:4499.
   stubs.push({
