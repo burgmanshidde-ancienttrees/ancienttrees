@@ -10332,6 +10332,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "london",
+   "kind": "enrich",
+   "tokens": 155081,
+   "trees": 5,
+   "note": "access lines on 4, one girth floor; no UK register; kew.org 403"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
