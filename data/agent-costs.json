@@ -10164,6 +10164,22 @@
  "2026-10-09": [
   {
    "date": "2026-10-09",
+   "target": "bath",
+   "kind": "enrich",
+   "tokens": 139558,
+   "trees": 2,
+   "note": "access lines corrected on two trees; UK has no per-tree register, rest dead ends"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "berlin",
+   "kind": "enrich",
+   "tokens": 174821,
+   "trees": 5,
+   "note": "girths on 4 oaks, height on 2, register ids on both Pfaueninsel oaks"
+  },
+  {
+   "date": "2026-10-09",
    "target": "seville",
    "kind": "enrich",
    "tokens": 152175,

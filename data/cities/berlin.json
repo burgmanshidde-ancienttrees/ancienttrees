@@ -98,7 +98,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Humboldteiche",
-        "https://www.baumkunde.de/baumregister/2554-humboldteiche_im_schlosspark_tegel/"
+        "https://www.baumkunde.de/baumregister/2554-humboldteiche_im_schlosspark_tegel/",
+        "https://www.monumentale-eichen.de/berlin/tegel/ (Rainer Lippert, measured 2016: Brusthoehenumfang 7,80 m, Hoehe 29 m)"
       ],
       "access": "Free (a 1 euro donation is requested at the gate); park open daily until sunset, the palace interior open only on Mondays, May to September",
       "transport": "12 min walk from Alt-Tegel U-Bahn (U6)",
@@ -117,7 +118,9 @@
       "official_register": {
         "name": "Naturdenkmal (Land Berlin, Senatsverwaltung), no. 12-25/B",
         "url": null
-      }
+      },
+      "girth_cm": 780,
+      "height_m": 29
     },
     {
       "id": "ber_003",
@@ -143,7 +146,8 @@
       },
       "verified_sources": [
         "https://www.gazette-berlin.de/artikel/2583-aeltester-baum-im-grunewald.html",
-        "https://forst-grunewald.de/?page_id=164"
+        "https://forst-grunewald.de/?page_id=164",
+        "https://www.gazette-berlin.de/artikel/2583-aeltester-baum-im-grunewald.html (Dahlem & Grunewald Journal, June/July 2023: 'ca. 6,70 Meter Umfang'; approximate, height of measurement not stated)"
       ],
       "access": "Free, public forest, open at all times",
       "transport": "Bus 218 from S-Bahnhof Wannsee (toward Theodor-Heuss-Platz), then a lakeside forest walk; roughly 45-60 min on foot from Wannsee station if not using the bus",
@@ -162,7 +166,8 @@
       "official_register": {
         "name": "Naturdenkmal (Land Berlin, Senatsverwaltung), no. 6-70/B",
         "url": null
-      }
+      },
+      "girth_cm": 670
     },
     {
       "id": "ber_004",
@@ -486,7 +491,8 @@
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/2135-eiche_auf_der_pfaueninsel_bei_berlin/",
         "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf",
+        "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin (565 cm at 1.3 m, 2019; the page lists it as Naturdenkmal and its GPS 52.431556,13.120799 sits about 10 m from register entry 6-102/B at 52.431453,13.120752)"
       ],
       "access": "Free to walk once on the island. The island itself is car-free and reached only by a short chain ferry from the Nikolskoer Weg landing (adult single ticket 6 euros as of April 2026, family ticket 12 euros); the castle interior (separate, recently reopened after 2021-2025 restoration) is a different ticket and not needed to see this tree.",
       "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly a 10-15 minute walk into the island to the Schlosswiese meadow area",
@@ -507,7 +513,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its short trunk splitting low into one main stem and five curving limbs, nearly 5.7 metres round. It stands on the Schlosswiese meadow near the palace."
+      "how_to_recognise": "You can recognise it by its short trunk splitting low into one main stem and five curving limbs, nearly 5.7 metres round. It stands on the Schlosswiese meadow near the palace.",
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-102/B",
+        "url": null
+      },
+      "girth_cm": 565
     },
     {
       "id": "ber_012",
@@ -524,7 +535,8 @@
       },
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/",
-        "https://www.monumentaltrees.com/de/deu/berlin/berlin/7113_pfaueninsel/28796/"
+        "https://www.monumentaltrees.com/de/deu/berlin/berlin/7113_pfaueninsel/28796/",
+        "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/ (Umfang 5.58 m, gemessen, listed 2017; its coordinates match register entry 6-101/B within about 12 m)"
       ],
       "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
       "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a walk into the island near the Schloss.",
@@ -538,7 +550,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the working door built into its trunk, 5.58 metres round. It stands near the Schloss on Pfaueninsel, among the island's other oaks."
+      "how_to_recognise": "You can recognise it by the working door built into its trunk, 5.58 metres round. It stands near the Schloss on Pfaueninsel, among the island's other oaks.",
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-101/B",
+        "url": null
+      },
+      "girth_cm": 558
     },
     {
       "id": "ber_013",
@@ -931,7 +948,8 @@
       },
       "verified_sources": [
         "https://www.tagesspiegel.de/berlin/queen-in-berlin-majestaetisch-gewachsen/11953014.html",
-        "https://www.tagesspiegel.de/berlin/selbst-die-queen-pflanzte-eine-eiche-2136961.html"
+        "https://www.tagesspiegel.de/berlin/selbst-die-queen-pflanzte-eine-eiche-2136961.html",
+        "https://www.tagesspiegel.de/berlin/queen-in-berlin-majestaetisch-gewachsen/11953014.html (Tagesspiegel: 'Gut 20 Meter ist sie hoch'; a reporter's estimate, so treat as approximate)"
       ],
       "access": "Free, public park (Grosser Tiergarten)",
       "transport": "Bellevue (S-Bahn), roughly 5-8 minutes' walk",
@@ -955,7 +973,8 @@
         ],
         "label": "late October into November, when the red oak turns a rich red",
         "kind": "autumn colour"
-      }
+      },
+      "height_m": 20
     },
     {
       "id": "ber_024",
