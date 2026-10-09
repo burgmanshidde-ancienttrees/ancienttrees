@@ -16,6 +16,9 @@ import LanguagePicker from "../components/LanguagePicker.astro";
 import { toEnglishPath, ui } from "../lib/i18n";
 import { isNoindexed, noindexScope, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
+import { icon } from "../lib/icons";
+// The Want to visit list wears the app's bookmark (2026-10-09).
+const BOOKMARK = icon("bookmark-simple", "bold", "ic");
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
 import {
@@ -202,7 +205,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         {AUTH_ENABLED && (
           <Fragment>
             <p class="nav-group only-mobile">{t.yours}</p>
-            <a href="/account#saved" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span><span>{t.savedTrees}</span></a>
+            <a href="/account#saved" class="only-mobile"><span class="mi"><Fragment set:html={BOOKMARK} /></span><span>{t.savedTrees}</span></a>
             <a href="/account" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>{t.yourAccount}</span></a>
           </Fragment>
         )}
@@ -238,7 +241,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         <summary id="bar-login" aria-label={t.account}><span class="mi acct-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span class="acct-word">{t.account}</span></summary>
         <div class="nav-drop-menu">
           <p class="nav-group">{t.yours}</p>
-          <a href="/account#saved"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg></span>{t.savedTrees}</a>
+          <a href="/account#saved"><span class="mi"><Fragment set:html={BOOKMARK} /></span>{t.savedTrees}</a>
           <a href="/account"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>{t.yourAccount}</span></a>
         </div>
       </details>

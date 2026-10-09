@@ -33,6 +33,11 @@
 // out takes the list off the screen and the next sign-in brings it all back,
 // because it lives in the account rather than on the glass.
 import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
+import { icon } from "./icons";
+// The card's save control is the app's bookmark (2026-10-09), the same pair
+// SaveHeart.astro renders, shown one at a time by aria-pressed.
+const BM_OFF = icon("bookmark-simple", "bold", "heart hi-off");
+const BM_ON = icon("bookmark-simple", "fill", "heart hi-on");
 
 export const COLLECTION_JS = `
 <script>
@@ -170,7 +175,7 @@ window.atCollection = (function() {
       + ' data-l-save="Save" data-l-saved="Saved"'
       + ' aria-pressed="' + (on ? 'true' : 'false') + '"'
       + ' aria-label="' + (on ? 'Saved ' : 'Save ') + esc(c.n) + '">'
-      + '<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z"/></svg>'
+      + '${BM_OFF}${BM_ON}'
       + '<span class="sr-only">' + (on ? 'Saved' : 'Save') + '</span></button>'
       ;
     return '<article class="tree-card tree-card-nonum tree-card-link" data-tree-id="' + esc(id) + '">'

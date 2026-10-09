@@ -434,16 +434,16 @@ struct HomeView: View {
     @ViewBuilder private var favouritesShelf: some View {
         let mine = saved.favourites.compactMap { catalogue.tree($0.treeId) }
         if !mine.isEmpty {
-            shelf(title: "Your favourites", subtitle: nil, trees: Array(mine.prefix(12)))
+            shelf(title: "Want to visit", subtitle: nil, trees: Array(mine.prefix(12)))
         } else {
             VStack(alignment: .leading, spacing: 12) {
-                ShelfHeader(title: "Your favourites")
+                ShelfHeader(title: "Want to visit")
                 HStack(alignment: .top, spacing: 12) {
-                    Image(systemName: "heart")
+                    Image(systemName: "bookmark")
                         .font(.system(size: 20, weight: .semibold))
                         .foregroundStyle(Brand.moss)
                         .frame(width: 28)
-                    Text("You can keep the trees you want to visit here by tapping the heart on any tree.")
+                    Text("You can keep the trees you want to visit here by tapping the bookmark on any tree.")
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer(minLength: 0)

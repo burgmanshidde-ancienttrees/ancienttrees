@@ -75,9 +75,9 @@ struct SaveHeart: View {
     @ViewBuilder private var glyph: some View {
         switch look {
         case .onPhoto:
-            Image(systemName: isSaved ? "heart.fill" : "heart")
+            Image(systemName: isSaved ? "bookmark.fill" : "bookmark")
                 .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(isSaved ? .pink : .white)
+                .foregroundStyle(.white)
                 .padding(9)
                 .background(.black.opacity(0.38), in: .circle)
                 // The CIRCLE stays 35 points because a bigger one would sit on
@@ -87,9 +87,9 @@ struct SaveHeart: View {
                 .frame(width: 44, height: 44)
                 .contentShape(.rect)
         case .inBar:
-            Image(systemName: isSaved ? "heart.fill" : "heart")
+            Image(systemName: isSaved ? "bookmark.fill" : "bookmark")
                 .font(.title3)
-                .foregroundStyle(isSaved ? .pink : Brand.inkSoft)
+                .foregroundStyle(isSaved ? Brand.moss : Brand.inkSoft)
                 .frame(width: 52, height: 52)
                 .background(Brand.surface, in: .circle)
                 .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }

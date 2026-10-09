@@ -24,6 +24,7 @@ struct ContentView: View {
     @State fileprivate var saved: Saved = {
         let s = Saved()
         s.seedFromLaunchArguments()
+        s.seedWantFromLaunchArguments()
         return s
     }()
     @State fileprivate var entitlement = Entitlement()

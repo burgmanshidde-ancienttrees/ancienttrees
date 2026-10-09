@@ -224,10 +224,10 @@ final class FlowWalk: XCTestCase {
             Flow(name: "my-trees-lanes", args: ["-tab=2"] + signedIn, steps: [
                 Step(name: "raise-the-sheet") { drag($0, from: 0.55, to: 0.16) },
                 Step(name: "favourites") {
-                    $0.segmentedControls["collect-lane"].buttons["Favourites"].tap()
+                    $0.segmentedControls["collect-lane"].buttons["Want to visit"].tap()
                 },
                 Step(name: "back-to-my-trees") {
-                    $0.segmentedControls["collect-lane"].buttons["My trees"].tap()
+                    $0.segmentedControls["collect-lane"].buttons["Collected"].tap()
                 },
             ]),
 

@@ -933,7 +933,7 @@ struct MapTab: View {
                 // switches on once the account is in, the same continuation
                 // the heart and the Seen tick use, rather than landing them
                 // back on an unfiltered map having been asked for nothing.
-                FilterChip(label: "Favourites", icon: "heart",
+                FilterChip(label: "Want to visit", icon: "bookmark",
                            on: filters.favouritesOnly) {
                     guard account.isSignedIn else {
                         nudge.require(.general) {
@@ -949,7 +949,7 @@ struct MapTab: View {
                 .accessibilityIdentifier("filter-favourites")
                 // "My trees" here too, so the map and the page agree about
                 // what the word means (Hidde, 2026-08-26). One root, one word.
-                FilterChip(label: "My trees", icon: "checkmark.seal",
+                FilterChip(label: "Collected", icon: "checkmark.seal",
                            on: filters.collectedOnly) {
                     guard account.isSignedIn else {
                         nudge.require(.general) {

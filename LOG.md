@@ -8,6 +8,14 @@
 **Corrected (Hidde: "photos by users a gold even if a bit crappy"):** photo_light.py scored both POOR for flat overcast light, and I hesitated. A POOR score now ends the matter only for a stock candidate; a photograph a person took and sent us is judged on whether it is this tree in daylight and colour. The script says so under every POOR, and the CLAUDE.md photo rule carries it.
 **Mail:** Paulo's reply and Ines's Meet confirmation go once the deploy is live (Hidde's word). The Woodland Trust and Freiburg drafts wait.
 
+## 2026-10-09 (session) - My trees: Collected and Want to visit, per country, a bookmark instead of the heart, Collect first
+
+**Why:** Hidde, after two design talks on 22 September and a simulator preview: "the collected and saved distinction is good (but i think we should change saved to > want to visit) ... both titles really say what we want people to do > visit and collect trees", "the option to select under collected per country is really good", then "top zet dit maar door". This reverses his own 2026-08-26 "My trees" / "Favourites" on purpose.
+**App:** the two lanes are Collected and Want to visit; under Collected a row of country chips (All, then each country, most trees first, only when there are two or more); the heart is a bookmark everywhere (cards, tree page, map pins, the map chip now "Want to visit", the map's "My trees" chip now "Collected", the Home shelf); on a tree page "Collect this tree" is the big green button and Take me there is a round button beside it. New debug arguments `-lane=want` and `-saved=<ids>` so the Want to visit lane can be photographed with rows in it.
+**Web, same change:** /account's lanes renamed, the same country chips under Collected, the bookmark (Phosphor bookmark-simple) on every save control, card and nav item, and the map chips and nav label in all eight languages.
+**Differs, deliberately:** the web tree page keeps directions first, because a laptop has no camera in a park (CONVENTIONS.md, "A profile page"); a tree you added yourself sits under All only on the web, where the app places it by the nearest tree we map. A third lane for lists is parked until somebody asks for it.
+
+
 ## 2026-10-09 (session) - Four more replies: Woodland Trust pauses, Freiburg points to its Naturdenkmale, Paulo declines the ambassador role and sends two photos
 
 **Woodland Trust (ATI):** all requests to show ATI records publicly are paused for at least six months, and commercial use will later be charged for. Recorded in data/register-scouting.json; the London gate stands. Reply drafted.
@@ -21,6 +29,15 @@
 **Sent on Hidde's "send":** Kerry Pickett (Brighton), Friends of Alexandra Park (Manchester), IVN Amersfoort.
 **Broke:** BUND Leipzig received the same short thanks twice, ten minutes apart. The mail had been moved into its own batch and sent, then private_store's merge-by-address (written an hour earlier) put it back into the original batch from the stored copy, and its resend_reason let it through again.
 **Fixed:** a batch file on this Mac now replaces the stored copy outright, so a removed mail stays removed; and outreach_send.py records the Message-ID each reply answers and refuses a second reply to the same message from any batch, whatever its resend_reason. Proven by dry-running today's batch under another name: all four refused.
+
+## 2026-10-09 (night run, 17:00 window) - Enrichment: Lisbon and Amsterdam
+
+**Rung:** enrichment pass (default work). Visits last 7 days: 1,690 visits, 2,130 page views.
+**Lisbon:** 8 trees got ICNF register name and process number, 6 got girth and height from the register, the two ombus got height only (their register girths are buttress masses, not girth at 1.30 m). The two pin upgrades were refused by enrich.py (no source URL). Ajuda jacarandas closed nothing (not in the register, official pages 403/404).
+**Amsterdam:** 17 trees got register ids (15 national, 2 Amsterdam Bijzondere Bomen), 12 got measurements, Van Loon got an access line and an Oct-Nov best_time. Left open: ams_004, 005, 007, and the ARTIS opening hours (JS-rendered pages).
+**Amsterdam batch 2:** 12 more trees got national register ids, 4 girths from the Amsterdam register (two pin upgrades refused again for a missing source URL). Amstelveen trees have no measurement source.
+**Barcelona:** 20 trees got Arbres d'interès local ids and heights, 3 got girths, all from the imported register (barcelona.cat is blocklisted). The register lists bcn_010 (Misericòrdia palms) as private ownership; the courtyard is a public cultural complex, so the access line stands.
+**Cost:** four verify passes, ~145k tokens each. Preflight 0 problems on all.
 
 ## 2026-10-09 (session) - Brighton follows Kerry Pickett; BUND Leipzig thanked
 

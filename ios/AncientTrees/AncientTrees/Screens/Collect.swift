@@ -45,7 +45,12 @@ struct CollectView: View {
     /// zou daar op openen, niet op favourites"). The page is called My trees
     /// and the trees that are yours are the ones you photographed; a list of
     /// things you have not seen yet is the second question, not the first.
-    @State private var lane: Lane = .seen
+    @State private var lane: Lane =
+        ProcessInfo.processInfo.arguments.contains("-lane=want") ? .want : .seen
+    /// The country chip under Collected, nil for all of them (Hidde,
+    /// 2026-10-09: "the option to select under collected per country is
+    /// really good").
+    @State private var country: String?
     /// Trees this account sent us through the website's form. The app's camera
     /// writes to sightings; the form writes to submissions, and until
     /// 2026-09-23 neither surface read the second one back (see
@@ -137,6 +142,57 @@ struct CollectView: View {
             }
         }
         return items.sorted { $0.date > $1.date }
+    }
+
+    /// Which country a timeline item belongs to, for the chips. A tree of ours
+    /// knows; a tree only you have is placed by the nearest tree we map within
+    /// 50 km; a tip sent in words by its city. Nil keeps it under All only.
+    private func countryOf(_ item: TimelineItem) -> String? {
+        switch item {
+        case .tree(let t, _): return t.country
+        case .mine(let s):
+            if let id = s.treeId, let t = catalogue.tree(id) { return t.country }
+            return catalogue.nearest(to: s.lat, s.lng, limit: 1).first?.tree.country
+        case .sent(let t):
+            return catalogue.trees.first { $0.city == t.city }?.country
+        }
+    }
+
+    /// Countries in the collection, most trees first.
+    private var collectedCountries: [(name: String, count: Int)] {
+        var n: [String: Int] = [:]
+        for item in timeline { if let c = countryOf(item) { n[c, default: 0] += 1 } }
+        return n.map { (name: $0.key, count: $0.value) }
+            .sorted { $0.count != $1.count ? $0.count > $1.count : $0.name < $1.name }
+    }
+
+    private var shownTimeline: [TimelineItem] {
+        guard let country else { return timeline }
+        return timeline.filter { countryOf($0) == country }
+    }
+
+    /// The chips under Collected. Only when there is more than one country to
+    /// choose between; a row with one chip filters nothing.
+    @ViewBuilder private var countryChips: some View {
+        let countries = collectedCountries
+        if countries.count > 1 {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    FilterChip(label: "All \(timeline.count)", icon: "globe.europe.africa",
+                               on: country == nil) { country = nil }
+                    ForEach(countries, id: \.name) { c in
+                        FilterChip(label: "\(c.name) \(c.count)", icon: "mappin",
+                                   on: country == c.name) {
+                            country = country == c.name ? nil : c.name
+                        }
+                    }
+                }
+                .padding(.horizontal, 1)
+            }
+            .scrollClipDisabled()
+            .padding(.top, -16)
+            .accessibilityIdentifier("collected-countries")
+        }
     }
 
     private var photographedOnly: [Tree] {
@@ -564,8 +620,12 @@ struct CollectView: View {
             // his word describes what you end up with, and it is the same word
             // the tab wears, which is the point rather than a clash: this list
             // IS the page.
-            Text("My trees").tag(Lane.seen)
-            Text("Favourites").tag(Lane.want)
+            // "Collected" and "Want to visit" (Hidde, 2026-10-09: "both
+            // titles really say what we want people to do > visit and collect
+            // trees"). This reverses his 2026-08-26 "My trees" and
+            // "Favourites" on purpose: the lanes now name the two acts.
+            Text("Collected").tag(Lane.seen)
+            Text("Want to visit").tag(Lane.want)
         }
         .pickerStyle(.segmented)
         .accessibilityIdentifier("collect-lane")
@@ -595,7 +655,8 @@ struct CollectView: View {
             // stood at or photographed, and tips you sent in words, in the
             // order they happened. Each card still says what it is.
             if lane == .seen {
-                ForEach(timeline) { item in
+                countryChips
+                ForEach(shownTimeline) { item in
                     switch item {
                     case .mine(let s):
                         SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
@@ -609,7 +670,7 @@ struct CollectView: View {
             let list = lane == .want ? wishlist : []
             if lane == .want ? list.isEmpty : timeline.isEmpty {
                 Text(lane == .want
-                     ? "No favourites yet. Tap a heart anywhere to keep a tree here."
+                     ? "You can keep a tree you want to visit by tapping its bookmark."
                      : "You add a tree here by photographing it. Tap the camera and stand in front of one.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.top, 4)
@@ -642,7 +703,7 @@ struct CollectView: View {
     @ViewBuilder private var signedOutLane: some View {
         VStack(alignment: .leading, spacing: 14) {
             Text(lane == .want
-                 ? "You save a tree for later by tapping its heart. Sign in and we keep the list for you."
+                 ? "You keep a tree you want to visit by tapping its bookmark. Sign in and we keep the list for you."
                  : "You collect a tree by photographing it while you stand in front of it. Sign in and we keep them for you.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
