@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Paulo's photos live; his and Ines's replies held by the daily cap
+
+**Live:** por_002 and por_003 serve Paulo Araujo's photographs (both pages and all widths checked at 200).
+**Held:** the replies to Paulo and to Ines (Wilder) are approved by Hidde, but today's sends reached the daily cap of 50 (57 counted, the help-ask of 39 was most of it). The batch replies-2026-10-09-paulo is status approved_by_hidde, so the first night knock after midnight sends it through outreach_continue.py. The cap was not raised.
+
 ## 2026-10-09 (night run) - Seville enrichment batch 3
 
 **Done:** register ficha ids on 19 trees (sev_019, sev_021 to sev_034, sev_040 to sev_043) and girth or height on 14 of them, from the inventory fichas. Seville is at 43 trees, over target, so no new trees; depth only.
