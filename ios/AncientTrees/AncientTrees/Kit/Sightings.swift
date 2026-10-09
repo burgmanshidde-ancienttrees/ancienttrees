@@ -511,6 +511,42 @@ final class Sightings {
     }
     @ObservationIgnored private let thumbs = NSCache<NSString, UIImage>()
 
+    /// The same thumbnail, for a view that decodes it OFF the main thread
+    /// (OwnThumb): what is cached already, where the file is, and a place to
+    /// keep what came back. Scrolling the grid hitched while each tile that
+    /// came into view decoded its first thumbnail on the main thread.
+    func cachedThumbnail(_ s: Sighting, maxPixel: CGFloat) -> UIImage? {
+        guard let f = s.photo else { return nil }
+        return thumbs.object(forKey: "\(f)@\(Int(maxPixel))" as NSString)
+    }
+    func photoURL(_ s: Sighting) -> URL? {
+        s.photo.map { folder.appendingPathComponent($0) }
+    }
+    func keepThumbnail(_ img: UIImage, for s: Sighting, maxPixel: CGFloat) {
+        guard let f = s.photo else { return }
+        thumbs.setObject(img, forKey: "\(f)@\(Int(maxPixel))" as NSString)
+    }
+    nonisolated static func decodeThumbnail(_ url: URL, maxPixel: CGFloat) -> UIImage? {
+        guard let src = CGImageSourceCreateWithURL(url as CFURL, nil) else { return nil }
+        let opts: [CFString: Any] = [
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceShouldCacheImmediately: true,
+            kCGImageSourceThumbnailMaxPixelSize: maxPixel,
+        ]
+        return CGImageSourceCreateThumbnailAtIndex(src, 0, opts as CFDictionary).map { UIImage(cgImage: $0) }
+    }
+
+    /// Your newest photograph of each of our trees, worked out once for a
+    /// whole grid rather than once per tile.
+    var newestShotByTree: [String: Sighting] {
+        var out: [String: Sighting] = [:]
+        for s in newestFirst where s.photo != nil {
+            if let id = s.treeId, out[id] == nil { out[id] = s }
+        }
+        return out
+    }
+
     /// The photograph of the sign, when somebody took one.
     func signImage(_ s: Sighting) -> UIImage? {
         guard let f = s.signPhoto else { return nil }

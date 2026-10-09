@@ -17,6 +17,9 @@ struct CollectedTile: View {
     /// Where the tree stands, worked out by the screen (a tree you added is
     /// placed by the nearest tree we map).
     var city: String? = nil
+    /// Your newest photograph of this tree of ours, looked up once for the
+    /// whole grid by the screen (Sightings.newestShotByTree).
+    var ownShot: Sightings.Sighting? = nil
     @Environment(Sightings.self) private var sightings
 
     var body: some View {
@@ -31,16 +34,16 @@ struct CollectedTile: View {
     @ViewBuilder private var picture: some View {
         switch kind {
         case .ours(let t):
-            if let own = sightings.ofTree(t.id).first.flatMap({ sightings.thumbnail($0, maxPixel: 500) }) {
-                Image(uiImage: own).resizable().scaledToFill()
+            if let ownShot {
+                OwnThumb(sighting: ownShot, maxPixel: 500)
             } else if let url = t.photo?.card {
                 TreePhoto(url: url) { Brand.surfaceMuted }
             } else {
                 named(t.name)
             }
         case .mine(let s):
-            if let img = sightings.thumbnail(s, maxPixel: 500) {
-                Image(uiImage: img).resizable().scaledToFill()
+            if s.photo != nil {
+                OwnThumb(sighting: s, maxPixel: 500)
             } else {
                 named(s.name)
             }
@@ -81,5 +84,34 @@ struct CollectedTile: View {
         .foregroundStyle(filled ? .white : Brand.moss)
         .padding(.horizontal, 6).padding(.vertical, 3)
         .background(filled ? AnyShapeStyle(Brand.moss) : AnyShapeStyle(Brand.surface), in: .capsule)
+    }
+}
+
+/// One of your own photographs, decoded off the main thread. The tile is drawn
+/// at once on the muted ground and the picture arrives a moment later, the
+/// way Photos and Instagram fill a grid, instead of the scroll waiting for it.
+struct OwnThumb: View {
+    let sighting: Sightings.Sighting
+    let maxPixel: CGFloat
+    @Environment(Sightings.self) private var sightings
+    @State private var img: UIImage?
+
+    var body: some View {
+        ZStack {
+            Brand.surfaceMuted
+            if let img { Image(uiImage: img).resizable().scaledToFill() }
+        }
+        .task(id: sighting.id) {
+            if let hit = sightings.cachedThumbnail(sighting, maxPixel: maxPixel) { img = hit; return }
+            guard let url = sightings.photoURL(sighting) else { return }
+            let px = maxPixel
+            let made = await Task.detached(priority: .userInitiated) {
+                Sightings.decodeThumbnail(url, maxPixel: px)
+            }.value
+            if let made {
+                sightings.keepThumbnail(made, for: sighting, maxPixel: maxPixel)
+                img = made
+            }
+        }
     }
 }

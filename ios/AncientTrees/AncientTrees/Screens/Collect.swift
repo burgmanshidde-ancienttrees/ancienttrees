@@ -690,6 +690,7 @@ struct CollectView: View {
             // order they happened. Each card still says what it is.
             if lane == .seen {
                 countryChips
+                let shots = sightings.newestShotByTree
                 // THREE ACROSS, Instagram's profile grid (Hidde, 2026-10-09).
                 // Bleeds to the sheet's edges like Instagram's does, so the
                 // photographs are as large as a phone allows.
@@ -702,7 +703,7 @@ struct CollectView: View {
                         case .sent(let t):
                             CollectedTile(kind: .sent(t), city: t.city)
                         case .tree(let t, _):
-                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city) }
+                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: shots[t.id]) }
                                 .accessibilityIdentifier("tree-card")
                                 .accessibilityLabel(t.name)
                         }
@@ -714,6 +715,7 @@ struct CollectView: View {
             let list = lane == .want
                 ? wishlist.filter { country == nil || $0.country == country } : []
             if lane == .want { countryChips }
+            let wantShots = lane == .want ? sightings.newestShotByTree : [:]
             if lane == .want ? list.isEmpty : timeline.isEmpty {
                 Text(lane == .want
                      ? "You can keep a tree you want to visit by tapping its bookmark."
@@ -727,7 +729,7 @@ struct CollectView: View {
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
                           spacing: 2) {
                     ForEach(list) { t in
-                        SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city) }
+                        SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: wantShots[t.id]) }
                             .accessibilityIdentifier("tree-card")
                             .accessibilityLabel(t.name)
                     }
