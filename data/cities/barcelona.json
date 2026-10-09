@@ -894,8 +894,8 @@
       "age_estimate": "planting date never recorded",
       "location": {
         "address": "Sot de l'Estany, Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
-        "latitude": 41.366939,
-        "longitude": 2.151886,
+        "latitude": 41.366867511241765,
+        "longitude": 2.1520840109714965,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "story": "Three of the four trees the Catalan government calls monumental in Barcelona are foreign rarities. This one is a narrow-leaved ash, a tree that grows along half the rivers in Spain, and it beat all of them for height. At 29 metres it is the tallest of its species measured anywhere in Catalonia according to the government's own file, and it got there by growing in a hole. The Sot de l'Estany is an abandoned quarry pit inside the historic botanical garden, cut into the flank of Montjuic, and its walls hold cool damp air well enough to sit up to four degrees below the temperature outside. Anything planted at the bottom behaves as though it were somewhere much wetter and a long way north. This ash took that microclimate and went straight up, ending with a 2.5 metre trunk under a crown only 15 metres across, the proportions of a forest tree rather than a park one. The Generalitat declared it monumental on 2 April 2025 along with three neighbours, all four standing within about thirty metres of each other at the bottom of the same pit. Nobody wrote down when it was planted, and nobody has counted its rings.",
@@ -903,9 +903,11 @@
         "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
         "https://ca.wikipedia.org/wiki/Llista_d%27arbres_monumentals_de_Catalunya",
         "http://parcsnaturals.gencat.cat/ca/coneixeu-nos/arbres-monumentals/am_arbres_monumentals_fitxes/barcelones/freixe-montjuic/",
-        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest"
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest",
+        "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
-      "access": "Paid entry to the Jardi Botanic Historic",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": null,
@@ -915,10 +917,21 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED for having no age at all. The city register's planting-year field is empty and the Generalitat's file gives none either, so no age_min or age_max is set and the age_estimate says so plainly rather than inventing a range from the neighbours (the green ash beside it, bcn_006, is dated 1924). Everything else is unusually well sourced for Barcelona, because two separate authorities cover it: the city register (register_id 99400637941, catalogued 2015, 29 m tall, girth 2.5 m, crown 15 m) and the Generalitat de Catalunya, which registers it as the Freixe de Montjuic, code MA-13.931.02, at 29.0 x 2.5 x 15.4 m and declared it monumental on 2 April 2025. The tallest-in-Catalonia claim and the up-to-four-degrees microclimate figure both come from the Museu de Ciencies Naturals de Barcelona's own account of the declaration, which is the garden's operator and independent of the tree register. Pin approximate, and deliberately so: the city register gives 41.366868/2.152084 and the Generalitat gives 41.366939/2.151886, 18 m apart, and the neighbouring monumental sycamore (bcn_022) stands about 7 m from this point. An 18 m uncertainty cannot tell the two apart on the ground, so the pin gets someone into the right corner of the ravine and the garden's own labels do the rest. Photo: the Generalitat publishes File:Freixe de Montjuic.jpg on Commons under its attribution-gencat licence, but it was viewed directly and rejected. The frame is a dark shaded ravine in which an araucaria takes the foreground and no ash is identifiable, which fails the Cadiz standard on every count. Honest gap.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "paid_entry": true,
       "girth_cm": 250,
-      "how_to_recognise": "You can recognise it by the shape, 29 metres of tree under a crown only 15 metres across, on a trunk 2.5 metres round. It stands at the bottom of the Sot de l'Estany quarry pit with three monumental neighbours."
+      "how_to_recognise": "You can recognise it by the shape, 29 metres of tree under a crown only 15 metres across, on a trunk 2.5 metres round. It stands at the bottom of the Sot de l'Estany quarry pit with three monumental neighbours.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400637941",
+        "url": null
+      },
+      "height_m": 29,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "date": "2026-10-09",
+        "moved_m": 18
+      }
     },
     {
       "id": "bcn_022",
@@ -927,8 +940,8 @@
       "age_estimate": "planting date never recorded",
       "location": {
         "address": "Sot de l'Estany, Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
-        "latitude": 41.366884,
-        "longitude": 2.151851,
+        "latitude": 41.36676958101976,
+        "longitude": 2.152068734230853,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "story": "Thirty metres of tree on a trunk 1.38 metres round. That is the shape of something that spent its whole life climbing towards a patch of sky, and it is why this sycamore is the odd one out among Barcelona's four monumental trees. Acer pseudoplatanus is the workhorse maple of northern and central Europe, the tree that lines streets in Vienna and colonises every gap in Britain. In Barcelona it barely holds on. The summers are too long and too dry, and it is rare enough here that the Catalan government named this one monumental on 2 April 2025 partly for being ordinary somewhere else. It lives in the Sot de l'Estany, a quarry pit inside the historic botanical garden that keeps cool air the way a cellar does, several degrees below the hillside above it. That is the whole explanation. Take a northern tree, drop it into the one cold damp hole on a Mediterranean mountain, and it grows to a height it would be pleased with in Bavaria, on a trunk that stayed slender because there was never any reason to spread sideways. Nobody recorded when it went in.",
@@ -944,9 +957,11 @@
         "https://museuciencies.cat/es/quatre-exemplars-del-jardi-botanic-historic-declarats-arbres-monumentals/",
         "https://ca.wikipedia.org/wiki/Llista_d%27arbres_monumentals_de_Catalunya",
         "http://parcsnaturals.gencat.cat/ca/coneixeu-nos/arbres-monumentals/am_arbres_monumentals_fitxes/barcelones/platan-fals-montjuic/",
-        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest"
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest",
+        "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
-      "access": "Paid entry to the Jardi Botanic Historic",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": null,
@@ -956,10 +971,21 @@
       },
       "curation_status": "flagged",
       "notes": "FLAGGED for having no age. The city register's planting year reads 'Per determinar' and the Generalitat's file gives none, so no age_min or age_max is set. Two independent authorities cover the tree: the city register (register_id 99400637939, catalogued 2015, 30 m tall, girth 1.4 m, crown 12 m) and the Generalitat de Catalunya, which registers it as the Platan Fals de Montjuic, code MA-13.931.04, at 30.0 x 1.38 x 12.0 m, declared monumental 2 April 2025. The rarity-in-Barcelona point comes from the Museu de Ciencies Naturals account of the declaration. Pin approximate: city register 41.36677/2.152069 against the Generalitat's 41.366884/2.151851, 22 m apart, and the monumental ash (bcn_021) stands about 7 m away. See the note on bcn_021: the pin puts a visitor in the right corner of the ravine, not on the exact trunk. PHOTO PROBLEM WORTH KEEPING. The Generalitat publishes File:Platan Fals de Montjuic.jpg on Commons under attribution-gencat, sourced from its own monumental-tree file for this tree. It was viewed directly and NOT used, because the tree in the frame has pinnate compound leaves, which is an ash, not a maple; Acer pseudoplatanus has palmate lobed leaves. Either the file is mislabelled or the photographer shot the wrong trunk in a ravine where the ash stands seven metres away. Recording it rather than acting on it: the identification of the tree itself rests on two official registers, not on this photograph.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "paid_entry": true,
       "girth_cm": 140,
-      "how_to_recognise": "You can recognise it by the slenderness, thirty metres of tree on a trunk 1.38 metres round, and by being the one maple among them. It stands in the Sot de l'Estany quarry pit inside the historic botanical garden."
+      "how_to_recognise": "You can recognise it by the slenderness, thirty metres of tree on a trunk 1.38 metres round, and by being the one maple among them. It stands in the Sot de l'Estany quarry pit inside the historic botanical garden.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400637939",
+        "url": null
+      },
+      "height_m": 30,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "date": "2026-10-09",
+        "moved_m": 22
+      }
     },
     {
       "id": "bcn_023",
@@ -1393,18 +1419,20 @@
       "girth_cm": 440,
       "location": {
         "address": "Jardi Botanic Historic, Sector de la Masia, Av. dels Muntanyans, 08038 Barcelona",
-        "latitude": 41.36716,
-        "longitude": 2.15338,
+        "latitude": 41.36728450363839,
+        "longitude": 2.1533280620606194,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "story": "This camphor tree is nearly twice as wide as it is tall. The city register puts its crown at 27 metres across and its height at only 15, the proportions of a tree that never had to compete for light and spread sideways instead, and its trunk measures 4.4 metres around. Camphor is what the wood smells of when it is cut, and for most of the twentieth century it was what mothballs and chest rubs were made from, distilled from chipped Cinnamomum camphora shipped out of Taiwan and Japan until the chemists worked out how to make it synthetically. Barcelona's tree was planted in 1933 in the Sector de la Masia of the old botanical garden on Montjuic, a collection laid out on ground reworked for the 1929 International Exposition. It has stood there through the war that broke out three years later, the decades afterwards when the garden was left to go half wild, and the opening of the new botanical garden further up the slope in 1999, which is what turned this one into the historic garden rather than simply the garden. The city catalogued it as a Tree of Local Interest in 1993. The land belongs to the science museum rather than the council, which is a matter of paperwork rather than a locked gate.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
-      "access": "Paid entry to the Jardi Botanic Historic, free on set days each week",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1413,7 +1441,18 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the crown, 27 metres across on a tree only 15 metres tall, and by a trunk 4.4 metres round. It stands in the Sector de la Masia of the historic botanical garden."
+      "how_to_recognise": "You can recognise it by the crown, 27 metres across on a tree only 15 metres tall, and by a trunk 4.4 metres round. It stands in the Sector de la Masia of the historic botanical garden.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455032",
+        "url": null
+      },
+      "height_m": 15,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "date": "2026-10-09",
+        "moved_m": 15
+      }
     },
     {
       "id": "bcn_035",
@@ -1433,7 +1472,8 @@
       },
       "story": "A trunk of 4.3 metres on a tree only 12 metres tall makes this the stoutest black locust in Barcelona and the only one the city has ever put on its register. Black locusts usually run up thin and fast and then fall over. This one went sideways and stayed, and it grows in the parterre between the Passeig de Joaquim Renart and the Cascada, the monumental fountain a young Gaudi worked on as a student assistant. How old it is nobody has established. The register's age column holds the words '100 anys' where a planting year should be, which is somebody's estimate written into the wrong box rather than a date anyone has checked, and the tree was only catalogued in 2024. What is certain is the ground it stands on. The park is 1888 work, laid out for the Universal Exposition on the cleared site of the Bourbon citadel that Barcelona spent 150 years resenting and then demolished. The species itself was one of the first American trees to reach Europe, planted in Paris around 1601 by Jean Robin, the royal gardener it is named after. In late spring the crown fills with white pea flowers heavy enough to hang and strong enough to smell before you have found the tree.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public park",
@@ -1454,7 +1494,12 @@
         "kind": "flowers",
         "label": "late April into May, when the whole crown hangs with white pea flowers you can smell from the path"
       },
-      "how_to_recognise": "You can recognise it by the trunk, 4.3 metres round on a tree only 12 metres tall, stout where black locusts are usually thin. It stands in the parterre between the Passeig de Joaquim Renart and the Cascada."
+      "how_to_recognise": "You can recognise it by the trunk, 4.3 metres round on a tree only 12 metres tall, stout where black locusts are usually thin. It stands in the parterre between the Passeig de Joaquim Renart and the Cascada.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400761017",
+        "url": null
+      },
+      "height_m": 12
     },
     {
       "id": "bcn_036",
@@ -1530,7 +1575,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by a single trunk 1.55 metres round on a plant usually clipped into a waist high hedge, under a crown six metres wide. It stands in front of the Glorieta de la Transsexual Sonia, the park's old bandstand."
+      "how_to_recognise": "You can recognise it by a single trunk 1.55 metres round on a plant usually clipped into a waist high hedge, under a crown six metres wide. It stands in front of the Glorieta de la Transsexual Sonia, the park's old bandstand.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400638005",
+        "url": null
+      }
     },
     {
       "id": "bcn_038",
@@ -1550,7 +1599,8 @@
       },
       "story": "A tree from a Pacific island eight kilometres long stands 27 metres over one of the most densely built neighbourhoods in Europe. The Norfolk Island pine in the courtyard of the Casa de la Misericordia is the tallest thing in this part of the Raval, visible above the rooftops long before you find the doorway on Carrer d'Elisabets. Its trunk is a modest 1.5 metres around, because the species grows like a mast rather than a barrel, throwing out whorls of branches in tidy tiers and going straight up. That was precisely the appeal when Cook reached Norfolk Island in 1774 and reported the trees as a supply of masts for the Royal Navy. The timber turned out too brittle and the scheme came to nothing, which is roughly how the species ended up as an ornamental instead, planted in warm coastal cities from Sydney to here. The courtyard it stands in was a foundling house and orphanage, and the four fan palms beside it went in around 1904. The pine itself has no recorded planting date at all and joined the city register in 2016 on its size. The yard is now a public passage with a bookshop and a cafe in it, which makes this one of the easiest large trees in Barcelona to walk to.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free to enter the courtyard from Carrer Elisabets or via La Central bookshop; the cafe itself is paid",
@@ -1563,7 +1613,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the tiers, whorls of branches up a straight 27 metre mast on a trunk only 1.5 metres round, visible above the rooftops. It stands in the courtyard off Carrer d'Elisabets."
+      "how_to_recognise": "You can recognise it by the tiers, whorls of branches up a straight 27 metre mast on a trunk only 1.5 metres round, visible above the rooftops. It stands in the courtyard off Carrer d'Elisabets.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400637926",
+        "url": null
+      },
+      "height_m": 27
     },
     {
       "id": "bcn_039",
@@ -1597,7 +1652,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the leaves, cut far more deeply into narrow lobes than the hybrid planes on every street around it, and by its lower, looser shape. It stands in Placa de la Universitat in front of the university's main building."
+      "how_to_recognise": "You can recognise it by the leaves, cut far more deeply into narrow lobes than the hybrid planes on every street around it, and by its lower, looser shape. It stands in Placa de la Universitat in front of the university's main building.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400454967",
+        "url": null
+      },
+      "height_m": 18
     },
     {
       "id": "bcn_040",
@@ -1631,7 +1691,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the height, 17 metres of avocado on a trunk only 80 centimetres round, gone straight up where a picked orchard tree is kept low and wide. It stands in Placa de Can Bruixa in Les Corts."
+      "how_to_recognise": "You can recognise it by the height, 17 metres of avocado on a trunk only 80 centimetres round, gone straight up where a picked orchard tree is kept low and wide. It stands in Placa de Can Bruixa in Les Corts.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455082",
+        "url": null
+      },
+      "height_m": 17
     },
     {
       "id": "bcn_041",
@@ -1645,18 +1710,19 @@
       "girth_cm": 160,
       "location": {
         "address": "Carrer de Joaquim Blume, 08038 Barcelona",
-        "latitude": 41.37205,
-        "longitude": 2.15539,
+        "latitude": 41.37211150551578,
+        "longitude": 2.155331054511639,
         "neighbourhood": "El Poble-sec, Sants-Montjuic"
       },
       "story": "Nobody quite agrees what this tree is. The city register files it as Schinus longifolia, an Argentine and Uruguayan species. The mappers at OpenStreetMap have it down as Schinus polygama, the Chilean huingan, and the Catalan name the register itself uses for the tree, huingan, belongs to that second one. The two are close relatives in the cashew family, both small, tough, drought-hardy South American trees, and separating them takes a look at the leaves and the thorns rather than a look at the label. So the species stays an open question here. The date does not. It was planted in 1916, which makes it older than most of the street around it and one of the oldest trees in Poble-sec, and the city catalogued it in 1996. It is a small thing by the standards of this list: eight metres tall, a 1.6 metre trunk, a crown about as wide as the tree is high, standing at the foot of Montjuic. The hill above it was torn up and rebuilt twice in its lifetime, for the 1929 International Exposition and again for the 1992 Olympics, and the street kept its tree through both. The genus is the one that gives pink peppercorns, though this is not the species in the grinder.",
       "verified_sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local"
+        "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public street",
       "transport": "Poble Sec (Metro L3), 7 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -1664,7 +1730,18 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by being small for this list, eight metres tall on a 1.6 metre trunk with a crown about as wide as it is high. It stands on Carrer de Joaquim Blume at the foot of Montjuic."
+      "how_to_recognise": "You can recognise it by being small for this list, eight metres tall on a 1.6 metre trunk with a crown about as wide as it is high. It stands on Carrer de Joaquim Blume at the foot of Montjuic.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400454952",
+        "url": null
+      },
+      "height_m": 8,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "date": "2026-10-09",
+        "moved_m": 8
+      }
     },
     {
       "id": "bcn_042",
@@ -1698,7 +1775,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its wide, flattened crown, spreading wider than the tree is tall, and by heavy green fruit each autumn with a surface like folded brain. Trunk 1.40 metres round, the younger of Barcelona's two Osage oranges."
+      "how_to_recognise": "You can recognise it by its wide, flattened crown, spreading wider than the tree is tall, and by heavy green fruit each autumn with a surface like folded brain. Trunk 1.40 metres round, the younger of Barcelona's two Osage oranges.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455061",
+        "url": null
+      },
+      "height_m": 12
     },
     {
       "id": "bcn_043",
@@ -1772,7 +1854,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by small, olive-sized fruit turning from green to deep red-brown, and a thorny, gnarled habit unlike the ornamental planting around it. Trunk 1.60 metres round, crown about 12 metres across."
+      "how_to_recognise": "You can recognise it by small, olive-sized fruit turning from green to deep red-brown, and a thorny, gnarled habit unlike the ornamental planting around it. Trunk 1.60 metres round, crown about 12 metres across.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455075",
+        "url": null
+      },
+      "height_m": 10
     },
     {
       "id": "bcn_045",
@@ -1813,7 +1900,12 @@
         "kind": "autumn colour",
         "label": "November, when the whole crown turns butter gold and then drops in a day or two"
       },
-      "how_to_recognise": "You can recognise it in autumn by the flat butter yellow it turns over about a fortnight before dropping almost all at once. It stands 17 metres tall on a trunk 1.4 metres round in the terraced bulb garden on the Montjuic hillside."
+      "how_to_recognise": "You can recognise it in autumn by the flat butter yellow it turns over about a fortnight before dropping almost all at once. It stands 17 metres tall on a trunk 1.4 metres round in the terraced bulb garden on the Montjuic hillside.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455074",
+        "url": null
+      },
+      "height_m": 17
     },
     {
       "id": "bcn_046",
@@ -2087,7 +2179,8 @@
       },
       "verified_sources": [
         "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-castanyer-d-india-castanyer-b-c-guardia-urbana-pl-de-carles-buigas-99400455030",
-        "https://guia.barcelona.cat/detall/_99400455030.html"
+        "https://guia.barcelona.cat/detall/_99400455030.html",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "access": "Free, public square",
       "transport": "Espanya (Metro L1/L3), about 5 min walk",
@@ -2101,7 +2194,13 @@
       "notes": "Single source: Barcelona's own Catalog of Trees of Local Interest (catalogue 0131-03-97, register_id 99400455030), catalogued 1997, born approx. 1937, height 15.5m, girth 1.84m at 1.3m, crown 11m. The plaza is named for Carles Buigas i Sans (1898-1979), the engineer who designed the Font Magica de Montjuic that stands in the same square, confirmed independently (Wikipedia, general sources on the fountain's history); this is background/orientation, not a claim about the tree itself.",
       "location_precision": "confirmed",
       "story": "The horse chestnut in Placa de Carles Buigas went into the ground around 1937, in the middle of the Spanish Civil War, in a city then still held by the Republic. Barcelona calls it a castanyer bord, or bastard chestnut, the old label for Aesculus hippocastanum: it looks like the sweet chestnut that gives Catalonia its autumn treat, but its conkers are bitter and inedible.\n\nCatalogued as a tree of local interest in 1997, it has grown to 15.5 metres with a trunk 1.84 metres round and a crown spreading 11 metres, respectable rather than record-setting, which is exactly why the city keeps a list of local-interest trees at all: not every tree worth keeping is the biggest one in town.\n\nThe square takes its name from Carles Buigas, the engineer who built the Font Magica, Montjuic's musical fountain, right where this tree now stands. A visitor can watch the evening light show and stand under a tree not far off the fountain's own age.\n\nNo record we found says how freely it flowers each April compared with other horse chestnuts in the city; if you know, tell us.",
-      "how_to_recognise": "You can recognise it as the horse chestnut rather than the square's much thicker tipu tree, 15.5 metres tall on a trunk 1.84 metres round under an 11 metre crown. It stands in Placa de Carles Buigas beside the Font Magica."
+      "how_to_recognise": "You can recognise it as the horse chestnut rather than the square's much thicker tipu tree, 15.5 metres tall on a trunk 1.84 metres round under an 11 metre crown. It stands in Placa de Carles Buigas beside the Font Magica.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455030",
+        "url": null
+      },
+      "girth_cm": 190,
+      "height_m": 20
     },
     {
       "id": "bcn_054",
@@ -2125,7 +2224,8 @@
       },
       "verified_sources": [
         "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-arbre-de-l-amor-arbre-de-jude-pl-joanic_99400455041.html",
-        "https://ca.wikipedia.org/wiki/Arbre_de_l%27amor"
+        "https://ca.wikipedia.org/wiki/Arbre_de_l%27amor",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
       "access": "Free, public square",
       "transport": "Joanic (Metro L4), by the square",
@@ -2139,7 +2239,13 @@
       "notes": "Barcelona catalogue 0118-06-96 (register_id 99400455041), catalogued 1996, planted 1956. The register lists three individual trunks under this one entry (heights 9/9/10m, girths at 1.3m of 1.65/1.25/1.45m), described as a small grove rather than a single specimen; the story treats them as one collectible ensemble per the register's own grouping. Beteve (the city broadcaster) covers this species blooming citywide each spring; not used as a tree-specific second source, only as context that the flowering display is locally well known.",
       "location_precision": "confirmed",
       "story": "Barcelona calls this small grove at Placa Joanic 'the trees of love', and each April they make the case themselves: the whole crown erupts in magenta flowers that break straight out of the bark, trunk and branches both, before a single leaf shows. It is one of the few flowering habits dramatic enough that the city's own broadcaster runs a story most springs pointing readers toward wherever it is blooming that year.\n\nThe three trunks here, planted in 1956 in what is now Vila de Gracia, are old enough and large enough that Barcelona catalogued them as trees of local interest in 1996, unusual for a species that rarely reaches this size in the city. Their crowns spread up to 10 metres, and the widest trunk measures 1.65 metres round.\n\nThe Judas tree takes its English name from a legend that Judas Iscariot hanged himself from one; in the Mediterranean it is better known simply as the tree that turns a street corner purple every spring. This one gets noticed on schedule, in the second half of April, when Gracia's small square briefly does exactly that.",
-      "how_to_recognise": "You can recognise them by three trunks flowering together in the second half of April, magenta straight out of the bark before a leaf shows, crowns up to ten metres and the widest trunk 1.65 metres round. They stand in Placa Joanic."
+      "how_to_recognise": "You can recognise them by three trunks flowering together in the second half of April, magenta straight out of the bark before a leaf shows, crowns up to ten metres and the widest trunk 1.65 metres round. They stand in Placa Joanic.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455041",
+        "url": null
+      },
+      "girth_cm": 180,
+      "height_m": 5
     },
     {
       "id": "bcn_055",
@@ -2150,14 +2256,16 @@
       "age_max": 85,
       "location": {
         "address": "Jardi Botanic Historic, Av. dels Muntanyans, 08038 Barcelona",
-        "latitude": 41.36701,
-        "longitude": 2.15198,
+        "latitude": 41.36701450208454,
+        "longitude": 2.1519820602595434,
         "neighbourhood": "Montjuic, Sants-Montjuic"
       },
       "verified_sources": [
-        "https://www.barcelona.cat/es/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/carpi-del-jardi-botanic-historic-99400455031"
+        "https://www.barcelona.cat/es/que-hacer-en-bcn/parques-y-jardines/arboles-de-interes-local/carpi-del-jardi-botanic-historic-99400455031",
+        "https://museuciencies.cat/es/visitanos/horarios-y-precios/del-jardi-botanic-historic/",
+        "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200"
       ],
-      "access": "Paid entry to the Jardi Botanic Historic",
+      "access": "Free entry, open daily: Nov to Jan 10:00-17:00, Feb-Mar 10:00-18:00, Apr-May and Sep-Oct 10:00-19:00, Jun-Aug 10:00-20:00; no entry in the last half hour; closed 1 Jan, 1 May, 24 Jun and 25 Dec.",
       "transport": "Poble Sec (Metro L3) or bus to Estadi Olimpic, 12 min walk",
       "photo": {
         "url": null,
@@ -2167,11 +2275,22 @@
       },
       "curation_status": "flagged",
       "notes": "Single source: Barcelona's Catalog of Trees of Local Interest, register_id 99400455031, height ~18m, crown 13m, girth 1.2m, estimated age 80 years. A lower designation (local interest) than its four monumental neighbours in the same ravine, held back from earlier passes purely on count; shipped now per CLAUDE.md's ruling that count alone never blocks a verified tree.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "paid_entry": true,
       "story": "Common hornbeam barely grows wild anywhere on the Iberian peninsula, which makes the specimen in Barcelona's Jardi Botanic Historic an outlier by definition. It has found the one pocket of the city cool and damp enough to suit it: the Sot de l'Estany, a shaded former quarry hollow that already holds four of Barcelona's officially monumental trees, a wingnut, two kinds of ash and a sycamore maple among them.\n\nAt roughly 80 years old the hornbeam is younger than those neighbours, which is why the city lists it one rank down, as a tree of local interest rather than a monument. It has still reached 18 metres with a crown 13 metres across, respectable for a species this far outside its natural range.\n\nThe garden was Barcelona's original botanical collection, on this same hill, before a newer one opened elsewhere on Montjuic. The ravine has kept its own microclimate ever since: cooler, wetter and stubbornly hospitable to trees with no business surviving this far south. Same ticket as the rest of the garden's veterans.",
       "girth_cm": 120,
-      "how_to_recognise": "You can recognise it by being the youngest tree in the hollow at about 80 years, 18 metres tall under a crown 13 metres across. It stands in the Sot de l'Estany among the garden's four monumental trees."
+      "how_to_recognise": "You can recognise it by being the youngest tree in the hollow at about 80 years, 18 metres tall under a crown 13 metres across. It stands in the Sot de l'Estany among the garden's four monumental trees.",
+      "official_register": {
+        "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455031",
+        "url": null
+      },
+      "height_m": 20,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
+        "date": "2026-10-09",
+        "moved_m": 1
+      }
     },
     {
       "id": "bcn_059",

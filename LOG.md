@@ -38,7 +38,9 @@
 **Amsterdam:** 17 trees got register ids (15 national, 2 Amsterdam Bijzondere Bomen), 12 got measurements, Van Loon got an access line and an Oct-Nov best_time. Left open: ams_004, 005, 007, and the ARTIS opening hours (JS-rendered pages).
 **Amsterdam batch 2:** 12 more trees got national register ids, 4 girths from the Amsterdam register (two pin upgrades refused again for a missing source URL). Amstelveen trees have no measurement source.
 **Barcelona:** 20 trees got Arbres d'interès local ids and heights, 3 got girths, all from the imported register (barcelona.cat is blocklisted). The register lists bcn_010 (Misericòrdia palms) as private ownership; the courtyard is a public cultural complex, so the access line stands.
-**Cost:** four verify passes, ~145k tokens each. Preflight 0 problems on all.
+**Barcelona batch 2:** 15 trees got register ids and girths (14 heights), 5 pins taken from the register's own tree-level coordinate, and the four Jardí Botànic Històric trees (bcn_021, 022, 034, 055) now say free entry from the museum's own page; the old "paid" line was wrong.
+**Flagged, not fixed:** bcn_043 (Horse Chestnut of Plaça Carles Buigas) looks like a duplicate of bcn_053, the same chestnut in the same square, and its pin sits exactly on register entry 99400728987, an Araucaria on Av. Francesc Ferrer i Guàrdia. Retiring a live URL is hard rule 3 (redirect needed), so it waits for a pass that can merge them and add the slug to REMOVED_TREE_SLUGS.
+**Cost:** five verify passes, ~145k tokens each. Preflight 0 problems on all.
 
 ## 2026-10-09 (session) - Brighton follows Kerry Pickett; BUND Leipzig thanked
 
