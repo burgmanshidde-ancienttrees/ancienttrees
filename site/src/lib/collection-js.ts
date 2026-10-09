@@ -205,10 +205,10 @@ window.atCollection = (function() {
     catalogue: catalogue,
     card: card,
     esc: esc,
-    /** Tree ids this account has saved. Signed out: nothing, and no request. */
-    saves: function() { return ids('/rest/v1/saves?select=tree_id'); },
-    /** Tree ids this account has checked in at. */
-    visited: function() { return ids('/rest/v1/visited?select=tree_id'); },
+    /** Tree ids this account has saved, newest first. Signed out: nothing, and no request. */
+    saves: function() { return ids('/rest/v1/saves?select=tree_id&order=created_at.desc'); },
+    /** Tree ids this account has checked in at, newest first. */
+    visited: function() { return ids('/rest/v1/visited?select=tree_id&order=created_at.desc'); },
     save: function(id, on) {
       var s = session();
       if (!s) return Promise.resolve(false);

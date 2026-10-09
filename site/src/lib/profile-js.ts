@@ -108,7 +108,10 @@ export const PROFILE_JS = `
       return;
     }
     if (empty) empty.hidden = true;
-    known.sort(function(a, b) { return cards[a].n < cards[b].n ? -1 : 1; });
+    // Newest first, as the server sends them, which is the app's order for
+    // both lanes (Saved.swift). Sorted A to Z the two lanes opened on the same
+    // row whenever most favourites were also trees you had seen, and the
+    // switch looked dead (Hidde, 2026-10-09: "the row of trees stays the same").
     node.innerHTML = known.map(function(id) {
       return '<li>' + C.card(id, cards[id], savedSet[id] === true, visitedSet[id] === true) + '</li>';
     }).join('');
