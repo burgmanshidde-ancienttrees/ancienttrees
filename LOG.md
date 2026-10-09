@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (night run) - Singapore enrichment pass, no new trees
+
+**Rung:** 2 checked first: the newest red deploy (04:18) was superseded by later runs already in flight from other sessions, so nothing to fix. Then the enrichment lane (prepare.py named Singapore). The write shelf had nothing mergeable (the four "ready" trees are held by the rich/photo-or-pin rules).
+**Done:** one verify pass on 19 Singapore trees: NParks Heritage Trees Scheme record and height on all 19, girth at 1.3 m on 12, Botanic Gardens hours on 9. Applied with enrich.py, preflight 0 problems. Girth left out where the register measures at another height or the banyan figure is a stem mass. Visits last 7 days: 1566.
+**Stopped at:** Fort Canning, Pearl's Hill, Tiong Bahru and Chek Jawa access hours (NParks pages 404). No refused commands.
+
 ## 2026-10-09 (session) - The key under the year graph is a legend, in the same chip
 
 **Why:** Hidde, on the City Hall Maple's year graph: "make the tags consistent under the graphs as well, and only put them there if they are part of the graph." The key under the curve listed every moment the species records ("Flowers", "Autumn colour") in a plain style of its own, while the curve marked only the fruit peak, and the header wore "In fruit" as a tinted chip. Three styles for one moment, and the one moment on the graph was the one missing from the key.

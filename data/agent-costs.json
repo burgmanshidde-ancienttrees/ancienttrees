@@ -10185,6 +10185,13 @@
    "tokens": 170000,
    "trees": 5,
    "note": "new city opened with 5 stories, recognition lines, city copy"
+  },
+  {
+   "target": "singapore",
+   "kind": "enrich",
+   "tokens": 150028,
+   "trees": 0,
+   "note": "enrichment: register record + height on 19 trees, girth on 12, Gardens hours on 9; no new trees"
   }
  ]
 }

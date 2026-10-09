@@ -44,7 +44,8 @@
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2001-26/",
         "https://mothership.sg/2022/09/5-sing-dollar-note-tree/",
-        "https://sbg.nparks.gov.sg/attractions/heritage-trees-and-landscapes/"
+        "https://sbg.nparks.gov.sg/attractions/heritage-trees-and-landscapes/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-26/"
       ],
       "access": "Free, public section of Singapore Botanic Gardens, open 5am-12am daily",
       "transport": "10 minute walk from Botanic Gardens MRT station (Circle/Downtown Line), Tanglin Gate entrance",
@@ -58,7 +59,12 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by a single low branch growing almost parallel to the ground before curling upward, the shape on Singapore's five-dollar note. It stands on Lawn E, overlooking Swan Lake."
+      "how_to_recognise": "You can recognise it by a single low branch growing almost parallel to the ground before curling upward, the shape on Singapore's five-dollar note. It stands on Lawn E, overlooking Swan Lake.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-26/"
+      },
+      "height_m": 20
     },
     {
       "id": "sgp_002",
@@ -76,7 +82,8 @@
       "story": "This rain tree spreads its umbrella-shaped canopy directly over a public stairway that carries walkers out of Fort Canning Park onto Hill Street, so almost everyone who takes those steps passes under it whether they notice or not. Rain trees only arrived in Singapore in 1876, imported from tropical America and planted heavily through the colonial coffee and nutmeg plantations that once covered much of the island, and this specimen's own planting date was never recorded, though its 4.93 metre girth points to a tree well over a century old. Its most reliable feature is not size but timing: every evening, roughly ninety minutes before sunset, its paired leaflets fold shut, and they do the same on overcast days, a light-sensitive reflex that gave the species both its English name and its Malay one, Pukul Lima, five o'clock. Fort Canning Hill itself was the seat of the ancient Kingdom of Singapura before it became a British fort and then a public park, so a tree standing sentinel over one of its main entrances is, in a small way, guarding ground with a longer history than the tree itself. Clusters of pink-and-white flowers appear through the year without a single dramatic peak, and the pods that follow ripen dark and fleshy, adding to the tree's already broad, low silhouette.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2014-228/",
-        "https://commons.wikimedia.org/wiki/File:Heritage_Rain_Tree_looming_over_steps_leading_out_of_Fort_Canning_Park_onto_Hill_Street_-_2022-05-27.jpg"
+        "https://commons.wikimedia.org/wiki/File:Heritage_Rain_Tree_looming_over_steps_leading_out_of_Fort_Canning_Park_onto_Hill_Street_-_2022-05-27.jpg",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-228/"
       ],
       "access": "Free, public park, open 24 hours",
       "transport": "5 minute walk from Fort Canning MRT station (Downtown Line), via the Hill Street steps",
@@ -91,7 +98,13 @@
       "curation_status": "ai_generated",
       "notes": "Planting date undocumented; age_min/age_max are an inference from girth and species growth rate, not a sourced figure. A different Fort Canning heritage tree, a Burmese banyan, collapsed nearby in January 2021; this is not that tree, and remains standing.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its broad umbrella canopy over the stairway to Hill Street, leaflets folding shut about ninety minutes before sunset. It stands near Raffles Gardens in Fort Canning Park."
+      "how_to_recognise": "You can recognise it by its broad umbrella canopy over the stairway to Hill Street, leaflets folding shut about ninety minutes before sunset. It stands near Raffles Gardens in Fort Canning Park.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-228/"
+      },
+      "girth_cm": 493,
+      "height_m": 21.8
     },
     {
       "id": "sgp_003",
@@ -109,7 +122,8 @@
       "story": "NParks records this as the largest Madras thorn on Singapore's heritage register, an 8.5 metre girth today, up from 7.4 metres when it was first measured for the scheme in 2001. The species arrived in the region centuries ago with Portuguese and Spanish traders from tropical America, and by the mid-1900s it lined roadsides and housing estates across Singapore as a shade tree, until a caterpillar infestation through the 1970s got it stripped from most public planting. This one, tucked beside Fort Canning's old Service Reservoir rather than out on a street, survived that cull. Its crown is low, spreading and unusually bushy for a tree this size, shaggy with bird's nest ferns and other epiphytes that have colonized its branches over the decades, giving it a wilder look than its more manicured heritage-tree neighbours. Short, sharp thorns guard the base of each leaf, the source of both its common name and part of the Greek genus name, which references the fruit's resemblance to a monkey's earring. Those fruits split into coiled, rose-red pods each spring, exposing a sweet white pulp around glossy black seeds that draws yellow-vented bulbuls and Oriental magpie robins to disperse them, and the same pulp is eaten by people elsewhere in its native range as a sour-sweet snack or juice.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2001-04/",
-        "https://commons.wikimedia.org/wiki/File:Heritage_Madras_Thorn_tree_in_Fort_Canning_Park_-_2022-07-26.jpg"
+        "https://commons.wikimedia.org/wiki/File:Heritage_Madras_Thorn_tree_in_Fort_Canning_Park_-_2022-07-26.jpg",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-04/"
       ],
       "access": "Free, public park, open 24 hours",
       "transport": "8 minute walk from Fort Canning MRT station (Downtown Line)",
@@ -124,7 +138,13 @@
       "curation_status": "flagged",
       "notes": "Age genuinely undocumented; NParks' own register gives no planting date or estimate, only girth growth since 2001, so age_min/age_max are left at 0 rather than guessed. 'Largest of its kind' is NParks' own register claim about its own designated trees, not an unqualified cross-site superlative.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its low, bushy crown shaggy with bird's nest ferns and other epiphytes, on an 8.5 metre girth trunk. It stands beside Fort Canning's old Service Reservoir."
+      "how_to_recognise": "You can recognise it by its low, bushy crown shaggy with bird's nest ferns and other epiphytes, on an 8.5 metre girth trunk. It stands beside Fort Canning's old Service Reservoir.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-04/"
+      },
+      "girth_cm": 850,
+      "height_m": 20.9
     },
     {
       "id": "sgp_004",
@@ -142,7 +162,8 @@
       "story": "This tamalan is one of the last survivors of an ornamental planting scheme that once covered much of Fort Canning Hill in the early 1900s, when the old fort grounds were being turned into a colonial pleasure garden. NParks' own register notes that few of the tamalan planted here in that era still line the hill's paths, which makes this specimen, standing at Fort Green, a rare direct witness to that specific phase of the park's history rather than a later replacement. The species is native to Myanmar, Thailand and Vietnam, where it can reach 20 to 30 metres, and it was brought to Singapore purely for its looks: a crown of delicate, feathery foliage carried on branches that spread wide and low, with flower buds that open lilac, shift to pink, and fade to white as they age. Its wood connects it to a more famous family. Dalbergia is the genus behind Brazilian rosewood and African blackwood, both prized and now heavily restricted timbers, and while this tree has never been harvested, its relatives explain why the genus carries the weight it does among furniture makers and luthiers. At 5.48 metres in girth and just under 15 metres tall, it is modest next to some of Fort Canning's other heritage trees, but it is one of the few left standing from a planting era the park's own records otherwise struggle to document.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2014-224/",
-        "https://www.alamy.com/heritage-trees-at-fort-canning-park-tamalan-dalbergia-oliveri-tree-singapore-press-via-ap-images-image533657219.html"
+        "https://www.alamy.com/heritage-trees-at-fort-canning-park-tamalan-dalbergia-oliveri-tree-singapore-press-via-ap-images-image533657219.html",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-224/"
       ],
       "access": "Free, public park, open 24 hours",
       "transport": "10 minute walk from Fort Canning MRT station (Downtown Line)",
@@ -155,7 +176,13 @@
       "curation_status": "flagged",
       "notes": "Planting date not documented; age is inferred from NParks' note that the species was 'extensively planted' at Fort Canning in the early 1900s, not from a source dating this specific tree.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by feathery, delicate foliage on wide, low-spreading branches, and flower buds that open lilac before fading through pink to white. Trunk 5.48 metres round. It stands at Fort Green."
+      "how_to_recognise": "You can recognise it by feathery, delicate foliage on wide, low-spreading branches, and flower buds that open lilac before fading through pink to white. Trunk 5.48 metres round. It stands at Fort Green.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-224/"
+      },
+      "girth_cm": 548,
+      "height_m": 14.6
     },
     {
       "id": "sgp_005",
@@ -173,7 +200,8 @@
       "story": "This terap grows beside Fort Canning's 14th Century Walk of History, a path named for the hill's role as the seat of the ancient Kingdom of Singapura, and it carries plank buttresses at its base broad enough to make the connection to old ground feel physical rather than just historical. Its girth has grown from 4.1 metres, when NParks first endorsed it as a heritage tree in 2001, to 5.68 metres today, real if unspectacular proof of two and a half decades of recorded growth, though nothing in the register dates its planting itself. Botanist John Henry Corner, assistant director of the Botanic Gardens through the 1930s and 40s, documented Fort Canning's terap specimens in his standard reference Wayside Trees of Malaya, giving this small grove a paper trail most street trees never get. In the wild the species can reach 45 to 65 metres; Singapore's cultivated specimens stay far smaller, but the fruit does not: each one grows to roughly 18 centimetres, ripening from cream to brown and smelling notoriously strong when cut open, guarding a sweet white pulp locals have described as tasting like tangy marshmallow. The tree's tough, fibrous inner bark was historically stripped and worked into cordage, coarse cloth and basket lining across the region, a practical use that outlived the kingdom the walking path beside it is named for.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2001-12/",
-        "https://remembersingapore.org/2022/05/06/singapore-heritage-tree-terap/"
+        "https://remembersingapore.org/2022/05/06/singapore-heritage-tree-terap/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-12/"
       ],
       "access": "Free, public park, open 24 hours",
       "transport": "8 minute walk from Fort Canning MRT station (Downtown Line)",
@@ -186,7 +214,12 @@
       "curation_status": "flagged",
       "notes": "Age genuinely undocumented; NParks gives only girth growth since 2001 endorsement, so age_min/age_max are left at 0 rather than guessed. Three other terap heritage trees stand nearby on the same walk and one more on Canning Rise; this entry is specifically HT 2001-12.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by broad plank buttresses spreading from its base and, in season, cream-to-brown fruit about 18 centimetres long. Trunk 5.68 metres round. It stands beside the 14th Century Walk of History, near the Service Reservoir."
+      "how_to_recognise": "You can recognise it by broad plank buttresses spreading from its base and, in season, cream-to-brown fruit about 18 centimetres long. Trunk 5.68 metres round. It stands beside the 14th Century Walk of History, near the Service Reservoir.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-12/"
+      },
+      "height_m": 26.4
     },
     {
       "id": "sgp_006",
@@ -204,7 +237,8 @@
       "story": "At 11.55 metres in girth, this is one of the largest-trunked trees on Singapore's entire heritage register, rising 34.6 metres from the edge of an ordinary public car park at the foot of Mount Faber. Kapok is deciduous, unusual for a tropical tree, dropping its leaves entirely before flowering, and its cream-coloured blooms open at night with a milky scent that draws bats to pollinate them, an entirely different visiting crowd than the tree gets by day. The seed pods that follow split to release a fine, water-resistant white fiber once used to stuff life jackets and mattresses worldwide, the reason the tree ended up as Puerto Rico's national tree despite originating, like this one's ancestors, in tropical America. What makes this particular specimen worth the detour is what stands twenty metres behind it in the undergrowth: a brick-entranced wartime bunker, its tunnel about 2.5 metres tall inside with small ventilation holes along the walls, largely forgotten until vegetation was cleared enough to rediscover it. Local historians believe it was built shortly before the Second World War, though its exact use, whether to hold prisoners of war or simply to store equipment and ammunition, has never been confirmed. The kapok tree is the only obvious marker for anyone trying to find it.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2005-134/",
-        "https://remembersingapore.org/2019/10/13/seah-im-road-bunker-exploration/"
+        "https://remembersingapore.org/2019/10/13/seah-im-road-bunker-exploration/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2005-134/"
       ],
       "access": "Free, public car park",
       "transport": "10 minute walk from HarbourFront MRT station (Circle/North East Line), near the Mount Faber cable car base station",
@@ -217,7 +251,13 @@
       "curation_status": "flagged",
       "notes": "The bunker's wartime use (POW holding vs. storage) is stated by local historians as a belief, not a confirmed fact, and the story is phrased accordingly. Age of the tree itself is undocumented by NParks.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its huge 11.55 metre girth trunk rising 34.6 metres from the edge of the car park, with a wartime bunker in the undergrowth twenty metres behind it. It stands at Seah Im Road, at the base of Mount Faber."
+      "how_to_recognise": "You can recognise it by its huge 11.55 metre girth trunk rising 34.6 metres from the edge of the car park, with a wartime bunker in the undergrowth twenty metres behind it. It stands at Seah Im Road, at the base of Mount Faber.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2005-134/"
+      },
+      "girth_cm": 1155,
+      "height_m": 34.6
     },
     {
       "id": "sgp_007",
@@ -236,7 +276,8 @@
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2007-163/",
         "https://en.wikipedia.org/wiki/Chek_Jawa",
-        "https://pulau-ubin.nparks.gov.sg/chek-jawa-wetlands/"
+        "https://pulau-ubin.nparks.gov.sg/chek-jawa-wetlands/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2007-162/"
       ],
       "access": "Free, public boardwalk (Chek Jawa Wetlands, 7am-7pm daily), reached via a paid bumboat to Pulau Ubin",
       "transport": "Bumboat from Changi Point Ferry Terminal to Pulau Ubin, then a 20-25 minute walk or bike ride to the Chek Jawa boardwalk",
@@ -249,7 +290,12 @@
       "curation_status": "flagged",
       "notes": "Age undocumented by NParks for either tree; the pair's status as 'the only two mangrove trees in the Heritage Tree Register' is NParks' own register claim about its own designated trees. Coordinates are the midpoint of the two individually-surveyed trees (HT 2007-162 and HT 2007-163), roughly 20m apart at the same named location.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them by pneumatophores poking straight up through the mud around their bases, and roots often partly submerged with the tide. They stand together beside House No. 1, the only mangroves in Singapore's heritage register."
+      "how_to_recognise": "You can recognise them by pneumatophores poking straight up through the mud around their bases, and roots often partly submerged with the tide. They stand together beside House No. 1, the only mangroves in Singapore's heritage register.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2007-162/"
+      },
+      "height_m": 18.9
     },
     {
       "id": "sgp_008",
@@ -267,7 +313,8 @@
       "story": "Singapore's first prison stood on this hill, and so did its first hospital for the poor. The Bodhi tree at the top of Pearl's Hill City Park carries 6.34 metres of girth and 16.9 metres of height on NParks' heritage register, and it grows over ground that held both, which is a fair trade. The hill takes its name from Captain James Pearl, who commanded the Indiana, the ship that brought Raffles to Singapore in 1819. He liked the view enough to buy the hill and plant it with pepper. Tan Tock Seng's hospital for destitute Chinese labourers opened on its slope in the 1840s and the colonial gaol followed, both long since buried under the reservoir and the police blocks that took their place. Ficus religiosa is the species the Buddha is traditionally said to have sat beneath, and it is sacred to Buddhists and Hindus alike. The leaves are the giveaway: heart-shaped, drawn out into a long tail that sheds monsoon rain and sets the whole crown trembling in almost no wind. This is not the Bodhi tree most people in Singapore mean. That one grows at the Jin Long Si Temple and has had its own long public fight over the land around it. This is a different individual on a different hill, and it draws no crowd at all. NParks records no planting date, so its age is unknown.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2001-18/",
-        "https://www.littledayout.com/pearls-hill-city-park-hidden-nature-haven-town/"
+        "https://www.littledayout.com/pearls-hill-city-park-hidden-nature-haven-town/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-18/"
       ],
       "access": "Free, public park (Pearl's Hill City Park), no gates or opening hours found",
       "transport": "Short walk (roughly 5-10 minutes, uphill) from Outram Park MRT station (East-West/North-East/Thomson-East Coast lines)",
@@ -280,7 +327,13 @@
         "status": "missing"
       },
       "verify_notes": "Corrected 2026-08-22: the story said Captain Pearl planted the hill with nutmeg, and two sources (NParks' heritage tree record and Wikipedia's Pearl's Hill article) say pepper; the gambier belongs to the occupants before him.",
-      "how_to_recognise": "You can recognise it by its heart-shaped leaves drawn into a long tail that sheds rain and trembles in almost no wind. It stands at the hilltop of Pearl's Hill City Park, near the Service Reservoir gate."
+      "how_to_recognise": "You can recognise it by its heart-shaped leaves drawn into a long tail that sheds rain and trembles in almost no wind. It stands at the hilltop of Pearl's Hill City Park, near the Service Reservoir gate.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-18/"
+      },
+      "girth_cm": 634,
+      "height_m": 16.9
     },
     {
       "id": "sgp_009",
@@ -298,7 +351,8 @@
       "story": "A girth of 22.8 metres usually takes a tree several centuries. This one managed it in under sixty years. Tiong Bahru Park was developed in 1967 and NParks' own register states plainly that the banyan was planted after that, which makes it younger than the flats around it and still one of the widest trees on Singapore's heritage list. The trick is in how a banyan is put together. Ficus benghalensis drops aerial roots from its branches; they reach the ground, thicken into trunks of their own, then fuse with each other and with the original stem into a single braided mass that a tape measure reads as one enormous trunk. A banyan does not so much grow fat as recruit. Measured at the standard 1.3 metres above the ground, those 22.8 metres are really a committee. So the thing to go and look at here is not age. It is speed, and the odd architecture that produces it: a tree 18.4 metres tall occupying its patch of park like something with four times its lifespan behind it, props still coming down through the canopy in various stages of becoming trunks. In Hindu tradition the species carries its own weight, the roots read as Brahma's, the trunk as Vishnu's, the branches as Shankar's. Older banyans elsewhere in the Tiong Bahru area have been called a hundred years and more. This one, by its own record, is not among them.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2013-204/",
-        "https://en.wikipedia.org/wiki/Tiong_Bahru_Park"
+        "https://en.wikipedia.org/wiki/Tiong_Bahru_Park",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2013-204/"
       ],
       "access": "Free, public park, no gates or opening hours found",
       "transport": "Roughly 10-15 minute walk from Tiong Bahru or Redhill MRT station",
@@ -310,7 +364,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its braided mass of fused aerial roots, 22.8 metres round though only 18.4 metres tall, with props still visible turning into trunks. It stands in Tiong Bahru Park."
+      "how_to_recognise": "You can recognise it by its braided mass of fused aerial roots, 22.8 metres round though only 18.4 metres tall, with props still visible turning into trunks. It stands in Tiong Bahru Park.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2013-204/"
+      },
+      "height_m": 18.4
     },
     {
       "id": "sgp_010",
@@ -328,7 +387,8 @@
       "story": "The seed pods explain the name: dark, flat, coiled into a near-perfect circle and close enough to a human ear that the tree is called after one in both Spanish and English. In Costa Rica, where the same species is the national tree, those pods are a roadside fixture. The earpod at Fort Canning has been on Singapore's heritage register since 2001, with 5.94 metres of girth and 17.9 metres of height, standing on the path behind the Fort Wall. It came from the tropical dry forests running from Mexico down to Venezuela, where it is one of the largest trees of that habitat, reaching 40 metres with a trunk three metres through, and where old specimens push surface roots out far enough to lift nearby paving. It arrived here as an ornamental and is now the first stop on NParks' own walking trail of the hill's heritage trees, which puts four more within a few hundred metres of it. One thing is unresolved and worth knowing before you go. Both the register and NParks' current Fort Canning trail guide describe this tree standing. A 2025 travel account describes an earpod tree somewhere in the same park that came down in a 2014 storm and kept growing on its side, its trunk now carrying orchids and ferns. Nobody has confirmed whether that is this tree or another one. If you find it lying down, it is alive, and it is still worth the walk.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2001-11/",
-        "https://heritagetrees.nparks.gov.sg/files/Explore%20Page/NPARKS_DIY_Trail_Fort_Canning_FA.pdf"
+        "https://heritagetrees.nparks.gov.sg/files/Explore%20Page/NPARKS_DIY_Trail_Fort_Canning_FA.pdf",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-11/"
       ],
       "access": "Free, public park, open 24 hours",
       "transport": "8-10 minute walk from Fort Canning MRT station (Downtown Line)",
@@ -340,7 +400,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its dark, coiled, ear-shaped seed pods and a 5.94 metre girth trunk. It stands on the path behind the Fort Wall, between the wall and Hotel Fort Canning."
+      "how_to_recognise": "You can recognise it by its dark, coiled, ear-shaped seed pods and a 5.94 metre girth trunk. It stands on the path behind the Fort Wall, between the wall and Hotel Fort Canning.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-11/"
+      },
+      "girth_cm": 594,
+      "height_m": 17.9
     },
     {
       "id": "sgp_011",
@@ -358,9 +424,11 @@
       "story": "A ripe fruit on this tree is a grey-brown cylinder up to a metre long, hanging from a cord of a stalk, heavy enough that nobody sensible stands under one for long. That is the whole species in one glance, and it is where the name comes from. The Gardens kept the paperwork for this particular tree. It arrived from Honolulu on 13 May 1931 and went into the ground on 19 October the same year, one of the tropical species being trialled here for economic and medicinal value, in an era when whether a plant was useful decided whether it earned a place. It has held its patch of lawn beside the Sundial Garden ever since. In its native Africa the fruit is both useful and dangerous. Raw it is poisonous. Processed it goes into herbal remedies and fermented drinks, and in several communities a fruit is buried in place of a body when there is no body to bury. The flowers that come before it are deep maroon, smell of nothing anyone would choose, and open at night for bats rather than bees. Ninety-five years in, though, the sausages are the point. Once set they hang for months, which makes this one of the few trees on this list with something to show whichever week you turn up.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2013-213/",
-        "https://www.littledayout.com/the-story-of-the-african-sausage-tree-at-singapore-botanic-gardens/"
+        "https://www.littledayout.com/the-story-of-the-african-sausage-tree-at-singapore-botanic-gardens/",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2013-213/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 10 minute walk",
       "photo": {
         "url": null,
@@ -370,7 +438,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the sausage-shaped fruit, a grey-brown cylinder up to a metre long, hanging from a cord-like stalk once it sets. It stands on the lawn beside the Sundial Garden."
+      "how_to_recognise": "You can recognise it by the sausage-shaped fruit, a grey-brown cylinder up to a metre long, hanging from a cord-like stalk once it sets. It stands on the lawn beside the Sundial Garden.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2013-213/"
+      },
+      "girth_cm": 340,
+      "height_m": 9.5
     },
     {
       "id": "sgp_012",
@@ -388,9 +462,11 @@
       "story": "There is a baobab in Singapore, and it is only about forty years old. Everything worth knowing about it follows from those two facts. The species belongs to dry African savannah, where it survives months without rain by storing water in a swollen trunk; Singapore delivers rain most weeks and grows very few baobabs from seed. This is thought to be one of the handful that were. NParks put it at close to thirty years old when it was endorsed as a heritage tree in 2016, which makes it around forty now. For a species that can pass a thousand years, that is a child, and it already carries five metres of girth. Baobab trunks swell out of all proportion to their height as they age, so a young one looks like a fat grey bottle with twigs on top. This is exactly that. It has moved once. In June 1996 it was lifted from elsewhere in the Gardens and replanted here beside Melati Gate on the Cluny Park Road side, a long way from the busier lawns, which is why most visitors never meet it. Its flowers are worth knowing about even if you will not see them: large, white, hanging upside down, opening after dark for bats to pollinate, and finished inside a day.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2016-283/",
-        "https://singapore.biodiversity.online/taxo4254/mainSpace/Adansonia%20digitata.html"
+        "https://singapore.biodiversity.online/taxo4254/mainSpace/Adansonia%20digitata.html",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2016-283/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 15-20 minute walk to the Bukit Timah Core / Cluny Park Road side",
       "photo": {
         "url": null,
@@ -400,7 +476,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its swollen, bottle-shaped grey trunk, about five metres round despite the tree's young age. It stands near Melati Gate, on the Cluny Park Road side of the Botanic Gardens."
+      "how_to_recognise": "You can recognise it by its swollen, bottle-shaped grey trunk, about five metres round despite the tree's young age. It stands near Melati Gate, on the Cluny Park Road side of the Botanic Gardens.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2016-283/"
+      },
+      "girth_cm": 500,
+      "height_m": 10.5
     },
     {
       "id": "sgp_013",
@@ -418,9 +500,11 @@
       "story": "This tree flowers and fruits straight out of its own trunk. Ropes of waxy pink and cream flowers erupt from the bark, and behind them hang the fruit it is named for, brown spheres the size of cannon balls that crack open on the ground and smell appalling for days afterwards. It grew from seed collected in a hurry. In 1931 E.J.H. Corner, then an assistant director of the Botanic Gardens, was sailing back from home leave in England when his ship called at Colombo. He had eight hours before it left again, spent them getting up to the botanic garden at Peradeniya near Kandy, and came back aboard with cannon ball seed. This tree was planted from it that year, behind the waterfall at the edge of the Ginger Garden. The flowers make no nectar, and the pollen in the ring at their centre is sterile. Carpenter bees come for that sterile pollen anyway and collect the fertile kind on their backs on the way in, which is the arrangement the entire species runs on. Two degrees off the equator there is no season to wait for; it flowers and fruits more or less continuously. Half a dozen more heritage trees stand within about five hundred metres, which makes this the one stretch of this list you can walk rather than travel between.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2014-230/",
-        "https://medium.com/@ngsugnee12/heritage-trees-at-singapore-botanic-gardens-a8103765d759"
+        "https://medium.com/@ngsugnee12/heritage-trees-at-singapore-botanic-gardens-a8103765d759",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-230/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 10-15 minute walk to the Ginger Garden",
       "photo": {
         "url": null,
@@ -430,7 +514,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by ropes of waxy pink and cream flowers, and cannonball-sized fruit, erupting straight from the trunk. It stands behind the waterfall at the edge of the Ginger Garden."
+      "how_to_recognise": "You can recognise it by ropes of waxy pink and cream flowers, and cannonball-sized fruit, erupting straight from the trunk. It stands behind the waterfall at the edge of the Ginger Garden.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-230/"
+      },
+      "girth_cm": 280,
+      "height_m": 20
     },
     {
       "id": "sgp_014",
@@ -448,9 +538,11 @@
       "story": "Orchard Road is named after orchards, and the crop in them was nutmeg. Singapore grew it hard through the 1840s until disease went through the plantations in the 1860s and took the industry with it. These two trees are not survivors of that boom. They are the closest thing to it still growing in the city. They stand a few metres apart in the Central Core, on the ground of the Gardens' Economic Garden, laid out in 1879 to work out which tropical crops could be made to pay here. Nutmeg was already the answer that had failed, kept on as a specimen, and this pair are among the last of those crop plants left standing. The register lists them separately. A visitor sees one thing: two trunks a little over a metre round each, neither the sort of bulk that stops anyone in their tracks. What they do have is fruit. Nutmeg trees are either male or female, and both of these are female. The fruit is a yellow, apricot-shaped thing that splits to show a scarlet lace cage wrapped around a single dark seed. The cage is mace. The seed is nutmeg. One tree, two spices, priced separately for centuries. Nobody recorded when either of them went in. If you know, tell us.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2015-272/",
-        "https://www.deepeco.net/post/the-nutmeg-orchard-tree"
+        "https://www.deepeco.net/post/the-nutmeg-orchard-tree",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2015-271/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 15-20 minute walk to the Central Core",
       "photo": {
         "url": null,
@@ -460,7 +552,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them by two slim trunks, just over a metre round each, standing a few metres apart. They stand in the Central Core, on the site of the old Economic Garden."
+      "how_to_recognise": "You can recognise them by two slim trunks, just over a metre round each, standing a few metres apart. They stand in the Central Core, on the site of the old Economic Garden.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2015-271/"
+      },
+      "height_m": 13.2
     },
     {
       "id": "sgp_015",
@@ -478,9 +575,11 @@
       "story": "Fifteen metres of girth, and almost none of it is a trunk in the ordinary sense. This is a strangler fig, and what a tape measure reads at chest height is a fused colonnade of pillar roots dropped from the branches over a century and more, thickened where they hit the ground and grown together since. It carries that mass 22 metres up, on the edge of Swan Lake. NParks will not date it. The register says only that it is thought to be as old as the Gardens themselves, which opened in 1859, and that is a tradition rather than a record. What is firmer than the tradition: the tree turns up in old paintings of the Gardens, and Herbarium staff have recalled playing around it as children in the 1930s, so it was already a landmark before the war. Even its name is unsettled. It is registered as Ficus kurzii, the Burmese banyan, but a fig specialist writing in 2024 points out that true wild kurzii does not grow this far south down the Malay Peninsula, and argues this tree is more likely a hybrid with Ficus benjamina, propagated here from cuttings for more than 150 years. So: one of the largest things growing in the Gardens, and still an open question as to what it actually is.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2011-184/",
-        "https://borneoficus.info/2024/06/03/ficus-kurzii-singapore-botanic-gardens/"
+        "https://borneoficus.info/2024/06/03/ficus-kurzii-singapore-botanic-gardens/",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2011-184/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 10 minute walk to Swan Lake",
       "photo": {
         "url": null,
@@ -490,7 +589,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by a fused colonnade of pillar roots reading as one 15 metre trunk, rising 22 metres. It stands on the edge of Swan Lake, between the lake and the Marsh Garden."
+      "how_to_recognise": "You can recognise it by a fused colonnade of pillar roots reading as one 15 metre trunk, rising 22 metres. It stands on the edge of Swan Lake, between the lake and the Marsh Garden.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2011-184/"
+      },
+      "height_m": 22
     },
     {
       "id": "sgp_016",
@@ -508,9 +612,11 @@
       "story": "The saga was brought to Singapore to fight a grass. Between 1883 and 1885 the Gardens' superintendent Nathaniel Cantley planted it as an experiment in smothering lalang, the coarse weed grass that takes any cleared ground here within weeks. It worked well enough that the director Henry Ridley later used saga to shade the Gardens' nutmeg, and by the 1970s and 80s it had become a standard Singapore roadside tree. This one grows a few minutes inside the Tanglin entrance, near the Frangipani Garden. Its age comes out of a filing cabinet rather than off a tape. The earliest herbarium specimen cut from this individual tree is dated 1900, which is why the register says it must be well over a century old, putting it past 126 years now. Its measurements are less settled. NParks records a girth of 5.32 metres and a height of 13.1 metres; the National Heritage Board's own entry gives 4.8 metres and 24 metres. The height gap is far too wide to split, so treat both as claims and neither as final. What nobody disputes is the seeds, hard scarlet discs that children pocket and collectors hunt; one collector has mapped 57 saga trees across the island. This tree also sits in a national art collection, photographed by Robert Zhao Renhui for his 2013 work mapping exactly those trees.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2001-19/",
-        "https://www.roots.gov.sg/Collection-Landing/listing/1350843"
+        "https://www.roots.gov.sg/Collection-Landing/listing/1350843",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-19/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 5-10 minute walk from the Tanglin Gate",
       "photo": {
         "url": null,
@@ -520,7 +626,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by hard scarlet seed discs on the ground beneath it. It stands a few minutes inside the Tanglin Entrance, near the Frangipani Garden and the Lady on a Hammock sculpture."
+      "how_to_recognise": "You can recognise it by hard scarlet seed discs on the ground beneath it. It stands a few minutes inside the Tanglin Entrance, near the Frangipani Garden and the Lady on a Hammock sculpture.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2001-19/"
+      },
+      "girth_cm": 532,
+      "height_m": 13.1
     },
     {
       "id": "sgp_017",
@@ -538,9 +650,11 @@
       "story": "You can see this tree from the Bandstand, which is odd for a tree standing inside a forest. The jelutong is an emergent: it does not stop at the canopy but pushes its crown out above it, and at 29 metres this one clears everything around it. What is around it matters as much as the tree. It grows on Lawn S, inside the Gardens' patch of primary rainforest, one of only two fragments of Singapore's original forest left anywhere on the island. The species is native here, so this is a tree standing in something close to the vegetation it evolved in, in the middle of a city that has built over almost all of it. Its sap made chewing gum. Gutta jelutong was tapped across Malaya as a base for the stuff, and the pale, soft timber went into pencils, which is a strange double career for a tree in a country that banned the sale of chewing gum in 1992. Nobody has dated it. The register offers no estimate at all, only four metres of girth and that height, and for once the height is the more interesting number: a native tree, in native forest, tall enough to be picked out from a lawn several hundred metres away. If anyone has measured or dated this one, we would like to hear it.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2015-239/",
-        "https://singapore.biodiversity.online/taxo4254/mainSpace/Dyera%20costulata.html"
+        "https://singapore.biodiversity.online/taxo4254/mainSpace/Dyera%20costulata.html",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2015-239/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 15 minute walk to the rainforest section",
       "photo": {
         "url": null,
@@ -550,7 +664,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its crown rising 29 metres above the surrounding canopy, visible from the Bandstand. It stands on Lawn S, inside the Gardens' patch of primary rainforest."
+      "how_to_recognise": "You can recognise it by its crown rising 29 metres above the surrounding canopy, visible from the Bandstand. It stands on Lawn S, inside the Gardens' patch of primary rainforest.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2015-239/"
+      },
+      "girth_cm": 410,
+      "height_m": 29.2
     },
     {
       "id": "sgp_018",
@@ -568,9 +688,11 @@
       "story": "When Nelson Mandela came to the Singapore Botanic Gardens in 1997, the Gardens dedicated a tree to him, and they picked an unlikely one. The giant cola is West African, unlike anything else growing around Orchid Plaza, and it has stood there with his name attached ever since. An orchid was named for the same visit, which is the more Singaporean gesture. The tree is the one you can walk up to. Cola gigantea belongs to the genus behind the original cola drinks. Its nuts are bitter and loaded with caffeine, chewed across West Africa as a stimulant and offered to guests as a matter of courtesy, and almost every part of the tree has a use in traditional medicine: bark for swellings and pain, other parts against fever, asthma and whooping cough. Laboratory work on its leaf extracts has since taken an interest in the anti-inflammatory half of that reputation. It is not a giant here. Three and a half metres of girth and fifteen metres of height is respectable rather than startling, and it only joined the heritage register in 2014, seventeen years after the dedication. Nobody recorded when it was planted. A dedication is not a planting, so its age is genuinely unknown, and no record of one has turned up.",
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2014-229/",
-        "https://www.flickr.com/photos/deeltijdgod/53698226519"
+        "https://www.flickr.com/photos/deeltijdgod/53698226519",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-229/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 15-20 minute walk to Orchid Plaza near the National Orchid Garden",
       "photo": {
         "url": null,
@@ -580,7 +702,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its West African foliage, unlike anything else around it, on a 3.5 metre trunk. It stands in Orchid Plaza, dedicated to Nelson Mandela's 1997 visit."
+      "how_to_recognise": "You can recognise it by its West African foliage, unlike anything else around it, on a 3.5 metre trunk. It stands in Orchid Plaza, dedicated to Nelson Mandela's 1997 visit.",
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2014-229/"
+      },
+      "girth_cm": 346,
+      "height_m": 15.4
     },
     {
       "id": "sgp_019",
@@ -977,9 +1105,11 @@
       },
       "verified_sources": [
         "https://heritagetrees.nparks.gov.sg/ht-2012-201/",
-        "https://sbg.nparks.gov.sg/attractions/heritage-trees-and-landscapes/"
+        "https://sbg.nparks.gov.sg/attractions/heritage-trees-and-landscapes/",
+        "https://sbg.nparks.gov.sg/visit/general-info/",
+        "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2012-201/"
       ],
-      "access": "Free, Singapore Botanic Gardens is open daily, no entry fee",
+      "access": "Free entry daily; the Gardens are open 5am to 12 midnight (only the National Orchid Garden is ticketed)",
       "transport": "Botanic Gardens MRT (Circle/Downtown lines), about 10-15 minute walk to Lawn B / Main Gate Road",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -990,7 +1120,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Heritage Trees Scheme (NParks)",
+        "url": "https://heritagetrees.nparks.gov.sg/heritagetrees/ht-2012-201/"
+      },
+      "height_m": 16.4
     },
     {
       "id": "sgp_032",
