@@ -221,6 +221,34 @@ def repeated_ask_hits(text, body):
     return hits
 
 
+def role_in_first_mail_hits(path, text):
+    """The ambassador role belongs in mail 2, never in a first contact.
+
+    Hidde, 2026-10-09, giving the cold ask its shape ("make the ambassador
+    official in mail 2") and then "remember this ambassador email flow". Mail 1
+    asks for help or for somebody who can help; the role is offered once they
+    have said yes or sent something (drafts/ambassador-mails.md). So a mail
+    with no in_reply_to and no resend_reason, which is a first contact, must
+    not name the role in any of the languages we write in."""
+    if not path.endswith(".json"):
+        return []
+    try:
+        mails = json.loads(text).get("mails") or []
+    except Exception:
+        return []
+    role = re.compile(r"\b(ambassador|ambassadeur|botschafter|embajador|ambasciatore|embaixador)", re.I)
+    hits = []
+    for m in mails:
+        if m.get("in_reply_to") or m.get("resend_reason"):
+            continue
+        hit = role.search(m.get("body") or "")
+        if hit:
+            hits.append(("ROLE IN MAIL 1", hit.group(0),
+                         "%s: a first contact asks for help; the ambassador "
+                         "role is offered in mail 2" % m.get("to", "?")))
+    return hits
+
+
 def batch_address_hits(path, text):
     """Every batch is checked against the sent log and the do-not-contact
     list HERE, not only at send time. Hidde, 2026-08-26, after asking by hand
@@ -362,6 +390,7 @@ def check(path):
         hits += lowercase_hits(body)
     hits += repeated_ask_hits(text, body)
     hits += batch_address_hits(path, text)
+    hits += role_in_first_mail_hits(path, text)
     # A batch that records its possessive claims as verified (the session read
     # each recipient's why_them and owns_the_trees before writing the key) has
     # answered what this check asks; without the key the flags stand, so a
