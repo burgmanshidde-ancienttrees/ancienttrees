@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - The digest measures whether enriching works; a red deploy names its own line
+
+**Why:** Hidde, after the morning's findings: "wat leren we hiervan en kunnen we nog verbeteren?", then "doe". Two lessons became mechanisms. Nothing measured the thing the recovery is betting on (do rich pages earn impressions), and a night run had read a red deploy as "superseded by later runs" while every later build failed on the same qa line.
+**Done:**
+- `enrichment_lines()` in daily_digest.py, under the "Google, from the new floor" block: indexed tree pages split into rich (register record, measurement, concrete access) and not yet rich, with pages, pages seen, impressions, impressions per page and clicks; a third row for pages that returned to Google's index in the last 7 days (left data/noindex.json since the copy committed a week ago, and exist now). Today: 286 rich indexed tree pages, 708 not yet rich, 11 returned. Read per page and across weeks, never the totals; Google lags 2 to 3 days.
+- `deploy_problem_lines()` in health.py: on a red deploy or smoke run, rung 2 prints the qa or preflight bullet from the failed log and says a failed build on main is never superseded. Tested on the morning's failed run: it prints the 133-urls line.
+**Read from the fresh digest (10-08 data):** Google flat at ~47 impressions a day, 0 to 4 clicks; five Prague tree pages climbing to 24 to 32 impressions at positions 3 to 9, the first enriched city to move. Bing: 231 impressions and 13 clicks in five days, more clicks than Google in the same days.
+
 ## 2026-10-09 (session) - The app's sign-in sheet sits level now; the review ask can be opened without a finger
 
 **Why:** Hidde: "the vertical alignment of the login overlay still feels off, have a look" (the third time on this sheet: 2026-10-01, 10-08, today). And: "I haven't been able to see the new review flow because I already reviewed the app, how to check it?"

@@ -423,6 +423,97 @@ def recovery_lines(pages):
             % (good, weak, len(noindex))]
 
 
+def enrichment_lines(pages):
+    """Does enriching work: Google on rich tree pages against thin ones.
+
+    Hidde, 2026-10-09: "zijn de nightruns effectief bezig met ons terug bij
+    google krijgen en enrichen". Nothing measured it. The night table counts
+    minutes and trees, seolearn measures CTR against position, and the only
+    sign that enrichment moves Google (five Prague tree pages climbing from
+    nothing to positions 3 to 9) was found by eye in the Climbing list. So:
+    the indexed tree pages split by whether the page is RICH (findable plus
+    the register record, a measurement and concrete access, the same rule
+    that returns a page to the index), and impressions per page for each.
+    Underneath, the pages that came BACK into Google's index in the last seven
+    days (left data/noindex.json since the copy committed a week ago), which is
+    the direct test of the 2026-10-09 rule. Google's data lags two to three
+    days, so a page returned this week has had a few days at most; read the
+    per-page number, never the total, and read it over weeks.
+    """
+    try:
+        from thin_pages import slugify, renderable
+        from findable import enriched, findable
+        from enrich import gaps as enrich_gaps
+    except ImportError:
+        return []
+    ni_path = os.path.join(ROOT, "data", "noindex.json")
+    try:
+        noindex = json.load(open(ni_path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    out_of_google = set(noindex.get("paths") or {}) | set(noindex.get("google_only") or [])
+    imp, clk = {}, {}
+    for r in pages or []:
+        path = r["keys"][0].replace("https://ancienttrees.app", "").rstrip("/") or "/"
+        imp[path] = imp.get(path, 0) + r.get("impressions", 0)
+        clk[path] = clk.get(path, 0) + r.get("clicks", 0)
+    rich, thin = [], []
+    for cpath in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+        try:
+            d = json.load(open(cpath, encoding="utf-8"))
+        except ValueError:
+            continue
+        slug = os.path.basename(cpath)[:-5]
+        for t in d.get("trees") or []:
+            if not renderable(t):
+                continue
+            path = "/%s/%s" % (slug, slugify(t.get("name") or ""))
+            if path in out_of_google:
+                continue
+            try:
+                is_rich = findable(t) and enriched(t, enrich_gaps(t))
+            except Exception:
+                is_rich = False
+            (rich if is_rich else thin).append(path)
+    # What was out of Google a week ago and is in now.
+    returned = []
+    try:
+        sha = subprocess.run(
+            ["git", "-C", ROOT, "log", "-1", "--before=7 days ago", "--format=%H",
+             "--", "data/noindex.json"],
+            capture_output=True, text=True, timeout=30).stdout.strip()
+        if sha:
+            old = json.loads(subprocess.run(
+                ["git", "-C", ROOT, "show", "%s:data/noindex.json" % sha],
+                capture_output=True, text=True, timeout=30).stdout)
+            old_out = set(old.get("paths") or {}) | set(old.get("google_only") or [])
+            # Only pages that exist and are indexed NOW: the fallback pages
+            # left the noindex list on 2026-10-09 because they stopped being
+            # built, and that is a page gone, not a page returned.
+            now_in = set(rich) | set(thin)
+            returned = sorted(p for p in old_out if p in now_in)
+    except Exception:
+        returned = []
+
+    def row(label, paths):
+        n = len(paths)
+        seen = sum(1 for p in paths if imp.get(p))
+        i = sum(imp.get(p, 0) for p in paths)
+        c = sum(clk.get(p, 0) for p in paths)
+        per = (i / n) if n else 0.0
+        return "| %s | %d | %d | %d | %.2f | %d |" % (label, n, seen, i, per, c)
+
+    return ["", "**Is enriching working** (indexed tree pages, last 10 days of Google; "
+            "rich = register record, a measurement and concrete access)", "",
+            "| Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |",
+            "|---|---:|---:|---:|---:|---:|",
+            row("Rich", rich),
+            row("Not yet rich", thin),
+            row("Returned to Google's index in the last 7 days", returned),
+            "", "- Google lags 2 to 3 days, so a page returned this week has had a few days at "
+            "most. Compare the per-page numbers across weeks, not the totals across rows."]
+
+
 def demand_lines(pages, pairs=None):
     """Every page with real demand, as a table, so the depth rule has a list.
 
@@ -946,6 +1037,7 @@ def gsc_section(gsc, under_table=None):
         gap_line,
         *([under_table] if under_table else []),
         *recovery_lines(pages),
+        *enrichment_lines(pages),
         *demand_lines(pages, pairs),
         *learning_lines(pages, pairs),
         *grouped_pages_lines(pages, pairs),

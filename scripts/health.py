@@ -345,6 +345,46 @@ def failure_evidence(workflow):
         return None
 
 
+def deploy_problem_lines(workflow="deploy.yml", limit=3):
+    """The lines qa or preflight printed in the newest failed build, or [].
+
+    Written 2026-10-09 after a night run read a red deploy as "superseded by
+    later runs already in flight, so nothing to fix", while every later build
+    was failing on the same qa line (133 new indexable urls against a limit
+    of 80) and the site stood still for seven hours. The status says red; the
+    reason is one bullet in the log, and a run that sees the bullet cannot
+    talk itself past it.
+    """
+    try:
+        out = subprocess.run(
+            ["gh", "run", "list", "--workflow", workflow, "-L", "5",
+             "--json", "conclusion,status,databaseId"],
+            capture_output=True, text=True, timeout=60, cwd=ROOT)
+        if out.returncode != 0:
+            return []
+        failed = [r for r in json.loads(out.stdout or "[]")
+                  if r.get("status") == "completed" and r.get("conclusion") == "failure"]
+        if not failed:
+            return []
+        log = subprocess.run(
+            ["gh", "run", "view", str(failed[0]["databaseId"]), "--log-failed"],
+            capture_output=True, text=True, timeout=120, cwd=ROOT)
+        if log.returncode != 0 or not log.stdout:
+            return []
+        found = []
+        for ln in log.stdout.splitlines():
+            text = ln.split("\t")[-1]
+            text = re.sub(r"^\S+Z\s*", "", text).rstrip()
+            if re.match(r"^-\s\S", text) or "FAILED" in text or text.startswith("FAIL"):
+                found.append(text.strip()[:240])
+        # The bullets name the problem; a bare "QA FAILED: 1 problem(s)" only
+        # counts it, so keep the count line only when no bullet followed it.
+        bullets = [t for t in found if t.startswith("- ")]
+        return (bullets or found)[:limit]
+    except Exception:
+        return []
+
+
 # The starvation check above only sees workflows that FAIL. A night run that
 # hits the usage limit ends with conclusion "success" after 0.0 minutes and one
 # turn, so twenty of them in a row (2026-08-24 to 08-26) looked in LOG.md like
@@ -514,6 +554,16 @@ def main():
                 elif wf == "nightly.yml":
                     what = ("The ENGINE is broken, not the site: no knock will do any "
                             "work until this is dealt with. Read the failing log")
+                elif wf in ("deploy.yml", "smoke.yml"):
+                    lines = deploy_problem_lines(wf)
+                    what = ("The site is NOT being updated. A failed build on main is "
+                            "never superseded by a later run: every later build fails "
+                            "on the same line until somebody fixes it, so this is "
+                            "rung-2 work now, whatever is in flight")
+                    if lines:
+                        what += ". The line: " + " | ".join(lines)
+                    else:
+                        what += ". Read the failing log"
                 else:
                     what = ("The site may be broken; read the failing log before "
                             "anything else")
