@@ -148,7 +148,8 @@
       "curation_status": "ai_generated",
       "notes": "Corrected 2026-07-29: the entry previously stated the two oldest survivors as 236 and 266 years old, citing two sources that, re-checked directly, did not actually support that figure (German Wikipedia's Hauptallee article names no individual tree ages at all; traveltips.at only says the avenue's trees date to the 19th century). Traced the 236/266 figures to monumentaltrees.com via web search, permitted for verification only under hard rule 1, never as a citable source, and unreachable this session (HTTP 403) to confirm even that. Resolved properly rather than just softened: queried Vienna's own Baumkataster (data.wien.gv.at WFS, layer ogdwien:BAUMKATOGD) with a CQL_FILTER on OBJEKT_STRASSE (avoiding the BBOX reprojection problem that returned zero features on an earlier attempt this session, since the layer's native coordinates are in a projected CRS, not lat/long) and got real per-tree data: 251 individually registered trees on Hauptallee, 247 of them Aesculus hippocastanum, with real planting years. The oldest, BAUM_ID 39288 (254cm girth, planted 1840, at 48.20571418/16.41414589 in EPSG:4326), is now this entry's anchor tree and pin, replacing the old avenue-midpoint estimate and the unverifiable 236/266 claim with a specific, government-registered, individually documented specimen. Requeried this same record a second time before applying to guard against the single-query extraction inconsistency this session hit once (a different BAUM_ID's planting year came back differently across two summarized reads); this one held steady both times.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the four to six rows of horse chestnuts running the whole 4.5 kilometre avenue, white with candle-shaped blossom each spring. The oldest, 254 centimetres round, stands near the Praterstern end."
+      "how_to_recognise": "You can recognise it by the four to six rows of horse chestnuts running the whole 4.5 kilometre avenue, white with candle-shaped blossom each spring. The oldest, 254 centimetres round, stands near the Praterstern end.",
+      "girth_cm": 254
     },
     {
       "id": "vie_004",
@@ -166,9 +167,10 @@
       "story": "This is one tree with two sexes. Ginkgos are either male or female, never both, except this one: a female branch was grafted onto it at some point in its life, so a single male tree now also drops the messy, strong-smelling seeds normally produced only by female ginkgos. It arrived in Vienna in 1781, imported through an English nursery only a few decades after the species reached Europe at all, and it is very likely the oldest ginkgo now growing in Austria. It stands in Schönbrunn's Botanical Garden, on the palace park's eastern side, its trunk grown to roughly five metres around and its crown to about twenty metres tall. Vienna listed it as a protected natural monument in 1939, one of the earliest ginkgos anywhere to receive that kind of formal status. It has outlived the empire that planted it and survived two world wars a few hundred metres from a palace that changed hands more than once, and each autumn it still does what ginkgos are famous for: every leaf on the tree turns gold and drops within days, all at once, rather than drifting down gradually like almost everything else in the park.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Hietzing",
-        "https://pflanzenraritaeten.com/ginkgo-biloba-schoenbrunn"
+        "https://pflanzenraritaeten.com/ginkgo-biloba-schoenbrunn",
+        "https://www.schoenbrunn.at/en/visitor-information/opening-times/"
       ],
-      "access": "Free, Schönbrunn park and gardens (separate attractions inside the grounds, such as the Gloriette or maze, charge admission)",
+      "access": "Free: the palace park is open to the public daily from 6:30 am, closing 5:30 pm (Nov to Feb), 7 pm (Mar, Oct), 8 pm (Apr, Sep) or 9 pm (May to Aug). Separate tickets apply to the Privy Garden, Orangery Garden and Maze; dogs are not allowed in the park.",
       "transport": "10 min walk from Schönbrunn U-Bahn station (U4), inside the palace park's Botanical Garden",
       "best_time": {
         "months": [
@@ -190,7 +192,7 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by the trunk, roughly five metres round under a crown about twenty metres tall, and by the seeds a grafted female branch drops on an otherwise male tree. It stands in the Botanical Garden, on the park's east side.",
       "official_register": {
-        "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3247691",
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3247691",
         "url": null
       }
     },
@@ -387,7 +389,8 @@
       "curation_status": "flagged",
       "notes": "Part of Naturdenkmal Nr. 62 (Pötzleinsdorfer Schlosspark's protected trees and tree groups). No individual girth or planting-year record found for this pair; age range is bounded only by the species' known arrival in Europe (1853), not by a measurement or record specific to these trees. Coordinates from the geotag on the source photo, which names Naturdenkmal 62 directly.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them by their bulk and their soft, reddish, fibrous bark, which nothing else in the park comes close to. They stand flanking the main entrance, with two smaller sequoias of the same planting between them."
+      "how_to_recognise": "You can recognise them by their bulk and their soft, reddish, fibrous bark, which nothing else in the park comes close to. They stand flanking the main entrance, with two smaller sequoias of the same planting between them.",
+      "girth_cm": 563
     },
     {
       "id": "vie_010",
@@ -404,8 +407,8 @@
       },
       "location": {
         "address": "Türkenschanzstraße 46, Sternwartepark, 1180 Wien",
-        "latitude": 48.2344,
-        "longitude": 16.3372,
+        "latitude": 48.233155,
+        "longitude": 16.336681,
         "neighbourhood": "Währing, 18th district"
       },
       "story": "Two trees, planted side by side, share a single protection order. In the Sternwartepark, in the shadow of Vienna's university observatory, a ginkgo and a giant sequoia grow close enough together that Vienna registered them as one natural monument in 2010, Naturdenkmal Nr. 817, rather than two. They make an odd pair. The ginkgo, a living fossil native to China, was already around a century old when it was surveyed, with a trunk 2.35 metres around and a height of 24 metres. Next to it stands a Californian giant sequoia that has grown taller, 27 metres, but leans noticeably as it climbs, its 3.75 metre trunk curving rather than running straight up the way most conifers do. Neither species is native within a continent of Vienna, and the two would never have met each other in the wild, yet here they have spent a century as neighbours a few streets from Türkenschanzpark, itself planted with exotic species through Vienna university's old botanical connections. The observatory nearby, the largest structurally closed telescope building in the world when it opened in 1879, gives the whole park its name. Astronomers looking skyward have had these two very different giants growing at ground level the entire time.",
@@ -430,7 +433,9 @@
       "official_register": {
         "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257958",
         "url": null
-      }
+      },
+      "girth_cm": 375,
+      "height_m": 27
     },
     {
       "id": "vie_011",
@@ -468,7 +473,12 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 645, protected 30 December 1976, listed by the Vienna monument register (register_id 3257637) as a single tree at 48.212614/16.351002 and by the city's separate Baumkataster (MA 42) as BAUM_ID 220685 at 48.2125997/16.3510248, 2.3 m apart. Baumkataster figures: PFLANZJAHR 1839, girth 489 cm, height class 6 (26-30 m), crown class 5 (13-15 m). The 1839 date is the city's own record rather than a document we have seen, and park planting years in Vienna are sometimes the park's construction year doing duty as a planting date; here it is not, because the garden was private until 1862, so 1839 cannot be a park-creation default. Photo hunted 2026-08-05: GuentherZ's CC BY 3.0 September 2011 shot (File:Naturdenkmal 645 2011-09-27 P9270027 Wien08 Schoenbornpark Sommerlinde GuentherZ.JPG) was viewed and rejected against the Cadiz standard, the trunk is hidden behind the pond's rockwork and a second tree fills the left foreground. Honest gap rather than a mediocre photo.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, 489 centimetres round, the thickest tree in Josefstadt, under a crown 26 to 30 metres up, taller than the palace behind it. It stands beside the pond in Schönbornpark."
+      "how_to_recognise": "You can recognise it by the trunk, 489 centimetres round, the thickest tree in Josefstadt, under a crown 26 to 30 metres up, taller than the palace behind it. It stands beside the pond in Schönbornpark.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257637",
+        "url": null
+      },
+      "girth_cm": 489
     },
     {
       "id": "vie_012",
@@ -500,7 +510,11 @@
       "curation_status": "flagged",
       "notes": "Naturdenkmal Nr. 459, protected 19 July 1956 (Vienna monument register, register_id 3257520, single-tree type, 48.213028/16.355784). Baumkataster BAUM_ID 130254 at 48.21301197/16.35576302, 2.4 m away: PFLANZJAHR 1815, girth 445 cm, height class 5 (21-25 m), crown class 6 (16-18 m). Flagged because the two departments disagree on age by twenty years (decree 'vermutlich um 1835', catalogue 1815), so the stated range is deliberately wide. The 1956 decree covered TWO planes with girths of 2.1 and 3.6 m; a query of every Platanus on Landesgerichtsstraße returns one Platanus orientalis (this one) plus a single 1977 Platanus x acerifolia 77 m away, so the smaller of the pair is gone and this entry describes only the survivor, which the 3.6 m figure matches after seventy years of growth. Photo: GuentherZ has a CC BY 3.0 September 2011 image (File:Naturdenkmal 459 2011-09-29 P9290036 ...) but it is framed as the pair from across the street; not viewed this pass because the three-photo budget was spent, left as an honest gap for a later run.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by being the only oriental plane left on the street, 445 centimetres round and 21 to 25 metres tall. It stands on Landesgerichtsstraße in front of the criminal court, the Graues Haus."
+      "how_to_recognise": "You can recognise it by being the only oriental plane left on the street, 445 centimetres round and 21 to 25 metres tall. It stands on Landesgerichtsstraße in front of the criminal court, the Graues Haus.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257520",
+        "url": null
+      }
     },
     {
       "id": "vie_013",
@@ -545,7 +559,8 @@
       "official_register": {
         "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257648",
         "url": null
-      }
+      },
+      "girth_cm": 600
     },
     {
       "id": "vie_014",
@@ -590,7 +605,8 @@
       "official_register": {
         "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257543",
         "url": null
-      }
+      },
+      "girth_cm": 460
     },
     {
       "id": "vie_015",
@@ -629,7 +645,12 @@
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal Nr. 280, protected 16 December 1941 (Vienna monument register, register_id 3257447, 48.205087/16.379469). Baumkataster BAUM_ID 194189 at the same point to within 0.0 m, the tightest match of the pass: PFLANZJAHR 1921, girth 308 cm, height class 4 (16-20 m), crown class 6 (16-18 m). Two sibling records, BAUM_ID 194188 (253 cm) and 194190 (324 cm), sit 2 m and 5 m away with the same 1921 date, and the monument register carries only one entry for the spot, so this is treated as one designated tree with its own suckers rather than as three collectible points; the story says so. The two folded ids are recorded as leads in data/leads/vienna.json. Identity independently corroborated by File:Kaukasische Flügelnuss1.jpg on Wikimedia Commons, viewed this pass: it shows the enamel plaque reading 'WIENER NATURDENKMAL Nr. 280 Kaukasische Flügelnuß' on deeply corded bark with ivy across it, which is why the story can describe the plaque. That file is a plaque photo, not a tree photo, so it was NOT used as this entry's image and the photo stays an honest gap.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the chains of winged nutlets hanging half a metre down from the branch tips, and by the enamel plaque half swallowed by ivy at chest height. It stands on the west bank of the Wien river."
+      "how_to_recognise": "You can recognise it by the chains of winged nutlets hanging half a metre down from the branch tips, and by the enamel plaque half swallowed by ivy at chest height. It stands on the west bank of the Wien river.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257447",
+        "url": null
+      },
+      "girth_cm": 308
     },
     {
       "id": "vie_016",
@@ -673,7 +694,8 @@
       "official_register": {
         "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3257446",
         "url": null
-      }
+      },
+      "girth_cm": 444
     },
     {
       "id": "vie_017",
@@ -1157,7 +1179,15 @@
         "width": 4000,
         "height": 6000
       },
-      "how_to_recognise": "You can recognise it by the trunk, 4.5 metres round at chest height, under a crown spreading close to 29 metres. It stands on Belvedereallee, about 1.8 kilometres from the Hauptallee chestnuts."
+      "how_to_recognise": "You can recognise it by the trunk, 4.5 metres round at chest height, under a crown spreading close to 29 metres. It stands on Belvedereallee, about 1.8 kilometres from the Hauptallee chestnuts.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "late September and October, when the acorns drop",
+        "kind": "fruit"
+      }
     },
     {
       "id": "vie_032",

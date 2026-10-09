@@ -10260,6 +10260,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "vienna",
+   "kind": "enrich",
+   "tokens": 171356,
+   "trees": 11,
+   "note": "4 register ids, 8 girths from Baumkataster, Schoenbrunn hours; vie_010 pin corrected 138 m"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
