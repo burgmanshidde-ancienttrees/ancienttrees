@@ -57,70 +57,54 @@ struct GoogleSignInButton: View {
     var title = "Continue with Google"
     let action: () -> Void
 
-    @Environment(\.colorScheme) private var scheme
-
     var body: some View {
+        // The website's quiet pill, laid out like every button in the sheet:
+        // see SignInPill. The four-colour G is untouched, which is what
+        // Google's rules protect.
         Button(action: action) {
-            // MARK AND LABEL AS ONE CENTRED GROUP, because the button beside
-            // this one draws itself that way and cannot be told otherwise.
-            // SignInWithAppleButton is Apple's own control: it centres its mark
-            // and its words together as a unit, and its type size is derived
-            // from the button's height. Ours is the only one of the two that
-            // can move.
-            //
-            // Google's guidelines describe a mark at the leading edge with 16
-            // points of padding on iOS, and that is what this used to do. It is
-            // right in isolation and wrong here, because the result was one
-            // mark at the left edge and another near the middle, one line of
-            // large type and one of small, on two controls stacked 14 points
-            // apart (Hidde, 2026-09-01: "dan moet het apple logo en google logo
-            // wel op dezelfde plek uitlijnen en continue met google en apple
-            // hetzelfde grote lettertype"). The second time he has had to say
-            // these two do not agree; the first was 2026-08-24, when only the
-            // label was centred and the mark was left where it is now.
-            //
-            // What Google's rules actually forbid is altering their mark: "You
-            // can't change the size or color of the Google 'G' logo. It must be
-            // the standard color version." The four-colour G is untouched, at
-            // its own aspect ratio, on white. What moves is our layout around
-            // it, which is the part their spec treats as guidance for a button
-            // standing on its own rather than one paired with Apple's.
-            HStack(spacing: 8) {
-                // 15, MEASURED AGAINST THE MARK ABOVE IT rather than taken
-                // from Google's own ratio, which would put it at about 26 for
-                // a 20 point label. Apple draws its mark 11 points wide here;
-                // Google's G at 20 was 19 and read as the heavier of the two
-                // buttons, which is the thing being fixed. At 15 it measures 14
-                // and the pair reads as a pair. Photographed at 20 and at 15
-                // and chosen from the pictures (Hidde, 2026-09-01: "onderste").
-                //
-                // The mark itself is untouched, which is what Google's rules
-                // actually protect: standard four colours, own aspect ratio, on
-                // white.
-                GoogleMark(side: 15)
-                Text(title)
-                    // 20 point, matching what Apple's control draws at this
-                    // height, rather than Google's web figure of 14. Two labels
-                    // at different sizes read as two different kinds of button.
-                    // Roboto Medium is Google's face; the system one at the same
-                    // weight is the honest substitute rather than shipping a
-                    // font download for one label.
-                    .font(.system(size: 20, weight: .medium))
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.horizontal, 12)
-            .frame(maxWidth: .infinity, minHeight: 48)
-            // THE WEBSITE'S QUIET PILL (Hidde, 2026-10-09, shown the web
-            // dialog beside the app's sheet: "this looks better ... maybe you
-            // can steal of it"). Filled cream, no outline, 48 tall, the same
-            // pill as Continue with email under it, so the stack reads as one
-            // loud button and two quiet ones rather than three kinds. Google's
-            // 2023 button rules allow a neutral fill beside the light and dark
-            // ones; the four-colour G stays untouched, which is what they
-            // actually protect.
-            .foregroundStyle(Brand.ink)
-            .background(Brand.creamDark, in: .capsule)
+            SignInPill(title: title, loud: false) { GoogleMark(side: 18) }
         }
         .buttonStyle(.plain)
+    }
+}
+
+/// ONE LAYOUT FOR EVERY SIGN-IN BUTTON, the website's (.oauth-btn in
+/// style.css): 48 tall, the mark 18 wide at the leading edge 22 in, the label
+/// centred in the space after it, bold. Hidde, 2026-10-09: "the logos of
+/// apple, google and mail are no longer aligned, follow the website design
+/// for this and skip the mail logo". They drifted because Apple's stock
+/// control centres its mark and words as a unit while ours did not; with one
+/// view drawing all three, the marks share a column by construction.
+struct SignInPill<Mark: View>: View {
+    let title: String
+    let loud: Bool
+    @ViewBuilder let mark: () -> Mark
+
+    var body: some View {
+        HStack(spacing: 10) {
+            if Mark.self != EmptyView.self {
+                mark().frame(width: 18, height: 18)
+            }
+            Text(title)
+                .font(.brand(17, .bold, relativeTo: .headline))
+                .lineLimit(1).minimumScaleFactor(0.8)
+                .frame(maxWidth: .infinity)
+        }
+        .padding(.horizontal, 22)
+        .frame(maxWidth: .infinity, minHeight: 48)
+        // The website's loud pill is #1B2416; in the dark it turns white,
+        // which is also what Apple's own rules ask of its button there.
+        .foregroundStyle(loud ? Color(light: 0xFFFFFF, dark: 0x000000) : Brand.ink)
+        .background(loud ? Color(light: 0x1B2416, dark: 0xFFFFFF) : Brand.creamDark,
+                    in: .capsule)
+        .contentShape(.capsule)
+    }
+}
+
+extension SignInPill where Mark == EmptyView {
+    /// No mark at all: the label centres in the whole pill, as the website's
+    /// email button does.
+    init(title: String, loud: Bool) {
+        self.init(title: title, loud: loud) { EmptyView() }
     }
 }

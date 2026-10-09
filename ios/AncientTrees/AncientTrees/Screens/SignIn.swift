@@ -39,6 +39,7 @@ struct SignInSheet: View {
     @State private var code = ""
     @State private var rawNonce = ""
     @State private var merged: Int?
+    @State private var apple = AppleSignIn()
     /// The sheet stands as tall as what it holds, measured (the add sheet's
     /// fix of 2026-09-28), so no fixed number leaves a gap to explain.
     @State private var askHeight: CGFloat = 470
@@ -116,6 +117,19 @@ struct SignInSheet: View {
         // time this runs, so the two cannot both fire.
         .onDisappear { nudge.settle(ranThrough: false) }
         .scrollBounceBehavior(.basedOnSize)
+        .onAppear {
+            apple.onCredential = { cred in
+                guard let data = cred.identityToken,
+                      let token = String(data: data, encoding: .utf8) else { return }
+                let given = [cred.fullName?.givenName, cred.fullName?.familyName]
+                    .compactMap { $0 }.joined(separator: " ")
+                Task {
+                    await account.signInWithApple(idToken: token, nonce: rawNonce)
+                    account.noteProviderName(given)
+                    await finishIfSignedIn()
+                }
+            }
+        }
         // 660 was measured against a sheet carrying the typed email route as
         // well. With that hidden for 1.0 (Launch.emailSignIn) the same height
         // left nearly half the sheet empty under the two buttons, which reads
@@ -165,28 +179,22 @@ struct SignInSheet: View {
             // (Hidde, 2026-10-09: "still the buttons feel too far from each
             // other vertically"); 8 is where he had stopped complaining.
             VStack(spacing: 10) {
-                SignInWithAppleButton(.continue) { request in
-                    rawNonce = Self.nonce()
-                    // The name as well, which Apple gives ONCE, on the first
-                    // authorisation, and only if asked (2026-10-02).
-                    request.requestedScopes = [.fullName, .email]
-                    request.nonce = Self.sha256(rawNonce)
-                } onCompletion: { result in
-                    guard case .success(let auth) = result,
-                          let cred = auth.credential as? ASAuthorizationAppleIDCredential,
-                          let data = cred.identityToken,
-                          let token = String(data: data, encoding: .utf8) else { return }
-                    let given = [cred.fullName?.givenName, cred.fullName?.familyName]
-                        .compactMap { $0 }.joined(separator: " ")
-                    Task {
-                        await account.signInWithApple(idToken: token, nonce: rawNonce)
-                        account.noteProviderName(given)
-                        await finishIfSignedIn()
+                // A CUSTOM Sign in with Apple button, which Apple's guidelines
+                // allow (HIG, Sign in with Apple, "Creating a custom button":
+                // their logo, "Continue with Apple", black or white). The
+                // stock control centres its mark and words as one unit and
+                // cannot be told otherwise, so beside two pills that put the
+                // mark at the leading edge it was the one out of line (Hidde,
+                // 2026-10-09). The request underneath is unchanged.
+                Button { apple.start(nonce: { rawNonce = Self.nonce(); return Self.sha256(rawNonce) }) } label: {
+                    SignInPill(title: "Continue with Apple", loud: true) {
+                        Image(systemName: "apple.logo")
+                            .font(.system(size: 17, weight: .medium))
                     }
                 }
-                .signInWithAppleButtonStyle(scheme == .dark ? .white : .black)
-                .frame(height: 48)
-                .clipShape(.capsule)
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("signin-apple")
+                .disabled(account.state == .working)
 
                 GoogleSignInButton {
                     Task {
@@ -213,13 +221,9 @@ struct SignInSheet: View {
                 withAnimation(.snappy) { emailOpen = true }
                 focus = .email
             } label: {
-                // The website's quiet pill, the same one Google wears above.
-                Label("Continue with email", systemImage: "envelope")
-                    .font(.system(size: 19, weight: .medium))
-                    .foregroundStyle(Brand.ink)
-                    .frame(maxWidth: .infinity).frame(height: 48)
-                    .background(Brand.creamDark, in: .capsule)
-                    .contentShape(.capsule)
+                // The website's quiet pill with no mark, as the website draws
+                // it (Hidde, 2026-10-09: "skip the mail logo anyways").
+                SignInPill(title: "Continue with email", loud: false)
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("signin-email")
@@ -468,6 +472,45 @@ struct AppIconTile: View {
                         .strokeBorder(Brand.ink.opacity(0.1), lineWidth: 1)
                 }
                 .accessibilityHidden(true)
+        }
+    }
+}
+
+
+/// Runs Apple's own authorisation sheet for the custom button above. The
+/// request is the one SignInWithAppleButton made: name and email, a hashed
+/// nonce. A cancel or an error simply leaves the sheet where it was.
+@MainActor
+final class AppleSignIn: NSObject, ASAuthorizationControllerDelegate,
+                         ASAuthorizationControllerPresentationContextProviding {
+    var onCredential: ((ASAuthorizationAppleIDCredential) -> Void)?
+
+    func start(nonce: () -> String) {
+        let request = ASAuthorizationAppleIDProvider().createRequest()
+        // The name as well, which Apple gives ONCE, on the first
+        // authorisation, and only if asked (2026-10-02).
+        request.requestedScopes = [.fullName, .email]
+        request.nonce = nonce()
+        let controller = ASAuthorizationController(authorizationRequests: [request])
+        controller.delegate = self
+        controller.presentationContextProvider = self
+        controller.performRequests()
+    }
+
+    nonisolated func authorizationController(controller: ASAuthorizationController,
+                                             didCompleteWithAuthorization authorization: ASAuthorization) {
+        guard let cred = authorization.credential as? ASAuthorizationAppleIDCredential else { return }
+        Task { @MainActor in self.onCredential?(cred) }
+    }
+
+    nonisolated func authorizationController(controller: ASAuthorizationController,
+                                             didCompleteWithError error: Error) {}
+
+    nonisolated func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        MainActor.assumeIsolated {
+            UIApplication.shared.connectedScenes
+                .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+                .first ?? ASPresentationAnchor()
         }
     }
 }
