@@ -23,7 +23,7 @@ struct TreeCard: View {
     /// front of should show the trees as you saw them.
     var ownPhoto: UIImage? = nil
     /// Where your photograph of this tree stands, when you sent one
-    /// (Sightings.Sighting.photoState). One line under the facts.
+    /// (Sightings.Sighting.photoState). Drawn as the "Your photograph" tag.
     var ownState: String? = nil
     /// ONE HEIGHT FOR EVERY CARD IN A ROW, for a card that sits in a
     /// horizontal shelf.
@@ -56,19 +56,25 @@ struct TreeCard: View {
                 image
                 if showHeart { SaveHeart(tree: tree, look: .onPhoto).padding(6) }
                 tagRow
+                // YOUR PHOTOGRAPH, a tag on the picture rather than a line
+                // under the facts (Hidde, 2026-10-09: "i like the your
+                // photograph tag better than the not designed line bellow the
+                // card ... please only do the tag"). The website's
+                // .tree-card-yours: bottom left, clear of Seen and the heart.
+                if ownPhoto != nil || ownState != nil {
+                    Text("Your photograph")
+                        .font(.caption.weight(.semibold)).foregroundStyle(.white)
+                        .padding(.horizontal, 9).padding(.vertical, 5)
+                        .background(.black.opacity(0.62), in: .capsule)
+                        .padding(10)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+                        .accessibilityIdentifier("tree-card-own-state")
+                }
             }
             VStack(alignment: .leading, spacing: 5) {
                 Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink)
                     .lineLimit(uniformTitle ? 2 : 3, reservesSpace: uniformTitle)
                 meta
-                if let ownState {
-                    HStack(spacing: 6) {
-                        Circle().fill(Brand.moss).frame(width: 7, height: 7)
-                        Text(ownState)
-                    }
-                    .font(.caption).foregroundStyle(Brand.inkSoft)
-                    .accessibilityIdentifier("tree-card-own-state")
-                }
             }
             .padding(.horizontal, 12).padding(.vertical, 10)
         }

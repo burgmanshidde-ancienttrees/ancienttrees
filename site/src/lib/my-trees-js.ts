@@ -162,23 +162,20 @@ export const MY_TREES_JS = `
         art.insertBefore(box, art.firstChild);
       });
     });
-    // The state goes on every card of that tree, ours-photographed or not,
-    // once, and stays there while it is true (CONVENTIONS.md, "Landing after
-    // you have added something").
+    // A photograph of yours that is on the tree's page is very likely the one
+    // this card is wearing, so it wears the same tag rather than a line under
+    // the facts (Hidde, 2026-10-09: "i like the your photograph tag better
+    // than the not designed line bellow the card ... please only do the tag").
     Object.keys(yourState).forEach(function(id) {
-      var words = yourState[id];
-      if (!words) return;
+      if (!yourState[id]) return;
       var cards = document.querySelectorAll('[data-tree-id="' + id.replace(/[^A-Za-z0-9_-]/g, '') + '"]');
       Array.prototype.forEach.call(cards, function(art) {
-        if (art.querySelector('.mine-state')) return;
-        var p = document.createElement('p');
-        p.className = 'mine-state';
-        var dot = document.createElement('span');
-        dot.className = 'mine-dot';
-        p.appendChild(dot);
-        p.appendChild(document.createTextNode(words));
-        var more = art.querySelector('.tree-more');
-        if (more) art.insertBefore(p, more); else art.appendChild(p);
+        var box = art.querySelector('.tree-card-photo');
+        if (!box || box.querySelector('.tree-card-yours')) return;
+        var tag = document.createElement('span');
+        tag.className = 'tree-card-yours';
+        tag.textContent = 'Your photograph';
+        box.appendChild(tag);
       });
     });
   }
