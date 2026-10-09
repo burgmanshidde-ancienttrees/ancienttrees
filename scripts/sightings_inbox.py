@@ -311,7 +311,7 @@ def worth(entry):
     """A sort key and a plain sentence, in that order. Lower sorts first."""
     lit = (entry.get("light") or {}).get("verdict")
     poor = lit == "POOR"
-    gap = entry.get("current_photo") in (None, "", "missing")
+    gap = entry.get("current_photo") in (None, "", "missing", "none")  # tree_index writes "none"
     far = entry.get("match") == "distance" and (entry.get("distance_m") or 0) > 20
     if gap and not poor:
         rank, why = (0, "closes a gap: this tree has no photograph at all")

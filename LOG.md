@@ -2,10 +2,30 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Seville: a doubtful pin correction answered, and the ambassador seat offered in the same mail
+
+**Why:** the one account opened on 10-08 filed a correction two hours later: the Judas Tree of the Real Alcázar moved 643 m to a street outside the Alcázar walls. Our pin is approximate but sits in the Jardín Inglés the tree is named after; his point has no photograph behind it.
+**Done:** the pin stays. Submission 375 carries outcome `open_question` and a reply, sent through contributor_reply.py, asking whether he is sure and which tree he saw, and offering the Seville ambassador seat (Hidde, same morning: "ask him if he's sure about the correction and btw we're looking for an ambassador if he's into it"). The offer is recorded under `invited` in data/ambassadors.json so the knock never repeats it; the badge follows his answer, with `--grant`.
+**Also:** `signin-open` no longer counts the contribute page opening the dialog by itself on load (340 of the fortnight's 394 opens were that). From the next deploy the funnel counts taps only; the 14-day column will drop for two weeks as the old rows age out.
+
+## 2026-10-09 (session) - Reykjavik: Hidde's overrule on the City Hall Maple carried out, and the bug that swallowed it
+
+**Why:** On 2026-10-03 a viewing pass held the Reykjavik reader's photograph of rey_003 for its light and the crowd in front of it, and Hidde overruled it ("ook zijn semi slechte foto's zijn beter dan geen"). The vouched path ran on 2026-10-05 and the page still read "missing" four days later.
+**Found:** the queue spells "no photograph" as `none` and `sightings_publish.py --vouched` tested for `missing`, so a tree with no picture at all counted as having one and the photograph went into `photos[]` as an extra under a lead that did not exist. Nothing rendered it and nothing reported it.
+**Done:** one `has_lead()` test in sightings_publish.py that knows `none` (the inbox's ranking reads the same list); an approve now PROMOTES an extra of the same sighting instead of showing the picture twice, and drops its separately named file. The sighting was reopened, re-queued, looked at again (a broad domed sycamore maple on the Vonarstraeti corner, the street sign in frame, a tour group beneath it) and published through the script as the lead: rey_003 carries `source: contributor` with the reader's id, the judgement record says publish with his overrule as the reason. Preflight 0 problems; qa runs in CI (no build here).
+**Notes:** the same reader's other photographs (rey_001, rey_002 and Seville's El Gran Capitan) were already live; nothing else of theirs is held. rey_003's pin was already moved to his fix on 2026-10-05 and is untouched.
+
 ## 2026-10-09 (session) - "Official" for your own tree, and search stays at full height
 
 **Changed:** a reader's own tree that makes it onto Ancient Trees now says "Official" (app card, website My trees) and its page says "An official Ancient Tree"; "On the map" was wrong because your own trees are on the map too (Hidde). The map's search field now grows into the list's header as the list is dragged to full height, the Apple Maps and Google Maps convention, so search is reachable at every height (app).
 **Kept, on Hidde's word:** the website's photo thank-you still promises "you will hear what happened to yours"; people should end up with a message when their tree joins the database. Today that message is the "Official" upgrade in the app; a mail for it is not built.
+
+## 2026-10-09 (night run) - Salt Lake City opened (5), Salzburg +1
+
+**Rung:** shelf refill; 7-day visits 1,518. Rung 2 clear.
+**Done:** Salzburg write pass on the 4 READY leads: only the Walser Birnbaum (szb_021, a 2015 replacement pear, said plainly) shipped, Salzburg at 21; the other three stay leads (access unestablished, ordinary linden, no data). Salt Lake City opened from the Utah big-tree register: slc_001 to slc_005 (Liberty Park plane, two Washington Square trees, two Temple Square trees), all register-only so flagged, confirmed pins, no photos yet; slc_006 held (address and pin disagree). Preflight 0 problems. Costs logged.
+**Also:** Miami verify pass found nothing shippable (no register; Deering champion black olive has a second source now, but no photo or exact pin and is paid; free-tree ratio blocks the city). Leads updated, claim released. Needs a reader photograph or the Florida champion register detail pages.
+**Notes:** leads marked READY with no sources are not ready; leads.py should count them as source-less. The Temple Square cedar's survival since the 2020 works is unconfirmed, and the page asks. No tool refusals.
 
 ## 2026-10-08 (night run, third window) - Salzburg +2
 
