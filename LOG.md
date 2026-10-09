@@ -24,6 +24,13 @@
 **Broke:** BUND Leipzig received the same short thanks twice, ten minutes apart. The mail had been moved into its own batch and sent, then private_store's merge-by-address (written an hour earlier) put it back into the original batch from the stored copy, and its resend_reason let it through again.
 **Fixed:** a batch file on this Mac now replaces the stored copy outright, so a removed mail stays removed; and outreach_send.py records the Message-ID each reply answers and refuses a second reply to the same message from any batch, whatever its resend_reason. Proven by dry-running today's batch under another name: all four refused.
 
+## 2026-10-09 (night run, 17:00 window) - Enrichment: Lisbon and Amsterdam
+
+**Rung:** enrichment pass (default work). Visits last 7 days: 1,690 visits, 2,130 page views.
+**Lisbon:** 8 trees got ICNF register name and process number, 6 got girth and height from the register, the two ombus got height only (their register girths are buttress masses, not girth at 1.30 m). The two pin upgrades were refused by enrich.py (no source URL). Ajuda jacarandas closed nothing (not in the register, official pages 403/404).
+**Amsterdam:** 17 trees got register ids (15 national, 2 Amsterdam Bijzondere Bomen), 12 got measurements, Van Loon got an access line and an Oct-Nov best_time. Left open: ams_004, 005, 007, and the ARTIS opening hours (JS-rendered pages).
+**Cost:** two verify passes, ~150k tokens each. Preflight 0 problems on both.
+
 ## 2026-10-09 (session) - Brighton follows Kerry Pickett; BUND Leipzig thanked
 
 **Why:** Hidde, on the draft that questioned two of Kerry Pickett's three Preston Twins facts: "ga niet in discussie hij is een lokale held volg hem". So the Bishop of Chichester's land and Brighton & Hove as the first UK council to inoculate elms are now on bhm_001, both written as local accounts rather than our own claim, beside Peter Bourne's naming. The earlier doubts stay in verify_notes. Story trimmed to 248 words; preflight 0 problems.

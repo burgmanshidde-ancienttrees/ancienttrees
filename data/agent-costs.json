@@ -10164,6 +10164,22 @@
  "2026-10-09": [
   {
    "date": "2026-10-09",
+   "target": "lisbon",
+   "kind": "enrich",
+   "tokens": 148832,
+   "trees": 8,
+   "note": "ICNF register ids and girth/height on 8 trees; pins refused for missing source URL; jacarandas not in register"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "amsterdam",
+   "kind": "enrich",
+   "tokens": 171065,
+   "trees": 17,
+   "note": "register ids on 17 trees, 12 girths, Van Loon access and season; ARTIS hours pages JS-rendered"
+  },
+  {
+   "date": "2026-10-09",
    "target": "salzburg",
    "kind": "write",
    "tokens": 190000,
