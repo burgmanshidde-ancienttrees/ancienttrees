@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (night run) - Seville enrichment batch 3
+
+**Done:** register ficha ids on 19 trees (sev_019, sev_021 to sev_034, sev_040 to sev_043) and girth or height on 14 of them, from the inventory fichas. Seville is at 43 trees, over target, so no new trees; depth only.
+**Open:** no single-tree register page reachable (www.sevilla.org hangs, worth adding to data/fetch-blocklist.json); sev_010 pin, season and measurement stay dead ends. The figures were taken from earlier ficha transcriptions, not re-read from the PDF, so a spot-check is cheap.
+**Not done:** the 9 READY leads (Delft, Salzburg, Barcelona) are new trees and recovery mode wants them rich first; left for a pass that enriches them.
+
 ## 2026-10-09 (session) - Paulo's photographs on two Porto trees; people's photos are not refused on exposure
 
 **Done:** Paulo Araujo's photographs of the Magnolia of Casa Tait (por_002) and the Metrosidero of the Library (por_003) are attached, self-hosted with 500/1000/1280 widths, credit "Paulo V. Araujo, Dias com Arvores", same terms as his first batch. Both trees had no photograph, so both pages can return to Google on the next deploy.
