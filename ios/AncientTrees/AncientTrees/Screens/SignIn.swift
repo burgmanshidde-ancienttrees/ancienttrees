@@ -143,7 +143,10 @@ struct SignInSheet: View {
         VStack(alignment: .leading, spacing: 24) {
             header
 
-            VStack(spacing: 12) {
+            // 8 between the buttons, Apple's minimum, after 12 read as three
+            // separate offers rather than one stack (Hidde, 2026-10-09: "the
+            // buttons should be closer to each other vertically").
+            VStack(spacing: 8) {
                 SignInWithAppleButton(.continue) { request in
                     rawNonce = Self.nonce()
                     // The name as well, which Apple gives ONCE, on the first
@@ -325,10 +328,13 @@ struct SignInSheet: View {
 
     // MARK: - shared pieces
 
+    /// No glyph above the headline (Hidde, 2026-10-09: "maybe the tree should
+    /// be next to the title or just gone ... it feels a mess"). The reference
+    /// this sheet is read off, AllTrails' and Airbnb's, is a title, a line and
+    /// the buttons; the oak mark was a leftover from an earlier shape and sat
+    /// alone at the top left with nothing to belong to.
     private var header: some View {
         VStack(alignment: .leading, spacing: 8) {
-            SpeciesMark(species: "Pedunculate Oak", color: brand)
-                .frame(width: 52, height: 52)
             // The brand's display face and ink, as every other heading in the
             // app and the website's dialog (Hidde, 2026-10-08: "the design of
             // the overlay to login is a bit off"). It was the system bold in
