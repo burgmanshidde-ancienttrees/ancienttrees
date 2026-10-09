@@ -7,6 +7,12 @@
 **Live:** por_002 and por_003 serve Paulo Araujo's photographs (both pages and all widths checked at 200).
 **Held:** the replies to Paulo and to Ines (Wilder) are approved by Hidde, but today's sends reached the daily cap of 50 (57 counted, the help-ask of 39 was most of it). The batch replies-2026-10-09-paulo is status approved_by_hidde, so the first night knock after midnight sends it through outreach_continue.py. The cap was not raised.
 
+## 2026-10-09 (night run, 22:08 window) - Enrichment across 20 cities
+
+**Window summary:** 29 passes, no new trees (recovery mode: enrich first). Cities: Bath, Berlin (3), Rome (2), Palermo, Oahu, Tokyo, Munich (3), New York, Edinburgh, Vienna (3), Brussels (2), Dublin, Brisbane, Paris, Malaga, London, Alicante, Pamplona, Porto, Prague, Cagliari, Madrid, Florence, Krakow. Mostly register ids and girths, plus corrected access lines. Athens returned nothing (137k tokens wasted: no Greek register imported, culture-ministry domains fail DNS).
+**For a session:** (1) the push credential expired at ~23:08 UTC, so every commit after Dublin/Brisbane is local and rides out with the Run health step; (2) possible felling of ber_031 (CURATION.md); (3) pin conflicts: dub_008 (1.3 km from an avenue record), flo_026 (208 m), muc_020 (155 m, left as it was), nyc_006 species conflict, muc_037 and muc_049 are one tree; (4) Madrid ids from a third-party site withheld; (5) Berlin Baumkataster licence not checked; (6) kra_028's girth (399 cm) has no measure_source line, from the pl.wikipedia table of Krakow's pomniki przyrody.
+**Krakow:** CRFOP register pages and ids on six trees (kra_002 at 42 m, the rest within 1 m), girth on three from the pl.wikipedia table that reproduces the city's list, Botanical Garden prices and hours on five, three season peaks (red oak and dawn redwood colour, silver lime bloom). Blocklist additions tonight: nycgovparks.org, historicenvironment.scot, botanicgardens.ie, kew.org, www.navarra.es.
+
 ## 2026-10-09 (night run, 22:08 window) - Bath and Berlin enrichment
 
 **Done:** Bath (UK, no per-tree register): current access and price for the Great Dell redwood and the Prior Park yews, everything else a dead end. Berlin: girth on the Humboldt, Steinlanke and both Pfaueninsel oaks, height on the Humboldt Oak and the Queen's Oak, register ids 6-101/B and 6-102/B on the Pfaueninsel oaks. The Berlin register carries no measurements.
