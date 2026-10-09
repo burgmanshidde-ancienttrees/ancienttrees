@@ -158,6 +158,18 @@ struct CollectView: View {
         }
     }
 
+    /// The city a timeline item is in, for the label on its tile: the same
+    /// reasoning as countryOf.
+    private func cityOf(_ item: TimelineItem) -> String? {
+        switch item {
+        case .tree(let t, _): return t.city
+        case .mine(let s):
+            if let id = s.treeId, let t = catalogue.tree(id) { return t.city }
+            return catalogue.nearest(to: s.lat, s.lng, limit: 1).first?.tree.city
+        case .sent(let t): return t.city
+        }
+    }
+
     /// Countries in the collection, most trees first.
     private var collectedCountries: [(name: String, count: Int)] {
         var n: [String: Int] = [:]
@@ -188,10 +200,10 @@ struct CollectView: View {
         if countries.count > 1 {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
-                    FilterChip(label: "All \(total)", icon: "globe.europe.africa",
+                    FilterChip(label: "All \(total)", icon: nil,
                                on: country == nil) { country = nil }
                     ForEach(countries, id: \.name) { c in
-                        FilterChip(label: "\(c.name) \(c.count)", icon: "mappin",
+                        FilterChip(label: "\(c.name) \(c.count)", icon: nil,
                                    on: country == c.name) {
                             country = country == c.name ? nil : c.name
                         }
@@ -674,11 +686,11 @@ struct CollectView: View {
                     ForEach(shownTimeline) { item in
                         switch item {
                         case .mine(let s):
-                            SheetLink(route: .mine(s.id)) { CollectedTile(kind: .mine(s)) }
+                            SheetLink(route: .mine(s.id)) { CollectedTile(kind: .mine(s), city: cityOf(item)) }
                         case .sent(let t):
-                            CollectedTile(kind: .sent(t))
+                            CollectedTile(kind: .sent(t), city: t.city)
                         case .tree(let t, _):
-                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t)) }
+                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city) }
                                 .accessibilityIdentifier("tree-card")
                                 .accessibilityLabel(t.name)
                         }
@@ -703,7 +715,7 @@ struct CollectView: View {
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
                           spacing: 2) {
                     ForEach(list) { t in
-                        SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t)) }
+                        SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city) }
                             .accessibilityIdentifier("tree-card")
                             .accessibilityLabel(t.name)
                     }

@@ -114,7 +114,8 @@ export const PROFILE_JS = `
     // switch looked dead (Hidde, 2026-10-09: "the row of trees stays the same").
     node.innerHTML = known.map(function(id) {
       var k = String(cards[id].k || '').replace(/[&"<>]/g, '');
-      return '<li data-k="' + k + '">' + C.card(id, cards[id], savedSet[id] === true, visitedSet[id] === true) + '</li>';
+      var city = String(cards[id].c || '').replace(/[&"<>]/g, '');
+      return '<li data-k="' + k + '"' + (city ? ' data-city="' + city + '"' : '') + '>' + C.card(id, cards[id], savedSet[id] === true, visitedSet[id] === true) + '</li>';
     }).join('');
     node.hidden = false;
     if (window.atPaintSaves) window.atPaintSaves();

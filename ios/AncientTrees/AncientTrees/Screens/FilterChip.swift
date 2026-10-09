@@ -5,12 +5,15 @@ import SwiftUI
 
 struct FilterChipLabel: View {
     let label: String
-    let icon: String
+    /// Nil for a chip that is only a word, like the country chips on My trees
+    /// (Hidde, 2026-10-09: the web has none there "en dat is prima, bespaard
+    /// ruimte").
+    let icon: String?
     let on: Bool
 
     var body: some View {
         HStack(spacing: 5) {
-            Image(systemName: icon).font(.caption2.weight(.semibold))
+            if let icon { Image(systemName: icon).font(.caption2.weight(.semibold)) }
             Text(label).font(.brand(13, .medium, relativeTo: .caption))
         }
         .foregroundStyle(on ? .white : Brand.ink)
@@ -29,7 +32,7 @@ struct FilterChipLabel: View {
 
 struct FilterChip: View {
     let label: String
-    let icon: String
+    let icon: String?
     let on: Bool
     let tap: () -> Void
 

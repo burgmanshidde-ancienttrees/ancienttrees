@@ -196,6 +196,26 @@ export const MY_TREES_JS = `
   var SENT_STATE = { changed: 'published', open_question: 'checking',
                      holds: 'checking' };
 
+  // THE CITY ON EVERY TILE of the profile grid (Hidde, 2026-10-09: "gebruik
+  // die tags toch maar om aan te geven welke stad"), the app's CollectedTile.
+  // A tree you added is placed by the nearest tree we map within 50 km, as
+  // the app does.
+  function cityAttr(city) {
+    return city ? ' data-city="' + String(city).replace(/[&"<>]/g, '') + '"' : '';
+  }
+  function nearestCity(row, known) {
+    if (typeof row.lat !== 'number' || typeof row.lng !== 'number') return '';
+    var best = '', bestD = 50;
+    Object.keys(known).forEach(function(id) {
+      var c = known[id];
+      if (!c || typeof c.x !== 'number' || typeof c.y !== 'number') return;
+      var dy = (c.y - row.lat) * 111, dx = (c.x - row.lng) * 111 * Math.cos(row.lat * Math.PI / 180);
+      var d = Math.sqrt(dx * dx + dy * dy);
+      if (d < bestD) { bestD = d; best = c.c || ''; }
+    });
+    return best;
+  }
+
   function sentCard(g) {
     var r = g.newest;
     // A city tip has no tree name, so the city becomes the heading and must
@@ -263,7 +283,7 @@ export const MY_TREES_JS = `
         if (window.atSentCounted) window.atSentCounted(groups.length);
         if (!groups.length) { sentList.innerHTML = ''; sentList.hidden = true; return; }
         sentList.innerHTML = groups.map(function(g) {
-          return '<li>' + sentCard(g) + '</li>';
+          return '<li' + cityAttr(g.newest.city) + '>' + sentCard(g) + '</li>';
         }).join('');
         sentList.hidden = false;
       })
@@ -339,13 +359,13 @@ export const MY_TREES_JS = `
         photographed.push(row.tree_id);
       });
       var ours = photographed.map(function(id) {
-        return '<li>' + window.atCollection.card(id, known[id], false, false) + '</li>';
+        return '<li' + cityAttr(known[id] && known[id].c) + '>' + window.atCollection.card(id, known[id], false, false) + '</li>';
       });
 
       if (window.atPhotographedCounted) window.atPhotographedCounted(ours.length);
       if (!own.length && !ours.length) { list.innerHTML = ''; list.hidden = true; return; }
       list.innerHTML = ours.join('')
-        + own.map(function(row) { return '<li>' + card(row) + '</li>'; }).join('');
+        + own.map(function(row) { return '<li' + cityAttr(nearestCity(row, known)) + '>' + card(row) + '</li>'; }).join('');
       list.hidden = false;
       paintYours();
       if (window.atPaintSaves) window.atPaintSaves();

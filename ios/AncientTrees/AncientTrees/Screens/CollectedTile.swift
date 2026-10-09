@@ -7,13 +7,16 @@
 // not like instagram - like 9 trees in rows of 3 i think that would be better".
 //
 // The name lives on the tree's page, as it does on Instagram; the only words
-// on a tile are the label a tree you added carries, because that is the one
-// fact the photograph cannot say.
+// on a tile are its city, because that is the one fact the photograph cannot
+// say.
 import SwiftUI
 
 struct CollectedTile: View {
     enum Kind { case ours(Tree), mine(Sightings.Sighting), sent(Submission.Sent) }
     let kind: Kind
+    /// Where the tree stands, worked out by the screen (a tree you added is
+    /// placed by the nearest tree we map).
+    var city: String? = nil
     @Environment(Sightings.self) private var sightings
 
     var body: some View {
@@ -60,17 +63,13 @@ struct CollectedTile: View {
         }
     }
 
+    /// THE CITY, on every tile (Hidde, 2026-10-09: "de your tree tags slaan
+    /// eigenlijk nergens meer op gebruik die tags toch maar om aan te geven
+    /// welke stad"). In a grid of trunks the photograph does not say where it
+    /// is, and that is the question a collection of trees across countries
+    /// raises first.
     @ViewBuilder private var tag: some View {
-        switch kind {
-        case .ours: EmptyView()
-        case .mine(let s):
-            if s.status == .published {
-                pill("Approved", icon: "checkmark.seal.fill", filled: true)
-            } else {
-                pill("Your tree", icon: nil, filled: false)
-            }
-        case .sent: pill("You sent this", icon: nil, filled: false)
-        }
+        if let city, !city.isEmpty { pill(city, icon: nil, filled: false) }
     }
 
     private func pill(_ text: String, icon: String?, filled: Bool) -> some View {

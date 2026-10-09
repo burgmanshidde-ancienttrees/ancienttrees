@@ -3275,3 +3275,6 @@ Hidde: "the cards are not like instagram - like 9 trees in rows of 3 i think tha
 **What we do:** Collected is a 3-column grid of 3:4 tiles, edge to edge, no names (the name is on the tree's page); a tree you added carries its one label ("Your tree", "Approved"), because that is what the photograph cannot say. Want to visit was to keep its cards, because it is a plan; Hidde chose the same grid for it the same day ("maak van want to visit maar hetzelfde raster"), so both lanes are one shape. Read 2026-10-09.
 
 **Text on a tile: none (Hidde, 2026-10-09: "doe maar de insta versie").** Tried the same day behind a flag: the city in small white type on a dark fade, Polarsteps' trip covers. He chose Instagram's bare grid; the place is on the tree's page.
+
+**And then a city on every tile, as a small white pill (Hidde, 2026-10-09: "de your tree tags slaan eigenlijk nergens meer op gebruik die tags toch maar om aan te geven welke stad").** The pill that said "Your tree" now says where the tree stands; the country chips above lost their icons on the app to match the web, where they never had any.
+
