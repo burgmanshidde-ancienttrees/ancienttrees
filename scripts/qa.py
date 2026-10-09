@@ -187,6 +187,22 @@ def check_run_prompt_forbids_compound_commands():
             "is allowed; on 2026-09-19 that was one turn in eleven. Put the rule "
             "back, or change this check with Hidde."
         )
+    # Same ratchet, third rule (2026-10-09): the prompt must say that an
+    # inline `python3 -c "a; b"` is a chain too. The matcher reads the
+    # semicolons and newlines INSIDE the quotes, so that form is refused like
+    # `a && b`, and for a week the prompt itself recommended it: measured
+    # over the 46 runs to 2026-10-09 the two inline-python shapes were the
+    # most refused commands, 9 runs each, 15 percent of all turns refused.
+    # The prompt had already recommended a heredoc until 2026-10-03 for the
+    # same reason. Twice is the ratchet.
+    if "never `python3 -c" not in low:
+        out.append(
+            ".github/workflows/nightly.yml: the prompt no longer warns that an "
+            "inline `python3 -c \"a; b\"` is refused as a chain. That form was "
+            "the most refused command shape of the week to 2026-10-09, while "
+            "the prompt recommended it. Put the warning back (the sentence "
+            "starts NEVER `python3 -c`), or change this check with Hidde."
+        )
     # Same ratchet, second rule (2026-09-26): an attempt that dispatches in
     # the background and then stops talking loses the agent's whole result,
     # because this runner has no notifications. Five attempts did exactly
