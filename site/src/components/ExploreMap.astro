@@ -18,6 +18,7 @@ import { mapHead, exploreMapScript, type ExploreTreeFeature, type ExploreCityRow
 import { haversineKm } from "../lib/walks";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 import { BASE_URL } from "../lib/schema";
+import { icon } from "../lib/icons";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { ui, translatedCities, cityTranslation, hreflangSet, translatedLanguages } from "../lib/i18n";
 import LanguagePicker from "./LanguagePicker.astro";
@@ -240,7 +241,7 @@ const scripts = mapScript + SEARCH_WIDGET_JS;
           two heights at once: 34 drawn, 44 hit. */}
       <div class="map-filters" role="group" aria-label={U.mapFilterGroup}>
         <button type="button" class="mf" data-f="fav" data-label={U.mapFilterFav} aria-pressed="false">
-          <span class="mf-pill"><Fragment set:html={ICON.heart} />{U.mapFilterFav}</span>
+          <span class="mf-pill"><Fragment set:html={icon("bookmark-simple", "bold", "mf-ic mf-ic-solid")} />{U.mapFilterFav}</span>
         </button>
         <button type="button" class="mf" data-f="mine" data-label={U.mapFilterMine} aria-pressed="false">
           <span class="mf-pill"><Fragment set:html={ICON.seal} />{U.mapFilterMine}</span>

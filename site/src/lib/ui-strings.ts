@@ -78,7 +78,7 @@ export const UI: Record<Lang, UiStrings> = {
   en: {
     map: "Map", explore: "Explore", browse: "Browse", cities: "Cities",
     countries: "Countries", species: "Species", parks: "Parks",
-    collections: "Collections", yours: "Yours", savedTrees: "Saved trees",
+    collections: "Collections", yours: "Yours", savedTrees: "Want to visit",
     yourAccount: "Your account", suggestTree: "Suggest a tree",
     sponsor: "Sponsor this project", getApp: "Download the app", theApp: "The app",
     account: "Account", menu: "Menu", support: "Support", privacy: "Privacy",
@@ -93,7 +93,7 @@ export const UI: Record<Lang, UiStrings> = {
   es: {
     map: "Mapa", explore: "Explorar", browse: "Navegar", cities: "Ciudades",
     countries: "Países", species: "Especies", parks: "Parques",
-    collections: "Colecciones", yours: "Tu perfil", savedTrees: "Árboles guardados",
+    collections: "Colecciones", yours: "Tu perfil", savedTrees: "Quiero visitar",
     yourAccount: "Tu cuenta", suggestTree: "Propón un árbol",
     sponsor: "Apoya este proyecto", getApp: "Descarga la app", theApp: "La app",
     account: "Cuenta", menu: "Menú", support: "Ayuda", privacy: "Privacidad",
@@ -108,7 +108,7 @@ export const UI: Record<Lang, UiStrings> = {
   it: {
     map: "Mappa", explore: "Esplora", browse: "Sfoglia", cities: "Città",
     countries: "Paesi", species: "Specie", parks: "Parchi",
-    collections: "Collezioni", yours: "Il tuo profilo", savedTrees: "Alberi salvati",
+    collections: "Collezioni", yours: "Il tuo profilo", savedTrees: "Da visitare",
     yourAccount: "Il tuo account", suggestTree: "Segnala un albero",
     sponsor: "Sostieni il progetto", getApp: "Scarica l'app", theApp: "L'app",
     account: "Account", menu: "Menu", support: "Assistenza", privacy: "Privacy",
@@ -123,7 +123,7 @@ export const UI: Record<Lang, UiStrings> = {
   nl: {
     map: "Kaart", explore: "Ontdekken", browse: "Bladeren", cities: "Steden",
     countries: "Landen", species: "Soorten", parks: "Parken",
-    collections: "Collecties", yours: "Jouw profiel", savedTrees: "Bewaarde bomen",
+    collections: "Collecties", yours: "Jouw profiel", savedTrees: "Wil ik bezoeken",
     yourAccount: "Je account", suggestTree: "Boom aandragen",
     sponsor: "Steun dit project", getApp: "Download de app", theApp: "De app",
     account: "Account", menu: "Menu", support: "Hulp", privacy: "Privacy",
@@ -138,7 +138,7 @@ export const UI: Record<Lang, UiStrings> = {
   de: {
     map: "Karte", explore: "Entdecken", browse: "Stöbern", cities: "Städte",
     countries: "Länder", species: "Arten", parks: "Parks",
-    collections: "Sammlungen", yours: "Dein Profil", savedTrees: "Gemerkte Bäume",
+    collections: "Sammlungen", yours: "Dein Profil", savedTrees: "Will ich besuchen",
     yourAccount: "Dein Konto", suggestTree: "Baum vorschlagen",
     sponsor: "Projekt unterstützen", getApp: "App laden", theApp: "Die App",
     account: "Konto", menu: "Menü", support: "Hilfe", privacy: "Datenschutz",
@@ -153,7 +153,7 @@ export const UI: Record<Lang, UiStrings> = {
   pt: {
     map: "Mapa", explore: "Explorar", browse: "Navegar", cities: "Cidades",
     countries: "Países", species: "Espécies", parks: "Parques",
-    collections: "Coleções", yours: "O teu perfil", savedTrees: "Árvores guardadas",
+    collections: "Coleções", yours: "O teu perfil", savedTrees: "Quero visitar",
     yourAccount: "A tua conta", suggestTree: "Sugerir uma árvore",
     sponsor: "Apoiar o projeto", getApp: "Obter a app", theApp: "A app",
     account: "Conta", menu: "Menu", support: "Ajuda", privacy: "Privacidade",
@@ -168,7 +168,7 @@ export const UI: Record<Lang, UiStrings> = {
   fr: {
     map: "Carte", explore: "Explorer", browse: "Parcourir", cities: "Villes",
     countries: "Pays", species: "Espèces", parks: "Parcs",
-    collections: "Collections", yours: "Votre profil", savedTrees: "Arbres enregistrés",
+    collections: "Collections", yours: "Votre profil", savedTrees: "À visiter",
     yourAccount: "Votre compte", suggestTree: "Proposer un arbre",
     sponsor: "Soutenir le projet", getApp: "Télécharger l'app", theApp: "L'app",
     account: "Compte", menu: "Menu", support: "Aide", privacy: "Confidentialité",
@@ -183,7 +183,7 @@ export const UI: Record<Lang, UiStrings> = {
   ja: {
     map: "地図", explore: "さがす", browse: "一覧", cities: "都市",
     countries: "国", species: "樹種", parks: "公園",
-    collections: "コレクション", yours: "マイページ", savedTrees: "保存した木",
+    collections: "コレクション", yours: "マイページ", savedTrees: "行きたい",
     yourAccount: "アカウント設定", suggestTree: "木を教える",
     sponsor: "このプロジェクトを支援", getApp: "アプリを入手", theApp: "アプリ",
     account: "アカウント", menu: "メニュー", support: "ヘルプ", privacy: "プライバシー",

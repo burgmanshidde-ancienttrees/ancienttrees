@@ -2496,6 +2496,7 @@ main.content-page.has-tree-bar .tree-sources { margin-top: 1.75rem; margin-botto
   background: #fff; color: var(--ink); font-size: 13px; font-weight: 500;
   line-height: 1; white-space: nowrap; box-shadow: 0 1px 2px rgba(26,32,18,0.10);
   transition: background 0.12s, border-color 0.12s, color 0.12s; }
+.mf-ic.mf-ic-solid { fill: currentColor; stroke: none; }
 .mf-ic { width: 14px; height: 14px; flex: 0 0 auto; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .mf-caret { width: 12px; height: 12px; margin-left: 1px; opacity: 0.55; }
@@ -3018,3 +3019,12 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 @media (hover: hover) and (min-width: 801px) {
   .tree-card.active { box-shadow: none; border-color: var(--moss); background: #fff; }
 }
+
+/* Per-country chips under Collected on /account (2026-10-09), the app's
+   FilterChip row: moss when on, a hairline pill when off. */
+.country-chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 14px; scrollbar-width: none; }
+.country-chips::-webkit-scrollbar { display: none; }
+.country-chip { flex: 0 0 auto; font: inherit; font-size: 13px; font-weight: 500; padding: 7px 12px;
+  border-radius: 999px; border: 1px solid var(--line, #e6e6e6); background: var(--surface, #fff);
+  color: var(--ink, #26301e); cursor: pointer; }
+.country-chip[aria-pressed="true"] { background: var(--moss); border-color: var(--moss); color: #fff; }

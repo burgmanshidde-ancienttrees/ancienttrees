@@ -113,7 +113,8 @@ export const PROFILE_JS = `
     // row whenever most favourites were also trees you had seen, and the
     // switch looked dead (Hidde, 2026-10-09: "the row of trees stays the same").
     node.innerHTML = known.map(function(id) {
-      return '<li>' + C.card(id, cards[id], savedSet[id] === true, visitedSet[id] === true) + '</li>';
+      var k = String(cards[id].k || '').replace(/[&"<>]/g, '');
+      return '<li data-k="' + k + '">' + C.card(id, cards[id], savedSet[id] === true, visitedSet[id] === true) + '</li>';
     }).join('');
     node.hidden = false;
     if (window.atPaintSaves) window.atPaintSaves();
@@ -192,6 +193,7 @@ export const PROFILE_JS = `
         if (c.sp) species[c.sp] = 1;
         if (c.k) countries[c.k] = 1;
       });
+      chips(visited, cards);
       window.atVisitedCount = visited.length;
       setText('n-trees', visited.length + (window.atMineCount || 0));
       setText('n-species', Object.keys(species).length);
@@ -233,6 +235,42 @@ export const PROFILE_JS = `
     window.atPhotographedCount = n;
     hideEmptyIfAnything();
   };
+
+  // THE COUNTRY CHIPS under Collected, the app's row (Collect.swift,
+  // countryChips): All, then each country most trees first, shown only when
+  // there is more than one. A chip hides every card in the lane from another
+  // country. A tree you added yourself carries no country here and stays
+  // under All, where the app places it by the nearest tree we map.
+  var countryOn = null;
+  function chips(visited, cards) {
+    var box = el('country-chips');
+    if (!box) return;
+    var n = {};
+    visited.forEach(function(id) { var c = cards[id]; if (c && c.k) n[c.k] = (n[c.k] || 0) + 1; });
+    var names = Object.keys(n).sort(function(a, b) { return n[b] - n[a] || (a < b ? -1 : 1); });
+    if (names.length < 2) { box.hidden = true; return; }
+    function chip(key, label) {
+      var on = key === countryOn;
+      return '<button type="button" class="country-chip" data-k="' + key.replace(/[&"<>]/g, '')
+        + '" aria-pressed="' + (on ? 'true' : 'false') + '">' + label.replace(/[&<>]/g, '') + '</button>';
+    }
+    box.innerHTML = chip('', 'All ' + visited.length)
+      + names.map(function(k) { return chip(k, k + ' ' + n[k]); }).join('');
+    if (countryOn === null) box.firstChild.setAttribute('aria-pressed', 'true');
+    box.hidden = false;
+    box.onclick = function(e) {
+      var b = e.target.closest('.country-chip');
+      if (!b) return;
+      var k = b.getAttribute('data-k');
+      countryOn = (k && k !== countryOn) ? k : null;
+      Array.prototype.forEach.call(box.children, function(x) {
+        x.setAttribute('aria-pressed', String((x.getAttribute('data-k') || null) === countryOn));
+      });
+      Array.prototype.forEach.call(el('pane-mine').querySelectorAll('li'), function(li) {
+        li.hidden = countryOn !== null && li.getAttribute('data-k') !== countryOn;
+      });
+    };
+  }
 
   window.atLoadProfile = load;
   var s = C.session();

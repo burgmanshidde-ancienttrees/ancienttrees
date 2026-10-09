@@ -42,8 +42,10 @@ const { treeId, treeName, compact = false, labelSave = "Save", labelSaved = "Sav
         treeUrl, photo, meta, look = "pill" } = Astro.props;
 // Phosphor's outline and filled hearts, the app's heart / heart.fill pair
 // (2026-09-24: no hand-drawn icons). CSS shows one or the other on aria-pressed.
-const off = icon("heart", "bold", "heart hi-off");
-const on = icon("heart", "fill", "heart hi-on");
+// A BOOKMARK, the app's SaveHeart glyph since 2026-10-09 (Hidde: the list
+// is "Want to visit", and a bookmark is what you put on a place to go).
+const off = icon("bookmark-simple", "bold", "heart hi-off");
+const on = icon("bookmark-simple", "fill", "heart hi-on");
 ---
 <button
   class={`save-btn heart-btn${compact ? " heart-compact" : ""}${look === "round" ? " heart-round" : ""}${look === "card" ? " heart-card" : ""}`}

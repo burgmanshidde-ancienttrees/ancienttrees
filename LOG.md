@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - My trees: Collected and Want to visit, per country, a bookmark instead of the heart, Collect first
+
+**Why:** Hidde, after two design talks on 22 September and a simulator preview: "the collected and saved distinction is good (but i think we should change saved to > want to visit) ... both titles really say what we want people to do > visit and collect trees", "the option to select under collected per country is really good", then "top zet dit maar door". This reverses his own 2026-08-26 "My trees" / "Favourites" on purpose.
+**App:** the two lanes are Collected and Want to visit; under Collected a row of country chips (All, then each country, most trees first, only when there are two or more); the heart is a bookmark everywhere (cards, tree page, map pins, the map chip now "Want to visit", the map's "My trees" chip now "Collected", the Home shelf); on a tree page "Collect this tree" is the big green button and Take me there is a round button beside it. New debug arguments `-lane=want` and `-saved=<ids>` so the Want to visit lane can be photographed with rows in it.
+**Web, same change:** /account's lanes renamed, the same country chips under Collected, the bookmark (Phosphor bookmark-simple) on every save control, card and nav item, and the map chips and nav label in all eight languages.
+**Differs, deliberately:** the web tree page keeps directions first, because a laptop has no camera in a park (CONVENTIONS.md, "A profile page"); a tree you added yourself sits under All only on the web, where the app places it by the nearest tree we map. A third lane for lists is parked until somebody asks for it.
+
+
 ## 2026-10-09 (session) - Four more replies: Woodland Trust pauses, Freiburg points to its Naturdenkmale, Paulo declines the ambassador role and sends two photos
 
 **Woodland Trust (ATI):** all requests to show ATI records publicly are paused for at least six months, and commercial use will later be charged for. Recorded in data/register-scouting.json; the London gate stands. Reply drafted.

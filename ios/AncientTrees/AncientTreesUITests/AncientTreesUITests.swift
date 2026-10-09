@@ -487,11 +487,11 @@ final class AncientTreesUITests: XCTestCase {
             // or on a real idle signal, changed nothing.
             //
             // So: anchor below the chip row itself rather than guessing a device
-            // safe-area offset. "Favourites" is the first chip and always exists,
+            // safe-area offset. "Want to visit" is the first chip and always exists,
             // signed in or not (CLAUDE.md hard rule: nothing here signs anybody
             // out), so its own frame is the one fact that is true on every device
             // this runs on.
-            let favourites = app.buttons["Favourites"]
+            let favourites = app.buttons["Want to visit"]
             let top = favourites.exists ? favourites.frame.maxY + 16 : map.frame.minY + 170
             for row in 0...10 {
                 for dx in [0.5, 0.28, 0.72] {
@@ -630,8 +630,8 @@ final class AncientTreesUITests: XCTestCase {
         let picker = app.segmentedControls["collect-lane"]
         XCTAssertTrue(picker.waitForExistence(timeout: 12), "no lane picker on Collection")
 
-        let seen = picker.buttons["My trees"]
-        let want = picker.buttons["Favourites"]
+        let seen = picker.buttons["Collected"]
+        let want = picker.buttons["Want to visit"]
         XCTAssertTrue(want.exists && seen.exists, "the two lanes are not both there")
 
         // RETRIED, not a single tap, because switching lanes rebuilds
@@ -652,8 +652,8 @@ final class AncientTreesUITests: XCTestCase {
             XCTAssertTrue(button.isSelected, "tapping \(label) did not select it")
         }
 
-        tapAndConfirmSelected(seen, "My trees")
-        tapAndConfirmSelected(want, "Favourites from My trees")
+        tapAndConfirmSelected(seen, "Collected")
+        tapAndConfirmSelected(want, "Want to visit from Collected")
         // And the tap must not have opened a tree instead, which is the other
         // half of what he described.
         XCTAssertFalse(app.buttons["Take me there"].exists,
