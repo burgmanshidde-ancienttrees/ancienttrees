@@ -769,7 +769,12 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by being the only field elm in the whole Neubau district, 290 centimetres round, its crown cut back for the power lines. It stands on the narrow green median of Burggasse, between the roadway and the service lane."
+      "how_to_recognise": "You can recognise it by being the only field elm in the whole Neubau district, 290 centimetres round, its crown cut back for the power lines. It stands on the narrow green median of Burggasse, between the roadway and the service lane.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257747",
+        "url": null
+      },
+      "girth_cm": 290
     },
     {
       "id": "vie_019",
@@ -799,7 +804,12 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise the pair by their matched, cone-shaped crowns about thirty metres apart, opposite TU Wien's main entrance. The thicker trunk, 2.81 metres round, is the older tree, planted in 1900."
+      "how_to_recognise": "You can recognise the pair by their matched, cone-shaped crowns about thirty metres apart, opposite TU Wien's main entrance. The thicker trunk, 2.81 metres round, is the older tree, planted in 1900.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257586",
+        "url": null
+      },
+      "girth_cm": 281
     },
     {
       "id": "vie_020",
@@ -830,7 +840,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them by steel cables running through both crowns since 2020 storm damage, and trunks about 4.2 metres round, standing 13 metres apart in front of Hietzing's parish church."
+      "how_to_recognise": "You can recognise them by steel cables running through both crowns since 2020 storm damage, and trunks about 4.2 metres round, standing 13 metres apart in front of Hietzing's parish church.",
+      "girth_cm": 424
     },
     {
       "id": "vie_021",
@@ -1121,7 +1132,7 @@
       "age_estimate": "not documented; protected as a natural monument since 1942",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
+      "girth_cm": 227,
       "location": {
         "address": "Ebner-Eschenbach-Park, Klostergasse, 1180 Vienna",
         "latitude": 48.226892,
@@ -1219,7 +1230,11 @@
       "notes": "Promoted from data/leads/vienna.json on 2026-08-31. Single-sourced on the city's Baumkataster; flagged for that reason, not for doubt about the tree. Stands beside vie_033, a second Kugeltrompetenbaum at the same address planted in 2016.",
       "girth_cm": 117,
       "verify_notes": "Planted 1977, girth 117cm, per Vienna's own Baumkataster (Baum-ID 167096), offset 0.4m from the register address point.",
-      "how_to_recognise": "You can recognise it by its dense, perfectly round crown on a bare trunk, 1.17 metres round, the older and thicker of two ball-headed catalpas standing together at Schrankgasse 7-9."
+      "how_to_recognise": "You can recognise it by its dense, perfectly round crown on a bare trunk, 1.17 metres round, the older and thicker of two ball-headed catalpas standing together at Schrankgasse 7-9.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257961",
+        "url": null
+      }
     },
     {
       "id": "vie_033",
@@ -1251,7 +1266,11 @@
       "notes": "Promoted from data/leads/vienna.json on 2026-08-31. Single-sourced on the city's Baumkataster; flagged for that reason, not for doubt about the tree. Stands beside vie_032, an older Kugeltrompetenbaum at the same address planted in 1977.",
       "girth_cm": 37,
       "verify_notes": "Planted 2016, girth 37cm, per Vienna's own Baumkataster (Baum-ID 283099), offset 0.8m from the register address point.",
-      "how_to_recognise": "You can recognise it by the same round, ball-shaped crown as its neighbour but on a much slimmer trunk, 0.37 metres round against the older tree's 1.17. It stands a few metres away at Schrankgasse 7-9."
+      "how_to_recognise": "You can recognise it by the same round, ball-shaped crown as its neighbour but on a much slimmer trunk, 0.37 metres round against the older tree's 1.17. It stands a few metres away at Schrankgasse 7-9.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257962",
+        "url": null
+      }
     },
     {
       "id": "vie_034",
@@ -1284,7 +1303,11 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Register entry 3257971 (wien-naturdenkmale.json) matches ND 828. de.wikipedia list text: girth 6 m at 1 m, divides into 7 stems at 2 m, some divide again at 3 m, partly hollow, crown 23 m. Baumkataster 605 cm, height class 16-20 m, PFLANZJAHR 0 (not defined), so no age basis; age left empty, page should ask. Commons has a photo file named 'Wiener Naturdenkmal 828 - Sommerlinde (Döbling) b.JPG' (photo hunt not done here). lifecheck on the nearby coordinate returned RECENT iNaturalist observations (2026). Pin: register point plus Baumkataster within 7 m, tree-level. Park is a public Parkanlage (62,500 m2) per de.wikipedia. Ferdinand von Saar bust and Arthaber/Wertheimstein history from de.wikipedia Wertheimsteinpark. Sister entries vie_035 (hazel) and vie_036 (service tree) in same park."
+      "verify_notes": "Register entry 3257971 (wien-naturdenkmale.json) matches ND 828. de.wikipedia list text: girth 6 m at 1 m, divides into 7 stems at 2 m, some divide again at 3 m, partly hollow, crown 23 m. Baumkataster 605 cm, height class 16-20 m, PFLANZJAHR 0 (not defined), so no age basis; age left empty, page should ask. Commons has a photo file named 'Wiener Naturdenkmal 828 - Sommerlinde (Döbling) b.JPG' (photo hunt not done here). lifecheck on the nearby coordinate returned RECENT iNaturalist observations (2026). Pin: register point plus Baumkataster within 7 m, tree-level. Park is a public Parkanlage (62,500 m2) per de.wikipedia. Ferdinand von Saar bust and Arthaber/Wertheimstein history from de.wikipedia Wertheimsteinpark. Sister entries vie_035 (hazel) and vie_036 (service tree) in same park.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257971",
+        "url": null
+      }
     },
     {
       "id": "vie_035",
@@ -1316,7 +1339,11 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Register entry 3257970 matches ND 827. de.wikipedia: girth 3.5 m at 1 m, crown 25 m, no age. Baumkataster 350 cm, height class 16-20 m, PFLANZJAHR 0. No age basis; left empty. Pin: register + Baumkataster within 3.4 m. Commons photo file named 'Wiener Naturdenkmal 827 - Baumhasel (Döbling) d.JPG' exists. Hazel is about 100 m from the lime (register points). Winter bark remark is general species knowledge, not from the registers. Lifecheck RECENT for park coordinates (2026 iNaturalist)."
+      "verify_notes": "Register entry 3257970 matches ND 827. de.wikipedia: girth 3.5 m at 1 m, crown 25 m, no age. Baumkataster 350 cm, height class 16-20 m, PFLANZJAHR 0. No age basis; left empty. Pin: register + Baumkataster within 3.4 m. Commons photo file named 'Wiener Naturdenkmal 827 - Baumhasel (Döbling) d.JPG' exists. Hazel is about 100 m from the lime (register points). Winter bark remark is general species knowledge, not from the registers. Lifecheck RECENT for park coordinates (2026 iNaturalist).",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257970",
+        "url": null
+      }
     },
     {
       "id": "vie_036",
@@ -1348,7 +1375,11 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Register entry 3257972 matches ND 829. de.wikipedia: girth 2.3 m at 1 m, crown ~13 m. Baumkataster 236 cm, height class 16-20 m, PFLANZJAHR 0. No age basis. Pin within 3 m of Baumkataster point of same species. Commons photo file 'Wiener Naturdenkmal 829 - Speierling (Döbling) a.JPG' exists. The apple-wine use and 'scarce in Central Europe' are general species knowledge, not from the registers; writer may soften. Distance to lime vie_034: register points 48.242431,16.359352 vs 48.242381,16.359929 = about 43 m. Alive: lifecheck RECENT for park coords."
+      "verify_notes": "Register entry 3257972 matches ND 829. de.wikipedia: girth 2.3 m at 1 m, crown ~13 m. Baumkataster 236 cm, height class 16-20 m, PFLANZJAHR 0. No age basis. Pin within 3 m of Baumkataster point of same species. Commons photo file 'Wiener Naturdenkmal 829 - Speierling (Döbling) a.JPG' exists. The apple-wine use and 'scarce in Central Europe' are general species knowledge, not from the registers; writer may soften. Distance to lime vie_034: register points 48.242431,16.359352 vs 48.242381,16.359929 = about 43 m. Alive: lifecheck RECENT for park coords.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257972",
+        "url": null
+      }
     },
     {
       "id": "vie_037",
@@ -1382,7 +1413,19 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Register entry 3257993 matches ND 842, protected 2018-06-18, wording from de.wikipedia: 'maechtige ortsbildpraegende Freistandskrone', protected for its special character for the surroundings. Baumkataster BAUM_ID 227677: PFLANZJAHR 1895, STAMMUMFANG 337, height class 21-25 m, offset 0.0 m. Age band 100-160 derived from the cadastre planting year (a recorded year, not independent). Neighbours in cadastre: Picea omorika planted 2001, Taxus baccata 1997 (my reading 'planted around 2000'). Commons photo file 'Wiener Naturdenkmal 842 - Rotbuche, Wieden 03.jpg' exists. lifecheck RECENT."
+      "verify_notes": "Register entry 3257993 matches ND 842, protected 2018-06-18, wording from de.wikipedia: 'maechtige ortsbildpraegende Freistandskrone', protected for its special character for the surroundings. Baumkataster BAUM_ID 227677: PFLANZJAHR 1895, STAMMUMFANG 337, height class 21-25 m, offset 0.0 m. Age band 100-160 derived from the cadastre planting year (a recorded year, not independent). Neighbours in cadastre: Picea omorika planted 2001, Taxus baccata 1997 (my reading 'planted around 2000'). Commons photo file 'Wiener Naturdenkmal 842 - Rotbuche, Wieden 03.jpg' exists. lifecheck RECENT.",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257993",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October and November, when the beech turns copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "vie_038",
@@ -1414,7 +1457,19 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Pair folded into one entry: register ids 3257995 (48.180492,16.366176) and 3257996 (48.180707,16.365965). ND 845, protected 2019-01-07, de.wikipedia says 'der suedoestlichere der beiden Baeume' for the 48.180491 point. WARNING on pin: Baumkataster at 3257995 point returns a Celtis occidentalis 3.4 m away, not a wingnut, so only the 3257996 tree is confirmed by the cadastre (Pterocarya, BAUM_ID 193701, 251 cm, height class 31-35 m, PFLANZJAHR 0, 6.8 m offset). Pin set on 3257996. Commons file 'Wien 10 Waldmuellerpark b.jpg' is attached in the wiki list. No age basis. lifecheck RECENT (2026 iNaturalist)."
+      "verify_notes": "Pair folded into one entry: register ids 3257995 (48.180492,16.366176) and 3257996 (48.180707,16.365965). ND 845, protected 2019-01-07, de.wikipedia says 'der suedoestlichere der beiden Baeume' for the 48.180491 point. WARNING on pin: Baumkataster at 3257995 point returns a Celtis occidentalis 3.4 m away, not a wingnut, so only the 3257996 tree is confirmed by the cadastre (Pterocarya, BAUM_ID 193701, 251 cm, height class 31-35 m, PFLANZJAHR 0, 6.8 m offset). Pin set on 3257996. Commons file 'Wien 10 Waldmuellerpark b.jpg' is attached in the wiki list. No age basis. lifecheck RECENT (2026 iNaturalist).",
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257996",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          8,
+          9
+        ],
+        "label": "late summer, when long catkins of winged nutlets hang from every branch",
+        "kind": "fruit"
+      }
     },
     {
       "id": "vie_039",
@@ -1448,7 +1503,14 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "FLAGGED: register-only plus the city's own cadastre (both Vienna, not independent for age). Register_id 3257456 in wien-naturdenkmale.json; no de.wikipedia list entry found for this tree in the Doebling list (searched 'Heiligenstaedter Park' - none), so ND number and protection wording not confirmed. Baumkataster BAUM_ID 265109: Tilia cordata, PFLANZJAHR 1725, STAMMUMFANG 654, height class 21-25 m, offset 0.0 m. A 1725 planting year on a cadastre is almost certainly an estimate; age band 250-320 broad. Neighbours in cadastre: Aesculus hippocastanum planted 1896 (296 cm) at 7.8 m, and 1961 (180 cm) at 9.3 m. No photograph candidate found (Commons geosearch within 100 m only shows park and Beethoven Museum views). Pin confirmed by register + cadastre. lifecheck RECENT (iNaturalist 2025-2026 near coords). Park public per Wikimedia 'Heiligenstaedter Park' photos; not independently checked for opening hours."
+      "verify_notes": "FLAGGED: register-only plus the city's own cadastre (both Vienna, not independent for age). Register_id 3257456 in wien-naturdenkmale.json; no de.wikipedia list entry found for this tree in the Doebling list (searched 'Heiligenstaedter Park' - none), so ND number and protection wording not confirmed. Baumkataster BAUM_ID 265109: Tilia cordata, PFLANZJAHR 1725, STAMMUMFANG 654, height class 21-25 m, offset 0.0 m. A 1725 planting year on a cadastre is almost certainly an estimate; age band 250-320 broad. Neighbours in cadastre: Aesculus hippocastanum planted 1896 (296 cm) at 7.8 m, and 1961 (180 cm) at 9.3 m. No photograph candidate found (Commons geosearch within 100 m only shows park and Beethoven Museum views). Pin confirmed by register + cadastre. lifecheck RECENT (iNaturalist 2025-2026 near coords). Park public per Wikimedia 'Heiligenstaedter Park' photos; not independently checked for opening hours.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "label": "July, when the scented lime flowers open",
+        "kind": "flowers"
+      }
     },
     {
       "id": "vie_040",
@@ -1483,7 +1545,19 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257969",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October and November, when the purple leaves turn copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "vie_041",
@@ -1547,7 +1621,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257519",
+        "url": null
+      }
     },
     {
       "id": "vie_043",
@@ -1582,7 +1660,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257636",
+        "url": null
+      }
     },
     {
       "id": "vie_044",
@@ -1616,7 +1698,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Wien (Stadt Wien, data.wien.gv.at), no. 3257921",
+        "url": null
+      }
     },
     {
       "id": "vie_045",
