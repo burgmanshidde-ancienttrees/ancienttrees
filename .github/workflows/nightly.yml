@@ -161,7 +161,9 @@ on:
 permissions:
   contents: write
   id-token: write
-  actions: read
+  # write, not read, since 2026-10-09: the last step dispatches ONE deploy for
+  # the window's work, now that deploy.yml ignores the run's own pushes.
+  actions: write
 
 concurrency:
   group: nightly-research
@@ -441,6 +443,27 @@ jobs:
             (deepen what people actually visit). If it says no token or refuses,
             skip it silently and work on.
 
+            THE JOB IS THE WINDOW, NOT ONE ITEM. This window started at
+            ${{ steps.start.outputs.at }} and the job is killed 120 minutes
+            after that. Measured over the week to 2026-10-09: 46 runs averaged
+            16 minutes inside 120-minute windows, and the week's budget stood
+            at 676 of 8000 machine minutes. The runs did the right work (an
+            enrichment pass, a write pass, a city opened) and then stopped
+            after ONE of it, every time. So: when an item is merged,
+            preflighted, committed and pushed, do NOT write LOG.md and stop.
+            Run `date -u`; if more than 25 minutes of the window remain, go
+            back to the shelf and take the next item: `python3
+            scripts/enrich.py --next` for the next enrichment city, `python3
+            scripts/leads.py --ready` for a write pass, `python3
+            scripts/prepare.py --status` for the rest (its BACKUP block names
+            a register to scout or a page to translate when the lanes are
+            empty). Repeat until fewer than 25 minutes remain, the usage limit
+            refuses you, or every lane says nothing is left. Keep ONE LOG.md
+            entry for the window and extend it after each item, so a cutoff
+            mid-item costs minutes and never the record. A continuation
+            attempt exists for when you stop early anyway; it pays the whole
+            orientation again, so it is the fallback and not the plan.
+
             SHELL STYLE, because it costs you turns. The allowlist matches one
             command at a time. A heredoc (python3 - <<'EOF'), a shell construct
             (for/if/while), a subshell or a pipeline into something unlisted
@@ -449,10 +472,21 @@ jobs:
             952 refusals across 42 runs, about 23 each, and the most refused
             names were python3, curl, cd, echo, cat and git, all of which are on
             the allowlist. So: one command per call; write a script to a file
-            with Write and then run it rather than piping it in; use python3 -c
-            or a real file instead of a heredoc; let Read, Glob and Grep do what
-            you would have done with a for loop. rm is denied on purpose, so
-            reach for git rm or leave the file.
+            with Write and then run it rather than piping it in; let Read, Glob
+            and Grep do what you would have done with a for loop. rm is denied
+            on purpose, so reach for git rm or leave the file.
+
+            AND NEVER `python3 -c "..."` WITH MORE THAN ONE STATEMENT IN IT.
+            The matcher reads the semicolons and newlines INSIDE the quotes as
+            a chain, so `python3 -c "import json; print(...)"` is refused
+            exactly like `a && b`. Measured over the week to 2026-10-09 it was
+            the single most refused shape, 9 of 46 runs each for the two
+            forms, and this prompt had been recommending it. Any Python longer
+            than one bare expression goes into out/tmp/<name>.py with the
+            Write tool, then `python3 out/tmp/<name>.py`, one command. The
+            same holds for `curl ... | wc` and `python3 ... | tail`: a pipe
+            into a second binary is a chain. Run the command alone and read
+            its output, or let the script count.
 
             Step 0 holds a priority ladder; work out which rung applies and do that.
             Reader submissions outrank everything. Something published being wrong
@@ -546,14 +580,15 @@ jobs:
             spent an hour each and saved nothing; this makes that impossible
             to repeat silently.
 
-            NEVER CLEAN UP, and never write multi-line code into a Bash call.
+            NEVER CLEAN UP, and never write code into a Bash call.
             `rm` is refused and pointless: this runner is thrown away when the
-            window ends. A Python snippet longer than one line is refused too,
-            because the tool list matches the whole command: Write it to
-            out/tmp/<name>.py with the Write tool and run
-            `python3 out/tmp/<name>.py`. Those two shapes were the most refused
-            commands of the week of 2026-09-20 (rm in 14 of 23 runs, multi-line
-            python in most of them).
+            window ends. A Python snippet with a semicolon or a second line is
+            refused too, inside `-c` quotes or not, because the tool list
+            matches the whole command: Write it to out/tmp/<name>.py with the
+            Write tool and run `python3 out/tmp/<name>.py`. Those two shapes
+            were the most refused commands of the week of 2026-09-20 (rm in 14
+            of 23 runs, inline python in most of them) and again of the week
+            to 2026-10-09.
 
             AND WRITE LOG.md ONLY AFTER `git log -1` SHOWS THE TREES COMMITTED.
             The 19:40 run of 2026-09-25 verified and wrote 23 trees, had its
@@ -604,10 +639,12 @@ jobs:
               were refused commands, one in eleven, and `for` appeared in 37 of
               those 39 runs. Each refusal costs the turn plus the retry.
               When you need a loop, a pipeline or several steps, do it in Python
-              instead: a one-line `python3 -c "..."`, or Write the code to
-              out/tmp/<name>.py and run `python3 out/tmp/<name>.py`. Not a
-              heredoc: it is multi-line and refused (this line recommended one
-              until 2026-10-03, contradicting the two paragraphs that forbid it).
+              instead: Write the code to out/tmp/<name>.py and run
+              `python3 out/tmp/<name>.py`. Not a heredoc and not
+              `python3 -c "a; b"`: both are read as a chain and refused (this
+              line recommended first the heredoc, until 2026-10-03, and then
+              the `-c` form, until 2026-10-09, each time the most refused shape
+              of its week).
               If a single uncompounded command is still refused, say which one in
               LOG.md. That is now a fact worth reporting rather than noise: since
               2026-09-19 the record names the whole shape, so a refusal with no
@@ -1150,6 +1187,37 @@ jobs:
           # claim system exists to prevent.
           git pull --rebase --autostash -q
           git push -q || echo "run health recorded locally, push refused"
+
+      # ONE DEPLOY PER WINDOW, dispatched here, since 2026-10-09. The run
+      # commits the smallest complete step and pushes each one (right, a
+      # cutoff must cost minutes and not items), and until today every one of
+      # those pushes started a deploy and a smoke test that the next push
+      # superseded: 58 of the last 100 push-triggered deploys were the run's,
+      # 40 of them cancelled in the queue, which read on the Actions page as a
+      # wall of failures and hid the three real ones (Hidde, 2026-10-09: "ik
+      # zie vooral veel fails"). deploy.yml and smoke.yml now ignore a push
+      # whose head commit is the run's (author claude[bot]); this step asks for
+      # one build that survives, in the 'manual' group that nothing cancels.
+      # Only when the window pushed something: a quiet window dispatches
+      # nothing, and the three-hourly schedule still covers a dispatch that
+      # fails to land. workflow_dispatch is the one event GITHUB_TOKEN may
+      # start (knock.yml relies on the same exception).
+      - name: Deploy the window's work
+        if: always() && steps.budget.outputs.start == 'yes'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_START_SHA: ${{ steps.start.outputs.sha }}
+        run: |
+          set +e
+          git fetch -q origin main
+          if [ "$(git rev-parse origin/main)" = "$RUN_START_SHA" ]; then
+            echo "nothing pushed this window; no deploy dispatched"
+            exit 0
+          fi
+          gh workflow run deploy.yml -R "${{ github.repository }}" --ref main \
+            && echo "deploy dispatched for the window's commits" \
+            || echo "dispatch refused; the three-hourly build will carry it"
 
       - name: Chain status
         if: always()
