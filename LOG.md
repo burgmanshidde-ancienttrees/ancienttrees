@@ -7,6 +7,7 @@
 **Rung:** 2 checked first: the newest red deploy (04:18) was superseded by later runs already in flight from other sessions, so nothing to fix. Then the enrichment lane (prepare.py named Singapore). The write shelf had nothing mergeable (the four "ready" trees are held by the rich/photo-or-pin rules).
 **Done:** one verify pass on 19 Singapore trees: NParks Heritage Trees Scheme record and height on all 19, girth at 1.3 m on 12, Botanic Gardens hours on 9. Applied with enrich.py, preflight 0 problems. Girth left out where the register measures at another height or the banyan figure is a stem mass. Visits last 7 days: 1566.
 **Stopped at:** Fort Canning, Pearl's Hill, Tiong Bahru and Chek Jawa access hours (NParks pages 404). No refused commands.
+**Then Lisbon:** second enrichment pass, ICNF Arvoredo de Interesse Público layer queried for the concelho: register id on 14 trees, girth and/or height on 12. Four trees have no matching register entry, no access hours found, no season (no striking species moment). Preflight 0 problems.
 
 ## 2026-10-09 (session) - The key under the year graph is a legend, in the same chip
 

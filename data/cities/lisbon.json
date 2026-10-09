@@ -232,7 +232,12 @@
       },
       "notes": "Photo removed 2026-08-02: the approved file (Chaimite no Jardim da Praca da Constituicao de 1976) is a photograph of an armoured car parked in the garden, not of the tipu tree. Caught by Hidde on the live site. Any replacement must show the tree itself, per the Cadiz standard. Pin corrected 2026-08-06: the stored coordinate was an address-level geocode of the garden, 244m from ICNF's own surveyed point for the same species, age and classification at Praca de S.Bento (processo KNJ1/347); no second Tipuana tipu found anywhere else in the register near Sao Bento, so treated as the same tree and the register's coordinate adopted, upgrading the pin from approximate to confirmed. Found while verifying an unrelated Lisbon cluster; flagged for a session decision rather than acted on blind, then adopted because the register point is the only tree-level GPS either source has ever given this entry.",
       "girth_cm": 420,
-      "how_to_recognise": "You can recognise it by its 4.20 metre trunk and, in late winter and spring, orange flowers marked with a reddish spot. It stands in the small garden beside the Palacio de Sao Bento."
+      "how_to_recognise": "You can recognise it by its 4.20 metre trunk and, in late winter and spring, orange flowers marked with a reddish spot. It stands in the small garden beside the Palacio de Sao Bento.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/347",
+        "url": null
+      },
+      "height_m": 14
     },
     {
       "id": "lis_006",
@@ -270,7 +275,11 @@
         ],
         "label": "June, when both trees erupt in flowers shaped like a rooster's crest"
       },
-      "how_to_recognise": "You can recognise them by two trunks on the garden's south side, twelve and fifteen metres tall, crowned in June with red rooster-crest flowers. They stand in Jardim da Luz, Carnide."
+      "how_to_recognise": "You can recognise them by two trunks on the garden's south side, twelve and fifteen metres tall, crowned in June with red rooster-crest flowers. They stand in Jardim da Luz, Carnide.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/275, KNJ1/277",
+        "url": null
+      }
     },
     {
       "id": "lis_007",
@@ -303,7 +312,12 @@
       "notes": "Pin and age corrected 2026-07-26: matched to Portugal's national registry of classified trees of public interest (ICNF, si.icnf.pt/sigservices.icnf.pt), feature id 283, processo KNJ1/405, a lodao-bastardo (Celtis australis) named at exactly this junction (\"Av. Berlim (cruzamento com Av Dr. Francisco Luis Gomes)\"), height 15.7m matching this story's \"sixteen metres\" closely, last measured 2015 at age 75 (roughly 86 today). The stored pin was about 900m off (a geocode of the general avenue, not the junction); the registry point is now used instead. The registry's age (75 in 2015) conflicts with the two original tourism-site sources' \"100 years\" claim; treated the government measurement as authoritative and corrected the story and age fields rather than flag the conflict, since one source is a direct physical survey and the others are undated blog estimates.",
       "location_precision": "confirmed",
       "girth_cm": 400,
-      "how_to_recognise": "You can recognise it by its broad, symmetrical 15.7 metre canopy on a 4.00 metre trunk, beside the scrap-metal sculpture Homem Sucata. It stands on the traffic island at Avenida de Berlim."
+      "how_to_recognise": "You can recognise it by its broad, symmetrical 15.7 metre canopy on a 4.00 metre trunk, beside the scrap-metal sculpture Homem Sucata. It stands on the traffic island at Avenida de Berlim.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/405",
+        "url": null
+      },
+      "height_m": 15.7
     },
     {
       "id": "lis_008",
@@ -340,7 +354,13 @@
       "curation_status": "flagged",
       "notes": "No source gives a precise planting date; 'over a century old' is the most specific figure available from the two independent write-ups found so far. An earlier candidate photo was checked and rejected: it was a general shot of the square with no confirmation the tree itself was in frame. A second candidate, File:Plantano na Praça Paiva Couceiro, Lisboa, 2024.jpg, was added at found_needs_check on 2026-07-29 on the strength of a paraphrased caption; that paraphrase was wrong. 2026-07-29 (later session): downloaded and personally viewed the file plus re-checked its Commons metadata directly via the API. Both the file's own title/description ('Plantano na Praça Paiva Couceiro', Portuguese for plane tree) and the photo itself (lobed plane-tree leaves, not ginkgo's fan shape) show a Platanus, not this tree's Ginkgo biloba. Reverted to missing. Also searched the Praça Paiva Couceiro Commons category (3 files, none a ginkgo) and several ginkgo/nogueira-do-japão query variants: no genuine match exists yet. Real dead end, not a tooling gap.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its fan-shaped leaves, turning a uniform bright yellow each November. It stands in Praca Paiva Couceiro, in the Penha de Franca neighbourhood."
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves, turning a uniform bright yellow each November. It stands in Praca Paiva Couceiro, in the Penha de Franca neighbourhood.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/271",
+        "url": null
+      },
+      "girth_cm": 185,
+      "height_m": 16
     },
     {
       "id": "lis_009",
@@ -380,7 +400,11 @@
         ],
         "label": "October, when the tree turns the garden pink"
       },
-      "how_to_recognise": "You can recognise it by its thorny green trunk and, every October, cotton-candy pink blooms filling the small garden. It stands beside the bust of Alfredo Keil in Praca da Alegria."
+      "how_to_recognise": "You can recognise it by its thorny green trunk and, every October, cotton-candy pink blooms filling the small garden. It stands beside the bust of Alfredo Keil in Praca da Alegria.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11066602C",
+        "url": null
+      }
     },
     {
       "id": "lis_010",
@@ -558,7 +582,12 @@
       "location_precision": "confirmed",
       "notes": "ICNF processo AIP11065607I, 'teixo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 3.80 m, height 14 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' independently lists Taxus baccata L. among the garden's árvores de interesse público under the same 1968 diploma. One unresolved point recorded rather than published: a search snippet claims two classified yews here, one from 1968 and one from 2000, but the register holds only this one teixo and the Wikipedia list names only one, so the story does not claim a pair. Pin is the register's own surveyed point and this is the only classified yew in the garden, hence confirmed.",
       "girth_cm": 380,
-      "how_to_recognise": "You can recognise it by the dark, dense needles, which nothing else on this slope has. It stands close to four metres round and fourteen metres tall, fifty paces from the glossy-leaved weeping fig."
+      "how_to_recognise": "You can recognise it by the dark, dense needles, which nothing else on this slope has. It stands close to four metres round and fourteen metres tall, fifty paces from the glossy-leaved weeping fig.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11065607I",
+        "url": null
+      },
+      "height_m": 14
     },
     {
       "id": "lis_015",
@@ -678,7 +707,12 @@
       "location_precision": "approximate",
       "notes": "FOLDED TWINS. Two ICNF processos, AIP11065947I (38.71779,-9.16539, girth 4.55 m, height 18.7 m) and AIP11065948I (38.71787,-9.16541, girth 4.90 m, height 15 m), both classified Despacho (extrato) n.º 8497/2018, D.R. 2.ª série n.º 169, 3 September 2018, standing about 10 m apart. Shipped as one entry per the register-twin rule; AIP11065948I is recorded as a lead. The pin is the midpoint of the two surveyed points and is therefore approximate by construction, no more than 10 m from either trunk. Second source: Wikipedia PT lists 'dois Metrosideros excelsa' among this garden's classified trees, and the Junta de Freguesia's own heritage page counts 'dois Metrosídero'. AGE: the register's age field is empty for all three classified trees here and no other source gives one, so the range is a wide bound from trunk size, not a measurement. Bloom timing May to June matches the corpus's two other Iberian pohutukawas (Cadiz, two-source confirmed; Porto), which is why best_time is set. ALIVE: photographed in this garden 14 February and 14 June 2024 by a Commons contributor. Photo viewed at full size before approval: huge multi-limbed tree filling the frame in daylight, aerial roots readable, second specimen visible behind it, trunk sits in the centre band so the card crop survives.",
       "girth_cm": 455,
-      "how_to_recognise": "You can recognise it by its low tangle of grey limbs spreading almost horizontal, curtained with aerial roots, one of a pair ten metres apart. It stands at the edge of Jardim Teofilo Braga."
+      "how_to_recognise": "You can recognise it by its low tangle of grey limbs spreading almost horizontal, curtained with aerial roots, one of a pair ten metres apart. It stands at the edge of Jardim Teofilo Braga.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11065947I",
+        "url": null
+      },
+      "height_m": 18.7
     },
     {
       "id": "lis_018",
@@ -711,7 +745,12 @@
       "location_precision": "confirmed",
       "notes": "ICNF processo KNJ1/400, 'tipuana', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 3.20 m, height 22.2 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Portal do Jardim's page on the garden names 'Tipuana tipu, Brachychiton e Phoenix dactylifera' as the garden's árvores classificadas de interesse público, an independent confirmation of species and place. Garden verified in an earlier pass as a municipal garden with permanent public access ('jardim de acesso público permanente', Wikipedia PT), distinct from the Jardim do Museu Nacional de Arte Antiga immediately next door, which is bound to museum hours and currently under renovation. Sources conflate the two constantly; the register's lugar for all three trees is Jardim 9 de Abril. Area 3,402 m2, of which 2,373 m2 green space. Named for 9 April 1918, the Battle of La Lys. Second tipuana in the Lisbon file after lis_005, a different classified tree 1.0 km away.",
       "girth_cm": 320,
-      "how_to_recognise": "You can recognise it by its wide, spreading crown, the only one like it in the garden, and the sticky drip that falls from it on warm days. It stands over most of the terrace, beside a much taller, branchless date palm."
+      "how_to_recognise": "You can recognise it by its wide, spreading crown, the only one like it in the garden, and the sticky drip that falls from it on warm days. It stands over most of the terrace, beside a much taller, branchless date palm.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/400",
+        "url": null
+      },
+      "height_m": 22.2
     },
     {
       "id": "lis_019",
@@ -744,7 +783,12 @@
       "location_precision": "confirmed",
       "notes": "ICNF processo KNJ1/402, 'tamareira', classified Aviso n.º 15 612/2001, D.R. 2.ª série. Register figures: girth 1.62 m, height 26.7 m, age 133 at the 2015 survey, so about 144 in 2026. Second source: Correio da Manhã's data feature on Lisbon's trees, which cites the Câmara Municipal de Lisboa calling this the tallest tree in the city at 38 m, taller than the 34 m Arco da Rua Augusta; Portal do Jardim independently confirms Phoenix dactylifera as one of the garden's three classified trees. HEIGHT CONFLICT, flagged and stated in the story rather than resolved: 38 m (municipality) versus 26.7 m (national register, 2015). Both are published claims, no source reconciles them, and the entry does not pick a winner. The 'tallest tree in Lisbon' claim is presented as the municipality's, not as our own, per hard rule 8. Neither claim is repeated as a superlative anywhere else in the corpus.",
       "girth_cm": 162,
-      "how_to_recognise": "You can recognise it by its bare grey trunk, a single column with no branches until the fronds burst out near the top, far taller than anything else here. It stands closer to the river parapet, beside the spreading tipuana."
+      "how_to_recognise": "You can recognise it by its bare grey trunk, a single column with no branches until the fronds burst out near the top, far taller than anything else here. It stands closer to the river parapet, beside the spreading tipuana.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/402",
+        "url": null
+      },
+      "height_m": 26.7
     },
     {
       "id": "lis_020",
@@ -851,7 +895,12 @@
         "status": "missing"
       },
       "girth_cm": 312,
-      "how_to_recognise": "You can recognise it by its low, dense evergreen crown on a thick 3.12 metre trunk, the heavier of two holm oaks fifty metres apart. It stands in Parque Bensaude, Estrada da Luz."
+      "how_to_recognise": "You can recognise it by its low, dense evergreen crown on a thick 3.12 metre trunk, the heavier of two holm oaks fifty metres apart. It stands in Parque Bensaude, Estrada da Luz.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11063960I",
+        "url": null
+      },
+      "height_m": 21
     },
     {
       "id": "lis_023",
@@ -883,7 +932,12 @@
         "status": "missing"
       },
       "girth_cm": 172,
-      "how_to_recognise": "You can recognise it by its 1.72 metre trunk, slim enough to put your arms around, the shorter of two holm oaks classified the same day. It stands in Parque Bensaude, near its larger twin."
+      "how_to_recognise": "You can recognise it by its 1.72 metre trunk, slim enough to put your arms around, the shorter of two holm oaks classified the same day. It stands in Parque Bensaude, near its larger twin.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11063961I",
+        "url": null
+      },
+      "height_m": 17
     },
     {
       "id": "lis_024",
@@ -922,7 +976,12 @@
         "status": "missing"
       },
       "girth_cm": 145,
-      "how_to_recognise": "You can recognise it by its small size, just seven metres tall, and a crown that turns scarlet with flowers in high summer. It stands in Parque Bensaude, near the field maple."
+      "how_to_recognise": "You can recognise it by its small size, just seven metres tall, and a crown that turns scarlet with flowers in high summer. It stands in Parque Bensaude, near the field maple.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11063962I",
+        "url": null
+      },
+      "height_m": 7
     },
     {
       "id": "lis_025",
@@ -953,7 +1012,12 @@
         "status": "missing"
       },
       "girth_cm": 350,
-      "how_to_recognise": "You can recognise it by its unusually thick 3.50 metre trunk for a field maple, with small five-lobed leaves and blunt tips. It stands at the western end of Parque Bensaude."
+      "how_to_recognise": "You can recognise it by its unusually thick 3.50 metre trunk for a field maple, with small five-lobed leaves and blunt tips. It stands at the western end of Parque Bensaude.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11063963I",
+        "url": null
+      },
+      "height_m": 13.5
     },
     {
       "id": "lis_026",
@@ -984,7 +1048,12 @@
         "status": "missing"
       },
       "girth_cm": 158,
-      "how_to_recognise": "You can recognise it by its white, spongy bark peeling in papery sheets on a tall, thin 18 metre tree. It stands in Jardim Constantino, a few steps from the garden's wide Moreton Bay fig."
+      "how_to_recognise": "You can recognise it by its white, spongy bark peeling in papery sheets on a tall, thin 18 metre tree. It stands in Jardim Constantino, a few steps from the garden's wide Moreton Bay fig.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11065641I",
+        "url": null
+      },
+      "height_m": 18
     },
     {
       "id": "lis_027",

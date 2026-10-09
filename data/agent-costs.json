@@ -10192,6 +10192,13 @@
    "tokens": 150028,
    "trees": 0,
    "note": "enrichment: register record + height on 19 trees, girth on 12, Gardens hours on 9; no new trees"
+  },
+  {
+   "target": "lisbon",
+   "kind": "enrich",
+   "tokens": 151544,
+   "trees": 0,
+   "note": "enrichment: ICNF AIP register id on 14 trees, girth/height on 12; no new trees"
   }
  ]
 }
