@@ -103,12 +103,22 @@ struct SignInSheet: View {
         // answer you owe rather than a thing you close.
         .overlay(alignment: .topTrailing) {
             Button { dismiss() } label: {
+                // APPLE'S CLOSE BUTTON: a small grey circle with the cross in
+                // it, inset from the corner (Hidde, 2026-10-09: "het kruisje
+                // van de login overlay staat raar"). A bare glyph flush in the
+                // corner of a floating card read as a stray mark rather than
+                // a control. 30 points drawn, 44 to hit.
                 Image(systemName: "xmark")
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.system(size: 13, weight: .bold))
                     .foregroundStyle(.secondary)
+                    .frame(width: 30, height: 30)
+                    .background(Brand.surfaceMuted, in: .circle)
                     .frame(width: 44, height: 44)
                     .contentShape(.rect)
             }
+            .buttonStyle(.plain)
+            .padding(.top, 10)
+            .padding(.trailing, 12)
             .accessibilityLabel("Close")
         }
         // A CLOSED SHEET LEAVES NOTHING ARMED. Swiping this away is an answer,
