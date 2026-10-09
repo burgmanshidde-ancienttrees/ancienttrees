@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Three outreach replies answered; Brighton's Preston Twin corrected from one of them
+
+**Why:** Hidde: "weve got 3 new responses can you draft a response, and some content was suggested". Replies today from Kerry Pickett (Brighton, with three facts about the Preston Twins), Lenny van Valkenhoef of IVN Amersfoort (forwarded our mail to their tree specialist) and Tony Craven of Friends of Alexandra Park, Manchester (will go looking for the variegated green ash). A fourth, St Cuthbert's Church, is an autoresponder and gets nothing.
+**Checked before writing (the bridge-claim rule):** (1) Peter Bourne named them the Preston Twins: CONFIRMED by his own 2019 Arboricultural Association piece, added to bhm_001 with the source. (2) Planted while the land was the Bishop of Chichester's: NOT ADDED. Preston Manor passed from the bishops to the Crown by 1561 and the Shirleys held it by 1613, so the c.1613 planting falls outside their time; the reply says so and asks for her source. (3) First UK council to vaccinate elms: NOT ADDED as "first". DutchTrig was first used in the UK at Seaford in 2016 and the council's own 2023 release makes no such claim. The programme itself (200 elms in 2023, around 1,400 in 2025) is on the page, sourced to the council and Brighton & Hove News. Story at 247 words, preflight 0 problems.
+**Drafted, awaiting his word:** `drafts/batches/replies-2026-10-09.json` (status draft, mailcheck clean, threaded on their Message-IDs). Kerry's reply carries the Brighton ambassador ask, since named ambassadors have all come from outreach threads; cut that paragraph if he would rather not. Lenny's and Tony's are short thanks in their threads, Tony's with the one ask for a photo and where the ash stands (our pin is approximate and the tree has no photograph).
+**Also seen:** the red scheduled deploy of 10:43 was qa's 133-urls-against-80 guard, already diagnosed and fixed by the session above; the fixed build was in progress while this was written.
+
 ## 2026-10-09 (session) - Deploys were stuck: the returning pages now fit the deploy guard
 
 **Why:** no deploy had finished since 01:16 UTC. Every push cancelled the one before it, and the two that ran to the end failed qa's index-growth guard: 133 new indexable urls against the live sitemap, limit 80. The recovery merge's RETURN_PER_BUILD let 40 finished pages back into the index per build, counted in TREES, and the 40 brought 25 Portuguese, Italian and Dutch copies with them; the day's new trees and places had already queued 68 urls while the deploys were dying. A guard the next deploy cannot pass is a site that never deploys again, because the backlog only grows.
