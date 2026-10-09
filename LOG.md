@@ -8,6 +8,8 @@
 
 **What changed:** `scripts/bing_search.py` reads GetRankAndTrafficStats and GetQueryStats from the Bing Webmaster API; `bing_section()` in daily_digest.py prints a per-day clicks and impressions table with the top Bing queries, as its own block under the Google table; data-digest.yml passes `BING_WEBMASTER_KEY`. Without the secret the block prints nothing. Parsing tested offline; the live table arrives with the first digest after the secret is set.
 
+**Also fixed, found by the pre-push source checks:** `crosscheck.py` compared bare feed keys against data/cross-surface-allow.json entries, so an exception written as `tree.register` (the dotted name the check prints in its own finding, which is how the 08:xx session wrote it) never matched and the gate stayed red. It accepts both forms now; crosscheck is green on main.
+
 **FOR HIDDE:** the key was pasted into chat, so generate a fresh one in Bing Webmaster Tools (gear, API access, API Key) and store it as the `BING_WEBMASTER_KEY` repository secret in GitHub; this container can reach neither GitHub's secrets endpoint nor Bing's API, so it cannot be done or tested from here. In Bing's Sitemaps screen, delete the errored `sitemap-recrawl.xml.` row (submitted with a trailing full stop on 10-01; that file is for Google only).
 
 ## 2026-10-09 (night run) - Singapore enrichment pass, no new trees
