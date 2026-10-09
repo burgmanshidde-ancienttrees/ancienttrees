@@ -2276,6 +2276,9 @@ def night_shift(today):
     unlogged = sum(1 for r in rows if r.get("logged") is False)
     if unlogged:
         note.append("%d wrote nothing to LOG.md" % unlogged)
+    live = deploy_standing()
+    if live:
+        note.append(live)
     if note:
         out.append("")
         out.append("- " + "; ".join(note) + ".")
@@ -2288,6 +2291,49 @@ def night_shift(today):
         for line in made:
             out.append("- " + line)
     return "\n".join(out)
+
+
+def deploy_standing():
+    """One clause for the night-shift note: when a build last went LIVE.
+
+    Hidde, 2026-10-09, reading the Actions page: "ik zie vooral veel fails".
+    Most of what he saw was queued deploys superseding each other, which cost
+    nothing; underneath them the site had not deployed for seven hours because
+    qa's burst guard refused every build, and no table said so. The night
+    table counts what the machine committed; this clause says whether any of
+    it reached a reader. Reads the GitHub API with the digest's own token and
+    prints nothing without it, like fetch_machine.
+    """
+    tok = os.environ.get("GITHUB_TOKEN")
+    repo = os.environ.get("GITHUB_REPOSITORY", "burgmanshidde-ancienttrees/ancienttrees")
+    if not tok:
+        return None
+    req = urllib.request.Request(
+        "https://api.github.com/repos/%s/actions/workflows/deploy.yml/runs?per_page=40&status=completed" % repo,
+        headers={"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            runs = json.load(r).get("workflow_runs", [])
+    except Exception:
+        return None
+    now = datetime.datetime.now(datetime.timezone.utc)
+    failed_since = 0
+    for run in runs:
+        c = run.get("conclusion")
+        if c == "success":
+            try:
+                at = datetime.datetime.fromisoformat(
+                    run["updated_at"].replace("Z", "+00:00"))
+            except Exception:
+                return None
+            hours = (now - at).total_seconds() / 3600
+            tail = (", %d failed since" % failed_since) if failed_since else ""
+            return "last build that went live: %.0fh ago%s" % (hours, tail)
+        if c == "failure":
+            failed_since += 1
+    if runs:
+        return "no build has gone live in the last %d runs" % len(runs)
+    return None
 
 
 def city_names(run):

@@ -29,6 +29,11 @@ concurrency:
 
 jobs:
   smoke:
+    # Not on the night run's own pushes (2026-10-09, same reason as
+    # deploy.yml): a run pushes ten small steps a window and every one queued
+    # a smoke run the next push cancelled. The two scheduled runs a day and a
+    # person's or a session's push still run it.
+    if: github.event_name != 'push' || github.event.head_commit.author.name != 'claude[bot]'
     runs-on: ubuntu-latest
     # 30 since 2026-09-24: the build this job runs takes 11 to 17 minutes at
     # 16,000 pages, so a 15 minute ceiling cancelled nearly every run that

@@ -54,6 +54,15 @@ concurrency:
 
 jobs:
   build:
+    # THE NIGHT RUN'S OWN PUSHES DO NOT BUILD (2026-10-09). A run commits and
+    # pushes every small step, ten or more a window, and each push queued a
+    # build the next push superseded: 58 of the last 100 push-triggered
+    # deploys were the run's and 40 of those were cancelled in the queue. The
+    # cancellations cost nothing and hid the real failures among them. The run
+    # now dispatches ONE build at the end of its window (nightly.yml, "Deploy
+    # the window's work"), and the three-hourly schedule still runs. A push by
+    # a person or a session (author Hidde or Claude) builds at once, as before.
+    if: github.event_name != 'push' || github.event.head_commit.author.name != 'claude[bot]'
     runs-on: ubuntu-latest
     env:
       ASTRO_TELEMETRY_DISABLED: "1"

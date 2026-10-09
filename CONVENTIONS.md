@@ -806,6 +806,17 @@ The first pass had the icon at 104px (nearly double), buttons at 56, gaps at
 10, and a centred card instead of a sheet. Every one of those was a guess
 dressed as a decision, and the fix was arithmetic rather than taste.
 
+**The app's sheet and the blank band at its foot (2026-10-09, after Hidde
+had called the vertical alignment off three times).** A SwiftUI `.height`
+detent is the height ABOVE the bottom safe area; the system adds the home
+indicator's 34pt to the sheet and lays it out empty under the content, so
+30pt sat above the icon and 46 under the fine print whatever the padding
+said. Apple's own short sheets (the share sheet, action sheets) size to
+their content on the floating card of iOS 26 and keep the indicator's room
+on the edge-to-edge sheet of iOS 18. Ours does the same now: on iOS 26 the
+detent is the content minus that inset and the content fills the card, on
+iOS 18 nothing is subtracted. `Screens/SignIn.swift`, measured on both.
+
 **AND THE SHEET'S ACTUAL SUBJECT IS THE APP, which the first two passes
 missed.** Their headline is "AllTrails werkt beter in de app" and their loud
 button is "Ga verder in de app"; the Google button and "Meer opties" are what
@@ -1990,6 +2001,18 @@ Apple disables it for TestFlight builds. A development build from a Mac
 shows it every time with no throttle, and the App Store throttles it to
 3 a year on top of our own cap. So "I saw nothing in TestFlight" is the
 expected behaviour and never evidence of a bug here.
+
+**How to SEE our own ask again once a phone has already asked (Hidde,
+2026-10-09: "I haven't been able to see the new review flow because I
+already reviewed the app").** The fired set lives in UserDefaults per
+install, so an installed phone that has asked never asks again by tapping.
+On a device: delete the app, reinstall, open three DIFFERENT tree pages and
+close the third; our alert appears. After Yes, Apple's dialog follows the
+rules above (development build always, TestFlight never, App Store when
+Apple decides; Apple's page says nothing about a person who has already
+rated, read 2026-10-09). On a simulator or in the sweep: `-review-ask`
+launches straight into the alert (`scripts/appsweep.py` screen
+"review-ask").
 
 Read 2026-09-03:
 - https://developer.apple.com/documentation/storekit/requesting-app-store-reviews

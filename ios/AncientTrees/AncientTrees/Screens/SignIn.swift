@@ -53,6 +53,19 @@ struct SignInSheet: View {
     private let brand = Brand.moss
     private let brandFill = Brand.canopy
 
+    /// iOS 26 draws a sheet as a floating card; iOS 18 runs it to the edge.
+    /// See the comment on FlushBottomOnFloatingSheet below.
+    private static var floating: Bool {
+        if #available(iOS 26, *) { return true } else { return false }
+    }
+    /// The home indicator's room, 34 on most phones and 0 on the SE: the same
+    /// reading TabBar.bottomGap takes.
+    private static var bottomInset: CGFloat {
+        UIApplication.shared.connectedScenes
+            .compactMap { ($0 as? UIWindowScene)?.keyWindow?.safeAreaInsets.bottom }
+            .first ?? 0
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 18) {
@@ -64,9 +77,24 @@ struct SignInSheet: View {
             }
             .padding(.horizontal, 22)
             .padding(.top, 28)
-            .padding(.bottom, 16)
+            .padding(.bottom, Self.floating ? 28 : 16)
             .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { askHeight = max(320, $0) }
         }
+        // THE BLANK BAND UNDER THE FINE PRINT, which Hidde read as the sheet
+        // being out of true three times (2026-10-01 "the vertical alignments
+        // once again feels off", 2026-10-08, 2026-10-09). Measured on the 17
+        // Pro: 30pt above the icon, 46pt below the last line. A .height detent
+        // is the height ABOVE the bottom safe area: the system adds the
+        // home-indicator inset (34pt) to the sheet on top of it, and whatever
+        // we pad, that inset is laid out empty under our content. Ignoring the
+        // safe area alone does not help, it only lets the content reach into
+        // a band the sheet is still too tall for (tried first, measured 63pt
+        // of blank). So on iOS 26, where the sheet is a floating card whose
+        // bottom edge already sits above the indicator, the detent is the
+        // content MINUS that inset and the content fills the card: 28 above
+        // the icon, 28 below the last line. On iOS 18 the sheet is flush to
+        // the screen edge and the inset is the indicator's own room, kept.
+        .modifier(FlushBottomOnFloatingSheet())
         // A cross in the corner rather than a "Not now" at the bottom (Hidde,
         // 2026-08-24). A sheet is dismissed by its corner everywhere, and a
         // worded refusal at the end of the offer makes declining feel like an
@@ -92,7 +120,7 @@ struct SignInSheet: View {
         // left nearly half the sheet empty under the two buttons, which reads
         // as a screen that failed to load rather than a short one. The height
         // follows what is actually on it.
-        .presentationDetents([.height(askHeight), .large])
+        .presentationDetents([.height(askHeight - (Self.floating ? Self.bottomInset : 0)), .large])
         // SOLID, not the system's glass: on a glass sheet the page behind
         // showed through the email button as a green blur (2026-10-01).
         .presentationBackground(Color(.systemBackground))
@@ -115,7 +143,10 @@ struct SignInSheet: View {
         VStack(alignment: .leading, spacing: 24) {
             header
 
-            VStack(spacing: 12) {
+            // 8 between the buttons, Apple's minimum, after 12 read as three
+            // separate offers rather than one stack (Hidde, 2026-10-09: "the
+            // buttons should be closer to each other vertically").
+            VStack(spacing: 8) {
                 SignInWithAppleButton(.continue) { request in
                     rawNonce = Self.nonce()
                     // The name as well, which Apple gives ONCE, on the first
@@ -297,10 +328,19 @@ struct SignInSheet: View {
 
     // MARK: - shared pieces
 
+    /// No glyph above the headline (Hidde, 2026-10-09: "maybe the tree should
+    /// be next to the title or just gone ... it feels a mess"). The reference
+    /// this sheet is read off, AllTrails' and Airbnb's, is a title, a line and
+    /// the buttons; the oak mark was a leftover from an earlier shape and sat
+    /// alone at the top left with nothing to belong to.
+    /// CENTRED, like the website's sheet (the measured AllTrails reference in
+    /// CONVENTIONS.md) and like the button labels under it. Leading-aligned,
+    /// the headline sat beside the close cross and every button label was
+    /// centred, so the eye zigzagged (Hidde, 2026-10-09: "vertically something
+    /// feels off hierarchy wise between header, subheader, buttons"). The
+    /// extra side inset keeps a long headline out from under the cross.
     private var header: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            SpeciesMark(species: "Pedunculate Oak", color: brand)
-                .frame(width: 52, height: 52)
+        VStack(spacing: 8) {
             // The brand's display face and ink, as every other heading in the
             // app and the website's dialog (Hidde, 2026-10-08: "the design of
             // the overlay to login is a bit off"). It was the system bold in
@@ -309,15 +349,18 @@ struct SignInSheet: View {
             Text(reason.headline)
                 .font(.brand(26, .bold, relativeTo: .title2))
                 .foregroundStyle(Brand.ink)
-                .multilineTextAlignment(.leading)
+                .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
             Text(reason.detail)
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                .multilineTextAlignment(.leading)
+                .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 2)
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 22)
+        .padding(.top, 6)
+        // 28 to the first button (the website's number), 24 stays under them.
+        .padding(.bottom, 4)
     }
 
     @ViewBuilder private var problemLine: some View {
@@ -360,5 +403,19 @@ struct SignInSheet: View {
 
     private static func sha256(_ input: String) -> String {
         SHA256.hash(data: Data(input.utf8)).map { String(format: "%02x", $0) }.joined()
+    }
+}
+
+
+/// See the comment at its use in SignInSheet.body: on the floating sheet of
+/// iOS 26 the bottom safe-area inset is empty space, on the edge-to-edge
+/// sheet of iOS 18 it is where the home indicator lives.
+private struct FlushBottomOnFloatingSheet: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(iOS 26, *) {
+            content.ignoresSafeArea(.container, edges: .bottom)
+        } else {
+            content
+        }
     }
 }

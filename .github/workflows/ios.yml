@@ -213,17 +213,41 @@ jobs:
           # each and then "did not have a process ID": the first run whose
           # real tests all passed (2026-08-21) went red on that alone. Serial
           # costs a few minutes and measures the app instead of the runner.
-          xcodebuild test \
-            -project ios/AncientTrees/AncientTrees.xcodeproj \
-            -scheme AncientTrees \
-            -destination "id=${{ steps.sim.outputs.udid }}" \
-            -derivedDataPath /tmp/dd \
-            -retry-tests-on-failure -test-iterations 2 \
-            -skip-testing:AncientTreesUITests/SweepFrames \
-            -skip-testing:AncientTreesUITests/RefusedWalk \
-            -parallel-testing-enabled NO \
-            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
-            > /tmp/xcodebuild.log 2>&1 || true
+          run_tests() {
+            xcodebuild test \
+              -project ios/AncientTrees/AncientTrees.xcodeproj \
+              -scheme AncientTrees \
+              -destination "id=${{ steps.sim.outputs.udid }}" \
+              -derivedDataPath /tmp/dd \
+              -retry-tests-on-failure -test-iterations 2 \
+              -skip-testing:AncientTreesUITests/SweepFrames \
+              -skip-testing:AncientTreesUITests/RefusedWalk \
+              -parallel-testing-enabled NO \
+              CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+              > /tmp/xcodebuild.log 2>&1 || true
+          }
+          run_tests
+          # A LOST SIMULATOR IS NOT A FAILED TEST (2026-10-09). The 04:40 run
+          # that morning went red on "Lost connection to the application
+          # (pid 27618) ... Couldn't communicate with a helper application",
+          # thirty minutes after the same code had passed, and the per-test
+          # retry above does not help: XCTest cannot re-run a test whose
+          # process it lost. So when EVERY failure line is the runner losing
+          # the app rather than an assertion, the whole suite runs once more
+          # and the second verdict stands. A real assertion failure, even one
+          # beside an infra line, is never re-run: the log is kept and the
+          # red is honest.
+          # Counted with -c rather than tested with -q: BSD grep (this is a
+          # macOS runner) returns 1 from `grep -qv` even when a line survives
+          # the -v, which would re-run a suite with a real failure in it.
+          INFRA='Lost connection to the application|Failed to get matching snapshots|did not have a process ID|Unable to boot|Timed out waiting for'
+          FAILS=$(grep -cE ': error: -\[' /tmp/xcodebuild.log || true)
+          REAL=$(grep -E ': error: -\[' /tmp/xcodebuild.log | grep -cvE "$INFRA" || true)
+          if [ "${FAILS:-0}" -gt 0 ] && [ "${REAL:-0}" -eq 0 ]; then
+            echo "::warning::Every failure was the simulator losing the app, not an assertion; running the suite once more."
+            cp /tmp/xcodebuild.log /tmp/xcodebuild-first.log
+            run_tests
+          fi
           grep -E "Test case|error:|warning: .*deprecat|\*\* (TEST|BUILD)" /tmp/xcodebuild.log || true
           # SAY WHICH KIND OF RED THIS IS.
           #
