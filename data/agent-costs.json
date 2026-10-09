@@ -10268,6 +10268,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "brussels",
+   "kind": "enrich",
+   "tokens": 159971,
+   "trees": 15,
+   "note": "heritage.brussels record URLs, girths and heights on 15 trees"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
