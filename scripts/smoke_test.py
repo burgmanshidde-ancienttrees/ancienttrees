@@ -417,6 +417,20 @@ f.addEventListener('load', function () {
   setTimeout(function () {
     var out = {};
     out.signedInAfterLoad = d.documentElement.dataset.signedIn === '1';
+    // THE PAINTER ITSELF (2026-10-09). The bar's "Sign in"/avatar swap is
+    // CSS on html[data-signed-in], and the only thing that sets that flag on
+    // an ordinary page load is window.atPaintNav. It threw a ReferenceError
+    // from the day it was written (2026-09-18), on a word defined in another
+    // script's function wrapper, so the flag was never set and every page
+    // said Sign in to a signed-in reader (Hidde, 2026-10-09: "once logged in
+    // the menu still tells me to log in"). Called directly here, because by
+    // the time this runs the server has already refused the planted token
+    // and cleared the flag, so signedInAfterLoad cannot see the painter.
+    out.painterPaints = false; out.painterClears = false;
+    try {
+      w.atPaintNav(true);  out.painterPaints = d.documentElement.dataset.signedIn === '1';
+      w.atPaintNav(false); out.painterClears = d.documentElement.dataset.signedIn === undefined;
+    } catch (e) { out.painterError = String(e); }
     var b = d.querySelector('.save-btn');
     out.hasHeart = Boolean(b);
     if (b) b.click();
@@ -655,6 +669,11 @@ def stale_session_is_refused(chrome, base, page):
         fails.append("stale session: a refused save did not open the sign-in dialog (%s)" % page)
     if r.get("sessionLeft"):
         fails.append("stale session: the dead session is still in localStorage after the server refused it (%s)" % page)
+    if not r.get("painterPaints"):
+        fails.append("stale session: window.atPaintNav(true) does not set html[data-signed-in], so the bar says Sign in to a signed-in reader (%s%s)"
+                     % (page, (": " + r["painterError"]) if r.get("painterError") else ""))
+    elif not r.get("painterClears"):
+        fails.append("stale session: window.atPaintNav(false) does not clear html[data-signed-in] (%s)" % page)
     return fails
 
 

@@ -416,7 +416,7 @@ document.addEventListener("click", function (e) {
 </script>
 <slot name="scripts" />
 {ANALYTICS_TOKEN && (
-  <script define:vars={{ token: ANALYTICS_TOKEN, accountWord: t.account }}>
+  <script define:vars={{ token: ANALYTICS_TOKEN }}>
     (function () {
       try {
         if (location.hostname !== "ancienttrees.app") { return; }
@@ -475,8 +475,18 @@ document.addEventListener('click', function(e) {
 
     is:inline, because an Astro <script> without it is bundled into a module
     file and fetched separately. This code was inline before the move and the
-    move is about WHEN it ships, not how. */}
-<script is:inline>
+    move is about WHEN it ships, not how.
+
+    define:vars (which implies is:inline) carries the page's own word for
+    "Account" INTO THIS SCRIPT. Until 2026-10-09 that word was defined on the
+    analytics script above and read from here, and Astro wraps a define:vars
+    script in a function, so the painter threw "accountWord is not defined"
+    inside its own try/catch, never set html[data-signed-in], and every page
+    load said Sign in to a signed-in reader (Hidde: "once logged in the menu
+    still tells me to log in"). The desktop bar hid it until 2026-10-06, when
+    the avatar started depending on the flag. A variable a script needs is
+    declared on that script; the smoke test now calls the painter directly. */}
+<script define:vars={{ accountWord: t.account }}>
 // The nav must know who you are (2026-08-14 consistency pass): AllTrails
 // swaps Log in for your avatar; ours swaps the word, which is the honest
 // minimum for a site without profile pictures. Session shape is the one
