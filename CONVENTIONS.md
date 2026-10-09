@@ -2865,6 +2865,31 @@ not, and in the tree page's season block instead of "AT ITS BEST NOW". The key
 is decided on the server and travels as `season_key`; the app draws the same
 chip on its card photograph.
 
+## The key under a season graph is a legend (2026-10-09)
+
+Hidde, on the tree page's year graph wearing "In fruit" in its header, a
+fruit badge on the peak, and "Flowers" and "Autumn colour" in a plain third
+style underneath: "can you please make the tags consistent under the graphs
+as well, and only put them there if they are part of the graph."
+
+**What a legend is, everywhere:** the swatches match the marks' own colour and
+style so a reader can pair them (Quanthub, "Designing charts: chart legends"),
+the entries follow the chart's order, every visual element on the plot is
+explained and nothing that is not on it (Emarsys design system, legend
+guidelines; PatternFly, charts/legends). Apple's charting guidance adds that a
+mark and its label keep one colour across every chart that shows the data.
+Apple Weather and Health label marks directly and print no legend entry for a
+series that is not drawn.
+
+**What we do:** under the year graph, one chip per badge actually drawn on the
+curve (the best-time peak and the striking moments), in the graph's own
+left-to-right order, never a kind twice. The chip is the same tinted pill the
+header and the cards wear (`seasonChipHtml`), so "In fruit" reads the same in
+the header, in the legend and on a card. A moment the species records but the
+curve does not mark (a flowering nobody notices) gets no chip. The sentence
+under the legend still says what the peak is; the chip names the icon. The
+app draws no year graph, so this is web only (its chip is the same one).
+
 ## More than one label on a card: one tag row (2026-10-04)
 
 Hidde, on a card wearing a season chip, a heavy "Ticked off" bar and a heart:

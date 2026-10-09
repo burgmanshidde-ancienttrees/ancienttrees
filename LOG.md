@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - The key under the year graph is a legend, in the same chip
+
+**Why:** Hidde, on the City Hall Maple's year graph: "make the tags consistent under the graphs as well, and only put them there if they are part of the graph." The key under the curve listed every moment the species records ("Flowers", "Autumn colour") in a plain style of its own, while the curve marked only the fruit peak, and the header wore "In fruit" as a tinted chip. Three styles for one moment, and the one moment on the graph was the one missing from the key.
+**Benchmark (CONVENTIONS.md 2026-10-09):** a legend's swatches match the marks' own colour and glyph, follow the chart's order, and explain what is on the plot and nothing else.
+**Done:** `legendChips()` in site/src/lib/phenology.ts prints one chip per badge actually drawn on the curve (the best-time peak and the striking moments), left to right, never a kind twice, using `seasonChipHtml`, the same chip the header and the cards wear. The no-phenology curve uses it too, so the old `.sc-chip` and `.ph-key` styles are gone from style.css. Checked on a before/after mock at 375px and desktop. The app draws no year graph, so this is web only; its chip is already the same one.
+**Notes:** the "NOW" label and the peak badge touch when the peak sits in the current month (visible on this maple); pre-existing, not touched.
+
 ## 2026-10-09 (session) - a reader whose tree goes live is congratulated by mail
 
 **Changed:** `scripts/tree_approved.py --send` runs on every knock beside the ambassador mails: the day a tree a reader ADDED (a sighting that entered data/leads/_sightings.json as a new tree) fronts a published page and appears in the live feed, they get one mail with the link, signed Ancient Trees. Once per tree (data/tree-approved-mailed.json, ids only), never to our own accounts, through mailcheck and the do-not-contact list. A photograph added to a tree we already had still sends nothing (the 2026-10-02 ruling stands). Every reader-added tree live today is one of ours, so nobody is mailed retroactively. Gamification for it is parked until Hidde asks. The one link nothing enforced (a run publishing the reader's tree without their photograph, which would silently skip both the app's Approved and the mail) is now `check_a_readers_new_tree_carries_their_photograph()` in preflight, tested red and green.

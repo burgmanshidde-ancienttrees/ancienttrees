@@ -157,7 +157,7 @@ export function seasonCurve(tree: Tree): string {
     `<text x="${nowX.toFixed(1)}" y="${(padT - 10).toFixed(1)}" class="sc-nowlabel">now</text>`;
 
   const kind = seasonKind(bt);
-  const chip = kind ? `<span class="sc-chip">${KIND_ICONS[kind]}${esc(kind)}</span>` : "";
+  const keys = kind ? legendChips([[peakI + 1, kind]]) : "";
   let peakBadge = "";
   if (kind) {
     const bx = (peakX / W) * 100;
@@ -182,7 +182,7 @@ export function seasonCurve(tree: Tree): string {
     ${ticks}
   </svg>
   </div>
-  <p class="season-legend">${chip}</p>
+  ${keys ? `<p class="ph-keys">${keys}</p>` : ""}
   <p class="season-label">${esc(bt.label)}</p>
 </figure>`;
 }
@@ -238,6 +238,19 @@ export function seasonChipHtml(key: string, U?: { seasonChip: Record<string, str
   // best-now-inline stays on the class list: qa.py's language-parity check
   // looks for that name, and renaming it would hide a gap rather than close it.
   return `<span class="best-now-inline sn-chip sn-${key}${onPhoto ? " sn-on-photo" : ""}">${icon}${esc(label)}</span>`;
+}
+
+/** The legend under a season graph: one chip per badge drawn on the curve,
+ *  in the curve's own order, never a kind twice, never a moment the curve
+ *  does not mark. Same chip as the header and the cards (seasonChipHtml). */
+export function legendChips(marked: [number, string][]): string {
+  const seen = new Set<string>();
+  return [...marked]
+    .sort((a, b) => a[0] - b[0])
+    .map(([, kind]) => CHIP_KEY[kind])
+    .filter((key) => key && !seen.has(key) && seen.add(key))
+    .map((key) => seasonChipHtml(key))
+    .join("");
 }
 
 // ---------------------------------------------------------- species curves
@@ -478,25 +491,33 @@ export function seasonBlock(tree: Tree, lat: number): string {
   }
 
   const badges: string[] = [];
+  const marked: [number, string][] = [];
   let peakDot = "";
   const kind = hasBt ? seasonKind(bt) : "";
   if (peakM) {
     const [px, py] = pts[peakM - 1];
     peakDot = `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="4.5" class="sc-peak"/>`;
-    if (kind) badges.push(badge(peakM, kind));
+    if (kind) {
+      badges.push(badge(peakM, kind));
+      marked.push([peakM, kind]);
+    }
   }
   for (const mo of moments) {
     if ((mo.word === "striking" || mo.word === "worth the trip") && mo.month !== peakM && mo.month !== null) {
       badges.push(badge(mo.month, mo.kind));
+      marked.push([mo.month, mo.kind]);
     }
   }
 
-  // A key that says what the best-time line under it already says is printed
-  // once, in the line (Hidde, 2026-10-04: the autumn sentence stood twice).
-  const said = hasBt ? (bt.label ?? "").toLowerCase() : "";
-  const keys = moments
-    .filter((mo) => !(mo.label && said.includes(mo.label.toLowerCase())))
-    .map((mo) => `<span class="ph-key">${KIND_ICONS[mo.kind]}${esc(mo.label || mo.kind.charAt(0).toUpperCase() + mo.kind.slice(1))}</span>`).join("");
+  // THE KEY UNDER THE GRAPH IS A LEGEND (Hidde, 2026-10-09: "make the tags
+  // consistent under the graphs as well, and only put them there if they are
+  // part of the graph"). It used to list every moment the species records, in
+  // a third style of its own, so a May flowering with no mark on the curve
+  // got a tag while the fruit badge sitting on the peak did not. Now it is
+  // one chip per badge actually drawn, the same tinted chip the header and
+  // the cards wear, in the graph's own order. The sentence under it still
+  // says what the peak is; the chip names the icon (CONVENTIONS.md 2026-10-09).
+  const keys = legendChips(marked);
   const nowBadge = inSeason && CHIP_KEY[kind] ? seasonChipHtml(CHIP_KEY[kind]) : "";
   const labelLine = hasBt ? `<p class="season-label">${esc(bt.label!)}</p>` : "";
 
