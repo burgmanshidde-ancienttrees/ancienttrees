@@ -656,16 +656,26 @@ struct CollectView: View {
             // order they happened. Each card still says what it is.
             if lane == .seen {
                 countryChips
-                ForEach(shownTimeline) { item in
-                    switch item {
-                    case .mine(let s):
-                        SheetLink(route: .mine(s.id)) { MineCard(sighting: s) }
-                    case .sent(let t):
-                        SentCard(sent: t)
-                    case .tree(let t, _):
-                        card(t)
+                // THREE ACROSS, Instagram's profile grid (Hidde, 2026-10-09).
+                // Bleeds to the sheet's edges like Instagram's does, so the
+                // photographs are as large as a phone allows.
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
+                          spacing: 2) {
+                    ForEach(shownTimeline) { item in
+                        switch item {
+                        case .mine(let s):
+                            SheetLink(route: .mine(s.id)) { CollectedTile(kind: .mine(s)) }
+                        case .sent(let t):
+                            CollectedTile(kind: .sent(t))
+                        case .tree(let t, _):
+                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t)) }
+                                .accessibilityIdentifier("tree-card")
+                                .accessibilityLabel(t.name)
+                        }
                     }
                 }
+                .padding(.horizontal, -20)
+                .padding(.top, -12)
             }
             let list = lane == .want ? wishlist : []
             if lane == .want ? list.isEmpty : timeline.isEmpty {

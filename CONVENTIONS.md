@@ -3263,3 +3263,13 @@ Asked because "On the map" (your own trees are on the map too) and "Official" bo
 | Atlas Obscura (a submitted place) | pending | published after editorial review |
 
 We take Google Maps' word, **Approved**, and keep the 2026-10-08 ruling that nothing is shown while it waits (the iNaturalist half). Sources: support.google.com/maps/answer/7055486, help.inaturalist.org/support/solutions/articles/151000169936, support.alltrails.com/hc/en-us/articles/360053460631.
+
+## Your collection as a grid (2026-10-09)
+
+Hidde: "the cards are not like instagram - like 9 trees in rows of 3 i think that would be better please benchmark".
+
+**Instagram:** the profile is three columns of tiles a hairline apart, and since January 2025 the tiles are 3:4 portrait rather than square; the feed keeps each post's own ratio, only the grid crops. No text on a tile. (kapwing.com/resources/instagrams-new-grid-layout-size-and-dimensions-2025, planoly.com/blog/guide-to-instagrams-new-vertical-grid)
+**iNaturalist:** the Me screen offers Grid, List and Map; Grid is the photo-first view of your own observations, List the information-first one. (help.inaturalist.org, "iNaturalist iPhone App - The Me Screen")
+**AllTrails and Airbnb:** saved lists, the things you have NOT done yet, stay as cards with a name and the facts, because you are choosing between them.
+
+**What we do:** Collected is a 3-column grid of 3:4 tiles, edge to edge, no names (the name is on the tree's page); a tree you added carries its one label ("Your tree", "Approved"), because that is what the photograph cannot say. Want to visit keeps its cards, because it is a plan. Read 2026-10-09.
