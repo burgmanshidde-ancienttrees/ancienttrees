@@ -2,27 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-20T22:33:11+00:00",
-   "date": "2026-08-20",
-   "run_id": "32424757677",
-   "minutes": 22.3,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 163,
-   "denials": 38,
-   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(echo), Bash(for), Bash(git), Bash(mkdir), Bash(python3), Edit, WebSearch",
-   "ended": "success",
-   "tokens": 6353867,
-   "claims_held": [
-    "munich",
-    "utrecht"
-   ],
-   "commits": 3,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-21T00:29:27+00:00",
    "date": "2026-08-21",
    "run_id": "32432846707",
@@ -21090,6 +21069,36 @@
     }
    ],
    "trees": 6,
+   "logged": true
+  },
+  {
+   "started": "2026-10-09T05:34:31+00:00",
+   "date": "2026-10-09",
+   "run_id": "37889182136",
+   "minutes": 6.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 69,
+   "denials": 10,
+   "denials_source": "permission_denials: Bash(cat), Bash(curl ; echo ; ls ; curl ...), Bash(curl ; python3 ; import ; for ...), Bash(for ; do ; curl | sed ...), Bash(for ; do ; python3 ; import ...), Bash(python3 ; grep | ? | tail), Bash(python3 | python3 ; import ; import ...), Bash(python3 | tail ; python3 ; wc ...), Bash(rm && cat ; ? ; ? ...)",
+   "ended": "success",
+   "tokens": 1213760,
+   "claims_held": [
+    "lisbon"
+   ],
+   "commits": 7,
+   "cities_touched": 2,
+   "cities": [
+    {
+     "city": "lisbon",
+     "trees": 0
+    },
+    {
+     "city": "singapore",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
    "logged": true
   }
  ],

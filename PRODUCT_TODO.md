@@ -25,8 +25,8 @@ themed and seasonal lists no.
 Weekly analysis retries Tue/Wed; Canada map (phone slide-north awaiting deploy); Singapore framing; photo on an existing tree shows its state; "oldest tree in" fixed on Lisbon, NL, FR; own-photos line; nearby cities at the foot; Singapore photo pass (0 usable on Commons); Japan collection; Okinawa and Martinique renamed, Palma kept on evidence; Tree of the Year: 203 finalists as leads, 135 open; both account mails live via SMTP; expired sign-in link now says so; copycheck line; species + place fallback name; Sign in sticks in the phone menu; og:image on country pages; New Zealand scouted (Christchurch 787, Auckland 3,600 as supply).
 
 ### DO: still open
-4. Optional second photo "of the sign" when adding a tree, both surfaces. Column is in supabase/PENDING.sql; build after Hidde pastes it.
-9b. Mallorca island page LIVE 2026-09-25 (6 trees). Next islands: Texel (20 LRMB), Ibiza deepen, Gran Canaria, Malta. Then Sicily as the first big-island page (contract extension of G, approved in principle 2026-09-24).
+4. DONE 2026-09-25: optional photo of the sign when adding a tree, app and web; never published, shown to the judge only.
+9b. Mallorca island page LIVE 2026-09-25 (6 trees). Next islands: Texel (20 LRMB), Ibiza deepen, Gran Canaria, Malta. Sicily as the first big-island page is PAUSED by Google recovery mode (no new page types, CLAUDE.md 2026-10-01).
 10b. Tree of the Year: 135 open leads to verify and write, famous-tree lane (rung 0c).
 13b. US: titles and ranking on pages that already take impressions (CTR 1.0% on 13,723).
 

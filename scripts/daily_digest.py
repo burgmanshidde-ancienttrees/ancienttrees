@@ -2737,6 +2737,24 @@ def app_section(today):
     return "\n".join(out)
 
 
+def bing_section(_today=None):
+    """What Bing shows and sends, beside Google's table (2026-10-09).
+
+    Hidde opened Bing Webmaster Tools the day the noindex split went live and
+    it showed more clicks than Google was sending in the same five days, a
+    number Cloudflare's referrer table had rounded to zero. It gets its own
+    block, like Apple's, so a Search Console failure cannot take it down with
+    it, and like every other fetch here it prints nothing without its key."""
+    if not os.environ.get("BING_WEBMASTER_KEY"):
+        return ""
+    sys.path.insert(0, os.path.dirname(__file__))
+    from bing_search import fetch, lines
+    got = fetch(days=7)
+    if got is None:
+        return ""
+    return "**What Bing shows and sends** (last 7 days, Bing Webmaster Tools)\n\n" + "\n".join(lines(*got))
+
+
 def app_store_section(_today=None):
     """App Store downloads as its OWN block, on Hidde's ruling of 2026-09-08
     ("ik mis app downloads in deze lijst"): reported beside the app's event
@@ -2986,6 +3004,7 @@ def main():
             blocks.append(trend.strip())
     except Exception as e:
         blocks.append("Search Console: fetch failed today (%s); numbers resume tomorrow." % e)
+    block(bing_section, today)
 
     # Monday gets the full audience cut, every other day gets the three lines
     # that can actually move. A 28-day window barely differs from yesterday's

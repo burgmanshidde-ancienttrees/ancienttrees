@@ -28,4 +28,9 @@ jobs:
         with:
           sparse-checkout: scripts
       - name: Send changed pages
+        env:
+          # Bing's IndexNow endpoint refuses our key (403 since 10-01); with
+          # this key the same pages go through the Bing Webmaster API instead,
+          # 100 a day, newest first (2026-10-09).
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
         run: python3 scripts/indexnow.py ${{ inputs.all && '--all' || '' }}

@@ -115,8 +115,20 @@ def main():
     if os.path.exists(ALLOW):
         with open(ALLOW, encoding="utf-8") as fh:
             allow.update({k: v for k, v in json.load(fh).items() if k in allow})
-    web_only_ok = {e["field"] for e in allow["web_only"]}
-    app_only_ok = {e["field"] for e in allow["app_only"]}
+    # An entry may be written as the bare key ("register") or as the dotted
+    # name this script prints in its own finding ("tree.register"). Until
+    # 2026-10-09 only the bare form matched, so an exception copied from the
+    # message word for word was ignored and the gate stayed red.
+    def _names(entries):
+        out = set()
+        for e in entries:
+            f = str(e.get("field", "")).strip()
+            out.add(f)
+            if "." in f:
+                out.add(f.split(".", 1)[1])
+        return out
+    web_only_ok = _names(allow["web_only"])
+    app_only_ok = _names(allow["app_only"])
 
     if args.list:
         print("feed tree keys :", " ".join(sorted(tree_keys)))

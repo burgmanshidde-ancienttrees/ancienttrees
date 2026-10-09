@@ -1,405 +1,405 @@
 {
- "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named on the public page (public true); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
- "synced": "2026-10-02T20:14Z",
- "ambassadors": [
-  {
-   "user_id": null,
-   "place_slug": "copenhagen",
-   "place_name": "Copenhagen",
-   "public": false,
-   "since": "2026-10-02",
-   "display_name": "Hans Erik Lund",
-   "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)",
-   "address_hmac": [
-    "8a127cc19adad71fed5603c1dbbe3a8cb8fc497f002d962ebc437d5269c4c67f"
-   ]
-  },
-  {
-   "user_id": null,
-   "place_slug": "porto",
-   "place_name": "Porto",
-   "public": false,
-   "since": "2026-10-02",
-   "display_name": "Paulo V. Araujo",
-   "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)",
-   "address_hmac": [
-    "7e7e48be67681f280b40e962d7c12a0689aab27adbb7f983cc964db811dddece"
-   ]
-  },
-  {
-   "user_id": null,
-   "place_slug": "florence",
-   "place_name": "Florence",
-   "public": true,
-   "since": "2026-10-03",
-   "display_name": "Giulia Torta",
-   "source": "mail, granted by Hidde; institution on the page by her yes (mail, 2026-10-03)",
-   "affiliation": "Orto botanico di Firenze",
-   "affiliation_consent": "she asked for her name and the Orto botanico on the page (mail, 2026-10-03)",
-   "address_hmac": [
-    "f515622acba9f6faec3e7d7f5f80473cac4875fd477809fe9332af5fa3a3df51"
-   ]
-  },
-  {
-   "user_id": null,
-   "place_slug": "lisbon",
-   "place_name": "Lisbon",
-   "public": true,
-   "since": "2026-10-05",
-   "display_name": "Hugo Veríssimo",
-   "source": "Quercus Lisboa, arborist; granted on Hidde's word (2026-10-05: \"hugo wil ambassadeur worden\"); Quercus Lisboa beside his name on Hidde's word",
-   "affiliation": "Quercus Lisboa",
-   "affiliation_consent": "Hidde vouched for Quercus Lisboa (2026-10-05: \"cuercus is ok for hugo\")",
-   "address_hmac": [
-    "7ea8d1fadf5ba64fec89846ed3c3fd45f7aba5a4bb014d95d401746757b532e0"
-   ]
-  },
-  {
-   "user_id": null,
-   "place_slug": "prague",
-   "place_name": "Prague",
-   "public": true,
-   "since": "2026-10-05",
-   "display_name": "Aleš Rudl",
-   "source": "said yes by mail to the ambassador ask of 2026-10-02; granted on Hidde's word 2026-10-05. No organisation beside his name: an affiliation is printed only when the person explicitly asked for it (Hidde, 2026-10-05)",
-   "address_hmac": [
-    "99ea4849df6200552bba55eb0d62d3db5b5b54ac5890ec65da76af6b8f07dbca"
-   ]
-  },
-  {
-   "user_id": null,
-   "place_slug": "stockholm",
-   "place_name": "Stockholm",
-   "public": true,
-   "since": "2026-10-05",
-   "display_name": "Daniel Daggfeldt",
-   "source": "arborist, Stockholm; said yes by mail to the ask of 2026-10-03; granted on Hidde's word 2026-10-05",
-   "address_hmac": [
-    "9eef19a0f243440ecf6cc1f371f74cea6dd2837e56b6aaa331eaec1c730f77c1",
-    "eb42777376d742ceb2f9009e7c1cc32b791152657b7643dc47f6af0afd9221a0"
-   ]
+  "_note": "Who looks after a place, written by scripts/ambassador.py --sync from the ambassadors table and never by hand. display_name appears only when the person consented to be named on the public page (public true); the website prints that line and nothing else from here. An account that is deleted leaves on the next sync, which runs with photo_takedown.py on every knock.",
+  "synced": "2026-10-02T20:14Z",
+  "ambassadors": [
+    {
+      "user_id": null,
+      "place_slug": "copenhagen",
+      "place_name": "Copenhagen",
+      "public": false,
+      "since": "2026-10-02",
+      "display_name": "Hans Erik Lund",
+      "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)",
+      "address_hmac": [
+        "8a127cc19adad71fed5603c1dbbe3a8cb8fc497f002d962ebc437d5269c4c67f"
+      ]
+    },
+    {
+      "user_id": null,
+      "place_slug": "porto",
+      "place_name": "Porto",
+      "public": false,
+      "since": "2026-10-02",
+      "display_name": "Paulo V. Araujo",
+      "source": "mail, granted by Hidde; name held off the page until the person says yes (Hidde, 2026-10-06)",
+      "address_hmac": [
+        "7e7e48be67681f280b40e962d7c12a0689aab27adbb7f983cc964db811dddece"
+      ]
+    },
+    {
+      "user_id": null,
+      "place_slug": "florence",
+      "place_name": "Florence",
+      "public": true,
+      "since": "2026-10-03",
+      "display_name": "Giulia Torta",
+      "source": "mail, granted by Hidde; institution on the page by her yes (mail, 2026-10-03)",
+      "affiliation": "Orto botanico di Firenze",
+      "affiliation_consent": "she asked for her name and the Orto botanico on the page (mail, 2026-10-03)",
+      "address_hmac": [
+        "f515622acba9f6faec3e7d7f5f80473cac4875fd477809fe9332af5fa3a3df51"
+      ]
+    },
+    {
+      "user_id": null,
+      "place_slug": "lisbon",
+      "place_name": "Lisbon",
+      "public": true,
+      "since": "2026-10-05",
+      "display_name": "Hugo Veríssimo",
+      "source": "Quercus Lisboa, arborist; granted on Hidde's word (2026-10-05: \"hugo wil ambassadeur worden\"); Quercus Lisboa beside his name on Hidde's word",
+      "affiliation": "Quercus Lisboa",
+      "affiliation_consent": "Hidde vouched for Quercus Lisboa (2026-10-05: \"cuercus is ok for hugo\")",
+      "address_hmac": [
+        "7ea8d1fadf5ba64fec89846ed3c3fd45f7aba5a4bb014d95d401746757b532e0"
+      ]
+    },
+    {
+      "user_id": null,
+      "place_slug": "prague",
+      "place_name": "Prague",
+      "public": true,
+      "since": "2026-10-05",
+      "display_name": "Aleš Rudl",
+      "source": "said yes by mail to the ambassador ask of 2026-10-02; granted on Hidde's word 2026-10-05. No organisation beside his name: an affiliation is printed only when the person explicitly asked for it (Hidde, 2026-10-05)",
+      "address_hmac": [
+        "99ea4849df6200552bba55eb0d62d3db5b5b54ac5890ec65da76af6b8f07dbca"
+      ]
+    },
+    {
+      "user_id": null,
+      "place_slug": "stockholm",
+      "place_name": "Stockholm",
+      "public": true,
+      "since": "2026-10-05",
+      "display_name": "Daniel Daggfeldt",
+      "source": "arborist, Stockholm; said yes by mail to the ask of 2026-10-03; granted on Hidde's word 2026-10-05",
+      "address_hmac": [
+        "9eef19a0f243440ecf6cc1f371f74cea6dd2837e56b6aaa331eaec1c730f77c1",
+        "eb42777376d742ceb2f9009e7c1cc32b791152657b7643dc47f6af0afd9221a0"
+      ]
+    }
+  ],
+  "invited": [
+    {
+      "user_id": "daa8cd52-0000-0000-0000-000000000000",
+      "place_slug": "*",
+      "place_name": "*",
+      "date": "2026-10-02",
+      "trees": [],
+      "note": "Leon (Treehunter, Friedewald and Bad Homburg): never invited by the scan. Hidde, 2026-10-02: 'to leon dont send because it makes no sense after our conversation'. Full user id is the one data/cities files carry as contributor on his reports; the scan matches on the first 8 characters for this entry."
+    },
+    {
+      "user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
+      "place_slug": "seville",
+      "place_name": "Seville",
+      "date": "2026-10-02",
+      "trees": [
+        "El Gran Capitán"
+      ]
+    },
+    {
+      "user_id": "3f3fd52d-4665-41f3-bbaf-1cd863381908",
+      "place_slug": "paris",
+      "place_name": "Paris",
+      "date": "2026-10-02",
+      "trees": [
+        "The Horse Chestnut of Square Rene-Le Gall",
+        "The Turkey Oak of Square Rene-Le Gall"
+      ]
+    },
+    {
+      "user_id": "07957439-f6a6-4418-854c-f06e553bf517",
+      "place_slug": "lisbon",
+      "place_name": "Lisbon",
+      "date": "2026-10-02",
+      "trees": [
+        "The Dragon Tree of Quinta Conde dos Arcos"
+      ]
+    },
+    {
+      "user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
+      "place_slug": "reykjavik",
+      "place_name": "Reykjavik",
+      "date": "2026-10-04",
+      "trees": [
+        "The Whitebeam of Víkurgarður",
+        "The Larch of Hólavallagarður"
+      ]
+    },
+    {
+      "user_id": "5d04dbac-47b9-4ac3-b827-404efe2e7af1",
+      "place_slug": "melbourne",
+      "place_name": "Melbourne",
+      "date": "2026-10-05",
+      "trees": [
+        "The Southern Mahogany of Edinburgh Gardens"
+      ]
+    },
+    {
+      "user_id": "db4e5203-26ad-47a1-bc9e-5a6ada2896f0",
+      "place_slug": "seville",
+      "place_name": "Seville",
+      "date": "2026-10-09",
+      "trees": [],
+      "note": "asked inside the reply to his pin correction on sev_018 (submission 375), on Hidde's word 2026-10-09; no photograph live"
+    }
+  ],
+  "requested": [
+    {
+      "row": 348,
+      "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+      "place_slug": "reykjavik",
+      "place_name": "Reykjavik",
+      "date": null,
+      "note": "ours"
+    },
+    {
+      "row": 350,
+      "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+      "place_slug": "barcelona",
+      "place_name": "Barcelona",
+      "date": null,
+      "note": "ours"
+    },
+    {
+      "row": 354,
+      "user_id": "42072c14-bebd-438f-9f83-a7de09268a7c",
+      "place_slug": "tokyo",
+      "place_name": "Tokyo",
+      "date": null,
+      "note": "ours"
+    },
+    {
+      "row": 360,
+      "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+      "place_slug": "verona",
+      "place_name": "Verona",
+      "date": null,
+      "note": "ours"
+    },
+    {
+      "row": 365,
+      "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+      "place_slug": "rome",
+      "place_name": "Rome",
+      "date": null,
+      "note": "ours"
+    }
+  ],
+  "told": {
+    "copenhagen": {
+      "trees": [
+        "cop_001",
+        "cop_002",
+        "cop_003",
+        "cop_004",
+        "cop_005",
+        "cop_006",
+        "cop_007",
+        "cop_008",
+        "cop_009",
+        "cop_010",
+        "cop_011",
+        "cop_012",
+        "cop_013",
+        "cop_014",
+        "cop_015",
+        "cop_016",
+        "cop_017",
+        "cop_018",
+        "cop_019",
+        "cop_020",
+        "cop_021",
+        "cop_022",
+        "cop_023",
+        "cop_024",
+        "cop_025",
+        "cop_026",
+        "cop_027",
+        "cop_028",
+        "cop_029",
+        "cop_030",
+        "cop_031",
+        "cop_032",
+        "cop_033",
+        "cop_034",
+        "cop_035",
+        "cop_036",
+        "cop_037",
+        "cop_038",
+        "cop_039",
+        "cop_040",
+        "cop_041",
+        "cop_042",
+        "cop_043",
+        "cop_044",
+        "cop_045",
+        "cop_046",
+        "cop_047",
+        "cop_048",
+        "cop_049"
+      ],
+      "since": "2026-10-06",
+      "mailed": []
+    },
+    "porto": {
+      "trees": [
+        "por_001",
+        "por_002",
+        "por_003",
+        "por_004",
+        "por_005",
+        "por_006",
+        "por_007",
+        "por_008",
+        "por_009",
+        "por_010",
+        "por_011",
+        "por_012",
+        "por_013",
+        "por_014",
+        "por_015",
+        "por_016",
+        "por_017",
+        "por_018",
+        "por_019",
+        "por_020",
+        "por_021",
+        "por_022",
+        "por_023",
+        "por_024",
+        "por_025",
+        "por_026",
+        "por_027"
+      ],
+      "since": "2026-10-06",
+      "mailed": []
+    },
+    "florence": {
+      "trees": [
+        "flo_001",
+        "flo_002",
+        "flo_003",
+        "flo_004",
+        "flo_005",
+        "flo_006",
+        "flo_007",
+        "flo_008",
+        "flo_009",
+        "flo_010",
+        "flo_011",
+        "flo_012",
+        "flo_013",
+        "flo_014",
+        "flo_015",
+        "flo_016",
+        "flo_017",
+        "flo_018",
+        "flo_019",
+        "flo_020",
+        "flo_021",
+        "flo_022",
+        "flo_023",
+        "flo_024",
+        "flo_025",
+        "flo_026",
+        "flo_027"
+      ],
+      "since": "2026-10-06",
+      "mailed": []
+    },
+    "lisbon": {
+      "trees": [
+        "lis_001",
+        "lis_002",
+        "lis_003",
+        "lis_004",
+        "lis_005",
+        "lis_006",
+        "lis_007",
+        "lis_008",
+        "lis_009",
+        "lis_010",
+        "lis_011",
+        "lis_012",
+        "lis_013",
+        "lis_014",
+        "lis_015",
+        "lis_016",
+        "lis_017",
+        "lis_018",
+        "lis_019",
+        "lis_020",
+        "lis_021",
+        "lis_022",
+        "lis_023",
+        "lis_024",
+        "lis_025",
+        "lis_026",
+        "lis_027",
+        "lis_028",
+        "lis_029",
+        "lis_030",
+        "lis_031",
+        "lis_032",
+        "lis_033",
+        "lis_034",
+        "lis_035",
+        "lis_036"
+      ],
+      "since": "2026-10-06",
+      "mailed": []
+    },
+    "prague": {
+      "trees": [
+        "prg_001",
+        "prg_002",
+        "prg_003",
+        "prg_004",
+        "prg_005",
+        "prg_006",
+        "prg_007",
+        "prg_008",
+        "prg_009",
+        "prg_010",
+        "prg_011",
+        "prg_012",
+        "prg_013",
+        "prg_014",
+        "prg_015",
+        "prg_016",
+        "prg_017",
+        "prg_018",
+        "prg_019",
+        "prg_020",
+        "prg_021",
+        "prg_022",
+        "prg_023",
+        "prg_024",
+        "prg_025",
+        "prg_026",
+        "prg_027",
+        "prg_028",
+        "prg_029",
+        "prg_030"
+      ],
+      "since": "2026-10-06",
+      "mailed": []
+    },
+    "stockholm": {
+      "trees": [
+        "sto_001",
+        "sto_002",
+        "sto_003",
+        "sto_004",
+        "sto_005",
+        "sto_006",
+        "sto_007",
+        "sto_008"
+      ],
+      "since": "2026-10-06",
+      "mailed": []
+    }
   }
- ],
- "invited": [
-  {
-   "user_id": "daa8cd52-0000-0000-0000-000000000000",
-   "place_slug": "*",
-   "place_name": "*",
-   "date": "2026-10-02",
-   "trees": [],
-   "note": "Leon (Treehunter, Friedewald and Bad Homburg): never invited by the scan. Hidde, 2026-10-02: 'to leon dont send because it makes no sense after our conversation'. Full user id is the one data/cities files carry as contributor on his reports; the scan matches on the first 8 characters for this entry."
-  },
-  {
-   "user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
-   "place_slug": "seville",
-   "place_name": "Seville",
-   "date": "2026-10-02",
-   "trees": [
-    "El Gran Capitán"
-   ]
-  },
-  {
-   "user_id": "3f3fd52d-4665-41f3-bbaf-1cd863381908",
-   "place_slug": "paris",
-   "place_name": "Paris",
-   "date": "2026-10-02",
-   "trees": [
-    "The Horse Chestnut of Square Rene-Le Gall",
-    "The Turkey Oak of Square Rene-Le Gall"
-   ]
-  },
-  {
-   "user_id": "07957439-f6a6-4418-854c-f06e553bf517",
-   "place_slug": "lisbon",
-   "place_name": "Lisbon",
-   "date": "2026-10-02",
-   "trees": [
-    "The Dragon Tree of Quinta Conde dos Arcos"
-   ]
-  },
-  {
-   "user_id": "01b4d9c0-3841-43bb-9bd0-37d3c904be29",
-   "place_slug": "reykjavik",
-   "place_name": "Reykjavik",
-   "date": "2026-10-04",
-   "trees": [
-    "The Whitebeam of Víkurgarður",
-    "The Larch of Hólavallagarður"
-   ]
-  },
-  {
-   "user_id": "5d04dbac-47b9-4ac3-b827-404efe2e7af1",
-   "place_slug": "melbourne",
-   "place_name": "Melbourne",
-   "date": "2026-10-05",
-   "trees": [
-    "The Southern Mahogany of Edinburgh Gardens"
-   ]
-  },
-  {
-   "user_id": "db4e5203-26ad-47a1-bc9e-5a6ada2896f0",
-   "place_slug": "seville",
-   "place_name": "Seville",
-   "date": "2026-10-09",
-   "trees": [],
-   "note": "asked inside the reply to his pin correction on sev_018 (submission 375), on Hidde's word 2026-10-09; no photograph live"
-  }
- ],
- "requested": [
-  {
-   "row": 348,
-   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
-   "place_slug": "reykjavik",
-   "place_name": "Reykjavik",
-   "date": null,
-   "note": "ours"
-  },
-  {
-   "row": 350,
-   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
-   "place_slug": "barcelona",
-   "place_name": "Barcelona",
-   "date": null,
-   "note": "ours"
-  },
-  {
-   "row": 354,
-   "user_id": "42072c14-bebd-438f-9f83-a7de09268a7c",
-   "place_slug": "tokyo",
-   "place_name": "Tokyo",
-   "date": null,
-   "note": "ours"
-  },
-  {
-   "row": 360,
-   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
-   "place_slug": "verona",
-   "place_name": "Verona",
-   "date": null,
-   "note": "ours"
-  },
-  {
-   "row": 365,
-   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
-   "place_slug": "rome",
-   "place_name": "Rome",
-   "date": null,
-   "note": "ours"
-  }
- ],
- "told": {
-  "copenhagen": {
-   "trees": [
-    "cop_001",
-    "cop_002",
-    "cop_003",
-    "cop_004",
-    "cop_005",
-    "cop_006",
-    "cop_007",
-    "cop_008",
-    "cop_009",
-    "cop_010",
-    "cop_011",
-    "cop_012",
-    "cop_013",
-    "cop_014",
-    "cop_015",
-    "cop_016",
-    "cop_017",
-    "cop_018",
-    "cop_019",
-    "cop_020",
-    "cop_021",
-    "cop_022",
-    "cop_023",
-    "cop_024",
-    "cop_025",
-    "cop_026",
-    "cop_027",
-    "cop_028",
-    "cop_029",
-    "cop_030",
-    "cop_031",
-    "cop_032",
-    "cop_033",
-    "cop_034",
-    "cop_035",
-    "cop_036",
-    "cop_037",
-    "cop_038",
-    "cop_039",
-    "cop_040",
-    "cop_041",
-    "cop_042",
-    "cop_043",
-    "cop_044",
-    "cop_045",
-    "cop_046",
-    "cop_047",
-    "cop_048",
-    "cop_049"
-   ],
-   "since": "2026-10-06",
-   "mailed": []
-  },
-  "porto": {
-   "trees": [
-    "por_001",
-    "por_002",
-    "por_003",
-    "por_004",
-    "por_005",
-    "por_006",
-    "por_007",
-    "por_008",
-    "por_009",
-    "por_010",
-    "por_011",
-    "por_012",
-    "por_013",
-    "por_014",
-    "por_015",
-    "por_016",
-    "por_017",
-    "por_018",
-    "por_019",
-    "por_020",
-    "por_021",
-    "por_022",
-    "por_023",
-    "por_024",
-    "por_025",
-    "por_026",
-    "por_027"
-   ],
-   "since": "2026-10-06",
-   "mailed": []
-  },
-  "florence": {
-   "trees": [
-    "flo_001",
-    "flo_002",
-    "flo_003",
-    "flo_004",
-    "flo_005",
-    "flo_006",
-    "flo_007",
-    "flo_008",
-    "flo_009",
-    "flo_010",
-    "flo_011",
-    "flo_012",
-    "flo_013",
-    "flo_014",
-    "flo_015",
-    "flo_016",
-    "flo_017",
-    "flo_018",
-    "flo_019",
-    "flo_020",
-    "flo_021",
-    "flo_022",
-    "flo_023",
-    "flo_024",
-    "flo_025",
-    "flo_026",
-    "flo_027"
-   ],
-   "since": "2026-10-06",
-   "mailed": []
-  },
-  "lisbon": {
-   "trees": [
-    "lis_001",
-    "lis_002",
-    "lis_003",
-    "lis_004",
-    "lis_005",
-    "lis_006",
-    "lis_007",
-    "lis_008",
-    "lis_009",
-    "lis_010",
-    "lis_011",
-    "lis_012",
-    "lis_013",
-    "lis_014",
-    "lis_015",
-    "lis_016",
-    "lis_017",
-    "lis_018",
-    "lis_019",
-    "lis_020",
-    "lis_021",
-    "lis_022",
-    "lis_023",
-    "lis_024",
-    "lis_025",
-    "lis_026",
-    "lis_027",
-    "lis_028",
-    "lis_029",
-    "lis_030",
-    "lis_031",
-    "lis_032",
-    "lis_033",
-    "lis_034",
-    "lis_035",
-    "lis_036"
-   ],
-   "since": "2026-10-06",
-   "mailed": []
-  },
-  "prague": {
-   "trees": [
-    "prg_001",
-    "prg_002",
-    "prg_003",
-    "prg_004",
-    "prg_005",
-    "prg_006",
-    "prg_007",
-    "prg_008",
-    "prg_009",
-    "prg_010",
-    "prg_011",
-    "prg_012",
-    "prg_013",
-    "prg_014",
-    "prg_015",
-    "prg_016",
-    "prg_017",
-    "prg_018",
-    "prg_019",
-    "prg_020",
-    "prg_021",
-    "prg_022",
-    "prg_023",
-    "prg_024",
-    "prg_025",
-    "prg_026",
-    "prg_027",
-    "prg_028",
-    "prg_029",
-    "prg_030"
-   ],
-   "since": "2026-10-06",
-   "mailed": []
-  },
-  "stockholm": {
-   "trees": [
-    "sto_001",
-    "sto_002",
-    "sto_003",
-    "sto_004",
-    "sto_005",
-    "sto_006",
-    "sto_007",
-    "sto_008"
-   ],
-   "since": "2026-10-06",
-   "mailed": []
-  }
- }
 }
