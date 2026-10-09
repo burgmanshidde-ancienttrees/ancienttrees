@@ -10228,6 +10228,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "munich",
+   "kind": "enrich",
+   "tokens": 164613,
+   "trees": 18,
+   "note": "batch 2: LfU ids on 17, 3 measurements, 3 best_time"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
