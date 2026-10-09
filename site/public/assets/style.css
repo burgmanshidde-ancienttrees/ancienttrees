@@ -3028,3 +3028,28 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
   border-radius: 999px; border: 1px solid var(--line, #e6e6e6); background: var(--surface, #fff);
   color: var(--ink, #26301e); cursor: pointer; }
 .country-chip[aria-pressed="true"] { background: var(--moss); border-color: var(--moss); color: #fff; }
+
+/* COLLECTED AND WANT TO VISIT AS INSTAGRAM'S GRID on /account (2026-10-09,
+   the app's CollectedTile): three across, 3:4 tiles a hairline apart, the
+   photograph only. The lists become the grid's items through display:
+   contents, so the three lists under Collected read as one grid. The name,
+   meta and credit live on the tree's page, as they do in the app; a tree
+   you added keeps its one label. */
+.acct-lanes #pane-mine, .acct-lanes #pane-saved {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; margin-top: 0.5rem; }
+.acct-lanes #pane-mine > *, .acct-lanes #pane-saved > * { grid-column: 1 / -1; }
+.acct-lanes .saved-list { display: contents; }
+.acct-lanes .saved-list > li { grid-column: auto; min-width: 0; }
+.acct-lanes .saved-list .tree-card { position: relative; aspect-ratio: 3 / 4; overflow: hidden;
+  margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; background: var(--surface-muted, #f2f2f2);
+  display: flex; align-items: center; justify-content: center; }
+.acct-lanes .saved-list .tree-card-photo { position: absolute; inset: 0; height: 100%; margin: 0; border-radius: 0; z-index: 1; }
+.acct-lanes .saved-list .tree-card-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.acct-lanes .saved-list .tree-card-top { padding: 8px; text-align: center; }
+.acct-lanes .saved-list .tree-card-top .tree-name { font-size: 12px; line-height: 1.3; margin: 0; }
+.acct-lanes .saved-list .tree-card-top .tree-name a::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+.acct-lanes .saved-list .tree-card-credit, .acct-lanes .saved-list .tree-meta,
+.acct-lanes .saved-list .heart-card, .acct-lanes .saved-list .tag-row,
+.acct-lanes .saved-list .mine-reply { display: none; }
+.acct-lanes .saved-list .mine-state { position: absolute; left: 6px; bottom: 6px; z-index: 2; margin: 0;
+  font-size: 10px; font-weight: 600; padding: 3px 7px; border-radius: 999px; background: #fff; color: var(--moss); }

@@ -685,7 +685,18 @@ struct CollectView: View {
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.top, 4)
             } else {
-                ForEach(list) { card($0, heart: lane == .want) }
+                // THE SAME GRID as Collected (Hidde, 2026-10-09: "maak van
+                // want to visit maar hetzelfde raster"), over AllTrails' and
+                // Airbnb's cards for a saved list: one page, one shape.
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
+                          spacing: 2) {
+                    ForEach(list) { t in
+                        SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t)) }
+                            .accessibilityIdentifier("tree-card")
+                            .accessibilityLabel(t.name)
+                    }
+                }
+                .padding(.horizontal, -20)
             }
             }
         }
