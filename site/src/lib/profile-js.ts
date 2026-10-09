@@ -193,7 +193,8 @@ export const PROFILE_JS = `
         if (c.sp) species[c.sp] = 1;
         if (c.k) countries[c.k] = 1;
       });
-      chips(visited, cards);
+      chips('country-chips', 'pane-mine', visited, cards);
+      chips('country-chips-saved', 'pane-saved', saves, cards);
       window.atVisitedCount = visited.length;
       setText('n-trees', visited.length + (window.atMineCount || 0));
       setText('n-species', Object.keys(species).length);
@@ -241,10 +242,12 @@ export const PROFILE_JS = `
   // there is more than one. A chip hides every card in the lane from another
   // country. A tree you added yourself carries no country here and stays
   // under All, where the app places it by the nearest tree we map.
-  var countryOn = null;
-  function chips(visited, cards) {
-    var box = el('country-chips');
+  // And the same row above Want to visit (Hidde, 2026-10-09: "kun je boven
+  // want to visit dezelfde opties neerzetten"), each lane with its own choice.
+  function chips(boxId, paneId, visited, cards) {
+    var box = el(boxId);
     if (!box) return;
+    var countryOn = null;
     var n = {};
     visited.forEach(function(id) { var c = cards[id]; if (c && c.k) n[c.k] = (n[c.k] || 0) + 1; });
     var names = Object.keys(n).sort(function(a, b) { return n[b] - n[a] || (a < b ? -1 : 1); });
@@ -266,7 +269,7 @@ export const PROFILE_JS = `
       Array.prototype.forEach.call(box.children, function(x) {
         x.setAttribute('aria-pressed', String((x.getAttribute('data-k') || null) === countryOn));
       });
-      Array.prototype.forEach.call(el('pane-mine').querySelectorAll('li'), function(li) {
+      Array.prototype.forEach.call(el(paneId).querySelectorAll('li'), function(li) {
         li.hidden = countryOn !== null && li.getAttribute('data-k') !== countryOn;
       });
     };

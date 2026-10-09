@@ -171,14 +171,24 @@ struct CollectView: View {
         return timeline.filter { countryOf($0) == country }
     }
 
-    /// The chips under Collected. Only when there is more than one country to
-    /// choose between; a row with one chip filters nothing.
+    /// Countries on the Want to visit list, most trees first.
+    private var wantCountries: [(name: String, count: Int)] {
+        var n: [String: Int] = [:]
+        for t in wishlist { n[t.country, default: 0] += 1 }
+        return n.map { (name: $0.key, count: $0.value) }
+            .sorted { $0.count != $1.count ? $0.count > $1.count : $0.name < $1.name }
+    }
+
+    /// The country chips, above both lanes (Hidde, 2026-10-09: "kun je boven
+    /// want to visit dezelfde opties neerzetten"). Only when there is more
+    /// than one country to choose between; a row with one chip filters nothing.
     @ViewBuilder private var countryChips: some View {
-        let countries = collectedCountries
+        let countries = lane == .want ? wantCountries : collectedCountries
+        let total = lane == .want ? wishlist.count : timeline.count
         if countries.count > 1 {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
-                    FilterChip(label: "All \(timeline.count)", icon: "globe.europe.africa",
+                    FilterChip(label: "All \(total)", icon: "globe.europe.africa",
                                on: country == nil) { country = nil }
                     ForEach(countries, id: \.name) { c in
                         FilterChip(label: "\(c.name) \(c.count)", icon: "mappin",
@@ -677,14 +687,16 @@ struct CollectView: View {
                 .padding(.horizontal, -20)
                 .padding(.top, -12)
             }
-            let list = lane == .want ? wishlist : []
+            let list = lane == .want
+                ? wishlist.filter { country == nil || $0.country == country } : []
+            if lane == .want { countryChips }
             if lane == .want ? list.isEmpty : timeline.isEmpty {
                 Text(lane == .want
                      ? "You can keep a tree you want to visit by tapping its bookmark."
                      : "You add a tree here by photographing it. Tap the camera and stand in front of one.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.top, 4)
-            } else {
+            } else if lane == .want {
                 // THE SAME GRID as Collected (Hidde, 2026-10-09: "maak van
                 // want to visit maar hetzelfde raster"), over AllTrails' and
                 // Airbnb's cards for a saved list: one page, one shape.
@@ -702,6 +714,8 @@ struct CollectView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .id(lane)
+        // A country chosen on one lane means nothing on the other.
+        .onChange(of: lane) { country = nil }
     }
 
     /// What each lane says when nobody is signed in: what the lane is FOR, and
