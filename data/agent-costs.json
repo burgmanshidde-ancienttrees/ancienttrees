@@ -10196,6 +10196,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "palermo",
+   "kind": "enrich",
+   "tokens": 161119,
+   "trees": 12,
+   "note": "MASAF ids on 11 trees, Villa Malfitano ticket and slots corrected"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
