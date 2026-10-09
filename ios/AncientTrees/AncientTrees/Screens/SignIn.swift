@@ -76,7 +76,8 @@ struct SignInSheet: View {
                 }
             }
             .padding(.horizontal, 22)
-            .padding(.top, 28)
+            // 36: room for the handle drawn 12 down (below), then the tile.
+            .padding(.top, 36)
             .padding(.bottom, Self.floating ? 28 : 16)
             .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { askHeight = max(320, $0) }
         }
@@ -124,7 +125,19 @@ struct SignInSheet: View {
         // SOLID, not the system's glass: on a glass sheet the page behind
         // showed through the email button as a green blur (2026-10-01).
         .presentationBackground(Color(.systemBackground))
-        .presentationDragIndicator(.visible)
+        // THE HANDLE IS OURS, drawn where the website draws its own: 36 by 5,
+        // 12 points down, cream. The system's indicator sits 5 points from the
+        // edge, which Hidde read as "the small grey button on top in the
+        // middle is too high up" (2026-10-09). The sheet still swipes away;
+        // only the picture of the handle is ours.
+        .presentationDragIndicator(.hidden)
+        .overlay(alignment: .top) {
+            Capsule().fill(Brand.creamDark)
+                .frame(width: 36, height: 5)
+                .padding(.top, 12)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
+        }
         // One container with a name, so the layout sweep can measure the
         // sheet on its own rather than together with the screen behind it.
         .accessibilityElement(children: .contain)
@@ -148,7 +161,10 @@ struct SignInSheet: View {
             // sheet). Hidde, 2026-10-09, after one loud and two outlined
             // buttons at 12 read as three separate offers: the website's
             // stack, one dark and two cream, "looks better ... steal of it".
-            VStack(spacing: 16) {
+            // 10 apart. 16, the website's number, read as too far on a phone
+            // (Hidde, 2026-10-09: "still the buttons feel too far from each
+            // other vertically"); 8 is where he had stopped complaining.
+            VStack(spacing: 10) {
                 SignInWithAppleButton(.continue) { request in
                     rawNonce = Self.nonce()
                     // The name as well, which Apple gives ONCE, on the first
