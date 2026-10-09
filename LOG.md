@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (night run, continuation) - London enrichment, one tree
+
+**Done:** lon_020 (Inner Temple Mulberry) gained girth 150 cm and height 10 m from the Morus Londinium survey record, which is a research project and not a government register. The other six London trees (lon_011, 012, 017, 021, 022, 025) have no per-tree authority record and no public measurement; recorded as dead ends for 90 days and London released as a wall for 48h. No new trees (recovery mode). The earlier attempt of this window had claimed London and stopped; this attempt finished it.
+
 ## 2026-10-09 (session) - Paulo's photos live; his and Ines's replies held by the daily cap
 
 **Live:** por_002 and por_003 serve Paulo Araujo's photographs (both pages and all widths checked at 200).
