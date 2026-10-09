@@ -10284,6 +10284,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "dublin",
+   "kind": "enrich",
+   "tokens": 164292,
+   "trees": 12,
+   "note": "10 register ids, 2 measurements, 2 access lines; dub_008 pin conflict flagged"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
