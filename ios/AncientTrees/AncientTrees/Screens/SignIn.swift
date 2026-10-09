@@ -333,8 +333,14 @@ struct SignInSheet: View {
     /// this sheet is read off, AllTrails' and Airbnb's, is a title, a line and
     /// the buttons; the oak mark was a leftover from an earlier shape and sat
     /// alone at the top left with nothing to belong to.
+    /// CENTRED, like the website's sheet (the measured AllTrails reference in
+    /// CONVENTIONS.md) and like the button labels under it. Leading-aligned,
+    /// the headline sat beside the close cross and every button label was
+    /// centred, so the eye zigzagged (Hidde, 2026-10-09: "vertically something
+    /// feels off hierarchy wise between header, subheader, buttons"). The
+    /// extra side inset keeps a long headline out from under the cross.
     private var header: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(spacing: 8) {
             // The brand's display face and ink, as every other heading in the
             // app and the website's dialog (Hidde, 2026-10-08: "the design of
             // the overlay to login is a bit off"). It was the system bold in
@@ -343,15 +349,18 @@ struct SignInSheet: View {
             Text(reason.headline)
                 .font(.brand(26, .bold, relativeTo: .title2))
                 .foregroundStyle(Brand.ink)
-                .multilineTextAlignment(.leading)
+                .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
             Text(reason.detail)
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                .multilineTextAlignment(.leading)
+                .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 2)
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 22)
+        .padding(.top, 6)
+        // 28 to the first button (the website's number), 24 stays under them.
+        .padding(.bottom, 4)
     }
 
     @ViewBuilder private var problemLine: some View {
