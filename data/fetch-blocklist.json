@@ -2,6 +2,18 @@
   "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
   "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
   "hosts": {
+    "historicenvironment.scot": {
+      "behaviour": "returns HTTP 403 to curl on the prices and opening-times pages; refuses fast, does not hang.",
+      "seen": "2026-10-09",
+      "cost": "a few failed fetches",
+      "workaround": "Try WebFetch or a web.archive.org copy."
+    },
+    "nycgovparks.org": {
+      "behaviour": "returns HTTP 405 to curl and WebFetch on /facilities/great-trees and /parks pages; refuses fast, does not hang.",
+      "seen": "2026-10-09",
+      "cost": "a few failed fetches",
+      "workaround": "Read the page through web.archive.org copies (2024 snapshots); Great Trees id 42 (Reservoir cherries) is captcha-walled there too."
+    },
     "piece-jointe-carto.developpement-durable.gouv.fr": {
       "behaviour": "hangs; curl -m 20 times out (exit 28, Connection timed out) on a site-classe fact-sheet PDF (REG043B/DOCS/SITES/SC_71_005_fiche.pdf) during the _famous-france verify pass.",
       "seen": "2026-09-05",

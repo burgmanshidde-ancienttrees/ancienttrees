@@ -10252,6 +10252,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "edinburgh",
+   "kind": "enrich",
+   "tokens": 165098,
+   "trees": 7,
+   "note": "RBGE hours on 7 trees, 3 accession ids; no public measurements"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
