@@ -10,6 +10,12 @@
 
 **Dispatched:** one data-digest.yml run with force, so today's DATA.md entry carries the Bing table with real numbers; the result is checked below this line once the run finishes.
 
+## 2026-10-09 (session) - Deploys were stuck: the returning pages now fit the deploy guard
+
+**Why:** no deploy had finished since 01:16 UTC. Every push cancelled the one before it, and the two that ran to the end failed qa's index-growth guard: 133 new indexable urls against the live sitemap, limit 80. The recovery merge's RETURN_PER_BUILD let 40 finished pages back into the index per build, counted in TREES, and the 40 brought 25 Portuguese, Italian and Dutch copies with them; the day's new trees and places had already queued 68 urls while the deploys were dying. A guard the next deploy cannot pass is a site that never deploys again, because the backlog only grows.
+**Done:** `scripts/thin_pages.py` now counts every other new url against the live sitemap first, exactly as qa.py will, and lets finished pages return into the room the guard leaves (80 minus a margin of 10 for pages it does not enumerate), most readers first, a tree with all its language copies or not at all. Measured on this checkout: 68 other new, room for 2 returning urls, so this deploy lands at 70. The next ones return ~40 a build until the 167 are back. The guard itself is untouched; it is Hidde's number.
+**Notes:** with the live sitemap unreadable the fixed 40 stands, which is also when qa.py skips its check. The Reykjavik photograph and the season-graph legend of this morning go live with the same deploy.
+
 ## 2026-10-09 (session) - Bing hears about changed pages again, through the Webmaster API
 
 **Why:** Hidde: "fix the bing thing with this api key". Bing's IndexNow endpoint has refused our key since 10-01 (403 UserForbiddedToAccessSite), so nothing changed on the site had reached Bing for eight days, and Bing is the index ChatGPT's search reads and the one engine that never demoted us.

@@ -55,6 +55,20 @@ INDEX_NEEDS_PHOTO = True
 # 40 rather than 60 so that a deploy carrying new photographed trees as well
 # stays under the guard.
 RETURN_PER_BUILD = 40
+# AND THE BUDGET IS URLS AGAINST THE LIVE SITEMAP, NOT TREES (2026-10-09, the
+# same afternoon). The first deploy under RETURN_PER_BUILD failed the guard
+# twice: 40 returning trees brought their Portuguese, Italian and Dutch copies
+# (65 urls), on top of the 68 urls the day's new trees and places had already
+# queued up while every deploy was being cancelled by the next push. 133
+# against 80, and a guard the next deploy cannot pass is a site that never
+# deploys again, because the backlog only grows. So the returns take whatever
+# room the guard leaves: everything else that is new is counted first, against
+# the sitemap that is live right now, exactly as qa.py will count it, and
+# finished pages return into the remainder, most readers first, a tree with
+# all its language copies or not at all. With the live sitemap unreadable the
+# fixed count above stands, which is also when qa.py skips its check.
+GUARD_URLS = 80  # qa.py check_index_grows_with_the_trees(), Hidde's number
+GUARD_MARGIN = 10  # pages this script does not enumerate (collections, species)
 
 # THE SPLIT, Hidde 2026-10-08 ("Ok do the split"). The robots meta is read by
 # every engine, so the 2026-10-01 noindex also took 11,500 pages out of Bing,
@@ -152,6 +166,18 @@ def destination(t):
     return (t.get("age_min") or 0) >= 1000 and t.get("age_basis") != "derived"
 
 
+def live_sitemap():
+    """The urls Google is offered right now, or an empty set when the live
+    site cannot be read (qa.py skips its burst check in that case too)."""
+    import urllib.request
+    try:
+        with urllib.request.urlopen(f"{BASE}/sitemap.xml", timeout=20) as r:
+            return set(re.findall(r"<loc>([^<]+)</loc>", r.read().decode("utf-8", "replace")))
+    except Exception as e:
+        print(f"deploy guard: live sitemap unreadable ({e.__class__.__name__}), RETURN_PER_BUILD stands")
+        return set()
+
+
 def main():
     imps = {}
     try:
@@ -185,6 +211,7 @@ def main():
     # Finished pages still on the list, in roster order (most readers first);
     # the first RETURN_PER_BUILD leave it this build, the rest wait.
     returning = []
+    indexable = set()  # every page this script knows the build will make
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         slug = os.path.basename(path)[:-5]
         d = json.load(open(path))
@@ -198,6 +225,9 @@ def main():
         total_pages += (1 + has_q + n) * (1 + len(langs_real))
         city_urls = [f"{BASE}/{slug}"] + [f"{BASE}/{lang}/{slug}" for lang in langs_real]
         q_urls = ([f"{BASE}/{slug}/{QSLUG['en']}"] + [f"{BASE}/{lang}/{slug}/{QSLUG[lang]}" for lang in langs_real]) if has_q else []
+        indexable |= set(city_urls) | set(q_urls)
+        for ts in tslugs:
+            indexable |= {f"{BASE}/{slug}/{ts}"} | {f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real}
         # 1. Fallback pages: gone since 2026-10-09 (redirects now, see the docstring).
         # 4. Tree pages with neither a photograph nor a confirmed pin (Hidde,
         #    2026-10-01: "zo min mogelijk bomen met geen foto en geen exacte pin").
@@ -262,7 +292,22 @@ def main():
         groups["question_pages"] += q_urls
 
     returning.sort(key=lambda r: -r[0])
-    held_back = returning[RETURN_PER_BUILD:]
+    take = RETURN_PER_BUILD
+    live = live_sitemap()
+    if live:
+        offlist = set(sum(groups.values(), []))
+        candidates = {u for _, en, langs in returning for u in [en] + langs}
+        other_new = {u for u in indexable if u not in offlist and u not in candidates and u not in live}
+        room = GUARD_URLS - GUARD_MARGIN - len(other_new)
+        take, spent = 0, 0
+        for _, en, langs in returning:
+            cost = len([u for u in [en] + langs if u not in live])
+            if spent + cost > room:
+                break
+            take, spent = take + 1, spent + cost
+        print(f"deploy guard: {len(other_new)} other new indexable url(s) against the live sitemap, "
+              f"room for {max(room, 0)} returning url(s) under {GUARD_URLS - GUARD_MARGIN}")
+    held_back = returning[take:]
     for _, en_url, lang_urls in held_back:
         groups["weak_trees"] += [en_url] + lang_urls
     every = sorted(set(sum(groups.values(), [])))
@@ -279,7 +324,7 @@ def main():
     others = {u[len(BASE):] for k, v in groups.items() if k != "weak_trees" for u in v}
     google_only = sorted({u[len(BASE):] for u in groups["weak_trees"]} - others) if GOOGLE_ONLY_WEAK_TREES else []
     if returning:
-        print(f"finished pages returning to the index this build: {min(len(returning), RETURN_PER_BUILD)} of {len(returning)} "
+        print(f"finished pages returning to the index this build: {take} of {len(returning)} "
               f"(RETURN_PER_BUILD {RETURN_PER_BUILD}); {len(held_back)} wait for a later build")
     json.dump({"generated": "scripts/thin_pages.py",
                "approved": "Hidde, 2026-10-01, in session: 'start with point 1 to 4'; the engine split 2026-10-08: 'Ok do the split'",
