@@ -10324,6 +10324,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "vienna",
+   "kind": "enrich",
+   "tokens": 150408,
+   "trees": 13,
+   "note": "batch 3: 13 register ids, 2 heights, 1 best_time"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
