@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - a reader whose tree goes live is congratulated by mail
+
+**Changed:** `scripts/tree_approved.py --send` runs on every knock beside the ambassador mails: the day a tree a reader ADDED (a sighting that entered data/leads/_sightings.json as a new tree) fronts a published page and appears in the live feed, they get one mail with the link, signed Ancient Trees. Once per tree (data/tree-approved-mailed.json, ids only), never to our own accounts, through mailcheck and the do-not-contact list. A photograph added to a tree we already had still sends nothing (the 2026-10-02 ruling stands). Every reader-added tree live today is one of ours, so nobody is mailed retroactively. Gamification for it is parked until Hidde asks.
+
 ## 2026-10-09 (session) - Seville: a doubtful pin correction answered, and the ambassador seat offered in the same mail
 
 **Why:** the one account opened on 10-08 filed a correction two hours later: the Judas Tree of the Real Alcázar moved 643 m to a street outside the Alcázar walls. Our pin is approximate but sits in the Jardín Inglés the tree is named after; his point has no photograph behind it.

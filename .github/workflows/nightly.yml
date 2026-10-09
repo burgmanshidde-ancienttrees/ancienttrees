@@ -253,11 +253,15 @@ jobs:
           # 2026-10-06): one mail per ambassador per knock, listing the trees
           # that went live since the last one, never one mail per tree.
           python3 scripts/ambassador.py --heads-up --send
+          # And a congratulation, with the link, the day a tree a reader
+          # ADDED goes live (Hidde, 2026-10-09). Once per tree; a photograph on
+          # a tree we already had still sends nothing.
+          python3 scripts/tree_approved.py --send
           python3 scripts/private_store.py push
-          if ! git diff --quiet data/ambassadors.json; then
+          if ! git diff --quiet data/ambassadors.json data/tree-approved-mailed.json; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
-            git add data/ambassadors.json
+            git add data/ambassadors.json data/tree-approved-mailed.json
             git commit -m "Contributor replies and ambassador invitations sent, log updated"
             git push
           fi
