@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-09, session: the app was findable only by its own name
+
+Measured in four storefronts: the app ranked first for "ancient trees" and nowhere for "old trees" (US), "trees near me", "tree map", "monumental trees" or "famous trees". Apple indexes name, subtitle and the 100-character keyword field, nothing else, and a third of ours repeated the name. Version 1.0.3 in App Store Connect now carries a keyword field with no duplicates, the subtitle "Remarkable old trees near you", and eight further locales (en-US, nl, de, fr, es, it, pt-PT, ja), each with its own keywords, subtitle, description and What's New, written through the API by `scripts/asc_metadata.py` from drafts/app-store-metadata-1.0.3.md. Nothing is live until Hidde archives build 25 in Xcode and submits 1.0.3; the name stays "Ancient Trees" (a suffix is his brand call, the option is in the file). The autumn in-app event in the same file needs a card image and is his to create.
+
+The brief's red iOS run was on claude/recovery-2026-10-09, another session's branch; main's newest iOS run passed.
+
 ## 2026-10-09 (session) - Three outreach replies answered; Brighton's Preston Twin corrected from one of them
 
 **Why:** Hidde: "weve got 3 new responses can you draft a response, and some content was suggested". Replies today from Kerry Pickett (Brighton, with three facts about the Preston Twins), Lenny van Valkenhoef of IVN Amersfoort (forwarded our mail to their tree specialist) and Tony Craven of Friends of Alexandra Park, Manchester (will go looking for the variegated green ash). A fourth, St Cuthbert's Church, is an autoresponder and gets nothing.
