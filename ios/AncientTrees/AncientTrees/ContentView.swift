@@ -886,6 +886,18 @@ struct ContentView: View {
             }
             if args.contains("-signin") {
                 rootSheet = .signIn(.keepTree("The Last Elm of Stationsplein"))
+            } else if args.contains("-review-ask") {
+                // The review ask, openable without a finger. In real use it
+                // fires only after the third different tree page closes, and
+                // its fired set persists per install, so nobody who has used
+                // the app for a week can reach it again by tapping. A screen
+                // no argument can open is a screen that ships unseen
+                // (CLAUDE.md, the sweep rule); this is its argument. A beat
+                // later, so the root's onChange is already listening.
+                Task { @MainActor in
+                    try? await Task.sleep(for: .seconds(1))
+                    reviewPrompt.pending = true
+                }
             } else if args.contains("-paywall") {
                 rootSheet = .paywall(.walkBeyondFirst)
             } else if let spec = args.first(where: { $0.hasPrefix("-begin=") })?.dropFirst(7) {

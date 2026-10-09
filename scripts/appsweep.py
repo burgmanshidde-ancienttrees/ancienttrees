@@ -313,6 +313,11 @@ def screens(sub):
         # The which-maps-app question, which is a dialog and still a screen:
         # it is the first thing a person meets after tapping Take me there.
         ("directions",    ["-tab=0", "-directions"], 5),
+        # The review ask: our own "Are you enjoying it?" alert that fronts
+        # Apple's dialog. In real use it fires once, after the third different
+        # tree page closes, and its fired set persists per install, so nobody
+        # can reach it twice by tapping; without this argument it ships unseen.
+        ("review-ask",    ["-tab=0", "-review-ask"], 5),
         ("signin",        ["-tab=0", "-signin"], 5),
         # The typed email route, hidden for 1.0 behind Launch.emailSignIn. Swept
         # anyway, because a screen that stays in the build and is never looked at
