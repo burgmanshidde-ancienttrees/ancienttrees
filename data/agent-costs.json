@@ -10340,6 +10340,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "alicante",
+   "kind": "enrich",
+   "tokens": 149031,
+   "trees": 16,
+   "note": "Generalitat Valenciana register ids on 16 trees"
+  },
+  {
+   "date": "2026-10-09",
    "target": "bath",
    "kind": "enrich",
    "tokens": 139558,
