@@ -10356,6 +10356,14 @@
   },
   {
    "date": "2026-10-09",
+   "target": "prague",
+   "kind": "enrich",
+   "tokens": 159215,
+   "trees": 9,
+   "note": "AOPK ids and girths on 6, one pin, 3 measurements"
+  },
+  {
+   "date": "2026-10-09",
    "target": "athens",
    "kind": "enrich",
    "tokens": 137151,
