@@ -50,6 +50,12 @@ City maps open on the city's own trees.
 Bug fixes.
 ```
 
+Promotional text (170, not indexed, editable any time):
+
+```
+Most people have walked past a thousand-year-old tree without knowing it. Open the map and see which ones stand near you.
+```
+
 
 ## English (U.S.)
 
@@ -63,6 +69,12 @@ heritage,notable,largest,tallest,sequoia,redwood,live oak,landmark,arboretum,tra
 ```
 
 What's new: same as U.K.
+
+Promotional text (170, not indexed, editable any time):
+
+```
+Most people have walked past a thousand-year-old tree without knowing it. Open the map and see which ones stand near you.
+```
 
 
 ## Dutch
@@ -112,6 +124,12 @@ Ontdekken toont de beste bomen in jouw land, de hoogste, de dikste en de bomenei
 Elke kaart draagt de leeftijd en het seizoen van de boom.
 Stadskaarten openen op de bomen van de stad zelf.
 Foutjes verholpen.
+```
+
+Promotional text (170, not indexed, editable any time):
+
+```
+De meeste mensen zijn weleens langs een duizend jaar oude boom gelopen zonder het te weten. Open de kaart en zie welke bij jou in de buurt staan.
 ```
 
 
@@ -164,6 +182,12 @@ Stadtkarten öffnen auf den Bäumen der Stadt selbst.
 Fehlerbehebungen.
 ```
 
+Promotional text (170, not indexed, editable any time):
+
+```
+Die meisten Menschen sind schon an einem tausend Jahre alten Baum vorbeigegangen, ohne es zu wissen. Öffne die Karte und sieh, welche in deiner Nähe stehen.
+```
+
 
 ## French
 
@@ -212,6 +236,12 @@ Découvrir montre les meilleurs arbres de votre pays, les plus hauts, les plus g
 Chaque carte porte l'âge et la saison de l'arbre.
 Les cartes de ville s'ouvrent sur les arbres de la ville elle-même.
 Corrections de bugs.
+```
+
+Promotional text (170, not indexed, editable any time):
+
+```
+La plupart des gens sont passés devant un arbre millénaire sans le savoir. Ouvrez la carte et voyez lesquels sont près de vous.
 ```
 
 
@@ -264,6 +294,12 @@ Los mapas de ciudad se abren sobre los árboles de la propia ciudad.
 Corrección de errores.
 ```
 
+Promotional text (170, not indexed, editable any time):
+
+```
+Casi todos hemos pasado junto a un árbol milenario sin saberlo. Abre el mapa y mira cuáles tienes cerca.
+```
+
 
 ## Italian
 
@@ -312,6 +348,12 @@ Scopri mostra i migliori alberi del tuo paese, i più alti, i più grossi e le i
 Ogni scheda riporta l'età e la stagione dell'albero.
 Le mappe di città si aprono sugli alberi della città stessa.
 Correzioni di errori.
+```
+
+Promotional text (170, not indexed, editable any time):
+
+```
+Quasi tutti siamo passati accanto a un albero millenario senza saperlo. Apri la mappa e scopri quali sono vicino a te.
 ```
 
 
@@ -364,6 +406,12 @@ Os mapas de cidade abrem nas árvores da própria cidade.
 Correções de erros.
 ```
 
+Promotional text (170, not indexed, editable any time):
+
+```
+Quase todos já passámos por uma árvore milenar sem o saber. Abra o mapa e veja quais estão perto de si.
+```
+
 
 ## Japanese
 
@@ -412,6 +460,12 @@ What's new:
 すべてのカードに樹齢と季節を表示。
 街の地図は、その街自身の木から開きます。
 不具合の修正。
+```
+
+Promotional text (170, not indexed, editable any time):
+
+```
+千年を生きた木のそばを、知らずに通り過ぎた人は多いはず。地図を開いて、近くにある木を見てみましょう。
 ```
 
 
