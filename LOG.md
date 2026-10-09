@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Seville: a doubtful pin correction answered, and the ambassador seat offered in the same mail
+
+**Why:** the one account opened on 10-08 filed a correction two hours later: the Judas Tree of the Real Alcázar moved 643 m to a street outside the Alcázar walls. Our pin is approximate but sits in the Jardín Inglés the tree is named after; his point has no photograph behind it.
+**Done:** the pin stays. Submission 375 carries outcome `open_question` and a reply, sent through contributor_reply.py, asking whether he is sure and which tree he saw, and offering the Seville ambassador seat (Hidde, same morning: "ask him if he's sure about the correction and btw we're looking for an ambassador if he's into it"). The offer is recorded under `invited` in data/ambassadors.json so the knock never repeats it; the badge follows his answer, with `--grant`.
+**Also:** `signin-open` no longer counts the contribute page opening the dialog by itself on load (340 of the fortnight's 394 opens were that). From the next deploy the funnel counts taps only; the 14-day column will drop for two weeks as the old rows age out.
+
 ## 2026-10-09 (session) - Reykjavik: Hidde's overrule on the City Hall Maple carried out, and the bug that swallowed it
 
 **Why:** On 2026-10-03 a viewing pass held the Reykjavik reader's photograph of rey_003 for its light and the crowd in front of it, and Hidde overruled it ("ook zijn semi slechte foto's zijn beter dan geen"). The vouched path ran on 2026-10-05 and the page still read "missing" four days later.
