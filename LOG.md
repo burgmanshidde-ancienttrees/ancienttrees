@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - Paulo's photographs on two Porto trees; people's photos are not refused on exposure
+
+**Done:** Paulo Araujo's photographs of the Magnolia of Casa Tait (por_002) and the Metrosidero of the Library (por_003) are attached, self-hosted with 500/1000/1280 widths, credit "Paulo V. Araujo, Dias com Arvores", same terms as his first batch. Both trees had no photograph, so both pages can return to Google on the next deploy.
+**Corrected (Hidde: "photos by users a gold even if a bit crappy"):** photo_light.py scored both POOR for flat overcast light, and I hesitated. A POOR score now ends the matter only for a stock candidate; a photograph a person took and sent us is judged on whether it is this tree in daylight and colour. The script says so under every POOR, and the CLAUDE.md photo rule carries it.
+**Mail:** Paulo's reply and Ines's Meet confirmation go once the deploy is live (Hidde's word). The Woodland Trust and Freiburg drafts wait.
+
 ## 2026-10-09 (session) - Four more replies: Woodland Trust pauses, Freiburg points to its Naturdenkmale, Paulo declines the ambassador role and sends two photos
 
 **Woodland Trust (ATI):** all requests to show ATI records publicly are paused for at least six months, and commercial use will later be charged for. Recorded in data/register-scouting.json; the London gate stands. Reply drafted.

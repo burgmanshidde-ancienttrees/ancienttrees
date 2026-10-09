@@ -213,6 +213,15 @@ def main():
               % (a[-58:], s["brightness"], s["contrast"], s["colour"], s["blown"],
                  s.get("subject", 0), s.get("subject_colour", 0)))
         print("    %s" % v)
+        if v.startswith("POOR"):
+            # Hidde, 2026-10-09, on two photographs Paulo Araujo took for us of
+            # Porto trees that had none, scored POOR for flat overcast light:
+            # "the photos are good you are too strict photos by users a gold
+            # even if a bit crappy". So POOR ends the matter for a stock
+            # candidate from Commons or Flickr, and never for a photograph a
+            # person took and sent us. For those, look at the pixels and judge
+            # only: is it this tree, in daylight and colour.
+            print("    (a photograph a reader or correspondent sent: POOR is advice, not a refusal)")
         worst = max(worst, 2 if v.startswith("POOR") else 1 if v.startswith("WEAK") else 0)
     return worst
 
