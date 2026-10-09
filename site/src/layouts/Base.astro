@@ -14,7 +14,7 @@ import { SIGNIN_JS, SIGNIN_CATCH_JS } from "../lib/signin-js";
 import { UNITS_JS } from "../lib/units-js";
 import LanguagePicker from "../components/LanguagePicker.astro";
 import { toEnglishPath, ui } from "../lib/i18n";
-import { isNoindexed, cleanPath } from "../lib/noindex";
+import { isNoindexed, noindexScope, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
@@ -82,6 +82,12 @@ const year = new Date().getFullYear();
  * exactly that, its canonical pointing at the English twin. */
 const noindexed = isNoindexed(Astro.url.pathname);
 const canonicalHref = noindexed ? `https://ancienttrees.app${cleanPath(Astro.url.pathname)}` : canonical;
+/* Which engines the noindex is for (Hidde, 2026-10-08: "Ok do the split"). A
+ * tree page without a photograph is Google's objection alone, so it carries
+ * the googlebot tag, which Bing, DuckDuckGo and Yahoo ignore; a duplicate or
+ * thin page carries the generic tag for every engine. scripts/thin_pages.py
+ * decides, data/noindex.json carries the answer, and this only reads it. */
+const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" : "robots";
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -92,7 +98,7 @@ const canonicalHref = noindexed ? `https://ancienttrees.app${cleanPath(Astro.url
 <title>{title}</title>
 <meta name="description" content={description}>
 <link rel="canonical" href={canonicalHref}>
-{noindexed && !headExtra.includes("noindex") && <meta name="robots" content="noindex, follow">}
+{noindexed && !headExtra.includes("noindex") && <meta name={robotsName} content="noindex, follow">}
 {/* Apple's smart app banner. Safari on iOS draws it itself, above the page,
     at a height Apple chooses, and a person can dismiss it for good.
 

@@ -3192,3 +3192,26 @@ Hidde: "zijn die nummers echt nodig? mss subtieler?" AllTrails, Google Maps and 
 **Why uniform shelves read as a database (the study):** readers scan carousels in an L, judge each row by its FIRST thumbnail, read the heading first in 2 to 15 percent of cases, swipe almost only in the row that wins, and see the first off-screen item a third of the time. A page of same-size shelves under generic headings is, to the eye, one repeated thumbnail with words nobody reads. That is exactly what Discover was on this date: ten sections of one shape.
 
 **What we take:** (1) here-and-now in the headline, place and date and a count, Merlin's move, because our season data is the thing nobody else has; (2) one full-width photographed item per beat with a kicker, a title and one hook sentence, vertical only, kinds alternating (a tree, a walk, a day trip, a numbered collection, a city), AllTrails' card and the App Store's rhythm; (3) a month strip on a tree card where it has a best_time; (4) honest counts on the card ("10 trees · 6 countries · you have stood at 2"), never invented social proof; (5) three to five THEME chips at the top ("Near me", "In colour now", "Walks", "Day trips"), never data types ("Species", "Countries"). The three directions drawn for Hidde live at https://claude.ai/artifact/313WKZqbMxFFqHZw8HqVm2 (A here-and-now, B one story per beat, C pictures first); the direction chosen is recorded in DECISIONS.md when he chooses.
+
+## Hidde's app walk of 2026-10-08, the conventions behind each change
+
+- **A place line under a name is a breadcrumb, broad to narrow** (AllTrails' trail page: "Netherlands > Utrecht > ..."; Tripadvisor; Wikipedia's location line). Country · City · District on the tree page, web and app. Only what opens a page is underlined; the district has no page and is plain grey text.
+- **Your own contribution is simply yours until it is upgraded, and only the upgrade is announced** (iNaturalist: an observation carries no pending banner, and Research Grade is the one status it tells you about). "Being checked", "Sent to us" and "Not this time" are gone from both surfaces; "Your tree" until it makes the map, then "Official" (Hidde, 2026-10-09: "on the map" was wrong, your own trees are on the map too).
+- **A role you can apply for is explained in a sheet before the yes** (Google Maps' Local Guides join sheet: what you will do, one line each, one button). The ambassador seat opens that sheet in the app and the same three lines in the website's dialog.
+- **A browse screen opens on what is near you** (AllTrails Explore: "Trails near you" first; Google Maps' Explore: what is around the map's centre), with your saved things as a row near the top (Netflix "My List", Spotify "Your library"); empty, the row explains the heart, the way Airbnb's wishlist does.
+- **A destructive action is red** (Apple HIG, Buttons: "destructive" role; iOS Settings, Strava and AllTrails all draw Delete account in red). Kept as it is.
+- **An info row under a place: brand-coloured glyph in a fixed column, text at reading size** (Google Maps and Apple Maps place pages). The access and transport lines on the app's tree page were grey footnote text.
+- **A location button that has never been allowed asks** (Apple Maps' own button raises the system dialog on the first tap); only a refused permission sends you to Settings.
+
+## The word for your own tree once we accept it (2026-10-09, looked up)
+
+Asked because "On the map" (your own trees are on the map too) and "Official" both read wrong to Hidde. What the references show the contributor:
+
+| Product | While it waits | Once accepted |
+|---|---|---|
+| Google Maps (your Edits and added places) | Pending | **Approved** (older builds: Accepted); else Not applied |
+| iNaturalist (an observation) | Needs ID | **Research Grade**, a domain term for "the community confirmed it" |
+| AllTrails (a suggested trail) | moderation, no label | no label: it simply becomes searchable for everyone |
+| Atlas Obscura (a submitted place) | pending | published after editorial review |
+
+We take Google Maps' word, **Approved**, and keep the 2026-10-08 ruling that nothing is shown while it waits (the iNaturalist half). Sources: support.google.com/maps/answer/7055486, help.inaturalist.org/support/solutions/articles/151000169936, support.alltrails.com/hc/en-us/articles/360053460631.

@@ -2,6 +2,81 @@
 
 <!-- archive-index -->
 
+## 2026-10-09 (session) - a reader whose tree goes live is congratulated by mail
+
+**Changed:** `scripts/tree_approved.py --send` runs on every knock beside the ambassador mails: the day a tree a reader ADDED (a sighting that entered data/leads/_sightings.json as a new tree) fronts a published page and appears in the live feed, they get one mail with the link, signed Ancient Trees. Once per tree (data/tree-approved-mailed.json, ids only), never to our own accounts, through mailcheck and the do-not-contact list. A photograph added to a tree we already had still sends nothing (the 2026-10-02 ruling stands). Every reader-added tree live today is one of ours, so nobody is mailed retroactively. Gamification for it is parked until Hidde asks.
+
+## 2026-10-09 (session) - Seville: a doubtful pin correction answered, and the ambassador seat offered in the same mail
+
+**Why:** the one account opened on 10-08 filed a correction two hours later: the Judas Tree of the Real Alcázar moved 643 m to a street outside the Alcázar walls. Our pin is approximate but sits in the Jardín Inglés the tree is named after; his point has no photograph behind it.
+**Done:** the pin stays. Submission 375 carries outcome `open_question` and a reply, sent through contributor_reply.py, asking whether he is sure and which tree he saw, and offering the Seville ambassador seat (Hidde, same morning: "ask him if he's sure about the correction and btw we're looking for an ambassador if he's into it"). The offer is recorded under `invited` in data/ambassadors.json so the knock never repeats it; the badge follows his answer, with `--grant`.
+**Also:** `signin-open` no longer counts the contribute page opening the dialog by itself on load (340 of the fortnight's 394 opens were that). From the next deploy the funnel counts taps only; the 14-day column will drop for two weeks as the old rows age out.
+
+## 2026-10-09 (session) - Reykjavik: Hidde's overrule on the City Hall Maple carried out, and the bug that swallowed it
+
+**Why:** On 2026-10-03 a viewing pass held the Reykjavik reader's photograph of rey_003 for its light and the crowd in front of it, and Hidde overruled it ("ook zijn semi slechte foto's zijn beter dan geen"). The vouched path ran on 2026-10-05 and the page still read "missing" four days later.
+**Found:** the queue spells "no photograph" as `none` and `sightings_publish.py --vouched` tested for `missing`, so a tree with no picture at all counted as having one and the photograph went into `photos[]` as an extra under a lead that did not exist. Nothing rendered it and nothing reported it.
+**Done:** one `has_lead()` test in sightings_publish.py that knows `none` (the inbox's ranking reads the same list); an approve now PROMOTES an extra of the same sighting instead of showing the picture twice, and drops its separately named file. The sighting was reopened, re-queued, looked at again (a broad domed sycamore maple on the Vonarstraeti corner, the street sign in frame, a tour group beneath it) and published through the script as the lead: rey_003 carries `source: contributor` with the reader's id, the judgement record says publish with his overrule as the reason. Preflight 0 problems; qa runs in CI (no build here).
+**Notes:** the same reader's other photographs (rey_001, rey_002 and Seville's El Gran Capitan) were already live; nothing else of theirs is held. rey_003's pin was already moved to his fix on 2026-10-05 and is untouched.
+
+## 2026-10-09 (session) - "Approved" for your own tree, and search stays at full height
+
+**Changed:** a reader's own tree that makes it onto Ancient Trees now says "Approved" (app card, website My trees, and its page), Google Maps' word for a contribution it accepted; "On the map" was wrong because your own trees are on the map too (Hidde). The map's search field now grows into the list's header as the list is dragged to full height, the Apple Maps and Google Maps convention, so search is reachable at every height (app).
+**Kept, on Hidde's word:** the website's photo thank-you still promises "you will hear what happened to yours"; people should end up with a message when their tree joins the database. Today that message is the "Approved" label in the app; a mail for it is not built.
+
+## 2026-10-09 (night run) - Salt Lake City opened (5), Salzburg +1
+
+**Rung:** shelf refill; 7-day visits 1,518. Rung 2 clear.
+**Done:** Salzburg write pass on the 4 READY leads: only the Walser Birnbaum (szb_021, a 2015 replacement pear, said plainly) shipped, Salzburg at 21; the other three stay leads (access unestablished, ordinary linden, no data). Salt Lake City opened from the Utah big-tree register: slc_001 to slc_005 (Liberty Park plane, two Washington Square trees, two Temple Square trees), all register-only so flagged, confirmed pins, no photos yet; slc_006 held (address and pin disagree). Preflight 0 problems. Costs logged.
+**Also:** Miami verify pass found nothing shippable (no register; Deering champion black olive has a second source now, but no photo or exact pin and is paid; free-tree ratio blocks the city). Leads updated, claim released. Needs a reader photograph or the Florida champion register detail pages.
+**Notes:** leads marked READY with no sources are not ready; leads.py should count them as source-less. The Temple Square cedar's survival since the 2020 works is unconfirmed, and the page asks. No tool refusals.
+
+## 2026-10-08 (night run, third window) - Salzburg +2
+
+**Rung:** shelf refill; 7-day visits 1,697. Rung 2 clear. Stuttgart claimed first, then released as a wall (no register, from-zero is off).
+**Done:** Salzburg verify from the Naturdenkmal register, then write: szb_019 (Thousand-Year Linden of Faistenau, photo found_needs_check, nobody has viewed it) and szb_020 (Gschirrnlinde of Eugendorf, photo viewed and approved) live, Salzburg at 20, German overlay, preflight 0 problems. Elsbethen linde and two publishable=false groups stay leads. Costs logged.
+**Notes:** Salzburg is now at its target. Faistenau is about 14 km out, beyond the day-trip line, and the page says so. No tool refusals.
+
+## 2026-10-08 (night run, later window) - Salzburg +3
+
+**Rung:** shelf refill; 7-day visits 1,683. Rung 2 clear.
+**Done:** Vienna's 7 READY leads were this morning's own verify declines (access unestablished, one possibly lost), so the write pass wrote nothing and marked them held, which stops leads.py sending the next run after them. Salzburg verify from the Land Salzburg Naturdenkmal register, then write: szb_016 to szb_018 live (18 trees), each with a looked-at Commons photograph and a confirmed pin, German overlay, counts updated 15 to 18. Preflight 0 problems. Costs logged.
+**Notes:** leads.py cannot see a decline written only in `why_not_yet`; worth teaching it. salzburg-reiseinfo.com fails TLS. Commons API gave 429 after ~10 quick calls. No tool refusals.
+
+## 2026-10-08 (night run) - Vienna +5
+
+**Rung:** shelf refill (prepare.py said the writable pile was under its floor), 7-day visits 1,652. Rung 2 clear (deploy and smoke green); only 6 of 12 knocks arrived in 24h.
+**Done:** Leipzig claimed then released as a wall (no register, Wikidata only). Vienna verify pass from the Naturdenkmale register joined to the city's tree inventory: 5 public street trees with tree-level pins shipped as vie_052 to vie_056 (55 live), written and merged with the German overlay, preflight 0 problems. 8 rejects went to data/leads/vienna.json, mostly access not established. Costs logged.
+**Notes:** www.wien.gv.at hangs from the runner (blocklist candidate). vie_055's species differs between sources and is published as Populus sp. with the dispute stated. Photos for vie_052, 055 and 056 are queued candidates nobody has looked at. No tool refusals.
+
+## 2026-10-08 (session) - Hidde's app walk: Discover, the tree page, tags, the ambassador sheet, and why his account looked empty
+
+**Why:** Hidde walked the app on his phone and sent one long list. Everything below shipped on web and app together.
+
+**Discover (app):** "Trees near you" is the first row (with a real fix only); "Your favourites" is second, with an empty state that explains the heart; the sentence under each autumn card is gone; December to February get "At their best this month" (trees whose best_time is now, mostly bare winter silhouettes) because no seasonal collection covers them; the autumn shelves lead with the most autumnal photographs (new `scripts/photo_autumn.py` scores each lead photo's gold and red share into data/photo-autumn.json, browse.json orders by it, the daily digest refreshes it; the first scoring from this sandbox got only part of the way because the proxy blocks Wikimedia here, so the digest finishes it).
+
+**Tree page:** the official register row is gone from the app (and from the feed) and moved on the website from the fact card to the first line of Sources. The line under the name is a breadcrumb, Country · City · District, both surfaces; the district is plain text. Discover more shows places only, no collections, both surfaces. The access and transport lines are reading size with a moss glyph.
+
+**Tags:** "Seen" is the white pill everywhere (the app's MineCard and the website's no-photo cards were green); the app's season chips carry the website's glyphs. Your own trees say "Your tree" until they make the map and then "Approved" (Google Maps' word; renamed 10-09); no pending or declined wording anywhere.
+
+**Ambassador:** the seat opens a sheet explaining the role (photographs, facts and missing trees, walks) with Apply, app and website in eight languages; sign-in from it says "Sign in to apply". The seat has been on the app's city page since 10-07 15:39; a build from before that only had it on the city's map page, which is why it looked random.
+
+**Account bugs, root-caused and fixed in the app:** any refresh answer that was not a 2xx or 5xx counted as a refusal, so a rate limit, a hotel or train proxy or a captive portal signed you out, and the sign-out forgets the profile and the synced photos. Only Supabase's own 400/401 refusal signs out now. The profile was also cleared whenever a launch could not renew the token, and nothing re-read the account on sign-in; both fixed (`reloadTheAccount()` on sign-in and on returning to the app). A photograph whose one download failed was never asked for again; the merge now retries it, so the missing photos come back from the account by themselves. The map's location button sent a never-asked phone to Settings; it now asks.
+
+**Sign-in sheet (app):** the website's heading ("Keep your trees on every device") and the brand face and colours.
+
+**Kagoshima:** the leaning camphor at the Shiroyama car park is already live as kag_016 (photo approved, pin confirmed). Itoshima's two camphors are live under Fukuoka (fuk_016, fuk_018).
+
+## 2026-10-08 (session) - the noindex split by engine: photo-less tree pages leave Google only, Bing keeps them
+
+**Why:** Hidde asked whether Bing needs the same noindex as Google and said "Ok do the split". The generic robots tag had emptied Bing, DuckDuckGo and Yahoo of 11,500 pages too; Bing never demoted us and its referrals fell to zero the day the tag went on (DATA.md referrer rows, 09-12 to 10-04).
+
+**What changed:** 3,775 tree pages without a photograph (1,005 of them real translations) now carry the googlebot-only noindex tag and are listed in a new sitemap-bing.xml; the 7,922 fallback, thin-place and question pages keep the generic tag. thin_pages.py writes `google_only` into data/noindex.json, noindex.ts and Base.astro read it, the sitemap integration writes the Bing file, indexnow.py reads it so Bing hears about changes. New ratchet check `check_the_noindex_split_holds()` in qa.py. Record in DECISIONS.md 2026-10-08 and in CLAUDE.md's photo-index bullet.
+
+**Found by the new check, fixed the same hour (rung 3, something published was wrong):** five published trees had REDIRECT STUBS for pages, because the build writes the stubs for REMOVED_TREE_SLUGS over the real pages. Las Vegas lvg_012/013/014 were pulled for size on 08-20 and deliberately restored on 08-26 under the size ruling, but their slugs stayed on the map, so the city page has linked to three pages that bounce back to it for six weeks: the slugs are off the map and the pages render again. Leiden lei_012/013 were pulled on Hidde's 08-23 ruling (padding) and re-merged by a 09-07 write pass that never read the leads file: they are back in data/leads/leiden.json with the reason, Leiden is 18 again, and its English and Dutch copy say eighteen. New ratchet check `check_no_published_tree_is_a_redirect()` in scripts/preflight.py refuses a published tree whose slug the map redirects, in either direction. Preflight: 719 cities, 0 problems.
+
+**FOR HIDDE:** submit `https://ancienttrees.app/sitemap-bing.xml` in Bing Webmaster Tools (Sitemaps), once the deploy is live. It must NOT go into Search Console and is deliberately absent from robots.txt. While there, check Site Explorer for how many pages Bing holds.
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-09](archive/LOG-2026-09.md)
@@ -17,11 +92,60 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Measured first:** of 3,471 trees live on 09-27, 4 stories changed since, 215 gained a register link, 62 a girth, 70 a height, 27 a photo, 8 a confirmed pin; 245 added. 52 cities marked enriched in two days with their gaps open; the newest runs were adding trees in Salzburg and Stuttgart. 2,311 of 2,822 tree pages in the proven cities noindexed. 8,025 of 11,526 noindexed pages were fallback language pages.
 - **Done, live with this deploy:**
   - The /[lang]/<city> and /[lang]/<city>/<question> fallback pages are no longer built; every URL redirects to its English page (redirect-map.ts). Translated chrome links untranslated cities at their English URL (`cityHref()`). Noindex list: 11,526 to about 4,500 paths.
-  - `enriched()` in scripts/findable.py: a tree page in a proven city is indexed without a photograph once it is findable and carries register, measurement and access. 182 qualify; `RETURN_PER_BUILD = 60` in thin_pages.py phases them under qa's 80-url guard.
+  - `enriched()` in scripts/findable.py: a tree page in a proven city is indexed without a photograph once it is findable and carries register, measurement and access. 182 qualify; `RETURN_PER_BUILD = 40` in thin_pages.py phases them under qa's 80-url guard.
   - scripts/enrich.py: every tree in a proven city in scope, indexed first, 20 per brief; dead ends per tree and gap (data/enrich-done.json, 90 days) instead of a city-level done mark; `pin` gap closable with a sourced small site or a sourced coordinate within 300 m; `--status` prints what the rule returns. The old city-level ledger is dropped, deliberately. `--next` now says Singapore (19 gaps on 34 trees) instead of Tallinn.
   - **No new tree unless rich or reader-added (Hidde, same session).** `check_a_new_tree_is_rich_or_a_readers()` in preflight, `ADD_NEEDS_RICH` and `reader_added()` in findable.py, data/rich-baseline.json (3,716 ids). BRIEF_RESEARCH.md, passcheck's brief and prepare.py say it to the runs.
 - **Not done, advised only:** the 90-day freeze on new places, the twelve hero cities, the north-star change. Hidde's to rule on.
 
+## 2026-10-08 (night run, midday) Deploy fix + Delft +3
+
+**Rung 2:** deploy and smoke were red because Sao Paulo (1 tree) and Vienna (4) carried `"best_time": null`, which the Astro schema rejects; the keys are dropped, preflight 0 problems, pushed. The other red item (6 of 12 knocks delivered) is GitHub dropping the cron.
+**Trees:** Nuremberg and Frankfurt are walls (Nuremberg's register is mined out, 0 new; Frankfurt has no register), both released with 48h walls. Delft +3 (del_009 Botterbrug plane and del_010 Annageer plane with PDOK-confirmed pins, del_011 Oostpoort ash on a 40 m small site, approximate, needs a reader photo), merged, preflight 0 problems; 13 leads/blocked in data/leads/delft.json. Delft is now 11. Visits line: 1611 visits in 7 days.
+**Refused commands:** none this window. Stopped at ~3 passes; the 19 written-awaiting trees elsewhere are held for lack of photo or pin.
+
+## 2026-10-08 Vienna verify + write pass, 17 trees merged
+
+Enrichment queue is empty on the proven cities (Padua, Salzburg, Graz, Lucca, Dresden done above). Then Vienna: 7 new Wien Naturdenkmal park trees (vie_045 to vie_051; vie_051's pin stays approximate, a group of four poplars). The write pass also merged 10 already-written trees waiting in research files: chi_014/015/017, fdl_001, fuk_017, nbg_018, ptl_027, sfo_008, tkc_004/005. German overlays for Vienna and Nuremberg, Japanese for Fukuoka, count copy fixed in Chicago, San Francisco, Vienna. Held back on rule 10 (access unstated): lpz_019, ftw_018. tree-of-the-year std_001/nsb_001 wait on the four-tree place floor. Not delivered from Vienna: Schönbrunn trio (no pin or photo), Prater black poplar (maybe gone). Preflight 0 problems. Note: vie_047 uses Salix alba Tristis while other cities use Salix babylonica for weeping willow.
+
+## 2026-10-08 Dresden enrichment
+
+Nine of twelve indexed trees: per-tree Umweltamt records (stadtplan.dresden.de Kurzdokumentation) as register URLs with ND numbers, four heights, Pillnitz camellia height, two best_time entries (lime flowering, beech colour). Splittereiche, Saengereiche and Bismarck Oak are not Naturdenkmale and stay gaps. dre_016's stored girth 535 is a 0.3 m base figure, not a 1.30 m girth: worth a correction when a real figure turns up.
+
+## 2026-10-08 Lucca enrichment
+
+Three trees: MASAF register sheet numbers (26/E715/LU/09, 34/E715/LU/09, 25/E715/LU/09), Orto Botanico price and hours from the garden's own visit page, Torre Guinigi booking and steps from turismo.lucca.it. No new measurements (two already had them; the tower oaks are a group record).
+
+## 2026-10-08 Graz enrichment
+
+Eight Naturdenkmal trees: register ids from the Stadt Graz open-data layer (CC BY 4.0), Schloss Eggenberg park price and hours for the copper beech (official tickets page), best_time for the copper beech (autumn colour) and the Lustbuhel chestnut (October fruit) from the species files. No measurements published anywhere found.
+
+## 2026-10-08 Salzburg enrichment
+
+Three Naturdenkmal trees got register ids (NDM00196, NDM00215, NDM00232, Land Salzburg open dataset via de.wikipedia list). No per-tree authority page found (salzburg.gv.at naturdenkmaeler page 404), no measurements published, access lines unchanged.
+
+## 2026-10-08 Padua enrichment
+
+Four indexed trees: register ids (Il Registro degli Alberi 3247/3248/3251/3254), girth/height for the plane, ginkgo and magnolia, access lines from the garden's own tickets page (ortobotanico1545.it; ortobotanicopd.it fails SSL). No best_time: nothing above 'nice' in the species file. Preflight 0 problems.
+
+## 2026-10-08 Nuremberg enrichment
+
+Four trees got their Bavarian Naturdenkmal id (the three oaks ND-05057, 05059, 05060; the Hallerwiese lime ND-04981, a probable rather than certain match since the city list has only one lime there). No per-tree register page exists and no girth or height is published, so measurements stay gaps. Released the claim with --force: nbg_018 is a separate verified tree awaiting a writer, not part of this pass.
+
+## 2026-10-08 Olympic National Park enrichment
+
+Thin yield: only the Quinault Big Spruce got a register link (NPS has a page for that one tree). The Kalaloch cedar and Tree of Life have no NPS record, and the Duncan Cedar's only figures are a diameter, so none were converted to a girth. The resort's measurements for the spruce were not taken (the resort's claim, not an authority's). Next: `enrich.py --next`.
+
+## 2026-10-08 Belgrade enrichment
+
+All five trees got a protected-tree register entry from Zelenilo Beograd's list (the Topčider plane only a decision number, no authority page found) and four got girth and height; the Serbian Wikipedia figures disagree with Zelenilo's on three trees and the measure_source says so. Zemun yews have no measurement anywhere, no access line changed, no season set. Next: `enrich.py --next`.
+
+## 2026-10-08 Bologna enrichment
+
+Rung: enrichment, per prepare.py (7-day visits 1,700). Five of seven trees got a RAMI/AMI register id (Sequoia, Minghetti plane, Malpighi plane, Rizzoli cedar, Cavour ginkgo); the Rizzoli cedar also got 520 cm girth and 29.2 m height. Montagnola planes (ensemble, no single AMI code) and the Villa Ghigi cedar stay gaps; bbcc.regione.emilia-romagna.it returned 403 to curl. No season set. No new trees; the writable pile is still empty. health.py: only 6 of 12 knocks delivered in 24h, not dispatched by hand. Next: belgrade.
+
+## 2026-10-08 Night run: enrichment of Tallinn, Leiden, Luxembourg City
+
+Rung: enrichment first, per prepare.py. 7-day visits: 1,553. Tallinn: EELIS records and 1997 survey measurements for the linden and the ginkgo (the Russalka oak has no register entry). Leiden: Hortus hours and prices on four trees, register links on the catalpa and the Groenesteeg beech, autumn colour season for the weeping beech. Luxembourg: ANF register ids for four trees (the geojson has no measurements; the Krombach oak is not in it). No new trees: the writable pile is still empty and the refill (1031 leads needing a source) was not touched. health.py also flagged only 5 of 12 knocks delivered in 24h; I did not dispatch one by hand since this run was already live. Pass-reported hosts that did not resolve: register.keskkonnainfo.ee, www3.tallinn.ee. Lyon after that: the Pin de Bunge got the city's own 2024 press-release measurements (267 cm girth, 21 m) and its A.R.B.R.E.S. label; the Osage orange and the Chartreux garden stay gaps (no register or authority figure). One verify agent's cleanup (rm) was refused as expected.
 
 ## 2026-10-08 Sequoia National Park enrichment
 

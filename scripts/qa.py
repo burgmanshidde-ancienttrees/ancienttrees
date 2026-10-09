@@ -2046,6 +2046,114 @@ def _lastmod_counts(date):
     return n, len(entries)
 
 
+def check_the_noindex_split_holds():
+    """Pages Google alone is asked not to list carry the googlebot tag and only
+    that; everything else on the noindex list carries the generic robots tag;
+    the two sitemaps hold the right halves; and robots.txt never names Bing's.
+
+    Written 2026-10-08, the day Hidde said "Ok do the split". The generic
+    robots meta is read by every engine, so the 2026-10-01 noindex had taken
+    11,500 pages out of Bing, DuckDuckGo and Yahoo as well, and Bing had never
+    demoted us: its referrals went from 30 to 40 a window to zero the day the
+    tag went on. The honest tree pages without a photograph now carry
+    <meta name="googlebot" content="noindex"> and are offered to Bing in
+    sitemap-bing.xml. What would break it silently, and what this refuses:
+    a tree page that gets the generic tag again (Bing loses it with nobody
+    noticing), a duplicate fallback page that gets only the googlebot tag
+    (Bing fills with duplicates), a Google-only page back in sitemap.xml
+    (Google told to index a page it is told not to), and sitemap-bing.xml
+    reaching robots.txt (Google reads it, and the split is gone). Removing
+    this check needs Hidde.
+    """
+    nf = ROOT / "data" / "noindex.json"
+    if not nf.exists() or not DIST.exists():
+        return []
+    doc = json.loads(nf.read_text(encoding="utf-8"))
+    paths = doc.get("paths") or {}
+    paths = set(paths if isinstance(paths, list) else paths.keys())
+    google_only = set(doc.get("google_only") or [])
+    out = []
+    stray = sorted(google_only - paths)
+    if stray:
+        out.append("noindex.json: %d google_only paths are not on the noindex list, e.g. %s"
+                   % (len(stray), ", ".join(stray[:3])))
+    langs = {"de", "es", "fr", "it", "ja", "nl", "pt"}
+    qslugs = {"oldest-tree", "aeltester-baum", "arbol-mas-antiguo", "arbre-le-plus-vieux",
+              "albero-piu-antico", "saiko-rei-no-ki", "oudste-boom", "arvore-mais-antiga"}
+
+    def is_tree_page(p):
+        seg = [x for x in p.split("/") if x]
+        if seg and seg[0] in langs:
+            seg = seg[1:]
+        return len(seg) == 2 and seg[1] not in qslugs
+
+    not_trees = sorted(p for p in google_only if not is_tree_page(p))
+    if not_trees:
+        out.append("noindex.json: %d google_only paths are not tree pages (only a tree page "
+                   "may leave Google alone), e.g. %s" % (len(not_trees), ", ".join(not_trees[:3])))
+
+    def built(p):
+        # The page is <path>.html; <path>/index.html beside it is the
+        # trailing-slash redirect stub the build writes, so it comes second.
+        f = DIST / (p.lstrip("/") + ".html")
+        if not f.exists():
+            f = DIST / p.lstrip("/") / "index.html"
+        return f.read_text(encoding="utf-8", errors="replace") if f.exists() else None
+
+    gbot = re.compile(r'<meta name="googlebot" content="noindex')
+    robots = re.compile(r'<meta name="robots" content="noindex')
+    wrong_g, wrong_a, checked = [], [], 0
+    for p in sorted(google_only):
+        text = built(p)
+        if text is None:
+            continue
+        checked += 1
+        if not gbot.search(text) or robots.search(text):
+            wrong_g.append(p)
+    # Every other listed page: a sample is enough to catch the template
+    # regressing, and the whole list is 8,000 files.
+    others = sorted(paths - google_only)
+    for p in others[::25]:
+        text = built(p)
+        if text is None:
+            continue
+        checked += 1
+        if not robots.search(text) or gbot.search(text):
+            wrong_a.append(p)
+    if wrong_g:
+        out.append("%d Google-only pages do not carry exactly the googlebot noindex tag, e.g. %s"
+                   % (len(wrong_g), ", ".join(wrong_g[:3])))
+    if wrong_a:
+        out.append("%d noindexed pages do not carry the generic robots noindex tag, e.g. %s"
+                   % (len(wrong_a), ", ".join(wrong_a[:3])))
+    base = "https://ancienttrees.app"
+    sm = DIST / "sitemap.xml"
+    if sm.exists():
+        locs = set(re.findall(r"<loc>([^<]+)</loc>", sm.read_text(encoding="utf-8")))
+        leaked = sorted(p for p in google_only if base + p in locs)
+        if leaked:
+            out.append("sitemap.xml lists %d Google-only pages, e.g. %s" % (len(leaked), ", ".join(leaked[:3])))
+    bing = DIST / "sitemap-bing.xml"
+    if google_only and not bing.exists():
+        out.append("sitemap-bing.xml is missing while %d pages are Google-only" % len(google_only))
+    elif bing.exists():
+        locs = set(re.findall(r"<loc>([^<]+)</loc>", bing.read_text(encoding="utf-8")))
+        extra = sorted(u for u in locs if u[len(base):] not in google_only)
+        missing = sorted(p for p in google_only if base + p not in locs)
+        if extra:
+            out.append("sitemap-bing.xml holds %d urls that are not Google-only pages, e.g. %s"
+                       % (len(extra), ", ".join(extra[:3])))
+        if missing:
+            out.append("sitemap-bing.xml misses %d Google-only pages, e.g. %s"
+                       % (len(missing), ", ".join(missing[:3])))
+    rb = DIST / "robots.txt"
+    if rb.exists() and "sitemap-bing" in rb.read_text(encoding="utf-8", errors="replace").lower():
+        out.append("robots.txt names sitemap-bing.xml: Google reads robots.txt, so the split is gone")
+    if not out:
+        print("qa: noindex split holds (%d Google-only pages, %d built pages checked)" % (len(google_only), checked))
+    return out
+
+
 def check_robots_is_the_file_we_wrote():
     """The built robots.txt is the one in site/public/, byte for byte.
 
@@ -2696,6 +2804,7 @@ def main():
     failures += check_no_collection_is_empty()
     failures += check_nothing_is_stored_locally()
     failures += check_robots_is_the_file_we_wrote()
+    failures += check_the_noindex_split_holds()
     failures += check_approved_photos_reach_the_feed()
     failures += check_every_feed_field_reaches_the_app()
     failures += check_every_language_gets_the_same_controls()

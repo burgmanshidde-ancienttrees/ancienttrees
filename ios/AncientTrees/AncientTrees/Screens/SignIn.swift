@@ -301,11 +301,20 @@ struct SignInSheet: View {
         VStack(alignment: .leading, spacing: 8) {
             SpeciesMark(species: "Pedunculate Oak", color: brand)
                 .frame(width: 52, height: 52)
+            // The brand's display face and ink, as every other heading in the
+            // app and the website's dialog (Hidde, 2026-10-08: "the design of
+            // the overlay to login is a bit off"). It was the system bold in
+            // system colours, the one heading in the app that did not look
+            // like ours.
             Text(reason.headline)
-                .font(.title2.bold()).multilineTextAlignment(.leading)
-            Text(reason.detail)
-                .font(.subheadline).foregroundStyle(.secondary)
+                .font(.brand(26, .bold, relativeTo: .title2))
+                .foregroundStyle(Brand.ink)
                 .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
+            Text(reason.detail)
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .multilineTextAlignment(.leading)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, 2)

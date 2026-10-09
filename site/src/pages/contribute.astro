@@ -237,7 +237,9 @@ const headExtra = ldScript(graph);
   // real page. The load event fires once every inline script has run.
   if (!gate.hidden) {
     var openGate = function() {
-      if (window.atOpenSignIn) window.atOpenSignIn(null, 'contribute');
+      // quiet: shown by the page, not asked for by a tap, so it is not a
+      // signin-open event (see atOpenSignIn).
+      if (window.atOpenSignIn) window.atOpenSignIn(null, 'contribute', { quiet: true });
     };
     if (document.readyState === 'complete') openGate();
     else window.addEventListener('load', openGate);

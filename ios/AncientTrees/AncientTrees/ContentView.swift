@@ -49,6 +49,7 @@ struct ContentView: View {
     /// Who you are and who you follow, opened on his 2026-08-26 yes.
     @State fileprivate var profiles = Profiles()
     @State private var rootSheet: RootSheet?
+    @Environment(\.scenePhase) private var scenePhase
     @State private var slowStart = false
     /// One path per tab, so tapping the tab you are already on can empty it.
     ///
@@ -274,6 +275,20 @@ struct ContentView: View {
     /// Nothing of somebody's collection survives on a phone nobody is signed
     /// in to. The stores keep the data on the SERVER; this only empties the
     /// copy here, which is why both calls are named forgetLocally.
+    /// What the account holds, read from the server: the profile and its
+    /// counts, blocks, saves, your own trees and their photographs, and your
+    /// votes. Run on a sign-in and when a launch without signal missed it.
+    private func reloadTheAccount() async {
+        guard account.isSignedIn else { return }
+        let token = await account.freshToken()
+        await profiles.load(userId: account.session?.userId, token: token)
+        if let token { await moderation.load(me: account.session?.userId, token: token) }
+        await CloudSync.merge(account: account, saved: saved)
+        sightings.restorePending()
+        await SightingSync.merge(account: account, sightings: sightings)
+        await myVotes.load(account: account)
+    }
+
     private func forgetIfSignedOut() {
         guard !account.isSignedIn else { return }
         saved.forgetLocally()
@@ -762,7 +777,23 @@ struct ContentView: View {
         // server demonstrably holds, which left a signed-out phone showing
         // somebody's trees on the map and letting anyone delete them. It is
         // asked per sighting now, and `syncedAt` is the answer.
-        .onChange(of: account.isSignedIn) { _, _ in forgetIfSignedOut() }
+        // AND ON THE WAY BACK IN (2026-10-08). Everything the account holds
+        // was read once, at launch, and nowhere else: sign in during a session
+        // (or again, after a sign-out) and the profile picture, the follow
+        // counts, your trees' photographs and your votes all stayed empty
+        // until the app was killed and reopened. That is what Hidde saw as
+        // "profile pic is gone", "my followers stats are gone" and "several of
+        // my trees no longer have a photo".
+        .onChange(of: account.isSignedIn) { _, now in
+            if now { Task { await reloadTheAccount() } } else { forgetIfSignedOut() }
+        }
+        // A launch with no signal reads nothing; coming back to the app with
+        // one tries again, once, if the profile never arrived.
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active, account.isSignedIn, !profiles.meLoaded {
+                Task { await reloadTheAccount() }
+            }
+        }
         .task {
             // AT LAUNCH TOO, not only on the transition (Hidde, 2026-08-29:
             // "ik zie nog steeds favoriet een vink icoon op de map waar niet

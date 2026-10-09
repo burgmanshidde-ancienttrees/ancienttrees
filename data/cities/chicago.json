@@ -3,9 +3,9 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "chi_003",
-  "intro": "Chicago is a young city on old prairie, and its oldest trees are the prairie's survivors: bur oaks that stood here before the city had a name. One shaded the Midway while the 1893 World's Fair rose around it, and a Norwood Park savanna remnant may be older than the United States. Out in the county's forest preserves stand ranked champions, among them hackberries and white oaks. The famous zoo oak fell in 2023. Eleven of the thirteen are free; the two golf-course champions generally need a green fee.",
+  "intro": "Chicago is a young city on old prairie, and its oldest trees are the prairie's survivors: bur oaks that stood here before the city had a name. One shaded the Midway while the 1893 World's Fair rose around it, and a Norwood Park savanna remnant may be older than the United States. Out in the county's forest preserves stand ranked champions, among them hackberries and white oaks. The famous zoo oak fell in 2023. Fourteen of the sixteen are free; the two golf-course champions generally need a green fee.",
   "meta_description": "Chicago's remarkable trees: prairie bur oaks older than the city, and Cook County's forest preserve champions, from hackberries to white oaks.",
-  "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and 12 more remarkable trees.",
+  "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and 15 more remarkable trees.",
   "question_answer": "Chicago's oldest known trees are the bur oaks of the Union Ridge Cemetery savanna in Norwood Park, estimated by one expert survey at 325 to 375 years, older than the United States. The most storied is the bur oak on the Midway Plaisance in Hyde Park, which stood before the 1893 World's Fair was laid out around it.",
   "question_context": "Chicago's relationship with old trees is mostly a story of what the prairie kept. The city itself is young, incorporated in 1837, and it burned in 1871, so almost nothing planted stands out for age. What survives is what was already here: bur oaks, the prairie's fire-resistant veterans, in the few corners the city never quite got around to flattening. The best known of them, the bur oak at Lincoln Park Zoo that generations called Chicago's oldest tree, was cut down in May 2023 after it died, which quietly promoted the others. The Midway oak in Hyde Park carries a genuine dispute, one university account says it was planted for the 1893 fair, others say the fair was built around it, and its page gives both versions. The Union Ridge savanna's ages rest on a single expert's estimate and say so. That honesty matters here more than in most cities, because the register Illinois keeps for its champion trees records size, not age, and so does the county's own; a champion is not automatically ancient.",
   "faq": [
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Chicago's remarkable trees free to visit?",
-      "a": "Eleven of the thirteen are free. The Midway oak and the Wooded Island grove stand in public parks, Union Ridge is a cemetery open in daylight hours, and the forest preserve champions stand on public preserve land. The champion boxelder and the champion red pine stand on public golf courses, where a green fee is generally needed to walk the course; ask at the clubhouse."
+      "a": "Fourteen of the sixteen are free. The Midway oak and the Wooded Island grove stand in public parks, Union Ridge is a cemetery open in daylight hours, and the forest preserve champions stand on public preserve land. The champion boxelder and the champion red pine stand on public golf courses, where a green fee is generally needed to walk the course; ask at the clubhouse."
     },
     {
       "q": "Why are they almost all bur oaks?",
@@ -448,6 +448,102 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "chi_014",
+      "name": "The Champion Basswood of Busse Forest South",
+      "species": "American Basswood (Tilia americana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 391,
+      "height_m": 24.4,
+      "location": {
+        "address": "Busse Forest South, Forest Preserves of Cook County, Illinois",
+        "latitude": 42.027453,
+        "longitude": -88.026522,
+        "neighbourhood": "Busse Forest South"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+      ],
+      "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the biggest basswood on all the land of the Forest Preserves of Cook County, first in their champion tree register. Its trunk is 3.91 metres round, and it stands 24.4 metres tall under a crown about 16 metres one way and 17 the other.\n\nThe same preserve holds the county's third-ranked basswood, about 730 metres to the north, and the two are an instructive pair. They are exactly the same height, 24.4 metres each. The difference is all in the trunk: this one is 80 centimetres thicker round, and the register ranks it first and the other third. Stand at one and then the other, and you are looking at the same species, the same height and the same woods, with the champion simply carrying more wood.\n\nBusse Forest South holds a third ranked tree as well, the county's second-ranked sugar maple, about two and a half kilometres to the east and twelve metres taller than either basswood. Together they make a long walk past three trees the county has measured and ranked.\n\nThe register records the size and place but no measurement date, and nothing about age. Nobody has dated this basswood. If you know how old it is, or when it was last measured, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 3.91 metres round, the thicker of the two ranked basswoods in Busse Forest South. It stands about 730 metres south of the third-ranked one, at the register's point.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "ready_to_merge": true
+    },
+    {
+      "id": "chi_015",
+      "name": "The Third-Ranked Basswood of Busse Forest South",
+      "species": "American Basswood (Tilia americana)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 311,
+      "height_m": 24.4,
+      "location": {
+        "address": "Busse Forest South, Forest Preserves of Cook County, Illinois",
+        "latitude": 42.033998,
+        "longitude": -88.026044,
+        "neighbourhood": "Busse Forest South"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+      ],
+      "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This basswood is the third biggest the Forest Preserves of Cook County have measured on their land, and it stands just 730 metres from the champion. The two are exactly the same height, 24.4 metres each.\n\nWhere they part is the trunk. This one is 3.11 metres round against the champion's 3.91. Its crown, though, is the wider of the two, about 19 metres one way and 16 the other, so from a distance it may look the larger tree. Up close, the trunk tells them apart, and the register ranks this one third.\n\nThat makes Busse Forest South a good place to train your eye. Walk between the two basswoods and you see how much a species can vary in one woodland: same height, same ground, eighty centimetres of trunk between them. The preserve's other ranked tree, the county's second-ranked sugar maple, stands about two and a half kilometres to the southeast and rises to 36.6 metres, half as tall again as either basswood.\n\nThe register records size and place but no date of measurement and no age. Nobody has dated this tree. If you know how old it is, or have measured it yourself, tell us.",
+      "how_to_recognise": "You can recognise it by the wide crown, about 19 by 16 metres, over a trunk 3.11 metres round, slimmer than the champion's. It stands about 730 metres north of the champion basswood.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "ready_to_merge": true
+    },
+    {
+      "id": "chi_017",
+      "name": "The Pin Oak of Rolling Knolls",
+      "species": "Pin Oak (Quercus palustris)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 359,
+      "height_m": 29.0,
+      "location": {
+        "address": "Rolling Knolls, Forest Preserves of Cook County, Illinois",
+        "latitude": 42.037074,
+        "longitude": -88.231272,
+        "neighbourhood": "Rolling Knolls"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0"
+      ],
+      "access": "Free, a Forest Preserves of Cook County site open to the public (register Public_Access: Yes).",
+      "transport": "",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This pin oak's crown spreads about 26 metres one way and 22 the other, on a tree only 29 metres tall. It is the champion pin oak of the Forest Preserves of Cook County, first among all those on preserve land, and it is nearly as wide as it is high.\n\nThe trunk is 3.59 metres round. Put the tree beside the county's champion white oak at Red Gate Woods, itself notable for a broad, even crown: that oak is 29.3 metres tall, almost the same, yet its crown is about three metres narrower across its widest line. No crown among the Cook County champions on our Chicago page spreads further than this one.\n\nPin oaks are familiar on our map from the other side of the Atlantic. We list them in Dutch parks in Haarlem, Apeldoorn, Eindhoven and Sittard, where the registers record planting dates between the 1860s and about 1910. None of those carries a measured trunk or crown on our pages, so this champion is the first pin oak we can describe in numbers.\n\nRolling Knolls lies at the far western edge of the trees on this page, a trip of its own rather than part of a walk.\n\nThe register records no measurement date and no age. Nobody has dated this oak. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by the crown, about 26 by 22 metres, nearly as wide as the 29-metre tree is tall, over a trunk 3.59 metres round. It stands at the register's point in Rolling Knolls.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "ready_to_merge": true
     }
   ]
 }

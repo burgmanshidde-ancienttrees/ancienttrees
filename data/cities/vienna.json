@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "hero_tree_id": "vie_014",
   "intro": "Vienna keeps its oldest trees on an official register: since 1936, remarkable specimens have qualified as Naturdenkmäler, natural monuments protected the same way a listed building is. That bureaucratic habit is why this city can name an exact protection date for almost every tree on this list, down to the day. The trees below range from a plane tree Mozart is said to have walked past on his way to piano lessons to a ginkgo planted beside a composer's statue in the city's first public park. All of them are free to see.",
-  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. 43 remarkable trees, all free to visit.",
+  "meta_description": "Vienna's ancient trees range from a Mozart-era plane to twin ginkgos a century apart. 55 remarkable trees, all free to visit.",
   "question_answer": "The oldest tree in Vienna is a plane tree tucked into the Fähnrichhof courtyard off Singerstraße in the old town, estimated at more than 280 years old. A 1987 survey already measured its age at over 250 years, and in the centuries since it has grown around part of the iron fence from St Stephen's old cathedral graveyard, closed in the 1730s. It stands a short walk from Stephansplatz, reached through a public passage from Blutgasse.",
-  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and 42 more remarkable trees.",
+  "question_meta": "Vienna's oldest tree is a 280-year-old plane hidden in a Singerstrasse courtyard. Where it stands, and 54 more remarkable trees.",
   "question_context": "Vienna's natural monument register, running since 1936, gives an exact protection date for almost every historic tree in the city, but planting dates are rarer, so ages here are mostly expert estimates rather than documented facts. The Singerstraße plane is the exception: a formal 1987 survey put its age at more than 250 years even then, which is about as close to a hard number as Vienna's tree records get, ahead of the ginkgo by the Schubert monument and the Hauptallee's chestnut avenue, both estimated rather than surveyed. It grows in the Fähnrichhof, a courtyard reached through a passage (a Durchhaus, in local terms) connecting Blutgasse and Singerstraße in the first district, a few minutes on foot from Stephansplatz. The tree's most remarkable feature is not visible: part of the iron fence that once enclosed St Stephen's Cathedral's own graveyard, closed to burials in the 1730s, is sealed inside its trunk, absorbed by decades of growth.",
   "faq": [
     {
@@ -1587,6 +1587,340 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "vie_045",
+      "name": "The Theodor-Körner-Park Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 180 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 430,
+      "location": {
+        "address": "Theodor-Körner-Park, opposite Breitenfurter Straße 13, Meidling",
+        "latitude": 48.172975,
+        "longitude": 16.328572,
+        "neighbourhood": "Meidling (12th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Meidling (ND 847)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Quercus robur, 430 cm, planting year 1842, 0 m from the register point, Theodor-Körner-Park)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "This oak has its own boulder. Beside the trunk in Theodor-Körner-Park sits a stone with an inscription plaque, and the oak it refers to is known as the Theodor-Körner-Eiche. Vienna lists it as Natural Monument 847, and the monument list gives its reasons in three words: size, habit and vitality.\n\nThe size is easy to check. The city's tree cadastre measures the trunk at 4.3 metres round, and records a planting year of 1842. That is the cadastre's own entry for this tree rather than a dated document, so read it as a guide: somewhere between 150 and 200 years, with 1842 the likeliest. If it holds, the oak was a sapling while Meidling was still a separate village, and it has stood through the village becoming part of Vienna in 1892 and through two world wars.\n\nOne thing the paperwork does not say is why the oak carries the name it does, or when the stone was set beside it. It would be tidy to assume the tree was planted in somebody's honour, and no source we have found says so. The stone points at the tree; the tree came first, or at least nobody has shown otherwise.\n\nIt is a free walk in a public park with no opening hours. Go in leaf, when the crown that earned the protection is at its fullest. If you know the story of the stone, tell us.",
+      "how_to_recognise": "You can recognise it by the boulder with an inscription plaque that stands beside the trunk, 4.3 metres round. It stands opposite Breitenfurter Straße 13; the big horse chestnut about 30 metres away is a different tree."
+    },
+    {
+      "id": "vie_046",
+      "name": "The Venediger-Au-Park Plane",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 175 years",
+      "age_min": 150,
+      "age_max": 200,
+      "girth_cm": 546,
+      "location": {
+        "address": "Venediger-Au-Park, Leopoldstadt",
+        "latitude": 48.218538,
+        "longitude": 16.395899,
+        "neighbourhood": "Leopoldstadt (2nd district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt (ND 781, protected 2012-08-11)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Platanus x acerifolia, 546 cm, planting year 1849, 2 m from the register point, Venediger-Au-Park)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The thickest tree in the Venediger-Au-Park was protected only in 2012, when it was already more than a century and a half old. Vienna made this London plane Natural Monument 781 that August, and the reason on the list is its role in the landscape: the park would look like a different place without it.\n\nThe trunk explains why. The city's tree cadastre puts it at 5.46 metres round, which is a very heavy plane by any city's standard, and records a planting year of 1849. That year is the cadastre's entry rather than a planting document, so we give it as a band, roughly 150 to 200 years. If 1849 is right, the plane went into the ground a year after the revolution of 1848 shook Vienna.\n\nSince then it has outlasted a great deal of the Leopoldstadt around it. It was here when the Danube was straightened in the 1870s, and here while the district's Jewish community grew into one of the largest in Europe and was then destroyed in the 1930s and 1940s. The tree stood through all of it in what is now a small neighbourhood park, and for most of that time nobody wrote it down.\n\nThe other big trees here are a 1914 lime and a 1921 ash, both around three metres round. Next to them this one looks like it belongs to an older map, which it does.",
+      "how_to_recognise": "You can recognise it as the thickest trunk in the park, 5.46 metres round, with the patchy flaking bark of a plane. The park's next biggest trees, a lime and an ash, stand about 30 metres off and are far slimmer."
+    },
+    {
+      "id": "vie_047",
+      "name": "The Bruno-Morpurgo-Park Weeping Willow",
+      "species": "Weeping Willow (Salix alba Tristis)",
+      "age_estimate": "not documented",
+      "girth_cm": 305,
+      "location": {
+        "address": "Bruno-Morpurgo-Park, Endresstraße 10-14, Liesing",
+        "latitude": 48.148165,
+        "longitude": 16.291391,
+        "neighbourhood": "Liesing (23rd district), Atzgersdorf"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Liesing (ND 814)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Salix alba Tristis, 305 cm, planting year 1970, 1 m from the register point, Bruno-Morpurgo-Park)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Vienna protects plenty of trees for being old. This weeping willow in Atzgersdorf was protected for its character. It is Natural Monument 814, and the monument list says the reason plainly: it gives the Bruno-Morpurgo-Park its look.\n\nIt does that lopsidedly. The list describes an asymmetric crown about ten metres across and roughly twelve metres tall, the long hanging shoots falling further on one side than the other. When it was designated, the trunk measured 2.40 metres round at one metre up. The city's tree cadastre now records 3.05 metres. That is how willows behave: they put on girth fast, which is also why a thick willow is a poor guide to age.\n\nSo we do not give one. The cadastre carries a planting year, but nothing we have found shows it to be more than an estimate, and on a tree that grows this quickly a guess would be worse than nothing. What can be said is that weeping willows are not long-lived trees, and one large enough and shapely enough to be singled out by the city is worth a stop on its own terms.\n\nIt stands in a small public park on Endresstraße in the 23rd district, free and open. Come in early spring, when the curtain of shoots turns yellow-green before almost anything else around it has leafed. If you know when it was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the hanging curtain of shoots and the crown that leans further to one side, about ten metres across. It stands in the Bruno-Morpurgo-Park on Endresstraße, trunk about three metres round.",
+      "best_time": {
+        "months": [
+          3,
+          4
+        ],
+        "kind": "fresh leaves",
+        "label": "late March into April, when the hanging shoots turn yellow-green ahead of everything else"
+      }
+    },
+    {
+      "id": "vie_048",
+      "name": "The Hugo-Pepper-Park Wingnut",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 427,
+      "location": {
+        "address": "Wolkersbergenstraße / Eugen-Jettel-Weg turning loop (Hugo-Pepper-Park), Hietzing",
+        "latitude": 48.175308,
+        "longitude": 16.273842,
+        "neighbourhood": "Hietzing (13th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Hietzing (ND 816)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Pterocarya fraxinifolia, 427 cm, height class 21-25 m, 4 m from the register point, Hugo-Pepper-Park)"
+      ],
+      "access": "Free. Stands in the public Hugo-Pepper-Park (MA 42 Parkanlage) at the end of Wolkersbergenstraße.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Its crown is wider than it is tall. When Vienna listed this Caucasian wingnut as Natural Monument 816, the measurements came out at about 26 metres across and about 18 metres high, a tree spreading sideways over the end of a suburban street in Hietzing.\n\nThat shape is the whole reason it is protected. The monument list says the free-standing crown shapes the look of the place, and the place is unglamorous: the turning loop at the end of Wolkersbergenstraße, where it meets the Eugen-Jettel-Weg, in the small public Hugo-Pepper-Park. It is a tree that would not look out of place in a palace garden, standing where a road runs out.\n\nWingnuts come from the Caucasus and northern Iran and were planted in European parks from the nineteenth century, prized for exactly this habit of growing big, fast and wide. The trunk measured 4.10 metres round at one metre when it was designated; the city's tree cadastre now gives 4.27 metres and puts the height in the 21 to 25 metre class. No source we have found records when it was planted, so we give no age. If you know, tell us.\n\nCome in early summer. That is when the wingnut hangs out the strings of winged seeds that give it its name, long green chains dangling all over that enormous crown.",
+      "how_to_recognise": "You can recognise it by the crown, far wider than it is tall, spreading over the turning loop at the end of Wolkersbergenstraße. The trunk is about 4.3 metres round, and in summer long green seed chains hang from it.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "fruit",
+        "label": "June and July, when long chains of winged seeds hang all over the crown"
+      }
+    },
+    {
+      "id": "vie_049",
+      "name": "The Maurer Schubertpark Lime",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "not documented",
+      "girth_cm": 320,
+      "location": {
+        "address": "Maurer Schubertpark, corner Rielgasse / Kaserngasse, Liesing",
+        "latitude": 48.149932,
+        "longitude": 16.259543,
+        "neighbourhood": "Liesing (23rd district), Mauer"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Liesing (ND 813)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Tilia cordata, 304 cm, height class 11-15 m, 0 m from the register point, Maurer Schubertpark)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Vienna protected this lime for owning a street corner. The monument list says Natural Monument 813 dominates the crossing of Rielgasse and Kaserngasse in Mauer, and that is the job it still does from the corner of the Maurer Schubertpark.\n\nThe measurements are those of a broad, low tree rather than a tall one. At designation the trunk was 3.20 metres round at one metre up, the crown about 18 metres across and the height about 16 metres, so the crown is wider than the tree is high. The city's tree cadastre, which records it at exactly the register point, gives 3.04 metres and an 11 to 15 metre height class. The gap between the two girths is most likely a different measuring height or date, not a shrinking tree.\n\nMauer was a wine village on the southern edge of Vienna until it joined the city in 1938, and small-leaved limes like this one are the classic village tree of Central Europe, planted at crossings, churches and greens. Nobody has published a planting date for this one, so we give no age. If you know it, tell us.\n\nGo at the end of June or in early July. Small-leaved limes flower then, and a crown this size fills the corner with the scent and the hum of bees.",
+      "how_to_recognise": "You can recognise it as the broad lime commanding the corner of Rielgasse and Kaserngasse, crown wider than it is tall, trunk just over three metres round. It stands at the edge of the Maurer Schubertpark.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the lime flowers and the corner smells of it"
+      }
+    },
+    {
+      "id": "vie_050",
+      "name": "The Münchenstraße Park Ash",
+      "species": "European Ash (Fraxinus excelsior)",
+      "age_estimate": "not documented",
+      "girth_cm": 458,
+      "location": {
+        "address": "Parkanlage Münchenstraße, Werthenburggasse 9, Meidling",
+        "latitude": 48.169349,
+        "longitude": 16.297026,
+        "neighbourhood": "Meidling (12th district), Hetzendorf"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Meidling (ND 356, protected 1946-05-03)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Fraxinus excelsior, 458 cm, height class 21-25 m, 1 m from the register point, Parkanlage Münchenstraße)"
+      ],
+      "access": "Free. Stands in the public Parkanlage Münchenstraße (MA 42); register address is Werthenburggasse 9, the park side, not a private garden (cadastre files it under the public park).",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Vienna made this ash a natural monument on 3 May 1946, less than a year after the war ended, while the city was still divided between four occupying powers and short of almost everything, firewood included. It is Natural Monument 356, one of the older entries on the register, and the list says nothing at all about why.\n\nThe trunk is argument enough. The city's tree cadastre measures it at 4.58 metres round, with a height in the 21 to 25 metre class, which makes it a very large common ash. Ash trees that size have become rarer across Europe in the last twenty years, as ash dieback has killed them by the million, so a big, living one in a city park is worth seeking out.\n\nIt stands in the Parkanlage Münchenstraße in Hetzendorf, in the 12th district. The register files it under the address Werthenburggasse 9, which sounds like a front garden and is not: the city's cadastre places the tree inside the public park, one metre from the register point. Entry is free.\n\nNobody has published a planting date, so we give no age. If you know more, tell us, and if you visit, tell us how the crown looks.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.58 metres round, an unusually heavy common ash in the 21 to 25 metre height class. It stands in the Parkanlage Münchenstraße on the Werthenburggasse side."
+    },
+    {
+      "id": "vie_051",
+      "name": "The Märzpark Lombardy Poplar",
+      "species": "Lombardy Poplar (Populus nigra 'Italica')",
+      "age_estimate": "not documented",
+      "girth_cm": 346,
+      "location": {
+        "address": "Märzpark, Vogelweidplatz, Rudolfsheim-Fünfhaus",
+        "latitude": 48.20191,
+        "longitude": 16.335824,
+        "neighbourhood": "Rudolfsheim-Fünfhaus (15th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Rudolfsheim-F%C3%BCnfhaus (ND 97, protected 1938)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster, MA 42) (Populus nigra Italica, 346 cm, height class 26-30 m, 3 m from the register point, Märzpark)"
+      ],
+      "access": "Free. Public city park (MA 42 Parkanlage); no opening hours.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Almost every Lombardy poplar you have ever seen is male. The columnar tree spread across Europe from cuttings, and female trees of it are rare, so rare in German-speaking countries that when Vienna found four old ones together in the Märzpark it protected the group in 1938 as Natural Monument 97.\n\nThe trunks were 1.50 to 2.10 metres round then. What stands there now is less certain, and we would rather say so. The register still keeps one point for the group. The city's tree cadastre records a Lombardy poplar three metres from that point, 3.46 metres round and in the 26 to 30 metre height class, with a planting year of 1911, which would make it well over a century old if the cadastre's year is right. That is a lot of growth since 1938, though plausible for a poplar, and we have not reconciled the two. Whether the other three of the four still stand, we have not been able to check.\n\nThat matters because Lombardy poplars are short-lived trees, and a group that has made it from 1938 into the present would be remarkable in itself. It is also why our pin marks the park rather than a trunk. Look for the tallest, narrowest trees in the Märzpark by the Vogelweidplatz; the one in the cadastre reaches somewhere near thirty metres.\n\nIf you go, count them, and tell us how many of the four are left.",
+      "how_to_recognise": "You can recognise them as the tall, narrow column-shaped poplars in the Märzpark, the tallest near 30 metres with a trunk about 3.5 metres round. Our pin marks the park, not a single trunk."
+    },
+    {
+      "id": "vie_052",
+      "name": "The Hafenzufahrtsstraße Black Poplar",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "not documented",
+      "girth_cm": 595,
+      "location": {
+        "address": "Hafenzufahrtsstraße 50, Leopoldstadt (2nd district)",
+        "latitude": 48.192681,
+        "longitude": 16.452731,
+        "neighbourhood": "Freudenau, Leopoldstadt (2nd district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3247687, Schwarzpappel, Hafenzufahrtsstrasse 50)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Leopoldstadt (ND 96, protected 1938-11-03)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 42: Populus nigra, 595 cm, 2.6 m from the register point)"
+      ],
+      "access": "Free. Roadside tree on a public street in the Freudenau harbour district; view it from the pavement.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "- Naturdenkmal Nr. 96, protected 3 Nov 1938 'insbesondere wegen ihrer schoenen Kronenbildung' (for its beautiful crown), per the de.wikipedia list reproducing the city's district list.\n- Girth 595 cm is the MA 42 Baumkataster figure (city's own live tree inventory), tree 2.6 m from the register point. Exceptionally thick for a black poplar; the next trees in the cadastre nearby are 410 cm and 180 cm lindens. Register has no girth of its own.\n- A WebSearch summary (a lead, not fetched) hinted that older lists give ND 96 as a black poplar plus a white poplar; the de.wikipedia district list names only the black poplar. Only one tree is claimed here. Wikipedia's own coordinate for it (48.192569, 16.452864) lies about 14 m from the register point; the cadastre row is 2.6 m from the register point.\n- Alive: the cadastre still carries a 595 cm black poplar at the register point (that is the evidence); lifecheck.py returned NONE (no dated photo found), the only photo is Commons Schwarzpappel96-1.JPG, 2014-05-14, CC BY-SA 3.0 at, Maclemo. Register only plus cadastre; no independent recent sighting. Black poplars are short-lived, so flagged.\n- Pin: register point and cadastre row agree within 2.6 m; confirmed on that basis. The neighbouring ND 266 black poplar at Freudenauer Wasser was removed at its age limit, which is the risk for this species.\n- Access: public road (Hafenzufahrtsstrasse), cadastre-managed street tree; not a private garden, not a school. A harbour/industrial road, so the walk is unglamorous.\n- Photo in hand: Commons Schwarzpappel96-1.JPG (2014-05-14, CC BY-SA 3.0 at, Maclemo).",
+      "story": "The city's own tree inventory measures this black poplar at 5.95 metres round, and it stands on a harbour access road. The next big trees the inventory records beside it are two lindens, at 4.10 metres and 1.80.\n\nVienna made it Natural Monument 96 on 3 November 1938, eight months after the annexation by Nazi Germany. The stated reason was not the girth but the crown: it was protected \"especially for its beautiful crown formation\". Everything the city has been through since, it has stood through on this one spot in Freudenau.\n\nThat is also the worry. Black poplars are not long-lived trees, and a second protected black poplar nearby, at the Freudenauer Wasser, has already been removed at the end of its life. The newest photograph of this one we have found dates from 2014. What tells us it still stands is the inventory, which still carries a 5.95 metre black poplar within three metres of the monument's registered point.\n\nNobody has dated it, and the city's records give no planting year. If you know how old it is, tell us.\n\nBe ready for an unglamorous walk: an industrial road through the port district, lorries and warehouses, and the tree on the street edge, seen from the pavement. It is worth it for the trunk alone. If you go, tell us how the crown is looking.",
+      "how_to_recognise": "You can recognise it by the trunk, close to six metres round, far thicker than the lindens near it. It stands on the street edge in front of Hafenzufahrtsstraße 50, on the harbour road."
+    },
+    {
+      "id": "vie_053",
+      "name": "The Haidestraße Black Poplar",
+      "species": "Black Poplar (Populus nigra)",
+      "age_estimate": "not documented",
+      "girth_cm": 369,
+      "location": {
+        "address": "Haidestraße, Simmering (11th district)",
+        "latitude": 48.17597,
+        "longitude": 16.439304,
+        "neighbourhood": "Simmering (11th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3257929, Schwarzpappel, 11., Haidestrasse)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 42: Populus nigra, 369 cm, 0.0 m from the register point)"
+      ],
+      "access": "Free. Roadside tree on a public street; view it from the pavement.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "- Official register only plus the city's own tree cadastre; no second independent source and no Wikipedia entry (the de.wikipedia Simmering list has no Haidestrasse row).\n- Girth 369 cm from the MA 42 Baumkataster, row at 0.0 m from the register point, so the pin is the cadastre's tree-level coordinate. Register has no girth, age or ND number in our import; the designation date is not known.\n- Alive: the cadastre carries it; lifecheck.py gave only an unrelated Commons image 2023 nearby (not this tree). No dated photo of the poplar itself. Register and cadastre only, flagged. Black poplars are short-lived.\n- Access: public street, cadastre-managed street tree; not a garden, not a school.\n- No photograph in hand; ends with a confirmed pin (tree-level cadastre point). Ordinary poplar for the species girth-wise is not claimed: 369 cm is thick for a black poplar but ND 96 in Leopoldstadt is 595 cm.",
+      "story": "This black poplar is a protected natural monument, and almost everything else about it is a blank.\n\nThe city's register lists a Schwarzpappel on Haidestraße in Simmering and, in the data we hold, gives it no number, no date and no reason. It is missing from the German Wikipedia list of Simmering's monuments, which is where we found the designation texts for most of Vienna's other protected trees. What we do have is the city's tree inventory, which records a black poplar 3.69 metres round at exactly the register's point.\n\nThat is a heavy trunk for the species, and still well short of the 5.95 metre black poplar on the Hafenzufahrtsstraße, about two kilometres to the north and also on this page. If you have an afternoon in the east of the city, the two make a pair.\n\nWe cannot tell you when this one was protected or how old it is, and we would rather say so than guess. Black poplars grow fast and do not live long, which makes a protected one in a working district worth seeing while it lasts. We have found no photograph of it at all; the inventory, which is current city data, is our evidence that it still stands.\n\nIt is a street tree, seen from the pavement. If you go, a photograph is the most useful thing you could send us, and if you know when or why the city protected it, tell us that too.",
+      "how_to_recognise": "You can recognise it by the trunk, about 3.7 metres round, a black poplar standing as a street tree. It stands on Haidestraße in Simmering, right at our pin, which comes from the city's own tree inventory."
+    },
+    {
+      "id": "vie_054",
+      "name": "The Oberlaa Caucasian Wingnut",
+      "species": "Caucasian Wingnut (Pterocarya fraxinifolia)",
+      "age_estimate": "not documented",
+      "girth_cm": 265,
+      "location": {
+        "address": "Bischofplatz 4, Oberlaa, Favoriten (10th district)",
+        "latitude": 48.137244,
+        "longitude": 16.397915,
+        "neighbourhood": "Oberlaa, Favoriten (10th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3257874, Kaukasische Fluegelnuss, Bischofplatz 4)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 42: Pterocarya fraxinifolia, 265 cm, 0.0 m from the register point)"
+      ],
+      "access": "Free. On the public Bischofplatz in Oberlaa, a village square.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "- Official register (Stadt Wien Naturdenkmal point layer) plus the city's own tree cadastre; register only, flagged. A WebSearch summary said this is ND 866, listed 12 Jan 2024 for botanical rarity; the wien.gv.at page timed out from the runner and the de.wikipedia Favoriten list as fetched does not carry the row, so the number and date are NOT verified and must not be quoted.\n- Girth 265 cm from the MA 42 Baumkataster, tree 0.0 m from the register point, so the pin is a tree-level cadastre coordinate. Cadastre also holds a walnut 4.6 m away and a robinia 7 m away on the same square.\n- Wingnuts are multi-stemmed suckering trees; whether 265 cm is one trunk was not checked, call it a cadastre figure.\n- Rarity angle: Vienna protects only a handful of Caucasian wingnuts (Stadtpark ND 280, Waldmuellerpark ND 845 with two trees, Wolkersbergenstrasse ND 816 at 410 cm, all on the de.wikipedia lists). This one is a separate tree in a village square in the far south.\n- Alive: in the cadastre; lifecheck.py NONE, no dated photo found. No photograph in hand; ends with a confirmed tree-level pin.\n- Access: public square, not a garden or school. The square is named for a former bishop's court (a search summary, 1585 to 1850); not tied to the tree, do not join them.",
+      "story": "Vienna protects only a handful of Caucasian wingnuts, and this one stands not in a grand park but on a village square at the city's southern edge.\n\nThe others on the city's list are in better-known places: one in the Stadtpark, two in the Waldmüllerpark, and one 4.10 metres round on Wolkersbergenstraße. This one is on the Bischofplatz in Oberlaa, with a walnut a few metres to one side of it and a robinia to the other in the city's tree inventory.\n\nThat inventory gives its girth as 2.65 metres. Treat it as the city's figure rather than a clean measurement: wingnuts sucker freely and often grow as several stems, and we have not checked whether this is one trunk or a cluster.\n\nThe species is the reason to come. A tree of the Caucasus and northern Iran, it carries long leaves built like an oversized ash's and, in summer, hangs its crown with green chains of winged seeds, which is when it is easiest to pick out from across the square.\n\nNobody has dated it, and we have no photograph of it yet. About eighty metres away, on Hintere Liesingbachstraße, stands a protected horse chestnut, so Oberlaa gives you two natural monuments in one short stop. If you go, send us a picture, and tell us how many stems you count.",
+      "how_to_recognise": "You can recognise it in summer by the long hanging chains of winged seeds, which neither the walnut nor the robinia beside it carries. It stands on the Bischofplatz in Oberlaa, by no. 4.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "fruit",
+        "label": "June and July, when green chains of winged seeds hang from the whole crown"
+      }
+    },
+    {
+      "id": "vie_055",
+      "name": "The Türkisgasse Poplar",
+      "species": "Poplar (Populus sp.; register says White Poplar, cadastre says Black Poplar)",
+      "age_estimate": "not documented",
+      "girth_cm": 426,
+      "location": {
+        "address": "Türkisgasse, in front of no. 2, Floridsdorf (21st district)",
+        "latitude": 48.261417,
+        "longitude": 16.425569,
+        "neighbourhood": "Strebersdorf-Stammersdorf area, Floridsdorf (21st district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3257743, Silberpappel, Tuerkisgasse 2)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Floridsdorf (ND 788, protected 2004-01-12, girth 370 cm, height about 28 m, crown about 12 m)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 42: Populus nigra, 426 cm, 0.5 m from the register point)"
+      ],
+      "access": "Free. Street tree in front of Tuerkisgasse 2 in a housing settlement; view it from the pavement.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "- Naturdenkmal Nr. 788, protected 12 Jan 2004. The designation text: 'Sie praegt das Bild der oertlichen Siedlung' (it shapes the look of the local settlement). Wikipedia list gives girth 370 cm, height about 28 m, crown about 12 m at designation.\n- SPECIES CONFLICT, do not pick silently: the register and the Wikipedia list say white poplar (Silberpappel, Populus alba); the MA 42 cadastre row 0.5 m from the register point says Populus nigra (Schwarzpappel). Deliver as 'Poplar (Populus sp.)'. Reader can be asked which.\n- GIRTH CONFLICT: 370 cm at designation (2004) against 426 cm in the cadastre today. Both figures are real sources; the cadastre planting year is 1894, which is the cadastre's own field, not a source for this tree's age, do not state it as the age.\n- Pin: register point and cadastre row agree within 0.5 m; confirmed. Cadastre shows a row of young lindens (planted 1980) along the same street, so the old poplar stands out.\n- Alive: cadastre carries it; lifecheck.py OLD, only a 2014-05-13 Commons photo (Naturdenkmal_788_sl4.jpg). No recent sighting. Register plus cadastre, flagged.\n- Photo in hand: Commons 'Naturdenkmal 788 sl2.jpg' (2013-05-22, CC BY-SA 3.0, Stefan.lefnaer). Not looked at in this pass.\n- Access: public street, MA 42 street tree; not a garden, not a school.",
+      "story": "Vienna's own records cannot agree what this tree is. The natural monument register calls it a white poplar; the city's tree inventory, at the same spot to within half a metre, calls it a black poplar. We have not settled it, so this page says poplar and leaves the question open.\n\nWhat nobody disputes is its place in the street. The city protected it on 12 January 2004 as Natural Monument 788, and the reason given is about the neighbourhood rather than the tree: it \"shapes the look of the local settlement\". On Türkisgasse you can see what that means. The street is lined with lindens the inventory dates to 1980, and one poplar, about 28 metres tall at designation, stands over all of them.\n\nThe measurements disagree as well. At designation the trunk was 3.70 metres round and the crown about 12 metres across. The inventory now records 4.26 metres. Both figures come from the city, and we have not reconciled them.\n\nNobody has dated the tree, and the newest photograph we know of is from 2014. If you go, you can settle the argument in a minute: a white poplar's leaves are bright silvery white underneath, a black poplar's are green on both sides. Tell us which you see, and how the tree is doing.",
+      "how_to_recognise": "You can recognise it as the one tall old poplar in a street of younger lindens, its trunk over four metres round. It stands on Türkisgasse, in front of no. 2."
+    },
+    {
+      "id": "vie_056",
+      "name": "The Oberlaa Horse Chestnut",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented",
+      "girth_cm": 287,
+      "location": {
+        "address": "Hintere Liesingbachstraße, in front of no. 1, Oberlaa, Favoriten (10th district)",
+        "latitude": 48.136575,
+        "longitude": 16.397464,
+        "neighbourhood": "Oberlaa, Favoriten (10th district)"
+      },
+      "verified_sources": [
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3257935, Rosskastanie, Hintere Liesingbachstrasse 1)",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/Favoriten (ND 808, protected 2007-11-08, girth 275 cm, height about 18 m, crown about 10 m)",
+        "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 42: Aesculus hippocastanum, 287 cm, planting year 1925, 0.3 m from the register point)"
+      ],
+      "access": "Free. Street tree in front of Hintere Liesingbachstrasse 1; view it from the pavement.",
+      "transport": "Nearest stop not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "- Naturdenkmal Nr. 808, protected 8 Nov 2007 'aufgrund der Freistandskrone und der Wirkung auf das Ortsbild' (for its free-standing crown and its effect on the townscape). Wikipedia list: girth 275 cm, height about 18 m, crown about 10 m at designation.\n- Cadastre today: 287 cm, listed planting year 1925. The year is the cadastre's field and no source ties it to this tree as an age, so do not state it as the age.\n- Pin: register, Wikipedia and cadastre agree within 0.3 m; confirmed.\n- Alive: cadastre carries it with a larger girth than at designation (a plausible 12 cm in 18 years), which is mild evidence of a living tree; lifecheck.py OLD, newest photo Commons 2014-05-10 (Naturdenkmal_808_2014-05-10_(51)_Wien10_Hintere_Liesingbachstrasse1_Rosskastanie.JPG). Register plus cadastre; chestnuts in Vienna suffer leaf-miner and bleeding canker, so the tree's health is unchecked.\n- Photo in hand: Commons 'Oberlaa 003.JPG' (2014-05-04, CC BY-SA 3.0 at, Johanna Heumann). Not looked at in this pass.\n- Access: public street, MA 42 tree; not a garden, not a school. Ordinary species and modest girth: a thin 'worth the walk' case, included because it is a verified public tree with photo and exact pin.",
+      "story": "This horse chestnut has grown twelve centimetres round the trunk since Vienna made it a monument, which is the best news we have about it.\n\nThe city protected it on 8 November 2007 as Natural Monument 808, \"because of its free-standing crown and its effect on the townscape\". The trunk was then 2.75 metres round, the tree about 18 metres tall and the crown about 10 metres across. The city's tree inventory now records 2.87 metres. A trunk that keeps thickening is a tree that is alive, and that matters for this species in Vienna, where horse chestnuts suffer from the leaf-miner moth, which browns their leaves by late summer, and from bleeding canker on the bark. We have not checked this one's health, and the newest photograph we know of dates from 2014.\n\nIt is not a giant. What it has is room: one crown standing clear on a street in Oberlaa, with nothing crowding it, which is exactly what the city chose to protect. Come in May, when it carries its white flower candles.\n\nNobody has dated it; if you know when it was planted, tell us. About eighty metres away, on the Bischofplatz, stands a protected Caucasian wingnut, so the two make one short stop. If you go, tell us how the leaves look.",
+      "how_to_recognise": "You can recognise it by its broad free-standing crown, about 10 metres across, and a trunk nearly 2.9 metres round. It stands on the pavement in front of Hintere Liesingbachstraße 1, about 80 metres from the wingnut on the Bischofplatz.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the crown carries its white flower candles"
+      }
     }
   ],
   "oldest_tree_id": "vie_001"

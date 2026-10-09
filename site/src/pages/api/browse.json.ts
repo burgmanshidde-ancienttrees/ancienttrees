@@ -37,7 +37,7 @@ import { namedAmbassadorsFor, placeHasAmbassador } from "../../lib/ambassadors";
 import { collectionEntries } from "../../lib/collection-rank";
 import { citySearchNames } from "../../lib/city-aliases";
 import { cityPopularity } from "../../lib/popularity";
-import { favouriteCitySlugs, islandSlugs, COLLECTION_MONTHS } from "../../lib/favourites";
+import { favouriteCitySlugs, islandSlugs, COLLECTION_MONTHS, orderForSeason } from "../../lib/favourites";
 
 export async function GET() {
   const cities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -96,11 +96,11 @@ export async function GET() {
       // Generated collections rank themselves at build time and carry an empty
       // array on disk, so reading it dropped four of them out of the app
       // entirely on the filter below.
-      const ids = collectionEntries(c, citiesBySlug)
+      const ids = orderForSeason(c.data.slug ?? c.id, collectionEntries(c, citiesBySlug)
         .map((e) => e.tree_id)
         // Only entries whose tree is actually live: a collection that lists a
         // retired tree would send somebody to a page that no longer exists.
-        .filter((id) => idToTree.has(id));
+        .filter((id) => idToTree.has(id)), (id) => idToTree.get(id)?.photo?.url);
       return {
         slug: c.data.slug ?? c.id,
         title: c.data.title,

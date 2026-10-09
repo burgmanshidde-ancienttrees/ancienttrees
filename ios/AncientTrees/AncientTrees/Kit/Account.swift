@@ -345,8 +345,20 @@ public final class Account {
         // bad ten minutes must not empty somebody's Keychain, which is the same
         // mistake as the one above wearing a different hat.
         if http.statusCode >= 500 { return .unreachable }
-        guard (200..<300).contains(http.statusCode) else { return .rejected }
-        guard let parsed = session(from: data) else { return .rejected }
+        // ONLY THE SERVER'S OWN NO IS A NO (2026-10-08, after Hidde found
+        // himself signed out with his avatar, his counts and several of his
+        // photographs gone). Every other answer was read as a refusal: a 429
+        // rate limit, a 403 or 407 from a hotel or train proxy, a 408, and a
+        // captive portal's login page arriving as a 200 full of HTML. Each of
+        // those signed the person out and the sign-out forgets the profile and
+        // the synced photographs. Supabase refuses a refresh token with a 400
+        // or 401 carrying a JSON body; anything else is somebody between us
+        // and the server, which is the no-signal case wearing another hat.
+        guard (200..<300).contains(http.statusCode) else {
+            let isJSON = (try? JSONSerialization.jsonObject(with: data)) is [String: Any]
+            return [400, 401].contains(http.statusCode) && isJSON ? .rejected : .unreachable
+        }
+        guard let parsed = session(from: data) else { return .unreachable }
         return .ok(parsed)
     }
 
@@ -612,6 +624,8 @@ public enum SignInReason: Equatable, Identifiable {
     case seasonAlerts
     case feedback                // votes, reports and tips need the account
                                  // that lets us answer (2026-08-21 ruling)
+    case ambassador              // the open seat: says what was pressed
+                                 // rather than "have your say" (2026-10-08)
 
     /// SHALLOW ON PURPOSE (Hidde, 2026-08-29, reading "Sign in to keep your 7
     /// trees" over "Sign in and they follow you": "kijk even naar conventies
@@ -634,7 +648,10 @@ public enum SignInReason: Equatable, Identifiable {
     /// survives a rewrite of everything underneath it.
     var headline: String {
         switch self {
-        case .general, .keepCollection: "Sign in to add and save trees"
+        // The website's heading, word for word (Hidde, 2026-10-08: "the copy
+        // on the login overlay in app is really poor, is the website better?").
+        // It was: it says what you get rather than what to do.
+        case .general, .keepCollection: "Keep your trees on every device"
         // Short on purpose. An earlier version put the tree's name in the
         // headline and "Keep The Last Elm of Stationsplein" ran the full width
         // of the phone at title size, which is a layout that only holds for the
@@ -642,6 +659,7 @@ public enum SignInReason: Equatable, Identifiable {
         case .keepTree: "Sign in to keep this one"
         case .seasonAlerts: "Sign in for season alerts"
         case .feedback: "Sign in to have your say"
+        case .ambassador: "Sign in to apply"
         }
     }
 
@@ -653,6 +671,8 @@ public enum SignInReason: Equatable, Identifiable {
             "We can only tell you about a tree if we know where to reach you."
         case .feedback:
             "Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you."
+        case .ambassador:
+            "Your account is how we reach you about the list."
         }
     }
 }

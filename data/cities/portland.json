@@ -1099,6 +1099,30 @@
         "status": "missing"
       },
       "photos": []
+    },
+    {
+      "id": "ptl_027",
+      "name": "Powell Butte Cedar Grove Douglas-fir",
+      "species": "Douglas Fir (Pseudotsuga menziesii)",
+      "age_estimate": "not documented",
+      "girth_cm": 573,
+      "height_m": 50.6,
+      "location": {
+        "address": "Cedar Grove Trail, Powell Butte Nature Park",
+        "latitude": 45.4863,
+        "longitude": -122.51173333,
+        "neighborhood": "Pleasant Valley"
+      },
+      "verified_sources": [
+        "data/registers/portland-heritage-trees.json (objectid 460, treeid 260)"
+      ],
+      "access": "Free. Public nature park (Portland Water Bureau land, managed with Parks as Powell Butte Nature Park); tree is along the Cedar Grove Trail.",
+      "transport": "Park is on the far east side; reach is by car or a TriMet bus plus walk; not verified. Roughly 11 km from the centre.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register only (designated 2004): 166 ft tall (about 50 m), 56 ft spread, 71 in diameter, 18.8 ft circumference. Register note: 'located along the Cedar Grove Trail in Powell Butte Nature Park.' Register coordinate has only 4 decimals (about 10 m), so approximate; the trail location is the honest direction. Alive: lifecheck RECENT, iNaturalist obs 2026-03-22 (https://www.inaturalist.org/observations/344523182) near the coordinate. Second Powell Butte tree already published (ptl_012, Lombardy poplar). Tallest and thickest unmined Douglas-fir in the register. No age in source. CORRECTION (write pass 2026-10-05): iNat obs 344523182 is a Trillium ovatum, not this tree, so it is no evidence of life. Better: iNat obs 295567955 (2025-07-05, codyhough, all rights reserved, labelled Portland Heritage Tree #260, at 45.486315,-122.511898, acc 23 m) and obs 126417007 (2022, 45.48637,-122.51205, acc 4 m). No open-licence photo exists (all iNat frames NC or ARR; Commons empty within 300 m), so still held for photo-or-pin.",
+      "story": "Portland's register of Heritage Trees measures this Douglas-fir at 166 feet, about 50 metres, and 18.8 feet round, about 5.7 metres, with a trunk 71 inches across. That puts it among the largest Douglas-firs on the city's whole list, and it stands not in a garden but on a trail through a nature park at the city's edge.\n\nThe park is Powell Butte, on Portland's far east side, about 11 kilometres from the centre. The butte is Water Bureau land, run with Portland Parks as Powell Butte Nature Park, and its trails are free to walk. The register's own note is short and useful: the tree is located along the Cedar Grove Trail. The city designated it a Heritage Tree in 2004, and its crown spreads 56 feet.\n\nWhat the register does not give is an age, and nobody else has published one. A trunk that size is plainly not young, but girth alone does not date a Douglas-fir honestly, so we leave the number open. If you know it, tell us.\n\nIt was standing in July 2025, when an iNaturalist observer photographed it and labelled the record with its Heritage Tree number, 260. The register's point is given to only four decimal places, so our pin is approximate, and the honest instruction is the register's own: walk the Cedar Grove Trail.\n\nPowell Butte holds a second Heritage Tree on this page, a Lombardy poplar, so one visit takes in both.",
+      "how_to_recognise": "You can recognise it by its size: a Douglas-fir about 5.7 metres round and some 50 metres tall. It stands along the Cedar Grove Trail in Powell Butte Nature Park."
     }
   ]
 }

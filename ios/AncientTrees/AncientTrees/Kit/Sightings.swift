@@ -58,7 +58,7 @@ final class Sightings {
             case .mine: "Yours"
             case .sent: "Sent to us"
             case .checking: "Being checked"
-            case .published: "On the map"
+            case .published: "Approved"
             case .declined: "Not this time"
             }
         }
@@ -203,13 +203,11 @@ final class Sightings {
             case .declined:
                 return nil
             case .mine, .sent, .checking:
-                // THE SAME WORDS as a tree only you have (Hidde, 2026-10-01:
-                // "status sent to us, status waiting for a look and no status,
-                // what is the difference?"). There was none worth a second
-                // phrase: both mean we have it and have not used it yet.
-                // Google Maps does the same with one "Pending" for an edit,
-                // a photo or a new place.
-                return "Sent to us"
+                // NOTHING WHILE IT WAITS (Hidde, 2026-10-08: "we should not
+                // have a pending message"). This said "Sent to us", Google
+                // Maps' one Pending; he chose iNaturalist's shape instead,
+                // where only the upgrade is announced. Same on the website.
+                return nil
             }
         }
 
@@ -465,6 +463,17 @@ final class Sightings {
             try? data.write(to: folder.appendingPathComponent(file))
             all[i].photo = file
         }
+        persist()
+    }
+
+    /// A picture for a sighting this phone holds without one, touching
+    /// nothing else on it. For the merge's retry (SightingSync, 2026-10-08).
+    func attachPhoto(_ id: UUID, image: UIImage) {
+        guard let i = all.firstIndex(where: { $0.id == id }), all[i].photo == nil,
+              let data = Self.downsized(image) else { return }
+        let file = id.uuidString + ".jpg"
+        try? data.write(to: folder.appendingPathComponent(file))
+        all[i].photo = file
         persist()
     }
 

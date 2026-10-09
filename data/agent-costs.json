@@ -8825,6 +8825,46 @@
    "tokens": 163009,
    "trees": 6,
    "note": "first enrichment pass (scripts/enrich.py): 6 ICNF measurements and register numbers; ICNF has no per-tree page, access and season untouched"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "tallinn",
+   "kind": "enrich",
+   "tokens": 143435,
+   "trees": 2,
+   "note": "EELIS records and 1997 survey girth/height for the linden and ginkgo; Russalka oak has no register entry"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "leiden",
+   "kind": "enrich",
+   "tokens": 141811,
+   "trees": 6,
+   "note": "Hortus hours and prices on four trees, two national-register links, one season; no measurements in the local register file"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "luxembourg-city",
+   "kind": "enrich",
+   "tokens": 132180,
+   "trees": 4,
+   "note": "ANF arbres remarquables ids for four trees; the geojson carries no measurements; Krombach oak not in the register"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "salzburg",
+   "kind": "verify",
+   "tokens": 173338,
+   "trees": 0,
+   "note": "2 delivered szb_019-020; 4 READY leads re-read, stay leads"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "salzburg",
+   "kind": "write",
+   "tokens": 146575,
+   "trees": 2,
+   "note": "2 stories + de overlay, Salzburg 20 trees"
   }
  ],
  "2026-09-26": [
@@ -10029,6 +10069,122 @@
    "tokens": 177497,
    "trees": 0,
    "note": "Enrich pass: Naturdenkmal Leipzig ND numbers on 19 trees from the Wikipedia list; no measurements exist in it; bald cypress autumn peak."
+  }
+ ],
+ "2026-10-08": [
+  {
+   "date": "2026-10-08",
+   "target": "bologna",
+   "kind": "enrich",
+   "tokens": 141226,
+   "trees": 0,
+   "note": "Enrich pass: RAMI/AMI register ids on five trees, girth and height on the Rizzoli cedar. Montagnola and Villa Ghigi stay gaps; bbcc.regione.emilia-romagna.it returned 403."
+  },
+  {
+   "date": "2026-10-08",
+   "target": "belgrade",
+   "kind": "enrich",
+   "tokens": 155585,
+   "trees": 0,
+   "note": "Enrich pass: Zelenilo Beograd protected-tree list entries on four trees, girth and height on four (Wikipedia-cited for the Topcider plane). Zemun yews measurement, access and Topcider authority record stay gaps."
+  },
+  {
+   "date": "2026-10-08",
+   "target": "olympic-national-park",
+   "kind": "enrich",
+   "tokens": 138591,
+   "trees": 0,
+   "note": "Enrich pass: NPS per-tree page for the Quinault Big Spruce only. Kalaloch cedar, Tree of Life and Duncan Cedar have no authority record; resort figures not taken as measurements."
+  },
+  {
+   "date": "2026-10-08",
+   "target": "nuremberg",
+   "kind": "enrich",
+   "tokens": 136043,
+   "trees": 0,
+   "note": "Enrich pass: Bavarian Naturdenkmal ids (ND-numbers) on four trees; the Hallerwiese lime match is probable, not certain. No measurements found."
+  },
+  {
+   "date": "2026-10-08",
+   "target": "nuremberg",
+   "kind": "verify",
+   "tokens": 155000,
+   "trees": 0,
+   "note": "register mined out: 0 new, all candidates published/blocked/leads; Overpass 406"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "delft",
+   "kind": "verify",
+   "tokens": 172000,
+   "trees": 3,
+   "note": "LRMB register deepen; 2 confirmed pins via PDOK aerial, 1 small-site approximate; 13 leads/blocked"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "delft",
+   "kind": "write",
+   "tokens": 134000,
+   "trees": 3,
+   "note": "3 stories + recognition lines del_009-011, merged"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "vienna",
+   "kind": "verify",
+   "tokens": 135000,
+   "trees": 5,
+   "note": "register x ND-list x Baumkataster join; only public street trees with inventory row shipped; wien.gv.at hangs; token figure is an estimate"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "vienna",
+   "kind": "write",
+   "tokens": 160000,
+   "trees": 5,
+   "note": "vie_052-056 stories merged, German overlay translated for the 5"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "salzburg",
+   "kind": "verify",
+   "tokens": 115000,
+   "trees": 3,
+   "note": "3 verified, 9 leads/blocked"
+  },
+  {
+   "date": "2026-10-08",
+   "target": "salzburg",
+   "kind": "write",
+   "tokens": 185000,
+   "trees": 3,
+   "note": "szb_016-018 stories + recognition lines merged, 3 Commons photos looked at and approved, German overlay translated, counts 15->18"
+  }
+ ],
+ "2026-10-09": [
+  {
+   "date": "2026-10-09",
+   "target": "salzburg",
+   "kind": "write",
+   "tokens": 190000,
+   "trees": 1,
+   "note": "4 READY leads, leads carried no sources; 1 shipped (Walser Birnbaum), 3 stay leads; de overlay"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "salt-lake-city",
+   "kind": "verify",
+   "tokens": 178000,
+   "trees": 0,
+   "note": "Utah big-tree ArcGIS register; 5 confirmed pins verified, 1 held (slc_006)"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "salt-lake-city",
+   "kind": "write",
+   "tokens": 170000,
+   "trees": 5,
+   "note": "new city opened with 5 stories, recognition lines, city copy"
   }
  ]
 }

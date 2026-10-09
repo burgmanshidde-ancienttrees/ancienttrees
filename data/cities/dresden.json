@@ -45,7 +45,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
         "https://de.wikipedia.org/wiki/Zerr-Eiche_Trinitatisplatz",
-        "https://dawo-dresden.de/2024/02/28/zerr-eiche-ist-neues-naturdenkmal/"
+        "https://dawo-dresden.de/2024/02/28/zerr-eiche-ist-neues-naturdenkmal/",
+        "https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/2024/02/pm_070.php"
       ],
       "access": "Free, standing on a public square (Trinitatisplatz) opposite the church",
       "transport": "Tram stop Trinitatisplatz, right on the square (news coverage of a nearby tram diversion names conflicting line numbers across sources, so no specific line is stated here)",
@@ -60,7 +61,11 @@
         "width": 4000,
         "height": 3000
       },
-      "how_to_recognise": "The oak facing the main portal of the Trinitatiskirche across Trinitatisplatz, with a tram stop at its foot."
+      "how_to_recognise": "The oak facing the main portal of the Trinitatiskirche across Trinitatisplatz, with a tram stop at its foot.",
+      "official_register": {
+        "name": "Naturdenkmal Dresden (Untere Naturschutzbehoerde, ND 168), no. ND 168",
+        "url": null
+      }
     },
     {
       "id": "dre_002",
@@ -114,7 +119,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
         "https://de.wikipedia.org/wiki/Eiche_Fetscherplatz",
-        "https://www.stadtwikidd.de/wiki/Naturdenkmale"
+        "https://www.stadtwikidd.de/wiki/Naturdenkmale",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9424&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free, standing on a public square, visible and reachable at all times",
       "transport": "Tram stop Fetscherplatz, directly beside the tree",
@@ -129,7 +135,12 @@
         "width": 3648,
         "height": 2736
       },
-      "how_to_recognise": "The oak whose crown roofs Fetscherplatz, with a curved 1949 tram shelter built up against its trunk."
+      "how_to_recognise": "The oak whose crown roofs Fetscherplatz, with a curved 1949 tram shelter built up against its trunk.",
+      "official_register": {
+        "name": "Naturdenkmal Dresden (Kurzdokumentation Schutzgebiete nach Naturschutzrecht, ND 27), no. ND 27",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9424&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      },
+      "height_m": 25
     },
     {
       "id": "dre_004",
@@ -191,7 +202,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Kaditzer_Linde",
         "https://kirche-dresden.de/1000-jaehrige-linde-in-kaditz/",
-        "https://commons.wikimedia.org/wiki/File:Kaditzer_Linde_Naturdenkmalschild.JPG"
+        "https://commons.wikimedia.org/wiki/File:Kaditzer_Linde_Naturdenkmalschild.JPG",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9428&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. In the churchyard of the Emmauskirche, open in daylight. A wooden bench rings the trunk.",
       "transport": "Tram 9 to its terminus at Kaditz, Riegelplatz, then about ten minutes on foot into Altkaditz. About 6 km northwest of the old town.",
@@ -205,7 +217,19 @@
       },
       "how_to_recognise": "Not a trunk but a standing half shell, wide open on one side, with a curved wooden bench built around its foot and steel cables running up into the crown. A war memorial with a stone eagle stands a few metres away.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Naturdenkmal Dresden (Kurzdokumentation Schutzgebiete nach Naturschutzrecht, ND 31), no. ND 31",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9428&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      },
+      "height_m": 20,
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "June, when the lime flowers and the churchyard hums with bees",
+        "kind": "flowers"
+      }
     },
     {
       "id": "dre_006",
@@ -366,7 +390,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Rotbuche_Dresdner_Heide",
         "https://www.wikidata.org/wiki/Q96146116",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Rotbuche_Dresdner_Heide"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Rotbuche_Dresdner_Heide",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9539&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. Stands in the public forest of the Dresdner Heide (Sachsenforst), a short way off the Schneise 8 forest ride; no entry charge.",
       "transport": "Not verified. Inside the Heide, over 30 minutes from the centre; reached on foot from the Radeberger Strasse side. Check timetables before quoting a stop.",
@@ -383,7 +408,19 @@
         "width": 2248,
         "height": 4000
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Dresden (Kurzdokumentation Schutzgebiete nach Naturschutzrecht, ND 108), no. ND 108",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9539&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the beech turns copper and russet",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "dre_011",
@@ -447,7 +484,8 @@
         "https://de.wikipedia.org/wiki/Luthereiche_in_der_Dresdner_Heide",
         "https://www.wikidata.org/wiki/Q106253692",
         "https://www.openstreetmap.org/node/260483097",
-        "https://commons.wikimedia.org/wiki/Category:Luthereiche_Dresdner_Heide"
+        "https://commons.wikimedia.org/wiki/Category:Luthereiche_Dresdner_Heide",
+        "https://de.wikipedia.org/wiki/Liste_der_Kulturdenkmale_in_der_Dresdner_Heide"
       ],
       "access": "Free. Stands in the public forest of the Dresdner Heide (Sachsenforst) beside a forest ride, with a memorial stone, two benches and a table; open at all times.",
       "transport": "Not verified. About 850 m east of the Fischhaus in the Albertpark and south of Radeberger Landstrasse; likely over 30 minutes from the centre by bus and foot, check timetables before quoting a stop.",
@@ -471,7 +509,11 @@
         "width": 3000,
         "height": 4000
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Kulturdenkmal Sachsen (Denkmalliste, Gartendenkmal), no. 09217019",
+        "url": null
+      }
     },
     {
       "id": "dre_013",
@@ -556,7 +598,8 @@
         "height": 2848
       },
       "story": "In January 1905 this camellia's winter house burned down at about minus 20 degrees, and the water from the fire hoses froze around the plant in a shell of ice. It survived, and sprouted again that spring.\n\nIt has stood on this spot since 1801, when the court gardener Carl Adolph Terscheck planted it. The camellia reached the Dresden court somewhere between 1770 and 1790, so 225 years at Pillnitz are documented; the palace's owners, the Saxon state palaces administration, put it at over 250. A favourite story says it is one of four plants the botanist Carl Peter Thunberg brought back from Japan in the 1770s. Kew has no record of that, and the claim is increasingly doubted. A 2015 study at TU Dresden found it almost genetically identical to the old camellias of Caserta, Campobello in Portugal and Greifswald, which points to cuttings from one shared stock.\n\nStrictly it is a shrub grown into a tree: almost nine metres high, with a crown nearly eleven metres across. In 2025 it became the first camellia in Germany to be named a Historic Camellia by the International Camellia Society.\n\nFrom October to May it lives inside a heated 13-metre glass house that weighs 54 tonnes and runs on rails. In summer the house rolls aside and the tree stands in the open park. The owners call it the largest and oldest of its kind north of the Alps. Come in March, when up to 35,000 crimson flowers are open.",
-      "photos": []
+      "photos": [],
+      "height_m": 8.9
     },
     {
       "id": "dre_015",
@@ -614,7 +657,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Blutbuche_Naumannstra%C3%9Fe_3",
         "https://www.aerztehaus-blasewitz.de/?seite=geschichte",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9431&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "In the garden of Villa Marienlust, now the Ärztehaus Blasewitz medical centre. The crown can be seen from Naumannstrasse; we have not confirmed whether visitors may walk into the garden.",
       "transport": "Blasewitz, about 5 km east of the Altstadt, near Schillerplatz. We have not checked the nearest tram stop and walking time.",
@@ -631,7 +675,12 @@
         "height": 2717
       },
       "story": "In the early 1970s a new clinic in Blasewitz was moved 25 metres to spare this tree. The polyclinic had been drawn on the axis of Villa Marienlust, which meant the copper beech in its garden would have had to come down. Volunteer conservationists negotiated, the building went up further south-east with an angled wing to join it to the villa, and the change cost 30,000 marks, judged at the time a great but necessary sacrifice.\n\nThe beech was planted in 1849, already four years old, in the villa's 17,000 square metre grounds. The villa now houses a medical centre, the Ärztehaus Blasewitz, whose own history page counts more than 177 years. It has grown about 25 metres tall, with a crown about 24 metres across, so broad and low that it is said to grow like a giant shrub. The register gives its girth as 5.35 metres, but that was measured 30 centimetres above the ground, where any trunk is wider than at the usual chest height.\n\nThe city made it natural monument number 34 in January 1985, and a plaque on the tree says so. It stands in the medical centre's garden. The crown can be seen from Naumannstrasse, and we have not confirmed whether the garden is open to walk into; if you have been in, tell us. The surviving oak of Hüblerstrasse stands about 450 metres to the south-west.",
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Dresden (Kurzdokumentation Schutzgebiete nach Naturschutzrecht, ND 34), no. ND 34",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9431&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      },
+      "height_m": 25
     },
     {
       "id": "dre_017",
@@ -684,7 +733,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/F%C3%BCnf_Br%C3%BCder_(Oberwartha)",
         "https://www.dresden-elbland.de/de/poi/naturdenkmal/naturdenkmal-fuenf-brueder/12741614/",
-        "https://www.stadtwikidd.de/wiki/F%C3%BCnf_Br%C3%BCder"
+        "https://www.stadtwikidd.de/wiki/F%C3%BCnf_Br%C3%BCder",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9472&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. Beside a public lane and footpath, the Fünf-Brüder-Weg, at the edge of the village on the way into the Tännichtgrund valley. A signposted natural monument, open-air, no entry needed.",
       "transport": "In the far west of Dresden, about 13 km from the Altstadt. The nearest rail stop is Niederwartha, on the line from Dresden Hbf towards Elsterwerda-Biehla; we have not timed the walk from there.",
@@ -712,7 +762,11 @@
         "height": 3000
       },
       "story": "Nobody agrees why there are five. One legend has a girl carried off by a dragon and her five brothers dying in the search for her, with the trees planted in their memory. Another has six monks from Altzella monastery planting six chestnuts before a crusade: five grew, and five monks came home. A third has five brothers who went out into the world, came back rich and planted a tree each. Dresden's city wiki adds that they replaced five limes at a spring once sacred to the Slavic Nisani, which is folklore too.\n\nWhat the sources do agree on is the date, the first half of the 17th century, which makes these sweet chestnuts roughly 400 years old. They stand along a lane at the edge of Oberwartha, on the far western rim of Dresden, where it runs down into the Tännichtgrund valley. The lane is the Fünf-Brüder-Weg and the stream below is the Fünf-Brüder-Bach, both named after the trees, which tells you how long they have been the landmark here.\n\nThey run from 12 to 25 metres tall, with crowns 10 to 20 metres across, and their trunks measure between 4.15 and 6.20 metres round at chest height. The group is a protected natural monument, signposted beside the lane. Come in October, when the chestnuts drop.",
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Dresden (Kurzdokumentation Schutzgebiete nach Naturschutzrecht, ND 67), no. ND 67",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9472&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_019",
@@ -733,7 +787,8 @@
         "https://de.wikipedia.org/wiki/H%C3%A4nge-Buchen_im_Helfenberger_Park",
         "https://www.wikidata.org/wiki/Q111797008",
         "https://de.wikipedia.org/wiki/Schloss_Helfenberg_(Dresden)",
-        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_H%C3%A4ngebuchen_im_Helfenberger_Park_01.JPG"
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_H%C3%A4ngebuchen_im_Helfenberger_Park_01.JPG",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9484&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. The park south of the manor house is crossed by the Elbhangwanderweg, a public walking route.",
       "transport": "About 9 km east of the Altstadt. Bus 98B (Borsberg to Niederpoyritz via Schönfeld) is the only public transport in Helfenberg; we have not timed the walk from its stop.",
@@ -756,7 +811,12 @@
         ],
         "kind": "autumn colour",
         "label": "late October, when the hanging curtain of leaves turns gold and copper"
-      }
+      },
+      "official_register": {
+        "name": "Naturdenkmal Dresden (Kurzdokumentation Schutzgebiete nach Naturschutzrecht, ND 78), no. ND 78",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9484&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      },
+      "height_m": 20
     },
     {
       "id": "dre_020",

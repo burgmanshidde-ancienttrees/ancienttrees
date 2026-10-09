@@ -383,6 +383,7 @@ struct CollectView: View {
             Image(systemName: "gearshape")
                 .font(.system(size: 18, weight: .medium))
                 .foregroundStyle(Brand.ink)
+                .opacity(1 - pageProgress)
                 .frame(width: 44, height: 44)
                 .background(.regularMaterial, in: .circle)
                 // POLARSTEPS' GEAR: it never leaves. Over the map it is a
@@ -390,8 +391,13 @@ struct CollectView: View {
                 // grey circle on white, the same grey as the sheet's chevron,
                 // in one continuous move with the sheet (Hidde, 2026-10-02).
                 .overlay { Circle().fill(Brand.surfaceMuted).opacity(pageProgress) }
+                // AND THE GEAR FILLS IN (Hidde, 2026-10-08: "the settings logo
+                // should get filled in an animation like Polarsteps when the
+                // list is dragged fully"). The outline fades out and the solid
+                // gear fades in with the same drag, so it reads as one glyph
+                // filling rather than two swapping.
                 .overlay {
-                    Image(systemName: "gearshape")
+                    Image(systemName: "gearshape.fill")
                         .font(.system(size: 18, weight: .medium))
                         .foregroundStyle(Brand.ink)
                         .opacity(pageProgress)

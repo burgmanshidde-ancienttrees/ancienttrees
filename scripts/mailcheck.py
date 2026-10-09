@@ -221,6 +221,35 @@ def repeated_ask_hits(text, body):
     return hits
 
 
+def role_in_first_mail_hits(path, text):
+    """The ambassador role belongs in mail 2, never in a first contact.
+
+    Hidde, 2026-10-09, giving the cold ask its shape ("make the ambassador
+    official in mail 2") and then "remember this ambassador email flow". Mail 1
+    asks for help or for somebody who can help; the role is offered once they
+    have said yes or sent something (drafts/ambassador-mails.md). So a mail
+    with no in_reply_to and no resend_reason, which is a first contact, must
+    not name the role in any of the languages we write in."""
+    import json
+    if not path.endswith(".json"):
+        return []
+    try:
+        mails = json.loads(text).get("mails") or []
+    except Exception:
+        return []
+    role = re.compile(r"\b(ambassador|ambassadeur|botschafter|embajador|ambasciatore|embaixador)", re.I)
+    hits = []
+    for m in mails:
+        if m.get("in_reply_to") or m.get("resend_reason"):
+            continue
+        hit = role.search(m.get("body") or "")
+        if hit:
+            hits.append(("ROLE IN MAIL 1", hit.group(0),
+                         "%s: a first contact asks for help; the ambassador "
+                         "role is offered in mail 2" % m.get("to", "?")))
+    return hits
+
+
 def batch_address_hits(path, text):
     """Every batch is checked against the sent log and the do-not-contact
     list HERE, not only at send time. Hidde, 2026-08-26, after asking by hand
@@ -362,6 +391,7 @@ def check(path):
         hits += lowercase_hits(body)
     hits += repeated_ask_hits(text, body)
     hits += batch_address_hits(path, text)
+    hits += role_in_first_mail_hits(path, text)
     # A batch that records its possessive claims as verified (the session read
     # each recipient's why_them and owns_the_trees before writing the key) has
     # answered what this check asks; without the key the flags stand, so a
@@ -456,7 +486,12 @@ def check_no_unshipped_feature(path, body):
     pat = (r'public static let (\w+) = ProcessInfo\.processInfo'
            r'\.arguments\.contains\("-show-[\w-]+"\)')
     hidden = re.findall(pat, src)
-    WORDS = {"walks": [r"\bwalks?\b"],
+    # The FEATURE, never the verb (2026-10-09): "a bur oak people can walk up
+    # to" and "worth a walk" promise nothing, and the bare \bwalks?\b refused
+    # both. What names the feature: walks as a thing, a walking route, a walk
+    # past several trees, a tree walk.
+    WORDS = {"walks": [r"\bwalks\b", r"\bwalking routes?\b", r"\ba (?:short )?walk past\b",
+                       r"\b(?:tree|guided|curated) walks?\b", r"\bwalk (?:route|feature)s?\b"],
              "season": [r"\bseason radar\b", r"\bseason story\b"],
              "plus": [r"\bAncient Trees Plus\b"]}
     # A sentence that says we are GOING TO BUILD something cannot send anybody

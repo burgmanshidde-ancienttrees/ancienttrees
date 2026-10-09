@@ -171,15 +171,7 @@ struct TreeCard: View {
         if seasonChip != nil || seen {
             HStack(spacing: 6) {
                 if let chip = seasonChip { chip }
-                if seen {
-                    Label("Seen", systemImage: "checkmark.circle.fill")
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(Brand.canopy)
-                        .padding(.horizontal, 10).padding(.vertical, 5)
-                        .background(Color.white, in: .capsule)
-                        .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
-                        .accessibilityIdentifier("tree-card-seen")
-                }
+                if seen { SeenTag() }
             }
             .padding(10)
             .padding(.trailing, 44)
@@ -197,23 +189,34 @@ struct TreeCard: View {
         guard Launch.season, let key = tree.seasonKey,
               tree.bestTime?.isNow(Calendar.current.component(.month, from: .now)) == true
         else { return nil }
-        let look: (String, UInt32, UInt32) = switch key {
-        case "bloom": ("In bloom", 0xFCE6EE, 0x9A2F57)
-        case "autumn": ("Autumn colour", 0xFCEEDC, 0x8A5216)
-        case "leaves": ("Fresh leaves", 0xE5F1D9, 0x355E19)
-        case "catkins": ("Catkins", 0xF2F0D0, 0x615A16)
-        case "winter": ("Winter shape", 0xECEAE4, 0x4F4C45)
-        case "fruit": ("In fruit", 0xFBEFD3, 0x7A5A0C)
-        default: ("In season", 0xFBEFD3, 0x7A5A0C)
+        // The website's chip (phenology.ts seasonChipHtml), icon and all
+        // (Hidde, 2026-10-08: "didn't we make tag redesigns for web, are they
+        // consistent? Make them"). The app had the words and tints without the
+        // glyph. The glyphs are SF Symbols tinted in the website icon's own
+        // colour, the nearest system drawing of each.
+        let look: (String, UInt32, UInt32, String, UInt32) = switch key {
+        case "bloom": ("In bloom", 0xFCE6EE, 0x9A2F57, "camera.macro", 0xE8705F)
+        case "autumn": ("Autumn colour", 0xFCEEDC, 0x8A5216, "leaf.fill", 0xD97843)
+        case "leaves": ("Fresh leaves", 0xE5F1D9, 0x355E19, "leaf.fill", 0x7FA653)
+        case "catkins": ("Catkins", 0xF2F0D0, 0x615A16, "allergens", 0xC9B458)
+        case "winter": ("Winter shape", 0xECEAE4, 0x4F4C45, "tree", 0x8C8577)
+        case "fruit": ("In fruit", 0xFBEFD3, 0x7A5A0C, "circle.fill", 0xE8A33D)
+        default: ("In season", 0xFBEFD3, 0x7A5A0C, "sparkle", 0xE8A33D)
         }
         return AnyView(
-            Text(look.0)
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(Color(light: look.2, dark: look.2))
-                .padding(.horizontal, 10).padding(.vertical, 5)
-                .background(Color(light: look.1, dark: look.1), in: .capsule)
-                .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
-                .accessibilityIdentifier("tree-card-season")
+            HStack(spacing: 4) {
+                Image(systemName: look.3)
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundStyle(Color(light: look.4, dark: look.4))
+                Text(look.0)
+                    .foregroundStyle(Color(light: look.2, dark: look.2))
+            }
+            .font(.caption.weight(.semibold))
+            .padding(.leading, 8).padding(.trailing, 10).padding(.vertical, 5)
+            .background(Color(light: look.1, dark: look.1), in: .capsule)
+            .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
+            .accessibilityElement(children: .combine)
+            .accessibilityIdentifier("tree-card-season")
         )
     }
 
@@ -271,5 +274,24 @@ struct TreeCard: View {
 
     private func fmt(_ km: Double) -> String {
         km < 1 ? "\(Int((km * 1000).rounded())) m" : String(format: "%.1f km", km)
+    }
+}
+
+/// "SEEN", ONE LOOK EVERYWHERE (Hidde, 2026-10-08: "de witte seen tag in app is
+/// echt nice, kunnen we die tag overal zo aanhouden, ik zie m soms in het
+/// groen"). A white pill with the green tick, on a photograph and off it, on
+/// our trees and on your own. It was a filled canopy capsule on MineCard, and
+/// on the website a pale green pill wherever a card had no photograph. The
+/// website draws the same pill (.tree-card-seen in style.css).
+struct SeenTag: View {
+    var body: some View {
+        Label("Seen", systemImage: "checkmark.circle.fill")
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(Brand.canopy)
+            .padding(.horizontal, 10).padding(.vertical, 5)
+            .background(Color.white, in: .capsule)
+            .overlay { Capsule().strokeBorder(Color.black.opacity(0.06), lineWidth: 1) }
+            .shadow(color: .black.opacity(0.15), radius: 2, y: 1)
+            .accessibilityIdentifier("tree-card-seen")
     }
 }

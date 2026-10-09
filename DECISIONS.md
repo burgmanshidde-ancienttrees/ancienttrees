@@ -11,12 +11,49 @@ A strategy session Hidde opened with "have a high level look at the goal product
 **Decided, and built the same day.**
 
 1. **The fallback pages are removed.** This reverses his own 2026-09-17 call to follow the whole-site-per-locale convention (CONVENTIONS.md, "Switching the language of a page"); the convention was right for readers and wrong for a site under a scaled-content demotion. Every old URL redirects to its English page (hard rule 3: nothing retired). The translated chrome links an untranslated city at its English URL, the rule tree links have followed since 2026-09-17. The 23 real translated sets are untouched and translation work continues.
-2. **A finished page in a proven city is indexed without a photograph.** `enriched()` in scripts/findable.py: findable on the ground, plus the official register record, a measurement and concrete access. 182 pages qualified; they return at most 60 per build so qa's 80-url burst guard holds and Google sees each as a change rather than a burst.
+2. **A finished page in a proven city is indexed without a photograph.** `enriched()` in scripts/findable.py: findable on the ground, plus the official register record, a measurement and concrete access. 182 pages qualified; they return at most 40 per build so qa's 80-url burst guard holds and Google sees each as a change rather than a burst.
 3. **Enrichment covers every tree in a proven city, indexed first, and a city leaves the queue only when every gap is closed or dead-ended per tree and gap** (data/enrich-done.json, 90-day expiry). The brief gained a `pin` gap: a small named site with a source, or a register, Wikidata, OSM or aerial coordinate within 300 m, never a coordinate reasoned into place.
 
 4. **No new tree unless its page is rich or a reader added it** (Hidde, later the same session: "Let's not add any more trees unless rich page and or added by user right?"). Rich is the same `enriched()` rule, so what is added is what Google may see; `check_a_new_tree_is_rich_or_a_readers()` in preflight refuses the rest, data/rich-baseline.json holds the 3,716 trees live that day, BRIEF_RESEARCH.md and passcheck's brief carry it to the verify pass. It narrows the 2026-10-05 "adding is not indexing" ruling without reversing it.
 
 **What was advised and NOT decided, recorded so it is a choice later and not a drift:** a 90-day freeze on new places, twelve hero cities, the app as the product and the site as its brochure, a weekly outreach rhythm as the ambassador channel, and "people who stood at a tree this week" as the north star. Hidde has not ruled on any of these.
+## 2026-10-08: the noindex is Google's alone where only Google objects
+
+Hidde, asked whether Bing needs the same noindex as Google: "Ok do the split."
+
+**Why.** The 2026-10-01 noindex used the generic robots meta, which every
+engine reads, so it took 11,500 pages out of Bing, DuckDuckGo and Yahoo as
+well. Bing never demoted the site: its referrals ran at 30 to 40 pageviews a
+window before and read zero from the day the tag went on, and Bing is the
+index behind DuckDuckGo, Yahoo, half of Ecosia and ChatGPT's web search. Of
+the four noindex groups only one was Google's objection and nobody else's:
+the tree pages without a photograph, real pages with a real story that the
+September 2026 spam update reads as scaled content.
+
+**What changed.** Those pages (3,775 on the day, 1,005 of them real
+translations) carry `<meta name="googlebot" content="noindex, follow">`, which
+Google reads and the Bing family ignores, and are listed in
+`sitemap-bing.xml`, which is submitted in Bing Webmaster Tools only and is
+named nowhere Google reads: not robots.txt, not a sitemap index. They stay out
+of sitemap.xml as before. The fallback language pages (English text on a
+language URL, duplicates in any index), the thin places and the question
+pages keep the generic tag. IndexNow reads the Bing sitemap too, so Bing hears
+about those pages on every deploy.
+
+**Where it lives.** `GOOGLE_ONLY_WEAK_TREES` in scripts/thin_pages.py writes
+`google_only` into data/noindex.json; `noindexScope()` in
+site/src/lib/noindex.ts reads it; Base.astro picks the tag name from it; the
+sitemap integration writes sitemap-bing.xml from it.
+`check_the_noindex_split_holds()` in scripts/qa.py refuses a build where a
+Google-only page lacks the googlebot tag or carries the generic one, where any
+other listed page lacks the generic tag, where a Google-only page is back in
+sitemap.xml, where sitemap-bing.xml and the list disagree, or where robots.txt
+names the Bing sitemap. Removing it needs Hidde. Setting the flag to False
+puts the generic tag back on everything.
+
+**What it does not change.** The Google side is untouched: the same pages
+are out of Google, the index-rule freeze of 2026-10-07 holds. Hard rule 3
+holds: no URL moves, nothing is deleted.
 
 ## 2026-10-04: a reader's photograph is ours to use, permanently
 

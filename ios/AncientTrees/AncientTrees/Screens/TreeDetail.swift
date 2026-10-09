@@ -742,11 +742,11 @@ struct TreeDetail: View {
                     // claim this project has a rule against.
                     // The species chip moved up into the facts row on
                     // 2026-08-26; what is left here are the wider circles.
-                    ForEach(collectionsWithThisTree, id: \.slug) { c in
-                        discoverChip(c.title, "square.stack") {
-                            navigator.push = .collection(c.slug)
-                        }
-                    }
+                    // No collections here (Hidde, 2026-10-08: "the discover
+                    // more section below tree info page should not show
+                    // collections just cities parks countries islands
+                    // provinces"). Places only: where else to go, not which
+                    // list this tree is on. Same on the website.
                     if !tree.country.isEmpty {
                         discoverChip(tree.country, "globe.europe.africa") {
                             navigator.push = .country(tree.country)
@@ -755,15 +755,6 @@ struct TreeDetail: View {
             }
         }
         .padding(.top, 4)
-    }
-
-    /// The curated lists this tree is actually in (Hidde, 2026-08-26: "in
-    /// Discover More kan je dus ook collecties toevoegen, zoals de oudste
-    /// bomen waar die in toegevoegd is"). Read from the website's own
-    /// collections rather than worked out here, so a tree appears in the list
-    /// the site says it is in and nowhere else.
-    private var collectionsWithThisTree: [TreeCollection] {
-        catalogue.collections.filter { $0.trees.contains(tree.id) }
     }
 
     private func discoverChip(_ title: String, _ symbol: String,
@@ -980,26 +971,20 @@ struct TreeDetail: View {
     /// label a coordinate with a place name).
     @ViewBuilder private var placeLink: some View {
         if mine == nil {
-            // City and country are TWO links, not one (Hidde, 2026-09-24: "op
-            // Sydney en Australia apart kunnen klikken"). AllTrails underlines
-            // each item of this line on its own and each opens its own page;
-            // one underline over "Sydney, Australia" read as one place and
-            // only ever led to the city.
-            let parts = placeHalves
+            // A BREADCRUMB, broad to narrow: country, city, district (Hidde,
+            // 2026-10-08: "Japan - Tokyo - neighbourhood is the build up and
+            // all clickable or at least only make things look clickable which
+            // is not the case of the neighbourhood so far"). The order
+            // AllTrails, Tripadvisor and Wikipedia use for a place. Country
+            // and city each open their page and are underlined; the district
+            // has no page, so it is plain grey text and does not pretend. It
+            // gives way first when the line is short of room. The website's
+            // tree page draws the same line (lib/place-line.ts).
+            let district = Self.placeDistrict(neighbourhood: tree.neighbourhood, city: tree.city)
             HStack(spacing: 0) {
-                Button { navigator.push = .city(tree.citySlug) } label: {
-                    Text(parts.city)
-                        .underline()
-                        .lineLimit(1)
-                        .frame(minHeight: 44)
-                        .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("See every tree in \(tree.city)")
-                if let country = parts.country {
-                    Text(", ").accessibilityHidden(true)
-                    Button { navigator.push = .country(country) } label: {
-                        Text(country)
+                if !tree.country.isEmpty {
+                    Button { navigator.push = .country(tree.country) } label: {
+                        Text(tree.country)
                             .underline()
                             .lineLimit(1)
                             .fixedSize()
@@ -1007,7 +992,25 @@ struct TreeDetail: View {
                             .contentShape(.rect)
                     }
                     .buttonStyle(.plain)
-                    .accessibilityLabel("See every tree in \(country)")
+                    .accessibilityLabel("See every tree in \(tree.country)")
+                    crumbDot
+                }
+                Button { navigator.push = .city(tree.citySlug) } label: {
+                    Text(tree.city)
+                        .underline()
+                        .lineLimit(1)
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .layoutPriority(1)
+                .accessibilityLabel("See every tree in \(tree.city)")
+                if let district {
+                    crumbDot
+                    Text(district)
+                        .foregroundStyle(Brand.inkSoft)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
                 }
             }
             .foregroundStyle(Brand.ink)
@@ -1055,45 +1058,26 @@ struct TreeDetail: View {
             .map(\.commonName)
     }
 
-    /// ONE LINE, AND IT IS A PLACE NAME (Hidde, 2026-09-04, from his own phone
-    /// on Old Tjikko: "tekst veel te lang helemaal kut, daar moet zweden staan
-    /// of een stad niet meer"). It read "Fulufjället mountain plateau, reached
-    /// via the Njupe..." and ran off the edge.
-    ///
-    /// The cause is the data rather than the layout: `neighbourhood` holds a
-    /// district on most trees and a sentence on 396 of 2,416 of them, some with
-    /// a research note in brackets after it. A line under the name cannot
-    /// carry either, so anything that is not short enough to BE a district name
-    /// is dropped rather than truncated, and the city stands on its own.
-    ///
-    /// When it does, the country comes with it. "Fulufjället" alone names a
-    /// place almost nobody knows; "Fulufjället, Sweden" is the answer he asked
-    /// for, and it costs a word.
-    ///
-    /// It comes back in its two tappable halves: the city (with its district
-    /// in front when there is one) and the country, which joins only when no
-    /// district does, so the line stays one line.
-    static func placeParts(neighbourhood: String, city: String,
-                           country: String) -> (city: String, country: String?) {
+    /// The district for the breadcrumb, or nil. The cleaning is the old
+    /// one-line rule (Hidde, 2026-09-04, on Old Tjikko): `neighbourhood` holds a
+    /// district on most trees and a sentence on hundreds of them, so a bracketed
+    /// note goes and anything too long to BE a district name is dropped rather
+    /// than truncated. A district that is just the city adds nothing. Mirrors
+    /// placeDistrict in the website's lib/place-line.ts.
+    static func placeDistrict(neighbourhood: String, city: String) -> String? {
         var n = neighbourhood.trimmingCharacters(in: .whitespaces)
         if let bracket = n.firstIndex(of: "(") {
             n = String(n[..<bracket]).trimmingCharacters(in: .whitespaces)
         }
-        // A district name is short: Palms, Plantage, Ajuda, Campo de Ourique.
-        // Past this it is prose, whatever the field is called.
-        if n.count > 28 { n = "" }
-        if n.isEmpty {
-            return (city, country.isEmpty ? nil : country)
-        }
-        // Many registers write the district as "Amsterdam-Centrum", so adding
-        // the city gives "Plantage, Amsterdam-Centrum, Amsterdam".
-        return (n.localizedCaseInsensitiveContains(city) ? n : "\(n), \(city)", nil)
+        if n.isEmpty || n.count > 28 { return nil }
+        if n.caseInsensitiveCompare(city) == .orderedSame { return nil }
+        return n
     }
 
-    private var placeHalves: (city: String, country: String?) {
-        Self.placeParts(neighbourhood: tree.neighbourhood,
-                        city: tree.city,
-                        country: tree.country)
+    private var crumbDot: some View {
+        Text("·").foregroundStyle(Brand.inkSoft)
+            .padding(.horizontal, 5)
+            .accessibilityHidden(true)
     }
 
     /// Four facts with their units labelled, the way AllTrails does it and the
@@ -1217,7 +1201,6 @@ struct TreeDetail: View {
     private var factsBlock: some View {
         VStack(alignment: .leading, spacing: 0) {
             columns
-            if mine == nil, let reg = tree.register { registerRow(reg) }
             locationLine
             if mine == nil, tree.paidEntry { ticketBand }
         }
@@ -1451,41 +1434,6 @@ struct TreeDetail: View {
         .accessibilityIdentifier("tree-girth-fact")
     }
 
-    /// The official register, the website's tb-register row (2026-10-06):
-    /// a link out to the authority's record when there is one, plain text when
-    /// the register is only named. Wikipedia's infobox and iNaturalist's
-    /// observation page carry a designation the same way, as a labelled fact.
-    @ViewBuilder private func registerRow(_ reg: Tree.Register) -> some View {
-        Group {
-            if let s = reg.url, let u = URL(string: s) {
-                Link(destination: u) {
-                    column("In the official register") {
-                        HStack(alignment: .firstTextBaseline, spacing: 4) {
-                            Text(reg.name)
-                                .font(.brand(16, .bold, relativeTo: .body))
-                                .multilineTextAlignment(.leading)
-                            Image(systemName: "arrow.up.right")
-                                .font(.system(size: 11, weight: .semibold))
-                        }
-                        .foregroundStyle(Brand.moss)
-                    }
-                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
-                    .contentShape(.rect)
-                }
-            } else {
-                column("In the official register") {
-                    Text(reg.name)
-                        .font(.brand(16, .bold, relativeTo: .body))
-                        .foregroundStyle(Brand.ink)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-            }
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 10)
-        .overlay(alignment: .top) { hairline }
-    }
-
     private var hairline: some View {
         Rectangle().fill(Brand.hairline).frame(height: 1)
     }
@@ -1607,8 +1555,16 @@ struct TreeDetail: View {
     /// stays true until it stops being true. The alternative considered and
     /// rejected was a toast at the moment of saving, which every benchmark
     /// pairs with a lasting state rather than using instead of one.
+    ///
+    /// NO PENDING STATE (Hidde, 2026-10-08: "we should not have a pending
+    /// message but a tree just becomes your tree first and upgrades to an
+    /// ancient tree official ... but if not we don't have to mention"). The
+    /// convention is iNaturalist's: an observation is simply yours, and the
+    /// only status it ever announces is the upgrade to Research Grade. So
+    /// "being checked" and "not this time" say nothing at all; a tree that
+    /// made the map says so here.
     @ViewBuilder private var mineStatus: some View {
-        if let m = mine {
+        if let m = mine, m.status == .published {
             HStack(alignment: .top, spacing: 8) {
                 Image(systemName: icon(for: m.status))
                     .foregroundStyle(Brand.moss)
@@ -1640,7 +1596,7 @@ struct TreeDetail: View {
 
     private func headline(for status: Sightings.Status) -> String {
         switch status {
-        case .published: "On the map"
+        case .published: "Approved"
         case .declined: "Yours only"
         default: "Added to your trees"
         }
@@ -1649,7 +1605,7 @@ struct TreeDetail: View {
     private func sentence(for status: Sightings.Status) -> String {
         switch status {
         case .published:
-            "This one made the map everybody sees."
+            "We checked your tree and added it to Ancient Trees, so everybody can find it."
         case .declined:
             // Honest, and it never was before: a declined tree carried the
             // sentence about us still looking at it, which is a promise we had
@@ -1680,10 +1636,20 @@ struct TreeDetail: View {
     /// calendar. An honest gap is silent.
     @ViewBuilder private func accessLine(_ text: String, _ symbol: String) -> some View {
         if !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            HStack(alignment: .firstTextBaseline, spacing: 8) {
+            // The info row Google Maps and Apple Maps draw under a place: the
+            // glyph in the brand colour in a fixed column, the text at reading
+            // size in ink (Hidde, 2026-10-08: "fontsize and spacing of free
+            // entry information and public transport is off"). It was grey
+            // footnote text, two sizes below the story it follows, so it read
+            // as small print rather than as the answer to "can I get in, and
+            // how do I get there".
+            HStack(alignment: .firstTextBaseline, spacing: 12) {
                 Image(systemName: symbol)
-                    .frame(width: 18, alignment: .center)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(Brand.moss)
+                    .frame(width: 22, alignment: .center)
                 ExpandableText(text: text, lines: 2)
+                    .foregroundStyle(Brand.ink)
             }
         }
     }
@@ -1691,7 +1657,7 @@ struct TreeDetail: View {
     private var accessBlock: some View {
         // A VStack of two empty lines still spends its own spacing, so a tree
         // with neither would leave a gap in the page where a block used to be.
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 16) {
             // A FIXED COLUMN FOR THE ICONS, because two SF Symbols are two
             // different widths and a Label puts its text straight after its
             // own: a walking figure is narrow and a tram is wide, so these two
@@ -1701,8 +1667,7 @@ struct TreeDetail: View {
             accessLine(tree.access, "figure.walk")
             accessLine(tree.transport, "tram.fill")
         }
-        .font(.footnote)
-        .foregroundStyle(.secondary)
+        .font(.subheadline)
     }
 
     /// The highest-intent moment there is for this feature: you are on a tree

@@ -652,6 +652,17 @@ struct MapTab: View {
     /// arrangement Google Maps and Apple Maps both use.
     @ViewBuilder private var sheet: some View {
         VStack(spacing: 0) {
+            // THE SEARCH FIELD STAYS WHEN THE LIST IS THE PAGE (Hidde,
+            // 2026-10-09: "do the search thing"). Apple Maps and Google Maps
+            // keep search reachable at every height; ours floated over the map
+            // and faded with it, so a list dragged all the way up had no way to
+            // search. At full height it heads the list, the way a search field
+            // heads a list in iOS Settings. In the list and not in the sheet's
+            // header, because the header is the grip that drags the sheet back
+            // down, and a button there takes the drag (CI caught exactly that).
+            if sheetHeight == .full && !searching {
+                pageSearchField.padding(.bottom, 6)
+            }
             if shownWalk != nil && sheetHeight != .peek { walkCard }
             if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
             list
@@ -1137,7 +1148,13 @@ struct MapTab: View {
             .prefix(14).map(\.key))
     }
 
-    private var searchField: some View {
+    /// The same field, in the sheet's header at full height, under its own
+    /// identifier so a test can tell the two apart.
+    private var pageSearchField: some View { searchButton(id: "map-search-field-page") }
+
+    private var searchField: some View { searchButton(id: "map-search-field") }
+
+    private func searchButton(id: String) -> some View {
         Button { searching = true } label: {
             HStack(spacing: 8) {
                 Image(systemName: "magnifyingglass")
@@ -1161,7 +1178,7 @@ struct MapTab: View {
             .contentShape(.capsule)
         }
         .buttonStyle(.plain)
-        .accessibilityIdentifier("map-search-field")
+        .accessibilityIdentifier(id)
     }
 
 }

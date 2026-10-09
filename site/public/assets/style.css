@@ -289,9 +289,9 @@ html:not([data-signed-in="1"]) .nav-acct.only-desktop { display: none; }
    filled checkmark-seal capsule, top left, whenever the app's own
    `saved.isVisited` says so for THAT tree). */
 .tree-card-seen { position: absolute; top: 10px; left: 10px; z-index: 1;
-  display: inline-flex; align-items: center; gap: 5px; background: var(--moss);
-  color: #fff; font-size: 12px; font-weight: 600; padding: 5px 9px 5px 7px;
-  border-radius: 999px; }
+  display: inline-flex; align-items: center; gap: 5px; background: #fff;
+  color: #2F4A1A; font-size: 12px; font-weight: 600; padding: 5px 9px 5px 7px;
+  border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.16); }
 .tree-card-seen svg { width: 14px; height: 14px; flex-shrink: 0; }
 /* YOUR OWN PHOTOGRAPH, on the card of a tree we map but have no picture of
    (my-trees-js.ts, 2026-09-11). Labelled rather than silent, because the same
@@ -2709,6 +2709,10 @@ main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); paddin
 .td-page .tree-place-row { min-height: 44px; display: flex; align-items: center; flex-wrap: wrap; }
 .td-page .tree-place { font-size: 15px; }
 .td-page .tree-place a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+/* The breadcrumb under a tree name (2026-10-08): links underlined, the district
+   plain, so only what opens a page looks like it does. */
+.tree-place-sep { margin: 0 0.4rem; color: var(--ink-light); }
+.td-page .tree-place-district { color: var(--ink-light); }
 .td-page .tree-block { margin: 8px 0 0; }
 .td-page .worthit-inline .worthit-btn svg.thumb { width: 21px; height: 21px; color: var(--ink-mid); }
 .td-page .worthit-inline .worthit-btn.is-on svg.thumb { color: var(--moss); }
@@ -2943,7 +2947,10 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .tag-row .sn-chip, .tag-row .tree-card-seen { position: static; margin: 0; }
 .tag-row .tree-card-seen { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px;
   font-size: 12px; font-weight: 650; line-height: 1.35; padding: 2px 9px 2px 6px;
-  background: #EEF0E6; color: #2F4A1A; }
+  /* White everywhere, the app's pill (Hidde, 2026-10-08: "de witte seen tag
+     ... overal zo aanhouden, ik zie m soms in het groen"). It was pale green
+     under a title with no photograph. */
+  background: #fff; color: #2F4A1A; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); }
 .tag-row .tree-card-seen svg { width: 14px; height: 14px; flex: none; }
 .tag-row .tree-card-seen[hidden] { display: none; }
 .tree-card-photo .tag-row > * { box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16); padding: 4px 10px 4px 7px; }

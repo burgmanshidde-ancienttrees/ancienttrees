@@ -44,9 +44,10 @@
       "story": "Goethe walked through this garden in 1786, stopped at a palm, and left with the beginnings of a theory. He was working towards his essay on the metamorphosis of plants, the argument that every organ of a plant is a modified leaf, and this dwarf fan palm, whose fronds change shape as they climb the stem, is the specimen credited with helping the idea along. It has been in the ground since 1585, one of the first plants set out after the Orto Botanico was founded in 1545, which makes it roughly 440 years old. Chamaerops humilis is a Mediterranean plant with no patience for Veneto frost, so the garden built a glass house around it, an octagonal greenhouse raised to fit one shrub. Up close it is not a single trunk but a clump of about 25 stems, each roughly half a metre round, 4.5 metres of girth in total. The Italian register rates its health as good, last checked in July 2026, and files it under a second name, the Palm of Saint Peter, which is what Padua called it long before a German poet turned up. A panel beside the glass tells the visitor the rest. It is the least imposing tree on this list and the only one that ended up in a book about how plants are put together.",
       "verified_sources": [
         "https://ilregistrodeglialberi.it/3248-palma-di-goethe-palma-di-san-pietro-padova-pd-veneto",
-        "Italian national register of monumental trees (MASAF), 'Palma di San Pietro', girth 4.5 m, coordinates 45.39943,11.88105 (matches RAMI to within 15 m)"
+        "Italian national register of monumental trees (MASAF), 'Palma di San Pietro', girth 4.5 m, coordinates 45.39943,11.88105 (matches RAMI to within 15 m)",
+        "https://ortobotanico1545.it/en/visit/tickets/"
       ],
-      "access": "Paid entry (Orto Botanico admission ticket required; exact current price not verified )",
+      "access": "Inside the Orto Botanico, paid entry: full ticket 15 euro (12 euro November to February), reduced tickets from 6 euro. Open Tuesday to Sunday and public holidays 10:00 to 18:00, last entry 17:15, closed on working Mondays. The palm stands in its own glass house.",
       "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -61,7 +62,11 @@
       "height_m": 12.0,
       "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (1 m away).",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its clump of about 25 slender stems inside a purpose-built octagonal glasshouse, rather than one trunk. It stands in the Orto Botanico di Padova."
+      "how_to_recognise": "You can recognise it by its clump of about 25 slender stems inside a purpose-built octagonal glasshouse, rather than one trunk. It stands in the Orto Botanico di Padova.",
+      "official_register": {
+        "name": "Il Registro degli Alberi (Alberi Monumentali d'Italia), national relevance",
+        "url": "https://ilregistrodeglialberi.it/3248-palma-di-goethe-palma-di-san-pietro-padova-pd-veneto"
+      }
     },
     {
       "id": "pad_002",
@@ -79,9 +84,10 @@
       "story": "Lightning opened this plane from the base upward and it kept going. The trunk is hollow, a shell you can see into, and the tree still leafs out every spring, because the tissue that carries water sits in the outer wood rather than the core. It went into the ground in 1680 according to the garden's own visitor leaflet, which puts it at about 345 years, and it has been measured at 6.2 metres round and nearly 25 metres tall. Worth being precise about the species: this is Platanus orientalis, the eastern plane, native in Italy only in a few pockets of Calabria and Sicily. Almost every tree called a plane in a European city, including two others on this list, is the hybrid that came later. The date rests on that leaflet and on Italian garden-history sources agreeing on the same two details, the 1680 planting and the lightning strike, rather than on a second register entry, so read it as well corroborated rather than documented twice. What the tree's first century looked like from here: Venice still ruled Padua and had another hundred years of republic left, and the botanical garden around it was already 135 years old and busy cataloguing plants arriving from the Americas. The register rates its condition as good.",
       "verified_sources": [
         "https://ilregistrodeglialberi.it/3247-platano-orientale-dellorto-botanico-platano-orientale-padova-pd-veneto",
-        "Independent corroboration via web search of Italian travel/garden-history sources describing the same tree, planted 1680, hollow trunk from a lightning strike, still living (searched 2026-08-06; multiple independent Italian tourism/garden pages, titles not individually re-verified against RAMI age math but agreeing on the 1680 planting date and lightning-hollowed trunk)"
+        "Independent corroboration via web search of Italian travel/garden-history sources describing the same tree, planted 1680, hollow trunk from a lightning strike, still living (searched 2026-08-06; multiple independent Italian tourism/garden pages, titles not individually re-verified against RAMI age math but agreeing on the 1680 planting date and lightning-hollowed trunk)",
+        "https://ortobotanico1545.it/en/visit/tickets/"
       ],
-      "access": "Paid entry (Orto Botanico admission ticket required)",
+      "access": "Inside the Orto Botanico, paid entry: full ticket 15 euro (12 euro November to February), reduced tickets from 6 euro. Open Tuesday to Sunday and public holidays 10:00 to 18:00, last entry 17:15, closed on working Mondays.",
       "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -94,7 +100,13 @@
         "height": 1024
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its hollow trunk, split open from the base by a lightning strike, wide enough to see into. It stands in the Orto Botanico di Padova."
+      "how_to_recognise": "You can recognise it by its hollow trunk, split open from the base by a lightning strike, wide enough to see into. It stands in the Orto Botanico di Padova.",
+      "official_register": {
+        "name": "Il Registro degli Alberi (Alberi Monumentali d'Italia), national relevance",
+        "url": "https://ilregistrodeglialberi.it/3247-platano-orientale-dellorto-botanico-platano-orientale-padova-pd-veneto"
+      },
+      "girth_cm": 620,
+      "height_m": 24.8
     },
     {
       "id": "pad_003",
@@ -119,9 +131,10 @@
       },
       "verified_sources": [
         "https://ilregistrodeglialberi.it/3251-ginkgo-padova-pd-veneto",
-        "Independent corroboration via web search of Italian/English garden-history sources describing the same 1750 planting as among the first ginkgo trees introduced to Italy (searched 2026-08-06)"
+        "Independent corroboration via web search of Italian/English garden-history sources describing the same 1750 planting as among the first ginkgo trees introduced to Italy (searched 2026-08-06)",
+        "https://ortobotanico1545.it/en/visit/tickets/"
       ],
-      "access": "Paid entry (Orto Botanico admission ticket required)",
+      "access": "Inside the Orto Botanico, paid entry: full ticket 15 euro (12 euro November to February), reduced tickets from 6 euro. Open Tuesday to Sunday and public holidays 10:00 to 18:00, last entry 17:15, closed on working Mondays.",
       "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -134,7 +147,12 @@
         "height": 1024
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by producing both pollen and foul-smelling fruit from the same trunk, the result of a 19th-century graft. It stands in the Orto Botanico di Padova."
+      "how_to_recognise": "You can recognise it by producing both pollen and foul-smelling fruit from the same trunk, the result of a 19th-century graft. It stands in the Orto Botanico di Padova.",
+      "official_register": {
+        "name": "Il Registro degli Alberi (Alberi Monumentali d'Italia), regional relevance",
+        "url": "https://ilregistrodeglialberi.it/3251-ginkgo-padova-pd-veneto"
+      },
+      "girth_cm": 403
     },
     {
       "id": "pad_004",
@@ -215,7 +233,12 @@
         "height": 4551
       },
       "girth_cm": 440,
-      "how_to_recognise": "You can recognise it by its low branches resting on the ground, forming green walls that fill the courtyard rather than a crown overhead. It stands at the centre of the Chiostro della Magnolia, Basilica di Sant'Antonio."
+      "how_to_recognise": "You can recognise it by its low branches resting on the ground, forming green walls that fill the courtyard rather than a crown overhead. It stands at the centre of the Chiostro della Magnolia, Basilica di Sant'Antonio.",
+      "official_register": {
+        "name": "Il Registro degli Alberi (Alberi Monumentali d'Italia), national relevance, no. 01/G224/PD/05",
+        "url": "https://ilregistrodeglialberi.it/3254-magnolia-padova-pd-veneto"
+      },
+      "height_m": 25
     },
     {
       "id": "pad_006",

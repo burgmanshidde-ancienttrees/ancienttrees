@@ -132,6 +132,13 @@ NOT_OURS_IDS = ("UIContinuousPathIntroductionView",)
 # seven.
 FLOATS_OVER_PAGES = ("tab-map", "tab-discover", "tab-my-trees", "tab-collect")
 
+# THE PILLS ON A PHOTOGRAPH are inset from the photograph's corner, not set on
+# the page's margin: Airbnb's one top-left badge, our TreeCard tag row
+# (2026-10-04). The white "Seen" pill joined MineCard on 2026-10-08 and the
+# check read its deliberate 10 point inset as a 10 point drift. Exempt from
+# DRIFT only, by the identifiers SeenTag and the season chip carry.
+ON_A_PHOTO = ("tree-card-seen", "tree-card-season")
+
 
 def inside(el, types, idents=()):
     p = el.parent
@@ -474,7 +481,7 @@ def check(screen):
         # those are all far wider than a thumb.
         if (el.type not in INVISIBLE and el.type not in NOT_OURS and el.w > 48 and el.h > 4
                 and 0 <= el.x < W / 2 and not in_shelf(el)
-                and el.ident not in FLOATS_OVER_PAGES
+                and el.ident not in FLOATS_OVER_PAGES and el.ident not in ON_A_PHOTO
                 and not inside(el, NOT_OURS, NOT_OURS_IDS) and not centred(el, W)):
             lefts[round(el.x * 2) / 2].append(el)
     if lefts:

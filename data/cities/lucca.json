@@ -46,9 +46,10 @@
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
         "https://luoghi.italianbotanicalheritage.com/en/lucca-botanical-garden/",
         "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
-        "https://turismo.lucca.it/itinerari/gli-alberi-delle-mura-di-lucca/"
+        "https://turismo.lucca.it/itinerari/gli-alberi-delle-mura-di-lucca/",
+        "https://ortobotanicodilucca.it/visita/"
       ],
-      "access": "Paid entry to the Orto Botanico di Lucca",
+      "access": "Paid entry to the Orto Botanico di Lucca: 6 euro full price, 4 euro reduced, free for children under 8. In 2026 it is open daily 10:30 to 17:00 in October and Friday to Sunday 11:00 to 16:00 from 1 November to 31 December; last entry 30 minutes before closing, and it closes in severe weather alerts.",
       "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Lucca%2C_Orto_Botanico%2C_Abies_cedrus.jpg",
@@ -74,7 +75,11 @@
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
       "girth_cm": 655,
-      "how_to_recognise": "You can recognise it by its foliage held in flat horizontal plates, so the crown reads as dark tiers rather than a dome. It stands as the Orto Botanico di Lucca's symbol, its patriarch tree."
+      "how_to_recognise": "You can recognise it by its foliage held in flat horizontal plates, so the crown reads as dark tiers rather than a dome. It stands as the Orto Botanico di Lucca's symbol, its patriarch tree.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 26/E715/LU/09",
+        "url": null
+      }
     },
     {
       "id": "luc_002",
@@ -93,9 +98,10 @@
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
         "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
-        "https://ortobotanicodilucca.it/collection/arboreto/"
+        "https://ortobotanicodilucca.it/collection/arboreto/",
+        "https://ortobotanicodilucca.it/visita/"
       ],
-      "access": "Paid entry to the Orto Botanico di Lucca",
+      "access": "Paid entry to the Orto Botanico di Lucca: 6 euro full price, 4 euro reduced, free for children under 8. In 2026 it is open daily 10:30 to 17:00 in October and Friday to Sunday 11:00 to 16:00 from 1 November to 31 December; last entry 30 minutes before closing, and it closes in severe weather alerts.",
       "transport": "About 15 min walk from Lucca station, in the southeast corner inside the walls",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Lucca%2C_Orto_Botanico%2C_Sequoia_sempervirens.jpg",
@@ -112,7 +118,11 @@
       "verify_notes": "Height 35.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
       "girth_cm": 576,
-      "how_to_recognise": "You can recognise it by its height, 35 metres, taller than any tower but the two you can climb, with soft, fibrous bark. It stands in the Orto Botanico di Lucca, a second redwood 40 metres away."
+      "how_to_recognise": "You can recognise it by its height, 35 metres, taller than any tower but the two you can climb, with soft, fibrous bark. It stands in the Orto Botanico di Lucca, a second redwood 40 metres away.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 34/E715/LU/09",
+        "url": null
+      }
     },
     {
       "id": "luc_003",
@@ -211,7 +221,7 @@
         "https://www.luccaindiretta.it/dalla-citta/2024/09/20/sono-36-gli-alberi-monumentali-nel-territorio-del-comune-di-lucca/426398/",
         "https://turismo.lucca.it/le-attrazioni-di-lucca/torri/torre-guinigi/"
       ],
-      "access": "Paid entry to the Torre Guinigi, 8 euro, 230 steps and no lift",
+      "access": "Paid entry to the Torre Guinigi, 8 euro, 230 steps and no lift; not accessible to visitors with reduced mobility. Booking is recommended on weekdays and required at weekends and on public holidays; opening hours change with the season, so check the tower's page before going.",
       "transport": "In the middle of the old town, at Via Sant'Andrea and Via Guinigi",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Top_of_Torre_Guinigi_%28Lucca%29_-_Tuscany%2C_Italy.jpg",
@@ -225,7 +235,11 @@
       "notes": "Register 25/E715/LU/09 lists this as an insieme omogeneo of Quercus ilex at Via Guinigi and Via Sant'Andrea, with altitude 44 m, which is the tower roof and not the street. It passes the collectible-point test as an ensemble: it is compact, it is famous for being exactly this, and there is one obvious place to stand. Flagged on age: no source dates the living trees and the range given is deliberately wide. The pin is the tower, so the trunks are 44 m above it.",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise them by growing kept small in a brick planter atop a medieval tower, dense and shrub-sized rather than full height. They stand on the roof of the Torre Guinigi."
+      "how_to_recognise": "You can recognise them by growing kept small in a brick planter atop a medieval tower, dense and shrub-sized rather than full height. They stand on the roof of the Torre Guinigi.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 25/E715/LU/09",
+        "url": null
+      }
     },
     {
       "id": "luc_006",

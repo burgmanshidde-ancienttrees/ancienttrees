@@ -54,7 +54,11 @@
         "width": 5584,
         "height": 8368
       },
-      "how_to_recognise": "You can recognise it by its gnarled, storm-damaged trunk, still putting on growth, at the southern end of the meadow. It stands in Hallerwiese park, two large planes on the green behind it."
+      "how_to_recognise": "You can recognise it by its gnarled, storm-damaged trunk, still putting on growth, at the southern end of the meadow. It stands in Hallerwiese park, two large planes on the green behind it.",
+      "official_register": {
+        "name": "Naturdenkmal Nr. 5 (Stadt Nuernberg Naturdenkmalverordnung, Anlage 1; Bayerisches Landesamt fuer Umwelt), no. ND-04981",
+        "url": null
+      }
     },
     {
       "id": "nbg_002",
@@ -462,7 +466,11 @@
         "height": 4032
       },
       "how_to_recognise": "You can recognise it as the oak right on the north shore of the eastern Nummernweiher. It stands a short way west of protected oak No. 33, which grows in the footpath itself.",
-      "verify_notes": "Register only (Bavarian Naturdenkmal register, row ND-05060, 'aktuell'; Nuremberg's own 2020 ordinance list per earlier pass). Register coordinate 49.428955,11.109193 and de.wikipedia's list coordinate 49.42894,11.10923 agree within about 3 m, and a Commons photograph of this exact monument is geotagged at the same point, so the pin is confirmed to tree level. Species: de.wikipedia list and the photographer's Commons category 'Quercus robur in Nuremberg' (the species label is the Commons contributor's, not the register's; the register says only 'Eiche'). Photograph in hand: Commons file 'Eiche im Volkspark Dutzendteich am Nordufer des oestlichen Nummernweihers.jpg' (found by lifecheck, dated 2019-06-20; licence not yet checked here, a photo pass must verify it). Alive: lifecheck gave OLD (2019) only; no vitality field in register; deliver flagged. No girth, height or age given by any source seen. Part of a walkable group around the Dutzendteich lakes with ND 33 and ND 31 (all within roughly 450 m)."
+      "verify_notes": "Register only (Bavarian Naturdenkmal register, row ND-05060, 'aktuell'; Nuremberg's own 2020 ordinance list per earlier pass). Register coordinate 49.428955,11.109193 and de.wikipedia's list coordinate 49.42894,11.10923 agree within about 3 m, and a Commons photograph of this exact monument is geotagged at the same point, so the pin is confirmed to tree level. Species: de.wikipedia list and the photographer's Commons category 'Quercus robur in Nuremberg' (the species label is the Commons contributor's, not the register's; the register says only 'Eiche'). Photograph in hand: Commons file 'Eiche im Volkspark Dutzendteich am Nordufer des oestlichen Nummernweihers.jpg' (found by lifecheck, dated 2019-06-20; licence not yet checked here, a photo pass must verify it). Alive: lifecheck gave OLD (2019) only; no vitality field in register; deliver flagged. No girth, height or age given by any source seen. Part of a walkable group around the Dutzendteich lakes with ND 33 and ND 31 (all within roughly 450 m).",
+      "official_register": {
+        "name": "Naturdenkmal Nr. 34 (Stadt Nuernberg Naturdenkmalverordnung, Anlage 1; Bayerisches Landesamt fuer Umwelt), no. ND-05060",
+        "url": null
+      }
     },
     {
       "id": "nbg_014",
@@ -493,6 +501,10 @@
         "status": "approved",
         "width": 3024,
         "height": 4032
+      },
+      "official_register": {
+        "name": "Naturdenkmal Nr. 33 (Stadt Nuernberg Naturdenkmalverordnung, Anlage 1; Bayerisches Landesamt fuer Umwelt), no. ND-05059",
+        "url": null
       }
     },
     {
@@ -524,6 +536,10 @@
         "status": "approved",
         "width": 3024,
         "height": 4032
+      },
+      "official_register": {
+        "name": "Naturdenkmal Nr. 31 (Stadt Nuernberg Naturdenkmalverordnung, Anlage 1; Bayerisches Landesamt fuer Umwelt), no. ND-05057",
+        "url": null
       }
     },
     {
@@ -600,6 +616,29 @@
         "attribution": null,
         "status": "missing"
       }
+    },
+    {
+      "id": "nbg_018",
+      "name": "The Oak on the Green at Jakob-Wolff-Strasse",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Grünfläche vor dem Haus Jakob-Wolff-Straße 19/21/23, Nürnberg",
+        "latitude": 49.42983,
+        "longitude": 11.10578,
+        "neighbourhood": "Dutzendteich / Gleißhammer"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stiel-Eiche_(Quercus_robur)_in_der_Gr%C3%BCnfl%C3%A4che_vor_dem_Haus_Jakob-Wolff-Stra%C3%9Fe_19-21-23_20170825_125810.jpg"
+      ],
+      "access": "On a green strip in front of apartment blocks, apparently open ground rather than a private garden (the register calls it a Grünfläche, not a Vorgarten); not confirmed that the strip is public.",
+      "transport": "Tram line 4 to Dutzendteich (end stop), about 10 minutes on foot; walk time not verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "- REGISTER ONLY, flagged. ND Nr. 35 'Eiche in der Grünfläche vor dem Haus Jakob-Wolff-Straße 19/21/23' per de.wikipedia's list of Nuremberg Naturdenkmäler (49.42983,11.10578); the Bavarian register point is 49.42985,11.10555 (about 17 m west). Neither is provably tree-level, so pin approximate.\n- PHOTO IN HAND (reason this passes photo-or-pin): Commons file 'Naturdenkmal Stiel-Eiche (Quercus robur) in der Grünfläche vor dem Haus Jakob-Wolff-Straße 19-21-23 20170825 125810.jpg', by Buendia22, CC BY-SA 4.0, taken 2017-08-25, named after exactly this ND; no geotag on the file. A viewing pass must still look at it before it ships (Cadiz standard; whether it shows a big tree).\n- SPECIES from that file's name and category 'Quercus robur in Nuremberg'; no girth, height or age found in any source. Leave age empty and let the page ask the reader.\n- ALIVE: lifecheck NONE; only the 2017 photograph; flagged.\n- CLUSTER: about 75 m from nbg_015 (ND Nr. 31) and about 330 m from nbg_013/014 at the Nummernweiher, so it walks with the Dutzendteich oaks already live.\n- RECOGNITION: the oak on the lawn strip in front of the Jakob-Wolff-Strasse 19-23 block.",
+      "story": "Bavaria protects this oak by an address rather than a park: the green in front of the house at Jakob-Wolff-Strasse 19, 21 and 23. It is natural monument number 35 in Nuremberg, and it stands about 75 metres from number 31, one of the three protected oaks along the Nummernweiher in the Volkspark Dutzendteich.\n\nThat makes four registered oaks within a few hundred metres, and this is the one that stands among the flats rather than in the park. The register gives it as Eiche, oak, and nothing more. A photographer who visited in August 2017 filed it as a pedunculate oak, Quercus robur, and named the photograph after exactly this monument. That 2017 picture is the most recent record of the tree we have found, so if you have walked past it lately, tell us it is still there.\n\nWhere precisely it stands on the green is a matter of about twenty metres: the German Wikipedia list of the city's natural monuments and the Bavarian register put it that far apart, so our pin is approximate.\n\nThe green lies in front of apartment blocks, and we have not been able to confirm it is public ground, so look at it from the street rather than walking across. Nobody has published its girth, its height or its age. If you know any of the three, tell us.",
+      "how_to_recognise": "You can recognise it as the oak on the lawn strip in front of the Jakob-Wolff-Strasse 19 to 23 block. The protected oak No. 31 stands about 75 metres away, in the park between the street and the pond."
     }
   ]
 }

@@ -154,7 +154,8 @@
       "verified_sources": [
         "https://www.nps.gov/places/000/quinault-big-sitka-spruce-tree-trail.htm",
         "https://www.tripadvisor.com/Attraction_Review-g58695-d8098577-Reviews-Quinault_Big_Spruce_Tree-Quinault_Washington.html",
-        "https://www.monumentaltrees.com/en/usa/washington/graysharborcounty/2549_lakequinaultresort/7019/"
+        "https://www.monumentaltrees.com/en/usa/washington/graysharborcounty/2549_lakequinaultresort/7019/",
+        "https://www.nps.gov/places/000/quinault-big-sitka-spruce-tree.htm"
       ],
       "access": "Free; NPS's own page for this trail confirms it is located within Olympic National Park, though the immediate trailhead and lawn area are managed day-to-day by the adjacent Rain Forest Resort Village rather than directly by park staff.",
       "transport": "No public transit; on South Shore Road at Lake Quinault. Parking at the Rain Forest Resort Village.",
@@ -169,6 +170,10 @@
         "status": "approved",
         "width": 4000,
         "height": 6000
+      },
+      "official_register": {
+        "name": "NPS Places, Olympic National Park (Quinault Big Sitka Spruce Tree)",
+        "url": "https://www.nps.gov/places/000/quinault-big-sitka-spruce-tree.htm"
       }
     }
   ]
