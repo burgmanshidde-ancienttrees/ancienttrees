@@ -120,6 +120,17 @@ public final class Saved {
         }
     }
 
+    /// -saved=<ids>: trees on the Want to visit list, so that lane can be
+    /// photographed with rows in it. Same family as -collected=.
+    public func seedWantFromLaunchArguments() {
+        guard let arg = ProcessInfo.processInfo.arguments
+            .first(where: { $0.hasPrefix("-saved=") }) else { return }
+        let now = Date()
+        for id in arg.dropFirst(7).split(separator: ",") {
+            adopt(treeId: String(id), visitedAt: nil, savedAt: now, favourite: true)
+        }
+    }
+
 
     public var savedCount: Int { entries.values.filter { $0.favourite }.count }
     public var visitedCount: Int { entries.values.filter { $0.visitedAt != nil }.count }

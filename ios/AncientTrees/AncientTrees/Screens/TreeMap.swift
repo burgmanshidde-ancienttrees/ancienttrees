@@ -1665,7 +1665,7 @@ enum MapLayers {
                 UIColor.white.setFill()
                 UIBezierPath(ovalIn: r).fill()
                 let red = UIColor(red: 0.85, green: 0.20, blue: 0.24, alpha: 1)
-                if let heart = UIImage(systemName: "heart.fill")?
+                if let heart = UIImage(systemName: "bookmark.fill")?
                     .withConfiguration(UIImage.SymbolConfiguration(pointSize: 8,
                                                                    weight: .bold))
                     .withTintColor(red, renderingMode: .alwaysOriginal) {

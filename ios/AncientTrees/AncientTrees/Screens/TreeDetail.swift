@@ -1847,11 +1847,16 @@ struct TreeDetail: View {
                 .buttonStyle(BrandButtonStyle())
                 .accessibilityIdentifier("mine-share")
             } else {
-                Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
-                    Label("Take me there", systemImage: "arrow.turn.up.right")
+                // COLLECT IS THE BIG ONE, directions the circle (Hidde,
+                // 2026-09-22 with a designer, confirmed 2026-10-09: "take me
+                // there en collect moeten omgedraaid in belangrijkheid", Take
+                // me there sends you out of the app).
+                Button { navigator.collectAbout = tree.name; navigator.collectNearby = true } label: {
+                    Label("Collect this tree", systemImage: "camera")
                         .lineLimit(1)
                 }
                 .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("tree-add-photo-bar")
             }
 
             // NO photo button here. It lived beside "Take me there" for an
@@ -1872,8 +1877,8 @@ struct TreeDetail: View {
             // maken"). Same circle as the heart, same size, same border: two
             // things you can do to a tree, drawn as two of the same control.
             if mine == nil {
-                Button { navigator.collectAbout = tree.name; navigator.collectNearby = true } label: {
-                    Image(systemName: "camera")
+                Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
+                    Image(systemName: "arrow.turn.up.right")
                         .font(.title3)
                         .foregroundStyle(Brand.moss)
                         .frame(width: 52, height: 52)
@@ -1881,8 +1886,8 @@ struct TreeDetail: View {
                         .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
                 }
                 .buttonStyle(.plain)
-                .accessibilityIdentifier("tree-add-photo-bar")
-                .accessibilityLabel("Photograph this tree")
+                .accessibilityIdentifier("tree-take-me-there")
+                .accessibilityLabel("Take me there")
             }
             // NOT ON YOUR OWN TREE: a tree you added is in your collection
             // already, so a heart on it saves it to the list it is on.
