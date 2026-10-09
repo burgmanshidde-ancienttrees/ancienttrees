@@ -217,6 +217,13 @@ jobs:
         run: |
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           echo "at=$(date -u +%Y-%m-%dT%H:%M:%S+00:00)" >> "$GITHUB_OUTPUT"
+          # The same time in a file the run can Read, because the prompt may
+          # not carry an expression (2026-10-09): one `${{ }}` inside it makes
+          # GitHub evaluate the whole 22k-character prompt as an expression,
+          # and the cap is 21,000. Every knock from 11:35 UTC died at
+          # validation on exactly that, "Exceeded max expression length".
+          mkdir -p out/tmp
+          date -u +%Y-%m-%dT%H:%M:%S+00:00 > out/tmp/window-start.txt
 
       # The contributor reply loop's transport (spec 2026-08-21): thank-yous
       # and run-composed answers to readers who left an email, before the run
@@ -443,9 +450,9 @@ jobs:
             (deepen what people actually visit). If it says no token or refuses,
             skip it silently and work on.
 
-            THE JOB IS THE WINDOW, NOT ONE ITEM. This window started at
-            ${{ steps.start.outputs.at }} and the job is killed 120 minutes
-            after that. Measured over the week to 2026-10-09: 46 runs averaged
+            THE JOB IS THE WINDOW, NOT ONE ITEM. This window started at the
+            UTC time written in out/tmp/window-start.txt (Read it first) and
+            the job is killed 120 minutes after that. Measured over the week to 2026-10-09: 46 runs averaged
             16 minutes inside 120-minute windows, and the week's budget stood
             at 676 of 8000 machine minutes. The runs did the right work (an
             enrichment pass, a write pass, a city opened) and then stopped

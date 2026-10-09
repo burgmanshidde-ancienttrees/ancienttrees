@@ -147,6 +147,42 @@ STRATEGY_IN_WORKFLOW = [
 ]
 
 
+def check_run_prompt_carries_no_expression():
+    """The night-run prompt must not contain a `${{ }}` expression.
+
+    One expression anywhere in the prompt makes GitHub evaluate the WHOLE
+    prompt as an expression, and expressions are capped at 21,000 characters.
+    The prompt is longer than that. On 2026-10-09 a window-start time was
+    written into it as `${{ steps.start.outputs.at }}`, every knock from 11:35
+    UTC died at validation ("Invalid workflow file ... Exceeded max expression
+    length 21000") before any job started, and nothing here could see it:
+    run-health.json records runs that started, and a workflow refused at
+    validation never starts. A value the run needs goes into a file the start
+    step writes (out/tmp/window-start.txt) or into the step's env, never into
+    the prompt text. Removing this needs Hidde."""
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    path = root / ".github" / "workflows" / "nightly.yml"
+    if not path.is_file():
+        return out
+    try:
+        import yaml
+        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        return [".github/workflows/nightly.yml: does not parse as YAML (%s)" % e]
+    for job in (doc.get("jobs") or {}).values():
+        for step in job.get("steps") or []:
+            prompt = (step.get("with") or {}).get("prompt") or ""
+            if len(prompt) > 4000 and "${{" in prompt:
+                out.append(
+                    ".github/workflows/nightly.yml: the prompt of step %r carries a "
+                    "${{ }} expression, which caps the whole %d-character prompt at "
+                    "21,000 and makes GitHub refuse the workflow at validation; pass "
+                    "the value through a file or the step's env instead"
+                    % (step.get("name"), len(prompt)))
+    return out
+
+
 def check_run_prompt_forbids_compound_commands():
     """The night-run prompt must keep telling runs to send one command per Bash
     call.
@@ -2750,6 +2786,7 @@ def main():
 
     SOURCE_ONLY = [
         check_run_prompt_forbids_compound_commands,
+        check_run_prompt_carries_no_expression,
         check_scripts_are_valid_python,
         check_no_strategy_in_workflows,
         check_the_digest_never_shows_bots,
@@ -2940,6 +2977,7 @@ def main():
     failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()
+    failures += check_run_prompt_carries_no_expression()
     failures += check_app_downloads_are_their_own_block()
     failures += check_one_city_order()
     failures += check_copy_test_renders()
