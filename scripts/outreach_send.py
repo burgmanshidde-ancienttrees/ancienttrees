@@ -169,6 +169,20 @@ def main():
                             f"({this_batch}); re-running a multi-day batch "
                             f"never repeats within itself")
             continue
+        # ONE ANSWER PER MESSAGE (2026-10-09). A reply carries the
+        # Message-ID it answers; if that message was already answered from any
+        # batch, this is a duplicate, whatever its resend_reason says. Found
+        # when a thank-you to BUND Leipzig, moved into its own batch and sent,
+        # came back into the original batch through a merge and went a second
+        # time: the resend_reason that let the first through let the copy
+        # through too.
+        irt = " ".join((m.get("in_reply_to") or "").split())
+        if irt and any((s2.get("to") or "").lower() == to.lower()
+                       and s2.get("in_reply_to") == irt
+                       for s2 in sent_log["sent"]):
+            results.append(f"SKIP  {label}: {to}, that message was already "
+                           f"answered; one reply per message")
+            continue
         # NEVER THE SAME ADDRESS TWICE UNLESS SOMEBODY MEANT IT (Hidde,
         # 2026-08-16). The refusal is the default and always was; what was
         # missing is the door, so a deliberate follow-up used to be silently
@@ -245,6 +259,8 @@ def main():
                   "subject": m["subject"], "batch": batch.get("batch")}
         if (m.get("resend_reason") or "").strip():
             record["resend_reason"] = m["resend_reason"].strip()
+        if m.get("in_reply_to"):
+            record["in_reply_to"] = " ".join(m["in_reply_to"].split())
         sent_log["sent"].append(record)
         json.dump(sent_log, open(SENT_PATH, "w"), ensure_ascii=False, indent=1)
         results.append(f"SENT  {label}: {to}")

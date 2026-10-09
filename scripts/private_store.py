@@ -124,16 +124,13 @@ def _union(a, b):
 
 
 def _merge_batch(mine, theirs):
-    """A draft batch is EDITED, not appended to, so its mails merge by address
-    with the local copy winning. Added 2026-10-09: the value-union above
-    re-added the old wording of a reply on every push, and mailcheck refused
-    the batch for 'same address twice' twice in one afternoon. The sent log
-    keeps the value union, because there a row is a fact and never edited."""
-    out = dict(theirs)
-    out.update({k: v for k, v in mine.items() if k != "mails"})
-    seen = {m.get("to") for m in mine.get("mails", [])}
-    out["mails"] = list(mine.get("mails", [])) + [m for m in theirs.get("mails", []) if m.get("to") not in seen]
-    return out
+    """A draft batch is EDITED, not appended to, so the local copy wins
+    outright. 2026-10-09, twice in one afternoon: first the list union
+    re-added an edited reply's old wording beside the new one, then a
+    merge-by-address re-added a mail that had been MOVED to another batch,
+    and that mail went out a second time. Removing a mail from a batch has
+    to stick, and only replacing the whole file does that."""
+    return mine
 
 
 def merged(path, mine, theirs):
