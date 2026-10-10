@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (continuation attempt) - Nothing dispatched, push cleared
+
+**Rung:** none moved. No claims standing; the 3 unpushed commits (Dutch bulk LRMB, Stockholm, Zurich) are now pushed. 15 READY leads exist but recovery mode refuses new trees that are not rich (enriched()), so a write pass would fail preflight. enrich.py --next names Leeuwarden, whose open gaps are mostly season-only on trees that already carry register records; the last three enrichment passes (Stockholm, Zurich, Haarlem remainder) dead-ended, so no verify agent was dispatched. Window left unspent on purpose rather than burning tokens on a known dead end.
+
 ## 2026-10-10 (night run, 18:55 UTC) - Enrichment: Kanazawa, Vilnius, Coimbra
 
 **Rung:** enrichment pass (health showed only the iOS app run red, 6h old, not fixable from a Linux runner, and 6 of 12 knocks delivered). Visits last 7 days: 1,547 visits, 2,031 page views.
