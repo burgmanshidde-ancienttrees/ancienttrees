@@ -279,7 +279,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 1111",
+        "url": null
+      }
     },
     {
       "id": "aus_008",
@@ -363,7 +367,8 @@
         "Texas Big Tree Registry, Texas A&M Forest Service, TreeID 543 (non-commercial licence: verification only)",
         "https://www.inaturalist.org/observations/43004147",
         "https://www.inaturalist.org/observations/4224912",
-        "OpenStreetMap ways 549251160, 1081681031, 1081681035"
+        "OpenStreetMap ways 549251160, 1081681031, 1081681035",
+        "https://www.sunsetvalley.gov/departments/public-works-environmental-services/environmental-services/urban-forestry"
       ],
       "access": "Free. Stands in Sunset Valley's city-owned nature area beside Williamson Creek; OSM maps foot-designated dirt footways about 40 m from the pin and the registry lists the City of Sunset Valley as owner.",
       "transport": "Sunset Valley sits inside Austin about 9 km south-west of downtown; Capital Metro bus is roughly 35 minutes (borderline for the day-trip boundary), then a short walk on the nature-area paths.",
@@ -377,7 +382,11 @@
       "location_precision": "confirmed",
       "girth_cm": 315,
       "height_m": 13.4,
-      "how_to_recognise": "You can recognise it by its size against the other shin oaks along the creek: a trunk 3.15 metres round under a crown about 13 metres wide. It stands in the Sunset Valley Nature Area beside Williamson Creek, some 40 metres off the paths."
+      "how_to_recognise": "You can recognise it by its size against the other shin oaks along the creek: a trunk 3.15 metres round under a crown about 13 metres wide. It stands in the Sunset Valley Nature Area beside Williamson Creek, some 40 metres off the paths.",
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 543",
+        "url": null
+      }
     }
   ]
 }
