@@ -167,13 +167,13 @@ event on the list is unaffected.
 | sync_failed | 0 | 0 | 0 | never |
 | **all** | **35** | **611** | **1965** | |
 - Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
-- Ours is not in this table: 22 install(s), 671 events, the testing before the app went live on 2026-09-03 and every install built by Xcode since (the app says how it was built with each event). An App Store copy on our own phone is the one kind this cannot see.
+- Ours is not in this table: 22 install(s), 672 events, the testing before the app went live on 2026-09-03 and every install built by Xcode since (the app says how it was built with each event). An App Store copy on our own phone is the one kind this cannot see.
 - 76 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
 - Yesterday came from 7 installs, and the busiest made 17 of 7 events (243%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
 - Tabs opened (14d): Discover 45; My trees 40; Map 30
 - Active phones: 7 in the last day, 23 in the last 7 days, 56 in the last 30 days.
 - Coming back: 26 of those 56 phones opened the app on more than one day (46%).
-- Trees opened by the most phones (14d): The Yew of Campo Santana (Lisbon) 2; The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Ginkgo of Kushida Shrine (Fukuoka) 2; The Olive Trees of Santo Amaro (Lisbon) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2
+- Trees opened by the most phones (14d): The Yew of Campo Santana (Lisbon) 2; The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Ginkgo of Kushida Shrine (Fukuoka) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Arenbergpark Plane (Leuven) 2
 - Where the phones are (30d): United States 12; United Kingdom 10; The Netherlands 5; Italy 4; Portugal 4; Switzerland 3
 - Trees recorded (14d): a tree we map 17; a tree we do not 6
   A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
@@ -194,6 +194,21 @@ event on the list is unaffected.
 | 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
 | 10-01 | The Horse Chestnut of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
 | 10-01 | The Dragon Tree of Quinta Conde dos Arcos | Lisbon | B792 | ? | ? |
+
+**The app as a builder reads it** (this week against the week before; the weakest row is the work)
+
+| Link | This week | Week before |
+|---|---|---|
+| New phones | 9 | 11 |
+| First day: opened a tree | 6 of 9 (67%) | 8 of 11 (73%) |
+| First day: opened a tree near them | - | - |
+| First day: allowed location | - | - |
+| First day: Take me there | 1 of 9 (11%) | 4 of 11 (36%) |
+| First day: collected a tree | 1 of 9 (11%) | 3 of 11 (27%) |
+| Back within a week | 5 of 11 (45%) | 10 of 15 (67%) |
+| Trees collected (all phones) | 10 | 8 |
+- Near and location count only phones on a version that sends them (from 2026-10-10); a dash means none yet.
+- Back within a week looks at the phones that arrived a week earlier, so each has had its seven days.
 
 **App Store downloads** (Apple's own count, not PostHog)
 
@@ -266,7 +281,7 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 10-07 | 81 | 2 | 2.5% | - | - |
 | 10-08 | 168 | 4 | 2.4% | - | - |
 | **7 days** | **480** | **19** | **4.0%** | **127** | **2041** |
-- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); husalle lindens copenhagen (c1/i2, p3); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); oldest live oak trees in new orleans (c1/i2, p6); remarkable trees copenhagen (c1/i2, p4)
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); ancient trees in wiesbaden germany (c1/i2, p6); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6); french trees found in paris (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1)
 - Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
 
 **Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
@@ -741,7 +756,7 @@ Backlinks (watched pages):
 | 10-10T03:55 | 5.3 | 0 | 6 | 7 | - |
 | **3 runs** | **112** | **0** | **68** | | |
 
-- 3 of 3 produced no trees; 6 to 22 commands refused per run; last build that went live: 4h ago.
+- 3 of 3 produced no trees; 6 to 22 commands refused per run; last build that went live: 0h ago.
 
 **What they made**
 
