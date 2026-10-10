@@ -10164,6 +10164,15 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "zurich",
+   "kind": "enrich",
+   "tokens": 155536,
+   "trees": 0,
+   "note": "nothing found; PDFs unreadable on the runner; wasted",
+   "wasted": 155536
+  },
+  {
+   "date": "2026-10-10",
    "target": "stockholm",
    "kind": "enrich",
    "tokens": 141386,
