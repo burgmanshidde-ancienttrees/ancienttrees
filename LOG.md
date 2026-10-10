@@ -4,6 +4,7 @@
 
 ## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
 
+- **Vancouver:** register ids (City of Vancouver Heritage Register, Landscape Resources, Trees) for all 7 trees; pins and measurements for van_001, 002, 004 stay open (the City Hall oak and the Normal School/Planetarium trees can't be matched to a street-tree record).
 - **Amersfoort:** thin: LRMB ids for ame_006, 014, 018 (their register rows hold no girth or height). Register shows ame_014 has large stem wounds and ame_018 is only "potentieel" monumental. Season skipped (plane file has nothing above "nice"). bomenbieb.nl returns only a JS shell.
 - **Las Vegas:** dead end, nothing applied. The only candidate edit was a "Free" access line for the three Winchester Park trees, which the Clark County page does not state; UNLV campus trees have no coordinates and the Nevada Big Tree Register is a PDF without per-tree pages (no pdftotext on the runner; `pdftotext` was also in this week's refused-command list). All 24 gaps recorded as 90-day dead ends.
 - **Strasbourg:** all 10 trees: Ville de Strasbourg "arbres remarquables" page as register record plus girth and height for each. Caveats: stg_001 and stg_002 are multi-tree records (largest tree's figures used, noted); stg_007's table describes a young hornbeam so 330 cm is a lower bound from prose; stg_008 Rabin Cedar is planted 1996 (79 cm, 9 m), a young tree that may not belong on an ancient-trees site. No access hours published by the city.

@@ -43,7 +43,8 @@
       "verified_sources": [
         "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2523, heritage_register_id 2523, category LANDSCAPE RESOURCES Trees, English Oak, 453 W 12TH AV, municipaldesignationm=No)",
         "https://naturevancouver.ca/looking-at-statues-plaques-and-trees-on-vancouver-city-halls-grounds/",
-        "https://www.heritagesitefinder.ca/location/453-w-12th-ave-vancouver-bc"
+        "https://www.heritagesitefinder.ca/location/453-w-12th-ave-vancouver-bc",
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/"
       ],
       "access": "Free. Stands on the public grounds of Vancouver City Hall; open daylight hours, no entry restriction.",
       "transport": "Broadway-City Hall SkyTrain (Canada Line/Millennium Line), about 8 minute walk east along W 12th Ave.",
@@ -64,7 +65,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by where it stands, filling the southwest corner of the City Hall lawn. Nobody has ever put a tape around it."
+      "how_to_recognise": "You can recognise it by where it stands, filling the southwest corner of the City Hall lawn. Nobody has ever put a tape around it.",
+      "official_register": {
+        "name": "City of Vancouver Heritage Register (Landscape Resources, Trees), no. 2523",
+        "url": null
+      }
     },
     {
       "id": "van_002",
@@ -88,7 +93,8 @@
         "label": "late October into November, when a red oak turns the deep red it is named for"
       },
       "verified_sources": [
-        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2522, heritage_register_id 2522, category LANDSCAPE RESOURCES Trees, Northern Red Oak, 501 W 12TH AV, municipaldesignationm=No)"
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2522, heritage_register_id 2522, category LANDSCAPE RESOURCES Trees, Northern Red Oak, 501 W 12TH AV, municipaldesignationm=No)",
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/"
       ],
       "access": "Free. On the public plaza/grounds of City Square Shopping Centre, built around the preserved 1908-09 Provincial Normal School building. Open to the public as a commercial mall precinct.",
       "transport": "Broadway-City Hall SkyTrain station is directly adjacent (City Square Mall sits on top of/beside it).",
@@ -101,7 +107,11 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "heritage_register_id": "2522",
-      "how_to_recognise": "You can recognise it by where it stands, on the grounds outside the old Normal School's brick front, now enclosed by the City Square mall. Nothing else about this tree has ever been recorded."
+      "how_to_recognise": "You can recognise it by where it stands, on the grounds outside the old Normal School's brick front, now enclosed by the City Square mall. Nothing else about this tree has ever been recorded.",
+      "official_register": {
+        "name": "City of Vancouver Heritage Register (Landscape Resources, Trees), no. 2522",
+        "url": null
+      }
     },
     {
       "id": "van_003",
@@ -129,7 +139,8 @@
       "verified_sources": [
         "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2541, heritage_register_id 2541, category LANDSCAPE RESOURCES Trees, Caucasian Wing-Nut, 2020 COMOX ST, municipaldesignationm=No)",
         "https://opendata.vancouver.ca/explore/dataset/public-trees/ (asset_id 69572, address '2020 COMOX ST', common_name CAUCASIAN WING NUT, genus PTEROCARYA species FRAXINIFOLIA, diameter_cm 116.8, height_m 13.7, geo_point_2d lat 49.29071399913094 lon -123.14295600005953)",
-        "Heritage Vancouver Society Newsletter, Volume 15 Number 2, April/May 2006, 'Out on a Limb for Heritage' by Emma Hall and Clint Robertson, https://www.heritagevancouver.org/pdf_newsletter/hvs-news-2006-02-screen.pdf"
+        "Heritage Vancouver Society Newsletter, Volume 15 Number 2, April/May 2006, 'Out on a Limb for Heritage' by Emma Hall and Clint Robertson, https://www.heritagevancouver.org/pdf_newsletter/hvs-news-2006-02-screen.pdf",
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/"
       ],
       "access": "Free. Public street tree, City of Vancouver right-of-way at the Comox/Chilco corner in the West End.",
       "transport": "About a 10 minute walk from Burrard/Robson downtown, or the #5 or #6 bus along Denman/Davie to the West End.",
@@ -142,7 +153,11 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "heritage_register_id": "2541",
-      "how_to_recognise": "You can recognise it in summer by the half-metre chains of winged nutlets hanging from its branch tips, and year round by its deeply furrowed trunk. It stands on the Comox and Chilco corner."
+      "how_to_recognise": "You can recognise it in summer by the half-metre chains of winged nutlets hanging from its branch tips, and year round by its deeply furrowed trunk. It stands on the Comox and Chilco corner.",
+      "official_register": {
+        "name": "City of Vancouver Heritage Register (Landscape Resources, Trees), no. 2541",
+        "url": null
+      }
     },
     {
       "id": "van_004",
@@ -168,7 +183,8 @@
       },
       "verified_sources": [
         "https://opendata.vancouver.ca/explore/dataset/heritage-sites/ (record id 2540, heritage_register_id 2540, category LANDSCAPE RESOURCES Trees, Saucer Magnolia, 1100 CHESTNUT ST, municipaldesignationm=No)",
-        "Heritage Vancouver Society Newsletter, Volume 15 Number 2, April/May 2006, 'Out on a Limb for Heritage', https://www.heritagevancouver.org/pdf_newsletter/hvs-news-2006-02-screen.pdf"
+        "Heritage Vancouver Society Newsletter, Volume 15 Number 2, April/May 2006, 'Out on a Limb for Heritage', https://www.heritagevancouver.org/pdf_newsletter/hvs-news-2006-02-screen.pdf",
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/"
       ],
       "access": "Free to view from outside (grounds of the Museum of Vancouver / H.R. MacMillan Space Centre in Vanier Park, a public park); the Space Centre building itself charges admission but the ramp and its flanking trees are on open museum-forecourt grounds.",
       "transport": "Vanier Park, about a 15 minute walk from Granville Island or across the Burrard Bridge from downtown; bus #2 or #22 to Cornwall/Cypress.",
@@ -181,7 +197,11 @@
       "curation_status": "ai_generated",
       "location_precision": "approximate",
       "heritage_register_id": "2540",
-      "how_to_recognise": "You are looking for two of them rather than one tree, flanking the ramp entrances of the Space Centre. In late March and April they flower before a single leaf appears."
+      "how_to_recognise": "You are looking for two of them rather than one tree, flanking the ramp entrances of the Space Centre. In late March and April they flower before a single leaf appears.",
+      "official_register": {
+        "name": "City of Vancouver Heritage Register (Landscape Resources, Trees), no. 2540",
+        "url": null
+      }
     },
     {
       "id": "van_005",
@@ -199,7 +219,8 @@
       },
       "verified_sources": [
         "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', heritage_register_id 2543, common name 'Beech', 1711 DUNBAR ST, municipaldesignationm=No, dateoflastupdate 2020-10-14 (opendata.vancouver.ca/explore/dataset/heritage-sites/)",
-        "City of Vancouver public-trees open dataset, exact address match '1711 DUNBAR ST', common_name EUROPEAN BEECH, genus FAGUS species SYLVATICA, diameter_cm 133.4, height_m 19.8 (opendata.vancouver.ca/explore/dataset/public-trees/, single record, no other tree listed at this address)"
+        "City of Vancouver public-trees open dataset, exact address match '1711 DUNBAR ST', common_name EUROPEAN BEECH, genus FAGUS species SYLVATICA, diameter_cm 133.4, height_m 19.8 (opendata.vancouver.ca/explore/dataset/public-trees/, single record, no other tree listed at this address)",
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/"
       ],
       "access": "Free. Public boulevard tree on the City of Vancouver street right-of-way, reachable and viewable from the public sidewalk at any time.",
       "transport": "Residential street in Kitsilano; no transit stop directly at hand, nearest bus service runs along West 4th Avenue a short walk to the south.",
@@ -223,7 +244,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 419 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 419 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "City of Vancouver Heritage Register (Landscape Resources, Trees), no. 2543",
+        "url": null
+      }
     },
     {
       "id": "van_006",
@@ -241,7 +266,8 @@
       },
       "verified_sources": [
         "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', heritage_register_id 2526, common name 'Spanish Chestnut', 2001 W 20TH AV, municipaldesignationm=No, dateoflastupdate 2020-10-14 (opendata.vancouver.ca/explore/dataset/heritage-sites/)",
-        "City of Vancouver public-trees open dataset, address '2003 W 20TH AV' (one house number from the register's '2001'), common_name SPANISH CHESTNUT, genus CASTANEA species SATIVA, diameter_cm 104.1, height_m 19.8 (opendata.vancouver.ca/explore/dataset/public-trees/)"
+        "City of Vancouver public-trees open dataset, address '2003 W 20TH AV' (one house number from the register's '2001'), common_name SPANISH CHESTNUT, genus CASTANEA species SATIVA, diameter_cm 104.1, height_m 19.8 (opendata.vancouver.ca/explore/dataset/public-trees/)",
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/"
       ],
       "access": "Free. Public boulevard tree on the City of Vancouver street right-of-way, reachable and viewable from the public sidewalk at any time.",
       "transport": "Residential street in Arbutus Ridge on Vancouver's west side; nearest bus service runs along nearby arterials (Arbutus Street or West King Edward Avenue), a short walk away.",
@@ -262,7 +288,11 @@
       },
       "how_to_recognise": "You can recognise it by the long saw-toothed chestnut leaves and a trunk 3.3 metres round, on the boulevard outside 2003 West 20th Avenue. The street's other chestnut, a block away at 2089, is thicker.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "City of Vancouver Heritage Register (Landscape Resources, Trees), no. 2526",
+        "url": null
+      }
     },
     {
       "id": "van_007",
@@ -280,7 +310,8 @@
       },
       "verified_sources": [
         "City of Vancouver Heritage Register, category 'LANDSCAPE RESOURCES Trees', heritage_register_id 2535, common name 'Pin Oak', 4010 BLENHEIM ST, municipaldesignationm=No, dateoflastupdate 2020-10-14 (opendata.vancouver.ca/explore/dataset/heritage-sites/)",
-        "City of Vancouver public-trees open dataset, exact address match '4010 BLENHEIM ST': two Red Oaks (Quercus rubra) recorded, diameter_cm 111.8 and 127.0, height_m 22.9 and 19.8, plus two American Elms and a young hackberry at the same address (opendata.vancouver.ca/explore/dataset/public-trees/)"
+        "City of Vancouver public-trees open dataset, exact address match '4010 BLENHEIM ST': two Red Oaks (Quercus rubra) recorded, diameter_cm 111.8 and 127.0, height_m 22.9 and 19.8, plus two American Elms and a young hackberry at the same address (opendata.vancouver.ca/explore/dataset/public-trees/)",
+        "https://opendata.vancouver.ca/explore/dataset/heritage-sites/"
       ],
       "access": "Free. Public boulevard trees on the City of Vancouver street right-of-way, reachable and viewable from the public sidewalk at any time.",
       "transport": "Residential street in Dunbar-Southlands on Vancouver's west side; nearest bus service runs along West 41st Avenue or Dunbar Street, several minutes' walk.",
@@ -294,7 +325,11 @@
       "story": "Vancouver's heritage register lists a pin oak at 4010 Blenheim Street. Vancouver's street-tree inventory, run by another department for another purpose, records no pin oak at 4010 Blenheim Street at all. What it records is five trees sharing that one civic address: two red oaks, two American elms and a young hackberry.\n\nThe tree on this page is the larger of the two red oaks, 127 centimetres in diameter, about 4 metres round, and 19.8 metres tall. Four metres of oak is a serious tree on a residential boulevard whichever species it turns out to be, and it is the likeliest candidate for the heritage listing: pin oak and red oak are both lobed red oaks and are confused constantly, in registers as much as in gardens.\n\nThe other possibility is that the register's pin oak stands on the private frontage of the lot, where the street-tree survey does not go, and that the tree we are pointing you at is its unlisted neighbour. Neither dataset settles it. If you know the block and can say which oak is which, tell us, because you can answer that from the pavement in about ten seconds and we cannot answer it from here at all.\n\nNo planting date or age is recorded for any of the five trees at the address, so the years this one has been standing there are nobody's number yet.",
       "how_to_recognise": "You can recognise it by being the thicker but shorter of the two red oaks at 4010 Blenheim Street: 4 metres round and 19.8 metres tall, against the neighbouring oak's 3.5 metres and 22.9.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "City of Vancouver Heritage Register (Landscape Resources, Trees), no. 2535",
+        "url": null
+      }
     }
   ]
 }
