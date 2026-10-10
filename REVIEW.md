@@ -20,6 +20,13 @@ Web half: read brighton, glasgow, london, krakow and florence (titles, meta desc
 - WARN /brighton, the Preston Twins (data/cities/brighton.json, story and verify_notes): the story states two claims our own verify_notes say the sources contradict, softened only by "local accounts" and "by local account": the elms planted "on land ... under the Bishop of Chichester" c.1613 (the notes record the manor passing to the Crown by 1561 and the Shirleys leasing it by 1613) and Brighton being "the first council in the UK" to inoculate elms (the notes record DutchTrig first used at Seaford in 2016). Hard rule 2 / bridge-claim rule: a hedge does not make a claim we hold evidence against safe to print. Suggest dropping both or stating the disagreement outright.
 - NOTE (carry-over from 2026-10-09, still live): city pages still print "visited in {city}" (site/src/lib/i18n.ts:500) beside the new Collected wording.
 
+## 2026-10-10 (app half)
+
+App half (profile, refused, review-ask, search, signin-email, signin): Settings, the location-refused sheet and the sign-in sheet read clearly and agree with each other.
+
+- WARN APP: search ("lis"), the Species row "Elm" shows the subtitle "the city register lists American Elm, Ulmus amer..." (truncated) where every other row shows a tree count; a sentence explaining our data model is leaking into a result row, and the next row ("Elm, listed as Lombarts' Elm") reads as a duplicate species. A reader cannot tell what either row will open.
+- NOTE APP: signin-email is pixel-identical to signin (the three-button sheet), so the sweep frame does not show the email step it is named for; that screen ships unlooked-at.
+
 ## 2026-10-09
 
 Web half: read salt-lake-city (new, 5 trees; title, meta, intro and counts agree, the Liberty Park and Temple Square stories say plainly that no planting date is sourced) and the Temple Square Wych Elm page; scanned seville, barcelona, amsterdam, singapore, munsterland and salt-lake-city for em dashes and banned words, none found.
