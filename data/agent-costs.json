@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "reykjavik",
+   "kind": "enrich",
+   "tokens": 157123,
+   "trees": 2,
+   "note": "Tree of the Year PDF records and measurements on rey_003, rey_004"
+  },
+  {
+   "date": "2026-10-10",
    "target": "new-orleans",
    "kind": "enrich",
    "tokens": 137565,

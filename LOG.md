@@ -16,6 +16,8 @@ Fifth item, The Hague batch 2: the live LRMB ArcGIS FeatureServer carries girth 
 
 Sixth item, New Orleans: poor yield, one access line (nol_008, Botanical Garden hours and prices). No register, pin or measurement evidence found for the other seven; audubonnatureinstitute.org returns 403 to our fetches (blocklist candidate). The 25 other gaps are now dead-ended for 90 days.
 
+Seventh item, Reykjavik: rey_003 and rey_004 now cite the Icelandic Tree of the Year records (Skógræktarfélag Íslands PDFs) with their heights (rey_004 also girth 74 cm from the printed 23.7 cm diameter, and a core-sample age of about 45 years). The register's garbled coordinate for rey_004 lands 400 m from our pin, so not used. rey_001 and rey_002 have no per-tree record found.
+
 ## 2026-10-10 (session) - Deploy unblocked after the 45 retired Dutch trees
 
 **Broke:** every deploy and smoke run from about 10:30 to 12:50 UTC failed. This morning's run retired 45 Dutch trees the register calls dead or felled, and the copy around them did not follow: Park Sonsbeek's title still promised 8 trees (6 left, the villa beech gone), Vosseparkje's 7 (5 left, the oak and the Canadian poplar gone), and the retired Prinsentuin chestnut's photo (gro_008) stayed in site/public/photos with nothing pointing at it. **Fixed:** both park pages rewritten to their real counts, Arnhem's FAQ says 30 of 32, the Zijpendaalseweg lime's story no longer sends you to the felled Watermuseum lime, the orphan photo is removed. Deploy 38053543540 green, smoke green. The Hortus Botanicus Amsterdam now holds 2 trees and drops below the park-page gate by itself.

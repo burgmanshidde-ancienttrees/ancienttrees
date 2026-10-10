@@ -131,7 +131,8 @@
       "verified_sources": [
         "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/",
         "https://heidmork.is/gardahlynur-acer-pseudoplatanus/",
-        "https://www.wikidata.org/wiki/Q62412941"
+        "https://www.wikidata.org/wiki/Q62412941",
+        "https://www.skog.is/wp-content/uploads/2019/02/ta1994.pdf"
       ],
       "access": "Free, public street corner, viewable anytime",
       "transport": "Downtown Reykjavik, beside Reykjavik City Hall and Tjörnin pond",
@@ -165,7 +166,12 @@
         "moved_m": 92,
         "date": "2026-10-05",
         "note": "The pin marks where a reader stood to photograph this tree. That photograph is held for its light, not its identity, so the fix alone would not move a pin; it does here because Wikidata's coordinate for the 1994 Tree of the Year (Q62412941) lies 14 m from it, two independent positions agreeing. Moved on Hidde's word, 2026-10-05."
-      }
+      },
+      "official_register": {
+        "name": "Tré ársins 1994 (Skógræktarfélag Íslands, Icelandic Tree of the Year)",
+        "url": "https://www.skog.is/wp-content/uploads/2019/02/ta1994.pdf"
+      },
+      "height_m": 10
     },
     {
       "id": "rey_004",
@@ -183,7 +189,8 @@
       "story": "The Norway spruce named Iceland's Tree of the Year in 2019 is not old by the standards of almost anywhere else on this site, an estimated 50 to 60 years at the time of its selection, but it stands on ground that had no trees at all a human lifetime earlier. Elliðaárhólmi, an island within the Elliðaárdalur river valley on Reykjavik's eastern edge, only began receiving planted forest around 1950, when staff from the city's hydroelectric power company started work later taken over by the Reykjavik Forestry Society in 1972. Norway spruce imported from northern Norway went in heavily through the 1950s, 60s and 70s, part of a national effort to prove that organized forestry could work at all in a country that had lost nearly all its original woodland centuries earlier to settlement-era clearing and grazing. This particular tree, twelve metres tall by the time it won its designation, has become something like a mascot for that project, not ancient, not native, but proof that a spruce planted with real effort in the right spot can grow into something worth naming, in a country where almost no tree could make that claim a century ago.",
       "verified_sources": [
         "https://reykjavik.is/frettir/tre-arsins-er-raudgreni-i-ellidaarholma",
-        "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/"
+        "https://heidmork.is/borgartre-og-tre-arsins-i-reykjavik/",
+        "https://www.skog.is/wp-content/uploads/2020/03/TA2019.pdf"
       ],
       "access": "Free, public nature reserve, open daily",
       "transport": "Elliðaárdalur valley, eastern Reykjavik; accessible via walking and cycling paths from Árbær or Breiðholt",
@@ -195,7 +202,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it as the spruce named tree of the year in 2019, about twelve metres tall, on the island in the Ellidaardalur valley that was first planted around 1950."
+      "how_to_recognise": "You can recognise it as the spruce named tree of the year in 2019, about twelve metres tall, on the island in the Ellidaardalur valley that was first planted around 1950.",
+      "official_register": {
+        "name": "Tré ársins 2019 (Skógræktarfélag Íslands, Icelandic Tree of the Year)",
+        "url": "https://www.skog.is/wp-content/uploads/2020/03/TA2019.pdf"
+      },
+      "girth_cm": 74,
+      "height_m": 12.2
     }
   ]
 }
