@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "houston",
+   "kind": "enrich",
+   "tokens": 147502,
+   "trees": 6,
+   "note": "register ids on 5 Texas Big Tree entries (girths dropped: registry is non-commercial), Becks Prime small site"
+  },
+  {
+   "date": "2026-10-10",
    "target": "krakow",
    "kind": "enrich",
    "tokens": 144119,

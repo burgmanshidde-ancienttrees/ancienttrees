@@ -56,7 +56,11 @@
       },
       "how_to_recognise": "A low, enormously wide live oak on an open church lawn, far broader than it is tall, with limbs reaching almost to the grass.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 43463",
+        "url": null
+      }
     },
     {
       "id": "hou_002",
@@ -93,6 +97,10 @@
         ],
         "label": "October, when the nuts come down",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 1280",
+        "url": null
       }
     },
     {
@@ -153,7 +161,11 @@
       },
       "how_to_recognise": "A notably tall, slender elm in bottomland forest beside Spring Creek, with corky ridges running along the younger twigs.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 2341",
+        "url": null
+      }
     },
     {
       "id": "hou_005",
@@ -185,7 +197,11 @@
       "story": "Texas keeps a champion register for its biggest trees, and this entry is a plant most of the South clips into a hedge. Yaupon holly usually grows as a dense evergreen shrub. The one in the gardens at Rienzi has gone up like a tree: just over nine metres tall, a crown spreading nearly as wide, and a trunk 91 centimetres round, which is enough for state champion class on the Texas A&M Forest Service's registry. Foresters taped it in August 2024, which makes it one of the freshest measurements on this map.\n\nThe four acres it grows in belong to the Museum of Fine Arts, Houston. The Houston Chronicle's Azalea Trail coverage describes the garden's yaupons as part of its evergreen structure, the quiet green that holds the place together while everything else takes its turn flowering. Walking the garden costs nothing and needs no reservation, though the whole property shuts for the month of August.\n\nTwo things we cannot tell you. Only the state registry names this particular plant, so it sits flagged here until a second source catches up with it. And nobody has dated it: yaupon gets measured for girth far more often than for years, and no growth rate we would trust for the species turned up. If you know how long it has been standing there, tell us.",
       "how_to_recognise": "You can recognise it by the size for the species: a yaupon holly grown to tree height, just over nine metres on a trunk 91 centimetres round. It stands in Rienzi's four-acre garden off Kirby Drive.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 1128",
+        "url": null
+      }
     },
     {
       "id": "hou_006",
@@ -217,7 +233,11 @@
       "story": "This oak is broader than it is tall. The Texas A&M Forest Service put its crown at 19.8 metres across against 18.9 metres of height, taped the trunk at 2.31 metres round, and rated its condition good.\n\nIt grows in Russ Pitman Park in Bellaire, a separate city sitting inside Houston's West Loop. Both the park's own pages and the City of Bellaire's describe the place by its towering oaks, in the plural, without picking one out. The state registry did pick one out, and this is it: a Mexican white oak, Quercus polymorpha, also known as the Monterrey oak, which is not the species you expect to find carrying a state measurement in a Texas suburb.\n\nThe park is public and free, open from five in the morning until half past nine at night, with the Nature Discovery Center inside it keeping its own shorter hours. The tree is reachable whenever the park is, which is most of the day.\n\nTwo gaps worth saying out loud. The registry's tape went round it in May 2020, so the figures above are five years old and read as a floor rather than a reading; nothing we found suggests it has come down or gone into decline. And no age exists for it anywhere, with no growth rate for this species we would trust to derive one from the girth. If you know when it was planted, tell us.",
       "how_to_recognise": "You can recognise it by the crown, wider than the tree is tall at 19.8 metres across, on a trunk 2.31 metres round. It stands among the oaks of Russ Pitman Park, off Newcastle Street in Bellaire.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 2359",
+        "url": null
+      }
     },
     {
       "id": "hou_007",
@@ -298,7 +318,8 @@
       },
       "verified_sources": [
         "https://www.heritagesociety.org/historictrees",
-        "https://htxnews.com/2024/06/09/houstons-hidden-gem-becks-prime-and-its-majestic-live-oaks/"
+        "https://htxnews.com/2024/06/09/houstons-hidden-gem-becks-prime-and-its-majestic-live-oaks/",
+        "https://htxnews.com/2024/06/09/houstons-hidden-gem-becks-prime-and-its-majestic-live-oaks/ (two live oaks stand behind the restaurant at 2615 Augusta Drive)"
       ],
       "access": "Visible from the patio and the drive-through lane of a counter-service restaurant, listed as open daily from 11am to 10pm in 2026. These are a business's grounds rather than a park, so come during opening hours.",
       "transport": "Car or bus along the Westheimer Rd corridor near the Galleria; no rail; walk time not verified",
@@ -313,7 +334,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "location_site": {
+        "name": "Becks Prime restaurant grounds, 2615 Augusta Dr",
+        "radius_m": 50.0
+      }
     },
     {
       "id": "hou_010",
