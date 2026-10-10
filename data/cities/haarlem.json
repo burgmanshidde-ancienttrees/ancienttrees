@@ -35,15 +35,16 @@
       "age_max": 280,
       "location": {
         "address": "Haarlemmerhout, near Paviljoen Welgelegen",
-        "latitude": 52.3676661,
-        "longitude": 4.6260287,
+        "latitude": 52.365781,
+        "longitude": 4.622956,
         "neighbourhood": "Haarlemmerhout"
       },
       "story": "A lonely, exiled king passed the time by carving his own royal monogram into a beech tree, and two centuries later almost nothing is left to see of it. Lodewijk Napoleon, installed by his brother as the first King of Holland in 1806, spent time at the government estate now known as Paviljoen Welgelegen, a short walk from this stretch of the Haarlemmerhout, and sometime between 1808 and 1810 carved a crowned letter R into the beech's bark, R for Roi, the French word for king. He was not a popular monarch by Dutch standards, remembered mostly for resisting his brother's harsher demands on the Dutch economy before Napoleon deposed him outright in 1810 and annexed the kingdom directly into France. The carving outlasted the reign by two centuries, slowly closing over as the tree's bark grew and healed around the old wound, the way any scar eventually fades on a tree that keeps living. By 2025, arborists inspecting it reported there was virtually nothing left to make out, the crown and the letter both swallowed by growth. The beech stands in the Haarlemmerhout, the oldest public park in the Netherlands, itself burned to nothing during the 1572-73 Spanish siege of Haarlem and replanted from 1584, meaning this specific tree is a second or third generation of forest on ground that has been fought over more than once.",
       "verified_sources": [
         "https://www.monumentaltrees.com/nl/nld/noordholland/haarlem/1092_haarlemmerhout/28248/",
         "https://www.rodi.nl/haarlem/historie/202206/historisch-haarlem-7-het-gekerfde-kroontje-van-lodewijk-napoleon",
-        "https://www.nhnieuws.nl/nieuws/301854/zes-speciale-bomen-in-noord-holland-van-een-zevenling-tot-een-boomkerving-van-napoleon"
+        "https://www.nhnieuws.nl/nieuws/301854/zes-speciale-bomen-in-noord-holland-van-een-zevenling-tot-een-boomkerving-van-napoleon",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696635&outFields=*&f=json"
       ],
       "access": "Free, open park at any time",
       "transport": "15-20 minute walk from Haarlem Centraal station, or tram/bus",
@@ -54,7 +55,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           10,
@@ -63,7 +64,19 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by the old carved crowned R on the bark, closed over by growth and now barely readable. It stands in the Haarlemmerhout, a short walk from Paviljoen Welgelegen."
+      "how_to_recognise": "You can recognise it by the old carved crowned R on the bark, closed over by growth and now barely readable. It stands in the Haarlemmerhout, a short walk from Paviljoen Welgelegen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696635",
+        "url": null
+      },
+      "girth_cm": 404,
+      "height_m": 27,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696635&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 296
+      }
     },
     {
       "id": "haa_002",
@@ -74,14 +87,15 @@
       "age_max": 180,
       "location": {
         "address": "Griffietuin, Paviljoen Welgelegen, Dreef 3",
-        "latitude": 52.3717214,
-        "longitude": 4.6305692,
+        "latitude": 52.3719,
+        "longitude": 4.630918,
         "neighbourhood": "Centrum"
       },
       "story": "Haarlem's thickest tree grows in the garden of the province's own seat of government, a plane tree with a trunk six metres around, measured at chest height, which takes several adults linking hands to properly encircle. It stands in the grounds of Paviljoen Welgelegen, a country house built for a wealthy Haarlem merchant in the 1780s that later became the government building of the province of Noord-Holland, its garden known as the Griffietuin. No source pins down exactly when the tree was planted, though a plane tree reaching this girth in the Dutch climate typically implies a century and a half or more of steady growth, placing its likely origin somewhere in the 19th century, around the same era the estate itself changed from private pleasure garden to civic seat. Renovation work on the Griffietuin in recent years has deliberately reconnected it with the neighbouring Frederikspark, restoring a stretch of green that visitors can walk through freely even when the government building itself is closed to the public. The building only opens fully for exhibitions, public council sessions, or the national Open Monumentendag, but the garden and its giant plane require no appointment at all, a rare case of the tree being easier to visit than the institution that happens to house it.",
       "verified_sources": [
         "https://www.boomkronen.eu/node/99",
-        "https://www.noord-holland.nl/Over_de_provincie/Paviljoen_Welgelegen/Welgelegen_als_provinciehuis"
+        "https://www.noord-holland.nl/Over_de_provincie/Paviljoen_Welgelegen/Welgelegen_als_provinciehuis",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686324&outFields=*&f=json"
       ],
       "access": "Free, open garden at any time; the Provinciehuis building itself only opens for exhibitions, public sessions, or Open Monumentendag",
       "transport": "15-20 minute walk from Haarlem Centraal station, or tram/bus",
@@ -92,8 +106,20 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the trunk, six metres round at chest height and the thickest in Haarlem. It stands in the Griffietuin, the garden of Paviljoen Welgelegen, which you can walk into even when the building is shut."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the trunk, six metres round at chest height and the thickest in Haarlem. It stands in the Griffietuin, the garden of Paviljoen Welgelegen, which you can walk into even when the building is shut.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686324",
+        "url": null
+      },
+      "girth_cm": 608,
+      "height_m": 27,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686324&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 31
+      }
     },
     {
       "id": "haa_003",
@@ -191,7 +217,16 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its weeping, drooping branches. It stands in Prinsenhof, beside Haarlem's old municipal herb garden."
+      "how_to_recognise": "You can recognise it by its weeping, drooping branches. It stands in Prinsenhof, beside Haarlem's old municipal herb garden.",
+      "girth_cm": 268,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "haa_006",
@@ -228,7 +263,8 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it as the oak growing near the statue Ontmoeting. It stands in the Wijngaardtuin, in the open."
+      "how_to_recognise": "You can recognise it as the oak growing near the statue Ontmoeting. It stands in the Wijngaardtuin, in the open.",
+      "girth_cm": 320
     },
     {
       "id": "haa_007",
@@ -333,7 +369,8 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it as the youngest of Kenaupark's protected trees, planted decades after the park's first plantings matured. It stands near numbers 15 and 17."
+      "how_to_recognise": "You can recognise it as the youngest of Kenaupark's protected trees, planted decades after the park's first plantings matured. It stands near numbers 15 and 17.",
+      "girth_cm": 280
     },
     {
       "id": "haa_010",
@@ -503,23 +540,31 @@
       "age_estimate": "roughly 140-155 years",
       "age_min": 140,
       "age_max": 155,
-      "girth_cm": null,
+      "girth_cm": 323,
       "location": {
         "address": "Algemene Begraafplaats Kleverlaan, Kleverlaan 9, Haarlem",
         "latitude": 52.39496,
-        "longitude": 4.639907,
+        "longitude": 4.639908,
         "neighbourhood": "Kleverlaan"
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696652, 'Es Kleverlaan')",
-        "https://www.ivn.nl/afdeling/zuid-kennemerland/natuuractiviteiten/monumentale-bomen-op-de-begraafplaats/ (confirms the cemetery as a designated stop for monumental-tree walks; general corroboration of setting, not tree-specific)"
+        "https://www.ivn.nl/afdeling/zuid-kennemerland/natuuractiviteiten/monumentale-bomen-op-de-begraafplaats/ (confirms the cemetery as a designated stop for monumental-tree walks; general corroboration of setting, not tree-specific)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696652&outFields=*&f=json"
       ],
       "access": "Free, public cemetery (Algemene Begraafplaats Kleverlaan), open during normal daytime hours",
       "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem (same stop as the already-published Kleverlaan Yew, haa_003)",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "The general cemetery on the Kleverlaan is where Haarlem keeps its best trees, and this ash is one of the reasons guided tree walks stop here at all. It stands in the oldest section, on the south side, at a bend in the path with graves gathered close around its roots. The national register of monumental trees puts its planting somewhere between 1870 and 1880, so it is roughly 140 to 155 years old, and that band is as precise as the record allows. Ash rarely gets to be the tree people notice. It has no autumn colour worth the name, the bark stays grey and quiet, and the leaves drop early and more or less all at once. What it has instead is height and a light, open crown that lets the grass grow right up to the trunk, and after a century and a half over the same graves this one has plenty of both. The register is the only source that names this particular tree, which is why it is listed here with its dates attributed rather than asserted; the cemetery's beeches, cedar, walnut and yew are far better documented than its ash. If you know when it went in, or who planted it, tell us. It stands about a hundred metres from the Kleverlaan yew, so the two make one stop rather than two.",
-      "how_to_recognise": "You can recognise it by the tall, light, open crown that lets grass grow right up to the trunk. It stands at a bend in the path in the cemetery's oldest section, on the south side, about a hundred metres from the yew."
+      "how_to_recognise": "You can recognise it by the tall, light, open crown that lets grass grow right up to the trunk. It stands at a bend in the path in the cemetery's oldest section, on the south side, about a hundred metres from the yew.",
+      "height_m": 23,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696652&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 0
+      }
     },
     {
       "id": "haa_015",
@@ -528,7 +573,7 @@
       "age_estimate": "roughly 115-125 years",
       "age_min": 115,
       "age_max": 125,
-      "girth_cm": null,
+      "girth_cm": 326,
       "location": {
         "address": "Algemene Begraafplaats Kleverlaan, near the entrance, Haarlem",
         "latitude": 52.395284,
@@ -537,11 +582,12 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696667, 'Amerikaanse eik Kleverlaan')",
-        "https://www.rodi.nl/haarlem/nieuws/397403/wandelen-langs-monumentale-bomen-in-hout-bolwerken-en-kleverlaan (independently confirms this cemetery is one of three stops in the Bomenstichting's monumental-tree walking guide, general corroboration of the walk rather than the individual tree)"
+        "https://www.rodi.nl/haarlem/nieuws/397403/wandelen-langs-monumentale-bomen-in-hout-bolwerken-en-kleverlaan (independently confirms this cemetery is one of three stops in the Bomenstichting's monumental-tree walking guide, general corroboration of the walk rather than the individual tree)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696667&outFields=*&f=json"
       ],
       "access": "Free, public cemetery, open during normal daytime hours",
       "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Come in through the Kleverlaan gate and the first thing you meet is an avenue of wingnuts. This American oak stands one connecting path to the left of it, which is exactly where the register tells you to look. Quercus rubra is not a Dutch tree. It came from the eastern seaboard of North America and Dutch parks and cemeteries planted it widely from the nineteenth century onward, largely for what it does in autumn. Native oaks go brown and hang on to the leaf half the winter. This one goes deep red in late October and lets go. The register dates its planting to between 1900 and 1910, making it roughly 115 to 125 years old, which is young for a monumental tree and respectable for a red oak in a Dutch cemetery. It has stood beside the gate for more than a century of funerals. The cemetery is one of three stops on the Bomenstichting's monumental tree walk through Haarlem, and this oak is one of the reasons the route comes here, though the national register is still the only source that records the tree itself. Take the dates as the register's rather than as a measurement. Its leaves are the easy check: broad, with shallow lobes ending in fine bristle points, and far bigger than anything a native oak produces.",
       "best_time": {
@@ -552,7 +598,14 @@
         "kind": "autumn colour",
         "label": "late October and November, when the leaves turn deep red before they let go"
       },
-      "how_to_recognise": "You can recognise it by the broad leaves, shallow-lobed and ending in fine bristle points, far bigger than a native oak's, and deep red in late October. It stands one connecting path left of the wingnut avenue at the gate."
+      "how_to_recognise": "You can recognise it by the broad leaves, shallow-lobed and ending in fine bristle points, far bigger than a native oak's, and deep red in late October. It stands one connecting path left of the wingnut avenue at the gate.",
+      "height_m": 17,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696667&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 0
+      }
     },
     {
       "id": "haa_016",
@@ -561,7 +614,7 @@
       "age_estimate": "roughly 95-105 years",
       "age_min": 95,
       "age_max": 105,
-      "girth_cm": null,
+      "girth_cm": 324,
       "location": {
         "address": "Algemene Begraafplaats Kleverlaan, near the entrance, Haarlem",
         "latitude": 52.395431,
@@ -569,11 +622,12 @@
         "neighbourhood": "Kleverlaan"
       },
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1696668, 'Robinia Kleverlaan')"
+        "data/registers/netherlands-lrmb.json (nr 1696668, 'Robinia Kleverlaan')",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696668&outFields=*&f=json"
       ],
       "access": "Free, public cemetery, open during normal daytime hours",
       "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "This black locust has its feet in a hedge. The register puts it in the first plot on the left as you come through the entrance, along the path, with the base of the trunk standing in clipped greenery, which is an odd berth for a tree of nearly a century. Robinia pseudoacacia arrived in Europe from the Appalachians in the early seventeenth century and carries the name of Jean Robin, gardener to the French kings. It spread across the continent as a street and park tree because it grows fast, tolerates poor thin soil, and smells extraordinary for about two weeks a year. In late May and early June it hangs white pea flowers in chains and the scent carries a long way down a quiet path. The rest of the year it is a scruffier proposition: deeply furrowed bark like twisted rope, a crown that looks half assembled, limbs that snap in storms. The register dates the planting to between 1920 and 1930, so roughly 95 to 105 years, and it is the only record we have found of this particular tree. No second source names it, so read the age as the register's estimate. It stands within a hundred metres of the red oak and the silver lime, which makes all three one short loop just inside the gate.",
       "best_time": {
@@ -584,7 +638,14 @@
         "kind": "flowers",
         "label": "late May and early June, when the white flower chains open and the scent carries down the path"
       },
-      "how_to_recognise": "You can recognise it by the deeply furrowed bark, like twisted rope, and by the base of the trunk standing in a clipped hedge. It stands in the first plot on the left as you come through the entrance, along the path."
+      "how_to_recognise": "You can recognise it by the deeply furrowed bark, like twisted rope, and by the base of the trunk standing in a clipped hedge. It stands in the first plot on the left as you come through the entrance, along the path.",
+      "height_m": 15,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696668&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 0
+      }
     },
     {
       "id": "haa_017",
@@ -593,7 +654,7 @@
       "age_estimate": "roughly 175-185 years",
       "age_min": 175,
       "age_max": 185,
-      "girth_cm": null,
+      "girth_cm": 372,
       "location": {
         "address": "Algemene Begraafplaats Kleverlaan, oldest section, Haarlem",
         "latitude": 52.395268,
@@ -616,7 +677,8 @@
         "kind": "flowers",
         "label": "July, when it flowers weeks after every other lime in the city"
       },
-      "how_to_recognise": "You can recognise it by its leaves, white with felt on the underside, flickering pale when wind moves through the crown. It stands on a path beside the water, in the oldest section of the Kleverlaan cemetery."
+      "how_to_recognise": "You can recognise it by its leaves, white with felt on the underside, flickering pale when wind moves through the crown. It stands on a path beside the water, in the oldest section of the Kleverlaan cemetery.",
+      "height_m": 20
     },
     {
       "id": "haa_018",
@@ -715,7 +777,7 @@
       "age_estimate": "roughly 180-190 years",
       "age_min": 180,
       "age_max": 190,
-      "girth_cm": null,
+      "girth_cm": 360,
       "location": {
         "address": "Frederikspark, along the north-side path, Haarlem",
         "latitude": 52.373795,
@@ -739,7 +801,8 @@
         "kind": "autumn colour",
         "label": "late October into November, when it goes scarlet and holds it for weeks"
       },
-      "how_to_recognise": "You can recognise it by its lower branches sweeping down toward the ground and its tidy, conical crown. It stands along the north-side path of Frederikspark."
+      "how_to_recognise": "You can recognise it by its lower branches sweeping down toward the ground and its tidy, conical crown. It stands along the north-side path of Frederikspark.",
+      "height_m": 22
     }
   ]
 }

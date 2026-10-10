@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "haarlem",
+   "kind": "enrich",
+   "tokens": 158222,
+   "trees": 0,
+   "note": "LRMB live-layer girth/height on 10 trees, 5 pins"
+  },
+  {
+   "date": "2026-10-10",
    "target": "toronto",
    "kind": "enrich",
    "tokens": 162773,
