@@ -49,7 +49,8 @@
       "story": "The souvenirs say 1,500 years. The city that owns the tree says 300 to 400, and an academic estimate stretches it to 500. That gap is not carelessness, it is live oak. The species grows fast when young, slows unpredictably and rots out from the middle while the crown is still healthy, so there is no core to pull and nothing to count. What can be measured is girth, and every estimate that starts from the tree itself lands in the hundreds of years rather than the thousands.\n\nNone of the size is in dispute. The trunk runs 25 and a half feet round by the city's figure, 28 by another. The crown shades around 17,000 square feet, a quarter of an acre under one tree, and the longest limb travels 187 feet before it stops. Live oak does not race upward; it spreads until the branches come back down and rest on the ground, which is why most of this tree is at eye level.\n\nThe name is prosaic. Justus Angel and Martha Waight Tucker Angel owned the estate, and the tree took their surname. The local stories about the spirits of enslaved people appearing among the branches came afterwards.\n\nHurricane Hugo went over it in 1989 and it recovered. The city bought the land in 1991 and now runs it as a free park taking around 400,000 visitors a year.",
       "verified_sources": [
         "https://www.charleston-sc.gov/153/Angel-Oak",
-        "https://en.wikipedia.org/wiki/Angel_Oak"
+        "https://en.wikipedia.org/wiki/Angel_Oak",
+        "https://www.charleston-sc.gov/153/Angel-Oak (City of Charleston: 'The tree is 65 feet high')"
       ],
       "access": "Free, city-owned park, open 7 days a week (Mon-Sat 9am-5pm, Sun 1pm-5pm), closed holidays. No blankets, drinks, food, props or tripods allowed near the tree; donations welcomed.",
       "transport": "On Johns Island, roughly 20-25 minutes by car from downtown Charleston; no direct transit, parking on site",
@@ -63,7 +64,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its huge low, spreading crown, shading a quarter acre, whose branches rest on the ground rather than reaching upward, on a trunk about 7.8m round. It stands within its own fenced park on Johns Island."
+      "how_to_recognise": "You can recognise it by its huge low, spreading crown, shading a quarter acre, whose branches rest on the ground rather than reaching upward, on a trunk about 7.8m round. It stands within its own fenced park on Johns Island.",
+      "height_m": 19.8
     },
     {
       "id": "chs_002",
@@ -82,7 +84,8 @@
       "story": "Nobody has published an age for a single tree in this yard, and the honest reason is that they are not all the same age. Hurricane Hugo came through Charleston in 1989 and took some of these oaks with it, so what stands now is a mix of the survivors and what went in afterwards. It reads as one thing regardless, which is the whole point of the place: a compact, iron-fenced yard of live oaks hung with Spanish moss, closed at the end by the portico of Randolph Hall.\n\nThat building went up between 1828 and 1830 and is a National Historic Landmark. The cistern the yard is named for came later, in 1857, a sunken brick reservoir that once held the campus water supply and now works as the low stage everyone ends up sitting on. Before the College took the ground over in 1785 it was a colonial military barracks.\n\nIt is still a working space rather than a lawn to look at. Commencement happens here, and the Spoleto Festival puts performances under the trees, so it is occasionally roped off.\n\nCome in from George Street and stand at the cistern. If anyone has ever dated the older oaks, the College's own records would settle it, and we would like to know.",
       "verified_sources": [
         "https://discovering.charleston.edu/items/show/7",
-        "https://spoletousa.org/blog/hidden-secrets-of-the-cistern-yard/"
+        "https://spoletousa.org/blog/hidden-secrets-of-the-cistern-yard/",
+        "https://www.openstreetmap.org/way/445081519 (mapped as the named park 'Cistern Yard', 66 George Street, operator College of Charleston, about 90 m by 80 m; its oaks are the subject of https://discovering.charleston.edu/items/show/7)"
       ],
       "access": "Free, open college campus green, self-guided visits welcome during daylight hours; occasionally closed off for commencement, Spoleto Festival performances or other campus events.",
       "transport": "Downtown Charleston, walkable from the historic district; no dedicated transit stop needed",
@@ -94,7 +97,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You are looking for the yard rather than one tree: iron-fenced live oaks hung with Spanish moss, closed at the far end by the portico of Randolph Hall. Come in from George Street and stand at the sunken cistern."
+      "how_to_recognise": "You are looking for the yard rather than one tree: iron-fenced live oaks hung with Spanish moss, closed at the far end by the portico of Randolph Hall. Come in from George Street and stand at the sunken cistern.",
+      "location_site": {
+        "name": "Cistern Yard, College of Charleston",
+        "radius_m": 50.0
+      }
     },
     {
       "id": "chs_003",
