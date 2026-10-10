@@ -15,7 +15,9 @@
 - **Seoul:** measurements for 4 trees, protected-tree ids (서18-1..3, 서1-9) for the Siheung-dong ginkgos and the Jogyesa pagoda tree. Hosts failing from the runner: royalpalace.go.kr and eng.cha.go.kr (DNS), khs.go.kr open API (empty), jogyesa site needs curl -k.
 - **Utrecht:** 3 register ids (Landelijk Register Monumentale Bomen), girth/height for 5 trees from Peter Kuiper's canal-route survey (cites the register numbers per tree; a private guide, so a reader or later pass may want a second look), autumn-colour best_time on two copper beeches. Worth checking: utr_017's register coordinate sits 138 m from our "confirmed" pin.
 - **Osaka:** Agency for Cultural Affairs records for the Noma Keyaki and Myokoku-ji cycad, girth/height for the Noma Keyaki (town sources disagree with the on-site sign: 27.37 m / 13.01 m vs 30 m / 14 m) and Achihayao camphor. I dropped the cycad's girth: 250 cm was one stem of a ~120-stem clump, not a whole-plant figure.
-- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k + ~175k + ~167k + ~162k verify-agent tokens. No refusals except rm of scratch files.
+- **Crete:** only a height for the Azoria olive; no per-tree register pages or measurements found for the other three. explorecrete.com is behind a Cloudflare challenge.
+- **Hong Kong:** Tree Register ids (OVT numbers) for 8 trees, heights and DBH-derived girths for 3 camphors and the Kam Tin tree house. For hkg_003 to 006 the register position is ~300 m from our pin though address and species match, so those four pins are worth a look; hkg_006 rests on species and place only.
+- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k + ~175k + ~167k + ~162k + ~146k + ~164k verify-agent tokens. No refusals except rm of scratch files.
 
 ## 2026-10-10 (session) - Settings: one screen on the app and the website
 

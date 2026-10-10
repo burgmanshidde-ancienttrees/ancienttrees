@@ -10164,6 +10164,22 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "crete",
+   "kind": "enrich",
+   "tokens": 146217,
+   "trees": 0,
+   "note": "one height; no per-tree register pages"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "hong-kong",
+   "kind": "enrich",
+   "tokens": 164099,
+   "trees": 0,
+   "note": "Tree Register ids on 8 trees, measurements on 4"
+  },
+  {
+   "date": "2026-10-10",
    "target": "osaka",
    "kind": "enrich",
    "tokens": 161588,

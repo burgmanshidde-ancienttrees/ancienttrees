@@ -110,7 +110,8 @@
         "https://www.hongkongfootprint.com/2018/09/kam-tin-tree-house-ancient-tree-house.html",
         "https://chestnutjournal.com/2020/the-tree-house-of-kam-tin/",
         "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Kam+Tin+Tree+House",
-        "https://gia.info.gov.hk/general/201411/15/P201411150395_0395_137371.pdf"
+        "https://gia.info.gov.hk/general/201411/15/P201411150395_0395_137371.pdf",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, public playground",
       "transport": "By minibus from Yuen Long or Kam Sheung Road MTR station towards Kam Tin, short walk from Shui Mei Village",
@@ -127,9 +128,10 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by its trunk and roots growing straight through the walls and window openings of an abandoned stone ruin. It stands in Shui Mei Village Playground, Kam Tin.",
       "official_register": {
-        "name": "Register of Old and Valuable Trees (Hong Kong Government), no. LCSD YL/6",
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. LCSD YL/6 (Tree Register No. LCSD/YL/00004)",
         "url": null
-      }
+      },
+      "height_m": 18.5
     },
     {
       "id": "hkg_004",
@@ -147,7 +149,8 @@
       "story": "Ten adults linking arms cannot fully encircle this camphor's trunk, and the tree they would be hugging predates every building in the village it half-hides. She Shan Tsuen's feng shui woodland, 5.7 hectares the government protected as a Site of Special Scientific Interest in 1975, exists because villages across Hong Kong's New Territories deliberately left a strip of hillside forest standing behind their houses, believing an intact wood at a settlement's back shielded it from bad fortune and worse weather. Camphor trees anchor most of these feng shui woods, chosen centuries ago for their size and longevity rather than planted at random, and She Shan's has grown into one of the largest examples in the New Territories: a 32 metre crown, seven storeys of glossy waxy leaves, and an age historical references put between three and five centuries, most often cited at around four hundred years. Government inspectors have logged a severe cavity and dead branches in recent surveys, the ordinary wear of a tree old enough that nobody alive remembers it being young, and it remains under continuous monitoring and pruning rather than removal. It stands on the wooded slope directly behind the village, a short walk off Lam Kam Road, still doing the job it was left standing there to do.",
       "verified_sources": [
         "https://culture-hongkong.com/hong-kong-trees-that-speak/",
-        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html"
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, reachable via a footpath behind the village; part of a protected Site of Special Scientific Interest, please keep to the path",
       "transport": "By minibus or car to Lam Tsuen off Lam Kam Road, then a short walk to She Shan village",
@@ -160,7 +163,13 @@
       "curation_status": "flagged",
       "notes": "Age (300-500 years, commonly cited as 400), crown size (32m) and trunk girth (ten adults linking arms) come from one detailed source, culture-hongkong.com; a second search pass through Wikipedia's She Shan Tsuen article and the government's own Herbarium fung shui woods overview confirmed the woodland's 1975 SSSI designation and the village's location but added no independent corroboration of the individual tree's age or size, so this stays flagged for a single-source age claim rather than presented as fully cross-verified. Existence, species and exact location are independently confirmed via the government's own Old and Valuable Trees register (OVTNo LANDSD TP/1, 'She Shan Tsuen, Tai Po, She Shan Fung Shui Woodland SSSI', condition notes matching: severe cavity, dead branches), coordinates converted from its HK1980 Grid reference (833000/834524) as described in hkg_001's notes. A future session should look for a second independent source on the specific age figure before upgrading this out of flagged.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its trunk, too wide for ten adults linking arms to encircle, under a 32 metre crown. It stands behind She Shan Tsuen village, off Lam Kam Road."
+      "how_to_recognise": "You can recognise it by its trunk, too wide for ten adults linking arms to encircle, under a 32 metre crown. It stands behind She Shan Tsuen village, off Lam Kam Road.",
+      "official_register": {
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. LANDSD TP/1 (Tree Register No. LANDSD/TP/00001)",
+        "url": null
+      },
+      "girth_cm": 945,
+      "height_m": 17
     },
     {
       "id": "hkg_005",
@@ -178,7 +187,8 @@
       "story": "Japanese soldiers cut down most of Lantau Island's large trees for fuel during the wartime occupation, and by local account, they stopped short of this one because they believed a guardian spirit haunted it and would frighten off anyone who tried. Whether the spirit or something more practical spared it, the camphor beside Sha Lo Wan's old village school survived a period when little large timber on the island did, and villagers still call it Sha Lo Wan's King Camphor. Hong Kong's own tourism authority repeats the village's claim that it is over a thousand years old, a figure with no scientific dating behind it and best treated as local tradition rather than a measured fact, though camphors are long-lived enough that a large old specimen reaching many centuries is far from implausible. What is certain is its role: Sha Lo Wan, a fishing village on Lantau's quiet north-west coast reachable by a coastal footpath or a rural kaido ferry from Tung Chung, has treated this tree as a feng shui guardian for generations, the kind of tree a village builds its sense of protection around rather than fells for a hard winter. It still stands on the government-registered slope beside the school, watched over rather than the other way around now.",
       "verified_sources": [
         "https://www.lantau.gov.hk/en/exploring-lantau/stories/sha-lo-wan/",
-        "https://nstecker.com/2010/04/04/tree-stories-the-red-kapok-and-%e2%80%9cfeng-shui%e2%80%9d-camphor/"
+        "https://nstecker.com/2010/04/04/tree-stories-the-red-kapok-and-%e2%80%9cfeng-shui%e2%80%9d-camphor/",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, public village land",
       "transport": "By kaido ferry from Tung Chung to Sha Lo Wan, or via the Lantau coastal footpath",
@@ -191,7 +201,13 @@
       "curation_status": "flagged",
       "notes": "The '1,000+ years' figure is a local/official claim, sourced to the government's own South Development and Sustainable Lantau Office (CEDD) storytelling page, repeated by other tourism material, but not a scientifically dated figure; the story presents it explicitly as a claim rather than a fact per the honesty rule. age_min/age_max are deliberately kept to a conservative, defensible 200-300 rather than encoding the unverified 1,000-year figure into age_max: this field feeds mechanical site-wide comparisons (the per-city oldest-tree page, any future oldest-trees-in-the-world collection), and hard rule 8 requires superlative-driving numbers to be checked rather than passed through from an unverified local claim. hong-kong.json sets oldest_tree_id to hkg_001 for the same reason, so this entry's own claimed age never silently drives the city's 'oldest tree' answer. The WWII guardian-spirit story is independently corroborated by a second, unrelated source (a personal blog, nstecker.com, predating and unconnected to the government page). Existence, species and exact location confirmed via the government's own Old and Valuable Trees register (OVTNo AFCD/KS/005, 'The slope next to Sha Lo Wan School, Lantau Island', condition notes: minor cavity, fair health, sign of termite infestation), coordinates converted from its HK1980 Grid reference (808051/816127) as described in hkg_001's notes.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing on the slope directly beside Sha Lo Wan's old village school. It stands in Sha Lo Wan, on Lantau Island's north-west coast."
+      "how_to_recognise": "You can recognise it by standing on the slope directly beside Sha Lo Wan's old village school. It stands in Sha Lo Wan, on Lantau Island's north-west coast.",
+      "official_register": {
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. AFCD/KS/005 (Tree Register No. AFCD/IS/00001)",
+        "url": null
+      },
+      "girth_cm": 691,
+      "height_m": 19
     },
     {
       "id": "hkg_006",
@@ -209,7 +225,8 @@
       "story": "Only one of this camphor's original five trunks is missing, and the reason it lost that one and not the rest is the whole story: during the Japanese occupation, soldiers came to cut the tree for fuel, and Lai Chi Wo's villagers physically stood between them and the trunk. They lost the argument over a single branch. Four still remain, splayed from a shared base wide enough that the tree is simply known as the Five-Finger Camphor, and it has stood in the feng shui woodland behind this Hakka village since before anyone alive can date it. Hakka settlers built Lai Chi Wo in the 16th century, grew it to more than two hundred houses and over a thousand residents by laying the village out on strict geomantic lines, and then watched it empty through the 1960s and 70s as families left for the city and abroad. The camphor stayed, along with the rest of the feng shui wood's more than a hundred native plant species, and it has become the emblem of a rural revival effort that has slowly repopulated and restored the village since the 2010s. Reaching it means a ferry from Ma Liu Shui or a hike in from Wu Kau Tang, through one of the last intact Hakka settlements left in Hong Kong's New Territories, to stand under four fingers where there used to be five.",
       "verified_sources": [
         "https://www.ejinsight.com/eji/article/id/1470883/20170113-lai-chi-wo-a-hakka-walled-village-with-a-living-forest",
-        "https://www.360cities.net/image/five-finger-camphor-at-lai-chi-wo-hong-kong"
+        "https://www.360cities.net/image/five-finger-camphor-at-lai-chi-wo-hong-kong",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, within an active countryside conservation and rural revival area",
       "transport": "By ferry from Ma Liu Shui (weekends and public holidays) or a hike from Wu Kau Tang",
@@ -222,7 +239,13 @@
       "curation_status": "flagged",
       "notes": "WWII branch-loss story and village history corroborated across two independent sources (EJ Insight news article, 360Cities panorama caption); village settlement date and rural-revival programme also appear on Hong Kong Tourism Board's own Lai Chi Wo page. No source gives a specific planting date or age for the tree itself, so age_min/age_max left at 0 rather than guessed, per the honesty rule (same convention as Singapore's undated heritage-register entries). Existence, species and exact location confirmed via the government's own Old and Valuable Trees register (OVTNo AFCD/LK/009, TR no. AFCD/N/00002, 'Lai Chi Wo, Sha Tau Kok', condition notes: asymmetric canopy, minor cavity, moderate decay), coordinates converted from its HK1980 Grid reference (844630/842966) as described in hkg_001's notes.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its four trunks splaying from one shared base, a fifth cut away during the wartime occupation. It stands behind Lai Chi Wo village, Sha Tau Kok."
+      "how_to_recognise": "You can recognise it by its four trunks splaying from one shared base, a fifth cut away during the wartime occupation. It stands behind Lai Chi Wo village, Sha Tau Kok.",
+      "official_register": {
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. AFCD/LK/009 (Tree Register No. AFCD/N/00002)",
+        "url": null
+      },
+      "girth_cm": 911,
+      "height_m": 19
     },
     {
       "id": "hkg_007",
@@ -240,7 +263,8 @@
       "story": "Hong Kong's government files this tree under two categories at once, and the second is the interesting half. The Old and Valuable Trees register lists it as OVT and SWT together, Old and Valuable Tree and Stonewall Tree, and the department responsible for it is not the one that runs the city's parks. It is the Architectural Services Department, which looks after government masonry. The whole story sits in that administrative detail: this fig is maintained by the people who maintain walls, because a wall is what it grows out of. The measurements are serious. A trunk 1.8 metres through, seventeen metres tall, a crown spreading twenty-four metres, and an inspection record noting three separate leans, one growing toward the light, one a response to load, and one the tree corrected by itself, which is what decades of pushing out of vertical stonework and rebalancing looks like written down. No age has ever been published for it. It sits above Ka Wai Man Road in Kennedy Town, a hundred metres from the Forbes Street wall, so it extends that walk rather than repeating it. One caveat to carry along. This corner of Kennedy Town has been an active redevelopment site since late 2022, and although the register inspected the tree in March 2023, after the work started, check the garden is open before making the trip for this tree alone.",
       "verified_sources": [
         "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
-        "https://www.cahk.org.hk/en/work/97/"
+        "https://www.cahk.org.hk/en/work/97/",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, public garden, viewable at any time",
       "transport": "Short walk from MTR Kennedy Town station Exit C, one street over from the Forbes Street stone wall trees",
@@ -254,7 +278,11 @@
       },
       "height_m": 17.0,
       "verify_notes": "Height 17.0 m from the hongkong-ovt register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it as a fig growing out of a stone retaining wall, maintained by the department that looks after masonry rather than parks. It stands in the Ka Wai Man Road Garden, Kennedy Town."
+      "how_to_recognise": "You can recognise it as a fig growing out of a stone retaining wall, maintained by the department that looks after masonry rather than parks. It stands in the Ka Wai Man Road Garden, Kennedy Town.",
+      "official_register": {
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. ARCHSD CW/9 (Tree Register No. ARCHSD/CW/00034, Stonewall Tree)",
+        "url": null
+      }
     },
     {
       "id": "hkg_008",
@@ -272,7 +300,8 @@
       "story": "This park opened in June 1941 and was a rubbish dump by Christmas. King George V Memorial Park in Jordan was finished late, its opening on 11 June delayed because the governor was ill, and six months later Hong Kong fell to the Japanese and the new park was put to other use for the duration. The Urban Council rebuilt it after the war, added three Chinese-styled kiosks and reopened it on 21 March 1954, then extended it westward in the 1970s when Canton Road was realigned, and redesigned it again in the 1990s after the airport programme reclaimed the land beyond it. Through four versions of the park, this fig has stayed put. The government's tree register gives it a trunk 1.8 metres through, thirteen metres tall, an eighteen metre crown and normal vigour at its last inspection in November 2022. It gives no age, and no other source names the tree individually, so its years are undocumented. One thing to get right before setting off: Hong Kong has two parks named after King George V. This is the Kowloon one, on Canton Road in Jordan, a couple of minutes further on from the King Banyan of Kowloon Park. The other is across the harbour in Sai Ying Pun, with its own trees and its own history.",
       "verified_sources": [
         "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
-        "https://en.wikipedia.org/wiki/King_George_V_Memorial_Park,_Kowloon"
+        "https://en.wikipedia.org/wiki/King_George_V_Memorial_Park,_Kowloon",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, public park, open daily",
       "transport": "Short walk from MTR Jordan station, or from the northern end of Kowloon Park via Canton Road",
@@ -286,7 +315,11 @@
       },
       "height_m": 13.0,
       "verify_notes": "Height 13.0 m from the hongkong-ovt register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it by its trunk, 1.8 metres through, under an 18 metre crown, in the Kowloon version of the park rather than the one in Sai Ying Pun. It stands on Canton Road, Jordan."
+      "how_to_recognise": "You can recognise it by its trunk, 1.8 metres through, under an 18 metre crown, in the Kowloon version of the park rather than the one in Sai Ying Pun. It stands on Canton Road, Jordan.",
+      "official_register": {
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. LCSD YTM/98 (Tree Register No. LCSD/YTM/00152)",
+        "url": null
+      }
     },
     {
       "id": "hkg_009",
@@ -303,7 +336,8 @@
       },
       "story": "The three camphors already on this page stand behind villages, kept for centuries as feng shui trees. This one stands beside a children's playground, and it is thicker than any of them. Two metres of trunk diameter, sixteen metres tall, a twenty metre crown and normal vigour at its last inspection in October 2022, at the southern end of Kowloon Park near the aviary, which puts it a ten minute walk from the King Banyan at the far end of the same park. Camphor was an industrial commodity long before it was a park tree. The wood and leaves are distilled for camphor itself, and before synthetics took over, that substance was the essential plasticiser for celluloid, which meant photographic film, and a stabiliser for smokeless powder, which meant ammunition. The two together made camphor a strategic material worth controlling, most of the world's supply came out of Taiwan and Japan under state monopoly, and the trees were felled to get it. So a large old camphor is not a neutral object in this part of the world. It is a tree that was worth more cut down than standing and did not get cut. No age is recorded for this one, and a second, smaller camphor stands in the same playground. Crush a fallen leaf and the smell settles the identification instantly.",
       "verified_sources": [
-        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html"
+        "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, public park, open daily",
       "transport": "10-15 min walk from MTR Tsim Sha Tsui station, within Kowloon Park via Kowloon Park Drive, at the southern end of the park from the King Banyan",
@@ -320,7 +354,11 @@
       },
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the hongkong-ovt register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it by its trunk, 2 metres through, thicker than any other camphor on this page, beside a children's playground near the aviary. It stands in Kowloon Park."
+      "how_to_recognise": "You can recognise it by its trunk, 2 metres through, thicker than any other camphor on this page, beside a children's playground near the aviary. It stands in Kowloon Park.",
+      "official_register": {
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. ARCHSD YTM/12 (Tree Register No. ARCHSD/YTM/00037)",
+        "url": null
+      }
     },
     {
       "id": "hkg_010",
@@ -338,7 +376,8 @@
       "story": "The government's inspection of this tree reads like a description of the street it is on. Compacted soil. Cable and brace support fitted. More than seventy-five percent of the ground under its crown built over or paved. Overall risk moderate, vigour normal, which together describe a large healthy tree living in conditions no tree would choose. It stands on the Park Lane Shopper's Boulevard stretch of Nathan Road, the Golden Mile, with a trunk 2.07 metres through, nineteen metres tall and a crown spreading twenty-two metres over one of Hong Kong's busiest shopping streets. Directly opposite is St Andrew's Church, built between 1904 and 1906 in Victorian Gothic on a small rise above the road, Kowloon's oldest Anglican church and a gift to the community from Paul Chater, the Armenian-born businessman who co-founded Hong Kong Land and paid for a good deal of what the colony became. So the view is a banyan against English stonework, on a street that now sells watches and phones. The register gives no age for the tree, and no independent source names it, so what is documented is its size and its condition. It is a six or seven minute walk from the King Banyan in Kowloon Park, which makes it the easy last stop of that walk rather than a trip of its own.",
       "verified_sources": [
         "https://www.greening.gov.hk/en/tree-care/old-and-valuable-trees-and-tree-register/index.html",
-        "https://en.wikipedia.org/wiki/St_Andrew%27s_Church,_Kowloon"
+        "https://en.wikipedia.org/wiki/St_Andrew%27s_Church,_Kowloon",
+        "https://treeregister.greening.gov.hk/map/treeindex.aspx?lang=en-US"
       ],
       "access": "Free, public street, viewable at any time",
       "transport": "A few minutes' walk from MTR Tsim Sha Tsui station Exit A1, on Nathan Road's Park Lane Shopper's Boulevard stretch",
@@ -355,7 +394,11 @@
       },
       "height_m": 19.0,
       "verify_notes": "Height 19.0 m from the hongkong-ovt register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it by its crown, spreading 22 metres over one of Hong Kong's busiest streets, cabled and braced for support. It stands on the Park Lane Shopper's Boulevard, Nathan Road, opposite St Andrew's Church."
+      "how_to_recognise": "You can recognise it by its crown, spreading 22 metres over one of Hong Kong's busiest streets, cabled and braced for support. It stands on the Park Lane Shopper's Boulevard, Nathan Road, opposite St Andrew's Church.",
+      "official_register": {
+        "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. LCSD YTM/6 (Tree Register No. LCSD/YTM/00061)",
+        "url": null
+      }
     }
   ]
 }
