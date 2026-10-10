@@ -4,6 +4,7 @@
 
 ## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
 
+- **Naples:** 18 of 20 trees got an authority record (12 Campania cards, 6 MASAF ids) and measurements where card and MASAF agreed; conflicting figures left out (nap_013 girth, nap_003 height, nap_023 both). **Needs a look:** nap_010 (holm oak, Sant'Andrea delle Dame) matches no MASAF entry at that cloister, species may be wrong. capodimonte.cultura.gov.it hangs on every fetch (blocklist candidate), so its access hours are unread.
 - **Dubrovnik:** 4 of 4 touched: county protected-nature page as the register record for the Trsteno planes (monument of park architecture, 1951), arboretum entry prices and hours for the three Trsteno trees. Pins and measurements stay open: the arboretum is a garden, not a small site, and the only figures found (565 cm "diameter") are implausible.
 
 **Rung:** enrichment (health: only the iOS app run red, not fixable here). Visits last 7 days: 1,565 visits, 2,063 page views.
