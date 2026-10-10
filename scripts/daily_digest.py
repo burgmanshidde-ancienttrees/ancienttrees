@@ -2852,6 +2852,79 @@ def app_section(today):
         out.append("- Tabs opened (14d): " + "; ".join(
             "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))
 
+    # THE PLAIN PICTURE (Hidde, 2026-10-10: "how many active users do we
+    # have", and "just wondering if we're missing out on stuff" in PostHog).
+    # The table above counts taps; these lines count phones, whether they come
+    # back, which trees they open, which paid feature they tap and where they
+    # are. Each is one query and each prints nothing when it has nothing.
+    try:
+        active = _posthog(
+            """
+            SELECT uniqIf(distinct_id, timestamp >= now() - INTERVAL 1 DAY),
+                   uniqIf(distinct_id, timestamp >= now() - INTERVAL 7 DAY),
+                   uniqIf(distinct_id, timestamp >= now() - INTERVAL 30 DAY)
+            FROM events
+            WHERE timestamp >= now() - INTERVAL 30 DAY %s
+            """ % and_ours, key, project)
+        if active and active[0]:
+            out.append("- Active phones: %d in the last day, %d in the last 7 days, "
+                       "%d in the last 30 days." % tuple(int(v or 0) for v in active[0]))
+        back = _posthog(
+            """
+            SELECT count(), countIf(days >= 2)
+            FROM (SELECT distinct_id, uniq(toDate(timestamp)) AS days
+                  FROM events
+                  WHERE timestamp >= now() - INTERVAL 30 DAY %s
+                  GROUP BY distinct_id)
+            """ % and_ours, key, project)
+        if back and back[0] and int(back[0][0] or 0):
+            n, again = int(back[0][0]), int(back[0][1] or 0)
+            out.append("- Coming back: %d of those %d phones opened the app on more "
+                       "than one day (%.0f%%)." % (again, n, 100.0 * again / n))
+        top = _posthog(
+            """
+            SELECT properties.tree, count(), uniq(distinct_id)
+            FROM events
+            WHERE event = 'tree_opened' AND properties.tree != 'own'
+                  AND timestamp >= now() - INTERVAL 14 DAY %s
+            GROUP BY 1 ORDER BY 3 DESC, 2 DESC LIMIT 5
+            """ % and_ours, key, project)
+        if top:
+            tnames = {}
+            for fp in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+                try:
+                    c = json.load(open(fp))
+                except ValueError:
+                    continue
+                for t in c.get("trees", []):
+                    tnames[t.get("id")] = "%s (%s)" % (t.get("name"), c.get("city"))
+            out.append("- Trees opened by the most phones (14d): " + "; ".join(
+                "%s %d" % (tnames.get(r[0], r[0] or "?"), int(r[2])) for r in top))
+        pay = _posthog(
+            """
+            SELECT properties.feature, count(), uniq(distinct_id)
+            FROM events
+            WHERE event = 'paywall_interest'
+                  AND timestamp >= now() - INTERVAL 30 DAY %s
+            GROUP BY 1 ORDER BY 3 DESC
+            """ % and_ours, key, project)
+        if pay:
+            out.append("- Tapped a paid feature (30d, phones): " + "; ".join(
+                "%s %d" % (r[0] or "?", int(r[2])) for r in pay))
+        where_ = _posthog(
+            """
+            SELECT properties.$geoip_country_name, uniq(distinct_id)
+            FROM events
+            WHERE timestamp >= now() - INTERVAL 30 DAY
+                  AND properties.$geoip_country_name IS NOT NULL %s
+            GROUP BY 1 ORDER BY 2 DESC LIMIT 6
+            """ % and_ours, key, project)
+        if where_:
+            out.append("- Where the phones are (30d): " + "; ".join(
+                "%s %d" % (r[0], int(r[1])) for r in where_))
+    except Exception as e:  # one slow query must not take the table
+        out.append("- The plain picture could not be read: %s" % str(e)[:120])
+
     # TICKING OFF OUR TREE, OR ADDING THEIR OWN. The second breakdown worth a
     # query, because sighting_recorded is the collect verb firing and the row
     # above cannot say which half of it happened. Sightings.record() sends
