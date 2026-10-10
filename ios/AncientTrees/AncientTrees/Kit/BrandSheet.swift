@@ -204,7 +204,7 @@ extension BrandSheet where Extra == EmptyView {
 }
 
 /// Apple's close button: a small grey circle with the cross in it, 30 drawn
-/// and 44 to hit, inset from the corner. The sign-in sheet's, shared.
+/// and 48 to hit, inset from the corner. The sign-in sheet's, shared.
 struct SheetCloseButton: View {
     let action: () -> Void
     var body: some View {
@@ -214,12 +214,15 @@ struct SheetCloseButton: View {
                 .foregroundStyle(.secondary)
                 .frame(width: 30, height: 30)
                 .background(Brand.surfaceMuted, in: .circle)
-                .frame(width: 44, height: 44)
+                // 48 to hit, not 44: at 44 the sheet's own top edge took two
+                // points off it and appfit measured 42 (2026-10-10). The drawn
+                // circle stays where the sign-in sheet's sits.
+                .frame(width: 48, height: 48)
                 .contentShape(.rect)
         }
         .buttonStyle(.plain)
-        .padding(.top, 10)
-        .padding(.trailing, 12)
+        .padding(.top, 8)
+        .padding(.trailing, 10)
         .accessibilityLabel("Close")
         .accessibilityIdentifier("sheet-close")
     }
