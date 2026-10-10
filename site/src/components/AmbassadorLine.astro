@@ -87,11 +87,11 @@ const U = ui(lang);
       <svg class="ambassador-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
   </div>
-  {/* THE ONE SHEET (components/Sheet.astro, 2026-10-10): a sheet from the
-      bottom on a phone, like every other, with the three lines as rows and
-      the receipt as its second step. The app's sheet is the same
-      (AmbassadorBadge.swift). */}
   <Sheet lang={lang} class="amb-dialog" id="amb-dialog" aria-labelledby="amb-title">
+    {/* THE ONE SHEET (components/Sheet.astro, 2026-10-10): a sheet from
+        the bottom on a phone, like every other, with the three lines as rows
+        and the receipt as its second step. The app's sheet is the same
+        (AmbassadorBadge.swift). */}
     <div class="amb-step amb-ask" data-step="ask">
       <span class="at-sheet-tile"><Fragment set:html={icon("seal-check", "bold")} /></span>
       <h3 class="at-sheet-h" id="amb-title">{U.ambassadorAskTitle(place)}</h3>
