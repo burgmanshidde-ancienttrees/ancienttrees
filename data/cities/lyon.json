@@ -155,7 +155,8 @@
       "verified_sources": [
         "https://mairie4.lyon.fr/actualite/nature-en-ville/les-arbres-remarquables-de-lyon",
         "https://sandrillon-in-lyon.fr/le-parc-de-la-garde-lyon-champvert/",
-        "https://download.data.grandlyon.com/wfs/grandlyon?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:plu_h_opposable.pluboispt (feature id plu_h_opposable.pluboispt.4317, the Metropole de Lyon's own PLU-H Espace boise classe ponctuel / Arbre remarquable register)"
+        "https://download.data.grandlyon.com/wfs/grandlyon?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:plu_h_opposable.pluboispt (feature id plu_h_opposable.pluboispt.4317, the Metropole de Lyon's own PLU-H Espace boise classe ponctuel / Arbre remarquable register)",
+        "https://download.data.grandlyon.com/wfs/grandlyon?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:plu_h_opposable.pluboispt&CQL_FILTER=gid=4317"
       ],
       "access": "Free, public park",
       "transport": "Bus to Parc de la Garde stop, or 15 min walk from Gorge de Loup station",
@@ -168,7 +169,11 @@
       "curation_status": "flagged",
       "notes": "No individual age or precise girth documented beyond 'enormous trunk with multiple branches'; the national label confirms formal recognition but not a specific age. Location confirmed 2026-07-29 against the Metropole de Lyon's own PLU-H remarkable-tree register: a single Aesculus hippocastanum listed at 'Rue de la Garde', described as 'tres grand exemplaire en bonne sante', within 90m of Parc de la Garde's own geocoded centre and about 1.8km from this entry's prior approximate coordinate, which sat outside the park entirely.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its enormous trunk carrying multiple large branches, standing out even among the park's other mature trees. It stands at the centre of Parc de la Garde."
+      "how_to_recognise": "You can recognise it by its enormous trunk carrying multiple large branches, standing out even among the park's other mature trees. It stands at the centre of Parc de la Garde.",
+      "official_register": {
+        "name": "PLU-H Espace boise classe ponctuel, Arbre remarquable (Metropole de Lyon), no. 4317",
+        "url": null
+      }
     },
     {
       "id": "lyo_005",
@@ -359,7 +364,8 @@
       "story": "Villeurbanne's official tree register calls this pedunculate oak rare, and it means it plainly: street plantings here run to plane and lime, so a full-grown Quercus robur on a residential corner stands out as an exception the city itself has flagged. The 2017 survey that logged it recorded good health and real size and nothing else, no planting date, no measured age, just a note that this one was worth watching. An investigative piece on Lyon's remarkable trees found it again in 2025, still standing at the same corner of Rue Viret and Rue Francis de Pressense, eight years on from that first record. It grows a fifteen minute walk from the Art Deco tower blocks of Gratte-Ciel, Villeurbanne's landmark 1930s housing project, in the quieter grid of streets just west of it. Nobody has measured its trunk or dated its rings, so this page will not guess a number rather than invent one. What two independent records agree on is simpler: an oak grown too large and too old to belong on an ordinary street, still there, still worth the detour from the park at the Tete d'Or.",
       "verified_sources": [
         "Metropole de Lyon open-data PLU-H register, 'Espace boise classe ponctuel / Arbre remarquable', feature plu_h_opposable.pluboispt (register_id 4183), download.data.grandlyon.com/wfs/grandlyon",
-        "https://www.mediacites.fr/decryptage/lyon/2025/08/26/cedre-tilleul-tulipier-a-la-recherche-des-arbres-remarquables-du-grand-lyon/"
+        "https://www.mediacites.fr/decryptage/lyon/2025/08/26/cedre-tilleul-tulipier-a-la-recherche-des-arbres-remarquables-du-grand-lyon/",
+        "https://download.data.grandlyon.com/wfs/grandlyon?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:plu_h_opposable.pluboispt&CQL_FILTER=gid=4183"
       ],
       "access": "Free, public street corner in a residential neighbourhood, no restriction",
       "transport": "Charpennes Charles Hernu metro station (Line A/B), about 7 min walk; Le Tonkin tram stop about 4 min walk",
@@ -380,7 +386,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by being a full-grown oak on an ordinary residential street, where plane and lime are the usual planting. It stands at Rue Viret and Rue Francis de Pressense, Villeurbanne."
+      "how_to_recognise": "You can recognise it by being a full-grown oak on an ordinary residential street, where plane and lime are the usual planting. It stands at Rue Viret and Rue Francis de Pressense, Villeurbanne.",
+      "official_register": {
+        "name": "PLU-H Espace boise classe ponctuel, Arbre remarquable (Metropole de Lyon), no. 4183",
+        "url": null
+      }
     },
     {
       "id": "lyo_012",
@@ -476,7 +486,8 @@
       },
       "verified_sources": [
         "Metropole de Lyon PLU-H remarkable-tree register (register_id 4318, condition: Tres grand exemplaire, last surveyed 2019-04-19)",
-        "https://www.ruesdelyon.net/square/917-square-gabielle-dupond-ebrard.html"
+        "https://www.ruesdelyon.net/square/917-square-gabielle-dupond-ebrard.html",
+        "https://download.data.grandlyon.com/wfs/grandlyon?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=metropole-de-lyon:plu_h_opposable.pluboispt&CQL_FILTER=gid=4318"
       ],
       "access": "Free, public municipal square, open street-level access, no gate or entry restriction found.",
       "transport": "Point du Jour neighbourhood, Lyon 5th arrondissement; served by TCL buses in the area.",
@@ -488,7 +499,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its tiered, almost horizontal branches, each level wider than the one above it. It stands in Square Gabrielle Dupond-Ebrard, rue des Aqueducs."
+      "how_to_recognise": "You can recognise it by its tiered, almost horizontal branches, each level wider than the one above it. It stands in Square Gabrielle Dupond-Ebrard, rue des Aqueducs.",
+      "official_register": {
+        "name": "PLU-H Espace boise classe ponctuel, Arbre remarquable (Metropole de Lyon), no. 4318",
+        "url": null
+      }
     }
   ]
 }
