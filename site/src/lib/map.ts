@@ -54,7 +54,7 @@ setTimeout(function () {
  *  that varies is read as a quantity, and the number already says it. 13 is
  *  a 26 pixel bubble plus its ring, the app's clusterPin at 32 points.
  *  CONVENTIONS.md 2026-10-04. */
-const CLUSTER_RADIUS = 13;
+export const CLUSTER_RADIUS = 13;
 export function mapScript(body: string): string {
   return `\n<script defer src="${MAPLIBRE_JS}"></script>\n<script>\n` +
     `document.addEventListener("DOMContentLoaded", function () {\n${body}\n${COLLAPSE_ATTRIBUTION}\n});\n</script>\n`;

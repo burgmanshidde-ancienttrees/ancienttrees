@@ -988,7 +988,7 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
    SHEET_JS, so an improvement to one is an improvement to both. The panel's
    own layout rules therefore live with .panel, not here; what stays below is
    the list of what is in view, which is this page's alone. */
-#ex-panel { padding: 0.9rem calc(var(--gutter) - 0.45rem); }
+#ex-panel, .panel-chooser { padding: 0.9rem calc(var(--gutter) - 0.45rem); }
 .exc-cityhead { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; margin: 0.2rem 0.45rem 0.8rem; }
 .exc-cityhead h2 { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
 .exc-cityhead a { font-size: 12.5px; font-weight: 700; color: var(--moss); white-space: nowrap; }

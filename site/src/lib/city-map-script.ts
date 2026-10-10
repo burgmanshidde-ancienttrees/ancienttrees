@@ -20,7 +20,7 @@
 // proximity check that needed it went; there is no duplicate of it left here.
 import {MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
-import { mapScript } from "./map";
+import { mapScript, CLUSTER_RADIUS } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 
@@ -102,13 +102,26 @@ export function cityMapScript(
       combined: Boolean(w.combined),
     }))
   );
+  // This city travels in the same source as every other one, so zoomed out it
+  // joins the clusters the way its trees do on /explore instead of sitting as
+  // a pile of 34-pixel pins on top of them (Hidde, 2026-10-10: "uitzoomen gaat
+  // niet lekker vanuit een stadspagina ... trek dit gelijk").
   const otherCitiesJson = JSON.stringify({
     type: "FeatureCollection",
-    features: otherCities.map((c) => ({
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [c.lng, c.lat] },
-      properties: { slug: c.slug, city: c.city, n: c.n },
-    })),
+    features: [
+      ...(markers.length
+        ? [{
+            type: "Feature",
+            geometry: { type: "Point", coordinates: [center[1], center[0]] },
+            properties: { slug: "", city: "", n: markers.length, home: 1 },
+          }]
+        : []),
+      ...otherCities.map((c) => ({
+        type: "Feature",
+        geometry: { type: "Point", coordinates: [c.lng, c.lat] },
+        properties: { slug: c.slug, city: c.city, n: c.n, home: 0 },
+      })),
+    ],
   });
   const ranked = [...otherCities].sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99) || b.n - a.n);
   const chooserCitiesJson = JSON.stringify(
@@ -135,24 +148,53 @@ map.addControl(new maplibregl.FullscreenControl());
 map.on('load', function() { map.resize(); });
 new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
 var OTHER_CITIES = ${otherCitiesJson};
+// FAR is the zoom below which the map stops being this city and becomes the
+// world: the explore map's clusters (same radius, same bubble, same count of
+// trees) with this city's pins folded into them. Above it the pins come back
+// and the other cities go, so the two are never drawn on top of each other.
+var FAR = 9;
 if (OTHER_CITIES.features.length) {
   map.on('load', function() {
     if (map.getSource('othercities')) { return; }
-    map.addSource('othercities', {type: 'geojson', data: OTHER_CITIES});
-    map.addLayer({id: 'othercity', type: 'circle', source: 'othercities', maxzoom: 9,
-      paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': 13,
+    map.addSource('othercities', {type: 'geojson', data: OTHER_CITIES, cluster: true,
+      clusterMaxZoom: FAR - 1, clusterRadius: 42,
+      clusterProperties: {n: ['+', ['get', 'n']], home: ['max', ['get', 'home']]}});
+    map.addLayer({id: 'othercity', type: 'circle', source: 'othercities', maxzoom: FAR,
+      paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${CLUSTER_RADIUS},
               'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-    map.addLayer({id: 'othercity-n', type: 'symbol', source: 'othercities', maxzoom: 9,
-      layout: {'text-field': ['get', 'n'], 'text-font': ['Noto Sans Regular'], 'text-size': 11,
-               'text-allow-overlap': true},
+    map.addLayer({id: 'othercity-n', type: 'symbol', source: 'othercities', maxzoom: FAR,
+      layout: {'text-field': ['to-string', ['get', 'n']], 'text-font': ['Noto Sans Regular'], 'text-size': 12},
       paint: {'text-color': '#F6F2E9'}});
+    function goHome() { map.fitBounds(HOME, { padding: 70, maxZoom: 13, duration: 900 }); }
+    // The explore map's rules: a bubble that is one city opens that city (this
+    // one flies back home), a bubble of several zooms in.
     map.on('click', 'othercity', function(e) {
-      window.location.href = '/' + e.features[0].properties.slug;
+      var f = e.features[0], p = f.properties;
+      if (!p.cluster) {
+        if (p.home) { goHome(); } else { window.location.href = '/' + p.slug; }
+        return;
+      }
+      var src = map.getSource('othercities');
+      src.getClusterLeaves(p.cluster_id, 1000, 0).then(function(leaves) {
+        if (leaves.length === 1) {
+          var q = leaves[0].properties;
+          if (q.home) { goHome(); } else { window.location.href = '/' + q.slug; }
+          return;
+        }
+        src.getClusterExpansionZoom(p.cluster_id).then(function(zoom) {
+          map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
+        });
+      });
     });
     map.on('mouseenter', 'othercity', function() { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', 'othercity', function() { map.getCanvas().style.cursor = ''; });
   });
 }
+function updatePinsFar() {
+  var far = OTHER_CITIES.features.length > 0 && map.getZoom() < FAR;
+  for (var i = 0; i < pins.length; i++) { pins[i].style.visibility = far ? 'hidden' : ''; }
+}
+map.on('zoom', updatePinsFar);
 var CHOOSER_CITIES = ${chooserCitiesJson};
 var cityPanel = document.querySelector('.panel');
 // The chooser goes INSIDE the sheet's scroller, never beside it. .panel's own
@@ -327,6 +369,7 @@ markers.forEach(function(m, idx) {
   bounds.extend([m.lng, m.lat]);
 });
 if (markers.length > 1) { map.fitBounds(HOME, { padding: 70, maxZoom: 13 }); }
+updatePinsFar();
 
 // A tap on a card OPENS the tree since 2026-10-04 (TreeCard.astro: the whole
 // card is one link, as in the app and on AllTrails and Airbnb). What the list
