@@ -683,6 +683,15 @@ struct MapTab: View {
              : "\(inReach) \(inReach == 1 ? "tree" : "trees") you can see")
             .font(.brand(16, .bold))
             .foregroundStyle(Brand.inkSoft)
+            // AT FULL HEIGHT THE WORDS GO, THE STRIP STAYS (Hidde, 2026-10-10:
+            // "just delete the text 7 trees you can see then and keep the
+            // section in the design and at the place where it was"). The
+            // search field heads the list there, and the count above it said
+            // nothing the list does not. The strip keeps its height, because it
+            // is the grip that drags the sheet back down and the search field
+            // should not move.
+            .opacity(sheetHeight == .full ? 0 : 1)
+            .accessibilityHidden(sheetHeight == .full)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
             .accessibilityIdentifier("map-count")

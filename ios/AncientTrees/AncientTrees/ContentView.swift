@@ -670,11 +670,13 @@ struct ContentView: View {
                             CollectSheet(catalogue: cat, origin: origin, mode: mode,
                                          about: navigator.collectAbout,
                                          addsPhoto: navigator.collectAddsPhoto,
-                                         start: navigator.collectStart)
+                                         shotIn: navigator.collectShot,
+                                         pickedIn: navigator.collectPicked)
                                 .onDisappear {
                                     navigator.collectAbout = nil
                                     navigator.collectAddsPhoto = false
-                                    navigator.collectStart = nil
+                                    navigator.collectShot = nil
+                                    navigator.collectPicked = nil
                                 }
                         }
                     }

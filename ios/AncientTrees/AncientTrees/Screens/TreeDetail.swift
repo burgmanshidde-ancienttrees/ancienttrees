@@ -95,6 +95,11 @@ struct TreeDetail: View {
     /// "Tree saved", for the second and a half after Save (DoneHUD.swift).
     @State private var done: String?
     @State private var extraCamera = false
+    @State private var photoCamera = false
+    @State private var photoLibrary = false
+    @State private var photoRefused: Permission?
+    @State private var pendingShot: UIImage?
+    @State private var pendingPicked: LibraryPicker.Picked?
 
     /// The live record, so a draft that is saved on this page turns into a
     /// saved tree on this page without being opened again.
@@ -311,6 +316,18 @@ struct TreeDetail: View {
 
                 }
             }
+        }
+        .fullScreenCover(isPresented: $photoCamera, onDismiss: openFlowWithPhoto) {
+            CameraPicker { image in pendingShot = image }.ignoresSafeArea()
+        }
+        .fullScreenCover(isPresented: $photoLibrary, onDismiss: openFlowWithPhoto) {
+            LibraryPicker { p in pendingPicked = p }.ignoresSafeArea()
+        }
+        .sheet(item: $photoRefused) { which in
+            PermissionRecovery(permission: which,
+                               onDecline: which == .camera ? {
+                                   Task { await LibraryPicker.askForLibrary(); photoLibrary = true }
+                               } : nil)
         }
         .fullScreenCover(isPresented: $extraCamera) {
             CameraPicker { image in
@@ -1827,16 +1844,38 @@ struct TreeDetail: View {
         if !saved.isVisited(tree.id) { saved.toggleVisited(tree.id) }
     }
 
-    /// Opens the camera flow on this tree, straight at the camera or straight
-    /// at the photo library: the sheet already asked which, so the flow's own
-    /// "take or choose" screen is not shown a second time.
-    private func startPhoto(_ start: CollectSheet.Start) {
+    /// THE CAMERA OR THE LIBRARY, opened from here, straight after the collect
+    /// sheet closes (Hidde, 2026-10-10: "when i click either camera or photo
+    /// option it opens another overlay before starting the camera"). The flow
+    /// opens afterwards with the photograph in hand (navigator.collectShot /
+    /// collectPicked), at its next step rather than at its own first screen.
+    private enum PhotoWay { case camera, library }
+    private func startPhoto(_ way: PhotoWay) {
         afterChoice = {
-            navigator.collectAbout = tree.name
-            navigator.collectStart = start
-            navigator.collectNearby = true
+            switch way {
+            case .camera:
+                // The fix arrives while the camera is open, as in the flow.
+                if !location.known && !location.denied { location.ask() }
+                if CameraPicker.isRefused { photoRefused = .camera } else { photoCamera = true }
+            case .library:
+                Task {
+                    await LibraryPicker.askForLibrary()
+                    photoLibrary = true
+                }
+            }
         }
         choosingCollect = false
+    }
+
+    /// Hands the photograph to the collect flow, once the picker has gone.
+    private func openFlowWithPhoto() {
+        guard pendingShot != nil || pendingPicked != nil else { return }
+        navigator.collectAbout = tree.name
+        navigator.collectShot = pendingShot
+        navigator.collectPicked = pendingPicked
+        pendingShot = nil
+        pendingPicked = nil
+        navigator.collectNearby = true
     }
 
     /// THE COLLECT SHEET, three states in the one sheet (Kit/BrandSheet.swift).

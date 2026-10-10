@@ -67,10 +67,11 @@ struct CollectSheet: View {
     /// intro screen reads it: see CollectIntro.
     var about: String? = nil
     var addsPhoto = false
-    /// Where to begin when the tree page's sheet already asked: the camera, or
-    /// the photo library. nil shows the intro's own choice.
-    enum Start { case camera, library }
-    var start: Start? = nil
+    /// A photograph that arrives already taken or chosen, from the tree page's
+    /// sheet: the flow starts at the photograph instead of at its own "take or
+    /// choose" screen. nil for both shows the intro.
+    var shotIn: UIImage? = nil
+    var pickedIn: LibraryPicker.Picked? = nil
     @State private var started = false
 
     @Environment(Saved.self) private var saved
@@ -300,14 +301,11 @@ struct CollectSheet: View {
                     .secondary("Keep editing") { confirmingDiscard = false },
                 ])
         }
-        // Straight to the camera or the library when the tree page asked.
+        // A photograph the tree page already has: straight to what it shows.
         .task {
-            guard !started, let start else { return }
+            guard !started else { return }
             started = true
-            switch start {
-            case .camera: openCamera()
-            case .library: openLibrary()
-            }
+            if let shotIn { resolve(shotIn) } else if let pickedIn { picked(pickedIn) }
         }
         .fullScreenCover(isPresented: $camera) {
             CameraPicker { image in

@@ -16,6 +16,7 @@
 // whoever wants to go somewhere and cleared by whoever answers it.
 
 import Foundation
+import UIKit
 import Observation
 
 /// Main-actor isolated, like every store the root holds. See Account.swift for
@@ -92,10 +93,13 @@ public final class Navigator {
     /// Old Tjikko is not browsing, they are standing in front of a named tree.
     /// nil everywhere else, where the generic line is the honest one.
     public var collectAbout: String? = nil
-    /// Straight to the camera or straight to the photo library, when the
-    /// tree page's collect sheet already asked which (2026-10-10). nil opens
-    /// the flow's own first screen. Cleared with collectAbout.
-    var collectStart: CollectSheet.Start? = nil
+    /// A photograph the tree page already took or chose (2026-10-10, Hidde:
+    /// "when i click either camera or photo option it opens another overlay
+    /// before starting the camera"). The camera and the library open straight
+    /// from the tree page's sheet; the flow opens AFTER, with the picture in
+    /// hand. Cleared with collectAbout.
+    var collectShot: UIImage? = nil
+    var collectPicked: LibraryPicker.Picked? = nil
     /// True when the way in was the tree's own missing PHOTOGRAPH (the grey
     /// "No photograph yet" area or the camera on it): somebody who tapped
     /// there wants to add a photo, not to hear about a collection (Hidde,
