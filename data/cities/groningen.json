@@ -551,7 +551,7 @@
       "age_estimate": "about 190 years",
       "age_min": 186,
       "age_max": 196,
-      "girth_cm": null,
+      "girth_cm": 106,
       "location": {
         "address": "Pepergasthuis (Sint Geertruidsgasthuis), Peperstraat, Groningen",
         "latitude": 53.217258,
@@ -561,7 +561,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (register nr 1680046, Landelijk Register Monumentale Bomen)",
         "https://www.rtvnoord.nl/nieuws/759799/verkoop-pepergasthuis-van-de-baan-29-woningen-blijven-in-sociale-huur",
-        "https://travelaar.nl/hofjes-groningen-stad/ (daily 9:00-18:00 visiting hours for the hofje)"
+        "https://travelaar.nl/hofjes-groningen-stad/ (daily 9:00-18:00 visiting hours for the hofje)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, open courtyard (hofje). The Pepergasthuis is a working almshouse with residents living around the courtyard; visitors are welcome daily roughly 9:00-18:00 but should respect residents' privacy. An earlier pass flagged that a 2019 plan to sell the complex to a private investor had left its future uncertain; RTV Noord (2020) confirms that sale was cancelled and the housing corporation Lefier kept the almshouse in social rent, so the access basis has not changed.",
       "transport": "Central Groningen, short walk from Grote Markt",
@@ -576,7 +577,8 @@
         "kind": "bare silhouette",
         "label": "January and February, when the leaves are off and the trained frames and old hollows show"
       },
-      "how_to_recognise": "You can recognise them by their trunks trained flat and pollarded into shape, ten hollow with visible tie rods from 1980s repairs. They fill the courtyard of the Pepergasthuis on Peperstraat."
+      "how_to_recognise": "You can recognise them by their trunks trained flat and pollarded into shape, ten hollow with visible tie rods from 1980s repairs. They fill the courtyard of the Pepergasthuis on Peperstraat.",
+      "height_m": 5
     },
     {
       "id": "gro_021",
@@ -594,7 +596,8 @@
       "story": "The tree worth walking to here is the one the register mentions last.\n\nFour oaks stand at the Hunenborg, banded 1870 to 1880, and as a group they are handsome enough. Then the register adds that the special one is a different tree, standing behind hunebed D4, which already appears on old paintings and looks genuinely older than the four. Nobody has given that oak a coordinate of its own, so the pin here marks the site rather than the trunk. Go round behind D4 and look for the heavier tree.\n\nThe ground beneath it works on another scale. Hunebed D3 was built between 3400 and 3100 BCE by the people of the Funnel Beaker culture, who dragged glacial boulders into a chamber and covered them with an earth mound. D4 stands beside it, and the pair together are the Hunenborg. Five thousand years against a couple of hundred: the oaks are recent arrivals on this spot, and nothing about the tomb makes them older than they are.\n\nWhat the oaks do is make the tombs read properly. A hunebed with veteran oaks standing over it looks like what it is, a burial place nobody ploughed out, and this one lies just south of Midlaren, open ground at any hour.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/hunnebedboom-midlaren/",
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682461"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682461",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. A public archaeological site holding the two Hunenborg dolmens, open ground just south of Midlaren with no gate and no ticket.",
       "transport": "Midlaren, between Groningen and Assen, about 12 km southeast of Groningen. Buses on the Groningen to Assen road stop nearby, then a short walk to the site.",
@@ -614,7 +617,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 384
     }
   ]
 }

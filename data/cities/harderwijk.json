@@ -44,7 +44,8 @@
       "story": "The man this ginkgo is credited to is the man who gave the species its name, thirty-six years later.\n\nThe story, repeated by both bomenbieb and the national register, is that Carl Linnaeus brought and planted this tree while he was at the University of Harderwijk. He was there in 1735, taking his medical doctorate in a matter of days, and that part is solid. The register is blunt about the rest: the planting is unverified, and it suggests asking the Stadsmuseum Harderwijk, which keeps the old university's history. Both sources band the planting to 1700 to 1750, which is consistent with the story and confirms nothing.\n\nGinkgo biloba L., 1771. The L. is Linnaeus. He took the genus name from a garbled transliteration in Engelbert Kaempfer's account of Japan and the species name from the two-lobed leaf, so whatever this tree's provenance, the name on its label is his.\n\nThe species earns the walk on its own. Ginkgo has no close living relatives anywhere, has been growing in more or less this form for something like two hundred million years, and turns an improbable flat gold in November before dropping the whole lot in a few days.\n\nIt stands in the small public Hortus Botanicus in the old town.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/ginkgo-harderwijk/",
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679816"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679816",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. The Hortus Botanicus is a small public garden in the centre of Harderwijk, owned by the municipality.",
       "transport": "In the old town of Harderwijk, roughly 15 minutes on foot from Harderwijk station.",
@@ -63,7 +64,8 @@
         "label": "November, when it goes gold and then drops the lot within days"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 18
     }
   ]
 }

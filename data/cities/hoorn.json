@@ -282,7 +282,8 @@
         "neighbourhood": "Oosterplantsoen"
       },
       "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1690973"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1690973",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public park, open daily.",
       "transport": "In the Oosterplantsoen, a short walk from Hoorn town centre, alongside the city's other protected park trees.",
@@ -295,7 +296,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 366,
+      "height_m": 22
     },
     {
       "id": "hoo_011",
@@ -312,7 +315,8 @@
         "neighbourhood": "Wilhelminapark"
       },
       "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1690981"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1690981",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public park, open daily.",
       "transport": "In Wilhelminapark on Emmalaan, a short walk from Hoorn town centre.",
@@ -325,7 +329,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 20
     },
     {
       "id": "hoo_012",
@@ -341,7 +346,8 @@
         "neighbourhood": "Noorderplantsoen"
       },
       "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683821"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683821",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public park, open daily.",
       "transport": "In the Noorderplantsoen directly opposite Hoorn's railway station.",
@@ -354,7 +360,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 346,
+      "height_m": 23
     },
     {
       "id": "hoo_013",
@@ -370,7 +378,8 @@
         "neighbourhood": "Baadland"
       },
       "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682399"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682399",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public park, open daily.",
       "transport": "On the small artificial peninsula of Park Baadland, about a 15 minute walk south of Hoorn town centre.",
@@ -383,7 +392,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 356,
+      "height_m": 20
     }
   ]
 }

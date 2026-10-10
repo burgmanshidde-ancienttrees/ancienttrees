@@ -1070,7 +1070,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678126, data/registers/netherlands-lrmb.json",
-        "https://oud-utrecht.nl/nieuws/1351-de-kippen-van-de-concierge"
+        "https://oud-utrecht.nl/nieuws/1351-de-kippen-van-de-concierge",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, on a public square in front of the former Palace of Justice",
       "transport": "About a 10 minute walk from Utrecht Centraal station",
@@ -1084,7 +1085,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "girth_cm": 509,
+      "height_m": 35
     }
   ]
 }

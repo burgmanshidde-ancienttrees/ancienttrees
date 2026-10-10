@@ -398,7 +398,8 @@
       "story": "Almost every tree of heaven in Europe today is a volunteer nobody planted. This one was chosen.\n\nAilanthus altissima came out of China in the middle of the eighteenth century as a fashionable garden exotic, and it was still being planted for ornament when this one went in between 1880 and 1890. Then it turned out to do things the nurseries had not advertised. It grows a metre or more a year, seeds by the thousand, throws suckers from any severed root, and loads the soil around it with a compound that holds other species back. It is now one of the most aggressively invasive trees on the continent, at home in railway sidings, demolition plots and cracks in walls.\n\nSo a deliberately planted specimen of about 140 years, standing on a public square in a Hanseatic town, is an odd survivor: ornamental planting from the years before anyone knew what the species would become.\n\nThe register knows nothing else about it. Species, owner, planting decade, and then the history field reads unknown. If you know how this tree came to be on the Lunetteplein, tell us and it goes on the page.\n\nIt stands in the open, a quarter of an hour on foot from Zutphen station.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/hemelboom-zutphen/",
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1680624"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1680624",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. A public square in Zutphen, open at any hour.",
       "transport": "On the Lunetteplein in Zutphen, roughly 10 to 15 minutes on foot from Zutphen station, and about 20 minutes by train from Deventer.",
@@ -410,7 +411,9 @@
       },
       "how_to_recognise": "You can recognise it by the leaves, up to a metre long with a dozen or more leaflets down each stalk, longer than any other leaf on the street. It stands on the open Lunetteplein.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 425,
+      "height_m": 18
     },
     {
       "id": "dev_012",
@@ -428,7 +431,8 @@
       "story": "A Canadian poplar is a crop. The hybrid went into Dutch ground by the million for matchwood, clogs and pulp, and the usual arrangement is that it comes down at thirty or forty years, before the timber loses value and the limbs start letting go. This one was planted around 1900 to 1910 and nobody has taken it out.\n\nIt stands on the peninsula at the Marshaven, where the harbour meets the IJssel. The national register looks at that position and wonders aloud whether Rijkswaterstaat, the state water authority, put it there on purpose as a marker for the harbour mouth. No document says so. It is a reasonable guess about a plausible tree in a plausible place, and it stays a guess.\n\nThe years do show. On 18 January 2018 a large limb came away, which is what a poplar of this age does; the register noted it and did not treat it as the beginning of the end. The tree is still standing.\n\nWhat you get is more than a century of a species almost nobody lets grow old, on open ground beside a working river harbour with the barge traffic going by. And on a windy day the leaves do what poplar leaves do, which is most of the reason to stand under one.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/marshavenpopulier-zutphen/",
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1694211"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1694211",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. It stands on a public peninsula beside the IJssel harbour, open ground with no gate.",
       "transport": "In Zutphen's harbour district, a walk or short cycle from Zutphen station, and about 20 minutes by train from Deventer.",
@@ -440,7 +444,9 @@
       },
       "how_to_recognise": "You can recognise it by the size of the trunk: it is the one veteran poplar on the Marshaven peninsula, standing on the west side along the IJssel rather than on the harbour side.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 831,
+      "height_m": 31
     }
   ]
 }

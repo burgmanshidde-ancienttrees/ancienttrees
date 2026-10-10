@@ -44,7 +44,8 @@
       "story": "The thickest elm in the country is not the kind of elm that died.\n\nDutch elm disease went through the Netherlands and took out most of what the word refers to here, avenue after avenue of them. This tree is a fladderiep, a European white elm, and the national register notes that the species is markedly less susceptible than the elms that were planted everywhere else. That is most of the reason one can be nearly two centuries old and still carrying a full crown.\n\nBoth the register and bomenbieb call it the thickest elm in the Netherlands. Neither of them records a girth, which is an odd gap to leave under a national superlative, so treat the claim as theirs and bring a tape measure if you have one. Send us the number and it goes on the page.\n\nLook at the base rather than the crown. White elm throws plank buttresses, deep-grooved fins of root flaring out where the trunk meets the ground, the same trick the black poplar uses to stay upright on a soaked riverbank in a gale. This one branches low as well, so the whole structure of it sits at eye level.\n\nIt stands at Heure, a hamlet on the Beekvliet estate. The land is private and the owner lets people come to the tree.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/fladderiep-heure/",
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1685088"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1685088",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "The tree stands on the private Beekvliet estate and the owner allows visitors to it; the national register records it as both visitable and visible. It is not open parkland, so this is a walk to the tree rather than a wander through the grounds.",
       "transport": "Heure, a hamlet of Borculo in the Achterhoek. There is no station nearby, so it is a drive or a bike ride out from Borculo or Eibergen.",
@@ -56,7 +57,9 @@
       },
       "how_to_recognise": "You can recognise it by the base, where deep fins of root flare out from the foot of the trunk, and by branches starting low down. It is the big elm at Heure on the Beekvliet estate.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 607,
+      "height_m": 25
     }
   ]
 }

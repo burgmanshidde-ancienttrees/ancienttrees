@@ -537,7 +537,8 @@
       },
       "story": "London planes shed their bark instead of quietly laying down new rings underneath it, sloughing off patches through the year to show paler wood beneath, which is why an old plane looks mottled and half-flayed rather than simply weathered. This one stands on the small square beside the Petruskerk in Hees, a Nijmegen district that was its own village before the city grew out to meet it.\n\nThe Dutch national monumental tree register dates the planting to between 1870 and 1880, making the tree roughly 145 to 155 years old, and lists it as protected. That register is the only source found naming this specific tree: histories of the square and the church describe the setting in detail but not this plane by name, so the age rests on the register's word alone.\n\nThe square sits on church grounds and reads as ordinary open public space, a small plaza in front of a working parish rather than an enclosed courtyard, and the register itself records it as visitable. Nothing else about this particular tree has surfaced yet. If you know more, tell us.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (register nr 1680526)"
+        "data/registers/netherlands-lrmb.json (register nr 1680526)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public church square, open at any time.",
       "transport": "About 3.5 km west of Nijmegen railway station, reachable by bus toward Hees, roughly 10 minutes' walk from the nearest stop.",
@@ -549,7 +550,9 @@
       },
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise it by its mottled, half-flayed bark, shed in patches rather than laid down in rings. It stands on the small square beside the Petruskerk in Hees."
+      "how_to_recognise": "You can recognise it by its mottled, half-flayed bark, shed in patches rather than laid down in rings. It stands on the small square beside the Petruskerk in Hees.",
+      "girth_cm": 427,
+      "height_m": 32
     },
     {
       "id": "nij_017",
@@ -566,7 +569,8 @@
       },
       "story": "This copper beech is older than the church beside it. The current Sint Antonius Abtkerk on Dennenstraat, a red-brick building by the architect Pieter Cuypers, went up in 1879 and 1880. The national register places the beech at the boundary of the church and its rectory somewhere between 1750 and 1800, roughly a century older than the bricks next to it.\n\nThat is not as strange as it sounds. The parish itself predates Cuypers by centuries: an older church stood on this ground before his, a barn chapel was rebuilt here in 1826, and parish history traces the site back to a sixteenth century predecessor. A beech planted in the late 1700s would have grown up beside whatever building stood here then, and simply outlasted it, the way old trees on church land tend to.\n\nCopper beeches carry a mutation that floods their leaves with red pigment, so from a distance this one reads almost black against the brick. The Dutch national monumental tree register is the only source found for this specific tree, roughly 225 to 275 years old by its planting estimate; local parish and heritage histories confirm the site's long religious use but do not mention the beech itself, so the age stands on the register alone.\n\nThe grounds are recorded as visitable and visible from outside, ordinary church land in the Hees district rather than a closed private garden.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (register nr 1680519)"
+        "data/registers/netherlands-lrmb.json (register nr 1680519)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, church grounds visible and open to visitors.",
       "transport": "About 4 km west of Nijmegen railway station, reachable by bus toward Hees.",
@@ -578,7 +582,8 @@
       },
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise it by its near-black, red-purple leaves. It stands on the boundary of the Sint Antonius Abtkerk and its rectory on Dennenstraat, older than the church beside it."
+      "how_to_recognise": "You can recognise it by its near-black, red-purple leaves. It stands on the boundary of the Sint Antonius Abtkerk and its rectory on Dennenstraat, older than the church beside it.",
+      "girth_cm": 413
     },
     {
       "id": "nij_018",
@@ -587,7 +592,7 @@
       "age_estimate": "roughly 100 to 125 years, sources disagree",
       "age_min": 96,
       "age_max": 126,
-      "girth_cm": null,
+      "girth_cm": 294,
       "location": {
         "address": "Sumatraplein 24, Nijmegen-Oost",
         "latitude": 51.836798,
@@ -596,7 +601,8 @@
       },
       "verified_sources": [
         "Landelijk Register van Monumentale Bomen (Bomenstichting), register nr 1681250",
-        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0), record IDs 2827/2830/2831 (IND_MONUMENTAAL=Ja, Acer saccharinum, plantjaar 1930), matched within 5-25m of the register coordinate"
+        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0), record IDs 2827/2830/2831 (IND_MONUMENTAAL=Ja, Acer saccharinum, plantjaar 1930), matched within 5-25m of the register coordinate",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Public street tree on municipal ground (owner_category 'gemeente' in the register), visible and accessible at all times.",
       "transport": "About 1.3 km southeast of Nijmegen railway station, in the Nijmegen-Oost neighbourhood; roughly 15-20 minutes on foot or a short bus ride.",
@@ -627,7 +633,8 @@
       },
       "verified_sources": [
         "Landelijk Register van Monumentale Bomen (Bomenstichting/LRMB), register nr 1681242 (status 3/monumentaal, owner gemeente, visitable=ja, visible=ja, tree-level coordinates, planted_band 1830-1840)",
-        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 794: Aesculus hippocastanum, IND_MONUMENTAAL=Ja, plantjaar 1920, stamdiameter 75-100cm, hoogte 18-24m, straat 'Park Brakkenstein'. Coordinate converted from the record's RD (EPSG:28992) point to WGS84 (standard Kadaster approximation formula, verified against a known reference point) lands 1.2m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox: a genuine tree-level match, not a coincidence of a dense planting."
+        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 794: Aesculus hippocastanum, IND_MONUMENTAAL=Ja, plantjaar 1920, stamdiameter 75-100cm, hoogte 18-24m, straat 'Park Brakkenstein'. Coordinate converted from the record's RD (EPSG:28992) point to WGS84 (standard Kadaster approximation formula, verified against a known reference point) lands 1.2m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox: a genuine tree-level match, not a coincidence of a dense planting.",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Park Brakkenstein / Landgoed Brakkenstein is a public city park in south Nijmegen (Heijendaal), used for walking and recreation; the star-forest (sterrenbos) layout dates to 18th-century maps. Confirmed as public via nl.wikipedia.org/wiki/Park_Brakkenstein and monumenten.nl/monument/522933 (Rijksmonument description), both fetched directly. The 1865 neoclassical villa beside which this tree stands is now an event/restaurant venue (landgoedbrakkesteyn.nl); the surrounding park grounds themselves are ordinary open parkland, not gated.",
       "transport": "South Nijmegen, Heijendaal area near Radboud University and Radboud UMC; nearest bus stop not pinned this pass, honest gap.",
@@ -647,7 +654,8 @@
         "label": "May, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it by its trunk, about 2.75 metres round, standing by the manor villa at Landgoed Brakkenstein, 15 metres from the beech."
+      "how_to_recognise": "You can recognise it by its trunk, about 2.75 metres round, standing by the manor villa at Landgoed Brakkenstein, 15 metres from the beech.",
+      "height_m": 17
     },
     {
       "id": "nij_020",
@@ -665,7 +673,8 @@
       },
       "verified_sources": [
         "Landelijk Register van Monumentale Bomen (Bomenstichting/LRMB), register nr 1681241 (status 3/monumentaal, owner gemeente, visitable=ja, visible=ja, tree-level coordinates, planted_band 1830-1840)",
-        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 2577: Fagus sylvatica, IND_MONUMENTAAL=Ja, plantjaar 1880, stamdiameter 125-150cm, hoogte 24m and higher, straat 'Park Brakkenstein'. Coordinate converted from RD (EPSG:28992) to WGS84 lands 2.9m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox."
+        "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 2577: Fagus sylvatica, IND_MONUMENTAAL=Ja, plantjaar 1880, stamdiameter 125-150cm, hoogte 24m and higher, straat 'Park Brakkenstein'. Coordinate converted from RD (EPSG:28992) to WGS84 lands 2.9m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox.",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Same public city park as nij_019 (Park Brakkenstein / Landgoed Brakkenstein), roughly 15m from that horse chestnut, both described by the register as standing 'bij het landhuis'. See nij_019 for the access sources.",
       "transport": "South Nijmegen, Heijendaal area near Radboud University and Radboud UMC; nearest bus stop not pinned this pass, honest gap. Same location as nij_019.",
@@ -686,7 +695,8 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by its trunk, over 4 metres round, thicker than its listed planting date would suggest. It stands 15 metres from the horse chestnut at Landgoed Brakkenstein."
+      "how_to_recognise": "You can recognise it by its trunk, over 4 metres round, thicker than its listed planting date would suggest. It stands 15 metres from the horse chestnut at Landgoed Brakkenstein.",
+      "height_m": 26
     },
     {
       "id": "nij_022",

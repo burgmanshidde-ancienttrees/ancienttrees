@@ -44,7 +44,8 @@
       "story": "Walk in under this beech and you are standing in a room about twenty-four metres across.\n\nA weeping beech does not spread its branches so much as hang them. The crown comes down to the ground in a dense curtain, and the space inside it is dim, enclosed and quieter than the churchyard outside. The church's own sign calls this the largest weeping beech in the Netherlands. The national register is more careful and will say only that it is probably the thickest in Zeeland. Both claims are here because they are not the same claim, and the more modest one is the better sourced.\n\nThe graves came first. This is the old burial ground behind the Blasiuskerk, and several of the people lying nearest the tree were of local standing in their day. The crown has since grown out over their stones, so some of them are now inside the curtain, which was nobody's plan.\n\nThe beech was planted between 1860 and 1870, which makes it much younger than the ground it stands on. A church has been here since 1406, when the local lord Jan van Schengen built the first one in his castle garden. That is the site's history rather than the tree's. What the tree inherited was a piece of land nobody was ever going to build on.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/treurbeuk-heinkenszand/",
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682787"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682787",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. The old churchyard behind the Blasiuskerk on the Kerkdreef, open ground, recorded as visitable in the national register.",
       "transport": "In the centre of Heinkenszand in Zeeland. Best reached by bike or car, roughly 15 minutes from Goes.",
@@ -63,7 +64,9 @@
         "label": "October, when the hanging curtain turns copper"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 539,
+      "height_m": 12
     }
   ]
 }

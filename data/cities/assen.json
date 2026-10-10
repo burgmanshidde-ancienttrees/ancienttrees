@@ -340,7 +340,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/zomereik-beilen/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1681987",
-        "Gerrit de Graaff, Monumentale Bomen in Nederland (1991); Frank Moens, Bijzondere bomen in Nederland (2010)"
+        "Gerrit de Graaff, Monumentale Bomen in Nederland (1991); Frank Moens, Bijzondere bomen in Nederland (2010)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. It stands at a rural road junction outside Beilen, in the open with no gate and no ticket.",
       "transport": "Beilen, in Midden-Drenthe about 14 km south of Assen. Nearest station is Beilen, then 10 to 15 minutes on foot or by bike out to the junction.",
@@ -360,7 +361,8 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "height_m": 20
     }
   ]
 }

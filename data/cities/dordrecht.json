@@ -313,7 +313,8 @@
       "how_to_recognise": "You can recognise it by the acorns on long stalks and the leaves on almost none, which is what makes it a pedunculate oak. It stands in the wooded strip along the railway, not out in the open part of the Weizigtpark.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695555",
-        "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08"
+        "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 500 m west of Dordrecht station, in the wooded strip beside the railway tracks.",
@@ -326,7 +327,9 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 375,
+      "height_m": 24
     },
     {
       "id": "dor_011",
@@ -345,7 +348,8 @@
       "how_to_recognise": "You can recognise it by the heart-shaped leaves and by the row it belongs to, mature limes along the canalside verge. It is the one directly opposite Spuiboulevard 250, on the water side of the street.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695557",
-        "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08"
+        "PDOK Actueel_orthoHR aerial imagery, accessed 2026-09-08",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Public street/canalside verge, open at all times.",
       "transport": "About 1.4 km southwest of Dordrecht station, on the Spuiboulevard.",
@@ -358,7 +362,9 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "girth_cm": 330,
+      "height_m": 21
     },
     {
       "id": "dor_014",
@@ -377,12 +383,15 @@
       "how_to_recognise": "You can recognise it by two leaf shapes on one tree, oak-like lobed leaves growing beside ordinary hornbeam leaves. It stands on the path that circles the deer enclosure in Park Merwestein.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695553",
-        "Park Merwestein's own numbered tree inventory (parkmerwestein.nl/bomenwijzer), tree 48; the same tree is stop 8 of the Bomenridders Dordrecht walking route (indordrecht.nl)"
+        "Park Merwestein's own numbered tree inventory (parkmerwestein.nl/bomenwijzer), tree 48; the same tree is stop 8 of the Bomenridders Dordrecht walking route (indordrecht.nl)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Municipality-owned, in the public Park Merwestein, on the path around the deer enclosure.",
       "transport": "Park Merwestein, about 1.7 km northeast of Dordrecht Centraal.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 322,
+      "height_m": 18
     },
     {
       "id": "dor_015",
@@ -402,7 +411,8 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1680495",
         "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum",
-        "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)"
+        "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
       "paid_entry": true,
@@ -416,7 +426,9 @@
         "status": "approved",
         "width": 2048,
         "height": 1536
-      }
+      },
+      "girth_cm": 685,
+      "height_m": 35
     },
     {
       "id": "dor_016",
@@ -437,13 +449,15 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695549",
         "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum",
-        "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)"
+        "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
       "paid_entry": true,
       "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "height_m": 26
     },
     {
       "id": "dor_017",
@@ -460,14 +474,17 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680502 (register file: data/registers/netherlands-lrmb.json)",
-        "https://indordrecht.nl/en/routes/bomenridders-wandeling/ (the city's own 'Tree Knights' walking route, which stops at Kunstmin theatre, Sint Jorisweg 76, and names a plane tree there alongside a white horse chestnut)"
+        "https://indordrecht.nl/en/routes/bomenridders-wandeling/ (the city's own 'Tree Knights' walking route, which stops at Kunstmin theatre, Sint Jorisweg 76, and names a plane tree there alongside a white horse chestnut)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Public plantsoen (green square) in front of the Kunstmin theatre, open at all times.",
       "transport": "About 1.4 km northeast of Dordrecht station, in the old centre, at the Kunstmin theatre on Sint Jorisweg.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "The national tree register knows the decade this plane was planted and admits it knows nothing else. Under history, the entry says: unknown.\n\nWhat it does give is a planting band of 1880 to 1890, which puts the tree somewhere around 136 to 146 years old, that the municipality owns it, and that visitors are welcome. Nobody has ever put a tape around the trunk. There is no girth figure in the file at all, which for a monumental plane in the middle of a Dutch city centre is an odd blank.\n\nIt stands in the Willem Kes Plantsoen, the small public square on Sint Jorisweg named after the conductor born in this city, directly in front of the Kunstmin theatre. So it has spent well over a century watching audiences arrive in daylight and leave in the dark, and it has stood through everything the twentieth century sent down this street.\n\nDordrecht signposts it, which is the useful part. The city's own Bomenridders walking route, the Tree Knights, stops at the theatre at Sint Jorisweg 76 and names this plane alongside the white horse chestnut about 25 metres away. That turns the visit into a two-tree errand on one small green rather than a single stop.\n\nIf anyone has measured that trunk, tell us and we will add the number.",
-      "how_to_recognise": "You can recognise it by the flaking, jigsaw-patterned bark that no other tree here has. It stands on the small green in front of the Kunstmin theatre, about 25 metres from the horse chestnut that shares the square with it."
+      "how_to_recognise": "You can recognise it by the flaking, jigsaw-patterned bark that no other tree here has. It stands on the small green in front of the Kunstmin theatre, about 25 metres from the horse chestnut that shares the square with it.",
+      "girth_cm": 415,
+      "height_m": 26
     },
     {
       "id": "dor_018",
@@ -484,7 +501,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680501 (register file: data/registers/netherlands-lrmb.json)",
-        "https://indordrecht.nl/en/routes/bomenridders-wandeling/ (the city's own 'Tree Knights' walking route: 'White horse chestnut, Kunstmin Theatre, Sint Jorisweg 76')"
+        "https://indordrecht.nl/en/routes/bomenridders-wandeling/ (the city's own 'Tree Knights' walking route: 'White horse chestnut, Kunstmin Theatre, Sint Jorisweg 76')",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Public plantsoen (green square) in front of the Kunstmin theatre, open at all times.",
       "transport": "About 1.4 km northeast of Dordrecht station, in the old centre, at the Kunstmin theatre on Sint Jorisweg.",
@@ -498,7 +516,9 @@
         ],
         "kind": "flowers",
         "label": "May, when the white candles stand up all over the crown in front of the theatre"
-      }
+      },
+      "girth_cm": 400,
+      "height_m": 25
     },
     {
       "id": "dor_019",
@@ -516,7 +536,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680493 (register file: data/registers/netherlands-lrmb.json)",
-        "https://www.huisvangijn.nl/ontdek-het-huis/tuin/ (Museum Huis van Gijn's own page on its garden)"
+        "https://www.huisvangijn.nl/ontdek-het-huis/tuin/ (Museum Huis van Gijn's own page on its garden)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Paid entry, through Museum Huis van Gijn, Nieuwe Haven 30 (adult ticket about EUR 14 as of this pass). The tree stands in the museum's own back garden; visitors can sit on the terrace beneath it. visitable=ja and visible=ja in the register.",
       "transport": "About 1.1 km north of Dordrecht station, in the old centre, at the Museum Huis van Gijn garden off Nieuwe Haven.",
@@ -524,7 +545,8 @@
       "curation_status": "flagged",
       "story": "The museum that owns this plane and the national register that protects it are twenty years apart on when it went into the ground.\n\nThe register describes a sizeable tree from 1860, more than four metres round the trunk, with knob-like burrs swelling along the stem and its condition rated fair. The museum's own garden page says the plane, and the maple standing near it, were probably planted around 1840, which would put them here before the Van Gijn family arrived at Nieuwe Haven 30 in 1864. Neither source shows its working, so the age stays broad: somewhere between roughly 165 and 185 years.\n\nWhichever date is right, the tree has spent its entire life inside one walled town garden a few streets back from the water, through the family's fifty-eight years in the house, through two world wars, and through the decades since the place became a museum.\n\nFour metres of trunk is a lot of tree for a garden this size, and the reward for the ticket is unusual. The museum has put a terrace underneath it, so the visit is sitting down and looking up rather than standing at a fence. Adult entry runs to about 14 euro, and the plane is at the back of the house.",
       "how_to_recognise": "You can recognise it by the flaking, patchwork bark and the knobbly burrs swelling along a trunk more than four metres round. It is the big plane at the back of the Huis van Gijn garden, with the museum's terrace under it.",
-      "paid_entry": true
+      "paid_entry": true,
+      "height_m": 24
     },
     {
       "id": "dor_020",
@@ -542,7 +564,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680494 (register file: data/registers/netherlands-lrmb.json)",
-        "https://www.huisvangijn.nl/ontdek-het-huis/tuin/ (Museum Huis van Gijn's own page on its garden, describing 'a plane tree and a maple probably planted around 1840')"
+        "https://www.huisvangijn.nl/ontdek-het-huis/tuin/ (Museum Huis van Gijn's own page on its garden, describing 'a plane tree and a maple probably planted around 1840')",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Paid entry, through Museum Huis van Gijn, Nieuwe Haven 30, for the full garden view. The register notes the trunk and crown are ALSO visible without paying, from the public Hoge Nieuwstraat behind the garden wall. visitable=ja and visible=ja.",
       "transport": "About 1.1 km north of Dordrecht station, in the old centre, at the Museum Huis van Gijn garden off Nieuwe Haven; also partly visible from Hoge Nieuwstraat.",
@@ -550,7 +573,8 @@
       "curation_status": "flagged",
       "story": "This is the tree in the Huis van Gijn garden you can see without buying a ticket. The national register goes out of its way to record that the trunk and crown show from the Hoge Nieuwstraat, the street running along the back of the garden wall.\n\nWhat the register will not tell you is exactly what it is. The entry says only bonte esdoorn, a variegated maple, with no Latin name attached. The marked leaves point at a variegated form of sycamore maple, and that is as far as the evidence goes; nobody has written down the cultivar. If you can name it, tell us and we will correct the page.\n\nIts age is unsettled in the same way as the plane standing near it. The register gives a planting band of 1880 to 1890. The museum's own garden page groups the maple with that plane and says both were probably planted around 1840. That is a spread of roughly 136 to 186 years, and neither source shows its working.\n\nThe register is more confident about the state of it: three metres round, condition good, a fine trunk and a well-developed crown, growing at the edge of the garden along the wall. Under either date it was already here while the Van Gijn family still lived in the house.",
       "how_to_recognise": "You can recognise it by the variegated leaves, marked pale where every other tree in this garden is plain green. It stands along the wall at the edge of the garden, its crown showing over the top from Hoge Nieuwstraat behind.",
-      "paid_entry": true
+      "paid_entry": true,
+      "height_m": 22
     }
   ]
 }

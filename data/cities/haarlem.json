@@ -351,7 +351,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696661)",
         "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (IVN/Bomenstichting monumental-trees walking guide for Haarlem; register nr 1696661 appears in the guide's own text, cross-confirming the register entry as an independently-selected stop on its Bolwerken walk)",
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, open park at any time",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -372,7 +373,9 @@
         "label": "November: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it as the tree standing alone on open lawn, unlike the grouped beeches and oaks nearby. It stands in De Bolwerken, between the Noorderbrug and the Kruisweg crossing."
+      "how_to_recognise": "You can recognise it as the tree standing alone on open lawn, unlike the grouped beeches and oaks nearby. It stands in De Bolwerken, between the Noorderbrug and the Kruisweg crossing.",
+      "girth_cm": 240,
+      "height_m": 12
     },
     {
       "id": "haa_011",
@@ -389,7 +392,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696664)",
-        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696664 appears in the guide's text, an independent selection of the same pair as a walk stop)"
+        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696664 appears in the guide's text, an independent selection of the same pair as a walk stop)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, open park at any time",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -403,7 +407,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them by the two oaks standing one either side of a path, reading as a gate. They stand on the west side of Statenbolwerk, at the start of the footpath."
+      "how_to_recognise": "You can recognise them by the two oaks standing one either side of a path, reading as a gate. They stand on the west side of Statenbolwerk, at the start of the footpath.",
+      "girth_cm": 331,
+      "height_m": 20
     },
     {
       "id": "haa_012",
@@ -421,7 +427,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1686176)",
         "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1686176 appears in the guide's text)",
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Visible from the public Statenbolwerk footpath; the tree stands within the grounds of Staten Bolwerk 1, a private villa (owner_category 'particulier' in the register), so the trunk itself is not something a visitor can walk up to. The register itself marks it visitable/visible ('ja'/'ja').",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -444,7 +451,8 @@
         "label": "July to September: long green catkins of winged nutlets hang from every branch",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by its crown showing above a villa's hedge. It stands within the private grounds of Statenbolwerk 1, viewed from the public footpath."
+      "how_to_recognise": "You can recognise it by its crown showing above a villa's hedge. It stands within the private grounds of Statenbolwerk 1, viewed from the public footpath.",
+      "girth_cm": 568
     },
     {
       "id": "haa_013",
@@ -461,7 +469,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696662)",
-        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696662 appears in the guide's text)"
+        "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696662 appears in the guide's text)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, open park at any time",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -483,7 +492,9 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise them by the four beeches growing together in a row. They stand along the Statenbolwerk footpath near house number 26, a short stretch from the oak pair at the path's start."
+      "how_to_recognise": "You can recognise them by the four beeches growing together in a row. They stand along the Statenbolwerk footpath near house number 26, a short stretch from the oak pair at the path's start.",
+      "girth_cm": 314,
+      "height_m": 22
     },
     {
       "id": "haa_014",

@@ -44,7 +44,8 @@
       "story": "The oldest tree in Zeeland is either about four hundred years old or about a thousand, and nobody can prove either.\n\nAn information board at Kasteel Westhove puts the planting somewhere between 1000 and 1400. The national register offers a different reading: that the lime went in after the castle was rebuilt in the late sixteenth century, which would make it four hundred to four hundred and fifty. Neither figure rests on a planting record, because none exists. Both sources still call it the oldest tree in the province.\n\nThere is a third account, told locally and sourced nowhere, that the trunk standing today is a daughter grown up out of the root of the original after the first stem died. If that were true both dates could be right about different things, which is presumably why the story keeps going.\n\nThe castle behind it is at least documented. Westhove turns up in a charter to Floris V in 1277, was rebuilt in the late sixteenth century, and is a youth hostel in the dunes now.\n\nThe lime stands out on the forecourt, cabled on every side to hold what is left of it together. Around it are old oak avenues, ash, abele and a sweet chestnut that still fruits.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/linde-van-kasteel-westhove/",
-        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679500"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679500",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free to look at. The lime stands on the forecourt of Kasteel Westhove, which is now a youth hostel, and is in full view from the drive.",
       "transport": "Between Oostkapelle and Domburg on Walcheren, Zeeland. Best reached by bike or car, roughly 20 minutes from Middelburg.",
@@ -64,7 +65,8 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "height_m": 8
     }
   ]
 }

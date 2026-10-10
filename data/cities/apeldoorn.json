@@ -330,7 +330,8 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (LRMB), entry nr 1678392",
         "https://www.apeldoorndirect.nl/stad/kijk-op-de-wijk-prins-hendrikplein-20171013/",
-        "https://www.geheugenvanapeldoorn.nl/bijzondere-plaatsen/de-parken-indische-buurt-en-loolaan-noord/willem-de-zwijgerboom/pointofinterest/detail"
+        "https://www.geheugenvanapeldoorn.nl/bijzondere-plaatsen/de-parken-indische-buurt-en-loolaan-noord/willem-de-zwijgerboom/pointofinterest/detail",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Public square, open at all times.",
       "transport": "About 1 km north of Apeldoorn station, on foot.",
@@ -350,7 +351,9 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "girth_cm": 372,
+      "height_m": 21
     },
     {
       "id": "apd_010",

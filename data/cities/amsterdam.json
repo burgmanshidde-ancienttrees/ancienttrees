@@ -129,7 +129,8 @@
       "verified_sources": [
         "http://www.bomeninfo.nl/amsterdam.htm",
         "https://www.inhetvondelpark.nl/oudebomen.html",
-        "https://www.monumentalebomen.nl"
+        "https://www.monumentalebomen.nl",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public park, open 24 hours",
       "transport": "Tram 2, Emmastraat, or Tram 3/12, Van Baerlestraat, then 5-10 min walk into the park",
@@ -147,7 +148,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690648",
         "url": null
-      }
+      },
+      "height_m": 38
     },
     {
       "id": "ams_004",
@@ -241,7 +243,8 @@
       "story": "One branch of this elm grows so low and so heavy that the city built it a prop, and that branch is where the tree gets its name: early residents thought it looked like an elephant's trunk reaching for the ground. Amsterdam planted this twin-stemmed elm on Zeeburgerdijk sometime between 1900 and 1915, according to conflicting municipal and conservation records. The city has tens of thousands of elms, more per capita than almost anywhere else in Europe, a legacy of planting elms along canals for their tolerance of the polluted, waterlogged soil common near open sewers a century ago. Dutch elm disease, first identified and named in the Netherlands in the 1920s, wiped out huge numbers of European elms over the following decades, and Amsterdam's collection survived largely because of an aggressive, decades-long eradication and breeding program that continues today. The Olifantsiep, girth pushing five metres, has outlived that epidemic and the severe storm of January 2018, and still leafs out every spring behind a low fence anyone can lean on.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/olifantsiep-amsterdam/",
-        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-noord-holland.html"
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-noord-holland.html",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public street",
       "transport": "Tram 14, Zeeburgerdijk area",
@@ -262,7 +265,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686172",
         "url": null
-      }
+      },
+      "height_m": 26
     },
     {
       "id": "ams_007",
@@ -320,7 +324,8 @@
         "https://www.boomzorg.nl/upload/artikelen/bz513top10.pdf",
         "https://www.amsterdam.nl/nieuws/achtergrond/tien-mooiste-bomen/",
         "https://api.data.amsterdam.nl/v1/wfs/bomen/ (stamgegevens.999049)",
-        "https://maps.amsterdam.nl/bomen_bijzonder/"
+        "https://maps.amsterdam.nl/bomen_bijzonder/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public street",
       "transport": "Tram 3 or 4, Amsteldijk/Rivierenbuurt area",
@@ -345,7 +350,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696156",
         "url": null
-      }
+      },
+      "height_m": 5
     },
     {
       "id": "ams_009",
@@ -459,7 +465,8 @@
         "https://www.bomenstichting.nl/infotheek-en-faq/informatie-over-bomen/boomhazelaar.html",
         "https://www.monumentaltrees.com/nl/nld/noordholland/amsterdam/206_hortusbotanicusuva/1892/",
         "https://www.botanischetuinen.nl/nl/plant/1546/boomhazelaar-of-bosnoot-of-turkse-hazelaar",
-        "https://maps.amsterdam.nl/bomen_bijzonder/"
+        "https://maps.amsterdam.nl/bomen_bijzonder/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Paid entry, Hortus Botanicus ticket required",
       "transport": "Tram 14, Artis stop, directly outside (same stop as the Hortus's already-published cycad)",
@@ -478,7 +485,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686149",
         "url": null
-      }
+      },
+      "height_m": 18
     },
     {
       "id": "ams_016",
@@ -535,7 +543,8 @@
       "verified_sources": [
         "https://maps.amsterdam.nl/bomen_bijzonder/ (Gemeente Amsterdam Bijzondere Bomen register, dataset 561, register_id 346253, plant year 1900, trunk girth 500 cm, status Beschermwaardige houtopstand, owner Gemeente)",
         "https://www.bomenstichting.nl/images/Mon_bomen_Amsterdam_2021_WEB.pdf (De Bomenstichting, 'Langs monumentale bomen in het centrum van Amsterdam', 2021 edition: lists a Gewone plataan at Wertheimpark (westkant), Plantage Parklaan, described as having 'een stamomtrek van bijna vijf meter' [a trunk girth of almost five metres], matching this register entry's 500cm almost exactly)",
-        "https://maps.amsterdam.nl/bomen_bijzonder/"
+        "https://maps.amsterdam.nl/bomen_bijzonder/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public park (Wertheimpark)",
       "transport": "Tram 14, Artis stop, about 5 min walk",
@@ -552,7 +561,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686163",
         "url": null
-      }
+      },
+      "height_m": 22
     },
     {
       "id": "ams_019",
@@ -651,7 +661,8 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1692908: Hollandse Iep - Oudemanhuispoort, In de zuidwesthoek van de binnentuin van de Oudemanhuispoort, planting band 1890-1900, reason for protection 'dendrologisch', owner gemeente, recorded as visitable",
         "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
-        "https://maps.amsterdam.nl/bomen_bijzonder/"
+        "https://maps.amsterdam.nl/bomen_bijzonder/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. The inner courtyard of the Oudemanhuispoort passage, open in the daytime on weekdays.",
       "transport": "Metro or tram to Rokin, about 5 min walk",
@@ -668,7 +679,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692908",
         "url": null
-      }
+      },
+      "height_m": 36
     },
     {
       "id": "ams_022",
@@ -723,7 +735,8 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1692220: Bruine beuk, Tuin Museum Van Loon, Keizersgracht 672, Amsterdam, planting band 1890-1900, reason for protection 'monumentaal', owner stichting, recorded as visitable",
         "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
-        "https://maps.amsterdam.nl/bomen_bijzonder/"
+        "https://maps.amsterdam.nl/bomen_bijzonder/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Paid entry: the garden is part of Museum Van Loon, which charges admission and is open daily 10:00 to 17:00 according to the museum's own site.",
       "transport": "Tram 24 to Keizersgracht, about 3 min walk",
@@ -749,7 +762,8 @@
         ],
         "label": "late October, when the purple leaves turn copper before they fall",
         "kind": "autumn colour"
-      }
+      },
+      "height_m": 18
     },
     {
       "id": "ams_024",
@@ -804,7 +818,8 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686110: Scheve populier Weteringschans, Amsterdam, Eerste Weteringplantsoen (Weteringschans, hoek Weteringcircuit), planting band 1900-1910, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
         "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
-        "https://maps.amsterdam.nl/bomen_bijzonder/"
+        "https://maps.amsterdam.nl/bomen_bijzonder/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public planting, always open.",
       "transport": "Tram to Weteringcircuit, on the corner of the Weteringcircuit",
@@ -821,7 +836,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686110",
         "url": null
-      }
+      },
+      "height_m": 30
     },
     {
       "id": "ams_028",
@@ -874,7 +890,8 @@
       "story": "In August this tree covers itself in white flowers, weeks after every lime and chestnut in the city has finished. The Japanese pagoda tree is a legume from Korea and China, with fine pinnate leaves and a crown that goes wide rather than tall, and late summer flowering is the reason people plant it.\n\nIt has the room to spread because a canal was filled in. The Falckstraat was named in 1870 after a prominent Amsterdammer and is unusually broad for the centre, because it was laid over a stretch of the Achtergracht filled in around 1869. A filled canal leaves a generous street, a generous street leaves root space, and root space is how a crown this wide ended up thriving on a corner of the Reguliersgracht.\n\nIts age is genuinely unsettled. The register gives the planting band in two places and gives it differently, once as the 1890s and once as the 1900s, so the honest answer is somewhere between 116 and 136 years. The trunk carries a large wound on its south side, partly grown over, and the city prunes the heavy overhanging limbs on a schedule to keep the crown in balance. A second, smaller pagoda tree stands beside it.\n\nFree, on the street corner, and worth timing. For most of the year it is a good tree with unusual foliage. In August it is the reason to be standing there.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686062: Honingboom Falckplantsoen, Amsterdam, Reguliersgracht/Falckstraat (Falckplantsoen t.o nr 1), planting band 1900-1910, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
-        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+        "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, on the street.",
       "transport": "Tram to Frederiksplein or Weteringcircuit, about 5 min walk",
@@ -898,7 +915,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686062",
         "url": null
-      }
+      },
+      "height_m": 19
     },
     {
       "id": "ams_032",
@@ -958,7 +976,8 @@
         "label": "late October, when the whole crown turns clear butter-yellow"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public park, open daily.",
       "transport": "",
@@ -975,7 +994,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694923",
         "url": null
-      }
+      },
+      "height_m": 26
     },
     {
       "id": "ams_035",
@@ -999,7 +1019,8 @@
         "label": "October, when the conkers come down into the grass of the Speelweide"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, on municipal land, open to the public.",
       "transport": "",
@@ -1016,7 +1037,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694922",
         "url": null
-      }
+      },
+      "height_m": 23
     },
     {
       "id": "ams_039",
@@ -1033,7 +1055,8 @@
       },
       "story": "This lime went into the ground on 31 January 1938, the day Princess Beatrix was born. The register still lists it as De Beatrix linde.\n\nDutch towns marked royal births with trees as a matter of course, and this was a birth worth marking: Beatrix was the first child of Juliana, who was herself the only child of Queen Wilhelmina, and the line had been running on a single life for two generations. The baby the tree was planted for became queen in 1980 and stayed on the throne until 2013. The tree has stood on this corner the whole time, including the German occupation that sent the family into exile in London barely two years after the planting.\n\nIt has not aged as easily as she has. The register's inspectors record dead wood in the top and along the main limbs, and a flush of young shoots breaking out inside the crown, which is what a stressed lime does when it starts rebuilding itself lower down. They want the ground around the roots examined to turn things around. A street tree in trouble is almost always suffering from what is under it rather than what is above.\n\nYou will find it where two through-roads meet at the Veenendaalplein in Amstelveen, in full view, which the register notes with some approval. Nobody has recorded which lime species it is.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public planting, always open.",
       "transport": "",
@@ -1049,7 +1072,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684072",
         "url": null
-      }
+      },
+      "girth_cm": 252,
+      "height_m": 21
     },
     {
       "id": "ams_040",
@@ -1073,7 +1098,8 @@
         "label": "July, when it opens white orchid-shaped flowers freckled with purple"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, public planting, always open.",
       "transport": "",
@@ -1089,7 +1115,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690655",
         "url": null
-      }
+      },
+      "girth_cm": 216
     }
   ],
   "oldest_tree_id": "ams_001",

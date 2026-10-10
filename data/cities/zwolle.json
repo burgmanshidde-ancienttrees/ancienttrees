@@ -526,7 +526,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1688404",
-        "Gemeente Zwolle, 'Bijzondere bomen Gemeente Zwolle' (definitieve lijst, 15 februari 2015): one Taxodium distichum 'Monumentaal', wijk Wipstrik, straatnaam Herenweg, kadastraal ZLE00B 07605G0000, eigendom Gemeente Zwolle"
+        "Gemeente Zwolle, 'Bijzondere bomen Gemeente Zwolle' (definitieve lijst, 15 februari 2015): one Taxodium distichum 'Monumentaal', wijk Wipstrik, straatnaam Herenweg, kadastraal ZLE00B 07605G0000, eigendom Gemeente Zwolle",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Stands on or right at the edge of the public road verge along Herenweg, at the boundary of the private grounds historically known as Huis de Paddestoel; visible and reachable from the public road without needing anyone's permission. The register itself flags this tree visitable: ja, visible: ja.",
       "transport": "About 175 m from the Plane by Restaurant Urbana (zwo_013), same Wipstrik walk.",
@@ -537,7 +538,9 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "girth_cm": 440,
+      "height_m": 28
     },
     {
       "id": "zwo_017",

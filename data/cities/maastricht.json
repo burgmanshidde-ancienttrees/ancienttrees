@@ -390,7 +390,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1678454, honour class/ereklasse tree)",
         "https://bomenbieb.nl/bijzondere-bomen/honingboom-maastricht/",
-        "https://nl.wikipedia.org/wiki/Stadspark_Maastricht (confirms 'twee honingbomen' among the park's ~15 monumental trees)"
+        "https://nl.wikipedia.org/wiki/Stadspark_Maastricht (confirms 'twee honingbomen' among the park's ~15 monumental trees)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, Aldenhofpark is an open public park (part of Maastricht's Stadspark green belt), gemeente-owned, visitable at any time",
       "transport": "10-15 minute walk from Maastricht centre",
@@ -404,7 +405,9 @@
         "kind": "fresh leaves",
         "label": "May, when it leafs out white and gold instead of green"
       },
-      "how_to_recognise": "You can recognise it by leaves that open white and gold instead of green, the trait its cultivar is named for. It stands directly visible from Prins Bisschopssingel, in the 1918 northern half of Aldenhofpark."
+      "how_to_recognise": "You can recognise it by leaves that open white and gold instead of green, the trait its cultivar is named for. It stands directly visible from Prins Bisschopssingel, in the 1918 northern half of Aldenhofpark.",
+      "girth_cm": 443,
+      "height_m": 18
     },
     {
       "id": "maa_012",
@@ -421,7 +424,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1694875 wingnut, nr 1694876 weeping silver lime)",
-        "https://nl.wikipedia.org/wiki/Waldeckpark (confirms 'een tweetal Kaukasische vleugelnoten' among trees dating from the park's 1921 creation by landscape architect Leonard Springer)"
+        "https://nl.wikipedia.org/wiki/Waldeckpark (confirms 'een tweetal Kaukasische vleugelnoten' among trees dating from the park's 1921 creation by landscape architect Leonard Springer)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, Waldeckpark is an open public park laid out on the former Waldeck bastion, gemeente-owned, visitable at any time",
       "transport": "10-15 minute walk from Maastricht centre",
@@ -436,7 +440,9 @@
         "kind": "catkins",
         "label": "June and July, when the wingnut hangs its long chains of winged seeds"
       },
-      "how_to_recognise": "You can recognise it by the wingnut's ropes of winged green seeds hanging through early summer, about a forearm's length. It stands with a weeping silver lime ten metres away, at the Tongerseweg edge of Waldeckpark."
+      "how_to_recognise": "You can recognise it by the wingnut's ropes of winged green seeds hanging through early summer, about a forearm's length. It stands with a weeping silver lime ten metres away, at the Tongerseweg edge of Waldeckpark.",
+      "girth_cm": 467,
+      "height_m": 22
     },
     {
       "id": "maa_015",
@@ -481,7 +487,7 @@
       "age_estimate": "roughly 120 years",
       "age_min": 116,
       "age_max": 126,
-      "girth_cm": null,
+      "girth_cm": 408,
       "location": {
         "address": "Cannerweg 451, Sint-Servaasbron, Biesland, Maastricht",
         "latitude": 50.832915,
@@ -490,14 +496,16 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (LRMB v2024), Bomenstichting, register nr 1691040: 'Gewone plataan St.Servaasbron', Cannerweg 451, planted band 1900-1910, owner_category religieuze instantie, setting bos, visitable ja, visible ja",
-        "https://nl.wikipedia.org/wiki/Sint-Servaasbron (confirms the site's legend, that the current stone well dates to 1886-88, that it is surrounded by chestnut trees and elder bushes, that it is a protected national monument reached through a decorative Louis XV-style gate, and that an annual May procession is still held there); corroborated by https://rijksmonumenten.nl/monument/27941/st-servatiusbron/maastricht/ (national monument listing) and https://www.bronnen-krachtplaatsen.info/li-maastricht-sint-servaas-bron.php (recent visitor account confirming public access via a small stairway to the well)"
+        "https://nl.wikipedia.org/wiki/Sint-Servaasbron (confirms the site's legend, that the current stone well dates to 1886-88, that it is surrounded by chestnut trees and elder bushes, that it is a protected national monument reached through a decorative Louis XV-style gate, and that an annual May procession is still held there); corroborated by https://rijksmonumenten.nl/monument/27941/st-servatiusbron/maastricht/ (national monument listing) and https://www.bronnen-krachtplaatsen.info/li-maastricht-sint-servaas-bron.php (recent visitor account confirming public access via a small stairway to the well)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free and open. The grounds around the spring belong to a religious institution per the register, but the site is a national monument (rijksmonument) reached through an unlocked decorative gate, visited by the public year-round, and hosts a public procession every May; the register itself marks the tree 'visitable: ja'.",
       "transport": "In the Jekerdal valley off the Cannerweg, on the city's south-west edge near the Belgian border; about 1.6 km (roughly 20 minutes on foot along the Cannerweg/Jekerpad) from the already-published 1700 Oaks of Cannerbos (maa_003).",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "The legend, recorded in the Middle Ages by Henric van Veldeke, has Saint Servatius striking the ground here with his staff on his way home from Rome, and a spring rising where it landed. A woman with a fever was said to have been cured by the water. People have been coming down to it ever since, and a procession still walks here every May.\n\nWhat you actually find at the bottom of the little stairway is nineteenth-century: a stone well under a wrought-iron canopy with a statue of the saint above it, built between 1886 and 1888 and now a national monument in its own right. The plane standing over it is dated by the national register to the planting years 1900 to 1910, roughly 120 years, so tree and stonework are near contemporaries. Whether the tree went in as part of that work, nobody recorded.\n\nThe ground belongs to a religious institution, but the gate is a decorative Louis XV affair that stands unlocked, the register marks the tree as visitable, and the site is walked by the public year round. The spring itself is less reliable than the tree: a recent visitor account found it dry.\n\nThe plane has company. Chestnuts and elder crowd the hollow, and the register lists a grove of 23 maples and horse chestnuts at the same coordinates, dated 1860 to 1870. Only the plane carries a name.",
-      "how_to_recognise": "You can recognise it as the one plane among the chestnuts and elder around the spring, its bark flaking into cream and olive patches. It stands over the stone well at the foot of the stairway, off the Cannerweg."
+      "how_to_recognise": "You can recognise it as the one plane among the chestnuts and elder around the spring, its bark flaking into cream and olive patches. It stands over the stone well at the foot of the stairway, off the Cannerweg.",
+      "height_m": 26
     },
     {
       "id": "maa_018",
@@ -506,7 +514,7 @@
       "age_estimate": "roughly 140 years",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 508,
       "location": {
         "address": "Monseigneur Nolenspark, along Van Heylerhofflaan, Maastricht",
         "latitude": 50.843517,
@@ -515,14 +523,16 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (LRMB v2024), Bomenstichting, register nr 1696504: 'Platanengroep Mgr.Nolenspark Maastricht', 3 trees, planted band 1880-1890, owner_category gemeente, setting park, visitable ja, visible ja",
-        "https://nl.wikipedia.org/wiki/Waldeckpark and general Stadspark history (independently confirms Mgr. Nolenspark was added to the Stadspark complex from 1886 to a design by (the younger) Rosseels, matching the register's own history note that the planes 'presumably date from this period')"
+        "https://nl.wikipedia.org/wiki/Waldeckpark and general Stadspark history (independently confirms Mgr. Nolenspark was added to the Stadspark complex from 1886 to a design by (the younger) Rosseels, matching the register's own history note that the planes 'presumably date from this period')",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free. Stands in the municipally owned Mgr. Nolenspark, part of Maastricht's public Stadspark system, open at all times.",
       "transport": "Same small cluster as the already-published Black Walnuts (maa_008), Weeping Silver Limes (maa_009) and Tulip Trees (maa_010) of Nolenspark, all within about 100 metres.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Maastricht's most famous plane tree, the tallest in the Netherlands, stands about 240 metres from these three, and nobody has ever put an age on it. This trio does have one, of a sort. The national register places them in the planting years 1880 to 1890, roughly 136 to 146 years, and its own history note says they presumably date from the 1886 expansion that carried the Stadspark westward into Mgr. Nolenspark and Henri Hermanspark. Presumably is the register's own word and it is the honest one: the expansion is documented, the year these three went into the ground is not.\n\nThree planes of one generation standing together read differently from a single record-breaker. This is a stand rather than a specimen, the kind of planting a nineteenth-century park designer made because the London plane took coal smoke, compacted soil and hard pruning better than anything else available, and because a row of them would eventually close overhead.\n\nNo source beyond the register names these three individually, which is the one thin part of their paperwork. Everything around them is better documented and closer than you would expect: the park's black walnuts, its weeping silver limes and its pair of tulip trees all stand within about a hundred metres, so the whole group is ten minutes of walking.",
-      "how_to_recognise": "You can recognise them as a group of three planes of one generation standing together, bark flaking cream and olive. They stand along Van Heylerhofflaan; the Netherlands' tallest plane is a separate tree 240 metres off."
+      "how_to_recognise": "You can recognise them as a group of three planes of one generation standing together, bark flaking cream and olive. They stand along Van Heylerhofflaan; the Netherlands' tallest plane is a separate tree 240 metres off.",
+      "height_m": 39
     },
     {
       "id": "maa_019",
@@ -540,7 +550,8 @@
       "story": "The Dutch register that protects this tree calls it a Japanse notenboom, literally a Japanese nut tree, which is simply the ordinary Dutch name for a ginkgo and has nothing to do with what it actually is. A ginkgo is not a nut tree in any real sense. It is the sole survivor of a whole order of plants that otherwise vanished tens of millions of years ago, a living link to trees that grew alongside dinosaurs and outlasted them.\n\nThis particular specimen is comparatively young. The national monumental tree register dates it to sometime between 1910 and 1920, which puts it at around a hundred and ten years old, the municipality as its owner, and open access for visitors. A ginkgo of that age has already seen the species become one of the most planted street trees on earth, prized for surviving pollution, disease and, most famously, six specimens close to the blast at Hiroshima that leafed out again the following spring.\n\nIt stands in Monseigneur Nolenspark, in the stretch of Maastricht Stadspark that Lievin Rosseels laid out in 1886, sharing its hundred metres of ground with the park's own black walnuts, weeping silver limes and tulip trees. The register is the only source naming a ginkgo at this exact spot, so the page says that plainly rather than borrowing the measurements of two other Maastricht ginkgos documented elsewhere in the wider park. They are not this tree.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1680867, 'Japanse notenboom', planted_band 1910-1920, setting park, owner_category gemeente, visitable ja, visible ja)",
-        "https://www.floravannederland.nl/planten/japanse_notenboom"
+        "https://www.floravannederland.nl/planten/japanse_notenboom",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
       ],
       "access": "Free, open public park at any time",
       "transport": "10-15 minute walk from Maastricht centre; same small cluster as the already-published Black Walnuts (maa_008), Weeping Silver Limes (maa_009), Tulip Trees (maa_010) and Plane Trees (maa_018) of Nolenspark, all within about 100 metres",
@@ -560,7 +571,9 @@
         ],
         "label": "November: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
-      }
+      },
+      "girth_cm": 339,
+      "height_m": 25
     }
   ]
 }
