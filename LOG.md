@@ -37,6 +37,8 @@ Nijmegen: 13 trees. The downloaded Dutch register file has no girth or height, s
 
 Cork: 12 trees. Ireland has no per-tree register pages, so the Heritage Trees of Ireland dataset (NBDC Dataset 27, CC BY 4.0) record keys went in as register ids for 10 trees (the copy in data/registers/ held only Dublin, the agent re-downloaded the whole file); Blarney and Fota access lines now carry opening hours from their own sites, Blarney has no price found. The register grid is 100 m precise, so no pins were upgraded.
 
+Dallas: 1 of 12 closed (dal_003 got the Texas Big Tree Registry id 2356; no registry measurements copied because its licence is non-commercial). txhtc.org sits behind a captcha for curl, amlegal.com returns 403, Dallas Heritage Village fails DNS: blocklist candidates, and Dallas needs a session with a browser.
+
 Nara: thin yield. One register record added (nra_006 Kasuga Taisha nagi, Nara City's own page for that tree); 21 gaps dead-ended. nra_003's Byakugo-ji camellia only has a line on a list page, so I did not record it as a record. The ministry giant-tree database gives facility points, not trunks, so Nara's pin gaps stay open.
 
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
