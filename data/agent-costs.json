@@ -10166,6 +10166,14 @@
    "date": "2026-10-10",
    "target": "milan",
    "kind": "enrich",
+   "tokens": 137609,
+   "trees": 3,
+   "note": "batch 2: MASAF sheet, girth/height on 3, Orto Botanico di Brera hours; comune.milano.it 403"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "milan",
+   "kind": "enrich",
    "tokens": 144970,
    "trees": 6,
    "note": "MASAF ids and girth/height on 6; 21 gaps dead-ended, no authority pages opened"

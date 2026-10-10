@@ -459,9 +459,10 @@
       "verified_sources": [
         "https://lastatalenews.unimi.it/orto-botanico-brera-noce-caucaso-riconosciuto-albero-monumentale",
         "https://ortibotanici.unimi.it/il-noce-del-caucaso-e-albero-monumentale/",
-        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "https://ortibotanici.unimi.it/home/orto-botanico-di-brera/visita-lorto-brera/"
       ],
-      "access": "Free entry, Orto Botanico di Brera (Mon-Sat, hours vary by season)",
+      "access": "Free entry (the garden states: ingresso libero e gratuito). Open Monday to Saturday except public holidays: 10:00-18:00 from 1 April to 31 October, 9:30-16:30 from 1 November to 31 March. Closed 8 to 16 August 2026.",
       "transport": "5 min walk from Lanza (M2) or Montenapoleone (M3)",
       "best_time": {
         "months": [
@@ -483,7 +484,11 @@
       "height_m": 29.0,
       "verify_notes": "Height 29.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 470,
-      "how_to_recognise": "At the back of the arboretum rather than by the ginkgos, 4.7 metres round and thrown sideways into a low dome, with half-metre chains of winged seeds in summer."
+      "how_to_recognise": "At the back of the arboretum rather than by the ginkgos, 4.7 metres round and thrown sideways into a low dome, with half-metre chains of winged seeds in summer.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 22/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_012",
@@ -793,7 +798,13 @@
       "curation_status": "ai_generated",
       "notes": "BLOCKER of 2026-08-17 answered rather than obeyed, and the reviewer was right to raise it. It read the entry as a courtyard of a dwelling under hard rule 10's absolute home test. The premise was OUR OWN invented sentence: the first version of this story said the villa's inner courtyard is 'square, arcaded on three sides, and the hackberry stands at the centre of it', which no source says. It is a bridge claim of exactly the kind the corpus names, and as usual the join decided the LOCATION. The comune's own page describes a park and says 'e' possibile varcare il cancello per visitare il parco', it is possible to pass through the gate to visit the park, with the discretion due to an inhabited place. That is the landowner, the Comune di Milano itself, stating that visitors are admitted, which is what hard rule 10 asks for. The buildings are the home; the park is not.\n\nTwo location errors fixed in the same pass, found by reading that page in a browser session because comune.milano.it 403s every plain fetcher. The address said Via Villapizzone 9 and the comune says piazza Villapizzone 3. The pin sat 83 metres from the comune's own marker while claiming 'confirmed'; it now uses the comune's coordinate and says approximate, because that marker is the villa rather than the trunk.",
       "location_precision": "approximate",
-      "how_to_recognise": "A very wide hackberry in the villa park, crown spreading over 20 metres. The pin is the comune's own marker for the villa rather than the trunk, so expect to look once you are inside the gate."
+      "how_to_recognise": "A very wide hackberry in the villa park, crown spreading over 20 metres. The pin is the comune's own marker for the villa rather than the trunk, so expect to look once you are inside the gate.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 09/F205/MI/03",
+        "url": null
+      },
+      "girth_cm": 420,
+      "height_m": 18
     },
     {
       "id": "mil_020",
@@ -898,7 +909,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "In the old tram-line median outside number 3 near Porta Venezia, 5.70 metres round, which is nearly double the tree that was felled on this stretch in 2018."
+      "how_to_recognise": "In the old tram-line median outside number 3 near Porta Venezia, 5.70 metres round, which is nearly double the tree that was felled on this stretch in 2018.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 26/F205/MI/03",
+        "url": null
+      }
     },
     {
       "id": "mil_023",
