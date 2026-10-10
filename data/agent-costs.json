@@ -10166,6 +10166,14 @@
    "date": "2026-10-10",
    "target": "the-hague",
    "kind": "enrich",
+   "tokens": 152543,
+   "trees": 2,
+   "note": "batch 2: girth/height from LRMB ArcGIS on hag_029/030, best_time on 029; hag_026 and hag_031 register status dead"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "the-hague",
+   "kind": "enrich",
    "tokens": 138641,
    "trees": 15,
    "note": "LRMB register ids on 15 trees, 7 matched by coordinate in the local copy; no measurements found"
