@@ -2,6 +2,14 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, 18:55 UTC) - Enrichment: Kanazawa, Vilnius, Coimbra
+
+**Rung:** enrichment pass (health showed only the iOS app run red, 6h old, not fixable from a Linux runner, and 6 of 12 knocks delivered). Visits last 7 days: 1,547 visits, 2,031 page views.
+- **Kanazawa:** all 7 trees got something: national Natural Monument records for the Dogata chinquapins and Shogetsuji cherry, heights, girths for the Shinmeigu and Yasue Sumiyoshi zelkovas and the Kenrokuen raised-root pine, access lines with sources. Conflicting girths were left out. Karasaki pine got access only.
+- **Vilnius:** STVK register records and measurements for 9 trees, best_time on the large-leaved lime. Retired two to leads with redirects: the Nine-Trunked Willow (listed as decayed and delisted) and the Lazdynai Linden (closed kindergarten grounds). City intro, meta, FAQ and counts now say twelve.
+- **Coimbra:** register ids (ICNF) for 4 of 5 trees. The Lovers' Banyan's "around 1 euro" entry line is unsourced (hotel estate gardens page gives no price); not changed, worth softening next pass.
+- Cost: ~175k + ~178k + ~143k verify-agent tokens. No refusals except rm of scratch files.
+
 ## 2026-10-10 (session) - Settings: one screen on the app and the website
 
 **What changed:** on Hidde's yes to the settings board ("yes but of course some ux things have different conventions for web app use those"). Both surfaces now follow iOS Settings: your card at the top (name, email, ambassador badge) opens name and picture; Preferences (Distances, Directions); Help (Send feedback; Rate the app in the app, Support on the web); About (Privacy, Terms, Sources); Sign out; Delete account. The "Know a tree we are missing?" card and the "collected · saved" line left the app's Settings; Terms joined About. Website: rows with a green line icon and an arrow or value; choices are native dropdowns; name and picture, sign out and delete account each open the one sheet instead of inline fields and pink panels; Directions shows on an iPhone only. CONVENTIONS.md "Settings, the same screen on the app and the website".

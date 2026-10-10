@@ -10164,6 +10164,30 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "kanazawa",
+   "kind": "enrich",
+   "tokens": 173902,
+   "trees": 0,
+   "note": "records, measurements, access on 7 trees (no new trees)"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "vilnius",
+   "kind": "enrich",
+   "tokens": 178414,
+   "trees": 0,
+   "note": "register + measurements on 9 trees; 2 retired to leads"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "coimbra",
+   "kind": "enrich",
+   "tokens": 142682,
+   "trees": 0,
+   "note": "ICNF register ids on 4 trees"
+  },
+  {
+   "date": "2026-10-10",
    "target": "reykjavik",
    "kind": "enrich",
    "tokens": 157123,
