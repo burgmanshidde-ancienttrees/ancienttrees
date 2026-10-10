@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "arnhem",
+   "kind": "enrich",
+   "tokens": 148009,
+   "trees": 5,
+   "note": "LRMB ids on 5, one girth; 24 gaps dead-ended"
+  },
+  {
+   "date": "2026-10-10",
    "target": "los-angeles",
    "kind": "enrich",
    "tokens": 156529,
