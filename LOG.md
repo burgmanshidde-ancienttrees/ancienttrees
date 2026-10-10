@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - The web profile looks like the app's; the account menu is My trees and Settings; the header is the same on every page
+
+**Why:** Hidde: the web profile page "ziet er eerlijk gezegd niet uit"; the account menu had two rows to one page; and Download the app vanished on a tree page, where "het lijkt mij conventie dat het menu altijd hetzelfde blijft".
+**Done:** /account's big Add a tree bar is a round + beside the gear, the header is the app's sizes (picture 52, name 17, follow line 13), 16 from the header to the lanes where there were 65. The account menu (dropdown and phone sheet) is My trees (/account) and Settings (/account/settings) in all eight languages, leaf and gear from Phosphor. The rule hiding Download the app on tree pages is gone.
+
 ## 2026-10-10 (session) - Retiring a tree can no longer be pushed half-done
 
 **What changed:** `python3 scripts/retire.py <city> <id>... --reason "why"` is now the way a tree comes off. In one step it moves the tree to data/leads, adds its slug to REMOVED_TREE_SLUGS, deletes its files in site/public/photos and rebuilds the photo manifest, then prints what a person still has to rewrite: park and city count promises that no longer hold, every place the old count still appears (city copy, park copy, translation overlays), and every other tree's story that names the retired one or its place. On trees already retired by hand it skips the move and does the rest. Replayed on this morning's 45 it finds every fix the four hand commits made (Sonsbeek, Vosseparkje, Arnhem's 37 of 39, the Watermuseum lime, the gro_008 photograph). `scripts/preflight.py` now refuses a park page promising a count it does not hold (`check_park_count_promises()`, park membership derived exactly as parks.ts parkKey(), in scripts/park_groups.py) and a photograph nothing points at (`check_no_orphan_photos()`); on the state after commit 1d84f79c1 it fails five times where it said 0 problems. Preflight was never in the pre-push hook; it is now, whenever data/cities, parks, leads, i18n or the photographs changed (6 seconds).

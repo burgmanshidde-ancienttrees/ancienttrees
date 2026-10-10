@@ -2626,8 +2626,9 @@ svg.ic { width: 1em; height: 1em; flex: 0 0 auto; fill: currentColor; }
 .worthit-btn.is-on svg.th-on { display: block; }
 .share-btn svg.ic { width: 21px; height: 21px; color: var(--moss); }
 
-/* Nothing in the header competes with the page's own Open in the app. */
-body:has(.td-page) .bar-links a.bar-cta { display: none; }
+/* The header is the same on every page (Hidde, 2026-10-10: "het lijkt mij
+   conventie dat het menu altijd hetzelfde blijft"), so a tree page keeps
+   Download the app beside its own Open in the app. */
 
 main.content-page.td-page { padding-top: calc(var(--header-h) + 0.75rem); padding-bottom: 2.5rem; }
 /* Room under the footer for the pinned bar, on the body rather than the main,
@@ -3099,3 +3100,18 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .at-snack-text { flex: 1; min-width: 0; }
 .at-snack-act { min-height: 44px; min-width: 44px; padding: 0 10px; border: 0; background: none; color: var(--moss);
   font: inherit; font-weight: 700; cursor: pointer; }
+
+/* The profile on the web, measured against the app (2026-10-10, Hidde: "de
+   profielpagina op web ... ziet er niet uit"): picture 52, name 17 bold,
+   follow line 13, two round icon buttons with a hairline on the right, and 16
+   points from the header to the lanes where there were 65. */
+.profile-head { margin-bottom: 0; }
+.sheet-grab .panel-head:has(#st-in) { padding-bottom: 16px; }
+.profile-head .profile-top { gap: 12px; }
+.profile-head .profile-avatar { width: 52px; height: 52px; font-size: 20px; }
+.profile-head .profile-who h1 { font-size: 17px; font-weight: 700; line-height: 1.2; }
+.profile-head .profile-follow { font-size: 13px; margin-top: 2px; }
+.profile-head .profile-gear { width: 40px; height: 40px; border: 1px solid var(--cream-dark); background: #fff; }
+.profile-head .profile-gear + .profile-gear { margin-left: 8px; }
+.profile-plus svg { width: 18px; height: 18px; }
+.acct-lanes { margin-top: 0; }

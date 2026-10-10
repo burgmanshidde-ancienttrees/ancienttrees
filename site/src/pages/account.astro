@@ -34,6 +34,7 @@ import { SHEET_JS } from "../lib/sheet-js";
 import { icon } from "../lib/icons";
 const BOOKMARK_GHOST = icon("bookmark-simple", "bold", "ic");
 const MAP_ICON = icon("map-trifold", "bold", "ic");
+const PLUS_ICON = icon("plus", "bold", "ic");
 
 const canonical = `${BASE_URL}/account`;
 ---
@@ -88,6 +89,11 @@ const canonical = `${BASE_URL}/account`;
         <p class="profile-follow"><b id="n-followers">0</b> followers &nbsp; <b id="n-following">0</b> following</p>
         <p class="profile-ambassador" id="in-ambassador" hidden></p>
       </div>
+      {/* ADD A TREE as a small round button beside the gear (2026-10-10:
+          "maak de profielpagina mooier"): the big green bar between the name
+          and the lists is what the app took off its own profile on
+          2026-10-01; the website keeps the act, because it has no camera tab. */}
+      <a class="profile-gear profile-plus" href="/contribute?kind=tree" aria-label="Add a tree" title="Add a tree"><Fragment set:html={PLUS_ICON} /></a>
       <a class="profile-gear" href="/account/settings" aria-label="Settings">
         <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M19.4 13.5a7.6 7.6 0 0 0 0-3l1.7-1.3-2-3.4-2 .8a7.6 7.6 0 0 0-2.6-1.5L14.2 3H9.8l-.3 2.1a7.6 7.6 0 0 0-2.6 1.5l-2-.8-2 3.4 1.7 1.3a7.6 7.6 0 0 0 0 3L2.9 14.8l2 3.4 2-.8a7.6 7.6 0 0 0 2.6 1.5l.3 2.1h4.4l.3-2.1a7.6 7.6 0 0 0 2.6-1.5l2 .8 2-3.4z"/></svg>
       </a>
@@ -102,7 +108,7 @@ const canonical = `${BASE_URL}/account`;
         between the button and the lists, and the app keeps that fact in
         Settings, which is where it now lives on the web too. The trees are
         the screen. */}
-    <a class="go-btn profile-add" href="/contribute?kind=tree">Add a tree</a>
+
   </section>
   </div></div>
 

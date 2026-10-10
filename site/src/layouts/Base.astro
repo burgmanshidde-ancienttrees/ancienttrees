@@ -17,8 +17,11 @@ import { toEnglishPath, ui } from "../lib/i18n";
 import { isNoindexed, noindexScope, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import { icon } from "../lib/icons";
-// The Want to visit list wears the app's bookmark (2026-10-09).
-const BOOKMARK = icon("bookmark-simple", "bold", "ic");
+// The account menu, two rows to two places (Hidde, 2026-10-10: "ik denk dat
+// je wel een dropdown wil met my trees and settings right?"): My trees, the
+// app's tab and leaf, and Settings, the app's gear. It had two rows to one page.
+const LEAF = icon("leaf", "bold", "ic");
+const GEAR = icon("gear-six", "bold", "ic");
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
 import {
@@ -205,8 +208,8 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         {AUTH_ENABLED && (
           <Fragment>
             <p class="nav-group only-mobile">{t.yours}</p>
-            <a href="/account#saved" class="only-mobile"><span class="mi"><Fragment set:html={BOOKMARK} /></span><span>{t.savedTrees}</span></a>
-            <a href="/account" class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>{t.yourAccount}</span></a>
+            <a href="/account" class="only-mobile"><span class="mi"><Fragment set:html={LEAF} /></span><span>{t.savedTrees}</span></a>
+            <a href="/account/settings" class="only-mobile"><span class="mi"><Fragment set:html={GEAR} /></span><span>{t.yourAccount}</span></a>
           </Fragment>
         )}
         <p class="nav-group only-mobile">{t.takePart}</p>
@@ -241,8 +244,8 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         <summary id="bar-login" aria-label={t.account}><span class="mi acct-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span class="acct-word">{t.account}</span></summary>
         <div class="nav-drop-menu">
           <p class="nav-group">{t.yours}</p>
-          <a href="/account#saved"><span class="mi"><Fragment set:html={BOOKMARK} /></span>{t.savedTrees}</a>
-          <a href="/account"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span>{t.yourAccount}</span></a>
+          <a href="/account"><span class="mi"><Fragment set:html={LEAF} /></span>{t.savedTrees}</a>
+          <a href="/account/settings"><span class="mi"><Fragment set:html={GEAR} /></span><span>{t.yourAccount}</span></a>
         </div>
       </details>
     )}
