@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "osaka",
+   "kind": "enrich",
+   "tokens": 161588,
+   "trees": 0,
+   "note": "2 kunishitei records, measurements on 2 trees"
+  },
+  {
+   "date": "2026-10-10",
    "target": "utrecht",
    "kind": "enrich",
    "tokens": 167079,
