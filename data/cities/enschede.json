@@ -3,8 +3,8 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Enschede's old trees were bought by textile money. Van Heek, Blijdenstein, Ledeboer: the families who ran the mills built estates on the edge of town, hired the best garden architects in the country and planted them, and the city later absorbed the results as public parks. One invoice survives. In 1865 D. Wattez billed H. J. van Heek for a Wellingtonia as part of the planting around 't Wageler, and the two men wrote to each other about the price. That giant sequoia is still standing in the Ledeboerpark, which is the closest thing this page has to a receipt.",
-  "meta_description": "Fourteen remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
-  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and thirteen more worth the walk.",
+  "meta_description": "Thirteen remarkable trees in Enschede: a giant sequoia with a surviving 1865 invoice, two on an estate first recorded in 1536, and an oak in a city square.",
+  "question_meta": "Enschede's oldest tree is the oak on 't Zeggelt, banded 1750 to 1800 by the national register. Where it stands, and twelve more worth the walk.",
   "question_answer": "The oldest tree in Enschede is the oak on 't Zeggelt, in the Lasonder-Zeggelt district, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. It has a name of its own in the city, De Eik op 't Zeggelt, and it stands in public planting rather than on any estate, which is unusual here: almost every other old tree in Enschede is a survivor of a nineteenth century textile family's grounds. The register gives it a coordinate to six decimal places, which is the sort of precision that means somebody stood at the trunk with a receiver rather than pointing at an address.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the single source for these trees, which is why they are all flagged. The giant sequoia in the Ledeboerpark is the exception worth naming: the register cites a document in the archive of the Twente textile families recording correspondence in 1866 between H. J. van Heek and the garden architect D. Wattez about the price of a Wellingtonia, on an invoice for planting around 't Wageler in 1865. That is a documented purchase rather than an estimate, and it is why this page can be more confident about that tree than about any other on it. Where a pin is marked approximate we know the grounds and not the trunk.",
   "hero_tree_id": "ens_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All seven. The Ledeboerpark, the Blijdensteinpark and Het Bouwhuis are open, and the oak, the plane and the Wageler beech stand on public ground."
+      "a": "All seven. The Ledeboerpark, the Blijdensteinpark and Het Bouwhuis are open, and the oak and the plane stand on public ground."
     }
   ],
   "trees": [
@@ -112,42 +112,6 @@
       "height_m": 22
     },
     {
-      "id": "ens_003",
-      "name": "The Beech of Landgoed Wageler",
-      "species": "European Beech (Fagus sylvatica)",
-      "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
-      "age_min": 186,
-      "age_max": 196,
-      "location": {
-        "address": "Langs de Es, Landgoed Wageler",
-        "latitude": 52.23312,
-        "longitude": 6.87143,
-        "neighbourhood": "Wageler"
-      },
-      "story": "This beech was on the estate before the estate was designed.\n\n't Wageler is the ground that Wattez planted for the Van Heeks in the 1860s and that partly became the Ledeboerpark. The register bands this tree 1830 to 1840, thirty years earlier, which means it was a mature tree of some size when the landscape architect arrived with his plans and his invoices.\n\nThat is the ordinary way a Dutch estate garden was actually made. You did not clear ground and start over. You looked at what was standing, kept whatever was good, and arranged the new planting to make the most of it, which is why the oldest tree in a nineteenth century park is so often older than the park.\n\nIt stands along the Es, the old open arable field that these Twente farms were organised around. An es is a very specific thing here: a slightly raised field built up over centuries by carting in sods and manure, so the soil under it can be a metre deeper than the heath beside it. Good ground, and part of why a beech here grew as it did.\n\nSmooth grey bark, deep shade, bare litter beneath.",
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/"
-      ],
-      "access": "Free. On the estate grounds, recorded as visitable in the national register.",
-      "transport": "About 2.5 km northwest of Enschede station, near the Ledeboerpark.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "how_to_recognise": "A heavy smooth-barked beech standing along the edge of the old open field.",
-      "best_time": {
-        "months": [
-          10
-        ],
-        "kind": "autumn colour",
-        "label": "October, when the whole crown goes copper"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate"
-    },
-    {
       "id": "ens_004",
       "name": "The Giant Sequoia of Het Bouwhuis",
       "species": "Giant Sequoia (Sequoiadendron giganteum)",
@@ -215,7 +179,15 @@
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692864",
         "url": null
       },
-      "height_m": 21
+      "height_m": 21,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ens_006",
@@ -498,7 +470,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1678438, 'Beukenberceau Van Heekpark')",
-        "https://www.monumenten.nl/monument/510593"
+        "https://www.monumenten.nl/monument/510593",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678438&outFields=*&f=json (Landelijk Register Monumentale Bomen, hoogte 9 m for the pruned berceau; no girth recorded)"
       ],
       "access": "Free, open public park (Rijksmonument since 1995)",
       "transport": "About 1.8 km west of Enschede Centraal station, roughly 20-25 minutes on foot; the park borders Hengelosestraat. No specific bus stop verified this pass.",
@@ -511,7 +484,8 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "height_m": 9
     },
     {
       "id": "ens_015",

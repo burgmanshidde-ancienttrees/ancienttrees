@@ -31,6 +31,44 @@
    },
    "removed": "2026-10-10",
    "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1687605 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"0 Gehechte stamvoet, stamwond. Geënt op Ulmus glabra.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ens_003",
+   "name": "The Beech of Landgoed Wageler",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+   "age_min": 186,
+   "age_max": 196,
+   "location": {
+    "address": "Langs de Es, Landgoed Wageler",
+    "latitude": 52.23312,
+    "longitude": 6.87143,
+    "neighbourhood": "Wageler"
+   },
+   "story": "This beech was on the estate before the estate was designed.\n\n't Wageler is the ground that Wattez planted for the Van Heeks in the 1860s and that partly became the Ledeboerpark. The register bands this tree 1830 to 1840, thirty years earlier, which means it was a mature tree of some size when the landscape architect arrived with his plans and his invoices.\n\nThat is the ordinary way a Dutch estate garden was actually made. You did not clear ground and start over. You looked at what was standing, kept whatever was good, and arranged the new planting to make the most of it, which is why the oldest tree in a nineteenth century park is so often older than the park.\n\nIt stands along the Es, the old open arable field that these Twente farms were organised around. An es is a very specific thing here: a slightly raised field built up over centuries by carting in sods and manure, so the soil under it can be a metre deeper than the heath beside it. Good ground, and part of why a beech here grew as it did.\n\nSmooth grey bark, deep shade, bare litter beneath.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. On the estate grounds, recorded as visitable in the national register.",
+   "transport": "About 2.5 km northwest of Enschede station, near the Ledeboerpark.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A heavy smooth-barked beech standing along the edge of the old open field.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "October, when the whole crown goes copper"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "removed": "2026-10-10",
+   "removed_reason": "LRMB nr 1687596 at its coordinates is status 5 (Dood/geveld); the register note says only one of three beeches stood in 2014 and the entry is now closed as dead or felled"
   }
  ]
 }
