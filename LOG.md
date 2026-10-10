@@ -10,6 +10,8 @@
 
 **Zero-token follow-up:** `scripts/lrmb_measure.py` (new) fills girth_cm and height_m from that ArcGIS layer for every Dutch tree citing an LRMB number and lacking them: 96 trees across 25 places in one run (Ede's seven included, which the Ede pass had called measurement-less), layer URL added to verified_sources, status 5 rows skipped. Re-run it after any Dutch tree is added. Milan: MASAF ids plus girth/height on six trees, 21 gaps dead-ended.
 
+**Also:** Milan batch 2 (3 trees: MASAF sheet, girth/height, Orto Botanico di Brera hours; comune.milano.it gives 403) and Krakow (2 trees: CRFOP record and girth on kra_013, Botanic Garden price and hours on kra_003). Passes are now returning 2 to 6 trees per ~140k tokens; the cheap yield was the zero-token scripts above, not more agent passes. Nothing was refused except Milan mil_019's and Krakow kra_013's pin answers (no source URL in the answer).
+
 ## 2026-10-10 (session) - The app as a builder reads it
 
 **Live in the digest:** active phones per day, week and month, how many came back, the most opened trees and the countries; and a weekly chain table (new phones, what a first day does, back within a week, trees collected). First reading: 9 new phones this week, 6 opened a tree on day one, 1 tapped Take me there, 1 collected; 45% came back within a week.

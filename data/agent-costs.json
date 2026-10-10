@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "krakow",
+   "kind": "enrich",
+   "tokens": 144119,
+   "trees": 2,
+   "note": "CRFOP record and girth on kra_013, Botanic Garden price and hours on kra_003; pin refused for missing source URL"
+  },
+  {
+   "date": "2026-10-10",
    "target": "milan",
    "kind": "enrich",
    "tokens": 137609,

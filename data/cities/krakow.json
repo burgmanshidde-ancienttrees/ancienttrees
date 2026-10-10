@@ -140,9 +140,10 @@
       "story": "Black locusts are not supposed to be rare in Poland. The species arrived from North America in the 18th century and spread so successfully across Central Europe's sandy soils that it now grows practically everywhere, valued for holding loose ground rather than for looking distinguished. Which is what makes the specimen standing in front of Collegium Sniadeckiego, on the Kopernika Street side of the Jagiellonian University's Botanical Garden, worth singling out: at 239 years old by a 2022 measurement, with a trunk 475cm around and a height of 27 metres, it is the oldest confirmed black locust anywhere in Poland. Its age lines up almost exactly with the garden's own founding in 1783, meaning whoever first planted it did so within a few years of the garden's earliest plantings, one of the collection's original survivors rather than a later addition. May brings the reward for anyone who times a visit right: a black locust in full bloom carries heavy clusters of white flowers that draw bees from across the garden, the same nectar that makes the species one of Europe's most productive honey trees. It shares this stretch of path with a run of other exceptionally old specimens dating to the same founding decades, giving one corner of the garden a disproportionate share of Poland's oldest confirmed trees.",
       "verified_sources": [
         "https://ogrod.uj.edu.pl/ogrod/rosliny/najstarsze-okazy",
-        "https://gazetakrakowska.pl/najstarszy-ogrod-botaniczny-w-polsce-swietowal-swoje-240lecie-nie-zabraklo-okazalych-prezentow/ar/c1-17917969"
+        "https://gazetakrakowska.pl/najstarszy-ogrod-botaniczny-w-polsce-swietowal-swoje-240lecie-nie-zabraklo-okazalych-prezentow/ar/c1-17917969",
+        "https://ogrod.uj.edu.pl/zwiedzanie/podstawowe-info"
       ],
-      "access": "Paid entry, Jagiellonian University Botanical Garden (open seasonally, check hours)",
+      "access": "Paid entry to the Jagiellonian University Botanical Garden (ul. Kopernika 27): the garden is open daily, 9:00 to 15:00 in January, February and November to December, 9:00 to 17:00 in March and October, 9:00 to 19:00 from April to August, 9:00 to 18:00 in September (ticket office closes 45 minutes earlier); standard ticket 22 zl, reduced 12 zl, as published by the garden. The tree stands in the courtyard of Collegium Sniadeckiego on the ul. Kopernika side.",
       "transport": "Krakow Glowny railway station, short walk",
       "photo": {
         "url": null,
@@ -500,7 +501,7 @@
       "age_estimate": "",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
+      "girth_cm": 336,
       "location": {
         "address": "ul. Batorego 12-14, Krakow",
         "latitude": 50.06676,
@@ -510,7 +511,8 @@
       "story": "Two protected trees stand two doors apart on ul. Batorego, a pedunculate oak at number 14 and a ginkgo at number 12, both entered onto Krakow's natural monument register on the same day in 1997. The oak is the thicker of the two, 336 centimetres around; the ginkgo measures 305.\n\nNeither has a documented age, and this is one case where guessing off the girth would mislead rather than help. Oak and ginkgo do not share a growth pattern with the ash and plane already published nearby, and no reliable published growth factor for either species in this climate was found this pass. What is verified is simpler and enough on its own: two long-lived species, planted close enough together to have been a deliberate pairing rather than a coincidence, both still standing on an ordinary residential street.\n\nGinkgo is the more unusual of the two. Native to China and unrelated to any other tree alive today, the species survived the asteroid that ended the dinosaurs, and six ginkgos close to the 1945 blast at Hiroshima resprouted from scorched trunks and still stand there. This one has had an easier life, on a Krakow pavement, free to see at any hour.",
       "verified_sources": [
         "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
-        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2978"
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2978",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie (reproduces the city register: oak at ul. Batorego 14, trunk circumference 336 cm, designated 1997; the ginkgo at ul. Batorego 12, register id ...2979, is 305 cm)"
       ],
       "access": "Free, roadside trees on public ground (ul. Batorego), open at all hours",
       "transport": "Short walk from the Planty ring / Stare Miasto centre",
@@ -531,7 +533,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise the pair by their girths, the oak 336 centimetres round at number 14, the ginkgo 305 at number 12. They stand two doors apart on ul. Batorego."
+      "how_to_recognise": "You can recognise the pair by their girths, the oak 336 centimetres round at number 14, the ginkgo 305 at number 12. They stand two doors apart on ul. Batorego.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOS), pomnik przyrody, no. PL.ZIPOP.1393.PP.1261011.2978",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2978"
+      }
     },
     {
       "id": "kra_014",
