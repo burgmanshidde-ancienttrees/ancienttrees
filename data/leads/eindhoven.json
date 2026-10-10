@@ -197,6 +197,45 @@
    },
    "removed": "2026-10-10",
    "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1680794 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Na veel inspanning van de buurtbewoners gespaard tijdens wegrenovatie en nieuwbouw (3 juni 1998. Boom is in oktober 2006 gekapt. Boom leverde gevaar op i.v.m. aantasting tonderzwam.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ein_006",
+   "name": "The Copper Beech of the Glorieuxpark",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 275 to 325 years, from the register's planting band of 1700 to 1750",
+   "age_min": 276,
+   "age_max": 326,
+   "location": {
+    "address": "Glorieuxpark De Burgh, Geldropseweg 170",
+    "latitude": 51.431327,
+    "longitude": 5.498516,
+    "neighbourhood": "Stratum"
+   },
+   "story": "This is the oldest thing standing in Eindhoven, by a wide margin and by the register's own dating: a planting band of 1700 to 1750, so somewhere between about 275 and 325 years. Everything else on this page is a Philips tree. This one was full grown before the family arrived.\n\nThe ground has changed hands and purpose repeatedly around it. It was the Eikenburg estate; in 1894 the Brothers of Charity bought it and opened a boys' boarding school, adding pavilions over the decades; the boarding school closed in 1996 for lack of pupils, and care and education organisations moved into the buildings. The main house, the old school, the chapel and a mounted statue of Saint George are all listed national monuments. A religious order still owns the park, and the register records it as visitable.\n\nOne honest note. This park also held the thickest beech in the whole of North Brabant, and it is gone: a large part of its crown came down on its own in September 2013 and the remaining trunk was taken out. That was a different tree, a green beech, and the register recorded this one eleven years afterwards. If you go and find this one has followed it, tell us.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/",
+    "https://www.bhic.nl/ontdekken/verhalen/kloosters-in-het-glorieuxpark-in-eindhoven"
+   ],
+   "access": "Free. Park owned by a religious order, recorded as visitable in the national register.",
+   "transport": "About 2.5 km southeast of Eindhoven Centraal, on the Geldropseweg.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A very heavy beech with dark purple leaves, in the park around the old boarding school buildings.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "autumn colour",
+    "label": "October, when the purple burns through to copper"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-10",
+   "removed_reason": "LRMB nr 1680802 at the same coordinates and address carries status 5 (Dood/geveld): dead or felled, per the 2026-10-10 enrichment pass"
   }
  ],
  "blocked": [

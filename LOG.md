@@ -4,6 +4,7 @@
 
 ## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
 
+- **Eindhoven:** LRMB girth and height for ein_004, 008, 010, 016, autumn-colour best_time for the Sint Trudo copper beech. **Retired ein_006** (Glorieuxpark copper beech): LRMB nr 1680802 at its coordinates is status 5, Dood/geveld. Moved to leads with a redirect (retire.py); the oldest-tree answer, FAQ and meta now point to the Wasven plane (ein_002) and counts say seventeen. The old page also said "twenty-one" with 18 trees on file, now corrected. ein_007 (Lichtjesboom) has only a status-4 "Afgekeurd" register entry, left live.
 - **Verona:** 3 of 8: MASAF id for the Himalayan cedar (ver_004), a press-sourced approximate 20 m height for the Piazza Bra cedar (ver_001), Giardino Giusti hours (no price stated). ver_002 and the Veneto regional lists were not checked this pass.
 - **Perth:** 4 of 6: Kings Park boab page, inHerit places 04380 and 09009 (State Register), National Trust WA register for the flowering gum, plus heights and one girth (Cloisters fig, a 1984 assessment). The Kings Park "free, open daily" line was taken from the authority's footer, not its attractions page. per_005 and per_006 pins stay open.
 - **Kagoshima:** 7 of 15: Kagoshima City Preserved Trees (保存樹) list ids for kag_004 to 009 and 013 (a list page, not per-tree; its girths are at 1.5 m, not 1.3 m). Pins for kag_005 to 008, 012, 013 stay open (Overpass unusable from the runner); kag_001, 002, 011, 014, 015 are not in the city list and no Kunishitei/prefectural record was found.

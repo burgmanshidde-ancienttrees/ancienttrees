@@ -187,6 +187,8 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-10, scripts/retire.py: LRMB nr 1680802 at the same coordinates and address carries status 5 (Dood/geveld): dead o
+  ["eindhoven", "copper-beech-of-the-glorieuxpark"],
   // 2026-10-10, scripts/retire.py: vln_005: lt.wikipedia lists the Nine-Trunked Willow as decayed (sunykes) and delisted from
   ["vilnius", "nine-trunked-willow-of-sereikiskes"],
   ["vilnius", "lazdynai-linden"],

@@ -3,16 +3,16 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Eindhoven's old trees are mostly Philips trees: a chestnut planted in 1909 at gate 11 of the stadium, an oak in the twenty-five hectares Anton Philips gave the city in 1920, a sequoia in the pinetum on the estate his son kept closed until 2025. Five more line the streets of Villapark, the garden suburb Philips built for its executives from 1907. The two that owe Philips nothing are the oldest and best loved: a beech from before the industrial town, and an oak the neighbours light every December.",
-  "meta_description": "Twenty-one trees in Eindhoven: the 1909 Philips chestnut, a plane set on fire and grafted back to life, and a garden suburb of imported species.",
-  "question_meta": "Eindhoven's oldest tree is a copper beech in the Glorieuxpark, from a planting band of 1700 to 1750. Where it stands, and seventeen more worth the walk.",
-  "question_answer": "The oldest tree in Eindhoven is a copper beech in the Glorieuxpark on the Geldropseweg, which the national register of monumental trees places in a planting band of 1700 to 1750, so somewhere between about 275 and 325 years old. It stands on ground that was the Eikenburg estate long before the Brothers of Charity bought it in 1894 and built a boys' boarding school there. The claim has a rival: the Wereldboom foundation puts the plane tree at Groendomein Wasven at around 1760, while the same national register gives that tree a band of 1820 to 1830. Both cannot be right, and neither tree has been cored, so the honest answer is that the beech is the oldest by the register and the plane may be older by its foundation.",
+  "meta_description": "Seventeen trees in Eindhoven: the 1909 Philips chestnut, a plane set on fire and grafted back to life, and a garden suburb of imported species.",
+  "question_meta": "Eindhoven's oldest tree is a plane at Groendomein Wasven, put at 200 to 265 years old. Where it stands, and sixteen more worth the walk.",
+  "question_answer": "The oldest tree in Eindhoven is probably De Gevlekte Zuiderling, the plane at Groendomein Wasven. The Wereldboom foundation that named it puts it at around 1760, about 265 years, while the national register of monumental trees gives a planting band of 1820 to 1830, roughly 200 years. Both cannot be right, and neither figure has been cored, so the age is a range rather than a date. It is also a survivor: it was set on fire in July 2022 and grafted back to life. A copper beech in the Glorieuxpark once held the title on a 1700 to 1750 register band, but the register now records that tree as dead or felled, so it is no longer on this list.",
   "question_context": "Every age on this page comes from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so ages here are bands and are not narrowed to look precise. That register is the 2024 edition and is a single source for most of these trees, which is why several are flagged. Where a second source exists it is named in the story, and the two trees with the most reporting behind them are the Philips chestnut at the stadium and the plane at Wasven. That plane is the one to watch: it was set on fire in July 2022 and arborists gave it a thirty percent chance of pulling through, so if you walk out there and find it has not made it, tell us and we will take it down the same day. Pins marked approximate mean the park is known and the trunk is not, which matters most at De Wielewaal, where the estate runs to 144 hectares and the oak avenues all look alike.",
   "hero_tree_id": "ein_001",
-  "oldest_tree_id": "ein_006",
+  "oldest_tree_id": "ein_002",
   "faq": [
     {
       "q": "What is the oldest tree in Eindhoven?",
-      "a": "A copper beech in the Glorieuxpark, which the national register places in a planting band of 1700 to 1750. The plane tree at Wasven is given around 1760 by the foundation that named it and 1820 to 1830 by the same register, so the two claims overlap and neither tree has been cored."
+      "a": "Probably the plane tree at Wasven, given around 1760 by the foundation that named it and 1820 to 1830 by the national register, so the two claims overlap and the tree has not been cored. A Glorieuxpark copper beech once held the title but the register now records it as dead or felled."
     },
     {
       "q": "Can you visit Landgoed De Wielewaal?",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All twenty-one. The Wielewaal, the Philips de Jongh park and Groendomein Wasven are open public parks with no charge, the Philips chestnut stands on the square outside the stadium, and the Lichtjesboom is a street tree. The Glorieuxpark is owned by a religious order and the register records it as visitable. The Sint Trudo and Antonius churchyards in Strijp are working Catholic cemeteries, open daily and free to walk through. Five more stand outside the Van Abbemuseum, on Pastoor Sickingstraat, in the park behind the Stadspaviljoen, and at Marienhage, all open ground with no charge. The last five stand on public street verges in Villapark, a residential district open at any time."
+      "a": "All seventeen. The Wielewaal, the Philips de Jongh park and Groendomein Wasven are open public parks with no charge, the Philips chestnut stands on the square outside the stadium, and the Lichtjesboom is a street tree. The Sint Trudo and Antonius churchyards in Strijp are working Catholic cemeteries, open daily and free to walk through. Five more stand outside the Van Abbemuseum, on Pastoor Sickingstraat, in the park behind the Stadspaviljoen, and at Marienhage, all open ground with no charge. The last five stand on public street verges in Villapark, a residential district open at any time."
     }
   ],
   "trees": [
@@ -174,7 +174,7 @@
         "https://www.omroepbrabant.nl/nieuws/4755377/3-keer-zo-groot-als-vondelpark-philips-priveparadijs-nu-open-voor-iedereen",
         "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697236&outFields=*&f=json"
       ],
-      "access": "Free. Public since 27 September 2025.",
+      "access": "Free. Public park since 27 September 2025; the gates close at sunset. Dogs on a lead, no mountain bikes.",
       "transport": "About 5 km northwest of Eindhoven Centraal. Nearest entrance Oirschotsedijk 3.",
       "photo": {
         "url": null,
@@ -235,43 +235,6 @@
       },
       "girth_cm": 437,
       "height_m": 30
-    },
-    {
-      "id": "ein_006",
-      "name": "The Copper Beech of the Glorieuxpark",
-      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-      "age_estimate": "roughly 275 to 325 years, from the register's planting band of 1700 to 1750",
-      "age_min": 276,
-      "age_max": 326,
-      "location": {
-        "address": "Glorieuxpark De Burgh, Geldropseweg 170",
-        "latitude": 51.431327,
-        "longitude": 5.498516,
-        "neighbourhood": "Stratum"
-      },
-      "story": "This is the oldest thing standing in Eindhoven, by a wide margin and by the register's own dating: a planting band of 1700 to 1750, so somewhere between about 275 and 325 years. Everything else on this page is a Philips tree. This one was full grown before the family arrived.\n\nThe ground has changed hands and purpose repeatedly around it. It was the Eikenburg estate; in 1894 the Brothers of Charity bought it and opened a boys' boarding school, adding pavilions over the decades; the boarding school closed in 1996 for lack of pupils, and care and education organisations moved into the buildings. The main house, the old school, the chapel and a mounted statue of Saint George are all listed national monuments. A religious order still owns the park, and the register records it as visitable.\n\nOne honest note. This park also held the thickest beech in the whole of North Brabant, and it is gone: a large part of its crown came down on its own in September 2013 and the remaining trunk was taken out. That was a different tree, a green beech, and the register recorded this one eleven years afterwards. If you go and find this one has followed it, tell us.",
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/",
-        "https://www.bhic.nl/ontdekken/verhalen/kloosters-in-het-glorieuxpark-in-eindhoven"
-      ],
-      "access": "Free. Park owned by a religious order, recorded as visitable in the national register.",
-      "transport": "About 2.5 km southeast of Eindhoven Centraal, on the Geldropseweg.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "how_to_recognise": "A very heavy beech with dark purple leaves, in the park around the old boarding school buildings.",
-      "best_time": {
-        "months": [
-          10
-        ],
-        "kind": "autumn colour",
-        "label": "October, when the purple burns through to copper"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
     },
     {
       "id": "ein_007",
@@ -346,7 +309,15 @@
         "url": null
       },
       "girth_cm": 420,
-      "height_m": 29
+      "height_m": 29,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper leaves turn and fall",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ein_009",
@@ -420,7 +391,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695680",
         "url": null
-      }
+      },
+      "girth_cm": 219,
+      "height_m": 27
     },
     {
       "id": "ein_011",
