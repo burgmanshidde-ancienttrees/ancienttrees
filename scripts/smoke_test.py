@@ -988,6 +988,11 @@ setTimeout(function(){
             ('class="sheet-body"', "the sheet's inner scroller, without which the list cannot scroll"),
             ("atSheetFocus", "the sheet script"),
             ("maplibregl-canvas", "map canvas (JS ran, map constructed)"),
+            # The canvas alone said nothing on 2026-10-10: a throw in the city
+            # script after the map was built left a live map with no trees on
+            # it, on every city page, and this test stayed green (Hidde: "they
+            # dont show any pins anymore"). The pins are what the page is for.
+            ('class="pin-tree', "the city's tree pins (the script ran to the end)"),
         ]),
         (f"{base}/{city.stem}/{tree.name}", f"tree page ({tree.stem})", [
             # Collect left the mobile web on Hidde's ruling of 2026-08-14
