@@ -60,7 +60,11 @@
       },
       "height_m": 47.0,
       "verify_notes": "Height 47.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 655
+      "girth_cm": 655,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/G337/PR/08",
+        "url": null
+      }
     },
     {
       "id": "prm_002",
@@ -102,7 +106,11 @@
       },
       "height_m": 17.0,
       "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 464
+      "girth_cm": 464,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 05/G337/PR/08",
+        "url": null
+      }
     },
     {
       "id": "prm_003",
@@ -135,7 +143,11 @@
       },
       "height_m": 37.5,
       "verify_notes": "Height 37.5 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 382
+      "girth_cm": 382,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/G337/PR/08",
+        "url": null
+      }
     },
     {
       "id": "prm_004",
@@ -175,7 +187,11 @@
       },
       "height_m": 16.0,
       "verify_notes": "Height 16.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 370
+      "girth_cm": 370,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 04/G337/PR/08",
+        "url": null
+      }
     },
     {
       "id": "prm_005",
@@ -216,7 +232,11 @@
       },
       "height_m": 25.0,
       "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 420
+      "girth_cm": 420,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/G337/PR/08",
+        "url": null
+      }
     }
   ]
 }
