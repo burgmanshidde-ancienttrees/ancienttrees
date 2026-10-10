@@ -8,6 +8,8 @@ Rung 2 checked: the red deploy was Houston's "hidden gem" source, already fixed 
 
 Then Copenhagen batch 2 (7 more: register record, three girths/heights; cop_002 and cop_004 pins have no evidence; the verify agent noted the Palm House is under renovation per the Natural History Museum, so cop_002's paid-entry line needs a check) and Chicago (12 trees: Forest Preserves of Cook County Champion Tree Register ids plus girth and height converted from inches/feet for chi_007 to chi_017, Illinois Big Tree Register ids and measurements for chi_004/005). fpdcc.com and the Edgebrook golf page return a Cloudflare challenge, so chi_004/005 access (golf green fee) stays unconfirmed and needs a session with a browser. chi_001/002/003/006 have no pin or register evidence. preflight 0 problems.
 
+Nara: thin yield. One register record added (nra_006 Kasuga Taisha nagi, Nara City's own page for that tree); 21 gaps dead-ended. nra_003's Byakugo-ji camellia only has a line on a list page, so I did not record it as a record. The ministry giant-tree database gives facility points, not trunks, so Nara's pin gaps stay open.
+
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
 
 **What changed:** Hidde approved the board "Collected, and the way back" ("looks good build it"), with his rule: "the photos should always be saved - but if you untick than that photo does not appear on my trees".
