@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, sixth pass) - Sydney enrichment
+
+**Done:** Vailele Moreton Bay Fig (syd_004) now cites Hunter's Hill Council's Significant Tree Register sheet and its 17 m height. Preflight clean.
+**Left open:** six other trees found no authority record or measurement (Fairfield, NSW heritage hosts return 403 or a WAF challenge: candidates for the fetch blocklist). The agent flagged the Quad Jacaranda and Wishing Tree as replacements; both pages already say so in their first lines, so nothing to change.
+
 ## 2026-10-10 (night run, fifth pass) - Portland enrichment
 
 **Done:** Portland Heritage Tree register ids on ptl_011 to ptl_020 (matched by coordinate within 14 m), autumn-colour best_time on the two Powell Park red oaks. Preflight clean.
