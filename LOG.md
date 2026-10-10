@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Rainer Lippert's photographs on twelve German trees
+
+**Done:** Rainer Lippert (monumentale-eichen.de) answered our ask: "Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link." Twelve German trees that had no photograph now carry his lead photo, self-hosted at 500/1000/1280, credited "Rainer Lippert" with the name linking to his page for that tree (licence string "Provided by ... with permission, credit required", the Ingar Sørensen pattern). Six were trees whose entries already cited his page (Stapel, Adam und Eva, Jenischpark hollow oak, Bäreneiche, Hunneneiche, Volkenrodaer Königseiche); six were matched on his own caption naming the tree and place (Hüter des Feldes, Kaditzer Linde, Obermarbach lime, Hindenburglinde, Dicke Linde Asbeck, birch-in-oak of the Jenischpark). Every one looked at before approval.
+**Left out on purpose:** pages under "Fremdmeldungen" (reports he received, the photo may not be his), historic photos credited to others, and candidates whose caption names the city but not our spot (Sacrow, Bassinplatz, Schwanheim, Nuremberg, Dresden). The Sauerbusch page had no large photo.
+**Next:** 78 German oaks and limes still have no photograph; his 2,882 pages may hold more of them under names a caption search does not catch.
+
 ## 2026-10-10 (session) - Every overlay is one sheet, on the app and the website
 
 **What changed:** Hidde approved the board "One sheet for every overlay" ("ok build") after asking for one consistent, reusable design ("make it a component"). The audit behind it counted 27 small overlays in the app and 13 on the website, in four green buttons, three reds, three backdrops and fixed heights that cut buttons off on a small phone.
