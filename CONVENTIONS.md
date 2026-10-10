@@ -3280,3 +3280,9 @@ Hidde: "the cards are not like instagram - like 9 trees in rows of 3 i think tha
 
 **And then a city on every tile, as a small white pill (Hidde, 2026-10-09: "de your tree tags slaan eigenlijk nergens meer op gebruik die tags toch maar om aan te geven welke stad").** The pill that said "Your tree" now says where the tree stands; the country chips above lost their icons on the app to match the web, where they never had any.
 
+
+## Corners: square in an edge-to-edge grid, rounded on a floating card (2026-10-10)
+
+**Looked up:** Apple Photos (iOS 18) and Instagram's profile, from memory on the day, not re-read; Hidde asked whether square tiles beside rounded cards on one page is benchmarked. Photos puts both on one scroll: the library grid at the top is square and touches the screen edges, the collections below are rounded cards inside a margin. Instagram's profile does the same: square grid, rounded everything floating above it. The App Store and Airbnb only float cards, so everything there is rounded.
+
+**What we take:** a grid that runs edge to edge, tiles a hairline apart, has square corners (rounding at 2 points apart leaves notches at every join); anything inside the page margins is rounded. On Discover: tree, island, record, list and stream tiles square and edge to edge; the season hero, place cards, walk cards, the growing card, species pills and tags rounded. A tile grid drawn WITH a margin and square corners breaks the rule, which is what the D3 mockup did and the app corrected.
