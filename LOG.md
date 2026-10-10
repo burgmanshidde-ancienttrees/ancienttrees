@@ -2,7 +2,9 @@
 
 <!-- archive-index -->
 
-## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge
+## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
+
+- **Dubrovnik:** 4 of 4 touched: county protected-nature page as the register record for the Trsteno planes (monument of park architecture, 1951), arboretum entry prices and hours for the three Trsteno trees. Pins and measurements stay open: the arboretum is a garden, not a small site, and the only figures found (565 cm "diameter") are implausible.
 
 **Rung:** enrichment (health: only the iOS app run red, not fixable here). Visits last 7 days: 1,565 visits, 2,063 page views.
 - **Leeuwarden:** 7 of 16 improved: LRMB register ids for lee_008, lee_036, lee_037; heights and girths from the register's own records for lee_008, 015, 020, 037 (015's southern beech is recorded felled in 2026, so the page may need a life check); autumn colour on lee_036, July lime flowering on lee_025 and lee_026. lee_036's small-site pin was refused by apply (no source URL); pins for lee_022 to 026 stay open, Overpass returned 500 twice.
