@@ -2686,6 +2686,116 @@ def _ph_ours():
     return " AND ".join(clauses), cfg
 
 
+def app_builder_section(today):
+    """The app as a builder reads it: one table, this week against the week
+    before, the chain from arriving to standing in front of a tree.
+
+    Hidde, 2026-10-10: "how to read these numbers as an app builder who'd love
+    to make it big", then "how do we make sure we know 2" (whether a first visit
+    does the thing the app is for) and "yes I'd like that block in the digest".
+    Each row is one link of the chain, and the weakest link is the work:
+
+    - New phones: first event this week. An install id, so a reinstall counts.
+    - First day: of the phones new in that week, measured over their first 24
+      hours only, what share opened a tree, opened one NEAR them (within 25 km
+      of their last fix, `near` on tree_opened, sent from 2026-10-10), allowed
+      location (`location`, same date), tapped Take me there, collected a tree.
+    - Back within a week: of the phones that arrived a week earlier still, the
+      share seen again on days 1 to 7 after their first day.
+    - Trees collected: tree_visited plus trees people added themselves, the
+      north star in numbers, a person standing in front of a tree.
+
+    Our own testing is cut exactly as in the app table. At these volumes a row
+    is a handful of phones, so the table says how many and never a trend.
+    """
+    key = os.environ.get("POSTHOG_READ_KEY")
+    if not key:
+        return None
+    project, _why = _ph_project(key)
+    if not project:
+        return None
+    ours, _cfg = _ph_ours()
+    where = ("WHERE " + ours) if ours else ""
+    and_ours = ("AND " + ours) if ours else ""
+
+    first = "SELECT distinct_id, min(timestamp) AS first FROM events %s GROUP BY distinct_id" % where
+
+    def cohort(a, b):
+        # Phones first seen between a and b days ago, their first 24 hours.
+        r = _posthog("""
+            SELECT count(), countIf(op > 0), countIf(nr > 0), countIf(nk > 0),
+                   countIf(lok > 0), countIf(lany > 0), countIf(dir > 0),
+                   countIf(col > 0)
+            FROM (
+              SELECT e.distinct_id AS d,
+                countIf(e.event = 'tree_opened' AND e.properties.tree != 'own') AS op,
+                countIf(e.event = 'tree_opened' AND e.properties.near = 'yes') AS nr,
+                countIf(e.event = 'tree_opened' AND e.properties.near IN ('yes', 'no')) AS nk,
+                countIf(e.event = 'location' AND e.properties.answer = 'allowed') AS lok,
+                countIf(e.event = 'location') AS lany,
+                countIf(e.event = 'directions') AS dir,
+                countIf(e.event IN ('tree_visited', 'sighting_recorded')) AS col
+              FROM events e
+              JOIN (%s) f ON e.distinct_id = f.distinct_id
+              WHERE f.first >= now() - INTERVAL %d DAY
+                    AND f.first < now() - INTERVAL %d DAY
+                    AND e.timestamp < f.first + INTERVAL 1 DAY
+              GROUP BY e.distinct_id)
+            """ % (first, a, b), key, project)
+        return [int(v or 0) for v in r[0]] if r else [0] * 8
+
+    def back(a, b):
+        r = _posthog("""
+            SELECT count(), countIf(again > 0)
+            FROM (
+              SELECT e.distinct_id AS d,
+                countIf(toDate(e.timestamp) > toDate(f.first)
+                        AND e.timestamp < f.first + INTERVAL 8 DAY) AS again
+              FROM events e
+              JOIN (%s) f ON e.distinct_id = f.distinct_id
+              WHERE f.first >= now() - INTERVAL %d DAY
+                    AND f.first < now() - INTERVAL %d DAY
+              GROUP BY e.distinct_id)
+            """ % (first, a, b), key, project)
+        return [int(v or 0) for v in r[0]] if r else [0, 0]
+
+    def collected(a, b):
+        r = _posthog("""
+            SELECT count() FROM events
+            WHERE (event = 'tree_visited'
+                   OR (event = 'sighting_recorded' AND properties.known_tree = 'no'))
+                  AND timestamp >= now() - INTERVAL %d DAY
+                  AND timestamp < now() - INTERVAL %d DAY %s
+            """ % (a, b, and_ours), key, project)
+        return int(r[0][0] or 0) if r else 0
+
+    # This week's arrivals are measured up to yesterday, so each has had a full
+    # first day; the week before is the same seven days shifted back.
+    now_c, prev_c = cohort(8, 1), cohort(15, 8)
+    now_b, prev_b = back(15, 8), back(22, 15)
+    now_t, prev_t = collected(7, 0), collected(14, 7)
+
+    def pct(part, whole):
+        return "-" if not whole else "%d of %d (%.0f%%)" % (part, whole, 100.0 * part / whole)
+
+    rows = [
+        ("New phones", str(now_c[0]), str(prev_c[0])),
+        ("First day: opened a tree", pct(now_c[1], now_c[0]), pct(prev_c[1], prev_c[0])),
+        ("First day: opened a tree near them", pct(now_c[2], now_c[3]), pct(prev_c[2], prev_c[3])),
+        ("First day: allowed location", pct(now_c[4], now_c[5]), pct(prev_c[4], prev_c[5])),
+        ("First day: Take me there", pct(now_c[6], now_c[0]), pct(prev_c[6], prev_c[0])),
+        ("First day: collected a tree", pct(now_c[7], now_c[0]), pct(prev_c[7], prev_c[0])),
+        ("Back within a week", pct(now_b[1], now_b[0]), pct(prev_b[1], prev_b[0])),
+        ("Trees collected (all phones)", str(now_t), str(prev_t)),
+    ]
+    out = ["**The app as a builder reads it** (this week against the week before; the weakest row is the work)", "",
+           "| Link | This week | Week before |", "|---|---|---|"]
+    out += ["| %s | %s | %s |" % r for r in rows]
+    out.append("- Near and location count only phones on a version that sends them (from 2026-10-10); a dash means none yet.")
+    out.append("- Back within a week looks at the phones that arrived a week earlier, so each has had its seven days.")
+    return "\n".join(out)
+
+
 def app_section(today):
     """What people did in the APP, and it is its own table on Hidde's ruling
     (2026-08-30, "eigen tabel").
@@ -3260,6 +3370,7 @@ def main():
     block(feedback_section, today)
     block(funnel_section, today, token)
     block(app_section, today)
+    block(app_builder_section, today)
     block(app_store_section, today)
 
     gsc_latest = None

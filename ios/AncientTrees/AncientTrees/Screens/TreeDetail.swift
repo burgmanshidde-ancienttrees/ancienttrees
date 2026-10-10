@@ -508,7 +508,15 @@ struct TreeDetail: View {
                     date: m.date)
                 shareImage = drawn
             }
-            Measure.event("tree_opened", ["tree": mine == nil ? tree.id : "own"])
+            // `near`: within 25 km of the last fix this phone had, yes, no or
+            // unknown, and never the fix itself (2026-10-10). It tells a first
+            // visit that found a tree to walk to from one browsing Lisbon from
+            // a sofa in Ohio, which is the difference between the product
+            // happening and a catalogue being read.
+            let near = LocationProvider.remembered.map {
+                Geo.km($0, (lat: tree.lat, lng: tree.lng)) <= 25 ? "yes" : "no"
+            } ?? "unknown"
+            Measure.event("tree_opened", ["tree": mine == nil ? tree.id : "own", "near": near])
             if let m = mine, minePlace == nil, geocodedPlace == nil {
                 let marks = try? await CLGeocoder()
                     .reverseGeocodeLocation(CLLocation(latitude: m.lat, longitude: m.lng))

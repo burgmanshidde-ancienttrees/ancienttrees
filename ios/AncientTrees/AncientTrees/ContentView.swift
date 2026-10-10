@@ -1079,6 +1079,14 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
     }
 
     func locationManagerDidChangeAuthorization(_ m: CLLocationManager) {
+        // The answer to the one-shot dialog, sent once, the moment it is given
+        // (2026-10-10, measuring a first visit): a phone that never allows
+        // location cannot be shown a tree near it, which is the whole product.
+        let was = status
+        if was == .notDetermined, m.authorizationStatus != .notDetermined {
+            let ok = m.authorizationStatus == .authorizedWhenInUse || m.authorizationStatus == .authorizedAlways
+            Measure.event("location", ["answer": ok ? "allowed" : "denied"])
+        }
         status = m.authorizationStatus
         if status == .authorizedWhenInUse || status == .authorizedAlways {
             m.startUpdatingLocation()
