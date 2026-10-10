@@ -291,9 +291,10 @@
       "story": "Bologna's botanical garden traces its founding to 1568, when the naturalist Ulisse Aldrovandi established it as one of the earliest such gardens anywhere in Europe, decades before ginkgo itself had even reached the continent. This specimen, an old female tree with a trunk 80cm across, came later, among the first ginkgos planted anywhere in Italy after the species reached European cultivation in the 18th century, brought from a mountainous pocket of southeast China where it had survived, essentially unchanged, for some 200 million years. It now dominates the garden's front section along Via Irnerio, included on the Emilia-Romagna region's own list of protected monumental trees for its size and age within a collection built primarily around gymnosperms, cone-bearing trees, from across Europe and Asia. Ginkgo biloba is famously resistant to disease, pollution and even fire in a way few other large trees can match, a resilience this specimen shares with every ginkgo on this list without needing any specific incident to prove it.",
       "verified_sources": [
         "https://ortobotanicobologna.wordpress.com/1-giardino-anteriore/",
-        "https://ortobotanicobologna.wordpress.com/g-come-ginko-e-b-come-banano/"
+        "https://ortobotanicobologna.wordpress.com/g-come-ginko-e-b-come-banano/",
+        "https://sma.unibo.it/it/il-sistema-museale/orto-botanico-ed-erbario"
       ],
-      "access": "Small entry fee, Orto Botanico ed Erbario",
+      "access": "Free entry to the Orto Botanico (booking online is optional). Open Tuesday to Sunday and holidays: 9:00 to 15:00 from 1 October to 31 March, 10:00 to 18:00 from 1 April to 30 September, last entry 30 minutes before closing. Closed non-holiday Mondays, 1 January, 1 May, 15 August, 24 and 25 December; access can be limited after heavy rain, snow or strong wind.",
       "transport": "10 min walk from Piazza Maggiore",
       "photo": {
         "url": null,
@@ -369,7 +370,13 @@
       "curation_status": "flagged",
       "notes": "Callisto Ghigi planting attribution and general park history from a dedicated local-press feature; dimensions (159cm diameter, 24m height) and lightning-damage detail from the tree's own Wikimedia Commons category structured data. No individual planting date documented. Photo found 2026-07-28, correctly inside the dedicated 'Villa Ghigi (Bologna) - Cedro dell'Himalaya' Commons category this entry already cites as a source (unlike the earlier search-surfaced candidates that turned out to be the Vallerano mixup, flagged and avoided). Viewed directly: a single large Cedrus deodara with the species' characteristic drooping habit, standing on an open lawn behind the same split-rail wooden fence visible in the park's other confirmed photos, with a hilltop villa in the distance, matching the story's own description of its position on the open lawn. Approved. Location confirmed 2026-07-27: an OpenStreetMap tree node tagged `denotation=natural_monument` with a MASAF national-registry reference (`ref:masaf=08/A944/BO/08`) and the same Commons category name, resolving the Vallerano mixup: this node is unambiguously the Bologna specimen, not the same-species tree elsewhere.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by dominating the open meadow in front of the villa, with visible lightning-strike scarring on part of its crown. It stands in the Parco di Villa Ghigi."
+      "how_to_recognise": "You can recognise it by dominating the open meadow in front of the villa, with visible lightning-strike scarring on part of its crown. It stands in the Parco di Villa Ghigi.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 08/A944/BO/08",
+        "url": null
+      },
+      "girth_cm": 500,
+      "height_m": 24
     },
     {
       "id": "bol_010",
@@ -419,9 +426,10 @@
       "verified_sources": [
         "Emilia-Romagna regional monumental trees register (Cedro dell'Atlante file adjacent; walnut sheet locality Via Irnerio, girth 420cm, height 32.5m, urban)",
         "https://sestopotere.com/salvate-il-noce-cenerino-lalma-mater-lancia-un-progetto-speciale-per-la-cura-del-suo-albero-monumentale/",
-        "https://visitupbologna.com/2025/02/18/noce-cenerino-il-progetto-di-salvaguardia-nellorto-botanico-di-bologna/"
+        "https://visitupbologna.com/2025/02/18/noce-cenerino-il-progetto-di-salvaguardia-nellorto-botanico-di-bologna/",
+        "https://sma.unibo.it/it/il-sistema-museale/orto-botanico-ed-erbario"
       ],
-      "access": "Small entry fee, Orto Botanico ed Erbario",
+      "access": "Free entry to the Orto Botanico (booking online is optional). Open Tuesday to Sunday and holidays: 9:00 to 15:00 from 1 October to 31 March, 10:00 to 18:00 from 1 April to 30 September, last entry 30 minutes before closing. Closed non-holiday Mondays, 1 January, 1 May, 15 August, 24 and 25 December; access can be limited after heavy rain, snow or strong wind.",
       "transport": "10 min walk from Piazza Maggiore",
       "photo": {
         "url": null,
@@ -436,7 +444,11 @@
       "verify_notes": "Height 32.5 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
       "girth_cm": 420,
-      "how_to_recognise": "You can recognise it by its height, 32 metres, over a trunk more than four metres round. It stands close to the ginkgo in the botanical garden's front section."
+      "how_to_recognise": "You can recognise it by its height, 32 metres, over a trunk more than four metres round. It stands close to the ginkgo in the botanical garden's front section.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 15/A944/BO/08",
+        "url": null
+      }
     },
     {
       "id": "bol_012",
