@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, fourth pass) - Ottawa enrichment
+
+**Done:** Mound Elm (ott_020) now cites the NCC Remarkable Trees register entry (id 134); the Dawn Redwood (ott_016) has an autumn-colour best_time. Preflight clean.
+**Left open:** no tree-level measurements exist for the other 18 (register and compendium give only species maxima); recorded as dead ends for 90 days. Agent left ~77 MB of scratch in out/enrich/tmp_ott (untracked).
+
 ## 2026-10-10 (night run, third pass) - Monterey enrichment
 
 **Done:** Moon Tree of Friendly Plaza (mty_003) now carries NASA's own Moon Trees record and the NASA coordinate as its pin (about 50 m from the old one). Preflight clean.
