@@ -360,7 +360,7 @@ struct CollectView: View {
     /// and picture" all along. So the name is text again, everything else moved
     /// into the list below, and the whole width of this row is grab.
     private var sheetHeader: some View {
-        whoYouAre
+        header
             .padding(.horizontal, 20)
             .padding(.bottom, 12)
     }
@@ -598,7 +598,7 @@ struct CollectView: View {
                     // world, and a globe showing four trees in one park is a
                     // dot.
                     yourMap
-                    whoYouAre
+                    header
                     if Self.statsStyle == nil { statsCard }
                     stampCard
                 }
@@ -856,6 +856,78 @@ struct CollectView: View {
     /// Followers are the other half of that reference and are not built:
     /// following is other people's data about each other, which is a bigger
     /// yes than this file may assume.
+    /// Which header: Instagram's under -stats=a, otherwise the current one.
+    @ViewBuilder private var header: some View {
+        if Self.statsStyle == "a" && account.isSignedIn { instaHeader } else { whoYouAre }
+    }
+
+    /// INSTAGRAM'S PROFILE HEADER (Hidde, 2026-10-10: "richting a is ok",
+    /// then "is dit exact hoe insta het doet het lijkt rommelig"): the picture
+    /// large on the left, the three counts spread evenly across the rest of
+    /// the row, each a bold number centred over a small label, and the name on
+    /// its own line under the picture.
+    private var instaHeader: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 16) {
+                ZStack {
+                    Circle().fill(Brand.moss.opacity(0.12))
+                    if let url = profiles.me?.avatar_url, let u = URL(string: url) {
+                        TreePhoto(url: u) { Color.clear }.clipShape(.circle)
+                    } else if let e = profiles.me?.display_name ?? account.email, let first = e.first {
+                        Text(String(first).uppercased())
+                            .font(.brand(30, .black, relativeTo: .title))
+                            .foregroundStyle(Brand.moss)
+                    }
+                }
+                .frame(width: 80, height: 80)
+                .contentShape(.circle)
+                .tapUnlessDragged { editingProfile = true }
+                .accessibilityAddTraits(.isButton)
+                .accessibilityLabel("Change your photo and name")
+                HStack(spacing: 0) {
+                    countColumn(collectedCount, collectedCount == 1 ? "tree" : "trees") { lane = .seen }
+                    countColumn(profiles.followers, "followers") { peopleList = .followers }
+                    countColumn(profiles.following, "following") { peopleList = .following }
+                }
+                .frame(maxWidth: .infinity)
+                .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+            }
+            HStack(spacing: 8) {
+                Text(profiles.me?.display_name
+                     ?? account.email?.split(separator: "@").first.map(String.init)
+                     ?? "Your trees")
+                    .font(.brand(17, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.ink)
+                    .lineLimit(1)
+                if !profiles.myPlaces.isEmpty {
+                    AmbassadorBadge(places: profiles.myPlaces, size: 12)
+                }
+                Spacer(minLength: 0)
+                Button { findingPeople = true } label: {
+                    Image(systemName: "person.badge.plus")
+                        .font(.system(size: 16, weight: .medium))
+                        .foregroundStyle(Brand.ink)
+                        .frame(width: 44, height: 44)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Find people")
+                .accessibilityIdentifier("mytrees-find-people")
+            }
+        }
+    }
+
+    private func countColumn(_ n: Int, _ label: String, tap: @escaping () -> Void) -> some View {
+        Button(action: tap) {
+            VStack(spacing: 1) {
+                Text("\(n)").font(.brand(18, .heavy)).foregroundStyle(Brand.ink)
+                Text(label).font(.caption).foregroundStyle(Brand.inkSoft)
+            }
+            .frame(maxWidth: .infinity, minHeight: 44)
+            .contentShape(.rect)
+        }
+        .buttonStyle(.plain)
+    }
+
     @ViewBuilder private var whoYouAre: some View {
         HStack(spacing: 14) {
             let editable = account.isSignedIn
