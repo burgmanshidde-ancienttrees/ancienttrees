@@ -31,11 +31,167 @@
    "latitude": 53.224004,
    "longitude": 6.569417,
    "reason": "Register (nr 1680047) lists this tree at 'Bloemsingel, kruising Bloemstraat', owner_category 'publiekrechtelijke organisatie' (a public body, not a private individual, unlike the villa lead below) and visitable 'ja'. Distinct from the already-blocked 'Gewone plataan RUG / Hollandse iep' pair (Bloemstraat 36 binnenplaats, ~130m away): that pair sits inside a specific faculty building's inner courtyard, this one is registered at the street intersection itself. This pass found Bloemsingel 1 is a large 1911 educational building (6,078 sqm, 'onderwijsfunctie') right at that corner, but found no source confirming whether the tree stands on open street/plantsoen ground at the intersection or inside that institution's own grounds. Register's 'ja' for visitable is a real signal but not, on its own, the same as a source describing what a visitor would actually meet there. Left as a lead pending either a site-level source (satellite/street view check, or a Groningen tree-inventory record with an exact address) or a future pass with time to look."
+  },
+  {
+   "id": "gro_006",
+   "name": "The Siberian Balsam Poplar of Engelenpoortje",
+   "species": "Siberian Balsam Poplar (Populus x berolinensis)",
+   "age_estimate": "~90 years",
+   "age_min": 86,
+   "age_max": 96,
+   "location": {
+    "address": "Engelenpoortje, between Poelestraat and Nieuwe Markt, Groningen",
+    "latitude": 53.218922,
+    "longitude": 6.569112,
+    "neighbourhood": "Binnenstad"
+   },
+   "story": "This poplar is not a species anyone would find growing wild anywhere. Populus x berolinensis was bred in 1865 in Berlin's botanical garden, a deliberate cross between a Siberian laurel-leaf poplar and the tall, narrow Lombardy poplar, made for exactly the trait it shows here, height with a narrow enough crown to survive in a gap between buildings barely wider than the tree itself.\n\nIt grows at the Engelenpoortje, a seventeenth-century gated alley named for a long-vanished inn, De Blauwe Engel, that once stood on the corner. The alley has not had a settled recent history: redevelopment around Groningen's Grote Markt closed it to the public in 2012, and it stayed shut for eight years before reopening at the end of 2020. Whether this poplar, which the register dates to the 1930s, stood through that closure without anyone walking past it is not recorded, though a cross this vigorous would have lost little from eight quiet years. It stands today between the shops and houses the alley threads between, free to walk past on the way from Poelestraat to the Nieuwe Markt, exactly as the seventeenth-century gate always intended.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (nr 1680039)",
+    "https://nl.wikipedia.org/wiki/Engelenpoort_(Groningen)",
+    "https://nl.wikipedia.org/wiki/Populus_%C3%97_berolinensis"
+   ],
+   "access": "Free, public alley, open at any time",
+   "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "how_to_recognise": "You can recognise it by its tall, narrow crown, bred to fit into a gap between buildings barely wider than the tree itself. It stands in the Engelenpoortje alley, between Poelestraat and Nieuwe Markt.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1680039 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "gro_008",
+   "name": "The Chestnut of Prinsentuin",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "~170 years",
+   "age_min": 166,
+   "age_max": 176,
+   "location": {
+    "address": "Prinsentuin, entrance on Turfsingel, Groningen",
+    "latitude": 53.221208,
+    "longitude": 6.569052,
+    "neighbourhood": "Binnenstad"
+   },
+   "story": "The Prinsentuin has been walled off from the rest of Groningen since 1626, when it was laid out as a private pleasure garden for the region's stadholders, and the wall is still what makes it feel like a secret in the middle of a busy city centre. Visitors reach it through a gate on the Turfsingel topped with a working sundial from 1731, accurate enough to mark day length and sunrise and sunset as well as the hour, or through a smaller door on Kattenhage. Entry is free and has been for as long as records go back.\n\nThis horse chestnut, which the tree register dates to around 1850 to 1860, is not part of the garden's original seventeenth-century planting, arriving roughly two centuries after the walls went up, but it has still had well over 150 years inside them. Horse chestnut is not native to the Netherlands, imported from the Balkans as an ornamental tree from the sixteenth century onward, and this one has grown up sheltered from wind and street salt by walls built for a stadholder's roses rather than for any tree. It stands in the open garden, free, daily until sunset, a short walk from Martinikerkhof.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (nr 1680036)",
+    "https://en.wikipedia.org/wiki/Prinsentuin_(Groningen)"
+   ],
+   "access": "Free, public walled garden, open daily until sunset",
+   "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
+   "photo": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Groningen_Prinsentuin_april04.jpg",
+    "license": "CC BY-SA 3.0",
+    "attribution": "The original uploader was Fruggo at Dutch Wikipedia, via Wikimedia Commons",
+    "status": "approved",
+    "width": 640,
+    "height": 480
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "label": "May, when it flowers",
+    "kind": "flowers"
+   },
+   "how_to_recognise": "You can recognise it by growing inside the walled Prinsentuin garden, reached through the gate topped with a working 1731 sundial. It stands in the Prinsentuin, entrance on Turfsingel.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1680036 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"De kastanje is in het voorjaar van 2015 gekapt ivm de kastanjebloedingsziekte en vervangen door een 25 jr oude rode beuk.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "gro_009",
+   "name": "The Chestnut of Akerkhof",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "~140 years",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Akerkhof, around the Akerk church, Groningen",
+    "latitude": 53.216544,
+    "longitude": 6.56166,
+    "neighbourhood": "Binnenstad"
+   },
+   "story": "When Groningen redeveloped the Akerkhof a few years ago to fix a square that had gone dark, dry and unloved, the plan called for cutting three trees and clearing scrub around the church to let light back in. This horse chestnut was not one of them. The municipality's own account of the project says its monumental chestnut and linden trees deliberately kept their place and gained more room as the work went on, while three new trees were planted along the redesigned Brugstraat to make up for what came down.\n\nAkerkhof was a real cemetery from the twelfth century until burials inside the city walls were banned on hygiene grounds and the ground was cleared in 1828, which is most of why an open square with old trees exists here at all. This chestnut, dated by the register to around 1880 to 1890, is younger than that clearance but has still stood through the square's dark spell and its recent recovery. It grows in the open around the Akerk church, free to walk past any time, on a square the city now treats as worth protecting rather than merely tolerating.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (nr 1688533)",
+    "https://ruimtevoorjou.groningen.nl/projecten/akerkhof"
+   ],
+   "access": "Free, public square, open at any time",
+   "transport": "Binnenstad, central Groningen; about a 12 minute walk from Groningen Centraal station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "label": "May, when it flowers",
+    "kind": "flowers"
+   },
+   "how_to_recognise": "You can recognise it by the extra room deliberately cleared around it during the square's recent redevelopment. It stands in the open around the Akerk church on Akerkhof.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1688533 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Op ongeveer goede GPS-locatie geplaatst. M. Tijdgat 1-1-2015.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "gro_010",
+   "name": "The Maple of Guyotplein",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "age_estimate": "~130 years",
+   "age_min": 126,
+   "age_max": 136,
+   "location": {
+    "address": "Guyotplein, Groningen",
+    "latitude": 53.221616,
+    "longitude": 6.561876,
+    "neighbourhood": "Binnenstad"
+   },
+   "story": "This sycamore grows on a square named for a man most Dutch schoolchildren have never heard of, Henri Daniel Guyot, a Walloon minister who founded the country's first school for deaf children in Groningen in 1790. The square itself started as the planted west side of the Ossenmarkt, given trees in 1754, and only took Guyot's name in 1890, on the centenary of his institute, by which point this specific tree, dated by the register to around 1890 to 1900, was likely just going into the ground.\n\nA monument to Guyot has stood on the square since 1829, decades before it carried his name, and the deaf institute itself operated here for generations before the building later became Groningen's courthouse. The sycamore has outlasted the institute's departure and watched the square's slow shift from an educational address to a judicial one. Sycamore sheds bark in flaking plates as it ages, closer to a plane tree's trunk than to most other maples, worth a look on this one after more than a century of growth. It stands in the open square, free, a short walk from the city's other historic squares.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (nr 1680044)",
+    "https://nl.wikipedia.org/wiki/Guyotplein"
+   ],
+   "access": "Free, public square, open at any time",
+   "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: winged seeds that spin down in pairs",
+    "kind": "fruit"
+   },
+   "how_to_recognise": "You can recognise it by its bark shedding in flaking plates like a plane tree's, unusual among maples. It stands on Guyotplein, beside the 1829 monument to Henri Daniel Guyot.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1680044 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Removed under the rule that a dead tree is never a collectible entry."
   }
  ],
  "blocked": [
   {
-   "register_nr": [1680064, 1680065],
+   "register_nr": [
+    1680064,
+    1680065
+   ],
    "name": "Gewone plataan RUG / Hollandse iep (pair, adjacent coordinates)",
    "species": "London Plane (Platanus x acerifolia) and Dutch Elm",
    "latitude": 53.223438,

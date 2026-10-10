@@ -1,0 +1,36 @@
+{
+ "leads": [
+  {
+   "id": "ens_012",
+   "name": "The Dutch Elm of Stroinksbleekweg",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "age_estimate": "roughly 140 years, from a registered planting date around 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "girth_cm": null,
+   "location": {
+    "address": "Stroinksbleekweg/Hulsmaatstraat, Roombeek, Enschede",
+    "latitude": 52.234792,
+    "longitude": 6.894964,
+    "neighbourhood": "Roombeek"
+   },
+   "verified_sources": [
+    "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1687605"
+   ],
+   "access": "Free. Stands in a public park strip, no restriction.",
+   "transport": "About 1 km north of Enschede city centre / Enschede railway station, in the Roombeek district; walkable, about 30m from the Silver Lime of Stroinksbleekweg (ens_011).",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "A full-grown elm in a Dutch street is rarer than it looks. The disease that carries the country's name was first described here in the 1920s, named after the Dutch pathologists who worked it out rather than after the tree, and it went on to kill the great majority of the elms in the Netherlands. This one, which the Bomenstichting register dates to between 1880 and 1890, is still standing.\n\nUlmus x hollandica is a cross between wych elm and field elm, and it was the workhorse tree of the Low Countries: planted along dykes, quays and town streets by the thousand because it tolerates wind, salt and heavy clay. Most of that planting is gone. The survivors tend to be single trees in odd corners rather than the avenues they were meant to be.\n\nThe register gives this elm the same 1880 to 1890 band as the silver lime about thirty metres away and calls both monumental. Whether the two went in together is not recorded; the history field for each of them is blank, and the register is the only source that names either. The pair make a short stop about a kilometre north of Enschede station, on the edge of Roombeek, where almost everything else on the street is newer than they are.",
+   "how_to_recognise": "You can recognise it by the leaves, rough as sandpaper and lopsided where they meet the stalk, one side of the base set lower than the other. It stands about thirty metres from the silver lime on the same corner.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1687605 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"0 Gehechte stamvoet, stamwond. Geënt op Ulmus glabra.\" Removed under the rule that a dead tree is never a collectible entry."
+  }
+ ]
+}

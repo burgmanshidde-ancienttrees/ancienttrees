@@ -309,6 +309,281 @@
    "curation_status_note": "flagged for both the age discrepancy and the uncertain specimen match; do not treat the coordinate as more certain than 'this general spot in the Hortus'.",
    "location_precision": "approximate",
    "pulled_from_city": "Published until 2026-08-23, then pulled with four others because a quarter of Amsterdam sat behind a ticket. Hidde: 'ik heb liever 34 goede bereikbare dan 39.' Every fact here was verified; they were removed on reach, not on truth. If one ever becomes freely visitable, or if the page needs it back, the work is done."
+  },
+  {
+   "id": "ams_025",
+   "name": "The Weteringplantsoen Wych Elm",
+   "species": "Wych Elm (Ulmus glabra)",
+   "age_estimate": "about 120 years",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "Weteringplantsoen achter het Van Randwijk-monument, Amsterdam",
+    "latitude": 52.358639,
+    "longitude": 4.891595,
+    "neighbourhood": "Weteringschans, Amsterdam-Centrum"
+   },
+   "story": "Nobody knows when this elm was planted and the register says so outright: history unknown, planting somewhere between 1900 and 1910. What is documented is what stands in front of it. The Van Randwijk monument on the Weteringplantsoen carries the best known line in Dutch resistance writing, Henk van Randwijk's warning that a people which yields to tyrants will lose more than life and property, and then the light goes out. Van Randwijk edited the underground paper Vrij Nederland through the occupation.\n\nThe tree behind the monument is a wych elm, and that is the interesting part of the label. Ulmus glabra is usually counted as the only elm truly native to the Netherlands, and it is highly susceptible to Dutch elm disease, which arrived in the 1920s and worked through the country for the rest of the century. A mature wych elm standing in a Dutch city centre is not a common thing. This one is around 120 years old, so it was here before either world war and has stood through both.\n\nIt sits in a strip of grass and gravel between the Weteringschans and the water, the sort of triangle a city ends up with where two roads fail to meet cleanly. Free, always open, and a few minutes' walk from the Rijksmuseum. Three more trees on this list stand within two minutes of it.",
+   "verified_sources": [
+    "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686109: Ruwe iep, Weteringplantsoen achter het Van Randwijk-monument, Amsterdam, planting band 1900-1910, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
+    "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+    "https://www.monumentalebomen.nl"
+   ],
+   "access": "Free, public planting, always open.",
+   "transport": "Tram to Weteringcircuit, the stop is beside the plantsoen",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "girth_cm": 357,
+   "how_to_recognise": "Directly behind the Van Randwijk monument on the grass strip, 3.6 metres round, and the only mature wych elm in this group.",
+   "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686109",
+    "url": null
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1686109 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ams_026",
+   "name": "The Weteringplantsoen Ginkgo",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "age_estimate": "about 110 years",
+   "age_min": 106,
+   "age_max": 116,
+   "location": {
+    "address": "Verkeersplein Weteringplantsoen, Amsterdam",
+    "latitude": 52.359273,
+    "longitude": 4.89092,
+    "neighbourhood": "Weteringschans, Amsterdam-Centrum"
+   },
+   "story": "There is a ginkgo growing on a traffic island on the Weteringschans, and it is the least likely thing on this list. The species is around 200 million years old, older than the flowering plants, and it survives in the wild in a handful of Chinese valleys. Its Dutch name, tempelboom, records how it got through: monks planted it in temple grounds and kept it going while it disappeared everywhere else. This one lives between lanes of traffic.\n\nAmsterdam put it in somewhere between 1910 and 1920 and the register records no history for it whatsoever, which suits a tree that simply gets on with things. Ginkgo tolerates exactly the conditions that kill other street trees: compacted soil, road salt, exhaust, root space measured in single square metres. Several ginkgos within two kilometres of the Hiroshima hypocentre survived the bomb and are still growing.\n\nCome in November. For eleven months this is a green tree with odd fan-shaped leaves that people walk past without a glance. Then over about a week the whole crown turns a flat saturated gold, and then it drops the lot, often in a day or two, leaving a gold ring on the tarmac around it. Traffic islands rarely get a moment like that.\n\nFree, always visible, and easy to miss for most of the year. The wych elm, the leaning poplar and the plane are all a minute or two away.",
+   "verified_sources": [
+    "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686108: Tempelboom, Verkeersplein Weteringplantsoen, Amsterdam, planting band 1910-1920, reason for protection 'monumentaal', owner gemeente, recorded as visitable",
+    "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location",
+    "https://www.monumentalebomen.nl"
+   ],
+   "access": "Free, on the public traffic island, always visible.",
+   "transport": "Tram to Weteringcircuit, the stop is beside the tree",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     11
+    ],
+    "kind": "autumn colour",
+    "label": "mid November, when the fans turn gold and drop within days"
+   },
+   "girth_cm": 391,
+   "how_to_recognise": "On the traffic island itself, 3.9 metres round, with fan-shaped leaves in two lobes; in November it drops the whole gold crown onto the tarmac within a day or two.",
+   "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686108",
+    "url": null
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1686108 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Niet meer aanwezig. 3 juli 2000.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ams_031",
+   "name": "The Wertheimpark Sycamore",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "age_estimate": "about 110 years",
+   "age_min": 106,
+   "age_max": 116,
+   "location": {
+    "address": "Achter Wertheimmonument, Wertheimpark, Amsterdam",
+    "latitude": 52.368249,
+    "longitude": 4.9092,
+    "neighbourhood": "Plantage, Amsterdam-Centrum"
+   },
+   "story": "A sycamore is the most ordinary large tree in northern Europe, which makes it worth asking why this one sits on the national register for dendrological reasons rather than for history or memorial value. The register does not say. Under history it writes: unknown. Somebody with a measuring tape decided this specimen was exceptional enough to protect and left it at that.\n\nIt stands behind the monument to Abraham Carel Wertheim, the banker and philanthropist the park was named after in 1898, a year after his death. The tree went in between 1910 and 1920, so it is around 110 years old and has spent every year of it a few metres behind that monument.\n\nAcer pseudoplatanus is a maple that acquired the English name sycamore, which it shares with an unrelated American plane, and the confusion has never been cleared up. It seeds itself into every gap in every European city, grows anywhere, and if nothing interferes it can pass four hundred years, which makes 110 barely adulthood. The species is so common that a good specimen tends to be overlooked, which is roughly what happened here until the register caught up with it.\n\nFree, in a park of three quarters of a hectare holding around fifteen trees over a century old. Go and see whether you can work out what the surveyor saw.",
+   "verified_sources": [
+    "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1686154: Gewone esdoorn, Achter Wertheimmonument, Wertheimpark, Amsterdam, planting band 1910-1920, reason for protection 'dendrologisch', owner gemeente, recorded as visitable",
+    "Gemeente Amsterdam monumental-trees walking booklet, centre-of-town selection, supplied with written permission 2026-08-18; joined to the national register on location"
+   ],
+   "access": "Free, public park.",
+   "transport": "Tram 14 to Artis, about 3 min walk",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: winged seeds that spin down in pairs",
+    "kind": "fruit"
+   },
+   "girth_cm": 336,
+   "how_to_recognise": "Directly behind the Wertheim monument, 3.4 metres round, and ordinary enough that the register never wrote down what the surveyor saw in it.",
+   "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686154",
+    "url": null
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1686154 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Open kroon.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ams_033",
+   "name": "The White Poplar of Broersepark",
+   "species": "White Poplar (Populus alba)",
+   "age_estimate": "roughly 160 years, from a registered planting date around 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "Aan de vijver zuidzijde Broersepark, Amstelveen",
+    "latitude": 52.305796,
+    "longitude": 4.848439,
+    "neighbourhood": "Amstelveen"
+   },
+   "story": "The register that protects this poplar says plainly that it is no longer impressive. Its own entry drops the word monumental and then keeps the tree on the list for one reason: with a planting recorded between 1860 and 1870, it is probably the oldest thing growing in the Broersepark.\n\nThe park in Amstelveen is much younger than that. It was designed in 1926 and laid out over the following years as a Wandelpark, a place made for walking, and only in 1967 took the name of Chris P. Broerse, the garden man who had worked there since the first season. On the dates in its file the poplar was already sixty years old before anyone drew a line on the plan. Nobody wrote down who put it there.\n\nIt wears the years openly. The crown has been knocked about, the trunk leans, and the root plate has lifted enough to raise a hump at the foot. In 1999 honey fungus, a wood-rotting parasite, turned up at the base, and the condition has been rated moderate ever since. What it still does as well as anything younger is the trick white poplars are named for: a gust turns the leaves over and the whole crown flickers silver.\n\nYou will find it on the south side of the park, at the edge of the pond. Only the national register describes this tree, so if you know more of its story, tell us.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public park, open daily.",
+   "transport": "",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "how_to_recognise": "On the south side of the park at the edge of the pond, leaning, with the root plate lifted into a hump at its foot; a gust turns the whole crown silver.",
+   "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690752",
+    "url": null
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1690752 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Nabij Torerobeeld. Honingzwamvruchtlichaam aan de stamvoet, jaarlijkse controle is gewenst, 20 dec 1999.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ams_036",
+   "name": "The Poplar of the Eleanor Rooseveltlaan",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "Voor makelaarskantoor,Eleanor Rooseveltlaan 255, straat van messina, Amstelveen",
+    "latitude": 52.31588,
+    "longitude": 4.872811,
+    "neighbourhood": "Amstelveen"
+   },
+   "story": "Hardly anyone lets a Canadian poplar reach this age. The register puts this one's planting between 1900 and 1910, which makes it about 120, and the species is normally out of the ground long before that.\n\nPopulus x canadensis is a hybrid of an American poplar and a European one, bred for speed, and it went into the Dutch landscape in enormous numbers along roads, dykes and field edges. It makes height in a decade and shelter in two. What it does not make is old bones: the wood is soft, heavy limbs come out in a gale, and most street poplars are taken down at fifty or sixty on exactly that reasoning. This one is still standing in a strip of municipal garden on the Eleanor Rooseveltlaan in Amstelveen. Roosevelt herself was a young woman in New York when it was planted.\n\nThe register knows nothing else about it. Under the tree's own history it records a single word: unknown. Nobody wrote down who put it there, or why a fast nursery hybrid on a suburban corner was left alone long enough to end up on a national list of monumental trees. If you know that story, tell us.\n\nCome on a windy day. Poplar leaves hang on flattened stalks that let them twist edge-on to a gust, so a crown this size does not rustle so much as pour.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, a small public municipal garden.",
+   "transport": "",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "how_to_recognise": "In the small strip of municipal garden on the corner, an unusually old Canadian poplar; on a windy day the crown pours rather than rustles.",
+   "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690651",
+    "url": null
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1690651 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Beeldbepalende boom voor deze laan. Beschermd en gespaard tijdens bouw v/h gebouw. De kroonprojectie/groeiplaats is gemeente eigendom gebleven. Wordt onderhouden door de gemeente.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ams_037",
+   "name": "The Elm of Elsenhoeve",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "age_estimate": "roughly 100 years, from a registered planting date around 1930",
+   "age_min": 96,
+   "age_max": 106,
+   "location": {
+    "address": "Voor Speelboerderij Elsenhoeve, Bankrasweg 1, Amstelveen",
+    "latitude": 52.297086,
+    "longitude": 4.88895,
+    "neighbourhood": "Amstelveen"
+   },
+   "story": "This elm is alive because somebody injects it, every year. The register's entire note on the tree is one line of Dutch saying exactly that: treated annually against elm disease.\n\nDutch elm disease emptied European streets of a tree that used to define them. The fungus travels from tree to tree in bark beetles and can wilt a mature elm within a season. It is named after the Netherlands not because it began here but because Dutch scientists were the ones who identified the fungus, in the 1920s, which is roughly when this tree went into the ground: the register puts its planting between 1920 and 1930. It has lived its whole life alongside the thing that kills its kind, through a century in which most of Europe's elms disappeared.\n\nUlmus x hollandica is a natural hybrid, wych elm crossed with field elm, and the Amsterdam region is one of the few places in Europe where elms are still an ordinary street tree rather than a rescued specimen. That took decades of felling infected wood, watching for beetles, and precisely the treatment this one gets.\n\nIt stands in front of Speelboerderij Elsenhoeve, a children's farm on the Bankrasweg in Amstelveen, so most of the people underneath it are five years old and looking at goats. The pin marks the garden rather than the trunk, and only the national register describes this tree, so if you know more of it, tell us.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, a small public municipal garden.",
+   "transport": "",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "how_to_recognise": "In front of the Elsenhoeve children's farm. The pin marks the garden rather than the trunk, so look for the elm by the entrance.",
+   "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690654",
+    "url": null
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1690654 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Geplant door vorige bewoner in 1932. Mogelijk oude leivorm. Op ca 3 meter 3 stammig. Vanaf 1999 jaarlijks ingeënt tegen de iepenziekte. In 2002 (okt) werd de iep zwaar beschadigd door de orkaan waarbij een tak van 20 meter werd afgerukt.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "ams_038",
+   "name": "The Red Horse Chestnut of Wilhelminaplein",
+   "species": "Red Horse Chestnut (Aesculus x carnea)",
+   "age_estimate": "roughly 100 years, from a registered planting date around 1930",
+   "age_min": 96,
+   "age_max": 106,
+   "location": {
+    "address": "Wilhelminaplein, Amstelveen",
+    "latitude": 52.309306,
+    "longitude": 4.844711,
+    "neighbourhood": "Amstelveen"
+   },
+   "story": "Half of this tree is American. The red horse chestnut is a cross between the white-flowered chestnut of every Dutch avenue and Aesculus pavia, a red-flowered species from the American southeast, and it turns up in the record in Germany around 1820 with nobody quite able to say who made it.\n\nThe result is the best-behaved chestnut on any street. In May it holds up candles of deep rose-pink rather than white, a little later than its white parent, so a street planted with both appears to flower twice. It sets very few conkers, and the husks it does set have almost no spines, which makes it a disappointing tree for anyone under twelve. In exchange it largely escapes the leaf miner moth that has been browning out Dutch horse chestnuts by August for twenty years now; the caterpillars strongly prefer the white parent, and this hybrid stays green into autumn while its neighbours look scorched.\n\nThis one stands in public planting on the Wilhelminaplein in Amstelveen, with a registered planting somewhere between 1920 and 1930, which puts it at roughly a century old. That is all anybody has written down. The national register's history field for this tree is blank, and no second source describes it at all. If you know who planted it, or what for, tell us and we will add it.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "May, when it carries candles of deep rose-pink instead of white"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public planting, always open.",
+   "transport": "",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "how_to_recognise": "In May it holds candles of deep rose-pink rather than white, and it stays green into autumn while the white chestnuts nearby are browning out.",
+   "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684073",
+    "url": null
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1684073 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Was sterk in conditie achteruit gegaan als gevolg van sloop en nieuwbouw v/d woningen. In 1999 door een jonge boom vervangen.\" Removed under the rule that a dead tree is never a collectible entry."
   }
  ],
  "blocked": [

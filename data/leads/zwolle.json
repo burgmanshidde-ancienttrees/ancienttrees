@@ -18,6 +18,37 @@
    "place": "\"Nu nog weiland\" (still meadow for now), Zwolle",
    "planted_band": "Leeftijd onbekend (age unknown)",
    "reason": "No age at all, register reason is 'potentieel' (candidate for future designation, the lowest tier seen in this register for Zwolle), owner_category unknown, and the place name itself ('still meadow for now') suggests the site may be slated for development rather than being an established, findable spot. No address, no second source found. Too thin to research further within this pass's budget; a future pass with more time could try to place it precisely and check ownership/access."
+  },
+  {
+   "id": "zwo_015",
+   "name": "The Plume Elm of Potgietersingel",
+   "species": "Elm (Ulmus sp., a plume-form cultivar; possibly Ulmus x hollandica)",
+   "age_estimate": "roughly 130 years, from a registered planting date around 1900",
+   "age_min": 126,
+   "age_max": 136,
+   "location": {
+    "address": "Potgietersingel, Zwolle",
+    "latitude": 52.509469,
+    "longitude": 6.094311,
+    "neighbourhood": "Potgietersingel"
+   },
+   "story": "The Plume Elm of Potgietersingel does not appear on Zwolle's own list of protected trees. The municipality's 2015 survey of the city's special trees names nineteen elms across town and catalogues the rest of this exact park strip in detail, its maples, oaks, planes and even a tree of heaven, and still skips this one. The only record of it at all is the national Landelijk Register Monumentale Bomen, which dates the planting to around 1900 and calls it a Pluimiep, Dutch for plume elm, after its narrow, weeping crown. The register is not settled on what species it actually is: one entry names Ulmus x hollandica, a duplicate entry backs off to Ulmus sp. Dutch elm disease has killed most of the country's old elms since the 1970s, which makes a plume-form specimen from around 1900 still standing, in a public strip the city owns and leaves open at all hours, worth more attention than its own municipality has given it. It stands about a hundred and twenty metres from the park's Copper Beech, part of the same walk. Nobody has settled the exact cultivar, and the page would welcome someone who can.",
+   "how_to_recognise": "You can recognise it by the narrow, plume-shaped crown, unlike the broader elms elsewhere in the city. It stands in the park strip at Potgietersingel, about 120 metres from the Copper Beech by the Fountain.",
+   "verified_sources": [
+    "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1689103"
+   ],
+   "access": "Free. Stands in the public park strip at Potgietersingel (gemeente-owned), open at any time; about 120m from the Copper Beech by the Fountain (zwo_006), so it joins that same walk.",
+   "transport": "About 700 m north of Zwolle station, same stop as the Van Nahuysplein cluster.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1689103 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"schouw 9 juli 1996. Op de entplaats gemeten. Niet meer aanwezig? 3 feb 2007. Bij laatste schouw Niet gevonden 09-12-2011, JD\" Removed under the rule that a dead tree is never a collectible entry."
   }
  ],
  "blocked": [

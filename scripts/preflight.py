@@ -2667,8 +2667,14 @@ def check_register_says_the_tree_is_gone():
         with open(path, encoding="utf-8") as fh:
             doc = json.load(fh)
         for t in doc.get("trees", []):
-            for src in t.get("verified_sources") or []:
-                m = re.search(r"entry nr (\d+)", str(src))
+            # Three citation shapes exist: "entry nr N" (original passes),
+            # "register nr N" and the enrich pass's official_register name
+            # "... no. N". Only the first was read until 2026-10-10, when 45
+            # felled trees turned out to cite the other two.
+            cites = [str(s) for s in t.get("verified_sources") or []]
+            cites.append(str((t.get("official_register") or {}).get("name") or ""))
+            for src in cites:
+                m = re.search(r"(?:entry nr|register nr|\bno\.)\s*(\d{7})", src)
                 if not m or m.group(1) not in dead:
                     continue
                 out.append(

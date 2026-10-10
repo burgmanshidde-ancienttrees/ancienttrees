@@ -23,6 +23,76 @@
    "species": "Field Elm, variegated cultivar (Ulmus minor, cultivar unspecified)",
    "location_hint": "LRMB register, approx 52.62788,4.74744, age unknown ('Leeftijd onbekend' per the register's own age field)",
    "why_not_shipped": "A GROUP registration (an ensemble, not obviously one collectible point) with no age recorded and roughly 550-700m from the verified Bolwerken cluster in a different direction (toward Kwerenbolwerk). Not researched this pass given time; worth a second look if the Kwerenbolwerk-area poplars above are ever picked up as a third cluster, since it sits close to them."
+  },
+  {
+   "id": "alk_009",
+   "name": "The Weeping Silver Lime of Scheteldoekshaven",
+   "species": "Weeping Silver Lime (Tilia tomentosa 'Pendula')",
+   "age_estimate": "roughly 90 years",
+   "age_min": 86,
+   "age_max": 96,
+   "location": {
+    "address": "Bolwerk park near Scheteldoekshaven 5",
+    "latitude": 52.631992,
+    "longitude": 4.741533,
+    "neighbourhood": "Bolwerken / Geest"
+   },
+   "verified_sources": [
+    "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1690998",
+    "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Hangende zilverlinde, Tilia tomentosa Pendula, Bolwerk thv Scheteldoekshaven 5, 1930-1940"
+   ],
+   "access": "Free. Public park on the old city rampart (Bolwerk).",
+   "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
+   "location_precision": "confirmed",
+   "curation_status": "ai_generated",
+   "story": "In a strong wind this tree changes colour. The underside of a silver lime's leaf is covered in fine white felt, which is what tomentosa means, so one gust turns a green crown pale grey and the next turns it back.\n\nThis one is the weeping form, Tilia tomentosa 'Pendula', and both the national register and the city's own 2017 list of monumental trees name the cultivar outright. The branches hang rather than reach, so the colour change runs from the top of the crown all the way down, like a curtain being shaken out.\n\nIt stands on the Bolwerk, the belt of old earthworks Alkmaar stopped defending and started walking on. The two sources agree on the decade as well as the species: it went into the ground somewhere between 1930 and 1940, which makes it a young tree with an unusual shape at the point the occupation arrived, and it has held the same spot on the rampart ever since.\n\nBeyond that, nothing. The register's history field for this lime reads onbekend, unknown. Nobody has written down who planted it or why a weeping silver lime was the choice for this corner of the park. If you know, tell us and it goes on the page.",
+   "how_to_recognise": "You can recognise it by the branches hanging straight down in a curtain and by leaves that flash white-grey underneath in the wind. It stands in the rampart park opposite Scheteldoekshaven 5.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1690998 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Geënt op 150 cm.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "alk_014",
+   "name": "The Horse Chestnut behind Koekenbier",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "roughly 120 years",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "About 25 metres into the woods behind restaurant Koekenbier, Kennemerstraatweg",
+    "latitude": 52.626459,
+    "longitude": 4.738035,
+    "neighbourhood": "Alkmaarderhout / Westerhoutpark"
+   },
+   "verified_sources": [
+    "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1689039"
+   ],
+   "access": "Free. Public city park (Alkmaarderhout).",
+   "transport": "Central Alkmaar, roughly 15-20 minute walk or short bus ride from Alkmaar Centraal station",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The national register lists this horse chestnut with almost nothing beside it: no planting date, no note on its history, the field left onbekend, unknown. What is fixed is where it stands, about twenty-five metres into the trees behind restaurant Koekenbier, off the Kennemerstraatweg, on the edge of the Alkmaarderhout.\n\nThe register bands its age at roughly a century and a quarter without saying how that figure was reached, which would put its planting close to the years around 1900 when the landscape architect L.A. Springer rebuilt the park into its present form. That is inference rather than record, and the register does not claim otherwise.\n\nA horse chestnut this size has gone through the same year over and over regardless of what got written down: white candle-shaped flower spikes standing through the crown in May, spiked green conkers splitting on the ground by October. None of that is recorded for this particular tree, only for the species in general.\n\nIt stands roughly a hundred metres from the park's copper beech and about 300 metres from its oldest recorded plane, part of the same walk through the Westerhoutpark. If you know more about it, tell us.",
+   "how_to_recognise": "You can recognise it by the white candle-shaped flowers in May and the spiky green conkers underfoot by October. It stands about twenty-five metres into the woods behind restaurant Koekenbier, off the Kennemerstraatweg.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "May, when it flowers"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1689039 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"In het park op kruispuntje van wandelpaden.\" Removed under the rule that a dead tree is never a collectible entry."
   }
  ],
  "blocked": [

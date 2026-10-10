@@ -107,6 +107,84 @@
    },
    "planted_band": "1890-1900",
    "why_a_lead": "2026-08-31 verify pass. LRMB register only (nr 1688809, n_trees=1, particulier, visitable=onbekend, visible=onbekend, status 3). No independent source found; access genuinely unknown from the register itself, unlike the yew and ginkgo leads above which at least assert visible=ja. Needs a street-view check before it is even worth a second source search."
+  },
+  {
+   "id": "nij_007",
+   "name": "The Black Locust of Krayenhoffpark",
+   "species": "Black Locust (Robinia pseudoacacia)",
+   "age_estimate": "~140 years",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Krayenhoffpark, Nijmegen",
+    "latitude": 51.848602,
+    "longitude": 5.850931,
+    "neighbourhood": "Biezen"
+   },
+   "story": "The Dutch name for this tree translates literally as false Christ's-thorn, a reference to the sharp paired spines that line its young branches, thorns sharp enough that European folklore once linked the species to the biblical crown of thorns despite the tree being a North American import that no one in the region had ever seen before the 17th century. This specimen, dated by the register to around 1880 to 1890, predates its own park: Krayenhoffpark and the railway workers' housing around it were built in the early 20th century, decades after this tree first went into what was then open ground on the edge of the city.\n\nBlack locust fixes nitrogen in the soil through bacteria living on its roots, the same trick clover and beans use, which is part of why it was planted so widely across poor European soils long before anyone understood the chemistry behind why it thrived where other trees struggled. It stands a few steps from the park's hornbeam and its better-known giant sequoia, free, the oldest of the three despite being the least conspicuous.",
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (nr 1688014)"
+   ],
+   "access": "Free, public park, open daily",
+   "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     5,
+     6
+    ],
+    "label": "May to June, when it flowers",
+    "kind": "flowers"
+   },
+   "how_to_recognise": "You can recognise it by the sharp paired spines lining its young branches, a tree that predates the park built around it. It stands in Krayenhoffpark, Nijmegen.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1688014 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Beschadigde kroon. Boom is in 2001 gekapt nadat er tijdens een storm de top is uitgewaaid. Boom bleek rot. Heijdemij heeft er een indiaan uit gezaagd.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "nij_021",
+   "name": "The Boom van Lücker",
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "age_estimate": "about 25 years (planted 2000)",
+   "age_min": 20,
+   "age_max": 30,
+   "location": {
+    "address": "Ubbergseveldweg, near the Broerweg junction, Nijmegen-Oost (diagonally across the street from the original tree's site)",
+    "latitude": 51.838935,
+    "longitude": 5.887577,
+    "neighbourhood": "Nijmegen-Oost"
+   },
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (nr 1681251)",
+    "https://nijmegen-oost.nl/uitgelicht/extreem-oost-de-beroemdste-boom"
+   ],
+   "access": "Free, on a public street (Ubbergseveldweg), Nijmegen-Oost",
+   "transport": "Nijmegen-Oost is roughly a 20-25 minute walk or a short bus ride from Nijmegen Centraal",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "story": "In 1924 an art teacher bought a chestnut tree with the money from a print he had made of it.\n\nThe tree here now is not that one, and the difference is the whole story. Eugene Lucker's chestnut had germinated on this spot somewhere between 1770 and 1794, sources differ, and by the 1920s workmen had arrived to fell it. Lucker and Jonkheer van der Goes van Naters, later a parliamentary leader for the Dutch labour party, stopped them, raised a hundred guilders by selling Lucker's own linocut of the tree, and bought it outright. They founded the Nijmeegsche Vereeniging voor Natuurschoon the same day, and organised nature conservation in Nijmegen begins there.\n\nThat chestnut sickened and came down in 1996, fourteen metres tall and three metres round. The association dissolved the same year and sold the ground to the city for one guilder. The city kept the promise attached to it: in 2000 the artist Diane Dyckhoff planted a young sweet chestnut diagonally across the street and set it inside a circle of steel rings and blue gravel, the rings standing in for growth rings this tree has not grown yet.\n\nSo you walk to a tree of about twenty-five years on an address that has carried a chestnut since the 1700s, minus the four years in between. A round plaque in the pavement marks the old one's spot. The young one is about ten metres further on, past the Broerweg junction, right side heading out of town.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the husks drop into the gravel ring"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "You can recognise it by the circle of steel rings and blue gravel set around its base. It stands on the Ubbergseveldweg past the Broerweg junction, right side heading out of town, opposite the plaque in the pavement.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1681251 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Dood hout, staat er weinig florisant bij. Weinig meer aan te doen.  Gestorven in 1996.\" Removed under the rule that a dead tree is never a collectible entry."
   }
  ],
  "blocked": [

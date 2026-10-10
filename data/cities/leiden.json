@@ -3,7 +3,7 @@
   "country": "Netherlands",
   "face_tree_id": "lei_006",
   "status": "needs_curation",
-  "intro": "Eight of Leiden's eighteen remarkable trees stand inside one garden. Hortus Botanicus, founded in 1590, keeps a tulip tree sown by professor Herman Boerhaave in 1716, the first zelkovas ever to leave Japan and the thickest horse chestnut in the Netherlands. Beyond the garden walls: a beech named for a student writer on the medieval fortress mound, two planes and a willow around a statue in the Van der Werfpark, a Caucasian wingnut that beat a copper beech in a public vote, and a Persian ironwood grove that gave its name to a garden cultivar now sold across Europe.",
+  "intro": "Eight of Leiden's seventeen remarkable trees stand inside one garden. Hortus Botanicus, founded in 1590, keeps a tulip tree sown by professor Herman Boerhaave in 1716, the first zelkovas ever to leave Japan and the thickest horse chestnut in the Netherlands. Beyond the garden walls: a beech named for a student writer on the medieval fortress mound, two planes around a statue in the Van der Werfpark, a Caucasian wingnut that beat a copper beech in a public vote, and a Persian ironwood grove that gave its name to a garden cultivar now sold across Europe.",
   "meta_description": "Eighteen verified old trees in Leiden, eight inside a botanical garden founded in 1590, including the first zelkovas ever to leave Japan.",
   "question_answer": "Leiden's oldest documented tree is the Tulip Tree of Boerhaave in the Hortus Botanicus, sown on 12 October 1716 by professor Herman Boerhaave from seed shipped from Virginia, making it roughly 310 years old. The garden itself calls it the oldest tree of its species anywhere on the European continent. A date-plum in the same garden, dated 1740, is next.",
   "question_meta": "A 1716 tulip tree sown by Herman Boerhaave himself is Leiden's oldest documented tree. All eighteen, including one fighting for its life.",
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Leiden's remarkable trees free to visit?",
-      "a": "Eight of the eighteen stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The rest, the Burcht mound, Groenesteeg cemetery, the Plantsoen park and the Van der Werfpark, are all free and open year-round."
+      "a": "Eight of the seventeen stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The rest, the Burcht mound, Groenesteeg cemetery, the Plantsoen park and the Van der Werfpark, are all free and open year-round."
     },
     {
       "q": "What is the thickest tree in Leiden?",
@@ -530,36 +530,6 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by where it stands, the second of the park's two big planes, at the southeast corner nearest the Doezastraat. Sixty-five metres of grass separate it from the one at the Garenmarkt entrance."
-    },
-    {
-      "id": "lei_021",
-      "name": "The Weeping Willow of the Van der Werf Statue",
-      "species": "Weeping Willow (Salix babylonica)",
-      "age_estimate": "roughly 120 years, planted in the 1900s",
-      "age_min": 116,
-      "age_max": 126,
-      "girth_cm": null,
-      "location": {
-        "address": "Van der Werfpark, at the water's edge near the Van der Werff statue, Leiden",
-        "latitude": 52.155677,
-        "longitude": 4.490623,
-        "neighbourhood": "Binnenstad"
-      },
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690139, used with written permission)"
-      ],
-      "access": "Free, public city park, open at any time",
-      "transport": "15 minute walk from Leiden Centraal station",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "The register entry for this willow has a field for its history. The field says: unknown.\n\nThat is close to the whole record. The Dutch national register of monumental trees lists it as standing at the water, by the statue, in the Van der Werfpark, and puts its planting between 1900 and 1910, which makes it roughly 120 years old. It is municipal property and anyone can walk up to it. Beyond that one entry we have found nothing: no newspaper piece, no park survey, no local history page that names this tree at all. The park's two planes and its silver maples get written about. The willow does not.\n\nEven the species is a common name rather than a determination. The register calls it a Treurwilg, weeping willow, and gives no scientific name. In Dutch parks that usually means Salix babylonica, though the hybrid Salix x sepulcralis 'Chrysocoma' is the commoner modern planting, and nothing we found settles which of the two is standing here.\n\nWhat it does have is position. It stands at the water's edge beside Pieter van der Werff, the mayor who held Leiden through the Spanish siege of 1573 and 1574, in a park laid out in 1886 over ground a gunpowder explosion had left in ruins. If you know who planted it, or what it is, tell us.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "how_to_recognise": "You can recognise it as the only weeping willow in the park, apart from the two big planes and the silver maples. It stands at the water's edge beside the statue of Pieter van der Werff."
     },
     {
       "id": "lei_022",

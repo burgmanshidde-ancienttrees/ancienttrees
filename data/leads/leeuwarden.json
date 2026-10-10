@@ -67,6 +67,239 @@
    "species": "European Beech (Fagus sylvatica)",
    "why_lead": "HCL brochure top-10 entry II, dated 1874, described as having a low branch that limits the height of delivery traffic behind the De Koperen Tuin pavilion in Prinsentuin. Could not be confidently matched to any LRMB register coordinate in Prinsentuin (all register beeches there, nrs 1688389 and 1688418/1688918-equivalent already match the published lee_003 and lee_005); may be a further, distinct beech or may be one of those under a different description. Needs a site visit or a clearer source before publishing to avoid duplicating an already-live tree under a new id.",
    "source": "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf"
+  },
+  {
+   "id": "lee_019",
+   "name": "The Red Horse Chestnuts of the Diakonessenhuis Garden",
+   "species": "Red Horse Chestnut (Aesculus x carnea)",
+   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Diaconessenpark, off Noordersingel (former Diakonessenziekenhuis garden)",
+    "latitude": 53.204756,
+    "longitude": 5.789669,
+    "neighbourhood": "Transvaalwijk"
+   },
+   "story": "The hospital this chestnut was planted for closed in 1987. The tree stayed.\n\nLeeuwarden's Diakonessenhuis was founded in 1879 and the red horse chestnut in its garden went in during the decade that followed, somewhere between 1880 and 1890, which puts it at roughly 135 to 145 years old. It was entered in the national monumental-trees register in 1989, two years after the hospital shut and while the wards around it were being turned into flats.\n\nThat conversion nearly cost it. The register's own history records the damage done by the building work of the 1990s, in particular a garage entrance dug in beside the neighbouring block, straight through ground the roots had held for a century. The tree carries two crown anchors and a wound in its trunk. Inspectors in 2017 rated its condition reasonable, which for a tree that has been through all that is a decent verdict.\n\nThe garden it stands in was laid out in 1895 to a Vlaskamp design, and the city's own monumental-green walking route notes that a few of its trees are still here. This is one of them. The register lists three trees under this entry while its own history text describes a single chestnut, so expect one tree, possibly with company.\n\nIn May the flowers come up pink rather than white, which is the entire point of the hybrid.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/ (LRMB nr 1688394)"
+   ],
+   "access": "Free. Stands in a landscaped courtyard now called Diaconessenpark, inside the 1990s apartment redevelopment of the former Diakonessenhuis hospital grounds. OSM maps this whole courtyard as leisure=park with paved, wheelchair-accessible footways running past the trees and a public bench right beside them, and shows no gate or private-access tag anywhere in the courtyard, only two low (0.6m) garden walls. The LRMB register itself lists this tree as owner=particulier (likely the apartment building's owners' association rather than the municipality) but visitable=ja and visible=ja. Reads as a residential courtyard rather than a destination park, but the paths through it are open.",
+   "transport": "About 900 m north of Leeuwarden station, on foot, just off Noordersingel.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "You can recognise it by the pink flowers in May, where the chestnuts about 30 metres east of it flower white, and by the steel cables anchoring its crown. It stands in the Diaconessenpark courtyard off Noordersingel.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "May, when the candles come up pink instead of white"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1688394 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"schouw 4-2-1994. Tijdens de bouw van luxe apartementen hebben de bij de gebouwen staande bomen ernstig te lijden gehad. O.a de bruine beuk bij het oude hoofdgebouw (groei-plaats verdichting/vervuiling?) en de plataan hebben veel ondergrondse schade opgelopen.Verder worden door de gemeente twee witte paardekastanjes genoemd.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "lee_027",
+   "name": "The Plane Tree of the Harmonie",
+   "species": "London Plane (Platanus x acerifolia)",
+   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+   "age_min": 206,
+   "age_max": 216,
+   "location": {
+    "address": "Beside the main entrance of Theater De Harmonie, Ruiterskwartier, Leeuwarden",
+    "latitude": 53.200325,
+    "longitude": 5.789286,
+    "neighbourhood": "City centre"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/ (LRMB register nr 1682933, London Plane, planted band 1810-1820)",
+    "https://periodieken.historischcentrumleeuwarden.nl/issue/TKK/1991-06-01/edition/null/page/3 ('t Kleine Krantsje, 1 June 1991, readers' letters page)"
+   ],
+   "access": "Free. Stands on the public square beside the theatre's main entrance.",
+   "transport": "Central Leeuwarden, short walk from Leeuwarden Centraal station.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Register nr 1682933, planted band 1810-1820, next to the main entrance of Theater/Stadsschouwburg De Harmonie. A 1991 letters-page item in 't Kleine Krantsje (a Leeuwarden local-history periodical, HCL's own digitised archive) independently names this exact tree: it calls it 'de meer dan honderd jaar oude plataan bij de Harmonie' (the plane tree by the Harmonie, more than a hundred years old) and describes it as the subject of public concern in 1991 over renovation works that threatened to remove it, with the writer hoping the council would yield to public pressure, drawing a parallel to an old beech at the Princessehof saved by protest decades earlier (that beech, register nr 1682922, was ultimately felled in 2015 per the register, so the parallel held only for a while). The register's 2024 edition carries no removal note for this plane, unlike the Princessehof beeches which explicitly do, so treat it as standing. No girth or exact height found this pass.",
+   "story": "In 1991 a reader wrote in to a Leeuwarden local-history paper to defend this tree. Renovation work at De Harmonie was expected to take out the plane beside the main entrance, and the letter asked the council to give way to public pressure, as it had done decades earlier over an old beech at the Princessehof. The plane is still standing. The beech is not. The register records it as felled in 2015, so the precedent held for a while and then it did not.\n\nThe letter called it the plane by the Harmonie, more than a hundred years old, which undersold it considerably. The national register of monumental trees puts its planting between 1810 and 1820, closer to two centuries than to one. That band brackets the end of French rule in the Netherlands, which fell away in 1813, so the tree was a sapling in a city that had just changed countries.\n\nEverything around it has changed use at least once since. The tree has not moved, and it still holds the corner of the square where people queue to get into a show. Nobody has recorded a girth or a height for it, which is a gap a tape measure and one message would close.",
+   "how_to_recognise": "You can recognise it by the flaking patchwork bark that only a plane has, cream over olive where the old plates come away. It stands on the public square at the Ruiterskwartier, right beside the main entrance of Theater De Harmonie.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1682933 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Bedreigd door nieuwbouw plannen Theater de Harmonie en in april 1992 gekapt! De boom bleek niet verplantbaar te zijn!\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "lee_029",
+   "name": "The Horse Chestnut of Spanjaardslaan",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900 to 1910",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "Spanjaardslaan, Leeuwarden",
+    "latitude": 53.205975,
+    "longitude": 5.787799,
+    "neighbourhood": "Vogelwijk / Spanjaardslaan"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/ (LRMB register nr 1682935, planted band 1900-1910)",
+    "https://regioonline.nl/regio-leeuwarden/leeuwarden-spanjaardslaan-bomen/ (RondOm/RegioOnline, 25 April 2025, on chestnut disease along this street)"
+   ],
+   "access": "Free. Stands on the public Spanjaardslaan street, a residential avenue lined with chestnuts.",
+   "transport": "About 1.2 km north of Leeuwarden station, on foot.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Register nr 1682935 gives no place detail beyond the street name and no condition note ('onbekend'). A 25 April 2025 local news item confirms a genuine risk context for this exact street: a large number of the white and red horse chestnuts on Spanjaardslaan are in poor condition from bleeding canker, one tree at house number 134 was felled the same week as a precaution, and several more were due for heavy pruning in May 2025. The article does not name this specific registered tree, so it neither confirms nor denies its survival; it is included because a reader walking this street should know the avenue is under active disease management and some of its chestnuts are coming down. The municipality is replanting one healthy tree for each one lost. Worth a recheck on the ground: ask whether the registered tree is still standing given the disease pressure on this street.",
+   "story": "In April 2025 the chestnut outside Spanjaardslaan 134 was taken down as a precaution, and several more along the street were listed for heavy pruning the month after. Bleeding canker has got into this avenue. A good share of its white and red horse chestnuts are in poor condition, and the council is putting back one healthy tree for every one it loses.\n\nSo this entry comes with a warning rather than a promise. The news report names the street, not the tree, and the national register records this one condition as unknown. It dates the planting to between 1900 and 1910, which makes the tree something like 120 years old and puts it on this street since before the cars were. Whether it is still standing is a question for whoever gets there next, and we would like to hear the answer.\n\nGo in May and the point of the whole street is obvious anyway. Horse chestnuts flower in upright candles, white on the common kind and pink-red on the hybrids, and an avenue of them in flower is a better argument for street trees than any council report. This one is a white. For two weeks it is the reason anybody planted chestnuts along a road in the first place. The rest of the year it is a tree the neighbourhood is trying to keep.",
+   "how_to_recognise": "You can recognise it in May by its flowers, white candles where several chestnuts along this avenue are the red-flowered kind. It stands in the line of chestnuts on the Spanjaardslaan itself, about 1.2 km north of the station.",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "kind": "flowers",
+    "label": "May, when the avenue lights up in candles, white on this tree and red on its neighbours"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1682935 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Boom heeft 2 kleuren bloem en blad ! Was reeds verankert, in 1984 en 3 feb 1994 op-  nieuw gecontroleerd. Bleek na gaslek 1/2 dood en is in 2001 vervangen door zware maat boom. Aut 06C13 7549.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "lee_033",
+   "name": "The Canadian Poplar of Vosseparkje",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "age_estimate": "roughly 126 to 136 years, from the register's planting band of 1890 to 1900",
+   "age_min": 126,
+   "age_max": 136,
+   "location": {
+    "address": "Westerpark / Vosseparkje, west side, Leeuwarden",
+    "latitude": 53.200901,
+    "longitude": 5.784892,
+    "neighbourhood": "Vosseparkwijk"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/ (LRMB register nr 1692404, 'Canadese populier Vosseparkje')"
+   ],
+   "access": "Free. Open public park (Westerpark/Vosseparkje), open daily.",
+   "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Register nr 1692404, west side of the park; not the same tree as the already-published Marilandica poplar (lee_007, register nr 1688390), which is a named cultivar in the Prinsentuin, a different park entirely. This is the plain Canadian poplar hybrid, planted a generation before the park's 1926 redesign. The register notes a heavy crown was advised for thinning in 2007, and that a 2016 check found the tree still standing, with some trunk-base damage from asphalt work near the base. No independent second source found this pass or the prior 2026-09-09 pass, which checked both HCL park PDFs and found the brochure's Prinsentuin stop describes a different Canadian poplar (the Marilandica). Single-sourced, delivered flagged. The register's own last-observed note (2016) is the most recent evidence of life; worth a recheck given ten years have passed.",
+   "story": "Canadian poplars are planted because they grow fast, and most of them are taken down long before they get to the age of this one. The register dates this tree to between 1890 and 1900, which makes it about 130 years old: a hybrid poplar that outlived the reason it was chosen.\n\nIt has been on the west side of the Vosseparkje since a generation before the park took its present shape in the 1926 redesign, and the paperwork on it reads like a medical file. In 2007 its crown had grown heavy enough that thinning was advised. A check in 2016 found it standing, with damage at the foot of the trunk where asphalt work had come too close. That 2016 note is the most recent word anybody has written about it, and it is ten years old, so if you walk past we would like to hear that the tree is still there.\n\nLeeuwarden has one other Canadian poplar on the national register, a named cultivar in the Prinsentuin on the far side of the centre. That one gets the walking routes and the brochures. This one, the plain hybrid at the edge of a small park, gets a line in a register and a note about the asphalt.",
+   "how_to_recognise": "You can recognise it by the leaves, triangular and green on both faces, where the park's grey poplar is white-felted underneath. It stands on the west side of the Vosseparkje, scarred at the foot where asphalt work came close.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1692404 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Uitlichten v/d zware kroon is nodig, 31 jan 2007.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "lee_034",
+   "name": "The Oak at the South-East Entrance of Vosseparkje",
+   "species": "Oak, species not established (Quercus sp., possibly Caucasian or Persian oak per the register's own name)",
+   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
+   "age_min": 146,
+   "age_max": 156,
+   "location": {
+    "address": "Westerpark / Vosseparkje, south-east entrance, Leeuwarden",
+    "latitude": 53.20107,
+    "longitude": 5.786676,
+    "neighbourhood": "Vosseparkwijk"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/ (LRMB register nr 1686956, 'Kaukasische/Perzische eik')"
+   ],
+   "access": "Free. Open public park (Westerpark/Vosseparkje), open daily; stands right at the south-east entrance.",
+   "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "verify_notes": "Register nr 1686956, at the south-east entrance to the park, one of the oldest plantings in this cluster (1870-1880, a decade or more before most of the park's other registered trees). The register's own name is ambiguous between two species, 'Kaukasische/Perzische eik' (Caucasian oak, Quercus macranthera, or Persian oak, Quercus castaneifolia), and gives no further detail ('site_history: onbekend'); recorded here as species not established rather than guessed, per the publish-and-ask rule. Not the same tree as the other register oak at the former Schapenweide/Aegon office site (nr 1682942, blocked as private land, see leads file): different coordinate, over 500m away, on public park ground rather than a corporate campus. No independent second source found this pass. Single-sourced, delivered flagged.",
+   "story": "The national register cannot decide what this tree is. Its entry reads Caucasian/Persian oak, with a slash doing the work that a species name usually does, and there is nothing else in the file: the site history field says unknown.\n\nBoth candidates behind that slash are eastern trees standing a long way outside their range. Quercus macranthera comes from the Caucasus and carries big lobed leaves with felt on the underside. Quercus castaneifolia comes from the same mountains and from northern Iran, and its leaves look like a sweet chestnut's, long and edged with sharp teeth. Whichever of the two this is, it is not one of the oaks native to the Netherlands.\n\nIt is the oldest of the seven registered trees in this park. The planting band, 1870 to 1880, overlaps the years Gerrit Vlaskamp was landscaping the reservoir grounds that became the Vosseparkje in 1872, though nothing on record says the oak went in with that work. It has held the south-east entrance ever since, which means most people who use this park walk straight past it on their way to look at something else.\n\nWe would rather ask than guess. If you can read an oak leaf, go and settle which of the two it is, and tell us.",
+   "how_to_recognise": "You can recognise it by being the oak at the gate rather than one of the Dutch natives, its leaves either chestnut-toothed or big and felted underneath. It stands right at the south-east entrance of the Vosseparkje.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1686956 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"schouw: 4 feb 1994. Enigste van deze soort in Noord Nederland. Groeiplaatsonderzoek/grondbemonstering gewenst. Mogelijk is een te hoge PH, oorzaak van de problemen?  In 2003 met enige schade op woning gewaaid.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "lee_040",
+   "name": "The Silver Lime of Sophiaplantsoen",
+   "species": "Silver Lime (Tilia tomentosa)",
+   "age_estimate": "roughly 116 to 126 years, from the register's planting band of 1900 to 1910",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "Sophiaplantsoen, near Lange Marktstraat, Leeuwarden",
+    "latitude": 53.197461,
+    "longitude": 5.792342,
+    "neighbourhood": "Schapenweide / Sophiaplantsoen"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/ (LRMB register nr 1682940, planted band 1900-1910, owner=gemeente, visitable=ja)"
+   ],
+   "access": "Free, on the public Sophiaplantsoen green strip near Lange Marktstraat and the station area. Checked against OpenStreetMap (2026-09-10): the surrounding streets (Sophialaan, Van Swietenstraat, Lange Marktstraat) are ordinary public roads and cycleways with no access=private tags, unlike the nearby former Schapenweide estate ground now occupied by the Aegon office campus about 100m away, which this project has already excluded as private (see data/leads/leeuwarden.json). This is a different, public corner of the old Schapenweide name.",
+   "transport": "Near Leeuwarden station, on the Sophiaplantsoen/Lange Marktstraat side.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The national register carries these two limes, and in the space where it keeps a tree's history it has written one word: onbekend. Unknown.\n\nWhat it does record is short. Two silver limes on the Sophiaplantsoen, planted somewhere between 1900 and 1910, owned by the city, free for anyone walking past. That is the whole file on them.\n\nThe species is the interesting part. Tilia tomentosa comes from the Balkans and Anatolia rather than from anywhere near Friesland, and the give-away sits on the back of the leaf: dense white felt underneath, dark green on the face. Turn one leaf over and you have the species.\n\nLeeuwarden turns out to hold a small collection of them. One stands on the Druifstreek opposite the Blokhuispoort, another north of it on the Eewal, and this pair a few minutes from the station, which is enough to make silver lime a species you can tick off across a single afternoon in one city.\n\nNobody has taped either trunk, and nothing has been written about the pair beyond the register's two lines. If you know when they went in, tell us.",
+   "how_to_recognise": "You can recognise them by there being two of the same tree side by side, and by the leaf undersides, felted white where the common limes around town are green on both faces. They stand on the Sophiaplantsoen strip.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1682940 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"schouw 23-11-1995. Vooral deze bomen hebben te lijden gehad van het in 1989 aangelegde fietspad,wat anders had gekund! Groeiplaats/boomonderzoek/verbetering dringend nodig. 2 bomen. aut 06C17.01 12304-306,309\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "lee_041",
+   "name": "The Beech of Diaconessenpark",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 136 to 146 years, from the register's planting band of 1880 to 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Diaconessenpark, in front of the former main building of the Diakonessenziekenhuis, Leeuwarden",
+    "latitude": 53.204913,
+    "longitude": 5.79098,
+    "neighbourhood": "Diaconessenpark"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/ (LRMB register nr 1688395, planted band 1880-1890)"
+   ],
+   "access": "Free. About 75m from the already-published Diaconessenpark trees (lee_019, lee_020, lee_021), the same landscaped courtyard of the 1990s apartment redevelopment of the former Diakonessenhuis hospital grounds. An earlier pass established via OSM that this whole courtyard is mapped leisure=park with open, gate-free, paved footways and no private-access tags; that finding is extended here since this tree sits inside the same courtyard.",
+   "transport": "About 700 m from Leeuwarden Centraal station, in the Diaconessenpark courtyard.",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The flats around this beech went up in the 1990s. The tree was already a century old when the builders arrived.\n\nWhat stood here before them was the Diakonessenhuis, Leeuwarden's deaconess hospital, which closed in 1987 and had its grounds turned into apartments over the decade that followed. The old garden came through the conversion as a courtyard, paved through and open at every side, and it still holds its trees. Three more of them are mapped about 75 metres from this one.\n\nThis is the least documented of the set. The national register gives it a planting band of 1880 to 1890 and then stops. The history field is empty. The red chestnut down the courtyard has a written record behind it, of the hospital garden it was planted for and of the root damage the 1990s building work did to it; the beech has nothing attached at all, so what it went through during that decade of digging is simply not on record.\n\nYou can still pick it out. Common beech carries bark like nothing else of its size: smooth, pale grey and close to unbroken, more skin than bark, where the chestnuts around it are rough and plated.\n\nThe register lists it as privately owned, as it does two of the three trees already mapped in this courtyard, which is a fact about the deeds rather than about a gate.",
+   "how_to_recognise": "You can recognise it by the bark, smooth pale grey and close to unbroken, where the chestnuts sharing the courtyard are rough and plated. It stands in the Diaconessenpark courtyard, in front of the former hospital's main building.",
+   "best_time": {
+    "months": [
+     10,
+     11
+    ],
+    "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+    "kind": "autumn colour"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1688395 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"schouw 4-2-1994. Ernstig te lijden gehad van groeiplaatsverdichting/vervuiling tijdens bouwaktiviteiten. Groeiplaats/boomonderzoek/verbetering gewenst. Bijdrage V 94, P. 1 boom. is gerooid.\" Removed under the rule that a dead tree is never a collectible entry."
   }
  ],
  "resolved_2026-09-10": [

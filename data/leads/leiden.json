@@ -1,163 +1,195 @@
 {
-  "city": "Leiden",
-  "country": "Netherlands",
-  "city_slug": "leiden",
-  "note": "Written during the 2026-08-18 writing pass over data/research/leiden-lrmb-ready.json (Landelijk Register Monumentale Bomen v2024, Bomenstichting, used with written permission). Four of the twelve register entries in that file were refused. Recorded here so a later register import does not re-add them.",
-  "leads": [
-    {
-      "name": "Bruine beuk, Hortus entrance (LRMB 1679547)",
-      "species": "Fagus sylvatica f. purpurea",
-      "lat": 52.155626,
-      "lng": 4.484047,
-      "status": "blocked",
-      "why": "Felled. The register's own historie note ends 'Gevolgd door het rooien van de boom, november 1987': planted 1816, giant polypore infection from 1984, removed November 1987. The entry survives in the register as a historical record, not as a standing tree. Never publish."
-    },
-    {
-      "name": "Japanse Notenboom / Ginkgo, Hortus (LRMB 1679548)",
-      "species": "Ginkgo biloba",
-      "lat": 52.156844,
-      "lng": 4.483318,
-      "status": "blocked",
-      "why": "Already published as lei_002, The Ginkgo of the Hortus. Same tree: 1785, female branch grafted 1935, glasshouse complex built around it in 1938. The register's surveyed coordinate has been applied to lei_002 and its pin upgraded to confirmed."
-    },
-    {
-      "name": "Treurbeuk, Hortus (LRMB 1690081)",
-      "species": "Fagus sylvatica 'Pendula'",
-      "lat": 52.156006,
-      "lng": 4.484126,
-      "status": "blocked",
-      "why": "Already published as lei_003, The Weeping Beech of the Hortus. Same tree: planted around 1840, successor obtained in 1982 from the Amsterdam Floriade. The register's surveyed coordinate has been applied to lei_003 and its pin upgraded to confirmed."
-    },
-    {
-      "name": "De bruine beuk van de Groenesteeg (LRMB 1690124)",
-      "species": "Fagus sylvatica f. purpurea",
-      "lat": 52.157429,
-      "lng": 4.503538,
-      "status": "blocked",
-      "why": "Already published as lei_006, The Groenesteeg Beech. Same tree: the thickest beech in South Holland, in the middle of Groenesteeg cemetery. It slipped the 50m dedupe filter because our published pin was approximate and 62m off. The register's surveyed coordinate has been applied to lei_006 and its pin upgraded to confirmed."
-    },
-    {
-      "id": "lei_012",
-      "name": "The Fern-leaved Beech of the Nut Field",
-      "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
-      "age_estimate": "planted 1800-1850, and 1818 by the register's own note, so between 175 and 225 years",
-      "age_min": 176,
-      "age_max": 226,
-      "location": {
-        "address": "Hortus Botanicus Leiden, along the path on the Notenveld",
-        "latitude": 52.156398,
-        "longitude": 4.484092,
-        "neighbourhood": "Academiewijk"
-      },
-      "story": "The oldest fern-leaved beech in the Netherlands is also one of the three thickest, and it has had two centuries of elbow room to get that way. The register puts it in the ground in 1818, while the Hortus was growing and being relaid in the English landscape style, out on the open patch the garden calls the Notenveld, the nut field, among trees kept here for what they drop. Nothing crowds it, so it grew the way a beech grows when nothing is competing for the light: outward rather than upward, into one enormous low dome. Fern-leaved beech is a form of the ordinary European beech whose leaves are cut into narrow lobes, fine enough that from a few metres away the crown reads as feathered rather than leafed. Up close the trunk does something else entirely. It is vaulted and swollen, bulging in some places and open in others, the sort of surface people put a hand on without quite deciding to. Come in spring and the ground competes for attention: stinzenplanten, the old Dutch estate bulbs that naturalise under mature trees, come up in sheets underneath before the beech leafs out and takes the light back. The formal planting band on the register runs 1800 to 1850, so the age is between 175 and 225 years.",
-      "verified_sources": [
-        "https://www.bomenstichting.nl/"
-      ],
-      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
-      "transport": "15 minute walk from Leiden Centraal station",
-      "best_time": {
-        "months": [
-          4
-        ],
-        "kind": "fresh leaves",
-        "label": "April, when the stinzen bulbs flower underneath and the fern-cut leaves open"
-      },
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "pulled_from_city": "Published until 2026-08-23. Ten of Leiden's fourteen trees stood inside the Hortus behind a 14 euro ticket, which is a garden list wearing a city's name. These five are the 19th-century collection specimens with no photograph; the four 18th-century veterans stayed, because a 310-year tulip tree in the country's oldest botanical garden is worth the ticket. Removed on reach and on padding, never on truth: every fact was verified.",
-      "reason": "Removed 2026-08-23 on Hidde's ruling (padding; a city may not be a garden page). Re-merged by a write pass on 2026-09-07 that did not read this file, while its slug stayed in REMOVED_TREE_SLUGS, so the page was a redirect stub for a month. Removed again 2026-10-08; check_no_published_tree_is_a_redirect() in preflight now refuses the re-import."
-    },
-    {
-      "id": "lei_013",
-      "name": "The Grafted Ash of the Hortus",
-      "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
-      "age_estimate": "planted 1810-1820, so between 206 and 216 years",
-      "age_min": 206,
-      "age_max": 216,
-      "location": {
-        "address": "Hortus Botanicus Leiden, Rapenburg 73",
-        "latitude": 52.156248,
-        "longitude": 4.483885,
-        "neighbourhood": "Academiewijk"
-      },
-      "story": "This ash has spent two hundred years slowly swallowing its own graft. It was planted in 1818 and grafted, probably at around two metres up the stem, where the join left the swelling that grafts always leave. The Dutch word for that bulge is slobbertrui, a baggy jumper, and on this tree it has travelled downward. The register records the swelling sinking further down the trunk decade by decade, until today it sits a few decimetres above the soil on one side and less than a decimetre on the other. Partly because of all that accumulated tissue, the register calls it the thickest narrow-leaved ash in the country. Fraxinus angustifolia comes from southern Europe and North Africa, drier and warmer country than a botanical garden in the Dutch coastal plain, and it wears the family look in a slimmer cut: leaflets narrower and more sharply pointed than the common ash standing beside every ditch in the province. Its recorded planting band runs 1810 to 1820, which puts it a little past two hundred years old. The garden's fern-leaved beech went into the ground the same year. Ash dieback has been working through Europe's ash population for two decades now, killing young and old alike, which makes a healthy veteran of this size worth the detour on its own.",
-      "verified_sources": [
-        "https://www.bomenstichting.nl/"
-      ],
-      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
-      "transport": "15 minute walk from Leiden Centraal station",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "pulled_from_city": "Published until 2026-08-23. Ten of Leiden's fourteen trees stood inside the Hortus behind a 14 euro ticket, which is a garden list wearing a city's name. These five are the 19th-century collection specimens with no photograph; the four 18th-century veterans stayed, because a 310-year tulip tree in the country's oldest botanical garden is worth the ticket. Removed on reach and on padding, never on truth: every fact was verified.",
-      "reason": "Removed 2026-08-23 on Hidde's ruling (padding; a city may not be a garden page). Re-merged by a write pass on 2026-09-07 that did not read this file, while its slug stayed in REMOVED_TREE_SLUGS, so the page was a redirect stub for a month. Removed again 2026-10-08; check_no_published_tree_is_a_redirect() in preflight now refuses the re-import."
-    },
-    {
-      "name": "Bruine beuk, Herenhuis Boisotkade (LRMB 1697142)",
-      "species": "Fagus sylvatica f. purpurea",
-      "lat": 52.15414,
-      "lng": 4.492243,
-      "status": "blocked",
-      "why": "2026-09-07 verify pass. Register's own field says visitable: nee (not visitable) and place is 'Garenmarkt 9, Leiden', a private townhouse (herenhuis). Somebody's home; never publish per hard rule 10."
-    },
-    {
-      "name": "9 Zilveresdoorns Werfpark (LRMB 1690140)",
-      "species": "Acer saccharinum",
-      "lat": 52.155382,
-      "lng": 4.490579,
-      "status": "blocked",
-      "why": "2026-09-07 verify pass. Register counts n_trees: 9, planted 1886 in a semicircle behind the Van der Werff statue. Not a single collectible point: nine trees in a row/arc is an avenue-like planting, no one obvious place to stand at ONE tree, same shape as the Barcelona plane-avenue precedent that failed this test. Confirmed by openbomenkaart.org's historical page for the park, which also describes them only as a group ('de negen zilveresdoorns... in een halve cirkel achter het beeld')."
-    },
-    {
-      "name": "Leopoldii esdoorn Van der Werfpark (LRMB 1690137) and Bontbladige esdoorn Van der Werfpark (LRMB 1693443)",
-      "species": "Acer pseudoplatanus 'Leopoldii'",
-      "lat": 52.155597,
-      "lng": 4.49105,
-      "status": "lead",
-      "why": "2026-09-07 verify pass. Two register entries only 33m apart, both near the Van der Werff statue, both almost certainly the same ornamental cultivar (Bontbladige esdoorn is the common Dutch name for Acer pseudoplatanus 'Leopoldii', confirmed via nursery sources): 1690137 is 'bij standbeeld', 1693443 is noted '25 meter vanaf het standbeeld in oostelijke richting', which reads as two distinct nearby specimens rather than one duplicated record, but this pass ran out of time to find a tree-specific second source (register only) or to settle whether publishing both would read as near-duplicate pages. Worth a closer look: pick the stronger-sited one and fold the other into its story, or find independent corroboration for both."
-    },
-    {
-      "name": "Moerascypres Van der Werfpark (LRMB 1690138)",
-      "species": "Taxodium distichum",
-      "lat": 52.15577,
-      "lng": 4.49111,
-      "status": "lead",
-      "why": "2026-09-07 verify pass. Register counts n_trees: 3, planted 1886, 'nabij standbeeld' (near the statue), visually striking bald cypresses at the water's edge. No tree-specific second source found this pass beyond the register and openbomenkaart's generic park history page (which doesn't name the cypresses specifically). Also an ensemble-of-3 question like the silver maples, though three bald cypresses at one water's-edge spot could plausibly pass the compact-ensemble test where the maple row does not; worth a closer look with more time."
-    },
-    {
-      "name": "Beuk Burcht Leiden (LRMB 1679552)",
-      "species": "Fagus sylvatica",
-      "lat": 52.159091,
-      "lng": 4.492344,
-      "status": "lead",
-      "why": "2026-09-07 verify pass. Register counts n_trees: 2, 'Binnen De Burcht', planted 1900-1910, history 'nog geen historische gegevens bekend' (no historical data yet known). absolutefacts.nl's independent Burcht page says exactly 'twee beuken en een iep' (two beeches and an elm) stand inside the Burcht; the already-published lei_005 (Beets Beech, matching register 1690110 'Beetsbeuk buitenring') plus this 2-tree entry would total three beeches, one more than that source counts, so it is unclear whether this entry overlaps with lei_005's registration or is genuinely additional. Left undelivered this pass rather than guessed; the elm (LRMB 1679553) was delivered as lei_024 since it is unambiguously the one elm both sources agree on."
-    },
-    {
-      "name": "Rode paardenkastanje, Buiten de Burcht (LRMB 1690111)",
-      "species": "Aesculus x carnea",
-      "lat": 52.159198,
-      "lng": 4.492744,
-      "status": "lead",
-      "why": "2026-09-07 verify pass. Register status field is 5 (uncommon among Leiden entries, seen on several other records including one confirmed-felled tree elsewhere in this file, though status 5 alone does not reliably mean dead across the wider register: it is common, ~28% of all 16094 entries, with only a weak correlation to felling language). No second source found this pass and not enough time to chase one; needs a dedicated look before delivering."
-    },
-    {
-      "name": "Gouden Regen / Judasboom / Juttepeer cluster near Hortus entrance (LRMB area ~52.1577,4.4863-4.4866)",
-      "species": "mixed (Laburnum anagyroides, Cercis siliquastrum, Pyrus communis)",
-      "lat": 52.15775,
-      "lng": 4.48635,
-      "status": "lead",
-      "why": "2026-09-07 verify pass. Three register candidates about 0.3km from the Hortus, not individually researched this pass: this pass deliberately prioritised FREE public-park trees (Van der Werfpark, Plantsoen, the Burcht) over the Hortus area, since Leiden already sits at roughly two-thirds paid-entry trees (8 of 12 published trees require the Hortus ticket) against CLAUDE.md's rough one-third ceiling. Worth checking whether this cluster sits on Hortus grounds (paid) or a free public street/garden before a future pass researches it."
-    }
-  ]
+ "city": "Leiden",
+ "country": "Netherlands",
+ "city_slug": "leiden",
+ "note": "Written during the 2026-08-18 writing pass over data/research/leiden-lrmb-ready.json (Landelijk Register Monumentale Bomen v2024, Bomenstichting, used with written permission). Four of the twelve register entries in that file were refused. Recorded here so a later register import does not re-add them.",
+ "leads": [
+  {
+   "name": "Bruine beuk, Hortus entrance (LRMB 1679547)",
+   "species": "Fagus sylvatica f. purpurea",
+   "lat": 52.155626,
+   "lng": 4.484047,
+   "status": "blocked",
+   "why": "Felled. The register's own historie note ends 'Gevolgd door het rooien van de boom, november 1987': planted 1816, giant polypore infection from 1984, removed November 1987. The entry survives in the register as a historical record, not as a standing tree. Never publish."
+  },
+  {
+   "name": "Japanse Notenboom / Ginkgo, Hortus (LRMB 1679548)",
+   "species": "Ginkgo biloba",
+   "lat": 52.156844,
+   "lng": 4.483318,
+   "status": "blocked",
+   "why": "Already published as lei_002, The Ginkgo of the Hortus. Same tree: 1785, female branch grafted 1935, glasshouse complex built around it in 1938. The register's surveyed coordinate has been applied to lei_002 and its pin upgraded to confirmed."
+  },
+  {
+   "name": "Treurbeuk, Hortus (LRMB 1690081)",
+   "species": "Fagus sylvatica 'Pendula'",
+   "lat": 52.156006,
+   "lng": 4.484126,
+   "status": "blocked",
+   "why": "Already published as lei_003, The Weeping Beech of the Hortus. Same tree: planted around 1840, successor obtained in 1982 from the Amsterdam Floriade. The register's surveyed coordinate has been applied to lei_003 and its pin upgraded to confirmed."
+  },
+  {
+   "name": "De bruine beuk van de Groenesteeg (LRMB 1690124)",
+   "species": "Fagus sylvatica f. purpurea",
+   "lat": 52.157429,
+   "lng": 4.503538,
+   "status": "blocked",
+   "why": "Already published as lei_006, The Groenesteeg Beech. Same tree: the thickest beech in South Holland, in the middle of Groenesteeg cemetery. It slipped the 50m dedupe filter because our published pin was approximate and 62m off. The register's surveyed coordinate has been applied to lei_006 and its pin upgraded to confirmed."
+  },
+  {
+   "id": "lei_012",
+   "name": "The Fern-leaved Beech of the Nut Field",
+   "species": "Fern-leaved Beech (Fagus sylvatica f. asplenifolia)",
+   "age_estimate": "planted 1800-1850, and 1818 by the register's own note, so between 175 and 225 years",
+   "age_min": 176,
+   "age_max": 226,
+   "location": {
+    "address": "Hortus Botanicus Leiden, along the path on the Notenveld",
+    "latitude": 52.156398,
+    "longitude": 4.484092,
+    "neighbourhood": "Academiewijk"
+   },
+   "story": "The oldest fern-leaved beech in the Netherlands is also one of the three thickest, and it has had two centuries of elbow room to get that way. The register puts it in the ground in 1818, while the Hortus was growing and being relaid in the English landscape style, out on the open patch the garden calls the Notenveld, the nut field, among trees kept here for what they drop. Nothing crowds it, so it grew the way a beech grows when nothing is competing for the light: outward rather than upward, into one enormous low dome. Fern-leaved beech is a form of the ordinary European beech whose leaves are cut into narrow lobes, fine enough that from a few metres away the crown reads as feathered rather than leafed. Up close the trunk does something else entirely. It is vaulted and swollen, bulging in some places and open in others, the sort of surface people put a hand on without quite deciding to. Come in spring and the ground competes for attention: stinzenplanten, the old Dutch estate bulbs that naturalise under mature trees, come up in sheets underneath before the beech leafs out and takes the light back. The formal planting band on the register runs 1800 to 1850, so the age is between 175 and 225 years.",
+   "verified_sources": [
+    "https://www.bomenstichting.nl/"
+   ],
+   "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+   "transport": "15 minute walk from Leiden Centraal station",
+   "best_time": {
+    "months": [
+     4
+    ],
+    "kind": "fresh leaves",
+    "label": "April, when the stinzen bulbs flower underneath and the fern-cut leaves open"
+   },
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "pulled_from_city": "Published until 2026-08-23. Ten of Leiden's fourteen trees stood inside the Hortus behind a 14 euro ticket, which is a garden list wearing a city's name. These five are the 19th-century collection specimens with no photograph; the four 18th-century veterans stayed, because a 310-year tulip tree in the country's oldest botanical garden is worth the ticket. Removed on reach and on padding, never on truth: every fact was verified.",
+   "reason": "Removed 2026-08-23 on Hidde's ruling (padding; a city may not be a garden page). Re-merged by a write pass on 2026-09-07 that did not read this file, while its slug stayed in REMOVED_TREE_SLUGS, so the page was a redirect stub for a month. Removed again 2026-10-08; check_no_published_tree_is_a_redirect() in preflight now refuses the re-import."
+  },
+  {
+   "id": "lei_013",
+   "name": "The Grafted Ash of the Hortus",
+   "species": "Narrow-Leaved Ash (Fraxinus angustifolia)",
+   "age_estimate": "planted 1810-1820, so between 206 and 216 years",
+   "age_min": 206,
+   "age_max": 216,
+   "location": {
+    "address": "Hortus Botanicus Leiden, Rapenburg 73",
+    "latitude": 52.156248,
+    "longitude": 4.483885,
+    "neighbourhood": "Academiewijk"
+   },
+   "story": "This ash has spent two hundred years slowly swallowing its own graft. It was planted in 1818 and grafted, probably at around two metres up the stem, where the join left the swelling that grafts always leave. The Dutch word for that bulge is slobbertrui, a baggy jumper, and on this tree it has travelled downward. The register records the swelling sinking further down the trunk decade by decade, until today it sits a few decimetres above the soil on one side and less than a decimetre on the other. Partly because of all that accumulated tissue, the register calls it the thickest narrow-leaved ash in the country. Fraxinus angustifolia comes from southern Europe and North Africa, drier and warmer country than a botanical garden in the Dutch coastal plain, and it wears the family look in a slimmer cut: leaflets narrower and more sharply pointed than the common ash standing beside every ditch in the province. Its recorded planting band runs 1810 to 1820, which puts it a little past two hundred years old. The garden's fern-leaved beech went into the ground the same year. Ash dieback has been working through Europe's ash population for two decades now, killing young and old alike, which makes a healthy veteran of this size worth the detour on its own.",
+   "verified_sources": [
+    "https://www.bomenstichting.nl/"
+   ],
+   "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+   "transport": "15 minute walk from Leiden Centraal station",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "pulled_from_city": "Published until 2026-08-23. Ten of Leiden's fourteen trees stood inside the Hortus behind a 14 euro ticket, which is a garden list wearing a city's name. These five are the 19th-century collection specimens with no photograph; the four 18th-century veterans stayed, because a 310-year tulip tree in the country's oldest botanical garden is worth the ticket. Removed on reach and on padding, never on truth: every fact was verified.",
+   "reason": "Removed 2026-08-23 on Hidde's ruling (padding; a city may not be a garden page). Re-merged by a write pass on 2026-09-07 that did not read this file, while its slug stayed in REMOVED_TREE_SLUGS, so the page was a redirect stub for a month. Removed again 2026-10-08; check_no_published_tree_is_a_redirect() in preflight now refuses the re-import."
+  },
+  {
+   "name": "Bruine beuk, Herenhuis Boisotkade (LRMB 1697142)",
+   "species": "Fagus sylvatica f. purpurea",
+   "lat": 52.15414,
+   "lng": 4.492243,
+   "status": "blocked",
+   "why": "2026-09-07 verify pass. Register's own field says visitable: nee (not visitable) and place is 'Garenmarkt 9, Leiden', a private townhouse (herenhuis). Somebody's home; never publish per hard rule 10."
+  },
+  {
+   "name": "9 Zilveresdoorns Werfpark (LRMB 1690140)",
+   "species": "Acer saccharinum",
+   "lat": 52.155382,
+   "lng": 4.490579,
+   "status": "blocked",
+   "why": "2026-09-07 verify pass. Register counts n_trees: 9, planted 1886 in a semicircle behind the Van der Werff statue. Not a single collectible point: nine trees in a row/arc is an avenue-like planting, no one obvious place to stand at ONE tree, same shape as the Barcelona plane-avenue precedent that failed this test. Confirmed by openbomenkaart.org's historical page for the park, which also describes them only as a group ('de negen zilveresdoorns... in een halve cirkel achter het beeld')."
+  },
+  {
+   "name": "Leopoldii esdoorn Van der Werfpark (LRMB 1690137) and Bontbladige esdoorn Van der Werfpark (LRMB 1693443)",
+   "species": "Acer pseudoplatanus 'Leopoldii'",
+   "lat": 52.155597,
+   "lng": 4.49105,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Two register entries only 33m apart, both near the Van der Werff statue, both almost certainly the same ornamental cultivar (Bontbladige esdoorn is the common Dutch name for Acer pseudoplatanus 'Leopoldii', confirmed via nursery sources): 1690137 is 'bij standbeeld', 1693443 is noted '25 meter vanaf het standbeeld in oostelijke richting', which reads as two distinct nearby specimens rather than one duplicated record, but this pass ran out of time to find a tree-specific second source (register only) or to settle whether publishing both would read as near-duplicate pages. Worth a closer look: pick the stronger-sited one and fold the other into its story, or find independent corroboration for both."
+  },
+  {
+   "name": "Moerascypres Van der Werfpark (LRMB 1690138)",
+   "species": "Taxodium distichum",
+   "lat": 52.15577,
+   "lng": 4.49111,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Register counts n_trees: 3, planted 1886, 'nabij standbeeld' (near the statue), visually striking bald cypresses at the water's edge. No tree-specific second source found this pass beyond the register and openbomenkaart's generic park history page (which doesn't name the cypresses specifically). Also an ensemble-of-3 question like the silver maples, though three bald cypresses at one water's-edge spot could plausibly pass the compact-ensemble test where the maple row does not; worth a closer look with more time."
+  },
+  {
+   "name": "Beuk Burcht Leiden (LRMB 1679552)",
+   "species": "Fagus sylvatica",
+   "lat": 52.159091,
+   "lng": 4.492344,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Register counts n_trees: 2, 'Binnen De Burcht', planted 1900-1910, history 'nog geen historische gegevens bekend' (no historical data yet known). absolutefacts.nl's independent Burcht page says exactly 'twee beuken en een iep' (two beeches and an elm) stand inside the Burcht; the already-published lei_005 (Beets Beech, matching register 1690110 'Beetsbeuk buitenring') plus this 2-tree entry would total three beeches, one more than that source counts, so it is unclear whether this entry overlaps with lei_005's registration or is genuinely additional. Left undelivered this pass rather than guessed; the elm (LRMB 1679553) was delivered as lei_024 since it is unambiguously the one elm both sources agree on."
+  },
+  {
+   "name": "Rode paardenkastanje, Buiten de Burcht (LRMB 1690111)",
+   "species": "Aesculus x carnea",
+   "lat": 52.159198,
+   "lng": 4.492744,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Register status field is 5 (uncommon among Leiden entries, seen on several other records including one confirmed-felled tree elsewhere in this file, though status 5 alone does not reliably mean dead across the wider register: it is common, ~28% of all 16094 entries, with only a weak correlation to felling language). No second source found this pass and not enough time to chase one; needs a dedicated look before delivering."
+  },
+  {
+   "name": "Gouden Regen / Judasboom / Juttepeer cluster near Hortus entrance (LRMB area ~52.1577,4.4863-4.4866)",
+   "species": "mixed (Laburnum anagyroides, Cercis siliquastrum, Pyrus communis)",
+   "lat": 52.15775,
+   "lng": 4.48635,
+   "status": "lead",
+   "why": "2026-09-07 verify pass. Three register candidates about 0.3km from the Hortus, not individually researched this pass: this pass deliberately prioritised FREE public-park trees (Van der Werfpark, Plantsoen, the Burcht) over the Hortus area, since Leiden already sits at roughly two-thirds paid-entry trees (8 of 12 published trees require the Hortus ticket) against CLAUDE.md's rough one-third ceiling. Worth checking whether this cluster sits on Hortus grounds (paid) or a free public street/garden before a future pass researches it."
+  },
+  {
+   "id": "lei_021",
+   "name": "The Weeping Willow of the Van der Werf Statue",
+   "species": "Weeping Willow (Salix babylonica)",
+   "age_estimate": "roughly 120 years, planted in the 1900s",
+   "age_min": 116,
+   "age_max": 126,
+   "girth_cm": null,
+   "location": {
+    "address": "Van der Werfpark, at the water's edge near the Van der Werff statue, Leiden",
+    "latitude": 52.155677,
+    "longitude": 4.490623,
+    "neighbourhood": "Binnenstad"
+   },
+   "verified_sources": [
+    "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690139, used with written permission)"
+   ],
+   "access": "Free, public city park, open at any time",
+   "transport": "15 minute walk from Leiden Centraal station",
+   "location_precision": "confirmed",
+   "curation_status": "flagged",
+   "story": "The register entry for this willow has a field for its history. The field says: unknown.\n\nThat is close to the whole record. The Dutch national register of monumental trees lists it as standing at the water, by the statue, in the Van der Werfpark, and puts its planting between 1900 and 1910, which makes it roughly 120 years old. It is municipal property and anyone can walk up to it. Beyond that one entry we have found nothing: no newspaper piece, no park survey, no local history page that names this tree at all. The park's two planes and its silver maples get written about. The willow does not.\n\nEven the species is a common name rather than a determination. The register calls it a Treurwilg, weeping willow, and gives no scientific name. In Dutch parks that usually means Salix babylonica, though the hybrid Salix x sepulcralis 'Chrysocoma' is the commoner modern planting, and nothing we found settles which of the two is standing here.\n\nWhat it does have is position. It stands at the water's edge beside Pieter van der Werff, the mayor who held Leiden through the Spanish siege of 1573 and 1574, in a park laid out in 1886 over ground a gunpowder explosion had left in ruins. If you know who planted it, or what it is, tell us.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "You can recognise it as the only weeping willow in the park, apart from the two big planes and the silver maples. It stands at the water's edge beside the statue of Pieter van der Werff.",
+   "removed": "2026-10-10",
+   "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1690139 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Span en stormankers en dood hout. Zwavelzwam op de stam ca 1 meter boven met beton gevulde wond.\" Removed under the rule that a dead tree is never a collectible entry."
+  }
+ ]
 }

@@ -10166,6 +10166,14 @@
    "date": "2026-10-10",
    "target": "arnhem",
    "kind": "enrich",
+   "tokens": 159128,
+   "trees": 14,
+   "note": "batch 2: ids and 11 girth/height from the LRMB ArcGIS layer; surfaced 3 felled trees, which led to 45 retired across 14 NL cities"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "arnhem",
+   "kind": "enrich",
    "tokens": 148009,
    "trees": 5,
    "note": "LRMB ids on 5, one girth; 24 gaps dead-ended"

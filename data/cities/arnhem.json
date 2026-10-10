@@ -543,43 +543,6 @@
       }
     },
     {
-      "id": "arn_015",
-      "name": "The Villa Beech",
-      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-      "age_estimate": "roughly 190 years",
-      "age_min": 186,
-      "age_max": 196,
-      "girth_cm": null,
-      "location": {
-        "address": "Park Sonsbeek, between the main villa (Sonsbeek huis) and the pond, Arnhem",
-        "latitude": 51.989096,
-        "longitude": 5.905425,
-        "neighbourhood": "Sonsbeek"
-      },
-      "story": "Copper beech is not a species. It is a colour fault in the ordinary green European beech, a mutation that turns up now and then in the wild and has been kept going ever since by gardeners, because seedlings from a purple parent mostly come up green. Copper beeches are planted, in other words, rather than found. Somebody put this one between the Sonsbeek villa and its pond somewhere between 1830 and 1840, and the result is a dark red canopy in the middle of a green park.\n\nThat is close to everything anybody knows about it. The national register lists it as a monumental tree of roughly 190 years and leaves the history field blank: no storm, no famous owner, no anecdote, just a large old beech doing what beeches do, holding a dense low canopy that shades out nearly everything beneath it.\n\nGo in May rather than August. Copper beech is at its best in the first weeks after the leaves break, when they are still thin enough to pass light and the shade underneath turns the colour of weak red wine; by high summer the same canopy has gone almost black. It stands on open lawn near the villa, free, every day, and needs no more directions than that. Nobody outside the register has written this tree down, so if you know who planted it, or when, we would like to hear from you.",
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1677483)"
-      ],
-      "access": "Free, public park, open daily",
-      "transport": "Park Sonsbeek, near the villa; about a 15-20 minute walk from Arnhem Centraal station",
-      "best_time": {
-        "months": [
-          5
-        ],
-        "label": "May, when the new leaves come out translucent red and the shade under it goes wine-coloured",
-        "kind": "fresh leaves"
-      },
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its dark red canopy on open lawn between the Sonsbeek villa and its pond, the only copper beech in this stretch of the park."
-    },
-    {
       "id": "arn_016",
       "name": "The Sonsbeek Forest Chestnut",
       "species": "Sweet Chestnut (Castanea sativa)",
@@ -717,52 +680,13 @@
       "how_to_recognise": "You can recognise it by the metal grate set into the pavement around its base, at the ramp to the Nelson Mandela bridge on Nieuwe Plein; its main roots now run under the road tunnel to a bed thirty metres away."
     },
     {
-      "id": "arn_020",
-      "name": "The Watermuseum Lime",
-      "species": "Common Lime (Tilia x europaea)",
-      "age_estimate": "roughly 150 years",
-      "age_min": 145,
-      "age_max": 155,
-      "girth_cm": null,
-      "location": {
-        "address": "Next to the Nederlands Watermuseum, Zijpendaalseweg 28, Arnhem",
-        "latitude": 51.98858,
-        "longitude": 5.900943,
-        "neighbourhood": "Park Sonsbeek"
-      },
-      "story": "The national register lists this lime as publicly visitable and then, under visible, writes: unknown. Somebody left that field blank and nobody has been back to fill it in, which is worth knowing before you walk up, because the tree stands tight against the Nederlands Watermuseum in Park Sonsbeek, and the museum occupies the old Bagijnemolen, a watermill turned into a building about water.\n\nWhat the register is sure of is the dating. Planted between 1870 and 1880, which puts the tree at roughly 150 years old. It goes down there under its local name, Hollandse linde, the Dutch term for the common lime, and a common lime is not a tree anybody discovered in a wood. Tilia x europaea is a natural cross between the small-leaved and the large-leaved lime, propagated from cuttings and planted across northern Europe in enormous numbers because it grows fast and takes hard pruning without complaint. The giveaway is at ground level: a common lime throws up a dense mass of shoots around the foot of its own trunk. Compare it with the small-leaved lime a few hundred metres down the Zijpendaalseweg, which keeps its ankles clean.\n\nNothing outside the register has written this tree down, so the planting band is one authority's estimate. Free, public parkland, about twelve minutes on foot from the station.",
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (LRMB register nr 1691157)",
-        "https://www.visitarnhem.com/locaties/2948584604/nederlands-watermuseum-2 (independently confirms the Nederlands Watermuseum sits at this address inside Park Sonsbeek, corroborating the tree's setting though not the tree itself)"
-      ],
-      "access": "Free, public parkland, right beside a public museum building.",
-      "transport": "About 12 minutes' walk from Arnhem Centraal station.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the mass of shoots around its own base, the common lime's tell, unlike the clean-trunked small-leaved lime down the road. It stands beside the Nederlands Watermuseum on Zijpendaalseweg.",
-      "best_time": {
-        "months": [
-          6,
-          7
-        ],
-        "label": "June to July, when it flowers",
-        "kind": "flowers"
-      }
-    },
-    {
       "id": "arn_021",
       "name": "The Plane of Lauwersgrachtpark",
       "species": "London Plane (Platanus x acerifolia)",
       "age_estimate": "roughly 140 years",
       "age_min": 135,
       "age_max": 145,
-      "girth_cm": null,
+      "girth_cm": 580,
       "location": {
         "address": "Lauwersgrachtpark (Musispark), behind Musis Sacrum, Arnhem",
         "latitude": 51.979809,
@@ -784,46 +708,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the largest tree in the southern half of Lauwersgrachtpark, behind Musis Sacrum concert hall. The country's oldest Canadian poplar stands about 140 metres away, a sessile oak closer."
-    },
-    {
-      "id": "arn_022",
-      "name": "The Utrechtseweg Black Locust",
-      "species": "Black Locust (Robinia pseudoacacia)",
-      "age_estimate": "roughly 210 years",
-      "age_min": 205,
-      "age_max": 215,
-      "girth_cm": null,
-      "location": {
-        "address": "Utrechtseweg, opposite the former PGEM office, Arnhem",
-        "latitude": 51.984669,
-        "longitude": 5.894015,
-        "neighbourhood": "Utrechtseweg, west of the city centre"
+      "how_to_recognise": "You can recognise it as the largest tree in the southern half of Lauwersgrachtpark, behind Musis Sacrum concert hall. The country's oldest Canadian poplar stands about 140 metres away, a sessile oak closer.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677476",
+        "url": null
       },
-      "story": "Somewhere between 1810 and 1820, when the Netherlands was either a department of Napoleon's France or had just stopped being one, somebody put an American tree on the Utrechtseweg. It is still standing.\n\nThat planting band, from the national monumental tree register, makes this black locust roughly 210 years old, an unusually early date for the species in this country. Robinia pseudoacacia comes from the Appalachians and reached Europe at the start of the seventeenth century, carrying the name of Jean Robin, gardener to the French king, who is credited with the first Paris specimen. It travelled because it did two useful jobs: the timber rots far more slowly than oak, and the roots fix nitrogen, which lets the tree get on with life on the poor sandy ground of this part of Gelderland.\n\nUnder history the register writes nothing whatsoever. What it does record is the address: a public square owned by the city, across the road from where the PGEM electricity company kept its offices in a villa called Bellevue. The company has gone and so has the villa, and the register still uses them to say where the tree is.\n\nOld black locusts look worse than they are, all deeply grooved bark and a trunk that seems to be turning slowly on its own axis. Free, no gate, about fifteen minutes on foot from the station.",
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (LRMB register nr 1678326)",
-        "https://www.nationaalarchief.nl/onderzoeken/fotocollectie/addc49c4-d0b4-102d-bcf8-003048976d84 (Nationaal Archief photo record independently confirms the PGEM administration building 'Bellevue' stood on the Utrechtseweg, corroborating the register's place description though not the tree itself)"
-      ],
-      "access": "Free. Register lists the setting as a public square (plein), owned by the municipality, distinct from the former PGEM/Liander grounds across the road that an earlier pass on this city left as an access-uncertain lead.",
-      "transport": "About 15 minutes' walk from Arnhem Centraal station.",
-      "best_time": {
-        "months": [
-          5,
-          6
-        ],
-        "kind": "flowers",
-        "label": "late May into June, when it hangs full of white pea-flowers and the whole tree smells sweet"
-      },
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the deeply grooved bark and a trunk that seems to turn slowly on its own axis. It stands on a public square on Utrechtseweg, opposite where the PGEM electricity company once had its office."
+      "height_m": 34
     },
     {
       "id": "arn_023",
@@ -854,7 +744,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, measured at four metres round in 2006, on the public verge of Boulevard Heuvelink opposite number 104-B. A second registered plane stands further east near number 197."
+      "how_to_recognise": "You can recognise it by the trunk, measured at four metres round in 2006, on the public verge of Boulevard Heuvelink opposite number 104-B. A second registered plane stands further east near number 197.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692447",
+        "url": null
+      },
+      "height_m": 29
     },
     {
       "id": "arn_024",
@@ -863,7 +758,7 @@
       "age_estimate": "roughly 115 years",
       "age_min": 110,
       "age_max": 120,
-      "girth_cm": null,
+      "girth_cm": 396,
       "location": {
         "address": "Agnietenstraat (green strip beside number 170), Arnhem",
         "latitude": 51.988828,
@@ -893,7 +788,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the acorns, their cups wrapped in long whiskery scales that look mossy, unlike any native Dutch oak. It stands on the green strip of Agnietenstraat, opposite a primary school."
+      "how_to_recognise": "You can recognise it by the acorns, their cups wrapped in long whiskery scales that look mossy, unlike any native Dutch oak. It stands on the green strip of Agnietenstraat, opposite a primary school.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692437",
+        "url": null
+      },
+      "height_m": 23
     },
     {
       "id": "arn_025",
@@ -923,7 +823,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the dark red canopy, the one thing on the block you cannot mistake for something else. Stand in the Rosendaalsestraat car park and look across the gardens; the tree itself is private ground."
+      "how_to_recognise": "You can recognise it by the dark red canopy, the one thing on the block you cannot mistake for something else. Stand in the Rosendaalsestraat car park and look across the gardens; the tree itself is private ground.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690690",
+        "url": null
+      }
     },
     {
       "id": "arn_026",
@@ -932,7 +836,7 @@
       "age_estimate": "roughly 115 years",
       "age_min": 110,
       "age_max": 120,
-      "girth_cm": null,
+      "girth_cm": 364,
       "location": {
         "address": "Near the copper beeches, Kasteel Zijpendaal, Arnhem",
         "latitude": 51.997552,
@@ -953,7 +857,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by new stems rising directly off the trunk where low branches have rooted where they touch the ground, a tree slowly surrounding itself with copies of itself. It stands near the copper beeches at Kasteel Zijpendaal."
+      "how_to_recognise": "You can recognise it by new stems rising directly off the trunk where low branches have rooted where they touch the ground, a tree slowly surrounding itself with copies of itself. It stands near the copper beeches at Kasteel Zijpendaal.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687995",
+        "url": null
+      },
+      "height_m": 32
     },
     {
       "id": "arn_027",
@@ -962,7 +871,7 @@
       "age_estimate": "roughly 175 years",
       "age_min": 170,
       "age_max": 180,
-      "girth_cm": null,
+      "girth_cm": 540,
       "location": {
         "address": "Landgoed Zijpendaal, corner of the wood between Daam Fockemalaan and De Vilderskamp, Arnhem",
         "latitude": 51.998126,
@@ -992,7 +901,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692431",
+        "url": null
+      },
+      "height_m": 20
     },
     {
       "id": "arn_028",
@@ -1023,7 +937,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its lean to the east and by fresh growth filling in the west side of the crown, the register's tallest Hungarian oak in the Netherlands. It stands on the middle-west side of Park Zijpendaal."
+      "how_to_recognise": "You can recognise it by its lean to the east and by fresh growth filling in the west side of the crown, the register's tallest Hungarian oak in the Netherlands. It stands on the middle-west side of Park Zijpendaal.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692980",
+        "url": null
+      },
+      "girth_cm": 370,
+      "height_m": 33
     },
     {
       "id": "arn_029",
@@ -1053,112 +973,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as two giant sequoias standing close together, listed by the register as a single pair. They stand near the car park at Gulden Bodem, at the start of the walk toward Park Zijpendaal."
-    },
-    {
-      "id": "arn_030",
-      "name": "The Silver Maple of Zijpendaal",
-      "species": "Silver Maple (Acer saccharinum)",
-      "age_estimate": "around 160 years",
-      "age_min": 156,
-      "age_max": 166,
-      "location": {
-        "address": "Southeast of Kasteel Zijpendaal, Park Zijpendaal, Arnhem",
-        "latitude": 51.998645,
-        "longitude": 5.893906,
-        "neighbourhood": "Zijpendaal"
+      "how_to_recognise": "You can recognise it as two giant sequoias standing close together, listed by the register as a single pair. They stand near the car park at Gulden Bodem, at the start of the walk toward Park Zijpendaal.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692429",
+        "url": null
       },
-      "story": "Silver maple is the first tree in this park to do anything each year. It flowers in March, on bare twigs, weeks before the beeches and oaks around it have accepted that winter is over.\n\nThis one stands southeast of Kasteel Zijpendaal, the manor house at the centre of the park, and the national register dates its planting to between 1860 and 1870. Under history the register has written a single word: unknown. That is the ordinary record of a tree that was bought, planted and then left to grow while the house in front of it collected all the attention.\n\nIt is a North American species and an uncommon one to find on a Dutch monumental list, which is a good part of why it is on ours. Silver maple grows fast, sheds limbs in storms and is not famous for reaching a great age, so a specimen approaching 160 years in an open park is doing better than the species' reputation.\n\nThe park is free and open every day. Come in March for the flowers. Come in July and you get the other half of the name, a crown that turns pale silver every time the wind lifts the leaves.\n\nNobody outside the register has written this tree down. If you know who planted it, we would like to hear from you.",
-      "best_time": {
-        "months": [
-          3
-        ],
-        "kind": "flowers",
-        "label": "March, when it flowers on bare twigs before anything else in the park stirs"
-      },
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (register nr 1677498)",
-        "https://nl.wikipedia.org/wiki/Park_Zypendaal"
-      ],
-      "access": "Free, public landscape park and estate (Park Zijpendaal, freely accessible, open every day of the week).",
-      "transport": "About 22 minutes' walk from Arnhem Centraal station.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the crown that flashes pale silver whenever wind lifts the leaves, and by flowers on bare twigs as early as March. It stands southeast of Kasteel Zijpendaal in Park Zijpendaal."
-    },
-    {
-      "id": "arn_031",
-      "name": "The Beech of St Elisabeth's Gasthuis",
-      "species": "European Beech (Fagus sylvatica)",
-      "age_estimate": "around 130 years",
-      "age_min": 126,
-      "age_max": 136,
-      "location": {
-        "address": "In front of the former St Elisabeth's Gasthuis, Utrechtseweg, Arnhem",
-        "latitude": 51.984774,
-        "longitude": 5.885657,
-        "neighbourhood": "Utrechtseweg"
-      },
-      "story": "The hospital this beech stands in front of is now a block of flats with a dental practice in it. The tree did not move.\n\nSt Elisabeth's Gasthuis on Utrechtseweg is a protected national monument, listed as a complex on the state's own register, and has been converted into apartments under the name St. Elisabethshof. The beech went into the ground in front of it between 1890 and 1900, which puts it at around 130 years old. It stands on the street side rather than in any courtyard behind the building, so there is no gate, no bell and nobody to ask.\n\nUnder history the national tree register has written nothing whatsoever. That is the usual fate of an institutional tree. Somebody ordered it, somebody dug the hole, the annual reports recorded the patients rather than the planting, and a century later the beech is the only thing on the plot still doing the job it was put there for.\n\nIt is about twelve minutes on foot from Arnhem Centraal, uphill along Utrechtseweg, which makes it an easy first stop before the parks further out.\n\nThe register is the only source that has recorded this tree, and its dating is a decade-wide band rather than a planting record. If there is a photograph of the Gasthuis with a young beech in front of it, that would date it better than we can.",
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (register nr 1678328)",
-        "https://rijksmonumenten.nl/monument/516738/sint-elisabeths-gasthuis/arnhem/",
-        "https://monumentenregister.cultureelerfgoed.nl/complexen/516737"
-      ],
-      "access": "Free. Stands in front of the former St Elisabeth's Gasthuis building on Utrechtseweg, a public street; the complex itself is now apartments and a dental practice, both protected national monuments, but the register marks the tree itself visitable=ja, visible=ja, in front of (rather than behind or within) the building.",
-      "transport": "About 12 minutes' walk from Arnhem Centraal station.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by where it stands, on the street side in front of the former St Elisabeth's Gasthuis, now converted into apartments, on Utrechtseweg.",
-      "best_time": {
-        "months": [
-          10,
-          11
-        ],
-        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
-        "kind": "autumn colour"
-      }
-    },
-    {
-      "id": "arn_032",
-      "name": "The Wagnerlaan Poplar",
-      "species": "Poplar (Populus sp.)",
-      "age_estimate": "around 120 years",
-      "age_min": 116,
-      "age_max": 126,
-      "location": {
-        "address": "Wagnerlaan, opposite Rijnstate hospital, Arnhem",
-        "latitude": 51.9999,
-        "longitude": 5.912237,
-        "neighbourhood": "Alteveer/Cattepoel"
-      },
-      "story": "The national register calls this a Chinese poplar and then stops, which leaves a monumental tree whose species nobody has actually pinned down. Several different poplars are grown in the Netherlands under that name, and no source we can find says which one is standing on Wagnerlaan. If you know poplars, this is a question you could settle from the pavement, and we would like you to.\n\nThe rest is on record. Planted between 1900 and 1910, owned by the city, growing in a plantsoen, a strip of public green, diagonally opposite the Rijnstate hospital. Under history the register has written nothing.\n\nA poplar reaching 120 years is worth noticing on its own terms. The genus is known for growing fast and dying young, and municipal tree departments across Europe have spent decades taking ageing poplars down as a safety matter, which makes an official monumental designation for one of them unusual rather than routine.\n\nIt stands about seventy metres from the Cattenpoelseweg oak, so the two are one stop rather than two, on a residential corner nobody comes to Arnhem for. That is a good part of the appeal. This is a tree on the way to the shops that has quietly outlived everybody who planted it.\n\nThe register is our only source. Tell us what it is and we will name it properly.",
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (register nr 1677486)"
-      ],
-      "access": "Free, public green strip (plantsoen), gemeente-owned, on Wagnerlaan opposite Rijnstate hospital.",
-      "transport": "About 26 minutes' walk from Arnhem Centraal station.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by where it stands, on the green strip of Wagnerlaan opposite Rijnstate hospital, about seventy metres from the oak on the Cattenpoelseweg corner. Its exact poplar species is still unresolved."
+      "girth_cm": 540,
+      "height_m": 38
     },
     {
       "id": "arn_033",
@@ -1195,47 +1016,13 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
-    },
-    {
-      "id": "arn_034",
-      "name": "The Cedar of Lebanon of Angerenstein",
-      "species": "Cedar of Lebanon (Cedrus libani)",
-      "age_estimate": "roughly 250 years",
-      "age_min": 226,
-      "age_max": 276,
-      "location": {
-        "address": "Park Angerenstein, Arnhem",
-        "latitude": 51.994573,
-        "longitude": 5.937219,
-        "neighbourhood": "Angerenstein"
       },
-      "story": "This cedar was planted while Angerenstein was still somebody's private country estate. The national register puts it in the ground between 1750 and 1800, which makes it the oldest tree in this corner of Arnhem by a clear margin, roughly 250 years.\n\nThat is a long life for a Cedar of Lebanon in the Netherlands, and a long time to have watched the ownership change under it. Angerenstein was a buitenplaats for most of its existence. It opened to the public in 1921, and in 1941 the last private owners sold the whole estate to the municipality of Arnhem, which is why the question people usually ask about this park, whether you are allowed to walk in, has a flat answer. Yes, free, any day.\n\nUnder history the register has written nothing. A cedar does not really need it. The species carries its own architecture, tiers of flat horizontal branch plates stacked one above another, which is exactly why estate owners planted them in front of houses in the first place, and why this one still reads as a deliberate decision two and a half centuries later.\n\nIt is one of four monumental trees within about a hundred metres here, alongside a tulip tree, a Japanese maple and an oak by the pond. Do them as a single loop, eight minutes' walk from Arnhem Presikhaaf station.",
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (register nr 1677478)",
-        "https://nl.wikipedia.org/wiki/Park_Angerenstein",
-        "https://www.buitenplaatseninnederland.nl/arnhem-angerenstein.html"
-      ],
-      "access": "Free, public park. Park Angerenstein has been municipally owned and open to the public since 1941 (the last private owners sold the estate to the gemeente that year); confirmed independently as 'vrij toegankelijk' (freely accessible) via buitenplaatseninnederland.nl, though the manor house itself is not open.",
-      "transport": "About 8 minutes' walk from Arnhem Presikhaaf station (the nearest bus stop is on Rosendaalseweg).",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688068",
+        "url": null
       },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its tiers of flat horizontal branch plates, the oldest tree in Park Angerenstein by a clear margin. It stands within a hundred metres of a tulip tree, a Japanese maple and an oak by the pond.",
-      "best_time": {
-        "months": [
-          9,
-          10,
-          11
-        ],
-        "label": "September to November: upright barrel cones that sit on the branches like eggs",
-        "kind": "fruit"
-      }
+      "girth_cm": 466,
+      "height_m": 23
     },
     {
       "id": "arn_035",
@@ -1312,7 +1099,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its size, far larger than the shrub most Japanese maples stay, standing in the Binnentuin, the inner garden of Park Angerenstein."
+      "how_to_recognise": "You can recognise it by its size, far larger than the shrub most Japanese maples stay, standing in the Binnentuin, the inner garden of Park Angerenstein.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692441",
+        "url": null
+      },
+      "girth_cm": 290,
+      "height_m": 12
     },
     {
       "id": "arn_037",
@@ -1350,7 +1143,13 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695210",
+        "url": null
+      },
+      "girth_cm": 518,
+      "height_m": 31
     },
     {
       "id": "arn_038",
@@ -1434,7 +1233,13 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677451",
+        "url": null
+      },
+      "girth_cm": 405,
+      "height_m": 14
     }
   ]
 }

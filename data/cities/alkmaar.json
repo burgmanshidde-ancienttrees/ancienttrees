@@ -2,9 +2,9 @@
   "city": "Alkmaar",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Alkmaar built its city walls and bastions in 1565 and, unlike almost every other Dutch town, did not flatten them. In 1870 the garden architect Louis Paul Zocher turned the surviving earthworks into a landscape park, so six of the fourteen trees here still stand on that rampart, including the thickest lime of the lot and a yew moved here by crane in 2018. Three more grow in the Alkmaarderhout, the city's old wood laid out from 1607, and three elms stand together against the wall of the Grote Kerk.",
-  "meta_description": "Fourteen remarkable trees in Alkmaar: six on bastions built in 1565, a yew moved by crane in 2018, and a plane in a wood planted from 1607.",
-  "question_meta": "Alkmaar's oldest tree is a white willow in the polder at Grootschermer, banded 1800 to 1850. Where it stands, and thirteen more worth the walk.",
+  "intro": "Alkmaar built its city walls and bastions in 1565 and, unlike almost every other Dutch town, did not flatten them. In 1870 the garden architect Louis Paul Zocher turned the surviving earthworks into a landscape park, so five of the twelve trees here still stand on that rampart, including the thickest lime of the lot and a yew moved here by crane in 2018. Two more grow in the Alkmaarderhout, the city's old wood laid out from 1607, and three elms stand together against the wall of the Grote Kerk.",
+  "meta_description": "Twelve remarkable trees in Alkmaar: five on bastions built in 1565, a yew moved by crane in 2018, and a plane in a wood planted from 1607.",
+  "question_meta": "Alkmaar's oldest tree is a white willow in the polder at Grootschermer, banded 1800 to 1850. Where it stands, and eleven more worth the walk.",
   "question_answer": "The oldest tree recorded in Alkmaar is a white willow standing in the Veenbos in an old polder at Grootschermer, which the national register places in a wide planting band of 1800 to 1850, so somewhere between about 175 and 225 years old. Within the city itself the oldest is a plane in the Alkmaarderhout, banded 1850 to 1860. There used to be a better answer than either: a beech in the Alkmaarderhout that had grown to almost seven metres round, originally three shoots planted together and possibly dating from the first half of the nineteenth century, when a tree nursery stood on that spot. It came down in the Poly storm in the summer of 2023 and about four metres of trunk is still standing.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, and two of the bands on this page are fifty years wide rather than ten. The register is the 2024 edition and is the single source throughout, so everything here is flagged. It is also a register that goes out of date: the Alkmaarderhout beech described in the answer above is still listed in it and has been gone since 2023, and we found that out one sentence before publishing it as this city's oldest tree. Treat every age here as a claim from a good official source rather than as a measurement, and tell us if a tree is not where this page says it is. The willow at Grootschermer is the one to read carefully: its band is fifty years wide, and a pollarded willow's age is really a record of how often somebody came back to cut it rather than of a planting. Where a pin is marked approximate we know the bastion, the wood or the polder and not the exact trunk, which matters most out at the Veenbos, where there is no landmark to steer by.",
   "hero_tree_id": "alk_001",
@@ -283,36 +283,6 @@
       }
     },
     {
-      "id": "alk_009",
-      "name": "The Weeping Silver Lime of Scheteldoekshaven",
-      "species": "Weeping Silver Lime (Tilia tomentosa 'Pendula')",
-      "age_estimate": "roughly 90 years",
-      "age_min": 86,
-      "age_max": 96,
-      "location": {
-        "address": "Bolwerk park near Scheteldoekshaven 5",
-        "latitude": 52.631992,
-        "longitude": 4.741533,
-        "neighbourhood": "Bolwerken / Geest"
-      },
-      "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1690998",
-        "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Hangende zilverlinde, Tilia tomentosa Pendula, Bolwerk thv Scheteldoekshaven 5, 1930-1940"
-      ],
-      "access": "Free. Public park on the old city rampart (Bolwerk).",
-      "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
-      "location_precision": "confirmed",
-      "curation_status": "ai_generated",
-      "story": "In a strong wind this tree changes colour. The underside of a silver lime's leaf is covered in fine white felt, which is what tomentosa means, so one gust turns a green crown pale grey and the next turns it back.\n\nThis one is the weeping form, Tilia tomentosa 'Pendula', and both the national register and the city's own 2017 list of monumental trees name the cultivar outright. The branches hang rather than reach, so the colour change runs from the top of the crown all the way down, like a curtain being shaken out.\n\nIt stands on the Bolwerk, the belt of old earthworks Alkmaar stopped defending and started walking on. The two sources agree on the decade as well as the species: it went into the ground somewhere between 1930 and 1940, which makes it a young tree with an unusual shape at the point the occupation arrived, and it has held the same spot on the rampart ever since.\n\nBeyond that, nothing. The register's history field for this lime reads onbekend, unknown. Nobody has written down who planted it or why a weeping silver lime was the choice for this corner of the park. If you know, tell us and it goes on the page.",
-      "how_to_recognise": "You can recognise it by the branches hanging straight down in a curtain and by leaves that flash white-grey underneath in the wind. It stands in the rampart park opposite Scheteldoekshaven 5.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
       "id": "alk_010",
       "name": "The Relocated Yew of the Geestersingel",
       "species": "European Yew (Taxus baccata)",
@@ -440,42 +410,6 @@
         ],
         "kind": "fresh leaves",
         "label": "May, when the new leaves open translucent red before they darken"
-      },
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      }
-    },
-    {
-      "id": "alk_014",
-      "name": "The Horse Chestnut behind Koekenbier",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "roughly 120 years",
-      "age_min": 116,
-      "age_max": 126,
-      "location": {
-        "address": "About 25 metres into the woods behind restaurant Koekenbier, Kennemerstraatweg",
-        "latitude": 52.626459,
-        "longitude": 4.738035,
-        "neighbourhood": "Alkmaarderhout / Westerhoutpark"
-      },
-      "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1689039"
-      ],
-      "access": "Free. Public city park (Alkmaarderhout).",
-      "transport": "Central Alkmaar, roughly 15-20 minute walk or short bus ride from Alkmaar Centraal station",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "The national register lists this horse chestnut with almost nothing beside it: no planting date, no note on its history, the field left onbekend, unknown. What is fixed is where it stands, about twenty-five metres into the trees behind restaurant Koekenbier, off the Kennemerstraatweg, on the edge of the Alkmaarderhout.\n\nThe register bands its age at roughly a century and a quarter without saying how that figure was reached, which would put its planting close to the years around 1900 when the landscape architect L.A. Springer rebuilt the park into its present form. That is inference rather than record, and the register does not claim otherwise.\n\nA horse chestnut this size has gone through the same year over and over regardless of what got written down: white candle-shaped flower spikes standing through the crown in May, spiked green conkers splitting on the ground by October. None of that is recorded for this particular tree, only for the species in general.\n\nIt stands roughly a hundred metres from the park's copper beech and about 300 metres from its oldest recorded plane, part of the same walk through the Westerhoutpark. If you know more about it, tell us.",
-      "how_to_recognise": "You can recognise it by the white candle-shaped flowers in May and the spiky green conkers underfoot by October. It stands about twenty-five metres into the woods behind restaurant Koekenbier, off the Kennemerstraatweg.",
-      "best_time": {
-        "months": [
-          5
-        ],
-        "kind": "flowers",
-        "label": "May, when it flowers"
       },
       "photo": {
         "url": null,
