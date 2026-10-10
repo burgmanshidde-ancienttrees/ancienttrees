@@ -212,15 +212,25 @@ struct HomeView: View {
     }
 
     var body: some View {
+        ScrollViewReader { proxy in
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
                 seasonHero
                 shelves
                 growingCard
-                tailShelf
+                tailShelf.id("discover-tail")
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
             .padding(.top, 6)
+        }
+        // A section no argument can reach ships unseen: -discoverto=species
+        // or -discoverto=tail scrolls there for the sweep (2026-10-10).
+        .task {
+            if let a = ProcessInfo.processInfo.arguments.first(where: { $0.hasPrefix("-discoverto=") }) {
+                try? await Task.sleep(for: .seconds(1.5))
+                proxy.scrollTo("discover-" + a.dropFirst(12), anchor: .top)
+            }
+        }
         }
         // PINNED WITH safeAreaInset, not with a pinned Section (Hidde,
         // 2026-08-26: "stikcy search bovenaan op explore on scroll"). The
@@ -582,6 +592,26 @@ struct HomeView: View {
         .padding(.bottom, 4)
     }
 
+    /// THREE ROWS OF SPECIES THAT SCROLL TOGETHER (Hidde, 2026-10-10: "maybe
+    /// it can have 3 lines", "but still scrollable"). One row of pills read as
+    /// a strip of buttons; three rows of chips sliding as one block is the
+    /// Play Store's and Spotify's browse chips. Each row keeps its pills'
+    /// own widths, so the species are dealt across the rows in turn and the
+    /// most-planted ones stay at the left where the eye starts.
+    private var speciesRows: some View {
+        let rows = (0..<3).map { r in deck.species.enumerated().filter { $0.offset % 3 == r }.map(\.element) }
+        return ScrollView(.horizontal, showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 8) {
+                ForEach(0..<3, id: \.self) { r in
+                    HStack(spacing: 8) {
+                        ForEach(rows[r], id: \.name) { speciesPill($0) }
+                    }
+                }
+            }
+        }
+        .contentMargins(.horizontal, 16, for: .scrollContent)
+    }
+
     private func speciesPill(_ sp: (name: String, count: Int, photo: Tree?)) -> some View {
         NavigationLink(value: Route.species(sp.name)) {
             HStack(spacing: 8) {
@@ -646,11 +676,8 @@ struct HomeView: View {
         }
 
         if !deck.species.isEmpty {
-            section("By species", more: .index(.species)) {
-                shelf(spacing: 8) {
-                    ForEach(deck.species, id: \.name) { speciesPill($0) }
-                }
-            }
+            section("By species", more: .index(.species)) { speciesRows }
+                .id("discover-species")
         }
 
         if deck.records.count == 3 {
@@ -680,10 +707,25 @@ struct HomeView: View {
         if !deck.tail.isEmpty {
             // The last shelf, and its See all is the map, where every tree near
             // you already is: AllTrails' "See all" opens the same list on its map.
+            // DOWN, NOT SIDEWAYS, AND IT DOES NOT END (Hidde, 2026-10-10: "the
+            // last section more trees near you was going to be an infinite
+            // scroll"). The feed's tail, the way Instagram's Explore and
+            // Pinterest finish a page of shelves: a grid of three that keeps
+            // going, nearest first. LazyVGrid draws only what is on screen, so
+            // every photographed tree can be in it.
             VStack(alignment: .leading, spacing: 12) {
                 ShelfHeader(title: location.known ? "More trees near you" : "More trees",
                             seeAll: { navigator.selectTab = 0 })
-                tileShelf(Array(deck.tail.prefix(20)))
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 6), count: 3), spacing: 6) {
+                    ForEach(deck.tail) { t in
+                        NavigationLink(value: Route.tree(t.id)) {
+                            CollectedTile(kind: .ours(t), city: tag(t)).clipShape(Self.tileShape)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityIdentifier("tree-card")
+                    }
+                }
+                .padding(.horizontal, 16)
             }
         }
     }
