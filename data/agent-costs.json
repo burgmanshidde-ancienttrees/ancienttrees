@@ -10861,6 +10861,15 @@
    "tokens": 153427,
    "trees": 0,
    "note": "DNR registry entry and measurements on 1 tree; pin conflict left for a session"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "savannah",
+   "kind": "enrich",
+   "tokens": 124382,
+   "trees": 0,
+   "note": "nothing: no authority records or live measurements; wasted",
+   "wasted": 124382
   }
  ],
  "2026-10-09": [
