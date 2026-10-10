@@ -2815,6 +2815,9 @@ div.tb-register > b { color: var(--ink); }
   padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom)); background: #fff;
   border-top: 1px solid rgba(0,0,0,0.08); }
 .td-bar .td-open { flex: 1 1 auto; min-width: 0; }
+/* One line beside three circles since the seal joined the bar (2026-10-10):
+   at 375 the label wrapped to two. */
+.td-bar .td-open { white-space: nowrap; overflow: hidden; padding-left: 12px; padding-right: 12px; gap: 8px; }
 .td-round, .td-bar .heart-btn { flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%;
   border: 1px solid rgba(0,0,0,0.10); background: #fff; color: var(--moss); padding: 0;
   display: inline-flex; align-items: center; justify-content: center; font-size: 24px; }
