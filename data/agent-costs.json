@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "sintra",
+   "kind": "enrich",
+   "tokens": 159697,
+   "trees": 4,
+   "note": "ICNF record + girth/height on sin_003, heights and ticket/hours on Pena and Monserrate trees"
+  },
+  {
+   "date": "2026-10-10",
    "target": "houston",
    "kind": "enrich",
    "tokens": 147502,
