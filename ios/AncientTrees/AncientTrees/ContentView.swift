@@ -786,6 +786,7 @@ struct ContentView: View {
         // "profile pic is gone", "my followers stats are gone" and "several of
         // my trees no longer have a photo".
         .onChange(of: account.isSignedIn) { _, now in
+            Measure.signedIn = now
             if now { Task { await reloadTheAccount() } } else { forgetIfSignedOut() }
         }
         // A launch with no signal reads nothing; coming back to the app with
@@ -824,6 +825,7 @@ struct ContentView: View {
             // The queue goes first so anything stranded by a wood with no
             // signal is filed before today adds to it.
             Measure.flush()
+            Measure.signedIn = account.isSignedIn
             Measure.event("app_open")
             // The thumbs' figures, once per launch and never per card: the
             // whole table is a few thousand short rows and a request inside a
@@ -921,9 +923,20 @@ struct ContentView: View {
             // Every change to the collection follows the person to their
             // account, if they have one. Wired here rather than inside Saved so
             // the collection keeps knowing nothing about sign-in.
+            //
+            // And PostHog hears when a change did NOT reach the account
+            // (2026-10-10): signed out, no session, or a refused write. The
+            // person is never told, because the local copy is right; we are.
             saved.onMutate = { [account] id, entry in
-                guard account.isSignedIn else { return }
-                Task { await CloudSync.push(account: account, entry: entry, treeId: id) }
+                guard account.isSignedIn else {
+                    Measure.event("sync_skipped", ["tree": id, "why": "signed_out"])
+                    return
+                }
+                Task {
+                    if let why = await CloudSync.push(account: account, entry: entry, treeId: id) {
+                        Measure.event("sync_failed", ["tree": id, "why": why])
+                    }
+                }
             }
             // An hour-old access token is the failure the website shipped with
             // for three weeks: saves stopped reaching the account and nothing

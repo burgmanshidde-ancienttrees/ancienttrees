@@ -110,28 +110,35 @@ public enum CloudSync {
     /// One tree changed. Fire and forget: a failed write is retried by the next
     /// pushAll rather than shown to anybody, because the local copy is already
     /// correct and the person is standing under a tree.
-    public static func push(account: Account, entry: Saved.Entry?, treeId: String) async {
-        guard let s = await account.freshSession() else { return }
+    ///
+    /// It RETURNS what went wrong, nil when nothing did, so the caller can tell
+    /// PostHog (2026-10-10). Silent to the person stays right; silent to us is
+    /// how three collected trees went missing with no way to say why.
+    @discardableResult
+    public static func push(account: Account, entry: Saved.Entry?, treeId: String) async -> String? {
+        guard let s = await account.freshSession() else { return "no_session" }
+        var failed: [String] = []
         guard let entry else {
-            await Supa.delete("/rest/v1/saves?tree_id=eq.\(treeId)", token: s.accessToken)
-            await Supa.delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)
-            return
+            if !(await Supa.delete("/rest/v1/saves?tree_id=eq.\(treeId)", token: s.accessToken)) { failed.append("saves") }
+            if !(await Supa.delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)) { failed.append("visited") }
+            return failed.isEmpty ? nil : failed.joined(separator: ",")
         }
         if entry.favourite {
-            await Supa.post("/rest/v1/saves?on_conflict=user_id,tree_id", token: s.accessToken,
-                       body: [["user_id": s.userId, "tree_id": treeId]])
+            if !(await Supa.post("/rest/v1/saves?on_conflict=user_id,tree_id", token: s.accessToken,
+                       body: [["user_id": s.userId, "tree_id": treeId]])) { failed.append("saves") }
         } else {
             // The heart came off a tree that is still collected: the row goes
             // from saves and the visit below stays, which is exactly what
             // toggleSaved does locally.
-            await Supa.delete("/rest/v1/saves?tree_id=eq.\(treeId)", token: s.accessToken)
+            if !(await Supa.delete("/rest/v1/saves?tree_id=eq.\(treeId)", token: s.accessToken)) { failed.append("saves") }
         }
         if let v = entry.visitedAt {
-            await Supa.post("/rest/v1/visited?on_conflict=user_id,tree_id", token: s.accessToken,
-                       body: [["user_id": s.userId, "tree_id": treeId, "visited_at": day(v)]])
+            if !(await Supa.post("/rest/v1/visited?on_conflict=user_id,tree_id", token: s.accessToken,
+                       body: [["user_id": s.userId, "tree_id": treeId, "visited_at": day(v)]])) { failed.append("visited") }
         } else {
-            await Supa.delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)
+            if !(await Supa.delete("/rest/v1/visited?tree_id=eq.\(treeId)", token: s.accessToken)) { failed.append("visited") }
         }
+        return failed.isEmpty ? nil : failed.joined(separator: ",")
     }
 
     /// Delete the `saves` rows the old push rule created, once per phone.

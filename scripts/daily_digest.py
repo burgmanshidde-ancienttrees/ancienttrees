@@ -2724,7 +2724,10 @@ def app_section(today):
     # Same reasoning as the website's list above: a missing row is the loudest
     # signal here and an empty result hides it.
     known = ["app_open", "tab", "tree_opened", "directions",
-             "tree_saved", "tree_visited", "sighting_recorded"]
+             "tree_saved", "tree_visited", "sighting_recorded",
+             # A change that did not reach the account (2026-10-10): signed
+             # out, no session, or a refused write. Zero is the healthy row.
+             "sync_skipped", "sync_failed"]
 
     rows = _posthog(
         """
@@ -2887,7 +2890,7 @@ def app_section(today):
     ticks = _posthog(
         """
         SELECT toDate(timestamp), properties.tree, substring(distinct_id, 1, 4),
-               properties.build
+               properties.build, properties.signed_in
         FROM events
         WHERE event = 'tree_visited'
               AND timestamp >= now() - INTERVAL 14 DAY %s
@@ -2905,12 +2908,14 @@ def app_section(today):
         out.append("")
         out.append("**Trees collected in the app** (14 days, a person standing at the tree)")
         out.append("")
-        out.append("| Day | Tree | Where | Install | Build |")
-        out.append("|---|---|---|---|---|")
-        for day, tid, inst, build in ticks:
+        out.append("| Day | Tree | Where | Install | Build | Signed in |")
+        out.append("|---|---|---|---|---|---|")
+        for day, tid, inst, build, signed in ticks:
             name, city = names.get(tid, (tid or "?", "?"))
-            out.append("| %s | %s | %s | %s | %s |" % (
-                str(day)[5:10], name, city, inst or "?", build or "?"))
+            # Blank before the app version that sends it (2026-10-10).
+            out.append("| %s | %s | %s | %s | %s | %s |" % (
+                str(day)[5:10], name, city, inst or "?", build or "?",
+                signed or "?"))
 
     return "\n".join(out)
 

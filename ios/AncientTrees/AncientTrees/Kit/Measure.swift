@@ -116,6 +116,13 @@ public enum Measure {
     private static let queueKey = "measure.queue.v1"
     private static let queueCap = 50
 
+    /// WHETHER AN ACCOUNT WAS SIGNED IN when the event happened, yes or no and
+    /// nothing else: never which account (Hidde, 2026-10-10, after three ticks
+    /// reached PostHog and none reached the visited table, and nothing could
+    /// say whether the person was signed out or the write had failed). Set by
+    /// ContentView, which is the one place that knows about the account.
+    public static var signedIn = false
+
     /// Record one thing somebody did. Never blocks, never retries in the moment,
     /// never surfaces an error: a measurement that costs somebody a spinner has
     /// cost more than it is worth.
@@ -127,6 +134,7 @@ public enum Measure {
         p["app_version"] = version
         p["os"] = "iOS \(ProcessInfo.processInfo.operatingSystemVersion.majorVersion)"
         p["build"] = build
+        p["signed_in"] = signedIn ? "yes" : "no"
         let body: [String: Any] = [
             "api_key": key,
             "event": name,
