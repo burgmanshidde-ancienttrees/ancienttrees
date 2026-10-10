@@ -104,7 +104,7 @@ const U = ui(lang);
         <button type="button" class="sheet-b sheet-b--primary amb-send">{U.ambassadorAskSend}</button>
         <button type="button" class="sheet-b sheet-b--quiet amb-later">{U.ambassadorNotNow}</button>
       </div>
-      <p class="at-sheet-fine amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
+      {/* No address on this step; the receipt names it (Hidde, 2026-10-10). */}
     </div>
     <div class="amb-step amb-sent" data-step="sent" hidden>
       <span class="at-sheet-tile"><Fragment set:html={icon("check", "bold")} /></span>

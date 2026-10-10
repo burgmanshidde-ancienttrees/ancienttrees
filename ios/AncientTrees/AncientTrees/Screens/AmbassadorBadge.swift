@@ -271,8 +271,11 @@ struct AmbassadorApplySheet: View {
                 buttons: [
                     .primary(sending ? "Sending" : "Apply", id: "ambassador-apply") { if !sending { apply() } },
                     .quiet("Not now") { dismiss() },
-                ],
-                footnote: writeTo.isEmpty ? nil : writeTo.trimmingCharacters(in: .whitespaces))
+                ])
+            // No address on this step (Hidde, 2026-10-10: "dont say we will
+            // contact email - just only do it at the second overlay once
+            // confirmed"): the receipt names it, once there is something to
+            // write about.
         }
     }
 }
