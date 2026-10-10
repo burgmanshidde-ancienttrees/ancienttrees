@@ -168,3 +168,7 @@ For organisations and people who have never written to us. Mail 1 asks for help 
 > Hidde
 
 **Mail 2**, to anyone who says yes or sends a tree or photo: thank them for what they sent, then make it official: "We'd love to name you as the [city] ambassador on the page, the person who helps look after it." Their name only on their yes (two consents, CLAUDE.md), and the line about signing in with this address so the badge finds their account.
+
+## How to describe the role, in one honest paragraph (Hidde, 2026-10-09)
+
+On a draft to Kerry Pickett (Brighton) that said an ambassador "never has to go looking", Hidde: "dit is niet helemaal eerlijk". The role as he describes it: you keep an eye on whether the list is right; a new tree on your place reaches you; checking the details and adding a photo through the app is welcome and never required; and mostly it shows other people that somebody local stands behind the list. Use that, and never promise it costs nothing at all.
