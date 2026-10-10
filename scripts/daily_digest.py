@@ -2878,6 +2878,40 @@ def app_section(today):
                    "Signed out it stays on the phone, so this count can run "
                    "ahead of the trees and photographs we actually receive.")
 
+    # WHICH TREES WERE COLLECTED (Hidde, 2026-10-10: "I don't think it was me,
+    # which trees were seen"). tree_visited only fires when somebody signed in
+    # stands at a tree and confirms it, from the map's arrival card or a
+    # photograph, so each row is a person outside in front of a named tree:
+    # the north star happening. The count alone cannot say where, so the trees
+    # are named, with a short install id so one walker reads as one walker.
+    ticks = _posthog(
+        """
+        SELECT toDate(timestamp), properties.tree, substring(distinct_id, 1, 4),
+               properties.build
+        FROM events
+        WHERE event = 'tree_visited'
+              AND timestamp >= now() - INTERVAL 14 DAY %s
+        ORDER BY timestamp DESC
+        """ % and_ours, key, project)
+    if ticks:
+        names = {}
+        for fp in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+            try:
+                c = json.load(open(fp))
+            except ValueError:
+                continue
+            for t in c.get("trees", []):
+                names[t.get("id")] = (t.get("name"), c.get("city"))
+        out.append("")
+        out.append("**Trees collected in the app** (14 days, a person standing at the tree)")
+        out.append("")
+        out.append("| Day | Tree | Where | Install | Build |")
+        out.append("|---|---|---|---|---|")
+        for day, tid, inst, build in ticks:
+            name, city = names.get(tid, (tid or "?", "?"))
+            out.append("| %s | %s | %s | %s | %s |" % (
+                str(day)[5:10], name, city, inst or "?", build or "?"))
+
     return "\n".join(out)
 
 
