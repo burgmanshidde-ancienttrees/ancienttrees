@@ -242,6 +242,11 @@ def role_in_first_mail_hits(path, text):
     for m in mails:
         if m.get("in_reply_to") or m.get("resend_reason"):
             continue
+        # One door for an exception, per mail and in his words, never a
+        # switch: 2026-10-10 he asked for the role in a first mail to the
+        # Freiburg Umweltschutzamt, whom the Forstamt had pointed us to.
+        if (m.get("role_ok_because") or "").strip():
+            continue
         hit = role.search(m.get("body") or "")
         if hit:
             hits.append(("ROLE IN MAIL 1", hit.group(0),
