@@ -222,7 +222,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You are looking for a grove rather than one tree, about thirty giant sequoias standing close enough together to change the light underneath them. They fill Parc Barton, off the Rue de Lausanne."
+      "how_to_recognise": "You are looking for a grove rather than one tree, about thirty giant sequoias standing close enough together to change the light underneath them. They fill Parc Barton, off the Rue de Lausanne.",
+      "official_register": {
+        "name": "Arbres particuliers (Ville de Genève)",
+        "url": "https://www.geneve.ch/sequoias-parc-barton/"
+      }
     },
     {
       "id": "gen_006",
@@ -252,7 +256,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it as the one big tree in the middle of the traffic circle, 35 metres tall over a trunk 4.25 metres round. It stands on the Place du Cirque."
+      "how_to_recognise": "You can recognise it as the one big tree in the middle of the traffic circle, 35 metres tall over a trunk 4.25 metres round. It stands on the Place du Cirque.",
+      "official_register": {
+        "name": "250 arbres à découvrir (Ville de Genève)",
+        "url": "https://www.geneve.ch/themes/environnement-urbain-espaces-verts/ville-nature/arbres/250-arbres-decouvrir/platane-place-cirque"
+      },
+      "girth_cm": 425,
+      "height_m": 35
     },
     {
       "id": "gen_007",
@@ -341,7 +351,11 @@
         "kind": "fruit"
       },
       "height_m": 37.0,
-      "verify_notes": "Height 37.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 37.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 231592",
+        "url": null
+      }
     },
     {
       "id": "gen_009",
@@ -381,7 +395,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 34.0,
-      "verify_notes": "Height 34.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 34.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 211415",
+        "url": null
+      }
     },
     {
       "id": "gen_010",
@@ -422,7 +440,11 @@
         "kind": "fruit"
       },
       "height_m": 40.0,
-      "verify_notes": "Height 40.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 40.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 73169",
+        "url": null
+      }
     },
     {
       "id": "gen_011",
@@ -463,7 +485,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 30.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 285081",
+        "url": null
+      }
     },
     {
       "id": "gen_012",
@@ -495,7 +521,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 38.0,
-      "verify_notes": "Height 38.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 38.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 176607",
+        "url": null
+      }
     },
     {
       "id": "gen_013",
@@ -527,7 +557,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 17.0,
-      "verify_notes": "Height 17.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 17.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 60372",
+        "url": null
+      }
     },
     {
       "id": "gen_014",
@@ -559,7 +593,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 19.0,
-      "verify_notes": "Height 19.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 19.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 62525",
+        "url": null
+      }
     },
     {
       "id": "gen_015",
@@ -592,7 +630,11 @@
       },
       "height_m": 31.0,
       "verify_notes": "Height 31.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it by its crown, 38 metres wide, wider than the tree is tall, ringed by barriers meant to keep bicycles off it. It stands alone on the Promenade des Bastions."
+      "how_to_recognise": "You can recognise it by its crown, 38 metres wide, wider than the tree is tall, ringed by barriers meant to keep bicycles off it. It stands alone on the Promenade des Bastions.",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 220263",
+        "url": null
+      }
     },
     {
       "id": "gen_016",
@@ -604,17 +646,18 @@
       "girth_cm": 330,
       "location": {
         "address": "Place de l'Université, facing Uni Bastions",
-        "latitude": 46.19859,
-        "longitude": 6.14411,
+        "latitude": 46.198588,
+        "longitude": 6.144115,
         "neighbourhood": "Bastions"
       },
       "verified_sources": [
         "https://vector.sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE/FeatureServer/0 (SITG canton register, id_arbre 223030, REMARQUABLE=Autre, observed 2024-10-16, vitality Bon)",
-        "http://web.archive.org/web/20250722034140/https://www.tdg.ch/ces-arbres-remarquables-qui-racontent-geneve-462792647437 (Tribune de Genève, city arborist Roger Beer)"
+        "http://web.archive.org/web/20250722034140/https://www.tdg.ch/ces-arbres-remarquables-qui-racontent-geneve-462792647437 (Tribune de Genève, city arborist Roger Beer)",
+        "https://vector.sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE/FeatureServer/0 (SITG record ID_ARBRE 223030, Celtis australis, point geometry queried in WGS84; marks one hackberry of the row, pavement/pedestrian zone)"
       ],
       "access": "Free, open public square at any time",
       "transport": "Central Vieille-Ville/Plainpalais, a few minutes' walk from Bel-Air or Plainpalais tram stops",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "A fungus is eating these three from the inside, and the city said so itself. In 2020 Geneva's arborist told the Tribune de Genève that the micocouliers de Provence on the Place de l'Université are being hollowed out and risk coming down, which is a candid thing for a municipality to volunteer about trees it has listed as remarkable. The canton's inventory then recorded good vitality at its last field visit in 2024. Both readings can be true of a hollowing tree, which is why these are watched rather than felled.\n\nThere are three of them, standing together facing the entrance of Uni Bastions, close enough to read as one destination and collected here as one; the pin marks the group rather than a particular trunk. At this spot the register measures 3.3 metres of girth and 18 metres of height. They went in during the early 20th century, and the exact year is not recoverable from the record.\n\nMediterranean hackberry is a southern species living at the cool edge of its range in Geneva, which is part of why a set of them at this size is worth the canton's attention. In Provence its wood was the standard material for pitchforks, whip handles and walking sticks, chosen because it bends a long way before it breaks. These three have shaded a century of students crossing the square, and are now being tested from the inside instead.",
       "photo": {
@@ -625,7 +668,17 @@
       },
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You are looking for three trees standing together facing the entrance of Uni Bastions, each about 3.3 metres round and 18 metres tall, and hollowing out from the inside."
+      "how_to_recognise": "You are looking for three trees standing together facing the entrance of Uni Bastions, each about 3.3 metres round and 18 metres tall, and hollowing out from the inside.",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 223030",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://vector.sitg.ge.ch/arcgis/rest/services/SIPV_ICA_ARBRE_ISOLE/FeatureServer/0 (SITG record ID_ARBRE 223030, Celtis australis, point geometry queried in WGS84; marks one hackberry of the row, pavement/pedestrian zone)",
+        "date": "2026-10-10",
+        "moved_m": 0
+      }
     },
     {
       "id": "gen_017",
@@ -658,7 +711,11 @@
       },
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it as the true parent species behind the ordinary London plane, near the stump of a sequoia lightning killed in 1993. It stands at the Chateau de Penthes."
+      "how_to_recognise": "You can recognise it as the true parent species behind the ordinary London plane, near the stump of a sequoia lightning killed in 1993. It stands at the Chateau de Penthes.",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 177764",
+        "url": null
+      }
     },
     {
       "id": "gen_018",
@@ -691,7 +748,11 @@
       },
       "height_m": 12.0,
       "verify_notes": "Height 12.0 m from the geneva-sitg-arbres-remarquables register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it by being nearly twice as wide as it is tall, a 20 metre crown over just 12 metres of height. It stands at the main entrance of the Cimetiere des Rois."
+      "how_to_recognise": "You can recognise it by being nearly twice as wide as it is tall, a 20 metre crown over just 12 metres of height. It stands at the main entrance of the Cimetiere des Rois.",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 286334",
+        "url": null
+      }
     },
     {
       "id": "gen_019",
@@ -724,7 +785,11 @@
         "status": "missing"
       },
       "height_m": 28.0,
-      "how_to_recognise": "You can recognise it by its conifer form, a girth that would take three adults to encircle, about ninety metres from the Secheron Plane. It stands off Avenue de France."
+      "how_to_recognise": "You can recognise it by its conifer form, a girth that would take three adults to encircle, about ninety metres from the Secheron Plane. It stands off Avenue de France.",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 65964",
+        "url": null
+      }
     },
     {
       "id": "gen_020",
@@ -757,7 +822,11 @@
         "status": "missing"
       },
       "height_m": 34.0,
-      "how_to_recognise": "You can recognise it as the larger and fresher of two cedars planted the same year, 5 metres round and 34 metres tall. It stands near the Avenue de la Paix entrance of the Jardin botanique."
+      "how_to_recognise": "You can recognise it as the larger and fresher of two cedars planted the same year, 5 metres round and 34 metres tall. It stands near the Avenue de la Paix entrance of the Jardin botanique.",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 260351",
+        "url": null
+      }
     },
     {
       "id": "gen_021",
@@ -790,7 +859,11 @@
         "status": "missing"
       },
       "height_m": 29.0,
-      "how_to_recognise": "You can recognise it as the park's second, less-visited cedar, over 5.5 metres round, tellable from the Cedar of Lebanon by its cones. It stands near Avenue Alice-et-William-Favre."
+      "how_to_recognise": "You can recognise it as the park's second, less-visited cedar, over 5.5 metres round, tellable from the Cedar of Lebanon by its cones. It stands near Avenue Alice-et-William-Favre.",
+      "official_register": {
+        "name": "Inventaire des arbres isolés (SITG, République et canton de Genève), no. 94697",
+        "url": null
+      }
     }
   ]
 }

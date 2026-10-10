@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "geneva",
+   "kind": "enrich",
+   "tokens": 156369,
+   "trees": 0,
+   "note": "SITG ids on 13 trees, 2 city pages, 1 pin"
+  },
+  {
+   "date": "2026-10-10",
    "target": "seattle",
    "kind": "enrich",
    "tokens": 150851,
