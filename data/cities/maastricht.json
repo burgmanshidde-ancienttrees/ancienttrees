@@ -35,14 +35,15 @@
       "age_max": 280,
       "location": {
         "address": "Molenweg 1a, Amby",
-        "latitude": 50.8534549,
-        "longitude": 5.7374452,
+        "latitude": 50.853553,
+        "longitude": 5.737959,
         "neighbourhood": "Amby"
       },
       "story": "Nobody can say exactly when this tree was planted, and the people who study it are refreshingly honest about that. Standing beside the entrance gate of the Prickaerts family farm in Amby, this sweet chestnut has a trunk 25 metres tall and, as of a 2021 measurement, just over six metres around, up from 5.25 metres when first recorded in 1986. The national tree register estimates it was planted between 1750 and 1800; a 2022 assessment by Monumental Trees suggested 1800, plus or minus 40 years. A persistent local story credits Russian Cossack troops with planting it during the 1814 blockade of Maastricht, but researchers who looked into Cossack military behaviour during that campaign found the tale, in their own words, highly unrealistic, and no supporting evidence has ever surfaced. Only a dendrochronological core sample would settle the question with any precision, and none had been taken as of the most recent published research, part of an ongoing joint study between the Bomenstichting and Wageningen University sampling several of Maastricht's oldest trees. Until that happens, this chestnut carries its age the same way it carries its twisted, weather-beaten trunk: honestly, and without pretending to a certainty nobody has actually earned.",
       "verified_sources": [
         "https://amiepedia.nl/index.php/Tamme_kastanje_Molenweg_-_deel_1",
-        "https://www.thuisinmaastricht.nl/actueel/artikel/reusachtige-tamme-kastanjeboom-1-van-de-oudste-bomen-van-maastricht"
+        "https://www.thuisinmaastricht.nl/actueel/artikel/reusachtige-tamme-kastanjeboom-1-van-de-oudste-bomen-van-maastricht",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1 (LRMB register point for nr 1679950, about 40 m from our pin: https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679950&outFields=*&outSR=4326&f=json)"
       ],
       "access": "On private farmland, visible from the public access road",
       "transport": "About 4km northeast of Maastricht centre, in Amby; reachable by bus or a 15-minute bike ride",
@@ -53,7 +54,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           10
@@ -61,7 +62,19 @@
         "label": "October, when the spiny husks split and the nuts fall",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the twisted, weather-beaten trunk, just over six metres round when measured in 2021 and 25 metres tall. It stands beside the entrance gate of the Prickaerts farm in Amby, visible from the access road."
+      "how_to_recognise": "You can recognise it by the twisted, weather-beaten trunk, just over six metres round when measured in 2021 and 25 metres tall. It stands beside the entrance gate of the Prickaerts farm in Amby, visible from the access road.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679950",
+        "url": null
+      },
+      "girth_cm": 606,
+      "height_m": 23,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1 (LRMB register point for nr 1679950, about 40 m from our pin: https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679950&outFields=*&outSR=4326&f=json)",
+        "date": "2026-10-10",
+        "moved_m": 38
+      }
     },
     {
       "id": "maa_002",
@@ -72,14 +85,15 @@
       "age_max": 155,
       "location": {
         "address": "Algemene Begraafplaats Tongerseweg",
-        "latitude": 50.8410656,
-        "longitude": 5.6632307,
+        "latitude": 50.840205,
+        "longitude": 5.663764,
         "neighbourhood": "Wyckerpoort"
       },
       "story": "Some of the honour squares in Maastricht's oldest surviving cemetery were planted not with the usual yews or cypresses but with giant sequoias, a species native to a single mountain range in California and almost never found in a 19th-century Dutch burial ground. The cemetery itself has taken Maastricht's dead since 1812, making it one of the oldest municipal cemeteries in the Netherlands, and its brick chapel and the towering sequoias are what most visitors remember. The largest measures 6.85 metres around and 36.6 metres tall, roughly 150 years old, among the thickest specimens of its kind recorded anywhere in the country, though no longer the tallest: other Dutch sequoias have since overtaken it in height while it kept adding girth instead. Planting a species built to eventually reach 90 metres and outlive the Roman Empire in a graveyard designed for individual human memory is its own quiet statement, whether or not the 19th-century planners intended it that way. The cemetery, now a national heritage monument holding more than a thousand trees in total, remains open to visitors during normal hours, sequoias included.",
       "verified_sources": [
         "https://www.bomenstichting.nl/infotheek-en-faq/informatie-over-bomen/mammoetboom.html",
-        "https://nl.wikipedia.org/wiki/Algemene_Begraafplaats_Tongerseweg"
+        "https://nl.wikipedia.org/wiki/Algemene_Begraafplaats_Tongerseweg",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1 (LRMB register point for nr 1679963 (Mammoetboom begraafplaats Tongerseweg, Tongerseweg 292, status Monumentaal; register notes the crown was damaged and sawn off in 2021), about 100 m from our pin: https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679963&outFields=*&outSR=4326&f=json)"
       ],
       "access": "Free, cemetery open to visitors during normal daytime hours",
       "transport": "15-20 minute walk or short bus ride from Maastricht centre",
@@ -90,10 +104,20 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "girth_cm": 685,
       "height_m": 36.6,
-      "how_to_recognise": "You can recognise them as the only giant sequoias among a cemetery's usual yews and cypresses, the largest 6.85 metres round and 36.6 metres tall. They stand in the honour squares of the Tongerseweg cemetery."
+      "how_to_recognise": "You can recognise them as the only giant sequoias among a cemetery's usual yews and cypresses, the largest 6.85 metres round and 36.6 metres tall. They stand in the honour squares of the Tongerseweg cemetery.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679963",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1 (LRMB register point for nr 1679963 (Mammoetboom begraafplaats Tongerseweg, Tongerseweg 292, status Monumentaal; register notes the crown was damaged and sawn off in 2021), about 100 m from our pin: https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679963&outFields=*&outSR=4326&f=json)",
+        "date": "2026-10-10",
+        "moved_m": 103
+      }
     },
     {
       "id": "maa_003",
@@ -131,7 +155,13 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise them as the oldest oaks in a wood of oak, elm, beech and alder, about 300 years on from Van Dopff's star planting. They stand along the forest's edge, on the slope above Kasteel Neercanne."
+      "how_to_recognise": "You can recognise them as the oldest oaks in a wood of oak, elm, beech and alder, about 300 years on from Van Dopff's star planting. They stand along the forest's edge, on the slope above Kasteel Neercanne.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695625",
+        "url": null
+      },
+      "girth_cm": 397,
+      "height_m": 24
     },
     {
       "id": "maa_004",
@@ -199,7 +229,12 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "height_m": 39.0,
-      "how_to_recognise": "You can recognise it as the tallest of three planes in a row, 39 metres against its neighbours' 37.5 and 36.5. It stands beside Van Heylerhofflaan on the edge of Stadspark, and it is not the park's thickest plane."
+      "how_to_recognise": "You can recognise it as the tallest of three planes in a row, 39 metres against its neighbours' 37.5 and 36.5. It stands beside Van Heylerhofflaan on the edge of Stadspark, and it is not the park's thickest plane.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696504",
+        "url": null
+      },
+      "girth_cm": 508
     },
     {
       "id": "maa_006",
@@ -319,7 +354,9 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its cluster of black walnuts in Monseigneur Nolenspark, near the weeping silver limes along the water. It stands close to the tallest recorded plane in the Netherlands on Van Heylerhofflaan."
+      "how_to_recognise": "You can recognise it by its cluster of black walnuts in Monseigneur Nolenspark, near the weeping silver limes along the water. It stands close to the tallest recorded plane in the Netherlands on Van Heylerhofflaan.",
+      "girth_cm": 347,
+      "height_m": 34
     },
     {
       "id": "maa_009",
@@ -349,7 +386,9 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its shimmering silver-backed leaves along the bank of the moated Haet ende Nijt monument. It stands in Monseigneur Nolenspark, a short walk from the black walnuts and tulip trees."
+      "how_to_recognise": "You can recognise it by its shimmering silver-backed leaves along the bank of the moated Haet ende Nijt monument. It stands in Monseigneur Nolenspark, a short walk from the black walnuts and tulip trees.",
+      "girth_cm": 420,
+      "height_m": 32
     },
     {
       "id": "maa_010",
@@ -386,7 +425,9 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its squared-off leaf tips, unlike almost any other tree in the park. It stands as a pair near Van Heylerhofflaan in Monseigneur Nolenspark, close to the record plane row."
+      "how_to_recognise": "You can recognise it by its squared-off leaf tips, unlike almost any other tree in the park. It stands as a pair near Van Heylerhofflaan in Monseigneur Nolenspark, close to the record plane row.",
+      "girth_cm": 385,
+      "height_m": 38
     },
     {
       "id": "maa_011",
@@ -477,14 +518,15 @@
       "age_max": 140,
       "location": {
         "address": "Proosdijpark, ter hoogte van de kerksteeg, Meerssen",
-        "latitude": 50.882864,
-        "longitude": 5.752402,
+        "latitude": 50.882815,
+        "longitude": 5.752441,
         "neighbourhood": "Meerssen village centre"
       },
       "story": "The tulip tree is not a European tree at all. It belongs to the forests of the eastern United States, where it grows taller than almost anything else that drops its leaves in winter, and this one has spent roughly the last century doing it in a village park in Limburg, ten minutes on foot from Meerssen station.\n\nIt hides its best trick in plain sight. In June the crown fills with greenish-yellow cups streaked orange at the base, shaped near enough like tulips to have named the species, and held so high that most people walk under a flowering tree without seeing a single flower. The leaves settle the identification from the ground: four lobes and a flat top, as though someone took scissors to the tip. In October the whole crown turns clear yellow.\n\nIts age is softer than it looks written down. The register that records this tree puts the planting at around 1900 and marks even that with a question mark, so call it a century and leave room on either side. Nobody has put a tape around the trunk either. If you know when it went in, tell us.\n\nIt stands in the Proosdijpark, a listed monument site in the middle of the village, free and open, on the side towards the kerksteeg.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/tulpenboom-meerssen/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688177&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688177&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1 (LRMB register point for nr 1688177 (Tulpenboom, Meerssen, Stationstraat 41, bij theekoepel Proosdijpark, status Monumentaal, bezoekbaar ja), about 6 m from our pin: https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688177&outFields=*&outSR=4326&f=json)"
       ],
       "access": "Free, in a public municipal park (Proosdijpark, a listed Rijksmonument site)",
       "transport": "Meerssen NS railway station, about 10 minutes' walk",
@@ -502,11 +544,17 @@
         "label": "October, when the whole crown turns clear yellow"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by the leaves, four lobes with a flat top as though the tip were cut off with scissors, and by the clear yellow it turns in October. It stands in the Proosdijpark, on the side towards the kerksteeg.",
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688177",
         "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1 (LRMB register point for nr 1688177 (Tulpenboom, Meerssen, Stationstraat 41, bij theekoepel Proosdijpark, status Monumentaal, bezoekbaar ja), about 6 m from our pin: https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688177&outFields=*&outSR=4326&f=json)",
+        "date": "2026-10-10",
+        "moved_m": 6
       }
     },
     {
@@ -566,7 +614,11 @@
       "curation_status": "flagged",
       "story": "Maastricht's most famous plane tree, the tallest in the Netherlands, stands about 240 metres from these three, and nobody has ever put an age on it. This trio does have one, of a sort. The national register places them in the planting years 1880 to 1890, roughly 136 to 146 years, and its own history note says they presumably date from the 1886 expansion that carried the Stadspark westward into Mgr. Nolenspark and Henri Hermanspark. Presumably is the register's own word and it is the honest one: the expansion is documented, the year these three went into the ground is not.\n\nThree planes of one generation standing together read differently from a single record-breaker. This is a stand rather than a specimen, the kind of planting a nineteenth-century park designer made because the London plane took coal smoke, compacted soil and hard pruning better than anything else available, and because a row of them would eventually close overhead.\n\nNo source beyond the register names these three individually, which is the one thin part of their paperwork. Everything around them is better documented and closer than you would expect: the park's black walnuts, its weeping silver limes and its pair of tulip trees all stand within about a hundred metres, so the whole group is ten minutes of walking.",
       "how_to_recognise": "You can recognise them as a group of three planes of one generation standing together, bark flaking cream and olive. They stand along Van Heylerhofflaan; the Netherlands' tallest plane is a separate tree 240 metres off.",
-      "height_m": 39
+      "height_m": 39,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696504",
+        "url": null
+      }
     },
     {
       "id": "maa_019",
