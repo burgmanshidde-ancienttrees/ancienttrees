@@ -158,6 +158,78 @@
    "lng": 25.216455,
    "status": "lead",
    "why": "Existence corroborated by a second independent source (the same vietoves.lt Vilniaus rajono savivaldybė natural-heritage catalogue fetched for the Mickūnai oak also lists 'Žudiškių ąžuolas' by name), but again with no age, girth, address or condition beyond the register's own bare entry. At 18km from centre this is farther out than the already-deprioritised Dirkliškių miško ąžuolas (13.7km, 'likely beyond the 30-minute public transport day-trip boundary' per an earlier pass) and no transit check was attempted this pass given the time budget; treat as probably beyond the day-trip boundary until checked, and lower priority than the closer leads in this file."
+  },
+  {
+   "id": "vln_005",
+   "name": "The Nine-Trunked Willow of Sereikiškės",
+   "species": "Willow (Salix sp., species not established)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Bernardinai Garden (Sereikiškių Park), central path area",
+    "latitude": 54.68517,
+    "longitude": 25.29585,
+    "neighbourhood": "Užupis / Old Town"
+   },
+   "story": "Nine trunks, one tree. The count sits in the tree's official name rather than in a description someone added later: it is registered as the devynkamienis gluosnis, the nine-trunked willow, and the encyclopedia entry for the garden calls it exactly the same thing.\n\nMulti-stemmed trees are the running theme of Bernardinai Garden. Within a few hundred metres of this willow stand a four-trunked large-leaved lime and an ash whose own sources cannot agree whether it has three trunks or four. Whether that is old coppicing grown out, storm damage, or simply what a wet riverside park does to its trees, nobody has written down.\n\nNor has anyone dated this one, and no source commits to which willow it is. White willow and crack willow are both ordinary in Lithuanian parks and the register stops at the genus. Both of those gaps are the kind a person standing in front of the tree could close in a minute, so if you get close enough to look, tell us what you see.\n\nIt has been protected as a municipal heritage object since 1996, stands beside the main path through the garden about ten minutes from Cathedral Square, and shares a short walk with the oldest oak in the city.",
+   "verified_sources": [
+    "data/registers/lithuania-stvk-gpo.json register_id 0310505210003 (Sereikiškių parko devynkamienis gluosnis)",
+    "https://lt.wikipedia.org/wiki/Bernardin%C5%B3_sodas (lists \"Sereikiškių parko devynkamienis gluosnis\" by the same exact name among the 1996 municipally-protected heritage trees of the garden)"
+   ],
+   "access": "Free, inside Bernardinai Garden (Sereikiškių Park), open daily",
+   "transport": "10-15 min walk from Cathedral Square, same park as the oldest oak",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Nine trunks rising from one base, beside the main path. Nothing else in the garden looks like it.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-10",
+   "removed_reason": "vln_005: lt.wikipedia lists the Nine-Trunked Willow as decayed (sunykes) and delisted from the 2017 protected list; vln_012: stands in the closed grounds of the Obelele kindergarten, no evidence of public access (school rule, hard rule 10)"
+  },
+  {
+   "id": "vln_012",
+   "name": "The Lazdynai Linden",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "location": {
+    "address": "Bukčiai forest, near the Neris bend, Lazdynai district, Vilnius",
+    "latitude": 54.6813,
+    "longitude": 25.221004,
+    "neighbourhood": "Lazdynai"
+   },
+   "story": "Lazdynai is a housing estate that won a Lenin Prize. Built from 1974 by architects Vytautas Cekanauskas and Vytautas Bredikis, its blocks were fitted around the hills and forest rather than the other way round, and the Soviet Union's own architecture establishment held it up as a model of how a modern district could keep its ground. Most of what got kept was the pine forest. This linden is what got protected inside it.\n\nIt stands in the Bukciai woods, in the bend the Neris river makes at the southern edge of the district, which puts it on the wilder side of an estate built to look wild on purpose. Vilnius listed it as a natural heritage object, one small-leaved linden among the district's preserved stands, without recording an address more specific than the forest itself, and without dating it.\n\nA linden growing wild in a river-bend wood ages differently from one planted in a courtyard, slower and less watched, which is probably why nobody wrote its age down. If you have stood under it and can say how thick the trunk is, or roughly how tall, tell us. The forest around it has outlasted the Soviet Union; the tree, going by the wood it grows in, may have been there before either.",
+   "verified_sources": [
+    "data/registers/lithuania-stvk-gpo.json register_id 0310505050027",
+    "https://lt.wikipedia.org/wiki/Lazdynai_(Vilnius)"
+   ],
+   "access": "Free, in the public Bukciai forest area within the Lazdynai district",
+   "transport": "Lazdynai is served by Vilnius city buses; the forest sits at the district's southern edge, a walk from the nearest stops",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A small-leaved linden standing in the Bukciai forest at the southern edge of Lazdynai, near where the Neris river bends; no marker beyond the district's own natural heritage listing.",
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "best_time": {
+    "months": [
+     6,
+     7
+    ],
+    "label": "June to July, when it flowers",
+    "kind": "flowers"
+   },
+   "removed": "2026-10-10",
+   "removed_reason": "vln_005: lt.wikipedia lists the Nine-Trunked Willow as decayed (sunykes) and delisted from the 2017 protected list; vln_012: stands in the closed grounds of the Obelele kindergarten, no evidence of public access (school rule, hard rule 10)"
   }
  ],
  "blocked": [
