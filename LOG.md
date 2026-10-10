@@ -27,6 +27,8 @@ Istanbul: 5 trees (ist_007, 011, 012, 013, 014) got Turkiye Anit Agaclari regist
 
 Cyprus: only cyp_004 gained (girth 820 cm, height 38 m from Cyprus Post's centennial trees page, a secondary official source). No Cypriot register on disk and no per-tree record found. The olive's 60 m height on cyprusisland.net is a known false figure and was not used. Cyprus is a poor enrichment lane until a register is scouted.
 
+Nijmegen: 13 trees. The downloaded Dutch register file has no girth or height, so the agent queried the Bomenstichting live layer (stamomtrek cm, hoogte m) by register number; register ids recorded for 7, girth/height on 10, and best_time October to November (autumn colour) on the two beeches nij_015/017. The Julianaboom's register coordinate is 150 m from our approximate pin, but the pin was refused for lack of a source URL; it needs a look.
+
 Nara: thin yield. One register record added (nra_006 Kasuga Taisha nagi, Nara City's own page for that tree); 21 gaps dead-ended. nra_003's Byakugo-ji camellia only has a line on a list page, so I did not record it as a record. The ministry giant-tree database gives facility points, not trunks, so Nara's pin gaps stay open.
 
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website

@@ -157,7 +157,8 @@
       "verified_sources": [
         "https://nl.wikipedia.org/wiki/Julianapark_(Nijmegen)",
         "https://www.monumentaltrees.com/nl/nld/gelderland/nijmegen/10895_julianapark/21342/",
-        "https://duurzaamaltrade.nl/cultuurhistorie/julianapark-en-begraafplaats/"
+        "https://duurzaamaltrade.nl/cultuurhistorie/julianapark-en-begraafplaats/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683991&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Nijmegen-Oost, Altrade neighbourhood; 20 minute walk or short bus ride from the city centre",
@@ -177,7 +178,12 @@
         "label": "September and October, when the conkers ripen and fall",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the white horse chestnut, the one dated tree in a small residential park. It stands in Julianapark in Altrade, on former cemetery ground, planted on 4 September 1948 when Juliana became queen."
+      "how_to_recognise": "You can recognise it by the white horse chestnut, the one dated tree in a small residential park. It stands in Julianapark in Altrade, on former cemetery ground, planted on 4 September 1948 when Juliana became queen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683991",
+        "url": null
+      },
+      "girth_cm": 364
     },
     {
       "id": "nij_005",
@@ -224,7 +230,8 @@
       },
       "story": "This hornbeam stands close enough to Krayenhoffpark's giant sequoia to be mistaken for an afterthought planted in the famous tree's shadow, but it is roughly the same age and belongs to a species the Dutch have grown for a very different reason. Where the sequoia was an imported curiosity, hornbeam is a native workhorse, historically clipped into hedges and avenues across the Low Countries because it tolerates hard pruning and holds its dead brown leaves through winter, giving a bare hedge some cover even in the coldest months.\n\nThe register dates this one to somewhere around 1900 to 1910, planted while the Biezen neighbourhood around it was still going up to house railway workers from the nearby yards. Left to grow naturally rather than clipped, as this one has been, hornbeam reaches a modest, broad-crowned shape closer to a beech than to the tight hedge most people picture. It grows a few metres from the park's sequoia, free, in the same small green space that gives an otherwise unremarkable railway district its one patch of shade older than most of the houses around it.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1688015)"
+        "data/registers/netherlands-lrmb.json (nr 1688015)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688015&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Biezen neighbourhood, Nijmegen; short walk from Nijmegen railway station via Voorstadslaan",
@@ -236,7 +243,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the hornbeam standing close enough to the park's giant sequoia to seem planted in its shadow. It stands in Krayenhoffpark, Nijmegen."
+      "how_to_recognise": "You can recognise it as the hornbeam standing close enough to the park's giant sequoia to seem planted in its shadow. It stands in Krayenhoffpark, Nijmegen.",
+      "height_m": 20
     },
     {
       "id": "nij_008",
@@ -254,7 +262,8 @@
       "story": "Four Catholic parishes petitioned Nijmegen's city council in 1884 for permission to open a shared cemetery on the Daalseweg, and the bishop of 's-Hertogenbosch consecrated it the following June. The city architect Jan Jacob Weve designed the grounds around two broad paths crossing at right angles, lined with copper beeches he is himself buried among, and this sweet chestnut grows on the cemetery's west side from roughly the same founding decade. The cemetery closed to new burials in 1948 when a replacement opened elsewhere, and many graves were later cleared for housing, but the grounds survived intact enough to be named a national heritage site in 2002.\n\nThe cemetery holds a harder history than most: 300 victims of the February 1944 bombing of Nijmegen, a raid that killed roughly 800 people in a single afternoon, were buried here. Sweet chestnut is not native this far north, introduced originally by the Romans for its edible nuts, and this one has stood through the cemetery's whole active life and its decades since as a protected historic ground rather than a working one. It grows in the open, free to visit during normal cemetery hours, a short walk from Julianapark's own commemorative chestnut.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1687751)",
-        "https://nl.wikipedia.org/wiki/Begraafplaats_Daalseweg"
+        "https://nl.wikipedia.org/wiki/Begraafplaats_Daalseweg",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687751&outFields=*&f=json"
       ],
       "access": "Free, public cemetery, open during normal daytime hours",
       "transport": "Altrade neighbourhood, Nijmegen; about a 20 minute walk from Nijmegen railway station",
@@ -273,7 +282,9 @@
         "label": "October: chestnuts in spiny burs, ripe and gatherable in October",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the leaves and spiny fruit husks of a sweet chestnut, standing free in the open. It grows on the west side of Begraafplaats Daalseweg."
+      "how_to_recognise": "You can recognise it by the leaves and spiny fruit husks of a sweet chestnut, standing free in the open. It grows on the west side of Begraafplaats Daalseweg.",
+      "girth_cm": 388,
+      "height_m": 16
     },
     {
       "id": "nij_009",
@@ -293,7 +304,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1678473; onder bronvermelding te gebruiken)",
         "https://www.bomengids.nl/kabouterboom.html",
-        "https://bomenbieb.nl/bijzondere-bomen/kabouterboom-beek/"
+        "https://bomenbieb.nl/bijzondere-bomen/kabouterboom-beek/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678473&outFields=*&f=json"
       ],
       "access": "Free. Woodland on the Heerlijkheid Beek estate, open to walkers.",
       "transport": "About 4.5 km east of Nijmegen centre. Bus 5 or 8 towards Beek, then a walk up into the Kastanjedal.",
@@ -314,7 +326,12 @@
         ],
         "label": "October: chestnuts in spiny burs, ripe and gatherable in October",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678473",
+        "url": null
+      },
+      "height_m": 26
     },
     {
       "id": "nij_010",
@@ -353,6 +370,10 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696070",
+        "url": null
       }
     },
     {
@@ -372,7 +393,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen v2024, Bomenstichting, nr 1696558; onder bronvermelding te gebruiken)",
         "https://www.bartholomeuskerkje.nl/",
-        "https://nl.wikipedia.org/wiki/Sint-Bartholomaeuskerk_(Beek_(Berg_en_Dal))"
+        "https://nl.wikipedia.org/wiki/Sint-Bartholomaeuskerk_(Beek_(Berg_en_Dal))",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696558&outFields=*&f=json"
       ],
       "access": "Free. Open churchyard.",
       "transport": "About 4.7 km east of Nijmegen centre, on the Rijksstraatweg at Beek. Bus 5 or 8.",
@@ -393,7 +415,13 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696558",
+        "url": null
+      },
+      "girth_cm": 620,
+      "height_m": 9
     },
     {
       "id": "nij_012",
@@ -412,7 +440,8 @@
       "verified_sources": [
         "https://nl.wikipedia.org/wiki/Hertogplein",
         "https://woneninnijmegen.blog/2025/04/04/wilhelminaboom/",
-        "data/registers/netherlands-lrmb.json (nr 1681246)"
+        "data/registers/netherlands-lrmb.json (nr 1681246)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681246&outFields=*&f=json"
       ],
       "access": "Free, a public square in the city centre, open at all times",
       "transport": "About a 15 minute walk from Nijmegen Centraal station",
@@ -424,7 +453,9 @@
       },
       "how_to_recognise": "The lime inside the small wrought iron fence topped with crowns, on the west side of Hertogplein.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 210,
+      "height_m": 16
     },
     {
       "id": "nij_013",
@@ -442,7 +473,8 @@
       "story": "Park Leeuwenstein is what is left of a demolished mansion's garden, and this magnolia is what is left of its exotic specimen trees. Villa Leeuwenstein went up in the mid-1800s and came down in 1958, too dilapidated to save, but the trees its owners planted around it kept growing after the house did not. A storm on 18 January 2018 took the park's giant sequoia and a swamp cypress in one night, leaving this tree, the beverboom, as the park's oldest surviving specimen.\n\nBeverboom is old Dutch for magnolia, specifically for Magnolia virginiana, though the exact species growing here has not been confirmed. A 2023 local survey of the park still listed a cucumber magnolia, Magnolia acuminata, among its special trees, and it may be the same tree the national register pins here by coordinate rather than by name. Acuminata flowers greenish yellow after its leaves open in late spring; virginiana flowers cream white and fragrant in early summer. A photograph at flowering time would settle it.\n\nWhichever it is, the register dates the planting to the 1880s, roughly 140 years, a specimen tree that has already outlived the house it was planted beside and two of its own neighbours.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1680530)",
-        "https://woneninnijmegen.blog/2023/08/16/park-leeuwenstein/"
+        "https://woneninnijmegen.blog/2023/08/16/park-leeuwenstein/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680530&outFields=*&f=json"
       ],
       "access": "Free, public municipal park, open at all times",
       "transport": "About 2.9 km from Nijmegen city centre, Nijmegen-West",
@@ -454,7 +486,9 @@
       },
       "how_to_recognise": "One of Park Leeuwenstein's older specimen trees, a magnolia rather than the usual park planting; ask locally which one is the registered beverboom.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "girth_cm": 233,
+      "height_m": 13
     },
     {
       "id": "nij_014",
@@ -520,7 +554,15 @@
       },
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise it by its crown, which pours down toward the ground instead of spreading upward. It stands right of the entrance gate at Begraafplaats Daalseweg, the first tree you meet."
+      "how_to_recognise": "You can recognise it by its crown, which pours down toward the ground instead of spreading upward. It stands right of the entrance gate at Begraafplaats Daalseweg, the first tree you meet.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October to November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "nij_016",
@@ -583,7 +625,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "how_to_recognise": "You can recognise it by its near-black, red-purple leaves. It stands on the boundary of the Sint Antonius Abtkerk and its rectory on Dennenstraat, older than the church beside it.",
-      "girth_cm": 413
+      "girth_cm": 413,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October to November, when the copper leaves deepen before they fall",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "nij_018",
@@ -602,7 +652,8 @@
       "verified_sources": [
         "Landelijk Register van Monumentale Bomen (Bomenstichting), register nr 1681250",
         "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0), record IDs 2827/2830/2831 (IND_MONUMENTAAL=Ja, Acer saccharinum, plantjaar 1930), matched within 5-25m of the register coordinate",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681250&outFields=*&f=json"
       ],
       "access": "Free. Public street tree on municipal ground (owner_category 'gemeente' in the register), visible and accessible at all times.",
       "transport": "About 1.3 km southeast of Nijmegen railway station, in the Nijmegen-Oost neighbourhood; roughly 15-20 minutes on foot or a short bus ride.",
@@ -615,7 +666,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the mature maple on the municipal verge at Sumatraplein 24, marked only 'potentieel' rather than a confirmed monument."
+      "how_to_recognise": "You can recognise it as the mature maple on the municipal verge at Sumatraplein 24, marked only 'potentieel' rather than a confirmed monument.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681250",
+        "url": null
+      }
     },
     {
       "id": "nij_019",
@@ -634,7 +689,8 @@
       "verified_sources": [
         "Landelijk Register van Monumentale Bomen (Bomenstichting/LRMB), register nr 1681242 (status 3/monumentaal, owner gemeente, visitable=ja, visible=ja, tree-level coordinates, planted_band 1830-1840)",
         "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 794: Aesculus hippocastanum, IND_MONUMENTAAL=Ja, plantjaar 1920, stamdiameter 75-100cm, hoogte 18-24m, straat 'Park Brakkenstein'. Coordinate converted from the record's RD (EPSG:28992) point to WGS84 (standard Kadaster approximation formula, verified against a known reference point) lands 1.2m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox: a genuine tree-level match, not a coincidence of a dense planting.",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681242&outFields=*&f=json"
       ],
       "access": "Free. Park Brakkenstein / Landgoed Brakkenstein is a public city park in south Nijmegen (Heijendaal), used for walking and recreation; the star-forest (sterrenbos) layout dates to 18th-century maps. Confirmed as public via nl.wikipedia.org/wiki/Park_Brakkenstein and monumenten.nl/monument/522933 (Rijksmonument description), both fetched directly. The 1865 neoclassical villa beside which this tree stands is now an event/restaurant venue (landgoedbrakkesteyn.nl); the surrounding park grounds themselves are ordinary open parkland, not gated.",
       "transport": "South Nijmegen, Heijendaal area near Radboud University and Radboud UMC; nearest bus stop not pinned this pass, honest gap.",
@@ -655,7 +711,11 @@
         "kind": "flowers"
       },
       "how_to_recognise": "You can recognise it by its trunk, about 2.75 metres round, standing by the manor villa at Landgoed Brakkenstein, 15 metres from the beech.",
-      "height_m": 17
+      "height_m": 17,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681242",
+        "url": null
+      }
     },
     {
       "id": "nij_020",
@@ -674,7 +734,8 @@
       "verified_sources": [
         "Landelijk Register van Monumentale Bomen (Bomenstichting/LRMB), register nr 1681241 (status 3/monumentaal, owner gemeente, visitable=ja, visible=ja, tree-level coordinates, planted_band 1830-1840)",
         "Gemeente Nijmegen open data, Bomen dataset (WFS layer extern_BOR_Groen:GRN_BOMEN, CC-BY 4.0, https://opendata.nijmegen.nl/dataset/bomen/7c209197-fe2c-4173-901d-22ffee2d9db5), record ID 2577: Fagus sylvatica, IND_MONUMENTAAL=Ja, plantjaar 1880, stamdiameter 125-150cm, hoogte 24m and higher, straat 'Park Brakkenstein'. Coordinate converted from RD (EPSG:28992) to WGS84 lands 2.9m from the LRMB coordinate above, the closest match by a wide margin among ~140 trees in the surrounding bbox.",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681241&outFields=*&f=json"
       ],
       "access": "Free. Same public city park as nij_019 (Park Brakkenstein / Landgoed Brakkenstein), roughly 15m from that horse chestnut, both described by the register as standing 'bij het landhuis'. See nij_019 for the access sources.",
       "transport": "South Nijmegen, Heijendaal area near Radboud University and Radboud UMC; nearest bus stop not pinned this pass, honest gap. Same location as nij_019.",
@@ -696,7 +757,11 @@
         "kind": "autumn colour"
       },
       "how_to_recognise": "You can recognise it by its trunk, over 4 metres round, thicker than its listed planting date would suggest. It stands 15 metres from the horse chestnut at Landgoed Brakkenstein.",
-      "height_m": 26
+      "height_m": 26,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681241",
+        "url": null
+      }
     },
     {
       "id": "nij_022",
