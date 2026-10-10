@@ -458,6 +458,10 @@
         "moved_m": 0,
         "date": "2026-10-05",
         "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      },
+      "official_register": {
+        "name": "Kamigyo Ward Pride Trees (上京区民の誇りの木)",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012431.html"
       }
     },
     {
@@ -489,7 +493,13 @@
       "curation_status": "flagged",
       "notes": "No age figure exists in any source; the ward register records dimensions only. Second source (Ministry of Environment) corroborates that trees of this scale exist in Kyoto Gyoen but does not name this one, so this is effectively single-sourced and flagged for that reason. Coordinates are a gate-position estimate, not a GPS fix on the trunk.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the trunk, 4.29 metres round under a crown 29.6 metres wide. It stands just inside Ishiyakushi-gomon on the Teramachi-dori side, 1.1 kilometres from the hackberry at the Demizu gate."
+      "how_to_recognise": "You can recognise it by the trunk, 4.29 metres round under a crown 29.6 metres wide. It stands just inside Ishiyakushi-gomon on the Teramachi-dori side, 1.1 kilometres from the hackberry at the Demizu gate.",
+      "official_register": {
+        "name": "Kamigyo Ward Pride Trees (上京区民の誇りの木)",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012402.html"
+      },
+      "girth_cm": 429,
+      "height_m": 22.0
     },
     {
       "id": "kyo_013",
@@ -520,7 +530,13 @@
       "curation_status": "flagged",
       "notes": "Effectively single-sourced: Wikipedia confirms the shrine's identity, 1885 founding and coordinates but its tree content covers only the katsura known locally as the Tree of Love, not this hackberry. No age given anywhere. The story states the katsura distinction explicitly so a visitor does not mistake one tree for the other. Coordinates are the shrine's, not the tree's position within the grounds.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its size, 21 metres tall on a trunk 3.72 metres round, and by not being the katsura the shrine is known for. It stands in the walled precinct on Teramachi-dori against Kyoto Gyoen's east wall."
+      "how_to_recognise": "You can recognise it by its size, 21 metres tall on a trunk 3.72 metres round, and by not being the katsura the shrine is known for. It stands in the walled precinct on Teramachi-dori against Kyoto Gyoen's east wall.",
+      "official_register": {
+        "name": "Kamigyo Ward Hundred Historic Sites and Pride Trees (上京区の史蹟百選・誇りの木)",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012315.html"
+      },
+      "girth_cm": 372,
+      "height_m": 21.0
     },
     {
       "id": "kyo_014",
@@ -546,7 +562,8 @@
       "verified_sources": [
         "https://www.city.kyoto.lg.jp/kamigyo/page/0000012542.html",
         "https://tabiiro.jp/leisure/s/216563-kyoto-goou-jinja/",
-        "https://ja.wikipedia.org/wiki/護王神社"
+        "https://ja.wikipedia.org/wiki/護王神社",
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012542.html (ward page lists the ginkgo at the shrine); OSM way 345029419 puts the whole shrine footprint about 40 x 70 m around our pin"
       ],
       "access": "Free to enter the shrine precinct.",
       "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 5 minute walk",
@@ -559,7 +576,17 @@
       "curation_status": "ai_generated",
       "notes": "Age is a source estimate ('several hundred years', tabiiro.jp), not a measured figure, hence the wide age_min/age_max band and the hedged phrasing in the story. Wikipedia confirms the shrine's identity and coordinates but names only a quince as its notable tree, so it is used for location only. Coordinates are the shrine's; the tree stands north of the honden and is not itself GPS-fixed.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by being the tallest thing on the grounds, 25 metres on a trunk 3.18 metres round, the largest of six ginkgos here. It stands north of the main hall, behind the stone boars at the gate."
+      "how_to_recognise": "You can recognise it by being the tallest thing on the grounds, 25 metres on a trunk 3.18 metres round, the largest of six ginkgos here. It stands north of the main hall, behind the stone boars at the gate.",
+      "official_register": {
+        "name": "Kamigyo Ward Hundred Historic Sites and Pride Trees (上京区の史蹟百選・区民誇りの木)",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012542.html"
+      },
+      "girth_cm": 318,
+      "height_m": 25.0,
+      "location_site": {
+        "name": "Goo Shrine precinct",
+        "radius_m": 50.0
+      }
     },
     {
       "id": "kyo_016",
@@ -588,7 +615,11 @@
       },
       "how_to_recognise": "You can recognise it by the acorns on the gravel beneath it, sweet where oak acorns are bitter, and by a trunk 2.78 metres round under 14.6 metres of evergreen crown. It stands at the Omiya gate on the south side.",
       "girth_cm": 278,
-      "height_m": 14.6
+      "height_m": 14.6,
+      "official_register": {
+        "name": "Kamigyo Ward Pride Trees (上京区民の誇りの木)",
+        "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012424.html"
+      }
     },
     {
       "id": "kyo_018",

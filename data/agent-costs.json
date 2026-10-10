@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "kyoto",
+   "kind": "enrich",
+   "tokens": 169387,
+   "trees": 0,
+   "note": "Kamigyo ward records on 5 trees, measurements on 3, one small site"
+  },
+  {
+   "date": "2026-10-10",
    "target": "budapest",
    "kind": "enrich",
    "tokens": 181232,
