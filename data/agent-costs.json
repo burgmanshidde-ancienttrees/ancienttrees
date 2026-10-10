@@ -10164,6 +10164,15 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "stockholm",
+   "kind": "enrich",
+   "tokens": 141386,
+   "trees": 0,
+   "note": "nothing found: lansstyrelsen PDF timed out, no per-tree register pages; wasted",
+   "wasted": 141386
+  },
+  {
+   "date": "2026-10-10",
    "target": "netherlands-lrmb-bulk",
    "kind": "enrich",
    "tokens": 0,
