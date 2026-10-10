@@ -39,6 +39,10 @@ Cork: 12 trees. Ireland has no per-tree register pages, so the Heritage Trees of
 
 Dallas: 1 of 12 closed (dal_003 got the Texas Big Tree Registry id 2356; no registry measurements copied because its licence is non-commercial). txhtc.org sits behind a captcha for curl, amlegal.com returns 403, Dallas Heritage Village fails DNS: blocklist candidates, and Dallas needs a session with a browser.
 
+Venice: 1 of 10 (ven_007 opening hours from veneziaunica.it). The MASAF register has no row matching any of our Venice trees (checked all 5,007 rows within 3 km), and four of our entries are collective garden records. Venice is a dead lane for the register gap.
+
+Window summary: seven cities enriched, about 85 trees touched; the last three passes (Dallas, Venice, Cyprus) closed one tree each at roughly 150k tokens apiece, so the enrich queue's remaining cities are now a poor buy until new register sources are scouted. Nothing in this window added a tree.
+
 Nara: thin yield. One register record added (nra_006 Kasuga Taisha nagi, Nara City's own page for that tree); 21 gaps dead-ended. nra_003's Byakugo-ji camellia only has a line on a list page, so I did not record it as a record. The ministry giant-tree database gives facility points, not trunks, so Nara's pin gaps stay open.
 
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
