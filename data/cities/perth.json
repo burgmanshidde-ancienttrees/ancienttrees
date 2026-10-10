@@ -44,7 +44,8 @@
       "verified_sources": [
         "https://www.bgpa.wa.gov.au/gija-jumulu",
         "https://en.wikipedia.org/wiki/Gija_Jumulu",
-        "https://www.wa.gov.au/government/media-statements/Carpenter%20Labor%20Government/Giant-boab-puts-down-roots-in-Kings-Park-20080720"
+        "https://www.wa.gov.au/government/media-statements/Carpenter%20Labor%20Government/Giant-boab-puts-down-roots-in-Kings-Park-20080720",
+        "https://www.bgpa.wa.gov.au/gija-jumulu (page states 18 metres tall at relocation in 2008)"
       ],
       "access": "Free, Kings Park is open daily",
       "transport": "Kings Park, walkable from Perth CBD (~2-3 km) or via CAT bus/Kings Park shuttle",
@@ -69,7 +70,11 @@
         "height": 3456
       },
       "how_to_recognise": "You can recognise it by its swollen, bottle-shaped grey trunk, bare through the dry season. It stands at the Two Rivers Lookout, at the end of the Forrest Carpark in Kings Park.",
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "Botanic Gardens and Parks Authority, Kings Park attraction page (Gija Jumulu)",
+        "url": "https://www.bgpa.wa.gov.au/gija-jumulu"
+      }
     },
     {
       "id": "per_002",
@@ -137,7 +142,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its low, wide branches filling the forecourt between the office tower and The Cloisters' old brickwork. It stands at 202 St Georges Terrace."
+      "how_to_recognise": "You can recognise it by its low, wide branches filling the forecourt between the office tower and The Cloisters' old brickwork. It stands at 202 St Georges Terrace.",
+      "official_register": {
+        "name": "inHerit, Heritage Council of WA (Place 04380, Port Jackson Fig, Mt Newman House; City of Perth Heritage List, classified by the National Trust)",
+        "url": "https://inherit.dplh.wa.gov.au/public/inventory/printsinglerecord/7a49751f-e3e0-4596-b144-e084c7219fa6"
+      },
+      "height_m": 18
     },
     {
       "id": "per_004",
@@ -206,7 +216,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the damage: three quarters of the canopy gone, the trunk ringbarked in 1997, and fresh shoots along its northern side. It stands beside the carpark where the primary school used to be."
+      "how_to_recognise": "You can recognise it by the damage: three quarters of the canopy gone, the trunk ringbarked in 1997, and fresh shoots along its northern side. It stands beside the carpark where the primary school used to be.",
+      "official_register": {
+        "name": "inHerit, Heritage Council of WA (Place 09009, Jarrah Tree, Armadale; State Register of Heritage Places)",
+        "url": "https://inherit.dplh.wa.gov.au/public/inventory/details/6e3eaf7e-a3ca-4843-a21f-bad1f8e1da9e"
+      }
     },
     {
       "id": "per_006",
@@ -245,7 +259,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the short one among Fraser Avenue's tall pale lemon-scented gums, 11 metres tall and two metres through the trunk. In high summer it covers itself in scarlet flower heads."
+      "how_to_recognise": "You can recognise it as the short one among Fraser Avenue's tall pale lemon-scented gums, 11 metres tall and two metres through the trunk. In high summer it covers itself in scarlet flower heads.",
+      "official_register": {
+        "name": "National Trust of Australia (WA) Register of Significant Trees",
+        "url": "https://trusttrees.org.au/tree/WA/West_Perth/1082_Kings_Park_Road"
+      },
+      "height_m": 11
     }
   ]
 }
