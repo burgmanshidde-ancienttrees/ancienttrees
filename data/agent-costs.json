@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "leipzig",
+   "kind": "enrich",
+   "tokens": 155816,
+   "trees": 0,
+   "note": "Naturdenkmal ids on 18 trees; no measurements found"
+  },
+  {
+   "date": "2026-10-10",
    "target": "kyoto",
    "kind": "enrich",
    "tokens": 169387,
