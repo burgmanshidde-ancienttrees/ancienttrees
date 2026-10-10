@@ -31,6 +31,12 @@ Warsaw batch 2: 12 more trees with CRFOP records, 10 with girth/height from the 
 
 Istanbul: 5 trees (ist_007, 011, 012, 013, 014) got Turkiye Anit Agaclari register ids and girth/height, matched by coordinate (0 to 3 m). ist_001 dropped: the register calls that plane Platanus acerifolia where we say orientalis, so someone should look at the species before taking its 1753 cm. ist_004's register (868 cm) disagrees with our cited source (1030 cm); left open. ist_009's cited register URL is a Küçükçekmece tree, not Büyükada: the source looks wrong.
 
+Cyprus: only cyp_004 gained (girth 820 cm, height 38 m from Cyprus Post's centennial trees page, a secondary official source). No Cypriot register on disk and no per-tree record found. The olive's 60 m height on cyprusisland.net is a known false figure and was not used. Cyprus is a poor enrichment lane until a register is scouted.
+
+Nijmegen: 13 trees. The downloaded Dutch register file has no girth or height, so the agent queried the Bomenstichting live layer (stamomtrek cm, hoogte m) by register number; register ids recorded for 7, girth/height on 10, and best_time October to November (autumn colour) on the two beeches nij_015/017. The Julianaboom's register coordinate is 150 m from our approximate pin, but the pin was refused for lack of a source URL; it needs a look.
+
+Cork: 12 trees. Ireland has no per-tree register pages, so the Heritage Trees of Ireland dataset (NBDC Dataset 27, CC BY 4.0) record keys went in as register ids for 10 trees (the copy in data/registers/ held only Dublin, the agent re-downloaded the whole file); Blarney and Fota access lines now carry opening hours from their own sites, Blarney has no price found. The register grid is 100 m precise, so no pins were upgraded.
+
 Nara: thin yield. One register record added (nra_006 Kasuga Taisha nagi, Nara City's own page for that tree); 21 gaps dead-ended. nra_003's Byakugo-ji camellia only has a line on a list page, so I did not record it as a record. The ministry giant-tree database gives facility points, not trunks, so Nara's pin gaps stay open.
 
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
