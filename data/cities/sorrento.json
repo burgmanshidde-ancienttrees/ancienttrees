@@ -59,7 +59,11 @@
       "height_m": 11.0,
       "verify_notes": "Height 11.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 318,
-      "how_to_recognise": "You can recognise it by the shape, 3.18 metres round and stopping at eleven metres, spread rather than tall. It stands on the terrace over the bay, and the two official records place it 60 metres apart."
+      "how_to_recognise": "You can recognise it by the shape, 3.18 metres round and stopping at eleven metres, spread rather than tall. It stands on the terrace over the bay, and the two official records place it 60 metres apart.",
+      "official_register": {
+        "name": "Alberi monumentali della Campania (Regione Campania)",
+        "url": "https://agricoltura.regione.campania.it/foreste/monum/scheda_64.html"
+      }
     },
     {
       "id": "srn_002",
@@ -93,7 +97,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 418,
-      "how_to_recognise": "You can recognise it by the flat, spreading head of a mature stone pine, trunk 4.18 metres round, the largest of the park's protected pines. It stands in Villa Fondi De Sangro, beside the archaeological museum."
+      "how_to_recognise": "You can recognise it by the flat, spreading head of a mature stone pine, trunk 4.18 metres round, the largest of the park's protected pines. It stands in Villa Fondi De Sangro, beside the archaeological museum.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/G568/NA/15",
+        "url": null
+      }
     },
     {
       "id": "srn_003",
@@ -126,7 +134,11 @@
       "height_m": 10.0,
       "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 266,
-      "how_to_recognise": "You can recognise it by the trunk, 2.66 metres round, reading as a column rather than a spire. It is not the thickest here: two other registered cypresses stand at 2.70 and 3.25 metres."
+      "how_to_recognise": "You can recognise it by the trunk, 2.66 metres round, reading as a column rather than a spire. It is not the thickest here: two other registered cypresses stand at 2.70 and 3.25 metres.",
+      "official_register": {
+        "name": "Alberi monumentali della Campania (Regione Campania)",
+        "url": "https://agricoltura.regione.campania.it/foreste/monum/scheda_38.html"
+      }
     },
     {
       "id": "srn_004",
@@ -159,7 +171,11 @@
       "height_m": 9.0,
       "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 295,
-      "how_to_recognise": "You can recognise it as the more imposing of two planes at the corner, trunk 2.95 metres round, marking the second-to-last bend on the climb to the cemetery. It stands at Via Gennaro Maresca and Via Formiello."
+      "how_to_recognise": "You can recognise it as the more imposing of two planes at the corner, trunk 2.95 metres round, marking the second-to-last bend on the climb to the cemetery. It stands at Via Gennaro Maresca and Via Formiello.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 07/G568/NA/15",
+        "url": null
+      }
     },
     {
       "id": "srn_005",
@@ -177,11 +193,12 @@
       "story": "Sorrento's other cemetery cypress measures 2.66 metres round. This one is thicker: 3.25 metres, the widest trunk the national register lists in Piano di Sorrento's Cimitero Comunale, registered as Cipresso n. 2 alongside two siblings.\n\nThe dating is the same local testimony that covers all three: verbal accounts place the planting in 1876, the year the cemetery itself opened, which the Regione Campania's own card repeats and calls over 130 years old at its last update, nearer 150 now. No document backs the year, only memory passed down with the ground.\n\nAt over three metres round, an Italian cypress this thick reads as a squat column rather than the narrow dark spire the species is usually planted as elsewhere on the peninsula. The two official surveys of this tree, the national register and the regional card, disagree by 25 to 30 metres on exactly where in the cemetery it stands, so the pin here is honestly approximate rather than exact.\n\nPiano di Sorrento's municipal cemetery is free and open through the comune's daylight hours, one Circumvesuviana stop from Sorrento station and about fifteen minutes on foot up Via Gennaro Maresca, the same walk as its two sibling cypresses.",
       "verified_sources": [
         "https://agricoltura.regione.campania.it/foreste/monum/scheda_65.html",
-        "data/registers/italy-masaf.json (sheet 05/G568/NA/15, girth 325 cm, 40.629361/14.419611)"
+        "data/registers/italy-masaf.json (sheet 05/G568/NA/15, girth 325 cm, 40.629361/14.419611)",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_65.html (Coord GPS 40.629167, 14.419444)"
       ],
       "access": "Free, public municipal cemetery, open daily during standard daylight hours set by the Comune di Piano di Sorrento (hours vary seasonally). No permission needed to enter.",
       "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station, then about 15 minutes on foot uphill via Via Gennaro Maresca (same stop and walk as the already-published Cemetery Cypress, srn_003).",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -192,7 +209,17 @@
       "height_m": 10.0,
       "girth_cm": 325,
       "verify_notes": "Thickest of three cypresses the national MASAF register lists in this cemetery ('Cipresso n. 2 del Cimitero comunale'), the others being the already-published srn_003 (266 cm, 'n. 1') and srn_006 (270 cm, 'n. 3'). Regione Campania's scheda_65 (directly fetched) gives the same girth (325 cm) and the same 1876 planting tradition as srn_003. MASAF coordinates 40.629361/14.419611 vs Regione Campania 40.629167/14.419444 sit 25-30 m apart, hence approximate.",
-      "how_to_recognise": "You can recognise it as the thickest cypress in the cemetery, 3.25 metres round against the others' 2.66 and 2.70, a squat column rather than a spire. The records place it 30 metres apart, so look around."
+      "how_to_recognise": "You can recognise it as the thickest cypress in the cemetery, 3.25 metres round against the others' 2.66 and 2.70, a squat column rather than a spire. The records place it 30 metres apart, so look around.",
+      "official_register": {
+        "name": "Alberi monumentali della Campania (Regione Campania)",
+        "url": "https://agricoltura.regione.campania.it/foreste/monum/scheda_65.html"
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://agricoltura.regione.campania.it/foreste/monum/scheda_65.html (Coord GPS 40.629167, 14.419444)",
+        "date": "2026-10-10",
+        "moved_m": 0
+      }
     },
     {
       "id": "srn_006",
@@ -210,11 +237,12 @@
       "story": "Behind the cemetery's large chapel, at the gate on the main avenue, stands the third of Piano di Sorrento's registered cypresses: 2.70 metres round, a hand's width thicker than the smallest of the three and a metre short of the biggest.\n\nVerbal testimony gives all three the same birth year, 1876, when the Cimitero Comunale itself opened, a dating the Regione Campania's own tree card repeats rather than independently confirms. That makes it over 130 years old at the register's last update, closer to 150 by now, the same honest caveat that applies to its two neighbours.\n\nWhat sets this one apart, beyond its girth, is that it comes with an actual landmark: the register places it specifically at the gate on the main avenue behind the large chapel, rather than leaving a visitor to guess between three near-identical trunks. The two official surveys of its position agree within about five metres, tighter than either of its siblings manages, though the pin still reads approximate rather than confirmed.\n\nPiano di Sorrento's municipal cemetery is free, open through the comune's daylight hours, one Circumvesuviana stop from Sorrento station and about fifteen minutes uphill on Via Gennaro Maresca.",
       "verified_sources": [
         "https://agricoltura.regione.campania.it/foreste/monum/scheda_39.html",
-        "data/registers/italy-masaf.json (sheet 06/G568/NA/15, girth 270 cm, 40.628764/14.419186)"
+        "data/registers/italy-masaf.json (sheet 06/G568/NA/15, girth 270 cm, 40.628764/14.419186)",
+        "https://agricoltura.regione.campania.it/foreste/monum/scheda_39.html (Coord GPS 40.628722, 14.419191; card: gate on the main avenue behind the large chapel)"
       ],
       "access": "Free, public municipal cemetery, open daily during standard daylight hours set by the Comune di Piano di Sorrento (hours vary seasonally). No permission needed to enter.",
       "transport": "Circumvesuviana train from Sorrento station to Piano di Sorrento station, then about 15 minutes on foot uphill via Via Gennaro Maresca (same stop and walk as the already-published Cemetery Cypress, srn_003).",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -225,7 +253,17 @@
       "height_m": 10.0,
       "girth_cm": 270,
       "verify_notes": "Third of the trio, 'Cipresso n. 3 del Cimitero comunale' per Regione Campania scheda_39 (directly fetched), located at the gate on the main avenue behind the large chapel, a usable landmark. Same 1876 planting tradition and age caveat as srn_003 and srn_005. MASAF 40.628764/14.419186 vs Regione Campania 40.628722/14.419191 sit about 5 m apart, tighter than its siblings but still kept approximate.",
-      "how_to_recognise": "You can recognise it as the third of the cemetery's three cypresses, 2.70 metres round, standing behind the chapel at the gate on the main avenue. It stands in the Cimitero Comunale, Piano di Sorrento."
+      "how_to_recognise": "You can recognise it as the third of the cemetery's three cypresses, 2.70 metres round, standing behind the chapel at the gate on the main avenue. It stands in the Cimitero Comunale, Piano di Sorrento.",
+      "official_register": {
+        "name": "Alberi monumentali della Campania (Regione Campania)",
+        "url": "https://agricoltura.regione.campania.it/foreste/monum/scheda_39.html"
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://agricoltura.regione.campania.it/foreste/monum/scheda_39.html (Coord GPS 40.628722, 14.419191; card: gate on the main avenue behind the large chapel)",
+        "date": "2026-10-10",
+        "moved_m": 0
+      }
     },
     {
       "id": "srn_007",
@@ -258,7 +296,11 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 13/G568/NA/15",
+        "url": null
+      }
     }
   ]
 }
