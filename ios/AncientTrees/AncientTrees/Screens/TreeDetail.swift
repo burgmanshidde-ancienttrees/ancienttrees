@@ -49,6 +49,12 @@ struct TreeDetail: View {
     }
     @State private var removing = false
     @Environment(Navigator.self) private var navigator
+    @Environment(\.locationState) private var location
+    /// The Collect choice: a photograph, or the tick without one.
+    @State private var choosingCollect = false
+    /// What the choice asked for, run once its sheet has gone, because the
+    /// camera is presented by the root and two sheets cannot swap in one frame.
+    @State private var afterChoice: (() -> Void)?
     /// For the count in the summary line, which is the vote button drawn small.
     @Environment(VoteCounts.self) private var counts
     /// The hero shows the map instead of the photograph. A swap rather than a
@@ -452,6 +458,11 @@ struct TreeDetail: View {
                         local: sightings.image(s))
         }
         .sheet(isPresented: $sharing) { ShareSheet(items: shareItems) }
+        .sheet(isPresented: $choosingCollect, onDismiss: {
+            let run = afterChoice
+            afterChoice = nil
+            run?()
+        }) { collectChoice }
         .alert("That did not send", isPresented: $shareFailed) {
             Button("All right", role: .cancel) {}
         } message: {
@@ -1750,6 +1761,89 @@ struct TreeDetail: View {
         .accessibilityLabel(label)
     }
 
+    // THE BUTTON FOLLOWS THE DISTANCE (Hidde, 2026-10-10: "should it get
+    // directions again as main cta?", then "ok makes sense"). Further than
+    // 200 m, or when we do not know where you are, the way there leads, the
+    // Google and Apple Maps place page; within 200 m Collect leads, which is
+    // his 2026-10-09 ruling for the moment it was made for. Board "Tree page"
+    // on the Discover canvas.
+
+    /// How far you are from this tree, only from a real fix: the fallback
+    /// location is nobody's position and must not put a distance in a button.
+    private var kmAway: Double? {
+        guard location.known, let o = origin else { return nil }
+        return tree.distanceKm(from: o.lat, o.lng)
+    }
+
+    private var standingHere: Bool { (kmAway ?? .infinity) <= 0.2 }
+
+    private var takeMeThereLabel: String {
+        guard let d = kmAway else { return "Take me there" }
+        let far = d < 1 ? "\(Int((d * 1000 / 50).rounded() * 50)) m"
+            : d < 10 ? String(format: "%.1f km", d) : "\(Int(d.rounded())) km"
+        return "Take me there · " + far
+    }
+
+    private var collected: Bool { saved.isVisited(tree.id) }
+
+    /// Collecting without a photograph, from anywhere (Hidde, 2026-10-10:
+    /// "shouldnt you also be able to collect trees when you're not around").
+    /// The same gate as the map's arrival card: signed out, sign in first and
+    /// the tick lands after.
+    private func collectWithoutPhoto() {
+        guard account.isSignedIn else {
+            nudge.require(.keepTree(tree.name)) {
+                if !saved.isVisited(tree.id) { saved.toggleVisited(tree.id) }
+            }
+            return
+        }
+        if !saved.isVisited(tree.id) { saved.toggleVisited(tree.id) }
+    }
+
+    private var collectChoice: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Collect \(tree.name)")
+                .font(.brand(21, .bold, relativeTo: .title3))
+                .foregroundStyle(Brand.ink)
+                .fixedSize(horizontal: false, vertical: true)
+            Text("Your photograph goes in your trees instead of ours.")
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Button {
+                afterChoice = { navigator.collectAbout = tree.name; navigator.collectNearby = true }
+                choosingCollect = false
+            } label: {
+                Label("Take a photograph", systemImage: "camera")
+            }
+            .buttonStyle(BrandButtonStyle())
+            .accessibilityIdentifier("collect-with-photo")
+            Button {
+                afterChoice = { collectWithoutPhoto() }
+                choosingCollect = false
+            } label: {
+                Label(collected ? "Collected" : "Collect without a photograph",
+                      systemImage: collected ? "checkmark.seal.fill" : "checkmark.seal")
+            }
+            .buttonStyle(BrandButtonStyle(prominent: false))
+            .disabled(collected)
+            .accessibilityIdentifier("collect-no-photo")
+        }
+        .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .presentationDetents([.height(300)])
+        .presentationDragIndicator(.visible)
+    }
+
+    /// A 52 point circle in the bar, the same as the bookmark beside it.
+    private func barCircle(_ symbol: String) -> some View {
+        Image(systemName: symbol)
+            .font(.title3)
+            .foregroundStyle(Brand.moss)
+            .frame(width: 52, height: 52)
+            .background(Brand.surface, in: .circle)
+            .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+    }
+
     private var actionBar: some View {
         HStack(spacing: 10) {
             // The hand-off, and it is a REVERSAL of 2026-08-24, when this
@@ -1859,12 +1953,22 @@ struct TreeDetail: View {
                 // 2026-09-22 with a designer, confirmed 2026-10-09: "take me
                 // there en collect moeten omgedraaid in belangrijkheid", Take
                 // me there sends you out of the app).
-                Button { navigator.collectAbout = tree.name; navigator.collectNearby = true } label: {
-                    Label("Collect this tree", systemImage: "camera")
-                        .lineLimit(1)
+                if standingHere {
+                    Button { choosingCollect = true } label: {
+                        Label(collected ? "Collected" : "Collect this tree",
+                              systemImage: collected ? "checkmark.seal.fill" : "camera")
+                            .lineLimit(1)
+                    }
+                    .buttonStyle(BrandButtonStyle())
+                    .accessibilityIdentifier("tree-add-photo-bar")
+                } else {
+                    Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
+                        Label(takeMeThereLabel, systemImage: "arrow.turn.up.right")
+                            .lineLimit(1)
+                    }
+                    .buttonStyle(BrandButtonStyle())
+                    .accessibilityIdentifier("tree-take-me-there")
                 }
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("tree-add-photo-bar")
             }
 
             // NO photo button here. It lived beside "Take me there" for an
@@ -1884,18 +1988,22 @@ struct TreeDetail: View {
             // de main actie die we overal willen promoten is dat mensen foto's
             // maken"). Same circle as the heart, same size, same border: two
             // things you can do to a tree, drawn as two of the same control.
-            if mine == nil {
-                Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
-                    Image(systemName: "arrow.turn.up.right")
-                        .font(.title3)
-                        .foregroundStyle(Brand.moss)
-                        .frame(width: 52, height: 52)
-                        .background(Brand.surface, in: .circle)
-                        .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+            if mine == nil, !isDraft {
+                if standingHere {
+                    Button { Directions.walk(lat: tree.lat, lng: tree.lng) } label: {
+                        barCircle("arrow.turn.up.right")
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("tree-take-me-there")
+                    .accessibilityLabel("Take me there")
+                } else {
+                    Button { choosingCollect = true } label: {
+                        barCircle(collected ? "checkmark.seal.fill" : "checkmark.seal")
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("tree-add-photo-bar")
+                    .accessibilityLabel(collected ? "Collected" : "Collect this tree")
                 }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("tree-take-me-there")
-                .accessibilityLabel("Take me there")
             }
             // NOT ON YOUR OWN TREE: a tree you added is in your collection
             // already, so a heart on it saves it to the list it is on.

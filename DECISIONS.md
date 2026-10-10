@@ -1,5 +1,13 @@
 # Decisions
 
+## 2026-10-10: the tree page's main button follows the distance, and a tree can be collected without a photograph
+
+Hidde asked whether directions should be the main button again and whether collecting should need a photograph; he chose from board "Tree page" on the Discover canvas ("ok makes sense").
+
+**Decided.** Further than 200 m from a tree, or when the app has no real fix, the big button is "Take me there · 619 km" and Collect is a circle; within 200 m Collect is the big button and directions the circle. This partly reverses his 2026-10-09 ruling ("take me there en collect moeten omgedraaid in belangrijkheid", because Take me there leaves the app): it stands for the moment it was made for, standing at the tree, and no longer for a tree 600 km away. Collect, from anywhere, opens a choice: "Take a photograph" first, "Collect without a photograph" beside it; the photograph is the reward (your picture in My trees instead of ours), never the rule. Atlas Obscura's "Been here", geocaching's at-home "Found it" and Letterboxd all log after the fact on trust.
+
+**Dropped.** A "you were here" GPS mark on collected tiles (Hidde: "you both collected them"), which takes the GPS seal out of the Plus list of 2026-08-20. The website is unchanged: its tree page has had no tick since collecting became the app's, and its cards' tick already worked from anywhere.
+
 ## 2026-10-09: the fallback language pages go, finished pages return to the index, and enrichment covers whole cities
 
 A strategy session Hidde opened with "have a high level look at the goal product and market response so far", eleven days into the Google demotion. Three questions and one word, "Ok do this".

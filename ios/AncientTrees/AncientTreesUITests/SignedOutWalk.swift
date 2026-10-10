@@ -61,6 +61,16 @@ final class SignedOutWalk: XCTestCase {
         tap(app, "worthit-count"); expectSignIn(app, after: "worthit-count")
     }
 
+    func testCollectWithoutPhotoAsks() {
+        // The tree page's Collect opens a choice; its "without a photograph"
+        // is a tick and must ask for an account like every other tick. No
+        // -at=, so the page does not know where you are and Collect is the
+        // circle beside Take me there (Hidde, 2026-10-10).
+        let app = launch(["-tree=ams_001"])
+        tap(app, "tree-add-photo-bar")
+        tap(app, "collect-no-photo"); expectSignIn(app, after: "collect-no-photo")
+    }
+
     func testSeenTickAsks() {
         // The Seen tick is on the ARRIVAL card, which the map shows when the
         // phone stands within reach of a tree and nothing is selected. -at=

@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Tree page: the way there leads from far away, and collecting without a photograph
+
+**Changed, in the next app build:** a tree page more than 200 m away (or with no fix) leads with "Take me there · 619 km" and keeps Collect as a circle; within 200 m Collect leads. Collect opens a choice, a photograph or the tick without one, so trees can be filled in from anywhere; signed out it asks for an account first and ticks after. New signed-out test: testCollectWithoutPhotoAsks. Decision recorded in DECISIONS.md.
+
 ## 2026-10-10 (session) - 31 named people asked which tree we miss; Yahoo refuses our mail for want of DKIM
 
 **Sent on Hidde's word:** named-2026-10-10, 31 mails to named people (authors of the New York, Washington and Seattle tree books, arboretum curators, friends-of-park chairs, tree wardens, Rainer Lippert of monumentale-eichen.de). Contacts were found by seven research agents (about 1.6M tokens, ten times the estimate, because the coordinating agent fanned out to six) and live in data/outreach-contacts-named-2026-10-10.json, private. The new composer, scripts/outreach_named.py, makes mail 1 one concrete question rather than "can you help or know somebody", because the help asks of 10-06 to 10-09 drew one reply in ten and most of those were "I forwarded it".
