@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - 31 named people asked which tree we miss; Yahoo refuses our mail for want of DKIM
+
+**Sent on Hidde's word:** named-2026-10-10, 31 mails to named people (authors of the New York, Washington and Seattle tree books, arboretum curators, friends-of-park chairs, tree wardens, Rainer Lippert of monumentale-eichen.de). Contacts were found by seven research agents (about 1.6M tokens, ten times the estimate, because the coordinating agent fanned out to six) and live in data/outreach-contacts-named-2026-10-10.json, private. The new composer, scripts/outreach_named.py, makes mail 1 one concrete question rather than "can you help or know somebody", because the help asks of 10-06 to 10-09 drew one reply in ten and most of those were "I forwarded it".
+**First returns:** Friends of Greenwich Park passed it to a committee member; St Mary's Iffley is away until 23 October.
+**FOR HIDDE, deliverability:** Yahoo blocked the mail to Friends of Cammo: "Yahoo requires this sender to authenticate with DKIM ... DKIM = FAILURE". ancienttrees.app has no DKIM key and no DMARC record; SPF already names Google. Gmail's "send as" cannot DKIM-sign for our domain, so mail to Yahoo and AOL addresses will keep bouncing and other providers may file it as spam. The fix needs his accounts: a sender that signs for the domain (ImprovMX's SMTP, Google Workspace or a mail service), its DKIM key in DNS, and a DMARC record (p=none to start, free). Any paid option is his call under hard rule 5.
+
 ## 2026-10-10 (session) - My trees: Instagram's profile header, and the page follows the Discover design
 
 **Why:** Hidde: the three big numbers took "heel veel space" and felt less relevant; of three options he chose A, Instagram's, then "is dit exact hoe insta het doet", then "ok looks good lets build it". And "make it more consistent to" the Discover design finished in another session.
