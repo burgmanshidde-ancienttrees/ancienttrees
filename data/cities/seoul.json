@@ -148,7 +148,8 @@
       "official_register": {
         "name": "Seoul Metropolitan Monument No. 33 (Seoul Metropolitan Government), no. Seoul Monument 33 (KHS id 23,00330000,11), designated 2013-03-28",
         "url": null
-      }
+      },
+      "height_m": 25
     },
     {
       "id": "seo_004",
@@ -178,7 +179,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its bark, flaking into pale patches until whole sections look bone white, and its trunk splitting near the ground into what looks like two pines. It stands beside the Constitutional Court on Bukchon-ro."
+      "how_to_recognise": "You can recognise it by its bark, flaking into pale patches until whole sections look bone white, and its trunk splitting near the ground into what looks like two pines. It stands beside the Constitutional Court on Bukchon-ro.",
+      "height_m": 17
     },
     {
       "id": "seo_005",
@@ -215,7 +217,13 @@
         "kind": "autumn colour",
         "label": "November, when all the ginkgos on the intersection turn gold together"
       },
-      "how_to_recognise": "You are looking for the ginkgos standing in the middle of the five-road junction that is named after them. Accounts differ on whether there are two of them or three."
+      "how_to_recognise": "You are looking for the ginkgos standing in the middle of the five-road junction that is named after them. Accounts differ on whether there are two of them or three.",
+      "official_register": {
+        "name": "Seoul Metropolitan protected trees (서울특별시 보호수), Geumcheon-gu, no. 서18-1, 서18-2, 서18-3",
+        "url": null
+      },
+      "girth_cm": 860,
+      "height_m": 14
     },
     {
       "id": "seo_006",
@@ -337,7 +345,13 @@
         "kind": "flowers",
         "label": "July and August, when it drapes the courtyard in cream-colored flower clusters"
       },
-      "how_to_recognise": "You can recognise it as the one tree big enough to shade the whole courtyard in front of Jogyesa's main hall, dropping small cream flowers on the stones in July and August."
+      "how_to_recognise": "You can recognise it as the one tree big enough to shade the whole courtyard in front of Jogyesa's main hall, dropping small cream flowers on the stones in July and August.",
+      "official_register": {
+        "name": "Seoul Metropolitan protected tree (서울특별시 보호수) No. 서1-9, managed by the Jogyesa head temple, no. 서1-9",
+        "url": null
+      },
+      "girth_cm": 400,
+      "height_m": 26
     }
   ]
 }

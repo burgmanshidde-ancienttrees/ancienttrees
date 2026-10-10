@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "seoul",
+   "kind": "enrich",
+   "tokens": 175076,
+   "trees": 0,
+   "note": "measurements and protected-tree ids on 4 trees"
+  },
+  {
+   "date": "2026-10-10",
    "target": "beijing",
    "kind": "enrich",
    "tokens": 155024,

@@ -12,7 +12,8 @@
 - **Madeira:** IFCN ASMAC register sheets and measurements for 6 trees (two sheets have perimeter and height columns swapped, read by physical sense, noted in measure_source). The Witch Tree's OSM node matches our pin exactly but the answer carried no URL so the pin was not upgraded; the 4 garden trees stay open.
 - **Boston:** Arnold Arboretum accession ids and DBH-derived girths for 5 trees, NPS page, height, girth and hours for the Longfellow Linden. Leads for a next pass: the Meadow Road katsura's accession sits ~620 m from our pin (pin may be wrong), and the Arboretum white oak accession suggests a pin ~170 m away (refused for want of a source URL, not applied).
 - **San Francisco:** thin yield, 1 of 8: the Cork Oak of 20th Street got Landmark Tree No. 15. The Public Works list has no per-tree pages and sfenvironment.org returns 403 to every fetcher (blocklist candidate).
-- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k verify-agent tokens. No refusals except rm of scratch files.
+- **Seoul:** measurements for 4 trees, protected-tree ids (서18-1..3, 서1-9) for the Siheung-dong ginkgos and the Jogyesa pagoda tree. Hosts failing from the runner: royalpalace.go.kr and eng.cha.go.kr (DNS), khs.go.kr open API (empty), jogyesa site needs curl -k.
+- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k + ~175k verify-agent tokens. No refusals except rm of scratch files.
 
 ## 2026-10-10 (session) - Settings: one screen on the app and the website
 
