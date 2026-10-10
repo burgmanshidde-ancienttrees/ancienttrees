@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, 10:22 window) - Ede and Palma enrichment
+
+**Done:** Ede: register ids (LRMB) on all 7 trees, Hoge Veluwe prices and hours on the Pampel Oak; no measurements in that register, kasteelhoekelum.nl gives 403 to curl so the two Hoekelum access lines stay. Palma: Balears register records on all 5, heights on 3 (olive of Cort 6 m, Misericordia fig 20 m, cemetery fig 12 m), no girths with a stated 1.30 m height. Both preflight clean. No new trees (recovery mode). Visits last 7 days: 1,435 visits, 1,821 page views.
+
 ## 2026-10-10 (session) - The app as a builder reads it
 
 **Live in the digest:** active phones per day, week and month, how many came back, the most opened trees and the countries; and a weekly chain table (new phones, what a first day does, back within a week, trees collected). First reading: 9 new phones this week, 6 opened a tree on day one, 1 tapped Take me there, 1 collected; 45% came back within a week.
