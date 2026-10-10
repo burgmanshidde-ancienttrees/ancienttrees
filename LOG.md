@@ -4,6 +4,7 @@
 
 ## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
 
+- **Leiden:** all 11 briefed trees: LRMB ids, girth and height (all status 3, monumental), Hortus botanicus access line (EUR 14 / 13.50 online, hours by season, closed 3 Oct and 25 Dec to 1 Jan, from the Hortus's own page), the Tulip Tree's pin taken from its register record (~50 m move), autumn colour on the Groenesteeg Beech. Six other Leiden LRMB entries are dead or felled; none are ours.
 - **Quebec City:** all 6 trees: register ids from the Ville de Québec "Arbres potentiellement remarquables" dataset (CC BY 4.0, already imported; no per-tree pages) plus girth derived as pi x the register's DBH. Access and season not touched.
 - **Bristol:** 5 of 6: North Somerset TPO record (planning.data.gov.uk) for the Strawberries and Cream Tree; girths for bri_002 to 005 from the Bristol Tree Forum veteran-tree survey (a local survey, not an official register; matched by description, so worth a second look). Pins stay open: the forum's grid references are unreliable. bri_001 Domesday Oak could not be safely matched. The Strawberries and Cream Tree is in decline after the 2025 drought.
 - **Oslo:** thin, 1 of 4: Munch-eika circumference ~800 cm (Bymiljøetaten, "ca. 8 meter", not a stated 1.30 m girth). **Check:** osl_004's access line says Botanisk Hage is "open at all times", but the garden's own page mentions the garden closing; not verified either way.

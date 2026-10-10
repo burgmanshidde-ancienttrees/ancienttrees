@@ -36,16 +36,19 @@
       "age_max": 315,
       "location": {
         "address": "Hortus Botanicus Leiden, Rapenburg 73",
-        "latitude": 52.1571,
-        "longitude": 4.4843,
+        "latitude": 52.15703,
+        "longitude": 4.484996,
         "neighbourhood": "Academiewijk"
       },
       "story": "This tree exists because a London apothecary put a Virginia seed in the post. On 1 October 1716, botanist Isaac Rand shipped seed of an American species barely known in Europe to Leiden; eleven days later, on 12 October 1716, the Hortus Botanicus's own professor Herman Boerhaave sowed it in the garden that still bears the tree today. Boerhaave was not primarily a botanist. He is remembered as one of the founders of modern clinical medicine, teaching physicians from across Europe to examine patients at the bedside rather than argue from old texts, and the same instinct for direct observation over inherited authority shows up in his own tidy planting record for this tree, the reason its age is unusually certain for something three centuries old. The Hortus calls it the oldest tulip tree on the European continent, the species having only reached English cultivation in 1663 and taken decades more to spread further. Its yellow-green, cup-shaped flowers only appear once a tree reaches real maturity, easy to miss on a young specimen and unmistakable on one this size. It stands near the garden's entrance, a short walk from the Rapenburg canal, three centuries into a life that started as cargo.",
       "verified_sources": [
         "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/kroonjuwelen/tulpenboom",
-        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie"
+        "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie",
+        "https://hortusleiden.nl/bezoek-info/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697348&outFields=*&outSR=4326&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697348&outFields=*&outSR=4326&f=json (register geometry, locatie: direct links naast de poort)"
       ],
-      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "access": "Paid entry to the Hortus Botanicus (Rapenburg 73): adults 14 euros at the desk, 13.50 online; open daily 9:00 to 18:00 from 21 March to 20 September and 10:00 to 17:00 from 21 September to 20 March; closed 3 October and 25 December to 1 January.",
       "transport": "15 minute walk from Leiden Centraal station",
       "photo": {
         "url": null,
@@ -54,7 +57,7 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           10,
@@ -64,7 +67,19 @@
         "kind": "autumn colour"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the cup-shaped yellow-green flowers only a mature tulip tree carries, and by the size: the Hortus calls it the oldest tulip tree on the continent."
+      "how_to_recognise": "You can recognise it by the cup-shaped yellow-green flowers only a mature tulip tree carries, and by the size: the Hortus calls it the oldest tulip tree on the continent.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697348",
+        "url": null
+      },
+      "girth_cm": 306,
+      "height_m": 19,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697348&outFields=*&outSR=4326&f=json (register geometry, locatie: direct links naast de poort)",
+        "date": "2026-10-10",
+        "moved_m": 48
+      }
     },
     {
       "id": "lei_002",
@@ -274,7 +289,8 @@
         "https://sleutelstad.nl/2025/10/15/beuk-groenesteeg-vierde-in-verkiezing-boom-van-het-jaar/",
         "https://bomenbieb.nl/bijzondere-bomen/bruine-beuk-groenesteeg/",
         "https://www.bomenstichting.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690124&outFields=*&f=json"
       ],
       "access": "Free, cemetery open to visitors during daylight hours year-round",
       "transport": "20 minute walk, or a short bike ride, from Leiden Centraal station",
@@ -290,11 +306,19 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by the trunk, 6.5 metres round with a broad gnarled base where the graft sits, and by branches starting barely two metres up under a crown 24 metres wide. It stands in the middle of the burial ground.",
       "official_register": {
-        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690125",
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690124",
         "url": null
       },
       "girth_cm": 390,
-      "height_m": 22
+      "height_m": 22,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the purple leaves turn copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "lei_007",
@@ -389,9 +413,10 @@
       "story": "At 5.8 metres round, this is the thickest horse chestnut in the Netherlands by the national monumental tree register's own measurement. It stands at the edge of the Hortus Botanicus with its roots almost in the water of the Witte Singel, and the register's note dates it to 1841, inside a recorded planting band of 1800 to 1850. There is a hollow in the trunk on the water side, fitted with iron pins to stop the remaining wood pulling itself apart, which is the standard treatment for a veteran that has outgrown its own structural margin. It has a problem every horse chestnut in northern Europe now shares. The horse chestnut leaf miner, a moth whose larvae eat the tissue between the two surfaces of a leaf, reached the Netherlands in the late 1990s and browns the foliage from midsummer onward. It disfigures without usually killing, so a chestnut in August looks considerably worse than it is. Come in May instead, when the flower candles are up and none of that has started. Horse chestnuts went into Dutch cities by the thousand in exactly this period, mostly along avenues and canal banks, and almost none of them reached this girth. Conkers drop here in September, onto a bank where the water does half the collecting for you.",
       "verified_sources": [
         "https://www.bomenstichting.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679546&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679546&outFields=*&f=json",
+        "https://hortusleiden.nl/bezoek-info/"
       ],
-      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "access": "Paid entry to the Hortus Botanicus (Rapenburg 73): adults 14 euros at the desk, 13.50 online; open daily 9:00 to 18:00 from 21 March to 20 September and 10:00 to 17:00 from 21 September to 20 March; closed 3 October and 25 December to 1 January.",
       "transport": "15 minute walk from Leiden Centraal station",
       "best_time": {
         "months": [
@@ -433,9 +458,10 @@
       "story": "These are the first zelkovas that ever left Japan. Philipp Franz von Siebold, the physician who spent the 1820s on the Dutch trading post at Deshima and sent home more Japanese plants than any European before him, brought zelkovas out with him in 1830. Two of them ended up here. One grew as a single trunk and stands at the centre of the Japanese garden; this one came up with five stems, so the register measures its girth on the thickest of them, about two metres, which undersells the mass of the thing considerably. The dating needs stating plainly, because the register disagrees with itself. Its planting band puts the tree between 1800 and 1850, while its own note says the two Leiden zelkovas went into the ground in 1858 and 1860. Take the age as somewhere between 165 and 225 years, and if you know which is right, tell us. Zelkova serrata is a relative of the elm that turned out to be largely resistant to Dutch elm disease, which is a good part of why it appeared on European planting lists after the 1970s, when the elms were dying in every city on the continent. This tree predates that fashion by more than a century, and it got here because one man wanted Japan in a Dutch garden.",
       "verified_sources": [
         "https://www.bomenstichting.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690080&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690080&outFields=*&f=json",
+        "https://hortusleiden.nl/bezoek-info/"
       ],
-      "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
+      "access": "Paid entry to the Hortus Botanicus (Rapenburg 73): adults 14 euros at the desk, 13.50 online; open daily 9:00 to 18:00 from 21 March to 20 September and 10:00 to 17:00 from 21 September to 20 March; closed 3 October and 25 December to 1 January.",
       "transport": "15 minute walk from Leiden Centraal station",
       "photo": {
         "url": null,
@@ -663,7 +689,7 @@
       "age_estimate": "roughly 110 years, planted 1910-1920",
       "age_min": 106,
       "age_max": 116,
-      "girth_cm": null,
+      "girth_cm": 158,
       "location": {
         "address": "Plantsoen, near number 45, Leiden",
         "latitude": 52.153622,
@@ -698,7 +724,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690118",
         "url": null
-      }
+      },
+      "height_m": 5
     },
     {
       "id": "lei_024",
