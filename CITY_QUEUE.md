@@ -219,8 +219,8 @@ so qa.py fails the deploy when the table and the json disagree.
 | 14 | Little Rock | 20.40 | - | - | - | - | - | 20 | predicted (travel demand) |
 | 15 | Seville | 13.31 | 170,545 | 43 | 11 | 2 | - | 30 | measured |
 | 16 | Alicante | 9.98 | 77,454 | 21 | 4 | 2 | 44 | 30 | measured |
-| 17 | Amsterdam | 9.98 | 294,030 | 34 | 7 | 3 | 5488 | 30 | measured |
-| 18 | Arnhem | 9.98 | 31,478 | 39 | 3 | 3 | 204 | 20 | measured |
+| 17 | Amsterdam | 9.98 | 294,030 | 27 | 7 | 3 | 5488 | 30 | measured |
+| 18 | Arnhem | 9.98 | 31,478 | 32 | 3 | 3 | 202 | 20 | measured |
 | 19 | Brisbane | 13.31 | 162,602 | 20 | 2 | 2 | 186 | 60 | measured |
 | 20 | Oakland | 18.81 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 21 | Lexington | 18.25 | - | - | - | - | - | 30 | predicted (travel demand) |
@@ -291,16 +291,16 @@ so qa.py fails the deploy when the table and the json disagree.
 | 86 | Apeldoorn | 3.33 | - | 10 | - | 2 | 80 | 20 | measured |
 | 87 | Breda | 3.33 | 36,579 | 11 | 1 | 2 | 120 | 20 | measured |
 | 88 | Como | 3.33 | 82,645 | 9 | 2 | 1 | 23 | 20 | measured |
-| 89 | Delft | 3.33 | 31,293 | 11 | - | 1 | 62 | 20 | measured |
-| 90 | Eindhoven | 3.33 | - | 21 | - | 4 | 195 | 20 | measured |
-| 91 | Groningen | 3.33 | 31,401 | 21 | 1 | 2 | 76 | 20 | measured |
-| 92 | Leeuwarden | 3.33 | - | 41 | - | 2 | 61 | 20 | measured |
+| 89 | Delft | 3.33 | 31,293 | 10 | - | 1 | 62 | 20 | measured |
+| 90 | Eindhoven | 3.33 | - | 18 | - | 4 | 195 | 20 | measured |
+| 91 | Groningen | 3.33 | 31,401 | 17 | - | 2 | 76 | 20 | measured |
+| 92 | Leeuwarden | 3.33 | - | 34 | - | 2 | 61 | 20 | measured |
 | 93 | Lisbon | 3.33 | 201,877 | 36 | 17 | 3 | 67 | 30 | measured |
 | 94 | Lucca | 3.33 | 52,271 | 14 | 3 | 1 | 27 | 20 | measured |
 | 95 | Porto | 3.33 | 120,415 | 27 | 17 | 2 | 40 | 30 | measured |
 | 96 | Rome | 3.33 | 358,876 | 31 | 10 | 2 | 32 | 60 | measured |
 | 97 | Sintra | 3.33 | 46,889 | 5 | 3 | - | 6 | 30 | measured |
-| 98 | The Hague | 3.33 | 236,723 | 31 | 3 | 5 | 167 | 30 | measured |
+| 98 | The Hague | 3.33 | 236,723 | 28 | 3 | 5 | 169 | 30 | measured |
 | 99 | Austin | 6.65 | 226,631 | 10 | 3 | 1 | - | 30 | measured |
 | 100 | Bath | 6.65 | 144,950 | 5 | 2 | 1 | - | 20 | measured |
 | 101 | Hawaii | 6.65 | - | 6 | - | 1 | - | 60 | measured |
@@ -426,7 +426,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 221 | Copenhagen | 2.62 | 218,621 | 49 | 41 | 6 | - | 30 | published, never ranked (may be uncrawled) |
 | 222 | Hamburg | 2.57 | 191,221 | 6 | 1 | 1 | - | 60 | published, never ranked (may be uncrawled) |
 | 223 | Corfu | 2.71 | 139,334 | - | - | - | - | 20 | predicted (travel demand) |
-| 224 | Maastricht | 1.34 | 47,763 | 19 | - | 2 | 135 | 20 | published, never ranked (may be uncrawled) |
+| 224 | Maastricht | 1.34 | 47,763 | 16 | - | 2 | 135 | 20 | published, never ranked (may be uncrawled) |
 | 225 | Mexico City | 2.49 | 566,583 | 9 | 2 | - | - | 100 | published, never ranked (may be uncrawled) |
 | 226 | Utrecht | 1.32 | 67,963 | 30 | 7 | 2 | 339 | 30 | published, never ranked (may be uncrawled) |
 | 227 | Syracuse | 1.75 | 102,833 | - | - | - | - | 20 | predicted (travel demand) |
@@ -452,13 +452,13 @@ so qa.py fails the deploy when the table and the json disagree.
 | 247 | Canberra | 2.28 | - | 1 | 1 | - | - | 30 | published, never ranked (may be uncrawled) |
 | 248 | Aix-en-Provence | 2.26 | 64,524 | - | - | - | - | 20 | predicted (travel demand) |
 | 249 | Pisa | 1.46 | 52,174 | 4 | - | - | - | 20 | published, never ranked (may be uncrawled) |
-| 250 | Nijmegen | 1.05 | 42,338 | 22 | 1 | 3 | 159 | 20 | published, never ranked (may be uncrawled) |
+| 250 | Nijmegen | 1.05 | 42,338 | 20 | 1 | 3 | 159 | 20 | published, never ranked (may be uncrawled) |
 | 251 | Taipei | 2.09 | 143,193 | 4 | 1 | - | - | 60 | published, never ranked (may be uncrawled) |
 | 252 | Salamanca | 1.37 | 47,897 | 4 | - | 1 | 1 | 20 | published, never ranked (may be uncrawled) |
 | 253 | La Gomera | 1.37 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 254 | Tilburg | 1.03 | - | 20 | - | 3 | 87 | 20 | published, never ranked (may be uncrawled) |
 | 255 | Ischia | 1.32 | - | - | - | - | 2 | 20 | predicted (travel demand) |
-| 256 | Alkmaar | 1.01 | - | 14 | - | 2 | 79 | 20 | published, never ranked (may be uncrawled) |
+| 256 | Alkmaar | 1.01 | - | 12 | - | 2 | 79 | 20 | published, never ranked (may be uncrawled) |
 | 257 | Oslo | 1.76 | 181,113 | 4 | 1 | - | - | 30 | published, never ranked (may be uncrawled) |
 | 258 | Izmir | 1.88 | 69,826 | - | - | - | - | 60 | predicted (travel demand) |
 | 259 | Wroclaw | 1.27 | 123,894 | 5 | 1 | 1 | 121 | 30 | published, never ranked (may be uncrawled) |
@@ -492,7 +492,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 287 | Bristol | 1.52 | 163,983 | 6 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
 | 288 | Gothenburg | 1.49 | 119,991 | 5 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
 | 289 | Parma | 0.80 | 40,425 | 5 | - | 1 | 7 | 20 | published, never ranked (may be uncrawled) |
-| 290 | Dordrecht | 0.71 | - | 20 | 1 | 2 | 105 | 20 | published, never ranked (may be uncrawled) |
+| 290 | Dordrecht | 0.71 | - | 17 | 1 | 2 | 105 | 20 | published, never ranked (may be uncrawled) |
 | 291 | Thessaloniki | 1.42 | 180,145 | 4 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
 | 292 | Bruges | 1.40 | 106,902 | 4 | - | 1 | - | 20 | published, never ranked (may be uncrawled) |
 | 293 | Cadiz | 0.90 | 79,226 | 5 | 4 | 1 | - | 20 | published, never ranked (may be uncrawled) |
@@ -521,7 +521,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 316 | Stratford-upon-Avon | 1.10 | 68,555 | - | - | - | - | 10 | predicted (travel demand) |
 | 317 | Zaragoza | 0.73 | 87,580 | 7 | - | 1 | - | 30 | published, never ranked (may be uncrawled) |
 | 318 | Toulouse | 0.73 | 112,721 | 10 | - | 1 | 34 | 30 | published, never ranked (may be uncrawled) |
-| 319 | Leiden | 0.54 | 33,227 | 18 | 6 | 1 | 129 | 20 | published, never ranked (may be uncrawled) |
+| 319 | Leiden | 0.54 | 33,227 | 17 | 6 | 1 | 129 | 20 | published, never ranked (may be uncrawled) |
 | 320 | Okinawa | 0.71 | 24,466 | 6 | - | - | 1 | 30 | published, never ranked (may be uncrawled) |
 | 321 | La Palma | 0.70 | - | - | - | - | - | 20 | predicted (travel demand) |
 | 322 | Dubrovnik | 0.99 | 119,586 | 4 | 1 | - | 2 | 10 | published, never ranked (may be uncrawled) |
@@ -540,7 +540,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 335 | Brighton | 0.85 | 114,108 | 6 | 1 | 1 | - | 20 | published, never ranked (may be uncrawled) |
 | 336 | Busan | 0.83 | 94,737 | 2 | - | - | - | 60 | published, never ranked (may be uncrawled) |
 | 337 | Potsdam | 0.51 | 51,727 | 9 | - | 1 | 21 | 20 | published, never ranked (may be uncrawled) |
-| 338 | Enschede | 0.38 | - | 15 | 1 | 2 | 82 | 20 | published, never ranked (may be uncrawled) |
+| 338 | Enschede | 0.38 | - | 14 | 1 | 2 | 82 | 20 | published, never ranked (may be uncrawled) |
 | 339 | Trento | 0.38 | 56,455 | 10 | 1 | 1 | 20 | 20 | published, never ranked (may be uncrawled) |
 | 340 | Heidelberg | 0.67 | 75,837 | 6 | 1 | 1 | - | 20 | published, never ranked (may be uncrawled) |
 | 341 | Ibiza | 0.46 | - | 1 | - | - | 4 | 20 | published, never ranked (may be uncrawled) |
@@ -550,7 +550,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 345 | Assen | 0.35 | - | 10 | - | 2 | 66 | 20 | published, never ranked (may be uncrawled) |
 | 346 | Heerlen | 0.35 | - | 8 | 1 | 2 | 53 | 20 | published, never ranked (may be uncrawled) |
 | 347 | Kamakura | 0.44 | 33,492 | 6 | - | - | - | 20 | published, never ranked (may be uncrawled) |
-| 348 | Zwolle | 0.35 | - | 20 | - | 4 | 58 | 20 | published, never ranked (may be uncrawled) |
+| 348 | Zwolle | 0.35 | - | 19 | - | 4 | 58 | 20 | published, never ranked (may be uncrawled) |
 | 349 | Coimbra | 0.36 | 34,962 | 5 | - | - | 5 | 20 | published, never ranked (may be uncrawled) |
 | 350 | Cordoba | 0.41 | 74,675 | 16 | 2 | 2 | 3 | 30 | published, never ranked (may be uncrawled) |
 | 351 | Deventer | 0.31 | - | 12 | - | 1 | 213 | 20 | published, never ranked (may be uncrawled) |
