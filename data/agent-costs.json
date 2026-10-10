@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "utrecht",
+   "kind": "enrich",
+   "tokens": 167079,
+   "trees": 0,
+   "note": "3 register ids, measurements on 5, season on 2"
+  },
+  {
+   "date": "2026-10-10",
    "target": "seoul",
    "kind": "enrich",
    "tokens": 175076,

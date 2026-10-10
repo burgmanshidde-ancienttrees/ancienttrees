@@ -13,7 +13,8 @@
 - **Boston:** Arnold Arboretum accession ids and DBH-derived girths for 5 trees, NPS page, height, girth and hours for the Longfellow Linden. Leads for a next pass: the Meadow Road katsura's accession sits ~620 m from our pin (pin may be wrong), and the Arboretum white oak accession suggests a pin ~170 m away (refused for want of a source URL, not applied).
 - **San Francisco:** thin yield, 1 of 8: the Cork Oak of 20th Street got Landmark Tree No. 15. The Public Works list has no per-tree pages and sfenvironment.org returns 403 to every fetcher (blocklist candidate).
 - **Seoul:** measurements for 4 trees, protected-tree ids (서18-1..3, 서1-9) for the Siheung-dong ginkgos and the Jogyesa pagoda tree. Hosts failing from the runner: royalpalace.go.kr and eng.cha.go.kr (DNS), khs.go.kr open API (empty), jogyesa site needs curl -k.
-- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k + ~175k verify-agent tokens. No refusals except rm of scratch files.
+- **Utrecht:** 3 register ids (Landelijk Register Monumentale Bomen), girth/height for 5 trees from Peter Kuiper's canal-route survey (cites the register numbers per tree; a private guide, so a reader or later pass may want a second look), autumn-colour best_time on two copper beeches. Worth checking: utr_017's register coordinate sits 138 m from our "confirmed" pin.
+- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k + ~175k + ~167k verify-agent tokens. No refusals except rm of scratch files.
 
 ## 2026-10-10 (session) - Settings: one screen on the app and the website
 

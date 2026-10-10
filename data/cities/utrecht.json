@@ -260,7 +260,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by deep purple-red leaves standing out against the green planes and elms around it, on a small rise in the park. It stands in Hieronymusplantsoen, in front of the Vrije School building."
+      "how_to_recognise": "You can recognise it by deep purple-red leaves standing out against the green planes and elms around it, on a small rise in the park. It stands in Hieronymusplantsoen, in front of the Vrije School building.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper beech turns deep red-brown",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "utr_007",
@@ -448,7 +456,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as the plane standing just west of the old Sterrenwacht observatory, one of the oldest trees on the whole Zocher park chain. It stands on Zonnenburg.",
-      "height_m": 42
+      "height_m": 42,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688781",
+        "url": null
+      }
     },
     {
       "id": "utr_014",
@@ -466,7 +478,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688568, data/registers/netherlands-lrmb.json",
-        "https://www.duic.nl/cultuur/op-pad-met-oud-utrecht-een-rondje-zocher/ (Oud-Utrecht: 1835 is the documented start year of Zocher's Singelplantsoen, corroborating the earlier of the two figures)"
+        "https://www.duic.nl/cultuur/op-pad-met-oud-utrecht-een-rondje-zocher/ (Oud-Utrecht: 1835 is the documented start year of Zocher's Singelplantsoen, corroborating the earlier of the two figures)",
+        "https://kanokaartutrecht.nl/monumentalebomen.html"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours",
       "transport": "Utrecht Centraal, roughly 15 minute walk",
@@ -599,7 +612,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by a healed-over scar from an old lightning strike, the oak that won the Netherlands' Tree of the Year in 2022. It stands in the Markiezenbos, on the Amelisweerd estate."
+      "how_to_recognise": "You can recognise it by a healed-over scar from an old lightning strike, the oak that won the Netherlands' Tree of the Year in 2022. It stands in the Markiezenbos, on the Amelisweerd estate.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696858",
+        "url": null
+      }
     },
     {
       "id": "utr_018",
@@ -665,7 +682,15 @@
       },
       "how_to_recognise": "You can recognise it as the older of two copper beeches standing about 45 metres apart here, already sixty years old when its neighbour was planted as a 1945 liberation memorial. It stands on Servaasbolwerk, near number 15.",
       "height_m": 25,
-      "verify_notes": "Alive and inspected 2024-10-25: the Bomenstichting's own inspector rated its condition 'Redelijk' (LRMB inspection layer, entry nr 1689875)."
+      "verify_notes": "Alive and inspected 2024-10-25: the Bomenstichting's own inspector rated its condition 'Redelijk' (LRMB inspection layer, entry nr 1689875).",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper beech turns deep red-brown",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "utr_020",
@@ -987,7 +1012,11 @@
       "location_precision": "confirmed",
       "girth_cm": 526,
       "height_m": 18,
-      "verify_notes": "Alive and inspected 2016-08-15: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1683455)."
+      "verify_notes": "Alive and inspected 2016-08-15: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1683455).",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683455",
+        "url": null
+      }
     },
     {
       "id": "utr_035",
