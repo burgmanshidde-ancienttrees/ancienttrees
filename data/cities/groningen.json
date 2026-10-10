@@ -196,7 +196,7 @@
         "https://nl.wikipedia.org/wiki/Park_Groenestein",
         "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696027&outFields=*&f=json"
       ],
-      "access": "Free, open park at any time; the villa itself remains a private residence",
+      "access": "Park Groenestein is a free public park, open at any time. The villa is a private residence, and the national register records its plane (listed as an Oriental plane) in the villa's front garden and marks it not visitable, so we cannot confirm this tree stands on the public side. Tell us if you find it.",
       "transport": "15-20 minute walk or short bike ride from Groningen city centre, in Helpman",
       "photo": {
         "url": null,
@@ -294,7 +294,15 @@
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689570",
         "url": null
       },
-      "height_m": 16
+      "height_m": 16,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "gro_012",
@@ -386,20 +394,22 @@
       "age_estimate": "roughly 150-160 years",
       "age_min": 150,
       "age_max": 166,
-      "girth_cm": null,
+      "girth_cm": 503,
       "location": {
         "address": "Nieuwe Kerkhof, Nieuwe Boteringestraat, Groningen",
         "latitude": 53.223027,
-        "longitude": 6.561528,
+        "longitude": 6.561529,
         "neighbourhood": "Binnenstad-Noord"
       },
       "verified_sources": [
         "netherlands-lrmb register entry 1680042 (Landelijk Register Monumentale Bomen / Bomenstichting)",
-        "https://en.wikipedia.org/wiki/Nieuwe_Kerk,_Groningen (church context) and general web sources describing old beeches on the Nieuwe Kerkhof lawn"
+        "https://en.wikipedia.org/wiki/Nieuwe_Kerk,_Groningen (church context) and general web sources describing old beeches on the Nieuwe Kerkhof lawn",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680042&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680042&outFields=*&f=json (LRMB point for this tree, same spot as our pin)"
       ],
       "access": "Free, on the open public square (Nieuwe Kerkhof) beside the Nieuwe Kerk",
       "transport": "Groningen Centraal station, about 18 minute walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "verify_notes": "Register (netherlands-lrmb nr 1680042) records a pair (n_trees: 2) of green (ordinary, non-copper) beeches on the Nieuwe Kerkhof, the public square beside the Nieuwe Kerk (1660, Rijksmonument church) in the Hortusbuurt/Binnenstad-Noord area. Register planted_band 1860-1870, so roughly 150-160 years as of 2026 (widened to 150-166 for the band edges). One tree stands in front of the church with a long healed wound; the other stands beside the church with an old broken-limb wound now used by woodpeckers, and a self-seeded oak has established beside that wound. Condition rated ample/sufficient (\"ruim voldoende\") for both beeldbepalende (image-defining) old beeches. This register pin is one point representing a pair rather than one exact trunk, so location_precision is approximate; a visitor will find both trees on the lawn beside the church, not necessarily at these exact coordinates. Second source: general web search independently confirms mature beeches (described elsewhere as part of a larger stand of roughly 32 green beeches on the Nieuwe Kerkhof lawn) are a known feature of this specific square, corroborating existence and location though not this exact pairs individual wounds/condition, which comes from the register alone.",
       "story": "A parked lawn beside a seventeenth century church holds one of Groningen's largest stands of old beeches, roughly thirty of them by some counts, and the Dutch national monumental tree register singles out two as genuinely exceptional: one standing in front of the Nieuwe Kerk with a long-healed wound in its trunk, the other beside the church carrying an old broken-limb scar that woodpeckers have since hollowed out and that a self-seeded oak has taken root beside.\n\nThe Nieuwe Kerk itself, a protected national monument, was completed in 1660, and the register dates these beeches to the 1860s, roughly two centuries younger than the building they stand beside but old enough to have shaded the square through most of its life as a public space. European beech left unclipped and given room, as these two were, grows a dense, smooth-barked canopy that can live for centuries longer still.\n\nBecause the register records this pair as one entry rather than two separately pinned trunks, the coordinates here mark the general spot on the church lawn rather than one exact tree; both stand within easy sight of each other. Free, open square, a short walk from the city centre.",
@@ -417,7 +427,18 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise the pair by their scars, one in front of the Nieuwe Kerk with a long-healed wound, the other beside the church with a woodpecker-hollowed break and a self-seeded oak at its foot. They stand on the church lawn."
+      "how_to_recognise": "You can recognise the pair by their scars, one in front of the Nieuwe Kerk with a long-healed wound, the other beside the church with a woodpecker-hollowed break and a self-seeded oak at its foot. They stand on the church lawn.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680042",
+        "url": null
+      },
+      "height_m": 27,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680042&outFields=*&f=json (LRMB point for this tree, same spot as our pin)",
+        "date": "2026-10-10",
+        "moved_m": 0
+      }
     },
     {
       "id": "gro_015",
@@ -426,7 +447,7 @@
       "age_estimate": "roughly 135-145 years",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 491,
       "location": {
         "address": "Noorderplantsoen, near Werfstraat 6, Groningen",
         "latitude": 53.220002,
@@ -436,11 +457,12 @@
       "verified_sources": [
         "netherlands-lrmb register entry 1680851 (Landelijk Register Monumentale Bomen / Bomenstichting)",
         "https://en.wikipedia.org/wiki/Noorderplantsoen",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680851&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680851&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680851&outFields=*&f=json (LRMB point for this tree, same spot as our pin)"
       ],
       "access": "Free, in the public Noorderplantsoen park",
       "transport": "Groningen Centraal station, about 15 minute walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "verify_notes": "Register (netherlands-lrmb nr 1680851, n_trees: 2) records a pair of common planes in the Noorderplantsoen near Werfstraat 6. Noorderplantsoen is a former city-wall/moat site converted into an English-landscape-style public park that opened in 1880 (Rijksmonument since 1971, per Wikipedia), holding over fifty tree species along a dedicated tree trail. Register planted_band 1880-1890, consistent with the parks own 1880 opening; age estimate uses the park-opening date as the earliest plausible planting point, roughly 136-146 years as of 2026. The register entry itself gives no individual measurements or condition notes beyond situating the trees in the park. Because the register pin represents a pair rather than one named trunk, and the parks own history (not a per-tree source) supplies the corroboration, location_precision is approximate: a visitor will find the pair in this part of the park, not necessarily at the exact coordinate. Second source: English Wikipedias Noorderplantsoen article, independently confirming the parks 1880 planting, Rijksmonument status and species-rich planting scheme. 2026-09-08: the first recognition line put these planes on the park's WESTERN side, which no source says. The national register places them 'ter hoogte van Werfstraat 6' and the mespilifolia oak at the 'oostrand bij Werfstraat 10', 110 metres apart on the same side. Rewritten to what the register carries.",
       "story": "Noorderplantsoen used to be a fortress moat. The park was laid out in 1880 over Groningen's demolished seventeenth century city walls, in the informal English landscape style cities across the Netherlands favoured once their old defences stopped being useful, and it has carried national monument protection since 1971. Along its paths grow more than fifty labelled tree species, among them this pair of London planes, planted close to the park's own opening date and now well past a century old.\n\nThe Dutch national monumental tree register records the pair without individual measurements, situating them near Werfstraat on the park's western side. London plane, a hybrid bred in seventeenth century Europe from American sycamore and Oriental plane, tolerates compacted city soil and hard pruning better than almost any other large tree, which is why it anchors so much of Europe's oldest parkland alongside species chosen purely for looks.\n\nBecause the register treats this as one paired entry rather than two individually pinned trunks, the coordinates mark the general spot rather than one exact tree; the pair stands close enough together to find both without wandering. Free, public parkland, about a fifteen minute walk from Centraal station.",
@@ -454,6 +476,13 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680851",
         "url": null
+      },
+      "height_m": 19,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680851&outFields=*&f=json (LRMB point for this tree, same spot as our pin)",
+        "date": "2026-10-10",
+        "moved_m": 0
       }
     },
     {
@@ -463,7 +492,7 @@
       "age_estimate": "roughly 135-145 years",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 366,
       "location": {
         "address": "Noorderplantsoen, east edge of the park near Werfstraat 10, Groningen",
         "latitude": 53.221001,
@@ -473,11 +502,12 @@
       "verified_sources": [
         "netherlands-lrmb register entry 1680852 (Landelijk Register Monumentale Bomen / Bomenstichting)",
         "https://en.wikipedia.org/wiki/Noorderplantsoen",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680852&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680852&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680852&outFields=*&f=json (LRMB point for this tree, same spot as our pin)"
       ],
       "access": "Free, in the public Noorderplantsoen park",
       "transport": "Groningen Centraal station, about 16 minute walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "verify_notes": "Register (netherlands-lrmb nr 1680852, n_trees: 2) records this Quercus petraea Mespilifolia (medlar-leaved sessile oak, one of the best-known cultivars of the species, with a broad loose crown, somewhat drooping branches and shallow-grooved bark on old specimens like this one) on the east edge of Noorderplantsoen near Werfstraat 10. Register text notes the registration covers a small group but singles out the specimen clearly visible from the adjoining residential street as the genuinely monumental one. Planted_band 1880-1890, consistent with the parks 1880 opening (Rijksmonument since 1971 per Wikipedia); age estimate ~136-146 years as of 2026. As with the plane-tree pair above, the pin represents a small group rather than one exact trunk, so location_precision is approximate. Second source: English Wikipedias Noorderplantsoen article confirms the parks 1880 opening, protected status and its stated diversity of over fifty tree species, of which this cultivar oak is one of the more distinctive.",
       "story": "Most oaks in Noorderplantsoen are the ordinary native kind, but this one carries a cultivar name, Mespilifolia, medlar-leaved, for foliage that reads narrower and more textured than a typical sessile oak's. It grows on the park's eastern edge, clearly visible from the residential street the park backs onto, which is exactly why the Dutch national monumental tree register singles it out from the small group it was registered alongside as the specimen worth calling monumental.\n\nQuercus petraea \"Mespilifolia\" grows a broad, loose crown with branches that droop slightly at the tips, and old specimens like this one develop a shallow-grooved bark distinct from the deeper furrows of a standard sessile oak. The register dates the planting to the 1880s, putting it close in age to the park's own founding in 1880, when the city converted its demolished city-wall moat into the landscaped park that still carries national monument protection today.\n\nOne of more than fifty tree species planted along Noorderplantsoen's paths, this oak is the kind of tree a visitor might walk past without a second look from the street side and stop for once they know the cultivar name to look for. Free, public parkland, roughly a fifteen minute walk from Centraal station.",
@@ -491,6 +521,13 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680852",
         "url": null
+      },
+      "height_m": 27,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680852&outFields=*&f=json (LRMB point for this tree, same spot as our pin)",
+        "date": "2026-10-10",
+        "moved_m": 0
       }
     },
     {
@@ -661,8 +698,8 @@
       "age_max": 200,
       "location": {
         "address": "Schutsweg 42, Midlaren",
-        "latitude": 53.107644,
-        "longitude": 6.671655,
+        "latitude": 53.107781,
+        "longitude": 6.671665,
         "neighbourhood": "Midlaren, at the Hunenborg dolmens D3 and D4"
       },
       "story": "The tree worth walking to here is the one the register mentions last.\n\nFour oaks stand at the Hunenborg, banded 1870 to 1880, and as a group they are handsome enough. Then the register adds that the special one is a different tree, standing behind hunebed D4, which already appears on old paintings and looks genuinely older than the four. Nobody has given that oak a coordinate of its own, so the pin here marks the site rather than the trunk. Go round behind D4 and look for the heavier tree.\n\nThe ground beneath it works on another scale. Hunebed D3 was built between 3400 and 3100 BCE by the people of the Funnel Beaker culture, who dragged glacial boulders into a chamber and covered them with an earth mound. D4 stands beside it, and the pair together are the Hunenborg. Five thousand years against a couple of hundred: the oaks are recent arrivals on this spot, and nothing about the tomb makes them older than they are.\n\nWhat the oaks do is make the tombs read properly. A hunebed with veteran oaks standing over it looks like what it is, a burial place nobody ploughed out, and this one lies just south of Midlaren, open ground at any hour.",
@@ -670,7 +707,8 @@
         "https://bomenbieb.nl/bijzondere-bomen/hunnebedboom-midlaren/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682461",
         "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682461&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682461&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682461&outFields=*&f=json (LRMB point for this tree, about 15 m from our pin)"
       ],
       "access": "Free. A public archaeological site holding the two Hunenborg dolmens, open ground just south of Midlaren with no gate and no ticket.",
       "transport": "Midlaren, between Groningen and Assen, about 12 km southeast of Groningen. Buses on the Groningen to Assen road stop nearby, then a short walk to the site.",
@@ -682,7 +720,7 @@
       },
       "how_to_recognise": "You are looking for the oak behind hunebed D4 rather than the four standing in front of it: heavier in the trunk and plainly older than the group.",
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           9,
@@ -695,6 +733,12 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682461",
         "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682461&outFields=*&f=json (LRMB point for this tree, about 15 m from our pin)",
+        "date": "2026-10-10",
+        "moved_m": 15
       }
     }
   ]
