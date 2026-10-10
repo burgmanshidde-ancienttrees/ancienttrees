@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Website profile: no plus button, the app's ambassador words
+
+**What changed:** the round + beside the gear on the website profile is gone (Hidde: "so random"); adding a tree is "Suggest a tree" in the menu. The ambassador tag under the name now reads like the app's badge, "Copenhagen ambassador", instead of "Ambassador for Copenhagen"; it shows only for an account that is an ambassador.
+
 ## 2026-10-10 (session) - Website top bar is words only
 
 **What changed:** on Hidde's "lets do none in the menu bar at web": the account item in the desktop bar is the word "Account" with the same caret as Explore instead of a round avatar icon (this reverses the 2026-10-06 AllTrails-style avatar on his call), and the bar's dropdown rows carry no icons on a desktop; the phone's full-screen menu keeps its icon tiles. The settings page lost the line "N trees, updated every time this page is built" ("so random plz delete").

@@ -76,9 +76,14 @@ export const PROFILE_JS = `
           .then(function(rows) {
             var amb = el('in-ambassador');
             if (!amb || !rows || !rows.length) return;
-            var places = rows.map(function(r) { return r.place_name; }).join(', ');
+            // The app's words for the same badge (AmbassadorBadge.swift
+            // label): "Paris ambassador", "Paris and Lyon ambassador".
+            var names = rows.map(function(r) { return r.place_name; });
+            var label = names.length === 1 ? names[0] + ' ambassador'
+              : names.length === 2 ? names[0] + ' and ' + names[1] + ' ambassador'
+              : names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' more, ambassador';
             amb.innerHTML = SEAL + '<span></span>';
-            amb.lastChild.textContent = 'Ambassador for ' + places;
+            amb.lastChild.textContent = label;
             amb.hidden = false;
           }).catch(function() {});
         head(token, '/rest/v1/follows?select=follower&followee=eq.' + encodeURIComponent(u.id))
