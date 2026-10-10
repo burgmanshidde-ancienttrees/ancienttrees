@@ -13,6 +13,13 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-10
+
+Web half: read brighton, glasgow, london, krakow and florence (titles, meta descriptions and ages agree; no em dashes or banned words) and the Brighton Preston Twins story after today's edit.
+
+- WARN /brighton, the Preston Twins (data/cities/brighton.json, story and verify_notes): the story states two claims our own verify_notes say the sources contradict, softened only by "local accounts" and "by local account": the elms planted "on land ... under the Bishop of Chichester" c.1613 (the notes record the manor passing to the Crown by 1561 and the Shirleys leasing it by 1613) and Brighton being "the first council in the UK" to inoculate elms (the notes record DutchTrig first used at Seaford in 2016). Hard rule 2 / bridge-claim rule: a hedge does not make a claim we hold evidence against safe to print. Suggest dropping both or stating the disagreement outright.
+- NOTE (carry-over from 2026-10-09, still live): city pages still print "visited in {city}" (site/src/lib/i18n.ts:500) beside the new Collected wording.
+
 ## 2026-10-09
 
 Web half: read salt-lake-city (new, 5 trees; title, meta, intro and counts agree, the Liberty Park and Temple Square stories say plainly that no planting date is sourced) and the Temple Square Wych Elm page; scanned seville, barcelona, amsterdam, singapore, munsterland and salt-lake-city for em dashes and banned words, none found.
