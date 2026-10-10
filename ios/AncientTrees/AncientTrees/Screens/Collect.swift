@@ -703,9 +703,10 @@ struct CollectView: View {
                 countryChips
                 let shots = sightings.newestShotByTree
                 // THREE ACROSS, Instagram's profile grid (Hidde, 2026-10-09),
-                // inside the page's 20-point margin like Discover's tiles
-                // (2026-10-10: "make it more consistent to that"), so the
-                // same tile sits at the same edge on both tabs.
+                // edge to edge: it sat inside the 20-point margin for an hour
+                // to match Discover, and Hidde: "het is weird dat de
+                // profielpagina niet de gehele breedte voor de fotos gebruikt"
+                // (2026-10-10). Instagram's grid bleeds; this one does again.
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
                           spacing: 2) {
                     ForEach(shownTimeline) { item in
@@ -721,6 +722,7 @@ struct CollectView: View {
                         }
                     }
                 }
+                .padding(.horizontal, -20)
                 .padding(.top, -6)
             }
             let list = lane == .want
@@ -745,6 +747,7 @@ struct CollectView: View {
                             .accessibilityLabel(t.name)
                     }
                 }
+                .padding(.horizontal, -20)
             }
             }
         }
