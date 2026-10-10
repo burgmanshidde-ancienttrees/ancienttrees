@@ -587,6 +587,40 @@
    "location_precision_hint": "address",
    "geocode_note": "Nominatim on the facility name plus the ministry's own address. The result does NOT name the facility, it resolved to a road, park or neighbouring building near the address, so this is address level only and needs a real fix before publishing.",
    "verify_pass_note": "Verify pass 2026-09-19: no second source and no usable coordinate found for the 河内町 (Kochi-cho) cluster despite repeated searches (鶴亀山 河内町, 郡戸八幡神社, the town's own cultural-properties page at city.higashihiroshima.lg.jp/.../town/kochi/, and the local residents' association site youaisunkouchi.com/localinformation, which names 杉森神社 and 竹林寺 as the town's notable religious sites but neither 鶴亀山 nor 郡戸八幡神社). Nominatim returned nothing for either facility name. The shared fallback coordinate already on this record (34.5150164, 132.8360225) is confirmed still a bare 河内町 postal-area centroid, not a real fix, per the existing geocode_note; did not improve on it and it should not be used to publish. Kochi-cho is a real place (JR Sanyo Main Line stations at Kochi and Irino) but these three trees remain unlocatable at better than town level. Leave as leads for a pass that can search the Japanese-language facility names directly against a local shrine registry (広島県神社庁 lists shrines by area but the site search did not surface either name) or find an aerial/OSM natural=tree node."
+  },
+  {
+   "id": "hgh_014",
+   "name": "The Fir of Uneyama Shrine",
+   "species": "Japanese Fir / Momi (Abies firma)",
+   "age_estimate": "",
+   "age_min": null,
+   "age_max": null,
+   "girth_cm": 340,
+   "location": {
+    "address": "Uneyama Jinja, Toyosaka-cho Kiyotake 787, Higashi-Hiroshima, Hiroshima Prefecture",
+    "latitude": 34.597764,
+    "longitude": 132.810724,
+    "neighbourhood": "Toyosaka-cho Kiyotake"
+   },
+   "verified_sources": [
+    "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53641&branch_number=1",
+    "https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-206141080.html"
+   ],
+   "access": "Free. Shrine grounds on a low hill in Toyosaka-cho Kiyotake, open to visitors.",
+   "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
+   "location_precision": "approximate",
+   "curation_status": "flagged",
+   "story": "Every written account of this grove names the same species, and none of them names this one. The prefecture's designation record and the local descriptions of Uneyama Shrine list tsukubane oak, cedar, hinoki, koyamaki, urajiro oak and black pine. The national giant-tree register adds a Japanese fir, 3.4 metres round, health good at the survey of 2000. That is a gap rather than a contradiction: the written accounts are summaries, the prefecture counted eight specimens of five species in 1987, and a fir at the back of a precinct is exactly what a summary leaves out. It is still the only tree in this grove that a single source describes, and the entry is flagged for it. Momi is the fir of warm-temperate Japan, dark and straight, often the tallest thing on a shrine hill, and fussy about heat in a way the cool upland of Kiyotake suits. The grove was designated in December 1987 and lost trees to a typhoon four years later. Nobody has dated anything up here. If you climb the hill and count what is standing, we would like to hear it, because the last measurements on this site are a quarter of a century old.",
+   "how_to_recognise": "You can recognise it by the needles, flat and dark green in two ranks, the only fir among the grove's oaks, cedar, cypress and umbrella pine. Its trunk is 3.4 metres round.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "photos": [],
+   "removed": "2026-10-10",
+   "removed_reason": "its only basis, Giant Tree Database report 53641, is the Ashuku Hachiman shrine fir (hgh_020), not a fir at Uneyama Shrine; no record places a fir there"
   }
  ],
  "blocked": [],

@@ -2,11 +2,11 @@
   "city": "Higashi-Hiroshima",
   "country": "Japan",
   "status": "published",
-  "intro": "Higashi-Hiroshima's twenty registered giants are spread the way the city itself is: thirty kilometres from sake breweries to coast. A cedar pair shares a mountain-summit temple above Saijo. Five trees crowd one grove that Hiroshima Prefecture declared a natural monument in 1987, above Toyosaka. A lone ginkgo stands two minutes from a train platform at Akitsu. This is not one walk, it is several, and almost none of it has been written about in English before.",
+  "intro": "Higashi-Hiroshima's nineteen registered giants are spread the way the city itself is: thirty kilometres from sake breweries to coast. A cedar pair shares a mountain-summit temple above Saijo. Five trees crowd one grove that Hiroshima Prefecture declared a natural monument in 1987, above Toyosaka. A lone ginkgo stands two minutes from a train platform at Akitsu. This is not one walk, it is several, and almost none of it has been written about in English before.",
   "meta_description": "Higashi-Hiroshima's oldest tree is a 400-year ginkgo by Renko-ji, two minutes from Akitsu station. That, a mountain cedar, and eighteen more.",
   "question_meta": "Higashi-Hiroshima's oldest tree is the Great Ginkgo of Renko-ji, roughly 400 years old and 5.2 metres round, two minutes from Akitsu Station.",
   "question_answer": "The oldest tree in Higashi-Hiroshima is the Great Ginkgo of Renko-ji, estimated at roughly 400 years old and measured at 5.2 to 5.3 metres round, standing in the temple precinct in Akitsu, on the city's southern coast. It is free to visit and a two-minute walk from Akitsu Station on the JR Kure Line.",
-  "question_context": "The age is an estimate rather than a measurement, the same honest gap that applies to almost every giant ginkgo in Japan: no register anywhere carries a planting date for this tree, so the figure comes from its size and from local accounts that put it at around four centuries. Its closest rival for the title is the Meoto-sugi, a named husband-and-wife cedar pair on the summit of Mount Fukujo-ji above Saijo's sake breweries, dated only as \"over three hundred years\" in the same 1988 national giant-tree survey that measured the ginkgo. Both readings rest on girth rather than a ring count. What sets the ginkgo apart is how easy it is to reach: most of Higashi-Hiroshima's twenty registered giants stand in shrine groves reachable only by car, spread across the hills above Toyosaka and Fukutomi, while this one is a short walk from a JR platform on the coast at Akitsu. See all twenty remarkable trees of Higashi-Hiroshima.",
+  "question_context": "The age is an estimate rather than a measurement, the same honest gap that applies to almost every giant ginkgo in Japan: no register anywhere carries a planting date for this tree, so the figure comes from its size and from local accounts that put it at around four centuries. Its closest rival for the title is the Meoto-sugi, a named husband-and-wife cedar pair on the summit of Mount Fukujo-ji above Saijo's sake breweries, dated only as \"over three hundred years\" in the same 1988 national giant-tree survey that measured the ginkgo. Both readings rest on girth rather than a ring count. What sets the ginkgo apart is how easy it is to reach: most of Higashi-Hiroshima's nineteen registered giants stand in shrine groves reachable only by car, spread across the hills above Toyosaka and Fukutomi, while this one is a short walk from a JR platform on the coast at Akitsu. See all nineteen remarkable trees of Higashi-Hiroshima.",
   "faq": [
     {
       "q": "What is the oldest tree in Higashi-Hiroshima?",
@@ -99,7 +99,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53212&branch_number=1"
+      },
+      "height_m": 41
     },
     {
       "id": "hgh_002",
@@ -141,7 +146,12 @@
       },
       "photos": [],
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 400 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 400 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53213&branch_number=1"
+      },
+      "height_m": 13
     },
     {
       "id": "hgh_003",
@@ -181,7 +191,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53214&branch_number=1"
+      },
+      "height_m": 13
     },
     {
       "id": "hgh_004",
@@ -246,7 +261,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53636&branch_number=1"
+      },
+      "height_m": 12
     },
     {
       "id": "hgh_011",
@@ -279,7 +299,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53637&branch_number=1"
+      },
+      "height_m": 25
     },
     {
       "id": "hgh_012",
@@ -311,7 +336,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53638&branch_number=1"
+      },
+      "height_m": 25
     },
     {
       "id": "hgh_013",
@@ -343,39 +373,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
-    },
-    {
-      "id": "hgh_014",
-      "name": "The Fir of Uneyama Shrine",
-      "species": "Japanese Fir / Momi (Abies firma)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
-      "girth_cm": 340,
-      "location": {
-        "address": "Uneyama Jinja, Toyosaka-cho Kiyotake 787, Higashi-Hiroshima, Hiroshima Prefecture",
-        "latitude": 34.597764,
-        "longitude": 132.810724,
-        "neighbourhood": "Toyosaka-cho Kiyotake"
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53640&branch_number=1"
       },
-      "verified_sources": [
-        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53641&branch_number=1",
-        "https://www.pref.hiroshima.lg.jp/site/bunkazai/bunkazai-data-206141080.html"
-      ],
-      "access": "Free. Shrine grounds on a low hill in Toyosaka-cho Kiyotake, open to visitors.",
-      "transport": "No train or bus stop nearby; reachable by car, rural northern Higashi-Hiroshima.",
-      "location_precision": "approximate",
-      "curation_status": "flagged",
-      "story": "Every written account of this grove names the same species, and none of them names this one. The prefecture's designation record and the local descriptions of Uneyama Shrine list tsukubane oak, cedar, hinoki, koyamaki, urajiro oak and black pine. The national giant-tree register adds a Japanese fir, 3.4 metres round, health good at the survey of 2000. That is a gap rather than a contradiction: the written accounts are summaries, the prefecture counted eight specimens of five species in 1987, and a fir at the back of a precinct is exactly what a summary leaves out. It is still the only tree in this grove that a single source describes, and the entry is flagged for it. Momi is the fir of warm-temperate Japan, dark and straight, often the tallest thing on a shrine hill, and fussy about heat in a way the cool upland of Kiyotake suits. The grove was designated in December 1987 and lost trees to a typhoon four years later. Nobody has dated anything up here. If you climb the hill and count what is standing, we would like to hear it, because the last measurements on this site are a quarter of a century old.",
-      "how_to_recognise": "You can recognise it by the needles, flat and dark green in two ranks, the only fir among the grove's oaks, cedar, cypress and umbrella pine. Its trunk is 3.4 metres round.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "photos": []
+      "height_m": 23
     },
     {
       "id": "hgh_015",
@@ -407,7 +410,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53645&branch_number=1"
+      },
+      "height_m": 23
     },
     {
       "id": "hgh_016",
@@ -439,7 +447,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53646&branch_number=1"
+      },
+      "height_m": 30
     },
     {
       "id": "hgh_017",
@@ -471,7 +484,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53647&branch_number=1"
+      },
+      "height_m": 10
     },
     {
       "id": "hgh_006",
@@ -503,7 +521,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53623&branch_number=1"
+      },
+      "height_m": 25
     },
     {
       "id": "hgh_007",
@@ -535,7 +558,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53625&branch_number=1"
+      },
+      "height_m": 30
     },
     {
       "id": "hgh_008",
@@ -567,7 +595,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53627&branch_number=1"
+      },
+      "height_m": 12
     },
     {
       "id": "hgh_009",
@@ -599,7 +632,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53628&branch_number=1"
+      },
+      "height_m": 27
     },
     {
       "id": "hgh_018",
@@ -632,7 +670,19 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53617&branch_number=1"
+      },
+      "height_m": 20,
+      "best_time": {
+        "months": [
+          11
+        ],
+        "label": "mid to late November, when the ginkgo turns gold",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "hgh_019",
@@ -665,7 +715,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53642&branch_number=1"
+      }
     },
     {
       "id": "hgh_020",
@@ -697,7 +751,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Giant Tree Database (Ministry of the Environment)",
+        "url": "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53641&branch_number=1"
+      },
+      "height_m": 23
     }
   ]
 }
