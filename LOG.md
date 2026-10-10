@@ -8,6 +8,8 @@ Rung: enrichment pass, Houston (visits 7d: 1497). Verify agent returned register
 
 Second item, Sintra enrichment: ICNF register record with girth 771 cm and height 31 m on sin_003; heights for sin_001 and sin_004 from Parques de Sintra; ticket price and hours on sin_001, sin_004, sin_005. No register or pin evidence found for sin_005 (Overpass returned 406, one article 403).
 
+Third item, Florence enrichment: MASAF register ids on flo_020, flo_021, flo_022; access lines (Giardino dell'Iris open about a month a year, Villa della Petraia seasonal hours) from the owners' pages. Pins stay open: all three stand in gardens, not small sites.
+
 ## 2026-10-10 (session) - Deploy unblocked after the 45 retired Dutch trees
 
 **Broke:** every deploy and smoke run from about 10:30 to 12:50 UTC failed. This morning's run retired 45 Dutch trees the register calls dead or felled, and the copy around them did not follow: Park Sonsbeek's title still promised 8 trees (6 left, the villa beech gone), Vosseparkje's 7 (5 left, the oak and the Canadian poplar gone), and the retired Prinsentuin chestnut's photo (gro_008) stayed in site/public/photos with nothing pointing at it. **Fixed:** both park pages rewritten to their real counts, Arnhem's FAQ says 30 of 32, the Zijpendaalseweg lime's story no longer sends you to the felled Watermuseum lime, the orphan photo is removed. Deploy 38053543540 green, smoke green. The Hortus Botanicus Amsterdam now holds 2 trees and drops below the park-page gate by itself.

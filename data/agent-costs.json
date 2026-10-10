@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "florence",
+   "kind": "enrich",
+   "tokens": 151523,
+   "trees": 3,
+   "note": "MASAF register ids on flo_020/021/022, access from owner and ministry pages; pins stay open"
+  },
+  {
+   "date": "2026-10-10",
    "target": "sintra",
    "kind": "enrich",
    "tokens": 159697,
