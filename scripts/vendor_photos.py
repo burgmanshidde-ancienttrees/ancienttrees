@@ -114,10 +114,15 @@ def fit(blob, width):
     A re-encode is worse than a source rendering and enormously better than
     shipping the master, so it applies only where the master is what we got.
     """
+    # NONE MEANS DO NOT WRITE IT (2026-10-10). Without Pillow this used to
+    # hand back the master, and the daily photos job, which never installed
+    # Pillow, wrote a 1600 pixel original into a -500 file; qa then refused
+    # every push in the repository until a session resized it by hand. A file
+    # we could not size is skipped and fetched again on the next run.
     try:
         from PIL import Image, ImageOps
     except ImportError:
-        return blob
+        return None
     try:
         im = Image.open(io.BytesIO(blob))
         if im.width <= width * 1.15:
@@ -130,7 +135,7 @@ def fit(blob, width):
         im.save(buf, "JPEG", quality=82, optimize=True)
         return buf.getvalue()
     except Exception:
-        return blob
+        return None
 
 
 def slugify(s):
@@ -265,13 +270,20 @@ def main():
             if os.path.exists(out):
                 got += 1
                 continue
-            src = wikimedia_at(url, w) or (p.get("hero") if w >= 960 else p.get("thumb")) or url
+            wm = wikimedia_at(url, w)
+            src = wm or (p.get("hero") if w >= 960 else p.get("thumb")) or url
             blob = fetch(src)
             time.sleep(RATE)
             if not blob or len(blob) < 1000:
                 print("  %-9s FETCH FAILED w=%d %s" % (tid, w, str(src)[:60]), flush=True)
                 continue
-            blob = fit(blob, w)
+            # Wikimedia's own rendering is already this width and is written
+            # verbatim; only a master from anywhere else needs sizing.
+            fitted = blob if wm else fit(blob, w)
+            if fitted is None:
+                print("  %-9s NOT WRITTEN w=%d: could not downscale (is Pillow installed?)" % (tid, w), flush=True)
+                continue
+            blob = fitted
             with open(out, "wb") as fh:
                 fh.write(blob)
             got += 1

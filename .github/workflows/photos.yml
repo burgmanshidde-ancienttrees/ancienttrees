@@ -37,6 +37,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Pillow sizes a master that has no rendering at 500 of its own. Without
+      # it vendor_photos.py now skips such a file rather than writing the
+      # original (2026-10-10, msl_001 arrived at 1600 pixels and blocked qa).
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+
       - name: Fetch what is missing
         run: python3 scripts/vendor_photos.py
 
