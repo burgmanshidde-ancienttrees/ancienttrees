@@ -143,7 +143,8 @@
       "story": "Boxelder is the tree nobody wants. It seeds itself into alleys and back lots, drops limbs, hosts the boxelder bugs that get into houses in autumn, and is generally written off as a weed that never lives long enough to get big. This one is the biggest known in Illinois. The state's Big Tree Register, run by University of Illinois Extension, ranks it champion of its species: just over nine feet around the trunk, 55 feet tall, a crown spreading 35 feet, and 172.3 points on the register's scoring formula, ahead of the runner up down in Shawnee National Forest at the far southern end of the state. It was measured and listed in 2026 with a dated photograph, so it is standing now. One honesty note, and it is the reason this entry is flagged: the register is the only source we could find on it. The Sun-Times feature on the state's big trees, the Extension's own announcement and the Forest Preserves champion list all fail to mention it, most likely because the title is very new. No Illinois register carries an age field either, so nobody has dated this tree and we are not going to guess at it. Visiting is a golf question. It stands on Edgebrook Golf Course, a public course run by the Forest Preserves of Cook County, which normally means a green fee to walk the fairways, and whether it can be seen from the perimeter is unconfirmed.",
       "verified_sources": [
         "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=Common_name=%27boxelder%27&outFields=*&f=json",
-        "https://extension.illinois.edu/forestry/big-tree-register"
+        "https://extension.illinois.edu/forestry/big-tree-register",
+        "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=ObjectId=205&outFields=*&f=json"
       ],
       "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter trail was not confirmed",
       "transport": "Metra Milwaukee District North Line to Edgebrook station, the last stop still inside Chicago city limits, roughly 30 minutes from Chicago Union Station, then about a 15 to 20 minute walk east on Devon/Central Ave to the golf course entrance",
@@ -155,7 +156,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the state-champion box elder, an unusually large specimen of a species normally dismissed as a weed tree, about 2.7m round and 55 feet tall. It stands on Edgebrook Golf Course."
+      "how_to_recognise": "You can recognise it as the state-champion box elder, an unusually large specimen of a species normally dismissed as a weed tree, about 2.7m round and 55 feet tall. It stands on Edgebrook Golf Course.",
+      "official_register": {
+        "name": "Illinois Big Tree Register (IBTR_masterfile), no. 205",
+        "url": null
+      },
+      "girth_cm": 275,
+      "height_m": 16.8
     },
     {
       "id": "chi_005",
@@ -174,7 +181,8 @@
       "verified_sources": [
         "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=Common_name%3D%27red+pine%27&outFields=*&f=json",
         "https://extension.illinois.edu/forestry/big-tree-register",
-        "https://fpdcc.com/nature/champion-tree-register/"
+        "https://fpdcc.com/nature/champion-tree-register/",
+        "https://services.arcgis.com/GL0fWlNkwysZaKeV/arcgis/rest/services/IBTR_masterfile/FeatureServer/0/query?where=ObjectId=207&outFields=*&f=json"
       ],
       "access": "Public 18-hole golf course, Forest Preserves of Cook County; a green fee is generally needed to walk the course itself, and whether the tree is visible from a public perimeter path was not confirmed",
       "transport": "Metra Milwaukee District West Line to River Grove or Elmwood Park, roughly 20 minutes from Chicago Union Station; or CTA/Pace bus along Forest Preserve Dr/Cumberland Ave. Exact walk time from the nearest stop to the tree was not verified.",
@@ -186,7 +194,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the only red pine listed on Illinois' Big Tree Register, paired needles that snap cleanly in half, a trunk about 2m round and 64 feet tall. It stands on Indian Boundary Golf Course."
+      "how_to_recognise": "You can recognise it as the only red pine listed on Illinois' Big Tree Register, paired needles that snap cleanly in half, a trunk about 2m round and 64 feet tall. It stands on Indian Boundary Golf Course.",
+      "official_register": {
+        "name": "Illinois Big Tree Register (IBTR_masterfile), no. 207",
+        "url": null
+      },
+      "girth_cm": 207,
+      "height_m": 19.5
     },
     {
       "id": "chi_006",
@@ -254,6 +268,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 7",
+        "url": null
       }
     },
     {
@@ -285,6 +303,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 13",
+        "url": null
       }
     },
     {
@@ -316,6 +338,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 23",
+        "url": null
       }
     },
     {
@@ -347,6 +373,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 26",
+        "url": null
       }
     },
     {
@@ -378,6 +408,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 111",
+        "url": null
       }
     },
     {
@@ -409,6 +443,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 169",
+        "url": null
       }
     },
     {
@@ -447,6 +485,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 200",
+        "url": null
       }
     },
     {
@@ -479,7 +521,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "ready_to_merge": true
+      "ready_to_merge": true,
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 263",
+        "url": null
+      }
     },
     {
       "id": "chi_015",
@@ -511,7 +557,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "ready_to_merge": true
+      "ready_to_merge": true,
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 264",
+        "url": null
+      }
     },
     {
       "id": "chi_017",
@@ -543,7 +593,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "ready_to_merge": true
+      "ready_to_merge": true,
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, no. 331",
+        "url": null
+      }
     }
   ]
 }
