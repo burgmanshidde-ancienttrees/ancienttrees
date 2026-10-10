@@ -148,7 +148,7 @@ event on the list is unaffected.
 - 4 of the other 6 came from one account (cfe8), which is one person rather than a pattern.
 
 **The funnel, as rates**
-- Seen to clicked: 2.5% (123 of 4842) vs 2.3% the fortnight before
+- Seen to clicked: 2.5% (123 of 4844) vs 2.3% the fortnight before
 - Pages per visit: 1.2 (6190 visits, 7720 pageviews since 2026-09-12)
 - Visits that did something: 13.2% (816 actions on 6190 visits)
 
@@ -156,38 +156,44 @@ event on the list is unaffected.
 
 | What | Yesterday | 14 days | Ever | Last |
 |---|---:|---:|---:|---|
-| app_open | 8 | 105 | 281 | today |
-| tab | 6 | 116 | 306 | yesterday |
-| tree_opened | 17 | 363 | 1215 | today |
+| app_open | 8 | 99 | 282 | today |
+| tab | 6 | 115 | 306 | yesterday |
+| tree_opened | 17 | 350 | 1215 | today |
 | directions | 4 | 9 | 45 | yesterday |
 | tree_saved | 0 | 3 | 19 | 9 days ago |
 | tree_visited | 0 | 12 | 26 | 2 days ago |
 | sighting_recorded | 0 | 23 | 72 | 5 days ago |
-| **all** | **35** | **631** | **1964** | |
+| sync_skipped | 0 | 0 | 0 | never |
+| sync_failed | 0 | 0 | 0 | never |
+| **all** | **35** | **611** | **1965** | |
 - Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
-- Ours is not in this table: 21 install(s), 670 events, the testing before the app went live on 2026-09-03 and every install built by Xcode since (the app says how it was built with each event). An App Store copy on our own phone is the one kind this cannot see.
-- 75 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
+- Ours is not in this table: 22 install(s), 671 events, the testing before the app went live on 2026-09-03 and every install built by Xcode since (the app says how it was built with each event). An App Store copy on our own phone is the one kind this cannot see.
+- 76 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
 - Yesterday came from 7 installs, and the busiest made 17 of 7 events (243%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
-- Tabs opened (14d): Discover 45; My trees 41; Map 30
+- Tabs opened (14d): Discover 45; My trees 40; Map 30
+- Active phones: 7 in the last day, 23 in the last 7 days, 56 in the last 30 days.
+- Coming back: 26 of those 56 phones opened the app on more than one day (46%).
+- Trees opened by the most phones (14d): The Yew of Campo Santana (Lisbon) 2; The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Ginkgo of Kushida Shrine (Fukuoka) 2; The Olive Trees of Santo Amaro (Lisbon) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2
+- Where the phones are (30d): United States 12; United Kingdom 10; The Netherlands 5; Italy 4; Portugal 4; Switzerland 3
 - Trees recorded (14d): a tree we map 17; a tree we do not 6
   A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
 
 **Trees collected in the app** (14 days, a person standing at the tree)
 
-| Day | Tree | Where | Install | Build |
-|---|---|---|---|---|
-| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? |
-| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? |
-| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? |
-| 10-05 | The Finer Holm Oak of Edinburgh Gardens | Melbourne | 2D66 | ? |
-| 10-05 | The Southern Mahogany of Edinburgh Gardens | Melbourne | 2D66 | ? |
-| 10-03 | The Larch of Hólavallagarður | Reykjavik | 5781 | ? |
-| 10-03 | The City Hall Maple | Reykjavik | 5781 | ? |
-| 10-03 | The Whitebeam of Víkurgarður | Reykjavik | 5781 | ? |
-| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? |
-| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? |
-| 10-01 | The Horse Chestnut of Square Rene-Le Gall | Paris | 0E84 | ? |
-| 10-01 | The Dragon Tree of Quinta Conde dos Arcos | Lisbon | B792 | ? |
+| Day | Tree | Where | Install | Build | Signed in |
+|---|---|---|---|---|---|
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-05 | The Finer Holm Oak of Edinburgh Gardens | Melbourne | 2D66 | ? | ? |
+| 10-05 | The Southern Mahogany of Edinburgh Gardens | Melbourne | 2D66 | ? | ? |
+| 10-03 | The Larch of Hólavallagarður | Reykjavik | 5781 | ? | ? |
+| 10-03 | The City Hall Maple | Reykjavik | 5781 | ? | ? |
+| 10-03 | The Whitebeam of Víkurgarður | Reykjavik | 5781 | ? | ? |
+| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
+| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
+| 10-01 | The Horse Chestnut of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
+| 10-01 | The Dragon Tree of Quinta Conde dos Arcos | Lisbon | B792 | ? | ? |
 
 **App Store downloads** (Apple's own count, not PostHog)
 
@@ -234,8 +240,8 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 10-05 | 4 | 47 | 8.5% | 39.0 |
 | 10-06 | 1 | 45 | 2.2% | 34.5 |
 | 10-07 | 0 | 47 | 0.0% | 34.7 |
-| 10-08 *partial* | 1 | 7 | 14.3% | 32.1 |
-| **window** | **14** | **436** | **3.2%** | |
+| 10-08 *partial* | 1 | 9 | 11.1% | 25.7 |
+| **window** | **14** | **438** | **3.2%** | |
 - Top queries (10d): alte bäume (i4, p27); ancient douglas fir tree (i1, p48); ancient tree (i2, p70); ancient yews (i1, p92); angelystor (i1, p1)
 - Top pages (10d): / (c3/i10); /amsterdam/oudemanhuispoort-elm (c1/i1); /assisi (c1/i1); /belgrade/oldest-tree (c1/i2); /belgrade/plane-of-vracar (c1/i1)
 - Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
@@ -258,7 +264,9 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 10-05 | 79 | 5 | 6.3% | - | - |
 | 10-06 | 65 | 2 | 3.1% | - | - |
 | 10-07 | 81 | 2 | 2.5% | - | - |
-| **6 days** | **312** | **15** | **4.8%** | **127** | **2041** |
+| 10-08 | 168 | 4 | 2.4% | - | - |
+| **7 days** | **480** | **19** | **4.0%** | **127** | **2041** |
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); husalle lindens copenhagen (c1/i2, p3); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); oldest live oak trees in new orleans (c1/i2, p6); remarkable trees copenhagen (c1/i2, p4)
 - Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
 
 **Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
@@ -267,10 +275,10 @@ What Google does, last 10 days:
 
 | Measure | Now |
 |---|---:|
-| Impressions | 724 |
+| Impressions | 726 |
 | Clicks | 15 |
-| Pages that got at least one impression | 247 |
-| Impressions on the proven cities | 623 |
+| Pages that got at least one impression | 248 |
+| Impressions on the proven cities | 625 |
 
 What we did (context, proves nothing by itself): 2906 trees Google may index, 844 kept out for lacking a photo and an exact pin, 4638 pages on the noindex list.
 
@@ -278,7 +286,7 @@ What we did (context, proves nothing by itself): 2906 trees Google may index, 84
 
 | Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |
 |---|---:|---:|---:|---:|---:|
-| Rich | 323 | 18 | 167 | 0.52 | 2 |
+| Rich | 323 | 19 | 168 | 0.52 | 2 |
 | Not yet rich | 671 | 20 | 56 | 0.08 | 0 |
 | Returned to Google's index in the last 7 days | 0 | 0 | 0 | 0.00 | 0 |
 
@@ -685,9 +693,9 @@ The age is the hook and the count is inventory, so naming the oldest tree before
 - New queries this window: alte bäume (i4).
 
 **Who they are**
-Audience, 28 days of search (800 clicks, 34590 impressions):
-- Countries: usa c115/i8889; nld c77/i1829; esp c68/i2726; gbr c66/i2619; deu c53/i1719
-- Devices: MOBILE c574/i20358; DESKTOP c213/i13821; TABLET c13/i411
+Audience, 28 days of search (800 clicks, 34592 impressions):
+- Countries: usa c115/i8890; nld c77/i1829; esp c68/i2726; gbr c66/i2619; deu c53/i1719
+- Devices: MOBILE c574/i20360; DESKTOP c213/i13821; TABLET c13/i411
 - Landing pages: / c24/i293; /prague c12/i317; /bath/plane-trees-of-the-circus c8/i155; /malaga c8/i221; /de/vienna/chestnut-avenue-of-the-hauptallee c7/i229
 
 Web Analytics (beacon, cookieless), people only.
@@ -728,16 +736,17 @@ Backlinks (watched pages):
 
 | Started | Minutes | Trees | Commits | Refused | Cities |
 |---|---:|---:|---:|---:|---|
-| 10-09T05:34 | 6.2 | 0 | 7 | 10 | Lisbon, Singapore |
 | 10-09T17:00 | 14.5 | 0 | 26 | 6 | Amsterdam, Barcelona, Lisbon, Porto, +1 more |
 | 10-09T22:08 | 92.1 | 0 | 36 | 22 | Alicante, Bath, Berlin, Brisbane, +20 more |
 | 10-10T03:55 | 5.3 | 0 | 6 | 7 | - |
-| **4 runs** | **118** | **0** | **75** | | |
+| **3 runs** | **112** | **0** | **68** | | |
 
-- 4 of 4 produced no trees; 6 to 22 commands refused per run; last build that went live: 1h ago.
+- 3 of 3 produced no trees; 6 to 22 commands refused per run; last build that went live: 4h ago.
 
 **What they made**
 
+- Fresh-eyes review: 4 finding(s), app half
+- Fresh-eyes review: 2 finding(s)
 - Enrich Glasgow: Argyle Street Ash height; gaps recorded; log
 - Enrich Athens and Cadiz: dead ends recorded, no new facts; window log
 - Photographs readers sent, queued for a look; vouched ones live
@@ -750,12 +759,10 @@ Backlinks (watched pages):
 - Enrich Prague: AOPK ids and girths on six trees, one register pin, access corrected
 - Enrich Porto: ICNF ids on ten trees, seven heights, Palacio de Cristal hours
 - Enrich Pamplona: Navarra Monumento Natural records and measurements, river-park ids
-- Enrich Alicante: Generalitat Valenciana register ids on 16 trees
-- Enrich London: Royal Parks and Fulham Palace access lines, one girth floor; kew.org to the blocklist
 
 Machine: 23 chain attempts yesterday, 4 got real work time (~132 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
-**Conclusion:** Search is the only channel with real data and it is still small: 1 clicks and 7 impressions on Google's freshest day (day before: c0/i47). Directional at best; no strategic conclusions from these volumes.
+**Conclusion:** Search is the only channel with real data and it is still small: 1 clicks and 9 impressions on Google's freshest day (day before: c0/i47). Directional at best; no strategic conclusions from these volumes.
 
 ## 2026-10-08 (previous UTC day)
 
