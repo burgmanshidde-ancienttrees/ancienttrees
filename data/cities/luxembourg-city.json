@@ -176,7 +176,8 @@
       "story": "The state put this tree under protection and then wrote nothing else about it. It appears in the Grand Ducal regulation of 31 January 2025 as entry 129, a copper beech in Parc Pescatore, and that is the whole of the public record: no age, no girth, no height, no photograph. Its neighbours in the same park have done considerably better. The horse chestnut a short walk away has a planting year, a name, a plaque and a cage.\n\nWhat is actually there is a copper beech, the purple-leaved form of the common beech, in a city-centre park off Avenue Marie-Therese that also holds sculpture and several other listed trees. In late April and May it does the thing the form is planted for, opening its new leaves a translucent red before they darken down for the summer. By August it reads almost black against everything around it.\n\nIf you go, the two useful things to come back with are a tape measure round the trunk at chest height and a photograph. Either one would tell us more about this particular tree than the register manages, and the register is currently the only thing that knows it exists.",
       "verified_sources": [
         "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-        "https://www.wikidata.org/wiki/Q132663935"
+        "https://www.wikidata.org/wiki/Q132663935",
+        "https://data.public.lu/fr/datasets/arbres-remarquables/"
       ],
       "access": "Free, in the public Parc Pescatore",
       "transport": "Royal-Hamilius tram stop, ~7 min walk",
@@ -196,7 +197,11 @@
         "kind": "fresh leaves",
         "label": "late April and May, when the new leaves open translucent red before darkening"
       },
-      "how_to_recognise": "You can recognise it by its new leaves opening translucent red in April and May, darkening to near-black by August. It stands in Parc Pescatore."
+      "how_to_recognise": "You can recognise it by its new leaves opening translucent red in April and May, darkening to near-black by August. It stands in Parc Pescatore.",
+      "official_register": {
+        "name": "Arbres remarquables (Administration de la nature et des forets, Luxembourg), no. 129",
+        "url": null
+      }
     },
     {
       "id": "lux_005",
@@ -207,14 +212,16 @@
       "age_max": 160,
       "location": {
         "address": "Parc Amelie, beside the monument to Amalia of Saxe-Weimar-Eisenach",
-        "latitude": 49.613892,
-        "longitude": 6.124494,
+        "latitude": 49.613889,
+        "longitude": 6.124472,
         "neighbourhood": "Ville Haute"
       },
       "story": "Until February this year there were two. A pair of giant sequoias stood 14.6 metres apart in Parc Amelie beside the monument to Grand Duchess Amalia, planted together and grown together for about a century and a half. On 28 February 2026 the larger came down. Honey fungus had worked into its roots and there was no keeping it. Its timber is to be made into benches for the park it grew in, and a young sequoia has gone into the ground where it stood.\n\nThe survivor is the smaller of the two, 27 metres tall with a trunk of 4.58 metres at the last survey, against the 32 metres and 6.15 of the one that was felled. It was reckoned at about 140 years old in 2018, which puts it close to 150 now. The pair are generally credited to the landscape architect Edouard Andre, who shaped this run of parks along the plateau, though no record names the year they went in.\n\nOne honest note about the pin. The register holds two coordinates 14.6 metres apart and never said which tree was which, so we have marked the pair rather than guess. On the ground you cannot get it wrong: one is a full-grown sequoia, the other a stump with a sapling next to it.",
       "verified_sources": [
         "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-        "https://lb.wikipedia.org/wiki/Sequoiaen_am_Amaliepark"
+        "https://lb.wikipedia.org/wiki/Sequoiaen_am_Amaliepark",
+        "https://data.public.lu/fr/datasets/arbres-remarquables/",
+        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg (register row 130, 49 36 50.0 N 6 7 28.1 E, marked as the standing tree; row 131 at 49 36 50.5 N 6 7 28.7 E is flagged former-remarkable-tree, felled in February 2026 for fungal decay) and the ANF register geojson, nr_id 130"
       ],
       "access": "Free, in the public Parc Amelie",
       "transport": "Royal-Hamilius tram stop, ~8 min walk",
@@ -225,9 +232,19 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "girth_cm": 458,
-      "how_to_recognise": "You can recognise it as the surviving sequoia of a pair, the smaller at 27 metres and 4.58 metres round, after its larger twin came down to honey fungus in February 2026. It stands in Parc Amelie, beside the monument to Amalia."
+      "how_to_recognise": "You can recognise it as the surviving sequoia of a pair, the smaller at 27 metres and 4.58 metres round, after its larger twin came down to honey fungus in February 2026. It stands in Parc Amelie, beside the monument to Amalia.",
+      "official_register": {
+        "name": "Arbres remarquables (Administration de la nature et des forets, Luxembourg), no. 130",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg (register row 130, 49 36 50.0 N 6 7 28.1 E, marked as the standing tree; row 131 at 49 36 50.5 N 6 7 28.7 E is flagged former-remarkable-tree, felled in February 2026 for fungal decay) and the ANF register geojson, nr_id 130",
+        "date": "2026-10-10",
+        "moved_m": 2
+      }
     },
     {
       "id": "lux_006",
@@ -290,7 +307,8 @@
       "story": "Luxembourg's register offers half a dozen grounds for protecting a tree, and this oak was listed on exactly one of them: its shape. Not its place in the landscape, not its biology, not its dendrology, not history and not commemoration. Somebody stood in front of it, decided the form of the thing was worth keeping, and wrote down a number.\n\nThe number is 136 in the Grand Ducal regulation of 31 January 2025, and it is close to everything the public record holds. No age, no girth, no height, and no photograph anywhere we have looked, which is as thin as it gets here and arguably makes this the most interesting entry on the list. Nobody has told you what to expect.\n\nIt is also the only tree here that is properly out of town. The Bambesch is a public forest above Rollingergrund, twenty to twenty-five minutes from the centre by bus and then on foot, and it is a large wood. Our pin is the register's own point, which is forest-level rather than trunk-level, so plan on hunting for it.\n\nIf you find it, photograph it. As far as we can tell, that would be the first picture of this tree anywhere.",
       "verified_sources": [
         "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
+        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg",
+        "https://data.public.lu/fr/datasets/arbres-remarquables/"
       ],
       "access": "Free, in the public Bambesch forest recreation area",
       "transport": "Bus to Rollingergrund/Bambesch, then a forest path walk; roughly 20-25 min from the city centre by bus and on foot",
@@ -310,7 +328,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "There is nothing recorded to match it against: no age, no girth, no height and no photograph anywhere, only the register's point in the Bambesch forest and a listing for the tree's shape. Expect to hunt for it."
+      "how_to_recognise": "There is nothing recorded to match it against: no age, no girth, no height and no photograph anywhere, only the register's point in the Bambesch forest and a listing for the tree's shape. Expect to hunt for it.",
+      "official_register": {
+        "name": "Arbres remarquables (Administration de la nature et des forets, Luxembourg), no. 136",
+        "url": null
+      }
     },
     {
       "id": "lux_008",
@@ -328,7 +350,8 @@
       "story": "Somebody has photographed this sycamore and nobody has measured it. The photograph is on Wikimedia Commons, matched to the register's coordinate to within a third of a metre, and beyond that there is one line in a regulation. No age, no girth, no height.\n\nThe regulation does give its reasons for keeping the tree, and it names two rather than one: how it sits in the landscape, and its biological interest. What that biological interest consists of is not spelled out in any source we found, which is a shame, because on a mature tree it is usually the more interesting half of the answer.\n\nIt stands on the Hollerich stretch of the Petrusse valley path, the far end of the same walk that passes the braced beech under Bastion Beck. The valley runs on westward out of the fortress rock and through Hollerich, and the path stays public the whole way. From the bus stops on Rue de Bouillon it is about ten minutes down.\n\nNeither this sycamore nor the one down in Pfaffenthal has ever been dated. If you know anything about either of them, including who put them in and roughly when, we would take it.",
       "verified_sources": [
         "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
+        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg",
+        "https://data.public.lu/fr/datasets/arbres-remarquables/"
       ],
       "access": "Free, on the public Petrusse valley walking path",
       "transport": "Hollerich, Rue de Bouillon bus stops, ~10 min walk into the valley",
@@ -348,7 +371,11 @@
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by standing at the Hollerich end of the Petrusse valley path, past the braced beech under Bastion Beck. It stands on the Hollerich section of the path."
+      "how_to_recognise": "You can recognise it by standing at the Hollerich end of the Petrusse valley path, past the braced beech under Bastion Beck. It stands on the Hollerich section of the path.",
+      "official_register": {
+        "name": "Arbres remarquables (Administration de la nature et des forets, Luxembourg), no. 126",
+        "url": null
+      }
     },
     {
       "id": "lux_009",
@@ -366,7 +393,8 @@
       "story": "This is the only tree here you get to by lift. The Pfaffenthal-Kirchberg station drops you off the plateau into the lower town on the Alzette, and the sycamore is somewhere on the valley paths below the old fortress town, a short walk from the door.\n\nSomewhere is the honest word. The register gives a point, a Commons photograph and an OpenStreetMap node agree with that point to within a metre, and not one source describes how a person actually walks up to the tree. The paths down there are public and Pfaffenthal is not a big district, so you will get to it, but expect to look around. We would rather say that than send anyone down with false confidence.\n\nThe regulation lists it under two headings, landscape interest and dendrological interest, meaning it is considered worth seeing as a specimen and not only for where it stands. Age, girth and height are all blank, and no measurement of this tree appears to have been published anywhere.\n\nWhat the walk gives you regardless is the view from underneath: the lower town on the river, the plateau standing over it, and a large maple in the middle of the whole arrangement.",
       "verified_sources": [
         "https://download.data.public.lu/resources/arbres-remarquables/20260812-010213/ornf.geoportail.arbres-remarquables.geojson",
-        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg"
+        "https://lb.wikipedia.org/wiki/L%C3%ABscht_vun_de_bemierkensw%C3%A4erte_Beem_zu_L%C3%ABtzebuerg",
+        "https://data.public.lu/fr/datasets/arbres-remarquables/"
       ],
       "access": "Free. It stands on the Pfaffenthal valley paths below the old town, which are public. We have not confirmed which path passes closest to the trunk, so expect to look around a little once you are down there.",
       "transport": "Pfaffenthal-Kirchberg funicular/lift station, then a short walk",
@@ -386,7 +414,11 @@
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it as the large maple on the valley paths below the old town, a short walk from the Pfaffenthal-Kirchberg lift. No source describes the way to it, so expect to look around."
+      "how_to_recognise": "You can recognise it as the large maple on the valley paths below the old town, a short walk from the Pfaffenthal-Kirchberg lift. No source describes the way to it, so expect to look around.",
+      "official_register": {
+        "name": "Arbres remarquables (Administration de la nature et des forets, Luxembourg), no. 127",
+        "url": null
+      }
     },
     {
       "id": "lux_010",
