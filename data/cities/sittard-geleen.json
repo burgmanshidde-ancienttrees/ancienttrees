@@ -41,7 +41,8 @@
         "longitude": 5.843349
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1684952&outFields=*&f=json"
       ],
       "access": "Free, public planting, always open.",
       "photo": {
@@ -60,7 +61,13 @@
         "kind": "autumn colour",
         "label": "October, when the crown turns deep brick red"
       },
-      "how_to_recognise": "You can recognise it in October by its crown turning deep brick red, more deeply cut and pointed leaves than a native oak's. It stands by Geleen-Oost railway station."
+      "how_to_recognise": "You can recognise it in October by its crown turning deep brick red, more deeply cut and pointed leaves than a native oak's. It stands by Geleen-Oost railway station.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684952",
+        "url": null
+      },
+      "girth_cm": 423,
+      "height_m": 20
     },
     {
       "id": "sit_002",
@@ -75,7 +82,8 @@
         "longitude": 5.871686
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691232&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -87,7 +95,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "This copper beech grows in the Jardin d'Isabelle, a historic town garden in Sittard, banded by the national register to a planting around 1870, roughly 160 years old. The register attaches an actual story to the site rather than leaving it blank: the poet Charles Beltjens is said to have met his beloved here, in what was already, by the tree's own lifetime, an established city garden rather than a new planting.\n\nCopper beech is a colour variant of the ordinary European beech, its leaves running dark purple-red through summer instead of green, a mutation first found wild and then propagated by grafting and cutting ever since it was noticed. Left to grow in a sheltered garden setting for a century and a half, this one has had about as easy a life as a beech can have: little pruning, no root compaction, room to build the wide, low crown the species produces when nothing crowds it.\n\nA European ash the register also lists stands a few steps away in the same garden, so this beech is one half of a small cluster rather than a lone specimen. If you know more of the garden's own history, tell us.",
-      "how_to_recognise": "You can recognise it by its dark purple-red leaves and wide, low crown, a few steps from the garden's ash tree. It stands in the Jardin d'Isabelle, Kerkpad, Sittard."
+      "how_to_recognise": "You can recognise it by its dark purple-red leaves and wide, low crown, a few steps from the garden's ash tree. It stands in the Jardin d'Isabelle, Kerkpad, Sittard.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691232",
+        "url": null
+      },
+      "girth_cm": 342,
+      "height_m": 22
     },
     {
       "id": "sit_003",
@@ -164,7 +178,8 @@
         "longitude": 5.844879
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697212&outFields=*&f=json"
       ],
       "access": "Free, on public municipal land.",
       "photo": {
@@ -184,7 +199,13 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by its trunk, four and a half metres round, and a strikingly broad, open crown with room on every side. It stands on Rijksweg Noord, opposite the hospital."
+      "how_to_recognise": "You can recognise it by its trunk, four and a half metres round, and a strikingly broad, open crown with room on every side. It stands on Rijksweg Noord, opposite the hospital.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697212",
+        "url": null
+      },
+      "girth_cm": 450,
+      "height_m": 22
     },
     {
       "id": "sit_006",

@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://landgoedverwolde.nl/dikke-boom/",
         "https://achterhoek.nl/Dikke-Boom-Verwolde",
-        "https://www.bomenstichting.nl/nieuwsarchief/dikke-boom-van-verwolde.html"
+        "https://www.bomenstichting.nl/nieuwsarchief/dikke-boom-van-verwolde.html",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680863&outFields=*&f=json"
       ],
       "access": "Free. Stands on the grounds of Landgoed Verwolde, a private estate whose walking paths are open to the public; the Dikke Boompad, a dedicated hardened path signposted in yellow and black, was built specifically to reach the tree, including for visitors with mobility limitations. No ticket, fee or opening hours found.",
       "transport": "Rural estate near Laren, Gelderland, municipality of Lochem; reached via the estate's own walking trails, not by public transport.",
@@ -66,7 +67,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680863",
+        "url": null
+      },
+      "height_m": 23
     }
   ]
 }

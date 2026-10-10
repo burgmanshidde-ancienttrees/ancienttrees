@@ -45,7 +45,8 @@
       },
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/lodewijkslinde-vorden/",
-        "https://www.glk.nl/gebied/landgoed-vorden"
+        "https://www.glk.nl/gebied/landgoed-vorden",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680576&outFields=*&f=json"
       ],
       "access": "Free. On the grounds of Landgoed Vorden, managed by Geldersch Landschap en Kasteelen, open to walkers with a car park on site; the castle building itself is now a private wedding/hotel venue, but the estate grounds around it are public.",
       "transport": "Within walking distance of Vorden railway station (per the estate's own management, GLK).",
@@ -58,7 +59,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its shortened crown, cut back to about 13 metres after rot took the main stem in 2002, still 5.40 metres round. It stands near the coach house of Kasteel Vorden, beside the thicker Dikke Eik."
+      "how_to_recognise": "You can recognise it by its shortened crown, cut back to about 13 metres after rot took the main stem in 2002, still 5.40 metres round. It stands near the coach house of Kasteel Vorden, beside the thicker Dikke Eik.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680576",
+        "url": null
+      }
     }
   ]
 }

@@ -185,7 +185,8 @@
       },
       "story": "The lowest branches of this beech touch the ground and can root back into it, so what looks like one tree is quietly capable of becoming a ring of them.\n\nThat habit is what a weeping beech does when nobody stops it. The straight trunk throws its branches out and down instead of up, and where a branch tip lies against damp soil for long enough it can strike its own roots, a trick foresters call layering. Duck under the canopy at Wilhelminapark's western pond edge and you are standing inside a room the tree built for itself, walled by drooping branches on every side and lit green through the leaves.\n\nThe register puts its planting in the 1890s, which makes it a First World War contemporary standing quietly in a park that also holds a Polish war memorial and a captured German tank nearby. Nobody has recorded its age more precisely than the decade it was planted, and a trunk this size does not need a precise number to be worth ducking into.\n\nFree, public park, open daily.\n\nCome in winter if you want to see the architecture. Bare, the cascading branch structure of a weeping beech reads more dramatic than in full leaf, when the canopy is one solid green mass instead of a hundred draped ribs.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691793&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
@@ -206,7 +207,13 @@
         "label": "winter, when the bare branches show the tent-like cascade"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691793",
+        "url": null
+      },
+      "girth_cm": 330,
+      "height_m": 16
     },
     {
       "id": "bre_006",
@@ -223,7 +230,8 @@
       },
       "story": "This wingnut carries its seeds in chains that can run half a metre long, dozens of winged nuts strung like beads down a single stalk.\n\nPterocarya fraxinifolia is a Caucasian native in the same family as the walnut, and it shows: crush a leaf and the smell is unmistakably a walnut cousin's. It throws up multiple trunks from the base rather than one clean stem, which is normal for the species rather than damage, and it grows fast enough that a specimen planted in the late nineteenth century can already dwarf a chestnut planted the same decade.\n\nBreda has two of these registered within a kilometre of each other, this one on the Vijverstraat corner of Wilhelminapark, the other across town in Valkenberg beside the castle grounds. This is the more sheltered of the pair, tucked among the park's older plantings rather than standing in the open.\n\nThe register bands its planting to 1890 to 1900, putting it past its first century. No girth has been recorded.\n\nFree, public park, open daily.\n\nLook for the seed chains from midsummer into autumn. Nothing else in a Dutch park hangs quite like this.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688961&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
@@ -244,7 +252,13 @@
         ],
         "label": "July to September: long green catkins of winged nutlets hang from every branch",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688961",
+        "url": null
+      },
+      "girth_cm": 534,
+      "height_m": 20
     },
     {
       "id": "bre_007",
@@ -261,7 +275,8 @@
       },
       "story": "Turn one of this lime's leaves over and the underside is a soft, felted silver, which is where the species gets its name and why the whole crown seems to flicker when wind moves through it.\n\nTilia tomentosa is planted across Dutch parks for exactly that effect: from a distance a silver lime in a breeze looks like it is catching light no other tree nearby is catching. This one stands in the middle of Wilhelminapark's southern section, near a stone bench that has clearly been positioned to sit under it rather than merely beside it.\n\nThe register dates its planting to the 1860s, making it the oldest of several silver limes recorded in this park and one of the older trees in central Breda still standing where it was planted. It flowers later than most limes, into July, and the scent from a tree this size carries well past the bench.\n\nFree, public park, open daily.\n\nCome in July for the flowering. The rest of the year it is a fine shade tree; for two or three weeks in high summer it is the most fragrant spot in the park.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682085&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
@@ -280,7 +295,11 @@
         "label": "July, when it flowers late and the scent fills this end of the park"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682085",
+        "url": null
+      }
     },
     {
       "id": "bre_008",
@@ -371,7 +390,8 @@
       },
       "story": "This plane's bark comes away in patches the size of a hand, which is not disease. London planes shed their bark in irregular plates because the trunk cannot expand fast enough to keep an unbroken skin, and the patchwork of grey, green and cream underneath is the tree's normal, healthy state.\n\nIt stands on the western rim of Valkenberg, at the corner where the park gives way to the Willemstraat and the John F. Kennedylaan, which is why it registers to a slightly different address than the trees deeper in the park despite being part of the same grounds.\n\nThe register bands its planting to the 1880s, and London planes of that age are common street and park trees across the Netherlands precisely because they tolerate compacted soil and traffic pollution better than almost anything else that gets this large. That toughness, not rarity, is the reason to notice it: a tree planted for a hard job that has quietly outlived every reason it was chosen for.\n\nFree, public park, open daily.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680038&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "transport": "Central Breda, beside Breda Castle; 10 minute walk from Breda railway station.",
@@ -383,7 +403,11 @@
       },
       "how_to_recognise": "The plane standing at the park's western edge, where Valkenberg gives way to the Willemstraat corner.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680038",
+        "url": null
+      }
     },
     {
       "id": "bre_011",

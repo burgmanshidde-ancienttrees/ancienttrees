@@ -44,7 +44,8 @@
       },
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/dorpslinde-nuenen/",
-        "https://www.visitbrabant.com/nl/locaties/1359285727/oude-lindeboom-nuenen"
+        "https://www.visitbrabant.com/nl/locaties/1359285727/oude-lindeboom-nuenen",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683334&outFields=*&f=json"
       ],
       "access": "Free. Stands in the open on Nuenen's village green (de Berg), protected by an iron fence since 1889 but fully visible and reachable by the public at all times.",
       "transport": "Nuenen village centre; nearest station Eindhoven, then bus into the village.",
@@ -57,7 +58,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its hollow, pergola-like shell behind an iron fence, the crown lost to a 1994 fungus infection. It stands in the open on Nuenen's village green, de Berg."
+      "how_to_recognise": "You can recognise it by its hollow, pergola-like shell behind an iron fence, the crown lost to a 1994 fungus infection. It stands in the open on Nuenen's village green, de Berg.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683334",
+        "url": null
+      },
+      "height_m": 8
     }
   ]
 }

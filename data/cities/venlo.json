@@ -43,7 +43,8 @@
       },
       "story": "The farm is nearly four centuries old and the tree is only two, which is the correct order for once.\n\nThe Gasthuishof stands close to what was the border between the duchy of Gelre and the duchy of Gulik, two of the patchwork states that made up this part of Europe before anyone drew a Netherlands or a Germany. That line is now the boundary between Venlo and Kaldenkirchen. The original farm here was timber; it was replaced by a stone building in 1654, which is when the place stopped being provisional.\n\nThe chestnut went in around 1810 to 1820, on the yard.\n\nSweet chestnut is a Roman import to northern Europe, brought for the nuts, and it is a farmyard tree for practical reasons rather than decorative ones. It produces heavily, the nuts store, and a mature tree will feed a household through a winter. Old ones develop a spiral in the bark, the ridges twisting slowly round the trunk as it grows, which is the easiest way to spot one at distance.\n\nOctober is the month. The spiny husks split on the ground and you can pick them out with your boot.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685561&outFields=*&f=json"
       ],
       "access": "Farmyard on the Ulingshofweg, recorded as visitable in the national register.",
       "transport": "About 6 km south of Venlo station, at Tegelen near the German border.",
@@ -62,7 +63,13 @@
         "label": "October, when the spiny husks split open on the ground"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685561",
+        "url": null
+      },
+      "girth_cm": 632,
+      "height_m": 19
     },
     {
       "id": "vnl_002",
@@ -79,7 +86,8 @@
       },
       "story": "The national register of monumental trees contains, for this tree, the testimony of an old man who walked past.\n\nIt is written down as exactly that: according to an elderly passer-by, the tree is older than 1870, and in that year it was damaged on one side by a fire, from which it recovered quickly enough. No document, no source, no name. Somebody stopped, told the surveyor a story, and the surveyor thought it worth recording rather than discarding.\n\nThat is the right call and it is worth defending, because oral memory is often the only evidence a tree has. A fire that scorched one flank in 1870 is the kind of thing a family repeats for a century and no archive ever notices. It also happens to be checkable in principle: fire damage on a chestnut leaves a permanent scar down one side where the cambium died, with the bark rolling in over the edges of the wound for decades afterwards.\n\nSo look at the trunk all the way round. If one side carries an old healed scar, an anonymous man was right and the register is better than its sources.\n\nOctober for the nuts.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695375&outFields=*&f=json"
       ],
       "access": "Recorded as visitable in the national register; the tree stands at Vrijbroekweg 20.",
       "transport": "About 3 km southwest of Venlo station, on the Vrijbroekweg.",
@@ -98,7 +106,13 @@
         "label": "October, when the nuts drop"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695375",
+        "url": null
+      },
+      "girth_cm": 416,
+      "height_m": 16
     },
     {
       "id": "vnl_003",
@@ -115,7 +129,8 @@
       },
       "story": "Planted on a field named after jousting, which is a collision of two ideas about display separated by five centuries.\n\nThe Toernooiveld belongs to Kasteel Arcen, north of Venlo on the Maas. The sequoia went in between 1860 and 1870, which puts it within about fifteen years of the species arriving in Europe at all. Seed reached Britain in 1853 and the tree was an immediate sensation: enormous, foreign, from a part of California nobody had seen, and expensive. Owners of country places across Europe bought them the way they bought anything else that announced reach.\n\nThis is one of the earliest in the Netherlands, and it is now more than a century and a half into a lifespan that runs to three thousand years.\n\nThe bark is the reason to go rather than the height. It is thick, soft and fibrous, and you can push a fist into it. That is fire adaptation: in a Sierra Nevada forest the outer layer chars and insulates while the living tissue survives, which is how these trees outlast dozens of fires.\n\nThe castle gardens charge admission, so check before making the trip.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689993&outFields=*&f=json"
       ],
       "access": "Grounds of Kasteel Arcen, recorded as visitable in the national register. The castle gardens charge admission, so check before setting out.",
       "transport": "About 12 km north of Venlo, at Arcen on the Lingsforterweg.",
@@ -127,7 +142,13 @@
       },
       "how_to_recognise": "A single huge conifer on the open field, with thick spongy red-brown bark.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689993",
+        "url": null
+      },
+      "girth_cm": 733,
+      "height_m": 24
     },
     {
       "id": "vnl_004",
@@ -144,7 +165,8 @@
       },
       "story": "It stands directly beside a giant sequoia, and the pairing tells you what the monastery gardeners were doing.\n\nSteyl is a village on the Maas that became a centre of Catholic missionary orders from 1875, and the communities that settled here laid out grounds on a scale a village would never otherwise see. What they planted was not native. It was a collection: species from the Americas and Asia, arranged so that a walk through the park was also an argument about the size of the world.\n\nA catalpa and a sequoia side by side is that idea in two trees. One from the southeastern United States, one from the Sierra Nevada, planted within a decade or so of each other by people whose whole purpose was to send members abroad.\n\nThe catalpa is the more surprising of the two. It comes into leaf later than anything else, holds enormous heart-shaped leaves, then flowers in late June and early July in upright spikes of white bells marked yellow and purple in the throat. After that it hangs slender beans up to forty centimetres long, which stay on all winter.\n\nGo in the first week of July.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685576&outFields=*&f=json"
       ],
       "access": "Free. Monastery park at Steyl, recorded as visitable in the national register.",
       "transport": "About 5 km south of Venlo station, in Steyl on the Waterloostraat.",
@@ -163,7 +185,12 @@
         "label": "early July, when it hangs with white bells"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685576",
+        "url": null
+      },
+      "height_m": 15
     },
     {
       "id": "vnl_005",
@@ -180,7 +207,8 @@
       },
       "story": "The second of the three sequoias at Steyl, and the one standing in the monastery park itself.\n\nBy the time this one was planted, between 1900 and 1910, the species had been in Europe for half a century and the novelty had worn off, which makes the choice more interesting rather than less. Somebody here wanted another one specifically, next to the catalpa, in a park that a religious community was still actively building.\n\nWhat a hundred and twenty years produces is a tree that has finished being a curiosity and started being infrastructure. A sequoia at this age is a fixed vertical in the landscape, visible from outside the grounds, and the sort of thing local people give directions by.\n\nIt is also, in the strictest sense, only just beginning. Giant sequoias run past three thousand years and the largest ones alive were already old when Rome was founded. This tree is at about four percent of that.\n\nThe cones are worth looking for on the ground. They are surprisingly small for the tree, about the size of a hen's egg, and they can stay closed and viable on the branch for twenty years, waiting for fire.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685577&outFields=*&f=json"
       ],
       "access": "Free. Monastery park at Steyl, recorded as visitable in the national register.",
       "transport": "About 5 km south of Venlo station, in Steyl on the Waterloostraat.",
@@ -192,7 +220,13 @@
       },
       "how_to_recognise": "The tall conical conifer in the monastery park with thick fibrous red-brown bark. Small egg-sized cones underneath.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685577",
+        "url": null
+      },
+      "girth_cm": 643,
+      "height_m": 28
     },
     {
       "id": "vnl_006",
@@ -209,7 +243,8 @@
       },
       "story": "The street is named after the tree. That is rare enough to be the whole reason to come.\n\nStreets get named after landowners, saints, battles, queens and, in the twentieth century, after whatever the developer's theme was. Getting a street named after a species because a specimen of it is standing there requires the tree to have been the most notable thing on the site at the moment somebody had to fill in a form, and it means the tree was there first.\n\nSo the Sequoiahof at Steyl is a piece of evidence. Whoever laid out this housing worked around a giant sequoia planted between 1900 and 1910 by the religious communities that shaped this village, decided it was the defining feature, and wrote that down permanently.\n\nThat also makes it the least protected of the three sequoias here. The other two are in institutional grounds. This one is in front of a house, on a residential street, with everything that implies about roots under paving and branches near gutters.\n\nStand back on the far pavement to see the shape. Then go and push the bark, which is the same soft fibrous stuff as on the others and never stops being surprising.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689219&outFields=*&f=json"
       ],
       "access": "Free. Street tree on a residential street, reachable at any time.",
       "transport": "About 4 km south of Venlo station, on the Sequoiahof at Steyl.",
@@ -221,7 +256,13 @@
       },
       "how_to_recognise": "The one enormous conifer on the street, in front of number 2. It is the reason the street is called what it is.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689219",
+        "url": null
+      },
+      "girth_cm": 487,
+      "height_m": 27
     },
     {
       "id": "vnl_007",
@@ -238,7 +279,8 @@
       },
       "story": "It is behind the animal paddock at a children's farm, which is the least dignified address of any tree on this page and probably the best one.\n\nThe Hagerhof was an estate before it was a kinderboerderij, and this oak is from that earlier life, planted somewhere between 1900 and 1910. Red oak was the standard choice for a country place at that date: American, fast, and reliably the reddest thing in the grounds for two weeks in late October, which native oaks never manage.\n\nThe leaves are the easy way to tell it apart. Big, with pointed lobes ending in tiny bristles, nothing like the small soft rounded lobes of a Dutch oak. The acorns are squat and broad in a shallow saucer, and they take two years to ripen rather than one.\n\nWhat makes this worth including is the traffic. Most of the trees on this site are visited by adults who came deliberately. This one has small children running past it all day, none of whom are there for the tree, some of whom will remember it anyway.\n\nLate October, when it turns.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1693997&outFields=*&f=json"
       ],
       "access": "Free. Public children's farm, open in daylight.",
       "transport": "About 2 km southwest of Venlo station, at the Hagerhof on the Hagerlei.",
@@ -257,7 +299,13 @@
         "label": "late October, when it goes scarlet"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1693997",
+        "url": null
+      },
+      "girth_cm": 427,
+      "height_m": 25
     }
   ]
 }

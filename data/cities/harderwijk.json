@@ -45,7 +45,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/ginkgo-harderwijk/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679816",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679816&outFields=*&f=json"
       ],
       "access": "Free. The Hortus Botanicus is a small public garden in the centre of Harderwijk, owned by the municipality.",
       "transport": "In the old town of Harderwijk, roughly 15 minutes on foot from Harderwijk station.",
@@ -65,7 +66,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679816",
+        "url": null
+      }
     }
   ]
 }

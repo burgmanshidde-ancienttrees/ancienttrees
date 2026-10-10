@@ -36,7 +36,8 @@
         "neighbourhood": "Landgoed Bantam"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694593&outFields=*&f=json"
       ],
       "access": "Free, the estate is managed by a nature conservation organisation and open to visitors.",
       "photo": {
@@ -48,7 +49,12 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "Left to itself in open ground an oriental plane spreads sideways rather than upward, and this one has had a meadow to do it in for about a century and a half. It stands free on the east side of the pond at Landgoed Bantam, an estate laid out as a landscape garden in the late 1870s and nicknamed Klein Zwitserland for its artificial hills. The hills and the ponds are still there, and so are the straight beech and oak avenues from the same period. The national register dates this plane to the estate's first years, giving a band that puts it at roughly 150 years old. That is a band rather than a measurement, and the register is the only source we have found for the tree, so treat the age as its estimate. Platanus orientalis is the eastern parent of the London plane that lines half the streets in Europe, and the difference shows in the leaf: cut far deeper, into five narrow fingers, closer to a maple than to its own offspring. The bark flakes in the same olive and cream plates. Individual trees of this species in Greece and Turkey are credibly reckoned at many centuries, so at 150 years this one is barely into middle age. The estate is managed as a nature reserve and open to walkers.",
-      "how_to_recognise": "You can recognise it by its leaves, cut deep into five narrow fingers, and bark flaking in olive and cream plates. It stands free on the east side of the pond at Landgoed Bantam."
+      "how_to_recognise": "You can recognise it by its leaves, cut deep into five narrow fingers, and bark flaking in olive and cream plates. It stands free on the east side of the pond at Landgoed Bantam.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694593",
+        "url": null
+      },
+      "girth_cm": 414
     },
     {
       "id": "hil_002",
@@ -64,7 +70,8 @@
         "neighbourhood": "Spanderswoud"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683846&outFields=*&f=json"
       ],
       "access": "Free, public woodland, open daily.",
       "photo": {
@@ -84,7 +91,12 @@
         "kind": "flowers",
         "label": "late June and early July, when the flowers open and the crown hums"
       },
-      "how_to_recognise": "You can recognise it by the wrought iron fence around its base and the mushroom-shaped path marker, number 24591, beside it. It stands at the crossing of the Spanderslaan and the Oude Meentweg."
+      "how_to_recognise": "You can recognise it by the wrought iron fence around its base and the mushroom-shaped path marker, number 24591, beside it. It stands at the crossing of the Spanderslaan and the Oude Meentweg.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683846",
+        "url": null
+      },
+      "girth_cm": 233
     },
     {
       "id": "hil_004",
@@ -100,7 +112,8 @@
         "neighbourhood": "Hilvertsweg / Bosdrift"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683845&outFields=*&f=json"
       ],
       "access": "Free, public planting, always open.",
       "photo": {
@@ -119,7 +132,12 @@
         ],
         "kind": "flowers",
         "label": "May, when the white candles stand up all over the crown"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683845",
+        "url": null
+      },
+      "girth_cm": 302
     },
     {
       "id": "hil_005",
@@ -135,7 +153,8 @@
         "neighbourhood": "Hilvertsweg / Bosdrift"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683769&outFields=*&f=json"
       ],
       "access": "Free, public planting, always open.",
       "photo": {
@@ -155,7 +174,12 @@
         ],
         "kind": "flowers",
         "label": "late June and early July, when the scent crosses the road before you see the tree"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683769",
+        "url": null
+      },
+      "girth_cm": 206
     },
     {
       "id": "hil_006",
@@ -171,7 +195,8 @@
         "neighbourhood": "Pinetum Blijdenstein"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696924&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -185,7 +210,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "When the house came down in 1928 the land was parcelled up and sold, all of it except the walled garden, which the owner's will required to be kept. That garden is the Pinetum Blijdenstein, and this western red cedar has stood in its southeast corner since close to the beginning. Benjamin Willem Blijdenstein was an Amsterdam banker who bought six hectares here in 1880, had a villa built, and in 1898 turned the estate's walled fruit and vegetable garden into a collection of conifers. He worked on it until he died in 1914. The register dates this tree to that first period, a band that puts it at roughly 130 years old, and it names a giant sequoia from the same years standing nearby. The register is the only source we have found for it. Thuja plicata comes from the Pacific Northwest, where the coastal peoples built canoes, longhouses and totem poles out of it and where the species can pass a thousand years. Crush a spray of the flat green foliage and it smells of pineapple. The bark peels away in long fibrous strips, and the branch tips droop before turning up at the end, which is how you tell it from the cypresses around it. The paths Hendrik Copijn drew in 1909 are still broadly the ones you walk on.",
-      "how_to_recognise": "You can recognise it by its bark, peeling in long fibrous strips, and drooping branch tips that turn up at the end. It stands in the southeast corner of Pinetum Blijdenstein."
+      "how_to_recognise": "You can recognise it by its bark, peeling in long fibrous strips, and drooping branch tips that turn up at the end. It stands in the southeast corner of Pinetum Blijdenstein.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696924",
+        "url": null
+      },
+      "girth_cm": 200,
+      "height_m": 20
     },
     {
       "id": "hil_007",
@@ -201,7 +232,8 @@
         "neighbourhood": "Soestdijkerstraatweg"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677562&outFields=*&f=json"
       ],
       "access": "Free, roadside tree on public land, always visible.",
       "photo": {
@@ -213,7 +245,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "story": "In 1990 the street was repaved and the cedar nearly died of it. Pipes went in between the trunk and the front gardens, straight across the root plate. By 1994 the municipality was digging test pits and rebuilding the soil underneath; by the summer of 1996 the tree had recovered reasonably; in May 2005 the register's own inspector recorded it as doing only moderately, with dead and broken branches. It has been pruned hard since and stands a little out of balance because of it. All of which is what a 140 year old Atlas cedar looks like when you set it in paving on a through road. The register dates the tree to the 1880s and notes that the houses along here went up around 1900, so the cedar was standing before the street was. Cedrus atlantica comes from the Atlas mountains of Morocco and Algeria, where it grows on dry limestone at altitude and is now threatened in its own range. On the Soestdijkerstraatweg it gets the opposite of everything it evolved for: wet feet, compacted ground, road salt and services under the roots. It has managed 140 years anyway. The needles sit in tight blue-grey rosettes on short spurs and the branches leave the trunk in flat horizontal tiers you can read from across the road. The register is the only source we have found for it.",
-      "how_to_recognise": "You can recognise it by its blue-grey needles in tight rosettes and branches leaving the trunk in flat horizontal tiers. It stands on the roadside at Soestdijkerstraatweg 11."
+      "how_to_recognise": "You can recognise it by its blue-grey needles in tight rosettes and branches leaving the trunk in flat horizontal tiers. It stands on the roadside at Soestdijkerstraatweg 11.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677562",
+        "url": null
+      },
+      "girth_cm": 303,
+      "height_m": 19
     }
   ]
 }

@@ -44,7 +44,8 @@
       "story": "William III wanted somewhere to hunt, and in 1685 he built a palace on the sand north of a village nobody had heard of. In front of it he had oaks planted in avenues, the Koningslaan, because that is what you did with an approach.\n\nThe national register believes this is one of them. It gives the tree a planting band of 1600 to 1700 and then says why it leans late: probably planted at the same time as the Koningslaan oaks, which means between 1685 and 1690. That reasoning is the register's own and it is worth repeating rather than hiding, because it is the whole basis for calling this tree roughly 340 years old. Nobody has taken a core.\n\nWhat is certain is that it was standing when William became King of England in 1689 and left for London, when the French occupied the palace in 1795, and when the last royal resident died in 1962.\n\nIt stands beside the statue of Frederick Henry, which is the easiest landmark on the estate. The oak is the heavy one behind it, with the low branching of a tree that grew up in the open rather than in a wood.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://paleishetloo.nl/bezoek/tickets"
+        "https://paleishetloo.nl/bezoek/tickets",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685694&outFields=*&f=json"
       ],
       "access": "Paid. Inside Paleis Het Loo: the palace and formal gardens need a museum ticket, the surrounding Paleispark a two euro day ticket from the machines at its entrances.",
       "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
@@ -63,7 +64,13 @@
         "label": "October, when the acorns come down"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685694",
+        "url": null
+      },
+      "girth_cm": 610,
+      "height_m": 26
     },
     {
       "id": "apd_002",
@@ -81,7 +88,8 @@
       },
       "story": "Over six metres round, measured at chest height, and it stands behind a fire station.\n\nThat is the whole appeal. Apeldoorn has a royal palace full of documented trees and its thickest and one of its oldest is a lime hidden at an angle behind a municipal building in a village on the southern edge, where you would walk past it for years without knowing.\n\nIt is a leilinde, a lime that was pollarded and trained flat, which is what people did to a tree standing against a house front: you kept it low, you cut it back hard every few years, and it gave shade in summer without taking the light in winter. The register reads it the same way and supposes there was once a cottage or a small farm here, with the lime trained across its facade, planted somewhere between 1750 and 1800.\n\nThe village council thought this was worth doing something about. They put up a sign on the road pointing to it, and the town had already put a bench there years earlier, so you can sit down and look at it properly.\n\nThat is the correct response to a tree like this, and it is rarer than the tree.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687631&outFields=*&f=json"
       ],
       "access": "Free. Public ground behind the fire station, with a bench and a sign from the road.",
       "transport": "About 5 km southwest of Apeldoorn station, in Ugchelen. Bus to Ugchelen, then a short walk to the G. P. Duringlaan.",
@@ -101,7 +109,12 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687631",
+        "url": null
+      },
+      "height_m": 22
     },
     {
       "id": "apd_003",
@@ -154,7 +167,8 @@
       },
       "story": "It flowers in June and almost nobody notices, because the flowers are green and orange and they sit upright at the ends of branches twenty metres up.\n\nThat is the thing worth knowing about a tulip tree. It is not named for its shape. It is named for the flower, which is a real tulip-shaped bloom about six centimetres across, pale green with an orange band at the base, and on a tree this size they are held so high that most people who walk past in flowering season see nothing at all. Bring something to look through, or wait until they drop.\n\nThe leaf is the other giveaway and it works all summer: squared off at the tip, as though somebody cut the point off with scissors. There is no other tree in a Dutch garden with that leaf.\n\nIt is an eastern North American species, in European gardens since the seventeenth century, and it was planted here in the same stretch as the copper beech beside it, between 1810 and 1820.\n\nIn October it turns clear yellow, which on a tree this tall is the version of it most people actually see.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685696&outFields=*&f=json"
       ],
       "access": "Paid. Inside the formal gardens of Paleis Het Loo, covered by a museum ticket.",
       "transport": "About 3 km north of Apeldoorn station, bus to Paleis Het Loo.",
@@ -173,7 +187,13 @@
         "label": "June, when the green and orange flowers are up in the crown"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685696",
+        "url": null
+      },
+      "girth_cm": 680,
+      "height_m": 36
     },
     {
       "id": "apd_005",
@@ -219,7 +239,8 @@
       },
       "story": "This park exists to sell building plots.\n\nThe ground was the De Vlijt estate, mostly heath. In 1825 its owner Ameshof built the villa Marialust and dug the large pond that still lies in front of it. Sixty years later the company that had the land wanted to sell it off for villas, and worked out that people pay more for a plot beside a park than a plot beside a field. So in 1885 they laid out the road pattern, and made a walking park around the pond that was already there.\n\nIt worked well enough that in 1889 they offered the roads and the park to the town, which took them. In August 1890 the council asked the king for permission to name it after Princess Wilhelmina on her tenth birthday. He said yes, and from 17 August 1890 it has been the Wilhelminapark.\n\nThe register puts this red oak between 1860 and 1870, which places it before the park and inside the estate that preceded it. Red oak is an American species, planted here for its autumn colour, and in a good year it is the reddest thing in Apeldoorn.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695100&outFields=*&f=json"
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 1.5 km northeast of Apeldoorn station, on foot.",
@@ -238,7 +259,13 @@
         "label": "October, when it goes properly red"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695100",
+        "url": null
+      },
+      "girth_cm": 570,
+      "height_m": 30
     },
     {
       "id": "apd_007",
@@ -255,7 +282,8 @@
       },
       "story": "The register gives this lime the same planting band as the oak at the palace, 1600 to 1700, and unlike the oak it offers no reasoning at all. That is a century of uncertainty stated plainly, and it is the honest position: somebody surveyed a very old lime on an estate east of the town and could not date it more closely than that.\n\nSo it is either the oldest tree in Apeldoorn or roughly the same age as the palace oak, and there is no way to settle it without a core.\n\nWhat a band that wide does tell you is what the tree looks like. Limes of this age are rarely single clean trunks. They tend to have been cut, layered, split by their own weight and regrown, sometimes hollow, often with the ground around the base thrown up by roots that have had three or four hundred years to spread. A lime is also one of the few trees that can produce a new trunk from a fallen limb that touches soil, which is part of why they last.\n\nIf you go and can take a girth measurement at 1.30 metres, send it to us. That is the number that would settle this.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687639&outFields=*&f=json"
       ],
       "access": "Free. Recorded as visitable in the national register; the tree stands on the estate grounds at Het Woldhuis 1.",
       "transport": "About 6 km east of Apeldoorn station, on the Woudhuis side.",
@@ -275,6 +303,10 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687639",
+        "url": null
       }
     },
     {
@@ -292,7 +324,8 @@
       },
       "story": "A pin oak of this age is unusual in the Netherlands, because the species did not become a standard street and park tree here until well into the twentieth century. One planted between 1860 and 1870 was somebody's deliberate choice rather than a default.\n\nIt is easy to identify and hard to confuse with the pedunculate oaks around it. The leaves are cut into narrow, sharply bristled lobes with deep rounded bays between them, nothing like the soft rounded lobes of a native oak. The lower branches sweep downward toward the ground while the upper ones point up, which gives an old one a distinctive drooping-skirted outline you can read from across a lawn.\n\nIts other habit is holding its dead leaves. Pin oaks often keep a rustling brown canopy through most of the winter and only drop it when the new buds push in spring, so this is a tree that looks occupied in January when everything around it is bare.\n\nIt stands on the west side of the Oranjepark, opposite the P. Krugerstraat. In late October it turns a deep scarlet that lasts a fortnight.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687083&outFields=*&f=json"
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 1 km northeast of Apeldoorn station, on foot.",
@@ -311,7 +344,13 @@
         "label": "late October, when it turns scarlet"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687083",
+        "url": null
+      },
+      "girth_cm": 465,
+      "height_m": 24
     },
     {
       "id": "apd_009",
@@ -331,7 +370,8 @@
         "Landelijk Register Monumentale Bomen (LRMB), entry nr 1678392",
         "https://www.apeldoorndirect.nl/stad/kijk-op-de-wijk-prins-hendrikplein-20171013/",
         "https://www.geheugenvanapeldoorn.nl/bijzondere-plaatsen/de-parken-indische-buurt-en-loolaan-noord/willem-de-zwijgerboom/pointofinterest/detail",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678392&outFields=*&f=json"
       ],
       "access": "Free. Public square, open at all times.",
       "transport": "About 1 km north of Apeldoorn station, on foot.",
@@ -353,7 +393,11 @@
         "kind": "fruit"
       },
       "girth_cm": 372,
-      "height_m": 21
+      "height_m": 21,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678392",
+        "url": null
+      }
     },
     {
       "id": "apd_010",

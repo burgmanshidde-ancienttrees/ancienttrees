@@ -45,7 +45,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/kroezeboom-fleringen/",
         "https://nl.wikipedia.org/wiki/Kroezeboom",
-        "https://www.visitoost.nl/wat-te-doen/alle-natuurgebieden/29029-de-kroezeboom/"
+        "https://www.visitoost.nl/wat-te-doen/alle-natuurgebieden/29029-de-kroezeboom/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685128&outFields=*&f=json"
       ],
       "access": "Free. Public site with a marked parking area on the Jan van Arkelweg and a signed, roughly 5-minute walk to the tree; an unpaved path runs alongside it. A cast-iron fence protects the trunk itself, so visitors view rather than touch it.",
       "transport": "Nearest station Almelo, then bus toward Tubbergen/Fleringen and a walk from the village.",
@@ -75,7 +76,12 @@
         "source_name": "Kroezeboom, Fleringen",
         "qid": "Q2608223",
         "views": 304
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685128",
+        "url": null
+      },
+      "height_m": 16
     }
   ]
 }

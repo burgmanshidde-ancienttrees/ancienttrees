@@ -195,7 +195,8 @@
       },
       "story": "This plane was likely planted in 1851 in the garden of the Coolsingel hospital, and it was still there in May 1940 when German bombing destroyed most of Rotterdam's city centre in a single night, the hospital included. Only the tree and the building's entrance gate came through. The gate stands beside the plane today, the two of them forming what Rotterdammers now treat as an accidental monument neither was designed to be.\n\nThe tree nearly lost a different fight two decades later. When the Lijnbaan, one of Europe's first purpose-built pedestrian shopping streets, was extended and renovated in the 1960s, the plan called for a dead straight line the tree and gate stood directly in the way of. Shopkeepers fought the compromise that saved them and lost; the street bent anyway, a small square was built around the tree instead, and the shops went up around that. A Rotterdam poet, Pascale Duin, later wrote it an ode calling it a silent witness. In 2019 it was nominated to represent the whole province of Zuid-Holland in the national Tree of the Year contest. It stands free, in the open, one of two Rotterdam planes known to have survived the exact night that erased almost everything around them.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1689886)"
+        "data/registers/netherlands-lrmb.json (nr 1689886)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689886&outFields=*&f=json"
       ],
       "access": "Free, public square, open at any time",
       "transport": "Centrum, central Rotterdam; about a 10 minute walk from Rotterdam Centraal station",
@@ -207,7 +208,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing beside the lone surviving hospital gate, in a small square the street bends around instead of running straight. It stands at the southern end of the Lijnbaan."
+      "how_to_recognise": "You can recognise it by standing beside the lone surviving hospital gate, in a small square the street bends around instead of running straight. It stands at the southern end of the Lijnbaan.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689886",
+        "url": null
+      },
+      "girth_cm": 445,
+      "height_m": 30
     },
     {
       "id": "rot_007",
@@ -225,7 +232,8 @@
       "story": "Rotterdam spent its first postwar years rebuilding rather than remembering, and it took one person to insist on a place to do both: Willem Ganter, first violinist of the Rotterdam Philharmonic Orchestra, who raised money for a memorial tree at the garden of the police station on Eendrachtsplein, a spot the city had trusted people to gather at even during the occupation. A 20-year-old European yew was ordered from England and planted in 1947, already a substantial tree rather than a sapling, because a memorial planted small would have taken decades to look like one.\n\nThe yew has had a harder life since than the plan intended. A new tram line cut through the area, then a metro line in 1983, and the police eventually moved out of the building entirely, which is now a cafe. The tree itself once grew on two trunks and now stands on one, having lost the other somewhere along the way, and simply outlasted every change around it regardless. Had Ganter chosen a less tenacious species, none of this would have survived to be told. It stands free, in the open, beside the entrance of the building it has outlived every use of.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696535)",
-        "https://rotterdam.knnv.nl/herdenkingsboom-eendrachtsplein/"
+        "https://rotterdam.knnv.nl/herdenkingsboom-eendrachtsplein/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696535&outFields=*&f=json"
       ],
       "access": "Free, public street, viewable at any time",
       "transport": "Centrum, central Rotterdam; about a 12 minute walk from Rotterdam Centraal station",
@@ -246,7 +254,13 @@
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by its single trunk, having lost a second it once had, beside the entrance of the former police station, now a cafe. It stands at Eendrachtsplein 3."
+      "how_to_recognise": "You can recognise it by its single trunk, having lost a second it once had, beside the entrance of the former police station, now a cafe. It stands at Eendrachtsplein 3.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696535",
+        "url": null
+      },
+      "girth_cm": 136,
+      "height_m": 12
     },
     {
       "id": "rot_008",
@@ -313,7 +327,7 @@
       "age_estimate": "roughly 155-165 years",
       "age_min": 155,
       "age_max": 166,
-      "girth_cm": null,
+      "girth_cm": 392,
       "location": {
         "address": "Historische Tuin Schoonoord, Kievitslaan, Rotterdam",
         "latitude": 51.909305,
@@ -324,7 +338,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696614)",
         "https://www.tuinschoonoord.nl/",
-        "https://nl.wikipedia.org/wiki/Park_Schoonoord_(Rotterdam)"
+        "https://nl.wikipedia.org/wiki/Park_Schoonoord_(Rotterdam)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696614&outFields=*&f=json"
       ],
       "access": "Free, daily 8:30-16:30 (closes during large festivals in adjoining Het Park)",
       "transport": "Walkable from central Rotterdam, near the Euromast, roughly 15 minutes",
@@ -336,7 +351,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing beside the garden's pond on a narrow footpath near the Westzeedijk boundary, with two Lebanon cedars nearby. It stands in the Historische Tuin Schoonoord."
+      "how_to_recognise": "You can recognise it by standing beside the garden's pond on a narrow footpath near the Westzeedijk boundary, with two Lebanon cedars nearby. It stands in the Historische Tuin Schoonoord.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696614",
+        "url": null
+      },
+      "height_m": 20
     },
     {
       "id": "rot_011",
@@ -356,7 +376,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1694861)",
         "https://www.tuinschoonoord.nl/",
-        "https://nl.wikipedia.org/wiki/Park_Schoonoord_(Rotterdam)"
+        "https://nl.wikipedia.org/wiki/Park_Schoonoord_(Rotterdam)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694861&outFields=*&f=json"
       ],
       "access": "Free, daily 8:30-16:30 (closes during large festivals in adjoining Het Park)",
       "transport": "Walkable from central Rotterdam, near the Euromast, roughly 15 minutes",
@@ -377,6 +398,10 @@
         ],
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694861",
+        "url": null
       }
     },
     {
@@ -386,7 +411,7 @@
       "age_estimate": "roughly 85-95 years",
       "age_min": 86,
       "age_max": 96,
-      "girth_cm": null,
+      "girth_cm": 300,
       "location": {
         "address": "Heemraadssingel, near the Schietbaanbrug, west side near no. 215B, Rotterdam",
         "latitude": 51.915601,
@@ -396,7 +421,8 @@
       "story": "Rotterdam's own list of monumental trees calls this Atlas cedar '100+ years old', which would put its planting before 1926. The register that catalogued it individually gives an exact year instead, 1930, within a band of 1930 to 1940, which is both more specific and the number used here, flagged against the city's rounder claim.\n\nIt stands on municipal land beside the Heemraadssingel canal, near the Schietbaanbrug, a wooden footbridge from 1867 that is itself a listed monument, on the canal's west side near house number 215B. The Heemraadssingel is one of Rotterdam's oldest and best-preserved canals, laid out between roughly 1900 and 1915 as part of a protected cityscape, and today carries about fifty tree species along its banks, mostly planes and lindens. A cedar standing out among them is rare enough to have earned this one its own register entry.\n\nOther sources describe a pair of Atlas cedars further along the same canal, near house number 180, which may or may not be the same trees under a different address; this entry covers the specimen at the register's own coordinate, by the footbridge. The canal and its trees are public at all times, no ticket, no gate, just a path along the water.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1695437)",
-        "https://www.rotterdam.nl/monumentale-bomen"
+        "https://www.rotterdam.nl/monumentale-bomen",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695437&outFields=*&f=json"
       ],
       "access": "Free, public canalside park (Heemraadssingel/Heemraadspark), open at any time",
       "transport": "Walkable from central Rotterdam, Nieuwe Westen district, roughly 20-25 minutes; also reachable by tram along the singel",
@@ -408,7 +434,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing out as a conifer among the canal's planes and lindens, beside the wooden Schietbaanbrug footbridge. It stands on the Heemraadssingel, near number 215B."
+      "how_to_recognise": "You can recognise it by standing out as a conifer among the canal's planes and lindens, beside the wooden Schietbaanbrug footbridge. It stands on the Heemraadssingel, near number 215B.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695437",
+        "url": null
+      },
+      "height_m": 21
     },
     {
       "id": "rot_013",
@@ -460,7 +491,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1687054)",
-        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg"
+        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687054&outFields=*&f=json"
       ],
       "access": "Paid entry to Trompenburg Tuinen & Arboretum (adult ticket; free with the Dutch Museumkaart). Open Tue-Sun 10:00-16:30 and Mon from 12:00 (April onward), shorter hours Nov-Feb.",
       "transport": "Tram 21 to Woudestein, then about 5 minutes on foot to the garden entrance at Honingerdijk 86.",
@@ -475,7 +507,13 @@
         "status": "missing"
       },
       "photos": [],
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687054",
+        "url": null
+      },
+      "girth_cm": 60,
+      "height_m": 4
     },
     {
       "id": "rot_015",
@@ -493,7 +531,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1687053)",
-        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg"
+        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687053&outFields=*&f=json"
       ],
       "access": "Paid entry to Trompenburg Tuinen & Arboretum (adult ticket; free with the Dutch Museumkaart). Open Tue-Sun 10:00-16:30 and Mon from 12:00 (April onward), shorter hours Nov-Feb.",
       "transport": "Tram 21 to Woudestein, then about 5 minutes on foot to the garden entrance at Honingerdijk 86.",
@@ -508,7 +547,13 @@
         "status": "missing"
       },
       "photos": [],
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687053",
+        "url": null
+      },
+      "girth_cm": 366,
+      "height_m": 17
     },
     {
       "id": "rot_016",
@@ -526,7 +571,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1687055)",
-        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg"
+        "https://nl.wikipedia.org/wiki/Arboretum_Trompenburg",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687055&outFields=*&f=json"
       ],
       "access": "Paid entry to Trompenburg Tuinen & Arboretum (adult ticket; free with the Dutch Museumkaart). Open Tue-Sun 10:00-16:30 and Mon from 12:00 (April onward), shorter hours Nov-Feb.",
       "transport": "Tram 21 to Woudestein, then about 5 minutes on foot to the garden entrance at Honingerdijk 86.",
@@ -541,7 +587,13 @@
         "status": "missing"
       },
       "photos": [],
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687055",
+        "url": null
+      },
+      "girth_cm": 230,
+      "height_m": 17
     }
   ]
 }

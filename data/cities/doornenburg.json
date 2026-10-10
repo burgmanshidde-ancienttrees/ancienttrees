@@ -45,7 +45,8 @@
       },
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/duizendjarige-eik-doornenburg/",
-        "https://www.kasteeldoornenburg.nl/de-oude-eik/"
+        "https://www.kasteeldoornenburg.nl/de-oude-eik/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681174&outFields=*&f=json"
       ],
       "access": "Free, no castle ticket needed. A path runs from the small free car park at Kasteel Doornenburg straight to the tree, with a bench and an ANWB information sign beside it.",
       "transport": "Doornenburg village; nearest station is Zevenaar or Arnhem, then bus/bike into the village and a short walk to the castle.",
@@ -68,6 +69,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681174",
+        "url": null
       }
     }
   ]

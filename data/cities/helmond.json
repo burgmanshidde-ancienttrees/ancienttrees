@@ -47,7 +47,8 @@
       },
       "story": "This tree is a fragment of something much larger that no longer exists.\n\nKasteel Helmond has been standing in the middle of this town for nearly seven hundred years, a moated brick castle that is now the town hall and museum. Until the middle of the twentieth century it sat inside a big landscape park, the kind that a private owner maintains and a town cannot. In 1921 the last private owner sold the castle, and most of the park went in the decades that followed, built over or reorganised into something smaller.\n\nThe silver maple, planted between 1890 and 1900, belongs to that vanished park. So do three other trees on this page. Together they are the best physical evidence of what used to be here.\n\nSilver maple is North American and was planted for speed and for its leaf, which is cut into five narrow lobes and is bright silver-white on the underside, so the crown flashes pale whenever there is wind.\n\nIt does one more thing worth timing a visit for. It flowers in March, in small red and yellow tufts directly on the bare twigs, weeks before anything around it moves.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695126&outFields=*&f=json"
       ],
       "access": "Free. Open castle grounds in the centre of town.",
       "transport": "In the centre of Helmond, at the Kasteelplein.",
@@ -66,7 +67,13 @@
         "label": "March, when it flowers on bare twigs before anything else"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695126",
+        "url": null
+      },
+      "girth_cm": 555,
+      "height_m": 25
     },
     {
       "id": "hlm_002",
@@ -83,7 +90,8 @@
       },
       "story": "Somebody wrote a book about the trees of this town, and because of it we know what this oak is called.\n\nThe national register does not usually explain its own names. Here it does: the tree is listed as de oude eik van boer Peeters, and the register says the name comes from 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, a collection of large and small histories of the trees in and around Helmond.\n\nThat chain is worth appreciating. A local writer went round asking about trees, wrote down what people called them, published it, and a national government survey later read the book and used the name. Farmer Peeters himself has vanished entirely.\n\nThe oak is banded 1820 to 1830, so it is about two centuries old and stands at Brouwhuis on the Rijnlaan, in what is now a housing district on what was farmland when it was planted.\n\nThat is the fate of most old farm oaks that survive: the fields go, the buildings arrive, and the tree ends up in a green strip with a street name around it and a farmer's name attached.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695101&outFields=*&f=json"
       ],
       "access": "Free. Public planting on the Rijnlaan.",
       "transport": "About 4 km southeast of Helmond centre, at Brouwhuis.",
@@ -102,7 +110,13 @@
         "label": "October, when the acorns come down"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695101",
+        "url": null
+      },
+      "girth_cm": 392,
+      "height_m": 21
     },
     {
       "id": "hlm_003",
@@ -119,7 +133,8 @@
       },
       "story": "The tower dates from about 1400 and the oak from about 1855, which is a gap of four and a half centuries between two things standing side by side.\n\nThe Oude Toren at Stiphout is a church tower without its church, which is a common enough sight in this country and always means the same thing: the nave was replaced or demolished and the tower, being solid and expensive to remove and usually owned separately, stayed. What is left is a tall brick object standing alone with a graveyard around it.\n\nThe oak came far later. It is banded 1850 to 1860 and at roughly 170 years it is at about a third of its likely span, which means that if it is left alone it will eventually catch up on the tower in a way nothing else here will.\n\nThat is the reason to come, and it is worth stating plainly rather than dressing up. Two hundred years from now a visitor will find a tower from 1400 and an oak from 1855, and the difference between them will look far smaller than it does today.\n\nGo in winter, when the bare frame reads against the brick.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696051&outFields=*&f=json"
       ],
       "access": "Free. Open ground at the tower, reachable in daylight.",
       "transport": "About 4 km northwest of Helmond centre, at Stiphout.",
@@ -138,7 +153,13 @@
         "label": "January, when the bare frame reads against the brick"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696051",
+        "url": null
+      },
+      "girth_cm": 375,
+      "height_m": 25
     },
     {
       "id": "hlm_004",
@@ -155,7 +176,8 @@
       },
       "story": "The wood this beech stands in is a leftover piece of the hunting ground of the lords of Helmont, and the register knows what the farmhands used to eat in it.\n\nThe pool here is called the spekstreuvelvenneke and it has always been there. The name comes from what happened around it: farm workers took their midday meal at this spot, and what they ate was spekstruif, a bacon pancake. That is the level of detail a national tree register does not usually carry, and it survives because somebody local made sure it did.\n\nThe wood shows on a map of 1890. It is a relict, a fragment of a much older hunting landscape that the farming and building around it never quite absorbed.\n\nThe beech, banded 1870 to 1880, is a purple one, which in a fragment of old hunting wood is an incomer: somebody planted it deliberately in a place that had otherwise simply been left.\n\nGo in October, when it turns copper, and find the pool. The pancake is not provided.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695702&outFields=*&f=json"
       ],
       "access": "Free. Public park wood at Horst.",
       "transport": "About 3 km north of Helmond centre, at Horst.",
@@ -174,7 +196,11 @@
         "label": "October, when the purple turns copper"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695702",
+        "url": null
+      }
     },
     {
       "id": "hlm_005",
@@ -191,7 +217,8 @@
       },
       "story": "The oldest of the four survivors in the castle grounds, and the one most likely to outlast the rest by centuries.\n\nIt was planted between 1880 and 1890, when Kasteel Helmond was still a private house sitting in a large landscape park, four decades before the sale that led to most of that park disappearing. A native oak in a nineteenth century park was not the fashionable choice; the fashion was for silver maples, copper beeches and conifers from other continents, all of which are also on this page. Oak was the sober option, planted by somebody thinking further ahead than their own lifetime.\n\nThat turned out to be the right call. Pedunculate oak routinely reaches four hundred years in this country. The silver maple beside it will be lucky to see two hundred.\n\nA castle that has stood for nearly seven centuries with an oak that might manage half of that is a decent pairing, and it is the sort of arithmetic that only becomes visible when you know the numbers.\n\nAcorns on long stalks in October, and a great many of them on a tree with this much room.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695128&outFields=*&f=json"
       ],
       "access": "Free. Open castle grounds in the centre of town.",
       "transport": "In the centre of Helmond, at the Kasteelplein.",
@@ -210,7 +237,13 @@
         "label": "October, when the acorns come down across the grounds"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695128",
+        "url": null
+      },
+      "girth_cm": 386,
+      "height_m": 29
     },
     {
       "id": "hlm_006",
@@ -227,7 +260,8 @@
       },
       "story": "This one was planted just after the castle changed hands, which makes it the last generation of the old park rather than a survivor of it.\n\nThe sale came in 1921 and the landscape park largely went in the decades after. A silver lime banded 1920 to 1930 is therefore standing on the hinge: planted around the moment the private estate ended and the public use began, into grounds that were about to stop being anybody's private garden.\n\nSilver lime is the best of the limes to meet in person, for a reason you can see from across the grounds. Every leaf is covered underneath in a fine white felt, so in the slightest wind the crown turns over and flickers between deep green and pale silver. Nothing else this size does it.\n\nIt has a darker habit too. It flowers late, in July, and its nectar is hard on bumblebees, so under a big one in high summer you will sometimes find them on the ground. The reasons are argued over and the current reading is more about a starving late-season insect finding a huge low-value food source than about poison.\n\nJuly, then, for the scent.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695129&outFields=*&f=json"
       ],
       "access": "Free. Open castle grounds in the centre of town.",
       "transport": "In the centre of Helmond, at the Kasteelplein.",
@@ -246,7 +280,13 @@
         "label": "July, when the scent fills the castle grounds"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695129",
+        "url": null
+      },
+      "girth_cm": 351,
+      "height_m": 27
     },
     {
       "id": "hlm_007",
@@ -263,7 +303,8 @@
       },
       "story": "A horse chestnut in a castle park is a tree planted for children, whether or not anyone admitted it at the time.\n\nThe conkers are the point. They ripen in September, the spiny green cases split on the ground, and what falls out is the glossiest object in northern European botany, a deep mahogany brown that fades within days of being picked up. Every generation discovers this independently at about the age of six.\n\nThis one is banded 1920 to 1930, so it went in just after the castle was sold in 1921 and the private landscape park began to break up. Planting a chestnut at that moment, in grounds that were becoming public, reads like somebody thinking about the town rather than about a garden.\n\nThe species is having a hard century. Bleeding canker has killed many mature trees since the 1990s, and the leaf miner moth, here since about 2002, browns the foliage of nearly every horse chestnut in the country from July onward.\n\nSo come in early May for the white candles, before the miner starts, or in September for the conkers. Not August.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695127&outFields=*&f=json"
       ],
       "access": "Free. Open castle grounds in the centre of town.",
       "transport": "In the centre of Helmond, at the Kasteelplein.",
@@ -282,7 +323,13 @@
         "label": "September, when the conkers split out of their cases"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695127",
+        "url": null
+      },
+      "girth_cm": 389,
+      "height_m": 25
     },
     {
       "id": "hlm_008",
@@ -300,7 +347,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://www.monumentaltrees.com/en/nld/northbrabant/helmond/1100_kasteelpark/"
+        "https://www.monumentaltrees.com/en/nld/northbrabant/helmond/1100_kasteelpark/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696812&outFields=*&f=json"
       ],
       "access": "Free. Open castle grounds in the centre of town.",
       "transport": "In the centre of Helmond, at the Kasteelplein.",
@@ -313,7 +361,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696812",
+        "url": null
+      },
+      "height_m": 16
     },
     {
       "id": "hlm_009",
@@ -330,7 +383,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://www.monumentaltrees.com/nl/nld/noordbrabant/helmond/1100_kasteelpark/8469/"
+        "https://www.monumentaltrees.com/nl/nld/noordbrabant/helmond/1100_kasteelpark/8469/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696300&outFields=*&f=json"
       ],
       "access": "Free. Open castle grounds in the centre of town.",
       "transport": "In the centre of Helmond, at the Kasteelplein.",
@@ -343,7 +397,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696300",
+        "url": null
+      },
+      "girth_cm": 130,
+      "height_m": 23
     },
     {
       "id": "hlm_010",
@@ -359,7 +419,8 @@
         "neighbourhood": "Kasteelplein"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696299&outFields=*&f=json"
       ],
       "access": "Free. Open castle grounds in the centre of town.",
       "transport": "In the centre of Helmond, at the Kasteelplein.",
@@ -379,7 +440,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696299",
+        "url": null
+      },
+      "girth_cm": 380,
+      "height_m": 26
     },
     {
       "id": "hlm_011",
@@ -395,7 +462,8 @@
         "neighbourhood": "Oranjebuurt"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683262&outFields=*&f=json"
       ],
       "access": "Free. Stands on a public square (plein).",
       "transport": "About 0.7 km northwest of Helmond centre, in the Oranjebuurt.",
@@ -408,7 +476,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683262",
+        "url": null
+      },
+      "girth_cm": 320,
+      "height_m": 15
     },
     {
       "id": "hlm_012",
@@ -425,7 +499,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://monumentenwerkgroephelmond.nl/monumenten/molenstraat-72/"
+        "https://monumentenwerkgroephelmond.nl/monumenten/molenstraat-72/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683272&outFields=*&f=json"
       ],
       "access": "Free. General public cemetery (Algemene Begraafplaats Molenstraat, formerly Roman Catholic), open during daylight hours as is standard for Dutch municipal cemeteries.",
       "transport": "About 1.1 km east of Helmond centre, on the Molenstraat.",
@@ -445,7 +520,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683272",
+        "url": null
+      },
+      "girth_cm": 239,
+      "height_m": 10
     },
     {
       "id": "hlm_013",
@@ -499,7 +580,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB record 1683268, Bruine beuk, Kromme Steenweg 4, planted_band 1890-1900, owner_category gemeente, setting plantsoen, visitable ja)",
-        "https://lokaleregelgeving.overheid.nl/CVDR70440/2 (Helmond municipal tree map/catalogue, Vaststelling bomenkaart en bomencatalogus Helmond 2009, Article I Section A: Kromme Steenweg 4 lists a kastanje, 2 platanen and a rode beuk)"
+        "https://lokaleregelgeving.overheid.nl/CVDR70440/2 (Helmond municipal tree map/catalogue, Vaststelling bomenkaart en bomencatalogus Helmond 2009, Article I Section A: Kromme Steenweg 4 lists a kastanje, 2 platanen and a rode beuk)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683268&outFields=*&f=json"
       ],
       "access": "Free. Stands in a public green strip (plantsoen) owned by the municipality on Kromme Steenweg, in central Helmond.",
       "transport": "About 9 minutes' walk (roughly 0.7 km) from Helmond centre.",
@@ -519,7 +601,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683268",
+        "url": null
+      },
+      "height_m": 21
     },
     {
       "id": "hlm_018",
@@ -566,7 +653,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB record 1696333, Zomereik, De Kluis 2 / stadswandelpark de Warande, planted_band 1850-1860, owner_category gemeente, setting bos, visitable ja; register's own history note: 'een van de weinige exemplaren die nog over zijn na de aanleg van de Warande in het midden van de negentiende eeuw, rond 1850-1860', i.e. one of the few specimens surviving from the park's mid-19th-century layout)",
         "https://nl.wikipedia.org/wiki/Warande_(park_in_Helmond) (the park's current form dates to 1757; 'the oldest plantings currently found date from 1834', with many significant specimens from around 1850; oak avenues throughout)",
-        "https://monumentenwerkgroephelmond.nl/warande/ (oak is the dominant species in the park, with straight lanes/avenues, many replanted 1830-1860; describes a specific oak that fell in 2018 aged about 150, grown from an acorn around 1865, confirming this is a real, documented population of veteran oaks of exactly this era in this park)"
+        "https://monumentenwerkgroephelmond.nl/warande/ (oak is the dominant species in the park, with straight lanes/avenues, many replanted 1830-1860; describes a specific oak that fell in 2018 aged about 150, grown from an acorn around 1865, confirming this is a real, documented population of veteran oaks of exactly this era in this park)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696333&outFields=*&f=json"
       ],
       "access": "Free. Stands inside Stadswandelpark de Warande, a public city park open at all times, which also hosts the free public zoo Dierenpark de Warande.",
       "transport": "About 11 minutes' walk (roughly 0.85 km) from Helmond centre.",
@@ -587,7 +675,13 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696333",
+        "url": null
+      },
+      "girth_cm": 330,
+      "height_m": 30
     },
     {
       "id": "hlm_016",
@@ -605,7 +699,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB record 1696332, Zomereik, De Kluis 2 / stadswandelpark de Warande, planted_band 1850-1860, owner_category gemeente, setting bos, visitable ja; same history note as hlm_015: one of the few specimens surviving the park's mid-19th-century layout)",
         "https://nl.wikipedia.org/wiki/Warande_(park_in_Helmond) (oldest plantings from 1834, many significant specimens from around 1850, oak avenues throughout the park)",
-        "https://monumentenwerkgroephelmond.nl/warande/ (oak is the dominant species, straight lanes/avenues largely replanted 1830-1860; a documented fallen oak from the same generation, c.1865)"
+        "https://monumentenwerkgroephelmond.nl/warande/ (oak is the dominant species, straight lanes/avenues largely replanted 1830-1860; a documented fallen oak from the same generation, c.1865)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696332&outFields=*&f=json"
       ],
       "access": "Free. Stands inside Stadswandelpark de Warande, a public city park open at all times, which also hosts the free public zoo Dierenpark de Warande.",
       "transport": "About 16 minutes' walk (roughly 1.28 km) from Helmond centre.",
@@ -626,7 +721,13 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696332",
+        "url": null
+      },
+      "girth_cm": 360,
+      "height_m": 26
     },
     {
       "id": "hlm_014",
@@ -665,7 +766,7 @@
       "age_estimate": "roughly 170 years",
       "age_min": 166,
       "age_max": 176,
-      "girth_cm": null,
+      "girth_cm": 378,
       "location": {
         "address": "Croylaan, Aarle-Rixtel (near Croylaan 14, Kasteel Croy)",
         "latitude": 51.500032,
@@ -674,7 +775,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register (Bomenstichting Landelijk Register Monumentale Bomen), nr 1696050, 'Zomereik Kasteel Croy', planted_band 1850-1860, owner_category gemeente, setting weg, visitable ja, visible ja, reason monumentaal, history onbekend (no felling language)",
-        "https://www.bedandbreakfast.nl/en/a/XmuIzp7BVSSM/landgoed-croy (fetched directly, not from a search summary): the Landgoed Croy bed and breakfast, run from the castle's own gatehouse, describes 'the calming beautiful garden with its century old trees' / Dutch original 'de rustgevende en prachtige tuin met eeuwenoude bomen'"
+        "https://www.bedandbreakfast.nl/en/a/XmuIzp7BVSSM/landgoed-croy (fetched directly, not from a search summary): the Landgoed Croy bed and breakfast, run from the castle's own gatehouse, describes 'the calming beautiful garden with its century old trees' / Dutch original 'de rustgevende en prachtige tuin met eeuwenoude bomen'",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696050&outFields=*&f=json"
       ],
       "access": "Free. The oak stands beside Croylaan, the public road leading up to Kasteel Croy; the register lists this specific tree as council-owned (gemeente), visitable and visible. The castle itself is privately run (offices and a bed and breakfast in the gatehouse) and not generally open to the public, but the road and the roadside tree are public.",
       "transport": "Bus line 25 from Helmond Station towards Aarle-Rixtel/Gemert to an Aarle-Rixtel stop, then roughly a 10 to 15 minute walk to Croylaan.",
@@ -695,7 +797,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696050",
+        "url": null
+      },
+      "height_m": 26
     },
     {
       "id": "hlm_020",

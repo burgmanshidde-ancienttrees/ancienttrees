@@ -44,7 +44,8 @@
       "story": "Somebody wrote down what this tree cost.\n\nThe register cites a document in the archive of the Twente textile families: in 1866 the mill owner H. J. van Heek and the garden architect D. Wattez corresponded about the price of a Wellingtonia, itemised on an invoice for the planting around 't Wageler in 1865. Wellingtonia was the trade name the British gave the giant sequoia after the Duke of Wellington, and in the 1860s it was the most fashionable and most expensive thing you could put in a garden in Europe. The species had only been introduced to Britain in 1853. Buying one was a way of saying what you were worth.\n\nThe park is what became of that estate. Wattez laid it out in the second half of the nineteenth century, the city absorbed it, and the Ledeboerpark on the Hengelosestraat is now open to anyone.\n\nSo you can go and stand under an object of Victorian conspicuous consumption that has quietly outlived the mills, the family's fortune and the argument about the price.\n\nIt is unmistakable: the thick red-brown trunk with soft fibrous bark, and a straight conical top.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://archieftwentsetextielfamilies.nl"
+        "https://archieftwentsetextielfamilies.nl",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678429&outFields=*&f=json"
       ],
       "access": "Free. Open public park.",
       "transport": "About 2 km northwest of Enschede station, on the Hengelosestraat.",
@@ -58,7 +59,13 @@
       },
       "how_to_recognise": "The single huge conifer with spongy red-brown bark and a conical crown.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678429",
+        "url": null
+      },
+      "girth_cm": 785,
+      "height_m": 32
     },
     {
       "id": "ens_002",
@@ -76,7 +83,8 @@
       "story": "The oldest tree in Enschede is not on anybody's estate. It stands in ordinary public planting in a residential district and it has a name anyway, which is usually a sign that people have been walking past it long enough to need one.\n\nThe register bands it 1750 to 1800, which makes it two to two and a half centuries and puts its first decades in a Twente of farms and hand looms, before the mills, before the railway, and long before the town around it. Enschede burned almost entirely to the ground in 1862, when a fire took the whole centre in a few hours. This oak was standing well outside it and is one of the few living things in the city that predates that day.\n\nThe register gives its position to six decimal places, which is the tell that somebody stood at the trunk with a satellite receiver rather than pointing at a street. That is unusual in this dataset and it means the pin is as good as pins get.\n\nPedunculate oak, so acorns on long stalks and leaves that sit almost directly on the twig. In October there will be a great many of them underfoot.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://nl.wikipedia.org/wiki/Het_Zeggelt"
+        "https://nl.wikipedia.org/wiki/Het_Zeggelt",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695380&outFields=*&f=json"
       ],
       "access": "Free. Public planting in a residential district, reachable at any time.",
       "transport": "About 1.5 km north of Enschede station, in the Lasonder-Zeggelt district.",
@@ -95,7 +103,13 @@
         "label": "October, when the acorns are down"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695380",
+        "url": null
+      },
+      "girth_cm": 340,
+      "height_m": 22
     },
     {
       "id": "ens_003",
@@ -148,7 +162,8 @@
       },
       "story": "The farm this tree stands on was first written down in 1536.\n\nIn that year Jan van Borne, steward of the chapter of St Peter in Utrecht, reported on two holdings in the hamlet of Lonneker: Het Bouwhuis and Het Amelink. The Amelink then belonged to the Jonker van Steinfurt, which is to say the count of Bentheim. So the ground has an unbroken paper trail running back close to five centuries, into a landscape of church chapters and minor German nobility, which is roughly four hundred years before anyone here had heard of a sequoia.\n\nThe tree is the newcomer, planted somewhere between 1900 and 1910, when a giant sequoia had gone from a spectacular novelty to the standard way of announcing that a country house had grounds.\n\nThe register notes that Het Bouwhuis is open to the public and that a good many striking trees stand there, which makes this one of the easier estates on this page to simply walk into.\n\nA hundred and twenty years is nothing for the species. In California this would be a sapling among trees three thousand years old. Here it is already the biggest thing in the field.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692865&outFields=*&f=json"
       ],
       "access": "Free. The register records the grounds as open to the public.",
       "transport": "About 5 km northeast of Enschede station, at Lonneker.",
@@ -160,7 +175,12 @@
       },
       "how_to_recognise": "The tall conical conifer with thick spongy red-brown bark, well clear of the other trees.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692865",
+        "url": null
+      },
+      "height_m": 37
     },
     {
       "id": "ens_005",
@@ -177,7 +197,8 @@
       },
       "story": "Go inside it. That is the point of a weeping beech and almost nobody does it.\n\nThe branches of a mature one arch out and then fall straight to the ground all the way round, so what you have is a green tent perhaps fifteen metres across with a bare floor and a trunk in the middle. Children work this out immediately. Adults walk past.\n\nWeeping beech is a cultivar, not a species: a mutant form propagated by grafting, so every one is a clone of an original found in Europe in the eighteenth century. The graft union is usually visible as a swelling low on the trunk. It grows the same way a normal beech does except that it cannot hold its branches up, and left alone it will layer, meaning a branch resting on soil roots and becomes a new trunk, so an old one can slowly walk outward across a lawn.\n\nThis one stands on the northeast side of the pond at Het Bouwhuis, planted between 1900 and 1910, on ground documented since 1536.\n\nDuck under the skirt on the pond side and look back out at the water through the leaves.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692864&outFields=*&f=json"
       ],
       "access": "Free. The register records the grounds as open to the public.",
       "transport": "About 5 km northeast of Enschede station, at Lonneker.",
@@ -189,7 +210,12 @@
       },
       "how_to_recognise": "A dome of branches falling to the grass beside the pond, hollow inside.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692864",
+        "url": null
+      },
+      "height_m": 21
     },
     {
       "id": "ens_006",
@@ -206,7 +232,8 @@
       },
       "story": "A dual carriageway runs through this park, and the tree is by a filling station. Both facts are worth stating first, because they are what this place is now.\n\nIt began as an estate. In 1855 H. G. Blijdenstein and his wife Ebeling built a villa on the Helweg, the road that later became the Gronausestraat, and laid out grounds around it. Their daughter Johanna Ida Beltman-Blijdenstein was the last person to live there. The Blijdensteins were one of the Twente textile dynasties, and like the Van Heeks and the Ledeboers what they left the city was ground with trees on it.\n\nWhat happened afterwards is what happens to green space near a growing city. The Boulevard 1945 was driven straight through the park, cutting it in two, and the eastern edge now holds a petrol station.\n\nThe oak has been there since around 1900 to 1910 and has watched the arrangement change around it. It is a sessile oak, so the acorns sit tight against the twig and the leaves have a clear stalk, the reverse of the commoner pedunculate oak.\n\nGo on a Sunday, when the road is quiet.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692857&outFields=*&f=json"
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 2 km east of Enschede station, on the Boulevard 1945.",
@@ -218,7 +245,13 @@
       },
       "how_to_recognise": "On the east side of the park near the filling station, with acorns sitting tight to the twig.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692857",
+        "url": null
+      },
+      "girth_cm": 498,
+      "height_m": 28
     },
     {
       "id": "ens_007",
@@ -235,7 +268,8 @@
       },
       "story": "There was a country house here called 't Zwik and there is a street pattern instead.\n\nThe city bought the place in 1917 to expand into, and built over it through the 1920s and 1930s, which was the ordinary fate of the smaller estates on the edge of a town whose population was climbing with every new mill. The house went. What survived is planting: this plane, and, sixty to a hundred metres to the west, an oak and a beech that the register also identifies as remnants of the same grounds.\n\nThat is a useful thing to know while standing here. Three trees at three points along a street are not a coincidence, they are the last legible trace of a garden, and if you draw a line between them you are walking somebody's approach.\n\nThe plane is the easiest of the three to spot: flaking bark in cream, olive and grey, big maple-shaped leaves, and the bristly round seed balls that hang on through the winter.\n\nPlanes are the great survivors of city building. They tolerate compacted soil, root disturbance, pollution and hard pruning better than anything else of their size, which is exactly why this one is still here and the house is not.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678435&outFields=*&f=json"
       ],
       "access": "Free. Street tree on public ground.",
       "transport": "About 1.5 km west of Enschede station, on the Cort van der Lindelaan.",
@@ -247,7 +281,13 @@
       },
       "how_to_recognise": "Camouflage-patterned flaking bark, near the Tubantiasingel end of the street.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678435",
+        "url": null
+      },
+      "girth_cm": 446,
+      "height_m": 28
     },
     {
       "id": "ens_008",
@@ -256,7 +296,7 @@
       "age_estimate": "roughly 100 years, from a registered planting date around 1930",
       "age_min": 96,
       "age_max": 106,
-      "girth_cm": null,
+      "girth_cm": 552,
       "location": {
         "address": "Oosterbegraafplaats, northern main path, Noord Esmarkerrondweg 407, Enschede",
         "latitude": 52.222526,
@@ -265,7 +305,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692848",
-        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626"
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692848&outFields=*&f=json"
       ],
       "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
       "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. No specific bus line verified this pass.",
@@ -278,6 +319,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692848",
+        "url": null
       }
     },
     {
@@ -287,7 +332,7 @@
       "age_estimate": "roughly 90 years, from a registered planting date around 1935",
       "age_min": 86,
       "age_max": 96,
-      "girth_cm": null,
+      "girth_cm": 274,
       "location": {
         "address": "Oosterbegraafplaats, northern main path (second section, right side), Noord Esmarkerrondweg 407, Enschede",
         "latitude": 52.222352,
@@ -296,7 +341,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692855",
-        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626"
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692855&outFields=*&f=json"
       ],
       "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
       "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. No specific bus line verified this pass.",
@@ -317,7 +363,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692855",
+        "url": null
+      },
+      "height_m": 20
     },
     {
       "id": "ens_010",
@@ -335,7 +386,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1692852",
-        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626"
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/510626",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692852&outFields=*&f=json"
       ],
       "access": "Free. The cemetery is a public rijksmonument, open daily from sunrise to sunset.",
       "transport": "About 3 km northeast of Enschede city centre (Noord Esmarkerrondweg 407); best reached by bicycle or car. No specific bus line verified this pass.",
@@ -348,6 +400,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692852",
+        "url": null
       }
     },
     {
@@ -357,7 +413,7 @@
       "age_estimate": "roughly 140 years, from a registered planting date around 1890",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 464,
       "location": {
         "address": "Corner of Stroinksbleekweg and Hulsmaatstraat, Roombeek, Enschede",
         "latitude": 52.234684,
@@ -365,7 +421,8 @@
         "neighbourhood": "Roombeek"
       },
       "verified_sources": [
-        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1687606"
+        "netherlands-lrmb register (Bomenstichting LRMB v2024), nr 1687606",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687606&outFields=*&f=json"
       ],
       "access": "Free. Stands in a public street-side green strip (plantsoen), no restriction.",
       "transport": "About 1 km north of Enschede city centre / Enschede railway station, in the Roombeek district; walkable.",
@@ -385,7 +442,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687606",
+        "url": null
+      },
+      "height_m": 26
     },
     {
       "id": "ens_013",
@@ -458,7 +520,7 @@
       "age_estimate": "roughly 150 to 165 years",
       "age_min": 150,
       "age_max": 166,
-      "girth_cm": null,
+      "girth_cm": 490,
       "location": {
         "address": "Klokkenplas, Enschede",
         "latitude": 52.220283,
@@ -467,7 +529,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1678439, 'Gewone plataan')",
-        "https://www.erfgoedenschede.nl/2026/09/03/de-platanen-in-de-binnenstad-als-bomen-konden-praten/"
+        "https://www.erfgoedenschede.nl/2026/09/03/de-platanen-in-de-binnenstad-als-bomen-konden-praten/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678439&outFields=*&f=json"
       ],
       "access": "Free, public square",
       "transport": "In the city centre, roughly 1-1.5 km / a 15-20 minute walk from Enschede Centraal station.",
@@ -480,6 +543,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678439",
+        "url": null
       }
     }
   ]

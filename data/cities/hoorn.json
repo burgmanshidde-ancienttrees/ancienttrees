@@ -36,7 +36,8 @@
         "neighbourhood": "Oosterpoort"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690978&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -55,7 +56,13 @@
         "kind": "fresh leaves",
         "label": "May, when the new leaves come out translucent red before they darken"
       },
-      "how_to_recognise": "You can recognise it by its deep purple-red foliage, unmistakable among the park's green trees, standing at the water's edge beside the old Oosterpoort gate. It stands on the Oosterpoortsgracht in Hoorn."
+      "how_to_recognise": "You can recognise it by its deep purple-red foliage, unmistakable among the park's green trees, standing at the water's edge beside the old Oosterpoort gate. It stands on the Oosterpoortsgracht in Hoorn.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690978",
+        "url": null
+      },
+      "girth_cm": 372,
+      "height_m": 22
     },
     {
       "id": "hoo_003",
@@ -71,7 +78,8 @@
         "neighbourhood": "Oosterplantsoen"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690970&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -83,7 +91,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "Stands directly on the Pakhuisstraat path, its base visibly squeezed by the kerb, unlike its better-shaped neighbour behind the aviary.",
-      "story": "Four metres of trunk and nowhere to put it. This plane stands on the Pakhuisstraat by the aviary in the Oosterplantsoen, and the register, which otherwise calls it a perfect specimen, notes that the base is being squeezed by the pavement along the street. That is the standard fate of a big plane in a Dutch town: the tree keeps widening at the foot and the kerb does not move. The register dates the planting to between 1860 and 1870, so roughly 160 years, and it is the only source we have found that records this tree on its own. London plane came out of a seventeenth century accident, a cross between the American and the oriental plane that nobody planned and everybody planted afterwards, and it turned out to handle coal smoke, hard soil and heavy pruning better than either parent. Hoorn was a Dutch East India Company town whose walls were coming down through the century this tree went in, and the emptied ground became the walking park it now stands in. Look at the trunk rather than the crown. The bark comes away in irregular plates and leaves a camouflage of cream, olive and grey, and at four metres round there is a lot of it to look at from close up."
+      "story": "Four metres of trunk and nowhere to put it. This plane stands on the Pakhuisstraat by the aviary in the Oosterplantsoen, and the register, which otherwise calls it a perfect specimen, notes that the base is being squeezed by the pavement along the street. That is the standard fate of a big plane in a Dutch town: the tree keeps widening at the foot and the kerb does not move. The register dates the planting to between 1860 and 1870, so roughly 160 years, and it is the only source we have found that records this tree on its own. London plane came out of a seventeenth century accident, a cross between the American and the oriental plane that nobody planned and everybody planted afterwards, and it turned out to handle coal smoke, hard soil and heavy pruning better than either parent. Hoorn was a Dutch East India Company town whose walls were coming down through the century this tree went in, and the emptied ground became the walking park it now stands in. Look at the trunk rather than the crown. The bark comes away in irregular plates and leaves a camouflage of cream, olive and grey, and at four metres round there is a lot of it to look at from close up.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690970",
+        "url": null
+      },
+      "girth_cm": 410,
+      "height_m": 28
     },
     {
       "id": "hoo_004",
@@ -99,7 +113,8 @@
         "neighbourhood": "Oosterplantsoen"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690972&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -111,7 +126,13 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "story": "There were two of these by the Veliusbrug and now there is one. The other stood on the south side of the path, developed bark necrosis, went partly hollow and was taken down as a limb-drop risk. The survivor carries a serious fungal infection of its own and, in the register's assessment, is still growing reasonably. It is close to five metres round. Silver maple is the fastest growing maple there is and pays for the speed with brittle wood, which is why big old ones so often stand alone next to the place where their neighbour used to be. Acer saccharinum comes from the river bottoms of eastern North America, and everything about it suits a wet Dutch park: it tolerates flooding, roots hard into soft ground and grows a metre a year while it is young. The register dates the planting to between 1860 and 1870, so roughly 160 years, and it is the only source we have found for this tree. The name is in the leaf. Deeply cut, almost skeletal, green above and chalk white beneath, so that any wind turns the whole crown silver and back again. It flowers absurdly early, in February or March, before anything else here has thought about it, in small red clusters most people walk under without noticing.",
-      "how_to_recognise": "You can recognise it as the surviving silver maple, standing alone where its twin once grew before storm damage took it down. It stands by the Veliusbrug in Oosterplantsoen."
+      "how_to_recognise": "You can recognise it as the surviving silver maple, standing alone where its twin once grew before storm damage took it down. It stands by the Veliusbrug in Oosterplantsoen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690972",
+        "url": null
+      },
+      "girth_cm": 490,
+      "height_m": 25
     },
     {
       "id": "hoo_005",
@@ -127,7 +148,8 @@
         "neighbourhood": "Oosterplantsoen"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690974&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -139,7 +161,11 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "story": "The register gives this one a planting year rather than a band: 1871, at the waterside of the Oosterpoortsgracht in the Oosterplantsoen. What it does not give is a species. It is a plane, and the entry goes no further than that, so we have not either. The two candidates are the London plane, which is most of what got planted in Dutch towns after 1850, and the oriental plane, which is its parent and turns up in nineteenth century parks more often than people expect. The leaves settle it: five deep narrow lobes cut most of the way to the middle means oriental, three to five shallower lobes on a broader blade means London. If you are standing under it and you know which one you are looking at, tell us and we will put your answer on this page. What the register does say is that the tree has grown a full, even crown, which is unusual for a plane of that age in a town, where most of them have been cut back off a building or a road at some point. This one has had the water on one side and the old walking park on the other, and about 150 years to use the room.",
-      "how_to_recognise": "You can recognise it by its leaves: five deep, narrow lobes mean oriental plane, three to five shallower ones mean London plane, the two candidates the register leaves open. It stands at the waterside near number 37, Oosterplantsoen."
+      "how_to_recognise": "You can recognise it by its leaves: five deep, narrow lobes mean oriental plane, three to five shallower ones mean London plane, the two candidates the register leaves open. It stands at the waterside near number 37, Oosterplantsoen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690974",
+        "url": null
+      }
     },
     {
       "id": "hoo_006",
@@ -155,7 +181,8 @@
         "neighbourhood": "Oosterpoort"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690976&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -167,7 +194,13 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "how_to_recognise": "East side of the Oosterpoort gate, across the water from the copper beech on the west side; a topped, storm-damaged crown rather than a full one.",
-      "story": "Dutch elm disease is named after the Dutch scientists who identified the fungus in the 1920s, not after the country's elms, but it took those too. Two waves of it, the second from the 1960s, removed the elm from most of the Netherlands as a street tree. This one has come through both. It stands on the east side of the Oosterpoort, the fifteenth century gate that is the last of Hoorn's medieval gates, at the water's edge, and the register dates it to between 1880 and 1890, so roughly 140 years. Having survived the beetle, it lost its top to a storm, probably the summer storm of 2023, and carries other wind damage besides. The register still calls the trunk impressive, and notes how well it greens up in spring. That is fair. Ulmus x hollandica leafs out in a hard, glossy green that the limes and planes around it cannot match, the leaves rough as sandpaper on top and lopsided at the base, which is the elm giveaway. Before the leaves come, in February, the whole crown turns dull red with tufted flowers. The national register is the only source we have found for this tree, so read the age as its estimate. If you know when the top came out, we would like to hear it."
+      "story": "Dutch elm disease is named after the Dutch scientists who identified the fungus in the 1920s, not after the country's elms, but it took those too. Two waves of it, the second from the 1960s, removed the elm from most of the Netherlands as a street tree. This one has come through both. It stands on the east side of the Oosterpoort, the fifteenth century gate that is the last of Hoorn's medieval gates, at the water's edge, and the register dates it to between 1880 and 1890, so roughly 140 years. Having survived the beetle, it lost its top to a storm, probably the summer storm of 2023, and carries other wind damage besides. The register still calls the trunk impressive, and notes how well it greens up in spring. That is fair. Ulmus x hollandica leafs out in a hard, glossy green that the limes and planes around it cannot match, the leaves rough as sandpaper on top and lopsided at the base, which is the elm giveaway. Before the leaves come, in February, the whole crown turns dull red with tufted flowers. The national register is the only source we have found for this tree, so read the age as its estimate. If you know when the top came out, we would like to hear it.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690976",
+        "url": null
+      },
+      "girth_cm": 375,
+      "height_m": 21
     },
     {
       "id": "hoo_007",
@@ -183,7 +216,8 @@
         "neighbourhood": "Oosterplantsoen"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690971&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -195,7 +229,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "Stands off the path behind the park aviary, with a full, undamaged crown, unlike its older, kerb-squeezed neighbour on the Pakhuisstraat itself.",
-      "story": "This plane stands behind the aviary in the Oosterplantsoen, out of the way of the street, and it has grown accordingly: a trunk of over four metres round and, in the register's words, a perfect tree. Its neighbour a couple of hundred metres away on the Pakhuisstraat is the same species and two decades older, and has spent its life fighting the kerb. The difference between the two is simply where somebody put them. The register dates this one to between 1880 and 1890, so roughly 140 years, and it is the only source we have found that records it. Planes are the reason nineteenth century park designers could plan at all. They grow fast, take any soil, survive being moved as large trees and can be cut back to knuckles and come again, which made them the safe bet on new public ground like this, laid out where Hoorn's walls and towers had been. The catch arrives in June, when the undersides of the young leaves shed fine hairs that get into throats, and again in autumn when the seed balls break up and do the same. Neither is a reason to skip it. Stand close to the bole and look up through the mottled bark and horizontal limbs, and give it the time it takes to register how much tree is above you."
+      "story": "This plane stands behind the aviary in the Oosterplantsoen, out of the way of the street, and it has grown accordingly: a trunk of over four metres round and, in the register's words, a perfect tree. Its neighbour a couple of hundred metres away on the Pakhuisstraat is the same species and two decades older, and has spent its life fighting the kerb. The difference between the two is simply where somebody put them. The register dates this one to between 1880 and 1890, so roughly 140 years, and it is the only source we have found that records it. Planes are the reason nineteenth century park designers could plan at all. They grow fast, take any soil, survive being moved as large trees and can be cut back to knuckles and come again, which made them the safe bet on new public ground like this, laid out where Hoorn's walls and towers had been. The catch arrives in June, when the undersides of the young leaves shed fine hairs that get into throats, and again in autumn when the seed balls break up and do the same. Neither is a reason to skip it. Stand close to the bole and look up through the mottled bark and horizontal limbs, and give it the time it takes to register how much tree is above you.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690971",
+        "url": null
+      },
+      "girth_cm": 406,
+      "height_m": 27
     },
     {
       "id": "hoo_008",
@@ -211,7 +251,8 @@
         "neighbourhood": "Oosterplantsoen"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690969&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -230,7 +271,13 @@
         "kind": "flowers",
         "label": "July, when it flowers after every other lime has finished"
       },
-      "how_to_recognise": "You can recognise it as the last lime in the park to flower, still working in July when its neighbours have finished. It stands near the Veliusbrug in Oosterplantsoen."
+      "how_to_recognise": "You can recognise it as the last lime in the park to flower, still working in July when its neighbours have finished. It stands near the Veliusbrug in Oosterplantsoen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690969",
+        "url": null
+      },
+      "girth_cm": 420,
+      "height_m": 25
     },
     {
       "id": "hoo_009",
@@ -246,7 +293,8 @@
         "neighbourhood": "Oosterplantsoen"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690975&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "photo": {
@@ -266,7 +314,13 @@
         "kind": "fruit",
         "label": "late September and October, when the conkers split open on the path"
       },
-      "how_to_recognise": "You can recognise it by its full crown, which storms have knocked about without slowing the tree down. It stands at the water's edge opposite number 37, Oosterplantsoen."
+      "how_to_recognise": "You can recognise it by its full crown, which storms have knocked about without slowing the tree down. It stands at the water's edge opposite number 37, Oosterplantsoen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690975",
+        "url": null
+      },
+      "girth_cm": 341,
+      "height_m": 21
     },
     {
       "id": "hoo_010",
@@ -283,7 +337,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1690973",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690973&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "transport": "In the Oosterplantsoen, a short walk from Hoorn town centre, alongside the city's other protected park trees.",
@@ -298,7 +353,11 @@
         "status": "missing"
       },
       "girth_cm": 366,
-      "height_m": 22
+      "height_m": 22,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690973",
+        "url": null
+      }
     },
     {
       "id": "hoo_011",
@@ -316,7 +375,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1690981",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690981&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "transport": "In Wilhelminapark on Emmalaan, a short walk from Hoorn town centre.",
@@ -330,7 +390,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690981",
+        "url": null
+      }
     },
     {
       "id": "hoo_012",
@@ -347,7 +411,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683821",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683821&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily.",
       "transport": "In the Noorderplantsoen directly opposite Hoorn's railway station.",
@@ -362,7 +427,11 @@
         "status": "missing"
       },
       "girth_cm": 346,
-      "height_m": 23
+      "height_m": 23,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683821",
+        "url": null
+      }
     },
     {
       "id": "hoo_013",

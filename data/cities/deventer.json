@@ -43,7 +43,8 @@
       },
       "story": "There was a holy oak on this spot and when it died they replaced it with a lime.\n\nThat is the register's reading, planting in 1614, following the death of the Hijligen eik that had stood here. Sacred trees were real fixtures of the Dutch countryside, marking a boundary, a court, a crossing or a spot where something had happened, and when one died the community's instinct was often to put another tree in its place rather than let the place go unmarked. That instinct is why the road is called what it is and why this tree exists.\n\nThe name it carries now comes from two centuries later. In 1813, during the French occupation of Deventer, the lime is said to have served as a lookout tree for Cossacks fighting against the French. Russian irregular cavalry had followed Napoleon's retreat west across Europe and reached the Netherlands that winter, and a big lime on a rise with a view is exactly what a scout wants.\n\nBoth stories are tradition rather than record. The tree is not: it is an enormous old lime on a country road, standing where somebody in 1614 decided a tree should stand.\n\nGo in July, when it flowers and hums.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682194&outFields=*&f=json"
       ],
       "access": "Free. Stands on a public country road at Diepenveen.",
       "transport": "About 5 km north of Deventer station, on the Kozakkenweg at Diepenveen.",
@@ -62,7 +63,11 @@
         "label": "July, when it flowers and the whole tree hums"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682194",
+        "url": null
+      }
     },
     {
       "id": "dev_002",
@@ -79,7 +84,8 @@
       },
       "story": "The giant of De Worp is called that because of its size, and its size is what nearly got its age wrong.\n\nA poplar this big looks old. The register says it is not especially, and it makes the argument with a photograph. An image of the Lange Laan in the Ossenwaarde taken in 1917 shows this tree standing small and distant, clearly a young and relatively slight thing. That rules out the older datings the girth would suggest and supports a planting somewhere between 1900 and 1910.\n\nWhich means a bit over a century has produced a tree people call a giant. That is what Canadian poplar does. It is a hybrid grown for speed, capable of several feet a year on wet ground, and this ground is as wet as it gets: the floodplain of the IJssel, flooded regularly, deep silt, and a water table close to the surface.\n\nThe trade-off is that poplars go brittle and are usually removed before they reach this stage.\n\nStand at the base and look up, then remember that everybody who ever posed under it in a photograph is gone and the tree is younger than most of them were.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689658&outFields=*&f=json"
       ],
       "access": "Free. Open floodplain land across the river from the town.",
       "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry to De Worp.",
@@ -91,7 +97,13 @@
       },
       "how_to_recognise": "By far the biggest poplar at the edge of the floodplain, with a crown that rattles in light wind.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689658",
+        "url": null
+      },
+      "girth_cm": 665,
+      "height_m": 35
     },
     {
       "id": "dev_003",
@@ -108,7 +120,8 @@
       },
       "story": "This tree exists because of ice.\n\nThe park across the river was replanted in 1816 and the young trees were damaged by ijsgang, the drifting ice that comes down the IJssel when a frozen river breaks up and shoves plates of ice over the banks. It is a serious force and it does not care about a six-year-old sapling. So the planting was done again in 1820 to 1822, and the register dates this walnut to that second attempt.\n\nBlack walnut is North American and was an unusual choice for a Dutch public park, then and now. It is grown mostly for its timber, which is among the most valuable in the world, and a two-hundred-year-old one standing in a park rather than a sawmill is a piece of luck.\n\nIt is easy to identify once you know where to look. Large compound leaves with fifteen or more leaflets, coming into leaf very late and dropping early. In autumn it produces heavy green fruit the size of tennis balls that fall hard and stain everything they touch a deep brown.\n\nSeptember, then, and mind your head.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694535&outFields=*&f=json"
       ],
       "access": "Free. Public park in the floodplain; the tree stands on the campsite ground.",
       "transport": "About 1.5 km west of Deventer station, across the IJssel to the Worpplantsoen.",
@@ -127,7 +140,13 @@
         "label": "September, when the heavy green nuts come down"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694535",
+        "url": null
+      },
+      "girth_cm": 423,
+      "height_m": 28
     },
     {
       "id": "dev_004",
@@ -144,7 +163,8 @@
       },
       "story": "The French cut down the trees here and the city planted them again.\n\nThe Worpplantsoen lies in the floodplain of the IJssel directly opposite Deventer, and it is one of the oldest city parks in the Netherlands. During the French occupation the existing stock was destroyed, which was not vandalism but supply: an occupying garrison needs fuel and timber and a park across the river is the easiest source there is. In 1822, with the French gone, Deventer replanted, and a large share of the oaks, beeches and planes standing there now are from that year.\n\nSo the park is roughly the age of the peace that followed Napoleon, and it was made as a deliberate act of repair.\n\nThis oak is one of them, just north of the bandstand. At around two centuries it is at half its likely life, and the trees around it are its exact contemporaries, which is unusual: most parks are a mixture of ages, and this one has a cohort.\n\nCome across on the foot ferry rather than driving round. It is the correct approach, the town behind you and the trees ahead.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694536&outFields=*&f=json"
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry.",
@@ -163,7 +183,13 @@
         "label": "October, when the acorns come down across the park"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694536",
+        "url": null
+      },
+      "girth_cm": 469,
+      "height_m": 27
     },
     {
       "id": "dev_005",
@@ -180,7 +206,8 @@
       },
       "story": "A copper beech planted in 1822 was an early one, and in a public park it was very early indeed.\n\nThe purple form of the common beech was still a rarity at that date. It occurs naturally as an occasional mutation and had been propagated by grafting in European nurseries for perhaps sixty years, mostly for private estates and botanic collections. Putting one at the centre of a municipal park in the IJssel floodplain, in a replanting made to repair the damage of an occupation, was a choice with some ambition in it.\n\nIt sits centrally, near the bandstand, which is exactly where a designer would place the darkest tree available: the focal point of the composition, seen from every path.\n\nTwo hundred years on it is doing the job at a scale nobody planned. A mature copper beech is a solid dark mass, and this one anchors the middle of a park that is otherwise green, open and flat.\n\nThe last week of October, when the purple burns through to copper and the whole park briefly reorganises itself around it. Failing that, April, for the translucent red of the new leaves.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694531&outFields=*&f=json"
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 1.5 km west of Deventer station, across the IJssel by the foot ferry.",
@@ -199,7 +226,13 @@
         "label": "late October, when the purple burns through to copper"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694531",
+        "url": null
+      },
+      "girth_cm": 507,
+      "height_m": 30
     },
     {
       "id": "dev_006",
@@ -216,7 +249,8 @@
       },
       "story": "A weeping beech in a nineteenth century cemetery is not a coincidence, it is a convention.\n\nThe form was fashionable exactly when these grounds were laid out, and the reading was obvious enough that nobody had to explain it: a tree whose branches fall to the ground rather than reaching up. Cemeteries across northern Europe filled with weeping beeches, weeping willows and weeping ashes in the same few decades, and this one, banded 1830 to 1840, is from the beginning of that.\n\nThe register calls this burial ground historically and ecologically very valuable, in the old ring of the city, and it is looked after by a foundation for Deventer's old cemeteries.\n\nWhat makes the tree worth the walk is that a mature weeping beech is hollow. The branches arch out and hang to the grass all round, so you can push through the skirt and stand inside a green room with a trunk in the middle. Doing that in a cemetery feels like trespass and is not.\n\nOne to see in leaf, so any time from May to October. In winter it is a bare cage, which is its own thing but less startling.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689322&outFields=*&f=json"
       ],
       "access": "Free. Public cemetery, open in daylight. Visit quietly.",
       "transport": "About 2 km north of Deventer station, on the Diepenveenseweg.",
@@ -228,7 +262,13 @@
       },
       "how_to_recognise": "A dome of branches hanging to the grass, hollow inside.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689322",
+        "url": null
+      },
+      "girth_cm": 210,
+      "height_m": 10
     },
     {
       "id": "dev_007",
@@ -245,7 +285,8 @@
       },
       "story": "The register is honest about this one in a way that is worth quoting: the planting history is not known, and the oak was probably put in during the first half of the nineteenth century.\n\nThat is the ordinary state of most old trees. No document, no planting record, nobody who wrote it down, and a dating arrived at by looking at the tree and at what was happening on the estate around it. It is worth seeing that stated plainly, because the confident specific ages attached to famous trees usually rest on no more than this and simply do not admit it.\n\nWhat can be said is that Frieswijk is an estate northeast of Deventer, that the oak stands about 125 metres south of the Raalterweg, and that a pedunculate oak of two centuries in this country is at roughly half its span.\n\nOak on this ground is the default rather than the exception, which is part of why it goes unrecorded. Somebody planted it because you planted oak, and then two hundred years passed.\n\nIt is a walk out of town and the best reason to go is the walk. Come in October for the acorns.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696671&outFields=*&f=json"
       ],
       "access": "Estate land recorded as visitable in the national register.",
       "transport": "About 7 km northeast of Deventer station, off the Raalterweg at Schalkhaar.",
@@ -264,7 +305,13 @@
         "label": "October, when the acorns are down"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696671",
+        "url": null
+      },
+      "girth_cm": 547,
+      "height_m": 26
     },
     {
       "id": "dev_008",
@@ -283,7 +330,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/esdoorn-steenenkamer/",
         "https://deventerbomenstichting.nl/nieuws/monumentale-esdoorn-bolwerksweg-bijgesnoeid/",
-        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-overijssel.html"
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-overijssel.html",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685969&outFields=*&f=json"
       ],
       "access": "On private land (a garden) but the tree is described by bomenbieb itself as \"goed zichtbaar vanaf de Bolwerksweg\" (clearly visible from the public road). No public entry onto the property; view from the roadside only.",
       "transport": "Rural riverside lane, no station nearby; nearest is Deventer, roughly 15-20 minutes by bike or car from the city centre.",
@@ -303,7 +351,13 @@
         ],
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685969",
+        "url": null
+      },
+      "girth_cm": 524,
+      "height_m": 20
     },
     {
       "id": "dev_009",
@@ -399,7 +453,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/hemelboom-zutphen/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1680624",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680624&outFields=*&f=json"
       ],
       "access": "Free. A public square in Zutphen, open at any hour.",
       "transport": "On the Lunetteplein in Zutphen, roughly 10 to 15 minutes on foot from Zutphen station, and about 20 minutes by train from Deventer.",
@@ -413,7 +468,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 425,
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680624",
+        "url": null
+      }
     },
     {
       "id": "dev_012",
@@ -432,7 +491,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/marshavenpopulier-zutphen/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1694211",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694211&outFields=*&f=json"
       ],
       "access": "Free. It stands on a public peninsula beside the IJssel harbour, open ground with no gate.",
       "transport": "In Zutphen's harbour district, a walk or short cycle from Zutphen station, and about 20 minutes by train from Deventer.",
@@ -446,7 +506,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 831,
-      "height_m": 31
+      "height_m": 31,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694211",
+        "url": null
+      }
     }
   ]
 }

@@ -42,7 +42,8 @@
       "story": "The black mulberry in the courtyard of Hofje van Pauw has been fruiting since before the Dutch East India Company's Delft chamber was a century old. Tree specialist Jorn Copijn identified it in 2023 as Morus nigra subsp. multicaulus, a subspecies not officially recorded in Europe until 1821, more than a century after this specimen was already growing here. The likely explanation involves no botanist at all: the VOC had traded out of India, where the subspecies originates, since 1700, and Delft kept its own VOC chamber from 1602, so a sea captain or merchant returning home is the more probable route than any recorded introduction. At 319 years old it ranks among the oldest fruit trees documented in the Netherlands. The hofje itself, an almshouse Elisabeth Pauw endowed by testament in 1707 for women who had fallen on hard times, still houses residents today, now adults with intellectual disabilities, and the tree has outlived every one of them. Its courtyard gate on Paardenmarkt stays unlocked during the day. Visitors are asked to keep to the garden and skip the windows, since the houses ringing the tree are still lived in, not a museum.",
       "verified_sources": [
         "https://www.boomzorg.nl/article/43633/moerbei-uit-1707-in-delfts-hofje-moet-op-monumentale-bomenlijst",
-        "https://platform-groen.nl/dashboard/nieuws/zet-moerbei-uit-1707-op-monumentale-bomenlijst/"
+        "https://platform-groen.nl/dashboard/nieuws/zet-moerbei-uit-1707-op-monumentale-bomenlijst/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691134&outFields=*&f=json"
       ],
       "access": "Free, public courtyard accessible via the gatehouse during the day; the surrounding houses are private residences, please respect residents' privacy",
       "transport": "Delft railway station, then about a 10-minute walk",
@@ -62,7 +63,11 @@
         "label": "July to August: dark fruit that stains everything under the tree",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by fruiting in the courtyard of an almshouse founded in 1707, its black mulberries among the oldest fruit trees documented in the Netherlands. It stands behind the unlocked gate of Hofje van Pauw on Paardenmarkt."
+      "how_to_recognise": "You can recognise it by fruiting in the courtyard of an almshouse founded in 1707, its black mulberries among the oldest fruit trees documented in the Netherlands. It stands behind the unlocked gate of Hofje van Pauw on Paardenmarkt.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691134",
+        "url": null
+      }
     },
     {
       "id": "del_002",
@@ -221,7 +226,8 @@
       "story": "A wingnut gets its name from a seed built with two papery blades, and this one has grown for well over a century on ground that used to be Delft's city wall. The wall came down around 1890, and the register credits the new layout to a landscape architect surnamed Zocher, a name attached to some of the country's best known nineteenth century parks, who chose large, fast-growing species for the reclaimed rampart. That is the register's own account of why this edge of the city carries so many good trees planted at once.\n\nCaucasian wingnuts come from forests around the Black Sea and the Caspian, and they grow faster than almost anything else planted alongside them in a Dutch garden, oaks and limes included. This one was planted between 1890 and 1900, putting it at around 130 years old, on a strip of the old rampart directly across the street from an ordinary Delft address, number 28 Nieuwe Plantage.\n\nNothing beyond the national monumental tree register has been found to confirm it further. If you know this tree, tell us.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1696370: Vleugelnoot, Tegenover Nieuwe Plantage 28, Delft, planting band 1890-1900, reason for protection 'monumentaal', owner gemeente, recorded as visitable and visible",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696370&outFields=*&f=json"
       ],
       "access": "Free, on the public verge opposite Nieuwe Plantage 28, at any hour",
       "transport": "Delft railway station, then about a 15-minute walk",
@@ -244,7 +250,11 @@
       },
       "how_to_recognise": "You can recognise it by the two papery-bladed seeds of a wingnut and fast, wide growth. It stands on the old city rampart opposite Nieuwe Plantage 28.",
       "girth_cm": 415,
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696370",
+        "url": null
+      }
     },
     {
       "id": "del_008",
@@ -269,7 +279,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1696368: Moerascypres, Geer Boogerd 57-59, Delft, planting band 1910-1920, reason for protection 'monumentaal', owner gemeente, recorded as visitable and visible",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696368&outFields=*&f=json"
       ],
       "access": "Free, on the public square at Geer Boogerd, at any hour",
       "transport": "Delft railway station, then about a 15-minute walk",
@@ -283,7 +294,11 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it as a conifer that drops its needles every autumn like a broadleaf tree, unusual among cone-bearers. It stands alone on the small square at Geer Boogerd.",
       "girth_cm": 310,
-      "height_m": 16
+      "height_m": 16,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696368",
+        "url": null
+      }
     },
     {
       "id": "del_009",
@@ -300,14 +315,21 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/data.json",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680760&outFields=*&f=json"
       ],
       "access": "Free. Municipal garden at the Oude Delft canal and Botterbrug, listed visitable and visible in the register.",
       "transport": "About 0.5 km north of Delft station; a few minutes' walk from the Markt via Oude Delft.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Nothing else on this stretch of the Oude Delft comes close: seen from above, the plane tree at the Botterbrug is one broad round crown spreading over the canal edge, the largest along the water here. It stands in a small municipal garden beside the former girls' orphanage at Oude Delft 116, and the national register of monumental trees lists it as open to visit and visible from the street.\n\nThat register is also where its age comes from. It puts the planting somewhere between 1880 and 1890, which makes the tree about 140 years old, give or take a decade. It records nothing else: no story behind the planting, no name of whoever chose the spot, and no measurement of the trunk.\n\nWhat the tree has lived through is easier to say. It was already well grown when Delft was occupied in 1940, and it has watched well over a century of boats on the canal and walkers crossing the bridge. Like every London plane it sheds its bark in plates, so the trunk is a patchwork of grey, olive and cream.\n\nThe register counts it as a single tree standing on its own rather than one of a row. Nobody has published its girth or its height. If you have put a tape measure round it, tell us.",
-      "how_to_recognise": "You can recognise it by its crown, the single largest along this stretch of the Oude Delft. It stands at the Botterbrug bridge, beside the former girls' orphanage at Oude Delft 116."
+      "how_to_recognise": "You can recognise it by its crown, the single largest along this stretch of the Oude Delft. It stands at the Botterbrug bridge, beside the former girls' orphanage at Oude Delft 116.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680760",
+        "url": null
+      },
+      "girth_cm": 607,
+      "height_m": 22
     },
     {
       "id": "del_010",
@@ -324,14 +346,21 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/data.json",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680759&outFields=*&f=json"
       ],
       "access": "Free. Public park strip on the old rampart (Nieuwe Plantage), listed visitable in the register.",
       "transport": "About 1.2 km north-west of Delft station; the Plantage ring is a 15 minute walk from the Markt.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "The whole recorded history of this plane tree is one line in the national register: it was planted during the renovation of Delft's city ramparts. The line gives no year. What the register does give is a planting band of 1880 to 1890, which puts the tree at roughly 130 to 145 years old, and that band is the only date anybody has published for it.\n\nIt stands where the Nieuwe Plantage meets the Annageer, on the strip of park that now runs along the old rampart line. From above it is one large rounded crown at the junction of the paths, touching its neighbours but plainly its own tree. The register files it under the municipality, in a park setting, open to visit.\n\nIn its time on the old wall the tree has stood through the occupation of 1940 to 1945 and well over a century of Delft walking past on its way somewhere else. Like every London plane it sheds its bark in plates, leaving the trunk a patchwork of grey, olive and cream.\n\nIt is also the start of a short walk. The elms of Kalverbos stand about 90 metres away, with that park's three planes close beside them. Nobody has published this tree's girth or height; if you have measured it, tell us.",
-      "how_to_recognise": "You can recognise it as the large rounded crown right at the path junction where the Nieuwe Plantage meets the Annageer. It stands about 90 metres from the Kalverbos elms; its crown touches its neighbours'."
+      "how_to_recognise": "You can recognise it as the large rounded crown right at the path junction where the Nieuwe Plantage meets the Annageer. It stands about 90 metres from the Kalverbos elms; its crown touches its neighbours'.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680759",
+        "url": null
+      },
+      "girth_cm": 515,
+      "height_m": 25
     },
     {
       "id": "del_011",

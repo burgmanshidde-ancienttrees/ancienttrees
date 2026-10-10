@@ -45,7 +45,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/es-dwarsgracht/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1683405",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683405&outFields=*&f=json"
       ],
       "access": "Free. The ash stands beside De Essenbelt, a private working farmhouse, and is visible from the public path and the water; the grounds are not open, so this is a look from outside.",
       "transport": "Dwarsgracht, immediately next to Giethoorn in northwest Overijssel, reached by the same paths, punts and cycle routes as Giethoorn itself.",
@@ -58,7 +59,11 @@
       "how_to_recognise": "You can recognise it by the mound its roots have raised under the front of the farmhouse called De Essenbelt. It is the big ash standing against that house, on the water at Dwarsgracht.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683405",
+        "url": null
+      }
     }
   ]
 }

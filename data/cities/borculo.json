@@ -45,7 +45,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/fladderiep-heure/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1685088",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685088&outFields=*&f=json"
       ],
       "access": "The tree stands on the private Beekvliet estate and the owner allows visitors to it; the national register records it as both visitable and visible. It is not open parkland, so this is a walk to the tree rather than a wander through the grounds.",
       "transport": "Heure, a hamlet of Borculo in the Achterhoek. There is no station nearby, so it is a drive or a bike ride out from Borculo or Eibergen.",
@@ -59,7 +60,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 607,
-      "height_m": 25
+      "height_m": 25,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685088",
+        "url": null
+      }
     }
   ]
 }

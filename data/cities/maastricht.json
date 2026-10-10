@@ -217,7 +217,8 @@
       "story": "This lime was planted on Keizer Karelplein to mark the birth of Princess Juliana in April 1909, the future queen who would go on to reign over the Netherlands for 32 years, and the tree still carries a small royal fence around its base. What that fence does not carry is any mention of Juliana at all: the register notes, with some evident amusement, that the ironwork skips the commemoration entirely and instead repeats a single instruction six times over, no bicycles.\n\nThe tree stands at Keizer Karelplein, one of three squares that ring the Basilica of Saint Servaas, Maastricht's oldest surviving church and the burial place of the city's first bishop. Juliana herself never had any particular connection to Maastricht beyond the timing of her birth, which was enough in 1909 for a municipality to plant a tree and forget, or simply never get around to, actually saying why. It stands in the open square today, free to see, a two minute walk from a second monumental linden on the neighbouring Vrijthof.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1679958)",
-        "https://nl.wikipedia.org/wiki/Juliana_der_Nederlanden"
+        "https://nl.wikipedia.org/wiki/Juliana_der_Nederlanden",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679958&outFields=*&f=json"
       ],
       "access": "Free, public square, open at any time",
       "transport": "Centrum, central Maastricht; about a 10 minute walk from Maastricht station",
@@ -237,7 +238,13 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it by the small iron fence ringing its base, its ironwork repeating a single no-bicycles warning six times. It stands on Keizer Karelplein, a two minute walk from the Vrijthof's linden."
+      "how_to_recognise": "You can recognise it by the small iron fence ringing its base, its ironwork repeating a single no-bicycles warning six times. It stands on Keizer Karelplein, a two minute walk from the Vrijthof's linden.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679958",
+        "url": null
+      },
+      "girth_cm": 221,
+      "height_m": 17
     },
     {
       "id": "maa_007",
@@ -255,7 +262,8 @@
       "story": "Vrijthof takes its name from the churchyard it once was, the free forecourt of the Basilica of Saint Servaas that doubled as a burial ground through the Middle Ages, before it became the wide public square that now hosts Maastricht's Christmas market and biggest outdoor terraces. Archaeological digs beneath the paving have turned up Roman infrastructure and early medieval graves, so the square's actual history runs back roughly two thousand years even though almost nothing visible on it does.\n\nThis common lime, dated by the register to around 1880 to 1890, is one of the square's more recent arrivals by that measure, standing beside what was once the rijkswacht building at the square's edge. Common lime is itself a hybrid, a natural cross between the small-leaved and large-leaved lime that was the default civic tree across Dutch and Belgian cities for centuries. It grows in the open square, free, a two minute walk from a second commemorative linden on the neighbouring Keizer Karelplein, both sharing the same historic church complex without either predating it by more than a fraction.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1679959)",
-        "https://nl.wikipedia.org/wiki/Vrijthof_(Maastricht)"
+        "https://nl.wikipedia.org/wiki/Vrijthof_(Maastricht)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679959&outFields=*&f=json"
       ],
       "access": "Free, public square, open at any time",
       "transport": "Centrum, central Maastricht; about a 10 minute walk from Maastricht station",
@@ -275,7 +283,13 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it by its size beside the former rijkswacht building on Vrijthof's edge. It stands a two minute walk from the second commemorative linden on Keizer Karelplein."
+      "how_to_recognise": "You can recognise it by its size beside the former rijkswacht building on Vrijthof's edge. It stands a two minute walk from the second commemorative linden on Keizer Karelplein.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679959",
+        "url": null
+      },
+      "girth_cm": 365,
+      "height_m": 24
     },
     {
       "id": "maa_008",
@@ -391,7 +405,8 @@
         "data/registers/netherlands-lrmb.json (LRMB register nr 1678454, honour class/ereklasse tree)",
         "https://bomenbieb.nl/bijzondere-bomen/honingboom-maastricht/",
         "https://nl.wikipedia.org/wiki/Stadspark_Maastricht (confirms 'twee honingbomen' among the park's ~15 monumental trees)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678454&outFields=*&f=json"
       ],
       "access": "Free, Aldenhofpark is an open public park (part of Maastricht's Stadspark green belt), gemeente-owned, visitable at any time",
       "transport": "10-15 minute walk from Maastricht centre",
@@ -407,7 +422,11 @@
       },
       "how_to_recognise": "You can recognise it by leaves that open white and gold instead of green, the trait its cultivar is named for. It stands directly visible from Prins Bisschopssingel, in the 1918 northern half of Aldenhofpark.",
       "girth_cm": 443,
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678454",
+        "url": null
+      }
     },
     {
       "id": "maa_012",
@@ -425,7 +444,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1694875 wingnut, nr 1694876 weeping silver lime)",
         "https://nl.wikipedia.org/wiki/Waldeckpark (confirms 'een tweetal Kaukasische vleugelnoten' among trees dating from the park's 1921 creation by landscape architect Leonard Springer)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694875&outFields=*&f=json"
       ],
       "access": "Free, Waldeckpark is an open public park laid out on the former Waldeck bastion, gemeente-owned, visitable at any time",
       "transport": "10-15 minute walk from Maastricht centre",
@@ -442,7 +462,11 @@
       },
       "how_to_recognise": "You can recognise it by the wingnut's ropes of winged green seeds hanging through early summer, about a forearm's length. It stands with a weeping silver lime ten metres away, at the Tongerseweg edge of Waldeckpark.",
       "girth_cm": 467,
-      "height_m": 22
+      "height_m": 22,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694875",
+        "url": null
+      }
     },
     {
       "id": "maa_015",
@@ -459,7 +483,8 @@
       },
       "story": "The tulip tree is not a European tree at all. It belongs to the forests of the eastern United States, where it grows taller than almost anything else that drops its leaves in winter, and this one has spent roughly the last century doing it in a village park in Limburg, ten minutes on foot from Meerssen station.\n\nIt hides its best trick in plain sight. In June the crown fills with greenish-yellow cups streaked orange at the base, shaped near enough like tulips to have named the species, and held so high that most people walk under a flowering tree without seeing a single flower. The leaves settle the identification from the ground: four lobes and a flat top, as though someone took scissors to the tip. In October the whole crown turns clear yellow.\n\nIts age is softer than it looks written down. The register that records this tree puts the planting at around 1900 and marks even that with a question mark, so call it a century and leave room on either side. Nobody has put a tape around the trunk either. If you know when it went in, tell us.\n\nIt stands in the Proosdijpark, a listed monument site in the middle of the village, free and open, on the side towards the kerksteeg.",
       "verified_sources": [
-        "https://bomenbieb.nl/bijzondere-bomen/tulpenboom-meerssen/"
+        "https://bomenbieb.nl/bijzondere-bomen/tulpenboom-meerssen/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688177&outFields=*&f=json"
       ],
       "access": "Free, in a public municipal park (Proosdijpark, a listed Rijksmonument site)",
       "transport": "Meerssen NS railway station, about 10 minutes' walk",
@@ -478,7 +503,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the leaves, four lobes with a flat top as though the tip were cut off with scissors, and by the clear yellow it turns in October. It stands in the Proosdijpark, on the side towards the kerksteeg."
+      "how_to_recognise": "You can recognise it by the leaves, four lobes with a flat top as though the tip were cut off with scissors, and by the clear yellow it turns in October. It stands in the Proosdijpark, on the side towards the kerksteeg.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688177",
+        "url": null
+      }
     },
     {
       "id": "maa_017",
@@ -497,7 +526,8 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (LRMB v2024), Bomenstichting, register nr 1691040: 'Gewone plataan St.Servaasbron', Cannerweg 451, planted band 1900-1910, owner_category religieuze instantie, setting bos, visitable ja, visible ja",
         "https://nl.wikipedia.org/wiki/Sint-Servaasbron (confirms the site's legend, that the current stone well dates to 1886-88, that it is surrounded by chestnut trees and elder bushes, that it is a protected national monument reached through a decorative Louis XV-style gate, and that an annual May procession is still held there); corroborated by https://rijksmonumenten.nl/monument/27941/st-servatiusbron/maastricht/ (national monument listing) and https://www.bronnen-krachtplaatsen.info/li-maastricht-sint-servaas-bron.php (recent visitor account confirming public access via a small stairway to the well)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691040&outFields=*&f=json"
       ],
       "access": "Free and open. The grounds around the spring belong to a religious institution per the register, but the site is a national monument (rijksmonument) reached through an unlocked decorative gate, visited by the public year-round, and hosts a public procession every May; the register itself marks the tree 'visitable: ja'.",
       "transport": "In the Jekerdal valley off the Cannerweg, on the city's south-west edge near the Belgian border; about 1.6 km (roughly 20 minutes on foot along the Cannerweg/Jekerpad) from the already-published 1700 Oaks of Cannerbos (maa_003).",
@@ -505,7 +535,11 @@
       "curation_status": "flagged",
       "story": "The legend, recorded in the Middle Ages by Henric van Veldeke, has Saint Servatius striking the ground here with his staff on his way home from Rome, and a spring rising where it landed. A woman with a fever was said to have been cured by the water. People have been coming down to it ever since, and a procession still walks here every May.\n\nWhat you actually find at the bottom of the little stairway is nineteenth-century: a stone well under a wrought-iron canopy with a statue of the saint above it, built between 1886 and 1888 and now a national monument in its own right. The plane standing over it is dated by the national register to the planting years 1900 to 1910, roughly 120 years, so tree and stonework are near contemporaries. Whether the tree went in as part of that work, nobody recorded.\n\nThe ground belongs to a religious institution, but the gate is a decorative Louis XV affair that stands unlocked, the register marks the tree as visitable, and the site is walked by the public year round. The spring itself is less reliable than the tree: a recent visitor account found it dry.\n\nThe plane has company. Chestnuts and elder crowd the hollow, and the register lists a grove of 23 maples and horse chestnuts at the same coordinates, dated 1860 to 1870. Only the plane carries a name.",
       "how_to_recognise": "You can recognise it as the one plane among the chestnuts and elder around the spring, its bark flaking into cream and olive patches. It stands over the stone well at the foot of the stairway, off the Cannerweg.",
-      "height_m": 26
+      "height_m": 26,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691040",
+        "url": null
+      }
     },
     {
       "id": "maa_018",
@@ -551,7 +585,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1680867, 'Japanse notenboom', planted_band 1910-1920, setting park, owner_category gemeente, visitable ja, visible ja)",
         "https://www.floravannederland.nl/planten/japanse_notenboom",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680867&outFields=*&f=json"
       ],
       "access": "Free, open public park at any time",
       "transport": "10-15 minute walk from Maastricht centre; same small cluster as the already-published Black Walnuts (maa_008), Weeping Silver Limes (maa_009), Tulip Trees (maa_010) and Plane Trees (maa_018) of Nolenspark, all within about 100 metres",
@@ -573,7 +608,11 @@
         "kind": "autumn colour"
       },
       "girth_cm": 339,
-      "height_m": 25
+      "height_m": 25,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680867",
+        "url": null
+      }
     }
   ]
 }

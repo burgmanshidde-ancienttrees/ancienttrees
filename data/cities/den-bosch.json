@@ -42,7 +42,8 @@
       "story": "The St Lucie Cherry growing against Den Bosch's old city wall on Parklaan is a species most Dutch gardeners have never planted on purpose. Prunus mahaleb is usually grown as rootstock for other cherries, not as a specimen tree in its own right, which is part of why this one, roughly a century old and large enough to be nominated for the Dutch national Bomen Top 50 in 2022, stands out on the municipality's own monumental-tree register. Its Dutch name, Weichselboom, comes from the Weichsel river region further east, where the species is more commonly used for the sour Morello-style cherries that give it its alternative name. Rooted directly against the medieval city wall, the tree has spent its whole life with one side of its root system pressed into centuries-old masonry rather than open soil, a growing condition few trees this size are ever asked to tolerate. The wall itself predates the tree by roughly four centuries, part of the fortifications that once ringed the entire old town before most of it was leveled to regulation height after 1874. Parklaan today is a quiet residential street, and the tree is visible from the pavement without needing to enter anyone's garden.",
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
-        "https://www.bomenstichting.nl/"
+        "https://www.bomenstichting.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692664&outFields=*&f=json"
       ],
       "access": "Free, visible from the public street",
       "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
@@ -57,7 +58,13 @@
         "width": 1024,
         "height": 680
       },
-      "how_to_recognise": "The tree growing hard against the old city wall itself, one side of its roots in the masonry. Visible from the pavement on Parklaan, no garden to walk into."
+      "how_to_recognise": "The tree growing hard against the old city wall itself, one side of its roots in the masonry. Visible from the pavement on Parklaan, no garden to walk into.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692664",
+        "url": null
+      },
+      "girth_cm": 300,
+      "height_m": 12
     },
     {
       "id": "dbo_002",
@@ -76,7 +83,8 @@
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
         "https://www.erfgoedshertogenbosch.nl/verhalen/geschiedenis-van-bastion-oranje",
-        "https://www.bastionoranje.nl/printerversie.php?artikel=111"
+        "https://www.bastionoranje.nl/printerversie.php?artikel=111",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686313&outFields=*&f=json"
       ],
       "access": "Free, public park",
       "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
@@ -97,7 +105,13 @@
         ],
         "label": "October to November: clear yellow, sometimes red",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686313",
+        "url": null
+      },
+      "girth_cm": 445,
+      "height_m": 22
     },
     {
       "id": "dbo_003",
@@ -114,7 +128,8 @@
       },
       "story": "Three monumental trees, a plane, a lime and a silver maple, stand within forty metres of each other at Bastion Vught, one of only three bastions to survive from Den Bosch's ring of 17th-century fortifications largely intact. Dutch States Army troops breached this exact stretch of wall during the 1629 siege that ended Spanish control of the city, and the site kept its military role for another two and a half centuries before the 1874 law that downgraded fortifications nationwide reduced the walls and freed the ground for parkland, the same shift that turned Bastion Oranje into a park across town. The three trees now anchor that park. The plane is the largest by trunk girth at just over four metres, the lime is the tallest-claiming of the three by canopy spread, and the silver maple, a species chosen for fast growth rather than longevity, has still reached a comparable size in the same roughly one hundred years. All three are sourced to the municipality's own monumental-tree register rather than a second independent account, honestly flagged here, though the register's coordinates place them precisely on the bastion itself.",
       "verified_sources": [
-        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10"
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692662&outFields=*&f=json"
       ],
       "access": "Free, public park",
       "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
@@ -127,7 +142,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "The plane is the heaviest of the three at just over four metres round; the lime and the silver maple stand within forty metres of it on the same bastion."
+      "how_to_recognise": "The plane is the heaviest of the three at just over four metres round; the lime and the silver maple stand within forty metres of it on the same bastion.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692662",
+        "url": null
+      },
+      "girth_cm": 450,
+      "height_m": 26
     },
     {
       "id": "dbo_004",
@@ -175,7 +196,8 @@
       "story": "Six metres and twelve centimetres around the trunk, and no other tree on this page comes within a metre of it. The plane grows on a square that spent most of its history as a graveyard. Sint Janskerkhof is exactly what the name says, the churchyard of the Sint-Jan cathedral, and the dead of Den Bosch were buried here until the ground was cleared from 1860 onward. The municipal register puts this London plane at roughly 170 years, which places its planting within a decade or so of that clearance: the burials stopped, the square was laid out, and somebody put a plane at the corner with Choorstraat. Since then it has watched the cathedral beside it spend more of its life under scaffolding than not, restoration on the Sint-Jan having run in campaigns from the 19th century to the present. The register grades its vitality as reduced, the middle category rather than the worst, so it is holding rather than thriving. One caution about the evidence: the register is the only source that names this individual tree. A 1996 survey of the city's oldest trees names planes among the species that make this quarter old without picking out this one. The Casinotuin trees are a few minutes' walk south.",
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0693, live-queried this pass: girth 612cm, age 170, height 20m, vitality Verminderd)",
-        "https://www.bossche-encyclopedie.nl/overig/natuurgebieden/casinotuin.htm and boomenbosch.nl (Boom en Bosch) coverage citing a 1996 survey naming plane trees among Den Bosch's oldest, concentrated on Bastion Oranje and around the Casinotuin/Sint Jan area, corroborating the species and area but not this individual tree by name"
+        "https://www.bossche-encyclopedie.nl/overig/natuurgebieden/casinotuin.htm and boomenbosch.nl (Boom en Bosch) coverage citing a 1996 survey naming plane trees among Den Bosch's oldest, concentrated on Bastion Oranje and around the Casinotuin/Sint Jan area, corroborating the species and area but not this individual tree by name",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697223&outFields=*&f=json"
       ],
       "access": "Free, public square beside the Sint-Jan cathedral",
       "transport": "'s-Hertogenbosch railway station, then about a 14-minute walk",
@@ -187,7 +209,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "At the corner with Choorstraat, and by a wide margin the heaviest trunk on the square at six metres round. Nothing else here is close."
+      "how_to_recognise": "At the corner with Choorstraat, and by a wide margin the heaviest trunk on the square at six metres round. Nothing else here is close.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697223",
+        "url": null
+      },
+      "girth_cm": 640,
+      "height_m": 23
     },
     {
       "id": "dbo_006",
@@ -271,7 +299,8 @@
       "story": "Boom en Bosch, the local tree-protection group, calls this the largest and perhaps the most beautiful plane tree in the city. They are right about the second half and out by a few hundred metres on the first, because a thicker plane stands at Sint Janskerkhof and the register's tape says so. The two sources also disagree about its age. Boom en Bosch estimates around 150 years, the municipality records 120, neither has a ring count behind it, so the entry here carries the whole range instead of picking a winner. What nobody disputes is the trunk: 4.8 metres round, at the park entrance on Hekellaan along the southern edge of the old fortifications. Plane was the standard 19th-century choice for exactly this position, tolerant of compacted soil, city air and roots being dug through, which is why Dutch park gates are full of them and why the oldest ones tend to stand where a bastion was flattened. The register grades its vitality as normal, the best it gives. It is the only plane at this entrance and unmistakably the heaviest trunk here; the nearest tree of comparable bulk is a horse chestnut some forty metres off, a different species with a different bark entirely.",
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0497, live-queried: girth 480cm, age 120, height 24m, vitality Normaal)",
-        "https://www.boomenbosch.nl/?pid=5 (Boom en Bosch, the local tree-protection group), independently naming 'the largest and perhaps most beautiful plane tree in the city' at the entrance to the Vonk en Vlamterrein on Hekellaan, estimated around 150 years old"
+        "https://www.boomenbosch.nl/?pid=5 (Boom en Bosch, the local tree-protection group), independently naming 'the largest and perhaps most beautiful plane tree in the city' at the entrance to the Vonk en Vlamterrein on Hekellaan, estimated around 150 years old",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686317&outFields=*&f=json"
       ],
       "access": "Free, at a public park entrance",
       "transport": "'s-Hertogenbosch railway station, then about a 17-minute walk",
@@ -283,7 +312,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "The only plane at the Vonk en Vlamterrein entrance, and the heaviest trunk there at 4.8 metres round. The comparable trunk forty metres off is a horse chestnut, different bark entirely."
+      "how_to_recognise": "The only plane at the Vonk en Vlamterrein entrance, and the heaviest trunk there at 4.8 metres round. The comparable trunk forty metres off is a horse chestnut, different bark entirely.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686317",
+        "url": null
+      },
+      "girth_cm": 522,
+      "height_m": 26
     },
     {
       "id": "dbo_009",
@@ -399,7 +434,8 @@
       "story": "The convent burned down in 1584 and was never rebuilt. What is left of it is a low mound in a housing estate, and a lime tree standing on top of it.\n\nThe Annenborch was a house of Augustinian canonesses, founded in 1503 by a knight named Jan Bax, and the fire took it eighty years later. The tree came afterwards, planted on the mound somewhere between 1750 and 1800, which makes it roughly 250 years old and, by local reckoning, the oldest tree inside the boundaries of 's-Hertogenbosch. Local accounts have it surviving the severe storm of 1767, which would put it at the very early end of that planting range or push the range itself back; the two figures sit awkwardly together and nobody has reconciled them.\n\nSince then it has watched the fields around it become the Overlaet district, which built itself around the mound rather than over it. It has been legally protected since the 1970s. Rosmalen knows it as the Annenborchboom and treats it as a local figure: in July 2022 residents of the Annenborch care home, named after the same vanished convent, went out in a convoy of wheelchairs to visit it.\n\nIt stands free and open. The fence is there for the roots, not to keep you off.\n\nNo girth or height has been published. If you measure it, tell us.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/hollandse-linde-rosmalen/",
-        "https://ros-tvkrant.nl/2022/07/27/annenborch-bezoekt-de-annenborchboom/"
+        "https://ros-tvkrant.nl/2022/07/27/annenborch-bezoekt-de-annenborchboom/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680892&outFields=*&f=json"
       ],
       "access": "Free and public. Stands on a small mound in a residential green space in the Overlaet district, fenced only to protect its own roots and trunk, not to keep visitors out.",
       "transport": "In the Overlaet neighbourhood of Rosmalen, a district of 's-Hertogenbosch (Den Bosch); reachable by local bus, roughly 15-20 minutes from Den Bosch centre.",
@@ -421,7 +457,13 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680892",
+        "url": null
+      },
+      "girth_cm": 615,
+      "height_m": 17
     }
   ],
   "oldest_tree_id": "dbo_012"

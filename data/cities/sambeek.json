@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/linde-van-sambeek/",
         "https://nl.wikipedia.org/wiki/Linde_van_Sambeek",
-        "https://www.omroepbrabant.nl/nieuws/1232850/beroemde-eeuwenoude-lindeboom-in-sambeek-krijgt-broodnodige-opknapbeurt"
+        "https://www.omroepbrabant.nl/nieuws/1232850/beroemde-eeuwenoude-lindeboom-in-sambeek-krijgt-broodnodige-opknapbeurt",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679463&outFields=*&f=json"
       ],
       "access": "Free. Stands beside the public through-road at the south end of Sambeek village; reachable at any time.",
       "transport": "Sambeek village, near Boxmeer; nearest station Boxmeer, then bus or bike into the village.",
@@ -69,7 +70,11 @@
         "width": 1166,
         "height": 1555
       },
-      "how_to_recognise": "You can recognise it by the second, younger stem growing inside its hollow outer trunk, 7.97 metres round. It stands beside the through-road at the south end of Sambeek village."
+      "how_to_recognise": "You can recognise it by the second, younger stem growing inside its hollow outer trunk, 7.97 metres round. It stands beside the through-road at the south end of Sambeek village.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679463",
+        "url": null
+      }
     }
   ]
 }

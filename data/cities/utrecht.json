@@ -248,7 +248,8 @@
       "story": "Utrecht's own tree register cannot agree with itself about this copper beech. One entry, filed for the national Bomenstichting listing, dates its planting to the 1880s. The municipality's own separate file says something older, that it was planted along with the rest of Hieronymusplantsoen by the landscape architect J.D. Zocher in 1835, part of the decades-long project that turned Utrecht's old medieval walls and moat into the ring of parks still circling the historic centre today. Both cannot be right, and nobody has settled which, so this page states both rather than picking the more flattering one.\n\nEither way it has stood on this small rise in the plantsoen for well over a century, its purple-red leaves a deliberate accent against the plane and elm green Zocher planted around it. Copper beech is not a distinct species but a colour form of the ordinary beech, propagated by grafting, because a beech grown from its own seed reverts to green more often than not, which makes every specimen a small act of continued human intervention rather than a wild event. It grows on open parkland in front of the building known locally as the Vrije School, no fence and no ticket. If a photograph or a planting record settles which date is right, tell us.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1689880)",
-        "https://nl.wikipedia.org/wiki/Zocherpark"
+        "https://nl.wikipedia.org/wiki/Zocherpark",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689880&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Hieronymusplantsoen, Binnenstad; about a 15 minute walk from Utrecht Centraal station",
@@ -268,7 +269,13 @@
         ],
         "label": "late October into November, when the copper beech turns deep red-brown",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689880",
+        "url": null
+      },
+      "girth_cm": 355,
+      "height_m": 27
     },
     {
       "id": "utr_007",
@@ -315,7 +322,8 @@
       },
       "story": "Janskerkhof looks like a churchyard and mostly still is one, a square in central Utrecht built around the Gothic Jans Church, with a weekly flower market and, in its northeast corner near the old cantonal courthouse, a single Oriental plane the municipality dates to 1900. That makes it the youngest of the register's Utrecht street trees rather than the oldest, and its interest is less about age than about staying put: more than a century in a paved civic square that has hosted markets and gatherings throughout, without losing the tree that anchors its corner.\n\nOriental plane sheds bark in patches as it grows, the way a sycamore does, leaving a mottled grey, green and cream trunk that reads almost camouflaged against stone. This one has had over a century of pavement compaction and passing traffic to contend with, which the register does not comment on beyond dating the planting, so no vitality note beyond that exists yet. It stands in the open square, free to walk up to any day, opposite number 13 Janskerkhof. Nobody has published an independent account of this specific tree beyond the municipal register, so treat the date as the council's own record rather than a cross-checked fact.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1691554)"
+        "data/registers/netherlands-lrmb.json (nr 1691554)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691554&outFields=*&f=json"
       ],
       "access": "Free, public square, open at all times",
       "transport": "Janskerkhof, Binnenstad; about a 12 minute walk from Utrecht Centraal station",
@@ -327,7 +335,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by a mottled grey, green and cream trunk shedding bark in patches, standing in the square's northeast corner near the former courthouse. It stands in Janskerkhof, near number 13."
+      "how_to_recognise": "You can recognise it by a mottled grey, green and cream trunk shedding bark in patches, standing in the square's northeast corner near the former courthouse. It stands in Janskerkhof, near number 13.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691554",
+        "url": null
+      },
+      "girth_cm": 483,
+      "height_m": 27
     },
     {
       "id": "utr_009",
@@ -345,7 +359,8 @@
       "story": "This London plane was already forty years old, well established on the Lucasbolwerk, when Utrecht's city theatre went up facing it in 1941. The Stadsschouwburg, designed by the Dutch modernist architect Willem Dudok and opened that September, is the newer thing on this stretch of the old singel parkland by a wide margin: the municipal tree register dates the plane's own planting to around 1900, part of the general planting of Utrecht's 19th-century park ring rather than anything tied to the building that came decades later.\n\nLucasbolwerk itself is one of the bastions of Utrecht's old city fortifications, absorbed into the landscaped singel park that rings the historic centre, the same project that gave the city Hieronymusplantsoen and the Zocherpark further along the water. The plane has spent well over a century watching that transformation from bastion to theatre forecourt, and now stands as the tree most people photograph the Stadsschouwburg's facade past without quite registering. It grows in the open on public parkland directly opposite the theatre entrance, free to see, no ticket needed even if the building behind it does require one.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1688670)",
-        "https://nl.wikipedia.org/wiki/Stadsschouwburg_Utrecht"
+        "https://nl.wikipedia.org/wiki/Stadsschouwburg_Utrecht",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688670&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Lucasbolwerk, Binnenstad; about a 14 minute walk from Utrecht Centraal station",
@@ -357,7 +372,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the plane most people photograph the Stadsschouwburg's facade past without noticing, older than the theatre itself. It stands on Lucasbolwerk, directly opposite the theatre entrance."
+      "how_to_recognise": "You can recognise it as the plane most people photograph the Stadsschouwburg's facade past without noticing, older than the theatre itself. It stands on Lucasbolwerk, directly opposite the theatre entrance.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688670",
+        "url": null
+      },
+      "girth_cm": 560,
+      "height_m": 30
     },
     {
       "id": "utr_011",
@@ -375,7 +396,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1689999, data/registers/netherlands-lrmb.json",
-        "https://www.oostkrant.com/oudereuzen/ (Wilhelminapark's own 'Rondje Oude Reuzen' walking route, tree no. 4 is a Colchische esdoorn / Colchis maple)"
+        "https://www.oostkrant.com/oudereuzen/ (Wilhelminapark's own 'Rondje Oude Reuzen' walking route, tree no. 4 is a Colchische esdoorn / Colchis maple)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689999&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours",
       "transport": "Utrecht Centraal, roughly 20 minute walk; or bus/tram to Wilhelminapark stop",
@@ -390,7 +412,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it in autumn by leaves turning a uniform buttery yellow rather than the mixed reds of other maples. It stands at Wilhelminapark's west entrance, on the footpath opposite house number 28.",
-      "height_m": 21
+      "height_m": 21,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689999",
+        "url": null
+      }
     },
     {
       "id": "utr_012",
@@ -408,7 +434,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688600, data/registers/netherlands-lrmb.json",
-        "https://www.oostkrant.com/oudereuzen/ (Wilhelminapark's own 'Rondje Oude Reuzen' walking route, tree no. 17 is a Trompetboom)"
+        "https://www.oostkrant.com/oudereuzen/ (Wilhelminapark's own 'Rondje Oude Reuzen' walking route, tree no. 17 is a Trompetboom)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688600&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours",
       "transport": "Utrecht Centraal, roughly 20 minute walk; or bus/tram to Wilhelminapark stop",
@@ -423,7 +450,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by large heart-shaped leaves, white orchid-like flowers in July, and thin seed pods hanging through winter. It stands on the west edge of Wilhelminapark's play meadow, stop seventeen on the park's own walk.",
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688600",
+        "url": null
+      }
     },
     {
       "id": "utr_013",
@@ -512,7 +543,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1684533, data/registers/netherlands-lrmb.json (reason: herdenkingsboom / memorial tree)",
-        "https://blog.ernste.net/2015/05/05/bevrijdingsboom-utrecht/ (independent blog post, photographed 2014, identifying it as a bevrijdingsboom/liberation tree, a bruine beuk, at Servaasbolwerk, planted to commemorate the 1945 liberation of the Netherlands)"
+        "https://blog.ernste.net/2015/05/05/bevrijdingsboom-utrecht/ (independent blog post, photographed 2014, identifying it as a bevrijdingsboom/liberation tree, a bruine beuk, at Servaasbolwerk, planted to commemorate the 1945 liberation of the Netherlands)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1684533&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours",
       "transport": "Utrecht Centraal, roughly 15 minute walk",
@@ -537,6 +569,10 @@
         ],
         "label": "late October into November, when the copper leaves turn",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684533",
+        "url": null
       }
     },
     {
@@ -555,7 +591,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678124, data/registers/netherlands-lrmb.json",
-        "https://nl.wikipedia.org/wiki/Lepelenburg (independent confirmation that Lepelenburg is a former 16th-century bastion converted into parkland around 1860, part of the Zocherpark singel system, consistent with a tree planted after that conversion)"
+        "https://nl.wikipedia.org/wiki/Lepelenburg (independent confirmation that Lepelenburg is a former 16th-century bastion converted into parkland around 1860, part of the Zocherpark singel system, consistent with a tree planted after that conversion)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678124&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open at all times",
       "transport": "Utrecht Centraal, roughly 15 minute walk",
@@ -570,7 +607,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as a pure Oriental plane, rarer here than its hybrid London plane offspring, standing beside the Herenbrug bridge. It stands in Lepelenburg.",
-      "height_m": 26
+      "height_m": 26,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678124",
+        "url": null
+      }
     },
     {
       "id": "utr_017",
@@ -634,7 +675,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678123, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, tree no. 9 on its route, cites the same register nr 1678123 and adds a girth measurement and height not present in our imported register fields)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, tree no. 9 on its route, cites the same register nr 1678123 and adds a girth measurement and height not present in our imported register fields)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678123&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours",
       "transport": "Utrecht Centraal, roughly 15 minute walk",
@@ -649,7 +691,11 @@
       },
       "how_to_recognise": "You can recognise it as the thickest London plane in the whole Zocherpark chain, 6.29 metres round, distinct from a second plane about 80 metres to the southwest. It stands on the plantsoen just north of the old Sterrenwacht, Zonnenburg.",
       "height_m": 27,
-      "verify_notes": "Alive and inspected 2024-12-26: the Bomenstichting's own inspector rated its condition 'Redelijk' (LRMB inspection layer, entry nr 1678123)."
+      "verify_notes": "Alive and inspected 2024-12-26: the Bomenstichting's own inspector rated its condition 'Redelijk' (LRMB inspection layer, entry nr 1678123).",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678123",
+        "url": null
+      }
     },
     {
       "id": "utr_019",
@@ -667,7 +713,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1689875, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey of Utrecht's monumental trees, stop 10, fetched directly 2026-08-24; cites LRMB nr 1689875 by name, gives height ~25m and girth 400cm, and records the planting date two ways)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey of Utrecht's monumental trees, stop 10, fetched directly 2026-08-24; cites LRMB nr 1689875 by name, gives height ~25m and girth 400cm, and records the planting date two ways)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689875&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours",
       "transport": "Utrecht Centraal, roughly 15 minute walk",
@@ -690,6 +737,10 @@
         ],
         "label": "late October into November, when the copper beech turns deep red-brown",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689875",
+        "url": null
       }
     },
     {
@@ -709,7 +760,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678207, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 13, fetched directly 2026-08-24; cites LRMB nr 1678207 by name, describes the deeply cut Oriental Plane leaf distinct from the common plane, and gives height ~30m and girth 565cm)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 13, fetched directly 2026-08-24; cites LRMB nr 1678207 by name, describes the deeply cut Oriental Plane leaf distinct from the common plane, and gives height ~30m and girth 565cm)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678207&outFields=*&f=json"
       ],
       "access": "Free, visible from the public kade/street at all times; a school building stands beside the tree but the tree itself is gemeente-owned and stands on the public street, not on the school's grounds",
       "transport": "Utrecht Centraal, roughly 20 minute walk, at the north edge of the historic centre near Begijnekade",
@@ -725,7 +777,11 @@
         "height": 500
       },
       "how_to_recognise": "You can recognise it by leaves cut almost to the base into narrow fingers, marking a true Oriental plane, on a trunk 5.65 metres round. It stands on the public kade of Van Asch van Wijckskade, near number 28A.",
-      "verify_notes": "Alive and inspected 2024-11-14: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1678207)."
+      "verify_notes": "Alive and inspected 2024-11-14: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1678207).",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678207",
+        "url": null
+      }
     },
     {
       "id": "utr_021",
@@ -744,7 +800,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688562, data/registers/netherlands-lrmb.json (n_trees: 4, one register point for the group)",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 17, fetched directly 2026-08-24; cites LRMB nr 1688562 directly, describes the group of 4, two of them double-stemmed from about 2m up, the mossy acorn cups that give the species its Dutch name 'moseik', and gives height ~25m and girth 370cm)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 17, fetched directly 2026-08-24; cites LRMB nr 1688562 directly, describes the group of 4, two of them double-stemmed from about 2m up, the mossy acorn cups that give the species its Dutch name 'moseik', and gives height ~25m and girth 370cm)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688562&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned Zocherpark bastion belt), open at all times",
       "transport": "Utrecht Centraal, roughly 15 minute walk",
@@ -765,7 +822,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as a stand of four Turkey oaks together by the water, two of them forking into double stems about two metres up, with shaggy mossy acorn cups. It stands on Geertebolwerk, near Tuinstraat.",
-      "verify_notes": "Alive and inspected 2026-07-04: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1688562)."
+      "verify_notes": "Alive and inspected 2026-07-04: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1688562).",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688562",
+        "url": null
+      }
     },
     {
       "id": "utr_022",
@@ -784,7 +845,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688569, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 12, fetched directly 2026-08-24; cites LRMB nr 1688569 directly, gives a 2005 survey height of 19m and girth of 430cm, and reports a September 2025 first-hand observation of fungal infection)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (Peter Kuiper's canal-route survey, stop 12, fetched directly 2026-08-24; cites LRMB nr 1688569 directly, gives a 2005 survey height of 19m and girth of 430cm, and reports a September 2025 first-hand observation of fungal infection)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688569&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open at all times",
       "transport": "Utrecht Centraal, roughly 14 minute walk (same area as the already-published utr_009 Plane of Lucasbolwerk)",
@@ -798,7 +860,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as a copper beech under watch for a rot fungus at its base, in the same park as the published Plane of Lucasbolwerk. It stands on Lucasbolwerk, near number 20.",
-      "verify_notes": "Alive and inspected 2024-10-25: the Bomenstichting's own inspector rated its condition 'Matig' (LRMB inspection layer, entry nr 1688569)."
+      "verify_notes": "Alive and inspected 2024-10-25: the Bomenstichting's own inspector rated its condition 'Matig' (LRMB inspection layer, entry nr 1688569).",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688569",
+        "url": null
+      }
     },
     {
       "id": "utr_023",
@@ -814,7 +880,8 @@
         "neighbourhood": "Zonnenburg"
       },
       "verified_sources": [
-        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688710, data/registers/netherlands-lrmb.json"
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688710, data/registers/netherlands-lrmb.json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688710&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours.",
       "photo": {
@@ -837,6 +904,10 @@
         ],
         "label": "September to October: winged seeds that spin down in pairs",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688710",
+        "url": null
       }
     },
     {
@@ -853,7 +924,8 @@
         "neighbourhood": "Servaasbolwerk"
       },
       "verified_sources": [
-        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688712, data/registers/netherlands-lrmb.json"
+        "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688712, data/registers/netherlands-lrmb.json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688712&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours.",
       "photo": {
@@ -868,7 +940,11 @@
       "how_to_recognise": "You can recognise it as the beech that faces the small Leeuwenberghkerk church directly, distinct from the other beeches further along Servaasbolwerk. It stands on Servaasbolwerk, opposite the Leeuwenberghkerk.",
       "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus). Alive and inspected 2024-10-25: the Bomenstichting's own inspector rated its condition 'Redelijk' (LRMB inspection layer, entry nr 1688712).",
       "girth_cm": 400,
-      "height_m": 25
+      "height_m": 25,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688712",
+        "url": null
+      }
     },
     {
       "id": "utr_031",
@@ -885,7 +961,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678119, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678119&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours.",
       "photo": {
@@ -907,7 +984,11 @@
       "how_to_recognise": "You can recognise it as a small, modest pear tree that still flowers and fruits each year, easy to walk past among the larger planes and beeches. It stands on Geertebolwerk, at the water's edge level with Zilverstraat.",
       "verify_notes": "Pin corrected 2026-09-08. The file carried 52.08586, 5.12903, which is utr_018's coordinate on the Servaasbolwerk beside the observatory, about 750 metres east of this tree: a copy error, and it was marked confirmed. LRMB entry nr 1678119 places it at 52.086488, 5.118036, 'Geertebolwerk t.h.v. Zilverstraat a/h water', which matches the address this entry already carried. Every other Utrecht entry was checked against its register row in the same pass and all matched exactly. Alive and inspected 2026-07-04: the Bomenstichting's own inspector rated its condition 'Redelijk' (LRMB inspection layer, entry nr 1678119).",
       "girth_cm": 182,
-      "height_m": 11
+      "height_m": 11,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678119",
+        "url": null
+      }
     },
     {
       "id": "utr_032",
@@ -924,7 +1005,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1678122, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678122&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours.",
       "photo": {
@@ -939,7 +1021,11 @@
       "how_to_recognise": "You can recognise it in autumn by thick green-husked walnuts underfoot that stain the hands brown, on a trunk 3.32 metres round. It stands by the Tolsteegbrug, beside the university's school of governance building.",
       "verify_notes": "Species named 2026-09-08 from the register's own Dutch name on the cited LRMB row (the row was already the source; an earlier pass had reduced it to the genus). Alive and inspected 2024-10-25: the Bomenstichting's own inspector rated its condition 'Matig' (LRMB inspection layer, entry nr 1678122).",
       "girth_cm": 332,
-      "height_m": 19
+      "height_m": 19,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678122",
+        "url": null
+      }
     },
     {
       "id": "utr_033",
@@ -956,7 +1042,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688570, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (independent canal-side monumental-trees guide, cites the same register nr and adds height/girth measurements)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688570&outFields=*&f=json"
       ],
       "access": "Free, public park (gemeente-owned), open during park hours.",
       "photo": {
@@ -971,7 +1058,11 @@
       "how_to_recognise": "You can recognise it by growing bent and low, leaning out over the water rather than reaching upward, unusual for the species. It stands on the south side of the Bartholomeibrug, at the water's edge on Pelmolenweg.",
       "girth_cm": 238,
       "height_m": 14,
-      "verify_notes": "Alive and inspected 2026-07-04: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1688570)."
+      "verify_notes": "Alive and inspected 2026-07-04: the Bomenstichting's own inspector rated its condition 'Goed' (LRMB inspection layer, entry nr 1688570).",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688570",
+        "url": null
+      }
     },
     {
       "id": "utr_034",
@@ -1035,7 +1126,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688792, data/registers/netherlands-lrmb.json",
-        "https://www.duic.nl/cultuur/geheimen-van-de-stad-de-plataan-de-dolehof/ (DUIC, 2018-07-15, reporting a Gilde Utrecht guided-tour text)"
+        "https://www.duic.nl/cultuur/geheimen-van-de-stad-de-plataan-de-dolehof/ (DUIC, 2018-07-15, reporting a Gilde Utrecht guided-tour text)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688792&outFields=*&f=json"
       ],
       "access": "Free, but daytime only: the courtyard gate on Lange Nieuwstraat is closed in the evening. The residents who live around the garden maintain it.",
       "transport": "About a 12-15 minute walk from Utrecht Centraal station",
@@ -1049,7 +1141,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688792",
+        "url": null
+      }
     },
     {
       "id": "utr_036",
@@ -1068,7 +1164,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), entry nr 1688688, data/registers/netherlands-lrmb.json",
-        "https://kanokaartutrecht.nl/monumentalebomen.html (stop 5 of the canal-side monumental trees route, photos dated through January 2026)"
+        "https://kanokaartutrecht.nl/monumentalebomen.html (stop 5 of the canal-side monumental trees route, photos dated through January 2026)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688688&outFields=*&f=json"
       ],
       "access": "Free, in the public Manenburg park beside the Tolsteegbrug bridge",
       "transport": "About a 15-20 minute walk south from Utrecht Centraal station, or a short bus ride to Tolsteegsingel",
@@ -1082,7 +1179,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688688",
+        "url": null
+      }
     },
     {
       "id": "utr_037",

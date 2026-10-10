@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/philemon-en-baucis/",
         "https://www.regiobodeonline.nl/2025/12/nazaat-monumentale-eik-baucis-geplant/",
-        "https://rheden.nieuws.nl/nieuws/nakomeling-van-eik-baucis-geplant-in-velp"
+        "https://rheden.nieuws.nl/nieuws/nakomeling-van-eik-baucis-geplant-in-velp",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677462&outFields=*&f=json"
       ],
       "access": "Free. Public grounds of the former Beekhuizen estate (part of Nationaal Park Veluwezoom), on the signed 'Ommetje Beekhuizen' walking route beside Hotel Beekhuizen.",
       "transport": "From Velp or Arnhem, bus toward Rozendaal/Beekhuizen, then a short walk on the estate paths.",
@@ -67,6 +68,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677462",
+        "url": null
       }
     }
   ]

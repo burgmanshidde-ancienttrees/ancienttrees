@@ -211,7 +211,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1687159)",
         "https://nl.wikipedia.org/wiki/Leonard_Springer",
-        "https://geo1.arnhem.nl/ruimtelijkeplannen/plannen/NL.IMRO.0202.731-/NL.IMRO.0202.731-0301/t_NL.IMRO.0202.731-0301_5.8.html"
+        "https://geo1.arnhem.nl/ruimtelijkeplannen/plannen/NL.IMRO.0202.731-/NL.IMRO.0202.731-0301/t_NL.IMRO.0202.731-0301_5.8.html",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687159&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
@@ -231,7 +232,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by a canopy that turns a deeper red in autumn than the oaks native to Europe. It stands in Velperpleinpark, near the corner with Van Muijwijkstraat."
+      "how_to_recognise": "You can recognise it by a canopy that turns a deeper red in autumn than the oaks native to Europe. It stands in Velperpleinpark, near the corner with Van Muijwijkstraat.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687159",
+        "url": null
+      },
+      "girth_cm": 344,
+      "height_m": 22
     },
     {
       "id": "arn_006",
@@ -248,7 +255,8 @@
       },
       "story": "Arnhem's national tree register keeps two grounds for protecting a tree, being old or being rare, and this weeping pagoda tree qualifies on the second alone. Nobody has recorded when it went into the ground; the council's own file says simply unknown. The shape gives away what it is: Styphnolobium japonicum 'Pendula', a grafted, deliberately weeping form of the Japanese pagoda tree, its branches trained to cascade rather than reach, so that in summer the white, faintly honey-scented flowers hang close enough to brush a passer-by's shoulder instead of drifting overhead.\n\nIt stands directly in front of Musis Sacrum, Arnhem's concert hall since 1847, on the roadside edge of the Velperplein rather than tucked into the park behind it, which is presumably why the register lists its setting as street rather than garden. Municipal survey work puts its planting band at 1900 to 1910, two or three generations after the concert hall itself went up. No ticket, no gate: it stands on open pavement outside a building that still hosts Arnhem's own orchestra. Nobody has published an independent account of this specific tree beyond the national register, so treat the date as the council's best estimate rather than a settled fact.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1677471)"
+        "data/registers/netherlands-lrmb.json (nr 1677471)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677471&outFields=*&f=json"
       ],
       "access": "Free, public pavement, viewable anytime",
       "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
@@ -269,7 +277,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by branches trained to cascade rather than reach, with white flowers hanging at shoulder height in summer. It stands on the roadside edge of Velperplein, directly in front of Musis Sacrum."
+      "how_to_recognise": "You can recognise it by branches trained to cascade rather than reach, with white flowers hanging at shoulder height in summer. It stands on the roadside edge of Velperplein, directly in front of Musis Sacrum.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677471",
+        "url": null
+      },
+      "girth_cm": 130,
+      "height_m": 7
     },
     {
       "id": "arn_007",
@@ -288,7 +302,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1687155)",
         "https://nl.wikipedia.org/wiki/Leonard_Springer",
-        "https://geo1.arnhem.nl/ruimtelijkeplannen/plannen/NL.IMRO.0202.731-/NL.IMRO.0202.731-0301/t_NL.IMRO.0202.731-0301_5.8.html"
+        "https://geo1.arnhem.nl/ruimtelijkeplannen/plannen/NL.IMRO.0202.731-/NL.IMRO.0202.731-0301/t_NL.IMRO.0202.731-0301_5.8.html",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687155&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
@@ -300,7 +315,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the smaller of Arnhem's two Oriental planes, the true species rather than the hybrid London plane. It stands in Velperplein, near the corner with Muijlwijkstraat."
+      "how_to_recognise": "You can recognise it as the smaller of Arnhem's two Oriental planes, the true species rather than the hybrid London plane. It stands in Velperplein, near the corner with Muijlwijkstraat.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687155",
+        "url": null
+      },
+      "girth_cm": 456,
+      "height_m": 14
     },
     {
       "id": "arn_008",
@@ -317,7 +338,8 @@
       },
       "story": "Every few years since 2006, whoever surveys Arnhem's monumental trees has come back to this black walnut and written down bad news: a conspicuous wound low on the trunk, a crown that had visibly thinned since the 1990s, deadwood spotted in 2014. In 2024 the surveyor found something new growing in the trunk cavity, a resin-varnish fungus, though likely a young colony rather than an advanced infection. And yet the same notes say that in recent years the tree has stood full and healthy in leaf, which reads either as a genuine recovery or as a walnut simply refusing to follow its own file.\n\nIt grows in the strip of park on the northwest side of Velperplein, planted, the city's register guesses, around the same time as Leonard Springer's 1880 design for the square, though the tree's own dated band puts it a generation later, 1900 to 1910. Black walnut is an American import, grown here for its wood and its nuts rather than any native pedigree, and this one has outlived the plein's late 1990s and early 2000s rebuild, the new roads, cycle paths, bus station and a parking garage tunnel dug in around it. It still stands, free to see, on a corner of green between a 19th-century concert hall and a theatre.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1687157)"
+        "data/registers/netherlands-lrmb.json (nr 1687157)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687157&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Velperplein, city centre; about a 15 minute walk from Arnhem Centraal station",
@@ -329,7 +351,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the conspicuous wound low on the trunk and the cavity above it, on a black walnut whose crown has thinned since the 1990s. It stands in the green strip on the northwest side of Velperplein."
+      "how_to_recognise": "You can recognise it by the conspicuous wound low on the trunk and the cavity above it, on a black walnut whose crown has thinned since the 1990s. It stands in the green strip on the northwest side of Velperplein.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687157",
+        "url": null
+      },
+      "girth_cm": 469,
+      "height_m": 23
     },
     {
       "id": "arn_009",
@@ -347,7 +375,8 @@
       "story": "Sonsbeek Park's oaks get most of Arnhem's attention, but a fifteen minute walk closer to the station, in the smaller Musispark behind Musis Sacrum, a sessile oak has been standing since roughly the 1890s with nobody much noticing. The monumental tree register ties its planting to a renovation of the singel plantsoenen, Arnhem's ring of canal-side parks, carried out to Leonard Springer's design around 1890, a decade after his prize-winning Velperplein scheme across the water.\n\nSessile oak differs from the pedunculate oak that fills most of the Netherlands by carrying its acorns on short stalks pressed close to the twig rather than dangling on long stems, worth checking if you want to be sure which species you are standing under. This one grows about 65 metres from a Canadian poplar the national register lists as the oldest of its kind in the country, so a single stop in this park puts two record-adjacent trees within sight of each other. Both are free to reach, along Eusebiusbuitensingel near the start of Parkstraat, no gate and no ticket. The register is the only source that has written this tree down; a Gelderlander photograph or an older map naming a firmer planting date would be welcome.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1695405)",
-        "https://nl.wikipedia.org/wiki/Leonard_Springer"
+        "https://nl.wikipedia.org/wiki/Leonard_Springer",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695405&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Musispark, city centre; about a 15 minute walk from Arnhem Centraal station",
@@ -359,7 +388,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the acorns, on short stalks pressed close to the twig rather than dangling. It stands in Musispark along Eusebiusbuitensingel near Parkstraat, about 65 metres from the old Canadian poplar."
+      "how_to_recognise": "You can recognise it by the acorns, on short stalks pressed close to the twig rather than dangling. It stands in Musispark along Eusebiusbuitensingel near Parkstraat, about 65 metres from the old Canadian poplar.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695405",
+        "url": null
+      },
+      "girth_cm": 400,
+      "height_m": 24
     },
     {
       "id": "arn_010",
@@ -368,7 +403,7 @@
       "age_estimate": "roughly 250 years",
       "age_min": 226,
       "age_max": 276,
-      "girth_cm": null,
+      "girth_cm": 536,
       "location": {
         "address": "Park Sonsbeek, beside the Lorentz Monument, Arnhem",
         "latitude": 51.989195,
@@ -377,7 +412,8 @@
       },
       "story": "Hendrik Lorentz got his monument in 1931. The oak beside it had been standing for well over a century by then. Arnhem's national register of monumental trees puts this pedunculate oak's planting somewhere between 1750 and 1800, which makes it around 250 years old and, by the register's own reckoning, possibly one of the oldest trees in Park Sonsbeek. What the register admires is its shape. It calls this one of the most beautifully formed and image-defining trees in the park, and explains why in a single line: the oak has had open room around it from the start, so the crown went sideways instead of straining upward through neighbours for light. Storms have taken pieces out of it over the years without leaving lasting damage.\n\nThe monument it now shares a lawn with is L.O. Wenckebach's 1931 memorial to Hendrik Lorentz, the Arnhem-born physicist, and it makes this oak the easiest tree in the park to give directions to. The ground under both was private for most of the tree's life. The Van Heeckeren family bought the estate in 1821 and had J.D. Zocher jr lay it out in the English landscape style; Arnhem bought the whole thing in 1899 and has kept it open and free since. Only the register has written this tree down, and it records no girth. If you have measured it, tell us.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1677485)"
+        "data/registers/netherlands-lrmb.json (nr 1677485)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677485&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Park Sonsbeek, north Arnhem; about a 15-20 minute walk from Arnhem Centraal station",
@@ -397,7 +433,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677485",
+        "url": null
+      },
+      "height_m": 20
     },
     {
       "id": "arn_011",
@@ -406,7 +447,7 @@
       "age_estimate": "roughly 210 years",
       "age_min": 206,
       "age_max": 216,
-      "girth_cm": null,
+      "girth_cm": 467,
       "location": {
         "address": "Park Sonsbeek, near the Witte Watermolen (White Watermill), Zijpendaalseweg 24, Arnhem",
         "latitude": 51.987487,
@@ -416,7 +457,8 @@
       "story": "The park's own forest ranger stops at this tree. When Natuurcentrum Arnhem walks its monumental tree route through Park Sonsbeek on Open Monument Day, the old oak by the Witte Watermolen is one of the headline stops, which is a lot of attention for a park-interior tree with no name and no plaque.\n\nIt is a pedunculate oak, planted somewhere between 1810 and 1820 according to the national register of monumental trees, so roughly 210 years old, put in the ground during the decade that took the Netherlands out of Napoleon's empire and into a kingdom of its own. The register records nothing else at all about its life. Under history it says, simply, unknown.\n\nThe setting does the rest of the work. The Witte Watermolen, the White Watermill, is Sonsbeek's own historic mill, standing on the Sint Jansbeek, the stream that runs down through the park in a chain of pools and falls that most visitors follow without wondering where the water is going. The oak stands at that stop, free to walk up to, no gate, about fifteen minutes uphill on foot from Arnhem Centraal. Neither source gives a girth, and on a trunk this age that is the one number worth having. If you tape it, send us the figure.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1692426)",
-        "https://natuurcentrumarnhem.nl/activiteiten/open-monumentendag-monumentale-bomenroute/"
+        "https://natuurcentrumarnhem.nl/activiteiten/open-monumentendag-monumentale-bomenroute/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692426&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Park Sonsbeek, near the Sint Jansbeek watermill; about a 15-20 minute walk from Arnhem Centraal station",
@@ -436,7 +478,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692426",
+        "url": null
+      },
+      "height_m": 22
     },
     {
       "id": "arn_012",
@@ -445,7 +492,7 @@
       "age_estimate": "roughly 210 years",
       "age_min": 206,
       "age_max": 216,
-      "girth_cm": null,
+      "girth_cm": 515,
       "location": {
         "address": "Park Sonsbeek, woodland edge at the northeast side of the Sonsbeekweide (Sonsbeek meadow), Arnhem",
         "latitude": 51.988448,
@@ -454,7 +501,8 @@
       },
       "story": "One of the thickest oaks in Park Sonsbeek is also the one its surveyor is worried about. The national register groups this tree with two other heavy oaks standing near it at the northeast edge of the Sonsbeek meadow and calls the three of them among the most impressive in the park: wide crowns, real height, the kind of trees that set the tone for a whole corner of ground. Then the condition notes take over. For decades the trunk and crown were sound, and the October 2013 storm cost this one only a small branch. The 2022 survey found something else: almost no increase in girth since the previous measurement, deadwood through the crown, and weak regrowth where new shoots should have been. The surveyor's own words were that the tree appears to be declining strongly.\n\nIt was alive and standing at that observation, which is the most recent evidence anyone has published, and an oak in decline can take decades over it. Worth seeing while the crown is still up. It was planted somewhere between 1810 and 1820, in a meadow that is now the park's open lawn, and it stands at the woodland edge where the grass runs out. Free, any day. If you find it in better shape than its file suggests, tell us and we will say so here.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1693766)"
+        "data/registers/netherlands-lrmb.json (nr 1693766)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1693766&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Park Sonsbeek, north Arnhem; about a 20 minute walk from Arnhem Centraal station",
@@ -474,7 +522,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1693766",
+        "url": null
+      },
+      "height_m": 30
     },
     {
       "id": "arn_013",
@@ -483,7 +536,7 @@
       "age_estimate": "roughly 180 years",
       "age_min": 176,
       "age_max": 186,
-      "girth_cm": null,
+      "girth_cm": 456,
       "location": {
         "address": "Park Sonsbeek, at the corner of Zijpendaalseweg and Sonsbeekweg, Arnhem",
         "latitude": 51.98634,
@@ -492,7 +545,8 @@
       },
       "story": "Nobody has managed to measure this oak properly, and the reason is livestock. It stands alone in a grazed meadow at the corner where Zijpendaalseweg meets Sonsbeekweg, and the field is often closed off with electric wire to keep the animals in, which the national register notes, with a trace of irritation, makes coming back with a tape difficult. So its file records the shape of the tree and not its girth.\n\nThe shape is the argument anyway. This is an oak grown in the open with nothing competing for its light, so the branches went out rather than up, and the register calls it the first tree that catches the eye of anyone walking from the city centre up into Park Sonsbeek. It works as the park's doorman. Its planting band is 1840 to 1850, which puts it at about 180 years and makes it the youngest of the four Sonsbeek oaks on this list, though nothing about standing under it suggests youth.\n\nYou can see it and reach it from the path at the corner; whether you get to the trunk depends on where the wire is that week. Free, no gate, about twenty minutes on foot from the station. The register is the only source that has written this one down, so treat 1840 to 1850 as one authority's estimate rather than a settled date.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1692814)"
+        "data/registers/netherlands-lrmb.json (nr 1692814)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692814&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily; the tree stands in a grazed meadow that park managers sometimes fence with electric wire to keep livestock inside, which the register itself notes makes remeasuring it awkward, but the tree is visible and reachable from the roadside path at the corner",
       "transport": "Park Sonsbeek, at the Zijpendaalseweg/Sonsbeekweg corner; about a 20 minute walk from Arnhem Centraal station",
@@ -512,6 +566,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692814",
+        "url": null
       }
     },
     {
@@ -530,7 +588,8 @@
       },
       "story": "A yew with a waist over three metres is a rare object in the Netherlands, which is the national register's own judgement and the reason this tree is on the list at all. Yew grows slowly and stays modest in most Dutch gardens. This one was given a planting year of 1850 and has put on enough wood since to pass a circumference the register declines to state exactly, recording only that it is more than 300 centimetres. Take that as a floor rather than a measurement; the true figure may well be larger.\n\nIt grows beside the pond below the Sonsbeek villa, next to a statue, in what the register calls a beautiful spot, and it is easy to walk straight past, because a yew in summer reads as dark green background rather than as a tree with a history. Something heavy came down on it not long ago, either a storm or a neighbouring tree falling across it, and the damage was described as fairly severe. At the most recent inspection the tree was judged to be in good condition regardless, which is what yews do. They outlive their own injuries.\n\nFree, in the open park, about fifteen minutes on foot from Arnhem Centraal. The register is the only source that has recorded this tree, so the 1850 date is one authority's estimate, sitting inside a coarser band of 1850 to 1860.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1677484)"
+        "data/registers/netherlands-lrmb.json (nr 1677484)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677484&outFields=*&f=json"
       ],
       "access": "Free, public park, open daily",
       "transport": "Park Sonsbeek, beside the villa and pond; about a 15-20 minute walk from Arnhem Centraal station",
@@ -551,7 +610,12 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677484",
+        "url": null
+      },
+      "height_m": 12
     },
     {
       "id": "arn_016",
@@ -560,7 +624,7 @@
       "age_estimate": "roughly 170 years",
       "age_min": 166,
       "age_max": 176,
-      "girth_cm": null,
+      "girth_cm": 420,
       "location": {
         "address": "Sonsbeek forest, north of the Hertenkamp (deer park), Arnhem",
         "latitude": 51.992382,
@@ -569,7 +633,8 @@
       },
       "story": "This is the one tree on Arnhem's list you have to go looking for. The national register marks it as not visible from the nearest path, the only one of the Sonsbeek entries carrying that note, so finding it in the woodland north of the Hertenkamp deer park takes a deliberate search rather than a glance in passing. Bring the coordinates.\n\nWhat is out there is a sweet chestnut of about 170 years. The register thinks it was probably planted around 1855, during the campaign that put in a large part of Sonsbeek's beech forest, and it is careful to present that as its own reasoning rather than as a recorded date. A chestnut in a beech planting is an odd survivor. Castanea sativa is a southern European tree the Romans carried north, grown for centuries as much for flour as for timber, and in the Netherlands it sits near the cool edge of what it can manage, fruiting properly only in a warm year.\n\nOctober is when the walk pays off. The spiny burrs split open to two or three brown nuts, and this deep into the forest nobody is competing with you for them. The wood is open and free, no gate and no ticket, about twenty-five minutes on foot from Arnhem Centraal past the deer park. The register is the only source that has recorded this tree, and it gives no girth.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1693211)"
+        "data/registers/netherlands-lrmb.json (nr 1693211)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1693211&outFields=*&f=json"
       ],
       "access": "Free, public woodland, open daily; stands off the main paths in the forest north of the Hertenkamp rather than directly beside a path (the register itself marks this tree as not visible from the nearest path), so finding it takes a short deliberate search rather than a glance in passing",
       "transport": "Sonsbeek forest, north of the deer park; about a 25 minute walk from Arnhem Centraal station",
@@ -588,7 +653,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it only by searching for it: the register notes it stands off the main paths in the forest north of the Hertenkamp deer park, not visible in passing."
+      "how_to_recognise": "You can recognise it only by searching for it: the register notes it stands off the main paths in the forest north of the Hertenkamp deer park, not visible in passing.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1693211",
+        "url": null
+      },
+      "height_m": 35
     },
     {
       "id": "arn_017",
@@ -608,7 +678,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1677474)",
         "https://www.monumentaltrees.com/nl/nld/gelderland/arnhem/12308_willemsplein/ (independent listing exists for this tree/location, confirmed via search; page itself 403s automated fetch)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677474&outFields=*&f=json"
       ],
       "access": "Free. Stands on the open public square, visible and reachable at all times.",
       "transport": "Arnhem Centraal station, about 5 minutes' walk.",
@@ -621,7 +692,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by the large cavity about five metres up the trunk, bracket fungi in the crown and steel cables through the upper limbs. It stands on Willemsplein, near the Vesta building.",
-      "height_m": 25
+      "height_m": 25,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677474",
+        "url": null
+      }
     },
     {
       "id": "arn_018",
@@ -641,7 +716,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1692427)",
         "https://monumentenregister.cultureelerfgoed.nl/complexen/528855 (Rijksmonument complex designation confirming Sonsbeek/Zijpendaal along the Zijpendaalseweg is protected historic parkland of this exact vintage, corroborating the setting though not naming the individual tree)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692427&outFields=*&f=json"
       ],
       "access": "Free, public parkland along a park road.",
       "transport": "About 10 minutes' walk from Arnhem Centraal station.",
@@ -662,7 +738,11 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       },
-      "height_m": 24
+      "height_m": 24,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692427",
+        "url": null
+      }
     },
     {
       "id": "arn_019",
@@ -681,7 +761,8 @@
       "story": "When Arnhem drove a road tunnel past this plane, it did not cut the roots. It moved them. The national tree register's file for this specimen records that the main roots were led under the tunnel box to a planting bed thirty metres away, so the tree now feeds from soil on the far side of a piece of infrastructure.\n\nIt was not the first favour. Back in the 1970s the growing site had already needed repair, and a grate was set into the pavement to keep the paving off the trunk base. Both were necessary because of where it stands. Nieuwe Plein is the junction between the old centre and the railway station, ground that has been opened up again and again for the ring road around the city.\n\nThe register dates the planting to between 1880 and 1890, roughly 140 years, and still calls the tree in fairly good shape: little visible damage, and vital at the last inspection. Planes are the species cities plant precisely because they put up with this kind of treatment. Not many are asked to prove it quite so thoroughly.\n\nNo source outside the register has written this tree down, so read the planting band as one authority's estimate. It stands on the open verge by the ramp to the Nelson Mandela bridge, free, no gate, about ten minutes from the station.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB register nr 1677473)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677473&outFields=*&f=json"
       ],
       "access": "Free. Stands on the open public square/road verge, visible and reachable at all times.",
       "transport": "About 10 minutes' walk from Arnhem Centraal station.",
@@ -694,7 +775,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by the metal grate set into the pavement around its base, at the ramp to the Nelson Mandela bridge on Nieuwe Plein; its main roots now run under the road tunnel to a bed thirty metres away.",
-      "height_m": 25
+      "height_m": 25,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677473",
+        "url": null
+      }
     },
     {
       "id": "arn_021",
@@ -1067,7 +1152,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (register nr 1677479)",
         "https://www.angerenstein-arnhem.nl/historie/de-wijk/park-angerenstein/de-grootste-van-nederland/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677479&outFields=*&f=json"
       ],
       "access": "Free, public park. Park Angerenstein has been municipally owned and open to the public since 1941; confirmed independently via Wikipedia and buitenplaatseninnederland.nl as a genuine, freely accessible public park.",
       "transport": "About 8 minutes' walk from Arnhem Presikhaaf station.",
@@ -1080,7 +1166,11 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by the trunk, measured at 5.39 metres round and 37.5 metres tall, among the largest tulip trees in the Netherlands. It stands in the park in front of Huis Angerenstein.",
-      "height_m": 35
+      "height_m": 35,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677479",
+        "url": null
+      }
     },
     {
       "id": "arn_036",

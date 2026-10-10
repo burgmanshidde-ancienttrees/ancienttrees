@@ -45,7 +45,8 @@
       },
       "story": "Thirty three point six metres tall, and a trunk seven point one nine metres round. Those are measured numbers, not estimates, which makes this tree the most precisely known thing on this page and one of the largest planes in the Netherlands.\n\nSeven metres of girth means roughly two and a quarter metres of diameter. Four adults with their arms out would not close a circle round it.\n\nIt is standing on a defensive earthwork. Zwolle's seventeenth century fortifications were demolished in the nineteenth, as they were in almost every Dutch town, and the earth was reshaped into a ring of singels and parks. So the ground here is made ground, thrown up to stop artillery and then handed to a garden designer, and this plane has had close to two centuries of deep, loose, undisturbed soil that no city street could offer it.\n\nThat is most of the explanation for the size. The other part is the species: planes tolerate everything a city can do to them, and given room they simply keep going.\n\nBark in flaking cream and olive plates, big maple-shaped leaves, and hard bristly seed balls hanging on their stalks all winter.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689102&outFields=*&f=json"
       ],
       "access": "Free. Public park along the singel, open at any time.",
       "transport": "About 1 km northwest of Zwolle station, on the Potgietersingel.",
@@ -57,7 +58,11 @@
       },
       "how_to_recognise": "By far the largest tree on the singel, with a trunk you cannot get four people around.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689102",
+        "url": null
+      }
     },
     {
       "id": "zwo_002",
@@ -146,7 +151,8 @@
       },
       "story": "It was planted for one week a year and it delivers.\n\nRed oak is North American, it reached Europe in the seventeenth century, and it was planted across Dutch estates in the nineteenth for a single reason: nothing native here turns that colour. In late October a mature one goes deep scarlet and then rust, and it holds it for a fortnight while the beeches around it are doing their more restrained copper.\n\nThe leaves are the easy way to tell it from a native oak. They are much larger, with pointed lobes ending in tiny bristles, where a pedunculate oak has small soft rounded lobes and no bristles anywhere.\n\nThis one stands by the drive to number 7 on the west side of Boschwijk, banded 1860 to 1870, so it is a generation younger than the beech in the avenue and belongs to a later phase of planting on the same ground.\n\nThe acorns are worth a look too: squat and broad with a shallow saucer of a cup, quite unlike the neat long acorn of a native oak, and they take two years to ripen rather than one.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689574&outFields=*&f=json"
       ],
       "access": "Free. Open grounds east of the city.",
       "transport": "About 4 km east of Zwolle station, at Park Boschwijk.",
@@ -165,7 +171,13 @@
         "label": "late October, when it goes scarlet"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689574",
+        "url": null
+      },
+      "girth_cm": 303,
+      "height_m": 24
     },
     {
       "id": "zwo_005",
@@ -182,7 +194,8 @@
       },
       "story": "The register calls these the poortbomen, the gate trees, which is a job description rather than a species.\n\nPlanting a pair of matched trees where a path enters a park is one of the oldest moves in the trade. It makes an entrance out of a gap, and it does it without a gate, a wall or a sign. You know you have arrived somewhere because two large trees have agreed to stand opposite each other. On the way out they frame the street.\n\nThis beech is one of that pair, banded 1860 to 1870, planted into the park that was made on the city's demolished fortifications.\n\nBeech was the right choice for the role and a slightly cruel one. The species casts denser shade than any other large tree here, so a gate flanked by two of them is genuinely darker than the ground on either side, and stepping through is a change in light as well as in place. That is the effect, and it took a century and a half to mature.\n\nThe bark stays smooth and thin all its life, which is why a beech at a park entrance is always the one covered in carved initials.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689106&outFields=*&f=json"
       ],
       "access": "Free. Public park, open at any time.",
       "transport": "About 900 m northwest of Zwolle station, at the Park Eekhout.",
@@ -202,7 +215,12 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689106",
+        "url": null
+      },
+      "girth_cm": 398
     },
     {
       "id": "zwo_006",
@@ -219,7 +237,8 @@
       },
       "story": "A dark tree next to moving water was somebody's decision.\n\nThis is a designed pairing and it still works: a copper beech placed to the left of a fountain on a square at the end of the Wilhelminasingel, planted between 1860 and 1870, when the ring of parks on the old fortifications was being finished and the city was arranging its new edges to be looked at.\n\nPurple foliage was a strong colour to have available. Copper beech is a mutation of the common beech, propagated by grafting rather than seed, and in a nineteenth century planting scheme it functioned as the darkest tone on the palette, the thing you put where the composition needed something heavy. Against pale water and spray it does exactly what was intended.\n\nA hundred and sixty years later it is also just a very large tree in the middle of a city, which is worth going to stand under. The canopy on a mature one is dense enough that the ground beneath stays dry in light rain.\n\nIn the last week of October it turns from purple to a deep burnt copper and the square changes colour with it.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689582&outFields=*&f=json"
       ],
       "access": "Free. Public square, open at any time.",
       "transport": "About 700 m north of Zwolle station, at the Van Nahuysplein.",
@@ -238,7 +257,13 @@
         "label": "late October, when it turns burnt copper"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689582",
+        "url": null
+      },
+      "girth_cm": 391,
+      "height_m": 21
     },
     {
       "id": "zwo_007",
@@ -255,7 +280,8 @@
       },
       "story": "It is in the new section, and it is a century and a half old, which tells you something about the scale a cemetery is planned on.\n\nBurial grounds are the best places in a Dutch city to find big trees, and the reason is mechanical rather than sentimental. The ground is never redeveloped, never dug for services, never paved, never parked on, and nobody is in a hurry. A tree planted at the edge of a cemetery in the 1860s has had the single most stable century and a half available anywhere inside a growing city.\n\nOaks in particular are a standard choice for the setting, for the obvious reason that they outlast everybody in it several times over. Pedunculate oak routinely reaches four hundred years here, so this one is at roughly a third of its life.\n\nIt is easy to identify: acorns on long stalks, and leaves that sit almost directly on the twig with two small lobes clasping back around it.\n\nGo in October. An oak this age in a good mast year covers the ground beneath it, and a quiet cemetery is one of the few places nobody sweeps them up.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689607&outFields=*&f=json"
       ],
       "access": "Free. Public cemetery, open in daylight. Visit quietly.",
       "transport": "About 4 km northeast of Zwolle station, on the Kranenburgweg.",
@@ -274,7 +300,13 @@
         "label": "October, when the acorns cover the ground"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689607",
+        "url": null
+      },
+      "girth_cm": 441,
+      "height_m": 23
     },
     {
       "id": "zwo_008",
@@ -292,7 +324,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
         "https://lokaleregelgeving.overheid.nl/CVDR757712",
-        "https://www.inaturalist.org/observations/372240194"
+        "https://www.inaturalist.org/observations/372240194",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683411&outFields=*&f=json"
       ],
       "access": "Free. Stands on a public green strip (plantsoen) along the singel, owned by the municipality.",
       "transport": "About 1.5 km north of Zwolle station, roughly 18 to 20 minutes on foot.",
@@ -305,7 +338,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683411",
+        "url": null
+      },
+      "girth_cm": 301,
+      "height_m": 20
     },
     {
       "id": "zwo_009",
@@ -322,7 +361,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://zwolle.bestuurlijkeinformatie.nl/Document/View/80c2fa94-c63e-4111-a585-45cd4e1a4f03"
+        "https://zwolle.bestuurlijkeinformatie.nl/Document/View/80c2fa94-c63e-4111-a585-45cd4e1a4f03",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695229&outFields=*&f=json"
       ],
       "access": "Privately owned, but the national register itself records it as visitable and visible ('visitable: ja, visible: ja'); it stands close to a residential complex near the old canal ring. This has not been independently walked or OSM-checked, so a reader confirming exactly how close one can stand would help.",
       "transport": "About 1.4 km northeast of Zwolle station, roughly 17 minutes on foot.",
@@ -335,7 +375,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695229",
+        "url": null
+      },
+      "girth_cm": 377,
+      "height_m": 20
     },
     {
       "id": "zwo_010",
@@ -420,7 +466,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://lokaleregelgeving.overheid.nl/CVDR757712"
+        "https://lokaleregelgeving.overheid.nl/CVDR757712",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689575&outFields=*&f=json"
       ],
       "access": "Free. Stands on the public Badhuiswal, owned by the municipality.",
       "transport": "About 1.6 km north of Zwolle station, roughly 19 minutes on foot.",
@@ -440,7 +487,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689575",
+        "url": null
+      },
+      "girth_cm": 450,
+      "height_m": 25
     },
     {
       "id": "zwo_013",
@@ -457,7 +510,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://lokaleregelgeving.overheid.nl/CVDR757712"
+        "https://lokaleregelgeving.overheid.nl/CVDR757712",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688405&outFields=*&f=json"
       ],
       "access": "Privately owned grounds, but the register records it as visitable and visible; it stands beside a long-running restaurant building (Urbana, now Loetje) fronting the Wipstrikkerallee, so it is plausible it can be seen from the street or terrace, but this has not been independently walked or OSM-checked.",
       "transport": "About 2.3 km southwest of Zwolle station, roughly 27 minutes on foot; a bus or short bike ride is quicker.",
@@ -470,7 +524,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688405",
+        "url": null
+      },
+      "girth_cm": 385,
+      "height_m": 29
     },
     {
       "id": "zwo_014",

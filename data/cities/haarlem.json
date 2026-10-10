@@ -205,7 +205,8 @@
       },
       "story": "Prinsenhof has been a garden for longer than Haarlem has had a monarchy to name a park after: a monastery garden from before 1477, when the monastery's own graveyard took over the ground, then in 1721 the city's official herb garden, the stadskruidentuin, moved in and stayed. What visitors walk through today is a municipal plantsoen that still keeps a working herb collection alongside a monumental weeping beech planted in the early twentieth century, threading a line from convent medicine to civic parkland that most Dutch cities cannot draw so cleanly on one plot.\n\nWeeping beech is not a wild form but a cultivated one, Fagus sylvatica 'Pendula', its branches trained downward rather than reaching for light, giving it the look of a tree perpetually caught mid-collapse even in full health. The garden sits within a few dozen metres of a chestnut and, a short walk further, an oak in the neighbouring Wijngaardtuin, both from the same run of Haarlem gardens built on old monastic ground. It stands in the open, free, on land that has been under cultivation of one kind or another for well over five centuries even if this particular tree has only seen a small fraction of that.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1690402)"
+        "data/registers/netherlands-lrmb.json (nr 1690402)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690402&outFields=*&f=json"
       ],
       "access": "Free, public park, open at any time",
       "transport": "10 minute walk from Haarlem Centraal station",
@@ -226,6 +227,10 @@
         ],
         "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690402",
+        "url": null
       }
     },
     {
@@ -243,7 +248,8 @@
       },
       "story": "The Wijngaardtuin, the vineyard garden, takes its name from a monastery vineyard planted here in the sixteenth century, land that stayed under religious cultivation for generations before the city took it over as public parkland. At the end of the nineteenth century the garden was redesigned, probably by L.P. Zocher, of the same landscape architecture dynasty that reshaped Haarlemmerhout and laid out Kenaupark within a few decades of the same commission. This pedunculate oak dates from that redesign, planted somewhere around 1870 to 1880.\n\nIt stands near a statue called Ontmoeting, Meeting, one of the more recent additions to a garden whose actual history runs back roughly five centuries to vines rather than oaks. A short walk away, in the neighbouring Prinsenhof, a weeping beech from the same general period grows on ground with an even older monastic pedigree; together the two gardens form a small, walkable stretch of what used to be entirely religious land, given over to public use only after the buildings that once justified the walls came down. The oak grows in the open, free to walk up to at any time, no different from any other city park tree except for what the ground beneath it used to grow instead.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1691594)"
+        "data/registers/netherlands-lrmb.json (nr 1691594)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691594&outFields=*&f=json"
       ],
       "access": "Free, public park, open at any time",
       "transport": "10 minute walk from Haarlem Centraal station",
@@ -264,7 +270,11 @@
         "kind": "fruit"
       },
       "how_to_recognise": "You can recognise it as the oak growing near the statue Ontmoeting. It stands in the Wijngaardtuin, in the open.",
-      "girth_cm": 320
+      "girth_cm": 320,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691594",
+        "url": null
+      }
     },
     {
       "id": "haa_007",
@@ -281,7 +291,8 @@
       },
       "story": "Six bald cypresses grow together on the lowest, wettest ground in Kenaupark, and that placement is not an accident. Taxodium distichum is one of the few conifers that tolerates standing water, native to swamps across the southeastern United States, and whoever planted this group at the end of the nineteenth century clearly knew the species well enough to put it exactly where an ordinary tree would struggle. Grouping conifers this way was a habit of the Zocher family, the father-and-son landscape architects who designed Kenaupark in 1865 on the site of Haarlem's demolished fortifications, with the villas around the park going up in the years immediately after.\n\nThe register lists the six as a single monumental entry rather than six separate trees, treating the grove as the thing worth protecting rather than any one trunk within it, the same logic behind the Kenaupark plane group and copper beech nearby. Bald cypress sheds its needles every autumn despite being a conifer, one of the few in temperate gardens that does, so the low ground it occupies goes from green to rust orange for a few weeks before going bare. It stands in the open park, free, a few steps from the existing Kenaupark copper beech and its neighbouring plane grove.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1690479)"
+        "data/registers/netherlands-lrmb.json (nr 1690479)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690479&outFields=*&f=json"
       ],
       "access": "Free, open park at any time",
       "transport": "5 minute walk from Haarlem Centraal station",
@@ -300,7 +311,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them as a group of six bald cypresses growing on the park's lowest, wettest ground. They stand in Kenaupark, near number 29."
+      "how_to_recognise": "You can recognise them as a group of six bald cypresses growing on the park's lowest, wettest ground. They stand in Kenaupark, near number 29.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690479",
+        "url": null
+      }
     },
     {
       "id": "haa_008",
@@ -346,7 +361,8 @@
       },
       "story": "This common lime is the youngest of Kenaupark's protected trees, planted in the early twentieth century, decades after the Zocher family's 1865 design had already matured into the park visitors walk today. Most of Kenaupark's oldest plantings, its plane trees and bald cypress grove, went in during the park's first years; this lime is a later addition to an already-established landscape, close enough to the original design that the register still lists it as part of the same historic planting scheme rather than treating it as a later intrusion.\n\nCommon lime is itself a hybrid rather than a distinct wild species, a natural cross between the small-leaved and large-leaved lime that was the default street and park tree across Dutch cities for centuries, valued for tolerating pruning and city conditions better than most trees its size. This one grows within a hundred metres of Kenaupark's copper beech, its plane group and its bald cypresses, on ground that was open fortification earthworks within living memory of the people who first planted here. It stands in the open park, free, a few minutes' walk from Haarlem Centraal station.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1691588)"
+        "data/registers/netherlands-lrmb.json (nr 1691588)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691588&outFields=*&f=json"
       ],
       "access": "Free, open park at any time",
       "transport": "5 minute walk from Haarlem Centraal station",
@@ -370,7 +386,11 @@
         "kind": "flowers"
       },
       "how_to_recognise": "You can recognise it as the youngest of Kenaupark's protected trees, planted decades after the park's first plantings matured. It stands near numbers 15 and 17.",
-      "girth_cm": 280
+      "girth_cm": 280,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691588",
+        "url": null
+      }
     },
     {
       "id": "haa_010",
@@ -389,7 +409,8 @@
         "data/registers/netherlands-lrmb.json (nr 1696661)",
         "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (IVN/Bomenstichting monumental-trees walking guide for Haarlem; register nr 1696661 appears in the guide's own text, cross-confirming the register entry as an independently-selected stop on its Bolwerken walk)",
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696661&outFields=*&f=json"
       ],
       "access": "Free, open park at any time",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -412,7 +433,11 @@
       },
       "how_to_recognise": "You can recognise it as the tree standing alone on open lawn, unlike the grouped beeches and oaks nearby. It stands in De Bolwerken, between the Noorderbrug and the Kruisweg crossing.",
       "girth_cm": 240,
-      "height_m": 12
+      "height_m": 12,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696661",
+        "url": null
+      }
     },
     {
       "id": "haa_011",
@@ -430,7 +455,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696664)",
         "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696664 appears in the guide's text, an independent selection of the same pair as a walk stop)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696664&outFields=*&f=json"
       ],
       "access": "Free, open park at any time",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -446,7 +472,11 @@
       },
       "how_to_recognise": "You can recognise them by the two oaks standing one either side of a path, reading as a gate. They stand on the west side of Statenbolwerk, at the start of the footpath.",
       "girth_cm": 331,
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696664",
+        "url": null
+      }
     },
     {
       "id": "haa_012",
@@ -465,7 +495,8 @@
         "data/registers/netherlands-lrmb.json (nr 1686176)",
         "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1686176 appears in the guide's text)",
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686176&outFields=*&f=json"
       ],
       "access": "Visible from the public Statenbolwerk footpath; the tree stands within the grounds of Staten Bolwerk 1, a private villa (owner_category 'particulier' in the register), so the trunk itself is not something a visitor can walk up to. The register itself marks it visitable/visible ('ja'/'ja').",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -489,7 +520,11 @@
         "kind": "fruit"
       },
       "how_to_recognise": "You can recognise it by its crown showing above a villa's hedge. It stands within the private grounds of Statenbolwerk 1, viewed from the public footpath.",
-      "girth_cm": 568
+      "girth_cm": 568,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686176",
+        "url": null
+      }
     },
     {
       "id": "haa_013",
@@ -507,7 +542,8 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696662)",
         "https://www.ivn.nl/app/uploads/sites/23/2024/06/Boekje-Mon-bomen_Haarlem_spreads_DIGI.pdf (register nr 1696662 appears in the guide's text)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696662&outFields=*&f=json"
       ],
       "access": "Free, open park at any time",
       "transport": "10-12 minute walk from Haarlem Centraal station",
@@ -531,7 +567,11 @@
       },
       "how_to_recognise": "You can recognise them by the four beeches growing together in a row. They stand along the Statenbolwerk footpath near house number 26, a short stretch from the oak pair at the path's start.",
       "girth_cm": 314,
-      "height_m": 22
+      "height_m": 22,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696662",
+        "url": null
+      }
     },
     {
       "id": "haa_014",
@@ -564,6 +604,10 @@
         "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696652&outFields=*&f=json",
         "date": "2026-10-10",
         "moved_m": 0
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696652",
+        "url": null
       }
     },
     {
@@ -605,6 +649,10 @@
         "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696667&outFields=*&f=json",
         "date": "2026-10-10",
         "moved_m": 0
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696667",
+        "url": null
       }
     },
     {
@@ -645,6 +693,10 @@
         "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696668&outFields=*&f=json",
         "date": "2026-10-10",
         "moved_m": 0
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696668",
+        "url": null
       }
     },
     {
@@ -663,7 +715,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696657, 'Zilverlinde Kleverlaan')",
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696657&outFields=*&f=json"
       ],
       "access": "Free, public cemetery, open during normal daytime hours",
       "transport": "Tram or bus to Kleverpark, then a short walk, roughly 15-20 minutes from central Haarlem",
@@ -678,7 +731,11 @@
         "label": "July, when it flowers weeks after every other lime in the city"
       },
       "how_to_recognise": "You can recognise it by its leaves, white with felt on the underside, flickering pale when wind moves through the crown. It stands on a path beside the water, in the oldest section of the Kleverlaan cemetery.",
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696657",
+        "url": null
+      }
     },
     {
       "id": "haa_018",
@@ -729,14 +786,19 @@
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1686319, 'Gewone plataan Houtplein')",
         "https://www.boomkronen.eu/node/99 (Pius Floris professional tree-care record: stem diameter 175 cm, height 24 m, for the plane tree at Frederikspark)",
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686319&outFields=*&f=json"
       ],
       "access": "Free, public park, open at any time",
       "transport": "About 20-25 minute walk from Haarlem Centraal Station, or a short bus ride to Houtplein",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "story": "Five and a half metres around the trunk and twenty four metres up, on a scrap of green between a busy junction and the Houtplein bus stops. A professional tree care firm measured this plane at 175 centimetres of stem diameter, which is where that girth figure comes from, and the national register dates the planting to between 1860 and 1870, so roughly 155 to 165 years. It was here long before the traffic was. London plane is the tree cities keep when they keep nothing else, and this one shows why. It takes exhaust, compacted soil, hard pruning and root damage and carries on. Rather than trying to breathe through a century of grime it sheds its bark in plates, which is why the trunk is mottled cream, olive and grey instead of uniformly filthy. The species is a hybrid, an accident between the American and the oriental plane that turned up in Europe in the seventeenth century and turned out to be tougher than either parent. Stand under it in winter and the frame reads clearly: a short heavy bole, then limbs going out almost horizontally before they turn up, with bobbled seed balls hanging on long strings until spring. Two independent sources agree on this tree, which makes it the best documented entry in the Frederikspark and the easiest one to find.",
-      "how_to_recognise": "You can recognise it by its mottled cream, olive and grey bark, shedding in plates, and a short heavy bole with limbs reaching out almost horizontally. It stands on the green beside Houtplein, opposite the former ABN bank office."
+      "how_to_recognise": "You can recognise it by its mottled cream, olive and grey bark, shedding in plates, and a short heavy bole with limbs reaching out almost horizontally. It stands on the green beside Houtplein, opposite the former ABN bank office.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686319",
+        "url": null
+      }
     },
     {
       "id": "haa_020",
@@ -753,7 +815,8 @@
         "neighbourhood": "Frederikspark"
       },
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1696658, 'Zomereiken Frederikspark', n_trees=2)"
+        "data/registers/netherlands-lrmb.json (nr 1696658, 'Zomereiken Frederikspark', n_trees=2)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696658&outFields=*&f=json"
       ],
       "access": "Free, public park, open at any time",
       "transport": "About 20-25 minute walk from Haarlem Centraal Station, or a short bus ride to Houtplein",
@@ -768,7 +831,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise them by the way the two crowns lean apart, short-branched on their facing sides, so from a distance they read as one lopsided tree. They stand together on the west side of the Frederikspark."
+      "how_to_recognise": "You can recognise them by the way the two crowns lean apart, short-branched on their facing sides, so from a distance they read as one lopsided tree. They stand together on the west side of the Frederikspark.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696658",
+        "url": null
+      }
     },
     {
       "id": "haa_021",
@@ -786,7 +853,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696645, 'Moeraseik Frederikspark')",
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696645&outFields=*&f=json"
       ],
       "access": "Free, public park, open at any time",
       "transport": "About 20-25 minute walk from Haarlem Centraal Station, or a short bus ride to Houtplein",
@@ -802,7 +870,11 @@
         "label": "late October into November, when it goes scarlet and holds it for weeks"
       },
       "how_to_recognise": "You can recognise it by its lower branches sweeping down toward the ground and its tidy, conical crown. It stands along the north-side path of Frederikspark.",
-      "height_m": 22
+      "height_m": 22,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696645",
+        "url": null
+      }
     }
   ]
 }

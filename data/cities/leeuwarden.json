@@ -43,7 +43,8 @@
       },
       "story": "This tree is almost exactly as old as the idea of a public park in this country.\n\nBetween 1822 and 1824 the city had a new garden laid out on the northern fortifications, in the existing grounds, by Lucas Pieters Roodbaard, the Frisian garden architect who spent his career converting Dutch formality into the romantic English manner: curved paths, water, planned views, no straight lines. It has been open to the public ever since, which makes the Prinsentuin one of the first public walking parks in the Netherlands and this chestnut one of the original plantings.\n\nTwo hundred years of people walking under a tree is not neutral. Horse chestnuts suffer badly from compacted ground and this one has had two centuries of feet. It is also the species now under attack across Europe from the leaf miner moth, which browns the foliage from July onward and makes a mature chestnut look half dead by August without actually killing it.\n\nSo come in May, when it is at its unarguable best: white candles held upright all over the crown, in a park laid out by a man who would have chosen it for exactly that.\n\nIt stands beside the Historisch Centrum, on the Groeneweg side.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696630&outFields=*&f=json"
       ],
       "access": "Free. Open public park.",
       "transport": "About 1 km north of Leeuwarden station, on foot.",
@@ -62,7 +63,13 @@
         "label": "May, when the white candles are up across the whole crown"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696630",
+        "url": null
+      },
+      "girth_cm": 480,
+      "height_m": 30
     },
     {
       "id": "lee_002",
@@ -79,7 +86,8 @@
       },
       "story": "The national register does not usually tell you a tree is going to die. About this one it does.\n\nIn the 1990s the ground it roots in was compacted, which for a beech is close to the worst thing that can be done to it: the fine feeding roots sit in the top half metre of soil and they need air in it. The tree took a blow it never came back from. The ground has since been improved and its condition has not recovered, and the register states plainly that it will in time have to be felled.\n\nIt is the oldest tree in Leeuwarden, banded 1750 to 1800, standing by a church whose history runs back to the fifteenth century and which has been reworked repeatedly for the different uses it has been put to.\n\nThere is nothing tragic to look at. A declining old beech is still an enormous dark thing on a city street, and the decline is mostly visible in what is missing: thinner cover at the top of the crown, more light coming through than there should be, dead ends on the upper branches.\n\nThis is the only tree on this site we would tell you to see sooner rather than later.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682927&outFields=*&f=json"
       ],
       "access": "Free. Stands on the street by the church, reachable at any time.",
       "transport": "About 800 m north of Leeuwarden station, on foot.",
@@ -91,7 +99,13 @@
       },
       "how_to_recognise": "The large purple-leaved beech beside the Westerkerk on the Sint Anthonystraat, with a noticeably thin upper crown.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682927",
+        "url": null
+      },
+      "girth_cm": 460,
+      "height_m": 20
     },
     {
       "id": "lee_003",
@@ -108,7 +122,8 @@
       },
       "story": "There is a small classical temple in this park, built in 1924 to hold the work of one sculptor.\n\nPier Pander was born in Friesland in 1864, the son of a rag merchant, and got out through talent and patronage: Rome, a career in marble, and an early death in 1919. The temple was raised to his own plans five years later, a domed round building in a public park, to house his sculpture. There are not many Dutch artists with a temple.\n\nThe beech stands beside it. Its date is not certain: the register bands it 1840 to 1850 and notes that trees here could equally have gone in when the temple was built, but photographs from the 1930s argue for the earlier reading. This is the Noorderplantage, laid out in 1843 on the former Noorderdwinger bastion and joined to the Prinsentuin at its eastern end, and the register's general conclusion is that the oldest trees in it date from between 1830 and 1880.\n\nA beech beside a domed white building is a deliberate effect: smooth grey bark against smooth stone, and in summer a canopy dense enough to put the whole temple in shade.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682918&outFields=*&f=json"
       ],
       "access": "Free. Open public park.",
       "transport": "About 1 km north of Leeuwarden station, on foot.",
@@ -128,7 +143,13 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682918",
+        "url": null
+      },
+      "girth_cm": 425,
+      "height_m": 25
     },
     {
       "id": "lee_004",
@@ -145,7 +166,8 @@
       },
       "story": "Grey herons nest in the tops of these trees.\n\nThat is the first thing to know about the old city cemetery, and in February and March it is loud. Herons are colonial breeders, they choose tall trees near water, they start early in the year, and a heronry is not a quiet place: a large ragged nest per fork, birds arriving with sticks, and a noise like an argument in a shed. From below you mostly see the undersides and hear the rest.\n\nThe ground was laid out in 1833 to a design by Lucas Pieters Roodbaard, the same architect as the Prinsentuin, which is why a cemetery here reads like a landscape garden with graves in it. It went out of use long ago and is now a national monument. Ivy has taken many of the trunks.\n\nThe plane is on the path between sections two and three, banded 1840 to 1850, so from the earliest planting. London plane is the classic city tree because it sheds its bark in plates and with it the soot, which is why the trunk is a camouflage of cream, olive and grey.\n\nGo in early spring, before the leaves, when you can see the birds.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692403&outFields=*&f=json"
       ],
       "access": "Free. Open ground, no longer in use as a cemetery.",
       "transport": "About 1.5 km north of Leeuwarden station, on the Jelsummerstraat.",
@@ -164,7 +186,13 @@
         "label": "March, bare, with the heron colony visible in the crowns"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692403",
+        "url": null
+      },
+      "girth_cm": 600,
+      "height_m": 25
     },
     {
       "id": "lee_005",
@@ -181,7 +209,8 @@
       },
       "story": "It stands next to the building where Friesland keeps its memory.\n\nTresoar is the Frisian historical and literary centre, the archive of a language with its own literature and its own long argument about being a language. The beech is directly behind it, in the Prinsentuin, on the line of the old northern fortifications that the park was built on and that have been a national monument since 1967.\n\nThe register bands it 1860 to 1870, which places it a generation after Roodbaard's layout rather than in it, planted into a park that already existed.\n\nBeech is the tree that makes a Dutch park feel like a wood. It casts the heaviest shade of any large tree here, dense enough that almost nothing grows under a mature one, so the ground beneath is bare orange leaf litter and roots. That is not neglect, it is the tree winning.\n\nRun your hand over the trunk. Beech bark stays smooth and thin its whole life, which is why people carve it, and why an old one in a public park usually carries a century of initials that have stretched and blurred as the trunk widened.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688389&outFields=*&f=json"
       ],
       "access": "Free. Open public park.",
       "transport": "About 1 km north of Leeuwarden station, on foot.",
@@ -200,7 +229,13 @@
         "label": "October, when it turns copper and the litter goes orange"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688389",
+        "url": null
+      },
+      "girth_cm": 425,
+      "height_m": 25
     },
     {
       "id": "lee_006",
@@ -217,7 +252,8 @@
       },
       "story": "The register calls this a very impressive specimen of the species and then adds, in the same breath, that its crown has developed one-sidedly because of the park trees standing next to it.\n\nBoth are true and the second explains the first. A tree that grows up hemmed in on one side puts everything it has into the open side, so you end up with an asymmetric crown reaching out over the path or the water, which reads as dramatic rather than damaged. Roodbaard's successors planted a park; the trees then negotiated among themselves.\n\nIt stands on the bank by the Theekoepel, the tea house, in the Noorderplantage end of the grounds, and the register bands it 1870 to 1880.\n\nAn ash of that age is worth stopping for now more than it was twenty years ago. Ash dieback, a fungal disease that arrived in the Netherlands in 2010, has killed a large share of the country's ash in the years since, and a tolerant mature tree is no longer an ordinary thing. A minority resist it, apparently on genetics rather than luck, and every big healthy one left is a candidate.\n\nBlack buds in winter, in opposite pairs. Nothing else here has them.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688388&outFields=*&f=json"
       ],
       "access": "Free. Open public park.",
       "transport": "About 1 km north of Leeuwarden station, on foot.",
@@ -229,7 +265,13 @@
       },
       "how_to_recognise": "A big ash with a lopsided crown leaning away from its neighbours, on the slope by the tea house. Matt black buds in winter.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688388",
+        "url": null
+      },
+      "girth_cm": 405,
+      "height_m": 15
     },
     {
       "id": "lee_007",
@@ -246,7 +288,8 @@
       },
       "story": "The trunk is the reason to come. It is deeply grooved and covered in burrs, hard woody swellings the size of fists and heads, which on a poplar of this age turn the bole into something closer to rock than bark.\n\nBurrs are the tree's response to damage or infection: a knot of dormant buds that keeps growing without ever making a shoot, laying down wildly disordered grain. Woodturners prize the timber for exactly that and pay serious money for a burr this size. Standing on a public park bank by a city canal is the safest place it could be.\n\nMarilandica is a named clone of the Canadian poplar, the hybrid of European black poplar and American cottonwood, selected and propagated by cuttings, which means every Marilandica anywhere is genetically the same tree. This one has been growing since the 1870s at the centre of the Prinsentuin by the Noorder Stadsgracht.\n\nPoplars are planted for speed and taken out early because they get brittle. This one has been left, and a century and a half of being left is what produced the trunk.\n\nGo and put your hands on it. That is the whole visit.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688390&outFields=*&f=json"
       ],
       "access": "Free. Open public park.",
       "transport": "About 1 km north of Leeuwarden station, on foot.",
@@ -258,7 +301,13 @@
       },
       "how_to_recognise": "Centrally in the park by the canal, the tree with a deeply furrowed trunk covered in large woody burrs.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688390",
+        "url": null
+      },
+      "girth_cm": 505,
+      "height_m": 30
     },
     {
       "id": "lee_008",
@@ -317,7 +366,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/witte-paardenkastanje-poptaslot/",
         "https://marssum.info/kastanjeboom-poptaslot-mooiste-van-friesland/",
-        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-friesland.html"
+        "https://www.bomenstichting.nl/monumentalebomen/bomen-van-de-ereklasse/10-bijzondere-bomen-in-friesland.html",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678493&outFields=*&f=json"
       ],
       "access": "Free. The garden, where the tree stands, is open on weekdays from April to September (roughly 09:00-16:00, later in July and August) and closed on Sundays. Seeing inside the house itself is a separate, paid tour.",
       "transport": "Village of Marssum, near Leeuwarden; reachable by local bus, roughly 10-15 minutes from Leeuwarden centre by car.",
@@ -329,7 +379,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its lowest branches swept down to the grass, cut back to stop them rooting into a ring of new stems. It stands in the garden of Poptaslot, near Marssum."
+      "how_to_recognise": "You can recognise it by its lowest branches swept down to the grass, cut back to stop them rooting into a ring of new stems. It stands in the garden of Poptaslot, near Marssum.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678493",
+        "url": null
+      },
+      "height_m": 18
     },
     {
       "id": "lee_010",
@@ -346,7 +401,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1684252, 'Hollandse linde Wilhelminaboom', planted band 1890-1900)",
-        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, stop 4)"
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, stop 4)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1684252&outFields=*&f=json"
       ],
       "access": "Free, on the public Raadhuisplein square in front of the old town hall (het Stadhuis); the tree stands inside an ornamental iron fence but the square itself is open at all times.",
       "transport": "About 600m (roughly 8 minutes on foot) from Leeuwarden Centraal station; in the city centre.",
@@ -361,7 +417,13 @@
         ],
         "kind": "flowers",
         "label": "late June and early July, when the lime flowers and the scent hangs over the square"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684252",
+        "url": null
+      },
+      "girth_cm": 198,
+      "height_m": 18
     },
     {
       "id": "lee_011",
@@ -378,7 +440,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1683830, 'Hollandse linde Julianaboom', planted band 1940-1950)",
-        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, stop 7 and top-10 entry IX)"
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, stop 7 and top-10 entry IX)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683830&outFields=*&f=json"
       ],
       "access": "Free, in the public square around the Jacobijnerkerk (Grote Kerk); the tree stands in a rectangular bed in the north-west corner of the churchyard, open at all times.",
       "transport": "About 850m (roughly 11 minutes on foot) from Leeuwarden Centraal station; in the city centre.",
@@ -393,7 +456,13 @@
         ],
         "kind": "flowers",
         "label": "late June and early July, when it flowers and the churchyard fills with the sound of bees"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683830",
+        "url": null
+      },
+      "girth_cm": 226,
+      "height_m": 20
     },
     {
       "id": "lee_012",
@@ -410,7 +479,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1682934, 'Witte paardenkastanje Noorderbrug', planted band 1900-1910)",
-        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry III, dated 1899)"
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry III, dated 1899)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682934&outFields=*&f=json"
       ],
       "access": "Free, beside the public walking path along the Noorderweg/Arendstuin between the Noorderbrug and the Stedelijk Gymnasium.",
       "transport": "About 1.1km (roughly 13 minutes on foot) from Leeuwarden Centraal station.",
@@ -424,7 +494,13 @@
         ],
         "kind": "flowers",
         "label": "May, when the white candles stand up across the whole crown, low limb included"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682934",
+        "url": null
+      },
+      "girth_cm": 343,
+      "height_m": 17
     },
     {
       "id": "lee_013",
@@ -441,14 +517,21 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1682915, 'Oosterse plataan Stationsplein', planted band 1900-1910)",
-        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry V, dated circa 1900)"
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry V, dated circa 1900)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682915&outFields=*&f=json"
       ],
       "access": "Free, on the public square directly in front of Leeuwarden railway station.",
       "transport": "At Leeuwarden Centraal station, on the station square itself.",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "story": "Step off the train at Leeuwarden and the first old tree you meet is the wrong plane.\n\nAlmost every plane on a Dutch square is a London plane, the hybrid bred for city air and planted by the thousand. This one is the parent species, an Oriental plane, which is rare this far north and which the national register carries under its Dutch name, oosterse plataan, at the Stationsplein.\n\nIt has held the open ground in front of the station since about 1900. Both sources that carry it agree: the city's own list of its ten most special trees dates it circa 1900, and the register gives a planting band of 1900 to 1910, so it is somewhere between 116 and 126 years old. The crown has spread the way planes on open squares do, low and wide over the paving, with the station front behind it.\n\nWhich means every arrival in this city by rail for more than a century has walked past it, most of them watching the clock rather than the tree. It stood there through the war and through the century of traffic that has crossed this square since.\n\nNobody has taped its girth. If you have a tape measure and a few minutes between trains, tell us.",
-      "how_to_recognise": "You can recognise it by the broad, low-spreading crown standing on its own out in the open paving. It stands on the Stationsplein directly in front of the railway station, with the station building behind it."
+      "how_to_recognise": "You can recognise it by the broad, low-spreading crown standing on its own out in the open paving. It stands on the Stationsplein directly in front of the railway station, with the station building behind it.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682915",
+        "url": null
+      },
+      "girth_cm": 345,
+      "height_m": 18
     },
     {
       "id": "lee_014",
@@ -465,7 +548,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1695808, 'Bontbladige esdoorn Rengerspark', planted band 1900-1910)",
-        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry VI, dated 1904)"
+        "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf (gemeente Leeuwarden / Historisch Centrum Leeuwarden, 'Wandelroute Monumentaal Groen', June 2022, top-10 entry VI, dated 1904)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695808&outFields=*&f=json"
       ],
       "access": "Free, inside the public Rengerspark (a former private gift to the city, opened 1904, rijksmonument since 2001), just left of the entrance gate on Spanjaardslaan.",
       "transport": "About 1.2km (roughly 15 minutes on foot) from Leeuwarden Centraal station.",
@@ -480,7 +564,13 @@
         ],
         "kind": "fresh leaves",
         "label": "late April and May, when the new leaves open mottled pink and cream before they darken"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695808",
+        "url": null
+      },
+      "girth_cm": 338,
+      "height_m": 29
     },
     {
       "id": "lee_015",
@@ -497,7 +587,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (Landelijk Register Monumentale Bomen, nr 1682937, 'Bruine beuk stadsvilla Willemskade', planted band 1860-1870, designated by the municipality and entered in the national register in 1988)",
-        "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/ (IVN Leeuwarden e.o., 'Wandelen langs monumentale bomen in Leeuwarden', names two brown beeches at Willemskade 27, dated circa 1865)"
+        "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/ (IVN Leeuwarden e.o., 'Wandelen langs monumentale bomen in Leeuwarden', names two brown beeches at Willemskade 27, dated circa 1865)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682937&outFields=*&f=json"
       ],
       "access": "Free to view from Willemskade street; the tree stands in the garden of a private 19th-century villa (a national heritage building, built 1874) along the boundary facing the street. Register marks it visitable=ja and visible=ja.",
       "transport": "About 1km south of Leeuwarden Centraal station, along the Willemskade waterfront.",
@@ -512,6 +603,10 @@
         ],
         "kind": "fresh leaves",
         "label": "late April and May, when the new leaves open translucent red before they darken"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682937",
+        "url": null
       }
     },
     {
@@ -531,7 +626,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1688399)",
         "https://historischcentrumleeuwarden.nl/images/pdf/wandelroute_vosseparkwijk.pdf",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688399&outFields=*&f=json"
       ],
       "access": "Free, public park (Westerpark/Vosseparkje), open daily",
       "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster",
@@ -548,7 +644,11 @@
         "label": "July to September: long green catkins of winged nutlets hang from every branch",
         "kind": "fruit"
       },
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688399",
+        "url": null
+      }
     },
     {
       "id": "lee_017",
@@ -567,7 +667,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1688398)",
         "https://historischcentrumleeuwarden.nl/images/Publiek/Stadswandelingen-PDF/brochure-wandelingmonumentaal-groen-2022.pdf",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688398&outFields=*&f=json"
       ],
       "access": "Free, public park (Westerpark/Vosseparkje), open daily",
       "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster",
@@ -575,7 +676,11 @@
       "curation_status": "ai_generated",
       "story": "A Historisch Centrum Leeuwarden walking brochure and the national tree register agree down to the year: this grey poplar on the east side of Vosseparkje's pond went into the ground in 1909, one of the exotic and unusual trees the brochure singles out on a route otherwise lined with white and red horse chestnuts.\n\nIt survived the storm of 1970 that flattened trees across the Netherlands and remains, in the register's own words, healthy and structurally sound more than a century later. The species is a hybrid of white poplar and aspen, common enough as roadside planting but rarely old enough to earn a place in a national monumental-trees register.\n\nIt stands on the pond's east bank in Westerpark, known locally as Vosseparkje, alongside a leaning white acacia the same brochure records as propped up nearby, and, on the park's far side, a Caucasian wingnut with a trunk more than a metre round. Together they form the park's own cluster of registered trees, a short walk from the Prinsentuin and Princessehof gardens where most of Leeuwarden's other old trees stand.",
       "how_to_recognise": "You can recognise it by where it stands, on the east bank of Vosseparkje's pond, among white and red horse chestnuts, paper birches and a blue Atlas cedar the brochure lists nearby.",
-      "height_m": 31
+      "height_m": 31,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688398",
+        "url": null
+      }
     },
     {
       "id": "lee_018",
@@ -594,7 +699,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1682932)",
         "https://www.ivn.nl/afdeling/leeuwarden-eo/leren-over-de-natuur/wandelen-langs-monumentale-bomen-in-leeuwarden/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682932&outFields=*&f=json"
       ],
       "access": "Free, public square (Wirdumerdijk, in front of the former Beursgebouw), open at all times",
       "transport": "Central Leeuwarden, short walk from the Waagplein/Nieuwestad shopping area",
@@ -602,7 +708,11 @@
       "curation_status": "ai_generated",
       "story": "The plane tree in front of Leeuwarden's former stock exchange spent years hemmed in by brick paving before the city dug it back out in 2005 and built a proper rooting structure around the trunk. Inspectors called its condition merely adequate for years afterward; by 2022 they wrote that it was clearly thriving.\n\nThe Beursgebouw behind it went up in 1880 for the city's grain and commodity traders and now houses part of the University of Groningen's Campus Fryslan. The tree came a generation later, planted sometime between 1900 and 1910 on what was then a green strip beside the building. A local nature guide's walking route singles it out for the fountain beside it and for the spiky seed balls the species drops each year.\n\nIt is not Leeuwarden's only oriental plane. A second one, planted around the same years, stands 800 metres away in front of the railway station. This one is the one with the fountain and the old trading floor at its back, on Wirdumerdijk, in the middle of the old town rather than at its edge.",
       "how_to_recognise": "You can recognise it by the fountain beside it, in front of the former Beursgebouw on Wirdumerdijk. Leeuwarden's other oriental plane stands 800 metres away at the railway station, not here.",
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682932",
+        "url": null
+      }
     },
     {
       "id": "lee_020",
@@ -619,7 +729,8 @@
       },
       "story": "The register does not soften it: the thicker of these two chestnuts has a cavity with a fungal infection and a strong case of bleeding canker, and the condition of both is rated moderate.\n\nThey are still standing, and they have been standing a while. Both went into the garden of the Diakonessenhuis when the hospital was founded in 1879, or within the decade after it, which puts them at roughly 135 to 145 years. They were entered in the national monumental-trees register in 1989. Between those two dates the hospital closed, its wards became apartments, and the building work of the 1990s dug a garage entrance in beside them.\n\nBleeding canker is the bacterial disease that has been working through Europe's horse chestnuts since the early 2000s, leaving dark sticky streaks down the bark. Trees carry it for years, and some of them come back from it. Neither the register nor anyone else has written these two off.\n\nSo this is a pair to see now rather than eventually, which is an unusual thing to be able to say about a tree that predates every building around it. They stand about 30 metres east of the courtyard's pink-flowering red chestnut, in a garden laid out in 1895 to a Vlaskamp design and kept, in part, through everything that has happened to this site since.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/ (LRMB nr 1688396)"
+        "https://www.monumentalebomen.nl/ (LRMB nr 1688396)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688396&outFields=*&f=json"
       ],
       "access": "Free. Same courtyard as lee_019 (Diaconessenpark), about 30 m away. OSM shows the same open, paved, gate-free footway network through this stretch of the courtyard.",
       "transport": "About 900 m north of Leeuwarden station, on foot, just off Noordersingel.",
@@ -638,6 +749,10 @@
         ],
         "label": "May, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688396",
+        "url": null
       }
     },
     {
@@ -655,7 +770,8 @@
       },
       "story": "London planes were the tree Victorian cities planted when they wanted something that could stand the air, and they manage it by shedding their bark in plates, taking the grime off with it.\n\nThis one is the northernmost of the three registered trees in the old Diakonessenhuis garden and the closest to the hospital building itself, which means it has had the best view of everything that happened here. The hospital opened in 1879. The plane went into the ground between 1880 and 1890, so it is roughly 135 to 145 years old. The hospital closed in 1987, the building came through the years as a national monument and now holds flats, and the plane was entered in the monumental-trees register in 1989, in the middle of the conversion.\n\nLike the chestnuts beside it, it took damage from the building work of the 1990s, when a garage entrance went in next to the neighbouring block. Inspectors rated its condition reasonable in 2017.\n\nThe register is divided about this courtyard in an odd way. The two chestnuts are listed as privately owned and openly visitable, while the plane is down to a public body with its visitability marked unknown. On the ground it is one landscaped garden with paved paths running through it and a bench beside the trees, laid out in 1895 to a Vlaskamp design and half surviving.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/ (LRMB nr 1687120)"
+        "https://www.monumentalebomen.nl/ (LRMB nr 1687120)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687120&outFields=*&f=json"
       ],
       "access": "Free. Same courtyard (Diaconessenpark), the northernmost of the three trees, closest to the historic hospital building itself (now apartments). Same open, paved-footway, no-gate picture from OSM as the other two.",
       "transport": "About 900 m north of Leeuwarden station, on foot, just off Noordersingel.",
@@ -667,7 +783,13 @@
       },
       "how_to_recognise": "You can recognise it by the flaking, patchwork bark, which nothing else here has, and by where it stands: the northernmost of the courtyard's three big trees, the one closest to the old hospital building.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687120",
+        "url": null
+      },
+      "girth_cm": 381,
+      "height_m": 20
     },
     {
       "id": "lee_022",
@@ -845,7 +967,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1682930, planted band 1880-1890)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682930&outFields=*&f=json"
       ],
       "access": "Free. Stands on the public quay/street beside the former Huis van Bewaring at Blokhuispoort, on the Keizersgracht/Oosterkade side of the complex (a different corner from the Crimean linden already on this site, lee_022, which stands at the Blokhuisplein entrance about 550m away).",
       "transport": "About 700 m southeast of Leeuwarden station, on foot.",
@@ -869,7 +992,11 @@
         "status": "missing"
       },
       "girth_cm": 415,
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682930",
+        "url": null
+      }
     },
     {
       "id": "lee_030",
@@ -887,7 +1014,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1695803, 'Moseik Rengerspark')",
         "https://nl.wikipedia.org/wiki/Moseik (species identification: Dutch 'moseik' is the standard common name for Quercus cerris, Turkey oak)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695803&outFields=*&f=json"
       ],
       "access": "Free. Open public park (Rengerspark, rijksmonument since 2001).",
       "transport": "About 1.2 km north of Leeuwarden station, on foot.",
@@ -911,7 +1039,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "height_m": 28
+      "height_m": 28,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695803",
+        "url": null
+      }
     },
     {
       "id": "lee_031",
@@ -928,7 +1060,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1692406, 'Pluimiep Vosseparkje')",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692406&outFields=*&f=json"
       ],
       "access": "Free. Open public park (Westerpark/Vosseparkje), open daily. Joins lee_016, lee_017 and lee_024 as the fourth registered tree in this small park.",
       "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster.",
@@ -944,7 +1077,11 @@
         "status": "missing"
       },
       "girth_cm": 318,
-      "height_m": 17
+      "height_m": 17,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692406",
+        "url": null
+      }
     },
     {
       "id": "lee_032",
@@ -961,7 +1098,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1692405, 'Pluimiep Vosseparkje')",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692405&outFields=*&f=json"
       ],
       "access": "Free. Open public park (Westerpark/Vosseparkje), open daily.",
       "transport": "Short walk from Leeuwarden centre; the park sits just west of the Prinsentuin cluster.",
@@ -977,7 +1115,11 @@
         "status": "missing"
       },
       "girth_cm": 381,
-      "height_m": 19
+      "height_m": 19,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692405",
+        "url": null
+      }
     },
     {
       "id": "lee_035",
@@ -994,7 +1136,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1682919, two pollarded limes, planted band 1830-1840)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682919&outFields=*&f=json"
       ],
       "access": "Free. Stand on the public street (Grote Kerkstraat) in front of the building, register setting weg (road).",
       "transport": "Central Leeuwarden, short walk from Leeuwarden Centraal station, in the museum quarter around the Prinsentuin.",
@@ -1011,7 +1154,11 @@
         "kind": "flowers"
       },
       "girth_cm": 138,
-      "height_m": 10
+      "height_m": 10,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682919",
+        "url": null
+      }
     },
     {
       "id": "lee_036",
@@ -1091,7 +1238,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1692402, planted band 1850-1860)",
         "https://nl.wikipedia.org/wiki/Oude_Stadsbegraafplaats_Leeuwarden (independently confirms the cemetery's 1830 design by Lucas Pieters Roodbaard, 1833 opening and 1967 national-monument status, matching the register's own account of the site; does not mention this specific tree)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692402&outFields=*&f=json"
       ],
       "access": "Free. Open ground, a former cemetery no longer in use, the same site as the already-published plane (lee_004) on the path between sections 2 and 3.",
       "transport": "About 1.5 km north of Leeuwarden station, on the Jelsummerstraat.",
@@ -1100,7 +1248,11 @@
       "story": "The register gives this cemetery two separate plane entries, and they stand half a kilometre apart inside the same walled ground.\n\nThis is the second of them: a pair of planes on the path between sections two and four, with a planting band of 1850 to 1860. The oldest trees here date from around 1830, so these two arrived a good twenty years into the cemetery's working life, when the ground they shade had already been filling for a generation.\n\nThat ground was laid out in 1833 to a design by Lucas Pieters Roodbaard, who also drew the Prinsentuin, which is why a burial ground reads here as a landscape garden with graves in it. Burials stopped long ago and the site became a national monument in 1967.\n\nWhat it has become since is closer to a wood. Ivy has climbed most of the trunks. Grey herons nest in the crowns, colonially and noisily, and they start early enough in the year that the racket arrives before the leaves do.\n\nThe planes themselves do what planes do everywhere. The bark comes away in plates and leaves a mottle of cream, olive and grey underneath, which makes them the easiest trunks to pick out among all the ivy around them.\n\nNeither of the two has been measured, and the register is the only source that records them. If you know more about this pair than a planting decade, tell us.",
       "how_to_recognise": "You can recognise them by the flaking cream and olive bark, and by there being two side by side. They stand on the path between sections 2 and 4; the cemetery's other registered plane is a single tree 500 metres off.",
       "girth_cm": 425,
-      "height_m": 25
+      "height_m": 25,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692402",
+        "url": null
+      }
     },
     {
       "id": "lee_038",
@@ -1118,7 +1270,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/ (LRMB register nr 1695807, planted with the park's founding, 1900-1910)",
         "https://web.archive.org/web/20250522131935/https://www.welkominleeuwarden.nl/stem-op-de-mooiste-boom-van-de-gemeente-leeuwarden/ (2020 municipal 'Most Beautiful Tree' public vote: 'de grote vleugelnoot in het Rengerspark' was one of ten trees nominated, confirming the tree's local recognition and standing as of 2020)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695807&outFields=*&f=json"
       ],
       "access": "Free. Open public park (Rengerspark, rijksmonument since 2001).",
       "transport": "About 1.2 km north of Leeuwarden station, on foot; joins the already-published maple (lee_014) and Turkey oak (lee_030) in the same park.",
@@ -1135,7 +1288,11 @@
         "label": "August and September, when the long strings of winged nutlets hang from the branches"
       },
       "girth_cm": 582,
-      "height_m": 19
+      "height_m": 19,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695807",
+        "url": null
+      }
     }
   ]
 }

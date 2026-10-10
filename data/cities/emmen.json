@@ -43,7 +43,8 @@
       },
       "story": "The oldest part of Emmen is a street, and this is the tree on it.\n\nEmmen began as an esdorp on the southeastern shoulder of the Hondsrug, the long sand ridge that runs across Drenthe. An esdorp is a village organised around a shared arable field, the es, built up over centuries with sods and manure until the soil was deep enough to farm on ground that was otherwise heath. The Noordeind was where it started, lined with the characteristic Drenthe farmhouses, most of which have gone.\n\nThe lime stayed, planted, the register suggests, around 1790.\n\nA village lime in this part of the country was never ornamental. It was the meeting point: shade in summer, a place to stand and settle things, sometimes the spot where local justice was spoken, and always the thing you gave directions by. That is why so many of them are older than the houses. Nobody removes the tree everyone arranges to meet at.\n\nGo in July, when it flowers. Lime blossom on a still evening is heavy and sweet and carries the length of a village street, and it is one of the few sensory experiences here that has not changed since 1790.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682311&outFields=*&f=json"
       ],
       "access": "Free. Stands on the public street opposite number 9.",
       "transport": "About 1.5 km north of Emmen centre, on the Noordeind.",
@@ -62,7 +63,13 @@
         "label": "July, when the blossom carries down the whole street"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682311",
+        "url": null
+      },
+      "girth_cm": 569,
+      "height_m": 22
     },
     {
       "id": "emm_002",
@@ -79,7 +86,8 @@
       },
       "story": "The oak is standing in the middle of the tomb.\n\nHunebed D42 is one of the larger megalithic chambers in Drenthe and one of the less visited, which is part of why this happened. Five thousand years ago people here dragged glacial boulders into a chamber and covered it with earth. Somewhere around 1880 an acorn got into the middle of it and nobody took the seedling out.\n\nThe register describes the result plainly: an enormous oak in the middle of the hunebed, which it calls a striking sight, and says the whole picture makes it worth a visit. That is unusually enthusiastic for an official survey and it is right.\n\nWhat you get is two kinds of permanence in one frame. The stones have been there since before writing, before the wheel reached this part of Europe, before bronze. The oak has been there for a century and a half and is, in tree terms, not old. Standing between them rearranges your sense of both.\n\nAn oak's roots in a chamber tomb are not neutral, and that tension is part of what you are looking at.\n\nIt is off the Schietbaanweg, northwest of Emmen.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1694842&outFields=*&f=json"
       ],
       "access": "Free. Open ground at the hunebed, reachable at any time.",
       "transport": "About 3 km northwest of Emmen centre, off the Schietbaanweg.",
@@ -100,7 +108,13 @@
         "label": "October, when acorns collect between the stones"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694842",
+        "url": null
+      },
+      "girth_cm": 392,
+      "height_m": 16
     },
     {
       "id": "emm_003",
@@ -117,7 +131,8 @@
       },
       "story": "There is only one long grave in the Netherlands and this oak is standing next to it.\n\nHunebed D43 is a langgraf: instead of a single chamber under a round mound, it has a covering mound forty metres long with two separate burial chambers set into it, the whole thing ringed by a kerb of stones. Fifty two of them survive, and the ring has been restored so that it reads almost completely. Nothing else of this form exists in the country.\n\nThe oak went in some four and a half thousand years later, between 1860 and 1870.\n\nWhat makes this pair better than the tomb alone is scale. A forty metre mound is hard to see as a shape; from a distance it is a rise in the ground. A big oak beside it gives you something to measure against, and the length of the thing suddenly registers.\n\nOaks and burial sites go together across northern Europe, and not by chance: burial mounds were left unploughed for centuries, so they became the one place in a farmed landscape where a tree could reach two hundred years.\n\nWalk the full length of the kerb. It takes longer than you expect.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682312&outFields=*&f=json"
       ],
       "access": "Free. Open ground at the hunebed, reachable at any time.",
       "transport": "About 2 km northeast of Emmen centre, along the Odoornerstraat.",
@@ -137,7 +152,13 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682312",
+        "url": null
+      },
+      "girth_cm": 397,
+      "height_m": 25
     },
     {
       "id": "emm_004",
@@ -190,7 +211,8 @@
       },
       "story": "The church is gone and only the tower is left. The presbytery has been rebuilt out of recognition. The park is still there, and so is this beech.\n\nA fine park was laid out at the old presbytery of the Catholic church of St Bonifatius in Nieuw-Schoonebeek at the beginning of the twentieth century. The beech, banded 1750 to 1800, is far older than that and was standing long before anyone laid out anything, which is the same pattern as almost every other church tree in this country: the ground was already planted and the institution arrived to join it.\n\nIf the band is right, this is as old as the lime at the Noordeind and one of the oldest trees in the municipality.\n\nA copper beech at two and a half centuries in a Drenthe village is also slightly improbable. The purple form was a scarce nursery product in the eighteenth century, largely confined to estates and botanic collections, so somebody with money and connections put it here.\n\nOctober, when it burns through to copper against a medieval tower stump.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682278&outFields=*&f=json"
       ],
       "access": "Grounds of the parish centre, recorded as visitable in the national register. Not a public park, so look from where you are welcome to stand.",
       "transport": "About 20 km south of Emmen, at Nieuw-Schoonebeek on the Europaweg.",
@@ -209,7 +231,13 @@
         "label": "October, when the purple turns copper"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682278",
+        "url": null
+      },
+      "girth_cm": 465,
+      "height_m": 25
     },
     {
       "id": "emm_006",
@@ -226,7 +254,8 @@
       },
       "story": "A London plane in a Drenthe village is a stranger, and that is the interesting part.\n\nThe species is the definitive city tree of northern Europe, planted by the hundred thousand along boulevards from London to Vienna because it survives paving, pollution, root damage and hard pruning better than anything of its size. What it is not is a village tree. Out here, in a small park behind a parish centre on the German border, there is nothing for it to tolerate.\n\nSo it has simply grown, in good soil, unpruned, with room. That produces a shape most people never see on a plane: broad rather than columnar, low branching, and far wider than a street specimen of the same age.\n\nIt is banded 1860 to 1870, and it stands with the copper beech in the park laid out at the old presbytery, of whose church only the tower survives.\n\nThe bark is the giveaway from any distance, flaking away in irregular plates to leave a mottle of cream, olive and grey. On an unpolluted country tree the pale patches stay paler, so it is a brighter thing here than in any city.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682280&outFields=*&f=json"
       ],
       "access": "Grounds of the parish centre, recorded as visitable in the national register. Not a public park.",
       "transport": "About 20 km south of Emmen, at Nieuw-Schoonebeek on the Europaweg.",
@@ -238,7 +267,13 @@
       },
       "how_to_recognise": "Flaking cream and olive bark, broader and lower-branched than a street plane.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682280",
+        "url": null
+      },
+      "girth_cm": 325,
+      "height_m": 27
     },
     {
       "id": "emm_007",
@@ -255,7 +290,8 @@
       },
       "story": "This village was made by digging peat, and the oak is about as old as the village.\n\nErica began around 1863 as a buckwheat colony on the higher sandy ground, the kind of marginal settlement people started where nothing better was available. It became a proper peat colony when the Hoogeveense Vaart, the canal, was completed in the same period, and the centre of the place shifted to sit on the water. The address of this tree still says it: Verlengde Vaart Zuidzijde, the south side of the extended canal.\n\nPeat colonies were built to strip the ground. Men cut the bog, dried it, and sent it out by barge, and when the peat was gone what was left was thin sand and a grid of canals. Almost nothing planted in that first generation survived, because there was no reason to keep it.\n\nThis oak was planted between 1870 and 1880 in a front garden, which is exactly why it did. A tree in somebody's own garden had a defender.\n\nIt is a private front garden on a canal bank. Look from the road.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682321&outFields=*&f=json"
       ],
       "access": "Stands in a front garden on the canal side, recorded as visitable in the national register. Look from the public road.",
       "transport": "About 10 km southwest of Emmen, at Erica on the Verlengde Vaart Zuidzijde.",
@@ -275,7 +311,13 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682321",
+        "url": null
+      },
+      "girth_cm": 381,
+      "height_m": 24
     },
     {
       "id": "emm_008",
@@ -294,7 +336,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/bonte-esdoorn-coevorden/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682295",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682295&outFields=*&f=json"
       ],
       "access": "Free to look at. The maple stands on open ground at Kasteel Coevorden, which is now a hotel, and is in full view from the forecourt.",
       "transport": "In the centre of Coevorden, a short walk from the bus station, and about 15 km southeast of Emmen.",
@@ -308,7 +351,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 332,
-      "height_m": 22
+      "height_m": 22,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682295",
+        "url": null
+      }
     }
   ]
 }

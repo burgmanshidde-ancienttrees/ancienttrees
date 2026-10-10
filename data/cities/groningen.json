@@ -43,7 +43,8 @@
       "verified_sources": [
         "https://www.monumenten.nl/monument/529490",
         "https://lokaleregelgeving.overheid.nl/CVDR609688",
-        "https://www.rtvnoord.nl/nieuws/128307/Meer-monumentale-bomen-in-Groningen"
+        "https://www.rtvnoord.nl/nieuws/128307/Meer-monumentale-bomen-in-Groningen",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680029&outFields=*&f=json"
       ],
       "access": "Visible from the public road (Noorddijkerweg); De Rollen is a private working farm, not open to visitors",
       "transport": "About 5km northeast of Groningen city centre; a 20-minute bike ride or bus toward Noorddijk/Ruischerbrug, then a short walk along Noorddijkerweg",
@@ -62,7 +63,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the province's oldest tree, standing in front of the farmhouse at De Rollen. It is visible from Noorddijkerweg; the farm itself is private."
+      "how_to_recognise": "You can recognise it as the province's oldest tree, standing in front of the farmhouse at De Rollen. It is visible from Noorddijkerweg; the farm itself is private.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680029",
+        "url": null
+      },
+      "girth_cm": 392,
+      "height_m": 10
     },
     {
       "id": "gro_002",
@@ -186,7 +193,8 @@
       "story": "South of a 19th-century country villa in Groningen's smallest urban forest grows the tree that gives Park Groenestein its scale: a plane tree large enough to anchor an entire estate's landscaping around it. The villa itself, called Groenestein, was rebuilt in 1871 over the footprint of a 1685 house, in the sober, understated style favoured by the Groningen merchant families who commissioned these southern estates, and the park around it took its current form in the same period. No source records exactly when this particular plane was planted, only that its size points toward the same 19th-century landscaping campaign that shaped the rest of the grounds, putting it somewhere around a century and a half old rather than a documented number. The municipality's own 2018 tree inventory lists it among the city's monumental specimens on that basis, size and context standing in for a missing planting record. Groenestein, known locally as the owl wood for its resident owls alongside bats, hedgehogs and squirrels, has been a national monument since 1971, but unlike several of Groningen's other historic estates its grounds stay open to anyone who wants to walk them, no appointment and no entry fee, just a short walk along the Helperzoom to a garden that has quietly outgrown the house it was built to flatter.",
       "verified_sources": [
         "https://lokaleregelgeving.overheid.nl/CVDR609688",
-        "https://nl.wikipedia.org/wiki/Park_Groenestein"
+        "https://nl.wikipedia.org/wiki/Park_Groenestein",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696027&outFields=*&f=json"
       ],
       "access": "Free, open park at any time; the villa itself remains a private residence",
       "transport": "15-20 minute walk or short bike ride from Groningen city centre, in Helpman",
@@ -198,7 +206,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its size, the plane the rest of the estate's planting was arranged around. It stands south of the villa Groenestein in the park of the same name, a short walk along the Helperzoom."
+      "how_to_recognise": "You can recognise it by its size, the plane the rest of the estate's planting was arranged around. It stands south of the villa Groenestein in the park of the same name, a short walk along the Helperzoom.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696027",
+        "url": null
+      },
+      "girth_cm": 372,
+      "height_m": 15
     },
     {
       "id": "gro_007",
@@ -215,7 +229,8 @@
       },
       "story": "For decades in the twentieth century, Groningen parked cars on top of this oak's roots. Martinikerkhof, one of the city's three great squares, spent the years up to the 1970s as a parking lot before the city cleared the cars and let it become what it is today, a quiet, largely car-free green space in the shadow of the Martini Tower. The oak stood through all of it, in the middle of the square, and the municipality's own 2021 survey rates its condition as moderate to poor, noting plainly that the tree appears to be declining in recent years even though the ground around it is now far better than the parking lot it endured for decades. Whatever damage was done may simply have come too late to reverse.\n\nPlanted sometime around 1910 to 1920, the oak is old enough to have watched the square through both its worst years and its recovery, and its trunk base is described as intact even as its crown has thinned. It stands in the open, free, at the centre of Martinikerkhof, a short walk from the tower whose bells have marked Groningen's hours for centuries. If its condition improves or worsens, this page should be updated to match; tell us if you have seen it recently.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1680037)"
+        "data/registers/netherlands-lrmb.json (nr 1680037)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680037&outFields=*&f=json"
       ],
       "access": "Free, public square, open at any time",
       "transport": "Binnenstad, central Groningen; about a 10 minute walk from Groningen Centraal station",
@@ -235,7 +250,13 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by its thinning crown but intact trunk base, standing alone at the centre of the square. It stands in Martinikerkhof, in the shadow of the Martini Tower."
+      "how_to_recognise": "You can recognise it by its thinning crown but intact trunk base, standing alone at the centre of the square. It stands in Martinikerkhof, in the shadow of the Martini Tower.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680037",
+        "url": null
+      },
+      "girth_cm": 346,
+      "height_m": 18
     },
     {
       "id": "gro_011",
@@ -244,7 +265,7 @@
       "age_estimate": "about 150 years",
       "age_min": 136,
       "age_max": 150,
-      "girth_cm": null,
+      "girth_cm": 348,
       "location": {
         "address": "Oude Hortus, Grote Kruisstraat 2-1 / Grote Rozenstraat, Groningen",
         "latitude": 53.22315,
@@ -253,7 +274,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register entry 1689570 (Landelijk Register Monumentale Bomen / Bomenstichting)",
-        "https://nl.wikipedia.org/wiki/Oude_Hortus_(Groningen)"
+        "https://nl.wikipedia.org/wiki/Oude_Hortus_(Groningen)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689570&outFields=*&f=json"
       ],
       "access": "Free, in the publicly accessible Oude Hortus garden (open during garden hours in the Hortusbuurt)",
       "transport": "Groningen Centraal station, about 18 minute walk",
@@ -267,7 +289,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its cascading branches sweeping down and outward into a green curtain, visible through a glass wall built to keep the view. It stands in the Oude Hortus."
+      "how_to_recognise": "You can recognise it by its cascading branches sweeping down and outward into a green curtain, visible through a glass wall built to keep the view. It stands in the Oude Hortus.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689570",
+        "url": null
+      },
+      "height_m": 16
     },
     {
       "id": "gro_012",
@@ -285,7 +312,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register entry 1696519 (Landelijk Register Monumentale Bomen / Bomenstichting)",
-        "https://nl.wikipedia.org/wiki/Oude_Hortus_(Groningen)"
+        "https://nl.wikipedia.org/wiki/Oude_Hortus_(Groningen)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696519&outFields=*&f=json"
       ],
       "access": "Free, in the publicly accessible Oude Hortus garden (open during garden hours in the Hortusbuurt)",
       "transport": "Groningen Centraal station, about 18 minute walk",
@@ -299,7 +327,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its height, about 29 metres, and trunk just over 4 metres round, on a corner plot beside the garden's newer building. It stands in the Oude Hortus."
+      "how_to_recognise": "You can recognise it by its height, about 29 metres, and trunk just over 4 metres round, on a corner plot beside the garden's newer building. It stands in the Oude Hortus.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696519",
+        "url": null
+      },
+      "height_m": 29
     },
     {
       "id": "gro_013",
@@ -308,7 +341,7 @@
       "age_estimate": "about 130 years",
       "age_min": 126,
       "age_max": 136,
-      "girth_cm": null,
+      "girth_cm": 427,
       "location": {
         "address": "Oude Hortus, entrance opposite Nieuwe Kijk in t Jatstraat 59, Groningen",
         "latitude": 53.222661,
@@ -317,7 +350,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register entry 1696518 (Landelijk Register Monumentale Bomen / Bomenstichting)",
-        "https://www.kunstpuntgroningen.nl/stadsgroen/oude-hortus/"
+        "https://www.kunstpuntgroningen.nl/stadsgroen/oude-hortus/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696518&outFields=*&f=json"
       ],
       "access": "Free, in the publicly accessible Oude Hortus garden (open during garden hours in the Hortusbuurt)",
       "transport": "Groningen Centraal station, about 18 minute walk",
@@ -338,7 +372,12 @@
         "label": "November: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by its three stems and fan-shaped leaves, the thickest ginkgo trunk anywhere in Groningen. It stands close to the former Botanical Laboratory site in the Oude Hortus."
+      "how_to_recognise": "You can recognise it by its three stems and fan-shaped leaves, the thickest ginkgo trunk anywhere in Groningen. It stands close to the former Botanical Laboratory site in the Oude Hortus.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696518",
+        "url": null
+      },
+      "height_m": 17
     },
     {
       "id": "gro_014",
@@ -396,7 +435,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register entry 1680851 (Landelijk Register Monumentale Bomen / Bomenstichting)",
-        "https://en.wikipedia.org/wiki/Noorderplantsoen"
+        "https://en.wikipedia.org/wiki/Noorderplantsoen",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680851&outFields=*&f=json"
       ],
       "access": "Free, in the public Noorderplantsoen park",
       "transport": "Groningen Centraal station, about 15 minute walk",
@@ -410,7 +450,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them as a pair of planes standing close together, planted about when the park opened in 1880. They stand at the Werfstraat side of the Noorderplantsoen, about a hundred metres south of the mespilifolia oak."
+      "how_to_recognise": "You can recognise them as a pair of planes standing close together, planted about when the park opened in 1880. They stand at the Werfstraat side of the Noorderplantsoen, about a hundred metres south of the mespilifolia oak.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680851",
+        "url": null
+      }
     },
     {
       "id": "gro_016",
@@ -428,7 +472,8 @@
       },
       "verified_sources": [
         "netherlands-lrmb register entry 1680852 (Landelijk Register Monumentale Bomen / Bomenstichting)",
-        "https://en.wikipedia.org/wiki/Noorderplantsoen"
+        "https://en.wikipedia.org/wiki/Noorderplantsoen",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680852&outFields=*&f=json"
       ],
       "access": "Free, in the public Noorderplantsoen park",
       "transport": "Groningen Centraal station, about 16 minute walk",
@@ -442,7 +487,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the leaves, narrower and more textured than an ordinary sessile oak's, and by the drooping tips of its broad loose crown. It stands on the east edge of the Noorderplantsoen, in sight of Werfstraat."
+      "how_to_recognise": "You can recognise it by the leaves, narrower and more textured than an ordinary sessile oak's, and by the drooping tips of its broad loose crown. It stands on the east edge of the Noorderplantsoen, in sight of Werfstraat.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680852",
+        "url": null
+      }
     },
     {
       "id": "gro_017",
@@ -451,7 +500,7 @@
       "age_estimate": "about 180 years",
       "age_min": 175,
       "age_max": 185,
-      "girth_cm": null,
+      "girth_cm": 490,
       "location": {
         "address": "Oosterweg 13, in front of the Poortershoes, Groningen",
         "latitude": 53.212442,
@@ -460,7 +509,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1696114)",
-        "https://www.monumentaltrees.com/nl/nld/groningen/groningen/30546_oosterweg13/"
+        "https://www.monumentaltrees.com/nl/nld/groningen/groningen/30546_oosterweg13/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696114&outFields=*&f=json"
       ],
       "access": "Free, stands along the public Oosterweg street in front of the Poortershoes, now a busy neighbourhood community centre; open at any time",
       "transport": "About a 20-25 minute walk or short bus ride from Groningen Centraal station, in the Oosterpoort neighbourhood",
@@ -473,7 +523,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its slight lean against the building's facade, roots visibly pushing and cracking the wall beside it. It stands on Oosterweg in front of the Poortershoes."
+      "how_to_recognise": "You can recognise it by its slight lean against the building's facade, roots visibly pushing and cracking the wall beside it. It stands on Oosterweg in front of the Poortershoes.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696114",
+        "url": null
+      },
+      "height_m": 21
     },
     {
       "id": "gro_018",
@@ -482,7 +537,7 @@
       "age_estimate": "about 100 years",
       "age_min": 96,
       "age_max": 106,
-      "girth_cm": null,
+      "girth_cm": 202,
       "location": {
         "address": "Wilhelminakade, corner of Oranjesingel, Groningen",
         "latitude": 53.219796,
@@ -490,7 +545,8 @@
         "neighbourhood": "Oranjebuurt"
       },
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (nr 1683807)"
+        "data/registers/netherlands-lrmb.json (nr 1683807)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683807&outFields=*&f=json"
       ],
       "access": "Free, public street corner, open at any time",
       "transport": "About a 15 minute walk from Groningen Centraal station, west of Noorderplantsoen",
@@ -511,7 +567,12 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it by the dozens of small knobbly regrowth points ringing its base, scars from repeated pollarding over the decades. It stands on the corner of Wilhelminakade and Oranjesingel."
+      "how_to_recognise": "You can recognise it by the dozens of small knobbly regrowth points ringing its base, scars from repeated pollarding over the decades. It stands on the corner of Wilhelminakade and Oranjesingel.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683807",
+        "url": null
+      },
+      "height_m": 16
     },
     {
       "id": "gro_019",
@@ -520,7 +581,7 @@
       "age_estimate": "about 90 years",
       "age_min": 85,
       "age_max": 92,
-      "girth_cm": null,
+      "girth_cm": 273,
       "location": {
         "address": "Verlengde Oosterweg 2, small park at the corner of three streets, Groningen",
         "latitude": 53.208381,
@@ -529,7 +590,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1683805)",
-        "https://nl.wikipedia.org/wiki/Oranjeboom_(herdenkingsboom)"
+        "https://nl.wikipedia.org/wiki/Oranjeboom_(herdenkingsboom)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683805&outFields=*&f=json"
       ],
       "access": "Free, small public park/playground on a street corner, open at any time",
       "transport": "About a 20 minute walk or short bus ride from Groningen Centraal station, in the Herewegbuurt south of the centre",
@@ -542,7 +604,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the bench circling its base on a small corner playground. It stands at Verlengde Oosterweg 2, where three streets meet."
+      "how_to_recognise": "You can recognise it by the bench circling its base on a small corner playground. It stands at Verlengde Oosterweg 2, where three streets meet.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683805",
+        "url": null
+      },
+      "height_m": 17
     },
     {
       "id": "gro_020",
@@ -562,7 +629,8 @@
         "data/registers/netherlands-lrmb.json (register nr 1680046, Landelijk Register Monumentale Bomen)",
         "https://www.rtvnoord.nl/nieuws/759799/verkoop-pepergasthuis-van-de-baan-29-woningen-blijven-in-sociale-huur",
         "https://travelaar.nl/hofjes-groningen-stad/ (daily 9:00-18:00 visiting hours for the hofje)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680046&outFields=*&f=json"
       ],
       "access": "Free, open courtyard (hofje). The Pepergasthuis is a working almshouse with residents living around the courtyard; visitors are welcome daily roughly 9:00-18:00 but should respect residents' privacy. An earlier pass flagged that a 2019 plan to sell the complex to a private investor had left its future uncertain; RTV Noord (2020) confirms that sale was cancelled and the housing corporation Lefier kept the almshouse in social rent, so the access basis has not changed.",
       "transport": "Central Groningen, short walk from Grote Markt",
@@ -578,7 +646,11 @@
         "label": "January and February, when the leaves are off and the trained frames and old hollows show"
       },
       "how_to_recognise": "You can recognise them by their trunks trained flat and pollarded into shape, ten hollow with visible tie rods from 1980s repairs. They fill the courtyard of the Pepergasthuis on Peperstraat.",
-      "height_m": 5
+      "height_m": 5,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680046",
+        "url": null
+      }
     },
     {
       "id": "gro_021",
@@ -597,7 +669,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/hunnebedboom-midlaren/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682461",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682461&outFields=*&f=json"
       ],
       "access": "Free. A public archaeological site holding the two Hunenborg dolmens, open ground just south of Midlaren with no gate and no ticket.",
       "transport": "Midlaren, between Groningen and Assen, about 12 km southeast of Groningen. Buses on the Groningen to Assen road stop nearby, then a short walk to the site.",
@@ -618,7 +691,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "girth_cm": 384
+      "girth_cm": 384,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682461",
+        "url": null
+      }
     }
   ]
 }

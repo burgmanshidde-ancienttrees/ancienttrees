@@ -84,7 +84,8 @@
         "https://hortusleiden.nl/de-hortus/collectie/bijzondere-bomen/ginkgo-biloba",
         "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie",
         "https://www.bomenstichting.nl/",
-        "https://hortusleiden.nl/bezoek-info/"
+        "https://hortusleiden.nl/bezoek-info/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679548&outFields=*&f=json"
       ],
       "access": "Paid entry to the Hortus Botanicus Leiden: 14 euros at the desk, 13.50 online, children 4 to 18 pay 6, Museumkaart free. Open daily 9:00 to 18:00 from 21 March to 20 September, 10:00 to 17:00 from 21 September to 20 March; closed 3 October and 25 December to 1 January.",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -106,7 +107,13 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the glasshouse built up against it in 1938, which the tree effectively anchors. It stands in the north-west of the garden, the ginkgo whose one grafted branch drops plum-like seeds each autumn."
+      "how_to_recognise": "You can recognise it by the glasshouse built up against it in 1938, which the tree effectively anchors. It stands in the north-west of the garden, the ginkgo whose one grafted branch drops plum-like seeds each autumn.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679548",
+        "url": null
+      },
+      "girth_cm": 470,
+      "height_m": 22
     },
     {
       "id": "lei_003",
@@ -126,7 +133,8 @@
         "https://hortusleiden.nl/de-hortus/collectie/bijzondere-bomen/treurbeuk",
         "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie",
         "https://www.bomenstichting.nl/",
-        "https://hortusleiden.nl/bezoek-info/"
+        "https://hortusleiden.nl/bezoek-info/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690081&outFields=*&f=json"
       ],
       "access": "Paid entry to the Hortus Botanicus Leiden: 14 euros at the desk, 13.50 online, children 4 to 18 pay 6, Museumkaart free. Open daily 9:00 to 18:00 from 21 March to 20 September, 10:00 to 17:00 from 21 September to 20 March; closed 3 October and 25 December to 1 January.",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -149,7 +157,13 @@
         ],
         "label": "late October to November, when the hanging curtain of leaves turns gold and copper",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690081",
+        "url": null
+      },
+      "girth_cm": 345,
+      "height_m": 15
     },
     {
       "id": "lei_004",
@@ -169,7 +183,8 @@
         "https://bomenbieb.nl/bijzondere-bomen/oudste-goudenregen-leiden/",
         "https://hortusleiden.nl/zien-en-doen/ontdek-de-botanische-tuin/historie",
         "http://web.archive.org/web/20230127153640/https://hortusleiden.nl/de-hortus/collectie/bijzondere-bomen/gouden-regen",
-        "https://hortusleiden.nl/bezoek-info/"
+        "https://hortusleiden.nl/bezoek-info/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679549&outFields=*&f=json"
       ],
       "access": "Paid entry to the Hortus Botanicus Leiden: 14 euros at the desk, 13.50 online, children 4 to 18 pay 6, Museumkaart free. Open daily 9:00 to 18:00 from 21 March to 20 September, 10:00 to 17:00 from 21 September to 20 March; closed 3 October and 25 December to 1 January.",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -192,7 +207,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the fused trunks and by how small it is for its age, and in late spring by hanging clusters of yellow flowers. It stands right of the entrance, next to the tulip tree and the ginkgo."
+      "how_to_recognise": "You can recognise it by the fused trunks and by how small it is for its age, and in late spring by hanging clusters of yellow flowers. It stands right of the entrance, next to the tulip tree and the ginkgo.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679549",
+        "url": null
+      },
+      "girth_cm": 140,
+      "height_m": 4
     },
     {
       "id": "lei_005",
@@ -212,7 +233,8 @@
         "https://openbomenkaart.org/galleries/leiden-de-burcht/",
         "https://leiden.headliner.nl/item/het-is-bijna-afgelopen-voor-de-monumentale-beets-beuk-op-de-leidse-burchtheuvel-reuzenzwam-verandert-de-wortels-in-rottende-pap-leidschdagblad-29610",
         "https://www.erfgoedleiden.nl/component/lei_verhalen/verhaal/id/329",
-        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690110, 'Beetsbeuk buitenring Burcht Leiden')"
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690110, 'Beetsbeuk buitenring Burcht Leiden')",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690110&outFields=*&f=json"
       ],
       "access": "Free, open public park at any time",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -225,7 +247,13 @@
       "curation_status": "flagged",
       "notes": "Pin upgraded to confirmed 2026-09-07 using LRMB register nr 1690110's own tree-level coordinate for this exact tree, matched by name (Beetsbeuk = Beets Beech) and by standing inside the Burcht's outer ring per the register's own place note. Previous pin was an estimate roughly 30m off.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, 4.72 metres round and the thickest on the mound, and by the bench put beside it in 1989. It stands on the slope of the Burcht mound, on the outer ring."
+      "how_to_recognise": "You can recognise it by the trunk, 4.72 metres round and the thickest on the mound, and by the bench put beside it in 1989. It stands on the slope of the Burcht mound, on the outer ring.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690110",
+        "url": null
+      },
+      "girth_cm": 480,
+      "height_m": 18
     },
     {
       "id": "lei_006",
@@ -285,7 +313,8 @@
       "verified_sources": [
         "https://www.bomenstichting.nl/",
         "https://hortusleiden.gardenexplorer.org/taxon-6383.aspx",
-        "https://hortusleiden.nl/bezoek-info/"
+        "https://hortusleiden.nl/bezoek-info/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679017&outFields=*&f=json"
       ],
       "access": "Paid entry to the Hortus Botanicus Leiden: 14 euros at the desk, 13.50 online, children 4 to 18 pay 6, Museumkaart free. Open daily 9:00 to 18:00 from 21 March to 20 September, 10:00 to 17:00 from 21 September to 20 March; closed 3 October and 25 December to 1 January.",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -300,7 +329,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the visible holes in its trunk, held together with iron pins, left after a self-seeded maple and old concrete fill were removed. It stands in the Hortus collection garden."
+      "how_to_recognise": "You can recognise it by the visible holes in its trunk, held together with iron pins, left after a self-seeded maple and old concrete fill were removed. It stands in the Hortus collection garden.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679017",
+        "url": null
+      },
+      "girth_cm": 380,
+      "height_m": 5
     },
     {
       "id": "lei_009",
@@ -317,7 +352,8 @@
       },
       "story": "This plane tree was already standing before the park around it existed. The Plantsoen was laid out between 1835 and 1842 as a job-creation scheme, an English landscape park built over Leiden's demolished bolwerken, the earthworks that had defended the city until they stopped being useful. Salomon van der Paauw designed it, which is why there are no straight paths, why the sightlines keep opening onto the water of the Singel, and why there has been an aviary here since 1867. The register dates this plane to the 1820s and calls it the oldest tree in the park, older than the layout it stands in. Its formal planting band is wider, 1800 to 1850, so its age is somewhere between 175 and 225 years. Planes became the workhorse of European city parks because they put up with compacted soil, air that would finish off a beech, and hard pruning, which is why so many survive from exactly this period of municipal park building. Most of them went into new ground as young stock. This one, by the register's dating, was already a tree when the diggers arrived. Stand at Plantsoen number 1 and look up the trunk: the flaking bark gives the species away, and above it sits a crown that has had two centuries to fill out.",
       "verified_sources": [
-        "https://www.bomenstichting.nl/"
+        "https://www.bomenstichting.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679556&outFields=*&f=json"
       ],
       "access": "Free, public city park, open at any time",
       "transport": "20 minute walk from Leiden Centraal station",
@@ -329,7 +365,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its flaking, patchy bark and its size, the oldest tree in the park, older than the Plantsoen itself. It stands at Plantsoen number 1."
+      "how_to_recognise": "You can recognise it by its flaking, patchy bark and its size, the oldest tree in the park, older than the Plantsoen itself. It stands at Plantsoen number 1.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679556",
+        "url": null
+      },
+      "girth_cm": 621,
+      "height_m": 25
     },
     {
       "id": "lei_010",
@@ -346,7 +388,8 @@
       },
       "story": "At 5.8 metres round, this is the thickest horse chestnut in the Netherlands by the national monumental tree register's own measurement. It stands at the edge of the Hortus Botanicus with its roots almost in the water of the Witte Singel, and the register's note dates it to 1841, inside a recorded planting band of 1800 to 1850. There is a hollow in the trunk on the water side, fitted with iron pins to stop the remaining wood pulling itself apart, which is the standard treatment for a veteran that has outgrown its own structural margin. It has a problem every horse chestnut in northern Europe now shares. The horse chestnut leaf miner, a moth whose larvae eat the tissue between the two surfaces of a leaf, reached the Netherlands in the late 1990s and browns the foliage from midsummer onward. It disfigures without usually killing, so a chestnut in August looks considerably worse than it is. Come in May instead, when the flower candles are up and none of that has started. Horse chestnuts went into Dutch cities by the thousand in exactly this period, mostly along avenues and canal banks, and almost none of them reached this girth. Conkers drop here in September, onto a bank where the water does half the collecting for you.",
       "verified_sources": [
-        "https://www.bomenstichting.nl/"
+        "https://www.bomenstichting.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679546&outFields=*&f=json"
       ],
       "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -366,7 +409,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its trunk, 5.8 metres round, the thickest horse chestnut in the Netherlands, with a hollow on the water side pinned together with iron. It stands at the edge of the Hortus, roots almost in the Witte Singel."
+      "how_to_recognise": "You can recognise it by its trunk, 5.8 metres round, the thickest horse chestnut in the Netherlands, with a hollow on the water side pinned together with iron. It stands at the edge of the Hortus, roots almost in the Witte Singel.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679546",
+        "url": null
+      },
+      "girth_cm": 580,
+      "height_m": 22
     },
     {
       "id": "lei_011",
@@ -383,7 +432,8 @@
       },
       "story": "These are the first zelkovas that ever left Japan. Philipp Franz von Siebold, the physician who spent the 1820s on the Dutch trading post at Deshima and sent home more Japanese plants than any European before him, brought zelkovas out with him in 1830. Two of them ended up here. One grew as a single trunk and stands at the centre of the Japanese garden; this one came up with five stems, so the register measures its girth on the thickest of them, about two metres, which undersells the mass of the thing considerably. The dating needs stating plainly, because the register disagrees with itself. Its planting band puts the tree between 1800 and 1850, while its own note says the two Leiden zelkovas went into the ground in 1858 and 1860. Take the age as somewhere between 165 and 225 years, and if you know which is right, tell us. Zelkova serrata is a relative of the elm that turned out to be largely resistant to Dutch elm disease, which is a good part of why it appeared on European planting lists after the 1970s, when the elms were dying in every city on the continent. This tree predates that fashion by more than a century, and it got here because one man wanted Japan in a Dutch garden.",
       "verified_sources": [
-        "https://www.bomenstichting.nl/"
+        "https://www.bomenstichting.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690080&outFields=*&f=json"
       ],
       "access": "Paid entry to Hortus Botanicus Leiden (around 14 euros for adults)",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -396,7 +446,13 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its five stems rising from one base, unlike its single-trunked companion at the centre of the Japanese garden. Its thickest stem measures about two metres round."
+      "how_to_recognise": "You can recognise it by its five stems rising from one base, unlike its single-trunked companion at the centre of the Japanese garden. Its thickest stem measures about two metres round.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690080",
+        "url": null
+      },
+      "girth_cm": 250,
+      "height_m": 15
     },
     {
       "id": "lei_016",
@@ -461,7 +517,8 @@
       },
       "story": "The London plane is a hybrid nobody set out to make. Somewhere in the 17th century an oriental plane from the eastern Mediterranean crossed with an American one, probably in a nursery, and the accident grew faster than either parent, shrugged off coal smoke and put up with having its roots under paving. Europe then planted it in every city it had. This one went into the Plantsoen in the 1850s, on the stretch of the park at number 11, more than a decade after the park itself was finished in 1842. The Plantsoen was Leiden's first proper public park, cut into the line of the old defensive bolwerken between 1835 and 1842 as work for the unemployed, to a design by Salomon van der Paauw, and it is now part of the Singelpark, the green ring the city has been stitching back together around its historic centre. The register notes that no other part of that ring carries as many different old trees. Bark is the thing to look at here. Planes shed theirs in irregular plates, one reason they cope with dirty city air, and it leaves an old trunk looking like military camouflage in cream, olive and grey. This one has had roughly 170 years of shedding, and it stands on the water, which is the view the whole park was drawn around.",
       "verified_sources": [
-        "https://www.bomenstichting.nl/"
+        "https://www.bomenstichting.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690114&outFields=*&f=json"
       ],
       "access": "Free, public city park, open at any time",
       "transport": "20 minute walk from Leiden Centraal station",
@@ -473,7 +530,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by bark shed in irregular plates of cream, olive and grey, like camouflage. It stands on the water at Plantsoen number 11."
+      "how_to_recognise": "You can recognise it by bark shed in irregular plates of cream, olive and grey, like camouflage. It stands on the water at Plantsoen number 11.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690114",
+        "url": null
+      },
+      "girth_cm": 517,
+      "height_m": 25
     },
     {
       "id": "lei_019",
@@ -482,7 +545,7 @@
       "age_estimate": "roughly 140 years, planted in the 1880s",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 508,
       "location": {
         "address": "Van der Werfpark, near the Garenmarkt entrance, Leiden",
         "latitude": 52.155707,
@@ -491,7 +554,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690135, used with written permission)",
-        "https://openbomenkaart.org/galleries/leiden-van-der-werfpark-en-garenmarkt"
+        "https://openbomenkaart.org/galleries/leiden-van-der-werfpark-en-garenmarkt",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690135&outFields=*&f=json"
       ],
       "access": "Free, public city park, open at any time",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -504,7 +568,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by where it stands, the first of the park's two big planes as you come in at the Garenmarkt. Its twin is sixty-five metres away at the southeast corner, nearest the Doezastraat."
+      "how_to_recognise": "You can recognise it by where it stands, the first of the park's two big planes as you come in at the Garenmarkt. Its twin is sixty-five metres away at the southeast corner, nearest the Doezastraat.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690135",
+        "url": null
+      },
+      "height_m": 19
     },
     {
       "id": "lei_020",
@@ -513,7 +582,7 @@
       "age_estimate": "roughly 140 years, planted in the 1880s",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 525,
       "location": {
         "address": "Van der Werfpark, southeast side, Leiden",
         "latitude": 52.155321,
@@ -522,7 +591,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690136, used with written permission)",
-        "https://openbomenkaart.org/galleries/leiden-van-der-werfpark-en-garenmarkt"
+        "https://openbomenkaart.org/galleries/leiden-van-der-werfpark-en-garenmarkt",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690136&outFields=*&f=json"
       ],
       "access": "Free, public city park, open at any time",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -535,7 +605,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by where it stands, the second of the park's two big planes, at the southeast corner nearest the Doezastraat. Sixty-five metres of grass separate it from the one at the Garenmarkt entrance."
+      "how_to_recognise": "You can recognise it by where it stands, the second of the park's two big planes, at the southeast corner nearest the Doezastraat. Sixty-five metres of grass separate it from the one at the Garenmarkt entrance.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690136",
+        "url": null
+      },
+      "height_m": 24
     },
     {
       "id": "lei_022",
@@ -544,7 +619,7 @@
       "age_estimate": "roughly 140 years, planted in the 1880s",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 515,
       "location": {
         "address": "Plantsoen, near number 63, Leiden",
         "latitude": 52.153674,
@@ -553,7 +628,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690117, used with written permission)",
-        "https://degroenestad.nl/geen-categorie/de-kaukasische-vleugelnoot-heeft-de-x-factor-in-leiden/"
+        "https://degroenestad.nl/geen-categorie/de-kaukasische-vleugelnoot-heeft-de-x-factor-in-leiden/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690117&outFields=*&f=json"
       ],
       "access": "Free, public city park, open at any time",
       "transport": "20 minute walk from Leiden Centraal station",
@@ -574,7 +650,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by long, tropical-looking pinnate leaves and chains of winged nutlets hanging like green rope in late summer. Nothing else in the Plantsoen looks like it. It stands near number 63."
+      "how_to_recognise": "You can recognise it by long, tropical-looking pinnate leaves and chains of winged nutlets hanging like green rope in late summer. Nothing else in the Plantsoen looks like it. It stands near number 63.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690117",
+        "url": null
+      }
     },
     {
       "id": "lei_023",
@@ -592,7 +672,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1690118, used with written permission)",
-        "https://esveld.nl/a/product/parrotia-persica-het-plantsoen/"
+        "https://esveld.nl/a/product/parrotia-persica-het-plantsoen/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690118&outFields=*&f=json"
       ],
       "access": "Free, public city park, open at any time",
       "transport": "20 minute walk from Leiden Centraal station",
@@ -613,7 +694,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them by their broad, low, spreading shape, a weeping form of the species, and small dark red flowers on bare branches in February and March. Three stand together near number 45."
+      "how_to_recognise": "You can recognise them by their broad, low, spreading shape, a weeping form of the species, and small dark red flowers on bare branches in February and March. Three stand together near number 45.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690118",
+        "url": null
+      }
     },
     {
       "id": "lei_024",
@@ -622,7 +707,7 @@
       "age_estimate": "roughly 120 years, planted in the 1900s",
       "age_min": 116,
       "age_max": 126,
-      "girth_cm": null,
+      "girth_cm": 422,
       "location": {
         "address": "De Burcht van Leiden, inside the mound's shell keep",
         "latitude": 52.158884,
@@ -631,7 +716,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1679553, used with written permission)",
-        "https://www.absolutefacts.nl/kastelen/data/leidenburcht.htm"
+        "https://www.absolutefacts.nl/kastelen/data/leidenburcht.htm",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679553&outFields=*&f=json"
       ],
       "access": "Free, open public park at any time",
       "transport": "15 minute walk from Leiden Centraal station",
@@ -644,7 +730,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the elm among the mound's few big trees, standing inside the Burcht's ring wall alongside two beeches, reached by the steps up the mound."
+      "how_to_recognise": "You can recognise it as the elm among the mound's few big trees, standing inside the Burcht's ring wall alongside two beeches, reached by the steps up the mound.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679553",
+        "url": null
+      },
+      "height_m": 25
     }
   ]
 }

@@ -43,7 +43,8 @@
       },
       "story": "The register says this is the thickest lime on the bastions, which is a small crown and a well-defined one, because the bastions are a closed set.\n\nAlkmaar's walls and bastions were built in 1565, at the height of the fortification boom that preceded the revolt against Spain, and this is where the city's luck comes in: most Dutch towns pulled their earthworks down and sold the land, and Alkmaar largely did not. In 1870 Louis Paul Zocher, of the family that laid out half the parks in the country, converted the surviving works into a city park in the landscape style. Curved walks, water, planted slopes, all of it on a defensive earthwork.\n\nThe lime went in at the end of the nineteenth century, so it belongs to Zocher's park rather than to the fortress.\n\nBastion soil is a genuine advantage. It is deep, artificial and undisturbed, which is more than any street can offer, and that is part of why the biggest trees in this city are all standing on a rampart.\n\nIt is near the mill called the molen van Piet. In July the flowers are heavy and the whole slope smells of them.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1684913&outFields=*&f=json"
       ],
       "access": "Free. Public park on the old bastions, open at any time.",
       "transport": "About 1 km north of Alkmaar station, on the bolwerk near the Vrouwenstraat.",
@@ -62,7 +63,12 @@
         "label": "July, when the flowers scent the whole slope"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684913",
+        "url": null
+      },
+      "height_m": 20
     },
     {
       "id": "alk_002",
@@ -115,7 +121,8 @@
       },
       "story": "The city decided to plant this wood in 1607, which makes it older than most of what Europeans think of as parks.\n\nWhat followed was not peaceful. Part of the Hout was cut down again during the siege of Alkmaar in 1672, the disaster year, when the Dutch Republic was attacked from three sides at once and a besieged town needed wood far more than it needed shade. From the middle of the eighteenth century there are winding rococo lanes, which are still traceable. Most of the trees standing here now are twentieth century, from when Leonard Springer made a design for the whole wood and the deer park was built.\n\nThis plane, banded 1850 to 1860, is older than that and is now the oldest tree in the Alkmaarderhout, a position it inherited last summer. The beech that held it, nearly seven metres round, came down in the Poly storm of 2023.\n\nIt stands between the flower clock and the music garden on the Wilhelminalaan.\n\nBark flaking in cream and olive, big lobed leaves, and hard spiky seed balls hanging on their stalks through the winter.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686400&outFields=*&f=json"
       ],
       "access": "Free. Public wood and park, open daily.",
       "transport": "About 1.5 km southwest of Alkmaar station, in the Alkmaarderhout.",
@@ -127,7 +134,12 @@
       },
       "how_to_recognise": "Camouflage-patterned flaking bark, between the flower clock and the music garden.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686400",
+        "url": null
+      },
+      "girth_cm": 572
     },
     {
       "id": "alk_004",
@@ -173,7 +185,8 @@
       },
       "story": "Bastion, water, plane tree. It is a combination the Dutch nineteenth century arrived at repeatedly and it works every time.\n\nThe Clarissenbolwerk is one of the 1565 works, named for the Poor Clares whose convent stood nearby, and the moat that made it a defence is what now makes it a view. Zocher's 1870 conversion was built on exactly that logic: the water was already there and had already been shaped, so all a designer had to do was plant the banks and cut the paths.\n\nThe plane is from about 1900, a generation after the layout, and it was chosen for what a plane does by the water. The trunk is pale and mottled, so it reads clearly against dark water; the crown is broad enough to overhang; and the species does not mind a high water table, which most large trees do.\n\nIt is by the water near Zevenhuizen 23.\n\nThe reflection is the thing here. Go on a still morning early enough that the moat has not been disturbed, and look at the flaking bark twice, once up and once down.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691002&outFields=*&f=json"
       ],
       "access": "Free. Public park on the old bastions, open at any time.",
       "transport": "About 1 km north of Alkmaar station, on the Clarissenbolwerk.",
@@ -185,7 +198,13 @@
       },
       "how_to_recognise": "A large plane leaning over the water on the bastion, with pale mottled bark.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691002",
+        "url": null
+      },
+      "girth_cm": 418,
+      "height_m": 20
     },
     {
       "id": "alk_006",
@@ -202,7 +221,8 @@
       },
       "story": "The park is named after a victory, the monument was raised in 1876, and the tree behind it weeps. Somebody enjoyed that.\n\nThe Victoriepark dates from 1822, when the North Holland Canal was dug and the city moat between the Friesepoort and the Waterpoort was filled in. The design is probably by J. D. Zocher, of the same family as the man who reworked the bastions. The Victory monument went up in 1876, and in 1903 Leonard Springer laid out the park as it is now.\n\nThe willow is from roughly that Springer period, banded 1900 to 1910.\n\nWeeping willow is one of the oldest ornamentals in cultivation and almost every one in Europe is a clone, propagated from cuttings for centuries, because the trees planted here are nearly all female and set no viable seed. A willow twig will root in a bucket of water, which is how a single tree became a continent's worth.\n\nA hundred and twenty is old for the species. Go in March, when the branches turn yellow-green before the leaves come and the whole tree lights up for a fortnight.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1684910&outFields=*&f=json"
       ],
       "access": "Free. Public park, open daily.",
       "transport": "About 1 km northeast of Alkmaar station, in the Victoriepark on the Wagenweg.",
@@ -221,7 +241,13 @@
         "label": "March, when the bare branches turn yellow-green before leafing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684910",
+        "url": null
+      },
+      "girth_cm": 398,
+      "height_m": 18
     },
     {
       "id": "alk_007",
@@ -238,7 +264,8 @@
       },
       "story": "De Rijp was a whaling and herring town on an island in a lake, and it got rich enough that the merchants' warehouses still stand.\n\nThis plane grows in the garden of the museum of Jan Boon junior, the last of a family of shipowners and traders. The museum occupies the Walhuis, a former warehouse of 1725, which stands behind what was Jan Boon's house. A merchant family, a warehouse, a house, a garden, and then nobody left to inherit any of it, which is how a private house becomes a museum.\n\nThe tree is later than the buildings, banded 1880 to 1890, so it belongs to the last generation of the family rather than to the trading years.\n\nA plane in a small town garden grows differently from one on a boulevard. There is no competition and no pruning regime, so it spreads rather than reaching, and after a century and a half it tends to be far too large for the plot, which is exactly the effect worth going for.\n\nDe Rijp itself is worth the trip regardless. Wooden houses, a seventeenth century town hall, and a street pattern that has not moved.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697111&outFields=*&f=json"
       ],
       "access": "Free from the street; the garden belongs to the museum, so opening hours apply if you want to stand under it.",
       "transport": "About 12 km southeast of Alkmaar, in the old centre of De Rijp.",
@@ -250,7 +277,13 @@
       },
       "how_to_recognise": "A large plane crowded into a small town garden behind the old warehouse.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697111",
+        "url": null
+      },
+      "girth_cm": 380,
+      "height_m": 22
     },
     {
       "id": "alk_008",
@@ -267,7 +300,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1692732",
-        "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Hollandse iep, Ulmus x hollandica, Kerkplein 3, standplaats plein, 1910-1920"
+        "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Hollandse iep, Ulmus x hollandica, Kerkplein 3, standplaats plein, 1910-1920",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692732&outFields=*&f=json"
       ],
       "access": "Free. Public square (Kerkplein) beside the Grote Kerk and theater De Vest, in the historic city centre.",
       "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
@@ -280,6 +314,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692732",
+        "url": null
       }
     },
     {
@@ -298,7 +336,8 @@
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1688588",
         "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Venijnboom, Taxus baccata, Langestraat 115-117, 'staat in de winkel', age given as 150, criteria 'Omgevings- en locatiewaarde, zeldzaam' (rare) -- this predates the 2018 move and independently confirms the tree's original address and long-standing recognition",
-        "Pius Floris Boomverzorging, 'Video-impressie verplanten monumentale taxus in Alkmaar' (piusfloris.nl) -- the professional tree-moving company's own record that it relocated a monumental yew in Alkmaar, corroborating that the move described in the register genuinely took place (page content beyond the title could not be fetched this pass)"
+        "Pius Floris Boomverzorging, 'Video-impressie verplanten monumentale taxus in Alkmaar' (piusfloris.nl) -- the professional tree-moving company's own record that it relocated a monumental yew in Alkmaar, corroborating that the move described in the register genuinely took place (page content beyond the title could not be fetched this pass)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688588&outFields=*&f=json"
       ],
       "access": "Free. Stands on a public roundabout, visible from the road at all times.",
       "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
@@ -320,7 +359,13 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688588",
+        "url": null
+      },
+      "girth_cm": 227,
+      "height_m": 10
     },
     {
       "id": "alk_011",
@@ -337,7 +382,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1691014",
-        "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Plataan, Platanus x hispanica, 'Vest achter kunstuitleen 3', standplaats park, 1920-1930"
+        "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Plataan, Platanus x hispanica, 'Vest achter kunstuitleen 3', standplaats park, 1920-1930",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691014&outFields=*&f=json"
       ],
       "access": "Free. Public park on the old city rampart (Bolwerk).",
       "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
@@ -350,7 +396,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691014",
+        "url": null
+      },
+      "girth_cm": 347
     },
     {
       "id": "alk_012",
@@ -367,7 +418,8 @@
       },
       "verified_sources": [
         "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1691012",
-        "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Pluimiep, Ulmus glabra Exoniensis, 'Bolwerk thv Molenbuurt 25', standplaats park, 1890-1900"
+        "Gemeente Alkmaar, 'Lijst monumentale en waardevolle bomen in Alkmaar', March 2017 (openpdc.alkmaar.nl PDF), entry: Pluimiep, Ulmus glabra Exoniensis, 'Bolwerk thv Molenbuurt 25', standplaats park, 1890-1900",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691012&outFields=*&f=json"
       ],
       "access": "Free. Public park (plantsoen) on the old city rampart (Bolwerk).",
       "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
@@ -380,7 +432,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691012",
+        "url": null
+      },
+      "girth_cm": 347
     },
     {
       "id": "alk_013",
@@ -396,7 +453,8 @@
         "neighbourhood": "Alkmaarderhout / Westerhoutpark"
       },
       "verified_sources": [
-        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1688896"
+        "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1688896",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1688896&outFields=*&f=json"
       ],
       "access": "Free. Public city park (Alkmaarderhout), one of the oldest in the Netherlands, laid out from 1607.",
       "transport": "Central Alkmaar, roughly 15-20 minute walk or short bus ride from Alkmaar Centraal station",
@@ -416,7 +474,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688896",
+        "url": null
+      },
+      "girth_cm": 367,
+      "height_m": 30
     }
   ]
 }

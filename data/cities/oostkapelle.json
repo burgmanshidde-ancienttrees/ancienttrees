@@ -45,7 +45,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/linde-van-kasteel-westhove/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1679500",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679500&outFields=*&f=json"
       ],
       "access": "Free to look at. The lime stands on the forecourt of Kasteel Westhove, which is now a youth hostel, and is in full view from the drive.",
       "transport": "Between Oostkapelle and Domburg on Walcheren, Zeeland. Best reached by bike or car, roughly 20 minutes from Middelburg.",
@@ -66,7 +67,11 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       },
-      "height_m": 8
+      "height_m": 8,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679500",
+        "url": null
+      }
     }
   ]
 }

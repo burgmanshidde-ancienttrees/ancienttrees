@@ -244,7 +244,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it as the hornbeam standing close enough to the park's giant sequoia to seem planted in its shadow. It stands in Krayenhoffpark, Nijmegen.",
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688015",
+        "url": null
+      }
     },
     {
       "id": "nij_008",
@@ -284,7 +288,11 @@
       },
       "how_to_recognise": "You can recognise it by the leaves and spiny fruit husks of a sweet chestnut, standing free in the open. It grows on the west side of Begraafplaats Daalseweg.",
       "girth_cm": 388,
-      "height_m": 16
+      "height_m": 16,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687751",
+        "url": null
+      }
     },
     {
       "id": "nij_009",
@@ -455,7 +463,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 210,
-      "height_m": 16
+      "height_m": 16,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681246",
+        "url": null
+      }
     },
     {
       "id": "nij_013",
@@ -488,7 +500,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 233,
-      "height_m": 13
+      "height_m": 13,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680530",
+        "url": null
+      }
     },
     {
       "id": "nij_014",
@@ -506,7 +522,8 @@
       "story": "A parish square in Lent doubles as a chestnut's front garden. The Onze Lieve Vrouw Geboorte church went up between 1877 and 1879, designed by the architect G. te Riele Wzn, and the register dates the chestnut on its forecourt to the following decade, planted around the time the church's own rectory rose beside it. The national heritage register's listing for the site still describes it today: an old chestnut tree stands on the square in front of the church, the rectory on its north side.\n\nLent itself has changed more than the tree has. It was a village on the Waal's north bank until Nijmegen annexed it in 1998, and since 2016 an artificial island and a new bridge have turned its riverside fields into the city's newest district. The square with the chestnut sits a few streets back from all of that, beside the road into what is still, for now, a village centre with its own parish rather than a suburb of one.\n\nThe tree is roughly 130 years old and stands in the open, free to see at any hour, a short walk from Lent's own railway station.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1689531)",
-        "https://www.monumenten.nl/monument/522954"
+        "https://www.monumenten.nl/monument/522954",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689531&outFields=*&f=json"
       ],
       "access": "Free, on the public square in front of the parish church, open at all times",
       "transport": "About an 8 minute walk from Nijmegen Lent railway station",
@@ -525,6 +542,10 @@
         ],
         "label": "May, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689531",
+        "url": null
       }
     },
     {
@@ -542,7 +563,8 @@
       },
       "story": "A weeping beech droops on purpose. Every ordinary beech reaches up for its share of light; this one carries a mutation that pulls its branches down instead, so its crown pours toward the ground rather than spreading for the sky. It stands to the right of the entrance gate at Begraafplaats Daalseweg, the first tree a visitor meets.\n\nThe cemetery itself is a protected national monument, not for any single tree but for its whole design: two paths cross the grounds, both lined with beeches, meeting at a crucifix at the centre. The weeping beech at the gate breaks that planned rhythm on purpose, an ornamental flourish set apart from the disciplined rows behind it.\n\nThe Dutch national register of monumental trees dates the planting to between 1890 and 1900, putting it at roughly 125 to 135 years old, and lists it as the cemetery's own protected specimen. It is the only source found for this particular tree: local histories of the cemetery describe the beech-lined paths and the crucifix at length but none names this one specifically, so the age comes from the register alone.\n\nThe grounds belong to a working Catholic cemetery and stay open during daylight hours, free to enter. Go quietly.",
       "verified_sources": [
-        "data/registers/netherlands-lrmb.json (register nr 1687753)"
+        "data/registers/netherlands-lrmb.json (register nr 1687753)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687753&outFields=*&f=json"
       ],
       "access": "Free, public cemetery grounds, open during daylight hours. Please be respectful, it is a working cemetery.",
       "transport": "About 1.5 km northwest of Nijmegen railway station, roughly 20 minutes on foot or a short bus ride.",
@@ -562,6 +584,10 @@
         ],
         "label": "late October to November, when the hanging curtain of leaves turns gold and copper",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687753",
+        "url": null
       }
     },
     {
@@ -580,7 +606,8 @@
       "story": "London planes shed their bark instead of quietly laying down new rings underneath it, sloughing off patches through the year to show paler wood beneath, which is why an old plane looks mottled and half-flayed rather than simply weathered. This one stands on the small square beside the Petruskerk in Hees, a Nijmegen district that was its own village before the city grew out to meet it.\n\nThe Dutch national monumental tree register dates the planting to between 1870 and 1880, making the tree roughly 145 to 155 years old, and lists it as protected. That register is the only source found naming this specific tree: histories of the square and the church describe the setting in detail but not this plane by name, so the age rests on the register's word alone.\n\nThe square sits on church grounds and reads as ordinary open public space, a small plaza in front of a working parish rather than an enclosed courtyard, and the register itself records it as visitable. Nothing else about this particular tree has surfaced yet. If you know more, tell us.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (register nr 1680526)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680526&outFields=*&f=json"
       ],
       "access": "Free, public church square, open at any time.",
       "transport": "About 3.5 km west of Nijmegen railway station, reachable by bus toward Hees, roughly 10 minutes' walk from the nearest stop.",
@@ -594,7 +621,11 @@
       "curation_status": "flagged",
       "how_to_recognise": "You can recognise it by its mottled, half-flayed bark, shed in patches rather than laid down in rings. It stands on the small square beside the Petruskerk in Hees.",
       "girth_cm": 427,
-      "height_m": 32
+      "height_m": 32,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680526",
+        "url": null
+      }
     },
     {
       "id": "nij_017",
@@ -612,7 +643,8 @@
       "story": "This copper beech is older than the church beside it. The current Sint Antonius Abtkerk on Dennenstraat, a red-brick building by the architect Pieter Cuypers, went up in 1879 and 1880. The national register places the beech at the boundary of the church and its rectory somewhere between 1750 and 1800, roughly a century older than the bricks next to it.\n\nThat is not as strange as it sounds. The parish itself predates Cuypers by centuries: an older church stood on this ground before his, a barn chapel was rebuilt here in 1826, and parish history traces the site back to a sixteenth century predecessor. A beech planted in the late 1700s would have grown up beside whatever building stood here then, and simply outlasted it, the way old trees on church land tend to.\n\nCopper beeches carry a mutation that floods their leaves with red pigment, so from a distance this one reads almost black against the brick. The Dutch national monumental tree register is the only source found for this specific tree, roughly 225 to 275 years old by its planting estimate; local parish and heritage histories confirm the site's long religious use but do not mention the beech itself, so the age stands on the register alone.\n\nThe grounds are recorded as visitable and visible from outside, ordinary church land in the Hees district rather than a closed private garden.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (register nr 1680519)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680519&outFields=*&f=json"
       ],
       "access": "Free, church grounds visible and open to visitors.",
       "transport": "About 4 km west of Nijmegen railway station, reachable by bus toward Hees.",
@@ -633,6 +665,10 @@
         ],
         "label": "late October to November, when the copper leaves deepen before they fall",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680519",
+        "url": null
       }
     },
     {
@@ -778,7 +814,8 @@
       },
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1695607)",
-        "https://www.bomenstichting.nl/55heiligebomen/blog5-2.html"
+        "https://www.bomenstichting.nl/55heiligebomen/blog5-2.html",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1695607&outFields=*&f=json"
       ],
       "access": "Free, in Marienbosch woods (publicly accessible woodland/park); the tree stands off the main paths on a low hill and is not immediately visible from any one obvious spot",
       "transport": "Marienbosch is on the Heyendaalseweg side of Nijmegen, roughly a 30-35 minute walk from Nijmegen Centraal or a short bus/bike ride toward Radboud University",
@@ -799,7 +836,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the low rise it stands on, the Mariaheuvel, off the main paths and not visible from them. It stands in the Marienbosch woods near Sophiaweg, so this one you go looking for rather than come across."
+      "how_to_recognise": "You can recognise it by the low rise it stands on, the Mariaheuvel, off the main paths and not visible from them. It stands in the Marienbosch woods near Sophiaweg, so this one you go looking for rather than come across.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695607",
+        "url": null
+      },
+      "girth_cm": 203,
+      "height_m": 22
     }
   ],
   "oldest_tree_id": "nij_009",

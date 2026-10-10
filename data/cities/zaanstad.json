@@ -48,7 +48,8 @@
         "label": "May, when the new leaves come out translucent copper-red"
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1679643&outFields=*&f=json"
       ],
       "access": "Free, public cemetery grounds, open in daylight.",
       "transport": "",
@@ -60,7 +61,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its dark purple-red foliage standing alone in the middle of the burial ground, five sibling copper beeches further east along the avenues. It stands in the Zuiddijk cemetery in Zaandam."
+      "how_to_recognise": "You can recognise it by its dark purple-red foliage standing alone in the middle of the burial ground, five sibling copper beeches further east along the avenues. It stands in the Zuiddijk cemetery in Zaandam.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679643",
+        "url": null
+      },
+      "girth_cm": 310
     },
     {
       "id": "zaa_003",
@@ -77,7 +83,8 @@
       },
       "story": "A plane tree handles dirty air by taking its skin off. The bark comes away in irregular plates, carrying the year's soot and grime with it, which leaves the trunk mottled in olive, cream and grey and is the reason this species ended up lining the streets of every industrial city in Europe.\n\nZaandam was a good place to need that trick. The Zaan district ran first on wind and then on coal: hundreds of mills sawing timber, crushing seed for oil and grinding pigment for paint, and after them the cocoa and biscuit works whose smell still carries across the town on the right wind. The register puts this plane's planting between 1900 and 1910, which sets it down in the middle of all that.\n\nEverything around it has since changed. The register's note on the tree is really a note about its neighbours: the Zaan bank is under heavy development, and this early twentieth-century plane has outlasted those developments for well over a century now. The mills, the wharves and most of what it was planted beside have gone.\n\nPlanes are hybrids, oriental plane crossed with American sycamore, and in city terms they are close to indestructible. Cut back to stumps they come again, which is precisely why councils keep planting them. This one stands on the public square at the Westzijde; the pin marks the square rather than the trunk itself.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690795&outFields=*&f=json"
       ],
       "access": "Free, on the public square.",
       "transport": "",
@@ -89,7 +96,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by bark flaking off in irregular olive, cream and grey plates. It stands on the public square at the Westzijde; the pin marks the square, not the trunk itself."
+      "how_to_recognise": "You can recognise it by bark flaking off in irregular olive, cream and grey plates. It stands on the public square at the Westzijde; the pin marks the square, not the trunk itself.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690795",
+        "url": null
+      },
+      "girth_cm": 365,
+      "height_m": 18
     },
     {
       "id": "zaa_005",
@@ -106,7 +119,8 @@
       },
       "story": "A fungus at the foot of a tree is the last thing to appear, not the first. By the time brackets are showing at the base, the organism has usually been working through the roots and the butt of the trunk for years, and what you can see is only its fruit.\n\nThat is roughly the story the register tells here. After a century of standing quietly in the green strip of the Kerkbuurt, this horse chestnut has gone downhill sharply in the last few years, and the inspectors think the heavy fungal growth at its base is the likely reason. They are careful about it: possibly, they write, not certainly.\n\nThey put the planting at around 1925, which makes the timing tidy to the point of being irritating. It is faltering at almost exactly a hundred. A horse chestnut does not read as an ancient tree at that age, but a hundred years is a long working life for one standing in a village verge.\n\nWestzaan is a ribbon village strung along a single old road, and the Kerkbuurt is its church quarter. Nothing in the register says this tree is coming down, but one in that condition is worth going to see sooner rather than later. It still flowers white in May and it still drops conkers in autumn.\n\nThe national register is the only source that describes it, so if you know its history, tell us.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1693432&outFields=*&f=json"
       ],
       "access": "Free, public planting, always open.",
       "transport": "",
@@ -125,7 +139,13 @@
         "label": "May, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it by heavy fungal brackets at the base and a crown that has thinned sharply in recent years. It stands in the green strip of the Kerkbuurt, Westzaan."
+      "how_to_recognise": "You can recognise it by heavy fungal brackets at the base and a crown that has thinned sharply in recent years. It stands in the green strip of the Kerkbuurt, Westzaan.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1693432",
+        "url": null
+      },
+      "girth_cm": 337,
+      "height_m": 18
     },
     {
       "id": "zaa_009",

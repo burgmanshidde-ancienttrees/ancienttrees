@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "netherlands-lrmb-bulk",
+   "kind": "enrich",
+   "tokens": 0,
+   "trees": 0,
+   "note": "scripts/lrmb_fill.py: 353 Dutch trees got register ids and/or LRMB girth and height, no agent"
+  },
+  {
+   "date": "2026-10-10",
    "target": "haarlem",
    "kind": "enrich",
    "tokens": 158222,

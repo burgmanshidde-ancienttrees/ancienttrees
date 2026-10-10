@@ -50,7 +50,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/gebodenlinde-hilvarenbeek/",
         "https://www.heemkundigekringhilvarenbeek.nl/collectie/attentietegels/gebodenlinde/",
-        "https://www.omroepbrabant.nl/nieuws/6016599/hilvarenbeek-onderzoekt-toekomst-gebodenlinde"
+        "https://www.omroepbrabant.nl/nieuws/6016599/hilvarenbeek-onderzoekt-toekomst-gebodenlinde",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683043&outFields=*&f=json"
       ],
       "access": "Free. Stands in the open village square (Vrijthof) beside the church, water pump and bandstand, with a bench beneath it; fully public at all times.",
       "transport": "Hilvarenbeek village centre; nearest station Tilburg, then bus into the village.",
@@ -71,6 +72,10 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683043",
+        "url": null
       }
     },
     {

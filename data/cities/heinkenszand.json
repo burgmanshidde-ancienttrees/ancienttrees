@@ -45,7 +45,8 @@
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/treurbeuk-heinkenszand/",
         "Landelijk Register Monumentale Bomen (Bomenstichting), entry nr 1682787",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682787&outFields=*&f=json"
       ],
       "access": "Free. The old churchyard behind the Blasiuskerk on the Kerkdreef, open ground, recorded as visitable in the national register.",
       "transport": "In the centre of Heinkenszand in Zeeland. Best reached by bike or car, roughly 15 minutes from Goes.",
@@ -66,7 +67,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 539,
-      "height_m": 12
+      "height_m": 12,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682787",
+        "url": null
+      }
     }
   ]
 }

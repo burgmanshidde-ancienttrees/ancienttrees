@@ -552,7 +552,8 @@
       "story": "This bald cypress grows on a lawn in the garden behind Paleis Noordeinde, the working palace where the King of the Netherlands keeps his office, on ground first laid out as a private garden in the early 17th century by Frederik Hendrik, son of William of Orange, for his mother, and known for centuries afterward as the Prinsessentuin. What was once strictly royal property has been open to the public for generations now, a fact many visitors to the palace's public face on the street never realise extends to the grounds behind it.\n\nThe register dates the tree's planting to the 1890s, part of what it calls the garden's older planting scheme, well after Frederik Hendrik's original 17th-century design but still well over a century ago. Taxodium distichum is native to swamps across the southeastern United States and, unusually for a conifer, drops its needles every autumn, so it goes from green to rust orange before standing bare through winter alongside the garden's ponds and statues. The garden is free, open from sunrise to sunset, closed only on the occasional day a state visit requires it.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1685516)",
-        "https://nl.wikipedia.org/wiki/Paleistuin"
+        "https://nl.wikipedia.org/wiki/Paleistuin",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1685516&outFields=*&f=json"
       ],
       "access": "Free, public garden, open sunrise to sunset; occasionally closed for state visits",
       "transport": "Centrum, central Den Haag; about a 15 minute walk from Den Haag Centraal station",
@@ -571,7 +572,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its rust orange autumn needles, unusual for a conifer, before it stands bare through winter. It stands on a lawn among the ponds and statues of the Paleistuin, behind Paleis Noordeinde."
+      "how_to_recognise": "You can recognise it by its rust orange autumn needles, unusual for a conifer, before it stands bare through winter. It stands on a lawn among the ponds and statues of the Paleistuin, behind Paleis Noordeinde.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685516",
+        "url": null
+      },
+      "girth_cm": 381,
+      "height_m": 22
     },
     {
       "id": "hag_019",
@@ -626,7 +633,8 @@
       "story": "These two London planes grow on what used to be a graveyard, the register's own note for the site reading simply planted on the former churchyard, a detail that explains why open lawn survives at all around a church this central. The Grote Kerk, Den Haag's largest and oldest church, has stood on this ground since the 15th century, and burials around it continued for centuries after, until the practice was banned inside growing Dutch cities on public health grounds and this plot became open space instead.\n\nThe two planes date from around the 1890s, late arrivals relative to the church itself but still well over a century old, standing on the Riviervismarkt square that wraps around the building. London plane, a hybrid of the American sycamore and the Oriental plane, tolerates compacted urban soil better than almost any other large tree, which is likely why it was the obvious choice once the ground stopped being used for its original purpose. The trees grow in the open, free, on a square that still draws markets and events the way the site has for centuries, just without the graves.",
       "verified_sources": [
         "data/registers/netherlands-lrmb.json (nr 1684632)",
-        "https://nl.wikipedia.org/wiki/Grote_of_Sint-Jacobskerk_(Den_Haag)"
+        "https://nl.wikipedia.org/wiki/Grote_of_Sint-Jacobskerk_(Den_Haag)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1684632&outFields=*&f=json"
       ],
       "access": "Free, public square, open at any time",
       "transport": "Centrum, central Den Haag; about a 12 minute walk from Den Haag Centraal station",
@@ -638,7 +646,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as two London planes standing on open lawn around the church, on what used to be its graveyard. It stands on the Riviervismarkt, around the Grote Kerk."
+      "how_to_recognise": "You can recognise it as two London planes standing on open lawn around the church, on what used to be its graveyard. It stands on the Riviervismarkt, around the Grote Kerk.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684632",
+        "url": null
+      }
     },
     {
       "id": "hag_021",
@@ -764,7 +776,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685200",
         "url": null
-      }
+      },
+      "girth_cm": 535,
+      "height_m": 26
     },
     {
       "id": "hag_025",
@@ -804,7 +818,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685212",
         "url": null
-      }
+      },
+      "girth_cm": 445,
+      "height_m": 21
     },
     {
       "id": "hag_026",
@@ -874,7 +890,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686877",
         "url": null
-      }
+      },
+      "girth_cm": 575,
+      "height_m": 23
     },
     {
       "id": "hag_028",
@@ -907,7 +925,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685199",
         "url": null
-      }
+      },
+      "girth_cm": 635,
+      "height_m": 23
     },
     {
       "id": "hag_029",
@@ -1073,7 +1093,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1686935",
         "url": null
-      }
+      },
+      "girth_cm": 368,
+      "height_m": 22
     },
     {
       "id": "hag_033",

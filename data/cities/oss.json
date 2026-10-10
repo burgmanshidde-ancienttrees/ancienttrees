@@ -41,7 +41,8 @@
         "longitude": 5.544771
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680016&outFields=*&f=json"
       ],
       "access": "Free, on the public square.",
       "photo": {
@@ -61,7 +62,13 @@
         "label": "June to July, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it as the lime on the village square beside Sint-Petrus-Bandenkerk. It stands at Dorpstraat 1, Macharen."
+      "how_to_recognise": "You can recognise it as the lime on the village square beside Sint-Petrus-Bandenkerk. It stands at Dorpstraat 1, Macharen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680016",
+        "url": null
+      },
+      "girth_cm": 350,
+      "height_m": 17
     },
     {
       "id": "oss_002",
@@ -181,7 +188,8 @@
         "longitude": 5.566952
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681077&outFields=*&f=json"
       ],
       "access": "Free, public planting, always open.",
       "photo": {
@@ -200,7 +208,13 @@
         "kind": "flowers",
         "label": "July, when the silver lime flowers and the whole spot smells of it"
       },
-      "how_to_recognise": "You can recognise it by the bench beside it and the two old cannon standing underneath, on the Maasdijk just outside the historic core. The register lists it twice, metres apart, but it reads as one planting."
+      "how_to_recognise": "You can recognise it by the bench beside it and the two old cannon standing underneath, on the Maasdijk just outside the historic core. The register lists it twice, metres apart, but it reads as one planting.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681077",
+        "url": null
+      },
+      "girth_cm": 390,
+      "height_m": 17
     },
     {
       "id": "oss_009",
