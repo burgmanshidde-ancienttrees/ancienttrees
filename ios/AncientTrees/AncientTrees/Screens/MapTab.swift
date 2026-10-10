@@ -36,6 +36,8 @@ struct MapTab: View {
     @State private var mapIdle = false
 
     @State private var selected: Tree?
+    /// The arrival card's untick asks first, as the tree page does (2026-10-10).
+    @State private var uncollecting: Tree?
     /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
     /// simctl cannot tap, so the one screen that only exists after a tap could
     /// not be looked at before it shipped.
@@ -704,6 +706,7 @@ struct MapTab: View {
                     }
                     return
                 }
+                if saved.isVisited(t.id) { uncollecting = t; return }
                 saved.toggleVisited(t.id)
             } label: {
                 Label(saved.isVisited(t.id) ? "Collected" : "Mark as collected",
@@ -719,6 +722,16 @@ struct MapTab: View {
         .padding(16)
         .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
         .padding(.horizontal, 16).padding(.bottom, 6)
+        .alert("Remove \(uncollecting?.name ?? "this tree") from your collected trees?",
+               isPresented: Binding(get: { uncollecting != nil }, set: { if !$0 { uncollecting = nil } })) {
+            Button("Remove", role: .destructive) {
+                if let u = uncollecting, saved.isVisited(u.id) { saved.toggleVisited(u.id) }
+                uncollecting = nil
+            }
+            Button("Keep it", role: .cancel) { uncollecting = nil }
+        } message: {
+            Text("Your photographs of it stay saved. It leaves My trees until you collect it again.")
+        }
     }
 
     /// Yours, through the same filters ours go through.

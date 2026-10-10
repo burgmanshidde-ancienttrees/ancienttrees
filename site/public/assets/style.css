@@ -2794,6 +2794,37 @@ div.tb-register > b { color: var(--ink); }
 .td-bar .heart-btn[aria-pressed="true"] { border-color: var(--moss); }
 .td-side { display: none; }
 
+/* THE SEAL (2026-10-10): the app's bar circle for collecting, empty until the
+   tree is yours, then filled on a pale green circle as the bookmark fills. */
+.seen-btn .seal-on { display: none; }
+.seen-btn[aria-pressed="true"] .seal-off { display: none; }
+.seen-btn[aria-pressed="true"] .seal-on { display: inline-block; }
+.td-bar .seen-btn { cursor: pointer; }
+.td-bar .seen-btn svg.ic { width: 24px; height: 24px; }
+.td-bar .seen-btn[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
+.td-collect-wide { display: none; }
+.td-addphoto-quiet .addphoto-btn { display: none; }
+.td-addphoto-quiet .addphoto-note { margin-top: 0.4rem; }
+
+/* The collect sheet: a bottom sheet on a phone, a centred dialog on a laptop. */
+.collect-dlg { border: 0; padding: 10px 20px calc(28px + env(safe-area-inset-bottom)); margin: auto 0 0;
+  width: 100%; max-width: 100%; box-sizing: border-box; border-radius: 22px 22px 0 0; background: #fff; color: var(--ink); }
+.collect-dlg::before { content: ""; display: block; width: 40px; height: 5px; border-radius: 999px;
+  background: #D6D6D6; margin: 0 auto 12px; }
+.collect-dlg::backdrop { background: rgba(0,0,0,0.35); }
+.collect-pane { display: flex; flex-direction: column; gap: 12px; }
+.collect-pane[hidden] { display: none; }
+.collect-h { font-size: 20px; font-weight: 700; line-height: 1.2; margin: 0; }
+.collect-p { font-size: 15px; line-height: 1.4; color: var(--ink-mid); margin: 0; }
+.collect-p[hidden] { display: none; }
+.collect-b { min-height: 52px; border-radius: 12px; border: 1px solid rgba(38,48,30,0.22); background: #fff;
+  color: var(--ink); font: inherit; font-size: 16px; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
+.collect-b svg.ic { width: 20px; height: 20px; }
+.collect-primary { background: var(--moss); border-color: var(--moss); color: #fff; }
+.collect-red { color: #B22222; border-color: rgba(178,34,34,0.35); }
+.collect-redfill { background: #B22222; border-color: #B22222; color: #fff; }
+
 /* The two dialogs. */
 .dir-pick { border: 0; border-radius: 16px; padding: 1rem; width: min(20rem, 90vw); }
 .dir-pick::backdrop { background: rgba(26,32,18,0.35); }
@@ -2842,6 +2873,13 @@ div.tb-register > b { color: var(--ink); }
   .td-group { margin-top: 0; }
   .td-page h1 { font-size: 36px; }
   .td-bar { display: none; }
+  .td-collect-wide { display: flex; width: 100%; height: 46px; margin-top: 10px; border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.12); background: #fff; color: var(--ink); font: inherit; font-size: 15px;
+    font-weight: 600; align-items: center; justify-content: center; gap: 8px; cursor: pointer; }
+  .td-collect-wide svg.ic { width: 19px; height: 19px; color: var(--moss); }
+  .td-collect-wide[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
+  .collect-dlg { margin: auto; width: min(24rem, 90vw); border-radius: 16px; padding: 20px; }
+  .collect-dlg::before { display: none; }
   .td-side { display: block; }
   .td-stick { position: sticky; top: calc(var(--header-h) + 1.25rem); }
   .td-stick .td-open { width: 100%; }

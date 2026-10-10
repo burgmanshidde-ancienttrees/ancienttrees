@@ -23,9 +23,12 @@
 //
 // What went, because it was on the web only and said nothing the page did not
 // already say: the duplicate facts list, the note under the map, the walk link,
-// the app pitch, the two help boxes at the foot, the Sources list, and the tick.
-// Collecting is the app's (the camera in its bar); the web's answer to it is the
-// Open-in-the-app button.
+// the app pitch, the two help boxes at the foot, and the Sources list.
+//
+// THE SEAL CAME BACK on 2026-10-10 (Hidde: "make the collect this tree and
+// uncollect more consistent on web and app"): the same circle the app's bar
+// carries, opening the same sheet, with the same question before a tree leaves
+// your collection. The board he approved is "Collected, and the way back".
 //
 // Both tree templates build their data and hand it here, so a control added to
 // this file reaches every language by construction, which is the fault
@@ -103,6 +106,9 @@ const google = `https://www.google.com/maps/dir/?api=1&destination=${loc.latitud
 const expandUrl = `${p.cityUrl}#tree=${encodeURIComponent(tree.id)}`;
 const movedTemplate = U.pinMoved(987654).replace("987654", "{m}");
 const visibleCrumbs = p.crumbs.slice(0, -1);
+// The seal, empty and filled, painted by aria-pressed like the bookmark.
+const sealOff = icon("seal-check", "bold", "ic seal-off");
+const sealOn = icon("seal-check", "fill", "ic seal-on");
 ---
 <main class="content-page td-page">
   {/* WHERE YOU ARE, a thin row, and nothing else (Hidde, 2026-09-24: the
@@ -180,6 +186,15 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
           <span class="tree-place-dot" aria-hidden="true">·</span>
           <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
         </div>
+        {/* The upload behind the collect sheet's "Add a photograph" on a page
+            that already has a picture: its button stays hidden (the sheet is
+            the way in) and its line says what happened to what you sent. A
+            photo-less page has the visible one in its hero instead. */}
+        {photo && photo.url && (
+          <div class="td-addphoto-quiet">
+            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} quiet />
+          </div>
+        )}
         <div class="tree-block">
           <div class="tb-cols">
             <div class="tb-col tb-age"><span>{p.ageLabel}</span><b>{p.ageValue}</b></div>
@@ -287,6 +302,10 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
           <a class="dir-link" href={google} target="_blank" rel="noopener"><Fragment set:html={icon("arrow-bend-up-right")} />{U.takeMeThere}</a>
           <SaveHeart treeId={tree.id} treeName={p.name} labelSave={U.cardSave} labelSaved={U.cardSaved} />
         </div>
+        <button type="button" class="seen-btn td-collect-wide" data-tree={tree.id} data-name={p.name}
+          data-l-seen={U.seenIt} data-l-done={U.seenItDone} aria-pressed="false">
+          <Fragment set:html={sealOff} /><Fragment set:html={sealOn} /><span class="seen-text">{U.seenIt}</span>
+        </button>
         {/* The side map's way out to the whole map, as AllTrails and Airbnb
             put an expand control in the corner of a detail page's map
             (Hidde, 2026-10-05: "the map is not clickable"). The phone's
@@ -300,8 +319,36 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
   <div class="td-bar" aria-label={U.actions}>
     <a class="td-open" href={openUrl} data-ev="app-open"><Fragment set:html={icon("device-mobile")} />{U.openInApp}</a>
     <a class="dir-link td-round" href={google} target="_blank" rel="noopener" aria-label={U.takeMeThere} title={U.takeMeThere}><Fragment set:html={icon("arrow-bend-up-right")} /></a>
+    <button type="button" class="seen-btn td-round" data-tree={tree.id} data-name={p.name}
+      data-l-seen={U.seenIt} data-l-done={U.seenItDone} aria-pressed="false" title={U.seenIt}>
+      <Fragment set:html={sealOff} /><Fragment set:html={sealOn} /><span class="seen-text sr-only">{U.seenIt}</span>
+    </button>
     <SaveHeart treeId={tree.id} treeName={p.name} labelSave={U.cardSave} labelSaved={U.cardSaved} look="round" />
   </div>
+
+  {/* THE COLLECT SHEET (TreeDetail.swift collectChoice): three panes, one
+      shown at a time by tree-actions-js.ts. A bottom sheet on a phone and a
+      centred dialog on a laptop, the two places each platform puts a choice. */}
+  <dialog class="collect-dlg" data-tree={tree.id} data-lang={p.lang} aria-label={U.collectTitle(p.name)}>
+    <div class="collect-pane" data-pane="choose">
+      <p class="collect-h">{U.collectTitle(p.name)}</p>
+      <p class="collect-p">{U.collectLead}</p>
+      <button type="button" class="collect-b collect-primary" data-act="photo"><Fragment set:html={icon("camera", "fill")} />{U.collectPhoto}</button>
+      <button type="button" class="collect-b" data-act="tick">{U.collectNoPhoto}</button>
+    </div>
+    <div class="collect-pane" data-pane="done" hidden>
+      <p class="collect-h">{U.collectedTitle(p.name)}</p>
+      <p class="collect-p collect-on" data-on={U.collectedOn("{d}")} hidden></p>
+      <button type="button" class="collect-b collect-primary" data-act="photo"><Fragment set:html={icon("camera", "fill")} />{U.collectPhoto}</button>
+      <button type="button" class="collect-b collect-red" data-act="ask">{U.uncollect}</button>
+    </div>
+    <div class="collect-pane" data-pane="confirm" hidden>
+      <p class="collect-h">{U.uncollectQ(p.name)}</p>
+      <p class="collect-p">{U.uncollectBody}</p>
+      <button type="button" class="collect-b collect-redfill" data-act="remove">{U.uncollectYes}</button>
+      <button type="button" class="collect-b" data-act="keep">{U.keepIt}</button>
+    </div>
+  </dialog>
 
   {/* Which maps app, asked once on an iPhone (DirectionsAsk). */}
   <dialog class="dir-pick" aria-label={U.dirTitle}>

@@ -8,6 +8,7 @@
 // same English /app page, which is where the product actually is.
 import Base from "../layouts/Base.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { SHARE_JS } from "../lib/share-js";
 import { WORTHIT_JS } from "../lib/worthit-js";
 import { cityIsRenderable, renderableTrees, treeSlugsForCity, distSpanBetween, type CityEntry, type Tree } from "../lib/trees";
@@ -105,9 +106,9 @@ const headExtra = mapHead() + ogImage + (fallback ? "" : "\n" + hreflangForCity(
 // the same reason. Both halves are here: the list is now the English page's.
 // SIGNIN_JS left this list on 2026-09-18: the sheet and its script are Base's
 // now, on every page, so there is no list to forget it from.
-// VISITED_SYNC_JS left with the tick (2026-09-24): collecting is the app's.
+// VISITED_SYNC_JS came back with the seal (2026-10-10): the collect sheet.
 const scripts = treePageScript(loc.latitude!, loc.longitude!)
-  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + DOWNSIZE_JS + ADD_PHOTO_JS;
+  + WORTHIT_JS + SHARE_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + DOWNSIZE_JS + ADD_PHOTO_JS;
 const nearbyCards = nearby.map((t) => ({
   name: tr.trees[t.id].name,
   url: `/${lang}/${cslug}/${tslugs[t.id]}`,

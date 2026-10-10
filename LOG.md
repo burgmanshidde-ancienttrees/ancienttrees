@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
+
+**What changed:** Hidde approved the board "Collected, and the way back" ("looks good build it"), with his rule: "the photos should always be saved - but if you untick than that photo does not appear on my trees".
+
+- **App, tree page.** The seal circle fills on a pale green circle once the tree is yours. Tapping it opens one sheet in three states: not collected (take a photograph, or collect without one), collected (the date, add a photograph, Remove from collected in red) and the question before removing ("Your photographs of it stay saved. It leaves My trees until you collect it again." / Remove / Keep it). The Map tab's arrival card asks the same question before it unticks, as an alert, because iOS 26 drops a confirmationDialog's cancel button.
+- **App, My trees** shows ticked trees only. A tree you photographed but removed no longer comes back through its photograph; the photograph stays saved.
+- **Website, tree page.** The seal is back, in the phone bar between directions and the bookmark and as a full row in the desktop side card. It opens the same sheet in all eight languages (a bottom sheet on a phone, a centred dialog on a laptop). "Add a photograph" opens the existing upload, and a photograph sent from the sheet also collects the tree once it has gone through. Signed out, the seal opens sign-in and the sheet reopens after it. The site had no way to collect at all since 2026-09-24.
+- **Data.** Before My trees went ticked-only, 12 trees across 3 accounts had a photograph and no tick. They were ticked in `visited`, dated from the photograph, so nobody's My trees shrinks. The payload is kept outside the repository for undo.
+- **Checks.** `.seen-btn` is back on the signed-out list in smoke_test.py, and qa.py's tick-wiring check now matches the seal's class. Launch arguments `-collectsheet` and `-uncollectask` open the two sheet states without a tap.
 ## 2026-10-10 (session) - The web profile looks like the app's; the account menu is My trees and Settings; the header is the same on every page
 
 **Why:** Hidde: the web profile page "ziet er eerlijk gezegd niet uit"; the account menu had two rows to one page; and Download the app vanished on a tree page, where "het lijkt mij conventie dat het menu altijd hetzelfde blijft".

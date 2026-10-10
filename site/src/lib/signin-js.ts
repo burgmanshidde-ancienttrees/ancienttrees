@@ -127,6 +127,10 @@ export const SIGNIN_JS = `
     Promise.all(jobs).then(function() {
       if (want.kind === 'save' && window.atSaveTree) {
         window.atSaveTree(want.tree, true);
+      } else if (want.kind === 'collect' && window.atOpenCollect) {
+        // The seal asks a question rather than ticking (2026-10-10), so the
+        // act that finishes is the question: the sheet reopens on its tree.
+        window.atOpenCollect(want.tree);
       } else if (want.kind === 'visit' && window.atPushVisited) {
         if (!(window.atHasVisited && window.atHasVisited(want.tree))) {
           window.atPushVisited(want.tree, true);

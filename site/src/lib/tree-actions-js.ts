@@ -131,6 +131,7 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     document.querySelectorAll('.seen-btn').forEach(function(b) {
       var on = Boolean(window.atHasVisited && window.atHasVisited(b.dataset.tree));
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (b.hasAttribute('title')) b.title = on ? (b.dataset.lDone || 'Collected') : (b.dataset.lSeen || 'Mark as collected');
       var t = b.querySelector('.seen-text');
       if (t) t.textContent = on ? (b.dataset.lDone || 'Collected')
                                 : (b.dataset.lSeen || 'Mark as collected');
@@ -153,23 +154,80 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (!s) return;
     e.stopPropagation();
     // The same gate the heart carries, for the same reason: a log that lives
-    // in a browser is not a log (PRINCIPLES.md #12, and 2026-09-02).
-    C.gate(function() { tick(s); }, function() {
+    // in a browser is not a log (PRINCIPLES.md #12, and 2026-09-02). Signed
+    // out it asks, and the sheet opens once they are back (signin-js.ts,
+    // kind 'collect').
+    C.gate(function() { openCollect(s.dataset.tree); }, function() {
       if (window.atOpenSignIn) {
-        window.atOpenSignIn(s.dataset.name, null, { kind: 'visit', tree: s.dataset.tree });
+        window.atOpenSignIn(s.dataset.name, null, { kind: 'collect', tree: s.dataset.tree });
       }
     });
   });
-  function tick(s) {
-    // NO PROXIMITY CHECK. DECISIONS.md 2026-08-20: "GPS proximity is a BONUS,
-    // never a gate." The dead handler this replaces asked the browser where
-    // you were and refused a tick from more than a few metres out, which
-    // tells somebody standing under the tree that they are not there.
-    var on = !(window.atHasVisited && window.atHasVisited(s.dataset.tree));
-    if (window.atPushVisited) window.atPushVisited(s.dataset.tree, on);
-    if (on) { try { at.track('visit'); } catch (err) {} }
-    paintSeen();
-    if (window.atPaintPassport) window.atPaintPassport();
+
+  // THE COLLECT SHEET (2026-10-10), the app's collectChoice: not collected it
+  // offers a photograph or a tick without one; collected it offers a
+  // photograph and the way back, and the way back asks first, as the bookmark
+  // does. NO PROXIMITY CHECK. DECISIONS.md 2026-08-20: "GPS proximity is a
+  // BONUS, never a gate."
+  var dlg = document.querySelector('.collect-dlg');
+  function pane(name) {
+    dlg.querySelectorAll('.collect-pane').forEach(function(p) { p.hidden = p.dataset.pane !== name; });
+  }
+  function openCollect(id) {
+    if (!dlg || dlg.dataset.tree !== id) {
+      // A page without the sheet (none today) keeps the plain toggle.
+      var on = !(window.atHasVisited && window.atHasVisited(id));
+      if (window.atPushVisited) window.atPushVisited(id, on);
+      paintSeen();
+      return;
+    }
+    var done = Boolean(window.atHasVisited && window.atHasVisited(id));
+    pane(done ? 'done' : 'choose');
+    var when = dlg.querySelector('.collect-on');
+    if (when) when.hidden = true;
+    if (done && when && C.visitedOn) {
+      C.visitedOn(id).then(function(d) {
+        if (!d) return;
+        var lang = dlg.dataset.lang || 'en';
+        var txt = d;
+        try {
+          txt = new Date(d + 'T12:00:00').toLocaleDateString(lang, { day: 'numeric', month: 'long', year: 'numeric' });
+        } catch (err) {}
+        when.textContent = (when.dataset.on || '{d}').replace('{d}', txt);
+        when.hidden = false;
+      });
+    }
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+  }
+  window.atOpenCollect = openCollect;
+  if (dlg) {
+    dlg.addEventListener('click', function(e) {
+      // A tap on the backdrop is a tap on the dialog itself: close, as a sheet does.
+      if (e.target === dlg) { dlg.close(); return; }
+      var b = e.target.closest('[data-act]');
+      if (!b) return;
+      var id = dlg.dataset.tree, act = b.dataset.act;
+      // Only ever reached signed in, through the gate above; a session that
+      // ended while the sheet was open acts on nothing.
+      if (!C.session()) { dlg.close(); return; }
+      if (act === 'photo') {
+        dlg.close();
+        if (window.atAddPhoto) window.atAddPhoto(true);
+      } else if (act === 'tick') {
+        if (window.atPushVisited) window.atPushVisited(id, true);
+        try { at.track('visit'); } catch (err) {}
+        dlg.close();
+      } else if (act === 'ask') {
+        pane('confirm');
+      } else if (act === 'remove') {
+        if (window.atPushVisited) window.atPushVisited(id, false);
+        dlg.close();
+      } else if (act === 'keep') {
+        dlg.close();
+      }
+      paintSeen();
+      if (window.atPaintPassport) window.atPaintPassport();
+    });
   }
 
   document.addEventListener('click', function(e) {

@@ -2436,7 +2436,7 @@ def check_tick_has_its_wiring():
     for page in sorted(DIST.rglob("*.html")):
         html = page.read_text(encoding="utf-8")
         rel = str(page.relative_to(DIST))
-        if 'class="seen-btn"' in html:
+        if 'class="seen-btn' in html:
             if 'id="signin-dialog"' not in html:
                 no_dialog.append(rel)
             if "atPushVisited" not in html:

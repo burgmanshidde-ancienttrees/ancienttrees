@@ -222,6 +222,15 @@ window.atCollection = (function() {
         : api('/rest/v1/saves?tree_id=eq.' + encodeURIComponent(id), s, { method: 'DELETE' });
       return p.then(function(r) { return r.ok; }).catch(function() { return false; });
     },
+    /** The day this account collected one tree, "YYYY-MM-DD", or null. */
+    visitedOn: function(id) {
+      var s = session();
+      if (!s) return Promise.resolve(null);
+      return api('/rest/v1/visited?select=visited_at&tree_id=eq.' + encodeURIComponent(id), s)
+        .then(function(r) { return r.ok ? r.json() : []; })
+        .then(function(rows) { return rows && rows[0] ? rows[0].visited_at : null; })
+        .catch(function() { return null; });
+    },
     visit: function(id, on) {
       var s = session();
       if (!s) return Promise.resolve(false);

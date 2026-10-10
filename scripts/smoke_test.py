@@ -463,7 +463,9 @@ var f = document.getElementById('f'), out = [], i = 0;
 // fails (2026-10-07): a control the list names and no page renders is either a
 // control that went missing or a list nobody updated, and both are findings.
 // .seen-btn left the list that day: SeenButton.astro is included by no page.
-var SEL = ['.save-btn', '.worthit-btn', '.ambassador-apply', '.mf[data-f="fav"]', '.mf[data-f="mine"]'];
+// It came back on 2026-10-10 as the tree page's seal, which opens the collect
+// sheet signed in and the sign-in sheet signed out.
+var SEL = ['.save-btn', '.seen-btn', '.worthit-btn', '.ambassador-apply', '.mf[data-f="fav"]', '.mf[data-f="mine"]'];
 function next() {
   if (i >= pages.length) { document.getElementById('r').textContent = 'RESULT ' + JSON.stringify(out); return; }
   f.src = pages[i++];

@@ -52,6 +52,9 @@ struct TreeDetail: View {
     @Environment(\.locationState) private var location
     /// The Collect choice: a photograph, or the tick without one.
     @State private var choosingCollect = false
+    /// The collect sheet's second step: removing asks first, as the bookmark
+    /// does (Hidde, 2026-10-10, board "Collected, and the way back").
+    @State private var confirmingUncollect = false
     /// What the choice asked for, run once its sheet has gone, because the
     /// camera is presented by the root and two sheets cannot swap in one frame.
     @State private var afterChoice: (() -> Void)?
@@ -549,6 +552,14 @@ struct TreeDetail: View {
             // A screen no argument can open is a screen that ships unseen, and
             // the viewer is a screen (appsweep.py says so in its own comment).
             if ProcessInfo.processInfo.arguments.contains("-photo") { showingPhoto = true }
+            // The collect sheet and its remove question (2026-10-10), so both
+            // can be looked at without a tap: -collectsheet opens the sheet in
+            // whichever state the tree is in, -uncollectask goes to the question.
+            if ProcessInfo.processInfo.arguments.contains("-collectsheet") { choosingCollect = true }
+            if ProcessInfo.processInfo.arguments.contains("-uncollectask") {
+                confirmingUncollect = true
+                choosingCollect = true
+            }
         }
     }
 
@@ -1786,6 +1797,14 @@ struct TreeDetail: View {
 
     private var collected: Bool { saved.isVisited(tree.id) }
 
+    private var collectedOn: String? {
+        guard let d = saved.collected.first(where: { $0.treeId == tree.id })?.visitedAt else { return nil }
+        return "On " + d.formatted(.dateTime.day().month(.wide).year()) + "."
+    }
+
+    /// Red for the one act that takes something away.
+    private static let removeRed = Color(light: 0xB22222, dark: 0xFF7B72)
+
     /// Collecting without a photograph, from anywhere (Hidde, 2026-10-10:
     /// "shouldnt you also be able to collect trees when you're not around").
     /// The same gate as the map's arrival card: signed out, sign in first and
@@ -1802,46 +1821,95 @@ struct TreeDetail: View {
 
     private var collectChoice: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Collect \(tree.name)")
-                .font(.brand(21, .bold, relativeTo: .title3))
-                .foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-            Text("Your photograph goes in your trees instead of ours.")
-                .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-            Button {
-                afterChoice = { navigator.collectAbout = tree.name; navigator.collectNearby = true }
-                choosingCollect = false
-            } label: {
-                Label("Take a photograph", systemImage: "camera")
+            if confirmingUncollect {
+                Text("Remove \(tree.name) from your collected trees?")
+                    .font(.brand(21, .bold, relativeTo: .title3))
+                    .foregroundStyle(Brand.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text("Your photographs of it stay saved. It leaves My trees until you collect it again.")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                Button {
+                    afterChoice = { if saved.isVisited(tree.id) { saved.toggleVisited(tree.id) } }
+                    choosingCollect = false
+                } label: {
+                    Text("Remove").frame(maxWidth: .infinity)
+                }
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(.white)
+                .frame(height: 54)
+                .background(Self.removeRed, in: .rect(cornerRadius: 12))
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("uncollect-confirm")
+                Button { confirmingUncollect = false } label: { Text("Keep it") }
+                    .buttonStyle(BrandButtonStyle(prominent: false))
+            } else if collected {
+                Text("You collected \(tree.name)")
+                    .font(.brand(21, .bold, relativeTo: .title3))
+                    .foregroundStyle(Brand.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                if let on = collectedOn {
+                    Text(on).font(.subheadline).foregroundStyle(Brand.inkSoft)
+                }
+                Button {
+                    afterChoice = { navigator.collectAbout = tree.name; navigator.collectNearby = true }
+                    choosingCollect = false
+                } label: {
+                    Label("Add a photograph", systemImage: "camera")
+                }
+                .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("collect-with-photo")
+                Button { confirmingUncollect = true } label: {
+                    Text("Remove from collected").frame(maxWidth: .infinity)
+                }
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(Self.removeRed)
+                .frame(height: 54)
+                .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(Self.removeRed.opacity(0.35), lineWidth: 1) }
+                .contentShape(.rect)
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("uncollect")
+            } else {
+                Text("Collect \(tree.name)")
+                    .font(.brand(21, .bold, relativeTo: .title3))
+                    .foregroundStyle(Brand.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text("Your photograph goes in your trees instead of ours.")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                Button {
+                    afterChoice = { navigator.collectAbout = tree.name; navigator.collectNearby = true }
+                    choosingCollect = false
+                } label: {
+                    Label("Take a photograph", systemImage: "camera")
+                }
+                .buttonStyle(BrandButtonStyle())
+                .accessibilityIdentifier("collect-with-photo")
+                Button {
+                    afterChoice = { collectWithoutPhoto() }
+                    choosingCollect = false
+                } label: {
+                    Label("Collect without a photograph", systemImage: "checkmark.seal")
+                }
+                .buttonStyle(BrandButtonStyle(prominent: false))
+                .accessibilityIdentifier("collect-no-photo")
             }
-            .buttonStyle(BrandButtonStyle())
-            .accessibilityIdentifier("collect-with-photo")
-            Button {
-                afterChoice = { collectWithoutPhoto() }
-                choosingCollect = false
-            } label: {
-                Label(collected ? "Collected" : "Collect without a photograph",
-                      systemImage: collected ? "checkmark.seal.fill" : "checkmark.seal")
-            }
-            .buttonStyle(BrandButtonStyle(prominent: false))
-            .disabled(collected)
-            .accessibilityIdentifier("collect-no-photo")
         }
         .padding(20)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .presentationDetents([.height(300)])
+        .presentationDetents([.height(320)])
         .presentationDragIndicator(.visible)
+        .onDisappear { confirmingUncollect = false }
     }
 
     /// A 52 point circle in the bar, the same as the bookmark beside it.
-    private func barCircle(_ symbol: String) -> some View {
+    private func barCircle(_ symbol: String, on: Bool = false) -> some View {
         Image(systemName: symbol)
             .font(.title3)
             .foregroundStyle(Brand.moss)
             .frame(width: 52, height: 52)
-            .background(Brand.surface, in: .circle)
-            .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+            .background(on ? Brand.moss.opacity(0.12) : Brand.surface, in: .circle)
+            .overlay { Circle().strokeBorder(on ? Brand.moss : Brand.hairline, lineWidth: 1) }
     }
 
     private var actionBar: some View {
@@ -1998,7 +2066,7 @@ struct TreeDetail: View {
                     .accessibilityLabel("Take me there")
                 } else {
                     Button { choosingCollect = true } label: {
-                        barCircle(collected ? "checkmark.seal.fill" : "checkmark.seal")
+                        barCircle(collected ? "checkmark.seal.fill" : "checkmark.seal", on: collected)
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-add-photo-bar")

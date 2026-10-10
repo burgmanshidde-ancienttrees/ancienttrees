@@ -137,14 +137,12 @@ struct CollectView: View {
                 items.append(.tree(t, e.visitedAt ?? .distantPast))
             }
         }
-        // Trees of ours photographed without being ticked off, dated by the
-        // photograph.
-        for s in sightings.newestFirst {
-            if let id = s.treeId, s.photo != nil, let t = catalogue.tree(id),
-               shown.insert(id).inserted {
-                items.append(.tree(t, s.date))
-            }
-        }
+        // TICKED TREES ONLY (Hidde, 2026-10-10: "the photos should always be
+        // saved - but if you untick then that photo does not appear on my
+        // trees"). A photograph of one of our trees used to put it here on its
+        // own, so a tree you had unticked came straight back. Every photograph
+        // taken through Collect ticks the tree; the twelve older ones that had
+        // not were ticked in their accounts the day this changed.
         return items.sorted { $0.date > $1.date }
     }
 

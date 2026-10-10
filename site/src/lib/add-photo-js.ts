@@ -4,9 +4,11 @@
 // were there". Google Maps puts Add a photo ON THE PLACE, as a contribution
 // offered beside checking in rather than as the same act, and counts the two
 // separately. So this control sits on the tree's own page and does exactly one
-// thing: it sends the photograph. It does NOT tick the tree off, because the
-// person may be at a laptop, and the app's own rule already refuses to decide
-// "they stood there" from "they have a picture".
+// thing: it sends the photograph. On its own it does NOT tick the tree off,
+// because the person may be at a laptop. Sent from the collect sheet
+// (window.atAddPhoto(true), 2026-10-10) it does, because there the person has
+// just said they are collecting it: the app's "Take a photograph" in the same
+// sheet does the same.
 //
 // WHY THE WEBSITE NEEDED THIS AT ALL. The photo-less tree page has said "Send
 // us yours and it goes on this page" since it was written, linking to
@@ -116,8 +118,20 @@ export const ADD_PHOTO_JS = `
     });
   }
 
+  // THE COLLECT SHEET'S WAY IN (2026-10-10). The sheet opened behind the one
+  // door already, so the picker is opened straight from this tap, inside the
+  // gesture a browser insists on for a file picker. collect says the photograph
+  // also collects the tree once it has gone through.
+  var collecting = false;
+  window.atAddPhoto = function(collect) {
+    if (busy) return;
+    if (session()) { collecting = Boolean(collect); file.click(); }
+    else { btn.click(); collecting = Boolean(collect); }
+  };
+
   btn.addEventListener('click', function() {
     if (busy) return;
+    collecting = false;
     // The gate is the one the hearts and the worth-it control use: anybody may
     // see it, sending needs the account that lets us write back and that the
     // deletion promise hangs on.
@@ -177,6 +191,14 @@ export const ADD_PHOTO_JS = `
         btn.hidden = true;
         file.value = '';
         sayWithLink(msgThanks);
+        if (collecting && window.atPushVisited) {
+          if (!(window.atHasVisited && window.atHasVisited(treeId))) {
+            window.atPushVisited(treeId, true);
+            try { at.track('visit'); } catch (err) {}
+          }
+          if (window.atPaintSeen) window.atPaintSeen();
+        }
+        collecting = false;
         if (window.at) at.track('tree-photo-sent');
       }).catch(function() {
         busy = false; btn.disabled = false; btn.textContent = originalLabel;

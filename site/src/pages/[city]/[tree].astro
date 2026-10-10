@@ -16,6 +16,7 @@ import { WORTHIT_JS } from "../../lib/worthit-js";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { ADD_PHOTO_JS } from "../../lib/add-photo-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
+import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
 import { seasonBlock } from "../../lib/phenology";
 import { mapHead } from "../../lib/map";
 import { treePageScript } from "../../lib/tree-page-js";
@@ -244,8 +245,8 @@ const chips = [
 const hb = hreflangForCity(cslug, "tree", tslug);
 const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
-// VISITED_SYNC_JS left with the tick (2026-09-24): collecting is the app's.
-const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + SHARE_JS
+// VISITED_SYNC_JS came back with the seal (2026-10-10): the collect sheet.
+const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS
   + DOWNSIZE_JS + ADD_PHOTO_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
