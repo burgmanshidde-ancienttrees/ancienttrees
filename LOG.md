@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, late) - Enrichment: Caserta
+
+- **Caserta:** all 20 trees got the Regione Campania scheda page as register record (the authority's own per-tree page) plus girth and height read from it. Pins left alone: several English Garden trees share one register coordinate, so it does not tell the trunks apart. 24 gaps recorded as dead ends. Preflight clean. A temp script scripts/_tmp_caserta.py could not be deleted (rm denied); remove it.
+
 ## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
 
 - **Guimaraes:** all 8 trees: ICNF Arvoredo de Interesse Público ids, girth (metres converted to cm) and height from data/registers/portugal-icnf.json, matched to our pins by exact coordinates. gui_002's 19 m olive height dropped as implausible; gui_003's figures are the camellia group's; gui_005 carries an id but no measurement (a six-species group). Access lines were not re-checked (the Câmara page returned nothing usable).
