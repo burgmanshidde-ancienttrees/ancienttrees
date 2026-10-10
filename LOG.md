@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, 16:48 window) - Copenhagen enrichment, 20 trees
+
+Rung 2 checked: the red deploy was Houston's "hidden gem" source, already fixed in b092c089 with a new deploy in flight; iOS app red (not touched). Enrichment pass on Copenhagen (cop_029 to cop_048): every tree's Dansk Trærregister record opened and recorded as register (Dendrologisk Forening, a society register not a government one, so judge that), girth/height on 17 of 20, two girths withheld (cop_032 four stems at 0.6 m, cop_040 measured at 2 m). No season set (no striking moment fits). 8 gaps dead-ended. preflight 0 problems. Visits 7d: 1518.
+
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
 
 **What changed:** Hidde approved the board "Collected, and the way back" ("looks good build it"), with his rule: "the photos should always be saved - but if you untick than that photo does not appear on my trees".
