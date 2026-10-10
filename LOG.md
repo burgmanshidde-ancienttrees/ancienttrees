@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, final window) - Enrichment: Heidelberg
+
+- **Heidelberg:** all 6 Naturdenkmal trees got the LUBW per-tree steckbrief as register record, with the register's own number (82210001201 to 82210001227). The pages carry no girth, height or coordinate, so no measurements or pins; none of the six is finished enough to return to the index. 11 gaps recorded as 90-day dead ends. Removed the two stray _tmp scripts left by the Caserta pass. Shipped -3 trees earlier in the window came from retirements (Uneyama fir, Wageler beech), not a fault.
+
 ## 2026-10-10 (night run, late) - Enrichment: Caserta
 
 - **Caserta:** all 20 trees got the Regione Campania scheda page as register record (the authority's own per-tree page) plus girth and height read from it. Pins left alone: several English Garden trees share one register coordinate, so it does not tell the trunks apart. 24 gaps recorded as dead ends. Preflight clean. A temp script scripts/_tmp_caserta.py could not be deleted (rm denied); remove it.
