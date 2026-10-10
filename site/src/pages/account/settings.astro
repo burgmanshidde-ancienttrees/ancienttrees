@@ -21,6 +21,8 @@
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { BASE_URL } from "../../lib/schema";
+import Sheet from "../../components/Sheet.astro";
+import { icon } from "../../lib/icons";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
 
@@ -51,122 +53,107 @@ const crumbItems: [string, string | null][] = [
       in a card of its own and delete is red. */}
   <p id="set-out" class="acct-sub" hidden>You are not signed in. <a href="/account">Sign in</a> to change anything here.</p>
 
+  {/* ONE SCREEN WITH THE APP (Hidde, 2026-10-10: "make that settings things
+      more consistent with the app", then "some ux things have different
+      conventions for web app use those"). iOS Settings' shape on both:
+      your card at the top, which opens your name and picture; Preferences;
+      Help; About; then Sign out and Delete account. The web's own
+      conventions where they differ: a choice is a native dropdown rather than
+      an iOS menu, editing your name and picture is a sheet over the page
+      (X's and Instagram's web "Edit profile"), the Directions row shows only
+      on an iPhone because only there do we hand a route to an app, and there
+      is no Rate the app. Every question is the one sheet (Sheet.astro). */}
   <section id="set-in" hidden>
-    {/* THE APP'S OWN WORDS, and only those (Hidde, 2026-09-18: "there is a lot
-        of random copy on the profile page on web that's not in app, delete it
-        and follow app design and copy example").
+    <button type="button" class="set-me" id="me-open" aria-haspopup="dialog">
+      <span class="profile-avatar set-me-av" id="me-av" aria-hidden="true"></span>
+      <span class="set-me-who"><b id="me-name">Your account</b><span id="set-email"></span></span>
+      <Fragment set:html={icon("caret-right", "bold", "ic set-go")} />
+    </button>
 
-        What stood here was two paragraphs the app has never said: one telling
-        you what a name is for ("people can find you in the app to follow your
-        trees, leave it empty and nobody can") and one explaining that your
-        trees are kept under your address and how to move them. The app's
-        editor carries a single line under each field, and the address
-        explanation lives on the delete screen, which is the only place
-        somebody asks the question it answers. */}
-    <p class="acct-group">Account</p>
+    <p class="acct-group">Preferences</p>
     <div class="acct-rows">
-      {/* YOUR PICTURE, the app's own row (Screens/ProfileEditor.swift), which
-          the website could read and never set: somebody who had never opened
-          the app had no way to have one at all.
-
-          Convention: the app uses PhotosPicker, which has no web equivalent,
-          so this is the file-input-behind-a-button every site uses for the
-          same job (GitHub's "Edit" on the avatar, Strava's "Change photo",
-          Airbnb's "Upload"). CONVENTIONS.md carries the entry. What does NOT
-          differ is everything underneath: the same 512px JPEG at quality 0.8,
-          the same avatars/<user-id>/avatar.jpg, the same profiles row. */}
-      <div class="acct-row">
-        <label for="pic-pick">Your picture</label>
-        <div class="acct-pic-row">
-          <span class="profile-avatar acct-pic" id="pic-preview" aria-hidden="true"></span>
-          <button type="button" id="pic-pick" class="go-btn">Choose a photo</button>
-          <input id="in-pic" type="file" accept="image/*" hidden />
-        </div>
-        <p class="acct-fine">Optional. People who follow you see it beside your name.</p>
-      </div>
-      <div class="acct-row">
-        <label for="in-name">Your name</label>
-        <div class="acct-name-row">
-          <input id="in-name" type="text" maxlength="40" autocomplete="nickname"
-                 placeholder="The name people see" />
-          <button type="button" id="save-name" class="go-btn">Save</button>
-        </div>
-        <p class="acct-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
-        {/* The line under the field stays put, as the app's footer does, and
-            what a save had to say gets its own line rather than eating it. */}
-        <p class="acct-fine" id="name-status" role="status" hidden></p>
-      </div>
-      <div class="acct-row">
-        <label>Signed in as</label>
-        <p class="acct-email" id="set-email"></p>
-      </div>
-      {/* DISTANCES, where the app keeps it (Screens/Profile.swift's settings
-          card). It sat on /account, which is the profile rather than the
-          settings, and carried a note saying which way it was following. The
-          buttons say that themselves. */}
-      <div class="acct-row" id="st-units" hidden>
-        <label>Distances</label>
-        <div class="unit-pick" role="group" aria-label="Distance units">
-          <button type="button" class="unit-btn" data-unit="km">Kilometers</button>
-          <button type="button" class="unit-btn" data-unit="mi">Miles</button>
-        </div>
-      </div>
+      <label class="set-row" id="st-units" hidden>
+        <Fragment set:html={icon("ruler", "bold", "ic set-ic")} /><span class="set-label">Distances</span>
+        <span class="set-val"><select id="units-sel" class="set-select" aria-label="Distances">
+          <option value="km">Kilometers</option><option value="mi">Miles</option>
+        </select><Fragment set:html={icon("caret-up-down", "bold", "ic set-caret")} /></span>
+      </label>
+      <label class="set-row" id="st-dir" hidden>
+        <Fragment set:html={icon("arrow-bend-up-right", "bold", "ic set-ic")} /><span class="set-label">Directions</span>
+        <span class="set-val"><select id="dir-sel" class="set-select" aria-label="Directions">
+          <option value="">Ask each time</option><option value="apple">Apple Maps</option><option value="google">Google Maps</option>
+        </select><Fragment set:html={icon("caret-up-down", "bold", "ic set-caret")} /></span>
+      </label>
     </div>
 
-    {/* The app's contributeCard, which this page did not have at all. It is
-        where a submission can be FOUND, the moments that produce one living
-        elsewhere. */}
-    <p class="acct-group">Contribute</p>
+    <p class="acct-group">Help</p>
     <div class="acct-rows">
-      <a class="acct-row acct-linkrow" href="/contribute">Add a tree</a>
-      <a class="acct-row acct-linkrow" href="/contribute?kind=feedback">Send feedback</a>
+      <a class="set-row" href="/contribute?kind=feedback"><Fragment set:html={icon("chat-circle", "bold", "ic set-ic")} /><span class="set-label">Send feedback</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></a>
+      <a class="set-row" href="/support"><Fragment set:html={icon("lifebuoy", "bold", "ic set-ic")} /><span class="set-label">Support</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></a>
     </div>
 
     <p class="acct-group">About</p>
     <div class="acct-rows">
-      <a class="acct-row acct-linkrow" href="/privacy">Privacy</a>
-      <a class="acct-row acct-linkrow" href="/terms">Terms</a>
-      <a class="acct-row acct-linkrow" href="/support">Support</a>
-      <a class="acct-row acct-linkrow" href="/sources">Sources</a>
+      <a class="set-row" href="/privacy"><Fragment set:html={icon("lock-simple", "bold", "ic set-ic")} /><span class="set-label">Privacy</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></a>
+      <a class="set-row" href="/terms"><Fragment set:html={icon("file-text", "bold", "ic set-ic")} /><span class="set-label">Terms</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></a>
+      <a class="set-row" href="/sources"><Fragment set:html={icon("book-open", "bold", "ic set-ic")} /><span class="set-label">Sources</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></a>
     </div>
 
-    {/* Each in its OWN card, as in the app, rather than a link and a
-        disclosure triangle. */}
     <div class="acct-rows acct-rows-sep">
-      <button type="button" id="signout" class="acct-row acct-linkrow acct-rowbtn">Sign out</button>
-      {/* ASKED FIRST, as the app asks (Screens/Profile.swift, Hidde 2026-08-24:
-          "dit is raar" about signing out on one tap). It matters more here than
-          the word suggests: what it looks like you are about to lose is your
-          collection. The app draws it as a confirmation dialog on the button
-          and this page draws it as the panel the delete row beside it already
-          uses, which is the both-surfaces rule read correctly: the behaviour
-          matches, the design is each surface's own. */}
-      <div id="out-panel" class="acct-danger-body" hidden>
-        <p class="acct-fine">Your trees stay on your account. Signing in again on any device brings them back.</p>
-        <button type="button" id="out-yes" class="go-btn">Sign out</button>
-        <button type="button" id="out-no" class="acct-link">Stay signed in</button>
-      </div>
+      <button type="button" id="signout" class="set-row set-row-plain">Sign out</button>
     </div>
     <div class="acct-rows">
-      <button type="button" id="del-open" class="acct-row acct-linkrow acct-rowbtn danger">Delete account</button>
-    </div>
-
-    {/* ASKED TWICE, and the second one is typed rather than tapped, which is
-        the app's own rule (Hidde, 2026-08-31: "met twee keer vragen weet je het
-        zeker"). This page asked once, behind a disclosure triangle. A typed
-        word is a real second act rather than a second tap in the same place. */}
-    <div id="del-panel" class="acct-danger-body" hidden>
-      {/* The app's delete screen, sentence for sentence, including the one
-          about using a different address. That line used to sit at the top of
-          this page beside the email, where nobody was asking it. */}
-      <p class="acct-fine">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.</p>
-      <p class="acct-fine">We delete your email address and your collection. This cannot be undone.</p>
-      <p class="acct-fine">To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
-      <label for="del-confirm">Type DELETE to confirm</label>
-      <input id="del-confirm" type="text" autocomplete="off" autocapitalize="characters" placeholder="DELETE" />
-      <button type="button" id="del-acct" class="go-btn danger" disabled>Delete account</button>
+      <button type="button" id="del-open" class="set-row set-row-plain set-danger">Delete account<Fragment set:html={icon("caret-right", "bold", "ic set-go")} /></button>
     </div>
   </section>
+
+  {/* YOUR NAME AND PICTURE, the app's ProfileEditor as a sheet. The file input
+      behind a button is the web's picker for the app's PhotosPicker
+      (CONVENTIONS.md); the 512px JPEG, the avatars/<user-id>/avatar.jpg and
+      the profiles row are the app's, unchanged. */}
+  <Sheet id="me-sheet" aria-labelledby="me-h">
+    <h3 class="at-sheet-h" id="me-h">Your profile</h3>
+    <div class="set-edit">
+      <span class="profile-avatar acct-pic" id="pic-preview" aria-hidden="true"></span>
+      <button type="button" id="pic-pick" class="sheet-b sheet-b--secondary set-pic-btn">Choose a photo</button>
+      <input id="in-pic" type="file" accept="image/*" hidden />
+      <p class="at-sheet-fine">Optional. People who follow you see it beside your name.</p>
+      <label for="in-name" class="set-edit-label">Your name</label>
+      <input id="in-name" type="text" maxlength="40" autocomplete="nickname" placeholder="The name people see" />
+      <p class="at-sheet-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
+    </div>
+    <div class="at-sheet-btns">
+      <button type="button" id="save-name" class="sheet-b sheet-b--primary">Save</button>
+    </div>
+    <p class="at-sheet-fine" id="name-status" role="status" hidden></p>
+  </Sheet>
+
+  <Sheet id="out-sheet" aria-labelledby="out-h">
+    <h3 class="at-sheet-h" id="out-h">Sign out?</h3>
+    <p class="at-sheet-p">Your collection stays in your account. Sign in again on any device and it comes back.</p>
+    <div class="at-sheet-btns">
+      <button type="button" id="out-yes" class="sheet-b sheet-b--red">Sign out</button>
+      <button type="button" id="out-no" class="sheet-b sheet-b--secondary">Cancel</button>
+    </div>
+  </Sheet>
+
+  {/* ASKED TWICE, the second one TYPED (the app's rule, 2026-08-31), now in the
+      one sheet rather than a pink panel opened on the page. The app's delete
+      screen, sentence for sentence. */}
+  <Sheet id="del-sheet" aria-labelledby="del-h">
+    <h3 class="at-sheet-h" id="del-h">Delete your account?</h3>
+    <p class="at-sheet-p">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.</p>
+    <p class="at-sheet-p">We delete your email address and your collection. This cannot be undone.</p>
+    <p class="at-sheet-p">To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
+    <div class="set-edit">
+      <label for="del-confirm" class="set-edit-label">Type DELETE to confirm</label>
+      <input id="del-confirm" type="text" autocomplete="off" autocapitalize="characters" placeholder="DELETE" />
+    </div>
+    <div class="at-sheet-btns">
+      <button type="button" id="del-acct" class="sheet-b sheet-b--red" disabled>Delete account</button>
+      <button type="button" id="del-no" class="sheet-b sheet-b--secondary">Cancel</button>
+    </div>
+  </Sheet>
 </main>
 <Fragment slot="scripts" set:html={`
 <script>
@@ -193,6 +180,7 @@ const crumbItems: [string, string | null][] = [
       if (!u) return;
       if (u.email) {
         document.getElementById("set-email").textContent = u.email;
+        document.getElementById("me-name").textContent = u.email.split("@")[0];
         // A letter rather than an empty circle while we find out whether
         // there is a picture, which is what the profile head already does.
         initial(u.email);
@@ -213,6 +201,7 @@ const crumbItems: [string, string | null][] = [
           if (rows[0] && rows[0].display_name) {
             document.getElementById("in-name").value = rows[0].display_name;
             document.getElementById("save-name").disabled = false;
+            document.getElementById("me-name").textContent = rows[0].display_name;
             initial(rows[0].display_name);
           }
           if (rows[0] && rows[0].avatar_url) {
@@ -230,32 +219,45 @@ const crumbItems: [string, string | null][] = [
   // units meanwhile because units-js decides from where the reader is.
   function units(now) {
     var box = document.getElementById("st-units");
-    if (!box) return;
+    var sel = document.getElementById("units-sel");
+    if (!box || !sel) return;
     box.hidden = false;
-    paintUnits(now);
-    box.querySelectorAll(".unit-btn").forEach(function(b) {
-      b.addEventListener("click", function() {
-        var want = b.dataset.unit, cur = session();
-        if (!cur || !myId) return;
-        paintUnits(want);
-        fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
-          method: "POST",
-          headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
-                     "Content-Type": "application/json",
-                     "Prefer": "resolution=merge-duplicates,return=minimal" },
-          body: JSON.stringify([{ user_id: myId, units: want }])
-        }).catch(function() {});
-      });
+    if (now === "km" || now === "mi") sel.value = now;
+    sel.addEventListener("change", function() {
+      var want = sel.value, cur = session();
+      if (!cur || !myId) return;
+      fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+        method: "POST",
+        headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                   "Content-Type": "application/json",
+                   "Prefer": "resolution=merge-duplicates,return=minimal" },
+        body: JSON.stringify([{ user_id: myId, units: want }])
+      }).catch(function() {});
     });
   }
 
-  function paintUnits(now) {
-    document.querySelectorAll("#st-units .unit-btn").forEach(function(b) {
-      var on = b.dataset.unit === now;
-      b.classList.toggle("is-on", on);
-      b.setAttribute("aria-pressed", on ? "true" : "false");
+  // DIRECTIONS, on an iPhone only: the one place this site hands a route to an
+  // app, the same at_maps_app key the tree page's picker remembers
+  // (tree-page-js.ts). A laptop always opens Google Maps, so the row would be
+  // a choice that changes nothing there.
+  (function() {
+    var ua = navigator.userAgent || "";
+    var isIOS = /iPhone|iPad|iPod/.test(ua) || (ua.indexOf("Macintosh") > -1 && navigator.maxTouchPoints > 1);
+    var row = document.getElementById("st-dir"), sel = document.getElementById("dir-sel");
+    if (!isIOS || !row || !sel) return;
+    row.hidden = false;
+    try { sel.value = localStorage.getItem("at_maps_app") || ""; } catch (e) {}
+    sel.addEventListener("change", function() {
+      try {
+        if (sel.value) localStorage.setItem("at_maps_app", sel.value);
+        else localStorage.removeItem("at_maps_app");
+      } catch (e) {}
     });
-  }
+  })();
+
+  function open(id) { var d = document.getElementById(id); if (d && d.showModal) d.showModal(); }
+  function shut(id) { var d = document.getElementById(id); if (d && d.open) d.close(); }
+  document.getElementById("me-open").addEventListener("click", function() { open("me-sheet"); });
 
   // YOUR PICTURE, on the app's own terms (Screens/ProfileEditor.swift and its
   // Avatars.upload). The numbers are not re-decided here: 512 on the long
@@ -272,12 +274,16 @@ const crumbItems: [string, string | null][] = [
   var picFile = document.getElementById("in-pic");
   var picPrev = document.getElementById("pic-preview");
 
+  var meAv = document.getElementById("me-av");
   function initial(name) {
-    if (!picPrev.style.backgroundImage) picPrev.textContent = (name || "?").charAt(0).toUpperCase();
+    var ch = (name || "?").charAt(0).toUpperCase();
+    if (!picPrev.style.backgroundImage) picPrev.textContent = ch;
+    if (meAv && !meAv.style.backgroundImage) meAv.textContent = ch;
   }
   function showPicture(url) {
-    picPrev.textContent = "";
-    picPrev.style.backgroundImage = "url(" + String(url).replace(/[()'"]/g, "") + ")";
+    var bg = "url(" + String(url).replace(/[()'"]/g, "") + ")";
+    picPrev.textContent = ""; picPrev.style.backgroundImage = bg;
+    if (meAv) { meAv.textContent = ""; meAv.style.backgroundImage = bg; }
     picBtn.textContent = "Change photo";
   }
 
@@ -364,6 +370,10 @@ const crumbItems: [string, string | null][] = [
         nameBtn.disabled = false;
         if (r.ok && url) { myAvatar = url; picked = null; }
         say(r.ok ? "Saved." : "That did not save. Try again in a moment.");
+        if (r.ok) {
+          document.getElementById("me-name").textContent = v;
+          setTimeout(function() { shut("me-sheet"); }, 700);
+        }
       }).catch(function() {
         nameBtn.disabled = false;
         say("That did not save. Try again in a moment.");
@@ -372,14 +382,8 @@ const crumbItems: [string, string | null][] = [
   });
 
   var outBtn = document.getElementById("signout");
-  var outPanel = document.getElementById("out-panel");
-  outBtn.addEventListener("click", function() {
-    outPanel.hidden = false; outBtn.hidden = true;
-    document.getElementById("out-yes").focus();
-  });
-  document.getElementById("out-no").addEventListener("click", function() {
-    outPanel.hidden = true; outBtn.hidden = false; outBtn.focus();
-  });
+  outBtn.addEventListener("click", function() { open("out-sheet"); });
+  document.getElementById("out-no").addEventListener("click", function() { shut("out-sheet"); });
   document.getElementById("out-yes").addEventListener("click", function() {
     var cur = session();
     if (cur) fetch(SB + "/auth/v1/logout", { method: "POST",
@@ -396,7 +400,7 @@ const crumbItems: [string, string | null][] = [
     // that. The change of state IS the acknowledgement, which is the pattern
     // this project uses everywhere rather than a toast (CONVENTIONS.md,
     // landing after you have added something).
-    outPanel.hidden = true; outBtn.hidden = false;
+    shut("out-sheet");
     var out = document.getElementById("set-out");
     out.innerHTML = 'You are signed out. <a href="/account">Sign in</a> to get your trees back.';
     signedOut();
@@ -415,14 +419,10 @@ const crumbItems: [string, string | null][] = [
   // (Screens/Profile.swift, 2026-08-31). This page used to arm the same button
   // twice in the same place, which is one act repeated rather than two acts.
   var delOpen = document.getElementById("del-open");
-  var delPanel = document.getElementById("del-panel");
   var delConfirm = document.getElementById("del-confirm");
   var delBtn = document.getElementById("del-acct");
-  delOpen.addEventListener("click", function() {
-    delPanel.hidden = false;
-    delOpen.hidden = true;
-    delConfirm.focus();
-  });
+  delOpen.addEventListener("click", function() { open("del-sheet"); delConfirm.focus(); });
+  document.getElementById("del-no").addEventListener("click", function() { shut("del-sheet"); });
   delConfirm.addEventListener("input", function() {
     delBtn.disabled = delConfirm.value.trim().toUpperCase() !== "DELETE";
   });

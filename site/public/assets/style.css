@@ -863,6 +863,43 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
 .go-btn.danger { background: #9c3f2f; margin-top: 0.9rem; }
 .go-btn.danger:disabled { opacity: 0.45; cursor: not-allowed; }
 .acct-linkrow:hover { background: var(--cream); }
+/* SETTINGS, ONE SCREEN WITH THE APP (2026-10-10): Screens/Profile.swift's
+   rows, 48 tall, a moss line icon, the label, a grey value or an arrow, and
+   hairlines that start after the icon. A choice is the web's own control, a
+   native select, drawn as the row's value with the up-down caret. */
+.set-me { display: flex; align-items: center; gap: 14px; width: 100%; margin: 0.4rem 0 0;
+  padding: 14px 16px; border: 1px solid var(--cream-dark); border-radius: 12px; background: #fff;
+  cursor: pointer; text-align: left; font: inherit; color: var(--ink); }
+.set-me:hover { background: var(--cream); }
+.set-me-av { width: 56px; height: 56px; font-size: 22px; }
+.set-me-who { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.set-me-who b { font-size: 19px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.set-me-who span { font-family: var(--sans); font-size: 13px; color: var(--ink-mid); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.set-row { display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 0 16px; position: relative;
+  font-family: var(--sans); font-size: 16px; color: var(--ink); text-decoration: none; background: #fff;
+  border: none; width: 100%; box-sizing: border-box; cursor: pointer; text-align: left; }
+.set-row[hidden] { display: none; }
+.set-row + .set-row::before { content: ""; position: absolute; left: 48px; right: 0; top: 0; height: 1px; background: var(--cream-dark); }
+.set-row-plain + .set-row::before, .set-row + .set-row-plain::before { left: 16px; }
+a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--cream); }
+.set-ic { width: 20px; height: 20px; color: var(--moss); flex: none; }
+.set-label { flex: 1; min-width: 0; }
+.set-go { width: 14px; height: 14px; color: var(--ink-light); flex: none; margin-left: auto; }
+.set-val { position: relative; display: inline-flex; align-items: center; gap: 4px; margin-left: auto; color: var(--ink-mid); }
+.set-select { appearance: none; -webkit-appearance: none; border: none; background: none; font: inherit; font-size: 15px;
+  color: var(--ink-mid); padding: 0 18px 0 0; cursor: pointer; text-align: right; }
+.set-caret { position: absolute; right: 0; width: 13px; height: 13px; pointer-events: none; }
+.set-danger { color: #B22222; }
+.set-danger .set-go { color: #B22222; }
+/* The editing inside the sheets: a field is the website's own, 16px so Safari
+   does not zoom, full width, the sheet's rounded shapes. */
+.set-edit { display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 0 0 6px; text-align: left; }
+.set-edit .acct-pic { width: 72px; height: 72px; font-size: 26px; }
+.set-pic-btn { width: auto; padding: 0 18px; }
+.set-edit-label { align-self: stretch; font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); margin-top: 6px; }
+.set-edit input[type="text"] { align-self: stretch; font-family: var(--sans); font-size: 16px; padding: 0 16px; height: 48px;
+  border: 1.5px solid var(--cream-dark); border-radius: 12px; background: #fff; color: var(--ink); box-sizing: border-box; }
+.set-edit .at-sheet-fine { align-self: stretch; margin: 0; text-align: left; }
 /* The disclosure that stands in for the app's pushed Account screen. */
 .acct-deeper > summary { min-height: 44px; display: flex; align-items: center;
   font-family: var(--sans); font-size: 15px; color: var(--ink); cursor: pointer;

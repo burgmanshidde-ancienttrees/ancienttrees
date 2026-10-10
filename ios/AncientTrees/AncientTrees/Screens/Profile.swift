@@ -78,7 +78,11 @@ struct ProfileView: View {
                 // disagree about its own name is the "title twice" fault the
                 // tree page already fixed once.
                 identity
-                contributeCard
+                // "Know a tree we are missing?" left Settings (Hidde,
+                // 2026-10-10, the settings board): adding a tree is the camera
+                // in the tab bar, and inside Settings it was the one card that
+                // was not a setting. iOS Settings' shape, the same on the
+                // website: your card, Preferences, Help, About, then out.
                 // No Plus card. It was the loudest thing on the page and it
                 // sold a tier that does not open yet (Hidde, 2026-08-25: "you
                 // can delete the whole see what's included button from profile
@@ -87,6 +91,7 @@ struct ProfileView: View {
                 // any app that HAS an upgrade; ours is a promise, and a promise
                 // belongs in a settings row.
                 settingsCard
+                helpCard
                 aboutCard
                 signOutRow
                 deleteAccountRow
@@ -157,17 +162,22 @@ struct ProfileView: View {
                         .foregroundStyle(Brand.inkSoft)
                 }
             }
-            .frame(width: 60, height: 60)
+            .frame(width: 56, height: 56)
 
             VStack(alignment: .leading, spacing: 3) {
                 if account.isSignedIn {
-                    Text(account.email ?? "Signed in")
-                        .font(.brand(18, .bold, relativeTo: .headline))
+                    // YOUR NAME AND ADDRESS, the Apple Account card at the top
+                    // of iOS Settings (2026-10-10): it opens name and picture,
+                    // which is why that row below is gone. The counts it used
+                    // to carry live on My trees.
+                    Text(profiles.me?.display_name
+                         ?? account.email?.split(separator: "@").first.map(String.init)
+                         ?? "Signed in")
+                        .font(.brand(19, .bold, relativeTo: .headline))
                         .foregroundStyle(Brand.ink).lineLimit(1)
-                    // A count is a promise that the things counted are
-                    // somewhere; this is the way there (Hidde, 2026-08-21).
-                    Text("\(saved.visitedCount) collected · \(saved.savedCount) saved")
-                        .font(.footnote).foregroundStyle(Brand.moss)
+                    if let e = account.email {
+                        Text(e).font(.footnote).foregroundStyle(Brand.inkSoft).lineLimit(1)
+                    }
                     AmbassadorBadge(places: profiles.myPlaces)
                 } else {
                     Text("Sign in")
@@ -179,10 +189,8 @@ struct ProfileView: View {
                 }
             }
             Spacer(minLength: 0)
-            if !account.isSignedIn {
-                Image(systemName: "chevron.right")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft.opacity(0.6))
-            }
+            Image(systemName: "chevron.right")
+                .font(.footnote).foregroundStyle(Brand.inkSoft.opacity(0.6))
         }
         .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -196,34 +204,6 @@ struct ProfileView: View {
     // The upgrade card lived here until 2026-08-25. Its two rows are in
     // Settings now, next to Season alerts, which is where he put them.
 
-    // MARK: - contributing
-
-    private var contributeCard: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Know a tree we are missing?")
-                .font(.brand(18, .bold, relativeTo: .headline)).foregroundStyle(Brand.ink)
-            // Short, because the card only has one thing to say (Hidde,
-            // 2026-08-24: "niet meer tekst, meer inzetten op helderheid, minder
-            // poespas"). How you add a tree here is by standing in front of it,
-            // and everything else that used to be in this paragraph was us
-            // explaining ourselves.
-            Text("You can add a tree by taking a photograph of it and filling in what you know.")
-                .font(.footnote).foregroundStyle(Brand.inkSoft)
-            Button { navigator.collectNearby = true } label: {
-                Text("Add a tree")
-                    .font(.brand(16, .bold))
-                    .foregroundStyle(Brand.moss)
-                    .frame(maxWidth: .infinity).frame(height: 48)
-                    .background(Brand.surface, in: .capsule)
-                    .overlay { Capsule().strokeBorder(Brand.moss.opacity(0.35), lineWidth: 1.5) }
-            }
-            .buttonStyle(.plain)
-        }
-        .padding(18)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .brandCard()
-    }
-
     // MARK: - settings
 
     /// The two settings a map app is expected to have and ours did not. No
@@ -232,7 +212,7 @@ struct ProfileView: View {
     /// use keeps it and where the App Store expects to find it.
     private var settingsCard: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Settings").font(.eyebrow).textCase(.uppercase)
+            Text("Preferences").font(.eyebrow).textCase(.uppercase)
                 .foregroundStyle(Brand.inkSoft).tracking(0.8)
                 // No inset. It put SETTINGS and ABOUT at 20 while every card
                 // under them sits at 16, which appfit reads as a drift and a
@@ -343,7 +323,6 @@ struct ProfileView: View {
                 // a page whose whole content was a list of things that do not
                 // exist yet, one tap from two rows that say the same in three
                 // words each.
-                Divider().padding(.leading, 48)
                 // The Sponsor row is GONE, and so is the in-app purchase
                 // behind it (Hidde, 2026-08-29: "haal er maar uit tenzij we
                 // naar de website mogen verwijzen om het daar te doen"). We
@@ -352,35 +331,25 @@ struct ProfileView: View {
                 // ours, and the places where linking out IS allowed are one
                 // storefront (US) and one paid entitlement (EU), which is not
                 // one button shipped worldwide. The website keeps /sponsor.
-                // HIS ASK, 2026-08-26: a general feedback button, and under
-                // it specifically the features people would want. The open
-                // answers are the material the Plus line gets designed from,
-                // which beats any list we invent (drafts/PLUS_THINKING.md).
-                // The same editor the name on My trees opens. Two doors to
-                // one room, and he asked for both ("ook op profielpagina moet
-                // je je profielfoto etc aan kunnen passen, prima als dat dubbel
-                // is"): settings is where somebody looks for a thing about
-                // themselves, and the name on the page is where somebody
-                // notices it is wrong.
-                Button { editingProfile = true } label: {
-                    HStack(spacing: 12) {
-                        Image(systemName: "person.crop.circle").frame(width: 20)
-                            .foregroundStyle(Brand.moss)
-                        Text("Your name and picture").font(.callout)
-                            .foregroundStyle(Brand.ink)
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
-                    }
-                    .padding(.horizontal, 16).frame(height: 48)
-                    .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("settings-edit-profile")
-                Divider().padding(.leading, 48)
+            }
+            .brandCard()
+        }
+    }
+
+    // MARK: - help
+
+    /// Feedback and the App Store, the two ways to tell us something.
+    private var helpCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Help").font(.eyebrow).textCase(.uppercase)
+                .foregroundStyle(Brand.inkSoft).tracking(0.8)
+            VStack(spacing: 0) {
+                // HIS ASK, 2026-08-26: a general feedback button. The open
+                // answers are the material the Plus line gets designed from
+                // (drafts/PLUS_THINKING.md).
                 Button { givingFeedback = true } label: {
                     HStack(spacing: 12) {
-                        Image(systemName: "bubble.left.fill").frame(width: 20)
+                        Image(systemName: "bubble.left").frame(width: 20)
                             .foregroundStyle(Brand.moss)
                         Text("Send feedback").font(.callout)
                             .foregroundStyle(Brand.ink)
@@ -393,6 +362,12 @@ struct ProfileView: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("profile-feedback")
+                Divider().padding(.leading, 48)
+                // RATE THE APP (Hidde, 2026-09-04): Apple's own apps, Strava,
+                // AllTrails and Komoot carry this row. A LINK, never
+                // SKStoreReviewController, which may show nothing at all.
+                link("Rate the app", "star",
+                     "https://apps.apple.com/app/id6806177833?action=write-review")
             }
             .brandCard()
         }
@@ -408,24 +383,9 @@ struct ProfileView: View {
                 // under them sits at 16, which appfit reads as a drift and a
                 // reader reads as sloppy without being able to name it.
             VStack(spacing: 0) {
-                // RATE THE APP, and it is the convention rather than a pick
-                // (Hidde, 2026-09-04: "is het normaal conventie om ook een
-                // review de app knop bij settings te hebben"). It is: Apple's
-                // own apps, Strava, AllTrails and Komoot all carry a row like
-                // this in settings, and the App Store's own `action=write-review`
-                // parameter exists for it.
-                //
-                // A LINK, never SKStoreReviewController. Apple's guidance is
-                // explicit that the automatic prompt must not be attached to a
-                // button: the system may show nothing at all (it is capped at
-                // three a year), and a button that usually does nothing is
-                // worse than no button. ReviewPrompt keeps the automatic ask at
-                // its milestone; this is the door for somebody who has decided
-                // by themselves, and it always opens.
-                link("Rate the app", "star",
-                     "https://apps.apple.com/app/id6806177833?action=write-review")
-                Divider().padding(.leading, 48)
                 link("Privacy", "lock", "https://ancienttrees.app/privacy")
+                Divider().padding(.leading, 48)
+                link("Terms", "doc", "https://ancienttrees.app/terms")
                 Divider().padding(.leading, 48)
                 // The map credit lives one level down now (Hidde, 2026-08-25:
                 // "zet het in de legal rij zo ver mogelijk weg"). It used to
@@ -454,7 +414,6 @@ struct ProfileView: View {
                     .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
-                Divider().padding(.leading, 48)
             }
             .brandCard()
         }
@@ -666,7 +625,7 @@ struct ProfileView: View {
         if account.isSignedIn {
             Button { showingAccount = true } label: {
                 HStack {
-                    Text("Delete account").font(.callout).foregroundStyle(.red)
+                    Text("Delete account").font(.callout).foregroundStyle(Brand.dangerText)
                     Spacer()
                     Image(systemName: "chevron.right")
                         .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))

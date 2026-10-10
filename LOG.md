@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Settings: one screen on the app and the website
+
+**What changed:** on Hidde's yes to the settings board ("yes but of course some ux things have different conventions for web app use those"). Both surfaces now follow iOS Settings: your card at the top (name, email, ambassador badge) opens name and picture; Preferences (Distances, Directions); Help (Send feedback; Rate the app in the app, Support on the web); About (Privacy, Terms, Sources); Sign out; Delete account. The "Know a tree we are missing?" card and the "collected · saved" line left the app's Settings; Terms joined About. Website: rows with a green line icon and an arrow or value; choices are native dropdowns; name and picture, sign out and delete account each open the one sheet instead of inline fields and pink panels; Directions shows on an iPhone only. CONVENTIONS.md "Settings, the same screen on the app and the website".
+
 ## 2026-10-10 (session) - Removing is undone, not confirmed; Discover and My trees follow-ups
 
 **What changed:** Hidde, on "Remove from collected" swapping the sheet for a red question: "it feels weird ... please benchmark how these flows work", then "your suggestion sounds ok". Apple's alert guidance says not to confirm a common action that can be undone, and Material's says to act at once and offer Undo; uncollecting can be undone (the photographs stay). So on the app and the website, Remove from collected and (in the app) removing from Want to visit happen at once, and the snackbar offers Undo, which puts a collected tree back on the day it was first collected. The map's arrival card does the same. Questions stay only for what cannot be undone: delete account, discard an unsent photograph, delete your own tree. UndoWalk tests it.
