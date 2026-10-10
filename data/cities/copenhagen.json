@@ -91,7 +91,11 @@
       ],
       "height_m": 5,
       "age_basis": "source",
-      "verify_notes": "2026-09-23: species CORRECTED from White Mulberry (Morus alba) to Black Mulberry (Morus nigra) on the Dansk Traeregister (id 1901, reported by Hans Erik Lund, position verified 26-07-2013) and on Lund's own photograph of the fruit, which is dark and almost stalkless on thick rough leaves. The old species reading looks like a bridge claim from the silk story: silkworms are fed on white mulberry, so a white mulberry was assumed. The story was rewritten to say so rather than to repeat it. Pin moved 76 m to the register's verified coordinate and raised to confirmed. Register also records: height 5 m, growth form shrub, 'one of the oldest mulberry trees in Denmark', regionally remarkable, alive."
+      "verify_notes": "2026-09-23: species CORRECTED from White Mulberry (Morus alba) to Black Mulberry (Morus nigra) on the Dansk Traeregister (id 1901, reported by Hans Erik Lund, position verified 26-07-2013) and on Lund's own photograph of the fruit, which is dark and almost stalkless on thick rough leaves. The old species reading looks like a bridge claim from the silk story: silkworms are fed on white mulberry, so a white mulberry was assumed. The story was rewritten to say so rather than to repeat it. Pin moved 76 m to the register's verified coordinate and raised to confirmed. Register also records: height 5 m, growth form shrub, 'one of the oldest mulberry trees in Denmark', regionally remarkable, alive.",
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1901",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1901"
+      }
     },
     {
       "id": "cop_002",
@@ -244,7 +248,11 @@
       "girth_cm": 365,
       "height_m": 20,
       "age_basis": "source",
-      "verify_notes": "2026-09-23: pin moved 146 m to the Dansk Traeregister's verified coordinate (id 1998, position verified 19-03-2024) and raised to confirmed. The register's own note, 'Stenhojen centralt i Landbohojskolens Have', matches the stone mound our story already described, which is what settles that this is the same tree. It adds girth 3.65 m, height 20 m and the same 1883 planting the university library gives, so the age now has a second source. No photograph: Lund's four are a shot of the name plate and three backlit frames that photo_light scores POOR."
+      "verify_notes": "2026-09-23: pin moved 146 m to the Dansk Traeregister's verified coordinate (id 1998, position verified 19-03-2024) and raised to confirmed. The register's own note, 'Stenhojen centralt i Landbohojskolens Have', matches the stone mound our story already described, which is what settles that this is the same tree. It adds girth 3.65 m, height 20 m and the same 1883 planting the university library gives, so the age now has a second source. No photograph: Lund's four are a shot of the name plate and three backlit frames that photo_light scores POOR.",
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1998",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1998"
+      }
     },
     {
       "id": "cop_006",
@@ -338,6 +346,10 @@
         ],
         "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1467",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1467"
       }
     },
     {
@@ -382,7 +394,11 @@
       },
       "how_to_recognise": "Section C, the thickest trunk in the cemetery at 4.19 metres, one stem to about two metres up and then a fork into two.",
       "girth_cm": 419,
-      "height_m": 22.5
+      "height_m": 22.5,
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1477",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1477"
+      }
     },
     {
       "id": "cop_009",
@@ -464,7 +480,11 @@
       },
       "how_to_recognise": "Growing in the open with room on every side, 4.95 metres round and nearly 29 metres tall, the thickest trunk on this page inside the city itself.",
       "girth_cm": 495,
-      "height_m": 28.8
+      "height_m": 28.8,
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 839",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=839"
+      }
     },
     {
       "id": "cop_011",
@@ -535,7 +555,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "The hornbeam hung with tied-up pacifiers. It is cleared bare every November, so out of season look for the ribbons rather than the crop."
+      "how_to_recognise": "The hornbeam hung with tied-up pacifiers. It is cleared bare every November, so out of season look for the ribbons rather than the crop.",
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 842",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=842"
+      }
     },
     {
       "id": "cop_013",
@@ -571,7 +595,11 @@
       "location_precision": "confirmed",
       "how_to_recognise": "Section F in the north field, 4.01 metres round with severe bark scraping low on its western side, and the only tree of heaven in the cemetery.",
       "girth_cm": 401,
-      "height_m": 15.5
+      "height_m": 15.5,
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1474",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1474"
+      }
     },
     {
       "id": "cop_014",
@@ -591,7 +619,8 @@
         "https://da.wikipedia.org/wiki/Skovfogedegen",
         "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=993",
         "https://lex.dk/Skovfogedegen",
-        "https://historiskatlas.dk/Skovfogedegen_(10959)"
+        "https://historiskatlas.dk/Skovfogedegen_(10959)",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=993"
       ],
       "access": "Free, no ticket. Stands on public ground beside the road Strandvejen at the edge of Jaegersborg Dyrehave (the royal deer park), opposite Bellevue Strand. Open at all times.",
       "transport": "Klampenborg is roughly 10.9 km north of central Copenhagen. S-train line C (Kystbanen) from Copenhagen Central to Klampenborg station, about 16-20 minutes, then about 8 minutes on foot north along Strandvejen to the tree.",
@@ -621,6 +650,10 @@
         "source_name": "Skovfogedegen",
         "qid": "Q12335802",
         "views": 65
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 993",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=993"
       }
     },
     {
@@ -641,7 +674,8 @@
         "https://da.wikipedia.org/wiki/Klopstocks_Eg",
         "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=90",
         "https://stadsarkivet.ltk.dk/lyngby-taarbaeks-historie/mindesteder-i-lyngby-taarbaek/850-aar-paa-prinsessestien-klopstocks-eg",
-        "https://www.monumentaltrees.com/en/dnk/capitalregion/lyngbytaarbaek/27850_prinsessesti/61855/"
+        "https://www.monumentaltrees.com/en/dnk/capitalregion/lyngbytaarbaek/27850_prinsessesti/61855/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=90"
       ],
       "access": "Free, no ticket. Stands right beside Prinsessestien, a public path through Lyngby Aamose along Molleaadalen. Legally protected (fredet) since 1956, with a memorial plaque added in 1984, so a public authority has long treated it as open ground for visitors.",
       "transport": "Kongens Lyngby is roughly 11.9 km northwest of central Copenhagen. S-train to Sorgenfri station (about 22-24 minutes from Copenhagen H), then about 15 minutes on foot west along Prinsessestien through Lyngby Aamose to the tree.",
@@ -671,6 +705,10 @@
         "source_name": "Klopstocks Eg",
         "qid": "Q25388688",
         "views": 60
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 90",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=90"
       }
     },
     {
@@ -728,7 +766,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister (Danish Tree Register), id 1108, position verified 10-09-2018: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1108",
-        "Red Byens Traeer (a citizen blog documenting Norrebro's green spaces, independent of the register's own citation), which names this specific old crooked hawthorn at Nordpolen and describes it as older than Norrebro itself: http://redbyenstraeer.blogspot.com/2019/01/nordpolen-og-de-gamles-by-del-1.html and http://redbyenstraeer.blogspot.com/2019/02/nordpolen-og-de-gamles-by-del-2.html"
+        "Red Byens Traeer (a citizen blog documenting Norrebro's green spaces, independent of the register's own citation), which names this specific old crooked hawthorn at Nordpolen and describes it as older than Norrebro itself: http://redbyenstraeer.blogspot.com/2019/01/nordpolen-og-de-gamles-by-del-1.html and http://redbyenstraeer.blogspot.com/2019/02/nordpolen-og-de-gamles-by-del-2.html",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1108"
       ],
       "access": "Free, open green area; a public path crosses Nordpolen near De Gamles By, and the hawthorn stands beside it.",
       "transport": "Norrebro station (S-train) or bus 6A/350S along Tagensvej, then roughly 15-20 minutes on foot to De Gamles By.",
@@ -752,6 +791,10 @@
         ],
         "kind": "flowers",
         "label": "late May, when the low crown goes white with blossom"
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1108",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1108"
       }
     },
     {
@@ -772,7 +815,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister, id 981, position verified 09-05-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=981",
-        "Linda's netsted, an independent Danish hiking blog describing a walk past Dyrehaven's named giant oaks, which identifies Trepileegen by name and describes it as enormous, with a natural step-like base that makes it climbable: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/"
+        "Linda's netsted, an independent Danish hiking blog describing a walk past Dyrehaven's named giant oaks, which identifies Trepileegen by name and describes it as enormous, with a natural step-like base that makes it climbable: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=981"
       ],
       "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park (free-roaming red, sika and fallow deer share the park, keep a respectful distance).",
       "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park; the park is large (about 11 square kilometres) and has no closer station.",
@@ -789,6 +833,10 @@
         "width": 1500,
         "height": 1000,
         "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Viewing pass 2026-09-23: The whole oak standing free on the deer-park grass, in leaf against blue sky, its huge burred base visible at the foot: crown and trunk both readable and centred. Oak habit and foliage; the low wide bole matches an 8.9m girth, and the crown is taller and more irregular than Kuppelegen's dome 100m away, so the two frames are clearly two trees."
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 981",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=981"
       }
     },
     {
@@ -804,7 +852,8 @@
         "neighbourhood": "Norrebro"
       },
       "verified_sources": [
-        "Dansk Traeregister, id 1396, position verified 06-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1396"
+        "Dansk Traeregister, id 1396, position verified 06-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1396",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1396"
       ],
       "access": "Free, open public park (Hans Tavsens Park), adjacent to Assistens Cemetery.",
       "transport": "Norrebro station (S-train), about 15 minutes on foot.",
@@ -821,6 +870,10 @@
         "width": 1500,
         "height": 1346,
         "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Viewing pass 2026-09-23: The whole maple bare in March, blue sky, people at its foot for scale, the sawn-off major limbs the register describes plainly visible. A bare veteran whose architecture is the argument, which is the standard's own exception; trunk and crown both readable and dead centre. Species not confirmable from leaves in March, but the corky finely fissured pale bark in the next frame (shot a minute later, same tree) is field maple, and the register knows its own third-thickest navr."
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1396",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1396"
       }
     },
     {
@@ -841,7 +894,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister, id 980, position verified 09-05-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=980",
-        "Linda's netsted hiking blog, which names Kuppelegen among Dyrehaven's giant oaks, though the author notes uncertainty telling it apart from a neighbouring oak (Stokkerupegen) in the same cluster: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/"
+        "Linda's netsted hiking blog, which names Kuppelegen among Dyrehaven's giant oaks, though the author notes uncertainty telling it apart from a neighbouring oak (Stokkerupegen) in the same cluster: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=980"
       ],
       "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park.",
       "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park.",
@@ -858,6 +912,10 @@
         "width": 1500,
         "height": 1067,
         "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Viewing pass 2026-09-23: The whole oak in leaf, sunlit under blue sky, its broad dome filling the frame and the thick bole clear at the base. Pedunculate oak in the deer park, and the crown is the flat wide dome its name claims, plainly a different tree from Trepileegen's taller frame."
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 980",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=980"
       }
     },
     {
@@ -878,7 +936,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister, id 1000, position verified 16-05-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1000",
-        "Linda's netsted hiking blog, which names Vorteegen on the park's open grassland and notes it did not visibly show the wart-like growths its name suggests: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/"
+        "Linda's netsted hiking blog, which names Vorteegen on the park's open grassland and notes it did not visibly show the wart-like growths its name suggests: https://lindasnetsted.wordpress.com/2017/05/06/koebenhavn-egetraeer-i-dyrehaven/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1000"
       ],
       "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park.",
       "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park.",
@@ -906,7 +965,11 @@
           "height": 1500,
           "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Published 2026-09-24 on Hidde's ruling, after a first viewing pass had held it against the Cadiz standard: 'kunnen we zijn fotos niet allemaal gewoon gebruiken... ik vertrouw hem ook wel, zet maar zijn fotos live.' Lund photographs a veteran by walking up to the bole, so his sets run to trunk portraits, and holding those back left six trees with no picture at all. The warty bole the tree is named for, ground to first limbs."
         }
-      ]
+      ],
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1000",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1000"
+      }
     },
     {
       "id": "cop_022",
@@ -921,7 +984,8 @@
         "neighbourhood": "Vanlose"
       },
       "verified_sources": [
-        "Dansk Traeregister, id 1460, position verified 24-11-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1460"
+        "Dansk Traeregister, id 1460, position verified 24-11-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1460",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1460"
       ],
       "access": "Free, open public park (Grondalsparken), which runs as a green corridor along the railway between Damhussoen and Borups Alle.",
       "transport": "Grondal station (S-train), about 100 metres, a couple of minutes on foot.",
@@ -938,6 +1002,10 @@
         "width": 1500,
         "height": 1277,
         "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Published 2026-09-24 on Hidde's ruling, after a first viewing pass had held it against the Cadiz standard: 'kunnen we zijn fotos niet allemaal gewoon gebruiken... ik vertrouw hem ook wel, zet maar zijn fotos live.' Lund photographs a veteran by walking up to the bole, so his sets run to trunk portraits, and holding those back left six trees with no picture at all. The whole hornbeam bare on a flat grey day, which is the frame that actually shows the four or five stems the story is about, from the base up."
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1460",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1460"
       }
     },
     {
@@ -989,7 +1057,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister, id 1357, position verified 02-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1357",
-        "Carlsberg Byen's own account of J.C. Jacobsens Have, which confirms the garden (laid out 1848 by landscape architect Rudolph Rothe as J.C. Jacobsen's private garden, opened to the public in 2009, now a protected monument) as the historic planting ground for trees the brewer brought home from his travels: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have"
+        "Carlsberg Byen's own account of J.C. Jacobsens Have, which confirms the garden (laid out 1848 by landscape architect Rudolph Rothe as J.C. Jacobsen's private garden, opened to the public in 2009, now a protected monument) as the historic planting ground for trees the brewer brought home from his travels: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1357"
       ],
       "access": "Free, open public park (J.C. Jacobsens Have), part of Carlsberg Byen.",
       "transport": "Carlsberg station (S-train), about 10 minutes on foot.",
@@ -1006,6 +1075,10 @@
         "width": 1000,
         "height": 1500,
         "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Viewing pass 2026-09-23: The lime from the garden path, bare in early spring under blue sky: trunk fully readable, most of the crown in frame, tree centred with the garden and the old brewery buildings behind. Bare, so the silver undersides cannot be seen, but the fine pendulous branchlets of a weeping lime show in the sibling frames of the same run, and the wires holding the main limbs are there as the register describes."
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1357",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1357"
       }
     },
     {
@@ -1021,7 +1094,8 @@
         "neighbourhood": "Vanlose"
       },
       "verified_sources": [
-        "Dansk Traeregister, id 1465, position verified 24-11-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1465"
+        "Dansk Traeregister, id 1465, position verified 24-11-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1465",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1465"
       ],
       "access": "Free, open public park (Grondalsparken).",
       "transport": "Grondal station (S-train), about 10 minutes on foot along the park.",
@@ -1038,6 +1112,10 @@
         "width": 1121,
         "height": 1500,
         "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Viewing pass 2026-09-23: The whole maple on the park lawn, bare in November on a flat grey day, tree centred and dominant with the trunk cluster readable from the ground up. Multi-stemmed from about a metre exactly as the register says, pale finely fissured corky bark on the stems in the sibling frames: field maple. Bare and dull-lit, but it is the best of four and a bare frame beats no frame."
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1465",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1465"
       }
     },
     {
@@ -1054,7 +1132,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister, id 1531, position verified 16-12-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1531",
-        "Dansk Arkitektur Center on the museum's garden (Museumshaven), confirming it was reopened in 2014 as a space fully open toward Oster Voldgade and Solvgade, inviting passers-by in directly, and functions as public space around the clock: https://dac.dk/magazine/steder/museumshaven-ved-statens-museum-for-kunst-337"
+        "Dansk Arkitektur Center on the museum's garden (Museumshaven), confirming it was reopened in 2014 as a space fully open toward Oster Voldgade and Solvgade, inviting passers-by in directly, and functions as public space around the clock: https://dac.dk/magazine/steder/museumshaven-ved-statens-museum-for-kunst-337",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1531"
       ],
       "access": "Free, the museum's own grounds are open to the public around the clock as part of Oster Anlaeg; no ticket needed to reach the tree (a ticket is only needed to enter the museum building itself).",
       "transport": "Osterport station (S-train and regional trains), about 10 minutes on foot through Oster Anlaeg.",
@@ -1079,6 +1158,10 @@
         "width": 1500,
         "height": 1000,
         "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Viewing pass 2026-09-23: The whole beech against the National Gallery's white gable, bare on a grey February day, its low layering limbs sweeping out to the right. Tree centred, trunk and crown both readable, and the building says exactly where to stand. Flat light and the gable takes the left third, which is the honest weakness; it is the only whole-tree frame of four and a bare photograph beats none."
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1531",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1531"
       }
     },
     {
@@ -1095,7 +1178,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister, id 1355, position verified 02-04-2019: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1355",
-        "Carlsberg Byen's own account of J.C. Jacobsens Have and its history as brewer J.C. Jacobsen's private collection of trees brought home from his travels: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have"
+        "Carlsberg Byen's own account of J.C. Jacobsens Have and its history as brewer J.C. Jacobsen's private collection of trees brought home from his travels: https://www.carlsbergbyen.dk/om-carlsberg-byen/byrum-i-carlsberg-byen/jc-jacobsens-have",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1355"
       ],
       "access": "Free, open public park (J.C. Jacobsens Have), part of Carlsberg Byen.",
       "transport": "Carlsberg station (S-train), about 10 minutes on foot.",
@@ -1123,7 +1207,11 @@
           "height": 1500,
           "note": "Photographed by Hans Erik Lund of the Dansk Traeregister, given by mail on 2026-09-20: 'You are welcome to use my pictures (c) Hans Erik Lund in www.dendron.dk/dtr freely (no charge) as long as You mention me as author.' Not an open licence: credit him and ask before reuse elsewhere. Viewing pass 2026-09-23: Closer study of the same plane, the burred lumpy bole with the mansion and its statues behind and the fruit balls hanging in the limbs. Crown top is cut, so it is not a lead, but it shows the thing the wide frame cannot."
         }
-      ]
+      ],
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1355",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1355"
+      }
     },
     {
       "id": "cop_028",
@@ -1139,7 +1227,8 @@
       },
       "verified_sources": [
         "Dansk Traeregister, id 1181, position verified 03-12-2018: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1181",
-        "Hovedstadshistorie.dk's history of Holmens Kirkegard, confirming it as Copenhagen's oldest cemetery still in use (consecrated 1666, the navy's own burial ground, also called Skovkirkegard/Badsmandskirkegard) and open to visitors: https://www.hovedstadshistorie.dk/oestervold-2/holmens-kirkegaard/"
+        "Hovedstadshistorie.dk's history of Holmens Kirkegard, confirming it as Copenhagen's oldest cemetery still in use (consecrated 1666, the navy's own burial ground, also called Skovkirkegard/Badsmandskirkegard) and open to visitors: https://www.hovedstadshistorie.dk/oestervold-2/holmens-kirkegaard/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1181"
       ],
       "access": "Free, the cemetery is a working burial ground open to the public in daylight hours.",
       "transport": "Poul Henningsens Plads (Copenhagen Metro, Cityringen M3) or Osterport station, about 10-15 minutes on foot.",
@@ -1175,6 +1264,10 @@
         ],
         "kind": "autumn colour",
         "label": "late October into November, when the beech turns copper and russet"
+      },
+      "official_register": {
+        "name": "Dansk Traeregister (Dansk Dendrologisk Forening), no. 1181",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1181"
       }
     },
     {

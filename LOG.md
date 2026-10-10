@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, continuation) - Copenhagen enrichment
+
+Dansk Træregister id and page on 20 trees (cop_001 to cop_028 subset). The ids were already in each tree's own sources; I fetched all 20 pages and every one names the right genus. **Caveat:** that register is run by Dansk Dendrologisk Forening, a society, not a government body, so "official register" in the fact card is a stretch for these; if Hidde wants government-only, strip `register_*` on those 20. No measurements on dendron.dk, no pins, no access or season changes. 5 gaps dead-ended.
+
 ## 2026-10-10 (night run, continuation) - Valencia enrichment
 
 Verify agent matched 7 trees to their own entries in the Generalitat Valenciana register (vlc_001/002/003/004/008/009/016, ids in the file; no per-tree page exists) and returned a 13.6 m height for vlc_016. Seven Botanic Garden trees (vlc_015, 017-022) got one access line with the 4 EUR ticket and seasonal hours from jardibotanic.org. Applied 14 trees, preflight 0 problems. No season set (species files carry no striking moment). vlc_006 has no register entry within 80 m. 11 remaining gaps recorded as dead ends for 90 days. Valencia claim was refused (full city), enrichment needed none.
