@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "los-angeles",
+   "kind": "enrich",
+   "tokens": 156529,
+   "trees": 3,
+   "note": "no US register imported; monument no. 19, two heights; 31 gaps dead-ended"
+  },
+  {
+   "date": "2026-10-10",
    "target": "ede",
    "kind": "enrich",
    "tokens": 145843,

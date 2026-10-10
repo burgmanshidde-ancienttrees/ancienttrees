@@ -4,7 +4,7 @@
 
 ## 2026-10-10 (night run, 10:22 window) - Ede and Palma enrichment
 
-**Done:** Ede: register ids (LRMB) on all 7 trees, Hoge Veluwe prices and hours on the Pampel Oak; no measurements in that register, kasteelhoekelum.nl gives 403 to curl so the two Hoekelum access lines stay. Palma: Balears register records on all 5, heights on 3 (olive of Cort 6 m, Misericordia fig 20 m, cemetery fig 12 m), no girths with a stated 1.30 m height. Both preflight clean. No new trees (recovery mode). Visits last 7 days: 1,435 visits, 1,821 page views.
+**Done:** Ede: register ids (LRMB) on all 7 trees, Hoge Veluwe prices and hours on the Pampel Oak; no measurements in that register, kasteelhoekelum.nl gives 403 to curl so the two Hoekelum access lines stay. Palma: Balears register records on all 5, heights on 3 (olive of Cort 6 m, Misericordia fig 20 m, cemetery fig 12 m), no girths with a stated 1.30 m height. Los Angeles (third pass): 3 trees improved (lax_003 monument no. 19, two heights from press and the Santa Monica Conservancy); 31 gaps recorded as dead ends, hmdb.org gives 403 to curl. Preflight clean. No new trees (recovery mode). Visits last 7 days: 1,435 visits, 1,821 page views.
 
 ## 2026-10-10 (session) - The app as a builder reads it
 
