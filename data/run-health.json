@@ -2,28 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-21T10:16:58+00:00",
-   "date": "2026-08-21",
-   "run_id": "32471904925",
-   "minutes": 20.1,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 138,
-   "denials": 10,
-   "denials_source": "permission_denials: Bash(bash), Bash(cd), Bash(curl), Bash(echo), Bash(mkdir), Bash(python3)",
-   "ended": "success",
-   "tokens": 26621749,
-   "claims_held": [
-    "prague",
-    "singapore",
-    "milan"
-   ],
-   "commits": 7,
-   "cities_touched": 2,
-   "trees": 2,
-   "logged": true
-  },
-  {
    "started": "2026-08-21T18:44:12+00:00",
    "date": "2026-08-21",
    "run_id": "32514843827",
@@ -21380,6 +21358,134 @@
     },
     {
      "city": "valencia",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-10T16:48:02+00:00",
+   "date": "2026-10-10",
+   "run_id": "38069093643",
+   "minutes": 34.2,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 224,
+   "denials": 69,
+   "denials_source": "permission_denials: Bash(cat ; import ; for | ? ...), Bash(cat | head ; for ; do ...), Bash(cat | head ; mkdir ; for ...), Bash(cat), Bash(cd && cat ; import ; if ...), Bash(cd && curl ; curl ; curl ...), Bash(cd && for ; do ; curl ...), Bash(cd && for ; do ; grep ...), Bash(cd && mkdir && cd && for ...), Bash(cd && python3 ; import ; ? ...), Bash(cd && sed ; ? && python3 ...), Bash(cd && sed ; ? && sed ...), Bash(cd && unzip && ls), Bash(cd ; mkdir ; curl | head), Bash(curl && wc), Bash(curl ; file ; pdftotext | head), Bash(curl ; grep | sort | head), Bash(curl ; ls ; pdftotext ; grep ...), Bash(curl ; sed | tr | grep ...), Bash(curl ; wc ; curl ; wc), Bash(curl ; wc ; grep ; head), Bash(curl ; wc ; python3 ; import ...), Bash(curl ; wc), Bash(curl | sed | tr | grep ...), Bash(file), Bash(for ; do ; grep | kind ...), Bash(git && git && git | tail ...), Bash(grep | konusan | arcgis | ? ...), Bash(ls | head ; ls | head ...), Bash(mkdir && cat ; ? ; ? ...), Bash(mkdir && cat ; import ; ? ...), Bash(mkdir && cat ; import ; RN ...), Bash(mkdir && cat | head), Bash(mkdir && cd && curl ; ls ...), Bash(mkdir && cd && curl ; ls), Bash(mkdir && cd && curl ; wc ...), Bash(mkdir && cd && for ; do ...), Bash(mkdir && curl && wc), Bash(mkdir && for ; do ; sleep ...), Bash(mkdir ; cd ; curl ; curl ...), Bash(mkdir ; cd ; for ; do ...), Bash(mkdir), Bash(pdftotext), Bash(python3 ; import ; ? ; ? ...), Bash(python3 ; import ; ? ; mkdir ...), Bash(python3 ; import ; ? ; or ...), Bash(python3 ; import ; def ; Rejestr ...), Bash(python3 ; import ; for ; for ...), Bash(python3 ; import ; for | ? ...), Bash(python3 ; wc ; ls | grep ...), Bash(python3 ; wc ; python3 | head), Bash(python3), Bash(rm ; ls), Bash(sed ; ? ; ? ; ? ...), Bash(subshell python3 || mkdir && python3 ; wc), Bash(unzip), Bash(wc), Workflow",
+   "ended": "success",
+   "tokens": 3836557,
+   "claims_held": [],
+   "commits": 36,
+   "cities_touched": 27,
+   "cities": [
+    {
+     "city": "amt-neuhaus",
+     "trees": 0
+    },
+    {
+     "city": "bad-staffelstein",
+     "trees": 0
+    },
+    {
+     "city": "chicago",
+     "trees": 0
+    },
+    {
+     "city": "copenhagen",
+     "trees": 0
+    },
+    {
+     "city": "cork",
+     "trees": 0
+    },
+    {
+     "city": "cyprus",
+     "trees": 0
+    },
+    {
+     "city": "dallas",
+     "trees": 0
+    },
+    {
+     "city": "dresden",
+     "trees": 0
+    },
+    {
+     "city": "fukuoka",
+     "trees": 0
+    },
+    {
+     "city": "giessen",
+     "trees": 0
+    },
+    {
+     "city": "hamburg",
+     "trees": 0
+    },
+    {
+     "city": "hobart",
+     "trees": 0
+    },
+    {
+     "city": "istanbul",
+     "trees": 0
+    },
+    {
+     "city": "monterey",
+     "trees": 0
+    },
+    {
+     "city": "munich",
+     "trees": 0
+    },
+    {
+     "city": "munsterland",
+     "trees": 0
+    },
+    {
+     "city": "nara",
+     "trees": 0
+    },
+    {
+     "city": "nijmegen",
+     "trees": 0
+    },
+    {
+     "city": "nuremberg",
+     "trees": 0
+    },
+    {
+     "city": "ottawa",
+     "trees": 0
+    },
+    {
+     "city": "portland",
+     "trees": 0
+    },
+    {
+     "city": "ramsau-bei-berchtesgaden",
+     "trees": 0
+    },
+    {
+     "city": "sydney",
+     "trees": 0
+    },
+    {
+     "city": "untermerzbach",
+     "trees": 0
+    },
+    {
+     "city": "venice",
+     "trees": 0
+    },
+    {
+     "city": "volkenroda",
+     "trees": 0
+    },
+    {
+     "city": "warsaw",
      "trees": 0
     }
    ],
