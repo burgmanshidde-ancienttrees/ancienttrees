@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, fifth pass) - Portland enrichment
+
+**Done:** Portland Heritage Tree register ids on ptl_011 to ptl_020 (matched by coordinate within 14 m), autumn-colour best_time on the two Powell Park red oaks. Preflight clean.
+**Left open:** no per-tree register pages (portland.gov heritage page 404s), no seasons for plane, elm and sequoia; remaining gaps recorded as dead ends for 90 days.
+
 ## 2026-10-10 (night run, fourth pass) - Ottawa enrichment
 
 **Done:** Mound Elm (ott_020) now cites the NCC Remarkable Trees register entry (id 134); the Dawn Redwood (ott_016) has an autumn-colour best_time. Preflight clean.

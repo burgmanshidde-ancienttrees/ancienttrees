@@ -401,7 +401,11 @@
       "how_to_recognise": "A single enormous conifer beside the rectangular reservoir, far taller than the deciduous trees around it, with the deeply furrowed red bark of a sequoia.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 783
+      "girth_cm": 783,
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 152",
+        "url": null
+      }
     },
     {
       "id": "ptl_012",
@@ -431,7 +435,11 @@
       "how_to_recognise": "A tall, narrow, columnar poplar with an enormously thick base, standing out against a low skyline.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 975
+      "girth_cm": 975,
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 361",
+        "url": null
+      }
     },
     {
       "id": "ptl_013",
@@ -469,6 +477,10 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 7",
+        "url": null
       }
     },
     {
@@ -506,7 +518,11 @@
         "label": "July, when the seed chains hang at full length",
         "kind": "catkins"
       },
-      "girth_cm": 232
+      "girth_cm": 232,
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 85",
+        "url": null
+      }
     },
     {
       "id": "ptl_015",
@@ -536,7 +552,11 @@
       "how_to_recognise": "Two very large planes in line outside one house, with flaking cream and olive bark and crowns meeting overhead.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 482
+      "girth_cm": 482,
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 269, 270",
+        "url": null
+      }
     },
     {
       "id": "ptl_016",
@@ -568,7 +588,11 @@
       "location_precision": "confirmed",
       "girth_cm": 454,
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 454 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 454 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 258",
+        "url": null
+      }
     },
     {
       "id": "ptl_017",
@@ -607,7 +631,11 @@
       },
       "girth_cm": 436,
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 436 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 436 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 261",
+        "url": null
+      }
     },
     {
       "id": "ptl_018",
@@ -644,7 +672,11 @@
         "label": "the second half of June, when the white bells open",
         "kind": "flowers"
       },
-      "girth_cm": 411
+      "girth_cm": 411,
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 24, 25",
+        "url": null
+      }
     },
     {
       "id": "ptl_019",
@@ -674,7 +706,11 @@
       "how_to_recognise": "Three large planes together outside one address, crowns much broader than tall, with flaking cream and grey bark.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 536
+      "girth_cm": 536,
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 339, 340",
+        "url": null
+      }
     },
     {
       "id": "ptl_020",
@@ -704,7 +740,11 @@
       "how_to_recognise": "A big plane-like tree with strikingly white upper limbs and single hanging seed balls.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 393
+      "girth_cm": 393,
+      "official_register": {
+        "name": "City of Portland Heritage Trees (Portland Parks & Recreation), no. 212",
+        "url": null
+      }
     },
     {
       "id": "ptl_021",
@@ -1038,7 +1078,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the red oak turns deep red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ptl_032",
@@ -1068,7 +1116,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the red oak turns deep red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ptl_033",
