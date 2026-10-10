@@ -43,7 +43,8 @@
       "story": "This cedar has stood beside the Roman Arena for longer than most of the buildings currently ringing the square around it. Piazza Bra got its first deliberate garden in 1870, when the city decided the space needed shade and elegance to match its role as Verona's civic heart, and laid out three circular flowerbeds around a central fountain in 1873. The cedar planted then is one of the last survivors of that original scheme, now nearly 20 metres tall and weighing an estimated 16 tonnes. In June 2025 a gardener from the municipal green-space agency noticed the ground around its roots lifting unnaturally, a warning sign that the tree could be at risk of toppling in one of the city's busiest public spaces. What followed was a genuine local drama, tracked across Veronese news outlets for weeks: engineers drove three anchor points some four metres into the ground, tied together by twenty steel piles set in concrete, stabilising the root plate without removing the tree. The work finished just before the mid-August holiday, and the cedar, by every account since, is healthy and expected to stand for decades more.",
       "verified_sources": [
         "https://www.veronaoggi.it/verona/missione-compiuta-cedro-piazza-bra-adesso-salvo-16-agosto-2025/",
-        "https://www.giornaleadige.it/2025/10/28/cedro-piazza-bra-sicurezza-mia/"
+        "https://www.giornaleadige.it/2025/10/28/cedro-piazza-bra-sicurezza-mia/",
+        "https://www.giornaleadige.it/2025/10/28/cedro-piazza-bra-sicurezza-mia/ (\"alto circa 20 metri\", about 20 m, 2025 stabilisation report; veronaoggi says \"alto quasi 20 metri\")"
       ],
       "access": "Free, public square",
       "transport": "Adjacent to the Verona Arena, 5 min walk from Verona Porta Nuova station",
@@ -67,7 +68,8 @@
         "label": "September to November: upright barrel cones that sit on the branches like eggs",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by its tall crown rising beside the Roman Arena, its roots recently anchored with concrete piles after a 2025 scare. It stands in Piazza Bra, among the square's circular flowerbeds."
+      "how_to_recognise": "You can recognise it by its tall crown rising beside the Roman Arena, its roots recently anchored with concrete piles after a 2025 scare. It stands in Piazza Bra, among the square's circular flowerbeds.",
+      "height_m": 20
     },
     {
       "id": "ver_002",
@@ -184,7 +186,11 @@
       "height_m": 28.0,
       "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 309,
-      "how_to_recognise": "You can recognise it by its tall crown rising over the avenue, reaching 28 metres. It stands on Viale Nino Bixio, in Borgo Trento, between the city hospital and Ponte Garibaldi."
+      "how_to_recognise": "You can recognise it by its tall crown rising over the avenue, reaching 28 metres. It stands on Viale Nino Bixio, in Borgo Trento, between the city hospital and Ponte Garibaldi.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/L781/VR/05",
+        "url": null
+      }
     },
     {
       "id": "ver_005",
@@ -237,9 +243,10 @@
       "story": "Behind the Giardino Giusti's formal cypress avenue and geometric flowerbeds, the garden turns considerably wilder: a wooded section built from yew and laurel, an evergreen understorey planted to feel more like a natural grove than a designed landscape, leading down to a sixteenth-century grotto styled after the artificial caves fashionable in Renaissance Italian gardens. Taxus baccata is one of the most enduring tree species cultivated in European gardens, capable of living for many centuries and famously difficult to date precisely since its heartwood tends to hollow and rot away long before the tree itself dies, and this wood's older specimens fit that same pattern of a documented presence without a documented age. The grotto they surround was built to let visitors imagine themselves stepping into wilder, mythological terrain after walking through the garden's rigidly geometric front section, a contrast this yew and laurel planting still delivers exactly as designed more than four centuries later, regardless of what has happened to the garden's more famous cypress out front.",
       "verified_sources": [
         "https://www.artribune.com/turismo/2020/11/giardino-giusti-verona/",
-        "https://www.giardiniapertiverona.org/giardini/20-giardino-giusti/"
+        "https://www.giardiniapertiverona.org/giardini/20-giardino-giusti/",
+        "https://www.giardinogiusti.com/orari-e-biglietti/"
       ],
-      "access": "Paid entry, Giardino Giusti",
+      "access": "Paid entry at Giardino Giusti. Open all year except 25 December; winter hours 10:00 to 18:00, summer hours 9:00 to 19:00 (ticket price not stated on the garden's page).",
       "transport": "10 min walk from Piazza delle Erbe",
       "photo": {
         "url": null,
