@@ -10164,6 +10164,38 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "beijing",
+   "kind": "enrich",
+   "tokens": 155024,
+   "trees": 0,
+   "note": "Landscaping Bureau records and measurements on 3 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "madeira",
+   "kind": "enrich",
+   "tokens": 223392,
+   "trees": 0,
+   "note": "IFCN register sheets and measurements on 6 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "boston",
+   "kind": "enrich",
+   "tokens": 172686,
+   "trees": 0,
+   "note": "Arboretum accessions and NPS record on 7 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "san-francisco",
+   "kind": "enrich",
+   "tokens": 153022,
+   "trees": 0,
+   "note": "1 landmark tree id; register has no per-tree pages, sfenvironment.org 403s"
+  },
+  {
+   "date": "2026-10-10",
    "target": "kanazawa",
    "kind": "enrich",
    "tokens": 173902,

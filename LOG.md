@@ -11,7 +11,8 @@
 - **Beijing:** Landscaping Bureau records and measurements for the Nine Dragon Cypress and Beihai's Tang Scholar Tree, Zhongshan Park entry price and hours for the Seven Liao Cypresses. zhongshan-park.cn fails TLS verification (fetched with -k).
 - **Madeira:** IFCN ASMAC register sheets and measurements for 6 trees (two sheets have perimeter and height columns swapped, read by physical sense, noted in measure_source). The Witch Tree's OSM node matches our pin exactly but the answer carried no URL so the pin was not upgraded; the 4 garden trees stay open.
 - **Boston:** Arnold Arboretum accession ids and DBH-derived girths for 5 trees, NPS page, height, girth and hours for the Longfellow Linden. Leads for a next pass: the Meadow Road katsura's accession sits ~620 m from our pin (pin may be wrong), and the Arboretum white oak accession suggests a pin ~170 m away (refused for want of a source URL, not applied).
-- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k verify-agent tokens. No refusals except rm of scratch files.
+- **San Francisco:** thin yield, 1 of 8: the Cork Oak of 20th Street got Landmark Tree No. 15. The Public Works list has no per-tree pages and sfenvironment.org returns 403 to every fetcher (blocklist candidate).
+- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k verify-agent tokens. No refusals except rm of scratch files.
 
 ## 2026-10-10 (session) - Settings: one screen on the app and the website
 
