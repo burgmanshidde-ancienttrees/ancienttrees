@@ -197,7 +197,7 @@ struct HomeView: View {
             // One face per photograph: two lists fronted by the same yew side by
             // side read as a mistake, so a list whose face is taken is skipped.
             .reduce(into: [(collection: TreeCollection, face: Tree)]()) { out, l in
-                if out.count < 6, !out.contains(where: { $0.face.id == l.2.id }) {
+                if out.count < 12, !out.contains(where: { $0.face.id == l.2.id }) {
                     out.append((collection: l.1, face: l.2))
                 }
             }
@@ -416,21 +416,27 @@ struct HomeView: View {
     // skipped when it has nothing for where you are. The designs Hidde chose
     // are board D3 of the Discover canvas.
 
-    private let threeAcross = Array(repeating: GridItem(.flexible(), spacing: 8), count: 3)
-
-    /// THE GRIDS STAY INSIDE THE PAGE'S MARGIN (Hidde, 2026-10-10: "het
-    /// klopt weer niet op de discover pagina"). Edge to edge with square tiles
-    /// is for a page that IS a grid, your own collection: Instagram's profile,
-    /// the library in Apple Photos, our My trees. A page made of shelves keeps
-    /// one left edge and rounds what floats in it: the App Store, Airbnb,
-    /// AllTrails' Explore, the collections under Photos' grid
-    /// (CONVENTIONS.md, "Corners", corrected the same day). Bleeding three
-    /// grids out of the margin between rounded shelves made Discover's left
-    /// edge jump in and out down the page.
-    private func grid<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
-        LazyVGrid(columns: threeAcross, spacing: 8, content: content)
-            .padding(.horizontal, 16)
+    /// EVERY SECTION SLIDES (Hidde, 2026-10-10: "i expect to be able to
+    /// slide all section in the discover tab - its weird that some do and
+    /// other not"). The App Store's Apps and Games tabs, Google Play, Spotify
+    /// Home, Netflix and AllTrails' Explore make every row of a discovery page
+    /// a horizontal shelf that starts at the margin and lets the next card
+    /// peek in at the right edge, which is how a reader knows it moves; the
+    /// rest sits behind See all. A grid is for a page that IS a collection,
+    /// My trees (CONVENTIONS.md, "Corners", and "Every row on Discover
+    /// slides"). One shelf, one gap, one snap, for tiles, places and pills.
+    private func shelf<Content: View>(spacing: CGFloat = 12,
+                                      @ViewBuilder _ content: () -> Content) -> some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHStack(alignment: .top, spacing: spacing, content: content)
+                .scrollTargetLayout()
+        }
+        .contentMargins(.horizontal, 16, for: .scrollContent)
+        .scrollTargetBehavior(.viewAligned)
     }
+    /// Three tiles and the edge of a fourth on every phone: 3 x 120 + 2 x 12
+    /// + 16 is 400 points, so the fourth shows on the SE's 375 and on a 440.
+    private static let tileWidth: CGFloat = 120
     private static let tileShape = RoundedRectangle(cornerRadius: 12, style: .continuous)
 
     /// The tag on a tree tile: its city, and the distance when it is within a
@@ -442,11 +448,11 @@ struct HomeView: View {
         return "\(t.city) · " + (d < 10 ? String(format: "%.1f km", d) : "\(Int(d.rounded())) km")
     }
 
-    /// Three across inside the margin, rounded: see grid().
-    private func tileGrid(_ trees: [Tree]) -> some View {
-        grid {
+    /// A shelf of tree tiles, rounded: see shelf().
+    private func tileShelf(_ trees: [Tree]) -> some View {
+        shelf {
             ForEach(trees) { t in
-                NavigationLink(value: Route.tree(t.id)) { CollectedTile(kind: .ours(t), city: tag(t)).clipShape(Self.tileShape) }
+                NavigationLink(value: Route.tree(t.id)) { CollectedTile(kind: .ours(t), city: tag(t)).frame(width: Self.tileWidth).clipShape(Self.tileShape) }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-card")
             }
@@ -456,7 +462,7 @@ struct HomeView: View {
     /// A tile that opens somewhere other than its own tree: an island, a
     /// record, a list. The tag says what it opens.
     private func tile(_ tree: Tree, _ label: String, to route: Route) -> some View {
-        NavigationLink(value: route) { CollectedTile(kind: .ours(tree), city: label).clipShape(Self.tileShape) }
+        NavigationLink(value: route) { CollectedTile(kind: .ours(tree), city: label).frame(width: Self.tileWidth).clipShape(Self.tileShape) }
             .buttonStyle(.plain)
     }
 
@@ -518,7 +524,7 @@ struct HomeView: View {
                     navigator.openWantToVisit = true
                     navigator.selectTab = 2
                 })
-                tileGrid(Array(mine.prefix(3)))
+                tileShelf(Array(mine.prefix(3)))
             }
         }
     }
@@ -530,10 +536,10 @@ struct HomeView: View {
         if wantTrees.isEmpty {
             VStack(alignment: .leading, spacing: 12) {
                 ShelfHeader(title: "Want to visit")
-                grid {
+                shelf {
                     ForEach(0..<3, id: \.self) { i in
                         Brand.surfaceMuted
-                            .aspectRatio(3.0 / 4.0, contentMode: .fit)
+                            .frame(width: Self.tileWidth, height: Self.tileWidth * 4 / 3)
                             .clipShape(Self.tileShape)
                             .overlay {
                                 if i == 0 {
@@ -570,12 +576,10 @@ struct HomeView: View {
 
     private func placeRow<Item, Card: View>(_ items: [Item], id: KeyPath<Item, String>,
                                             @ViewBuilder _ card: @escaping (Item) -> Card) -> some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .top, spacing: 12) {
-                ForEach(items, id: id) { card($0) }
-            }
-            .padding(.horizontal, 16).padding(.bottom, 4)
+        shelf {
+            ForEach(items, id: id) { card($0) }
         }
+        .padding(.bottom, 4)
     }
 
     private func speciesPill(_ sp: (name: String, count: Int, photo: Tree?)) -> some View {
@@ -605,7 +609,7 @@ struct HomeView: View {
         wantToVisitFull
 
         if deck.best.count >= 3 {
-            section("At their best now") { tileGrid(deck.best) }
+            section("At their best now") { tileShelf(deck.best) }
         }
 
         cityShelf
@@ -633,7 +637,7 @@ struct HomeView: View {
 
         if deck.islands.count >= 3 {
             section("Tree islands") {
-                grid {
+                shelf {
                     ForEach(deck.islands.prefix(6), id: \.slug) { c in
                         if let face = catalogue.face(city: c.slug) { tile(face, c.name, to: .city(c.slug)) }
                     }
@@ -643,16 +647,15 @@ struct HomeView: View {
 
         if !deck.species.isEmpty {
             section("By species", more: .index(.species)) {
-                FlowRow(spacing: 8) {
+                shelf(spacing: 8) {
                     ForEach(deck.species, id: \.name) { speciesPill($0) }
                 }
-                .padding(.horizontal, 16)
             }
         }
 
         if deck.records.count == 3 {
             section("The records") {
-                grid {
+                shelf {
                     ForEach(deck.records, id: \.label) { r in tile(r.tree, r.label, to: r.route) }
                 }
             }
@@ -660,7 +663,7 @@ struct HomeView: View {
 
         if deck.lists.count >= 3 {
             section("Lists with an opinion") {
-                grid {
+                shelf {
                     ForEach(deck.lists, id: \.collection.slug) { l in
                         tile(l.face, l.collection.title, to: .collection(l.collection.slug))
                     }
@@ -675,7 +678,13 @@ struct HomeView: View {
     /// loading as you scroll (LazyVGrid draws only what is on screen).
     @ViewBuilder private var tailShelf: some View {
         if !deck.tail.isEmpty {
-            section(location.known ? "More trees near you" : "More trees") { tileGrid(deck.tail) }
+            // The last shelf, and its See all is the map, where every tree near
+            // you already is: AllTrails' "See all" opens the same list on its map.
+            VStack(alignment: .leading, spacing: 12) {
+                ShelfHeader(title: location.known ? "More trees near you" : "More trees",
+                            seeAll: { navigator.selectTab = 0 })
+                tileShelf(Array(deck.tail.prefix(20)))
+            }
         }
     }
 
@@ -692,14 +701,12 @@ struct HomeView: View {
             // walks as a paid feature; the free first one was my softening of
             // it, and the subtitle promising it goes with it.
             ShelfHeader(title: "Walks near you")
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(walksNear, id: \.name) { w in
-                        LockedRow(feature: .walkBeyondFirst, lockGlyph: false) { walkCard(w, locked: true) }
-                    }
+            shelf {
+                ForEach(walksNear, id: \.name) { w in
+                    LockedRow(feature: .walkBeyondFirst, lockGlyph: false) { walkCard(w, locked: true) }
                 }
-                .padding(.horizontal, 16).padding(.bottom, 4)
             }
+            .padding(.bottom, 4)
         }
     }
 

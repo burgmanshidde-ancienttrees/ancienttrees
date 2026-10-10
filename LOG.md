@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Every row on Discover slides
+
+**What changed:** Hidde: "i expect to be able to slide all section in the discover tab". Every section on Discover is now one sideways shelf, the App Store and AllTrails way: trees at their best, Want to visit, tree islands, species, the records, lists and More trees near you join the cities, countries and walks that already slid. Tiles are 120 points wide so a fourth peeks in at the edge on every phone, everything snaps to the margin, lists hold up to twelve, and More trees near you ends the page as a shelf of twenty with See all opening the map. My trees keeps its grid. Built and looked at on the simulator; appfit on the iPhone SE passes Discover. **Not this change, seen in the same measurement:** the My trees follower and following buttons are 62 by 20 (under 44), and "Take me there" on the tree page sits 8 points off the column.
+
 ## 2026-10-10 (night run, sixth pass) - Sydney enrichment
 
 **Done:** Vailele Moreton Bay Fig (syd_004) now cites Hunter's Hill Council's Significant Tree Register sheet and its 17 m height. Preflight clean.
