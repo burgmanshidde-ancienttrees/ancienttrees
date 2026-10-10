@@ -187,6 +187,10 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-10, scripts/retire.py: LRMB status 5 (Dood/geveld): nrs 1686403, 1683031, 1680168
+  ["tilburg", "oldest-elm-of-tilburg"],
+  ["tilburg", "silver-lime-of-the-frater-paullussehof"],
+  ["tilburg", "canadian-poplar-of-the-wilhelminapark"],
   // 2026-10-10, scripts/retire.py: its only basis, Giant Tree Database report 53641, is the Ashuku Hachiman shrine fir (hgh_0
   ["higashi-hiroshima", "fir-of-uneyama-shrine"],
   // 2026-10-10, scripts/retire.py: LRMB nr 1687596 at its coordinates is status 5 (Dood/geveld); the register note says only 
@@ -535,6 +539,17 @@ export function buildRedirectStubs(): RedirectStub[] {
       targetRelative: `../${citySlug}`,
       canonical: `${BASE_URL}/${citySlug}`,
       title: "Moved: this tree",
+    });
+  }
+
+  // Wilhelminapark (Tilburg) fell below Contract H's five-tree gate when its
+  // elm, silver lime and poplar were retired as register-dead (2026-10-10).
+  if (publishedSet.has("tilburg")) {
+    stubs.push({
+      outputPath: "parks/wilhelminapark-tilburg/index.html",
+      targetRelative: "../../tilburg",
+      canonical: `${BASE_URL}/tilburg`,
+      title: "Moved: Wilhelminapark",
     });
   }
 

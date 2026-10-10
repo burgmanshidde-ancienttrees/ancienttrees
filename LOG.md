@@ -2,7 +2,9 @@
 
 <!-- archive-index -->
 
-## 2026-10-10 (night run, final window) - Enrichment: Heidelberg
+## 2026-10-10 (night run, final window) - Enrichment: Heidelberg, Tilburg
+
+- **Tilburg:** girth and height for the Zuiderpark five, the Korvelplein oak (plus a September fruit season), the twin planes (one register entry covers both trees) and the Kloosterpark oak (girth only, the register's two heights disagree). **Retired til_001, til_002, til_003** (Wilhelminapark elm, Frater Paullussehof lime, Wilhelminapark poplar): all three are LRMB status 5 (Dood/geveld). The city page now says seventeen, its hero is the weeping lime and the oldest tree is the Oisterwijk Marialinde; the Wilhelminapark page fell below the five-tree gate, so I deleted it and added a redirect to /tilburg in redirect-map.ts (not yet seen in a build). **Check:** the Zuiderpark trees are LRMB status 4 (Afgekeurd, not designated), so I took measurements only and no register fields; til_008 is registered as a Japanese wingnut where we say Caucasian.
 
 - **Heidelberg:** all 6 Naturdenkmal trees got the LUBW per-tree steckbrief as register record, with the register's own number (82210001201 to 82210001227). The pages carry no girth, height or coordinate, so no measurements or pins; none of the six is finished enough to return to the index. 11 gaps recorded as 90-day dead ends. Removed the two stray _tmp scripts left by the Caserta pass. Shipped -3 trees earlier in the window came from retirements (Uneyama fir, Wageler beech), not a fault.
 

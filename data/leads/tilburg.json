@@ -1,0 +1,105 @@
+{
+ "leads": [
+  {
+   "id": "til_001",
+   "name": "The Oldest Elm of Tilburg",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "age_estimate": "roughly 145 to 155 years, from the register's planting band of 1870 to 1880",
+   "age_min": 146,
+   "age_max": 156,
+   "location": {
+    "address": "Wilhelminapark, in the south corner of the park",
+    "latitude": 51.56563,
+    "longitude": 5.07784,
+    "neighbourhood": "Wilhelminapark"
+   },
+   "story": "The register says two things about this tree and both are worth having. It is the oldest elm in Tilburg, and it was already standing before the park was laid out around it.\n\nThat second fact is the interesting one. A park built around an existing tree is a different object from a park planted from nothing: somebody stood on this ground, looked at what was here, and drew the paths to keep it. The elm was the reason for a decision rather than the result of one.\n\nBeing the oldest elm anywhere in the Netherlands is a harder thing than it sounds. Dutch elm disease arrived here in the 1920s and the second, far more aggressive strain in the 1970s, and between them they killed most of the mature elms in the country. Whole avenues went. An elm that reached a century and a half through both waves did so partly by luck of position, standing alone in a park corner rather than in a line where the beetles could work along it.\n\nIt is in the south corner. Elms leaf late and hold on late, so in November it is often still green when the rest of the park has turned.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 1.5 km north of Tilburg station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "In the south corner, with the asymmetric leaf base elms have, one side of the leaf starting lower on the stalk than the other.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-10",
+   "removed_reason": "LRMB status 5 (Dood/geveld): nrs 1686403, 1683031, 1680168"
+  },
+  {
+   "id": "til_002",
+   "name": "The Silver Lime of the Frater Paullussehof",
+   "species": "Silver Lime (Tilia tomentosa)",
+   "age_estimate": "roughly 185 to 195 years, from the register's planting band of 1830 to 1840",
+   "age_min": 186,
+   "age_max": 196,
+   "location": {
+    "address": "Frater Paullussehof 141",
+    "latitude": 51.55556,
+    "longitude": 5.08176,
+    "neighbourhood": "Centrum"
+   },
+   "story": "The oldest tree standing in Tilburg is a lime, which in a town that may be named after a lime is a decent piece of luck, and it is not on the square where anyone would look for it.\n\nSilver lime is worth learning to recognise, because the trick is easy and it works from thirty metres. The underside of every leaf is coated in fine white felt, so on a windy day the whole crown flickers between deep green and pale silver as the leaves turn over. No other large lime does this.\n\nIt has a second habit that is less charming. Silver lime flowers late, in July, and its nectar is famously hard on bumblebees; you sometimes find them stunned or dead under a big one in high summer. The mechanism has been argued over for decades and the current reading is that it is less about toxicity than about a starving late-season insect finding a huge, tempting, low-yield food source at the wrong moment.\n\nSo: go in July for the scent, which is heavy and carries a long way down a street, and look at the ground while you are there.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public planting in a residential courtyard, open at any time.",
+   "transport": "About 1 km northwest of Tilburg station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A big lime whose leaves flash white underneath in any breeze.",
+   "best_time": {
+    "months": [
+     7
+    ],
+    "kind": "flowers",
+    "label": "July, when the whole tree smells of honey from a street away"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-10",
+   "removed_reason": "LRMB status 5 (Dood/geveld): nrs 1686403, 1683031, 1680168"
+  },
+  {
+   "id": "til_003",
+   "name": "The Canadian Poplar of the Wilhelminapark",
+   "species": "Canadian Poplar (Populus x canadensis)",
+   "age_estimate": "roughly 155 to 165 years, from the register's planting band of 1860 to 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "Wilhelminapark, in the northeast corner of the park",
+    "latitude": 51.56653,
+    "longitude": 5.07929,
+    "neighbourhood": "Wilhelminapark"
+   },
+   "story": "Poplars are not supposed to get this old, which is the entire reason to go and look at this one.\n\nCanadian poplar is a hybrid of the European black poplar and the American eastern cottonwood, first raised in France in the eighteenth century and then planted across Europe by the million for the same reason people plant it now: it grows faster than almost anything else, throwing up several feet a year on wet ground. The trade-off is that it is soft-timbered, brittle in storms and generally treated as a crop rather than a monument. A hundred years is a good run. Most are taken out well before that because a limb has come down.\n\nThis one is somewhere past a century and a half and still standing in the northeast corner of the park, which means it has been through every serious storm since the 1860s without losing enough to condemn it.\n\nThe sound is the other thing. Poplar leaves are held on flattened stalks that let the blade pivot, so the whole crown rattles in wind that barely moves the trees beside it. On a breezy day you hear this one before you see it.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park, open daily.",
+   "transport": "About 1.5 km north of Tilburg station, on foot.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "The tallest tree in the northeast corner, with a crown that rattles audibly in light wind.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-10",
+   "removed_reason": "LRMB status 5 (Dood/geveld): nrs 1686403, 1683031, 1680168"
+  }
+ ],
+ "blocked": []
+}
