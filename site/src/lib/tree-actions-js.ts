@@ -67,6 +67,7 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (on) { mine[id] = true; try { at.track('save'); } catch (err) {} }
     else { delete mine[id]; }
     paint();
+    snack(on, id);
     // And if the account REFUSES the write, the heart goes back at once: a
     // lit heart on a save the server threw away is the bug of 2026-10-02.
     C.save(id, on).then(function(ok) {
@@ -75,6 +76,28 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
       paint();
     });
   };
+  // THE ONE-LINE CONFIRMATION (2026-10-10), the app's SnackBar. Added offers
+  // View, which opens the list; removed offers Undo, because the web removes
+  // without asking and the app asks first.
+  var snackTimer = null;
+  function snack(on, id) {
+    var s = document.querySelector('.at-snack');
+    if (!s) return;
+    s.querySelector('.at-snack-text').textContent = on ? s.dataset.added : s.dataset.removed;
+    var act = s.querySelector('.at-snack-act');
+    act.textContent = on ? s.dataset.view : s.dataset.undo;
+    act.onclick = function() {
+      hideSnack();
+      if (on) { location.href = s.dataset.href; } else { window.atSaveTree(id, true); }
+    };
+    s.hidden = false;
+    clearTimeout(snackTimer);
+    snackTimer = setTimeout(hideSnack, 4000);
+  }
+  function hideSnack() {
+    var s = document.querySelector('.at-snack');
+    if (s) s.hidden = true;
+  }
   document.addEventListener('at:signedout', function() {
     mine = {};
     paint();

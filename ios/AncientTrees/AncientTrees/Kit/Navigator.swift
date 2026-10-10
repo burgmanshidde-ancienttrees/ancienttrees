@@ -49,6 +49,22 @@ public final class Navigator {
     /// Set together with selectTab = 2, cleared by Collect when it switches.
     public var openWantToVisit = false
 
+    /// THE ONE-LINE CONFIRMATION at the bottom of the screen (Hidde,
+    /// 2026-10-10: "when pressing the bookmark sign a confirmation ... this
+    /// tree was added to want to visit list would be nice"). Airbnb's "Saved
+    /// to ..." and Pinterest's, Material's acknowledgement: one line, non-modal,
+    /// gone by itself, at most one action. The filled bookmark keeps the state.
+    public struct Snack: Equatable {
+        public let id = UUID()
+        public let text: String
+        /// Offer "View", which opens My trees on Want to visit.
+        public let viewWantToVisit: Bool
+        public init(text: String, viewWantToVisit: Bool = false) {
+            self.text = text; self.viewWantToVisit = viewWantToVisit
+        }
+    }
+    public var snack: Snack?
+
     /// A CITY somebody wants to see on the map, by slug. The same shape as
     /// showOnMap and for the same reason: a city page's map preview is a way to
     /// the map rather than a second map, and until 2026-08-25 it was neither,

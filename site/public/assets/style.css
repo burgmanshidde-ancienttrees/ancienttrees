@@ -3089,3 +3089,13 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .acct-lanes .lane-picker { margin-bottom: 12px; }
 .acct-lanes .country-chips { padding: 0 0 12px; }
 .acct-lanes #pane-mine, .acct-lanes #pane-saved { margin-top: 0; }
+
+/* The one-line confirmation after the bookmark (2026-10-10), the app's SnackBar. */
+.at-snack { position: fixed; left: 50%; bottom: calc(96px + env(safe-area-inset-bottom)); transform: translateX(-50%);
+  z-index: 60; width: min(560px, calc(100% - 32px)); box-sizing: border-box; display: flex; align-items: center; gap: 12px;
+  min-height: 52px; padding: 0 8px 0 16px; background: var(--cream); color: var(--ink); border: 1px solid #E6E6E6;
+  border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.16); font-weight: 600; font-size: 15px; }
+.at-snack[hidden] { display: none; }
+.at-snack-text { flex: 1; min-width: 0; }
+.at-snack-act { min-height: 44px; min-width: 44px; padding: 0 10px; border: 0; background: none; color: var(--moss);
+  font: inherit; font-weight: 700; cursor: pointer; }

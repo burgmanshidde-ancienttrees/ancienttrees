@@ -532,6 +532,7 @@ struct ContentView: View {
                         // hiding something from eyes only.
 
                 }
+                .overlay(alignment: .bottom) { SnackBar() }
                 .appObjects(self)
                 .reviewAsk(reviewPrompt)
                 .onChange(of: navigator.collectNearby) { _, want in

@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - The bookmark confirms itself, app and web
+
+**Changed:** saving a tree shows one line at the bottom, "Added to Want to visit · View" (View opens the list), gone after four seconds, the Airbnb and Pinterest pattern; app (Navigator.snack, SnackBar drawn by the root) and website (Base.astro's .at-snack, painted by TREE_ACTIONS_JS, eight languages). The website removes without asking, so a removal there says "Removed from Want to visit · Undo". The app's removal question now names the list ("Remove ... from Want to visit?") instead of "your collection" (Hidde).
+
 ## 2026-10-10, session: App Store downloads were counted up to twice
 
 Apple's daily download reports overlap by a day, and `asc_downloads.py` added both copies, so the digest's download table and its source split ran high since they were built: 34 first-time downloads in the 14-day window where Apple's own rows hold 22. Each day is now taken from the newest report that carries it, keyed on the row's own date. Older DATA.md entries keep the inflated figures; read them as roughly 1.5 times too high. The real last days: 4 on 2026-10-08 and 4 on 2026-10-09, all on 1.0.2, so none of it is the 1.0.3 keywords, which are not live yet.

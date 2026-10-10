@@ -443,6 +443,11 @@ export interface UIStrings {
    * written to catch. */
   mapFilterGroup: string;
   mapFilterFav: string;
+  /** The one-line confirmation after the bookmark (2026-10-10), and its action. */
+  wantAdded: string;
+  wantRemoved: string;
+  wantView: string;
+  wantUndo: string;
   mapFilterMine: string;
   mapFilterSpecies: string;
   mapFilterFree: string;
@@ -717,6 +722,10 @@ const EN: UIStrings = {
   homeMissionLink: "tell us about it",
   mapFilterGroup: "Filter the map",
   mapFilterFav: "Want to visit",
+  wantAdded: "Added to Want to visit",
+  wantRemoved: "Removed from Want to visit",
+  wantView: "View",
+  wantUndo: "Undo",
   mapFilterMine: "Collected",
   mapFilterSpecies: "Species",
   mapFilterFree: "Free to visit",
@@ -820,6 +829,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeMissionLink: "cuéntanoslo",
     mapFilterGroup: "Filtrar el mapa",
     mapFilterFav: "Quiero visitar",
+    wantAdded: "Añadido a Quiero visitar",
+    wantRemoved: "Quitado de Quiero visitar",
+    wantView: "Ver",
+    wantUndo: "Deshacer",
     mapFilterMine: "Coleccionados",
     mapFilterSpecies: "Especie",
     mapFilterFree: "Gratis",
@@ -1081,6 +1094,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeMissionLink: "raccontacelo",
     mapFilterGroup: "Filtra la mappa",
     mapFilterFav: "Da visitare",
+    wantAdded: "Aggiunto a Da visitare",
+    wantRemoved: "Tolto da Da visitare",
+    wantView: "Vedi",
+    wantUndo: "Annulla",
     mapFilterMine: "Collezionati",
     mapFilterSpecies: "Specie",
     mapFilterFree: "Gratis",
@@ -1342,6 +1359,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeMissionLink: "laat het ons weten",
     mapFilterGroup: "Kaart filteren",
     mapFilterFav: "Wil ik bezoeken",
+    wantAdded: "Toegevoegd aan Wil ik bezoeken",
+    wantRemoved: "Verwijderd uit Wil ik bezoeken",
+    wantView: "Bekijk",
+    wantUndo: "Ongedaan maken",
     mapFilterMine: "Verzameld",
     mapFilterSpecies: "Soort",
     mapFilterFree: "Gratis",
@@ -1603,6 +1624,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeMissionLink: "sagen Sie es uns",
     mapFilterGroup: "Karte filtern",
     mapFilterFav: "Will ich besuchen",
+    wantAdded: "Zu Will ich besuchen hinzugefügt",
+    wantRemoved: "Aus Will ich besuchen entfernt",
+    wantView: "Ansehen",
+    wantUndo: "Rückgängig",
     mapFilterMine: "Gesammelt",
     mapFilterSpecies: "Art",
     mapFilterFree: "Kostenlos",
@@ -1864,6 +1889,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeMissionLink: "diga-nos",
     mapFilterGroup: "Filtrar o mapa",
     mapFilterFav: "Quero visitar",
+    wantAdded: "Adicionado a Quero visitar",
+    wantRemoved: "Removido de Quero visitar",
+    wantView: "Ver",
+    wantUndo: "Desfazer",
     mapFilterMine: "Colecionadas",
     mapFilterSpecies: "Espécie",
     mapFilterFree: "Grátis",
@@ -2125,6 +2154,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeMissionLink: "dites-le-nous",
     mapFilterGroup: "Filtrer la carte",
     mapFilterFav: "À visiter",
+    wantAdded: "Ajouté à À visiter",
+    wantRemoved: "Retiré de À visiter",
+    wantView: "Voir",
+    wantUndo: "Annuler",
     mapFilterMine: "Collectionnés",
     mapFilterSpecies: "Espèce",
     mapFilterFree: "Gratuit",
@@ -2386,6 +2419,10 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     homeMissionLink: "お知らせください",
     mapFilterGroup: "地図をしぼり込む",
     mapFilterFav: "行きたい",
+    wantAdded: "行きたいに追加しました",
+    wantRemoved: "行きたいから削除しました",
+    wantView: "見る",
+    wantUndo: "元に戻す",
     mapFilterMine: "集めた木",
     mapFilterSpecies: "樹種",
     mapFilterFree: "無料",

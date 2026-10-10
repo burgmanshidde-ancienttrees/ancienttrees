@@ -36,6 +36,7 @@ struct SaveHeart: View {
     @Environment(Saved.self) private var saved
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
+    @Environment(Navigator.self) private var navigator
     @State private var confirmingRemove = false
 
     private var isSaved: Bool { saved.isSaved(tree.id) }
@@ -47,7 +48,7 @@ struct SaveHeart: View {
             .accessibilityLabel(isSaved ? "Saved \(tree.name). Tap to remove"
                                         : "Save \(tree.name)")
             .sensoryFeedback(.selection, trigger: isSaved)
-            .confirmationDialog("Remove \(tree.name) from your collection?",
+            .confirmationDialog("Remove \(tree.name) from Want to visit?",
                                 isPresented: $confirmingRemove,
                                 titleVisibility: .visible) {
                 Button("Remove", role: .destructive) { saved.toggleSaved(tree.id) }
@@ -61,7 +62,7 @@ struct SaveHeart: View {
             // the account holds, which can include this very tree kept on
             // another device, and a blind toggle would then UN-save it.
             nudge.require(.keepTree(tree.name)) {
-                if !saved.isSaved(tree.id) { saved.toggleSaved(tree.id) }
+                if !saved.isSaved(tree.id) { saved.toggleSaved(tree.id); confirmAdded() }
             }
             return
         }
@@ -69,6 +70,13 @@ struct SaveHeart: View {
             confirmingRemove = true
         } else {
             saved.toggleSaved(tree.id)
+            confirmAdded()
+        }
+    }
+
+    private func confirmAdded() {
+        withAnimation(.easeOut(duration: 0.2)) {
+            navigator.snack = .init(text: "Added to Want to visit", viewWantToVisit: true)
         }
     }
 
@@ -93,6 +101,52 @@ struct SaveHeart: View {
                 .frame(width: 52, height: 52)
                 .background(Brand.surface, in: .circle)
                 .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
+        }
+    }
+}
+
+/// The confirmation line itself, drawn once by the root over every screen.
+/// Above the floating tab bar and the tree page's action bar alike.
+struct SnackBar: View {
+    @Environment(Navigator.self) private var navigator
+
+    var body: some View {
+        if let s = navigator.snack {
+            HStack(spacing: 12) {
+                Image(systemName: "bookmark.fill").foregroundStyle(Brand.moss)
+                Text(s.text)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Brand.ink)
+                    .lineLimit(2)
+                Spacer(minLength: 8)
+                if s.viewWantToVisit {
+                    Button("View") {
+                        navigator.snack = nil
+                        navigator.openWantToVisit = true
+                        navigator.selectTab = 2
+                    }
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Brand.moss)
+                    .frame(minWidth: 44, minHeight: 44)
+                    .accessibilityIdentifier("snack-view")
+                }
+            }
+            .padding(.leading, 16).padding(.trailing, 8)
+            .frame(minHeight: 52)
+            .background(Brand.surface, in: .rect(cornerRadius: 14))
+            .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Brand.hairline, lineWidth: 1) }
+            .shadow(color: .black.opacity(0.16), radius: 14, y: 4)
+            .padding(.horizontal, 16)
+            .padding(.bottom, 92)
+            .transition(.move(edge: .bottom).combined(with: .opacity))
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("snack")
+            .task(id: s.id) {
+                try? await Task.sleep(for: .seconds(4))
+                if navigator.snack?.id == s.id {
+                    withAnimation(.easeIn(duration: 0.2)) { navigator.snack = nil }
+                }
+            }
         }
     }
 }

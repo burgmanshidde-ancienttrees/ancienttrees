@@ -594,5 +594,14 @@ window.atPaintNav = function(inNow) {
     });
   })();
 </script>
+  {/* THE ONE-LINE CONFIRMATION after the bookmark (Hidde, 2026-10-10), the
+      app's SnackBar: one line, non-modal, gone by itself, one action. Painted
+      by TREE_ACTIONS_JS; the words travel here so every language has them. */}
+  <div class="at-snack" role="status" aria-live="polite" hidden
+       data-added={ui(lang).wantAdded} data-removed={ui(lang).wantRemoved}
+       data-view={ui(lang).wantView} data-undo={ui(lang).wantUndo} data-href="/saved">
+    <span class="at-snack-text"></span>
+    <button type="button" class="at-snack-act"></button>
+  </div>
 </body>
 </html>
