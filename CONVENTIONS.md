@@ -3181,6 +3181,8 @@ Hidde asked whether Discover should become an infinite scroll, with rows like tr
 
 **What we take:** more shelves, not infinite scroll. Personal shelves first (near you, your country), then editorial ones (collections, which the feed already sends as `collections`), then the indexes (countries, species), and the "map is still growing" card stays as the deliberate end. Every shelf follows the existing face rule: no shelf without photographs.
 
+**Amended 2026-10-10 (Hidde: "more trees near you at the end is perfect").** The curated shelves still end, and the stream after them is exactly the case this entry allowed: endless SIMILAR items, every photographed tree nearest first, the Instagram and Pinterest pattern. The growing card now sits just above that stream rather than closing the page.
+
 ## A list card on a phone (2026-10-04)
 
 Reference: AllTrails' and Airbnb's phone result lists, and the ordered-list convention for numbered rows. On a touch screen a card has no hover fill and no underlined title (iOS keeps :hover on the last thing touched, which is what painted Barcelona's first card cream). Every line of text hangs from one left edge, so with a number badge the meta, story and credit indent to the title, not to the badge. The photo credit closes the card instead of sitting between the photograph and its name.

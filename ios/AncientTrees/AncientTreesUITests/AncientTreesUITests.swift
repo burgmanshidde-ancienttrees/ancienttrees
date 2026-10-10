@@ -326,7 +326,7 @@ final class AncientTreesUITests: XCTestCase {
                       "the cities shelf is missing")
 
         var found = Set<String>()
-        let wanted = ["The oldest trees we map", "Tree countries", "By species"]
+        let wanted = ["The records", "Tree countries", "By species"]
         for _ in 0..<10 where found.count < wanted.count {
             for w in wanted where app.staticTexts[w].exists { found.insert(w) }
             app.swipeUp(velocity: .fast)

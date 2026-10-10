@@ -303,6 +303,13 @@ struct CollectView: View {
         return ranked.prefix(18).map(\.key)
     }
 
+    /// Discover's Want to visit "See all" lands here (Navigator.openWantToVisit).
+    private func takeWantToVisit() {
+        guard navigator.openWantToVisit else { return }
+        navigator.openWantToVisit = false
+        lane = .want
+    }
+
     var body: some View {
         // THE SAME COMPONENT THE MAP SCREEN USES (Hidde, 2026-08-26: "ik wil
         // gewoon dezelfde interactie als op home ... je wilt deze interactie
@@ -320,6 +327,8 @@ struct CollectView: View {
         }
         .brandGround()
         .toolbar(.hidden, for: .navigationBar)
+        .onAppear { takeWantToVisit() }
+        .onChange(of: navigator.openWantToVisit) { _, _ in takeWantToVisit() }
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
             sent = await Submission.mine(token: account.freshToken())

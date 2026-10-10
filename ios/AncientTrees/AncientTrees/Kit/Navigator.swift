@@ -45,6 +45,10 @@ public final class Navigator {
     /// finds a destination (search, a shortcut), cleared by the root.
     public var push: Route?
 
+    /// Discover's "See all" on Want to visit: open My trees on that lane.
+    /// Set together with selectTab = 2, cleared by Collect when it switches.
+    public var openWantToVisit = false
+
     /// A CITY somebody wants to see on the map, by slug. The same shape as
     /// showOnMap and for the same reason: a city page's map preview is a way to
     /// the map rather than a second map, and until 2026-08-25 it was neither,

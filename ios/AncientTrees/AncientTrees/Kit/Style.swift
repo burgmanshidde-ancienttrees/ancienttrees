@@ -246,6 +246,8 @@ public struct ShelfHeader: View {
     /// header can push onto the tab's own stack without every caller wiring
     /// navigation by hand.
     var more: Route? = nil
+    /// The same "See all", for a destination that is not a pushed page (a tab).
+    var seeAll: (() -> Void)? = nil
 
     /// The title and "See all" share ONE line, and a subtitle sits under the
     /// whole row rather than beside it.
@@ -265,6 +267,18 @@ public struct ShelfHeader: View {
                 Spacer(minLength: 8)
                 if let more {
                     NavigationLink(value: more) {
+                        HStack(spacing: 3) {
+                            Text("See all").font(.subheadline.weight(.semibold))
+                            Image(systemName: "chevron.right").font(.caption2)
+                        }
+                        .foregroundStyle(Brand.moss)
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
+                    }
+                    .buttonStyle(.plain)
+                }
+                if let seeAll {
+                    Button(action: seeAll) {
                         HStack(spacing: 3) {
                             Text("See all").font(.subheadline.weight(.semibold))
                             Image(systemName: "chevron.right").font(.caption2)

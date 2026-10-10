@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Discover rebuilt in the app (board D3)
+
+**Changed, in the next app build:** Discover now opens on the season where you are ("Autumn is here", the south gets spring), then your Want to visit trees, six trees at their best now, the cities, the open ambassador seat of your own city, countries, islands, species as photo pills, the three records, six lists, and ends in "More trees near you": every photographed tree, nearest first, three across, loading as you scroll. One tile everywhere (My trees' 3:4 grid, edge to edge), one white tag, "City · 1.4 km" within a day trip. Removed: the stock hero (kept as fallback), the oldest/tallest/thickest/best-in-country shelves, the species list. Spec: docs/superpowers/specs/2026-10-10-discover-redesign-design.md.
+**Not yet:** the website homepage (Hidde asked for the app; the web board is redrawn from D3 first), a gardens and parks row (the app has no park page), and the season hero shows each tree's lead photograph, which in Copenhagen is often a winter frame under "Autumn is here".
+
 ## 2026-10-10 (session) - Which trees were collected in the app, and better PostHog insight
 
 **Found:** the three app ticks were one tree, the Stone Pine of the Jardines de Cristina in Seville (sev_039), ticked three times on 10-08 by one install (92A2) on an App Store version older than the build field. No row reached the visited table, which fits a tick, untick, tick ending unticked as well as a failed write, and nothing could tell the two apart.

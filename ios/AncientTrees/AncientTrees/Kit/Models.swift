@@ -329,6 +329,9 @@ public struct TreeCollection: Codable, Hashable, Sendable, Identifiable {
     /// (lib/favourites.ts COLLECTION_MONTHS). Discover shows it as a shelf in
     /// those months only. Absent on most collections and on older snapshots.
     public var months: [Int]? = nil
+    /// The tree whose photograph fronts this list, decided on the website
+    /// (collectionFace in browse.json). Absent on an older snapshot.
+    public var face: String? = nil
 
     public var id: String { slug }
 }

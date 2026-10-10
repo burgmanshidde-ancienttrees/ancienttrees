@@ -72,18 +72,22 @@ struct CollectedTile: View {
     /// is, and that is the question a collection of trees across countries
     /// raises first.
     @ViewBuilder private var tag: some View {
-        if let city, !city.isEmpty { pill(city, icon: nil, filled: false) }
+        if let city, !city.isEmpty { TagPill(text: city) }
     }
+}
 
-    private func pill(_ text: String, icon: String?, filled: Bool) -> some View {
-        HStack(spacing: 3) {
-            if let icon { Image(systemName: icon) }
-            Text(text)
-        }
-        .font(.system(size: 10, weight: .semibold))
-        .foregroundStyle(filled ? .white : Brand.moss)
-        .padding(.horizontal, 6).padding(.vertical, 3)
-        .background(filled ? AnyShapeStyle(Brand.moss) : AnyShapeStyle(Brand.surface), in: .capsule)
+/// THE tag (Hidde, 2026-10-10: "i really prefer the tags of white background
+/// and green letters keep those"). One look for every tag on a photograph:
+/// the collected grid, Discover's tiles and its season hero.
+struct TagPill: View {
+    let text: String
+    var body: some View {
+        Text(text)
+            .font(.system(size: 10, weight: .semibold))
+            .foregroundStyle(Brand.moss)
+            .lineLimit(2)
+            .padding(.horizontal, 6).padding(.vertical, 3)
+            .background(Brand.surface, in: .rect(cornerRadius: 8))
     }
 }
 

@@ -59,41 +59,51 @@ struct HomeView: View {
     @State private var deck = Shelves()
 
     struct Shelves {
-        var oldest: [Tree] = []
-        var countries: [(name: String, count: Int, cities: Int, photo: Tree?)] = []
+        /// The season where you stand: its word, the photographed tree at its
+        /// best nearest to you, how many trees on your half of the world are at
+        /// their best this month, and how many of those are within 20 km.
+        var season: (word: String, hero: Tree, count: Int, near: Int)? = nil
+        /// At their best now, photographed, nearest first, the hero left out.
+        var best: [Tree] = []
         var cities: [(slug: String, name: String, country: String, count: Int)] = []
-        var walksNear: [Walk] = []
-        var species: [(name: String, count: Int)] = []
-        /// The country you are standing in and its best photographed trees.
-        var home: (country: String, trees: [Tree])? = nil
-        var tallest: (collection: TreeCollection, trees: [Tree])? = nil
-        var thickest: (collection: TreeCollection, trees: [Tree])? = nil
+        /// The city you are standing in, for the ambassador row.
+        var here: (slug: String, name: String)? = nil
+        var countries: [(name: String, count: Int, photo: Tree?)] = []
         var islands: [(slug: String, name: String, country: String, count: Int)] = []
-        var inSeason: [(collection: TreeCollection, trees: [Tree])] = []
-        /// The photographed trees closest to you, nearest first.
-        var near: [Tree] = []
-        /// Trees whose best_time includes this month, for the months no
-        /// seasonal collection covers (December to February).
-        var atTheirBest: [Tree] = []
+        var species: [(name: String, count: Int, photo: Tree?)] = []
+        var records: [(label: String, tree: Tree, route: Route)] = []
+        var lists: [(collection: TreeCollection, face: Tree)] = []
+        var walksNear: [Walk] = []
+        /// Every photographed tree not already on the page, nearest first:
+        /// the stream at the bottom that keeps going.
+        var tail: [Tree] = []
     }
 
     private var month: Int { Calendar.current.component(.month, from: Date()) }
 
     private var cities: [(slug: String, name: String, country: String, count: Int)] { deck.cities }
     private var walksNear: [Walk] { deck.walksNear }
-    private var oldest: [Tree] { deck.oldest }
 
-    /// Rebuilt when the catalogue changes under us, which it now does, or when
-    /// the map has moved somewhere far enough to change what is near.
+    /// The season's word on your half of the world (Hidde, 2026-10-09: "wat
+    /// doen we met het feit dat sommige landen niet tegelijk herfst hebben").
+    static func seasonWord(month: Int, south: Bool) -> String {
+        let m = south ? (month + 5) % 12 + 1 : month
+        switch m {
+        case 3...5: return "Spring"
+        case 6...8: return "Summer"
+        case 9...11: return "Autumn"
+        default: return "Winter"
+        }
+    }
+
+    /// Rebuilt when the catalogue changes under us, or when the map has moved
+    /// somewhere far enough to change what is near.
     private func buildShelves() {
         var s = Shelves()
         // THE WEBSITE'S SHELF, in the website's order (feed `favourites`,
-        // lib/favourites.ts), never every city by count: that put Leeuwarden,
-        // 41 trees and no photograph, in the second slot with a placeholder
-        // leaf (Hidde, 2026-10-02: "Don't promote cities like Leeuwarden if
-        // they don't have a single photo"). An older snapshot without the
-        // field falls back to the cities that HAVE a face, by count, which
-        // keeps the one rule that matters either way: no card without a cover.
+        // lib/favourites.ts), never every city by count (Hidde, 2026-10-02:
+        // "Don't promote cities like Leeuwarden if they don't have a single
+        // photo"). An older snapshot falls back to the cities that HAVE a face.
         let byCity = catalogue.citiesWithTrees
         func card(_ slug: String) -> (slug: String, name: String, country: String, count: Int)? {
             guard let trees = byCity[slug], let first = trees.first else { return nil }
@@ -109,98 +119,105 @@ struct HomeView: View {
             return (w, f.distanceKm(from: origin.lat, origin.lng))
         }
         .sorted { $0.1 < $1.1 }.prefix(8).map(\.0)
-        // Oldest by the LOW end of the range, so a tree claiming 200 to 800
-        // years does not outrank one solidly dated at 900. A photograph is
-        // required, because a shelf about the most spectacular thing we have
-        // cannot be a row of placeholders.
-        s.oldest = catalogue.trees
-            .filter { $0.photo != nil && ($0.ageMin ?? 0) > 0 }
-            .sorted { ($0.ageMin ?? 0) > ($1.ageMin ?? 0) }
-            .prefix(12).map { $0 }
+
+        // Distance once per tree, not once per comparison.
+        let ranked = catalogue.trees
+            .map { (tree: $0, km: $0.distanceKm(from: origin.lat, origin.lng)) }
+            .sorted { $0.km < $1.km }
+
+        // THE SEASON WHERE YOU ARE, the hero (Hidde, 2026-10-10: "season h1 is
+        // good"). Without a fix the north is assumed, the half where most of
+        // the map is.
+        let south = location.known && origin.lat < 0
+        let atBest = ranked.filter {
+            ($0.tree.bestTime?.months ?? []).contains(month) && ($0.tree.lat < 0) == south
+        }
+        let bestPhotographed = atBest.filter { $0.tree.photo != nil }.map(\.tree)
+        if let hero = bestPhotographed.first {
+            let near = location.known ? atBest.filter { $0.km <= 20 }.count : 0
+            s.season = (Self.seasonWord(month: month, south: south), hero, atBest.count, near)
+            s.best = Array(bestPhotographed.dropFirst().prefix(6))
+        }
+
+        // The city you are standing in, for its open ambassador seat. Only with
+        // a real fix: the fallback is not anybody's city.
+        if location.known, let t = catalogue.nearest(to: origin.lat, origin.lng, limit: 1, withinKm: 30).first?.tree {
+            s.here = (t.citySlug, t.city)
+        }
+
         s.countries = catalogue.countriesWithTrees
-            .map { (name: $0.key,
-                    count: $0.value.count,
-                    cities: Set($0.value.map(\.citySlug)).count,
-                    // The website's own face for this country, not the first
-                    // tree that happened to have a picture.
-                    photo: catalogue.face(country: $0.key)) }
+            .map { (name: $0.key, count: $0.value.count, photo: catalogue.face(country: $0.key)) }
+            .filter { $0.photo?.photo != nil }
             .sorted { $0.count > $1.count }
-        s.species = catalogue.speciesWithTrees
-            .map { (name: $0.key, count: $0.value.count) }
-            .sorted { $0.count > $1.count }
-            .prefix(18).map { $0 }
-
-        // MORE SHELVES, 2026-10-04 (Hidde: "more lines like tree island
-        // tallest trees best of us etc"). Long but finite, the way AllTrails,
-        // komoot and the App Store build a browse screen; never an infinite
-        // feed, because a catalogue of picks runs out of good picks
-        // (CONVENTIONS.md 2026-10-04). Every shelf is an answer from the feed
-        // except "best in your country", and every one needs photographs.
-        func photographed(_ ids: [Tree], _ n: Int = 12) -> [Tree] {
-            Array(ids.filter { $0.photo != nil }.prefix(n))
-        }
-        func ranked(_ slug: String) -> (collection: TreeCollection, trees: [Tree])? {
-            guard let c = catalogue.collections.first(where: { $0.slug == slug }) else { return nil }
-            let t = photographed(catalogue.trees(of: c))
-            return t.count >= 4 ? (c, t) : nil
-        }
-        s.tallest = ranked("tallest-trees")
-        s.thickest = ranked("thickest-trees")
-        s.inSeason = catalogue.collections
-            .filter { ($0.months ?? []).contains(month) }
-            .compactMap { ranked($0.slug) }
-
-        // Best in the country you are standing in: the trees the world has
-        // written about first (the website's famous-trees collection), then
-        // by recorded age. Only with a real fix, because "best in the
-        // Netherlands" for somebody in Texas is the fallback talking.
-        if location.known,
-           let here = catalogue.nearest(to: origin.lat, origin.lng, limit: 1, withinKm: 300).first?.tree.country {
-            let famous = Set(catalogue.collections.first { $0.slug == "famous-trees" }?.trees ?? [])
-            let best = catalogue.trees(inCountry: here)
-                .filter { $0.photo != nil }
-                .sorted {
-                    let a = famous.contains($0.id), b = famous.contains($1.id)
-                    if a != b { return a }
-                    return ($0.ageMin ?? 0) > ($1.ageMin ?? 0)
-                }
-            if best.count >= 4 { s.home = (here, Array(best.prefix(12))) }
-        }
-
-        // TREES NEAR YOU, FIRST (Hidde, 2026-10-08: "it make sense to make the
-        // first list on top of discover trees near you"). AllTrails' Explore
-        // opens on "Trails near you" and Google Maps' Explore on what is around
-        // the map's centre. Only with a real fix, for the same reason as "best
-        // in your country": a list "near you" built from the fallback is a lie.
-        if location.known {
-            let near = catalogue.nearest(to: origin.lat, origin.lng, limit: 60, withinKm: 50)
-                .map(\.tree).filter { $0.photo != nil }
-            if near.count >= 3 { s.near = Array(near.prefix(12)) }
-        }
-
-        // WHEN AUTUMN TURNS TO WINTER (Hidde, 2026-10-08: "what happens when
-        // autumn turns to winter?"). The seasonal collections cover March to
-        // November; December to February had no shelf at all. In those months
-        // the shelf is the trees whose own best_time is now, which is the
-        // website's /in-season answer read per tree (in January that is mostly
-        // bare winter silhouettes, the one season where the frame is the show).
-        if s.inSeason.isEmpty {
-            let best = catalogue.trees.filter {
-                $0.photo != nil && ($0.bestTime?.months ?? []).contains(month)
-            }
-            if best.count >= 4 { s.atTheirBest = Array(best.prefix(12)) }
-        }
-
         s.islands = catalogue.facets.islands.compactMap(card)
+            .filter { catalogue.face(city: $0.slug)?.photo != nil }
+        s.species = catalogue.speciesWithTrees
+            .map { (name: $0.key, count: $0.value.count, photo: catalogue.face(species: $0.key)) }
+            .filter { $0.photo?.photo != nil }
+            .sorted { $0.count > $1.count }
+            .prefix(8).map { $0 }
+
+        // THE RECORDS: the oldest, the thickest and the tallest, one tile each,
+        // opening the full list. Oldest by the LOW end of the range, so a tree
+        // claiming 200 to 800 years does not outrank one dated at 900.
+        if let t = catalogue.trees.filter({ $0.photo != nil && ($0.ageMin ?? 0) > 0 })
+            .max(by: { ($0.ageMin ?? 0) < ($1.ageMin ?? 0) }) {
+            s.records.append((t.ageShort.map { "Oldest · \($0)" } ?? "Oldest", t, .index(.oldest)))
+        }
+        func first(_ slug: String) -> (TreeCollection, Tree)? {
+            guard let c = catalogue.collections.first(where: { $0.slug == slug }),
+                  let t = catalogue.trees(of: c).first(where: { $0.photo != nil }) else { return nil }
+            return (c, t)
+        }
+        if let r = first("thickest-trees") {
+            let (c, t) = r
+            let label = t.girthCm.map { g -> String in
+                let m = Double(g) / 100
+                return "Thickest · " + (m >= 10 ? String(format: "%.0f m", m) : String(format: "%.1f m", m))
+            } ?? "Thickest"
+            s.records.append((label, t, .collection(c.slug)))
+        }
+        if let r = first("tallest-trees") { s.records.append(("Tallest", r.1, .collection(r.0.slug))) }
+
+        // LISTS WITH AN OPINION: the hand-made collections, the ones in season
+        // first. The generated rankings are already The records.
+        let generated: Set<String> = ["tallest-trees", "thickest-trees", "trees-older-than-400-years",
+                                      "the-oldest-tree-in-every-country-we-map"]
+        s.lists = catalogue.collections.enumerated()
+            .filter { !generated.contains($0.element.slug) }
+            .compactMap { pair -> (Int, TreeCollection, Tree)? in
+                let (i, c) = pair
+                guard let id = c.face, let t = catalogue.tree(id), t.photo != nil else { return nil }
+                return (i, c, t)
+            }
+            .sorted { a, b in
+                let ia = (a.1.months ?? []).contains(month), ib = (b.1.months ?? []).contains(month)
+                return ia == ib ? a.0 < b.0 : ia
+            }
+            // One face per photograph: two lists fronted by the same yew side by
+            // side read as a mistake, so a list whose face is taken is skipped.
+            .reduce(into: [(collection: TreeCollection, face: Tree)]()) { out, l in
+                if out.count < 6, !out.contains(where: { $0.face.id == l.2.id }) {
+                    out.append((collection: l.1, face: l.2))
+                }
+            }
+
+        // MORE TREES NEAR YOU, the stream that keeps going (Hidde, 2026-10-10:
+        // "more trees near you at the end is perfect"): every photographed tree
+        // not already on the page, nearest first.
+        var shown = Set(s.best.map(\.id))
+        if let h = s.season?.hero { shown.insert(h.id) }
+        s.tail = ranked.map(\.tree).filter { $0.photo != nil && !shown.contains($0.id) }
         deck = s
     }
 
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
-                heroBand
+                seasonHero
                 shelves
                 growingCard
+                tailShelf
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
             .padding(.top, 6)
@@ -390,234 +407,268 @@ struct HomeView: View {
         }
     }
 
-    private var speciesShelf: some View {
-        // 12, like every other section on this page. It was 8 here and 12
-        // everywhere else, so the gap between a heading and what it introduces
-        // changed depending on which heading you were looking at.
-        VStack(alignment: .leading, spacing: 12) {
-            ShelfHeader(title: "By species", more: .index(.species))
-            ForEach(topSpeciesHere.prefix(6), id: \.name) { sp in
-                NavigationLink(value: Route.species(sp.name)) {
-                    HStack(spacing: 12) {
-                        SpeciesMark(species: sp.name, color: Brand.moss)
-                            .frame(width: 28, height: 28)
-                        Text(sp.name)
-                            .font(.brand(16, .bold, relativeTo: .subheadline))
-                            .foregroundStyle(Brand.ink).lineLimit(1)
-                        Spacer(minLength: 8)
-                        Text("\(sp.count)")
-                            .font(.subheadline).foregroundStyle(Brand.inkSoft).monospacedDigit()
-                        Image(systemName: "chevron.right")
-                            .font(.caption).foregroundStyle(Brand.inkSoft.opacity(0.6))
-                    }
-                    .padding(.horizontal, 16).frame(minHeight: 52)
-                    .brandCard(12)
-                }
-                .buttonStyle(.plain)
-                .padding(.horizontal, 16)
+    // MARK: - Discover, redesigned 2026-10-10
+    //
+    // Convention: AllTrails, komoot and Pinterest build a browse screen as a
+    // short curated top and then a stream that keeps going; the trees are
+    // Instagram's 3:4 grid, the same tile as My trees (CONVENTIONS.md
+    // 2026-10-06, "The browse / Discover screen, benchmarked"). Every row is
+    // skipped when it has nothing for where you are. The designs Hidde chose
+    // are board D3 of the Discover canvas.
+
+    private let threeAcross = Array(repeating: GridItem(.flexible(), spacing: 2), count: 3)
+
+    /// The tag on a tree tile: its city, and the distance when it is within a
+    /// day trip of you (Hidde, 2026-10-10: "the first trees can be city · 1.2km").
+    private func tag(_ t: Tree) -> String {
+        guard location.known else { return t.city }
+        let d = t.distanceKm(from: origin.lat, origin.lng)
+        guard d <= 30 else { return t.city }
+        return "\(t.city) · " + (d < 10 ? String(format: "%.1f km", d) : "\(Int(d.rounded())) km")
+    }
+
+    /// Three across, edge to edge, a hairline apart: My trees' grid.
+    private func tileGrid(_ trees: [Tree]) -> some View {
+        LazyVGrid(columns: threeAcross, spacing: 2) {
+            ForEach(trees) { t in
+                NavigationLink(value: Route.tree(t.id)) { CollectedTile(kind: .ours(t), city: tag(t)) }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("tree-card")
             }
         }
     }
 
-    /// YOUR FAVOURITES, second on Discover (Hidde, 2026-10-08: "you could also
-    /// add a favourites list? To get people to favourite and log in").
-    ///
-    /// Convention: Netflix's "My List" and Spotify's "Your library" rows sit
-    /// near the top of the browse screen, and Airbnb's wishlist shows an empty
-    /// state that tells you what the heart does rather than hiding. So the row
-    /// is there with or without saves: full, it is your trees; empty, it is one
-    /// sentence pointing at the heart. The heart itself asks for sign-in when
-    /// it has to, so this card carries no button and gates nothing.
-    ///
-    /// Read live from Saved rather than built into the deck, so a heart tapped
-    /// on a tree page is on this row when you come back.
-    @ViewBuilder private var favouritesShelf: some View {
-        let mine = saved.favourites.compactMap { catalogue.tree($0.treeId) }
-        if !mine.isEmpty {
-            shelf(title: "Want to visit", subtitle: nil, trees: Array(mine.prefix(12)))
+    /// A tile that opens somewhere other than its own tree: an island, a
+    /// record, a list. The tag says what it opens.
+    private func tile(_ tree: Tree, _ label: String, to route: Route) -> some View {
+        NavigationLink(value: route) { CollectedTile(kind: .ours(tree), city: label) }
+            .buttonStyle(.plain)
+    }
+
+    /// THE SEASON (hero H1). One photographed tree at its best near you, the
+    /// season's word for your half of the world, and a real count. Falls back
+    /// to the stock hero in the rare month nothing on your half peaks.
+    @ViewBuilder private var seasonHero: some View {
+        if let s = deck.season, let url = s.hero.photo?.full ?? s.hero.photo?.card {
+            NavigationLink(value: Route.tree(s.hero.id)) {
+                ZStack(alignment: .bottomLeading) {
+                    Color.clear.frame(height: 240)
+                        .overlay { TreePhoto(url: url) { Brand.surfaceMuted } }
+                        .clipped()
+                    LinearGradient(colors: [.clear, .black.opacity(0.62)],
+                                   startPoint: .center, endPoint: .bottom)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("\(s.word) is here")
+                            .font(.brand(26, .bold, relativeTo: .title2))
+                            .foregroundStyle(.white)
+                        Text("\(treesLabel(s.count)) at their best this month"
+                             + (s.near > 0 ? " · \(s.near) within 20 km of you" : ""))
+                            .font(.subheadline.weight(.medium))
+                            .foregroundStyle(.white.opacity(0.88))
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    .shadow(color: .black.opacity(0.3), radius: 6, y: 1)
+                    .padding(16)
+                }
+                .frame(height: 240)
+                .overlay(alignment: .topLeading) { TagPill(text: "At its best now").padding(12) }
+                .clipShape(.rect(cornerRadius: 14))
+                .contentShape(.rect)
+            }
+            .buttonStyle(.plain)
+            .padding(.horizontal, 16)
+            .accessibilityIdentifier("discover-season")
         } else {
+            heroBand
+        }
+    }
+
+    private var wantTrees: [Tree] {
+        saved.favourites.compactMap { catalogue.tree($0.treeId) }
+            .sorted { $0.distanceKm(from: origin.lat, origin.lng) < $1.distanceKm(from: origin.lat, origin.lng) }
+    }
+
+    /// WANT TO VISIT, with trees: yours, under the hero, because they are
+    /// yours (Netflix's My List, Spotify's Jump back in). Read live from Saved,
+    /// so a bookmark tapped on a tree page is here when you come back.
+    @ViewBuilder private var wantToVisitFull: some View {
+        let mine = wantTrees
+        if !mine.isEmpty {
+            VStack(alignment: .leading, spacing: 12) {
+                ShelfHeader(title: "Want to visit", seeAll: {
+                    navigator.openWantToVisit = true
+                    navigator.selectTab = 2
+                })
+                tileGrid(Array(mine.prefix(3)))
+            }
+        }
+    }
+
+    /// WANT TO VISIT, empty: the row's own shape waiting to be filled, one
+    /// line saying what the bookmark does, and the way to find a tree. Lower
+    /// on the page, so a first visit meets trees before an empty box.
+    @ViewBuilder private var wantToVisitEmpty: some View {
+        if wantTrees.isEmpty {
             VStack(alignment: .leading, spacing: 12) {
                 ShelfHeader(title: "Want to visit")
-                HStack(alignment: .top, spacing: 12) {
-                    Image(systemName: "bookmark")
-                        .font(.system(size: 20, weight: .semibold))
-                        .foregroundStyle(Brand.moss)
-                        .frame(width: 28)
-                    Text("You can keep the trees you want to visit here by tapping the bookmark on any tree.")
-                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Spacer(minLength: 0)
+                LazyVGrid(columns: threeAcross, spacing: 2) {
+                    ForEach(0..<3, id: \.self) { i in
+                        Brand.surfaceMuted
+                            .aspectRatio(3.0 / 4.0, contentMode: .fit)
+                            .overlay {
+                                if i == 0 {
+                                    Image(systemName: "bookmark")
+                                        .font(.system(size: 22, weight: .semibold))
+                                        .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                                }
+                            }
+                    }
                 }
-                .padding(16)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .brandCard(12)
+                // Bleeds to the edges, like My trees' grid.
+                .accessibilityHidden(true)
+                Text("You can keep a tree for later by tapping the bookmark on its page.")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal, 16)
+                Button { navigator.selectTab = 0 } label: {
+                    Label("Find trees near you", systemImage: "map")
+                }
+                .buttonStyle(BrandButtonStyle(prominent: false))
                 .padding(.horizontal, 16)
-                .accessibilityIdentifier("discover-favourites-empty")
             }
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("discover-favourites-empty")
         }
     }
 
-    private var topSpeciesHere: [(name: String, count: Int)] { deck.species }
-
-    // MARK: - the browse state
-
-    /// The feed, as Hidde cut it on 2026-08-21. What went: season (it is the
-    /// map's pulse, not a browse row) and every curated collection (they stay
-    /// on the website, which is where they earn their traffic). What stayed:
-    /// cities, species, walks. What is new: the oldest trees we map, and the
-    /// countries, because both are ways of showing the same database that a
-    /// map cannot.
-    @ViewBuilder private var shelves: some View {
-        // NOT "near you" when we do not know where you are. Apple Maps' own
-        // sheet drops its proximity content entirely with location refused and
-        // shows Places, Home, Work and Your Guides, none of which claims to be
-        // near anything. Ours was ranking every walk by its distance from Dam
-        // square and titling the result "Walks near you".
-        if !deck.near.isEmpty {
-            shelf(title: "Trees near you", subtitle: nil, trees: deck.near)
+    private func section<Content: View>(_ title: String, more: Route? = nil,
+                                        @ViewBuilder _ content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            ShelfHeader(title: title, more: more)
+            content()
         }
+    }
 
-        favouritesShelf
+    private func placeRow<Item, Card: View>(_ items: [Item], id: KeyPath<Item, String>,
+                                            @ViewBuilder _ card: @escaping (Item) -> Card) -> some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .top, spacing: 12) {
+                ForEach(items, id: id) { card($0) }
+            }
+            .padding(.horizontal, 16).padding(.bottom, 4)
+        }
+    }
 
-        if Launch.walks, !walksNear.isEmpty, location.known { walkShelf }
+    private func speciesPill(_ sp: (name: String, count: Int, photo: Tree?)) -> some View {
+        NavigationLink(value: Route.species(sp.name)) {
+            HStack(spacing: 8) {
+                Color.clear.frame(width: 34, height: 34)
+                    .overlay {
+                        if let url = sp.photo?.photo?.card { TreePhoto(url: url) { Brand.surfaceMuted } }
+                    }
+                    .clipShape(.circle)
+                Text(sp.name)
+                    .font(.brand(14, .bold, relativeTo: .subheadline))
+                    .foregroundStyle(Brand.ink).lineLimit(1)
+                Text("\(sp.count)")
+                    .font(.system(size: 13)).foregroundStyle(Brand.inkSoft).monospacedDigit()
+            }
+            .padding(.leading, 5).padding(.trailing, 12)
+            .frame(height: 44)
+            .background(Brand.surface, in: .capsule)
+            .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+            .contentShape(.capsule)
+        }
+        .buttonStyle(.plain)
+    }
+
+    @ViewBuilder private var shelves: some View {
+        wantToVisitFull
+
+        if deck.best.count >= 3 {
+            section("At their best now") { tileGrid(deck.best) }
+        }
 
         cityShelf
 
-        if !oldest.isEmpty {
-            shelf(title: "The oldest trees we map",
-                  subtitle: nil,
-                  trees: oldest,
-                  more: .index(.oldest))
+        // The open seat of the city you are standing in, under the cities and
+        // well away from "Add a tree" (Hidde, 2026-10-10: "dont put ambassador
+        // cta and add tree cta below each other").
+        if let h = deck.here, catalogue.facets.ambassadors(city: h.slug).isEmpty,
+           !catalogue.facets.seated(city: h.slug) {
+            AmbassadorWantedRow(place: h.name).padding(.horizontal, 16)
         }
 
-        countryShelf
-        speciesShelf
-
-        // THE NEW ROWS GO BELOW, never between (Hidde, 2026-10-04: "the rows
-        // already there were perfect i just wanted more below"). Everything
-        // above this line is the screen as he approved it.
-        if let h = deck.home {
-            shelf(title: "Best in \(Self.withArticle(h.country))", subtitle: nil,
-                  trees: h.trees, more: .country(h.country))
+        if !deck.countries.isEmpty {
+            section("Tree countries", more: .index(.countries)) {
+                placeRow(Array(deck.countries.prefix(14)), id: \.name) { c in
+                    NavigationLink(value: Route.country(c.name)) {
+                        placeCard(c.name, treesLabel(c.count), cover: c.photo)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
         }
 
-        ForEach(deck.inSeason, id: \.collection.slug) { c in
-            shelf(title: c.collection.title, subtitle: nil, trees: c.trees,
-                  more: .collection(c.collection.slug))
-        }
-        if !deck.atTheirBest.isEmpty {
-            shelf(title: "At their best this month", subtitle: nil, trees: deck.atTheirBest)
+        wantToVisitEmpty
+
+        if deck.islands.count >= 3 {
+            section("Tree islands") {
+                LazyVGrid(columns: threeAcross, spacing: 2) {
+                    ForEach(deck.islands.prefix(6), id: \.slug) { c in
+                        if let face = catalogue.face(city: c.slug) { tile(face, c.name, to: .city(c.slug)) }
+                    }
+                }
+                // Bleeds to the edges, like My trees' grid.
+            }
         }
 
-        if let t = deck.tallest {
-            shelf(title: "The tallest trees", subtitle: nil, trees: t.trees,
-                  more: .collection(t.collection.slug))
+        if !deck.species.isEmpty {
+            section("By species", more: .index(.species)) {
+                FlowRow(spacing: 8) {
+                    ForEach(deck.species, id: \.name) { speciesPill($0) }
+                }
+                .padding(.horizontal, 16)
+            }
         }
-        if let t = deck.thickest {
-            shelf(title: "The thickest trunks", subtitle: nil, trees: t.trees,
-                  more: .collection(t.collection.slug))
+
+        if deck.records.count == 3 {
+            section("The records") {
+                LazyVGrid(columns: threeAcross, spacing: 2) {
+                    ForEach(deck.records, id: \.label) { r in tile(r.tree, r.label, to: r.route) }
+                }
+                // Bleeds to the edges, like My trees' grid.
+            }
         }
-        if deck.islands.count >= 3 { islandShelf }
+
+        if deck.lists.count >= 3 {
+            section("Lists with an opinion") {
+                LazyVGrid(columns: threeAcross, spacing: 2) {
+                    ForEach(deck.lists, id: \.collection.slug) { l in
+                        tile(l.face, l.collection.title, to: .collection(l.collection.slug))
+                    }
+                }
+                // Bleeds to the edges, like My trees' grid.
+            }
+        }
+
+        if Launch.walks, !walksNear.isEmpty, location.known { walkShelf }
     }
 
-    /// "the United States", "the Netherlands", but "Germany". The countries
-    /// that take an article in English, as the feed spells them.
+    /// The stream at the bottom: every photographed tree, nearest first,
+    /// loading as you scroll (LazyVGrid draws only what is on screen).
+    @ViewBuilder private var tailShelf: some View {
+        if !deck.tail.isEmpty {
+            section(location.known ? "More trees near you" : "More trees") { tileGrid(deck.tail) }
+        }
+    }
+
     static func withArticle(_ country: String) -> String {
         let the: Set<String> = ["United States", "United Kingdom", "Netherlands",
                                 "Czech Republic", "Philippines", "Bahamas"]
         return the.contains(country) ? "the \(country)" : country
     }
 
-    /// Tree islands, as the website picked them (lib/favourites.ts): the city
-    /// card, because an island here is a place exactly the way a city is.
-    private var islandShelf: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            ShelfHeader(title: "Tree islands")
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(deck.islands, id: \.slug) { c in
-                        NavigationLink(value: Route.city(c.slug)) { cityCard(c) }
-                            .buttonStyle(.plain)
-                    }
-                }
-                .padding(.horizontal, 16).padding(.bottom, 4)
-            }
-        }
-    }
-
-    private var countryShelf: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            ShelfHeader(title: "Tree countries",
-                        more: .index(.countries))
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(deck.countries.prefix(14), id: \.name) { c in
-                        NavigationLink(value: Route.country(c.name)) { countryCard(c) }
-                            .buttonStyle(.plain)
-                    }
-                }
-                .padding(.horizontal, 16).padding(.bottom, 4)
-            }
-        }
-    }
-
-    private func countryCard(_ c: (name: String, count: Int, cities: Int, photo: Tree?)) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Color.clear
-                .frame(width: 150, height: 100)
-                .overlay {
-                    if let t = c.photo, let url = t.photo?.card {
-                        TreePhoto(url: url) { Brand.surfaceMuted }
-                    } else {
-                        Brand.surfaceMuted
-                    }
-                }
-                .clipped()
-            VStack(alignment: .leading, spacing: 2) {
-                Text(c.name).font(.brand(15, .bold, relativeTo: .subheadline))
-                    .foregroundStyle(Brand.ink).lineLimit(1)
-                Text("\(treesLabel(c.count)) · \(c.cities) \(c.cities == 1 ? "place" : "places")")
-                    .font(.caption2).foregroundStyle(Brand.inkSoft)
-            }
-            .padding(.horizontal, 10).padding(.vertical, 9)
-            .frame(width: 150, alignment: .leading)
-        }
-        .brandCard(12)
-    }
-
-    private func shelf(title: String, subtitle: String?, trees: [Tree],
-                       more: Route? = nil) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            // No padding here. ShelfHeader puts its own 16 on, and a second
-            // one stacks: the header sat at 32 while every card under it sat
-            // at 16, which is what Hidde saw on "By species" and "the oldest
-            // tree we map" (2026-08-24). The inset belongs to the component,
-            // once, or every call site becomes a chance to get it wrong.
-            ShelfHeader(title: title, subtitle: subtitle, more: more)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(trees) { t in
-                        NavigationLink(value: Route.tree(t.id)) {
-                            // No season sentence under the card (Hidde,
-                            // 2026-10-08: "the sentence below the cards of
-                            // autumn worth the trip should be gone"). The
-                            // shelf's title already says why these are here.
-                            TreeCard(tree: t, uniformTitle: true)
-                                .frame(width: 260)
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityIdentifier("tree-card")
-                    }
-                }
-                .padding(.horizontal, 16).padding(.bottom, 4)
-            }
-        }
-    }
-
-    /// Walks get their own card shape: the four facts with their units under
-    /// them, which is the one thing from the AllTrails teardown that transfers
-    /// wholesale, and the lock said plainly rather than as a bare padlock.
     private var walkShelf: some View {
         VStack(alignment: .leading, spacing: 12) {
             // EVERY walk behind Plus (Hidde, 2026-08-24: "ik zou alle
@@ -677,61 +728,48 @@ struct HomeView: View {
     /// The website's own homepage shelf, which this screen was missing: the
     /// places, with a photograph, rather than a list of names and counts.
     private var cityShelf: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            ShelfHeader(title: "Our favourite tree cities",
-                        more: .index(.cities))
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(cities.prefix(14), id: \.slug) { c in
-                        NavigationLink(value: Route.city(c.slug)) { cityCard(c) }
-                            .buttonStyle(.plain)
-                    }
+        section("Our favourite tree cities", more: .index(.cities)) {
+            placeRow(Array(cities.prefix(14)), id: \.slug) { c in
+                NavigationLink(value: Route.city(c.slug)) {
+                    placeCard(c.name, treesLabel(c.count), cover: catalogue.face(city: c.slug))
                 }
-                .padding(.horizontal, 16).padding(.bottom, 4)
+                .buttonStyle(.plain)
             }
         }
     }
 
-    private func cityCard(_ c: (slug: String, name: String, country: String, count: Int)) -> some View {
-        // The city's face as the website chose it, which is where hero_tree_id
-        // arrives. This used to be the first tree in the list with a photograph,
-        // so a city looked different here than it did on the web.
-        let cover = catalogue.face(city: c.slug)
-        return VStack(alignment: .leading, spacing: 0) {
-            ZStack(alignment: .bottomLeading) {
-                if let url = cover?.photo?.card {
-                    TreePhoto(url: url) {
-                        leafTile
-                    }
+    /// A place: a city, a country. Wide, because a place is a landscape, and
+    /// small, so two show with a third peeking (Airbnb's destination row).
+    private func placeCard(_ name: String, _ sub: String, cover: Tree?) -> some View {
+        ZStack(alignment: .bottomLeading) {
+            if let url = cover?.photo?.card {
+                TreePhoto(url: url) { leafTile }
                     .frame(width: 172, height: 120).clipped()
-                } else {
-                    ZStack {
-                        leafTile
-                        SpeciesMark(species: cover?.species ?? "Pedunculate Oak",
-                                    color: .white.opacity(0.85))
-                            .frame(width: 46, height: 46)
-                    }
-                    .frame(width: 172, height: 120)
+            } else {
+                ZStack {
+                    leafTile
+                    SpeciesMark(species: cover?.species ?? "Pedunculate Oak",
+                                color: .white.opacity(0.85))
+                        .frame(width: 46, height: 46)
                 }
-                LinearGradient(colors: [.clear, .black.opacity(0.55)],
-                               startPoint: .center, endPoint: .bottom)
-                    .frame(width: 172, height: 120)
-                VStack(alignment: .leading, spacing: 1) {
-                    Text(c.name).font(.brand(16, .bold, relativeTo: .headline))
-                        .foregroundStyle(.white).lineLimit(1)
-                    Text(treesLabel(c.count)).font(.caption2).foregroundStyle(.white.opacity(0.85))
-                }
-                .padding(10)
+                .frame(width: 172, height: 120)
             }
+            LinearGradient(colors: [.clear, .black.opacity(0.55)],
+                           startPoint: .center, endPoint: .bottom)
+                .frame(width: 172, height: 120)
+            VStack(alignment: .leading, spacing: 1) {
+                Text(name).font(.brand(16, .bold, relativeTo: .headline))
+                    .foregroundStyle(.white).lineLimit(1)
+                Text(sub).font(.caption2).foregroundStyle(.white.opacity(0.85))
+            }
+            .padding(10)
         }
-        .frame(width: 172)
+        .frame(width: 172, height: 120)
         .clipShape(.rect(cornerRadius: 14))
     }
 
 }
 
-/// One collection, opened from its shelf: the editor's own introduction, then
-/// every tree in it.
 struct CollectionView: View {
     let collection: TreeCollection
     let catalogue: Catalogue
