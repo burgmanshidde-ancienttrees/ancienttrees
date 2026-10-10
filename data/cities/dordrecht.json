@@ -385,7 +385,11 @@
         "kind": "fruit"
       },
       "girth_cm": 375,
-      "height_m": 24
+      "height_m": 24,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695555",
+        "url": null
+      }
     },
     {
       "id": "dor_011",
@@ -478,9 +482,10 @@
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1680495",
         "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum",
         "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://www.dordrechtsmuseum.nl/praktische-informatie/"
       ],
-      "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
+      "access": "The trees stand in the garden of the Dordrechts Museum, Museumstraat 40, which is the approach to the museum entrance. The museum is open Tuesday to Sunday 11:00 to 17:00 and closed on New Year's Day, King's Day and Christmas Day; adults pay EUR 17, up to 18 is free. The museum's page does not say whether the garden can be entered without a ticket.",
       "paid_entry": true,
       "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
       "curation_status": "flagged",
@@ -494,7 +499,11 @@
         "height": 1536
       },
       "girth_cm": 685,
-      "height_m": 35
+      "height_m": 35,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680495",
+        "url": null
+      }
     },
     {
       "id": "dor_016",
@@ -516,14 +525,27 @@
         "Landelijk Register Monumentale Bomen (Bomenstichting), register nr 1695549",
         "Bomenridders Dordrecht walking route (indordrecht.nl), stop 2, Dordrecht Museum",
         "Dordrechts Museum's own garden page (dordrechtsmuseum.nl/museumtuin)",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://www.dordrechtsmuseum.nl/praktische-informatie/"
       ],
-      "access": "Paid entry, through the Dordrechts Museum, Museumstraat 40. The trees stand in the museum's own garden.",
+      "access": "The trees stand in the garden of the Dordrechts Museum, Museumstraat 40, which is the approach to the museum entrance. The museum is open Tuesday to Sunday 11:00 to 17:00 and closed on New Year's Day, King's Day and Christmas Day; adults pay EUR 17, up to 18 is free. The museum's page does not say whether the garden can be entered without a ticket.",
       "paid_entry": true,
       "transport": "Dordrechts Museum, in the old centre, about 1 km northwest of Dordrecht Centraal.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "height_m": 26
+      "height_m": 26,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695549",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper beech leaves turn copper",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "dor_017",
@@ -647,9 +669,10 @@
         "Landelijk Register Monumentale Bomen v2024 (LRMB), Bomenstichting, entry nr 1680494 (register file: data/registers/netherlands-lrmb.json)",
         "https://www.huisvangijn.nl/ontdek-het-huis/tuin/ (Museum Huis van Gijn's own page on its garden, describing 'a plane tree and a maple probably planted around 1840')",
         "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680494&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680494&outFields=*&f=json",
+        "https://www.huisvangijn.nl/praktische-informatie/"
       ],
-      "access": "Paid entry, through Museum Huis van Gijn, Nieuwe Haven 30, for the full garden view. The register notes the trunk and crown are ALSO visible without paying, from the public Hoge Nieuwstraat behind the garden wall. visitable=ja and visible=ja.",
+      "access": "Paid entry through Museum Huis van Gijn, Nieuwe Haven 30, for the garden view: open Wednesday to Sunday 11:00 to 17:00, closed on New Year's Day, King's Day and Christmas Day; adults EUR 14, up to 18 free. The register notes the trunk and crown are also visible from the public Hoge Nieuwstraat behind the garden wall.",
       "transport": "About 1.1 km north of Dordrecht station, in the old centre, at the Museum Huis van Gijn garden off Nieuwe Haven; also partly visible from Hoge Nieuwstraat.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
