@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "melbourne",
+   "kind": "enrich",
+   "tokens": 140702,
+   "trees": 0,
+   "note": "Yarra register ids and measurements on 12 trees"
+  },
+  {
+   "date": "2026-10-10",
    "target": "geneva",
    "kind": "enrich",
    "tokens": 156369,
