@@ -104,16 +104,17 @@
       "girth_cm": null,
       "location": {
         "address": "Base of the Spring Pond, below the Terrace Overlook, Kubota Garden, 9817 55th Ave S, Seattle, WA 98178",
-        "latitude": 47.5132,
-        "longitude": -122.2663,
+        "latitude": 47.512534,
+        "longitude": -122.266827,
         "neighbourhood": "Rainier Beach"
       },
       "verified_sources": [
-        "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/SE_KubotaTreeWalk.pdf"
+        "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/SE_KubotaTreeWalk.pdf",
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json"
       ],
       "access": "Free, city park (Seattle Parks), open daylight hours",
       "transport": "Metro Route 106 stops on Renton Ave S near the garden entrance; about a 5-10 minute walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "When Fujitaro Kubota bought this land in 1927 it had been logged, and this grand fir was one of the few trees the loggers had left. Everything else you walk past in Kubota Garden was planted afterwards, around it. The garden is the newcomer.\n\nIt now stands 139 feet tall at the base of the Spring Pond, below the Terrace Overlook, and the tree walk that covers the garden estimates it at 200 years old. That figure comes from a single document, the walk produced jointly by the city's Trees for Seattle programme and the Kubota Garden Foundation, and no second source has confirmed it, so read it as a good estimate rather than a settled number. Grand firs live comfortably beyond 250 years, so the estimate sits well within what the species does.\n\nThe interest here is the contrast. Kubota spent decades building a Japanese garden out of Pacific Northwest plants, and this fir is the piece of the actual Pacific Northwest forest that was already on the site when he started, a survivor of the original woodland standing over ponds and stone that were arranged much later.\n\nThe garden is free and open in daylight hours. The pin marks the entrance rather than the tree, so walk in and head for the Spring Pond below the Terrace Overlook.",
       "photo": {
@@ -122,7 +123,18 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the one tree here nobody planted: 139 feet of grand fir the loggers left, with the whole garden arranged around it afterwards. It stands at the base of the Spring Pond, below the Terrace Overlook."
+      "how_to_recognise": "You can recognise it as the one tree here nobody planted: 139 feet of grand fir the loggers left, with the whole garden arranged around it afterwards. It stands at the base of the Spring Pond, below the Terrace Overlook.",
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1047709",
+        "url": null
+      },
+      "height_m": 43.6,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 84
+      }
     },
     {
       "id": "sea_004",
@@ -296,8 +308,8 @@
       "girth_cm": 478,
       "location": {
         "address": "Hiawatha Playfield, 2700 California Ave SW, West Seattle",
-        "latitude": 47.5782,
-        "longitude": -122.385,
+        "latitude": 47.578567,
+        "longitude": -122.3844,
         "neighbourhood": "Admiral, West Seattle"
       },
       "story": "This oak is 55 feet wider than it is tall. When the tree expert Arthur Lee Jacobson measured it for a 2023 newspaper column, he found a crown 133 feet across on a tree 78 feet high, over a trunk 15 feet 8 inches round.\n\nIt is a northern red oak, a species from the other side of the continent, and it has spent its life at the edge of a playing field in West Seattle. Hiawatha Playfield opened in 1911, and the whole ground is now a city landmark. One local tree blog says this oak went in that year with the trees around it, when the Olmsted Brothers laid out what it calls Seattle's first playfield. That blog is the only source tying the tree to the opening, so read 1911 as likely rather than proven, which would make the oak a little over a century old.\n\nThe city lists it as a Heritage Tree, the programme Seattle runs with the group PlantAmnesty. Jacobson's verdict in 2023 was that it is not even halfway to the 250 years the species can live. Most trees on a list like this are admired for having survived. This one is still growing into itself, mostly sideways.\n\nThe pin marks the playfield rather than the trunk. Look toward the school side, and look for the crown first: it is the measurement you can see from a distance.",
@@ -312,7 +324,8 @@
       "verified_sources": [
         "https://pauldorpat.com/2023/06/01/seattle-now-then-hiawatha-playfield-1911/",
         "http://ecoyards.com/seattles-heritage-trees/",
-        "https://commons.wikimedia.org/wiki/File:Seattle_-_Hiawatha_Playfield_-_Northern_Red_Oak.jpg"
+        "https://commons.wikimedia.org/wiki/File:Seattle_-_Hiawatha_Playfield_-_Northern_Red_Oak.jpg",
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json"
       ],
       "access": "Free; Hiawatha Playfield is a public Seattle Parks playfield",
       "transport": "Not verified; city bus service on California Ave SW, exact stop and walk time not checked",
@@ -323,7 +336,18 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-100960",
+        "url": null
+      },
+      "height_m": 24.4,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 61
+      }
     },
     {
       "id": "sea_010",
@@ -334,8 +358,8 @@
       "age_max": 130,
       "location": {
         "address": "Cal Anderson Park, northwest corner near Capitol Hill Station entrance, Nagle Pl, Seattle",
-        "latitude": 47.619,
-        "longitude": -122.3199,
+        "latitude": 47.618647,
+        "longitude": -122.319939,
         "neighbourhood": "Capitol Hill"
       },
       "story": "When the Capitol Hill light rail station was being dug, this tree stood just inside the construction wall, and a local reporter wrote in 2015 that it was probably only still standing because it was a Heritage Tree.\n\nThat listing, run by the city with the group PlantAmnesty, is the likeliest reason a century-old tree came through the dig. It is a Chinese scholar tree, also known as the Japanese pagoda tree, and the Capitol Hill Historical Society describes it as more than a century old and one of the trees still left from the Olmsted Brothers' design for the park. Nobody has published a planting year, so a century and a bit is as close as the sources go.\n\nThe same 2015 article called it the largest of its kind in the Pacific Northwest. No measurement has been published to go with that, so read it as a proud local claim rather than a ranking anybody has checked. If you have a tape measure, the trunk is the one figure this page is missing, and we would like it.\n\nSo the tree has seen the park as the Olmsteds planned it and the neighbourhood as it is now, with a train station built right beside it. The pin marks the corner rather than the trunk, but the corner does most of the work: come up out of the station entrance at the northwest of the park and it is right there.",
@@ -350,7 +374,8 @@
       "verified_sources": [
         "https://web.archive.org/web/2018/https://www.capitolhillseattle.com/2017/12/capitol-hill-historical-society-landmarks-at-cal-anderson-park/",
         "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/",
-        "https://www.seattle.gov/parks/allparks/cal-anderson-park"
+        "https://www.seattle.gov/parks/allparks/cal-anderson-park",
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json"
       ],
       "access": "Free; public city park, open daylight hours; tree stands at the park edge beside the sidewalk and station entrance",
       "transport": "Capitol Hill Link light rail station is at the tree's corner of the park, about a 1 minute walk",
@@ -361,7 +386,18 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-100942",
+        "url": null
+      },
+      "height_m": 20.7,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 39
+      }
     },
     {
       "id": "sea_011",
@@ -370,15 +406,16 @@
       "age_estimate": "",
       "location": {
         "address": "Triangle of Belmont Ave E, Bellevue Pl E and Summit Ave E (nearest address 906 Summit Ave E), Seattle",
-        "latitude": 47.62703,
-        "longitude": -122.32526,
+        "latitude": 47.627084,
+        "longitude": -122.325708,
         "neighbourhood": "Capitol Hill"
       },
       "story": "This is a park where the tree is most of the park. Summit Place Triangle is the scrap of ground left where Belmont Avenue East, Bellevue Place East and Summit Avenue East meet, and a London plane fills it. In 2015 a Capitol Hill reporter described the effect rather than the trunk: it shades the entire space in summer, spreading 100 feet from side to side.\n\nThe city takes it seriously. It is an official Seattle Heritage Tree, one of the trees named by the programme the city runs with the group PlantAmnesty, and it is the closing stop on the city's own North Capitol Hill tree walk, which finishes at this triangle.\n\nWhat nobody has written down is how old it is. There is no planting date, no girth and no height on record. It would be easy to borrow a date from the Olmsted plantings in Volunteer Park, a short walk away, and it would be wrong: that is a different story about different trees, and no source connects this one to it. A blank is more honest than a borrowed number.\n\nSo the page asks instead. If you live on Capitol Hill and know when this tree went in, or you pass with a tape measure, tell us and the figure goes here. It stands on public ground, open at all hours, about ten to twelve minutes' walk north of the Capitol Hill light rail station.",
       "how_to_recognise": "You can recognise it by the crown, about 100 feet across, which shades the whole triangle. It stands where Belmont Ave E, Bellevue Pl E and Summit Ave E meet, near 906 Summit Ave E.",
       "verified_sources": [
         "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/CH_NorthCapitol%20HillTreeWalk.pdf",
-        "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/"
+        "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/",
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json"
       ],
       "access": "Free; the tree stands in a small public street triangle (Summit Place Triangle), open at all times, on the pavement edge",
       "transport": "Roughly 10 to 12 minutes on foot from Capitol Hill Link station (about 1 km north-northwest along Broadway/E Roy St, walk time not measured precisely)",
@@ -389,7 +426,18 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-44865",
+        "url": null
+      },
+      "height_m": 22.3,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 34
+      }
     },
     {
       "id": "sea_012",
@@ -400,8 +448,8 @@
       "age_max": 110,
       "location": {
         "address": "Northeast corner of NE 77th St and 38th Ave NE, Seattle",
-        "latitude": 47.685,
-        "longitude": -122.2872,
+        "latitude": 47.684918,
+        "longitude": -122.287294,
         "neighbourhood": "Wedgwood"
       },
       "story": "This oak is held together with hardware rated to 54,000 pounds. A windstorm in March 2016 cracked its trunk, and instead of taking it down, Seattle's street-tree crews cabled and braced it, promised to inspect it every year, and estimated the work could buy ten years or more for what they called an otherwise healthy and vigorous tree.\n\nThat effort tells you its standing. It is a scarlet oak growing in the street right-of-way at a Wedgwood corner, which puts it in the city's own care, and it is one of the few such trees named a Seattle Heritage Tree and classed Best in City. It received its Heritage plaque at a ceremony in 2008. Arthur Lee Jacobson's Trees of Seattle counts it among the most outstanding of its kind in the city, and the local history blog that has followed it for years gives its height as 95 feet.\n\nWho planted it is a neighbourhood argument rather than a record. The same blog thinks it likely went in during the 1920s, probably by the family who ran a plant nursery here, while an earlier post floated another family entirely. So call it roughly a century, give or take.\n\nIt has seen the corner change around it, most recently a new house going up beside it in 2020. Admire it from the pavement; the lots on either side are private. The pin marks the intersection, and the tree is on its northeast corner.",
@@ -418,7 +466,8 @@
         "https://sdotblog.seattle.gov/2016/06/20/preserving-a-best-in-city-scarlet-oak/",
         "https://wedgwoodinseattlehistory.com/2016/06/25/preserving-wedgwoods-scarlet-oak-heritage-tree/",
         "https://wedgwoodinseattlehistory.com/2023/11/01/enjoying-the-trees-of-wedgwood/",
-        "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/NE_WedgwoodTreeWalk.pdf"
+        "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/NE_WedgwoodTreeWalk.pdf",
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json"
       ],
       "access": "Free; stands in the public street right-of-way at the corner, viewable from the pavement. Do not enter adjoining private lots.",
       "transport": "Neighbourhood street in Wedgwood; bus service on 35th Ave NE about 3 blocks west, stop and walk time not verified",
@@ -429,7 +478,17 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-66848",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=HERITAGE%3D%27Y%27&outFields=*&f=json",
+        "date": "2026-10-10",
+        "moved_m": 12
+      }
     },
     {
       "id": "sea_013",
@@ -445,7 +504,8 @@
       },
       "verified_sources": [
         "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)",
-        "https://web.archive.org/ (CHS/McGarry 2015 via data/leads/seattle.json: largest in Seattle, 92 ft in 2000 per Jacobson)"
+        "https://web.archive.org/ (CHS/McGarry 2015 via data/leads/seattle.json: largest in Seattle, 92 ft in 2000 per Jacobson)",
+        "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-100959%27&outFields=*&f=json"
       ],
       "access": "Free; public Seattle Parks land, open daily",
       "transport": "Not verified; walk time from Capitol Hill not checked",
@@ -465,7 +525,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-100959",
+        "url": null
+      },
+      "height_m": 28.7
     },
     {
       "id": "sea_014",
@@ -495,7 +560,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1047705",
+        "url": null
+      },
+      "height_m": 32.9
     },
     {
       "id": "sea_015",
@@ -523,7 +593,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1047718",
+        "url": null
+      },
+      "height_m": 24.4
     },
     {
       "id": "sea_016",
@@ -551,7 +626,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-100962",
+        "url": null
+      },
+      "height_m": 38.1
     }
   ]
 }

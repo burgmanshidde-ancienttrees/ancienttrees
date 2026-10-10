@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "seattle",
+   "kind": "enrich",
+   "tokens": 150851,
+   "trees": 0,
+   "note": "SDOT heritage ids on 9 trees, heights, 5 pins"
+  },
+  {
+   "date": "2026-10-10",
    "target": "granada",
    "kind": "enrich",
    "tokens": 150247,
