@@ -35,17 +35,18 @@
       "age_estimate": "roughly 300 years",
       "age_min": 300,
       "age_max": 320,
-      "girth_cm": null,
+      "girth_cm": 366,
       "location": {
         "address": "Zhishan Rock Cultural History Park, near Yunong Library, Zhicheng Rd Sec 2 area, Shilin District, Taipei",
-        "latitude": 25.1038,
-        "longitude": 121.5303,
+        "latitude": 25.103044,
+        "longitude": 121.532766,
         "neighbourhood": "Zhishan Rock, Shilin"
       },
       "story": "Six Japanese schoolteachers are buried under this camphor. They were killed on this hill in the Zhishan Rock Incident of 1895, in the first months of Japanese rule over Taiwan, and a local hiking record states that the bodies were laid together beneath the big camphor. If the tree's age is anywhere near right, it was already well past its first century when that happened.\n\nHow near right is the open question. A Taipei heritage account calls it roughly three hundred years old. The hiking record puts it closer to three hundred and twenty and says flatly that it is the oldest tree in Taipei. Nobody has published a girth to settle the difference, so the honest answer is the range rather than a single figure.\n\nIt survived for a reason that finished off most of its relatives. Camphor was an industrial crop on this island, felled and distilled for camphor oil at scale, and Zhishan Rock was designated protected forest under the Japanese administration. That boundary line is why old growth is still standing on a hill inside the city.\n\nLook for it near the Yunong Library, on the open trail rather than inside the ticketed ecology garden alongside it. Our pin marks the hill rather than the trunk, so give yourself a few minutes to find it.",
       "verified_sources": [
         "https://www.hopeintw.org.tw/story-content/b14525a93D7E",
-        "https://hiking.biji.co/index.php?act=info&q=review&review_id=21696"
+        "https://hiking.biji.co/index.php?act=info&q=review&review_id=21696",
+        "https://ecultureuser.gov.taipei/data/api/tree/2726"
       ],
       "access": "Free entry. Inside Zhishan Rock Cultural History Park, a public hillside park and historic site open daily with no admission fee (the adjacent ticketed Zhishan Culture and Ecology Garden, NT$50, is a separate enclosed section; this tree stands in the free trail/park area near Yunong Library).",
       "transport": "Zhishan MRT Station (Red Line, Danshui-Xinyi), exit 1, roughly 8-10 minute walk via Zhicheng Rd and the trail entrance; alternatively via the Yunong Bridge riverside parking area and the 120-step Bai'erkan staircase.",
@@ -56,8 +57,19 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it as the big old camphor near the Yunong Library, on the open trail rather than off it, with the grave of six Japanese schoolteachers beneath it."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the big old camphor near the Yunong Library, on the open trail rather than off it, with the grave of six Japanese schoolteachers beneath it.",
+      "official_register": {
+        "name": "臺北市受保護樹木 (Taipei City Protected Trees, Parks and Street Lights Office), no. 2726",
+        "url": null
+      },
+      "height_m": 17,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://ecultureuser.gov.taipei/data/api/tree/2726",
+        "date": "2026-10-10",
+        "moved_m": 262
+      }
     },
     {
       "id": "tpe_002",
@@ -69,14 +81,15 @@
       "girth_cm": null,
       "location": {
         "address": "In front of the Common Teaching Building, National Taiwan University main campus, near Zhoushan Road, Da'an District, Taipei",
-        "latitude": 25.0177,
-        "longitude": 121.5385,
+        "latitude": 25.015707,
+        "longitude": 121.53746,
         "neighbourhood": "National Taiwan University campus"
       },
       "story": "The building came second. When National Taiwan University put up its Common Teaching Building, the floor plan was recessed to leave these three Ryukyu pines standing where they already were, and the campus later laid an elevated wooden deck around their feet so people could sit under them without treading the roots flat.\n\nNobody has cored them. An estimate published around 2010 put the trio at roughly eighty years old, which lands them a little short of a century now, and that is arithmetic on an estimate rather than a measurement. Two of the three carry their own numbers on Taipei's protected tree register, 10615-00047 and 10615-00048, according to the account that lists them.\n\nOn campus they are the Common Three Pines, and in a 2005 student poll they were voted one of the twelve scenic spots of the university. That is an odd honour for three conifers on a teaching plaza, and it says something about how many people have sat under them. They still do. The food carts are close, the deck is shaded, and these trees are the reason anyone stops at that particular corner of Zhoushan Road rather than walking on.\n\nThe pin comes off the building rather than off the trunks, so aim for the plaza in front of the Common Teaching Building; three tall pines on a wooden platform are hard to mistake for anything else.",
       "verified_sources": [
         "https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8%E5%85%B1%E5%90%8C%E4%B8%89%E6%9D%BE",
-        "https://raywang1016.pixnet.net/blog/posts/9441993434"
+        "https://raywang1016.pixnet.net/blog/posts/9441993434",
+        "https://ecultureuser.gov.taipei/data/api/tree/755"
       ],
       "access": "Free. Open university campus with no gate or admission fee; the pines stand on a public plaza in front of a teaching building that students, staff and visitors walk through freely.",
       "transport": "NTU main campus; roughly 10-15 minute walk from Gongguan MRT Station (Songshan-Xindian Line) or Taipower Building MRT Station.",
@@ -87,8 +100,19 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "You are looking for three pines rather than one tree, standing on a raised wooden deck laid round their feet, with the teaching building's floor plan recessed to leave them where they were."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You are looking for three pines rather than one tree, standing on a raised wooden deck laid round their feet, with the teaching building's floor plan recessed to leave them where they were.",
+      "official_register": {
+        "name": "臺北市受保護樹木 (Taipei City Protected Trees, Parks and Street Lights Office), no. 753, 754, 755",
+        "url": null
+      },
+      "height_m": 15,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://ecultureuser.gov.taipei/data/api/tree/755",
+        "date": "2026-10-10",
+        "moved_m": 245
+      }
     },
     {
       "id": "tpe_003",
@@ -122,7 +146,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You are looking for two junipers rather than one tree, on Qingyun Road between the Pan Pond and the Lingxing Gate. Accounts mention inscribed stones beside them, so look for those too."
+      "how_to_recognise": "You are looking for two junipers rather than one tree, on Qingyun Road between the Pan Pond and the Lingxing Gate. Accounts mention inscribed stones beside them, so look for those too.",
+      "location_site": {
+        "name": "Qingyun Road path between the Pan Pond and the Lingxing Gate, Taipei Confucius Temple",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "tpe_004",
