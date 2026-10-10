@@ -8,7 +8,9 @@ Rung: enrichment pass, Houston (visits 7d: 1497). Verify agent returned register
 
 Second item, Sintra enrichment: ICNF register record with girth 771 cm and height 31 m on sin_003; heights for sin_001 and sin_004 from Parques de Sintra; ticket price and hours on sin_001, sin_004, sin_005. No register or pin evidence found for sin_005 (Overpass returned 406, one article 403).
 
-Third item, Florence enrichment: MASAF register ids on flo_020, flo_021, flo_022; access lines (Giardino dell'Iris open about a month a year, Villa della Petraia seasonal hours) from the owners' pages. Pins stay open: all three stand in gardens, not small sites.
+Third item, Florence enrichment: MASAF register ids on flo_020, flo_021, flo_022; access lines (Giardino dell'Iris open about a month a year, Villa della Petraia seasonal hours) from the owners' pages. Pins stay open: all three stand in gardens, not small sites. The push was refused once by i18ncheck (the Italian overlay lacked the two new access lines); translated them and it went through.
+
+Fourth item, The Hague enrichment: Landelijk Register Monumentale Bomen id on 15 trees (7 matched by coordinate within 16 m in data/registers/netherlands-lrmb.json). No girth or height found, no access or season changes.
 
 ## 2026-10-10 (session) - Deploy unblocked after the 45 retired Dutch trees
 

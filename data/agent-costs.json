@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "the-hague",
+   "kind": "enrich",
+   "tokens": 138641,
+   "trees": 15,
+   "note": "LRMB register ids on 15 trees, 7 matched by coordinate in the local copy; no measurements found"
+  },
+  {
+   "date": "2026-10-10",
    "target": "florence",
    "kind": "enrich",
    "tokens": 151523,
