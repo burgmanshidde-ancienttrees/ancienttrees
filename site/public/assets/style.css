@@ -3143,57 +3143,57 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .at-sheet.is-dragging { transition: none; }
 @media (prefers-reduced-motion: reduce) { .at-sheet { transition: none; } }
 .at-sheet::backdrop { background: rgba(38,48,30,0.45); }
-.at-sheet-grab { display: none; position: absolute; top: 0; left: 0; right: 0; height: 2.4rem;
+dialog.at-sheet .at-sheet-grab { display: none; position: absolute; top: 0; left: 0; right: 0; height: 2.4rem;
   touch-action: none; cursor: grab; }
-.at-sheet-grab::before { content: ""; display: block; width: 36px; height: 5px; border-radius: 999px;
+dialog.at-sheet .at-sheet-grab::before { content: ""; display: block; width: 36px; height: 5px; border-radius: 999px;
   background: var(--cream-dark); margin: 12px auto 0; }
-.at-sheet-x { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; padding: 7px;
+dialog.at-sheet .at-sheet-x { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; padding: 7px;
   border: 0; background: none; cursor: pointer; color: var(--ink-mid); }
-.at-sheet-x::before { content: ""; position: absolute; inset: 7px; border-radius: 999px; background: #F1F0EA; }
-.at-sheet-x svg { position: relative; width: 14px; height: 14px; display: block; margin: auto; }
-.at-sheet-x:hover::before { background: #e6e4dc; }
-.at-sheet-tile { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px;
+dialog.at-sheet .at-sheet-x::before { content: ""; position: absolute; inset: 7px; border-radius: 999px; background: #F1F0EA; }
+dialog.at-sheet .at-sheet-x svg { position: relative; width: 14px; height: 14px; display: block; margin: auto; }
+dialog.at-sheet .at-sheet-x:hover::before { background: #e6e4dc; }
+dialog.at-sheet .at-sheet-tile { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px;
   margin: 0 auto 1rem; border-radius: 14px; background: var(--moss-light); color: var(--moss); }
-.at-sheet-tile svg { width: 26px; height: 26px; }
-.at-sheet-h { margin: 0 1.1rem 0.5rem; font-size: 26px; line-height: 1.15; font-weight: 800;
+dialog.at-sheet .at-sheet-tile svg { width: 26px; height: 26px; }
+dialog.at-sheet .at-sheet-h { margin: 0 1.1rem 0.5rem; font-size: 26px; line-height: 1.15; font-weight: 800;
   letter-spacing: -0.01em; text-wrap: balance; }
-.at-sheet-p { margin: 0 0 0.25rem; font-size: 15px; line-height: 1.4; color: var(--ink-mid); }
-.at-sheet-p[hidden] { display: none; }
-.at-sheet-pts { list-style: none; margin: 1.1rem 0 0; padding: 0; text-align: left;
+dialog.at-sheet .at-sheet-p { margin: 0 0 0.25rem; font-size: 15px; line-height: 1.4; color: var(--ink-mid); }
+dialog.at-sheet .at-sheet-p[hidden] { display: none; }
+dialog.at-sheet .at-sheet-pts { list-style: none; margin: 1.1rem 0 0; padding: 0; text-align: left;
   display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 1.35; }
-.at-sheet-pts li { display: flex; gap: 10px; align-items: flex-start; }
-.at-sheet-pts li svg { flex: none; width: 16px; height: 16px; margin-top: 2px; color: var(--moss); }
-.at-sheet-btns { display: flex; flex-direction: column; gap: 12px; margin-top: 1.4rem; }
-.sheet-b { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
+dialog.at-sheet .at-sheet-pts li { display: flex; gap: 10px; align-items: flex-start; }
+dialog.at-sheet .at-sheet-pts li svg { flex: none; width: 16px; height: 16px; margin-top: 2px; color: var(--moss); }
+dialog.at-sheet .at-sheet-btns { display: flex; flex-direction: column; gap: 12px; margin-top: 1.4rem; }
+dialog.at-sheet .sheet-b { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
   min-height: 48px; padding: 0 1.2rem; border: 0; border-radius: 999px; cursor: pointer;
   font: inherit; font-size: 16px; font-weight: 600; line-height: 1.2; text-decoration: none; }
-.sheet-b svg { width: 19px; height: 19px; flex: none; }
-.sheet-b[hidden] { display: none; }
-.sheet-b:disabled { opacity: 0.55; cursor: default; }
-.sheet-b--primary { background: var(--moss); color: #fff; }
-.sheet-b--primary:hover:not(:disabled) { background: #3f5c23; }
-.sheet-b--secondary { background: var(--cream-dark); color: var(--ink); }
-.sheet-b--secondary:hover:not(:disabled) { background: #e0ded5; }
-.sheet-b--red { background: #B22222; color: #fff; }
-.sheet-b--red:hover:not(:disabled) { background: #9c1d1d; }
-.sheet-b--redq { background: var(--cream-dark); color: #B22222; }
-.sheet-b--redq:hover:not(:disabled) { background: #e0ded5; }
-.sheet-b--quiet { background: none; min-height: 44px; font-size: 15px; color: var(--ink-mid); }
-.at-sheet-fine { margin: 0.9rem 0 0; font-size: 12px; color: var(--ink-light); }
-.at-sheet-fine[hidden] { display: none; }
+dialog.at-sheet .sheet-b svg { width: 19px; height: 19px; flex: none; }
+dialog.at-sheet .sheet-b[hidden] { display: none; }
+dialog.at-sheet .sheet-b:disabled { opacity: 0.55; cursor: default; }
+dialog.at-sheet .sheet-b--primary { background: var(--moss); color: #fff; }
+dialog.at-sheet .sheet-b--primary:hover:not(:disabled) { background: #3f5c23; }
+dialog.at-sheet .sheet-b--secondary { background: var(--cream-dark); color: var(--ink); }
+dialog.at-sheet .sheet-b--secondary:hover:not(:disabled) { background: #e0ded5; }
+dialog.at-sheet .sheet-b--red { background: #B22222; color: #fff; }
+dialog.at-sheet .sheet-b--red:hover:not(:disabled) { background: #9c1d1d; }
+dialog.at-sheet .sheet-b--redq { background: var(--cream-dark); color: #B22222; }
+dialog.at-sheet .sheet-b--redq:hover:not(:disabled) { background: #e0ded5; }
+dialog.at-sheet .sheet-b--quiet { background: none; min-height: 44px; font-size: 15px; color: var(--ink-mid); }
+dialog.at-sheet .at-sheet-fine { margin: 0.9rem 0 0; font-size: 12px; color: var(--ink-light); }
+dialog.at-sheet .at-sheet-fine[hidden] { display: none; }
 .at-sheet [data-step][hidden] { display: none; }
 .at-sheet button:focus:not(:focus-visible) { outline: none; }
 @media (max-width: 600px) {
   .at-sheet { margin: auto 0 0; width: 100%; max-width: 100%; box-sizing: border-box;
     border-radius: 28px 28px 0 0; padding: 2.4rem 1.5rem calc(1.9rem + env(safe-area-inset-bottom));
     max-height: 92vh; }
-  .at-sheet-grab { display: block; }
+  dialog.at-sheet .at-sheet-grab { display: block; }
 }
 /* A laptop has no camera to point at a tree: the camera button goes, and the
    library button says what it does there (TreeDetail.astro's collect sheet). */
 @media (pointer: fine) {
-  .at-sheet .only-touch { display: none; }
+  dialog.at-sheet .only-touch, dialog.at-sheet .sheet-b.only-touch { display: none; }
 }
 @media not (pointer: fine) {
-  .at-sheet .only-fine { display: none; }
+  dialog.at-sheet .only-fine, dialog.at-sheet .sheet-b.only-fine { display: none; }
 }
