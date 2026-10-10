@@ -2,27 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-21T06:21:29+00:00",
-   "date": "2026-08-21",
-   "run_id": "32454059744",
-   "minutes": 20.2,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 140,
-   "denials": 35,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Edit, Write",
-   "ended": "success",
-   "tokens": 6326187,
-   "claims_held": [
-    "seville",
-    "caserta"
-   ],
-   "commits": 6,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-21T08:23:10+00:00",
    "date": "2026-08-21",
    "run_id": "32462923037",
@@ -21216,6 +21195,164 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-10T10:22:53+00:00",
+   "date": "2026-10-10",
+   "run_id": "38044661890",
+   "minutes": 20.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 210,
+   "denials": 8,
+   "denials_source": "permission_denials: Bash(cd && mkdir && cd && for ...), Bash(curl ; wc ; sed | tr ...), Bash(grep | ?), Bash(grep | cut ; grep | ?), Bash(mkdir && cd && for ; do ...), Bash(mkdir ; cd ; curl), Bash(python3 | tail ; git ; git ...)",
+   "ended": "success",
+   "tokens": 862481,
+   "claims_held": [
+    "houston"
+   ],
+   "commits": 15,
+   "cities_touched": 34,
+   "cities": [
+    {
+     "city": "apeldoorn",
+     "trees": 0
+    },
+    {
+     "city": "assen",
+     "trees": 0
+    },
+    {
+     "city": "austin",
+     "trees": 0
+    },
+    {
+     "city": "borculo",
+     "trees": 0
+    },
+    {
+     "city": "deventer",
+     "trees": 0
+    },
+    {
+     "city": "ede",
+     "trees": 0
+    },
+    {
+     "city": "emmen",
+     "trees": 0
+    },
+    {
+     "city": "giethoorn",
+     "trees": 0
+    },
+    {
+     "city": "haarlem",
+     "trees": 0
+    },
+    {
+     "city": "harderwijk",
+     "trees": 0
+    },
+    {
+     "city": "heinkenszand",
+     "trees": 0
+    },
+    {
+     "city": "hoorn",
+     "trees": 0
+    },
+    {
+     "city": "krakow",
+     "trees": 0
+    },
+    {
+     "city": "los-angeles",
+     "trees": 0
+    },
+    {
+     "city": "milan",
+     "trees": 0
+    },
+    {
+     "city": "montreal",
+     "trees": 0
+    },
+    {
+     "city": "oostkapelle",
+     "trees": 0
+    },
+    {
+     "city": "palma-de-mallorca",
+     "trees": 0
+    },
+    {
+     "city": "rhenen",
+     "trees": 0
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    },
+    {
+     "city": "delft",
+     "trees": -1
+    },
+    {
+     "city": "enschede",
+     "trees": -1
+    },
+    {
+     "city": "leiden",
+     "trees": -1
+    },
+    {
+     "city": "zwolle",
+     "trees": -1
+    },
+    {
+     "city": "alkmaar",
+     "trees": -2
+    },
+    {
+     "city": "nijmegen",
+     "trees": -2
+    },
+    {
+     "city": "dordrecht",
+     "trees": -3
+    },
+    {
+     "city": "eindhoven",
+     "trees": -3
+    },
+    {
+     "city": "maastricht",
+     "trees": -3
+    },
+    {
+     "city": "the-hague",
+     "trees": -3
+    },
+    {
+     "city": "groningen",
+     "trees": -4
+    },
+    {
+     "city": "amsterdam",
+     "trees": -7
+    },
+    {
+     "city": "arnhem",
+     "trees": -7
+    },
+    {
+     "city": "leeuwarden",
+     "trees": -7
+    }
+   ],
+   "trees": -45,
    "logged": true
   }
  ],
