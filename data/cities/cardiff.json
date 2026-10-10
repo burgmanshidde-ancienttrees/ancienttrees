@@ -137,17 +137,20 @@
       "height_m": 24,
       "location": {
         "address": "South east edge of the Blackfriars site, Bute Park, Cardiff (OS grid ST 17804 76667)",
-        "latitude": 51.4825,
-        "longitude": -3.1838,
+        "latitude": 51.48296,
+        "longitude": -3.1851,
         "neighbourhood": "Bute Park"
       },
       "verified_sources": [
         "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php (Cardiff parks's own champion-tree survey: girth 612cm, height 24m, Glamorgan Champion 2022, age estimated by the standard British method from girth and site quality)",
-        "https://en.wikipedia.org/wiki/Bute_Park (independently confirms Capability Brown landscaped the Castle Green in the late 18th century and that Blackfriars is a real site within the park; does not itself give this tree's measurements)"
+        "https://en.wikipedia.org/wiki/Bute_Park (independently confirms Capability Brown landscaped the Castle Green in the late 18th century and that Blackfriars is a real site within the park; does not itself give this tree's measurements)",
+        "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php (girth 612 cm, height 24 m, measured April 2022)",
+        "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php",
+        "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php (council grid reference ST 17804 76667, converted OSGB36 to WGS84 by Helmert transform; accurate to a few metres of the grid reference, which itself is to 1 m)"
       ],
       "access": "Free. Bute Park is Cardiff's largest and most central public park, immediately behind Cardiff Castle, open daily. Marked on site by a blue Champion Tree Trail plaque.",
       "transport": "Central Cardiff, Bute Park, a short walk from Cardiff Castle and the city centre.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Bute Park has fifty British-champion trees and more than 3,000 catalogued specimens, and this London plane earned its own designation in 2022: Glamorgan Champion, the largest of its kind recorded in the county. It stands at the south east edge of the Blackfriars site, where a medieval friary once stood before the Bute family's landscaping buried its footprint under lawn.\n\nThe tree measures 612 centimetres round and 24 metres tall. Working backward from that girth using the standard method for estimating veteran trees in Britain, its age comes out at roughly 251 years on a good growing site or 307 on an average one, which would put its planting between 1715 and 1771. Either way it predates Andrew Pettigrew, who took up his post as head gardener to the third Marquis of Bute in 1873 and planted the avenues seen in the park today; nobody has found a record of who planted this one or when.\n\nThe date range reaches back to the mid eighteenth century, when the first Marquis employed Capability Brown to landscape the Castle Green nearby, and Cardiff's own parks record says London planes near Blackfriars may date from that work. No source ties this specific tree to Brown by name, so treat the connection as circumstantial rather than settled.\n\nA blue plaque on the Champion Tree Trail marks it in the park.",
       "how_to_recognise": "You can recognise it by its girth, 612 centimetres round, and a blue Champion Tree Trail plaque naming it Glamorgan Champion. It stands at the south east edge of the Blackfriars site in Bute Park, behind the castle.",
@@ -156,6 +159,16 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Bute Park tree survey, Cardiff Council (Glamorgan Champion 2022, ref 828)",
+        "url": "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php"
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.cardiffparks.org.uk/trees/bute/platanus-x-hispanica3.php (council grid reference ST 17804 76667, converted OSGB36 to WGS84 by Helmert transform; accurate to a few metres of the grid reference, which itself is to 1 m)",
+        "date": "2026-10-10",
+        "moved_m": 104
       }
     }
   ]
