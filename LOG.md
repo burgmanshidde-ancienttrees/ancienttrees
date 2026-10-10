@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Website top bar is words only
+
+**What changed:** on Hidde's "lets do none in the menu bar at web": the account item in the desktop bar is the word "Account" with the same caret as Explore instead of a round avatar icon (this reverses the 2026-10-06 AllTrails-style avatar on his call), and the bar's dropdown rows carry no icons on a desktop; the phone's full-screen menu keeps its icon tiles. The settings page lost the line "N trees, updated every time this page is built" ("so random plz delete").
+
 ## 2026-10-10 (session) - My trees header redone
 
 **What changed:** Hidde called the My trees header messy and chose the lighter design on the canvas (no counts row). App: a larger photo (60) and name (22), the follow line with bold numbers, the find-people button as a plain white disc centred on the photo, and Collected / Want to visit as underlined tabs from the page's left edge instead of the grey segmented switch; the country chips are unchanged. Website: the profile page's switch is the same underlined tabs. Tests that tapped the segmented control now tap `lane-collected` / `lane-want`. CONVENTIONS.md "A profile page" records the tabs.

@@ -126,19 +126,12 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
    avatar button with no caret and no label. The first version here was a bare
    line-art person floating next to a stray dropdown arrow, shipped without
    anyone looking at it on a phone. */
-.nav-acct summary { display: inline-flex; align-items: center; justify-content: center;
-  width: 32px; height: 32px; border-radius: 50%; background: var(--surface);
-  border: 1px solid var(--cream-dark); color: var(--ink); }
-/* .nav-drop summary::after is declared later in this file, so an equally
-   specific rule here loses. Naming both classes wins on specificity instead
-   of on order, which is the version that survives someone moving a block. */
-.nav-drop.nav-acct summary::after { content: none; }
-.nav-acct summary:hover { background: var(--cream-dark); }
-.nav-acct .acct-avatar { display: inline-flex; width: 18px; height: 18px;
-  background: none; border-radius: 0; }
-.nav-acct .acct-avatar svg { width: 18px; height: 18px; }
-.nav-acct .acct-word { position: absolute; width: 1px; height: 1px; overflow: hidden;
-  clip: rect(0 0 0 0); white-space: nowrap; }
+/* NO ICONS IN THE BAR (Hidde, 2026-10-10: "either have both account and
+   setting have an icon or none", then "lets do none in the menu bar at
+   web"). This reverses the 2026-10-06 avatar circle, which followed
+   AllTrails, Strava and Google Maps, on his call: the bar is words, Map,
+   Explore and Account alike, each opening its menu with the same caret. */
+.nav-acct .acct-avatar { display: none; }
 /* Signed out: "Sign in" in words; signed in: the avatar menu (2026-10-06,
    AllTrails and komoot, CONVENTIONS.md). Desktop only; the phone sheet has its
    own pill. */
@@ -158,7 +151,9 @@ html:not([data-signed-in="1"]) .nav-acct.only-desktop { display: none; }
    chips, and the panel is capped so the map stays visible behind it. */
 .nav-drop-menu { position: absolute; right: 0; top: 2.4rem; background: #fff; border: none; border-radius: 14px; box-shadow: 0 8px 28px rgba(26,32,18,0.18); padding: 0.4rem 0; min-width: 12rem; max-width: 15rem; z-index: 40; }
 .nav-drop-menu a { display: flex; align-items: center; gap: 0.65rem; padding: 0.5rem 0.9rem; margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.2; }
-.nav-drop-menu .mi { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; }
+/* And no icons in the bar's menus on a desktop (same ruling): the rows are
+   words. The phone's full-screen menu brings its icon tiles back below. */
+.nav-drop-menu .mi { display: none; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; }
 .nav-drop-menu .mi svg { width: 17px; height: 17px; }
 /* The sponsor heart is filled where the saved heart is an outline, and gold at
    both widths: the mobile block adds the tile behind it, the colour belongs
@@ -584,7 +579,7 @@ dialog.photo-view .pv-frame img {
   .nav-drop-menu a:hover { background: none; }
   /* The icon becomes a tile. On the dropdown it is a bare 17px stroke in
      --ink-light, which disappears at this size and against this much white. */
-  .nav-drop-menu .mi { width: 34px; height: 34px; border-radius: 50%;
+  .nav-drop-menu .mi { display: inline-flex; width: 34px; height: 34px; border-radius: 50%;
     background: var(--surface); color: var(--ink); }
   .nav-drop-menu .mi svg { width: 18px; height: 18px; }
   .nav-drop-menu .mi-gold { background: #FBF3E3; color: var(--gold); }

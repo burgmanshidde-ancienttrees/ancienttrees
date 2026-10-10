@@ -23,15 +23,8 @@ import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { BASE_URL } from "../../lib/schema";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
-import { getCollection } from "astro:content";
-import { cityIsRenderable, renderableTrees } from "../../lib/trees";
 
 const canonical = `${BASE_URL}/account/settings`;
-// The same count every other page derives, from the same two helpers, so
-// this line cannot quietly disagree with the homepage.
-const treeCount = (await getCollection("cities"))
-  .filter(cityIsRenderable)
-  .reduce((n, c) => n + renderableTrees(c).length, 0);
 const crumbItems: [string, string | null][] = [
   ["Your trees", `${BASE_URL}/account`],
   ["Settings", null],
@@ -136,8 +129,6 @@ const crumbItems: [string, string | null][] = [
       <a class="acct-row acct-linkrow" href="/support">Support</a>
       <a class="acct-row acct-linkrow" href="/sources">Sources</a>
     </div>
-
-    <p class="acct-version">{treeCount} trees, updated every time this page is built.</p>
 
     {/* Each in its OWN card, as in the app, rather than a link and a
         disclosure triangle. */}
