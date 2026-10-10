@@ -5,6 +5,7 @@
 ## 2026-10-10 (night run, 03:55 window) - Athens and Cadiz enrichment, almost nothing
 
 **Done:** Athens (second pass, 132k tokens) closed nothing: no per-tree Greek register, no hours on the official pages the agent could read, no striking season moment in the three species files. Its 32 gaps are recorded as dead ends for 90 days, so stop re-briefing it. Cadiz: the pass found an OSM Dracaena draco node 125 m from cad_002, but `enrich.py --apply` refused the pin because the answer carried no source URL, so nothing changed on the page. No register entries, measurements or hours found for any of the five Cadiz trees. No new trees (recovery mode). Josecelestinomutis.cadiz.es gives 403 to curl but loads through the fetch tool.
+**Glasgow:** gla_005 height 25 m from the Woodland Trust Tree of the Year page. gla_001's girth and height (409 cm, 18.8 m) were withheld: they come from a 2014 blog reprint and predate Storm Eowyn, which took half the tree. gla_002's pin is already right (OSM Suffrage Oak node 15 m away). nts.org.uk returns 403 to curl and fetch.
 **Left to retry:** cad_002 pin with the OSM node URL (https://www.openstreetmap.org/node/5292560400) as source, from a session.
 
 ## 2026-10-09 (night run, continuation) - London enrichment, one tree
