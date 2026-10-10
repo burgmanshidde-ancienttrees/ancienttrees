@@ -2,6 +2,17 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Removing is undone, not confirmed; Discover and My trees follow-ups
+
+**What changed:** Hidde, on "Remove from collected" swapping the sheet for a red question: "it feels weird ... please benchmark how these flows work", then "your suggestion sounds ok". Apple's alert guidance says not to confirm a common action that can be undone, and Material's says to act at once and offer Undo; uncollecting can be undone (the photographs stay). So on the app and the website, Remove from collected and (in the app) removing from Want to visit happen at once, and the snackbar offers Undo, which puts a collected tree back on the day it was first collected. The map's arrival card does the same. Questions stay only for what cannot be undone: delete account, discard an unsent photograph, delete your own tree. UndoWalk tests it.
+
+- Tree page: Take a photograph and Choose from your photos open the camera and the library directly; the collect flow opens after, with the photograph in hand (it used to show its own first screen in between).
+- Ambassador: the explainer names no address; only the receipt says where we will write.
+- Map list at full height: the tree count is gone, the strip and the search field stay where they were.
+- Discover: species in three rows that slide together; More trees near you is an endless grid of three going down.
+- My trees, app and website: rounded tiles 6 apart inside the margin, Discover's shape.
+- Layout gate: the follower counts are 44 tall as buttons now, and appfit knows a label centred in its own button is not a drifting left edge.
+- Website sheets: centred on a laptop, and their titles no longer shrunk by page styles.
 ## 2026-10-10 (session) - Website profile: no plus button, the app's ambassador words
 
 **What changed:** the round + beside the gear on the website profile is gone (Hidde: "so random"); adding a tree is "Suggest a tree" in the menu. The ambassador tag under the name now reads like the app's badge, "Copenhagen ambassador", instead of "Ambassador for Copenhagen"; it shows only for an account that is an ambassador.

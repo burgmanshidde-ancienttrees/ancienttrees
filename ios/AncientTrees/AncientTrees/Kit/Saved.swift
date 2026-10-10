@@ -204,6 +204,16 @@ public final class Saved {
     /// a side effect: the two lists are independent, so collecting one does
     /// not put it in the other (Hidde, 2026-08-26). Untick the last thing on
     /// a row that was never a favourite and the row goes.
+    /// Undo for "Removed from collected" (2026-10-10): the tick comes back
+    /// with the day it was first made, not today.
+    public func restoreVisited(_ id: String, at date: Date) {
+        let existing = entries[id]
+        entries[id] = Entry(treeId: id, visitedAt: date,
+                            savedAt: existing?.savedAt ?? date, favourite: existing?.favourite ?? false)
+        persist()
+        onMutate?(id, entries[id])
+    }
+
     public func toggleVisited(_ id: String) {
         let existing = entries[id]
         let fav = existing?.favourite ?? false

@@ -330,7 +330,7 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
   {/* THE COLLECT SHEET (TreeDetail.swift collectChoice): three panes, one
       shown at a time by tree-actions-js.ts. A bottom sheet on a phone and a
       centred dialog on a laptop, the two places each platform puts a choice. */}
-  <Sheet lang={p.lang} class="collect-dlg" data-tree={tree.id} data-lang={p.lang} aria-label={U.collectTitle(p.name)}>
+  <Sheet lang={p.lang} class="collect-dlg" data-tree={tree.id} data-lang={p.lang} data-removed={U.uncollected} aria-label={U.collectTitle(p.name)}>
     {/* Three ways to collect, the app's sheet (Hidde, 2026-10-10: "make
         photo, from library and last collect without photograph"). A laptop
         has no camera to point at a tree, so there the first two become one
@@ -354,15 +354,7 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
         <button type="button" class="sheet-b sheet-b--primary only-touch" data-act="camera"><Fragment set:html={icon("camera", "bold")} />{U.collectCamera}</button>
         <button type="button" class="sheet-b sheet-b--secondary only-touch" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectLibrary}</button>
         <button type="button" class="sheet-b sheet-b--primary only-fine" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectPhoto}</button>
-        <button type="button" class="sheet-b sheet-b--redq" data-act="ask">{U.uncollect}</button>
-      </div>
-    </div>
-    <div data-pane="confirm" hidden>
-      <h3 class="at-sheet-h">{U.uncollectQ(p.name)}</h3>
-      <p class="at-sheet-p">{U.uncollectBody}</p>
-      <div class="at-sheet-btns">
-        <button type="button" class="sheet-b sheet-b--red" data-act="remove">{U.uncollectYes}</button>
-        <button type="button" class="sheet-b sheet-b--secondary" data-act="keep">{U.keepIt}</button>
+        <button type="button" class="sheet-b sheet-b--redq" data-act="uncollect">{U.uncollect}</button>
       </div>
     </div>
   </Sheet>

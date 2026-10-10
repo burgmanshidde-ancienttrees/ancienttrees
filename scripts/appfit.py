@@ -376,6 +376,26 @@ def centred(el, W):
     return abs((el.x + el.w / 2) - W / 2) <= 2.0 and el.w < W * 0.88
 
 
+def centred_in_button(el, els):
+    """True for a label centred inside the button that holds it (2026-10-10).
+
+    A button's words start wherever the button's width and the words' own
+    width put them, exactly as centred() says of a centred headline, so the
+    tree page's "Take me there · 2166 km" starting at 28.5 inside a button that
+    starts at 20 is the label being centred, not the page losing its edge.
+    """
+    if el.type not in ("StaticText", "Image"):
+        return False
+    for b in els:
+        if b is el or b.type != "Button":
+            continue
+        if (b.x <= el.x and el.x + el.w <= b.x + b.w + 0.5 and b.y <= el.y
+                and el.y + el.h <= b.y + b.h + 0.5
+                and abs((el.x + el.w / 2) - (b.x + b.w / 2)) <= 2.0):
+            return True
+    return False
+
+
 def check(screen):
     findings = []
     W = screen["w"]
@@ -517,7 +537,8 @@ def check(screen):
         if (el.type not in INVISIBLE and el.type not in NOT_OURS and el.w > 48 and el.h > 4
                 and 0 <= el.x < W / 2 and not in_shelf(el)
                 and el.ident not in FLOATS_OVER_PAGES and el.ident not in ON_A_PHOTO
-                and not inside(el, NOT_OURS, NOT_OURS_IDS) and not centred(el, W)):
+                and not inside(el, NOT_OURS, NOT_OURS_IDS) and not centred(el, W)
+                and not centred_in_button(el, els)):
             lefts[round(el.x * 2) / 2].append(el)
     if lefts:
         dominant = max(lefts, key=lambda x: len(lefts[x]))

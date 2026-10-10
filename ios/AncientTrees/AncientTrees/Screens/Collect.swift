@@ -1053,29 +1053,35 @@ struct CollectView: View {
                             // else in this codebase enlarges an already-44 frame,
                             // it does not fake one.
                             Button { peopleList = .followers } label: {
-                                Text("\(profiles.followers)").fontWeight(.semibold).foregroundStyle(Brand.ink)
-                                    + Text(" followers")
+                                (Text("\(profiles.followers)").fontWeight(.semibold).foregroundStyle(Brand.ink)
+                                    + Text(" followers"))
+                                    // The 44 INSIDE the button, so the button
+                                    // itself is 44 tall (appfit measured 20
+                                    // when the frame sat outside it).
+                                    .frame(minHeight: 44)
+                                    .contentShape(.rect)
                             }
                             .buttonStyle(.plain)
-                            // 44 to hit, 20 to lay out: the touch frame
-                            // overhangs the row instead of pushing the lanes
-                            // 30 points down (2026-10-10, the spacing pass).
-                            .frame(minHeight: 44)
-                            .padding(.vertical, -12)
-                            .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-followers")
-                            Button { peopleList = .following } label: {
-                                Text("\(profiles.following)").fontWeight(.semibold).foregroundStyle(Brand.ink)
-                                    + Text(" following")
-                            }
-                            .buttonStyle(.plain)
                             // 44 to hit, 20 to lay out: the touch frame
                             // overhangs the row instead of pushing the lanes
                             // 30 points down (2026-10-10, the spacing pass).
-                            .frame(minHeight: 44)
                             .padding(.vertical, -12)
-                            .contentShape(.rect)
+                            Button { peopleList = .following } label: {
+                                (Text("\(profiles.following)").fontWeight(.semibold).foregroundStyle(Brand.ink)
+                                    + Text(" following"))
+                                    // The 44 INSIDE the button, so the button
+                                    // itself is 44 tall (appfit measured 20
+                                    // when the frame sat outside it).
+                                    .frame(minHeight: 44)
+                                    .contentShape(.rect)
+                            }
+                            .buttonStyle(.plain)
                             .accessibilityIdentifier("mytrees-following")
+                            // 44 to hit, 20 to lay out: the touch frame
+                            // overhangs the row instead of pushing the lanes
+                            // 30 points down (2026-10-10, the spacing pass).
+                            .padding(.vertical, -12)
                         }
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
                         // CAPPED, because two counts side by side cannot grow

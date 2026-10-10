@@ -309,6 +309,8 @@ export interface UIStrings {
   collectedTitle: (n: string) => string;
   collectedOn: (d: string) => string;
   uncollect: string;
+  /** The snackbar after removing, with Undo (2026-10-10). */
+  uncollected: string;
   uncollectQ: (n: string) => string;
   uncollectBody: string;
   uncollectYes: string;
@@ -664,6 +666,7 @@ const EN: UIStrings = {
   collectedTitle: (n) => `You collected ${n}`,
   collectedOn: (d) => `On ${d}.`,
   uncollect: "Remove from collected",
+  uncollected: "Removed from collected",
   uncollectQ: (n) => `Remove ${n} from your collected trees?`,
   uncollectBody: "Your photographs of it stay saved. It leaves My trees until you collect it again.",
   uncollectYes: "Remove",
@@ -943,6 +946,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     collectedTitle: (n) => `Has coleccionado ${n}`,
     collectedOn: (d) => `El ${d}.`,
     uncollect: "Quitar de coleccionados",
+    uncollected: "Quitado de coleccionados",
     uncollectQ: (n) => `¿Quitar ${n} de tus árboles coleccionados?`,
     uncollectBody: "Tus fotografías se quedan guardadas. Sale de Mis árboles hasta que lo vuelvas a coleccionar.",
     uncollectYes: "Quitar",
@@ -1222,6 +1226,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     collectedTitle: (n) => `Hai collezionato ${n}`,
     collectedOn: (d) => `Il ${d}.`,
     uncollect: "Togli dai collezionati",
+    uncollected: "Tolto dai collezionati",
     uncollectQ: (n) => `Togliere ${n} dai tuoi alberi collezionati?`,
     uncollectBody: "Le tue fotografie restano salvate. Esce da I miei alberi finché non lo collezioni di nuovo.",
     uncollectYes: "Togli",
@@ -1501,6 +1506,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     collectedTitle: (n) => `Je hebt ${n} verzameld`,
     collectedOn: (d) => `Op ${d}.`,
     uncollect: "Uit verzameld halen",
+    uncollected: "Uit verzameld gehaald",
     uncollectQ: (n) => `${n} uit je verzamelde bomen halen?`,
     uncollectBody: "Je foto’s ervan blijven bewaard. Hij verdwijnt uit Mijn bomen tot je hem opnieuw verzamelt.",
     uncollectYes: "Weghalen",
@@ -1780,6 +1786,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     collectedTitle: (n) => `Du hast ${n} gesammelt`,
     collectedOn: (d) => `Am ${d}.`,
     uncollect: "Aus Gesammelt entfernen",
+    uncollected: "Aus Gesammelt entfernt",
     uncollectQ: (n) => `${n} aus deinen gesammelten Bäumen entfernen?`,
     uncollectBody: "Deine Fotos davon bleiben gespeichert. Er verschwindet aus Meine Bäume, bis du ihn wieder sammelst.",
     uncollectYes: "Entfernen",
@@ -2059,6 +2066,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     collectedTitle: (n) => `Colecionaste ${n}`,
     collectedOn: (d) => `Em ${d}.`,
     uncollect: "Retirar das colecionadas",
+    uncollected: "Retirada das colecionadas",
     uncollectQ: (n) => `Retirar ${n} das tuas árvores colecionadas?`,
     uncollectBody: "As tuas fotografias ficam guardadas. Sai de As minhas árvores até a colecionares de novo.",
     uncollectYes: "Retirar",
@@ -2338,6 +2346,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     collectedTitle: (n) => `Tu as collectionné ${n}`,
     collectedOn: (d) => `Le ${d}.`,
     uncollect: "Retirer des collectionnés",
+    uncollected: "Retiré des collectionnés",
     uncollectQ: (n) => `Retirer ${n} de tes arbres collectionnés ?`,
     uncollectBody: "Tes photos restent enregistrées. Il quitte Mes arbres jusqu’à ce que tu le collectionnes à nouveau.",
     uncollectYes: "Retirer",
@@ -2616,6 +2625,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     collectedTitle: (n) => `${n}を集めました`,
     collectedOn: (d) => `${d}`,
     uncollect: "集めた木から外す",
+    uncollected: "集めた木から外しました",
     uncollectQ: (n) => `${n}を集めた木から外しますか？`,
     uncollectBody: "この木の写真は保存されたままです。もう一度集めるまで、あなたの木には表示されません。",
     uncollectYes: "外す",

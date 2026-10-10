@@ -231,11 +231,13 @@ window.atCollection = (function() {
         .then(function(rows) { return rows && rows[0] ? rows[0].visited_at : null; })
         .catch(function() { return null; });
     },
-    visit: function(id, on) {
+    visit: function(id, on, day) {
       var s = session();
       if (!s) return Promise.resolve(false);
+      // day: Undo puts a tick back on the day it was first made (2026-10-10).
+      var row = day ? { tree_id: id, visited_at: day } : { tree_id: id };
       var p = on
-        ? api('/rest/v1/visited?on_conflict=user_id,tree_id', s, { method: 'POST', body: [{ tree_id: id }] })
+        ? api('/rest/v1/visited?on_conflict=user_id,tree_id', s, { method: 'POST', body: [row] })
         : api('/rest/v1/visited?tree_id=eq.' + encodeURIComponent(id), s, { method: 'DELETE' });
       return p.then(function(r) { return r.ok; }).catch(function() { return false; });
     }

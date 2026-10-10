@@ -36,8 +36,6 @@ struct MapTab: View {
     @State private var mapIdle = false
 
     @State private var selected: Tree?
-    /// The arrival card's untick asks first, as the tree page does (2026-10-10).
-    @State private var uncollecting: Tree?
     /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
     /// simctl cannot tap, so the one screen that only exists after a tap could
     /// not be looked at before it shipped.
@@ -715,7 +713,14 @@ struct MapTab: View {
                     }
                     return
                 }
-                if saved.isVisited(t.id) { uncollecting = t; return }
+                if saved.isVisited(t.id) {
+                    // At once, with Undo, as on the tree page (2026-10-10).
+                    let when = saved.collected.first(where: { $0.treeId == t.id })?.visitedAt ?? Date()
+                    saved.toggleVisited(t.id)
+                    navigator.snack = .init(text: "Removed from collected", symbol: "checkmark.seal",
+                                            undo: .recollect(t.id, when))
+                    return
+                }
                 saved.toggleVisited(t.id)
             } label: {
                 Label(saved.isVisited(t.id) ? "Collected" : "Mark as collected",
@@ -731,18 +736,7 @@ struct MapTab: View {
         .padding(16)
         .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
         .padding(.horizontal, 16).padding(.bottom, 6)
-        .sheet(item: $uncollecting) { u in
-            BrandSheet(
-                title: "Remove \(u.name) from your collected trees?",
-                message: "Your photographs of it stay saved. It leaves My trees until you collect it again.",
-                buttons: [
-                    .destructive("Remove", id: "uncollect-confirm") {
-                        if saved.isVisited(u.id) { saved.toggleVisited(u.id) }
-                        uncollecting = nil
-                    },
-                    .secondary("Keep it") { uncollecting = nil },
-                ])
-        }
+
     }
 
     /// Yours, through the same filters ours go through.

@@ -63,8 +63,15 @@ public final class Navigator {
         /// The glyph at its leading edge. News of every kind travels here
         /// rather than in an alert (the one-sheet rule, 2026-10-10).
         public let symbol: String
-        public init(text: String, viewWantToVisit: Bool = false, symbol: String = "bookmark.fill") {
+        /// What Undo puts back (2026-10-10): removing something you can get
+        /// back is done at once and offers Undo, rather than asking first
+        /// (Apple's alert guidance; Material's confirmation guidance).
+        public enum Undo: Equatable { case recollect(String, Date), resave(String) }
+        public let undo: Undo?
+        public init(text: String, viewWantToVisit: Bool = false, symbol: String = "bookmark.fill",
+                    undo: Undo? = nil) {
             self.text = text; self.viewWantToVisit = viewWantToVisit; self.symbol = symbol
+            self.undo = undo
         }
     }
     public var snack: Snack?

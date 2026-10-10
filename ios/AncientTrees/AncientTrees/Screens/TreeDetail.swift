@@ -54,7 +54,6 @@ struct TreeDetail: View {
     @State private var choosingCollect = false
     /// The collect sheet's second step: removing asks first, as the bookmark
     /// does (Hidde, 2026-10-10, board "Collected, and the way back").
-    @State private var confirmingUncollect = false
     /// What the choice asked for, run once its sheet has gone, because the
     /// camera is presented by the root and two sheets cannot swap in one frame.
     @State private var afterChoice: (() -> Void)?
@@ -483,7 +482,6 @@ struct TreeDetail: View {
         }
         .sheet(isPresented: $sharing) { ShareSheet(items: shareItems) }
         .sheet(isPresented: $choosingCollect, onDismiss: {
-            confirmingUncollect = false
             let run = afterChoice
             afterChoice = nil
             run?()
@@ -580,14 +578,9 @@ struct TreeDetail: View {
             // A screen no argument can open is a screen that ships unseen, and
             // the viewer is a screen (appsweep.py says so in its own comment).
             if ProcessInfo.processInfo.arguments.contains("-photo") { showingPhoto = true }
-            // The collect sheet and its remove question (2026-10-10), so both
-            // can be looked at without a tap: -collectsheet opens the sheet in
-            // whichever state the tree is in, -uncollectask goes to the question.
+            // The collect sheet (2026-10-10), so it can be looked at without a
+            // tap: -collectsheet opens it in whichever state the tree is in.
             if ProcessInfo.processInfo.arguments.contains("-collectsheet") { choosingCollect = true }
-            if ProcessInfo.processInfo.arguments.contains("-uncollectask") {
-                confirmingUncollect = true
-                choosingCollect = true
-            }
         }
     }
 
@@ -1886,19 +1879,7 @@ struct TreeDetail: View {
     /// "choose" (CONVENTIONS.md, "Collecting: the camera, your photos, or
     /// without").
     @ViewBuilder private var collectChoice: some View {
-        if confirmingUncollect {
-            BrandSheet(
-                title: "Remove \(tree.name) from your collected trees?",
-                message: "Your photographs of it stay saved. It leaves My trees until you collect it again.",
-                buttons: [
-                    .destructive("Remove", id: "uncollect-confirm") {
-                        afterChoice = { if saved.isVisited(tree.id) { saved.toggleVisited(tree.id) } }
-                        choosingCollect = false
-                    },
-                    .secondary("Keep it", id: "uncollect-keep") { confirmingUncollect = false },
-                ])
-        } else {
-            BrandSheet(
+        BrandSheet(
                 icon: "checkmark.seal",
                 title: collected ? "You collected \(tree.name)" : "Collect \(tree.name)",
                 message: collected ? collectedOn : "Your photograph goes in your trees instead of ours.",
@@ -1906,13 +1887,28 @@ struct TreeDetail: View {
                     .primary("Take a photograph", "camera", id: "collect-with-photo") { startPhoto(.camera) },
                     .secondary("Choose from your photos", "photo.on.rectangle", id: "collect-from-library") { startPhoto(.library) },
                     collected
-                        ? .destructiveQuiet("Remove from collected", id: "uncollect") { confirmingUncollect = true }
+                        ? .destructiveQuiet("Remove from collected", id: "uncollect") { uncollectWithUndo() }
                         : .secondary("Collect without a photograph", id: "collect-no-photo") {
                             afterChoice = { collectWithoutPhoto() }
                             choosingCollect = false
                         },
                 ])
+    }
+
+    /// REMOVED AT ONCE, WITH UNDO (Hidde, 2026-10-10: "it feels weird when
+    /// clicking remove from collected that so much changes in the design of
+    /// the overlay", then "your suggestion sounds ok"). Apple's alert guidance
+    /// and Material's confirmation guidance both say a reversible removal is
+    /// done at once and offers Undo rather than asking; the photographs stay,
+    /// and Undo puts the tick back on the day it was first made.
+    private func uncollectWithUndo() {
+        let when = saved.collected.first(where: { $0.treeId == tree.id })?.visitedAt ?? Date()
+        afterChoice = {
+            if saved.isVisited(tree.id) { saved.toggleVisited(tree.id) }
+            navigator.snack = .init(text: "Removed from collected", symbol: "checkmark.seal",
+                                    undo: .recollect(tree.id, when))
         }
+        choosingCollect = false
     }
 
     /// A 52 point circle in the bar, the same as the bookmark beside it.

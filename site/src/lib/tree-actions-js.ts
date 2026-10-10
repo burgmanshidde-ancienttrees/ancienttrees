@@ -80,6 +80,19 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
   // View, which opens the list; removed offers Undo, because the web removes
   // without asking and the app asks first.
   var snackTimer = null;
+  // A line and an Undo at the foot of the page, for anything else that
+  // removes something you can put back (the collect sheet, 2026-10-10).
+  function snackWith(text, undo) {
+    var s = document.querySelector('.at-snack');
+    if (!s || !text) return;
+    s.querySelector('.at-snack-text').textContent = text;
+    var act = s.querySelector('.at-snack-act');
+    act.textContent = s.dataset.undo;
+    act.onclick = function() { hideSnack(); undo(); };
+    s.hidden = false;
+    clearTimeout(snackTimer);
+    snackTimer = setTimeout(hideSnack, 4000);
+  }
   function snack(on, id) {
     var s = document.querySelector('.at-snack');
     if (!s) return;
@@ -185,9 +198,11 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     pane(done ? 'done' : 'choose');
     var when = dlg.querySelector('.collect-on');
     if (when) when.hidden = true;
+    collectedDay = null;
     if (done && when && C.visitedOn) {
       C.visitedOn(id).then(function(d) {
         if (!d) return;
+        collectedDay = d;
         var lang = dlg.dataset.lang || 'en';
         var txt = d;
         try {
@@ -200,6 +215,8 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
   }
   window.atOpenCollect = openCollect;
+  // The day the open tree was collected, so Undo can put it back on that day.
+  var collectedDay = null;
   if (dlg) {
     dlg.addEventListener('click', function(e) {
       // A tap on the backdrop is a tap on the dialog itself: close, as a sheet does.
@@ -219,13 +236,17 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
         if (window.atPushVisited) window.atPushVisited(id, true);
         try { at.track('visit'); } catch (err) {}
         dlg.close();
-      } else if (act === 'ask') {
-        pane('confirm');
-      } else if (act === 'remove') {
+      } else if (act === 'uncollect') {
+        // AT ONCE, WITH UNDO (Hidde, 2026-10-10, the app's sheet): a tick you
+        // can put back is not a question, by Apple's and Material's guidance.
+        var day = collectedDay;
         if (window.atPushVisited) window.atPushVisited(id, false);
         dlg.close();
-      } else if (act === 'keep') {
-        dlg.close();
+        snackWith(dlg.dataset.removed, function() {
+          if (window.atPushVisited) window.atPushVisited(id, true, day);
+          paintSeen();
+          if (window.atPaintPassport) window.atPaintPassport();
+        });
       }
       paintSeen();
       if (window.atPaintPassport) window.atPaintPassport();

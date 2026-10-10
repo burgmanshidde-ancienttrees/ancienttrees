@@ -41,13 +41,13 @@ export const VISITED_SYNC_JS = `
   // One tree, the moment it is ticked. Painted first, written second: the
   // person should never wait on a network for a tick they just made, and the
   // account is what decides on the next load.
-  window.atPushVisited = function(id, on) {
+  window.atPushVisited = function(id, on, day) {
     if (!id || !seen) return;
     var at = seen.indexOf(id);
     if (on === false) { if (at !== -1) seen.splice(at, 1); }
     else if (at === -1) { seen.push(id); }
     var before = seen.slice();
-    C.visit(id, on !== false).then(function(ok) {
+    C.visit(id, on !== false, day).then(function(ok) {
       if (ok) return;
       // Refused by the account: back to what it was, and say so on screen.
       seen = before;

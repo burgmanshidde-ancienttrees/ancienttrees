@@ -37,7 +37,6 @@ struct SaveHeart: View {
     @Environment(Account.self) private var account
     @Environment(Nudge.self) private var nudge
     @Environment(Navigator.self) private var navigator
-    @State private var confirmingRemove = false
 
     private var isSaved: Bool { saved.isSaved(tree.id) }
 
@@ -48,17 +47,6 @@ struct SaveHeart: View {
             .accessibilityLabel(isSaved ? "Saved \(tree.name). Tap to remove"
                                         : "Save \(tree.name)")
             .sensoryFeedback(.selection, trigger: isSaved)
-            .sheet(isPresented: $confirmingRemove) {
-                BrandSheet(
-                    title: "Remove \(tree.name) from Want to visit?",
-                    buttons: [
-                        .destructive("Remove", id: "want-remove-confirm") {
-                            confirmingRemove = false
-                            saved.toggleSaved(tree.id)
-                        },
-                        .secondary("Keep it") { confirmingRemove = false },
-                    ])
-            }
     }
 
     private func tap() {
@@ -72,7 +60,10 @@ struct SaveHeart: View {
             return
         }
         if isSaved {
-            confirmingRemove = true
+            // AT ONCE, WITH UNDO (Hidde, 2026-10-10: "your suggestion sounds
+            // ok"): a save you can put back is not a question.
+            saved.toggleSaved(tree.id)
+            navigator.snack = .init(text: "Removed from Want to visit", undo: .resave(tree.id))
         } else {
             saved.toggleSaved(tree.id)
             confirmAdded()
@@ -114,6 +105,7 @@ struct SaveHeart: View {
 /// Above the floating tab bar and the tree page's action bar alike.
 struct SnackBar: View {
     @Environment(Navigator.self) private var navigator
+    @Environment(Saved.self) private var saved
 
     var body: some View {
         if let s = navigator.snack {
@@ -124,6 +116,19 @@ struct SnackBar: View {
                     .foregroundStyle(Brand.ink)
                     .lineLimit(2)
                 Spacer(minLength: 8)
+                if let u = s.undo {
+                    Button("Undo") {
+                        navigator.snack = nil
+                        switch u {
+                        case .recollect(let id, let date): saved.restoreVisited(id, at: date)
+                        case .resave(let id): if !saved.isSaved(id) { saved.toggleSaved(id) }
+                        }
+                    }
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Brand.moss)
+                    .frame(minWidth: 44, minHeight: 44)
+                    .accessibilityIdentifier("snack-undo")
+                }
                 if s.viewWantToVisit {
                     Button("View") {
                         navigator.snack = nil
