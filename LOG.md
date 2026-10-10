@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Which trees were collected in the app, and better PostHog insight
+
+**Found:** the three app ticks were one tree, the Stone Pine of the Jardines de Cristina in Seville (sev_039), ticked three times on 10-08 by one install (92A2) on an App Store version older than the build field. No row reached the visited table, which fits a tick, untick, tick ending unticked as well as a failed write, and nothing could tell the two apart.
+**Live in the next app build:** every event carries `signed_in` (yes or no, never which account), and a change that does not reach the account sends `sync_skipped` (signed out) or `sync_failed` (no session, or which table refused). The digest counts both and its collected-trees table gains a Signed in column.
+**Ready, needs a key:** `scripts/posthog.py` (--collected, --sync, --install, --day, --sql) asks PostHog from the Mac, cutting our own testing as the digest does. FOR HIDDE: a personal API key with scope Query: Read in `~/.ancienttrees-posthog.env` as `POSTHOG_READ_KEY=phx_...`.
+
 ## 2026-10-10 (night run, 03:55 window) - Athens and Cadiz enrichment, almost nothing
 
 **Done:** Athens (second pass, 132k tokens) closed nothing: no per-tree Greek register, no hours on the official pages the agent could read, no striking season moment in the three species files. Its 32 gaps are recorded as dead ends for 90 days, so stop re-briefing it. Cadiz: the pass found an OSM Dracaena draco node 125 m from cad_002, but `enrich.py --apply` refused the pin because the answer carried no source URL, so nothing changed on the page. No register entries, measurements or hours found for any of the five Cadiz trees. No new trees (recovery mode). Josecelestinomutis.cadiz.es gives 403 to curl but loads through the fetch tool.
