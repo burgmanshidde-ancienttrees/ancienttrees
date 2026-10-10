@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Deploy unblocked after the 45 retired Dutch trees
+
+**Broke:** every deploy and smoke run from about 10:30 to 12:50 UTC failed. This morning's run retired 45 Dutch trees the register calls dead or felled, and the copy around them did not follow: Park Sonsbeek's title still promised 8 trees (6 left, the villa beech gone), Vosseparkje's 7 (5 left, the oak and the Canadian poplar gone), and the retired Prinsentuin chestnut's photo (gro_008) stayed in site/public/photos with nothing pointing at it. **Fixed:** both park pages rewritten to their real counts, Arnhem's FAQ says 30 of 32, the Zijpendaalseweg lime's story no longer sends you to the felled Watermuseum lime, the orphan photo is removed. Deploy 38053543540 green, smoke green. The Hortus Botanicus Amsterdam now holds 2 trees and drops below the park-page gate by itself.
+
+**Lesson:** retiring a tree has to carry its park copy, city FAQ and photo files with it; the build already refuses all three, so the run that retired them pushed without the build telling it.
+
 ## 2026-10-10 (session) - Near a tree: the app says so
 
 **Changed, in the next app build:** with the app open, coming within 50 m of a tree with a confirmed pin that you have not collected shows a banner from the top on any tab, the Map included (Hidde: "i would still show it on the map page"): "You are 25 m from The Mulberry of Proviantgarden", with a light buzz; tapping it opens the tree page, which within 200 m leads with Collect. Gone after 8 seconds, once per tree per launch (kept in memory, never stored), never for an approximate pin, never on that tree's own page or during a walk, and never with the app closed. Benchmark and design: board "Near a tree" on the Discover canvas.
