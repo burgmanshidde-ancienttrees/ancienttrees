@@ -563,6 +563,12 @@ def photo_key(url):
     last = parts[-1]
     if _SIZE_FILE.match(last) and len(parts) >= 2:
         return parts[-2]
+    # A photograph we host is served at fixed widths beside its original
+    # (photos/hbg_002-name-1000.jpg next to photos/hbg_002-name.jpg), so the
+    # width suffix and the extension are not part of WHICH photograph it is
+    # (2026-10-10: eight German cities read as two trees when they were one).
+    if "/photos/" in path:
+        last = re.sub(r"(-\d+)?\.(jpe?g|png|webp)$", "", last, flags=re.I)
     return re.sub(r"^\d+px-", "", last)
 
 
