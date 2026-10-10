@@ -12,6 +12,7 @@
 
 **Why:** Hidde: the three big numbers took "heel veel space" and felt less relevant; of three options he chose A, Instagram's, then "is dit exact hoe insta het doet", then "ok looks good lets build it". And "make it more consistent to" the Discover design finished in another session.
 **Done, app and web:** the picture left, trees · followers · following spread beside it, the name on its own line under it; the separate row of Trees, Species, Countries is gone (the country chips carry the places). The grid sits inside the 20-point page margin like Discover's tiles, and an empty Want to visit is Discover's ghost row with Find trees near you. The city label's shared style (TagPill) is the Discover session's, left to it.
+**Then, the same hour, simpler still** (Hidde: "de trees stats weghalen ... een stuk kleiner followers en de knop ernaast"): the header is one compact row, a smaller picture, the name with followers and following small under it, find-people beside it. No counts in the header; the All chip carries the tree count.
 
 ## 2026-10-10 (night run, continuation) - Austin and Montreal enrichment
 

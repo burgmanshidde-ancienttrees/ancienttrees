@@ -78,24 +78,19 @@ const canonical = `${BASE_URL}/account`;
   <!-- THE PROFILE ITSELF. Identity, counts, the one action, then the lists.
        The gear is the only way to the settings, exactly as in the app. -->
   <section id="st-in" class="profile-head" hidden>
-    {/* INSTAGRAM'S HEADER, the app's instaHeader (Hidde, 2026-10-10: "ok
-        looks good lets build it"): the picture left, three counts spread
-        beside it, the name on its own line under it. Species and countries
-        left the header; the country chips under Collected carry the places. */}
+    {/* ONE COMPACT ROW, the app's header (Hidde, 2026-10-10: "de trees
+        stats weghalen ... een stuk kleiner followers en de knop ernaast"):
+        picture, name, followers and following small under it, the gear. */}
     <div class="profile-top">
       <span class="profile-avatar" id="in-avatar" aria-hidden="true"></span>
-      <div class="profile-counts">
-        <div class="pc"><b id="n-trees">0</b><span>trees</span></div>
-        <div class="pc"><b id="n-followers">0</b><span>followers</span></div>
-        <div class="pc"><b id="n-following">0</b><span>following</span></div>
+      <div class="profile-who">
+        <h1 id="in-handle">Your trees</h1>
+        <p class="profile-follow"><b id="n-followers">0</b> followers &nbsp; <b id="n-following">0</b> following</p>
+        <p class="profile-ambassador" id="in-ambassador" hidden></p>
       </div>
       <a class="profile-gear" href="/account/settings" aria-label="Settings">
         <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M19.4 13.5a7.6 7.6 0 0 0 0-3l1.7-1.3-2-3.4-2 .8a7.6 7.6 0 0 0-2.6-1.5L14.2 3H9.8l-.3 2.1a7.6 7.6 0 0 0-2.6 1.5l-2-.8-2 3.4 1.7 1.3a7.6 7.6 0 0 0 0 3L2.9 14.8l2 3.4 2-.8a7.6 7.6 0 0 0 2.6 1.5l.3 2.1h4.4l.3-2.1a7.6 7.6 0 0 0 2.6-1.5l2 .8 2-3.4z"/></svg>
       </a>
-    </div>
-    <div class="profile-who">
-      <h1 id="in-handle">Your trees</h1>
-      <p class="profile-ambassador" id="in-ambassador" hidden></p>
     </div>
 
     {/* Full width, because it is the one action on the page and both

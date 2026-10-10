@@ -852,9 +852,12 @@ struct CollectView: View {
     /// yes than this file may assume.
     /// Signed in, Instagram's header (Hidde, 2026-10-10: "ok looks good lets
     /// build it"); signed out, the face-and-name row with its sign-in line.
-    @ViewBuilder private var header: some View {
-        if account.isSignedIn { instaHeader } else { whoYouAre }
-    }
+    /// ONE COMPACT ROW (Hidde, 2026-10-10, after trying Instagram's counts:
+    /// "kunnen we niet gewoon even de trees stats weghalen en daarmee alles
+    /// een stuk naar boven schuiven, een stuk kleiner followers en de knop
+    /// ernaast"): picture, name with followers and following small under it,
+    /// find-people beside it. The tree count lives in the All chip below.
+    @ViewBuilder private var header: some View { whoYouAre }
 
     /// INSTAGRAM'S PROFILE HEADER (Hidde, 2026-10-10: "richting a is ok",
     /// then "is dit exact hoe insta het doet het lijkt rommelig"): the picture
@@ -946,7 +949,7 @@ struct CollectView: View {
                             .clipShape(.circle)
                     } else if let e = profiles.me?.display_name ?? account.email, let first = e.first {
                         Text(String(first).uppercased())
-                            .font(.brand(24, .black, relativeTo: .title2))
+                            .font(.brand(20, .black, relativeTo: .title3))
                             .foregroundStyle(Brand.moss)
                     } else {
                         Image(systemName: "person.fill")
@@ -954,7 +957,7 @@ struct CollectView: View {
                             .foregroundStyle(Brand.moss.opacity(0.6))
                     }
                 }
-                .frame(width: 62, height: 62)
+                .frame(width: 52, height: 52)
                 // THE PHOTO OPENS THE SAME EDITOR AS THE NAME (Hidde,
                 // 2026-09-27: "I can only change my name and photo by pressing
                 // on my name but also should be photo"). Every profile screen
@@ -991,7 +994,7 @@ struct CollectView: View {
                             ?? account.email?.split(separator: "@").first.map(String.init)
                             ?? "Your trees")
                          : "Your trees")
-                        .font(.brand(19, .bold, relativeTo: .title3))
+                        .font(.brand(17, .bold, relativeTo: .headline))
                         .foregroundStyle(Brand.ink)
                         .lineLimit(1).truncationMode(.middle)
                         // A NAME IS 23 POINTS TALL and Apple's floor is 44,

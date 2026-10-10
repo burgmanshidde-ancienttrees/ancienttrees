@@ -3074,14 +3074,7 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
   border: 1px solid rgba(38, 48, 30, 0.22); background: #fff; color: var(--ink, #26301E); font-weight: 700; text-decoration: none; }
 .want-find svg { width: 18px; height: 18px; }
 
-/* The profile header as Instagram draws it (2026-10-10), the app's
-   instaHeader: picture left, three counts spread evenly beside it, each a
-   bold number centred over a small label, the name on the line below. */
-.profile-head .profile-top { align-items: center; gap: 1rem; margin-bottom: 0.6rem; }
-.profile-head .profile-avatar { width: 80px; height: 80px; }
-.profile-counts { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.profile-counts .pc { display: flex; flex-direction: column; align-items: center; gap: 1px; }
-.profile-counts b { font-size: 18px; font-weight: 800; color: var(--ink); line-height: 1.1; }
-.profile-counts span { font-size: 12.5px; color: var(--ink-mid); }
-.profile-head .profile-who { margin-bottom: 1rem; }
-.profile-head .profile-who h1 { font-size: 1.1rem; }
+/* The profile header, one compact row (2026-10-10): smaller picture and name. */
+.profile-head .profile-top { margin-bottom: 0.9rem; }
+.profile-head .profile-avatar { width: 48px; height: 48px; }
+.profile-head .profile-who h1 { font-size: 1.15rem; }
