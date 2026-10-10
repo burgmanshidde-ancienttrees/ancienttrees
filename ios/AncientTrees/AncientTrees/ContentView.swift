@@ -61,6 +61,10 @@ struct ContentView: View {
     /// a tree card did nothing at all, on the map AND on Explore. Two UI tests
     /// caught it; nothing in a screenshot could have.
     @State private var mapPath: [Route] = []
+    /// The tree the near-a-tree banner is showing, and the ones it has shown
+    /// since launch. In memory only: once per tree per launch, never stored.
+    @State private var nearby: (tree: Tree, meters: Int)?
+    @State private var announced: Set<String> = []
     @State private var explorePath: [Route] = []
     @State private var collectPath: [Route] = []
     /// Profile keeps its own stack like the others, or pushing from it would
@@ -236,6 +240,29 @@ struct ContentView: View {
             return .city(slug)
         }
         return nil
+    }
+
+    /// Within 50 metres of a tree with a confirmed pin that you have not
+    /// collected, and not on that tree's own page or during a walk: say so.
+    /// An approximate pin never fires, because "40 m" is a promise it cannot
+    /// keep.
+    private func checkNearby() {
+        guard locationState.known, navigator.beginWalk == nil,
+              let cat = store.catalogue,
+              let hit = cat.nearest(to: origin.lat, origin.lng, limit: 1, withinKm: 0.05).first,
+              hit.tree.precision == .confirmed,
+              !saved.isVisited(hit.tree.id),
+              !announced.contains(hit.tree.id),
+              path(tab).wrappedValue.last != .tree(hit.tree.id) else { return }
+        announced.insert(hit.tree.id)
+        let m = max(5, Int((hit.km * 1000 / 5).rounded()) * 5)
+        withAnimation(.spring(duration: 0.35)) { nearby = (hit.tree, m) }
+    }
+
+    /// Changes every ten metres or so, which is as often as the banner needs
+    /// to ask.
+    private var nearKey: String {
+        "\(Int(origin.lat * 10_000))|\(Int(origin.lng * 10_000))|\(store.catalogue?.version ?? "")"
     }
 
     private var origin: (lat: Double, lng: Double) {
@@ -533,6 +560,22 @@ struct ContentView: View {
 
                 }
                 .overlay(alignment: .bottom) { SnackBar() }
+                .overlay(alignment: .top) {
+                    if let n = nearby {
+                        NearbyBanner(tree: n.tree, meters: n.meters,
+                                     open: {
+                                         withAnimation { nearby = nil }
+                                         navigator.push = .tree(n.tree.id)
+                                     },
+                                     dismiss: { withAnimation { nearby = nil } })
+                            .task(id: n.tree.id) {
+                                try? await Task.sleep(for: .seconds(8))
+                                if nearby?.tree.id == n.tree.id { withAnimation { nearby = nil } }
+                            }
+                    }
+                }
+                .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)
+                .task(id: nearKey) { checkNearby() }
                 .appObjects(self)
                 .reviewAsk(reviewPrompt)
                 .onChange(of: navigator.collectNearby) { _, want in

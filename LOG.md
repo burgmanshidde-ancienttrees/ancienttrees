@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - Near a tree: the app says so
+
+**Changed, in the next app build:** with the app open, coming within 50 m of a tree with a confirmed pin that you have not collected shows a banner from the top on any tab, the Map included (Hidde: "i would still show it on the map page"): "You are 25 m from The Mulberry of Proviantgarden", with a light buzz; tapping it opens the tree page, which within 200 m leads with Collect. Gone after 8 seconds, once per tree per launch (kept in memory, never stored), never for an approximate pin, never on that tree's own page or during a walk, and never with the app closed. Benchmark and design: board "Near a tree" on the Discover canvas.
+
 ## 2026-10-10 (session) - The bookmark confirms itself, app and web
 
 **Changed:** saving a tree shows one line at the bottom, "Added to Want to visit · View" (View opens the list), gone after four seconds, the Airbnb and Pinterest pattern; app (Navigator.snack, SnackBar drawn by the root) and website (Base.astro's .at-snack, painted by TREE_ACTIONS_JS, eight languages). The website removes without asking, so a removal there says "Removed from Want to visit · Undo". The app's removal question now names the list ("Remove ... from Want to visit?") instead of "your collection" (Hidde).
