@@ -191,6 +191,10 @@ if (OTHER_CITIES.features.length) {
   });
 }
 function updatePinsFar() {
+  // The opening fitBounds fires 'zoom' before the pins exist (var pins is
+  // hoisted but still undefined), and a throw there stopped every pin being
+  // drawn (Hidde, 2026-10-10: "they dont show any pins anymore").
+  if (!pins) { return; }
   var far = OTHER_CITIES.features.length > 0 && map.getZoom() < FAR;
   for (var i = 0; i < pins.length; i++) { pins[i].style.visibility = far ? 'hidden' : ''; }
 }
