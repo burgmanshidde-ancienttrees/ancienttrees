@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - My trees: Instagram's profile header, and the page follows the Discover design
+
+**Why:** Hidde: the three big numbers took "heel veel space" and felt less relevant; of three options he chose A, Instagram's, then "is dit exact hoe insta het doet", then "ok looks good lets build it". And "make it more consistent to" the Discover design finished in another session.
+**Done, app and web:** the picture left, trees · followers · following spread beside it, the name on its own line under it; the separate row of Trees, Species, Countries is gone (the country chips carry the places). The grid sits inside the 20-point page margin like Discover's tiles, and an empty Want to visit is Discover's ghost row with Find trees near you. The city label's shared style (TagPill) is the Discover session's, left to it.
+
 ## 2026-10-10 (night run, continuation) - Austin and Montreal enrichment
 
 **Done:** Montreal: City of Montreal Mont-Royal register page on all 13 trees, girth on 11 (converted from the page's trunk diameters, so approximate; measure_source says where the height of measurement is unstated), height on 3, cemetery hours on 3, best_time on the two red oaks. Austin: Texas Big Tree Registry ids on 2 trees (ids come from an earlier pass, the registry host did not resolve, not re-opened); the other 7 trees found no measurement, 13 gaps dead-ended. Pins closed: none. Preflight clean. No new trees (recovery mode).
