@@ -10619,6 +10619,135 @@
    "tokens": 135404,
    "trees": 0,
    "note": "General Sherman height and hours only"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "sorrento",
+   "kind": "enrich",
+   "tokens": 139154,
+   "trees": 0,
+   "note": "Campania/MASAF ids and measurements on 7 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "tallinn",
+   "kind": "enrich",
+   "tokens": 153112,
+   "trees": 0,
+   "note": "one girth; register hosts blocked"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "helsinki",
+   "kind": "enrich",
+   "tokens": 161992,
+   "trees": 0,
+   "note": "natural-monument records and heights on 7 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "oslo",
+   "kind": "enrich",
+   "tokens": 145845,
+   "trees": 0,
+   "note": "one girth"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "bristol",
+   "kind": "enrich",
+   "tokens": 160135,
+   "trees": 0,
+   "note": "TPO record and survey girths on 5 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "quebec-city",
+   "kind": "enrich",
+   "tokens": 123241,
+   "trees": 0,
+   "note": "register ids and DBH girths on 6 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "leiden",
+   "kind": "enrich",
+   "tokens": 136208,
+   "trees": 0,
+   "note": "LRMB ids and measurements on 11 trees, Hortus access"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "bucaco",
+   "kind": "enrich",
+   "tokens": 150573,
+   "trees": 0,
+   "note": "ICNF ids and measurements on 18 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "pittsburgh",
+   "kind": "enrich",
+   "tokens": 152022,
+   "trees": 0,
+   "note": "registry link, park hours, season on 4 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "boise",
+   "kind": "enrich",
+   "tokens": 155998,
+   "trees": 0,
+   "note": "Idaho Big Tree measurements on 3 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "luxembourg-city",
+   "kind": "enrich",
+   "tokens": 176037,
+   "trees": 0,
+   "note": "ANF ids on 5 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "spokane",
+   "kind": "enrich",
+   "tokens": 147250,
+   "trees": 0,
+   "note": "heritage register ids, heights, 8 register pins on 12 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "manchester",
+   "kind": "enrich",
+   "tokens": 138825,
+   "trees": 0,
+   "note": "nothing: council site blocks fetchers; wasted",
+   "wasted": 138825
+  },
+  {
+   "date": "2026-10-10",
+   "target": "taipei",
+   "kind": "enrich",
+   "tokens": 162809,
+   "trees": 0,
+   "note": "protected-tree register ids, measurements, pins on 3 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "maastricht",
+   "kind": "enrich",
+   "tokens": 155337,
+   "trees": 0,
+   "note": "LRMB ids, measurements, 3 pins on 9 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "sapporo",
+   "kind": "enrich",
+   "tokens": 145867,
+   "trees": 0,
+   "note": "five measurements via a secondary site, one access line"
   }
  ],
  "2026-10-09": [
