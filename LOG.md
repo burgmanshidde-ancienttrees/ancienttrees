@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - The app as a builder reads it
+
+**Live in the digest:** active phones per day, week and month, how many came back, the most opened trees and the countries; and a weekly chain table (new phones, what a first day does, back within a week, trees collected). First reading: 9 new phones this week, 6 opened a tree on day one, 1 tapped Take me there, 1 collected; 45% came back within a week.
+**In the next app build:** `location` (the answer to the dialog) and `near` on tree_opened (within 25 km of the last fix, never the fix), which fill the two rows that print a dash today.
+
 ## 2026-10-10 (session) - Discover rebuilt in the app (board D3)
 
 **Changed, in the next app build:** Discover now opens on the season where you are ("Autumn is here", the south gets spring), then your Want to visit trees, six trees at their best now, the cities, the open ambassador seat of your own city, countries, islands, species as photo pills, the three records, six lists, and ends in "More trees near you": every photographed tree, nearest first, three across, loading as you scroll. One tile everywhere (My trees' 3:4 grid, edge to edge), one white tag, "City · 1.4 km" within a day trip. Removed: the stock hero (kept as fallback), the oldest/tallest/thickest/best-in-country shelves, the species list. Spec: docs/superpowers/specs/2026-10-10-discover-redesign-design.md.
