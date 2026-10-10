@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "toronto",
+   "kind": "enrich",
+   "tokens": 162773,
+   "trees": 0,
+   "note": "Ontario Heritage Tree ids on 6 trees, one access correction"
+  },
+  {
+   "date": "2026-10-10",
    "target": "melbourne",
    "kind": "enrich",
    "tokens": 140702,

@@ -62,7 +62,18 @@
       },
       "how_to_recognise": "The biggest tree in the park, with one long low limb sagging all the way to the grass over a native plant garden. A Heritage Toronto plaque stands beside it.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Ontario Heritage Tree Program (Forests Ontario), no. HT-2021-255-266",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "mid to late October, when the oak turns a rich red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "tro_002",
@@ -101,6 +112,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Ontario Heritage Tree Program (Forests Ontario), no. HT-2015-49-116",
+        "url": null
       }
     },
     {
@@ -140,7 +155,12 @@
       },
       "how_to_recognise": "The large oak on the corner beside the Long Branch cenotaph. It is by a distance the oldest thing standing there.",
       "curation_status": "ai_generated",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Ontario Heritage Tree Program (Forests Ontario), no. HT-2017-211-233",
+        "url": null
+      },
+      "height_m": 24
     },
     {
       "id": "tro_004",
@@ -171,7 +191,11 @@
       },
       "how_to_recognise": "Hard. All five of Corsan's nut trees share one map pin, so expect a short hunt, and nobody has published which of the five is which. If you work it out, tell us.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Ontario Heritage Tree Program (Forests Ontario), no. HT-2017-160-203",
+        "url": null
+      }
     },
     {
       "id": "tro_005",
@@ -201,7 +225,11 @@
       },
       "how_to_recognise": "Six maples in a row along the school's Bernice Crescent frontage, two silver and four Norway. No published photo distinguishes one from another; all six commemorate the same twelve names.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Ontario Heritage Tree Program (Forests Ontario), no. HT-2016-121-123 to HT-2016-121-128 (six trees)",
+        "url": null
+      }
     },
     {
       "id": "tro_006",
@@ -223,7 +251,7 @@
         "https://www.canadiangeographic.ca/article/if-tree-could-talk-fight-save-zhelevo-torontos-most-iconic-red-oak",
         "https://www.theglobeandmail.com/canada/article-this-is-the-perfect-tree-success-in-a-long-campaign-to-protect-a-250/"
       ],
-      "access": "Free once open. The City of Toronto bought the private lot specifically to save this tree and is building a public parkette on it; as of the City's own July 2026 project update the house has been demolished and construction is underway, with opening projected Spring 2027. Until then the tree (which visibly dwarfs the former house from the street) is viewable from Coral Gable Drive but the lot itself is a construction site, not yet open ground.",
+      "access": "Not yet open to walk onto. The City of Toronto bought the lot to save the tree; the house is demolished (City update, September 2026) and a public parkette is planned, with construction scheduled to start spring 2027 and finish fall 2027, timeline subject to change. Until then the tree can be seen from Coral Gable Drive.",
       "transport": "Residential Etobicoke street near the Humber River; no specific TTC bus route to the door was confirmed by this pass. Reachable by bus from Islington or Kipling stations on the Bloor-Danforth subway line.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -234,7 +262,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its crown, nearly 5 metres round and towering over the construction site around it. It stands visible from the street at 76 Coral Gable Drive until the parkette opens."
+      "how_to_recognise": "You can recognise it by its crown, nearly 5 metres round and towering over the construction site around it. It stands visible from the street at 76 Coral Gable Drive until the parkette opens.",
+      "official_register": {
+        "name": "Ontario Heritage Tree Program (Forests Ontario), no. HT-2009-102",
+        "url": null
+      }
     }
   ]
 }
