@@ -10748,6 +10748,39 @@
    "tokens": 145867,
    "trees": 0,
    "note": "five measurements via a secondary site, one access line"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "bangkok",
+   "kind": "enrich",
+   "tokens": 135601,
+   "trees": 0,
+   "note": "nothing: no per-tree records found; wasted",
+   "wasted": 135601
+  },
+  {
+   "date": "2026-10-10",
+   "target": "parma",
+   "kind": "enrich",
+   "tokens": 133423,
+   "trees": 0,
+   "note": "MASAF ids on 5 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "cologne",
+   "kind": "enrich",
+   "tokens": 140047,
+   "trees": 0,
+   "note": "Naturdenkmal ids on 5 trees, two girths"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "ljubljana",
+   "kind": "enrich",
+   "tokens": 150950,
+   "trees": 0,
+   "note": "decree record on 1 tree, garden hours on 1"
   }
  ],
  "2026-10-09": [

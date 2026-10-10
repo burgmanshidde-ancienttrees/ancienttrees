@@ -4,6 +4,7 @@
 
 ## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
 
+- **Ljubljana:** 2 of 4: the 1993 Ljubljana Center decree (Uradni list RS) as the register record for Furmanska lipa (natural monument), Botanical Garden hours for the Marmont linden. dedi.si is unreachable from the runner and ljubljanainfo.com sits behind Cloudflare (blocklist candidates), so the Streliška planes and all measurements stay open.
 - **Cologne:** 5 of 5 got Naturdenkmal numbers (from the de.wikipedia reproduction of the city list; the city's own page 404'd), girths for kol_002 (530 cm) and kol_003 (375 cm), measured 2018-05-11 per the list. Pins for kol_004 and kol_005 stay open (the register has no coordinates).
 - **Parma:** 5 of 5 got MASAF sheet ids (matched to our pins by coordinate and species); no web pages opened, so no fresh access or life check, and the regional Emilia-Romagna catalogue was not checked. No season set (plane and elm files have nothing above "nice").
 - **Bangkok:** dead end, nothing applied (no per-tree record, measurement or safe pin; BMA, Royal Forest Department and Fine Arts pages were not tried). **Useful runner fact:** overpass-api.de answers 406 to a default curl but works with a custom User-Agent; the "Overpass returned 406/500" dead ends in several passes above (Leeuwarden, Helsinki, Philadelphia, Kagoshima, Boise) may be worth one retry with a User-Agent header.
