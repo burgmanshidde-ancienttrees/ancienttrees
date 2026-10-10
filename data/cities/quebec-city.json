@@ -54,7 +54,8 @@
       },
       "verified_sources": [
         "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 295149, CC BY 4.0)",
-        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php"
+        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php",
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -63,7 +64,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "Two red oaks stand together beside the ring road here; this is the distinctly heavier of the pair, the one nearer the southern end."
+      "how_to_recognise": "Two red oaks stand together beside the ring road here; this is the distinctly heavier of the pair, the one nearer the southern end.",
+      "official_register": {
+        "name": "Arbres potentiellement remarquables (Ville de Québec, données ouvertes), no. 295149",
+        "url": null
+      },
+      "girth_cm": 415
     },
     {
       "id": "qbc_002",
@@ -84,7 +90,8 @@
       "story": "This oak stands fifteen metres from the tree the newspapers call the park's oldest, and nobody has put a number on its own years. The city's inventory gives it 110 centimetres of diameter at breast height, second largest of the five red oaks registered along this stretch of Rue De Laune; Quebec publishes the measurement across the trunk, which converts to roughly 3.46 metres round. The printed age claim for this corner of the park names a single tree, so there is no year to give for this one, and none is invented here. What it offers instead is the pair: two heavy red oaks close enough that you can stand between them, inside the ring road that circles the field of the 1759 battle. Chene rouge is a slow provider. Its acorns take two full summers to ripen rather than one, so in any given autumn the crown carries both this year's small green pins and last year's finished nuts, and a good year buries the grass beneath it. The Commission des champs de bataille nationaux keeps the whole park open from dawn to dusk with no gate and no ticket, and this stop costs about twenty seconds off the walk to its neighbour.",
       "verified_sources": [
         "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 295150, CC BY 4.0)",
-        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php"
+        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php",
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -93,7 +100,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "The slimmer of the two red oaks that stand fifteen metres apart beside the ring road, on the northern side of the pair."
+      "how_to_recognise": "The slimmer of the two red oaks that stand fifteen metres apart beside the ring road, on the northern side of the pair.",
+      "official_register": {
+        "name": "Arbres potentiellement remarquables (Ville de Québec, données ouvertes), no. 295150",
+        "url": null
+      },
+      "girth_cm": 346
     },
     {
       "id": "qbc_003",
@@ -114,7 +126,8 @@
       "story": "Dutch elm disease took out most of the mature elms of North America. This park still has about 750 of them. La Presse's account of the arboricultural heritage of Parc des Champs-de-Bataille describes an elm population contemporary with the park itself, monitored and treated tree by tree against the fungus that emptied streets across the continent, which is an unusual thing for a public park to still be paying for a century on. The thickest trunk in the public part of Quebec City's tree inventory is one of those elms: 154 centimetres of diameter at breast height, which converts to roughly 4.84 metres of girth, since the city measures across the trunk rather than around it. It is not an American elm. The municipal foresters record it as Ulmus glabra, the orme des montagnes, a European species, and the newspaper piece treats the park's elms as one population without separating the two, so that identification rests on the city's own survey. No source gives it an age, and at this size it hardly matters: it is a mature tree of a species that mostly did not get to be one. It stands near Avenue Ontario, free, dawn to dusk.",
       "verified_sources": [
         "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 309969, CC BY 4.0)",
-        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php"
+        "https://web.archive.org/web/20240224133846/https://www.lapresse.ca/voyage/48-heures/quebec-canada/201006/11/01-4288919-parc-des-champs-de-bataille-riche-heritage-arboricole-a-quebec.php",
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -123,7 +136,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the thickest elm trunk recorded in the park's own tree inventory. It stands near Avenue Ontario, inside the Plains of Abraham."
+      "how_to_recognise": "You can recognise it as the thickest elm trunk recorded in the park's own tree inventory. It stands near Avenue Ontario, inside the Plains of Abraham.",
+      "official_register": {
+        "name": "Arbres potentiellement remarquables (Ville de Québec, données ouvertes), no. 309969",
+        "url": null
+      },
+      "girth_cm": 484
     },
     {
       "id": "qbc_004",
@@ -144,7 +162,8 @@
       "story": "The City of Quebec's own heritage record is precise about how Grande Allee got its trees: the municipal authorities widened the avenue at the end of the 1880s and lined it with ormes d'Amerique, American elms. Whether this particular elm descends from that planting is not written down anywhere. It measures 94 centimetres of diameter at breast height in the city's inventory, roughly 2.95 metres round once converted from the diameter Quebec publishes, which is a solid street tree rather than a survivor of unusual size, and the avenue has been replanted more than once in the intervening century. So it stands among the elms of Grande Allee rather than as one of the originals. The avenue itself runs from the old walled town out past the parliament to the Plains of Abraham and is known locally as the Champs-Elysees of Quebec; the city carried out its first heritage-tree inventory of the Grande Allee and Chemin Saint-Louis axis in 2011, which is how a street tree comes to be on a register at all. American elm is the tree that gave North American streets their shape, a trunk that divides low and arches out like a wine glass. Then the fungus arrived.",
       "verified_sources": [
         "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 25392, CC BY 4.0)",
-        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx"
+        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx",
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -153,7 +172,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as one of the elms lining Grande Allee Est, on the avenue's eastern stretch. It stands on Grande Allee Est."
+      "how_to_recognise": "You can recognise it as one of the elms lining Grande Allee Est, on the avenue's eastern stretch. It stands on Grande Allee Est.",
+      "official_register": {
+        "name": "Arbres potentiellement remarquables (Ville de Québec, données ouvertes), no. 25392",
+        "url": null
+      },
+      "girth_cm": 295
     },
     {
       "id": "qbc_005",
@@ -174,7 +198,8 @@
       "story": "Grande Allee was planted with elms, and one of the largest trees on it is an oak. The city's inventory records this one as Quercus rubra, northern red oak, with 120 centimetres of diameter at breast height, which converts to roughly 3.77 metres of girth; Quebec publishes the measurement across the trunk rather than around it. That is a genuinely large oak for a street, and larger than either of the two elms on this avenue. Where it came from is another matter. The city's heritage page on Grande Allee names the American elm as the avenue's historic planting and does not mention oaks at all, so this tree's species and existence rest on the municipal forestry survey rather than on the heritage record, and no source anywhere gives it an age. What the heritage page does confirm is that this stretch was formally inventoried for heritage trees in 2011, so somebody with a tape measure has been here. It stands on the public pavement of one of the most-walked avenues in the city, on the route between the walled old town and the battlefield park, free and unrestricted at any hour.",
       "verified_sources": [
         "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 295207, CC BY 4.0)",
-        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx"
+        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx",
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -183,7 +208,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the largest tree on the avenue, bigger than either of Grande Allee's elms. It stands on Grande Allee Est."
+      "how_to_recognise": "You can recognise it as the largest tree on the avenue, bigger than either of Grande Allee's elms. It stands on Grande Allee Est.",
+      "official_register": {
+        "name": "Arbres potentiellement remarquables (Ville de Québec, données ouvertes), no. 295207",
+        "url": null
+      },
+      "girth_cm": 377
     },
     {
       "id": "qbc_006",
@@ -204,7 +234,8 @@
       "story": "The second European elm on this page stands at the western end of Grande Allee, close to where the avenue runs out into the Plains of Abraham, which makes it the link between the street trees and the park trees on a single walk. The city's inventory records it as Ulmus glabra, the orme des montagnes, at 109 centimetres of diameter at breast height, roughly 3.42 metres round once converted from the diameter Quebec publishes rather than a girth. As with the red oak further east, the city's heritage account of Grande Allee documents the avenue's late-1880s widening and its American elm planting, and its 2011 heritage-tree inventory, without naming this species, so the identification comes from the municipal foresters. No age is recorded for it. Wych elm is the odd one out among elms in that it spreads by seed rather than by suckering from its own roots, which is why it turns up as a planted tree in cities far from where it grows wild, and why a European elm on a Quebec avenue is less strange than it first sounds. Public pavement, no restriction, about twenty minutes on foot from Vieux-Quebec.",
       "verified_sources": [
         "https://www.donneesquebec.ca/recherche/dataset/vque_82 (Ville de Quebec, Service de l'environnement, GeoJSON 'Arbres potentiellement remarquables', feature ID 11461, CC BY 4.0)",
-        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx"
+        "https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/saint_jean_baptiste/interet/grande_allee_cheminement_artere_prestigieuse.aspx",
+        "https://www.donneesquebec.ca/recherche/dataset/vque_82"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -213,7 +244,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the elm standing where Grande Allee runs out into the Plains of Abraham. It stands on Grande Allee Ouest."
+      "how_to_recognise": "You can recognise it as the elm standing where Grande Allee runs out into the Plains of Abraham. It stands on Grande Allee Ouest.",
+      "official_register": {
+        "name": "Arbres potentiellement remarquables (Ville de Québec, données ouvertes), no. 11461",
+        "url": null
+      },
+      "girth_cm": 342
     }
   ]
 }
