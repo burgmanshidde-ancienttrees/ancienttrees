@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, second pass) - Fukuoka enrichment
+
+**Done:** 8 of 18 Fukuoka trees improved: authority pages on six (Agency for Cultural Affairs, Dazaifu, Fukuoka City, Itoshima), girth and/or height with sources on all eight, small named sites (Kaidan-in, Rokusho Shrine) on two. Preflight clean.
+**Left open:** no season (camphor has no striking moment), no per-tree records for Kushida, Torikai, Kego, Tajima; two pins stay approximate. Site radii of 50 m are the pass's reading, unmeasured.
+
 ## 2026-10-10 (night run) - Hobart enrichment
 
 **Done:** Hobart's 11 trees: council Significant Tree Register ids and per-tree sheet links on hob_001 to hob_010, heights (with sources) on five trees including Centurion at 100.5 m. Preflight clean.
