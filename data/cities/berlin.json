@@ -98,7 +98,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Humboldteiche",
-        "https://www.baumkunde.de/baumregister/2554-humboldteiche_im_schlosspark_tegel/"
+        "https://www.baumkunde.de/baumregister/2554-humboldteiche_im_schlosspark_tegel/",
+        "https://www.monumentale-eichen.de/berlin/tegel/ (Rainer Lippert, measured 2016: Brusthoehenumfang 7,80 m, Hoehe 29 m)"
       ],
       "access": "Free (a 1 euro donation is requested at the gate); park open daily until sunset, the palace interior open only on Mondays, May to September",
       "transport": "12 min walk from Alt-Tegel U-Bahn (U6)",
@@ -117,7 +118,9 @@
       "official_register": {
         "name": "Naturdenkmal (Land Berlin, Senatsverwaltung), no. 12-25/B",
         "url": null
-      }
+      },
+      "girth_cm": 780,
+      "height_m": 29
     },
     {
       "id": "ber_003",
@@ -143,7 +146,8 @@
       },
       "verified_sources": [
         "https://www.gazette-berlin.de/artikel/2583-aeltester-baum-im-grunewald.html",
-        "https://forst-grunewald.de/?page_id=164"
+        "https://forst-grunewald.de/?page_id=164",
+        "https://www.gazette-berlin.de/artikel/2583-aeltester-baum-im-grunewald.html (Dahlem & Grunewald Journal, June/July 2023: 'ca. 6,70 Meter Umfang'; approximate, height of measurement not stated)"
       ],
       "access": "Free, public forest, open at all times",
       "transport": "Bus 218 from S-Bahnhof Wannsee (toward Theodor-Heuss-Platz), then a lakeside forest walk; roughly 45-60 min on foot from Wannsee station if not using the bus",
@@ -162,7 +166,8 @@
       "official_register": {
         "name": "Naturdenkmal (Land Berlin, Senatsverwaltung), no. 6-70/B",
         "url": null
-      }
+      },
+      "girth_cm": 670
     },
     {
       "id": "ber_004",
@@ -486,7 +491,8 @@
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/2135-eiche_auf_der_pfaueninsel_bei_berlin/",
         "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf",
+        "https://www.ostdeutsches-baumarchiv.de/photosearch/traubeneiche-1-pfaueninsel-berlin (565 cm at 1.3 m, 2019; the page lists it as Naturdenkmal and its GPS 52.431556,13.120799 sits about 10 m from register entry 6-102/B at 52.431453,13.120752)"
       ],
       "access": "Free to walk once on the island. The island itself is car-free and reached only by a short chain ferry from the Nikolskoer Weg landing (adult single ticket 6 euros as of April 2026, family ticket 12 euros); the castle interior (separate, recently reopened after 2021-2025 restoration) is a different ticket and not needed to see this tree.",
       "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly a 10-15 minute walk into the island to the Schlosswiese meadow area",
@@ -507,7 +513,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its short trunk splitting low into one main stem and five curving limbs, nearly 5.7 metres round. It stands on the Schlosswiese meadow near the palace."
+      "how_to_recognise": "You can recognise it by its short trunk splitting low into one main stem and five curving limbs, nearly 5.7 metres round. It stands on the Schlosswiese meadow near the palace.",
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-102/B",
+        "url": null
+      },
+      "girth_cm": 565
     },
     {
       "id": "ber_012",
@@ -524,7 +535,8 @@
       },
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/",
-        "https://www.monumentaltrees.com/de/deu/berlin/berlin/7113_pfaueninsel/28796/"
+        "https://www.monumentaltrees.com/de/deu/berlin/berlin/7113_pfaueninsel/28796/",
+        "https://www.baumkunde.de/baumregister/6402-tuereiche_auf_der_pfaueninsel/ (Umfang 5.58 m, gemessen, listed 2017; its coordinates match register entry 6-101/B within about 12 m)"
       ],
       "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
       "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then a walk into the island near the Schloss.",
@@ -538,7 +550,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the working door built into its trunk, 5.58 metres round. It stands near the Schloss on Pfaueninsel, among the island's other oaks."
+      "how_to_recognise": "You can recognise it by the working door built into its trunk, 5.58 metres round. It stands near the Schloss on Pfaueninsel, among the island's other oaks.",
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-101/B",
+        "url": null
+      },
+      "girth_cm": 558
     },
     {
       "id": "ber_013",
@@ -623,9 +640,10 @@
       },
       "story": "Forty five metres from Pfaueninsel's Great Oak stands a second, stranger oak that Berlin protects for an entirely different reason. Where its famous neighbour earned Naturdenkmal status for size and disputed age, this one is registered for rarity alone: a cut-leaf sessile oak, Quercus petraea var. laciniata, a naturally occurring variety with deeply dissected, almost fern-like foliage instead of the plain oval leaf every other oak on the island carries. The two trees stand close enough that a visitor could assume the register was describing the same tree twice. It is not. The government ordinance that protects both lists them under separate numbers, at separate coordinates, for separate reasons, one for its bulk, the other purely because its leaf shape almost never occurs in the wild. No age is recorded for this one at all, since rarity rather than antiquity is the whole case for protecting it, and no source beyond the designation record itself has been found describing this specific tree. Find the Great Oak first, then look forty five metres further for its odd, deeply cut cousin, the rarer of the two despite standing in its more famous neighbour's shadow.",
       "verified_sources": [
-        "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, DL-DE-Zero 2.0)"
+        "data/registers/berlin-naturdenkmale.json (register_id 6-108/B, DL-DE-Zero 2.0)",
+        "https://www.spsg.de/schloesser-gaerten/objekt/pfaueninsel/"
       ],
-      "access": "Free to walk once on the island, reached only by the chain ferry from Nikolskoer Weg, the same crossing as the island's other oaks.",
+      "access": "Reached only by the Pfaueninsel ferry: 6 EUR (5 reduced) return, tickets online or at the machine at the dock (coins only for cash). Ferry and island run March to October daily 10:00 to 18:00, November and December 10:00 to 16:00; last crossing 45 minutes before closing. Walking the island is then free.",
       "transport": "Bus 218 (from S-Bahnhof Wannsee or Heckeshorn) to the 'Pfaueninsel' stop, then a 5 minute walk to the ferry landing, then the ferry crossing, then roughly 10-15 minutes into the island to the area northeast of the Schloss, close to the Great Oak.",
       "photo": {
         "url": null,
@@ -636,7 +654,11 @@
       "curation_status": "flagged",
       "notes": "Berlin Naturdenkmal register_id 6-108/B, designated 1993-03-02, reason 'Seltenheit' (rarity) for the cut-leaf variety specifically ('Geschlitzblaettrige Trauben-Eiche' in the ordinance text). Distinctness confirmed against the already-published ber_011 (45m away, register 6-102/B): baumkunde.de's entry for ber_011's exact coordinates describes an ordinary crown with no cut-leaf note, while the ordinance separately and specifically designates 6-108/B for its dissected foliage at a distinct coordinate, so these are two real trees, not one register duplicate. Only one source found (the register/ordinance, one government designation read two ways, not two independent sources); two verify passes searched baumkunde.de, ostdeutsches-baumarchiv.de and monumentaltrees.com (403-blocked) without finding a tree-specific second source. Commons geosearch within 100m returned nothing, so no dated photo confirms current vitality; treat as likely standing but unconfirmed.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the deeply cut, almost fern-like leaves, unlike the plain oval leaf of every other oak on the island. It stands forty five metres from the Great Oak, roughly 150 metres northeast of the Schloss."
+      "how_to_recognise": "You can recognise it by the deeply cut, almost fern-like leaves, unlike the plain oval leaf of every other oak on the island. It stands forty five metres from the Great Oak, roughly 150 metres northeast of the Schloss.",
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-108/B",
+        "url": null
+      }
     },
     {
       "id": "ber_016",
@@ -784,7 +806,7 @@
         "https://www.berlin.de/ba-spandau/ueber-den-bezirk/tourismus/sehenswertes/artikel.288638.php",
         "https://www.berlingarten.de/landhausgarten-max-fraenkel-in-berlin-kladow/"
       ],
-      "access": "Free, the garden is open to the public with a visitor centre (restored and reopened 2016)",
+      "access": "Free, the garden is public and listed as open April to October: Monday to Thursday 7:30 to 14:00, Friday 7:30 to 18:00, Saturday, Sunday and public holidays 10:00 to 18:00. Visitor centre and cafe open Friday to Sunday and public holidays 10:00 to 18:00. About 15 to 20 minutes on foot from the Kladow ferry, or bus 134, X34 or 697 to Hottengrund.",
       "transport": "BVG ferry F10 to Alt-Kladow, or bus, then a walk to the garden on Luedickeweg",
       "photo": {
         "url": null,
@@ -795,7 +817,19 @@
       "curation_status": "flagged",
       "notes": "Register point (52.442538,13.128787) sits roughly 270m from the garden's own mapped grounds (OSM way, centroid 52.4443295,13.1314394); pinned to the garden itself rather than the raw register coordinate, and marked approximate accordingly. Register is the only source for the tree's own designation criteria; berlin.de (district) and berlingarten.de corroborate the garden's history and public status but are not tree-specific. No age or girth found for this individual beech. Do not confuse with the different 120-year-old Blutbuche Naturdenkmal at the Kladow-Center (a separate tree, separate designation, covered in 2019 berliner-woche.de coverage about crown pruning); that is a different location entirely.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its dark red leaves against the garden's greens. It stands somewhere within the 2.97 hectares of the Landhausgarten Dr. Max Fraenkel, which the register does not narrow down further."
+      "how_to_recognise": "You can recognise it by its dark red leaves against the garden's greens. It stands somewhere within the 2.97 hectares of the Landhausgarten Dr. Max Fraenkel, which the register does not narrow down further.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 5-56/B",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper leaves turn",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ber_020",
@@ -931,7 +965,8 @@
       },
       "verified_sources": [
         "https://www.tagesspiegel.de/berlin/queen-in-berlin-majestaetisch-gewachsen/11953014.html",
-        "https://www.tagesspiegel.de/berlin/selbst-die-queen-pflanzte-eine-eiche-2136961.html"
+        "https://www.tagesspiegel.de/berlin/selbst-die-queen-pflanzte-eine-eiche-2136961.html",
+        "https://www.tagesspiegel.de/berlin/queen-in-berlin-majestaetisch-gewachsen/11953014.html (Tagesspiegel: 'Gut 20 Meter ist sie hoch'; a reporter's estimate, so treat as approximate)"
       ],
       "access": "Free, public park (Grosser Tiergarten)",
       "transport": "Bellevue (S-Bahn), roughly 5-8 minutes' walk",
@@ -955,7 +990,8 @@
         ],
         "label": "late October into November, when the red oak turns a rich red",
         "kind": "autumn colour"
-      }
+      },
+      "height_m": 20
     },
     {
       "id": "ber_024",
@@ -995,6 +1031,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 7-15/B",
+        "url": null
       }
     },
     {
@@ -1083,6 +1123,10 @@
         ],
         "label": "July to September: long green catkins of winged nutlets hang from every branch",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-40/B",
+        "url": null
       }
     },
     {
@@ -1200,7 +1244,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-77/B-1",
+        "url": null
+      }
     },
     {
       "id": "ber_030",
@@ -1393,6 +1441,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-36/B",
+        "url": null
       }
     },
     {
@@ -1433,6 +1485,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-90/B",
+        "url": null
       }
     },
     {
@@ -1466,6 +1522,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-38/B",
+        "url": null
       }
     },
     {
@@ -1499,6 +1559,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-37/B",
+        "url": null
       }
     },
     {
@@ -1539,6 +1603,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-43/B",
+        "url": null
       }
     },
     {
@@ -1579,6 +1647,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-35/B",
+        "url": null
       }
     },
     {
@@ -1613,6 +1685,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 6-31/B",
+        "url": null
       }
     },
     {
@@ -1646,6 +1722,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-49/B",
+        "url": null
       }
     },
     {
@@ -1686,6 +1766,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-42/B",
+        "url": null
       }
     },
     {
@@ -1727,6 +1811,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-44/B",
+        "url": null
       }
     },
     {
@@ -1760,6 +1848,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-102/B-2",
+        "url": null
       }
     },
     {
@@ -1793,6 +1885,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-53/B",
+        "url": null
       }
     },
     {
@@ -1834,6 +1930,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Berlin (Verordnung zum Schutz von Naturdenkmalen, Land Berlin register, DL-DE-Zero 2.0), no. 1-54/B",
+        "url": null
       }
     },
     {
@@ -1868,6 +1968,10 @@
         ],
         "kind": "autumn colour",
         "label": "November, when the crown turns butter gold for a few days"
+      },
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-6/B-1",
+        "url": null
       }
     },
     {
@@ -1902,6 +2006,10 @@
         ],
         "kind": "flowers",
         "label": "May, when the candles come out red instead of white"
+      },
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-5/B",
+        "url": null
       }
     },
     {
@@ -1911,8 +2019,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 452,
+      "height_m": 25,
       "location": {
         "address": "Bebelplatz, green area beside the Operncafe",
         "latitude": 52.516787,
@@ -1929,7 +2037,11 @@
       "curation_status": "flagged",
       "verify_notes": "Register only (Land Berlin Naturdenkmal 1-7/B, designated 1993-03-02, protection reasons: Schönheit, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Bebelplatz is the site of the 1933 book burning (a fact about the place, do not bridge it to this tree's age). Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/399847056. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
       "story": "This plane tree grows on Bebelplatz, the square where the 1933 book burning took place, and nobody has recorded whether it was already standing there to see it. That is the honest version, and it is worth saying plainly, because the temptation with a tree on a square like this is to give it a witness's part it may never have had.\n\nWhat is recorded is where it stands and why it is protected. It grows on the green beside the Operncafe, in the space framed by the State Opera, St Hedwig's Cathedral and the Humboldt University. Berlin made it Naturdenkmal 1-7/B on 2 March 1993, for its beauty and for regional heritage. The register's point marks the trunk itself, so our pin is exact rather than a guess somewhere on the square.\n\nSo the tree makes no claim on the square's history, and the square makes none on the tree's age. What you get is a protected London plane in the middle of Mitte, free to stand under.\n\nTwo more of the city's protected trees are a short walk away across Unter den Linden: a red horse chestnut in the university forecourt and a ginkgo in the courtyard behind it. Together they make a walk of a few minutes.\n\nThe register gives no age, girth or height for this plane. If you have measured the trunk, or know when it was planted, tell us.",
-      "how_to_recognise": "You can recognise it as the plane tree on the green beside the Operncafe. It stands on Bebelplatz, in the space between the State Opera, St Hedwig's Cathedral and the Humboldt University."
+      "how_to_recognise": "You can recognise it as the plane tree on the green beside the Operncafe. It stands on Bebelplatz, in the space between the State Opera, St Hedwig's Cathedral and the Humboldt University.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-7/B",
+        "url": null
+      }
     },
     {
       "id": "ber_051",
@@ -1938,8 +2050,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 310,
+      "height_m": 9,
       "location": {
         "address": "Viktoriapark, east of the waterfall, Kreuzberg",
         "latitude": 52.488901,
@@ -1964,6 +2076,10 @@
         ],
         "kind": "fruit",
         "label": "June and July, when it carries pale, sweet mulberries"
+      },
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 2-30/B",
+        "url": null
       }
     },
     {
@@ -1973,8 +2089,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 450,
+      "height_m": 28,
       "location": {
         "address": "Buergerpark Pankow, north of the rose garden",
         "latitude": 52.570439,
@@ -1999,6 +2115,10 @@
         ],
         "kind": "autumn colour",
         "label": "October into November, when the needles turn copper red before they fall"
+      },
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 3-48/B",
+        "url": null
       }
     },
     {
@@ -2008,8 +2128,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 770,
+      "height_m": 30,
       "location": {
         "address": "Juergen-Kuczynski-Park, Kreuzpfuhl, middle of the south shore path",
         "latitude": 52.552675,
@@ -2026,7 +2146,11 @@
       "curation_status": "flagged",
       "verify_notes": "Register only (Land Berlin Naturdenkmal 3-16/B, designated 1993-03-02, protection reasons: Schönheit, naturgeschichtliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Wikipedia list gives 52.552341,13.452469, about 40 m from the register pin: consistent. Black poplar is a rare native in Berlin. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/314990080. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
       "story": "The black poplar is a native tree in Berlin and a rare one, which is a combination worth pausing on. This one stands by a pond in Prenzlauer Berg, halfway along the path on the south shore of the Kreuzpfuhl, in the Jürgen-Kuczynski-Park.\n\nBerlin made it Naturdenkmal 3-16/B on 2 March 1993. Many of the city's protected trees are listed partly for regional heritage, for what they say about the place. This one was listed for its beauty and for natural-history reasons instead: for what it says about the species and the landscape rather than about the people around it.\n\nThe pin is a good one. The register gives a point for the tree itself, and the Wikipedia list of Pankow's natural monuments gives its own coordinate about 40 metres away, which for two sources in a park is close agreement. Walk the south shore path and look for it near the middle.\n\nA poplar by water is in its element, and the Kreuzpfuhl is a pond ringed by a public park, free to walk around. It has no single day of glory. It is the kind of tree you come to because you know a native black poplar is a rare thing to find in Berlin.\n\nNo source records its age, girth or height. If you have put a tape around the trunk, tell us what it comes to.",
-      "how_to_recognise": "You can recognise it as the black poplar halfway along the path on the south shore of the Kreuzpfuhl pond. It stands in the Jürgen-Kuczynski-Park, at the register's tree-level point."
+      "how_to_recognise": "You can recognise it as the black poplar halfway along the path on the south shore of the Kreuzpfuhl pond. It stands in the Jürgen-Kuczynski-Park, at the register's tree-level point.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 3-16/B",
+        "url": null
+      }
     },
     {
       "id": "ber_054",
@@ -2053,7 +2177,19 @@
       "curation_status": "flagged",
       "verify_notes": "Register only (Land Berlin Naturdenkmal 1-75/B-1, designated 1993-03-02, protection reasons: Schönheit, landeskundliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Folded register twins within about 100 m: 1-75/B-1 (copper beech, east wing, this pin), 1-75/B-2 (copper beech, west wing, 52.529707,13.37912), 1-76/B (beech, east wing, 52.530056,13.379911), 1-77/B (west wing), 1-78/B (oak on the square). A visitor sees one forecourt ensemble; writer should present it as a compact group, not five trees. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://www.inaturalist.org/observations/349194553. It proves something was photographed at the spot, not that it is this trunk; not individually checked.",
       "story": "The square in front of Berlin's natural history museum holds five protected trees, and the two that give the group its name are copper beeches, one off each wing of the building. The museum charges for what is inside. The square, and everything growing on it, is free.\n\nBerlin's register lists them one by one. Naturdenkmal 1-75/B-1, designated on 2 March 1993, is the copper beech by the east wing, and it is where our pin stands. Its partner, 1-75/B-2, is by the west wing, about 70 metres across. A beech, 1-76/B, stands by the east wing too, another protected tree, 1-77/B, by the west, and an oak, 1-78/B, out on the square itself. The register gives the east-wing copper beech its place for beauty and for regional heritage.\n\nWe have mapped them as one stop rather than five, because that is how you will meet them: a single forecourt, all within about a hundred metres, a minute from the U-Bahn.\n\nCopper beeches are worth seeing through the year. Their leaves open purple in spring, darken through the summer and turn copper before they fall, so the pair looks different with every visit.\n\nNo source gives an age, girth or height for any of the five. If you have measured one, tell us which, and what it came to.",
-      "how_to_recognise": "You can recognise them by their dark purple leaves, one copper beech beside each wing of the Museum für Naturkunde. They stand on the forecourt at Invalidenstrasse 43; our pin marks the one by the east wing."
+      "how_to_recognise": "You can recognise them by their dark purple leaves, one copper beech beside each wing of the Museum für Naturkunde. They stand on the forecourt at Invalidenstrasse 43; our pin marks the one by the east wing.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-75/B-1",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper leaves turn",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ber_055",
@@ -2062,8 +2198,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 314,
+      "height_m": 23,
       "location": {
         "address": "Scheidemannstrasse at Grosse Querallee, near the Carillon, Tiergarten",
         "latitude": 52.517454,
@@ -2080,7 +2216,11 @@
       "curation_status": "flagged",
       "verify_notes": "Register only (Land Berlin Naturdenkmal 1-86/B, designated 1993-03-02, protection reasons: Eigenart, Schönheit, landeskundliche Gründe, wissenschaftliche Gründe); no age, girth or height in the register or in de.wikipedia's list, so none recorded and the page should ask the reader for a girth. Register coordinate is tree-level (pin confirmed from it). Register reasons: Eigenart, Schoenheit, landeskundliche Gruende. Sessile oak is the less common oak in Berlin parks. Alive: lifecheck.py RECENT (observation or photo within 10 m): https://commons.wikimedia.org/wiki/File:Naturdenkmal_Trauben-Eiche_-_Winter-Eiche_Scheidemannstra%C3%9Fe,_Ecke_Gro%C3%9Fe_Querallee,_nahe_Carillon_2024-05-09_04.jpg. It proves something was photographed at the spot, not that it is this trunk; not individually checked. WRITER (2026-10-03): the four-reasons lead is counted from data/registers/berlin-naturdenkmale.json (638 rows: 408 cite one reason, 215 two, 13 three, 2 four; 3 rows cite wissenschaftliche Gruende).",
       "story": "Berlin's natural monument register lists more than six hundred trees, and only two of them are protected for four reasons at once. This oak is one. When the city made it Naturdenkmal 1-86/B on 2 March 1993, it cited distinctiveness, beauty, regional heritage and scientific grounds. Most entries in the register cite a single reason; only three in the whole list mention science at all.\n\nIt is a sessile oak, the less common of the two oaks in Berlin's parks. The pedunculate oak is the one you meet everywhere. This one stands at the corner of Scheidemannstrasse and the Grosse Querallee, near the Carillon in the Tiergarten.\n\nThe register's point marks the tree itself, and a photograph on Wikimedia Commons from May 2024 is titled with this exact place, Scheidemannstrasse at the corner of the Grosse Querallee, near the Carillon, so the pin is a firm one.\n\nWhat the register does not say is what the scientific interest is. It records the reason and leaves the explanation out.\n\nThe Tiergarten is a free public park, open at all hours, about ten minutes on foot from the Hauptbahnhof, and the Tulip Tree of Luiseninsel is under a kilometre away if you want to keep walking.\n\nNo source we have found gives an age, a girth or a height. If you know any of those, or why scientists cared about this oak, tell us.",
-      "how_to_recognise": "You can recognise it as a sessile oak, its acorns sitting directly on the twig rather than on stalks. It stands at the corner of Scheidemannstrasse and the Grosse Querallee, near the Carillon in the Tiergarten."
+      "how_to_recognise": "You can recognise it as a sessile oak, its acorns sitting directly on the twig rather than on stalks. It stands at the corner of Scheidemannstrasse and the Grosse Querallee, near the Carillon in the Tiergarten.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-86/B",
+        "url": null
+      }
     },
     {
       "id": "ber_056",
@@ -2089,8 +2229,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 445,
+      "height_m": 13,
       "location": {
         "address": "Grosser Tiergarten, traffic island at the Siegessaeule (Grosser Stern)",
         "latitude": 52.514906,
@@ -2124,7 +2264,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-34/B",
+        "url": null
+      }
     },
     {
       "id": "ber_057",
@@ -2161,7 +2305,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-56/B",
+        "url": null
+      }
     },
     {
       "id": "ber_058",
@@ -2170,8 +2318,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 475,
+      "height_m": 26,
       "location": {
         "address": "Grosser Tiergarten, Lichtensteinallee at Grosser Weg, north of the Spanish Embassy",
         "latitude": 52.511066,
@@ -2198,7 +2346,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-87/B",
+        "url": null
+      }
     },
     {
       "id": "ber_059",
@@ -2235,7 +2387,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-88/B",
+        "url": null
+      }
     },
     {
       "id": "ber_060",
@@ -2272,7 +2428,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-20/B",
+        "url": null
+      }
     },
     {
       "id": "ber_061",
@@ -2281,8 +2441,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 370,
+      "height_m": 20,
       "location": {
         "address": "Grosser Tiergarten, between Bellevueallee and Strasse des 17. Juni",
         "latitude": 52.515846,
@@ -2308,7 +2468,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-95/B",
+        "url": null
+      }
     },
     {
       "id": "ber_062",
@@ -2317,8 +2481,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 740,
+      "height_m": 27,
       "location": {
         "address": "Grosser Tiergarten, south of the Kleiner Stern, east of the Rosengarten",
         "latitude": 52.513796,
@@ -2352,7 +2516,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-96/B",
+        "url": null
+      }
     },
     {
       "id": "ber_063",
@@ -2361,8 +2529,8 @@
       "age_estimate": "not documented",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
-      "height_m": null,
+      "girth_cm": 358,
+      "height_m": 26,
       "location": {
         "address": "Grosser Tiergarten, near the Grosse-Sternallee bridge",
         "latitude": 52.511297,
@@ -2389,7 +2557,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-92/B",
+        "url": null
+      }
     },
     {
       "id": "ber_041",
@@ -2408,9 +2580,10 @@
       "verified_sources": [
         "https://gdi.berlin.de/services/wfs/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&typeNames=schutzgebiete:a_nd&outputFormat=application/json&srsName=EPSG:4326",
         "https://stadtundgruen.de/artikel/wo-alte-baeume-neue-wege-saeumen-und-biodiversitaet-gefoerdert-wird-gruenflaechen-in-zoo-und-tierpark-berlin-19695",
-        "https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg"
+        "https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg",
+        "https://www.zoo-berlin.de/en/tickets-service/opening-hours"
       ],
-      "access": "Paid entry: inside the Zoologischer Garten Berlin, ticket required (check current Zoo prices and hours before visiting).",
+      "access": "Paid entry, the oak stands inside the Zoologischer Garten Berlin. Day ticket for adults from 16 euro online, 25 euro at the ticket booth (zoo only, children 4 to 15 from 7.50 euro online). Open every day of the year: 9:00 to 18:30 from 30 March to 20 September, 9:00 to 18:00 from 23 February to 29 March and 21 September to 25 October, 9:00 to 16:30 from 26 October to 22 February; last admission 1 to 1.5 hours before closing.",
       "transport": "S/U Zoologischer Garten, the Hardenbergplatz entrance is about 200 m from the register point; inside the zoo, a few minutes' walk.",
       "location_precision": "approximate",
       "curation_status": "flagged",
@@ -2424,7 +2597,11 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "REGISTER: Naturdenkmal 1-52/B, Stiel-Eiche, 'Zoologischer Garten, suedlich Flusspferdhaus, Hardenbergplatz 8', designated 1993-03-02, reasons Eigenart and landeskundliche Gruende; tree-level register coordinate 52.508685,13.336639. AGE: the zoo's own park article (Stadt und Gruen, fetched directly) has a numbered feature 'Schatten seit 500 Jahren: Die ewige Eiche (Columbus-Eiche / Pedunculate Oak)' and says the historic oak stock is to be preserved, and says the zoo holds eleven Naturdenkmaeler. A Commons photo uploaded by User:Istriana is captioned 'ungefaehr 500 Jahre alte Eiche, Naturdenkmal' for the same Wikidata item. LIMIT: no fetched source states in so many words that the 'ewige Eiche' IS register tree 1-52/B (it is the only ND oak the register lists in the zoo, and the Commons caption ties the 500-year figure to the Naturdenkmal, but this is two inferences, not one statement), and 500 years is a round figure from the owner with no method. Deliver flagged; the writer says 'about 500 years, according to the zoo'. A Quercus robur of 500 years in central Berlin is plausible as a remnant of the pre-park Tiergarten oaks but that is NOT sourced; do not write it. PIN: approximate because the Commons photo is not geotagged, so only the register point supports it; it is a tree-level point inside the zoo (a plan or aerial view would settle it). ALIVE: lifecheck RECENT 2024-10-09 (iNaturalist observation 246793865 at the point) plus the 2024-06-25 Commons photo. PHOTO CANDIDATE (not approved, unlooked): https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg , CC BY-SA 4.0, by Istriana, 2024-06-25, 3456x4608 (credit required). Paid entry counts as a yes under hard rule 10; page must say so. WRITER (2026-10-02): the story keeps both limits explicit: the 500-year figure is attributed to the zoo, and the identification of register tree 1-52/B with the zoo's 'ewige Eiche' is stated as probable, not proven."
+      "verify_notes": "REGISTER: Naturdenkmal 1-52/B, Stiel-Eiche, 'Zoologischer Garten, suedlich Flusspferdhaus, Hardenbergplatz 8', designated 1993-03-02, reasons Eigenart and landeskundliche Gruende; tree-level register coordinate 52.508685,13.336639. AGE: the zoo's own park article (Stadt und Gruen, fetched directly) has a numbered feature 'Schatten seit 500 Jahren: Die ewige Eiche (Columbus-Eiche / Pedunculate Oak)' and says the historic oak stock is to be preserved, and says the zoo holds eleven Naturdenkmaeler. A Commons photo uploaded by User:Istriana is captioned 'ungefaehr 500 Jahre alte Eiche, Naturdenkmal' for the same Wikidata item. LIMIT: no fetched source states in so many words that the 'ewige Eiche' IS register tree 1-52/B (it is the only ND oak the register lists in the zoo, and the Commons caption ties the 500-year figure to the Naturdenkmal, but this is two inferences, not one statement), and 500 years is a round figure from the owner with no method. Deliver flagged; the writer says 'about 500 years, according to the zoo'. A Quercus robur of 500 years in central Berlin is plausible as a remnant of the pre-park Tiergarten oaks but that is NOT sourced; do not write it. PIN: approximate because the Commons photo is not geotagged, so only the register point supports it; it is a tree-level point inside the zoo (a plan or aerial view would settle it). ALIVE: lifecheck RECENT 2024-10-09 (iNaturalist observation 246793865 at the point) plus the 2024-06-25 Commons photo. PHOTO CANDIDATE (not approved, unlooked): https://commons.wikimedia.org/wiki/File:Stieleiche_in_Berlin_Zoo,_ungef%C3%A4hr_500_Jahre_alte_Eiche,_Naturdenkmal.jpg , CC BY-SA 4.0, by Istriana, 2024-06-25, 3456x4608 (credit required). Paid entry counts as a yes under hard rule 10; page must say so. WRITER (2026-10-02): the story keeps both limits explicit: the 500-year figure is attributed to the zoo, and the identification of register tree 1-52/B with the zoo's 'ewige Eiche' is stated as probable, not proven.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin, layer schutzgebiete:a_nd), no. 1-52/B",
+        "url": null
+      }
     }
   ]
 }

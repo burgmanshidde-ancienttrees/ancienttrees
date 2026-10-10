@@ -520,7 +520,8 @@
       "curation_status": "flagged",
       "notes": "Not a pamatny strom: this is a vyznamny strom, Prague's second tier, entry number 18, registered 2013, the same tier as prg_010. Girth 350 cm measured 2015 (prazskestromy) and 352 cm in the 2017 Koniklec printed map. Flagged for two reasons. First, the age is a single register estimate of about 125 years with no second assessment found, so the range here is deliberately wide. Second, the pin is approximate: no source publishes coordinates and the tree is not mapped in OpenStreetMap, so the position is triangulated from the register's own wording, the central part of the northern half of the island, which is an area roughly 60 metres across. The city portal's revitalisation page is the independent corroboration for the tree's standing and for the 2013 reopening of the island; it also records that the two largest oaks in the northern part were put forward for heritage status by the project's tree commission. No photo of this specific tree found on Commons, Openverse or iNaturalist in this pass.",
       "location_precision": "approximate",
-      "how_to_recognise": "On the lawn in the northern half of the island, directly below Most Legii. The staircase down to it is on the bridge itself."
+      "how_to_recognise": "On the lawn in the northern half of the island, directly below Most Legii. The staircase down to it is on the bridge itself.",
+      "girth_cm": 350
     },
     {
       "id": "prg_013",
@@ -565,7 +566,8 @@
       "official_register": {
         "name": "Významné stromy Prahy (Pražské stromy), no. 5",
         "url": "https://www.prazskestromy.cz/stromy/vyznamne-stromy/5-jinan-dvoulalocny-v-botanicke-zahrade-uk-v-praze/"
-      }
+      },
+      "height_m": 5
     },
     {
       "id": "prg_014",
@@ -597,7 +599,8 @@
       "curation_status": "flagged",
       "notes": "Vyznamny strom number 12, registered 2013. Two independent sources: the Czech Wikipedia article on the Masaryk viewpoint, which draws on the Prague Castle Administration's 1996 Plecnik monograph and describes the lime as over 200 years old standing between the two stone benches, and prazskestromy.cz, which gives about 200 years and a girth of 249 cm measured 2016. The 2017 Koniklec printed map gives 349 cm for the same tree, a 100 cm discrepancy that one of the two has to have got wrong; the story states both rather than choosing. Flagged mainly on access: the viewpoint has been alternately open and closed under successive presidents and is inside the castle security perimeter, so the access field warns rather than promises. Pin is approximate, the Nominatim node for Masarykova vyhlidka; the lime stands on the viewpoint platform, so the error is metres rather than hundreds of metres, but no per-tree coordinate is published. No usable photo of the tree found: the Commons images of this viewpoint are views out over Hradcany with the lime out of frame or backlit.",
       "location_precision": "approximate",
-      "how_to_recognise": "On the terrace Plecnik built around it in the Upper Deer Moat, with a bench beneath it and the cathedral lined up below; the moat opens roughly April to October."
+      "how_to_recognise": "On the terrace Plecnik built around it in the Upper Deer Moat, with a bench beneath it and the cathedral lined up below; the moat opens roughly April to October.",
+      "girth_cm": 249
     },
     {
       "id": "prg_015",
@@ -615,7 +618,8 @@
       "story": "Most of Europe's big elms are dead, and this one is standing on a side street between Wenceslas Square and the main station. Dutch elm disease, a fungus carried between trees by bark beetles, went through the continent in two waves last century and removed elms so thoroughly that a mature one is now a curiosity rather than an ordinary sight. The elm at Ruzova 941/2 has lived through both waves and shows no sign of either. It is a European white elm, the species with lopsided leaves and papery seed discs that ripen in May, 23 metres tall with a trunk 335 centimetres around, growing on a scrap of ground that was a front garden before the block turned into offices and hotels. The crown fills the courtyard behind the railings and leans out over the pavement, which is where you stand to look at it. Prague gave it legal protection only on 15 April 2022, roughly 190 years into its life, having put a fence around its base the year before. Elms that shrug off the fungus are studied as possible parents for resistant stock, so this one may yet turn out to be useful as well as old.",
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Jilm_v_R%C5%AF%C5%BEov%C3%A9_ulici",
-        "https://www.poznatsvet.cz/cestovani/pamatny-strom-praha/"
+        "https://www.poznatsvet.cz/cestovani/pamatny-strom-praha/",
+        "https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1/query?where=KOD%3D106429&outFields=*&returnGeometry=true&outSR=4326&f=json"
       ],
       "access": "Free, visible and approachable from the public pavement on Ruzova; the small garden the tree stands in belongs to the building and is fenced, so this is a tree you look up at from the street rather than walk around",
       "transport": "4 min walk from Hlavni nadrazi metro (Line C) or the Jindrisska tram stop (lines 3, 5, 6, 9, 14, 24)",
@@ -629,7 +633,11 @@
       "notes": "Registered pamatny strom (registry 106429), declared 15 April 2022, one of Prague's most recent. Girth 335 cm and height 23 m measured 2022; age about 190 years; health recorded as stable, excellent to good, with excellent to slightly reduced vitality. Flagged on sourcing: the second source is a Czech popular travel article rather than an independent survey, and it plainly rests on the same register data, so this entry is effectively single-sourced on the numbers even though the tree's existence, species and position are not in doubt. It adds the point about the tree having survived grafioza, which the register record supports by implication rather than by statement. No superlative is claimed here on purpose: the 2020 Koniklec map calls the elm in Michelsky les the only memorial elm in Prague, a claim made two years before this tree was protected, and the two should not be set against each other. Photos on Commons exist under Category:Jilm v Ruzove ulici but all six were viewed and every one is a street view in which the tree is small, partly hidden by buildings and off to one side, so none passes the Cadiz standard.",
       "location_precision": "confirmed",
       "girth_cm": 335,
-      "how_to_recognise": "On the side street between Wenceslas Square and the main station, 3.35 metres round, with a fence put around its base in 2021."
+      "how_to_recognise": "On the side street between Wenceslas Square and the main station, 3.35 metres round, with a fence put around its base in 2021.",
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 106429",
+        "url": null
+      }
     },
     {
       "id": "prg_016",
@@ -760,7 +768,8 @@
       },
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Dub_uhersk%C3%BD_u_Italsk%C3%A9_ulice",
-        "http://www.prazskestromy.cz/stromy/pamatne-stromy/1043-2/"
+        "http://www.prazskestromy.cz/stromy/pamatne-stromy/1043-2/",
+        "https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1/query?where=KOD%3D104335&outFields=*&returnGeometry=true&outSR=4326&f=json"
       ],
       "access": "Free; stands in the grounds of a public health clinic (Poliklinika AGEL, formerly the Zeleznicni/Railway Hospital) near its main entrance from Helenska street, the same kind of openly walkable institutional ground as a hospital garden. Not gated off from the public during opening hours.",
       "transport": "Bus 135 to Na Smetance, or an 8 min walk from Muzeum metro (lines A, C)",
@@ -773,7 +782,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its 2.91-metre trunk on the open lawn of a hospital garden. It stands in the grounds of the Italska Street clinic, near the entrance from Helenska."
+      "how_to_recognise": "You can recognise it by its 2.91-metre trunk on the open lawn of a hospital garden. It stands in the grounds of the Italska Street clinic, near the entrance from Helenska.",
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 104335",
+        "url": null
+      }
     },
     {
       "id": "prg_020",
@@ -785,17 +798,18 @@
       "girth_cm": 281,
       "location": {
         "address": "U Malvazinky, on the open ground between houses no. 28 and 30, 150 00 Praha 5-Smichov",
-        "latitude": 50.0638364,
-        "longitude": 14.3909256,
+        "latitude": 50.06382887567843,
+        "longitude": 14.390933224943549,
         "neighbourhood": "Smichov"
       },
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Dub_letn%C3%AD_v_ulici_U_Malvazinky",
-        "http://www.prazskestromy.cz/stromy/pamatne-stromy/39-dub-letni-v-ulici-u-malvazinky/"
+        "http://www.prazskestromy.cz/stromy/pamatne-stromy/39-dub-letni-v-ulici-u-malvazinky/",
+        "https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1/query?where=KOD%3D104302&outFields=*&returnGeometry=true&outSR=4326&f=json"
       ],
-      "access": "Standing on private land between two apartment buildings; not enterable. Czech Wikipedia states plainly that it is 'nepristupny, ale z ulice dobre viditelny' (inaccessible, but well visible from the street). The pin marks the tree itself, which fronts the public street U Malvazinky; view it from the pavement rather than approaching the trunk.",
+      "access": "Free to see from the pavement of U Malvazinky; the tree stands on private land between two apartment buildings and cannot be entered, so look at it from the street rather than approaching the trunk (Czech Wikipedia: inaccessible but well visible from the street).",
       "transport": "Bus stop Malvazinky (route 137), on U Malvazinky street",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "You cannot get to this oak, and you do not need to. It stands on private ground between two apartment buildings on U Malvazinky, and Czech Wikipedia says plainly what to expect: nepristupny, ale z ulice dobre viditelny. Inaccessible, but well visible from the street. Look at it from the pavement and leave the trunk alone. The register's coordinate marks the tree itself rather than a surveyed spot to stand, so expect to find your own angle from the road.\n\nIt went in around 1855, a survivor of the tree cover that grew on this Smichov slope before the houses did. When Prague protected it as a pamatny strom on 3 February 2001, its trunk measured 265 centimetres round. A 2013 survey found 281. Both sources put its age at about 160 years as of 2016, which makes it roughly 170 now, and the state rates its condition very good.\n\nIts branches run long and low in most directions, the shape a tree takes when nothing crowds it early.\n\nTwo hundred metres east stood the Malvazinka estate. Its land became the Malvazinky cemetery in 1876 and, after 1948, a state sanatorium. The oak watched that whole sequence from the open ground between numbers 28 and 30, which is where it has stood the whole time.",
       "photo": {
@@ -812,6 +826,16 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 104302",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1/query?where=KOD%3D104302&outFields=*&returnGeometry=true&outSR=4326&f=json",
+        "date": "2026-10-09",
+        "moved_m": 1
       }
     },
     {
@@ -1082,7 +1106,8 @@
       "verified_sources": [
         "AOPK CR memorial-tree register, kod 104281, CC BY 4.0, https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1",
         "https://cs.wikipedia.org/wiki/Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_Praze (row for kod 104281, 'Buk lesni pod letohradkem Hvezda', coordinates 50deg5'2\"N 14deg19'29\"E which convert to 50.0839,14.3247, matching the register point to within metres)",
-        "https://www.turistika.cz/mista/pamatny-buk-pod-letohradkem-hvezda/detail"
+        "https://www.turistika.cz/mista/pamatny-buk-pod-letohradkem-hvezda/detail",
+        "https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1/query?where=KOD%3D104281&outFields=*&returnGeometry=true&outSR=4326&f=json"
       ],
       "access": "Free, public nature reserve (Obora Hvezda), open year round, same regime as the three other Hvezda trees already published (prg_005, prg_024, prg_025)",
       "transport": "Tram line 22 to Bila Hora, then a walk through Obora Hvezda toward the summer palace; exact walking distance from the tram stop not measured this pass (roughly 500 m by straight-line map distance from the reserve's edge)",
@@ -1097,6 +1122,10 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 104281",
+        "url": null
       }
     },
     {
@@ -1117,7 +1146,8 @@
       "how_to_recognise": "You can recognise it by being the healthy one of the two great oaks behind the forestry lodge: 3.81 metres round, with a full crown carried upward. Its neighbour is five metres round, hollow, and dead but for a ring of leaves at the top.",
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Dub_za_%C4%8Cimickou_h%C3%A1jovnou",
-        "http://www.prazskestromy.cz/stromy/pamatne-stromy/73-duby-letni-u-hajovny-v-cimickem-haji/"
+        "http://www.prazskestromy.cz/stromy/pamatne-stromy/73-duby-letni-u-hajovny-v-cimickem-haji/",
+        "https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1/query?where=KOD%3D104833&outFields=*&returnGeometry=true&outSR=4326&f=json"
       ],
       "access": "Free, inside Čimický háj, a public recreational forest between Bohnice, Kobylisy and Čimice used year-round for walking, running and cycling. The tree stands a short way past a fence behind the Čimická hájovna (a working forestry lodge), which prazskestromy.cz's own access note does not flag as restricted; the lodge area carries information boards as a marked point of interest. No source states the tree itself is closed to visitors.",
       "transport": "Bus stop \"Čimický háj\" (lines 102, 144, 152, 177, 200), on the forest edge",
@@ -1130,6 +1160,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 104833",
+        "url": null
       }
     },
     {
@@ -1149,7 +1183,8 @@
       "story": "In 2010 the Czech state drew a twelve-metre protected circle around a tree on a residential street in Libeň. This is it: an oak opposite number 13 on Pod Labuťkou, standing on ground that used to be a children's playground, under a slope grown over with scrub.\n\nIt is not a giant. The trunk came to 3.00 metres round in a 2016 survey and 3.14 when the register was updated in August 2024, and the tree reaches twenty metres. What it has is a shape street trees are almost never allowed to keep: a bushy crown whose lowest branches run all the way down to the ground, so the whole tree is one piece from the pavement up rather than a trunk with foliage parked on top. The same survey rated its health very good, noting a few dry branches and algae in the bark crevices, which is what the damp of this slope leaves on a trunk.\n\nIts age is an estimate and not a record. The surveyors put it at about 170 years in 2016, so somewhere near 180 now. Beyond those two measurements and a short Czech account of them, almost nothing about this oak is written down anywhere. If you know more of its story, tell us.",
       "how_to_recognise": "You can recognise it by the crown, bushy and dropping its lowest branches right down to the ground, and by the trunk at 3.14 metres round. It stands on the slope side of Pod Labuťkou, opposite house number 13.",
       "verified_sources": [
-        "https://cs.wikipedia.org/wiki/Dub_v_ulici_Pod_Labu%C5%A5kou"
+        "https://cs.wikipedia.org/wiki/Dub_v_ulici_Pod_Labu%C5%A5kou",
+        "https://gis.nature.cz/arcgis/rest/services/PamatneStromy/PamatneStromy/MapServer/1/query?where=KOD%3D105658&outFields=*&returnGeometry=true&outSR=4326&f=json"
       ],
       "access": "Free, stands beside the public street Pod Labuťkou in Libeň, on the site of a former children's playground below a vegetated slope. An ordinary street tree, not inside any park or private grounds.",
       "transport": "In Libeň, Praha 8; nearest tram/bus stops are in the surrounding Libeň streets (not pinned down to a single stop this pass)",
@@ -1162,6 +1197,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 105658",
+        "url": null
       }
     },
     {

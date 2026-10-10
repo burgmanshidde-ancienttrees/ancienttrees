@@ -10164,6 +10164,271 @@
  "2026-10-09": [
   {
    "date": "2026-10-09",
+   "target": "berlin",
+   "kind": "enrich",
+   "tokens": 165195,
+   "trees": 18,
+   "note": "batch 2: register ids on 17 trees, ferry fare on one; ber_031 possibly felled"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "berlin",
+   "kind": "enrich",
+   "tokens": 186129,
+   "trees": 18,
+   "note": "batch 3: register ids on 18, girth/height on 10 from Baumkataster WFS, 2 best_time"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "rome",
+   "kind": "enrich",
+   "tokens": 153711,
+   "trees": 16,
+   "note": "MASAF register ids on 15 trees, one measurement, botanic garden hours"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "rome",
+   "kind": "enrich",
+   "tokens": 136044,
+   "trees": 3,
+   "note": "batch 2: MASAF ids on 3 trees, one girth"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "palermo",
+   "kind": "enrich",
+   "tokens": 161119,
+   "trees": 12,
+   "note": "MASAF ids on 11 trees, Villa Malfitano ticket and slots corrected"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "oahu",
+   "kind": "enrich",
+   "tokens": 183767,
+   "trees": 17,
+   "note": "Honolulu register ids and measurements, Foster garden prices, 4 OSM pins"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "tokyo",
+   "kind": "enrich",
+   "tokens": 213757,
+   "trees": 7,
+   "note": "national and Tokyo register links on 5 trees, camphor access corrected, 76 tool calls"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "munich",
+   "kind": "enrich",
+   "tokens": 162271,
+   "trees": 19,
+   "note": "batch 1: LfU Bayern register ids on 19 trees, 4 girths"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "munich",
+   "kind": "enrich",
+   "tokens": 164613,
+   "trees": 18,
+   "note": "batch 2: LfU ids on 17, 3 measurements, 3 best_time"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "munich",
+   "kind": "enrich",
+   "tokens": 163719,
+   "trees": 20,
+   "note": "batch 3: LfU ids on 19, 16 register pins, 1 girth; muc_037/049 duplicate flagged"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "new-york",
+   "kind": "enrich",
+   "tokens": 162814,
+   "trees": 14,
+   "note": "Great Trees girth/height on 11, 6 register pins, garden access; nyc_006 species conflict"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "edinburgh",
+   "kind": "enrich",
+   "tokens": 165098,
+   "trees": 7,
+   "note": "RBGE hours on 7 trees, 3 accession ids; no public measurements"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "vienna",
+   "kind": "enrich",
+   "tokens": 171356,
+   "trees": 11,
+   "note": "4 register ids, 8 girths from Baumkataster, Schoenbrunn hours; vie_010 pin corrected 138 m"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "brussels",
+   "kind": "enrich",
+   "tokens": 159971,
+   "trees": 15,
+   "note": "heritage.brussels record URLs, girths and heights on 15 trees"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "brussels",
+   "kind": "enrich",
+   "tokens": 158055,
+   "trees": 13,
+   "note": "batch 2: records, measurements on 13 trees, 4 register pins"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "dublin",
+   "kind": "enrich",
+   "tokens": 164292,
+   "trees": 12,
+   "note": "10 register ids, 2 measurements, 2 access lines; dub_008 pin conflict flagged"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "brisbane",
+   "kind": "enrich",
+   "tokens": 164362,
+   "trees": 17,
+   "note": "National Trust register records and heights on 13, heritage records, access, one location_site"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "paris",
+   "kind": "enrich",
+   "tokens": 161866,
+   "trees": 11,
+   "note": "Paris register ids with sheet PDFs on 11 trees"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "malaga",
+   "kind": "enrich",
+   "tokens": 143677,
+   "trees": 8,
+   "note": "garden records, 7 heights, 1 girth, hackberry access"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "vienna",
+   "kind": "enrich",
+   "tokens": 155611,
+   "trees": 16,
+   "note": "batch 2: 13 register ids, 4 girths, 4 best_time"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "vienna",
+   "kind": "enrich",
+   "tokens": 150408,
+   "trees": 13,
+   "note": "batch 3: 13 register ids, 2 heights, 1 best_time"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "london",
+   "kind": "enrich",
+   "tokens": 155081,
+   "trees": 5,
+   "note": "access lines on 4, one girth floor; no UK register; kew.org 403"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "alicante",
+   "kind": "enrich",
+   "tokens": 149031,
+   "trees": 16,
+   "note": "Generalitat Valenciana register ids on 16 trees"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "porto",
+   "kind": "enrich",
+   "tokens": 169060,
+   "trees": 12,
+   "note": "ICNF ids on 10, 7 heights, Palacio de Cristal hours"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "prague",
+   "kind": "enrich",
+   "tokens": 159215,
+   "trees": 9,
+   "note": "AOPK ids and girths on 6, one pin, 3 measurements"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "cagliari",
+   "kind": "enrich",
+   "tokens": 155660,
+   "trees": 6,
+   "note": "2 MASAF ids, garden hours corrected, 2 pins"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "madrid",
+   "kind": "enrich",
+   "tokens": 199073,
+   "trees": 5,
+   "note": "pruned to authority sources: 2 register URLs, 3 heights, 1 girth, botanic garden access; third-party Jimdo catalogue ids withheld"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "florence",
+   "kind": "enrich",
+   "tokens": 170860,
+   "trees": 16,
+   "note": "14 MASAF ids, 1 height, 1 pin, garden hours; flo_026 id withheld on a 208 m conflict"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "krakow",
+   "kind": "enrich",
+   "tokens": 152150,
+   "trees": 11,
+   "note": "6 CRFOP records, 3 girths, garden access, 3 best_time"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "athens",
+   "kind": "enrich",
+   "tokens": 137151,
+   "trees": 0,
+   "wasted": 137151,
+   "note": "no Greek register imported, culture ministry domains fail DNS; nothing filled"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "pamplona",
+   "kind": "enrich",
+   "tokens": 201921,
+   "trees": 14,
+   "note": "Navarra MN ids and fichas on 6, 5 measurements, 8 river-park ids"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "bath",
+   "kind": "enrich",
+   "tokens": 139558,
+   "trees": 2,
+   "note": "access lines corrected on two trees; UK has no per-tree register, rest dead ends"
+  },
+  {
+   "date": "2026-10-09",
+   "target": "berlin",
+   "kind": "enrich",
+   "tokens": 174821,
+   "trees": 5,
+   "note": "girths on 4 oaks, height on 2, register ids on both Pfaueninsel oaks"
+  },
+  {
+   "date": "2026-10-09",
    "target": "seville",
    "kind": "enrich",
    "tokens": 152175,

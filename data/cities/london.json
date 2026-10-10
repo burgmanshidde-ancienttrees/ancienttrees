@@ -85,9 +85,10 @@
       "story": "The wall came second: this oak was already centuries old when Charles I enclosed Richmond Park around it in 1637, walling off common land for his own deer rather than planting anything new. It has lived behind royal fences ever since. The tree is a massive hollow pollard now, its trunk split and gnarled into a shape wide enough to shelter a small football team, kept alive by the same repeated cutting-back that saves most ancient oaks from their own weight. Richmond Park holds one of the largest collections of ancient oaks in Europe, and the Royal Oak is treated as its figurehead: Sir David Attenborough chose it as the symbol of a conservation campaign for the park's veteran trees, and it carries its own entry in the Woodland Trust's national Ancient Tree Inventory, a formally surveyed and registered specimen rather than a folk legend. Fallow deer, descendants of the herd Charles I first enclosed the park to hunt, still graze in its shadow, close enough on a quiet afternoon that the oak and the animals read as one scene rather than two separate facts.",
       "verified_sources": [
         "https://ati.woodlandtrust.org.uk/tree-search/tree/?treeId=40404",
-        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/"
+        "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/",
+        "https://www.royalparks.org.uk/visit/parks/richmond-park"
       ],
-      "access": "Free, open access, national park",
+      "access": "Free. Richmond Park's pedestrian gates are open 24 hours a day, so the oak near Pen Ponds can be reached on foot at any time; vehicle gates 7am to 6:30pm.",
       "transport": "Bus or car to Richmond Park, then on foot near Pen Ponds",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Richmond_Park%2C_The_Royal_Oak_%281%29.jpg",
@@ -194,9 +195,10 @@
         "https://www.royalparks.org.uk/get-in-touch/media-centre/news-press-releases/vote-greenwich-parks-shortlisted-tree-year-2023",
         "https://www.friendsofgreenwichpark.org.uk/Wildlife/Trees/",
         "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-        "https://opendata-woodlandtrust.hub.arcgis.com/datasets/9d2d13b04d654ceb9ba6e0697c1e0c29_0"
+        "https://opendata-woodlandtrust.hub.arcgis.com/datasets/9d2d13b04d654ceb9ba6e0697c1e0c29_0",
+        "https://www.royalparks.org.uk/visit/parks/greenwich-park"
       ],
-      "access": "Free, open parkland, Greenwich Park",
+      "access": "Free. Greenwich Park's pedestrian gates are open 6am to 7pm (vehicle gates 7am to 7pm), as listed by The Royal Parks.",
       "transport": "10 min walk from Maze Hill station, into Greenwich Park",
       "best_time": {
         "months": [
@@ -272,9 +274,10 @@
       "story": "This oak survived five centuries partly because people kept attacking it. It was coppiced long ago, cut back hard to its base, a brutal-looking practice that paradoxically resets a tree's age clock and can add centuries to its life rather than shorten it. What grew back is a Holm Oak, an evergreen Mediterranean species that has no business thriving this far north, and quite possibly the oldest specimen of its kind anywhere in Britain. It grows in the grounds of Fulham Palace, for centuries the working home of the Bishop of London rather than a royal estate, and the two bishops most often credited with planting it, Edmund Grindal and John Aylmer, both lived here in the second half of the 16th century, among the first people in England to try growing the species at all. The oak was named among the original 41 trees given Great Tree status in 1988, and a later record corrected an old misidentification of the tree as a common Pedunculate Oak rather than the rarer Mediterranean evergreen it actually is. Fulham Palace Gardens are free to enter daily, which means reaching London's likely oldest holm oak costs nothing but the walk from Putney Bridge station.",
       "verified_sources": [
         "https://www.fulhampalace.org/news/the-fulham-palace-ancient-holm-oak/",
-        "https://www.alamy.com/stock-photo-the-holm-oak-quercus-ilex-is-over-450-years-old-at-fulham-palace-gardens-86541999.html"
+        "https://www.alamy.com/stock-photo-the-holm-oak-quercus-ilex-is-over-450-years-old-at-fulham-palace-gardens-86541999.html",
+        "https://www.fulhampalace.org/visit/opening-times/"
       ],
-      "access": "Free, Fulham Palace Gardens open daily",
+      "access": "Free. Fulham Palace describes itself as open daily with free admission; its opening-times page lists the botanic garden as 07.00 to 18.00. Parts of the garden can close for private events. The oak stands at the south-east corner of the main lawn, near the Tudor wall of the walled garden.",
       "transport": "Putney Bridge tube, 10 min walk",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fulham_Palace_Oak_%282%29.jpg",
@@ -730,7 +733,7 @@
         "https://www.moruslondinium.org/map/inner-temple-garden",
         "https://www.innertemple.org.uk/estate-garden/the-inner-temple-garden/the-garden/history-of-the-garden/"
       ],
-      "access": "Public, open weekdays 12:30pm-3:00pm only (not full daily access)",
+      "access": "Public, open weekdays 12:30pm-3:00pm only (not full daily access); the tree stands by the railings of Benchers Walk outside Paper Buildings",
       "transport": "Temple station, 4 minute walk",
       "curation_status": "flagged",
       "location_precision": "approximate",
@@ -740,7 +743,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the trunk, about a metre and a half round under ten metres of crown, an orchard survivor alongside a walnut and a quince. It stands by the railings of Benchers' Walk, outside Paper Buildings."
+      "how_to_recognise": "You can recognise it by the trunk, about a metre and a half round under ten metres of crown, an orchard survivor alongside a walnut and a quince. It stands by the railings of Benchers' Walk, outside Paper Buildings.",
+      "official_register": {
+        "name": "Morus Londinium London mulberry survey (Inner Temple Garden record)",
+        "url": "https://www.moruslondinium.org/map/inner-temple-garden"
+      },
+      "girth_cm": 150,
+      "height_m": 10
     },
     {
       "id": "lon_021",
@@ -855,9 +864,10 @@
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Great_Trees_of_London",
         "https://www.graftingardeners.co.uk/greatest-trees-london/",
-        "https://commons.wikimedia.org/wiki/File:Greenwich_Park_Shagbark_Hickory_(1).jpg"
+        "https://commons.wikimedia.org/wiki/File:Greenwich_Park_Shagbark_Hickory_(1).jpg",
+        "https://www.royalparks.org.uk/visit/parks/greenwich-park"
       ],
-      "access": "Free; Royal Park, Flower Garden open daily (park opening hours apply)",
+      "access": "Free. The Flower Garden is inside Greenwich Park, whose pedestrian gates are open 6am to 7pm (vehicle gates 7am to 7pm), as listed by The Royal Parks.",
       "transport": "Maze Hill station or Greenwich DLR/rail, about 15 minutes' walk; same park as lon_005",
       "location_precision": "approximate",
       "curation_status": "flagged",
@@ -930,7 +940,8 @@
       "verified_sources": [
         "https://lambethnews.wordpress.com/2008/11/19/wood-you-believe-it-two-lambeth-trees-in-londons-top-20/",
         "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-        "https://commons.wikimedia.org/wiki/File:Brockwell_Oak_(1).jpg"
+        "https://commons.wikimedia.org/wiki/File:Brockwell_Oak_(1).jpg",
+        "https://lambethnews.wordpress.com/2008/11/19/wood-you-believe-it-two-lambeth-trees-in-londons-top-20/ (girth 'of over six metres'; 600 is a floor, not a measured figure)"
       ],
       "access": "Free; Brockwell Park is a public park, open daily",
       "transport": "Herne Hill station about 10 minutes' walk; Brixton about 20",

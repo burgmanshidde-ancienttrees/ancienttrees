@@ -226,7 +226,11 @@
       "height_m": 7.0,
       "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 600,
-      "how_to_recognise": "You can recognise it by its girth, six metres round on a tree only seven metres tall, the largest of the group. They stand in front of the Palazzina Cinese, the Chinese pavilion in Parco della Favorita."
+      "how_to_recognise": "You can recognise it by its girth, six metres round on a tree only seven metres tall, the largest of the group. They stand in front of the Palazzina Cinese, the Chinese pavilion in Parco della Favorita.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 28/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_006",
@@ -362,9 +366,10 @@
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
         "https://www.apgi.it/giardino/villa-malfitano-whitaker/",
-        "https://www.verdeinsiemeweb.com/2015/11/il-giardino-di-villa-malfitano-palermo.html"
+        "https://www.verdeinsiemeweb.com/2015/11/il-giardino-di-villa-malfitano-palermo.html",
+        "https://www.fondazionewhitaker.it/biglietti/"
       ],
-      "access": "Free garden access; the villa's interior requires a paid guided tour",
+      "access": "Paid and by timed slot, not free: the park is sold together with the villa tour (15 euros, 6 euros under 18), Monday to Saturday at 9:30, 11:00, 12:30 and 13:30 with a minimum of four people, day and time booked by phone. Sundays and holidays only for groups of 20 or more on advance booking. Per the Whitaker Foundation.",
       "transport": "20 min walk from Piazza Politeama, entrance on Via Dante",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -418,7 +423,11 @@
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
       "girth_cm": 2730,
-      "how_to_recognise": "You can recognise it by the shade it throws over half the Lago dei Cigni, on a trunk system 27.3 metres round and 30 metres tall. It stands at the swan lake in the Villa Tasca grounds, across the water from the plane tree."
+      "how_to_recognise": "You can recognise it by the shade it throws over half the Lago dei Cigni, on a trunk system 27.3 metres round and 30 metres tall. It stands at the swan lake in the Villa Tasca grounds, across the water from the plane tree.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 40/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_011",
@@ -451,7 +460,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_012",
@@ -485,7 +498,11 @@
       "location_precision": "confirmed",
       "height_m": 15.0,
       "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 34/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_013",
@@ -504,9 +521,10 @@
       "story": "This is a yucca with a trunk five and a half metres round. Yuccas are the spiky things in pots by a doorway, and this one has gone woody and enormous in the garden of Villa Malfitano, which is what a Palermo climate and a hundred-odd undisturbed years will do to a plant that is technically not a tree at all.\n\nBotanically it is a monocot, closer kin to a grass or an agave than to an oak, and it has no annual rings, which is one reason nobody has put an age on it. The site already collects two dragon trees and several palms on the same logic: what matters is whether the thing is worth standing in front of.\n\nIts name is unsettled. The register files it as Yucca gigantea and the city's own description calls it Yucca australis, which are names that have been swapped back and forth for the same plant. If you know which is right, tell us.\n\nVilla Malfitano was built for the Whitakers, the English wine family who made Marsala and then spent the profits on Sicily, and the foundation that runs it charges entry to the house and garden both.",
       "verified_sources": [
         "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf (sheet 12/G273/PA/19, same D.M. n. 5450 del 19/12/2017 dataset as the national MASAF register: girth 560cm, height 12m, criteria 'età e/o dimensioni' and 'rarità botanica')",
-        "https://turismo.cittametropolitana.pa.it/il-parco-di-villa-malfitano/ (Città Metropolitana di Palermo's own tourism page for the villa's garden, describing a 'magnificent specimen of Yucca ... which, together with one present at Villa Sofia, documents certainly the first introduction of this species in Europe')"
+        "https://turismo.cittametropolitana.pa.it/il-parco-di-villa-malfitano/ (Città Metropolitana di Palermo's own tourism page for the villa's garden, describing a 'magnificent specimen of Yucca ... which, together with one present at Villa Sofia, documents certainly the first introduction of this species in Europe')",
+        "https://www.fondazionewhitaker.it/biglietti/"
       ],
-      "access": "Paid entry (Villa Malfitano Whitaker, run by the Whitaker Foundation).",
+      "access": "Paid and by timed slot: the park is sold together with the villa tour (15 euros, 6 euros under 18), Monday to Saturday at 9:30, 11:00, 12:30 and 13:30 with a minimum of four people, day and time booked by phone. Sundays and holidays only for groups of 20 or more on advance booking. Per the Whitaker Foundation.",
       "transport": "Same grounds as the already-published Dragon Tree of Villa Malfitano and Fig of Villa Malfitano",
       "photo": {
         "url": null,
@@ -519,7 +537,11 @@
       "location_precision": "confirmed",
       "height_m": 12.0,
       "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 12/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_014",
@@ -552,7 +574,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "height_m": 7.0,
-      "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 7.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 24/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_015",
@@ -658,7 +684,11 @@
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the Monstera deliciosa, a houseplant vine, climbing its 5.6 metre trunk. It stands in the Orto Botanico di Palermo, thirty metres tall."
+      "how_to_recognise": "You can recognise it by the Monstera deliciosa, a houseplant vine, climbing its 5.6 metre trunk. It stands in the Orto Botanico di Palermo, thirty metres tall.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 33/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_018",
@@ -699,7 +729,11 @@
       },
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise it by the bare branches covered in small scarlet bells, in the years it flowers, on a trunk 4.5 metres round. It stands in the working nursery, 85 metres from the dragon tree at the same address."
+      "how_to_recognise": "You can recognise it by the bare branches covered in small scarlet bells, in the years it flowers, on a trunk 4.5 metres round. It stands in the working nursery, 85 metres from the dragon tree at the same address.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 25/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_019",
@@ -733,7 +767,11 @@
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the single trunk and one crown, 30 metres tall, where the fig beside the lake spreads into a colonnade instead. It stands 184 metres from that fig, on the far side of the Villa Tasca swan lake."
+      "how_to_recognise": "You can recognise it by the single trunk and one crown, 30 metres tall, where the fig beside the lake spreads into a colonnade instead. It stands 184 metres from that fig, on the far side of the Villa Tasca swan lake.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 43/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_020",
@@ -767,7 +805,11 @@
       "height_m": 38.0,
       "verify_notes": "Height 38.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its narrow, slightly leaning column, 38 metres tall. It stands on one shore of Villa Tasca's swan lake, facing the garden's fig across the water."
+      "how_to_recognise": "You can recognise it by its narrow, slightly leaning column, 38 metres tall. It stands on one shore of Villa Tasca's swan lake, facing the garden's fig across the water.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 41/G273/PA/19",
+        "url": null
+      }
     },
     {
       "id": "pal_021",
@@ -801,7 +843,11 @@
       "height_m": 36.0,
       "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its symmetrical, evenly tiered crown, unlike the leaning column of the Cook pine 35 metres away. It stands in the same lakeside garden at Villa Tasca."
+      "how_to_recognise": "You can recognise it by its symmetrical, evenly tiered crown, unlike the leaning column of the Cook pine 35 metres away. It stands in the same lakeside garden at Villa Tasca.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 42/G273/PA/19",
+        "url": null
+      }
     }
   ]
 }

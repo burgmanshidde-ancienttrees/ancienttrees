@@ -43,9 +43,10 @@
       "story": "For generations, guides at Poland's oldest botanical garden told visitors this oak was 500 years old, older than the university faculty that planted the garden around it. A dendrochronological study eventually corrected the number to roughly 230, a reminder that even a garden built by scientists can carry a folk legend for two centuries before anyone tests it properly. The real number is less dramatic but not much less impressive: the tree is very nearly as old as the garden itself, founded in 1783 when the Commission of National Education bought monastic land from the Jesuits to give the Krakow Academy's chemistry and natural history faculty somewhere to grow a teaching collection. Sitting at the heart of that collection ever since, the Jagiellonian Oak has outlived the partitions of Poland, two world wars, and the garden's own repeated redesigns. Its species is the single most common one Krakow protects today, a pedunculate oak among 121 individual specimens registered across the city as of 2023, but this particular tree is the one the garden itself calls its most impressive, trunk now six metres around. It stands for anyone who buys the garden's modest entry ticket, its crown wide enough to shade a good stretch of the main path, still growing quietly while its age keeps getting revised downward by better science.",
       "verified_sources": [
         "https://ogrod.uj.edu.pl/ogrod/rosliny/najstarsze-okazy",
-        "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Botaniczny_Uniwersytetu_Jagiello%C5%84skiego"
+        "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Botaniczny_Uniwersytetu_Jagiello%C5%84skiego",
+        "https://ogrod.uj.edu.pl/zwiedzanie/podstawowe-info"
       ],
-      "access": "Paid entry, Jagiellonian University Botanical Garden (open seasonally, check hours)",
+      "access": "Paid entry to the Jagiellonian University Botanical Garden (22 zloty full, 12 reduced, children under 4 free). Garden open daily: Jan-Feb and Nov-Dec 9:00-15:00, March and October 9:00-17:00, April-August 9:00-19:00, September 9:00-18:00; the ticket office closes about 45 minutes earlier.",
       "transport": "Krakow Glowny railway station, short walk (garden is close to the Old Town's eastern edge)",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/D%C4%85b_Jagiello%C5%84ski_OB10.jpg",
@@ -91,7 +92,9 @@
       "verified_sources": [
         "https://dlaseniora.krakow.pl/aktualnosci/220872,64,komunikat,dab_henryk_z_krakowa_w_konkursie_drzewo_roku_2018.html",
         "https://krakow.naszemiasto.pl/krakow-240-letni-dab-henryk-w-borku-faleckim-bedzie-lepiej/ar/c8-3863166",
-        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie"
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie (wykaz, entry 271, ul. Zawila, obwod 387 cm, designated 2017, CRFOP id .2868; the GDOS register point lies 42 m from our pin, species Quercus robur matches)",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2868"
       ],
       "access": "Free, open access, roadside on public ground in Borek Falecki",
       "transport": "Borek Falecki tram loop (Zakopianska), short walk",
@@ -114,7 +117,12 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by where it stands, alone at the roadside in Borek Falecki, the last tree left from the forest that once covered the area. It is named Henryk after the man who saved it."
+      "how_to_recognise": "You can recognise it by where it stands, alone at the roadside in Borek Falecki, the last tree left from the forest that once covered the area. It is named Henryk after the man who saved it.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOS), pomnik przyrody, no. PL.ZIPOP.1393.PP.1261011.2868",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2868"
+      },
+      "girth_cm": 387
     },
     {
       "id": "kra_003",
@@ -170,9 +178,10 @@
       },
       "story": "Jan Sniadecki was one of the Enlightenment's great Polish polymaths, an astronomer and mathematician who reformed how Krakow's university taught science, and tradition credits him with personally planting these cornelian cherries along the Botanical Garden's main path around 1790, while he was directing the observatory next door. Cornelian cherry is usually grown as a large shrub rather than what most people picture as a tree, which is part of why these specimens stand out: at roughly 230 years old, they are among the oldest cultivated cornelian cherries recorded in Poland, multi-stemmed and gnarled in a way that reads more like an old apple tree than the tidy hedge shrub gardeners plant today. They flower before almost anything else in the garden wakes up, small clusters of yellow blossom opening as early as February while frost is still a real possibility, followed by tart red fruit in late summer that Polish households have turned into preserves and liqueur for centuries. Sniadecki's connection to the garden runs deeper than one planting: the university's astronomical observatory, which he helped establish, still stands in the Collegium building the garden surrounds, and the dogwoods are the closest thing to a living monument to the man himself, unlabelled and easy to walk past without knowing what they are.",
       "verified_sources": [
-        "https://ogrod.uj.edu.pl/ogrod/rosliny/najstarsze-okazy"
+        "https://ogrod.uj.edu.pl/ogrod/rosliny/najstarsze-okazy",
+        "https://ogrod.uj.edu.pl/zwiedzanie/podstawowe-info"
       ],
-      "access": "Paid entry, Jagiellonian University Botanical Garden (open seasonally, check hours)",
+      "access": "Paid entry to the Jagiellonian University Botanical Garden (22 zloty full, 12 reduced, children under 4 free). Garden open daily: Jan-Feb and Nov-Dec 9:00-15:00, March and October 9:00-17:00, April-August 9:00-19:00, September 9:00-18:00; the ticket office closes about 45 minutes earlier.",
       "transport": "Krakow Glowny railway station, short walk",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Krak%C3%B3w_ul._Kopernika_27_Pomnik_przyrody_Dere%C5%84_jadalny_Cornus_mas_1.jpg",
@@ -705,7 +714,14 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as a Northern Red Oak, an outlier among Krakow's usually native oaks and limes, 3.14 metres round. It stands in the library garden at ul. Powroznicza 2."
+      "how_to_recognise": "You can recognise it as a Northern Red Oak, an outlier among Krakow's usually native oaks and limes, 3.14 metres round. It stands in the library garden at ul. Powroznicza 2.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "mid to late October, when the red oak turns a rich red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "kra_019",
@@ -767,7 +783,14 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the trunk, 424 centimetres round, thicker than Krakow's small-leaved lime on the same street. It stands at ul. Kosciuszki 32; its leaves flash silver-white underneath in wind."
+      "how_to_recognise": "You can recognise it by the trunk, 424 centimetres round, thicker than Krakow's small-leaved lime on the same street. It stands at ul. Kosciuszki 32; its leaves flash silver-white underneath in wind.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "label": "July, when the silver lime blooms with a strong honey scent",
+        "kind": "flowers"
+      }
     },
     {
       "id": "kra_021",
@@ -1015,7 +1038,8 @@
       },
       "verified_sources": [
         "GDOS pomniki przyrody register (gid 72033, kodinspire PL.ZIPOP.1393.PP.1261011.1112), designated 1987-06-09",
-        "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 49: ul. Morawskiego 5, girth 399 cm, designated 1997, CRFOP id .1112 (matches GDOS record). Same 2023-snapshot table that excludes prior delistings."
+        "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 49: ul. Morawskiego 5, girth 399 cm, designated 1997, CRFOP id .1112 (matches GDOS record). Same 2023-snapshot table that excludes prior delistings.",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1112"
       ],
       "access": "Free, roadside tree on public ground (ul. Morawskiego), open at all hours",
       "transport": "About 13-16 minute walk from Rynek Glowny (Main Square), on the west side toward Zwierzyniec/Salwator",
@@ -1030,7 +1054,11 @@
       },
       "how_to_recognise": "You can recognise it by the trunk, 399 centimetres round, the thickest elm on this page. It stands at ul. Morawskiego 5 in Zwierzyniec, on the way toward the Vistula and the Kosciuszko Mound.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 399 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 399 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOS), pomnik przyrody, no. PL.ZIPOP.1393.PP.1261011.1112",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.1112"
+      }
     },
     {
       "id": "kra_029",
@@ -1130,7 +1158,8 @@
       },
       "verified_sources": [
         "GDOS pomniki przyrody register (gid 145734, kodinspire PL.ZIPOP.1393.PP.1261011.2846), designated 2016-01-06",
-        "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 266: ul. Dunin-Wasowicza/ul. Lowiecka, girth 351 cm, designated 2015, CRFOP id .2846 (matches GDOS record), with its own Commons photo (Krakow ul. Lowiecka pomnik przyrody Dab szypulkowy Quercus robur.jpg)."
+        "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 266: ul. Dunin-Wasowicza/ul. Lowiecka, girth 351 cm, designated 2015, CRFOP id .2846 (matches GDOS record), with its own Commons photo (Krakow ul. Lowiecka pomnik przyrody Dab szypulkowy Quercus robur.jpg).",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2846"
       ],
       "access": "Free, roadside tree on public ground at the Dunin-Wasowicza/Lowiecka junction, open at all hours",
       "transport": "About 15-18 minute walk from Rynek Glowny (Main Square), in Wola Justowska toward Las Wolski",
@@ -1153,7 +1182,11 @@
       },
       "how_to_recognise": "You can recognise it by the trunk, 351 centimetres round, standing alone at a suburban road junction rather than in a cluster of register trees. It stands where ul. Dunin-Wasowicza meets ul. Lowiecka.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 351 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 351 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOS), pomnik przyrody, no. PL.ZIPOP.1393.PP.1261011.2846",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2846"
+      }
     },
     {
       "id": "kra_032",
@@ -1171,9 +1204,11 @@
       },
       "verified_sources": [
         "GDOS pomniki przyrody register (gid 177905, kodinspire PL.ZIPOP.1393.PP.1261011.2879), designated 2017-02-07",
-        "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 282: ul. Kopernika - Ogrod Botaniczny, girth 462 cm, designated 2017, CRFOP id .2879 (matches GDOS record), with its own Commons photo (Krakow ul. Kopernika 27 Pomnik przyrody Dab wegierski Quercus frainetto.jpg)."
+        "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 282: ul. Kopernika - Ogrod Botaniczny, girth 462 cm, designated 2017, CRFOP id .2879 (matches GDOS record), with its own Commons photo (Krakow ul. Kopernika 27 Pomnik przyrody Dab wegierski Quercus frainetto.jpg).",
+        "https://ogrod.uj.edu.pl/zwiedzanie/podstawowe-info",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2879"
       ],
-      "access": "Paid entry, Jagiellonian University Botanical Garden (open seasonally, check hours)",
+      "access": "Paid entry to the Jagiellonian University Botanical Garden (22 zloty full, 12 reduced, children under 4 free). Garden open daily: Jan-Feb and Nov-Dec 9:00-15:00, March and October 9:00-17:00, April-August 9:00-19:00, September 9:00-18:00; the ticket office closes about 45 minutes earlier.",
       "transport": "About 17-19 minute walk from Rynek Glowny (Main Square)",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -1187,7 +1222,11 @@
       "paid_entry": true,
       "how_to_recognise": "You can recognise it by its leaves, among the largest of any European oak, half again as long as the pedunculate oak's and cut into many narrow lobes. It stands in the Botanical Garden, near the Jagiellonian Oak.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 462 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 462 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOS), pomnik przyrody, no. PL.ZIPOP.1393.PP.1261011.2879",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2879"
+      }
     },
     {
       "id": "kra_033",
@@ -1206,9 +1245,12 @@
       "verified_sources": [
         "GDOS pomniki przyrody register (gid 145180, kodinspire PL.ZIPOP.1393.PP.1261011.2845), designated 2014-12-03",
         "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 264: ul. Kopernika 27 - Ogrod Botaniczny, girth 172 cm, designated 2014, CRFOP id .2845 (matches GDOS record)",
-        "krakow.pl official city tourism page on the Jagiellonian University Botanical Garden (fetched directly, not from a search summary): 'najstarsza w Polsce palma - daktylowiec kanaryjski Phoenix canariensis, znajdujacy sie w szklarni zimowej, miejscu letnich koncertow' (the oldest palm tree in Poland, a Canary Island date palm, standing in the winter greenhouse, a venue for summer concerts)."
+        "krakow.pl official city tourism page on the Jagiellonian University Botanical Garden (fetched directly, not from a search summary): 'najstarsza w Polsce palma - daktylowiec kanaryjski Phoenix canariensis, znajdujacy sie w szklarni zimowej, miejscu letnich koncertow' (the oldest palm tree in Poland, a Canary Island date palm, standing in the winter greenhouse, a venue for summer concerts).",
+        "https://ogrod.uj.edu.pl/zwiedzanie/podstawowe-info",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Krakowie (wykaz, entry 264, ul. Kopernika 27, obwod 172 cm, designated 2014, CRFOP id .2845)",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2845"
       ],
-      "access": "Paid entry, Jagiellonian University Botanical Garden, inside the winter greenhouse (open seasonally, check hours)",
+      "access": "Paid entry to the Jagiellonian University Botanical Garden (22 zloty full, 12 reduced, children under 4 free). The palm stands in a greenhouse, open Tuesday to Sunday: Jan-Mar and Nov-Dec 10:00-14:45, April-August 10:00-18:30, September 10:00-17:45, October 10:00-16:45; greenhouses are closed on Mondays.",
       "transport": "About 17-19 minute walk from Rynek Glowny (Main Square)",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -1220,7 +1262,11 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it as Poland's oldest palm tree, a stem 172 centimetres round with no branching crown like the oaks nearby. It stands inside the Botanical Garden's winter greenhouse."
+      "how_to_recognise": "You can recognise it as Poland's oldest palm tree, a stem 172 centimetres round with no branching crown like the oaks nearby. It stands inside the Botanical Garden's winter greenhouse.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOS), pomnik przyrody, no. PL.ZIPOP.1393.PP.1261011.2845",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2845"
+      }
     },
     {
       "id": "kra_034",
@@ -1239,9 +1285,11 @@
       "verified_sources": [
         "GDOS pomniki przyrody register (gid 145179, kodinspire PL.ZIPOP.1393.PP.1261011.2844), designated 2014-12-03",
         "pl.wikipedia.org Pomniki przyrody w Krakowie wykaz table, entry 265: ul. Kopernika - Ogrod Botaniczny, girth (stem) 108 cm, designated 2014, CRFOP id .2844 (matches GDOS record), with its own Commons photo",
-        "krakow.pl official city tourism page (fetched directly): 'najstarsza kolekcja sagowcow z okazem sagowca zwinietego Cycas circinalis notowanym juz w 1864 r. Wizerunek tego kwitnacego co roku okazu stanowi logo ogrodu' (the oldest cycad collection [in Poland], with a specimen of Cycas circinalis already recorded in 1864; the image of this specimen, which flowers every year, is the garden's own logo)."
+        "krakow.pl official city tourism page (fetched directly): 'najstarsza kolekcja sagowcow z okazem sagowca zwinietego Cycas circinalis notowanym juz w 1864 r. Wizerunek tego kwitnacego co roku okazu stanowi logo ogrodu' (the oldest cycad collection [in Poland], with a specimen of Cycas circinalis already recorded in 1864; the image of this specimen, which flowers every year, is the garden's own logo).",
+        "https://ogrod.uj.edu.pl/zwiedzanie/podstawowe-info",
+        "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2844"
       ],
-      "access": "Paid entry, Jagiellonian University Botanical Garden, inside the palm house (open seasonally, check hours)",
+      "access": "Paid entry to the Jagiellonian University Botanical Garden (22 zloty full, 12 reduced, children under 4 free). The cycad stands in a greenhouse, open Tuesday to Sunday: Jan-Mar and Nov-Dec 10:00-14:45, April-August 10:00-18:30, September 10:00-17:45, October 10:00-16:45; greenhouses are closed on Mondays.",
       "transport": "About 18-20 minute walk from Rynek Glowny (Main Square)",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -1253,7 +1301,11 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it as the plant on the Botanical Garden's own logo, a squat caudex 108 centimetres round rather than a true trunk. It stands in the palm house, recorded on this site since 1864."
+      "how_to_recognise": "You can recognise it as the plant on the Botanical Garden's own logo, a squat caudex 108 centimetres round rather than a true trunk. It stands in the palm house, recorded on this site since 1864.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOS), pomnik przyrody, no. PL.ZIPOP.1393.PP.1261011.2844",
+        "url": "http://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.1261011.2844"
+      }
     },
     {
       "id": "kra_035",
@@ -1286,7 +1338,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the needles turn foxy reddish brown",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "kra_036",

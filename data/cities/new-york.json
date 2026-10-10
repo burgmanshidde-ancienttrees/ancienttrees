@@ -248,7 +248,8 @@
       "story": "This linden is a leftover from a 19th century nursery business rather than a park planting, standing 75 feet north of a restroom next to Kissena Park's tennis courts on land that was once part of Samuel Bowne Parsons's commercial tree nursery. Parsons, whose family also planted Manhattan's Hangman's Elm-era Washington Square trees and much of Central Park's original stock, ran one of the era's most important import operations from this site starting in the 1870s, bringing Japanese maples to America for the first time and propagating rhododendrons at commercial scale. After Parsons died in 1906, the city absorbed part of his former grove into what became Kissena Park, and this Manchurian linden, a species native to forests spanning China, Korea and Russia's far east, is one of more than 100 imported tree varieties that trace back to the original nursery grounds still growing in the park today. It carries Great Tree status as a living fragment of Flushing's forgotten reputation as America's premier 19th century horticultural center, a history most visitors to the tennis courts beside it have no reason to suspect.",
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees/50",
-        "https://itsinqueens.com/intheloop-queens-is-home-to-18-new-members-of-the-great-trees-of-new-york-city-list/"
+        "https://itsinqueens.com/intheloop-queens-is-home-to-18-new-members-of-the-great-trees-of-new-york-city-list/",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/50"
       ],
       "access": "Free, public park",
       "transport": "Kissena Park, Queens Q17/Q25/Q34 bus, 5 min walk",
@@ -261,7 +262,9 @@
       "curation_status": "flagged",
       "notes": "No source gives a specific planting date for this individual tree; age is estimated from the nursery's known 1870s-1900s active period. Pin corrected 2026-07-29 (about 387m, from a park-wide estimate near the tennis courts): NYC Parks' own Great Trees page links this entry to NYC Tree Map ID 5342202, whose record in the Forestry Tree Points open dataset gives an exact point; an independent iNaturalist observation identified as Tilia mandshurica sits about 6m from that same point, two independent sources converging. Worth flagging: the city's own Forestry Tree Points dataset mislabels this record's species as \"Tilia cordata\" (littleleaf linden), which conflicts with both NYC Parks' own Great Trees text and the iNaturalist identification, both of which agree on Manchurian Linden; treated as a City GIS species-code error rather than evidence this is the wrong tree, since the location link and DBH context still line up.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by standing alone 75 feet north of the restroom beside the tennis courts, a leftover from a 19th century tree nursery. It stands in Kissena Park, Flushing, Queens."
+      "how_to_recognise": "You can recognise it by standing alone 75 feet north of the restroom beside the tennis courts, a leftover from a 19th century tree nursery. It stands in Kissena Park, Flushing, Queens.",
+      "girth_cm": 503,
+      "height_m": 24.0
     },
     {
       "id": "nyc_007",
@@ -281,7 +284,8 @@
         "https://www.untappedcities.com/this-is-the-oldest-and-tallest-tree-in-nyc-the-queens-giant-in-alley-pond-park/",
         "https://www.nycgovparks.org/facilities/great-trees/62",
         "https://data.cityofnewyork.us/resource/hn5i-inap.json (Forestry Tree Points, objectid 5600819)",
-        "https://www.inaturalist.org/observations/363934201"
+        "https://www.inaturalist.org/observations/363934201",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/62"
       ],
       "access": "Free, public park",
       "transport": "Staten Island Railway to Clove Road area, or S61/S62 bus, 10 min walk",
@@ -300,7 +304,9 @@
         ],
         "label": "October, when its canopy turns golden yellow"
       },
-      "how_to_recognise": "You can recognise it by its trunk, 21.4 feet around, dwarfing everything nearby along the paved path. It stands at the north end of Clove Lakes Park, Staten Island."
+      "how_to_recognise": "You can recognise it by its trunk, 21.4 feet around, dwarfing everything nearby along the paved path. It stands at the north end of Clove Lakes Park, Staten Island.",
+      "girth_cm": 742,
+      "height_m": 33.7
     },
     {
       "id": "nyc_008",
@@ -318,7 +324,8 @@
       "story": "This yew is one of 144 evergreens planted in 1920 around a glacial boulder called Sugar Loaf Rock, each tree standing as a living memorial to a Staten Island resident killed in the First World War. A plaque at the boulder names every soldier the grove commemorates, making Hero Park one of the more literal war memorials in New York City: not statues or a wall of names alone, but a planted forest where each individual tree corresponds to an individual death, a practice with a documented precedent in similar WWI memorial tree plantings elsewhere in the country around the same period. European yews are exceptionally long lived and slow growing, a species choice that all but guaranteed this planting would still be standing a century later, evergreen through every winter since 1920 the way the soldiers it honors never got to see. At just over a century old it is younger than most other trees on this list, but its age is not really the point; the grove was planted to hold a specific memory in place, and a century on, it still does.",
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees/121",
-        "https://www.nycgovparks.org/parks/hero-park/history"
+        "https://www.nycgovparks.org/parks/hero-park/history",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/121"
       ],
       "access": "Free, public park",
       "transport": "S61/S62 bus to Victory Boulevard, at the park",
@@ -340,7 +347,8 @@
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it as one of 144 evergreens planted around the glacial boulder called Sugar Loaf Rock, each marking a fallen soldier. It stands in Hero Park, Staten Island."
+      "how_to_recognise": "You can recognise it as one of 144 evergreens planted around the glacial boulder called Sugar Loaf Rock, each marking a fallen soldier. It stands in Hero Park, Staten Island.",
+      "girth_cm": 128
     },
     {
       "id": "nyc_009",
@@ -365,9 +373,11 @@
       "story": "This oak grows in the middle of the Spicebush Trail inside the Thain Family Forest, a 50 acre stretch of the New York Botanical Garden that has never been logged and represents the largest surviving remnant of the woodland that once covered most of New York City before European colonization. The Botanical Garden was deliberately sited here in 1895 specifically because this forest already existed, a decision that preserved a functioning fragment of pre-colonial Lenapehoking rather than planting a garden from scratch. At a trunk diameter over five feet, this red oak, designated a Great Tree in 2024, ranks among the largest and most accessible specimens in a forest that also holds tulip trees, sweetgums, hemlocks and beeches estimated at up to 300 years old in less visited sections. Red oaks support more moth and butterfly species as larval hosts than almost any other tree genus in the northeastern United States, more than 400 by some counts, making this single oak a small ecosystem of its own even before accounting for its age or size.",
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees/79",
-        "https://en.wikipedia.org/wiki/Thain_Family_Forest"
+        "https://en.wikipedia.org/wiki/Thain_Family_Forest",
+        "https://www.nybg.org/visit/admission/",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/79"
       ],
-      "access": "Paid entry to the New York Botanical Garden",
+      "access": "Paid entry to the New York Botanical Garden: All-Garden Pass adult $35 weekdays, $39 weekends; a Grounds Access Pass at $15 exists for NYC residents with proof of residency. Open 10 a.m. to 6 p.m., Tuesday to Sunday and Monday federal holidays.",
       "transport": "Metro-North Harlem Line to Botanical Garden station, at the Mosholu entrance",
       "photo": {
         "url": null,
@@ -379,7 +389,8 @@
       "notes": "Coordinates are for the Botanical Garden's main entrance; the tree's specific position on the Spicebush Trail within the 50-acre forest is not separately surveyed.",
       "location_precision": "approximate",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the trunk, over five feet through, the largest specimen you will pass in the forest. It stands in the middle of the Spicebush Trail in the Thain Family Forest."
+      "how_to_recognise": "You can recognise it by the trunk, over five feet through, the largest specimen you will pass in the forest. It stands in the middle of the Spicebush Trail in the Thain Family Forest.",
+      "girth_cm": 480
     },
     {
       "id": "nyc_010",
@@ -403,7 +414,8 @@
       "story": "This tree grows on the east lawn of the Van Cortlandt House, built in 1748 and the oldest building still standing in the Bronx, and local tradition holds that a member of the Van Cortlandt family planted it themselves, though no source confirms exactly when. Red horse chestnuts are themselves a hybrid, a cross between the European horse chestnut and a red-flowered American buckeye species, bred for ornamental gardens rather than found in the wild, which means whoever planted this one chose it deliberately for its spring flowers rather than letting it seed in naturally. At nearly 88 feet tall with a trunk over three feet across, it has grown large enough to be one of three horse chestnuts at the house included in the NYC Parks Great Trees registry, all three now part of a Great Tree Clone Program in which cuttings are propagated and planted at new sites around the city, extending the genetic line of trees like this one even as the originals eventually age out. Van Cortlandt House operated as a Revolutionary War-era headquarters at times for both American and British forces, meaning this tree, whatever its precise age, grows on ground that has seen the city's founding conflict up close.",
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees?id=22",
-        "https://en.wikipedia.org/wiki/Van_Cortlandt_House"
+        "https://en.wikipedia.org/wiki/Van_Cortlandt_House",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/22"
       ],
       "access": "Free to view from the park; paid entry to enter the Van Cortlandt House Museum itself",
       "transport": "Van Cortlandt Park-242nd Street (Metro 1), 10 min walk",
@@ -416,7 +428,9 @@
       "curation_status": "flagged",
       "notes": "No source gives a specific planting date; NYC Parks itself only states the tree is 'believed' to have been planted by a Van Cortlandt family member, making it 'over a century old.' Age range left wide to reflect that genuine uncertainty. Pin corrected 2026-07-29, about 72m: NYC Parks' own Great Trees page for this entry links to NYC Tree Map ID 5081918, a 42-inch DBH Aesculus x carnea (matching this story's 'trunk over three feet across') at this point. Some residual ambiguity remains honestly noted: NYC Parks' own reporting mentions three horse chestnuts on the house's east lawn, so this is specifically the one the registry tagged for this listing, not necessarily the only one a visitor might notice first.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its size, nearly 88 feet tall with a trunk over 3 feet across, standing on the east lawn. It stands beside the Van Cortlandt House Museum, the Bronx."
+      "how_to_recognise": "You can recognise it by its size, nearly 88 feet tall with a trunk over 3 feet across, standing on the east lawn. It stands beside the Van Cortlandt House Museum, the Bronx.",
+      "girth_cm": 319,
+      "height_m": 26.7
     },
     {
       "id": "nyc_011",
@@ -468,18 +482,19 @@
       "age_max": 165,
       "location": {
         "address": "Rock outcrop just east of the Mall (Literary Walk), Central Park, New York, NY 10022",
-        "latitude": 40.772764,
-        "longitude": -73.971437,
+        "latitude": 40.7712,
+        "longitude": -73.9713,
         "neighbourhood": "Central Park (Mall/Literary Walk area), Manhattan"
       },
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees?id=38",
         "https://www.nycgovparks.org/facilities/great-trees?id=39",
-        "https://www.untappedcities.com/guide-central-park-great-trees/"
+        "https://www.untappedcities.com/guide-central-park-great-trees/",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/38"
       ],
       "access": "Free, public park",
       "transport": "72nd Street (Metro B/C), 8 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Two American elms grow straight out of exposed bedrock east of Central Park's Mall, their roots spread flat across the rock like something poured rather than planted. NYC Parks designates them as two separate Great Trees, ids 38 and 39, but they stand close enough on the same outcrop that almost nobody visits one without the other.\n\nThe rock underneath predates both trees by a margin that makes their own age beside the point. This is Manhattan schist, some of it dated by geologists at over a billion years old, exposed here by the same nineteenth century landscaping that shaped the rest of the park. The trees carry no planting record of their own, each roughly 78 feet tall, trunks gnarled from decades of finding purchase where there is barely any soil to root in.\n\nWhat they prove is less about age than persistence. An elm in open parkland can be felled by disease or storm in a season. One growing out of solid rock has already solved a harder problem, and its awkward, rock gripping shape is the visible record of that fight.\n\nThey sit a few hundred metres from the Mall's elm allee and about 600 metres from the Ramble, an easy stop on the same walk through the park's oldest plantings.",
       "notes": "Two American elms on the same bedrock outcrop, registered separately by NYC Parks (ids 38 and 39) but folded into one entry per the register-twin rule since a visitor sees them as one destination. No planting date for either. Coordinates are the Mall's known reference point rather than a surveyed point for the outcrop itself.",
@@ -489,7 +504,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them by the roots, spread flat across bare rock where there is barely any soil, under two gnarled trunks about 78 feet tall. They stand on the outcrop just east of the Mall."
+      "how_to_recognise": "You can recognise them by the roots, spread flat across bare rock where there is barely any soil, under two gnarled trunks about 78 feet tall. They stand on the outcrop just east of the Mall.",
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/38",
+        "date": "2026-10-09",
+        "moved_m": 174
+      }
     },
     {
       "id": "nyc_013",
@@ -500,18 +521,19 @@
       "age_max": 106,
       "location": {
         "address": "The Mall (Literary Walk), Central Park, New York, NY 10022",
-        "latitude": 40.772764,
-        "longitude": -73.971437,
+        "latitude": 40.7715,
+        "longitude": -73.9719,
         "neighbourhood": "Central Park (Mall/Literary Walk), Manhattan"
       },
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees?id=37",
         "https://www.centralparknyc.org/articles/american-elms-central-park-mall",
-        "https://www.untappedcities.com/guide-central-park-great-trees/"
+        "https://www.untappedcities.com/guide-central-park-great-trees/",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/37"
       ],
       "access": "Free, public park",
       "transport": "72nd Street (Metro B/C), 8 min walk",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Central Park's most photographed avenue of trees is not the original one. The Mall, also called Literary Walk, has been replanted with American elms twice before the row standing today: the first two plantings failed when foot traffic compacted the soil around the roots, and the elms there now went in during the 1920s, the third attempt, protected from the start by low fencing along the path.\n\nThat makes these trees roughly a century old, not the century and a half some press coverage implies by counting from the park's 1858 design. NYC Parks lists the grove as an official Great Tree, and it is often called the largest grove of American elms in the world, a claim the park's own conservancy states more carefully: one of the largest remaining plantations of a species that Dutch elm disease has been cutting down, city-wide, since the 1930s. Central Park still holds about 1,600 elms, several hundred on a rotating fungicide programme, and still loses 15 to 30 a year to the same disease that ended the first two plantings here by other means.\n\nWalk the Mall in full leaf and it reads as a cathedral aisle, two unbroken rows meeting overhead. Every one of them is a replacement, and every one of them is still, by the numbers, worth the trip.",
       "notes": "NYC Parks Great Trees register (id=37), Central Park Conservancy's own article, and Untapped Cities' Great Trees guide. Age corrected from press coverage that implies an 1858 planting: the Conservancy states this is the THIRD planting on the site, installed in the 1920s after the first two failed from soil compaction. Superlative softened per hard rule 8: some sources call it the largest American elm grove in the world, the Conservancy's own wording (used here) is 'one of the largest remaining plantations'. Coordinates are the Mall's known reference point, an approximate pin for a promenade rather than one trunk.",
@@ -521,7 +543,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the two unbroken rows of elms meeting overhead, low fencing along the path to keep feet off their roots. It stands on the Mall, the avenue also called Literary Walk."
+      "how_to_recognise": "You can recognise it by the two unbroken rows of elms meeting overhead, low fencing along the path to keep feet off their roots. It stands on the Mall, the avenue also called Literary Walk.",
+      "girth_cm": 249,
+      "height_m": 27.5,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/37",
+        "date": "2026-10-09",
+        "moved_m": 146
+      }
     },
     {
       "id": "nyc_014",
@@ -551,7 +581,9 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its limbs arching downward and tangling into a low dark dome you duck into rather than stand under. It stands in Green-Wood Cemetery, at Garden Path and Pink Avenue."
+      "how_to_recognise": "You can recognise it by its limbs arching downward and tangling into a low dark dome you duck into rather than stand under. It stands in Green-Wood Cemetery, at Garden Path and Pink Avenue.",
+      "girth_cm": 230,
+      "height_m": 6.0
     },
     {
       "id": "nyc_015",
@@ -562,8 +594,8 @@
       "age_max": 116,
       "location": {
         "address": "Brooklyn Botanic Garden, across from the Lily Pool, 990 Washington Avenue, Brooklyn, NY 11225",
-        "latitude": 40.6694,
-        "longitude": -73.9629,
+        "latitude": 40.6669,
+        "longitude": -73.9625,
         "neighbourhood": "Prospect Heights, Brooklyn"
       },
       "story": "The largest Kansas hawthorn in the United States grows in Brooklyn, and the species normally gives up at around twenty feet. This one reached 35, on a 20 inch trunk under a 28 foot crown, and in 1985 the American Forestry Association named it a national champion. New York State has carried it on its Big Tree Register since 2009 as one of only two champion trees in the five boroughs. None of that was the plan. Rochester's parks department sent it down as a gift in 1912, and it was planted across from the Lily Pool at the Brooklyn Botanic Garden, which had opened to the public only a year or so before. It has stood there through everything the garden has become since.\n\nCrataegus coccinioides is a hawthorn of the American Midwest, a thorny, unfashionable small tree that most visitors walk past for eleven months of the year. October is the exception, when the leaves go scarlet and orange and the branches hang with dark crimson haws.\n\nEntry to the Garden is paid. The pin here sits at the Washington Avenue gate rather than at the tree, because no survey has recorded its coordinates: walk to the Lily Pool by the conservatory and look for the small tree carrying an unreasonable amount of fruit.",
@@ -576,9 +608,11 @@
       },
       "verified_sources": [
         "https://web.archive.org/web/20220717115552/https://www.nycgovparks.org/facilities/great-trees?id=7",
-        "https://greatesttreesofnyc.tumblr.com/post/123825669615/kansas-hawthorn-lily-pond-brooklyn-botanic-garden"
+        "https://greatesttreesofnyc.tumblr.com/post/123825669615/kansas-hawthorn-lily-pond-brooklyn-botanic-garden",
+        "https://www.bbg.org/visit/hours",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/7"
       ],
-      "access": "Paid entry to Brooklyn Botanic Garden",
+      "access": "Paid entry to Brooklyn Botanic Garden: adult $22 at the box office (autumn 2026). Open Tuesday to Sunday, 10 a.m. to 6 p.m. in October and to 3:30 p.m. in November; closed Mondays.",
       "transport": "Franklin Ave-Botanic Garden (Metro 2/3/4/5) or Prospect Park (B/Q/S), 5-10 min walk",
       "photo": {
         "url": null,
@@ -587,9 +621,17 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it in October by the dark crimson haws and scarlet leaves on a small thorny tree, 35 feet up from a trunk 20 inches round. It stands across from the Lily Pool by the conservatory."
+      "how_to_recognise": "You can recognise it in October by the dark crimson haws and scarlet leaves on a small thorny tree, 35 feet up from a trunk 20 inches round. It stands across from the Lily Pool by the conservatory.",
+      "girth_cm": 160,
+      "height_m": 10.7,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/7",
+        "date": "2026-10-09",
+        "moved_m": 280
+      }
     },
     {
       "id": "nyc_016",
@@ -615,9 +657,10 @@
       },
       "verified_sources": [
         "https://web.archive.org/web/2022/https://www.nycgovparks.org/parks/brooklyn-botanic-garden/facilities/great-trees",
-        "https://www.bbg.org/article/big_city_big_trees_caucasian_wingnut"
+        "https://www.bbg.org/article/big_city_big_trees_caucasian_wingnut",
+        "https://www.bbg.org/visit/hours"
       ],
-      "access": "Paid entry to Brooklyn Botanic Garden",
+      "access": "Paid entry to Brooklyn Botanic Garden: adult $22 at the box office (autumn 2026). Open Tuesday to Sunday, 10 a.m. to 6 p.m. in October and to 3:30 p.m. in November; closed Mondays.",
       "transport": "Franklin Ave-Botanic Garden (Metro 2/3/4/5) or Prospect Park (B/Q/S), 5-10 min walk",
       "photo": {
         "url": null,
@@ -628,7 +671,8 @@
       "curation_status": "ai_generated",
       "location_precision": "approximate",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the props and cables holding its lower limbs up, and in midsummer by chains of winged nutlets a foot and a half long. It stands on the Flatbush Avenue side, north of the Rock Garden."
+      "how_to_recognise": "You can recognise it by the props and cables holding its lower limbs up, and in midsummer by chains of winged nutlets a foot and a half long. It stands on the Flatbush Avenue side, north of the Rock Garden.",
+      "height_m": 18.3
     },
     {
       "id": "nyc_017",
@@ -682,15 +726,16 @@
       "age_max": 226,
       "location": {
         "address": "Central Park, at the East 97th Street entrance, roughly 500 feet west of Fifth Avenue, New York, NY 10029",
-        "latitude": 40.7886,
-        "longitude": -73.9598,
+        "latitude": 40.7894,
+        "longitude": -73.9568,
         "neighbourhood": "Central Park, Manhattan"
       },
       "story": "Most of New York's elms are gone. Dutch elm disease arrived in the 1930s and by the postwar decades had killed the overwhelming majority of the American elms that once shaded nearly every street in the city, a loss so total that Central Park's surviving giants now register as minor miracles rather than ordinary trees. This one stands at the park's East 97th Street entrance, its northernmost officially designated Great Tree, an eighty foot canopy spread wide enough to be one of the broadest in the entire register, and a trunk the tree guides describe, not unkindly, as looking like an old witch, its serpentine branches twisting rather than reaching straight up. Nobody recorded when it was planted; city records only say the 1800s, a stretch of a century or more that leaves its exact age an open question. What is documented is what it survived: the fungus that erased its species from most of the city, and, per the park's own account, the storms that have since taken out other Central Park trees around it. New York designated it a Great Tree in 1985, one of the original class, decades before the citywide relaunch that added scores more in 2024. Walk in from Fifth Avenue at 97th Street and it is the first thing waiting.",
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees?id=46",
         "https://untappedcities.com/2020/09/10/guide-central-park-great-trees/7/",
-        "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park"
+        "https://www.westsiderag.com/2024/10/09/parks-releases-new-map-of-citys-great-trees-eight-of-them-are-in-central-park",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/46"
       ],
       "access": "Free, public park, right at a park entrance path",
       "transport": "4/5/6 train to 96th Street/Lexington Avenue, about 10-12 minute walk east and north to the East 97th Street entrance",
@@ -702,8 +747,16 @@
       },
       "curation_status": "flagged",
       "notes": "NYC Parks 'Great Trees of NYC' register (id=46, designated 1985): 94.3 ft tall, 68-inch trunk diameter, 80 ft canopy. Untapped Cities' Great Trees guide independently corroborates the same measurements and calls it the northernmost Great Tree in the park. Westside Rag's 2024-10-09 coverage of the citywide relaunch independently lists the same tree at 94 ft near the East 97th Street entrance. AGE: no source gives a planting year, both that address it say only 'dates to the 1800s' (127-226 years as of 2026), flagged for imprecision rather than disagreement. COORDINATES: nycgovparks.org returns HTTP 405 to direct fetch and web.archive.org was unreachable this pass; coordinates are a good-faith estimate from a geocoded reference point (2 East 90th Street / Engineers' Gate, cross-checked against Nominatim's own East 96th Street result, landing within about 60m), marked approximate rather than tree-level confirmed. DISTANCE: about 170m from nyc_019, 750m from nyc_020, forming a genuine second walk roughly 1.1-1.15km from the existing Ramble/Mall/CPW cluster.",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the canopy, eighty feet and one of the broadest on the city's register, and by branches that twist rather than reach straight up. It stands right at the East 97th Street entrance."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the canopy, eighty feet and one of the broadest on the city's register, and by branches that twist rather than reach straight up. It stands right at the East 97th Street entrance.",
+      "girth_cm": 543,
+      "height_m": 28.7,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/46",
+        "date": "2026-10-09",
+        "moved_m": 268
+      }
     },
     {
       "id": "nyc_019",
@@ -714,15 +767,16 @@
       "age_max": 164,
       "location": {
         "address": "Bridle Path on the east side of the Jacqueline Kennedy Onassis Reservoir, near East 96th Street, Central Park, New York, NY 10029",
-        "latitude": 40.7879,
-        "longitude": -73.958,
+        "latitude": 40.7892,
+        "longitude": -73.9579,
         "neighbourhood": "Central Park, Manhattan"
       },
       "story": "A tree with more than one trunk is hard to age by the usual rule of thumb, and that uncertainty is most of this one's story. The London plane on the Bridle Path near East 96th Street rises just over ninety six feet from a base that splits into multiple trunks fused so thoroughly that its combined diameter tops five feet, bark mottled in patches of green, tan and grey that one NYC Parks writer compared to an impressionist canvas. The claim attached to it, that it was planted around 1862 when the Reservoir beside it was first excavated, comes from one nature writer's educated guess rather than any planting record, which makes 'possibly the oldest tree in Central Park' a title worth repeating with the word possibly intact. A rival candidate exists across the park: a black tupelo in the Ramble that one book on the city's great trees dates to 1858, four years earlier, an argument nobody has settled because neither tree came with a receipt. What is not in dispute is the setting. The Reservoir's running path carries thousands of people past this trunk every week, most looking at the water and the skyline reflected in it rather than down at the multi-trunked plane that has, by the most generous reading, watched the water since before the Civil War.",
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees?id=43",
         "https://untappedcities.com/2020/09/10/guide-central-park-great-trees/7/",
-        "https://ephemeralnewyork.wordpress.com/2026/05/18/is-this-towering-london-plane-the-oldest-tree-in-central-park/"
+        "https://ephemeralnewyork.wordpress.com/2026/05/18/is-this-towering-london-plane-the-oldest-tree-in-central-park/",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/43"
       ],
       "access": "Free, public park, beside the Reservoir's public running/bridle path",
       "transport": "6 train to 96th Street, about 10 minute walk west into the park to the Reservoir's Bridle Path",
@@ -734,8 +788,16 @@
       },
       "curation_status": "flagged",
       "notes": "NYC Parks 'Great Trees of NYC' register (id=43): multi-trunked London plane, Bridle Path near the East 96th Street entrance, northeast corner of the Reservoir, 95.94 ft tall, trunk diameter over 5 ft owing to multiple trunks. Untapped Cities independently corroborates the same tree and measurements, citing nature writer Dennis Burton's claim it was 'possibly planted when the Reservoir was dug' in 1862. A 2026-05-18 Ephemeral New York piece independently repeats the same 1862 dating and measurements, while noting a competing claim that nyc_002 (Black Tupelo of the Ramble) may date to 1858 instead, a dispute between two OTHER trees, not evidence against this one. AGE: 'possibly planted' 1862 is explicitly one writer's guess, not a documented planting record, hence 'not documented' in the chip and flagged status. COORDINATES: same nycgovparks.org access problem as nyc_018; estimate built from the Reservoir's published Wikipedia centroid projected to its northeast corner per the register's own 'near East 96th Street, east side' description, cross-checked against a Nominatim anchor landing within about 60m. Marked approximate. DISTANCE: about 170m from nyc_018, 670m from nyc_020, part of the same second walk.",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the base, several trunks fused into one over five feet through, and by bark mottled green, tan and grey. It stands on the Bridle Path by the Reservoir near East 96th Street."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the base, several trunks fused into one over five feet through, and by bark mottled green, tan and grey. It stands on the Bridle Path by the Reservoir near East 96th Street.",
+      "girth_cm": 519,
+      "height_m": 29.2,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/43",
+        "date": "2026-10-09",
+        "moved_m": 145
+      }
     },
     {
       "id": "nyc_020",
@@ -814,7 +876,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "notes": "- NYC Landmarks Preservation Commission designated it an individual landmark 12 May 1970 (LPC report 0957); one of only two trees ever given NYC landmark status, the other (Flushing Weeping Beech) is gone, so this is the only living one.\n- Planted c.1885 by William Lemken, grown from a seedling brought from North Carolina; a laurel magnolia flourishing this far north is rare. Age is a documented planting date for THIS specimen (hdc.org says mid-1880s), so 'about 140 years'.\n- HDC: straight trunk over seventy feet tall, sheltered by a wing-wall to the north.\n- Threatened by demolition/parking lot in 1968; Hattie Carthan formed the Magnolia Tree Committee, schoolchildren raised money; landmarked 1970; she then founded the Magnolia Tree Earth Center in the adjacent brownstone.\n- Alive: lifecheck RECENT, iNaturalist obs 2026-08-10 (390024056) at the Wikidata coordinate. Girth not found in sources fetched.\n- Pin is the Wikidata/Wikipedia coordinate for the address-level landmark lot, not independently placed on a crown: approximate.\n- The LPC PDF downloaded but is a scan, not text-read this pass; its designation date was confirmed via the BBG/HDC/Wikipedia pages.\n- Access: view from the street only is my judgement from the descriptions, not a stated source.\n- Untapped New York (fetched): the tree 'has been partially obscured by scaffolding for many years' (building side); it gives the address as 678 Lafayette while LPC/HDC/Wikipedia say 679, and the Magnolia Tree Earth Center at 677: address discrepancy of one number, pin stays approximate. Visibility may be poor; the page should say so."
+      "notes": "- NYC Landmarks Preservation Commission designated it an individual landmark 12 May 1970 (LPC report 0957); one of only two trees ever given NYC landmark status, the other (Flushing Weeping Beech) is gone, so this is the only living one.\n- Planted c.1885 by William Lemken, grown from a seedling brought from North Carolina; a laurel magnolia flourishing this far north is rare. Age is a documented planting date for THIS specimen (hdc.org says mid-1880s), so 'about 140 years'.\n- HDC: straight trunk over seventy feet tall, sheltered by a wing-wall to the north.\n- Threatened by demolition/parking lot in 1968; Hattie Carthan formed the Magnolia Tree Committee, schoolchildren raised money; landmarked 1970; she then founded the Magnolia Tree Earth Center in the adjacent brownstone.\n- Alive: lifecheck RECENT, iNaturalist obs 2026-08-10 (390024056) at the Wikidata coordinate. Girth not found in sources fetched.\n- Pin is the Wikidata/Wikipedia coordinate for the address-level landmark lot, not independently placed on a crown: approximate.\n- The LPC PDF downloaded but is a scan, not text-read this pass; its designation date was confirmed via the BBG/HDC/Wikipedia pages.\n- Access: view from the street only is my judgement from the descriptions, not a stated source.\n- Untapped New York (fetched): the tree 'has been partially obscured by scaffolding for many years' (building side); it gives the address as 678 Lafayette while LPC/HDC/Wikipedia say 679, and the Magnolia Tree Earth Center at 677: address discrepancy of one number, pin stays approximate. Visibility may be poor; the page should say so.",
+      "official_register": {
+        "name": "NYC Landmarks Preservation Commission designation report LP-0957 (landmarked 12 May 1977)",
+        "url": "http://s-media.nyc.gov/agencies/lpc/lp/0957.pdf"
+      }
     },
     {
       "id": "nyc_022",
@@ -896,7 +962,7 @@
       "location": {
         "address": "87 MacDonough Street, Bedford-Stuyvesant, Brooklyn",
         "latitude": 40.6813,
-        "longitude": -73.9428,
+        "longitude": -73.9429,
         "neighbourhood": "Bedford-Stuyvesant"
       },
       "story": "For almost forty years New York's official list of its Great Trees did not change. In October 2024 NYC Parks finally reopened it, for the first time since 1985, adding 61 trees chosen from more than 270 nominations sent in by the public. This ginkgo in front of a mansion on MacDonough Street was one of them, and the house is the reason people put its name forward.\n\nThe mansion belongs to the United Order of Tents, a Black women's fraternal order that has served this community for more than 150 years and is said to have helped people escaping slavery. Coverage of the new list described the ginkgo as holding a piece of that history, which is about the best job description a front-yard tree can have.\n\nWhat we cannot tell you is how old it is. Ginkgo is one of the longest-lived trees on earth, but that says nothing about this particular one, and no source we have found gives a planting year, a girth or a height. If you have any of the three, tell us: a tree on the city's Great Trees list deserves a number.\n\nThe lawn is the Order's, so look from the sidewalk. The Hattie Carthan magnolia on Lafayette Avenue is about a kilometre north-west, which makes the two an easy Bed-Stuy pairing, best in November when the ginkgo turns gold.",
@@ -904,7 +970,8 @@
       "verified_sources": [
         "https://www.nycgovparks.org/facilities/great-trees?id=86",
         "https://www.brooklynpaper.com/parks-adds-17-bk-trees-great-trees-list/",
-        "https://www.bkreader.com/non-profit-community/parks-dept-updates-citys-great-trees-list-30-in-brooklyn-9627319"
+        "https://www.bkreader.com/non-profit-community/parks-dept-updates-citys-great-trees-list-30-in-brooklyn-9627319",
+        "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/86"
       ],
       "access": "Free; stands in front of the United Order of Tents mansion on a large lot (almost 100 ft of frontage); viewed from the public sidewalk on MacDonough Street. The grounds themselves are the Order's.",
       "transport": "Nearest subway: A/C at Utica Ave about 8 min walk, or G at Bedford-Nostrand Avs; about 1 km south-east of the Hattie Carthan Magnolia (nyc_021 area, Lafayette Ave).",
@@ -922,8 +989,14 @@
         "label": "November, when the ginkgo turns gold"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "notes": "- Added to NYC Parks' Great Trees of New York City list on 8 Oct 2024 (first update since 1985; 61 new trees, chosen from 270+ public nominations). The Parks page itself (great-trees?id=86) returns 405 to fetchers, so the designation was read via Brooklyn Paper and BK Reader, which both name this ginkgo; the Parks page title 'Great Trees : Ginkgo' appeared in search results.\n- Why it matters per the coverage: it stands beside the mansion of the United Order of Tents, a Black women's fraternal order serving the community for over 150 years (said to have aided people escaping slavery); the tree is described as symbolically holding Black history. History claim is from the news coverage, not checked against the Order's own site.\n- No age, girth or height found in any source fetched. Ginkgo is long-lived as a species but nothing says how old THIS tree is: leave age empty and let the page ask.\n- Alive: lifecheck RECENT, iNaturalist 2026-04-04 (349897888) at the address node.\n- Pin is the OSM address node for no. 87, not a crown: approximate. Wikipedia 87_MacDonough_Street confirms the lot and its lawn but mentions no tree.\n- Joins a Bed-Stuy walk with nyc_021's Magnolia, about 1 km away. Lead, not delivered: Red Oak in Saratoga Park (Great Trees 2024, per Brooklyn Paper, 'likely stood since the area served as circus ground'; park centre 40.6850,-73.9190, about 2.3 km east); no tree-level pin."
+      "location_precision": "confirmed",
+      "notes": "- Added to NYC Parks' Great Trees of New York City list on 8 Oct 2024 (first update since 1985; 61 new trees, chosen from 270+ public nominations). The Parks page itself (great-trees?id=86) returns 405 to fetchers, so the designation was read via Brooklyn Paper and BK Reader, which both name this ginkgo; the Parks page title 'Great Trees : Ginkgo' appeared in search results.\n- Why it matters per the coverage: it stands beside the mansion of the United Order of Tents, a Black women's fraternal order serving the community for over 150 years (said to have aided people escaping slavery); the tree is described as symbolically holding Black history. History claim is from the news coverage, not checked against the Order's own site.\n- No age, girth or height found in any source fetched. Ginkgo is long-lived as a species but nothing says how old THIS tree is: leave age empty and let the page ask.\n- Alive: lifecheck RECENT, iNaturalist 2026-04-04 (349897888) at the address node.\n- Pin is the OSM address node for no. 87, not a crown: approximate. Wikipedia 87_MacDonough_Street confirms the lot and its lawn but mentions no tree.\n- Joins a Bed-Stuy walk with nyc_021's Magnolia, about 1 km away. Lead, not delivered: Red Oak in Saratoga Park (Great Trees 2024, per Brooklyn Paper, 'likely stood since the area served as circus ground'; park centre 40.6850,-73.9190, about 2.3 km east); no tree-level pin.",
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://web.archive.org/web/2024/https://www.nycgovparks.org/facilities/great-trees/86",
+        "date": "2026-10-09",
+        "moved_m": 8
+      }
     },
     {
       "id": "nyc_025",

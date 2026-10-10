@@ -162,9 +162,10 @@
       "story": "This cork oak has been measured twice in three years, and it grew in the interval: 5.00 meters around in October 2021, 5.30 meters by January 2024, still adding girth at an age Italy's national monumental tree registry puts at 226 years. It grows near the Orangery in Rome's Botanical Garden, one of several cork oaks the university lists among its monumental specimens, alongside Turkish oaks and a pair of Himalayan cedars near the old riding school. Quercus suber is farmed across the western Mediterranean for its bark, stripped every decade or so to make wine corks and flooring without killing the tree, and this specimen's deeply fissured, spongy trunk still shows the scars of past harvests even though nobody has stripped it in living memory. It predates the garden's official 1883 founding as a state institution by nearly a century, rooted here since the grounds still belonged to the Corsini family. Visitors tend to walk straight past it toward the garden's showier Japanese section and its cascading fountains, but few trees anywhere in the city are still visibly getting bigger.",
       "verified_sources": [
         "https://ilregistrodeglialberi.it/9224-quercia-da-sughero-roma-rm-lazio",
-        "https://ortobotanico.web.uniroma1.it/en/monumental-trees"
+        "https://ortobotanico.web.uniroma1.it/en/monumental-trees",
+        "https://ortobotanico.web.uniroma1.it/en/visit-garden"
       ],
-      "access": "Paid entry, Orto Botanico di Roma",
+      "access": "Paid entry to the Orto Botanico di Roma; open every day including Sundays and holidays, 9:00 to 18:30 April to October and 9:00 to 16:30 November to March; dogs not allowed except guide dogs.",
       "transport": "10 min walk from Trastevere (Piazza Trilussa), or tram 8 to Piazza Sonnino",
       "photo": {
         "url": null,
@@ -304,7 +305,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "Between the Acqua Paola fountain and the Garibaldi ossuary, a cedar 5.74 metres round and about 20 metres tall, the oldest living thing on the memorial ground."
+      "how_to_recognise": "Between the Acqua Paola fountain and the Garibaldi ossuary, a cedar 5.74 metres round and about 20 metres tall, the oldest living thing on the memorial ground.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/H501/RM/12",
+        "url": null
+      },
+      "girth_cm": 453,
+      "height_m": 20
     },
     {
       "id": "rom_008",
@@ -388,7 +395,11 @@
       "height_m": 34.0,
       "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (4 m away).",
       "girth_cm": 350,
-      "how_to_recognise": "The leaning one of the pair on Viale Spellman, a twisting wind-shaped canopy 34 metres up on a 3.5-metre trunk, beside the straight cedar."
+      "how_to_recognise": "The leaning one of the pair on Viale Spellman, a twisting wind-shaped canopy 34 metres up on a 3.5-metre trunk, beside the straight cedar.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 13/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_010",
@@ -460,7 +471,11 @@
       "height_m": 25.0,
       "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 500,
-      "how_to_recognise": "Beside the main house of the German Studies institute, a deodar listed for the shape of it rather than its size; the two registers give its trunk as five metres and as 3.3."
+      "how_to_recognise": "Beside the main house of the German Studies institute, a deodar listed for the shape of it rather than its size; the two registers give its trunk as five metres and as 3.3.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 10/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_012",
@@ -495,7 +510,11 @@
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 200,
-      "how_to_recognise": "On Viale Leducq about twenty metres from the ginkgo, two metres round and 18 tall, with narrow willow-like leaves and no cones anywhere on it."
+      "how_to_recognise": "On Viale Leducq about twenty metres from the ginkgo, two metres round and 18 tall, with narrow willow-like leaves and no cones anywhere on it.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 09/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_013",
@@ -530,7 +549,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 565,
-      "how_to_recognise": "The one standing over the children's play area on the square, 5.65 metres round, which is the thickest plane trunk on Rome's register."
+      "how_to_recognise": "The one standing over the children's play area on the square, 5.65 metres round, which is the thickest plane trunk on Rome's register.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 57/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_014",
@@ -663,7 +686,11 @@
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 420,
-      "how_to_recognise": "On Valadier's terrace above Piazza del Popolo, thick rather than tall for its species: 4.2 metres round with 30 metres above it."
+      "how_to_recognise": "On Valadier's terrace above Piazza del Popolo, thick rather than tall for its species: 4.2 metres round with 30 metres above it.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 68/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_017",
@@ -702,7 +729,11 @@
         "status": "missing"
       },
       "girth_cm": 290,
-      "how_to_recognise": "On the pavement of Via Corsini outside the palace wall rather than inside the garden, 2.9 metres round with an 18-metre crown over the street."
+      "how_to_recognise": "On the pavement of Via Corsini outside the palace wall rather than inside the garden, 2.9 metres round with an 18-metre crown over the street.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 67/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_018",
@@ -781,7 +812,11 @@
         "status": "missing"
       },
       "girth_cm": 230,
-      "how_to_recognise": "In the garden inside Piazza Vittorio, 2.3 metres round and evergreen in every month of the year, a few steps from the ruined Trofei di Mario."
+      "how_to_recognise": "In the garden inside Piazza Vittorio, 2.3 metres round and evergreen in every month of the year, a few steps from the ruined Trofei di Mario.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 77/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_020",
@@ -813,7 +848,11 @@
         "status": "missing"
       },
       "girth_cm": 290,
-      "how_to_recognise": "Above the Domus Aurea on Colle Oppio, 2.9 metres round, with needles in threes long enough to make the crown hang rather than bristle."
+      "how_to_recognise": "Above the Domus Aurea on Colle Oppio, 2.9 metres round, with needles in threes long enough to make the crown hang rather than bristle.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 71/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_021",
@@ -907,7 +946,11 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "girth_cm": 280,
-      "how_to_recognise": "The climbable holm oak in the middle of the residential square, 2.8 metres round and 18 tall, and the only tree in Piazza Perin del Vaga on any register."
+      "how_to_recognise": "The climbable holm oak in the middle of the residential square, 2.8 metres round and 18 tall, and the only tree in Piazza Perin del Vaga on any register.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 63/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_024",
@@ -940,7 +983,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 401,
-      "how_to_recognise": "Four metres round and the largest thing growing in the park; a second, slightly stouter hackberry stands about a hundred metres off against the Aurelian wall."
+      "how_to_recognise": "Four metres round and the largest thing growing in the park; a second, slightly stouter hackberry stands about a hundred metres off against the Aurelian wall.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 66/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_025",
@@ -973,7 +1020,11 @@
       "height_m": 32.0,
       "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 553,
-      "how_to_recognise": "On Viale Jonio itself, between traffic lights and a bus lane, 5.53 metres round with 32 metres above it, second only to the San Cosimato plane."
+      "how_to_recognise": "On Viale Jonio itself, between traffic lights and a bus lane, 5.53 metres round with 32 metres above it, second only to the San Cosimato plane.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 17/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_026",
@@ -1007,7 +1058,11 @@
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 297,
-      "how_to_recognise": "In the neighbourhood park, 2.97 metres round, with hanging thirty-centimetre needles in threes. The city's own plant list for this park does not mention a pine at all."
+      "how_to_recognise": "In the neighbourhood park, 2.97 metres round, with hanging thirty-centimetre needles in threes. The city's own plant list for this park does not mention a pine at all.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 70/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_027",
@@ -1041,7 +1096,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 405,
-      "how_to_recognise": "At the junction of Via Conca d'Oro and Via Val d'Ala, 4.05 metres round and 20 tall, the only black poplar on Rome's register a visitor is likely to reach."
+      "how_to_recognise": "At the junction of Via Conca d'Oro and Via Val d'Ala, 4.05 metres round and 20 tall, the only black poplar on Rome's register a visitor is likely to reach.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 62/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_028",
@@ -1075,7 +1134,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 414,
-      "how_to_recognise": "At the corner of Viale delle Mura Latine and Via Latina, hard against the Aurelian wall, 4.14 metres round and a few steps from the Porta Latina."
+      "how_to_recognise": "At the corner of Viale delle Mura Latine and Via Latina, hard against the Aurelian wall, 4.14 metres round and a few steps from the Porta Latina.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 65/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_029",
@@ -1109,7 +1172,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 294,
-      "how_to_recognise": "The palm on Viale Leducq with stiff blue-grey fronds that read as metal rather than leaf, twenty metres up, its flower spikes hanging well below the crown."
+      "how_to_recognise": "The palm on Viale Leducq with stiff blue-grey fronds that read as metal rather than leaf, twenty metres up, its flower spikes hanging well below the crown.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 74/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_030",
@@ -1141,7 +1208,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "The thickest trunk in the eucalyptus wood around the old fort, 4.9 metres round and 18 tall. The fort's interior stays shut; the wood around it does not."
+      "how_to_recognise": "The thickest trunk in the eucalyptus wood around the old fort, 4.9 metres round and 18 tall. The fort's interior stays shut; the wood around it does not.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 61/H501/RM/12",
+        "url": null
+      }
     },
     {
       "id": "rom_031",
@@ -1176,7 +1247,11 @@
       },
       "how_to_recognise": "You can recognise it by its trunk, 3.6 metres round, thick for an almond tree. It stands in the open park at Via delle Vigne Nuove 280; a second, smaller almond stands about 110 metres away.",
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 360 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 360 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 58/H501/RM/12",
+        "url": null
+      }
     }
   ],
   "hero_tree_id": "rom_001"

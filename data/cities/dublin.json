@@ -43,9 +43,11 @@
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Hungry_Tree",
         "https://www.atlasobscura.com/places/the-hungry-tree-dublin-ireland",
-        "https://www.irishtimes.com/news/ireland/irish-news/hungry-tree-is-slowly-eating-a-cast-iron-bench-in-dublin-1.3162431"
+        "https://www.irishtimes.com/news/ireland/irish-news/hungry-tree-is-slowly-eating-a-cast-iron-bench-in-dublin-1.3162431",
+        "https://www.visitdublin.com/see-do/details/kings-inns",
+        "https://en.wikipedia.org/wiki/Hungry_Tree (21 m tall, 3.47 m girth, cited there to a published book)"
       ],
-      "access": "Free, open grounds, daylight hours",
+      "access": "Free. The King's Inns grounds are open to the public daily, 7am to 7:30pm per Wikipedia; King's Inns' listing on Visit Dublin says daylight hours, entering from Henrietta Street. The tree is just inside the south gate.",
       "transport": "15 min walk from O'Connell Street, or bus routes along Church Street / North King Street",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/The_Hungry_Tree_at_Kings_Inns_%28geograph_4572088%29.jpg",
@@ -57,7 +59,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the cast iron Victorian bench disappearing into its trunk, bark spilling over the seat's arms and back. It stands near the south gate of King's Inns off Constitution Hill."
+      "how_to_recognise": "You can recognise it by the cast iron Victorian bench disappearing into its trunk, bark spilling over the seat's arms and back. It stands near the south gate of King's Inns off Constitution Hill.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 419",
+        "url": null
+      },
+      "girth_cm": 347,
+      "height_m": 21
     },
     {
       "id": "dub_002",
@@ -127,7 +135,11 @@
       "curation_status": "flagged",
       "notes": "Age is a wide, disputed range (500-700 years) and the Swift association is unverified legend, stated as such in the story. Access is genuinely limited to Section 482 open days; this is disclosed honestly per hard rule 10 rather than presented as freely open. Pin tightened 2026-07-26 via GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, a 2009 field GPS survey), which carries a single Taxus baccata record at 'Old Glebe, Co. Dublin' matching this tree exactly. No open-licensed photo found; the garden's limited access likely explains the gap.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its thick, split ancient trunk, about 5 metres round, in a garden corner ringed with visitor benches. It stands at the Old Glebe in Newcastle, Co. Dublin."
+      "how_to_recognise": "You can recognise it by its thick, split ancient trunk, about 5 metres round, in a garden corner ringed with visitor benches. It stands at the Old Glebe in Newcastle, Co. Dublin.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 639",
+        "url": null
+      }
     },
     {
       "id": "dub_004",
@@ -185,7 +197,8 @@
       "story": "Trinity College's own estates team cannot quite agree on how old their most impressive tree is. One internal account points to an image of it from 1760; another puts its planting in the early 1800s, documented on the college's 1892 tree map, and its age at around two hundred years. Either way, it has been rooted at the corner of Grafton and Nassau Street since before Dublin had trams, and that turned out to matter. When the city's first tram line opened along Nassau Street in 1872, and again a century later when the Luas arrived, the plane needed pruning on a schedule built around a transport timetable, including nighttime work between midnight and half past three so services would not be disrupted. It now stands 31 metres tall with a canopy spreading nearly 30 metres, and a girth of 4.64 metres that took two centuries to grow. It shades a corner of the Provost's private garden behind a high wall, and most of the shoppers on Grafton Street a few metres away have no idea it is there.",
       "verified_sources": [
         "https://www.tcd.ie/estatesandfacilities/services/facilities-and-services/campus-services/landscape-maintenance/trees-of-trinity/",
-        "https://www.tcd.ie/news_events/articles/trinitys-trees---featuring-the-london-plane/"
+        "https://www.tcd.ie/news_events/articles/trinitys-trees---featuring-the-london-plane/",
+        "https://www.tcd.ie/news_events/articles/trinitys-trees---featuring-the-london-plane/ (Trinity's own article: 31 metres tall, 4.64 metres girth)"
       ],
       "access": "Free, campus grounds generally open to visitors during daylight hours",
       "transport": "Luas Green Line to Trinity, or Pearse Street DART station, both a short walk",
@@ -198,7 +211,9 @@
       "curation_status": "flagged",
       "notes": "Trinity's own two published sources disagree on planting date (a 1760 image versus an early-1800s planting recorded on an 1892 tree map), so age is presented as a range rather than a single figure. Pin moved about 260m to the Provost's House building itself (OpenStreetMap has it individually named at No. 1 Grafton Street, an exact match to TCD's own stated address), from a looser campus-area estimate. The tree stands in the walled courtyard behind this building rather than at its front door, so kept at `approximate` rather than `confirmed`.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its size, 31 metres tall over a trunk 4.64 metres round, standing behind the high wall of the Provost's garden at the corner of Grafton Street and Nassau Street."
+      "how_to_recognise": "You can recognise it by its size, 31 metres tall over a trunk 4.64 metres round, standing behind the high wall of the Provost's garden at the corner of Grafton Street and Nassau Street.",
+      "girth_cm": 464,
+      "height_m": 31
     },
     {
       "id": "dub_006",
@@ -234,7 +249,11 @@
       "notes": "Photo viewed directly: shows two large, burred-trunk plane trees standing together in a campus quadrangle. That resolves the earlier open question (the caption alone didn't tie it to New Square rather than the campus's other notable plane, the Provost's Plane, dub_005): the Provost's Plane is a single tree, so a photographed pair can only be this entry. Approved. Species corrected 2026-07-26 from London Plane to Oriental Plane: both the approved photo's own Commons filename ('Platanus_orientalis-Trinity_College_Dublin.jpg') and an independent field identification in GBIF's Heritage Trees of Ireland dataset (CC-BY 4.0, 2009 survey, two Platanus orientalis records 15m apart matching this exact pair) agree on the species, against the original ai_generated field. Pin tightened to the midpoint of those two GBIF-surveyed points.",
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise them by the pair of huge plane trees on the lawn, the larger with a trunk over 5 metres round, the widest on campus. They stand in New Square, Trinity College Dublin.",
-      "girth_cm": 550
+      "girth_cm": 550,
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 411, 412",
+        "url": null
+      }
     },
     {
       "id": "dub_007",
@@ -265,7 +284,11 @@
       "curation_status": "flagged",
       "notes": "Replaces The Sculpted Cypress on 2026-07-27: that entry's own story said plainly the tree had died before being carved, which fails Hidde's 'we doen niet aan dode bomen' living-tree rule (CLAUDE.md Step 1), the same violation as Vienna's Stock im Eisen. Id dub_007 reused so the existing URL keeps resolving, via the redirect added to scripts/build_site.py's RENAMED_TREE_SLUGS. This entry is GPS-located via GBIF's Heritage Trees of Ireland dataset (CC BY 4.0, field-surveyed 25 October 2009 by Aubrey Fennell, occurrence 368113488, recorded '100-150 years' old at survey time, category 'arboricultural curiosity', form 'multi-stem'), the same dataset already trusted for dub_003/dub_004/dub_006's pins elsewhere in this file. Age projected forward roughly 17 years from the 2009 estimate. The multi-stem form and curiosity classification are the surveyor's own field categorisation, not independently re-verified by a second source; the general 1870s Ardilaun planting context is corroborated by Wikipedia (already used for dub_008's avenue), so flagged rather than confirmed on that combination. No open-licensed photo found of this specific tree, distinct from the avenue photo already used for dub_008.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its several trunks rising from one base, unlike the single-stemmed holm oaks lining the avenue beside it. It stands near the coast road in St Anne's Park, Raheny."
+      "how_to_recognise": "You can recognise it by its several trunks rising from one base, unlike the single-stemmed holm oaks lining the avenue beside it. It stands near the coast road in St Anne's Park, Raheny.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 450",
+        "url": null
+      }
     },
     {
       "id": "dub_008",
@@ -327,7 +350,7 @@
         "https://en.wikipedia.org/wiki/Farmleigh",
         "https://heritageireland.ie/places-to-visit/farmleigh-house-and-gardens/"
       ],
-      "access": "Free, grounds open daily 10am-6pm, last entry 5pm",
+      "access": "Free. Farmleigh grounds, gardens and gallery are open daily 10am to 6pm, last entry 5pm. The house itself is closed for the rest of 2026.",
       "transport": "Dublin Bus route 37 to Castleknock Gate",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/20130526_Farmleigh_AcerPseudoplatanus_Cutler_P1470345.jpg",
@@ -439,7 +462,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Part of a 6-tree National Botanic Gardens cluster around dub_004 (Addison's Walk), all within 200m of each other and the register's own Aubrey Fennell 2009 field survey (Heritage Trees of Ireland, GBIF, CC BY 4.0), designated 'Exceptional specimen trees'. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added and stated as a round range. Register coordinates converted from Irish Grid, checked accurate to within ~40m elsewhere in the dataset.",
-      "how_to_recognise": "You can recognise it by its blue-green needles held in dense, upswept clusters along near-horizontal branches. It stands in the National Botanic Gardens, Glasnevin, near Addison's Walk."
+      "how_to_recognise": "You can recognise it by its blue-green needles held in dense, upswept clusters along near-horizontal branches. It stands in the National Botanic Gardens, Glasnevin, near Addison's Walk.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 107",
+        "url": null
+      }
     },
     {
       "id": "dub_013",
@@ -469,7 +496,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Part of the same Glasnevin cluster as dub_004/012, 115m from dub_004. Single source (register only); age band recorded at the 2009 survey (50-100 years) with roughly 17 years added. Same coordinate-conversion caveat as the rest of the cluster.",
-      "how_to_recognise": "You can recognise it by its feathery needles, which turn rusty bronze and drop each autumn, unlike an evergreen fir or pine. It stands in the National Botanic Gardens, Glasnevin."
+      "how_to_recognise": "You can recognise it by its feathery needles, which turn rusty bronze and drop each autumn, unlike an evergreen fir or pine. It stands in the National Botanic Gardens, Glasnevin.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 356",
+        "url": null
+      }
     },
     {
       "id": "dub_014",
@@ -508,7 +539,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Two sources: the register, and Trees and Shrubs Online (International Dendrology Society), which independently confirms a Zelkova carpinifolia 'Glasnevin' cultivar was named after and propagated from this exact tree. Age is register-only (no second source dates it), so flagged. 200m from dub_004.",
-      "how_to_recognise": "You can recognise it by its multiple upright stems forming a vase shape rather than one trunk, with smooth grey-brown bark. It stands in the National Botanic Gardens, about 200 metres from Addison's Walk."
+      "how_to_recognise": "You can recognise it by its multiple upright stems forming a vase shape rather than one trunk, with smooth grey-brown bark. It stands in the National Botanic Gardens, about 200 metres from Addison's Walk.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 730",
+        "url": null
+      }
     },
     {
       "id": "dub_015",
@@ -538,7 +573,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Part of the same Glasnevin cluster, 146m from dub_004. Single source (register only); age band recorded at the 2009 survey (100-150 years) with roughly 17 years added.",
-      "how_to_recognise": "You can recognise it by its feathery needles that drop each winter like the dawn redwood nearby, easy to confuse on the same walk. It stands in the National Botanic Gardens, near the Atlas Cedar."
+      "how_to_recognise": "You can recognise it by its feathery needles that drop each winter like the dawn redwood nearby, easy to confuse on the same walk. It stands in the National Botanic Gardens, near the Atlas Cedar.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 577",
+        "url": null
+      }
     },
     {
       "id": "dub_016",
@@ -569,7 +608,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Two sources agree on existence, species and superlative (largest Ailanthus in Ireland, per Trees and Shrubs Online, an independent dendrology reference, so the claim per hard rule 8 is theirs, not ours); age genuinely disputed between the register's 2009 band (100-150 years, +17 now) and general species lore that Ailanthus rarely reaches old age. Both figures stated rather than one silently picked, per Step 2's conflict rule. 179m from dub_004.",
-      "how_to_recognise": "You can recognise it by its size, 17 metres tall with a trunk over a metre thick, framed between two Victorian glasshouses. It stands in the National Botanic Gardens, facing the Palm House."
+      "how_to_recognise": "You can recognise it by its size, 17 metres tall with a trunk over a metre thick, framed between two Victorian glasshouses. It stands in the National Botanic Gardens, facing the Palm House.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 58",
+        "url": null
+      }
     },
     {
       "id": "dub_017",
@@ -600,7 +643,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Two sources, weaker corroboration than the rest of the cluster: the register, and a Trees and Shrubs Online photo captioned 'Glasnevin, Dublin, October 2017' for the same species, likely but not certainly the same individual tree. 117m from dub_004. Do not confuse with Arbutus unedo 'Quercifolia', a different Glasnevin specimen with its own separately-sourced measurement.",
-      "how_to_recognise": "You can recognise it by its peeling chestnut brown bark curling back to reveal a glossy copper red layer underneath. It stands in the National Botanic Gardens, Glasnevin."
+      "how_to_recognise": "You can recognise it by its peeling chestnut brown bark curling back to reveal a glossy copper red layer underneath. It stands in the National Botanic Gardens, Glasnevin.",
+      "official_register": {
+        "name": "Heritage Trees of Ireland (Tree Council of Ireland / National Biodiversity Data Centre, Dataset 27), no. 74",
+        "url": null
+      }
     }
   ]
 }

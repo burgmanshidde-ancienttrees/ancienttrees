@@ -45,7 +45,8 @@
         "https://ja.wikipedia.org/wiki/%E5%96%84%E7%A6%8F%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
         "https://visit-minato-city.tokyo/en/places/1047",
         "https://japantoday.com/category/features/travel/a-visit-to-zenpukuji-temple-in-azabu-to-see-the-oldest-tree-in-tokyo",
-        "https://adeac.jp/minato-city/texthtml/d110110/mp100110-110110/ht000850"
+        "https://adeac.jp/minato-city/texthtml/d110110/mp100110-110110/ht000850",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/691"
       ],
       "access": "Free, temple grounds open daily",
       "transport": "7 min walk from Azabu-Juban Station (Namboku/Oedo lines)",
@@ -68,7 +69,11 @@
       },
       "how_to_recognise": "You can recognise it by the aerial roots hanging off its lower branches like stalactites, the feature that earned it the name Sakasa Icho. It stands in the grounds of Zenpukuji temple in Motoazabu.",
       "girth_cm": 1040,
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "国指定文化財等データベース 天然記念物 (Agency for Cultural Affairs, National Natural Monument, designated 1926)",
+        "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/691"
+      }
     },
     {
       "id": "tok_002",
@@ -125,9 +130,11 @@
       "story": "Ueno Park's biggest tree predates the shrine built around it by more than two centuries. This camphor was already an old tree in 1627 when Ueno Toshogu was founded to enshrine Tokugawa Ieyasu, and it has stood on this rise since before Ueno was Ueno at all, which is why the shrine's own literature calls it Ueno's ancestral tree. Its trunk runs more than eight meters around, the widest in the park by a comfortable margin. The shrine itself survived the 1657 Meireki fire, the 1868 Battle of Ueno between shogunate loyalists and the new imperial army, the 1923 earthquake, and the 1945 air raids that destroyed most of Ueno's other historic buildings, largely because an Edo-era engineer built its main hall with unusually deep foundations. The camphor watched all four disasters from a few meters away and came through each one with nothing worse than scorched leaves. Its canopy now shades the approach to the shrine's gold-leafed karamon gate, a combination that has made this corner of the park a minor pilgrimage for anyone who likes their history literally rooted in place.",
       "verified_sources": [
         "https://www.uenotoshogu.com/spot/",
-        "https://4travel.jp/dm_shisetsu_tips/12160785"
+        "https://4travel.jp/dm_shisetsu_tips/12160785",
+        "https://www.uenotoshogu.com/",
+        "https://www.uenotoshogu.com/spot/ (shrine's own page: trunk thickness 8 m or more; read as circumference, a stated minimum)"
       ],
-      "access": "Free to view; a 500 yen fee applies only if you also want to enter the shrine's inner hall precinct by the karamon gate",
+      "access": "The shrine precinct is free (9:00 to 16:30 October to February, to 17:30 March to September). The sacred camphor stands inside the paid inner viewing area behind the transparent fence: adults 700 yen, elementary pupils 300 yen, open daily 9:30 to 16:00 October to February and to 17:00 March to September, weather permitting.",
       "transport": "10 min walk from Ueno Station (JR/Ginza/Hibiya lines)",
       "photo": {
         "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/271440441/medium.jpg",
@@ -140,7 +147,8 @@
       "curation_status": "ai_generated",
       "notes": "Sourcing is the shrine's own site plus travel-review corroboration rather than an independent registry; a stronger third source would be worth finding in a future pass.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, more than eight metres round and the widest in Ueno Park by a comfortable margin. It stands on the rise by Ueno Toshogu, its canopy shading the approach to the gold-leafed karamon gate."
+      "how_to_recognise": "You can recognise it by the trunk, more than eight metres round and the widest in Ueno Park by a comfortable margin. It stands on the rise by Ueno Toshogu, its canopy shading the approach to the gold-leafed karamon gate.",
+      "girth_cm": 800
     },
     {
       "id": "tok_004",
@@ -201,7 +209,8 @@
         "https://wood.jp/8-jumoku/kyoju/tokyo/sibatoushouguu-icho.html",
         "https://www.shibatoshogu.com/",
         "https://note.com/fu9da/n/na876737abf77",
-        "https://adeac.jp/minato-city/texthtml/d110110/mp100110-110110/ht000850"
+        "https://adeac.jp/minato-city/texthtml/d110110/mp100110-110110/ht000850",
+        "https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d0000000017"
       ],
       "access": "Free, shrine grounds open daily",
       "transport": "3 min walk from Shibakoen Station (Toei Mita line)",
@@ -224,7 +233,11 @@
       },
       "how_to_recognise": "You can recognise it by Tokyo Tower rising directly behind it: this is the tree in the foreground of everybody's photograph, about 21 metres tall. It stands in front of the gate at Shiba Toshogu.",
       "girth_cm": 650,
-      "height_m": 21.5
+      "height_m": 21.5,
+      "official_register": {
+        "name": "東京都指定文化財 天然記念物 (Tokyo Metropolitan Cultural Properties List, open data), no. 0000000245",
+        "url": null
+      }
     },
     {
       "id": "tok_006",
@@ -281,9 +294,10 @@
         "https://www.bg.s.u-tokyo.ac.jp/koishikawa/overview/memorial.html",
         "https://koishikawa-bg.jp/ennai/ginkgo/",
         "https://www.openstreetmap.org/node/4683343152",
-        "https://www.bg.s.u-tokyo.ac.jp/koishikawa/"
+        "https://www.bg.s.u-tokyo.ac.jp/koishikawa/",
+        "https://koishikawa-bg.jp/overview/guide/"
       ],
-      "access": "Paid entry, 500 yen for adults (150 yen for children). Open 9:00 to 16:30 as shown on the garden's own site; check its home page for closed days.",
+      "access": "Paid entry, 500 yen for adults (high school and up), 150 yen for children; under 6 free, and free on 4 May. Open 9:00 to 16:30 with last entry at 16:00; closed Mondays (the next day if Monday is a holiday).",
       "transport": "10 min walk from Hakusan Station (Toei Mita line)",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tokyo%2C_Koishikawa_%282005%29_11.jpg",
@@ -440,7 +454,8 @@
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E6%97%A7%E7%B4%B0%E5%B7%9D%E9%82%B8%E3%81%AE%E3%82%B7%E3%82%A4",
         "http://www.tree-flower.jp/13/kyu_hosokawatei_527/kyu_hosokawatei_shii_.html",
-        "https://www.tv-tokyo.co.jp/adomachi/backnumber/20250510/145947.html"
+        "https://www.tv-tokyo.co.jp/adomachi/backnumber/20250510/145947.html",
+        "https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d0000000017"
       ],
       "access": "Free. Stands on the grounds of Takanawa Community Plaza (a Minato-ku public facility), open during the plaza's public hours.",
       "transport": "Shirokanetakanawa Station (Toei Mita Line / Tokyo Metro Namboku Line), about 1-2 minute walk; the plaza sits almost directly above the station",
@@ -455,7 +470,11 @@
         "width": 1536,
         "height": 1024
       },
-      "how_to_recognise": "You can recognise it by the shape, 8.13 metres round against only 10.8 metres tall, a trunk built like a barrel. It stands inside the grounds of Takanawa Community Plaza, a minute from the gates of Shirokanetakanawa Station."
+      "how_to_recognise": "You can recognise it by the shape, 8.13 metres round against only 10.8 metres tall, a trunk built like a barrel. It stands inside the grounds of Takanawa Community Plaza, a minute from the gates of Shirokanetakanawa Station.",
+      "official_register": {
+        "name": "東京都指定文化財 天然記念物 (Tokyo Metropolitan Cultural Properties List, open data), no. 0000000205",
+        "url": null
+      }
     },
     {
       "id": "tok_012",
@@ -543,7 +562,9 @@
       },
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E5%BD%B1%E5%90%91%E3%81%AE%E3%83%9E%E3%83%84",
-        "https://secchin.exblog.jp/38765295"
+        "https://secchin.exblog.jp/38765295",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/00003727 (designation text: height about 8 m, crown 28 m by 31 m; 4.5 m is a root-base circumference, not a girth, so none recorded)",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/00003727"
       ],
       "access": "Free. Zenyoji Temple (also known locally as Koiwa Fudoson) is open to the public; the pine stands prominently in the temple precinct, its huge crown held up on 82 wooden props.",
       "transport": "JR Sobu Line to Koiwa Station, then a bus toward Kasai/Mizue to the Edogawa Hospital Mae stop, then about a 200 metre walk",
@@ -563,6 +584,10 @@
         "source_name": "Yougou no Matsu",
         "qid": "Q11488086",
         "views": 218
+      },
+      "official_register": {
+        "name": "国指定文化財等データベース 天然記念物 (Agency for Cultural Affairs, National Natural Monument, designated 2011)",
+        "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/00003727"
       }
     },
     {
@@ -649,7 +674,8 @@
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/葛飾八幡宮",
         "https://www.city.ichikawa.lg.jp/culture/24242.html",
-        "https://maruchiba.jp/event/detail_13387.html"
+        "https://maruchiba.jp/event/detail_13387.html",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/641"
       ],
       "access": "Free. Stands in the grounds of Katsushika Hachimangu shrine, open to the public in daylight hours.",
       "transport": "Not in Tokyo proper: it stands in Ichikawa City, Chiba, just across the Edogawa river. Motoyawata Station (JR Sobu Line or Toei Shinjuku Line), then a 5-10 minute walk. Only 6 minutes and one stop by JR Sobu Line, no transfer, from Tokyo's Koiwa Station, where the site's Yogo no Matsu pine (tok_014/tok_016) already stands about 3.4km away, well inside the same day-trip corridor.",
@@ -669,7 +695,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the crowd of trunks pushed out of its own base after lightning split it about six metres up, 10.8 metres round at chest height against 10.2 at the ground. It stands in the grounds of Katsushika Hachimangu."
+      "how_to_recognise": "You can recognise it by the crowd of trunks pushed out of its own base after lightning split it about six metres up, 10.8 metres round at chest height against 10.2 at the ground. It stands in the grounds of Katsushika Hachimangu.",
+      "official_register": {
+        "name": "国指定文化財等データベース 天然記念物 (Agency for Cultural Affairs, National Natural Monument, designated 1931)",
+        "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/641"
+      }
     },
     {
       "id": "tok_018",

@@ -2,46 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-21T02:52:28+00:00",
-   "date": "2026-08-21",
-   "run_id": "32441343401",
-   "minutes": 15.3,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 143,
-   "denials": 43,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(node), Bash(printenv), Bash(python3)",
-   "ended": "success",
-   "tokens": 4927853,
-   "claims_held": [
-    "krakow"
-   ],
-   "commits": 4,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
-   "started": "2026-08-21T04:25:48+00:00",
-   "date": "2026-08-21",
-   "run_id": "32446901126",
-   "minutes": 25.7,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 198,
-   "denials": 42,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(env), Bash(for), Bash(git), Bash(grep), Bash(if), Bash(mkdir), Bash(python3), Bash(rm), Bash(test), Bash(wc), Edit, Write",
-   "ended": "success",
-   "tokens": 7559095,
-   "claims_held": [
-    "oahu"
-   ],
-   "commits": 5,
-   "cities_touched": 2,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-21T06:21:29+00:00",
    "date": "2026-08-21",
    "run_id": "32454059744",
@@ -21118,6 +21078,143 @@
      "trees": 0
     }
    ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-09T22:08:00+00:00",
+   "date": "2026-10-09",
+   "run_id": "37997476757",
+   "minutes": 92.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 482,
+   "denials": 22,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat ; ? ; ? ; ? ...), Bash(cat), Bash(cd && curl ; wc ; sed ...), Bash(cd && file && pdftotext && wc), Bash(cd && for ; do ; done ...), Bash(cd && pdftotext ; wc ; head), Bash(cd && pdftotext), Bash(for ; do ; ? ; done ...), Bash(for ; do ; grep | kind ...), Bash(for ; do ; python3 ; import ...), Bash(mkdir && cd && curl), Bash(pdftotext), Bash(python3 | tail ; git ; git ...), Bash(sed | grep | head), Bash(sed | grep | tall | girth ...), Bash(unzip)",
+   "ended": "success",
+   "tokens": 1114380,
+   "claims_held": [],
+   "commits": 36,
+   "cities_touched": 24,
+   "cities": [
+    {
+     "city": "alicante",
+     "trees": 0
+    },
+    {
+     "city": "bath",
+     "trees": 0
+    },
+    {
+     "city": "berlin",
+     "trees": 0
+    },
+    {
+     "city": "brisbane",
+     "trees": 0
+    },
+    {
+     "city": "brussels",
+     "trees": 0
+    },
+    {
+     "city": "cagliari",
+     "trees": 0
+    },
+    {
+     "city": "dublin",
+     "trees": 0
+    },
+    {
+     "city": "edinburgh",
+     "trees": 0
+    },
+    {
+     "city": "florence",
+     "trees": 0
+    },
+    {
+     "city": "krakow",
+     "trees": 0
+    },
+    {
+     "city": "london",
+     "trees": 0
+    },
+    {
+     "city": "madrid",
+     "trees": 0
+    },
+    {
+     "city": "malaga",
+     "trees": 0
+    },
+    {
+     "city": "munich",
+     "trees": 0
+    },
+    {
+     "city": "new-york",
+     "trees": 0
+    },
+    {
+     "city": "oahu",
+     "trees": 0
+    },
+    {
+     "city": "palermo",
+     "trees": 0
+    },
+    {
+     "city": "pamplona",
+     "trees": 0
+    },
+    {
+     "city": "paris",
+     "trees": 0
+    },
+    {
+     "city": "porto",
+     "trees": 0
+    },
+    {
+     "city": "prague",
+     "trees": 0
+    },
+    {
+     "city": "rome",
+     "trees": 0
+    },
+    {
+     "city": "tokyo",
+     "trees": 0
+    },
+    {
+     "city": "vienna",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-10T03:55:53+00:00",
+   "date": "2026-10-10",
+   "run_id": "38022122246",
+   "minutes": 5.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 56,
+   "denials": 7,
+   "denials_source": "permission_denials: Bash(curl ; wc ; sed | tr ...), Bash(pdftotext), Bash(python3 ; wc ; mkdir), Bash(wc)",
+   "ended": "success",
+   "tokens": 609247,
+   "claims_held": [
+    "ede"
+   ],
+   "commits": 6,
+   "cities_touched": 0,
+   "cities": [],
    "trees": 0,
    "logged": true
   }
