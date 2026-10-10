@@ -45,9 +45,10 @@
         "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
         "https://www.myhelsinki.fi/visit/things-to-do/helsinki-tree-facts/",
         "https://retkipaikka.fi/7-puuta-jotka-helsingissa-kannattaa-nahda/",
-        "https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/kuninkaantammi"
+        "https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/kuninkaantammi",
+        "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#kuninkaan-tammi--etela-kaarela"
       ],
-      "access": "Free, open park at any time",
+      "access": "Free to see from the street. The city's natural-monuments register places the oak in the yard of a Helsinki Water (Vesilaitos) property beside Kuninkaantammenkuja, so we cannot promise the yard itself is open; the park around it is public.",
       "transport": "Bus 560 to the Kappatie stop, then a short walk; roughly 30 minutes from central Helsinki",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/KuninkaanTammi.jpg",
@@ -67,7 +68,12 @@
         "label": "October to November: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the trunk, 404 centimetres round, standing where the Vantaanjoki narrows into the Pitkakoski rapids. It stands in Kuninkaantammenpuisto, Kaarela."
+      "how_to_recognise": "You can recognise it by the trunk, 404 centimetres round, standing where the Vantaanjoki narrows into the Pitkakoski rapids. It stands in Kuninkaantammenpuisto, Kaarela.",
+      "official_register": {
+        "name": "Luonnonmuistomerkit (City of Helsinki natural monuments)",
+        "url": "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#kuninkaan-tammi--etela-kaarela"
+      },
+      "height_m": 20
     },
     {
       "id": "hel_002",
@@ -85,7 +91,8 @@
       "story": "Twenty children once fit inside this willow at the same time, according to local lore, tucked into a hollow trunk that has been slowly swallowing itself for over a century. At 8.4 metres around, it is the thickest tree standing anywhere in Helsinki, a title with real competition from the city's oaks and limes but no serious challenger among willows. The tree was already remarkable enough by 1907 to be documented and photographed, and the city protected it as a natural monument in 1924, decades before Helsinki had any broader system for saving trees at all. Officially it is a crack willow, though residents of Kruununhaka know it by the Finnish name isoriippasalava, the big weeping willow, a name that describes its shape better than its species does. A wooden crutch now props up one of its heaviest limbs, an old-fashioned fix for an old tree that has stopped being able to hold all of itself up. The park around it, Kirjanpuisto, is barely bigger than a city block, wedged between apartment buildings a fifteen-minute walk from Senate Square, easy to miss unless you already know a tree this size is hiding there.",
       "verified_sources": [
         "https://www.kirkkojakaupunki.fi/-/onko-tassa-stadin-10-legendaarisinta-puuta-onttoon-salavaan-on-mahtunut-parikymmenta-natiaista-kerrallaan-2",
-        "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments"
+        "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
+        "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#salava--kruununhaka"
       ],
       "access": "Free, open park at any time",
       "transport": "15-20 minute walk from Senate Square, central Helsinki",
@@ -97,7 +104,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the wooden crutch propping up one of its heaviest limbs, and by the hollow trunk, 8.4 metres round, the thickest in Helsinki. It stands in Kirjanpuisto, a park barely bigger than a city block."
+      "how_to_recognise": "You can recognise it by the wooden crutch propping up one of its heaviest limbs, and by the hollow trunk, 8.4 metres round, the thickest in Helsinki. It stands in Kirjanpuisto, a park barely bigger than a city block.",
+      "official_register": {
+        "name": "Luonnonmuistomerkit (City of Helsinki natural monuments)",
+        "url": "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#salava--kruununhaka"
+      }
     },
     {
       "id": "hel_003",
@@ -116,7 +127,8 @@
       "verified_sources": [
         "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
         "https://www.kirkkojakaupunki.fi/-/onko-tassa-stadin-10-legendaarisinta-puuta-onttoon-salavaan-on-mahtunut-parikymmenta-natiaista-kerrallaan-2",
-        "https://www.myhelsinki.fi/visit/things-to-do/helsinki-tree-facts/"
+        "https://www.myhelsinki.fi/visit/things-to-do/helsinki-tree-facts/",
+        "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#tammi--tali"
       ],
       "access": "Free, but within Helsinki Golf Club's grounds; use the estate's public paths rather than crossing the fairways",
       "transport": "Short walk or local bus from Pitäjänmäki railway station, roughly 15 minutes",
@@ -136,7 +148,12 @@
         "label": "October to November: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the trunk, 616 centimetres round when it was measured in 2013, Finland's second-thickest oak. It stands close behind the Helsinki Golf Club clubhouse rather than out on the fairways."
+      "how_to_recognise": "You can recognise it by the trunk, 616 centimetres round when it was measured in 2013, Finland's second-thickest oak. It stands close behind the Helsinki Golf Club clubhouse rather than out on the fairways.",
+      "official_register": {
+        "name": "Luonnonmuistomerkit (City of Helsinki natural monuments)",
+        "url": "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#tammi--tali"
+      },
+      "height_m": 22
     },
     {
       "id": "hel_004",
@@ -261,7 +278,8 @@
       "story": "Most snake-branch spruces stay under 15 metres for their entire lives, a natural size limit built into the mutation that gives the variety its name, unbranched whip-like limbs that hang rather than spread. The specimen in this Pohjois-Haaga park broke that ceiling by a wide margin, reaching past 25 metres, taller than almost anything else planted in the form anywhere. Picea abies f. virgata is a genuine oddity of Norway spruce, a natural mutant first identified in the 19th century and prized ever since for looking almost nothing like a normal spruce: instead of the usual dense pyramid of branches, its limbs run long, bare and snakelike straight off the trunk, drooping rather than climbing. Helsinki protected this one as a natural monument in 1956, and by the city's own 2003 measurements its trunk had reached 164 centimetres around, respectable for the form though its real distinction is height rather than girth. It stands in an ordinary residential park between two streets, easy to walk straight past if you do not already know that an otherwise normal spruce silhouette should not, on closer look, have branches quite this strange.",
       "verified_sources": [
         "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
-        "https://retkipaikka.fi/7-puuta-jotka-helsingissa-kannattaa-nahda/"
+        "https://retkipaikka.fi/7-puuta-jotka-helsingissa-kannattaa-nahda/",
+        "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#kaarmekuusi--pohjois-haaga"
       ],
       "access": "Free, open park at any time",
       "transport": "Local bus or train to Pohjois-Haaga, then a short walk, roughly 20-25 minutes from central Helsinki",
@@ -273,7 +291,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the branches, long and bare and snakelike, drooping straight off the trunk instead of spreading, on a spruce past 25 metres where the form usually stops under 15. It stands in the park off Näyttelijäntie."
+      "how_to_recognise": "You can recognise it by the branches, long and bare and snakelike, drooping straight off the trunk instead of spreading, on a spruce past 25 metres where the form usually stops under 15. It stands in the park off Näyttelijäntie.",
+      "official_register": {
+        "name": "Luonnonmuistomerkit (City of Helsinki natural monuments)",
+        "url": "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#kaarmekuusi--pohjois-haaga"
+      },
+      "girth_cm": 164,
+      "height_m": 25.5
     },
     {
       "id": "hel_008",
@@ -292,7 +316,8 @@
       "verified_sources": [
         "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
         "https://www.myhelsinki.fi/visit/things-to-do/helsinki-tree-facts/",
-        "https://retkipaikka.fi/7-puuta-jotka-helsingissa-kannattaa-nahda/"
+        "https://retkipaikka.fi/7-puuta-jotka-helsingissa-kannattaa-nahda/",
+        "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#puumainen-tyrni--eira"
       ],
       "access": "Free, open waterfront path at any time",
       "transport": "Tram 3 to the Eiran sairaala stop, then a short walk to the shore",
@@ -311,7 +336,12 @@
         "label": "late September, when the berries turn bright orange",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by its size, over seven metres tall with a trunk more than a metre round, where sea buckthorn is normally a shrub. It stands on the Merisatama shore path directly opposite the island of Sirpalesaari."
+      "how_to_recognise": "You can recognise it by its size, over seven metres tall with a trunk more than a metre round, where sea buckthorn is normally a shrub. It stands on the Merisatama shore path directly opposite the island of Sirpalesaari.",
+      "official_register": {
+        "name": "Luonnonmuistomerkit (City of Helsinki natural monuments)",
+        "url": "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#puumainen-tyrni--eira"
+      },
+      "height_m": 7
     },
     {
       "id": "hel_009",
@@ -405,7 +435,8 @@
       "story": "An anthill lives in this pine. It began at the roots and worked its way up into the cracks in the bark, and about five metres above the ground a birch seedling has taken hold in a hole in the trunk. That is a lot of tenants for one tree.\n\nHelsinki's city board protected it on 16 February 1956, by its own decision rather than under the national conservation act, which is the unusual half of its paperwork. The base of the trunk measured 280 centimetres round that year. By the 2003 survey it had reached 307 and the tree stood around twenty metres tall, and the city's register calls it the second thickest unbranched pine in Greater Helsinki.\n\nIt stands in the yard behind the Yusupoff stable, a building put up in 1842 and carted onto Seurasaari in 1916. So the pine has spent a century in a courtyard with a transplanted stable while the open-air museum assembled the rest of old Finland around it, one relocated building at a time. Almost everything a visitor sees on Seurasaari was carried there from somewhere else in the country; the pine is one of the few things that grew where it stands.\n\nTwo gaps worth saying out loud. Nobody has published an age for it, and those 2003 figures are the newest anyone has taken. If you get out to the island and find it in good health, tell us.",
       "verified_sources": [
         "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
-        "https://www.hel.fi/static/hkr/julkaisut/seurasaari/seurasaari_raportti.pdf"
+        "https://www.hel.fi/static/hkr/julkaisut/seurasaari/seurasaari_raportti.pdf",
+        "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#manty-ja-muurahaispesa--seurasaari"
       ],
       "access": "Seurasaari island is free to walk year-round, but this pine stands in the yard of the Yusupoff stable inside the Seurasaari Open-Air Museum's fenced grounds, which charge admission (adult ~14 EUR) when the museum is open, 15 May to 15 September. Outside the season the fenced yards are not staffed; treat as paid entry in season.",
       "transport": "Bus 24 to the Seurasaari terminus, then a 5-10 minute walk across the footbridge to the museum area",
@@ -421,7 +452,12 @@
       "how_to_recognise": "You can recognise it by the anthill running up into the cracks in its bark, and by the birch seedling growing out of a hole about five metres up the trunk. It stands in the yard behind the Yusupoff stable.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Luonnonmuistomerkit (City of Helsinki natural monuments)",
+        "url": "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#manty-ja-muurahaispesa--seurasaari"
+      },
+      "height_m": 20
     },
     {
       "id": "hel_012",
@@ -440,7 +476,8 @@
       "story": "Trees of this kind rarely pass ten metres. This one is nineteen.\n\nPinus sylvestris f. gibberosa is a rare natural growth form of the ordinary Scots pine, scattered thinly through southern and central Finland, in which the trunk, the branches and even the roots swell into woody lumps. In Finnish it is the mukuramänty, the burl pine. It is a shape rather than a separate species, and it usually comes with a stunted, low-slung habit, which is what makes this one strange: it grew the lumps and then grew tall anyway.\n\nThe Provincial Government of Uusimaa protected it on 20 September 1956, decision number 8805. At its last measurement, in 2003, it stood nineteen metres, with a trunk 175 centimetres round, or 225 if you run the tape over the burls rather than between them.\n\nIt is one of seven protected natural monuments in Laajasalo, out of thirty-three in the whole of Helsinki, and the local residents' association still sends people to it: the eastern end of Kumianpää, beside a public path, no gate and no ticket. The Tullisaari Lime, already on this list, stands four hundred metres away in the old manor park.\n\nNobody has dated it, and the growth form makes the usual girth arithmetic useless, so its age is an open question. If you know when this one started, tell us.",
       "verified_sources": [
         "https://www.hel.fi/en/urban-environment-and-traffic/protection-of-the-environment-and-nature/nature-conservation-and-biodiversity/natural-monuments",
-        "https://www.laajasalo-degero.fi/laajasalo/upea-luonto/luonto/"
+        "https://www.laajasalo-degero.fi/laajasalo/upea-luonto/luonto/",
+        "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#mukuramanty--tullisaari"
       ],
       "access": "Free. Stands beside a public recreational path (the eastern end of Kumianpää, off Henrik Borgströmintie); no ticket or gate.",
       "transport": "Bus from central Helsinki to Laajasalo (roughly 20 minutes), then a short walk to Kumianpää",
@@ -452,7 +489,12 @@
       },
       "how_to_recognise": "You can recognise it by the lumps: trunk, branches and roots all swollen with woody burls, which no other pine on the path has. It stands at the eastern end of Kumianpää, right beside the path.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Luonnonmuistomerkit (City of Helsinki natural monuments)",
+        "url": "https://www.hel.fi/fi/kaupunkiymparisto-ja-liikenne/ympariston-ja-luonnon-suojelu/luonnonsuojelu-ja-monimuotoisuus/luonnonmuistomerkit#mukuramanty--tullisaari"
+      },
+      "height_m": 19
     }
   ]
 }
