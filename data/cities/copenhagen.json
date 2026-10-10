@@ -143,7 +143,8 @@
       },
       "story": "Bertel Thorvaldsen spent more than 40 years in Rome becoming Europe's most celebrated Neoclassical sculptor before returning home to Copenhagen in 1838 to a hero's welcome, and this multi-stemmed black locust growing beside the museum built to house his life's work is said to have come home with him, grown from seed he carried back from Italy. Denmark's dendrological society surveyed the tree in 1995 and recorded a trunk over three metres around, splitting into several stems rather than one, and estimated its age at up to 155 years at that time, consistent with a planting soon after Thorvaldsen's actual return. That would put the tree, and not just the museum, among the direct physical legacies of a sculptor whose bronze and marble work now sits in collections from the Vatican to Warsaw. Black locust is not a species anyone would plant deliberately for its connection to fine art. It is a hardy, fast-growing tree valued more for binding loose soil and producing useful timber than for looking distinguished, which makes its adoption into Thorvaldsen's own story feel almost like an accident that stuck, a workmanlike species growing beside one of Europe's grandest personal museums, surveyed precisely enough by Danish tree recorders in 2008 to give this project one of its few confirmed coordinates.",
       "verified_sources": [
-        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=101"
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=101",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=101"
       ],
       "access": "Free, open access, public ground beside Thorvaldsens Museum",
       "transport": "Christianshavn metro station or Copenhagen Central Station, short walk across Slotsholmen",
@@ -163,7 +164,11 @@
         "label": "May, when it flowers in heavy white clusters",
         "kind": "flowers"
       },
-      "how_to_recognise": "Beside the museum, a black locust splitting into several stems rather than one trunk, over three metres round at the base."
+      "how_to_recognise": "Beside the museum, a black locust splitting into several stems rather than one trunk, over three metres round at the base.",
+      "official_register": {
+        "name": "Dansk Trærregister (Dendrologisk Forening)",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=101"
+      }
     },
     {
       "id": "cop_004",
@@ -277,7 +282,8 @@
       },
       "verified_sources": [
         "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1468",
-        "https://bennyfriisgunno.dk/assistens/planter.htm"
+        "https://bennyfriisgunno.dk/assistens/planter.htm",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1468"
       ],
       "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
       "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 5-7 minute walk; the station sits at the cemetery's northeastern corner, close to this tree",
@@ -291,7 +297,11 @@
       "location_precision": "confirmed",
       "how_to_recognise": "In section A near the northeast corner, multi-stemmed and 1.4 metres round; for about two weeks in May the crown hangs with paired white bracts.",
       "girth_cm": null,
-      "height_m": null
+      "height_m": null,
+      "official_register": {
+        "name": "Dansk Trærregister (Dendrologisk Forening)",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1468"
+      }
     },
     {
       "id": "cop_007",
@@ -424,7 +434,8 @@
       },
       "verified_sources": [
         "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=837",
-        "https://www.fredninger.dk/wp-content/uploads/2016/11/Frederiksberg_Have.pdf"
+        "https://www.fredninger.dk/wp-content/uploads/2016/11/Frederiksberg_Have.pdf",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=837"
       ],
       "access": "Free, open access; Frederiksberg Have is a public park, protected (fredet) under Danish nature conservation law",
       "transport": "Frederiksberg Allé metro station (M1/M2/M3), roughly 10-12 minute walk via Frederiksberg Runddel, the garden's main entrance",
@@ -436,7 +447,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "The big one standing over the jetty where the flat-bottomed boats set off, 4.68 metres round."
+      "how_to_recognise": "The big one standing over the jetty where the flat-bottomed boats set off, 4.68 metres round.",
+      "official_register": {
+        "name": "Dansk Trærregister (Dendrologisk Forening)",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=837"
+      },
+      "girth_cm": 468
     },
     {
       "id": "cop_010",
@@ -509,7 +525,8 @@
       },
       "verified_sources": [
         "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=1476",
-        "https://www.dendron.dk/aarsskrift/docs/6.pdf"
+        "https://www.dendron.dk/aarsskrift/docs/6.pdf",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1476"
       ],
       "access": "Free, open access; Assistens Kirkegård functions as both cemetery and public park, open 07:00-22:00 in summer and 07:00-19:00 in winter",
       "transport": "Nørrebros Runddel metro station (M3 Cityringen), roughly 10 minute walk",
@@ -521,7 +538,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "Section E, near the middle: slender at 1.18 metres round, with only a few branched thorns on the trunk and those two and a half metres up, out of reach."
+      "how_to_recognise": "Section E, near the middle: slender at 1.18 metres round, with only a few branched thorns on the trunk and those two and a half metres up, out of reach.",
+      "official_register": {
+        "name": "Dansk Trærregister (Dendrologisk Forening)",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1476"
+      },
+      "girth_cm": 118,
+      "height_m": 16
     },
     {
       "id": "cop_012",
@@ -728,7 +751,8 @@
       "verified_sources": [
         "https://www.dendron.dk/dtr/detaljer.asp?Individual_ID=100",
         "https://udinaturen.dk/facilitet/?id=bc3edd16-8290-4eac-bec0-a7225194c36e",
-        "https://www.monumentaltrees.com/en/dnk/capitalregion/kopenhagen/9359_jaegersborgdyrehave/"
+        "https://www.monumentaltrees.com/en/dnk/capitalregion/kopenhagen/9359_jaegersborgdyrehave/",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=100"
       ],
       "access": "Free, no ticket, and marked wheelchair-accessible on the Nature Agency's own listing. Stands in the open deer park of Jaegersborg Dyrehave, a public UNESCO-listed royal hunting landscape with no gates or opening hours beyond dusk closing for cars.",
       "transport": "Central Copenhagen to Dyrehaven's edge is roughly 12.6 km. S-train line C to Klampenborg station (about 16-20 minutes from Copenhagen Central), then a walk of roughly 35-40 minutes through the deer park, past Eremitageslottet, to reach Magasindammen; this tree sits deeper into the park than the entrance, so the walk-in is the honest, longer part of the trip.",
@@ -750,7 +774,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "A freestanding oak by the Magasindammen pond northeast of the Hermitage, 5.46 metres round, in open deer park rather than in woodland."
+      "how_to_recognise": "A freestanding oak by the Magasindammen pond northeast of the Hermitage, 5.46 metres round, in open deer park rather than in woodland.",
+      "official_register": {
+        "name": "Dansk Trærregister (Dendrologisk Forening)",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=100"
+      }
     },
     {
       "id": "cop_017",
@@ -1027,7 +1055,8 @@
       "verified_sources": [
         "Dansk Traeregister, id 40, position verified 24-11-2008: https://www.dendron.dk/dtr/detaljer.asp?Individual_id=40",
         "N.E. Holten, 'Kaempeege i Danmark: En beskrivelse af de 30 tykkeste traeer', Dansk Dendrologisk Aarsskrift, bind 16, 1998, pages 25-111 (a published survey of Denmark's 30 thickest oaks, cited by the register as the origin of this tree's 1998 measurements; a genuinely separate authored source from the register's own personal-observation citations).",
-        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=378"
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=378",
+        "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=40"
       ],
       "access": "Free, open daily; Jaegersborg Dyrehave is a public royal deer park.",
       "transport": "Klampenborg station (S-train, line C), then roughly a 30-40 minute walk into the deer park.",
@@ -1041,6 +1070,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Dansk Trærregister (Dendrologisk Forening)",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=40"
       }
     },
     {
@@ -2158,6 +2191,10 @@
         ],
         "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Dansk Trærregister (Dendrologisk Forening)",
+        "url": "https://www.dendron.dk/dtr/detaljer.asp?Individual_id=1184"
       }
     }
   ]
