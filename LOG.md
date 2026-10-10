@@ -17,7 +17,8 @@
 - **Osaka:** Agency for Cultural Affairs records for the Noma Keyaki and Myokoku-ji cycad, girth/height for the Noma Keyaki (town sources disagree with the on-site sign: 27.37 m / 13.01 m vs 30 m / 14 m) and Achihayao camphor. I dropped the cycad's girth: 250 cm was one stem of a ~120-stem clump, not a whole-plant figure.
 - **Crete:** only a height for the Azoria olive; no per-tree register pages or measurements found for the other three. explorecrete.com is behind a Cloudflare challenge.
 - **Hong Kong:** Tree Register ids (OVT numbers) for 8 trees, heights and DBH-derived girths for 3 camphors and the Kam Tin tree house. For hkg_003 to 006 the register position is ~300 m from our pin though address and species match, so those four pins are worth a look; hkg_006 rests on species and place only.
-- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k + ~175k + ~167k + ~162k + ~146k + ~164k verify-agent tokens. No refusals except rm of scratch files.
+- **Budapest:** Főkert "Nevezetes fák" (park authority notable-trees) records for 11 trees, measurements for the Dobrentei plane and the Margaret Island oak. I dropped the Tree of Science's 664 cm / 42 m: an unsourced magazine figure. **Needs a correction pass:** bud_003's Főkert page describes a Japanese pagoda tree (Sophora japonica) at the Erzsébet tér corner where we say Black Locust, so the species may be wrong (page: fokert.budapestikozmuvek.hu/erzsebet-teri-japanakac-v-keruletnevezetes-fak). bud_008's own authority page rebuts the 1789 age and dates the tree to roughly 120 to 130 years; our story may still carry 1789.
+- Cost: ~175k + ~178k + ~143k + ~155k + ~223k + ~173k + ~153k + ~175k + ~167k + ~162k + ~146k + ~164k + ~181k verify-agent tokens. No refusals except rm of scratch files.
 
 ## 2026-10-10 (session) - Settings: one screen on the app and the website
 
