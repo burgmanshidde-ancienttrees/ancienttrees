@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, 03:55 window) - Athens and Cadiz enrichment, almost nothing
+
+**Done:** Athens (second pass, 132k tokens) closed nothing: no per-tree Greek register, no hours on the official pages the agent could read, no striking season moment in the three species files. Its 32 gaps are recorded as dead ends for 90 days, so stop re-briefing it. Cadiz: the pass found an OSM Dracaena draco node 125 m from cad_002, but `enrich.py --apply` refused the pin because the answer carried no source URL, so nothing changed on the page. No register entries, measurements or hours found for any of the five Cadiz trees. No new trees (recovery mode). Josecelestinomutis.cadiz.es gives 403 to curl but loads through the fetch tool.
+**Left to retry:** cad_002 pin with the OSM node URL (https://www.openstreetmap.org/node/5292560400) as source, from a session.
+
 ## 2026-10-09 (night run, continuation) - London enrichment, one tree
 
 **Done:** lon_020 (Inner Temple Mulberry) gained girth 150 cm and height 10 m from the Morus Londinium survey record, which is a research project and not a government register. The other six London trees (lon_011, 012, 017, 021, 022, 025) have no per-tree authority record and no public measurement; recorded as dead ends for 90 days and London released as a wall for 48h. No new trees (recovery mode). The earlier attempt of this window had claimed London and stopped; this attempt finished it.
