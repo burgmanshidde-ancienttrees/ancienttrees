@@ -22,6 +22,8 @@ looks for the three faults a screenshot does not reliably show a human:
             these is not a matter of taste, it is somebody's thumb missing the
             button three times in a row at the foot of a tree.
 
+  EDGE      a photograph touching the screen edge on a page made of shelves
+            (Discover), where everything stays inside the margin.
   DRIFT     two things that are meant to line up and are four points apart. This
             is the one Hidde keeps seeing and the one eyes are worst at: a
             heading at x=20 over a card at x=16 reads as "off" without reading
@@ -310,6 +312,10 @@ def link(screen):
     return screen
 
 
+# Pages made of shelves, by their sweep name: one left edge, nothing bleeds.
+SHELF_PAGES = {"explore"}
+
+
 def in_shelf(el):
     """True when something above this element is a horizontal scroller."""
     p = el.parent
@@ -400,6 +406,23 @@ def check(screen):
         if el.x < -SAME and not in_shelf(el):
             findings.append(("CLIPPED", el,
                              f"starts at x={el.x:.0f}, so it hangs off the left edge"))
+
+        # EDGE: A PHOTOGRAPH AGAINST THE SCREEN'S EDGE ON A PAGE OF SHELVES
+        # (Hidde, 2026-10-10: "het klopt weer niet op de discover pagina").
+        # Edge to edge is for a page that IS a grid, My trees; a page made of
+        # shelves keeps one left edge, the margin, as the App Store, Airbnb and
+        # AllTrails do and as the website's BAND check already insists.
+        # Discover bled three grids to the edge between rounded shelves and
+        # its left edge jumped in and out down the page. Judged on the tile
+        # (the image's parent) when the image is a crop inside it. Horizontal
+        # shelves are exempt: they scroll, and start at the margin at rest.
+        if (el.type == "Image" and screen["name"].split("@")[0] in SHELF_PAGES
+                and not in_shelf(el)):
+            box = el.parent if (el.parent is not None and el.w > el.parent.w) else el
+            if box.x < 8:
+                findings.append(("EDGE", el,
+                                 f"a photograph starts at x={box.x:.0f} on a page of "
+                                 f"shelves; keep it inside the 16 point margin"))
 
         # A PHOTOGRAPH CROPPED BY ITS OWN CARD (2026-10-10). A `.fill` image
         # reports the size its picture wants, and XCUITest lists it even when

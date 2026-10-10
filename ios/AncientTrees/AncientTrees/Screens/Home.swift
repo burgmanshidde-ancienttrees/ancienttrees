@@ -416,7 +416,22 @@ struct HomeView: View {
     // skipped when it has nothing for where you are. The designs Hidde chose
     // are board D3 of the Discover canvas.
 
-    private let threeAcross = Array(repeating: GridItem(.flexible(), spacing: 2), count: 3)
+    private let threeAcross = Array(repeating: GridItem(.flexible(), spacing: 8), count: 3)
+
+    /// THE GRIDS STAY INSIDE THE PAGE'S MARGIN (Hidde, 2026-10-10: "het
+    /// klopt weer niet op de discover pagina"). Edge to edge with square tiles
+    /// is for a page that IS a grid, your own collection: Instagram's profile,
+    /// the library in Apple Photos, our My trees. A page made of shelves keeps
+    /// one left edge and rounds what floats in it: the App Store, Airbnb,
+    /// AllTrails' Explore, the collections under Photos' grid
+    /// (CONVENTIONS.md, "Corners", corrected the same day). Bleeding three
+    /// grids out of the margin between rounded shelves made Discover's left
+    /// edge jump in and out down the page.
+    private func grid<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
+        LazyVGrid(columns: threeAcross, spacing: 8, content: content)
+            .padding(.horizontal, 16)
+    }
+    private static let tileShape = RoundedRectangle(cornerRadius: 12, style: .continuous)
 
     /// The tag on a tree tile: its city, and the distance when it is within a
     /// day trip of you (Hidde, 2026-10-10: "the first trees can be city · 1.2km").
@@ -427,11 +442,11 @@ struct HomeView: View {
         return "\(t.city) · " + (d < 10 ? String(format: "%.1f km", d) : "\(Int(d.rounded())) km")
     }
 
-    /// Three across, edge to edge, a hairline apart: My trees' grid.
+    /// Three across inside the margin, rounded: see grid().
     private func tileGrid(_ trees: [Tree]) -> some View {
-        LazyVGrid(columns: threeAcross, spacing: 2) {
+        grid {
             ForEach(trees) { t in
-                NavigationLink(value: Route.tree(t.id)) { CollectedTile(kind: .ours(t), city: tag(t)) }
+                NavigationLink(value: Route.tree(t.id)) { CollectedTile(kind: .ours(t), city: tag(t)).clipShape(Self.tileShape) }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-card")
             }
@@ -441,7 +456,7 @@ struct HomeView: View {
     /// A tile that opens somewhere other than its own tree: an island, a
     /// record, a list. The tag says what it opens.
     private func tile(_ tree: Tree, _ label: String, to route: Route) -> some View {
-        NavigationLink(value: route) { CollectedTile(kind: .ours(tree), city: label) }
+        NavigationLink(value: route) { CollectedTile(kind: .ours(tree), city: label).clipShape(Self.tileShape) }
             .buttonStyle(.plain)
     }
 
@@ -515,10 +530,11 @@ struct HomeView: View {
         if wantTrees.isEmpty {
             VStack(alignment: .leading, spacing: 12) {
                 ShelfHeader(title: "Want to visit")
-                LazyVGrid(columns: threeAcross, spacing: 2) {
+                grid {
                     ForEach(0..<3, id: \.self) { i in
                         Brand.surfaceMuted
                             .aspectRatio(3.0 / 4.0, contentMode: .fit)
+                            .clipShape(Self.tileShape)
                             .overlay {
                                 if i == 0 {
                                     Image(systemName: "bookmark")
@@ -528,7 +544,6 @@ struct HomeView: View {
                             }
                     }
                 }
-                // Bleeds to the edges, like My trees' grid.
                 .accessibilityHidden(true)
                 Text("You can keep a tree for later by tapping the bookmark on its page.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
@@ -618,12 +633,11 @@ struct HomeView: View {
 
         if deck.islands.count >= 3 {
             section("Tree islands") {
-                LazyVGrid(columns: threeAcross, spacing: 2) {
+                grid {
                     ForEach(deck.islands.prefix(6), id: \.slug) { c in
                         if let face = catalogue.face(city: c.slug) { tile(face, c.name, to: .city(c.slug)) }
                     }
                 }
-                // Bleeds to the edges, like My trees' grid.
             }
         }
 
@@ -638,21 +652,19 @@ struct HomeView: View {
 
         if deck.records.count == 3 {
             section("The records") {
-                LazyVGrid(columns: threeAcross, spacing: 2) {
+                grid {
                     ForEach(deck.records, id: \.label) { r in tile(r.tree, r.label, to: r.route) }
                 }
-                // Bleeds to the edges, like My trees' grid.
             }
         }
 
         if deck.lists.count >= 3 {
             section("Lists with an opinion") {
-                LazyVGrid(columns: threeAcross, spacing: 2) {
+                grid {
                     ForEach(deck.lists, id: \.collection.slug) { l in
                         tile(l.face, l.collection.title, to: .collection(l.collection.slug))
                     }
                 }
-                // Bleeds to the edges, like My trees' grid.
             }
         }
 
