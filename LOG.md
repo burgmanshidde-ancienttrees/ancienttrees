@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, continuation 2) - Valencia batch 2
+
+Opening hours (jardibotanic.org basic-information page) added to the access line of vlc_010, 025-029, six Botanic Garden trees whose line had only "small fee". The price is not on that page, so none is claimed. Other Valencia gaps (pins, register ids for vlc_005/007/010) have no evidence reachable; 12 recorded as dead ends. The 15 READY leads were not written: a new tree must be rich or reader-added (2026-10-09 rule). preflight 0 problems.
+
 ## 2026-10-10 (night run, continuation) - Copenhagen enrichment
 
 Dansk Træregister id and page on 20 trees (cop_001 to cop_028 subset). The ids were already in each tree's own sources; I fetched all 20 pages and every one names the right genus. **Caveat:** that register is run by Dansk Dendrologisk Forening, a society, not a government body, so "official register" in the fact card is a stretch for these; if Hidde wants government-only, strip `register_*` on those 20. No measurements on dendron.dk, no pins, no access or season changes. 5 gaps dead-ended.
