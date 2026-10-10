@@ -67,7 +67,11 @@
       },
       "how_to_recognise": "On the lawn beside Chancellor Day Hall, at the foot of the hill. The lawn is small and the fan-shaped ginkgo leaves are unmistakable.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/arbre-aux-quarante-ecus-0"
+      }
     },
     {
       "id": "mtl_002",
@@ -97,7 +101,18 @@
       },
       "how_to_recognise": "A big oak standing in a stand of white spruce roughly fifty years old, off a secondary trail leading from the Olmsted Trail. A primary branch has torn out and left a major cavity in the trunk.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/chene-rouge-1"
+      },
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the old red oak turns a rich red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "mtl_003",
@@ -127,7 +142,12 @@
       },
       "how_to_recognise": "A yew fifteen metres tall, standing alone on a gentle slope among thinly scattered gravestones. The adjoining cemetery has a Japanese yew too: this is the Mount Royal Cemetery one, entered from the chemin de la Foret side.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/if-japonais-0"
+      },
+      "height_m": 15
     },
     {
       "id": "mtl_004",
@@ -146,9 +166,10 @@
       "story": "This pine is 7.5 metres tall and 18 metres wide. It has spent about 150 years growing sideways.\n\nIt sits in the middle of the open ground just inside the main gate of Notre-Dame-des-Neiges, which makes it the easiest tree on this page to find. Walk in and it is the thing in front of you, shaped rather more like a mushroom than a pine. The trunk is 85 centimetres across at chest height and 97 at the base.\n\nIt was planted deliberately, and early. Between about 1870 and 1872 the cemetery's administration bought thousands of trees to landscape the new pathways during its first phase of development, and this Austrian pine was one of them. That makes it part of the cemetery's opening gesture rather than something that turned up later, and it has been marking the entrance ever since, through every funeral that has come through the gate behind it.\n\nLook at the trunk closely and it is punched with small round holes, the work of a woodpecker going after what lives under the bark. The tree does not appear to mind.\n\nEverything known about it comes from one place, the city of Montreal's own dendrological page for this specimen. No outside source has published a word about it, which for a tree standing in plain sight at the gate of Canada's busiest cemetery is a strange gap.",
       "verified_sources": [
         "https://montroyal.montreal.ca/arbre-remarquable/pin-noir-dautriche",
-        "https://montroyal.montreal.ca/paysage-cimetiere-notre-dame-des-neiges"
+        "https://montroyal.montreal.ca/paysage-cimetiere-notre-dame-des-neiges",
+        "https://www.cimetierenotredamedesneiges.ca/en/hours-and-access"
       ],
-      "access": "Free; Notre-Dame-des-Neiges is an active, operating cemetery open to the public during its posted daily visiting hours",
+      "access": "Free. The cemetery grounds are listed open Monday to Sunday, 8 a.m. to 5 p.m. (cemetery's own hours page, read October 2026); it is an active cemetery, so keep to the paved roads and paths.",
       "transport": "Cote-des-Neiges metro station, roughly 15 minute walk to the main gate",
       "photo": {
         "url": null,
@@ -158,7 +179,12 @@
       },
       "how_to_recognise": "The easiest on this page. Walk in the main gate of Notre-Dame-des-Neiges and it is the thing in front of you, wider than it is tall and shaped more like a mushroom than a pine.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/pin-noir-dautriche"
+      },
+      "height_m": 7.5
     },
     {
       "id": "mtl_005",
@@ -188,7 +214,11 @@
       },
       "how_to_recognise": "On the margin of the Smith House property, on the edge beside the Olmsted Trail. A mature American elm is a rare thing here, which is most of how you know it.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/orme-damerique"
+      }
     },
     {
       "id": "mtl_006",
@@ -207,9 +237,10 @@
       "story": "This tree was here before the cemetery was. It grew on a florist's private grounds, and the graves came later.\n\nPatrick McKenna arrived in Montreal from Ireland in 1847 and by 1851 had founded what is described as Canada's oldest florist house. The silver maple stood as an ornamental on his own horticultural property while that ground was still his field. Notre-Dame-des-Neiges incorporated in 1907, five years before he died, and the burial sections were laid out around the trunk.\n\nNobody wrote down the year he planted it, so the honest range is somewhere inside his sixty years on the land, which comes out at roughly 150 years. What is measured rather than inferred is the trunk: 185 centimetres across at chest height, 191 at the base, a girth of 5.8 metres. That is the second-thickest tree in the cemetery and comfortably the largest on this page.\n\nIt is in the southeast section, plot ND 7002-9030, near where chemin de la Cote-des-Neiges meets chemin Remembrance, on the edge of a burial island. The plot number is the useful part of that address: the map pin will get you to the right corner of a very large cemetery, and the number gets you the rest of the way.\n\nThe city of Montreal's survey of the mountain is the only published account of this maple.",
       "verified_sources": [
         "https://montroyal.montreal.ca/arbre-remarquable/erable-argente",
-        "https://montroyal.montreal.ca/paysage-cimetiere-notre-dame-des-neiges"
+        "https://montroyal.montreal.ca/paysage-cimetiere-notre-dame-des-neiges",
+        "https://www.cimetierenotredamedesneiges.ca/en/hours-and-access"
       ],
-      "access": "Free; Notre-Dame-des-Neiges is an active, operating cemetery open to the public during its posted daily visiting hours",
+      "access": "Free. The cemetery grounds are listed open Monday to Sunday, 8 a.m. to 5 p.m. (cemetery's own hours page, read October 2026); it is an active cemetery, so keep to the paved roads and paths.",
       "transport": "Cote-des-Neiges metro station, roughly 15 minute walk to the main gate, then a further walk within the grounds to the southeast section",
       "photo": {
         "url": null,
@@ -219,7 +250,11 @@
       },
       "how_to_recognise": "Plot ND 7002-9030 is the useful address: the pin gets you to the right corner of a very large cemetery and the plot number gets you the rest of the way. It is the thickest tree in sight, 5.8 metres round.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/erable-argente"
+      }
     },
     {
       "id": "mtl_007",
@@ -237,9 +272,10 @@
       },
       "story": "The way this tree's age was worked out is that somebody read the gravestone beside it. The planting matches a death date inscribed there, which makes it a private act of commemoration by one family, and a lovely but slightly shaky way to date a tree.\n\nTaken at face value it puts the honey locust at roughly a hundred years, give or take a decade either way. The city's survey recorded it at eighty to ninety years in 2011, so add the years since. The trunk is 65 centimetres across and 81 at the base, which made it the largest of the eleven honey locusts scattered through Notre-Dame-des-Neiges when the count was taken.\n\nThe crown is the odd part. It is displaced and asymmetrical, the whole weight of it thrown off to one side toward the dome of Saint-Joseph's Oratory on the horizon, and a long scar runs where a large branch came away. Honey locust resists rot and tolerates city air better than most trees, which is why it turns up on so many streets and why one can carry an injury like that for decades.\n\nThe address is section B, and that is as precise as the record gets, so allow time. The city's dendrological page for it is the only published description of this tree anywhere.",
       "verified_sources": [
-        "https://montroyal.montreal.ca/arbre-remarquable/fevier-epineux"
+        "https://montroyal.montreal.ca/arbre-remarquable/fevier-epineux",
+        "https://www.cimetierenotredamedesneiges.ca/en/hours-and-access"
       ],
-      "access": "Free; Notre-Dame-des-Neiges is an active, operating cemetery open to the public during its posted daily visiting hours",
+      "access": "Free. The cemetery grounds are listed open Monday to Sunday, 8 a.m. to 5 p.m. (cemetery's own hours page, read October 2026); it is an active cemetery, so keep to the paved roads and paths.",
       "transport": "Cote-des-Neiges metro station, roughly 15 minute walk to the main gate, then a further walk within the grounds to section B",
       "photo": {
         "url": null,
@@ -249,7 +285,11 @@
       },
       "how_to_recognise": "The crown is thrown right off to one side, toward the dome of Saint-Joseph's Oratory, with a long scar where a big branch came away. Section B is as precise as the record gets, so allow time.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/fevier-epineux"
+      }
     },
     {
       "id": "mtl_008",
@@ -274,7 +314,18 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "When McGill University bought the top of Westmount hill in 1895 to keep it from being built on, this oak was already about thirty years old.\n\nThe observatory the university had in mind never went up. In 1940 it sold the hill to the City of Westmount on the condition that the land stay a park or playground in perpetuity, and that deed is why the summit carries hardwood forest instead of houses.\n\nThe city's heritage survey measured the tree in 2011 at 114 centimetres through the trunk, roughly 3.6 metres round, and put it at over 145 years then, so over 160 now. It ranked as the second-largest oak in Summit Woods. The wood around it is a red oak, sugar maple and white ash mix that the city calls rare in the Montreal area today, surviving almost nowhere but this mountain.\n\nIt stands along the main trail near the summit and can be seen from the path without leaving it. Two more thick red oaks are recorded here, further down a steep unmaintained slope, which is a different kind of walk altogether. A late black cherry grows on the same easy stretch.\n\nThe tree's own figures come from that single official survey, which is why the age here is a band rather than a date, and why the pin marks the stretch of trail rather than the exact trunk.",
-      "how_to_recognise": "You can recognise it by the trunk, about 3.6 metres round, the second-thickest oak in the park. It stands beside the main trail near the summit, with a black cherry close by; the other wide oaks are off the path down a steep slope."
+      "how_to_recognise": "You can recognise it by the trunk, about 3.6 metres round, the second-thickest oak in the park. It stands beside the main trail near the summit, with a black cherry close by; the other wide oaks are off the path down a steep slope.",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/chene-rouge-damerique-0"
+      },
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the red oak turns a rich red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "mtl_010",
@@ -306,6 +357,10 @@
         ],
         "label": "October to November: clear yellow, one of the most reliable autumn trees",
         "kind": "autumn colour"
+      },
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/tulipier-de-virginie"
       }
     },
     {
@@ -331,7 +386,11 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "McGill's own alumni magazine once described this tree as peering in the windows of the Redpath Museum. That was in 2001, and it is still doing it.\n\nThe black walnut stands just inside the Roddick Gates, in the line of trees along Sherbrooke Street West at the front of the lower campus. The city's heritage survey puts its trunk at 82 centimetres across at chest height, about 2.6 metres round, and rates both its physiological and its structural health as excellent, which is a generous report card for a tree that has spent its life on the edge of a downtown street.\n\nThe age needs a caveat. The survey says it was planted at the turn of the century, a phrase that in French can point at either end of the nineteenth. Read against the same page's own note that the tree is more than a hundred years old, it lands at roughly 1900 to 1910, so over 110 years now. Nobody has narrowed it further, and the band here stays wide because of it.\n\nThat is more than a century of students coming through the gates underneath it. Black walnut is not a common street tree in Montreal, and while the species can grow half as thick again as this one, a trunk this size on Sherbrooke Street is worth the two minutes it takes to stop.",
-      "how_to_recognise": "You can recognise it by the long leaves, a dozen or more narrow leaflets to a stalk, and the dark furrowed trunk about 2.6 metres round. It stands just inside the Roddick Gates, on the Sherbrooke Street side of the lower campus."
+      "how_to_recognise": "You can recognise it by the long leaves, a dozen or more narrow leaflets to a stalk, and the dark furrowed trunk about 2.6 metres round. It stands just inside the Roddick Gates, on the Sherbrooke Street side of the lower campus.",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/noyer-noir-0"
+      }
     },
     {
       "id": "mtl_012",
@@ -355,7 +414,11 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "At roughly 75 years old this is one of the youngest trees on this map, and the city still counts it among the largest purple beeches on Mont-Royal.\n\nThat says as much about purple beeches here as it does about this one. It went in around the middle of the twentieth century, part of a mixed row planted along the terrace between the Redpath and McLennan library pavilions, and by the city's own description it matches its neighbours in size and shape. The one thing that separates it from the line is colour: dark purple foliage in a row of ordinary green.\n\nIt sits on the axis facing Redpath Hall, finished in 1893 and one of the oldest buildings on the campus, which makes the building comfortably older than the tree looking at it. Generations of students have crossed that terrace between lectures without registering that the odd-coloured one in the row is on a heritage list.\n\nThe survey measured it at 56 centimetres through the trunk, about 1.8 metres round, and called it around 60 years old when the work was done in 2011, which is where the 75 comes from. No other source names this tree, so both numbers rest on that single page.\n\nThe black walnut at the Roddick Gates, the tulip tree by the Redpath Museum and the ginkgo further up are all a few minutes away.",
-      "how_to_recognise": "You can recognise it by the colour: dark purple leaves in a row of otherwise green trees of the same size and shape. It stands in the terrace alignment directly facing Redpath Hall, between the two library pavilions."
+      "how_to_recognise": "You can recognise it by the colour: dark purple leaves in a row of otherwise green trees of the same size and shape. It stands in the terrace alignment directly facing Redpath Hall, between the two library pavilions.",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/hetre-europeen-feuillage-pourpre"
+      }
     },
     {
       "id": "mtl_013",
@@ -395,6 +458,10 @@
         "status": "approved",
         "width": 375,
         "height": 500
+      },
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/arbre-de-katsura"
       }
     },
     {
@@ -419,7 +486,12 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "The dawn redwood was known only from fossils until 1941, when foresters in western China found a living grove that nobody in the West believed still existed. Seeds went out to botanical gardens and universities worldwide starting in 1948, and this tree is one result of that shipment.\n\nIt was planted in 1965 in the courtyard of McGill's newly-opened Stewart Biology Building by C. Darnley Gibbs, the botany professor who filled the sheltered space with specimen trees. The tree beside it, a katsura from the same planting, is on this list too. Montreal's own remarkable-tree register calls this one probably the largest dawn redwood in Quebec, its trunk forking into two stems, the wider more than a metre round.\n\nIt should not be confused with an older dawn redwood across town at Mount Royal Cemetery, planted in 1949 as a memorial and stunted by the local climate into a low, sprawling shrub barely three metres tall. This one, in a sheltered courtyard and sixteen years younger, has grown into a proper tree with real height.\n\nOnly one source has been found for this specimen so far, Montreal's own register. A second is still being looked for, and if you know more about it, tell us.",
-      "how_to_recognise": "You can recognise it by the forked trunk, the wider stem over a metre round, and its feathery foliage, unusual among conifers in dropping every autumn. It stands in the same courtyard as the McGill Katsura, planted the same year."
+      "how_to_recognise": "You can recognise it by the forked trunk, the wider stem over a metre round, and its feathery foliage, unusual among conifers in dropping every autumn. It stands in the same courtyard as the McGill Katsura, planted the same year.",
+      "official_register": {
+        "name": "Arbres remarquables du Mont-Royal (Ville de Montreal, site officiel du Mont-Royal)",
+        "url": "https://montroyal.montreal.ca/arbre-remarquable/metasequoia-de-chine"
+      },
+      "height_m": 15
     }
   ]
 }
