@@ -40,11 +40,30 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
     @State private var livePoints: CGFloat?
     /// 0 at the half stop, 1 when the sheet is the page (SheetPageProgressKey).
     @State private var pageProgress: CGFloat = 0
+    /// The whole screen's height, for the parallax below.
+    @State private var screenHeight: CGFloat = 0
+
+    /// THE MAP RIDES THE SHEET (Hidde, 2026-10-10: "als je de lijst naar boven
+    /// scrolled gaat de kaart heel clunky mee ipv soepel zoals bij
+    /// polarsteps"). Above the half stop the map slides up at half the sheet's
+    /// speed, frame by frame, as one moved layer: nothing is redrawn and the
+    /// camera does not re-aim, so it glides. Below half it stays put and the
+    /// camera's content inset does the work, as before. On release it springs
+    /// with the sheet, keyed on the stop, so a drag follows the finger and a
+    /// landing eases.
+    private var parallax: CGFloat {
+        guard screenHeight > 0 else { return 0 }
+        let half = SheetHeight.half.points(in: screenHeight)
+        let live = livePoints ?? height.points(in: screenHeight)
+        return -max(0, live - half) / 2
+    }
 
     var body: some View {
         ZStack(alignment: .top) {
             map
                 .ignoresSafeArea(edges: [.top, .horizontal])
+                .offset(y: parallax)
+                .animation(.spring(duration: 0.28), value: height)
                 // The map is told how much of it the sheet is covering, so its
                 // camera aims at the middle of what a person can see rather
                 // than the middle of the view. See SheetLiftKey.
@@ -69,6 +88,7 @@ struct MapWithSheet<Map: View, Header: View, Content: View, Floating: View>: Vie
                 .environment(\.sheetPageProgress, pageProgress)
         }
         .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
+        .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { screenHeight = $0 }
         // Zero means NOT MEASURED YET, not "the sheet is flat", which is the
         // difference between falling back to the stop and pinning a control to
         // the bottom of the screen for a frame. PlacePin already made this

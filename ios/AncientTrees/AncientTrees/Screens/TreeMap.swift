@@ -791,7 +791,11 @@ struct TreeMap: UIViewRepresentable {
             // Clamped at 55 percent, because at full height the sheet leaves a
             // sliver and an inset that large gives the camera almost no viewport
             // to aim into.
-            let bottom = min(coverage, map.bounds.height * 0.55)
+            // Capped at the HALF stop since 2026-10-10: above it the map is
+            // moved as a layer (MapWithSheet.parallax), and an inset that also
+            // grew would re-aim the camera on release, which is the jump that
+            // made the drag feel clunky.
+            let bottom = min(coverage, SheetHeight.half.points(in: map.bounds.height))
             if abs(map.contentInset.bottom - bottom) > 1 {
                 map.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottom, right: 0)
             }
