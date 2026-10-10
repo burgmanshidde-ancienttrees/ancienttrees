@@ -25,10 +25,19 @@ struct CollectedTile: View {
     var body: some View {
         Color.clear
             .aspectRatio(3.0 / 4.0, contentMode: .fit)
-            .overlay { picture }
+            // The photograph is decoration to VoiceOver (the tag names the
+            // place), and a landscape frame filling a 3:4 tile is wider than
+            // the tile before the clip, which read as off-screen (appfit).
+            .overlay { picture.accessibilityHidden(true) }
             .overlay(alignment: .bottomLeading) { tag.padding(6) }
             .clipped()
             .contentShape(.rect)
+            // ONE element the size of the tile, read as its tag. A landscape
+            // photograph filling a 3:4 tile is wider than the tile before the
+            // clip, and its own frame read as running off the screen (appfit,
+            // 2026-10-10, the third column of Discover's grid).
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(city ?? "")
     }
 
     @ViewBuilder private var picture: some View {

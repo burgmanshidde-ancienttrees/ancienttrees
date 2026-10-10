@@ -401,6 +401,18 @@ def check(screen):
             findings.append(("CLIPPED", el,
                              f"starts at x={el.x:.0f}, so it hangs off the left edge"))
 
+        # A PHOTOGRAPH CROPPED BY ITS OWN CARD (2026-10-10). A `.fill` image
+        # reports the size its picture wants, and XCUITest lists it even when
+        # SwiftUI hides it, so a landscape photograph in a 3:4 tile in the
+        # third column of a grid read as 48 points off the screen while the
+        # tile around it, which is what clips it, sat exactly on the edge.
+        # The same reasoning as the shelf exemption: overflow nobody can see
+        # is not a fault. Only an Image, only inside a parent that itself fits.
+        if (el.type == "Image" and el.parent is not None
+                and el.parent.x >= -SAME and el.parent.right <= W + SAME
+                and el.w > el.parent.w):
+            continue
+
         if el.right > W + SAME and not in_shelf(el):
             findings.append(("CLIPPED", el,
                              f"ends at {el.right:.0f} on a {W:.0f} point screen, "

@@ -474,6 +474,10 @@ struct HomeView: View {
                 .overlay(alignment: .topLeading) { TagPill(text: "At its best now").padding(12) }
                 .clipShape(.rect(cornerRadius: 14))
                 .contentShape(.rect)
+                // One element, as the stock hero was: the photograph is wider
+                // than the card before the clip, and VoiceOver reads the card.
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel("\(s.word) is here. \(s.hero.name), at its best now.")
             }
             .buttonStyle(.plain)
             .padding(.horizontal, 16)

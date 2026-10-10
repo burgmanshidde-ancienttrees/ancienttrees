@@ -20,6 +20,7 @@
 ## 2026-10-10 (session) - Discover rebuilt in the app (board D3)
 
 **Changed, in the next app build:** Discover now opens on the season where you are ("Autumn is here", the south gets spring), then your Want to visit trees, six trees at their best now, the cities, the open ambassador seat of your own city, countries, islands, species as photo pills, the three records, six lists, and ends in "More trees near you": every photographed tree, nearest first, three across, loading as you scroll. One tile everywhere (My trees' 3:4 grid, edge to edge), one white tag, "City · 1.4 km" within a day trip. Removed: the stock hero (kept as fallback), the oldest/tallest/thickest/best-in-country shelves, the species list. Spec: docs/superpowers/specs/2026-10-10-discover-redesign-design.md.
+**Layout gate:** appfit on the iPhone SE found one fault, a landscape photograph in the grid's third column reporting 48 points past the screen while its tile clipped it. appfit now exempts an Image cropped by its own on-screen card, the shelf exemption's reasoning; nothing else about the check changed. Tiles and the season hero now read to VoiceOver as one element each.
 **Not yet:** the website homepage (Hidde asked for the app; the web board is redrawn from D3 first), a gardens and parks row (the app has no park page), and the season hero shows each tree's lead photograph, which in Copenhagen is often a winter frame under "Autumn is here".
 
 ## 2026-10-10 (session) - Which trees were collected in the app, and better PostHog insight
