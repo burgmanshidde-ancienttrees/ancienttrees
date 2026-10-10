@@ -14,6 +14,8 @@ Then Copenhagen batch 2 (7 more: register record, three girths/heights; cop_002 
 
 Warsaw: 13 trees enriched (CRFOP register records for 11, six girths/heights, botanical garden prices and hours for war_012/013). The measurements came from Polish Wikipedia's reproduction of Warsaw's BIP monuments list, not a page I opened, so they are second-hand. lazienki-krolewskie.pl fails TLS from the runner (curl exit 60), blocklist candidate. Pins for war_009/016/032/037 still open.
 
+Warsaw batch 2: 12 more trees with CRFOP records, 10 with girth/height from the Polish Wikipedia wikitext (second-hand again; war_036 figures read as cm and m without units). war_005's register coordinate is 287 m from our approximate pin: unresolved, needs a look.
+
 Nara: thin yield. One register record added (nra_006 Kasuga Taisha nagi, Nara City's own page for that tree); 21 gaps dead-ended. nra_003's Byakugo-ji camellia only has a line on a list page, so I did not record it as a record. The ministry giant-tree database gives facility points, not trunks, so Nara's pin gaps stay open.
 
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
