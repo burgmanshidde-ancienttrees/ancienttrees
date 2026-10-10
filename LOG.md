@@ -8,6 +8,8 @@ Rung 2 checked: the red deploy was Houston's "hidden gem" source, already fixed 
 
 Then Copenhagen batch 2 (7 more: register record, three girths/heights; cop_002 and cop_004 pins have no evidence; the verify agent noted the Palm House is under renovation per the Natural History Museum, so cop_002's paid-entry line needs a check) and Chicago (12 trees: Forest Preserves of Cook County Champion Tree Register ids plus girth and height converted from inches/feet for chi_007 to chi_017, Illinois Big Tree Register ids and measurements for chi_004/005). fpdcc.com and the Edgebrook golf page return a Cloudflare challenge, so chi_004/005 access (golf green fee) stays unconfirmed and needs a session with a browser. chi_001/002/003/006 have no pin or register evidence. preflight 0 problems.
 
+Warsaw: 13 trees enriched (CRFOP register records for 11, six girths/heights, botanical garden prices and hours for war_012/013). The measurements came from Polish Wikipedia's reproduction of Warsaw's BIP monuments list, not a page I opened, so they are second-hand. lazienki-krolewskie.pl fails TLS from the runner (curl exit 60), blocklist candidate. Pins for war_009/016/032/037 still open.
+
 Nara: thin yield. One register record added (nra_006 Kasuga Taisha nagi, Nara City's own page for that tree); 21 gaps dead-ended. nra_003's Byakugo-ji camellia only has a line on a list page, so I did not record it as a record. The ministry giant-tree database gives facility points, not trunks, so Nara's pin gaps stay open.
 
 ## 2026-10-10 (session) - Collecting and uncollecting work the same on the app and the website
