@@ -339,7 +339,11 @@
       "how_to_recognise": "Two tall, narrow elms opposite house numbers 29 and 35. The larger of the pair carries a huge swollen collar about 1.5 metres up the trunk, where it was grafted.",
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "height_m": 15
+      "height_m": 15,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682944",
+        "url": null
+      }
     },
     {
       "id": "lee_009",
@@ -607,7 +611,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682937",
         "url": null
-      }
+      },
+      "girth_cm": 405,
+      "height_m": 18
     },
     {
       "id": "lee_016",
@@ -753,7 +759,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1688396",
         "url": null
-      }
+      },
+      "girth_cm": 395,
+      "height_m": 25
     },
     {
       "id": "lee_021",
@@ -921,7 +929,14 @@
       },
       "how_to_recognise": "You can recognise it by turning a leaf over: white felt underneath, dark green on top, where the city's common limes are green on both sides. It stands on the Druifstreek, opposite the Blokhuispoort.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "label": "July, when the late-flowering silver lime fills the street with honey scent",
+        "kind": "flowers"
+      }
     },
     {
       "id": "lee_026",
@@ -950,7 +965,14 @@
       },
       "how_to_recognise": "You can recognise it by the leaf: white felt underneath, dark green on top, where the city's common limes are green on both sides. It stands on the Eewal, opposite Restaurant Spinoza at number 50.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "label": "July, when the late-flowering silver lime fills the street with honey scent",
+        "kind": "flowers"
+      }
     },
     {
       "id": "lee_028",
@@ -1185,7 +1207,19 @@
       "story": "This copper beech used to have a twin. Look at the other side of the front garden and you will find a ginkgo.\n\nThe Nieuw Sint Anthony Gasthuis was built between 1862 and 1864 to a design by F. Stoett, and two copper beeches went into its front garden, one on each side, each mirroring the other. The national register puts their planting somewhere between 1860 and 1870 and suspects, without stating it as fact, that they arrived with the building itself. That would make this one around 160 years old.\n\nThe western tree lost. A wound opened in its trunk, a fungus nobody identified got into it, and it declined quickly. When inspectors came back in 2017 they found it had been felled and a ginkgo planted where it had stood. Symmetry is a hard thing to hold on to for a century and a half.\n\nThe eastern tree is the one still standing, and it has been looked after. The Bomenstichting made it their adoption tree in 1987, and the register still describes it as in good condition. Look down at the base of the trunk: the boundary fence has been cut and reshaped around the tree rather than the other way round.\n\nThe register carries no measurement of the trunk, and only one coordinate for what were once two trees, so the pin marks the garden rather than the beech.",
       "how_to_recognise": "You can recognise it by the purple-black leaves, and by what stands opposite it: a ginkgo, planted where its twin was felled. It stands on the eastern side of the front garden of the Nieuw Sint Anthony Gasthuis.",
       "girth_cm": 430,
-      "height_m": 24
+      "height_m": 24,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682926",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper leaves turn",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "lee_037",
@@ -1220,7 +1254,11 @@
         "kind": "autumn colour"
       },
       "girth_cm": 315,
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682928",
+        "url": null
+      }
     },
     {
       "id": "lee_039",
