@@ -648,37 +648,46 @@ struct CollectView: View {
     /// The lane picker, pinned. Opaque, because a pinned header with a clear
     /// background has the list sliding visibly underneath it.
     private var lanePicker: some View {
-        Picker("", selection: $lane) {
-            // "Favourites", not "Want to see" (Hidde, 2026-08-26: "dat zou ik
-            // niet eens want to see noemen, ik zou het gewoon favorite trees
-            // maken"). A heart is not a plan: people heart a tree they have
-            // already seen and want to keep, which is exactly why the two
-            // lists are independent now.
-            // "My trees", not "Collected" (Hidde, 2026-08-26: "collected als
-            // woord wordt my trees, en je voegt een boom toe aan je trees door
-            // er een foto van te maken"). Collected described the mechanism;
-            // his word describes what you end up with, and it is the same word
-            // the tab wears, which is the point rather than a clash: this list
-            // IS the page.
-            // "Collected" and "Want to visit" (Hidde, 2026-10-09: "both
-            // titles really say what we want people to do > visit and collect
-            // trees"). This reverses his 2026-08-26 "My trees" and
-            // "Favourites" on purpose: the lanes now name the two acts.
-            Text("Collected").tag(Lane.seen)
-            Text("Want to visit").tag(Lane.want)
+        // TABS, NOT A SEGMENTED SWITCH (Hidde, 2026-10-10: "the head section
+        // of the my trees page is really rommelig aligned"). Polarsteps,
+        // Instagram and Strava split a profile's lists with underlined tabs
+        // that start on the page's left edge; a grey segmented box was a
+        // third control style in a header that already had pills and a
+        // circle. Plain words, no counts: the total is on the All chip under
+        // them (Hidde: "skip the counts", the same day).
+        //
+        // "Collected" and "Want to visit" (Hidde, 2026-10-09: "both titles
+        // really say what we want people to do > visit and collect trees").
+        // Still pinned as the section header, for the reason given above:
+        // the control must not move while the list under it is rebuilt.
+        HStack(spacing: 24) {
+            laneTab("Collected", .seen, id: "lane-collected")
+            laneTab("Want to visit", .want, id: "lane-want")
+            Spacer(minLength: 0)
         }
-        .pickerStyle(.segmented)
+        .overlay(alignment: .bottom) {
+            Rectangle().fill(Brand.hairline).frame(height: 1)
+        }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("collect-lane")
-        // ON THE 8-POINT GRID (Hidde, 2026-10-10: "de vertical alignment kan
-        // het nog wat dichter bij elkaar - check even designstandaarden"):
-        // 16 from the header (its own 12 plus 4), 12 to the chips, 12 to the
-        // grid, measured to what is seen rather than to the chips' 44-point
-        // touch frames, which carry 6 invisible points above and below.
         .padding(.top, 4)
-        // NO FILL BEHIND IT. It needed one while it was a pinned header on a
-        // full-page scroller, with live content sliding under it. Inside the
-        // sheet it is an ordinary row in the list, and the opaque ground
-        // painted a white band across the sheet's own material.
+    }
+
+    private func laneTab(_ title: String, _ which: Lane, id: String) -> some View {
+        let on = lane == which
+        return Button { lane = which } label: {
+            Text(title)
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(on ? Brand.ink : Brand.inkSoft)
+                .padding(.vertical, 12)
+                .overlay(alignment: .bottom) {
+                    Rectangle().fill(on ? Brand.moss : .clear).frame(height: 2)
+                }
+                .contentShape(.rect)
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(on ? [.isSelected] : [])
+        .accessibilityIdentifier(id)
     }
 
     /// Everything the picker switches, rebuilt rather than reshuffled.
@@ -955,15 +964,15 @@ struct CollectView: View {
                             .clipShape(.circle)
                     } else if let e = profiles.me?.display_name ?? account.email, let first = e.first {
                         Text(String(first).uppercased())
-                            .font(.brand(20, .black, relativeTo: .title3))
+                            .font(.brand(24, .black, relativeTo: .title3))
                             .foregroundStyle(Brand.moss)
                     } else {
                         Image(systemName: "person.fill")
-                            .font(.system(size: 22))
+                            .font(.system(size: 24))
                             .foregroundStyle(Brand.moss.opacity(0.6))
                     }
                 }
-                .frame(width: 52, height: 52)
+                .frame(width: 60, height: 60)
                 // THE PHOTO OPENS THE SAME EDITOR AS THE NAME (Hidde,
                 // 2026-09-27: "I can only change my name and photo by pressing
                 // on my name but also should be photo"). Every profile screen
@@ -1000,7 +1009,7 @@ struct CollectView: View {
                             ?? account.email?.split(separator: "@").first.map(String.init)
                             ?? "Your trees")
                          : "Your trees")
-                        .font(.brand(17, .bold, relativeTo: .headline))
+                        .font(.brand(22, .bold, relativeTo: .title3))
                         .foregroundStyle(Brand.ink)
                         .lineLimit(1).truncationMode(.middle)
                         // A NAME IS 23 POINTS TALL and Apple's floor is 44,
@@ -1044,7 +1053,8 @@ struct CollectView: View {
                             // else in this codebase enlarges an already-44 frame,
                             // it does not fake one.
                             Button { peopleList = .followers } label: {
-                                Text("\(profiles.followers) followers")
+                                Text("\(profiles.followers)").fontWeight(.semibold).foregroundStyle(Brand.ink)
+                                    + Text(" followers")
                             }
                             .buttonStyle(.plain)
                             // 44 to hit, 20 to lay out: the touch frame
@@ -1055,7 +1065,8 @@ struct CollectView: View {
                             .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-followers")
                             Button { peopleList = .following } label: {
-                                Text("\(profiles.following) following")
+                                Text("\(profiles.following)").fontWeight(.semibold).foregroundStyle(Brand.ink)
+                                    + Text(" following")
                             }
                             .buttonStyle(.plain)
                             // 44 to hit, 20 to lay out: the touch frame
@@ -1066,7 +1077,7 @@ struct CollectView: View {
                             .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-following")
                         }
-                        .font(.caption).foregroundStyle(Brand.inkSoft)
+                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
                         // CAPPED, because two counts side by side cannot grow
                         // to five times their size and stay two counts. At the
                         // largest accessibility setting this read "0 followe...
@@ -1090,12 +1101,14 @@ struct CollectView: View {
             // Same 44pt circle and hairline as the other icon buttons here.
             if account.isSignedIn {
                 Button { findingPeople = true } label: {
+                    // A plain white disc, the country chips' white, centred
+                    // on the photo (2026-10-10): the outline made it one more
+                    // style in the header, and grey vanished on the sheet.
                     Image(systemName: "person.badge.plus")
                         .font(.system(size: 17, weight: .medium))
                         .foregroundStyle(Brand.ink)
                         .frame(width: 44, height: 44)
                         .background(Brand.surface, in: .circle)
-                        .overlay { Circle().strokeBorder(Brand.hairline, lineWidth: 1) }
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel("Find people")

@@ -627,11 +627,10 @@ final class AncientTreesUITests: XCTestCase {
     @MainActor
     func testTheCollectionLanePickerSwitchesBothWays() throws {
         let app = launch(["-tab=2", "-signed-in", "-collected=ams_001,ams_002"])
-        let picker = app.segmentedControls["collect-lane"]
-        XCTAssertTrue(picker.waitForExistence(timeout: 12), "no lane picker on Collection")
-
-        let seen = picker.buttons["Collected"]
-        let want = picker.buttons["Want to visit"]
+        // Tabs since 2026-10-10 (Collect.swift lanePicker), not a segmented control.
+        let seen = app.buttons["lane-collected"]
+        let want = app.buttons["lane-want"]
+        XCTAssertTrue(seen.waitForExistence(timeout: 12), "no lane tabs on Collection")
         XCTAssertTrue(want.exists && seen.exists, "the two lanes are not both there")
 
         // RETRIED, not a single tap, because switching lanes rebuilds

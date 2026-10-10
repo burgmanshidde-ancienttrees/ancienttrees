@@ -1757,6 +1757,8 @@ first, then account admin, a name editor and a delete panel stacked around the
 trees, which is the fault Hidde found in the app on 2026-08-21 ("my first button
 I see is to sign out or delete accounts") surviving a fortnight longer here.
 
+**The lists are TABS, underlined, from the page's left edge (2026-10-10, Hidde: "the head section of the my trees page is really rommelig aligned").** Polarsteps' Reizen / Statistieken, Instagram's grid tabs and Strava's profile tabs are plain words with a line under the one that is on, never a grey segmented box. No number on the tab: the total is on the All chip under it ("skip the counts", same day). App: Collect.swift `lanePicker`; web: `.lane-picker` in style.css.
+
 **The counts are the app's counts, not new ones**: trees you have stood in
 front of plus the ones you added, the species among them, the countries. Taken
 from Collect.swift so two surfaces cannot answer the same question differently.

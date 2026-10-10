@@ -2,6 +2,9 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (session) - My trees header redone
+
+**What changed:** Hidde called the My trees header messy and chose the lighter design on the canvas (no counts row). App: a larger photo (60) and name (22), the follow line with bold numbers, the find-people button as a plain white disc centred on the photo, and Collected / Want to visit as underlined tabs from the page's left edge instead of the grey segmented switch; the country chips are unchanged. Website: the profile page's switch is the same underlined tabs. Tests that tapped the segmented control now tap `lane-collected` / `lane-want`. CONVENTIONS.md "A profile page" records the tabs.
 ## 2026-10-10 (session) - Every row on Discover slides
 
 **What changed:** Hidde: "i expect to be able to slide all section in the discover tab". Every section on Discover is now one sideways shelf, the App Store and AllTrails way: trees at their best, Want to visit, tree islands, species, the records, lists and More trees near you join the cities, countries and walks that already slid. Tiles are 120 points wide so a fourth peeks in at the edge on every phone, everything snaps to the margin, lists hold up to twelve, and More trees near you ends the page as a shelf of twenty with See all opening the map. My trees keeps its grid. Built and looked at on the simulator; appfit on the iPhone SE passes Discover. **Not this change, seen in the same measurement:** the My trees follower and following buttons are 62 by 20 (under 44), and "Take me there" on the tree page sits 8 points off the column.

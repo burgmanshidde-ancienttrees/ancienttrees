@@ -931,11 +931,15 @@ ul.link-list li { margin-bottom: 0.5rem; font-size: 14px; }
    sheet body, which is the Distances switch: it was running flush to the
    panel wall for the reason the comment above gives. */
 .sheet-body > .acct-card { padding: 0 var(--gutter) var(--gutter); }
-.lane-picker { display: flex; gap: 4px; background: var(--cream); border: 1px solid var(--cream-dark);
-  border-radius: 999px; padding: 4px; margin-bottom: 1.1rem; }
-.lane { flex: 1; min-height: 44px; border: none; background: none; border-radius: 999px;
-  font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink-mid); cursor: pointer; }
-.lane.on { background: #fff; color: var(--ink); box-shadow: 0 1px 3px rgba(26,26,20,0.12); }
+/* The profile's two lists as underlined TABS, not a segmented switch
+   (2026-10-10, Hidde: "the head section of the my trees page is really
+   rommelig"): Polarsteps, Instagram and Strava split a profile's lists this
+   way, from the page's left edge. The app's Collect.swift lanePicker. */
+.lane-picker { display: flex; gap: 24px; border-bottom: 1px solid var(--cream-dark); margin-bottom: 1.1rem; }
+.lane { min-height: 44px; border: none; background: none; padding: 0; margin-bottom: -1px;
+  border-bottom: 2px solid transparent; font-family: var(--sans); font-size: 16px; font-weight: 600;
+  color: var(--ink-mid); cursor: pointer; }
+.lane.on { color: var(--ink); border-bottom-color: var(--moss); }
 /* What has happened to a tree you added, in the app's own words. */
 .mine-state { display: flex; align-items: center; gap: 7px; margin: 0.35rem 0 0;
   font-family: var(--sans); font-size: 12.5px; color: var(--ink-mid); }
