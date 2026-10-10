@@ -31,6 +31,9 @@ import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import SignInPanel from "../components/SignInPanel.astro";
 import { myTreesMapScript, mapHead } from "../lib/map";
 import { SHEET_JS } from "../lib/sheet-js";
+import { icon } from "../lib/icons";
+const BOOKMARK_GHOST = icon("bookmark-simple", "bold", "ic");
+const MAP_ICON = icon("map-trifold", "bold", "ic");
 
 const canonical = `${BASE_URL}/account`;
 ---
@@ -141,7 +144,13 @@ const canonical = `${BASE_URL}/account`;
     <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>
       <div id="country-chips-saved" class="country-chips" hidden></div>
       <ul id="saved-list" class="saved-list" hidden></ul>
-      <p id="saved-empty" hidden>You can keep a tree you want to visit by tapping its bookmark.</p>
+      {/* Discover's empty row (2026-10-10), the app's wantEmpty: three ghost
+          tiles in the grid's shape, one sentence, and the way to the map. */}
+      <div id="saved-empty" class="want-empty" hidden>
+        <div class="want-ghosts" aria-hidden="true"><span><Fragment set:html={BOOKMARK_GHOST} /></span><span></span><span></span></div>
+        <p>You can keep a tree you want to visit by tapping its bookmark.</p>
+        <a class="want-find" href="/explore"><Fragment set:html={MAP_ICON} />Find trees near you</a>
+      </div>
     </div>
   </section>
 

@@ -696,9 +696,10 @@ struct CollectView: View {
             if lane == .seen {
                 countryChips
                 let shots = sightings.newestShotByTree
-                // THREE ACROSS, Instagram's profile grid (Hidde, 2026-10-09).
-                // Bleeds to the sheet's edges like Instagram's does, so the
-                // photographs are as large as a phone allows.
+                // THREE ACROSS, Instagram's profile grid (Hidde, 2026-10-09),
+                // inside the page's 20-point margin like Discover's tiles
+                // (2026-10-10: "make it more consistent to that"), so the
+                // same tile sits at the same edge on both tabs.
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
                           spacing: 2) {
                     ForEach(shownTimeline) { item in
@@ -714,17 +715,16 @@ struct CollectView: View {
                         }
                     }
                 }
-                .padding(.horizontal, -20)
                 .padding(.top, -12)
             }
             let list = lane == .want
                 ? wishlist.filter { country == nil || $0.country == country } : []
             if lane == .want { countryChips }
             let wantShots = lane == .want ? sightings.newestShotByTree : [:]
-            if lane == .want ? list.isEmpty : timeline.isEmpty {
-                Text(lane == .want
-                     ? "You can keep a tree you want to visit by tapping its bookmark."
-                     : "You add a tree here by photographing it. Tap the camera and stand in front of one.")
+            if lane == .want && list.isEmpty {
+                wantEmpty
+            } else if lane == .seen && timeline.isEmpty {
+                Text("You add a tree here by photographing it. Tap the camera and stand in front of one.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.top, 4)
             } else if lane == .want {
@@ -739,7 +739,6 @@ struct CollectView: View {
                             .accessibilityLabel(t.name)
                     }
                 }
-                .padding(.horizontal, -20)
             }
             }
         }
@@ -747,6 +746,43 @@ struct CollectView: View {
         .id(lane)
         // A country chosen on one lane means nothing on the other.
         .onChange(of: lane) { country = nil }
+    }
+
+    /// WANT TO VISIT, EMPTY: Discover's own empty row (the Discover design,
+    /// 2026-10-10): three ghost tiles in the grid's shape, so the lane reads as
+    /// a place waiting to be filled, one sentence, and a way to the map.
+    private var wantEmpty: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 2) {
+                ForEach(0..<3, id: \.self) { i in
+                    // A wash of ink rather than surfaceMuted: on this page's
+                    // ground the muted grey all but vanished.
+                    Brand.ink.opacity(0.06)
+                        .aspectRatio(3.0 / 4.0, contentMode: .fit)
+                        .overlay {
+                            if i == 0 {
+                                Image(systemName: "bookmark")
+                                    .font(.system(size: 22, weight: .medium))
+                                    .foregroundStyle(Brand.inkSoft.opacity(0.6))
+                            }
+                        }
+                }
+            }
+            .accessibilityHidden(true)
+            Text("You can keep a tree you want to visit by tapping its bookmark.")
+                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Button { navigator.selectTab = 0 } label: {
+                Label("Find trees near you", systemImage: "map")
+                    .font(.brand(16, .bold))
+                    .foregroundStyle(Brand.ink)
+                    .frame(maxWidth: .infinity).frame(height: 50)
+                    .background(Brand.surface, in: .rect(cornerRadius: 12))
+                    .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(Brand.ink.opacity(0.22), lineWidth: 1) }
+            }
+            .buttonStyle(.plain)
+            .accessibilityIdentifier("want-find-trees")
+        }
     }
 
     /// What each lane says when nobody is signed in: what the lane is FOR, and
