@@ -3136,7 +3136,9 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
    with corners of 22 above it. One backdrop. Four kinds of button: green for
    the one thing we hope you do, grey for the other choices, red for removing
    something, and quiet text for the polite way out. */
-.at-sheet { border: 0; padding: 2.25rem 1.5rem 1.6rem; width: min(24rem, calc(100vw - 2rem));
+/* margin: auto and a fixed inset, because a site rule resets dialog margins and the
+   card then sat in the top-left corner of a laptop screen. */
+.at-sheet { position: fixed; inset: 0; margin: auto; height: fit-content; border: 0; padding: 2.25rem 1.5rem 1.6rem; width: min(24rem, calc(100vw - 2rem));
   max-height: calc(100vh - 2rem); overflow-y: auto; border-radius: 22px; background: #fff;
   color: var(--ink); text-align: center; box-shadow: 0 20px 60px rgba(26,32,18,0.25);
   transition: transform 0.26s cubic-bezier(0.22, 0.61, 0.36, 1); }
