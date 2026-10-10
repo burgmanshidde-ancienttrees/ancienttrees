@@ -10475,6 +10475,150 @@
    "tokens": 142330,
    "trees": 5,
    "note": "Balears register records on 5, 3 heights; access pages not opened"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "leeuwarden",
+   "kind": "enrich",
+   "tokens": 159594,
+   "trees": 0,
+   "note": "LRMB ids on 3, measurements on 4, season on 3"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "cambridge",
+   "kind": "enrich",
+   "tokens": 153287,
+   "trees": 0,
+   "note": "owner pages on 3 trees, 2 access lines"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "dubrovnik",
+   "kind": "enrich",
+   "tokens": 143405,
+   "trees": 0,
+   "note": "county protected-nature record for Trsteno planes, arboretum access on 3"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "naples",
+   "kind": "enrich",
+   "tokens": 159897,
+   "trees": 0,
+   "note": "Campania cards / MASAF ids on 18 trees, measurements where sources agreed"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "washington-dc",
+   "kind": "enrich",
+   "tokens": 154765,
+   "trees": 0,
+   "note": "Architect of the Capitol / VT records on 4, Casey Trees girths on 3"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "nice",
+   "kind": "enrich",
+   "tokens": 170894,
+   "trees": 0,
+   "note": "Region Sud / Culture / ARBRES records on 6 trees, hours on 4"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "strasbourg",
+   "kind": "enrich",
+   "tokens": 146738,
+   "trees": 0,
+   "note": "city register pages with girth and height on all 10 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "las-vegas",
+   "kind": "enrich",
+   "tokens": 140902,
+   "trees": 0,
+   "note": "nothing applied: only a 'Free' line the source does not state; wasted"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "amersfoort",
+   "kind": "enrich",
+   "tokens": 143527,
+   "trees": 0,
+   "note": "3 LRMB ids, no measurements in register"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "vancouver",
+   "kind": "enrich",
+   "tokens": 139785,
+   "trees": 0,
+   "note": "Heritage Register ids on 7 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "philadelphia",
+   "kind": "enrich",
+   "tokens": 150071,
+   "trees": 0,
+   "note": "Morris Arboretum prices on 3 trees; Commons-coordinate pin dropped"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "kagoshima",
+   "kind": "enrich",
+   "tokens": 131665,
+   "trees": 0,
+   "note": "city preserved-tree ids on 7 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "perth",
+   "kind": "enrich",
+   "tokens": 151424,
+   "trees": 0,
+   "note": "inHerit / National Trust records on 4 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "verona",
+   "kind": "enrich",
+   "tokens": 146656,
+   "trees": 0,
+   "note": "MASAF id, a height, garden hours on 3 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "eindhoven",
+   "kind": "enrich",
+   "tokens": 153034,
+   "trees": 0,
+   "note": "LRMB measurements on 4; ein_006 retired (register: dead/felled)"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "mexico-city",
+   "kind": "enrich",
+   "tokens": 149174,
+   "trees": 0,
+   "note": "SEDEMA extract ids and measurements on 9 trees"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "segovia",
+   "kind": "enrich",
+   "tokens": 141818,
+   "trees": 0,
+   "note": "one height; no per-tree register reachable"
+  },
+  {
+   "date": "2026-10-10",
+   "target": "sequoia-national-park",
+   "kind": "enrich",
+   "tokens": 135404,
+   "trees": 0,
+   "note": "General Sherman height and hours only"
   }
  ],
  "2026-10-09": [
