@@ -62,7 +62,11 @@
         "label": "January, when the bare stems show the shape of the old stool"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694799",
+        "url": null
+      }
     },
     {
       "id": "ede_002",
@@ -79,9 +83,10 @@
       },
       "story": "It stands inside a fenced national park where you have to pay to walk, and both of those facts are the reason it is in good condition.\n\nDe Hoge Veluwe is 55 square kilometres of sand, heath, drift dunes and planted wood, bought up in the 1910s by Anton and Helene Kroller-Muller and later given to the state. It is enclosed, it is managed, and it is one of the few landscapes in the Netherlands where you can walk for an hour without leaving it. The Pampel is a spot in the northwest of it, off the Houtkampweg.\n\nThe oak is banded 1850 to 1860, which puts it well before the Kroller-Mullers and inside whatever estate or farm woodland was here first. On the Veluwe that usually means it grew up on land that was heath within living memory, since much of this sand was open and drifting into the nineteenth century and was only planted up afterwards.\n\nAn oak that establishes itself on poor sand grows slowly and puts on dense timber, so the girth understates the age.\n\nGo in October, and let the acorns be the reason. Wild boar and deer here live off them.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "https://www.hogeveluwe.nl/en/plan-your-trip/admission-prices"
       ],
-      "access": "Paid. Inside Nationaal Park De Hoge Veluwe, which charges an entrance fee.",
+      "access": "Paid. Inside Nationaal Park De Hoge Veluwe: 2026 entry is EUR 13.85 for adults and children from 13, EUR 6.95 for ages 6 to 13, under 6 free. Open daily, with hours by season (09.00 to 18.00 January to March, 08.00 to 22.00 June and July, 09.00 to 18.00 November and December); entry up to one hour before closing, card payment only at the gates.",
       "transport": "About 15 km northeast of Ede-Wageningen station. Nearest park entrance Otterlo.",
       "photo": {
         "url": null,
@@ -99,7 +104,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687644",
+        "url": null
+      }
     },
     {
       "id": "ede_003",
@@ -136,6 +145,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684855",
+        "url": null
       }
     },
     {
@@ -172,7 +185,11 @@
         "label": "January, when the bare frame shows against the field"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1684854",
+        "url": null
+      }
     },
     {
       "id": "ede_005",
@@ -210,7 +227,11 @@
         "label": "October, when it turns copper against the dark conifers"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691404",
+        "url": null
+      }
     },
     {
       "id": "ede_006",
@@ -239,7 +260,11 @@
       },
       "how_to_recognise": "The one enormous conical conifer on the square, with thick spongy red-brown bark.",
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683100",
+        "url": null
+      }
     },
     {
       "id": "ede_007",
@@ -276,6 +301,10 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683090",
+        "url": null
       }
     }
   ]
