@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, third pass) - Monterey enrichment
+
+**Done:** Moon Tree of Friendly Plaza (mty_003) now carries NASA's own Moon Trees record and the NASA coordinate as its pin (about 50 m from the old one). Preflight clean.
+**Left open:** Lone Cypress and Point Lobos veteran have no authority record, no measurement and no coordinate source; recorded as dead ends for 90 days. hmdb.org serves a Cloudflare challenge.
+
 ## 2026-10-10 (night run, second pass) - Fukuoka enrichment
 
 **Done:** 8 of 18 Fukuoka trees improved: authority pages on six (Agency for Cultural Affairs, Dazaifu, Fukuoka City, Itoshima), girth and/or height with sources on all eight, small named sites (Kaidan-in, Rokusho Shrine) on two. Preflight clean.
