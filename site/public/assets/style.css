@@ -3078,3 +3078,14 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 .profile-head .profile-top { margin-bottom: 0.9rem; }
 .profile-head .profile-avatar { width: 48px; height: 48px; }
 .profile-head .profile-who h1 { font-size: 1.15rem; }
+
+/* The profile's vertical rhythm on the 8-point grid, the app's (2026-10-10:
+   "de vertical alignment kan het nog wat dichter bij elkaar - check even
+   designstandaarden", then "top voor dan overal door"): 16 from the header
+   to the lanes, 12 to the chips, 12 to the grid. */
+.profile-head .profile-top { margin-bottom: 0; }
+.profile-head .profile-who { margin-bottom: 0; }
+.acct-lanes { margin-top: 16px; }
+.acct-lanes .lane-picker { margin-bottom: 12px; }
+.acct-lanes .country-chips { padding: 0 0 12px; }
+.acct-lanes #pane-mine, .acct-lanes #pane-saved { margin-top: 0; }

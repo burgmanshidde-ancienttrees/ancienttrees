@@ -224,7 +224,7 @@ struct CollectView: View {
                 .padding(.horizontal, 1)
             }
             .scrollClipDisabled()
-            .padding(.top, -16)
+            .padding(.top, -6)
             .accessibilityIdentifier("collected-countries")
         }
     }
@@ -382,7 +382,7 @@ struct CollectView: View {
 
     /// Your trees, and the picker that chooses which list.
     @ViewBuilder private var sheetBody: some View {
-        VStack(alignment: .leading, spacing: 18) {
+        VStack(alignment: .leading, spacing: 12) {
             // The numbers and the one thing you make scroll WITH the list, the
             // way they do on the page this is copied from. They sat in the
             // header, where they were both a wall between the name and the
@@ -671,7 +671,12 @@ struct CollectView: View {
         }
         .pickerStyle(.segmented)
         .accessibilityIdentifier("collect-lane")
-        .padding(.vertical, 10)
+        // ON THE 8-POINT GRID (Hidde, 2026-10-10: "de vertical alignment kan
+        // het nog wat dichter bij elkaar - check even designstandaarden"):
+        // 16 from the header (its own 12 plus 4), 12 to the chips, 12 to the
+        // grid, measured to what is seen rather than to the chips' 44-point
+        // touch frames, which carry 6 invisible points above and below.
+        .padding(.top, 4)
         // NO FILL BEHIND IT. It needed one while it was a pinned header on a
         // full-page scroller, with live content sliding under it. Inside the
         // sheet it is an ordinary row in the list, and the opaque ground
@@ -687,7 +692,7 @@ struct CollectView: View {
     /// that fix and it stays; what changed on 08-25 is that the picker no
     /// longer moves when this rebuild changes the content's height.
     @ViewBuilder private var laneContent: some View {
-        VStack(alignment: .leading, spacing: 28) {
+        VStack(alignment: .leading, spacing: 12) {
             if !showsYourCollection {
                 signedOutLane
             } else {
@@ -718,7 +723,7 @@ struct CollectView: View {
                         }
                     }
                 }
-                .padding(.top, -12)
+                .padding(.top, -6)
             }
             let list = lane == .want
                 ? wishlist.filter { country == nil || $0.country == country } : []
@@ -1038,17 +1043,25 @@ struct CollectView: View {
                             // else in this codebase enlarges an already-44 frame,
                             // it does not fake one.
                             Button { peopleList = .followers } label: {
-                                Text("\(profiles.followers) followers").padding(.top, 4)
+                                Text("\(profiles.followers) followers")
                             }
                             .buttonStyle(.plain)
-                            .frame(minHeight: 44, alignment: .top)
+                            // 44 to hit, 20 to lay out: the touch frame
+                            // overhangs the row instead of pushing the lanes
+                            // 30 points down (2026-10-10, the spacing pass).
+                            .frame(minHeight: 44)
+                            .padding(.vertical, -12)
                             .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-followers")
                             Button { peopleList = .following } label: {
-                                Text("\(profiles.following) following").padding(.top, 4)
+                                Text("\(profiles.following) following")
                             }
                             .buttonStyle(.plain)
-                            .frame(minHeight: 44, alignment: .top)
+                            // 44 to hit, 20 to lay out: the touch frame
+                            // overhangs the row instead of pushing the lanes
+                            // 30 points down (2026-10-10, the spacing pass).
+                            .frame(minHeight: 44)
+                            .padding(.vertical, -12)
                             .contentShape(.rect)
                             .accessibilityIdentifier("mytrees-following")
                         }
