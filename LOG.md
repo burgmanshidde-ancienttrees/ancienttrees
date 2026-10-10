@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run) - Hobart enrichment
+
+**Done:** Hobart's 11 trees: council Significant Tree Register ids and per-tree sheet links on hob_001 to hob_010, heights (with sources) on five trees including Centurion at 100.5 m. Preflight clean.
+**Left open:** no girths (sheets give categories only), no season (dawn redwood file is northern-hemisphere months, no Hobart timing source), access lines already fine. Hobart is recorded as a wall for 48h.
+
 ## 2026-10-10 (session) - Rainer Lippert's photographs on twelve German trees
 
 **Done:** Rainer Lippert (monumentale-eichen.de) answered our ask: "Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link." Twelve German trees that had no photograph now carry his lead photo, self-hosted at 500/1000/1280, credited "Rainer Lippert" with the name linking to his page for that tree (licence string "Provided by ... with permission, credit required", the Ingar Sørensen pattern). Six were trees whose entries already cited his page (Stapel, Adam und Eva, Jenischpark hollow oak, Bäreneiche, Hunneneiche, Volkenrodaer Königseiche); six were matched on his own caption naming the tree and place (Hüter des Feldes, Kaditzer Linde, Obermarbach lime, Hindenburglinde, Dicke Linde Asbeck, birch-in-oak of the Jenischpark). Every one looked at before approval.
