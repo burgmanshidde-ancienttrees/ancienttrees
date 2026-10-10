@@ -3044,13 +3044,16 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
    meta and credit live on the tree's page, as they do in the app; a tree
    you added keeps its one label. */
 .acct-lanes #pane-mine, .acct-lanes #pane-saved {
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; margin-top: 0.5rem; }
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 0.5rem; }
 .acct-lanes #pane-mine > *, .acct-lanes #pane-saved > * { grid-column: 1 / -1; }
 .acct-lanes .saved-list { display: contents; }
 .acct-lanes .saved-list > li { grid-column: auto; min-width: 0; }
 .acct-lanes .saved-list .tree-card { position: relative; aspect-ratio: 3 / 4; overflow: hidden;
-  margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; background: var(--surface-muted, #f2f2f2);
+  margin: 0; padding: 0; border: 0; border-radius: 12px; box-shadow: none; background: var(--surface-muted, #f2f2f2);
   display: flex; align-items: center; justify-content: center; }
+/* ROUNDED, 6 apart, inside the page margin (Hidde, 2026-10-10: "shall we try
+   the rounded picture design also on the my trees page ... keep it
+   consistent"): the app's Discover and My trees tiles, one shape. */
 /* aspect-ratio: auto and both sizes at 100%: the card rule above gives the
    photo box 16 / 10, and with height fixed the box then took its WIDTH from
    that ratio, 1.6 times the tile, pinned to the left edge, so every photo
@@ -3074,8 +3077,8 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
 
 /* Want to visit, empty (2026-10-10): Discover's ghost row, the app's wantEmpty. */
 .want-empty { display: flex; flex-direction: column; gap: 14px; }
-.want-ghosts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; }
-.want-ghosts span { aspect-ratio: 3 / 4; background: rgba(38, 48, 30, 0.06); display: flex; align-items: center; justify-content: center; color: rgba(92, 99, 80, 0.6); }
+.want-ghosts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.want-ghosts span { aspect-ratio: 3 / 4; border-radius: 12px; background: rgba(38, 48, 30, 0.06); display: flex; align-items: center; justify-content: center; color: rgba(92, 99, 80, 0.6); }
 .want-ghosts svg { width: 24px; height: 24px; }
 .want-empty p { margin: 0; color: var(--ink-light, #5C6350); }
 .want-find { display: flex; align-items: center; justify-content: center; gap: 8px; height: 50px; border-radius: 12px;

@@ -29,6 +29,8 @@ import SwiftUI
 import CoreLocation
 
 struct CollectView: View {
+    /// Discover's tile shape (Home.swift), so the two grids are one design.
+    private static let tileShape = RoundedRectangle(cornerRadius: 12, style: .continuous)
     let catalogue: Catalogue
     let origin: (lat: Double, lng: Double)
     /// Whether `origin` is a fix or a fallback. See LocationOff.swift.
@@ -712,27 +714,26 @@ struct CollectView: View {
                 countryChips
                 let shots = sightings.newestShotByTree
                 // THREE ACROSS, Instagram's profile grid (Hidde, 2026-10-09),
-                // edge to edge: it sat inside the 20-point margin for an hour
-                // to match Discover, and Hidde: "het is weird dat de
-                // profielpagina niet de gehele breedte voor de fotos gebruikt"
-                // (2026-10-10). Instagram's grid bleeds; this one does again.
-                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
-                          spacing: 2) {
+                // and since 2026-10-10 the same rounded tiles inside the margin
+                // as Discover (Hidde: "shall we try the rounded picture design
+                // also on the my trees page it looks better and than we can
+                // keep it consistent"). It bled edge to edge before that.
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 6), count: 3),
+                          spacing: 6) {
                     ForEach(shownTimeline) { item in
                         switch item {
                         case .mine(let s):
-                            SheetLink(route: .mine(s.id)) { CollectedTile(kind: .mine(s), city: cityOf(item)) }
+                            SheetLink(route: .mine(s.id)) { CollectedTile(kind: .mine(s), city: cityOf(item)).clipShape(Self.tileShape) }
                         case .sent(let t):
-                            CollectedTile(kind: .sent(t), city: t.city)
+                            CollectedTile(kind: .sent(t), city: t.city).clipShape(Self.tileShape)
                         case .tree(let t, _):
-                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: shots[t.id]) }
+                            SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: shots[t.id]).clipShape(Self.tileShape) }
                                 .accessibilityIdentifier("tree-card")
                                 .accessibilityLabel(t.name)
                         }
                     }
                 }
-                .padding(.horizontal, -20)
-                .padding(.top, -6)
+                .padding(.top, 2)
             }
             let list = lane == .want
                 ? wishlist.filter { country == nil || $0.country == country } : []
@@ -748,15 +749,14 @@ struct CollectView: View {
                 // THE SAME GRID as Collected (Hidde, 2026-10-09: "maak van
                 // want to visit maar hetzelfde raster"), over AllTrails' and
                 // Airbnb's cards for a saved list: one page, one shape.
-                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 2), count: 3),
-                          spacing: 2) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 6), count: 3),
+                          spacing: 6) {
                     ForEach(list) { t in
-                        SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: wantShots[t.id]) }
+                        SheetLink(route: .tree(t.id)) { CollectedTile(kind: .ours(t), city: t.city, ownShot: wantShots[t.id]).clipShape(Self.tileShape) }
                             .accessibilityIdentifier("tree-card")
                             .accessibilityLabel(t.name)
                     }
                 }
-                .padding(.horizontal, -20)
             }
             }
         }
