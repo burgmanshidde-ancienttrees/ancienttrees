@@ -244,7 +244,8 @@
       "story": "The tree that gave a hill its name is not originally from this hill. Küçük Çamlıca, Istanbul's best known viewpoint on the Asian side, takes its name from the stone pines (çam) covering it, but foresters say the grove's own symbol tree, the Ata Fıstık Çamı, was brought here from the Aegean region generations ago and adapted to Bosphorus soil rather than growing here naturally. At roughly 397 years old, with a trunk 145 centimetres across and a crown reaching 25 metres, it predates the name Çamlıca itself, which only stuck once Sultan Abdülaziz began favouring the grove in the nineteenth century. Stone pines are usually grown for their edible pine nuts, and this one has produced them for longer than Istanbul has had streetlights, trams, or bridges across the Bosphorus. Istanbul's official monument tree registry lists it, and half a dozen younger pines around it, as individually protected, each with its own name and measured age, a small forest of transplants that outlived the reason anyone brought them here in the first place. The view from the hill gets the visitors. The tree that named the hill mostly gets ignored.",
       "verified_sources": [
         "https://www.hurriyet.com.tr/seyahat/kucuk-camlica-korusu-nerede-ve-nasil-gidilir-kucuk-camlica-korusu-tarihi-giris-ve-kahvalti-ucreti-hakkinda-bilgi-41747699",
-        "https://anitagac.istanbul/yazi/kucuk-camlica-korusu-anit-agac-rotasi"
+        "https://anitagac.istanbul/yazi/kucuk-camlica-korusu-anit-agac-rotasi",
+        "https://www.anadoluanitagaclar.com/agac/1988/uskudar-anit-agac/fistik-cami-pinus-pinea.html"
       ],
       "access": "Free, park open 24 hours; food stalls open 09:00-23:00",
       "transport": "10 min walk from Kısıklı station (M5 metro line)",
@@ -257,7 +258,13 @@
       "curation_status": "ai_generated",
       "notes": "Upgraded to confirmed 2026-07-28: re-queried Turkey's national monumental-tree GIS layer (services5.arcgis.com/26ObnytmBZ58Wbj8, feature service turkiye_anit_agaclari) directly for its trunk-diameter field (govde_capi) rather than circumference, since the two are different measurements of the same tree. Feature OBJECTID 754, a Pinus pinea in Üsküdar, carries agac_yasi=397 (exact match to this entry's age) and govde_capi=145 (exact match to '145 centimetres across'), and its own coordinates (41.018625, 29.067384) land within about 3 metres of the pin already stored here. The 2026-07-27 note's '520cm circumference doesn't match' concern was comparing the wrong field; the diameter field matches exactly. The registry's own photo (anadoluanitagaclar.com) was not used: the site returned no reachable terms-of-use page to verify an open licence, so treated as verification-only, same as monumentaltrees.com.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its broad stone pine crown reaching 25 metres, among a grove of younger, individually named pines. It stands in Küçük Çamlıca Korusu, the hilltop park these pines gave its name."
+      "how_to_recognise": "You can recognise it by its broad stone pine crown reaching 25 metres, among a grove of younger, individually named pines. It stands in Küçük Çamlıca Korusu, the hilltop park these pines gave its name.",
+      "official_register": {
+        "name": "Turkiye Anit Agaclari (Ministry of Agriculture and Forestry national monumental-tree register), OBJECTID 754",
+        "url": "https://www.anadoluanitagaclar.com/agac/1988/uskudar-anit-agac/fistik-cami-pinus-pinea.html"
+      },
+      "girth_cm": 520,
+      "height_m": 25
     },
     {
       "id": "ist_008",
@@ -383,7 +390,13 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by where it stands, past the Orta Kapu on the Second Courtyard side. The famous Janissaries' plane is a different tree, out in the First Courtyard, and it died about a century ago."
+      "how_to_recognise": "You can recognise it by where it stands, past the Orta Kapu on the Second Courtyard side. The famous Janissaries' plane is a different tree, out in the First Courtyard, and it died about a century ago.",
+      "official_register": {
+        "name": "Turkiye Anit Agaclari (Ministry of Agriculture and Forestry national monumental-tree register), OBJECTID 140",
+        "url": "https://www.anitagaclar.gov.tr/detail/dogu-cinari-platanus-orientalis/111"
+      },
+      "girth_cm": 1448,
+      "height_m": 12
     },
     {
       "id": "ist_012",
@@ -401,7 +414,8 @@
       "story": "A London plane cannot be much older than about 350 years, because the hybrid did not exist before roughly 1670. This one, at about 285, comfortably fits, which is not true of every tree the Turkish registry files under that name. Two of Istanbul's own registered giants carry the same label at ages that would make the hybrid older than itself; here the arithmetic works, and the identification is plausible rather than proven. Turkey's national monumental tree registry records it at 33 metres tall with a trunk 170 centimetres across and an age of 277 years. Istanbul's metropolitan municipality publishes its own page for this exact tree, with identical measurements, saying it has stood in Gülhane Park since 1741. The two numbers add up to 2018, so both trace to one survey rather than two independent measurements. Two official bodies, one field visit, worth knowing. For most of its life nobody could walk past it. Gülhane was the outer garden of Topkapı Palace, court ground rather than public space, until it opened in 1912 as Istanbul's first public park. The tree was already 170 years old by then. It stands about 40 metres from a registered nettle tree of similar age, 350 metres from the Topkapı courtyard plane and 550 metres from the Taşlı Çınar, which makes this the densest walking cluster in the city.",
       "verified_sources": [
         "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=398&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 398)",
-        "https://www.konusanagac.com/ozel-agac/83/londra-cinari-gulhane-parki-platanus-acerifolia.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)"
+        "https://www.konusanagac.com/ozel-agac/83/londra-cinari-gulhane-parki-platanus-acerifolia.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)",
+        "https://www.avrupaanitagaclar.com/agac/2757/fatih-anit-agac/londra-cinari-platanus-acerifolia.html"
       ],
       "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
       "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, immediate walk",
@@ -413,7 +427,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its tall, straight trunk about 170 centimetres across, rising to 33 metres. It stands in Gülhane Park, about 40 metres from the registered nettle tree beside it."
+      "how_to_recognise": "You can recognise it by its tall, straight trunk about 170 centimetres across, rising to 33 metres. It stands in Gülhane Park, about 40 metres from the registered nettle tree beside it.",
+      "official_register": {
+        "name": "Turkiye Anit Agaclari (Ministry of Agriculture and Forestry national monumental-tree register), OBJECTID 398",
+        "url": "https://www.avrupaanitagaclar.com/agac/2757/fatih-anit-agac/londra-cinari-platanus-acerifolia.html"
+      },
+      "girth_cm": 381,
+      "height_m": 33
     },
     {
       "id": "ist_013",
@@ -431,7 +451,8 @@
       "story": "Istanbul protects this tree by name, which is unusual for a species most cities treat as background. The Mediterranean hackberry, çitlembik in Turkish, normally gets planted for shade and forgotten. This one is 23 metres tall with a trunk 145 centimetres across, and it holds a place on Turkey's national monumental tree registry at an age of 259 years, with the city's own municipal tree project publishing a page for it saying it has stood in Gülhane Park since 1759. Those two figures resolve to the same year, 2018, so the national register and the city are reporting one survey between them rather than two separate measurements. That is worth stating. What makes the number credible anyway is the species: Celtis australis is a tough, long-lived tree in Anatolian conditions, so 265 years is physically ordinary for it, which is more than can be said for some of the plane ages in the same register. It stands roughly 40 metres from the registered London plane in the same park, and the pair are the reason to come. Gülhane was Topkapı's outer palace garden and stayed closed to the public until 1912, so this tree spent its first century and a half inside a court garden and its last hundred years among people eating simit under it. The Topkapı courtyard plane is 300 metres away.",
       "verified_sources": [
         "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=400&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 400)",
-        "https://www.konusanagac.com/ozel-agac/81/citlenbik-gulhane-parki-celtis-australis.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)"
+        "https://www.konusanagac.com/ozel-agac/81/citlenbik-gulhane-parki-celtis-australis.html (Istanbul Metropolitan Municipality Parks, Gardens and Green Areas Dept., 'Konusan Agaclar' individually-named-tree project)",
+        "https://www.avrupaanitagaclar.com/agac/2788/fatih-anit-agac/citlenbik-celtis-australis.html"
       ],
       "access": "Free, inside Gulhane Park (open daily, standard park hours, no ticket)",
       "transport": "Gulhane tram stop (T1 line) at the park's Sarayburnu-side gate, short walk within the park",
@@ -443,7 +464,13 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the hackberry rather than a plane, a slimmer trunk about 145 centimetres across and 23 metres tall. It stands in Gülhane Park, about 40 metres from the registered London plane."
+      "how_to_recognise": "You can recognise it as the hackberry rather than a plane, a slimmer trunk about 145 centimetres across and 23 metres tall. It stands in Gülhane Park, about 40 metres from the registered London plane.",
+      "official_register": {
+        "name": "Turkiye Anit Agaclari (Ministry of Agriculture and Forestry national monumental-tree register), OBJECTID 400",
+        "url": "https://www.avrupaanitagaclar.com/agac/2788/fatih-anit-agac/citlenbik-celtis-australis.html"
+      },
+      "girth_cm": 411,
+      "height_m": 23
     },
     {
       "id": "ist_014",
@@ -461,7 +488,8 @@
       "story": "For a yew, three centuries is early middle age. This one, in the Fourth Courtyard of Topkapı Palace, is registered at 314 years, 13 metres tall with a trunk 103 centimetres across and a crown 12 metres wide, which by the standards of a species that can run to millennia makes it a young adult with a long career ahead. The government record has quirks worth naming. Two views of the same database give the age as 314 and 310, a four-year drift, and one of them files the tree under a district hundreds of kilometres away in Ankara province while its own description talks about Topkapı, which is a clerical slip rather than a doubt about where the tree is. Separately, an independent field survey measured three yews in this courtyard, two of them 3.26 and 3.09 metres around, and photographed them in December 2014. That is the freshest direct evidence of them standing that this entry rests on, and it is now twelve years old. Unlike the other trees on this list, it costs money. The Fourth Courtyard was the sultan's private terrace garden, above the Golden Horn beside the Baghdad Kiosk that Murad IV built in 1639, and reaching it needs a Topkapı Palace museum ticket. The free trees of Gülhane Park are 550 metres downhill.",
       "verified_sources": [
         "https://services5.arcgis.com/26ObnytmBZ58Wbj8/arcgis/rest/services/turkiye_anit_agaclari/FeatureServer/0/query?where=OBJECTID=141&outFields=*&f=json (Turkiye Anit Agaclari national monumental-tree registry, OBJECTID 141: Porsuk/Taxus baccata, 314 yrs, govde_capi 103cm, boy 13m, tepe_capi 12m)",
-        "https://www.monumentaltrees.com/en/tur/marmararegion/istanbul/2138_topkapipalace/ (independent crowdsourced database; lists exactly 3 European Yew (Taxus baccata) specimens individually measured in Topkapi Palace's 4th courtyard, girths 3.26m and 3.09m at 1.30m plus one unmeasured, photos dated 6 December 2014)"
+        "https://www.monumentaltrees.com/en/tur/marmararegion/istanbul/2138_topkapipalace/ (independent crowdsourced database; lists exactly 3 European Yew (Taxus baccata) specimens individually measured in Topkapi Palace's 4th courtyard, girths 3.26m and 3.09m at 1.30m plus one unmeasured, photos dated 6 December 2014)",
+        "https://www.anitagaclar.gov.tr/detail/porsuk--taxus-baccata/112"
       ],
       "access": "Paid entry (Topkapi Palace Museum ticket covers the inner courtyards, including the 4th courtyard/Tulip Garden area)",
       "transport": "Gulhane tram stop (T1 line), then roughly 10-15 minute walk through the palace grounds to the 4th courtyard",
@@ -483,7 +511,13 @@
         "kind": "fruit"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its dark, dense, modest yew crown, only 13 metres tall beside the taller planes elsewhere on this list. It stands in Topkapı Palace's Fourth Courtyard, near the Baghdad Kiosk."
+      "how_to_recognise": "You can recognise it by its dark, dense, modest yew crown, only 13 metres tall beside the taller planes elsewhere on this list. It stands in Topkapı Palace's Fourth Courtyard, near the Baghdad Kiosk.",
+      "official_register": {
+        "name": "Turkiye Anit Agaclari (Ministry of Agriculture and Forestry national monumental-tree register), OBJECTID 141",
+        "url": "https://www.anitagaclar.gov.tr/detail/porsuk--taxus-baccata/112"
+      },
+      "girth_cm": 364,
+      "height_m": 13
     }
   ]
 }
