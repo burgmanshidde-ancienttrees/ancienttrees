@@ -24,6 +24,7 @@ import unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pagegaps          # for the park word list, compared below
 from findable import findable  # photo, confirmed pin, or small site + line
+import park_groups     # parkKey() from site/src/lib/parks.ts, in Python
 
 DESC_MAX = 155          # site/src/lib/site-config.ts
 INTRO_MIN, INTRO_MAX = 60, 100   # Contract C, site/src/pages/[city].astro
@@ -2768,6 +2769,111 @@ def check_photo_fields_reach_the_site():
             for k, tid in sorted(seen.items())]
 
 
+# A park page's count promises, mirrored from checkParkCountPromises() in
+# site/src/lib/count-promises.ts. Added 2026-10-10: a night run retired 45 Dutch
+# trees, preflight said 0 problems, and Park Sonsbeek and the Vosseparkje still
+# promised their old counts. Only the Astro build checked park pages, so main's
+# deploy went red in CI and stayed red for two and a half hours, one error per
+# build. The park title, read as summary copy for the city patterns, plus three
+# patterns only a park page uses.
+PARK_PROMISE = [
+    # "...: 13 to Find", "...: 7 Worth Finding", "...: 16 Giants"
+    (re.compile(NMW + r"(%s)\s+(?:to Find|Worth Finding|Giants|to Visit)\b" % N, re.I),
+     lambda n: {n}, {"title"}),
+    # "The Oldest Tree in Park Sonsbeek, and 7 More to Find": one tree named,
+    # so the page holds the number plus that one.
+    (re.compile(r"\band\s+" + NMW + r"(%s)\s+More\b" % N, re.I), lambda n: {n + 1}, {"title"}),
+    # "Ten of the trees we map stand here."
+    (re.compile(NMW + r"(%s)\s+of the trees we map\b" % N, re.I), lambda n: {n},
+     {"title", "meta_description", "intro"}),
+]
+
+
+def park_promise_problems(intro, n, label):
+    """The count promises in one park file that a park of n trees breaks."""
+    out = []
+    for key in ("title", "meta_description", "intro"):
+        text = intro.get(key) or ""
+        if not text:
+            continue
+        for rx, allowed, scope in PROMISE + PARK_PROMISE:
+            if key not in scope and not (key == "title" and "meta_description" in scope):
+                continue
+            for m in rx.finditer(text):
+                w = m.group(1).lower()
+                claims = allowed(int(w) if w.isdigit() else NUM[w])
+                if min(claims) < 4 or n in claims:
+                    continue
+                out.append("%s: park %s promises %s trees but the park has %d (%r)" % (
+                    label, key, "/".join(str(c) for c in sorted(claims)), n, m.group(0)))
+    return out
+
+
+def check_park_count_promises():
+    """Every park page's title, meta and intro name the count it really holds.
+
+    Park membership is derived from address text (park_groups.park_key, the
+    same rule as parks.ts), so a park's count moves whenever a tree in its city
+    is added, retired or re-addressed, and no city-level check sees it. Only
+    parks that build a page are checked, as in the build.
+    """
+    out = []
+    cities = {}
+    for path, intro in park_groups.park_intros():
+        slug = intro.get("city_slug")
+        if slug not in cities:
+            try:
+                with open(os.path.join("data", "cities", slug + ".json"), encoding="utf-8") as fh:
+                    cities[slug] = park_groups.city_parks(json.load(fh))
+            except OSError:
+                cities[slug] = {}
+        n = len(cities[slug].get(intro.get("park"), []))
+        if not park_groups.page_allowed(n, intro):
+            continue
+        out += park_promise_problems(intro, n, os.path.relpath(path))
+    return out
+
+
+def check_no_orphan_photos():
+    """Every file in site/public/photos is one something points at.
+
+    Mirrors the photo half of qa.py (which reads the BUILT site, so it only ever
+    spoke in CI): a file is pointed at by data/photo-manifest.json or by a
+    tree's own photo url. The retired Prinsentuin chestnut's file (gro_008)
+    failed a deploy on 2026-10-10 for exactly this. scripts/retire.py removes a
+    retired tree's files and rebuilds the manifest; this is the net under it.
+    """
+    photos = os.path.join("site", "public", "photos")
+    if not os.path.isdir(photos):
+        return []
+    on_disk = {f for f in os.listdir(photos) if f.endswith(".jpg")}
+    pointed = set()
+    out = []
+    try:
+        with open(os.path.join("data", "photo-manifest.json"), encoding="utf-8") as fh:
+            man = json.load(fh).get("photos", {})
+    except (OSError, ValueError):
+        man = {}
+    for rec in man.values():
+        for w in rec.get("widths", []):
+            name = "%s-%s.jpg" % (rec["base"], w)
+            pointed.add(name)
+            if name not in on_disk:
+                out.append("data/photo-manifest.json names %s, which is not in site/public/photos "
+                           "(python3 scripts/vendor_photos.py --manifest)" % name)
+    for path in glob.glob(os.path.join("data", "cities", "*.json")):
+        with open(path, encoding="utf-8") as fh:
+            for t in json.load(fh).get("trees", []):
+                for shot in [t.get("photo") or {}] + list(t.get("photos") or []):
+                    u = (shot or {}).get("url") or ""
+                    if "/photos/" in u:
+                        pointed.add(u.rsplit("/", 1)[-1])
+    for name in sorted(on_disk - pointed):
+        out.append("site/public/photos/%s: nothing points at it, so qa refuses the deploy "
+                   "(a retired tree? python3 scripts/retire.py removes it)" % name)
+    return out
+
+
 def check_park_words_match():
     """The park keyword list says the same thing in Python and in TypeScript.
 
@@ -3017,6 +3123,8 @@ def main():
                 + check_register_says_the_tree_is_gone()
                 + check_no_published_tree_is_a_redirect()
                 + check_park_words_match()
+                + check_park_count_promises()
+                + check_no_orphan_photos()
                 + check_photo_fields_reach_the_site()
                 + check_every_us_place_has_a_state()
                 + check_register_leads_carry_no_contact_data()

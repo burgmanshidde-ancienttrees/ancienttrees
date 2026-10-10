@@ -218,6 +218,24 @@ if echo "$CHANGED" | grep -qE '^(data/i18n/|data/cities/|scripts/i18ncheck\.py)'
     fi
 fi
 
+# PREFLIGHT, before the push rather than only in deploy.yml (2026-10-10). A
+# night run retired 45 trees and two park pages still promised the old counts;
+# only the Astro build looked at park pages, so main went red for two and a
+# half hours, one error per build. preflight.py now counts park pages and finds
+# orphan photographs, in six seconds, so it runs whenever the data moved.
+if echo "$CHANGED" | grep -qE '^(data/(cities|parks|leads|i18n)/|data/photo-manifest\.json|site/public/photos/|scripts/(preflight|park_groups|retire)\.py)'; then
+    out=$(python3 scripts/preflight.py 2>&1)
+    if echo "$out" | grep -q '^FAIL '; then
+        echo ""
+        echo "pre-push: preflight says no"
+        echo "$out" | grep '^FAIL ' | sed 's/^/  /'
+        echo ""
+        echo "Nothing was pushed. deploy.yml runs preflight too, so this would"
+        echo "have gone red in CI instead."
+        exit 1
+    fi
+fi
+
 # BOTH SURFACES, checked rather than remembered (2026-09-11). Hidde found
 # "Exact location. The pin marks the trunk." still on the website a week after
 # he had it taken out of the app: "zorg dat dit volgende keer wel gelijk app en
