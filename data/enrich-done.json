@@ -2394,6 +2394,37 @@
   },
   "vie_053": {
    "season": "2026-10-09"
+  },
+  "vlc_001": {
+   "season": "2026-10-10"
+  },
+  "vlc_004": {
+   "season": "2026-10-10"
+  },
+  "vlc_006": {
+   "register": "2026-10-10",
+   "measurement": "2026-10-10"
+  },
+  "vlc_011": {
+   "season": "2026-10-10"
+  },
+  "vlc_013": {
+   "season": "2026-10-10"
+  },
+  "vlc_014": {
+   "season": "2026-10-10"
+  },
+  "vlc_018": {
+   "season": "2026-10-10"
+  },
+  "vlc_019": {
+   "season": "2026-10-10"
+  },
+  "vlc_023": {
+   "season": "2026-10-10"
+  },
+  "vlc_024": {
+   "season": "2026-10-10"
   }
  },
  "_note": "Dead ends per tree and gap: a pass briefed on this tree looked for this and found nothing, on this date. Expires after 90 days. Written by scripts/enrich.py --apply / --done, read by --next; a city stays in the queue until every gap is closed or dead-ended."

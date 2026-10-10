@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, continuation) - Valencia enrichment
+
+Verify agent matched 7 trees to their own entries in the Generalitat Valenciana register (vlc_001/002/003/004/008/009/016, ids in the file; no per-tree page exists) and returned a 13.6 m height for vlc_016. Seven Botanic Garden trees (vlc_015, 017-022) got one access line with the 4 EUR ticket and seasonal hours from jardibotanic.org. Applied 14 trees, preflight 0 problems. No season set (species files carry no striking moment). vlc_006 has no register entry within 80 m. 11 remaining gaps recorded as dead ends for 90 days. Valencia claim was refused (full city), enrichment needed none.
+
 ## 2026-10-10 (night run, window 14:45) - Houston enrichment
 
 Rung: enrichment pass, Houston (visits 7d: 1497). Verify agent returned register ids for hou_001/002/004/005/006 (Texas Big Tree Registry) and a small named site for hou_009 (Becks Prime, 50 m); applied, preflight 0 problems. Dropped the agent's three registry girths because that registry is non-commercial in our survey. Left open: pins for hou_003/007/008/010/011 (no evidence), no season set.

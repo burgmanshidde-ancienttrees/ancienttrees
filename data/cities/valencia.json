@@ -58,7 +58,11 @@
       "notes": "Measurements (12.95m trunk perimeter, 22.70m height, 35m+ canopy) and the 2020 petrol station removal are corroborated across both sources; the 380,000 euro valuation figure comes from valenciabonita.es only. Photo viewed directly: shows a massive, spectacular ficus with huge buttress roots and a wide multi-trunk canopy in a paved plaza. Approved. Pin corrected ~400m via the Generalitat Valenciana's own Catálogo de Árboles Monumentales y Singulares (ArcGIS layer), which lists this exact tree by name, 'Ficus del Parterre' (IPA 512), with a 13.82m trunk measurement matching this entry's own figure almost exactly.",
       "location_precision": "confirmed",
       "girth_cm": 1382,
-      "how_to_recognise": "You can recognise it by a trunk nearly 13 metres round and a canopy wide enough to shade almost 1,000 square metres, the broadest in Valencia. It stands in the Jardin del Parterre."
+      "how_to_recognise": "You can recognise it by a trunk nearly 13 metres round and a canopy wide enough to shade almost 1,000 square metres, the broadest in Valencia. It stands in the Jardin del Parterre.",
+      "official_register": {
+        "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 512",
+        "url": null
+      }
     },
     {
       "id": "vlc_002",
@@ -99,7 +103,11 @@
         "kind": "fruit"
       },
       "girth_cm": 400,
-      "how_to_recognise": "You can recognise it as the oldest tree on any of Valencia's five monumental tree routes, an olive among date palms, cypresses, carob trees and a cedar of Lebanon. It stands in Parque de la Rambleta."
+      "how_to_recognise": "You can recognise it as the oldest tree on any of Valencia's five monumental tree routes, an olive among date palms, cypresses, carob trees and a cedar of Lebanon. It stands in Parque de la Rambleta.",
+      "official_register": {
+        "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 2694",
+        "url": null
+      }
     },
     {
       "id": "vlc_003",
@@ -139,7 +147,11 @@
       "notes": "Age given as approximately 170 years by one source, tied to the garden's 1849 founding; no individually documented planting record for this specific tree beyond that estimate. Photo viewed directly: shows a large tree in golden autumn foliage with a garden statue visible in frame, consistent with Jardin de Monforte's neoclassical statuary garden. Approved. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 684, 'Ginkgo de Monfort'), the only Ginkgo biloba recorded citywide, moved about 900m to the catalogue's surveyed point.",
       "location_precision": "confirmed",
       "girth_cm": 375,
-      "how_to_recognise": "You can recognise it as the best known ginkgo in Valencia, one of two growing in this neoclassical garden of marble statues and fountains. It stands in the Jardin de Monforte."
+      "how_to_recognise": "You can recognise it as the best known ginkgo in Valencia, one of two growing in this neoclassical garden of marble statues and fountains. It stands in the Jardin de Monforte.",
+      "official_register": {
+        "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 684",
+        "url": null
+      }
     },
     {
       "id": "vlc_004",
@@ -172,7 +184,11 @@
       "notes": "1891 planting date and the 1968 demolition/survival story are corroborated across both sources. Location and neighbourhood corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1.2km from the actual plaza (same latitude, wrong longitude, suggesting an old data-entry slip). Nominatim places Plaza de la Legion Espanola at 39.4779, -0.3658/-0.3660, three independent hits agreeing within 100m; a further web search independently confirms the plaza sits in the Exposicio neighbourhood of El Pla del Real district, not Extramurs as previously stated. Fixed both fields. Pin resolved 2026-07-29: Valencia's own official open-data tree inventory (CC BY 4.0) carries exactly one Ficus macrophylla registered at 'Legion Espanola Pl' (idarbol 99100614/2), matching this entry's species and its own 'stands alone' framing; four other Ficus macrophylla in the same neighbourhood are all in the separate Alameda gardens, not this plaza, so no ambiguity. Moved from a plaza-level Nominatim geocode to the tree's own individually registered point.",
       "location_precision": "confirmed",
       "girth_cm": 1376,
-      "how_to_recognise": "You can recognise it standing alone at the entrance to the square, the only trace left of a palace demolished in 1968. It stands in Plaza Legion Espanola."
+      "how_to_recognise": "You can recognise it standing alone at the entrance to the square, the only trace left of a palace demolished in 1968. It stands in Plaza Legion Espanola.",
+      "official_register": {
+        "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 2611",
+        "url": null
+      }
     },
     {
       "id": "vlc_005",
@@ -298,7 +314,11 @@
       "notes": "The relocation story (Plaza Mirasol origin, early 1960s move, mayor's approval, two trucks) is corroborated across both sources with only minor variation in the gardener's recorded surname. Pin corrected 2026-07-28 via the Comunitat Valenciana's own Catalogo de Arboles Monumentales y Singulares (IPA 673), which names this exact tree 'La Palmera de Vicente Peris', an exact match to this entry's own name; moved about 525m to the catalogue's surveyed point.",
       "location_precision": "confirmed",
       "girth_cm": 130,
-      "how_to_recognise": "You can recognise it by its solitary trunk at the start of Avenida de Aragon, the palm moved here by truck one night in the early 1960s to save it from demolition. It stands beside La Alameda."
+      "how_to_recognise": "You can recognise it by its solitary trunk at the start of Avenida de Aragon, the palm moved here by truck one night in the early 1960s to save it from demolition. It stands beside La Alameda.",
+      "official_register": {
+        "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 673",
+        "url": null
+      }
     },
     {
       "id": "vlc_009",
@@ -330,7 +350,11 @@
       "notes": "Measurements (41.20m height, 6.1m trunk diameter, 30m crown) and the 80-100 year age come from the city's own official announcement; the regional catalogue source confirms its protected status but is a general registry page rather than an entry specific to this tree. Pin corrected ~790m by querying that same regional catalogue directly (ArcGIS layer): it lists this exact tree by name, 'Eucalipto de Benimámet' (IPA 2375), with a 41.2m height matching this entry's own figure exactly. Tightened by about 50m on 2026-07-30 via an independently bulk-imported OpenStreetMap node carrying the same register reference (reg_ref 2375, name 'Eucaliptus de Benimàmet', 41.2m height), which gives a more precise coordinate than the earlier rounded transcription.",
       "location_precision": "confirmed",
       "girth_cm": 597,
-      "how_to_recognise": "You can recognise it as the tallest tree in the province of Valencia, a eucalyptus over 41 metres high beside the tram line. It stands in the Parc Lineal in Benimamet, near Les Carolines metro station."
+      "how_to_recognise": "You can recognise it as the tallest tree in the province of Valencia, a eucalyptus over 41 metres high beside the tram line. It stands in the Parc Lineal in Benimamet, near Les Carolines metro station.",
+      "official_register": {
+        "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 2375",
+        "url": null
+      }
     },
     {
       "id": "vlc_010",
@@ -477,9 +501,10 @@
       "story": "At roughly 33 metres, this is one of the tallest things growing in Valencia's botanic garden, and it belongs to a species most visitors have never heard of. Zelkova carpinifolia comes from the forests of the southern Caucasus and northern Iran. It is an elm relative that grows a short trunk and then breaks into a dense sheaf of near-vertical branches, so the crown reads more like a bundle held upright than a spreading canopy.\n\nIts trunk measures 5.3 metres around at chest height. That is the figure in the regional register, and an independent field measurement taken in April 2014 put it at 5.27 metres, which is about as close as two separate people with tape measures ever get.\n\nIts age is not recorded anywhere. The garden moved to this site, the old Huerto de Tramoieres outside the medieval wall, in 1802, which sets a ceiling and nothing more. Beyond the register entry and that one measurement, this tree has almost no paper trail: no newspaper feature, no garden monograph, no planting note. For a tree this size that is unusual, and it is better said out loud than filled in with a plausible number.\n\nIt shares the garden with the Kashmir Cypress, and one modest entrance fee covers both. In autumn the whole crown turns orange-brown, which is the species' best-known feature after its shape.",
       "verified_sources": [
         "data/registers/valencia-arboles-monumentales.json (girth 5.3m, listed as a protected singular tree)",
-        "https://www.monumentaltrees.com/es/esp/comunidadvalenciana/valencia/8809_jardinbotanicodelauniversidaddevalencia/17363/ (measurement cross-check only, per project rules never used as sole or primary source: independently recorded girth 5.27m at 1.30m height and height 33.10m, dated April 2014, an almost exact match to the register figure)"
+        "https://www.monumentaltrees.com/es/esp/comunidadvalenciana/valencia/8809_jardinbotanicodelauniversidaddevalencia/17363/ (measurement cross-check only, per project rules never used as sole or primary source: independently recorded girth 5.27m at 1.30m height and height 33.10m, dated April 2014, an almost exact match to the register figure)",
+        "https://jardibotanic.org/?apid=entrades_i_abonaments-21&idioma=_spa"
       ],
-      "access": "Paid entry to the Jardi Botanic (small fee), the same garden as the Kashmir Cypress.",
+      "access": "Paid entry to the Jardi Botanic: 4 EUR (1.70 EUR reduced, 3.60 EUR with the Valencia Tourist Card, free under 7 with family). Open daily 10:00 to 18:00 November to February, to 19:00 in March and October, to 20:00 in April and September, to 21:00 May to August; closed 25 December, 1 January and on windy or rainy days.",
       "transport": "10 min walk from Angel Guimera metro station",
       "photo": {
         "url": null,
@@ -530,7 +555,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the single palm standing at the centre of the courtyard, with cafe tables arranged around its base. It stands in the Palacio de Pineda, Plaza del Carmen."
+      "how_to_recognise": "You can recognise it as the single palm standing at the centre of the courtyard, with cafe tables arranged around its base. It stands in the Palacio de Pineda, Plaza del Carmen.",
+      "official_register": {
+        "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 2366",
+        "url": null
+      },
+      "height_m": 13.6
     },
     {
       "id": "vlc_017",
@@ -550,9 +580,10 @@
       },
       "verified_sources": [
         "data/registers/valencia-arboles-monumentales.json (register_id 1143, girth 5.03m, height 32.1m, crown 25.3m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/",
+        "https://jardibotanic.org/?apid=entrades_i_abonaments-21&idioma=_spa"
       ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+      "access": "Paid entry to the Jardi Botanic: 4 EUR (1.70 EUR reduced, 3.60 EUR with the Valencia Tourist Card, free under 7 with family). Open daily 10:00 to 18:00 November to February, to 19:00 in March and October, to 20:00 in April and September, to 21:00 May to August; closed 25 December, 1 January and on windy or rainy days.",
       "transport": "10 min walk from Angel Guimera metro station",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -584,9 +615,10 @@
       },
       "verified_sources": [
         "data/registers/valencia-arboles-monumentales.json (register_id 1145, girth 3.69m, height 32.6m, crown 20.1m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/",
+        "https://jardibotanic.org/?apid=entrades_i_abonaments-21&idioma=_spa"
       ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+      "access": "Paid entry to the Jardi Botanic: 4 EUR (1.70 EUR reduced, 3.60 EUR with the Valencia Tourist Card, free under 7 with family). Open daily 10:00 to 18:00 November to February, to 19:00 in March and October, to 20:00 in April and September, to 21:00 May to August; closed 25 December, 1 January and on windy or rainy days.",
       "transport": "10 min walk from Angel Guimera metro station",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -618,9 +650,10 @@
       },
       "verified_sources": [
         "data/registers/valencia-arboles-monumentales.json (register_id 1151, girth 4.16m, height 31.4m, crown 26.0m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/",
+        "https://jardibotanic.org/?apid=entrades_i_abonaments-21&idioma=_spa"
       ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+      "access": "Paid entry to the Jardi Botanic: 4 EUR (1.70 EUR reduced, 3.60 EUR with the Valencia Tourist Card, free under 7 with family). Open daily 10:00 to 18:00 November to February, to 19:00 in March and October, to 20:00 in April and September, to 21:00 May to August; closed 25 December, 1 January and on windy or rainy days.",
       "transport": "10 min walk from Angel Guimera metro station",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -652,9 +685,10 @@
       },
       "verified_sources": [
         "data/registers/valencia-arboles-monumentales.json (register_id 1140, girth 3.39m, height 30.1m, crown 17.3m)",
-        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/"
+        "https://espores.org/es/jardin-botanico-uv/10-arboles-monumentales-y-singulares-del-botanic/",
+        "https://jardibotanic.org/?apid=entrades_i_abonaments-21&idioma=_spa"
       ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+      "access": "Paid entry to the Jardi Botanic: 4 EUR (1.70 EUR reduced, 3.60 EUR with the Valencia Tourist Card, free under 7 with family). Open daily 10:00 to 18:00 November to February, to 19:00 in March and October, to 20:00 in April and September, to 21:00 May to August; closed 25 December, 1 January and on windy or rainy days.",
       "transport": "10 min walk from Angel Guimera metro station",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -686,9 +720,10 @@
       },
       "verified_sources": [
         "data/registers/valencia-arboles-monumentales.json (register_id 1142, girth 3.06m, height 33.4m, crown 21.8m)",
-        "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_val&pid=2296"
+        "https://jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&idioma=_val&pid=2296",
+        "https://jardibotanic.org/?apid=entrades_i_abonaments-21&idioma=_spa"
       ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+      "access": "Paid entry to the Jardi Botanic: 4 EUR (1.70 EUR reduced, 3.60 EUR with the Valencia Tourist Card, free under 7 with family). Open daily 10:00 to 18:00 November to February, to 19:00 in March and October, to 20:00 in April and September, to 21:00 May to August; closed 25 December, 1 January and on windy or rainy days.",
       "transport": "10 min walk from Angel Guimera metro station",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -720,9 +755,10 @@
       },
       "verified_sources": [
         "data/registers/valencia-arboles-monumentales.json (register_id 1141, girth 3.49m, height 33.6m, crown 18.4m)",
-        "https://jardibotanic.org/?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=465"
+        "https://jardibotanic.org/?apid=cataleg_virtual_despecies-220&idioma=_spa&pid=465",
+        "https://jardibotanic.org/?apid=entrades_i_abonaments-21&idioma=_spa"
       ],
-      "access": "Paid entry to the Jardi Botanic (small fee), same garden as the Kashmir Cypress and the Caucasian Elm",
+      "access": "Paid entry to the Jardi Botanic: 4 EUR (1.70 EUR reduced, 3.60 EUR with the Valencia Tourist Card, free under 7 with family). Open daily 10:00 to 18:00 November to February, to 19:00 in March and October, to 20:00 in April and September, to 21:00 May to August; closed 25 December, 1 January and on windy or rainy days.",
       "transport": "10 min walk from Angel Guimera metro station",
       "location_precision": "confirmed",
       "curation_status": "flagged",
