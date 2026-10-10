@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge
+
+**Rung:** enrichment (health: only the iOS app run red, not fixable here). Visits last 7 days: 1,565 visits, 2,063 page views.
+- **Leeuwarden:** 7 of 16 improved: LRMB register ids for lee_008, lee_036, lee_037; heights and girths from the register's own records for lee_008, 015, 020, 037 (015's southern beech is recorded felled in 2026, so the page may need a life check); autumn colour on lee_036, July lime flowering on lee_025 and lee_026. lee_036's small-site pin was refused by apply (no source URL); pins for lee_022 to 026 stay open, Overpass returned 500 twice.
+- **Cambridge:** 3 of 5: owner pages as register_url for the Milton Mulberry, Giant Redwood and Cambridge Oak, plus a real access line with prices and hours for the two Botanic Garden trees. **Needs a look:** cam_001 Newton's Apple Tree is sourced to the Botanic Garden page, which describes a different tree (its own Newton apple blew down in Storm Eunice, 2022), so the Trinity tree's source and life check should be redone. Redwood and oak heights withheld because the page does not say which individual tree is ours.
+
 ## 2026-10-10 (continuation attempt) - Nothing dispatched, push cleared
 
 **Rung:** none moved. No claims standing; the 3 unpushed commits (Dutch bulk LRMB, Stockholm, Zurich) are now pushed. 15 READY leads exist but recovery mode refuses new trees that are not rich (enriched()), so a write pass would fail preflight. enrich.py --next names Leeuwarden, whose open gaps are mostly season-only on trees that already carry register records; the last three enrichment passes (Stockholm, Zurich, Haarlem remainder) dead-ended, so no verify agent was dispatched. Window left unspent on purpose rather than burning tokens on a known dead end.
