@@ -4,6 +4,7 @@
 
 ## 2026-10-10 (night run, 21:01 UTC) - Enrichment: Leeuwarden, Cambridge, Dubrovnik
 
+- **Segovia:** thin, 1 of 6: a 46 m height for La Reina sequoia from Patrimonio Nacional's own page. No per-tree Junta de Castilla y León record reachable; patrimonionacional.es garden URLs 404 so La Granja access lines were left unchanged.
 - **Mexico City:** register name and ids plus girth/height for all 9 trees, taken from the SEDEMA extract already in data/leads/mexico-city.json (the live SEDEMA site returned 404 on every path, not re-verified; girths are DBH x pi, heights converted from cm; mex_001's 2.5 m height dropped as implausible). No access lines written. mex_001 El Sabino de San Juan lost a limb in Sept 2018, still standing per later coverage.
 - **Eindhoven:** LRMB girth and height for ein_004, 008, 010, 016, autumn-colour best_time for the Sint Trudo copper beech. **Retired ein_006** (Glorieuxpark copper beech): LRMB nr 1680802 at its coordinates is status 5, Dood/geveld. Moved to leads with a redirect (retire.py); the oldest-tree answer, FAQ and meta now point to the Wasven plane (ein_002) and counts say seventeen. The old page also said "twenty-one" with 18 trees on file, now corrected. ein_007 (Lichtjesboom) has only a status-4 "Afgekeurd" register entry, left live.
 - **Verona:** 3 of 8: MASAF id for the Himalayan cedar (ver_004), a press-sourced approximate 20 m height for the Piazza Bra cedar (ver_001), Giardino Giusti hours (no price stated). ver_002 and the Veneto regional lists were not checked this pass.
