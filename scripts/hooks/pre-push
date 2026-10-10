@@ -317,7 +317,8 @@ for check in \
     "scripts/darkcheck.py" \
     "scripts/standingpoint.py" \
     "scripts/map_style_dark.py --check" \
-    "scripts/pluralcheck.py"
+    "scripts/pluralcheck.py" \
+    "scripts/handlecheck.py"
 do
     # shellcheck disable=SC2086
     if ! out=$(python3 $check 2>&1); then

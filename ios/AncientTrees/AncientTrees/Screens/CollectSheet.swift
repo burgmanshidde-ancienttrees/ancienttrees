@@ -264,7 +264,7 @@ struct CollectSheet: View {
         .onChange(of: stage) { _, now in
             detent = now == .intro ? .height(introHeight) : .large
         }
-        .presentationDragIndicator(.visible)
+        .brandSheetHandle()
         .presentationBackground(Color(.systemBackground))
         // AND A SWIPE CANNOT THROW IT AWAY EITHER (Hidde, 2026-08-29: "als ik
         // een boom aan het toevoegen ben met een foto moet ik niet zomaar op

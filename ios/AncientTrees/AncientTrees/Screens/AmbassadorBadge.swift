@@ -189,7 +189,7 @@ struct AmbassadorWantedRow: View {
                 send()
             }
             .presentationDetents([.medium, .large])
-            .presentationDragIndicator(.visible)
+            .brandSheetHandle()
         }
         .alert("Request sent", isPresented: $sentShown) {
             Button("Done", role: .cancel) {}

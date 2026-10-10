@@ -320,3 +320,30 @@ public struct Chip: View {
             .background(filled ? tint : tint.opacity(0.12), in: .capsule)
     }
 }
+
+/// THE ONE SHEET HANDLE (Hidde, 2026-10-10: "wederom dat grijze balkje
+/// bovenaan de overlay verkeerd uitgelijnd, dat gebeurt zo vaak, kun je dat
+/// niet meer doen"). The system's indicator sits 5 points from the top edge;
+/// ours is 36 by 5, 12 points down, cream, where the website draws its own,
+/// and it is the same on every sheet. The sheet still swipes away; only the
+/// picture is ours. scripts/handlecheck.py refuses a sheet that shows the
+/// system's indicator, so this is the only way to draw one.
+struct BrandSheetHandle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .presentationDragIndicator(.hidden)
+            .overlay(alignment: .top) {
+                Capsule().fill(Brand.creamDark)
+                    .frame(width: 36, height: 5)
+                    .padding(.top, 12)
+                    .allowsHitTesting(false)
+                    .accessibilityHidden(true)
+            }
+    }
+}
+
+extension View {
+    /// Every sheet's handle. Leave 28 points above the first line of content.
+    func brandSheetHandle() -> some View { modifier(BrandSheetHandle()) }
+}
+

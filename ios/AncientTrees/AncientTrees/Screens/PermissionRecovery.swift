@@ -162,6 +162,6 @@ struct PermissionRecovery: View {
         .brandGround()
         .accessibilityIdentifier(permission.identifier)
         .presentationDetents([.height(340)])
-        .presentationDragIndicator(.visible)
+        .brandSheetHandle()
     }
 }

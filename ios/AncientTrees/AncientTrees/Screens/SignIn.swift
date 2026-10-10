@@ -154,14 +154,7 @@ struct SignInSheet: View {
         // edge, which Hidde read as "the small grey button on top in the
         // middle is too high up" (2026-10-09). The sheet still swipes away;
         // only the picture of the handle is ours.
-        .presentationDragIndicator(.hidden)
-        .overlay(alignment: .top) {
-            Capsule().fill(Brand.creamDark)
-                .frame(width: 36, height: 5)
-                .padding(.top, 12)
-                .allowsHitTesting(false)
-                .accessibilityHidden(true)
-        }
+        .brandSheetHandle()
         // One container with a name, so the layout sweep can measure the
         // sheet on its own rather than together with the screen behind it.
         .accessibilityElement(children: .contain)

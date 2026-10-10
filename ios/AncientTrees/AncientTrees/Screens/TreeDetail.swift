@@ -1829,16 +1829,20 @@ struct TreeDetail: View {
                 Text("Your photographs of it stay saved. It leaves My trees until you collect it again.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
+                // THE WHOLE RED AREA IS THE BUTTON (Hidde, 2026-10-10: "de
+                // rode remove knop doet het niet"). Its height and fill sat
+                // outside the label, so only the word itself took a tap.
                 Button {
                     afterChoice = { if saved.isVisited(tree.id) { saved.toggleVisited(tree.id) } }
                     choosingCollect = false
                 } label: {
-                    Text("Remove").frame(maxWidth: .infinity)
+                    Text("Remove")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity).frame(height: 54)
+                        .background(Self.removeRed, in: .rect(cornerRadius: 12))
+                        .contentShape(.rect)
                 }
-                .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(.white)
-                .frame(height: 54)
-                .background(Self.removeRed, in: .rect(cornerRadius: 12))
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("uncollect-confirm")
                 Button { confirmingUncollect = false } label: { Text("Keep it") }
@@ -1860,13 +1864,13 @@ struct TreeDetail: View {
                 .buttonStyle(BrandButtonStyle())
                 .accessibilityIdentifier("collect-with-photo")
                 Button { confirmingUncollect = true } label: {
-                    Text("Remove from collected").frame(maxWidth: .infinity)
+                    Text("Remove from collected")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundStyle(Self.removeRed)
+                        .frame(maxWidth: .infinity).frame(height: 54)
+                        .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(Self.removeRed.opacity(0.35), lineWidth: 1) }
+                        .contentShape(.rect)
                 }
-                .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(Self.removeRed)
-                .frame(height: 54)
-                .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(Self.removeRed.opacity(0.35), lineWidth: 1) }
-                .contentShape(.rect)
                 .buttonStyle(.plain)
                 .accessibilityIdentifier("uncollect")
             } else {
@@ -1895,10 +1899,10 @@ struct TreeDetail: View {
                 .accessibilityIdentifier("collect-no-photo")
             }
         }
-        .padding(20)
+        .padding(.horizontal, 20).padding(.bottom, 20).padding(.top, 32)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .presentationDetents([.height(320)])
-        .presentationDragIndicator(.visible)
+        .presentationDetents([.height(332)])
+        .brandSheetHandle()
         .onDisappear { confirmingUncollect = false }
     }
 
