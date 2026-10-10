@@ -88,7 +88,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the two stems fused at the base, the seam still visible, and by the widest crown on the hill, 28 metres across. It stands on the northeast slope of Peters Hill, above the crabapple collection."
+      "how_to_recognise": "You can recognise it by the two stems fused at the base, the seam still visible, and by the widest crown on the hill, 28 metres across. It stands on the northeast slope of Peters Hill, above the crabapple collection.",
+      "official_register": {
+        "name": "Arnold Arboretum plant inventory (accession record), no. 346-2010*A",
+        "url": null
+      },
+      "height_m": 17.2
     },
     {
       "id": "bos_003",
@@ -126,7 +131,11 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by cream-white flowers with yellow stamens opening late enough to overlap with red autumn leaves on the same branch. It stands in the Explorers Garden on Bussey Hill, Arnold Arboretum."
+      "how_to_recognise": "You can recognise it by cream-white flowers with yellow stamens opening late enough to overlap with red autumn leaves on the same branch. It stands in the Explorers Garden on Bussey Hill, Arnold Arboretum.",
+      "official_register": {
+        "name": "Arnold Arboretum plant inventory (accession record), no. 2428-3*A",
+        "url": null
+      }
     },
     {
       "id": "bos_004",
@@ -202,7 +211,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "A tall conical conifer with fluted, buttressed bark and soft feathery needles that go rust before dropping. Two of the 1948 accession stand within sixty metres of each other here, so either trunk you reach is one of the originals."
+      "how_to_recognise": "A tall conical conifer with fluted, buttressed bark and soft feathery needles that go rust before dropping. Two of the 1948 accession stand within sixty metres of each other here, so either trunk you reach is one of the originals.",
+      "official_register": {
+        "name": "Arnold Arboretum plant inventory (accession record), no. 524-48",
+        "url": null
+      }
     },
     {
       "id": "bos_006",
@@ -241,7 +254,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it in winter by cinnamon and copper bark peeling in thin curls that stay attached. It stands in the Maple Collection off Meadow Road, Arnold Arboretum."
+      "how_to_recognise": "You can recognise it in winter by cinnamon and copper bark peeling in thin curls that stay attached. It stands in the Maple Collection off Meadow Road, Arnold Arboretum.",
+      "official_register": {
+        "name": "Arnold Arboretum plant inventory (accession record), no. 12488*A",
+        "url": null
+      },
+      "girth_cm": 244
     },
     {
       "id": "bos_007",
@@ -309,7 +327,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise them by the smell in October, burnt sugar off the falling leaves, which you often catch before you see the tree, and by the bark peeling in narrow rectangles. They stand as a multi-stemmed pair on Meadow Road."
+      "how_to_recognise": "You can recognise them by the smell in October, burnt sugar off the falling leaves, which you often catch before you see the tree, and by the bark peeling in narrow rectangles. They stand as a multi-stemmed pair on Meadow Road.",
+      "official_register": {
+        "name": "Arnold Arboretum plant inventory (accession record), no. 882*A",
+        "url": null
+      },
+      "girth_cm": 227
     },
     {
       "id": "bos_009",
@@ -336,9 +359,10 @@
       "verified_sources": [
         "https://www.nps.gov/articles/000/long-littleleaf-linden-plant-story.htm",
         "https://designingtheparksoclp.wordpress.com/2020/09/04/if-plants-could-speak-a-tour-of-historic-plantings-at-the-longfellow-house-washingtons-headquarters-national-historic-site/",
-        "https://emptymassave.wordpress.com/2018/06/07/famous-trees-of-cambridge/"
+        "https://emptymassave.wordpress.com/2018/06/07/famous-trees-of-cambridge/",
+        "https://www.nps.gov/long/planyourvisit/hours.htm"
       ],
-      "access": "Free; National Historic Site grounds are open to the public daily during daylight hours (house tours are separately ticketed but the East Lawn where the tree stands is publicly accessible)",
+      "access": "Free. The grounds are open daily from dawn to dusk; house tours are separately ticketed, but the East Lawn beside the house, where the linden stands, is part of the grounds.",
       "transport": "MBTA Red Line to Harvard Square, then about 8-10 minutes on foot down Brattle Street",
       "curation_status": "flagged",
       "location_precision": "approximate",
@@ -348,7 +372,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the cables carrying its branches and the filled cavity in a trunk 84 inches through, on a linden 82 feet tall where the species usually stops at 60. It stands alone on the East Lawn, the last of its avenue."
+      "how_to_recognise": "You can recognise it by the cables carrying its branches and the filled cavity in a trunk 84 inches through, on a linden 82 feet tall where the species usually stops at 60. It stands alone on the East Lawn, the last of its avenue.",
+      "official_register": {
+        "name": "National Park Service plant story (Longfellow House-Washington's Headquarters NHS)",
+        "url": "https://www.nps.gov/articles/000/long-littleleaf-linden-plant-story.htm"
+      },
+      "girth_cm": 670,
+      "height_m": 25.0
     },
     {
       "id": "bos_010",
@@ -461,7 +491,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Arnold Arboretum plant inventory (accession record), no. 11371*J",
+        "url": null
+      },
+      "girth_cm": 164
     },
     {
       "id": "bos_013",
