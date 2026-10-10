@@ -10164,6 +10164,14 @@
  "2026-10-10": [
   {
    "date": "2026-10-10",
+   "target": "new-orleans",
+   "kind": "enrich",
+   "tokens": 137565,
+   "trees": 1,
+   "note": "low yield: access line on nol_008 only; no register or pin evidence, Audubon hosts return 403"
+  },
+  {
+   "date": "2026-10-10",
    "target": "the-hague",
    "kind": "enrich",
    "tokens": 152543,
