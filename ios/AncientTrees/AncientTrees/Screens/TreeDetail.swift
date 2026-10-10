@@ -278,14 +278,18 @@ struct TreeDetail: View {
                 // a second one there never appeared (2026-09-26). An alert,
                 // because iOS 26 draws a dialog as a popover from its anchor
                 // and drops the cancel button with it.
-                .alert("Discard this tree?", isPresented: $confirmingDiscard) {
-                    Button("Discard", role: .destructive) {
-                        if let m = live { sightings.remove(m.id) }
-                        dismiss()
-                    }
-                    Button("Keep editing", role: .cancel) {}
-                } message: {
-                    Text("You will lose the photograph and what you have filled in.")
+                .sheet(isPresented: $confirmingDiscard) {
+                    BrandSheet(
+                        title: "Discard this tree?",
+                        message: "You will lose the photograph and what you have filled in.",
+                        buttons: [
+                            .destructive("Discard", id: "discard-confirm") {
+                                confirmingDiscard = false
+                                if let m = live { sightings.remove(m.id) }
+                                dismiss()
+                            },
+                            .secondary("Keep editing") { confirmingDiscard = false },
+                        ])
                 }
         }
         .brandGround()
@@ -462,26 +466,33 @@ struct TreeDetail: View {
         }
         .sheet(isPresented: $sharing) { ShareSheet(items: shareItems) }
         .sheet(isPresented: $choosingCollect, onDismiss: {
+            confirmingUncollect = false
             let run = afterChoice
             afterChoice = nil
             run?()
         }) { collectChoice }
-        .alert("That did not send", isPresented: $shareFailed) {
-            Button("All right", role: .cancel) {}
-        } message: {
-            Text("Your tree is safe here. Try the link again when you have signal.")
+        // NEWS IS THE SNACKBAR, never a box you have to close (the one-sheet
+        // rule, 2026-10-10): a failed share says so at the foot and leaves.
+        .onChange(of: shareFailed) { _, failed in
+            guard failed else { return }
+            shareFailed = false
+            navigator.snack = .init(text: "That did not send. Try the link again when you have signal.",
+                                    symbol: "wifi.exclamationmark")
         }
-        .confirmationDialog("Remove \(tree.name) from your trees?",
-                            isPresented: $removing, titleVisibility: .visible) {
-            Button("Remove", role: .destructive) {
-                if let m = mine {
-                    sightings.remove(m.id)
-                    dismiss()
-                }
-            }
-            Button("Keep it", role: .cancel) {}
-        } message: {
-            Text("Your photograph goes with it. What you have already sent us stays sent.")
+        .sheet(isPresented: $removing) {
+            BrandSheet(
+                title: "Remove \(tree.name) from your trees?",
+                message: "Your photograph goes with it. What you have already sent us stays sent.",
+                buttons: [
+                    .destructive("Remove", id: "remove-mine-confirm") {
+                        removing = false
+                        if let m = mine {
+                            sightings.remove(m.id)
+                            dismiss()
+                        }
+                    },
+                    .secondary("Keep it") { removing = false },
+                ])
         }
         .sheet(isPresented: $reporting) {
             ContributeView(about: tree, opening: reportOpening)
@@ -1802,9 +1813,6 @@ struct TreeDetail: View {
         return "On " + d.formatted(.dateTime.day().month(.wide).year()) + "."
     }
 
-    /// Red for the one act that takes something away.
-    private static let removeRed = Color(light: 0xB22222, dark: 0xFF7B72)
-
     /// Collecting without a photograph, from anywhere (Hidde, 2026-10-10:
     /// "shouldnt you also be able to collect trees when you're not around").
     /// The same gate as the map's arrival card: signed out, sign in first and
@@ -1819,91 +1827,53 @@ struct TreeDetail: View {
         if !saved.isVisited(tree.id) { saved.toggleVisited(tree.id) }
     }
 
-    private var collectChoice: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            if confirmingUncollect {
-                Text("Remove \(tree.name) from your collected trees?")
-                    .font(.brand(21, .bold, relativeTo: .title3))
-                    .foregroundStyle(Brand.ink)
-                    .fixedSize(horizontal: false, vertical: true)
-                Text("Your photographs of it stay saved. It leaves My trees until you collect it again.")
-                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-                // THE WHOLE RED AREA IS THE BUTTON (Hidde, 2026-10-10: "de
-                // rode remove knop doet het niet"). Its height and fill sat
-                // outside the label, so only the word itself took a tap.
-                Button {
-                    afterChoice = { if saved.isVisited(tree.id) { saved.toggleVisited(tree.id) } }
-                    choosingCollect = false
-                } label: {
-                    Text("Remove")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity).frame(height: 54)
-                        .background(Self.removeRed, in: .rect(cornerRadius: 12))
-                        .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("uncollect-confirm")
-                Button { confirmingUncollect = false } label: { Text("Keep it") }
-                    .buttonStyle(BrandButtonStyle(prominent: false))
-            } else if collected {
-                Text("You collected \(tree.name)")
-                    .font(.brand(21, .bold, relativeTo: .title3))
-                    .foregroundStyle(Brand.ink)
-                    .fixedSize(horizontal: false, vertical: true)
-                if let on = collectedOn {
-                    Text(on).font(.subheadline).foregroundStyle(Brand.inkSoft)
-                }
-                Button {
-                    afterChoice = { navigator.collectAbout = tree.name; navigator.collectNearby = true }
-                    choosingCollect = false
-                } label: {
-                    Label("Add a photograph", systemImage: "camera")
-                }
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("collect-with-photo")
-                Button { confirmingUncollect = true } label: {
-                    Text("Remove from collected")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(Self.removeRed)
-                        .frame(maxWidth: .infinity).frame(height: 54)
-                        .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(Self.removeRed.opacity(0.35), lineWidth: 1) }
-                        .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                .accessibilityIdentifier("uncollect")
-            } else {
-                Text("Collect \(tree.name)")
-                    .font(.brand(21, .bold, relativeTo: .title3))
-                    .foregroundStyle(Brand.ink)
-                    .fixedSize(horizontal: false, vertical: true)
-                Text("Your photograph goes in your trees instead of ours.")
-                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-                Button {
-                    afterChoice = { navigator.collectAbout = tree.name; navigator.collectNearby = true }
-                    choosingCollect = false
-                } label: {
-                    Label("Take a photograph", systemImage: "camera")
-                }
-                .buttonStyle(BrandButtonStyle())
-                .accessibilityIdentifier("collect-with-photo")
-                Button {
-                    afterChoice = { collectWithoutPhoto() }
-                    choosingCollect = false
-                } label: {
-                    Label("Collect without a photograph", systemImage: "checkmark.seal")
-                }
-                .buttonStyle(BrandButtonStyle(prominent: false))
-                .accessibilityIdentifier("collect-no-photo")
-            }
+    /// Opens the camera flow on this tree, straight at the camera or straight
+    /// at the photo library: the sheet already asked which, so the flow's own
+    /// "take or choose" screen is not shown a second time.
+    private func startPhoto(_ start: CollectSheet.Start) {
+        afterChoice = {
+            navigator.collectAbout = tree.name
+            navigator.collectStart = start
+            navigator.collectNearby = true
         }
-        .padding(.horizontal, 20).padding(.bottom, 20).padding(.top, 32)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .presentationDetents([.height(332)])
-        .brandSheetHandle()
-        .onDisappear { confirmingUncollect = false }
+        choosingCollect = false
+    }
+
+    /// THE COLLECT SHEET, three states in the one sheet (Kit/BrandSheet.swift).
+    /// Three ways to collect (Hidde, 2026-10-10: "3 opties voor collecting -
+    /// make photo, from library and last collect without photograph"):
+    /// iNaturalist's Observe offers the camera, the photo library and a record
+    /// with no media side by side, and every app's photo choice is "take" over
+    /// "choose" (CONVENTIONS.md, "Collecting: the camera, your photos, or
+    /// without").
+    @ViewBuilder private var collectChoice: some View {
+        if confirmingUncollect {
+            BrandSheet(
+                title: "Remove \(tree.name) from your collected trees?",
+                message: "Your photographs of it stay saved. It leaves My trees until you collect it again.",
+                buttons: [
+                    .destructive("Remove", id: "uncollect-confirm") {
+                        afterChoice = { if saved.isVisited(tree.id) { saved.toggleVisited(tree.id) } }
+                        choosingCollect = false
+                    },
+                    .secondary("Keep it", id: "uncollect-keep") { confirmingUncollect = false },
+                ])
+        } else {
+            BrandSheet(
+                icon: "checkmark.seal",
+                title: collected ? "You collected \(tree.name)" : "Collect \(tree.name)",
+                message: collected ? collectedOn : "Your photograph goes in your trees instead of ours.",
+                buttons: [
+                    .primary("Take a photograph", "camera", id: "collect-with-photo") { startPhoto(.camera) },
+                    .secondary("Choose from your photos", "photo.on.rectangle", id: "collect-from-library") { startPhoto(.library) },
+                    collected
+                        ? .destructiveQuiet("Remove from collected", id: "uncollect") { confirmingUncollect = true }
+                        : .secondary("Collect without a photograph", id: "collect-no-photo") {
+                            afterChoice = { collectWithoutPhoto() }
+                            choosingCollect = false
+                        },
+                ])
+        }
     }
 
     /// A 52 point circle in the bar, the same as the bookmark beside it.

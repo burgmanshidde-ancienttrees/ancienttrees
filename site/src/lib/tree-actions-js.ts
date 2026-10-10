@@ -171,7 +171,7 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
   // BONUS, never a gate."
   var dlg = document.querySelector('.collect-dlg');
   function pane(name) {
-    dlg.querySelectorAll('.collect-pane').forEach(function(p) { p.hidden = p.dataset.pane !== name; });
+    dlg.querySelectorAll('[data-pane]').forEach(function(p) { p.hidden = p.dataset.pane !== name; });
   }
   function openCollect(id) {
     if (!dlg || dlg.dataset.tree !== id) {
@@ -210,9 +210,11 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
       // Only ever reached signed in, through the gate above; a session that
       // ended while the sheet was open acts on nothing.
       if (!C.session()) { dlg.close(); return; }
-      if (act === 'photo') {
+      if (act === 'photo' || act === 'camera') {
         dlg.close();
-        if (window.atAddPhoto) window.atAddPhoto(true);
+        // The camera, or the library: the same upload, two inputs
+        // (AddPhoto.astro), so the button does exactly what it says.
+        if (window.atAddPhoto) window.atAddPhoto(true, act === 'camera' ? 'camera' : 'library');
       } else if (act === 'tick') {
         if (window.atPushVisited) window.atPushVisited(id, true);
         try { at.track('visit'); } catch (err) {}

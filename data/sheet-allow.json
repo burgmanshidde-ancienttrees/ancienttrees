@@ -1,0 +1,33 @@
+{
+  "_why": "What scripts/sheetcheck.py lets a .sheet, .fullScreenCover or <dialog> present besides the one sheet (Kit/BrandSheet.swift, components/Sheet.astro). Every name carries its reason; a new overlay becomes the one sheet or earns a line here. Hidde, 2026-10-10.",
+  "app": {
+    "BrandSheet": "the one sheet itself",
+    "AmbassadorApplySheet": "two BrandSheet steps, the explainer and the receipt",
+    "PermissionRecovery": "a BrandSheet, wrapped so three call sites share the words",
+    "collectChoice": "the tree page's collect sheet, three BrandSheet states",
+    "SignInSheet": "the reference the one sheet is measured from (CONVENTIONS.md, the sign-in sheet); same handle, cross, tile and button sizes, provider buttons in the providers' own colours",
+    "CollectSheet": "the camera flow: its first screen uses the sheet's buttons, every later step is a map, a list or a form at full height",
+    "CameraPicker": "the system camera, full screen",
+    "LibraryPicker": "the system photo picker, full screen",
+    "ShareSheet": "Apple's share sheet",
+    "PhotoViewer": "a photograph at full size, full screen",
+    "PlacePin": "a map to drag a pin on, full screen",
+    "MapSearch": "search, full screen",
+    "WalkMode": "a walk, full screen",
+    "PaywallView": "the paywall page",
+    "ProfileEditor": "a form: your name and picture",
+    "ContributeView": "a form: a tree, a correction or feedback",
+    "PeopleView": "a page: people to follow",
+    "SpeciesChooser": "a list to pick a species from",
+    "SpeciesPicker": "a list to pick a species from",
+    "editor": "a one-field form on your own tree (FieldEditor)",
+    "accountSheet": "a page: your account and deleting it, with a field to type DELETE",
+    "legalSheet": "a page of map and photo credits",
+    "walkMode": "a walk, full screen (WalkMode)"
+  },
+  "web": {
+    "signin-dialog": "the reference the one sheet is measured from (SignInModal.astro), and AppModal.astro which shares its frame",
+    "photo-view": "a photograph at full size, full screen (PhotoFigure.astro)",
+    "pin-dlg": "a map to drag a pin on, full screen (TreeDetail.astro)"
+  }
+}

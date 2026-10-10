@@ -67,6 +67,11 @@ struct CollectSheet: View {
     /// intro screen reads it: see CollectIntro.
     var about: String? = nil
     var addsPhoto = false
+    /// Where to begin when the tree page's sheet already asked: the camera, or
+    /// the photo library. nil shows the intro's own choice.
+    enum Start { case camera, library }
+    var start: Start? = nil
+    @State private var started = false
 
     @Environment(Saved.self) private var saved
     @Environment(Sightings.self) private var sightings
@@ -277,20 +282,32 @@ struct CollectSheet: View {
         // dismiss while there is a photograph is what iOS gives you for exactly
         // this, and it routes every exit through the one control that asks.
         .interactiveDismissDisabled(hasWork)
-        // AN ALERT, NOT A confirmationDialog. iOS 26 draws a
-        // confirmationDialog anchored to its control as a popover and silently
-        // drops every button carrying role: .cancel, which this app has already
-        // shipped once as a destructive question with no way out (2026-08-27).
-        // An alert renders every button it is given.
-        .alert("Discard this tree?", isPresented: $confirmingDiscard) {
-            Button("Cancel", role: .cancel) {}
-            Button("Discard", role: .destructive) { dismiss() }
-        } message: {
-            // Named plainly. Since 2026-09-11 the camera path keeps a copy in
-            // Photos (Kit/CameraRoll.swift), but only where add permission was
-            // given, so for some people the photograph still exists nowhere
-            // else and the warning stays.
-            Text("You will lose the photograph and what you have filled in.")
+        // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10), which also
+        // settles what the old comment here was about: iOS 26 draws an
+        // anchored confirmationDialog as a popover and drops its cancel
+        // button. Named plainly: since 2026-09-11 the camera path keeps a copy
+        // in Photos (Kit/CameraRoll.swift), but only where add permission was
+        // given, so for some people the photograph exists nowhere else.
+        .sheet(isPresented: $confirmingDiscard) {
+            BrandSheet(
+                title: "Discard this tree?",
+                message: "You will lose the photograph and what you have filled in.",
+                buttons: [
+                    .destructive("Discard", id: "discard-confirm") {
+                        confirmingDiscard = false
+                        dismiss()
+                    },
+                    .secondary("Keep editing") { confirmingDiscard = false },
+                ])
+        }
+        // Straight to the camera or the library when the tree page asked.
+        .task {
+            guard !started, let start else { return }
+            started = true
+            switch start {
+            case .camera: openCamera()
+            case .library: openLibrary()
+            }
         }
         .fullScreenCover(isPresented: $camera) {
             CameraPicker { image in

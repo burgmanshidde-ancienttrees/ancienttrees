@@ -41,6 +41,7 @@ struct PeopleView: View {
     @State private var acting: Profiles.Profile?
     @State private var reporting: Profiles.Profile?
     @State private var reported = false
+    @State private var pendingReport: Profiles.Profile?
     /// Signed out, Follow and search ask for an account instead of doing
     /// nothing (2026-10-02, the same gate the heart and the tick carry).
     @State private var signingIn = false
@@ -235,47 +236,48 @@ struct PeopleView: View {
                     Button("Done") { dismiss() }
                 }
             }
-            .confirmationDialog(acting?.display_name ?? "",
-                                isPresented: Binding(get: { acting != nil },
-                                                     set: { if !$0 { acting = nil } }),
-                                titleVisibility: .visible) {
-                Button("Report this person") {
-                    reporting = acting
+            // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10) for the
+            // person menu, the reasons and the thanks. One sheet cannot hand
+            // over to the next in the same frame, so the report waits for the
+            // menu to close (pendingReport) before its own sheet opens.
+            .sheet(isPresented: Binding(get: { acting != nil }, set: { if !$0 { acting = nil } }),
+                   onDismiss: {
+                       if let p = pendingReport { pendingReport = nil; reported = false; reporting = p }
+                   }) {
+                if let p = acting {
+                    let hidden = moderation.hides(p.user_id)
+                    BrandSheet(
+                        title: p.display_name,
+                        message: "Blocking hides them from you, and neither of you follows the other any more.",
+                        buttons: [
+                            .secondary("Report this person", id: "person-report") {
+                                pendingReport = p
+                                acting = nil
+                            },
+                            hidden
+                                ? .secondary("Unblock this person", id: "person-block") { block(p); acting = nil }
+                                : .destructive("Block this person", id: "person-block") { block(p); acting = nil },
+                        ])
                 }
-                Button(acting.map { moderation.hides($0.user_id) } == true
-                       ? "Unblock this person" : "Block this person",
-                       role: acting.map { moderation.hides($0.user_id) } == true ? nil : .destructive) {
-                    guard let p = acting, let s = account.session else { return }
-                    Task {
-                        // A token that is still good: see Account.freshToken.
-                        guard let t = await account.freshToken() else { return }
-                        if moderation.hides(p.user_id) {
-                            await moderation.unblock(p.user_id, me: s.userId, token: t)
-                        } else {
-                            await moderation.block(p.user_id, me: s.userId, token: t)
-                        }
-                    }
-                }
-                Button("Cancel", role: .cancel) {}
-            } message: {
-                Text("Blocking hides them from you, and neither of you follows the other any more.")
             }
-            // The reasons, as their own sheet rather than a text field. A field
-            // asks somebody to write an essay about an offensive picture; four
+            // The reasons as buttons rather than a text field: a field asks
+            // somebody to write an essay about an offensive picture; four
             // buttons take one tap, which is what Apple's own report sheets do.
-            .confirmationDialog("Why are you reporting this?",
-                                isPresented: Binding(get: { reporting != nil },
-                                                     set: { if !$0 { reporting = nil } }),
-                                titleVisibility: .visible) {
-                ForEach(Moderation.Reason.allCases) { r in
-                    Button(r.rawValue) { send(r) }
+            // The thanks is the same sheet's next step.
+            .sheet(isPresented: Binding(get: { reporting != nil }, set: { if !$0 { reporting = nil } })) {
+                if reported {
+                    BrandSheet(
+                        icon: "checkmark",
+                        title: "Thank you",
+                        message: "We look at every report. If you would rather not see this person at all, block them too.",
+                        buttons: [.primary("Done") { reporting = nil }])
+                } else {
+                    BrandSheet(
+                        title: "Why are you reporting this?",
+                        buttons: Moderation.Reason.allCases.map { r in
+                            .secondary(r.rawValue) { send(r) }
+                        })
                 }
-                Button("Cancel", role: .cancel) {}
-            }
-            .alert("Thank you", isPresented: $reported) {
-                Button("OK", role: .cancel) {}
-            } message: {
-                Text("We look at every report. If you would rather not see this person at all, block them too.")
             }
             .task {
                 // Debug scaffolding, the same family as -tab and -signed-in:
@@ -343,6 +345,19 @@ struct PeopleView: View {
     /// Send the report, and say so. The row stays where it is: reporting is
     /// not blocking, and doing both silently would take a choice away from the
     /// person who only wanted to flag something.
+    private func block(_ p: Profiles.Profile) {
+        guard let s = account.session else { return }
+        Task {
+            // A token that is still good: see Account.freshToken.
+            guard let t = await account.freshToken() else { return }
+            if moderation.hides(p.user_id) {
+                await moderation.unblock(p.user_id, me: s.userId, token: t)
+            } else {
+                await moderation.block(p.user_id, me: s.userId, token: t)
+            }
+        }
+    }
+
     private func send(_ reason: Moderation.Reason) {
         guard let p = reporting, let s = account.session else { return }
         Task {

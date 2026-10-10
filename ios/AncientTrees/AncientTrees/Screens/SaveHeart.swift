@@ -48,11 +48,16 @@ struct SaveHeart: View {
             .accessibilityLabel(isSaved ? "Saved \(tree.name). Tap to remove"
                                         : "Save \(tree.name)")
             .sensoryFeedback(.selection, trigger: isSaved)
-            .confirmationDialog("Remove \(tree.name) from Want to visit?",
-                                isPresented: $confirmingRemove,
-                                titleVisibility: .visible) {
-                Button("Remove", role: .destructive) { saved.toggleSaved(tree.id) }
-                Button("Keep it", role: .cancel) {}
+            .sheet(isPresented: $confirmingRemove) {
+                BrandSheet(
+                    title: "Remove \(tree.name) from Want to visit?",
+                    buttons: [
+                        .destructive("Remove", id: "want-remove-confirm") {
+                            confirmingRemove = false
+                            saved.toggleSaved(tree.id)
+                        },
+                        .secondary("Keep it") { confirmingRemove = false },
+                    ])
             }
     }
 
@@ -113,7 +118,7 @@ struct SnackBar: View {
     var body: some View {
         if let s = navigator.snack {
             HStack(spacing: 12) {
-                Image(systemName: "bookmark.fill").foregroundStyle(Brand.moss)
+                Image(systemName: s.symbol).foregroundStyle(Brand.moss)
                 Text(s.text)
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Brand.ink)

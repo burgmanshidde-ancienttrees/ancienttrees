@@ -40,6 +40,11 @@
       "text": "The thickest trunks",
       "surface": "app",
       "reason": "Discover row in the app. Hidde reversed the website homepage rows the same day and kept the app's (2026-10-04: 'reverse it, app is fine')."
+    },
+    {
+      "text": "Add a photograph",
+      "surface": "app",
+      "reason": "The app's accessibility label on a photo-less tree's camera reads 'Add a photograph of this tree'. The website's collect sheet stopped saying 'Add a photograph' on 2026-10-10 because both surfaces now offer 'Take a photograph' and 'Choose from your photos' (a laptop: 'Choose a photograph'); the match is the label containing the old button's words, not a button left behind."
     }
   ]
 }

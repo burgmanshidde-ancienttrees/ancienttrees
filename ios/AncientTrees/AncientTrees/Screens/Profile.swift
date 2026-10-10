@@ -49,7 +49,8 @@ struct ProfileView: View {
     /// act rather than a second tap in the same place, and it works with the
     /// aeroplane mode on.
     @State private var typedToConfirm = ""
-    @State private var confirmingSignOut = false
+    /// -signoutask opens the question without a tap (2026-10-10).
+    @State private var confirmingSignOut = ProcessInfo.processInfo.arguments.contains("-signoutask")
     /// A second tap used to start a second upload of everything. See below.
     @State private var signingOut = false
     @State private var deleteFailed = false
@@ -116,19 +117,6 @@ struct ProfileView: View {
             SignInSheet(reason: saved.savedCount > 0 ? .keepCollection(saved.savedCount) : .general,
                         localCount: saved.savedCount)
                 .environment(account).environment(saved)
-        }
-        .alert("Delete your account?", isPresented: $confirmingDelete) {
-            Button("Cancel", role: .cancel) {}
-            Button("Delete", role: .destructive) {
-                Task { deleteFailed = !(await account.deleteAccount()) }
-            }
-        } message: {
-            Text("We delete your email address and your collection. This cannot be undone.")
-        }
-        .alert("That did not work", isPresented: $deleteFailed) {
-            Button("OK", role: .cancel) {}
-        } message: {
-            Text("Nothing was deleted. Try again, or write to info@ancienttrees.app and we will do it by hand.")
         }
     }
 
@@ -610,20 +598,35 @@ struct ProfileView: View {
                     .padding(.horizontal, 14).frame(height: 48)
                     .background(Brand.surfaceMuted, in: RoundedRectangle(cornerRadius: 10))
                     .accessibilityIdentifier("delete-confirm-field")
-                Button { confirmingDelete = true } label: {
-                    Text("Delete account")
-                        .font(.callout)
-                        .foregroundStyle(mayDelete ? .red : Brand.inkSoft.opacity(0.5))
-                        .frame(maxWidth: .infinity).frame(height: 48)
-                        .contentShape(.rect)
+                Button("Delete account") { confirmingDelete = true }
+                    .buttonStyle(SheetButtonStyle(kind: mayDelete ? .destructive : .secondary))
+                    .disabled(!mayDelete)
+                    .opacity(mayDelete ? 1 : 0.5)
+                    .accessibilityIdentifier("delete-confirm-button")
+                if deleteFailed {
+                    Text("That did not work. Nothing was deleted. Try again, or write to info@ancienttrees.app and we will do it by hand.")
+                        .font(.footnote).foregroundStyle(Brand.dangerText)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
-                .buttonStyle(.plain)
-                .disabled(!mayDelete)
-                .accessibilityIdentifier("delete-confirm-button")
             }
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
             .brandGround()
+            // THE LAST QUESTION LIVES ON THIS SHEET, not on the page under
+            // it: the 2026-10-10 overlay audit found the old alert attached to
+            // the Settings screen, which cannot present over its own sheet.
+            .sheet(isPresented: $confirmingDelete) {
+                BrandSheet(
+                    title: "Delete your account?",
+                    message: "We delete your email address and your collection. This cannot be undone.",
+                    buttons: [
+                        .destructive("Delete", id: "delete-final") {
+                            confirmingDelete = false
+                            Task { deleteFailed = !(await account.deleteAccount()) }
+                        },
+                        .secondary("Cancel") { confirmingDelete = false },
+                    ])
+            }
             // NAMED FOR WHAT IT IS. It was "Account" while the row into it
             // was called Account too; the row is now "Delete account", and a
             // screen whose title disagrees with the control that opened it is
@@ -716,56 +719,68 @@ struct ProfileView: View {
             // had nothing to tap. Found on 2026-08-27 by the flow walk, which
             // had been failing on exactly this for days while nothing read its
             // verdict. A plain button says the same word and survives.
-            .confirmationDialog("Sign out?", isPresented: $confirmingSignOut,
-                                titleVisibility: .visible) {
-                Button("Sign out", role: .destructive) {
-                    // THE QUEUE STILL GOES UP, IT JUST NO LONGER MAKES YOU
-                    // WAIT FOR IT. Signing out is the last moment a valid token
-                    // exists and anything not yet at the account is about to
-                    // become the only copy there is, so the push has to happen.
-                    // It used to happen IN FRONT of the sign-out: the dialog
-                    // closed, every photograph on the phone went up one at a
-                    // time, and nothing on screen changed until the last one
-                    // landed. Hidde pressed the button twice (2026-08-30:
-                    // "sign out lijkt soms wel een lag te hebben").
-                    //
-                    // The token is what the upload needs, not our copy of it,
-                    // and it stays valid for its own lifetime after we clear
-                    // the Keychain. So: take the session, shut the door, and
-                    // let the upload finish behind it. Nothing is lost that was
-                    // not already at risk of a force-quit.
-                    guard !signingOut else { return }
-                    signingOut = true
-                    // NOTHING IS AWAITED BEFORE THE DOOR SHUTS. The first fix
-                    // moved the upload behind the sign-out and still awaited
-                    // freshSession() in front of it, which is a token refresh
-                    // and therefore a network round trip: Hidde still felt it
-                    // (2026-08-30, "sign out heeft wel nog steeds een kleine lag
-                    // maar niet heel erg"). The session we already hold is the
-                    // right one to use, and whether it is fresh is a question
-                    // for the upload rather than for the person leaving.
-                    let session = account.session
-                    account.signOut()
-                    Task {
-                        // A token good for another five minutes uploads now. One
-                        // that is not simply does not: those sightings stay on
-                        // the phone with syncedAt nil and go up on the next
-                        // sign-in, which is what that field is for. Refreshing a
-                        // token for an account we have just left is the wrong
-                        // trade against making somebody wait to leave.
-                        if let session, session.isFresh {
-                            await SightingSync.pushAll(session: session, sightings: sightings)
-                        }
-                        // After the upload, never before it: the upload rides
-                        // on this same session.
-                        if let session { await Account.revoke(session) }
-                        signingOut = false
-                    }
-                }
-                Button("Cancel") { confirmingSignOut = false }
-            } message: {
-                Text("Your collection stays in your account. Sign in again on any phone and it comes back.")
+            // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10), which also ends
+            // the popover trouble the comment above records: a sheet draws
+            // every button it is given.
+            .sheet(isPresented: $confirmingSignOut) {
+                BrandSheet(
+                    title: "Sign out?",
+                    message: "Your collection stays in your account. Sign in again on any phone and it comes back.",
+                    buttons: [
+                        .destructive("Sign out", id: "signout-confirm") {
+                            confirmingSignOut = false
+                            signOutNow()
+                        },
+                        .secondary("Cancel") { confirmingSignOut = false },
+                    ])
             }
+        }
+    }
+
+    /// Signing out, after the sheet asked. The reasoning for every line is in
+    /// the comments below, kept from when it lived inside the dialog.
+    private func signOutNow() {
+        // THE QUEUE STILL GOES UP, IT JUST NO LONGER MAKES YOU
+        // WAIT FOR IT. Signing out is the last moment a valid token
+        // exists and anything not yet at the account is about to
+        // become the only copy there is, so the push has to happen.
+        // It used to happen IN FRONT of the sign-out: the dialog
+        // closed, every photograph on the phone went up one at a
+        // time, and nothing on screen changed until the last one
+        // landed. Hidde pressed the button twice (2026-08-30:
+        // "sign out lijkt soms wel een lag te hebben").
+        //
+        // The token is what the upload needs, not our copy of it,
+        // and it stays valid for its own lifetime after we clear
+        // the Keychain. So: take the session, shut the door, and
+        // let the upload finish behind it. Nothing is lost that was
+        // not already at risk of a force-quit.
+        guard !signingOut else { return }
+        signingOut = true
+        // NOTHING IS AWAITED BEFORE THE DOOR SHUTS. The first fix
+        // moved the upload behind the sign-out and still awaited
+        // freshSession() in front of it, which is a token refresh
+        // and therefore a network round trip: Hidde still felt it
+        // (2026-08-30, "sign out heeft wel nog steeds een kleine lag
+        // maar niet heel erg"). The session we already hold is the
+        // right one to use, and whether it is fresh is a question
+        // for the upload rather than for the person leaving.
+        let session = account.session
+        account.signOut()
+        Task {
+            // A token good for another five minutes uploads now. One
+            // that is not simply does not: those sightings stay on
+            // the phone with syncedAt nil and go up on the next
+            // sign-in, which is what that field is for. Refreshing a
+            // token for an account we have just left is the wrong
+            // trade against making somebody wait to leave.
+            if let session, session.isFresh {
+                await SightingSync.pushAll(session: session, sightings: sightings)
+            }
+            // After the upload, never before it: the upload rides
+            // on this same session.
+            if let session { await Account.revoke(session) }
+            signingOut = false
         }
     }
 }

@@ -1082,6 +1082,8 @@ The gap closed the same day: the worth-it vote, the share button and the app blo
 
    What it deliberately cannot do, so nobody trusts it further than it goes: it cannot feel a stutter, cannot crash on an OS this Mac does not have, and cannot predict App Store review. That is TestFlight's half, and the reason the machine half went to the failure paths rather than to imitating a phone.
 
+3e. **Every overlay is the one sheet, on both surfaces (Hidde, 2026-10-10: "get your act together in designing al these overlays ... make it a component or something").** An audit that day found 27 small overlays in the app and 13 on the website built from four green buttons, three reds and fixed heights that cut buttons off. A question somebody answers is `BrandSheet` (Kit/BrandSheet.swift) in the app and `Sheet.astro` on the website, with four kinds of button (green, grey, red, quiet); news is the snackbar; full screens stay full screens (CONVENTIONS.md, "One sheet for every overlay"). `scripts/sheetcheck.py` runs before every push and refuses a system alert, a pop-up menu, or a sheet or `<dialog>` that is neither the component nor on data/sheet-allow.json with its reason. Removing it needs Hidde.
+
 4. **The composition walk, periodic, with eyes.** Every page type at desktop and 375px, in a working session: every two weeks, and always straight after a visual system change. CI cannot judge composition, so this layer is never delegated to a run; runs do not do visual-taste work.
 
 ## Hidde's curation (optional, when he feels like it)

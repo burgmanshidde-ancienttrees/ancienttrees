@@ -42,6 +42,10 @@ export const ADD_PHOTO_JS = `
   var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
   var btn = document.getElementById('addphoto-btn');
   var file = document.getElementById('addphoto-file');
+  // The camera's own input (capture="environment"): the collect sheet's "Take
+  // a photograph" opens the camera directly, "Choose from your photos" the
+  // library, the way the app's two buttons do (2026-10-10).
+  var cam = document.getElementById('addphoto-camera');
   var note = document.getElementById('addphoto-note');
   var treeId = box.getAttribute('data-tree-id');
   var treeName = box.getAttribute('data-tree-name') || '';
@@ -123,9 +127,10 @@ export const ADD_PHOTO_JS = `
   // gesture a browser insists on for a file picker. collect says the photograph
   // also collects the tree once it has gone through.
   var collecting = false;
-  window.atAddPhoto = function(collect) {
+  window.atAddPhoto = function(collect, mode) {
     if (busy) return;
-    if (session()) { collecting = Boolean(collect); file.click(); }
+    var input = (mode === 'camera' && cam) ? cam : file;
+    if (session()) { collecting = Boolean(collect); input.click(); }
     else { btn.click(); collecting = Boolean(collect); }
   };
 
@@ -149,8 +154,8 @@ export const ADD_PHOTO_JS = `
     else if (session()) file.click(); else ask();
   });
 
-  file.addEventListener('change', function() {
-    var f = file.files && file.files[0];
+  function picked(from) {
+    var f = from.files && from.files[0];
     if (!f || busy) return;
     var s = session();
     if (!s) { say(msgSignIn); return; }
@@ -189,7 +194,7 @@ export const ADD_PHOTO_JS = `
       }).then(function(r) {
         if (!r || !r.ok) throw new Error('row');
         btn.hidden = true;
-        file.value = '';
+        file.value = ''; if (cam) cam.value = '';
         sayWithLink(msgThanks);
         if (collecting && window.atPushVisited) {
           if (!(window.atHasVisited && window.atHasVisited(treeId))) {
@@ -205,7 +210,9 @@ export const ADD_PHOTO_JS = `
         say(msgFailed);
       });
     });
-  });
+  }
+  file.addEventListener('change', function() { picked(file); });
+  if (cam) cam.addEventListener('change', function() { picked(cam); });
 })();
 </script>
 `;

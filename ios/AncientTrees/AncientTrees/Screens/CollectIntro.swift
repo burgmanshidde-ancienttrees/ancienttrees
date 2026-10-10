@@ -109,15 +109,13 @@ struct CollectIntro: View {
                 // camera and the library the same weight and an icon each; a
                 // filled button over a loose text link read as one action and
                 // a footnote. Same 52pt capsules as the sign-in sheet.
+                // The one sheet's buttons (Kit/BrandSheet.swift, 2026-10-10):
+                // green for the camera, grey for the library, 48 with round
+                // ends, the same pair the tree page's collect sheet offers.
                 Button(action: onStart) {
-                    Label("Take a photo", systemImage: "camera")
-                        .font(.system(size: 17, weight: .semibold))
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity).frame(height: 52)
-                        .background(Brand.moss, in: .capsule)
-                        .contentShape(.capsule)
+                    Label("Take a photograph", systemImage: "camera")
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SheetButtonStyle(kind: .primary))
                 .accessibilityIdentifier("add-start")
                 // The shortcut iNaturalist puts on its camera button. It
                 // is a second way in and never the only one.
@@ -125,14 +123,8 @@ struct CollectIntro: View {
 
                 Button(action: onLibrary) {
                     Label("Choose from your photos", systemImage: "photo.on.rectangle")
-                        .font(.system(size: 17, weight: .semibold))
-                        .foregroundStyle(Brand.ink)
-                        .frame(maxWidth: .infinity).frame(height: 52)
-                        .background(Color(.systemBackground), in: .capsule)
-                        .overlay { Capsule().strokeBorder(Color(.separator), lineWidth: 1) }
-                        .contentShape(.capsule)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SheetButtonStyle(kind: .secondary))
                 .accessibilityIdentifier("add-library")
 
                 // No footnote about whose photographs we can use (Hidde,

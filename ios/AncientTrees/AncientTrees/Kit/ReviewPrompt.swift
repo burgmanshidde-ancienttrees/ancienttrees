@@ -166,6 +166,7 @@ struct ReviewAsk: ViewModifier {
     @Environment(\.requestReview) private var requestReview
     @State private var asking = false
     @State private var feedback = false
+    @State private var wantsFeedback = false
 
     func body(content: Content) -> some View {
         content
@@ -174,11 +175,20 @@ struct ReviewAsk: ViewModifier {
                 prompt.pending = false
                 asking = true
             }
-            .alert("Are you enjoying Ancient Trees?", isPresented: $asking) {
-                Button("Yes") { requestReview() }
-                Button("Not really") { feedback = true }
-            } message: {
-                Text("You can tell us what would make it better.")
+            // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10). The feedback
+            // form opens once this one has gone, because two sheets cannot
+            // swap in one frame.
+            .sheet(isPresented: $asking, onDismiss: {
+                if wantsFeedback { wantsFeedback = false; feedback = true }
+            }) {
+                BrandSheet(
+                    icon: "heart",
+                    title: "Are you enjoying Ancient Trees?",
+                    message: "You can tell us what would make it better.",
+                    buttons: [
+                        .primary("Yes", id: "review-yes") { asking = false; requestReview() },
+                        .secondary("Not really", id: "review-no") { wantsFeedback = true; asking = false },
+                    ])
             }
             .sheet(isPresented: $feedback) { ContributeView(feedbackMode: true) }
     }

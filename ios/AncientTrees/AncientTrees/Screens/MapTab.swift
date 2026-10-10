@@ -722,15 +722,17 @@ struct MapTab: View {
         .padding(16)
         .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
         .padding(.horizontal, 16).padding(.bottom, 6)
-        .alert("Remove \(uncollecting?.name ?? "this tree") from your collected trees?",
-               isPresented: Binding(get: { uncollecting != nil }, set: { if !$0 { uncollecting = nil } })) {
-            Button("Remove", role: .destructive) {
-                if let u = uncollecting, saved.isVisited(u.id) { saved.toggleVisited(u.id) }
-                uncollecting = nil
-            }
-            Button("Keep it", role: .cancel) { uncollecting = nil }
-        } message: {
-            Text("Your photographs of it stay saved. It leaves My trees until you collect it again.")
+        .sheet(item: $uncollecting) { u in
+            BrandSheet(
+                title: "Remove \(u.name) from your collected trees?",
+                message: "Your photographs of it stay saved. It leaves My trees until you collect it again.",
+                buttons: [
+                    .destructive("Remove", id: "uncollect-confirm") {
+                        if saved.isVisited(u.id) { saved.toggleVisited(u.id) }
+                        uncollecting = nil
+                    },
+                    .secondary("Keep it") { uncollecting = nil },
+                ])
         }
     }
 

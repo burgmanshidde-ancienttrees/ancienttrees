@@ -1,0 +1,41 @@
+---
+// THE ONE SHEET on the website (Hidde, 2026-10-10: "get your act together in
+// designing al these overlays ... make it a component or something").
+//
+// Convention: our own sign-in sheet, the one overlay measured against
+// AllTrails' (CONVENTIONS.md, "The shape of a sign-in sheet" and "One sheet
+// for every overlay"). A sheet off the bottom on a phone, a centred card above
+// 600px, the handle, a grey close cross in the corner, everything centred, and
+// four kinds of button. The app draws the same sheet from Kit/BrandSheet.swift.
+//
+// Markup inside, in this order and with these classes, all optional except the
+// title and the buttons:
+//   <span class="at-sheet-tile">icon</span>
+//   <h3 class="at-sheet-h">Title</h3>
+//   <p class="at-sheet-p">One or two sentences.</p>
+//   <ul class="at-sheet-pts"><li>...</li></ul>
+//   <div class="at-sheet-btns">
+//     <button class="sheet-b sheet-b--primary|secondary|red|redq|quiet">...</button>
+//   </div>
+//   <p class="at-sheet-fine">Fine print.</p>
+// OVERLAY_SHEET_JS (lib/overlay-sheet-js.ts, on every page through Base.astro) closes it from
+// the cross, the backdrop and a downward drag; Escape is the browser's own.
+// scripts/sheetcheck.py refuses a <dialog> anywhere in site/src that is not
+// this component or on its short list.
+import { icon } from "../lib/icons";
+import { signInCopy } from "../lib/signin-strings";
+
+interface Props {
+  lang?: string;
+  class?: string;
+  id?: string;
+  [attr: string]: unknown;
+}
+const { lang = "en", class: cls, ...rest } = Astro.props as Props;
+const closeLabel = signInCopy(lang).close;
+---
+<dialog class:list={["at-sheet", cls]} {...rest}>
+  <span class="at-sheet-grab" aria-hidden="true"></span>
+  <button type="button" class="at-sheet-x" aria-label={closeLabel}><Fragment set:html={icon("x", "bold")} /></button>
+  <slot />
+</dialog>

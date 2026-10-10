@@ -39,6 +39,7 @@ import AddPhoto from "./AddPhoto.astro";
 import WorthIt from "./WorthIt.astro";
 import SaveHeart from "./SaveHeart.astro";
 import ShareButton from "./ShareButton.astro";
+import Sheet from "./Sheet.astro";
 import { speciesIcon } from "../lib/species-icons";
 import { imgSrcset } from "../lib/images";
 import { locationIsApproximate } from "../lib/tree-copy";
@@ -329,34 +330,52 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
   {/* THE COLLECT SHEET (TreeDetail.swift collectChoice): three panes, one
       shown at a time by tree-actions-js.ts. A bottom sheet on a phone and a
       centred dialog on a laptop, the two places each platform puts a choice. */}
-  <dialog class="collect-dlg" data-tree={tree.id} data-lang={p.lang} aria-label={U.collectTitle(p.name)}>
-    <div class="collect-pane" data-pane="choose">
-      <p class="collect-h">{U.collectTitle(p.name)}</p>
-      <p class="collect-p">{U.collectLead}</p>
-      <button type="button" class="collect-b collect-primary" data-act="photo"><Fragment set:html={icon("camera", "fill")} />{U.collectPhoto}</button>
-      <button type="button" class="collect-b" data-act="tick">{U.collectNoPhoto}</button>
+  <Sheet lang={p.lang} class="collect-dlg" data-tree={tree.id} data-lang={p.lang} aria-label={U.collectTitle(p.name)}>
+    {/* Three ways to collect, the app's sheet (Hidde, 2026-10-10: "make
+        photo, from library and last collect without photograph"). A laptop
+        has no camera to point at a tree, so there the first two become one
+        "Choose a photograph" (.only-touch / .only-fine in style.css). */}
+    <div data-pane="choose">
+      <span class="at-sheet-tile"><Fragment set:html={icon("seal-check", "bold")} /></span>
+      <h3 class="at-sheet-h">{U.collectTitle(p.name)}</h3>
+      <p class="at-sheet-p">{U.collectLead}</p>
+      <div class="at-sheet-btns">
+        <button type="button" class="sheet-b sheet-b--primary only-touch" data-act="camera"><Fragment set:html={icon("camera", "bold")} />{U.collectCamera}</button>
+        <button type="button" class="sheet-b sheet-b--secondary only-touch" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectLibrary}</button>
+        <button type="button" class="sheet-b sheet-b--primary only-fine" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectPhoto}</button>
+        <button type="button" class="sheet-b sheet-b--secondary" data-act="tick">{U.collectNoPhoto}</button>
+      </div>
     </div>
-    <div class="collect-pane" data-pane="done" hidden>
-      <p class="collect-h">{U.collectedTitle(p.name)}</p>
-      <p class="collect-p collect-on" data-on={U.collectedOn("{d}")} hidden></p>
-      <button type="button" class="collect-b collect-primary" data-act="photo"><Fragment set:html={icon("camera", "fill")} />{U.collectPhoto}</button>
-      <button type="button" class="collect-b collect-red" data-act="ask">{U.uncollect}</button>
+    <div data-pane="done" hidden>
+      <span class="at-sheet-tile"><Fragment set:html={icon("seal-check", "bold")} /></span>
+      <h3 class="at-sheet-h">{U.collectedTitle(p.name)}</h3>
+      <p class="at-sheet-p collect-on" data-on={U.collectedOn("{d}")} hidden></p>
+      <div class="at-sheet-btns">
+        <button type="button" class="sheet-b sheet-b--primary only-touch" data-act="camera"><Fragment set:html={icon("camera", "bold")} />{U.collectCamera}</button>
+        <button type="button" class="sheet-b sheet-b--secondary only-touch" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectLibrary}</button>
+        <button type="button" class="sheet-b sheet-b--primary only-fine" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectPhoto}</button>
+        <button type="button" class="sheet-b sheet-b--redq" data-act="ask">{U.uncollect}</button>
+      </div>
     </div>
-    <div class="collect-pane" data-pane="confirm" hidden>
-      <p class="collect-h">{U.uncollectQ(p.name)}</p>
-      <p class="collect-p">{U.uncollectBody}</p>
-      <button type="button" class="collect-b collect-redfill" data-act="remove">{U.uncollectYes}</button>
-      <button type="button" class="collect-b" data-act="keep">{U.keepIt}</button>
+    <div data-pane="confirm" hidden>
+      <h3 class="at-sheet-h">{U.uncollectQ(p.name)}</h3>
+      <p class="at-sheet-p">{U.uncollectBody}</p>
+      <div class="at-sheet-btns">
+        <button type="button" class="sheet-b sheet-b--red" data-act="remove">{U.uncollectYes}</button>
+        <button type="button" class="sheet-b sheet-b--secondary" data-act="keep">{U.keepIt}</button>
+      </div>
     </div>
-  </dialog>
+  </Sheet>
 
-  {/* Which maps app, asked once on an iPhone (DirectionsAsk). */}
-  <dialog class="dir-pick" aria-label={U.dirTitle}>
-    <p class="dir-pick-title">{U.dirTitle}</p>
-    <button type="button" value="apple">{U.appleMaps}</button>
-    <button type="button" value="google">{U.googleMaps}</button>
-    <button type="button" value="cancel" class="dir-pick-cancel">{U.cancel}</button>
-  </dialog>
+  {/* Which maps app, asked once on an iPhone (DirectionsAsk): equal choices,
+      so both are grey, and the cross is the cancel. */}
+  <Sheet lang={p.lang} class="dir-pick" aria-label={U.dirTitle}>
+    <h3 class="at-sheet-h">{U.dirTitle}</h3>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--secondary" value="apple">{U.appleMaps}</button>
+      <button type="button" class="sheet-b sheet-b--secondary" value="google">{U.googleMaps}</button>
+    </div>
+  </Sheet>
 
   {isApprox && (
     <dialog class="pin-dlg" aria-label={U.pinTitle}

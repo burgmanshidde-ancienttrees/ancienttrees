@@ -119,7 +119,7 @@ document.addEventListener('click', function (e) {
 if (pick) {
   pick.addEventListener('click', function (e) {
     var b = e.target.closest('button');
-    if (e.target === pick || (b && b.value === 'cancel')) { pick.close(); return; }
+    // The cross and the backdrop are the one sheet's (overlay-sheet-js.ts).
     if (!b || !URLS[b.value]) return;
     try { localStorage.setItem('at_maps_app', b.value); } catch (err) {}
     pick.close();

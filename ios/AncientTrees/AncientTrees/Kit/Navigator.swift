@@ -59,8 +59,11 @@ public final class Navigator {
         public let text: String
         /// Offer "View", which opens My trees on Want to visit.
         public let viewWantToVisit: Bool
-        public init(text: String, viewWantToVisit: Bool = false) {
-            self.text = text; self.viewWantToVisit = viewWantToVisit
+        /// The glyph at its leading edge. News of every kind travels here
+        /// rather than in an alert (the one-sheet rule, 2026-10-10).
+        public let symbol: String
+        public init(text: String, viewWantToVisit: Bool = false, symbol: String = "bookmark.fill") {
+            self.text = text; self.viewWantToVisit = viewWantToVisit; self.symbol = symbol
         }
     }
     public var snack: Snack?
@@ -89,6 +92,10 @@ public final class Navigator {
     /// Old Tjikko is not browsing, they are standing in front of a named tree.
     /// nil everywhere else, where the generic line is the honest one.
     public var collectAbout: String? = nil
+    /// Straight to the camera or straight to the photo library, when the
+    /// tree page's collect sheet already asked which (2026-10-10). nil opens
+    /// the flow's own first screen. Cleared with collectAbout.
+    var collectStart: CollectSheet.Start? = nil
     /// True when the way in was the tree's own missing PHOTOGRAPH (the grey
     /// "No photograph yet" area or the camera on it): somebody who tapped
     /// there wants to add a photo, not to hear about a collection (Hidde,

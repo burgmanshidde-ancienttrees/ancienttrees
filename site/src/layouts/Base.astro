@@ -11,6 +11,7 @@
 import { STYLE_HREF } from "../lib/asset-hash";
 import SignInModal from "../components/SignInModal.astro";
 import { SIGNIN_JS, SIGNIN_CATCH_JS } from "../lib/signin-js";
+import { OVERLAY_SHEET_JS } from "../lib/overlay-sheet-js";
 import { UNITS_JS } from "../lib/units-js";
 import LanguagePicker from "../components/LanguagePicker.astro";
 import { toEnglishPath, ui } from "../lib/i18n";
@@ -579,6 +580,7 @@ window.atPaintNav = function(inNow) {
     everywhere, so it lives here now and nowhere else. */}
 <SignInModal lang={lang} />
 <Fragment set:html={SIGNIN_JS} />
+<Fragment set:html={OVERLAY_SHEET_JS} />
 {/* THE LONG INTRO, CLAMPED ON A PHONE (2026-10-05). The city page has done
     this since 2026-08-18 ("afkappen maar klikbaar maken"); the species, park,
     collection and country pages ran their whole intro before the first tree.

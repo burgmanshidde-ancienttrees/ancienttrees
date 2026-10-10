@@ -30,31 +30,35 @@
  */
 import { APP_STORE_URL, SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { ui } from "../lib/i18n";
+import { icon } from "../lib/icons";
+import Sheet from "./Sheet.astro";
 
 interface Props { lang?: string; }
 const { lang = "en" } = Astro.props;
 const t = ui(lang);
 ---
-<dialog id="app-download-dialog" class="collect-dialog app-download-dialog" data-device="desktop">
-  <button type="button" class="signin-close" id="app-download-close" aria-label={t.photoClose}>&#10005;</button>
-
+{/* THE ONE SHEET (components/Sheet.astro, 2026-10-10): AllTrails' centred
+    card on a laptop is exactly what the sheet is above 600px, and on an
+    Android phone it comes up from the bottom like every other. Its own close
+    button was white on a white card (the overlay audit), now the sheet's. */}
+<Sheet lang={lang} id="app-download-dialog" class="app-download-dialog" data-device="desktop">
   <div class="app-download-qr">
     <img src="/assets/appstore/qr-app.svg" width="180" height="180" alt="" class="app-getter-qr">
-    <h3>{t.openInApp}</h3>
-    <p>{t.scanToOpen}</p>
+    <h3 class="at-sheet-h">{t.openInApp}</h3>
+    <p class="at-sheet-p">{t.scanToOpen}</p>
   </div>
 
   <div class="app-download-android" hidden>
-    <p class="signin-mark" aria-hidden="true">&#127795;</p>
-    <h3>{t.androidTitle}</h3>
-    <p>{t.androidNote}</p>
-    <form class="app-getter-form" data-app-download-waitlist autocomplete="email">
-      <input type="email" class="ag-email" placeholder="you@example.com" aria-label={t.emailLabel} required>
-      <button type="submit" class="go-btn">{t.notifyMe}</button>
+    <span class="at-sheet-tile"><Fragment set:html={icon("device-mobile", "bold")} /></span>
+    <h3 class="at-sheet-h">{t.androidTitle}</h3>
+    <p class="at-sheet-p">{t.androidNote}</p>
+    <form class="app-getter-form at-sheet-btns" data-app-download-waitlist autocomplete="email">
+      <input type="email" class="ag-email" placeholder={t.emailLabel} aria-label={t.emailLabel} required>
+      <button type="submit" class="sheet-b sheet-b--primary">{t.notifyMe}</button>
     </form>
-    <p class="app-getter-sent" hidden>{t.waitlistSent}</p>
+    <p class="at-sheet-p app-getter-sent" hidden>{t.waitlistSent}</p>
   </div>
-</dialog>
+</Sheet>
 <script define:vars={{ STORE: APP_STORE_URL, SB: SUPABASE_URL, SBK: SUPABASE_KEY }}>
   (function () {
     if (window.__appDownloadInit) return;
@@ -78,8 +82,6 @@ const t = ui(lang);
       if (dlg.showModal) dlg.showModal(); else location.href = "/app";
     };
 
-    document.getElementById("app-download-close").addEventListener("click", function () { dlg.close(); });
-    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
 
     document.addEventListener("click", function (e) {
       var t = e.target.closest("[data-app-download]");

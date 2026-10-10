@@ -123,12 +123,15 @@ struct AmbassadorWantedRow: View {
     @State private var sending = false
     @State private var signingIn = false
     /// Confirm first, then say it arrived (Hidde, 2026-10-05: "ik zou eerder
-    /// een pop up verwachten"): the standard iOS alert pair, as Google Maps'
-    /// "Join Local Guides" asks for a yes and then says you are in. The
-    /// website draws the same two steps in one dialog (AmbassadorLine.astro).
+    /// een pop up verwachten"), as Google Maps' "Join Local Guides" asks for
+    /// a yes and then says you are in. ONE SHEET WITH TWO STEPS since
+    /// 2026-10-10 (the one-sheet rule, Kit/BrandSheet.swift): the receipt is
+    /// the sheet's next step rather than a system alert, the same two steps
+    /// the website's sheet draws (AmbassadorLine.astro). A failure is news,
+    /// so it is the snackbar.
     @State private var confirming = false
-    @State private var sentShown = false
-    @State private var failedShown = false
+    @State private var sent = false
+    @Environment(Navigator.self) private var navigator
 
     /// THE WHOLE ROW IS THE CONTROL (Hidde, 2026-10-04: "just make the whole
     /// thing clickable instead of adding a huge button"), an iOS list row with
@@ -167,6 +170,14 @@ struct AmbassadorWantedRow: View {
         .accessibilityHint(asked ? "" : "Become the ambassador")
         .accessibilityIdentifier("ambassador-wanted")
         .task(id: account.isSignedIn) {
+            // A sheet no argument can open ships unseen: -ambassadorask opens
+            // the explainer, -ambassadorsent its receipt (2026-10-10).
+            let args = ProcessInfo.processInfo.arguments
+            if args.contains("-ambassadorask") || args.contains("-ambassadorsent") {
+                sent = args.contains("-ambassadorsent")
+                confirming = true
+                return
+            }
             asked = await Submission.askedToBeAmbassador(city: place, token: await account.freshToken())
         }
         // Sign in, THEN the confirm step (Hidde, 2026-10-07: "it should fire a
@@ -183,28 +194,15 @@ struct AmbassadorWantedRow: View {
         // Maps' Local Guides join sheet is the convention: what you will do,
         // one line each, and one button. The website's dialog carries the
         // same three lines (AmbassadorLine.astro, i18n ambassadorAskPoints).
-        .sheet(isPresented: $confirming) {
-            AmbassadorApplySheet(place: place, writeTo: writeTo) {
-                confirming = false
+        .sheet(isPresented: $confirming, onDismiss: { sent = false }) {
+            AmbassadorApplySheet(place: place, writeTo: writeTo, sent: $sent, sending: $sending) {
                 send()
             }
-            .presentationDetents([.medium, .large])
-            .brandSheetHandle()
-        }
-        .alert("Request sent", isPresented: $sentShown) {
-            Button("Done", role: .cancel) {}
-        } message: {
-            Text("We'll email you soon with a few questions about the list." + writeTo)
-        }
-        .alert("Request not sent", isPresented: $failedShown) {
-            Button("OK", role: .cancel) {}
-        } message: {
-            Text("Something went wrong sending your request. Please try again in a moment.")
         }
     }
 
     private var writeTo: String {
-        account.email.map { " We'll write to \($0)." } ?? ""
+        account.email.map { " We will write to \($0)." } ?? ""
     }
 
     private func tap() {
@@ -230,65 +228,51 @@ struct AmbassadorWantedRow: View {
             }
             let ok = await Submission.requestAmbassador(city: place, token: token)
             sending = false
-            if ok { asked = true; sentShown = true } else { failedShown = true }
+            if ok {
+                asked = true
+                sent = true
+            } else {
+                confirming = false
+                navigator.snack = .init(text: "Your request did not send. Please try again in a moment.",
+                                        symbol: "exclamationmark.circle")
+            }
         }
     }
 }
 
-/// The ambassador explainer and its one button. The same three lines as the
-/// website's dialog, in the same order.
+/// The ambassador explainer and its one button, then the receipt, on the one
+/// sheet (Kit/BrandSheet.swift). The same three lines as the website's sheet,
+/// in the same order, as rows rather than bullets on both.
 struct AmbassadorApplySheet: View {
     let place: String
     let writeTo: String
+    /// Bindings rather than values: a sheet's content can keep the value it
+    /// was first drawn with, so the receipt step never appeared (2026-10-10).
+    @Binding var sent: Bool
+    @Binding var sending: Bool
     let apply: () -> Void
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Image(systemName: "checkmark.seal")
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundStyle(Brand.moss)
-                .frame(width: 48, height: 48)
-                .overlay(Circle().strokeBorder(Brand.moss, style: StrokeStyle(lineWidth: 1.5, dash: [3, 3])))
-            Text("Become the ambassador for \(place)")
-                .font(.brand(22, .bold, relativeTo: .title2))
-                .foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-            Text("An ambassador helps make this list as good as it can be.")
-                .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-            VStack(alignment: .leading, spacing: 12) {
-                point("camera", "Add photographs of the trees")
-                point("checkmark.circle", "Check the facts and tell us which trees are missing")
-                point("figure.walk", "Help put together walks past them")
-            }
-            if !writeTo.isEmpty {
-                Text(writeTo.trimmingCharacters(in: .whitespaces))
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-            }
-            Spacer(minLength: 0)
-            Button("Apply", action: apply)
-                .buttonStyle(BrandButtonStyle(prominent: true))
-                .frame(maxWidth: .infinity)
-                .accessibilityIdentifier("ambassador-apply")
-            Button("Not now") { dismiss() }
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(Brand.inkSoft)
-                .frame(maxWidth: .infinity, minHeight: 44)
-        }
-        .padding(24)
-        .brandGround()
-    }
-
-    private func point(_ symbol: String, _ text: String) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: 12) {
-            Image(systemName: symbol)
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(Brand.moss)
-                .frame(width: 22)
-            Text(text)
-                .font(.subheadline).foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
+        if sent {
+            BrandSheet(
+                icon: "checkmark",
+                title: "Request sent",
+                message: "We will email you soon with a few questions about the list." + writeTo,
+                buttons: [.primary("Done", id: "ambassador-done") { dismiss() }])
+        } else {
+            BrandSheet(
+                icon: "checkmark.seal",
+                title: "Become the ambassador for \(place)",
+                message: "An ambassador helps make this list as good as it can be.",
+                points: ["Add photographs of the trees",
+                         "Check the facts and tell us which trees are missing",
+                         "Help put together walks past them"],
+                buttons: [
+                    .primary(sending ? "Sending" : "Apply", id: "ambassador-apply") { if !sending { apply() } },
+                    .quiet("Not now") { dismiss() },
+                ],
+                footnote: writeTo.isEmpty ? nil : writeTo.trimmingCharacters(in: .whitespaces))
         }
     }
 }

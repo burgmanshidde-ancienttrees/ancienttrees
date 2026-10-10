@@ -669,10 +669,12 @@ struct ContentView: View {
                             // small expression the type-checker can hold.
                             CollectSheet(catalogue: cat, origin: origin, mode: mode,
                                          about: navigator.collectAbout,
-                                         addsPhoto: navigator.collectAddsPhoto)
+                                         addsPhoto: navigator.collectAddsPhoto,
+                                         start: navigator.collectStart)
                                 .onDisappear {
                                     navigator.collectAbout = nil
                                     navigator.collectAddsPhoto = false
+                                    navigator.collectStart = nil
                                 }
                         }
                     }
@@ -712,17 +714,17 @@ struct ContentView: View {
                 // fault a destructive confirmation shipped with on 2026-08-27.
                 // Presenting from the root was supposed to avoid it and does
                 // not. An alert renders every button it is given.
-                .alert(
-                    "Open directions in",
-                    isPresented: Binding(get: { directionsAsk.pending != nil },
-                                         set: { if !$0 { directionsAsk.pending = nil } })
-                ) {
-                    ForEach(Directions.MapsApp.allCases) { app in
-                        Button(app.label) { directionsAsk.answer(app) }
-                    }
-                    Button("Cancel", role: .cancel) { directionsAsk.pending = nil }
-                } message: {
-                    Text("You can change this in Settings.")
+                .sheet(isPresented: Binding(get: { directionsAsk.pending != nil },
+                                            set: { if !$0 { directionsAsk.pending = nil } })) {
+                    // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10): equal
+                    // choices, so every button is grey; the cross and a swipe
+                    // are the cancel.
+                    BrandSheet(
+                        title: "Open directions in",
+                        message: "You can change this in Settings.",
+                        buttons: Directions.MapsApp.allCases.map { app in
+                            .secondary(app.label, id: "directions-\(app.rawValue)") { directionsAsk.answer(app) }
+                        })
                 }
             } else if let err = store.loadError {
                 ContentUnavailableView("Something is wrong with the catalogue",

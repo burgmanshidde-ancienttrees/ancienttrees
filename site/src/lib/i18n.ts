@@ -183,6 +183,8 @@ export interface UIStrings {
   ambassadorApply: string;
   ambassadorApplied: string;
   ambassadorAskTitle: (place: string) => string;
+  /** The list of a place's ambassadors, for a screen reader. */
+  ambassadorsLabel: string;
   ambassadorAskBody: string;
   /** What an ambassador does, one line each, in the dialog (2026-10-08). */
   ambassadorAskPoints: string[];
@@ -299,6 +301,10 @@ export interface UIStrings {
   collectTitle: (n: string) => string;
   collectLead: string;
   collectPhoto: string;
+  /** The collect sheet's camera and library buttons on a phone (2026-10-10);
+   *  collectPhoto is the one file button a laptop shows. */
+  collectCamera: string;
+  collectLibrary: string;
   collectNoPhoto: string;
   collectedTitle: (n: string) => string;
   collectedOn: (d: string) => string;
@@ -561,14 +567,15 @@ const EN: UIStrings = {
   ambassadorWantedLine: "Help us improve this list.",
   ambassadorApply: "Become the ambassador",
   ambassadorApplied: "Request sent.",
-  ambassadorAskTitle: (place) => `Become the ambassador for ${place}?`,
+  ambassadorAskTitle: (place) => `Become the ambassador for ${place}`,
+  ambassadorsLabel: "Ambassadors",
   ambassadorAskBody: "An ambassador helps make this list as good as it can be.",
   ambassadorAskPoints: ["Add photographs of the trees", "Check the facts and tell us which trees are missing", "Help put together walks past them"],
   ambassadorAskSend: "Apply",
   ambassadorNotNow: "Not now",
   ambassadorSentTitle: "Request sent",
-  ambassadorSentBody: "We'll email you soon with a few questions about the list.",
-  ambassadorWriteTo: (email) => `We'll write to ${email}.`,
+  ambassadorSentBody: "We will email you soon with a few questions about the list.",
+  ambassadorWriteTo: (email) => `We will write to ${email}.`,
   ambassadorDone: "Done",
   photoOpen: "Open the photograph",
   photoPrev: "Previous photograph",
@@ -650,7 +657,9 @@ const EN: UIStrings = {
   seenItDone: "Collected",
   collectTitle: (n) => `Collect ${n}`,
   collectLead: "Your photograph goes in your trees instead of ours.",
-  collectPhoto: "Add a photograph",
+  collectPhoto: "Choose a photograph",
+  collectCamera: "Take a photograph",
+  collectLibrary: "Choose from your photos",
   collectNoPhoto: "Collect without a photograph",
   collectedTitle: (n) => `You collected ${n}`,
   collectedOn: (d) => `On ${d}.`,
@@ -927,7 +936,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     seenItDone: "Coleccionado",
     collectTitle: (n) => `Coleccionar ${n}`,
     collectLead: "Tu fotografía va a tus árboles, no a los nuestros.",
-    collectPhoto: "Añadir una fotografía",
+    collectPhoto: "Elegir una fotografía",
+    collectCamera: "Hacer una fotografía",
+    collectLibrary: "Elegir de tus fotos",
     collectNoPhoto: "Coleccionar sin fotografía",
     collectedTitle: (n) => `Has coleccionado ${n}`,
     collectedOn: (d) => `El ${d}.`,
@@ -1041,6 +1052,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Quiero hacerlo",
     ambassadorApplied: "Solicitud enviada.",
     ambassadorAskTitle: (place) => `¿Quieres cuidar la lista de ${place}?`,
+    ambassadorsLabel: "Embajadores",
     ambassadorAskBody: "Un embajador ayuda a que esta lista sea lo mejor posible.",
     ambassadorAskPoints: ["Añade fotos de los árboles", "Comprueba los datos y dinos qué árboles faltan", "Ayuda a preparar paseos que pasen por ellos"],
     ambassadorAskSend: "Solicitar",
@@ -1203,7 +1215,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     seenItDone: "Collezionato",
     collectTitle: (n) => `Colleziona ${n}`,
     collectLead: "La tua fotografia va tra i tuoi alberi, non tra i nostri.",
-    collectPhoto: "Aggiungi una fotografia",
+    collectPhoto: "Scegli una fotografia",
+    collectCamera: "Scatta una fotografia",
+    collectLibrary: "Scegli dalle tue foto",
     collectNoPhoto: "Colleziona senza fotografia",
     collectedTitle: (n) => `Hai collezionato ${n}`,
     collectedOn: (d) => `Il ${d}.`,
@@ -1317,6 +1331,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Mi candido",
     ambassadorApplied: "Richiesta inviata.",
     ambassadorAskTitle: (place) => `Vuoi curare la lista di ${place}?`,
+    ambassadorsLabel: "Ambasciatori",
     ambassadorAskBody: "Un ambasciatore aiuta a rendere questa lista la migliore possibile.",
     ambassadorAskPoints: ["Aggiungi foto degli alberi", "Controlla i dati e dicci quali alberi mancano", "Aiuta a preparare passeggiate che li toccano"],
     ambassadorAskSend: "Candidati",
@@ -1479,7 +1494,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     seenItDone: "Verzameld",
     collectTitle: (n) => `${n} verzamelen`,
     collectLead: "Je foto komt bij jouw bomen, niet bij de onze.",
-    collectPhoto: "Foto toevoegen",
+    collectPhoto: "Kies een foto",
+    collectCamera: "Maak een foto",
+    collectLibrary: "Kies uit je foto’s",
     collectNoPhoto: "Verzamelen zonder foto",
     collectedTitle: (n) => `Je hebt ${n} verzameld`,
     collectedOn: (d) => `Op ${d}.`,
@@ -1593,6 +1610,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Ik doe mee",
     ambassadorApplied: "Aanvraag verstuurd.",
     ambassadorAskTitle: (place) => `Ambassadeur worden van ${place}?`,
+    ambassadorsLabel: "Ambassadeurs",
     ambassadorAskBody: "Een ambassadeur helpt deze lijst zo goed mogelijk te maken.",
     ambassadorAskPoints: ["Voeg foto's van de bomen toe", "Controleer de feiten en vertel ons welke bomen ontbreken", "Help wandelingen langs de bomen samen te stellen"],
     ambassadorAskSend: "Aanmelden",
@@ -1755,7 +1773,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     seenItDone: "Gesammelt",
     collectTitle: (n) => `${n} sammeln`,
     collectLead: "Dein Foto kommt zu deinen Bäumen, nicht zu unseren.",
-    collectPhoto: "Foto hinzufügen",
+    collectPhoto: "Foto auswählen",
+    collectCamera: "Foto aufnehmen",
+    collectLibrary: "Aus deinen Fotos wählen",
     collectNoPhoto: "Ohne Foto sammeln",
     collectedTitle: (n) => `Du hast ${n} gesammelt`,
     collectedOn: (d) => `Am ${d}.`,
@@ -1869,6 +1889,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Ich mache mit",
     ambassadorApplied: "Anfrage gesendet.",
     ambassadorAskTitle: (place) => `Die Liste für ${place} betreuen?`,
+    ambassadorsLabel: "Botschafter",
     ambassadorAskBody: "Ein Botschafter hilft, diese Liste so gut wie möglich zu machen.",
     ambassadorAskPoints: ["Füge Fotos der Bäume hinzu", "Prüfe die Angaben und sag uns, welche Bäume fehlen", "Hilf mit, Spaziergänge zu den Bäumen zusammenzustellen"],
     ambassadorAskSend: "Bewerben",
@@ -2031,7 +2052,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     seenItDone: "Colecionada",
     collectTitle: (n) => `Colecionar ${n}`,
     collectLead: "A tua fotografia vai para as tuas árvores, não para as nossas.",
-    collectPhoto: "Adicionar uma fotografia",
+    collectPhoto: "Escolher uma fotografia",
+    collectCamera: "Tirar uma fotografia",
+    collectLibrary: "Escolher das tuas fotos",
     collectNoPhoto: "Colecionar sem fotografia",
     collectedTitle: (n) => `Colecionaste ${n}`,
     collectedOn: (d) => `Em ${d}.`,
@@ -2145,6 +2168,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Quero participar",
     ambassadorApplied: "Pedido enviado.",
     ambassadorAskTitle: (place) => `Quer cuidar da lista de ${place}?`,
+    ambassadorsLabel: "Embaixadores",
     ambassadorAskBody: "Um embaixador ajuda a tornar esta lista o melhor possível.",
     ambassadorAskPoints: ["Acrescente fotografias das árvores", "Confirme os dados e diga-nos que árvores faltam", "Ajude a preparar passeios que passem por elas"],
     ambassadorAskSend: "Candidatar-me",
@@ -2307,7 +2331,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     seenItDone: "Collectionné",
     collectTitle: (n) => `Collectionner ${n}`,
     collectLead: "Ta photo va dans tes arbres, pas dans les nôtres.",
-    collectPhoto: "Ajouter une photo",
+    collectPhoto: "Choisir une photo",
+    collectCamera: "Prendre une photo",
+    collectLibrary: "Choisir dans tes photos",
     collectNoPhoto: "Collectionner sans photo",
     collectedTitle: (n) => `Tu as collectionné ${n}`,
     collectedOn: (d) => `Le ${d}.`,
@@ -2421,6 +2447,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "Ça m'intéresse",
     ambassadorApplied: "Demande envoyée.",
     ambassadorAskTitle: (place) => `Veiller sur la liste de ${place}\u00a0?`,
+    ambassadorsLabel: "Ambassadeurs",
     ambassadorAskBody: "Un ambassadeur aide à rendre cette liste aussi bonne que possible.",
     ambassadorAskPoints: ["Ajoutez des photos des arbres", "Vérifiez les faits et dites-nous quels arbres manquent", "Aidez à composer des promenades qui passent par eux"],
     ambassadorAskSend: "Postuler",
@@ -2582,7 +2609,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     seenItDone: "集めた",
     collectTitle: (n) => `${n}を集める`,
     collectLead: "写真はこちらではなく、あなたの木に入ります。",
-    collectPhoto: "写真を追加",
+    collectPhoto: "写真を選ぶ",
+    collectCamera: "写真を撮る",
+    collectLibrary: "写真から選ぶ",
     collectNoPhoto: "写真なしで集める",
     collectedTitle: (n) => `${n}を集めました`,
     collectedOn: (d) => `${d}`,
@@ -2696,6 +2725,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     ambassadorApply: "応募する",
     ambassadorApplied: "申請を送信しました。",
     ambassadorAskTitle: (place) => `${place}のアンバサダーになりますか？`,
+    ambassadorsLabel: "アンバサダー",
     ambassadorAskBody: "アンバサダーは、このリストをできるだけ良いものにする手助けをします。",
     ambassadorAskPoints: ["木の写真を追加する", "情報を確かめ、足りない木を教える", "木をめぐる散歩コースづくりを手伝う"],
     ambassadorAskSend: "申し込む",

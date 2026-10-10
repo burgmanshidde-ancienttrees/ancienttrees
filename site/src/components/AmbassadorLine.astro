@@ -44,8 +44,8 @@
  */
 import { icon } from "../lib/icons";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import Sheet from "./Sheet.astro";
 import { ui } from "../lib/i18n";
-import { signInCopy } from "../lib/signin-strings";
 import type { Ambassador } from "../lib/ambassadors";
 
 interface Props {
@@ -57,10 +57,9 @@ interface Props {
 }
 const { people, lang = "en", place, requestCity } = Astro.props as Props;
 const U = ui(lang);
-const closeLabel = signInCopy(lang).close;
 ---
 {people.length > 0 && (
-  <ul class="ambassadors" aria-label="Ambassadors">
+  <ul class="ambassadors" aria-label={U.ambassadorsLabel}>
     {people.map((p) => (
       <li class="ambassador">
         <span class="ambassador-avatar" aria-hidden="true">
@@ -88,30 +87,35 @@ const closeLabel = signInCopy(lang).close;
       <svg class="ambassador-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
   </div>
-  <dialog class="collect-dialog amb-dialog" id="amb-dialog" aria-labelledby="amb-title">
-    <button type="button" class="signin-close amb-close" aria-label={closeLabel}>&#10005;</button>
-    <div class="amb-step amb-ask">
-      <span class="ambassador-avatar ambassador-avatar-open amb-mark" aria-hidden="true"><Fragment set:html={icon("seal-check", "bold", "ic")} /></span>
-      <h3 id="amb-title">{U.ambassadorAskTitle(place)}</h3>
-      <p>{U.ambassadorAskBody}</p>
-      {/* What the role is, before anybody applies (Hidde, 2026-10-08: "an
-          ambassador helps make this list as good as possible for city, help
-          with photos, info and walks. Apply here"). Google Maps' Local Guides
-          join sheet lists what you will do the same way. The app's sheet
-          (AmbassadorBadge.swift) carries the same three lines. */}
-      <ul class="amb-points">{U.ambassadorAskPoints.map((pt) => <li>{pt}</li>)}</ul>
-      <p class="amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
-      <button type="button" class="go-btn amb-send">{U.ambassadorAskSend}</button>
-      <button type="button" class="amb-later">{U.ambassadorNotNow}</button>
+  {/* THE ONE SHEET (components/Sheet.astro, 2026-10-10): a sheet from the
+      bottom on a phone, like every other, with the three lines as rows and
+      the receipt as its second step. The app's sheet is the same
+      (AmbassadorBadge.swift). */}
+  <Sheet lang={lang} class="amb-dialog" id="amb-dialog" aria-labelledby="amb-title">
+    <div class="amb-step amb-ask" data-step="ask">
+      <span class="at-sheet-tile"><Fragment set:html={icon("seal-check", "bold")} /></span>
+      <h3 class="at-sheet-h" id="amb-title">{U.ambassadorAskTitle(place)}</h3>
+      <p class="at-sheet-p">{U.ambassadorAskBody}</p>
+      {/* What the role is, before anybody applies (Hidde, 2026-10-08).
+          Google Maps' Local Guides join sheet lists what you will do the
+          same way. */}
+      <ul class="at-sheet-pts">{U.ambassadorAskPoints.map((pt) => <li><Fragment set:html={icon("check", "bold")} />{pt}</li>)}</ul>
+      <div class="at-sheet-btns">
+        <button type="button" class="sheet-b sheet-b--primary amb-send">{U.ambassadorAskSend}</button>
+        <button type="button" class="sheet-b sheet-b--quiet amb-later">{U.ambassadorNotNow}</button>
+      </div>
+      <p class="at-sheet-fine amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
     </div>
-    <div class="amb-step amb-sent" hidden>
-      <span class="ambassador-avatar amb-mark amb-mark-done" aria-hidden="true"><Fragment set:html={icon("seal-check", "fill", "ic")} /></span>
-      <h3>{U.ambassadorSentTitle}</h3>
-      <p>{U.ambassadorSentBody}</p>
-      <p class="amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
-      <button type="button" class="go-btn amb-done">{U.ambassadorDone}</button>
+    <div class="amb-step amb-sent" data-step="sent" hidden>
+      <span class="at-sheet-tile"><Fragment set:html={icon("check", "bold")} /></span>
+      <h3 class="at-sheet-h">{U.ambassadorSentTitle}</h3>
+      <p class="at-sheet-p">{U.ambassadorSentBody}</p>
+      <p class="at-sheet-p amb-who" data-tpl={U.ambassadorWriteTo("{email}")} hidden></p>
+      <div class="at-sheet-btns">
+        <button type="button" class="sheet-b sheet-b--primary amb-done">{U.ambassadorDone}</button>
+      </div>
     </div>
-  </dialog>
+  </Sheet>
   <script is:inline>
   document.addEventListener('DOMContentLoaded', function() {
     var box = document.querySelector('.ambassador-open');
@@ -168,19 +172,17 @@ const closeLabel = signInCopy(lang).close;
       window.atPendingAmbassador = null;
       C.gate(function() { if (!btn.disabled) open(); }, function() {});
     }
-    dlg.querySelector('.amb-close').addEventListener('click', close);
     dlg.querySelector('.amb-later').addEventListener('click', close);
     dlg.querySelector('.amb-done').addEventListener('click', close);
-    dlg.addEventListener('click', function(e) { if (e.target === dlg) close(); });
     send.addEventListener('click', function() {
       var s = C.session();
-      if (!s) { close(); if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback'); return; }
+      if (!s) { close(); if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback', { kind: 'ambassador', city: city }); return; }
       send.disabled = true;
       fetch(SB + '/rest/v1/submissions', {
         method: 'POST', headers: headers(s, true),
         body: JSON.stringify({ kind: 'ambassador', city: city, tree: '', why: 'ambassador request', page: location.pathname })
       }).then(function(r) {
-        if (r.status === 401 || r.status === 403) { C.forget(); close(); if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback'); return; }
+        if (r.status === 401 || r.status === 403) { C.forget(); close(); if (window.atOpenSignIn) window.atOpenSignIn(null, 'feedback', { kind: 'ambassador', city: city }); return; }
         if (r.ok) {
           done(); ask.hidden = true; sent.hidden = false;
           if (window.at && at.track) at.track('ambassador-request');
@@ -195,8 +197,6 @@ const closeLabel = signInCopy(lang).close;
 )}
 
 <style>
-  .amb-points { margin: 0.25rem 0 0.75rem; padding-left: 1.2rem; text-align: left; }
-  .amb-points li { margin: 0.3rem 0; }
   .ambassadors { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .ambassador { display: flex; align-items: center; gap: 10px; max-width: 100%; }
   .ambassador-avatar {
@@ -220,17 +220,6 @@ const closeLabel = signInCopy(lang).close;
   .ambassador-apply { width: 100%; padding: 6px 0; border: 0; background: none;
     font: inherit; text-align: left; cursor: pointer; color: inherit; min-height: 44px; }
   @media (hover: hover) { .ambassador-apply:not(:disabled):hover .ambassador-name { text-decoration: underline; } }
-  .amb-dialog { max-width: 22rem; text-align: center; padding: 2rem 1.5rem 1.25rem; border-radius: 22px; }
-  .amb-dialog h3 { font-size: 1.3rem; line-height: 1.25; margin: 0.75rem 0 0.5rem; text-wrap: balance; }
-  .amb-dialog p { margin: 0 0 1.4rem; }
-  .amb-mark { width: 48px; height: 48px; margin: 0 auto; }
-  .amb-mark :global(.ic) { width: 24px; height: 24px; fill: var(--moss); }
-  .amb-mark-done { background: var(--moss-light); }
-  .amb-dialog .go-btn { display: block; width: 100%; }
-  .amb-later { display: block; width: 100%; margin-top: 0.4rem; min-height: 44px; border: 0; background: none;
-    font: inherit; font-size: 14px; color: var(--ink-mid); cursor: pointer; }
-  .amb-step[hidden] { display: none; }
-  .amb-dialog button:focus:not(:focus-visible) { outline: none; box-shadow: none; }
   .ambassador-apply:disabled { cursor: default; }
   .ambassador-apply .ambassador-text { flex: 1; }
   .ambassador-chev { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }

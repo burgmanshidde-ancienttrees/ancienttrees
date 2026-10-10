@@ -38,6 +38,8 @@ const U = ui(lang);
     {quiet ? U.addPhotoBtnQuiet : U.addPhotoBtn}
   </button>
   <input id="addphoto-file" type="file" accept="image/*" hidden />
+  {/* The camera directly, for the collect sheet's "Take a photograph". */}
+  <input id="addphoto-camera" type="file" accept="image/*" capture="environment" hidden />
   {/* The "only photographs you took yourself" line is gone (Hidde,
       2026-09-24, on the tree page: "delete all text under add a photo just
       out the button there the rest is clutter"). The rule itself stands and

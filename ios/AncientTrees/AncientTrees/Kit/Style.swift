@@ -87,6 +87,15 @@ public enum Brand {
     /// 8.9:1. Material's dark FAB and Google Maps' own dark buttons both do
     /// exactly this: light fill, dark label.
     public static let onMoss = Color(light: 0xFFFFFF, dark: 0x10160A)
+    /// The pale green behind a sheet's icon tile and a collected seal: the
+    /// website's --moss-light.
+    public static let mossTint = Color(light: 0xEDF3E3, dark: 0x26301E)
+    /// THE ONE RED (2026-10-10). The overlay audit found three: #B22222 on the
+    /// collect sheet, #9c3f2f on the website's delete button, and the system's
+    /// on every alert. A filled red carries white in both appearances.
+    public static let danger = Color(light: 0xB22222, dark: 0xC0392B)
+    /// Red as TEXT, on grey or on the ground: lighter in the dark so it reads.
+    public static let dangerText = Color(light: 0xB22222, dark: 0xFF7B72)
 }
 
 extension Color {

@@ -104,64 +104,33 @@ struct PermissionRecovery: View {
     var onDecline: (() -> Void)? = nil
     @Environment(\.dismiss) private var dismiss
 
-    var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text(permission.title)
-                .font(.brand(24, .heavy))
-                .foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-                .padding(.bottom, 10)
-
-            Text(permission.body)
-                .font(.subheadline)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-                .padding(.bottom, 24)
-
-            Button {
-                if let u = URL(string: UIApplication.openSettingsURLString) {
-                    UIApplication.shared.open(u)
-                }
-                dismiss()
-            } label: {
-                Text("Open Settings")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity, minHeight: 50)
-                    .background(Brand.canopy, in: .capsule)
-                    .foregroundStyle(.white)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("permission-open-settings")
-
-            // The path, under the button that needs it. Small, secondary, and
-            // present whether or not Settings happens to land on our page.
-            Text(permission.path)
-                .font(.caption)
-                .foregroundStyle(Brand.inkSoft)
-                .frame(maxWidth: .infinity)
-                .padding(.top, 8)
-                .accessibilityIdentifier("permission-path")
-
-            Button { dismiss(); onDecline?() } label: {
-                Text(permission.decline)
-                    .font(.subheadline.weight(.semibold))
-                    .frame(maxWidth: .infinity, minHeight: 44)
-                    .foregroundStyle(Brand.inkSoft)
-            }
-            .buttonStyle(.plain)
-            .padding(.top, 6)
-            .accessibilityIdentifier("permission-decline")
+    /// The one sheet (Kit/BrandSheet.swift, 2026-10-10): it had its own
+    /// title weight, a fourth green button and a fixed height of 340.
+    private var icon: String {
+        switch permission {
+        case .location: "location"
+        case .camera: "camera"
+        case .photos: "photo.on.rectangle"
         }
-        .padding(.horizontal, 24)
-        .padding(.top, 28)
-        .padding(.bottom, 12)
-        // maxHeight as well as maxWidth. Without it the ground is only as tall
-        // as the words, and the detent's remaining height showed as a pale band
-        // under the last button: one sheet wearing two backgrounds.
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .brandGround()
+    }
+
+    var body: some View {
+        BrandSheet(
+            icon: icon,
+            title: permission.title,
+            message: permission.body,
+            buttons: [
+                .primary("Open Settings", id: "permission-open-settings") {
+                    if let u = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(u)
+                    }
+                    dismiss()
+                },
+                .quiet(permission.decline, id: "permission-decline") { dismiss(); onDecline?() },
+            ],
+            // The path, under the buttons. Small, secondary, and present
+            // whether or not Settings happens to land on our page.
+            footnote: permission.path)
         .accessibilityIdentifier(permission.identifier)
-        .presentationDetents([.height(340)])
-        .brandSheetHandle()
     }
 }
