@@ -8,7 +8,9 @@
 - **Kanazawa:** all 7 trees got something: national Natural Monument records for the Dogata chinquapins and Shogetsuji cherry, heights, girths for the Shinmeigu and Yasue Sumiyoshi zelkovas and the Kenrokuen raised-root pine, access lines with sources. Conflicting girths were left out. Karasaki pine got access only.
 - **Vilnius:** STVK register records and measurements for 9 trees, best_time on the large-leaved lime. Retired two to leads with redirects: the Nine-Trunked Willow (listed as decayed and delisted) and the Lazdynai Linden (closed kindergarten grounds). City intro, meta, FAQ and counts now say twelve.
 - **Coimbra:** register ids (ICNF) for 4 of 5 trees. The Lovers' Banyan's "around 1 euro" entry line is unsourced (hotel estate gardens page gives no price); not changed, worth softening next pass.
-- Cost: ~175k + ~178k + ~143k verify-agent tokens. No refusals except rm of scratch files.
+- **Beijing:** Landscaping Bureau records and measurements for the Nine Dragon Cypress and Beihai's Tang Scholar Tree, Zhongshan Park entry price and hours for the Seven Liao Cypresses. zhongshan-park.cn fails TLS verification (fetched with -k).
+- **Madeira:** IFCN ASMAC register sheets and measurements for 6 trees (two sheets have perimeter and height columns swapped, read by physical sense, noted in measure_source). The Witch Tree's OSM node matches our pin exactly but the answer carried no URL so the pin was not upgraded; the 4 garden trees stay open.
+- Cost: ~175k + ~178k + ~143k + ~155k + ~223k verify-agent tokens. No refusals except rm of scratch files.
 
 ## 2026-10-10 (session) - Settings: one screen on the app and the website
 
