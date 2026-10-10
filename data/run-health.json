@@ -2,24 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-21T20:31:27+00:00",
-   "date": "2026-08-21",
-   "run_id": "32523968306",
-   "minutes": 0.0,
-   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
-   "attempts": 1,
-   "turns": null,
-   "denials": null,
-   "denials_source": "NOT FOUND; result keys were: ",
-   "ended": "cut off at the cap, no result record",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-21T22:30:34+00:00",
    "date": "2026-08-21",
    "run_id": "32533229905",
@@ -21770,6 +21752,220 @@
     }
    ],
    "trees": -2,
+   "logged": true
+  },
+  {
+   "started": "2026-10-10T21:01:10+00:00",
+   "date": "2026-10-10",
+   "run_id": "38085969606",
+   "minutes": 93.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 676,
+   "denials": 86,
+   "denials_source": "permission_denials: Bash(cat ; import ; ? ; ? ...), Bash(cat ; import ; if ; import ...), Bash(cd && curl | grep | ? ...), Bash(cd && curl | head), Bash(cd && curl | sed | tr ...), Bash(cd && curl), Bash(cd && for ; do ; curl ...), Bash(cd && mkdir && cd && curl ...), Bash(cd && mkdir && curl && pdftotext ...), Bash(cd && mkdir && curl ; ls ...), Bash(cd && python3 ; ? ; from ...), Bash(cd && python3 ; import ; ? ...), Bash(cd && python3 ; import ; for ...), Bash(curl ; curl ; ls), Bash(curl ; curl | python3 ; import ...), Bash(curl ; echo), Bash(curl ; grep | ? | ? ...), Bash(curl ; grep | head), Bash(curl ; ls ; file), Bash(curl ; ls), Bash(curl ; pdftotext | grep | diameter ...), Bash(curl ; sed | grep | grep ...), Bash(curl ; sed | tr | grep ...), Bash(curl ; wc ; curl), Bash(curl ; wc ; grep | Schlossplatz ...), Bash(curl ; wc ; grep | Tcs ...), Bash(curl ; wc ; head), Bash(curl ; wc ; sed | tr ...), Bash(curl | iconv | sed | grep ...), Bash(curl | iconv | sed | tr ...), Bash(for ; do ; curl ; done), Bash(for ; do ; curl | grep ...), Bash(for ; do ; curl | iconv ...), Bash(for ; do ; curl | python3 ...), Bash(for ; do ; curl | sed ...), Bash(for ; do ; done), Bash(for ; do ; grep | ? ...), Bash(for ; do ; import ; ? ...), Bash(for ; do | grep | ? ...), Bash(for ; do | md5sum | cut ...), Bash(grep | ? | sed | head), Bash(grep | Chestnut | ?), Bash(grep | Stieleiche | ? | ? ...), Bash(grep | lng | ? | head), Bash(head), Bash(ls ; head), Bash(mkdir && cd && curl ; ls ...), Bash(mkdir && cd && curl), Bash(mkdir && cd && for ; do ...), Bash(mkdir && curl ; ls ; which), Bash(mkdir && curl ; wc), Bash(mkdir && curl), Bash(mkdir && python3 ; import ; Register ...), Bash(mkdir && python3 ; import ; for ...), Bash(mkdir), Bash(pdftotext ; wc ; grep | Las ...), Bash(pdftotext | grep | horario | gratuit ...), Bash(pdftotext | grep | vahimaj | ? ...), Bash(pdftotext), Bash(python3 ; import ; ? ; ? ...), Bash(python3 | tail ; python3 ; wc ...), Bash(rm ; python3 ; python3 | tail), Bash(rm ; python3 | tail ; python3 ...), Bash(rm), Bash(sed | grep | ? | ? ...), Bash(subshell cd && curl && pdftotext | head), Bash(subshell cd && mkdir && curl ; ls ...), Bash(subshell for ; do ; echo ; curl ...), Bash(subshell mkdir && python3 ; import ; Register ...)",
+   "ended": "success",
+   "tokens": 862623,
+   "claims_held": [
+    "zwolle"
+   ],
+   "commits": 56,
+   "cities_touched": 48,
+   "cities": [
+    {
+     "city": "boise",
+     "trees": 0
+    },
+    {
+     "city": "bologna",
+     "trees": 0
+    },
+    {
+     "city": "bristol",
+     "trees": 0
+    },
+    {
+     "city": "bucaco",
+     "trees": 0
+    },
+    {
+     "city": "cambridge",
+     "trees": 0
+    },
+    {
+     "city": "cardiff",
+     "trees": 0
+    },
+    {
+     "city": "caserta",
+     "trees": 0
+    },
+    {
+     "city": "charleston",
+     "trees": 0
+    },
+    {
+     "city": "cologne",
+     "trees": 0
+    },
+    {
+     "city": "cordoba",
+     "trees": 0
+    },
+    {
+     "city": "dordrecht",
+     "trees": 0
+    },
+    {
+     "city": "dubrovnik",
+     "trees": 0
+    },
+    {
+     "city": "frankfurt",
+     "trees": 0
+    },
+    {
+     "city": "groningen",
+     "trees": 0
+    },
+    {
+     "city": "guimaraes",
+     "trees": 0
+    },
+    {
+     "city": "heidelberg",
+     "trees": 0
+    },
+    {
+     "city": "helsinki",
+     "trees": 0
+    },
+    {
+     "city": "kagoshima",
+     "trees": 0
+    },
+    {
+     "city": "leeuwarden",
+     "trees": 0
+    },
+    {
+     "city": "leiden",
+     "trees": 0
+    },
+    {
+     "city": "ljubljana",
+     "trees": 0
+    },
+    {
+     "city": "luxembourg-city",
+     "trees": 0
+    },
+    {
+     "city": "lyon",
+     "trees": 0
+    },
+    {
+     "city": "maastricht",
+     "trees": 0
+    },
+    {
+     "city": "mexico-city",
+     "trees": 0
+    },
+    {
+     "city": "minneapolis",
+     "trees": 0
+    },
+    {
+     "city": "naples",
+     "trees": 0
+    },
+    {
+     "city": "nice",
+     "trees": 0
+    },
+    {
+     "city": "oslo",
+     "trees": 0
+    },
+    {
+     "city": "parma",
+     "trees": 0
+    },
+    {
+     "city": "perth",
+     "trees": 0
+    },
+    {
+     "city": "philadelphia",
+     "trees": 0
+    },
+    {
+     "city": "pittsburgh",
+     "trees": 0
+    },
+    {
+     "city": "quebec-city",
+     "trees": 0
+    },
+    {
+     "city": "sapporo",
+     "trees": 0
+    },
+    {
+     "city": "sequoia-national-park",
+     "trees": 0
+    },
+    {
+     "city": "sorrento",
+     "trees": 0
+    },
+    {
+     "city": "spokane",
+     "trees": 0
+    },
+    {
+     "city": "strasbourg",
+     "trees": 0
+    },
+    {
+     "city": "taipei",
+     "trees": 0
+    },
+    {
+     "city": "tallinn",
+     "trees": 0
+    },
+    {
+     "city": "vancouver",
+     "trees": 0
+    },
+    {
+     "city": "verona",
+     "trees": 0
+    },
+    {
+     "city": "washington-dc",
+     "trees": 0
+    },
+    {
+     "city": "eindhoven",
+     "trees": -1
+    },
+    {
+     "city": "enschede",
+     "trees": -1
+    },
+    {
+     "city": "higashi-hiroshima",
+     "trees": -1
+    },
+    {
+     "city": "tilburg",
+     "trees": -3
+    }
+   ],
+   "trees": -6,
    "logged": true
   }
  ],
