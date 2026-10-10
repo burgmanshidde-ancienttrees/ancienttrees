@@ -163,13 +163,40 @@ def download_rows(days=14):
     if not instances:
         return [], "no report instances yet (first one can take up to 48h " \
                    "after the request was created)"
-    out = []
+    # Apple's daily instances OVERLAP: the one processed on the 10th carries
+    # the 8th again beside the 9th. Keyed on the processing date and summed,
+    # every download counted up to twice (found 2026-10-10: 34 in the window
+    # where Apple's own rows hold 22). So rows are keyed on the row's own Date
+    # and each day is taken from the NEWEST instance that carries it, which
+    # is also the one Apple restates late arrivals into.
+    newest = {}
     for inst in instances:
-        date = inst["attributes"].get("processingDate")
+        processed = inst["attributes"].get("processingDate") or ""
+        per_day = {}
         for row in _segment_rows(token, inst["id"]):
             if _download_type(row) in NEW_PERSON:
-                out.append((date, row))
+                day = _col(row, "date", default=processed)
+                per_day.setdefault(day, []).append(row)
+        for day, day_rows in per_day.items():
+            if day not in newest or processed > newest[day][0]:
+                newest[day] = (processed, day_rows)
+    out = [(day, row) for day in sorted(newest) for row in newest[day][1]]
     return out, None
+
+
+def _dedupe_selftest():
+    """The overlap, in miniature: two instances both carrying the 8th."""
+    a = {"Date": "2026-10-08", "Counts": "1", "Download Type": "First-time download"}
+    b = {"Date": "2026-10-09", "Counts": "1", "Download Type": "First-time download"}
+    newest = {}
+    for processed, rows in (("2026-10-09", [a]), ("2026-10-10", [a, b])):
+        per_day = {}
+        for row in rows:
+            per_day.setdefault(_col(row, "date"), []).append(row)
+        for day, day_rows in per_day.items():
+            if day not in newest or processed > newest[day][0]:
+                newest[day] = (processed, day_rows)
+    assert sum(_count(r) for d in newest for r in newest[d][1]) == 2
 
 
 def _count(row):

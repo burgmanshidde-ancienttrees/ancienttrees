@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-10, session: App Store downloads were counted up to twice
+
+Apple's daily download reports overlap by a day, and `asc_downloads.py` added both copies, so the digest's download table and its source split ran high since they were built: 34 first-time downloads in the 14-day window where Apple's own rows hold 22. Each day is now taken from the newest report that carries it, keyed on the row's own date. Older DATA.md entries keep the inflated figures; read them as roughly 1.5 times too high. The real last days: 4 on 2026-10-08 and 4 on 2026-10-09, all on 1.0.2, so none of it is the 1.0.3 keywords, which are not live yet.
+
 ## 2026-10-10 (session) - Tree page: the way there leads from far away, and collecting without a photograph
 
 **Changed, in the next app build:** a tree page more than 200 m away (or with no fix) leads with "Take me there · 619 km" and keeps Collect as a circle; within 200 m Collect leads. Collect opens a choice, a photograph or the tick without one, so trees can be filled in from anywhere; signed out it asks for an account first and ticks after. New signed-out test: testCollectWithoutPhotoAsks. Decision recorded in DECISIONS.md.
