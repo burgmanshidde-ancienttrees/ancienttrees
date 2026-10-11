@@ -45,7 +45,8 @@
       "verified_sources": [
         "data/registers/slovakia-chranene-stromy.json (register_id 224, Štátna ochrana prírody SR, CC BY 4.0)",
         "https://krizom-krazom.eu/regiony/chranene-stromy-v-okrese-bratislava-i",
-        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/224"
+        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/224",
+        "https://www.krizom-krazom.online/sofora-na-vajanskeho-nabrezi/"
       ],
       "access": "Free, in a small public park on the Danube embankment",
       "transport": "Short walk from Hviezdoslavovo námestie or the Zochova tram stop, under 10 minutes",
@@ -66,7 +67,11 @@
         "label": "August to September, when it flowers",
         "kind": "flowers"
       },
-      "how_to_recognise": "You can recognise it by its species alone among the plane trees lining the embankment, easy to miss unless you already know it is there. It stands in the small park on Vajanského nábrežie."
+      "how_to_recognise": "You can recognise it by its species alone among the plane trees lining the embankment, easy to miss unless you already know it is there. It stands in the small park on Vajanského nábrežie.",
+      "official_register": {
+        "name": "Štátny zoznam osobitne chránených častí prírody, chránené stromy (ŠOP SR), no. 224",
+        "url": null
+      }
     },
     {
       "id": "brt_002",
@@ -85,7 +90,8 @@
       "verified_sources": [
         "data/registers/slovakia-chranene-stromy.json (register_id 227, Štátna ochrana prírody SR, CC BY 4.0)",
         "https://bratislava.dnes24.sk/mozno-ani-neviete-ze-vo-vasom-okoli-rastie-chraneny-strom-v-bratislave-su-ich-desiatky-239668",
-        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/227"
+        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/227",
+        "https://www.krizom-krazom.online/jasen-na-rudnayovom-namesti/"
       ],
       "access": "Free, on a public square in front of the cathedral, open at all hours",
       "transport": "Short walk from Bratislava Castle or SNP Square, under 10 minutes",
@@ -98,7 +104,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 227) plus a 2026 dnes24.sk news roundup of Bratislava's protected trees independently name this ash. No published height, girth or age found for this specific specimen despite searching krizom-krazom.eu and enviroportal.sk, both of which cover sibling register entries but not this one. Age left empty rather than guessed. Does not appear on the bratislava.oma.sk/stare-mesto.oma.sk protected-tree map listings despite being in the register and the news article; noted rather than resolved, worth a recheck that the tree still stands.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its crown, cleared well above the surrounding rooftops. It stands on Rudnayovo námestie, in front of St. Martin's Cathedral."
+      "how_to_recognise": "You can recognise it by its crown, cleared well above the surrounding rooftops. It stands on Rudnayovo námestie, in front of St. Martin's Cathedral.",
+      "official_register": {
+        "name": "Štátny zoznam osobitne chránených častí prírody, chránené stromy (ŠOP SR), no. 227",
+        "url": null
+      }
     },
     {
       "id": "brt_003",
@@ -117,7 +127,8 @@
       "verified_sources": [
         "data/registers/slovakia-chranene-stromy.json (register_id 211, Štátna ochrana prírody SR, CC BY 4.0)",
         "https://www.enviroportal.sk/stromy/detail/paulovnia-na-skarniclovej-ulici",
-        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/211"
+        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/211",
+        "https://www.krizom-krazom.online/paulovnia-na-skarniclovej-ulici/"
       ],
       "access": "Free, in a small public neighbourhood park bordered by a former dormitory and a school footpath",
       "transport": "Short walk from Hodžovo námestie or the Palisády tram/trolleybus stops, under 10 minutes",
@@ -130,7 +141,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 211) plus enviroportal.sk's protected-tree catalogue agree on species, 20m height, 315cm girth, 1996 protection. Age genuinely conflicts between sources: one figure (traced to a 2008 press mention) gives ~150 years, another (closer to the register catalogue) gives 60 years with a 24m crown. Left age_estimate empty rather than pick a winner; story states both. Access confirmed independently via local reporting on a 2020s volunteer renovation of this exact park.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it in May and June by upright spikes of lavender flowers appearing before the leaves fill in. It stands in Park Škarniclova, by the former dormitory."
+      "how_to_recognise": "You can recognise it in May and June by upright spikes of lavender flowers appearing before the leaves fill in. It stands in Park Škarniclova, by the former dormitory.",
+      "official_register": {
+        "name": "Štátny zoznam osobitne chránených častí prírody, chránené stromy (ŠOP SR), no. 211",
+        "url": null
+      }
     },
     {
       "id": "brt_004",
@@ -149,7 +164,8 @@
       "verified_sources": [
         "data/registers/slovakia-chranene-stromy.json (register_id 214, Štátna ochrana prírody SR, CC BY 4.0)",
         "krizom-krazom.eu, Chránené stromy v okrese Bratislava I",
-        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/214"
+        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/214",
+        "https://www.krizom-krazom.online/dub-na-sulekovej-ulici/"
       ],
       "access": "Free, visible and reachable from the public Šulekova stairway; the tree's base sits at the boundary with a private plot, so view it from the steps rather than leaving them",
       "transport": "Short walk uphill from Zochova or Podjavorinskej, under 10 minutes",
@@ -162,7 +178,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 214) plus krizom-krazom.eu agree on species (Quercus virgiliana, Adriatic oak, uncommon this far north), 25m height, 360cm girth, 24m crown, double protection 1982 and 1996. Age derived: 'about 100 years' figure at time of the second source's writing, 2026-adjusted here to 100-120. Access is a judgement call: register's own locality text places the tree 'na hranici súkromného pozemku a schodov' (on the boundary of a private plot and the steps); passes the public-access test from the stairs, honestly worded rather than treated as fully open ground.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its crown directly overhead as you climb the public stairway, its base close to a private plot's boundary. It stands at the top of the Šulekova stairway."
+      "how_to_recognise": "You can recognise it by its crown directly overhead as you climb the public stairway, its base close to a private plot's boundary. It stands at the top of the Šulekova stairway.",
+      "official_register": {
+        "name": "Štátny zoznam osobitne chránených častí prírody, chránené stromy (ŠOP SR), no. 214",
+        "url": null
+      }
     },
     {
       "id": "brt_005",
@@ -181,7 +201,8 @@
       "verified_sources": [
         "data/registers/slovakia-chranene-stromy.json (register_id 223, Štátna ochrana prírody SR, CC BY 4.0)",
         "krizom-krazom.eu, Chránené stromy v okrese Bratislava I",
-        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/223"
+        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/223",
+        "https://www.krizom-krazom.online/breza-na-misikovej-ulici/"
       ],
       "access": "Free, standing on the street side in front of the house",
       "transport": "Short walk uphill from Búdková or Búdkova cesta bus stops, roughly 10 minutes",
@@ -194,7 +215,11 @@
       "curation_status": "flagged",
       "notes": "Register (id 223) plus krizom-krazom.eu agree on species (Betula papyrifera, an unusual North American ornamental for the region), 8m height, 94cm girth, 8m crown, given as 50 years old at the 1996 designation (age_min/max 75-85 is a 2026-adjusted derivation from that dated figure). Locality 'pred domom' (in front of the house) read as street frontage rather than an enclosed private garden, unlike several sibling register entries marked 'v záhrade' (in the garden) left as leads. No photo confirming the birch stands on the public verge rather than inside a low front fence; flagged for that.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its pale, papery bark peeling in thin horizontal strips, the smallest tree on this list. It stands on the street in front of Mišíkova 36."
+      "how_to_recognise": "You can recognise it by its pale, papery bark peeling in thin horizontal strips, the smallest tree on this list. It stands on the street in front of Mišíkova 36.",
+      "official_register": {
+        "name": "Štátny zoznam osobitne chránených častí prírody, chránené stromy (ŠOP SR), no. 223",
+        "url": null
+      }
     },
     {
       "id": "brt_006",
@@ -267,6 +292,10 @@
         "source_name": "Grinavský topoľ",
         "qid": "Q121379300",
         "views": 6
+      },
+      "official_register": {
+        "name": "Štátny zoznam osobitne chránených častí prírody, chránené stromy (ŠOP SR), no. 499",
+        "url": null
       }
     }
   ]
