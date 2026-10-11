@@ -54,7 +54,12 @@
         "status": "missing"
       },
       "girth_cm": 741,
-      "how_to_recognise": "You can recognise it by its three trunks fused near the ground into one sculptural mass, the thickest tree in the city's register. It stands in Parc Chantegrillon on Bordeaux's right bank."
+      "how_to_recognise": "You can recognise it by its three trunks fused near the ground into one sculptural mass, the thickest tree in the city's register. It stands in Parc Chantegrillon on Bordeaux's right bank.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 29714",
+        "url": null
+      },
+      "height_m": 19
     },
     {
       "id": "bdx_002",
@@ -72,9 +77,10 @@
       "verified_sources": [
         "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 4600, Licence Ouverte)",
         "https://www.bordeaux.fr/le-mag/connaissez-vous-ces-sept-arbres-remarquables-de-bordeaux",
-        "https://www.leguidebordeaux.fr/quels-sont-les-7-arbres-bordelais-labellises-arbres-remarquables-de-france/3873/"
+        "https://www.leguidebordeaux.fr/quels-sont-les-7-arbres-bordelais-labellises-arbres-remarquables-de-france/3873/",
+        "https://www.bordeaux.fr/parc-jardin/jardin-public"
       ],
-      "access": "Free, public park (Jardin Public, Bordeaux's main 18th-century public garden)",
+      "access": "Free, public park. Open daily: 7am to 8pm April and May, to 9pm June to August, 8pm September, 7pm October, 6pm 1 November to 14 February, 7pm 15 February to 31 March.",
       "transport": "Tram C, Jardin Public stop, at the park edge",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -86,7 +92,12 @@
         "status": "missing"
       },
       "girth_cm": 421,
-      "how_to_recognise": "You can recognise it as the tallest tree in the garden, at 38 metres. It stands on the central lawn of the Jardin Public, a few paces from the ginkgo."
+      "how_to_recognise": "You can recognise it as the tallest tree in the garden, at 38 metres. It stands on the central lawn of the Jardin Public, a few paces from the ginkgo.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 4600",
+        "url": null
+      },
+      "height_m": 38
     },
     {
       "id": "bdx_003",
@@ -103,9 +114,10 @@
       },
       "verified_sources": [
         "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 3401, Licence Ouverte)",
-        "https://m.bordeaux.fr/fr/gymnocladus-dioicacc1"
+        "https://m.bordeaux.fr/fr/gymnocladus-dioicacc1",
+        "https://www.bordeaux.fr/parc-jardin/parc-bordelais"
       ],
-      "access": "Free, public park (Parc Bordelais); the tree itself sits behind a safety perimeter due to trunk cavities, viewable but not approachable at the trunk",
+      "access": "Free public park (Parc Bordelais), open daily: 7am to 8pm April and May, to 9pm June to August, 8pm September, 7pm October, 6pm 1 November to 14 February, 7pm 15 February to 31 March. The tree itself sits behind a safety perimeter due to trunk cavities, viewable but not approachable at the trunk.",
       "transport": "Tram D, Courbet stop, short walk into the park",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -117,7 +129,12 @@
         "status": "missing"
       },
       "girth_cm": 292,
-      "how_to_recognise": "You can recognise it by its bare, sparsely branched winter silhouette, fenced off behind a safety perimeter. It stands on the central lawn of Parc Bordelais."
+      "how_to_recognise": "You can recognise it by its bare, sparsely branched winter silhouette, fenced off behind a safety perimeter. It stands on the central lawn of Parc Bordelais.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 3401",
+        "url": null
+      },
+      "height_m": 14
     },
     {
       "id": "bdx_004",
@@ -157,7 +174,12 @@
         "status": "missing"
       },
       "girth_cm": 358,
-      "how_to_recognise": "You can recognise it by its large glossy evergreen leaves with a rust-coloured underside, growing straight out of the paving. It stands on Place Gambetta."
+      "how_to_recognise": "You can recognise it by its large glossy evergreen leaves with a rust-coloured underside, growing straight out of the paving. It stands on Place Gambetta.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 1241",
+        "url": null
+      },
+      "height_m": 17
     },
     {
       "id": "bdx_005",
@@ -175,9 +197,10 @@
       "verified_sources": [
         "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 4732, Licence Ouverte)",
         "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html (confirms the city's citizen-sourced remarkable-tree census and PLU protection process that this register comes from)",
-        "https://www.unebonnenouvelleparjour.com/article-tapis-d-or-sous-un-ginko-biloba-au-jardin-public-de-bordeaux-112802105.html"
+        "https://www.unebonnenouvelleparjour.com/article-tapis-d-or-sous-un-ginko-biloba-au-jardin-public-de-bordeaux-112802105.html",
+        "https://www.bordeaux.fr/parc-jardin/jardin-public"
       ],
-      "access": "Free, public park (Jardin Public)",
+      "access": "Free, public park. Open daily: 7am to 8pm April and May, to 9pm June to August, 8pm September, 7pm October, 6pm 1 November to 14 February, 7pm 15 February to 31 March.",
       "transport": "Tram C, Jardin Public stop",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -196,7 +219,12 @@
         "status": "missing"
       },
       "girth_cm": 405,
-      "how_to_recognise": "You can recognise it by its wide, spreading crown, 27 metres across, and thick trunk. It stands in the Jardin Public, on Cours de Verdun."
+      "how_to_recognise": "You can recognise it by its wide, spreading crown, 27 metres across, and thick trunk. It stands in the Jardin Public, on Cours de Verdun.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 4732",
+        "url": null
+      },
+      "height_m": 27
     },
     {
       "id": "bdx_006",
@@ -227,7 +255,12 @@
         "status": "missing"
       },
       "girth_cm": 393,
-      "how_to_recognise": "You can recognise the pair by their near-identical girths, 393 and 390 centimetres, standing about ten metres apart. They stand in the same small garden as the register's black poplar, Parc Chantegrillon."
+      "how_to_recognise": "You can recognise the pair by their near-identical girths, 393 and 390 centimetres, standing about ten metres apart. They stand in the same small garden as the register's black poplar, Parc Chantegrillon.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 29755",
+        "url": null
+      },
+      "height_m": 24
     },
     {
       "id": "bdx_007",
@@ -245,9 +278,10 @@
       "verified_sources": [
         "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 3928, Licence Ouverte)",
         "https://lestetardsarboricoles.fr/wordpress/category/arbre-remarquable/zelkova/ (general note that Bordeaux zelkovas were historically grafted onto elm rootstock, visible at the base of some specimens)",
-        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html"
+        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html",
+        "https://www.bordeaux.fr/parc-jardin/parc-bordelais"
       ],
-      "access": "Free, public park (Parc Bordelais, labelled a 'Jardin Remarquable' by the French Ministry of Culture in 2011)",
+      "access": "Free public park (Parc Bordelais), open daily: 7am to 8pm April and May, to 9pm June to August, 8pm September, 7pm October, 6pm 1 November to 14 February, 7pm 15 February to 31 March.",
       "transport": "Tram D, Courbet stop, short walk into the park",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -267,7 +301,12 @@
         "kind": "autumn colour"
       },
       "girth_cm": 371,
-      "how_to_recognise": "You can recognise it by its short trunk breaking into a dense sheaf of near-vertical branches, like an upturned broom. It stands beside the lake in Parc Bordelais."
+      "how_to_recognise": "You can recognise it by its short trunk breaking into a dense sheaf of near-vertical branches, like an upturned broom. It stands beside the lake in Parc Bordelais.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 3928",
+        "url": null
+      },
+      "height_m": 23
     },
     {
       "id": "bdx_008",
@@ -284,9 +323,10 @@
       },
       "verified_sources": [
         "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 4324, Licence Ouverte)",
-        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html"
+        "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html",
+        "https://www.bordeaux.fr/parc-jardin/parc-bordelais"
       ],
-      "access": "Free, public park (Parc Bordelais)",
+      "access": "Free public park (Parc Bordelais), open daily: 7am to 8pm April and May, to 9pm June to August, 8pm September, 7pm October, 6pm 1 November to 14 February, 7pm 15 February to 31 March.",
       "transport": "Tram D, Courbet stop, short walk into the park",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -306,7 +346,11 @@
         "kind": "flowers"
       },
       "girth_cm": 412,
-      "how_to_recognise": "You can recognise it by its very wide, very low trunk, barely three metres tall, cut back hard at some point. It stands in the central area of Parc Bordelais."
+      "how_to_recognise": "You can recognise it by its very wide, very low trunk, barely three metres tall, cut back hard at some point. It stands in the central area of Parc Bordelais.",
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 4324",
+        "url": null
+      }
     },
     {
       "id": "bdx_009",
@@ -337,7 +381,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 597
+      "girth_cm": 597,
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 200663",
+        "url": null
+      },
+      "height_m": 24
     },
     {
       "id": "bdx_010",
@@ -368,7 +417,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "girth_cm": 534
+      "girth_cm": 534,
+      "official_register": {
+        "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 201027",
+        "url": null
+      },
+      "height_m": 32
     }
   ]
 }
