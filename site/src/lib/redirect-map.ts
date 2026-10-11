@@ -187,6 +187,9 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-11, scripts/retire.py: Landelijk Register Monumentale Bomen nr 1685697 (felled years ago, giant polypore fungus) 
+  ["apeldoorn", "copper-beech-of-the-upper-garden"],
+  ["apeldoorn", "copper-beech-by-the-pond"],
   // 2026-10-11, scripts/retire.py: Landelijk Register Monumentale Bomen nr 1691687 is status 5, Dood/geveld: the copper beech
   ["den-bosch", "copper-beech-of-casinotuin"],
   // 2026-10-11, scripts/retire.py: Landelijk Register Monumentale Bomen nr 1691013 (the Munnikenbolwerk elm, thickest Dutch e
