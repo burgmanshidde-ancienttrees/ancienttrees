@@ -2,7 +2,9 @@
 
 <!-- archive-index -->
 
-## 2026-10-11 (night run, 00:38 UTC window) - Enrichment: Zwolle
+## 2026-10-11 (night run, 00:38 UTC window) - Enrichment: Zwolle, Menorca
+
+- **Menorca:** all 6 trees got their CAIB "Arbres singulars" ficha (a PDF, the authority's own sheet) as register record, with girth at 1.3 m and height from it. men_004's ficha covers a group of four planes; the largest values are used and the measure_source says so. **Check:** the ficha for men_006 (Pi Felip) records low vitality, a declining state and a branch lost in 2025, and men_001 records insect damage in 2003; the stories may want a condition line. No season set (no striking moment in those species files).
 
 - **Zwolle:** LRMB ids (no per-tree page, so register_name plus nr) and girth/height for 7 trees, autumn or July season on the silver lime and two beeches. **Retired zwo_003, zwo_010, zwo_011, zwo_014:** the register entries at their coordinates are status 5 (Dood/geveld); moved to leads with redirects, city meta and FAQ now say fifteen. **Check:** zwo_016 is registered as Taxodium ascendens, our species line says distichum; zwo_001's register girth (757) disagrees with its own history text (719), so none applied. Access for the private-ground trees zwo_009 and zwo_013 stays open. Visits last 7 days: 1476.
 
