@@ -27,7 +27,48 @@ import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DE_NAMES = {"Munich": "München", "Nuremberg": "Nürnberg", "Cologne": "Köln"}
+DE_NAMES = {"Munich": "München", "Nuremberg": "Nürnberg", "Cologne": "Köln",
+            "Vienna": "Wien", "Zurich": "Zürich"}
+LOCAL_NAMES = {
+    "nl": {"The Hague": "Den Haag", "Ghent": "Gent", "Brussels": "Brussel"},
+    "it": {"Rome": "Roma", "Milan": "Milano", "Florence": "Firenze", "Naples": "Napoli",
+           "Sardinia": "Sardegna", "Genoa": "Genova", "Padua": "Padova"},
+    "es": {"Palma de Mallorca": "Palma"},
+    "fr": {"Geneva": "Genève", "Luxembourg City": "Luxembourg", "Brussels": "Bruxelles"},
+}
+
+# Mail 1 in the reader's own language: the same three moves as the English one
+# (the page, one tree on it, the question), nothing added.
+LOCAL = {
+    "nl": ("Welke boom in {city} missen we nog?",
+           "Hoi {first},\n\n"
+           "We hebben een pagina gemaakt over de bijzondere oude bomen van {city}: {url}. "
+           "Daarop staat onder meer {tree}.\n\n"
+           "Welke boom in {city} missen we nog? Jij kent ze veel beter dan wij, "
+           "en ik hoor graag welke jij zou toevoegen.\n\n"
+           "Hoe dan ook bedankt,\nHidde"),
+    "it": ("Quale albero di {city} ci manca?",
+           "Buongiorno {full},\n\n"
+           "abbiamo fatto una pagina sui grandi alberi antichi di {city}: {url}. "
+           "Tra gli altri c'è «{tree}».\n\n"
+           "Quale albero di {city} ci manca ancora? Lei li conosce molto meglio di noi, "
+           "e mi farebbe piacere sapere quale aggiungerebbe.\n\n"
+           "Grazie in ogni caso,\nHidde"),
+    "es": ("¿Qué árbol de {city} nos falta?",
+           "Buenos días, {full}:\n\n"
+           "hemos hecho una página sobre los árboles antiguos más notables de {city}: {url}. "
+           "Entre otros incluye «{tree}».\n\n"
+           "¿Qué árbol de {city} nos falta? Usted los conoce mucho mejor que nosotros, "
+           "y me encantaría saber cuál añadiría.\n\n"
+           "Gracias en cualquier caso,\nHidde"),
+    "fr": ("Quel arbre de {city} nous manque-t-il ?",
+           "Bonjour {full},\n\n"
+           "nous avons fait une page sur les arbres anciens remarquables de {city} : {url}. "
+           "On y trouve notamment « {tree} ».\n\n"
+           "Quel arbre de {city} nous manque encore ? Vous les connaissez bien mieux que nous, "
+           "et j'aimerais beaucoup savoir lequel vous ajouteriez.\n\n"
+           "Merci dans tous les cas,\nHidde"),
+}
 
 EN = ("Hi {first},\n\n"
       "We made a page about the remarkable old trees of {city}: {url}. It includes {tree}.\n\n"
@@ -74,7 +115,17 @@ def main():
         else:
             skipped.append("%s (no published place to point at)" % (r.get("city") or r.get("org")))
             continue
-        if r.get("language") == "de":
+        lang = r.get("language")
+        if lang in LOCAL:
+            c = LOCAL_NAMES.get(lang, {}).get(city, city)
+            t = tree[4:] if tree.startswith("The ") else tree
+            if lang == "nl":
+                t = "de " + t if tree.startswith("The ") else t
+            subj, tmpl = LOCAL[lang]
+            body = tmpl.format(first=r.get("first_name") or r.get("full_name"),
+                               full=r.get("full_name") or r.get("first_name"), city=c, url=url, tree=t)
+            subject = subj.format(city=c)
+        elif lang == "de":
             c = DE_NAMES.get(city, city)
             t = tree[4:] if tree.startswith("The ") else tree
             body = DE.format(full=r.get("full_name") or r.get("first_name"), city=c, url=url, tree=t)

@@ -71,10 +71,10 @@
       "user_id": null,
       "place_slug": "brighton",
       "place_name": "Brighton",
-      "public": false,
+      "public": true,
       "since": "2026-10-10",
       "display_name": "Kerry Pickett",
-      "source": "mail yes 2026-10-10 ('Yeah sure. that would be great'); name held off the page until she says yes to that separately",
+      "source": "mail yes 2026-10-10 ('Yeah sure. that would be great'); name held off the page until she says yes to that separately Name on the page: \"I don't mind either way\" (mail 2026-10-10 20:18), read as yes.",
       "address_hmac": [
         "f79067ea92a5ccc609dfe1f3e70d7611d2dcc3a4d409179b12c2684943277c67"
       ]
