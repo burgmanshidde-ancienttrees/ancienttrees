@@ -44,7 +44,8 @@
       "story": "There was a holy oak on this spot and when it died they replaced it with a lime.\n\nThat is the register's reading, planting in 1614, following the death of the Hijligen eik that had stood here. Sacred trees were real fixtures of the Dutch countryside, marking a boundary, a court, a crossing or a spot where something had happened, and when one died the community's instinct was often to put another tree in its place rather than let the place go unmarked. That instinct is why the road is called what it is and why this tree exists.\n\nThe name it carries now comes from two centuries later. In 1813, during the French occupation of Deventer, the lime is said to have served as a lookout tree for Cossacks fighting against the French. Russian irregular cavalry had followed Napoleon's retreat west across Europe and reached the Netherlands that winter, and a big lime on a rise with a view is exactly what a scout wants.\n\nBoth stories are tradition rather than record. The tree is not: it is an enormous old lime on a country road, standing where somebody in 1614 decided a tree should stand.\n\nGo in July, when it flowers and hums.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682194&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1682194&outFields=*&f=json",
+        "https://deventerbomenstichting.nl/monumentale-bomen/kozakkenlinde-2/"
       ],
       "access": "Free. Stands on a public country road at Diepenveen.",
       "transport": "About 5 km north of Deventer station, on the Kozakkenweg at Diepenveen.",
@@ -67,7 +68,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1682194",
         "url": null
-      }
+      },
+      "girth_cm": 650,
+      "height_m": 16
     },
     {
       "id": "dev_002",
@@ -243,8 +246,8 @@
       "age_max": 196,
       "location": {
         "address": "Algemene Begraafplaats, Diepenveenseweg",
-        "latitude": 52.26039,
-        "longitude": 6.15866,
+        "latitude": 52.26038948,
+        "longitude": 6.15865767,
         "neighbourhood": "Diepenveenseweg"
       },
       "story": "A weeping beech in a nineteenth century cemetery is not a coincidence, it is a convention.\n\nThe form was fashionable exactly when these grounds were laid out, and the reading was obvious enough that nobody had to explain it: a tree whose branches fall to the ground rather than reaching up. Cemeteries across northern Europe filled with weeping beeches, weeping willows and weeping ashes in the same few decades, and this one, banded 1830 to 1840, is from the beginning of that.\n\nThe register calls this burial ground historically and ecologically very valuable, in the old ring of the city, and it is looked after by a foundation for Deventer's old cemeteries.\n\nWhat makes the tree worth the walk is that a mature weeping beech is hollow. The branches arch out and hang to the grass all round, so you can push through the skirt and stand inside a green room with a trunk in the middle. Doing that in a cemetery feels like trespass and is not.\n\nOne to see in leaf, so any time from May to October. In winter it is a bare cage, which is its own thing but less startling.",
@@ -262,13 +265,27 @@
       },
       "how_to_recognise": "A dome of branches hanging to the grass, hollow inside.",
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689322",
         "url": null
       },
       "girth_cm": 210,
-      "height_m": 10
+      "height_m": 10,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689322&outFields=*&f=json",
+        "date": "2026-10-11",
+        "moved_m": 0
+      }
     },
     {
       "id": "dev_007",
@@ -286,9 +303,10 @@
       "story": "The register is honest about this one in a way that is worth quoting: the planting history is not known, and the oak was probably put in during the first half of the nineteenth century.\n\nThat is the ordinary state of most old trees. No document, no planting record, nobody who wrote it down, and a dating arrived at by looking at the tree and at what was happening on the estate around it. It is worth seeing that stated plainly, because the confident specific ages attached to famous trees usually rest on no more than this and simply do not admit it.\n\nWhat can be said is that Frieswijk is an estate northeast of Deventer, that the oak stands about 125 metres south of the Raalterweg, and that a pedunculate oak of two centuries in this country is at roughly half its span.\n\nOak on this ground is the default rather than the exception, which is part of why it goes unrecorded. Somebody planted it because you planted oak, and then two hundred years passed.\n\nIt is a walk out of town and the best reason to go is the walk. Come in October for the acorns.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696671&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696671&outFields=*&f=json",
+        "https://frieswijk.nl/omgeving/wandelgebied/"
       ],
-      "access": "Estate land recorded as visitable in the national register.",
+      "access": "Free. Open to walkers on Landgoed Frieswijk (a 3 km white and a 6 km blue route, starting from the car park on the Waterdijk or the access road off the Raalterweg); the oak stands on the east edge of the field about 125 m south of Raalterweg 14, and the national register records it as visitable.",
       "transport": "About 7 km northeast of Deventer station, off the Raalterweg at Schalkhaar.",
       "photo": {
         "url": null,
@@ -407,14 +425,15 @@
       "age_max": 175,
       "location": {
         "address": "Lathmerweg, park of Landgoed De Lathmer, Wilp",
-        "latitude": 52.213303,
-        "longitude": 6.138052,
+        "latitude": 52.21324377,
+        "longitude": 6.13843534,
         "neighbourhood": "Wilp, gemeente Voorst"
       },
       "story": "Most catalpas stand up. This one lies down.\n\nThe trumpet tree in the park of De Lathmer has gone horizontal with age, and rather than take a saw to it, the estate left it lying across the grass. What you walk up to is not a trunk with a crown on top of it but a low tangle of limbs at about the height of a person, leaning away in several directions, still in leaf and still flowering every summer.\n\nIt was planted somewhere between 1850 and 1880, which makes it roughly 150 years old, give or take a decade. Catalpa bignonioides comes from the American southeast and behaves in a Dutch park like a guest who oversleeps: bare well into May when everything around it has leafed out, then white trumpets by the hundred in high summer, flecked yellow and purple in the throat, then long thin seed pods that hang on and rattle through the winter.\n\nThe address changed around it. De Lathmer was a castle estate; the 42 hectares now belong to a care organisation, the house is closed to visitors and the park is not, so walkers reach the tree freely, and the whole complex has been a listed rijksmonument since 2002. Nobody has recorded a girth. On a tree lying at this angle, measuring one would be its own afternoon's work.",
       "verified_sources": [
         "https://bomenbieb.nl/bijzondere-bomen/trompetboom-wilp/",
-        "https://nl.wikipedia.org/wiki/Kasteel_de_Lathmer"
+        "https://nl.wikipedia.org/wiki/Kasteel_de_Lathmer",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687180&outFields=*&f=json"
       ],
       "access": "Free, on the grounds of Landgoed De Lathmer, a 42-hectare care estate whose park is open to walkers (the castle building itself is not); confirmed via the estate's own Wikipedia article",
       "transport": "Wilp village, roughly 15-20 minutes' walk from Wilp/Voorst area; nearest station is Deventer or Twello",
@@ -433,8 +452,20 @@
         "label": "late June and July, when the crown fills with white trumpets"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it lying down rather than standing: a low tangle of limbs at head height, still in leaf and flowering each summer. It stands in the park of Landgoed De Lathmer, Wilp."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it lying down rather than standing: a low tangle of limbs at head height, still in leaf and flowering each summer. It stands in the park of Landgoed De Lathmer, Wilp.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1687180",
+        "url": null
+      },
+      "girth_cm": 250,
+      "height_m": 12,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1687180&outFields=*&f=json",
+        "date": "2026-10-11",
+        "moved_m": 27
+      }
     },
     {
       "id": "dev_011",
