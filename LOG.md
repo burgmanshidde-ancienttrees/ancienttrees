@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-11 (continuation, ~33 min left) - Brno checked, nothing to add
+
+Brno's open gaps were plane-tree seasons (data/phenology/london-plane.json has no striking moment) plus one register gap on the Bystrc lime; recorded as dead ends with `enrich.py --done`, claim released. The 16 READY leads were left unwritten: a new tree must be rich (preflight refuses the rest), and none of them is. Next in line: `enrich.py --brief bruges`. Untouched backup work: scout the Cambridge register, translate amersfoort (nl).
+
 ## 2026-10-11 (night run, 00:38 UTC window) - Enrichment: 36 cities, 9 trees retired as register-dead
 
 Visits last 7 days: 1476. The whole window was the enrichment lane (`enrich.py --next`, one verify agent per city, `--apply`, preflight, commit); no new trees. Nine trees were retired as register-dead (Zwolle 4, Helmond 1, Alkmaar 1, Den Bosch 1, Apeldoorn 2); Oss's four are held for a decision. The push credential expired about 01:38 UTC, so every commit from Alkmaar onward is local and relies on the Run health step; no deploy was dispatched. **One lesson for the lane:** `enrich.py --apply` records every briefed gap as a 90-day dead end even when the verify pass never fetched the web (Bergamo, Rio) or answered only part of the brief (Belfast, Salamanca), so those cities are untested, not empty. A Dutch bulk fill (`scripts/lrmb_fill.py`) already existed on 10-10, so the Dutch passes here added little beyond the register-dead finds.
