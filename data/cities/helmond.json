@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Kasteel Helmond has stood here for nearly seven hundred years, and until the middle of the last century it sat in a large landscape park. Most of that went after 1921, when the last private owner sold up. Seven trees here still stand in what is left of the grounds, one a Chinese beech the register calls the oldest of its kind in the country. The rest of the page is a cemetery planted almost entirely in weeping trees, an oak beside a tower from about 1400, and an oak somebody wrote a book about.",
-  "meta_description": "Twenty remarkable trees in Helmond: seven in the castle grounds including a rare Chinese beech, a cemetery of weeping trees, and the Peeters oak.",
-  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and nineteen more worth the walk.",
+  "meta_description": "Nineteen remarkable trees in Helmond: seven in the castle grounds including a rare Chinese beech, a cemetery of weeping trees, and the Peeters oak.",
+  "question_meta": "Helmond's oldest tree is the old oak of farmer Peeters at Brouwhuis, banded 1820 to 1830. Where it stands, and eighteen more worth the walk.",
   "question_answer": "The oldest tree in Helmond is the one known as de oude eik van boer Peeters, the old oak of farmer Peeters, on the Rijnlaan at Brouwhuis, which the national register places in a planting band of 1820 to 1830, so around two centuries old. Its name is not folklore we have collected: the register itself says the name comes from the book 'Grote en kleine geschiedenissen rond bomen in Helmond en omgeving' by Maria van de Looverbosch, which is a local history of the trees of Helmond and its surroundings. That is worth knowing because it means somebody in this town went to the trouble of writing down what its trees are called, and the national register then read it.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and for most of these trees it is the only source, so everything is flagged. Seven of the twenty stand in the grounds of Kasteel Helmond, surrounded by a large landscape park until the middle of the twentieth century and mostly lost after the last private owner sold the castle in 1921; those trees run from the 1880s to the 1940s. Three more stand in the two adjoining Molenstraat cemeteries, founded in 1880, four more were added a previous pass (two oaks in the Warande city walking park and a copper beech and a plane tree on ordinary streets nearby), and a pair of copper beeches in the Sint Lucia churchyard was added most recently. Where a pin is marked approximate we know the grounds and not the trunk, and if you find one of these gone, tell us and it comes off the same day.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the 2024 edition and for most of these trees it is the only source, so everything is flagged. Seven of the nineteen stand in the grounds of Kasteel Helmond, surrounded by a large landscape park until the middle of the twentieth century and mostly lost after the last private owner sold the castle in 1921; those trees run from the 1880s to the 1940s. Two more stand in the adjoining Molenstraat cemetery, founded in 1880, four more were added a previous pass (two oaks in the Warande city walking park and a copper beech and a plane tree on ordinary streets nearby), and a pair of copper beeches in the Sint Lucia churchyard was added most recently. Where a pin is marked approximate we know the grounds and not the trunk, and if you find one of these gone, tell us and it comes off the same day.",
   "hero_tree_id": "hlm_001",
   "oldest_tree_id": "hlm_002",
   "faq": [
@@ -28,7 +28,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All twenty. The castle park is open ground in the centre of town, the Molenstraat cemetery is a general public cemetery open in daylight, the cedar on the Julianalaan stands on a public square, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis. The oak on Croylaan is council-owned and stands beside the public road, though the castle grounds it approaches are not, and the copper beeches in the Sint Lucia churchyard stand in a public burial ground open from sunrise to sunset."
+      "a": "All nineteen. The castle park is open ground in the centre of town, the Molenstraat cemetery is a general public cemetery open in daylight, the cedar on the Julianalaan stands on a public square, the Oude Toren at Stiphout is freely reachable, the wood at Horst is public, and the Peeters oak stands in public planting at Brouwhuis. The oak on Croylaan is council-owned and stands beside the public road, though the castle grounds it approaches are not, and the copper beeches in the Sint Lucia churchyard stand in a public burial ground open from sunrise to sunset."
     }
   ],
   "trees": [
@@ -200,7 +200,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1695702",
         "url": null
-      }
+      },
+      "girth_cm": 425,
+      "height_m": 26
     },
     {
       "id": "hlm_005",
@@ -563,7 +565,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694363",
+        "url": null
+      },
+      "girth_cm": 492,
+      "height_m": 25
     },
     {
       "id": "hlm_017",
@@ -635,7 +643,13 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683271",
+        "url": null
+      },
+      "girth_cm": 585,
+      "height_m": 23
     },
     {
       "id": "hlm_015",
@@ -730,36 +744,6 @@
       "height_m": 26
     },
     {
-      "id": "hlm_014",
-      "name": "The Nootka Cypress of the Protestant Cemetery",
-      "species": "Nootka Cypress (Cupressus nootkatensis)",
-      "age_estimate": "not documented",
-      "location": {
-        "address": "Molenstraat 70a, Protestantse Begraafplaats, Helmond",
-        "latitude": 51.477947,
-        "longitude": 5.668932,
-        "neighbourhood": "Molenstraat"
-      },
-      "verified_sources": [
-        "data/registers/netherlands-lrmb.json (LRMB record 1694365, Nootkacipres, Molenstraat 70a / protestantse begraafplaats, planted_band recorded as 'Leeftijd onbekend' i.e. age unknown, owner_category gemeente, visitable ja, status 5 (a lower-confidence status flag in the register itself))",
-        "https://pghas.protestantsekerk.net/begraafplaatsen (the Protestant church's own page for this cemetery: in place at Molenstraat 70 since 1865, freely open sunrise to sunset, described as having monumentale bomen that give the grounds a distinctive green character)"
-      ],
-      "access": "Free. The cemetery is open daily from sunrise to sunset per the managing church's own site.",
-      "transport": "About 18 minutes' walk (roughly 1.44 km) from Helmond centre.",
-      "location_precision": "confirmed",
-      "curation_status": "flagged",
-      "story": "Botanists have moved this species between genera more than once and are not obviously finished. Older books file it as Chamaecyparis nootkatensis, newer ones as Cupressus nootkatensis, and a few as Xanthocyparis. In Dutch it is simply the nootkacipres, and nobody argues about that.\n\nWherever it is filed, it comes from a long way off. Its home range is the Pacific coast of North America, from Alaska down through British Columbia, on cold wet slopes above the sea. This one grows in a Protestant burial ground on the eastern edge of Helmond, the better part of eight thousand kilometres from there.\n\nIts age is a blank, and unusually the register says so outright. The Dutch national register normally gives at least a planting decade; for this tree it records leeftijd onbekend, age unknown, and marks the entry as less certain than most. So there is no number on this page and we are not going to invent one.\n\nWhat is dated is the ground under it. The Protestant cemetery has been at Molenstraat 70a since 1865, and the parish that runs it opens the gates from sunrise to sunset, free, every day. It is a separate burial ground from the general cemetery at number 72 a few paces along the same street, where the weeping beech and the silver maple on this page stand.\n\nIf anyone knows when this cypress was planted, that is the missing line.",
-      "how_to_recognise": "You can recognise it by the drooping habit: flat sprays of dark evergreen foliage hanging limp from the branch tips. It stands in the Protestant burial ground at Molenstraat 70a, a separate cemetery from the one at number 72.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "age_min": null,
-      "age_max": null
-    },
-    {
       "id": "hlm_019",
       "name": "The Oak of Kasteel Croy",
       "species": "Pedunculate Oak (Quercus robur)",
@@ -811,7 +795,7 @@
       "age_estimate": "about 140 years, planted 1880-1890",
       "age_min": 136,
       "age_max": 146,
-      "girth_cm": null,
+      "girth_cm": 431,
       "location": {
         "address": "Hoofdstraat 157/159, Helmond",
         "latitude": 51.466816,
@@ -834,7 +818,20 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1679427",
+        "url": null
+      },
+      "height_m": 23,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the copper leaves turn and fall",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

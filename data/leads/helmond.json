@@ -1,5 +1,38 @@
 {
-  "leads": [],
+  "leads": [
+    {
+      "id": "hlm_014",
+      "name": "The Nootka Cypress of the Protestant Cemetery",
+      "species": "Nootka Cypress (Cupressus nootkatensis)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Molenstraat 70a, Protestantse Begraafplaats, Helmond",
+        "latitude": 51.477947,
+        "longitude": 5.668932,
+        "neighbourhood": "Molenstraat"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB record 1694365, Nootkacipres, Molenstraat 70a / protestantse begraafplaats, planted_band recorded as 'Leeftijd onbekend' i.e. age unknown, owner_category gemeente, visitable ja, status 5 (a lower-confidence status flag in the register itself))",
+        "https://pghas.protestantsekerk.net/begraafplaatsen (the Protestant church's own page for this cemetery: in place at Molenstraat 70 since 1865, freely open sunrise to sunset, described as having monumentale bomen that give the grounds a distinctive green character)"
+      ],
+      "access": "Free. The cemetery is open daily from sunrise to sunset per the managing church's own site.",
+      "transport": "About 18 minutes' walk (roughly 1.44 km) from Helmond centre.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Botanists have moved this species between genera more than once and are not obviously finished. Older books file it as Chamaecyparis nootkatensis, newer ones as Cupressus nootkatensis, and a few as Xanthocyparis. In Dutch it is simply the nootkacipres, and nobody argues about that.\n\nWherever it is filed, it comes from a long way off. Its home range is the Pacific coast of North America, from Alaska down through British Columbia, on cold wet slopes above the sea. This one grows in a Protestant burial ground on the eastern edge of Helmond, the better part of eight thousand kilometres from there.\n\nIts age is a blank, and unusually the register says so outright. The Dutch national register normally gives at least a planting decade; for this tree it records leeftijd onbekend, age unknown, and marks the entry as less certain than most. So there is no number on this page and we are not going to invent one.\n\nWhat is dated is the ground under it. The Protestant cemetery has been at Molenstraat 70a since 1865, and the parish that runs it opens the gates from sunrise to sunset, free, every day. It is a separate burial ground from the general cemetery at number 72 a few paces along the same street, where the weeping beech and the silver maple on this page stand.\n\nIf anyone knows when this cypress was planted, that is the missing line.",
+      "how_to_recognise": "You can recognise it by the drooping habit: flat sprays of dark evergreen foliage hanging limp from the branch tips. It stands in the Protestant burial ground at Molenstraat 70a, a separate cemetery from the one at number 72.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "age_min": null,
+      "age_max": null,
+      "removed": "2026-10-11",
+      "removed_reason": "Landelijk Register Monumentale Bomen nr 1694365 is status 5 (Dood/geveld): felled in 2019, only the stump remains"
+    }
+  ],
   "blocked": [
     {
       "register_id": 1694364,
@@ -159,7 +192,14 @@
       "reason": "Register entry covers a group of 5 oaks planted along the Zuid-Willemsvaart canal shortly after the canal's completion (register's own history: the trees were likely planted shortly after the canal's completion in 1822). A row of roadside/towpath trees strung along a stretch of canal is an avenue, not one collectible point with one obvious place to stand. No source found naming or distinguishing a single standout tree within the group. Would become publishable if a source identifies one specific tree as exceptional within the row."
     },
     {
-      "register_ids": [1693495, 1693496, 1693497, 1693498, 1693499, 1694350],
+      "register_ids": [
+        1693495,
+        1693496,
+        1693497,
+        1693498,
+        1693499,
+        1694350
+      ],
       "name": "The 1910-1920 dendrological cluster of buitenplaats De Beemd (Dakspaaneik, Kastanjebladige eik, Bonte tamme kastanje, Bonte reuzenlevensboom, Bruine beuk, Wilgeik)",
       "place": "Helmond, Aarle Rixtelseweg 101, buitenplaats \"De Beemd\"",
       "latitude": 51.49974,
