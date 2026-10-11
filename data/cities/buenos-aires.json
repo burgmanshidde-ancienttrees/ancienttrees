@@ -60,7 +60,12 @@
         "width": 3456,
         "height": 2304
       },
-      "how_to_recognise": "The huge fig with a car-parts sculpture of Atlas appearing to hold up one long branch, a few metres from the Recoleta Cemetery gate."
+      "how_to_recognise": "The huge fig with a car-parts sculpture of Atlas appearing to hold up one long branch, a few metres from the Recoleta Cemetery gate.",
+      "official_register": {
+        "name": "Arbopedia, Arbol Historico (Gobierno de la Ciudad de Buenos Aires)",
+        "url": "https://buenosaires.gob.ar/gcaba_historico/espaciopublicoehigieneurbana/gestion-comunal/arbopedia/gomero-de-la-recoleta"
+      },
+      "height_m": 18
     },
     {
       "id": "bai_002",
@@ -100,6 +105,15 @@
         ],
         "label": "October to November, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Arbopedia, Arbol Historico (Gobierno de la Ciudad de Buenos Aires; Decreto Nacional 5241/1969)",
+        "url": "https://buenosaires.gob.ar/gcaba_historico/gobierno/gestion-comunal/arbopedia/magnolias-del-protomedicato"
+      },
+      "height_m": 18,
+      "location_site": {
+        "name": "Entrance garden of Escuela Guillermo Rawson, Humberto Primo 343, San Telmo",
+        "radius_m": 30.0
       }
     },
     {
@@ -142,7 +156,12 @@
         "width": 4608,
         "height": 3072
       },
-      "how_to_recognise": "A single magnolia against the wall of the Jardin Japones on Avenida Berro, inside Parque Tres de Febrero."
+      "how_to_recognise": "A single magnolia against the wall of the Jardin Japones on Avenida Berro, inside Parque Tres de Febrero.",
+      "official_register": {
+        "name": "Arbopedia, Arbol Historico (Gobierno de la Ciudad de Buenos Aires; Decreto Nacional 2232/1946)",
+        "url": "https://buenosaires.gob.ar/gcaba_historico/gobierno/gestion-comunal/arbopedia/magnolia-de-avellaneda"
+      },
+      "height_m": 16
     },
     {
       "id": "bai_004",
@@ -173,7 +192,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "A low, wide, many-branched crown near the Cordoba and Talcahuano corner of Plaza Lavalle, unlike the plazas' other trees."
+      "how_to_recognise": "A low, wide, many-branched crown near the Cordoba and Talcahuano corner of Plaza Lavalle, unlike the plazas' other trees.",
+      "official_register": {
+        "name": "Arbopedia, Arboles y Plantaciones Notables de la Ciudad de Buenos Aires (Gobierno de la Ciudad)",
+        "url": "https://buenosaires.gob.ar/gcaba_historico/esterculia-de-plaza-lavalle"
+      },
+      "height_m": 8
     }
   ]
 }
