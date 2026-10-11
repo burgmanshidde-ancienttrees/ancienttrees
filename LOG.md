@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-11 (night run, 00:38 UTC window) - Enrichment: Zwolle
+
+- **Zwolle:** LRMB ids (no per-tree page, so register_name plus nr) and girth/height for 7 trees, autumn or July season on the silver lime and two beeches. **Retired zwo_003, zwo_010, zwo_011, zwo_014:** the register entries at their coordinates are status 5 (Dood/geveld); moved to leads with redirects, city meta and FAQ now say fifteen. **Check:** zwo_016 is registered as Taxodium ascendens, our species line says distichum; zwo_001's register girth (757) disagrees with its own history text (719), so none applied. Access for the private-ground trees zwo_009 and zwo_013 stays open. Visits last 7 days: 1476.
+
 ## 2026-10-10 (night run, final window) - Enrichment: Heidelberg, Tilburg
 
 - **Tilburg:** girth and height for the Zuiderpark five, the Korvelplein oak (plus a September fruit season), the twin planes (one register entry covers both trees) and the Kloosterpark oak (girth only, the register's two heights disagree). **Retired til_001, til_002, til_003** (Wilhelminapark elm, Frater Paullussehof lime, Wilhelminapark poplar): all three are LRMB status 5 (Dood/geveld). The city page now says seventeen, its hero is the weeping lime and the oldest tree is the Oisterwijk Marialinde; the Wilhelminapark page fell below the five-tree gate, so I deleted it and added a redirect to /tilburg in redirect-map.ts (not yet seen in a build). **Check:** the Zuiderpark trees are LRMB status 4 (Afgekeurd, not designated), so I took measurements only and no register fields; til_008 is registered as a Japanese wingnut where we say Caucasian.
