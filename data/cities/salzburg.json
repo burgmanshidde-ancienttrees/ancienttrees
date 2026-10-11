@@ -41,7 +41,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
-        "https://commons.wikimedia.org/wiki/Category:Pappel_am_Josef-Mayburger-Kai"
+        "https://commons.wikimedia.org/wiki/Category:Pappel_am_Josef-Mayburger-Kai",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free, on the public riverside promenade (Salzachuferweg)",
       "transport": "About 2km along the Salzach riverside path from the old town; reachable by city bus toward Itzling and a short walk to the Traklsteg footbridge.",
@@ -54,7 +55,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its massive trunk, over six metres round, standing alone where the old floodplain wood has been cleared. It stands on the riverside promenade near the Traklsteg footbridge."
+      "how_to_recognise": "You can recognise it by its massive trunk, over six metres round, standing alone where the old floodplain wood has been cleared. It stands on the riverside promenade near the Traklsteg footbridge.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00173",
+        "url": null
+      }
     },
     {
       "id": "szb_002",
@@ -70,7 +75,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
         "https://commons.wikimedia.org/wiki/Category:Eiche_am_Erentrudishof",
-        "https://www.erentrudishof.at/"
+        "https://www.erentrudishof.at/",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free; stands on the grounds of the Erentrudishof organic farm shop, run by Stift Nonnberg convent. Publicly accessible during farm-shop hours (Mon-Fri 9:00-18:30, Sat 9:00-12:00) with a self-service raw-milk machine open 24/7; the shop was reported closed for renovation with a stated July 2026 reopening at the time this was researched (2026-08-29), confirm it has reopened before sending a reader.",
       "transport": "Southern edge of Salzburg in Morzg; reachable by city bus toward Morzg/Hellbrunn and a short walk.",
@@ -91,7 +97,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its single, thick stem standing over the yard of the Erentrudishof farm shop. It stands on the organic farm's grounds, run by Stift Nonnberg convent at Morzg."
+      "how_to_recognise": "You can recognise it by its single, thick stem standing over the yard of the Erentrudishof farm shop. It stands on the organic farm's grounds, run by Stift Nonnberg convent at Morzg.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00019",
+        "url": null
+      }
     },
     {
       "id": "szb_003",
@@ -106,7 +116,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
-        "https://www.fraeuleinflora.at/salzburg/10-bemerkenswerte-baeume-in-salzburg/"
+        "https://www.fraeuleinflora.at/salzburg/10-bemerkenswerte-baeume-in-salzburg/",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free, stands at a woodland edge / roadside in Morzg, publicly accessible",
       "transport": "Near the tram stop toward Birkensiedlung in Morzg, short walk.",
@@ -127,7 +138,11 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by its position right at the woodland edge, a short walk from the tram stop toward Birkensiedlung. It stands on the southern edge of Morzg, on public ground."
+      "how_to_recognise": "You can recognise it by its position right at the woodland edge, a short walk from the tram stop toward Birkensiedlung. It stands on the southern edge of Morzg, on public ground.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00091",
+        "url": null
+      }
     },
     {
       "id": "szb_004",
@@ -198,7 +213,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
-        "https://commons.wikimedia.org/wiki/Category:Eiche_an_der_Steinbruchstra%C3%9Fe"
+        "https://commons.wikimedia.org/wiki/Category:Eiche_an_der_Steinbruchstra%C3%9Fe",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free; stands on Steinbruchstraße, an ordinary public residential street in Riedenburg with pavements on both sides (confirmed via OpenStreetMap, no access restriction on the road)",
       "transport": "Riedenburg district, western Salzburg; Salzburg Quartier Riedenburg tram/bus stop is a short walk away.",
@@ -223,7 +239,7 @@
         "kind": "fruit"
       },
       "official_register": {
-        "name": "Naturdenkmäler Land Salzburg (Naturschutzbuch des Landes Salzburg), no. NDM00196",
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00196",
         "url": null
       }
     },
@@ -240,7 +256,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
-        "https://commons.wikimedia.org/wiki/Category:Linde_an_der_Neutorstra%C3%9Fe"
+        "https://commons.wikimedia.org/wiki/Category:Linde_an_der_Neutorstra%C3%9Fe",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free; the register itself describes it as standing widely visible at the edge of the property, next to the Neutorstraße/Hübnergasse/Leopoldskronstraße junction, a public street corner in Riedenburg (confirmed via OpenStreetMap: ordinary public roads, no access restriction)",
       "transport": "Riedenburg district, western Salzburg, at the Neutorstraße/Hübnergasse/Leopoldskronstraße junction; Salzburg Quartier Riedenburg tram/bus stop is a short walk away.",
@@ -257,7 +274,7 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by its multiple trunks rising from one base, visible from all sides at the property edge. It stands at the junction of Neutorstrasse, Hubnergasse and Leopoldskronstrasse, Riedenburg.",
       "official_register": {
-        "name": "Naturdenkmäler Land Salzburg (Naturschutzbuch des Landes Salzburg), no. NDM00215",
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00215",
         "url": null
       }
     },
@@ -275,7 +292,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
         "https://commons.wikimedia.org/wiki/Category:Linde_an_der_G%C3%A4rtnerstra%C3%9Fe",
-        "https://de.wikipedia.org/wiki/M%C3%B6lckhof"
+        "https://de.wikipedia.org/wiki/M%C3%B6lckhof",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free; stands on/beside Gärtnerstraße, a public residential street in Riedenburg (OpenStreetMap tags the road 'access=destination', which restricts through motor traffic only, not pedestrians)",
       "transport": "Riedenburg district, western Salzburg; Salzburg Quartier Riedenburg tram/bus stop is a short walk away.",
@@ -292,7 +310,7 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it as the lime that once stood inside the grounds of the Molckhof manor house. It stands on Gartnerstrasse, near the Molckhof, Riedenburg.",
       "official_register": {
-        "name": "Naturdenkmäler Land Salzburg (Naturschutzbuch des Landes Salzburg), no. NDM00232",
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00232",
         "url": null
       }
     },
@@ -313,7 +331,8 @@
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
         "https://www.nextroom.at/building.php?id=1363",
         "https://commons.wikimedia.org/wiki/Category:Platane_im_Fordhof",
-        "https://commons.wikimedia.org/wiki/Category:Schwarzkiefer_im_Fordhof"
+        "https://commons.wikimedia.org/wiki/Category:Schwarzkiefer_im_Fordhof",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free; the two trees stand in the open courtyard of the Fordhof, a multi-block 1953 housing estate, criss-crossed by ordinary public sidewalks between the apartment blocks (confirmed via OpenStreetMap: lit, surfaced public footways run through the courtyard; the only access=private tags nearby cover two small surface parking areas, not the walkways or the tree positions). Not a park, and worth saying so plainly: this is a residential courtyard rather than public green space, but nothing gates entry.",
       "transport": "Elisabeth-Vorstadt, about 5-10 minutes' walk from Salzburg Hauptbahnhof (the main train station).",
@@ -326,7 +345,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its trunk standing alone in the open courtyard of the Fordhof housing estate, off Rainerstraße; the black pine grows about 35 metres away in the same courtyard."
+      "how_to_recognise": "You can recognise it by its trunk standing alone in the open courtyard of the Fordhof housing estate, off Rainerstraße; the black pine grows about 35 metres away in the same courtyard.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00075",
+        "url": null
+      }
     },
     {
       "id": "szb_010",
@@ -344,7 +367,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg (register entry NDM00202, designated 1986, protected area 0.049 ha)",
         "https://de.wikipedia.org/wiki/Freisaal (independent Wikipedia article on the Freisaal district, states the tree's estimated age directly: 'eine mehrstämmige Hainbuche, deren Alter auf mehr als 200 Jahre geschätzt wird')",
-        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Hainbuche_am_Freisaalweg,_Salzburg.JPG (dated, geotagged photo, 22 May 2014, coordinates match the register centroid to within a few metres)"
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Hainbuche_am_Freisaalweg,_Salzburg.JPG (dated, geotagged photo, 22 May 2014, coordinates match the register centroid to within a few metres)",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free. Stands beside the public Parkplatz Akademiestraße car park (220 spaces) in Nonntal; publicly viewable, no gate or restriction found.",
       "transport": "Bus line 20 (Nonntal route), stop Akademiestraße or Hofhaymer-Allee; about a 15-20 minute walk south from Salzburg's Altstadt (Residenzplatz)",
@@ -358,7 +382,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00202",
+        "url": null
+      }
     },
     {
       "id": "szb_011",
@@ -375,7 +403,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg (register entry NDM00251, designated 2005, protected area 0.033 ha, quotes the tree's own access text)",
-        "https://de.wikipedia.org/wiki/Datei:Eiche_an_der_Aigner_Strasse_9_(1).JPG (independent dated, geotagged photo by a different photographer, 30 May 2014, coordinates match the register centroid closely, uploaded for the Wiki Loves Earth 2014 contest)"
+        "https://de.wikipedia.org/wiki/Datei:Eiche_an_der_Aigner_Strasse_9_(1).JPG (independent dated, geotagged photo by a different photographer, 30 May 2014, coordinates match the register centroid closely, uploaded for the Wiki Loves Earth 2014 contest)",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free and explicitly unrestricted. The register's own text states it plainly: 'Die Eiche an der Aigner Straße 9 steht im Innenhof mehrerer Wohnblocks. Sie ist trotzdem ohne Einschränkungen zugänglich' (stands in the courtyard of several apartment blocks; nevertheless it is accessible without restriction).",
       "transport": "Salzburg Aigen station (Obus line 7 and S-Bahn S3), on Aigner Straße itself, a short walk to the courtyard",
@@ -389,7 +418,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00251",
+        "url": null
+      }
     },
     {
       "id": "szb_012",
@@ -406,7 +439,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg (register entry NDM00206, designated 1986, protected area 0.0346 ha)",
-        "https://commons.wikimedia.org/wiki/File:00206_Eiche_an_der_Buchholzhofstra%C3%9Fe.jpg (independent dated, geotagged photo, 16 August 2014, categorised by Commons as Quercus robur, coordinates match the register centroid closely)"
+        "https://commons.wikimedia.org/wiki/File:00206_Eiche_an_der_Buchholzhofstra%C3%9Fe.jpg (independent dated, geotagged photo, 16 August 2014, categorised by Commons as Quercus robur, coordinates match the register centroid closely)",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free. Stands beside Buchholzhofstraße, whose northern stretch is a public pedestrian and cycle path (Geh- und Radweg) running into the Hellbrunner Allee; no gate or restriction found.",
       "transport": "Bus/Obus line 5 or bus line 25 (Morzg route); about a 20-25 minute walk south from Salzburg's Altstadt",
@@ -420,7 +454,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00206",
+        "url": null
+      }
     },
     {
       "id": "szb_013",
@@ -438,7 +476,8 @@
       "verified_sources": [
         "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00177, protected 1980, CC BY 4.0)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
-        "https://commons.wikimedia.org/wiki/File:Salzburg-2590.jpg"
+        "https://commons.wikimedia.org/wiki/File:Salzburg-2590.jpg",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Stands at the end of a public residential street; view from the street. Not checked whether the trunk itself is on public ground.",
       "transport": "Maxglan, about 4 km south-west of the old town; nearest bus stop not checked",
@@ -454,7 +493,11 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Register only (Land Salzburg Naturdenkmal NDM00177, protected 1980). The register polygon is 93 m2, so its centroid sits within a few metres of the trunk; pin taken from it. Height 24 m and chest-height girth 4 m come from the Commons file description (Wiki Loves Earth 2014, which quotes the Naturdenkmal text), not seen on the register itself: flagged. Wikipedia list: relic of the former moor litter meadows at the edge of the Untersberger Moor and its oak woodland. Spherical crown, shapes the landscape (Commons description). Alive: lifecheck NONE; Commons photo 2014-04-17 CC BY-SA 3.0 at (WOKRIE) shows the tree; current register extract of 2026-08-16 still lists it, not on the Wikipedia list of former monuments. No age; page should ask the reader."
+      "verify_notes": "Register only (Land Salzburg Naturdenkmal NDM00177, protected 1980). The register polygon is 93 m2, so its centroid sits within a few metres of the trunk; pin taken from it. Height 24 m and chest-height girth 4 m come from the Commons file description (Wiki Loves Earth 2014, which quotes the Naturdenkmal text), not seen on the register itself: flagged. Wikipedia list: relic of the former moor litter meadows at the edge of the Untersberger Moor and its oak woodland. Spherical crown, shapes the landscape (Commons description). Alive: lifecheck NONE; Commons photo 2014-04-17 CC BY-SA 3.0 at (WOKRIE) shows the tree; current register extract of 2026-08-16 still lists it, not on the Wikipedia list of former monuments. No age; page should ask the reader.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00177",
+        "url": null
+      }
     },
     {
       "id": "szb_014",
@@ -470,7 +513,8 @@
       "verified_sources": [
         "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00207, protected 1987, CC BY 4.0)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
-        "https://commons.wikimedia.org/wiki/File:00207_Eiche_an_der_Itzlinger_Hauptstra%C3%9Fe.jpg"
+        "https://commons.wikimedia.org/wiki/File:00207_Eiche_an_der_Itzlinger_Hauptstra%C3%9Fe.jpg",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Visible from the public pavement of Itzlinger Hauptstraße; the tree stands on the high embankment above the street, so view only. Whether the embankment can be entered not checked.",
       "transport": "Itzlinger Hauptstraße is a trolleybus route (Commons categorises it under Trolleybus route 6); about 3.4 km north of the old town; exact stop not checked",
@@ -486,7 +530,11 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Register only (NDM00207, protected 1987). Register polygon 82 m2, centroid within a few metres of the trunk. Species given only as Quercus (Commons category); genus level, say so on the page. Wikipedia list text: the tree shapes the view on the high embankment above Itzlinger Hauptstraße, west of the Goethe-Siedlung. Alive: lifecheck NONE; Commons photo 2015-10-13 (Georg Pflugbeil, CC BY-SA 3.0 at) shows it; still in the 2026-08-16 register extract. No age, girth or height known."
+      "verify_notes": "Register only (NDM00207, protected 1987). Register polygon 82 m2, centroid within a few metres of the trunk. Species given only as Quercus (Commons category); genus level, say so on the page. Wikipedia list text: the tree shapes the view on the high embankment above Itzlinger Hauptstraße, west of the Goethe-Siedlung. Alive: lifecheck NONE; Commons photo 2015-10-13 (Georg Pflugbeil, CC BY-SA 3.0 at) shows it; still in the 2026-08-16 register extract. No age, girth or height known.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00207",
+        "url": null
+      }
     },
     {
       "id": "szb_015",
@@ -503,7 +551,8 @@
         "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00225, protected 1989, CC BY 4.0)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
         "https://commons.wikimedia.org/wiki/File:00225_Eiche_am_Flurweg.jpg",
-        "https://www.inaturalist.org/observations/256063431"
+        "https://www.inaturalist.org/observations/256063431",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Seen from the public street at the edge of the building land (the list calls it widely visible); the plot at Flurweg 19 is probably private, so view from the road only.",
       "transport": "Morzg, about 3.5 km south of the old town; stop not checked",
@@ -519,7 +568,11 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "Register NDM00225, protected 1989, polygon 59 m2 so centroid is at the trunk to a few metres. Wikipedia list text: once a boundary tree of the old Davidengut, now at the edge of the building land, widely visible. lifecheck RECENT: iNaturalist observation 2024-12-24 at the spot (shows something was photographed there, not necessarily this trunk). Commons photo 2014-09-04 CC BY-SA 3.0 at. Genus-level species. No age or measurements."
+      "verify_notes": "Register NDM00225, protected 1989, polygon 59 m2 so centroid is at the trunk to a few metres. Wikipedia list text: once a boundary tree of the old Davidengut, now at the edge of the building land, widely visible. lifecheck RECENT: iNaturalist observation 2024-12-24 at the spot (shows something was photographed there, not necessarily this trunk). Commons photo 2014-09-04 CC BY-SA 3.0 at. Genus-level species. No age or measurements.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00225",
+        "url": null
+      }
     },
     {
       "id": "szb_016",
@@ -538,7 +591,8 @@
         "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00198, CC BY 4.0)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Salzburg-Umgebung",
         "https://wiki.sn.at/wiki/Tofferleiche",
-        "https://commons.wikimedia.org/wiki/File:Tofferl-Eiche_-_DSC04805_35.jpg"
+        "https://commons.wikimedia.org/wiki/File:Tofferl-Eiche_-_DSC04805_35.jpg",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Stands in open meadows (Goiser Wiesen). Public geocaches GC92DTT and GC4E7W2 are placed at the tree, but whether the trunk itself is on public ground or reached by a public path was not established.",
       "transport": "Gois, Wals-Siezenheim, about 7 km west of Salzburg old town; bus stop not checked",
@@ -564,7 +618,11 @@
         "height": 3264
       },
       "photos": [],
-      "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00198 (Katastralgemeinde Gois, plot 341/13 plus surrounding ground), protected since 1985-11-26 per the de.wikipedia list (the preceding row's 1972 date belongs to a different entry); the list gives height 'gut 25 m', crown 20-25 m, girth 5 m. SalzburgWiki independently repeats ca. 25 m / 5 m / 20-25 m and calls it a landscape-shaping Naturdenkmal listed in the Salzburger Naturschutzbuch; SalzburgWiki may derive from the same register so treat the two as one family of data. No age anywhere: leave empty, page asks reader (girth 5 m of an oak in open pasture suggests a few centuries but no basis written down). Pin: register polygon centroid 47.768447,12.959484; Commons photos by Flanierer (CC BY-SA 4.0, 2025-03-08, a dozen frames) carry exactly the same coordinate, so that is not independent pin evidence beyond register; polygon is 616 m2 around one tree so centroid is within a few metres of the trunk; marked confirmed on that basis. Alive: lifecheck RECENT 2025-03-08. PHOTO: openly licensed photographs of this tree exist on Commons (category Tofferl-Eiche, Flanierer, CC BY-SA 4.0, 2025). Photo-or-pin: both. Out-of-town (7 km), not a walk from the other trees."
+      "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00198 (Katastralgemeinde Gois, plot 341/13 plus surrounding ground), protected since 1985-11-26 per the de.wikipedia list (the preceding row's 1972 date belongs to a different entry); the list gives height 'gut 25 m', crown 20-25 m, girth 5 m. SalzburgWiki independently repeats ca. 25 m / 5 m / 20-25 m and calls it a landscape-shaping Naturdenkmal listed in the Salzburger Naturschutzbuch; SalzburgWiki may derive from the same register so treat the two as one family of data. No age anywhere: leave empty, page asks reader (girth 5 m of an oak in open pasture suggests a few centuries but no basis written down). Pin: register polygon centroid 47.768447,12.959484; Commons photos by Flanierer (CC BY-SA 4.0, 2025-03-08, a dozen frames) carry exactly the same coordinate, so that is not independent pin evidence beyond register; polygon is 616 m2 around one tree so centroid is within a few metres of the trunk; marked confirmed on that basis. Alive: lifecheck RECENT 2025-03-08. PHOTO: openly licensed photographs of this tree exist on Commons (category Tofferl-Eiche, Flanierer, CC BY-SA 4.0, 2025). Photo-or-pin: both. Out-of-town (7 km), not a walk from the other trees.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00198",
+        "url": null
+      }
     },
     {
       "id": "szb_017",
@@ -582,7 +640,8 @@
       "verified_sources": [
         "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00231, CC BY 4.0)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Hallein",
-        "https://commons.wikimedia.org/wiki/File:Bergahorn_beim_Schartenbauern_-_DSC04960.jpg"
+        "https://commons.wikimedia.org/wiki/File:Bergahorn_beim_Schartenbauern_-_DSC04960.jpg",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Stands in a farm meadow beside a waymarked hiking path (a yellow Wanderweg signpost stands next to the trunk in the 2025 photograph). The land belongs to the Schartenbauer farm; not checked whether the meadow itself may be entered, so view from the path.",
       "transport": "Thurnberg, Puch bei Hallein, about 10 km south-east of Salzburg old town; public transport and walking time not checked",
@@ -600,7 +659,11 @@
         "height": 4912
       },
       "photos": [],
-      "verify_notes": "Register only: Land Salzburg Naturdenkmal NDM00231 (Katastralgemeinde Thurnberg, plot 733), protected 1990-12-07. De.wikipedia list (Hallein district) quotes the monument text: height 25 m, crown 18-20 m, girth at breast height 4.20 m at time of survey, branching at 3 m, protected area 20 m radius around the trunk (plots 731/1, 729, 737). Wikidata Q133481867. No age. Pin: register centroid 47.717512,13.112974, list coordinate 47.717543,13.112956; Commons photographs 2025-03-22 (Flanierer, CC BY-SA 4.0, geotagged 6.5 m from the register point) show a single large maple with a hiking signpost at its foot, so the pin is on the trunk. Alive: lifecheck RECENT 2025-03-22; crown in 2025 photo is open, bare in March, trunk ivy-covered. PHOTO exists on Commons (category Bergahorn beim Schartenbauern, Puch bei Hallein, CC BY-SA 4.0). Photo-or-pin: both. Outlying, a rural stop, not a walk from the other Salzburg trees. Recognition (from the 2025 photo): single maple in sloping meadow, ivy on lower trunk, waymarker beside it, woodland behind."
+      "verify_notes": "Register only: Land Salzburg Naturdenkmal NDM00231 (Katastralgemeinde Thurnberg, plot 733), protected 1990-12-07. De.wikipedia list (Hallein district) quotes the monument text: height 25 m, crown 18-20 m, girth at breast height 4.20 m at time of survey, branching at 3 m, protected area 20 m radius around the trunk (plots 731/1, 729, 737). Wikidata Q133481867. No age. Pin: register centroid 47.717512,13.112974, list coordinate 47.717543,13.112956; Commons photographs 2025-03-22 (Flanierer, CC BY-SA 4.0, geotagged 6.5 m from the register point) show a single large maple with a hiking signpost at its foot, so the pin is on the trunk. Alive: lifecheck RECENT 2025-03-22; crown in 2025 photo is open, bare in March, trunk ivy-covered. PHOTO exists on Commons (category Bergahorn beim Schartenbauern, Puch bei Hallein, CC BY-SA 4.0). Photo-or-pin: both. Outlying, a rural stop, not a walk from the other Salzburg trees. Recognition (from the 2025 photo): single maple in sloping meadow, ivy on lower trunk, waymarker beside it, woodland behind.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00231",
+        "url": null
+      }
     },
     {
       "id": "szb_018",
@@ -618,7 +681,8 @@
       "verified_sources": [
         "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00100, CC BY 4.0)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Salzburg",
-        "https://commons.wikimedia.org/wiki/File:Linden_in_Freisaal_01.jpg"
+        "https://commons.wikimedia.org/wiki/File:Linden_in_Freisaal_01.jpg",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free. Stands beside a public footpath across an open meadow; no gate.",
       "transport": "Nonntal, about 1.5 km south of the old town; walk from Salzburg Hauptbahnhof or Akademiestraße bus stops not checked",
@@ -644,7 +708,11 @@
         "height": 682
       },
       "photos": [],
-      "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00100, protected 1972, area 1,191 m2. The register text (quoted on de.wikipedia list): four trees planted around 1810 along the Freisaalweg (leading from Akademiestraße to Schloss Freisaal) as symbolic protection around an old Marian wayside shrine (Marienbildstock). That is a documented planting date for these four trees themselves, not a bridge from the garden. Species is not stated in the register beyond 'Linden' (genus only; page should ask the reader). Not measured: no girth or height in the sources seen. Four separately sited trunks around ONE shrine: treated as one compact ensemble with one obvious place to stand (the shrine), pin = register centroid and Commons geotag (47.788880,13.055419, identical) which lands on the shrine. Commons photo Linden in Freisaal 01.jpg (Eweht, 2014-04-07, CC BY-SA 3.0 AT, geotagged at that point) shows four large bare-crowned limes around the shrine on a path in an open meadow with Hohensalzburg fortress on the hill behind. Alive: lifecheck RECENT, iNaturalist observation 2026-08-27 at the spot (https://www.inaturalist.org/observations/394935812; proves something was recorded there, not which trunk). Photo-or-pin: both. Same area as szb_010 (Hornbeam of Freisaalweg, about 380 m away): walkable pair. Earlier lead in leads/salzburg.json is superseded. Recognition: four limes around a small wayside shrine on the meadow path, the fortress visible behind."
+      "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00100, protected 1972, area 1,191 m2. The register text (quoted on de.wikipedia list): four trees planted around 1810 along the Freisaalweg (leading from Akademiestraße to Schloss Freisaal) as symbolic protection around an old Marian wayside shrine (Marienbildstock). That is a documented planting date for these four trees themselves, not a bridge from the garden. Species is not stated in the register beyond 'Linden' (genus only; page should ask the reader). Not measured: no girth or height in the sources seen. Four separately sited trunks around ONE shrine: treated as one compact ensemble with one obvious place to stand (the shrine), pin = register centroid and Commons geotag (47.788880,13.055419, identical) which lands on the shrine. Commons photo Linden in Freisaal 01.jpg (Eweht, 2014-04-07, CC BY-SA 3.0 AT, geotagged at that point) shows four large bare-crowned limes around the shrine on a path in an open meadow with Hohensalzburg fortress on the hill behind. Alive: lifecheck RECENT, iNaturalist observation 2026-08-27 at the spot (https://www.inaturalist.org/observations/394935812; proves something was recorded there, not which trunk). Photo-or-pin: both. Same area as szb_010 (Hornbeam of Freisaalweg, about 380 m away): walkable pair. Earlier lead in leads/salzburg.json is superseded. Recognition: four limes around a small wayside shrine on the meadow path, the fortress visible behind.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00100",
+        "url": null
+      }
     },
     {
       "id": "szb_019",
@@ -666,7 +734,8 @@
         "https://de.wikipedia.org/wiki/Dorflinde_in_Faistenau",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Salzburg-Umgebung",
         "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Linde_in_Faistenau001.jpg",
-        "https://www.salzburgerland.com/de/magazin/der-jedermann-in-faistenau"
+        "https://www.salzburgerland.com/de/magazin/der-jedermann-in-faistenau",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Free. Stands in the middle of the public village square; the hollow trunk is described as walkable (de.wikipedia), but whether it is open to enter today was not established.",
       "transport": "Faistenau is about 14 km east of Salzburg; regional bus from Salzburg Hauptbahnhof, roughly 40 minutes (timetable not verified). Beyond the 30-minute day-trip line: say so on the page.",
@@ -692,7 +761,11 @@
         "width": 1263,
         "height": 1140
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00020",
+        "url": null
+      }
     },
     {
       "id": "szb_020",
@@ -709,7 +782,8 @@
         "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19 (Naturdenkmal NDM00199, protected 1985-11-27, area 201 m2, CC BY 4.0)",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Salzburg-Umgebung",
         "https://commons.wikimedia.org/wiki/File:Gschirnlinde_-_DSC05057.jpg",
-        "https://commons.wikimedia.org/wiki/File:Linde_bei_Eugendorf.jpg"
+        "https://commons.wikimedia.org/wiki/File:Linde_bei_Eugendorf.jpg",
+        "https://service.salzburg.gv.at/arcgis/rest/services/OGD/OGD_Natur_Land_Salzburg/MapServer/19"
       ],
       "access": "Visible from a farm track that runs past the meadow in the Commons photograph; the tree itself stands in a farm meadow beside a Gasthof. Whether the meadow may be crossed was not established, so say: view from the track, do not assume you can walk onto the grass.",
       "transport": "Eugendorf is about 12 km north-east of Salzburg; regional bus from Salzburg Hauptbahnhof, roughly 25 to 30 minutes (timetable not verified); then a short walk to the Gschirrnwirt.",
@@ -726,7 +800,11 @@
         "width": 3264,
         "height": 4912
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Salzburg, Naturschutzgesetz 1999), no. NDM00199",
+        "url": null
+      }
     },
     {
       "id": "szb_021",
