@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-11 (continuation 2) - Bruges enrichment
+
+All four Bruges trees got their Inventaris Onroerend Erfgoed record (id.erfgoed.net 302182, 131537, 305834, 305832) with girth and height; note the inventory measures girth at 150 cm, recorded as such in measure_source. Seasons left empty (species files have no striking moment). Preflight 0 problems. Next in line: `enrich.py --brief delft`.
+
 ## 2026-10-11 (continuation, ~33 min left) - Brno checked, nothing to add
 
 Brno's open gaps were plane-tree seasons (data/phenology/london-plane.json has no striking moment) plus one register gap on the Bystrc lime; recorded as dead ends with `enrich.py --done`, claim released. The 16 READY leads were left unwritten: a new tree must be rich (preflight refuses the rest), and none of them is. Next in line: `enrich.py --brief bruges`. Untouched backup work: scout the Cambridge register, translate amersfoort (nl).
