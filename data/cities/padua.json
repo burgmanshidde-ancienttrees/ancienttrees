@@ -85,9 +85,11 @@
       "verified_sources": [
         "https://ilregistrodeglialberi.it/3247-platano-orientale-dellorto-botanico-platano-orientale-padova-pd-veneto",
         "Independent corroboration via web search of Italian travel/garden-history sources describing the same tree, planted 1680, hollow trunk from a lightning strike, still living (searched 2026-08-06; multiple independent Italian tourism/garden pages, titles not individually re-verified against RAMI age math but agreeing on the 1680 planting date and lightning-hollowed trunk)",
-        "https://ortobotanico1545.it/en/visit/tickets/"
+        "https://ortobotanico1545.it/en/visit/tickets/",
+        "https://ortobotanico1545.it/en/visit/visiting-times/",
+        "https://ilregistrodeglialberi.it/3247-platano-orientale-dellorto-botanico-platano-orientale-padova-pd-veneto (RAMI field measurement, 14/10/2021)"
       ],
-      "access": "Inside the Orto Botanico, paid entry: full ticket 15 euro (12 euro November to February), reduced tickets from 6 euro. Open Tuesday to Sunday and public holidays 10:00 to 18:00, last entry 17:15, closed on working Mondays.",
+      "access": "Inside the Orto Botanico (UNESCO site), paid entry: full ticket 15 euro (12 euro November to February), reduced from 6 euro. Open Tuesday to Sunday and public holidays, 10:00 to 19:00 April to September, 10:00 to 18:00 in October, 10:00 to 17:00 November to February; closed on working Mondays. Hours change by season and holiday, check the garden's visiting-times page.",
       "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -178,9 +180,11 @@
       },
       "verified_sources": [
         "https://ilregistrodeglialberi.it/3252-magnolia-padova-pd-veneto",
-        "Independent corroboration via web search of Italian garden-history sources citing the same 1786 planting date and describing it as among the oldest Magnolia grandiflora specimens in Europe (searched 2026-08-06)"
+        "Independent corroboration via web search of Italian garden-history sources citing the same 1786 planting date and describing it as among the oldest Magnolia grandiflora specimens in Europe (searched 2026-08-06)",
+        "https://ortobotanico1545.it/en/visit/visiting-times/",
+        "https://ilregistrodeglialberi.it/3252-magnolia-padova-pd-veneto (RAMI, 2.54 m at 1.30 m, 25/07/2026)"
       ],
-      "access": "Paid entry (Orto Botanico admission ticket required)",
+      "access": "Inside the Orto Botanico (UNESCO site), paid entry: full ticket 15 euro (12 euro November to February), reduced from 6 euro. Open Tuesday to Sunday and public holidays, 10:00 to 19:00 April to September, 10:00 to 18:00 in October, 10:00 to 17:00 November to February; closed on working Mondays. Hours change by season and holiday, check the garden's visiting-times page.",
       "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -191,7 +195,8 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its wide evergreen crown, about 13 metres across, with huge cream flowers opening a few at a time. It stands in the Orto Botanico, not the Basilica's magnolia 300 metres away."
+      "how_to_recognise": "You can recognise it by its wide evergreen crown, about 13 metres across, with huge cream flowers opening a few at a time. It stands in the Orto Botanico, not the Basilica's magnolia 300 metres away.",
+      "girth_cm": 254
     },
     {
       "id": "pad_005",
@@ -269,7 +274,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its great height, about 48 metres, and trunk over 6 metres round, the largest of three protected trees within 60 metres of each other. It stands in Parco Treves de' Bonfili."
+      "how_to_recognise": "You can recognise it by its great height, about 48 metres, and trunk over 6 metres round, the largest of three protected trees within 60 metres of each other. It stands in Parco Treves de' Bonfili.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/G224/PD/05",
+        "url": null
+      },
+      "girth_cm": 616,
+      "height_m": 48
     },
     {
       "id": "pad_007",
@@ -299,7 +310,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its trunk, just over 5 metres round, smaller than its neighbour the great plane about 60 metres away. It stands in Parco Treves de' Bonfili."
+      "how_to_recognise": "You can recognise it by its trunk, just over 5 metres round, smaller than its neighbour the great plane about 60 metres away. It stands in Parco Treves de' Bonfili.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/G224/PD/05",
+        "url": null
+      },
+      "girth_cm": 503,
+      "height_m": 35
     },
     {
       "id": "pad_008",
@@ -340,7 +357,11 @@
       "height_m": 9.0,
       "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 155,
-      "how_to_recognise": "You can recognise it by its low, leaning trunk and limbs spreading sideways over the grass instead of rising upright. It stands in Parco Treves de' Bonfili, easy to walk straight past."
+      "how_to_recognise": "You can recognise it by its low, leaning trunk and limbs spreading sideways over the grass instead of rising upright. It stands in Parco Treves de' Bonfili, easy to walk straight past.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 04/G224/PD/05",
+        "url": null
+      }
     },
     {
       "id": "pad_009",
@@ -365,7 +386,8 @@
       },
       "verified_sources": [
         "https://ilregistrodeglialberi.it/14318-sofora-del-giappone-di-corte-capitaniato-n-1-sofora-del-giappone-padova-pd-veneto",
-        "https://unalberoalgiorno.blog/2018/05/13/le-sofore-di-piazza-capitaniato/ and padovaoggi.it local history coverage of Piazza Capitaniato (via web search 2026-08-06), independently dating the square's Sophora japonica trees to 1861"
+        "https://unalberoalgiorno.blog/2018/05/13/le-sofore-di-piazza-capitaniato/ and padovaoggi.it local history coverage of Piazza Capitaniato (via web search 2026-08-06), independently dating the square's Sophora japonica trees to 1861",
+        "https://ilregistrodeglialberi.it/14318-sofora-del-giappone-di-corte-capitaniato-n-1-sofora-del-giappone-padova-pd-veneto (RAMI, 4.60 m, 16/02/2022)"
       ],
       "access": "Free, open public square",
       "transport": "~1.1 km / roughly 17 min walk from Padova railway station; nearest bus/tram stop not verified",
@@ -377,7 +399,8 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them by the pair of trees standing about 20 metres apart, the larger 4.6 metres round, flowering cream in August. They stand in Piazza Capitaniato."
+      "how_to_recognise": "You can recognise them by the pair of trees standing about 20 metres apart, the larger 4.6 metres round, flowering cream in August. They stand in Piazza Capitaniato.",
+      "girth_cm": 460
     },
     {
       "id": "pad_010",
@@ -396,9 +419,11 @@
       "verified_sources": [
         "https://ilregistrodeglialberi.it/3250-cedro-dellhimalaya-padova-pd-veneto (RAMI, Registro degli Alberi Monumentali Italiani, girth approx 4.2-4.5m, health rated Pessima)",
         "https://ortobotanico1545.it/scopri/i-luoghi/arboreto/ (Orto Botanico di Padova's own site, confirms first Cedrus deodara introduced to Italy in 1828, location in the eastern Arboretum near Porta Est)",
-        "https://m.facebook.com/ortobotanicopd/ (Orto Botanico's own account, planted 1828 between the Montagnola and the Fontana delle Quattro Stagioni)"
+        "https://m.facebook.com/ortobotanicopd/ (Orto Botanico's own account, planted 1828 between the Montagnola and the Fontana delle Quattro Stagioni)",
+        "https://ortobotanico1545.it/en/visit/visiting-times/",
+        "https://ilregistrodeglialberi.it/3250-cedro-dellhimalaya-padova-pd-veneto (RAMI, 4.19 m, 25/07/2026; earlier approx 4.50 m, 2023)"
       ],
-      "access": "Paid entry (Orto Botanico admission ticket required)",
+      "access": "Inside the Orto Botanico (UNESCO site), paid entry: full ticket 15 euro (12 euro November to February), reduced from 6 euro. Open Tuesday to Sunday and public holidays, 10:00 to 19:00 April to September, 10:00 to 18:00 in October, 10:00 to 17:00 November to February; closed on working Mondays. Hours change by season and holiday, check the garden's visiting-times page.",
       "transport": "About 1.9km, 25-30 minutes on foot, from Padova railway station",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -410,7 +435,8 @@
       },
       "notes": "Health flagged 'Pessima' (poor) by RAMI, the register's own vitality field, so the story says this plainly rather than hiding it; not the same as dead, and the garden's own current materials still describe and locate it as a standing feature. Shipped 2026-08-15 to close Padua to its 10-tree target, from a lead an earlier pass had already identified as near-zero-cost (same Orto Botanico cluster as pad_001-004) but held back specifically for this health flag.",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its conifer form among the garden's cedars, about 4.5 metres round, standing between the Montagnola hill and the Fontana delle Quattro Stagioni. It stands in the Orto Botanico di Padova."
+      "how_to_recognise": "You can recognise it by its conifer form among the garden's cedars, about 4.5 metres round, standing between the Montagnola hill and the Fontana delle Quattro Stagioni. It stands in the Orto Botanico di Padova.",
+      "girth_cm": 419
     },
     {
       "id": "pad_011",
@@ -429,9 +455,11 @@
       },
       "verified_sources": [
         "https://ilregistrodeglialberi.it/3249-criptomeria-padova-pd-veneto",
-        "https://unalberoalgiorno.blog/2020/01/11/cryptomeria-japonica/"
+        "https://unalberoalgiorno.blog/2020/01/11/cryptomeria-japonica/",
+        "https://ortobotanico1545.it/en/visit/visiting-times/",
+        "https://ilregistrodeglialberi.it/3249-criptomeria-padova-pd-veneto (RAMI, approx 15 m, 25/07/2026)"
       ],
-      "access": "Paid entry (Orto Botanico admission ticket required)",
+      "access": "Inside the Orto Botanico (UNESCO site), paid entry: full ticket 15 euro (12 euro November to February), reduced from 6 euro. Open Tuesday to Sunday and public holidays, 10:00 to 19:00 April to September, 10:00 to 18:00 in October, 10:00 to 17:00 November to February; closed on working Mondays. Hours change by season and holiday, check the garden's visiting-times page.",
       "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -461,9 +489,11 @@
         "neighbourhood": "Orto Botanico (arboretum section)"
       },
       "verified_sources": [
-        "https://ilregistrodeglialberi.it/14476-ginko-dellorto-botanico-n-2-padova-pd-veneto"
+        "https://ilregistrodeglialberi.it/14476-ginko-dellorto-botanico-n-2-padova-pd-veneto",
+        "https://ortobotanico1545.it/en/visit/visiting-times/",
+        "https://ilregistrodeglialberi.it/14476-ginko-dellorto-botanico-n-2-padova-pd-veneto (RAMI, approx 3.00 m 25/07/2026; 17 m 09/07/2022)"
       ],
-      "access": "Paid entry (Orto Botanico admission ticket required)",
+      "access": "Inside the Orto Botanico (UNESCO site), paid entry: full ticket 15 euro (12 euro November to February), reduced from 6 euro. Open Tuesday to Sunday and public holidays, 10:00 to 19:00 April to September, 10:00 to 18:00 in October, 10:00 to 17:00 November to February; closed on working Mondays. Hours change by season and holiday, check the garden's visiting-times page.",
       "transport": "~1.9 km / roughly 25-30 min walk from Padova railway station; nearest bus/tram stop not verified",
       "location_precision": "confirmed",
       "curation_status": "flagged",
