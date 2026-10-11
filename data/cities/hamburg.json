@@ -143,7 +143,14 @@
         "status": "missing"
       },
       "story": "Ask how thick this beech is and you get three answers, all of them correct. Taped at waist height in November 2018 it came to 7.21 metres, a figure the citywide tree list and the independent register at baumkunde.de match to the centimetre. Measured again on 31 July 2025 it gave 7.32 metres across the buttresses at the base and 6.92 metres a metre higher up. The trunk is swollen, buttressed and covered in the raised tissue an old tree grows over its own wounds, so where you put the tape decides the number.\n\nNobody recorded when it was planted. The estimate from its girth is 1870 with twenty years either way, so roughly 135 to 175 years, which is a band rather than a date and is stated here as one.\n\nIt stands on the open lawn between the Alsterufer and Klein Fontenay, on the promenade along the Aussenalster, with grass and a footpath between it and the water. What the 2025 re-measurement really records is that somebody is still checking on it: this beech is monitored, healthy, and free to walk up to at any hour.",
-      "how_to_recognise": "The big beech standing alone on the lawn between Alsterufer and Klein Fontenay, its base swollen and buttressed where it meets the grass. Dark purple leaves in season."
+      "how_to_recognise": "The big beech standing alone on the lawn between Alsterufer and Klein Fontenay, its base swollen and buttressed where it meets the grass. Dark purple leaves in season.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the purple leaves turn copper before they fall",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "hbg_005",
@@ -185,7 +192,8 @@
         ],
         "kind": "flowers",
         "label": "August and September, when it hangs cream flowers over the water and almost nothing else is flowering"
-      }
+      },
+      "height_m": 20
     },
     {
       "id": "hbg_006",
@@ -244,9 +252,10 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_markanter_und_alter_Baumexemplare_in_Hamburg",
-        "https://www.baumkunde.de/baumregister/3064-platane_in_planten_und_blomen/"
+        "https://www.baumkunde.de/baumregister/3064-platane_in_planten_und_blomen/",
+        "https://plantenunblomen.hamburg.de/park-service/oeffnungszeiten-artikel-622236"
       ],
-      "access": "Free, public park (Planten un Blomen), open daily during park hours.",
+      "access": "Free, no ticket. Planten un Blomen is open daily all year, public holidays included. The Old Botanical Garden section is open 7-20 h January to March, 7-22 h in April, 7-23 h May to September, 7-20 h October to December.",
       "transport": "U-Bahn Stephansplatz or Messehallen; short walk within Planten un Blomen",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
