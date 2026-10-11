@@ -2,9 +2,9 @@
   "city": "Alkmaar",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Alkmaar built its city walls and bastions in 1565 and, unlike almost every other Dutch town, did not flatten them. In 1870 the garden architect Louis Paul Zocher turned the surviving earthworks into a landscape park, so five of the twelve trees here still stand on that rampart, including the thickest lime of the lot and a yew moved here by crane in 2018. Two more grow in the Alkmaarderhout, the city's old wood laid out from 1607, and three elms stand together against the wall of the Grote Kerk.",
-  "meta_description": "Twelve remarkable trees in Alkmaar: five on bastions built in 1565, a yew moved by crane in 2018, and a plane in a wood planted from 1607.",
-  "question_meta": "Alkmaar's oldest tree is a white willow in the polder at Grootschermer, banded 1800 to 1850. Where it stands, and eleven more worth the walk.",
+  "intro": "Alkmaar built its city walls and bastions in 1565 and, unlike almost every other Dutch town, did not flatten them. In 1870 the garden architect Louis Paul Zocher turned the surviving earthworks into a landscape park, so four of the eleven trees here still stand on that rampart, including the thickest lime of the lot and a yew moved here by crane in 2018. Two more grow in the Alkmaarderhout, the city's old wood laid out from 1607, and three elms stand together against the wall of the Grote Kerk.",
+  "meta_description": "Eleven remarkable trees in Alkmaar: four on bastions built in 1565, a yew moved by crane in 2018, and a plane in a wood planted from 1607.",
+  "question_meta": "Alkmaar's oldest tree is a white willow in the polder at Grootschermer, banded 1800 to 1850. Where it stands, and ten more worth the walk.",
   "question_answer": "The oldest tree recorded in Alkmaar is a white willow standing in the Veenbos in an old polder at Grootschermer, which the national register places in a wide planting band of 1800 to 1850, so somewhere between about 175 and 225 years old. Within the city itself the oldest is a plane in the Alkmaarderhout, banded 1850 to 1860. There used to be a better answer than either: a beech in the Alkmaarderhout that had grown to almost seven metres round, originally three shoots planted together and possibly dating from the first half of the nineteenth century, when a tree nursery stood on that spot. It came down in the Poly storm in the summer of 2023 and about four metres of trunk is still standing.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, and two of the bands on this page are fifty years wide rather than ten. The register is the 2024 edition and is the single source throughout, so everything here is flagged. It is also a register that goes out of date: the Alkmaarderhout beech described in the answer above is still listed in it and has been gone since 2023, and we found that out one sentence before publishing it as this city's oldest tree. Treat every age here as a claim from a good official source rather than as a measurement, and tell us if a tree is not where this page says it is. The willow at Grootschermer is the one to read carefully: its band is fifty years wide, and a pollarded willow's age is really a record of how often somebody came back to cut it rather than of a planting. Where a pin is marked approximate we know the bastion, the wood or the polder and not the exact trunk, which matters most out at the Veenbos, where there is no landmark to steer by.",
   "hero_tree_id": "alk_001",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All fourteen. The bastions, the Alkmaarderhout, the Kerkplein, the Geestersingel roundabout and the Victoriepark are open public ground, the willow stands in open polder at Grootschermer, and the plane at De Rijp is in the garden of a museum."
+      "a": "All eleven. The bastions, the Alkmaarderhout, the Kerkplein, the Geestersingel roundabout and the Victoriepark are open public ground, the willow stands in open polder at Grootschermer, and the plane at De Rijp is in the garden of a museum."
     }
   ],
   "trees": [
@@ -142,35 +142,6 @@
       "girth_cm": 572
     },
     {
-      "id": "alk_004",
-      "name": "The Elm of the Munnikenbolwerk",
-      "species": "Dutch Elm (Ulmus x hollandica)",
-      "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
-      "age_min": 136,
-      "age_max": 146,
-      "location": {
-        "address": "Munnikenbolwerk, behind the cultural centre De Vest",
-        "latitude": 52.63424,
-        "longitude": 4.74336,
-        "neighbourhood": "Bolwerk"
-      },
-      "story": "Any old elm in the Netherlands is a survivor, and this one has had about a century and a half of chances to die.\n\nDutch elm disease is named after the Dutch scientists who identified the fungus in the 1920s, not after the country's elms, though those suffered as badly as any. The first wave killed a great many trees between the wars. The second strain, far more aggressive, arrived in the 1970s and took most of what was left, emptying avenues across the whole country in a decade. It spreads through bark beetles and through root grafts between neighbouring trees, which is why lines of elms died in sequence and isolated ones sometimes did not.\n\nStanding alone on a bastion behind a cultural centre is, in that light, a good address.\n\nIt was planted between 1880 and 1890 on the Munnikenbolwerk, one of the 1565 works that Zocher turned into park in 1870.\n\nThe leaf tells you: distinctly lopsided at the base, one side starting lower on the stalk than the other. And elms come into leaf late and hold on late, so this is often the last green thing on the bastion in November.",
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/"
-      ],
-      "access": "Free. Public park on the old bastions, open at any time.",
-      "transport": "About 1 km north of Alkmaar station, behind De Vest.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "how_to_recognise": "Leaves noticeably lopsided at the base. On the bastion behind the cultural centre.",
-      "curation_status": "flagged",
-      "location_precision": "confirmed"
-    },
-    {
       "id": "alk_005",
       "name": "The Plane of the Clarissenbolwerk",
       "species": "London Plane (Platanus x acerifolia)",
@@ -265,9 +236,10 @@
       "story": "De Rijp was a whaling and herring town on an island in a lake, and it got rich enough that the merchants' warehouses still stand.\n\nThis plane grows in the garden of the museum of Jan Boon junior, the last of a family of shipowners and traders. The museum occupies the Walhuis, a former warehouse of 1725, which stands behind what was Jan Boon's house. A merchant family, a warehouse, a house, a garden, and then nobody left to inherit any of it, which is how a private house becomes a museum.\n\nThe tree is later than the buildings, banded 1880 to 1890, so it belongs to the last generation of the family rather than to the trading years.\n\nA plane in a small town garden grows differently from one on a boulevard. There is no competition and no pruning regime, so it spreads rather than reaching, and after a century and a half it tends to be far too large for the plot, which is exactly the effect worth going for.\n\nDe Rijp itself is worth the trip regardless. Wooden houses, a seventeenth century town hall, and a street pattern that has not moved.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697111&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697111&outFields=*&f=json",
+        "https://www.museumjanboon.nl/museum.html"
       ],
-      "access": "Free from the street; the garden belongs to the museum, so opening hours apply if you want to stand under it.",
+      "access": "Free from the street; the tree stands in the museum garden, reached by walking past the Maatschappij tot bevordering van Nijverheid building. The museum states free entry (\"gratis entree\"); opening times are listed on its agenda page at museumjanboon.nl, so check before you go.",
       "transport": "About 12 km southeast of Alkmaar, in the old centre of De Rijp.",
       "photo": {
         "url": null,
@@ -318,7 +290,9 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692732",
         "url": null
-      }
+      },
+      "girth_cm": 351,
+      "height_m": 25
     },
     {
       "id": "alk_010",
@@ -389,8 +363,8 @@
       "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
-      "story": "This plane arrived half a century late for its own park.\n\nThe Munnikenbolwerk is one of the bastions Alkmaar threw up in 1565 and stopped needing long before Zocher turned the whole belt into a landscape park in 1870. The register is blunt about where this tree sits in that sequence: its planting is dated some fifty years after the design was finished, and the city's 2017 list of monumental trees bands it between 1920 and 1930. So it is not one of the founding trees. It was put in by people who inherited somebody else's park and decided it needed another plane.\n\nThey chose well, which you can tell from the fact that it is still here a century later and that the building behind it has changed use more than once. It now stands behind the art lending library on Achter de Vest, about fifty metres from the old elm on the same bastion, which makes the pair a two minute walk.\n\nOne warning, because it catches people out. Alkmaar has a second monumental London plane on the same rampart belt, roughly 200 metres away over the water near Zevenhuizen 23, and that one is a generation older. Two planes, one rampart. This is the inland one, behind the building.\n\nThe city's list calls the species Platanus x hispanica and the register calls it Platanus x acerifolia. Same hybrid, different naming habit.",
-      "how_to_recognise": "You can recognise it by bark flaking off in cream and olive patches and by hard spiky seed balls hanging on through winter. It stands on the Munnikenbolwerk behind the art lending library, about fifty metres from the bastion's old elm.",
+      "story": "This plane arrived half a century late for its own park.\n\nThe Munnikenbolwerk is one of the bastions Alkmaar threw up in 1565 and stopped needing long before Zocher turned the whole belt into a landscape park in 1870. The register is blunt about where this tree sits in that sequence: its planting is dated some fifty years after the design was finished, and the city's 2017 list of monumental trees bands it between 1920 and 1930. So it is not one of the founding trees. It was put in by people who inherited somebody else's park and decided it needed another plane.\n\nThey chose well, which you can tell from the fact that it is still here a century later and that the building behind it has changed use more than once. It now stands behind the art lending library on Achter de Vest, in the bastion's wooded corner.\n\nOne warning, because it catches people out. Alkmaar has a second monumental London plane on the same rampart belt, roughly 200 metres away over the water near Zevenhuizen 23, and that one is a generation older. Two planes, one rampart. This is the inland one, behind the building.\n\nThe city's list calls the species Platanus x hispanica and the register calls it Platanus x acerifolia. Same hybrid, different naming habit.",
+      "how_to_recognise": "You can recognise it by bark flaking off in cream and olive patches and by hard spiky seed balls hanging on through winter. It stands on the Munnikenbolwerk behind the art lending library.",
       "photo": {
         "url": null,
         "license": null,
@@ -425,7 +399,7 @@
       "transport": "Central Alkmaar, short walk from Alkmaar Centraal station",
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "story": "The national register files this tree in the bucket marked ordinary Dutch elm. The heading on its own entry in that same register says Pluimiep, plume elm, which is not the same thing at all.\n\nThe city's 2017 list of monumental trees settles the question by being specific: Ulmus glabra 'Exoniensis', the Exeter Elm, a cultivar of wych elm that grows narrow and upright with a crowded, congested crown instead of the wide vase most elms make. The Dutch name is a description of that shape. Both lists give the same address and the same planting decade, 1890 to 1900, so this is one tree carrying two names rather than two trees. We have gone with the more specific one, and you should know that the sources disagree.\n\nThey disagree on the date too, mildly. The register's history note guesses the tree belongs to the founding period of the park, when Zocher converted Alkmaar's 1565 ramparts into a landscape in 1870, while the planting band in the same file points two decades later. Nobody wrote it down at the time.\n\nWhat is not in doubt is the survival. A hundred and thirty years is an extraordinary innings for any elm in the Netherlands, and this one has stood the whole time on the rampart behind the cultural centre, about seventy metres from the bastion's other old elm.",
+      "story": "The national register files this tree in the bucket marked ordinary Dutch elm. The heading on its own entry in that same register says Pluimiep, plume elm, which is not the same thing at all.\n\nThe city's 2017 list of monumental trees settles the question by being specific: Ulmus glabra 'Exoniensis', the Exeter Elm, a cultivar of wych elm that grows narrow and upright with a crowded, congested crown instead of the wide vase most elms make. The Dutch name is a description of that shape. Both lists give the same address and the same planting decade, 1890 to 1900, so this is one tree carrying two names rather than two trees. We have gone with the more specific one, and you should know that the sources disagree.\n\nThey disagree on the date too, mildly. The register's history note guesses the tree belongs to the founding period of the park, when Zocher converted Alkmaar's 1565 ramparts into a landscape in 1870, while the planting band in the same file points two decades later. Nobody wrote it down at the time.\n\nWhat is not in doubt is the survival. A hundred and thirty years is an extraordinary innings for any elm in the Netherlands, and this one has stood the whole time on the rampart behind the cultural centre.",
       "how_to_recognise": "You can recognise it by the narrow upright crown, more column than dome, and by leaves lopsided where the blade meets the stalk. It stands in the rampart park behind cultural centre De Vest, opposite Molenbuurt 25.",
       "photo": {
         "url": null,

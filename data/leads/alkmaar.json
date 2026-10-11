@@ -93,6 +93,37 @@
    },
    "removed": "2026-10-10",
    "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1689039 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"In het park op kruispuntje van wandelpaden.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "alk_004",
+   "name": "The Elm of the Munnikenbolwerk",
+   "species": "Dutch Elm (Ulmus x hollandica)",
+   "age_estimate": "roughly 135 to 145 years, from the register's planting band of 1880 to 1890",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Munnikenbolwerk, behind the cultural centre De Vest",
+    "latitude": 52.63424,
+    "longitude": 4.74336,
+    "neighbourhood": "Bolwerk"
+   },
+   "story": "Any old elm in the Netherlands is a survivor, and this one has had about a century and a half of chances to die.\n\nDutch elm disease is named after the Dutch scientists who identified the fungus in the 1920s, not after the country's elms, though those suffered as badly as any. The first wave killed a great many trees between the wars. The second strain, far more aggressive, arrived in the 1970s and took most of what was left, emptying avenues across the whole country in a decade. It spreads through bark beetles and through root grafts between neighbouring trees, which is why lines of elms died in sequence and isolated ones sometimes did not.\n\nStanding alone on a bastion behind a cultural centre is, in that light, a good address.\n\nIt was planted between 1880 and 1890 on the Munnikenbolwerk, one of the 1565 works that Zocher turned into park in 1870.\n\nThe leaf tells you: distinctly lopsided at the base, one side starting lower on the stalk than the other. And elms come into leaf late and hold on late, so this is often the last green thing on the bastion in November.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park on the old bastions, open at any time.",
+   "transport": "About 1 km north of Alkmaar station, behind De Vest.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "Leaves noticeably lopsided at the base. On the bastion behind the cultural centre.",
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-11",
+   "removed_reason": "Landelijk Register Monumentale Bomen nr 1691013 (the Munnikenbolwerk elm, thickest Dutch elm) is status 5, Dood/geveld; last observed 2015"
   }
  ],
  "blocked": [
