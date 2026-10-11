@@ -2,11 +2,11 @@
   "city": "Den Bosch",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Den Bosch grew most of its oldest trees on top of its own dismantled defences, but its actual oldest tree stands somewhere else entirely. A 19th-century law stripped the city's fortress walls of military status, and the bastions became parks almost overnight, feeding three of the city's four clusters. The fourth is a lime tree in Rosmalen, roughly 250 years old, growing on the mound of a convent burned down in 1584. Twelve verified entries in all, from a cherry rooted in the medieval wall to that lime on its vanished convent.",
-  "meta_description": "Den Bosch's oldest tree is a ~250-year-old lime on a vanished convent's mound in Rosmalen. Twelve verified entries, real stories, how to reach each.",
+  "intro": "Den Bosch grew most of its oldest trees on top of its own dismantled defences, but its actual oldest tree stands somewhere else entirely. A 19th-century law stripped the city's fortress walls of military status, and the bastions became parks almost overnight, feeding three of the city's four clusters. The fourth is a lime tree in Rosmalen, roughly 250 years old, growing on the mound of a convent burned down in 1584. Eleven verified entries in all, from a cherry rooted in the medieval wall to that lime on its vanished convent.",
+  "meta_description": "Den Bosch's oldest tree is a ~250-year-old lime on a vanished convent's mound in Rosmalen. Eleven verified entries, real stories, how to reach each.",
   "question_answer": "Den Bosch's oldest tree is the Annenborch Lime, standing on a small mound in the Overlaet district of Rosmalen, the only visible remnant of the Annenborch, a house of Augustinian canonesses burned down in 1584. The tree itself came later, planted on the mound somewhere between 1750 and 1800, which puts it at roughly 250 years old.",
-  "question_meta": "Den Bosch's oldest tree is a ~250-year-old lime in Rosmalen, on a convent mound burned in 1584. Where it stands, and eleven more worth the walk.",
-  "question_context": "The lime's age comes from a planting band of 1750 to 1800 recorded by bomenbieb.nl and from local accounts that it survived the severe storm of 1767; the two sit awkwardly together, since a tree planted as late as 1800 could not have lived through a storm in 1767, and nobody has reconciled the two figures. It stands on the low mound that is the only trace of the Annenborch, a house of Augustinian canonesses founded in 1503 and burned down in 1584 and never rebuilt, now inside the Overlaet housing estate in Rosmalen, a district that has been part of 's-Hertogenbosch since 1996. It overtakes the previous answer, a roughly 170-year-old London plane at Sint Janskerkhof, which anchors a separate cluster of five trees a few streets from the cathedral. Eleven more trees stand near the historic centre, across the bastion parks and the star-shaped Pettelaarse Schans fort; the Annenborch Lime stands alone in Rosmalen, a short bus ride south-east.",
+  "question_meta": "Den Bosch's oldest tree is a ~250-year-old lime in Rosmalen, on a convent mound burned in 1584. Where it stands, and ten more worth the walk.",
+  "question_context": "The lime's age comes from a planting band of 1750 to 1800 recorded by bomenbieb.nl and from local accounts that it survived the severe storm of 1767; the two sit awkwardly together, since a tree planted as late as 1800 could not have lived through a storm in 1767, and nobody has reconciled the two figures. It stands on the low mound that is the only trace of the Annenborch, a house of Augustinian canonesses founded in 1503 and burned down in 1584 and never rebuilt, now inside the Overlaet housing estate in Rosmalen, a district that has been part of 's-Hertogenbosch since 1996. It overtakes the previous answer, a roughly 170-year-old London plane at Sint Janskerkhof, which anchors a separate cluster of five trees a few streets from the cathedral. Ten more trees stand near the historic centre, across the bastion parks and the star-shaped Pettelaarse Schans fort; the Annenborch Lime stands alone in Rosmalen, a short bus ride south-east.",
   "faq": [
     {
       "q": "What is the oldest tree in Den Bosch?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Den Bosch's ancient trees free to visit?",
-      "a": "Yes, all twelve stand in public parks, on a public street or on open community ground, with free access at any time."
+      "a": "Yes, all eleven stand in public parks, on a public street or on open community ground, with free access at any time."
     },
     {
       "q": "Why do Den Bosch's oldest trees grow on old fortress walls?",
@@ -165,7 +165,8 @@
       },
       "story": "At 33 metres, the balsam poplar in Zuiderpark is one of the tallest individually recorded trees in the municipal register covering all of Den Bosch, taller than most of the city's church spires. It predates the park around it by decades: Zuiderpark itself only opened in 1958, and gained a deliberately planted circle of ornamental poplars during a 1993-1999 redesign, but this specific tree, at roughly 90 years old on the register's own count, was already growing here before either the park or its poplar circle existed, a survivor from whatever stood on the site before, rather than a member of the later planting. Balsam poplar is grown more for its resin-scented spring buds than for ornament, the smell carrying across a park on a warm day before anyone spots the tree responsible. No second source beyond the register documents this specific poplar's history, an honest gap rather than a missing footnote, but its height and girth are themselves a verifiable record, not a claim resting on memory or estimate.",
       "verified_sources": [
-        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10"
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10",
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (G-1058, Populus balsamifera, STAMOMTREK 408, HOOGTE 33, 8 m from our pin)"
       ],
       "access": "Free, public park",
       "transport": "'s-Hertogenbosch railway station, then about a 20-minute walk or short bus ride",
@@ -178,7 +179,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "In the tree line along the park's eastern edge, nearest the houses. Not one of the ornamental poplars in the ring out on the open lawn."
+      "how_to_recognise": "In the tree line along the park's eastern edge, nearest the houses. Not one of the ornamental poplars in the ring out on the open lawn.",
+      "official_register": {
+        "name": "Monumentale bomen (Gemeente 's-Hertogenbosch), no. G-1058",
+        "url": null
+      },
+      "girth_cm": 408,
+      "height_m": 33
     },
     {
       "id": "dbo_005",
@@ -197,7 +204,8 @@
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0693, live-queried this pass: girth 612cm, age 170, height 20m, vitality Verminderd)",
         "https://www.bossche-encyclopedie.nl/overig/natuurgebieden/casinotuin.htm and boomenbosch.nl (Boom en Bosch) coverage citing a 1996 survey naming plane trees among Den Bosch's oldest, concentrated on Bastion Oranje and around the Casinotuin/Sint Jan area, corroborating the species and area but not this individual tree by name",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697223&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697223&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697223&outFields=*&f=json (nr 1697223, 'Plataan Sint-Jan', status 3, stamomtrek 640, hoogte 23, last observed 2025; multi-stemmed; municipal G-0693 gives 612 cm)"
       ],
       "access": "Free, public square beside the Sint-Jan cathedral",
       "transport": "'s-Hertogenbosch railway station, then about a 14-minute walk",
@@ -216,36 +224,6 @@
       },
       "girth_cm": 640,
       "height_m": 23
-    },
-    {
-      "id": "dbo_006",
-      "name": "The Copper Beech of Casinotuin",
-      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
-      "age_estimate": "not documented",
-      "age_min": null,
-      "age_max": null,
-      "location": {
-        "address": "Casinotuin, off Cavaleriestraat, 's-Hertogenbosch",
-        "latitude": 51.685567,
-        "longitude": 5.309388,
-        "neighbourhood": "Binnenstad"
-      },
-      "story": "The city register gives this beech an age of zero. That is a blank field rather than a fact, because the trunk measures 4.33 metres round and the crown stands 24 metres up, which no seedling manages. Nobody has dated it, so this page does not either. What has been measured is size, and by that measure it is the thickest tree the register records in the Casinotuin. Copper beech is a purple-leaved form of the common beech, propagated from chance mutations found in the wild and planted through the 19th century for exactly the effect it still has, a mass of dark red over a park where everything else is green. This one grows on the old inner-city water in a garden that a 1996 survey of Den Bosch's oldest trees singled out for its beeches, along with the ramparts across town. A smaller weeping beech stands about 13 metres off, drooping like a closed umbrella, and the two are impossible to mix up once you have seen them side by side. Vitality here reads as normal, the best grade the register awards, which for a tree with no recorded age is the more useful number anyway. What it does not tell you is when somebody planted it, and on current evidence nobody knows.",
-      "verified_sources": [
-        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0219, live-queried: girth 433cm, height 24m, vitality Normaal; age field reads '0')",
-        "https://www.bossche-encyclopedie.nl/overig/natuurgebieden/casinotuin.htm and boomenbosch.nl, citing a 1996 survey naming beech among the oldest tree species on Bastion Oranje and in the Casinotuin"
-      ],
-      "access": "Free, public park",
-      "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "how_to_recognise": "The dark red crown in the Casinotuin, and the thickest trunk in the garden at 4.33 metres. The smaller weeping beech thirteen metres off droops like a closed umbrella; this is not that one."
     },
     {
       "id": "dbo_007",
@@ -269,7 +247,8 @@
       },
       "story": "Five horse chestnuts stand within sixty metres of each other along this stretch of the Casinotuin, and this is the thickest by a clear margin: four metres round against roughly three and a half for the next in line. That is the field mark and also its limit. With five similar trees in one short walk, expect to compare trunks rather than to spot it from the path. The group is a survivor set rather than a fixed avenue, because the park has already lost one of its monumental chestnuts, which went over at the Nachtegaalslaantje corner. The register puts this one at about a century and 24 metres tall, with vitality marked as reduced. That is common in older Dutch horse chestnuts: the species has spent two decades under bleeding canker and leaf miner, and one that reaches four metres round with neither finishing it off has done well. No source other than the municipal register names this individual tree, which is why it is flagged here rather than presented as documented. For a fortnight in May the whole group flowers at once, white candles standing upright over every crown, and the question of which trunk is thickest stops mattering entirely.",
       "verified_sources": [
-        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0225, live-queried: girth 402cm, age 100, height 24m, vitality Verminderd)"
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0225, live-queried: girth 402cm, age 100, height 24m, vitality Verminderd)",
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (G-0225, Aesculus hippocastanum, STAMOMTREK 402, HOOGTE 24, vitality Verminderd). The LRMB entry nr 1686315 is a group record of two chestnuts (423 cm, 30 m) about 25 m away, so not used."
       ],
       "access": "Free, public park",
       "transport": "'s-Hertogenbosch railway station, then about a 16-minute walk",
@@ -281,7 +260,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "Five horse chestnuts stand close together here. This is the thickest by a clear margin, but expect to compare trunks rather than spot it at once."
+      "how_to_recognise": "Five horse chestnuts stand close together here. This is the thickest by a clear margin, but expect to compare trunks rather than spot it at once.",
+      "official_register": {
+        "name": "Monumentale bomen (Gemeente 's-Hertogenbosch), no. G-0225",
+        "url": null
+      },
+      "girth_cm": 402,
+      "height_m": 24
     },
     {
       "id": "dbo_008",
@@ -300,7 +285,8 @@
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0497, live-queried: girth 480cm, age 120, height 24m, vitality Normaal)",
         "https://www.boomenbosch.nl/?pid=5 (Boom en Bosch, the local tree-protection group), independently naming 'the largest and perhaps most beautiful plane tree in the city' at the entrance to the Vonk en Vlamterrein on Hekellaan, estimated around 150 years old",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686317&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686317&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1686317&outFields=*&f=json (nr 1686317, status 3, stamomtrek 522, hoogte 26, observed 2022; municipal G-0497 gives 480 cm)"
       ],
       "access": "Free, at a public park entrance",
       "transport": "'s-Hertogenbosch railway station, then about a 17-minute walk",
@@ -333,10 +319,11 @@
         "longitude": 5.308814,
         "neighbourhood": "Binnenstad"
       },
-      "story": "Silver maple is a nursery tree, planted for speed rather than for length of life. It grows fast, splits at the fork in a storm and is usually gone before it turns a hundred. This one is on the municipal monument list at roughly 110 years, 25 metres tall, with a trunk close to four metres round, standing along the Oude Dieze where the old inner-city water runs through the Casinotuin. The species comes from the river bottoms of the eastern United States, and a canal bank in Den Bosch is about as close as a Dutch park gets to that. The leaves give it away: deeply cut, pale and nearly white underneath, so the whole crown turns over silver whenever a wind comes up the water. No other maple of its species grows within sight, so there is nothing here to confuse it with; the purple-leaved copper beech about 40 metres away across the same stretch of park is a different tree altogether. Vitality reads as reduced, and the register is the only source that names this individual tree, the 1996 survey of the city's old trees having named maples in this quarter without identifying which. Bastion Oranje and its pair of Norway maples are about six minutes west.",
+      "story": "Silver maple is a nursery tree, planted for speed rather than for length of life. It grows fast, splits at the fork in a storm and is usually gone before it turns a hundred. This one is on the municipal monument list at roughly 110 years, 25 metres tall, with a trunk close to four metres round, standing along the Oude Dieze where the old inner-city water runs through the Casinotuin. The species comes from the river bottoms of the eastern United States, and a canal bank in Den Bosch is about as close as a Dutch park gets to that. The leaves give it away: deeply cut, pale and nearly white underneath, so the whole crown turns over silver whenever a wind comes up the water. No other maple of its species grows within sight, so there is nothing here to confuse it with. Vitality reads as reduced, and the register is the only source that names this individual tree, the 1996 survey of the city's old trees having named maples in this quarter without identifying which. Bastion Oranje and its pair of Norway maples are about six minutes west.",
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0229, live-queried: girth 392cm, age 110, height 25m, vitality Verminderd)",
-        "https://www.bossche-encyclopedie.nl/overig/natuurgebieden/casinotuin.htm and boomenbosch.nl, citing a 1996 survey naming maples among the oldest tree species on Bastion Oranje and in the Casinotuin"
+        "https://www.bossche-encyclopedie.nl/overig/natuurgebieden/casinotuin.htm and boomenbosch.nl, citing a 1996 survey naming maples among the oldest tree species on Bastion Oranje and in the Casinotuin",
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (G-0229, Acer saccharinum, STAMOMTREK 392, HOOGTE 25, pin matches within 1 m)"
       ],
       "access": "Free, public park along the old moat",
       "transport": "'s-Hertogenbosch railway station, then about a 15-minute walk",
@@ -348,7 +335,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "Along the water in the Casinotuin, the only silver maple in sight. Deeply cut leaves, nearly white underneath, so the whole crown turns over silver when a wind comes up the Oude Dieze."
+      "how_to_recognise": "Along the water in the Casinotuin, the only silver maple in sight. Deeply cut leaves, nearly white underneath, so the whole crown turns over silver when a wind comes up the Oude Dieze.",
+      "official_register": {
+        "name": "Monumentale bomen (Gemeente 's-Hertogenbosch), no. G-0229",
+        "url": null
+      },
+      "girth_cm": 392,
+      "height_m": 25
     },
     {
       "id": "dbo_010",
@@ -374,7 +367,8 @@
       "story": "The earthwork under this oak is younger than the oak. Pettelaarse Schans was rebuilt into the star shape visitors walk today in 1959, during the works that made the Zuiderplas lake, and the register puts this pedunculate oak at about 120 years, which means it was planted around 1906 and was already full-grown when the diggers arrived. The site is far older than either. A fort stood here in the 17th century and was demolished in 1672, so the ring of trees on the mound traces a plan that has been dug, flattened and dug again. Then the caveat, because it decides whether you find the right trunk: three oaks stand within about fifty metres of each other up here. This is the thickest at 4.21 metres round, but its neighbour fourteen metres away runs to 3.52 and a third, forty-eight metres off, to 3.92, and telling them apart by eye is genuinely hard. The dependable anchor is the plane tree twelve metres away, a different species with pale flaking bark that nobody mistakes for an oak. Only the register names this individual tree. The fort's history is well documented; this particular oak's is not, and in late September the ground under all three is deep in acorns anyway.",
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0415, live-queried: girth 421cm, age 120, height 24m, vitality Verminderd)",
-        "https://nl.wikipedia.org/wiki/Pettelaarse_Schans and zuiderwaterlinie.nl, confirming the site's fort history and that a planted ring of trees marks the star-shaped fort mound, without naming this specific oak"
+        "https://nl.wikipedia.org/wiki/Pettelaarse_Schans and zuiderwaterlinie.nl, confirming the site's fort history and that a planted ring of trees marks the star-shaped fort mound, without naming this specific oak",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696458&outFields=*&f=json (nr 1696458, Quercus robur, status 3, stamomtrek 430, hoogte 25, observed 2022, 'bezoekbaar: ja'; municipal G-0415 gives 421 cm)"
       ],
       "access": "Free, continuously open heritage site (a restaurant operates on part of the grounds with its own separate hours)",
       "transport": "'s-Hertogenbosch railway station, then about a 30-minute walk, or a shorter ride on a bus toward Zuid/Paleiskwartier",
@@ -386,7 +380,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "Three oaks stand within fifty metres of each other and the nearest is only slightly smaller, so this one is hard to pick by eye. Look for the oak beside a plane tree, twelve metres away, with mottled flaking bark."
+      "how_to_recognise": "Three oaks stand within fifty metres of each other and the nearest is only slightly smaller, so this one is hard to pick by eye. Look for the oak beside a plane tree, twelve metres away, with mottled flaking bark.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696458",
+        "url": null
+      },
+      "girth_cm": 430,
+      "height_m": 25
     },
     {
       "id": "dbo_011",
@@ -404,7 +404,8 @@
       "story": "If the register's count holds, this poplar was planted around 1941, which puts it in the ground under German occupation and makes it a young tree when the fighting for the city came through in the autumn of 1944. Which planting phase it belongs to has not been written down anywhere we could find, and that stays a gap here rather than getting filled in: the fort was demolished in 1672 and reshaped into its present star in 1959, and this tree predates the second date by nearly twenty years. At 28 metres it is the tallest thing standing on the mound, with a trunk 4.18 metres round. Canadian poplar is a hybrid of the European black poplar and the American cottonwood, bred for timber and shelter belts rather than for parks, which is why it puts on height like this and why one left alone to grow old is rarer than the species' sheer commonness suggests. A second Canadian poplar stands seven metres away and is visibly slimmer, just over three metres round, so the pair separate without a tape measure. The register lists this one's vitality as reduced. The three oaks are a short way west along the same mound, which makes the Schans a walk rather than a single stop.",
       "verified_sources": [
         "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (register id G-0418, live-queried: girth 418cm, age 85, height 28m, vitality Verminderd)",
-        "https://nl.wikipedia.org/wiki/Pettelaarse_Schans and zuiderwaterlinie.nl, confirming the site's fort history and that a planted ring of trees marks the star-shaped fort mound, without naming this specific poplar"
+        "https://nl.wikipedia.org/wiki/Pettelaarse_Schans and zuiderwaterlinie.nl, confirming the site's fort history and that a planted ring of trees marks the star-shaped fort mound, without naming this specific poplar",
+        "https://geoproxy.s-hertogenbosch.nl/ags_extern/rest/services/Externvrij/Beschermde_bomen/MapServer/10 (G-0418, Populus x canadensis, STAMOMTREK 418, HOOGTE 28, pin matches within 1 m; no LRMB entry within 60 m)"
       ],
       "access": "Free, continuously open heritage site (a restaurant operates on part of the grounds with its own separate hours)",
       "transport": "'s-Hertogenbosch railway station, then about a 30-minute walk, or a shorter ride on a bus toward Zuid/Paleiskwartier",
@@ -416,7 +417,13 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "The taller of two Canadian poplars standing seven metres apart, and visibly the thicker of the two."
+      "how_to_recognise": "The taller of two Canadian poplars standing seven metres apart, and visibly the thicker of the two.",
+      "official_register": {
+        "name": "Monumentale bomen (Gemeente 's-Hertogenbosch), no. G-0418",
+        "url": null
+      },
+      "girth_cm": 418,
+      "height_m": 28
     },
     {
       "id": "dbo_012",
