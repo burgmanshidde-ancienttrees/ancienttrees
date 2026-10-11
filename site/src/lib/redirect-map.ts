@@ -187,6 +187,11 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-11, scripts/retire.py: Landelijk Register Monumentale Bomen carries the matched entries (1689105, 1683412, 168957
+  ["zwolle", "horse-chestnut-of-the-park-eekhout"],
+  ["zwolle", "beech-of-ter-pelkwijkpark"],
+  ["zwolle", "plane-of-the-badhuiswal"],
+  ["zwolle", "copper-beech-by-restaurant-urbana"],
   // 2026-10-10, scripts/retire.py: LRMB status 5 (Dood/geveld): nrs 1686403, 1683031, 1680168
   ["tilburg", "oldest-elm-of-tilburg"],
   ["tilburg", "silver-lime-of-the-frater-paullussehof"],
