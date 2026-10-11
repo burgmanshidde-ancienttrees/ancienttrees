@@ -2,24 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-21T22:30:34+00:00",
-   "date": "2026-08-21",
-   "run_id": "32533229905",
-   "minutes": 0.1,
-   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
-   "attempts": 1,
-   "turns": null,
-   "denials": null,
-   "denials_source": "NOT FOUND; result keys were: ",
-   "ended": "cut off at the cap, no result record",
-   "tokens": null,
-   "claims_held": [],
-   "commits": 0,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-22T00:26:36+00:00",
    "date": "2026-08-22",
    "run_id": "32540347028",
@@ -21966,6 +21948,178 @@
     }
    ],
    "trees": -6,
+   "logged": true
+  },
+  {
+   "started": "2026-10-11T00:38:05+00:00",
+   "date": "2026-10-11",
+   "run_id": "38099056517",
+   "minutes": 89.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 607,
+   "denials": 177,
+   "denials_source": "permission_denials: Bash(bash), Bash(cat ; ? ; ? ; ? ...), Bash(cat ; ? ; ? ; girth ...), Bash(cat ; import ; ? ; ? ...), Bash(cat ; import ; for ; for ...), Bash(cat ; import | ? ; ? ...), Bash(cat), Bash(cd && cat ; import ; ? ...), Bash(cd && curl && -o | cut ...), Bash(cd && curl ; sed | grep ...), Bash(cd && curl ; wc ; grep ...), Bash(cd && curl | grep | head ...), Bash(cd && curl | grep | sort ...), Bash(cd && curl | python3 ; import ...), Bash(cd && curl | sed | tr ...), Bash(cd && for ; do ; cat ...), Bash(cd && for ; do ; curl ...), Bash(cd && for ; do ; done ...), Bash(cd && for ; do ; done), Bash(cd && for ; do ; python3 ...), Bash(cd && for ; do | md5sum ...), Bash(cd && mkdir && cd && curl ...), Bash(cd && mkdir && cd && for ...), Bash(cd && mkdir && cd ; for ...), Bash(cd && pdftotext ; wc ; grep ...), Bash(cd && pdftotext | head), Bash(cd && python3 && python3 && python3), Bash(cd && sed && python3), Bash(cd && sed ; ? && python3), Bash(cd && sed | tr | grep ...), Bash(cd && which ; for ; do ...), Bash(cd ; curl), Bash(cd ; for ; do ; curl ...), Bash(cd ; for ; do ; echo ...), Bash(curl ; curl ; curl ; curl ...), Bash(curl ; grep | ? | head), Bash(curl ; grep | sort | head ...), Bash(curl ; ls ; curl ; ls), Bash(curl ; ls), Bash(curl ; wc ; head), Bash(curl ; wc ; python3 ; import ...), Bash(curl ; wc ; sed | tr ...), Bash(curl ; wc), Bash(for ; do ; cat | head ...), Bash(for ; do ; curl ; sed ...), Bash(for ; do ; curl | python3 ...), Bash(for ; do ; curl | sed ...), Bash(for ; do ; grep | ? ...), Bash(for ; do ; python3 ; import ...), Bash(for ; do | python3 ; import ...), Bash(git ; git ; git | tail ...), Bash(grep | alsterufer | planten | Lehmann ...), Bash(grep), Bash(ls ; file ; head), Bash(ls ; head ; which), Bash(ls | grep | ? ; mkdir ...), Bash(ls | grep | germ | bw ...), Bash(ls | grep | swiss | vaud ...), Bash(ls | head ; mkdir), Bash(ls), Bash(mkdir && cat ; ? ; ? ...), Bash(mkdir && cat ; import ; for ...), Bash(mkdir && cat ; import ; if ...), Bash(mkdir && cat ; import | ? ...), Bash(mkdir && cat ; while ; do ...), Bash(mkdir && cd && curl ; curl ...), Bash(mkdir && cd && curl ; ls ...), Bash(mkdir && cd && curl | head ...), Bash(mkdir && cd && for ; do ...), Bash(mkdir && curl ; wc ; curl ...), Bash(mkdir && curl ; wc ; sed ...), Bash(mkdir && curl | head ; echo ...), Bash(mkdir && curl), Bash(mkdir && ls | grep | ? ...), Bash(mkdir && python3 ; import ; ? ...), Bash(mkdir && python3 ; import ; no ...), Bash(mkdir ; cd ; curl ; curl ...), Bash(mkdir ; cd ; curl ; ls ...), Bash(mkdir ; cd ; for ; do ...), Bash(mkdir ; curl), Bash(mkdir), Bash(pdftotext ; wc), Bash(pdftotext | head), Bash(pdftotext), Bash(pip), Bash(python3 && git && git && git ...), Bash(python3 ; cd ; curl | python3 ...), Bash(python3 ; import ; ? ; ? ...), Bash(python3 ; import ; ? ; for ...), Bash(python3 ; import ; ? ; if ...), Bash(python3 ; import ; ? ; import ...), Bash(python3 ; import ; Graz ; for ...), Bash(python3 ; import ; Tree ; ? ...), Bash(python3 ; import ; de ; for ...), Bash(python3 ; import ; def ; return ...), Bash(python3 ; import ; degli ; national ...), Bash(python3 ; import ; for ; ? ...), Bash(python3 ; import ; if ; ? ...), Bash(python3 ; import ; pip | grep ...), Bash(python3 ; import ; singulars ; def ...), Bash(python3 ; wc), Bash(python3 | head ; import ; for ...), Bash(rm && python3 ; ?), Bash(rm), Bash(sed ; ?), Bash(sed ; python3), Bash(sed | tr | grep | ? ...), Bash(subshell cat ; import ; ? ; ? ...), Bash(wc ; head), Bash(wc), Bash(which ; pdftotext | head ; grep ...)",
+   "ended": "success",
+   "tokens": 489557,
+   "claims_held": [],
+   "commits": 90,
+   "cities_touched": 38,
+   "cities": [
+    {
+     "city": "aarhus",
+     "trees": 0
+    },
+    {
+     "city": "belfast",
+     "trees": 0
+    },
+    {
+     "city": "bergamo",
+     "trees": 0
+    },
+    {
+     "city": "bordeaux",
+     "trees": 0
+    },
+    {
+     "city": "bratislava",
+     "trees": 0
+    },
+    {
+     "city": "bruges",
+     "trees": 0
+    },
+    {
+     "city": "buenos-aires",
+     "trees": 0
+    },
+    {
+     "city": "como",
+     "trees": 0
+    },
+    {
+     "city": "deventer",
+     "trees": 0
+    },
+    {
+     "city": "freiburg",
+     "trees": 0
+    },
+    {
+     "city": "gdansk",
+     "trees": 0
+    },
+    {
+     "city": "genoa",
+     "trees": 0
+    },
+    {
+     "city": "ghent",
+     "trees": 0
+    },
+    {
+     "city": "graz",
+     "trees": 0
+    },
+    {
+     "city": "hallstatt",
+     "trees": 0
+    },
+    {
+     "city": "hamburg",
+     "trees": 0
+    },
+    {
+     "city": "hawaii",
+     "trees": 0
+    },
+    {
+     "city": "hoorn",
+     "trees": 0
+    },
+    {
+     "city": "lausanne",
+     "trees": 0
+    },
+    {
+     "city": "lucca",
+     "trees": 0
+    },
+    {
+     "city": "menorca",
+     "trees": 0
+    },
+    {
+     "city": "nagoya",
+     "trees": 0
+    },
+    {
+     "city": "nuremberg",
+     "trees": 0
+    },
+    {
+     "city": "oxford",
+     "trees": 0
+    },
+    {
+     "city": "padua",
+     "trees": 0
+    },
+    {
+     "city": "rio-de-janeiro",
+     "trees": 0
+    },
+    {
+     "city": "ronda",
+     "trees": 0
+    },
+    {
+     "city": "salamanca",
+     "trees": 0
+    },
+    {
+     "city": "salzburg",
+     "trees": 0
+    },
+    {
+     "city": "stuttgart",
+     "trees": 0
+    },
+    {
+     "city": "toulouse",
+     "trees": 0
+    },
+    {
+     "city": "trieste",
+     "trees": 0
+    },
+    {
+     "city": "york",
+     "trees": 0
+    },
+    {
+     "city": "alkmaar",
+     "trees": -1
+    },
+    {
+     "city": "den-bosch",
+     "trees": -1
+    },
+    {
+     "city": "helmond",
+     "trees": -1
+    },
+    {
+     "city": "apeldoorn",
+     "trees": -2
+    },
+    {
+     "city": "zwolle",
+     "trees": -4
+    }
+   ],
+   "trees": -9,
    "logged": true
   }
  ],
