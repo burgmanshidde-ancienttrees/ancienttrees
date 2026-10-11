@@ -64,7 +64,12 @@
       "curation_status": "flagged",
       "notes": "Photo taken 2014-06-03, before the December 2025 fire: shows both protected willows healthy and full-crowned by the pond, girths recorded then as 485 and 552 cm. Viewed directly and confirmed as the right pair of trees at the right location (Wikimedia Commons file description names the exact spot, Janka Kupaly street, and matches register entries 1095/1096). Kept as an honest pre-fire record rather than withheld; the story text is explicit about the fire and current state. Viewed directly 2026-07-31: confirms the same read, two healthy full-crowned willows by the pond, no fire damage visible, consistent with a 2014 date. Left at found_needs_check rather than approved: a photo that shows the tree healthy could read as misleading for a story centred on its current fire-scarred state, so this stays for a future call on whether a clearly-labelled 'before' photo is the right choice here.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its fire-damaged, hollowed trunk with roughly four metres cut from the crown after a 2025 arson fire, beside a second, older willow close by. It stands by the pond in the Kupaly-Subislawa green space, Oliwa."
+      "how_to_recognise": "You can recognise it by its fire-damaged, hollowed trunk with roughly four metres cut from the crown after a 2025 arson fire, beside a second, older willow close by. It stands by the pond in the Kupaly-Subislawa green space, Oliwa.",
+      "official_register": {
+        "name": "Pomniki przyrody Gdanska (city list, monument no. 1095, designated 2000), no. 1095",
+        "url": null
+      },
+      "girth_cm": 495
     },
     {
       "id": "gda_002",
@@ -82,7 +87,9 @@
       "story": "This ash tree is older than the gun factory that grew up around it. The Prussian state's Royal Rifle Factory moved onto this stretch of Lakowa street in 1839, converted from an earlier sugar refinery, and expanded through the 19th century into a complex that at its 1918 wartime peak turned out 2,500 rifles a day with 6,500 workers on the payroll, before closing for good in 1921 when the newly independent Free City of Danzig demilitarised. The ash predates all of it, estimated at around 280 years old, which puts its own roots down sometime in the early 18th century, decades before anyone here was making weapons. It stands 26 metres tall with a trunk 523 centimetres around, in what is now a quiet courtyard inside the old factory walls. Its protected status is recent and came from an unusual source: since April 2017, Gdansk has run a programme letting any resident nominate a tree for legal protection, and this ash, tucked away where most passersby would never look for it, was one of the results. A factory that armed a kingdom rose and fell around it in under a century. The tree just kept growing.",
       "verified_sources": [
         "https://download.cloudgdansk.pl/gdansk-pl/d/202605274435/wykaz-gdanskich-pomnikow-przyrody_stan-na-05-2026.pdf",
-        "https://pl.wikipedia.org/wiki/Kr%C3%B3lewska_Fabryka_Karabin%C3%B3w"
+        "https://pl.wikipedia.org/wiki/Kr%C3%B3lewska_Fabryka_Karabin%C3%B3w",
+        "http://edziennik.gdansk.uw.gov.pl/WDU_G/2018/3134/akt.pdf",
+        "https://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.2261011.7828"
       ],
       "access": "Free, public courtyard, viewable anytime",
       "transport": "Dolne Miasto, south of the city centre; about a 15 minute walk from Gdansk Glowny railway station",
@@ -94,7 +101,13 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as the ash older than the rifle factory built up around it. It stands in the courtyard at Lakowa 35/38, Gdansk."
+      "how_to_recognise": "You can recognise it as the ash older than the rifle factory built up around it. It stands in the courtyard at Lakowa 35/38, Gdansk.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (CRFOP), pomnik przyrody 'Karabinier wyniosly', no. PL.ZIPOP.1393.PP.2261011.7828",
+        "url": "https://crfop.gdos.gov.pl/CRFOP/widok/viewpomnikprzyrody.jsf?fop=PL.ZIPOP.1393.PP.2261011.7828"
+      },
+      "girth_cm": 523,
+      "height_m": 26
     },
     {
       "id": "gda_003",
@@ -112,7 +125,8 @@
       "story": "At the foot of a hill named for a dead queen's role in defeating Napoleon grows Lostowice's oldest documented tree. Wzgorze Luizy, a 68 metre moraine hill, was named in 1810 for Louise of Prussia, credited with brokering the Prussian-Russian alliance that helped bring Napoleon down five years later; in 1813 Prussian Landwehr troops clashed with Napoleonic forces on this exact hill, and in 1817 an iron cross went up on the summit naming nine officers who died in it. This pedunculate oak, protected as a natural monument since the late 1980s and estimated at around 250 years old, was already mature when that battle happened, growing quietly at the base of the slope while history took place above it. It has outlasted the monument's own turbulent afterlife: the hill was informally renamed for a local landowner after the Second World War, and only recently got an official viewpoint restoring some of its original prominence. Two younger trees, an oak and a beech, grow near the summit closer to the iron cross itself, added to the protected list decades after this one. Of the three, this is the tree that was already old when the story the hill is named for happened.",
       "verified_sources": [
         "https://pl.wikipedia.org/wiki/G%C3%B3ra_Luizy",
-        "https://download.cloudgdansk.pl/gdansk-pl/d/202605274435/wykaz-gdanskich-pomnikow-przyrody_stan-na-05-2026.pdf"
+        "https://download.cloudgdansk.pl/gdansk-pl/d/202605274435/wykaz-gdanskich-pomnikow-przyrody_stan-na-05-2026.pdf",
+        "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Gda%C5%84sku"
       ],
       "access": "Free, public street verge, viewable anytime",
       "transport": "Lostowice district, near the Niepolomicka/Kampinoska junction; reachable by tram or bus from central Gdansk, about 25 minutes",
@@ -135,7 +149,13 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it as the oldest of the hill's protected trees, standing alone at the foot of the slope rather than near the summit, where two younger trees grow by the iron cross. It stands at the base of Wzgorze Luizy in Lostowice."
+      "how_to_recognise": "You can recognise it as the oldest of the hill's protected trees, standing alone at the foot of the slope rather than near the summit, where two younger trees grow by the iron cross. It stands at the base of Wzgorze Luizy in Lostowice.",
+      "official_register": {
+        "name": "Pomniki przyrody Gdanska (city list, monument no. 551), no. 551",
+        "url": null
+      },
+      "girth_cm": 630,
+      "height_m": 20
     },
     {
       "id": "gda_004",
