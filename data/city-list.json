@@ -14,14 +14,6 @@
    "trees": 30
   },
   {
-   "city": "San Francisco",
-   "country": "United States",
-   "slug": "san-francisco",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 8
-  },
-  {
    "city": "Brussels",
    "country": "Belgium",
    "slug": "brussels",
@@ -30,27 +22,12 @@
    "trees": 35
   },
   {
-   "city": "Chicago",
-   "country": "United States",
-   "slug": "chicago",
-   "status": "published",
-   "trees": 16
-  },
-  {
    "city": "Cambridge",
    "country": "United Kingdom",
    "slug": "cambridge",
    "status": "published",
    "demand_views_90d": 97974,
    "trees": 5
-  },
-  {
-   "city": "Granada",
-   "country": "Spain",
-   "slug": "granada",
-   "status": "published",
-   "demand_views_90d": 86361,
-   "trees": 9
   },
   {
    "city": "Seattle",
@@ -83,12 +60,12 @@
    "trees": 27
   },
   {
-   "city": "Arnhem",
-   "country": "Netherlands",
-   "slug": "arnhem",
+   "city": "Porto",
+   "country": "Portugal",
+   "slug": "porto",
    "status": "published",
-   "demand_views_90d": 31478,
-   "trees": 32
+   "demand_views_90d": 120415,
+   "trees": 27
   },
   {
    "city": "Brisbane",
@@ -99,11 +76,19 @@
    "trees": 20
   },
   {
-   "city": "Paris",
-   "country": "France",
-   "slug": "paris",
+   "city": "Chicago",
+   "country": "United States",
+   "slug": "chicago",
    "status": "published",
-   "trees": 31
+   "trees": 16
+  },
+  {
+   "city": "Granada",
+   "country": "Spain",
+   "slug": "granada",
+   "status": "published",
+   "demand_views_90d": 86361,
+   "trees": 9
   },
   {
    "city": "New York",
@@ -111,6 +96,28 @@
    "slug": "new-york",
    "status": "published",
    "trees": 27
+  },
+  {
+   "city": "Arnhem",
+   "country": "Netherlands",
+   "slug": "arnhem",
+   "status": "published",
+   "demand_views_90d": 31478,
+   "trees": 32
+  },
+  {
+   "city": "Barcelona",
+   "country": "Spain",
+   "slug": "barcelona",
+   "status": "published",
+   "trees": 56
+  },
+  {
+   "city": "Leeuwarden",
+   "country": "Netherlands",
+   "slug": "leeuwarden",
+   "status": "published",
+   "trees": 34
   },
   {
    "city": "New Orleans",
@@ -121,19 +128,27 @@
    "trees": 8
   },
   {
-   "city": "Barcelona",
-   "country": "Spain",
-   "slug": "barcelona",
-   "status": "published",
-   "trees": 56
-  },
-  {
    "city": "Sorrento",
    "country": "Italy",
    "slug": "sorrento",
    "status": "published",
    "demand_views_90d": null,
    "trees": 7
+  },
+  {
+   "city": "Tokyo",
+   "country": "Japan",
+   "slug": "tokyo",
+   "status": "published",
+   "demand_views_90d": 394702,
+   "trees": 22
+  },
+  {
+   "city": "Dublin",
+   "country": "Ireland",
+   "slug": "dublin",
+   "status": "published",
+   "trees": 17
   },
   {
    "city": "Miami",
@@ -144,11 +159,34 @@
    "trees": 0
   },
   {
-   "city": "Dublin",
-   "country": "Ireland",
-   "slug": "dublin",
+   "city": "Kanazawa",
+   "country": "Japan",
+   "slug": "kanazawa",
    "status": "published",
-   "trees": 17
+   "demand_views_90d": null,
+   "trees": 7
+  },
+  {
+   "city": "Munich",
+   "country": "Germany",
+   "slug": "munich",
+   "status": "published",
+   "trees": 62
+  },
+  {
+   "city": "Paris",
+   "country": "France",
+   "slug": "paris",
+   "status": "published",
+   "trees": 31
+  },
+  {
+   "city": "Tallinn",
+   "country": "Estonia",
+   "slug": "tallinn",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 9
   },
   {
    "city": "Venice",
@@ -174,50 +212,11 @@
    "trees": 0
   },
   {
-   "city": "Kanazawa",
-   "country": "Japan",
-   "slug": "kanazawa",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
-  },
-  {
-   "city": "Munich",
-   "country": "Germany",
-   "slug": "munich",
-   "status": "published",
-   "trees": 62
-  },
-  {
-   "city": "Singapore",
-   "country": "Singapore",
-   "slug": "singapore",
-   "status": "published",
-   "demand_views_90d": 967821,
-   "trees": 34
-  },
-  {
-   "city": "Tallinn",
-   "country": "Estonia",
-   "slug": "tallinn",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 9
-  },
-  {
    "city": "London",
    "country": "United Kingdom",
    "slug": "london",
    "status": "published",
    "trees": 27
-  },
-  {
-   "city": "Los Angeles",
-   "country": "United States",
-   "slug": "los-angeles",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 11
   },
   {
    "city": "Edinburgh",
@@ -227,12 +226,12 @@
    "trees": 16
   },
   {
-   "city": "Santiago de Compostela",
-   "country": "Spain",
-   "slug": "santiago-de-compostela",
-   "status": "pending",
+   "city": "San Francisco",
+   "country": "United States",
+   "slug": "san-francisco",
+   "status": "published",
    "demand_views_90d": null,
-   "trees": 0
+   "trees": 8
   },
   {
    "city": "Vancouver",
@@ -247,7 +246,7 @@
    "country": "Netherlands",
    "slug": "apeldoorn",
    "status": "published",
-   "trees": 10
+   "trees": 8
   },
   {
    "city": "Breda",
@@ -270,7 +269,7 @@
    "country": "Netherlands",
    "slug": "eindhoven",
    "status": "published",
-   "trees": 18
+   "trees": 17
   },
   {
    "city": "Groningen",
@@ -279,13 +278,6 @@
    "status": "published",
    "demand_views_90d": 31401,
    "trees": 17
-  },
-  {
-   "city": "Leeuwarden",
-   "country": "Netherlands",
-   "slug": "leeuwarden",
-   "status": "published",
-   "trees": 34
   },
   {
    "city": "Lisbon",
@@ -302,14 +294,6 @@
    "note": "MASAF cluster: 20 registered trees inside 1.6 km, 6 published as one walk of about 800 m entirely inside the walls. Rest in data/leads/lucca.json.",
    "demand_views_90d": 52271,
    "trees": 14
-  },
-  {
-   "city": "Porto",
-   "country": "Portugal",
-   "slug": "porto",
-   "status": "published",
-   "demand_views_90d": 120415,
-   "trees": 27
   },
   {
    "city": "Rome",
@@ -335,19 +319,36 @@
    "trees": 28
   },
   {
-   "city": "Bath",
-   "country": "United Kingdom",
-   "slug": "bath",
-   "status": "published",
-   "demand_views_90d": 144950,
-   "trees": 5
-  },
-  {
    "city": "Oahu",
    "country": "United States",
    "slug": "oahu",
    "status": "published",
    "trees": 21
+  },
+  {
+   "city": "Guimaraes",
+   "country": "Portugal",
+   "slug": "guimaraes",
+   "status": "published",
+   "note": "ICNF cluster: 14 registered trees within 3.4 km of the UNESCO historic centre, 4 published (planes at the Paco dos Duques, the cloister olive, the Vila Flor camellias, the Atouguia cemetery cedars). Casa de Margaride and Casa da Covilha have genuinely strong trees held back on uncertain private-estate access; Santa Marinha da Costa held back as a hotel with no clear public-access statement. All three, plus the rest of the register, in data/leads/guimaraes.json.",
+   "demand_views_90d": 26203,
+   "trees": 8
+  },
+  {
+   "city": "Los Angeles",
+   "country": "United States",
+   "slug": "los-angeles",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 11
+  },
+  {
+   "city": "Santiago de Compostela",
+   "country": "Spain",
+   "slug": "santiago-de-compostela",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
   },
   {
    "city": "Zagreb",
@@ -358,21 +359,20 @@
    "trees": 0
   },
   {
+   "city": "Verona",
+   "country": "Italy",
+   "slug": "verona",
+   "status": "published",
+   "demand_views_90d": 77646,
+   "trees": 8
+  },
+  {
    "city": "Bogota",
    "country": "Colombia",
    "slug": "bogota",
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Guimaraes",
-   "country": "Portugal",
-   "slug": "guimaraes",
-   "status": "published",
-   "note": "ICNF cluster: 14 registered trees within 3.4 km of the UNESCO historic centre, 4 published (planes at the Paco dos Duques, the cloister olive, the Vila Flor camellias, the Atouguia cemetery cedars). Casa de Margaride and Casa da Covilha have genuinely strong trees held back on uncertain private-estate access; Santa Marinha da Costa held back as a hotel with no clear public-access statement. All three, plus the rest of the register, in data/leads/guimaraes.json.",
-   "demand_views_90d": 26203,
-   "trees": 8
   },
   {
    "city": "Shanghai",
@@ -391,6 +391,13 @@
    "trees": 0
   },
   {
+   "city": "Assisi",
+   "country": "Italy",
+   "slug": "assisi",
+   "status": "published",
+   "trees": 6
+  },
+  {
    "city": "Houston",
    "country": "United States",
    "slug": "houston",
@@ -405,84 +412,6 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 6
-  },
-  {
-   "city": "Tokyo",
-   "country": "Japan",
-   "slug": "tokyo",
-   "status": "published",
-   "demand_views_90d": 394702,
-   "trees": 22
-  },
-  {
-   "city": "Vienna",
-   "country": "Austria",
-   "slug": "vienna",
-   "status": "published",
-   "trees": 55
-  },
-  {
-   "city": "Montreal",
-   "country": "Canada",
-   "slug": "montreal",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 13
-  },
-  {
-   "city": "Verona",
-   "country": "Italy",
-   "slug": "verona",
-   "status": "published",
-   "demand_views_90d": 77646,
-   "trees": 8
-  },
-  {
-   "city": "Vilnius",
-   "country": "Lithuania",
-   "slug": "vilnius",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 14
-  },
-  {
-   "city": "Galway",
-   "country": "Ireland",
-   "slug": "galway",
-   "status": "pending",
-   "note": "Hidde, 2026-08-02: publish it (\"wat mij betreft mag je galway gewoon online zetten we hebben ze toch\"). The run held it back because Coole Park is 50-70 min by bus, outside the ~30 min day-trip boundary; he widened the boundary for this case. Ship with the true travel time stated in transport, never rounded down. Prior research is in CURATION.md 2026-07-30 and the 2026-08-02 run entry.",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Phuket",
-   "country": "Thailand",
-   "slug": "phuket",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Assisi",
-   "country": "Italy",
-   "slug": "assisi",
-   "status": "published",
-   "trees": 6
-  },
-  {
-   "city": "Milan",
-   "country": "Italy",
-   "slug": "milan",
-   "status": "published",
-   "trees": 30
-  },
-  {
-   "city": "Kansas City",
-   "country": "United States",
-   "slug": "kansas-city",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 4
   },
   {
    "city": "Kyoto",
@@ -504,20 +433,11 @@
    "trees": 18
   },
   {
-   "city": "Kobe",
-   "country": "Japan",
-   "slug": "kobe",
-   "status": "pending",
-   "demand_views_90d": null,
-   "trees": 0
-  },
-  {
-   "city": "Sydney",
-   "country": "Australia",
-   "slug": "sydney",
+   "city": "Vienna",
+   "country": "Austria",
+   "slug": "vienna",
    "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
+   "trees": 55
   },
   {
    "city": "Berlin",
@@ -525,14 +445,6 @@
    "slug": "berlin",
    "status": "published",
    "trees": 63
-  },
-  {
-   "city": "Cork",
-   "country": "Ireland",
-   "slug": "cork",
-   "status": "published",
-   "demand_views_90d": 101405,
-   "trees": 13
   },
   {
    "city": "Hiroshima",
@@ -551,6 +463,13 @@
    "trees": 38
   },
   {
+   "city": "Leipzig",
+   "country": "Germany",
+   "slug": "leipzig",
+   "status": "published",
+   "trees": 19
+  },
+  {
    "city": "Lyon",
    "country": "France",
    "slug": "lyon",
@@ -567,12 +486,76 @@
    "trees": 6
   },
   {
-   "city": "Belgrade",
-   "country": "Serbia",
-   "slug": "belgrade",
+   "city": "Singapore",
+   "country": "Singapore",
+   "slug": "singapore",
    "status": "published",
-   "demand_views_90d": 178116,
-   "trees": 5
+   "demand_views_90d": 967821,
+   "trees": 34
+  },
+  {
+   "city": "Montreal",
+   "country": "Canada",
+   "slug": "montreal",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 13
+  },
+  {
+   "city": "Vilnius",
+   "country": "Lithuania",
+   "slug": "vilnius",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 12
+  },
+  {
+   "city": "Galway",
+   "country": "Ireland",
+   "slug": "galway",
+   "status": "pending",
+   "note": "Hidde, 2026-08-02: publish it (\"wat mij betreft mag je galway gewoon online zetten we hebben ze toch\"). The run held it back because Coole Park is 50-70 min by bus, outside the ~30 min day-trip boundary; he widened the boundary for this case. Ship with the true travel time stated in transport, never rounded down. Prior research is in CURATION.md 2026-07-30 and the 2026-08-02 run entry.",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Phuket",
+   "country": "Thailand",
+   "slug": "phuket",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Milan",
+   "country": "Italy",
+   "slug": "milan",
+   "status": "published",
+   "trees": 30
+  },
+  {
+   "city": "Kansas City",
+   "country": "United States",
+   "slug": "kansas-city",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 4
+  },
+  {
+   "city": "Kobe",
+   "country": "Japan",
+   "slug": "kobe",
+   "status": "pending",
+   "demand_views_90d": null,
+   "trees": 0
+  },
+  {
+   "city": "Sydney",
+   "country": "Australia",
+   "slug": "sydney",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 7
   },
   {
    "city": "Glasgow",
@@ -603,6 +586,14 @@
    "status": "published",
    "demand_views_90d": 162209,
    "trees": 31
+  },
+  {
+   "city": "Reykjavik",
+   "country": "Iceland",
+   "slug": "reykjavik",
+   "status": "published",
+   "demand_views_90d": 166789,
+   "trees": 4
   },
   {
    "city": "Sofia",
@@ -636,12 +627,50 @@
    "trees": 16
   },
   {
+   "city": "Budapest",
+   "country": "Hungary",
+   "slug": "budapest",
+   "status": "published",
+   "trees": 13
+  },
+  {
+   "city": "Sao Paulo",
+   "country": "Brazil",
+   "slug": "sao-paulo",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 2
+  },
+  {
    "city": "Osaka",
    "country": "Japan",
    "slug": "osaka",
    "status": "published",
    "demand_views_90d": 163112,
    "trees": 6
+  },
+  {
+   "city": "Athens",
+   "country": "Greece",
+   "slug": "athens",
+   "status": "published",
+   "trees": 12
+  },
+  {
+   "city": "Bath",
+   "country": "United Kingdom",
+   "slug": "bath",
+   "status": "published",
+   "demand_views_90d": 144950,
+   "trees": 5
+  },
+  {
+   "city": "Beijing",
+   "country": "China",
+   "slug": "beijing",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 7
   },
   {
    "city": "Kuala Lumpur",
@@ -715,14 +744,6 @@
    "trees": 8
   },
   {
-   "city": "Sao Paulo",
-   "country": "Brazil",
-   "slug": "sao-paulo",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 2
-  },
-  {
    "city": "Cape Town",
    "country": "South Africa",
    "slug": "cape-town",
@@ -731,27 +752,12 @@
    "trees": 0
   },
   {
-   "city": "Athens",
-   "country": "Greece",
-   "slug": "athens",
-   "status": "published",
-   "trees": 12
-  },
-  {
    "city": "Girona",
    "country": "Spain",
    "slug": "girona",
    "status": "published",
    "trees": 7,
    "note": "Opened 2026-08-31 from the same Catalan register. None is in Girona itself: the city's own Devesa is a grove of ~2,500 planes and the register declares individuals only. Four of the seven are inside designated natural areas. The register records vitality, so the dead entries near Girona were excluded from the data rather than by guess."
-  },
-  {
-   "city": "Beijing",
-   "country": "China",
-   "slug": "beijing",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
   },
   {
    "city": "Bangkok",
@@ -768,13 +774,6 @@
    "status": "pending",
    "demand_views_90d": null,
    "trees": 0
-  },
-  {
-   "city": "Leipzig",
-   "country": "Germany",
-   "slug": "leipzig",
-   "status": "published",
-   "trees": 19
   },
   {
    "city": "Madrid",
@@ -807,6 +806,14 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 4
+  },
+  {
+   "city": "Hong Kong",
+   "country": "China",
+   "slug": "hong-kong",
+   "status": "published",
+   "demand_views_90d": 689212,
+   "trees": 10
   },
   {
    "city": "Trieste",
@@ -898,21 +905,6 @@
    "trees": 12
   },
   {
-   "city": "Budapest",
-   "country": "Hungary",
-   "slug": "budapest",
-   "status": "published",
-   "trees": 13
-  },
-  {
-   "city": "Hong Kong",
-   "country": "China",
-   "slug": "hong-kong",
-   "status": "published",
-   "demand_views_90d": 689212,
-   "trees": 10
-  },
-  {
    "city": "Nice",
    "country": "France",
    "slug": "nice",
@@ -944,6 +936,13 @@
    "trees": 21
   },
   {
+   "city": "Istanbul",
+   "country": "Turkey",
+   "slug": "istanbul",
+   "status": "published",
+   "trees": 14
+  },
+  {
    "city": "Nijmegen",
    "country": "Netherlands",
    "slug": "nijmegen",
@@ -972,14 +971,14 @@
    "country": "Netherlands",
    "slug": "tilburg",
    "status": "published",
-   "trees": 20
+   "trees": 17
   },
   {
    "city": "Alkmaar",
    "country": "Netherlands",
    "slug": "alkmaar",
    "status": "published",
-   "trees": 12
+   "trees": 11
   },
   {
    "city": "Oslo",
@@ -1004,13 +1003,6 @@
    "status": "published",
    "demand_views_90d": null,
    "trees": 4
-  },
-  {
-   "city": "Istanbul",
-   "country": "Turkey",
-   "slug": "istanbul",
-   "status": "published",
-   "trees": 14
   },
   {
    "city": "Bucharest",
@@ -1077,20 +1069,20 @@
    "trees": 6
   },
   {
-   "city": "Reykjavik",
-   "country": "Iceland",
-   "slug": "reykjavik",
-   "status": "published",
-   "demand_views_90d": 166789,
-   "trees": 4
-  },
-  {
    "city": "Bristol",
    "country": "United Kingdom",
    "slug": "bristol",
    "status": "published",
    "demand_views_90d": 163983,
    "trees": 6
+  },
+  {
+   "city": "Cork",
+   "country": "Ireland",
+   "slug": "cork",
+   "status": "published",
+   "demand_views_90d": 101405,
+   "trees": 13
   },
   {
    "city": "Parma",
@@ -1267,6 +1259,14 @@
    "note": "Opened 2026-08-31 from Castilla y Leon's register of notable trees (ORDEN MAM/1156/2006). Five of six are in the royal gardens at La Granja, 11 km out. The register has no age column, so no tree here carries an age, and its trunk column is not quoted anywhere because reading it as diameter makes AS-SG-07 the thickest sequoia in Europe."
   },
   {
+   "city": "Belgrade",
+   "country": "Serbia",
+   "slug": "belgrade",
+   "status": "published",
+   "demand_views_90d": 178116,
+   "trees": 5
+  },
+  {
    "city": "Potsdam",
    "country": "Germany",
    "slug": "potsdam",
@@ -1279,7 +1279,7 @@
    "country": "Netherlands",
    "slug": "enschede",
    "status": "published",
-   "trees": 14
+   "trees": 13
   },
   {
    "city": "Den Bosch",
@@ -1287,7 +1287,7 @@
    "slug": "den-bosch",
    "status": "published",
    "demand_views_90d": 39682,
-   "trees": 12
+   "trees": 11
   },
   {
    "city": "Ronda",
@@ -1310,7 +1310,7 @@
    "country": "Netherlands",
    "slug": "zwolle",
    "status": "published",
-   "trees": 19
+   "trees": 15
   },
   {
    "city": "Coimbra",
@@ -1356,7 +1356,7 @@
    "country": "Netherlands",
    "slug": "helmond",
    "status": "published",
-   "trees": 20
+   "trees": 19
   },
   {
    "city": "Pamplona",
