@@ -129,7 +129,11 @@
       "curation_status": "flagged",
       "notes": "Single source on the specific tree (Flanders heritage inventory, agentschap Onroerend Erfgoed, object 133052; CC BY-SA 4.0, attribution '(c) agentschap Onroerend Erfgoed'); the local history page (muinkparkwijk.be) corroborates the park's history, not this individual tree, so flag as single-sourced. Register: 'Gewone es' (common/European ash, Fraxinus excelsior), 'stamomtrek van meer dan 3 meter', 'behoort tot de eerste aanplantgeneratie in het Muinkpark' (same first planting generation as gnt_001 and gnt_002, park acquired 1851). Muinkpark is a remnant of the former Ghent zoo grounds. Third tree of a compact, walkable trio inside one small public park, all inside roughly 100 metres of each other per the register's own coordinates: the weeping silver lime (gnt_001), the ginkgo (gnt_002) and this ash.",
       "location_precision": "confirmed",
-      "how_to_recognise": "The northernmost and plainest of the three Muinkpark trees, still bare and grey-branched in May when the lime and the ginkgo are in full leaf."
+      "how_to_recognise": "The northernmost and plainest of the three Muinkpark trees, still bare and grey-branched in May when the lime and the ginkgo are in full leaf.",
+      "official_register": {
+        "name": "Inventaris van het Onroerend Erfgoed (Agentschap Onroerend Erfgoed, Flanders)",
+        "url": "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/133052"
+      }
     },
     {
       "id": "gnt_004",
@@ -161,7 +165,11 @@
       "curation_status": "flagged",
       "notes": "Two independent sources, and they disagree on the planting story, so both are kept rather than one chosen. Register (agentschap Onroerend Erfgoed, object 308285): 'imposante bruine beuk' (imposing copper beech), girth 426cm, standing centrally on the square, and the register HEDGES the dating itself: 'dateert mogelijk nog van deze oorspronkelijke aanleg' (possibly still dates from the original layout), citing the square's construction 1841-1846 and a 1952 aerial photo plus a 1953 Albert Sugg photo showing the central green area already planted with trees at that time. Dutch Wikipedia's 'Sint-Annaplein (Gent)' article independently confirms the square's 1841-1846 layout by city architect Lodewijk Roelandt, but states a DIFFERENT planting fact: 'In 1869 werden er kastanjebomen op de square gepland' (in 1869 chestnut trees were planted on the square), which names chestnuts, not beeches, and a later year. Neither source states a planting date FOR THIS SPECIFIC BEECH, so age_estimate is left undocumented rather than picking either the 1840s layout or the 1869 planting as the tree's origin; a bridge from either date to this individual tree would be exactly the kind of unsupported join this project avoids. The square itself is real, public and precisely located (Wikipedia's own coordinates, 51.049417N 3.734472E, sit about 15m from the register's tree-level polygon centroid, consistent with the register's stated 15m accuracy). Girth 426cm is large and plausible for an old copper beech; recorded as given. Square hosts a war memorial (Sacred Heart statue, 1926) and is fully public, a traffic roundabout with the green centre open on foot.",
       "location_precision": "confirmed",
-      "how_to_recognise": "The one large purple-leaved tree in the green centre of the roundabout. Nothing else on the square comes close to its size."
+      "how_to_recognise": "The one large purple-leaved tree in the green centre of the roundabout. Nothing else on the square comes close to its size.",
+      "official_register": {
+        "name": "Inventaris van het Onroerend Erfgoed (Agentschap Onroerend Erfgoed, Flanders)",
+        "url": "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/308285"
+      }
     },
     {
       "id": "gnt_005",
@@ -192,7 +200,11 @@
       "curation_status": "flagged",
       "notes": "Single source this pass (Flanders heritage inventory, agentschap Onroerend Erfgoed, object 305826; CC BY-SA 4.0). A second, independent web source (Dutch Wikipedia, general news search) was tried twice and returned nothing usable in the time available; not blocked, just unfound this pass. The register itself credits its information to 'Stad Gent' (16.10.2017), the city government, which is a distinct origin from the inventory agency's own fieldwork even though it reaches us through one written record. This is not a tree valued for age: it is a young hemelboom (Tree of Heaven) planted in 1988 as a memorial tree, in the small park along the Lindenlei. Beside it stands the Michael Lustig Monument (artist Daniel Dutrieux), inaugurated 8 May 1998, commemorating Ghent's Holocaust victims: a black granite floor representing the tree's shadow, a copper dreidel two metres across, a Star of David, and granite blocks naming deported Jews, with a Hebrew inscription from Lamentations 1:16. Rabbi Michael Lustig was arrested with his wife and two children near this spot in 1943 and deported. The City of Ghent and the Jewish Community of Ghent hold a Kristallnacht commemoration here each November since 1999. The tree qualifies on historical significance rather than age or size; the entry should say plainly that it is young and that its value is what stands beside it.",
       "location_precision": "confirmed",
-      "how_to_recognise": "The tree standing in the black granite floor of the monument, on the green strip along the Lindenlei canal. The two-metre copper dreidel is at its foot."
+      "how_to_recognise": "The tree standing in the black granite floor of the monument, on the green strip along the Lindenlei canal. The two-metre copper dreidel is at its foot.",
+      "official_register": {
+        "name": "Inventaris van het Onroerend Erfgoed (Agentschap Onroerend Erfgoed, Flanders)",
+        "url": "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/305826"
+      }
     },
     {
       "id": "gnt_006",
@@ -232,6 +244,10 @@
         ],
         "kind": "autumn colour",
         "label": "late October, when the crown goes scarlet and then rust"
+      },
+      "official_register": {
+        "name": "Inventaris van het Onroerend Erfgoed (Agentschap Onroerend Erfgoed, Flanders)",
+        "url": "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/300260"
       }
     },
     {
@@ -264,7 +280,11 @@
       "photos": [],
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the bare stem, seven to eight metres of it before the first branch, under a crown nearly 30 metres across. It stands alone in the middle of the Prudens Van Duyseplein, where five streets meet."
+      "how_to_recognise": "You can recognise it by the bare stem, seven to eight metres of it before the first branch, under a crown nearly 30 metres across. It stands alone in the middle of the Prudens Van Duyseplein, where five streets meet.",
+      "official_register": {
+        "name": "Inventaris van het Onroerend Erfgoed (Agentschap Onroerend Erfgoed, Flanders)",
+        "url": "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/130010"
+      }
     },
     {
       "id": "gnt_007",
