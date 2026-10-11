@@ -60,7 +60,11 @@
       "height_m": 21.0,
       "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 230,
-      "how_to_recognise": "You can recognise it by its narrow, deeply slashed leaves, closer to fern fronds than an ordinary beech's broad oval leaf. It stands in the courtyard of Palazzo Doria-Tursi, Via Garibaldi."
+      "how_to_recognise": "You can recognise it by its narrow, deeply slashed leaves, closer to fern fronds than an ordinary beech's broad oval leaf. It stands in the courtyard of Palazzo Doria-Tursi, Via Garibaldi.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 09/D969/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_002",
@@ -88,7 +92,11 @@
       "height_m": 15.0,
       "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 257,
-      "how_to_recognise": "You can recognise it by its dark, hard, evergreen leaves, looking the same in January as in July. It stands on Via Mogadiscio in Montesignano, near the church of San Michele Arcangelo."
+      "how_to_recognise": "You can recognise it by its dark, hard, evergreen leaves, looking the same in January as in July. It stands on Via Mogadiscio in Montesignano, near the church of San Michele Arcangelo.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/D969/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_003",
@@ -114,7 +122,11 @@
       "height_m": 12.0,
       "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 305,
-      "how_to_recognise": "You can recognise it as an evergreen oak three metres round in a quarter built almost entirely of walls, at Via di San Pantaleo 26. Nothing confirms whether it is visible from the street or stands behind one."
+      "how_to_recognise": "You can recognise it as an evergreen oak three metres round in a quarter built almost entirely of walls, at Via di San Pantaleo 26. Nothing confirms whether it is visible from the street or stands behind one.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 17/D969/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_004",
@@ -140,7 +152,11 @@
       "height_m": 24.0,
       "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 734,
-      "how_to_recognise": "You can recognise it by the trunk, 7.34 metres round, half as thick again as any other Nepal camphor around Genoa, at Via Romolo Gessi 11. Only the register carries that figure, so read it carefully."
+      "how_to_recognise": "You can recognise it by the trunk, 7.34 metres round, half as thick again as any other Nepal camphor around Genoa, at Via Romolo Gessi 11. Only the register carries that figure, so read it carefully.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 10/D969/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_005",
@@ -158,16 +174,21 @@
       "story": "A Californian redwood 38 and a half metres tall grows in a valley north of Genoa, and it is not even the tallest tree in its own park. Villa Serra stands in Comago, in the comune of Sant'Olcese, up the Polcevera valley and outside the city boundary, roughly nine kilometres from the centre and reached by a bus or a train and a connecting bus. What the journey buys is the tightest group of monumental trees anywhere around Genoa: this sequoia and three others stand within about sixty metres of one another in nine hectares of English-style park. Coast redwood belongs to the fog belt of northern California, where the species grows taller than anything in Europe, and it arrived in Italian gardens in the middle of the nineteenth century as the fashionable import of the moment, which is also when this garden was laid out. That timing is where the age estimate comes from: roughly 120 to 170 years, reasoned from the founding of the park and from the trunk, with no planting record for this individual and no age field in the national register to consult. Its bark is the thing to put a hand on, soft, fibrous and deep enough to shrug off fire in its home range. The park was restored and reopened in 1992. It charges admission and closes on Monday mornings.",
       "verified_sources": [
         "https://cultura.gov.it (MASAF national monumental trees register, sheet 02/I346/GE/07, girth 526cm, height 38.5m)",
-        "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Sequoia sempervirens among the park's named specimens and gives species background)"
+        "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Sequoia sempervirens among the park's named specimens and gives species background)",
+        "https://www.villaserra.it/contatti/"
       ],
-      "access": "Paid/managed historic park (Consorzio Villa Serra). Opening hours: Jan-Feb 10:00-17:00, Mar-Apr 10:00-18:00, May-Aug 09:00-20:00, Sep 09:00-19:00, Oct 10:00-18:00, Nov-Dec 10:00-17:00, Monday mornings closed.",
+      "access": "Paid entry to the Parco Storico Villa Serra, 3 EUR full price, 1 EUR reduced. Open daily except Monday mornings: Jan-Feb 10-17, Mar-Apr 10-18, May-Aug 9-20, Sep 9-19, Oct 10-18, Nov-Dec 10-17.",
       "transport": "NOT in Genoa proper. Sant'Olcese/Comago is a separate comune in the Polcevera valley, roughly 9km north of Genoa's centre by road. Reachable by AMT bus lines 7, 735, 737, 738 (stop 'Comago/Scuola', 10-min walk, or 'L. Secca/Manesseno', 4-min walk), typically via a first leg to Genova Bolzaneto (train or bus) then a connecting local bus into the valley. I could not pin an exact door-to-door time ; it is plausibly close to or over the 30-minute day-trip threshold and should be timed properly, and labelled honestly as Sant'Olcese/Comago rather than presented as inside Genoa, per the day-trip boundary rule.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "height_m": 38.5,
       "verify_notes": "Height 38.5 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 526,
-      "how_to_recognise": "You can recognise it by its soft, fibrous bark, one of four monumental trees standing within about sixty metres of each other. It stands in the Parco Storico di Villa Serra, Sant'Olcese."
+      "how_to_recognise": "You can recognise it by its soft, fibrous bark, one of four monumental trees standing within about sixty metres of each other. It stands in the Parco Storico di Villa Serra, Sant'Olcese.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/I346/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_006",
@@ -185,16 +206,21 @@
       "story": "At 41 metres this is the tallest of Villa Serra's four monumental trees, taller than the Californian redwood standing sixty metres away, which is not what anyone expects from an oak. Quercus cerris is fast and tall by European standards, native to southeastern Europe and Asia Minor, but it usually tops out around thirty metres. Getting past forty takes shelter, water and a long undisturbed run, and a valley-floor park in Val Polcevera supplies all three. The register puts its girth at 378 centimetres. You can tell it from the pedunculate oak a few paces away without knowing anything about oaks: the leaves are stiffer and more deeply cut, the buds sit inside thin whiskery scales, and the acorn cups look mossy, wrapped in the same curled filaments. Villa Serra is in Comago, in the comune of Sant'Olcese, up the valley from Genoa rather than in it, and its English-style grounds date from the middle of the nineteenth century. The tree's age follows from that, roughly 120 to 170 years, an estimate drawn from the planting era and the trunk rather than a dated record. No source gives it a year, and Italy's national register has no age column at all.",
       "verified_sources": [
         "https://cultura.gov.it (MASAF national monumental trees register, sheet 01/I346/GE/07, girth 378cm, height 41m)",
-        "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Quercus cerris among the park's named specimens)"
+        "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Quercus cerris among the park's named specimens)",
+        "https://www.villaserra.it/contatti/"
       ],
-      "access": "Same park as the Coast Redwood of Villa Serra; see that entry for hours.",
+      "access": "Paid entry to the Parco Storico Villa Serra, 3 EUR full price, 1 EUR reduced. Open daily except Monday mornings: Jan-Feb 10-17, Mar-Apr 10-18, May-Aug 9-20, Sep 9-19, Oct 10-18, Nov-Dec 10-17.",
       "transport": "As for the Coast Redwood of Villa Serra.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "height_m": 41.0,
       "verify_notes": "Height 41.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 378,
-      "how_to_recognise": "You can recognise it by its height, 41 metres, the tallest of the park's four monumental trees, with leaves more stiffly cut than the oak nearby. It stands in the Parco Storico di Villa Serra."
+      "how_to_recognise": "You can recognise it by its height, 41 metres, the tallest of the park's four monumental trees, with leaves more stiffly cut than the oak nearby. It stands in the Parco Storico di Villa Serra.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/I346/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_007",
@@ -212,9 +238,11 @@
       "story": "This is the only tree on this list whose age somebody actually wrote down. Italy's national monumental tree register has no age column, anywhere, for any entry, which is why nearly every date on this page is reasoned back from a trunk measurement. Liguria runs its own regional register and that one does carry the field, and for this hop-hornbeam it reads approximately 160 to 170 years. It is a modest tree to be the best documented of the set. Ostrya carpinifolia is a small, unshowy relative of the birches that rarely makes a specimen tree at all, and park competition has drawn this one up to somewhere between 22 and 32 metres, depending on which register you believe. The two agree on the 256 centimetre trunk and disagree on the height, so both figures stand here rather than one. In late summer it makes the fruit that named it, hanging clusters of papery pale bladders that look like hops on a vine, each holding a single seed. Ligurian woodsmen cut this species for tool handles, cartwheel spokes and vine stakes, because the wood is heavy, hard and will not split. It stands with three larger trees inside sixty metres at Villa Serra, in Comago, in the comune of Sant'Olcese, up the Polcevera valley from the city.",
       "verified_sources": [
         "https://cultura.gov.it (MASAF national monumental trees register, sheet 05/I346/GE/07, girth 256cm, height 32m)",
-        "https://www.agriligurianet.it/en/vetrina/boschi-e-foreste/alberi-monumentali/archivio-degli-alberi-monumentali/item/7020-g6.html (Liguria regional register entry, same location and diameter 256cm, height 22m, states age 'approximately 160-170 years')"
+        "https://www.agriligurianet.it/en/vetrina/boschi-e-foreste/alberi-monumentali/archivio-degli-alberi-monumentali/item/7020-g6.html (Liguria regional register entry, same location and diameter 256cm, height 22m, states age 'approximately 160-170 years')",
+        "https://www.villaserra.it/contatti/",
+        "https://www.agriligurianet.it/en/vetrina/boschi-e-foreste/alberi-monumentali/archivio-degli-alberi-monumentali/item/7020-g6.html"
       ],
-      "access": "Same park as the Coast Redwood of Villa Serra; see that entry for hours.",
+      "access": "Paid entry to the Parco Storico Villa Serra, 3 EUR full price, 1 EUR reduced. Open daily except Monday mornings: Jan-Feb 10-17, Mar-Apr 10-18, May-Aug 9-20, Sep 9-19, Oct 10-18, Nov-Dec 10-17.",
       "transport": "As for the Coast Redwood of Villa Serra.",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -229,7 +257,11 @@
       "height_m": 32.0,
       "verify_notes": "Height 32.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 256,
-      "how_to_recognise": "You can recognise it by its late-summer fruit, papery pale clusters that look like hops, on the smallest of the park's four trunks. It stands in the Parco Storico di Villa Serra."
+      "how_to_recognise": "You can recognise it by its late-summer fruit, papery pale clusters that look like hops, on the smallest of the park's four trunks. It stands in the Parco Storico di Villa Serra.",
+      "official_register": {
+        "name": "Archivio degli alberi monumentali (Regione Liguria), no. 05/I346/GE/07",
+        "url": "https://www.agriligurianet.it/en/vetrina/boschi-e-foreste/alberi-monumentali/archivio-degli-alberi-monumentali/item/7020-g6.html"
+      }
     },
     {
       "id": "gnv_008",
@@ -247,9 +279,10 @@
       "story": "The park's own notes point out that a pedunculate oak can live five hundred years, which makes this one, at somewhere around 120 to 170, a tree with most of its life still in front of it. It is already 39 and a half metres tall with a trunk 296 centimetres round. Quercus robur is the common oak of northern Europe and the timber that built its navies, and in a sheltered park it grows straighter and faster than it ever does in open country. That is what has happened here: this is a tall forest-shaped oak rather than the wide-limbed field version most people picture when they hear the name. The age is an estimate and not a record. It follows from the founding of Villa Serra's English-style park in the middle of the nineteenth century and from the girth, and no source gives this individual a planting year. It completes the group of four monumental trees standing within sixty metres of each other, alongside a coast redwood, a Turkey oak and a hop-hornbeam, which is more variety than sixty metres of Liguria usually offers. The park is in Comago, in the comune of Sant'Olcese, in the Polcevera valley north of Genoa and outside the city. It is a managed historic park with an admission charge, closed on Monday mornings.",
       "verified_sources": [
         "https://cultura.gov.it (MASAF national monumental trees register, sheet 06/I346/GE/07, girth 296cm, height 39.5m)",
-        "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Quercus robur among the park's named specimens, notes the species can live to 500 years)"
+        "https://www.villaserra.it/la-natura/gli-alberi/ (park's own site, confirms Quercus robur among the park's named specimens, notes the species can live to 500 years)",
+        "https://www.villaserra.it/contatti/"
       ],
-      "access": "Same park as the Coast Redwood of Villa Serra; see that entry for hours.",
+      "access": "Paid entry to the Parco Storico Villa Serra, 3 EUR full price, 1 EUR reduced. Open daily except Monday mornings: Jan-Feb 10-17, Mar-Apr 10-18, May-Aug 9-20, Sep 9-19, Oct 10-18, Nov-Dec 10-17.",
       "transport": "As for the Coast Redwood of Villa Serra.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -264,7 +297,11 @@
       "height_m": 39.5,
       "verify_notes": "Height 39.5 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 296,
-      "how_to_recognise": "You can recognise it by its tall, straight, forest-shaped form rather than the wide-limbed spread an oak usually takes in open country. It stands in the Parco Storico di Villa Serra."
+      "how_to_recognise": "You can recognise it by its tall, straight, forest-shaped form rather than the wide-limbed spread an oak usually takes in open country. It stands in the Parco Storico di Villa Serra.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/I346/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_009",
@@ -282,9 +319,10 @@
       "story": "Crush a leaf from this tree and your fingers smell of a medicine cabinet. Cinnamomum camphora is the source of camphor, distilled from its wood and leaves for centuries as a medicine, a moth repellent and the plasticiser that made celluloid film possible, and this specimen has reached 36 metres with a trunk 538 centimetres round. It grows at the edge of the lake in the park of Villa Durazzo Pallavicini in Pegli, which is not an ordinary garden. It was laid out in the middle of the nineteenth century by Michele Canzio, a set designer from Genoa's opera house, as a theatrical route in acts and scenes, complete with a Gothic ruin, a Chinese pagoda and an artificial lake you cross by boat to reach a temple. The camphor and the Cedar of Lebanon beside it are named together in the Ministry of Culture's own description of the park, which is a lot of official attention for two trees. The age is not documented for this individual: roughly 100 to 180 years is an estimate that fits both the trunk and the making of the garden, nothing firmer. Pegli is about fifteen minutes by regional train from Genova Piazza Principe. The park charges entry, closes on Mondays, and the full circuit runs to some three kilometres of path.",
       "verified_sources": [
         "https://cultura.gov.it (MASAF national monumental trees register, sheet 13/D969/GE/07, girth 538cm, height 36m)",
-        "https://cultura.gov.it/luogo/parco-storico-di-villa-durazzo-pallavicini (Ministry of Culture's own page on the park, independently describes 'the monumental camphor tree alongside the Lebanon cedar positioned at the lake's edge')"
+        "https://cultura.gov.it/luogo/parco-storico-di-villa-durazzo-pallavicini (Ministry of Culture's own page on the park, independently describes 'the monumental camphor tree alongside the Lebanon cedar positioned at the lake's edge')",
+        "https://www.villadurazzopallavicini.it/informazioni-pratiche/"
       ],
-      "access": "Paid entry, roughly 9-13 EUR depending on day/residency. Open Tue-Fri 09:30-17:00, Sat-Sun 10:00-17:00, closed Mondays (seasonal variation likely; check villadurazzopallavicini.it before publishing). Roughly 3km of paths, 2.5 hours for the full circuit.",
+      "access": "Paid entry, 11 EUR on weekdays and 13 EUR at weekends and holidays (reduced 9 and 11 EUR). Open from about 28 February to 1 November, Tuesday to Sunday, closed Mondays, roughly 9:30-18:00 with later closing in summer; last entry 2 hours before closing. Check the park's page for the day.",
       "transport": "Pegli railway station on the Genova-Ventimiglia line, about 15 minutes by regional train from Genova Piazza Principe, short walk to the park entrance. Comfortably within Genoa and within the day-trip boundary.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -300,7 +338,11 @@
       "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "paid_entry": true,
       "girth_cm": 538,
-      "how_to_recognise": "You can recognise it by the medicinal camphor smell released when you crush a leaf, growing at the edge of the lake. It stands in Villa Durazzo Pallavicini, Pegli, beside a Cedar of Lebanon."
+      "how_to_recognise": "You can recognise it by the medicinal camphor smell released when you crush a leaf, growing at the edge of the lake. It stands in Villa Durazzo Pallavicini, Pegli, beside a Cedar of Lebanon.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 13/D969/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_010",
@@ -318,9 +360,10 @@
       "story": "Two trees from opposite ends of the old trading world stand together at this lake: an East Asian camphor and this Cedar of Lebanon, and the Ministry of Culture names both in its description of the park. The cedar is the smaller of the pair at 25 metres, with a trunk 320 centimetres round, and it is the one with the longer history behind it. Cedrus libani is the tree of the Phoenician shipwrights and of the Bible's building accounts, cut out of the mountains of Lebanon for three thousand years until little more than remnant groves were left, then replanted across European estates in the eighteenth and nineteenth centuries as the grandest thing a landowner could stand on a lawn. That is roughly what happened here. Villa Durazzo Pallavicini's park in Pegli was built in the middle of the nineteenth century as a designed walk in acts and scenes, and a cedar at the water's edge is exactly the set piece such a garden reaches for. No planting record survives for this tree, so the 100 to 180 year estimate rests on the trunk and on the age of the garden around it. One caution for anyone searching: a different and larger Cedar of Lebanon grows at a Villa Pallavicini in Arenzano, twenty kilometres further west. This is not that tree.",
       "verified_sources": [
         "https://cultura.gov.it (MASAF national monumental trees register, sheet 14/D969/GE/07, girth 320cm, height 25m)",
-        "https://cultura.gov.it/luogo/parco-storico-di-villa-durazzo-pallavicini (Ministry of Culture's own page on the park, independently describes 'the monumental camphor tree alongside the Lebanon cedar positioned at the lake's edge')"
+        "https://cultura.gov.it/luogo/parco-storico-di-villa-durazzo-pallavicini (Ministry of Culture's own page on the park, independently describes 'the monumental camphor tree alongside the Lebanon cedar positioned at the lake's edge')",
+        "https://www.villadurazzopallavicini.it/informazioni-pratiche/"
       ],
-      "access": "Same park as the Camphor Tree of Villa Durazzo Pallavicini; see that entry for hours and pricing.",
+      "access": "Paid entry in the park of Villa Durazzo Pallavicini, 11 EUR on weekdays and 13 EUR at weekends. Open about 28 February to 1 November, Tuesday to Sunday, closed Mondays; last entry 2 hours before closing.",
       "transport": "As for the Camphor Tree of Villa Durazzo Pallavicini.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -336,7 +379,11 @@
       "height_m": 25.0,
       "verify_notes": "Height 36.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 320,
-      "how_to_recognise": "You can recognise it by standing at the water's edge beside the camphor tree, the smaller of the pair at 25 metres. It stands in the Parco di Villa Durazzo Pallavicini, Pegli."
+      "how_to_recognise": "You can recognise it by standing at the water's edge beside the camphor tree, the smaller of the pair at 25 metres. It stands in the Parco di Villa Durazzo Pallavicini, Pegli.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 14/D969/GE/07",
+        "url": null
+      }
     },
     {
       "id": "gnv_011",
@@ -372,7 +419,11 @@
         "height": 2400
       },
       "height_m": 28.0,
-      "how_to_recognise": "You can recognise it by its trunk, 6.36 metres round, among the largest bunya pines recorded in Europe, and its heavy dropping cones in season. It stands in the gardens of Villa Groppallo, Nervi."
+      "how_to_recognise": "You can recognise it by its trunk, 6.36 metres round, among the largest bunya pines recorded in Europe, and its heavy dropping cones in season. It stands in the gardens of Villa Groppallo, Nervi.",
+      "official_register": {
+        "name": "Archivio degli alberi monumentali (Regione Liguria), no. 04/D969/GE/07",
+        "url": "https://www.agriligurianet.it/it/vetrina/boschi-e-foreste/alberi-monumentali/archivio-degli-alberi-monumentali/item/123-04-d969.html"
+      }
     },
     {
       "id": "gnv_012",
@@ -430,9 +481,10 @@
       "girth_cm": 385,
       "height_m": 14.0,
       "verified_sources": [
-        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF, Elenco degli alberi monumentali d'Italia, Liguria sheet 11/D969/GE/07: Jubaea chilensis Johow., 'Palma gigante del Cile', Parco Storico Villa Pallavicini, girth 385 cm, height 14 m; register file: data/registers/italy-masaf.json)"
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF, Elenco degli alberi monumentali d'Italia, Liguria sheet 11/D969/GE/07: Jubaea chilensis Johow., 'Palma gigante del Cile', Parco Storico Villa Pallavicini, girth 385 cm, height 14 m; register file: data/registers/italy-masaf.json)",
+        "https://www.villadurazzopallavicini.it/informazioni-pratiche/"
       ],
-      "access": "Same park as the Camphor Tree of Villa Durazzo Pallavicini; see that entry for hours and pricing.",
+      "access": "Paid entry in the park of Villa Durazzo Pallavicini, 11 EUR on weekdays and 13 EUR at weekends. Open about 28 February to 1 November, Tuesday to Sunday, closed Mondays; last entry 2 hours before closing.",
       "transport": "As for the Camphor Tree of Villa Durazzo Pallavicini.",
       "paid_entry": true,
       "photo": {
@@ -442,7 +494,11 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 11/D969/GE/07",
+        "url": null
+      }
     }
   ]
 }
