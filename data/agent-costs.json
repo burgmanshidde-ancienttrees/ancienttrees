@@ -11240,5 +11240,321 @@
    "trees": 0,
    "note": "enrichment: ICNF AIP register id on 14 trees, girth/height on 12; no new trees"
   }
+ ],
+ "2026-10-11": [
+  {
+   "date": "2026-10-11",
+   "target": "zwolle",
+   "kind": "enrich",
+   "tokens": 147545,
+   "trees": 0,
+   "note": "10 trees enriched; 4 retired as register-dead"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "menorca",
+   "kind": "enrich",
+   "tokens": 156944,
+   "trees": 0,
+   "note": "6 trees: CAIB fichas, girth and height"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "miyazaki",
+   "kind": "enrich",
+   "tokens": 138896,
+   "trees": 0,
+   "note": "nothing: no per-tree id in the Japanese register file; wasted",
+   "wasted": 138896
+  },
+  {
+   "date": "2026-10-11",
+   "target": "bordeaux",
+   "kind": "enrich",
+   "tokens": 147237,
+   "trees": 0,
+   "note": "10 trees: Metropole register ids, girth, height"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "hawaii",
+   "kind": "enrich",
+   "tokens": 136957,
+   "trees": 0,
+   "note": "6 trees: register ids and girths"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "genoa",
+   "kind": "enrich",
+   "tokens": 163148,
+   "trees": 0,
+   "note": "12 trees: MASAF ids, measurements, park prices"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "nuremberg",
+   "kind": "enrich",
+   "tokens": 160294,
+   "trees": 0,
+   "note": "12 register ids, 2 measurements"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "oxford",
+   "kind": "enrich",
+   "tokens": 172584,
+   "trees": 0,
+   "note": "4 trees: Parks record, heights, access"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "toulouse",
+   "kind": "enrich",
+   "tokens": 137992,
+   "trees": 0,
+   "note": "10 register ids, no measurements"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "aarhus",
+   "kind": "enrich",
+   "tokens": 147081,
+   "trees": 0,
+   "note": "7 trees: dendron.dk records, 5 measurements"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "freiburg",
+   "kind": "enrich",
+   "tokens": 164615,
+   "trees": 0,
+   "note": "7 LUBW numbers, 1 measurement, 2 seasons"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "padua",
+   "kind": "enrich",
+   "tokens": 165062,
+   "trees": 0,
+   "note": "9 trees: MASAF ids and measurements, garden access"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "bergamo",
+   "kind": "enrich",
+   "tokens": 138420,
+   "trees": 0,
+   "note": "1 MASAF record; web never fetched, gaps wrongly buried"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "salzburg",
+   "kind": "enrich",
+   "tokens": 176125,
+   "trees": 0,
+   "note": "18 Land Salzburg ids"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "ghent",
+   "kind": "enrich",
+   "tokens": 154711,
+   "trees": 0,
+   "note": "5 inventory records"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "hallstatt",
+   "kind": "enrich",
+   "tokens": 169964,
+   "trees": 0,
+   "note": "5 Naturschutzbuch records, 4 measurements"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "salamanca",
+   "kind": "enrich",
+   "tokens": 145138,
+   "trees": 0,
+   "note": "1 of 4 trees"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "york",
+   "kind": "enrich",
+   "tokens": 138196,
+   "trees": 0,
+   "note": "6 measurements and access; register claim dropped"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "nagoya",
+   "kind": "enrich",
+   "tokens": 184299,
+   "trees": 0,
+   "note": "6 ministry records, castle access"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "stuttgart",
+   "kind": "enrich",
+   "tokens": 152713,
+   "trees": 0,
+   "note": "4 LUBW records, 1 measurement"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "bratislava",
+   "kind": "enrich",
+   "tokens": 146688,
+   "trees": 0,
+   "note": "6 register numbers; measurements withheld (citizen site only)"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "helmond",
+   "kind": "enrich",
+   "tokens": 144875,
+   "trees": 0,
+   "note": "4 LRMB records; 1 retired; much now covered by lrmb_fill.py"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "oss",
+   "kind": "enrich",
+   "tokens": 128906,
+   "trees": 0,
+   "note": "1 record; 4 register-dead trees flagged, retirement reverted (thin-place freeze)"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "rio-de-janeiro",
+   "kind": "enrich",
+   "tokens": 138195,
+   "trees": 0,
+   "note": "2 survey heights; mostly untested"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "gdansk",
+   "kind": "enrich",
+   "tokens": 159501,
+   "trees": 0,
+   "note": "3 trees"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "alkmaar",
+   "kind": "enrich",
+   "tokens": 148253,
+   "trees": 0,
+   "note": "5 LRMB records; 1 retired"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "den-bosch",
+   "kind": "enrich",
+   "tokens": 150771,
+   "trees": 0,
+   "note": "7 records; 1 retired"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "graz",
+   "kind": "enrich",
+   "tokens": 157864,
+   "trees": 0,
+   "note": "16 city register ids, park access"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "hoorn",
+   "kind": "enrich",
+   "tokens": 144614,
+   "trees": 0,
+   "note": "1 group record; 5 pins refused for missing source URL"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "lausanne",
+   "kind": "enrich",
+   "tokens": 147454,
+   "trees": 0,
+   "note": "7 city tree pages, measurements, 6 pins"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "lucca",
+   "kind": "enrich",
+   "tokens": 151475,
+   "trees": 0,
+   "note": "13 MASAF records, garden access"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "bilbao",
+   "kind": "enrich",
+   "tokens": 125236,
+   "trees": 0,
+   "note": "nothing found; wasted",
+   "wasted": 125236
+  },
+  {
+   "date": "2026-10-11",
+   "target": "ronda",
+   "kind": "enrich",
+   "tokens": 141594,
+   "trees": 0,
+   "note": "6 REDIAM fichas, measurements"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "belfast",
+   "kind": "enrich",
+   "tokens": 141263,
+   "trees": 0,
+   "note": "1 access line"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "buenos-aires",
+   "kind": "enrich",
+   "tokens": 139287,
+   "trees": 0,
+   "note": "4 Arbopedia records, heights"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "como",
+   "kind": "enrich",
+   "tokens": 149752,
+   "trees": 0,
+   "note": "9 MASAF records, Grumello hours"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "deventer",
+   "kind": "enrich",
+   "tokens": 153106,
+   "trees": 0,
+   "note": "4 trees"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "hamburg",
+   "kind": "enrich",
+   "tokens": 161644,
+   "trees": 0,
+   "note": "4 trees; register claim dropped"
+  },
+  {
+   "date": "2026-10-11",
+   "target": "trieste",
+   "kind": "enrich",
+   "tokens": 147522,
+   "trees": 0,
+   "note": "19 MASAF records"
+  }
  ]
 }

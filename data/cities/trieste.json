@@ -66,7 +66,11 @@
       "height_m": 30.0,
       "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 425,
-      "how_to_recognise": "You can recognise it by its bark, soft and fibrous rather than hard, the largest of the park's two redwoods. It stands among twelve protected trees within three hundred metres in Parco del Castello di Miramare."
+      "how_to_recognise": "You can recognise it by its bark, soft and fibrous rather than hard, the largest of the park's two redwoods. It stands among twelve protected trees within three hundred metres in Parco del Castello di Miramare.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 11/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_002",
@@ -101,7 +105,11 @@
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 410,
-      "how_to_recognise": "You can recognise it by its crown, wider than it is tall and flattened like a table, leaning inland from the bora wind. It stands among the Mediterranean species planted in Miramare park after 1856."
+      "how_to_recognise": "You can recognise it by its crown, wider than it is tall and flattened like a table, leaning inland from the bora wind. It stands among the Mediterranean species planted in Miramare park after 1856.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_003",
@@ -137,7 +145,11 @@
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 250,
-      "how_to_recognise": "You can recognise it by needles so thin and grey you can see through the crown to the sky, casting almost no shadow. It stands among Miramare's protected trees, its head-sized cones underneath it."
+      "how_to_recognise": "You can recognise it by needles so thin and grey you can see through the crown to the sky, casting almost no shadow. It stands among Miramare's protected trees, its head-sized cones underneath it.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_004",
@@ -171,7 +183,11 @@
       "height_m": 12.0,
       "verify_notes": "Height 12.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 204,
-      "how_to_recognise": "You can recognise it by its bark, peeling each summer in thin sheets to leave a bare cinnamon-coloured trunk with no fissures. It stands among Miramare's Mediterranean plantings, unusually shrub-turned-tree in size."
+      "how_to_recognise": "You can recognise it by its bark, peeling each summer in thin sheets to leave a bare cinnamon-coloured trunk with no fissures. It stands among Miramare's Mediterranean plantings, unusually shrub-turned-tree in size.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_005",
@@ -209,7 +225,11 @@
       "height_m": 34.0,
       "verify_notes": "Height 34.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 542,
-      "how_to_recognise": "You can recognise it by its trunk, 5.42 metres round, the largest tree in Trieste, its bark flaking into pale patches. It stands in the Giardino Pubblico Muzio de Tommasini on Via Giulia, its root plate recently repaved for drainage."
+      "how_to_recognise": "You can recognise it by its trunk, 5.42 metres round, the largest tree in Trieste, its bark flaking into pale patches. It stands in the Giardino Pubblico Muzio de Tommasini on Via Giulia, its root plate recently repaved for drainage.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 73/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_006",
@@ -296,7 +316,11 @@
       "height_m": 18.0,
       "verify_notes": "Height 18.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "girth_cm": 179,
-      "how_to_recognise": "You can recognise it by acorns capped in thick shaggy cups, the only valonia oak in the whole region. It stands in the Giardino Pubblico Muzio de Tommasini, modest in size but rare rather than large."
+      "how_to_recognise": "You can recognise it by acorns capped in thick shaggy cups, the only valonia oak in the whole region. It stands in the Giardino Pubblico Muzio de Tommasini, modest in size but rare rather than large.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 65/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_008",
@@ -365,7 +389,11 @@
       },
       "height_m": 22.0,
       "verify_notes": "Height 22.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 396
+      "girth_cm": 396,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 41/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_010",
@@ -399,7 +427,11 @@
       },
       "height_m": 24.0,
       "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 358
+      "girth_cm": 358,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 49/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_011",
@@ -433,6 +465,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 05/L424/TS/06",
+        "url": null
       }
     },
     {
@@ -466,6 +502,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 61/L424/TS/06",
+        "url": null
       }
     },
     {
@@ -548,6 +588,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 70/L424/TS/06",
+        "url": null
       }
     },
     {
@@ -582,7 +626,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_016",
@@ -616,7 +664,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 22/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_017",
@@ -686,7 +738,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 04/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_019",
@@ -721,7 +777,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 47/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_020",
@@ -765,7 +825,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 69/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_021",
@@ -801,7 +865,11 @@
       },
       "photos": [],
       "height_m": 15.0,
-      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 15.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 09/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_022",
@@ -837,7 +905,11 @@
       },
       "photos": [],
       "height_m": 27.0,
-      "verify_notes": "Height 27.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 27.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 24/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_023",
@@ -873,7 +945,11 @@
       },
       "photos": [],
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 18/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_024",
