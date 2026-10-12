@@ -1794,7 +1794,9 @@ struct TreeDetail: View {
                     .padding(.horizontal, 14)
                     .frame(minHeight: 44)
                     .background(.regularMaterial, in: .capsule)
-                    .padding(10)
+                    // On the page's own 20 point edge, like every other
+                    // left edge on the tree page (appfit DRIFT, 2026-10-12).
+                    .padding(.leading, 20).padding(.top, 10)
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("tree-add-photo")
