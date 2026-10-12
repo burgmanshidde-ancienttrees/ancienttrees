@@ -1,0 +1,176 @@
+{
+ "_note": "nl overlay for amersfoort, written 2026-10-12 from data/cities/amersfoort.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Amersfoort",
+ "title": "Monumentale bomen in Amersfoort: de 18 mooiste",
+ "meta_description": "Achttien bijzondere bomen in Amersfoort: een trompetboom op een stadswal uit de veertiende eeuw, een eik die een snelweg overleefde en een schoolplataan.",
+ "intro": "Rond 1388 bouwde Amersfoort een tweede stadsmuur, het zwaarst aan de noordoostkant, want uit die richting zou Gelre komen. De muur is grotendeels verdwenen, en wat ervan over is, is een park met oude bomen die uit de wal groeien, waaronder een trompetboom die zo uitbundig bloeit dat mensen blijven staan. De oudste boom van de stad staat er ver vandaan: een eik op een kruispunt dat de Hertekop heet, waar een jachthuis vol geweien een café werd, daarna een trefpunt en ten slotte een snelwegknooppunt. De eik is wat er over is.",
+ "question_title": "Wat is de oudste boom van Amersfoort? (225 tot 275 jaar)",
+ "question_meta": "De oudste boom van Amersfoort is de eik bij de Hertekop, geplant tussen 1750 en 1800. Waar hij staat, plus zeventien andere bomen om naartoe te lopen.",
+ "question_answer": "De oudste boom van Amersfoort is de eik bij de Hertekop, aan de Arnhemseweg waar die de Dodeweg kruist, naast de afrit van de A28. Het landelijke register plaatst hem in een plantperiode van 1750 tot 1800, dus hij is ongeveer 225 tot 275 jaar oud. Het kruispunt dankt zijn naam aan een jachthuis dat hier ooit stond, met hertengeweien op de gevel. Dat gebouw werd een herberg, daarna een bekend trefpunt en vertrekpunt voor wandelingen en uitstapjes, en verdween toen er een zuidelijke ringweg om de stad werd aangelegd, die later werd aangesloten op een nieuwe hoofdweg vanuit Utrecht. Het knooppunt dat daarvan overbleef, lijkt in niets op de plek waar de boom werd geplant. De eik is het enige deel van de Hertekop dat nog overeind staat.",
+ "question_context": "De leeftijden op deze pagina komen uit het Landelijk Register Monumentale Bomen, dat een plantdecennium vastlegt en geen jaartal. Elke leeftijd hier is dus een bandbreedte, en geen enkele is smaller gemaakt om preciezer te lijken. Het register is de editie van 2024 en de belangrijkste bron voor deze bomen, en daarom hebben ze allemaal een kanttekening. Eén geval is bijzonder. De plataan aan de Schimmelpenninckkade groeit op het schoolplein van de Sint Jorisschool, en een eerdere versie van deze pagina liet hem om die reden weg. Hij staat er nu bij omdat het register hem zowel bezoekbaar als zichtbaar noemt, en omdat je de hele kroon kunt zien vanaf de openbare kade. Daar stuurt deze pagina je ook heen: het plein is een school in gebruik en geen plek om zomaar op te lopen. Waar het register iets zegt over de conditie van een boom, geven we dat door, zoals bij de treurzilverlinde in Park Schothorst, waarvan de wortelaanloop voortdurend wordt belopen en die zich daar volgens het register goed tegen houdt. Een speld die als benaderd is gemarkeerd, betekent dat we de plek kennen maar niet de precieze stam.",
+ "faq": [
+  {
+   "q": "Wat is de oudste boom van Amersfoort?",
+   "a": "De eik bij het kruispunt de Hertekop aan de Arnhemseweg, door het landelijke register geplaatst in de periode 1750 tot 1800. Hij is ouder dan de ringweg, de hoofdweg en het knooppunt die hem nu omringen, en ouder dan het jachthuis waaraan de plek haar naam dankt."
+  },
+  {
+   "q": "Waarom ligt er een park op de stadswal?",
+   "a": "Omdat de muur verdween en de aarden wal niet. De tweede stadsmuur van Amersfoort werd rond 1388 gebouwd, met de nadruk op de noordoostkant, tegen de dreiging uit Gelre. Wat ervan over is in het Plantsoen Oost werd als park aangelegd, dus de oude bomen daar staan op een veertiende-eeuwse wal."
+  },
+  {
+   "q": "Wat is een treurzilverlinde?",
+   "a": "Een geënte cultivar. Een treurvorm wordt op een gewone lindeonderstam gezet, dus aan de boom in Park Schothorst vind je twee verschillende bladeren: gewone aan scheuten die onder de entplaats uit de onderstam opkomen, en daarboven de langgesteelde bladeren van de cultivar 'Petiolaris' aan overhangende takken."
+  },
+  {
+   "q": "Zijn ze gratis te bezoeken?",
+   "a": "Ja, allemaal, met twee kanttekeningen. Het Plantsoen Oost en Park Schothorst zijn openbare parken, de eik bij de Hertekop staat bij een kruispunt, en de meeste andere staan aan straten, op pleinen en op een begraafplaats. De plataan van de Sint Jorisschool staat op een schoolplein, dus die bekijk je vanaf de Schimmelpenninckkade in plaats van naar binnen te lopen. De moerascipres bij de Monnikendam staat in een particuliere tuin en bekijk je vanaf de Zuidsingel of de brug."
+  }
+ ],
+ "strings_note": "Velden per boom: name, species (Nederlandse naam, dezelfde Latijnse naam), age_estimate, access, transport, story. Verhalen 150 tot 250 woorden, dezelfde lat als het Engels, geen gedachtestreepjes.",
+ "trees": {
+  "ame_001": {
+   "name": "De trompetboom op de stadswal",
+   "species": "Trompetboom (Catalpa bignonioides)",
+   "age_estimate": "ruwweg 125 tot 135 jaar, uit de plantperiode 1890 tot 1900 van het register",
+   "access": "Gratis. Openbaar park op de oude wal, altijd open.",
+   "transport": "Ongeveer 1 km ten oosten van station Amersfoort, aan de oostrand van de oude binnenstad.",
+   "story": "Hij groeit op een verdedigingswal die bedoeld was om de hertog van Gelre buiten te houden.\n\nRond 1388 bouwde Amersfoort een tweede stadsmuur en stak de meeste moeite in de noordoostkant, want van die kant werden de problemen verwacht. De muur is grotendeels verdwenen. De aarden wal waarop hij stond niet, en het Plantsoen Oost is wat de stad van die resten heeft gemaakt: een smal park langs de oude wal, met grote bomen die wortelen in zes eeuwen aangestampte vestingaarde.\n\nDe trompetboom staat achter Binnen de Veste 41, en het register noemt hem speciaal om zijn bloei. Terecht. Een trompetboom bloeit eind juni en begin juli, weken nadat al het andere is uitgebloeid, met rechtopstaande pluimen witte klokjes die van binnen geel en paars getekend zijn. Aan een volwassen boom hangen er honderden tegelijk.\n\nDaarna komen de peulen. Slanke peulen tot veertig centimeter lang hangen de hele winter aan de kale boom. Daar komt de Engelse naam Indian bean tree vandaan, en daarom is hij ook in januari een blik waard.\n\nEnorme hartvormige bladeren, en hij loopt later uit dan wat dan ook in het park."
+  },
+  "ame_002": {
+   "name": "De eik bij de Hertekop",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 225 tot 275 jaar, uit de plantperiode 1750 tot 1800 van het register",
+   "access": "Gratis. Staat in de berm bij een openbaar kruispunt.",
+   "transport": "Ongeveer 3 km ten zuiden van station Amersfoort, op de kruising van de Arnhemseweg en de Dodeweg.",
+   "story": "Alles op dit kruispunt is vervangen, behalve de boom.\n\nDe plek heette de Hertekop, naar een jachthuis dat hier stond met hertengeweien op de gevel. Het jachthuis werd een herberg. De herberg werd zo'n plek die iedereen in de stad kent, waar je afsprak en waar wandelingen en uitstapjes begonnen. Toen werd er een zuidelijke ringweg om Amersfoort aangelegd, later aangesloten op een nieuwe hoofdweg vanuit Utrecht, en de plek werd onherkenbaar. Het jachthuis verdween.\n\nWat hier nu ligt, is een afrit van de A28 en een kruising van de Arnhemseweg en de Dodeweg. Wat hier ook staat, is een eik die het register in de periode 1750 tot 1800 plaatst. Hij was al een flinke boom toen het jachthuis nog in bedrijf was, en hij is het oudste levende ding in Amersfoort.\n\nMooi is de omgeving niet, en juist dat is de reden om te gaan. Tweeënhalve eeuw waarin een plek zich steeds opnieuw rond één vast punt heeft ingericht, en dat vaste punt is een boom die niemand bewust heeft gespaard. Er is alleen nooit iemand aan toegekomen hem weg te halen.\n\nParkeer aan de Dodeweg en probeer niet te stoppen op de Arnhemseweg."
+  },
+  "ame_003": {
+   "name": "De rode beuk van de Xaveriuskerk",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ruwweg 185 tot 195 jaar, uit de plantperiode 1830 tot 1840 van het register",
+   "access": "Gratis. Staat op het kerkterrein aan 't Zand, bij daglicht bereikbaar.",
+   "transport": "Ongeveer 900 m ten oosten van station Amersfoort, aan 't Zand.",
+   "story": "De kerk werd gebouwd tussen 1881 en 1883. Toen de eerste steen werd gelegd, was de beuk al ongeveer vijftig jaar oud.\n\nDaar mag je even bij stilstaan. Bij elke kerk met een grote boom ernaast ligt de gedachte voor de hand dat iemand de boom bij het gebouw heeft geplant. Hier zegt het register uitdrukkelijk dat het andersom zit: met een plantperiode van 1830 tot 1840 is de beuk een halve eeuw ouder dan de kerk, en wie deze grond uitkoos, koos een stuk grond met een volwassen beuk erop.\n\nHet register geeft hem ook een gezondheidsoordeel mee, en dat is het doorgeven waard. Het noemt de boom redelijk goed voor zijn leeftijd en voor zijn standplaats in stedelijk gebied. Een zuinig compliment, en een eerlijk. Rode beuken hebben het zwaar in de stad: ondiepe zuigwortels onder de bestrating, strooizout, en geen bladafval dat terug de bodem in kan rotten.\n\nRode beuk is geen soort. Het is een mutatie van de gewone beuk met paars blad, die af en toe in het wild opduikt en daarna door enten wordt vermeerderd. Bijna elk exemplaar dat je tegenkomt, is dus door iemand uitgekozen.\n\nIn oktober kleurt het paars door naar koper, en dat is de beste week om te komen."
+  },
+  "ame_004": {
+   "name": "De plataan van de Snouckaertlaan",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 185 tot 195 jaar, uit de plantperiode 1830 tot 1840 van het register",
+   "access": "Gratis. Straatboom op openbare grond.",
+   "transport": "Ongeveer 500 m ten zuidoosten van station Amersfoort, aan het begin van de Snouckaertlaan.",
+   "story": "Een plataan van deze leeftijd op een Nederlandse straathoek is een boom die elk plan voor de grond onder hem heeft overleefd.\n\nHet register plaatst hem in de periode 1830 tot 1840. Daarmee stond hij hier al voordat de villawijk om hem heen er was, voordat de Utrechtseweg de weg werd die hij nu is, en voordat bijna alle gebouwen waartussen hij staat werden neergezet. Bijna twee eeuwen op de hoek van de Snouckaertlaan, terwijl de stad zich om hem heen opnieuw indeelde.\n\nPlatanen krijgen dit werk omdat ze beter tegen een stootje kunnen dan wat ook van hun formaat. Aangestampte grond, wortels die voor kabels worden doorgehakt, strooizout, uitlaatgassen, zware snoei: een plataan haalt er zijn schouders over op en groeit weer aan. De soort is een hybride, waarschijnlijk van de oosterse plataan en de Amerikaanse plataan, en dook in de zeventiende eeuw op in Europese tuinen, als toevalstreffer van twee exotische bomen die bij elkaar in de buurt stonden.\n\nDe bast verraadt hem, en verklaart ook waarom hij het in de stad redt. Die schilfert af in onregelmatige platen en neemt alles mee wat zich erop heeft afgezet. De stam blijft zo een camouflagepatroon van crème, olijfgroen en grijs dat nooit zwart wordt.\n\nDe zaadbollen hangen de hele winter aan steeltjes, als kleine harde vruchten."
+  },
+  "ame_005": {
+   "name": "De treurzilverlinde van Park Schothorst",
+   "species": "Zilverlinde (Tilia tomentosa)",
+   "age_estimate": "ruwweg 185 tot 195 jaar, uit de plantperiode 1830 tot 1840 van het register",
+   "access": "Gratis. Openbaar park, dagelijks open.",
+   "transport": "Ongeveer 3 km ten noorden van station Amersfoort, in Park Schothorst.",
+   "story": "Aan deze boom groeien twee verschillende soorten blad, en je kunt ze allebei vinden zonder een stap te verzetten.\n\nHet is een geënte treurlinde. De treurvorm, 'Petiolaris', is niet uit zaad te kweken en wordt op een gewone lindeonderstam gezet. De boom bestaat dus eigenlijk uit twee planten die één stam delen. Boven de entplaats buigen de takken uit en hangen af, met bladeren aan ongewoon lange stelen, zodat elk blad kan draaien en zijn witviltige onderkant laat zien. Onder de entplaats blijft de onderstam eigen scheuten maken, en daaraan zitten gewone lindebladeren aan korte stelen. Zoek laag aan de stam naar het gewone blad en kijk omhoog de hangende takken in voor de langgesteelde soort.\n\nHet register noemt ook de wortelaanloop, die ongewoon sterk ontwikkeld is en waar voortdurend overheen wordt gelopen, en voegt eraan toe dat de boom zich daar goed tegen lijkt te houden. Een eerlijke manier om te zeggen dat hij langzaam beschadigd raakt en toch wint.\n\nHij staat achter in Park Schothorst, aan de bosrand, met een plantperiode van 1830 tot 1840.\n\nKom in juli. Zilverlindes bloeien laat, en de geur van een boom van dit formaat draagt ver door een bos."
+  },
+  "ame_006": {
+   "name": "De rode beuk achter de Amershof",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ruwweg 135 tot 145 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Vanaf de straat aan de achterkant van het gebouw te zien en te bereiken.",
+   "transport": "Ongeveer 700 m ten oosten van station Amersfoort, aan de Burgemeester De Widtstraat.",
+   "story": "Hij staat bij de achteringang van een evenementenlocatie. Dat is een degradatie, en juist daarom is hij het bekijken waard.\n\nEen rode beuk die tussen 1880 en 1890 de grond in ging, is geplant door iemand die een tuin aanlegde. Niemand plant een rode beuk bij een dienstingang. Deze boom heeft dus de gebruikelijke reeks van een binnenstad doorlopen: een particuliere tuin, een nieuwe eigenaar, een gebouw dat over het grootste deel van de grond werd uitgebreid, en de boom die bleef staan op het restje dat de uitbreiding niet nodig had. Dat restje lag toevallig bij de achterdeur.\n\nHet is een gewoon verhaal, en het verklaart een opvallend groot deel van de grote oude bomen in elke Nederlandse binnenstad. De bomen die overleven, zijn zelden de bomen die gekoesterd werden. Het zijn de bomen die stonden waar niemand wilde bouwen.\n\nWat je krijgt, is een volgroeide rode beuk op een klein, verhard plekje aan de Burgemeester De Widtstraat, donker en dicht en flink te groot voor zijn omgeving. Een goede les in wat de soort doet als alleen bestrating hem in toom houdt.\n\nOp zijn best in oktober en, om een andere reden, in april, als het nieuwe blad doorschijnend rood uitloopt voordat het donkerder wordt."
+  },
+  "ame_007": {
+   "name": "De rode beuk bij de Zonnehof",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ruwweg 135 tot 145 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Te voet bereikbaar vanaf de Zonnehof, altijd toegankelijk.",
+   "transport": "Ongeveer 500 m ten zuidoosten van station Amersfoort, bij de Zonnehof.",
+   "story": "De Zonnehof is een open stuk grond aan de rand van de oude binnenstad waar de twintigste eeuw de hand op heeft gelegd, en deze beuk stond er al voor alles wat daar kwam.\n\nMet een plantperiode van 1880 tot 1890 hoort hij bij de villatuinen langs de Utrechtseweg, uit de tijd dat dit de deftige toegang tot de stad was en nog geen doorgaande weg. Die tuinen zijn weg. De beuk staat aan de noordoostkant van Zonnehof 2, achter het gebouw aan de Utrechtseweg, oftewel in het gat tussen twee bouwperiodes.\n\nOnder een rode beuk in de stad staan is een ervaring waarvoor je gerust moeite mag doen. De bladeren zijn dun en het paarse pigment werkt als een filter, niet als een laklaag, dus fel licht dat door een volwassen kroon valt, komt eronder aan als diep wijnrood. Foto's krijgen het nooit te pakken, want een camera corrigeert het weg. Je moet eronder staan, en het vraagt om een heldere dag.\n\nHij staat op korte loopafstand van de plataan aan de Snouckaertlaan en de beuk achter de Amershof, dus alle drie passen in twintig minuten.\n\nDe vierde week van oktober, als je hem in volle kleur wilt zien."
+  },
+  "ame_008": {
+   "name": "De plataan van de Sint Jorisschool",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 175 tot 185 jaar, uit de plantperiode 1840 tot 1850 van het register",
+   "access": "Gratis te bekijken. De boom staat op het schoolplein van de Sint Jorisschool en de hele kroon is te zien vanaf de Schimmelpenninckkade, een openbare kade. Het register noemt hem bezoekbaar, maar het is een schoolplein in gebruik, dus blijf op de kade en loop niet naar binnen.",
+   "transport": "Ongeveer 15 minuten lopen van Amersfoort Centraal, aan de Schimmelpenninckkade langs de Eem.",
+   "story": "Toen de Sint Jorisschool in 1910 werd gebouwd, was deze plataan al zeventig jaar oud, en de bouwers lieten hem staan. Sindsdien staat hij op een schoolplein.\n\nHij werd geplant tussen 1840 en 1850, toen het terrein nog een groene strook langs de kade van de Eem was. In 1910 werd die strook bebouwd en ging de nieuwe school open met vier klassen aan de kadekant, met een volgroeide boom ervoor. Dat gebouw werd in 1992 gesloopt en de opvolger kwam er meteen achteraan. Het register merkt droogjes op dat de boom tijdens de werkzaamheden redelijk goed beschermd was.\n\nHij is nu bijna tweehonderd jaar oud, zes meter in omtrek op borsthoogte en 27,8 meter hoog, met een kroon van zevenentwintig meter breed. Dat is breder dan het plein waarop hij staat.\n\nVroeger stonden er bankjes rond de voet voor de leerlingen. Eind 2021 ging de bestrating eruit, kreeg het plein een laag houtsnippers en verdwenen een paar bankjes. De kinderen verhuisden naar de wortels. Het oordeel van het register daarover, na alles wat deze boom al heeft doorstaan: hij lijkt het goed te verdragen.\n\nVanaf de kade zie je de hele kroon."
+  },
+  "ame_009": {
+   "name": "De plataan van de katholieke begraafplaats",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 126 tot 136 jaar, uit de plantperiode 1890 tot 1900 van het register",
+   "access": "Gratis. Begraafplaats, overdag open.",
+   "transport": "Ongeveer 625 m ten zuiden van station Amersfoort, aan de Utrechtseweg.",
+   "story": "Deze plataan staat in de zuidwesthoek van de katholieke begraafplaats aan de Utrechtseweg en is inmiddels zo hoog dat je hem vanaf de straat boven de muur uit ziet komen.\n\nEind negentiende eeuw werden er op Nederlandse begraafplaatsen platanen geplant om een praktische reden: de soort verdraagt aangestampte grond en zware schaduw beter dan bijna alles wat zo groot wordt, en dat telt op grond vol paden en graven. De bast laat in plakken ter grootte van een hand los wanneer de stam uit zijn eigen huid groeit. Wat overblijft is een gevlekt patroon van grijs, groen en crème, en dat is gewoon hoe een gezonde plataan eruitziet, geen schade.\n\nHet register plaatst de aanplant in de jaren 1890, zodat hij net iets meer dan vijf kwart eeuw oud is. Bomen op een begraafplaats als deze behoren tot de minst verstoorde bomen van elke Nederlandse stad, want niemand snoeit een kerkhofboom omdat hij er slordig uitziet, zoals een straatboom wordt teruggezet.\n\nGratis te bezoeken. De begraafplaats is overdag open, zoals gebruikelijk bij een katholieke begraafplaats die nog in gebruik is, en een wandeling tussen de graven brengt je recht onder de kroon."
+  },
+  "ame_010": {
+   "name": "De rode beuk van de oude bibliotheek",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ruwweg 156 tot 166 jaar, uit de plantperiode 1860 tot 1870 van het register",
+   "access": "Gratis. Te voet bereikbaar vanaf de Zonnehof, altijd toegankelijk.",
+   "transport": "Ongeveer 766 m ten zuidoosten van station Amersfoort, bij de Zonnehof.",
+   "story": "Deze rode beuk staat waar vroeger de openbare bibliotheek van Amersfoort was, aan de oostkant van de Zonnehof, en hij heeft het gebouw overleefd waar hij ooit naast stond. De bibliotheek is weg. De boom niet.\n\nRode beuk is geen aparte soort maar een kleurvorm van de gewone beuk. De bladeren dragen een rood pigment bovenop het gewone groen, en daarom leest de hele kroon van een afstand als donker paarsbrons in plaats van groen. Amersfoort heeft er in de binnenstad meer dan één van in het register staan, en dit is een van de oudste.\n\nHet register plaatst de aanplant in de jaren 1860. Daarmee is hij ruim anderhalve eeuw oud en tien tot twintig jaar ouder dan de rode beuken bij de Amershof en bij het gebouw aan de Zonnehof, allebei vlakbij.\n\nGratis, een openbare groenstrook midden in de stad, zonder hek.\n\nOktober is de maand, als het koper vlak voor de bladval bijna naar zwart verdiept. Wie de drie beuken op één middag wil zien, loopt ze in een kwartier langs."
+  },
+  "ame_011": {
+   "name": "De tamme kastanje van de oude kazerne",
+   "species": "Tamme kastanje (Castanea sativa)",
+   "age_estimate": "ruwweg 116 tot 126 jaar, uit de plantperiode 1900 tot 1910 van het register",
+   "access": "Gratis, openbaar park, dagelijks open.",
+   "transport": "Ongeveer 906 m ten zuiden van station Amersfoort, in het Juliana van Stolbergpark.",
+   "story": "Deze tamme kastanje groeit op wat het register zelf voormalig kazerneterrein noemt, aan de kant van de Leusderweg van wat nu het Juliana van Stolbergpark is.\n\nCastanea sativa levert de enige echt eetbare kastanje onder de monumentale bomen van Amersfoort, iets heel anders dan de oneetbare vruchten van de paardenkastanjes elders op deze pagina. De bladeren zijn lang, smal en scherp getand langs de rand, en in een Nederlands park in één oogopslag van elke andere boom te onderscheiden. In oktober splijten de stekelige bolsters open op de grond en vallen er kastanjes uit waar je echt iets mee kunt.\n\nHet register plaatst de aanplant tussen 1900 en 1910. Hij ging dus de grond in toen dit nog militair terrein in gebruik was, en nog geen openbaar groen. Een kastanje die voor de schaduw op een kazerneterrein werd geplant, heeft de kazerne inmiddels met een eeuw overleefd.\n\nGratis, openbaar park, dagelijks open.\n\nOktober is de maand, als de bolsters vallen. Raap op wat gevallen is in plaats van te plukken wat nog aan de boom hangt, en reken op concurrentie van de eekhoorns."
+  },
+  "ame_012": {
+   "name": "De Hongaarse eik van Randenbroek",
+   "species": "Hongaarse eik (Quercus frainetto)",
+   "age_estimate": "ruwweg 156 tot 166 jaar, uit de plantperiode 1860 tot 1870 van het register",
+   "access": "Gratis. Openbare groenstrook, zonder hek.",
+   "transport": "Ongeveer 1,3 km ten zuidoosten van station Amersfoort, in Randenbroek.",
+   "story": "De meeste eiken in een Nederlands park zijn inheemse zomereiken. Deze niet: het is een Hongaarse eik, afkomstig uit de Balkan en Zuidoost-Europa, en de bladeren verraden hem meteen. Ze glanzen meer en zijn dieper ingesneden dan die van welke inheemse eik ook, met lobben die bijna tot de middennerf reiken.\n\nQuercus frainetto werd in Noord-Europa aangeplant om een praktische reden: hij verdraagt armere, drogere grond dan de inheemse eik en groeit toch uit tot een brede, forse kroon. Deze staat op wat ooit een parkeerplaats was in de wijk Randenbroek, nu een groenstrook aan de Rubensstraat. Dat zegt iets over hoe een boom van dit formaat meerdere bestemmingen van de grond onder hem kan uitzitten.\n\nHet register plaatst de aanplant in de jaren 1860. Daarmee is hij ruwweg anderhalve eeuw oud en een van de ongewonere soorten in het register binnen de stad Amersfoort zelf.\n\nGratis, openbare groenstrook, zonder hek, altijd toegankelijk.\n\nEr is geen maand waarin hij spectaculair is. De reden om hem op te zoeken is simpelweg dat het niet de eik is die je al kent, en dat hij in een gewone woonstraat staat in plaats van in een statig park."
+  },
+  "ame_013": {
+   "name": "De paardenkastanje op het Stationsplein",
+   "species": "Paardenkastanje (Aesculus hippocastanum)",
+   "age_estimate": "ruwweg 96 tot 106 jaar, uit de plantperiode 1920 tot 1930 van het register",
+   "access": "Gratis. Openbaar plein, geen kaartje nodig.",
+   "transport": "Ongeveer 100 m van Amersfoort Centraal, op het Stationsplein.",
+   "story": "De geregistreerde paardenkastanje van Amersfoort staat op het Stationsplein zelf. Op een gewone dinsdag lopen er waarschijnlijk meer mensen langs deze boom dan er in een maand langs welke andere boom op deze pagina ook komen.\n\nAesculus hippocastanum is de klassieke kaarsenbloeier van Europese pleinen en lanen, en deze doet dat werk sinds de jaren 1920, waar het register de aanplant plaatst, op een van de drukste openbare plekken van de stad. Hij heeft het zwaarder gehad dan een parkboom van dezelfde leeftijd. De paardenkastanjemineermot, sinds ongeveer 2002 in Nederland, kleurt eind van de zomer het blad van bijna elke kastanje in het land bruin, en de kastanjebloedingsziekte heeft sinds de jaren negentig in de hele regio volwassen bomen gedood. Een eeuwoude kastanje die nog overeind staat op een stationsplein, met forenzen en bussen die er dagelijks onderdoor gaan, is een boom die het heeft volgehouden.\n\nGratis te zien, geen kaartje, vlak voor het hoofdstation van Amersfoort.\n\nKom in de eerste helft van mei voor de witte bloeikaarsen, voordat de mineermot later in de zomer zijn gebruikelijke schade aanricht."
+  },
+  "ame_014": {
+   "name": "De rode paardenkastanje bij de toren",
+   "species": "Rode paardenkastanje (Aesculus x carnea)",
+   "age_estimate": "ruwweg 136 tot 146 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Openbare straat, zonder hek.",
+   "transport": "Ongeveer 850 m ten oosten van station Amersfoort, tussen de toren en de Varkensmarkt.",
+   "story": "Deze roodbloeiende kastanje staat tussen de Onze Lieve Vrouwetoren, de vrijstaande middeleeuwse toren van Amersfoort, en het oude plein de Varkensmarkt. Daarmee is hij een van de vaakst gefotografeerde achtergronden van de stad, zonder dat iemand het speciaal op de boom gemunt heeft.\n\nAesculus x carnea is een kruising tussen de bekende witbloeiende paardenkastanje en een kleinere, roodbloeiende Amerikaanse soort. De kruising houdt het formaat van de Europese ouder en leent de roze tot rode bloemkleur van de Amerikaanse, en dat onderscheidt hem van de gewone paardenkastanje op het Stationsplein.\n\nHet register plaatst de aanplant in de jaren 1880, ruim voorbij zijn eerste eeuw. Hij groeit in de schaduw van een toren die er sinds de vijftiende eeuw staat, en naast die toren ziet zelfs een boom van deze leeftijd er jong uit.\n\nGratis, openbare straat, zonder hek.\n\nMei is de maand voor de roze kaarsen, die een week of twee gelijk oplopen met de witte paardenkastanje bij het station. Een korte wandeling tussen de twee laat dus beide kleuren tegelijk zien."
+  },
+  "ame_015": {
+   "name": "De moerascipres bij de Monnikendam",
+   "species": "Moerascipres (Taxodium distichum)",
+   "age_estimate": "ongeveer 190 jaar",
+   "access": "Gratis te bekijken vanaf de Zuidsingel en de brug bij de Monnikendam. De boom staat in een particuliere tuin achter het hek; het register noemt hem zichtbaar maar niet bezoekbaar, en de tuin is niet toegankelijk.",
+   "transport": "Ongeveer 400 m ten oosten van station Amersfoort, naast de historische waterpoort Monnikendam aan de Zuidsingel en Kortegracht.",
+   "story": "De oudste boom van deze tuin staat er niet meer. Een rode beuk uit 1750, door de Bomenstichting gerekend tot de twintig oudste bomen van het land, stond achter de Monnikendam tot hij werd gekapt. De cipres aan de overkant van het water staat er nog, en drie afzonderlijke bronnen zijn het eens over het jaar waarin hij werd geplant: 1830.\n\nDie overeenstemming is het noemen waard, want ze komt bijna nooit voor. Het landelijke bomenregister, een stadsnatuurwandeling met banden met Wageningen en het bomenwandelingboekje van de gemeente zelf zetten alle drie een Taxodium distichum in deze particuliere tuin, en geven alle drie hetzelfde plantjaar. Dat maakt de boom ongeveer 190 jaar oud.\n\nHet is een conifeer die zich gedraagt als een loofboom. In zijn thuisgebied, de moerasbossen van het zuidoosten van Amerika, staat hij in stilstaand water en duwt hij houtige knieën omhoog door de modder. Hier kleurt hij in november roestrood, laat hij elke naald vallen en ziet hij er de hele winter dood uit, tot hij laat in het voorjaar weer uitloopt.\n\nAchter hem ligt de Monnikendam zelf, de waterpoort van de tweede stadsmuur, gebouwd rond 1400 en nu een restaurant. De tuin is particulier en je kunt er niet in. Je bekijkt de boom vanaf de Zuidsingel of vanaf de brug, precies zoals de natuurwandeling hem beschrijft: links van het water, een oude cipres."
+  },
+  "ame_016": {
+   "name": "De Koningslinde aan de Stadsring",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ongeveer 90 jaar",
+   "access": "Gratis. Staat op een verhoogd stenen plateau op een openbare straathoek, zonder hek.",
+   "transport": "Ongeveer 230 m ten noordwesten van station Amersfoort, op de hoek van de Stadsring en de Molenstraat.",
+   "story": "Twee officiële bronnen zijn het erover eens dat deze linde voor het Huis van Oranje werd geplant, en oneens over de gelegenheid. Het landelijke bomenregister noemt hem de Juliana-Bernhardboom, voor het huwelijk van prinses Juliana en prins Bernhard in januari 1937. Het bomenwandelingboekje van de gemeente beschrijft dezelfde boom op hetzelfde verhoogde stenen plateau op deze hoek en zegt dat hij in 1938 werd geplant, voor de geboorte van prinses Beatrix. Beide jaren vallen binnen de plantperiode van 1930 tot 1940 uit het register, de twee gebeurtenissen liggen een jaar uit elkaar, en niets wat wij vonden beslist welke van de twee deze boom markeert.\n\nDe verwarring is bijna de schuld van de boom zelf. Het is een Koningslinde, een selectie van de Hollandse linde die in Nederland speciaal is gekweekt om bij koninklijke gelegenheden te planten: de boom die een gemeenteraad bestelt als een huwelijk, een kroning of een geboorte in hout moet worden vastgelegd. Amersfoort had er binnen dertien maanden twee, en zette een linde op een plateau op de hoek van de Stadsring en de Molenstraat.\n\nWelke gebeurtenis hij ook herdenkt, hij stond er voor de bezetting en hij staat er nog. Beatrix werd geboren, werd koningin, regeerde drieëndertig jaar en trad in 2013 af, en al die tijd hield de linde zijn plateau op een van de drukste hoeken van de stad."
+  },
+  "ame_017": {
+   "name": "De laatste linde van de Westsingel",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ongeveer 250 jaar",
+   "access": "Gratis. Openbare straat en plantsoen naast de brug naar Museum Flehite, altijd toegankelijk.",
+   "transport": "Ongeveer 420 m ten noorden van station Amersfoort, aan de Westsingel naast de brug naar Museum Flehite.",
+   "story": "Deze linde is hol, van binnen weggerot, en de laatste van zijn rij. Elk voorjaar loopt hij nog volledig uit.\n\nDe vermelding in het register gold oorspronkelijk voor een hele rij Hollandse lindes langs de Westsingel, geplant ergens tussen 1750 en 1800. Er is er één over. Het bomenwandelingboekje van de gemeente zet een Hollandse linde op precies deze plek bij de brug naar Museum Flehite en dateert hem op 1800, de jonge kant van de periode in het register. Het eerlijke getal ligt dus ergens tussen 225 en 275 jaar, niet op één jaartal waar iemand op kan wijzen. Naast hem zijn inmiddels jonge lindes geplant, en dat maakt de vergelijking makkelijk: dezelfde soort, een fractie van de omvang.\n\nDat hij hol is, is niet het noodgeval waar het naar klinkt. Een linde leeft in zijn buitenste hout, en het hart kan helemaal wegrotten terwijl de boom blad blijft maken. Knotten, de vorm die het register voor deze boom vastlegt, rekt zo'n loopbaan eerder op dan dat het hem bekort.\n\nHij staat voor een museum met in de collectie een geschilderd gezicht op Amersfoort uit 1671, gemaakt zo'n eeuw voordat iemand deze linde de grond in zette. Deze boom is de laatste van de laan die ooit langs de singel stond, en hij doet het werk van allemaal."
+  },
+  "ame_018": {
+   "name": "De linde van de Havik",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ongeveer 140 jaar",
+   "access": "Gratis. Openbare straat langs de gracht in de oude binnenstad, zonder hek.",
+   "transport": "Ongeveer 400 m ten noorden van station Amersfoort, aan de Havik bij de Bolle brug.",
+   "story": "Elke andere oude linde langs deze kade werd stevig teruggezet en moest opnieuw uitgroeien. Deze werd met rust gelaten, en het is de boom die de Havik nog altijd zijn vorm geeft. Het landelijke register zegt in zijn eigen geschiedenis van de Havik-linde dat de twee rijen die ooit aan weerszijden van het water stonden op enig moment allemaal verjongd zijn, behalve deze, en dat hij gezond is.\n\nHet water waaraan hij staat, was een werkhaven. Havik komt van Havenwijk, de havenbuurt, en aan deze korte gracht laadde en loste het middeleeuwse Amersfoort, voordat de handel verder trok en de kade een straat met huizen werd, met een brug in het midden.\n\nOver de leeftijd lopen de bronnen uiteen. Het register van de Bomenstichting zet de aanplant tussen 1880 en 1890, het getal dat wij aanhouden, en plaatst de boom naast de Bolle brug. Een oudere stadsnatuurwandeling beschrijft de overgebleven Havik-linde als geplant in 1850, tegenover Krommestraat 1, een paar deuren verderop in dezelfde rij. Dertig of veertig jaar verschil, en misschien niet eens dezelfde boom: de twee verslagen kunnen één linde beschrijven die twee keer is gedateerd, of twee overlevenden van dezelfde aanplant. Wij geven de plek en de periode van het register, en markeren de rest in plaats van het nettere verhaal te kiezen."
+  }
+ }
+}
