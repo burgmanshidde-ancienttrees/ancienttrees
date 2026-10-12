@@ -55,6 +55,11 @@ def day_bounds(day):
 def report(day):
     costs = json.load(open(COSTS)) if os.path.exists(COSTS) else {"days": {}}
     rows = costs.get("days", {}).get(day, [])
+    # Runs once wrote the day at the TOP level instead of under "days"
+    # (2026-10-03 to 10-12, every pass unreported). Read both;
+    # check_agent_costs_shape() in preflight refuses the top-level shape.
+    if not rows and isinstance(costs.get(day), (list, dict)):
+        rows = costs[day]
     # A day was once written as {"runs": [...]} instead of a list, and iterating
     # a dict yields its keys, so 31 passes and 3.8M tokens went unreported.
     # Accept both shapes and ignore anything that is not a pass record.

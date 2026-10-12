@@ -1,62 +1,6 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
-  "2026-09-25": [
-   {
-    "target": "coimbra",
-    "kind": "verify",
-    "tokens": 65000,
-    "trees": 0,
-    "note": "Exposure-4 pass on outer ICNF candidates 4-11km out; one turned out to be the already-published cbr_004 under a different processo id, the other three (Choupo-negro, Cedro-do-atlas, Sobreiro) each gained a second source but stayed leads on an unresolved hard-rule-10 access question. All three Overpass mirrors confirmed dead (406/406/timeout).",
-    "wasted": 0,
-    "brief_wrong": false
-   },
-   {
-    "target": "_tree-of-the-year",
-    "kind": "verify",
-    "tokens": 95000,
-    "trees": 1,
-    "note": "Exposure-4 pass on four European Tree of the Year finalists. The Moeierboom (Etten-Leur, 7 min by train from Breda) verified clean and delivered to data/research/breda-verified.json as bre_011. The Slovak Dragon Oak verified alive and real but too far from Bratislava for a day trip, kept as a standalone lead. The Pet Oak (stands in an A58 motorway median) and the Guimaraes Camellia (private estate, visit-by-appointment only) both failed hard rule 10 and are blocked.",
-    "wasted": 0,
-    "brief_wrong": false
-   },
-   {
-    "target": "zwolle",
-    "kind": "verify",
-    "tokens": 95000,
-    "trees": 4,
-    "note": "Park 't Engelse Werk cluster (3, register cross-checked against Zwolle's own 2024 municipal tree list) plus one Boschwijk weeping beech; two dead Genne oaks caught from the register's own storm text and blocked, one avenue-pattern oak and one placeless oak sent to leads. Reached target (20).",
-    "wasted": 0,
-    "brief_wrong": false
-   },
-   {
-    "target": "utrecht",
-    "kind": "verify",
-    "tokens": 95000,
-    "trees": 3,
-    "note": "3 trees verified to reach Utrecht's target of 30 (utr_035-037, one a folded courthouse-plane pair); 1 candidate resolved as an existing published duplicate, 4 newly-found dead register rows and 1 non-collectible bulk canal-tree-row entry blocked; fixed 3 stale leads.json entries that contradicted the file's own blocked-list record.",
-    "wasted": 0,
-    "brief_wrong": false
-   },
-   {
-    "target": "demand shortlist (tokyo, alicante, munich, brisbane, london, cork, utrecht, oahu)",
-    "kind": "photo",
-    "tokens": 190000,
-    "trees": 2,
-    "note": "48 candidates viewed against the Cadiz standard: 2 approved (tok_003, lon_019), 3 held (ali_006, hnl_015 x2, right species but identity doubt), 43 rejected, mostly off-subject files a filename-match had picked up (public toilets, a memorial column, river landscapes, a different species).",
-    "wasted": 0,
-    "brief_wrong": false
-   },
-   {
-    "target": "breda+utrecht+zwolle",
-    "kind": "write",
-    "tokens": 130000,
-    "trees": 8,
-    "note": "8 stories and recognition lines written and merged (bre_011, utr_035-037, zwo_017-020). No best_time set: none of the notes recorded a real seasonal peak.",
-    "wasted": 0,
-    "brief_wrong": false
-   }
-  ],
   "2026-08-05": [
    {
     "target": "Napoli",
@@ -8625,6 +8569,269 @@
     "brief_wrong": true
    }
   ],
+  "2026-09-25": [
+   {
+    "target": "coimbra",
+    "kind": "verify",
+    "tokens": 65000,
+    "trees": 0,
+    "note": "Exposure-4 pass on outer ICNF candidates 4-11km out; one turned out to be the already-published cbr_004 under a different processo id, the other three (Choupo-negro, Cedro-do-atlas, Sobreiro) each gained a second source but stayed leads on an unresolved hard-rule-10 access question. All three Overpass mirrors confirmed dead (406/406/timeout).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_tree-of-the-year",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 1,
+    "note": "Exposure-4 pass on four European Tree of the Year finalists. The Moeierboom (Etten-Leur, 7 min by train from Breda) verified clean and delivered to data/research/breda-verified.json as bre_011. The Slovak Dragon Oak verified alive and real but too far from Bratislava for a day trip, kept as a standalone lead. The Pet Oak (stands in an A58 motorway median) and the Guimaraes Camellia (private estate, visit-by-appointment only) both failed hard rule 10 and are blocked.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "zwolle",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 4,
+    "note": "Park 't Engelse Werk cluster (3, register cross-checked against Zwolle's own 2024 municipal tree list) plus one Boschwijk weeping beech; two dead Genne oaks caught from the register's own storm text and blocked, one avenue-pattern oak and one placeless oak sent to leads. Reached target (20).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "utrecht",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 3,
+    "note": "3 trees verified to reach Utrecht's target of 30 (utr_035-037, one a folded courthouse-plane pair); 1 candidate resolved as an existing published duplicate, 4 newly-found dead register rows and 1 non-collectible bulk canal-tree-row entry blocked; fixed 3 stale leads.json entries that contradicted the file's own blocked-list record.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "demand shortlist (tokyo, alicante, munich, brisbane, london, cork, utrecht, oahu)",
+    "kind": "photo",
+    "tokens": 190000,
+    "trees": 2,
+    "note": "48 candidates viewed against the Cadiz standard: 2 approved (tok_003, lon_019), 3 held (ali_006, hnl_015 x2, right species but identity doubt), 43 rejected, mostly off-subject files a filename-match had picked up (public toilets, a memorial column, river landscapes, a different species).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "breda+utrecht+zwolle",
+    "kind": "write",
+    "tokens": 130000,
+    "trees": 8,
+    "note": "8 stories and recognition lines written and merged (bre_011, utr_035-037, zwo_017-020). No best_time set: none of the notes recorded a real seasonal peak.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "sev_005 (Seville)",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Session work: judged and published a reader-submitted sighting photo for El Gran Capitan via sightings_publish.py (no photo hunting tokens, direct pixel judgement + script apply)."
+   },
+   {
+    "target": "higashi-hiroshima",
+    "kind": "scout",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Session work: deduplicated 13 of 27 leads against already-published trees (coordinate and facility+species matching) before dispatching a verify pass, no tokens spent."
+   },
+   {
+    "target": "bad-homburg",
+    "kind": "verify",
+    "tokens": 0,
+    "trees": 0,
+    "note": "Session work: processed reader submission 230 (Schone Eiche coordinate), converted DMS to decimal, updated the lead with a confirmed pin, checked preflight source requirement, replied asking for a baumkunde.de link or photo. No tokens spent on research (no network fetch cost beyond a few WebSearch/curl lookups that found nothing)."
+   },
+   {
+    "target": "oahu, munich, brisbane, alicante, glasgow, utrecht, warsaw (demand-city photo shortlist)",
+    "kind": "photo-judge",
+    "tokens": 55000,
+    "trees": 0,
+    "photos_approved": 8,
+    "note": "33 candidates fetched by photo_fetch.py, viewed and judged: 8 approved (Glasgow 1, Warsaw 7), 3 held on identity (Zoo Gate banyans x2, Canalejas twin fig), 22 rejected (mostly non-tree subjects, bark/canopy close-ups). Munich, Brisbane and Utrecht batches all rejected outright."
+   },
+   {
+    "target": "sao-paulo, oahu, new-york, fukuoka, warsaw (demand-city photo shortlist batch2)",
+    "kind": "photo-judge",
+    "tokens": 60000,
+    "trees": 0,
+    "photos_approved": 1,
+    "note": "25 candidates fetched by photo_fetch.py, viewed and judged: 1 approved (war_011 Ginkgo of the Botanical Garden), 2 held on identity (hnl_015 Zoo Gate Banyans, war_020 Oak of Palac Szustra), 17 rejected (mostly wrong species/subject from location-only matching)."
+   },
+   {
+    "target": "amsterdam, lisbon (photo_last_resort.py sweep, STARVED cities)",
+    "kind": "photo-judge",
+    "tokens": 40000,
+    "trees": 0,
+    "photos_approved": 0,
+    "note": "16 candidates from the geotag-only last-resort sweep (no title match), all rejected: interiors, statues, bike parking, wide park scenes with no single tree as subject. Recorded in CURATION.md as an exhausted hunt for these two cities."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "it-batch (verona, bari, catania, padua, bergamo)",
+    "kind": "translate",
+    "tokens": 252547,
+    "trees": 37,
+    "note": "5 Italian overlays; translator found and flagged 4 English contradictions, fixed in session"
+   },
+   {
+    "date": "2026-10-06",
+    "target": "de+fr+es batch (frankfurt, freiburg, hallstatt, luxembourg-city, senonches, ronda, tarragona)",
+    "kind": "translate",
+    "tokens": 601303,
+    "trees": 42,
+    "note": "includes a follow-up round: overlay lengths and stale English copy in Freiburg, Hallstatt, Frankfurt, Tarragona"
+   },
+   {
+    "date": "2026-10-06",
+    "target": "lisbon",
+    "kind": "enrich",
+    "tokens": 163009,
+    "trees": 6,
+    "note": "first enrichment pass (scripts/enrich.py): 6 ICNF measurements and register numbers; ICNF has no per-tree page, access and season untouched"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "tallinn",
+    "kind": "enrich",
+    "tokens": 143435,
+    "trees": 2,
+    "note": "EELIS records and 1997 survey girth/height for the linden and ginkgo; Russalka oak has no register entry"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "leiden",
+    "kind": "enrich",
+    "tokens": 141811,
+    "trees": 6,
+    "note": "Hortus hours and prices on four trees, two national-register links, one season; no measurements in the local register file"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "luxembourg-city",
+    "kind": "enrich",
+    "tokens": 132180,
+    "trees": 4,
+    "note": "ANF arbres remarquables ids for four trees; the geojson carries no measurements; Krombach oak not in the register"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "salzburg",
+    "kind": "verify",
+    "tokens": 173338,
+    "trees": 0,
+    "note": "2 delivered szb_019-020; 4 READY leads re-read, stay leads"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "salzburg",
+    "kind": "write",
+    "tokens": 146575,
+    "trees": 2,
+    "note": "2 stories + de overlay, Salzburg 20 trees"
+   }
+  ],
+  "2026-09-26": [
+   {
+    "target": "_us-parks-west",
+    "kind": "verify",
+    "tokens": 259617,
+    "trees": 0,
+    "verified": 17,
+    "note": "Sequoia +5, Kings Canyon 3, Yosemite Mariposa 5, Redwood NSP 2, Humboldt 1, Patriarch 1. Methuselah (withheld) and Prometheus (dead) blocked. Estimate was ~75k; ran 3.5x over."
+   },
+   {
+    "target": "_us-parks-east",
+    "kind": "verify",
+    "tokens": 289419,
+    "trees": 0,
+    "verified": 13,
+    "note": "Congaree 2, Smokies 2, Olympic +3, Gettysburg 4, Antietam 2. Caught the Lincoln-address honey locust (dead ~2024) and the Quinault Big Cedar (dead 2016)."
+   },
+   {
+    "target": "_us-city-landmarks",
+    "kind": "verify",
+    "tokens": 253904,
+    "trees": 0,
+    "verified": 9,
+    "note": "Savannah 1, Charleston 1, Seattle 2, Philadelphia 3, San Diego 2. ~28k per verified tree; the webpage-list angle mostly found tour PDFs, not landmark lists."
+   },
+   {
+    "target": "Kings Canyon NP, Yosemite NP (Mariposa Grove), Gettysburg, Ancient Bristlecone Pine Forest",
+    "kind": "write",
+    "tokens": 146321,
+    "trees": 13,
+    "note": "Write pass on the four new-place batches staged 2026-09-26 02:02-02:05. Fixed one species-name collision (gby_002 Chestnut Oak) and one id-prefix collision (yos_ renamed ynp_, Yoshida already holds yos_001) before merging."
+   },
+   {
+    "target": "Sequoia NP, Olympic NP, Philadelphia, Seattle, San Diego, Savannah, Charleston",
+    "kind": "write",
+    "tokens": 183623,
+    "trees": 17,
+    "note": "Write pass deepening seven existing US places from the same staged batch. Fixed three species-name collisions at merge (phl_003 Katsura, phl_004 Eastern Hemlock, sea_007/008 Japanese Red/White Pine)."
+   },
+   {
+    "target": "merge + copy (11 US places)",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 30,
+    "note": "Main-session work: merged both write passes into data/cities, rewrote intro/meta/question/FAQ copy for all 11 affected places to drop stale tree-count promises, built 4 new Contract B/C pages from scratch, added paid_entry flags, fixed a Seattle species-name build error (Pinus parvifolia -> parviflora). Held Redwood NP, Humboldt Redwoods, Congaree, Great Smoky Mountains and Antietam as leads (each under the 4-tree floor, none passes the single-famous-tree test). Tokens not separately metered for this session."
+   },
+   {
+    "target": "Congaree National Park, Great Smoky Mountains National Park",
+    "kind": "verify",
+    "tokens": 251696,
+    "trees": 0,
+    "verified": 3,
+    "note": "Refilled both places from their own leads files (national/state champion trees). Congaree: cgr_003 General Greene Tree, cgr_004 National Champion Loblolly, brought it from 2 to 4 (floor met). Great Smoky Mountains: gsm_003 Cocke County Champion Red Maple, brought it from 2 to 3 (still short by one; the other 4 leads stayed unresolved)."
+   },
+   {
+    "target": "Congaree National Park",
+    "kind": "write",
+    "tokens": 120741,
+    "trees": 0,
+    "wasted": 120741,
+    "note": "Claimed 'wrote stories, merged into data/cities as a new place', but no data/cities/congaree-national-park.json ever existed in git history: the background session ended before its output reached disk. Corrected 2026-09-26 (later session) after a leads.py/agent-costs.json cross-check found the gap; see CURATION.md same date. cgr_003/cgr_004 survive as sourced prose in data/leads/congaree-national-park.json; cgr_001/cgr_002 are named only, not reconstructable without fresh verification."
+   },
+   {
+    "target": "_famous-belgium",
+    "kind": "verify",
+    "tokens": 262558,
+    "trees": 5,
+    "note": "Verify pass on 14 open leads: 5 cleared (2 recommended standalone/addition, 3 held for a future cluster), 2 blocked (dead tree, private garden), 6 remain open with reasons."
+   },
+   {
+    "target": "_famous-lithuania",
+    "kind": "verify",
+    "tokens": 298396,
+    "trees": 9,
+    "note": "Verify pass on 21 open leads: 9 cleared (found a new 4-tree Silale cluster and additions to Kaunas/Raudone), 1 blocked (confirmed dead), 9 remain open."
+   },
+   {
+    "target": "_famous-belgium + _famous-lithuania",
+    "kind": "write",
+    "tokens": 150000,
+    "trees": 11,
+    "note": "Write pass on the 11 trees the two verify passes cleared, across 7 places (2 new standalone, 1 new 4-tree cluster, 3 additions to existing cities)."
+   },
+   {
+    "target": "lo, vepriai, zadeikoniai, silale, jalhay, kaunas, raudone",
+    "kind": "merge",
+    "tokens": 0,
+    "trees": 11,
+    "note": "Session work: merged the 11 written trees into data/cities (3 new standalone places, 1 new city, 3 additions to existing pages), wrote page copy for the new places, fixed a stray fame field on gos_001, fixed Raudone's stale single-tree framing and Kaunas's stale tree-count sentence. preflight 0 problems, build 12559 pages, qa.py 16600 pages, both exit 0."
+   },
+   {
+    "target": "zywiec, hilvarenbeek, plunge, velke-borove",
+    "kind": "verify",
+    "tokens": 211884,
+    "trees": 4,
+    "note": "Refilled the shelf per prepare.py's instruction: verified 4 Tree of the Year contest entries (Kozy, Bladel/Witch Tree, Laukiai oak/2026 winner, Ziar wild apple), each deepening an existing 1-tree published place. Not yet written into city files."
+   }
+  ],
   "2026-09-27": [
    {
     "target": "texas (austin, dallas, fort-worth, san-antonio)",
@@ -8710,6 +8917,211 @@
     "tokens": 154731,
     "trees": 5,
     "note": "5 single-tree place pages shipped under the single-famous-tree exception (3 are national/European Tree of the Year titleholders); 3 more leads from the same batch held (weak age or pin, recorded in verify_notes)."
+   },
+   {
+    "target": "hilvarenbeek, plunge, velke-borove",
+    "kind": "write",
+    "tokens": 123000,
+    "trees": 3,
+    "note": "3 stories + recognition lines (hvb_002, plg_007, vbo_002), merged into city files; page-level intro/faq/question_context rewritten for the added trees. 3 held candidates (sht_001, wey_001, stv_001, nnj_001, ftn_001) confirmed still correctly HELD per prior verify_notes, not written. zyw_002 confirmed duplicate of published koz_001, removed. Stale already-published research files (belgium partial, china n/a, lithuania, tree-of-the-year x2) cleaned up."
+   },
+   {
+    "target": "_famous-sweden",
+    "kind": "verify",
+    "tokens": 191245,
+    "trees": 2,
+    "note": "4 candidates verified (Bellmanseken, Karl XI:s ek/Fiskartorpseken, Kungseken Knappfors alive; Trangsunds ekruin confirmed dead, blocked). Bellmanseken and Karl XI:s ek turned out to sit inside published Stockholms boundary (1.1km/0.4km from sto_004/sto_002); merged as sto_007/sto_008 rather than standalone places. Kungseken Knappfors genuinely isolated but modest fame/no age/legend called invented by its own sources; held as a lead rather than shipped as its own place."
+   },
+   {
+    "target": "_famous-portugal",
+    "kind": "verify",
+    "tokens": 182909,
+    "trees": 3,
+    "note": "3 new single-tree places opened (Calvos, Runa, Azeitao), each under the 2026-08-31 single-famous-tree exception: Carvalho de Calvos (clv_001, University of Coimbra 2011-dated, oldest Q. robur on the Iberian Peninsula, own visitor centre), Cedro de Runa (run_001, won Arvore do Ano Portugal 2026), Millennial Olives of Azeitao (aze_001, 3-olive ensemble, folk-estimated age honestly flagged). 4th candidate (Nucleo dos Dragoeiros) was a duplicate of already-published mdr_006 Madeira, blocked not verified."
+   },
+   {
+    "target": "coromandel-forest-park, parry-kauri-park, otari-wiltons-bush",
+    "kind": "write",
+    "tokens": 60000,
+    "trees": 4,
+    "note": "Write pass on the three write-claimed New Zealand famous-tree places from the same day's _famous-new-zealand verify pass (Square Kauri, McKinney Kauri, Simpson Kauri, Moko/rimu). Stories and how_to_recognise written into the verified-leads file; city files built (data/cities/) with intro/faq/question_context per place. Left uncommitted by the run that wrote it; picked up and finished (tree_index rebuilt, city_names.py run, preflight 0 problems, claims released) by the next attempt in the same window."
+   },
+   {
+    "target": "_famous-czech-republic (4 candidates)",
+    "kind": "verify",
+    "tokens": 50000,
+    "trees": 2,
+    "note": "Verified Hrádecký dub and Buk u rybníčku (second sources found); Českolipský buk lesní and Buk v Jindřichovickém zámeckém parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jindřichovice chateau park"
+   },
+   {
+    "target": "los-angeles (4 candidates)",
+    "kind": "verify",
+    "tokens": 95000,
+    "trees": 2,
+    "note": "Verified Huntington Rose Garden Kauri (2021 California Big Tree champion, 1890 planting, 1908 blowtorch-taproot transplant) and Crystal Springs Heritage Sycamore (Griffith Park, survived 2014 protest and 2016 settlement); Bodhi tree champion blocked as private residential land; Chavez Ravine kauri pin could not be tightened"
+   },
+   {
+    "target": "los-angeles",
+    "kind": "write",
+    "tokens": 45000,
+    "trees": 2,
+    "note": "2 stories + recognition lines merged into data/cities/los-angeles.json (now 10 trees); softened lax_010's superlative claim after it clashed with the newly-verified, actually-measured lax_011 kauri (hard rule 8)"
+   },
+   {
+    "target": "monterey (3 candidates)",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "All three leads dead-ended for a text-fetch pass: the 13 Local Landmark Trees ordinance is JS-only (municode) with no crawlable fallback and no archive, Crocker Grove still has no single named specimen, Ghost Tree(s) of Pescadero Point confirmed dead (moved to blocked). Documented the dead ends so the next pass does not re-walk them; needs a browser-session pass or a phone call to city forestry, not another web sweep."
+   },
+   {
+    "target": "portland",
+    "kind": "write",
+    "tokens": 55000,
+    "trees": 4,
+    "note": "4 stories + recognition lines merged into data/cities/portland.json (20->24 trees); oldest_tree_id moved from ptl_009 (no age) to ptl_021 the Corbett Oak (~300yr, Oregon Encyclopedia); question fields and FAQ rewritten to match; apple species normalised to Apple (Malus domestica) to match site convention"
+   },
+   {
+    "target": "fort-worth + austin (3 candidates)",
+    "kind": "verify",
+    "tokens": 65000,
+    "trees": 1,
+    "note": "Turner Oak (Fort Worth) verified: gold buried under it by pioneer Charles Turner during the Civil War, alive-confirmed via a dated 2025 waymark visit log. Parker Oaks blocked (a grove, no single named specimen). Kyle Auction Oak held as a lead: no public transport connects Kyle to Austin so the day-trip claim cannot be made honestly, and it does not clear the single-famous-tree exception alone."
+   },
+   {
+    "target": "fort-worth",
+    "kind": "write",
+    "tokens": 40000,
+    "trees": 1,
+    "note": "Turner Oak story + recognition line merged (4->5 trees); oldest_tree_id moved to ftw_005; city copy (intro/meta/question fields/FAQ) rewritten for the new count and first dated tree"
+   },
+   {
+    "target": "us-photos (New Orleans, Olympic NP, Philadelphia, San Diego, Sequoia NP, Yosemite NP)",
+    "kind": "photo-judge",
+    "tokens": 166998,
+    "trees": 8,
+    "note": "Viewing pass on the 168-candidate US photo sweep, finishing a claim an earlier attempt left open. 38 images viewed across 19 photo-less trees: 8 approved, 6 held-only (identity certain but crown missing, or lookalike risk among near-identical named trees, e.g. New Orleans oaks and Sequoia's named giants), 5 rejected-only (wrong species/tree/park). One candidate queued under the wrong tree (Yosemite's tunnel-tree photo was filed under Bachelor and Three Graces) reassigned to the California Tunnel Tree before approving."
+   },
+   {
+    "target": "austin",
+    "kind": "verify",
+    "tokens": 254602,
+    "trees": 4,
+    "note": "Texas Big Tree Registry leads cross-checked with independent sources (registry is a finding aid, not a citable source); 4 verified, 3 moved to blocked (private/withheld or too far), leads file refreshed.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "austin",
+    "kind": "write",
+    "tokens": 122698,
+    "trees": 4,
+    "note": "4 stories and recognition lines written (aus_006-009), merged into data/cities/austin.json; intro/meta/FAQ counts updated 5->9 trees.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "dallas",
+    "kind": "verify",
+    "tokens": 209705,
+    "trees": 3,
+    "note": "Discovered Dallas Historic Tree Program (City Council, 25 Oct 2023, Sec 51A-10.133), a genuine city register not previously documented in this file; 3 verified (a Comanche marker pecan, a bur oak, a post-oak-grove ensemble), Houston Campsite Oak lead enriched but correctly left unshipped (too far, belongs to a future Coppell page).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "dallas",
+    "kind": "write",
+    "tokens": 119904,
+    "trees": 3,
+    "note": "3 stories and recognition lines written (dal_010-012), merged into data/cities/dallas.json; intro/meta/FAQ updated 9->12 trees, paid_entry set on dal_011.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "boston",
+    "kind": "verify",
+    "tokens": 213017,
+    "trees": 1,
+    "note": "Rich lead batch (Boston Common, Public Garden, Mount Auburn, Arnold Arboretum) mostly resolved as duplicates/dead/still-unsourced; 1 verified (a second Wilson pine at Peters Hill), 2 moved to blocked (a removed beech, a duplicate cultivar already in bos_004 prose), Waverley Oak held on a source conflict.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "boston",
+    "kind": "write",
+    "tokens": 4000,
+    "trees": 1,
+    "note": "Wrote story/recognition line for bos_012 directly in the main session rather than dispatching a full write-stories batch pass for a single tree; merged into data/cities/boston.json, intro/FAQ counts updated 11->12.",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "new-orleans",
+    "kind": "verify",
+    "tokens": 209408,
+    "trees": 2,
+    "note": "From-zero pass (no register, empty leads file). Found the Live Oak Society Orleans-parish registry (actively maintained, marks dead trees inline); 2 verified (Martha Washington Oak at Audubon Zoo, sibling of the published Tree of Life; Enrique Alferez Oak in City Park Botanical Garden), 4 moved to blocked (a dead sibling oak, private-grounds oaks), 5 City Park oaks left as leads pending a more specific location than \"City Park\".",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "new-orleans",
+    "kind": "write",
+    "tokens": 3000,
+    "trees": 2,
+    "note": "Wrote both stories directly in the main session (small batch); merged into data/cities/new-orleans.json, intro/meta/FAQ updated 6->8 trees, both new trees carry paid_entry (2/8, under the one-third line).",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_tree-of-the-year (batch 3, 8 candidates)",
+    "kind": "verify",
+    "tokens": 251910,
+    "trees": 6,
+    "note": "6 verified (lel_001, gar_001, let_001, fmc_001, cap_001, dbl_001). The Wish Tree (Nisovo) confirmed dead by a dated 2013 storm-damage news report, blocked. Alley in Skalicka blocked on access (grounds house a residential care home)."
+   },
+   {
+    "target": "_tree-of-the-year (batch 3, 6 trees)",
+    "kind": "write",
+    "tokens": 128978,
+    "trees": 5,
+    "note": "5 stories + recognition lines written and merged as 5 new single-tree places (leliceni, garmen, letenye, felsomocsolad, capeni). dbl_001 (Grot Oak of Deblin) turned out to be a duplicate of the already-published deb_001, caught before merge; discarded rather than shipped, lead marked duplicate. Fixed two species-label inconsistencies (lel_001 Tilia cordata mislabelled large-leaved; cap_001 elm synonym) before merge."
+   },
+   {
+    "target": "_famous-brazil (batch 1, 4 candidates)",
+    "kind": "verify",
+    "tokens": 202880,
+    "trees": 3,
+    "note": "3 verified (jer_001 Arvore da Preguica, ppf_001 Baoba do Passeio Publico, lco_001 Arvore Penteada), all already had Commons photos. Baoba do Poeta (Natal) blocked on access: alive but walled/gated private plot, no confirmed public viewing point."
+   },
+   {
+    "target": "_famous-brazil (batch 1, 3 trees)",
+    "kind": "write",
+    "tokens": 121157,
+    "trees": 3,
+    "note": "3 stories + recognition lines written and merged as 3 new single-tree places (jericoacoara, fortaleza, luis-correia), all 450-800km from the nearest published Brazilian tree. Fixed one species-label mismatch (African Baobab -> Baobab) before merge; trimmed question_context on all three to fit Contract B word range."
+   },
+   {
+    "target": "_famous-austria (aut_002)",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 1,
+    "note": "Written directly in the orchestrating session rather than dispatched (a single leftover verified tree, not worth a full agent). Renamed the misnamed famousaustria-verified-b.json so passcheck could see it, then wrote and merged aut_002 (Linde im Gries, St Georgen im Attergau) as a new single-famous-tree place, 10m girth, best-known tree in the Attergau. Friedenslaerche held (ordinary size, past the day-trip boundary, no pairing candidate yet)."
+   },
+   {
+    "target": "_tree-of-the-year (8 UK/Ireland candidates)",
+    "kind": "verify",
+    "tokens": 197892,
+    "trees": 6,
+    "note": "6 verified (King Oak Tullamore, Niel Gow Oak Dunkeld, Oak at the Gate of the Dead Chirk, Waverley Abbey Yew Farnham, Acton Park Sweet Chestnut Wrexham, Skipinnish Oak Achnacarry). 2 correctly rejected as dead: Birr Castle Grey Poplar (blown down 2014) and the Major Oak in Sherwood Forest, confirmed dead June 2026 (RSPB/Natural England, CNN, ABC News) -- newsworthy, noted in LOG.md for Hidde."
+   },
+   {
+    "target": "_tree-of-the-year (6 trees)",
+    "kind": "write",
+    "tokens": 123732,
+    "trees": 6,
+    "note": "6 stories + recognition lines written and merged as 6 new single-tree places (tullamore, dunkeld, chirk, farnham, wrexham, achnacarry), each 16-70km from the nearest published tree, all under the single-famous-tree exception. Fixed one species canonicalisation (Yew -> European Yew) before merge, expanded 3 question_context fields to hit the 150-200 word Contract B range, and marked the corresponding leads published/duplicate."
    }
   ],
   "2026-09-28": [
@@ -8728,6 +9140,27 @@
     "tokens": 0,
     "trees": 2,
     "note": "Found Commons photos for two write-pass leads held by the new covered-country rule; verified same-tree match by filename/setting, approved, published both places. No agent tokens (done in-session)."
+   },
+   {
+    "target": "_tree-of-the-year (7 trees, batch 2)",
+    "kind": "write",
+    "tokens": 134965,
+    "trees": 6,
+    "note": "7 stories written and merged as 6 new single-tree places (pianello, urvaste, cajvana, cheile-cibinului, vales, seja); the 7th, the Three-Legged Oak, turned out to be a duplicate of already-published mendaza.json mza_001 under a different slug, caught before merge via preflight coordinate check and dropped rather than published twice. Vales access field rewritten per session judgement call on a standing sourced landowner invitation (hard rule 10)."
+   },
+   {
+    "target": "_tree-of-the-year (8 candidates, batch 3)",
+    "kind": "verify",
+    "tokens": 179831,
+    "trees": 7,
+    "note": "7 verified (Saint-Jammes Beech France, Old Mulberry Bulgaria, Encina de San Roque Spain, Millennium Oak Ukraine, Kaņepju Oak Latvia, Pálffy Oak Slovakia, Oak of Prince Ulrich Czechia). 1 blocked on access: Plane Tree of Varna, Bulgaria, on private Galatex factory grounds, a source stating access is restricted. Checked and confirmed the Pálffy Oak is outside Bratislava day-trip boundary (37-38km/44-48min), ships as its own place."
+   },
+   {
+    "target": "_tree-of-the-year (7 trees, batch 3)",
+    "kind": "write",
+    "tokens": 131618,
+    "trees": 7,
+    "note": "7 stories written and merged as 7 new single-tree places (soreze, veliki-preslav, colindres, veryn, jerceni, malacky, peruc). Prince Ulrich oak story states the successor-tree dispute honestly rather than picking a side. Old Mulberry has no girth/height on record, stated as an honest gap. Expanded 2 question_context fields to hit the 150-200 word Contract B range."
    }
   ],
   "2026-09-30": [
@@ -8744,6 +9177,358 @@
     "tokens": 133935,
     "trees": 2,
     "note": "Lulin new single-tree place, alh_002 added to Alishan"
+   },
+   {
+    "target": "famous-czech-brazil-batch1",
+    "kind": "write",
+    "tokens": 155777,
+    "trees": 5,
+    "note": "5 single-tree places (Ceska Lipa, Mokrice, Nisia Floresta, Maxaranguape, Guaiba); fdl_001 held as duplicate of live spa_001, pins ~3 km apart",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "5 reader sightings",
+    "kind": "session",
+    "tokens": 0,
+    "trees": 0,
+    "note": "judged as leads via judgement.py, photos not viewed"
+   },
+   {
+    "target": "_tree-of-the-year",
+    "kind": "verify",
+    "tokens": 197594,
+    "trees": 0,
+    "note": "10 verified (EE 2, LV 1, HU 3, HR 2, BG 2), 5 rejected to leads",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "_tree-of-the-year",
+    "kind": "write",
+    "tokens": 185204,
+    "trees": 8,
+    "note": "8 single-tree places merged (Bataszek, Tata, Valdemarpils, Daruvar, Krka, Melykut, Jarvselja, Viljandi); 2 written, unmerged",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "target": "Houston",
+    "kind": "verify",
+    "tokens": 134548,
+    "trees": 2,
+    "note": "Sam Houston Park live oak plus Old Hanging Oak downtown; flagged, approximate pins; no register coverage"
+   },
+   {
+    "target": "Houston",
+    "kind": "write",
+    "tokens": 116217,
+    "trees": 2,
+    "note": "2 stories; fdl_001 skipped as duplicate of live spa_001",
+    "brief_wrong": true
+   },
+   {
+    "target": "_famous-austria",
+    "kind": "verify",
+    "tokens": 160000,
+    "trees": 1,
+    "note": "1 verified (Hochneukirchen lime), 2 dead blocked; estimate"
+   },
+   {
+    "target": "famousaustria",
+    "kind": "write",
+    "tokens": 95000,
+    "trees": 1,
+    "note": "Hochneukirchen-Gschaidt published; fdl_001 duplicate of spa_001",
+    "brief_wrong": true
+   }
+  ],
+  "2026-10-01": [
+   {
+    "target": "famous-philippines",
+    "kind": "verify",
+    "tokens": 159000,
+    "trees": 0,
+    "note": "3 of 8 delivered flagged, 1 blocked fossil, 4 leads without sources"
+   },
+   {
+    "target": "maria-aurora+siquijor",
+    "kind": "write",
+    "tokens": 150000,
+    "trees": 2,
+    "note": "phl ids renamed mra/sqj (phl is Philadelphia); fdl_001 already live as spa_001",
+    "wasted": 0,
+    "brief_wrong": true
+   },
+   {
+    "target": "New York",
+    "kind": "verify",
+    "tokens": 193000,
+    "trees": 0,
+    "note": "7 trees delivered flagged nyc_021-027, 6 leads and 2 blocked; nycgovparks.org 405s every fetcher"
+   },
+   {
+    "target": "New York",
+    "kind": "write",
+    "tokens": 142000,
+    "trees": 7,
+    "note": "nyc_021-027 written and merged; count copy and intro updated; preflight 0 problems"
+   },
+   {
+    "target": "seattle",
+    "kind": "verify",
+    "tokens": 207000,
+    "trees": 0,
+    "note": "4 flagged approximate-pin trees from Heritage Tree and city tree-walk sources; Green Lake Emperor Oak found cut down"
+   },
+   {
+    "target": "seattle",
+    "kind": "write",
+    "tokens": 132000,
+    "trees": 4,
+    "note": "sea_009-012 written and merged",
+    "wasted": 0,
+    "brief_wrong": false
+   },
+   {
+    "kind": "write",
+    "target": "copenhagen, fukuoka, takachiho",
+    "tokens": 154000,
+    "trees": 7,
+    "note": "10 stories written, 7 Copenhagen merged; rest blocked by photo-or-pin"
+   }
+  ],
+  "2026-10-02": [
+   {
+    "target": "belfast+breda+budapest",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, no agent: viewing pass approved 3 Commons photographs (bfs_005, bre_011, bud_013); a 4th sighting rejected (acorn on gravel)"
+   },
+   {
+    "target": "Oahu",
+    "kind": "verify",
+    "tokens": 150000,
+    "trees": 0,
+    "note": "register coords rounded to 1.1 km and Commons has no tree-specific photos, so photo-or-pin blocks all; 4 leads added",
+    "wasted": 150000,
+    "brief_wrong": false
+   },
+   {
+    "target": "Berlin",
+    "kind": "verify",
+    "tokens": 183000,
+    "trees": 7,
+    "note": "Naturdenkmal register tree-level coords + CC0 Commons geotags gave 7 confirmed pins; ber_041 zoo oak stayed lead (approximate, no photo)"
+   },
+   {
+    "target": "Berlin",
+    "kind": "write",
+    "tokens": 147000,
+    "trees": 7,
+    "note": "8 stories; merged 7; Niemeyer building naming removed as unsourced, ber_038 access tightened"
+   },
+   {
+    "target": "de/berlin",
+    "kind": "translate",
+    "tokens": 142000,
+    "trees": 0,
+    "note": "7 overlay entries plus title count; required or deploy refuses"
+   }
+  ],
+  "2026-10-03": [
+   {
+    "target": "Berlin",
+    "kind": "verify",
+    "tokens": 189000,
+    "trees": 6,
+    "note": "second Naturdenkmal batch, six rare species with confirmed pins from register plus CC0 geotag"
+   },
+   {
+    "target": "Berlin",
+    "kind": "write",
+    "tokens": 131000,
+    "trees": 6,
+    "note": "six stories, three best_time"
+   },
+   {
+    "target": "de/berlin",
+    "kind": "translate",
+    "tokens": 146000,
+    "trees": 0,
+    "note": "six overlay entries plus title count 46"
+   },
+   {
+    "kind": "verify",
+    "target": "berlin (ber_048-055)",
+    "tokens": 164000,
+    "trees": 8,
+    "note": "register Naturdenkmal trees, all confirmed pins, register-only"
+   },
+   {
+    "kind": "write",
+    "target": "berlin (ber_048-055) + de overlay",
+    "tokens": 182000,
+    "trees": 8,
+    "note": "stories, how_to_recognise, de overlay; ber_041 held back as a lead (no photo, approximate pin)"
+   },
+   {
+    "kind": "verify",
+    "target": "dresden (dre_006-010)",
+    "tokens": 182000,
+    "trees": 4,
+    "note": "Naturdenkmal trees with Wikidata coords + Commons photos"
+   },
+   {
+    "kind": "write",
+    "target": "dresden + de overlay",
+    "tokens": 162000,
+    "trees": 4,
+    "note": "dre_007 parked in leads (approximate pin, no photo)"
+   },
+   {
+    "target": "Berlin",
+    "kind": "verify",
+    "tokens": 174000,
+    "trees": 8,
+    "note": "ber_056-063 Tiergarten Naturdenkmal, confirmed pins via register point plus geotagged CC0 photo"
+   },
+   {
+    "target": "Berlin",
+    "kind": "write",
+    "tokens": 151000,
+    "trees": 8,
+    "note": "8 stories, 2 best_time"
+   },
+   {
+    "target": "de/berlin",
+    "kind": "translate",
+    "tokens": 134000,
+    "trees": 0,
+    "note": "8 overlay entries plus title count 62"
+   },
+   {
+    "target": "dresden dre_007",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 1,
+    "note": "session work: Commons photo viewed and approved, German overlay written by the run"
+   },
+   {
+    "target": "Dresden",
+    "kind": "verify",
+    "tokens": 171000,
+    "trees": 3,
+    "note": "dre_011-013, OSM node plus geotagged Commons photo pins; two of six candidates blocked (private garden, young)"
+   },
+   {
+    "target": "Dresden",
+    "kind": "write",
+    "tokens": 125000,
+    "trees": 3,
+    "note": "3 stories; too few for the fixed cost"
+   },
+   {
+    "target": "de/dresden",
+    "kind": "translate",
+    "tokens": 123000,
+    "trees": 0,
+    "note": "3 overlay entries plus page copy to 13"
+   },
+   {
+    "target": "Munich",
+    "kind": "verify",
+    "tokens": 200000,
+    "trees": 5,
+    "note": "muc_050-054 suburban Naturdenkmal via Landkreis list plus Commons; city register exhausted"
+   },
+   {
+    "target": "Munich",
+    "kind": "write",
+    "tokens": 135000,
+    "trees": 5,
+    "note": "5 stories, 1 best_time"
+   },
+   {
+    "target": "de/munich",
+    "kind": "translate",
+    "tokens": 128000,
+    "trees": 0,
+    "note": "5 overlay entries plus title count 50"
+   },
+   {
+    "target": "new-orleans, chicago, dallas",
+    "kind": "verify",
+    "tokens": 195445,
+    "trees": 0,
+    "wasted": 195445,
+    "note": "Pin-and-photo pass on existing leads: 0 delivered. City Park oaks have no coordinates anywhere online, Chicago's register returns 403 and its two famous leads are dead, Dallas leads unplaceable. Lesson: a lead file without coordinates cannot be rescued by a pin pass; check for ANY coordinate source before dispatching."
+   },
+   {
+    "target": "los-angeles, austin, houston",
+    "kind": "verify",
+    "tokens": 216900,
+    "trees": 0,
+    "verified": 1,
+    "note": "Pin-and-photo pass on existing leads: 1 delivered (Austin, Sunset Valley Bigelow Oak, confirmed pin, no usable photo). LA champions have only close-up photos, Huntington blocks fetchers, Houston leads lack coordinates. Together with the New Orleans/Chicago/Dallas pass: ~410k for one tree. passcheck now prints the coordinate share before a verify claim."
+   },
+   {
+    "date": "2026-10-03",
+    "kind": "verify",
+    "target": "portland",
+    "tokens": 144000,
+    "trees": 0,
+    "note": "9 Portland Heritage Tree register trees verified; 8 went to the write pass, ptl_027 held as lead"
+   },
+   {
+    "date": "2026-10-03",
+    "kind": "write",
+    "target": "portland",
+    "tokens": 154000,
+    "trees": 8,
+    "note": "8 stories + recognition lines merged, Portland 24 -> 32; preflight 0 problems"
+   },
+   {
+    "date": "2026-10-03",
+    "kind": "verify",
+    "target": "nuremberg",
+    "tokens": 173000,
+    "trees": 0,
+    "note": "4 delivered, only 2 with a confirmed pin; 2 held as leads"
+   },
+   {
+    "date": "2026-10-03",
+    "kind": "write",
+    "target": "nuremberg",
+    "tokens": 149000,
+    "trees": 2,
+    "note": "nbg_013, nbg_016 EN+DE, Nuremberg 12 -> 14; preflight 0 problems"
+   },
+   {
+    "date": "2026-10-03",
+    "kind": "verify",
+    "target": "spokane",
+    "tokens": 171000,
+    "trees": 0,
+    "note": "0 delivered: no open photo or confirmed pin; Treaty Tree found felled Aug 2026 and moved to blocked"
+   },
+   {
+    "date": "2026-10-03",
+    "kind": "write",
+    "target": "austin, los-angeles, sequoia-national-park, washington-dc",
+    "tokens": 150000,
+    "trees": 4,
+    "note": "4 stories + recognition lines merged, intro counts fixed; no photos, candidates left for a viewing pass"
+   },
+   {
+    "date": "2026-10-03",
+    "target": "_wikidata-united-states (6 leads)",
+    "kind": "verify",
+    "tokens": 165143,
+    "trees": 0,
+    "verified": 4,
+    "note": "Capped at 30 tool calls, used 25: 4 verified (El Pino, Endicott Pear, Travilah Oak, Sentinel), Linden Oak dead, Alley Pond Giant already ours. ~41k per verified tree against a 50k budget for the whole pass: a tool-call cap does not cap tokens."
    }
   ],
   "2026-10-04": [
@@ -8753,858 +9538,1965 @@
     "tokens": 95000,
     "trees": 8,
     "note": "8 stories and recognition lines, 8 Commons photos viewed and approved, page copy taken to 15, de overlay for the 8 written in the same pass; bos_013 not written (Danvers is outside the day-trip boundary, alive evidence soft, no photo viewed)"
+   },
+   {
+    "target": "munich",
+    "kind": "verify",
+    "tokens": 120000,
+    "trees": 0,
+    "note": "register exhausted: all candidates with photo or pin already live; ND12 pin conflict, Vaterstetten blocked, 8 rural leads"
+   },
+   {
+    "target": "munich",
+    "kind": "verify",
+    "tokens": 178000,
+    "trees": 0,
+    "note": "no candidate could end with a photograph or confirmed pin; OSM join caught ND 12 pin mismatch; two leads added"
+   }
+  ],
+  "2026-10-05": [
+   {
+    "target": "munich",
+    "kind": "verify",
+    "tokens": 160000,
+    "trees": 3,
+    "note": "register join exhausted; 3 flagged trees from the Bayern Wikipedia list and Commons categories, 4 leads"
+   },
+   {
+    "target": "munich",
+    "kind": "write",
+    "tokens": 95000,
+    "trees": 7,
+    "note": "4 new stories, German overlay, 7 Commons photos viewed and attached; muc_058 held"
+   },
+   {
+    "target": "munich",
+    "kind": "verify",
+    "tokens": 160000,
+    "trees": 2,
+    "note": "city register exhausted; 2 outlying trees with geotagged CC photos (Obermarbach, Grafing)"
+   },
+   {
+    "target": "munich (muc_066-067)",
+    "kind": "write",
+    "tokens": 141000,
+    "trees": 2,
+    "note": "merged with de overlay; muc_058 approx pin no photo, lpz_019 access unestablished"
+   },
+   {
+    "target": "melbourne",
+    "kind": "photo",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work: 2 reader photographs judged, mel_013 published, mel_001 rejected (deciduous, not holm oak)"
+   },
+   {
+    "target": "salzburg",
+    "kind": "verify",
+    "tokens": 175000,
+    "trees": 3,
+    "note": "register-only deepen, 3 oaks delivered with stories; two Glaserstrasse/Joachim oaks held on access"
+   },
+   {
+    "target": "houston+berlin+munich",
+    "kind": "write",
+    "tokens": 0,
+    "trees": 4,
+    "note": "session work, no agent: merged 4 already-written verified trees, fixed Houston counts, wrote German overlays for Berlin and Munich"
+   },
+   {
+    "target": "vienna",
+    "kind": "verify",
+    "tokens": 185000,
+    "trees": 6,
+    "note": "register deepen, 6 Naturdenkmal trees with tree-level pins and stories"
+   },
+   {
+    "target": "vienna",
+    "kind": "translate",
+    "tokens": 35000,
+    "trees": 0,
+    "note": "German overlay for the 6 new Vienna trees"
+   },
+   {
+    "target": "vienna",
+    "kind": "verify",
+    "tokens": 215000,
+    "trees": 5,
+    "note": "5 verified, 14 leads"
+   },
+   {
+    "target": "vienna+boston",
+    "kind": "write",
+    "tokens": 189000,
+    "trees": 6,
+    "note": "6 merged; lpz_019, nbg_018 held on access; fdl_001 dup of spa_001; German overlay"
+   }
+  ],
+  "2026-10-06": [
+   {
+    "date": "2026-10-06",
+    "target": "fort-worth (ftw_006-019)",
+    "kind": "write",
+    "tokens": 209887,
+    "trees": 13,
+    "note": "Verified by script from the city heritage register (0 tokens): register as source, its points as pins, lifecheck for life. Write pass merged 13, held ftw_018 (no access stated). ~16k per tree including the city copy rewrite."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "chicago (chi_007-017)",
+    "kind": "write",
+    "tokens": 188061,
+    "trees": 0,
+    "note": "11 stories written from the Cook County champion register, ready_to_merge in data/research; held from data/cities by the 60-per-24h pace guard; copy draft in chicago-copy-draft.json. ~17k per tree."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "wilmington-delaware (wil_001-009)",
+    "kind": "write",
+    "tokens": 194386,
+    "trees": 0,
+    "note": "8 Delaware register champions written plus a new-place city draft, parked as ready_to_merge (pace guard full). ~24k per tree including a whole new city page."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: US 10 cities",
+    "kind": "outreach-research",
+    "tokens": 193822,
+    "trees": 0,
+    "note": "23 candidates, ~8k per candidate, ~19k per city. Above the 5-8k per city estimated in session."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: UK+DE 12 cities",
+    "kind": "outreach-research",
+    "tokens": 237927,
+    "trees": 0,
+    "note": "24 candidates, ~9k per candidate, ~19k per city. Above the 5-8k per city estimated in session."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: 8 mixed small cities",
+    "kind": "outreach-research",
+    "tokens": 241184,
+    "trees": 0,
+    "note": "14 candidates, ~17k per candidate, ~30k per city. Above the 5-8k per city estimated in session."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: North America 2, 10 cities",
+    "kind": "outreach-research",
+    "tokens": 194447,
+    "trees": 0,
+    "note": "17 candidates, ~11k per candidate. Outside Europe/North America addresses hide behind forms; yield drops sharply."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: world A, 10 cities",
+    "kind": "outreach-research",
+    "tokens": 185660,
+    "trees": 0,
+    "note": "7 candidates, ~26k per candidate. Outside Europe/North America addresses hide behind forms; yield drops sharply."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: world B, 10 cities",
+    "kind": "outreach-research",
+    "tokens": 210099,
+    "trees": 0,
+    "note": "12 candidates, ~17k per candidate. Outside Europe/North America addresses hide behind forms; yield drops sharply."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: round 3 part 1 (9 cities)",
+    "kind": "outreach-research",
+    "tokens": 181520,
+    "trees": 0,
+    "note": "13 candidates kept, ~13k per candidate."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: round 3 part 2 (8 cities)",
+    "kind": "outreach-research",
+    "tokens": 174372,
+    "trees": 0,
+    "note": "5 candidates kept, ~34k per candidate."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "ambassador contacts: round 3 part 3 (10 cities)",
+    "kind": "outreach-research",
+    "tokens": 187850,
+    "trees": 0,
+    "note": "9 candidates kept, ~20k per candidate."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "amsterdam enrich",
+    "kind": "verify",
+    "tokens": 142783,
+    "trees": 0,
+    "note": "4 of 7 indexed trees linked to the LRMB register by id; no trees added."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "barcelona enrich",
+    "kind": "verify",
+    "tokens": 149457,
+    "trees": 0,
+    "note": "12 trees got register URL and id, 4 got measurements, 2 garden access lines corrected."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "seville enrich",
+    "kind": "verify",
+    "tokens": 141632,
+    "trees": 0,
+    "note": "wasted: sevilla.org unreachable, 1 of 8 closable and its figures unreread, so not applied. Host blocklisted."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "rome",
+    "kind": "enrich",
+    "tokens": 149123,
+    "trees": 0,
+    "note": "Lazio register ids on 9 trees, girth/height on 7, Orto Botanico access line. Enrichment, no new trees."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "palermo",
+    "kind": "enrich",
+    "tokens": 145840,
+    "trees": 0,
+    "note": "MASAF register ids on 9 trees, exact coordinate matches. Two group entries carry no measurement; no season moments."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "oahu",
+    "kind": "enrich",
+    "tokens": 134831,
+    "trees": 0,
+    "note": "Honolulu Exceptional Trees register ids on 5 trees, one height. Register rounds coords, so matched by name. Kuhio Beach banyan row says Not Accessible - Fence; access line unchecked."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "vienna (enrich)",
+    "kind": "verify",
+    "tokens": 152913,
+    "trees": 0,
+    "note": "Enrichment: register ids on 13 trees, girth on 7; Baumkataster WFS hung, so girth missing for 6. No new trees."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "london (enrich)",
+    "kind": "verify",
+    "tokens": 132431,
+    "trees": 0,
+    "wasted": 132431,
+    "note": "Closed nothing: kew.org Cloudflare challenge, no per-tree register page, no sourced measurements reachable."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "athens (enrich)",
+    "kind": "verify",
+    "tokens": 113045,
+    "trees": 0,
+    "wasted": 113045,
+    "note": "Thin pass: two fetches, no register or measurement search. Nothing closed."
+   },
+   {
+    "date": "2026-10-06",
+    "target": "glasgow",
+    "kind": "enrich",
+    "tokens": 128378,
+    "trees": 0,
+    "note": "1 height closed (gla_005); no register records found; thin yield"
+   },
+   {
+    "date": "2026-10-06",
+    "target": "graz",
+    "kind": "verify",
+    "tokens": 173753,
+    "trees": 0,
+    "note": "1 flagged plane verified; 11 register rows resolved to houses/schools and blocked"
+   },
+   {
+    "date": "2026-10-06",
+    "target": "graz",
+    "kind": "write",
+    "tokens": 147637,
+    "trees": 1,
+    "note": "grz_016 merged with de overlay; fdl_001 skipped as duplicate of spa_001 (brief wrong)",
+    "brief_wrong": true
+   }
+  ],
+  "2026-10-07": [
+   {
+    "date": "2026-10-07",
+    "target": "guerneville",
+    "kind": "enrich",
+    "tokens": 124282,
+    "trees": 0,
+    "note": "Enrich pass: official State Parks access line (fee, hours, walk-in) on gue_001 and gue_002; no register, measurement or season to be had."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "copenhagen",
+    "kind": "enrich",
+    "tokens": 151496,
+    "trees": 0,
+    "note": "Enrich pass: only 2 weeping-beech best_time applied. Register ids dropped (Dansk Traeregister is a society register, 38 of 41 pages unfetched), no measurements or access found."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "dresden (dre_020-025)",
+    "kind": "verify",
+    "tokens": 218701,
+    "trees": 6,
+    "note": "Verified from de.wikipedia Gedenkbaeume/Naturdenkmal plus Commons categories; Dohna-Eiche held on access."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "dresden (dre_020-025)",
+    "kind": "write",
+    "tokens": 188400,
+    "trees": 6,
+    "note": "Merged 6, de overlay translated, counts rewritten for 25. preflight 0 problems."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "frankfurt (frk_007-011)",
+    "kind": "verify",
+    "tokens": 186546,
+    "trees": 5,
+    "note": "Naturdenkmal register mirror plus Wayback copies of frankfurt.de city pages (the site is Cloudflare-blocked); 4 leads added."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "frankfurt (frk_007-011)",
+    "kind": "write",
+    "tokens": 221175,
+    "trees": 5,
+    "note": "Merged 5, de overlay, counts to 11, oldest_tree_id pinned to frk_001. preflight 0 problems."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "billerbeck/munsterland (msl_001-004)",
+    "kind": "verify",
+    "tokens": 215460,
+    "trees": 4,
+    "note": "Baumkunde register around the Baumberge on Wolfgang Schurmann's pointer; 4 verified, 9 parked or blocked."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "munsterland (msl_001-004)",
+    "kind": "write",
+    "tokens": 179808,
+    "trees": 4,
+    "note": "New region place file with stories, intro, question set and FAQ."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "utrecht",
+    "kind": "enrich",
+    "tokens": 149171,
+    "trees": 0,
+    "note": "Enrich pass: 4 trees improved (ginkgo register id, girth, height; access hours; one beech best_time)."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "dresden",
+    "kind": "verify",
+    "tokens": 140000,
+    "trees": 7,
+    "note": "Register-less deepen via de.wikipedia Naturdenkmal articles and Commons geotags; 7 flagged, 5 leads."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "dresden",
+    "kind": "write",
+    "tokens": 175000,
+    "trees": 7,
+    "note": "7 stories plus recognition lines merged, German overlay for the 7 and count copy updated."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "hong-kong",
+    "kind": "enrich",
+    "tokens": 151557,
+    "trees": 0,
+    "note": "Enrich pass: LCSD YL/6 register id on the Kam Tin Tree House; Forbes Street has no authority record found, no measurements or season."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "kyoto",
+    "kind": "enrich",
+    "tokens": 188306,
+    "trees": 0,
+    "note": "Enrich pass: 9 of 11 trees got a register record (city natural monument, Kamigyo proud trees, national monument), girth/height on 3, access lines on 4."
+   },
+   {
+    "date": "2026-10-07",
+    "target": "leipzig",
+    "kind": "enrich",
+    "tokens": 177497,
+    "trees": 0,
+    "note": "Enrich pass: Naturdenkmal Leipzig ND numbers on 19 trees from the Wikipedia list; no measurements exist in it; bald cypress autumn peak."
+   }
+  ],
+  "2026-10-08": [
+   {
+    "date": "2026-10-08",
+    "target": "bologna",
+    "kind": "enrich",
+    "tokens": 141226,
+    "trees": 0,
+    "note": "Enrich pass: RAMI/AMI register ids on five trees, girth and height on the Rizzoli cedar. Montagnola and Villa Ghigi stay gaps; bbcc.regione.emilia-romagna.it returned 403."
+   },
+   {
+    "date": "2026-10-08",
+    "target": "belgrade",
+    "kind": "enrich",
+    "tokens": 155585,
+    "trees": 0,
+    "note": "Enrich pass: Zelenilo Beograd protected-tree list entries on four trees, girth and height on four (Wikipedia-cited for the Topcider plane). Zemun yews measurement, access and Topcider authority record stay gaps."
+   },
+   {
+    "date": "2026-10-08",
+    "target": "olympic-national-park",
+    "kind": "enrich",
+    "tokens": 138591,
+    "trees": 0,
+    "note": "Enrich pass: NPS per-tree page for the Quinault Big Spruce only. Kalaloch cedar, Tree of Life and Duncan Cedar have no authority record; resort figures not taken as measurements."
+   },
+   {
+    "date": "2026-10-08",
+    "target": "nuremberg",
+    "kind": "enrich",
+    "tokens": 136043,
+    "trees": 0,
+    "note": "Enrich pass: Bavarian Naturdenkmal ids (ND-numbers) on four trees; the Hallerwiese lime match is probable, not certain. No measurements found."
+   },
+   {
+    "date": "2026-10-08",
+    "target": "nuremberg",
+    "kind": "verify",
+    "tokens": 155000,
+    "trees": 0,
+    "note": "register mined out: 0 new, all candidates published/blocked/leads; Overpass 406"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "delft",
+    "kind": "verify",
+    "tokens": 172000,
+    "trees": 3,
+    "note": "LRMB register deepen; 2 confirmed pins via PDOK aerial, 1 small-site approximate; 13 leads/blocked"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "delft",
+    "kind": "write",
+    "tokens": 134000,
+    "trees": 3,
+    "note": "3 stories + recognition lines del_009-011, merged"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "vienna",
+    "kind": "verify",
+    "tokens": 135000,
+    "trees": 5,
+    "note": "register x ND-list x Baumkataster join; only public street trees with inventory row shipped; wien.gv.at hangs; token figure is an estimate"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "vienna",
+    "kind": "write",
+    "tokens": 160000,
+    "trees": 5,
+    "note": "vie_052-056 stories merged, German overlay translated for the 5"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "salzburg",
+    "kind": "verify",
+    "tokens": 115000,
+    "trees": 3,
+    "note": "3 verified, 9 leads/blocked"
+   },
+   {
+    "date": "2026-10-08",
+    "target": "salzburg",
+    "kind": "write",
+    "tokens": 185000,
+    "trees": 3,
+    "note": "szb_016-018 stories + recognition lines merged, 3 Commons photos looked at and approved, German overlay translated, counts 15->18"
+   }
+  ],
+  "2026-10-09": [
+   {
+    "date": "2026-10-09",
+    "target": "berlin",
+    "kind": "enrich",
+    "tokens": 165195,
+    "trees": 18,
+    "note": "batch 2: register ids on 17 trees, ferry fare on one; ber_031 possibly felled"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "berlin",
+    "kind": "enrich",
+    "tokens": 186129,
+    "trees": 18,
+    "note": "batch 3: register ids on 18, girth/height on 10 from Baumkataster WFS, 2 best_time"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "rome",
+    "kind": "enrich",
+    "tokens": 153711,
+    "trees": 16,
+    "note": "MASAF register ids on 15 trees, one measurement, botanic garden hours"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "rome",
+    "kind": "enrich",
+    "tokens": 136044,
+    "trees": 3,
+    "note": "batch 2: MASAF ids on 3 trees, one girth"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "palermo",
+    "kind": "enrich",
+    "tokens": 161119,
+    "trees": 12,
+    "note": "MASAF ids on 11 trees, Villa Malfitano ticket and slots corrected"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "oahu",
+    "kind": "enrich",
+    "tokens": 183767,
+    "trees": 17,
+    "note": "Honolulu register ids and measurements, Foster garden prices, 4 OSM pins"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "tokyo",
+    "kind": "enrich",
+    "tokens": 213757,
+    "trees": 7,
+    "note": "national and Tokyo register links on 5 trees, camphor access corrected, 76 tool calls"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "munich",
+    "kind": "enrich",
+    "tokens": 162271,
+    "trees": 19,
+    "note": "batch 1: LfU Bayern register ids on 19 trees, 4 girths"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "munich",
+    "kind": "enrich",
+    "tokens": 164613,
+    "trees": 18,
+    "note": "batch 2: LfU ids on 17, 3 measurements, 3 best_time"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "munich",
+    "kind": "enrich",
+    "tokens": 163719,
+    "trees": 20,
+    "note": "batch 3: LfU ids on 19, 16 register pins, 1 girth; muc_037/049 duplicate flagged"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "new-york",
+    "kind": "enrich",
+    "tokens": 162814,
+    "trees": 14,
+    "note": "Great Trees girth/height on 11, 6 register pins, garden access; nyc_006 species conflict"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "edinburgh",
+    "kind": "enrich",
+    "tokens": 165098,
+    "trees": 7,
+    "note": "RBGE hours on 7 trees, 3 accession ids; no public measurements"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "vienna",
+    "kind": "enrich",
+    "tokens": 171356,
+    "trees": 11,
+    "note": "4 register ids, 8 girths from Baumkataster, Schoenbrunn hours; vie_010 pin corrected 138 m"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "brussels",
+    "kind": "enrich",
+    "tokens": 159971,
+    "trees": 15,
+    "note": "heritage.brussels record URLs, girths and heights on 15 trees"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "brussels",
+    "kind": "enrich",
+    "tokens": 158055,
+    "trees": 13,
+    "note": "batch 2: records, measurements on 13 trees, 4 register pins"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "dublin",
+    "kind": "enrich",
+    "tokens": 164292,
+    "trees": 12,
+    "note": "10 register ids, 2 measurements, 2 access lines; dub_008 pin conflict flagged"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "brisbane",
+    "kind": "enrich",
+    "tokens": 164362,
+    "trees": 17,
+    "note": "National Trust register records and heights on 13, heritage records, access, one location_site"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "paris",
+    "kind": "enrich",
+    "tokens": 161866,
+    "trees": 11,
+    "note": "Paris register ids with sheet PDFs on 11 trees"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "malaga",
+    "kind": "enrich",
+    "tokens": 143677,
+    "trees": 8,
+    "note": "garden records, 7 heights, 1 girth, hackberry access"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "vienna",
+    "kind": "enrich",
+    "tokens": 155611,
+    "trees": 16,
+    "note": "batch 2: 13 register ids, 4 girths, 4 best_time"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "vienna",
+    "kind": "enrich",
+    "tokens": 150408,
+    "trees": 13,
+    "note": "batch 3: 13 register ids, 2 heights, 1 best_time"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "london",
+    "kind": "enrich",
+    "tokens": 155081,
+    "trees": 5,
+    "note": "access lines on 4, one girth floor; no UK register; kew.org 403"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "alicante",
+    "kind": "enrich",
+    "tokens": 149031,
+    "trees": 16,
+    "note": "Generalitat Valenciana register ids on 16 trees"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "porto",
+    "kind": "enrich",
+    "tokens": 169060,
+    "trees": 12,
+    "note": "ICNF ids on 10, 7 heights, Palacio de Cristal hours"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "prague",
+    "kind": "enrich",
+    "tokens": 159215,
+    "trees": 9,
+    "note": "AOPK ids and girths on 6, one pin, 3 measurements"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "cagliari",
+    "kind": "enrich",
+    "tokens": 155660,
+    "trees": 6,
+    "note": "2 MASAF ids, garden hours corrected, 2 pins"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "madrid",
+    "kind": "enrich",
+    "tokens": 199073,
+    "trees": 5,
+    "note": "pruned to authority sources: 2 register URLs, 3 heights, 1 girth, botanic garden access; third-party Jimdo catalogue ids withheld"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "florence",
+    "kind": "enrich",
+    "tokens": 170860,
+    "trees": 16,
+    "note": "14 MASAF ids, 1 height, 1 pin, garden hours; flo_026 id withheld on a 208 m conflict"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "krakow",
+    "kind": "enrich",
+    "tokens": 152150,
+    "trees": 11,
+    "note": "6 CRFOP records, 3 girths, garden access, 3 best_time"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "athens",
+    "kind": "enrich",
+    "tokens": 137151,
+    "trees": 0,
+    "wasted": 137151,
+    "note": "no Greek register imported, culture ministry domains fail DNS; nothing filled"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "pamplona",
+    "kind": "enrich",
+    "tokens": 201921,
+    "trees": 14,
+    "note": "Navarra MN ids and fichas on 6, 5 measurements, 8 river-park ids"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "bath",
+    "kind": "enrich",
+    "tokens": 139558,
+    "trees": 2,
+    "note": "access lines corrected on two trees; UK has no per-tree register, rest dead ends"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "berlin",
+    "kind": "enrich",
+    "tokens": 174821,
+    "trees": 5,
+    "note": "girths on 4 oaks, height on 2, register ids on both Pfaueninsel oaks"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "seville",
+    "kind": "enrich",
+    "tokens": 152175,
+    "trees": 8,
+    "note": "Alcazar and cathedral hours, ficha ids on 5 trees; sevilla.org fichas unreachable"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "barcelona",
+    "kind": "enrich",
+    "tokens": 150898,
+    "trees": 15,
+    "note": "batch 2: register ids and girths on 15 trees, 5 register pins, botanic garden access corrected to free; bcn_043 duplicate flagged"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "amsterdam",
+    "kind": "enrich",
+    "tokens": 143139,
+    "trees": 12,
+    "note": "batch 2: register ids on 12 trees, 4 girths"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "barcelona",
+    "kind": "enrich",
+    "tokens": 144640,
+    "trees": 20,
+    "note": "register ids and heights on 20 trees, 3 girths; barcelona.cat blocklisted"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "lisbon",
+    "kind": "enrich",
+    "tokens": 148832,
+    "trees": 8,
+    "note": "ICNF register ids and girth/height on 8 trees; pins refused for missing source URL; jacarandas not in register"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "amsterdam",
+    "kind": "enrich",
+    "tokens": 171065,
+    "trees": 17,
+    "note": "register ids on 17 trees, 12 girths, Van Loon access and season; ARTIS hours pages JS-rendered"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "salzburg",
+    "kind": "write",
+    "tokens": 190000,
+    "trees": 1,
+    "note": "4 READY leads, leads carried no sources; 1 shipped (Walser Birnbaum), 3 stay leads; de overlay"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "salt-lake-city",
+    "kind": "verify",
+    "tokens": 178000,
+    "trees": 0,
+    "note": "Utah big-tree ArcGIS register; 5 confirmed pins verified, 1 held (slc_006)"
+   },
+   {
+    "date": "2026-10-09",
+    "target": "salt-lake-city",
+    "kind": "write",
+    "tokens": 170000,
+    "trees": 5,
+    "note": "new city opened with 5 stories, recognition lines, city copy"
+   },
+   {
+    "target": "singapore",
+    "kind": "enrich",
+    "tokens": 150028,
+    "trees": 0,
+    "note": "enrichment: register record + height on 19 trees, girth on 12, Gardens hours on 9; no new trees"
+   },
+   {
+    "target": "lisbon",
+    "kind": "enrich",
+    "tokens": 151544,
+    "trees": 0,
+    "note": "enrichment: ICNF AIP register id on 14 trees, girth/height on 12; no new trees"
+   }
+  ],
+  "2026-10-10": [
+   {
+    "date": "2026-10-10",
+    "target": "zurich",
+    "kind": "enrich",
+    "tokens": 155536,
+    "trees": 0,
+    "note": "nothing found; PDFs unreadable on the runner; wasted",
+    "wasted": 155536
+   },
+   {
+    "date": "2026-10-10",
+    "target": "stockholm",
+    "kind": "enrich",
+    "tokens": 141386,
+    "trees": 0,
+    "note": "nothing found: lansstyrelsen PDF timed out, no per-tree register pages; wasted",
+    "wasted": 141386
+   },
+   {
+    "date": "2026-10-10",
+    "target": "netherlands-lrmb-bulk",
+    "kind": "enrich",
+    "tokens": 0,
+    "trees": 0,
+    "note": "scripts/lrmb_fill.py: 353 Dutch trees got register ids and/or LRMB girth and height, no agent"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "haarlem",
+    "kind": "enrich",
+    "tokens": 158222,
+    "trees": 0,
+    "note": "LRMB live-layer girth/height on 10 trees, 5 pins"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "toronto",
+    "kind": "enrich",
+    "tokens": 162773,
+    "trees": 0,
+    "note": "Ontario Heritage Tree ids on 6 trees, one access correction"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "melbourne",
+    "kind": "enrich",
+    "tokens": 140702,
+    "trees": 0,
+    "note": "Yarra register ids and measurements on 12 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "geneva",
+    "kind": "enrich",
+    "tokens": 156369,
+    "trees": 0,
+    "note": "SITG ids on 13 trees, 2 city pages, 1 pin"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "seattle",
+    "kind": "enrich",
+    "tokens": 150851,
+    "trees": 0,
+    "note": "SDOT heritage ids on 9 trees, heights, 5 pins"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "granada",
+    "kind": "enrich",
+    "tokens": 150247,
+    "trees": 0,
+    "note": "one access line; no register match"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "leipzig",
+    "kind": "enrich",
+    "tokens": 155816,
+    "trees": 0,
+    "note": "Naturdenkmal ids on 18 trees; no measurements found"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "kyoto",
+    "kind": "enrich",
+    "tokens": 169387,
+    "trees": 0,
+    "note": "Kamigyo ward records on 5 trees, measurements on 3, one small site"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "budapest",
+    "kind": "enrich",
+    "tokens": 181232,
+    "trees": 0,
+    "note": "Fokert notable-tree records on 11 trees, measurements on 2"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "crete",
+    "kind": "enrich",
+    "tokens": 146217,
+    "trees": 0,
+    "note": "one height; no per-tree register pages"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "hong-kong",
+    "kind": "enrich",
+    "tokens": 164099,
+    "trees": 0,
+    "note": "Tree Register ids on 8 trees, measurements on 4"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "osaka",
+    "kind": "enrich",
+    "tokens": 161588,
+    "trees": 0,
+    "note": "2 kunishitei records, measurements on 2 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "utrecht",
+    "kind": "enrich",
+    "tokens": 167079,
+    "trees": 0,
+    "note": "3 register ids, measurements on 5, season on 2"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "seoul",
+    "kind": "enrich",
+    "tokens": 175076,
+    "trees": 0,
+    "note": "measurements and protected-tree ids on 4 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "beijing",
+    "kind": "enrich",
+    "tokens": 155024,
+    "trees": 0,
+    "note": "Landscaping Bureau records and measurements on 3 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "madeira",
+    "kind": "enrich",
+    "tokens": 223392,
+    "trees": 0,
+    "note": "IFCN register sheets and measurements on 6 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "boston",
+    "kind": "enrich",
+    "tokens": 172686,
+    "trees": 0,
+    "note": "Arboretum accessions and NPS record on 7 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "san-francisco",
+    "kind": "enrich",
+    "tokens": 153022,
+    "trees": 0,
+    "note": "1 landmark tree id; register has no per-tree pages, sfenvironment.org 403s"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "kanazawa",
+    "kind": "enrich",
+    "tokens": 173902,
+    "trees": 0,
+    "note": "records, measurements, access on 7 trees (no new trees)"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "vilnius",
+    "kind": "enrich",
+    "tokens": 178414,
+    "trees": 0,
+    "note": "register + measurements on 9 trees; 2 retired to leads"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "coimbra",
+    "kind": "enrich",
+    "tokens": 142682,
+    "trees": 0,
+    "note": "ICNF register ids on 4 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "reykjavik",
+    "kind": "enrich",
+    "tokens": 157123,
+    "trees": 2,
+    "note": "Tree of the Year PDF records and measurements on rey_003, rey_004"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "new-orleans",
+    "kind": "enrich",
+    "tokens": 137565,
+    "trees": 1,
+    "note": "low yield: access line on nol_008 only; no register or pin evidence, Audubon hosts return 403"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "the-hague",
+    "kind": "enrich",
+    "tokens": 152543,
+    "trees": 2,
+    "note": "batch 2: girth/height from LRMB ArcGIS on hag_029/030, best_time on 029; hag_026 and hag_031 register status dead"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "the-hague",
+    "kind": "enrich",
+    "tokens": 138641,
+    "trees": 15,
+    "note": "LRMB register ids on 15 trees, 7 matched by coordinate in the local copy; no measurements found"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "florence",
+    "kind": "enrich",
+    "tokens": 151523,
+    "trees": 3,
+    "note": "MASAF register ids on flo_020/021/022, access from owner and ministry pages; pins stay open"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "sintra",
+    "kind": "enrich",
+    "tokens": 159697,
+    "trees": 4,
+    "note": "ICNF record + girth/height on sin_003, heights and ticket/hours on Pena and Monserrate trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "houston",
+    "kind": "enrich",
+    "tokens": 147502,
+    "trees": 6,
+    "note": "register ids on 5 Texas Big Tree entries (girths dropped: registry is non-commercial), Becks Prime small site"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "krakow",
+    "kind": "enrich",
+    "tokens": 144119,
+    "trees": 2,
+    "note": "CRFOP record and girth on kra_013, Botanic Garden price and hours on kra_003; pin refused for missing source URL"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "milan",
+    "kind": "enrich",
+    "tokens": 137609,
+    "trees": 3,
+    "note": "batch 2: MASAF sheet, girth/height on 3, Orto Botanico di Brera hours; comune.milano.it 403"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "milan",
+    "kind": "enrich",
+    "tokens": 144970,
+    "trees": 6,
+    "note": "MASAF ids and girth/height on 6; 21 gaps dead-ended, no authority pages opened"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "arnhem",
+    "kind": "enrich",
+    "tokens": 159128,
+    "trees": 14,
+    "note": "batch 2: ids and 11 girth/height from the LRMB ArcGIS layer; surfaced 3 felled trees, which led to 45 retired across 14 NL cities"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "arnhem",
+    "kind": "enrich",
+    "tokens": 148009,
+    "trees": 5,
+    "note": "LRMB ids on 5, one girth; 24 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "los-angeles",
+    "kind": "enrich",
+    "tokens": 156529,
+    "trees": 3,
+    "note": "no US register imported; monument no. 19, two heights; 31 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "ede",
+    "kind": "enrich",
+    "tokens": 145843,
+    "trees": 7,
+    "note": "LRMB register ids on 7 trees, Hoge Veluwe access; no register measurements, hoekelum.nl 403"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "palma-de-mallorca",
+    "kind": "enrich",
+    "tokens": 142330,
+    "trees": 5,
+    "note": "Balears register records on 5, 3 heights; access pages not opened"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "leeuwarden",
+    "kind": "enrich",
+    "tokens": 159594,
+    "trees": 0,
+    "note": "LRMB ids on 3, measurements on 4, season on 3"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "cambridge",
+    "kind": "enrich",
+    "tokens": 153287,
+    "trees": 0,
+    "note": "owner pages on 3 trees, 2 access lines"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "dubrovnik",
+    "kind": "enrich",
+    "tokens": 143405,
+    "trees": 0,
+    "note": "county protected-nature record for Trsteno planes, arboretum access on 3"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "naples",
+    "kind": "enrich",
+    "tokens": 159897,
+    "trees": 0,
+    "note": "Campania cards / MASAF ids on 18 trees, measurements where sources agreed"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "washington-dc",
+    "kind": "enrich",
+    "tokens": 154765,
+    "trees": 0,
+    "note": "Architect of the Capitol / VT records on 4, Casey Trees girths on 3"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "nice",
+    "kind": "enrich",
+    "tokens": 170894,
+    "trees": 0,
+    "note": "Region Sud / Culture / ARBRES records on 6 trees, hours on 4"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "strasbourg",
+    "kind": "enrich",
+    "tokens": 146738,
+    "trees": 0,
+    "note": "city register pages with girth and height on all 10 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "las-vegas",
+    "kind": "enrich",
+    "tokens": 140902,
+    "trees": 0,
+    "note": "nothing applied: only a 'Free' line the source does not state; wasted"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "amersfoort",
+    "kind": "enrich",
+    "tokens": 143527,
+    "trees": 0,
+    "note": "3 LRMB ids, no measurements in register"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "vancouver",
+    "kind": "enrich",
+    "tokens": 139785,
+    "trees": 0,
+    "note": "Heritage Register ids on 7 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "philadelphia",
+    "kind": "enrich",
+    "tokens": 150071,
+    "trees": 0,
+    "note": "Morris Arboretum prices on 3 trees; Commons-coordinate pin dropped"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "kagoshima",
+    "kind": "enrich",
+    "tokens": 131665,
+    "trees": 0,
+    "note": "city preserved-tree ids on 7 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "perth",
+    "kind": "enrich",
+    "tokens": 151424,
+    "trees": 0,
+    "note": "inHerit / National Trust records on 4 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "verona",
+    "kind": "enrich",
+    "tokens": 146656,
+    "trees": 0,
+    "note": "MASAF id, a height, garden hours on 3 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "eindhoven",
+    "kind": "enrich",
+    "tokens": 153034,
+    "trees": 0,
+    "note": "LRMB measurements on 4; ein_006 retired (register: dead/felled)"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "mexico-city",
+    "kind": "enrich",
+    "tokens": 149174,
+    "trees": 0,
+    "note": "SEDEMA extract ids and measurements on 9 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "segovia",
+    "kind": "enrich",
+    "tokens": 141818,
+    "trees": 0,
+    "note": "one height; no per-tree register reachable"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "sequoia-national-park",
+    "kind": "enrich",
+    "tokens": 135404,
+    "trees": 0,
+    "note": "General Sherman height and hours only"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "sorrento",
+    "kind": "enrich",
+    "tokens": 139154,
+    "trees": 0,
+    "note": "Campania/MASAF ids and measurements on 7 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "tallinn",
+    "kind": "enrich",
+    "tokens": 153112,
+    "trees": 0,
+    "note": "one girth; register hosts blocked"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "helsinki",
+    "kind": "enrich",
+    "tokens": 161992,
+    "trees": 0,
+    "note": "natural-monument records and heights on 7 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "oslo",
+    "kind": "enrich",
+    "tokens": 145845,
+    "trees": 0,
+    "note": "one girth"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "bristol",
+    "kind": "enrich",
+    "tokens": 160135,
+    "trees": 0,
+    "note": "TPO record and survey girths on 5 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "quebec-city",
+    "kind": "enrich",
+    "tokens": 123241,
+    "trees": 0,
+    "note": "register ids and DBH girths on 6 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "leiden",
+    "kind": "enrich",
+    "tokens": 136208,
+    "trees": 0,
+    "note": "LRMB ids and measurements on 11 trees, Hortus access"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "bucaco",
+    "kind": "enrich",
+    "tokens": 150573,
+    "trees": 0,
+    "note": "ICNF ids and measurements on 18 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "pittsburgh",
+    "kind": "enrich",
+    "tokens": 152022,
+    "trees": 0,
+    "note": "registry link, park hours, season on 4 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "boise",
+    "kind": "enrich",
+    "tokens": 155998,
+    "trees": 0,
+    "note": "Idaho Big Tree measurements on 3 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "luxembourg-city",
+    "kind": "enrich",
+    "tokens": 176037,
+    "trees": 0,
+    "note": "ANF ids on 5 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "spokane",
+    "kind": "enrich",
+    "tokens": 147250,
+    "trees": 0,
+    "note": "heritage register ids, heights, 8 register pins on 12 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "manchester",
+    "kind": "enrich",
+    "tokens": 138825,
+    "trees": 0,
+    "note": "nothing: council site blocks fetchers; wasted",
+    "wasted": 138825
+   },
+   {
+    "date": "2026-10-10",
+    "target": "taipei",
+    "kind": "enrich",
+    "tokens": 162809,
+    "trees": 0,
+    "note": "protected-tree register ids, measurements, pins on 3 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "maastricht",
+    "kind": "enrich",
+    "tokens": 155337,
+    "trees": 0,
+    "note": "LRMB ids, measurements, 3 pins on 9 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "sapporo",
+    "kind": "enrich",
+    "tokens": 145867,
+    "trees": 0,
+    "note": "five measurements via a secondary site, one access line"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "bangkok",
+    "kind": "enrich",
+    "tokens": 135601,
+    "trees": 0,
+    "note": "nothing: no per-tree records found; wasted",
+    "wasted": 135601
+   },
+   {
+    "date": "2026-10-10",
+    "target": "parma",
+    "kind": "enrich",
+    "tokens": 133423,
+    "trees": 0,
+    "note": "MASAF ids on 5 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "cologne",
+    "kind": "enrich",
+    "tokens": 140047,
+    "trees": 0,
+    "note": "Naturdenkmal ids on 5 trees, two girths"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "ljubljana",
+    "kind": "enrich",
+    "tokens": 150950,
+    "trees": 0,
+    "note": "decree record on 1 tree, garden hours on 1"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "groningen",
+    "kind": "enrich",
+    "tokens": 145631,
+    "trees": 0,
+    "note": "LRMB ids, measurements, 4 register pins on 8 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "dordrecht",
+    "kind": "enrich",
+    "tokens": 159434,
+    "trees": 0,
+    "note": "LRMB ids, museum and house access on 4 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "lyon",
+    "kind": "enrich",
+    "tokens": 141842,
+    "trees": 0,
+    "note": "PLU-H register ids on 3 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "charleston",
+    "kind": "enrich",
+    "tokens": 140663,
+    "trees": 0,
+    "note": "Angel Oak height, one small-site pin"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "frankfurt",
+    "kind": "enrich",
+    "tokens": 161705,
+    "trees": 0,
+    "note": "Naturdenkmal ids, measurements, garden access on 11 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "cordoba",
+    "kind": "enrich",
+    "tokens": 155169,
+    "trees": 0,
+    "note": "two access lines; municipal PDF unreadable"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "cardiff",
+    "kind": "enrich",
+    "tokens": 144023,
+    "trees": 0,
+    "note": "council record, measurement and pin on 1 tree"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "enschede",
+    "kind": "enrich",
+    "tokens": 161166,
+    "trees": 0,
+    "note": "height and season on 2 trees; ens_003 retired (register dead)"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "higashi-hiroshima",
+    "kind": "enrich",
+    "tokens": 146051,
+    "trees": 0,
+    "note": "giant-tree records and measurements on 17 trees; hgh_014 retired (misattributed record)"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "minneapolis",
+    "kind": "enrich",
+    "tokens": 153427,
+    "trees": 0,
+    "note": "DNR registry entry and measurements on 1 tree; pin conflict left for a session"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "savannah",
+    "kind": "enrich",
+    "tokens": 124382,
+    "trees": 0,
+    "note": "nothing: no authority records or live measurements; wasted",
+    "wasted": 124382
+   },
+   {
+    "date": "2026-10-10",
+    "target": "bologna",
+    "kind": "enrich",
+    "tokens": 142525,
+    "trees": 0,
+    "note": "MASAF ids, one measurement, botanical garden access on 3 trees"
+   },
+   {
+    "date": "2026-10-10",
+    "target": "guimaraes",
+    "kind": "enrich",
+    "tokens": 143224,
+    "trees": 0,
+    "note": "ICNF ids and measurements on 8 trees"
+   }
+  ],
+  "2026-10-11": [
+   {
+    "date": "2026-10-11",
+    "target": "zwolle",
+    "kind": "enrich",
+    "tokens": 147545,
+    "trees": 0,
+    "note": "10 trees enriched; 4 retired as register-dead"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "menorca",
+    "kind": "enrich",
+    "tokens": 156944,
+    "trees": 0,
+    "note": "6 trees: CAIB fichas, girth and height"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "miyazaki",
+    "kind": "enrich",
+    "tokens": 138896,
+    "trees": 0,
+    "note": "nothing: no per-tree id in the Japanese register file; wasted",
+    "wasted": 138896
+   },
+   {
+    "date": "2026-10-11",
+    "target": "bordeaux",
+    "kind": "enrich",
+    "tokens": 147237,
+    "trees": 0,
+    "note": "10 trees: Metropole register ids, girth, height"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "hawaii",
+    "kind": "enrich",
+    "tokens": 136957,
+    "trees": 0,
+    "note": "6 trees: register ids and girths"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "genoa",
+    "kind": "enrich",
+    "tokens": 163148,
+    "trees": 0,
+    "note": "12 trees: MASAF ids, measurements, park prices"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "nuremberg",
+    "kind": "enrich",
+    "tokens": 160294,
+    "trees": 0,
+    "note": "12 register ids, 2 measurements"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "oxford",
+    "kind": "enrich",
+    "tokens": 172584,
+    "trees": 0,
+    "note": "4 trees: Parks record, heights, access"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "toulouse",
+    "kind": "enrich",
+    "tokens": 137992,
+    "trees": 0,
+    "note": "10 register ids, no measurements"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "aarhus",
+    "kind": "enrich",
+    "tokens": 147081,
+    "trees": 0,
+    "note": "7 trees: dendron.dk records, 5 measurements"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "freiburg",
+    "kind": "enrich",
+    "tokens": 164615,
+    "trees": 0,
+    "note": "7 LUBW numbers, 1 measurement, 2 seasons"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "padua",
+    "kind": "enrich",
+    "tokens": 165062,
+    "trees": 0,
+    "note": "9 trees: MASAF ids and measurements, garden access"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "bergamo",
+    "kind": "enrich",
+    "tokens": 138420,
+    "trees": 0,
+    "note": "1 MASAF record; web never fetched, gaps wrongly buried"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "salzburg",
+    "kind": "enrich",
+    "tokens": 176125,
+    "trees": 0,
+    "note": "18 Land Salzburg ids"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "ghent",
+    "kind": "enrich",
+    "tokens": 154711,
+    "trees": 0,
+    "note": "5 inventory records"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "hallstatt",
+    "kind": "enrich",
+    "tokens": 169964,
+    "trees": 0,
+    "note": "5 Naturschutzbuch records, 4 measurements"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "salamanca",
+    "kind": "enrich",
+    "tokens": 145138,
+    "trees": 0,
+    "note": "1 of 4 trees"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "york",
+    "kind": "enrich",
+    "tokens": 138196,
+    "trees": 0,
+    "note": "6 measurements and access; register claim dropped"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "nagoya",
+    "kind": "enrich",
+    "tokens": 184299,
+    "trees": 0,
+    "note": "6 ministry records, castle access"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "stuttgart",
+    "kind": "enrich",
+    "tokens": 152713,
+    "trees": 0,
+    "note": "4 LUBW records, 1 measurement"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "bratislava",
+    "kind": "enrich",
+    "tokens": 146688,
+    "trees": 0,
+    "note": "6 register numbers; measurements withheld (citizen site only)"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "helmond",
+    "kind": "enrich",
+    "tokens": 144875,
+    "trees": 0,
+    "note": "4 LRMB records; 1 retired; much now covered by lrmb_fill.py"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "oss",
+    "kind": "enrich",
+    "tokens": 128906,
+    "trees": 0,
+    "note": "1 record; 4 register-dead trees flagged, retirement reverted (thin-place freeze)"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "rio-de-janeiro",
+    "kind": "enrich",
+    "tokens": 138195,
+    "trees": 0,
+    "note": "2 survey heights; mostly untested"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "gdansk",
+    "kind": "enrich",
+    "tokens": 159501,
+    "trees": 0,
+    "note": "3 trees"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "alkmaar",
+    "kind": "enrich",
+    "tokens": 148253,
+    "trees": 0,
+    "note": "5 LRMB records; 1 retired"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "den-bosch",
+    "kind": "enrich",
+    "tokens": 150771,
+    "trees": 0,
+    "note": "7 records; 1 retired"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "graz",
+    "kind": "enrich",
+    "tokens": 157864,
+    "trees": 0,
+    "note": "16 city register ids, park access"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "hoorn",
+    "kind": "enrich",
+    "tokens": 144614,
+    "trees": 0,
+    "note": "1 group record; 5 pins refused for missing source URL"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "lausanne",
+    "kind": "enrich",
+    "tokens": 147454,
+    "trees": 0,
+    "note": "7 city tree pages, measurements, 6 pins"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "lucca",
+    "kind": "enrich",
+    "tokens": 151475,
+    "trees": 0,
+    "note": "13 MASAF records, garden access"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "bilbao",
+    "kind": "enrich",
+    "tokens": 125236,
+    "trees": 0,
+    "note": "nothing found; wasted",
+    "wasted": 125236
+   },
+   {
+    "date": "2026-10-11",
+    "target": "ronda",
+    "kind": "enrich",
+    "tokens": 141594,
+    "trees": 0,
+    "note": "6 REDIAM fichas, measurements"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "belfast",
+    "kind": "enrich",
+    "tokens": 141263,
+    "trees": 0,
+    "note": "1 access line"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "buenos-aires",
+    "kind": "enrich",
+    "tokens": 139287,
+    "trees": 0,
+    "note": "4 Arbopedia records, heights"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "como",
+    "kind": "enrich",
+    "tokens": 149752,
+    "trees": 0,
+    "note": "9 MASAF records, Grumello hours"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "deventer",
+    "kind": "enrich",
+    "tokens": 153106,
+    "trees": 0,
+    "note": "4 trees"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "hamburg",
+    "kind": "enrich",
+    "tokens": 161644,
+    "trees": 0,
+    "note": "4 trees; register claim dropped"
+   },
+   {
+    "date": "2026-10-11",
+    "target": "trieste",
+    "kind": "enrich",
+    "tokens": 147522,
+    "trees": 0,
+    "note": "19 MASAF records"
+   }
+  ],
+  "2026-10-12": [
+   {
+    "date": "2026-10-12",
+    "target": "delft",
+    "kind": "enrich",
+    "tokens": 172014,
+    "trees": 0,
+    "note": "enrichment: LRMB ids on 4 trees, girth/height on 4, Hortus access and season; del_011 retired as dead per register"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "dresden",
+    "kind": "enrich",
+    "tokens": 221049,
+    "trees": 0,
+    "note": "enrichment: city Formblatt records and measurements on 8 Naturdenkmale, Kulturdenkmal ids, Villa Marienlust access; 15 trees touched"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "dresden",
+    "kind": "enrich",
+    "tokens": 178864,
+    "trees": 0,
+    "note": "enrichment batch 2: Naturdenkmal Formblatt ND 32 and 107, DDG record, Freital ordinance ids; 6 trees touched"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "perugia",
+    "kind": "enrich",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, no agent: MASAF sheet ids and girth/height written from the register rows already in each tree's sources, 10 trees"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "riga",
+    "kind": "enrich",
+    "tokens": 149372,
+    "trees": 0,
+    "note": "enrichment: Riga dizkoku datubaze ids on 3 trees; dataset has no girth/height; 2 trees not in it"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "kauai",
+    "kind": "enrich",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, no agent: Hawaii Exceptional Trees register ids on 6 trees from the imported register file, banyan measurement; senonches marked dead end without a pass (no per-tree register)"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "regensburg",
+    "kind": "enrich",
+    "tokens": 143642,
+    "trees": 0,
+    "note": "enrichment: Naturdenkmal numbers ND 10/52/53/34/43 on all 5 trees; no measurements in ordinances; Gries address possibly swapped"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "assen",
+    "kind": "enrich",
+    "tokens": 137118,
+    "trees": 0,
+    "note": "enrichment: LRMB girth/height/pin/season on 2 trees; ass_002 retired (register: dead/felled), city copy rewritten around the Beilen oak; lrmb_fill 3 more Dutch trees, no agent"
    }
   ]
  },
- "2026-09-25": [
-  {
-   "target": "sev_005 (Seville)",
-   "kind": "photo",
-   "tokens": 0,
-   "trees": 0,
-   "note": "Session work: judged and published a reader-submitted sighting photo for El Gran Capitan via sightings_publish.py (no photo hunting tokens, direct pixel judgement + script apply)."
-  },
-  {
-   "target": "higashi-hiroshima",
-   "kind": "scout",
-   "tokens": 0,
-   "trees": 0,
-   "note": "Session work: deduplicated 13 of 27 leads against already-published trees (coordinate and facility+species matching) before dispatching a verify pass, no tokens spent."
-  },
-  {
-   "target": "bad-homburg",
-   "kind": "verify",
-   "tokens": 0,
-   "trees": 0,
-   "note": "Session work: processed reader submission 230 (Schone Eiche coordinate), converted DMS to decimal, updated the lead with a confirmed pin, checked preflight source requirement, replied asking for a baumkunde.de link or photo. No tokens spent on research (no network fetch cost beyond a few WebSearch/curl lookups that found nothing)."
-  },
-  {
-   "target": "oahu, munich, brisbane, alicante, glasgow, utrecht, warsaw (demand-city photo shortlist)",
-   "kind": "photo-judge",
-   "tokens": 55000,
-   "trees": 0,
-   "photos_approved": 8,
-   "note": "33 candidates fetched by photo_fetch.py, viewed and judged: 8 approved (Glasgow 1, Warsaw 7), 3 held on identity (Zoo Gate banyans x2, Canalejas twin fig), 22 rejected (mostly non-tree subjects, bark/canopy close-ups). Munich, Brisbane and Utrecht batches all rejected outright."
-  },
-  {
-   "target": "sao-paulo, oahu, new-york, fukuoka, warsaw (demand-city photo shortlist batch2)",
-   "kind": "photo-judge",
-   "tokens": 60000,
-   "trees": 0,
-   "photos_approved": 1,
-   "note": "25 candidates fetched by photo_fetch.py, viewed and judged: 1 approved (war_011 Ginkgo of the Botanical Garden), 2 held on identity (hnl_015 Zoo Gate Banyans, war_020 Oak of Palac Szustra), 17 rejected (mostly wrong species/subject from location-only matching)."
-  },
-  {
-   "target": "amsterdam, lisbon (photo_last_resort.py sweep, STARVED cities)",
-   "kind": "photo-judge",
-   "tokens": 40000,
-   "trees": 0,
-   "photos_approved": 0,
-   "note": "16 candidates from the geotag-only last-resort sweep (no title match), all rejected: interiors, statues, bike parking, wide park scenes with no single tree as subject. Recorded in CURATION.md as an exhausted hunt for these two cities."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "it-batch (verona, bari, catania, padua, bergamo)",
-   "kind": "translate",
-   "tokens": 252547,
-   "trees": 37,
-   "note": "5 Italian overlays; translator found and flagged 4 English contradictions, fixed in session"
-  },
-  {
-   "date": "2026-10-06",
-   "target": "de+fr+es batch (frankfurt, freiburg, hallstatt, luxembourg-city, senonches, ronda, tarragona)",
-   "kind": "translate",
-   "tokens": 601303,
-   "trees": 42,
-   "note": "includes a follow-up round: overlay lengths and stale English copy in Freiburg, Hallstatt, Frankfurt, Tarragona"
-  },
-  {
-   "date": "2026-10-06",
-   "target": "lisbon",
-   "kind": "enrich",
-   "tokens": 163009,
-   "trees": 6,
-   "note": "first enrichment pass (scripts/enrich.py): 6 ICNF measurements and register numbers; ICNF has no per-tree page, access and season untouched"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "tallinn",
-   "kind": "enrich",
-   "tokens": 143435,
-   "trees": 2,
-   "note": "EELIS records and 1997 survey girth/height for the linden and ginkgo; Russalka oak has no register entry"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "leiden",
-   "kind": "enrich",
-   "tokens": 141811,
-   "trees": 6,
-   "note": "Hortus hours and prices on four trees, two national-register links, one season; no measurements in the local register file"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "luxembourg-city",
-   "kind": "enrich",
-   "tokens": 132180,
-   "trees": 4,
-   "note": "ANF arbres remarquables ids for four trees; the geojson carries no measurements; Krombach oak not in the register"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "salzburg",
-   "kind": "verify",
-   "tokens": 173338,
-   "trees": 0,
-   "note": "2 delivered szb_019-020; 4 READY leads re-read, stay leads"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "salzburg",
-   "kind": "write",
-   "tokens": 146575,
-   "trees": 2,
-   "note": "2 stories + de overlay, Salzburg 20 trees"
-  }
- ],
- "2026-09-26": [
-  {
-   "target": "_us-parks-west",
-   "kind": "verify",
-   "tokens": 259617,
-   "trees": 0,
-   "verified": 17,
-   "note": "Sequoia +5, Kings Canyon 3, Yosemite Mariposa 5, Redwood NSP 2, Humboldt 1, Patriarch 1. Methuselah (withheld) and Prometheus (dead) blocked. Estimate was ~75k; ran 3.5x over."
-  },
-  {
-   "target": "_us-parks-east",
-   "kind": "verify",
-   "tokens": 289419,
-   "trees": 0,
-   "verified": 13,
-   "note": "Congaree 2, Smokies 2, Olympic +3, Gettysburg 4, Antietam 2. Caught the Lincoln-address honey locust (dead ~2024) and the Quinault Big Cedar (dead 2016)."
-  },
-  {
-   "target": "_us-city-landmarks",
-   "kind": "verify",
-   "tokens": 253904,
-   "trees": 0,
-   "verified": 9,
-   "note": "Savannah 1, Charleston 1, Seattle 2, Philadelphia 3, San Diego 2. ~28k per verified tree; the webpage-list angle mostly found tour PDFs, not landmark lists."
-  },
-  {
-   "target": "Kings Canyon NP, Yosemite NP (Mariposa Grove), Gettysburg, Ancient Bristlecone Pine Forest",
-   "kind": "write",
-   "tokens": 146321,
-   "trees": 13,
-   "note": "Write pass on the four new-place batches staged 2026-09-26 02:02-02:05. Fixed one species-name collision (gby_002 Chestnut Oak) and one id-prefix collision (yos_ renamed ynp_, Yoshida already holds yos_001) before merging."
-  },
-  {
-   "target": "Sequoia NP, Olympic NP, Philadelphia, Seattle, San Diego, Savannah, Charleston",
-   "kind": "write",
-   "tokens": 183623,
-   "trees": 17,
-   "note": "Write pass deepening seven existing US places from the same staged batch. Fixed three species-name collisions at merge (phl_003 Katsura, phl_004 Eastern Hemlock, sea_007/008 Japanese Red/White Pine)."
-  },
-  {
-   "target": "merge + copy (11 US places)",
-   "kind": "session",
-   "tokens": 0,
-   "trees": 30,
-   "note": "Main-session work: merged both write passes into data/cities, rewrote intro/meta/question/FAQ copy for all 11 affected places to drop stale tree-count promises, built 4 new Contract B/C pages from scratch, added paid_entry flags, fixed a Seattle species-name build error (Pinus parvifolia -> parviflora). Held Redwood NP, Humboldt Redwoods, Congaree, Great Smoky Mountains and Antietam as leads (each under the 4-tree floor, none passes the single-famous-tree test). Tokens not separately metered for this session."
-  },
-  {
-   "target": "Congaree National Park, Great Smoky Mountains National Park",
-   "kind": "verify",
-   "tokens": 251696,
-   "trees": 0,
-   "verified": 3,
-   "note": "Refilled both places from their own leads files (national/state champion trees). Congaree: cgr_003 General Greene Tree, cgr_004 National Champion Loblolly, brought it from 2 to 4 (floor met). Great Smoky Mountains: gsm_003 Cocke County Champion Red Maple, brought it from 2 to 3 (still short by one; the other 4 leads stayed unresolved)."
-  },
-  {
-   "target": "Congaree National Park",
-   "kind": "write",
-   "tokens": 120741,
-   "trees": 0,
-   "wasted": 120741,
-   "note": "Claimed 'wrote stories, merged into data/cities as a new place', but no data/cities/congaree-national-park.json ever existed in git history: the background session ended before its output reached disk. Corrected 2026-09-26 (later session) after a leads.py/agent-costs.json cross-check found the gap; see CURATION.md same date. cgr_003/cgr_004 survive as sourced prose in data/leads/congaree-national-park.json; cgr_001/cgr_002 are named only, not reconstructable without fresh verification."
-  },
-  {
-   "target": "_famous-belgium",
-   "kind": "verify",
-   "tokens": 262558,
-   "trees": 5,
-   "note": "Verify pass on 14 open leads: 5 cleared (2 recommended standalone/addition, 3 held for a future cluster), 2 blocked (dead tree, private garden), 6 remain open with reasons."
-  },
-  {
-   "target": "_famous-lithuania",
-   "kind": "verify",
-   "tokens": 298396,
-   "trees": 9,
-   "note": "Verify pass on 21 open leads: 9 cleared (found a new 4-tree Silale cluster and additions to Kaunas/Raudone), 1 blocked (confirmed dead), 9 remain open."
-  },
-  {
-   "target": "_famous-belgium + _famous-lithuania",
-   "kind": "write",
-   "tokens": 150000,
-   "trees": 11,
-   "note": "Write pass on the 11 trees the two verify passes cleared, across 7 places (2 new standalone, 1 new 4-tree cluster, 3 additions to existing cities)."
-  },
-  {
-   "target": "lo, vepriai, zadeikoniai, silale, jalhay, kaunas, raudone",
-   "kind": "merge",
-   "tokens": 0,
-   "trees": 11,
-   "note": "Session work: merged the 11 written trees into data/cities (3 new standalone places, 1 new city, 3 additions to existing pages), wrote page copy for the new places, fixed a stray fame field on gos_001, fixed Raudone's stale single-tree framing and Kaunas's stale tree-count sentence. preflight 0 problems, build 12559 pages, qa.py 16600 pages, both exit 0."
-  },
-  {
-   "target": "zywiec, hilvarenbeek, plunge, velke-borove",
-   "kind": "verify",
-   "tokens": 211884,
-   "trees": 4,
-   "note": "Refilled the shelf per prepare.py's instruction: verified 4 Tree of the Year contest entries (Kozy, Bladel/Witch Tree, Laukiai oak/2026 winner, Ziar wild apple), each deepening an existing 1-tree published place. Not yet written into city files."
-  }
- ],
- "2026-09-27": [
-  {
-   "target": "hilvarenbeek, plunge, velke-borove",
-   "kind": "write",
-   "tokens": 123000,
-   "trees": 3,
-   "note": "3 stories + recognition lines (hvb_002, plg_007, vbo_002), merged into city files; page-level intro/faq/question_context rewritten for the added trees. 3 held candidates (sht_001, wey_001, stv_001, nnj_001, ftn_001) confirmed still correctly HELD per prior verify_notes, not written. zyw_002 confirmed duplicate of published koz_001, removed. Stale already-published research files (belgium partial, china n/a, lithuania, tree-of-the-year x2) cleaned up."
-  },
-  {
-   "target": "_famous-sweden",
-   "kind": "verify",
-   "tokens": 191245,
-   "trees": 2,
-   "note": "4 candidates verified (Bellmanseken, Karl XI:s ek/Fiskartorpseken, Kungseken Knappfors alive; Trangsunds ekruin confirmed dead, blocked). Bellmanseken and Karl XI:s ek turned out to sit inside published Stockholms boundary (1.1km/0.4km from sto_004/sto_002); merged as sto_007/sto_008 rather than standalone places. Kungseken Knappfors genuinely isolated but modest fame/no age/legend called invented by its own sources; held as a lead rather than shipped as its own place."
-  },
-  {
-   "target": "_famous-portugal",
-   "kind": "verify",
-   "tokens": 182909,
-   "trees": 3,
-   "note": "3 new single-tree places opened (Calvos, Runa, Azeitao), each under the 2026-08-31 single-famous-tree exception: Carvalho de Calvos (clv_001, University of Coimbra 2011-dated, oldest Q. robur on the Iberian Peninsula, own visitor centre), Cedro de Runa (run_001, won Arvore do Ano Portugal 2026), Millennial Olives of Azeitao (aze_001, 3-olive ensemble, folk-estimated age honestly flagged). 4th candidate (Nucleo dos Dragoeiros) was a duplicate of already-published mdr_006 Madeira, blocked not verified."
-  },
-  {
-   "target": "coromandel-forest-park, parry-kauri-park, otari-wiltons-bush",
-   "kind": "write",
-   "tokens": 60000,
-   "trees": 4,
-   "note": "Write pass on the three write-claimed New Zealand famous-tree places from the same day's _famous-new-zealand verify pass (Square Kauri, McKinney Kauri, Simpson Kauri, Moko/rimu). Stories and how_to_recognise written into the verified-leads file; city files built (data/cities/) with intro/faq/question_context per place. Left uncommitted by the run that wrote it; picked up and finished (tree_index rebuilt, city_names.py run, preflight 0 problems, claims released) by the next attempt in the same window."
-  },
-  {
-   "target": "_famous-czech-republic (4 candidates)",
-   "kind": "verify",
-   "tokens": 50000,
-   "trees": 2,
-   "note": "Verified Hrádecký dub and Buk u rybníčku (second sources found); Českolipský buk lesní and Buk v Jindřichovickém zámeckém parku still one source short, left as leads with resolved village-match questions and a noted 3-tree cluster at the Jindřichovice chateau park"
-  },
-  {
-   "target": "los-angeles (4 candidates)",
-   "kind": "verify",
-   "tokens": 95000,
-   "trees": 2,
-   "note": "Verified Huntington Rose Garden Kauri (2021 California Big Tree champion, 1890 planting, 1908 blowtorch-taproot transplant) and Crystal Springs Heritage Sycamore (Griffith Park, survived 2014 protest and 2016 settlement); Bodhi tree champion blocked as private residential land; Chavez Ravine kauri pin could not be tightened"
-  },
-  {
-   "target": "los-angeles",
-   "kind": "write",
-   "tokens": 45000,
-   "trees": 2,
-   "note": "2 stories + recognition lines merged into data/cities/los-angeles.json (now 10 trees); softened lax_010's superlative claim after it clashed with the newly-verified, actually-measured lax_011 kauri (hard rule 8)"
-  },
-  {
-   "target": "monterey (3 candidates)",
-   "kind": "verify",
-   "tokens": 90000,
-   "trees": 0,
-   "note": "All three leads dead-ended for a text-fetch pass: the 13 Local Landmark Trees ordinance is JS-only (municode) with no crawlable fallback and no archive, Crocker Grove still has no single named specimen, Ghost Tree(s) of Pescadero Point confirmed dead (moved to blocked). Documented the dead ends so the next pass does not re-walk them; needs a browser-session pass or a phone call to city forestry, not another web sweep."
-  },
-  {
-   "target": "portland",
-   "kind": "write",
-   "tokens": 55000,
-   "trees": 4,
-   "note": "4 stories + recognition lines merged into data/cities/portland.json (20->24 trees); oldest_tree_id moved from ptl_009 (no age) to ptl_021 the Corbett Oak (~300yr, Oregon Encyclopedia); question fields and FAQ rewritten to match; apple species normalised to Apple (Malus domestica) to match site convention"
-  },
-  {
-   "target": "fort-worth + austin (3 candidates)",
-   "kind": "verify",
-   "tokens": 65000,
-   "trees": 1,
-   "note": "Turner Oak (Fort Worth) verified: gold buried under it by pioneer Charles Turner during the Civil War, alive-confirmed via a dated 2025 waymark visit log. Parker Oaks blocked (a grove, no single named specimen). Kyle Auction Oak held as a lead: no public transport connects Kyle to Austin so the day-trip claim cannot be made honestly, and it does not clear the single-famous-tree exception alone."
-  },
-  {
-   "target": "fort-worth",
-   "kind": "write",
-   "tokens": 40000,
-   "trees": 1,
-   "note": "Turner Oak story + recognition line merged (4->5 trees); oldest_tree_id moved to ftw_005; city copy (intro/meta/question fields/FAQ) rewritten for the new count and first dated tree"
-  },
-  {
-   "target": "us-photos (New Orleans, Olympic NP, Philadelphia, San Diego, Sequoia NP, Yosemite NP)",
-   "kind": "photo-judge",
-   "tokens": 166998,
-   "trees": 8,
-   "note": "Viewing pass on the 168-candidate US photo sweep, finishing a claim an earlier attempt left open. 38 images viewed across 19 photo-less trees: 8 approved, 6 held-only (identity certain but crown missing, or lookalike risk among near-identical named trees, e.g. New Orleans oaks and Sequoia's named giants), 5 rejected-only (wrong species/tree/park). One candidate queued under the wrong tree (Yosemite's tunnel-tree photo was filed under Bachelor and Three Graces) reassigned to the California Tunnel Tree before approving."
-  },
-  {
-   "target": "austin",
-   "kind": "verify",
-   "tokens": 254602,
-   "trees": 4,
-   "note": "Texas Big Tree Registry leads cross-checked with independent sources (registry is a finding aid, not a citable source); 4 verified, 3 moved to blocked (private/withheld or too far), leads file refreshed.",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "austin",
-   "kind": "write",
-   "tokens": 122698,
-   "trees": 4,
-   "note": "4 stories and recognition lines written (aus_006-009), merged into data/cities/austin.json; intro/meta/FAQ counts updated 5->9 trees.",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "dallas",
-   "kind": "verify",
-   "tokens": 209705,
-   "trees": 3,
-   "note": "Discovered Dallas Historic Tree Program (City Council, 25 Oct 2023, Sec 51A-10.133), a genuine city register not previously documented in this file; 3 verified (a Comanche marker pecan, a bur oak, a post-oak-grove ensemble), Houston Campsite Oak lead enriched but correctly left unshipped (too far, belongs to a future Coppell page).",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "dallas",
-   "kind": "write",
-   "tokens": 119904,
-   "trees": 3,
-   "note": "3 stories and recognition lines written (dal_010-012), merged into data/cities/dallas.json; intro/meta/FAQ updated 9->12 trees, paid_entry set on dal_011.",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "boston",
-   "kind": "verify",
-   "tokens": 213017,
-   "trees": 1,
-   "note": "Rich lead batch (Boston Common, Public Garden, Mount Auburn, Arnold Arboretum) mostly resolved as duplicates/dead/still-unsourced; 1 verified (a second Wilson pine at Peters Hill), 2 moved to blocked (a removed beech, a duplicate cultivar already in bos_004 prose), Waverley Oak held on a source conflict.",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "boston",
-   "kind": "write",
-   "tokens": 4000,
-   "trees": 1,
-   "note": "Wrote story/recognition line for bos_012 directly in the main session rather than dispatching a full write-stories batch pass for a single tree; merged into data/cities/boston.json, intro/FAQ counts updated 11->12.",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "new-orleans",
-   "kind": "verify",
-   "tokens": 209408,
-   "trees": 2,
-   "note": "From-zero pass (no register, empty leads file). Found the Live Oak Society Orleans-parish registry (actively maintained, marks dead trees inline); 2 verified (Martha Washington Oak at Audubon Zoo, sibling of the published Tree of Life; Enrique Alferez Oak in City Park Botanical Garden), 4 moved to blocked (a dead sibling oak, private-grounds oaks), 5 City Park oaks left as leads pending a more specific location than \"City Park\".",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "new-orleans",
-   "kind": "write",
-   "tokens": 3000,
-   "trees": 2,
-   "note": "Wrote both stories directly in the main session (small batch); merged into data/cities/new-orleans.json, intro/meta/FAQ updated 6->8 trees, both new trees carry paid_entry (2/8, under the one-third line).",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "_tree-of-the-year (batch 3, 8 candidates)",
-   "kind": "verify",
-   "tokens": 251910,
-   "trees": 6,
-   "note": "6 verified (lel_001, gar_001, let_001, fmc_001, cap_001, dbl_001). The Wish Tree (Nisovo) confirmed dead by a dated 2013 storm-damage news report, blocked. Alley in Skalicka blocked on access (grounds house a residential care home)."
-  },
-  {
-   "target": "_tree-of-the-year (batch 3, 6 trees)",
-   "kind": "write",
-   "tokens": 128978,
-   "trees": 5,
-   "note": "5 stories + recognition lines written and merged as 5 new single-tree places (leliceni, garmen, letenye, felsomocsolad, capeni). dbl_001 (Grot Oak of Deblin) turned out to be a duplicate of the already-published deb_001, caught before merge; discarded rather than shipped, lead marked duplicate. Fixed two species-label inconsistencies (lel_001 Tilia cordata mislabelled large-leaved; cap_001 elm synonym) before merge."
-  },
-  {
-   "target": "_famous-brazil (batch 1, 4 candidates)",
-   "kind": "verify",
-   "tokens": 202880,
-   "trees": 3,
-   "note": "3 verified (jer_001 Arvore da Preguica, ppf_001 Baoba do Passeio Publico, lco_001 Arvore Penteada), all already had Commons photos. Baoba do Poeta (Natal) blocked on access: alive but walled/gated private plot, no confirmed public viewing point."
-  },
-  {
-   "target": "_famous-brazil (batch 1, 3 trees)",
-   "kind": "write",
-   "tokens": 121157,
-   "trees": 3,
-   "note": "3 stories + recognition lines written and merged as 3 new single-tree places (jericoacoara, fortaleza, luis-correia), all 450-800km from the nearest published Brazilian tree. Fixed one species-label mismatch (African Baobab -> Baobab) before merge; trimmed question_context on all three to fit Contract B word range."
-  },
-  {
-   "target": "_famous-austria (aut_002)",
-   "kind": "write",
-   "tokens": 0,
-   "trees": 1,
-   "note": "Written directly in the orchestrating session rather than dispatched (a single leftover verified tree, not worth a full agent). Renamed the misnamed famousaustria-verified-b.json so passcheck could see it, then wrote and merged aut_002 (Linde im Gries, St Georgen im Attergau) as a new single-famous-tree place, 10m girth, best-known tree in the Attergau. Friedenslaerche held (ordinary size, past the day-trip boundary, no pairing candidate yet)."
-  },
-  {
-   "target": "_tree-of-the-year (8 UK/Ireland candidates)",
-   "kind": "verify",
-   "tokens": 197892,
-   "trees": 6,
-   "note": "6 verified (King Oak Tullamore, Niel Gow Oak Dunkeld, Oak at the Gate of the Dead Chirk, Waverley Abbey Yew Farnham, Acton Park Sweet Chestnut Wrexham, Skipinnish Oak Achnacarry). 2 correctly rejected as dead: Birr Castle Grey Poplar (blown down 2014) and the Major Oak in Sherwood Forest, confirmed dead June 2026 (RSPB/Natural England, CNN, ABC News) -- newsworthy, noted in LOG.md for Hidde."
-  },
-  {
-   "target": "_tree-of-the-year (6 trees)",
-   "kind": "write",
-   "tokens": 123732,
-   "trees": 6,
-   "note": "6 stories + recognition lines written and merged as 6 new single-tree places (tullamore, dunkeld, chirk, farnham, wrexham, achnacarry), each 16-70km from the nearest published tree, all under the single-famous-tree exception. Fixed one species canonicalisation (Yew -> European Yew) before merge, expanded 3 question_context fields to hit the 150-200 word Contract B range, and marked the corresponding leads published/duplicate."
-  }
- ],
- "2026-09-28": [
-  {
-   "target": "_tree-of-the-year (7 trees, batch 2)",
-   "kind": "write",
-   "tokens": 134965,
-   "trees": 6,
-   "note": "7 stories written and merged as 6 new single-tree places (pianello, urvaste, cajvana, cheile-cibinului, vales, seja); the 7th, the Three-Legged Oak, turned out to be a duplicate of already-published mendaza.json mza_001 under a different slug, caught before merge via preflight coordinate check and dropped rather than published twice. Vales access field rewritten per session judgement call on a standing sourced landowner invitation (hard rule 10)."
-  },
-  {
-   "target": "_tree-of-the-year (8 candidates, batch 3)",
-   "kind": "verify",
-   "tokens": 179831,
-   "trees": 7,
-   "note": "7 verified (Saint-Jammes Beech France, Old Mulberry Bulgaria, Encina de San Roque Spain, Millennium Oak Ukraine, Kaņepju Oak Latvia, Pálffy Oak Slovakia, Oak of Prince Ulrich Czechia). 1 blocked on access: Plane Tree of Varna, Bulgaria, on private Galatex factory grounds, a source stating access is restricted. Checked and confirmed the Pálffy Oak is outside Bratislava day-trip boundary (37-38km/44-48min), ships as its own place."
-  },
-  {
-   "target": "_tree-of-the-year (7 trees, batch 3)",
-   "kind": "write",
-   "tokens": 131618,
-   "trees": 7,
-   "note": "7 stories written and merged as 7 new single-tree places (soreze, veliki-preslav, colindres, veryn, jerceni, malacky, peruc). Prince Ulrich oak story states the successor-tree dispute honestly rather than picking a side. Old Mulberry has no girth/height on record, stated as an honest gap. Expanded 2 question_context fields to hit the 150-200 word Contract B range."
-  }
- ],
- "2026-09-30": [
-  {
-   "target": "famous-czech-brazil-batch1",
-   "kind": "write",
-   "tokens": 155777,
-   "trees": 5,
-   "note": "5 single-tree places (Ceska Lipa, Mokrice, Nisia Floresta, Maxaranguape, Guaiba); fdl_001 held as duplicate of live spa_001, pins ~3 km apart",
-   "wasted": 0,
-   "brief_wrong": true
-  },
-  {
-   "target": "5 reader sightings",
-   "kind": "session",
-   "tokens": 0,
-   "trees": 0,
-   "note": "judged as leads via judgement.py, photos not viewed"
-  },
-  {
-   "target": "_tree-of-the-year",
-   "kind": "verify",
-   "tokens": 197594,
-   "trees": 0,
-   "note": "10 verified (EE 2, LV 1, HU 3, HR 2, BG 2), 5 rejected to leads",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "_tree-of-the-year",
-   "kind": "write",
-   "tokens": 185204,
-   "trees": 8,
-   "note": "8 single-tree places merged (Bataszek, Tata, Valdemarpils, Daruvar, Krka, Melykut, Jarvselja, Viljandi); 2 written, unmerged",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "target": "Houston",
-   "kind": "verify",
-   "tokens": 134548,
-   "trees": 2,
-   "note": "Sam Houston Park live oak plus Old Hanging Oak downtown; flagged, approximate pins; no register coverage"
-  },
-  {
-   "target": "Houston",
-   "kind": "write",
-   "tokens": 116217,
-   "trees": 2,
-   "note": "2 stories; fdl_001 skipped as duplicate of live spa_001",
-   "brief_wrong": true
-  },
-  {
-   "target": "_famous-austria",
-   "kind": "verify",
-   "tokens": 160000,
-   "trees": 1,
-   "note": "1 verified (Hochneukirchen lime), 2 dead blocked; estimate"
-  },
-  {
-   "target": "famousaustria",
-   "kind": "write",
-   "tokens": 95000,
-   "trees": 1,
-   "note": "Hochneukirchen-Gschaidt published; fdl_001 duplicate of spa_001",
-   "brief_wrong": true
-  }
- ],
- "2026-10-01": [
-  {
-   "target": "famous-philippines",
-   "kind": "verify",
-   "tokens": 159000,
-   "trees": 0,
-   "note": "3 of 8 delivered flagged, 1 blocked fossil, 4 leads without sources"
-  },
-  {
-   "target": "maria-aurora+siquijor",
-   "kind": "write",
-   "tokens": 150000,
-   "trees": 2,
-   "note": "phl ids renamed mra/sqj (phl is Philadelphia); fdl_001 already live as spa_001",
-   "wasted": 0,
-   "brief_wrong": true
-  },
-  {
-   "target": "New York",
-   "kind": "verify",
-   "tokens": 193000,
-   "trees": 0,
-   "note": "7 trees delivered flagged nyc_021-027, 6 leads and 2 blocked; nycgovparks.org 405s every fetcher"
-  },
-  {
-   "target": "New York",
-   "kind": "write",
-   "tokens": 142000,
-   "trees": 7,
-   "note": "nyc_021-027 written and merged; count copy and intro updated; preflight 0 problems"
-  },
-  {
-   "target": "seattle",
-   "kind": "verify",
-   "tokens": 207000,
-   "trees": 0,
-   "note": "4 flagged approximate-pin trees from Heritage Tree and city tree-walk sources; Green Lake Emperor Oak found cut down"
-  },
-  {
-   "target": "seattle",
-   "kind": "write",
-   "tokens": 132000,
-   "trees": 4,
-   "note": "sea_009-012 written and merged",
-   "wasted": 0,
-   "brief_wrong": false
-  },
-  {
-   "kind": "write",
-   "target": "copenhagen, fukuoka, takachiho",
-   "tokens": 154000,
-   "trees": 7,
-   "note": "10 stories written, 7 Copenhagen merged; rest blocked by photo-or-pin"
-  }
- ],
- "2026-10-05": [
-  {
-   "target": "munich",
-   "kind": "verify",
-   "tokens": 160000,
-   "trees": 3,
-   "note": "register join exhausted; 3 flagged trees from the Bayern Wikipedia list and Commons categories, 4 leads"
-  },
-  {
-   "target": "munich",
-   "kind": "write",
-   "tokens": 95000,
-   "trees": 7,
-   "note": "4 new stories, German overlay, 7 Commons photos viewed and attached; muc_058 held"
-  },
-  {
-   "target": "munich",
-   "kind": "verify",
-   "tokens": 160000,
-   "trees": 2,
-   "note": "city register exhausted; 2 outlying trees with geotagged CC photos (Obermarbach, Grafing)"
-  },
-  {
-   "target": "munich (muc_066-067)",
-   "kind": "write",
-   "tokens": 141000,
-   "trees": 2,
-   "note": "merged with de overlay; muc_058 approx pin no photo, lpz_019 access unestablished"
-  },
-  {
-   "target": "melbourne",
-   "kind": "photo",
-   "tokens": 0,
-   "trees": 0,
-   "note": "session work: 2 reader photographs judged, mel_013 published, mel_001 rejected (deciduous, not holm oak)"
-  },
-  {
-   "target": "salzburg",
-   "kind": "verify",
-   "tokens": 175000,
-   "trees": 3,
-   "note": "register-only deepen, 3 oaks delivered with stories; two Glaserstrasse/Joachim oaks held on access"
-  },
-  {
-   "target": "houston+berlin+munich",
-   "kind": "write",
-   "tokens": 0,
-   "trees": 4,
-   "note": "session work, no agent: merged 4 already-written verified trees, fixed Houston counts, wrote German overlays for Berlin and Munich"
-  },
-  {
-   "target": "vienna",
-   "kind": "verify",
-   "tokens": 185000,
-   "trees": 6,
-   "note": "register deepen, 6 Naturdenkmal trees with tree-level pins and stories"
-  },
-  {
-   "target": "vienna",
-   "kind": "translate",
-   "tokens": 35000,
-   "trees": 0,
-   "note": "German overlay for the 6 new Vienna trees"
-  },
-  {
-   "target": "vienna",
-   "kind": "verify",
-   "tokens": 215000,
-   "trees": 5,
-   "note": "5 verified, 14 leads"
-  },
-  {
-   "target": "vienna+boston",
-   "kind": "write",
-   "tokens": 189000,
-   "trees": 6,
-   "note": "6 merged; lpz_019, nbg_018 held on access; fdl_001 dup of spa_001; German overlay"
-  }
- ],
- "2026-10-04": [
-  {
-   "target": "munich",
-   "kind": "verify",
-   "tokens": 120000,
-   "trees": 0,
-   "note": "register exhausted: all candidates with photo or pin already live; ND12 pin conflict, Vaterstetten blocked, 8 rural leads"
-  },
-  {
-   "target": "munich",
-   "kind": "verify",
-   "tokens": 178000,
-   "trees": 0,
-   "note": "no candidate could end with a photograph or confirmed pin; OSM join caught ND 12 pin mismatch; two leads added"
-  }
- ],
- "2026-10-03": [
-  {
-   "target": "Berlin",
-   "kind": "verify",
-   "tokens": 189000,
-   "trees": 6,
-   "note": "second Naturdenkmal batch, six rare species with confirmed pins from register plus CC0 geotag"
-  },
-  {
-   "target": "Berlin",
-   "kind": "write",
-   "tokens": 131000,
-   "trees": 6,
-   "note": "six stories, three best_time"
-  },
-  {
-   "target": "de/berlin",
-   "kind": "translate",
-   "tokens": 146000,
-   "trees": 0,
-   "note": "six overlay entries plus title count 46"
-  },
-  {
-   "kind": "verify",
-   "target": "berlin (ber_048-055)",
-   "tokens": 164000,
-   "trees": 8,
-   "note": "register Naturdenkmal trees, all confirmed pins, register-only"
-  },
-  {
-   "kind": "write",
-   "target": "berlin (ber_048-055) + de overlay",
-   "tokens": 182000,
-   "trees": 8,
-   "note": "stories, how_to_recognise, de overlay; ber_041 held back as a lead (no photo, approximate pin)"
-  },
-  {
-   "kind": "verify",
-   "target": "dresden (dre_006-010)",
-   "tokens": 182000,
-   "trees": 4,
-   "note": "Naturdenkmal trees with Wikidata coords + Commons photos"
-  },
-  {
-   "kind": "write",
-   "target": "dresden + de overlay",
-   "tokens": 162000,
-   "trees": 4,
-   "note": "dre_007 parked in leads (approximate pin, no photo)"
-  },
-  {
-   "target": "Berlin",
-   "kind": "verify",
-   "tokens": 174000,
-   "trees": 8,
-   "note": "ber_056-063 Tiergarten Naturdenkmal, confirmed pins via register point plus geotagged CC0 photo"
-  },
-  {
-   "target": "Berlin",
-   "kind": "write",
-   "tokens": 151000,
-   "trees": 8,
-   "note": "8 stories, 2 best_time"
-  },
-  {
-   "target": "de/berlin",
-   "kind": "translate",
-   "tokens": 134000,
-   "trees": 0,
-   "note": "8 overlay entries plus title count 62"
-  },
-  {
-   "target": "dresden dre_007",
-   "kind": "photo",
-   "tokens": 0,
-   "trees": 1,
-   "note": "session work: Commons photo viewed and approved, German overlay written by the run"
-  },
-  {
-   "target": "Dresden",
-   "kind": "verify",
-   "tokens": 171000,
-   "trees": 3,
-   "note": "dre_011-013, OSM node plus geotagged Commons photo pins; two of six candidates blocked (private garden, young)"
-  },
-  {
-   "target": "Dresden",
-   "kind": "write",
-   "tokens": 125000,
-   "trees": 3,
-   "note": "3 stories; too few for the fixed cost"
-  },
-  {
-   "target": "de/dresden",
-   "kind": "translate",
-   "tokens": 123000,
-   "trees": 0,
-   "note": "3 overlay entries plus page copy to 13"
-  },
-  {
-   "target": "Munich",
-   "kind": "verify",
-   "tokens": 200000,
-   "trees": 5,
-   "note": "muc_050-054 suburban Naturdenkmal via Landkreis list plus Commons; city register exhausted"
-  },
-  {
-   "target": "Munich",
-   "kind": "write",
-   "tokens": 135000,
-   "trees": 5,
-   "note": "5 stories, 1 best_time"
-  },
-  {
-   "target": "de/munich",
-   "kind": "translate",
-   "tokens": 128000,
-   "trees": 0,
-   "note": "5 overlay entries plus title count 50"
-  },
-  {
-   "target": "new-orleans, chicago, dallas",
-   "kind": "verify",
-   "tokens": 195445,
-   "trees": 0,
-   "wasted": 195445,
-   "note": "Pin-and-photo pass on existing leads: 0 delivered. City Park oaks have no coordinates anywhere online, Chicago's register returns 403 and its two famous leads are dead, Dallas leads unplaceable. Lesson: a lead file without coordinates cannot be rescued by a pin pass; check for ANY coordinate source before dispatching."
-  },
-  {
-   "target": "los-angeles, austin, houston",
-   "kind": "verify",
-   "tokens": 216900,
-   "trees": 0,
-   "verified": 1,
-   "note": "Pin-and-photo pass on existing leads: 1 delivered (Austin, Sunset Valley Bigelow Oak, confirmed pin, no usable photo). LA champions have only close-up photos, Huntington blocks fetchers, Houston leads lack coordinates. Together with the New Orleans/Chicago/Dallas pass: ~410k for one tree. passcheck now prints the coordinate share before a verify claim."
-  },
-  {
-   "date": "2026-10-03",
-   "kind": "verify",
-   "target": "portland",
-   "tokens": 144000,
-   "trees": 0,
-   "note": "9 Portland Heritage Tree register trees verified; 8 went to the write pass, ptl_027 held as lead"
-  },
-  {
-   "date": "2026-10-03",
-   "kind": "write",
-   "target": "portland",
-   "tokens": 154000,
-   "trees": 8,
-   "note": "8 stories + recognition lines merged, Portland 24 -> 32; preflight 0 problems"
-  },
-  {
-   "date": "2026-10-03",
-   "kind": "verify",
-   "target": "nuremberg",
-   "tokens": 173000,
-   "trees": 0,
-   "note": "4 delivered, only 2 with a confirmed pin; 2 held as leads"
-  },
-  {
-   "date": "2026-10-03",
-   "kind": "write",
-   "target": "nuremberg",
-   "tokens": 149000,
-   "trees": 2,
-   "note": "nbg_013, nbg_016 EN+DE, Nuremberg 12 -> 14; preflight 0 problems"
-  },
-  {
-   "date": "2026-10-03",
-   "kind": "verify",
-   "target": "spokane",
-   "tokens": 171000,
-   "trees": 0,
-   "note": "0 delivered: no open photo or confirmed pin; Treaty Tree found felled Aug 2026 and moved to blocked"
-  },
-  {
-   "date": "2026-10-03",
-   "kind": "write",
-   "target": "austin, los-angeles, sequoia-national-park, washington-dc",
-   "tokens": 150000,
-   "trees": 4,
-   "note": "4 stories + recognition lines merged, intro counts fixed; no photos, candidates left for a viewing pass"
-  },
-  {
-   "date": "2026-10-03",
-   "target": "_wikidata-united-states (6 leads)",
-   "kind": "verify",
-   "tokens": 165143,
-   "trees": 0,
-   "verified": 4,
-   "note": "Capped at 30 tool calls, used 25: 4 verified (El Pino, Endicott Pear, Travilah Oak, Sentinel), Linden Oak dead, Alley Pond Giant already ours. ~41k per verified tree against a 50k budget for the whole pass: a tool-call cap does not cap tokens."
-  }
- ],
  "passes": [
   {
    "date": "2026-10-01",
@@ -9719,1908 +11611,6 @@
    "tokens": 160000,
    "trees": 0,
    "note": "source set exhausted; 3 Tree of the Year leads recorded, no photo or pin"
-  }
- ],
- "2026-10-02": [
-  {
-   "target": "belfast+breda+budapest",
-   "kind": "photo",
-   "tokens": 0,
-   "trees": 0,
-   "note": "session work, no agent: viewing pass approved 3 Commons photographs (bfs_005, bre_011, bud_013); a 4th sighting rejected (acorn on gravel)"
-  },
-  {
-   "target": "Oahu",
-   "kind": "verify",
-   "tokens": 150000,
-   "trees": 0,
-   "note": "register coords rounded to 1.1 km and Commons has no tree-specific photos, so photo-or-pin blocks all; 4 leads added",
-   "wasted": 150000,
-   "brief_wrong": false
-  },
-  {
-   "target": "Berlin",
-   "kind": "verify",
-   "tokens": 183000,
-   "trees": 7,
-   "note": "Naturdenkmal register tree-level coords + CC0 Commons geotags gave 7 confirmed pins; ber_041 zoo oak stayed lead (approximate, no photo)"
-  },
-  {
-   "target": "Berlin",
-   "kind": "write",
-   "tokens": 147000,
-   "trees": 7,
-   "note": "8 stories; merged 7; Niemeyer building naming removed as unsourced, ber_038 access tightened"
-  },
-  {
-   "target": "de/berlin",
-   "kind": "translate",
-   "tokens": 142000,
-   "trees": 0,
-   "note": "7 overlay entries plus title count; required or deploy refuses"
-  }
- ],
- "2026-10-06": [
-  {
-   "date": "2026-10-06",
-   "target": "fort-worth (ftw_006-019)",
-   "kind": "write",
-   "tokens": 209887,
-   "trees": 13,
-   "note": "Verified by script from the city heritage register (0 tokens): register as source, its points as pins, lifecheck for life. Write pass merged 13, held ftw_018 (no access stated). ~16k per tree including the city copy rewrite."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "chicago (chi_007-017)",
-   "kind": "write",
-   "tokens": 188061,
-   "trees": 0,
-   "note": "11 stories written from the Cook County champion register, ready_to_merge in data/research; held from data/cities by the 60-per-24h pace guard; copy draft in chicago-copy-draft.json. ~17k per tree."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "wilmington-delaware (wil_001-009)",
-   "kind": "write",
-   "tokens": 194386,
-   "trees": 0,
-   "note": "8 Delaware register champions written plus a new-place city draft, parked as ready_to_merge (pace guard full). ~24k per tree including a whole new city page."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: US 10 cities",
-   "kind": "outreach-research",
-   "tokens": 193822,
-   "trees": 0,
-   "note": "23 candidates, ~8k per candidate, ~19k per city. Above the 5-8k per city estimated in session."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: UK+DE 12 cities",
-   "kind": "outreach-research",
-   "tokens": 237927,
-   "trees": 0,
-   "note": "24 candidates, ~9k per candidate, ~19k per city. Above the 5-8k per city estimated in session."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: 8 mixed small cities",
-   "kind": "outreach-research",
-   "tokens": 241184,
-   "trees": 0,
-   "note": "14 candidates, ~17k per candidate, ~30k per city. Above the 5-8k per city estimated in session."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: North America 2, 10 cities",
-   "kind": "outreach-research",
-   "tokens": 194447,
-   "trees": 0,
-   "note": "17 candidates, ~11k per candidate. Outside Europe/North America addresses hide behind forms; yield drops sharply."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: world A, 10 cities",
-   "kind": "outreach-research",
-   "tokens": 185660,
-   "trees": 0,
-   "note": "7 candidates, ~26k per candidate. Outside Europe/North America addresses hide behind forms; yield drops sharply."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: world B, 10 cities",
-   "kind": "outreach-research",
-   "tokens": 210099,
-   "trees": 0,
-   "note": "12 candidates, ~17k per candidate. Outside Europe/North America addresses hide behind forms; yield drops sharply."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: round 3 part 1 (9 cities)",
-   "kind": "outreach-research",
-   "tokens": 181520,
-   "trees": 0,
-   "note": "13 candidates kept, ~13k per candidate."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: round 3 part 2 (8 cities)",
-   "kind": "outreach-research",
-   "tokens": 174372,
-   "trees": 0,
-   "note": "5 candidates kept, ~34k per candidate."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "ambassador contacts: round 3 part 3 (10 cities)",
-   "kind": "outreach-research",
-   "tokens": 187850,
-   "trees": 0,
-   "note": "9 candidates kept, ~20k per candidate."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "amsterdam enrich",
-   "kind": "verify",
-   "tokens": 142783,
-   "trees": 0,
-   "note": "4 of 7 indexed trees linked to the LRMB register by id; no trees added."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "barcelona enrich",
-   "kind": "verify",
-   "tokens": 149457,
-   "trees": 0,
-   "note": "12 trees got register URL and id, 4 got measurements, 2 garden access lines corrected."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "seville enrich",
-   "kind": "verify",
-   "tokens": 141632,
-   "trees": 0,
-   "note": "wasted: sevilla.org unreachable, 1 of 8 closable and its figures unreread, so not applied. Host blocklisted."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "rome",
-   "kind": "enrich",
-   "tokens": 149123,
-   "trees": 0,
-   "note": "Lazio register ids on 9 trees, girth/height on 7, Orto Botanico access line. Enrichment, no new trees."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "palermo",
-   "kind": "enrich",
-   "tokens": 145840,
-   "trees": 0,
-   "note": "MASAF register ids on 9 trees, exact coordinate matches. Two group entries carry no measurement; no season moments."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "oahu",
-   "kind": "enrich",
-   "tokens": 134831,
-   "trees": 0,
-   "note": "Honolulu Exceptional Trees register ids on 5 trees, one height. Register rounds coords, so matched by name. Kuhio Beach banyan row says Not Accessible - Fence; access line unchecked."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "vienna (enrich)",
-   "kind": "verify",
-   "tokens": 152913,
-   "trees": 0,
-   "note": "Enrichment: register ids on 13 trees, girth on 7; Baumkataster WFS hung, so girth missing for 6. No new trees."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "london (enrich)",
-   "kind": "verify",
-   "tokens": 132431,
-   "trees": 0,
-   "wasted": 132431,
-   "note": "Closed nothing: kew.org Cloudflare challenge, no per-tree register page, no sourced measurements reachable."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "athens (enrich)",
-   "kind": "verify",
-   "tokens": 113045,
-   "trees": 0,
-   "wasted": 113045,
-   "note": "Thin pass: two fetches, no register or measurement search. Nothing closed."
-  },
-  {
-   "date": "2026-10-06",
-   "target": "glasgow",
-   "kind": "enrich",
-   "tokens": 128378,
-   "trees": 0,
-   "note": "1 height closed (gla_005); no register records found; thin yield"
-  },
-  {
-   "date": "2026-10-06",
-   "target": "graz",
-   "kind": "verify",
-   "tokens": 173753,
-   "trees": 0,
-   "note": "1 flagged plane verified; 11 register rows resolved to houses/schools and blocked"
-  },
-  {
-   "date": "2026-10-06",
-   "target": "graz",
-   "kind": "write",
-   "tokens": 147637,
-   "trees": 1,
-   "note": "grz_016 merged with de overlay; fdl_001 skipped as duplicate of spa_001 (brief wrong)",
-   "brief_wrong": true
-  }
- ],
- "2026-10-07": [
-  {
-   "date": "2026-10-07",
-   "target": "guerneville",
-   "kind": "enrich",
-   "tokens": 124282,
-   "trees": 0,
-   "note": "Enrich pass: official State Parks access line (fee, hours, walk-in) on gue_001 and gue_002; no register, measurement or season to be had."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "copenhagen",
-   "kind": "enrich",
-   "tokens": 151496,
-   "trees": 0,
-   "note": "Enrich pass: only 2 weeping-beech best_time applied. Register ids dropped (Dansk Traeregister is a society register, 38 of 41 pages unfetched), no measurements or access found."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "dresden (dre_020-025)",
-   "kind": "verify",
-   "tokens": 218701,
-   "trees": 6,
-   "note": "Verified from de.wikipedia Gedenkbaeume/Naturdenkmal plus Commons categories; Dohna-Eiche held on access."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "dresden (dre_020-025)",
-   "kind": "write",
-   "tokens": 188400,
-   "trees": 6,
-   "note": "Merged 6, de overlay translated, counts rewritten for 25. preflight 0 problems."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "frankfurt (frk_007-011)",
-   "kind": "verify",
-   "tokens": 186546,
-   "trees": 5,
-   "note": "Naturdenkmal register mirror plus Wayback copies of frankfurt.de city pages (the site is Cloudflare-blocked); 4 leads added."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "frankfurt (frk_007-011)",
-   "kind": "write",
-   "tokens": 221175,
-   "trees": 5,
-   "note": "Merged 5, de overlay, counts to 11, oldest_tree_id pinned to frk_001. preflight 0 problems."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "billerbeck/munsterland (msl_001-004)",
-   "kind": "verify",
-   "tokens": 215460,
-   "trees": 4,
-   "note": "Baumkunde register around the Baumberge on Wolfgang Schurmann's pointer; 4 verified, 9 parked or blocked."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "munsterland (msl_001-004)",
-   "kind": "write",
-   "tokens": 179808,
-   "trees": 4,
-   "note": "New region place file with stories, intro, question set and FAQ."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "utrecht",
-   "kind": "enrich",
-   "tokens": 149171,
-   "trees": 0,
-   "note": "Enrich pass: 4 trees improved (ginkgo register id, girth, height; access hours; one beech best_time)."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "dresden",
-   "kind": "verify",
-   "tokens": 140000,
-   "trees": 7,
-   "note": "Register-less deepen via de.wikipedia Naturdenkmal articles and Commons geotags; 7 flagged, 5 leads."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "dresden",
-   "kind": "write",
-   "tokens": 175000,
-   "trees": 7,
-   "note": "7 stories plus recognition lines merged, German overlay for the 7 and count copy updated."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "hong-kong",
-   "kind": "enrich",
-   "tokens": 151557,
-   "trees": 0,
-   "note": "Enrich pass: LCSD YL/6 register id on the Kam Tin Tree House; Forbes Street has no authority record found, no measurements or season."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "kyoto",
-   "kind": "enrich",
-   "tokens": 188306,
-   "trees": 0,
-   "note": "Enrich pass: 9 of 11 trees got a register record (city natural monument, Kamigyo proud trees, national monument), girth/height on 3, access lines on 4."
-  },
-  {
-   "date": "2026-10-07",
-   "target": "leipzig",
-   "kind": "enrich",
-   "tokens": 177497,
-   "trees": 0,
-   "note": "Enrich pass: Naturdenkmal Leipzig ND numbers on 19 trees from the Wikipedia list; no measurements exist in it; bald cypress autumn peak."
-  }
- ],
- "2026-10-08": [
-  {
-   "date": "2026-10-08",
-   "target": "bologna",
-   "kind": "enrich",
-   "tokens": 141226,
-   "trees": 0,
-   "note": "Enrich pass: RAMI/AMI register ids on five trees, girth and height on the Rizzoli cedar. Montagnola and Villa Ghigi stay gaps; bbcc.regione.emilia-romagna.it returned 403."
-  },
-  {
-   "date": "2026-10-08",
-   "target": "belgrade",
-   "kind": "enrich",
-   "tokens": 155585,
-   "trees": 0,
-   "note": "Enrich pass: Zelenilo Beograd protected-tree list entries on four trees, girth and height on four (Wikipedia-cited for the Topcider plane). Zemun yews measurement, access and Topcider authority record stay gaps."
-  },
-  {
-   "date": "2026-10-08",
-   "target": "olympic-national-park",
-   "kind": "enrich",
-   "tokens": 138591,
-   "trees": 0,
-   "note": "Enrich pass: NPS per-tree page for the Quinault Big Spruce only. Kalaloch cedar, Tree of Life and Duncan Cedar have no authority record; resort figures not taken as measurements."
-  },
-  {
-   "date": "2026-10-08",
-   "target": "nuremberg",
-   "kind": "enrich",
-   "tokens": 136043,
-   "trees": 0,
-   "note": "Enrich pass: Bavarian Naturdenkmal ids (ND-numbers) on four trees; the Hallerwiese lime match is probable, not certain. No measurements found."
-  },
-  {
-   "date": "2026-10-08",
-   "target": "nuremberg",
-   "kind": "verify",
-   "tokens": 155000,
-   "trees": 0,
-   "note": "register mined out: 0 new, all candidates published/blocked/leads; Overpass 406"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "delft",
-   "kind": "verify",
-   "tokens": 172000,
-   "trees": 3,
-   "note": "LRMB register deepen; 2 confirmed pins via PDOK aerial, 1 small-site approximate; 13 leads/blocked"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "delft",
-   "kind": "write",
-   "tokens": 134000,
-   "trees": 3,
-   "note": "3 stories + recognition lines del_009-011, merged"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "vienna",
-   "kind": "verify",
-   "tokens": 135000,
-   "trees": 5,
-   "note": "register x ND-list x Baumkataster join; only public street trees with inventory row shipped; wien.gv.at hangs; token figure is an estimate"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "vienna",
-   "kind": "write",
-   "tokens": 160000,
-   "trees": 5,
-   "note": "vie_052-056 stories merged, German overlay translated for the 5"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "salzburg",
-   "kind": "verify",
-   "tokens": 115000,
-   "trees": 3,
-   "note": "3 verified, 9 leads/blocked"
-  },
-  {
-   "date": "2026-10-08",
-   "target": "salzburg",
-   "kind": "write",
-   "tokens": 185000,
-   "trees": 3,
-   "note": "szb_016-018 stories + recognition lines merged, 3 Commons photos looked at and approved, German overlay translated, counts 15->18"
-  }
- ],
- "2026-10-10": [
-  {
-   "date": "2026-10-10",
-   "target": "zurich",
-   "kind": "enrich",
-   "tokens": 155536,
-   "trees": 0,
-   "note": "nothing found; PDFs unreadable on the runner; wasted",
-   "wasted": 155536
-  },
-  {
-   "date": "2026-10-10",
-   "target": "stockholm",
-   "kind": "enrich",
-   "tokens": 141386,
-   "trees": 0,
-   "note": "nothing found: lansstyrelsen PDF timed out, no per-tree register pages; wasted",
-   "wasted": 141386
-  },
-  {
-   "date": "2026-10-10",
-   "target": "netherlands-lrmb-bulk",
-   "kind": "enrich",
-   "tokens": 0,
-   "trees": 0,
-   "note": "scripts/lrmb_fill.py: 353 Dutch trees got register ids and/or LRMB girth and height, no agent"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "haarlem",
-   "kind": "enrich",
-   "tokens": 158222,
-   "trees": 0,
-   "note": "LRMB live-layer girth/height on 10 trees, 5 pins"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "toronto",
-   "kind": "enrich",
-   "tokens": 162773,
-   "trees": 0,
-   "note": "Ontario Heritage Tree ids on 6 trees, one access correction"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "melbourne",
-   "kind": "enrich",
-   "tokens": 140702,
-   "trees": 0,
-   "note": "Yarra register ids and measurements on 12 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "geneva",
-   "kind": "enrich",
-   "tokens": 156369,
-   "trees": 0,
-   "note": "SITG ids on 13 trees, 2 city pages, 1 pin"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "seattle",
-   "kind": "enrich",
-   "tokens": 150851,
-   "trees": 0,
-   "note": "SDOT heritage ids on 9 trees, heights, 5 pins"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "granada",
-   "kind": "enrich",
-   "tokens": 150247,
-   "trees": 0,
-   "note": "one access line; no register match"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "leipzig",
-   "kind": "enrich",
-   "tokens": 155816,
-   "trees": 0,
-   "note": "Naturdenkmal ids on 18 trees; no measurements found"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "kyoto",
-   "kind": "enrich",
-   "tokens": 169387,
-   "trees": 0,
-   "note": "Kamigyo ward records on 5 trees, measurements on 3, one small site"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "budapest",
-   "kind": "enrich",
-   "tokens": 181232,
-   "trees": 0,
-   "note": "Fokert notable-tree records on 11 trees, measurements on 2"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "crete",
-   "kind": "enrich",
-   "tokens": 146217,
-   "trees": 0,
-   "note": "one height; no per-tree register pages"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "hong-kong",
-   "kind": "enrich",
-   "tokens": 164099,
-   "trees": 0,
-   "note": "Tree Register ids on 8 trees, measurements on 4"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "osaka",
-   "kind": "enrich",
-   "tokens": 161588,
-   "trees": 0,
-   "note": "2 kunishitei records, measurements on 2 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "utrecht",
-   "kind": "enrich",
-   "tokens": 167079,
-   "trees": 0,
-   "note": "3 register ids, measurements on 5, season on 2"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "seoul",
-   "kind": "enrich",
-   "tokens": 175076,
-   "trees": 0,
-   "note": "measurements and protected-tree ids on 4 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "beijing",
-   "kind": "enrich",
-   "tokens": 155024,
-   "trees": 0,
-   "note": "Landscaping Bureau records and measurements on 3 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "madeira",
-   "kind": "enrich",
-   "tokens": 223392,
-   "trees": 0,
-   "note": "IFCN register sheets and measurements on 6 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "boston",
-   "kind": "enrich",
-   "tokens": 172686,
-   "trees": 0,
-   "note": "Arboretum accessions and NPS record on 7 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "san-francisco",
-   "kind": "enrich",
-   "tokens": 153022,
-   "trees": 0,
-   "note": "1 landmark tree id; register has no per-tree pages, sfenvironment.org 403s"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "kanazawa",
-   "kind": "enrich",
-   "tokens": 173902,
-   "trees": 0,
-   "note": "records, measurements, access on 7 trees (no new trees)"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "vilnius",
-   "kind": "enrich",
-   "tokens": 178414,
-   "trees": 0,
-   "note": "register + measurements on 9 trees; 2 retired to leads"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "coimbra",
-   "kind": "enrich",
-   "tokens": 142682,
-   "trees": 0,
-   "note": "ICNF register ids on 4 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "reykjavik",
-   "kind": "enrich",
-   "tokens": 157123,
-   "trees": 2,
-   "note": "Tree of the Year PDF records and measurements on rey_003, rey_004"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "new-orleans",
-   "kind": "enrich",
-   "tokens": 137565,
-   "trees": 1,
-   "note": "low yield: access line on nol_008 only; no register or pin evidence, Audubon hosts return 403"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "the-hague",
-   "kind": "enrich",
-   "tokens": 152543,
-   "trees": 2,
-   "note": "batch 2: girth/height from LRMB ArcGIS on hag_029/030, best_time on 029; hag_026 and hag_031 register status dead"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "the-hague",
-   "kind": "enrich",
-   "tokens": 138641,
-   "trees": 15,
-   "note": "LRMB register ids on 15 trees, 7 matched by coordinate in the local copy; no measurements found"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "florence",
-   "kind": "enrich",
-   "tokens": 151523,
-   "trees": 3,
-   "note": "MASAF register ids on flo_020/021/022, access from owner and ministry pages; pins stay open"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "sintra",
-   "kind": "enrich",
-   "tokens": 159697,
-   "trees": 4,
-   "note": "ICNF record + girth/height on sin_003, heights and ticket/hours on Pena and Monserrate trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "houston",
-   "kind": "enrich",
-   "tokens": 147502,
-   "trees": 6,
-   "note": "register ids on 5 Texas Big Tree entries (girths dropped: registry is non-commercial), Becks Prime small site"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "krakow",
-   "kind": "enrich",
-   "tokens": 144119,
-   "trees": 2,
-   "note": "CRFOP record and girth on kra_013, Botanic Garden price and hours on kra_003; pin refused for missing source URL"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "milan",
-   "kind": "enrich",
-   "tokens": 137609,
-   "trees": 3,
-   "note": "batch 2: MASAF sheet, girth/height on 3, Orto Botanico di Brera hours; comune.milano.it 403"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "milan",
-   "kind": "enrich",
-   "tokens": 144970,
-   "trees": 6,
-   "note": "MASAF ids and girth/height on 6; 21 gaps dead-ended, no authority pages opened"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "arnhem",
-   "kind": "enrich",
-   "tokens": 159128,
-   "trees": 14,
-   "note": "batch 2: ids and 11 girth/height from the LRMB ArcGIS layer; surfaced 3 felled trees, which led to 45 retired across 14 NL cities"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "arnhem",
-   "kind": "enrich",
-   "tokens": 148009,
-   "trees": 5,
-   "note": "LRMB ids on 5, one girth; 24 gaps dead-ended"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "los-angeles",
-   "kind": "enrich",
-   "tokens": 156529,
-   "trees": 3,
-   "note": "no US register imported; monument no. 19, two heights; 31 gaps dead-ended"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "ede",
-   "kind": "enrich",
-   "tokens": 145843,
-   "trees": 7,
-   "note": "LRMB register ids on 7 trees, Hoge Veluwe access; no register measurements, hoekelum.nl 403"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "palma-de-mallorca",
-   "kind": "enrich",
-   "tokens": 142330,
-   "trees": 5,
-   "note": "Balears register records on 5, 3 heights; access pages not opened"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "leeuwarden",
-   "kind": "enrich",
-   "tokens": 159594,
-   "trees": 0,
-   "note": "LRMB ids on 3, measurements on 4, season on 3"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "cambridge",
-   "kind": "enrich",
-   "tokens": 153287,
-   "trees": 0,
-   "note": "owner pages on 3 trees, 2 access lines"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "dubrovnik",
-   "kind": "enrich",
-   "tokens": 143405,
-   "trees": 0,
-   "note": "county protected-nature record for Trsteno planes, arboretum access on 3"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "naples",
-   "kind": "enrich",
-   "tokens": 159897,
-   "trees": 0,
-   "note": "Campania cards / MASAF ids on 18 trees, measurements where sources agreed"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "washington-dc",
-   "kind": "enrich",
-   "tokens": 154765,
-   "trees": 0,
-   "note": "Architect of the Capitol / VT records on 4, Casey Trees girths on 3"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "nice",
-   "kind": "enrich",
-   "tokens": 170894,
-   "trees": 0,
-   "note": "Region Sud / Culture / ARBRES records on 6 trees, hours on 4"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "strasbourg",
-   "kind": "enrich",
-   "tokens": 146738,
-   "trees": 0,
-   "note": "city register pages with girth and height on all 10 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "las-vegas",
-   "kind": "enrich",
-   "tokens": 140902,
-   "trees": 0,
-   "note": "nothing applied: only a 'Free' line the source does not state; wasted"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "amersfoort",
-   "kind": "enrich",
-   "tokens": 143527,
-   "trees": 0,
-   "note": "3 LRMB ids, no measurements in register"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "vancouver",
-   "kind": "enrich",
-   "tokens": 139785,
-   "trees": 0,
-   "note": "Heritage Register ids on 7 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "philadelphia",
-   "kind": "enrich",
-   "tokens": 150071,
-   "trees": 0,
-   "note": "Morris Arboretum prices on 3 trees; Commons-coordinate pin dropped"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "kagoshima",
-   "kind": "enrich",
-   "tokens": 131665,
-   "trees": 0,
-   "note": "city preserved-tree ids on 7 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "perth",
-   "kind": "enrich",
-   "tokens": 151424,
-   "trees": 0,
-   "note": "inHerit / National Trust records on 4 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "verona",
-   "kind": "enrich",
-   "tokens": 146656,
-   "trees": 0,
-   "note": "MASAF id, a height, garden hours on 3 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "eindhoven",
-   "kind": "enrich",
-   "tokens": 153034,
-   "trees": 0,
-   "note": "LRMB measurements on 4; ein_006 retired (register: dead/felled)"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "mexico-city",
-   "kind": "enrich",
-   "tokens": 149174,
-   "trees": 0,
-   "note": "SEDEMA extract ids and measurements on 9 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "segovia",
-   "kind": "enrich",
-   "tokens": 141818,
-   "trees": 0,
-   "note": "one height; no per-tree register reachable"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "sequoia-national-park",
-   "kind": "enrich",
-   "tokens": 135404,
-   "trees": 0,
-   "note": "General Sherman height and hours only"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "sorrento",
-   "kind": "enrich",
-   "tokens": 139154,
-   "trees": 0,
-   "note": "Campania/MASAF ids and measurements on 7 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "tallinn",
-   "kind": "enrich",
-   "tokens": 153112,
-   "trees": 0,
-   "note": "one girth; register hosts blocked"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "helsinki",
-   "kind": "enrich",
-   "tokens": 161992,
-   "trees": 0,
-   "note": "natural-monument records and heights on 7 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "oslo",
-   "kind": "enrich",
-   "tokens": 145845,
-   "trees": 0,
-   "note": "one girth"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "bristol",
-   "kind": "enrich",
-   "tokens": 160135,
-   "trees": 0,
-   "note": "TPO record and survey girths on 5 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "quebec-city",
-   "kind": "enrich",
-   "tokens": 123241,
-   "trees": 0,
-   "note": "register ids and DBH girths on 6 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "leiden",
-   "kind": "enrich",
-   "tokens": 136208,
-   "trees": 0,
-   "note": "LRMB ids and measurements on 11 trees, Hortus access"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "bucaco",
-   "kind": "enrich",
-   "tokens": 150573,
-   "trees": 0,
-   "note": "ICNF ids and measurements on 18 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "pittsburgh",
-   "kind": "enrich",
-   "tokens": 152022,
-   "trees": 0,
-   "note": "registry link, park hours, season on 4 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "boise",
-   "kind": "enrich",
-   "tokens": 155998,
-   "trees": 0,
-   "note": "Idaho Big Tree measurements on 3 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "luxembourg-city",
-   "kind": "enrich",
-   "tokens": 176037,
-   "trees": 0,
-   "note": "ANF ids on 5 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "spokane",
-   "kind": "enrich",
-   "tokens": 147250,
-   "trees": 0,
-   "note": "heritage register ids, heights, 8 register pins on 12 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "manchester",
-   "kind": "enrich",
-   "tokens": 138825,
-   "trees": 0,
-   "note": "nothing: council site blocks fetchers; wasted",
-   "wasted": 138825
-  },
-  {
-   "date": "2026-10-10",
-   "target": "taipei",
-   "kind": "enrich",
-   "tokens": 162809,
-   "trees": 0,
-   "note": "protected-tree register ids, measurements, pins on 3 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "maastricht",
-   "kind": "enrich",
-   "tokens": 155337,
-   "trees": 0,
-   "note": "LRMB ids, measurements, 3 pins on 9 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "sapporo",
-   "kind": "enrich",
-   "tokens": 145867,
-   "trees": 0,
-   "note": "five measurements via a secondary site, one access line"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "bangkok",
-   "kind": "enrich",
-   "tokens": 135601,
-   "trees": 0,
-   "note": "nothing: no per-tree records found; wasted",
-   "wasted": 135601
-  },
-  {
-   "date": "2026-10-10",
-   "target": "parma",
-   "kind": "enrich",
-   "tokens": 133423,
-   "trees": 0,
-   "note": "MASAF ids on 5 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "cologne",
-   "kind": "enrich",
-   "tokens": 140047,
-   "trees": 0,
-   "note": "Naturdenkmal ids on 5 trees, two girths"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "ljubljana",
-   "kind": "enrich",
-   "tokens": 150950,
-   "trees": 0,
-   "note": "decree record on 1 tree, garden hours on 1"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "groningen",
-   "kind": "enrich",
-   "tokens": 145631,
-   "trees": 0,
-   "note": "LRMB ids, measurements, 4 register pins on 8 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "dordrecht",
-   "kind": "enrich",
-   "tokens": 159434,
-   "trees": 0,
-   "note": "LRMB ids, museum and house access on 4 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "lyon",
-   "kind": "enrich",
-   "tokens": 141842,
-   "trees": 0,
-   "note": "PLU-H register ids on 3 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "charleston",
-   "kind": "enrich",
-   "tokens": 140663,
-   "trees": 0,
-   "note": "Angel Oak height, one small-site pin"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "frankfurt",
-   "kind": "enrich",
-   "tokens": 161705,
-   "trees": 0,
-   "note": "Naturdenkmal ids, measurements, garden access on 11 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "cordoba",
-   "kind": "enrich",
-   "tokens": 155169,
-   "trees": 0,
-   "note": "two access lines; municipal PDF unreadable"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "cardiff",
-   "kind": "enrich",
-   "tokens": 144023,
-   "trees": 0,
-   "note": "council record, measurement and pin on 1 tree"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "enschede",
-   "kind": "enrich",
-   "tokens": 161166,
-   "trees": 0,
-   "note": "height and season on 2 trees; ens_003 retired (register dead)"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "higashi-hiroshima",
-   "kind": "enrich",
-   "tokens": 146051,
-   "trees": 0,
-   "note": "giant-tree records and measurements on 17 trees; hgh_014 retired (misattributed record)"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "minneapolis",
-   "kind": "enrich",
-   "tokens": 153427,
-   "trees": 0,
-   "note": "DNR registry entry and measurements on 1 tree; pin conflict left for a session"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "savannah",
-   "kind": "enrich",
-   "tokens": 124382,
-   "trees": 0,
-   "note": "nothing: no authority records or live measurements; wasted",
-   "wasted": 124382
-  },
-  {
-   "date": "2026-10-10",
-   "target": "bologna",
-   "kind": "enrich",
-   "tokens": 142525,
-   "trees": 0,
-   "note": "MASAF ids, one measurement, botanical garden access on 3 trees"
-  },
-  {
-   "date": "2026-10-10",
-   "target": "guimaraes",
-   "kind": "enrich",
-   "tokens": 143224,
-   "trees": 0,
-   "note": "ICNF ids and measurements on 8 trees"
-  }
- ],
- "2026-10-09": [
-  {
-   "date": "2026-10-09",
-   "target": "berlin",
-   "kind": "enrich",
-   "tokens": 165195,
-   "trees": 18,
-   "note": "batch 2: register ids on 17 trees, ferry fare on one; ber_031 possibly felled"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "berlin",
-   "kind": "enrich",
-   "tokens": 186129,
-   "trees": 18,
-   "note": "batch 3: register ids on 18, girth/height on 10 from Baumkataster WFS, 2 best_time"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "rome",
-   "kind": "enrich",
-   "tokens": 153711,
-   "trees": 16,
-   "note": "MASAF register ids on 15 trees, one measurement, botanic garden hours"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "rome",
-   "kind": "enrich",
-   "tokens": 136044,
-   "trees": 3,
-   "note": "batch 2: MASAF ids on 3 trees, one girth"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "palermo",
-   "kind": "enrich",
-   "tokens": 161119,
-   "trees": 12,
-   "note": "MASAF ids on 11 trees, Villa Malfitano ticket and slots corrected"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "oahu",
-   "kind": "enrich",
-   "tokens": 183767,
-   "trees": 17,
-   "note": "Honolulu register ids and measurements, Foster garden prices, 4 OSM pins"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "tokyo",
-   "kind": "enrich",
-   "tokens": 213757,
-   "trees": 7,
-   "note": "national and Tokyo register links on 5 trees, camphor access corrected, 76 tool calls"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "munich",
-   "kind": "enrich",
-   "tokens": 162271,
-   "trees": 19,
-   "note": "batch 1: LfU Bayern register ids on 19 trees, 4 girths"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "munich",
-   "kind": "enrich",
-   "tokens": 164613,
-   "trees": 18,
-   "note": "batch 2: LfU ids on 17, 3 measurements, 3 best_time"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "munich",
-   "kind": "enrich",
-   "tokens": 163719,
-   "trees": 20,
-   "note": "batch 3: LfU ids on 19, 16 register pins, 1 girth; muc_037/049 duplicate flagged"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "new-york",
-   "kind": "enrich",
-   "tokens": 162814,
-   "trees": 14,
-   "note": "Great Trees girth/height on 11, 6 register pins, garden access; nyc_006 species conflict"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "edinburgh",
-   "kind": "enrich",
-   "tokens": 165098,
-   "trees": 7,
-   "note": "RBGE hours on 7 trees, 3 accession ids; no public measurements"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "vienna",
-   "kind": "enrich",
-   "tokens": 171356,
-   "trees": 11,
-   "note": "4 register ids, 8 girths from Baumkataster, Schoenbrunn hours; vie_010 pin corrected 138 m"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "brussels",
-   "kind": "enrich",
-   "tokens": 159971,
-   "trees": 15,
-   "note": "heritage.brussels record URLs, girths and heights on 15 trees"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "brussels",
-   "kind": "enrich",
-   "tokens": 158055,
-   "trees": 13,
-   "note": "batch 2: records, measurements on 13 trees, 4 register pins"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "dublin",
-   "kind": "enrich",
-   "tokens": 164292,
-   "trees": 12,
-   "note": "10 register ids, 2 measurements, 2 access lines; dub_008 pin conflict flagged"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "brisbane",
-   "kind": "enrich",
-   "tokens": 164362,
-   "trees": 17,
-   "note": "National Trust register records and heights on 13, heritage records, access, one location_site"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "paris",
-   "kind": "enrich",
-   "tokens": 161866,
-   "trees": 11,
-   "note": "Paris register ids with sheet PDFs on 11 trees"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "malaga",
-   "kind": "enrich",
-   "tokens": 143677,
-   "trees": 8,
-   "note": "garden records, 7 heights, 1 girth, hackberry access"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "vienna",
-   "kind": "enrich",
-   "tokens": 155611,
-   "trees": 16,
-   "note": "batch 2: 13 register ids, 4 girths, 4 best_time"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "vienna",
-   "kind": "enrich",
-   "tokens": 150408,
-   "trees": 13,
-   "note": "batch 3: 13 register ids, 2 heights, 1 best_time"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "london",
-   "kind": "enrich",
-   "tokens": 155081,
-   "trees": 5,
-   "note": "access lines on 4, one girth floor; no UK register; kew.org 403"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "alicante",
-   "kind": "enrich",
-   "tokens": 149031,
-   "trees": 16,
-   "note": "Generalitat Valenciana register ids on 16 trees"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "porto",
-   "kind": "enrich",
-   "tokens": 169060,
-   "trees": 12,
-   "note": "ICNF ids on 10, 7 heights, Palacio de Cristal hours"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "prague",
-   "kind": "enrich",
-   "tokens": 159215,
-   "trees": 9,
-   "note": "AOPK ids and girths on 6, one pin, 3 measurements"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "cagliari",
-   "kind": "enrich",
-   "tokens": 155660,
-   "trees": 6,
-   "note": "2 MASAF ids, garden hours corrected, 2 pins"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "madrid",
-   "kind": "enrich",
-   "tokens": 199073,
-   "trees": 5,
-   "note": "pruned to authority sources: 2 register URLs, 3 heights, 1 girth, botanic garden access; third-party Jimdo catalogue ids withheld"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "florence",
-   "kind": "enrich",
-   "tokens": 170860,
-   "trees": 16,
-   "note": "14 MASAF ids, 1 height, 1 pin, garden hours; flo_026 id withheld on a 208 m conflict"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "krakow",
-   "kind": "enrich",
-   "tokens": 152150,
-   "trees": 11,
-   "note": "6 CRFOP records, 3 girths, garden access, 3 best_time"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "athens",
-   "kind": "enrich",
-   "tokens": 137151,
-   "trees": 0,
-   "wasted": 137151,
-   "note": "no Greek register imported, culture ministry domains fail DNS; nothing filled"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "pamplona",
-   "kind": "enrich",
-   "tokens": 201921,
-   "trees": 14,
-   "note": "Navarra MN ids and fichas on 6, 5 measurements, 8 river-park ids"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "bath",
-   "kind": "enrich",
-   "tokens": 139558,
-   "trees": 2,
-   "note": "access lines corrected on two trees; UK has no per-tree register, rest dead ends"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "berlin",
-   "kind": "enrich",
-   "tokens": 174821,
-   "trees": 5,
-   "note": "girths on 4 oaks, height on 2, register ids on both Pfaueninsel oaks"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "seville",
-   "kind": "enrich",
-   "tokens": 152175,
-   "trees": 8,
-   "note": "Alcazar and cathedral hours, ficha ids on 5 trees; sevilla.org fichas unreachable"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "barcelona",
-   "kind": "enrich",
-   "tokens": 150898,
-   "trees": 15,
-   "note": "batch 2: register ids and girths on 15 trees, 5 register pins, botanic garden access corrected to free; bcn_043 duplicate flagged"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "amsterdam",
-   "kind": "enrich",
-   "tokens": 143139,
-   "trees": 12,
-   "note": "batch 2: register ids on 12 trees, 4 girths"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "barcelona",
-   "kind": "enrich",
-   "tokens": 144640,
-   "trees": 20,
-   "note": "register ids and heights on 20 trees, 3 girths; barcelona.cat blocklisted"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "lisbon",
-   "kind": "enrich",
-   "tokens": 148832,
-   "trees": 8,
-   "note": "ICNF register ids and girth/height on 8 trees; pins refused for missing source URL; jacarandas not in register"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "amsterdam",
-   "kind": "enrich",
-   "tokens": 171065,
-   "trees": 17,
-   "note": "register ids on 17 trees, 12 girths, Van Loon access and season; ARTIS hours pages JS-rendered"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "salzburg",
-   "kind": "write",
-   "tokens": 190000,
-   "trees": 1,
-   "note": "4 READY leads, leads carried no sources; 1 shipped (Walser Birnbaum), 3 stay leads; de overlay"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "salt-lake-city",
-   "kind": "verify",
-   "tokens": 178000,
-   "trees": 0,
-   "note": "Utah big-tree ArcGIS register; 5 confirmed pins verified, 1 held (slc_006)"
-  },
-  {
-   "date": "2026-10-09",
-   "target": "salt-lake-city",
-   "kind": "write",
-   "tokens": 170000,
-   "trees": 5,
-   "note": "new city opened with 5 stories, recognition lines, city copy"
-  },
-  {
-   "target": "singapore",
-   "kind": "enrich",
-   "tokens": 150028,
-   "trees": 0,
-   "note": "enrichment: register record + height on 19 trees, girth on 12, Gardens hours on 9; no new trees"
-  },
-  {
-   "target": "lisbon",
-   "kind": "enrich",
-   "tokens": 151544,
-   "trees": 0,
-   "note": "enrichment: ICNF AIP register id on 14 trees, girth/height on 12; no new trees"
-  }
- ],
- "2026-10-12": [
-  {
-   "date": "2026-10-12",
-   "target": "delft",
-   "kind": "enrich",
-   "tokens": 172014,
-   "trees": 0,
-   "note": "enrichment: LRMB ids on 4 trees, girth/height on 4, Hortus access and season; del_011 retired as dead per register"
-  },
-  {
-   "date": "2026-10-12",
-   "target": "dresden",
-   "kind": "enrich",
-   "tokens": 221049,
-   "trees": 0,
-   "note": "enrichment: city Formblatt records and measurements on 8 Naturdenkmale, Kulturdenkmal ids, Villa Marienlust access; 15 trees touched"
-  },
-  {
-   "date": "2026-10-12",
-   "target": "dresden",
-   "kind": "enrich",
-   "tokens": 178864,
-   "trees": 0,
-   "note": "enrichment batch 2: Naturdenkmal Formblatt ND 32 and 107, DDG record, Freital ordinance ids; 6 trees touched"
-  },
-  {
-   "date": "2026-10-12",
-   "target": "perugia",
-   "kind": "enrich",
-   "tokens": 0,
-   "trees": 0,
-   "note": "session work, no agent: MASAF sheet ids and girth/height written from the register rows already in each tree's sources, 10 trees"
-  },
-  {
-   "date": "2026-10-12",
-   "target": "riga",
-   "kind": "enrich",
-   "tokens": 149372,
-   "trees": 0,
-   "note": "enrichment: Riga dizkoku datubaze ids on 3 trees; dataset has no girth/height; 2 trees not in it"
-  },
-  {
-   "date": "2026-10-12",
-   "target": "kauai",
-   "kind": "enrich",
-   "tokens": 0,
-   "trees": 0,
-   "note": "session work, no agent: Hawaii Exceptional Trees register ids on 6 trees from the imported register file, banyan measurement; senonches marked dead end without a pass (no per-tree register)"
-  },
-  {
-   "date": "2026-10-12",
-   "target": "regensburg",
-   "kind": "enrich",
-   "tokens": 143642,
-   "trees": 0,
-   "note": "enrichment: Naturdenkmal numbers ND 10/52/53/34/43 on all 5 trees; no measurements in ordinances; Gries address possibly swapped"
-  },
-  {
-   "date": "2026-10-12",
-   "target": "assen",
-   "kind": "enrich",
-   "tokens": 137118,
-   "trees": 0,
-   "note": "enrichment: LRMB girth/height/pin/season on 2 trees; ass_002 retired (register: dead/felled), city copy rewritten around the Beilen oak; lrmb_fill 3 more Dutch trees, no agent"
-  }
- ],
- "2026-10-11": [
-  {
-   "date": "2026-10-11",
-   "target": "zwolle",
-   "kind": "enrich",
-   "tokens": 147545,
-   "trees": 0,
-   "note": "10 trees enriched; 4 retired as register-dead"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "menorca",
-   "kind": "enrich",
-   "tokens": 156944,
-   "trees": 0,
-   "note": "6 trees: CAIB fichas, girth and height"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "miyazaki",
-   "kind": "enrich",
-   "tokens": 138896,
-   "trees": 0,
-   "note": "nothing: no per-tree id in the Japanese register file; wasted",
-   "wasted": 138896
-  },
-  {
-   "date": "2026-10-11",
-   "target": "bordeaux",
-   "kind": "enrich",
-   "tokens": 147237,
-   "trees": 0,
-   "note": "10 trees: Metropole register ids, girth, height"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "hawaii",
-   "kind": "enrich",
-   "tokens": 136957,
-   "trees": 0,
-   "note": "6 trees: register ids and girths"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "genoa",
-   "kind": "enrich",
-   "tokens": 163148,
-   "trees": 0,
-   "note": "12 trees: MASAF ids, measurements, park prices"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "nuremberg",
-   "kind": "enrich",
-   "tokens": 160294,
-   "trees": 0,
-   "note": "12 register ids, 2 measurements"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "oxford",
-   "kind": "enrich",
-   "tokens": 172584,
-   "trees": 0,
-   "note": "4 trees: Parks record, heights, access"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "toulouse",
-   "kind": "enrich",
-   "tokens": 137992,
-   "trees": 0,
-   "note": "10 register ids, no measurements"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "aarhus",
-   "kind": "enrich",
-   "tokens": 147081,
-   "trees": 0,
-   "note": "7 trees: dendron.dk records, 5 measurements"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "freiburg",
-   "kind": "enrich",
-   "tokens": 164615,
-   "trees": 0,
-   "note": "7 LUBW numbers, 1 measurement, 2 seasons"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "padua",
-   "kind": "enrich",
-   "tokens": 165062,
-   "trees": 0,
-   "note": "9 trees: MASAF ids and measurements, garden access"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "bergamo",
-   "kind": "enrich",
-   "tokens": 138420,
-   "trees": 0,
-   "note": "1 MASAF record; web never fetched, gaps wrongly buried"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "salzburg",
-   "kind": "enrich",
-   "tokens": 176125,
-   "trees": 0,
-   "note": "18 Land Salzburg ids"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "ghent",
-   "kind": "enrich",
-   "tokens": 154711,
-   "trees": 0,
-   "note": "5 inventory records"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "hallstatt",
-   "kind": "enrich",
-   "tokens": 169964,
-   "trees": 0,
-   "note": "5 Naturschutzbuch records, 4 measurements"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "salamanca",
-   "kind": "enrich",
-   "tokens": 145138,
-   "trees": 0,
-   "note": "1 of 4 trees"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "york",
-   "kind": "enrich",
-   "tokens": 138196,
-   "trees": 0,
-   "note": "6 measurements and access; register claim dropped"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "nagoya",
-   "kind": "enrich",
-   "tokens": 184299,
-   "trees": 0,
-   "note": "6 ministry records, castle access"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "stuttgart",
-   "kind": "enrich",
-   "tokens": 152713,
-   "trees": 0,
-   "note": "4 LUBW records, 1 measurement"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "bratislava",
-   "kind": "enrich",
-   "tokens": 146688,
-   "trees": 0,
-   "note": "6 register numbers; measurements withheld (citizen site only)"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "helmond",
-   "kind": "enrich",
-   "tokens": 144875,
-   "trees": 0,
-   "note": "4 LRMB records; 1 retired; much now covered by lrmb_fill.py"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "oss",
-   "kind": "enrich",
-   "tokens": 128906,
-   "trees": 0,
-   "note": "1 record; 4 register-dead trees flagged, retirement reverted (thin-place freeze)"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "rio-de-janeiro",
-   "kind": "enrich",
-   "tokens": 138195,
-   "trees": 0,
-   "note": "2 survey heights; mostly untested"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "gdansk",
-   "kind": "enrich",
-   "tokens": 159501,
-   "trees": 0,
-   "note": "3 trees"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "alkmaar",
-   "kind": "enrich",
-   "tokens": 148253,
-   "trees": 0,
-   "note": "5 LRMB records; 1 retired"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "den-bosch",
-   "kind": "enrich",
-   "tokens": 150771,
-   "trees": 0,
-   "note": "7 records; 1 retired"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "graz",
-   "kind": "enrich",
-   "tokens": 157864,
-   "trees": 0,
-   "note": "16 city register ids, park access"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "hoorn",
-   "kind": "enrich",
-   "tokens": 144614,
-   "trees": 0,
-   "note": "1 group record; 5 pins refused for missing source URL"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "lausanne",
-   "kind": "enrich",
-   "tokens": 147454,
-   "trees": 0,
-   "note": "7 city tree pages, measurements, 6 pins"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "lucca",
-   "kind": "enrich",
-   "tokens": 151475,
-   "trees": 0,
-   "note": "13 MASAF records, garden access"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "bilbao",
-   "kind": "enrich",
-   "tokens": 125236,
-   "trees": 0,
-   "note": "nothing found; wasted",
-   "wasted": 125236
-  },
-  {
-   "date": "2026-10-11",
-   "target": "ronda",
-   "kind": "enrich",
-   "tokens": 141594,
-   "trees": 0,
-   "note": "6 REDIAM fichas, measurements"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "belfast",
-   "kind": "enrich",
-   "tokens": 141263,
-   "trees": 0,
-   "note": "1 access line"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "buenos-aires",
-   "kind": "enrich",
-   "tokens": 139287,
-   "trees": 0,
-   "note": "4 Arbopedia records, heights"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "como",
-   "kind": "enrich",
-   "tokens": 149752,
-   "trees": 0,
-   "note": "9 MASAF records, Grumello hours"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "deventer",
-   "kind": "enrich",
-   "tokens": 153106,
-   "trees": 0,
-   "note": "4 trees"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "hamburg",
-   "kind": "enrich",
-   "tokens": 161644,
-   "trees": 0,
-   "note": "4 trees; register claim dropped"
-  },
-  {
-   "date": "2026-10-11",
-   "target": "trieste",
-   "kind": "enrich",
-   "tokens": 147522,
-   "trees": 0,
-   "note": "19 MASAF records"
   }
  ]
 }

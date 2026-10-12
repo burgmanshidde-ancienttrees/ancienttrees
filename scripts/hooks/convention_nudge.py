@@ -43,7 +43,9 @@ NUDGE = """CONVENTION CHECK (scripts/hooks/convention_nudge.py, fires on message
 This message looks like it is about an interaction a person performs. Before
 proposing ANY design, options or trade-offs of your own:
 
-1. Read CONVENTIONS.md. If the interaction is already in there, cite it and use it.
+1. Check CONVENTIONS.md WITHOUT reading it whole (it is 200 KB): grep its
+   `^## ` headings, then Read only the matching entry by line offset. If the
+   interaction is already in there, cite it and use it.
 2. If it is not, look up how the reference products actually do it (AllTrails,
    Google Maps, Airbnb, PictureThis are the standing ones; iNaturalist, Seek,
    Strava and Apple's own guidance where they fit better) and say what they do,

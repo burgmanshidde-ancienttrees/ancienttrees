@@ -23,6 +23,8 @@ date it was read. An entry with no source URL is one recorded from our own
 corpus, where the reference was named at the time but the lookup was not
 written down; treat those as weaker and re-check before leaning on them.
 
+**Do not read this file whole** (200 KB, about 50k tokens): `grep -n '^## ' CONVENTIONS.md` lists every entry with its line number; read only the one you need. New entries go at the top, under this line.
+
 ---
 
 ## Making and sharing your own list of places (2026-10-03)

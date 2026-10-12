@@ -3124,8 +3124,32 @@ def note_overseas_trees_have_a_frame():
     return out
 
 
+def check_agent_costs_shape():
+    """Every pass's cost lives under data/agent-costs.json "days" -> date -> list.
+
+    Third time this meter went blind on a shape: from 2026-10-03 to 10-12 runs
+    wrote each day at the TOP level, and retro.py, which reads "days", printed
+    "no agent costs recorded" over 346 logged passes. A day key anywhere but
+    under "days" is refused here, before it reaches main."""
+    try:
+        d = json.load(open("data/agent-costs.json"))
+    except (OSError, ValueError) as e:
+        return [f"data/agent-costs.json unreadable: {e}"]
+    out = []
+    stray = [k for k in d if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(k))]
+    if stray:
+        out.append("data/agent-costs.json: day(s) %s sit at the top level; put "
+                   "each under \"days\" -> date -> [ {target, kind, tokens, trees, "
+                   "note} ], or retro.py cannot see them." % ", ".join(sorted(stray)[:5]))
+    for day, rows in (d.get("days") or {}).items():
+        if not isinstance(rows, list):
+            out.append(f"data/agent-costs.json: days[{day}] is not a list of passes.")
+    return out
+
+
 def main():
     problems = (check_id_prefixes() + check_pin_upgrades()
+                + check_agent_costs_shape()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
                 + check_phenology() + check_register_licences()
                 + check_access_permission() + check_no_sender_names()

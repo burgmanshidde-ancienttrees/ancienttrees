@@ -176,7 +176,7 @@ komoot Pioneer convention: one person, one place, a badge. Most come from outrea
 - LOG.md is his catch-up channel: lead with what changed in the product, keep breakage separate, say plainly when a run did nothing useful.
 
 **Design-time checks (one line each, not phases):**
-- **Convention check**: for a new interaction, read CONVENTIONS.md, else look up how AllTrails, Google Maps, Airbnb, PictureThis, komoot do it, and copy it. Use official assets (Apple, Google sign-in). Never invent a control. `scripts/conventioncheck.py` (new Screens/ or components/ files name a reference).
+- **Convention check**: for a new interaction, grep CONVENTIONS.md's `^## ` headings and read only the matching entry (never the whole 200 KB file), else look up how AllTrails, Google Maps, Airbnb, PictureThis, komoot do it, and copy it. Use official assets (Apple, Google sign-in). Never invent a control. `scripts/conventioncheck.py` (new Screens/ or components/ files name a reference).
 - **Whole-page check**: what does this displace or duplicate, and how does a visitor arrive here (qa fails orphan pages).
 - **Trio**: Product, UX (375px, honest), Tech (boring, reversible).
 - **Both surfaces by default**: a feature ships on web and app in the same change. A decision travels as data in the feed, never as a rule implemented twice (answers in the feed, rules on the server). `scripts/crosscheck.py`, `scripts/paritycheck.py` (data/parity-allow.json, data/cross-surface-allow.json), `check_faces_travel_to_the_app()`.

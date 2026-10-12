@@ -661,7 +661,8 @@ jobs:
             as also opening its country page if that country has none.
 
             LOG WHAT THE PASS COST, in the same commit as its output: append to
-            data/agent-costs.json under today's date with target, kind (verify,
+            data/agent-costs.json under "days" -> today's date (never a
+            date key at the top level; preflight refuses it) with target, kind (verify,
             write, photo, scout), tokens, trees that actually reached
             data/cities, and a one-line note. An unlogged pass is a day the
             learning loop cannot see, and the meter CLAUDE.md says to watch
