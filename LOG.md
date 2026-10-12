@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 session: Hidde's web test, fixed and live
+
+- **Trees near me** on the map page now asks for location (the row only changed the hash before).
+- **Menu**: icons at both widths (reverses 08-18 "rows are words" on his word); My trees and Settings hidden on the phone until signed in; the pinned Sign in bar has a top edge.
+- **About** rewritten in plain sentences; the every-city lists on Suggest a tree, species, collections and parks indexes replaced by one "every city" link.
+- **Collect with a photo** works: every web photo upload went to `undefined/` and was refused (user id read from a field the session never stores). Fixed on the tree page and /contribute; qa `check_a_user_id_is_not_read_from_the_stored_session()` refuses it now.
+- **Your photographs** on the web tree page, as in the app: a row under the facts, and your photo as the hero on a tree we have none of. Snackbar "See it in My trees" is a real link, ten seconds.
+- **Delete your own photo**, web (More, sheet) and app (bin in PhotoViewer). Unpublished: file and row gone. Published: stays, per terms.
+- Open: search on every page is recommended (CONVENTIONS "Where the search field lives"), not built, waiting on his yes. The red iOS UI suite is proposed as its own session.
+
 ## 2026-10-12 - Register matching by script: 249 tree pages richer, enrichment briefs shorter
 
 Enrichment passes cost 125k to 220k tokens each, and much of that was an agent matching our trees to register rows we already hold. That half is a script now: `scripts/register_match.py`.
