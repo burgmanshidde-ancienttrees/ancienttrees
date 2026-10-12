@@ -22,6 +22,13 @@ Web half: read the header search commit (baf8726c: strings in all eight language
 - NOTE docs (Monday audit, limited to the cut CLAUDE.md and a spot read of GO_TO_MARKET.md): CLAUDE.md names Phase 1 as traction and Phase 2 as app and money, while GO_TO_MARKET.md (written 2026-07-21) uses its own Phase 1 "first pulse. A few hundred real visitors"; two phase schemes under one word. Suggest GO_TO_MARKET.md say which of its phases map to CLAUDE.md's, or drop its numbering. No other rot found in the files read; PRINCIPLES.md, PRODUCT_IA.md, BACKLOG.md and DECISIONS.md were not audited in depth.
 - NOTE copy (Monday English reading): the English strings added this week (cookie bar, "Search a city or tree", "Delete this photo?", "Photo deleted") read well and are idiomatic.
 
+## 2026-10-12 (app half)
+
+App half (city-map-full, city-map, city, collect-away, collect-compare, collect-describe): the Aachen list, its map and the ambassador row read clearly and agree with each other (1 tree, one pin, one card).
+
+- WARN APP: collect-away, collect-compare and collect-describe are three frames of the same first step, the "Add a tree" sheet with Take a photograph and Choose from your photos (over three different backdrops). Today's commit 1f67ab01 rebuilt exactly those steps (you found it, thank you, is this the one) on the new sheet layout, and the sweep still does not reach them, so the redesigned screens ship unlooked-at. A session should check the sweep's route to each step.
+- NOTE APP: `city` is the full-screen splash photograph and tagline ("Trees worth the walk, wherever you are."), not a city screen; the same capture fault was logged for profile-signed-in on 2026-10-08, so a frame named for a screen is again showing the launch image.
+
 ---
 
 ## 2026-10-10
