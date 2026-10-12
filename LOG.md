@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - Session: CLAUDE.md cut from 294 KB to 33 KB, night-run refusals addressed
+
+Hidde asked where the tokens were going. The biggest fixed cost was CLAUDE.md itself: about 73k tokens loaded into every session and every night run before any work. It now holds the working rules only (33 KB, about 8k tokens); the full text moved word for word to RULINGS.md, same headings, nothing deleted. Every script, check, flag and data file the old file named is still named, except the reversed US_ONLY, the deleted build_site.py and one file covered by a wider entry. Today's two rulings (reader input as a source, Google detail paused in the digest) are in. nightly.yml now points at "Step 0: pick the work", "Google recovery mode" and "Supply, cheapest first" instead of the old headings. New rule for this file: a ruling's rule goes here in one or two lines, its story to DECISIONS.md or RULINGS.md.
+
+Also: night runs may use pdftotext, and the prompt says to keep scratch paths inside the repo. 16% of turns were refused last week, and mkdir/wc/ls were refused although allowed; paths outside the working directory are the likeliest cause. `run_health.py --denials` next week says whether that held.
+
 ## 2026-10-12 - Night run 12:56 UTC: reader photographs judged, Delft enriched
 
 Visits last 7 days: 1,580 (2,120 page views). Rung 1: four photographs waiting. Baarn's Town Hall Plane (Hidde's own, no credit) now has a lead photograph and a trunk extra; a photo of the information sign was rejected; the Palma Lagunària photo is held because it shows a banyan-type Ficus with aerial roots, so either it is the wrong tree or our species is wrong (needs somebody on site). Then enrichment on Delft: LRMB register ids on four trees, girth and height on four, and the TU Delft Hortus access and season line. The Ash of the Oostpoort (del_011) is dead per the register (status 5, Dood/geveld), so it was retired with retire.py. A second flag, not acted on: del_001's Black Mulberry is placed by the register in a private back garden at Paardenmarkt 62 with visitability unknown, while our access line says the courtyard is public; that wants a check against hard rule 10. No new trees: the writable leads are held by the rich-or-reader rule.

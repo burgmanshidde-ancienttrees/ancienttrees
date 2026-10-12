@@ -434,8 +434,9 @@ jobs:
           allowed_bots: "github-actions[bot]"
           prompt: |
             You are running the autonomous research workflow for the Ancient Trees
-            project. Read CLAUDE.md in the repository root and execute "The research
-            workflow (autonomous run)" exactly as written.
+            project. Read CLAUDE.md in the repository root and execute "Step 0: pick
+            the work" exactly as written (RULINGS.md holds the reasoning;
+            read a section of it only when a rule's edge is unclear).
 
             Begin every run with: python3 scripts/visitors.py, then
             python3 scripts/prepare.py. The second one stocks the staging
@@ -523,8 +524,8 @@ jobs:
             nothing" is never the end of a window while that command names a
             target. On 2026-10-02 fifteen continuations in a row ended that way.
 
-            WHICH trees is CLAUDE.md's call and not this prompt's: read rule
-            one's order in "The course after the fortnight" and take the first
+            WHICH trees is CLAUDE.md's call and not this prompt's: read the
+            order in "Supply, cheapest first" and take the first
             lane that has anything in it. `city_queue.py --next` and
             prepare.py's "ready to write" line between them say which lanes are
             stocked today. Whatever the ladder picks, the pass you dispatch for
@@ -581,8 +582,8 @@ jobs:
             line onto main and the trees were lost with the runner.
 
             WHAT KIND OF WORK, and this prompt deliberately does not say. Read
-            CLAUDE.md's "The course after the fortnight" paragraph in Step 0 and
-            follow it; it is the ONLY place the course lives. Strategy lives in
+            CLAUDE.md's "Google recovery mode" and "Supply, cheapest first" and
+            follow them; they are the ONLY place the course lives. Strategy lives in
             CLAUDE.md and CITY_QUEUE.md, and this prompt carries only what is
             true of THIS RUNNER and nothing else knows.
 
