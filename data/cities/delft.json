@@ -67,7 +67,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691134",
         "url": null
-      }
+      },
+      "height_m": 6
     },
     {
       "id": "del_002",
@@ -162,9 +163,10 @@
       "story": "Every dawn redwood alive today, anywhere in the world, descends from a single discovery: a species known only from 150-million-year-old fossils, presumed extinct, until a forester found a living stand of it in a remote Chinese valley in 1944. An international seed-collecting expedition followed in 1947, and botanical gardens across Europe, including several in the Netherlands, raised their first Metasequoia glyptostroboides from that single haul. Two of them now dominate the middle section of TU Delft's Botanic Garden, tall enough to be the garden's own reference point long before a visitor reaches the rarer specimens around them. Nobody recorded the exact planting year for these two, so no source gives a precise age, only the certainty that they belong to the first generation of the species ever grown outside China since its rediscovery, making them roughly seventy to eighty years old by extension rather than by record. The garden charges standard admission and sits a short walk from Delft's main station, a working research collection rather than a park, with the redwoods' feathery, deciduous foliage turning copper in autumn before it drops, unusual for a conifer and part of what first convinced botanists this was something genuinely new.",
       "verified_sources": [
         "https://www.tudelft.nl/en/hortus-botanicus/discover-the-hortus-botanicus/a-walk-through-the-garden",
-        "https://www.dendrologie.nl/botanische-tuin-tu-delft/"
+        "https://www.dendrologie.nl/botanische-tuin-tu-delft/",
+        "https://www.tudelft.nl/en/hortus-botanicus/plan-your-visit"
       ],
-      "access": "Paid entry, standard botanic garden admission",
+      "access": "Paid entry: adults 7.50 euro, 65+ and ages 5 to 14 4 euro, under 5 free, Museum Card free. Open Tuesday to Sunday 10:00 to 17:00, 1 March to 31 October only; closed Mondays except public holidays.",
       "transport": "Delft railway station, then about a 15-minute walk, or tram/bus to TU Noord",
       "curation_status": "flagged",
       "notes": "Both sources (TU Delft's own garden guide and the Dutch Dendrological Society) independently describe these two Metasequoia as among the earliest planted in the Netherlands following the species' 1944 rediscovery and the 1947 international seed-collecting expedition, but neither gives an exact planting year for the Delft specimens specifically. No age is asserted (age_min/max left at 0) rather than guessed; the roughly 70-80 year figure implied by the story text is explicitly framed as inference from the species' introduction history, not a documented date. No qualifying photo found (Commons category for TU Delft's garden has no Metasequoia-specific image); genuine gap.",
@@ -176,7 +178,14 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You are looking for two of them rather than one tree, standing together and dominating the middle section of the garden, taller than anything you pass on the way in."
+      "how_to_recognise": "You are looking for two of them rather than one tree, standing together and dominating the middle section of the garden, taller than anything you pass on the way in.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "October, when the dawn redwoods' needles turn foxy reddish brown, before the garden closes on 31 October",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "del_006",
@@ -208,7 +217,11 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise them as three plane trees standing together well over a century old. They stand near Kalverbos's red-brick water tower and the park's remaining graves.",
       "girth_cm": 300,
-      "height_m": 20
+      "height_m": 20,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697031",
+        "url": null
+      }
     },
     {
       "id": "del_007",
@@ -361,35 +374,6 @@
       },
       "girth_cm": 515,
       "height_m": 25
-    },
-    {
-      "id": "del_011",
-      "name": "The Ash of the Oostpoort",
-      "species": "European Ash (Fraxinus excelsior)",
-      "age_estimate": "about 140 years",
-      "age_min": 136,
-      "age_max": 146,
-      "location": {
-        "address": "Oranjeplantage by the Oostpoort, Delft",
-        "latitude": 52.011065,
-        "longitude": 4.368683,
-        "neighbourhood": "Oostpoort, eastern city gate"
-      },
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/data.json",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
-      ],
-      "access": "Free. Public lawn beside the canal at the Oostpoort gate (plantsoen), listed visitable and visible in the register.",
-      "transport": "About 1 km east of Delft station, roughly 0.8 km east of the Markt along the canal; the Oostpoort is signposted as a sight.",
-      "location_precision": "approximate",
-      "location_site": {
-        "name": "Lawn at the Oostpoort quay",
-        "radius_m": 40
-      },
-      "curation_status": "flagged",
-      "verify_notes": "Writing pass 2026-10-08: findable only by the species tell. The register pin falls between two crowns on the lawn (~6 m SW, ~10 m N) and no source says which is the ash or what the other tree is, so the recognition line leans on ash leaves and buds, which settles it only if the neighbour is not also an ash. Not made fully findable: needs a photograph of the trunk or a reader report naming which crown. Story asks the reader. Kept location_precision approximate with location_site as verified.",
-      "story": "The gate is the famous one, but the ash on the lawn beside it is no medieval relic: the national register of monumental trees puts its planting between 1880 and 1890, centuries after the gate itself was built. That band makes the tree about 140 years old, give or take a decade, and it is the only date anybody has published for it.\n\nIt stands on a small municipal lawn by the canal at the Oostpoort quay, a plantsoen in the register's own word, listed as open to visit and visible from the path. The register records it as a single tree and says nothing about who planted it or why.\n\nSurviving this long as an ash is its own small achievement. Ash dieback, a fungus that reached Europe in the 1990s, has been killing ashes across the continent, the Netherlands included. The most recent aerial photograph shows the crowns on this lawn still in leaf.\n\nOne honest caveat. The register's pin falls between two trees on the lawn, one a few metres south-west and one a little further north, and nobody has yet said which of them is the ash. If you stand there, the leaves settle it: an ash carries its leaflets in opposite pairs along a single stalk. Tell us which one it is, and send a photograph if you take one.",
-      "how_to_recognise": "You can recognise it by its leaves, small leaflets in opposite pairs along one stalk, and black buds in winter. It stands on the small lawn by the canal at the Oostpoort, one of two trees the pin falls between."
     }
   ]
 }

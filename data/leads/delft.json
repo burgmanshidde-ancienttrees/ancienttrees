@@ -138,6 +138,37 @@
    "how_to_recognise": "You can recognise them as a grove of fourteen elms, one of Delft's protected monumental groups, survivors of two waves of Dutch elm disease. They stand at one corner of Kalverbos.",
    "removed": "2026-10-10",
    "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1680756 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"In 1996/97 nog gesnoeid.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "id": "del_011",
+   "name": "The Ash of the Oostpoort",
+   "species": "European Ash (Fraxinus excelsior)",
+   "age_estimate": "about 140 years",
+   "age_min": 136,
+   "age_max": 146,
+   "location": {
+    "address": "Oranjeplantage by the Oostpoort, Delft",
+    "latitude": 52.011065,
+    "longitude": 4.368683,
+    "neighbourhood": "Oostpoort, eastern city gate"
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/data.json",
+    "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+   ],
+   "access": "Free. Public lawn beside the canal at the Oostpoort gate (plantsoen), listed visitable and visible in the register.",
+   "transport": "About 1 km east of Delft station, roughly 0.8 km east of the Markt along the canal; the Oostpoort is signposted as a sight.",
+   "location_precision": "approximate",
+   "location_site": {
+    "name": "Lawn at the Oostpoort quay",
+    "radius_m": 40
+   },
+   "curation_status": "flagged",
+   "verify_notes": "Writing pass 2026-10-08: findable only by the species tell. The register pin falls between two crowns on the lawn (~6 m SW, ~10 m N) and no source says which is the ash or what the other tree is, so the recognition line leans on ash leaves and buds, which settles it only if the neighbour is not also an ash. Not made fully findable: needs a photograph of the trunk or a reader report naming which crown. Story asks the reader. Kept location_precision approximate with location_site as verified.",
+   "story": "The gate is the famous one, but the ash on the lawn beside it is no medieval relic: the national register of monumental trees puts its planting between 1880 and 1890, centuries after the gate itself was built. That band makes the tree about 140 years old, give or take a decade, and it is the only date anybody has published for it.\n\nIt stands on a small municipal lawn by the canal at the Oostpoort quay, a plantsoen in the register's own word, listed as open to visit and visible from the path. The register records it as a single tree and says nothing about who planted it or why.\n\nSurviving this long as an ash is its own small achievement. Ash dieback, a fungus that reached Europe in the 1990s, has been killing ashes across the continent, the Netherlands included. The most recent aerial photograph shows the crowns on this lawn still in leaf.\n\nOne honest caveat. The register's pin falls between two trees on the lawn, one a few metres south-west and one a little further north, and nobody has yet said which of them is the ash. If you stand there, the leaves settle it: an ash carries its leaflets in opposite pairs along a single stalk. Tell us which one it is, and send a photograph if you take one.",
+   "how_to_recognise": "You can recognise it by its leaves, small leaflets in opposite pairs along one stalk, and black buds in winter. It stands on the small lawn by the canal at the Oostpoort, one of two trees the pin falls between.",
+   "removed": "2026-10-12",
+   "removed_reason": "Register entry nr 1691008 (Gewone es, Oostpoort/Oranjeplantage) carries status 5, Dood/geveld, in the Landelijk Register Monumentale Bomen v2024."
   }
  ]
 }

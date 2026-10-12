@@ -11241,6 +11241,16 @@
    "note": "enrichment: ICNF AIP register id on 14 trees, girth/height on 12; no new trees"
   }
  ],
+ "2026-10-12": [
+  {
+   "date": "2026-10-12",
+   "target": "delft",
+   "kind": "enrich",
+   "tokens": 172014,
+   "trees": 0,
+   "note": "enrichment: LRMB ids on 4 trees, girth/height on 4, Hortus access and season; del_011 retired as dead per register"
+  }
+ ],
  "2026-10-11": [
   {
    "date": "2026-10-11",

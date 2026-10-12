@@ -187,6 +187,8 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-12, scripts/retire.py: Register entry nr 1691008 (Gewone es, Oostpoort/Oranjeplantage) carries status 5, Dood/gev
+  ["delft", "ash-of-the-oostpoort"],
   // 2026-10-11, scripts/retire.py: Landelijk Register Monumentale Bomen nr 1685697 (felled years ago, giant polypore fungus) 
   ["apeldoorn", "copper-beech-of-the-upper-garden"],
   ["apeldoorn", "copper-beech-by-the-pond"],

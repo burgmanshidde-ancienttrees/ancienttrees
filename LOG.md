@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - Night run 12:56 UTC: reader photographs judged, Delft enriched
+
+Visits last 7 days: 1,580 (2,120 page views). Rung 1: four photographs waiting. Baarn's Town Hall Plane (Hidde's own, no credit) now has a lead photograph and a trunk extra; a photo of the information sign was rejected; the Palma Lagunària photo is held because it shows a banyan-type Ficus with aerial roots, so either it is the wrong tree or our species is wrong (needs somebody on site). Then enrichment on Delft: LRMB register ids on four trees, girth and height on four, and the TU Delft Hortus access and season line. The Ash of the Oostpoort (del_011) is dead per the register (status 5, Dood/geveld), so it was retired with retire.py. A second flag, not acted on: del_001's Black Mulberry is placed by the register in a private back garden at Paardenmarkt 62 with visitability unknown, while our access line says the courtyard is public; that wants a check against hard rule 10. No new trees: the writable leads are held by the rich-or-reader rule.
+
 ## 2026-10-12 - App: a crash on the map list fixed, the sheet comes down again, and the red app gate is green
 
 **What changed in the app.** The red iOS gate (three scheduled runs in a row) was mostly tests looking for words that had changed, and under them two real faults:
