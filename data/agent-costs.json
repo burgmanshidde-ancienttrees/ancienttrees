@@ -11514,6 +11514,15 @@
    },
    {
     "date": "2026-10-12",
+    "target": "photo-queue pass 2 (33 trees: US/UK/DE/AT/FR/ES/IT)",
+    "kind": "photo",
+    "tokens": 350000,
+    "trees": 0,
+    "photos_approved": 7,
+    "note": "67 images judged, 7 approved, 1 held; estimate inflated by retries while image reads were rate-limited"
+   },
+   {
+    "date": "2026-10-12",
     "target": "venlo",
     "kind": "enrich",
     "tokens": 50000,
