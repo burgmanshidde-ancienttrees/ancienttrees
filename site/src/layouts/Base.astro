@@ -18,7 +18,6 @@ import { toEnglishPath, ui } from "../lib/i18n";
 import { isNoindexed, noindexScope, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import { icon } from "../lib/icons";
-import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 // The account menu, two rows to two places (Hidde, 2026-10-10: "ik denk dat
 // je wel een dropdown wil met my trees and settings right?"): My trees, the
 // app's tab and leaf, and Settings, the app's gear. It had two rows to one page.
@@ -178,23 +177,6 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
       either width. */}
   <nav class="bar-links">
     <a href={nav("/explore")} class="bar-map only-desktop">{t.map}</a>
-    {/* SEARCH FROM EVERY PAGE (Hidde, 2026-10-12: "build search icon for app
-        and web"). CONVENTIONS.md "Where the search field lives": a field in
-        the header on a desktop, an icon on a phone (Baymard, gov.scot); here
-        an icon at both widths that opens the homepage's own search, so the
-        bar stays one shape. Built as a nav-drop, so it closes its siblings,
-        a click outside and Escape like the menu does, and on a phone it is
-        the same full-screen sheet. Hidden where the page already shows a
-        search field (home, map). */}
-    <details class="nav-drop nav-search">
-      <summary class="bar-search-btn" aria-label={t.search} title={t.search}><Fragment set:html={icon("magnifying-glass", "bold")} /></summary>
-      <div class="nav-drop-menu nav-search-panel">
-        <div class="nav-search-top">
-          <Fragment set:html={searchForm("bar", "bar-q", "bar-search", false, t.searchPlaceholder)} />
-          <button type="button" class="sheet-x only-mobile" data-nav-close aria-label={t.close}><Fragment set:html={icon("x", "bold")} /></button>
-        </div>
-      </div>
-    </details>
     <details class="nav-drop">
       <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
       <div class="nav-drop-menu">
@@ -606,17 +588,6 @@ window.atPaintNav = function(inNow) {
 <SignInModal lang={lang} />
 <Fragment set:html={SIGNIN_JS} />
 <Fragment set:html={OVERLAY_SHEET_JS} />
-<Fragment set:html={SEARCH_WIDGET_JS} />
-<script is:inline>
-// The header's search opens with the field ready to type in.
-(function() {
-  var d = document.querySelector('header.bar details.nav-search');
-  if (!d) return;
-  d.addEventListener('toggle', function() {
-    if (d.open) { var i = d.querySelector('input'); if (i) setTimeout(function() { i.focus(); }, 30); }
-  });
-})();
-</script>
 {/* THE LONG INTRO, CLAMPED ON A PHONE (2026-10-05). The city page has done
     this since 2026-08-18 ("afkappen maar klikbaar maken"); the species, park,
     collection and country pages ran their whole intro before the first tree.
