@@ -553,10 +553,15 @@
    "reason": "A planted information sign, not a photograph of the tree itself (it does confirm Platanus hispanica, 26 m)."
   },
   "c006895e-2256-4094-bca9-6d940476cd21": {
-   "outcome": "held",
+   "outcome": "published",
    "date": "2026-10-12",
-   "tree_id": "plm_003",
-   "reason": "A fig with hanging aerial roots (Ficus, banyan type) on a seafront promenade, not a Lagunaria; our record says pyramid-shaped evergreen with pink flowers. Either the wrong tree or our species is wrong, so it waits."
+   "tree_id": "plm_006",
+   "file": "plm_006-the-fig-of-la-llotja.jpg",
+   "reason": "Published as a new tree, The Fig of La Llotja, on Hidde's 2026-10-12 ruling that good reader input goes live (an earlier night-run verdict held it as the wrong species for plm_003, which it is: it is a different tree). Species seen: Ficus, glossy oval leaves and aerial roots.",
+   "lat": 39.5680083333333,
+   "lon": 2.64448666666667,
+   "taken_at": "2026-10-11T12:30:17+00:00",
+   "pin_checked": "2026-10-12"
   }
  }
 }

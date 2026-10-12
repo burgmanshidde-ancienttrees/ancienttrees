@@ -2,11 +2,11 @@
   "city": "Palma de Mallorca",
   "country": "Spain",
   "status": "needs_curation",
-  "intro": "Palma's five singular trees range from a town square icon to a forest oddity. S'Olivera de Cort, an olive five to six centuries old, was lifted from a Pollenca estate and replanted before the Ajuntament in 1989. Nearby, two giant Moreton Bay figs, one in a cultural centre's garden and one in the municipal cemetery, rank among the largest of their kind in the Balearics, and a hibiscus tree from Norfolk Island stands on the seafront by the Gothic Llotja. Out at Castell de Bellver, an ordinary shrub has spent a century growing into an actual tree.",
-  "meta_description": "Palma's five singular trees: a 600 year old olive outside the town hall, two giant figs, and a lentisco grown tree at Castell de Bellver.",
+  "intro": "Palma's six trees range from a town square icon to a forest oddity. S'Olivera de Cort, an olive five to six centuries old, was lifted from a Pollenca estate and replanted before the Ajuntament in 1989. Two giant Moreton Bay figs, in a cultural centre's garden and the municipal cemetery, rank among the largest in the Balearics. On the seafront by the Gothic Llotja, a Norfolk Island hibiscus stands beside a fig a reader found, hung with aerial roots. Out at Castell de Bellver, an ordinary shrub has spent a century growing into a tree.",
+  "meta_description": "Palma's six old trees: a 600 year old olive outside the town hall, three figs, and a lentisco grown tree at Castell de Bellver.",
   "question_meta": "Palma's oldest tree is S'Olivera de Cort, an olive 500 to 600 years old, transplanted to the town hall square in 1989 from an estate near Pollenca.",
   "question_answer": "Palma's oldest tree is S'Olivera de Cort, an olive estimated at 500 to 600 years old. It grew for most of that time on the Pedruixella Petit estate near Pollenca before being lifted whole and replanted in Placa de Cort, directly in front of the Ajuntament, on 3 May 1989. The two giant Moreton Bay figs on this list, one at the Misericordia cultural centre and one in the municipal cemetery, are far younger by comparison at 150 to 200 years. The Misericordia fig goes in around 1827, when the old General Hospital laid out a botanical garden on the site.",
-  "question_context": "The Balearic government's Cataleg d'Arbres Singulars, which catalogues all five of these trees, records girth, height and a rough age band for each entry rather than a precise planting date, except where local history fills the gap. S'Olivera de Cort is the exception: its 1989 transplant was a well documented civic event, covered by the local press and eventually marked with a plaque, so both its arrival date in the square and its estimated age at that point, 500 to 600 years, are on record. The two figs share a similar story to each other rather than a documented date: both were planted as part of nineteenth century garden schemes, the Misericordia specimen when the old General Hospital laid out a botanical garden around 1827, the cemetery specimen at a similar period, and both are now put at 150 to 200 years old by the register. The Lagunaria at La Llotja and the lentisco at Bellver carry measurements but no age estimate at all in the source register; the lentisco's is given only as roughly a century, based on how long the species needs to reach tree size.",
+  "question_context": "The Balearic government's Cataleg d'Arbres Singulars, which catalogues five of these six trees (the fig a reader found beside La Llotja is in no register), records girth, height and a rough age band for each entry rather than a precise planting date, except where local history fills the gap. S'Olivera de Cort is the exception: its 1989 transplant was a well documented civic event, covered by the local press and eventually marked with a plaque, so both its arrival date in the square and its estimated age at that point, 500 to 600 years, are on record. The two figs share a similar story to each other rather than a documented date: both were planted as part of nineteenth century garden schemes, the Misericordia specimen when the old General Hospital laid out a botanical garden around 1827, the cemetery specimen at a similar period, and both are now put at 150 to 200 years old by the register. The Lagunaria at La Llotja and the lentisco at Bellver carry measurements but no age estimate at all in the source register; the lentisco's is given only as roughly a century, based on how long the species needs to reach tree size.",
   "faq": [
     {
       "q": "What is the oldest tree in Palma de Mallorca?",
@@ -14,7 +14,7 @@
     },
     {
       "q": "Are Palma's singular trees free to visit?",
-      "a": "Yes, all five stand on open ground: a public square, the garden of a cultural centre, a seafront promenade, a municipal cemetery open daily with no ticket, and a free forest park around Castell de Bellver (the castle interior itself is ticketed separately)."
+      "a": "Yes, all six stand on open ground: a public square, the garden of a cultural centre, a seafront promenade, a municipal cemetery open daily with no ticket, and a free forest park around Castell de Bellver (the castle interior itself is ticketed separately)."
     },
     {
       "q": "Which is the biggest tree in Palma?",
@@ -22,7 +22,7 @@
     },
     {
       "q": "Can I see them all in one walk?",
-      "a": "Three of the five, S'Olivera de Cort, the Misericordia fig and the Lagunaria at La Llotja, stand within about 700 metres of each other in the old town. The cemetery fig and the Bellver lentisco are further out and best treated as separate stops."
+      "a": "Four of the six, S'Olivera de Cort, the Misericordia fig, the Lagunaria at La Llotja and the fig beside it, stand within about 700 metres of each other in the old town. The cemetery fig and the Bellver lentisco are further out and best treated as separate stops."
     }
   ],
   "hero_tree_id": "plm_001",
@@ -224,6 +224,52 @@
       "official_register": {
         "name": "Catàleg d'Arbres Singulars de les Illes Balears (Govern de les Illes Balears), no. 642",
         "url": null
+      }
+    },
+    {
+      "id": "plm_006",
+      "name": "The Fig of La Llotja",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Passeig de Sagrera, beside La Llotja, Palma",
+        "latitude": 39.568008,
+        "longitude": 2.644487,
+        "neighbourhood": "Old town seafront, Palma"
+      },
+      "how_to_recognise": "The fig on the promenade beside La Llotja with long curtains of aerial roots hanging from its branches; the pyramid-shaped lagunària in front of the building is its neighbour, not this tree.",
+      "story": "A reader sent us this one, and it is a better find than anything on our list for this stretch of the seafront. A fig stands on the Passeig de Sagrera beside La Llotja, Palma's fifteenth century Gothic merchants' exchange, and lets down curtains of aerial roots from its branches toward the pavement, the way figs do when the air is warm and damp enough for them to try.\n\nIts neighbour in front of La Llotja is the largest lagunària in the Balearics, a protected tree with a register entry and a measured trunk. The fig has none of that. No catalogue we know of names it, so we cannot yet say which fig it is, how old it is or who planted it.\n\nIf you know, tell us: the species, a girth from a tape measure, an old photograph or a story about it. That is how this page gets longer.",
+      "verified_sources": [],
+      "found_by_reader": {
+        "sighting_id": "c006895e-2256-4094-bca9-6d940476cd21",
+        "date": "2026-10-11"
+      },
+      "verify_notes": "2026-10-12: published from a reader's app photograph (sighting c006895e, GPS fix taken at the tree) on Hidde's ruling: good reader input goes live without a written source. Searched the CAIB Cataleg d'Arbres Singulars (only the lagunaria, plm_003, at La Llotja) and Ultima Hora's 2022 piece on Palma's historic trees (no fig on the Sagrera): no written source names it. Species not established beyond Ficus from the photograph (glossy oval leaves, aerial roots); page asks readers.",
+      "access": "Free, on the open public seafront promenade, no gate or opening hours",
+      "transport": "In the old town, about a 12 minute walk from Plaça d'Espanya (Metro de Mallorca and the main EMT bus hub)",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/plm_006-the-fig-of-la-llotja.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "577cd62c-4d36-4942-a5a4-febf9cf48707",
+        "sighting_id": "c006895e-2256-4094-bca9-6d940476cd21",
+        "note": "Photographed by a reader and sent through the app (2026-10-11); a viewing pass approved it on 2026-10-12: A reader's photograph of an unmapped fig beside La Llotja; published as a new tree on Hidde's 2026-10-12 ruling (good reader input goes live). Daylight, colour, the tree fills the frame. Species seen: Ficus: large glossy oval leaves and curtains of aerial roots. Fits the description: a fig on the promenade with hanging aerial roots, La Llotja's facade at the right edge.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "c006895e-2256-4094-bca9-6d940476cd21",
+        "taken_at": "2026-10-11T12:30:17+00:00",
+        "moved_m": 0,
+        "date": "2026-10-12",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
       }
     }
   ]

@@ -954,6 +954,37 @@ def check_no_sender_names():
 
 
 
+def reader_found(tree):
+    """A tree a READER found and showed us, which is its own evidence.
+
+    Hidde, 2026-10-12, on a fig a stranger photographed beside La Llotja in
+    Palma that no catalogue names: "we're hungry for user content - the tree
+    looks cool, photograph and location is way more than most have", then "can
+    we do this as a rule from now on - if users have good input - just use it".
+    So good reader input stands in for a written source, and "good" is exactly
+    the three things that made Nara NOT pass (his own account, no photograph on
+    the page, a pin nobody stood at):
+
+      - `found_by_reader` names the sighting it came from,
+      - the tree's photograph is that contributor's (source + id), and the
+        account is not one of ours (data/our-accounts.json): our own photographs
+        stay testing, which is what Nara was,
+      - the pin is confirmed, which for a reader's tree means their GPS fix
+        moved it (sightings_publish.move_pin records pin_source).
+
+    The story still may not invent: an unknown species is "Ficus sp." and the
+    page asks. Curation stays flagged.
+    """
+    import ours
+    if not (tree.get("found_by_reader") or {}).get("sighting_id"):
+        return False
+    if tree.get("location_precision") != "confirmed":
+        return False
+    shots = [tree.get("photo") or {}] + list(tree.get("photos") or [])
+    return any(p.get("source") == "contributor" and p.get("contributor_user_id")
+               and not ours.is_ours(p.get("contributor_user_id")) for p in shots)
+
+
 def check_every_tree_names_a_source():
     """A published tree must name at least one source. The ratchet, twice earned.
 
@@ -999,6 +1030,8 @@ def check_every_tree_names_a_source():
             city = json.load(fh)
         for tree in city.get("trees", []):
             srcs = [s for s in (tree.get("verified_sources") or []) if str(s).strip()]
+            if not srcs and reader_found(tree):
+                continue
             if not srcs:
                 out.append("%s: %s (%s) is published with no verified_sources at "
                            "all. One source minimum, and set curation_status to "
