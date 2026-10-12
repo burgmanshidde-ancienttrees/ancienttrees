@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - Google Analytics on the website, behind a cookie bar
+
+Hidde chose Google Analytics over PostHog for the web ("id rather use google analytics im used to it"), property 558526877, tag G-2GNH06K02G.
+
+- **Live and looked at** on ancienttrees.app at 375px and desktop: a bar at the foot of every page in all eight languages, Decline and Accept the same size. Nothing is fetched from Google before Accept; ignoring the bar is a no. Accept loads gtag and sets `_ga` (checked); Decline from the footer's new Cookies link removes them (checked). Google signals and ad personalisation off; no account id is sent to Google.
+- The existing button events (`at.track`) also go to GA after Accept. The privacy page has a Cookies and Google Analytics section.
+- **Digest**: a GA table beside Cloudflare's (`ga_section()`, scripts/ga_report.py): people new and returning per day, pages, sources, the 28-day return share. Secrets GA_CLIENT_ID / GA_CLIENT_SECRET / GA_REFRESH_TOKEN set with Hidde's yes; minted with scripts/ga_auth.py because the Cloud organisation blocks service-account keys.
+- **Cloudflare stays two weeks beside it**, on Hidde's ruling: the digest prints the removal line from 2026-10-26 once GA has a full week. The app stays on PostHog for now.
+- Fixed in passing: browse.json always sends `seated`, which had vanished from the feed and made feedshape block every deploy.
+
 ## 2026-10-12 - Latin names in italics, on the website and in the app
 
 Asked for by the Director of the National Botanic Gardens of Ireland, reading the Dublin page: "please put the latin names in Italics." Hidde's reply says we are changing it; this is that change.
