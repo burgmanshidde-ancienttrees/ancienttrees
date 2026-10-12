@@ -14,6 +14,757 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## 2026-10-11 (previous UTC day)
+
+**Today: an account was opened yesterday (26 total); the machine produced nothing across all 4 knocks in the last 24h (0.0 real minutes total, 0 trees), not a quiet night.**
+
+**Did the product happen**
+
+| Action | Yesterday | 14 days | Ever | Last |
+|---|---:|---:|---:|---|
+| signin-open | 0 | 156 | 499 | today |
+| app-cta | 0 | 19 | 56 | today |
+| directions | 0 | 5 | 44 | 3 days ago |
+| signin-oauth | 0 | 4 | 41 | 3 days ago |
+| signin-done | 0 | 1 | 39 | 5 days ago |
+| search-home | 1 | 21 | 30 | yesterday |
+| app-open | 0 | 9 | 19 | 2 days ago |
+| suggestion-submit | 0 | 0 | 17 | 17 days ago |
+| home-country | 0 | 6 | 9 | 2 days ago |
+| home-fav | 0 | 5 | 9 | 3 days ago |
+| signin-link-sent | 0 | 0 | 6 | 17 days ago |
+| save | 0 | 1 | 5 | 10 days ago |
+| waitlist-submit | 0 | 1 | 5 | 2 days ago |
+| home-dir-tree | 0 | 0 | 3 | 19 days ago |
+| search-explore | 0 | 1 | 3 | 10 days ago |
+| visit | 0 | 0 | 3 | 22 days ago |
+| walks-app | 0 | 0 | 3 | 19 days ago |
+| app-page-badge | 0 | 2 | 2 | 3 days ago |
+| home-species | 0 | 0 | 2 | 21 days ago |
+| home-dir-species | 1 | 1 | 1 | yesterday |
+| sponsor-open | 0 | 0 | 1 | 22 days ago |
+| worthit-report | 0 | 0 | 1 | 18 days ago |
+| worthit-report detail | 0 | 0 | 1 | 18 days ago |
+| worthit-worth it | 0 | 0 | 1 | 22 days ago |
+| worthit-not worth it | 0 | 0 | 0 | never |
+| **all** | **2** | **232** | **800** | |
+- 'Ever' counts every row in the events table, which begins 2026-08-01 when the funnel was repaired. Anything named here with a zero has never fired at all.
+
+**What people typed into our search** (14 days, 18 searches, 15 different terms)
+
+| Typed | Times |
+|---|---:|
+| lisboa | 3 |
+| bruss | 2 |
+| brussel | 1 |
+| cop | 1 |
+| granada | 1 |
+| guimaraes | 1 |
+| lis | 1 |
+| lisb | 1 |
+| lisbon | 1 |
+| mu | 1 |
+| munich | 1 |
+| oslo | 1 |
+| phila | 1 |
+| portland | 1 |
+| tokyo | 1 |
+
+| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback | Ambassador asks |
+|---|---:|---:|---:|---:|---:|---:|
+| 09-28 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 09-29 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 09-30 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-01 | 3 | 0 | 0 | 0 | 3 | 0 |
+| 10-02 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 10-03 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-04 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 10-05 | 2 | 0 | 0 | 1 | 0 | 0 |
+| 10-06 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-07 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-08 | 1 | 0 | 0 | 0 | 1 | 0 |
+| 10-09 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-10 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 10-11 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 10-12 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **14 days** | **8** | **1** | **1** | **2** | **4** | **0** |
+- Our own rows are not in this table: 59 trees, 56 feedback, 3 accounts. They are testing, and counting them reads as traction.
+
+| Ambassadors | Yesterday | 14 days | Total |
+|---|---:|---:|---:|
+| Granted | 0 | 6 | 6 |
+| Invitations sent (app contributors) | 0 | 6 | 6 |
+| Open-seat requests answered | 0 | 0 | 0 |
+- New in 14 days: Copenhagen since 2026-10-02, Giulia Torta (Florence) since 2026-10-03, Hugo Veríssimo (Lisbon) since 2026-10-05, Aleš Rudl (Prague) since 2026-10-05, Daniel Daggfeldt (Stockholm) since 2026-10-05, Kerry Pickett (Brighton) since 2026-10-10.
+- Android waitlist: 21 total, newest 2 days ago
+- Submissions: 33 total (19 trees sent, 14 feedback), newest 4 days ago
+- Accounts:    26 total, newest yesterday
+
+**What readers told us** (14 days, structure only; the words stay in the database)
+
+| Day | Tree | What | Note | From | Outcome |
+|---|---|---|---|---|---|
+| 09-28 | 50BAB485-DCC6-479F-A4FA-F45756D855 | tree sent in | - | us | - |
+| 09-28 | 70E18AB5-CC32-492E-B2A4-A816E85458 | tree sent in | - | us | - |
+| 09-29 | 8BFEB681-540D-4B78-8DF5-06A95191AD | tree sent in | - | us | - |
+| 09-29 | B9A2D2DF-77BA-4240-8C90-63CA0A83B1 | tree sent in | - | us | - |
+| 09-29 | A54BCE9E-B822-4E4D-A14D-2097523C4D | tree sent in | 62 chars, read it in the database | us | - |
+| 09-29 | 0EE5B139-7042-4BCB-A109-4E8B8D0511 | tree sent in | 62 chars, read it in the database | us | - |
+| 10-01 | 74066D89-9958-4D93-BFDC-1C78ED97EE | tree sent in | - | us | - |
+| 10-01 | E36A052C-3A48-4EED-BA48-5AB48574FA | tree sent in | - | us | - |
+| 10-01 | lis_030 (The Dragon Tree of Quinta | worth it | - | 08aa | holds |
+| 10-01 | par_031 (The Horse Chestnut of Squ | worth it | - | cfe8 | holds |
+| 10-01 | par_033 (The Turkey Oak of Square  | worth it | - | cfe8 | holds |
+| 10-02 | par_031 (The Horse Chestnut of Squ | worth it | - | us | - |
+| 10-02 | lis_030 (The Dragon Tree of Quinta | worth it | - | us | - |
+| 10-02 | 59E829E3-784F-4302-A98E-2C40D1BE88 | tree sent in | - | us | - |
+| 10-04 | 6151F7E2-9211-4C2B-8CE8-E1BF17DAA3 | tree sent in | - | us | - |
+| 10-04 | 8F4E7266-CC24-46B3-9A6D-5E8A94BBA1 | tree sent in | - | cfe8 | open_question |
+| 10-05 | Reykjavik | ambassador request | - | us | - |
+| 10-05 | rey_001 (The Whitebeam of Víkurgar | worth it | - | us | - |
+| 10-05 | Barcelona | ambassador request | - | us | - |
+| 10-05 | D9C08351-03D1-4B51-A6EC-972F08D308 | tree sent in | 648 chars, read it in the database | cfe8 | - |
+| 10-06 | Tokyo | ambassador request | - | us | - |
+| 10-06 | 7C8BEC8F-B77B-415C-B4EC-A1589130C4 | tree sent in | - | us | - |
+| 10-06 | A4FA2700-1D89-4BF7-8F6E-0EAFA60DC4 | tree sent in | - | us | - |
+| 10-06 | AE06E952-7DE0-46AB-AADA-AF2BE3D5C8 | tree sent in | - | us | - |
+| 10-06 | D0D4EE1D-A0C3-4C4F-966F-EE01F7ECB5 | tree sent in | - | us | - |
+| 10-06 | 038AB20E-98E0-4335-B154-08263B4949 | tree sent in | - | us | - |
+| 10-06 | Verona | ambassador request | - | us | - |
+| 10-07 | Rome | ambassador request | - | us | - |
+| 10-08 | The Judas Tree of the Real Alcázar | correction sent in | 92 chars, read it in the database | eed7 | open_question |
+| 10-09 | Amsterdam | ambassador request | - | us | - |
+| 10-09 | Paris | ambassador request | - | us | - |
+| 10-09 | Berlin | ambassador request | - | us | - |
+| 10-10 | Baarn | ambassador request | - | us | - |
+| 10-11 | - | Test | - | us | - |
+| 10-11 | brn_008 (The Town Hall Plane) | worth it | - | us | - |
+| 10-11 | brn_008 (The Town Hall Plane) | worth it | - | us | - |
+
+- 30 of these 36 rows are ours, marked us. The rest is the reader traffic.
+- 4 of the other 6 came from one account (cfe8), which is one person rather than a pattern.
+
+**The funnel, as rates**
+- Seen to clicked: 4.1% (28 of 677) vs 2.3% the fortnight before
+- Pages per visit: 1.3 (6370 visits, 8010 pageviews since 2026-09-14)
+- Visits that did something: 12.8% (818 actions on 6370 visits)
+
+**What people did in the app**
+
+| What | Yesterday | 14 days | Ever | Last |
+|---|---:|---:|---:|---|
+| app_open | 3 | 78 | 291 | today |
+| tab | 0 | 47 | 312 | today |
+| tree_opened | 6 | 271 | 1228 | today |
+| directions | 0 | 7 | 45 | 3 days ago |
+| tree_saved | 0 | 3 | 19 | 11 days ago |
+| tree_visited | 1 | 13 | 27 | yesterday |
+| sighting_recorded | 1 | 22 | 73 | yesterday |
+| sync_skipped | 0 | 0 | 0 | never |
+| sync_failed | 0 | 0 | 0 | never |
+| **all** | **11** | **441** | **1995** | |
+- Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
+- Ours is not in this table: 22 install(s), 854 events, the testing before the app went live on 2026-09-03 and every install built by Xcode since (the app says how it was built with each event). An App Store copy on our own phone is the one kind this cannot see.
+- 81 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
+- Yesterday came from 2 installs, and the busiest made 10 of 2 events (500%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
+- Tabs opened (14d): Discover 20; My trees 17; Map 10
+- Active phones: 2 in the last day, 22 in the last 7 days, 60 in the last 30 days.
+- Coming back: 24 of those 60 phones opened the app on more than one day (40%).
+- Trees opened by the most phones (14d): The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Cedro de Runa (Runa) 2; The Olive Trees of Santo Amaro (Lisbon) 2; The Arenbergpark Plane (Leuven) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2
+- Where the phones are (30d): United States 14; United Kingdom 8; The Netherlands 5; Portugal 5; Italy 4; Switzerland 3
+- Trees recorded (14d): a tree we map 18; a tree we do not 4
+  A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
+
+**Trees collected in the app** (14 days, a person standing at the tree)
+
+| Day | Tree | Where | Install | Build | Signed in |
+|---|---|---|---|---|---|
+| 10-11 | The Lagunària de la Llotja | Palma de Mallorca | A98A | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-05 | The Finer Holm Oak of Edinburgh Gardens | Melbourne | 2D66 | ? | ? |
+| 10-05 | The Southern Mahogany of Edinburgh Gardens | Melbourne | 2D66 | ? | ? |
+| 10-03 | The Larch of Hólavallagarður | Reykjavik | 5781 | ? | ? |
+| 10-03 | The City Hall Maple | Reykjavik | 5781 | ? | ? |
+| 10-03 | The Whitebeam of Víkurgarður | Reykjavik | 5781 | ? | ? |
+| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
+| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
+| 10-01 | The Horse Chestnut of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
+| 10-01 | The Dragon Tree of Quinta Conde dos Arcos | Lisbon | B792 | ? | ? |
+
+**The app as a builder reads it** (this week against the week before; the weakest row is the work)
+
+| Link | This week | Week before |
+|---|---|---|
+| New phones | 13 | 9 |
+| First day: opened a tree | 8 of 13 (62%) | 7 of 9 (78%) |
+| First day: opened a tree near them | - | - |
+| First day: allowed location | - | - |
+| First day: Take me there | 1 of 13 (8%) | 3 of 9 (33%) |
+| First day: collected a tree | 2 of 13 (15%) | 3 of 9 (33%) |
+| Back within a week | 5 of 9 (56%) | 8 of 12 (67%) |
+| Trees collected (all phones) | 4 | 13 |
+- Near and location count only phones on a version that sends them (from 2026-10-10); a dash means none yet.
+- Back within a week looks at the phones that arrived a week earlier, so each has had its seven days.
+
+**App Store downloads** (Apple's own count, not PostHog)
+
+| Day | Downloads |
+|---|---:|
+| 2026-09-27 | 2 |
+| 2026-09-30 | 1 |
+| 2026-10-01 | 2 |
+| 2026-10-02 | 1 |
+| 2026-10-03 | 1 |
+| 2026-10-05 | 1 |
+| 2026-10-08 | 4 |
+| 2026-10-09 | 4 |
+| 2026-10-10 | 5 |
+| **9 days** | **21** |
+- First-time downloads only, which is what App Store Connect's Trends screen counts; redownloads and updates are not in this table.
+
+**Where the downloads came from** (14 days, Apple's attribution)
+
+| Came from | Via | Downloads |
+|---|---|---:|
+| App Store search | - | 10 |
+| Web referrer | - | 6 |
+| App referrer | - | 4 |
+| App Store browse | - | 1 |
+| **window** | | **21** |
+- Countries: US (7); GB (5); BE (1); ES (1); FR (1); IE (1)
+- Apple's own source split, first-time downloads only. "Web referrer" with our own domain is the site's app page; "App Store search" is somebody who typed into the store. "Unavailable" is Apple's word for a source it could not attribute.
+
+**Where demand is going to waste**
+
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). The newest row is also still FILLING: Google backfills for days and backfills impressions harder than clicks, so it reads as an unusually good day and is not one (08-22 arrived as 12/769 and settled at 17/1030). Position is an average across every query, so it dips whenever we start ranking for something new:
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 10-02 | 2 | 63 | 3.2% | 39.1 |
+| 10-03 | 2 | 72 | 2.8% | 32.0 |
+| 10-04 | 1 | 50 | 2.0% | 28.8 |
+| 10-05 | 4 | 47 | 8.5% | 39.0 |
+| 10-06 | 1 | 45 | 2.2% | 34.5 |
+| 10-07 | 0 | 47 | 0.0% | 34.7 |
+| 10-08 | 5 | 35 | 14.3% | 21.8 |
+| 10-09 | 3 | 37 | 8.1% | 49.5 |
+| 10-10 | 0 | 35 | 0.0% | 29.8 |
+| 10-11 *partial* | 1 | 31 | 3.2% | 32.4 |
+| **window** | **19** | **462** | **4.1%** | |
+- Top queries (10d): pokaz na mapie (i1, p1); alte bäume (i4, p27); ancient douglas fir tree (i1, p48); ancient tree (i1, p65); angelystor (i1, p1)
+- Top pages (10d): / (c5/i13); /brussels/oldest-tree (c3/i4); /assisi (c1/i1); /brisbane/white-rabbit-tree-of-newstead-park (c1/i1); /cagliari/ficus-of-piazza-matteotti (c1/i1)
+- Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
+    - 'alte bäume' (i4, p27)
+    - 'big sherman tree' (i2, p69)
+    - 'pokaz na mapie' (i1, p1)
+    - 'angelystor' (i1, p1)
+    - 'araucaria norfolk' (i1, p88)
+    - 'arbol de las pagodas' (i1, p33)
+    - 'arbol mas antiguo de españa' (i1, p99)
+    - 'avenue de laune' (i1, p24)
+    - and 2 more
+**What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)
+
+| Day | Impressions | Clicks | CTR | Pages crawled | Pages in index |
+|---|---:|---:|---:|---:|---:|
+| 10-04 | 40 | 2 | 5.0% | 88 | 2106 |
+| 10-05 | 79 | 5 | 6.3% | 207 | 2106 |
+| 10-06 | 65 | 2 | 3.1% | 192 | 2157 |
+| 10-07 | 81 | 2 | 2.5% | - | - |
+| 10-08 | 168 | 4 | 2.4% | - | - |
+| 10-09 | 47 | 2 | 4.3% | - | - |
+| 10-10 | 57 | 1 | 1.8% | - | - |
+| **7 days** | **537** | **18** | **3.4%** | **487** | **2157** |
+- Week before: 47 impressions, 4 clicks; in index then: 2041. No Bing demotion in sight.
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); remarkable trees copenhagen (c1/i2, p4); french trees found in paris (c1/i2, p6); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); husalle lindens copenhagen (c1/i2, p3); ancient trees in wiesbaden germany (c1/i2, p6); oldest live oak trees in new orleans (c1/i2, p6)
+- Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
+
+**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
+
+What Google does, last 10 days:
+
+| Measure | Now |
+|---|---:|
+| Impressions | 780 |
+| Clicks | 19 |
+| Pages that got at least one impression | 271 |
+| Impressions on the proven cities | 670 |
+
+What we did (context, proves nothing by itself): 2892 trees Google may index, 796 kept out for lacking a photo and an exact pin, 4638 pages on the noindex list.
+
+**Is enriching working** (indexed tree pages, last 10 days of Google; rich = register record, a measurement and concrete access)
+
+| Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |
+|---|---:|---:|---:|---:|---:|
+| Rich | 431 | 23 | 218 | 0.51 | 3 |
+| Not yet rich | 561 | 28 | 57 | 0.10 | 0 |
+| Returned to Google's index in the last 7 days | 0 | 0 | 0 | 0.00 | 0 |
+
+- Google lags 2 to 3 days, so a page returned this week has had a few days at most. Compare the per-page numbers across weeks, not the totals across rows.
+
+**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
+
+| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
+|---|---:|---:|---:|---:|---:|---|
+| prague | 0 | 325 | 0.0% | 5.6 | 5.8% | prague (i15, p1) |
+| sequoia-national-park | 0 | 22 | 0.0% | 74.3 | 0.4% | general sherman tree california (i5, p74) |
+| olympic-national-park | 0 | 14 | 0.0% | 16.6 | 1.1% | duncan cedar (i11, p6) |
+| brussels | 3 | 13 | 23.1% | 10.8 | 2.2% | klint white mulberry (i2, p52) |
+| cambridge | 0 | 10 | 0.0% | 53.8 | 0.4% | newton's apple tree (i4, p42) |
+| singapore | 4 | 359 | - | - | - | frozen 09-27 roster |
+| lisbon | 5 | 316 | - | - | - | frozen 09-27 roster |
+| amsterdam | 7 | 284 | - | - | - | frozen 09-27 roster |
+| barcelona | 3 | 284 | - | - | - | frozen 09-27 roster |
+| seville | 7 | 259 | - | - | - | frozen 09-27 roster |
+| bath | 9 | 255 | - | - | - | frozen 09-27 roster |
+| tenerife | 3 | 241 | - | - | - | frozen 09-27 roster |
+| berlin | 5 | 224 | - | - | - | frozen 09-27 roster |
+| rome | 3 | 221 | - | - | - | frozen 09-27 roster |
+| palermo | 2 | 216 | - | - | - | frozen 09-27 roster |
+| oahu | 1 | 213 | - | - | - | frozen 09-27 roster |
+| tokyo | 5 | 209 | - | - | - | frozen 09-27 roster |
+| munich | 8 | 206 | - | - | - | frozen 09-27 roster |
+| new-york | 3 | 188 | - | - | - | frozen 09-27 roster |
+| edinburgh | 8 | 173 | - | - | - | frozen 09-27 roster |
+| dublin | 6 | 168 | - | - | - | frozen 09-27 roster |
+| brisbane | 6 | 163 | - | - | - | frozen 09-27 roster |
+| paris | 2 | 163 | - | - | - | frozen 09-27 roster |
+| malaga | 7 | 161 | - | - | - | frozen 09-27 roster |
+| vienna | 4 | 161 | - | - | - | frozen 09-27 roster |
+| south-korea | 0 | 152 | - | - | - | frozen 09-27 roster |
+| london | 3 | 147 | - | - | - | frozen 09-27 roster |
+| alicante | 1 | 146 | - | - | - | frozen 09-27 roster |
+| athens | 4 | 130 | - | - | - | frozen 09-27 roster |
+| cadiz | 5 | 125 | - | - | - | frozen 09-27 roster |
+| pamplona | 1 | 125 | - | - | - | frozen 09-27 roster |
+| porto | 1 | 124 | - | - | - | frozen 09-27 roster |
+| cagliari | 3 | 116 | - | - | - | frozen 09-27 roster |
+| glasgow | 2 | 110 | - | - | - | frozen 09-27 roster |
+| ede | 0 | 100 | - | - | - | frozen 09-27 roster |
+| hinode | 0 | 98 | - | - | - | frozen 09-27 roster |
+| palma-de-mallorca | 2 | 95 | - | - | - | frozen 09-27 roster |
+| los-angeles | 1 | 94 | - | - | - | frozen 09-27 roster |
+| madrid | 0 | 93 | - | - | - | frozen 09-27 roster |
+| arnhem | 1 | 92 | - | - | - | frozen 09-27 roster |
+| milan | 1 | 92 | - | - | - | frozen 09-27 roster |
+| krakow | 3 | 91 | - | - | - | frozen 09-27 roster |
+| austin | 0 | 91 | - | - | - | frozen 09-27 roster |
+| montreal | 9 | 90 | - | - | - | frozen 09-27 roster |
+| houston | 4 | 90 | - | - | - | frozen 09-27 roster |
+| sintra | 0 | 87 | - | - | - | frozen 09-27 roster |
+| florence | 0 | 86 | - | - | - | frozen 09-27 roster |
+| the-hague | 1 | 84 | - | - | - | frozen 09-27 roster |
+| amerongen | 0 | 84 | - | - | - | frozen 09-27 roster |
+| new-orleans | 1 | 83 | - | - | - | frozen 09-27 roster |
+| switzerland | 0 | 83 | - | - | - | frozen 09-27 roster |
+| reykjavik | 0 | 80 | - | - | - | frozen 09-27 roster |
+| liverpool | 1 | 78 | - | - | - | frozen 09-27 roster |
+| valencia | 3 | 77 | - | - | - | frozen 09-27 roster |
+| guerneville | 0 | 76 | - | - | - | frozen 09-27 roster |
+| copenhagen | 5 | 75 | - | - | - | frozen 09-27 roster |
+| chicago | 2 | 72 | - | - | - | frozen 09-27 roster |
+| nara | 2 | 72 | - | - | - | frozen 09-27 roster |
+| warsaw | 1 | 72 | - | - | - | frozen 09-27 roster |
+| istanbul | 4 | 70 | - | - | - | frozen 09-27 roster |
+| rogalin | 1 | 70 | - | - | - | frozen 09-27 roster |
+| cyprus | 2 | 69 | - | - | - | frozen 09-27 roster |
+| nijmegen | 0 | 69 | - | - | - | frozen 09-27 roster |
+| cork | 3 | 68 | - | - | - | frozen 09-27 roster |
+| dallas | 1 | 68 | - | - | - | frozen 09-27 roster |
+| venice | 1 | 68 | - | - | - | frozen 09-27 roster |
+| hobart | 3 | 66 | - | - | - | frozen 09-27 roster |
+| takeo | 0 | 65 | - | - | - | frozen 09-27 roster |
+| fukuoka | 2 | 64 | - | - | - | frozen 09-27 roster |
+| monterey | 2 | 64 | - | - | - | frozen 09-27 roster |
+| netherlands | 2 | 63 | - | - | - | frozen 09-27 roster |
+| ottawa | 2 | 63 | - | - | - | frozen 09-27 roster |
+| portland | 2 | 63 | - | - | - | frozen 09-27 roster |
+| sydney | 0 | 63 | - | - | - | frozen 09-27 roster |
+| kanazawa | 2 | 60 | - | - | - | frozen 09-27 roster |
+| sardinia | 0 | 60 | - | - | - | frozen 09-27 roster |
+| greece | 2 | 58 | - | - | - | frozen 09-27 roster |
+| vilnius | 0 | 57 | - | - | - | frozen 09-27 roster |
+| coimbra | 1 | 56 | - | - | - | frozen 09-27 roster |
+| borrowdale | 0 | 56 | - | - | - | frozen 09-27 roster |
+| fulufjallet | 2 | 55 | - | - | - | frozen 09-27 roster |
+| beijing | 1 | 55 | - | - | - | frozen 09-27 roster |
+| madeira | 1 | 55 | - | - | - | frozen 09-27 roster |
+| boston | 0 | 55 | - | - | - | frozen 09-27 roster |
+| san-francisco | 0 | 55 | - | - | - | frozen 09-27 roster |
+| seoul | 1 | 54 | - | - | - | frozen 09-27 roster |
+| utrecht | 3 | 54 | - | - | - | frozen 09-27 roster |
+| osaka | 1 | 53 | - | - | - | frozen 09-27 roster |
+| crete | 4 | 52 | - | - | - | frozen 09-27 roster |
+| hong-kong | 1 | 52 | - | - | - | frozen 09-27 roster |
+| budapest | 1 | 51 | - | - | - | frozen 09-27 roster |
+| kyoto | 1 | 51 | - | - | - | frozen 09-27 roster |
+| leipzig | 1 | 51 | - | - | - | frozen 09-27 roster |
+| granada | 2 | 50 | - | - | - | frozen 09-27 roster |
+| logan-ohio | 1 | 50 | - | - | - | frozen 09-27 roster |
+| seattle | 1 | 49 | - | - | - | frozen 09-27 roster |
+| geneva | 3 | 48 | - | - | - | frozen 09-27 roster |
+| ibiza | 2 | 47 | - | - | - | frozen 09-27 roster |
+| melbourne | 3 | 47 | - | - | - | frozen 09-27 roster |
+| toronto | 0 | 47 | - | - | - | frozen 09-27 roster |
+| leuven | 7 | 46 | - | - | - | frozen 09-27 roster |
+| haarlem | 1 | 46 | - | - | - | frozen 09-27 roster |
+| stockholm | 2 | 45 | - | - | - | frozen 09-27 roster |
+| zurich | 5 | 45 | - | - | - | frozen 09-27 roster |
+| leeuwarden | 0 | 45 | - | - | - | frozen 09-27 roster |
+| germany | 1 | 44 | - | - | - | frozen 09-27 roster |
+| dubrovnik | 0 | 44 | - | - | - | frozen 09-27 roster |
+| sweden | 0 | 44 | - | - | - | frozen 09-27 roster |
+| naples | 1 | 43 | - | - | - | frozen 09-27 roster |
+| washington-dc | 0 | 43 | - | - | - | frozen 09-27 roster |
+| nice | 1 | 42 | - | - | - | frozen 09-27 roster |
+| palo-alto | 0 | 42 | - | - | - | frozen 09-27 roster |
+| strasbourg | 1 | 41 | - | - | - | frozen 09-27 roster |
+| las-vegas | 0 | 41 | - | - | - | frozen 09-27 roster |
+| amersfoort | 2 | 40 | - | - | - | frozen 09-27 roster |
+| runnymede | 0 | 40 | - | - | - | frozen 09-27 roster |
+| vancouver | 1 | 39 | - | - | - | frozen 09-27 roster |
+| philadelphia | 0 | 38 | - | - | - | frozen 09-27 roster |
+| kagoshima | 1 | 37 | - | - | - | frozen 09-27 roster |
+| perth | 0 | 37 | - | - | - | frozen 09-27 roster |
+| verona | 5 | 36 | - | - | - | frozen 09-27 roster |
+| eindhoven | 3 | 36 | - | - | - | frozen 09-27 roster |
+| mexico-city | 1 | 36 | - | - | - | frozen 09-27 roster |
+| segovia | 1 | 36 | - | - | - | frozen 09-27 roster |
+| sorrento | 0 | 35 | - | - | - | frozen 09-27 roster |
+| tallinn | 3 | 34 | - | - | - | frozen 09-27 roster |
+| helsinki | 1 | 34 | - | - | - | frozen 09-27 roster |
+| oslo | 1 | 34 | - | - | - | frozen 09-27 roster |
+| bristol | 0 | 33 | - | - | - | frozen 09-27 roster |
+| glastonbury | 0 | 33 | - | - | - | frozen 09-27 roster |
+| quebec-city | 1 | 32 | - | - | - | frozen 09-27 roster |
+| girona | 0 | 32 | - | - | - | frozen 09-27 roster |
+| bari | 1 | 31 | - | - | - | frozen 09-27 roster |
+| leiden | 2 | 31 | - | - | - | frozen 09-27 roster |
+| tricase | 1 | 31 | - | - | - | frozen 09-27 roster |
+| bucaco | 0 | 31 | - | - | - | frozen 09-27 roster |
+| craigends | 0 | 31 | - | - | - | frozen 09-27 roster |
+| pittsburgh | 0 | 31 | - | - | - | frozen 09-27 roster |
+| boise | 4 | 30 | - | - | - | frozen 09-27 roster |
+| luxembourg-city | 0 | 30 | - | - | - | frozen 09-27 roster |
+| spokane | 1 | 29 | - | - | - | frozen 09-27 roster |
+| manchester | 1 | 28 | - | - | - | frozen 09-27 roster |
+| taipei | 1 | 28 | - | - | - | frozen 09-27 roster |
+| maastricht | 0 | 28 | - | - | - | frozen 09-27 roster |
+| sapporo | 0 | 28 | - | - | - | frozen 09-27 roster |
+| bangkok | 2 | 26 | - | - | - | frozen 09-27 roster |
+| parma | 0 | 26 | - | - | - | frozen 09-27 roster |
+| cologne | 0 | 25 | - | - | - | frozen 09-27 roster |
+| laren-gelderland | 0 | 25 | - | - | - | frozen 09-27 roster |
+| ljubljana | 0 | 25 | - | - | - | frozen 09-27 roster |
+| groningen | 1 | 24 | - | - | - | frozen 09-27 roster |
+| slovakia | 1 | 24 | - | - | - | frozen 09-27 roster |
+| dordrecht | 2 | 23 | - | - | - | frozen 09-27 roster |
+| lyon | 1 | 23 | - | - | - | frozen 09-27 roster |
+| charleston | 0 | 23 | - | - | - | frozen 09-27 roster |
+| frankfurt | 0 | 23 | - | - | - | frozen 09-27 roster |
+| jaegerspris-nordskov | 0 | 23 | - | - | - | frozen 09-27 roster |
+| naha | 0 | 23 | - | - | - | frozen 09-27 roster |
+| schenklengsfeld | 2 | 22 | - | - | - | frozen 09-27 roster |
+| cordoba | 2 | 22 | - | - | - | frozen 09-27 roster |
+| otoyo | 1 | 22 | - | - | - | frozen 09-27 roster |
+| bilu | 0 | 22 | - | - | - | frozen 09-27 roster |
+| cardiff | 0 | 22 | - | - | - | frozen 09-27 roster |
+| enschede | 0 | 22 | - | - | - | frozen 09-27 roster |
+| higashi-hiroshima | 0 | 22 | - | - | - | frozen 09-27 roster |
+| limmersdorf | 0 | 22 | - | - | - | frozen 09-27 roster |
+| minneapolis | 0 | 22 | - | - | - | frozen 09-27 roster |
+| savannah | 0 | 22 | - | - | - | frozen 09-27 roster |
+| yabu | 0 | 22 | - | - | - | frozen 09-27 roster |
+| bologna | 1 | 21 | - | - | - | frozen 09-27 roster |
+| guimaraes | 3 | 21 | - | - | - | frozen 09-27 roster |
+| caserta | 0 | 21 | - | - | - | frozen 09-27 roster |
+| heidelberg | 0 | 21 | - | - | - | frozen 09-27 roster |
+| tilburg | 0 | 21 | - | - | - | frozen 09-27 roster |
+| zwolle | 0 | 21 | - | - | - | frozen 09-27 roster |
+| catania | 1 | 20 | - | - | - | frozen 09-27 roster |
+| belgrade | 0 | 20 | - | - | - | frozen 09-27 roster |
+| chadds-ford | 0 | 20 | - | - | - | frozen 09-27 roster |
+| menorca | 0 | 20 | - | - | - | frozen 09-27 roster |
+| miyazaki | 0 | 20 | - | - | - | frozen 09-27 roster |
+| sources | 1 | 19 | - | - | - | frozen 09-27 roster |
+| bordeaux | 0 | 19 | - | - | - | frozen 09-27 roster |
+| hawaii | 0 | 19 | - | - | - | frozen 09-27 roster |
+| yakushima | 0 | 19 | - | - | - | frozen 09-27 roster |
+| wessobrunn | 2 | 18 | - | - | - | frozen 09-27 roster |
+| genoa | 2 | 18 | - | - | - | frozen 09-27 roster |
+| nuremberg | 1 | 18 | - | - | - | frozen 09-27 roster |
+| gojaus-miskas | 0 | 18 | - | - | - | frozen 09-27 roster |
+| llangernyw | 0 | 18 | - | - | - | frozen 09-27 roster |
+| oxford | 0 | 18 | - | - | - | frozen 09-27 roster |
+| taiwan | 0 | 18 | - | - | - | frozen 09-27 roster |
+| toulouse | 2 | 17 | - | - | - | frozen 09-27 roster |
+| aarhus | 1 | 17 | - | - | - | frozen 09-27 roster |
+| freiburg | 1 | 17 | - | - | - | frozen 09-27 roster |
+| padua | 1 | 17 | - | - | - | frozen 09-27 roster |
+| bergamo | 0 | 17 | - | - | - | frozen 09-27 roster |
+| salzburg | 0 | 17 | - | - | - | frozen 09-27 roster |
+| ghent | 1 | 16 | - | - | - | frozen 09-27 roster |
+| hallstatt | 1 | 16 | - | - | - | frozen 09-27 roster |
+| perouges | 1 | 16 | - | - | - | frozen 09-27 roster |
+| biei | 0 | 16 | - | - | - | frozen 09-27 roster |
+| macugnaga | 0 | 16 | - | - | - | frozen 09-27 roster |
+| salamanca | 0 | 16 | - | - | - | frozen 09-27 roster |
+| york | 0 | 16 | - | - | - | frozen 09-27 roster |
+| nagoya | 1 | 15 | - | - | - | frozen 09-27 roster |
+| timber-creek | 0 | 15 | - | - | - | frozen 09-27 roster |
+| tolpuddle | 0 | 15 | - | - | - | frozen 09-27 roster |
+| gornja-stubica | 1 | 14 | - | - | - | frozen 09-27 roster |
+| stuttgart | 2 | 14 | - | - | - | frozen 09-27 roster |
+| bratislava | 0 | 14 | - | - | - | frozen 09-27 roster |
+| heinkenszand | 0 | 14 | - | - | - | frozen 09-27 roster |
+| helmond | 0 | 14 | - | - | - | frozen 09-27 roster |
+| oss | 0 | 14 | - | - | - | frozen 09-27 roster |
+| otama | 0 | 14 | - | - | - | frozen 09-27 roster |
+| rio-de-janeiro | 0 | 14 | - | - | - | frozen 09-27 roster |
+| sulechow | 0 | 14 | - | - | - | frozen 09-27 roster |
+| gdansk | 2 | 13 | - | - | - | frozen 09-27 roster |
+| alkmaar | 0 | 13 | - | - | - | frozen 09-27 roster |
+| den-bosch | 0 | 13 | - | - | - | frozen 09-27 roster |
+| derby | 0 | 13 | - | - | - | frozen 09-27 roster |
+| graz | 0 | 13 | - | - | - | frozen 09-27 roster |
+| hoorn | 0 | 13 | - | - | - | frozen 09-27 roster |
+| lausanne | 0 | 13 | - | - | - | frozen 09-27 roster |
+| lucca | 0 | 13 | - | - | - | frozen 09-27 roster |
+| nantes | 0 | 13 | - | - | - | frozen 09-27 roster |
+| simsbury | 0 | 13 | - | - | - | frozen 09-27 roster |
+| bilbao | 2 | 12 | - | - | - | frozen 09-27 roster |
+| ronda | 1 | 12 | - | - | - | frozen 09-27 roster |
+| belfast | 0 | 12 | - | - | - | frozen 09-27 roster |
+| buenos-aires | 0 | 12 | - | - | - | frozen 09-27 roster |
+| como | 0 | 12 | - | - | - | frozen 09-27 roster |
+| deventer | 0 | 12 | - | - | - | frozen 09-27 roster |
+| ekero | 0 | 12 | - | - | - | frozen 09-27 roster |
+| hamburg | 0 | 12 | - | - | - | frozen 09-27 roster |
+| tarragona | 1 | 11 | - | - | - | frozen 09-27 roster |
+| trieste | 1 | 11 | - | - | - | frozen 09-27 roster |
+| apeldoorn | 0 | 11 | - | - | - | frozen 09-27 roster |
+| brno | 0 | 11 | - | - | - | frozen 09-27 roster |
+| bruges | 0 | 11 | - | - | - | frozen 09-27 roster |
+| canada | 0 | 11 | - | - | - | frozen 09-27 roster |
+| delft | 0 | 11 | - | - | - | frozen 09-27 roster |
+| dresden | 0 | 11 | - | - | - | frozen 09-27 roster |
+| gottingen | 0 | 11 | - | - | - | frozen 09-27 roster |
+| perugia | 0 | 11 | - | - | - | frozen 09-27 roster |
+| riga | 0 | 11 | - | - | - | frozen 09-27 roster |
+| senonches | 0 | 11 | - | - | - | frozen 09-27 roster |
+| venon | 0 | 11 | - | - | - | frozen 09-27 roster |
+| kauai | 1 | 10 | - | - | - | frozen 09-27 roster |
+| regensburg | 1 | 10 | - | - | - | frozen 09-27 roster |
+| tulsa | 1 | 10 | - | - | - | frozen 09-27 roster |
+| assen | 0 | 10 | - | - | - | frozen 09-27 roster |
+| cremines | 0 | 10 | - | - | - | frozen 09-27 roster |
+| emmen | 0 | 10 | - | - | - | frozen 09-27 roster |
+| matera | 0 | 10 | - | - | - | frozen 09-27 roster |
+| nagano | 0 | 10 | - | - | - | frozen 09-27 roster |
+| oklahoma-city | 0 | 10 | - | - | - | frozen 09-27 roster |
+| ueda | 0 | 10 | - | - | - | frozen 09-27 roster |
+| venlo | 0 | 10 | - | - | - | frozen 09-27 roster |
+| viroflay | 0 | 10 | - | - | - | frozen 09-27 roster |
+
+**What converts, and what does not** (scripts/seolearn.py)
+
+```
+SEO learning pass: 1 pages over 40 impressions, 1 of them clean
+Index 1.00 means a page converts exactly as its position normally does.
+
+SHARE OF TREES CARRYING A PHOTOGRAPH
+   40% and over           n1   i325   c0    ctr  0.0%  index 0.00
+
+SHARE WITH A CONFIRMED PIN
+   40% and over           n1   i325   c0    ctr  0.0%  index 0.00
+
+SHARE WITH A RECOGNITION LINE
+   40% and over           n1   i325   c0    ctr  0.0%  index 0.00
+
+SHARE WITH A RECORDED AGE
+   40% and over           n1   i325   c0    ctr  0.0%  index 0.00
+
+SHARE WITH A SEASONAL PEAK
+   40% and over           n1   i325   c0    ctr  0.0%  index 0.00
+
+TREES ON THE PAGE
+   over 25                n1   i325   c0    ctr  0.0%  index 0.00
+
+AVERAGE STORY LENGTH
+   170 and over           n1   i325   c0    ctr  0.0%  index 0.00
+
+EARNED AND WASTED, worst first (real queries, converting under half)
+These have the demand already. Fixing one is worth more than a new page.
+   prague           i325   c0   p5.6   index 0.00  loses ~19 clicks/10d  -
+```
+
+**Copy test**
+
+```
+Copy test: city-title-age-first (day 32 of 56, review 2026-11-05)
+The age is the hook and the count is inventory, so naming the oldest tree before the number earns more clicks.
+
+  control      n1    before 1.38  now 0.00  change -1.38
+
+  TOO EARLY. At about 2 clicks per page per ten days this needs the full window; a lead now is noise wearing a result's clothes.
+```
+
+**What was sent in, and what we decided**
+
+| seen | what | where | size for its species | ours | Hidde |
+|---|---|---|---|---|---|
+| before 2026-09-23 | The Twisted Muku of Omiya Gate, Kyoto  | Kyoto | - | publish | - |
+| 2026-10-12 | The Lagunària de la Llotja | Palma de Mallorca | - | open | - |
+| 2026-10-06 | A tree in Tokyo | - | - | open | - |
+| 2026-10-06 | A tree in Tokyo | - | - | open | - |
+| 2026-10-06 | Ginkgo in Tokyo | - | - | open | - |
+| 2026-10-06 | A tree in Tokyo | - | - | open | - |
+| 2026-10-06 | A tree in Tokyo | - | - | open | - |
+| 2026-10-05 | The Southern Mahogany of Edinburgh Gar | Melbourne | - | publish | - |
+| 2026-10-05 | The Finer Holm Oak of Edinburgh Garden | Melbourne | - | hold | - |
+| 2026-10-05 | London Plane in Paris | - | 88% girth | open | - |
+| 2026-10-04 | Ginkgo in Tokyo | - | - | lead | - |
+| 2026-10-04 | Pedunculate Oak | - | 112% girth | lead | - |
+| 2026-10-03 | The Whitebeam of Víkurgarður | Reykjavik | - | publish | - |
+| 2026-10-03 | The Larch of Hólavallagarður | Reykjavik | - | publish | - |
+| 2026-10-03 | The City Hall Maple | Reykjavik | - | publish | zet de andere foto's van onze Reykjavik gebruiker ook maar online, ik vertrouw hem meer dan jou; ook zijn semi slechte foto's zijn beter dan geen |
+
+7 waiting for a verdict. Disagree with one and the rule changes: `python3 scripts/judgement.py --feedback <id> "..."`, and `--learn` prints every verdict he has overruled.
+
+**The language test** (Contract J v1.13: a translated set should pass its English twin's impressions within four weeks of indexing):
+
+| Lang | City | Clicks | Impressions | Position | English twin |
+|---|---|---:|---:|---:|---:|
+| es | tenerife | 0 | 17 | 44.6 | 8 |
+| es | barcelona | 0 | 13 | 31.0 | 3 |
+| ja | fukuoka | 0 | 10 | 28.0 | 1 |
+| de | vienna | 0 | 9 | 25.6 | 1 |
+| de | graz | 0 | 7 | 45.1 | 0 |
+| fr | lyon | 0 | 7 | 68.9 | 1 |
+| es | madrid | 0 | 6 | 53.8 | 1 |
+| it | rome | 1 | 5 | 26.2 | 1 |
+| de | hamburg | 0 | 5 | 25.0 | 0 |
+| es | cadiz | 0 | 5 | 45.6 | 0 |
+| pt | rio-de-janeiro | 0 | 5 | 10.2 | 0 |
+| fr | paris | 0 | 4 | 19.8 | 4 |
+| nl | amsterdam | 0 | 3 | 51.3 | 2 |
+| nl | arnhem | 0 | 3 | 83.3 | 1 |
+| de | berlin | 1 | 2 | 1.0 | 2 |
+| es | seville | 1 | 2 | 19.0 | 5 |
+| de | munich | 0 | 2 | 11.0 | 7 |
+| de | zurich | 0 | 2 | 19.5 | 0 |
+| es | malaga | 0 | 2 | 18.5 | 0 |
+| es | palma-de-mallorca | 0 | 2 | 75.5 | 1 |
+| it | palermo | 0 | 2 | 41.5 | 0 |
+| it | sardinia | 0 | 2 | 46.0 | 0 |
+| ja | kyoto | 0 | 2 | 1.0 | 2 |
+| pt | lisbon | 1 | 1 | 2.0 | 2 |
+| de | regensburg | 0 | 1 | 52.0 | 0 |
+| es | alicante | 0 | 1 | 86.0 | 3 |
+| fr | bordeaux | 0 | 1 | 28.0 | 0 |
+| fr | nantes | 0 | 1 | 27.0 | 0 |
+| it | cagliari | 0 | 1 | 62.0 | 1 |
+| ja | kagoshima | 0 | 1 | 83.0 | 1 |
+| ja | kanazawa | 0 | 1 | 89.0 | 2 |
+| ja | tokyo | 0 | 1 | 5.0 | 2 |
+| pt | porto | 0 | 1 | 6.0 | 5 |
+
+**Cities seen but never clicked** (60+ impressions, zero clicks, with what they are actually shown for):
+
+- prague (i141): prague (i15, p9); prague (i15, p8); prague (i15, p7); prague (i15, p5)
+- Seen, not clicked: /sequoia-national-park/general-sherman-tree (c0/i21, 0.0%) for general sherman tree california (i5, p74); sequoia tree general sherman (i2, p71); big sherman tree (i2, p69)
+
+**Climbing** (this ten days against the ten before it)
+
+| Page | Impressions | Change | Position | Moved | Clicks |
+|---|---:|---:|---:|---:|---:|
+| /prague/oak-of-cisarsky-ostrov | 34 | +33 | 3.7 | -1.7 | +0 |
+| /prague/oak-of-dienzenhofer-gardens | 34 | +33 | 4.9 | -0.9 | +0 |
+| /prague/ash-of-strahov-garden | 34 | +29 | 7.7 | -1.7 | +0 |
+| /prague/twin-beech-of-hvezda | 34 | +29 | 8.6 | -2.2 | +0 |
+| /prague/walks | 34 | +28 | 3.4 | -0.9 | +0 |
+| /prague/oak-of-u-malvazinky | 34 | +20 | 6.3 | +0.2 | +0 |
+| /prague/oldest-tree | 34 | +18 | 4.0 | -0.4 | -2 |
+| /prague/field-maple-of-the-seminary-garden | 18 | +9 | 9.3 | -2.6 | +0 |
+
+**Slipping**
+
+| Page | Impressions | Change | Position | Moved |
+|---|---:|---:|---:|---:|
+| /sequoia-national-park/general-sherman-tree | 21 | -10 | 74.5 | -25.8 |
+
+- New queries this window: alte bäume (i4).
+
+**Who they are** (full cut, Mondays)
+Audience, 28 days of search (727 clicks, 30963 impressions):
+- Countries: usa c106/i7651; nld c67/i1612; esp c63/i2433; gbr c62/i2375; deu c50/i1589
+- Devices: MOBILE c523/i18270; DESKTOP c194/i12331; TABLET c10/i362
+- Landing pages: / c23/i273; /prague c11/i298; /bath/plane-trees-of-the-circus c8/i143; /de/vienna/chestnut-avenue-of-the-hauptallee c7/i217; /leuven c7/i48
+- Search language (top 100 named queries, crude match, most clicks are in queries Google withholds): English 56q c15/i432; unclassified 39q c21/i195; Italian 4q c0/i5; Dutch 1q c1/i4
+On the site since 2026-09-14 (6370 visits, 8010 pageviews, 1.3 pages per visit):
+- Countries: US 1320; SG 1040; DE 570; BR 420; GB 320
+- Devices: desktop 5610; mobile 2370; tablet 30
+- Browsers: Chrome 3040; Firefox 1310; ChromeMobile 1160; Edge 1010
+- Arrived via: (direct) 5210; ancienttrees.app 1640; www.google.com 800; duckduckgo.com 90; www.facebook.com 60
+- Opened: /open 860; /contribute 230; / 230; /explore 70; /countries 70; /barcelona 60; /amsterdam 60; /florence 60
+
+Web Analytics (beacon, cookieless), people only.
+Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
+
+| Day | Visits | Pageviews | From Google |
+|---|---:|---:|---:|
+| 10-04 | 0 | 10 | 0 |
+| 10-05 | 30 | 80 | 10 |
+| 10-06 | 90 | 160 | 0 |
+| 10-07 | 70 | 150 | 0 |
+| 10-08 | 10 | 90 | 0 |
+| 10-09 | 60 | 150 | 0 |
+| 10-10 | 40 | 140 | 10 |
+| 10-11 | 30 | 90 | 0 |
+| **window** | **330** | **870** | **20** |
+- Top paths: / (60); /verona (20); /rothenburg-ob-der-tauber/vorbachtal-spruces (20); /perth (20); /melbourne/hoop-pine-of-yarra-boulevard (20); /app (20); /seville (20); /explore (20); /leuven (20); /washington-dc/washington-monument-witness-mulberry (10); /portalegre/plane-tree-of-rossio (10); /reykjavik/larch-of-holavallagardur (10)
+- Referrers: (direct) (160); ancienttrees.app (540); www.facebook.com (50); duckduckgo.com (40); search.yahoo.com (30); bing.com (10); www.google.com (10); de.search.yahoo.com (10); www.bing.com (10); com.google.android.gm (10)
+- Moved between our own pages: 540 of 870 pageviews (62%); the rest arrived from search or straight in. Cookieless means no session, so which page led to which cannot be measured.
+- Countries: US (200); BE (80); NL (70); PT (70); FR (70)
+- Devices: mobile (600); desktop (270)
+- Page load (8d): p50 2261ms, p90 8692ms
+
+Links: external referrers (a link somebody actually clicked): www.facebook.com (50); search.yahoo.com (30); de.search.yahoo.com (10)
+AI: arrivals from an assistant that cited us: none yet
+
+Backlinks (watched pages):
+| Site | Links to | rel | First seen |
+|---|---|---|---|
+| getlisbon.com | /lisbon | followed | 2026-09-08 |
+| getlisbon.com | /pt/lisbon | followed | 2026-09-08 |
+| www.baumkunde.de | /copenhagen | followed | 2026-09-26 |
+| www.baumkunde.de | /rogalin/russ-oak | followed | 2026-09-26 |
+4 linking page(s), 4 followed. Checked by fetching the page: a link with rel="noreferrer" never appears in the referrer table, so these two lines measure different things and neither replaces the other. Unknown links stay a manual read of Search Console's Links report. This run read 12 of 12 fetched (0 unreachable), out of 27 watched pages.
+
+
+**What the machine did, the last 24 hours**
+
+| Started | Minutes | Trees | Commits | Refused | Cities |
+|---|---:|---:|---:|---:|---|
+| 10-11T16:06 | 0.0 | 0 | 1 | 0 | - |
+| 10-11T21:22 | 0.0 | 0 | 0 | 0 | - |
+| 10-12T00:54 | 0.0 | 0 | 1 | 0 | - |
+| 10-12T08:26 | 0.0 | 0 | 0 | 0 | - |
+| **4 runs** | **0** | **0** | **2** | | |
+
+- 4 of 4 produced no trees; 4 wrote nothing to LOG.md; last build that went live: 1h ago.
+
+**What they made**
+
+- Photographs readers sent, queued for a look; vouched ones live
+- Photographs readers sent, queued for a look; vouched ones live
+
+Machine: 5 chain attempts yesterday, 1 got real work time (~91 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 1 clicks and 31 impressions on Google's freshest day (day before: c0/i35). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-10-10 (previous UTC day)
 
 **Today: an android waitlist signup arrived yesterday (21 total); an account was opened yesterday (25 total).**
