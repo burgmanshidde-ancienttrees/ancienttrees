@@ -11433,6 +11433,14 @@
   "2026-10-12": [
    {
     "date": "2026-10-12",
+    "target": "nl-emmen",
+    "kind": "translate",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "Dutch overlay for 7 trees, i18ncheck clean; three English wording errors fixed"
+   },
+   {
+    "date": "2026-10-12",
     "target": "vienna",
     "kind": "verify",
     "tokens": 55000,

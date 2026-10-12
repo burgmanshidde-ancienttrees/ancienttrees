@@ -1,0 +1,88 @@
+{
+ "_note": "nl overlay for emmen, written 2026-10-12 from data/cities/emmen.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Emmen",
+ "title": "Monumentale bomen in Emmen: een eik midden in een hunebed",
+ "meta_description": "Zeven bijzondere bomen rond Emmen: twee eiken bij vijfduizend jaar oude hunebedden, een ervan tussen de stenen, en een bonte esdoorn in Coevorden.",
+ "intro": "Twee van de eiken hier staan bij een hunebed, en een ervan staat er middenin. De Hondsrug, de zandrug waarop Emmen ligt, heeft de grootste concentratie hunebedden van Nederland: stenen grafkamers van ongeveer vijfduizend jaar oud, ooit met aarde bedekt. Waar die heuvels nooit zijn weggeploegd, kwamen de bomen. Hunebed D43 is het enige langgraf van het land, 52 stenen rond een heuvel van veertig meter met twee grafkamers erin. Bij D42 staat een enorme eik midden tussen de stenen.",
+ "question_title": "Wat is de oudste boom van Emmen? (225 tot 275 jaar)",
+ "question_meta": "De oudste boom van Emmen is een linde aan het Noordeind, gedateerd 1750 tot 1800 en mogelijk geplant rond 1790. Waar hij staat, en zes andere.",
+ "question_answer": "De oudste boom van Emmen is een Hollandse linde aan het Noordeind, tegenover nummer 9. Het Landelijk Register Monumentale Bomen plaatst hem in de plantperiode 1750 tot 1800 en oppert rond 1790 als plantjaar. Het Noordeind is het oudste deel van Emmen, dat begon als esdorp, een dorp rond een gedeelde akker, op de zuidoostflank van de Hondsrug. De karakteristieke Drentse boerderijen die er stonden zijn grotendeels verdwenen. Een linde in het hart van een oud Drents dorp is geen versiering: een dorpslinde was ontmoetingsplek, schaduwboom en vaak de plek waar zaken werden afgehandeld, en daarom hebben zoveel ervan de gebouwen eromheen overleefd.",
+ "question_context": "De leeftijden hier komen uit het Landelijk Register Monumentale Bomen, dat een plantdecennium vastlegt en geen jaartal, dus elk getal op deze pagina is een bandbreedte. Het gaat om de editie van 2024, en dat register is de enige bron voor alle bomen behalve de esdoorn in Coevorden, die een tweede bron heeft; alles hier staat dus onder voorbehoud. Bij twee van deze bomen is de leeftijd minder belangrijk dan hij lijkt, want daar zit hun waarde niet: de eiken bij de hunebedden zijn jong vergeleken met waar ze op staan, en dat is neolithisch. Niets op deze pagina komt ook maar in de buurt van de leeftijd van de stenen, en de pagina's zeggen dat liever dan de ouderdom van het graf aan de boom uit te lenen. Twee ware feiten naast elkaar maken samen geen derde. Lees ook wat er over toegang staat: een paar van deze bomen staan in een voortuin of op parochiegrond die het register als bezoekbaar vermeldt, maar dat zijn geen openbare parken, dus gedraag je ernaar. Waar een locatie als bij benadering staat aangegeven, kennen we de plek en niet de stam.",
+ "faq": [
+  {
+   "q": "Wat is een hunebed?",
+   "a": "Een megalithisch grafmonument met een kamer, in Nederland zo'n vijfduizend jaar geleden gebouwd door mensen van de trechterbekercultuur. Enorme zwerfkeien uit de ijstijd werden tot een kamer gestapeld en met een aarden heuvel bedekt. De meeste die nog bestaan liggen in Drenthe, langs de Hondsrug waarop Emmen ligt."
+  },
+  {
+   "q": "Groeit er echt een eik in een hunebed?",
+   "a": "Bij hunebed D42 aan de Schietbaanweg wel. Het register beschrijft een enorme eik midden in het hunebed, noemt dat een opvallend gezicht en dateert de boom tussen 1880 en 1890. D42 is een van de grotere hunebedden van Drenthe en een van de minder bezochte."
+  },
+  {
+   "q": "Wat is er bijzonder aan hunebed D43?",
+   "a": "Het is een langgraf, het enige in Nederland. Binnen een bijna volledige, gerestaureerde krans van 52 stenen liggen twee grafkamers, in een dekheuvel van veertig meter lang."
+  },
+  {
+   "q": "Zijn ze gratis te bezoeken?",
+   "a": "De hunebedden en de linde aan het Noordeind liggen op open terrein. De bomen bij het parochiecentrum van de Bonifatius in Nieuw-Schoonebeek en de eik in een voortuin in Erica staan in het register als bezoekbaar, maar het zijn geen parken: kijk vanaf een plek waar je welkom bent. De bonte esdoorn staat voor Kasteel Coevorden, nu een hotel, en is vanaf het voorplein goed te zien."
+  }
+ ],
+ "strings_note": "Velden per boom: name, species (Nederlandse naam, dezelfde Latijnse naam), age_estimate, access, transport, story. Verhalen 150 tot 250 woorden, dezelfde lat als het Engels, geen gedachtestreepjes.",
+ "trees": {
+  "emm_001": {
+   "name": "De linde van het Noordeind",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ruwweg 225 tot 275 jaar, en het register oppert een aanplant rond 1790",
+   "access": "Gratis. Staat aan de openbare straat, tegenover nummer 9.",
+   "transport": "Ongeveer 1,5 km ten noorden van het centrum van Emmen, aan het Noordeind.",
+   "story": "Het oudste deel van Emmen is een straat, en dit is de boom die erin staat.\n\nEmmen begon als esdorp op de zuidoostflank van de Hondsrug, de lange zandrug dwars door Drenthe. Zo'n dorp draaide om een gedeelde akker, de es, die eeuwenlang werd opgehoogd met plaggen en mest tot er genoeg grond lag om te verbouwen, op wat verder heide was. Het Noordeind was het begin, met aan weerszijden de karakteristieke Drentse boerderijen. De meeste zijn verdwenen.\n\nDe linde bleef. Het register oppert dat hij rond 1790 is geplant.\n\nEen dorpslinde was in dit deel van het land nooit alleen sierlijk groen. Het was het verzamelpunt: schaduw in de zomer, een plek om te staan en zaken af te handelen, soms de plek waar recht werd gesproken, en altijd het punt waarmee je iemand de weg wees. Daarom zijn er zoveel ouder dan de huizen eromheen. Niemand kapt de boom waar iedereen bij afspreekt.\n\nKom in juli, als hij bloeit. Lindebloesem op een windstille avond is zwaar en zoet en draagt over de hele lengte van een dorpsstraat. Het is een van de weinige zintuiglijke ervaringen hier die sinds 1790 niet zijn veranderd."
+  },
+  "emm_002": {
+   "name": "De eik in hunebed D42",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 135 tot 145 jaar, uit de plantperiode 1880 tot 1890 van het register",
+   "access": "Gratis. Open terrein bij het hunebed, altijd bereikbaar.",
+   "transport": "Ongeveer 3 km ten noordwesten van het centrum van Emmen, bij de Schietbaanweg.",
+   "story": "De eik staat midden in het graf.\n\nHunebed D42 is een van de grotere grafkamers van Drenthe en een van de minder bezochte, en dat verklaart voor een deel hoe dit kon gebeuren. Vijfduizend jaar geleden sleepten mensen hier zwerfkeien uit de ijstijd bij elkaar tot een kamer en bedekten die met aarde. Ergens rond 1880 belandde er een eikel middenin, en niemand haalde de zaailing weg.\n\nHet register beschrijft het resultaat zonder omhaal: een enorme eik midden in het hunebed, een opvallend gezicht, en het geheel maakt een bezoek de moeite waard. Voor een officiële inventarisatie is dat ongewoon enthousiast, en het klopt.\n\nWat je hier ziet, is twee soorten duurzaamheid in één beeld. De stenen liggen er al van voor het schrift, van voordat het wiel dit deel van Europa bereikte, van voor het brons. De eik staat er anderhalve eeuw en is, in bomenjaren, niet oud. Wie ertussen staat, kijkt daarna anders naar allebei.\n\nDe wortels van een eik in een grafkamer zijn niet onschuldig, en die spanning hoort bij wat je ziet.\n\nHij staat bij de Schietbaanweg, ten noordwesten van Emmen."
+  },
+  "emm_003": {
+   "name": "De eik bij het langgraf",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 155 tot 165 jaar, uit de plantperiode 1860 tot 1870 van het register",
+   "access": "Gratis. Open terrein bij het hunebed, altijd bereikbaar.",
+   "transport": "Ongeveer 2 km ten noordoosten van het centrum van Emmen, langs de Odoornerstraat.",
+   "story": "Nederland heeft één langgraf, en deze eik staat ernaast.\n\nHunebed D43 heeft niet één kamer onder een ronde heuvel, maar een dekheuvel van veertig meter lang met twee aparte grafkamers erin, en het geheel wordt omringd door een krans van stenen. Daarvan zijn er tweeënvijftig over, en de krans is zo gerestaureerd dat hij weer bijna compleet oogt. Nergens anders in het land bestaat deze vorm.\n\nDe eik kwam er zo'n vierenhalfduizend jaar later bij, tussen 1860 en 1870.\n\nWat dit paar beter maakt dan het graf alleen, is de schaal. Een heuvel van veertig meter is moeilijk als vorm te zien; van een afstand is het een verhoging in het land. Een grote eik ernaast geeft je iets om tegen af te meten, en ineens dringt de lengte tot je door.\n\nEiken en grafheuvels horen in heel Noord-Europa bij elkaar, en niet toevallig. Grafheuvels bleven eeuwenlang ongeploegd en werden zo de enige plek in een akkerlandschap waar een boom tweehonderd jaar oud kon worden.\n\nLoop de hele krans af. Het duurt langer dan je denkt."
+  },
+  "emm_005": {
+   "name": "De rode beuk van Nieuw-Schoonebeek",
+   "species": "Rode beuk (Fagus sylvatica f. purpurea)",
+   "age_estimate": "ruwweg 225 tot 275 jaar, uit de plantperiode 1750 tot 1800 van het register",
+   "access": "Terrein van het parochiecentrum, in het Landelijk Register Monumentale Bomen vermeld als bezoekbaar. Geen openbaar park, dus kijk vanaf een plek waar je welkom bent.",
+   "transport": "Ongeveer 20 km ten zuiden van Emmen, in Nieuw-Schoonebeek aan de Europaweg.",
+   "story": "De kerk is weg, alleen de toren staat er nog. De pastorie is onherkenbaar herbouwd. Het park is er nog, en deze beuk ook.\n\nBij de oude pastorie van de katholieke Sint-Bonifatiuskerk in Nieuw-Schoonebeek werd aan het begin van de twintigste eeuw een fraai park aangelegd. De beuk, gedateerd 1750 tot 1800, is veel ouder dan dat en stond er al lang voordat iemand hier iets aanlegde. Dat is hetzelfde patroon als bij bijna elke kerkboom in dit land: de grond was al beplant, en de instelling kwam erbij.\n\nAls die datering klopt, is hij even oud als de linde aan het Noordeind en een van de oudste bomen van de gemeente.\n\nEen rode beuk van tweeënhalve eeuw in een Drents dorp is bovendien een beetje onwaarschijnlijk. De rode vorm was in de achttiende eeuw een schaars kwekersproduct, grotendeels voorbehouden aan landgoederen en botanische collecties. Hier heeft dus iemand met geld en connecties hem neergezet.\n\nKom in oktober, als hij doorkleurt naar koper, tegen een middeleeuwse torenstomp."
+  },
+  "emm_006": {
+   "name": "De plataan in het park van de Bonifatius",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 155 tot 165 jaar, uit de plantperiode 1860 tot 1870 van het register",
+   "access": "Terrein van het parochiecentrum, in het Landelijk Register Monumentale Bomen vermeld als bezoekbaar. Geen openbaar park.",
+   "transport": "Ongeveer 20 km ten zuiden van Emmen, in Nieuw-Schoonebeek aan de Europaweg.",
+   "story": "Een plataan in een Drents dorp is een vreemdeling, en dat is juist het interessante.\n\nDe soort is de stadsboom van Noord-Europa bij uitstek, bij honderdduizenden geplant langs boulevards van Londen tot Wenen, omdat hij bestrating, vervuiling, wortelschade en zware snoei beter verdraagt dan wat dan ook van zijn formaat. Een dorpsboom is hij niet. En hier, in een klein park achter een parochiecentrum aan de Duitse grens, valt er niets te verdragen.\n\nDus is hij gewoon gegroeid, in goede grond, ongesnoeid, met ruimte. Dat levert een vorm op die de meeste mensen nooit aan een plataan zien: breed in plaats van zuilvormig, laag vertakt, en veel breder dan een straatboom van dezelfde leeftijd.\n\nHij is gedateerd 1860 tot 1870 en staat samen met de rode beuk in het park bij de oude pastorie. Van de kerk staat alleen de toren nog.\n\nDe schors verraadt hem van ver: die schilfert af in onregelmatige platen en laat een vlekkenpatroon van crème, olijfgroen en grijs achter. Op een boom op het schone platteland blijven de lichte plekken lichter, dus hier is hij helderder dan in welke stad ook."
+  },
+  "emm_007": {
+   "name": "De eik van Erica",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 145 tot 155 jaar, uit de plantperiode 1870 tot 1880 van het register",
+   "access": "Staat in een voortuin aan de vaart, in het Landelijk Register Monumentale Bomen vermeld als bezoekbaar. Kijk vanaf de openbare weg.",
+   "transport": "Ongeveer 10 km ten zuidwesten van Emmen, in Erica aan de Verlengde Vaart Zuidzijde.",
+   "story": "Dit dorp ontstond doordat er veen werd afgegraven, en de eik is ongeveer even oud als het dorp.\n\nErica begon rond 1863 als boekweitkolonie op de hogere zandgrond, het soort randnederzetting dat mensen stichtten waar niets beters te krijgen was. Het werd een echte veenkolonie toen in dezelfde periode de Hoogeveense Vaart werd voltooid, en het hart van het dorp schoof op naar het water. Het adres van deze boom zegt het nog steeds: Verlengde Vaart Zuidzijde, de zuidkant van de verlengde vaart.\n\nVeenkolonies waren gebouwd om de grond leeg te halen. Mannen staken het veen, droogden het en voerden het per schip af, en toen het veen op was, bleef er schraal zand over met een raster van kanalen. Van wat de eerste generatie plantte, overleefde bijna niets, want er was geen reden om het te houden.\n\nDeze eik werd tussen 1870 en 1880 in een voortuin geplant, en precies daarom bleef hij staan. Een boom in iemands eigen tuin had een verdediger.\n\nHet is een particuliere voortuin aan de vaart. Kijk vanaf de weg."
+  },
+  "emm_008": {
+   "name": "De bonte esdoorn van Kasteel Coevorden",
+   "species": "Gewone esdoorn 'Leopoldii' (Acer pseudoplatanus 'Leopoldii')",
+   "age_estimate": "ruwweg 135 tot 145 jaar",
+   "access": "Gratis te bekijken. De esdoorn staat op open terrein bij Kasteel Coevorden, nu een hotel, en is vanaf het voorplein goed te zien.",
+   "transport": "In het centrum van Coevorden, op loopafstand van het busstation, en ongeveer 15 km ten zuidoosten van Emmen.",
+   "story": "Van de andere kant van het terrein lijkt het alsof iemand een lamp op deze esdoorn richt.\n\nDat komt door de cultivar. 'Leopoldii' is een gewone esdoorn waarvan de bladeren gespikkeld en gestreept met crème, geel en roze uitlopen in plaats van gewoon groen, zodat een hele boom er altijd gevlekt uitziet. Kwekers brachten bonte vormen in de negentiende eeuw nadrukkelijk aan de man; zo'n boom op een goed gazon was eerder een statement dan een plant.\n\nDeze ging tussen 1880 en 1890 de grond in, op de meest opvallende plek bij Kasteel Coevorden, en hij omlijst nog steeds het zicht op het gebouw.\n\nAlles eromheen is vaker van eigenaar gewisseld dan de boom. De gemeente kocht het kasteel in 1938, in 1968 begon de restauratie, en sinds 2014 wordt het particulier uitgebaat als hotel. Het register merkt op dat de groeiomstandigheden van de esdoorn na die laatste overdracht juist beter zijn geworden, wat niet de gebruikelijke richting is. De kroon is uit voorzorg met kabels verankerd, en bij de laatste inspectie zijn er geen gebreken in gevonden.\n\nHet kasteel is nu een hotel. De esdoorn staat er vol in het zicht voor, en het register noemt nog altijd de gemeente als eigenaar, wat een redelijke beschrijving is van hoe het op veel Nederlandse kasteelterreinen werkt."
+  }
+ }
+}
