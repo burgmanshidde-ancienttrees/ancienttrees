@@ -1,0 +1,135 @@
+{
+ "_note": "nl overlay for enschede, written 2026-10-12 from data/cities/enschede.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Enschede",
+ "title": "Monumentale bomen in Enschede: de 13 mooiste",
+ "meta_description": "Dertien bijzondere bomen in Enschede: een mammoetboom met een bewaarde factuur uit 1865, twee op een landgoed uit 1536 en een plataan op een plein.",
+ "intro": "Het geld voor de oude bomen van Enschede kwam uit textiel. Van Heek, Blijdenstein, Ledeboer: de families achter de fabrieken bouwden landgoederen aan de rand van de stad, huurden de beste tuinarchitecten van het land in en lieten ze beplanten en later nam de stad het resultaat over als park. Eén factuur bleef bewaard. In 1865 bracht D. Wattez H. J. van Heek een Wellingtonia in rekening, als onderdeel van de beplanting rond 't Wageler,. Die mammoetboom staat nog steeds in het Ledeboerpark, en dichter bij een kassabon komt deze pagina niet.",
+ "question_title": "Wat is de oudste boom van Enschede? (225 tot 275 jaar)",
+ "question_meta": "De oudste boom van Enschede is de eik op 't Zeggelt, volgens het landelijke register van 1750 tot 1800. Waar hij staat, plus twaalf andere bomen.",
+ "question_answer": "De oudste boom van Enschede is de eik op 't Zeggelt, in de wijk Lasonder-Zeggelt. Het landelijke register plaatst hem in een plantperiode van 1750 tot 1800, dus hij is ongeveer 225 tot 275 jaar oud. Hij heeft in de stad een eigen naam, De Eik op 't Zeggelt, en hij staat in openbaar groen en niet op een landgoed. Dat is hier ongebruikelijk: bijna elke andere oude boom in Enschede is een overblijfsel van het terrein van een negentiende-eeuwse textielfamilie. Het register geeft zijn positie tot op zes decimalen, het soort precisie waaruit je opmaakt dat iemand met een ontvanger bij de stam heeft gestaan in plaats van naar een adres te wijzen.",
+ "question_context": "De leeftijden op deze pagina komen uit het Landelijk Register Monumentale Bomen, dat een plantdecennium vastlegt en geen jaartal. Elke leeftijd hier is dus een bandbreedte, en geen enkele is smaller gemaakt om preciezer te lijken. Het register is de editie van 2024 en de enige bron voor deze bomen, en daarom hebben ze allemaal een kanttekening. De mammoetboom in het Ledeboerpark is de uitzondering die het noemen waard is. Het register verwijst naar een document in het archief van de Twentse textielfamilies met briefwisseling uit 1866 tussen H. J. van Heek en tuinarchitect D. Wattez over de prijs van een Wellingtonia, op een factuur voor beplanting rond 't Wageler uit 1865. Dat is een gedocumenteerde aankoop en geen schatting, en daarom kan deze pagina over die boom stelliger zijn dan over welke andere ook. Een speld die als benaderd is gemarkeerd, betekent dat we het terrein kennen maar niet de stam.",
+ "faq": [
+  {
+   "q": "Wat is de oudste boom van Enschede?",
+   "a": "De Eik op 't Zeggelt, in de wijk Lasonder-Zeggelt, door het landelijke register geplaatst in de periode 1750 tot 1800."
+  },
+  {
+   "q": "Bestaat er echt een factuur voor een van deze bomen?",
+   "a": "Het register verwijst ernaar. Volgens een document in het archief van de Twentse textielfamilies correspondeerden H. J. van Heek en tuinarchitect D. Wattez in 1866 over de prijs van een Wellingtonia op een factuur voor beplanting rond 't Wageler uit 1865. Wellingtonia is de oude handelsnaam van de mammoetboom, en een exemplaar uit die tijd staat nog in het Ledeboerpark, dat uit dat landgoed is voortgekomen."
+  },
+  {
+   "q": "Kun je op Landgoed Het Bouwhuis komen?",
+   "a": "Ja. Het register noemt het terrein openbaar toegankelijk en vermeldt dat er heel wat opvallende bomen staan. Het Bouwhuis en het naburige Het Amelink komen al in 1536 op papier voor, toen Jan van Borne, rentmeester van het kapittel van Sint-Pieter in Utrecht, verslag deed over beide boerderijen in de buurtschap Lonneker."
+  },
+  {
+   "q": "Zijn ze gratis te bezoeken?",
+   "a": "Ja, alle dertien. Het Ledeboerpark, het Blijdensteinpark, het Van Heekpark en Het Bouwhuis zijn open, de Oosterbegraafplaats is dagelijks open van zonsopgang tot zonsondergang, en de eik op 't Zeggelt, de zilverlinde aan de Stroinksbleekweg en de platanen van 't Zwik en de Klokkenplas staan op openbare grond."
+  }
+ ],
+ "strings_note": "Velden per boom: name, species (Nederlandse naam, dezelfde Latijnse naam), age_estimate, access, transport, story. Verhalen 150 tot 250 woorden, dezelfde lat als het Engels, geen gedachtestreepjes.",
+ "trees": {
+  "ens_001": {
+   "name": "De Wellingtonia van het Ledeboerpark",
+   "species": "Mammoetboom (Sequoiadendron giganteum)",
+   "age_estimate": "ruwweg 155 tot 165 jaar, en het register verwijst naar een factuur uit 1865 voor een Wellingtonia die hier werd geplant",
+   "access": "Gratis. Openbaar park.",
+   "transport": "Ongeveer 2 km ten noordwesten van station Enschede, aan de Hengelosestraat.",
+   "story": "Iemand heeft opgeschreven wat deze boom kostte.\n\nHet register verwijst naar een document in het archief van de Twentse textielfamilies: in 1866 correspondeerden fabrikant H. J. van Heek en tuinarchitect D. Wattez over de prijs van een Wellingtonia, als post op een factuur voor de beplanting rond 't Wageler uit 1865. Wellingtonia was de naam die de Britten de mammoetboom gaven, naar de hertog van Wellington, en in de jaren 1860 was het het modieuste en duurste wat je in Europa in een tuin kon zetten. De soort was pas in 1853 in Groot-Brittannië geïntroduceerd. Wie er een kocht, liet zien wat hij waard was.\n\nHet park is wat er van dat landgoed is geworden. Wattez legde het aan in de tweede helft van de negentiende eeuw, de stad nam het over, en het Ledeboerpark aan de Hengelosestraat is nu voor iedereen open.\n\nJe kunt dus gaan staan onder een stuk victoriaanse pronkzucht dat de fabrieken, het familiefortuin en het gesteggel over de prijs stilletjes heeft overleefd.\n\nHij is niet te missen: de dikke roodbruine stam met zachte, vezelige schors, en een rechte, kegelvormige top."
+  },
+  "ens_002": {
+   "name": "De Eik op 't Zeggelt",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ruwweg 225 tot 275 jaar, uit de plantperiode 1750 tot 1800 van het register",
+   "access": "Gratis. Openbaar groen in een woonwijk, altijd bereikbaar.",
+   "transport": "Ongeveer 1,5 km ten noorden van station Enschede, in de wijk Lasonder-Zeggelt.",
+   "story": "De oudste boom van Enschede staat niet op een landgoed. Hij staat in gewoon openbaar groen in een woonwijk en heeft toch een eigen naam, meestal een teken dat mensen er al zo lang langs lopen dat ze er een nodig hadden.\n\nHet register plaatst hem tussen 1750 en 1800. Dat maakt hem twee tot tweeënhalve eeuw oud en legt zijn eerste decennia in een Twente van boerderijen en handweefgetouwen: voor de fabrieken, voor het spoor en lang voor de stad eromheen. In 1862 brandde Enschede bijna helemaal af, toen een brand in een paar uur het hele centrum verwoestte. Deze eik stond er ruim buiten en is een van de weinige levende dingen in de stad die ouder zijn dan die dag.\n\nHet register geeft zijn positie tot op zes decimalen. Daaraan zie je dat iemand met een satellietontvanger bij de stam heeft gestaan in plaats van naar een straat te wijzen. Dat is in deze gegevens ongebruikelijk, en het betekent dat de speld zo goed is als spelden worden.\n\nHet is een zomereik, dus eikels aan lange steeltjes en bladeren die vrijwel direct aan de twijg zitten. In oktober ligt de grond eronder er vol mee."
+  },
+  "ens_004": {
+   "name": "De mammoetboom van Het Bouwhuis",
+   "species": "Mammoetboom (Sequoiadendron giganteum)",
+   "age_estimate": "ruwweg 115 tot 125 jaar, uit de plantperiode 1900 tot 1910 van het register",
+   "access": "Gratis. Het register noemt het terrein openbaar toegankelijk.",
+   "transport": "Ongeveer 5 km ten noordoosten van station Enschede, bij Lonneker.",
+   "story": "De boerderij waar deze boom staat, werd in 1536 voor het eerst op papier gezet.\n\nIn dat jaar deed Jan van Borne, rentmeester van het kapittel van Sint-Pieter in Utrecht, verslag over twee erven in de buurtschap Lonneker: Het Bouwhuis en Het Amelink. Het Amelink was toen van de Jonker van Steinfurt, oftewel de graaf van Bentheim. De grond heeft dus een ononderbroken papieren spoor van bijna vijf eeuwen, terug tot een landschap van kapittels en kleine Duitse adel, zo'n vierhonderd jaar voordat iemand hier van een mammoetboom had gehoord.\n\nDe boom is de nieuwkomer. Hij werd ergens tussen 1900 en 1910 geplant, toen de mammoetboom van spectaculaire nieuwigheid was uitgegroeid tot de vaste manier om te laten zien dat een buitenhuis een park had.\n\nVolgens het register is Het Bouwhuis openbaar toegankelijk en staan er heel wat opvallende bomen. Dat maakt het een van de landgoederen op deze pagina waar je het makkelijkst gewoon naar binnen loopt.\n\nHonderdtwintig jaar is niets voor deze soort. In Californië zou dit een jong boompje zijn tussen bomen van drieduizend jaar oud. Hier is het al het grootste wat er in het veld staat."
+  },
+  "ens_005": {
+   "name": "De treurbeuk bij de vijver",
+   "species": "Treurbeuk (Fagus sylvatica 'Pendula')",
+   "age_estimate": "ruwweg 115 tot 125 jaar, uit de plantperiode 1900 tot 1910 van het register",
+   "access": "Gratis. Het register noemt het terrein openbaar toegankelijk.",
+   "transport": "Ongeveer 5 km ten noordoosten van station Enschede, bij Lonneker.",
+   "story": "Ga erin staan. Daar is een treurbeuk voor, en bijna niemand doet het.\n\nDe takken van een volwassen exemplaar buigen naar buiten en vallen dan rondom recht naar de grond, zodat je een groene tent hebt van misschien vijftien meter doorsnee, met een kale vloer en een stam in het midden. Kinderen hebben dat meteen door. Volwassenen lopen erlangs.\n\nDe treurbeuk is een cultivar en geen soort: een mutant die door enten wordt vermeerderd, zodat elk exemplaar een kloon is van een origineel dat in de achttiende eeuw ergens in Europa werd gevonden. De entplaats is meestal te zien als een verdikking laag aan de stam. Hij groeit net als een gewone beuk, alleen kan hij zijn takken niet omhooghouden. Laat je hem zijn gang gaan, dan gaat hij afleggen: een tak die op de grond rust, schiet wortel en wordt een nieuwe stam, zodat een oude treurbeuk langzaam over een gazon naar buiten kan wandelen.\n\nDeze staat aan de noordoostkant van de vijver bij Het Bouwhuis, geplant tussen 1900 en 1910, op grond die sinds 1536 gedocumenteerd is.\n\nDuik aan de vijverkant onder de rok door en kijk tussen de bladeren door terug naar het water."
+  },
+  "ens_006": {
+   "name": "De wintereik van het Blijdensteinpark",
+   "species": "Wintereik (Quercus petraea)",
+   "age_estimate": "ruwweg 115 tot 125 jaar, uit de plantperiode 1900 tot 1910 van het register",
+   "access": "Gratis. Openbaar park, dagelijks open.",
+   "transport": "Ongeveer 2 km ten oosten van station Enschede, aan de Boulevard 1945.",
+   "story": "Er loopt een weg met gescheiden rijbanen door dit park, en de boom staat bij een tankstation. Allebei het vermelden waard, en wel als eerste, want zo ziet deze plek er nu uit.\n\nHet begon als landgoed. In 1855 bouwden H. G. Blijdenstein en zijn vrouw Ebeling een villa aan de Helweg, de weg die later de Gronausestraat werd, en legden er een tuin omheen aan. Hun dochter Johanna Ida Beltman-Blijdenstein was de laatste die er woonde. De Blijdensteins waren een van de Twentse textieldynastieën, en net als de Van Heeks en de Ledeboers lieten ze de stad vooral grond met bomen erop na.\n\nDaarna gebeurde wat er met groen bij een groeiende stad gebeurt. De Boulevard 1945 werd dwars door het park getrokken en sneed het in tweeën, en aan de oostrand staat nu een tankstation.\n\nDe eik staat er sinds ongeveer 1900 tot 1910 en heeft de boel om zich heen zien veranderen. Het is een wintereik, dus de eikels zitten vast tegen de twijg en de bladeren hebben een duidelijke steel, precies andersom dan bij de algemenere zomereik.\n\nGa op een zondag, als het stil is op de weg."
+  },
+  "ens_007": {
+   "name": "De plataan van 't Zwik",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 155 tot 165 jaar, uit de plantperiode 1860 tot 1870 van het register",
+   "access": "Gratis. Straatboom op openbare grond.",
+   "transport": "Ongeveer 1,5 km ten westen van station Enschede, aan de Cort van der Lindelaan.",
+   "story": "Hier stond een buitenhuis dat 't Zwik heette, en nu ligt er een stratenpatroon.\n\nDe gemeente kocht de plek in 1917 om de stad uit te breiden en bebouwde haar in de jaren twintig en dertig. Dat was het gewone lot van de kleinere buitens aan de rand van een stad waarvan het inwonertal met elke nieuwe fabriek steeg. Het huis verdween. Wat bleef, is beplanting: deze plataan en, zestig tot honderd meter naar het westen, een eik en een beuk die het register ook aanwijst als restanten van hetzelfde terrein.\n\nDat is handig om te weten als je hier staat. Drie bomen op drie punten langs een straat zijn geen toeval, ze zijn het laatste leesbare spoor van een tuin. Trek je een lijn tussen ze, dan loop je over iemands oprijlaan.\n\nDe plataan is van de drie het makkelijkst te herkennen: afbladderende schors in crème, olijfgroen en grijs, grote bladeren in de vorm van een esdoornblad, en de stekelige ronde zaadbollen die de hele winter blijven hangen.\n\nPlatanen zijn de grote overlevers van de stadsuitbreiding. Ze verdragen verdichte grond, beschadigde wortels, vervuiling en hard snoeien beter dan wat ook van hun formaat, en precies daarom staat deze er nog en het huis niet."
+  },
+  "ens_008": {
+   "name": "De Hongaarse eik van de Oosterbegraafplaats",
+   "species": "Hongaarse eik (Quercus frainetto)",
+   "age_estimate": "ongeveer 100 jaar, uit een geregistreerde plantdatum rond 1930",
+   "access": "Gratis. De begraafplaats is een openbaar rijksmonument, dagelijks open van zonsopgang tot zonsondergang.",
+   "transport": "Ongeveer 3 km ten noordoosten van het centrum van Enschede (Noord Esmarkerrondweg 407); het best bereikbaar met de fiets of de auto.",
+   "story": "Het register noemt deze eik niet alleen oud, het zegt ook bij welk decennium van de begraafplaats hij hoort. Gedenkpark De Ooster ging in 1899 open, het noordelijke deel kwam er in 1929 bij, en de Bomenstichting dateert deze Hongaarse eik bij die uitbreiding, wat hem ongeveer honderd jaar oud maakt. Het register geeft er een detail bij dat onderweg de moeite waard is: de naad tussen de oude en de nieuwe grond is nog af te lezen aan de aanleg, en deze boom staat aan de nieuwe kant.\n\nQuercus frainetto hoort thuis in Zuid-Italië, de Balkan en Thracië. Op een begraafplaats in Twente is hij een bewuste import: iemand koos hem boven de beuken en eiken die het voor de hand liggende antwoord waren geweest. Hij is hier gegroeid door alles wat Enschede sinds 1930 is overkomen: de oorlog, het langzame sluiten van de textielfabrieken die deze stad hebben betaald, en het opnieuw uitvinden van een stad die iets anders moest worden.\n\nDe grond eromheen is zelf een rijksmonument, deels beschermd om de parkbomen langs deze paden, al prijst die beschrijving ze als groep en noemt ze deze eik niet. Het bomenregister doet dat wel, als enige bron. Lees de datering dus als het oordeel van het register en niet als een telling die iemand uit het hout heeft gehaald."
+  },
+  "ens_009": {
+   "name": "De amberboom van de Oosterbegraafplaats",
+   "species": "Amberboom (Liquidambar styraciflua)",
+   "age_estimate": "ongeveer 90 jaar, uit een geregistreerde plantdatum rond 1935",
+   "access": "Gratis. De begraafplaats is een openbaar rijksmonument, dagelijks open van zonsopgang tot zonsondergang.",
+   "transport": "Ongeveer 3 km ten noordoosten van het centrum van Enschede (Noord Esmarkerrondweg 407); het best bereikbaar met de fiets of de auto.",
+   "story": "Deze boom staat in het landelijke register omdat hij een goed exemplaar van zijn soort is, niet omdat hij oud is. De Bomenstichting dateert de aanplant rond 1935, vijf jaar meer of minder, en nam hem op om dendrologische redenen: een mooie amberboom, in een land waar de soort een tuinimport is en geen inheemse boom.\n\nLiquidambar styraciflua komt uit de natte laaglanden van het zuidoosten van de Verenigde Staten. Wat hij in de herfst doet, is de hele reden dat iemand hem hier plant. De bladeren hebben de vorm van een vijfpuntige ster en weigeren één kleur aan te nemen: scharlaken, pruimpaars, oranje en groen aan dezelfde tak, soms op hetzelfde blad, en dat gaat nog weken door als de linden en beuken eromheen al bruin zijn en hun blad hebben laten vallen.\n\nHij staat aan het tweede stuk van het noordelijke hoofdpad, op een begraafplaats die zichzelf gedenkpark noemt en dat ook meent. Gedenkpark De Ooster ging in 1899 open en is nu een rijksmonument, deels beschermd om de bomen langs de paden. Zo wordt een Amerikaanse moerasboom in Twente oud zonder dat er veel van hem gevraagd wordt.\n\nAlleen het bomenregister noemt dit exemplaar afzonderlijk, dus de plantdatum is een schatting van het register en geen gedocumenteerd jaartal."
+  },
+  "ens_010": {
+   "name": "De Kaukasische spar van de Oosterbegraafplaats",
+   "species": "Kaukasische spar (Picea orientalis)",
+   "access": "Gratis. De begraafplaats is een openbaar rijksmonument, dagelijks open van zonsopgang tot zonsondergang.",
+   "transport": "Ongeveer 3 km ten noordoosten van het centrum van Enschede (Noord Esmarkerrondweg 407); het best bereikbaar met de fiets of de auto.",
+   "story": "Niemand heeft deze spar gedateerd, en zijn leeftijd is ook niet de reden dat hij beschermd is. De Bomenstichting nam hem op om dendrologische redenen: Picea orientalis is een boom van de Kaukasus en de bergen van Noordoost-Turkije, ongewoon in deze hoek van Nederland, en dit is een goede.\n\nHet is de spar die in Europa het makkelijkst op de tast te herkennen is. De Kaukasische spar heeft de kortste naalden van alle sparren, stomp aan de punt in plaats van scherp, donker en glanzend en dicht rondom de twijg gepakt, zodat de hele boom voller en zwarter oogt dan de fijnsparren waar Nederlandse planters standaard naar grepen. In zijn eigen gebied bedekt hij de natte hellingen aan de Zwarte Zee met bos tot aan de boomgrens. Hier staat hij op een begraafplaats aan de oostrand van Enschede, zo'n vijftig meter van een Hongaarse eik, op grond die in 1899 als gedenkpark werd aangelegd en nu een rijksmonument is.\n\nHoe hij hier kwam, staat nergens. In het leeftijdsveld van het register staat onbekend, en in plaats van er een getal op te plakken hebben we het leeg gelaten: een spar kan er op zijn tachtigste eerbiedwaardig uitzien en op zijn tweehonderdste gewoon, en gokken zou de makkelijke soort oneerlijkheid zijn.\n\nWeet je wanneer deze is geplant, of heb je een plantlijst van het noordelijke deel gezien? Laat het ons weten, dan dateren we hem goed."
+  },
+  "ens_011": {
+   "name": "De zilverlinde aan de Stroinksbleekweg",
+   "species": "Zilverlinde (Tilia tomentosa)",
+   "age_estimate": "ongeveer 140 jaar, uit een geregistreerde plantdatum rond 1890",
+   "access": "Gratis. Staat in een openbaar plantsoen langs de straat, zonder beperkingen.",
+   "transport": "Ongeveer 1 km ten noorden van het centrum en station Enschede, in de wijk Roombeek; te lopen.",
+   "story": "Sinds de jaren 1880 staat er een zilverlinde op deze straathoek, en niemand heeft opgeschreven waarom. Het register van de Bomenstichting plaatst de aanplant tussen 1880 en 1890, wat de boom ongeveer 140 jaar oud maakt, wijst hem aan als monumentaal en laat het veld voor de geschiedenis daarna leeg. Het is ook de enige bron die deze boom überhaupt noemt.\n\nTilia tomentosa is de linde die je opmerkt als het waait. De bladeren zijn van boven donkergroen en van onderen bedekt met fijn wit vilt, zodat een windvlaag de hele kroon zilver kleurt en weer terug. Hij bloeit ook weken na alle andere linden in de straat, midden in de zomer, met een geur die je eerder bereikt dan de boom zelf.\n\nDe hoek ligt in Roombeek, de wijk die werd herbouwd na de vuurwerkramp van 13 mei 2000, toen een vuurwerkopslag de lucht in ging. Er vielen 23 doden en zo'n 950 gewonden, en honderden woningen werden met de grond gelijkgemaakt. De plek van de ontploffing ligt ongeveer een kilometer ten zuiden van hier. Wat er die middag op deze hoek gebeurde, staat in niets wat wij hebben kunnen vinden, en aannemen dat een oude boom een ramp heeft overleefd omdat hij oud is en nog staat, is precies het soort nette verhaal dat fout blijkt te zijn. Was je hier, of weet je hoe deze hoek er die week uitzag? Laat het ons weten."
+  },
+  "ens_013": {
+   "name": "De kersenberk van de Oosterbegraafplaats",
+   "species": "Kersenberk (Betula lenta)",
+   "age_estimate": "ruwweg 75 tot 175 jaar, geschat naar een stamomtrek van 2,34 m",
+   "access": "Gratis. De begraafplaats is een openbaar rijksmonument, dagelijks open van zonsopgang tot zonsondergang.",
+   "transport": "Ongeveer 3 km ten noordoosten van het centrum van Enschede (Noord Esmarkerrondweg 407); het best bereikbaar met de fiets of de auto. Dezelfde begraafplaats als de Hongaarse eik, de amberboom en de Kaukasische spar.",
+   "story": "Zijn twijgen ruiken naar wintergroen, scherp en zoet: dezelfde olie die ooit birch beer en root beer op smaak bracht, voordat chemici leerden haar zonder schors te maken. Daar komt de Engelse naam vandaan. Betula lenta heet daar sweet birch, een van de weinige bomen waarvan de gewone naam een geur beschrijft in plaats van een uiterlijk.\n\nHet register van de Bomenstichting neemt hem op om dendrologische redenen, dezelfde als voor de Hongaarse eik, de amberboom en de Kaukasische spar die vlakbij op dezelfde begraafplaats staan: een mooi, ongewoon exemplaar, geen gedocumenteerde leeftijd. Deze heeft een flinke stam voor zijn soort, gemeten op 2,34 meter omtrek en zo'n 18 meter hoog, een maat die een onafhankelijke inventarisatie van de bomen op de begraafplaats bevestigt. Geen van beide bronnen noemt een plantdatum.\n\nDe kersenberk komt van nature voor in de Appalachen en de loofbossen van het oosten van de Verenigde Staten, waar zijn sap ooit werd getapt en ingekookt, ongeveer zoals bij de suikeresdoorn, tot een stroop die vaag naar munt smaakt. In Enschede staat hij achter op het noordelijke hoofdpad van een begraafplaats uit 1899 die rijksmonument is: de vierde boom van dit ene stuk grond met een plek in het landelijke register.\n\nWeet iemand wanneer hij is geplant? Dan horen we het graag."
+  },
+  "ens_014": {
+   "name": "Het Beukenberceau van het Van Heekpark",
+   "species": "Gewone haagbeuk (Carpinus betulus)",
+   "age_estimate": "ongeveer een eeuw oud (de bronnen verschillen over het precieze plantjaar)",
+   "access": "Gratis, openbaar park (rijksmonument sinds 1995)",
+   "transport": "Ongeveer 1,8 km ten westen van station Enschede, zo'n 20 tot 25 minuten lopen; het park grenst aan de Hengelosestraat.",
+   "story": "In het Beukenberceau van het Van Heekpark staat geen enkele beuk.\n\nDe boom die het werk doet, is de haagbeuk, Carpinus betulus, die ondanks zijn naam tot een heel andere familie hoort. De haagbeuk krijgt deze klus vanwege zijn karakter. Hij verdraagt jaar na jaar strak knippen en houdt tientallen jaren een architectonische vorm vast, en daarom grijpen tuiniers in heel Europa naar hem zodra een tunnel een tunnel moet blijven.\n\nEr staan er hier ongeveer honderd, in twee geleide rijen, gesnoeid tot een groene gang die de belangrijkste verbinding vormt tussen het G.J. van Heekpark en het Van Lochemsbleekpark ernaast.\n\nWanneer het berceau werd aangeplant, staat echt niet vast. Het landelijke register van monumentale bomen zegt dat het park in 1917 en 1918 werd aangelegd en dat het berceau toen werd gemaakt. De beschrijving van het rijksmonument zegt dat het in 1929 werd aangelegd, aan de zuidoostkant van het bos van het Van Lochemsbleekpark. Of dat één klus is die twee keer is beschreven, of een aanplant die later werd uitgebreid, valt niet vast te stellen, dus beide jaartallen blijven staan.\n\nHet park komt voort uit de textielbloei. Tuinarchitect P.H. Wattez ontwierp het voor Gerrit Jan van Heek, een van de fabrikanten wier fabrieken de moderne stad maakten, en Van Heek droeg het in 1918 over aan de gemeente. De fabrieken zijn allang dicht. De tunnel wordt nog steeds geknipt, en beide parken zijn sinds 1995 samen één rijksmonument.\n\nHier loop je doorheen, je staat er niet voor."
+  },
+  "ens_015": {
+   "name": "De plataan op de Klokkenplas",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ruwweg 150 tot 165 jaar",
+   "access": "Gratis, openbaar plein",
+   "transport": "In het centrum, ongeveer 1 tot 1,5 km of 15 tot 20 minuten lopen van station Enschede.",
+   "story": "De tuin waar deze boom bij hoorde, is verdwenen. De boom staat nog midden op de plek waar die tuin lag.\n\nHet landelijke register van monumentale bomen noemt de plataan op de Klokkenplas een restant van een tuin van de familie Van Heek en dateert de aanplant ergens tussen 1860 en 1870. Een onderzoek uit 2026 van de plaatselijke erfgoedstichting naar de historische platanen van de stad schat de groep waartoe hij hoort op 140 tot 160 jaar, iets jonger en duidelijk overlappend. Ongeveer anderhalve eeuw is zo nauwkeurig als de twee bronnen eerlijk gezegd worden.\n\nDat is lang genoeg om te hebben meegemaakt hoe het terrein eromheen van privégrond een openbaar plein werd, en hoe Enschede een textielstad werd en daarna ophield er een te zijn.\n\nHij is niet de enige. Hetzelfde onderzoek rekent hem tot een klein groepje monumentale platanen in het centrum, samen met de Bomen van Herman aan de Noorderhagen en de plataan aan de Cort van der Lindelaan, die zelf het restant is van een buitentuin die de stad in de jaren twintig bebouwde. Drie bomen, drie verdwenen tuinen, en een makkelijke wandeling ertussen.\n\nDe erfgoedstichting noemde haar stuk over deze platanen 'als bomen konden praten'. Deze zou het grootste deel van het gesprek besteden aan dingen die er niet meer zijn."
+  }
+ }
+}

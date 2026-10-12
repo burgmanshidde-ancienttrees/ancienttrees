@@ -17,6 +17,8 @@ Rung 1: three of our own Baarn Town Hall Plane photographs (brn_008) viewed and 
 
 Retry attempt (same window): no claims were standing. The 46 READY leads are thin register rows that preflight would refuse under recovery mode (not rich), and the five written-but-unmerged research entries (del_011, ftw_018, lpz_019, std_001, nsb_001) carry open access or pin questions, so no write pass was dispatched. Translated Amersfoort into Dutch (nl, 40 English impressions; 18 trees, about 80k tokens), applied, preflight and i18ncheck clean. The translator flagged two English fixes for Amersfoort: the FAQ says "all fourteen" free to visit but the city has eighteen trees and ame_015 sits in a private garden, and ame_015's access line quotes raw register fields (owner_category, visitable). Not yet fixed in English.
 
+Third attempt (same window): no claims standing. Spokane claimed then released: only 1 of 19 register candidates unmined, under the six-candidate floor, so a 48h wall. Translated Enschede into Dutch (nl, 22 English impressions; 13 trees, about 75k tokens); i18ncheck clean after trimming two meta lines and the intro. Fixed two English errors the translator found in data/cities/enschede.json: the FAQ said "All seven" for 13 trees, and the meta description put an oak on a city square where the tree on the square is the plane. Next in the queue: nl ghent, den-bosch, emmen.
+
 
 ## 2026-10-12 evening, session: Hidde's app test, round two
 
