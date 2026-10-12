@@ -110,13 +110,7 @@ struct BrandSheet<Extra: View>: View {
         ScrollView {
             VStack(spacing: 0) {
                 if let icon {
-                    Image(systemName: icon)
-                        .font(.system(size: 24, weight: .semibold))
-                        .foregroundStyle(Brand.moss)
-                        .frame(width: 56, height: 56)
-                        .background(Brand.mossTint, in: .rect(cornerRadius: 14, style: .continuous))
-                        .padding(.bottom, 16)
-                        .accessibilityHidden(true)
+                    SheetIconTile(symbol: icon).padding(.bottom, 16)
                 }
                 Text(title)
                     .font(.brand(26, .bold, relativeTo: .title2))
@@ -200,6 +194,20 @@ extension BrandSheet where Extra == EmptyView {
         self.icon = icon; self.title = title; self.message = message; self.points = points
         self.buttons = buttons; self.footnote = footnote; self.extra = { EmptyView() }
         self.onClose = onClose
+    }
+}
+
+/// The tile at the top of a sheet: a symbol in moss on a soft green square.
+/// Shared, so a step of the add-a-tree flow wears the same one (2026-10-12).
+struct SheetIconTile: View {
+    let symbol: String
+    var body: some View {
+        Image(systemName: symbol)
+            .font(.system(size: 24, weight: .semibold))
+            .foregroundStyle(Brand.moss)
+            .frame(width: 56, height: 56)
+            .background(Brand.mossTint, in: .rect(cornerRadius: 14, style: .continuous))
+            .accessibilityHidden(true)
     }
 }
 

@@ -126,6 +126,9 @@ struct CollectSheet: View {
     @State private var detent: PresentationDetent = .height(210)
     /// The intro's measured height, so the sheet fits it exactly.
     @State private var introHeight: CGFloat = 210
+    /// The measured height of a step laid out as the one sheet (ticked,
+    /// unsure, compare), so it fits the way BrandSheet does.
+    @State private var fitHeight: CGFloat = 420
     @State private var shot: UIImage?
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
@@ -198,7 +201,7 @@ struct CollectSheet: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            if stage != .intro { closeRow }
+            if stage != .intro && !fits { closeRow }
             if stage == .intro {
                 // The intro FILLS the sheet so its one action sits where a
                 // thumb already is, which is what Airbnb does with any sheet
@@ -223,17 +226,38 @@ struct CollectSheet: View {
                 // A map needs the whole sheet, so this one does not scroll
                 // either. Same reason as the intro.
                 placeState
-            } else {
+            } else if fits {
+                // THE ONE SHEET'S LAYOUT for the steps that answer or ask one
+                // thing (Hidde, 2026-10-12, "yes"): the tile, the centred
+                // title, the pills, and a height that fits what is on it. They
+                // were left-aligned in a full-height sheet with half a screen
+                // of white under the buttons.
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 20) {
+                    VStack(spacing: 0) {
                         switch stage {
                         case .ticked(let id): if let t = catalogue.tree(id) { tickedState(t) }
-                        case .identify: identifyState
                         case .unsure: unsureState
                         case .compare(let id):
                             if let t = catalogue.tree(id) { compareState(t) }
-                        case .intro, .place: EmptyView()
+                        default: EmptyView()
                         }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal, 24)
+                    .padding(.top, 36)
+                    .padding(.bottom, BrandSheetFit.floating ? 28 : 16)
+                    .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { h in
+                        fitHeight = max(200, h)
+                        if fits { detent = fittedDetent }
+                    }
+                }
+                .scrollBounceBehavior(.basedOnSize)
+                .modifier(BrandSheetFit())
+                .overlay(alignment: .topTrailing) { SheetCloseButton { closeTapped() } }
+            } else {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 20) {
+                        identifyState
                     }
                     .padding(.horizontal, 20).padding(.bottom, 32)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -265,10 +289,11 @@ struct CollectSheet: View {
         // running large Dynamic Type can drag it up rather than meeting clipped
         // text. Every later step is a map, a list or a form, and those want the
         // whole sheet.
-        .presentationDetents(stage == .intro ? [.height(introHeight), .large] : [.large],
+        .presentationDetents(stage == .intro ? [.height(introHeight), .large]
+                                : fits ? [fittedDetent, .large] : [.large],
                              selection: $detent)
         .onChange(of: stage) { _, now in
-            detent = now == .intro ? .height(introHeight) : .large
+            detent = now == .intro ? .height(introHeight) : fits ? fittedDetent : .large
         }
         .brandSheetHandle()
         .presentationBackground(Color(.systemBackground))
@@ -379,6 +404,22 @@ struct CollectSheet: View {
         return shot != nil
     }
 
+    /// The steps drawn as the one sheet: one answer or one question each.
+    private var fits: Bool {
+        switch stage {
+        case .ticked, .unsure, .compare: true
+        default: false
+        }
+    }
+
+    private var fittedDetent: PresentationDetent {
+        .height(fitHeight - (BrandSheetFit.floating ? BrandSheetFit.bottomInset : 0))
+    }
+
+    private func closeTapped() {
+        if hasWork { confirmingDiscard = true } else { dismiss() }
+    }
+
     private var closeRow: some View {
         HStack {
             Spacer()
@@ -390,7 +431,7 @@ struct CollectSheet: View {
 
     /// The circle stays 30 points; the finger gets 44.
     private var closeButton: some View {
-            Button { if hasWork { confirmingDiscard = true } else { dismiss() } } label: {
+            Button { closeTapped() } label: {
                 Image(systemName: "xmark")
                     .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(Brand.inkSoft)
@@ -817,30 +858,46 @@ struct CollectSheet: View {
     /// Same shape as the other two payoffs, and deliberately not a checkmark:
     /// nothing has been ticked off, because nobody has said which tree it was.
     private var unsureState: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Image(systemName: "paperplane.circle.fill")
-                .font(.system(size: 44))
-                .foregroundStyle(Brand.moss)
-            Text("Thank you, that helps")
-                .font(.brand(24, .heavy))
-                .foregroundStyle(Brand.ink)
-            Text("We will work out which tree it is from your photograph, and your log will show it once we know.")
-                .font(.body)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-            Text("Trees standing close together catch us out too. Telling us is more useful than a guess.")
-                .font(.footnote)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
-            Button { dismiss() } label: {
-                HStack { Spacer(); Text("Done").font(.brand(17, .bold)); Spacer() }
-                    .padding(.vertical, 15)
-                    .background(Brand.moss, in: .rect(cornerRadius: 15))
-                    .foregroundStyle(.white)
-            }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("collect-unsure-done")
+        VStack(spacing: 0) {
+            SheetIconTile(symbol: "paperplane.fill").padding(.bottom, 16)
+            sheetTitle("Thank you, that helps")
+            sheetMessage("We will work out which tree it is from your photograph, and your log will show it once we know.")
+            Button("Done") { dismiss() }
+                .buttonStyle(SheetButtonStyle(kind: .primary))
+                .accessibilityIdentifier("collect-unsure-done")
+                .padding(.top, 22)
+            sheetFootnote("Trees standing close together catch us out too. Telling us is more useful than a guess.")
         }
+    }
+
+    /// The one sheet's title, message and footnote, for the steps drawn like
+    /// it. The same sizes as Kit/BrandSheet.swift.
+    private func sheetTitle(_ text: String) -> some View {
+        Text(text)
+            .font(.brand(26, .bold, relativeTo: .title2))
+            .foregroundStyle(Brand.ink)
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.horizontal, 18)
+            .accessibilityAddTraits(.isHeader)
+    }
+
+    private func sheetMessage(_ text: String) -> some View {
+        Text(text)
+            .font(.system(size: 15))
+            .foregroundStyle(Brand.inkSoft)
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.top, 8)
+    }
+
+    private func sheetFootnote(_ text: String) -> some View {
+        Text(text)
+            .font(.footnote)
+            .foregroundStyle(Brand.inkSoft)
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.top, 14)
     }
 
     // MARK: - Is this the one
@@ -856,18 +913,15 @@ struct CollectSheet: View {
     /// space. Hidde's rule, same day: without one of the three it should not
     /// be offered as a thing you can confirm.
     private func compareState(_ t: Tree) -> some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Text(t.name)
-                .font(.brand(24, .heavy)).foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-            Text(Self.candidateLabel(species: t.commonName,
-                                     metres: (at != nil || location.known)
-                                         ? Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)
-                                         : nil,
-                                     direction: (at != nil || location.known)
-                                         ? Self.compass(from: at ?? origin, to: (t.lat, t.lng))
-                                         : ""))
-                .font(.subheadline).foregroundStyle(Brand.inkSoft)
+        VStack(spacing: 0) {
+            sheetTitle(t.name)
+            sheetMessage(Self.candidateLabel(species: t.commonName,
+                                             metres: (at != nil || location.known)
+                                                 ? Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)
+                                                 : nil,
+                                             direction: (at != nil || location.known)
+                                                 ? Self.compass(from: at ?? origin, to: (t.lat, t.lng))
+                                                 : ""))
 
             // A photograph of OUR tree, as large as the sheet allows, because
             // comparing two pictures is the one check anybody can do standing
@@ -877,6 +931,7 @@ struct CollectSheet: View {
                     .frame(maxWidth: .infinity)
                     .frame(height: 220)
                     .clipShape(.rect(cornerRadius: 14))
+                    .padding(.top, 18)
             }
 
             if !t.howToRecognise.isEmpty {
@@ -884,41 +939,34 @@ struct CollectSheet: View {
                     Text("How do I find it?")
                         .font(.brand(13, .bold)).foregroundStyle(Brand.inkSoft)
                     Text(t.howToRecognise)
-                        .font(.body).foregroundStyle(Brand.ink)
+                        .font(.system(size: 15)).foregroundStyle(Brand.ink)
                         .fixedSize(horizontal: false, vertical: true)
                 }
+                .padding(14)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Brand.surface, in: .rect(cornerRadius: 14))
+                .padding(.top, 18)
             }
 
-            if t.precision == .approximate {
-                Text("Our pin for this one is rough: it marks the place, not the trunk.")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-
-            // The honest empty state, and the reason the 551 matter.
-            if t.photo == nil && t.howToRecognise.isEmpty && t.precision == .approximate {
-                Text("We have no photograph or description of this one and only a rough pin, so we cannot help you be sure.")
-                    .font(.footnote).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-
-            Button {
+            Button("This is the one") {
                 if let shot, let at { claim(t, image: shot, at: at) }
-            } label: {
-                HStack { Spacer(); Text("This is the one").font(.brand(17, .bold)); Spacer() }
-                    .padding(.vertical, 15)
-                    .background(Brand.moss, in: .rect(cornerRadius: 15))
-                    .foregroundStyle(.white)
             }
-            .buttonStyle(.plain)
+            .buttonStyle(SheetButtonStyle(kind: .primary))
             .accessibilityIdentifier("collect-this-is-the-one")
+            .padding(.top, 22)
 
             Button("Back to the list") {
                 withAnimation(.snappy) { stage = .identify }
             }
-            .font(.footnote.weight(.semibold))
-            .foregroundStyle(Brand.inkSoft)
-            .frame(maxWidth: .infinity, minHeight: 44)
+            .buttonStyle(SheetButtonStyle(kind: .quiet))
+            .padding(.top, 12)
+
+            if t.precision == .approximate {
+                // The honest empty state, and the reason the 551 matter.
+                sheetFootnote(t.photo == nil && t.howToRecognise.isEmpty
+                    ? "We have no photograph or description of this one and only a rough pin, so we cannot help you be sure."
+                    : "Our pin for this one is rough: it marks the place, not the trunk.")
+            }
         }
     }
 
@@ -1012,82 +1060,55 @@ struct CollectSheet: View {
     /// collecting is filing paperwork. Somebody stood in front of something
     /// and the app's job at that exact second is to tell them what it is.
     private func tickedState(_ t: Tree) -> some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Image(systemName: "checkmark.seal.fill")
-                .font(.system(size: 44))
-                .foregroundStyle(Brand.moss)
-            Text("You found \(t.name)")
-                .font(.brand(24, .heavy))
-                .foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-            Text(subtitle(t))
-                .font(.body)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
+        VStack(spacing: 0) {
+            SheetIconTile(symbol: "checkmark.seal.fill").padding(.bottom, 16)
+            sheetTitle("You found \(t.name)")
+            sheetMessage(subtitle(t))
             if let first = Self.firstOf(tree: t, visited: saved.entries,
                                         trees: catalogue.trees) {
-                milestone(first)
+                milestone(first).padding(.top, 18)
             }
-            Text("It is in your trees now, with your photograph.")
-                .font(.subheadline)
-                .foregroundStyle(Brand.inkSoft)
-            // The same sentence as the submit screen, and it belongs here for
-            // the same reason: Hidde's ruling covers a tree we ALREADY map, so
-            // a photograph taken on this screen can end up on that tree's page
-            // when the page has none or this one is better. Somebody who is
-            // told that only on the other screen has not been told.
-            Text("We may use your photograph on the tree's page and when we share Ancient Trees on social media.")
-                .font(.footnote)
-                .foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
             // THE ONE MOMENT THIS QUESTION CAN BE ASKED HONESTLY. Somebody is
             // standing in front of a tree we already map, having just found
             // it, which is the only state in the whole product where "was it
             // worth the trip" has a real answer. It sits above Done rather
             // than below it, because a control under the button that ends the
             // screen is a control nobody sees.
-            WorthTheTripAsk(tree: t)
-            doneButton
-            // THE ESCAPE FROM A CONFIDENT MATCH, and it used to be a grey link
-            // in the footnote size. Hidde photographed exactly this screen in
-            // Nara and said the thing that matters: "deze hele bevestiging is
-            // wel heel nice maar dan moet je wel 100% zeker weten of dat m was
-            // - ik heb geen idee en ik gok van niet." A page-wide green button
-            // saying You Found It, with the doubt hidden underneath it in the
-            // smallest type on the screen, is an interface arguing with the
-            // person holding it.
-            //
-            // So it is a bordered control the same size as Done, always shown.
-            // Where several trees are near, it reopens the list; where only
-            // this one is, being wrong means we do not map the tree at all, so
-            // it goes to the form.
-            Button {
-                if case .ticked(let id) = stage { saved.toggleVisited(id) }
-                // DOUBT IS NOT DENIAL, and this line used to treat it as one.
-                // With a single candidate near, it sent an unsure person
-                // straight to "We do not have this one" and a form asking them
-                // to name a new tree, which is how a duplicate of a tree we
-                // already map enters the database on the strength of somebody
-                // hesitating. It is the same mistake "None of these" makes,
-                // arrived at from the other side, and the flow walk caught it
-                // on its first run.
-                //
-                // The list is the honest destination whatever its length: it
-                // holds all three answers, including "I am not sure which".
-                // Only with nothing of ours near at all is the form right.
-                if candidates.isEmpty { startDraft() } else {
-                    withAnimation(.snappy) { stage = .identify }
+            WorthTheTripAsk(tree: t, centred: true)
+                .padding(.top, 20)
+            VStack(spacing: 12) {
+                doneButton
+                // THE ESCAPE FROM A CONFIDENT MATCH (Hidde in Nara: "deze hele
+                // bevestiging is wel heel nice maar dan moet je wel 100% zeker
+                // weten of dat m was"): a grey pill the same size as Done,
+                // always shown, never a grey link in the footnote size.
+                Button("I am not sure it was this one") {
+                    if case .ticked(let id) = stage { saved.toggleVisited(id) }
+                    // DOUBT IS NOT DENIAL, and this line used to treat it as one.
+                    // With a single candidate near, it sent an unsure person
+                    // straight to "We do not have this one" and a form asking them
+                    // to name a new tree, which is how a duplicate of a tree we
+                    // already map enters the database on the strength of somebody
+                    // hesitating. It is the same mistake "None of these" makes,
+                    // arrived at from the other side, and the flow walk caught it
+                    // on its first run.
+                    //
+                    // The list is the honest destination whatever its length: it
+                    // holds all three answers, including "I am not sure which".
+                    // Only with nothing of ours near at all is the form right.
+                    if candidates.isEmpty { startDraft() } else {
+                        withAnimation(.snappy) { stage = .identify }
+                    }
                 }
-            } label: {
-                HStack { Spacer(); Text("I am not sure it was this one")
-                    .font(.brand(16, .bold)); Spacer() }
-                    .padding(.vertical, 14)
-                    .overlay(RoundedRectangle(cornerRadius: 15)
-                        .stroke(Brand.inkSoft.opacity(0.35), lineWidth: 1))
-                    .foregroundStyle(Brand.ink)
+                .buttonStyle(SheetButtonStyle(kind: .secondary))
+                .accessibilityIdentifier("collect-not-this-one")
             }
-            .buttonStyle(.plain)
-            .accessibilityIdentifier("collect-not-this-one")
+            .padding(.top, 22)
+            // The same sentence as the submit screen: Hidde's ruling covers a
+            // tree we ALREADY map, so somebody told only there is not told.
+            sheetFootnote("It is in your trees now, with your photograph.")
+            sheetFootnote("We may use your photograph on the tree's page and when we share Ancient Trees on social media.")
+                .padding(.top, -8)
         }
     }
 
@@ -1221,13 +1242,9 @@ struct CollectSheet: View {
     /// whatever we decide about ours.
 
     private var doneButton: some View {
-        Button { dismiss() } label: {
-            HStack { Spacer(); Text("Done").font(.brand(17, .bold)); Spacer() }
-                .padding(.vertical, 15)
-                .background(Brand.moss, in: .rect(cornerRadius: 15))
-                .foregroundStyle(.white)
-        }
-        .accessibilityIdentifier("collect-done")
+        Button("Done") { dismiss() }
+            .buttonStyle(SheetButtonStyle(kind: .primary))
+            .accessibilityIdentifier("collect-done")
     }
 }
 

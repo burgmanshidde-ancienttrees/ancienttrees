@@ -170,33 +170,17 @@ extension Font {
 
 /// The one filled control. AllTrails colours exactly one thing on any screen and
 /// it is always the verb; this is that thing.
-public struct BrandButtonStyle: ButtonStyle {
+struct BrandButtonStyle: ButtonStyle {
     var prominent = true
 
-    public func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            // The system face at semibold, not the display face at black.
-            // Gabarito Black is a poster weight: on a button it reads as
-            // shouting, which is most of why the old control looked heavy
-            // (Hidde, 2026-08-22).
-            .font(.system(size: 16, weight: .semibold))
-            .foregroundStyle(prominent ? Brand.onMoss : Brand.ink)
-            .frame(maxWidth: .infinity)
-            .frame(height: 54)
-            // A ROUNDED RECTANGLE rather than a capsule. Airbnb, Booking and
-            // every checkout on a phone use a 12 point radius; a full capsule
-            // at this width is a lozenge, and a lozenge is the shape of an
-            // advert.
-            .background(prominent ? Brand.moss : Brand.surface,
-                        in: .rect(cornerRadius: 12))
-            .overlay {
-                if !prominent {
-                    RoundedRectangle(cornerRadius: 12)
-                        .strokeBorder(Brand.ink.opacity(0.22), lineWidth: 1)
-                }
-            }
-            .opacity(configuration.isPressed ? 0.85 : 1)
-            .animation(.easeOut(duration: 0.12), value: configuration.isPressed)
+    /// ONE BUTTON SHAPE IN THE APP (Hidde, 2026-10-12, "yes" to the QA pass
+    /// that found two): the sheet's pill, green or grey, 48 tall. It used to
+    /// be a 54 point rounded rectangle with a 12 radius, Airbnb's checkout
+    /// shape, while every sheet since 2026-10-10 draws a capsule, so one
+    /// screen could show both. This draws through SheetButtonStyle so the two
+    /// cannot drift apart again.
+    func makeBody(configuration: Configuration) -> some View {
+        SheetButtonStyle(kind: prominent ? .primary : .secondary).makeBody(configuration: configuration)
     }
 }
 

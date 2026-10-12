@@ -80,7 +80,7 @@ struct SharedTreeView: View {
                                 .font(.brand(17, .bold))
                             Spacer() }
                             .padding(.vertical, 15)
-                            .background(Brand.moss, in: .rect(cornerRadius: 15))
+                            .background(Brand.moss, in: .capsule)
                             .foregroundStyle(.white)
                     }
                     .buttonStyle(.plain)

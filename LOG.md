@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - App: one button shape, the add-a-tree steps on the one sheet, Sign in visible on a small iPhone
+
+Hidde said yes to the three design fixes from the QA pass.
+
+- **One button shape.** Every big button in the app is now the sheet's pill (48 tall, round ends). The tree page's Take me there, Collect this tree and Save tree, the map's arrival card, Discover's grey buttons, the walk screen and the shared-tree page all used to be rounded rectangles. `BrandButtonStyle` draws through `SheetButtonStyle` now, so the two cannot drift apart.
+- **The add-a-tree steps look like the other pop-ups.** "You found it", "Thank you, that helps" and "Is this the one" have the green tile, a centred title, pill buttons and a height that fits. Before, they were left-aligned in a full-height sheet with half a screen of white under the buttons. The thumbs on "Was it worth the trip?" are pills too. The candidate list and the map pin stay full height.
+- **Signed out on an iPhone SE, My trees opens one step higher**, so the Sign in button is no longer half under the tab bar.
+
+Verified: appfit 0 findings on 76 screens (SE and 17 Pro, iOS 26), and the changed screens looked at on the SE.
 ## 2026-10-12 - Session: four more token savings, and the cost meter sees again
 
 - **Night-run coordinator on Sonnet** (`CLAUDE_MODEL` in nightly.yml, all four attempts). It mostly runs scripts, merges and logs; write-stories, photo-judge and translate keep Opus by their own definitions. Revert: delete the env line and the four `--model` flags.

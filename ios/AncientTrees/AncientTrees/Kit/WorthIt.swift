@@ -426,6 +426,8 @@ struct FlowChips<Content: View>: View {
 /// dismissal, and never shown twice for the same tree.
 struct WorthTheTripAsk: View {
     let tree: Tree
+    /// Centred on a step that is laid out like the one sheet.
+    var centred = false
 
     @Environment(Account.self) private var account
     @Environment(VoteCounts.self) private var counts
@@ -437,7 +439,7 @@ struct WorthTheTripAsk: View {
     var body: some View {
         Group {
             if vote.isEmpty {
-                VStack(alignment: .leading, spacing: 10) {
+                VStack(alignment: centred ? .center : .leading, spacing: 10) {
                     Text("Was it worth the trip?")
                         .font(.subheadline.weight(.semibold))
                         .foregroundStyle(Brand.ink)
@@ -477,7 +479,7 @@ struct WorthTheTripAsk: View {
             Image(systemName: icon)
                 .font(.system(size: 20, weight: .semibold))
                 .frame(width: 64, height: 44)
-                .background(Brand.surfaceMuted, in: .rect(cornerRadius: 12))
+                .background(Brand.surfaceMuted, in: .capsule)
                 .foregroundStyle(Brand.ink)
         }
         .buttonStyle(.plain)

@@ -322,7 +322,17 @@ struct CollectView: View {
         }
         .brandGround()
         .toolbar(.hidden, for: .navigationBar)
-        .onAppear { takeWantToVisit() }
+        .onAppear {
+            takeWantToVisit()
+            // SIGNED OUT ON A SMALL PHONE, ONE STOP HIGHER (2026-10-12). Half
+            // is 52 percent of the screen, and on an iPhone SE that left the
+            // Sign in button, the only thing this page offers signed out,
+            // half under the tab bar. The card stop is 400 points, which on
+            // the SE is taller than half and holds the whole lane.
+            if !account.isSignedIn, sheetHeight == .half, Self.screenHeight < 700 {
+                sheetHeight = .card
+            }
+        }
         .onChange(of: navigator.openWantToVisit) { _, _ in takeWantToVisit() }
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
@@ -379,6 +389,12 @@ struct CollectView: View {
     /// may not have reached the account yet, and it is the one thing here that
     /// signing back in cannot undo.
     private var showsYourCollection: Bool { account.isSignedIn }
+
+    private static var screenHeight: CGFloat {
+        UIApplication.shared.connectedScenes
+            .compactMap { ($0 as? UIWindowScene)?.screen.bounds.height }
+            .first ?? 800
+    }
 
     /// Your trees, and the picker that chooses which list.
     @ViewBuilder private var sheetBody: some View {
