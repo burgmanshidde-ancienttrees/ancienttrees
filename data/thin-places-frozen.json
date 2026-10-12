@@ -365,6 +365,7 @@
   "shokawa",
   "simsbury",
   "siquijor",
+  "sittard-geleen",
   "sliven",
   "solingen",
   "soreze",
@@ -379,6 +380,7 @@
   "sunderland-massachusetts",
   "suzuka",
   "taasinge",
+  "takachiho",
   "takahagi",
   "takahama",
   "takayama",
@@ -450,16 +452,18 @@
   "yangshuo",
   "yoshida",
   "yvignac-la-tour",
+  "zaanstad",
   "zadeikoniai",
   "zalgiriai",
   "zarzecze",
   "zehdenick",
   "zilina",
   "zwieslerwaldhaus",
-  "zywiec",
-  "takachiho"
+  "zywiec"
  ],
  "exceptions": {
-  "takachiho": "Hidde, 2026-10-02: 'at three at takachiho'. Opened at three on his call: Chichibu-sugi (800 yr, 55 m, Miyazaki 100 giant trees), Meoto-sugi, Amano Iwato ogatama. The fourth and fifth (Shimono Hachiman's national-monument ginkgo and zelkova) wait in data/research/takachiho-verified.json for a trunk pin or a photograph."
+  "takachiho": "Hidde, 2026-10-02: 'at three at takachiho'. Opened at three on his call: Chichibu-sugi (800 yr, 55 m, Miyazaki 100 giant trees), Meoto-sugi, Amano Iwato ogatama. The fourth and fifth (Shimono Hachiman's national-monument ginkgo and zelkova) wait in data/research/takachiho-verified.json for a trunk pin or a photograph.",
+  "sittard-geleen": "2026-10-12, not a new place: live since 2026-08-23 with 7 trees, it fell to 3 when the register-dead sweep retired sit_003, sit_004, sit_006 and sit_008 (LRMB status 5, felling confirmed in the inspection layer). A dead tree never ships, and the 10-01 pause is worded 'no new place below four'; keeping the page with its three living trees is the reversible choice. FOR HIDDE in LOG.md: delete this line and the slug, and retire the page, if you would rather it went.",
+  "zaanstad": "2026-10-12, not a new place: live since 2026-08-23 with 4 trees, it fell to 3 when the register-dead sweep retired zaa_009 (LRMB status 5, felling confirmed in the inspection layer). A dead tree never ships, and the 10-01 pause is worded 'no new place below four'; keeping the page with its three living trees is the reversible choice. FOR HIDDE in LOG.md: delete this line and the slug, and retire the page, if you would rather it went."
  }
 }

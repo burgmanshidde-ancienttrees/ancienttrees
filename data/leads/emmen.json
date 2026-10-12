@@ -1,0 +1,43 @@
+{
+ "leads": [
+  {
+   "id": "emm_004",
+   "name": "The Tiger Oak of the Rensenpark",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 205 to 215 years, from the register's planting band of 1810 to 1820",
+   "age_min": 206,
+   "age_max": 216,
+   "location": {
+    "address": "Rensenpark, Hoofdstraat 18",
+    "latitude": 52.78655,
+    "longitude": 6.89685,
+    "neighbourhood": "Centrum"
+   },
+   "story": "The register calls this one the tijgereik, the tiger oak, which is a nickname earned by geography rather than by anything about the tree.\n\nThe Rensenpark is a park in the middle of Emmen and it is built on the site of the old Dierenpark Emmen, the zoo that stood here for most of the twentieth century before moving to a new site. The animals are gone and the park is public, but the layout remembers them, and so does this oak, which spent decades standing beside an enclosure.\n\nIt was planted between 1810 and 1820, so it is a good deal older than the zoo and predates the town centre growing out to reach it.\n\nA two hundred year old oak in a former zoo is a peculiar object to stand in front of. The ground around it was, within living memory, a place people came to look at animals from other continents, and now it is grass. The tree is the only exhibit still in position.\n\nAcorns on long stalks, leaves seated almost directly on the twig. In October there will be a great many of them, and no tigers.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free. Public park in the centre of Emmen.",
+   "transport": "In the centre of Emmen, on the Hoofdstraat.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "how_to_recognise": "A heavy old oak in the park on the site of the former zoo, thicker than anything planted since.",
+   "best_time": {
+    "months": [
+     10
+    ],
+    "kind": "fruit",
+    "label": "October, when the acorns come down"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "removed": "2026-10-12",
+   "removed_reason": "LRMB nr 1694840 status 5 Dood/geveld. Last inspection 2019-04-29: condition fair, a fungus fruiting body showing decay inside the trunk; no record of it standing since, and none of the felling either. Retired on the register's own status; restore from this lead if a reader's dated photograph shows it standing. Checked 2026-10-12."
+  }
+ ],
+ "blocked": []
+}

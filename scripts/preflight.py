@@ -2780,7 +2780,102 @@ def check_register_says_the_tree_is_gone():
                     "REMOVED_TREE_SLUGS."
                     % (t["id"], t.get("name", "?"), doc.get("city", "?"), m.group(1)))
                 break
+            else:
+                out.extend(_lrmb_dead_by_pin(t, doc, dead))
     return out
+
+
+LRMB_DEAD_PIN_M = 5
+
+
+def _lrmb_dead_by_pin(t, doc, dead):
+    """The same check by coordinate, for trees that cite no register number.
+
+    Added 2026-10-12. register_match.py found 13 Dutch trees sitting 0 m from
+    a status-5 row (Roosendaal 4, Sittard-Geleen 4, Haarlemmermeer 3, Emmen,
+    Zaanstad): every one had been written from that row, coordinates and
+    address copied, but cited only "https://www.monumentalebomen.nl/", so the
+    number test above never saw them. Twelve had an inspector's own "geveld"
+    or "onvindbaar" in the inspection layer, some since 1998.
+
+    Within LRMB_DEAD_PIN_M of a dead row whose genus does not contradict ours
+    is the same trunk until a person says otherwise. The local rows carry only
+    a Dutch name, so the genus comes from data/genus-names.json word endings
+    ("zomereik" ends in "eik"); a name with no known ending contradicts
+    nothing. A different tree at the same spot (a replacement planted in the
+    old one's hole, a neighbour) stays when its verify_notes names the LRMB nr
+    and says why.
+    """
+    loc = t.get("location") or {}
+    la, ln = loc.get("latitude"), loc.get("longitude")
+    if la is None or ln is None:
+        return []
+    ours = _genus(t.get("species"))
+    notes = str(t.get("verify_notes") or "")
+    out = []
+    for nr, e in _lrmb_dead_near(la, ln, dead):
+        if nr in notes:
+            continue
+        theirs = _lrmb_genus(e.get("name"))
+        if ours and theirs and ours != theirs:
+            continue
+        out.append(
+            "%s %s (%s) stands within %d m of LRMB nr %s (%s), which the "
+            "register carries as status 5, Dood/geveld. If it is the same "
+            "trunk, check the inspection layer and retire it with "
+            "scripts/retire.py; if it is a different tree, say so in its "
+            "verify_notes, naming nr %s."
+            % (t["id"], t.get("name", "?"), doc.get("city", "?"), LRMB_DEAD_PIN_M,
+               nr, e.get("name") or "?", nr))
+    return out
+
+
+_LRMB_DEAD_GRID = {}
+_LRMB_GENUS_WORDS = None
+
+
+def _lrmb_dead_near(la, ln, dead):
+    if not _LRMB_DEAD_GRID:
+        for nr, e in dead.items():
+            if e.get("latitude") is None or e.get("longitude") is None:
+                continue
+            k = (round(e["latitude"], 3), round(e["longitude"], 3))
+            _LRMB_DEAD_GRID.setdefault(k, []).append((nr, e))
+        _LRMB_DEAD_GRID.setdefault(None, [])
+    k0, k1 = round(la, 3), round(ln, 3)
+    for i in (-1, 0, 1):
+        for j in (-1, 0, 1):
+            for nr, e in _LRMB_DEAD_GRID.get((round(k0 + i / 1000, 3), round(k1 + j / 1000, 3)), []):
+                d = math.hypot((la - e["latitude"]) * 111320.0,
+                               (ln - e["longitude"]) * 111320.0 * math.cos(math.radians(la)))
+                if d <= LRMB_DEAD_PIN_M:
+                    yield nr, e
+
+
+def _lrmb_genus(name):
+    """Genus of a Dutch register name by its last word's ending, or ''."""
+    global _LRMB_GENUS_WORDS
+    if _LRMB_GENUS_WORDS is None:
+        _LRMB_GENUS_WORDS = []
+        try:
+            with open(os.path.join("data", "genus-names.json"), encoding="utf-8") as fh:
+                genera = json.load(fh).get("genera", {})
+        except (OSError, ValueError):
+            genera = {}
+        for g, v in genera.items():
+            for w in v.get("words", []):
+                if len(w) >= 3:
+                    _LRMB_GENUS_WORDS.append((w.lower(), g.lower()))
+        # Longest ending first, so "esdoorn" wins over "doorn".
+        _LRMB_GENUS_WORDS.sort(key=lambda x: -len(x[0]))
+    words = re.findall(r"[a-zà-ÿ]+", str(name or "").lower())
+    if not words:
+        return ""
+    last = words[0] if len(words) == 1 else words[-1]
+    for w, g in _LRMB_GENUS_WORDS:
+        if last.endswith(w):
+            return g
+    return ""
 
 
 def check_a_by_licence_names_its_author():

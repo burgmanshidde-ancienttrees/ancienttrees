@@ -75,6 +75,44 @@
    "lng": 4.746024,
    "status": "lead",
    "why": "LRMB register nr 1679699 ('Witte paardenkastanje'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "id": "zaa_009",
+   "name": "The Horse Chestnut of the Dorpsstraat",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "age_estimate": "roughly 120 years, from a registered planting date around 1910",
+   "age_min": 116,
+   "age_max": 126,
+   "location": {
+    "address": "Naast Dorpsstraat 507, Assendelft",
+    "latitude": 52.473445,
+    "longitude": 4.746024,
+    "neighbourhood": "Assendelft"
+   },
+   "story": "One of the most planted trees in Europe is a threatened species in the wild. Aesculus hippocastanum survives naturally in a handful of mountain ravines in Greece, Albania and North Macedonia and nowhere else on earth, which is why the conservation lists rate it vulnerable while millions of them stand along streets from Dublin to Kyiv. It arrived in the west in the sixteenth century by way of Constantinople and Vienna, as a curiosity for rich gardens.\n\nThis one grows beside Dorpsstraat 507 in Assendelft, and the house number rewards a second look: the Dorpsstraat runs the whole length of a village that is essentially one very long road laid across the polder. The register puts the tree's planting between 1900 and 1910, so about 120 years, in a strip of municipal garden it has had to itself ever since.\n\nThe name is a puzzle you can work on while standing there. Look at the twigs in winter, at the scar where last year's leaf came away: a horseshoe outline with a row of small dots where the nails would sit. Whether that is where the horse in horse chestnut comes from, or whether it comes from the Ottoman habit of dosing broken-winded horses with the seeds, has never been settled.\n\nNobody recorded who planted this one. The register's history field is blank and no second source mentions the tree at all.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, a small public municipal garden.",
+   "transport": "",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     5
+    ],
+    "label": "May, when it flowers",
+    "kind": "flowers"
+   },
+   "how_to_recognise": "You can recognise it by the horseshoe-shaped leaf scars on its winter twigs. It stands in a small municipal garden beside Dorpsstraat 507, Assendelft.",
+   "removed": "2026-10-12",
+   "removed_reason": "LRMB nr 1679699 status 5 Dood/geveld; inspectors recorded it felled on 2014-08-21 and again on 2015-10-12. Checked 2026-10-12."
   }
  ]
 }

@@ -191,6 +191,24 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-12, scripts/retire.py: LRMB nr 1694840 status 5 Dood/geveld. Last inspection 2019-04-29: condition fair, a fungus
+  ["emmen", "tiger-oak-of-the-rensenpark"],
+  // 2026-10-12, scripts/retire.py: LRMB nr 1679699 status 5 Dood/geveld; inspectors recorded it felled on 2014-08-21 and agai
+  ["zaanstad", "horse-chestnut-of-the-dorpsstraat"],
+  // 2026-10-12, scripts/retire.py: LRMB status 5 Dood/geveld; inspectors: hrl_001 nr 1688940 dead 2007, felled by 2014, hrl_0
+  ["haarlemmermeer", "horse-chestnut-of-the-waterwolf"],
+  ["haarlemmermeer", "surviving-ash-of-the-hoofdweg"],
+  ["haarlemmermeer", "maple-of-the-nieuw-vennep-church"],
+  // 2026-10-12, scripts/retire.py: LRMB status 5 Dood/geveld; inspectors: sit_003 nr 1691231 grubbed after a 2010 storm (repl
+  ["sittard-geleen", "ash-of-jardin-disabelle"],
+  ["sittard-geleen", "sycamore-of-janskamperstraat"],
+  ["sittard-geleen", "pin-oak-of-sittards-stadspark"],
+  ["sittard-geleen", "tulip-tree-of-sittards-stadspark"],
+  // 2026-10-12, scripts/retire.py: LRMB status 5 Dood/geveld; inspectors: roo_003 nr 1680201 geveld 2014 (replaced by a young
+  ["roosendaal", "horse-chestnut-of-de-kring"],
+  ["roosendaal", "beech-of-vrouwenhof"],
+  ["roosendaal", "poplar-of-the-bloemenmarkt"],
+  ["roosendaal", "dutch-lime-of-emile-van-loonpark"],
   // 2026-10-12, scripts/retire.py: LRMB v2024 record nr 1684204 (Zomereik, Overcingel) at this tree's coordinate carries stat
   ["assen", "hollow-oak-of-overcingel"],
   // 2026-10-12, scripts/retire.py: Dead: LRMB status 5 (dood/geveld). hag_026 Vreugd en Rust copper beech cut back in 2014, o

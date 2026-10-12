@@ -75,6 +75,148 @@
       "lng": 4.461931,
       "status": "lead",
       "why": "LRMB register nr 1680936 ('Gewone plataan'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "id": "roo_003",
+      "name": "The Horse Chestnut of De Kring",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 190 years, from a registered planting date around 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Roosendaal, Kerkstraat 1, bij De Kring Roosendaal",
+        "latitude": 51.533716,
+        "longitude": 4.459202
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on the public square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "story": "This horse chestnut shares De Kring square with the Oriental plane the register also lists nearby, banded to a planting around 1840, roughly 190 years old and a decade older than its neighbour. Two trees of very different origins, one from the eastern Mediterranean and one from the mountains of the Balkans, ended up planted within a stone's throw of each other on an ordinary Dutch town square, which is itself a small piece of nineteenth century planting fashion: whatever looked handsome and grew reliably got planted, regardless of where it came from.\n\nAt close to two centuries a horse chestnut has usually developed the full domed crown and heavy lower limbs the species is known for, wide enough that a tree this age can shade most of a small square by itself. Every May it produces the upright white candle-shaped flower spikes chestnuts are grown for everywhere, and by autumn the ground beneath is scattered with the spiny green cases and glossy conkers that generations of Dutch children have collected from trees exactly like this one.\n\nThe register gives no history beyond species and decade. If you know more, tell us.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candle-shaped flower spikes cover the crown"
+      },
+      "how_to_recognise": "You can recognise it by the upright white flower candles in May and the conkers underneath in autumn, where the square's other registered tree is a plane. It stands on De Kring, in a different corner from that plane.",
+      "removed": "2026-10-12",
+      "removed_reason": "LRMB status 5 Dood/geveld; inspectors: roo_003 nr 1680201 geveld 2014 (replaced by a young tree), roo_005 nr 1680973 not found 2016, roo_007 nr 1690544 felled 27-12-2005 per the municipality, roo_010 nr 1680922 declared dead 1998 and not found 2018. Checked 2026-10-12."
+    },
+    {
+      "id": "roo_005",
+      "name": "The Beech of Vrouwenhof",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 190 years, from a registered planting date around 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Roosendaal, Scholtensboslaan 1, achter Restaurant Vrouwenhof",
+        "latitude": 51.527941,
+        "longitude": 4.464392
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park, open daily.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This beech stands behind Restaurant Vrouwenhof, banded by the national register to a planting around 1840, roughly 190 years old. Left alone behind a building rather than beside a road, a beech this age has usually had the easiest kind of life the species can have: no pruning against traffic, no root compaction from foot or vehicle traffic, room enough to build the wide, low, dome-shaped crown that beeches produce when nothing crowds them.\n\nA beech's bark stays smooth and grey its entire life, never cracking into plates the way an oak's does, which is part of why old beeches are the trees most often carved with initials that never grow over. At nearly two centuries this one has likely accumulated its share, along with the deep leaf litter underneath that beech woodland is known for, since almost nothing grows in the permanent shade a mature beech casts.\n\nThe register describes nothing of the tree's own history beyond species and decade, which is typical for a tree valued for standing rather than for any single event attached to it. If you know more, tell us.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      },
+      "how_to_recognise": "You can recognise it by its wide, low, dome-shaped crown and smooth grey bark, undisturbed by any nearby road or path. It stands behind Restaurant Vrouwenhof, Scholtensboslaan.",
+      "removed": "2026-10-12",
+      "removed_reason": "LRMB status 5 Dood/geveld; inspectors: roo_003 nr 1680201 geveld 2014 (replaced by a young tree), roo_005 nr 1680973 not found 2016, roo_007 nr 1690544 felled 27-12-2005 per the municipality, roo_010 nr 1680922 declared dead 1998 and not found 2018. Checked 2026-10-12."
+    },
+    {
+      "id": "roo_007",
+      "name": "The Poplar of the Bloemenmarkt",
+      "species": "Canadian Poplar (Populus x canadensis)",
+      "age_estimate": "roughly 160 years, from a registered planting date around 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Roosendaal, Bloemenmarkt 2, parkeerplaats",
+        "latitude": 51.533692,
+        "longitude": 4.457607
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on the public square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This Canadian poplar grows on a car park at the Bloemenmarkt, Roosendaal's flower market square, banded by the national register to a planting around 1870, roughly 160 years old. Canadian poplar is itself a hybrid, crossed from American and European black poplars sometime in the eighteenth century and planted across Europe ever since for how fast it grows: a young tree can add a metre or more of height a year, reaching a size in a few decades that other species take a century to match.\n\nThat speed comes at a cost in longevity and structural soundness, so a Canadian poplar surviving to 160 years, on a car park rather than in a sheltered park setting, is a genuinely long run for the species. Poplars of this age often carry visible deadwood and cavities, part of what makes a veteran specimen valuable as habitat even as it becomes more likely to lose limbs in storms.\n\nThe register records nothing about this tree beyond its species and decade. Growing up on a car park rather than a green space is an unusual setting for the list; if you know how it came to be there, tell us.",
+      "how_to_recognise": "You can recognise it as the poplar standing over the car park at the Bloemenmarkt, Roosendaal's flower market square.",
+      "removed": "2026-10-12",
+      "removed_reason": "LRMB status 5 Dood/geveld; inspectors: roo_003 nr 1680201 geveld 2014 (replaced by a young tree), roo_005 nr 1680973 not found 2016, roo_007 nr 1690544 felled 27-12-2005 per the municipality, roo_010 nr 1680922 declared dead 1998 and not found 2018. Checked 2026-10-12."
+    },
+    {
+      "id": "roo_010",
+      "name": "The Dutch Lime of Emile van Loonpark",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 225 to 275 years, from a registered planting band of 1750-1800",
+      "age_min": 226,
+      "age_max": 276,
+      "location": {
+        "address": "Emile van Loonpark, Stationsstraat, Roosendaal",
+        "latitude": 51.534444,
+        "longitude": 4.454043,
+        "neighbourhood": "Emile van Loonpark"
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public park",
+      "transport": "Roosendaal railway station, about 5 min walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "notes": "LRMB register nr 1680922 ('Hollandse linde'), owner category gemeente, setting park, listed as publicly visitable. The register's own history notes for this location mention a much earlier tree at the same spot declared dead in 1998; that note describes the PLACE's older history, not this currently registered tree, and is not carried into the story to avoid a bridge claim. Single source; a second is wanted.",
+      "location_precision": "approximate",
+      "story": "Roosendaal's Dutch lime in Emile van Loonpark carries a planting band rather than a single year: the Netherlands' national register of monumental trees puts it somewhere between 1750 and 1800. That makes it older than the park around it, which the mayor of the same name only began laying out in 1883, roughly a century after this lime was already growing on the site.\n\nThe register lists it as municipal property standing on open parkland, one of the smaller number of Roosendaal's trees old enough to carry the monumental designation at all. Its current girth and condition are not recorded in what we could find so far.\n\nA common lime this old has usually been pollarded, coppiced or propped at some point, since the species tends to hollow at the base long before it dies outright. Whether this one carries that history is worth a look on the ground. It rests on one source for now, the register itself: if you have stood under it, tell us what you saw.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      },
+      "how_to_recognise": "You can recognise it as the park's lime, where the other tree we map here is a horse chestnut behind the pond. It stands on open parkland off Stationsstraat, and nobody has recorded its girth.",
+      "removed": "2026-10-12",
+      "removed_reason": "LRMB status 5 Dood/geveld; inspectors: roo_003 nr 1680201 geveld 2014 (replaced by a young tree), roo_005 nr 1680973 not found 2016, roo_007 nr 1690544 felled 27-12-2005 per the municipality, roo_010 nr 1680922 declared dead 1998 and not found 2018. Checked 2026-10-12."
     }
   ]
 }

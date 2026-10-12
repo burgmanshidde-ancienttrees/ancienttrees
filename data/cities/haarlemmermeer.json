@@ -2,12 +2,12 @@
   "city": "Haarlemmermeer",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Haarlemmermeer is a municipality built on a lake bed: engineers pumped the Haarlemmermeer dry between 1849 and 1852, and every tree here has grown on ground that did not exist as farmland before that. Its eight registered trees spread across four villages inside the polder, Nieuw-Vennep, Hoofddorp, Vijfhuizen and Badhoevedorp: a chestnut and an ash on a farm road, a maple in a churchyard, a wingnut saved from a shopping centre, a lime planted for a royal jubilee, a plane that predates the street around it.",
-  "meta_description": "Eight registered trees across the Haarlemmermeer polder, all planted since the lake was drained in 1852: a chestnut, a wingnut, a jubilee lime and more.",
-  "question_meta": "Haarlemmermeer's oldest tree is a London plane from the 1880s in Hoofddorp, older than the notary's office it now fronts. Here it is, and seven more.",
+  "intro": "Haarlemmermeer is a municipality built on a lake bed: engineers pumped the Haarlemmermeer dry between 1849 and 1852, and every tree here has grown on ground that did not exist as farmland before that. Its five registered trees spread across three villages inside the polder, Hoofddorp, Vijfhuizen and Badhoevedorp: a wingnut saved from a shopping centre, a lime planted for a royal jubilee, a plane that predates the street around it.",
+  "meta_description": "Five registered trees across the Haarlemmermeer polder, all planted since the lake was drained in 1852: a wingnut, a jubilee lime, a plane and more.",
+  "question_meta": "Haarlemmermeer's oldest tree is a London plane from the 1880s in Hoofddorp, older than the notary's office it now fronts. Here it is, and four more.",
   "question_answer": "The oldest tree in Haarlemmermeer is the London Plane of Hoofddorp, registered to a planting around 1885, roughly 140 years old. It grows on municipal ground at the corner of the Hoofdweg and the Manegelaan, in front of a notary's office, predating both the office and most of the street around it.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the single source for all eight trees, so every entry ships flagged rather than confirmed. Three stand together on the Hoofdweg in Nieuw-Vennep, a farm road and a churchyard; the other five spread through Hoofddorp, Vijfhuizen and Badhoevedorp, villages within the same municipality rather than one walkable city. All of them grow on ground that was open water until three steam pumping engines drained the Haarlemmermeer between 1849 and 1852, which is why nothing here predates the mid nineteenth century: the whole polder is younger than most Dutch town centres. One tree, a roadside maple in Badhoevedorp, stands on private land and can only be seen from the street, never approached, and the register says so plainly. Where a pin is marked approximate, we know the site and not the exact trunk.",
-  "hero_tree_id": "hrl_001",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the single source for all five trees, so every entry ships flagged rather than confirmed. Three stand in Hoofddorp; the other two are in Vijfhuizen and Badhoevedorp, villages within the same municipality rather than one walkable city. All of them grow on ground that was open water until three steam pumping engines drained the Haarlemmermeer between 1849 and 1852, which is why nothing here predates the mid nineteenth century: the whole polder is younger than most Dutch town centres. One tree, a roadside maple in Badhoevedorp, stands on private land and can only be seen from the street, never approached, and the register says so plainly. Where a pin is marked approximate, we know the site and not the exact trunk.",
+  "hero_tree_id": "hrl_008",
   "oldest_tree_id": "hrl_008",
   "faq": [
     {
@@ -19,8 +19,8 @@
       "a": "Until the middle of the nineteenth century, most of this municipality was the Haarlemmermeer itself, a lake wide enough to frighten Amsterdam. Three steam pumping engines drained it between 1849 and 1852, and everything planted here since then, including every tree on this page, is younger than the drainage."
     },
     {
-      "q": "Can I visit all eight of these trees on one walk?",
-      "a": "No. They are spread across four separate villages inside the municipality: Nieuw-Vennep, Hoofddorp, Vijfhuizen and Badhoevedorp, several kilometres apart. Each place is its own short stop rather than part of one route."
+      "q": "Can I visit all five of these trees on one walk?",
+      "a": "Not quite. Three are in Hoofddorp; the others are in Vijfhuizen and Badhoevedorp, several kilometres away. Each village is its own short stop rather than part of one route."
     },
     {
       "q": "Can I walk up to the maple on the Nieuwemeerdijk?",
@@ -28,101 +28,6 @@
     }
   ],
   "trees": [
-    {
-      "id": "hrl_001",
-      "name": "The Horse Chestnut of the Waterwolf",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "age_estimate": "roughly 110 years, from a registered planting date around 1920",
-      "age_min": 106,
-      "age_max": 116,
-      "location": {
-        "address": "westzijde Hoofdweg 1181, Nieuw-Vennep",
-        "latitude": 52.264485,
-        "longitude": 4.632846
-      },
-      "story": "There is a lake under this tree. Until 1852 the Haarlemmermeer covered everything you can see from here, wide enough to frighten Amsterdam and hungry enough at the edges to have earned the name Waterwolf. Three steam pumping engines emptied it over three years, and the lake floor they laid bare sits roughly four metres below sea level.\n\nThat is the ground this horse chestnut is rooted in. The register puts its planting between 1910 and 1920, which makes it about 110 years old, and out here that counts as old: no tree anywhere in the polder can predate the drainage, so the oldest possible tree in the Haarlemmermeer is younger than most of the houses in Haarlem. Aircraft climb out of the same lake bed a few kilometres north.\n\nIt stands on the west side of the Hoofdweg, the road that runs the length of the Hoofdvaart, the canal cut dead straight through the middle of the drained lake. This stretch is still farmland, and the tree has the shape a chestnut gets when nothing has ever crowded it: low, wide, branching almost from the ground, the candles in May starting at head height.\n\nNobody wrote down who planted it. The register's history field for this tree is blank, and it is the only source that describes it at all. If it once belonged to a farm along this road, tell us.",
-      "best_time": {
-        "months": [
-          5
-        ],
-        "kind": "flowers",
-        "label": "May, when a field-grown chestnut carries its white candles right down to head height"
-      },
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/"
-      ],
-      "access": "Free, alongside a public road through farmland, always visible.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its low, wide shape, branching almost from the ground, with flower candles starting at head height in May. It stands on the west side of the Hoofdweg, Nieuw-Vennep."
-    },
-    {
-      "id": "hrl_003",
-      "name": "The Surviving Ash of the Hoofdweg",
-      "species": "European Ash (Fraxinus excelsior)",
-      "age_estimate": "roughly 100 years, from a registered planting date around 1930",
-      "age_min": 96,
-      "age_max": 106,
-      "location": {
-        "address": "westzijde Hoofdweg 1179, Nieuw-Vennep",
-        "latitude": 52.264262,
-        "longitude": 4.633167
-      },
-      "story": "Most Dutch ash trees of this age are dead or going. Ash dieback reached the Netherlands around 2010, a fungus out of east Asia that the European ash has no answer to, and it has worked through the country's ash population ever since, killing the crown downward from the twigs. A small fraction of trees turn out to be genetically tolerant, and those few matter enormously, because they are the parents of whatever ash the Netherlands still has in fifty years.\n\nThis one is still standing on the Hoofdweg. The register puts its planting between 1920 and 1930, which makes it about a century old, on ground that had only been dry land for about seventy years when it went in.\n\nAsh is the tree everything used to be made of: cart shafts, tool handles, ladders, oars, early aircraft frames. It bends a long way before it gives and it gives without splintering, so it went into anything that had to absorb a shock. It is also the last tree in a Dutch hedgerow to come into leaf and among the first to drop, which leaves it bare for more than half the year. Winter is when it is easiest to name from the road: the buds are matt black and shaped like small hooves, and nothing else here has them.\n\nThe chestnut a few doors up is the older of the two. The register is the only source for either.",
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/"
-      ],
-      "access": "Free, alongside a public road through farmland, always visible.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it in winter by its matt black, hoof-shaped buds, nothing else here has them. It stands on the Hoofdweg, Nieuw-Vennep, a few doors from the older chestnut."
-    },
-    {
-      "id": "hrl_004",
-      "name": "The Maple of the Nieuw-Vennep Church",
-      "species": "Norway Maple (Acer platanoides)",
-      "age_estimate": "roughly 90 years, from a registered planting date around 1940",
-      "age_min": 86,
-      "age_max": 96,
-      "location": {
-        "address": "* NH kerk, Hoofdweg 1320, Nieuw-Vennep",
-        "latitude": 52.264724,
-        "longitude": 4.635064
-      },
-      "story": "The sap of a Norway maple is milky white. That one fact separates it from the sycamore it otherwise closely resembles, and it means a broken twig on this tree bleeds like a dandelion stem instead of running clear.\n\nIt grows in the grounds of the Hervormde church on the Hoofdweg in Nieuw-Vennep, a village that exists at all because the Haarlemmermeer was pumped dry in 1852 and somebody then had to farm the lake bed. The register puts the maple's planting between 1930 and 1940, so it is about ninety years old, and it has spent every one of those years on ground nobody has ever had a reason to dig up.\n\nNorway maple is the tree that gets the Dutch spring started. It flowers in April, before its own leaves are out, in dense clusters of a sharp yellow-green that read from a hundred metres off and can fool you into thinking the crown has leafed a month early. Bees work them hard, because almost nothing else is open yet. The leaves that follow are broad and thin with long drawn-out points, and by late October they turn clear yellow.\n\nChurchyards are where old trees tend to survive, for the plain reason that nobody redevelops one. Nobody recorded who planted this maple, and the national register is the only source that describes it. If you know, tell us.",
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/"
-      ],
-      "access": "Free, in the grounds of the church, open in daylight.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "confirmed",
-      "best_time": {
-        "months": [
-          4
-        ],
-        "kind": "flowers",
-        "label": "April, before the leaves open, when clusters of yellow-green flowers cover the crown"
-      },
-      "how_to_recognise": "You can recognise it in April by sharp yellow-green flowers opening before the leaves, and milky white sap in a broken twig. It stands at the Hervormde church, Nieuw-Vennep."
-    },
     {
       "id": "hrl_006",
       "name": "The Wingnut of the Hoofddorp Market",
