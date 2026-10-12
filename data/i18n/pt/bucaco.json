@@ -1,0 +1,171 @@
+{
+ "_note": "pt overlay for bucaco, written 2026-10-12 from data/cities/bucaco.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Buçaco",
+ "title": "Árvores monumentais do Buçaco: as 18 mais notáveis",
+ "meta_description": "Árvores antigas do Buçaco: o cipreste que deu nome a uma espécie, a quarta árvore mais alta da Europa e duas sequoias, numa mata murada acima do Luso.",
+ "intro": "O Buçaco é uma mata atrás de um muro, e o muro é a razão de ela existir. Os carmelitas descalços cercaram esta encosta em 1628 e conseguiram que dois papas a protegessem por escrito, um deles com uma bula que ameaçava de excomunhão quem danificasse uma árvore. Quatro séculos disso deram 105 hectares com mais de 250 espécies, incluindo o cipreste a que Philip Miller deu o nome de Portugal a partir de exemplares que viu aqui. As dezoito árvores desta página ficam a cerca de um quilómetro umas das outras, e uma delas deu nome a uma espécie.",
+ "question_title": "Qual é a árvore mais antiga do Buçaco? (380 anos)",
+ "question_meta": "O Cedro de São José, um cipreste-do-buçaco plantado pelos carmelitas entre 1628 e 1650, é a árvore mais antiga da Mata do Buçaco.",
+ "question_answer": "A árvore mais antiga da Mata Nacional do Buçaco é o Cedro de São José, um cipreste-do-buçaco no adro da Ermida de São José. A placa da própria mata, ao pé da árvore, diz que foi plantado entre 1628 e 1650, o que lhe dá cerca de 380 anos e faz dele o cedro mais antigo da mata. Não é bem um cedro, e também não é português: o Cupressus lusitanica vem do México e da América Central.",
+ "question_context": "Os frades chegaram em 1628 e esta árvore foi para a terra nas suas duas primeiras décadas, o que faz dela uma das primeiras árvores exóticas plantadas no Buçaco e provavelmente uma das primeiras da sua espécie na Europa. A espécie traz o equívoco no nome. Quando Philip Miller a descreveu, em 1768, estava a olhar para exemplares que cresciam aqui, e por isso chamou lusitanica, de Portugal, a um cipreste mexicano; os portugueses, por seu lado, chamam-lhe cedro-do-buçaco, por causa de uma mata de onde nunca veio. A árvore já não é o que era. O ciclone Gong atravessou o Buçaco em janeiro de 2013, derrubou dez árvores notáveis, destruiu cerca de 40 por cento da mata e levou consigo a maior parte da altura desta: o registo mediu 32,9 metros antes e 14 metros depois. O que está hoje de pé é um tronco com cinco metros e meio de perímetro dentro de um gradeamento de ferro, partido no topo, ainda com verde. Vá à espera de uma sobrevivente, não de uma flecha.",
+ "faq": [
+  {
+   "q": "Qual é a árvore mais antiga do Buçaco?",
+   "a": "O Cedro de São José, um cipreste-do-buçaco plantado pelos carmelitas entre 1628 e 1650. A placa da própria mata chama-lhe o cedro mais antigo da Mata. Perdeu a maior parte da altura no ciclone de 2013 e é hoje um tronco partido dentro de um gradeamento de ferro."
+  },
+  {
+   "q": "A visita é paga?",
+   "a": "Entrar a pé é gratuito. De carro, não: a Fundação Mata do Buçaco cobra por veículo à entrada, 5 euros por um carro até cinco lugares e 2 euros por uma mota, sem taxa de estacionamento à parte. Deixe o carro no Luso, suba a pé e não paga nada."
+  },
+  {
+   "q": "Dá para ir a pé de umas árvores às outras?",
+   "a": "Sim. As dezoito estão dentro da mata murada, a cerca de um quilómetro umas das outras. Os caminhos são caminhos de mata e o terreno é íngreme em alguns troços."
+  },
+  {
+   "q": "A árvore mais alta da Europa está aqui?",
+   "a": "Não, e vale a pena ser exato. A Giant Trees Foundation mediu o eucalipto-gigante do Buçaco em 64,90 metros e põe-no em quarto lugar na Europa. A mais alta é um karri com cerca de 73 metros na Mata Nacional de Vale de Canas, perto de Coimbra, a meia hora daqui."
+  }
+ ],
+ "strings_note": "Português europeu. Topónimos na grafia local (Buçaco, São José, Trilho da Água, Fundação Mata do Buçaco). Nomes de espécies reutilizam as formas já fixadas noutras páginas em português (Oliveira, Araucária-bunya, Cipreste-do-buçaco, Sobreiro, Sequoia-vermelha, Til).",
+ "trees": {
+  "bsc_001": {
+   "name": "A Oliveira de Wellington",
+   "species": "Oliveira (Olea europaea)",
+   "age_estimate": "desconhecida, mas já estava aqui em 1810",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No Largo do Mosteiro, junto ao Palace Hotel, cerca de 2 km a subir desde o Luso",
+   "story": "Na noite de 27 de setembro de 1810, o duque de Wellington prendeu o cavalo a esta árvore, e a árvore continua aqui, ao contrário da maior parte do convento. Wellington acabara de enfrentar o exército francês de Masséna ao longo da serra, na batalha que travou a terceira invasão de Portugal, e depois instalou-se no convento carmelita de Santa Cruz. No século XIX, os construtores demoliram quase todo esse convento para erguer o Palace Hotel, e a oliveira sobreviveu à demolição por estar no caminho: hoje fica no meio da estrada que atravessa o Largo do Mosteiro, que é exatamente onde vai parar uma árvore quando ninguém tem coragem de a cortar. À vista é coisa modesta, sete metros e meio de altura e um tronco com dois metros e meio de perímetro. Vale pelo que aconteceu ao seu lado, não pelo tamanho. Há dois séculos que se mostra esta árvore a quem passa. O Estado classificou-a em 2018, com as restantes veteranas da mata, e é a única delas que um general terá usado para prender o cavalo."
+  },
+  "bsc_002": {
+   "name": "A Araucária-bunya do Palace Hotel",
+   "species": "Araucária-bunya (Araucaria bidwillii)",
+   "age_estimate": "cerca de 160 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No jardim junto ao Palace Hotel, cerca de 2 km a subir desde o Luso",
+   "story": "Não se ponha debaixo desta num mau ano. A araucária-bunya produz a pinha mais pesada de todas as coníferas, até dez quilos, mais ou menos uma bola de bowling, e deixa-as cair de uma copa a vinte e oito metros de altura. No sudeste de Queensland, de onde é nativa, as árvores dão uma grande carga de três em três anos, mais ou menos, e grupos aborígenes percorriam centenas de quilómetros para os encontros da bunya que se seguiam, com banquetes de pinhões. Hoje a Austrália sinaliza e veda estas árvores nos parques públicos, pela razão óbvia. Esta tem cinco metros de perímetro e cresce junto ao Palace Hotel há cerca de século e meio, o que quer dizer que foi plantada quando no lugar do hotel ainda estava o convento carmelita, e já era uma árvore considerável quando o palácio neomanuelino se ergueu ao lado, entre 1888 e 1905. As araucárias são fósseis vivos, uma família que se espalhava pelo supercontinente do sul antes de os continentes se separarem, e as espirais rígidas e geométricas das folhas parecem mais antigas do que tudo à volta porque o são. É a silhueta mais estranha numa mata cheia de forasteiras."
+  },
+  "bsc_003": {
+   "name": "O Eucalipto da Estrada do Hotel",
+   "species": "Eucalipto-comum (Eucalyptus globulus)",
+   "age_estimate": "cerca de 150 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Na estrada de acesso ao Palace Hotel, cerca de 2 km a subir desde o Luso",
+   "story": "Sete metros e quinze centímetros de perímetro: mais do que qualquer outra árvore desta página e mais do que a maioria das árvores de Portugal. Este eucalipto está na estrada de acesso ao Palace Hotel, perto do antigo viveiro florestal, com quarenta e cinco metros de altura e uma copa de trinta e dois metros de diâmetro, e foi classificado pelo que o Estado chama, com delicadeza, grande valor ornamental e paisagístico, ou seja, alguém olhou para ele e não conseguiu passar adiante. O Eucalyptus globulus é a árvore sobre a qual Portugal discute. Chegou da Tasmânia em meados do século XIX, cresce mais depressa do que qualquer espécie nativa e cobre hoje cerca de um quarto da área florestal do país, ao serviço das celuloses, e por isso leva a culpa dos incêndios e de secar os lençóis freáticos. Essa guerra nacional faz com que um exemplar destes passe despercebido. Olhe para ele como indivíduo: século e meio de idade, um tronco que uns braços não abarcam nem num terço, e uma casca que se solta em longas fitas e deixa à vista uma coluna lisa, cinzenta e creme. As folhas caídas cheiram a óleo de eucalipto quando esmagadas, e a folhagem jovem tem outra forma e outra cor que as folhas adultas lá em cima."
+  },
+  "bsc_004": {
+   "name": "King Regnans",
+   "species": "Eucalipto-gigante (Eucalyptus regnans)",
+   "age_estimate": "cerca de 145 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No topo do Vale de São Silvestre, cerca de 300 m do Largo do Mosteiro",
+   "story": "É a árvore mais alta da mata e, segundo a melhor medição feita até hoje, a quarta mais alta da Europa. A Giant Trees Foundation apontou-lhe um laser e obteve 64,90 metros, com um tronco de oito metros e meio de perímetro. O registo nacional, com base numa estimativa mais antiga, diz 72,9 metros. Vale a pena dizer essa diferença em vez de a disfarçar, e a versão honesta é que tem algures entre 65 e 73 metros, o que de qualquer forma equivale a um prédio de uns vinte andares a crescer numa encosta portuguesa. Foi plantada por volta de 1880. O Eucalyptus regnans é a planta com flor mais alta do mundo: o recordista, um exemplar da Tasmânia chamado Centurion, chega aos 100 metros, e os silvicultores australianos do século XIX falavam de árvores abatidas muito maiores. Portugal não é a Tasmânia, por isso uma árvore deste tamanho aqui é o resultado de século e meio de condições invulgarmente favoráveis num vale abrigado. É também a razão de o nome King Regnans ter pegado. Procure-a na curva da estrada florestal, no topo do vale, e desista de a fotografar inteira, porque ninguém consegue."
+  },
+  "bsc_006": {
+   "name": "O Cedro de São José",
+   "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
+   "age_estimate": "cerca de 380 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Cerca de 500 m a sul do Largo do Mosteiro, no caminho da Via Sacra",
+   "story": "Esta árvore é a razão por que um cipreste mexicano tem o nome de Portugal. Quando Philip Miller descreveu a espécie, em 1768, trabalhava com exemplares que cresciam no Buçaco, e por isso chamou-lhe Cupressus lusitanica; os portugueses retribuíram chamando-lhe cedro-do-buçaco. Os dois nomes erram duas vezes. É um cipreste e não um cedro, e vem das montanhas do México e da América Central, trazido pelos carmelitas que cercaram esta encosta em 1628. A placa ao pé da árvore diz que foi plantada entre 1628 e 1650, o que lhe dá cerca de 380 anos e faz dela a árvore mais antiga da mata. Já não tem o aspeto disso, e convém sabê-lo antes de descer até lá. O ciclone Gong atingiu o Buçaco em janeiro de 2013, destruiu cerca de 40 por cento da mata e levou-lhe o topo: media 32,9 metros antes da tempestade e 14 metros depois. O que resta é um tronco com cinco metros e meio de perímetro, rachado e prateado, dentro de um gradeamento de ferro trabalhado, ainda com verde a brotar dos destroços lá em cima. Dois papas chegaram a ameaçar de excomunhão quem danificasse uma árvore aqui. Esta levou o golpe do tempo."
+  },
+  "bsc_007": {
+   "name": "O Cedro-do-Buçaco da Primeira Queda",
+   "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
+   "age_estimate": "cerca de 310 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No caminho da Via Sacra acima do mosteiro, cerca de 500 m a subir desde o Largo do Mosteiro",
+   "story": "Pare na capela errada e passa-lhe ao lado: este cipreste está junto ao passo da Via Sacra que assinala a primeira queda de Cristo, uma das cerca de vinte pequenas capelas que os carmelitas descalços construíram no fim do século XVII, com as distâncias entre elas medidas para corresponder ao caminho do Monte das Oliveiras ao Calvário. A árvore nada tem a ver com essa geografia. O Cupressus lusitanica é nativo do México e da Guatemala, e o nome que o Buçaco lhe dá, cedro-do-buçaco, só existe porque os jardineiros carmelitas o plantaram aqui em tal quantidade, desde que chegaram, em 1628, que a espécie ficou associada a esta mata do outro lado do Atlântico. A Wikipedia diz que é a árvore mais abundante da mata, e este exemplar faz-lhe justiça: cinco metros e um quarto de perímetro, trinta e um metros de altura e, segundo a medição do próprio Estado em 2016, já com três séculos, o que faria dele a segunda árvore classificada mais antiga da mata, depois do mais famoso Cedro de São José, a uma curta caminhada para sul. Só o registo da mata identifica esta árvore pela sua posição na Via Sacra; nenhuma outra fonte o faz. Por isso, a idade e essa posição são a palavra do registo, não um facto assente."
+  },
+  "bsc_008": {
+   "name": "O Carvalho-alvarinho da Capela de São Pedro",
+   "species": "Carvalho-alvarinho (Quercus robur)",
+   "age_estimate": "cerca de 310 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No caminho da Via Sacra acima do mosteiro, cerca de 600 m a subir desde o Largo do Mosteiro",
+   "story": "Quase tudo o que está classificado nesta mata chegou de barco. Este carvalho não. O Quercus robur é uma de apenas duas espécies nativas em toda a lista de árvores protegidas do Buçaco, um resto do bosque que aqui existia antes de os carmelitas chegarem, na década de 1620, e começarem a encher a encosta de ciprestes, sequoias e eucaliptos de quatro continentes. A descrição da mata na Wikipedia inclui um núcleo de carvalhos entre os sobreviventes desse coberto original. Este não é uma importação escolhida para um jardim: é de uma espécie que já cá estava antes dos frades, das suas capelas e do seu muro. Fica junto à capela de São Pedro, na Via Sacra, com quatro metros e noventa de perímetro, vinte e quatro metros de altura e uma copa com quase vinte e um metros de diâmetro, folgadamente a copa nativa mais larga da coleção. A medição do Estado em 2016 deu-lhe trezentos anos, empatado com o cipreste do passo da primeira queda como segunda árvore mais antiga do registo, depois do Cedro de São José, embora nenhuma fonte além do registo date esta árvore em concreto. É fácil passar por ela à procura do exemplar exótico e não reparar numa das poucas árvores daqui que ninguém trouxe para impressionar."
+  },
+  "bsc_009": {
+   "name": "O Sobreiro do Lago Grande",
+   "species": "Sobreiro (Quercus suber)",
+   "age_estimate": "não registada",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Na encosta sul acima do Lago Grande, cerca de 900 m do Largo do Mosteiro",
+   "story": "A árvore nacional de Portugal tem uma única entrada numa mata feita para exibir tudo o resto. O Quercus suber, o sobreiro, é a espécie em que assenta boa parte da economia rural do país: a cortiça é tirada dos troncos vivos de nove em nove anos, mais ou menos, sem matar a árvore, e a maior parte da cortiça do mundo continua a sair de encostas portuguesas. Aqui, na encosta sul acima do Lago Grande, está discreto entre ciprestes do México, sequoias da Califórnia e um eucalipto que está entre os mais altos da Europa: quatro metros e um quarto de perímetro, dezassete metros e meio de altura e uma casca grossa e profundamente fendida, visivelmente diferente da de todas as coníferas à volta. O registo não lhe dá idade, o que num sobreiro não é raro: os exemplares velhos podem passar dos três séculos e ninguém tirou uma amostra a este para contar os anéis. Para lá da simples entrada no registo, o que o sustenta é a própria espécie: a descrição da Wikipedia sobre o coberto nativo que sobreviveu na mata inclui o carvalho entre os seus poucos habitantes originais, a mesma confirmação que tem o carvalho-alvarinho junto à Capela de São Pedro. Tal como esse, é uma árvore desta coleção que não precisou de barco para chegar."
+  },
+  "bsc_010": {
+   "name": "A Sequoia da Fonte de Santa Teresa",
+   "species": "Sequoia-vermelha (Sequoia sempervirens)",
+   "age_estimate": "cerca de 160 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No Trilho da Água, cerca de 300 m a sudoeste do Largo do Mosteiro",
+   "story": "Uma das duas sequoias desta página está numa encosta acima daquela que a gente da terra considera a melhor água de toda a mata, a Fonte de Santa Teresa, com o nome da reformadora carmelita do século XVI Teresa de Ávila. O registo mediu-a em 2016: 5,58 metros de perímetro e 45 metros de altura, com cerca de 150 anos na altura, o que a põe na terra poucas décadas depois das outras sequoias da mata, plantadas quando a moda de colecionar as coníferas do mundo estava no auge.\n\nA fonte junto à qual cresce é uma das paragens do Trilho da Água, um percurso pedestre traçado em torno das nascentes históricas do Buçaco, entre elas a Fonte Fria e a Fonte do Carregal, que a própria mata descreve como contemplativo e não desportivo. Uma árvore que precisa de nevoeiro e de ar húmido para prosperar acabou, por acaso ou de propósito, no único trilho da mata feito à volta da água.\n\nAs sequoias bebem pelas agulhas tanto como pelas raízes e tiram uma parte real da água diretamente da névoa atlântica que a encosta do Buçaco apanha, e é por isso que a espécie se dá aqui tão bem como em qualquer sítio fora da faixa de nevoeiro da Califórnia, de onde é nativa. Esta teve século e meio para pôr o truque em prática."
+  },
+  "bsc_011": {
+   "name": "A Sequoia da Porta das Lapas",
+   "species": "Sequoia-vermelha (Sequoia sempervirens)",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No caminho da Porta das Lapas (a entrada oeste da mata) para o Lago Grande",
+   "story": "A outra sequoia desta página está a 70 metros da Porta das Lapas, a entrada oeste da mata, no caminho que desce para o Lago Grande, onde também cresce o sobreiro da mata. Com 45 metros de altura, iguala a sequoia da Fonte de Santa Teresa, do outro lado da mata, com um tronco um pouco mais estreito: 5,04 metros de perímetro contra 5,58.\n\nFica num caminho que os visitantes já percorrem para chegar ao Lago Grande, a 450 metros do percurso principal do Buçaco, mas sempre em terreno cartografado. Não confundir com o par de sequoias junto às ruínas da Ermida de Santo Elias, que fica fora de qualquer caminho mantido pela mata e não se consegue alcançar. Esta, pelo contrário, vê-se sem sair do trilho.\n\nA Sequoia sempervirens precisa de nevoeiro para prosperar fora da costa da Califórnia, de onde é nativa, e a encosta atlântica do Buçaco fornece-lho em quantidade suficiente para que esta tenha crescido em Portugal tanto como muitas das suas parentes em casa. Faz parte de uma coleção de coníferas do mundo inteiro que os caçadores de plantas do século XIX passaram décadas a reunir atrás deste muro, e é uma das peças mais altas dessa coleção."
+  },
+  "bsc_012": {
+   "name": "O Freixo-americano do Largo do Mosteiro",
+   "species": "Freixo-americano (Fraxinus americana)",
+   "age_estimate": "cerca de 146 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Largo do Mosteiro, ao lado da Loja da Mata (a loja da própria mata)",
+   "story": "Este freixo-americano tem uma idade exata, coisa que poucas árvores do Buçaco podem dizer. Está mesmo à porta da Loja da Mata, no Largo do Mosteiro, onde a maioria dos visitantes começa o passeio sem necessariamente olhar para cima. O registo mediu-o em 2016: 4,65 metros de perímetro, 24 metros de altura, uma copa com 26 metros de largura, e uma idade de 136 anos, o que situa a plantação em 1880, poucos anos antes de o Palace Hotel começar a erguer-se, em 1888, sobre as ruínas do antigo mosteiro ao lado.\n\nO Fraxinus americana é nativo do leste da América do Norte, uma das importações menos exóticas numa mata feita quase inteiramente de curiosidades estrangeiras, mas foram a idade e o tamanho que lhe valeram o lugar no registo, por mais banal que a espécie pareça ao lado das sequoias e das araucárias-bunya ali perto. O Largo do Mosteiro já tem outras árvores desta página, e este freixo junta mais uma a uma praça que a maioria atravessa sem parar.\n\nNenhuma segunda fonte nomeia esta árvore além da medição da própria mata, por isso tudo o que aqui se diz é a palavra do registo, sem dupla confirmação. O número do registo, pelo menos, é invulgarmente preciso."
+  },
+  "bsc_013": {
+   "name": "O Bordo-sicómoro do Lago da Fonte",
+   "species": "Bordo-sicómoro (Acer pseudoplatanus)",
+   "age_estimate": "cerca de 110 anos",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Junto ao Lago da Fonte, um dos pequenos lagos da mata",
+   "story": "Este bordo-sicómoro tem 36 metros de altura, mais do que os da sua espécie costumam atingir mesmo na Europa central, de onde é nativo. Numa página dominada por árvores de folha persistente, trazidas da Austrália, do México e da Califórnia ou nascidas nas próprias encostas de Portugal, é também uma das poucas que mudam de cor com as estações.\n\nO registo mediu-o em 2016 com 2,52 metros de perímetro e cerca de um século de idade, junto ao Lago da Fonte, um dos vários pequenos lagos da mata. O Acer pseudoplatanus fica de um dourado profundo em outubro e novembro antes de perder a folha, um dos raros clarões de cor sazonal previsíveis numa mata feita sobretudo para a permanência das folhas perenes, o que faz desta árvore uma razão para escolher a data da visita, coisa que nenhuma conífera do Buçaco é.\n\nNenhuma segunda fonte confirma estas medidas além do registo da própria mata, por isso valem como palavra do registo. O que o registo estabelece, altura e espécie, já é invulgar por si: uma árvore europeia, numa mata de forasteiras, ultrapassou discretamente a maioria das da sua espécie."
+  },
+  "bsc_014": {
+   "name": "O Til do Lago Grande",
+   "species": "Til (Ocotea foetens)",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Junto ao Lago Grande, a poucos passos do sobreiro da mata",
+   "story": "O til é um loureiro que nem devia estar a crescer na Europa continental. A Ocotea foetens pertence à laurissilva, a floresta de nevoeiro que hoje só sobrevive na Madeira, nas Canárias e num punhado de outras ilhas atlânticas, bosque relíquia que já cobriu grande parte do Mediterrâneo antes de as glaciações o empurrarem para alguns refúgios abrigados. O exemplar do Buçaco, com 38 metros de altura e um tronco de 3 metros, está junto ao Lago Grande, a poucos passos do sobreiro da mata.\n\nNinguém registou a sua idade. O que o registo estabelece é só o tamanho, e 38 metros é muito, mesmo numa mata feita para fazer crescer as árvores mais do que crescem em casa: as sequoias e os eucaliptos do Buçaco são importações levadas a alturas invulgares pelo nevoeiro do Atlântico, e aqui está uma verdadeira relíquia da laurissilva a fazer o mesmo vinda do lado oposto, sinal de que esta encosta consegue recriar as condições de que dependem as suas primas das ilhas.\n\nNenhuma segunda fonte foi encontrada para esta árvore em concreto, por isso tudo o que aqui se diz assenta apenas na medição da própria mata, de 2016."
+  },
+  "bsc_015": {
+   "name": "O Cedro-do-Buçaco da Ermida do Sacramento",
+   "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Junto às ruínas da Ermida do Sacramento, a 30 m do Passo de Anas",
+   "story": "Mais um cedro-do-buçaco cresce aqui, junto às ruínas da Ermida do Sacramento, a 30 metros do Passo de Anas. Outros ciprestes da mata já têm entrada nesta página, cada um com a sua história; este tem um vizinho de outro tipo, uma capela que não sobreviveu. Só restam as paredes, engolidas precisamente pela vegetação da encosta que os frades descalços que a construíram mantinham à distância.\n\nO registo mediu este exemplar em 2016: 4,2 metros de perímetro e 27 metros de altura, um tronco realmente grande mesmo ao lado dos outros ciprestes desta página, um dos quais é a própria árvore que deu à espécie o nome científico. Mais de três séculos de proteção dentro de uma encosta murada é o que permitiu a todos chegar a este tamanho, seja qual for aquele diante do qual o visitante pare. A capela caiu; a árvore ao lado dela continua de pé.\n\nNão há idade registada para esta árvore e nenhuma segunda fonte a nomeia além do registo, por isso o que aqui fica é a palavra do registo e mais nada."
+  },
+  "bsc_016": {
+   "name": "O Cedro-do-Buçaco do Passo de Anas",
+   "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "No caminho da Via Sacra, junto ao Passo de Anas, cerca de 60 m do Cedro-do-Buçaco da Ermida do Sacramento",
+   "story": "O Buçaco guarda dois ciprestes protegidos a menos de sessenta metros um do outro neste caminho, e este é o mais pequeno: 3,68 metros de perímetro, 27 metros de altura e uma copa com dezanove metros de diâmetro, segundo o levantamento do Estado de 2016. Na maioria das matas seria a árvore principal. Aqui é mais um dos ciprestes da encosta com ficha própria.\n\nA morada é o Passo de Anas, um passo da Via Sacra com o nome da noite em que Cristo foi levado diante do sumo sacerdote Anás. Os carmelitas descalços espalharam estas capelas pela encosta no fim do século XVII e espaçaram-nas para corresponder às distâncias do caminho por Jerusalém. Esse espaçamento ainda decide como se atravessa a mata. Ninguém anda à procura do cipreste. Dobra-se uma curva à espera de uma capela e encontra-se a árvore de pé por cima dela.\n\nO Cupressus lusitanica veio das montanhas do México e da Guatemala, e foi plantado dentro destes muros em tal número, durante tanto tempo, que a maioria dos portugueses o toma por nativo.\n\nNinguém datou este exemplar e o registo nem tenta. Se sabe que idade tem, diga-nos."
+  },
+  "bsc_017": {
+   "name": "O Cedro-do-Buçaco da Casa de Guarda do Serpa",
+   "species": "Cipreste-do-buçaco (Cupressus lusitanica)",
+   "age_estimate": "cerca de 100 anos, valor do registo, sem data de medição registada",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Num caminho florestal cerca de 200 m a leste da Casa de Guarda do Serpa, no limite norte do núcleo de árvores classificadas da mata",
+   "story": "Este cipreste tem quase a grossura dos veteranos de três séculos da mata e, pelos números do próprio registo, apenas cerca de cem anos. Quatro metros e setenta e dois de perímetro, trinta e cinco metros de altura e uma idade registada de cerca de um século, contra os três séculos que o mesmo registo dá ao cipreste do passo da primeira queda na Via Sacra, uma árvore só meio metro mais larga.\n\nLeia esse par com cuidado, não como um prodígio. O registo não diz quando foram contados os cem anos, por isso o intervalo honesto vai de noventa a cento e trinta, e uma encosta murada organizada para fazer crescer depressa as coníferas importadas é exatamente o sítio onde um cipreste ganharia grossura depressa.\n\nFica cerca de duzentos metros a leste da Casa de Guarda do Serpa, a casa do guarda no limite norte da mata, num caminho de trabalho e não num caminho de peregrinação. É aqui que acabam as árvores classificadas do Buçaco: a última antes de a coleção dar lugar à encosta comum, e de longe o mais sossegado dos ciprestes desta página.\n\nMais uma curiosidade para levar consigo. O decreto de 2018 que classificou os outros ciprestes da mata não abrange este. Mantém o lugar no registo nacional com papelada própria, e ninguém deixou escrito porquê."
+  },
+  "bsc_018": {
+   "name": "O Pinheiro-branco-mexicano da Cova da Raposa",
+   "species": "Pinheiro-branco-mexicano (Pinus ayacahuite)",
+   "age_estimate": "cerca de 100 anos, valor do registo, sem data de medição registada",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "Na Cova da Raposa, no interior da mata, perto do Cedro-do-Buçaco da Casa de Guarda do Serpa",
+   "story": "Na Cova da Raposa cresce um pinheiro das terras altas do México e da América Central com quarenta metros de altura.\n\nO Pinus ayacahuite ficou aqui com a altura e dispensou o volume. Quarenta metros sobre um tronco de 2,55 metros de perímetro fazem dele mais alto do que qualquer dos ciprestes protegidos desta página e bastante mais estreito do que todos, uma forma que se nota mesmo por baixo: a copa começa muito lá em cima e o tronco sobe até ela quase sem uma curva.\n\nPertence à mesma coleção importada desses ciprestes, uma encosta cheia de coníferas de quatro continentes atrás de um muro, mantida desde então pelo Estado que hoje gere a mata. Uma caminhada de vinte minutos aqui atravessa mais cordilheiras do mundo do que a maioria dos jardins botânicos consegue reunir num hectare.\n\nO registo dá-lhe cerca de cem anos e não regista a data dessa contagem, por isso a leitura honesta fica entre noventa e cento e trinta. Tal como o grande cipreste ali perto, junto à Casa de Guarda do Serpa, fica fora do decreto de 2018 que classificou as árvores mais conhecidas da mata. Mantém a proteção com papelada própria, o que é uma fama mais magra e nenhuma razão para lhe passar ao lado."
+  },
+  "bsc_019": {
+   "name": "A Cerejeira-magenta do Viveiro Florestal",
+   "species": "Cerejeira-magenta (Syzygium paniculatum)",
+   "access": "Gratuito a pé. Os carros pagam 5 euros à entrada da mata",
+   "transport": "À entrada do viveiro florestal da própria mata",
+   "story": "À entrada do viveiro do próprio Buçaco está uma cerejeira-magenta, uma espécie das florestas húmidas australianas que costuma ficar por sebe ou planta de jardim, em vez de chegar a um tronco de 3,15 metros de perímetro. O registo mediu esse perímetro e uma copa de 9,4 metros em 2016, e não registou altura nem idade, o que para o Syzygium paniculatum é quase tão invulgar como o próprio tamanho.\n\nNa natureza, a cerejeira-magenta dá uma pequena baga ácida que dá o nome à espécie, comida diretamente do ramo ou feita em compota na sua região de origem, e lá raramente engrossa assim. Dois séculos de cuidado com árvores importadas nesta encosta, e um lugar mesmo ao lado do viveiro que propaga a coleção do Buçaco desde que os frades a começaram a plantar, parecem ser o que deixou esta continuar a crescer para lá do tamanho que a maioria das da sua espécie alguma vez atinge.\n\nÉ uma morada mais modesta do que as capelas e os largos ali perto, uma entrada de trabalho e não um monumento, o que condiz com uma árvore que é, no fundo, a prova de que os métodos do próprio viveiro resultam.\n\nNinguém a datou e o registo nem tenta. Se sabe que idade tem, diga-nos."
+  }
+ }
+}
