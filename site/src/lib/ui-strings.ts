@@ -74,6 +74,7 @@ export interface UiStrings {
   tellUs: string;
   /** The cookie bar (ConsentBar.astro, 2026-10-12): the question, its two
    *  equal answers, and the footer link that reopens it. */
+  consentTitle: string;
   consentText: string;
   consentAccept: string;
   consentDecline: string;
@@ -95,7 +96,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "The project",
     footerAbout: "We are on a mission to map every remarkable tree in the world, and we could use your help. If you know a good tree, or spot a mistake on one of these pages, {link}. We work on this database every day.",
     tellUs: "tell us",
-    consentText: "Can we use Google Analytics cookies to see how people use the site? We send nothing to Google unless you agree.", consentAccept: "Accept", consentDecline: "Decline", cookies: "Cookies",
+    consentTitle: "This website uses cookies", consentText: "We use analytics cookies to see how people use the site. They are only set if you click Accept all.", consentAccept: "Accept all", consentDecline: "Only necessary", cookies: "Cookies",
   },
   es: {
     map: "Mapa", explore: "Explorar", browse: "Navegar", cities: "Ciudades",
@@ -111,7 +112,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "El proyecto",
     footerAbout: "Queremos cartografiar todos los árboles notables del mundo, y nos vendría bien tu ayuda. Si conoces un buen árbol, o ves un error en alguna de estas páginas, {link}. Trabajamos en esta base de datos todos los días.",
     tellUs: "cuéntanoslo",
-    consentText: "¿Podemos usar cookies de Google Analytics para ver cómo se usa el sitio? No enviamos nada a Google si no aceptas.", consentAccept: "Aceptar", consentDecline: "Rechazar", cookies: "Cookies",
+    consentTitle: "Este sitio web utiliza cookies", consentText: "Usamos cookies de análisis para ver cómo se usa el sitio. Solo se instalan si haces clic en Aceptar todo.", consentAccept: "Aceptar todo", consentDecline: "Solo necesarias", cookies: "Cookies",
   },
   it: {
     map: "Mappa", explore: "Esplora", browse: "Sfoglia", cities: "Città",
@@ -127,7 +128,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "Il progetto",
     footerAbout: "Vogliamo mappare tutti gli alberi monumentali del mondo, e ci serve una mano. Se conosci un albero che merita, o trovi un errore in queste pagine, {link}. Lavoriamo a questo archivio ogni giorno.",
     tellUs: "scrivicelo",
-    consentText: "Possiamo usare i cookie di Google Analytics per capire come viene usato il sito? Non inviamo nulla a Google senza il tuo consenso.", consentAccept: "Accetta", consentDecline: "Rifiuta", cookies: "Cookie",
+    consentTitle: "Questo sito utilizza i cookie", consentText: "Usiamo cookie analitici per capire come viene usato il sito. Vengono installati solo se fai clic su Accetta tutto.", consentAccept: "Accetta tutto", consentDecline: "Solo necessari", cookies: "Cookie",
   },
   nl: {
     map: "Kaart", explore: "Ontdekken", browse: "Bladeren", cities: "Steden",
@@ -143,7 +144,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "Het project",
     footerAbout: "We willen elke bijzondere boom ter wereld in kaart brengen, en daar kunnen we hulp bij gebruiken. Ken je een goede boom, of zie je een fout op een van deze pagina's, {link}. We werken elke dag aan deze database.",
     tellUs: "laat het ons weten",
-    consentText: "Mogen we cookies van Google Analytics gebruiken om te zien hoe de site wordt gebruikt? We sturen niets naar Google zonder je toestemming.", consentAccept: "Accepteren", consentDecline: "Weigeren", cookies: "Cookies",
+    consentTitle: "Deze website gebruikt cookies", consentText: "We gebruiken analytische cookies om te zien hoe de site wordt gebruikt. Ze worden alleen geplaatst als je op Alles accepteren klikt.", consentAccept: "Alles accepteren", consentDecline: "Alleen noodzakelijke", cookies: "Cookies",
   },
   de: {
     map: "Karte", explore: "Entdecken", browse: "Stöbern", cities: "Städte",
@@ -159,7 +160,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "Das Projekt",
     footerAbout: "Wir wollen jeden bemerkenswerten Baum der Welt kartieren, und dabei können wir Hilfe gebrauchen. Wenn du einen guten Baum kennst oder auf einer dieser Seiten einen Fehler siehst, {link}. Wir arbeiten jeden Tag an dieser Datenbank.",
     tellUs: "schreib uns",
-    consentText: "Dürfen wir Cookies von Google Analytics verwenden, um zu sehen, wie die Website genutzt wird? Ohne deine Zustimmung senden wir nichts an Google.", consentAccept: "Akzeptieren", consentDecline: "Ablehnen", cookies: "Cookies",
+    consentTitle: "Diese Website verwendet Cookies", consentText: "Wir verwenden Analyse-Cookies, um zu sehen, wie die Website genutzt wird. Sie werden nur gesetzt, wenn du auf Alle akzeptieren klickst.", consentAccept: "Alle akzeptieren", consentDecline: "Nur notwendige", cookies: "Cookies",
   },
   pt: {
     map: "Mapa", explore: "Explorar", browse: "Navegar", cities: "Cidades",
@@ -175,7 +176,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "O projeto",
     footerAbout: "Queremos mapear todas as árvores notáveis do mundo, e damos jeito a ajuda. Se conhece uma boa árvore, ou encontra um erro numa destas páginas, {link}. Trabalhamos nesta base de dados todos os dias.",
     tellUs: "diga-nos",
-    consentText: "Podemos usar cookies do Google Analytics para ver como o site é usado? Não enviamos nada à Google sem o teu consentimento.", consentAccept: "Aceitar", consentDecline: "Recusar", cookies: "Cookies",
+    consentTitle: "Este site utiliza cookies", consentText: "Usamos cookies de análise para ver como o site é utilizado. Só são instalados se clicares em Aceitar todos.", consentAccept: "Aceitar todos", consentDecline: "Apenas necessários", cookies: "Cookies",
   },
   fr: {
     map: "Carte", explore: "Explorer", browse: "Parcourir", cities: "Villes",
@@ -191,7 +192,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "Le projet",
     footerAbout: "Nous voulons cartographier tous les arbres remarquables du monde, et un coup de main ne serait pas de refus. Si vous connaissez un bel arbre, ou repérez une erreur sur l'une de ces pages, {link}. Nous travaillons sur cette base tous les jours.",
     tellUs: "dites-le-nous",
-    consentText: "Pouvons-nous utiliser les cookies de Google Analytics pour voir comment le site est utilisé ? Nous n’envoyons rien à Google sans votre accord.", consentAccept: "Accepter", consentDecline: "Refuser", cookies: "Cookies",
+    consentTitle: "Ce site utilise des cookies", consentText: "Nous utilisons des cookies de mesure d’audience pour voir comment le site est utilisé. Ils ne sont déposés que si vous cliquez sur Tout accepter.", consentAccept: "Tout accepter", consentDecline: "Tout refuser", cookies: "Cookies",
   },
   ja: {
     map: "地図", explore: "さがす", browse: "一覧", cities: "都市",
@@ -207,7 +208,7 @@ export const UI: Record<Lang, UiStrings> = {
     theProject: "プロジェクト",
     footerAbout: "世界じゅうの見に行く価値のある木を地図にしたいと思っている。力を貸してほしい。よい木を知っている場合や、このページに誤りを見つけた場合は、{link}。このデータベースは毎日更新している。",
     tellUs: "知らせてほしい",
-    consentText: "サイトの使われ方を知るために Google アナリティクスの Cookie を使ってもよいですか？同意いただかない限り、Google には何も送信しません。", consentAccept: "同意する", consentDecline: "拒否する", cookies: "Cookie",
+    consentTitle: "このサイトはCookieを使用しています", consentText: "サイトの利用状況を把握するために分析用Cookieを使用します。「すべて許可」を押した場合にのみ設定されます。", consentAccept: "すべて許可", consentDecline: "必要なもののみ", cookies: "Cookie",
   },
 };
 

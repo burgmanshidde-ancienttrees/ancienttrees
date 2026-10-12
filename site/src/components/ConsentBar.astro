@@ -27,10 +27,13 @@ const t = chrome(lang);
 ---
 {GA_MEASUREMENT_ID && (
 <div id="consent-bar" class="consent-bar" role="region" aria-label={t.cookies} hidden>
-  <p class="consent-p">{t.consentText} <a href="/privacy#cookies">{t.privacy}</a></p>
+  <div class="consent-copy">
+    <p class="consent-h">{t.consentTitle}</p>
+    <p class="consent-p">{t.consentText} <a href="/privacy#cookies">{t.privacy}</a></p>
+  </div>
   <div class="consent-btns">
-    <button type="button" class="consent-b" data-consent="no">{t.consentDecline}</button>
     <button type="button" class="consent-b" data-consent="yes">{t.consentAccept}</button>
+    <button type="button" class="consent-b" data-consent="no">{t.consentDecline}</button>
   </div>
 </div>
 <script define:vars={{ GA_ID: GA_MEASUREMENT_ID }}>
@@ -90,7 +93,9 @@ const t = chrome(lang);
     padding: 14px var(--gutter) calc(14px + env(safe-area-inset-bottom));
     display: flex; align-items: center; gap: 16px; }
   .consent-bar[hidden] { display: none; }
-  .consent-p { margin: 0; flex: 1 1 auto; font-size: 14px; line-height: 1.4; color: var(--ink-mid); }
+  .consent-copy { flex: 1 1 auto; }
+  .consent-h { margin: 0 0 2px; font-size: 15px; font-weight: 700; color: var(--ink); }
+  .consent-p { margin: 0; font-size: 14px; line-height: 1.4; color: var(--ink-mid); }
   .consent-p a { color: var(--ink); }
   .consent-btns { display: flex; gap: 10px; flex: none; }
   .consent-b { min-height: 44px; padding: 0 1.2rem; border: 0; border-radius: 999px; cursor: pointer;

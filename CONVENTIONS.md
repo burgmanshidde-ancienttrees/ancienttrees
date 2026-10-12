@@ -3339,6 +3339,13 @@ Sources, read 2026-10-12 (AllTrails' own pages refuse an automated browser):
 
 ---
 
+- **The WORDING, fetched from the live sites on 2026-10-12** after Hidde called the first version horrible ("how did you make that up can you just benchmark what other platforms say"). Nobody asks a question and nobody names Google: a plain title, one statement, a policy link, two buttons.
+  - Airbnb: "Help us improve your experience" / "We use cookies and other technologies to personalize content, measure ads... You can update your preferences any time." Buttons: Accept all, Only necessary, Manage preferences.
+  - Strava: "This website uses cookies" / "We use essential cookies to make our website work. We also set additional cookies... for analytics... These additional cookies will be set only if you click 'Accept All'." Buttons: Reject Non-Essential, Customize, Accept All.
+  - komoot: "We value your privacy" / "We use cookies that are essential... With your consent, we... will also use tracking technologies..." Buttons: Accept all cookies, Customize preferences, Refuse.
+  - AllTrails: no bar on first load from NL; "Manage Cookies" in the footer legal strip.
+  - Ours, copied from that shape: "This website uses cookies" / "We use analytics cookies to see how people use the site. They are only set if you click Accept all." Buttons: Accept all, Only necessary. Translations use each language's standard banner wording (Alles accepteren / Alleen noodzakelijke, Alle akzeptieren / Nur notwendige, Tout accepter / Tout refuser).
+
 ## Deleting your own photograph (2026-10-12, looked up)
 
 **Reference: Google Maps.** Your contributions, Photos, the photo's More button, "Delete this photo"; deleting removes it from Maps and Search, never from the phone's own gallery. https://support.google.com/maps/answer/2622947 **Apple Photos** puts a bin in the full-screen viewer and confirms once with a destructive sheet.
