@@ -75,6 +75,242 @@
       "lng": 5.528165,
       "status": "lead",
       "why": "LRMB register nr 1689509 ('Witte paardenkastanje'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+    },
+    {
+      "id": "oss_001",
+      "name": "The Lime of Macharen Church",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 190 years, from a registered planting date around 1840",
+      "age_min": 186,
+      "age_max": 196,
+      "location": {
+        "address": "Macharen, Dorpstraat 1, bij Sint-Petrus-Bandenkerk",
+        "latitude": 51.804423,
+        "longitude": 5.544771
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680016&outFields=*&f=json"
+      ],
+      "access": "Free, on the public square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This lime stands by Macharen's Sint-Petrus-Bandenkerk, on the village square, banded by the national tree register to a planting around 1840, roughly 190 years old. Macharen is one of the small riverside villages folded into the municipality of Oss, and a lime on the church square was the ordinary choice for a Dutch village centre for centuries: shade for the market, a meeting point, and a tree nobody had much reason to remove once the buildings around it had grown up to match its age.\n\nCommon lime, the hybrid the Dutch planted almost everywhere for this purpose, tolerates hard pruning and pollarding better than most trees, which is why so many village limes were kept small and dense for generations before eventually being let go, and a lime this age has usually been through both phases of its life.\n\nThe register gives no history beyond the species and the decade, which is typical for a tree whose interest is where it stands rather than any single event attached to it. If you know more about this lime, or when the church itself dates from, tell us.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      },
+      "how_to_recognise": "You can recognise it as the lime on the village square beside Sint-Petrus-Bandenkerk. It stands at Dorpstraat 1, Macharen.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680016",
+        "url": null
+      },
+      "girth_cm": 350,
+      "height_m": 17,
+      "removed": "2026-10-12",
+      "removed_reason": "Alive, but the Oss page was removed 2026-10-12 (Hidde): two living trees is below the four-tree floor and the thin shape Google demoted. Kept as leads; Oss returns when it holds four."
+    },
+    {
+      "id": "oss_007",
+      "name": "The Lulboom of Megen",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 90 years, from a registered planting date around 1940",
+      "age_min": 86,
+      "age_max": 96,
+      "location": {
+        "address": "Megen, Maasdijk, nabij afrit naar 't Veer",
+        "latitude": 51.824865,
+        "longitude": 5.566952
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681077&outFields=*&f=json"
+      ],
+      "access": "Free, public planting, always open.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "story": "Locals call this pair of silver limes the Lulboom, and the register itself repeats the nickname rather than softening it. It marks the town's coronation tree: in 1937, when Princess Juliana, later queen, married Prince Bernhard, Megen planted a royal lime at a prominent spot just outside its historic core to mark the occasion, banded now by the national register to 1930-1940, roughly 90 years old.\n\nWhat has grown up around the planting since is the real story. A bench sits beside it, and generations of Megen residents have used the spot as an informal meeting point, sitting, talking, watching the view over the Maasdijk, which is how a formal royal planting acquired an entirely unroyal nickname somewhere along the way. Two cannon from 1809 and 1811 stand under the tree, unconnected to the planting itself but folded into the same small monument over time.\n\nThe register records the silver lime twice, as two adjoining registrations metres apart, which this page treats as one entry rather than two, since a visitor sees a single planting rather than a pair. If you know more of the Lulboom's own history, tell us.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the silver lime flowers and the whole spot smells of it"
+      },
+      "how_to_recognise": "You can recognise it by the bench beside it and the two old cannon standing underneath, on the Maasdijk just outside the historic core. The register lists it twice, metres apart, but it reads as one planting.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681077",
+        "url": null
+      },
+      "girth_cm": 390,
+      "height_m": 17,
+      "removed": "2026-10-12",
+      "removed_reason": "Alive, but the Oss page was removed 2026-10-12 (Hidde): two living trees is below the four-tree floor and the thin shape Google demoted. Kept as leads; Oss returns when it holds four."
+    }
+  ],
+  "blocked": [
+    {
+      "id": "oss_002",
+      "name": "The Lime of the Old School",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 160 years, from a registered planting date around 1870",
+      "age_min": 156,
+      "age_max": 166,
+      "location": {
+        "address": "Macharen, Hoogstraat 1",
+        "latitude": 51.805322,
+        "longitude": 5.541504
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, roadside tree on public land, always visible.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "A second lime in Macharen, on the Hoogstraat by what the register calls Basisschool De Linde, a primary school apparently named for this very tree. It is banded to a planting around 1870, roughly 160 years old, a generation younger than its counterpart at the church square a few streets over.\n\nA lime that gives a school its name is a small but telling sign of how central a village tree can become: not just scenery but a landmark children are taught by its presence, generation after generation, whether or not anyone still remembers who planted it. Common lime tolerates the compacted soil and foot traffic around a schoolyard better than most species, part of why it became the default village tree across the Netherlands for so long.\n\nThe register carries no further history for this tree, only the species and the decade. If you know anything about the school's own naming, or the tree's history before the register recorded it, tell us.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July, when it flowers",
+        "kind": "flowers"
+      },
+      "how_to_recognise": "You can recognise it as the lime that gave Basisschool De Linde its name, a generation younger than the church lime a few streets over. It stands on the Hoogstraat, Macharen.",
+      "removed": "2026-10-12",
+      "removed_reason": "Dead: LRMB status 5 (dood/geveld). oss_002 nr 1680017 felled 2019/20, new lime planted; oss_003 nr 1692624 felled 2023; oss_004 nr 1680015 felled 2016 (fungus); oss_009 nr 1689509 gone in a 2002 storm. Retired 2026-10-12 on Hidde's word."
+    },
+    {
+      "id": "oss_003",
+      "name": "The Sycamore of Kloosterstraat",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "roughly 100 years, from a registered planting date around 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Megen, Kloosterstraat 26",
+        "latitude": 51.823982,
+        "longitude": 5.567164
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on the public square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "story": "This sycamore in Megen was planted in 1928, one of the few trees on this list whose year the register states outright rather than banding into a decade. That puts it at just under a century old, younger than most of Oss's other registered trees but dated with unusual precision.\n\nMegen is a small walled town on the river Maas, and Kloosterstraat, the street this tree stands on, takes its name from the Franciscan monastery still active there, one of the reasons the town's historic core survived largely intact. A sycamore maple planted on a town street in the 1920s would have grown up fast by the standards of its longer-lived neighbours on this list, sycamore being one of the quicker-growing trees the Dutch planted for shade rather than for centuries of standing.\n\nThe register gives no further history: a firm planting year, but nothing about who planted it or why. If you know the story behind it, tell us.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: winged seeds that spin down in pairs",
+        "kind": "fruit"
+      },
+      "how_to_recognise": "You can recognise it as one of the few trees here with a precise planting year on record, 1928, rather than a decade band. It stands on Kloosterstraat, Megen.",
+      "removed": "2026-10-12",
+      "removed_reason": "Dead: LRMB status 5 (dood/geveld). oss_002 nr 1680017 felled 2019/20, new lime planted; oss_003 nr 1692624 felled 2023; oss_004 nr 1680015 felled 2016 (fungus); oss_009 nr 1689509 gone in a 2002 storm. Retired 2026-10-12 on Hidde's word."
+    },
+    {
+      "id": "oss_004",
+      "name": "The Beech of Sint-Lambertuskerk",
+      "species": "European Beech (Fagus sylvatica)",
+      "age_estimate": "roughly 140 years, from a registered planting date around 1890",
+      "age_min": 136,
+      "age_max": 146,
+      "location": {
+        "address": "Haren, Kerkplein 7, op kerkhof Sint-Lambertuskerk",
+        "latitude": 51.798492,
+        "longitude": 5.585654
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, public cemetery grounds, open in daylight.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "story": "This beech grows in the churchyard of Sint-Lambertuskerk in Haren, another of the small villages gathered into the municipality of Oss, banded by the national register to a planting around 1890, roughly 140 years old. A churchyard beech of this age has usually had an easier life than a street tree of the same vintage: less pruning, less soil compaction, and the kind of undisturbed ground that lets a beech build the wide, low, dome-shaped crown the species is known for when nothing crowds it.\n\nA beech that old also carries the smooth grey bark the species keeps its whole life, unlike most other large trees, which is part of why old beeches so often bear generations of carved initials that never grow over or fade.\n\nThe register describes the site, a working cemetery still in use, but nothing about the tree's own history beyond species and decade. Churchyards are consistently where this project finds its oldest small-village trees, for the plain reason that nobody redevelops a cemetery. If you know more about this one, tell us.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+        "kind": "autumn colour"
+      },
+      "how_to_recognise": "You can recognise it by smooth grey bark and a wide, low, dome-shaped crown. It stands in the churchyard of Sint-Lambertuskerk, Haren.",
+      "removed": "2026-10-12",
+      "removed_reason": "Dead: LRMB status 5 (dood/geveld). oss_002 nr 1680017 felled 2019/20, new lime planted; oss_003 nr 1692624 felled 2023; oss_004 nr 1680015 felled 2016 (fungus); oss_009 nr 1689509 gone in a 2002 storm. Retired 2026-10-12 on Hidde's word."
+    },
+    {
+      "id": "oss_009",
+      "name": "The Horse Chestnut of Klaphekkenstraat",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 100 years, from a registered planting date around 1930",
+      "age_min": 96,
+      "age_max": 106,
+      "location": {
+        "address": "Oss, Klaphekkenstraat 1/Goudmijnstraat",
+        "latitude": 51.768863,
+        "longitude": 5.528165
+      },
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/"
+      ],
+      "access": "Free, on the public square.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "story": "This horse chestnut stands on the public square where Klaphekkenstraat meets Goudmijnstraat in Oss itself, banded by the national register to a planting around 1930, roughly a century old. Oss grew fast through the twentieth century on the back of its meat-processing and margarine industries, Unilever's roots running straight through the town, and a tree this age on an ordinary residential square is a small, quiet survivor of the neighbourhood's early expansion.\n\nA horse chestnut of a century's growth is close to its prime: full canopy, an established root system, and every May a full display of the white candle-shaped flower spikes the species is planted for everywhere from parks to school playgrounds. Chestnuts of this age are also the ones most often lost to bleeding canker and leaf miner damage in the Netherlands, so a healthy century-old specimen is worth noting for that reason alone, though the register records no condition detail for this one.\n\nThe register is the only source describing it. If you know when it was planted, or anything of the square's own history, tell us.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when the white candle-shaped flower spikes cover the crown"
+      },
+      "how_to_recognise": "You can recognise it by its full, mature canopy, on the square where Klaphekkenstraat meets Goudmijnstraat. It stands in Oss.",
+      "removed": "2026-10-12",
+      "removed_reason": "Dead: LRMB status 5 (dood/geveld). oss_002 nr 1680017 felled 2019/20, new lime planted; oss_003 nr 1692624 felled 2023; oss_004 nr 1680015 felled 2016 (fungus); oss_009 nr 1689509 gone in a 2002 storm. Retired 2026-10-12 on Hidde's word."
     }
   ]
 }

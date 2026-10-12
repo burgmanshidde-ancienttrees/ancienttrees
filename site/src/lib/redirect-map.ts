@@ -49,6 +49,10 @@ const RENAMED_CITY_SLUGS: [string, string][] = [
   // Same day: a one-tree place on Martinique, named after its commune. The
   // island is what a reader looks for and where the next tree there will go.
   ["le-precheur", "martinique"],
+  // 2026-10-12, Hidde: "remove oss page". The register showed four of its six
+  // trees dead, which left two, below the four-tree floor. Den Bosch is the
+  // nearest published city, 18 km west.
+  ["oss", "den-bosch"],
 ];
 
 // A tree that gets renamed keeps its old URL resolving.
@@ -187,6 +191,17 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-12, scripts/retire.py: Dead: LRMB status 5 (dood/geveld). hag_026 Vreugd en Rust copper beech cut back in 2014, o
+  ["the-hague", "copper-beech-south-of-the-vreugd-en-rust-koepel"],
+  ["the-hague", "stone-bench-beech-of-juliana-en-bernardpark"],
+  // 2026-10-12, scripts/retire.py: Alive, but the Oss page was removed 2026-10-12 (Hidde): two living trees is below the four
+  ["oss", "lime-of-macharen-church"],
+  ["oss", "lulboom-of-megen"],
+  // 2026-10-12, scripts/retire.py: Dead: LRMB status 5 (dood/geveld). oss_002 nr 1680017 felled 2019/20, new lime planted; os
+  ["oss", "lime-of-the-old-school"],
+  ["oss", "sycamore-of-kloosterstraat"],
+  ["oss", "beech-of-sint-lambertuskerk"],
+  ["oss", "horse-chestnut-of-klaphekkenstraat"],
   // 2026-10-12, scripts/retire.py: Register entry nr 1691008 (Gewone es, Oostpoort/Oranjeplantage) carries status 5, Dood/gev
   ["delft", "ash-of-the-oostpoort"],
   // 2026-10-11, scripts/retire.py: Landelijk Register Monumentale Bomen nr 1685697 (felled years ago, giant polypore fungus) 
@@ -549,7 +564,19 @@ export function buildRedirectStubs(): RedirectStub[] {
   }
 
   for (const [citySlug, oldSlug] of REMOVED_TREE_SLUGS) {
-    if (!publishedSet.has(citySlug)) continue;
+    if (!publishedSet.has(citySlug)) {
+      // A whole place removed and folded into another: its tree URLs land on
+      // the place that took over its old URL, never on a 404.
+      const moved = RENAMED_CITY_SLUGS.find(([o, n]) => o === citySlug && publishedSet.has(n));
+      if (!moved) continue;
+      stubs.push({
+        outputPath: `${citySlug}/${oldSlug}.html`,
+        targetRelative: `../${moved[1]}`,
+        canonical: `${BASE_URL}/${moved[1]}`,
+        title: "Moved: this tree",
+      });
+      continue;
+    }
     stubs.push({
       outputPath: `${citySlug}/${oldSlug}.html`,
       targetRelative: `../${citySlug}`,

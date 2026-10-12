@@ -217,6 +217,76 @@
    "reason": "School grounds. CLAUDE.md hard rule 10 ships a tree on school grounds only where there is real evidence the grounds are genuinely open (a public path crossing them, a public park the school merely borders, open at weekends). The register's bezoekbaar=ja flag is the only evidence we have, and it is not enough to write an honest access line for a private school garden behind a house on the Nassaulaan. Held as a lead, not rejected: one confirmation that the garden is open, or that the beech is visible from public ground on the Nassaulaan, unblocks it as a view-only entry with the pin on the viewing place.",
    "date": "2026-08-18",
    "source_pass": "the-hague LRMB write pass"
+  },
+  {
+   "id": "hag_026",
+   "name": "The Copper Beech South of the Vreugd en Rust Koepel",
+   "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+   "age_estimate": "roughly 190 years, from a registered planting date around 1840",
+   "age_min": 186,
+   "age_max": 196,
+   "location": {
+    "address": "Zuidkant Koepel nr 1, Park Vreugd en Rust, Voorburg",
+    "latitude": 52.069878,
+    "longitude": 4.367151,
+    "neighbourhood": "Leidschendam-Voorburg"
+   },
+   "story": "Nearly all of a mature beech's roots sit in the top half metre of soil, spread about as wide as the crown reaches. Stand under this one and you are standing on it. That shallow plate is why old beeches in well used parks tend to die of nothing more dramatic than feet: the ground packs down, air stops reaching the roots, and a tree that has held on for nearly two centuries loses to a shortcut worn across the grass. Anyone looking after a park beech worries about the soil long before the branches.\n\nThis is the southern of the two copper beeches at koepel number one in Park Vreugd en Rust. The national register gives it a planting date somewhere between 1830 and 1840, so roughly 190 years, and that band is an estimate of when it went in rather than a count of rings. The register is the only source that puts any number on it.\n\nCome in a mast year and you will hear the tree before you look at it. Beech drops its nuts in irregular gluts rather than evenly, and after a heavy one the spiky husks lie thick enough underfoot to crunch. The park is in Voorburg, part of Leidschendam-Voorburg, a short ride east of The Hague rather than a walk within it.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public park, open daily.",
+   "transport": "Voorburg railway station, a few minutes by train from Den Haag Centraal, then about an 8-minute walk.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "how_to_recognise": "You can recognise it as the southern of two copper beeches standing together at koepel number one. It stands in Park Vreugd en Rust, Voorburg.",
+   "removed": "2026-10-12",
+   "removed_reason": "Dead: LRMB status 5 (dood/geveld). hag_026 Vreugd en Rust copper beech cut back in 2014, only a memorial trunk left; hag_031 Juliana en Bernardpark beech, last seen May 2020. Retired 2026-10-12 on Hidde's word."
+  },
+  {
+   "id": "hag_031",
+   "name": "The Stone Bench Beech of Juliana en Bernardpark",
+   "species": "European Beech (Fagus sylvatica)",
+   "age_estimate": "roughly 160 years, from a registered planting date around 1870",
+   "age_min": 156,
+   "age_max": 166,
+   "location": {
+    "address": "Bij stenenbank, Juliana &amp; Bernardpark, Voorburg",
+    "latitude": 52.072607,
+    "longitude": 4.366624,
+    "neighbourhood": "Leidschendam-Voorburg"
+   },
+   "story": "A beech that grows alone is a different shape of tree from a beech that grows in a wood. In a forest it races its neighbours upward and ends as a long clean column with the crown somewhere overhead. Given open ground it keeps its low limbs, spreads sideways and often finishes wider than it is tall. This one has had open ground in the Juliana en Bernardpark for about 160 years, and the outline shows which life it got.\n\nThe national register puts the planting between 1860 and 1870 and locates the tree by the stone bench rather than by any house number, which is still the best direction anyone can give. So: roughly 160 years, from an estimate of the planting rather than a count of rings. Nobody has cored it, and the register is the only source that dates it at all.\n\nThat span covers the turning of Voorburg from a village of country estates into a suburb of The Hague, and the occupation, and every winter storm in between. None of it shows on the tree. Beech holds smooth grey bark to the end, which is why the only honest measure of one is its girth.\n\nVoorburg belongs to the municipality of Leidschendam-Voorburg, east of The Hague and outside the city, so this is a ride out rather than a stroll.",
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free, public park, open daily.",
+   "transport": "Voorburg railway station, a few minutes by train from Den Haag Centraal, then about a 10-minute walk.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "confirmed",
+   "best_time": {
+    "months": [
+     10,
+     11
+    ],
+    "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
+    "kind": "autumn colour"
+   },
+   "how_to_recognise": "You can recognise it by its wide, low, spreading shape, a beech that grew alone rather than crowded by a wood. It stands by the stone bench in Juliana en Bernardpark, Voorburg.",
+   "removed": "2026-10-12",
+   "removed_reason": "Dead: LRMB status 5 (dood/geveld). hag_026 Vreugd en Rust copper beech cut back in 2014, only a memorial trunk left; hag_031 Juliana en Bernardpark beech, last seen May 2020. Retired 2026-10-12 on Hidde's word."
   }
  ],
  "notes": [
