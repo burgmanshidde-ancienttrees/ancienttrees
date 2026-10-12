@@ -84,7 +84,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
         "https://de.wikipedia.org/wiki/Platane_Albertplatz",
-        "https://www.stadtwikidd.de/wiki/Naturdenkmale"
+        "https://www.stadtwikidd.de/wiki/Naturdenkmale",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9423&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free, standing on a traffic island in the middle of a public square, accessible at any time",
       "transport": "Albertplatz tram and bus interchange, right on the square",
@@ -100,7 +101,12 @@
         "width": 2336,
         "height": 4160
       },
-      "how_to_recognise": "The plane tree standing alone on the traffic island toward Bautzner Strasse, in the middle of the Albertplatz interchange."
+      "how_to_recognise": "The plane tree standing alone on the traffic island toward Bautzner Strasse, in the middle of the Albertplatz interchange.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 26",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9423&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      },
+      "height_m": 25
     },
     {
       "id": "dre_003",
@@ -249,7 +255,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Rieseneiche_im_Sauerbusch",
         "https://www.wikidata.org/wiki/Q107044186",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Rieseneiche_Sauerbusch"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Rieseneiche_Sauerbusch",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9478&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. Public forest (Sachsenforst, Dresdner Heide); a signposted educational trail 'Rieseneichen' (run by the Heimatverein Weixdorf) leads to it. Forest paths, no ticket.",
       "transport": "Not verified. Remote forest stand in the far north-east of the Heide near Langebruck, well over 30 minutes from the centre; reached on foot or by bike from Langebruck or Weixdorf. Check current timetables before quoting a stop.",
@@ -263,7 +270,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by the snapped-off main stem on a trunk about 6.60 metres round, one side almost bare of bark and patched with concrete. It stands on the signposted Rieseneichen trail in the Sauerbusch.",
-      "verify_notes": "Register-only (city Naturdenkmal ND 72; de.wikipedia plus Wikidata coordinate). Tree-level Wikidata coordinate; Commons has CC0 photos of the trunk base and hole taken 2021-05-31 by Pedalito (CC0), so a photo exists; lifecheck RECENT 2025-06-12 near the pin. Conflict on height: de.wikipedia article says about 22 m, the ND list says 14 m; main stem broke off at about 15 m, the crown is single limbs. Girth about 6.60 m at 1.30 m (measured 2016, cited to monumentaltrees on the list page; cross-checked on article). Age 'up to 700 years' is an estimate in the article, not a measured date; keep vague. History: 1679 forest protocol lists two oaks in the Sauerbusch as boundary markers, likely mast trees; both protected 1938 (other sources say 1958); the second oak fell in a fire started by children in 1993. The forest district describes the tree as 'in its last stage of life' although vital; stem has heavy overgrowth, one side nearly debarked, parts stabilised with concrete. Alive as of 2021 photos; recheck. Twin folded: none (the second oak is gone). Lead: a 'Dresdner Heide' walk with the Rotbuche dre_007 (about 5.5 km apart, separate stops)."
+      "verify_notes": "Register-only (city Naturdenkmal ND 72; de.wikipedia plus Wikidata coordinate). Tree-level Wikidata coordinate; Commons has CC0 photos of the trunk base and hole taken 2021-05-31 by Pedalito (CC0), so a photo exists; lifecheck RECENT 2025-06-12 near the pin. Conflict on height: de.wikipedia article says about 22 m, the ND list says 14 m; main stem broke off at about 15 m, the crown is single limbs. Girth about 6.60 m at 1.30 m (measured 2016, cited to monumentaltrees on the list page; cross-checked on article). Age 'up to 700 years' is an estimate in the article, not a measured date; keep vague. History: 1679 forest protocol lists two oaks in the Sauerbusch as boundary markers, likely mast trees; both protected 1938 (other sources say 1958); the second oak fell in a fire started by children in 1993. The forest district describes the tree as 'in its last stage of life' although vital; stem has heavy overgrowth, one side nearly debarked, parts stabilised with concrete. Alive as of 2021 photos; recheck. Twin folded: none (the second oak is gone). Lead: a 'Dresdner Heide' walk with the Rotbuche dre_007 (about 5.5 km apart, separate stops).",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt)",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9478&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_008",
@@ -283,7 +294,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Stiel-Eiche_B%C3%A4rnsdorfer_Stra%C3%9Fe",
         "https://www.wikidata.org/wiki/Q111512237",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stiel-Eiche_B%C3%A4rnsdorfer_Stra%C3%9Fe_Neustadt"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stiel-Eiche_B%C3%A4rnsdorfer_Stra%C3%9Fe_Neustadt",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9426&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. A freestanding tree at a street junction on public ground.",
       "transport": "Not verified in detail; inner-city district north-west of the Neustadt, on the B170 side near Hansastrasse. Check the nearest tram stop before quoting.",
@@ -297,7 +309,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as the freestanding oak, 4.45 metres round, on the tip of land where Weinbohlaer Strasse and Barnsdorfer Strasse fork. It stands about 100 metres south-east of where Hechtstrasse leaves Hansastrasse.",
-      "verify_notes": "Register only (city Naturdenkmal ND 29, protected 3 Jan 1985, resolution 266/85). Tree-level Wikidata coordinate; de.wikipedia places it at the southern fork of Weinbohlaer and Barnsdorfer Strasse, about 100 m south-east of the Hechtstrasse turn-off from Hansastrasse, which fits the pin. Photos: 8 files CC BY-SA 3.0 Dr. Bernd Gross, 2015-05-20. lifecheck on the pin returned NONE and the newest photo is 2015, so alive confirmation is thin: flagged. Height about 25 m, crown about 30 m, girth 4.45 m (register). Planted about 1880, probably in the beer garden of the pub 'Zur Gruenen Aue' on the road tip, which stood until 1960 (article says 'vermutlich', so keep hedged; do not bridge it into fact). About 150 m north-east, in the St.-Pauli-Friedhof, stand the Marschall oak and Meschwitz oak, planted c.1870/80 and treated as Dresden memorial trees (Wikidata Q109422836, Q124842660): possible cluster, not verified as accessible here. Protected the same day as the Doebelner Strasse oak, the Kaditzer Linde (dre_005) and the Heide pine."
+      "verify_notes": "Register only (city Naturdenkmal ND 29, protected 3 Jan 1985, resolution 266/85). Tree-level Wikidata coordinate; de.wikipedia places it at the southern fork of Weinbohlaer and Barnsdorfer Strasse, about 100 m south-east of the Hechtstrasse turn-off from Hansastrasse, which fits the pin. Photos: 8 files CC BY-SA 3.0 Dr. Bernd Gross, 2015-05-20. lifecheck on the pin returned NONE and the newest photo is 2015, so alive confirmation is thin: flagged. Height about 25 m, crown about 30 m, girth 4.45 m (register). Planted about 1880, probably in the beer garden of the pub 'Zur Gruenen Aue' on the road tip, which stood until 1960 (article says 'vermutlich', so keep hedged; do not bridge it into fact). About 150 m north-east, in the St.-Pauli-Friedhof, stand the Marschall oak and Meschwitz oak, planted c.1870/80 and treated as Dresden memorial trees (Wikidata Q109422836, Q124842660): possible cluster, not verified as accessible here. Protected the same day as the Doebelner Strasse oak, the Kaditzer Linde (dre_005) and the Heide pine.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 29",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9426&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_009",
@@ -317,7 +333,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Winter-Linde_Laubegaster_Ufer",
         "https://www.wikidata.org/wiki/Q124719169",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Winterlinde_Laubegaster_Ufer_Dresden"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Winterlinde_Laubegaster_Ufer_Dresden",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9495&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. Stands on the outside of the ice-protection wall of Laubegaster Ufer 17, beside the road; just north of the driveway the road is closed to cars and is a foot and cycle path forming part of the left-bank Elbe cycle route.",
       "transport": "Not verified; Laubegast is an eastern Elbe-bank district. Check the nearest tram stop and walking time before quoting.",
@@ -338,7 +355,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by the old ice wound, a ridge at about 1.5 metres on a trunk 3.90 metres round. It stands by the road outside the wall of Laubegaster Ufer 17.",
-      "verify_notes": "Register (city Naturdenkmal ND 89, protected 10 June 1999) plus the owner's 1997 letter quoted on de.wikipedia. Coordinates: de.wikipedia list 51/1/30.95N 13/50/23.9E (=51.02582, 13.83997), Wikidata Q124719169 51.0253,13.839993; they agree within about 70 m, so I used the list value which is described as 'by Nr. 17'; stated confirmed because the tree is on the Elbe path next to a named house, but a writer could re-read the Wikidata offset. Alive: Commons photo 2025-12-27 by Z thomas (CC BY 4.0) and 2024-05-09 lifecheck RECENT. Girth 3.90 m, height about 20 m, crown about 16 m. Age: article says planted or sown in the second half of the 17th century, narrowing to the 1670s or 1680, and the owner wrote of a '320 year old' linden in 1997. The owner built a protective masonry surround in 1913. In March 1940 the largest Elbe flood of the 20th century drove 40 cm ice floes against the wall and tree for 10 to 15 hours, leaving a wound about 50 cm tall around half the trunk; a ridge at roughly 1.5 m height still shows it. Pavement around the roots was replaced with cobbles to protect it. The house behind was built 1879 for a Saxon court marshal (protected Kulturdenkmal). Two other Laubegast ND trees stand about 500 m each way (black poplars at no. 1, black pine at no. 39), same cycle path. Photos CC BY-SA 3.0 Dr. Bernd Gross 2014/2015."
+      "verify_notes": "Register (city Naturdenkmal ND 89, protected 10 June 1999) plus the owner's 1997 letter quoted on de.wikipedia. Coordinates: de.wikipedia list 51/1/30.95N 13/50/23.9E (=51.02582, 13.83997), Wikidata Q124719169 51.0253,13.839993; they agree within about 70 m, so I used the list value which is described as 'by Nr. 17'; stated confirmed because the tree is on the Elbe path next to a named house, but a writer could re-read the Wikidata offset. Alive: Commons photo 2025-12-27 by Z thomas (CC BY 4.0) and 2024-05-09 lifecheck RECENT. Girth 3.90 m, height about 20 m, crown about 16 m. Age: article says planted or sown in the second half of the 17th century, narrowing to the 1670s or 1680, and the owner wrote of a '320 year old' linden in 1997. The owner built a protective masonry surround in 1913. In March 1940 the largest Elbe flood of the 20th century drove 40 cm ice floes against the wall and tree for 10 to 15 hours, leaving a wound about 50 cm tall around half the trunk; a ridge at roughly 1.5 m height still shows it. Pavement around the roots was replaced with cobbles to protect it. The house behind was built 1879 for a Saxon court marshal (protected Kulturdenkmal). Two other Laubegast ND trees stand about 500 m each way (black poplars at no. 1, black pine at no. 39), same cycle path. Photos CC BY-SA 3.0 Dr. Bernd Gross 2014/2015.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 89",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9495&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_010",
@@ -356,7 +377,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Flatter-Ulme_K%C3%B6nigsbr%C3%BCcker_Stra%C3%9Fe_49",
         "https://www.wikidata.org/wiki/Q95674808",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Flatter-Ulme_K%C3%B6nigsbr%C3%BCcker_Stra%C3%9Fe_Neustadt"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Flatter-Ulme_K%C3%B6nigsbr%C3%BCcker_Stra%C3%9Fe_Neustadt",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=867366&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. The elm stands on the pavement side of the property in front of the houses at Konigsbrucker Strasse 49 to 51 and is visible and reachable from the public pavement on a main street; the pin marks the tree on the street frontage.",
       "transport": "Not verified in detail; Aussere Neustadt on the Konigsbrucker Strasse tram corridor, close to the centre. Check the nearest stop before quoting.",
@@ -370,7 +392,11 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it as the tall elm, about 30 metres, on the pavement side of Konigsbrucker Strasse in front of numbers 49 and 51. Its trunk measures 3.57 metres round.",
-      "verify_notes": "Register (city Naturdenkmal ND 131, ordinance January 2015). Wikidata coordinate 51.07062119,13.74958807 matches the ND list value 51/4/14.05N 13/44/59.05E (=51.07057, 13.74974), two independent entries within about 15 m. Photos: 5 files CC BY-SA 3.0 Z thomas 2018-05-28 and 7 files 2019-05-06/07, plus Dr. Bernd Gross 2015. lifecheck says OLD (2011 file) but the Commons upload dates show 2018/2019; newest photo 2019, so alive-now is thin: flagged. Measurements per de.wikipedia: height about 30 m, crown about 20 m, girth 3.57 m. Why it was chosen: in the early 2010s the city put forward 39 especially valuable trees at 29 sites for protection; this elm was picked because European elm species are threatened by Dutch elm disease from Asian fungi and this exceptional specimen is healthy and defines the streetscape. Flatter-Ulme Altubigau and the Sachsenplatz elms had been protected since 1999. No age is documented; leave empty and let the page ask. Possible access caveat: the tree is on the property frontage 'gehwegseitig vorgelagert' (pavement-side), which I read as public pavement; I could not check the plot boundary on the ground."
+      "verify_notes": "Register (city Naturdenkmal ND 131, ordinance January 2015). Wikidata coordinate 51.07062119,13.74958807 matches the ND list value 51/4/14.05N 13/44/59.05E (=51.07057, 13.74974), two independent entries within about 15 m. Photos: 5 files CC BY-SA 3.0 Z thomas 2018-05-28 and 7 files 2019-05-06/07, plus Dr. Bernd Gross 2015. lifecheck says OLD (2011 file) but the Commons upload dates show 2018/2019; newest photo 2019, so alive-now is thin: flagged. Measurements per de.wikipedia: height about 30 m, crown about 20 m, girth 3.57 m. Why it was chosen: in the early 2010s the city put forward 39 especially valuable trees at 29 sites for protection; this elm was picked because European elm species are threatened by Dutch elm disease from Asian fungi and this exceptional specimen is healthy and defines the streetscape. Flatter-Ulme Altubigau and the Sachsenplatz elms had been protected since 1999. No age is documented; leave empty and let the page ask. Possible access caveat: the tree is on the property frontage 'gehwegseitig vorgelagert' (pavement-side), which I read as public pavement; I could not check the plot boundary on the ground.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 131",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=867366&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_007",
@@ -485,7 +511,8 @@
         "https://www.wikidata.org/wiki/Q106253692",
         "https://www.openstreetmap.org/node/260483097",
         "https://commons.wikimedia.org/wiki/Category:Luthereiche_Dresdner_Heide",
-        "https://de.wikipedia.org/wiki/Liste_der_Kulturdenkmale_in_der_Dresdner_Heide"
+        "https://de.wikipedia.org/wiki/Liste_der_Kulturdenkmale_in_der_Dresdner_Heide",
+        "https://denkmalliste.denkmalpflege.sachsen.de/CardoMap/Denkmalliste_Report.aspx?HIDA_Nr=09217019"
       ],
       "access": "Free. Stands in the public forest of the Dresdner Heide (Sachsenforst) beside a forest ride, with a memorial stone, two benches and a table; open at all times.",
       "transport": "Not verified. About 850 m east of the Fischhaus in the Albertpark and south of Radeberger Landstrasse; likely over 30 minutes from the centre by bus and foot, check timetables before quoting a stop.",
@@ -511,8 +538,8 @@
       },
       "photos": [],
       "official_register": {
-        "name": "Kulturdenkmal Sachsen (Denkmalliste, Gartendenkmal), no. 09217019",
-        "url": null
+        "name": "Kulturdenkmal (Landesamt fuer Denkmalpflege Sachsen, Obj.-Dok.-Nr. 09217019), no. 09217019",
+        "url": "https://denkmalliste.denkmalpflege.sachsen.de/CardoMap/Denkmalliste_Report.aspx?HIDA_Nr=09217019"
       }
     },
     {
@@ -638,7 +665,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal wrk001 (Landkreis Saechsische Schweiz-Osterzgebirge; StUFA 2004 Baum-Naturdenkmale brochure), no. wrk001",
+        "url": null
+      }
     },
     {
       "id": "dre_016",
@@ -660,7 +691,7 @@
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Dresden",
         "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9431&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
-      "access": "In the garden of Villa Marienlust, now the Ärztehaus Blasewitz medical centre. The crown can be seen from Naumannstrasse; we have not confirmed whether visitors may walk into the garden.",
+      "access": "Stands in the garden behind Villa Marienlust, which is the Aerztehaus Blasewitz medical centre (Naumannstrasse 3). The centre's own site gives opening hours Monday to Thursday 6:00-20:00 and Friday 6:00-19:00, closed at weekends, and says nothing about the garden being open to visitors, so we have not confirmed that you may walk in; the crown can be seen from Naumannstrasse.",
       "transport": "Blasewitz, about 5 km east of the Altstadt, near Schillerplatz. We have not checked the nearest tram stop and walking time.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -699,7 +730,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Stieleichen_H%C3%BCblerstra%C3%9Fe",
         "https://dawo-dresden.de/2025/06/23/375-jahre-alte-eiche-gefaellt/",
-        "https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/06/pm_067.php"
+        "https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/06/pm_067.php",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9432&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free, on the public street verge of Hueblerstrasse, between two listed villas; no entry needed.",
       "transport": "About 300 m west of Schillerplatz in Blasewitz, near the Blue Wonder bridge. We have not checked the nearest tram stop.",
@@ -714,7 +746,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 35",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9432&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      },
+      "height_m": 23
     },
     {
       "id": "dre_018",
@@ -917,7 +954,8 @@
         "https://de.wikipedia.org/wiki/Moreau-Denkmal",
         "https://de.wikipedia.org/wiki/Liste_der_Gedenkb%C3%A4ume_in_Dresden",
         "https://www.dnn.de/lokales/dresden/tief-verwurzelt-in-der-geschichte-dresdner-gedenkbaeume-K7QOGSPA2FEZHCGYEUJT2EIE4E.html",
-        "https://commons.wikimedia.org/wiki/Category:Moreau-Eichen"
+        "https://commons.wikimedia.org/wiki/Category:Moreau-Eichen",
+        "https://denkmalliste.denkmalpflege.sachsen.de/CardoMap/Denkmalliste_Report.aspx?HIDA_Nr=09212222"
       ],
       "access": "Free, open meadow with the monument; the whole meadow ('Franzosenhoehe') and monument are a listed Kulturdenkmal. Slope, no ticket, no gate described in the sources.",
       "transport": "On the Räcknitzhöhe south of the Altstadt, across the street from Räcknitz Park. We have not checked the nearest bus or tram stop.",
@@ -935,7 +973,11 @@
       },
       "photos": [],
       "story": "Beneath these three oaks lie a general's legs. On 27 August 1813, in the Battle of Dresden, the French general Jean-Victor Moreau was fighting on the allied side, next to Tsar Alexander, when a cannonball shattered both his legs. He died six days later. A monument went up on the spot in 1814, commissioned by the Russian governor-general Repnin-Wolkonski, and on 4 November that year the amputated legs were buried beneath it in an urn. That same November three pedunculate oaks were planted around the stone, one for each ally: Russia, Prussia and Austria.\n\nThey did not start well. In 1836 the writer Ferdinand Stolle reported that the oaks looked sickly and had given no shade even in 1830, on ground judged poor for them. They stand today regardless, carrying the scars: broken branches, pruned crowns, and a cavity in one trunk that has been surgically closed. Their crowns have grown together into one, and their stems now press against the monument's stone border.\n\nNor did they grow evenly. One trunk is 4.75 metres round, the other two 3.00 and 2.55. The meadow, called the Franzosenhöhe, is protected together with the monument as a heritage site, which is why the oaks carry no natural-monument status of their own. The inscription still reads: Moreau, the hero, fell here at Alexander's side.",
-      "how_to_recognise": "You can recognise them as three oaks with crowns grown together, ringed close around a stone monument whose inscription names Moreau; the thickest trunk is 4.75 metres round. They stand on the Franzosenhöhe meadow off Moreauweg."
+      "how_to_recognise": "You can recognise them as three oaks with crowns grown together, ringed close around a stone monument whose inscription names Moreau; the thickest trunk is 4.75 metres round. They stand on the Franzosenhöhe meadow off Moreauweg.",
+      "official_register": {
+        "name": "Kulturdenkmal (Landesamt fuer Denkmalpflege Sachsen, Obj.-Dok.-Nr. 09212222: Moreau-Denkmal with the Franzosenhoehe meadow), no. 09212222",
+        "url": "https://denkmalliste.denkmalpflege.sachsen.de/CardoMap/Denkmalliste_Report.aspx?HIDA_Nr=09212222"
+      }
     },
     {
       "id": "dre_023",
@@ -957,7 +999,8 @@
         "https://de.wikipedia.org/wiki/Luthereiche_Kleinluga",
         "https://de.wikipedia.org/wiki/Liste_der_Gedenkb%C3%A4ume_in_Dresden",
         "https://denkmalliste.denkmalpflege.sachsen.de/CardoMap/Denkmalliste_Report.aspx?HIDA_Nr=09215701",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Luther-Eiche_Kleinluga"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Luther-Eiche_Kleinluga",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9494&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free; on the open village square (Teichplatz) with a pond nearby, public ground. Memorial stone and protection plaques at the tree. Farmsteads border the square, the tree itself is on the square plot (Flurstueck 2).",
       "transport": "Kleinluga, in the south-east of Dresden, about 10 km from the Altstadt. We have not checked the bus connection; use the VVO journey planner.",
@@ -971,7 +1014,11 @@
       },
       "photos": [],
       "story": "Schoolchildren planted this oak on 10 November 1883, Martin Luther's 400th birthday, and it has run the village square ever since. The pupils came from the school at Grossluga, whose district took in the little village of Kleinluga, and they set it in the middle of the Teichplatz, near the pond. A memorial stone went in front of it.\n\nThe young oak was planted in the German Empire and has stood through every state that followed. It is now about 20 metres tall, with a crown about 22 metres across and a trunk 4.10 metres round, by the city's own nature-protection records. Nothing else on the square comes close: the farmsteads keep to its edges and the oak takes the middle.\n\nIn 1998 and 1999 the square was redesigned around it and the memorial stone was renewed. On 10 June 1999 the city council made the tree natural monument ND 88, with a protected zone reaching three metres beyond the edge of its crown and never less than 15 metres from the trunk. Together with its stone it is also a listed heritage monument, so the Luther Oak is protected twice: once as nature, once as history.\n\nIt stands about 10 km south-east of Dresden's old town. Another village-square oak, at Oberpoyritz about 5 km to the north-east, was protected by the same council on the same day.",
-      "how_to_recognise": "You can recognise it as the only big oak in the middle of the Teichplatz, with a granite memorial stone at its foot and natural-monument plaques. It stands between Teichplatz 8 and 9, near the pond."
+      "how_to_recognise": "You can recognise it as the only big oak in the middle of the Teichplatz, with a granite memorial stone at its foot and natural-monument plaques. It stands between Teichplatz 8 and 9, near the pond.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 88",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9494&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_024",
@@ -992,7 +1039,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Stiel-Eiche_Dorfplatz_Oberpoyritz",
         "https://www.dresden.de/media/pdf/umwelt/umweltausstellung/naturschutz_Baeume.pdf",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stiel-Eiche_Dorfplatz_Oberpoyritz_Dresden"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stiel-Eiche_Dorfplatz_Oberpoyritz_Dresden",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9491&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free; stands on the open village square (Dorfplatz), public ground, with protection plaques on the trunk.",
       "transport": "Oberpoyritz, in Dresden's outer south-east, about 10 km from the Altstadt. We have not checked the bus connection; use the VVO journey planner.",
@@ -1006,7 +1054,11 @@
       },
       "photos": [],
       "story": "This oak was slowly dying of the village around it, and Dresden dug up its square to save it. Through the 1980s and 1990s its crown thinned and paled. The blame fell on the paving laid around the trunk, and possibly on a leaking gas main in the root zone. In 1998 the city rebuilt the site: the gas pipe was re-routed, and the roots were bridged under the driveways and the pavement. The diggers found thick roots five metres beyond the edge of the crown, which says something about how far an oak reaches for what it needs. Within a few years the crown had recovered.\n\nIt stands free on the Dorfplatz of Oberpoyritz, the village's landmark. The city's records give it about 25 metres of height, a crown about 25 metres across and a trunk 4.30 metres round. The Viehbotsche brook runs between the tree and the house plots to the east and joins the Graupaer Bach about 40 metres to the south.\n\nOn 10 June 1999 the city council made it natural monument ND 85, on the same day as the Luther Oak of Kleinluga, with a protected zone of at least 16 metres around the trunk. Its age is an estimate: in 2008 the city's environment office put it at about 150 years, which would place it in the middle of the 19th century. Nobody recorded the planting. If you know when it went in, tell us.",
-      "how_to_recognise": "You can recognise it as the single free-standing oak on the Dorfplatz, 4.30 metres round, with natural-monument plaques on the trunk. It stands east of the village street, with the Viehbotsche brook running past on its east side."
+      "how_to_recognise": "You can recognise it as the single free-standing oak on the Dorfplatz, 4.30 metres round, with natural-monument plaques on the trunk. It stands east of the village street, with the Viehbotsche brook running past on its east side.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 85",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9491&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_025",
@@ -1028,7 +1080,8 @@
         "https://de.wikipedia.org/wiki/Alberteiche_Kauscha",
         "https://de.wikipedia.org/wiki/Liste_der_Gedenkb%C3%A4ume_in_Dresden",
         "https://www.dresden.de/media/pdf/amtsblatt/archiv/2004/ddamt-2004-kw52.pdf",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stieleiche_Kauscha"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stieleiche_Kauscha",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9486&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free; on the open village square of Kauscha, public ground. Granite memorial stone and protection plaque at the tree.",
       "transport": "Kauscha, in Dresden's south, roughly 8 km from the Altstadt. We have not checked the bus connection; use the VVO journey planner.",
@@ -1042,7 +1095,11 @@
       },
       "photos": [],
       "story": "In 1945 a laundry owner named Menzel plastered over the gold lettering on the stone in front of this oak, to hide a king's name from the approaching Soviet army. The king was Albert of Saxony. The oak had gone in as a young tree in spring 1898, on the village square of Kauscha, for his 70th birthday and his 25th year on the throne. Several Albert oaks were planted around Dresden for that double jubilee, at Waldschlösschen, Loschwitz, Stetzsch, Strehlen and Weissig. This is the largest known of them.\n\nIt is also the one that outgrew its age. Its trunk measured 5.10 metres round in 2008, under a crown about 35 metres across and 25 metres high. In 2004 the Sächsische Zeitung called it Dresden's mightiest tree. Yet it has no old-age bark, the city's official gazette noted the same year, unlike the 17th-century oaks of the Hüblerstrasse and the Sauerbusch: a big tree, not an old one.\n\nIn the 1950s children scraped the plaster off the stone. By 1999 little of the lettering was legible, and the stone has since been reconstructed. The oak had its own trouble: after the 1990s switch to natural gas, a leaking pipe through its root zone drove the oxygen out of the soil and thinned the crown. The pipe was replaced in 1998, and once Kauscha joined Dresden in 1999 the city rebuilt the site and the tree recovered markedly. The street through the village core is now called Zur Eiche.",
-      "how_to_recognise": "You can recognise it by the granite memorial stone at its foot and the trunk, 5.10 metres round, under a crown about 35 metres across. It stands alone on the village square, on the street called Zur Eiche."
+      "how_to_recognise": "You can recognise it by the granite memorial stone at its foot and the trunk, 5.10 metres round, under a crown about 35 metres across. It stands alone on the village square, on the street called Zur Eiche.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 80",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9486&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_026",
@@ -1063,7 +1120,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Alberteiche_Strehlen",
         "https://www.wikidata.org/wiki/Q111802468",
-        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stiel-Eiche_Strehlen"
+        "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Stiel-Eiche_Strehlen",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9492&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. Stands on the public Wasaplatz square in the middle of a busy junction; a footpath runs right up to the trunk. Street traffic on the other side.",
       "transport": "A tram line runs through Wasaplatz (per de.wikipedia, since 1928); stop name and timetable not verified, check before quoting.",
@@ -1077,7 +1135,11 @@
       },
       "photos": [],
       "story": "This oak was planted as a birthday present for a king, and has spent most of its life negotiating with traffic. It went into the ground on Wasaplatz in Strehlen in April 1898, on the 23rd or the 24th depending on which record you trust, for King Albert of Saxony's 70th birthday and his 25th year on the throne. Several Albert oaks went in around Dresden for that double jubilee. This one got a fenced decorative plot ringed with birches.\n\nThe square did not stay quiet. A tram line has run through Wasaplatz since 1928, a main road now presses hard against one side of the tree, and its crown is pruned back regularly so that traffic clears it. In 1991 a cable was laid through its root zone and the roots were cut. It kept growing anyway. The most recent measurements put it at about 21 metres tall, with a crown some 24 metres across and a trunk 3.85 metres round; the city's older designation figures give 20 metres and 3.65.\n\nDresden made it a natural monument in 1999. At under 130 years it is not an ancient tree and does not pretend to be. It is a royal anniversary that kept its leaves, holding the middle of a busy junction while the city works around it.",
-      "how_to_recognise": "You can recognise it as the single large oak in the middle of the star-shaped Wasaplatz, its trunk 3.85 metres round, with tram tracks curving past. A main road runs hard against one side of it."
+      "how_to_recognise": "You can recognise it as the single large oak in the middle of the star-shaped Wasaplatz, its trunk 3.85 metres round, with tram tracks curving past. A main road runs hard against one side of it.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 86",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9492&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_027",
@@ -1133,7 +1195,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Fingerbl%C3%A4ttrige_Rosskastanie_Volkspark_R%C3%A4cknitz",
         "https://commons.wikimedia.org/wiki/Category:Naturdenkmal_Fingerbl%C3%A4ttrige_Rosskastanie_Volkspark_R%C3%A4cknitz",
-        "https://ddg-web.de/rekordbaeume.html?VCardId=188"
+        "https://ddg-web.de/rekordbaeume.html?VCardId=188",
+        "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9430&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
       ],
       "access": "Free. Public park (Volkspark Räcknitz), the tree stands at the edge of the raised lawn by the Stadtgutstrasse entrance.",
       "transport": "Not verified. Räcknitz lies in the south-west of Dresden; check the tram or bus stop near Stadtgutstrasse before quoting a walk time.",
@@ -1147,7 +1210,11 @@
       },
       "photos": [],
       "story": "This horse chestnut belongs to a variety that normally grows as a shrub, and it is about 20 metres tall. 'Digitata', the fingered-leaf form, has been spreading out of France since 1864. This specimen was grafted onto an ordinary horse chestnut, and above the graft it has gone on to raise a trunk of its own, under a crown about 18 metres wide.\n\nIt came out of the Reichsgartenschau of 1936, the national garden show Dresden hosted that year, as one of the rare trees the exhibitors left to the city when the show was over. No planting year was written down, so its age of about 90 is counted from the show rather than from a record of the day it went in.\n\nIn January 1985 Dresden's council made it a natural monument, and it was the only tree from the then district of Dresden-Süd in that resolution. The city's documentation gives its trunk as 3.05 metres round at 0.7 metres up; the German Dendrological Society's list of record trees has it at 3.53 metres at breast height in 2010.\n\nIt stands in the north-west corner of Volkspark Räcknitz, at the edge of the raised lawn just inside the entrance from Stadtgutstrasse. A garden show lasts a summer. Its shrub that turned into a tree is still here, ninety years on.",
-      "how_to_recognise": "You can recognise it by its fingered leaves, the rare 'Digitata' form, and the multi-stemmed crown above a grafted trunk. It stands at the edge of the raised lawn just north of the Stadtgutstrasse entrance."
+      "how_to_recognise": "You can recognise it by its fingered leaves, the rare 'Digitata' form, and the multi-stemmed crown above a grafted trunk. It stands at the edge of the raised lawn just north of the Stadtgutstrasse entrance.",
+      "official_register": {
+        "name": "Naturdenkmal (Landeshauptstadt Dresden, Umweltamt), no. ND 33",
+        "url": "https://stadtplan.dresden.de/project/cm3/Detail/umwelt_formblatt_detail.aspx?ID=9430&THEMA=UW_NATSCHR&CARDOMAP_TH_TITLE=Schutzgebiete+nach+Naturschutzrecht&CARDOMAP_TH_ID=6.1591&CARDOMAP_TH_ALIAS=UW_NATSCHR&CARDOMAP_L_ID=L1232"
+      }
     },
     {
       "id": "dre_029",
