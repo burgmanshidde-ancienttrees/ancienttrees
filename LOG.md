@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - App: a crash on the map list fixed, the sheet comes down again, and the red app gate is green
+
+**What changed in the app.** The red iOS gate (three scheduled runs in a row) was mostly tests looking for words that had changed, and under them two real faults:
+
+- **A crash.** The tree silhouette on a card with no photograph kept its parsed shape in a cache guarded by `MainActor.assumeIsolated`, and SwiftUI draws shapes on its render thread when it can, so scrolling the map list could trap. Found in the crash log testTheMapSurvivesBeingUsed attached; it is the "crashed in external symbol" CI reported on 10-10. The cache sits behind a lock now (Kit/SVGPath.swift).
+- **The full-height list would not come back down after you had scrolled it.** The header counted as a handle only in its top 90 points, and since the sheet became the page a status-bar strip grew above it, so at full height the strip sat below that line. The depth is measured from the drawn frame now (Screens/BottomSheet.swift).
+- **Stale tests.** Take me there carries the distance since 10-10 ("Take me there · 1.2 km"), so five tests look it up by its identifier; the report flow's thank-you says Done rather than OK.
+
+Verified on the iPhone 17 Pro simulator: AncientTreesUITests and FaultWalk 22 of 22, FlowWalk passes, and the drag checked by hand. Also seen: the night runs have hit the weekly limit until Oct 14, 9am UTC.
+
 ## 2026-10-12 - Night run 2026-10-12 08:26 UTC ended without saying anything
 
 Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). Nothing reached data/cities.

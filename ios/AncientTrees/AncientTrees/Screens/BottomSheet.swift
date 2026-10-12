@@ -286,7 +286,16 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// drag on the header reports a startLocation.y of about 190 and 190 is not
     /// less than 74. A test that drives the real sequence caught it in one run
     /// (2026-08-25); the fix I shipped an hour earlier had not worked at all.
-    private let headerDepth: CGFloat = 90
+    ///
+    /// MEASURED since 2026-10-11, no longer a constant 90. When the sheet
+    /// became the page (6fda8ee04) a status-bar strip grew above the handle
+    /// row, which pushed the header below 90 at full height, so after the list
+    /// had been scrolled the header stopped being a handle at all:
+    /// testTheMapSurvivesBeingUsed went red on both iOS versions and the
+    /// sheet would not come down. Strip, handle row and header are now read
+    /// from the drawn frame, so a taller header or a deeper status bar cannot
+    /// move the handle out from under the finger again.
+    @State private var headerDepth: CGFloat = 90
     /// 0 at the half stop, 1 at the page, READ BACK FROM THE DRAWN FRAME each
     /// frame of the spring rather than computed from the height asked for.
     /// The asked-for height changes in one step on release while the frame
@@ -406,6 +415,11 @@ struct BottomSheet<Header: View, Content: View>: View {
                 header
                     .frame(maxWidth: .infinity)
                     .contentShape(.rect)
+                    // Everything above the scroll view, measured from the
+                    // sheet's own top: see headerDepth.
+                    .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named("sheet")).maxY } action: {
+                        headerDepth = max(90, $0)
+                    }
 
                 ScrollView {
                     content
@@ -459,6 +473,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                 }
             }
             .frame(height: h + bottom)
+            .coordinateSpace(.named("sheet"))
             // MEASURED, NOT COMPUTED, and this is the other half of the button
             // that jumps (Hidde, 2026-09-13, and 2026-09-04 before it).
             //

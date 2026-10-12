@@ -52,7 +52,7 @@ final class FaultWalk: XCTestCase {
         XCTAssertTrue(card.waitForExistence(timeout: 15), "no tree card offline")
         card.tap()
 
-        XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 8),
+        XCTAssertTrue(app.buttons["tree-take-me-there"].waitForExistence(timeout: 8),
                       "a tree page could not open without a network")
         XCTAssertTrue(app.navigationBars.buttons.firstMatch.exists,
                       "offline, the tree page has no way back")

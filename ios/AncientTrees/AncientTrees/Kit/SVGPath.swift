@@ -190,12 +190,19 @@ struct SpeciesShape: Shape {
     /// character by character, nineteen of them in a grid, on every frame that
     /// touched the view. Parsing is the expensive half and the drawing is
     /// cheap. A path never changes for a species, so it is parsed once.
-    @MainActor private static var cache: [String: Path] = [:]
+    ///
+    /// Behind a lock, never on the main actor (2026-10-11). SwiftUI draws a
+    /// Shape on its render thread when it can (ViewGraph.renderAsync), so the
+    /// `MainActor.assumeIsolated` that guarded this trapped: a crash scrolling
+    /// the map list over cards with no photograph, caught by
+    /// testTheMapSurvivesBeingUsed's crash log.
+    nonisolated(unsafe) private static var cache: [String: Path] = [:]
+    private static let lock = NSLock()
 
     private static func parsed(_ species: String) -> Path {
-        if let hit = MainActor.assumeIsolated({ cache[species] }) { return hit }
+        if let hit = lock.withLock({ cache[species] }) { return hit }
         let p = SVG.path(SpeciesIcons.fragment(for: species))
-        MainActor.assumeIsolated { cache[species] = p }
+        lock.withLock { cache[species] = p }
         return p
     }
 

@@ -200,7 +200,7 @@ final class FlowWalk: XCTestCase {
                 Step(name: "pick-a-reason") {
                     Self.tap($0, "An offensive name or picture")
                 },
-                Step(name: "close-the-thank-you") { Self.tap($0, "OK") },
+                Step(name: "close-the-thank-you") { Self.tap($0, "Done") },
             ]),
 
             // The way into the app from a search, which is how somebody who

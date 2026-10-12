@@ -108,7 +108,7 @@ final class AncientTreesUITests: XCTestCase {
         let firstCard = app.buttons.matching(identifier: "tree-card").firstMatch
         XCTAssertTrue(firstCard.waitForExistence(timeout: 12))
         firstCard.tap()
-        XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 6),
+        XCTAssertTrue(app.buttons["tree-take-me-there"].waitForExistence(timeout: 6),
                       "a tree page did not open")
 
         XCTAssertFalse(app.buttons["I have stood in front of this tree"].exists,
@@ -517,7 +517,7 @@ final class AncientTreesUITests: XCTestCase {
                     // and the previous 0.5s let the next tap in the same sweep
                     // land mid-animation, on coordinates that no longer matched
                     // what the eye would see.
-                    if app.buttons["Take me there"].waitForExistence(timeout: 2.0) {
+                    if app.buttons["tree-take-me-there"].waitForExistence(timeout: 2.0) {
                         return
                     }
                     // AND STOP IF WE HAVE LEFT THE APP. Belt as well as braces:
@@ -608,7 +608,7 @@ final class AncientTreesUITests: XCTestCase {
             let card = app.buttons.matching(identifier: "tree-card").firstMatch
             XCTAssertTrue(card.waitForExistence(timeout: 8), "lap \(lap): no card to open")
             card.tap()
-            XCTAssertTrue(app.buttons["Take me there"].waitForExistence(timeout: 8),
+            XCTAssertTrue(app.buttons["tree-take-me-there"].waitForExistence(timeout: 8),
                           "lap \(lap): tapping a card did not open the tree")
             app.navigationBars.buttons.firstMatch.tap()
             XCTAssertTrue(count.waitForExistence(timeout: 8),
@@ -655,7 +655,7 @@ final class AncientTreesUITests: XCTestCase {
         tapAndConfirmSelected(want, "Want to visit from Collected")
         // And the tap must not have opened a tree instead, which is the other
         // half of what he described.
-        XCTAssertFalse(app.buttons["Take me there"].exists,
+        XCTAssertFalse(app.buttons["tree-take-me-there"].exists,
                        "the lane tap opened a tree page underneath it")
     }
 
@@ -727,7 +727,7 @@ final class AncientTreesUITests: XCTestCase {
                    thenDragTo: card.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: -1.5)))
         Thread.sleep(forTimeInterval: 1.2)
 
-        XCTAssertFalse(app.buttons["Take me there"].exists,
+        XCTAssertFalse(app.buttons["tree-take-me-there"].exists,
                        "dragging the sheet by a card opened the tree underneath it")
     }
 
