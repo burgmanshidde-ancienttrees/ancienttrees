@@ -442,26 +442,15 @@ struct MapTab: View {
                 sheetHeight = .card
             }
         }
-        // Scrolling the list moves the map to whatever you have reached, so
-        // reading down the list is the same gesture as walking along it.
-        //
-        // Guarded against its own tail: moving the map changes what is in view,
-        // which changes the list, which could change the top card and move the
-        // map again. It only flies when the tree is genuinely off-centre, which
-        // a small correction never is.
-        .onChange(of: topCard) { _, new in
-            // Not while a deliberate move is still settling. A scroll view
-            // re-laid under a new list reports a top item that nobody chose.
-            if let flewAt, Date().timeIntervalSince(flewAt) < 2.0 { return }
-            guard let id = new, let t = catalogue.tree(id) else { return }
-            let span = mapRegion?.span.latitudeDelta ?? 0.02
-            guard Geo.km(focus, (t.lat, t.lng)) > span * 111.0 * 0.25 else { return }
-            moveRequest = (token: UUID(),
-                           region: MKCoordinateRegion(
-                               center: .init(latitude: t.lat, longitude: t.lng),
-                               span: mapRegion?.span
-                                   ?? MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)))
-        }
+        // SCROLLING THE LIST NO LONGER MOVES THE MAP (Hidde, 2026-10-12:
+        // "you've made the map scroll smoothly when you scroll the list on my
+        // trees but do the same for the interaction on map"). This reverses
+        // his 2026-08-24 ask, where the map flew to whichever card reached
+        // the top: each fly re-laid the list under the new view, and the two
+        // tugged at each other, which is the clunk he felt. Now the map only
+        // rides the sheet (MapWithSheet's parallax), exactly as on My trees,
+        // and Google Maps' and Apple Maps' lists do the same. Tapping a card
+        // or a pin still moves the map, because that is a choice.
         .onChange(of: navigator.showCityOnMap) { _, new in
             guard let slug = new else { return }
             let here = catalogue.trees.filter { $0.citySlug == slug }
