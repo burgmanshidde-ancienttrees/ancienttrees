@@ -367,9 +367,17 @@ map.addControl(_geo);
 // locate control once the map is ready, so that row does what it says
 // instead of merely opening the map. The permission prompt still belongs to
 // the browser and only appears because the visitor asked for it.
-if (location.hash === '#near') {
-  map.once('load', function() { setTimeout(function() { _geo.trigger(); }, 300); });
+// On /explore itself the row only changes the hash and the page does not
+// reload, so a hashchange has to trigger it too (Hidde, 2026-10-12: "er
+// gebeurt niks").
+function _nearFromHash() {
+  if (location.hash !== '#near') { return; }
+  if (map.loaded()) { _geo.trigger(); }
+  else { map.once('load', function() { setTimeout(function() { _geo.trigger(); }, 300); }); }
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
 }
+_nearFromHash();
+window.addEventListener('hashchange', _nearFromHash);
 // Open where the visitor is, without asking for anything (Hidde,
 // 2026-07-30). The browser's own timezone gives a region for free: no
 // permission prompt, no IP lookup, no third-party service, nothing stored.

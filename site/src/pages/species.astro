@@ -82,8 +82,6 @@ const graph = [
       <div class="cindex-grid" set:html={s.cards.map((c) => browseCard(`/species/${c.slug}`, c.common, `<i lang="la">${c.scientific}</i> &middot; ${c.count} trees &middot; ${c.cities} ${c.cities === 1 ? "city" : "cities"}`, c.face)).join("")} />
     </section>
   ))}
-  <p class="suggest">Or explore by city: {published.map((p, i) => (
-    <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
-  ))}</p>
+  <p class="suggest">Or browse <a href="/cities">every city</a>.</p>
 </main>
 </Base>

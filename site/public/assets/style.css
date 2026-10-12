@@ -140,6 +140,9 @@ header.bar { box-shadow: 0 1px 0 rgba(26,32,18,0.06); position: fixed; top: 0; l
 .bar-signin:hover { background: var(--cream-dark); }
 html[data-signed-in="1"] .bar-signin { display: none; }
 html:not([data-signed-in="1"]) .nav-acct.only-desktop { display: none; }
+/* Signed out, the phone sheet hides My trees and Settings too, so both widths
+   show the same thing: sign in first, then your own things (Hidde, 2026-10-12). */
+html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .nav-drop summary { display: inline-flex; align-items: center; font-size: 13px; font-weight: 700; color: var(--ink); cursor: pointer; list-style: none; }
 .nav-drop summary::-webkit-details-marker { display: none; }
 .nav-drop summary::after { content: " ▾"; font-size: 10px; }
@@ -151,9 +154,11 @@ html:not([data-signed-in="1"]) .nav-acct.only-desktop { display: none; }
    chips, and the panel is capped so the map stays visible behind it. */
 .nav-drop-menu { position: absolute; right: 0; top: 2.4rem; background: #fff; border: none; border-radius: 14px; box-shadow: 0 8px 28px rgba(26,32,18,0.18); padding: 0.4rem 0; min-width: 12rem; max-width: 15rem; z-index: 40; }
 .nav-drop-menu a { display: flex; align-items: center; gap: 0.65rem; padding: 0.5rem 0.9rem; margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.2; }
-/* And no icons in the bar's menus on a desktop (same ruling): the rows are
-   words. The phone's full-screen menu brings its icon tiles back below. */
-.nav-drop-menu .mi { display: none; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; }
+/* Icons at both widths (Hidde, 2026-10-12: the desktop menu without icons and
+   the phone menu with them read as two different menus). This reverses the
+   2026-08-18 "rows are words" half on his word; the phone sheet still puts its
+   icons on tiles below. */
+.nav-drop-menu .mi { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; color: var(--ink-light); flex-shrink: 0; }
 .nav-drop-menu .mi svg { width: 17px; height: 17px; }
 /* The sponsor heart is filled where the saved heart is an outline, and gold at
    both widths: the mobile block adds the tile behind it, the colour belongs
@@ -2830,7 +2835,9 @@ div.tb-register > b { color: var(--ink); }
 .seen-btn .seal-on { display: none; }
 .seen-btn[aria-pressed="true"] .seal-off { display: none; }
 .seen-btn[aria-pressed="true"] .seal-on { display: inline-block; }
-.td-bar .seen-btn { cursor: pointer; }
+/* margin-top 0: the card margin above pushed the seal 6px below its
+   neighbours in the phone bar (Hidde, 2026-10-12). */
+.td-bar .seen-btn { cursor: pointer; margin-top: 0; }
 .td-bar .seen-btn svg.ic { width: 24px; height: 24px; }
 .td-bar .seen-btn[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
 .td-collect-wide { display: none; }
@@ -3141,7 +3148,7 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
   z-index: 60; width: min(560px, calc(100% - 32px)); box-sizing: border-box; display: flex; align-items: center; gap: 12px;
   min-height: 52px; padding: 0 8px 0 16px; background: var(--cream); color: var(--ink); border: 1px solid #E6E6E6;
   border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.16); font-weight: 600; font-size: 15px; }
-.at-snack[hidden] { display: none; }
+.at-snack[hidden], .at-snack-act[hidden] { display: none; }
 .at-snack-text { flex: 1; min-width: 0; }
 .at-snack-act { min-height: 44px; min-width: 44px; padding: 0 10px; border: 0; background: none; color: var(--moss);
   font: inherit; font-weight: 700; cursor: pointer; }

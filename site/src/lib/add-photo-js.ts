@@ -161,10 +161,12 @@ export const ADD_PHOTO_JS = `
     if (!s) { say(msgSignIn); return; }
     busy = true; btn.disabled = true; btn.textContent = msgSending;
     say('');
+    if (collecting && window.atSnack) window.atSnack(msgSending, null, null, true);
     window.atDownsize(f, 1600, function(blob) {
       if (!blob) {
         busy = false; btn.disabled = false; btn.textContent = originalLabel;
         say(msgBadFile);
+        if (collecting && window.atSnack) window.atSnack(msgBadFile);
         return;
       }
       var id = uuid();
@@ -202,12 +204,17 @@ export const ADD_PHOTO_JS = `
             try { at.track('visit'); } catch (err) {}
           }
           if (window.atPaintSeen) window.atPaintSeen();
+          var sb = document.querySelector('.seen-btn');
+          if (window.atSnack) window.atSnack((sb && sb.getAttribute('data-l-done')) || 'Collected',
+            msgSeeMine, function() { location.href = '/account'; });
         }
         collecting = false;
         if (window.at) at.track('tree-photo-sent');
       }).catch(function() {
         busy = false; btn.disabled = false; btn.textContent = originalLabel;
         say(msgFailed);
+        if (collecting && window.atSnack) window.atSnack(msgFailed);
+        collecting = false;
       });
     });
   }

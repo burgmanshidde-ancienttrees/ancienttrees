@@ -59,8 +59,6 @@ const graph = [
   ) : (
     <div class="prose-block"><p>The first collections are drafted and being reviewed. None are public yet; check back as the map grows.</p></div>
   )}
-  <p class="suggest">Explore by city instead: {exploreCities([], published, (slug) => !isNoindexed(`/${slug}`), 12).map((p, i) => (
-    <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
-  ))} &middot; <a href="/cities">every city</a></p>
+  <p class="suggest">Or browse <a href="/cities">every city</a>.</p>
 </main>
 </Base>

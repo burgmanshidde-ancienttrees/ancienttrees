@@ -87,6 +87,7 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (!s || !text) return;
     s.querySelector('.at-snack-text').textContent = text;
     var act = s.querySelector('.at-snack-act');
+    act.hidden = false;
     act.textContent = s.dataset.undo;
     act.onclick = function() { hideSnack(); undo(); };
     s.hidden = false;
@@ -98,6 +99,7 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     if (!s) return;
     s.querySelector('.at-snack-text').textContent = on ? s.dataset.added : s.dataset.removed;
     var act = s.querySelector('.at-snack-act');
+    act.hidden = false;
     act.textContent = on ? s.dataset.view : s.dataset.undo;
     act.onclick = function() {
       hideSnack();
@@ -111,6 +113,22 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     var s = document.querySelector('.at-snack');
     if (s) s.hidden = true;
   }
+  // Any script may speak through the same bar (2026-10-12): the photo upload
+  // from the collect sheet said its result under a button far down the page,
+  // so on a phone a photograph went off and nothing seemed to happen. No
+  // action label means a line alone; stay keeps it up until the next call.
+  window.atSnack = function(text, actLabel, onAct, stay) {
+    var s = document.querySelector('.at-snack');
+    if (!s || !text) return;
+    s.querySelector('.at-snack-text').textContent = text;
+    var act = s.querySelector('.at-snack-act');
+    act.hidden = !actLabel;
+    act.textContent = actLabel || '';
+    act.onclick = function() { hideSnack(); if (onAct) onAct(); };
+    s.hidden = false;
+    clearTimeout(snackTimer);
+    if (!stay) snackTimer = setTimeout(hideSnack, 5000);
+  };
   document.addEventListener('at:signedout', function() {
     mine = {};
     paint();

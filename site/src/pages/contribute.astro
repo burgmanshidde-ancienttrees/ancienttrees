@@ -120,9 +120,6 @@ const headExtra = ldScript(graph);
   <div class="prose-block">
     <p>Spotted a wrong location, an age that looks off, or a tree that has fallen since we wrote about it? Those corrections are just as valuable. <a href={submitLink("correction")}>Send a correction</a> and say what is wrong.</p>
   </div>
-  <p class="suggest">Cities on the map so far: {published.map((p, i) => (
-    <Fragment>{i > 0 && <Fragment set:html=" &middot; " />}<a href={`/${p.slug}`}>{p.city}</a></Fragment>
-  ))}</p>
 </main>
 <Fragment slot="scripts" set:html={`
 <script>

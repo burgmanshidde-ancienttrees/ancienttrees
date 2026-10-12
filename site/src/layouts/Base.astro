@@ -208,9 +208,9 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         <a href="/collections"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></span>{t.collections}</a>
         {AUTH_ENABLED && (
           <Fragment>
-            <p class="nav-group only-mobile">{t.yours}</p>
-            <a href="/account" class="only-mobile"><span class="mi"><Fragment set:html={LEAF} /></span><span>{t.savedTrees}</span></a>
-            <a href="/account/settings" class="only-mobile"><span class="mi"><Fragment set:html={GEAR} /></span><span>{t.yourAccount}</span></a>
+            <p class="nav-group only-mobile nav-yours">{t.yours}</p>
+            <a href="/account" class="only-mobile nav-yours"><span class="mi"><Fragment set:html={LEAF} /></span><span>{t.savedTrees}</span></a>
+            <a href="/account/settings" class="only-mobile nav-yours"><span class="mi"><Fragment set:html={GEAR} /></span><span>{t.yourAccount}</span></a>
           </Fragment>
         )}
         <p class="nav-group only-mobile">{t.takePart}</p>

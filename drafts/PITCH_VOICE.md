@@ -163,6 +163,11 @@ belongs in Helpful Details or nowhere.
 - NO: "One honest note: the Kopfulme stands in Billerbeck, a bit outside Münster, and we only open a new place once it has at least four remarkable trees."
 - YES: "(no internal rules; just ask for more trees from that area)"
 
+**pointing at the page's own layout instead of naming who** (added 2026-10-12)
+
+- NO: "We add trees from council tree trails, dendrological societies, local newspapers and the people below"
+- YES: "Others come from council tree walks, tree societies, local newspapers and readers who send us a tree."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
