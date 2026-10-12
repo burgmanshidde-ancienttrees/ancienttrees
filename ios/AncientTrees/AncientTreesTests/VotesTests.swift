@@ -36,6 +36,9 @@ struct VotesTests {
     @Test func theTreeIdIsTakenFromTheRowsOwnFormat() {
         #expect(MyVotes.treeId("kyo_016 (Sudajii of Omiya Gate, Kyoto Gyoen)") == "kyo_016")
         #expect(MyVotes.treeId("ams_001") == "ams_001")
+        // General feedback carries no tree; this trapped on every launch.
+        #expect(MyVotes.treeId("") == "")
+        #expect(MyVotes.treeId(" ") == "")
     }
 
     /// A report carries the reason, because the reason picks the one follow-up

@@ -80,8 +80,13 @@ final class MyVotes {
     /// a vote cast on one phone never appeared on another however faithfully
     /// it was stored, because it was filed under "kyo_016 (Sudajii of Omiya
     /// Gate, Kyoto Gyoen)" and looked up under "kyo_016".
+    ///
+    /// Empty when the field is: general feedback is sent with no tree, and
+    /// `split` drops empty pieces, so indexing [0] on "" trapped. Every launch
+    /// of an account holding such a row crashed (2026-10-11, six crashes on
+    /// Hidde's phone after he sent "Test" from the feedback form).
     static func treeId(_ field: String) -> String {
-        String(field.split(separator: " ", maxSplits: 1)[0])
+        field.split(separator: " ", maxSplits: 1).first.map(String.init) ?? ""
     }
 
     func load(account: Account) async {
@@ -101,6 +106,7 @@ final class MyVotes {
         for row in rows {
             guard let field = row["tree"] as? String, let why = row["why"] as? String else { continue }
             let tree = Self.treeId(field)
+            if tree.isEmpty { continue }
             // A REPORT IS NOT A VOTE. Everything that was not "worth it" used
             // to be read back as a thumb down, so reporting a wrong pin left
             // the tree looking voted on the next launch, on a page whose thumb
