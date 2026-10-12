@@ -2942,7 +2942,10 @@ def check_photo_fields_reach_the_site():
                 "keys survive the schema. Fix check_photo_fields_reach_the_site() to find it."]
     named = set(re.findall(r"^\s{4}([a-z_]+):\s*z\.", src[start:end], re.M))
     # Written for scripts and never drawn; safe to strip.
-    bookkeeping = {"sighting_id", "held_reason", "caption", "commons_file"}
+    # approved_by / approved_on: stamped by photo_apply.py, read only by
+    # daily_digest.py to list each night approval with its reversal.
+    bookkeeping = {"sighting_id", "held_reason", "caption", "commons_file",
+                   "approved_by", "approved_on"}
     seen = {}
     for path in sorted(glob.glob(os.path.join("data", "cities", "*.json"))):
         with open(path, encoding="utf-8") as fh:

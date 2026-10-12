@@ -53,10 +53,14 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Cupressus_gigantea_Bajie.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "卢传雄, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-12",
+        "width": 492,
+        "height": 700
       },
       "paid_entry": true,
       "fame": {

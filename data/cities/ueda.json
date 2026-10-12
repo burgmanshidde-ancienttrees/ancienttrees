@@ -53,10 +53,14 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Aizenkatsura_Tree.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Kuruman, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-12",
+        "width": 2060,
+        "height": 2778
       },
       "how_to_recognise": "You can recognise it by its crown breaking upward into a crowd of vertical stems rather than one clean trunk. It stands out in the open in the grounds of Kitamuki Kannon temple, Bessho Onsen."
     }
