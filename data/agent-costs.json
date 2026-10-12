@@ -11273,6 +11273,14 @@
    "tokens": 0,
    "trees": 0,
    "note": "session work, no agent: MASAF sheet ids and girth/height written from the register rows already in each tree's sources, 10 trees"
+  },
+  {
+   "date": "2026-10-12",
+   "target": "riga",
+   "kind": "enrich",
+   "tokens": 149372,
+   "trees": 0,
+   "note": "enrichment: Riga dizkoku datubaze ids on 3 trees; dataset has no girth/height; 2 trees not in it"
   }
  ],
  "2026-10-11": [
