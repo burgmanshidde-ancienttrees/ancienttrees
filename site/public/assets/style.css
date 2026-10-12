@@ -633,8 +633,15 @@ dialog.photo-view .pv-frame img {
      are all open where AllTrails folds theirs. Sticky keeps their placement
      when there is room and only pins when there is not. The white band and
      the padding stop rows scrolling visibly through it. */
+  /* An edge on top (Hidde, 2026-10-12: rows scrolling under a bare white band
+     looked weird). A pinned bottom bar draws a hairline above it, which is how
+     iOS toolbars and Material bottom app bars read as a bar the list passes
+     behind. The band runs to the sheet's sides via negative margins. */
   .nav-drop-menu .sheet-foot { position: sticky; bottom: 0; z-index: 1;
-    background: #fff; padding: 0.75rem 0 calc(0.75rem + env(safe-area-inset-bottom)); }
+    background: #fff; margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter));
+    padding: 0.75rem var(--gutter) calc(0.75rem + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--cream-dark);
+    box-shadow: 0 -6px 12px -8px rgba(26,32,18,0.18); }
   /* --cream-dark rather than --surface, which is the fill every other quiet
      control here uses. On the white of the sheet --surface is a 1.5% step and
      the pill read as a label with a hairline round it; theirs is plainly a
