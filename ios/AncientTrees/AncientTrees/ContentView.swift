@@ -286,7 +286,13 @@ struct ContentView: View {
                     // collect sheet for one release so older launch arguments
                     // and deep links still land somewhere sensible.
                     if new == TabBar.collectTag { openCollect(); return }
-                    if new == tab { clearPath(new) }
+                    if new == tab {
+                        if path(new).wrappedValue.isEmpty {
+                            navigator.scrollToTop = (new, UUID())
+                        } else {
+                            clearPath(new)
+                        }
+                    }
                     // ONLY A REAL SWITCH. Tapping the tab you are already on
                     // empties that tab's stack, which is a different action
                     // wearing the same gesture, and counting it as a visit made

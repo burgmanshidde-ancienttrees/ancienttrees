@@ -46,6 +46,8 @@ struct HomeView: View {
     @Environment(\.locationState) private var location
     @Environment(CatalogueStore.self) private var store
     @Environment(Navigator.self) private var navigator
+    @Environment(Account.self) private var account
+    @Environment(Nudge.self) private var nudge
     @Environment(Saved.self) private var saved
     @State private var searching = false
     /// QUICK RETURN (Hidde, 2026-10-12: "the convention is that it moves away
@@ -163,7 +165,9 @@ struct HomeView: View {
             .map { (name: $0.key, count: $0.value.count, photo: catalogue.face(species: $0.key)) }
             .filter { $0.photo?.photo != nil }
             .sorted { $0.count > $1.count }
-            .prefix(8).map { $0 }
+            // 24, eight to a row across the three rows (Hidde, 2026-10-12:
+            // "add some extra species ... so you can scroll more").
+            .prefix(24).map { $0 }
 
         // THE RECORDS: the oldest, the thickest and the tallest, one tile each,
         // opening the full list. Oldest by the LOW end of the range, so a tree
@@ -223,13 +227,13 @@ struct HomeView: View {
         ScrollViewReader { proxy in
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 30) {
-                seasonHero
+                seasonHero.id("discover-top")
                 shelves
                 growingCard
                 tailShelf.id("discover-tail")
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
-            .padding(.top, 6 + headerHeight)
+            .padding(.top, 6)
         }
         .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y + $0.contentInsets.top } action: { old, new in
             let hide: Bool
@@ -243,6 +247,12 @@ struct HomeView: View {
         }
         // A section no argument can reach ships unseen: -discoverto=species
         // or -discoverto=tail scrolls there for the sweep (2026-10-10).
+        // Tapping Discover while on Discover scrolls back up.
+        .onChange(of: navigator.scrollToTop?.token) { _, _ in
+            guard navigator.scrollToTop?.tab == 1 else { return }
+            withAnimation(.snappy) { proxy.scrollTo("discover-top", anchor: .top) }
+            headerHidden = false
+        }
         .task {
             if let a = ProcessInfo.processInfo.arguments.first(where: { $0.hasPrefix("-discoverto=") }) {
                 try? await Task.sleep(for: .seconds(1.5))
@@ -257,7 +267,7 @@ struct HomeView: View {
         // this is the mechanism iOS uses for its own pinned bars, it does not
         // touch the shelves at all, and the scroll view gets the inset for
         // free so nothing hides under it.
-        .overlay(alignment: .top) {
+        .safeAreaInset(edge: .top, spacing: 0) {
             VStack(alignment: .leading, spacing: 20) {
                     HStack(alignment: .firstTextBaseline) {
                         Text("Discover")
@@ -308,7 +318,14 @@ struct HomeView: View {
         // While the header is away, the status bar keeps a solid strip so
         // the shelves do not run under the clock.
         .overlay(alignment: .top) {
-            Brand.ground.frame(height: 0).ignoresSafeArea(edges: .top)
+            GeometryReader { g in
+                Brand.ground
+                    .frame(height: g.safeAreaInsets.top)
+                    .offset(y: -g.safeAreaInsets.top)
+            }
+            .frame(height: 0)
+            .opacity(headerHidden ? 1 : 0)
+            .allowsHitTesting(false)
         }
         .brandGround()
         // Explore's list face, named the way its map face is ("explore-map"),
@@ -619,15 +636,34 @@ struct HomeView: View {
                     }
                 }
                 .accessibilityHidden(true)
-                Text("You can keep a tree for later by tapping the bookmark on its page.")
-                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                    .fixedSize(horizontal: false, vertical: true)
+                // SIGNED OUT, THE ROW ASKS FOR THE ACCOUNT (Hidde,
+                // 2026-10-12: "when logged out the want to visit button
+                // should be to login and the text saying you should login to
+                // save that list"). The list lives in the account, so the
+                // way to start one is signing in; the same words My trees
+                // uses for this lane.
+                if account.isSignedIn {
+                    Text("You can keep a tree for later by tapping the bookmark on its page.")
+                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.horizontal, 16)
+                    Button { navigator.selectTab = 0 } label: {
+                        Label("Find trees near you", systemImage: "map")
+                    }
+                    .buttonStyle(BrandButtonStyle(prominent: false))
                     .padding(.horizontal, 16)
-                Button { navigator.selectTab = 0 } label: {
-                    Label("Find trees near you", systemImage: "map")
+                } else {
+                    Text("You keep a tree you want to visit by tapping its bookmark. Sign in and we keep the list for you.")
+                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.horizontal, 16)
+                    Button { nudge.require(.general) } label: {
+                        Text("Sign in")
+                    }
+                    .buttonStyle(BrandButtonStyle(prominent: false))
+                    .padding(.horizontal, 16)
+                    .accessibilityIdentifier("discover-want-signin")
                 }
-                .buttonStyle(BrandButtonStyle(prominent: false))
-                .padding(.horizontal, 16)
             }
             .accessibilityElement(children: .contain)
             .accessibilityIdentifier("discover-favourites-empty")
@@ -721,7 +757,7 @@ struct HomeView: View {
             }
         }
 
-        wantToVisitEmpty
+        wantToVisitEmpty.id("discover-want")
 
         if deck.islands.count >= 3 {
             section("Tree islands") {

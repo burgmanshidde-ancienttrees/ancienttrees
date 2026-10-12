@@ -47,6 +47,14 @@ final class SignedOutWalk: XCTestCase {
                       "tapping \(id) signed out did not open the sign-in sheet", file: file, line: line)
     }
 
+    func testDiscoverWantToVisitAsks() {
+        // Discover's empty Want to visit row, signed out, offers Sign in
+        // (Hidde, 2026-10-12).
+        let app = launch(["-tab=1", "-discoverto=want"])
+        sleep(3)
+        tap(app, "discover-want-signin"); expectSignIn(app, after: "discover-want-signin")
+    }
+
     func testHeartAsks() {
         let app = launch(["-tree=ams_001"])
         tap(app, "save-heart"); expectSignIn(app, after: "save-heart")

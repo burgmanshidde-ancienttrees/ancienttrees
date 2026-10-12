@@ -118,6 +118,12 @@ public final class Navigator {
     /// (Hidde, 2026-10-12: "only go through the is this the tree flow if
     /// you're unsure yourself"). Cleared with collectAbout.
     public var collectTree: String? = nil
+    /// Bumped when the tab already showing is tapped again at its root, so
+    /// that screen scrolls back to the top: the App Store's, Instagram's and
+    /// X's tab bars all do this, and Apple's guidance describes it (Hidde,
+    /// 2026-10-12: "is it convention once you tap twice on a menu item it
+    /// scrolls back up?").
+    public var scrollToTop: (tab: Int, token: UUID)? = nil
 
 
     public init() {}

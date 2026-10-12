@@ -92,7 +92,7 @@ struct PeopleView: View {
         switch source {
         case .search: account.session == nil ? "Sign in to find people."
                       : query.isEmpty ? "Search for somebody by the name they chose."
-                                      : "Nobody by that name yet."
+                                      : "Couldn't find that person."
         case .followers: "Nobody follows you yet."
         case .following: "You do not follow anybody yet."
         }
@@ -102,8 +102,13 @@ struct PeopleView: View {
         NavigationStack {
             List {
                 if visible.isEmpty && !searching {
+                    // Right under the field it answers, with no rule above it
+                    // (Hidde, 2026-10-12: "weirdly placed ... closer to the
+                    // search area").
                     Text(emptyLine)
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                        .listRowSeparator(.hidden)
+                        .listRowInsets(EdgeInsets(top: 4, leading: 20, bottom: 12, trailing: 20))
                 }
                 // INVITE SOMEBODY, on the screen where you have just found out
                 // there is nobody (Hidde, 2026-09-04: "laten we dan de
