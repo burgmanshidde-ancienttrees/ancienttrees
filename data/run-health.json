@@ -2,30 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-22T10:09:53+00:00",
-   "date": "2026-08-22",
-   "run_id": "32566880631",
-   "minutes": 3.9,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 40,
-   "denials": 3,
-   "denials_source": "permission_denials: Bash(bash), Bash(echo), Bash(env)",
-   "ended": "success",
-   "tokens": 3377413,
-   "claims_held": [
-    "florence",
-    "haarlem",
-    "florence",
-    "haarlem",
-    "vienna"
-   ],
-   "commits": 0,
-   "cities_touched": 0,
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-08-22T18:37:58+00:00",
    "date": "2026-08-22",
    "run_id": "32591298512",
@@ -22302,6 +22278,88 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-12T20:25:49+00:00",
+   "date": "2026-10-12",
+   "run_id": "38298455264",
+   "minutes": 66.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 205,
+   "denials": 3,
+   "denials_source": "permission_denials: Bash(cat ; import ; p ; d ...), Bash(python3 ; import ; ? ; EOF), Bash(timeout | head)",
+   "ended": "success",
+   "tokens": 327090,
+   "claims_held": [
+    "graz"
+   ],
+   "commits": 20,
+   "cities_touched": 15,
+   "cities": [
+    {
+     "city": "vienna",
+     "trees": 2
+    },
+    {
+     "city": "amersfoort",
+     "trees": 0
+    },
+    {
+     "city": "ancient-bristlecone-pine-forest",
+     "trees": 0
+    },
+    {
+     "city": "bucaco",
+     "trees": 0
+    },
+    {
+     "city": "crecy-en-ponthieu",
+     "trees": 0
+    },
+    {
+     "city": "den-bosch",
+     "trees": 0
+    },
+    {
+     "city": "emmen",
+     "trees": 0
+    },
+    {
+     "city": "enschede",
+     "trees": 0
+    },
+    {
+     "city": "fontaine-belfort",
+     "trees": 0
+    },
+    {
+     "city": "ghent",
+     "trees": 0
+    },
+    {
+     "city": "guimaraes",
+     "trees": 0
+    },
+    {
+     "city": "horn-bremen",
+     "trees": 0
+    },
+    {
+     "city": "rannee",
+     "trees": 0
+    },
+    {
+     "city": "salzburg",
+     "trees": 0
+    },
+    {
+     "city": "venon",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
    "logged": true
   }
  ],
