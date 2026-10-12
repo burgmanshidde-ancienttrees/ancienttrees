@@ -75,6 +75,43 @@
    "lng": 6.562147,
    "status": "lead",
    "why": "LRMB register nr 1694885 ('Zomereiken Port Natal'). Register planting band 1840-1850, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category publiekrechtelijke organisatie, setting onbekend. Register history of the PLACE, not of the tree, so do not bridge from it: De geregistreerde zomereik staat voor een terrein dat in de 19e eeuw een landgoed was aan de rand van de stad. Die geschiedenis is vanaf deze plek nog goed voorstelbaar met het zicht op de Engelse landschapstuin. De twee penanten naast de boom herinneren aan de vroegere oprijlaan van het psychiatrisch ziekenhuis Port Natal, gebouwd in 1920. In 1990 is dit gebouw vervangen door het Wilhelmina ziekenhuis. Het gaat bij deze registratie om een fraaie, beeldbepalende eik, aan waterkant en nabij de Beilerstraat. De boom heeft een gave stam en de conditie is redelijk. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+  },
+  {
+   "id": "ass_002",
+   "name": "The Hollow Oak of Overcingel",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "age_estimate": "roughly 230 to 280 years, from the register's planting band of 1750-1800",
+   "age_min": 226,
+   "age_max": 276,
+   "location": {
+    "address": "Gemeente Assen, Assen, 9401 JZ, Oostersingel 27 (Landgoed Overcingel)",
+    "latitude": 52.992471,
+    "longitude": 6.566779
+   },
+   "verified_sources": [
+    "https://www.monumentalebomen.nl/"
+   ],
+   "access": "Free with a walking card from Het Drentse Landschap's Assen office (Kloosterstraat 5); open without one during the crocus season in February and March.",
+   "photo": {
+    "url": null,
+    "license": null,
+    "attribution": null,
+    "status": "missing"
+   },
+   "curation_status": "flagged",
+   "location_precision": "approximate",
+   "story": "A fungus usually taken as a sign a tree is dying has been working through this oak's heartwood for decades, and it is still standing. The register calls it zwavelzwam, sulfur polypore, feeding through a cavity that opens the whole north side of the trunk.\n\nIt grows a short walk from Overcingel's horse chestnut, on the same estate laid out around a manor house of 1777 and remade in the English style by Lucas Pieter Roodbaard in 1824. The register's planting band puts the oak at 1750 to 1800, decades wider than the chestnut's, which makes this the older of the estate's two register trees rather than a companion planted alongside it.\n\nSomewhere between 1970 and 1985, tree surgeons patched the trunk with the grafts and braces of that decade's practice. Since then the crown has been cut back hard, from 27 metres to 14, what arborists call veteran pruning: reducing a failing crown to buy the trunk more years. On the south side the tree has grown a thick collar of reaction wood and pushed roots up above the soil, bracing itself against the lean the hollow has left it with.\n\nIt still leafs out on what remains of its branches. Whether it keeps doing that is a question the register itself leaves open.",
+   "best_time": {
+    "months": [
+     9,
+     10
+    ],
+    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+    "kind": "fruit"
+   },
+   "how_to_recognise": "You can recognise it by the cavity opened along its north side by decades of sulfur polypore fungus, still standing despite it. It stands a short walk from Overcingel's horse chestnut on the same estate.",
+   "removed": "2026-10-12",
+   "removed_reason": "LRMB v2024 record nr 1684204 (Zomereik, Overcingel) at this tree's coordinate carries status 5, Dood/geveld."
   }
  ]
 }

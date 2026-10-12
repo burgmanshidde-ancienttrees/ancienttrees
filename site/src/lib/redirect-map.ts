@@ -191,6 +191,8 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-12, scripts/retire.py: LRMB v2024 record nr 1684204 (Zomereik, Overcingel) at this tree's coordinate carries stat
+  ["assen", "hollow-oak-of-overcingel"],
   // 2026-10-12, scripts/retire.py: Dead: LRMB status 5 (dood/geveld). hag_026 Vreugd en Rust copper beech cut back in 2014, o
   ["the-hague", "copper-beech-south-of-the-vreugd-en-rust-koepel"],
   ["the-hague", "stone-bench-beech-of-juliana-en-bernardpark"],
