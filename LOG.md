@@ -2,6 +2,16 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - Session: four more token savings, and the cost meter sees again
+
+- **Night-run coordinator on Sonnet** (`CLAUDE_MODEL` in nightly.yml, all four attempts). It mostly runs scripts, merges and logs; write-stories, photo-judge and translate keep Opus by their own definitions. Revert: delete the env line and the four `--model` flags.
+- **LOG.md keeps three days, archived daily** from data-digest.yml (was weekly and missing runs): 383 KB to 173 KB, nothing deleted.
+- **BRIEF_RESEARCH.md 31 KB to 10 KB**, read by every verify pass; full text in archive/BRIEF_RESEARCH-full-2026-10-12.md. Delivery template now carries `official_register` {name, url} and `height_m`.
+- **CONVENTIONS.md is read by heading, never whole** (200 KB): the nudge hook, CLAUDE.md and the file's own header say grep `^## ` and read one entry.
+- **The cost meter was blind, not empty.** Runs wrote each day at the top level of data/agent-costs.json since 10-03; retro.py reads "days", so it printed "no costs" over 346 logged passes. Moved, retro reads both, `check_agent_costs_shape()` in preflight refuses the wrong shape, the prompt says where.
+
+What the meter shows now: 10-12 spent about 1.0M tokens on 8 enrichment passes (125k to 220k each, 4 to 15 trees touched), roughly 15k to 40k tokens per enriched tree, the same as researching a tree from zero. That is the next lever.
+
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
 - [2026-10](archive/LOG-2026-10.md)

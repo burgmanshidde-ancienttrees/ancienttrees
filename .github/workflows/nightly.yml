@@ -11,6 +11,11 @@ name: City research
 # steps.
 env:
   CLAUDE_ALLOWED: "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Bash(pdftotext:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+  # The coordinator runs on Sonnet (Hidde, 2026-10-12, on tokens): it mostly runs
+  # scripts, merges and logs. Judgement stays on Opus inside the agents that
+  # pin their own model (write-stories, photo-judge, translate). Revert: delete
+  # this line and the --model flags below.
+  CLAUDE_MODEL: "claude-sonnet-5-5"
   CLAUDE_DISALLOWED: "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete),Bash(npm --prefix site run build:*),Bash(npx astro:*),Bash(npm run build:*),Monitor"
   # The continuation prompt, hoisted here 2026-08-29 when the window went from
   # two attempts to four. This file's own rule: a list copied into two places is
@@ -855,6 +860,7 @@ jobs:
           # ended waiting, which this runner never wakes them from. It is in
           # CLAUDE_DISALLOWED with the build itself; qa.py keeps both there.
           claude_args: |
+            --model "${{ env.CLAUDE_MODEL }}"
             --allowedTools "${{ env.CLAUDE_ALLOWED }}"
             --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
       # Continuous mode. GitHub fires the schedule only a handful of times a day
@@ -913,6 +919,7 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           allowed_bots: "github-actions[bot]"
           claude_args: |
+            --model "${{ env.CLAUDE_MODEL }}"
             --allowedTools "${{ env.CLAUDE_ALLOWED }}"
             --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
           prompt: |
@@ -968,6 +975,7 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           allowed_bots: "github-actions[bot]"
           claude_args: |
+            --model "${{ env.CLAUDE_MODEL }}"
             --allowedTools "${{ env.CLAUDE_ALLOWED }}"
             --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
           prompt: |
@@ -1007,6 +1015,7 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           allowed_bots: "github-actions[bot]"
           claude_args: |
+            --model "${{ env.CLAUDE_MODEL }}"
             --allowedTools "${{ env.CLAUDE_ALLOWED }}"
             --disallowedTools "${{ env.CLAUDE_DISALLOWED }}"
           prompt: |
