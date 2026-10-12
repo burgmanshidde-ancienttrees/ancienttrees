@@ -129,7 +129,7 @@ The floor is a reason somebody standing there can see: big, tall or old for its 
 
 ## Stories
 
-150 to 250 words, TONE_OF_VOICE.md, SEO_GEO_BLUEPRINT.md (P2 answer first, P3 no templating). Lead with the most surprising fact; what it witnessed. Never "hidden gem", "must-see", "breathtaking", "nestled", never em dashes. **No bridge claims**: when a sentence says two things are the same thing or one causes the other, one source must say so. Write the superlative you believe with its source; two of our pages must not claim the same crown (`python3 scripts/superlatives.py`).
+150 to 250 words, TONE_OF_VOICE.md, SEO_GEO_BLUEPRINT.md (P2 answer first, P3 no templating). Lead with the most surprising fact; what it witnessed. Never "hidden gem", "must-see", "breathtaking", "nestled", never em dashes. **No bridge claims**: when a sentence says two things are the same thing or one causes the other, one source must say so. **Never ask a reader to do anything that harms the tree** (peel bark, snap a twig, climb it, carve), and do not swap in a warning: just leave it out; a fact stays a fact ("its sap runs red"), never an instruction (Hidde, 2026-10-12; `check_no_invitation_to_harm_the_tree()`). Write the superlative you believe with its source; two of our pages must not claim the same crown (`python3 scripts/superlatives.py`).
 
 **Season**: phenology per species in data/phenology/ with `intensity` (`unseen|nice|striking|worth the trip`); no calendar below 25N; no file means no calendar. `best_time` only for a real peak (flowers, fruit, autumn colour, catkins, fresh leaves, or bare silhouette for veterans whose shape is the point), one per tree, scarce. Lowest-priority depth: never research phenology from scratch in a window.
 

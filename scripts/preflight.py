@@ -985,6 +985,67 @@ def reader_found(tree):
                and not ours.is_ours(p.get("contributor_user_id")) for p in shots)
 
 
+_HARM_VERB = r"(peel(?:s|ing)?|strip|tear|climb|carve|break|snap|pick|scratch|hammer|nail|cut|pull)"
+_HARM_ACT = re.compile(_HARM_VERB + r"\s+(?:(?:off|back|away|up|into|onto|in|a|an|the|its|this|that|your|some|one|of|from)\s+){0,3}"
+                       r"(bark|branch(?:es)?|limbs?|twigs?|leaf|leaves|blossoms?|flowers?|trunk|tree|initials|name|it)\b", re.I)
+_HARM_IMPER = re.compile(r"^\W*(?:go ahead and |feel free to |try to |try |do )?" + _HARM_VERB + r"\b", re.I)
+_HARM_YOU = re.compile(r"\b(you|visitors|children|kids|people|anyone)\s+(can|could|may|might|are (?:welcome|free|allowed|invited) to|get to|should|will want to)\s+(?:\w+\s+){0,2}" + _HARM_VERB + r"\b", re.I)
+_HARM_NEG = re.compile(r"\b(not|n't|never|no|nor|forbid\w*|prohibit\w*|warn\w*|ban\w*|fenced?|asks?|asking|stop\w*|prevent\w*|discourag\w*)\b", re.I)
+_HARM_IDIOM = re.compile(r"\bpick (it|them|one) out\b", re.I)
+
+
+def harmful_invitations(text):
+    """Sentences that tell the reader to do something that hurts the tree."""
+    out = []
+    for sent in re.split(r"(?<=[.!?])\s+", text or ""):
+        if _HARM_IDIOM.search(sent) or _HARM_NEG.search(sent):
+            continue
+        if _HARM_ACT.search(sent) and (_HARM_IMPER.search(sent) or _HARM_YOU.search(sent)):
+            out.append(sent.strip())
+    return out
+
+
+def check_no_invitation_to_harm_the_tree():
+    """Never ask a reader to do something that damages the tree, and do not
+    replace it with a warning either: just do not bring it up.
+
+    Hidde, 2026-10-12, after the Director of the National Botanic Gardens of
+    Ireland asked us to remove "Peel back the bark on this tree" from dub_017:
+    "kunnen we als regel opslaan dat we nooit meer mensen vragen iets te doen
+    wat de boom schade zou aandoen", and on the first rewrite, which ended on
+    "look rather than touch": "je hoeft niet te kijken en niet aan te raken,
+    begin er gewoon niet over." So a fact stays a fact ("its sap runs red"),
+    never an instruction ("cut the bark and the sap runs red").
+
+    Reads the English text, which every overlay is translated from. It flags a
+    sentence that pairs a damaging verb with the tree (peel the bark, snap a
+    twig, climb it, carve initials) AND addresses the reader (imperative, or
+    "you can"). Description is untouched: "visitors climb them, so the city
+    fenced the roots" is history and stays. When it catches a false alarm,
+    widen _HARM_IDIOM rather than rewording a harmless sentence.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            bt = tree.get("best_time") or {}
+            for field, text in (("story", tree.get("story")),
+                                ("recognise", tree.get("recognise")),
+                                ("how_to_recognise", tree.get("how_to_recognise")),
+                                ("best_time.label", bt.get("label") if isinstance(bt, dict) else None)):
+                if not isinstance(text, str):
+                    continue
+                for sent in harmful_invitations(text):
+                    out.append("%s: %s %s asks the reader to do something that "
+                               "harms the tree: %r. State the fact without the "
+                               "instruction, and do not swap in a warning; just "
+                               "leave it out (Hidde, 2026-10-12). Fix the "
+                               "translation overlays too."
+                               % (path, tree.get("id"), field, sent[:160]))
+    return out
+
+
 def check_every_tree_names_a_source():
     """A published tree must name at least one source. The ratchet, twice earned.
 
@@ -3168,6 +3229,7 @@ def main():
                 + check_one_photograph_per_tree()
                 + check_translations_have_no_stray_script()
                 + check_every_tree_names_a_source()
+                + check_no_invitation_to_harm_the_tree()
                 + check_tree_name_fits_a_title()
                 + check_no_new_thin_places()
                 + check_publishing_pace()
