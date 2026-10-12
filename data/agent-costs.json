@@ -11433,6 +11433,22 @@
   "2026-10-12": [
    {
     "date": "2026-10-12",
+    "target": "nl-enschede",
+    "kind": "translate",
+    "tokens": 74000,
+    "trees": 0,
+    "note": "Dutch overlay for 13 trees, i18ncheck clean; English FAQ and meta corrected"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "bamberg",
+    "kind": "verify",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "deepen: no register or Wikipedia source carries girth, height or age, so no tree can be RICH; 1 lead added, 0 delivered"
+   },
+   {
+    "date": "2026-10-12",
     "target": "delft",
     "kind": "enrich",
     "tokens": 172014,

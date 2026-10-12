@@ -25,6 +25,19 @@
    "lat": 49.89683,
    "lng": 10.84263,
    "position_basis": "recovered from the lead's own `coords` field (field)"
+  },
+  {
+   "register_id": "ND-03742",
+   "name": "Eiche südwestlich des Kaiser-Heinrich-Gymnasiums (Naturdenkmal 5)",
+   "note": "Pedunculate oak (Quercus robur) per the city ordinance as reproduced on de.wikipedia 'Liste der Naturdenkmäler in Bamberg'. Missing for a RICH page: no girth, height or age in any source (ordinance lists none), no evidence the spot is open ground rather than school grounds, no photo checked. Not delivered in the 2026-10-12 deepen pass.",
+   "coords": [
+    49.8871,
+    10.8753
+   ],
+   "species": "Pedunculate Oak (Quercus robur)",
+   "lat": 49.8871,
+   "lng": 10.8753,
+   "position_basis": "register/Wikipedia coordinate, 4 decimals, approximate"
   }
  ],
  "blocked": [
