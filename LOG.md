@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-12 - App: the iOS gate's sheet buttons tapped by identifier, and the crash confirmed
+
+A second session fixing the same red gate crossed the "crash on the map list" entry below. What it adds:
+
+- **The crash is confirmed, not only suspected.** All four crash reports in the 10-11 scheduled run's diagnostics (xcresult, simctl DiagnosticReports) are the same trap: `MainActor.assumeIsolated` inside `SpeciesShape.parsed`, called from SwiftUI's display list off the main thread. That also explains "the sheet would not come down (64 to -1)": -1 is what the test reads once the app is gone. It traps in release builds too, so it was a crash on phones, fixed by the lock below.
+- **FlowWalk taps the sheets' own buttons by identifier.** The report thanks' Done sits on top of the people sheet's own Done, and the sign-out and delete questions' Cancel on top of other Cancels, so a label could tap the wrong one. They carry `report-thanks-done`, `signout-cancel` and `delete-cancel` now.
+- Whole suite on an iPhone SE, iOS 26.5: 220 passed. One flake seen and not chased: the first test on a cold simulator tapped a map card and no tree opened; the retry, which CI also gives, passed. The 10-12 12:55 scheduled run is red because it tested the commit before the fix.
+
 ## 2026-10-12 session: outreach, second named batch
 
 - 23 mails sent on Hidde's word to named people who know a city's trees (Singapore, San Francisco, Hong Kong, Crete, Rome, Geneva, Munich, Zurich, The Hague, Dordrecht and more), each asking which tree we miss, in the reader's own language: `scripts/outreach_named.py` now writes nl/it/es/fr beside en/de. 26 of 49 cities had nobody named with a published address; their leads sit in the private contacts file.

@@ -270,7 +270,7 @@ struct PeopleView: View {
                         icon: "checkmark",
                         title: "Thank you",
                         message: "We look at every report. If you would rather not see this person at all, block them too.",
-                        buttons: [.primary("Done") { reporting = nil }])
+                        buttons: [.primary("Done", id: "report-thanks-done") { reporting = nil }])
                 } else {
                     BrandSheet(
                         title: "Why are you reporting this?",

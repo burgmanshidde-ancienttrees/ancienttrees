@@ -200,7 +200,7 @@ final class FlowWalk: XCTestCase {
                 Step(name: "pick-a-reason") {
                     Self.tap($0, "An offensive name or picture")
                 },
-                Step(name: "close-the-thank-you") { Self.tap($0, "Done") },
+                Step(name: "close-the-thank-you") { Self.tap($0, "report-thanks-done") },
             ]),
 
             // The way into the app from a search, which is how somebody who
@@ -270,7 +270,7 @@ final class FlowWalk: XCTestCase {
                 Step(name: "delete-asks-first") {
                     Self.tap($0, "delete-confirm-button")
                 },
-                Step(name: "cancel") { Self.tap($0, "Cancel") },
+                Step(name: "cancel") { Self.tap($0, "delete-cancel") },
                 // AND IT STOPS THERE. Closing the sheet was a fourth step and
                 // it is gone: neither "Done" nor an identifier put on that
                 // Button can be found, because an identifier set inside a
@@ -282,7 +282,7 @@ final class FlowWalk: XCTestCase {
             Flow(name: "settings-bottom", args: ["-tab=2", "-settings"] + signedIn, steps: [
                 Step(name: "scroll-to-the-bottom") { $0.swipeUp(); $0.swipeUp() },
                 Step(name: "sign-out-asks-first") { Self.tap($0, "Sign out") },
-                Step(name: "cancel") { Self.tap($0, "Cancel") },
+                Step(name: "cancel") { Self.tap($0, "signout-cancel") },
             ]),
         ]
     }

@@ -583,7 +583,7 @@ struct ProfileView: View {
                             confirmingDelete = false
                             Task { deleteFailed = !(await account.deleteAccount()) }
                         },
-                        .secondary("Cancel") { confirmingDelete = false },
+                        .secondary("Cancel", id: "delete-cancel") { confirmingDelete = false },
                     ])
             }
             // NAMED FOR WHAT IT IS. It was "Account" while the row into it
@@ -690,7 +690,7 @@ struct ProfileView: View {
                             confirmingSignOut = false
                             signOutNow()
                         },
-                        .secondary("Cancel") { confirmingSignOut = false },
+                        .secondary("Cancel", id: "signout-cancel") { confirmingSignOut = false },
                     ])
             }
         }
