@@ -2,6 +2,12 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 session: outreach, second named batch
+
+- 23 mails sent on Hidde's word to named people who know a city's trees (Singapore, San Francisco, Hong Kong, Crete, Rome, Geneva, Munich, Zurich, The Hague, Dordrecht and more), each asking which tree we miss, in the reader's own language: `scripts/outreach_named.py` now writes nl/it/es/fr beside en/de. 26 of 49 cities had nobody named with a published address; their leads sit in the private contacts file.
+- Rainer Lippert thanked for his photos; Kerry Pickett's name now shows on the Brighton page (her 'I don't mind either way').
+- The contact search ran into Sonnet's weekly limit (resets 14 Oct) and finished on the main model.
+
 ## 2026-10-12 - Session: CLAUDE.md cut from 294 KB to 33 KB, night-run refusals addressed
 
 Hidde asked where the tokens were going. The biggest fixed cost was CLAUDE.md itself: about 73k tokens loaded into every session and every night run before any work. It now holds the working rules only (33 KB, about 8k tokens); the full text moved word for word to RULINGS.md, same headings, nothing deleted. Every script, check, flag and data file the old file named is still named, except the reversed US_ONLY, the deleted build_site.py and one file covered by a wider entry. Today's two rulings (reader input as a source, Google detail paused in the digest) are in. nightly.yml now points at "Step 0: pick the work", "Google recovery mode" and "Supply, cheapest first" instead of the old headings. New rule for this file: a ruling's rule goes here in one or two lines, its story to DECISIONS.md or RULINGS.md.
