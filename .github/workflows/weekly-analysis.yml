@@ -45,7 +45,7 @@ jobs:
 
       # Hidde, 2026-08-08: "moeten we een ritme afspreken dat we dit opruimen".
       # Deterministic, so it runs as a script rather than costing an agent:
-      # entries older than a week move to archive/, nothing is deleted, and the
+      # entries older than three days move to archive/, nothing is deleted, and the
       # living files stay small enough to read cheaply. Runs BEFORE the analyst
       # so it reads a tidy LOG.md, and commits separately so a failure here
       # cannot take the analysis down with it.

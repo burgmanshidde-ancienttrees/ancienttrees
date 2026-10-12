@@ -183,7 +183,10 @@ def main():
     # files still totalled 1.4 MB, at 7 they total 172 KB, because a single
     # heavy day sits just outside the week. Seven also matches what CLAUDE.md
     # already says about LOG.md, "assume he has not looked in a week".
-    ap.add_argument("--days", type=int, default=7,
+    # 3 since 2026-10-12 (Hidde: tokens). LOG.md had reached 387 KB at
+    # seven because the weekly job missed runs; it now runs daily from
+    # data-digest.yml too, and three days still covers "he opens it cold".
+    ap.add_argument("--days", type=int, default=3,
                     help="entries older than this move to the archive")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()

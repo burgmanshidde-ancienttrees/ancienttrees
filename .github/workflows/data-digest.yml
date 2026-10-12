@@ -186,6 +186,11 @@ jobs:
           # 2026-09-08. The same first 12 were fetched every day and the last 13
           # were never fetched at all, while last_seen on the two live links sat
           # frozen at the day they were found.
+          # LOG.md and CURATION.md keep three days; older entries move to
+          # archive/ verbatim. Daily, because the weekly job alone let LOG.md
+          # reach 387 KB (2026-10-12), and every run reads its top.
+          python3 scripts/archive_logs.py || true
+          git add LOG.md CURATION.md archive/ 2>/dev/null || true
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
             data/cities data/backlinks.json data/photo-autumn.json \
             data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \

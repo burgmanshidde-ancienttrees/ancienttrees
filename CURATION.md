@@ -18,7 +18,6 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-
 ## 2026-10-09 Berlin ber_031: possibly felled
 
 The Swiss Stone Pine of the TU Schaugärten (register 6-77/B-3): de.wikipedia's Naturdenkmal list for Steglitz-Zehlendorf says "Stand November 2024 gefällt". One source only, a search found no second; check the Berlin Senate register or TU Berlin before retiring the entry (rung 3).

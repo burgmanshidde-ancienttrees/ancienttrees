@@ -25,7 +25,7 @@ CITY_QUEUE.md       the single city order and how far     SEO_GEO_BLUEPRINT.md  
 TONE_OF_VOICE.md    story voice, Paris calibrates         PRODUCT_COPY.md   words inside the product
 drafts/PITCH_VOICE.md  copy a stranger reads              CONVENTIONS.md    looked-up interaction conventions
 BRIEF_RESEARCH.md / BRIEF_WRITING.md  pass rulebooks      DATA.md           daily digest (read the newest entry only)
-LOG.md              what each run did, newest first       CURATION.md       what could not be verified (one week; older in archive/)
+LOG.md              what each run did, newest first       CURATION.md       what could not be verified (3 days; older in archive/)
 DECISIONS.md / RULINGS.md  the why                        REVIEW.md         fresh-eyes findings
 ```
 
@@ -195,7 +195,7 @@ komoot Pioneer convention: one person, one place, a badge. Most come from outrea
 
 ## Learning loop
 
-Other machinery: `scripts/brief.py` (session-start brief, names broken gates), `scripts/stats.py`, `scripts/daily_digest.py`, `scripts/smoke_test.py`, `scripts/layout_rules.py` (shared thresholds), `scripts/archive_logs.py` (moves LOG.md and CURATION.md entries older than a week to archive/, weekly), `scripts/outreach_send.py`, hooks `convention_nudge.py`, `pitch_nudge.py`, `ratchet_nudge.py` in scripts/hooks/. data/ambassadors.json, data/copy-tests.json, data/city-list.json.
+Other machinery: `scripts/brief.py` (session-start brief, names broken gates), `scripts/stats.py`, `scripts/daily_digest.py`, `scripts/smoke_test.py`, `scripts/layout_rules.py` (shared thresholds), `scripts/archive_logs.py` (moves LOG.md and CURATION.md entries older than three days to archive/, daily from data-digest.yml), `scripts/outreach_send.py`, hooks `convention_nudge.py`, `pitch_nudge.py`, `ratchet_nudge.py` in scripts/hooks/. data/ambassadors.json, data/copy-tests.json, data/city-list.json.
 
 Before a brief: `passcheck.py`. Log costs. `retro.py` daily. Copy tests: `scripts/seolearn.py` (paused in the digest, see Digest reports) and `scripts/copytest.py --tick` (one test per surface, no early verdicts, head phrase never varies, promotion is a data change). Starting a copy test is a run's call (blueprint v1.17); new page types, contracts, schema or link minima still need Hidde.
 
