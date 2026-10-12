@@ -290,7 +290,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 85 | Luang Prabang | 7.49 | 24,534 | - | - | - | - | 20 | predicted (travel demand) |
 | 86 | Arnhem | 3.70 | 31,478 | 32 | 3 | 3 | 202 | 20 | measured |
 | 87 | Breda | 3.70 | 36,579 | 11 | 1 | 2 | 120 | 20 | measured |
-| 88 | Delft | 3.70 | 31,293 | 10 | - | 1 | 62 | 20 | measured |
+| 88 | Delft | 3.70 | 31,293 | 9 | - | 1 | 62 | 20 | measured |
 | 89 | Groningen | 3.70 | 31,401 | 17 | - | 2 | 76 | 20 | measured |
 | 90 | Lucca | 3.70 | 52,271 | 14 | 3 | 1 | 27 | 20 | measured |
 | 91 | Rome | 3.70 | 358,876 | 31 | 10 | 2 | 32 | 60 | measured |
@@ -575,7 +575,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 370 | Newark | 0.29 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 371 | George Town | 0.28 | 36,080 | - | - | - | - | 30 | predicted (travel demand) |
 | 372 | Allentown | 0.24 | - | - | - | - | - | 20 | predicted (travel demand) |
-| 373 | Oss | 0.11 | - | 6 | - | - | 48 | 20 | published, never ranked (may be uncrawled) |
+| 373 | Oss | 0.11 | - | - | - | - | 48 | 20 | published, never ranked (may be uncrawled) |
 | 374 | Queenstown | 0.16 | 36,672 | - | - | - | - | 10 | predicted (travel demand) |
 | 375 | Buffalo | 0.15 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 376 | San Juan | 0.15 | - | - | - | - | - | 10 | predicted (travel demand) |
