@@ -3344,7 +3344,7 @@ Sources, read 2026-10-12 (AllTrails' own pages refuse an automated browser):
   - Strava: "This website uses cookies" / "We use essential cookies to make our website work. We also set additional cookies... for analytics... These additional cookies will be set only if you click 'Accept All'." Buttons: Reject Non-Essential, Customize, Accept All.
   - komoot: "We value your privacy" / "We use cookies that are essential... With your consent, we... will also use tracking technologies..." Buttons: Accept all cookies, Customize preferences, Refuse.
   - AllTrails: no bar on first load from NL; "Manage Cookies" in the footer legal strip.
-  - Ours, copied from that shape: "This website uses cookies" / "We use analytics cookies to see how people use the site. They are only set if you click Accept all." Buttons: Accept all, Only necessary. Translations use each language's standard banner wording (Alles accepteren / Alleen noodzakelijke, Alle akzeptieren / Nur notwendige, Tout accepter / Tout refuser).
+  - Ours, on Hidde's "please just keep it short as this": only "This website uses cookies" and the Privacy link. Buttons: Accept all, Only necessary. Translations use each language's standard banner wording (Alles accepteren / Alleen noodzakelijke, Alle akzeptieren / Nur notwendige, Tout accepter / Tout refuser).
 
 ## Deleting your own photograph (2026-10-12, looked up)
 
