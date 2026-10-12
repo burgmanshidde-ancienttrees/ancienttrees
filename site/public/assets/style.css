@@ -3259,3 +3259,11 @@ dialog.at-sheet .at-sheet-fine[hidden] { display: none; }
 .td-yours-row::-webkit-scrollbar { display: none; }
 .td-yours-shot { flex: 0 0 140px; display: flex; flex-direction: column; gap: 6px; color: var(--ink-light); font-size: 12px; text-decoration: none; }
 .td-yours-shot img { width: 140px; height: 140px; object-fit: cover; border-radius: 12px; display: block; background: var(--cream-dark); }
+
+/* Your own photograph as the hero of a tree we have none of (2026-10-12, the
+   app's heroOwnShot). It covers the stage; the drawing and its sentence go. */
+.photo-stage.has-own .td-own-hero { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.photo-stage.has-own .tree-noph-art, .photo-stage.has-own .td-nophoto { display: none; }
+.photo-stage.has-own .td-own-hero { border-radius: inherit; }
+.photo-stage.has-own > :not(.td-own-hero) { z-index: 1; }
+.photo-stage.has-own .td-addphoto { position: relative; margin-top: auto; margin-bottom: 14px; }

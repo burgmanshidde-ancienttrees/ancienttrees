@@ -141,6 +141,17 @@ export const ADD_PHOTO_JS = `
     if (first && row.firstChild) row.insertBefore(fig, row.firstChild); else row.appendChild(fig);
     paintYours(row.children.length);
   }
+  // And on a tree we have NO photograph of, your newest one becomes the
+  // hero, for you only: the app's heroOwnShot. Where we have one, ours stays
+  // on top because it is what everybody else sees.
+  function heroOwn(url) {
+    var stage = document.querySelector('.tree-noph .photo-stage');
+    if (!stage || !url || stage.querySelector('.td-own-hero')) return;
+    var img = document.createElement('img');
+    img.className = 'td-own-hero'; img.src = url; img.alt = '';
+    stage.insertBefore(img, stage.firstChild);
+    stage.classList.add('has-own');
+  }
   function sign(token, path, then) {
     fetch(SB + '/storage/v1/object/sign/sightings/' + path, {
       method: 'POST',
@@ -169,6 +180,7 @@ export const ADD_PHOTO_JS = `
             slots[i] = url; done++;
             if (done === rows.length) {
               slots.forEach(function(u, k) { if (u) addShot(u, rows[k].taken_at, false); });
+              heroOwn(slots.filter(function(u) { return u; })[0]);
             }
           });
         });
@@ -265,7 +277,7 @@ export const ADD_PHOTO_JS = `
         });
       }).then(function(r) {
         if (!r || !r.ok) throw new Error('row');
-        try { addShot(URL.createObjectURL(blob), new Date().toISOString(), true); } catch (e) {}
+        try { var own = URL.createObjectURL(blob); addShot(own, new Date().toISOString(), true); heroOwn(own); } catch (e) {}
         btn.hidden = true;
         file.value = ''; if (cam) cam.value = '';
         sayWithLink(msgThanks);
