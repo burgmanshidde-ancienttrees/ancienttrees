@@ -337,6 +337,15 @@ struct CollectView: View {
         .task {
             if openSettings { openSettings = false; navigator.push = .profile }
             sent = await Submission.mine(token: account.freshToken())
+            // A PROFILE THAT NEVER ARRIVED IS ASKED FOR AGAIN (Hidde,
+            // 2026-10-12: signed in, trees showing, but no name and no
+            // followers). The account load runs once at launch and on sign
+            // in; when that one read failed, the header stayed nameless
+            // until the next launch. Opening My trees asks again.
+            if account.isSignedIn, !profiles.meLoaded {
+                await profiles.load(userId: account.session?.userId,
+                                    token: await account.freshToken())
+            }
         }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
         .sheet(isPresented: $findingPeople) { PeopleView() }
