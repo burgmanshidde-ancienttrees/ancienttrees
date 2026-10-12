@@ -11505,6 +11505,14 @@
    },
    {
     "date": "2026-10-12",
+    "target": "venlo",
+    "kind": "enrich",
+    "tokens": 50000,
+    "trees": 0,
+    "note": "enrichment: opening hours for vnl_003 (Kasteel Arcen); other gaps dead-ended (no hours published, no peak season)"
+   },
+   {
+    "date": "2026-10-12",
     "target": "leipzig",
     "kind": "verify",
     "tokens": 70000,

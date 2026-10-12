@@ -130,9 +130,11 @@
       "story": "Planted on a field named after jousting, which is a collision of two ideas about display separated by five centuries.\n\nThe Toernooiveld belongs to Kasteel Arcen, north of Venlo on the Maas. The sequoia went in between 1860 and 1870, which puts it within about fifteen years of the species arriving in Europe at all. Seed reached Britain in 1853 and the tree was an immediate sensation: enormous, foreign, from a part of California nobody had seen, and expensive. Owners of country places across Europe bought them the way they bought anything else that announced reach.\n\nThis is one of the earliest in the Netherlands, and it is now more than a century and a half into a lifespan that runs to three thousand years.\n\nThe bark is the reason to go rather than the height. It is thick, soft and fibrous, and you can push a fist into it. That is fire adaptation: in a Sierra Nevada forest the outer layer chars and insulates while the living tissue survives, which is how these trees outlast dozens of fires.\n\nThe castle gardens charge admission, so check before making the trip.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689993&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689993&outFields=*&f=json",
+        "https://www.kasteeltuinen.nl/nl/plan-uw-bezoek/openingstijden/"
       ],
-      "access": "Grounds of Kasteel Arcen, recorded as visitable in the national register. The castle gardens charge admission, so check before setting out.",
+      "access": "Grounds of Kasteeltuinen Arcen, recorded as visitable in the national register. Paid entry (about 23.50 euro at the gate for adults per a discount site; check the garden's own price page). Open daily 10:00 to 18:00 from 28 March to 1 November 2026, closed 18 to 21 September.",
+      "paid_entry": true,
       "transport": "About 12 km north of Venlo, at Arcen on the Lingsforterweg.",
       "photo": {
         "url": null,
