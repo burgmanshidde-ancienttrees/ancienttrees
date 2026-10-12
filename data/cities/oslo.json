@@ -48,10 +48,14 @@
       "access": "Free, open access, Montebello (residential area, tree visible from public streets)",
       "transport": "Montebello railway/metro station, short walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/osl_001-munch-eika.jpg",
+        "license": "Provided by Ingar Sørensen with permission, credit required",
+        "attribution": "Ingar Sørensen",
+        "attribution_url": "https://sorensenfoto.no",
+        "status": "approved",
+        "width": 1189,
+        "height": 1783,
+        "note": "Photographed by Ingar Sørensen (sorensenfoto.no); sent by him on 2026-10-11 for this tree on our ask of 2026-10-03, under his permission of 2026-10-02: 'The photos may be used freely, provided credit is given (Photo: Ingar Sørensen)', with a link to his website. Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "flagged",
       "notes": "Age (500-600 years), trunk circumference (about 8m) and status as Oslo's oldest tree come from a single source, Oslo municipality's own city-planning magazine feature on the city's trees; no independent second source found. The name's connection to painter Edvard Munch is this project's own inference from his documented residence at nearby Ekely, not a sourced claim; flagged as unconfirmed in the story text itself rather than stated as fact.",
@@ -65,7 +69,19 @@
         "kind": "fruit"
       },
       "how_to_recognise": "You can recognise it by the trunk, about eight metres around, which the city's own planning office calls the oldest tree in Oslo. It stands in the Montebello area on the west side, in view from the public street.",
-      "girth_cm": 800
+      "girth_cm": 800,
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/osl_001-munch-eika-5cb82d14.jpg",
+          "license": "Provided by Ingar Sørensen with permission, credit required",
+          "attribution": "Ingar Sørensen",
+          "attribution_url": "https://sorensenfoto.no",
+          "status": "approved",
+          "width": 1189,
+          "height": 1665,
+          "note": "Second frame of the same tree; same permission as the lead."
+        }
+      ]
     },
     {
       "id": "osl_002",
@@ -174,10 +190,14 @@
       "access": "Free, open access, Botanisk hage (public garden, open at all times; glasshouses may charge separately)",
       "transport": "Toyen metro station, short walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://ancienttrees.app/photos/osl_004-the-ginkgo-of-botanisk-hage.jpg",
+        "license": "Provided by Ingar Sørensen with permission, credit required",
+        "attribution": "Ingar Sørensen",
+        "attribution_url": "https://sorensenfoto.no",
+        "status": "approved",
+        "width": 1189,
+        "height": 1783,
+        "note": "Photographed by Ingar Sørensen (sorensenfoto.no); sent by him on 2026-10-11 for this tree on our ask of 2026-10-03, under his permission of 2026-10-02: 'The photos may be used freely, provided credit is given (Photo: Ingar Sørensen)', with a link to his website. Not an open licence; ask him before reuse elsewhere."
       },
       "curation_status": "flagged",
       "notes": "Planting date (1870) and the 'oldest ginkgo in Northern Europe' claim come from the Natural History Museum's (University of Oslo) own page on the garden's ginkgo, phrased there as 'antas a vaere' (believed to be) rather than stated as certain; carried here with the same hedge per hard rule 8. The Victoria House's 1876 opening and 2026 150th-anniversary marker independently corroborate the garden's mid-19th-century development phase via a University of Oslo staff-news article.",
@@ -189,7 +209,19 @@
         "label": "October, when its fan-shaped leaves turn brilliant yellow",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by the size, the garden's largest ginkgo and believed the oldest in Northern Europe. It stands behind the Victoria House, the tropical glasshouse built six years after the tree went in in 1870."
+      "how_to_recognise": "You can recognise it by the size, the garden's largest ginkgo and believed the oldest in Northern Europe. It stands behind the Victoria House, the tropical glasshouse built six years after the tree went in in 1870.",
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/osl_004-the-ginkgo-of-botanisk-hage-a4024c99.jpg",
+          "license": "Provided by Ingar Sørensen with permission, credit required",
+          "attribution": "Ingar Sørensen",
+          "attribution_url": "https://sorensenfoto.no",
+          "status": "approved",
+          "width": 1189,
+          "height": 1783,
+          "note": "Second frame of the same tree; same permission as the lead."
+        }
+      ]
     }
   ]
 }
