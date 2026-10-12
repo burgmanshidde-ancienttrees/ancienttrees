@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - Latin names in italics, on the website and in the app
+
+Asked for by the Director of the National Botanic Gardens of Ireland, reading the Dublin page: "please put the latin names in Italics." Hidde's reply says we are changing it; this is that change.
+
+- **Website**: every scientific name a reader sees is now italic, as botanists print it: genus and epithet italic, the hybrid x, sp., var., subsp. and a cultivar in quotes upright (*Platanus* x *acerifolia*, *Fagus sylvatica* 'Pendula'). Covers the story on every tree page, the species line and story on every card, the species pages (name under the title, the intro text, the species index) and the search box. All eight languages, since it runs on whatever text the page prints.
+- **No data edited.** `site/src/lib/latin.ts` finds names at build time, and only names it knows: a genus and epithet that our own species fields and species intros already use (223 genera, 434 epithets). "London plane" is not Latin and stays upright. Checked against every English story and every overlay before shipping; the few English words the species fields carry ("English landscape park") are listed out.
+- **App**: the tree story italicises the same words, because the feed now sends each story's italic runs (`story_latin`, offsets) instead of the app guessing. The species screen and search rows print the hybrid x upright now too. The story italics show once this deploy is live.
+- Checked: CI build plus smoke test on the branch green, qa --source-only and the pre-push checks green, app built and the species screen looked at in the simulator.
+
 ## 2026-10-12 - App: one button shape, the add-a-tree steps on the one sheet, Sign in visible on a small iPhone
 
 Hidde said yes to the three design fixes from the QA pass.
