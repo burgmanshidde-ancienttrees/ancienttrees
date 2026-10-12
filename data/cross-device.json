@@ -110,6 +110,10 @@
     "file:CatalogueStore.swift": {
       "verdict": "device",
       "why": "The last downloaded copy of OUR catalogue (trees, walks, species, browse) in Application Support, so the app opens offline. Nobody's data, the same on every phone, replaced on the next refresh."
+    },
+    "at_consent": {
+      "verdict": "device",
+      "why": "This browser's answer to the cookie bar (ConsentBar.astro, 2026-10-12). Consent to cookies is given per browser by law and by convention, and it is asked before anybody has signed in; an account-wide copy would carry a yes to a browser that was never asked."
     }
   }
 }

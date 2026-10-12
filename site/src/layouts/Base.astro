@@ -25,6 +25,7 @@ const LEAF = icon("leaf", "bold", "ic");
 const GEAR = icon("gear-six", "bold", "ic");
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
+import ConsentBar from "../components/ConsentBar.astro";
 import {
   AUTH_ENABLED,
   SUPABASE_URL,
@@ -367,6 +368,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
     <div class="footer-legal">
       <span class="footer-note">&copy; {year} Ancient Trees, ancienttrees.app.</span>
       <a href="/privacy">{t.privacy}</a>
+      <a href="/privacy#cookies" data-consent-open>{t.cookies}</a>
       <a href="/terms">{t.terms}</a>
       <a href="/sources">{t.sources}</a>
     </div>
@@ -382,6 +384,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
     not, or two dialogs share one id. */}
 <AppModal lang={lang} />
 <AppDownloadModal lang={lang} />
+<ConsentBar lang={lang} />
 <script define:vars={{ SB_URL: SUPABASE_URL, SB_KEY: SUPABASE_KEY }}>
 window.at = window.at || {};
 at.track = function (name, detail) {
@@ -393,6 +396,10 @@ at.track = function (name, detail) {
     // machine visitor at the root instead of filtering them per tool.
     if (location.hostname !== "ancienttrees.app") { return; }
     if (localStorage.getItem("at_notrack") === "1") { return; }
+    // The same event goes to Google Analytics when the visitor accepted its
+    // cookies (ConsentBar.astro defines gtag only then), so GA's reports carry
+    // the funnel steps as well as pageviews.
+    if (typeof window.gtag === "function") { window.gtag("event", String(name).slice(0, 40), detail ? { detail: String(detail).slice(0, 60) } : {}); }
     var ev = { name: String(name).slice(0, 40), path: location.pathname.slice(0, 120) };
     if (detail) { ev.detail = String(detail).slice(0, 60); }
     var body = JSON.stringify(ev);

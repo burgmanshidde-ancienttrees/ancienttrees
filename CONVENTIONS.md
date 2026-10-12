@@ -3326,3 +3326,9 @@ Sources, read 2026-10-12 (AllTrails' own pages refuse an automated browser):
 - https://baymard.com/mcommerce-usability/benchmark/mobile-page-types/search-field/1522-gap
 - https://designsystem.gov.scot/patterns/site-header
 - https://www.searchenginejournal.com/on-site-search-best-practices/454465/
+
+## Asking for analytics cookies (2026-10-12)
+
+- **Reference:** AllTrails and komoot to European visitors; the EDPB cookie-banner taskforce report (2023) and the Dutch AP's guidance.
+- **What they do:** a bar at the foot of the page, not a wall; Accept and Decline side by side with the same size and weight; nothing loads before Accept; a "Cookies" link in the footer reopens the choice at any time.
+- **Ours:** components/ConsentBar.astro. A bar rather than Sheet.astro because a consent question may not block the page it asks about. Google's basic consent mode: gtag.js is not fetched until Accept. Ignoring the bar counts as no. The answer lives in `at_consent`, a device store (data/cross-device.json), because consent is per browser.

@@ -78,6 +78,12 @@ export const APPLE_SIGNIN = true;
 // specifically because it needs no consent banner. build_site.py:849.
 export const ANALYTICS_TOKEN = "fcbbfb8b426c4f6aa2066b00be6454f6";
 
+// Google Analytics 4, chosen by Hidde 2026-10-12 over PostHog on the web
+// ("id rather use google analytics im used to it"). Loaded only after the
+// visitor presses Accept on the cookie bar (components/ConsentBar.astro);
+// empty means no bar and no tag anywhere.
+export const GA_MEASUREMENT_ID = "G-2GNH06K02G";
+
 // The project identity, never the owner's name (Hidde, 2026-08-01).
 // build_site.py:847.
 export const CONTACT_EMAIL = "info@ancienttrees.app";
