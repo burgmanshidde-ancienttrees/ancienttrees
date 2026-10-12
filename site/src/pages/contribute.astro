@@ -292,7 +292,10 @@ const headExtra = ldScript(graph);
   // the tip.
   function sendPhoto(s, picked, done) {
     if (!picked || !s) { done(null); return; }
+    // The stored session holds tokens only, so the id comes from the JWT's
+    // sub claim (2026-10-12; without it uploads went to "undefined/").
     var uid = (s.user && s.user.id) ? s.user.id : s.user_id;
+    if (!uid) { try { var b = s.access_token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'); while (b.length % 4) b += '='; uid = JSON.parse(atob(b)).sub; } catch (e) {} }
     if (!uid) { done(null); return; }
     var file = uuid() + '.jpg';
     var path = uid + '/' + file;

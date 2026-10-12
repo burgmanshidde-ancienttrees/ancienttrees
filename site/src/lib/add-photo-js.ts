@@ -78,6 +78,21 @@ export const ADD_PHOTO_JS = `
     } catch (e) { return null; }
   }
 
+  // WHO, from the token itself (2026-10-12). The stored session holds the
+  // tokens and nothing else (signin-js), so s.user.id was undefined on every
+  // web upload: the file went to "undefined/...", the storage policy refused
+  // it as somebody else's folder, and every photograph sent from the website
+  // ended in "That did not go through". The JWT's sub claim is the user id.
+  function userId(s) {
+    if (s.user && s.user.id) return s.user.id;
+    if (s.user_id) return s.user_id;
+    try {
+      var b = s.access_token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+      while (b.length % 4) b += '=';
+      return JSON.parse(atob(b)).sub || null;
+    } catch (e) { return null; }
+  }
+
   function say(t) { note.textContent = t; note.hidden = !t; }
 
   // The acknowledgement plus the way to the list that now holds it: one line,
@@ -170,7 +185,9 @@ export const ADD_PHOTO_JS = `
         return;
       }
       var id = uuid();
-      var uid = s.user && s.user.id ? s.user.id : s.user_id;
+      var uid = userId(s);
+      if (!uid) { busy = false; btn.disabled = false; btn.textContent = originalLabel;
+        say(msgSignIn); if (collecting && window.atSnack) window.atSnack(msgSignIn); collecting = false; return; }
       var path = encodeURIComponent(uid) + '/' + id + '.jpg';
       fetch(SB + '/storage/v1/object/sightings/' + path, {
         method: 'POST',

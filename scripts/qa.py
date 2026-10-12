@@ -2258,6 +2258,31 @@ def check_robots_is_the_file_we_wrote():
     return []
 
 
+
+def check_a_user_id_is_not_read_from_the_stored_session():
+    """The stored session holds tokens only (signin-js writes access_token,
+    refresh_token and expires_at), so code that reads `s.user.id` or
+    `s.user_id` off it gets undefined unless it falls back to the token.
+
+    Hidde, 2026-10-12: "als ik een foto toevoeg om te collecten komt er een
+    pop up that did not go through". Every photograph sent from the website
+    went to storage as "undefined/<id>.jpg", the bucket policy refused a folder
+    that was not the person's own, and the reader saw a failure. No smoke test
+    uploads anything, so nothing went red. A script that reads either field
+    must also decode the JWT's sub claim (look for `.sub`). Removing this
+    check needs Hidde."""
+    bad = []
+    for path in sorted((ROOT / "site" / "src").rglob("*")):
+        if path.suffix not in (".ts", ".astro") or not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        if ("s.user.id" in text or "s.user_id" in text) and ".sub" not in text:
+            bad.append(str(path.relative_to(ROOT)))
+    if bad:
+        return ["reads a user id the stored session never holds, with no fallback "
+                "to the token's sub claim: " + ", ".join(bad)]
+    return []
+
 def check_every_gate_asks_the_server():
     """Every control that opens sign-in decides WITH THE SERVER, through
     atCollection.gate, never from the session the browser holds.
@@ -2864,6 +2889,7 @@ def main():
     failures += check_auth_corpus_agreement()
     failures += check_people_s_addresses_stay_out_of_the_repo()
     failures += check_every_gate_asks_the_server()
+    failures += check_a_user_id_is_not_read_from_the_stored_session()
     failures += check_icons_are_drawn()
     failures += check_photo_orientation()
     failures += check_photo_resolution()
