@@ -10,7 +10,7 @@ name: City research
 # A list copied into two places is a list that will differ. One name, both
 # steps.
 env:
-  CLAUDE_ALLOWED: "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+  CLAUDE_ALLOWED: "Bash(git:*),Bash(python3:*),Bash(npm:*),Bash(npx:*),Bash(cd:*),Bash(curl:*),Bash(gh run:*),Bash(gh workflow:*),Bash(ls:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(find:*),Bash(mkdir:*),Bash(sort:*),Bash(uniq:*),Bash(diff:*),Bash(sed:*),Bash(awk:*),Bash(echo:*),Bash(jq:*),Bash(cut:*),Bash(tr:*),Bash(date:*),Bash(basename:*),Bash(dirname:*),Bash(cp:*),Bash(mv:*),Bash(test:*),Bash(touch:*),Bash(printf:*),Bash(pdftotext:*),Task,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
   CLAUDE_DISALLOWED: "Bash(rm:*),Bash(sudo:*),Bash(gh repo:*),Bash(gh secret:*),Bash(gh auth:*),Bash(git clean:*),Bash(git reset --hard:*),Bash(find:* -delete),Bash(npm --prefix site run build:*),Bash(npx astro:*),Bash(npm run build:*),Monitor"
   # The continuation prompt, hoisted here 2026-08-29 when the window went from
   # two attempts to four. This file's own rule: a list copied into two places is
@@ -485,6 +485,13 @@ jobs:
             same holds for `curl ... | wc` and `python3 ... | tail`: a pipe
             into a second binary is a chain. Run the command alone and read
             its output, or let the script count.
+
+            AND KEEP EVERY PATH INSIDE THE REPOSITORY. Plain `mkdir`, `wc`,
+            `ls` and `cat` are on the allowlist and were still refused in a
+            third of the runs of the week to 2026-10-12, because a command
+            touching a path outside the working directory (/tmp, $HOME) is
+            refused whatever the list says. Scratch files go in out/tmp/,
+            which exists and is gitignored; downloads go in out/dl/.
 
             Step 0 holds a priority ladder; work out which rung applies and do that.
             Reader submissions outrank everything. Something published being wrong
