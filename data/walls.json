@@ -12,11 +12,6 @@
       "released_at": "2026-10-05T08:01:00+00:00"
     },
     {
-      "slug": "vienna",
-      "kind": "verify",
-      "released_at": "2026-10-06T01:58:41+00:00"
-    },
-    {
       "slug": "nuremberg",
       "kind": "verify",
       "released_at": "2026-10-08T12:11:12+00:00"
@@ -95,6 +90,11 @@
       "slug": "bamberg",
       "kind": "verify",
       "released_at": "2026-10-12T20:28:03+00:00"
+    },
+    {
+      "slug": "vienna",
+      "kind": "verify",
+      "released_at": "2026-10-12T21:17:56+00:00"
     }
   ]
 }

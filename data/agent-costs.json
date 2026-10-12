@@ -11435,6 +11435,14 @@
     "date": "2026-10-12",
     "target": "vienna",
     "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "second deepen pass: data.wien.gv.at WFS hung, Wikipedia screen only; 5 leads or blocked filed (ND 735 linden best for a rerun), 0 delivered"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "vienna",
+    "kind": "verify",
     "tokens": 70000,
     "trees": 2,
     "note": "deepen: Baumkataster girth joined to Naturdenkmal register by coordinate; 2 rich trees, 42 register rows timed out unscanned"

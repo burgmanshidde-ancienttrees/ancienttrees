@@ -772,6 +772,33 @@
    "status": "held",
    "held_why": "Verify pass gave no access line and judged it not worth a page (two pines planted about 1945); nothing to write 150 words from without inventing. Write pass 2026-10-08 declined to publish.",
    "why_not_yet": "Two black pines, cadastre pine 202 cm planted 1945 at 5.9 m: modest, young for a monument. Commons photo 2014 (Haeferl). Not worth a page unless a bigger trunk shows up. (verify pass 2026-10-08)"
+  },
+  {
+   "register_id": 3257978,
+   "name": "Stieleiche",
+   "species": "Quercus robur",
+   "place": "19., Grinzinger Steig 4",
+   "latitude": 48.256831,
+   "longitude": 16.343127,
+   "why_not_yet": "Naturdenkmal 856, designated 2021-06-17 (alive then). Register text cites a planting year 1758, no girth. Cadastre (data.wien.gv.at WFS) hung on two attempts this pass, so no girth and pin not confirmed; no Commons category or geotagged photo. Not rich."
+  },
+  {
+   "register_id": 3257796,
+   "name": "Stieleiche",
+   "species": "Quercus robur",
+   "place": "19., Springsiedelgasse 30",
+   "latitude": 48.256462,
+   "longitude": 16.354486,
+   "why_not_yet": "Naturdenkmal 677 (1979), 'almost 30 m' tall per register text, no Commons photo; address among villas, public visibility unknown; cadastre WFS hung, pin and girth unchecked. Not rich."
+  },
+  {
+   "register_id": 3257867,
+   "name": "Sommerlinde",
+   "species": "Tilia platyphyllos",
+   "place": "19., Schreiberweg 114",
+   "latitude": 48.261636,
+   "longitude": 16.340179,
+   "why_not_yet": "Naturdenkmal 735, girth 400 cm, height about 20 m, crown 20 m, almost 130 years old (register text via de.wikipedia Doebling list). No photo on Commons, access to Schreiberweg 114 unknown, cadastre hung. Best remaining Doebling candidate if a pass can reach the cadastre and settle access."
   }
  ],
  "blocked": [
@@ -915,6 +942,24 @@
    "species": "Corylus colurna",
    "place": "18., Koehlergasse 20",
    "reason": "Naturdenkmal Nr. 622 (de.wikipedia.org Liste der Naturdenkmaeler in Wien/Waehring, verify pass 2026-08-22): location given as 'im Garten hinter dem Gebaeude' (in the garden behind the building), private. Never ship; do not re-research."
+  },
+  {
+   "register_id": 3257673,
+   "name": "Winterlinde",
+   "species": "Tilia cordata",
+   "place": "19., Grinzinger Straße 18",
+   "latitude": 48.253396,
+   "longitude": 16.347357,
+   "reason": "Naturdenkmal 593, girth 290 cm at designation 1974 (Wikipedia list copying the city register); Commons photos 2014-03-22 (CC BY-SA 3.0 at, Geiserich77) say it stands in the garden behind the building, so no public access."
+  },
+  {
+   "register_id": 3257609,
+   "name": "Platane",
+   "species": "Platanus x hybrida",
+   "place": "13., Auhofstraße 10",
+   "latitude": 48.187997,
+   "longitude": 16.296545,
+   "reason": "Naturdenkmal 623, girth about 4.8 m, crown 30 m (register text via de.wikipedia Hietzing list, protected 1975); Commons photo 2018-07-09 (CC BY-SA 4.0, Thomas Ledl, geotag on the register point) shows it in a garden with garden chairs; register says the plane group survives in back courtyards. No evidence of public access."
   }
  ]
 }
