@@ -1,411 +1,63 @@
 # The verification pass rulebook
 
-Everything a verification pass needs, in one file. Do not read CLAUDE.md, LOG.md
-or the rest of the corpus: your brief plus this file is the whole job. This file
-exists because passes used to carry 86KB of project history each, and the
-history is not what verifies a tree.
+Your brief plus this file is the whole job. Do not read CLAUDE.md, LOG.md or the rest of the corpus. The worked examples behind each rule are in archive/BRIEF_RESEARCH-full-2026-10-12.md; open it only if a rule's edge is unclear.
 
 ## What you are doing
 
-Ancient Trees maps remarkable old trees people can walk to. Your job is the
-factual half only: confirm which candidate trees are real, alive, remarkable and
-visitable, and pin them. Someone else writes the prose later, from your notes.
-You do NOT write stories. You do NOT hunt photos. You do NOT edit city files.
+Confirm which candidate trees are real, alive, remarkable and visitable, and pin them. You do NOT write stories, hunt photos, edit city files, or dispatch sub-agents (a pass that waits on a child gets killed by the watchdog). You are the verification pass; do the research yourself.
 
-A tree qualifies if it is genuinely old OR visually spectacular OR historically
-significant, AND publicly accessible. A register saying "protected" is not by
-itself "worth the walk": judge each one.
+A tree qualifies if genuinely old OR visually spectacular OR historically significant, AND publicly accessible. "Protected" alone is not "worth the walk".
 
-## Since 2026-10-09: a NEW tree ships only when its page is RICH, or a reader added it
+## Before spending time on a candidate
 
-Hidde, 2026-10-09, after a measurement showed that eleven days of "recovery" had changed 4 stories and added 245 trees: "Let's not add any more trees unless rich page and or added by user right?" preflight refuses a new tree that is not rich (`check_a_new_tree_is_rich_or_a_readers`), so a candidate that cannot end rich is wasted work. Rich means ALL of:
-
-- **findable**: a photograph, a confirmed pin, or a small named site (radius 50 m at most) plus a recognition line;
-- **the official register record**: the authority's own page or entry for THIS tree (register_url, or register_name plus register_id);
-- **a measurement**: girth_cm or height_m from the register, a plaque or the authority, with its source;
-- **concrete access**: free or the price, and opening days or hours where the site publishes them.
-
-Deliver those fields with the tree. A candidate that will end short on any of them goes to data/leads/ with what is missing, not to the verified file. The exception is a tree a reader sent (a sighting), which meets the ordinary bar below and ships without the richness, because a person stood there.
-
-## Since 2026-10-01: a tree ships only with a photograph or an exact pin
-
-Google demoted the site on 09-28 for pages at scale, and Hidde's answer is "zo min mogelijk bomen met geen foto en geen exacte pin - we moeten met goede content komen". preflight now refuses a NEW tree anywhere that has neither, so a candidate that will end with neither is wasted work.
-
-Before you spend time on a candidate, check that it can end with one of the two:
-- **a photograph**: an openly licensed picture of THIS tree exists (Commons file named after it or geotagged within ~150 m, iNaturalist, a register's own CC photo), or
-- **a confirmed pin**: a register coordinate, an OSM tree node, or aerial imagery that puts you on the trunk (see "Aerial imagery as evidence").
-
-If neither is in reach, do not verify it: record it in data/leads/ with the reason "no photo or exact pin in reach" and move to the next candidate. Order your candidates so the ones with a photo already in hand come first.
+- **Since 2026-10-09 a new tree ships only when its page is RICH, or a reader added it** (`check_a_new_tree_is_rich_or_a_readers`). Rich = all of: findable (photo, confirmed pin, or a small named site plus a recognition line); the official register record for THIS tree (`official_register` {name, url}); a measurement (girth_cm or height_m) with its source; concrete access (free or price, plus days or hours where published). A candidate that will end short goes to data/leads/ with what is missing. A reader's sighting is exempt from richness.
+- **It must be able to end with a photograph or a confirmed pin.** Photo: an openly licensed picture of THIS tree (Commons file named after it or geotagged within ~150 m, iNaturalist, a register's CC photo). Pin: register coordinate, OSM tree node, or aerial imagery on the trunk. Neither in reach: lead, reason "no photo or exact pin in reach". Put candidates with a photo in hand first.
+- **Find the naming body first.** The method needs somebody who already named individual trees: a council survey, heritage decree, champion register, association label, Wikipedia list. Found: the city works. None: expect two or three, say so up front.
 
 ## The bar, per tree
 
-1. **Alive now.** Best evidence is a dated photo, news item or observation from
-   the last few years. If confirmation is thin, deliver it anyway with
-   `curation_status: "flagged"` and say in `verify_notes` what is missing. A
-   tree you KNOW is dead is never delivered. No register has a vitality field;
-   this check is always yours.
-2. **Two independent sources** for existence, species and age. One official
-   register counts as one source. If sources conflict, deliver both figures in
-   `verify_notes` and flag; never pick a winner silently.
-   **An official register ALONE is enough to deliver, anywhere in the world**
-   (Hidde, 2026-09-27 for the US, widened to every country 2026-09-28). A
-   government register (city heritage list, state champion register, national
-   or regional designation) settles WHAT the tree is: existence, species, and
-   girth or age where it gives them. Do not hunt a second source for those.
-   The same holds for the OWNER or manager of the ground publishing its own
-   tree (a botanic garden, a park department, a church, an estate).
-   Instead, spend the time on the three things a register is weak at, because
-   they are where a wrong tree or a wrong pin comes from:
-   - **Alive:** run `python3 scripts/lifecheck.py LAT LON` (or `--file` on your
-     verified JSON). RECENT means no reason to doubt; OLD or NONE means say so
-     in `verify_notes` and deliver flagged. It proves something was
-     photographed at the spot, not that it was this trunk.
-   - **Pin:** check the register coordinate against the map or aerial imagery.
-     Registers often give a park or a parcel; unless it lands on one clear
-     crown, `location_precision` is `"approximate"`.
-   - **Access:** hard rule 10 unchanged. Registers include gardens and
-     schoolyards and rarely say whether you can walk up to the tree.
-   A register that records vitality or was updated in the last five years may
-   be delivered unflagged; any other register-only tree is `flagged` with
-   `verify_notes` saying "register only". The register pitfalls below (units,
-   a year in the age field, twins, stale national files) still apply. This
-   does NOT cover a finding aid (California Big Trees, Famous Trees of Texas,
-   monumentaltrees.com, any list with an unclear licence): those still need a
-   source of their own.
-   **In the US, ONE CREDIBLE SOURCE is enough, not only a register** (Hidde,
-   2026-10-01: "all focus on the US, with making use of the 1 credible source
-   is enough rule"). Credible means somebody accountable wrote about THIS tree:
-   a government register or agency page, the owner or manager of the ground,
-   American Forests' champion trees, the Live Oak Society's registry, a
-   university arboretum, or a newspaper or magazine's dated report on the
-   specific tree. Deliver it `flagged`, "one source" in `verify_notes`, and
-   spend the time saved on alive, pin and access exactly as above. Finding aids
-   stay finding aids (the list above), blogs and listicles are not credible
-   sources, and an unknown field is a question on the page, never a guess.
-   **In a well-covered country (100+ published trees: NL, Italy, Japan, Spain,
-   Germany, France, Poland, Portugal, UK), a new tree must bring a photograph or
-   a confirmed pin**, or it goes to leads (Hidde, 2026-09-28: "for countries like
-   NL, which is quite covered, we don't want to swamp it with photo less not
-   accurate trees"). The US is exempt ("better this than nothing").
-   `check_covered_countries_want_a_photo_or_a_pin()` in preflight enforces it.
-3. **The exact spot.** `location_precision: "confirmed"` only when you can place
-   the individual tree (tree-level coordinates from a register, a mapped photo,
-   satellite-visible crown). Park-level or shrine-level knowledge is
-   `"approximate"`, and that is a finished, publishable answer. Faking precision
-   is the one mistake this project cannot afford.
-4. **Or a small site (Hidde, 2026-10-04, sitewide).** A tree whose trunk you
-   cannot pin to the metre may still be FINDABLE: when it stands on a small,
-   named site that a visitor takes in at one glance, record
-   `"location_site": {"name": "Gate of Magnolia Cemetery", "radius_m": 30}`
-   with the honest radius (50 m at most), keep `location_precision`
-   `"approximate"`, and put in `verify_notes` what tells this tree apart on
-   that site (the biggest, the one by the gate, the leaning one), from your
-   sources only. A churchyard, a cemetery gate, a square, a cloister, a
-   courtyard or a library lawn is a site; a park, a wood, a campus or a garden
-   you walk through is not, whatever radius you could write down. With a
-   recognition line from the writer this counts like a photo or a confirmed pin
-   (scripts/findable.py). Never use it to dress up a park-level pin.
+1. **Alive now.** Best: a dated photo, news item or observation from the last few years. Thin: deliver `flagged`, say what is missing. Known dead: never deliver. No register has a vitality field. `python3 scripts/lifecheck.py LAT LON` (or `--file`): RECENT is fine; OLD or NONE means flag and say so.
+2. **Sources.** Two independent sources for existence, species and age; conflicts go into `verify_notes` with both figures, flagged. **One official register is enough anywhere**, and so is the owner or manager of the ground (botanic garden, park department, church, estate): do not hunt a second source; spend the time on alive, pin and access. Register-only is `flagged` with "register only" unless the register records vitality or was updated in the last five years. **In the US one credible source is enough** (government page, the ground's owner, American Forests, Live Oak Society, a university arboretum, a dated news report on this tree), flagged "one source". Finding aids (California Big Trees, Famous Trees of Texas, monumentaltrees.com, unclear-licence lists), blogs and listicles are never a source.
+3. **Covered countries** (100+ trees: NL, Italy, Japan, Spain, Germany, France, Poland, Portugal, UK): a new tree needs a photo or confirmed pin, or it is a lead. US exempt.
+4. **The exact spot.** `"confirmed"` only when you can place the individual tree (register tree coordinate, mapped photo, visible crown). Park or shrine level is `"approximate"`, a finished answer. Never fake precision. A register coordinate unless it lands on one clear crown is approximate.
+5. **Or a small site.** On a small named site taken in at one glance (churchyard, cemetery gate, square, cloister, courtyard, library lawn; never a park, wood, campus or walk-through garden): `"location_site": {"name": "...", "radius_m": 30}` (50 at most), keep `approximate`, and note in `verify_notes` what tells this tree apart there, from sources only.
+6. **Access** (hard rule 10). Registers include gardens and schoolyards and rarely say if you can walk up. Settle it from OpenStreetMap when no source says: `access=`, `foot=`, `highway=footway`, `designation=` tags near the tree (a permissive footpath 20 m from a golf-course tree ships; `access=private` on the only road does not). Evidence, not proof; never overrides a source or the absolutes.
 
-## Hard limits that never bend
+## Hard limits
 
-- Never fabricate. An unverifiable claim is dropped or flagged, never smoothed.
-- monumentaltrees.com: verification only, never copy text, photos or coordinates
-  as the sole source.
-- Never deliver a tree whose location its source deliberately withholds, or one
-  on private land not genuinely open to visitors. When in doubt, leave it out
-  and record why in `blocked`.
-- A tree within ~30 minutes by public transport of the centre counts, labeled
-  with its real place name and true travel time. Never present it as in-town.
-- An entry must be one collectible point: one identifiable tree, or a compact
-  famous ensemble with one obvious place to stand. An avenue or a whole wood is
-  `blocked`, reason recorded.
-- Register twins: entries metres apart that a visitor sees as one thing fold
-  into one entry; note the folded register ids in `verify_notes`.
+- Never fabricate. Unverifiable: drop or flag, never smooth.
+- monumentaltrees.com: second source, photo identity (look, never download), names and measurements as cross-checks. Never the sole source or the discovery engine, never their text, photos or bulk data; single pages only, they 403 automation.
+- Never a location its source withholds, never private land not open to visitors, never somebody's home. Schools only with evidence the grounds are open.
+- Within ~30 minutes by public transport counts, with its real place name and travel time.
+- One collectible point: one tree, or a compact famous ensemble with one place to stand. Avenue or wood: `blocked`.
+- Twins metres apart fold into one entry; folded register ids in `verify_notes`.
+- **A search summary is a pointer, never a source.** WebSearch's summary has invented measurements. Any figure you record must be seen on the fetched page; if only the summary has it, it does not exist.
+- Sanity-check every number against the physical world (a "60 m" olive, a 2.84 cm trunk).
 
-## Register pitfalls, each has already happened
+## Register pitfalls
 
-- Units: a girth column may be metres or centimetres regardless of its name.
-  Sanity-check every number against the physical world (a 2.84 cm trunk is not
-  a tree).
-- A year sitting in an age field (olive, "age 2009") is corruption, not an age.
-- A register age is the age at last measurement: add the years since, say so.
-- Most registers have no age field at all. That is what the section below is for.
-- The register's total will not match the municipality's own count; never quote
-  either as a count of what exists.
+Units are not what the column says (metres vs cm). A year in an age field is corruption. A register age is at last measurement: add the years since, say so. The register's total never matches the municipality's; never quote either as what exists. Prefer the regional register over the national one where both exist.
 
-## Try the Wikipedia registry join FIRST, before any generic searching
+## Cheap techniques, try first
 
-The cheapest technique this project has found. It has now paid off on three
-cities in three days and each time it had to be re-explained in the brief, so
-it lives here instead.
+- **The Wikipedia registry join.** Local-language Wikipedia often reproduces the city's own register with address, girth and designation year per tree, joinable by register id ("Pomniki przyrody w <city>", "<city> gamtos paveldo objektai", the phrase the law uses). Fetch the WIKITEXT, not the rendered page (rendered tables misalign rows). Read the footnotes: they record trees that fell or were delisted, which registers never do. Skipping this publishes dead trees.
+- **OSM `natural=tree` nodes** give tree-level coordinates for famous trees. Coordinates only, nothing about alive or access.
+- **Island or provincial government lists** where no register exists (e.g. Cabildo de Tenerife; JavaScript-rendered, needs a rendering fetch). A lead list, two-source bar applies. Islands cluster by car: give real driving distances, never call it a walk.
+- **Aerial imagery** (dated, open: PDOK in NL, IGN, PNOA, national orthophotos; Esri with capture date) for position when the tree is individually identifiable, continued presence when the layer is dated and recent, and absence (a gap where a crown was). Never species, age, or alive from stale layers. Never scrape Google tiles. Cite source and vintage.
 
-**A national register is often missing exactly what a page needs.** Poland's
-GDOS list carries no age, no girth and no names. Lithuania's municipal register
-403s to every fetcher. But the local-language Wikipedia frequently reproduces
-the CITY's own register document, with address, girth and designation year per
-tree, and its ids join straight to the register rows we already hold.
+## Age
 
-    Krakow    "Pomniki przyrody w Krakowie", joined by INSPIRE code
-              -> real measurements for 115 of 155 candidates, whole pass 55k
-    Warsaw    same article for Warsaw, 561 rows
-              -> addresses and girths for 6 candidates the register left bare
-    Vilnius   Lithuanian articles on the protected objects
-              -> confirmed or killed 8 of 10 candidates in one search each
+Missing never holds a tree back. An estimate is DERIVED and says what from: (1) girth plus a published growth rate for the species; (2) a documented planting date for THIS specimen; (3) a vague source repeated as vaguely ("several hundred years" never becomes "roughly 350"). A derived age is broad (`age_min` 300, `age_max` 500, `age_estimate` "roughly 400 years"); the working goes in `verify_notes`. **No bridge claims**: a park laid out in 1864 does not date its linden unless a source says this tree belongs to that planting. No basis: leave it empty, say so, the page asks the reader.
 
-**Fetch the WIKITEXT, not the rendered page.** The Warsaw pass found the
-rendered table scrambles row alignment under its image cells, which silently
-pairs a girth with the wrong tree.
+## How to work so a pass finishes
 
-**And the reason it beats the register even when the register has the fields:
-the footnotes.** A register records what is designated, and nothing in it says
-a tree has fallen down. The Wikipedia reproductions carry the removals inline,
-which is where every dead tree caught this week was caught: Krakow's two
-storm-felled monuments, Warsaw's Sowinski Linden (blown down 1986, not found in
-a 2004 survey, delisted 2012, and live on our site until it was), and Vilnius's
-two delisted entries. If you skip this step you will publish a dead tree.
+- **At most four named candidates per pass.** Long lists plus "find others" is what killed every stalled pass.
+- **Two attempts on a source, then move on** and note the host in `verify_notes`.
+- **Prefer searching to fetching**; fetch only for an exact figure. Every fetch has a hard timeout (`curl -m 20`, `timeout=` on urllib). Believe the hang list in your brief; report any new host that hangs.
+- **Depth first: finish one candidate, append it, then the next.** Append to the delivery file named in your brief the moment a tree verifies, valid JSON after every append.
+- **Stop after roughly 40 minutes** and report what you have. Never hold a city back on your own judgement. Return the filled-in cost line your brief asks for (your total token usage); a pass without it cannot be priced.
 
-Search terms that worked: "Pomniki przyrody w <city>", "<city> gamtos paveldo
-objektai", and the local-language phrase the law itself uses, which is usually
-better than any translation of "tree register".
-
-## Where no register exists: OSM tree nodes, and the island rules
-
-Found on the first island pass, Tenerife, 2026-08-17, and it generalises to
-anywhere rural.
-
-**OpenStreetMap tags individual famous trees as `natural=tree` nodes**, and for
-the Drago Milenario and both Vilaflor pines those nodes gave tree-level
-coordinates that matched the descriptive sources exactly. Free, fast, and it
-substitutes for the one thing a register normally provides and a tourist-board
-page never does: a pin. Query it through Nominatim or Wikidata rather than
-scraping. It is a COORDINATE source and nothing more; it says nothing about
-whether the tree is alive, reachable or worth the walk.
-
-**And where a region has no register, its island or provincial government often
-publishes a monumental-tree list anyway.** The Canaries have no approved
-regional catalogue (the 2006 draft was never adopted, and only Gran Canaria has
-an insular one, from 2021, which does not cover Tenerife). But the Cabildo de
-Tenerife runs its own monumental-tree portal, which named twelve trees island
-wide. Two notes: it is JavaScript-rendered, so plain curl returns nothing
-useful and a rendering fetch is needed; and a list like this is a lead list
-rather than a designation, so the two-source bar still applies in full.
-
-**Islands cluster by CAR, not on foot, and the page must say so.** Tenerife is
-80 km end to end. Its four trees are three separate stops: two pines 150 m
-apart at one viewpoint, then 15 to 20 km to the next. That is an honest day
-with a hire car and it is not a walk. Do not describe it as one, do not use
-"afternoon" for a set that spans the island, and put the real driving distance
-in the record. The clustering doctrine still holds, it just measures in
-kilometres by road instead of metres on foot.
-
-**Expect island passes to cost register-free rates.** Tenerife ran at ordinary
-web-research cost, not the 0.4k per tree a real register gives. The compensation
-is on the other side: nobody writes about these trees in English, so the
-competition for the page is close to nothing.
-
-## Age: estimate it when you can, ask the reader when you cannot
-
-A missing age never holds a tree back, and it never has. What changed on
-2026-08-16 is the other half: **estimating is allowed and wanted, and an
-estimate is not an invention.**
-
-An estimate is DERIVED and says what from. These count, in this order:
-
-1. **Girth plus a published growth rate for the species.** This is how every
-   register in the world dates a tree. Record the girth in `girth_cm` whether
-   or not you use it, ALWAYS, even when the tree already has an age: it is the
-   input the whole database is missing (13 trees of 1223 carry one), and it is
-   the field that turns dating into a script instead of a judgement.
-2. **A documented planting date for this specimen.** For this one, not for the
-   garden around it. See the trap below.
-3. **A vague age from a real source, repeated as vaguely as the source gave
-   it.** "Several hundred years" stays "several hundred years" and never
-   becomes "roughly 350".
-
-What is none of these is a number that feels right, and that is fabrication
-under hard rule 2 whatever it gets called.
-
-A derived age is BROAD. The honest output of a growth-rate calculation is a
-century-wide band: `age_min` 300, `age_max` 500, `age_estimate` "roughly 400
-years". Narrowing it to look confident is the same error as a faked pin.
-Put the working in `verify_notes` ("5m girth, oak on good soil"), never in
-`age_estimate`, which is a chip label.
-
-**The trap, and it will be right in front of you: the bridge claim.** "The
-park was laid out in 1864, so this linden is 160 years old" joins two true
-facts into a claim neither source makes. A park's planting date is the most
-tempting bridge there is, because it is always available and always plausible,
-and this exact move once shifted a pin sixty metres onto the wrong tree. It
-only works when a source says THIS TREE belongs to that planting. Otherwise
-leave the two facts as two facts and let the writer say the tree stands in a
-garden replanted in 1864 without saying it dates from it.
-
-**No basis at all: leave `age_estimate` empty, say so in `verify_notes`, and
-let the page ask the reader.** Somebody with a tape measure answers it in one
-message, and a correspondent is worth more than a number. Empty beats invented;
-empty no longer beats derived.
-
-## A search summary is a lead, never a source
-
-Caught on the Cyprus pass, 2026-08-17, and it is the most dangerous thing found
-this week because it does not look like an error.
-
-**WebSearch's own AI summary invented measurements.** For the Kyperounda olive
-it produced specific, plausible, citable-looking figures, 5 m tall and 8.10 m
-perimeter, and **neither number appears anywhere on the page when that page is
-fetched directly.** The pass noticed, discarded them, and recorded the
-discrepancy. Had it not, two fabricated measurements would have gone into a tree
-record with a real URL beside them, which is hard rule 2 broken by a tool rather
-than by a person, and it would have been almost impossible to spot afterwards.
-
-So, binding:
-
-- **Treat a search summary as a pointer to a page, not as evidence.** Any number
-  that reaches `verify_notes` or a tree record must have been seen on the source
-  itself.
-- **Quote figures from the fetched page**, not from the summary above it.
-- If a page will not load and only the summary has the figure, that figure does
-  NOT exist for our purposes. Record the tree without it and say why.
-
-The same pass also caught two arithmetic-shaped errors in real sources, a "60 m
-tall" olive whose true height is 6 m, and a page contradicting itself at 17 m
-versus 10 m for one laurel. Sources are wrong often enough that the physical
-sanity check in the register-pitfalls section above applies to everything, not
-only to registers.
-
-## Settling ACCESS from OpenStreetMap, not from a search (found on Ypres, 2026-09-02)
-
-**A technique worth keeping, because access is now the commonest reason a verified tree does not ship.** Three cities lost famous trees to hard rule 10 this week and a Leuven pass delivered four of twenty-six for that reason alone. Searching "is X open to the public" usually returns nothing decisive, and the honest fallback has been to record a lead and move on.
-
-An Ypres pass settled two candidates from OSM instead. The **Christusboom** sits on a golf course, which reads as private and would normally have been parked. An Overpass query found a **permissive, foot-designated path crossing the course about 20 metres from the tree**, so a visitor can genuinely walk to it, and it shipped with that in `access`. The same technique confirmed that Ravestraat is an ordinary public road where the register's farm-cross limes stand.
-
-**Why this works and where it stops.** OSM carries `access=`, `foot=`, `highway=footway` and `designation=` tags that are exactly the question hard rule 10 asks, and they are mapped by people who have stood there. It cut the other way too, in Leuven, where OSM tagged the access road to the Filosofenfontein grey alder as `access=private` and the thickest registered specimen in Belgium correctly stayed unpublished. **It is evidence, not proof**: a tag can be stale or wrong, so it settles a case rather than overriding a source that says otherwise, and it can never override the two absolutes, a location its source withholds and somebody's home.
-
-**Use it when a register gives you a tree and no access answer**, which in Flanders is most of them.
-
-## What actually predicts a city's yield: does anybody NAME its trees (measured over ten cities, 2026-09-02)
-
-Ten cities were opened from zero in one day and the results split cleanly in a way
-that has nothing to do with how many old trees a city has, how big it is, or how
-hard the pass worked. It comes down to one question, and it is worth asking BEFORE
-a brief is written rather than discovering it forty minutes in.
-
-**Does some body publish a list that names individual trees?**
-
-| Named by somebody | Trees | Who named them |
-|---|---|---|
-| Hamburg | 6 | de.wikipedia's "Liste markanter und alter Baumexemplare" |
-| San Francisco | 6 | the city's Landmark Tree ordinance, tree by tree |
-| Rio de Janeiro | 6 | tombamento and *imune ao corte* decrees, with numbers |
-| Manchester | 5 | an RHS-funded survey the council published |
-| Belfast, San Diego | 4 each | NIEA and TROBI; Balboa Park's own documentation |
-
-| Nobody named them | Trees | What the sources say instead |
-|---|---|---|
-| Marseille | 3 | six parks, all "old trees present", no specimen named |
-| Miami | 3 | collective hammock and garden descriptions |
-| Charleston | 2 | four sites, all "ancient live oaks", not one named |
-| Sarajevo | 0 | two famous avenues, nothing to stand at |
-
-**The rule that follows.** This project's whole method rests on somebody else having
-already distinguished one tree from its neighbours. Where a culture writes about a
-park's tree POPULATION rather than about specimens, a from-zero pass returns two or
-three however well it is briefed, and the shortfall is not the pass's fault.
-
-**So the first fifteen minutes of any from-zero city go to finding the naming body**,
-not to the parks: a council survey, a heritage decree, a champion register, an
-association's label, a Wikipedia list. Find one and the city works. Find none and
-expect three, brief for three, and say so in advance rather than aiming at six and
-reporting a miss. Manchester is the proof in both directions: it returned ONE tree
-until its council's own survey was found, then five.
-
-**The corollary for the queue:** a city's demand tells you nothing about its yield.
-San Francisco at 361k pageviews and Charleston at a fraction of that both had real
-old trees; only one of them had anybody who had written them down.
-
-## Why passes stall, and the four rules that came out of it
-
-Three verification passes died on 2026-08-17 with the same message, "no progress
-for 600s". Two of them were on Crete and one on Yakushima. What they had in
-common is worth more than the individual failures.
-
-**The proximate cause is a hanging network call.** The watchdog fires after ten
-minutes of silence, and a fetch that never returns produces exactly ten minutes
-of silence. All three stalled with their last words mid-reach: "Now the Plane
-Tree of Gortyn", "Wikidata has an entry. Let me pull its coordinates." A hard
-timeout on curl does not help when the hang is inside a fetch tool, which is why
-these rules are about EXPOSURE rather than about timeouts.
-
-1. **At most four named candidates per pass.** The passes that completed this
-   week (Copenhagen with three, Tenerife with four, every register-led city)
-   were short and specific. The two that died carried five or more names plus
-   an open invitation to find others. A fifth candidate is a second pass, not a
-   longer one.
-
-2. **Two attempts on a source, then move on and say so.** Record the host and
-   what it did in `verify_notes`, and go to the next tree. A tree with one
-   source and an honest note is worth more than a pass that never returns.
-
-3. **Prefer searching to fetching.** A search returns a summary quickly; a fetch
-   opens a connection to someone else's server and waits. Fetch when you need
-   an exact figure off a specific page, not to browse.
-
-4. **Append after every single tree, without exception.** This is the rule that
-   saved the week. Crete's first pass died having written two trees, and both
-   survived; its second died having written none. Yakushima's died at three, and
-   all three survived. Everything recovered from those three failures was
-   recovered because the file was already on disk.
-
-**Confirmed again on 2026-08-31, and this time the rule was broken by the brief
-rather than missing from it.** Three from-zero US passes were dispatched in one
-afternoon, on Charleston, Savannah and Philadelphia, and all three died with the
-same "no progress for 600s", each one mid-reach: "Now the churchyards", "Let's
-fetch that and botanic-garden", "start researching the top candidate". Every
-register-led pass dispatched the same day finished normally. The difference was
-not the country and not the subject: the three briefs named nine to twelve
-candidate sites each plus an invitation to look for more, against the four this
-rule allows, and rule 1 is written for exactly that. Savannah was then
-re-dispatched with the same over-long list and died a second time, which is as
-close to a controlled experiment as this project gets.
-
-Rule 4 paid for itself again in the same afternoon. The passes that died with a
-long list still banked what they had reached: Charleston's Angel Oak and Cistern
-Yard oaks, Philadelphia's Bartram ginkgo. Savannah, which died before its first
-tree, left nothing twice over. **So the exposure rule and the append rule are
-not alternatives.** The first decides whether a pass finishes; the second decides
-what survives when it does not.
-
-**And one framing rule for whoever writes the brief.** Crete's second pass spent
-its opening turns arguing with itself about whether it was the researcher or a
-dispatcher, and died before doing anything. A brief must say plainly: you are
-the verification pass, you do this research yourself, you dispatch nothing.
-
-## Fetch discipline
-
-Every fetch gets a hard timeout: `curl -m 20`, or `timeout=` on urllib. Your
-brief lists hosts known to hang or block, with workarounds; believe it. A host
-that hangs on you once: note it in your report so it joins the blocklist.
-
-## Delivery: append as you go, never only at the end
-
-Passes have died mid-run and lost everything they had not written down. Append
-each tree to the delivery file named in your brief THE MOMENT it verifies,
-valid JSON after every append.
-
-**Do the work yourself. Do not dispatch sub-agents.** A Geneva pass on
-2026-08-17 delegated a side question about one park to a child agent, waited on
-it, and was killed by the harness watchdog having banked nothing. The child's
-research came back fine and was useless, because the pass that needed it was
-gone. A second attempt, told to bank immediately, died the same way. Delegation
-inside a pass buys nothing here: you are already the specialist, and every minute
-spent waiting on a child is a minute of no output, which is exactly what gets a
-pass killed.
-
-**So work one candidate through to done before starting the next.** Researching
-all of them in parallel and writing at the end is what makes a pass worth
-nothing when it is cut off: a Padova pass died after 25 fetches across eight
-candidates and left an empty repository, while the same effort spent depth-first
-would have banked three finished trees. Finish one, append it, then move on.
+## Delivery
 
 One object per tree:
 
@@ -417,93 +69,20 @@ One object per tree:
   "age_estimate": "roughly 400 years",
   "age_min": 300, "age_max": 500,
   "girth_cm": 520,
+  "height_m": 24,
   "location": {"address": "...", "latitude": 0.0, "longitude": 0.0, "neighbourhood": "..."},
   "verified_sources": ["url1", "url2"],
-  "access": "Free / paid entry / restricted, with the honest caveat if any",
+  "official_register": {"name": "the authority's register", "url": "its page for THIS tree"},
+  "access": "Free / paid entry / restricted, with days or hours where published",
   "transport": "Nearest station or stop + walk time",
   "location_precision": "confirmed | approximate",
-  "location_site": {"name": "only for a small named site, see point 4", "radius_m": 30},
+  "location_site": {"name": "only for a small named site", "radius_m": 30},
   "curation_status": "ai_generated | flagged",
-  "verify_notes": "Raw facts for the writer: what makes it remarkable, what it witnessed, disagreements between sources, the anecdote worth leading with. Bullet-style is fine."
+  "verify_notes": "Raw facts for the writer: what makes it remarkable, what it witnessed, disputes, the anecdote worth leading with."
 }
 ```
 
-**`girth_cm` is in that list because leaving it out of it did not work.** The age
-section below has asked for it since 2026-08-16 and three consecutive passes still
-delivered nothing: Toronto recorded one of four, Singapore none of eight from
-NParks pages that publish them, Bratislava none. Advice in prose gets read and
-forgotten; a field in the object you are filling in gets filled in. Record it
-whenever any source gives a girth, a circumference or a diameter, converting
-diameter with pi, and do it even when the tree already has an age. It is the input
-the whole database is short of, 33 trees of 1299 carry one, and the day there are
-a few hundred the age estimating becomes a script instead of a judgement made one
-tree at a time. Where the figure is a buttressed mass or a stem count rather than
-a trunk, still record it and say so in `verify_notes`, so the writer cannot repeat
-it as a trunk measurement.
-
-`verify_notes` is the writer's only input besides the sources, so put the good
-material there: the surprising fact, the history, the dispute. Facts only, no
-polished prose.
-
-`age_estimate` is a chip label, not a sentence: "roughly 400 years", "over a
-century", "not documented". Put any caveat, dispute or reasoning in
-`verify_notes` for the story to carry instead. Paris shipped five trees on
-2026-08-08 whose `age_estimate` was a full clause ("not documented;
-comparable Corylus colurna elsewhere in Paris date to the 1860s-1880s"),
-which reads as prose where the page needs a scannable fact.
-
-Candidates that fail only on evidence or count go to the `leads` list of
-`data/leads/<slug>.json` (create or extend it, keep existing entries); trees
-that must never ship (dead, private, withheld location, not a collectible
-point) go to its `blocked` list with the reason in one line.
-
-## Stop condition
-
-Report what you have after roughly 40 minutes; do not run to completeness.
-Never hold a whole city back on your own judgement: deliver what verifies,
-record the rest. With your report, return the filled-in cost line your brief
-asks for (your total token usage), so the daily retro can price the pass.
-
-## Aerial imagery as evidence (standing tool, Hidde's idea, 2026-08-09)
-
-Openly licensed aerial imagery is a legitimate source for three things, and
-only three:
-1. **Position**, when the tree is individually identifiable: a distinctive
-   crown (the only evergreen giant in a bare winter park), a documented
-   structure at the trunk (Baarn's Pekingtuin oak was CONFIRMED because its
-   ~6m protective ring is visible in the national aerial survey), a lone tree
-   in a plaza. "A big crown roughly where the park is" identifies nothing.
-2. **Continued presence**, when the imagery is DATED and recent: a standing
-   crown in this year's national survey is real evidence; undated commercial
-   basemaps prove nothing about today.
-3. **Absence**: a stump or bare gap where a documented large crown should be
-   is a strong death signal worth chasing in news sources.
-
-What imagery can NEVER do: species, age, or "alive today" from undated or
-stale layers. It is one source among the two, never both.
-
-Where to look, in order: national open orthophoto programmes, which are dated
-and licensed (Netherlands: PDOK Actueel_orthoHR WMS, 7.5cm, yearly; France:
-IGN; Spain: PNOA; Denmark and others have equivalents); then Esri World
-Imagery (check the capture-date metadata per tile area). Google Maps/Earth
-tiles are ToS-restricted for automated fetching: do not scrape them.
-Always cite the imagery source and its capture vintage in the evidence.
-
-## monumentaltrees.com as a verification source (codified 2026-08-09, Hidde's push)
-
-Hard rule 1 forbids their content (photos, text, bulk data) and explicitly
-permits fact verification. In practice that means three allowed uses:
-1. **Second source**: a tree found elsewhere (register, news, institution) may
-   be corroborated by its monumentaltrees record for existence, species,
-   location and measurements. Never the sole source, and never the discovery
-   engine: we find trees elsewhere, they may confirm them.
-2. **Photo identity**: LOOK at their photos to confirm which tree a candidate
-   image shows. Never republish or download their imagery.
-3. **Names and measurements as cross-checks.**
-
-Two hard edges: their server 403s automated fetches, deliberately, so this is
-measured single-page browser-session work, never bulk scraping; and wholesale
-extraction of their database is forbidden by their disclaimer and by EU
-database right, whatever the technical route. The long play is Hidde's
-outreach mail to the site's owner (OUTREACH.md tier 3c), which can turn the
-grey edge into a partnership.
+- **`girth_cm` whenever any source gives a girth, circumference or diameter** (diameter times pi), even when the tree has an age. A buttressed mass or stem count is still recorded and labelled as such in `verify_notes`.
+- `age_estimate` is a chip label ("roughly 400 years", "over a century", "not documented"), never a sentence.
+- `verify_notes` is the writer's only input besides the sources: facts, not prose.
+- Candidates that fail only on evidence or count go to `leads` in `data/leads/<slug>.json` (extend, keep existing entries); trees that must never ship (dead, private, withheld, not a collectible point) go to `blocked` with a one-line reason.
