@@ -2,6 +2,13 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 session: 13 felled Dutch trees off the site
+
+- **Retired 13 trees the national register marks Dood/geveld**, each written from that exact LRMB row (same coordinates and address) but citing only the register's home page, so preflight's number check never saw them. The inspection layer confirms 12: Roosendaal roo_003 (felled 2014), roo_005 (gone 2016), roo_007 (felled 2005), roo_010 (dead 1998, the lime a 09-08 session had put back); Sittard-Geleen sit_003, sit_004, sit_006 (all emergency fellings 2010 to 2012), sit_008 (felled 2008); Haarlemmermeer hrl_001, hrl_003 (an apartment block at the address), hrl_004; Zaanstad zaa_009 (felled 2014). Emmen's Tiger Oak (emm_004) has no felling record: status 5, last inspection 2019 noted decay inside the trunk, nothing since; retired on the register's own status, and the lead says to restore it if a reader's dated photo shows it standing.
+- City copy rewritten for the new counts and oldest trees; three remaining stories (roo_001, roo_008, sit_002) no longer describe felled neighbours as standing. Haarlemmermeer's hero and Roosendaal's oldest-tree pointer moved to living trees.
+- **preflight `check_register_says_the_tree_is_gone()` now also matches by pin**: a status-5 LRMB row within 5 m whose genus (from the Dutch name via data/genus-names.json) does not contradict ours fails unless the tree's verify_notes names that nr. First catch was a false alarm, Enschede ens_007: nr 1678433 was closed as a duplicate of the live 1678435; noted and kept.
+- **FOR HIDDE (a decision):** Sittard-Geleen and Zaanstad fell to three trees, and `check_no_new_thin_places()` refuses that. I added both to data/thin-places-frozen.json as named exceptions (reason written there), because the pause says "no new place" and a dead tree must not ship. If you would rather the pages went, delete those two entries and retire the pages. **Oss is still open from the night run**: four register-dead trees are live there because that run reverted instead. The same exception route would fix it today.
+
 ## 2026-10-12 session: mail signed for ancienttrees.app
 
 - Every mail we send (outreach, ambassador invitations and heads-ups, contributor replies, the weekly and waitlist mails) now leaves through Resend, signed with a DKIM key for ancienttrees.app, instead of through Gmail unsigned. Yahoo had refused our mail for missing DKIM, and other providers could file it as spam silently. Test mail read back: dkim=pass (ancienttrees.app), spf=pass. DMARC record p=none added at TransIP beside the Resend records.
