@@ -28,6 +28,17 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_MD = os.path.join(ROOT, "DATA.md")
 ZONE_NAME = "ancienttrees.app"
+
+# Hidde, 2026-10-12: "the grouping pages ... are no longer interesting neither
+# are the pages that lose and win unless we have google coming back again. so
+# lets simplify the daily digest for now." With Google at its post-demotion
+# floor (~50 impressions a day) these blocks rank a handful of impressions and
+# read as movement when they are noise. Off: the grouping-pages table, the
+# Climbing / Slipping / Newly ranking tables, and seolearn's "what converts"
+# pass (one page cleared its bar). Everything else is unchanged; the language
+# test stays because langcheck.py reads it. Set True when Search Console shows
+# the site recovering, which is also when recovery mode ends.
+GOOGLE_DETAIL = False
 PH_BASE = "https://eu.posthog.com"
 ACCOUNT_TAG = "949aa102070e5f296c9cc0d5bc1e1891"  # Cloudflare account for Web Analytics (RUM)
 
@@ -1039,8 +1050,8 @@ def gsc_section(gsc, under_table=None):
         *recovery_lines(pages),
         *enrichment_lines(pages),
         *demand_lines(pages, pairs),
-        *learning_lines(pages, pairs),
-        *grouped_pages_lines(pages, pairs),
+        *(learning_lines(pages, pairs) if GOOGLE_DETAIL else []),
+        *(grouped_pages_lines(pages, pairs) if GOOGLE_DETAIL else []),
         *copy_test_lines(),
         *judgement_lines(),
         *language_lines(pages),
@@ -3385,7 +3396,7 @@ def main():
         gsc_data = fetch_gsc(today)
         gsc_text, gsc_latest = gsc_section(gsc_data, under_table=bing_text)
         blocks.append("**Where demand is going to waste**\n\n" + gsc_text)
-        trend = trend_section(gsc_data)
+        trend = trend_section(gsc_data) if GOOGLE_DETAIL else ""
         if trend:
             blocks.append(trend.strip())
     except Exception as e:
