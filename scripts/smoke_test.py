@@ -130,6 +130,9 @@ f.addEventListener('load', function() {
       d.querySelectorAll('input, select, textarea').forEach(function(el) {
         var cs = w.getComputedStyle(el);
         if (cs.display === 'none' || cs.visibility === 'hidden') return;
+        // A field inside a hidden ancestor (the desktop header search on a
+        // phone, .only-desktop) computes display:block yet has no box.
+        if (!el.getClientRects().length) return;
         if (el.type === 'hidden' || el.type === 'checkbox' || el.type === 'radio'
             || el.type === 'range' || el.type === 'color' || el.disabled) return;
         var fs = parseFloat(cs.fontSize);
