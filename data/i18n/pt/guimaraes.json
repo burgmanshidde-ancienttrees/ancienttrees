@@ -1,0 +1,96 @@
+{
+ "_note": "pt overlay for guimaraes, written 2026-10-12 from data/cities/guimaraes.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Guimarães",
+ "title": "Árvores monumentais de Guimarães: as 8 mais notáveis",
+ "meta_description": "Oito árvores classificadas em Guimarães: a oliveira de um milagre de 1342, camélias da Rota das Camélias, um carvalho de mosteiro e dois gigantes na Penha.",
+ "intro": "Guimarães apresenta-se como o berço de Portugal, e as suas árvores mais antigas guardam essa história noutro registo. Dois plátanos abaixo do Paço dos Duques são anteriores à reconstrução do palácio, nos anos 1930. Uma oliveira no claustro de Nossa Senhora da Oliveira carrega a lenda que deu nome à igreja, e dezoito camélias no Palácio Vila Flor põem Guimarães na Rota das Camélias. Na Penha, depois de um carvalho de mosteiro sem data, o topo do teleférico guarda uma pseudotsuga e um eucalipto gigante. A oeste, um pinheiro-manso com uma copa mais larga do que alta ocupa uma rotunda.",
+ "question_title": "Qual é a árvore mais antiga de Guimarães? (195 anos)",
+ "question_meta": "A árvore mais antiga de Guimarães com idade medida é uma camélia do Palácio Vila Flor, de cerca de 1830. Um carvalho sem data talvez seja mais velho.",
+ "question_answer": "A árvore mais antiga de Guimarães, segundo qualquer medição publicada, é uma das dezoito camélias dos jardins em socalcos do Palácio Vila Flor, plantada por volta de 1830, a que o registo português de árvores dá cerca de 195 anos. Os dois plátanos abaixo do Paço dos Duques, com cerca de 165 anos, e os cedros-do-himalaia do cemitério municipal, um deles datado com cerca de 115, são as idades confirmadas que se seguem. Uma árvore desta página é provavelmente mais velha do que todas e não entra na contagem: o carvalho de Santa Marinha da Costa, que o guia da própria pousada diz ter vários séculos e que ninguém datou individualmente. Uma oliveira no claustro de Nossa Senhora da Oliveira carrega a lenda de 1342 que deu nome à igreja, mas nenhuma fonte liga esse tronco a esse ano e o registo não lhe atribui idade.",
+ "question_context": "As camélias, os plátanos e o cedro datado vão buscar as idades à mesma classificação de 2011 do instituto florestal português, e é por isso que concordam entre si dentro de uma margem plausível. As camélias valem a caminhada seja qual for o número: Guimarães e o resto do Minho promovem-se, com razão, ao longo de uma Rota das Camélias, e dezoito árvores numa só propriedade são uma coleção e não uma curiosidade. O carvalho de Santa Marinha da Costa é a lacuna interessante. As árvores do mosteiro foram classificadas em conjunto em 1940, e os 290 anos do conjunto, medidos em 2006, abrangem seis espécies, entre elas um eucalipto que não pode estar ali há tanto tempo, por isso o número nada diz sobre o carvalho. A oliveira é a outra pergunta em aberto. Segundo a tradição da cidade, em 1342 um mercador pôs um crucifixo junto a uma oliveira do largo, morta havia muito, e três dias depois ela voltou a ficar verde, o milagre que deu nome à igreja, ao bairro e ao brasão da cidade. A lenda está bem documentada. Que a árvore de hoje seja a do milagre, não está, por isso a idade fica em aberto em vez de sugerida.",
+ "faq": [
+  {
+   "q": "Qual é a árvore mais antiga de Guimarães?",
+   "a": "Pela idade medida, uma das dezoito camélias dos jardins do Palácio Vila Flor, plantada por volta de 1830. O carvalho de Santa Marinha da Costa é provavelmente mais velho, mas ninguém o datou à parte."
+  },
+  {
+   "q": "Dá para ir a pé de umas árvores às outras?",
+   "a": "Às primeiras quatro, sim. Os plátanos, a oliveira, o jardim das camélias e os cedros do cemitério ficam dentro e logo à saída do centro histórico classificado pela UNESCO, a menos de três quilómetros de uma ponta à outra. O carvalho do mosteiro fica a 25 minutos de subida para leste, pela encosta da Costa, o pinheiro de Silvares fica 4,5 km a oeste, de autocarro urbano, e a pseudotsuga e o eucalipto do Monte da Penha visitam-se juntos pelo teleférico, numa saída à parte até ao alto da montanha."
+  },
+  {
+   "q": "A visita é paga?",
+   "a": "Quase nenhuma. Os plátanos, as camélias, os cedros, o pinheiro de Silvares e as duas árvores do Monte da Penha estão em terreno público aberto, e os jardins do mosteiro estão abertos a visitantes e não só a hóspedes. O teleférico para o Monte da Penha é pago, mas o topo em si não tem portão nem bilhete. A única exceção em terra é a oliveira, a que se chega pelo claustro do Museu de Alberto Sampaio, com um acréscimo de um euro ao bilhete do museu."
+  },
+  {
+   "q": "Qual tem a melhor história?",
+   "a": "A oliveira do claustro de Nossa Senhora da Oliveira. Segundo a tradição da cidade, em 1342 um mercador pôs um crucifixo junto a uma oliveira morta havia muito, e três dias depois ela voltou a ficar verde, o milagre que deu nome à igreja e a todo este bairro de Guimarães."
+  }
+ ],
+ "strings_note": "Português europeu. Topónimos na grafia local (Guimarães, Paço dos Duques, Palácio Vila Flor, Santa Marinha da Costa, Monte da Penha, Santuário da Penha, Teleférico de Guimarães, Museu de Alberto Sampaio, Pousada Mosteiro de Guimarães, Silvares, Atouguia). Nomes de espécies reutilizam as formas já fixadas noutras páginas em português (Plátano, Oliveira, Camélia, Cedro-do-himalaia, Carvalho-alvarinho, Pseudotsuga, Eucalipto-comum); Pinheiro-manso é novo.",
+ "trees": {
+  "gui_001": {
+   "name": "Os Plátanos do Paço dos Duques",
+   "species": "Plátano (Platanus x acerifolia)",
+   "age_estimate": "cerca de 165 anos",
+   "access": "Gratuito, no relvado exterior abaixo das muralhas do palácio, fora da entrada paga do museu",
+   "transport": "No centro histórico, a pé",
+   "story": "Quase tudo o que se vê aqui é mais novo do que aquilo que cresce por baixo. As obras do Paço dos Duques começaram em 1420, para D. Afonso, filho ilegítimo do rei D. João I e pouco depois primeiro duque de Bragança, e nunca chegaram ao fim. O palácio caiu em ruína depois de 1616, quando a própria Guimarães foi entregue a um nobre espanhol, e no século XIX o que restava servia de quartel de infantaria. O edifício que os turistas hoje fotografam, com os telhados íngremes de ardósia e as galerias de madeira, é em grande parte uma reconstrução de 1937 a 1959: o Estado Novo acrescentou dois pisos inteiros à ala da frente e um terceiro às laterais, e fez de uma carcaça o monumento nacional que queria dar a Guimarães, a cidade que se diz berço de Portugal. Estes dois plátanos, no declive relvado abaixo das muralhas, são décadas mais velhos do que essa obra. Medidos com 150 anos em 2011, já tinham troncos grossos quando subiram os andaimes. O maior, com quatro metros e meio de perímetro, chega aos vinte e nove metros de altura; o companheiro, a poucos passos, é um número abaixo, com vinte e dois. Ponha-se entre os dois e olhe para o palácio: as árvores são a única parte da vista que ninguém teve de reconstruir."
+  },
+  "gui_002": {
+   "name": "A Oliveira de Nossa Senhora da Oliveira",
+   "species": "Oliveira (Olea europaea)",
+   "age_estimate": "desconhecida, o registo não indicou valor na medição de 2021",
+   "access": "Pago, acréscimo de 1 euro ao bilhete do Museu de Alberto Sampaio para o claustro, de terça a domingo, 10:00-18:00",
+   "transport": "No centro histórico, a pé",
+   "story": "Uma oliveira morta deu nome a uma igreja, a um bairro inteiro e a um ramo do brasão de Guimarães. Segundo a lenda que ainda aqui se conta, um mercador chamado Pero Esteves trouxe da Normandia um crucifixo em 1342 e colocou-o junto a uma oliveira que estava morta no largo, com o tronco seco havia muito. Três dias depois, diz a história, a oliveira voltou a ficar verde. Guimarães atribuiu o milagre a Nossa Senhora, e a colegiada atrás do largo chama-se desde então Nossa Senhora da Oliveira, com um ramo de oliveira no brasão da cidade. Uma camada mais antiga da mesma lenda recua a plantação ainda mais, até ao rei visigodo Wamba e a um ramo alegadamente trazido do Horto das Oliveiras, em Jerusalém. O que se pode dizer com honestidade é mais estreito: a árvore que hoje cresce no claustro românico da igreja, com dois metros e noventa de perímetro, não está documentada como essa planta em concreto, e o registo português de árvores, que a mediu pela última vez em 2021, não lhe atribuiu idade nenhuma. Sejam quantos forem os anos, está exatamente onde a história diz que devia estar, no claustro que pertenceu a um mosteiro fundado pela condessa Mumadona Dias em 949, à beira do largo onde nasceu o nome da igreja e, com ele, o de todo este bairro da cidade."
+  },
+  "gui_003": {
+   "name": "As Camélias do Palácio Vila Flor",
+   "species": "Camélia (Camellia japonica)",
+   "age_estimate": "cerca de 195 anos",
+   "access": "Gratuito, jardim público, de segunda a sábado 09:00-13:00 e 14:30-20:00, domingo 10:00-13:00 e 15:00-19:00",
+   "transport": "Cerca de 10 min a pé do centro histórico, na Av. D. Afonso Henriques",
+   "story": "Dezoito camélias plantadas em dois socalcos deste jardim já cá estavam décadas antes de o palácio ganhar a forma que hoje se visita. O registo dá-lhes cerca de 195 anos, plantadas na década de 1830, muito antes de o edifício ser ampliado na grande casa cujas salas mostram hoje arte contemporânea. A Camellia japonica chegou à Europa vinda da Ásia Oriental no século XVIII, como curiosidade de estufa para os ricos; quando estas foram plantadas, já era a flor com que uma família dizia que o seu jardim contava. Guimarães e o resto do Minho apegaram-se a ela mais do que a maior parte de Portugal, e é por isso que a região ainda se promove, sem grande exagero, ao longo de uma Rota das Camélias. As dezoito árvores dividem-se em dois grupos, nos canteiros de baixo e de cima de um jardim barroco de três socalcos, desenhado com sebes de buxo, fontes de pedra e uma vista de volta sobre a cidade; o jardim recebeu um prémio nacional de arquitetura paisagista em 2006. As camélias florescem nos meses mais frios, de janeiro a março, quando quase nada num jardim português está a fazer coisa alguma, o que deve explicar em parte por que razão uma família plantou dezoito e não uma."
+  },
+  "gui_004": {
+   "name": "Os Cedros-do-himalaia do Cemitério da Atouguia",
+   "species": "Cedro-do-himalaia (Cedrus deodara)",
+   "age_estimate": "cerca de 115 anos (só um dos três foi datado)",
+   "access": "Gratuito, cemitério municipal público, aberto no horário diurno de visitas",
+   "transport": "Cerca de 20-25 min a pé do centro histórico, ou uma curta viagem de autocarro",
+   "story": "Três cedros-do-himalaia guardam a entrada do cemitério municipal de Guimarães, tão altos que, vistos da estrada lá em baixo, parecem mais um marco na paisagem do que plantação de cemitério. O Cedrus deodara vem dos Himalaias ocidentais, do Afeganistão ao Nepal, onde pode passar dos mil anos e crescer até ao dobro da altura que estes atingiram; introduzido nos parques europeus no século XIX, tornou-se uma das coníferas habituais de uma alameda feita para impressionar. Um dos três, no parque de estacionamento do cemitério, foi medido com 100 anos em 2011 e classificado em junho desse ano, com um tronco de quatro metros e dezassete de perímetro. Os dois companheiros junto à entrada principal, com 4,10 e 4,47 metros de perímetro, entraram na classificação mais tarde e nunca foram datados à parte, embora o tamanho sugira a mesma geração e não uma plantação mais nova. Um cedro plantado à porta de um cemitério há um século era uma declaração sobre a permanência: sempre verde, famoso pela longevidade, de pé sobre um lugar feito para o contrário. Tem cumprido a promessa. Os três estão vivos e, ao contrário das campas à sua volta, continuam a crescer."
+  },
+  "gui_005": {
+   "name": "O Carvalho de Santa Marinha da Costa",
+   "species": "Carvalho-alvarinho (Quercus robur)",
+   "age_estimate": "vários séculos, nunca datado individualmente",
+   "access": "Gratuito. Os jardins pertencem à Pousada Mosteiro de Guimarães, o hotel instalado no antigo mosteiro, que descreve o seu parque como aberto a hóspedes e visitantes. Não há horário publicado, por isso conte entrar por um hotel em funcionamento.",
+   "transport": "Cerca de 1,5 km a leste do centro histórico, a subir a encosta da Costa, uns 25 minutos a pé ou uma curta viagem de táxi",
+   "story": "Ninguém pôs um número neste carvalho, e o número oficial não ajuda. O registo português classificou as árvores de Santa Marinha da Costa como um único conjunto em 1940 e dá a esse conjunto 290 anos, medidos em 2006, mas o conjunto tem seis espécies e uma delas é um eucalipto, árvore que só chegou a Portugal no século XIX. O número descreve uma coleção, não este tronco. O guia botânico da própria pousada diz apenas que o carvalho tem vários séculos. Ninguém foi mais longe, e esta página também não vai. Se souber mais, diga-nos.\n\nO que está à sua volta é mais fácil de contar. Um tanque circular de granito, do período barroco, rodeado de bancos de pedra e alimentado por um pequeno curso de água, ocupa a cerca murada de um mosteiro que os cónegos agostinhos tiveram durante uns trezentos e cinquenta anos, até os Jerónimos o receberem em 1528 e lá instalarem um colégio; em 1541, os seus graus valiam tanto como os de Coimbra. Um incêndio em 1951 levou os painéis de azulejo ao longo das celas e a escadaria de pedra da sala do capítulo. O Estado comprou a ruína em 1972, e Fernando Távora passou a década seguinte a fazer dela um hotel, obra que recebeu o Prémio Nacional de Arquitetura em 1987.\n\nO carvalho é mais velho do que o hotel e do que o incêndio, e cobre de sombra o tanque inteiro. Para lá disso, ninguém disse nada."
+  },
+  "gui_006": {
+   "name": "O Pinheiro-manso de Silvares",
+   "species": "Pinheiro-manso (Pinus pinea)",
+   "age_estimate": "cerca de 115 anos",
+   "access": "Gratuito, numa rotunda pública, acessível a qualquer hora",
+   "transport": "Cerca de 4,5 km a oeste do centro histórico; a linha 082 dos autocarros urbanos de Guimarães, o circuito Silvares-Pevidem, serve a localidade",
+   "story": "Este pinheiro é tão largo como alto e está no meio de uma rotunda. O registo português dá-lhe 26 metros de altura e uma copa com 26,4 metros de diâmetro, sobre um tronco de 3,8 metros de perímetro, por cima de um entroncamento da antiga ER 206, em Silvares. Tinha 100 anos quando o registo o mediu em 2011, o que lhe dá agora cerca de 115, e foi classificado de interesse público em junho desse ano. O concelho de Guimarães tem exatamente três pinheiros-mansos com esse estatuto, e este foi o primeiro.\n\nO Pinus pinea é o pinheiro de copa em chapéu-de-sol, a silhueta de todos os postais da costa portuguesa, e a forma não é enfeite. Vai largando os ramos de baixo à medida que sobe e empurra tudo para os lados, num chapéu achatado sobre uma coluna nua, um desenho para apanhar a luz por cima dos concorrentes e não ao lado deles. Numa plantação fá-lo com modéstia. Com luz por todos os lados, como aqui, leva-o ao limite, e é assim que uma árvore acaba com uma copa mais larga do que a altura.\n\nTambém dá pinhões, os que entram na cozinha portuguesa do Natal. As pinhas passam três anos no ramo antes de abrirem, uma longa espera para uma tarde de apanha.\n\nAqui não há portão nem bilhete. Há uma rotunda, e um chapéu-de-sol com cem anos de pé no meio dela."
+  },
+  "gui_007": {
+   "name": "A Pseudotsuga do Monte da Penha",
+   "species": "Pseudotsuga (Pseudotsuga menziesii)",
+   "age_estimate": "cerca de 90 anos",
+   "access": "Gratuito, terreno público aberto no Monte da Penha, junto ao Santuário da Penha. O parque do topo não tem portão nem bilhete.",
+   "transport": "Teleférico de Guimarães a partir do centro, cerca de 10 minutos para os 1,7 km do percurso, depois uma curta caminhada até ao recinto do santuário; também se chega de carro. Cerca de 2,9 km do centro histórico em linha reta.",
+   "story": "O teleférico de Guimarães sobe 1,7 quilómetros pelo Monte da Penha em cerca de dez minutos e, lá em cima, junto ao santuário art déco, está uma pseudotsuga que ninguém tinha catalogado à parte até o registo de árvores do próprio concelho dar por ela, em 2021.\n\nÉ fácil confundi-la com a enorme classificação florestal de 790 exemplares que cobre a maior parte do arvoredo da Penha e que não se visita como árvore individual. Esta é diferente: classificação individual, processo próprio, ordem de proteção própria. Tem 4,8 metros de perímetro e 35 metros de altura, o suficiente para ter entrado em 2022 na lista final da Árvore do Ano de Guimarães.\n\nA pseudotsuga é nativa da costa do Pacífico da América do Norte e foi plantada por toda a Europa a partir de meados do século XIX, pela madeira e, em cumes como este, pela paisagem que uma conífera de crescimento rápido dá depressa. O registo dá a este exemplar cerca de noventa anos, mas ninguém publicou o ano em que foi plantado, por isso tome o número como leitura do registo e não como certeza.\n\nA vizinha, um eucalipto gigante a cento e setenta metros, partilha o mesmo cume e a mesma história: esquecida, depois encontrada. Juntas, fazem do Monte da Penha duas paragens em vez de uma."
+  },
+  "gui_008": {
+   "name": "O Eucalipto Gigante do Monte da Penha",
+   "species": "Eucalipto-comum (Eucalyptus globulus)",
+   "age_estimate": "cerca de um século",
+   "access": "Gratuito, terreno público aberto no Monte da Penha. O parque do topo não tem portão nem bilhete.",
+   "transport": "Teleférico de Guimarães a partir do centro, cerca de 10 minutos para os 1,7 km do percurso, depois uma curta caminhada até ao recinto do santuário; também se chega de carro. Cerca de 2,9 km do centro histórico em linha reta e a cerca de 170 m da pseudotsuga.",
+   "story": "Sete metros e cinco centímetros de perímetro à altura do peito, trinta e nove metros de altura, uma copa com vinte e nove metros de largura: o eucalipto gigante do Monte da Penha tem uma escala que faz o santuário ao lado parecer modesto.\n\nO eucalipto-comum não é nativo de Portugal. Veio da Austrália no século XIX pela madeira e está hoje naturalizado nas encostas de todo o país, mas poucos exemplares chegam a este tamanho. Quando a autoridade florestal portuguesa o classificou como árvore de interesse público, em 2020, traçou uma zona de proteção de cinquenta metros à volta da base, com proibição de movimentos de terras e escavações nas imediações, o tipo de medida normalmente reservado a uma árvore que as autoridades têm mesmo receio de perder.\n\nJá era um marco antes de a papelada chegar. A imprensa da altura da classificação descreve-o como um exemplar admirado por quem visita a Penha, e em 2022 entrou na lista final da Árvore do Ano de Guimarães, ao lado da pseudotsuga que está a cento e setenta metros, a outra metade de um cume que afinal guarda duas árvores de tamanho invulgar e não uma.\n\nChega-se às duas pelo teleférico de Guimarães, dez minutos de subida desde o centro, ou de carro."
+  }
+ }
+}
