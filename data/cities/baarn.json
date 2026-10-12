@@ -358,10 +358,16 @@
       "access": "Free. Municipal lawn in front of the town hall, open ground beside a public road, reachable at any hour.",
       "transport": "Baarn railway station, about a 5 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/brn_008-the-town-hall-plane.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+        "sighting_id": "c067dcde-0600-4d9b-b42c-110224aae671",
+        "note": "Photographed by a reader and sent through the app (2026-10-11); a viewing pass approved it on 2026-10-12: Whole tree, in leaf, daylight, single large plane on open lawn before an office-style building; fills the frame, crown and trunk readable. Species seen: plane: patchwork flaking bark, palmate lobed leaves. Fits the description: single large plane on an open lawn in front of the town hall building, 26 m class crown.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -370,7 +376,21 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677447",
         "url": null
-      }
+      },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/brn_008-the-town-hall-plane-96eaf812.jpg",
+          "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+          "attribution": null,
+          "status": "approved",
+          "width": 1200,
+          "height": 1600,
+          "source": "contributor",
+          "contributor_user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+          "sighting_id": "96eaf812-a172-46c5-bc50-e84c565bf580",
+          "note": "Photographed by a reader and sent through the app (2026-10-11); a viewing pass approved it on 2026-10-12: Trunk close-up of the same plane, same building and lawn behind; shows the bark and root flare. Species seen: plane: mottled cream and brown flaking bark, palmate leaves. Fits the description: thick buttressed trunk with patchwork bark on the lawn before the same building.. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+        }
+      ]
     }
   ]
 }

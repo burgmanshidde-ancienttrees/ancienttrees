@@ -18,6 +18,198 @@
    "agreed": null
   },
   {
+   "id": "sight:c067dcde-0600-4d9b-b42c-110224aae671",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Town Hall Plane",
+   "city": "Baarn",
+   "species": "London Plane (Platanus x acerifolia)",
+   "photo": "out/sightings/c067dcde-0600-4d9b-b42c-110224aae671.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Viewed: whole plane in leaf on the lawn before the building, daylight, fits the record. Hidde's own photograph, no credit; the tree had none, so it leads.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:96eaf812-a172-46c5-bc50-e84c565bf580",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Town Hall Plane",
+   "city": "Baarn",
+   "species": "London Plane (Platanus x acerifolia)",
+   "photo": "out/sightings/96eaf812-a172-46c5-bc50-e84c565bf580.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Viewed: trunk close-up of the same plane with the same building behind; added beside the lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:a0a58c4d-6a30-46f7-aec2-d6de44c6abcb",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Town Hall Plane",
+   "city": "Baarn",
+   "species": "London Plane (Platanus x acerifolia)",
+   "photo": "out/sightings/a0a58c4d-6a30-46f7-aec2-d6de44c6abcb.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Viewed: a tree-label sign, not the tree. It names Platanus hispanica, 26 m, 110 cm diameter (our record says 450 cm girth).",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:c006895e-2256-4094-bca9-6d940476cd21",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Lagunària de la Llotja",
+   "city": "Palma de Mallorca",
+   "species": "Norfolk Island Hibiscus (Lagunaria patersonii)",
+   "photo": "out/sightings/c006895e-2256-4094-bca9-6d940476cd21.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Viewed: a banyan-type Ficus with hanging aerial roots on the seafront, not a Lagunaria. Wrong tree or wrong species in our record; needs a check on site.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:7c8bec8f-b77b-415c-b4ec-a1589130c4a3",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/7C8BEC8F-B77B-415C-B4EC-A1589130C4A3.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:a4fa2700-1d89-4bf7-8f6e-0eafa60dc4d9",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/A4FA2700-1D89-4BF7-8F6E-0EAFA60DC4D9.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:ae06e952-7de0-46ab-aada-af2be3d5c8ca",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "Ginkgo in Tokyo",
+   "city": null,
+   "species": "Ginkgo",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/AE06E952-7DE0-46AB-AADA-AF2BE3D5C8CA.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Ginkgo"
+   },
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:d0d4ee1d-a0c3-4c4f-966f-ee01f7ecb592",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/D0D4EE1D-A0C3-4C4F-966F-EE01F7ECB592.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:038ab20e-98e0-4335-b154-08263b494999",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/038AB20E-98E0-4335-B154-08263B494999.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": null,
+   "reason": null,
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "sight:e0458b06-5210-49c5-9346-2380ad069f7f",
    "seen": "2026-10-05",
    "kind": "photo of a tree we map",
@@ -58,6 +250,47 @@
    },
    "verdict": "hold",
    "reason": "Viewed: bare deciduous forked tree, not an evergreen holm oak; rejected as wrong tree.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:d9c08351-03d1-4b51-a6ec-972f08d308e8",
+   "seen": "2026-10-05",
+   "kind": "a tree we do not map",
+   "tree": "London Plane in Paris",
+   "city": null,
+   "species": "London Plane",
+   "photo": "3f3fd52d-4665-41f3-bbaf-1cd863381908/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
+   "reader_note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
+   "reader_girth_cm": 450,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 48.8226040553664,
+      "lng": 2.3367012188551644,
+      "source": "paris-arbres-remarquables",
+      "designation": "Arbre remarquable de Paris",
+      "name": "Hêtre 'riversii'",
+      "species": "Fagus sylvatica",
+      "girth_cm": 420.0,
+      "height_m": 22.0,
+      "distance_m": 43.8
+     }
+    ]
+   },
+   "measure": {
+    "score": 0.879,
+    "via": "girth",
+    "note": "88% of the genus reference (512 cm, n=2, max 512)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": null,
+   "reason": null,
    "hidde": null,
    "agreed": null
   },
