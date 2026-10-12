@@ -1,0 +1,119 @@
+{
+ "_note": "nl overlay for den-bosch, written 2026-10-12 from data/cities/den-bosch.json via scripts/transbrief.py. Text only: coordinates, photos, licences, age ranges, best_time and walks stay in the English file.",
+ "city": "Den Bosch",
+ "title": "Monumentale bomen in Den Bosch: de 11 mooiste",
+ "meta_description": "De oudste boom van Den Bosch is een ~250 jaar oude linde op de heuvel van een verdwenen klooster in Rosmalen. Elf geverifieerde bomen, verhaal en route.",
+ "intro": "Den Bosch kweekte de meeste van zijn oudste bomen op zijn eigen afgebroken verdedigingswerken, maar de echte oudste staat ergens heel anders. Een wet uit de negentiende eeuw ontnam de vestingwallen hun militaire status, en de bastions werden bijna van de ene dag op de andere parken, goed voor drie van de vier groepen bomen in de stad. De vierde is een linde in Rosmalen, ongeveer 250 jaar oud, op de heuvel van een klooster dat in 1584 afbrandde. Elf geverifieerde bomen, van een kers in de middeleeuwse stadsmuur tot die linde op zijn verdwenen klooster.",
+ "question_title": "Wat is de oudste boom van Den Bosch? (~250 jaar)",
+ "question_meta": "De oudste boom van Den Bosch is een ~250 jaar oude linde in Rosmalen, op de heuvel van een in 1584 afgebrand klooster. Waar hij staat, plus tien andere.",
+ "question_answer": "De oudste boom van Den Bosch is de Annenborchlinde, op een kleine heuvel in de wijk Overlaet in Rosmalen, het enige zichtbare overblijfsel van de Annenborch, een huis van augustijner kanunnikessen dat in 1584 afbrandde. De boom zelf kwam later: hij werd ergens tussen 1750 en 1800 op de heuvel geplant, wat hem ongeveer 250 jaar oud maakt.",
+ "question_context": "De leeftijd van de linde komt uit een plantperiode van 1750 tot 1800, vastgelegd door bomenbieb.nl, en uit plaatselijke verhalen dat hij de zware storm van 1767 overleefde; die twee passen slecht bij elkaar, want een boom die pas in 1800 werd geplant kan geen storm in 1767 hebben doorstaan, en niemand heeft de twee cijfers met elkaar verzoend. Hij staat op de lage heuvel die het enige spoor is van de Annenborch, een huis van augustijner kanunnikessen dat in 1503 werd gesticht, in 1584 afbrandde en nooit werd herbouwd, nu midden in de woonwijk Overlaet in Rosmalen, sinds 1996 een deel van 's-Hertogenbosch. Daarmee is hij ouder dan de gewone plataan van ongeveer 170 jaar op het Sint Janskerkhof, het middelpunt van een aparte groep van vijf bomen een paar straten van de kathedraal. Tien andere bomen staan rond de historische binnenstad, verspreid over de bastionparken en de stervormige Pettelaarse Schans; de Annenborchlinde staat alleen in Rosmalen, een korte busrit naar het zuidoosten.",
+ "faq": [
+  {
+   "q": "Wat is de oudste boom van Den Bosch?",
+   "a": "De Annenborchlinde, ongeveer 250 jaar oud, op een kleine heuvel in Rosmalen die het enige spoor is van een klooster dat in 1584 afbrandde."
+  },
+  {
+   "q": "Zijn de oude bomen van Den Bosch gratis te bezoeken?",
+   "a": "Ja, alle elf staan in openbare parken, aan een openbare straat of op open gemeenschappelijke grond, en zijn altijd vrij toegankelijk."
+  },
+  {
+   "q": "Waarom groeien de oudste bomen van Den Bosch op oude vestingwallen?",
+   "a": "Een landelijke wet uit 1874 ontnam de Nederlandse stadswallen hun militaire status. De bastions van Den Bosch, niet meer nodig voor de verdediging, werden in de decennia daarna verlaagd en tot openbaar park gemaakt, en de bomen die toen werden geplant behoren tot de oudste geverifieerde exemplaren van de stad."
+  },
+  {
+   "q": "Wat is de weichselboom aan de Parklaan?",
+   "a": "Een weichselboom (Prunus mahaleb) van ongeveer een eeuw oud, die direct tegen de middeleeuwse stadsmuur van Den Bosch wortelt en in 2022 werd genomineerd voor de landelijke Bomen Top 50."
+  }
+ ],
+ "trees": {
+  "dbo_001": {
+   "name": "De weichselboom aan de Parklaan",
+   "species": "Weichselboom (Prunus mahaleb)",
+   "age_estimate": "ongeveer 100 jaar",
+   "access": "Gratis, zichtbaar vanaf de openbare straat",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 15 minuten lopen",
+   "story": "De weichselboom die aan de Parklaan tegen de oude stadsmuur van Den Bosch groeit, is een soort die de meeste Nederlandse tuiniers nooit bewust hebben geplant. Prunus mahaleb wordt meestal gekweekt als onderstam voor andere kersen, niet als solitaire boom, en dat is een deel van de reden dat deze, ongeveer een eeuw oud en groot genoeg om in 2022 genomineerd te worden voor de landelijke Bomen Top 50, opvalt in het monumentale-bomenregister van de gemeente. Weichselboom is de naam die het bomenregister van de gemeente gebruikt. Omdat hij direct tegen de middeleeuwse stadsmuur wortelt, heeft de boom zijn hele leven met één kant van zijn wortelstelsel tegen eeuwenoud metselwerk gedrukt gestaan in plaats van in open grond, een groeiplaats die maar weinig bomen van dit formaat ooit moeten verdragen. De muur zelf is zo'n vier eeuwen ouder dan de boom, een deel van de vestingwerken die ooit de hele oude stad omringden voordat het meeste ervan na 1874 tot de voorgeschreven hoogte werd afgegraven. De Parklaan is nu een rustige woonstraat, en de boom is vanaf de stoep te zien zonder dat je iemands tuin in hoeft."
+  },
+  "dbo_002": {
+   "name": "De Noorse esdoorn van Bastion Oranje",
+   "species": "Noorse esdoorn (Acer platanoides)",
+   "age_estimate": "ongeveer 120 jaar",
+   "access": "Gratis, openbaar park",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 15 minuten lopen",
+   "story": "Deze Noorse esdoorn groeit boven op twee meter dikke vestingmuren uit 1634, het jaar waarin het Staatse leger een nieuw bastion nodig had om een gat in de verdediging van Den Bosch te dichten, vijf jaar nadat het de stad had ingenomen. Het grootste deel van zijn werkzame leven stond er een windmolen op het bastion; toen die tussen 1880 en 1890 verdween, was landschapsarchitect J.M. Marechal de plek al aan het inrichten als een van de voormalige bastions die openbaar park werden, na de wet van 1874 die de stadswallen hun militaire status ontnam. Het gemeentelijke bomenregister schat deze esdoorn op ongeveer 120 jaar, de oudste individueel gemeten boom op het bastion van nu, met een omtrek van meer dan vier meter. Een tweede, iets jongere Noorse esdoorn groeit vlakbij op hetzelfde aarden werk, en waarschijnlijk zijn oudere bronnen het daarom oneens over welke soort bij welke boom hoort. Wat beide esdoorns delen is de grond onder hen: de aarden wal die ooit kanonvuur opving hoeft nu alleen nog gemaaid te worden, en de Bastionder, een ondergrondse tentoonstelling over de vestingwerken van de stad, ligt onder het park waarin de bomen staan."
+  },
+  "dbo_003": {
+   "name": "De plataan, linde en zilveresdoorn van Bastion Vught",
+   "species": "Gewone plataan, zomerlinde en zilveresdoorn (Platanus x hispanica, Tilia platyphyllos, Acer saccharinum)",
+   "age_estimate": "ongeveer 100 jaar",
+   "access": "Gratis, openbaar park",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 15 minuten lopen",
+   "story": "Drie monumentale bomen, een plataan, een linde en een zilveresdoorn, staan binnen veertig meter van elkaar op Bastion Vught, een van maar drie bastions die grotendeels intact over zijn van de zeventiende-eeuwse vestinggordel van Den Bosch. Staatse troepen braken tijdens het beleg van 1629, dat een einde maakte aan het Spaanse gezag over de stad, precies door dit stuk muur. De plek hield daarna nog tweeënhalve eeuw een militaire functie, tot de wet van 1874 die vestingwerken in het hele land degradeerde de muren liet verlagen en de grond vrijmaakte voor park, dezelfde omslag die aan de andere kant van de stad van Bastion Oranje een park maakte. De drie bomen zijn nu het hart van dat park. De plataan is met een stamomtrek van iets meer dan vier meter de grootste, de linde neemt met zijn kroon de meeste ruimte in, en de zilveresdoorn, een soort die om zijn snelle groei wordt gekozen en niet om een lang leven, heeft in dezelfde ruwweg honderd jaar toch een vergelijkbare maat bereikt. Alle drie steunen op het monumentale-bomenregister van de gemeente zelf en niet op een tweede, onafhankelijke bron, wat hier eerlijk wordt gemeld, al plaatsen de coördinaten van het register ze precies op het bastion."
+  },
+  "dbo_004": {
+   "name": "De populier van het Zuiderpark",
+   "species": "Balsempopulier (Populus balsamifera)",
+   "age_estimate": "ongeveer 90 jaar",
+   "access": "Gratis, openbaar park",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 20 minuten lopen of een korte busrit",
+   "story": "Met 33 meter is de balsempopulier in het Zuiderpark een van de hoogste individueel geregistreerde bomen in het gemeentelijke register dat heel Den Bosch beslaat. Hij is ouder dan het park om hem heen: het Zuiderpark ging pas in 1958 open en kreeg bij een herinrichting tussen 1993 en 1999 een bewust aangeplante kring sierpopulieren, maar deze boom, volgens het register zelf ongeveer 90 jaar oud, stond hier al voordat het park of die populierenkring bestond. Hij is een overlever van wat er vroeger op deze plek stond, geen lid van de latere aanplant. Balsempopulier wordt eerder gekweekt om zijn naar hars geurende voorjaarsknoppen dan als sierboom, en op een warme dag drijft die geur over het park voordat iemand de boom ziet die erachter zit. Geen tweede bron naast het register beschrijft de geschiedenis van deze ene populier, een eerlijk gat en geen ontbrekende voetnoot, maar zijn hoogte en omtrek zijn zelf een controleerbaar gegeven, geen bewering die op geheugen of schatting rust."
+  },
+  "dbo_005": {
+   "name": "De plataan van het Sint Janskerkhof",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ongeveer 170 jaar",
+   "access": "Gratis, openbaar plein naast de Sint-Jan",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 14 minuten lopen",
+   "story": "Zes meter en twaalf centimeter rond de stam, en geen andere boom op deze pagina komt binnen een meter daarvan. De plataan groeit op een plein dat het grootste deel van zijn geschiedenis een begraafplaats was. Het Sint Janskerkhof is precies wat de naam zegt, het kerkhof van de Sint-Jan, en de Bosschenaren werden hier begraven tot de grond vanaf 1860 werd geruimd. Het gemeentelijke register schat deze plataan op ongeveer 170 jaar, waarmee het planten binnen een jaar of tien van die ruiming valt: de begrafenissen stopten, het plein werd aangelegd, en iemand zette een plataan op de hoek met de Choorstraat. Sindsdien heeft hij de kathedraal naast hem langer in de steigers zien staan dan erbuiten, want de restauratie van de Sint-Jan loopt in campagnes van de negentiende eeuw tot nu. Het register beoordeelt zijn vitaliteit als verminderd, de middelste categorie en niet de slechtste, dus hij houdt stand maar floreert niet. Eén kanttekening bij het bewijs: het register is de enige bron die deze ene boom noemt. Een onderzoek uit 1996 naar de oudste bomen van de stad noemt platanen onder de soorten die deze buurt oud maken, zonder deze eruit te lichten. De bomen van de Casinotuin liggen een paar minuten lopen naar het zuiden."
+  },
+  "dbo_007": {
+   "name": "De paardenkastanje van de Casinotuin",
+   "species": "Paardenkastanje (Aesculus hippocastanum)",
+   "age_estimate": "ongeveer 100 jaar",
+   "access": "Gratis, openbaar park",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 16 minuten lopen",
+   "story": "Vijf paardenkastanjes staan binnen zestig meter van elkaar langs dit stuk van de Casinotuin, en dit is met duidelijke voorsprong de dikste: vier meter omtrek tegen zo'n drieënhalf voor de volgende. Dat is het herkenningsteken en meteen ook de grens ervan. Met vijf vergelijkbare bomen op een korte wandeling moet je stammen vergelijken in plaats van hem vanaf het pad aan te wijzen. De groep is een rij overlevers en geen vaste laan, want het park is al een van zijn monumentale kastanjes kwijtgeraakt, die op de hoek bij het Nachtegaalslaantje omging. Het register schat deze op ongeveer een eeuw en 24 meter hoog, met een vitaliteit die als verminderd staat genoteerd. Dat is gewoon bij oudere Nederlandse paardenkastanjes: de soort zit al twintig jaar onder de bloedingsziekte en de mineermot, en een exemplaar dat vier meter omtrek haalt zonder dat een van beide hem fataal wordt, heeft het goed gedaan. Geen andere bron dan het gemeentelijke register noemt deze ene boom, en daarom staat hij hier met een kanttekening en niet als gedocumenteerd. Twee weken in mei bloeit de hele groep tegelijk, witte kaarsen rechtop boven elke kroon, en dan doet de vraag welke stam het dikst is er helemaal niet meer toe."
+  },
+  "dbo_008": {
+   "name": "De plataan aan de Hekellaan",
+   "species": "Gewone plataan (Platanus x acerifolia)",
+   "age_estimate": "ongeveer 120 tot 150 jaar",
+   "access": "Gratis, bij de ingang van een openbaar park",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 17 minuten lopen",
+   "story": "Boom en Bosch, de plaatselijke bomenbeschermers, noemen dit de grootste en misschien de mooiste plataan van de stad. Over het tweede deel hebben ze gelijk en met het eerste zitten ze een paar honderd meter mis, want op het Sint Janskerkhof staat een dikkere plataan en het meetlint van het register zegt het. Ook over de leeftijd zijn de twee bronnen het oneens. Boom en Bosch schat zo'n 150 jaar, de gemeente noteert 120, geen van beide heeft een jaarringtelling achter de hand, dus hier staat de hele marge en geen winnaar. Waar niemand over twist is de stam: 4,8 meter omtrek, bij de parkingang aan de Hekellaan langs de zuidrand van de oude vestingwerken. De plataan was in de negentiende eeuw de standaardkeuze voor precies deze plek, bestand tegen verdichte grond, stadslucht en wortels waar doorheen gegraven wordt, en daarom staan Nederlandse parkingangen er vol mee en staan de oudste vaak waar een bastion werd geslecht. Het register beoordeelt zijn vitaliteit als normaal, het beste wat het geeft. Het is de enige plataan bij deze ingang en zonder twijfel de zwaarste stam hier; de dichtstbijzijnde boom van vergelijkbaar formaat is een paardenkastanje zo'n veertig meter verderop, een andere soort met een heel andere schors."
+  },
+  "dbo_009": {
+   "name": "De zilveresdoorn aan de Oude Dieze",
+   "species": "Zilveresdoorn (Acer saccharinum)",
+   "age_estimate": "ongeveer 110 jaar",
+   "access": "Gratis, openbaar park langs de oude gracht",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 15 minuten lopen",
+   "story": "De zilveresdoorn is een kwekerijboom, geplant om zijn snelheid en niet om een lang leven. Hij groeit snel, scheurt bij storm in de vork en is meestal verdwenen voordat hij honderd wordt. Deze staat op de gemeentelijke monumentenlijst met ongeveer 110 jaar, 25 meter hoog en een stam van bijna vier meter omtrek, langs de Oude Dieze, waar het oude binnenstadswater door de Casinotuin loopt. De soort komt uit de rivierdalen van het oosten van de Verenigde Staten, en een grachtoever in Den Bosch is ongeveer het dichtste wat een Nederlands park daarbij kan komen. Het blad verraadt hem: diep ingesneden, bleek en aan de onderkant bijna wit, zodat de hele kroon zilver omslaat zodra er wind over het water komt. Binnen zicht groeit geen andere esdoorn van deze soort, dus hier is niets om hem mee te verwarren. De vitaliteit staat als verminderd genoteerd, en het register is de enige bron die deze ene boom noemt; het onderzoek uit 1996 naar de oude bomen van de stad noemde esdoorns in deze buurt zonder aan te geven welke. Bastion Oranje met zijn twee Noorse esdoorns ligt zo'n zes minuten naar het westen."
+  },
+  "dbo_010": {
+   "name": "De eik van de Pettelaarse Schans",
+   "species": "Zomereik (Quercus robur)",
+   "age_estimate": "ongeveer 120 jaar",
+   "access": "Gratis, altijd toegankelijk erfgoedterrein (op een deel van het terrein zit een restaurant met eigen openingstijden)",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 30 minuten lopen, of korter met een bus richting Zuid/Paleiskwartier",
+   "story": "Het aarden werk onder deze eik is jonger dan de eik. De Pettelaarse Schans werd in 1959 herbouwd tot de stervorm waar bezoekers nu over lopen, tijdens de werken waarbij de Zuiderplas werd gegraven, en het register schat deze zomereik op ongeveer 120 jaar, wat betekent dat hij rond 1906 werd geplant en al volgroeid was toen de graafmachines kwamen. De plek zelf is veel ouder dan allebei. Hier stond in de zeventiende eeuw een fort dat in 1672 werd gesloopt, dus de ring van bomen op de wal volgt een plan dat gegraven, geslecht en opnieuw gegraven is. Dan de kanttekening, want die bepaalt of je de goede stam vindt: hierboven staan drie eiken binnen zo'n vijftig meter van elkaar. Dit is de dikste, met 4,21 meter omtrek, maar zijn buur op veertien meter haalt 3,52 en een derde, achtenveertig meter verderop, 3,92, en ze met het blote oog uit elkaar houden is echt lastig. Het betrouwbare ankerpunt is de plataan op twaalf meter, een andere soort met lichte, afbladderende schors die niemand voor een eik aanziet. Alleen het register noemt deze ene boom. De geschiedenis van het fort is goed gedocumenteerd, die van deze eik niet, en eind september ligt de grond onder alle drie hoe dan ook vol eikels."
+  },
+  "dbo_011": {
+   "name": "De populier van de Pettelaarse Schans",
+   "species": "Canadapopulier (Populus x canadensis)",
+   "age_estimate": "ongeveer 85 jaar",
+   "access": "Gratis, altijd toegankelijk erfgoedterrein (op een deel van het terrein zit een restaurant met eigen openingstijden)",
+   "transport": "Station 's-Hertogenbosch, daarna ongeveer 30 minuten lopen, of korter met een bus richting Zuid/Paleiskwartier",
+   "story": "Als de telling van het register klopt, werd deze populier rond 1941 geplant, onder de Duitse bezetting dus, en was hij nog een jonge boom toen in het najaar van 1944 de strijd om de stad hier langskwam. Bij welke plantfase hij hoort, staat nergens beschreven waar wij het konden vinden, en dat blijft hier een gat in plaats van dat we het invullen: het fort werd in 1672 gesloopt en in 1959 tot zijn huidige ster omgevormd, en deze boom is bijna twintig jaar ouder dan dat tweede jaartal. Met 28 meter is hij het hoogste dat op de wal staat, met een stam van 4,18 meter omtrek. De Canadapopulier is een kruising van de Europese zwarte populier en de Amerikaanse populier, gekweekt voor hout en windsingels en niet voor parken, en daarom schiet hij zo de hoogte in en is een exemplaar dat ongestoord oud mocht worden zeldzamer dan je bij zo'n alledaagse soort zou denken. Zeven meter verderop staat een tweede Canadapopulier die zichtbaar slanker is, net iets meer dan drie meter omtrek, dus de twee zijn zonder meetlint uit elkaar te houden. Het register noteert de vitaliteit van deze als verminderd. De drie eiken staan een eindje naar het westen op dezelfde wal, en dat maakt de Schans een wandeling en geen losse stop."
+  },
+  "dbo_012": {
+   "name": "De Annenborchlinde",
+   "species": "Hollandse linde (Tilia x europaea)",
+   "age_estimate": "ongeveer 250 jaar",
+   "access": "Gratis en openbaar. Staat op een kleine heuvel in een groenstrook tussen de huizen in de wijk Overlaet, met een hek dat alleen de wortels en de stam beschermt en bezoekers niet buitensluit.",
+   "transport": "In de wijk Overlaet in Rosmalen, een deel van 's-Hertogenbosch (Den Bosch); bereikbaar met de stadsbus, ongeveer 15 tot 20 minuten vanaf het centrum van Den Bosch.",
+   "story": "Het klooster brandde in 1584 af en werd nooit herbouwd. Wat ervan over is, is een lage heuvel in een woonwijk, met een linde erbovenop.\n\nDe Annenborch was een huis van augustijner kanunnikessen, in 1503 gesticht door een ridder genaamd Jan Bax, en tachtig jaar later nam het vuur het mee. De boom kwam daarna, ergens tussen 1750 en 1800 op de heuvel geplant, wat hem ongeveer 250 jaar oud maakt en, volgens plaatselijke telling, de oudste boom binnen de grenzen van 's-Hertogenbosch. Plaatselijke verhalen laten hem de zware storm van 1767 overleven, wat hem helemaal aan het vroege eind van die plantperiode zou zetten of de periode zelf naar achteren zou schuiven; de twee gegevens passen slecht bij elkaar en niemand heeft ze met elkaar verzoend.\n\nSindsdien heeft hij de akkers om zich heen zien veranderen in de wijk Overlaet, die zich rond de heuvel heeft gebouwd en niet eroverheen. Sinds de jaren zeventig is hij wettelijk beschermd. Rosmalen kent hem als de Annenborchboom en behandelt hem als een plaatselijke bekendheid: in juli 2022 gingen bewoners van zorgcentrum Annenborch, genoemd naar hetzelfde verdwenen klooster, in een stoet rolstoelen bij hem op bezoek.\n\nHij staat vrij en open. Het hek is er voor de wortels, niet om jou op afstand te houden.\n\nEr is geen omtrek of hoogte gepubliceerd. Als je hem meet, laat het ons weten."
+  }
+ }
+}

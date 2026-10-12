@@ -11433,6 +11433,14 @@
   "2026-10-12": [
    {
     "date": "2026-10-12",
+    "target": "nl-ghent-den-bosch",
+    "kind": "translate",
+    "tokens": 95000,
+    "trees": 0,
+    "note": "Dutch overlays for 19 trees, i18ncheck clean; seven English errors the translator flagged fixed in both languages"
+   },
+   {
+    "date": "2026-10-12",
     "target": "nl-enschede",
     "kind": "translate",
     "tokens": 74000,
