@@ -11494,6 +11494,22 @@
     "tokens": 137118,
     "trees": 0,
     "note": "enrichment: LRMB girth/height/pin/season on 2 trees; ass_002 retired (register: dead/felled), city copy rewritten around the Beilen oak; lrmb_fill 3 more Dutch trees, no agent"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "matera",
+    "kind": "enrich",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work, no agent: RAMI record and measurements on mat_004 from its own sources; 5 gaps dead-ended (no striking season, no pin or access evidence)"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "leipzig",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "deepen: 0 delivered, 13 leads filed to data/leads/leipzig.json; no authority measurements or per-tree register records reachable for Leipzig Naturdenkmale"
    }
   ]
  },
