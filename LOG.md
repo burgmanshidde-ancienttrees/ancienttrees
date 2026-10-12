@@ -2,6 +2,10 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 night run (window from 18:55 UTC), 7-day visits 1745 / 2475 views
+
+Rung 1: three of our own Baarn Town Hall Plane photographs (brn_008) viewed and held, since our own photographs never publish and the tree already has one. Six more unjudged submissions (five Tokyo leads, one Paris plane) written as leads, photographs not viewable here. Rung 4 enrichment, Matera: mat_004 date palm got its RAMI record, girth 204 cm and height 7 m; the other five gaps (two seasons with no striking moment, pin and access without evidence) recorded as dead ends. No tree added; no verify or write pass dispatched this stretch. Smoke test red since 2026-10-12 was not investigated.
+
 
 ## 2026-10-12 evening, session: Hidde's app test, round two
 

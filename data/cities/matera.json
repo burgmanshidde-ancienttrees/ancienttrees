@@ -163,7 +163,8 @@
       },
       "verified_sources": [
         "RAMI (Registro degli Alberi Monumentali Italiani), record #11911, https://ilregistrodeglialberi.it/11911-palma-da-datteri-matera-mt-basilicata: Phoenix dactylifera L., locality 'Borgo la Martella, via Monte Bianco', GPS 40.660004,16.533612, circumference 2.04 m at 130 cm height, height 7.00 m, altitude 220 m, registered 14 October 2021, last updated 29 December 2024, noted 'Accessibile' (accessible)",
-        "OpenStreetMap raw data (Overpass query, fetched 2026-09-03): the coordinate sits inside an ordinary residential landuse polygon in Borgo La Martella, no building, private-land or access-restriction tag over the point itself; tuttocitta.it independently maps a numbered address 'Via Monte Bianco, 3, Matera' at this same street, corroborating that the register's locality is a genuine public residential street rather than an invented one"
+        "OpenStreetMap raw data (Overpass query, fetched 2026-09-03): the coordinate sits inside an ordinary residential landuse polygon in Borgo La Martella, no building, private-land or access-restriction tag over the point itself; tuttocitta.it independently maps a numbered address 'Via Monte Bianco, 3, Matera' at this same street, corroborating that the register's locality is a genuine public residential street rather than an invented one",
+        "https://ilregistrodeglialberi.it/11911-palma-da-datteri-matera-mt-basilicata"
       ],
       "access": "Not independently confirmed beyond the register, but the evidence points to an ordinary public residential street: the register itself flags this tree 'Accessibile', it sits on Via Monte Bianco in Borgo La Martella, a numbered residential street rather than a private estate or farm name, and OpenStreetMap shows no building or private-land polygon over the coordinate. Unlike this comune's masseria and jazzo entries, nothing here names a private working farm.",
       "transport": "About 5.7 km / roughly a 10-15 minute drive west of central Matera. No public transport route to Via Monte Bianco confirmed this pass; Borgo La Martella is a distinct village-neighbourhood of the comune, not the historic centre.",
@@ -177,7 +178,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the date palm on an ordinary numbered street, 2.04 metres round. It stands on Via Monte Bianco, Borgo La Martella."
+      "how_to_recognise": "You can recognise it as the date palm on an ordinary numbered street, 2.04 metres round. It stands on Via Monte Bianco, Borgo La Martella.",
+      "official_register": {
+        "name": "Registro degli Alberi Monumentali Italiani (RAMI), no. 11911",
+        "url": "https://ilregistrodeglialberi.it/11911-palma-da-datteri-matera-mt-basilicata"
+      }
     }
   ]
 }
