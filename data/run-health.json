@@ -2,26 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-22T07:53:21+00:00",
-   "date": "2026-08-22",
-   "run_id": "32560803824",
-   "minutes": 32.5,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 208,
-   "denials": 22,
-   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(find), Bash(for), Bash(printenv), Bash(python3), Bash(rm), Bash(test), Bash(which)",
-   "ended": "success",
-   "tokens": 16495795,
-   "claims_held": [
-    "haarlem"
-   ],
-   "commits": 11,
-   "cities_touched": 5,
-   "trees": 14,
-   "logged": true
-  },
-  {
    "started": "2026-08-22T08:26:49+00:00",
    "date": "2026-08-22",
    "run_id": "32561731080",
@@ -22117,6 +22097,76 @@
    "cities": [],
    "trees": 0,
    "logged": false
+  },
+  {
+   "started": "2026-10-12T12:56:20+00:00",
+   "date": "2026-10-12",
+   "run_id": "38252163887",
+   "minutes": 29.9,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 217,
+   "denials": 4,
+   "denials_source": "permission_denials: Bash(cd && for ; do ; done ...), Bash(cd && pdftotext ; head), Bash(for ; do ; python3 ; import ...), Bash(pdftotext)",
+   "ended": "success",
+   "tokens": 353215,
+   "claims_held": [
+    "emmen"
+   ],
+   "commits": 21,
+   "cities_touched": 12,
+   "cities": [
+    {
+     "city": "palma-de-mallorca",
+     "trees": 1
+    },
+    {
+     "city": "baarn",
+     "trees": 0
+    },
+    {
+     "city": "dresden",
+     "trees": 0
+    },
+    {
+     "city": "kauai",
+     "trees": 0
+    },
+    {
+     "city": "perugia",
+     "trees": 0
+    },
+    {
+     "city": "regensburg",
+     "trees": 0
+    },
+    {
+     "city": "riga",
+     "trees": 0
+    },
+    {
+     "city": "tilburg",
+     "trees": 0
+    },
+    {
+     "city": "assen",
+     "trees": -1
+    },
+    {
+     "city": "delft",
+     "trees": -1
+    },
+    {
+     "city": "the-hague",
+     "trees": -2
+    },
+    {
+     "city": "oss",
+     "trees": -6
+    }
+   ],
+   "trees": -9,
+   "logged": true
   }
  ],
  "schedule_changes": [

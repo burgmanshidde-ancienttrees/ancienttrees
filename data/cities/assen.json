@@ -2,17 +2,17 @@
   "city": "Assen",
   "country": "Netherlands",
   "status": "needs_curation",
-  "intro": "Assen's ten registered trees cluster around old estate grounds, not the city centre: three share the private landgoed of Overcingel, two hide behind a house called Nieuw Echten down a footpath nobody would find by accident, and the rest stand in a deer park, a former manor's grounds, a former hospital site and a road junction outside Beilen. Nothing here is dated to the year. The register gives each a planting band, and several are visibly ageing: a hollowed oak, a broken cypress, a crown cut back hard to save the trunk. What survives is worth the detour anyway.",
-  "meta_description": "Ten registered trees around Assen: a hollow oak on a private estate, a broken bald cypress, and the thick boundary oak out at Beilen.",
-  "question_meta": "Assen's oldest tree is an oak on the Overcingel estate, hollowed by decades of fungus, its crown cut back to save it. Here it is, and nine more.",
-  "question_answer": "The oldest tree in Assen is the Hollow Oak of Overcingel, a pedunculate oak the national tree register bands to 1750-1800, roughly 225 to 275 years old. It grows on the private Overcingel estate off Oostersingel, its trunk opened on the north side by a cavity where sulfur fungus has been feeding for decades.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band rather than a measurement. The register is the single source for nine of the ten, so those entries ship flagged rather than confirmed. The oak at Beilen carries a second source and a disputed age: 350 years locally, 1750 to 1800 by the register's own arithmetic. Three of the ten, the horse chestnut, the hollow oak and the broken cypress, stand together on Overcingel, a private estate landscaped in 1824 and free to walk with a card from Het Drentse Landschap's Assen office, or without one during the February and March crocus season. Two more, a weeping beech and a copper beech, share a pocket garden behind a house called Nieuw Echten, reached through a footpath between two front doors on Alteveerstraat. The rest stand on public ground: a deer park, a former manor's grounds now open as Valkenstijn, and a former hospital site along Beilerstraat. Where a pin is marked approximate, we know the site and not the exact trunk.",
+  "intro": "Assen's nine registered trees cluster around old estate grounds, not the city centre: two share the private landgoed of Overcingel, two hide behind a house called Nieuw Echten down a footpath nobody would find by accident, and the rest stand in a deer park, a former manor's grounds, a former hospital site and a road junction outside Beilen. Nothing here is dated to the year. The register gives each a planting band, and several are visibly ageing: a chestnut held together with anchors, a broken cypress. What survives is worth the detour anyway.",
+  "meta_description": "Nine registered trees around Assen: a multi-stemmed chestnut held together with anchors, a broken bald cypress, and the thick boundary oak out at Beilen.",
+  "question_meta": "Assen's oldest tree is the thick oak at a road junction outside Beilen, 250 to 350 years old by two counts that disagree. Here it is, and eight more.",
+  "question_answer": "The oldest tree around Assen is the Thick Oak of Beilen, an oak at a road junction outside Beilen. The national tree register bands it to 1750-1800, roughly 225 to 275 years old, while local accounts say 350, so it is somewhere between 250 and 350 years old.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band rather than a measurement. The register is the single source for eight of the nine, so those entries ship flagged rather than confirmed. The oak at Beilen carries a second source and a disputed age: 350 years locally, 1750 to 1800 by the register's own arithmetic. Two of the nine, the horse chestnut and the broken cypress, stand together on Overcingel, a private estate landscaped in 1824 and free to walk with a card from Het Drentse Landschap's Assen office, or without one during the February and March crocus season. Two more, a weeping beech and a copper beech, share a pocket garden behind a house called Nieuw Echten, reached through a footpath between two front doors on Alteveerstraat. The rest stand on public ground: a deer park, a former manor's grounds now open as Valkenstijn, and a former hospital site along Beilerstraat. Where a pin is marked approximate, we know the site and not the exact trunk.",
   "hero_tree_id": "ass_001",
-  "oldest_tree_id": "ass_002",
+  "oldest_tree_id": "ass_010",
   "faq": [
     {
       "q": "What is the oldest tree in Assen?",
-      "a": "The Hollow Oak of Overcingel, banded by the national tree register to 1750-1800. Decades of sulfur fungus have opened a cavity through the north side of its trunk, and its crown has been cut back hard, from 27 metres to 14, to keep the tree alive."
+      "a": "The Thick Oak of Beilen, banded by the national tree register to 1750-1800 and put at 350 years by local accounts. It stands at a road junction outside Beilen."
     },
     {
       "q": "Can I visit the trees on the Overcingel estate?",
@@ -20,7 +20,7 @@
     },
     {
       "q": "Why are these trees only approximately dated?",
-      "a": "The Landelijk Register Monumentale Bomen, the national tree register, records when a tree was planted as a decade rather than a year, and it is the only source that has looked closely at nine of Assen's ten registered trees. A planting band is still real information: it says these trees are old, just not down to the exact year."
+      "a": "The Landelijk Register Monumentale Bomen, the national tree register, records when a tree was planted as a decade rather than a year, and it is the only source that has looked closely at eight of Assen's nine registered trees. A planting band is still real information: it says these trees are old, just not down to the exact year."
     },
     {
       "q": "How do I find the beeches behind Nieuw Echten?",
@@ -68,41 +68,6 @@
       },
       "girth_cm": 840,
       "height_m": 25
-    },
-    {
-      "id": "ass_002",
-      "name": "The Hollow Oak of Overcingel",
-      "species": "Pedunculate Oak (Quercus robur)",
-      "age_estimate": "roughly 230 to 280 years, from the register's planting band of 1750-1800",
-      "age_min": 226,
-      "age_max": 276,
-      "location": {
-        "address": "Gemeente Assen, Assen, 9401 JZ, Oostersingel 27 (Landgoed Overcingel)",
-        "latitude": 52.992471,
-        "longitude": 6.566779
-      },
-      "verified_sources": [
-        "https://www.monumentalebomen.nl/"
-      ],
-      "access": "Free with a walking card from Het Drentse Landschap's Assen office (Kloosterstraat 5); open without one during the crocus season in February and March.",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "flagged",
-      "location_precision": "approximate",
-      "story": "A fungus usually taken as a sign a tree is dying has been working through this oak's heartwood for decades, and it is still standing. The register calls it zwavelzwam, sulfur polypore, feeding through a cavity that opens the whole north side of the trunk.\n\nIt grows a short walk from Overcingel's horse chestnut, on the same estate laid out around a manor house of 1777 and remade in the English style by Lucas Pieter Roodbaard in 1824. The register's planting band puts the oak at 1750 to 1800, decades wider than the chestnut's, which makes this the older of the estate's two register trees rather than a companion planted alongside it.\n\nSomewhere between 1970 and 1985, tree surgeons patched the trunk with the grafts and braces of that decade's practice. Since then the crown has been cut back hard, from 27 metres to 14, what arborists call veteran pruning: reducing a failing crown to buy the trunk more years. On the south side the tree has grown a thick collar of reaction wood and pushed roots up above the soil, bracing itself against the lean the hollow has left it with.\n\nIt still leafs out on what remains of its branches. Whether it keeps doing that is a question the register itself leaves open.",
-      "best_time": {
-        "months": [
-          9,
-          10
-        ],
-        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-        "kind": "fruit"
-      },
-      "how_to_recognise": "You can recognise it by the cavity opened along its north side by decades of sulfur polypore fungus, still standing despite it. It stands a short walk from Overcingel's horse chestnut on the same estate."
     },
     {
       "id": "ass_003",
@@ -233,8 +198,8 @@
       "age_max": 146,
       "location": {
         "address": "Gemeente Assen, Assen, 9401 GP, Vaart N.Z. 66,  (via voetpad Alteveerstraat 59 en 61)",
-        "latitude": 52.994831,
-        "longitude": 6.555169
+        "latitude": 52.99483146864319,
+        "longitude": 6.555168860626327
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
@@ -248,7 +213,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "story": "Behind a house called Nieuw Echten, reached only by a footpath squeezed between two front doors on Alteveerstraat, sits a pocket garden nobody driving past would guess exists. It carries the name of a family, Huges, who lived in the house from 1934 to 1970, decades after the garden itself had already been laid out in the English landscape style, with a pond at its centre.\n\nThe weeping beech growing there predates the Huges family by about half a century. The register puts its planting somewhere in the 1880s. A weeping beech's whole trick is gravity: instead of reaching up, its branches arch out from the trunk and fall, so a mature one reads less like a tree and more like a room, walls of foliage hanging to the ground with the trunk hidden somewhere inside.\n\nThe path in runs between numbers 59 and 61 Alteveerstraat, open to anyone who finds it. Nobody has published more about this specific tree than the national register, which is the only source we have for it. If you know the garden's own history better, tell us.",
       "how_to_recognise": "You can recognise it by its branches, arching outward and down instead of up, in a pocket garden with a pond at its centre. It stands behind Nieuw Echten, reached only by the footpath between numbers 59 and 61 Alteveerstraat.",
       "official_register": {
@@ -256,7 +221,21 @@
         "url": null
       },
       "girth_cm": 445,
-      "height_m": 18
+      "height_m": 18,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the hanging curtain of leaves turns gold and copper",
+        "kind": "autumn colour"
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1693709&outFields=*&f=json",
+        "date": "2026-10-12",
+        "moved_m": 0
+      }
     },
     {
       "id": "ass_007",
@@ -290,7 +269,15 @@
         "url": null
       },
       "girth_cm": 320,
-      "height_m": 12
+      "height_m": 12,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October into November, when the soft needles turn copper red",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "ass_008",
