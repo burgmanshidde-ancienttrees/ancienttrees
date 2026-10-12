@@ -59,10 +59,10 @@ struct SheetButtonStyle: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: kind == .quiet ? 15 : 16, weight: .semibold))
+            .font(.system(size: kind == .quiet || kind == .destructiveQuiet ? 15 : 16, weight: .semibold))
             .foregroundStyle(foreground)
             .frame(maxWidth: .infinity)
-            .frame(height: kind == .quiet ? 44 : 48)
+            .frame(height: kind == .quiet || kind == .destructiveQuiet ? 44 : 48)
             .background(background, in: .capsule)
             .contentShape(.capsule)
             .opacity(configuration.isPressed ? 0.8 : 1)
@@ -81,7 +81,12 @@ struct SheetButtonStyle: ButtonStyle {
     private var background: Color {
         switch kind {
         case .primary: Brand.moss
-        case .secondary, .destructiveQuiet: Brand.creamDark
+        case .secondary: Brand.creamDark
+        // TEXT, NOT A BUTTON SHAPE (Hidde, 2026-10-12: "should the remove
+        // from collection button be less big than the other two options, its
+        // least likely right"). The least likely act sits last as red text,
+        // the way Apple's own sheets and Google Maps' "Remove" draw it.
+        case .destructiveQuiet: .clear
         case .destructive: Brand.danger
         case .quiet: .clear
         }

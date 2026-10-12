@@ -3211,8 +3211,9 @@ dialog.at-sheet .sheet-b--secondary { background: var(--cream-dark); color: var(
 dialog.at-sheet .sheet-b--secondary:hover:not(:disabled) { background: #e0ded5; }
 dialog.at-sheet .sheet-b--red { background: #B22222; color: #fff; }
 dialog.at-sheet .sheet-b--red:hover:not(:disabled) { background: #9c1d1d; }
-dialog.at-sheet .sheet-b--redq { background: var(--cream-dark); color: #B22222; }
-dialog.at-sheet .sheet-b--redq:hover:not(:disabled) { background: #e0ded5; }
+/* Text, not a button shape: the least likely act, last (Hidde, 2026-10-12). Same as the app's destructiveQuiet. */
+dialog.at-sheet .sheet-b--redq { background: none; min-height: 44px; font-size: 15px; color: #B22222; }
+dialog.at-sheet .sheet-b--redq:hover:not(:disabled) { background: none; text-decoration: underline; }
 dialog.at-sheet .sheet-b--quiet { background: none; min-height: 44px; font-size: 15px; color: var(--ink-mid); }
 dialog.at-sheet .at-sheet-fine { margin: 0.9rem 0 0; font-size: 12px; color: var(--ink-light); }
 dialog.at-sheet .at-sheet-fine[hidden] { display: none; }
