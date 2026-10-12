@@ -3324,7 +3324,7 @@ Hidde: "make that settings things more consistent with the app thing", then "som
 
 **Reference: Baymard's ecommerce benchmark, the gov.scot design system, AllTrails and Google Maps.** Search is reachable from EVERY page, never only the homepage: on a desktop as a visible field in the header, on a phone as an icon in the header (or inside the menu) that opens the field. A visitor turns to search after browsing fails, and by then they are not on the homepage. Section-scoped search ("search species") is for large sites with distinct sections and is not us; one search over cities, species and trees is the convention.
 
-Ours, as of 2026-10-12: the field exists on the homepage and /explore only (search-form.ts). Asked by Hidde the same day ("volgens mij heeft AllTrails hem in het menu en is hij er altijd").
+Ours, built 2026-10-12: a magnifier in the header of every page (Base.astro `nav-search`), opening the homepage's own search as a desktop dropdown or the phone's full-screen sheet, hidden where the page already shows a field (home, map). The app needs nothing: its search lives on the map, the first screen, which is where AllTrails and Google Maps keep theirs. Asked by Hidde the same day ("volgens mij heeft AllTrails hem in het menu en is hij er altijd").
 
 Sources, read 2026-10-12 (AllTrails' own pages refuse an automated browser):
 - https://baymard.com/mcommerce-usability/benchmark/mobile-page-types/search-field/1522-gap

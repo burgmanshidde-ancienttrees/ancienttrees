@@ -3281,3 +3281,40 @@ i[lang="la"], .sr-body i[lang="la"] { font-style: italic; }
   display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.18); }
 .td-yours-more::before { content: ""; position: absolute; inset: -6px; }
 .td-yours-more svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* SEARCH FROM EVERY PAGE (2026-10-12). The magnifier sits beside the menu at
+   both widths: a round icon button like the phone's menu button, which the
+   mobile block already draws for every nav-drop summary. */
+.nav-search summary::after { content: none; }
+.nav-search .bar-search-btn { width: 36px; height: 36px; justify-content: center; border-radius: 50%;
+  border: 1px solid var(--cream-dark); background: var(--surface); }
+.nav-search .bar-search-btn .ic { width: 18px; height: 18px; display: block; }
+.nav-search[open] .bar-search-btn { background: var(--cream-dark); }
+/* Desktop: a wider dropdown holding the field and its suggestions. */
+.nav-search .nav-search-panel { min-width: 22rem; max-width: 26rem; padding: 0.6rem; }
+.nav-search-top { display: flex; align-items: center; gap: 0.5rem; }
+.nav-search-top .at-search { flex: 1; min-width: 0; margin: 0; }
+.nav-search-panel .ats-drop { position: static; box-shadow: none; border: 0; margin-top: 0.4rem; max-height: 60vh; overflow-y: auto; }
+/* Where the page already shows a search field, the header does not repeat it. */
+body:has(main form.at-search:not(.bar-search)) .nav-search,
+body:has(form.hero-search) .nav-search,
+body:has(form.ex-search) .nav-search { display: none; }
+@media (max-width: 799px) {
+  /* A 375px bar had 42px free between the mark and the app pill (English,
+     the tightest label, measured 2026-10-12). So the magnifier is a 36px
+     circle with a 44px tap area, the gaps go to 6px and the pill gives up 4px
+     of padding: about 6px to spare. smoke.yml's fit check holds it. */
+  .nav-search .bar-search-btn { width: 36px; height: 36px; position: relative; }
+  .nav-search .bar-search-btn::before { content: ""; position: absolute; inset: -4px; }
+  .nav-search .bar-search-btn .ic { width: 18px; height: 18px; }
+  .bar-links { gap: 6px; }
+  .bar-links a.bar-cta { padding: 0 10px; }
+  .nav-search .nav-search-panel { min-width: 0; max-width: none; padding-top: 0.75rem; }
+  .nav-search-top { padding-top: env(safe-area-inset-top); }
+  .nav-search-panel .ats-drop { max-height: none; }
+}
+@media (min-width: 800px) {
+  /* Desktop bar: Map, Explore, Account, then search, then the app pill. */
+  .bar-links .nav-search { order: 1; }
+  .bar-links a.bar-cta { order: 2; }
+}
