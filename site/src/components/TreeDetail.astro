@@ -188,10 +188,11 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
           <span class="tree-place-dot" aria-hidden="true">·</span>
           <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
         </div>
-        {/* The upload behind the collect sheet's "Add a photograph" on a page
-            that already has a picture: its button stays hidden (the sheet is
-            the way in) and its line says what happened to what you sent. A
-            photo-less page has the visible one in its hero instead. */}
+        {/* Add a photo on a page that already has a picture, VISIBLE since
+            2026-10-12 (Hidde: "that option should be there whether you already
+            did that before or not", "make it consistent"): the app offers it on
+            every tree, Google Maps keeps Add photos on every place. A photo-less
+            page has its button in the hero instead. */}
         {photo && photo.url && (
           <div class="td-addphoto-quiet">
             <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} quiet />

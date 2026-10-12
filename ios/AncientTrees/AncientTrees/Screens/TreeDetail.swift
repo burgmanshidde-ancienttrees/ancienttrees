@@ -1776,7 +1776,7 @@ struct TreeDetail: View {
         // bare camera icon on only some trees was a control nobody found.
         if mine == nil {
             Button { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
-                Label("Add photo", systemImage: "camera.fill")
+                Label("Add a photo", systemImage: "camera.fill")
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Brand.ink)
                     .padding(.horizontal, 14)

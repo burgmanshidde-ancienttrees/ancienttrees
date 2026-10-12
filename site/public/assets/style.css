@@ -2848,7 +2848,7 @@ div.tb-register > b { color: var(--ink); }
 .td-bar .seen-btn svg.ic { width: 24px; height: 24px; }
 .td-bar .seen-btn[aria-pressed="true"] { background: var(--moss-light); border-color: var(--moss); }
 .td-collect-wide { display: none; }
-.td-addphoto-quiet .addphoto-btn { display: none; }
+/* Visible on every tree page since 2026-10-12 (Hidde: "that option should be there", "make it consistent"): the app has Add a photo on every tree's photograph too. */
 .td-addphoto-quiet .addphoto-note { margin-top: 0.4rem; }
 
 /* The pin dialog, full screen. Every other overlay is the one sheet (.at-sheet, at the foot of this file). */
