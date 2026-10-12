@@ -14,6 +14,72 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## Weekly analysis 2026-10-12
+
+Eleventh weekly analysis. Compares 10-05 to 10-11 with 09-28 to 10-04, read
+from the daily entries. 10-11 is partial in Search Console. The prior row is
+the figure written last week, so Google's later backfill can move it a little.
+
+**Scorecard**
+
+| Week | Impressions | Clicks | CTR | Avg position | Visits (beacon) | Directions (14d) | App-CTA (14d) | App downloads (first-time) | Waitlist total | Submissions total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 09-28 to 10-04 | 400 | 14 | 3.5% | 18 to 39 | 220 (8d) | 34 | 22 | 13 | 20 | 32 |
+| 10-05 to 10-11 | 277 | 14 | 5.1% | 22 to 50 | 330 (7d) | 5 | 19 | 14 (3 days absent from the table) | 21 | 33 |
+
+Device split (beacon, 7d): mobile 600 pageviews, desktop 270. Search clicks over
+28 days: mobile 523 of 727.
+
+**What moved:**
+1. Google is still at the floor and slowly lower: 277 impressions in 7 days
+   (about 40 a day, from about 57), 14 clicks, position 22 to 50. No
+   recovery signal. The CTR rise is 14 clicks; it means nothing.
+2. Bing now shows us more than Google does: 537 impressions and 18 clicks
+   for 10-04 to 10-10, against 47 and 4 the week before, with the index at
+   2,157 pages and no demotion. Its 18 clicks are more than Google's 14.
+3. The one page with real exposure converts nothing. Prague holds 325 of
+   the 462 impressions in the 10-day window at position 5.6 with 0 clicks;
+   seolearn puts the loss at about 19 clicks per 10 days. Its pages
+   (/prague/walks plus tree pages) climbed 18 to 33 impressions each.
+4. Site visits 330 (7 days), 62% of pageviews moved between our own pages,
+   and Google sent 20 visits. Directions fell from 34 to 5 on the 14-day
+   count, the clearest product fall, but it follows the visit drop and the
+   counts are small.
+5. The app is steady: 14 first-time downloads (10 of the last 21 from App
+   Store search), 13 new phones, 2 collected a tree on day one (15%, 33% the
+   week before), back-within-a-week 56%. 5 accounts opened, 1 Android
+   waitlist signup, 1 reader tree sent. The machine produced nothing in the
+   last 24 hours (4 knocks, 0 minutes, 0 trees); the week meter reads 791
+   minutes.
+
+**Suggestions, ranked:**
+1. **[run]** Fix the Prague title and meta for the query "prague" (i15 at
+   positions 1 to 9, 0 clicks, about 19 clicks lost per 10 days). It is the
+   only page where position is good and clicks are zero, so it looks like a
+   snippet problem, not a content problem. First check whether those
+   impressions are rank trackers rather than readers; if so, drop Prague
+   from the depth list.
+2. **[run]** Treat Bing as a real channel: pull its queries and pages for
+   10-04 to 10-10 (queries such as "remarkable trees copenhagen" and "oldest
+   tree in belfast" already click at positions 1 to 6) and give those pages
+   the photograph, register link and access line first. Bing pages are
+   earning clicks now when Google pages are not.
+3. **[run]** Keep the sighting queue as rung 1 every knock. Only tree pages
+   with a photograph are indexed, and reader photographs are the one steady
+   source of new ones (a tree collected in the app in Palma on 10-11, Seville
+   on 10-08).
+4. **[sessie]** Find out why the machine did nothing on 4 knocks in a row
+   (usage window closed, or the knock failing). Enrichment is the only work
+   recovery mode allows and idle time is the largest unused lever.
+5. **[FOR HIDDE]** The recovery-mode question stands and has gained a week:
+   still about 40 impressions a day after 14 days. The Search Console Manual
+   actions and Page indexing checks from last week are not answered in the
+   data, and they decide between waiting and a reconsideration request.
+
+**Watch next week:** Google daily impressions above 100, whether the Prague
+CTR moves off 0%, Bing staying above Google, and whether the machine produces
+trees again.
+
 ## 2026-10-11 (previous UTC day)
 
 **Today: an account was opened yesterday (26 total); the machine produced nothing across all 4 knocks in the last 24h (0.0 real minutes total, 0 trees), not a quiet night.**
