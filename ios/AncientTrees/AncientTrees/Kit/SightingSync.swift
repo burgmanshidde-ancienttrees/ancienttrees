@@ -32,9 +32,15 @@ enum SightingSync {
     static func merge(account: Account, sightings: Sightings) async {
         guard let s = await account.freshSession() else { return }
 
+        // Deletes the server has not confirmed yet go again first, and their
+        // rows are never adopted back below.
+        let deleting = sightings.deleting
+        for id in deleting { await remove(account: account, sightings: sightings, id: id) }
+
         let remote = await Supa.rows("/rest/v1/sightings?select=*", token: s.accessToken)
         for row in remote {
             guard let idText = row["id"] as? String, let id = UUID(uuidString: idText),
+                  !deleting.contains(id),
                   let lat = row["lat"] as? Double, let lng = row["lng"] as? Double
             else { continue }
             // A row this phone already holds is normally left alone: the local
@@ -298,11 +304,18 @@ enum SightingSync {
     /// One sighting deleted here, deleted there. The file goes first for the
     /// same reason it is uploaded first: never leave a row pointing at nothing,
     /// and never leave a file nothing points at.
-    static func remove(account: Account, id: UUID) async {
+    static func remove(account: Account, sightings: Sightings, id: UUID) async {
         guard let s = await account.freshSession() else { return }
         await deleteObject("\(s.userId)/\(id.uuidString).jpg", token: s.accessToken)
         await deleteObject("\(s.userId)/\(Sightings.signFile(id))", token: s.accessToken)
-        await Supa.delete("/rest/v1/sightings?id=eq.\(id.uuidString)", token: s.accessToken)
+        for n in 1...Sightings.maxExtras {
+            await deleteObject("\(s.userId)/\(Sightings.extraFile(id, n))", token: s.accessToken)
+        }
+        // Only the server's yes clears the pending delete; until then merge
+        // keeps skipping the row and the next merge tries again.
+        if await Supa.delete("/rest/v1/sightings?id=eq.\(id.uuidString)", token: s.accessToken) {
+            sightings.deleted(id)
+        }
     }
 
     // MARK: - plumbing

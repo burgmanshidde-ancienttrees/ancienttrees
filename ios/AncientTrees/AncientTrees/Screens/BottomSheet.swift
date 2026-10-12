@@ -271,6 +271,8 @@ struct BottomSheet<Header: View, Content: View>: View {
     @GestureState private var dragging = false
     @Environment(\.floatingBarDepth) private var barDepth
     @Environment(\.sheetPageClose) private var pageClose
+    @Environment(\.sheetFullInset) private var fullInset
+    @Environment(\.sheetLocked) private var locked
     /// Whether the list inside is scrolled to its very top. The handoff downward
     /// is only allowed from there, because taking the gesture mid-list would
     /// yank the sheet away while somebody is reading.
@@ -357,15 +359,20 @@ struct BottomSheet<Header: View, Content: View>: View {
             // so `visible` subtracts it and the stops keep their meaning; only
             // the page adds the strip back on top.
             let visible = geo.size.height - bottom - top
-            let page = visible + top
-            let target = height.points(in: visible) + (height == .full ? top : 0)
+            // A screen with a field fixed over the top (the map tab's search)
+            // stops the sheet just below it, as Google Maps does, instead of
+            // letting the list become the page under the field (2026-10-12).
+            let page = visible + top - fullInset
+            let target = height == .full ? page : height.points(in: visible)
             let h = min(max(target - drag, 90), page)
             // 0 at the half stop, 1 at the page: what the corners, the handle,
             // the chevron and the chrome over the map all follow frame by
             // frame, so the change is one movement under the finger rather than
             // a switch on release (the Polarsteps transition, 2026-10-02).
             let halfPts = SheetHeight.half.points(in: visible)
-            let progress = pageProgress
+            // Below a fixed field the sheet stays a card all the way up: no
+            // squared corners, no chevron, no status-bar strip.
+            let progress = fullInset > 0 ? 0 : pageProgress
             VStack(spacing: 0) {
                 // The status-bar strip, only as far as the sheet has risen into it.
                 Color.clear.frame(height: top * progress)
@@ -503,7 +510,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                 }
             )
             .overlay {
-                if height == .peek {
+                if height == .peek && !locked {
                     Color.clear
                         .contentShape(.rect)
                         .onTapGesture { withAnimation(.spring(duration: 0.28)) { height = .half } }
@@ -532,6 +539,11 @@ struct BottomSheet<Header: View, Content: View>: View {
                     .onChanged { value in
                         // Claim the gesture only in the cases the rules above
                         // describe. Everything else belongs to the list.
+                        // Nothing to list: the sheet stays where it is (Hidde,
+                        // 2026-10-12: "als er helemaal geen bomen zijn om te
+                        // tonen moet je mss die lijst niet omhoog kunnen
+                        // trekken").
+                        if locked { return }
                         if height != .full {
                             // Below full height the sheet owns the finger in
                             // BOTH directions, which is what makes a swipe up
@@ -548,8 +560,8 @@ struct BottomSheet<Header: View, Content: View>: View {
                         guard drag != 0 else { return }
                         let settled = target - value.translation.height
                         let next = SheetHeight.allCases.min {
-                            abs($0.points(in: visible) - settled)
-                                < abs($1.points(in: visible) - settled)
+                            abs(($0 == .full ? page : $0.points(in: visible)) - settled)
+                                < abs(($1 == .full ? page : $1.points(in: visible)) - settled)
                         } ?? .peek
                         // ONE change, not two (2026-09-26). The stop and the
                         // drag used to be set one after the other, so for a
@@ -614,5 +626,21 @@ extension EnvironmentValues {
     var sheetPageClose: Bool {
         get { self[SheetPageCloseKey.self] }
         set { self[SheetPageCloseKey.self] = newValue }
+    }
+}
+
+/// How far from the top of the screen the full-height sheet stops, for a
+/// screen with a control fixed over the top. 0 lets the sheet become the page.
+private struct SheetFullInsetKey: EnvironmentKey { static let defaultValue: CGFloat = 0 }
+/// True when there is nothing in the list, so the sheet cannot be raised.
+private struct SheetLockedKey: EnvironmentKey { static let defaultValue = false }
+extension EnvironmentValues {
+    var sheetFullInset: CGFloat {
+        get { self[SheetFullInsetKey.self] }
+        set { self[SheetFullInsetKey.self] = newValue }
+    }
+    var sheetLocked: Bool {
+        get { self[SheetLockedKey.self] }
+        set { self[SheetLockedKey.self] = newValue }
     }
 }

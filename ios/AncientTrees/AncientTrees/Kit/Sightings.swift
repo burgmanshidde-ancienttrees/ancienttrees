@@ -892,8 +892,37 @@ final class Sightings {
         let gone = all[i].id
         all.remove(at: i)
         persist()
+        markDeleting(gone)
         Self.syncGone?(gone)
     }
+
+    // MARK: - deletes the account has not confirmed yet
+
+    /// PHOTOGRAPHS THAT CAME BACK (Hidde, 2026-10-12: "when i delete a photo
+    /// it doesnt delete ... the flow works but the photo stays"). The delete
+    /// went to the account in the background while the account was merged
+    /// back in every minute or two; a merge that ran before the delete
+    /// landed, or after it failed, found the row on the server and adopted
+    /// it again as new. So a delete is a PENDING INTENT until the server
+    /// confirms it: merge skips these ids and retries them, and only the
+    /// server's yes clears one. data/cross-device.json, "sightings deleting".
+    private var deletingFile: URL { folder.appendingPathComponent("deleting.json") }
+
+    var deleting: Set<UUID> {
+        guard let d = try? Data(contentsOf: deletingFile),
+              let ids = try? JSONDecoder().decode([UUID].self, from: d) else { return [] }
+        return Set(ids)
+    }
+
+    private func writeDeleting(_ ids: Set<UUID>) {
+        if ids.isEmpty { try? FileManager.default.removeItem(at: deletingFile); return }
+        if let d = try? JSONEncoder().encode(Array(ids)) { try? d.write(to: deletingFile) }
+    }
+
+    func markDeleting(_ id: UUID) { var d = deleting; d.insert(id); writeDeleting(d) }
+
+    /// The server said the row is gone.
+    func deleted(_ id: UUID) { var d = deleting; d.remove(id); writeDeleting(d) }
 
     // MARK: - the pieces
 

@@ -1016,8 +1016,8 @@ struct ContentView: View {
             Sightings.syncOne = { [account, sightings] s in
                 Task { await SightingSync.push(account: account, sightings: sightings, sighting: s) }
             }
-            Sightings.syncGone = { [account] id in
-                Task { await SightingSync.remove(account: account, id: id) }
+            Sightings.syncGone = { [account, sightings] id in
+                Task { await SightingSync.remove(account: account, sightings: sightings, id: id) }
             }
             // Kilometres or miles follows the account too, so it does not stay
             // behind on an old phone.

@@ -70,6 +70,8 @@ struct MapTab: View {
     /// ships unlooked at. It shipped that way once and froze the app.
     /// The card at the top of the list, reported by the sheet as you scroll.
     @State private var topCard: String?
+    /// Where the floating search field ends, from the top of the screen.
+    @State private var searchBottom: CGFloat = 0
     @State private var pickingSpecies = ProcessInfo.processInfo.arguments.contains("-species")
     @State private var searching = ProcessInfo.processInfo.arguments
         .contains { $0 == "-search" || $0.hasPrefix("-search=") }
@@ -227,6 +229,12 @@ struct MapTab: View {
         // follow the list's own settling.
         topCard = nil
         flewAt = Date()
+    }
+
+    /// No tree in view, no walk, no arrival and nothing selected: the list
+    /// would be empty, so the sheet stays down.
+    private var nothingToList: Bool {
+        inReach == 0 && shownWalk == nil && arrived == nil && selected == nil
     }
 
     /// How many trees are actually under the view, uncapped.
@@ -392,6 +400,9 @@ struct MapTab: View {
                     // and over the full list alike. It used to fade out here
                     // and a second copy appeared lower down, inside the list.
                     searchField
+                        .onGeometryChange(for: CGFloat.self) { $0.frame(in: .global).maxY } action: {
+                            searchBottom = $0
+                        }
                     VStack(spacing: 8) {
                         whereChip
                         filterRow
@@ -410,6 +421,16 @@ struct MapTab: View {
         // The page's chevron would sit under the field; this screen has the
         // "Map" button at the foot of the list for the way back instead.
         .environment(\.sheetPageClose, false)
+        // The list, pulled all the way up, stops under the search field
+        // rather than running beneath it (Google Maps; Hidde, 2026-10-12).
+        .environment(\.sheetFullInset, searchBottom > 0 ? searchBottom + 10 : 0)
+        // Nothing to list, nothing to pull up.
+        .environment(\.sheetLocked, nothingToList)
+        .onChange(of: nothingToList, initial: true) { _, empty in
+            if empty && sheetHeight != .peek {
+                withAnimation(.spring(duration: 0.28)) { sheetHeight = .peek }
+            }
+        }
         .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
         // AT FULL HEIGHT ONLY, which is his own correction within the minute:
         // "de map floating knop op de map pagina is overbodig" and then, having
@@ -686,8 +707,8 @@ struct MapTab: View {
             // nothing the list does not. The strip keeps its height, because it
             // is the grip that drags the sheet back down and the search field
             // should not move.
-            .opacity(sheetHeight == .full ? 0 : 1)
-            .accessibilityHidden(sheetHeight == .full)
+            // Shown at full height again since 2026-10-12: the search field
+            // that headed the list there is gone (it stays above the sheet).
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
             .accessibilityIdentifier("map-count")

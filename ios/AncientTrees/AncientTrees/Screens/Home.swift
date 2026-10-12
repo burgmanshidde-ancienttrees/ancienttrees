@@ -48,6 +48,14 @@ struct HomeView: View {
     @Environment(Navigator.self) private var navigator
     @Environment(Saved.self) private var saved
     @State private var searching = false
+    /// QUICK RETURN (Hidde, 2026-10-12: "the convention is that it moves away
+    /// but comes back once you scroll up again"). The header with the search
+    /// field slides away while you read down and returns the moment you
+    /// scroll up, wherever you are: Instagram's header and Safari's toolbar,
+    /// the Android pattern named Quick Return (CONVENTIONS.md, "Discover's
+    /// search field while scrolling").
+    @State private var headerHidden = false
+    @State private var headerHeight: CGFloat = 140
     /// Worked out once rather than on every redraw.
     ///
     /// These were computed properties, and each of them groups or sorts all
@@ -221,7 +229,17 @@ struct HomeView: View {
                 tailShelf.id("discover-tail")
                 Color.clear.frame(height: 90)        // clear of the floating tab bar
             }
-            .padding(.top, 6)
+            .padding(.top, 6 + headerHeight)
+        }
+        .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y + $0.contentInsets.top } action: { old, new in
+            let hide: Bool
+            if new < headerHeight { hide = false }          // near the top: always there
+            else if new > old + 1 { hide = true }           // reading down
+            else if new < old - 1 { hide = false }          // any scroll back up
+            else { return }
+            if hide != headerHidden {
+                withAnimation(.snappy(duration: 0.25)) { headerHidden = hide }
+            }
         }
         // A section no argument can reach ships unseen: -discoverto=species
         // or -discoverto=tail scrolls there for the sweep (2026-10-10).
@@ -239,7 +257,7 @@ struct HomeView: View {
         // this is the mechanism iOS uses for its own pinned bars, it does not
         // touch the shelves at all, and the scroll view gets the inset for
         // free so nothing hides under it.
-        .safeAreaInset(edge: .top, spacing: 0) {
+        .overlay(alignment: .top) {
             VStack(alignment: .leading, spacing: 20) {
                     HStack(alignment: .firstTextBaseline) {
                         Text("Discover")
@@ -281,8 +299,16 @@ struct HomeView: View {
             .padding(.horizontal, 16)
             .padding(.top, 4)
             .padding(.bottom, 10)
-            // Opaque, or the shelves show through it as ghost text.
-            .background(Brand.ground)
+            // Opaque, or the shelves show through it as ghost text, and up
+            // under the status bar so nothing shows there either.
+            .background(Brand.ground.ignoresSafeArea(edges: .top))
+            .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { headerHeight = $0 }
+            .offset(y: headerHidden ? -(headerHeight + 80) : 0)
+        }
+        // While the header is away, the status bar keeps a solid strip so
+        // the shelves do not run under the clock.
+        .overlay(alignment: .top) {
+            Brand.ground.frame(height: 0).ignoresSafeArea(edges: .top)
         }
         .brandGround()
         // Explore's list face, named the way its map face is ("explore-map"),
