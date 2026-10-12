@@ -1767,13 +1767,21 @@ struct TreeDetail: View {
         // is"). On a tree that already has one it was a second camera two
         // centimetres from the one in the bar, and the bar is where he wants
         // the act promoted.
-        if mine == nil, tree.photo == nil {
+        //
+        // ON EVERY TREE NOW, AND SAYING WHAT IT DOES (Hidde, 2026-10-12: "i
+        // still dont see an add photograph button on the tree detailpage").
+        // This reverses the 2026-08-26 ruling above: Google Maps keeps an
+        // "Add photos" control on a place's photographs whether it has any
+        // or not (CONVENTIONS.md, "Adding a photograph of a place"), and a
+        // bare camera icon on only some trees was a control nobody found.
+        if mine == nil {
             Button { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
-                Image(systemName: "camera.fill")
-                    .font(.system(size: 15, weight: .semibold))
+                Label("Add photo", systemImage: "camera.fill")
+                    .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Brand.ink)
-                    .frame(width: 44, height: 44)
-                    .background(.regularMaterial, in: .circle)
+                    .padding(.horizontal, 14)
+                    .frame(minHeight: 44)
+                    .background(.regularMaterial, in: .capsule)
                     .padding(10)
             }
             .buttonStyle(.plain)
