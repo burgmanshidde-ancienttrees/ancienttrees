@@ -140,6 +140,10 @@ struct CollectSheet: View {
     /// Further photographs chosen together with the first one, at most
     /// `Sightings.maxExtras`. The first stays the tree's picture.
     @State private var extras: [UIImage] = []
+    /// Whether the tick that led to the last screen was a NEW one (2026-10-12,
+    /// Hidde: adding more photos to a tree already collected "shouldnt say you
+    /// found"). True by default so every other way into .ticked is unchanged.
+    @State private var newFind = true
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
     /// is up, and the record must not quietly move.
@@ -663,6 +667,7 @@ struct CollectSheet: View {
     private func claim(_ t: Tree, image: UIImage, at here: (lat: Double, lng: Double)) {
         let isNewTick = !saved.isVisited(t.id)
         if isNewTick { saved.toggleVisited(t.id) }
+        newFind = isNewTick
         // WHERE THE PHONE STOOD, NOT WHERE WE THINK THE TREE IS (2026-09-12).
         // This used to store t.lat/t.lng, so every sighting of one of our
         // trees came back reading zero metres from our own pin: an echo of a
@@ -1107,11 +1112,13 @@ struct CollectSheet: View {
     /// and the app's job at that exact second is to tell them what it is.
     private func tickedState(_ t: Tree) -> some View {
         VStack(spacing: 0) {
-            SheetIconTile(symbol: "checkmark.seal.fill").padding(.bottom, 16)
-            sheetTitle("You found \(t.name)")
+            SheetIconTile(symbol: newFind ? "checkmark.seal.fill" : "photo.fill").padding(.bottom, 16)
+            // A tree already in your trees is not found again: the photo is
+            // the news, so the title says that and nothing celebrates.
+            sheetTitle(newFind ? "You found \(t.name)" : "Photo added to \(t.name)")
             sheetMessage(subtitle(t))
-            if let first = Self.firstOf(tree: t, visited: saved.entries,
-                                        trees: catalogue.trees) {
+            if newFind, let first = Self.firstOf(tree: t, visited: saved.entries,
+                                                 trees: catalogue.trees) {
                 milestone(first).padding(.top, 18)
             }
             // THE ONE MOMENT THIS QUESTION CAN BE ASKED HONESTLY. Somebody is
@@ -1128,6 +1135,9 @@ struct CollectSheet: View {
                 // bevestiging is wel heel nice maar dan moet je wel 100% zeker
                 // weten of dat m was"): a grey pill the same size as Done,
                 // always shown, never a grey link in the footnote size.
+                // Not on a tree you had already: the button un-ticks, and that
+                // would take back a visit made on another day.
+                if newFind {
                 Button("I am not sure it was this one") {
                     if case .ticked(let id) = stage { saved.toggleVisited(id) }
                     // DOUBT IS NOT DENIAL, and this line used to treat it as one.
@@ -1148,13 +1158,15 @@ struct CollectSheet: View {
                 }
                 .buttonStyle(SheetButtonStyle(kind: .secondary))
                 .accessibilityIdentifier("collect-not-this-one")
+                }
             }
             .padding(.top, 22)
-            // The same sentence as the submit screen: Hidde's ruling covers a
-            // tree we ALREADY map, so somebody told only there is not told.
-            sheetFootnote("It is in your trees now, with your photograph.")
-            sheetFootnote("We may use your photograph on the tree's page and when we share Ancient Trees on social media.")
-                .padding(.top, -8)
+            // What we may do with a photograph lives in the terms, not on this
+            // screen (Hidde, 2026-10-12: "it shouldnt mention what we do with
+            // photos, that is in the terms"). It replaces the on-screen line
+            // of 2026-09-02; /terms "What you send us" says it in full.
+            sheetFootnote(newFind ? "It is in your trees now, with your photograph."
+                                  : "It is with this tree in your trees.")
         }
     }
 
