@@ -426,11 +426,10 @@ struct MapTab: View {
         .environment(\.sheetFullInset, searchBottom > 0 ? searchBottom + 10 : 0)
         // Nothing to list, nothing to pull up.
         .environment(\.sheetLocked, nothingToList)
-        .onChange(of: nothingToList, initial: true) { _, empty in
-            if empty && sheetHeight != .peek {
-                withAnimation(.spring(duration: 0.28)) { sheetHeight = .peek }
-            }
-        }
+        // No automatic collapse: the count passes through zero while the
+        // map settles at launch, and collapsing on that pulled the list down
+        // under people (the full UI suite caught it). Locked is enough: an
+        // empty list cannot be pulled up.
         .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
         // AT FULL HEIGHT ONLY, which is his own correction within the minute:
         // "de map floating knop op de map pagina is overbodig" and then, having
