@@ -621,5 +621,64 @@
    "kind": "flowers",
    "label": "May, when the crown carries its white flower candles"
   }
+ },
+ {
+  "id": "vie_057",
+  "name": "The Traklgasse Plane",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "not documented",
+  "girth_cm": 325,
+  "height_m": 18,
+  "location": {
+   "address": "Traklgasse, in front of nos. 11 and 13, Grinzing, Doebling (19th district)",
+   "latitude": 48.247199,
+   "longitude": 16.338218,
+   "neighbourhood": "Grinzing, Doebling (19th district)"
+  },
+  "verified_sources": [
+   "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3257537, Platane, 19., Traklgasse 11)",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (ND 473, protected 1969-03-18, 'Traklgasse, vor Nr. 11 und 13', about 18 m tall, 'shapes the look of Traklgasse')",
+   "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 28 street tree N114: Platanus x acerifolia, 325 cm, height class 21-25 m, crown 10-12 m, 1.3 m from the register point)"
+  ],
+  "official_register": {
+   "name": "Stadt Wien, Naturdenkmal Nr. 473 (data.wien.gv.at NATDENKMALPKTOGD, register_id 3257537)",
+   "url": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/naturdenkmaeler/bezirk-19.html"
+  },
+  "access": "Free. Street tree on the public pavement of Traklgasse, a residential street; view it from the road, no entry needed.",
+  "transport": "Nearest stop not verified.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "- Naturdenkmal Nr. 473, protected 18 Mar 1969. Wikipedia list (copying the city list): 'The tree, about 18 m tall, shapes the look of Traklgasse'; address 'Traklgasse, vor Nr. 11 und 13'. The Wikipedia name field also lists a Pyramidenpappel (Populus nigra 'Italica') for this ND number; the data.wien.gv.at register point is a single Platane, species Platanus x hybrida.\n- Cadastre today (MA 28, tree number N114, the N marks the monument): Platanus x acerifolia, girth 325 cm, height class 21-25 m, crown 10-12 m. The cadastre's planting-year field says 1830, but no source ties that to an age, so it is not used as one; age left undocumented.\n- Pin: register point 48.247199,16.338233 (Wikipedia) / 16.338218 (WFS) and cadastre N114 at 48.24719843,16.33821657 agree within about 1 m; the neighbours in the cadastre are lindens of 86 to 157 cm, so the 325 cm tree is the unmistakable one. Confirmed.\n- Alive: FLAGGED. lifecheck.py returned NONE. Commons category 'Wiener Naturdenkmal 473 (Wien-Doebling)' holds two photographs dated 2012-07-18 (GuentherZ) of the plane in leaf; the cadastre still carries the tree. Nothing newer found.\n- Neighbour: Naturdenkmal 560, a plane at Traklgasse 9 (girth 2.23 m at 1 m height at designation 1973, register coordinate 48.246875,16.338456), about 40 m away; that register id was already worked by an earlier pass.\n- Access: public street, MA 28 tree, not a garden or school.\n- Photo in hand: Commons 'Naturdenkmal 473 2012-07-18 3699 Wien19 Traklgasse11 Platane GuentherZ.jpg'. Licence not read in this pass; not looked at.",
+  "story": "Vienna protected this plane in 1969 for a reason few trees are given: it shapes the look of its street.\n\nThat is the city's own wording for Natural Monument 473, listed on 18 March 1969 on Traklgasse in Grinzing, in front of numbers 11 and 13. It was then about 18 metres tall. The city's tree inventory now puts it in the 21 to 25 metre height class, with a trunk 3.25 metres round and a crown 10 to 12 metres across.\n\nOn a quiet residential street, that trunk is hard to miss. The other street trees on this stretch are lindens between 0.86 and 1.57 metres round, so the plane carries roughly twice the girth of the biggest of them.\n\nIt is not the only protected plane here. About 40 metres away, at Traklgasse 9, stands Natural Monument 560, a second plane, listed in 1973 with a trunk then 2.23 metres round. The two make one short stop.\n\nOne loose end in the paperwork: the published list of Döbling's monuments also names a Lombardy poplar under number 473. The city's register point holds a single tree, and it is this plane.\n\nThe newest photographs we know of date from July 2012, though the inventory still carries the tree. Nobody has dated it either. If you walk past, tell us how it looks, and if you know when it was planted, tell us that too.",
+  "how_to_recognise": "You can recognise it by the trunk, 3.25 metres round, about twice the girth of the lindens along the street. It stands on the pavement in front of Traklgasse 11 and 13; the smaller protected plane is at no. 9."
+ },
+ {
+  "id": "vie_058",
+  "name": "The Strassergasse Oak",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "not documented",
+  "girth_cm": 290,
+  "location": {
+   "address": "Strassergasse 2, Grinzing, Doebling (19th district)",
+   "latitude": 48.25483,
+   "longitude": 16.342362,
+   "neighbourhood": "Grinzing, Doebling (19th district)"
+  },
+  "verified_sources": [
+   "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:NATDENKMALPKTOGD (Naturdenkmal Wien, register_id 3257789, Stieleiche, 19., Strassergasse 2)",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Wien/D%C3%B6bling (ND 671, protected 1979-05-02, 'because of its size, crown form and as a historic remnant of the Grinzing village scene')",
+   "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:BAUMKATOGD (Baumkataster MA 28 street tree N201, Strassergasse: Quercus robur, 290 cm, height class 16-20 m, crown 19-21 m, 0.7 m from the register point)"
+  ],
+  "official_register": {
+   "name": "Stadt Wien, Naturdenkmal Nr. 671 (data.wien.gv.at NATDENKMALPKTOGD, register_id 3257789)",
+   "url": "https://www.wien.gv.at/umweltschutz/naturschutz/gebiet/naturdenkmaeler/bezirk-19.html"
+  },
+  "access": "Free. Tree beside the public road at Strassergasse 2 (MA 28 street and green space tree); view it from the pavement, no entry needed.",
+  "transport": "Nearest stop not verified.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "- Naturdenkmal Nr. 671, protected 2 May 1979 'wegen seiner Groesse, Kronenbildung und seiner Eigenschaft als historischer Rest des Grinzinger Ortsbildes' (for its size, crown form and as a historic remnant of the Grinzing village scene).\n- Cadastre today (MA 28, tree number N201, N marks the monument): Quercus robur, girth 290 cm, height class 16-20 m, crown class 19-21 m (an unusually wide crown for a trunk that size). Planting-year field says 1920; no source ties that to this tree as an age and it would contradict a historic-remnant designation, so age is left undocumented.\n- Pin: register 48.25483,16.342362 (WFS), 48.254818,16.34236 (Wikipedia), cadastre N201 48.25483104,16.34236771; all within about 1 m, and it is the only tree in a 30 m box. Confirmed.\n- Alive: FLAGGED on lifecheck.py (NONE), but Commons category 'Wiener Naturdenkmal 671 (Wien-Doebling)' holds two photo sets, 2012-07-18 and 2012-07-31 (GuentherZ) and a later series 'Wiener Naturdenkmal 671 - Stieleiche (Doebling) a to h' (upload date and photographer not read); the cadastre still carries it. Nothing dated in the last few years seen.\n- Same street, 80 to 100 m north: the Strassergasse 8-12 group (yew ND 213, giant sequoia ND 215, Nordmann fir ND 214, protected 1941), register ids already worked by an earlier pass.\n- Access: public road, not a garden or school.\n- Photo in hand: Commons 'Naturdenkmal 671 2012-07-31 0003 Wien19 Strassergasse Stieleiche GuentherZ.JPG'. Licence not read in this pass; not looked at.",
+  "story": "This oak's crown spreads about 20 metres, roughly as wide as the tree is tall.\n\nThe city's tree inventory puts the crown in the 19 to 21 metre class and the height at 16 to 20 metres, on a trunk 2.90 metres round. That is an unusually broad spread for a trunk of that size, and the oak has the room to show it: it is the only tree within about 15 metres, standing beside the road at Strassergasse 2 in Grinzing.\n\nVienna made it Natural Monument 671 on 2 May 1979 and wrote down three reasons: its size, the form of its crown, and its standing as a historic remnant of the Grinzing village scene. A city does not often protect a tree for the street it belongs to as much as for the tree itself. This one got both.\n\nWalk 80 to 100 metres north up the same street and you reach three more protected trees at Strassergasse 8 to 12, a yew, a giant sequoia and a Nordmann fir, all listed in 1941. A broadleaf oak and a Californian conifer within a short stroll of each other make an odd and pleasing pair.\n\nNobody has dated the oak. The newest dated photographs we know of were taken in July 2012, and the city's inventory still carries it. If you pass, tell us how it looks, and if you know when it was planted, tell us that too.",
+  "how_to_recognise": "You can recognise it by the crown, about 20 metres across on a trunk 2.9 metres round, with no other tree within about 15 metres. It stands beside the road at Strassergasse 2, some 80 metres south of the yew and sequoia group."
  }
 ]

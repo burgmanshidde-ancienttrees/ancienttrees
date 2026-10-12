@@ -11433,6 +11433,22 @@
   "2026-10-12": [
    {
     "date": "2026-10-12",
+    "target": "vienna",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 2,
+    "note": "deepen: Baumkataster girth joined to Naturdenkmal register by coordinate; 2 rich trees, 42 register rows timed out unscanned"
+   },
+   {
+    "date": "2026-10-12",
+    "target": "vienna",
+    "kind": "write",
+    "tokens": 75000,
+    "trees": 2,
+    "note": "vie_057, vie_058 plus German overlay; slc_006 written but held on address/coordinate conflict"
+   },
+   {
+    "date": "2026-10-12",
     "target": "nl-ghent-den-bosch",
     "kind": "translate",
     "tokens": 95000,
