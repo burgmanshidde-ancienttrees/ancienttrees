@@ -384,20 +384,32 @@ struct MapTab: View {
         .overlay(alignment: .top) {
             if !searching {
                 VStack(spacing: 8) {
+                    // THE SEARCH FIELD STAYS WHERE IT IS at every height
+                    // (Hidde, 2026-10-12: "the search bar on map is placed
+                    // ugly when scrolling the list all the way to the top
+                    // cant it just stay at place where it was"). Apple Maps
+                    // and Google Maps keep one field in one place over the map
+                    // and over the full list alike. It used to fade out here
+                    // and a second copy appeared lower down, inside the list.
                     searchField
-                    whereChip
-                    filterRow
-                }
+                    VStack(spacing: 8) {
+                        whereChip
+                        filterRow
+                    }
                 // LEAVES WITH THE MAP (2026-10-02, the Polarsteps transition):
                 // this chrome controls the map, and once the sheet is the page
                 // there is no map under it. It is drawn here as an overlay
                 // rather than in MapWithSheet's `floating` slot (which fades
                 // by itself) because the search sheet above needs it gone from
                 // the hierarchy; so it reads the same progress the slot does.
-                .opacity(1 - pageProgress)
-                .allowsHitTesting(pageProgress < 0.5)
+                    .opacity(1 - pageProgress)
+                    .allowsHitTesting(pageProgress < 0.5)
+                }
             }
         }
+        // The page's chevron would sit under the field; this screen has the
+        // "Map" button at the foot of the list for the way back instead.
+        .environment(\.sheetPageClose, false)
         .onPreferenceChange(SheetPageProgressKey.self) { pageProgress = $0 }
         // AT FULL HEIGHT ONLY, which is his own correction within the minute:
         // "de map floating knop op de map pagina is overbodig" and then, having
@@ -649,9 +661,6 @@ struct MapTab: View {
             // heads a list in iOS Settings. In the list and not in the sheet's
             // header, because the header is the grip that drags the sheet back
             // down, and a button there takes the drag (CI caught exactly that).
-            if sheetHeight == .full && !searching {
-                pageSearchField.padding(.bottom, 6)
-            }
             if shownWalk != nil && sheetHeight != .peek { walkCard }
             if let t = arrived, sheetHeight != .peek { arrivalCard(t) }
             list
@@ -1157,7 +1166,6 @@ struct MapTab: View {
 
     /// The same field, in the sheet's header at full height, under its own
     /// identifier so a test can tell the two apart.
-    private var pageSearchField: some View { searchButton(id: "map-search-field-page") }
 
     private var searchField: some View { searchButton(id: "map-search-field") }
 

@@ -459,12 +459,30 @@ struct HomeView: View {
     }
 
     /// A shelf of tree tiles, rounded: see shelf().
-    private func tileShelf(_ trees: [Tree]) -> some View {
+    private func tileShelf(_ trees: [Tree], ghosts: Int = 0) -> some View {
         shelf {
             ForEach(trees) { t in
                 NavigationLink(value: Route.tree(t.id)) { CollectedTile(kind: .ours(t), city: tag(t)).frame(width: Self.tileWidth).clipShape(Self.tileShape) }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-card")
+            }
+            // Grey bookmark tiles finishing a short row, the empty row's own
+            // shape, so one or two kept trees still read as a list to fill
+            // (Hidde, 2026-10-12: "add the grey box that suggest to get more
+            // in the row").
+            ForEach(0..<ghosts, id: \.self) { _ in
+                Button { navigator.selectTab = 0 } label: {
+                    Brand.surfaceMuted
+                        .frame(width: Self.tileWidth, height: Self.tileWidth * 4 / 3)
+                        .clipShape(Self.tileShape)
+                        .overlay {
+                            Image(systemName: "bookmark")
+                                .font(.system(size: 22, weight: .semibold))
+                                .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                        }
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Find trees near you")
             }
         }
     }
@@ -534,7 +552,7 @@ struct HomeView: View {
                     navigator.openWantToVisit = true
                     navigator.selectTab = 2
                 })
-                tileShelf(Array(mine.prefix(3)))
+                tileShelf(Array(mine.prefix(3)), ghosts: max(0, 3 - mine.count))
                 // A SHORT LIST STILL INVITES MORE (Hidde, 2026-10-12): with
                 // one or two trees the line and the way to the map stay,
                 // as on the empty row.

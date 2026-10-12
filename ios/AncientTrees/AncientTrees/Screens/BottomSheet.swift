@@ -270,6 +270,7 @@ struct BottomSheet<Header: View, Content: View>: View {
     /// which is a worse bug than the one being fixed.
     @GestureState private var dragging = false
     @Environment(\.floatingBarDepth) private var barDepth
+    @Environment(\.sheetPageClose) private var pageClose
     /// Whether the list inside is scrolled to its very top. The handoff downward
     /// is only allowed from there, because taking the gesture mid-list would
     /// yank the sheet away while somebody is reading.
@@ -403,8 +404,8 @@ struct BottomSheet<Header: View, Content: View>: View {
                     // root sets floatingBarDepth to zero on a pushed page, so
                     // that is the signal, the same one the list uses for its
                     // bottom margin.
-                    .opacity(barDepth > 0 ? progress : 0)
-                    .allowsHitTesting(barDepth > 0 && progress > 0.9)
+                    .opacity(barDepth > 0 && pageClose ? progress : 0)
+                    .allowsHitTesting(barDepth > 0 && pageClose && progress > 0.9)
                     .accessibilityLabel("Back to the map")
                     .accessibilityIdentifier("sheet-page-close")
                 }
@@ -601,5 +602,17 @@ struct SheetPageProgressKey: PreferenceKey {
     static let defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = max(value, nextValue())
+    }
+}
+
+
+/// Whether the full-height page shows its chevron back to the map. Off on the
+/// map tab, whose search field stays in that corner at every height and whose
+/// list carries a "Map" button for the way back (2026-10-12).
+private struct SheetPageCloseKey: EnvironmentKey { static let defaultValue = true }
+extension EnvironmentValues {
+    var sheetPageClose: Bool {
+        get { self[SheetPageCloseKey.self] }
+        set { self[SheetPageCloseKey.self] = newValue }
     }
 }
