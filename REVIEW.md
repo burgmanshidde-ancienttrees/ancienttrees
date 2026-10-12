@@ -13,6 +13,17 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-12
+
+Web half: read the header search commit (baf8726c: strings in all eight languages, home and map hide the icon by CSS), the cookie bar copy, the register-matching commit (52ec9b7f) as built on turin and rouen, and scanned portland, trento, alicante, rouen, kaunas, oslo, setubal, valencia and barcelona for em dashes and banned words: none found.
+
+- WARN /turin/plane-of-the-giardini-cavour (and at least nine other built tree pages; source: 52ec9b7f, `verified_sources` in data/cities/*.json): register_match.py appended internal file names to the public Sources list, so a visitor reads "piemonte-alberi-monumentali.json, no. 003/L219/TO/01" as a bullet beside the real links (rouen carries "rouen-foret-arbres-remarquables.json, no. 6" in the data). That is code leaking as text, and it names no reader-checkable source. Suggest storing the register's public URL plus the number, or rendering the number without the file name.
+- WARN tree pages with a reader photograph (site/src/lib/i18n.ts, `photoDeleteBody`, from d6b02f57): the "Delete this photo?" sheet says "If it is already on the tree's page, it stays there." A person who taps Delete photo on their own picture is told it stays public, so the button promises removal it does not do. Either the label should say what it does ("Remove from My trees") or deletion has to reach the page; the takedown route (photo_takedown.py) is the path that actually removes it. Same sentence is in all eight languages.
+- NOTE docs (Monday audit, limited to the cut CLAUDE.md and a spot read of GO_TO_MARKET.md): CLAUDE.md names Phase 1 as traction and Phase 2 as app and money, while GO_TO_MARKET.md (written 2026-07-21) uses its own Phase 1 "first pulse. A few hundred real visitors"; two phase schemes under one word. Suggest GO_TO_MARKET.md say which of its phases map to CLAUDE.md's, or drop its numbering. No other rot found in the files read; PRINCIPLES.md, PRODUCT_IA.md, BACKLOG.md and DECISIONS.md were not audited in depth.
+- NOTE copy (Monday English reading): the English strings added this week (cookie bar, "Search a city or tree", "Delete this photo?", "Photo deleted") read well and are idiomatic.
+
+---
+
 ## 2026-10-10
 
 Web half: read brighton, glasgow, london, krakow and florence (titles, meta descriptions and ages agree; no em dashes or banned words) and the Brighton Preston Twins story after today's edit.
