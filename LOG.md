@@ -2,6 +2,21 @@
 
 <!-- archive-index -->
 
+
+## 2026-10-12 evening, session: Hidde's app test, round two
+
+What changed in the product (app unless said):
+- Crashes: general feedback with no tree crashed every launch (six of his eight phone crashes); fixed and tested. The silhouette crash was already fixed that afternoon.
+- Sign in first, then carry on: every gated action now runs after the sign-in sheet has gone (photo, collect, save, vote); Collect on a tree page asks before its overlay.
+- Adding photos: a photo from a tree's page goes on that tree without "which one is it"; the list picks on tap with an info button to compare; up to four photos at once, no photo-library permission prompt, decoded downsampled.
+- "Add a photo" on every tree page, web and app (web: visible under the name on photographed trees, was hidden behind Collect).
+- A deleted photo no longer comes back: merge skips and retries deletes the server has not confirmed.
+- Map: the list no longer flies the map to the top card; the full list stops under the search field (Google Maps); with no trees in view the list stays down.
+- Discover: header slides away on scroll and returns on scroll up; tapping Discover again scrolls to the top; Want to visit fills a short row with grey tiles and, signed out, asks to sign in; 24 species.
+- Friend search: "Couldn't find that person", right under the field.
+
+Open: the crash while adding a friend left no report on his phone; needs a reproduction or Xcode's crash screen.
+
 ## 2026-10-12 session: 13 felled Dutch trees off the site
 
 - **Retired 13 trees the national register marks Dood/geveld**, each written from that exact LRMB row (same coordinates and address) but citing only the register's home page, so preflight's number check never saw them. The inspection layer confirms 12: Roosendaal roo_003 (felled 2014), roo_005 (gone 2016), roo_007 (felled 2005), roo_010 (dead 1998, the lime a 09-08 session had put back); Sittard-Geleen sit_003, sit_004, sit_006 (all emergency fellings 2010 to 2012), sit_008 (felled 2008); Haarlemmermeer hrl_001, hrl_003 (an apartment block at the address), hrl_004; Zaanstad zaa_009 (felled 2014). Emmen's Tiger Oak (emm_004) has no felling record: status 5, last inspection 2019 noted decay inside the trunk, nothing since; retired on the register's own status, and the lead says to restore it if a reader's dated photo shows it standing.
