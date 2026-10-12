@@ -86,7 +86,8 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     var s = document.querySelector('.at-snack');
     if (!s || !text) return;
     s.querySelector('.at-snack-text').textContent = text;
-    var act = s.querySelector('.at-snack-act');
+    var act = s.querySelector('button.at-snack-act');
+    var lk = s.querySelector('a.at-snack-link'); if (lk) lk.hidden = true;
     act.hidden = false;
     act.textContent = s.dataset.undo;
     act.onclick = function() { hideSnack(); undo(); };
@@ -98,7 +99,8 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
     var s = document.querySelector('.at-snack');
     if (!s) return;
     s.querySelector('.at-snack-text').textContent = on ? s.dataset.added : s.dataset.removed;
-    var act = s.querySelector('.at-snack-act');
+    var act = s.querySelector('button.at-snack-act');
+    var lk = s.querySelector('a.at-snack-link'); if (lk) lk.hidden = true;
     act.hidden = false;
     act.textContent = on ? s.dataset.view : s.dataset.undo;
     act.onclick = function() {
@@ -117,17 +119,26 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
   // from the collect sheet said its result under a button far down the page,
   // so on a phone a photograph went off and nothing seemed to happen. No
   // action label means a line alone; stay keeps it up until the next call.
+  // onAct may be a url, and then the action is a real link rather than a
+  // scripted button. With an action the bar stays ten seconds, Material's
+  // figure for a snackbar somebody has to read and then tap.
   window.atSnack = function(text, actLabel, onAct, stay) {
     var s = document.querySelector('.at-snack');
     if (!s || !text) return;
     s.querySelector('.at-snack-text').textContent = text;
-    var act = s.querySelector('.at-snack-act');
-    act.hidden = !actLabel;
-    act.textContent = actLabel || '';
-    act.onclick = function() { hideSnack(); if (onAct) onAct(); };
+    var btn = s.querySelector('button.at-snack-act');
+    var link = s.querySelector('a.at-snack-link');
+    var isUrl = typeof onAct === 'string';
+    btn.hidden = !actLabel || isUrl;
+    btn.textContent = isUrl ? '' : (actLabel || '');
+    btn.onclick = function() { hideSnack(); if (onAct && !isUrl) onAct(); };
+    if (link) {
+      link.hidden = !(actLabel && isUrl);
+      if (isUrl) { link.href = onAct; link.textContent = actLabel; }
+    }
     s.hidden = false;
     clearTimeout(snackTimer);
-    if (!stay) snackTimer = setTimeout(hideSnack, 5000);
+    if (!stay) snackTimer = setTimeout(hideSnack, actLabel ? 10000 : 5000);
   };
   document.addEventListener('at:signedout', function() {
     mine = {};

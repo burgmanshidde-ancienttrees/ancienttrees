@@ -614,6 +614,9 @@ window.atPaintNav = function(inNow) {
        data-view={ui(lang).wantView} data-undo={ui(lang).wantUndo} data-href="/saved">
     <span class="at-snack-text"></span>
     <button type="button" class="at-snack-act"></button>
+    {/* A real link for an action that only goes somewhere (2026-10-12: "See
+        it in My trees" did not take him there), so it works without script. */}
+    <a class="at-snack-act at-snack-link" href="/account" hidden></a>
   </div>
 </body>
 </html>

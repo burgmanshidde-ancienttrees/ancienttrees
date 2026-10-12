@@ -3156,6 +3156,7 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
   min-height: 52px; padding: 0 8px 0 16px; background: var(--cream); color: var(--ink); border: 1px solid #E6E6E6;
   border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.16); font-weight: 600; font-size: 15px; }
 .at-snack[hidden], .at-snack-act[hidden] { display: none; }
+a.at-snack-act { display: inline-flex; align-items: center; font-weight: 700; text-decoration: none; }
 .at-snack-text { flex: 1; min-width: 0; }
 .at-snack-act { min-height: 44px; min-width: 44px; padding: 0 10px; border: 0; background: none; color: var(--moss);
   font: inherit; font-weight: 700; cursor: pointer; }
@@ -3248,3 +3249,13 @@ dialog.at-sheet .at-sheet-fine[hidden] { display: none; }
 @media not (pointer: fine) {
   dialog.at-sheet .only-fine, dialog.at-sheet .sheet-b.only-fine { display: none; }
 }
+
+/* Your photographs of this tree (2026-10-12), the app's yourPhotos strip:
+   140px squares, the date under each, a row that scrolls sideways. */
+.td-yours[hidden] { display: none; }
+.td-yours { margin: 20px 0 4px; }
+.td-yours-h { font-size: 1.05rem; margin: 0 0 10px; }
+.td-yours-row { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.td-yours-row::-webkit-scrollbar { display: none; }
+.td-yours-shot { flex: 0 0 140px; display: flex; flex-direction: column; gap: 6px; color: var(--ink-light); font-size: 12px; text-decoration: none; }
+.td-yours-shot img { width: 140px; height: 140px; object-fit: cover; border-radius: 12px; display: block; background: var(--cream-dark); }

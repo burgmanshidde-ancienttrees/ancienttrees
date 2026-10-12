@@ -387,6 +387,9 @@ export interface UIStrings {
   /** "Jaegersborg Dyrehave, 12 km north". `dir` arrives in English. */
   dayTripWhere: (place: string, km: number, dir: string) => string;
   addPhotoOnPage: string;
+  /** Heading over your own photographs of this tree, the app's "Your photograph". */
+  yourPhoto: string;
+  yourPhotos: string;
   /** The link from the acknowledgement to where the photograph now lives. */
   addPhotoSeeMine: string;
   /** The optional second photograph when somebody adds a tree: the sign
@@ -715,6 +718,8 @@ const EN: UIStrings = {
   dayTripAway: "A day trip away",
   dayTripWhere: (place, km, dir) => `${place}, ${km} km ${dir}`,
   addPhotoOnPage: "Your photo is on this page",
+  yourPhoto: "Your photograph",
+  yourPhotos: "Your photographs",
   addPhotoSeeMine: "See it in My trees",
   havePhotographed: "Have you photographed this tree?",
   havePhotographedLine: "If yours shows it better than the picture above, it can take its place, or stand beside it.",
@@ -995,6 +1000,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     dayTripAway: "A un día de excursión",
     dayTripWhere: (place, km, dir) => `${place}, a ${km} km ${({"north": "al norte", "north-east": "al noreste", "east": "al este", "south-east": "al sureste", "south": "al sur", "south-west": "al suroeste", "west": "al oeste", "north-west": "al noroeste"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Tu foto está en esta página",
+    yourPhoto: "Tu fotografía",
+    yourPhotos: "Tus fotografías",
     addPhotoSeeMine: "Verla en Mis árboles",
     havePhotographed: "¿Has fotografiado este árbol?",
     havePhotographedLine: "Si la tuya lo muestra mejor que la foto de arriba, puede ocupar su lugar, o aparecer junto a ella.",
@@ -1275,6 +1282,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     dayTripAway: "Una gita in giornata",
     dayTripWhere: (place, km, dir) => `${place}, ${km} km ${({"north": "a nord", "north-east": "a nord-est", "east": "a est", "south-east": "a sud-est", "south": "a sud", "south-west": "a sud-ovest", "west": "a ovest", "north-west": "a nord-ovest"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "La tua foto è su questa pagina",
+    yourPhoto: "La tua fotografia",
+    yourPhotos: "Le tue fotografie",
     addPhotoSeeMine: "Vedila in I miei alberi",
     havePhotographed: "Hai fotografato questo albero?",
     havePhotographedLine: "Se la tua foto lo mostra meglio di quella qui sopra, può prenderne il posto, o comparire accanto ad essa.",
@@ -1555,6 +1564,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     dayTripAway: "Een dagje uit",
     dayTripWhere: (place, km, dir) => `${place}, ${km} km ${({"north": "ten noorden", "north-east": "ten noordoosten", "east": "ten oosten", "south-east": "ten zuidoosten", "south": "ten zuiden", "south-west": "ten zuidwesten", "west": "ten westen", "north-west": "ten noordwesten"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Je foto staat op deze pagina",
+    yourPhoto: "Jouw foto",
+    yourPhotos: "Jouw foto's",
     addPhotoSeeMine: "Bekijk hem bij Mijn bomen",
     havePhotographed: "Heb je deze boom gefotografeerd?",
     havePhotographedLine: "Als jouw foto hem beter laat zien dan de foto hierboven, kan die de plek innemen, of ernaast komen te staan.",
@@ -1835,6 +1846,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     dayTripAway: "Ein Tagesausflug",
     dayTripWhere: (place, km, dir) => `${place}, ${km} km ${({"north": "nördlich", "north-east": "nordöstlich", "east": "östlich", "south-east": "südöstlich", "south": "südlich", "south-west": "südwestlich", "west": "westlich", "north-west": "nordwestlich"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Dein Foto ist auf dieser Seite",
+    yourPhoto: "Dein Foto",
+    yourPhotos: "Deine Fotos",
     addPhotoSeeMine: "In Meine Bäume ansehen",
     havePhotographed: "Hast du diesen Baum fotografiert?",
     havePhotographedLine: "Wenn dein Foto ihn besser zeigt als das oben, kann es dessen Platz einnehmen oder daneben stehen.",
@@ -2115,6 +2128,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     dayTripAway: "Um passeio de um dia",
     dayTripWhere: (place, km, dir) => `${place}, a ${km} km ${({"north": "a norte", "north-east": "a nordeste", "east": "a leste", "south-east": "a sudeste", "south": "a sul", "south-west": "a sudoeste", "west": "a oeste", "north-west": "a noroeste"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "A sua foto está nesta página",
+    yourPhoto: "A sua fotografia",
+    yourPhotos: "As suas fotografias",
     addPhotoSeeMine: "Ver em As minhas árvores",
     havePhotographed: "Fotografou esta árvore?",
     havePhotographedLine: "Se a sua mostrar melhor do que a foto acima, pode ocupar o lugar dela, ou aparecer ao lado.",
@@ -2395,6 +2410,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     dayTripAway: "Une excursion d’une journée",
     dayTripWhere: (place, km, dir) => `${place}, à ${km} km ${({"north": "au nord", "north-east": "au nord-est", "east": "à l’est", "south-east": "au sud-est", "south": "au sud", "south-west": "au sud-ouest", "west": "à l’ouest", "north-west": "au nord-ouest"} as Record<string, string>)[dir] ?? dir}`,
     addPhotoOnPage: "Votre photo est sur cette page",
+    yourPhoto: "Votre photo",
+    yourPhotos: "Vos photos",
     addPhotoSeeMine: "La voir dans Mes arbres",
     havePhotographed: "Avez-vous photographié cet arbre ?",
     havePhotographedLine: "Si la vôtre le montre mieux que la photo ci-dessus, elle peut prendre sa place, ou apparaître à côté.",
@@ -2674,6 +2691,8 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     dayTripAway: "日帰りで行ける木",
     dayTripWhere: (place, km, dir) => `${place}（中心から${({"north": "北", "north-east": "北東", "east": "東", "south-east": "南東", "south": "南", "south-west": "南西", "west": "西", "north-west": "北西"} as Record<string, string>)[dir] ?? dir}へ${km}km）`,
     addPhotoOnPage: "あなたの写真はこのページに掲載されています",
+    yourPhoto: "あなたの写真",
+    yourPhotos: "あなたの写真",
     addPhotoSeeMine: "アカウントで見る",
     havePhotographed: "この木を撮影しましたか?",
     havePhotographedLine: "上の写真より良く撮れていれば、それに差し替えるか、並べて掲載します。",

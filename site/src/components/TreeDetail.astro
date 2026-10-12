@@ -228,6 +228,17 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
         </div>
       </div>
 
+      {/* YOUR PHOTOGRAPHS OF THIS TREE, under the facts, as on the app's tree
+          page (TreeDetail.swift yourPhotos). The tree's own picture stays the
+          lead, yours is yours: CONVENTIONS.md, "Your own photograph of a place
+          somebody else maps". Filled by ADD_PHOTO_JS from the account; hidden
+          for anybody with none (Hidde, 2026-10-12: "i see the original photo
+          not the photo i had taken"). */}
+      <section class="td-yours" id="td-yours" hidden data-one={U.yourPhoto} data-many={U.yourPhotos}>
+        <h2 class="td-yours-h"></h2>
+        <div class="td-yours-row"></div>
+      </section>
+
       {/* READ MORE on the access and transport lines only, two lines each,
           expanded in place (AllTrails, App Store; Hidde, 2026-09-27). The
           story always shows in full: it is why the tree is worth the walk. */}

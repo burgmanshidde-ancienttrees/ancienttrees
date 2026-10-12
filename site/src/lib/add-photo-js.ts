@@ -110,19 +110,72 @@ export const ADD_PHOTO_JS = `
   // is written here while it waits and once it is on the page, which is what
   // the app's tree page says under your photographs. Your own rows only: the
   // policy on sightings is auth.uid() = user_id.
+  // YOUR PHOTOGRAPHS OF THIS TREE (2026-10-12), the app's yourPhotos strip:
+  // every photograph you sent of this tree, newest first, from your own rows
+  // (the policy on sightings is auth.uid() = user_id), each through a signed
+  // url that lasts an hour, the route My trees uses. And the one upgrade
+  // worth announcing beside the button: yours went on the page.
+  var yours = document.getElementById('td-yours');
+  var LOCALE = document.documentElement.lang || 'en';
+  function dayOf(iso) {
+    try { return new Date(iso).toLocaleDateString(LOCALE, { day: 'numeric', month: 'short', year: 'numeric' }); }
+    catch (e) { return ''; }
+  }
+  function paintYours(n) {
+    if (!yours) return;
+    yours.querySelector('.td-yours-h').textContent =
+      n === 1 ? yours.getAttribute('data-one') : yours.getAttribute('data-many');
+    yours.hidden = n === 0;
+  }
+  function addShot(url, iso, first) {
+    if (!yours) return;
+    var row = yours.querySelector('.td-yours-row');
+    var fig = document.createElement('a');
+    fig.className = 'td-yours-shot';
+    fig.href = url; fig.target = '_blank'; fig.rel = 'noopener';
+    var img = document.createElement('img');
+    img.src = url; img.alt = ''; img.loading = 'lazy';
+    var cap = document.createElement('span');
+    cap.textContent = dayOf(iso);
+    fig.appendChild(img); fig.appendChild(cap);
+    if (first && row.firstChild) row.insertBefore(fig, row.firstChild); else row.appendChild(fig);
+    paintYours(row.children.length);
+  }
+  function sign(token, path, then) {
+    fetch(SB + '/storage/v1/object/sign/sightings/' + path, {
+      method: 'POST',
+      headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ expiresIn: 3600 })
+    }).then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(j) {
+        if (!j || !j.signedURL) { then(null); return; }
+        then(j.signedURL.indexOf('http') === 0 ? j.signedURL : SB + '/storage/v1' + j.signedURL);
+      }).catch(function() { then(null); });
+  }
   (function state() {
     var s = session();
     if (!s || !treeId) return;
-    fetch(SB + '/rest/v1/sightings?select=status&photo=not.is.null&tree_id=eq.'
-          + encodeURIComponent(treeId) + '&order=taken_at.desc&limit=1',
+    fetch(SB + '/rest/v1/sightings?select=status,photo,taken_at&photo=not.is.null&tree_id=eq.'
+          + encodeURIComponent(treeId) + '&order=taken_at.desc&limit=12',
       { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token } })
       .then(function(r) { return r.ok ? r.json() : null; })
       .then(function(rows) {
-        if (!rows || !rows.length || busy || !note.hidden) return;
-        var st = rows[0].status;
+        if (!rows || !rows.length) return;
+        // Signed one by one but placed in order: each lands in its own slot.
+        var slots = rows.map(function() { return null; });
+        var done = 0;
+        rows.forEach(function(row, i) {
+          sign(s.access_token, row.photo, function(url) {
+            slots[i] = url; done++;
+            if (done === rows.length) {
+              slots.forEach(function(u, k) { if (u) addShot(u, rows[k].taken_at, false); });
+            }
+          });
+        });
+        if (busy || !note.hidden) return;
         // Only the upgrade is announced (2026-10-08): no "Sent to us" while
         // it waits, nothing after a no. The app's Sighting.photoState.
-        if (st !== 'published') return;
+        if (rows[0].status !== 'published') return;
         sayWithLink(msgOnPage);
       }).catch(function() {});
   })();
@@ -212,6 +265,7 @@ export const ADD_PHOTO_JS = `
         });
       }).then(function(r) {
         if (!r || !r.ok) throw new Error('row');
+        try { addShot(URL.createObjectURL(blob), new Date().toISOString(), true); } catch (e) {}
         btn.hidden = true;
         file.value = ''; if (cam) cam.value = '';
         sayWithLink(msgThanks);
@@ -223,7 +277,7 @@ export const ADD_PHOTO_JS = `
           if (window.atPaintSeen) window.atPaintSeen();
           var sb = document.querySelector('.seen-btn');
           if (window.atSnack) window.atSnack((sb && sb.getAttribute('data-l-done')) || 'Collected',
-            msgSeeMine, function() { location.href = '/account'; });
+            msgSeeMine, '/account');
         }
         collecting = false;
         if (window.at) at.track('tree-photo-sent');
