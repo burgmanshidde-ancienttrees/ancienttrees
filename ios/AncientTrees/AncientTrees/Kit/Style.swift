@@ -340,3 +340,21 @@ extension View {
     func brandSheetHandle() -> some View { modifier(BrandSheetHandle()) }
 }
 
+
+/// A scientific name set as botanists print it (2026-10-12, asked for by the
+/// National Botanic Gardens of Ireland): genus and epithet in italics, the
+/// hybrid sign, the rank words and a cultivar in quotes upright. "Platanus x
+/// acerifolia", "Ginkgo biloba var. epiphylla", "Ulmus glabra 'Camperdownii'".
+/// The website prints the same name the same way (site/src/lib/latin.ts).
+func scientificNameText(_ sci: String) -> Text {
+    let upright: Set<String> = ["x", "\u{00d7}", "subsp.", "ssp.", "var.", "f.", "sp.", "spp.", "cv.", "syn."]
+    var out = AttributedString(sci)
+    let ns = sci as NSString
+    let words = try? NSRegularExpression(pattern: "['\"\u{2018}\u{201c}][^'\"\u{2019}\u{201d}]*['\"\u{2019}\u{201d}]|\\S+")
+    for m in words?.matches(in: sci, range: NSRange(location: 0, length: ns.length)) ?? [] {
+        let w = ns.substring(with: m.range)
+        if upright.contains(w) || "'\"\u{2018}\u{201c}".contains(w.prefix(1)) { continue }
+        if let r = Range(m.range, in: out) { out[r].inlinePresentationIntent = .emphasized }
+    }
+    return Text(out)
+}

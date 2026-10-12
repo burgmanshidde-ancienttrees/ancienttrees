@@ -44,7 +44,7 @@ struct SpeciesView: View {
                         // italics: iNaturalist's taxon page, and the
                         // website's species page since 2026-10-03.
                         if let sci = catalogue.scientificName(of: commonName) {
-                            Text(sci).italic()
+                            scientificNameText(sci)
                                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                                 .accessibilityIdentifier("species-scientific")
                         }

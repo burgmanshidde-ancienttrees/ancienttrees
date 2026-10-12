@@ -168,7 +168,7 @@ export const SEARCH_WIDGET_JS = `
           // The scientific name under the common one, in italics, which is how
           // iNaturalist lays out a taxon row; it is also the only way a person
           // who typed the Latin can see why this row answered.
-          sec = (r.it.l ? '<i lang="la">' + escT(r.it.l) + '</i> &middot; ' : '') + r.it.count + ' mapped';
+          sec = (r.it.lh ? r.it.lh + ' &middot; ' : '') + r.it.count + ' mapped';
         } else {
           name = r.it.n;
           sec = escT(r.it.c);

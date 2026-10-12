@@ -1587,7 +1587,7 @@ struct TreeDetail: View {
                 // deserves a read more"). The story is why the tree is worth
                 // the walk and is capped at 250 words already; Read more is for
                 // the access and transport lines, which are the long ones.
-                Text(tree.story)
+                Text(tree.storyText)
                     .fixedSize(horizontal: false, vertical: true)
             }
         }

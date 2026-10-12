@@ -14,6 +14,7 @@ import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/sch
 import { fitTitle } from "../../lib/title";
 import { byCityListOrder, exploreCities } from "../../lib/city-order";
 import { isNoindexed } from "../../lib/noindex";
+import { latinHtml, sciNameHtml } from "../../lib/latin";
 
 export async function getStaticPaths() {
   const allCities = (await getCollection("cities")).filter(cityIsRenderable);
@@ -112,11 +113,11 @@ const speciesOgImage = speciesFaceUrl
   <main class="content-page">
     <Breadcrumbs items={crumbItems} />
     <h1>{common}</h1>
-    <p class="sci-name"><i lang="la">{scientific}</i></p>
+    <p class="sci-name" set:html={sciNameHtml(scientific)} />
     <p class="answer-first">
-      {firstSentence} We map {n} of them, in {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
+      <Fragment set:html={latinHtml(firstSentence)} /> We map {n} of them, in {byCity.size} cit{byCity.size === 1 ? "y" : "ies"}.
     </p>
-    {introRest && <div class="prose-block"><p>{introRest}</p></div>}
+    {introRest && <div class="prose-block"><p set:html={latinHtml(introRest)} /></div>}
     {sections.map(({ city, cslug, rows }) => (
       <Fragment>
         <h2><a class="sp-citylink" href={`/${cslug}`}>{city.data.city}</a></h2>

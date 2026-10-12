@@ -23,6 +23,7 @@ import { usablePhoto, imgSrcset, thumbUrl, creditRequired, creditText, creditLin
 import { ui } from "../lib/i18n";
 import { seasonChip } from "../lib/phenology";
 import { ageShort } from "../lib/age-short";
+import { latinHtml } from "../lib/latin";
 import SaveHeart from "./SaveHeart.astro";
 
 interface Props {
@@ -151,7 +152,8 @@ function esc(s: string): string {
 }
 // A green disc with a white tick, the app's checkmark.seal drawn flat.
 const SEEN_MARK = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#4A6B2A"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-const metaHtml = metaParts.map(esc).join(" &middot; ");
+// The species keeps its scientific name in italics (latin.ts, 2026-10-12).
+const metaHtml = metaParts.map((s) => s === species ? latinHtml(s) : esc(s)).join(" &middot; ");
 ---
 <article
   class:list={["tree-card", "tree-card-link", { "tree-card-nonum": true, "tree-card-nophoto": !(photo && photo.url) }]}
@@ -206,7 +208,7 @@ const metaHtml = metaParts.map(esc).join(" &middot; ");
     </div>
   )}
   {metaHtml && <p class="tree-meta" set:html={metaHtml} />}
-  {text && <p class="tree-story">{text}</p>}
+  {text && <p class="tree-story" set:html={latinHtml(text)} />}
   {/* The credit closes the card rather than sitting between the photograph
       and the title, where it split the picture from its name (2026-10-04,
       the Barcelona list). The licence asks for the credit, not its place. */}

@@ -24,6 +24,7 @@ import { peakFor, seasonKey } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText } from "./images";
 import { BASE_URL } from "./schema";
+import { latinRanges } from "./latin";
 
 /** The feed is read by an app on somebody's phone, which has no page to
  * resolve a relative path against. thumbUrl() returns "/photos/..." for the
@@ -77,6 +78,10 @@ export interface FeedTree {
    * tropics, where phenologyFor refuses to guess a calendar at all. */
   peak: { months: number[]; effect: string; colour: string; level?: string } | null;
   story: string | null;
+  /** The story's scientific names, as [start, end) UTF-16 offsets of the runs
+   * to set in italics (latin.ts, 2026-10-12). An answer, not a rule: the app
+   * draws exactly the runs the website draws. Sent only when there is one. */
+  story_latin?: [number, number][];
   /** The one line that answers "which of the trees in front of me is it":
    * what this trunk, bark or setting has that its neighbours do not.
    * scripts/recognise.py already writes it and the website already prints it,
@@ -158,6 +163,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           return pk?.map ? { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } : null;
         })(),
         story: t.story ?? null,
+        ...((runs) => (runs.length ? { story_latin: runs } : {}))(latinRanges(t.story ?? "")),
         how_to_recognise: (t as any).how_to_recognise ?? null,
         girth_cm: (() => {
           const g = Number((t as any).girth_cm);

@@ -155,6 +155,21 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
             || !transport.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
     public let story: String
+    /// The story's scientific names as [start, end) UTF-16 offsets, set in
+    /// italics (2026-10-12, the botanical convention, asked for by the National
+    /// Botanic Gardens of Ireland). Decided by the website (latin.ts) and read
+    /// here, so both surfaces italicise the same words. A `var` with a default
+    /// so an older catalogue decodes to nil.
+    public var storyLatin: [[Int]]? = nil
+    /// The story as it is drawn: plain text, its Latin names emphasised.
+    public var storyText: AttributedString {
+        var out = AttributedString(story)
+        for run in storyLatin ?? [] where run.count == 2 && run[1] > run[0] {
+            let ns = NSRange(location: run[0], length: run[1] - run[0])
+            if let r = Range(ns, in: out) { out[r].inlinePresentationIntent = .emphasized }
+        }
+        return out
+    }
     /// The one line that answers "which of the trees in front of me is it".
     /// The website has printed it on the tree page for a while; it reached the
     /// phone on 2026-09-07, after Hidde stood in Nara and could not tell which
@@ -226,6 +241,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case bestTime = "best_time"
         case girthCm = "girth_cm"
         case dayTrip = "day_trip"
+        case storyLatin = "story_latin"
     }
 
     /// The common name only, without the Latin in parentheses. Map pins and

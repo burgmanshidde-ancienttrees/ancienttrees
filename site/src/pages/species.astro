@@ -6,6 +6,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { cityIsRenderable } from "../lib/trees";
 import { groupTreesBySpecies, SPECIES_MIN_TREES, GROUP_ORDER, speciesGroup } from "../lib/species";
 import { speciesFace } from "../lib/images";
+import { sciNameHtml } from "../lib/latin";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
 import { byCityListOrder, byCityListOrderEntry } from "../lib/city-order";
@@ -79,7 +80,7 @@ const graph = [
   {sections.map((s) => (
     <section class="species-cluster">
       <h2>{s.g}</h2>
-      <div class="cindex-grid" set:html={s.cards.map((c) => browseCard(`/species/${c.slug}`, c.common, `<i lang="la">${c.scientific}</i> &middot; ${c.count} trees &middot; ${c.cities} ${c.cities === 1 ? "city" : "cities"}`, c.face)).join("")} />
+      <div class="cindex-grid" set:html={s.cards.map((c) => browseCard(`/species/${c.slug}`, c.common, `${sciNameHtml(c.scientific)} &middot; ${c.count} trees &middot; ${c.cities} ${c.cities === 1 ? "city" : "cities"}`, c.face)).join("")} />
     </section>
   ))}
   <p class="suggest">Or browse <a href="/cities">every city</a>.</p>

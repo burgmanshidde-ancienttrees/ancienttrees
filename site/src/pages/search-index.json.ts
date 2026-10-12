@@ -13,6 +13,7 @@ import { groupTreesBySpecies, SPECIES_MIN_TREES } from "../lib/species";
 import { byCityListOrderEntry } from "../lib/city-order";
 import { citySearchNames } from "../lib/city-aliases";
 import { cityPopularity } from "../lib/popularity";
+import { sciNameHtml } from "../lib/latin";
 
 export async function GET() {
   const allCities = byCityListOrderEntry((await getCollection("cities")).filter(cityIsRenderable));
@@ -78,6 +79,9 @@ export async function GET() {
   const s = qualifying.map(([common, members]) => ({
     n: common,
     l: introBySlug.get(common)!.data.scientific_name,
+    // The same name as HTML, italic but for the hybrid sign, the rank words
+    // and a cultivar in quotes (latin.ts), so the widget prints it as given.
+    lh: sciNameHtml(introBySlug.get(common)!.data.scientific_name),
     count: members.length,
     u: `species/${introBySlug.get(common)!.data.slug}`,
   }));

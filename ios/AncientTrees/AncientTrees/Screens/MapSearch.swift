@@ -323,7 +323,7 @@ struct MapSearch: View {
     private func speciesSub(_ s: String) -> Text {
         let count = Text(treesLabel(catalogue.trees(ofSpecies: s).count))
         guard let sci = catalogue.scientificName(of: s) else { return count }
-        return Text(sci).italic() + Text(" · ") + count
+        return scientificNameText(sci) + Text(" · ") + count
     }
 
     /// Does the query start the name, or start any word inside it?
