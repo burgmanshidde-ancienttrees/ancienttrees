@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All fourteen, with one qualification. The Plantsoen Oost and Park Schothorst are public parks, the Hertekop oak stands at a road junction, and most of the rest are on streets, squares and a cemetery. The plane of the Sint Jorisschool is inside a school playground, so you look at it from the Schimmelpenninckkade rather than walking in."
+      "a": "All eighteen can be seen from public ground, with two qualifications. The Plantsoen Oost and Park Schothorst are public parks, the Hertekop oak stands at a road junction, and most of the rest are on streets, squares and a cemetery. The plane of the Sint Jorisschool is inside a school playground, so you look at it from the Schimmelpenninckkade rather than walking in."
     }
   ],
   "trees": [
@@ -627,7 +627,7 @@
         "https://hetgroenehuisamersfoort.nl/storage/uploads/de496d2/files/Bomenwandeling%20Langs%20de%20meest%20bijzondere%20bomen%20van%20de%20binnenstad%20van%20Amersfoort.pdf",
         "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1678825&outFields=*&f=json"
       ],
-      "access": "Free to view from the Zuidsingel street and the Monnikendam bridge. The tree stands inside a private garden behind the gate (register owner_category: particulier, visitable: nee, visible: ja) and is not open to enter.",
+      "access": "Free to view from the Zuidsingel street and the Monnikendam bridge. The tree stands inside a private garden behind the gate and is not open to enter: the register lists it as visible but not visitable.",
       "transport": "About 400 m east of Amersfoort station, beside the historic Monnikendam water gate on the Zuidsingel/Kortegracht.",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
