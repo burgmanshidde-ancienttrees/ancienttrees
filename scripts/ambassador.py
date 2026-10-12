@@ -79,6 +79,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import smtplib
+
+import mailer
 from email.message import EmailMessage
 import glob
 
@@ -426,9 +428,7 @@ def invite_scan(send):
         msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
         msg.set_content(body)
         try:
-            with smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=60) as server:
-                server.starttls()
-                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+            with mailer.connect(creds, timeout=60) as server:
                 server.send_message(msg)
         except Exception as e:
             print(f"invite {uid[:8]} / {slug}: transport failed ({e.__class__.__name__})")
@@ -545,9 +545,7 @@ def requests_scan(send):
         msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
         msg.set_content(body)
         try:
-            with smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=60) as server:
-                server.starttls()
-                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+            with mailer.connect(creds, timeout=60) as server:
                 server.send_message(msg)
         except Exception as e:
             print(f"request {rid} / {slug}: transport failed ({e.__class__.__name__})")
@@ -703,9 +701,7 @@ def heads_up(send):
         msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
         msg.set_content(body)
         try:
-            with smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=60) as server:
-                server.starttls()
-                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+            with mailer.connect(creds, timeout=60) as server:
                 server.send_message(msg)
         except Exception as ex:
             print(f"heads-up {slug} / {who}: transport failed ({ex.__class__.__name__})")

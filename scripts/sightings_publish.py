@@ -86,6 +86,8 @@ import json
 import os
 import re
 import smtplib
+
+import mailer
 import sys
 from email.message import EmailMessage
 
@@ -530,9 +532,7 @@ def send_mail(addr, subject, body, really, sighting_id):
     msg["From"], msg["To"], msg["Subject"] = creds["FROM"], addr, subject
     msg.set_content(body)
     try:
-        with smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=60) as server:
-            server.starttls()
-            server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+        with mailer.connect(creds, timeout=60) as server:
             server.send_message(msg)
     except Exception as e:
         print(f"  mail to {addr}: transport failed ({e.__class__.__name__})")

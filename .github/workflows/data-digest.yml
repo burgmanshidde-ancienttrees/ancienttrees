@@ -165,6 +165,8 @@ jobs:
           OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
           OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
           OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          RESEND_SMTP_HOST: ${{ secrets.RESEND_SMTP_HOST }}
+          RESEND_SMTP_PASS: ${{ secrets.RESEND_SMTP_PASS }}
           OUTREACH_FROM: ${{ secrets.OUTREACH_FROM }}
         run: |
           python3 scripts/private_store.py pull

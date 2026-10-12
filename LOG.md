@@ -2,6 +2,11 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 session: mail signed for ancienttrees.app
+
+- Every mail we send (outreach, ambassador invitations and heads-ups, contributor replies, the weekly and waitlist mails) now leaves through Resend, signed with a DKIM key for ancienttrees.app, instead of through Gmail unsigned. Yahoo had refused our mail for missing DKIM, and other providers could file it as spam silently. Test mail read back: dkim=pass (ancienttrees.app), spf=pass. DMARC record p=none added at TransIP beside the Resend records.
+- One door: `scripts/mailer.py` (`connect(creds)`); it uses RESEND_SMTP_* when present, otherwise the old Gmail route, and files a copy of each sent mail in Gmail's Sent folder so threads and outreach_inbox.py keep working. Secrets RESEND_SMTP_HOST/PASS are set in GitHub and passed to nightly, data-digest, weekly-mail and waitlist-mail.
+
 ## 2026-10-12 session: Hidde's web test, fixed and live
 
 - **Trees near me** on the map page now asks for location (the row only changed the hash before).

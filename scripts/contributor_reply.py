@@ -39,6 +39,8 @@ import json
 import os
 import re
 import smtplib
+
+import mailer
 import subprocess
 import sys
 import tempfile
@@ -573,10 +575,7 @@ def main():
         # be rewritten after the fact, since it reads yesterday.
         try:
             if server is None:
-                server = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]),
-                                      timeout=30)
-                server.starttls()
-                server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+                server = mailer.connect(creds, timeout=30)
             server.send_message(msg)
         except Exception as e:
             print("MAIL FAILED for %s: %s" % (low, str(e)[:160]))
@@ -617,10 +616,7 @@ def main():
         # we could answer a reader if one wrote to us right now.
         if really and all(creds.values()):
             try:
-                probe = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]),
-                                     timeout=30)
-                probe.starttls()
-                probe.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+                probe = mailer.connect(creds, timeout=30)
                 probe.quit()
                 _note_transport(None, sent=False)
                 print("contributor_reply: transport ok")

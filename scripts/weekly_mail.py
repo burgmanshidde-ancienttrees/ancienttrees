@@ -34,6 +34,8 @@ import json
 import os
 import re
 import smtplib
+
+import mailer
 import subprocess
 import sys
 from email.message import EmailMessage
@@ -330,9 +332,7 @@ def main():
     msg.set_content(plain)
     msg.add_alternative(html, subtype="html")
     try:
-        server = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=30)
-        server.starttls()
-        server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+        server = mailer.connect(creds, timeout=30)
         server.send_message(msg)
         server.quit()
         print("sent:", subject)

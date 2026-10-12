@@ -58,6 +58,8 @@ import json
 import os
 import re
 import smtplib
+
+import mailer
 import sys
 from email.message import EmailMessage
 from email.utils import formataddr, parseaddr
@@ -250,9 +252,7 @@ def main():
             msg["References"] = " ".join((m.get("references") or m["in_reply_to"]).split())
         msg.set_content(m["body"])
         if server is None:
-            server = smtplib.SMTP(creds["SMTP_HOST"], int(creds["SMTP_PORT"]), timeout=30)
-            server.starttls()
-            server.login(creds["SMTP_USER"], creds["SMTP_PASS"])
+            server = mailer.connect(creds, timeout=30)
         server.send_message(msg)
         sent_today += 1
         record = {"date": today, "to": to, "outlet": label,
