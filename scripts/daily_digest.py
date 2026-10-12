@@ -3145,6 +3145,24 @@ def bing_section(_today=None):
     return head + "\n\n" + "\n".join(lines(*got))
 
 
+def ga_section(_today=None):
+    """Google Analytics, beside Cloudflare's site table (Hidde, 2026-10-12:
+    "id rather use google analytics im used to it"). It sees only visitors who
+    accepted the cookie bar, so it is a sample beside Cloudflare's count until
+    the two have run side by side. Without the GA_* secrets it prints one line,
+    like Bing's block (scripts/ga_report.py)."""
+    sys.path.insert(0, os.path.dirname(__file__))
+    from ga_report import fetch, lines
+    head = "**Google Analytics** (last 7 days, visitors who accepted cookies)"
+    try:
+        got = fetch(days=7)
+    except Exception as e:
+        return head + "\n\n- Google Analytics: fetch failed today (%s); numbers resume tomorrow." % str(e)[:90]
+    if got is None:
+        return head + "\n\n- Google Analytics: GA_CLIENT_ID / GA_CLIENT_SECRET / GA_REFRESH_TOKEN not set; the GA table is skipped."
+    return head + "\n\n" + "\n".join(lines(*got))
+
+
 def app_store_section(_today=None):
     """App Store downloads as its OWN block, on Hidde's ruling of 2026-09-08
     ("ik mis app downloads in deze lijst"): reported beside the app's event
@@ -3410,6 +3428,7 @@ def main():
     block(audience_section, today, token, today.weekday() != 0)
 
     block(fetch_rum, token, today)
+    block(ga_section, today)
     block(night_shift, today)
     block(fetch_machine, today)
     gsc_text = "\n\n".join(blocks)
