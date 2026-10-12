@@ -31,6 +31,10 @@ Open: the crash while adding a friend left no report on his phone; needs a repro
 
 ## 2026-10-12 session: Hidde's web test, fixed and live
 
+- **Search from every page, live and looked at** (benchmarked first: Wikipedia, komoot, Airbnb; a first untested version broke and was reverted the same hour): a field in the desktop bar with the list under it, a magnifier on the phone opening a full-screen search. Phone menu: Sign in sits under the app button, no longer pinned. Desktop account button reads My trees, as the app.
+- **Delete your own photo** is live on the web (More, sheet); the app's bin ships with the next build.
+- **App, next build:** adding a photo to a tree already collected says "Photo added to", not "You found"; the line about what we may do with photographs is gone (it lives in /terms).
+
 - **Trees near me** on the map page now asks for location (the row only changed the hash before).
 - **Menu**: icons at both widths (reverses 08-18 "rows are words" on his word); My trees and Settings hidden on the phone until signed in; the pinned Sign in bar has a top edge.
 - **About** rewritten in plain sentences; the every-city lists on Suggest a tree, species, collections and parks indexes replaced by one "every city" link.
