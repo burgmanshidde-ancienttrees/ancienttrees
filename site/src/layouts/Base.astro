@@ -18,6 +18,7 @@ import { toEnglishPath, ui } from "../lib/i18n";
 import { isNoindexed, noindexScope, cleanPath } from "../lib/noindex";
 import { chrome } from "../lib/ui-strings";
 import { icon } from "../lib/icons";
+import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 // The account menu, two rows to two places (Hidde, 2026-10-10: "ik denk dat
 // je wel een dropdown wil met my trees and settings right?"): My trees, the
 // app's tab and leaf, and Settings, the app's gear. It had two rows to one page.
@@ -166,6 +167,12 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
 <body>
 <header class="bar">
   <a href={nav("/")} class="bar-logo"><svg width="25" height="22" viewBox="0 0 68 64" fill="none" aria-hidden="true"><ellipse cx="34" cy="24" rx="24" ry="16" fill="#3A5222"/><circle cx="20" cy="23" r="11" fill="#4A6B2A"/><circle cx="48" cy="23" r="11" fill="#4A6B2A"/><circle cx="34" cy="12" r="11" fill="#5B7F35"/><circle cx="25" cy="15" r="7" fill="#86A34D"/><circle cx="51" cy="14" r="3.2" fill="#D9A13F"/><path d="M31 62 h5.6 l-1.2-16 c2.6-1.8 5.4-4.4 7-6.6 l-1.6-1.4 c-1.8 2-4 3.8-5.6 4.6 l-.3-5.8 h-2 l-.4 8.4 c-1.6-.9-3.6-2.7-5-4.4 l-1.6 1.4 c1.8 2.5 4.4 4.9 6.4 6z" fill="#6B4F33"/></svg><span>Ancient Trees</span></a>
+  {/* SEARCH FROM EVERY PAGE (Hidde, 2026-10-12, after a benchmark he
+      approved). Desktop: a visible field in the bar, Wikipedia's header and
+      Baymard's finding; the suggestions hang UNDER it as on the homepage.
+      Phone: the magnifier below opens a full-screen search, Wikipedia's
+      mobile pattern. Both hidden where the page already shows a field. */}
+  <div class="bar-find only-desktop"><Fragment set:html={searchForm("bar", "bar-q", "bar-search", false, t.searchPlaceholder)} /></div>
   {/* Below 800px the bar is the mark, the app pill and one menu button, and
       every DESTINATION lives in the panel: Map, the browse facets and the
       account (Hidde, 2026-08-20: "gooi dan alles onder het hamburger menu").
@@ -177,6 +184,15 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
       either width. */}
   <nav class="bar-links">
     <a href={nav("/explore")} class="bar-map only-desktop">{t.map}</a>
+    <details class="nav-drop nav-search only-mobile">
+      <summary class="bar-search-btn" aria-label={t.search}><Fragment set:html={icon("magnifying-glass", "bold")} /></summary>
+      <div class="nav-drop-menu nav-search-panel">
+        <div class="nav-search-top">
+          <button type="button" class="nav-search-back" data-nav-close aria-label={t.back}><Fragment set:html={icon("arrow-left", "bold")} /></button>
+          <Fragment set:html={searchForm("bar-m", "bar-q-m", "bar-search-m", false, t.searchPlaceholder)} />
+        </div>
+      </div>
+    </details>
     <details class="nav-drop">
       <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
       <div class="nav-drop-menu">
@@ -200,6 +216,16 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
             puts "Ga verder in de app". Same href and same event name as the
             bar's, so the funnel counts one thing. */}
         <a href="/app" class="sheet-cta only-mobile" data-app-download data-ev="app-cta">{t.getApp}</a>
+        {/* SIGN IN SITS UNDER THE APP BUTTON, not pinned to the foot (Hidde,
+            2026-10-12: rows kept scrolling under the pinned bar). Up here it
+            is never below the fold, which was the reason it was pinned
+            (2026-09-24), and nothing can pass under it. Hidden once signed
+            in, as before. */}
+        {AUTH_ENABLED && (
+          <div class="sheet-foot only-mobile">
+            <a href="/account" class="sheet-signin">{t.signIn}</a>
+          </div>
+        )}
         <p class="nav-group">{t.browse}</p>
         <a href={nav("/explore")} class="only-mobile"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z"/><path d="M9 4v13M15 6.5v13"/></svg></span>{t.map}</a>
         <a href={nav("/cities")}><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l5-3v16M9 21V10l6 2v9M15 21V7l5 2v12"/><path d="M2 21h20"/></svg></span>{t.cities}</a>
@@ -224,16 +250,6 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
             have to read twice. Giving and keeping are drawn apart the way
             GitHub Sponsors and Patreon draw them apart. */}
         {SPONSOR_URL ? <a href="/sponsor" class="nav-aside"><span class="mi mi-gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>{t.sponsor}</a> : null}
-        {/* The account closes the sheet, which is where AllTrails, Airbnb and
-            Booking all put it. The href does the work: signin-js opens the
-            sign-in sheet in place when signed out and lets the link navigate
-            when signed in, and CSS drops this pill once signed in, because
-            the Yours group above already carries the account. */}
-        {AUTH_ENABLED && (
-          <div class="sheet-foot only-mobile">
-            <a href="/account" class="sheet-signin">{t.signIn}</a>
-          </div>
-        )}
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
@@ -243,7 +259,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         the site and the account is where you find your own things. */}
     {AUTH_ENABLED && (
       <details class="nav-drop nav-acct only-desktop">
-        <summary id="bar-login" aria-label={t.account}><span class="mi acct-avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><span class="acct-word">{t.account}</span></summary>
+        <summary id="bar-login" aria-label={t.savedTrees}><span class="mi acct-leaf" aria-hidden="true"><Fragment set:html={LEAF} /></span><span class="acct-word">{t.savedTrees}</span></summary>
         <div class="nav-drop-menu">
           <p class="nav-group">{t.yours}</p>
           <a href="/account"><span class="mi"><Fragment set:html={LEAF} /></span>{t.savedTrees}</a>
@@ -588,6 +604,17 @@ window.atPaintNav = function(inNow) {
 <SignInModal lang={lang} />
 <Fragment set:html={SIGNIN_JS} />
 <Fragment set:html={OVERLAY_SHEET_JS} />
+<Fragment set:html={SEARCH_WIDGET_JS} />
+<script is:inline>
+// The phone search opens with the field ready to type in.
+(function() {
+  var d = document.querySelector('header.bar details.nav-search');
+  if (!d) return;
+  d.addEventListener('toggle', function() {
+    if (d.open) { var i = d.querySelector('input'); if (i) setTimeout(function() { i.focus(); }, 30); }
+  });
+})();
+</script>
 {/* THE LONG INTRO, CLAMPED ON A PHONE (2026-10-05). The city page has done
     this since 2026-08-18 ("afkappen maar klikbaar maken"); the species, park,
     collection and country pages ran their whole intro before the first tree.

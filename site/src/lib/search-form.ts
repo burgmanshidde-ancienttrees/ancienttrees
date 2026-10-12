@@ -2,7 +2,7 @@
 // op home en hier en ik wil dat je die gelijk houdt"). Ported verbatim from
 // search_form()/SEARCH_WIDGET_JS, build_site.py:2087-2225. One shared
 // /search-index.json, so home and /explore cannot drift apart.
-export function searchForm(ctx: string, inputId: string, formClass: string, withButton = false): string {
+export function searchForm(ctx: string, inputId: string, formClass: string, withButton = false, placeholder = "Search a city or tree"): string {
   const ico = withButton
     ? '<button type="submit" class="search-ico" aria-label="Search">' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">' +
@@ -12,8 +12,8 @@ export function searchForm(ctx: string, inputId: string, formClass: string, with
   return (
     `<form class="${formClass} at-search" data-ctx="${ctx}" role="search" autocomplete="off">` +
     `${ico}` +
-    `<input type="search" id="${inputId}" placeholder="Search a city or tree"` +
-    ` aria-label="Search a city or tree" autocapitalize="off" autocorrect="off" spellcheck="false">` +
+    `<input type="search" id="${inputId}" placeholder="${placeholder}"` +
+    ` aria-label="${placeholder}" autocapitalize="off" autocorrect="off" spellcheck="false">` +
     `<div class="ats-drop" hidden></div></form>`
   );
 }
@@ -25,6 +25,8 @@ export const SEARCH_WIDGET_JS = `
   // bar, the AllTrails pattern) needs no new script.
   Array.prototype.forEach.call(document.querySelectorAll('form.at-search'), setup);
   function setup(form) {
+  if (form.getAttribute('data-ready')) return;
+  form.setAttribute('data-ready', '1');
   var input = form.querySelector('input');
   var drop = form.querySelector('.ats-drop');
   var ctx = form.getAttribute('data-ctx');
@@ -136,7 +138,7 @@ export const SEARCH_WIDGET_JS = `
     }).slice(0, 5);
     html += '<div class="ats-head">Start here</div>';
     html += top.map(function(c) {
-      return row(c.city, c.n + ' trees &middot; ' + escT(c.country), '/' + c.u);
+      return row(c.city, c.n + (c.n === 1 ? ' tree' : ' trees') + ' &middot; ' + escT(c.country), '/' + c.u);
     }).join('');
     drop.innerHTML = html;
     drop.hidden = false;
@@ -162,7 +164,7 @@ export const SEARCH_WIDGET_JS = `
           sec = r.it.cities + ' cities &middot; ' + r.it.n + ' trees';
         } else if (r.kind === 'city') {
           name = r.it.city;
-          sec = r.it.n + ' trees &middot; ' + escT(r.it.country);
+          sec = r.it.n + (r.it.n === 1 ? ' tree' : ' trees') + ' &middot; ' + escT(r.it.country);
         } else if (r.kind === 'species') {
           name = r.it.n;
           // The scientific name under the common one, in italics, which is how
