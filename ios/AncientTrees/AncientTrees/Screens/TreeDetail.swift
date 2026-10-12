@@ -696,7 +696,19 @@ struct TreeDetail: View {
                 Color.clear
                     .frame(height: 300)
                     .overlay {
-                        TreePhoto(url: url) { heroFallback }
+                        // THE CARD'S PICTURE FIRST, the sharp one when it
+                        // lands. The card that was tapped to get here already
+                        // holds the 500 pixel version, so showing it at once
+                        // and swapping in the 960 is what Photos and Google
+                        // Maps do; the page used to show the drawing until the
+                        // larger file arrived (Hidde, 2026-10-12).
+                        TreePhoto(url: url, urgent: true) {
+                            if let c = p.card, let have = ImageStore.shared.cached(c) {
+                                Image(uiImage: have).resizable().aspectRatio(contentMode: .fill)
+                            } else {
+                                heroFallback
+                            }
+                        }
                     }
                     .clipped()
                     // Tapping the photograph opens it, which is what every

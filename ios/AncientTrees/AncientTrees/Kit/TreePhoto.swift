@@ -98,17 +98,21 @@ final class ImageStore {
     /// after it, which is the flicker on every scroll back.
     func cached(_ url: URL) -> UIImage? { memory.object(forKey: url as NSURL) }
 
-    func image(for url: URL) async -> UIImage? {
+    /// `urgent` skips the queue: the one photograph a screen is ABOUT (the
+    /// tree page's hero) should not wait behind cards from the list the
+    /// person just left (Hidde, 2026-10-12: "the tree picture on the detail
+    /// page seems longer to load sometimes").
+    func image(for url: URL, urgent: Bool = false) async -> UIImage? {
         if let hit = cached(url) { return hit }
         if let running = inFlight[url] { return await running.value }
         // Task, not Task.detached: it inherits MainActor, so the two lines
         // that touch the cache below need no hop. The fetch itself is
         // nonisolated and therefore runs off the main thread, which is what
         // keeps a decoding JPEG out of the scroll.
-        let task = Task<UIImage?, Never> { [gate] in
-            await gate.acquire()
+        let task = Task<UIImage?, Never>(priority: urgent ? .userInitiated : nil) { [gate] in
+            if !urgent { await gate.acquire() }
             let image = await Self.fetch(url)
-            await gate.release()
+            if !urgent { await gate.release() }
             if let image {
                 self.memory.setObject(image, forKey: url as NSURL, cost: Self.cost(of: image))
             }
@@ -172,6 +176,8 @@ final class ImageStore {
 struct TreePhoto<Placeholder: View>: View {
     let url: URL?
     var contentMode: ContentMode = .fill
+    /// Skip the download queue; see ImageStore.image(for:urgent:).
+    var urgent = false
     @ViewBuilder var placeholder: () -> Placeholder
 
     @State private var image: UIImage?
@@ -221,7 +227,7 @@ struct TreePhoto<Placeholder: View>: View {
             }
             image = nil
             shown = nil
-            let loaded = await ImageStore.shared.image(for: url)
+            let loaded = await ImageStore.shared.image(for: url, urgent: urgent)
             // The view may have been handed a different tree while that ran.
             guard url == self.url else { return }
             image = loaded
