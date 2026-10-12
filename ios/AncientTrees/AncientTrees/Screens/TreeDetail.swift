@@ -320,12 +320,12 @@ struct TreeDetail: View {
             CameraPicker { image in pendingShot = image }.ignoresSafeArea()
         }
         .fullScreenCover(isPresented: $photoLibrary, onDismiss: openFlowWithPhoto) {
-            LibraryPicker { p in pendingPicked = p }.ignoresSafeArea()
+            LibraryPicker(limit: 1 + Sightings.maxExtras) { p in pendingPicked = p }.ignoresSafeArea()
         }
         .sheet(item: $photoRefused) { which in
             PermissionRecovery(permission: which,
                                onDecline: which == .camera ? {
-                                   Task { await LibraryPicker.askForLibrary(); photoLibrary = true }
+                                   photoLibrary = true
                                } : nil)
         }
         .fullScreenCover(isPresented: $extraCamera) {
@@ -756,7 +756,7 @@ struct TreeDetail: View {
                 .overlay { heroFallback }
                 .clipped()
                 .contentShape(.rect)
-                .onTapGesture { if mine == nil { navigator.collectAbout = tree.name; navigator.collectAddsPhoto = true; navigator.collectNearby = true } }
+                .onTapGesture { if mine == nil { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } }
                 .accessibilityElement(children: .combine)
                 .accessibilityAddTraits(mine == nil ? .isButton : [])
                 .accessibilityIdentifier("tree-empty-photo")
@@ -1768,7 +1768,7 @@ struct TreeDetail: View {
         // centimetres from the one in the bar, and the bar is where he wants
         // the act promoted.
         if mine == nil, tree.photo == nil {
-            Button { navigator.collectAbout = tree.name; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
+            Button { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
                 Image(systemName: "camera.fill")
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Brand.ink)
@@ -1830,6 +1830,21 @@ struct TreeDetail: View {
         return "On " + d.formatted(.dateTime.day().month(.wide).year()) + "."
     }
 
+    /// SIGN IN FIRST, THEN THE OVERLAY (Hidde, 2026-10-12: "make sure you do
+    /// the login screen before taking a photo to collect. First login than
+    /// overlay"). Every way to collect needs the account, so asking here
+    /// covers the camera, the library and the no-photograph tick at once, and
+    /// the overlay opens after the sign-in rather than being forgotten by it.
+    /// The photograph used to be taken first and the sign-in asked after,
+    /// which threw the photograph away.
+    private func openCollectChoice() {
+        guard account.isSignedIn else {
+            nudge.require(.keepTree(tree.name)) { choosingCollect = true }
+            return
+        }
+        choosingCollect = true
+    }
+
     /// Collecting without a photograph, from anywhere (Hidde, 2026-10-10:
     /// "shouldnt you also be able to collect trees when you're not around").
     /// The same gate as the map's arrival card: signed out, sign in first and
@@ -1858,10 +1873,7 @@ struct TreeDetail: View {
                 if !location.known && !location.denied { location.ask() }
                 if CameraPicker.isRefused { photoRefused = .camera } else { photoCamera = true }
             case .library:
-                Task {
-                    await LibraryPicker.askForLibrary()
-                    photoLibrary = true
-                }
+                photoLibrary = true
             }
         }
         choosingCollect = false
@@ -1871,6 +1883,7 @@ struct TreeDetail: View {
     private func openFlowWithPhoto() {
         guard pendingShot != nil || pendingPicked != nil else { return }
         navigator.collectAbout = tree.name
+        navigator.collectTree = mine == nil ? tree.id : nil
         navigator.collectShot = pendingShot
         navigator.collectPicked = pendingPicked
         pendingShot = nil
@@ -2038,7 +2051,7 @@ struct TreeDetail: View {
                 // there en collect moeten omgedraaid in belangrijkheid", Take
                 // me there sends you out of the app).
                 if standingHere {
-                    Button { choosingCollect = true } label: {
+                    Button { openCollectChoice() } label: {
                         Label(collected ? "Collected" : "Collect this tree",
                               systemImage: collected ? "checkmark.seal.fill" : "camera")
                             .lineLimit(1)
@@ -2081,7 +2094,7 @@ struct TreeDetail: View {
                     .accessibilityIdentifier("tree-take-me-there")
                     .accessibilityLabel("Take me there")
                 } else {
-                    Button { choosingCollect = true } label: {
+                    Button { openCollectChoice() } label: {
                         barCircle(collected ? "checkmark.seal.fill" : "checkmark.seal", on: collected)
                     }
                     .buttonStyle(.plain)

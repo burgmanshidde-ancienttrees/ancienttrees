@@ -112,6 +112,12 @@ public final class Navigator {
     /// there wants to add a photo, not to hear about a collection (Hidde,
     /// 2026-09-27). Cleared with collectAbout.
     public var collectAddsPhoto = false
+    /// The tree's ID when the way in was that tree's own page. Somebody who
+    /// opened a tree and photographed it has already said which tree it is,
+    /// so the flow ticks that one off instead of asking "which one is it"
+    /// (Hidde, 2026-10-12: "only go through the is this the tree flow if
+    /// you're unsure yourself"). Cleared with collectAbout.
+    public var collectTree: String? = nil
 
 
     public init() {}

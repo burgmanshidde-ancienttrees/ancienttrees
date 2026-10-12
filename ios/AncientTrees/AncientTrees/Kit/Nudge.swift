@@ -133,11 +133,37 @@ public final class Nudge {
 
     /// Called by the sign-in sheet once the account is real, and by its
     /// dismissal so a closed sheet leaves nothing armed behind it.
+    ///
+    /// THE JOB RUNS ONCE THE SHEET HAS GONE, not while it is still closing
+    /// (Hidde, 2026-10-12: "when logging in it brings me back to where i was
+    /// not where i was going ... for all actions when logging in let users
+    /// continue their journey"). Run inside the sheet, a job that opens
+    /// something (the photo overlay, the collect choice, the camera) asked
+    /// for a sheet while one was still on screen, which iOS ignores, and the
+    /// root sheet's own dismissal then reset what it had just asked for. So
+    /// signing in only ARMS the job; the sheet's disappearance fires it.
     public func settle(ranThrough: Bool) {
-        let job = finish
+        if ranThrough { armed = true; return }
+        guard !armed else { return }
         finish = nil
-        if ranThrough { job?() }
     }
+
+    /// Called by the sign-in sheet as it disappears. Fires an armed job on
+    /// the next turn, once the presentation has finished, or drops an
+    /// unarmed one so a swiped-away sheet leaves nothing behind.
+    public func sheetGone() {
+        let job = armed ? finish : nil
+        finish = nil
+        armed = false
+        guard let job else { return }
+        Task { @MainActor in
+            // One beat for the dismissal to settle before anything else is
+            // presented in its place.
+            try? await Task.sleep(for: .milliseconds(150))
+            job()
+        }
+    }
+    @ObservationIgnored private var armed = false
 
     private func mark(_ moment: String) {
         var f = fired

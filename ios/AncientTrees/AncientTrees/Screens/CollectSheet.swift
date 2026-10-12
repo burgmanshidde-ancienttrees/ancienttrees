@@ -67,6 +67,13 @@ struct CollectSheet: View {
     /// intro screen reads it: see CollectIntro.
     var about: String? = nil
     var addsPhoto = false
+    /// The tree whose own page this started from. Then the person has already
+    /// said which tree it is, and the photograph goes on that tree without
+    /// the "which one is it" list (Hidde, 2026-10-12: "only go through the is
+    /// this the tree flow if you're unsure yourself ... dont force me through
+    /// it"). Google Maps' "Add photo" on a place works the same way: the
+    /// place is known, so nothing asks which place it was.
+    var knownTree: String? = nil
     /// A photograph that arrives already taken or chosen, from the tree page's
     /// sheet: the flow starts at the photograph instead of at its own "take or
     /// choose" screen. nil for both shows the intro.
@@ -130,6 +137,9 @@ struct CollectSheet: View {
     /// unsure, compare), so it fits the way BrandSheet does.
     @State private var fitHeight: CGFloat = 420
     @State private var shot: UIImage?
+    /// Further photographs chosen together with the first one, at most
+    /// `Sightings.maxExtras`. The first stays the tree's picture.
+    @State private var extras: [UIImage] = []
     /// Where the shutter actually fell. Held separately from `origin` because
     /// the view can be re-evaluated with a newer fix while the outcome screen
     /// is up, and the record must not quietly move.
@@ -194,6 +204,8 @@ struct CollectSheet: View {
         guard first.0.precision == .confirmed else { return nil }
         return first.0
     }
+
+    private var known: Tree? { knownTree.flatMap { catalogue.tree($0) } }
 
     private var candidates: [Tree] {
         Self.nearby(origin: at ?? origin, trees: catalogue.trees)
@@ -344,7 +356,7 @@ struct CollectSheet: View {
                                onDecline: which == .camera ? { openLibrary(forSign: forSign) } : nil)
         }
         .fullScreenCover(isPresented: $library) {
-            LibraryPicker { p in
+            LibraryPicker(limit: forSign ? 1 : 1 + Sightings.maxExtras) { p in
                 if forSign { if let p { signShot = p.image } } else { picked(p) }
             }.ignoresSafeArea()
         }
@@ -499,6 +511,10 @@ struct CollectSheet: View {
         case .settle(let fix):
             settle(image, at: origin, fix: fix)
         case .askForThePin:
+            if let t = known {
+                settle(image, at: (t.lat, t.lng), fix: .placed)
+                return
+            }
             shot = image
             placing = .init(latitude: origin.lat, longitude: origin.lng)
             withAnimation(.snappy) { stage = .place }
@@ -510,7 +526,14 @@ struct CollectSheet: View {
     private func picked(_ p: LibraryPicker.Picked?) {
         guard let p else { return }
         shot = p.image
+        extras = p.extras
         taken = p.taken
+        // From the tree's own page a missing coordinate is no reason to ask
+        // where it stands: the person told us which tree it is.
+        if p.coordinate == nil, let t = known {
+            settle(p.image, at: (t.lat, t.lng), fix: .placed)
+            return
+        }
         let route = Self.route(cameraShot: false,
                                locationKnown: location.known,
                                photoHasCoordinate: p.coordinate != nil)
@@ -532,7 +555,9 @@ struct CollectSheet: View {
         shot = image
         at = here
         fix = source
-        if Self.mayClaimWithoutAsking(source), let t = Self.confident(origin: here, trees: catalogue.trees) {
+        if let t = known {
+            claim(t, image: image, at: here)
+        } else if Self.mayClaimWithoutAsking(source), let t = Self.confident(origin: here, trees: catalogue.trees) {
             claim(t, image: image, at: here)
         } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty {
             startDraft()
@@ -615,6 +640,10 @@ struct CollectSheet: View {
     }
 
     private func openCamera(forSign: Bool = false) {
+        // Sign in before the camera, never after the photograph (Hidde,
+        // 2026-10-12). ContentView already asks before this sheet opens; this
+        // catches a session that ended while it was up.
+        guard account.isSignedIn else { signingIn = true; return }
         self.forSign = forSign
         // Adding a tree is the moment the app needs to know where you stand,
         // so this is where it asks (iNaturalist and Seek ask at the first
@@ -625,14 +654,10 @@ struct CollectSheet: View {
     }
 
     private func openLibrary(forSign: Bool = false) {
+        guard account.isSignedIn else { signingIn = true; return }
         self.forSign = forSign
-        Task {
-            // The prompt belongs to the tap, so it is asked here rather than
-            // inside the picker. Refused is not a dead end: the picker still
-            // opens, and we ask where the tree is instead.
-            await LibraryPicker.askForLibrary()
-            library = true
-        }
+        // No permission is asked: the picker needs none (LibraryPicker.swift).
+        library = true
     }
 
     private func claim(_ t: Tree, image: UIImage, at here: (lat: Double, lng: Double)) {
@@ -657,7 +682,8 @@ struct CollectSheet: View {
         // these on a map either, since only sightings WITHOUT a tree id are
         // drawn (Collect.swift, CollectionMapPage.swift, both `yoursOnly`).
         sightings.record(treeId: t.id, name: t.name, lat: here.lat, lng: here.lng,
-                         image: image, date: taken ?? Date())
+                         image: image, date: taken ?? Date(), extras: extras)
+        extras = []
         withAnimation(.snappy) { stage = .ticked(t.id) }
         // "You found \(t.name)" below is the payoff moment; see
         // ReviewPrompt.swift and CONVENTIONS.md for why the native ask may
@@ -748,7 +774,7 @@ struct CollectSheet: View {
             // Said once here rather than repeated on every row: the rows are
             // already carrying a name, a species, a distance, a direction and
             // sometimes four lines telling the tree from its neighbours.
-            Text("You can tell them apart by opening each one.")
+            Text("Not sure which? Tap \(Image(systemName: "info.circle")) to compare.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
             // Tapping a candidate OPENS it rather than claiming it (Hidde,
             // 2026-09-07, sketching the flow he wanted: "dan als je op de boom
@@ -761,12 +787,35 @@ struct CollectSheet: View {
             // bird!". A list whose rows commit on touch skips the comparing,
             // which is the only part that makes the answer worth anything.
             ForEach(Array(candidates.enumerated()), id: \.element.id) { i, t in
-                Button { withAnimation(.snappy) { stage = .compare(t.id) } } label: { row(t) }
+                // TAPPING A ROW PICKS IT (Hidde, 2026-10-12: "only go
+                // through the is this the tree flow if you're unsure yourself
+                // ... allow the user to start it but dont force me through
+                // it"). This reverses the 2026-09-07 Merlin flow, where every
+                // row opened the comparison first. The comparison is the
+                // info button on the row, for whoever is not sure.
+                // Two sibling buttons rather than one inside the other: a
+                // button laid over a button is folded into it by iOS, and the
+                // compare control could not be reached (FlowWalk caught it).
+                ZStack(alignment: .topTrailing) {
+                    Button {
+                        if let shot, let at { claim(t, image: shot, at: at) }
+                    } label: { row(t) }
+                        .buttonStyle(.plain)
+                        // Indexed rather than named: a UI test runs in its own
+                        // process and cannot know which trees are near the
+                        // simulator's fixed location.
+                        .accessibilityIdentifier("collect-candidate-\(i)")
+                    Button { withAnimation(.snappy) { stage = .compare(t.id) } } label: {
+                        Image(systemName: "info.circle")
+                            .font(.system(size: 20))
+                            .foregroundStyle(Brand.moss)
+                            .frame(width: 44, height: 44)
+                            .contentShape(.rect)
+                    }
                     .buttonStyle(.plain)
-                    // Indexed rather than named: a UI test runs in its own
-                    // process and cannot know which trees are near the
-                    // simulator's fixed location.
-                    .accessibilityIdentifier("collect-candidate-\(i)")
+                    .accessibilityLabel("Compare \(t.name)")
+                    .accessibilityIdentifier("collect-compare-\(i)")
+                }
             }
             Divider().padding(.vertical, 4)
             Button { startDraft() } label: {
@@ -830,7 +879,8 @@ struct CollectSheet: View {
                                  name: picks.first?.name ?? "A tree I could not place",
                                  lat: here.lat, lng: here.lng, image: shot,
                                  date: taken ?? Date(),
-                                 unsureOf: picks.map(\.id))
+                                 unsureOf: picks.map(\.id), extras: extras)
+        extras = []
         shot = nil
         withAnimation(.snappy) { stage = .unsure }
         Task { await reportUnsure(sighting: s.id, among: picks, at: here) }
@@ -1032,11 +1082,7 @@ struct CollectSheet: View {
                         .foregroundStyle(Brand.inkSoft)
                 }
             }
-            Spacer()
-            Image(systemName: "chevron.right")
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundStyle(Brand.inkSoft)
-                .padding(.top, 20)
+            Spacer(minLength: 32)
         }
         .padding(12)
         .background(Brand.surface, in: .rect(cornerRadius: 14))
@@ -1217,7 +1263,8 @@ struct CollectSheet: View {
                                  name: Sightings.fallbackName(species: nil, place: place),
                                  lat: here.lat, lng: here.lng, image: shot,
                                  date: taken ?? Date(), place: place,
-                                 draft: true, fixNote: fix.note)
+                                 draft: true, fixNote: fix.note, extras: extras)
+        extras = []
         shot = nil
         // STRAIGHT TO THE TREE'S OWN PAGE, as a draft with Save at the foot
         // (Hidde, 2026-09-26: the form in front of it "asks the same info").

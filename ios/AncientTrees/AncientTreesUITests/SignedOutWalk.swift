@@ -61,14 +61,13 @@ final class SignedOutWalk: XCTestCase {
         tap(app, "worthit-count"); expectSignIn(app, after: "worthit-count")
     }
 
-    func testCollectWithoutPhotoAsks() {
-        // The tree page's Collect opens a choice; its "without a photograph"
-        // is a tick and must ask for an account like every other tick. No
-        // -at=, so the page does not know where you are and Collect is the
-        // circle beside Take me there (Hidde, 2026-10-10).
+    func testCollectAsksBeforeTheChoice() {
+        // Sign in FIRST, then the overlay (Hidde, 2026-10-12: "first login
+        // than overlay"): every way to collect needs the account, so the
+        // tree page's Collect asks before offering camera, photos or a tick.
+        // No -at=, so Collect is the circle beside Take me there.
         let app = launch(["-tree=ams_001"])
-        tap(app, "tree-add-photo-bar")
-        tap(app, "collect-no-photo"); expectSignIn(app, after: "collect-no-photo")
+        tap(app, "tree-add-photo-bar"); expectSignIn(app, after: "tree-add-photo-bar")
     }
 
     func testSeenTickAsks() {

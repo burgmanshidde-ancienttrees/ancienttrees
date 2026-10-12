@@ -346,8 +346,12 @@ struct ContentView: View {
     /// appsweep can still photograph the collect screens on a simulator that
     /// has never signed in.
     private func openCollect() {
+        // SIGN IN FIRST, THEN THE SHEET, and the sheet still opens after it
+        // (Hidde, 2026-10-12: "first login than overlay"). This used to drop
+        // the tap, so a photograph already taken on a tree page was lost to
+        // the sign-in.
         guard account.isSignedIn else {
-            nudge.require(.general)
+            nudge.require(.general) { rootSheet = .spot(.collect) }
             return
         }
         rootSheet = .spot(.collect)
@@ -670,11 +674,13 @@ struct ContentView: View {
                             CollectSheet(catalogue: cat, origin: origin, mode: mode,
                                          about: navigator.collectAbout,
                                          addsPhoto: navigator.collectAddsPhoto,
+                                         knownTree: navigator.collectTree,
                                          shotIn: navigator.collectShot,
                                          pickedIn: navigator.collectPicked)
                                 .onDisappear {
                                     navigator.collectAbout = nil
                                     navigator.collectAddsPhoto = false
+                                    navigator.collectTree = nil
                                     navigator.collectShot = nil
                                     navigator.collectPicked = nil
                                 }

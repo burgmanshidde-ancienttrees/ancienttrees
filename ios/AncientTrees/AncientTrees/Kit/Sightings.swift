@@ -742,7 +742,8 @@ final class Sightings {
                 date: Date = Date(), status: Status = .mine,
                 unsureOf: [String]? = nil, girthHugs: String? = nil,
                 place: String? = nil, sign: UIImage? = nil,
-                draft: Bool = false, fixNote: String? = nil) -> Sighting {
+                draft: Bool = false, fixNote: String? = nil,
+                extras: [UIImage] = []) -> Sighting {
         var s = Sighting(treeId: treeId, name: Self.oneLine(name), note: note,
                          lat: lat, lng: lng, date: date, photo: nil, status: status)
         s.unsureOf = unsureOf
@@ -758,6 +759,7 @@ final class Sightings {
             s.photo = file
         }
         if let sign { s.signPhoto = writeSign(sign, for: s.id) }
+        if !extras.isEmpty { s.extraPhotos = writeExtras(extras, for: s.id) }
         if draft { s.draft = true }
         s.fixNote = fixNote
         all.append(s)

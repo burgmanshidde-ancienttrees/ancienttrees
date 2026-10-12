@@ -535,6 +535,20 @@ struct HomeView: View {
                     navigator.selectTab = 2
                 })
                 tileShelf(Array(mine.prefix(3)))
+                // A SHORT LIST STILL INVITES MORE (Hidde, 2026-10-12): with
+                // one or two trees the line and the way to the map stay,
+                // as on the empty row.
+                if mine.count < 3 {
+                    Text("You can keep a tree for later by tapping the bookmark on its page.")
+                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.horizontal, 16)
+                    Button { navigator.selectTab = 0 } label: {
+                        Label("Find trees near you", systemImage: "map")
+                    }
+                    .buttonStyle(BrandButtonStyle(prominent: false))
+                    .padding(.horizontal, 16)
+                }
             }
         }
     }

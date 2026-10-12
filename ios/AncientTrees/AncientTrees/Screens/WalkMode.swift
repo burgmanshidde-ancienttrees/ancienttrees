@@ -63,6 +63,8 @@ struct WalkMode: View {
     /// this screen is a fullScreenCover and a sheet asked for on the root would
     /// have nowhere to appear.
     @State private var photographing = false
+    /// The tree whose tick opened the camera, so the photograph lands on it.
+    @State private var photographingTree: String?
 
     private var trees: [Tree] { only ?? catalogue.trees(of: walk) }
     private var done: Int { trees.filter { saved.isVisited($0.id) }.count }
@@ -181,7 +183,8 @@ struct WalkMode: View {
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("walk-mode")
         .sheet(isPresented: $photographing) {
-            CollectSheet(catalogue: catalogue, origin: origin, mode: .collect)
+            CollectSheet(catalogue: catalogue, origin: origin, mode: .collect,
+                         knownTree: photographingTree)
                 .environment(\.locationState, locationState)
                 .environment(saved)
                 .environment(account)
@@ -365,9 +368,12 @@ struct WalkMode: View {
         // (Hidde, 2026-08-25). A walk cannot be the one place that collects
         // into a collection nobody is signed in to keep.
         guard account.isSignedIn else {
-            nudge.require(.keepTree(t.name))
+            // And the tick carries on after the sign-in instead of being
+            // dropped by it (Hidde, 2026-10-12: "first login than overlay").
+            nudge.require(.keepTree(t.name)) { tick(t) }
             return
         }
+        photographingTree = t.id
         // THE PHOTOGRAPH IS THE TICK (Hidde, 2026-08-25: "you shouldn't give
         // the option for I'm in front of it without taking a photo, it should
         // go to that flow then"). It used to tick straight off a tap, which is

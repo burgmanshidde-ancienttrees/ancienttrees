@@ -142,15 +142,16 @@ final class FlowWalk: XCTestCase {
             // Hidde's Nara afternoon was a fault in the movement between two
             // screens, not in either screen.
             //
-            // The route is the one he sketched. Open the list, look at a
-            // candidate properly, come back without committing, then say you
+            // The route is the one he sketched. Open the list, compare a
+            // candidate (optional since 2026-10-12: tapping the row itself
+            // picks it, the info button compares), come back without committing, then say you
             // cannot tell. Every step has to leave a way out, which is the one
             // thing a machine can be sure of here.
             Flow(name: "which-one-is-it",
                  args: ["-collect", "-collect-identify"] + signedIn, steps: [
-                Step(name: "open-a-candidate") { Self.tap($0, "collect-candidate-0") },
+                Step(name: "compare-a-candidate") { Self.tap($0, "collect-compare-0") },
                 Step(name: "back-to-the-list") { Self.tap($0, "Back to the list") },
-                Step(name: "open-it-again") { Self.tap($0, "collect-candidate-0") },
+                Step(name: "compare-it-again") { Self.tap($0, "collect-compare-0") },
                 Step(name: "say-it-is-the-one") { Self.tap($0, "collect-this-is-the-one") },
                 // The escape from a confident match, which used to be a grey
                 // link and is now the same size as Done.

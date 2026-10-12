@@ -18,12 +18,23 @@
 // PHAsset. UIImagePickerController, which the camera path still uses and should,
 // hands back a bare UIImage with every scrap of metadata gone.
 //
-// WHY WE ASK FOR PERMISSION AT ALL, since the picker itself needs none: the
-// asset is where the coordinate and the date live, and reading it needs
-// authorisation. So we ask when somebody taps the button that says choose a
-// photograph, which is the moment the prompt explains itself, and we present
-// the picker whatever they answer. Refused simply means we have to ask them
-// where the tree is, which is a question they can answer.
+// NO PERMISSION IS ASKED, since 2026-10-12. It used to ask for read access to
+// the whole library to read the coordinate off the PHAsset, and somebody who
+// answered "Limited" was asked to select more photos again every time a new
+// one was taken (Hidde: "why can't I just give full access to photos I have to
+// allow everytime for the new photos"). The picker runs outside the app and
+// needs no permission, and it hands over the file with its own location and
+// date unless the person switches location off in the picker's Options. That
+// is the iNaturalist and Google Maps behaviour: choose, and nothing is asked.
+// A library that WAS authorised before still gets the asset read, which is
+// right even for a file whose GPS block was stripped.
+//
+// SEVERAL AT ONCE (Hidde, 2026-10-12: "I'm not able to add multiple photos at
+// once"). The first one chosen is the tree's picture and the rest are its
+// further photographs, the same split the tree page's "More photographs" row
+// uses. Each is decoded straight to a downsampled image, never at full size,
+// because four 48 megapixel photographs held as full bitmaps is how a picker
+// runs a phone out of memory.
 
 import CoreLocation
 import ImageIO
@@ -41,15 +52,20 @@ struct LibraryPicker: UIViewControllerRepresentable {
         /// a phone with location off for the camera.
         var coordinate: CLLocationCoordinate2D?
         var taken: Date?
+        /// Further photographs chosen with this one, in the order chosen.
+        var extras: [UIImage] = []
     }
 
+    /// How many may be chosen at once. One for the sign, several for a tree.
+    var limit: Int = 1
     var onPicked: (Picked?) -> Void
     @Environment(\.dismiss) private var dismiss
 
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var config = PHPickerConfiguration(photoLibrary: .shared())
         config.filter = .images
-        config.selectionLimit = 1
+        config.selectionLimit = limit
+        config.selection = .ordered
         // The original file rather than a transcoded copy, so what EXIF there
         // is survives the trip when we have to fall back to reading it.
         config.preferredAssetRepresentationMode = .current
@@ -61,13 +77,6 @@ struct LibraryPicker: UIViewControllerRepresentable {
     func updateUIViewController(_ c: PHPickerViewController, context: Context) {}
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
-
-    /// Ask before presenting. Called by whoever is about to show this picker,
-    /// not by the picker itself, because the prompt belongs to the tap.
-    static func askForLibrary() async {
-        guard PHPhotoLibrary.authorizationStatus(for: .readWrite) == .notDetermined else { return }
-        _ = await PHPhotoLibrary.requestAuthorization(for: .readWrite)
-    }
 
     /// WHERE THE COORDINATE COMES FROM, as a decision rather than a line buried
     /// in the delegate, because there are three answers and only one of them
@@ -108,8 +117,17 @@ struct LibraryPicker: UIViewControllerRepresentable {
                 parent.dismiss()
                 return
             }
+            let rest = Array(results.dropFirst())
             Task {
-                let picked = await Self.read(result)
+                var picked = await Self.read(result)
+                // One at a time rather than in parallel: each is a decode of
+                // a large file, and running four at once is the memory spike
+                // this file exists to avoid.
+                var more: [UIImage] = []
+                for r in rest {
+                    if let img = await Self.read(r)?.image { more.append(img) }
+                }
+                picked?.extras = more
                 await MainActor.run {
                     parent.onPicked(picked)
                     parent.dismiss()
@@ -118,10 +136,16 @@ struct LibraryPicker: UIViewControllerRepresentable {
         }
 
         static func read(_ result: PHPickerResult) async -> Picked? {
-            guard let image = await loadImage(result.itemProvider) else { return nil }
+            let file = await fileContents(result.itemProvider)
+            var image = file.image
+            if image == nil { image = await loadImage(result.itemProvider) }
+            guard let image else { return nil }
             var assetLocation: CLLocation?
             var taken: Date?
-            if let id = result.assetIdentifier {
+            // Only a library already authorised in full: touching PHAsset
+            // otherwise raises the very prompt this picker no longer needs.
+            if PHPhotoLibrary.authorizationStatus(for: .readWrite) == .authorized,
+               let id = result.assetIdentifier {
                 let assets = PHAsset.fetchAssets(withLocalIdentifiers: [id], options: nil)
                 if let asset = assets.firstObject {
                     assetLocation = asset.location
@@ -130,9 +154,8 @@ struct LibraryPicker: UIViewControllerRepresentable {
             }
             var exif: CLLocationCoordinate2D?
             if assetLocation == nil || taken == nil {
-                let props = await fileProperties(result.itemProvider)
-                exif = exifCoordinate(in: props)
-                if taken == nil { taken = exifDate(in: props) }
+                exif = exifCoordinate(in: file.properties)
+                if taken == nil { taken = exifDate(in: file.properties) }
             }
             return Picked(image: image,
                           coordinate: coordinate(assetLocation: assetLocation, exif: exif),
@@ -148,18 +171,29 @@ struct LibraryPicker: UIViewControllerRepresentable {
             }
         }
 
-        /// The file's own metadata block. Copied to a temporary url first
+        /// The file's own metadata block AND the picture, downsampled while
+        /// it is decoded, from one read of the file. Done inside the closure
         /// because loadFileRepresentation deletes its file the moment the
-        /// closure returns, and reading a CGImageSource is not instant.
-        private static func fileProperties(_ provider: NSItemProvider) async -> [CFString: Any] {
+        /// closure returns. 2400 pixels is what Sightings keeps at most
+        /// (1600) with room to spare, and decoding straight to that size
+        /// never holds the full bitmap in memory.
+        private static func fileContents(_ provider: NSItemProvider) async
+            -> (image: UIImage?, properties: [CFString: Any]) {
             await withCheckedContinuation { cont in
                 _ = provider.loadFileRepresentation(forTypeIdentifier: UTType.image.identifier) { url, _ in
                     guard let url,
-                          let src = CGImageSourceCreateWithURL(url as CFURL, nil),
-                          let props = CGImageSourceCopyPropertiesAtIndex(src, 0, nil)
-                            as? [CFString: Any]
-                    else { cont.resume(returning: [:]); return }
-                    cont.resume(returning: props)
+                          let src = CGImageSourceCreateWithURL(url as CFURL, nil)
+                    else { cont.resume(returning: (nil, [:])); return }
+                    let props = CGImageSourceCopyPropertiesAtIndex(src, 0, nil)
+                        as? [CFString: Any] ?? [:]
+                    let opts: [CFString: Any] = [
+                        kCGImageSourceCreateThumbnailFromImageAlways: true,
+                        kCGImageSourceCreateThumbnailWithTransform: true,
+                        kCGImageSourceShouldCacheImmediately: true,
+                        kCGImageSourceThumbnailMaxPixelSize: 2400,
+                    ]
+                    let cg = CGImageSourceCreateThumbnailAtIndex(src, 0, opts as CFDictionary)
+                    cont.resume(returning: (cg.map { UIImage(cgImage: $0) }, props))
                 }
             }
         }

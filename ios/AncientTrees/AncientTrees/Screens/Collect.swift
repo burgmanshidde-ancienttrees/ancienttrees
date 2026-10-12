@@ -772,7 +772,16 @@ struct CollectView: View {
                             .accessibilityIdentifier("tree-card")
                             .accessibilityLabel(t.name)
                     }
+                    // A SHORT LIST STILL INVITES MORE (Hidde, 2026-10-12: "if
+                    // want to visit has 1 or 2 trees in it it should still
+                    // show the cta of telling people to add more"). The row
+                    // is finished with ghost tiles, the way the empty lane
+                    // looks, and the line and the button follow below.
+                    if country == nil && list.count < 3 {
+                        ForEach(0..<(3 - list.count), id: \.self) { _ in wantGhost }
+                    }
                 }
+                if country == nil && list.count < 3 { wantInvite }
             }
             }
         }
@@ -803,6 +812,27 @@ struct CollectView: View {
                 }
             }
             .accessibilityHidden(true)
+            wantInvite
+        }
+    }
+
+    /// One empty tile in the grid's shape. A wash of ink rather than
+    /// surfaceMuted: on this page's ground the muted grey all but vanished.
+    private var wantGhost: some View {
+        Brand.ink.opacity(0.06)
+            .aspectRatio(3.0 / 4.0, contentMode: .fit)
+            .overlay {
+                Image(systemName: "bookmark")
+                    .font(.system(size: 22, weight: .medium))
+                    .foregroundStyle(Brand.inkSoft.opacity(0.6))
+            }
+            .clipShape(Self.tileShape)
+            .accessibilityHidden(true)
+    }
+
+    /// The line and the way to the map, under an empty or a short list.
+    private var wantInvite: some View {
+        VStack(alignment: .leading, spacing: 14) {
             Text("You can keep a tree you want to visit by tapping its bookmark.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)

@@ -125,7 +125,7 @@ struct SignInSheet: View {
         // and the save it was going to finish should not land on the next
         // sign-in an hour later. `done` has already settled and cleared by the
         // time this runs, so the two cannot both fire.
-        .onDisappear { nudge.settle(ranThrough: false) }
+        .onDisappear { nudge.sheetGone() }
         .scrollBounceBehavior(.basedOnSize)
         .onAppear {
             apple.onCredential = { cred in
