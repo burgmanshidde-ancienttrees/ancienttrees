@@ -707,7 +707,8 @@
       },
       "verified_sources": [
         "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
-        "https://ilregistrodeglialberi.it/17729-la-magnolia-dei-corsini-magnolia-roma-rm-lazio"
+        "https://ilregistrodeglialberi.it/17729-la-magnolia-dei-corsini-magnolia-roma-rm-lazio",
+        "italy-masaf.json, no. 67/H501/RM/12"
       ],
       "access": "Free, public street (Via Corsini), RAMI records it as Accessibile. Resolves the access question the leads file left open: it stands on the street at Via Corsini 1, not inside the ticketed Orto Botanico or the private Corsini gardens.",
       "transport": "Same walk as (Twin Planes of the Eleven Fountains), 109m away; 10 min walk from Trastevere",
@@ -733,7 +734,9 @@
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 67/H501/RM/12",
         "url": null
-      }
+      },
+      "height_m": 18.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 67/H501/RM/12 (data/registers/italy-masaf.json), matched on our pin at 9 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rom_018",
@@ -798,7 +801,8 @@
       },
       "verified_sources": [
         "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
-        "https://ilregistrodeglialberi.it/17726-podocarpo-di-piazza-vittorio-quercia-virgiliana-roma-rm-lazio"
+        "https://ilregistrodeglialberi.it/17726-podocarpo-di-piazza-vittorio-quercia-virgiliana-roma-rm-lazio",
+        "italy-masaf.json, no. 77/H501/RM/12"
       ],
       "access": "Free, public garden inside Piazza Vittorio Emanuele II (Giardino Nicola Calipari). RAMI records it as Accessibile.",
       "transport": "Vittorio Emanuele metro (Line A), on the square; 1.7km from the Capitoline cluster",
@@ -816,7 +820,9 @@
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 77/H501/RM/12",
         "url": null
-      }
+      },
+      "height_m": 20.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 77/H501/RM/12 (data/registers/italy-masaf.json), matched on our pin at 14 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rom_020",
@@ -834,7 +840,8 @@
       "verified_sources": [
         "https://www.regione.lazio.it/sites/default/files/2025-11/Elenco-alberi-monumentali.xlsx",
         "https://ilregistrodeglialberi.it/17727-pino-dellhimalaya-pino-dellhimalaya-roma-rm-lazio",
-        "https://www.ilmessaggero.it/roma/cronaca/roma_il_miracolo_del_pino_della_domus_aurea_rinasce_l_albero_arrivato_dall_himalaya-3589907.html"
+        "https://www.ilmessaggero.it/roma/cronaca/roma_il_miracolo_del_pino_della_domus_aurea_rinasce_l_albero_arrivato_dall_himalaya-3589907.html",
+        "italy-masaf.json, no. 71/H501/RM/12"
       ],
       "access": "Free, public park, Parco di Colle Oppio. RAMI records it as Accessibile.",
       "transport": "5 min walk from Colosseo metro (Line B); joins a future Celio/Colosseum walk, 1km from Villa Celimontana",
@@ -852,7 +859,9 @@
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 71/H501/RM/12",
         "url": null
-      }
+      },
+      "height_m": 20.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 71/H501/RM/12 (data/registers/italy-masaf.json), matched on our pin at 11 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rom_021",
@@ -933,7 +942,8 @@
       "story": "The children who climbed this holm oak gave it its name. From the top they would shout \"Anvedi da quassù se vede tutta Roma\", Roman dialect for look, from up here you can see the whole of Rome, and the tree has been Tutta Roma ever since. They were doing it around 1919, so the oak was already climbable then; the register's own reckoning puts its planting at about 1900.\n\nThat shout is now on file. When Italy added the tree to its national list of monumental trees in 2025, the criteria included historical and cultural value alongside form and bearing, which is unusual in Rome, where most entries are listed for size alone. And this is not a giant: 2.80 metres around the trunk, 18 metres tall, measured in November 2025 and found in good health.\n\nIt stands in Piazza Perin del Vaga, a residential square in Della Vittoria on the edge of Flaminio, north of the centre near the Tiber and a fair way from anything a visitor would otherwise be walking to. Which is more or less the point of it. Nobody built a monument here. A tree went into the ground around the turn of the last century, a generation of local children went up it, one of them said something worth repeating, and a hundred years later the Italian state wrote it down.",
       "verified_sources": [
         "MASAF national register / Lazio regional register, sheet 63/H501/RM/12 (girth 280 cm, height 18 m, criteria: form and bearing; historical, cultural or religious value)",
-        "https://ilregistrodeglialberi.it/17724-tutta-roma-leccio-roma-rm-lazio (RAMI entry #17724, AMI code 63/H501/RM/12 matches the register sheet exactly; coordinates 41.925194,12.464699 match to the metre; girth 2.80 m and height 18.00 m match; registered 17/11/2025; health 'Buona'; accessibility 'Accessibile'; estimated age ~126 years calculated from the registered birth year, i.e. planted around 1900)"
+        "https://ilregistrodeglialberi.it/17724-tutta-roma-leccio-roma-rm-lazio (RAMI entry #17724, AMI code 63/H501/RM/12 matches the register sheet exactly; coordinates 41.925194,12.464699 match to the metre; girth 2.80 m and height 18.00 m match; registered 17/11/2025; health 'Buona'; accessibility 'Accessibile'; estimated age ~126 years calculated from the registered birth year, i.e. planted around 1900)",
+        "italy-masaf.json, no. 63/H501/RM/12"
       ],
       "access": "Free, public piazza, no restrictions",
       "transport": "In the residential Della Vittoria/Flaminio district, roughly 15-20 minutes' walk from Piazzale Flaminio or Lepanto (Metro A)",
@@ -950,7 +960,9 @@
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 63/H501/RM/12",
         "url": null
-      }
+      },
+      "height_m": 18.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 63/H501/RM/12 (data/registers/italy-masaf.json), matched on our pin at 6 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rom_024",

@@ -84,7 +84,8 @@
       "verified_sources": [
         "Bayerisches Landesamt fuer Umwelt Naturdenkmal register (CC BY 4.0), register id ND-04850, 'ND Nr. 45 Linde'",
         "https://de.wikipedia.org/wiki/Fuchsm%C3%BChle_(Rothenburg_ob_der_Tauber)",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber",
+        "bayern-naturdenkmale.json, no. ND-04850"
       ],
       "access": "Free; the tree stands roadside on the public Taubertalweg cycle and walking path beside the Fuchsmuhle guesthouse, not inside the guesthouse grounds.",
       "transport": "About 2 km downstream along the Taubertalweg from Rothenburg's old town; a level 25-30 minute walk or a short ride on the cycle path",
@@ -96,7 +97,12 @@
       },
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise it as the lime standing roadside beside the Fuchsmuhle guesthouse. It stands on the Taubertalweg, two kilometres downstream of the town walls."
+      "how_to_recognise": "You can recognise it as the lime standing roadside beside the Fuchsmuhle guesthouse. It stands on the Taubertalweg, two kilometres downstream of the town walls.",
+      "official_register": {
+        "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-04850",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-04850 (data/registers/bayern-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rob_003",
@@ -116,7 +122,8 @@
       "verified_sources": [
         "Bayerisches Landesamt fuer Umwelt Naturdenkmal register (CC BY 4.0), register id ND-04851, 'ND Nr. 46 Linde'",
         "https://de.wikipedia.org/wiki/Langenm%C3%BChle_(Rothenburg_ob_der_Tauber)",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber",
+        "bayern-naturdenkmale.json, no. ND-04851"
       ],
       "access": "Free; register location text places it by the mill on the roadside, the same wording pattern as the Fuchsmuhle entry. The Langenmuhle itself is a private residence and farm, but the tree stands by the valley road rather than inside its grounds.",
       "transport": "About 2.3 km downstream along the Taubertalweg from Rothenburg's old town, roughly a 30 minute level walk",
@@ -128,7 +135,12 @@
       },
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise it as the lime standing by the Langenmuhle mill. It stands on the Taubertalweg, 2.3 kilometres downstream of the town walls."
+      "how_to_recognise": "You can recognise it as the lime standing by the Langenmuhle mill. It stands on the Taubertalweg, 2.3 kilometres downstream of the town walls.",
+      "official_register": {
+        "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-04851",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-04851 (data/registers/bayern-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rob_004",
@@ -148,7 +160,8 @@
       "verified_sources": [
         "Bayerisches Landesamt fuer Umwelt Naturdenkmal register (CC BY 4.0), register id ND-04852, 'ND Nr. 47 2 Fichten am Wasserfall im Vorbachtal'",
         "https://de.wikipedia.org/wiki/Vorbach_(Rothenburg_ob_der_Tauber)",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Ansbach#Rothenburg_ob_der_Tauber",
+        "bayern-naturdenkmale.json, no. ND-04852"
       ],
       "access": "Free; the valley is reached by a public Gemeindeverbindungsstrasse (local connecting road) and lies on the W8 'Postbotenweg' waymarked hiking trail out of Rothenburg, which passes directly through the Vorbachtal and the neighbouring hamlet of Vorbach.",
       "transport": "About 2.5 km west of Rothenburg's Marktplatz via the W8 Postbotenweg trail through the Vorbachtal; roughly 35-40 minutes on foot",
@@ -160,7 +173,12 @@
       },
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise them as the two spruces standing together over a small waterfall, in a narrow wooded valley. They stand in the Vorbachtal, near the hamlet of Vorbach."
+      "how_to_recognise": "You can recognise them as the two spruces standing together over a small waterfall, in a narrow wooded valley. They stand in the Vorbachtal, near the hamlet of Vorbach.",
+      "official_register": {
+        "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-04852",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-04852 (data/registers/bayern-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

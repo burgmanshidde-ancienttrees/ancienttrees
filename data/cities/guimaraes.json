@@ -85,7 +85,8 @@
       "verified_sources": [
         "https://si.icnf.pt/wfs/arv_class",
         "https://www.museualbertosampaio.gov.pt/museum/spaces/cloister/?lang=en",
-        "https://pt.wikipedia.org/wiki/Igreja_de_Nossa_Senhora_da_Oliveira_(Guimar%C3%A3es)"
+        "https://pt.wikipedia.org/wiki/Igreja_de_Nossa_Senhora_da_Oliveira_(Guimar%C3%A3es)",
+        "portugal-icnf.json, no. AIP030884104I"
       ],
       "access": "Paid, 1 euro cloister add-on to the Museu de Alberto Sampaio ticket, Tuesday to Sunday 10:00-18:00",
       "transport": "In the historic centre, on foot",
@@ -113,7 +114,9 @@
       "official_register": {
         "name": "Arvoredo de Interesse Público (ICNF), no. AIP030884104I",
         "url": null
-      }
+      },
+      "height_m": 19.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. AIP030884104I (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "gui_003",

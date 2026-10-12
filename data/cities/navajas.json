@@ -48,7 +48,8 @@
       "verified_sources": [
         "https://www.valenciabonita.es/2019/02/13/olmo-de-navajas/",
         "https://www.xn--arbolybosquedelao-uxb.es/olmo-de-navajas-castellon/",
-        "https://www.caminodelcid.org/servicios/olmo-centenario-de-navajas-2745524"
+        "https://www.caminodelcid.org/servicios/olmo-centenario-de-navajas-2745524",
+        "valencia-arboles-monumentales.json, no. 395"
       ],
       "access": "Free. Stands on a raised circular stone platform in the town's main square, right beside the ayuntamiento (town hall); Camino del Cid's own visitor page says the plaza is reachable directly by car and open to all, no restriction of any kind, and it hosts the village's markets, festivals and bullfighting events, so it is in continuous public use rather than roped off.",
       "transport": "Navajas has its own station on the Cercanias Valencia line C-5 (Zaragoza-Sagunto railway), but the line runs a slow, sparse regional service (about three trains a day) and the town is well beyond a 30-minute ride from Valencia; as of the time of this pass the Sagunto-Caudiel stretch is reported suspended for engineering works with a replacement bus. About 47km north of Valencia (published) by road; treated as its own place rather than a Valencia day trip.",
@@ -60,7 +61,13 @@
       },
       "photos": [],
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 395",
+        "url": null
+      },
+      "height_m": 17.0,
+      "verify_notes": "Register number and height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 395 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 6 m (register_match.py, 2026-10-12)."
     }
   ]
 }

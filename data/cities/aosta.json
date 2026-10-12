@@ -46,7 +46,8 @@
       "story": "Legend says a sixth-century hermit planted this lime with his own hands, and the tree the city protects today contradicts him: its documented planting sits in the 1530s or 1540s, roughly a thousand years after Saint Orso is meant to have died. The two stories should not be joined. What is recorded is that an earlier tree, an elm or an earlier lime, stood on this spot before, and this lime replaced it sometime in that Renaissance decade, which still makes it one of the oldest trees in the Aosta Valley.\n\nIts trunk has hollowed from the base up to the first branching, and metal braces now hold the crown from splitting the shell apart, a slow, monitored decline rather than an abandoned ruin. Italy listed it a national monument in 1924 and regional law has protected it since 1990. Local memory keeps the valley's council of elders meeting in its shade to settle disputes, though nobody has dated that tradition either.\n\nIt stands in a raised planter bed beside the Collegiata dei Santi Pietro e Orso, whose Romanesque cloister already draws its own visitors, in the historic borgo that carries the saint's name. You can see it clearly from the street. You cannot touch the trunk: the bed keeps everyone a few steps back, which for a tree this hollow is probably the point.",
       "verified_sources": [
         "https://it.wikipedia.org/wiki/Tiglio_di_Sant'Orso",
-        "https://ilregistrodeglialberi.it/3-tiglio-nostrale-aosta-valle-daosta"
+        "https://ilregistrodeglialberi.it/3-tiglio-nostrale-aosta-valle-daosta",
+        "italy-masaf.json, no. 01/A326/AO/02"
       ],
       "access": "Free, always visible from the street/borgo, but the tree stands in a raised, fenced planter bed and cannot be approached or touched directly.",
       "transport": "In the historic centre of Aosta, beside the Collegiata di Sant'Orso; walkable from Piazza Chanoux, the city's main square.",
@@ -67,7 +68,12 @@
         "source_name": "Sant'Orso (Aosta) - Tilia",
         "qid": "Q55743195",
         "views": 74
-      }
+      },
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/A326/AO/02",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 01/A326/AO/02 (data/registers/italy-masaf.json), matched on our pin at 3 m (register_match.py, 2026-10-12)."
     }
   ]
 }

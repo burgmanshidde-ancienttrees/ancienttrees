@@ -45,7 +45,8 @@
       },
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/1458-tausendjaehrige_linde_in_effeltrich/",
-        "https://nationalerbe-baeume.de/project/tanzlinde-effeltrich-landkreis-forchheim-oberfranken/"
+        "https://nationalerbe-baeume.de/project/tanzlinde-effeltrich-landkreis-forchheim-oberfranken/",
+        "bayern-naturdenkmale.json, no. ND-04472"
       ],
       "access": "Free, public village square beside the fortified church.",
       "transport": "Not verified; no confirmed public transport stop found. Effeltrich lies in the Franconian Switzerland foothills near Forchheim/Erlangen, reachable by car; no rail station in the village itself.",
@@ -60,7 +61,12 @@
         "width": 4608,
         "height": 3456
       },
-      "how_to_recognise": "You can recognise it by its flat, table-like crown trained sideways onto a scaffold of oak beams on 24 posts, ringed by a low stone wall. It stands on the village square beside the fortified church of St. Georg in Effeltrich."
+      "how_to_recognise": "You can recognise it by its flat, table-like crown trained sideways onto a scaffold of oak beams on 24 posts, ringed by a low stone wall. It stands on the village square beside the fortified church of St. Georg in Effeltrich.",
+      "official_register": {
+        "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-04472",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-04472 (data/registers/bayern-naturdenkmale.json), matched on our pin at 4 m (register_match.py, 2026-10-12)."
     }
   ]
 }

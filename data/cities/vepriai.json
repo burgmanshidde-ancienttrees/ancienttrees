@@ -45,7 +45,8 @@
       "story": "The pilgrims come for the Stations of the Cross, and the oak is waiting for them at the third one. Vepriai's Kalvarijos is a Way of the Cross five and a half kilometres long, with 35 stations strung through forest, across meadow and along a lakeshore, and this tree stands 20 metres from the chapel of the third.\n\nThe path was laid out in 1846. The brick chapels came later, between 1882 and 1900, and it was the local farmers who paid for them. At Whitsun it drew crowds: in the years between the wars, thousands of people walked it. It is still a living pilgrimage route, not a museum piece.\n\nThe oak is not the reason the path exists, and it does not need to be. It is 30 metres tall, a real height for an oak, and 4.30 metres round at chest height. Lithuania protected it in 2016, and in autumn 2025 an information marker went up beside it, so you will not have to guess which trunk it is.\n\nThat is the way to see it: walk the Kalvarijos, or at least its first stretch, and stop at the third chapel. The oak is one marked feature on a route through a landscape that people have been walking on purpose for 180 years.\n\nIt is in the Ukmergė district, easiest by car. The facts on the tree come from a single register entry, and nobody has published its age. If you know it, tell us.",
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Vepri%C5%B3_%C4%85%C5%BEuolas",
-        "https://lt.wikipedia.org/wiki/Vepri%C5%B3_Kalvarijos"
+        "https://lt.wikipedia.org/wiki/Vepri%C5%B3_Kalvarijos",
+        "lithuania-stvk-gpo.json, no. 0310505010256"
       ],
       "access": "Free; stands in state forest directly beside a public pilgrimage path with an information marker installed as of autumn 2025",
       "transport": "Ukmergė district; no public transit stop checked this pass, reachable by car; Ukmergė town itself is not currently a published place",
@@ -65,7 +66,12 @@
         "source_name": "Vepriai oak",
         "qid": "Q25498243",
         "views": 7
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010256",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010256 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     }
   ]
 }

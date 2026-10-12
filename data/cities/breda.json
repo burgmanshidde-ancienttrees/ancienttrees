@@ -316,7 +316,8 @@
       },
       "story": "This is the plain, green-leaved beech among a park that otherwise favours its copper and weeping cousins, which makes it the least conspicuous registered tree in Wilhelminapark and one of the largest.\n\nFagus sylvatica is the wild-type European beech, the species every ornamental copper and weeping form has been bred from, and left to grow straight and green it does the thing beeches do best: a dense, smooth-barked trunk holding up a crown so complete that almost nothing grows in the deep shade beneath it. In the park's middle section, along the Paul Withausenweg, it stands among younger, more colourful plantings without competing for attention.\n\nThe register bands its planting to 1890 to 1900, putting it just past its first century and a quarter. No girth has been recorded.\n\nFree, public park, open daily.\n\nThere is no single dramatic month for a green beech the way there is for its copper relatives elsewhere in this park. Autumn brings a plain gold rather than the copper's colour, but the trunk and the shade it throws are worth the visit at any time of year.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "netherlands-lrmb.json, no. 1691800"
       ],
       "access": "Free, public park, open daily.",
       "transport": "Zandberg neighbourhood, Breda; 15 minute walk from Breda railway station.",
@@ -336,7 +337,12 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691800",
+        "url": null
+      },
+      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1691800 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bre_009",
@@ -353,7 +359,8 @@
       },
       "story": "The register itself calls this the tallest pedunculate oak in Valkenberg, which is a real claim rather than a guess, since somebody with the right instrument had to measure every registered oak in the park to say so.\n\nQuercus robur is the oak native to this part of Europe, the one an acorn falling in October will grow into if left alone, and Valkenberg has several registered specimens. This one has simply outgrown its neighbours, reaching well above the park's tree line near the J.F. Kennedylaan side of the grounds.\n\nThe register bands its planting to 1880 to 1890, so it has had roughly a century and a half to win that height. No further age detail and no girth are recorded.\n\nFree, public park, open daily. Valkenberg is Breda's central city park, beside the castle grounds.\n\nThere is no single dramatic month for an oak like this. It is worth finding for the same reason it was measured: to stand under the tallest one and see, by comparison, how much smaller the rest of the park's oaks actually are.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "netherlands-lrmb.json, no. 1696366"
       ],
       "access": "Free, public park, open daily.",
       "transport": "Central Breda, beside Breda Castle; 10 minute walk from Breda railway station.",
@@ -373,7 +380,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696366",
+        "url": null
+      },
+      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1696366 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bre_010",

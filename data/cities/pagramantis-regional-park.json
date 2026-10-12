@@ -219,7 +219,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Gaur%C4%97s_%C4%85%C5%BEuolas",
         "https://stvk.lt/map/S0310505010175-gaures-azuolas",
-        "https://www.vivmu.lt/wp-content/uploads/2018/08/Taurag%C4%97-GPP-ai%C5%A1kinamasis-ra%C5%A1tas.pdf"
+        "https://www.vivmu.lt/wp-content/uploads/2018/08/Taurag%C4%97-GPP-ai%C5%A1kinamasis-ra%C5%A1tas.pdf",
+        "lithuania-stvk-gpo.json, no. 0310505010175"
       ],
       "access": "Free; stands beside an old homestead on the slope edge between Gaurė's main street and the Įkojis stream, with a maintained information board and a road sign pointing to it. No source states the plot is fenced or restricted; treat it as a maintained, signposted roadside site rather than private land, the same reading applied to comparable homestead-adjacent trees elsewhere in this project.",
       "transport": "No public transport; reached by car. About 18-19km by straight-line distance from Pagramantis Regional Park's other four trees (pgm_001-004); real road distance is greater, and this is a separate stop in Tauragė district rather than part of the park's own walking loop.",
@@ -247,7 +248,12 @@
         "source_name": "Gaurė oak",
         "qid": "Q111980608",
         "views": 16
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010175",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010175 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

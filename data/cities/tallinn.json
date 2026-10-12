@@ -138,7 +138,8 @@
       "story": "The house burned down in 1995. The oak the owner planted is still standing.\n\nRobert Weisse built Windecki as a summer estate on the terrace below the Lasnamäe cliff and laid out its park before his death in 1886. The timber main house went up in flames a century later and was never rebuilt. What survived is the planting: 32 trees where there were 42 in 1995, a row of seventeen old European larches, and this red oak.\n\nThe dendrologist Olev Abner surveyed the ground in 2017 and made the case that it is probably the oldest red oak in Estonia, thicker in the trunk and taller than either of the two others the country protects individually. He recorded it at 24 metres high and 83 centimetres through. The age comes from the park rather than from a ring count: if the oak went in with Weisse's original planting, it is roughly 140 to 150 years old now, and that \"if\" is the whole basis for the number.\n\nThere is a second wrinkle. A 2007 survey of the same park recorded its largest red oak at the same 24 metres but only 61 centimetres through, which is either a different tree or a different tape measure. Estonia gave this one formal protection in 2020.\n\nMaarjamäe is twenty minutes out from the centre, and the park is small enough to find it in.",
       "verified_sources": [
         "https://www.eestimetsaabiks.ee/wp-content/uploads/2018/03/Ekspertiis-Windecki-pargi-ja-Hans-Lepa-aia-puukooli_2017_12_08.pdf",
-        "http://vana.loodusajakiri.ee/eesti_loodus/artikkel2011_2002.html"
+        "http://vana.loodusajakiri.ee/eesti_loodus/artikkel2011_2002.html",
+        "estonia-eelis-yksikobjektid.json, no. KLO4001325"
       ],
       "access": "Free; stands in Windecki park, a former manor summer estate park now open ground in the Maarjamäe area",
       "transport": "Pirita/Maarjamäe district, Tallinn; reachable by bus along Pirita tee, roughly 15-20 minutes from the centre",
@@ -150,7 +151,12 @@
       },
       "how_to_recognise": "The largest oak in a small manor park, alongside a row of seventeen old European larches. The main house is gone; it burned down in 1995.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Kaitstavad looduse üksikobjektid (EELIS, Keskkonnaagentuur), no. KLO4001325",
+        "url": null
+      },
+      "verify_notes": "Register number from Kaitstavad looduse üksikobjektid (EELIS, Keskkonnaagentuur) no. KLO4001325 (data/registers/estonia-eelis-yksikobjektid.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "tln_004",
@@ -168,7 +174,8 @@
       "story": "Two limes, planted in 1883 to mark two hundred years of one family at one address. The Huecks acquired Lai 29 in 1683 and the trees went in for the bicentenary, which is a grand way to note a property anniversary and has outlived everyone involved. Sirp, the Estonian culture weekly that records the year, hedges it with \"apparently\", so take 1883 as the best account anyone has rather than a documented planting.\n\nThey belong together and are protected together, listed as a single natural monument since 2009: two common limes in front of one house, each around 25 metres tall. There is one obvious place to stand, on the far pavement, where both fit in the frame at once.\n\nThe interesting part is underneath. Lai is a paved Old Town street with almost nothing beneath it for a root to work with, and Sirp describes the pair as growing in the middle of a stone desert. Whatever the family thought it was planting, the result has spent 143 years making a living out of the gaps between cobbles and cellar walls, at a size that would be respectable in a park with proper soil.\n\nThe house behind them still carries the family's name.",
       "verified_sources": [
         "https://www.sirp.ee/puude-tanavaelu/",
-        "https://www.protectedplanet.net/harilik-parn-2-puud-huecki-parnad-2-protected-nature-monument"
+        "https://www.protectedplanet.net/harilik-parn-2-puud-huecki-parnad-2-protected-nature-monument",
+        "estonia-eelis-yksikobjektid.json, no. KLO4000024"
       ],
       "access": "Free, street trees standing in public space in front of the historic Huecki house",
       "transport": "Central Tallinn Old Town, short walk from the Old Town's northern gate area",
@@ -188,7 +195,12 @@
         ],
         "label": "July to August, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "official_register": {
+        "name": "Kaitstavad looduse üksikobjektid (EELIS, Keskkonnaagentuur), no. KLO4000024",
+        "url": null
+      },
+      "verify_notes": "Register number from Kaitstavad looduse üksikobjektid (EELIS, Keskkonnaagentuur) no. KLO4000024 (data/registers/estonia-eelis-yksikobjektid.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "tln_005",

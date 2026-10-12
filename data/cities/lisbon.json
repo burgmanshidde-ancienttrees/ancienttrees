@@ -841,7 +841,9 @@
         "height": 1908
       },
       "girth_cm": 298,
-      "how_to_recognise": "You can recognise it by its 2.98 metre trunk at the centre of a bus terminal, near the bronze Homem do Leme and an old ticket kiosk. It stands in Jardim Roque Gameiro at Cais do Sodre."
+      "how_to_recognise": "You can recognise it by its 2.98 metre trunk at the centre of a bus terminal, near the bronze Homem do Leme and an old ticket kiosk. It stands in Jardim Roque Gameiro at Cais do Sodre.",
+      "height_m": 18.3,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/403 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "lis_021",
@@ -873,7 +875,9 @@
       },
       "notes": "ICNF processo AIP11066049I, Tipuana tipu, Praça São João Bosco / Jardim da Parada dos Prazeres, classified Despacho (extrato) n.º 782/2019, Diário da República 2.ª série n.º 13, 18 January 2019. Register figures: girth 3.42 m, height 23.5 m, crown 34 m, last measured 2010 at age 100 (register-only figure; AGE FLAGGED, no independent age source found). Second source for existence, species and status: Junta de Freguesia da Estrela's own news article on a March 2018 structural pruning of this exact tree, carried out with ICNF oversight. THIS IS A DIFFERENT GARDEN from lis_016/lis_017's 'Jardim da Parada' (Jardim Teofilo Braga, the Campo de Ourique barracks parade ground, roughly 500 m north): this one is Jardim da Parada dos Prazeres, a 7,000 sqm roundabout garden around the Sao Joao Bosco statue (inaugurated 1988), facing the Prazeres Cemetery, straddling Campo de Ourique and Estrela parishes (register lists freguesia as Estrela). Confirmed as a separate location by web search before naming, given the corpus already flags this exact 'two gardens share a nickname' risk on lis_016. Distance to the nearest existing published tree (lis_017, the Pohutukawa) is about 500 m, inside the walk radius: joins the Estrela cluster (lis_005, lis_011, lis_012, lis_016, lis_017) as its sixth tree.",
       "girth_cm": 342,
-      "how_to_recognise": "You can recognise it by its wide crown, once measured at 34 metres, filling the roundabout around the statue of Don Bosco. It stands in Praca Sao Joao Bosco, across from the Prazeres cemetery."
+      "how_to_recognise": "You can recognise it by its wide crown, once measured at 34 metres, filling the roundabout around the statue of Don Bosco. It stands in Praca Sao Joao Bosco, across from the Prazeres cemetery.",
+      "height_m": 23.5,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. AIP11066049I (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "lis_022",

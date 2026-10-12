@@ -94,7 +94,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Pagryni%C5%B3_%C4%85%C5%BEuolas",
-        "https://krastogidas.lt/objektai/pagryniu-azuolas"
+        "https://krastogidas.lt/objektai/pagryniu-azuolas",
+        "lithuania-stvk-gpo.json, no. 0310505010081"
       ],
       "access": "Free, public; the tree grows in a forest clearing, fenced with a protective barrier and an information board, no fee or restriction mentioned by any source.",
       "transport": "No public transport identified to the clearing itself; reached by car or on foot from the Šilutė-Pagryniai road, near Stadiono gatvė on the southern edge of Šilutė town. About 4.3km by straight-line distance from Žalgiriai's own tree (zal_001, the Hermann Sudermann Oak), both reachable via the Šilutė area road network as a plausible same-day pairing, though not a walk between the two.",
@@ -122,7 +123,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010081",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010081 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     }
   ]
 }

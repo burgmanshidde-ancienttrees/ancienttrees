@@ -324,7 +324,8 @@
       "verified_sources": [
         "https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ec_arbre_p/records?where=statut_patrimonial like \"REMARQUABLE_SYMBOLIQUE\" (Bordeaux Metropole tree register, gid 4324, Licence Ouverte)",
         "https://www.aquitaineonline.com/actualites-en-aquitaine/bordeaux-metropole/8424-bordeaux-les-arbres-mieux-proteges.html",
-        "https://www.bordeaux.fr/parc-jardin/parc-bordelais"
+        "https://www.bordeaux.fr/parc-jardin/parc-bordelais",
+        "bordeaux-metropole-remarquables.json, no. 4324"
       ],
       "access": "Free public park (Parc Bordelais), open daily: 7am to 8pm April and May, to 9pm June to August, 8pm September, 7pm October, 6pm 1 November to 14 February, 7pm 15 February to 31 March.",
       "transport": "Tram D, Courbet stop, short walk into the park",
@@ -350,7 +351,9 @@
       "official_register": {
         "name": "Arbres remarquables, Bordeaux Métropole (patrimoine arboré), no. gid 4324",
         "url": null
-      }
+      },
+      "height_m": 3.0,
+      "verify_notes": "Height from Patrimoine arboré remarquable (Bordeaux Métropole) no. 4324 (data/registers/bordeaux-metropole-remarquables.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bdx_009",

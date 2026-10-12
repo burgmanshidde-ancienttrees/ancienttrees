@@ -51,7 +51,8 @@
       "verified_sources": [
         "https://fr.wikipedia.org/wiki/Robinier_du_square_Ren%C3%A9-Viviani",
         "https://www.atlasobscura.com/places/oldest-tree-paris",
-        "https://www.nationalgeographic.com/environment/article/what-we-can-learn-from-paris-oldest-tree-20210713"
+        "https://www.nationalgeographic.com/environment/article/what-we-can-learn-from-paris-oldest-tree-20210713",
+        "paris-arbres-remarquables.json, no. 124358"
       ],
       "access": "Free, public square, open daily",
       "transport": "Saint-Michel Notre-Dame (RER B/C, Metro 4), 3 min walk",
@@ -70,7 +71,9 @@
       "official_register": {
         "name": "Arbres remarquables de Paris (Ville de Paris), no. 124358",
         "url": null
-      }
+      },
+      "height_m": 15.0,
+      "verify_notes": "Height from Arbres remarquables de Paris (Ville de Paris) no. 124358 (data/registers/paris-arbres-remarquables.json), matched on our pin at 23 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "par_002",

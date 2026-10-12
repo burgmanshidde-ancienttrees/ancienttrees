@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://www.caib.es/sites/proteccioespecies/ca/n/pi_de_can_reiet-21509/",
         "https://www.periodicodeibiza.es/pitiusas/ibiza/2022/01/21/1690971/arboles-historia-parecen-autenticas-obras-arte.html",
-        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/"
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/",
+        "balears-arbres-singulars.json, no. 652"
       ],
       "access": "Free, visible from a public road. Owned by the Consell Insular d'Eivissa i Formentera (the island council itself), catalogued 1993.",
       "transport": "By car, roughly 20 minutes from Ibiza Town along the road to Sant Joan; the tree stands at the km 1.6 marker. No specific bus stop identified; nearest regular service runs into Santa Eularia des Riu, about 1.6 km away by road.",
@@ -58,7 +59,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its visibly leaning, unbalanced crown, weight periodically removed from one side by the island council. It stands at the km 1.6 marker on the road from Santa Eularia to Sant Joan de Labritja."
+      "how_to_recognise": "You can recognise it by its visibly leaning, unbalanced crown, weight periodically removed from one side by the island council. It stands at the km 1.6 marker on the road from Santa Eularia to Sant Joan de Labritja.",
+      "official_register": {
+        "name": "Catàleg d'Arbres Singulars (Govern de les Illes Balears), no. 652",
+        "url": null
+      },
+      "verify_notes": "Register number from Catàleg d'Arbres Singulars (Govern de les Illes Balears) no. 652 (data/registers/balears-arbres-singulars.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

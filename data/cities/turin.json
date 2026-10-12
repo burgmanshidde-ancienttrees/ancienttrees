@@ -46,7 +46,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
-        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/"
+        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/",
+        "piemonte-alberi-monumentali.json, no. 002/L219/TO/01"
       ],
       "access": "Free, public garden in Piazza Carlo Felice, open at all hours",
       "transport": "Directly opposite Porta Nuova station, 1 min walk. Metro Porta Nuova",
@@ -70,9 +71,13 @@
       },
       "location_precision": "confirmed",
       "height_m": 27.0,
-      "verify_notes": "Height 27.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 27.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 002/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 605,
-      "how_to_recognise": "You can recognise it by its heavy fluted trunk, over 6 metres round, and in summer by green seed chains up to half a metre long. It stands at the centre of the Giardino Sambuy in Piazza Carlo Felice."
+      "how_to_recognise": "You can recognise it by its heavy fluted trunk, over 6 metres round, and in summer by green seed chains up to half a metre long. It stands at the centre of the Giardino Sambuy in Piazza Carlo Felice.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 002/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_002",
@@ -92,7 +97,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.museotorino.it/view/s/d3d457ff24a246fe9af6876d5f5c6220",
-        "https://mole24.it/2024/01/09/giardini-cavour-di-torino-un-oasi-di-bellezza-e-storia/"
+        "https://mole24.it/2024/01/09/giardini-cavour-di-torino-un-oasi-di-bellezza-e-storia/",
+        "piemonte-alberi-monumentali.json, no. 003/L219/TO/01"
       ],
       "access": "Free, public garden, open at all hours",
       "transport": "About 10 min walk north from Porta Nuova station along Via Lagrange",
@@ -108,9 +114,13 @@
       "notes": "Regional register card 003/L219/TO/01: 550 cm girth, 34 m, crown 30 m, age band 100-200, publicly owned. Turismo Torino's route and the press lists give 33.5 m for the same tree, so the height is rounded differently rather than disputed. The age band is the register's; the narrower figure comes from MuseoTorino and Mole24, which both date the garden's laying out and its large tree planting to 1872-1875. That is the garden's date, not a measurement of this trunk, so the range is kept wide. Commons has 14 photographs filed under this exact register card number, not yet reviewed; this pass hit its three-photo limit first.",
       "location_precision": "confirmed",
       "height_m": 34.0,
-      "verify_notes": "Height 34.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 34.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 003/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 550,
-      "how_to_recognise": "You can recognise it by its huge crown, about 30 metres across, covering most of the garden, and its flaking camouflage bark. It stands in the Giardini Cavour on Piazza Cavour."
+      "how_to_recognise": "You can recognise it by its huge crown, about 30 metres across, covering most of the garden, and its flaking camouflage bark. It stands in the Giardini Cavour on Piazza Cavour.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 003/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_003",
@@ -130,7 +140,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
-        "https://mole24.it/2024/01/09/giardini-cavour-di-torino-un-oasi-di-bellezza-e-storia/"
+        "https://mole24.it/2024/01/09/giardini-cavour-di-torino-un-oasi-di-bellezza-e-storia/",
+        "piemonte-alberi-monumentali.json, no. 004/L219/TO/01"
       ],
       "access": "Free, public garden, open at all hours",
       "transport": "About 10 min walk north from Porta Nuova station along Via Lagrange",
@@ -153,9 +164,13 @@
       },
       "location_precision": "confirmed",
       "height_m": 27.0,
-      "verify_notes": "Height 27.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 27.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 004/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 370,
-      "how_to_recognise": "You can recognise it by its straight trunk, limbs coming off in level tiers, and fan-shaped leaves that turn hard yellow in November. It stands about 60 metres from the plane in the Giardini Cavour."
+      "how_to_recognise": "You can recognise it by its straight trunk, limbs coming off in level tiers, and fan-shaped leaves that turn hard yellow in November. It stands about 60 metres from the plane in the Giardini Cavour.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 004/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_004",
@@ -175,7 +190,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
-        "https://en.wikipedia.org/wiki/Parco_del_Valentino"
+        "https://en.wikipedia.org/wiki/Parco_del_Valentino",
+        "piemonte-alberi-monumentali.json, no. 008/L219/TO/01"
       ],
       "access": "Free, public park, no gates",
       "transport": "About 15 min walk south from Porta Nuova, or tram 9 and 16 along Corso Massimo d'Azeglio",
@@ -191,9 +207,13 @@
       "notes": "Regional register card 008/L219/TO/01: 475 cm girth, 23 m, crown 16 m, age band 100-200, publicly owned. Second source is Turismo Torino's route and both press lists, which all place a 23 m Celtis australis in Parco del Valentino. The photo shows an isolated dome-crowned tree on open lawn at the north end of the park, which matches the register point and the Commons file naming it for Corso Massimo d'Azeglio. No best_time set: the autumn fruit is real but small, and the badge is kept for moments worth crossing town for.",
       "location_precision": "confirmed",
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 23.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 008/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 475,
-      "how_to_recognise": "You can recognise it by its wide, even dome of a crown, standing alone on open grass with room on every side. It stands at the northern end of Parco del Valentino, near Corso Massimo d'Azeglio."
+      "how_to_recognise": "You can recognise it by its wide, even dome of a crown, standing alone on open grass with room on every side. It stands at the northern end of Parco del Valentino, near Corso Massimo d'Azeglio.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 008/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_005",
@@ -213,7 +233,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
-        "https://en.wikipedia.org/wiki/Parco_del_Valentino"
+        "https://en.wikipedia.org/wiki/Parco_del_Valentino",
+        "piemonte-alberi-monumentali.json, no. 007/L219/TO/01"
       ],
       "access": "Free, public park, no gates",
       "transport": "Tram 9 or 16 along Corso Massimo d'Azeglio, then into the park behind the Castello del Valentino",
@@ -237,9 +258,13 @@
         "kind": "fruit"
       },
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 28.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 007/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 400,
-      "how_to_recognise": "You can recognise it by its short, heavy trunk and limbs reaching out almost horizontally, the shape an oak takes with open space around it. It stands behind the Castello del Valentino, near the Rocaille."
+      "how_to_recognise": "You can recognise it by its short, heavy trunk and limbs reaching out almost horizontally, the shape an oak takes with open space around it. It stands behind the Castello del Valentino, near the Rocaille.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 007/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_006",
@@ -259,7 +284,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
-        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/"
+        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/",
+        "piemonte-alberi-monumentali.json, no. 011/L219/TO/01"
       ],
       "access": "Free, public park, no gates",
       "transport": "Tram 9 or 16 along Corso Massimo d'Azeglio, then to the riverside path at Viale Virgilio",
@@ -275,9 +301,13 @@
       "notes": "Regional register card 011/L219/TO/01: 600 cm girth, 26 m, crown 24 m, age band over 200, publicly owned. Largest girth of the five register trees inside Parco del Valentino, which is what 'widest trunk in the park' rests on. Second source is Turismo Torino's route and the press lists, all of which place a 26 m plane 'fronte Eridano'. Set as oldest_tree_id for the page: three trees here share the over-200 band and this is the widest of them, but the register bands rather than dates, so it is the best available answer and not a measured one.",
       "location_precision": "confirmed",
       "height_m": 26.0,
-      "verify_notes": "Height 26.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 26.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 011/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 600,
-      "how_to_recognise": "You can recognise it by its very thick trunk, 6 metres round, grown wide and sideways rather than tall, with bark like a jigsaw of grey, olive and cream. It stands on Viale Virgilio opposite the Eridano."
+      "how_to_recognise": "You can recognise it by its very thick trunk, 6 metres round, grown wide and sideways rather than tall, with bark like a jigsaw of grey, olive and cream. It stands on Viale Virgilio opposite the Eridano.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 011/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_007",
@@ -297,7 +327,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
-        "https://en.wikipedia.org/wiki/Parco_del_Valentino"
+        "https://en.wikipedia.org/wiki/Parco_del_Valentino",
+        "piemonte-alberi-monumentali.json, no. 012/L219/TO/01"
       ],
       "access": "Free, public park. The Borgo Medievale courtyard is free; its museum house charges",
       "transport": "Tram 9 or 16 along Corso Massimo d'Azeglio, then 5 min into the park to the Borgo Medievale",
@@ -313,9 +344,13 @@
       "notes": "Regional register card 012/L219/TO/01: 510 cm girth, 36 m, crown 27 m, age band 100-200, publicly owned. Second tallest of the fourteen Turin register trees, after 010/L219/TO/01 at 40 m. Second source is Turismo Torino's route and both press lists, all placing a 36 m plane at the Borgo Medievale. Flagged on pin only: several large planes stand along this stretch of Viale Virgilio and the register coordinate is single-sourced, so it is marked approximate. The three oaks mentioned are register card 013/L219/TO/01, filed as a GRUPPO with no girth, height or age, and blocked in data/leads/turin.json.",
       "location_precision": "approximate",
       "height_m": 36.0,
-      "verify_notes": "Height 36.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 36.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 012/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 510,
-      "how_to_recognise": "You can recognise it by its great height, 36 metres, towering directly behind the low timber and stone rooftops of the Borgo Medievale. It stands on Viale Virgilio in Parco del Valentino."
+      "how_to_recognise": "You can recognise it by its great height, 36 metres, towering directly behind the low timber and stone rooftops of the Borgo Medievale. It stands on Viale Virgilio in Parco del Valentino.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 012/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_008",
@@ -335,7 +370,8 @@
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
         "https://www.outdooractive.com/it/route/percorso-urbano/provincia-di-torino/gli-alberi-monumentali-di-torino-un-filo-verde-nel-cuore-di-torino/804381643/",
         "https://www.quotidianopiemontese.it/curiosita/alberi-monumentali-torino/",
-        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/"
+        "https://mole24.it/2025/08/13/alberi-monumentali-di-torino/",
+        "piemonte-alberi-monumentali.json, no. 010/L219/TO/01"
       ],
       "access": "Free, public park, no gates",
       "transport": "Tram 9 or 16 to Corso Massimo d'Azeglio near Ponte Isabella, then 3 min into the park",
@@ -349,9 +385,13 @@
       "notes": "Regional register card 010/L219/TO/01: 550 cm girth, 40 m, crown 32 m, age band over 200, publicly owned. Tallest and widest-crowned of the fourteen Turin register trees. Turismo Torino's route and both press lists give 39.5 m for the same tree at the Fontana 12 mesi, so the half metre is a rounding difference between the tourist board and the register rather than a conflict. Commons has 'Platano comune Parco del Valentino.jpg' under CC BY-SA 4.0, not yet viewed and not yet matched to this individual; this pass hit its three-photo limit first.",
       "location_precision": "confirmed",
       "height_m": 40.0,
-      "verify_notes": "Height 40.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 40.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away). Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 010/L219/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 550,
-      "how_to_recognise": "You can recognise it by its height, 40 metres, the tallest tree in Turin, with the widest canopy on the register, 32 metres across. It stands beside the Fontana dei Dodici Mesi."
+      "how_to_recognise": "You can recognise it by its height, 40 metres, the tallest tree in Turin, with the widest canopy on the register, 32 metres across. It stands beside the Fontana dei Dodici Mesi.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 010/L219/TO/01",
+        "url": null
+      }
     },
     {
       "id": "tor_009",
@@ -445,7 +485,8 @@
       "story": "Turin counts sixteen monumental trees within its borders, and this oak might not quite be one of them. The regional register that protects it lists ownership as part public, part private, unlike every other Torino entry on the same list, and its coordinate falls on a road administratively inside Revigliasco, a district of the neighbouring comune of Moncalieri rather than Torino itself. That is presumably why some local counts put the city's total at fifteen rather than sixteen.\n\nNone of that changes what a visitor finds. The oak stands inside the Parco della Rimembranza, more than ninety hectares of hillside above the city that the Comune di Torino manages and keeps open daily, reached by bus 70 or 73 to the Maddalena stop and then a walk into the trees from one of the park's entrances off Strada Comunale San Vito Revigliasco. A regional survey published in 2025 calls it a centenary oak that has watched a century of the city's history; the register gives it a girth of 4.15 metres, a crown spreading 22 metres, and an age band of one to two centuries, which is as close as anyone has come to dating it.\n\nDowny oak, Quercus pubescens, is the everyday oak of these hills, drought-tolerant and unremarkable in youth. This one has had at least a century to stop being unremarkable.",
       "verified_sources": [
         "https://www.geoportale.piemonte.it/geonetwork/geonetwork/api/records/r_piemon:9410f966-96b4-41ee-8f4c-ccdb60167218",
-        "https://torinocronaca.it/news/torino/545499/dal-valentino-ai-giardini-reali-dove-trovare-i-16-alberi-monumentali-d-torino.html"
+        "https://torinocronaca.it/news/torino/545499/dal-valentino-ai-giardini-reali-dove-trovare-i-16-alberi-monumentali-d-torino.html",
+        "piemonte-alberi-monumentali.json, no. 001/F335/TO/01"
       ],
       "access": "Free, in the public Parco della Rimembranza (Comune di Torino, open daily). GTT bus lines 70/73 stop at \"Maddalena\"; the tree sits on the Revigliasco (southeast) side, reached via a park entrance off Strada Comunale San Vito Revigliasco rather than the main Faro entrance.",
       "transport": "Bus 70 or 73 to the Maddalena stop, then roughly 10-15 minutes on foot into the park depending on entrance used",
@@ -457,7 +498,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the trunk, 4.15 metres round under a crown spreading 22 metres. It stands in the Parco della Rimembranza, in from the Strada Comunale San Vito Revigliasco entrances."
+      "how_to_recognise": "You can recognise it by the trunk, 4.15 metres round under a crown spreading 22 metres. It stands in the Parco della Rimembranza, in from the Strada Comunale San Vito Revigliasco entrances.",
+      "official_register": {
+        "name": "Alberi monumentali del Piemonte (Regione Piemonte), no. 001/F335/TO/01",
+        "url": null
+      },
+      "verify_notes": "Register number from Alberi monumentali del Piemonte (Regione Piemonte) no. 001/F335/TO/01 (data/registers/piemonte-alberi-monumentali.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

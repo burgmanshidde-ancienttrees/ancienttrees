@@ -49,7 +49,8 @@
         "https://www.treeoftheyear.org/previous-years/2020/Kastan-z-Valesu",
         "https://florestas.pt/noticias-e-agenda/castanheiro-de-vales-e-a-arvore-do-ano-2020-em-portugal/",
         "https://wilder.pt/historias/portugueses-escolhem-castanheiro-milenar-como-a-arvore-de-2020",
-        "https://cm-vpaguiar.pt/castanheiro-portugues-esta-a-concurso-para-ser-a-arvore-europeia-2020/"
+        "https://cm-vpaguiar.pt/castanheiro-portugues-esta-a-concurso-para-ser-a-arvore-europeia-2020/",
+        "portugal-icnf.json, no. KNJ1/510"
       ],
       "access": "Free. Stands on private agricultural land, but the owner has a standing, publicly known invitation for anyone passing to come onto the land and see the tree. It is still someone's working farmland, so visit it as a guest.",
       "transport": "Rural Vila Real district, northern Portugal. No public transport to the site; nearest town is Vila Pouca de Aguiar, reached from Vila Real or Chaves by car; the tree stands near the Tresminas Roman gold-mine archaeological site.",
@@ -61,7 +62,13 @@
       },
       "photos": [],
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/510",
+        "url": null
+      },
+      "height_m": 25.0,
+      "verify_notes": "Register number and height from Arvoredo de Interesse Público (ICNF) no. KNJ1/510 (data/registers/portugal-icnf.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     }
   ]
 }

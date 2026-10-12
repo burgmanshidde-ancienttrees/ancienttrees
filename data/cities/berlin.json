@@ -1311,7 +1311,8 @@
       },
       "verified_sources": [
         "https://www.tu.berlin/forschen/bewahrte-pracht",
-        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf"
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_im_Bezirk_Steglitz-Zehlendorf",
+        "berlin-naturdenkmale.json, no. 6-77/B-3"
       ],
       "access": "Free, TU Berlin's own Schaugärten (educational display garden, restored 2012-2014); TU Berlin's own site gives seasonal opening hours (April/May and Sept/Oct roughly 10am-8pm, June-Aug roughly 10am-10pm); no confirmed winter access found, so treat as a growing-season destination",
       "transport": "Podbielskiallee or Dahlem-Dorf (U3), roughly 10 min walk",
@@ -1325,7 +1326,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin), no. 6-77/B-3",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Land Berlin) no. 6-77/B-3 (data/registers/berlin-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ber_032",

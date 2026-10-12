@@ -44,7 +44,8 @@
         "https://et.wikipedia.org/wiki/Viiralti_tamm",
         "https://www.looduskalender.ee/n/node/8304",
         "https://puhkaeestis.ee/et/viiralti-e-tammekoori-tamm",
-        "https://www.treeoftheyear.org/"
+        "https://www.treeoftheyear.org/",
+        "estonia-eelis-yksikobjektid.json, no. KLO4000858"
       ],
       "access": "Stands alone in a meadow beside the Tartu-Viljandi-Kilingi-Nõmme road, visible from it about 160 m away; the meadow adjoins Tamme farm land, so approach respectfully. Protected natural monument.",
       "transport": "Vana-Võidu, just outside Viljandi, beside the Tartu-Viljandi-Kilingi-Nõmme road; by car.",
@@ -56,7 +57,12 @@
       },
       "photos": [],
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Kaitstavad looduse üksikobjektid (EELIS, Keskkonnaagentuur), no. KLO4000858",
+        "url": null
+      },
+      "verify_notes": "Register number from Kaitstavad looduse üksikobjektid (EELIS, Keskkonnaagentuur) no. KLO4000858 (data/registers/estonia-eelis-yksikobjektid.json), matched on our pin at 3 m (register_match.py, 2026-10-12)."
     }
   ]
 }

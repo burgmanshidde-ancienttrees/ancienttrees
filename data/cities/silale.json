@@ -116,7 +116,8 @@
       },
       "story": "A small chapel hangs on the side of this oak, the same side where lightning tore into it. The scar runs from about eight metres up into the crown, the chapel is in poor repair, and the tree is still standing over both.\n\nThere is more at ground level: a small cave has opened beneath the roots. Between the strike, the shrine and the hollow underneath, this is a tree that has been through things, and it shows all of them at once.\n\nIt is a pedunculate oak 4.9 metres round at chest height, or 4.8 by the state registry's own count, and 17 metres tall, or 15 by the registry. The crown measures 17 metres and the first branches start four and a half metres up. It has been protected since 2005.\n\nGetting there is part of it. The oak stands among cultivated fields and pastures in hilly farmland off the old Žemaičių Highway, roughly midway between Laukuva and Kaltinėnai, reached through the village of Bilioniai. The source warns it is hard to spot from the nearby roads, so trust the pin, which is tree-level, and look across the fields. It is 16 to 18 kilometres from central Šilalė by car, and 6.5 kilometres from the Pundžiai oak, which makes the two one drive.\n\nEverything here rests on one published source, and nobody has dated the tree. If you know its age, or how the chapel came to be there, tell us.",
       "verified_sources": [
-        "https://lt.wikipedia.org/wiki/Laumen%C5%B3_%C4%85%C5%BEuolas"
+        "https://lt.wikipedia.org/wiki/Laumen%C5%B3_%C4%85%C5%BEuolas",
+        "lithuania-stvk-gpo.json, no. 0310505010109"
       ],
       "access": "No gate or ownership restriction stated in the source, but genuinely remote: stands amid cultivated fields and pastures in hilly farmland, described as hard to spot from nearby roads",
       "transport": "Šilalė district, about 16-18km from central Šilalė and about 6.5km from Pundžiai Oak (below); reachable by car only, no public transit checked this pass",
@@ -136,7 +137,12 @@
         "source_name": "Laumenai oak",
         "qid": "Q116983192",
         "views": 6
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010109",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010109 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 4 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "sll_004",
@@ -154,7 +160,8 @@
       },
       "story": "At 33.5 metres, this oak is more than twice the height of the Independence Oak in town, and at 5.6 metres round it is the thickest of the four trees on this page. Oaks rarely get this tall.\n\nIt stands in Pundžiai forest, about three kilometres west of Kaltinėnai and only 50 metres south of the old Žemaičių Highway, the historic road across Samogitia. Lithuania declared it a protected monument in 1989, in the last years of Soviet rule, and it is now looked after by the Rietavas state forest district.\n\nThe record on it is plain and administrative: measurements, a designation, and some honest notes on its condition. Animals have dug burrows under the roots. The canopy has been observed to be thinning. By 2020 the old fence around it had fallen into disrepair and the undergrowth had grown dense, which makes the last 50 metres slower than they look on a map without stopping anyone. None of that says it is dying, but it is not a tree in its prime either, and a photograph from anyone who visits would tell us how it is doing now.\n\nIt is about 16 kilometres from central Šilalė by car and 6.5 kilometres from the Laumenai oak, so the two countryside oaks make one drive. Nobody has published its age. If you know it, tell us.",
       "verified_sources": [
-        "https://lt.wikipedia.org/wiki/Pund%C5%BEi%C5%B3_%C4%85%C5%BEuolas"
+        "https://lt.wikipedia.org/wiki/Pund%C5%BEi%C5%B3_%C4%85%C5%BEuolas",
+        "lithuania-stvk-gpo.json, no. 0310505010168"
       ],
       "access": "Free; state forest under Rietavas Forest Management District, no ownership restriction, though as of a 2020 note the surrounding undergrowth was dense and the old fencing deteriorated, complicating (not preventing) a visit",
       "transport": "Šilalė district, about 16km from central Šilalė and about 6.5km from Laumenai Oak (above); reachable by car only, no public transit checked this pass",
@@ -174,7 +181,12 @@
         "source_name": "Pundžiai Oak",
         "qid": "Q98591285",
         "views": 4
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010168",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010168 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     }
   ]
 }

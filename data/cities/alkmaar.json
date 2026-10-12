@@ -85,7 +85,8 @@
       },
       "story": "A willow that reaches two centuries has almost always been cut, and cut hard, over and over.\n\nWhite willow is a fast, soft, short-lived tree left to itself: it puts on height quickly, gets heavy, splits down the middle at forty or fifty years and collapses. The ones that get old are the ones that were pollarded, cut back to the same point on the trunk every three to eight years for the withies. Doing that keeps the crown light, keeps the tree from tearing itself apart, and produces the shape everybody recognises from a Dutch polder: a short fat trunk, usually hollow, with a mop of thin straight rods on top.\n\nSo the age band of 1800 to 1850 on this tree is really a record of how many times somebody came back with a saw.\n\nIt stands in the Veenbos in an old polder at Grootschermer, north of the city, in exactly the landscape the species belongs to: peat, ditches, water at the surface, and no shelter at all.\n\nGo in winter. A pollarded willow in a flat wet polder under a low sun is one of the sights this country actually does better than anywhere else.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "netherlands-lrmb.json, no. 1697048"
       ],
       "access": "Free. Stands in open polder land at Grootschermer.",
       "transport": "About 10 km southeast of Alkmaar, at Grootschermer in the Schermer polder.",
@@ -104,7 +105,12 @@
         "label": "January, when the pollard shape stands out against the polder"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697048",
+        "url": null
+      },
+      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697048 (data/registers/netherlands-lrmb.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "alk_003",

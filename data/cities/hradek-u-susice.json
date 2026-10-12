@@ -46,7 +46,8 @@
       "story": "This oak was a sapling while the Thirty Years' War was tearing through Bohemia. Czech Wikipedia puts it at about 440 years old; a Czech tourism site says nearer 400. Neither says how the number was reached, so read it as a range rather than a birthday, but either end of it lands the tree's first years before 1648.\n\nWhat is not in doubt is the size. It stands 28 metres tall with a crown twenty metres wide, on the bank of the mill pond at Hrádek, four kilometres outside Sušice. It has been a protected memorial tree since 1978, and the tourism site, last updated in 2021, calls it a truly massive tree in good condition.\n\nThe trunk is over four metres round, though exactly how far over depends on whom you ask. The Czech memorial-tree register's figure is 411 centimetres; Wikipedia quotes 485 from a 2012 measurement under the same register number. They cannot both describe the same day's measurement, and if you have a tape and a spare minute at chest height, we would like to know which is closer.\n\nThere is no legend attached and no famous visitor on record. What there is, is a pedunculate oak that has stood over the same water for four centuries, through wars and a working pond's ordinary seasons, and it still carries a full crown. Czech Wikipedia names two more protected limes nearby, the Hrádecká lípa and the Lešišovská lípa, which we have not yet checked ourselves.",
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Hr%C3%A1deck%C3%BD_dub",
-        "https://www.turistika.cz/mista/pamatny-dub-v-hradku-u-susice/detail"
+        "https://www.turistika.cz/mista/pamatny-dub-v-hradku-u-susice/detail",
+        "czech-aopk-pamatne-stromy.json, no. 102466"
       ],
       "access": "Free, open public ground on the bank of the mill pond; no gate or ticket",
       "transport": "In Hrádek u Sušice village, about 4km from Sušice; no public transport reaches the pond directly, reachable on foot or by road from the village",
@@ -59,7 +60,12 @@
       "photos": [],
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its size: a pedunculate oak 28 metres tall, with a trunk over four metres round and a crown about twenty metres wide. It stands on the bank of the Hrádek mill pond."
+      "how_to_recognise": "You can recognise it by its size: a pedunculate oak 28 metres tall, with a trunk over four metres round and a crown about twenty metres wide. It stands on the bank of the Hrádek mill pond.",
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 102466",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 102466 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 15/D548/FE/08, girth 444cm, height 24m)",
         "http://www.museoferrara.it/view/s/97261dcc818c4030b4ef7002a5e05341 (MuseoFerrara, age over 150 years, 2013 Law 10 monumental listing, species detail)",
-        "https://internoverde.it/palazzo-dei-diamanti/ (2023 garden restoration opening the space to visitors)"
+        "https://internoverde.it/palazzo-dei-diamanti/ (2023 garden restoration opening the space to visitors)",
+        "italy-masaf.json, no. 15/D548/FE/08"
       ],
       "access": "Free, in the palace garden, generally open with the palace's own hours; check before visiting",
       "transport": "About a 15 minute walk north-west of Ferrara railway station",
@@ -59,8 +60,12 @@
         "status": "missing"
       },
       "height_m": 24.0,
-      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 444
+      "verify_notes": "Height 24.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 15/D548/FE/08 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 444,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 15/D548/FE/08",
+        "url": null
+      }
     },
     {
       "id": "fer_002",
@@ -80,7 +85,8 @@
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 11/D548/FE/08, girth 376cm, height 23m)",
         "http://www.museoferrara.it/view/s/abf14005b19f4026af7f44bc6d0ab2cb (MuseoFerrara, age about 150 years, description and 2013 Law 10 monumental listing)",
-        "https://www.storiedipianura.it/territorio-e-cultura/alberi-boschi-e-paesaggi/550-parco-massari-un-viaggio-tra-storia-e-natura-nel-cuore-di-ferrara.html (park history: 1780 by Bertelli for Bevilacqua, Massari family remodelling, sold to the comune in 1936)"
+        "https://www.storiedipianura.it/territorio-e-cultura/alberi-boschi-e-paesaggi/550-parco-massari-un-viaggio-tra-storia-e-natura-nel-cuore-di-ferrara.html (park history: 1780 by Bertelli for Bevilacqua, Massari family remodelling, sold to the comune in 1936)",
+        "italy-masaf.json, no. 11/D548/FE/08"
       ],
       "access": "Free, public park, open daily",
       "transport": "About a 15 minute walk north-east of Ferrara railway station",
@@ -95,8 +101,12 @@
         "height": 6000
       },
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 376
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 11/D548/FE/08 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 376,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 11/D548/FE/08",
+        "url": null
+      }
     },
     {
       "id": "fer_003",
@@ -115,7 +125,8 @@
       "how_to_recognise": "The ginkgo among Parco Massari's collection of monumental trees, its fan-shaped leaves and pale gray trunk unlike anything else nearby.",
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 17/D548/FE/08, girth 380cm, height 25m)",
-        "https://www.storiedipianura.it/territorio-e-cultura/alberi-boschi-e-paesaggi/550-parco-massari-un-viaggio-tra-storia-e-natura-nel-cuore-di-ferrara.html (Parco Massari's tree collection and history)"
+        "https://www.storiedipianura.it/territorio-e-cultura/alberi-boschi-e-paesaggi/550-parco-massari-un-viaggio-tra-storia-e-natura-nel-cuore-di-ferrara.html (Parco Massari's tree collection and history)",
+        "italy-masaf.json, no. 17/D548/FE/08"
       ],
       "access": "Free, public park, open daily",
       "transport": "About a 15 minute walk north-east of Ferrara railway station",
@@ -137,8 +148,12 @@
         "height": 1944
       },
       "height_m": 25.0,
-      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 380
+      "verify_notes": "Height 25.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 17/D548/FE/08 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 380,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 17/D548/FE/08",
+        "url": null
+      }
     },
     {
       "id": "fer_004",
@@ -158,7 +173,8 @@
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 01/D548/FE/08, girth 452cm, height 19m)",
         "https://www.museoferrara.it/view/s/2b1e97c91fa04ca39459ac5f985e74dc (MuseoFerrara, first recorded 1890, survivor of the university botanical garden formerly at Palazzo Paradiso, male specimen, girth 465cm)",
-        "https://estense.com/?p=742162 (local press coverage of the tree's annual autumn colour)"
+        "https://estense.com/?p=742162 (local press coverage of the tree's annual autumn colour)",
+        "italy-masaf.json, no. 01/D548/FE/08"
       ],
       "access": "Free, in the library's public courtyard garden, open during library hours",
       "transport": "About a 10 minute walk south of Ferrara Castello Estense",
@@ -181,8 +197,12 @@
         "height": 5680
       },
       "height_m": 19.0,
-      "verify_notes": "Height 19.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 452
+      "verify_notes": "Height 19.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 01/D548/FE/08 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 452,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/D548/FE/08",
+        "url": null
+      }
     },
     {
       "id": "fer_005",
@@ -201,7 +221,8 @@
       "how_to_recognise": "The plane with by far the thickest trunk on Viale Po, standing out from the avenue's other street trees.",
       "verified_sources": [
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260 (MASAF national monumental trees register, sheet 16/D548/FE/08, girth 540cm, height 20m)",
-        "https://www.cronacacomune.it/notizie/44383/11-gruppi-arborei-ferraresi-elenco-salvaguardia-regionale.html (Ferrara's monumental trees nominated for the Emilia-Romagna regional flora safeguarding list)"
+        "https://www.cronacacomune.it/notizie/44383/11-gruppi-arborei-ferraresi-elenco-salvaguardia-regionale.html (Ferrara's monumental trees nominated for the Emilia-Romagna regional flora safeguarding list)",
+        "italy-masaf.json, no. 16/D548/FE/08"
       ],
       "access": "Free, on the public street, no gate or opening hours",
       "transport": "About a 20 minute walk north-west of Ferrara railway station",
@@ -214,8 +235,12 @@
         "status": "missing"
       },
       "height_m": 20.0,
-      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "girth_cm": 540
+      "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 16/D548/FE/08 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 540,
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 16/D548/FE/08",
+        "url": null
+      }
     }
   ]
 }

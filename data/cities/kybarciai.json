@@ -45,7 +45,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Kybar%C4%8Di%C5%B3_%C4%85%C5%BEuolas",
-        "https://www.arboristai.lt/articles/parkotyra/825-lietuvos-medzio-rinkimai-2025/1821-kybarciu-rusteiku-azuolas"
+        "https://www.arboristai.lt/articles/parkotyra/825-lietuvos-medzio-rinkimai-2025/1821-kybarciu-rusteiku-azuolas",
+        "lithuania-stvk-gpo.json, no. 0310505010226"
       ],
       "access": "Free, standing alone amid open cultivated fields about 270m from a paved secondary road (route 4004); no fee or gate mentioned by any source and nothing states it is on posted private land, but there is no marked path either, an unpaved field track is the likely approach. Worth a reader confirming the exact walk-in.",
       "transport": "In Kybarčiai village, Šiauliai district; no public transport to the site, nearest city Šiauliai roughly 15km away, reachable by car",
@@ -75,7 +76,12 @@
         "source_name": "Kybarčiai oak",
         "qid": "Q20504322",
         "views": 27
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010226",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010226 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 3 m (register_match.py, 2026-10-12)."
     }
   ]
 }

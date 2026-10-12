@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Sobreiro_Monumental",
         "https://www.treeoftheyear.org/Previous-Years/2018/Svitorici-korkovy-dub",
-        "https://andarilho.pt/2023/09/05/sobreiro-assobiador-de-aguas-de-moura-e-um-dos-maiores-e-mais-antigos-no-mundo/"
+        "https://andarilho.pt/2023/09/05/sobreiro-assobiador-de-aguas-de-moura-e-um-dos-maiores-e-mais-antigos-no-mundo/",
+        "portugal-icnf.json, no. AIP15080650I"
       ],
       "access": "Free, public, no barrier beyond a small protective fence around the trunk. Stands in the open in the village of Aguas de Moura, beside a playground, benches and a car park with an EV charging point; signposted in the streets. Nothing to book, nothing to ask permission for.",
       "transport": "In the village of Aguas de Moura itself, on foot from anywhere in the village centre; reachable from Setubal by the Carris Metropolitana 4540 bus (about 20km, roughly 39 minutes, hourly).",
@@ -67,7 +68,13 @@
         "source_name": "Whistler cork oak",
         "qid": "Q98444727",
         "views": 240
-      }
+      },
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP15080650I",
+        "url": null
+      },
+      "height_m": 19.0,
+      "verify_notes": "Register number and height from Arvoredo de Interesse Público (ICNF) no. AIP15080650I (data/registers/portugal-icnf.json), matched on our pin at 3 m (register_match.py, 2026-10-12)."
     }
   ]
 }

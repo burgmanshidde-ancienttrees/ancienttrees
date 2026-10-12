@@ -470,7 +470,8 @@
       "story": "At 75 centimetres round, this is the slenderest tree Italy's monumental register lists anywhere in Naples, and it is on the list for what it is rather than for how big it got. The museum calls it a true rarity and says it grows in the Bourbon royal sites of Naples and effectively nowhere else in the country, planted here in the middle of the nineteenth century. Melaleuca styphelioides comes from the east coast of Australia, and the whole point of it is the bark. It builds in hundreds of thin papery layers, cream and pale brown, soft enough to press a thumb into, and it lifts off in sheets you could write on. Aboriginal Australians used exactly that: as bandaging, as roofing, as a wrapping for food cooked in ground ovens. The leaves are small and sharp, which is where the name prickly paperbark comes from, and in summer the tree carries short cream flowers like a bottlebrush. It stands nine metres, which for the species is respectable. Do not walk up looking for something monumental in the usual sense. This one asks you to come close and put a hand on the trunk.",
       "verified_sources": [
         "https://capodimonte.cultura.gov.it/gli-alberi-monumentali-del-real-bosco-di-capodimonte/",
-        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
+        "italy-masaf.json, no. 39/F839/NA/15"
       ],
       "access": "Free, public park, open daily from 7am. The Garden of the Princes reopened to visitors in June 2025 after restoration",
       "transport": "Bus C63 or 178 to Capodimonte, or a 20 minute uphill walk from Museo metro station",
@@ -484,9 +485,13 @@
       "notes": "Age is the museum's 'mid-nineteenth century' carried to today. Pin marked approximate deliberately: at 75 cm girth and 9 m this is a small tree in a planted garden and a visitor will have to look, unlike the camphor 120 m west. Girth 75 cm is the smallest in the Naples register, which is a units sanity check that passes: it is a genuinely slender tree, listed for rarity.",
       "location_precision": "approximate",
       "height_m": 9.0,
-      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (1 m away).",
+      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (1 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 39/F839/NA/15 (data/registers/italy-masaf.json), matched on our pin at 1 m (register_match.py, 2026-10-12).",
       "girth_cm": 75,
-      "how_to_recognise": "You can recognise it by bark that builds up in hundreds of thin papery layers you can press a thumb into, the slenderest trunk on the whole city's monumental register. It stands in the Giardino dei Principi, Real Bosco di Capodimonte."
+      "how_to_recognise": "You can recognise it by bark that builds up in hundreds of thin papery layers you can press a thumb into, the slenderest trunk on the whole city's monumental register. It stands in the Giardino dei Principi, Real Bosco di Capodimonte.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 39/F839/NA/15",
+        "url": null
+      }
     },
     {
       "id": "nap_013",
@@ -676,7 +681,8 @@
       "verified_sources": [
         "https://agricoltura.regione.campania.it/foreste/monum/scheda_162.html",
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
-        "https://www.ortobotaniconapoli.it/it/15-palmeto.html"
+        "https://www.ortobotaniconapoli.it/it/15-palmeto.html",
+        "italy-masaf.json, no. 31/F839/NA/15"
       ],
       "access": "Free, no booking. Open weekdays only: Mon, Wed, Fri 9:00-14:00, Tue and Thu 9:00-16:00, closed Saturday and Sunday",
       "transport": "10 min walk from Cavour or Museo metro, or bus along Via Foria",
@@ -690,9 +696,13 @@
       "notes": "MASAF sheet 31/F839/NA/15 and Campania scheda 162 agree on 250 cm girth, 4 m height and position to sub-metre (40.860608, 14.262300 / 40.860607, 14.262299). The garden's own palmeto page is the third source and calls it a 'splendido esemplare di Jubaea chilensis'. Deliberately marked approximate rather than confirmed, unlike the other four: the same page says the palm grove holds both mature and young specimens of this species, so a visitor arriving at the registered point still has to work out which trunk is the registered one, and at four metres it does not announce itself over the collection. Age is Campania's '>100 anni' only. No best_time: it fruits, but nothing about the moment is worth planning a visit around.",
       "location_precision": "approximate",
       "height_m": 4.0,
-      "verify_notes": "Height 4.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 4.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 31/F839/NA/15 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 250,
-      "how_to_recognise": "You can recognise it by a smooth, straight-sided grey trunk marked all over with diamond-shaped scars from long-fallen fronds, only four metres tall after more than a century. It stands in the Real Orto Botanico di Napoli."
+      "how_to_recognise": "You can recognise it by a smooth, straight-sided grey trunk marked all over with diamond-shaped scars from long-fallen fronds, only four metres tall after more than a century. It stands in the Real Orto Botanico di Napoli.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 31/F839/NA/15",
+        "url": null
+      }
     },
     {
       "id": "nap_018",

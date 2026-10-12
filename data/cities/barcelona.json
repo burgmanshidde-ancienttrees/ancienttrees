@@ -125,7 +125,8 @@
       "verified_sources": [
         "https://ajuntament.barcelona.cat/santmarti/es/guia-del-distrito/equipamientos-por-temas/listado/garrofer-de-la-placa-de-la-natura-del-park-guell-99400455078",
         "https://guia.barcelona.cat/es/detall/garrofer-de-la-placa-de-la-natura-del-park-guell_99400455078.html",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455078"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455078",
+        "barcelona-ail.json, no. 99400455078"
       ],
       "access": "Paid entry, Park Guell requires a ticket for the whole park (since 2020, no free zone)",
       "transport": "Lesseps (Metro L3), 15 min walk uphill",
@@ -140,14 +141,15 @@
       "curation_status": "flagged",
       "notes": "Age given is for the current regrown stem only; the original tree's age before it died back or was cut is not recorded in any source found. Story states this honestly rather than implying continuity of age. Photo found 2026-07-26: an iNaturalist observation from the \"Arboles Singulares de Espana\" project, titled \"Garrofer de la Placa de la Natura del Park Guell\", the exact tree by name, 17m from this pin. Viewed directly, shows carob pods on the branches, consistent with the species.",
       "location_precision": "confirmed",
-      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide.",
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455078 (data/registers/barcelona-ail.json), matched on our pin at 4 m (register_match.py, 2026-10-12).",
       "girth_cm": 410,
       "paid_entry": true,
       "how_to_recognise": "You can recognise it by the slim young trunk, about 90 centimetres round, standing inside the twisted dead wood of the four metre carob it regrew from. It stands by the Placa de la Natura in Park Guell.",
       "official_register": {
         "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455078",
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455078"
-      }
+      },
+      "height_m": 11.0
     },
     {
       "id": "bcn_004",
@@ -477,7 +479,8 @@
         "https://beteve.cat/el-mati-de-barcelona-910fm/arbres-mes-singulars-parc-ciutadella/",
         "https://commons.wikimedia.org/wiki/File:Casuarina_del_Parc_de_la_Ciutadella3.JPG",
         "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455029"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455029",
+        "barcelona-ail.json, no. 99400455029"
       ],
       "access": "Free, public park",
       "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 6 min walk",
@@ -497,7 +500,9 @@
       "official_register": {
         "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455029",
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455029"
-      }
+      },
+      "height_m": 27.0,
+      "verify_notes": "Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455029 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bcn_012",
@@ -569,7 +574,8 @@
         "https://beteve.cat/societat/arbres-carrers-barcelona-ciutadella-poblesec/",
         "https://www.openstreetmap.org/node/6924265087",
         "https://www.inaturalist.org/observations/330848719",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400679805"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400679805",
+        "barcelona-ail.json, no. 99400679805"
       ],
       "access": "Free, public park",
       "transport": "Arc de Triomf (Metro L1) or Ciutadella-Vila Olimpica (Metro L4), 5 min walk",
@@ -589,7 +595,9 @@
       "official_register": {
         "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400679805",
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400679805"
-      }
+      },
+      "height_m": 16.0,
+      "verify_notes": "Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400679805 (data/registers/barcelona-ail.json), matched on our pin at 20 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bcn_014",
@@ -610,7 +618,8 @@
         "https://guia.barcelona.cat/es/detall/eucaliptus-vermell-de-la-placa-de-les-caramelles_99400455018.html",
         "https://www.bcnsostenible.cat/web/punt/eucalyptus-camaldulensis",
         "https://www.openstreetmap.org/node/6924165385",
-        "https://ca.wikipedia.org/wiki/Casa_de_la_Caritat_de_Barcelona"
+        "https://ca.wikipedia.org/wiki/Casa_de_la_Caritat_de_Barcelona",
+        "barcelona-ail.json, no. 99400455018"
       ],
       "access": "Free. The tree stands inside the Casa de la Caritat grounds and is seen from Placa de les Caramelles, a public square open to the street beside the CCCB.",
       "transport": "Universitat (Metro L1/L2), 5 min walk",
@@ -624,7 +633,9 @@
       "notes": "FLAGGED for a single-source age. Everything traceable about the 1904 planting year is a rendering of the same municipal record (register_id 99400455018, catalogued 1994): barcelona.cat, guia.barcelona and bcnsostenible are three faces of one catalogue, not three sources. No independent confirmation was found, and the two municipal renderings disagree with each other on the tree's size, 29 m and 3.1 m girth in the register against 26 m and 2.90 m on guia.barcelona. The story states this plainly rather than implying a firm date. Existence and species are not in doubt: the tree is catalogued, mapped, and 70 m from bcn_010. Pin confirmed: register 41.382401/2.167735 and OSM node 6924165385 at 41.382393/2.167705, three metres apart. Casa de la Caritat's identity as the present-day CCCB is from Catalan Wikipedia, independent of the tree register. No open-licence photograph of this tree was found on Commons, iNaturalist or Flickr this pass; an honest gap rather than a substitute of the courtyard.",
       "location_precision": "confirmed",
       "girth_cm": 310,
-      "how_to_recognise": "You can recognise it by the pale straight trunk, about three metres round and bare a long way up before the crown begins, close to 30 metres tall. It stands inside the Casa de la Caritat grounds, in full view from Placa de les Caramelles."
+      "how_to_recognise": "You can recognise it by the pale straight trunk, about three metres round and bare a long way up before the crown begins, close to 30 metres tall. It stands inside the Casa de la Caritat grounds, in full view from Placa de les Caramelles.",
+      "height_m": 29.0,
+      "verify_notes": "Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455018 (data/registers/barcelona-ail.json), matched on our pin at 3 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bcn_015",
@@ -694,7 +705,8 @@
         "https://bcnsostenible.cat/web/punt/olea-europaea-sylvestris",
         "https://www.openstreetmap.org/node/4618688164",
         "https://commons.wikimedia.org/wiki/Category:Ullastre_del_Parc_G%C3%BCell",
-        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest"
+        "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest",
+        "barcelona-ail.json, no. 99400454989"
       ],
       "access": "Paid entry, Park Guell requires a ticket for the whole park (since 2020, no free zone)",
       "transport": "Lesseps (Metro L3), 15 min walk uphill, or bus 24 to Carretera del Carmel",
@@ -709,10 +721,11 @@
       "curation_status": "flagged",
       "notes": "MERGE BLOCKER, do not publish without a decision. The register's planting year of 1771 (register_id 99400454989, catalogue number 0117-06-96, catalogued 1996) makes this tree 255 years old, older than the 250-year holm oak that barcelona.json's intro, question_answer, question_context and first FAQ all present as the oldest tree in Barcelona. The two claims cannot both stand unqualified on the same site. The distinction the story draws is real and defensible: the oak was ring-dated by dendrochronologists, the olive carries an unsupported register estimate. But merging this tree means either rewording the oldest-tree copy to say 'the oldest tree in Barcelona whose age has actually been measured', or holding the tree back. That is a human call, not a run's. FLAGGED for the age, which is single-sourced and unmeasured; hence the deliberately wide age_min. Species field uses the canonical 'Olive (Olea europaea)' per hard rule 9 so it groups with the other 13 olives on the site; the register records it as Olea europaea var. sylvestris and the story says it is the wild form. Dimensions differ between the register (17 m, girth 2.9 m, crown 21 m) and bcnsostenible (14 m, girth 1.6 m, crown 13 m), a very wide disagreement inside one catalogue, so ranges are used and the girth is left out. Pin confirmed three ways: register 41.414909/2.154906, OSM node 4618688164, and the EXIF GPS of the Commons photograph at 41.414910/2.154910. Photo viewed directly before approval: full olive crown above a Park Guell stone wall, daylight, colour, two people in frame for scale, tree occupies the centre band.",
       "location_precision": "confirmed",
-      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide.",
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400454989 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 290,
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by an ullastre, the low scrubby wild olive, grown into a proper tree of 14 to 17 metres with a crown over 13 metres wide. It stands above a retaining wall in the east sector of Park Guell."
+      "how_to_recognise": "You can recognise it by an ullastre, the low scrubby wild olive, grown into a proper tree of 14 to 17 metres with a crown over 13 metres wide. It stands above a retaining wall in the east sector of Park Guell.",
+      "height_m": 17.0
     },
     {
       "id": "bcn_017",
@@ -740,7 +753,8 @@
         "https://bcnsostenible.cat/es/web/punt/lagunaria-jardins-del-teatre-grec-arbre-dinteres-local",
         "https://www.catacultural.com/jardins-del-teatre-grec/",
         "https://www.openstreetmap.org/node/4492855030",
-        "https://guia.barcelona.cat/es/detall/jardins-del-teatre-grec_99329085040.html"
+        "https://guia.barcelona.cat/es/detall/jardins-del-teatre-grec_99329085040.html",
+        "barcelona-ail.json, no. 99400455071"
       ],
       "access": "Free, public garden. Open 08.00 to 21.00 from 1 April to 31 October and 08.00 to 19.00 from 1 November to 31 March. Closed to the public entirely from 15 June to 7 August for the Grec festival.",
       "transport": "Poble Sec (Metro L3), 10 min walk uphill, or Espanya (Metro L1/L3) and the Montjuic escalators",
@@ -756,7 +770,9 @@
       "notes": "Municipal register (catalogue number 0010-03-93, catalogued 1993, planting year 1923) plus catacultural.com, which is independent of the city and places the tree precisely inside the garden ('a l'esquerra de l'amfiteatre, a sota del restaurant') and gives the pica-pica name and the reason for it. Pin confirmed: the register coordinate and OSM node 4492855030, which carries the same catalogue as a surveyed node tagged Lagunaria patersonia, are the same point. Dimensions differ between the two municipal renderings, 18 m tall / girth 2.4 m / crown 20 m in the register against 15 m / 2.02 m / crown 10 m on bcnsostenible; the story uses only the girth, which is the closer of the two pairs. The two renderings also give different addresses for the same tree, Passatge de Martras 26 and Passeig de Santa Madrona 38; both are entrances to the same garden. Species spelling: the register writes patersonia, the corpus canonical name is Lagunaria patersonii, used here per hard rule 9. best_time is June only, deliberately, because the flowering runs into July and the garden is shut from 15 June; a badge that lights up while the gate is locked would be a broken promise. Photo viewed directly before approval: full tree in daylight, colour, trunk and crown both readable, tree fills the frame and holds the centre band, people on a bench at the left edge for scale.",
       "location_precision": "confirmed",
       "girth_cm": 240,
-      "how_to_recognise": "You can recognise it by the thousands of pink mallow flowers that fill the whole crown once a year, fifteen metres up, and by the trunk 2.4 metres round. It stands to the left of the Teatre Grec amphitheatre, below the restaurant terrace."
+      "how_to_recognise": "You can recognise it by the thousands of pink mallow flowers that fill the whole crown once a year, fifteen metres up, and by the trunk 2.4 metres round. It stands to the left of the Teatre Grec amphitheatre, below the restaurant terrace.",
+      "height_m": 18.0,
+      "verify_notes": "Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455071 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bcn_018",
@@ -818,7 +834,8 @@
         "https://www.catacultural.com/jardins-del-teatre-grec/",
         "https://www.openstreetmap.org/node/4492857600",
         "https://commons.wikimedia.org/wiki/Category:Eritrina_del_Teatre_Grec",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455020"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455020",
+        "barcelona-ail.json, no. 99400455020"
       ],
       "access": "Free. The tree stands on the public path linking the Teatre Grec gardens to the Laribal gardens. The Teatre Grec gardens themselves close from 15 June to 7 August for the festival; the Laribal side stays open.",
       "transport": "Poble Sec (Metro L3), 12 min walk uphill, or Espanya (Metro L1/L3) and the Montjuic escalators",
@@ -838,7 +855,9 @@
       "official_register": {
         "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455020",
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455020"
-      }
+      },
+      "height_m": 20.0,
+      "verify_notes": "Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455020 (data/registers/barcelona-ail.json), matched on our pin at 12 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bcn_020",
@@ -1391,7 +1410,8 @@
       "story": "A mastic is supposed to stay a shrub. Pistacia lentiscus grows low and scrubby across the Mediterranean, the kind of plant nobody looks at twice, and this one never got the memo. Two of its main limbs run out nearly horizontal, thicker than a wrist, one holding itself in open air and the other simply resting on the ground, together spreading a canopy of 20 to 25 square metres from a base no wider than a doorway. That is a shrub's growth habit at a tree's scale, which is presumably why Barcelona catalogued it in 2013 as a tree of local interest rather than as landscaping.\n\nIt stands at the back entrance to Park Guell's free wooded slope, on the path in from Carrer de la Farigola, right beside Hort de l'Avi. That allotment garden opened in 1986 after a group of elderly Gracia residents asked the city for the grounds of Park Guell's demolished old caretaker's house, and residents over 65 still work it today on a lottery basis. The mastic grows at the shared access path, not inside the fenced plots, so anyone can reach it without a permit. Nobody has dated it. No source records a planting year and no dendrochronologist has measured it, so its age stays an open question rather than a number. It stands about 500 metres from the Wild Olive of Park Guell, an easy add to that same hillside walk.",
       "verified_sources": [
         "https://www.barcelona.cat/en/what-to-do-in-bcn/parks-and-gardens/trees-of-local-interest/arbre-d-interes-local-llentiscle-accessos-a-l-hort-de-l-avi-des-del-carrer-farigola-99400455063",
-        "https://bcnsostenible.cat/web/punt/llentiscle-a-lhort-de-lavi"
+        "https://bcnsostenible.cat/web/punt/llentiscle-a-lhort-de-lavi",
+        "barcelona-ail.json, no. 99400455063"
       ],
       "access": "Free. Stands outside Park Guell's regulated zone, at the rear access off Carrer del Torrent del Remei, so no ticket is needed to reach it",
       "transport": "Vallcarca or Lesseps (Metro L3), roughly 15-20 min walk uphill via Carrer de la Farigola.",
@@ -1403,9 +1423,10 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
-      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide. Answered by Park Guell on 2026-08-28, in reply to our own question about this specific tree: 'este se encuentra fuera de la zona regulada, por lo que no requiere de acceso con entrada.' So the three inside the fence need a ticket and this one does not. The park's own administration is the authority on where its fence runs; do not flip this back from a map that predates 2020.",
+      "verify_notes": "Access corrected 2026-08-26 on the word of Park Guell's own administration, who answered our outreach: 'Desde 2020 para acceder a todo el parque se requiere de una entrada, y ya no existe una parte gratuita.' Our pages said the wooded area outside the Monumental Zone was free, which stopped being true in 2020. The body that manages the ground is the best source on access there is; do not put the free-perimeter claim back from an older guide. Answered by Park Guell on 2026-08-28, in reply to our own question about this specific tree: 'este se encuentra fuera de la zona regulada, por lo que no requiere de acceso con entrada.' So the three inside the fence need a ticket and this one does not. The park's own administration is the authority on where its fence runs; do not flip this back from a map that predates 2020. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455063 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 70,
-      "how_to_recognise": "You can recognise it by two main limbs running out nearly horizontal, one of them resting on the ground, spreading a canopy from a base no wider than a doorway. It stands on the shared path beside the Hort de l'Avi allotments."
+      "how_to_recognise": "You can recognise it by two main limbs running out nearly horizontal, one of them resting on the ground, spreading a canopy from a base no wider than a doorway. It stands on the shared path beside the Hort de l'Avi allotments.",
+      "height_m": 4.0
     },
     {
       "id": "bcn_034",
@@ -1927,7 +1948,8 @@
       "verified_sources": [
         "https://opendata-ajuntament.barcelona.cat/data/en/dataset/arbres-interes-local",
         "https://opendata-ajuntament.barcelona.cat/data/dataset/7052709e-1087-4ef3-862a-1a6c3e9a7200",
-        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455041"
+        "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455041",
+        "barcelona-ail.json, no. 99400455041"
       ],
       "register_ref": "Ajuntament de Barcelona, Arbres d'interes local (CC BY 4.0)",
       "access": "Free, public square",
@@ -1954,7 +1976,9 @@
       "official_register": {
         "name": "Arbres d'interès local (Ajuntament de Barcelona), no. 99400455041",
         "url": "https://www.barcelona.cat/ca/que-pots-fer-a-bcn/parcs-i-jardins/arbres-interes-local/arbre-d-interes-local-99400455041"
-      }
+      },
+      "height_m": 5.0,
+      "verify_notes": "Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455041 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "bcn_047",
@@ -1980,14 +2004,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "A Philips factory once stood where this Australian silky oak now grows, and the garden around it still carries the shape of that history: workers' flowerbeds laid out in the 1960s, redesigned decades later into a public park about human rights, its paths lined with 30 illuminated panels quoting the Universal Declaration article by article.\n\nThe tree itself predates all of that. Barcelona catalogued it as a tree of local interest in 2011, and the city's own register puts it at a striking 4.1 metres round and 32 metres tall, among the largest silky oaks recorded anywhere outside Australia. An independent measurement taken in 2017 found a notably smaller trunk, 2.4 metres, which is either six years of unusually vigorous growth or two different ways of measuring the same tree. Both readings are kept here rather than picking one.\n\nGrevillea robusta is native to the subtropical rainforests of eastern Australia, grown worldwide as an ornamental and, more prosaically, as a nurse tree for coffee plantations. This one has nothing to nurse. It stands alone in a public garden built on land a factory once used for something else entirely.",
-      "verify_notes": "Single official source (Barcelona's Cataleg d'Arbres d'Interes Local, register_id 99400454955, catalogued 2011): girth 4.1m, height 32m, crown 27m, ownership Public. A 2017 field measurement recorded by a monumentaltrees.com contributor (used only for cross-check per hard rule 1, never quoted or copied) gives a materially smaller girth (2.42m) and height (23.5m) for what bcnsostenible.cat confirms is the same specimen in the same garden. Girth cannot shrink, so one figure is likely a data error rather than real change; genuinely unresolved, so the story states both rather than picking one, and girth_cm here follows the official register per convention. Location confirmed by the register's own coordinates plus bcnsostenible.cat's independent listing of the same garden/species. Access confirmed public and free via WebSearch (Barcelona.cat, bcnsostenible.cat).",
+      "verify_notes": "Single official source (Barcelona's Cataleg d'Arbres d'Interes Local, register_id 99400454955, catalogued 2011): girth 4.1m, height 32m, crown 27m, ownership Public. A 2017 field measurement recorded by a monumentaltrees.com contributor (used only for cross-check per hard rule 1, never quoted or copied) gives a materially smaller girth (2.42m) and height (23.5m) for what bcnsostenible.cat confirms is the same specimen in the same garden. Girth cannot shrink, so one figure is likely a data error rather than real change; genuinely unresolved, so the story states both rather than picking one, and girth_cm here follows the official register per convention. Location confirmed by the register's own coordinates plus bcnsostenible.cat's independent listing of the same garden/species. Access confirmed public and free via WebSearch (Barcelona.cat, bcnsostenible.cat). Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400454955 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its height, about 32 metres, and by trunk figures that disagree, 4.1 metres in the register against 2.4 measured in 2017. It stands alone among paths lined with 30 illuminated panels of the Declaration."
+      "how_to_recognise": "You can recognise it by its height, about 32 metres, and by trunk figures that disagree, 4.1 metres in the register against 2.4 measured in 2017. It stands alone among paths lined with 30 illuminated panels of the Declaration.",
+      "height_m": 32.0
     },
     {
       "id": "bcn_048",
@@ -2012,7 +2037,7 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Barcelona protected twelve trees across the city in one sitting in May 2024, and this hackberry in the Jardins dels Drets Humans was one of them, cited for size rather than age: a 2.9 metre girth and a 20 metre crown, broad enough to shade a good stretch of the garden's paths.\n\nIt shares the garden with a much bigger, older-looking neighbour, a silky oak roughly 130 metres away, and together the two give the Human Rights garden two catalogued trees where most Barcelona parks have none. The garden itself is younger than either tree pretends to be: it opened to the public only in 2007, on land that had belonged to Philips' local factory since the 1960s, when a company landscape architect first laid the grounds out so workers could take their breaks outside.\n\nCeltis australis is one of the most common street trees in the Mediterranean, tough enough for Barcelona's hot, dry summers and long prized for wood that bends without splitting, historically worked into whip handles and walking sticks. No planting date survives for this one. If you know it, the garden's own records do not.",
-      "verify_notes": "Register (barcelona-ail.json, id 99400728989, catalogued 2022): girth 2.9m, height 15m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article on the city's protection of 12 new trees, which names 'lledoner' (hackberry) at Jardins dels Drets Humans specifically among them, matching species and location. Two-sourced. Undated in both. Age derived from girth, not from a source: 290 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "verify_notes": "Register (barcelona-ail.json, id 99400728989, catalogued 2022): girth 2.9m, height 15m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article on the city's protection of 12 new trees, which names 'lledoner' (hackberry) at Jardins dels Drets Humans specifically among them, matching species and location. Two-sourced. Undated in both. Age derived from girth, not from a source: 290 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400728989 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "photo": {
         "url": null,
         "license": null,
@@ -2020,7 +2045,8 @@
         "status": "missing"
       },
       "how_to_recognise": "You can recognise it by the broad crown, 20 metres across on a trunk 2.9 metres round, the smaller of the garden's two catalogued trees. It stands about 130 metres from the much taller silky oak in the Jardins dels Drets Humans.",
-      "age_basis": "girth"
+      "age_basis": "girth",
+      "height_m": 15.0
     },
     {
       "id": "bcn_049",
@@ -2045,14 +2071,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Barcelona's biggest cactus garden has one tree in it that is not a cactus at all: a coral tree from southern Africa, 3 metres round with a crown that spreads 20 metres wide, wide enough to shade a meaningful stretch of the six hectare garden by itself.\n\nErythrina caffra flowers before it leafs, bare branches erupting into thick orange-red spikes, a display gardens plant it for the world over. Barcelona added this specimen to its catalogue of trees of local interest in one sitting with eleven others in May 2024, protected for its size rather than any known age. Nobody has dated it.\n\nThe garden around it opened in 1970 on the seaward slope of Montjuic, named for the Mallorcan poet Miquel Costa i Llobera and built specifically to show off cacti and succulents from the world's dry regions, more than 800 species across terraces that step down toward the port. The coral tree stands out precisely because it does not belong to that theme, a broad-leaved African import in a garden otherwise devoted to spines. Free to enter, no gate, with one of the better views over Barcelona's harbour thrown in.",
-      "verify_notes": "Register (barcelona-ail.json, id 99400728992, catalogued 2022): girth 3m, height 12m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article naming 'eritrina' at Jardins Mossen Costa i Llobera among the 12 newly protected trees. Two-sourced. Garden's own public/free status confirmed via WebSearch (multiple tourism and municipal sources). Undated.",
+      "verify_notes": "Register (barcelona-ail.json, id 99400728992, catalogued 2022): girth 3m, height 12m, crown 20m, ownership Public. Independently corroborated by beteve.cat's 31 May 2024 article naming 'eritrina' at Jardins Mossen Costa i Llobera among the 12 newly protected trees. Two-sourced. Garden's own public/free status confirmed via WebSearch (multiple tourism and municipal sources). Undated. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400728992 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the one broad leaved tree in a garden of cacti and succulents, three metres round under a crown spreading 20 metres. It stands on the terraces of the Jardins de Mossen Costa i Llobera."
+      "how_to_recognise": "You can recognise it as the one broad leaved tree in a garden of cacti and succulents, three metres round under a crown spreading 20 metres. It stands on the terraces of the Jardins de Mossen Costa i Llobera.",
+      "height_m": 12.0
     },
     {
       "id": "bcn_050",
@@ -2076,14 +2103,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "Most people who grow a yucca in their garden are growing something a few metres tall at most. Barcelona's tree yucca, on the seaward path below the steps up to Miramar on Montjuic, is 12 metres tall with a trunk 1.6 metres round, a genuinely tree-sized specimen of a plant most visitors assume tops out at shrub height.\n\nYucca filifera comes from the high desert plateaus of central Mexico, where old wild specimens branch into candelabra shapes and can outlive the people who planted their garden cousins many times over. Barcelona catalogued this one as a tree of local interest only in 2024, with no planting date recorded and no history beyond its own measurements.\n\nIt grows a short walk from an equally uncommon neighbour, an African coral tree in the cactus gardens above, on a stretch of path built specifically to show off plants that have no business surviving comfortably on a Mediterranean hillside. Nobody has confirmed how old this one actually is, or when it went in. If you know, the city's own catalogue does not.",
-      "verify_notes": "Single official source (barcelona-ail.json, id 99400761023, catalogued 2024): girth 1.6m, height 12m, crown 8m, planted 'Per determinar' (undated), ownership field blank. Place field gives a specific description ('sea side of the pedestrian path... base of the Miramar access stairs') used for the address. No second source found this pass; ships single-sourced and flagged per Step 2. Garden's public/free status independently confirmed via WebSearch. Collectibility is a genuine judgement call (a yucca is a marginal case as a 'tree') but nothing disqualifies it and CLAUDE.md forbids treating a taste call as a publish blocker.",
+      "verify_notes": "Single official source (barcelona-ail.json, id 99400761023, catalogued 2024): girth 1.6m, height 12m, crown 8m, planted 'Per determinar' (undated), ownership field blank. Place field gives a specific description ('sea side of the pedestrian path... base of the Miramar access stairs') used for the address. No second source found this pass; ships single-sourced and flagged per Step 2. Garden's public/free status independently confirmed via WebSearch. Collectibility is a genuine judgement call (a yucca is a marginal case as a 'tree') but nothing disqualifies it and CLAUDE.md forbids treating a taste call as a publish blocker. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400761023 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by a yucca grown to 12 metres on a trunk 1.6 metres round, tree sized where most people expect a shrub. It stands on the seaward side of the path at the foot of the Miramar steps."
+      "how_to_recognise": "You can recognise it by a yucca grown to 12 metres on a trunk 1.6 metres round, tree sized where most people expect a shrub. It stands on the seaward side of the path at the foot of the Miramar steps.",
+      "height_m": 12.0
     },
     {
       "id": "bcn_051",
@@ -2109,14 +2137,15 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "An avocado tree does not usually end up on a list of remarkable urban trees, but Barcelona catalogued this one in 1996, and at roughly 80 years old and 13 metres tall it has outlived every use of the building beside it. That building opened as the Palau de l'Agricultura for the 1929 International Exposition, spent decades afterward as the city's central flower market, sat empty for years, and reopened in 2001 as the Teatre Lliure. The tree, planted around 1946 somewhere in the gap between exposition pavilion and flower market, is older than the theatre by 55 years.\n\nPersea americana is native to central Mexico and normally grown for fruit rather than shade, which makes a mature specimen this size unusual in a European city: 1.6 metres round with a canopy 15 metres across, spreading well beyond what most people picture when they hear avocado tree. It stands on Placa Margarida Xirgu, in front of the theatre entrance, free to walk past whether or not anyone is seeing a show that night.\n\nNobody has recorded whether it still fruits.",
-      "verify_notes": "Register (barcelona-ail.json, id 99400455081, catalogued 1996, the oldest catalogue date of this batch): planted 1946, age_register 80, girth 1.6m, height 13m, crown 15m, ownership Public. Position independently confirmed by OSM node 4203274163 (per the leads file note) sitting at the same coordinate. Theatre building history (Palau de l'Agricultura 1929, flower market, Teatre Lliure opened 2001) corroborated by teatrelliure.com and barcelona.cat's own venue page. Single register source for the tree itself; ships flagged per Step 2. Planting year is the register's own field, not an estimate.",
+      "verify_notes": "Register (barcelona-ail.json, id 99400455081, catalogued 1996, the oldest catalogue date of this batch): planted 1946, age_register 80, girth 1.6m, height 13m, crown 15m, ownership Public. Position independently confirmed by OSM node 4203274163 (per the leads file note) sitting at the same coordinate. Theatre building history (Palau de l'Agricultura 1929, flower market, Teatre Lliure opened 2001) corroborated by teatrelliure.com and barcelona.cat's own venue page. Single register source for the tree itself; ships flagged per Step 2. Planting year is the register's own field, not an estimate. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400455081 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the canopy, 15 metres across on a trunk 1.6 metres round, far wider than an avocado tree is usually allowed to grow. It stands on Placa Margarida Xirgu in front of the Teatre Lliure entrance."
+      "how_to_recognise": "You can recognise it by the canopy, 15 metres across on a trunk 1.6 metres round, far wider than an avocado tree is usually allowed to grow. It stands on Placa Margarida Xirgu in front of the Teatre Lliure entrance.",
+      "height_m": 13.0
     },
     {
       "id": "bcn_052",
@@ -2148,14 +2177,15 @@
         "kind": "flowers",
         "label": "late July into August, when it flowers"
       },
-      "verify_notes": "Single official source (barcelona-ail.json, id 99400761024, catalogued 2024): girth 2.3m, height 20m, crown 15m, planted 'En estudi' (under study), ownership field blank. Place field 'C. Guardia Urbana' is a public street name, treated as public street frontage per convention (no gate, no institution named). No second source found this pass; ships single-sourced and flagged per Step 2. Late-summer flowering is a well documented species trait (Styphnolobium japonicum blooms July-August across temperate climates including the Mediterranean), not specific to this individual, stated as such.",
+      "verify_notes": "Single official source (barcelona-ail.json, id 99400761024, catalogued 2024): girth 2.3m, height 20m, crown 15m, planted 'En estudi' (under study), ownership field blank. Place field 'C. Guardia Urbana' is a public street name, treated as public street frontage per convention (no gate, no institution named). No second source found this pass; ships single-sourced and flagged per Step 2. Late-summer flowering is a well documented species trait (Styphnolobium japonicum blooms July-August across temperate climates including the Mediterranean), not specific to this individual, stated as such. Height from Arbres d'interès local (Ajuntament de Barcelona) no. 99400761024 (data/registers/barcelona-ail.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "photo": {
         "url": null,
         "license": null,
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by being the only thing on the street worth looking at, 20 metres tall on a trunk 2.3 metres round, with cream white flower clusters in late summer. It stands on Carrer de la Guardia Urbana in Poble-sec."
+      "how_to_recognise": "You can recognise it by being the only thing on the street worth looking at, 20 metres tall on a trunk 2.3 metres round, with cream white flower clusters in late summer. It stands on Carrer de la Guardia Urbana in Poble-sec.",
+      "height_m": 20.0
     },
     {
       "id": "bcn_053",

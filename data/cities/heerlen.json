@@ -271,7 +271,8 @@
         "longitude": 5.949978
       },
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "netherlands-lrmb.json, no. 1697332"
       ],
       "access": "Free, roadside tree on public land, always visible.",
       "photo": {
@@ -290,7 +291,12 @@
         "label": "November: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it by standing beside the drive up to Kasteel Terworm, visible to anyone approaching the front door, near an old yew. It stands at Terworm 5D."
+      "how_to_recognise": "You can recognise it by standing beside the drive up to Kasteel Terworm, visible to anyone approaching the front door, near an old yew. It stands at Terworm 5D.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697332",
+        "url": null
+      },
+      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697332 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "hee_009",

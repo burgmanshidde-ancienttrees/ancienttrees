@@ -50,7 +50,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Degsn%C4%97s_mi%C5%A1ko_maumedis",
         "https://saugoma.lt/lt/objektai/objektai-degsnes-misko-maumedis-auksciausias-lietuvos-medis",
-        "https://www.infoprienai.lt/lankytinos-vietos/auksciausias-lietuvos-medis/"
+        "https://www.infoprienai.lt/lankytinos-vietos/auksciausias-lietuvos-medis/",
+        "lithuania-stvk-gpo.json, no. 0310505110001"
       ],
       "access": "Free, public state forest within Nemuno Loops Regional Park. Reached by a good-quality gravel forest road, about 2.5-3km off route 130 (Kaunas-Alytus), turning off shortly before the Balbieriškis outcrop (Balbieriškio atodanga). No gate or permission needed.",
       "transport": "No public transport reaches the forest road itself; nearest towns are Balbieriškis (about 3km) and Prienai (about 7km). A car or bicycle is the practical way in.",
@@ -77,7 +78,12 @@
         "source_name": "Degsnė larch",
         "qid": "Q18737505",
         "views": 80
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505110001",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505110001 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "deg_002",
@@ -96,7 +102,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/B%C5%ABdinink%C5%B3_I_%C4%85%C5%BEuolas",
-        "https://madeinvilnius.lt/naujienos/lietuvos-naujienos/paskelbti-dar-53-saugomi-gamtos-paveldo-objektai-azuolai-liepos-ir-didingi-rieduliai/"
+        "https://madeinvilnius.lt/naujienos/lietuvos-naujienos/paskelbti-dar-53-saugomi-gamtos-paveldo-objektai-azuolai-liepos-ir-didingi-rieduliai/",
+        "lithuania-stvk-gpo.json, no. 0310506000169"
       ],
       "access": "Free, public. Stands in Balbieriškis Forest, a 2,855-hectare state-important forest (Prienai Forest Management Board's Naujoji Ūta / Degsnė forestry districts), the same forest complex the already-published Degsnė Forest Larch stands in. Reached via a gravel road off the A16 highway at the Naujosios Ūtos bus stop, toward the Balbieriškis forest biosphere-polygon boundary marker. No gate, fee or private land involved.",
       "transport": "No public transport reaches the tree itself; nearest stop is Naujoji Ūta on the A16 (Vilnius-Prienai-Marijampolė), then a gravel forest road on foot, bike or by car. About 6.4km from the Degsnė Forest Larch (deg_001), a plausible day-trip pairing within the same forest, though not a walk between the two.",
@@ -124,7 +131,12 @@
         "source_name": "Būdininkai, 1st oak",
         "qid": "Q141065169",
         "views": 44
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310506000169",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310506000169 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "deg_003",
@@ -141,7 +153,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Bagr%C4%97no_liepa",
         "https://stvk.lt/map/S0310506000178-bagreno-liepa",
-        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/",
+        "lithuania-stvk-gpo.json, no. 0310506000178"
       ],
       "access": "Free; stands beside the main street of Bagrėnas village, near an old homestead at Liepų g. 132. No source states whether the roadside spot itself is fenced; treat it as visible and reachable from the public village street, the same honest caveat already used for other homestead-adjacent trees in this district (compare Kaunas kun_006).",
       "transport": "No public transport; reached by car via road KK130, then about 3.4km southeast into Bagrėnas village. Roughly 12-17km by straight-line distance from Degsnė's other two trees (deg_001, deg_002) in Balbieriškis Forest; real road distance is likely greater. A plausible day-trip pairing in the same district, not a walk between the two.",
@@ -169,7 +182,12 @@
         "source_name": "Bagrėnas linden",
         "qid": "Q141065376",
         "views": 16
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310506000178",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310506000178 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     }
   ]
 }

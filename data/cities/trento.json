@@ -45,7 +45,8 @@
         "MASAF national monumental trees register, sheet 15/L378/TN/22",
         "https://www.giornaletrentino.it/cronaca/trento/a-trento-18-alberi-monumentali-c-e-anche-un-platano-del-1835-in-via-santa-croce-1.3725451",
         "https://www.ansa.it/trentino/notizie/2024/03/11/a-trento-18-alberi-monumentali-tra-cui-una-pianta-del-1835_77d93f34-7783-48fd-948c-01e7c2c26900.html",
-        "https://www.ildolomiti.it/societa/2024/dal-cedro-dellhimalaya-al-ciliegio-selvatico-18-alberi-monumentali-a-trento-e-altri-10-candidati-per-diventarlo-il-piu-antico-del-1835-ogni-pianta-e-un-mondo-e-una-storia"
+        "https://www.ildolomiti.it/societa/2024/dal-cedro-dellhimalaya-al-ciliegio-selvatico-18-alberi-monumentali-a-trento-e-altri-10-candidati-per-diventarlo-il-piu-antico-del-1835-ogni-pianta-e-un-mondo-e-una-storia",
+        "italy-masaf.json, no. 15/L378/TN/22"
       ],
       "curation_status": "ai_generated",
       "photo": {
@@ -55,9 +56,13 @@
         "status": "missing"
       },
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 15/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 590,
-      "how_to_recognise": "You can recognise it as Trento's oldest monumental tree, planted in 1835. It stands in the Giardino Martino Martini, off Via Santa Croce."
+      "how_to_recognise": "You can recognise it as Trento's oldest monumental tree, planted in 1835. It stands in the Giardino Martino Martini, off Via Santa Croce.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 15/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_002",
@@ -79,7 +84,8 @@
       "verified_sources": [
         "MASAF national monumental trees register, sheet 13/L378/TN/22",
         "comune.trento.it garden directory entry for Giardino largo Pigarelli",
-        "2024 local press (ANSA, il Dolomiti) coverage of Trento's 18 monumental trees, which names a black poplar at Largo Pigarelli among them"
+        "2024 local press (ANSA, il Dolomiti) coverage of Trento's 18 monumental trees, which names a black poplar at Largo Pigarelli among them",
+        "italy-masaf.json, no. 13/L378/TN/22"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -89,9 +95,13 @@
         "status": "missing"
       },
       "height_m": 28.0,
-      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 28.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 13/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 570,
-      "how_to_recognise": "You can recognise it by its trunk, 5.70 metres round, an unusually large size for a native black poplar, and by how much it moves in the wind. It stands in the Giardino di Largo Pigarelli."
+      "how_to_recognise": "You can recognise it by its trunk, 5.70 metres round, an unusually large size for a native black poplar, and by how much it moves in the wind. It stands in the Giardino di Largo Pigarelli.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 13/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_003",
@@ -112,7 +122,8 @@
       "story": "This plane belongs to a garden it no longer stands in. The comune's page for the Giardino di Piazza Dante describes monumental planes and walnuts surviving from the garden's original nineteenth century planting, and this tree stands at the edge of that garden with a street address on Via Vannetti, a few steps outside the railings. The comune does not name it individually, so the link is inference rather than record, and we have flagged it on that basis. What is on record is the national monumental register entry that put it on this list. No age has been published for it. The garden it came from was laid out in 1879 on ground that only existed because of the railway. The Adige used to run where Piazza Dante is now. The river was diverted in the late 1850s to clear space for the line, and the city planted its first public garden on the reclaimed strip. The trees left from that first planting are products of the railway as much as of any gardener. Practically, this is the easiest tree in Trento to reach. Five minutes from the platforms, on an open public street, at any hour, with no gate and nothing to pay, and the Piazza Dante elm is thirty seconds further on.",
       "verified_sources": [
         "MASAF national monumental trees register, sheet 19/L378/TN/22",
-        "comune.trento.it, Giardino di Piazza Dante page, which describes 'monumentali platani e noci di primo impianto' among the adjoining garden's original 19th-century planting"
+        "comune.trento.it, Giardino di Piazza Dante page, which describes 'monumentali platani e noci di primo impianto' among the adjoining garden's original 19th-century planting",
+        "italy-masaf.json, no. 19/L378/TN/22"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -124,9 +135,13 @@
         "height": 4080
       },
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 19/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 565,
-      "how_to_recognise": "You can recognise it by standing just outside the railings of the Piazza Dante garden, on the street itself. It stands on Via Vannetti, facing the station."
+      "how_to_recognise": "You can recognise it by standing just outside the railings of the Piazza Dante garden, on the street itself. It stands on Via Vannetti, facing the station.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 19/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_004",
@@ -147,7 +162,8 @@
       "story": "Step off a train at Trento and the walk to a centuries-old elm takes under two minutes. The Giardino di Piazza Dante faces the station, and the comune's own description of it puts an elm and a group of yews along the north side, all of them called secolari, of the centuries. The elm is on the national monumental register. Nobody has published a precise age, so a hundred years is the floor rather than the estimate. The garden was designed in 1879 by the engineer Annibale Apollonio and was the first public garden Trento had. It has been restored in stages since 2007, and the Art Nouveau pavilion inside it now holds a children's library, which means that on a weekday afternoon the oldest tree in the square has small children reading underneath it. That is a better use of a monument than most of them get. Stand between the elm and the yews for a minute, because the pairing is instructive. The elm is a fast hardwood that can put on a metre of shoot in a good year and hollows from the inside once it stops. The yews beside it grow so slowly that they outlive almost everything planted with them. Ten metres apart, two entirely different bets on how to last. Free, open, no gate and no hours.",
       "verified_sources": [
         "MASAF national monumental trees register, sheet 22/L378/TN/22",
-        "https://www.comune.trento.it/Vivere-il-comune/Luoghi/Giardino-di-Piazza-Dante ('i tassi e l'olmo secolari sul lato nord', the centuries-old yews and elm on the north side)"
+        "https://www.comune.trento.it/Vivere-il-comune/Luoghi/Giardino-di-Piazza-Dante ('i tassi e l'olmo secolari sul lato nord', the centuries-old yews and elm on the north side)",
+        "italy-masaf.json, no. 22/L378/TN/22"
       ],
       "curation_status": "ai_generated",
       "photo": {
@@ -157,9 +173,13 @@
         "status": "missing"
       },
       "height_m": 30.5,
-      "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 22/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 500,
-      "how_to_recognise": "You can recognise it by standing about ten metres from a group of yews on the garden's north side, fast growing beside their slow one. It stands in the Giardino di Piazza Dante."
+      "how_to_recognise": "You can recognise it by standing about ten metres from a group of yews on the garden's north side, fast growing beside their slow one. It stands in the Giardino di Piazza Dante.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 22/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_005",
@@ -180,7 +200,8 @@
       "story": "Europe lost most of its mature elms inside a single lifetime, and this one is still standing. Dutch elm disease is a fungus carried by bark beetles that blocks a tree's water vessels from the inside. It swept the continent from the 1930s and killed elms by the tens of millions, which is why an elm of any size is now worth going to see. The Italian tree register notes exactly that about this one, that it came through while others nearby did not. Its trunk measures 393 centimetres around, past the threshold that gets a tree onto the national monumental register on girth alone. No age has been recorded for it, and no height either. The register's description is honest about the setting: the tree sits in a corner of the garden and takes some finding, then stops being easy to overlook once you are in front of it. The Giardino di Maso Ginocchio is an ordinary municipal park, about 3.6 hectares in the San Giuseppe and Santa Chiara district south of the centre, with a playground, a small animal enclosure and entrances on Via Veneto, Via Giusti and Via Monte Baldo. Local reporting in 2016 grumbled about its upkeep. It is free and it is open, and the elm is the reason to walk the fifteen minutes out.",
       "verified_sources": [
         "MASAF national monumental trees register, sheet 23/L378/TN/22",
-        "https://ilregistrodeglialberi.it/17959-olmo-campestre-trento-tn-trentino-alto-adige (RAMI register entry for the Maso Ginocchio field elm)"
+        "https://ilregistrodeglialberi.it/17959-olmo-campestre-trento-tn-trentino-alto-adige (RAMI register entry for the Maso Ginocchio field elm)",
+        "italy-masaf.json, no. 23/L378/TN/22"
       ],
       "curation_status": "ai_generated",
       "photo": {
@@ -190,10 +211,14 @@
         "status": "missing"
       },
       "height_m": 26.0,
-      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 393 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "verify_notes": "Height 26.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 393 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 23/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 393,
       "how_to_recognise": "You can recognise it by its trunk, 3.93 metres round, tucked into a corner of the garden where it takes some finding. It stands in the Giardino di Maso Ginocchio, Via Giusti.",
-      "age_basis": "girth"
+      "age_basis": "girth",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 23/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_006",
@@ -214,7 +239,8 @@
       "story": "This cedar was planted around the year Italy was founded, in a city that would not join it for another fifty seven years. Local reporting in 2024 dates it to roughly 1861, the year of Unification, and ranks it the second oldest of Trento's eighteen monumental trees after the 1835 plane in Via Santa Croce. Trento was Austrian in 1861 and stayed Austrian until 1918. A Himalayan cedar going into the ground here was a Habsburg garden fashion, not an Italian one. That reporting stops short of a girth, so there is nothing to check the register's 525 centimetres against, and it names the cedar only by park rather than by position. The flag on this entry is for the missing measurement. The park is also not a one-tree park: the same article credits Gocciadoro with a tulip tree of thirty five metres, the tallest of the city's monumental trees. Cedrus deodara is the easiest cedar to name once you know it. The needles are longer than any other cedar's, the tips of the branches droop instead of reaching, and a mature tree carries a slightly mournful posture that the Lebanese and Atlas cedars do not. The park is public and free, roughly twenty five minutes on foot east of the centre or a short bus ride.",
       "verified_sources": [
         "MASAF national monumental trees register, sheet 09/L378/TN/22",
-        "https://www.ildolomiti.it/societa/2024/dal-cedro-dellhimalaya-al-ciliegio-selvatico-18-alberi-monumentali-a-trento-e-altri-10-candidati-per-diventarlo-il-piu-antico-del-1835-ogni-pianta-e-un-mondo-e-una-storia (cedar in Parco Gocciadoro planted around the time of Italian Unification, ~1861, the city's second-oldest monumental tree)"
+        "https://www.ildolomiti.it/societa/2024/dal-cedro-dellhimalaya-al-ciliegio-selvatico-18-alberi-monumentali-a-trento-e-altri-10-candidati-per-diventarlo-il-piu-antico-del-1835-ogni-pianta-e-un-mondo-e-una-storia (cedar in Parco Gocciadoro planted around the time of Italian Unification, ~1861, the city's second-oldest monumental tree)",
+        "italy-masaf.json, no. 09/L378/TN/22"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -224,9 +250,13 @@
         "status": "missing"
       },
       "height_m": 30.0,
-      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 30.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 09/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 525,
-      "how_to_recognise": "You can recognise it by its long needles and drooping branch tips, a more mournful posture than a Lebanon or Atlas cedar. It stands in the Parco di Gocciadoro."
+      "how_to_recognise": "You can recognise it by its long needles and drooping branch tips, a more mournful posture than a Lebanon or Atlas cedar. It stands in the Parco di Gocciadoro.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 09/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_007",
@@ -255,7 +285,8 @@
       "verified_sources": [
         "MASAF national monumental trees register, sheet 20/L378/TN/22",
         "https://www.ildolomiti.it/societa/2025/la-castagna-e-il-marrone-di-sardagna-ottengono-il-marchio-deco-una-festa-per-celebrare-il-riconoscimento-e-il-nuovo-sentiero-dei-castagni",
-        "https://secolo-trentino.com/2025/10/13/castagna-di-sardagna-evento-2025/"
+        "https://secolo-trentino.com/2025/10/13/castagna-di-sardagna-evento-2025/",
+        "italy-masaf.json, no. 20/L378/TN/22"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -265,10 +296,14 @@
         "status": "missing"
       },
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 550 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 550 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 20/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 550,
       "how_to_recognise": "You are looking for a grove rather than an appointment: sweet chestnuts on the hillside at Castagnara, waymarked as the Sentiero dei Castagni. The register maps the locality and not the trunk.",
-      "age_basis": "girth"
+      "age_basis": "girth",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 20/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_008",
@@ -286,7 +321,8 @@
       "story": "Most hackberries with a trunk this thick are twice as tall. This one measures 410 centimetres around and stops at ten metres, an odd shape for Celtis australis, a species that normally runs to twenty-odd metres of straight grey trunk under a high rounded dome. Cortesano sits 570 metres up, nearly four hundred metres above the centre of Trento, and what grows well on that hillside is not what grows well down in the Adige valley.\n\nIt stands on the Salita ai Spiazzi, the lane climbing through the hamlet, near the church of Sant'Antonio. It is one of the eighteen trees Trento formally recognised as monumental in 2024, when the comune finished its list and entered thirteen of them on the national register, and it is the only one of the eighteen this far out of town.\n\nNobody has published an age for it. Italy's register carries girth, height and altitude and no age column at all, and the press coverage that named this tree named a place rather than a date, so the field is left blank instead of guessed at. Only one report puts it precisely, at the church, which is why the entry is flagged.\n\nGetting there is a bus rather than a walk: line 3 out of the centre, about twenty-five minutes up the hillside, then a short climb. What you get for it is a hamlet, a church, and a tree built like a barrel.",
       "verified_sources": [
         "MASAF national monumental trees register, sheet 11/L378/TN/22",
-        "https://www.iltquotidiano.it/articoli/a-trento-ci-sono-18-alberi-monumentali-il-piu-vecchio-e-il-platano-di-via-santa-croce-messo-a-dimora-nel-1835/"
+        "https://www.iltquotidiano.it/articoli/a-trento-ci-sono-18-alberi-monumentali-il-piu-vecchio-e-il-platano-di-via-santa-croce-messo-a-dimora-nel-1835/",
+        "italy-masaf.json, no. 11/L378/TN/22"
       ],
       "access": "Free, on a public street (Salita ai Spiazzi) near the church of Sant'Antonio in the Cortesano hamlet",
       "transport": "Trentino Trasporti bus line 3 from central Trento to Cortesano, about 24 minutes, then a short walk",
@@ -300,9 +336,13 @@
       },
       "notes": "Age deliberately empty: no source publishes one, and Italy's national register has no age field. Flagged because only one press source (Il T Quotidiano) places the tree precisely, at the church of Sant'Antonio, and no second physical description or photograph was found.",
       "height_m": 10.0,
-      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 10.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 11/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 410,
-      "how_to_recognise": "You can recognise it by its odd, barrel-like shape, a trunk 4.10 metres round on a tree only 10 metres tall. It stands on the Salita ai Spiazzi in Cortesano."
+      "how_to_recognise": "You can recognise it by its odd, barrel-like shape, a trunk 4.10 metres round on a tree only 10 metres tall. It stands on the Salita ai Spiazzi in Cortesano.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 11/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_009",
@@ -331,7 +371,8 @@
       "verified_sources": [
         "MASAF national monumental trees register, sheet 08/L378/TN/22 (girth 465 cm, alpine pasture at Malga Brigolina)",
         "https://www.outdooractive.com/it/accommodation/trento-monte-bondone-valle-dell-adige/malga-brigolina/1690095/ (malga at 46.057032, 11.060026, 990 m, open early June to late September, reached from Sopramonte before Candriai)",
-        "https://www.visittrentino.info/it/guida/tour/candriai-malga-brigolina_tour_807682114 (the Candriai to Malga Brigolina walk)"
+        "https://www.visittrentino.info/it/guida/tour/candriai-malga-brigolina_tour_807682114 (the Candriai to Malga Brigolina walk)",
+        "italy-masaf.json, no. 08/L378/TN/22"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -342,10 +383,14 @@
       },
       "notes": "Pin is the register coordinate, roughly 330 m north-east of the malga building, so it is the meadow rather than the trunk: location_precision approximate. Age deliberately empty, Italy's national register has no age column and no source publishes one. Flagged because the girth comes from the register alone and the tourism sources describe the tree only as secolare. Access verdict 2026-08-14: open alpine pasture on Monte Bondone, nobody's home and no permission needed, so the tree clears hard rule 10; what held it back until now was a transport line, and bus B202 plus the Giro della Selva path supplies one.",
       "height_m": 17.0,
-      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 465 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "verify_notes": "Height 17.0 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 465 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 08/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 465,
       "how_to_recognise": "You can recognise it by standing alone in the grass with nothing within reach of its branches, low and broad rather than tall, 4.65 metres round. It is in the pasture below Malga Brigolina.",
-      "age_basis": "girth"
+      "age_basis": "girth",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 08/L378/TN/22",
+        "url": null
+      }
     },
     {
       "id": "tre_010",
@@ -374,7 +419,8 @@
       "verified_sources": [
         "https://dati.trentino.it/dataset/alberi-monumentali-del-comune-di-trento-2024 (Comune di Trento open register, scheda 06/L378/TN/22, girth 359cm, height 26.5m, altitude 790m, ownership pubblico, managed by AFTS)",
         "https://www.ildolomiti.it/cronaca/2024/a-trento-18-alberi-monumentali-il-piu-vecchio-e-stato-messo%C2%A0a-dimora-nel-1835-pattini-e-uez-valorizziamoli-per-farli-conoscere (confirms the wild cherry at Passo del Cimirlo among Trento's 18 declared monumental trees, added 2021-2023 via a University of Trento internship project)",
-        "https://it.wikipedia.org/wiki/Passo_del_Cimirlo (pass elevation, road access from Povo/Oltrecastello/Roncogno, WWI fortifications)"
+        "https://it.wikipedia.org/wiki/Passo_del_Cimirlo (pass elevation, road access from Povo/Oltrecastello/Roncogno, WWI fortifications)",
+        "italy-masaf.json, no. 06/L378/TN/22"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -385,10 +431,14 @@
       },
       "notes": "Age deliberately empty: the comune's register has no age column and no source found gives one. Flagged because girth/height come from a single register entry with press corroborating only the tree's existence and monumental status, not its measurements. This is the tenth tree noted as a research question in review_2026_08_14b; researched fresh 2026-08-15 from the comune's own open dataset rather than the villa-access leads, which remain held.",
       "height_m": 26.5,
-      "verify_notes": "Height 26.5 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 359 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "verify_notes": "Height 26.5 m from the italy-masaf register, matched on our own pin (0 m away). Age derived from girth, not from a source: 359 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 06/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 359,
       "how_to_recognise": "You can recognise it by its trunk, 3.59 metres round, unusually thick for a wild cherry, on forest land near old war fortifications. It stands at Passo del Cimirlo, Casare.",
-      "age_basis": "girth"
+      "age_basis": "girth",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/L378/TN/22",
+        "url": null
+      }
     }
   ]
 }

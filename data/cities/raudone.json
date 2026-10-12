@@ -95,7 +95,8 @@
       "story": "Children in Plokščiai used to climb inside this oak. The base of the trunk rotted out long ago, leaving a hollow big enough to play in, and people who grew up in the village still remember doing it.\n\nThe hollow has not stopped it growing. It stands 34 metres tall, which is a great deal for an oak. The trunk is 5.2 metres round.\n\nFor all that, it had no official status until very recently. Lithuania's Environment Ministry designated it only in September 2025, in the same order that protected a wave of other big oaks across the country, including the Netoniai oak outside Kaunas. It is one of the eleven natural heritage objects of Panemunių Regional Park, the stretch of the Nemunas valley famous for its castles.\n\nIt grows on the south bank of the river, beside the Kentėjimo kelias, the Suffering Path memorial, near the road through Plokščiai village. That puts it about 2.8 kilometres by road from the Castle Lime at Raudonė on the far side of the valley, close enough to make the two a single outing. There is another Plokščiai oak in Kretinga district, near Klaipėda; this is not it.\n\nNobody has published an age for this tree. If you know how old it is, tell us.",
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Plok%C5%A1%C4%8Di%C5%B3_(Panemun%C4%97s)_%C4%85%C5%BEuolas",
-        "https://e-seimas.lrs.lt/rs/legalact/TAD/b6649651417311e89517ff5ccea63d58/format/ISO_PDF/"
+        "https://e-seimas.lrs.lt/rs/legalact/TAD/b6649651417311e89517ff5ccea63d58/format/ISO_PDF/",
+        "lithuania-stvk-gpo.json, no. 0310506000093"
       ],
       "access": "Free; stands on public land within Panemunių Regional Park, beside a public road and a memorial site",
       "transport": "Šakiai district, about 2.8km from Raudonė (Jurbarkas district) by road, on the opposite side of the Nemunas within the same regional park; reachable by car, no public transit checked this pass",
@@ -108,7 +109,12 @@
       "photos": [],
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "how_to_recognise": "You can recognise it by its great height, 34 metres, above a trunk 5.2 metres round and hollow at the base. It stands beside the Kentėjimo kelias memorial by the road through Plokščiai, across the Nemunas from Raudonė."
+      "how_to_recognise": "You can recognise it by its great height, 34 metres, above a trunk 5.2 metres round and hollow at the base. It stands beside the Kentėjimo kelias memorial by the road through Plokščiai, across the Nemunas from Raudonė.",
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310506000093",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310506000093 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 4 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rdn_003",
@@ -126,7 +132,8 @@
       },
       "story": "This is the oak you have to look for. It stands off any marked path on a slope in the Nykos landscape reserve, and the usual way in is on foot along the Nyka stream from the village of Dulinčiškiai, then up the bank. The pin gets you close; the last stretch is yours.\n\nWhat you find is worth the scramble. The trunk is 5.42 metres round at chest height, measured in 2014, and at 3.8 metres it splits into three stems that carry the tree to 32 metres. The crown alone is 22 metres tall and 22 metres wide, as broad as it is deep.\n\nThe state cadastre puts it at 300 to 400 years old. That range is the register's own, not something we worked out, and it has been protected since 2005. Even the low end means this oak was already growing on its slope when the Nemunas valley below was still part of the Grand Duchy of Lithuania.\n\nIt is 12.7 kilometres from Raudonė by road, a longer detour than the Plokščiai oak across the river, and best treated as a small expedition of its own; Ilguva's church, about 130 metres to the north, is the landmark to aim for. Everything here rests on one published source, the cadastre as Lithuanian Wikipedia reports it. If you find the tree, a photograph and a word about the way in would help the next person.",
       "verified_sources": [
-        "https://lt.wikipedia.org/wiki/Ilguvos_%C4%85%C5%BEuolas"
+        "https://lt.wikipedia.org/wiki/Ilguvos_%C4%85%C5%BEuolas",
+        "lithuania-stvk-gpo.json, no. 0310505010118"
       ],
       "access": "Free, but genuinely hard to find: no gate or ownership restriction, but the tree stands off any marked path, reached by walking along the Nyka stream from Dulinčiškiai village (in Panemunė) and climbing a slope",
       "transport": "Šakiai district; about 12.7km from Raudonė by road, no public transit checked this pass",
@@ -146,7 +153,12 @@
         "source_name": "Ilguva oak",
         "qid": "Q116944253",
         "views": 4
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010118",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010118 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     }
   ]
 }

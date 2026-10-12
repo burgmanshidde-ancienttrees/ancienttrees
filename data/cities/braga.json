@@ -67,7 +67,9 @@
         "label": "September to October: clear yellow, one of the most reliable autumn trees",
         "kind": "autumn colour"
       },
-      "girth_cm": 650
+      "girth_cm": 650,
+      "height_m": 27.4,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/554 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "brg_002",
@@ -101,7 +103,9 @@
         "width": 4000,
         "height": 3000
       },
-      "girth_cm": 350
+      "girth_cm": 350,
+      "height_m": 15.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/610 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "brg_003",
@@ -171,7 +175,9 @@
         "attribution": null,
         "status": "missing"
       },
-      "girth_cm": 370
+      "girth_cm": 370,
+      "height_m": 25.5,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/559 (data/registers/portugal-icnf.json), matched on our pin at 8 m (register_match.py, 2026-10-12)."
     }
   ]
 }

@@ -41,7 +41,8 @@
       "story": "Slovakia's national tree-of-the-year vote in 2013 went to an oak growing in a town garden rather than a forest, and the town put it forward for the European title the same year. It is the dominant tree of Zechenterova zahrada, Zechenter's Garden, itself a National Cultural Monument protected since 1958, in the middle of Kremnica, a mining and mint town old enough to have minted the ducats that once financed a kingdom.\n\nAges given for it differ by fifty years: one source says 350, another 400, and both stay on the page rather than one being chosen to look more precise than the evidence allows. Nobody has published a trustworthy girth measurement either, which is unusual for a tree this decorated, so the field stays empty and open to whoever brings a tape.\n\nAn old photograph shows lightning damage to the trunk at some point in its life, and the tree carried on regardless. In 2026 the town secured 1.3 million euros in EU funding to restore the whole garden, which is not the action of a place treating its centrepiece tree as an afterthought.\n\nThe same official register that protects this oak lists two yews in the same garden and two more limes elsewhere in Kremnica, so the town may well hold enough remarkable trees for a fuller page once someone verifies them. This one stands on its own for now, free, in the town centre.",
       "verified_sources": [
         "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/52",
-        "https://www.soler.sk/aktualne/strom-roka-2013.html"
+        "https://www.soler.sk/aktualne/strom-roka-2013.html",
+        "slovakia-chranene-stromy.json, no. 52"
       ],
       "access": "Free. Stands in Zechenter's Garden, a public historic town garden and National Cultural Monument (protected since 1958) in central Kremnica; the garden is undergoing an EU-funded restoration announced in 2026 but remains the town's public park.",
       "transport": "In Kremnica town centre, a short walk from the main square (Stefanikovo namestie).",
@@ -61,7 +62,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Chránené stromy (Štátna ochrana prírody SR), no. 52",
+        "url": null
+      },
+      "verify_notes": "Register number from Chránené stromy (Štátna ochrana prírody SR) no. 52 (data/registers/slovakia-chranene-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

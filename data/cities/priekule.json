@@ -40,7 +40,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/%C5%A0perberi%C5%B3_%C4%85%C5%BEuolas",
-        "https://ve.lt/naujienos/lietuva/vakaru-lietuva/priekules-seniunijoje-rasti-5-gamtos-paveldo-objektai-1574961"
+        "https://ve.lt/naujienos/lietuva/vakaru-lietuva/priekules-seniunijoje-rasti-5-gamtos-paveldo-objektai-1574961",
+        "lithuania-stvk-gpo.json, no. 0310505010283"
       ],
       "access": "Free, in a public park (Vingio parkas), beside the main path near the entrance",
       "transport": "In Vingio parkas in the small town of Priekulė, about 15 km south of Klaipėda; walkable from the town centre",
@@ -62,7 +63,12 @@
         "source_name": "Šperberiai Oak",
         "qid": "Q120761400",
         "views": 8
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010283",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010283 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "pri_002",
@@ -114,7 +120,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Ievos_Simonaityt%C4%97s_bukas",
-        "https://www.pamatyklietuvoje.lt/lankytinos-vietos/i-simonaitytes-memorialinis-muziejus/26497"
+        "https://www.pamatyklietuvoje.lt/lankytinos-vietos/i-simonaitytes-memorialinis-muziejus/26497",
+        "lithuania-stvk-gpo.json, no. 0310505190003"
       ],
       "access": "In the garden of a house museum (Ieva Simonaitytė Memorial Museum); visible from Vingio gatvė and reachable on the museum grounds, likely during museum opening hours (opening hours and any entry fee not independently confirmed by this pass)",
       "transport": "On Vingio gatvė in the small town of Priekulė, about 15 km south of Klaipėda, on the edge of Vingio parkas",
@@ -135,7 +142,12 @@
         "qid": "Q120764172",
         "views": 11
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505190003",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505190003 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "pri_004",
@@ -151,7 +163,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Klio%C5%A1%C5%B3_parko_bukas",
-        "https://www.gargzdumuziejus.lt/naujienos/kulturinis-pazintinis-marsrutas-eves-takais/"
+        "https://www.gargzdumuziejus.lt/naujienos/kulturinis-pazintinis-marsrutas-eves-takais/",
+        "lithuania-stvk-gpo.json, no. 0310505190004"
       ],
       "access": "Free, in a former manor park now overgrown as woodland, open to walkers; a marked signpost at a nearby crossroads directs visitors, and the tree stands beside a footpath 120 m into the wood",
       "transport": "In Kliošai, on the southern edge of Priekulė (about 15 km south of Klaipėda), roughly 1.2-1.5 km / 15-20 min walk from Priekulė's Vingio parkas cluster",
@@ -173,7 +186,12 @@
         "width": 3598,
         "height": 4969
       },
-      "how_to_recognise": "You can recognise it by its great height, 37 metres, rising out of what now looks like ordinary woodland. It stands about 120 metres along the footpath from the information stand on Parko gatvė."
+      "how_to_recognise": "You can recognise it by its great height, 37 metres, rising out of what now looks like ordinary woodland. It stands about 120 metres along the footpath from the information stand on Parko gatvė.",
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505190004",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505190004 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "pri_005",

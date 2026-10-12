@@ -2,6 +2,15 @@
 
 <!-- archive-index -->
 
+## 2026-10-12 - Register matching by script: 249 tree pages richer, enrichment briefs shorter
+
+Enrichment passes cost 125k to 220k tokens each, and much of that was an agent matching our trees to register rows we already hold. That half is a script now: `scripts/register_match.py`.
+
+- **249 trees gained data with no agent**: 163 now name their official register with its number (a per-tree link where the register has one: Brussels, Singapore, Poland, Slovakia, Andalucia, Rouen), 109 gained a height. No new girths: every matched tree that the register measures already had one.
+- **In the proven cities** that closes 27 register gaps and 16 more tree pages are back in Google's index (1,106 to 1,122 finished pages, `enrich.py --status`).
+- **The rule**: a register row within 5 m of our pin whose genus does not contradict ours, or within 30 m with the genus agreeing. Two rows of one register in range is skipped, never guessed (31 trees, mostly twins and avenues). Units per register from each file's own caveat (Portugal and Valencia in metres, Portland and Wisconsin in feet and inches); never a diameter turned into a girth, never a group's figure on one trunk, never a register row marked dead, never over an existing value. Every write carries a verify_notes line naming register, number and distance.
+- **`enrich.py --brief` runs it first** for its city, tells the agent the registers are already matched, and hands over the 31 ambiguous ones as `register_candidates` to choose from instead of to search for.
+- **Found on the way, not acted on: 13 published Dutch trees stand exactly on an LRMB row the register marks status 5 (dead or felled)**: emm_004, hrl_001, hrl_003, hrl_004, roo_003, roo_005, roo_007, roo_010, sit_003, sit_004, sit_006, sit_008, zaa_009. They need a life check today (rung 3). `python3 scripts/register_match.py` lists them under REGISTER SAYS GONE.
 ## 2026-10-12 - Google Analytics on the website, behind a cookie bar
 
 Hidde chose Google Analytics over PostHog for the web ("id rather use google analytics im used to it"), property 558526877, tag G-2GNH06K02G.

@@ -42,7 +42,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Vytauto_parko_liepa",
-        "https://archive.ph/SFREz"
+        "https://archive.ph/SFREz",
+        "lithuania-stvk-gpo.json, no. 0310505050024"
       ],
       "access": "Free, in a public park (Vytautas Park, part of the Kaunas Ąžuolynas oak forest); fenced with an information board",
       "transport": "Within Kaunas Ąžuolynas park in the Žaliakalnis district, roughly 2 km / 25-30 min walk from the city centre",
@@ -72,7 +73,12 @@
         "source_name": "Vytautas park linden",
         "qid": "Q16477220",
         "views": 10
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505050024",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505050024 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_002",
@@ -90,7 +96,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Santakos_gluosnis",
-        "http://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/santakos-parke-ispudingas-olivios-gluosnis-674571"
+        "http://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/santakos-parke-ispudingas-olivios-gluosnis-674571",
+        "lithuania-stvk-gpo.json, no. 0310505210004"
       ],
       "access": "Free, in a public riverside park (Santaka Park) right next to the pedestrian/cycle path",
       "transport": "In Santaka Park at the Nemunas-Neris confluence, about 1 km / 15 min walk from Kaunas Old Town / Town Hall Square",
@@ -110,7 +117,12 @@
         "source_name": "Santakos gluosnis",
         "qid": "Q25498162",
         "views": 13
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505210004",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505210004 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_003",
@@ -128,7 +140,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Taikos_kalno_%C4%85%C5%BEuolas",
-        "http://kauno.diena.lt/dienrastis/kita/storiausias-medis-liepa-10455"
+        "http://kauno.diena.lt/dienrastis/kita/storiausias-medis-liepa-10455",
+        "lithuania-stvk-gpo.json, no. 0310505010188"
       ],
       "access": "Free, in a public regional park (Kauno marios regioninis parkas), directly beside a public cycle/footpath",
       "transport": "In Pažaislio šilas near Pažaislis Monastery, about 8-9 km east of central Kaunas; reachable by public bus toward Pažaislis then a short walk into the wood",
@@ -151,7 +164,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010188",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010188 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_004",
@@ -167,7 +185,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Lamp%C4%97d%C5%BEi%C5%B3_liepa_Gra%C5%BEuol%C4%97",
-        "https://www.turistopasaulis.lt/lampedziu-liepa-grazuole-lankytina-vieta-kaune/"
+        "https://www.turistopasaulis.lt/lampedziu-liepa-grazuole-lankytina-vieta-kaune/",
+        "lithuania-stvk-gpo.json, no. 0310505050007"
       ],
       "access": "Free, publicly visible and listed as a visitor site (lankytina vieta) at Romuvos gatvė 57",
       "transport": "In the Vilijampolė district on the north bank of the Nemunas, about 4 km / a short bus ride from central Kaunas",
@@ -188,7 +207,12 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505050007",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505050007 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_005",
@@ -206,7 +230,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Dubravos_dvyniai",
-        "https://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/dubravos-dvyniai-azuolo-ir-pusies-meiles-istorija-841611"
+        "https://kauno.diena.lt/naujienos/kaunas/miesto-pulsas/dubravos-dvyniai-azuolo-ir-pusies-meiles-istorija-841611",
+        "lithuania-stvk-gpo.json, no. 0310505170001"
       ],
       "access": "Free, in Dubrava forest with a purpose-built roughly 200m pedestrian path and footbridge leading to the trees from a forest road off route RK1937 (turn south at the Gervėnupis garden plots, then about 1.4km on the forest road). Fenced with a small wooden protective fence and an information board.",
       "transport": "In Dubrava forest, Kaunas district, about 4.5km south of Samylai and roughly 16km / 20-25 min drive south of central Kaunas; no public transport to the site itself",
@@ -227,7 +252,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505170001",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505170001 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_006",
@@ -290,7 +320,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Sitk%C5%ABn%C5%B3_mi%C5%A1ko_I_%C4%85%C5%BEuolas",
         "https://stvk.lt/map",
-        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/",
+        "lithuania-stvk-gpo.json, no. 0310506000160"
       ],
       "access": "Free, public state forest (Sitkūnai Forest, part of the Babtai-Varluva forest biosphere polygon); reached along a gravel track past an isolated forest homestead (Girininkijos g. 15), then on foot at the forest edge. No gate, fee or restriction mentioned by any source.",
       "transport": "No public transport; reached by car, about 18km by straight-line distance from central Kaunas. Stands 160m from Sitkūnai Forest Oak II (this batch's kun_008) and about 0.9km from the Kiaunupis Oak (kun_009), so all three can be walked as one small forest cluster once you have driven in.",
@@ -318,7 +349,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310506000160",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310506000160 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_008",
@@ -335,7 +371,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Sitk%C5%ABn%C5%B3_mi%C5%A1ko_II_%C4%85%C5%BEuolas",
         "https://stvk.lt/map",
-        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/",
+        "lithuania-stvk-gpo.json, no. 0310506000161"
       ],
       "access": "Free, public state forest, same biosphere polygon as Sitkūnai Forest Oak I; noticeable from a gravel track running along the forest edge. No gate, fee or restriction mentioned by any source.",
       "transport": "No public transport; reached by car, about 18km by straight-line distance from central Kaunas, 160m on foot from Sitkūnai Forest Oak I (kun_007) and part of the same small forest cluster as the Kiaunupis Oak (kun_009).",
@@ -363,7 +400,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310506000161",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310506000161 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_009",
@@ -380,7 +422,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Kiaunupio_%C4%85%C5%BEuolas",
         "https://stvk.lt/map",
-        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/"
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai/teises-aktai-del-gpo-paskelbimo-valstybes-saugomais-bei-paskelbtu-valstybes-saugomais-gpo-ribu-planai/",
+        "lithuania-stvk-gpo.json, no. 0310506000159"
       ],
       "access": "Free, public state forest (Gailiušiai Forest, Babtai-Varluva biosphere polygon); reached via a forest road off the A8, then about 180m on foot along a ditch. No gate, fee or restriction mentioned by any source.",
       "transport": "No public transport; reached by car, about 18km by straight-line distance from central Kaunas, and about 0.9km from the Sitkūnai Forest Oak cluster (kun_007, kun_008) in the same day out.",
@@ -408,7 +451,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310506000159",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310506000159 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "kun_010",

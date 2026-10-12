@@ -218,7 +218,8 @@
       "story": "For seventeen years, up to a thousand students a season walked this path and had to name what they saw. Between 1953 and 1967, adult evening students training as horticulturists and florists were examined here, quizzed on the Latin and Dutch names of trees along a route locals nicknamed the zweetlaantje, the sweat lane, for how it felt to be tested on your feet in front of an instructor. This Caucasian wingnut, one of the trees they were made to know, still rings the site of the municipal nursery that trained them.\n\nThe register misnames it in its own Dutch, calling it a 'Japanese wingnut' though the species it maps is Pterocarya fraxinifolia, the Caucasian kind. That is a small irony for a tree planted to teach people exactly this. Planted in the 1950s, it is young by this project's ordinary standard, in its seventies rather than its centuries, and its case for a page rests on its history rather than its age: a rare-species teaching collection is not something Tilburg has anywhere else.\n\nIn 1967 the school moved elsewhere and the sweat lane went quiet. The trees it left behind, planted street trees in an ordinary residential corner of Zuiderpark, are free to see any time, no lane, no exam, no waiting for your turn.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool",
+        "netherlands-lrmb.json, no. 1697210"
       ],
       "access": "Free. Public street planting (plantsoen), open at any time.",
       "transport": "About 2 km south of Tilburg station.",
@@ -230,7 +231,7 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "verify_notes": "Register (LRMB nr 1697210) is the only source naming this specific tree; existence/species/age are single-sourced, hence flagged. Register's own name is 'Japanse vleugelnoot' but the mapped species field is Caucasian Wingnut, Pterocarya fraxinifolia. Planted band 1950-1960. Part of a documented rare-tree teaching collection (former gemeentekwekerij on the Tatraweg); wikimiddenbrabant.nl independently corroborates the shared school history (1967 relocation, 1974 merger) though not this individual tree.",
+      "verify_notes": "Register (LRMB nr 1697210) is the only source naming this specific tree; existence/species/age are single-sourced, hence flagged. Register's own name is 'Japanse vleugelnoot' but the mapped species field is Caucasian Wingnut, Pterocarya fraxinifolia. Planted band 1950-1960. Part of a documented rare-tree teaching collection (former gemeentekwekerij on the Tatraweg); wikimiddenbrabant.nl independently corroborates the shared school history (1967 relocation, 1974 merger) though not this individual tree. Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697210 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "how_to_recognise": "You can recognise it as the Caucasian wingnut once used to test trainee horticulturists along the old 'sweat lane' route. It stands at Morvanstraat 14, in the street planting strip.",
       "best_time": {
         "months": [
@@ -240,6 +241,10 @@
         ],
         "label": "July to September: long green catkins of winged nutlets hang from every branch",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697210",
+        "url": null
       }
     },
     {
@@ -258,7 +263,8 @@
       "story": "Its Dutch name gives away the trick before you have seen it: geelhout, yellow wood, because the wood beneath the bark of a cut branch runs bright yellow. This American yellowwood is another of the specimens planted around Tilburg's old municipal nursery in the 1950s, where evening students of horticulture and floristry were drilled on tree names along what they called the zweetlaantje, the sweat lane.\n\nCladrastis kentukea is native to the American south and rare in Dutch planting, which is presumably the whole reason the nursery grew it: something a florist would otherwise never meet. Multi-stemmed and now in its seventies, it flowers in May and June with hanging white clusters, then turns gold in autumn, living up to the name a second time.\n\nLike the rest of the Zuiderpark collection, its record is thin: a single register entry with no independent account of the tree itself, only of the school that once stood around it. The teaching moved elsewhere in 1967 and the students stopped coming, but a scatter of trees they were quizzed on is still rooted in this ordinary residential corner, free to walk past on an afternoon nobody has to pass an exam for.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool",
+        "netherlands-lrmb.json, no. 1697211"
       ],
       "access": "Free. Public street planting (plantsoen), open at any time.",
       "transport": "About 2 km south of Tilburg station.",
@@ -270,7 +276,7 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "verify_notes": "Register (LRMB nr 1697211, register_name 'Geelhout Zuiderpark') is the only source naming this tree, hence flagged. 'Geelhout' is the standard Dutch common name for Cladrastis kentukea, cross-checked against Dutch nursery/dendrology references for the species mapping only. Planted band 1950-1960, multi-stemmed. Same rare-tree teaching-collection history as til_008.",
+      "verify_notes": "Register (LRMB nr 1697211, register_name 'Geelhout Zuiderpark') is the only source naming this tree, hence flagged. 'Geelhout' is the standard Dutch common name for Cladrastis kentukea, cross-checked against Dutch nursery/dendrology references for the species mapping only. Planted band 1950-1960, multi-stemmed. Same rare-tree teaching-collection history as til_008. Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697211 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "best_time": {
         "months": [
           5,
@@ -281,7 +287,11 @@
       },
       "how_to_recognise": "You can recognise it by the multi-stemmed trunk and, in May and June, hanging white flower clusters that turn gold in autumn. It stands in the plantsoen at Harzstraat 2.",
       "girth_cm": 130,
-      "height_m": 15
+      "height_m": 15,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697211",
+        "url": null
+      }
     },
     {
       "id": "til_010",
@@ -299,7 +309,8 @@
       "story": "A pecan tree in Tilburg is already the story. Carya illinoinensis belongs to the warm river valleys of the American south and Mexico, and one has been growing on this ordinary Zuiderpark street corner since the 1950s, part of the same rare-tree collection planted around the city's old municipal nursery to give trainee horticulturists something unfamiliar to learn.\n\nWhether it has ever produced a usable nut this far from home is not recorded, and the register that is the only source for this tree says nothing about it beyond species, age band and location. What the register does confirm is that the nursery deliberately sought out trees like this: species nobody training as a Dutch florist or gardener would otherwise encounter, planted along a path its evening students nicknamed the zweetlaantje, the sweat lane, for the oral exams held on it between 1953 and 1967.\n\nThe teaching stopped when the school moved to a different site in 1967, and the trees it left scattered through this corner of the neighbourhood are the only evidence it ever existed. This one shares its street corner with a Caucasian wingnut a few paces away, part of the same quiet collection, free to see, no ticket, no exam.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool",
+        "netherlands-lrmb.json, no. 1697207"
       ],
       "access": "Free. Public street planting (plantsoen), open at any time.",
       "transport": "About 2 km south of Tilburg station.",
@@ -311,10 +322,14 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "verify_notes": "Register (LRMB nr 1697207, register_name 'Pecannoot Zuiderpark') is the only source naming this tree, hence flagged. Planted band 1950-1960. Same rare-tree teaching-collection history as til_008; same address as til_008, a few metres apart.",
+      "verify_notes": "Register (LRMB nr 1697207, register_name 'Pecannoot Zuiderpark') is the only source naming this tree, hence flagged. Planted band 1950-1960. Same rare-tree teaching-collection history as til_008; same address as til_008, a few metres apart. Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697207 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "how_to_recognise": "You can recognise it as the pecan in the same rare-tree collection as the Caucasian wingnut nearby. It stands at Morvanstraat 14, in the street planting strip.",
       "girth_cm": 190,
-      "height_m": 26
+      "height_m": 26,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697207",
+        "url": null
+      }
     },
     {
       "id": "til_011",
@@ -332,7 +347,8 @@
       "story": "Most Transcaucasian birches grown in cultivation are shrubs, wide and many-stemmed rather than trees with a single climbing trunk. This one, planted in the 1950s on an ordinary Zuiderpark street corner, is recorded by the national tree register in its natural form, which if the record is accurate makes it a rarity twice over: an uncommon species grown in an uncommon shape.\n\nBetula medwediewii comes from the mountain forests of the Caucasus, and like its neighbours on this street it was planted to be studied rather than admired: part of a rare-species collection that once ringed Tilburg's municipal plant nursery, where evening students training as horticulturists and florists were examined on tree names along a route they called the zweetlaantje, the sweat lane, between 1953 and 1967.\n\nThe register is this tree's only source, so its shape and exact age carry the honest caveat of a single account. What is certain is that it is roughly seventy years old, standing where a school once trained hundreds of students a year in exactly the skill of telling one tree from another, a skill now free for anyone to skip: just walk past and look.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool",
+        "netherlands-lrmb.json, no. 1697206"
       ],
       "access": "Free. Public street planting (plantsoen), open at any time.",
       "transport": "About 2 km south of Tilburg station.",
@@ -344,10 +360,14 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "verify_notes": "Register (LRMB nr 1697206, register_name 'Transkaukasische berk Zuiderpark') is the only source naming this tree, hence flagged. Dutch nursery sources independently confirm 'Transkaukasische berk' maps to Betula medwediewii, usually a multi-stemmed shrub in cultivation; register's own 'form' field says natural form here. Planted band 1950-1960. Same rare-tree teaching-collection history as til_008.",
+      "verify_notes": "Register (LRMB nr 1697206, register_name 'Transkaukasische berk Zuiderpark') is the only source naming this tree, hence flagged. Dutch nursery sources independently confirm 'Transkaukasische berk' maps to Betula medwediewii, usually a multi-stemmed shrub in cultivation; register's own 'form' field says natural form here. Planted band 1950-1960. Same rare-tree teaching-collection history as til_008. Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697206 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "how_to_recognise": "You can recognise it by its single climbing trunk, unusual for a species normally grown as a wide, many-stemmed shrub. It stands in the plantsoen at Harzstraat 26.",
       "girth_cm": 140,
-      "height_m": 11
+      "height_m": 11,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697206",
+        "url": null
+      }
     },
     {
       "id": "til_012",
@@ -365,7 +385,8 @@
       "story": "This beech spends its whole year doing what most trees save for October. Fagus sylvatica 'Zlatia' is a golden-leaved cultivar bred to hold colour rather than wait for autumn to produce it: its leaves emerge bright yellow in spring, settle to a softer yellow-green through summer, then brighten to yellow again as the season turns, so the crown never really goes green at all.\n\nIt stands on a Zuiderpark street corner, planted in the 1950s as part of a rare-tree teaching collection that once surrounded Tilburg's municipal plant nursery, where evening students of horticulture and floristry were quizzed on tree names along a path nicknamed the zweetlaantje, the sweat lane, until the school relocated in 1967.\n\nRoughly seventy years old now, its only record is the national tree register, so treat the details as flagged rather than double checked. What a visitor gets regardless is the rarest thing this small collection has to offer: a tree that looks like it is always about to turn, in a residential corner of the city built to teach exactly that kind of looking.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool"
+        "https://wikimiddenbrabant.nl/Lagere_Land-_en_Tuinbouwschool",
+        "netherlands-lrmb.json, no. 1697209"
       ],
       "access": "Free. Public street planting (plantsoen), open at any time.",
       "transport": "About 2 km south of Tilburg station.",
@@ -377,7 +398,7 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "verify_notes": "Register (LRMB nr 1697209, register_name 'Goudbeuk Zuiderpark') is the only source naming this tree, hence flagged. 'Goudbeuk' confirmed by Dutch nursery references as the standard name for Fagus sylvatica 'Zlatia'. Planted band 1950-1960. Same rare-tree teaching-collection history as til_008.",
+      "verify_notes": "Register (LRMB nr 1697209, register_name 'Goudbeuk Zuiderpark') is the only source naming this tree, hence flagged. 'Goudbeuk' confirmed by Dutch nursery references as the standard name for Fagus sylvatica 'Zlatia'. Planted band 1950-1960. Same rare-tree teaching-collection history as til_008. Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697209 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "best_time": {
         "months": [
           4,
@@ -388,7 +409,11 @@
       },
       "how_to_recognise": "You can recognise it by leaves that stay yellow all season instead of turning green, brightest in spring and again in autumn. It stands in the plantsoen at Morvanstraat 22.",
       "girth_cm": 265,
-      "height_m": 18
+      "height_m": 18,
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697209",
+        "url": null
+      }
     },
     {
       "id": "til_013",

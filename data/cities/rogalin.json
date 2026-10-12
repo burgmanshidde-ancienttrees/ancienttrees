@@ -45,7 +45,8 @@
       "story": "Of the three oaks named for the brothers of the Slavic founding legend, Lech is the one nobody has dated.\n\nIt stands in open parkland beside Rogalin Palace, a branch of the National Museum in Poznan, with a trunk of 6.33 metres round. The museum's own encyclopedia and the Poznan tourist board both give that figure. Rus, ninety metres away, has been cored and dated by the Institute of Dendrology at Kornik. Lech has not, and no source we found puts a century on it, so several hundred years is as far as the evidence honestly goes. If anyone holds a ring count for this particular oak, tell us and we will put it on the page.\n\nThe third brother, Czech, was the thickest of them at 7.35 metres. It died in 1992 and the trunk still stands near the other two, so the short walk between the oaks takes in two giants and the remains of a third.\n\nLech, Czech and Rus are the brothers who in the legend founded Poland, Bohemia and the Rus. That is a heavy set of names to hang on three trees in a river meadow, and these ones have carried it long enough that the whole park is known by them.\n\nThe parkland is free and walkable. It lies about twenty kilometres south of Poznan with no stop of its own; the cycle path along the Warta is the good way in.",
       "verified_sources": [
         "https://mnp.art.pl/rogalin-archiwum/strona/encyklopedia-rogalinskie-deby.html",
-        "https://visitpoznan.pl/en/oak-trees-in-rogalin-lech-czech-and-rus"
+        "https://visitpoznan.pl/en/oak-trees-in-rogalin-lech-czech-and-rus",
+        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3021103.2374"
       ],
       "access": "Free; stands in the open parkland by Rogalin Palace (a National Museum in Poznan branch), publicly walkable grounds",
       "transport": "No public-transport stop in Rogalin itself; roughly 20km / 30-40 minutes by car south of Poznan, reachable by seasonal tourist bus or bike path along the Warta",
@@ -65,7 +66,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody, no. PL.ZIPOP.1393.PP.3021103.2374",
+        "url": null
+      },
+      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3021103.2374 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 15 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "rog_002",
@@ -85,7 +91,8 @@
       "verified_sources": [
         "https://www.gazeta-mosina.pl/2019/dab-rus-w-rogalinie-ma-ponad-800-lat/",
         "https://visitpoznan.pl/en/oak-trees-in-rogalin-lech-czech-and-rus",
-        "https://mnp.art.pl/rogalin-archiwum/strona/encyklopedia-rogalinskie-deby.html"
+        "https://mnp.art.pl/rogalin-archiwum/strona/encyklopedia-rogalinskie-deby.html",
+        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3021103.2374"
       ],
       "access": "Free; stands in the open parkland by Rogalin Palace (a National Museum in Poznan branch), publicly walkable grounds",
       "transport": "No public-transport stop in Rogalin itself; roughly 20km / 30-40 minutes by car south of Poznan, reachable by seasonal tourist bus or bike path along the Warta",
@@ -105,7 +112,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody, no. PL.ZIPOP.1393.PP.3021103.2374",
+        "url": null
+      },
+      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3021103.2374 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 16 m (register_match.py, 2026-10-12)."
     }
   ]
 }

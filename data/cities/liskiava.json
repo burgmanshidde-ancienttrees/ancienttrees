@@ -42,7 +42,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Li%C5%A1kiavos_liepa",
-        "https://www.bernardinai.lt/liepa-bitininku-ir-dievdirbiu-medis/"
+        "https://www.bernardinai.lt/liepa-bitininku-ir-dievdirbiu-medis/",
+        "lithuania-stvk-gpo.json, no. 0310505050053"
       ],
       "access": "Free, beside a public road and viewing platform within Dzūkija National Park; marked with an information sign",
       "transport": "In the village of Liškiava on the Nemunas, Varėna district; walkable from the well-known Liškiava Holy Trinity Church and former monastery, which stand on the same hillfort",
@@ -70,7 +71,12 @@
         "source_name": "Liškiavos liepa",
         "qid": "Q131551108",
         "views": 9
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505050053",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505050053 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     }
   ]
 }

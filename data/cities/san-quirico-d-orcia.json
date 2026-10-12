@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://it.wikipedia.org/wiki/Cipressi_di_San_Quirico_d'Orcia",
         "https://www.lorenzotaccioli.it/bosco-cipressi-di-san-quirico-dorcia/",
-        "https://collisiena.it/borghi/san-quirico-d-orcia/cipressi-di-san-quirico-d-orcia/"
+        "https://collisiena.it/borghi/san-quirico-d-orcia/cipressi-di-san-quirico-d-orcia/",
+        "italy-masaf.json, no. 01/I135/SI/09"
       ],
       "access": "Free, no ticket. Viewable and photographable from a roadside pullout/small parking area directly on the Via Cassia (SS2) at km 189, or reachable on foot in about 5 minutes up the adjoining dirt track to the smaller circular grove ('i Cipressini'). No gate or private-land restriction reported at the site itself despite standing on farmland (Podere Casaltina); it is one of Tuscany's most visited and photographed roadside spots, open year-round.",
       "transport": "No public transport; the site sits on the SS2/Via Cassia about 6 km northeast of San Quirico d'Orcia's town centre, a short drive or roadside stop",
@@ -58,7 +59,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the tight copse of cypresses framed against the Val d'Orcia hills exactly where the SS2 curves past it, at kilometre 189. It stands beside a roadside pullout at Podere Casaltina."
+      "how_to_recognise": "You can recognise it by the tight copse of cypresses framed against the Val d'Orcia hills exactly where the SS2 curves past it, at kilometre 189. It stands beside a roadside pullout at Podere Casaltina.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/I135/SI/09",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 01/I135/SI/09 (data/registers/italy-masaf.json), matched on our pin at 6 m (register_match.py, 2026-10-12)."
     }
   ]
 }

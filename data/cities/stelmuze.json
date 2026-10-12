@@ -43,7 +43,8 @@
       "story": "Restorers working on the trunk found a rifle and a human skeleton inside it, thought to belong to a French soldier left behind by Napoleon's retreat from Russia in 1812. The Stelmužė Oak is hollow enough to hide a man, and has been for a long time: the whole interior has rotted away, which is exactly why nobody can count its rings and nobody ever will.\n\nThe standing estimate is at least 1,500 years and possibly 2,000, making it the oldest oak in Lithuania and one of the oldest in Europe. Measured at its widest the trunk is 13 metres round; measured at chest height, the way foresters normally work, it is 9.58 metres. Both numbers are correct and they describe the same tree. It stands about 23 metres tall.\n\nThis is not a healthy oak and has not been for centuries. Fungi and moss have taken the outer wood, the crown is gone, and only side branches still carry leaves. A Czech arborist, Martin Němec, has monitored and maintained it since 2005 under a long-term plan; new supports went in during March 2021, and a branch came down at the end of that same month regardless.\n\nLithuania puts the tree on coins and stamps, and an oak raised from its acorns grows in the National Revival grove beside the birthplace of Jonas Basanavičius. It stands in the old manor park next to a 17th-century wooden church, the oldest in the country.",
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Stelmu%C5%BE%C4%97_Oak",
-        "https://www.treeoftheyear.org/news/the-stelmuze-oak-a-living-elder-at-the-edge-of-time"
+        "https://www.treeoftheyear.org/news/the-stelmuze-oak-a-living-elder-at-the-edge-of-time",
+        "lithuania-stvk-gpo.json, no. 0310505010107"
       ],
       "access": "A protected national natural monument standing in a public village setting beside a historic church (Lithuania's oldest surviving wooden church, built in the 17th century); no source found in this pass mentions an entry fee or restricted hours, consistent with it being an open-air village landmark rather than a ticketed site. Not independently confirmed with opening hours from an official tourism page this pass (visitzarasai.lt's specific page returned a 404 and lithuania.travel's page did not yield fetchable content in the time available); flagging this as a gap for a future pass or the writer to double check rather than asserting hours we do not have.",
       "transport": "No train station; Stelmužė is a small village in Zarasai district, north-eastern Lithuania, reached by car. Zarasai town is the nearest larger centre.",
@@ -75,7 +76,12 @@
         "qid": "Q2972120",
         "views": 477
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010107",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010107 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     }
   ]
 }

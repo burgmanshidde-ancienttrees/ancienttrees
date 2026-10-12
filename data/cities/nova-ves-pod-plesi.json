@@ -47,7 +47,8 @@
         "https://portal.nature.cz/w/uzemi-7463",
         "https://cs.wikipedia.org/w/index.php?title=Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_okrese_P%C5%99%C3%ADbram&action=raw",
         "https://nasedobrissko.cz/nova-ves-pod-plesi-obec-kde-se-trpytilo-zlato/",
-        "https://www.mistopisy.cz/pruvodce/obec/3281/nova-ves-pod-plesi/pamatky-turistika/"
+        "https://www.mistopisy.cz/pruvodce/obec/3281/nova-ves-pod-plesi/pamatky-turistika/",
+        "czech-aopk-pamatne-stromy.json, no. 103427"
       ],
       "access": "Free, on open ground by a pond at the edge of the village; no gate or ticket found in any source",
       "transport": "Nová Ves pod Pleší village, Příbram District; about 9km from Dobříš, roughly 40km southwest of Prague; no direct public transport to the pond itself",
@@ -67,7 +68,12 @@
         ],
         "kind": "autumn colour",
         "label": "October, when the beech turns copper and russet"
-      }
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 103427",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103427 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

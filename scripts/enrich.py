@@ -210,6 +210,13 @@ def brief(slug):
     d, trees = city_trees(slug)
     if d is None:
         sys.exit(f"no such city: {slug}")
+    # The mechanical half first (2026-10-12): every register row we already
+    # hold is matched by script and written, so the brief below carries only
+    # what needs an agent. Ambiguous matches travel as candidates to choose from.
+    import register_match
+    rm = register_match.run(city=slug, write=True, quiet=True)
+    if rm["enriched"]:
+        d, trees = city_trees(slug)
     led = ledger()
     items = []
     # Indexed trees first (their page is already in Google and gets better),
@@ -227,12 +234,17 @@ def brief(slug):
                       "access": t.get("access"), "gaps": g,
                       "sources": t.get("verified_sources") or [],
                       "season_file": f"data/phenology/{species_slug(t)}.json" if "season" in g else None})
+        if t["id"] in rm["skips_by_id"] and ({"register", "measurement"} & set(g)):
+            items[-1]["register_candidates"] = rm["skips_by_id"][t["id"]]
         if len(items) >= BRIEF_MAX:
             break
     os.makedirs(OUT, exist_ok=True)
     with open(os.path.join(OUT, f"{slug}.brief.json"), "w", encoding="utf-8") as fh:
         json.dump({"city": slug, "date": datetime.date.today().isoformat(),
                    "trees": {i["id"]: i["gaps"] for i in items}}, fh, indent=1)
+    if rm["enriched"]:
+        print(f"register_match.py filled {rm['enriched']} tree(s) of {slug} from data/registers/ before this brief "
+              f"(register {rm['register']}, girth {rm['girth_cm']}, height {rm['height_m']}); commit them with the pass.")
     print(f"""ENRICHMENT PASS: {d['city']} ({len(items)} trees with open gaps; indexed ones first). Use the verify agent.
 
 Fill what each tree page lacks, from sources you actually open. Never invent: a gap
@@ -253,6 +265,11 @@ Per gap:
   record, Wikidata, OpenStreetMap or an aerial check per BRIEF_RESEARCH.md, with its
   source, within {PIN_MOVE_MAX_M} m of our pin. A coordinate you reasoned your way to is not
   evidence. Leave it open otherwise.
+- register / measurement: every register file in data/registers/ has ALREADY been
+  matched against these pins by script (scripts/register_match.py); do not open
+  those files again. Where it found two rows and could not choose, the tree carries
+  register_candidates: decide which row is this trunk from what you can see, and
+  return its register_name and register_id. Otherwise search only the web.
 - register: find the AUTHORITY'S OWN RECORD for this tree (a government or national
   register page about this one tree: Naturdenkmal entry, monumental-tree sheet,
   heritage-tree page). Return register_url (that page) and register_name (the

@@ -39,7 +39,8 @@
       },
       "verified_sources": [
         "https://www.wikidata.org/wiki/Q26788737",
-        "https://commons.wikimedia.org/wiki/Category:Buk_v_Podles%C3%AD"
+        "https://commons.wikimedia.org/wiki/Category:Buk_v_Podles%C3%AD",
+        "czech-aopk-pamatne-stromy.json, no. 103743"
       ],
       "access": "Free, standing in a forest near the village of Mcely",
       "transport": "Village of Mcely, Nymburk District; rural, reached on foot/by road",
@@ -68,7 +69,11 @@
         "kind": "autumn colour"
       },
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 415 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 415 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright. Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103743 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 103743",
+        "url": null
+      }
     }
   ]
 }

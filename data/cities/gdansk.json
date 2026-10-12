@@ -173,7 +173,8 @@
       "story": "An opera singer's wife gave her name to this park, and this beech has outgrown every owner who has held it since. Ludolfino takes its name from Dorothea Ludolphine Bachmann-Ackermann, wife of the singer who first carved this estate out of the neighbouring Stawowie grounds in the late 18th century; the property shows up on city maps as early as 1822. It changed hands repeatedly after that, the Braune family from 1877, a private owner named Robert von Kolkow from 1922, an Evangelical religious order that ran it as a deaconess house from 1933, and the Polish state from 1957, before landing with Gdansk's physical education academy, AWFiS, which now uses the old manor as its main library. This common beech has been protected as a natural monument since 1988, its trunk 470 centimetres around and its crown 24 metres tall, growing on ground that has technically never once belonged to the tree itself. Students studying inside the converted manor now walk past it without necessarily knowing they are passing something that predates every institution that has ever owned the land beneath it.",
       "verified_sources": [
         "https://pl.wikipedia.org/wiki/Pomniki_przyrody_w_Gda%C5%84sku",
-        "https://pl.wikipedia.org/wiki/Ludolfino"
+        "https://pl.wikipedia.org/wiki/Ludolfino",
+        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.2261011.6434"
       ],
       "access": "Free, park grounds on a public university campus, open daily",
       "transport": "Oliwa district, near the AWFiS campus; about a 15 minute walk from Gdansk Oliwa railway station",
@@ -193,7 +194,12 @@
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it as the beech that has outgrown every owner of the park around it since the 1820s. It stands in Ludolfino park, Oliwa, on the university campus at Czyzewskiego 26."
+      "how_to_recognise": "You can recognise it as the beech that has outgrown every owner of the park around it since the 1820s. It stands in Ludolfino park, Oliwa, on the university campus at Czyzewskiego 26.",
+      "official_register": {
+        "name": "Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody, no. PL.ZIPOP.1393.PP.2261011.6434",
+        "url": null
+      },
+      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.2261011.6434 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "gda_005",

@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://fr.wikipedia.org/wiki/Ch%C3%AAne_de_Hersberg",
         "https://inpa.public.lu/fr/patrimoine/religieux/ermitage_sources_arbres/hersberg.html",
-        "https://lestetardsarboricoles.fr/wordpress/2024/09/13/le-chene-de-hersberg-grand-duche-de-luxembourg/"
+        "https://lestetardsarboricoles.fr/wordpress/2024/09/13/le-chene-de-hersberg-grand-duche-de-luxembourg/",
+        "luxembourg-anf.json, no. 4"
       ],
       "access": "Free. Stands beside a public road connecting Altrier and Hersberg, at the start of a signposted hiking trail toward the Mullerthal; a genuine pilgrimage site, visited year-round and the destination of a torchlit procession every 15 August.",
       "transport": "Rural, between the villages of Altrier and Hersberg (commune of Bech), roughly 24 km northeast of Luxembourg City; reached by road, not by public transport.",
@@ -68,7 +69,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Arbres remarquables (Administration de la nature et des forêts), no. 4",
+        "url": null
+      },
+      "verify_notes": "Register number from Arbres remarquables (Administration de la nature et des forêts) no. 4 (data/registers/luxembourg-anf.json), matched on our pin at 8 m (register_match.py, 2026-10-12)."
     }
   ]
 }

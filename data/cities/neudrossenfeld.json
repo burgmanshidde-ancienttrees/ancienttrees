@@ -46,7 +46,8 @@
       "story": "European regional development money helped put a dance floor back into a 380-year-old lime. The site behind the old brewery inn at Neudrossenfeld had been left to itself for years until Bavarian and EU funds paid for a restoration in 2010: the grounds became a working brewery restaurant with a beer garden and a small museum about linden trees, and the wooden dance structure was rebuilt on its Baroque stone pillars. The tree had to be brought back into service too. Young replacement limbs were trained out sideways and fitted with a beam cross to carry the floor, and dancing at the Kirchweih resumed once they would take the weight. That makes this one of three Tanzlinden in this part of Franconia where people still dance up in the crown rather than merely point at where their grandparents did, alongside Peesten and Langenstadt. The trunk measured 6.1 metres round in 2011 and the tree stands about 15 metres tall; at the last survey in 2022 it was vital and pushing strong new shoots, which for a trained lime is the whole point, since the branches you dance on have to keep being replaced. It is free to walk in, and the brewery restaurant is standing right beside it.",
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/282-alte_tanzlinde_von_neudrossenfeld/",
-        "https://www.ostdeutsches-baumarchiv.de/timeline-1/2026/01/12/nr-78-linde-neudrossenfeld"
+        "https://www.ostdeutsches-baumarchiv.de/timeline-1/2026/01/12/nr-78-linde-neudrossenfeld",
+        "bayern-naturdenkmale.json, no. ND-03845"
       ],
       "access": "Free, public. Stands on the grounds of a brewery restaurant/beer garden that also houses a small Lindenbaum (linden tree) museum.",
       "transport": "Neudrossenfeld, Kulmbach district, Bavaria; a car is the practical way in.",
@@ -65,7 +66,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the wooden dance floor built into its crown, its limbs trained sideways to carry it. It stands behind the old brewery restaurant, in the beer garden with the linden museum."
+      "how_to_recognise": "You can recognise it by the wooden dance floor built into its crown, its limbs trained sideways to carry it. It stands behind the old brewery restaurant, in the beer garden with the linden museum.",
+      "official_register": {
+        "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-03845",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-03845 (data/registers/bayern-naturdenkmale.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     }
   ]
 }

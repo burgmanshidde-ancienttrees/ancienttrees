@@ -44,7 +44,8 @@
       "story": "Two hundred metres from this lime tree is the bridge where the Cold War traded people. Glienicker Brücke carried the spy exchanges between the Americans and the Soviets, and the border ran down the middle of the water beneath it. The tree stands on the eastern bank, which is to say in Berlin, though it is a twelve-minute tram ride from Potsdam's main station and a long way from anything a Berliner thinks of as the city. It is a small-leaved lime, a Winter-Linde, protected by the Land of Berlin as a natural monument under the number 6-99/B, standing in the open parkland of Park Jagdschloss Glienicke around the old hunting lodge. What that protection does not come with is information. The register gives a species, a parcel number and a place, and records no age, no girth and no note on the tree's condition, because it is a legal instrument rather than a survey. So this entry is thinner than most here, and it says so. One official source names the tree and nothing else we could find does. What that source does establish is the thing worth walking for: somebody looked at this particular lime, among all the trees in a large park, and decided it was not to be cut down.",
       "how_to_recognise": "In the open parkland around the hunting lodge, not in the walled garden behind the building. The second protected lime is 200 metres east, on Königstraße opposite the Wiesenteich pond.",
       "verified_sources": [
-        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf"
+        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+        "berlin-naturdenkmale.json, no. 6-99/B"
       ],
       "access": "Free, open to the public year-round. Stands in Park Jagdschloss Glienicke, the open parkland around the hunting lodge, not the fenced institute garden behind the building itself",
       "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then a short walk into the park",
@@ -64,7 +65,12 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin), no. 6-99/B",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Land Berlin) no. 6-99/B (data/registers/berlin-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "pot_002",
@@ -91,7 +97,8 @@
       "how_to_recognise": "The big solitary lime on the Königstraße side of the Schlossgarten, opposite the Wiesenteich, with the mosaic floor near the Lions Fountain. The other protected lime is 200 metres west, by the hunting lodge.",
       "verified_sources": [
         "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
-        "https://en.wikipedia.org/wiki/Park_Glienicke"
+        "https://en.wikipedia.org/wiki/Park_Glienicke",
+        "berlin-naturdenkmale.json, no. 6-100/B"
       ],
       "access": "Free, open to the public year-round, no gate, no hours and no admission. Part of the UNESCO World Heritage site of the palaces and parks of Potsdam and Berlin",
       "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then a short walk into the Schlossgarten",
@@ -103,7 +110,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "notes": "Land Berlin Naturdenkmal register id 6-100/B, named Konigslinde in the register itself, Flur 110037-14-85. Second source is English Wikipedia's Park Glienicke article (the solitary-tree description and the tea-party mosaic). Flagged because neither source is a recent dated photograph or observation; the register was pulled from a live Land Berlin geodata service on 2026-08-07. No age or girth in either source."
+      "notes": "Land Berlin Naturdenkmal register id 6-100/B, named Konigslinde in the register itself, Flur 110037-14-85. Second source is English Wikipedia's Park Glienicke article (the solitary-tree description and the tea-party mosaic). Flagged because neither source is a recent dated photograph or observation; the register was pulled from a live Land Berlin geodata service on 2026-08-07. No age or girth in either source.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin), no. 6-100/B",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Land Berlin) no. 6-100/B (data/registers/berlin-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "pot_003",
@@ -120,7 +132,8 @@
       },
       "story": "Berlin protects this oak by law and almost nothing else about it is on record. It appears in the Land of Berlin's register of natural monuments as 6-105/B, a Stiel-Eiche, a Pedunculate Oak, standing about 150 metres north of Königstraße 35C in Schlosspark Glienicke. That entry gives a species, a parcel and a position, and there it ends: no age, no girth, no word on the tree's condition, because the register exists to say what may not be felled rather than to describe what is there. So this is a tree you go and read for yourself. It grows in the landscape garden Peter Joseph Lenné began laying out in 1816 for Prince Carl of Prussia, a park of engineered views designed to look accidental, now inside the UNESCO World Heritage site that covers the palaces and parks of Potsdam and Berlin. Oaks are the long-lived furniture of gardens like this one, and often older than the design around them. The one fact the register does carry says something a tape measure would not: out of the thousands of trees standing in this parkland, somebody walked up to this one and wrote it down. It is a few minutes further into the park than the two protected limes. If you get a tape round it, we would like the number.",
       "verified_sources": [
-        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf"
+        "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
+        "berlin-naturdenkmale.json, no. 6-105/B"
       ],
       "access": "Free, open to the public year-round, the same parkland as the two limes, part of the UNESCO World Heritage site of the palaces and parks of Potsdam and Berlin",
       "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then a walk of a few minutes further into the park than the lime trees",
@@ -141,7 +154,12 @@
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it as the register's protected oak about 150 metres north of Konigstrasse 35C, a short walk past the two protected limes. It stands in Schlosspark Glienicke, on the Potsdam border."
+      "how_to_recognise": "You can recognise it as the register's protected oak about 150 metres north of Konigstrasse 35C, a short walk past the two protected limes. It stands in Schlosspark Glienicke, on the Potsdam border.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin), no. 6-105/B",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Land Berlin) no. 6-105/B (data/registers/berlin-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "pot_004",
@@ -167,7 +185,8 @@
       },
       "verified_sources": [
         "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
-        "https://www.ostdeutsches-baumarchiv.de/photosearch/eiche-jaegerhof-glienicke-berlin"
+        "https://www.ostdeutsches-baumarchiv.de/photosearch/eiche-jaegerhof-glienicke-berlin",
+        "berlin-naturdenkmale.json, no. 6-73/B"
       ],
       "access": "Free, open to the public. Volkspark Klein-Glienicke was opened to the public in the 1930s when Berlin acquired the estate; the Jägerhof and the ground around it are publicly accessible, high above the Havel-side path near the Krughorn",
       "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then roughly a 15-20 minute walk south along the park path to the Jägerhof",
@@ -180,7 +199,12 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "notes": "Land Berlin Naturdenkmal register id 6-73/B (Quercus robur, Stiel-Eiche). Second, independent source: Ostdeutsches Baumarchiv, a German veteran-tree archive unaffiliated with the Berlin government, giving 566cm girth measured 2023 at 1.3m and a photo dated 2011. The age follows that archive's own reasoning (Jagerhof built before 1830, oak likely already over 100 years old then), so 250-350 is a source-grounded range rather than an invented figure. The strongest-evidenced of the four.",
-      "how_to_recognise": "You can recognise it as the heaviest tree on this walk, 5.66 metres round. It stands high above the Havel path near the Krughorn headland in Volkspark Klein-Glienicke."
+      "how_to_recognise": "You can recognise it as the heaviest tree on this walk, 5.66 metres round. It stands high above the Havel path near the Krughorn headland in Volkspark Klein-Glienicke.",
+      "official_register": {
+        "name": "Naturdenkmal (Land Berlin), no. 6-73/B",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Land Berlin) no. 6-73/B (data/registers/berlin-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "pot_005",

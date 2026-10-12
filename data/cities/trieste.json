@@ -249,7 +249,8 @@
         "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260",
         "http://decreti.regione.fvg.it/Storage/2025_71/ALLEGATO1%20AL%20DPREG%20071-2025.PDF",
         "https://verdepubblico.comune.trieste.it/giardini-storici/giardino-pubblico-muzio-de-tommasini/",
-        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447"
+        "https://www.comune.trieste.it/it/vivere-il-comune-227106/luoghi-227107/giardino-pubblico-muzio-de-tommasini-219447",
+        "italy-masaf.json, no. 36/L424/TS/06"
       ],
       "access": "Free, public park open daily",
       "transport": "About 15 min walk east from Piazza Unita, or any bus along Via Giulia",
@@ -270,9 +271,13 @@
         "kind": "flowers"
       },
       "height_m": 23.0,
-      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away).",
+      "verify_notes": "Height 23.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 36/L424/TS/06 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
       "girth_cm": 335,
-      "how_to_recognise": "You can recognise it by standing thirty metres from an identical twin, both measured at exactly the same girth and height. It stands in the Giardino Pubblico, covered in white candle-shaped flowers each May."
+      "how_to_recognise": "You can recognise it by standing thirty metres from an identical twin, both measured at exactly the same girth and height. It stands in the Giardino Pubblico, covered in white candle-shaped flowers each May.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 36/L424/TS/06",
+        "url": null
+      }
     },
     {
       "id": "tri_007",

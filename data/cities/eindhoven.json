@@ -251,7 +251,8 @@
       },
       "story": "Every December the neighbourhood covers this oak in fairy lights, and keeps them on through January. It is not a municipal display and nobody is paid to do it. That is why the street knows it as the lichtjesboom, the little lights tree, rather than by anything the register calls it.\n\nThe rest of the year it is a good ordinary oak of about a century, standing clear of the houses in the strip of planting along the Diepmeerven, well enough placed that you see the whole shape of it from the pavement. The street name probably points at the Diepe Meerven, a small heath pool a way off toward Heeze, which is what this whole district was before it was a district.\n\nIt is the smallest tree on this page and the only one on it because of what people do with it. Eindhoven is a city that thinks about light more than most, having spent a century making it, and the version that matters here is a hundred bulbs strung through an oak by people who live on the street.\n\nGo in December. In August you will see an oak.",
       "verified_sources": [
-        "https://www.monumentalebomen.nl/"
+        "https://www.monumentalebomen.nl/",
+        "netherlands-lrmb.json, no. 1697325"
       ],
       "access": "Free. Street tree in a public planting strip.",
       "transport": "About 5 km southeast of Eindhoven Centraal, in the Gijzenrooi district.",
@@ -271,7 +272,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697325",
+        "url": null
+      },
+      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1697325 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ein_008",

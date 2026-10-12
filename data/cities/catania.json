@@ -58,7 +58,9 @@
         "status": "missing"
       },
       "girth_cm": 1400,
-      "how_to_recognise": "You can recognise it by the long, coiling sprawl of root buttresses spreading across the ground like tentacles. It stands in Villa Bellini on Via Etnea, Catania's main public park."
+      "how_to_recognise": "You can recognise it by the long, coiling sprawl of root buttresses spreading across the ground like tentacles. It stands in Villa Bellini on Via Etnea, Catania's main public park.",
+      "height_m": 30.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 01/C351/CT/19 (data/registers/italy-masaf.json), matched on our pin at 14 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "cat_002",

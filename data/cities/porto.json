@@ -463,7 +463,9 @@
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-01, with the permission in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
       "girth_cm": 485,
-      "how_to_recognise": "You can recognise it by the trunk, 4.85 metres round, on the FAUP campus a short walk from the Casa Cor-de-Rosa and the Pavilhao Carlos Ramos."
+      "how_to_recognise": "You can recognise it by the trunk, 4.85 metres round, on the FAUP campus a short walk from the Casa Cor-de-Rosa and the Pavilhao Carlos Ramos.",
+      "height_m": 23.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. AIP13121881I (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "por_012",
@@ -576,7 +578,9 @@
         "status": "missing"
       },
       "girth_cm": 435,
-      "how_to_recognise": "You can recognise it by its crown, 23.5 metres wide and wider than the tree is tall. It shares the lawn at Casa Primo Madeira with the Atlas cedar and the plane, a different tulip tree from the one at Casa Tait, 750 metres away."
+      "how_to_recognise": "You can recognise it by its crown, 23.5 metres wide and wider than the tree is tall. It shares the lawn at Casa Primo Madeira with the Atlas cedar and the plane, a different tulip tree from the one at Casa Tait, 750 metres away.",
+      "height_m": 21.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/444 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "por_015",
@@ -655,7 +659,9 @@
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-02, with the permission he gave for the first batch in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
       "girth_cm": 315,
-      "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round, one of four protected trees on the same lawn at Palacete Burmester, alongside a Himalayan cedar, a tulip tree and a yew."
+      "how_to_recognise": "You can recognise it by the trunk, 3.15 metres round, one of four protected trees on the same lawn at Palacete Burmester, alongside a Himalayan cedar, a tulip tree and a yew.",
+      "height_m": 22.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. AIP13121885I (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "por_017",
@@ -695,7 +701,9 @@
         "status": "missing"
       },
       "girth_cm": 580,
-      "how_to_recognise": "You can recognise it by its trunk, 5.8 metres round, one of four protected trees in this garden. It stands in the Jardim do Palacete Burmester, on the FCUP campus."
+      "how_to_recognise": "You can recognise it by its trunk, 5.8 metres round, one of four protected trees in this garden. It stands in the Jardim do Palacete Burmester, on the FCUP campus.",
+      "height_m": 16.5,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. AIP13121888I (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "por_018",
@@ -714,7 +722,8 @@
       "verified_sources": [
         "https://si.icnf.pt/wfs/arv_class",
         "https://dias-com-arvores.blogspot.com/2005/12/alerta-amarelo.html",
-        "https://dias-com-arvores.blogspot.com/2004/12/golden-time-ginkgo.html"
+        "https://dias-com-arvores.blogspot.com/2004/12/golden-time-ginkgo.html",
+        "portugal-icnf.json, no. KNJ1/451"
       ],
       "access": "Free. The Jardim das Virtudes is a public garden, open daily.",
       "transport": "Sao Bento station, roughly a 10 minute walk",
@@ -742,7 +751,9 @@
       "official_register": {
         "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/451",
         "url": null
-      }
+      },
+      "height_m": 35.5,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/451 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "por_019",
@@ -824,7 +835,9 @@
         "note": "Photographed by Paulo V. Araujo of Dias com Arvores and sent by transfer on 2026-09-01, with the permission in his own words: 'Use as fotos como quiser.' Not an open licence; ask him before reuse elsewhere. His filename named the species and the place, which is how each one was matched to a tree rather than guessed from the picture."
       },
       "girth_cm": 524,
-      "how_to_recognise": "You can recognise it by the trunk, 5.24 metres round at chest height (7.75 at the base), 31 metres tall with a 29-metre crown. It stands in the garden of Casa Allen, now Casa das Artes."
+      "how_to_recognise": "You can recognise it by the trunk, 5.24 metres round at chest height (7.75 at the base), 31 metres tall with a 29-metre crown. It stands in the garden of Casa Allen, now Casa das Artes.",
+      "height_m": 31.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. AIP131218113I (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "por_021",

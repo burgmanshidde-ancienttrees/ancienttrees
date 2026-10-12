@@ -81,7 +81,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/%C4%84%C5%BEuolas_Gali%C5%ABnas",
         "https://stvk.lt/map/S0310505010189-azuolas-galiunas",
-        "https://krsvbiblioteka.lt/krastotyra-straipsniai/azuolas-galiunas/"
+        "https://krsvbiblioteka.lt/krastotyra-straipsniai/azuolas-galiunas/",
+        "lithuania-stvk-gpo.json, no. 0310505010189"
       ],
       "access": "Free, public state forest (Kukšiai Forest); reached via road RK1916 then a field track (about 1.3km) to a small woodland, then about 100m into the forest through dense undergrowth. No gate, fee or restriction mentioned by any source.",
       "transport": "No public transport; reached by car. About 25.7km by straight-line distance from Vainiai's own tree (vni_001, the Vainiai Poplar), the nearest published place; real road distance is greater and this is a separate car stop, not a walk. It is also about 4.4km from the Nevėžio Dvilypis Oak (this batch's vni_003), which is close enough to pair as one outing.",
@@ -111,7 +112,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010189",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010189 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vni_003",
@@ -130,7 +136,8 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Nev%C4%97%C5%BEio_dvilypis_%C4%85%C5%BEuolas",
         "https://stvk.lt/map",
-        "http://babtai.puslapiai.lt/Istorija1830.htm"
+        "http://babtai.puslapiai.lt/Istorija1830.htm",
+        "lithuania-stvk-gpo.json, no. 0310505010190"
       ],
       "access": "Free; stands alone in an open working field, reached via a gravel track (about 1.5km) off road RK1906. No gate, fee or ownership restriction mentioned by any source; a wide field with no marked path but nothing indicating it is off limits.",
       "transport": "No public transport; reached by car. About 27.6km by straight-line distance from Vainiai's own tree (vni_001), the nearest published place; real road distance is greater. About 4.4km from the Galiūnas Oak (this batch's vni_002), close enough to visit in the same outing by car.",
@@ -151,7 +158,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010190",
+        "url": null
+      },
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010190 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     }
   ]
 }

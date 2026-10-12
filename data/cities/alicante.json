@@ -47,7 +47,8 @@
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 3035, girth 10.65m, height 25.3m, crown 40.5m)",
         "https://www.todoalicante.es/alicante-ciudad/alicante-revisara-arboles-monumentales-tras-caida-olmo-20250901145008-nt.html",
         "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
-        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales",
+        "valencia-arboles-monumentales.json, no. 3035"
       ],
       "access": "Free, open public plaza in the city centre, no gate or opening hours",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot; also served by city bus lines 2, 3, 5, 12 near Federico Soto",
@@ -63,7 +64,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 3035",
         "url": null
-      }
+      },
+      "height_m": 25.3,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 3035 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_002",
@@ -83,7 +86,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 3034, girth 10.32m, height 26.6m, crown 31.5m)",
         "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
-        "https://www.elespanol.com/alicante/alicante-ciudad/20240511/especie-australiana-arboles-caracteristicos-ciudad-alicante-trt/853914869_0.html"
+        "https://www.elespanol.com/alicante/alicante-ciudad/20240511/especie-australiana-arboles-caracteristicos-ciudad-alicante-trt/853914869_0.html",
+        "valencia-arboles-monumentales.json, no. 3034"
       ],
       "access": "Free, open public plaza in the city centre, no gate or opening hours",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
@@ -99,7 +103,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 3034",
         "url": null
-      }
+      },
+      "height_m": 26.6,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 3034 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_003",
@@ -119,7 +125,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 3036, girth 7.6m, height 23m, crown 33m)",
         "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
-        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales",
+        "valencia-arboles-monumentales.json, no. 3036"
       ],
       "access": "Free, open public plaza in the city centre, no gate or opening hours",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
@@ -138,7 +145,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 3036",
         "url": null
-      }
+      },
+      "height_m": 23.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 3036 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_004",
@@ -158,7 +167,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 3037, girth 6.4m, height 19m, crown 35m)",
         "https://alicantepress.com/art/46214/el-ayuntamiento-protege-con-vallas-los-ficus-de-gabriel-miro",
-        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales",
+        "valencia-arboles-monumentales.json, no. 3037"
       ],
       "access": "Free, open public plaza in the city centre, no gate or opening hours",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
@@ -174,7 +184,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 3037",
         "url": null
-      }
+      },
+      "height_m": 19.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 3037 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_005",
@@ -194,7 +206,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 507, girth 11.59m, height 20.8m, crown 38.7m, individually named in the register)",
         "https://locosporvalencia.com/parque-de-canalejas-el-paseo-de-los-grandes-ficus-junto-al-mar-en-alicante/",
-        "http://www.alicantevivo.org/2008/01/ficus-en-paseo-de-canalejas-de-alicante.html"
+        "http://www.alicantevivo.org/2008/01/ficus-en-paseo-de-canalejas-de-alicante.html",
+        "valencia-arboles-monumentales.json, no. 507"
       ],
       "access": "Free, public waterfront park (Parque de Canalejas), always open, no gate found",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 12-15 minutes on foot; a few minutes' walk from the Explanada de España and the sports marina",
@@ -212,7 +225,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 507",
         "url": null
-      }
+      },
+      "height_m": 20.8,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 507 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_006",
@@ -232,7 +247,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 301, girth 7.05m, height 13m, crown 16m, category Arbol Monumental de Interes Local)",
         "https://www.elespanol.com/alicante/alicante-ciudad/20240511/especie-australiana-arboles-caracteristicos-ciudad-alicante-trt/853914869_0.html",
-        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales",
+        "valencia-arboles-monumentales.json, no. 301"
       ],
       "access": "Free, public park/plaza area, no gate found",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
@@ -251,7 +267,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 301",
         "url": null
-      }
+      },
+      "height_m": 13.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 301 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_007",
@@ -271,7 +289,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 303, girth 6.35m, height 19m, crown 21m, category Arbol Monumental de Interes Local)",
         "https://www.elespanol.com/alicante/alicante-ciudad/20240511/especie-australiana-arboles-caracteristicos-ciudad-alicante-trt/853914869_0.html",
-        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales",
+        "valencia-arboles-monumentales.json, no. 303"
       ],
       "access": "Free, public park/plaza area, no gate found",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
@@ -287,7 +306,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 303",
         "url": null
-      }
+      },
+      "height_m": 19.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 303 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_008",
@@ -307,7 +328,8 @@
       "verified_sources": [
         "https://www.alicante.es/es/noticias/urbanismo-preserva-ficus-y-desplaza-aparcamiento-del-centro-salud-benalua (Ayuntamiento de Alicante, age over 150 years, trunk perimeter 23.7m, height 13.5m, crown 27m, planting and rescue history)",
         "https://diarioinformacion.com/alicante/2013/07/07/ficus-benalua-superviviente-siglo-medio/1393047.html (age about 140 years per Alicante Vivo, Chalet de Grau origin, neighbourhood campaign against felling)",
-        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 964, girth 14.69m, height 16.6m, crown 26m)"
+        "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 964, girth 14.69m, height 16.6m, crown 26m)",
+        "valencia-arboles-monumentales.json, no. 964"
       ],
       "access": "Free, in a small public garden beside the health centre's entrance, between Calle San Agatángelo and the building; no gate or opening hours",
       "transport": "About 10 minutes' walk from Alicante's main railway station (Alacant Terminal); Estación-Aguilera and Mercado de Benalúa bus stops are closer",
@@ -323,7 +345,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 964",
         "url": null
-      }
+      },
+      "height_m": 16.6,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 964 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_009",
@@ -343,7 +367,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 945, girth 2.91m, height 16m, crown 27m, category Arbol Monumental de Interes Local)",
         "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales (confirms Plaza Navarro Rodrigo as one of six city sites with a monumental-ficus information panel)",
-        "https://es.wikipedia.org/wiki/Plaza_de_Navarro_Rodrigo (square history: Marques de Benalua donation, named for Carlos Navarro Rodrigo)"
+        "https://es.wikipedia.org/wiki/Plaza_de_Navarro_Rodrigo (square history: Marques de Benalua donation, named for Carlos Navarro Rodrigo)",
+        "valencia-arboles-monumentales.json, no. 945"
       ],
       "access": "Free, open public square with playground, fountain and kiosk; no gate or opening hours",
       "transport": "About 10-12 minutes' walk from Alicante's main railway station (Alacant Terminal); Mercado de Benalúa bus stop is closer",
@@ -359,7 +384,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 945",
         "url": null
-      }
+      },
+      "height_m": 16.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 945 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_010",
@@ -415,7 +442,8 @@
       },
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (Generalitat Valenciana register, register_id 853, girth 2.67m, height 13.0m, crown 21.0m; a second entry, register_id 614, girth 2.85m, height 16.0m, crown 27.0m, stands ~19m away in the same small park and is folded into this one entry as a visitor sees one grove, not two)",
-        "https://www.alicante.es/es/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante (Ayuntamiento de Alicante's own 'Paseos y arboles singulares en el Centro Tradicional de Alicante' walking-route brochure, PDF at https://www.alicante.es/sites/default/files/documentos/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante/senderos-centro.pdf, stop 1 'Paseito de Ramiro': names the species as 'Ficus nitida' (a synonym of Ficus microcarpa), states 'unos 80 anos de edad, 13 m de altura y 21 m de diametro de copa', which matches register_id 853's height and crown exactly)"
+        "https://www.alicante.es/es/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante (Ayuntamiento de Alicante's own 'Paseos y arboles singulares en el Centro Tradicional de Alicante' walking-route brochure, PDF at https://www.alicante.es/sites/default/files/documentos/documentos/paseos-y-arboles-singulares-centro-tradicional-alicante/senderos-centro.pdf, stop 1 'Paseito de Ramiro': names the species as 'Ficus nitida' (a synonym of Ficus microcarpa), states 'unos 80 anos de edad, 13 m de altura y 21 m de diametro de copa', which matches register_id 853's height and crown exactly)",
+        "valencia-arboles-monumentales.json, no. 853"
       ],
       "access": "Free, open public park (Paseito de Ramiro), no gate or opening hours; part of the city's own official 'Red de Senderos Urbanos' walking route",
       "transport": "Facing Playa del Postiguet on Avenida Juan Bautista Lafora; about 15-18 minutes on foot from Plaza Gabriel Miro (the main city-centre cluster); seafront bus stops near the Postiguet/Marina are closer",
@@ -432,7 +460,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 853",
         "url": null
-      }
+      },
+      "height_m": 13.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 853 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_012",
@@ -451,7 +481,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 302, girth 3.9m, height 14m, crown 19m, category Arbol Monumental de Interes Local)",
         "https://es.wikipedia.org/wiki/%C3%81rboles_singulares_de_Alicante (confirms Parque de Canalejas holds six Ficus macrophylla and eleven Ficus microcarpa specimens, part of the city's Catalog of Singular and Monumental Trees)",
-        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales (municipal news confirming Parque de Canalejas as one of the panelled monumental-fig sites, general age band 50-120 years for the park's figs)"
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales (municipal news confirming Parque de Canalejas as one of the panelled monumental-fig sites, general age band 50-120 years for the park's figs)",
+        "valencia-arboles-monumentales.json, no. 302"
       ],
       "access": "Free, public park/plaza area, no gate found",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
@@ -462,7 +493,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 302",
         "url": null
-      }
+      },
+      "height_m": 14.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 302 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_013",
@@ -481,7 +514,8 @@
       "verified_sources": [
         "https://dadesobertes.gva.es/va/dataset/catalogo-de-arboles-monumentales-y-singulares-de-la-comunitat-valenciana (register_id 300, girth 6.43m, height 13m, crown 16m, category Arbol Monumental de Interes Local)",
         "https://es.wikipedia.org/wiki/%C3%81rboles_singulares_de_Alicante (confirms this grove/park holds six Ficus macrophylla specimens, part of the city's Catalog of Singular and Monumental Trees)",
-        "https://alicantepress.com/archive/16371/el-elegante-resurgir-de-los-ficus-del-portal-de-elche (2015 municipal-pruning piece naming exactly 'the four ficus of Portal de Elche', a plaza whose OSM/Nominatim coordinates sit within 10-15m of this whole four-tree grove, corroborating it as a long-documented, named public destination rather than an anonymous roadside planting)"
+        "https://alicantepress.com/archive/16371/el-elegante-resurgir-de-los-ficus-del-portal-de-elche (2015 municipal-pruning piece naming exactly 'the four ficus of Portal de Elche', a plaza whose OSM/Nominatim coordinates sit within 10-15m of this whole four-tree grove, corroborating it as a long-documented, named public destination rather than an anonymous roadside planting)",
+        "valencia-arboles-monumentales.json, no. 300"
       ],
       "access": "Free, public park/plaza area, no gate found",
       "transport": "TRAM Luceros stop (lines L1-L4), roughly 10 minutes on foot",
@@ -501,7 +535,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 300",
         "url": null
-      }
+      },
+      "height_m": 13.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 300 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_014",
@@ -520,7 +556,8 @@
       "story": "This ficus is one of thirteen Ficus microcarpa the city catalogues as monumental, named in a 2025 council press release that also describes the maintenance regime behind the health of these trees: root plates wrapped in coconut fibre and checked on a quarterly rotation, protection against the compaction of the busy plazas most of them stand in. It shares its own square, a small pedestrian plaza called Plaza de la Pipa in the Carolinas Bajas district, with a bronze sculpture by Eduardo Lastres, and faces what was once the city's tobacco factory, now the Las Cigarreras cultural centre.\n\nAt 2.12 metres around, the trunk is modest next to Alicante's giant Moreton Bay figs downtown, but the Valencian register gives it a higher individual protection category than most of the city's monumental ficus carry. The canopy explains why: Wikipedia's account of the plaza calls it simply gran copa, a big one, spread wide on a trunk that never had to compete for light.\n\nNobody has recorded when it was planted. If you know, tell us.",
       "verified_sources": [
         "https://es.wikipedia.org/wiki/Plaza_de_la_Pipa",
-        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales"
+        "https://www.alicante.es/es/noticias/ayuntamiento-instala-placas-informativas-poner-valor-sus-ficus-monumentales",
+        "valencia-arboles-monumentales.json, no. 3095"
       ],
       "access": "Free, open public plaza facing the old tobacco factory (now Las Cigarreras Cultural Center), no gate or opening hours",
       "transport": "Roughly 15-20 minutes on foot from TRAM Luceros (lines L1-L4); several city bus lines serve the Carolinas district nearby",
@@ -536,7 +573,9 @@
       "official_register": {
         "name": "Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 3095",
         "url": null
-      }
+      },
+      "height_m": 13.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 3095 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ali_015",

@@ -657,7 +657,8 @@
         "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342",
         "https://www.openstreetmap.org/node/717591141",
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_N%C3%BCrnberg",
-        "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342 (city tree official Winkel: about 28 m high, trunk circumference 6.80 m)"
+        "https://www.nordbayern.de/nuernberg/400-jahre-und-gesund-das-sind-nurnbergs-alteste-baume-1.9659342 (city tree official Winkel: about 28 m high, trunk circumference 6.80 m)",
+        "bayern-naturdenkmale.json, no. ND-05035"
       ],
       "access": "Free. Platnersberganlage is a public green space owned by the city since 1907; the lawns either side of the footpath are open as Liegewiesen. The oak stands on the meadow beside the Bärenbrunnen.",
       "transport": "Tram line 8 to Erlenstegen (VAG); exact stop and walk time not verified.",
@@ -674,7 +675,12 @@
         "width": 1800,
         "height": 1200,
         "note": "From Rainer Lippert's monumentale-eichen.de (https://www.monumentale-eichen.de/bayern/2-kategorie/n%C3%BCrnberg/), his caption 'Bäreneiche auf dem Platnersberg in Nürnberg'. His permission by mail on 2026-10-10: 'Ihr könnt gerne Fotos von meiner Seite verwenden, mit Namensangabe und Link.' Matched because our entry already cites his page for this tree; looked at before approval. Not an open licence; ask him before reuse elsewhere."
-      }
+      },
+      "official_register": {
+        "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-05035",
+        "url": null
+      },
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-05035 (data/registers/bayern-naturdenkmale.json), matched on our pin at 5 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "nbg_018",

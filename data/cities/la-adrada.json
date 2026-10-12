@@ -49,7 +49,8 @@
         "http://arbolesdeltietar.blogspot.com/2010/08/el-pino-de-la-adrada.html",
         "https://avilared.com/archive/23460/el-arbol-espanol-del-ano-es-el-pino-aprisquillo-de-la-adrada",
         "https://www.rutinasvarias.com/2015/05/19/ruta-al-pino-del-aprisquillo/",
-        "https://laadrada.net/turismo/rutas/al-aprisquillo/"
+        "https://laadrada.net/turismo/rutas/al-aprisquillo/",
+        "castilla-leon-arboles-notables.json, no. AS-AV-09"
       ],
       "access": "Free, on public forest tracks. Two marked hiking routes reach it (from the road to the Colmenilla dam, or via Canto de la Linde), both with real elevation gain (roughly 630m over a 10km round trip per rutinasvarias); one alternative interior trail is described as not fully signposted. The municipality installed new trail signage for this specific route in November 2023, and a 2024 hiker reported the final stretch overgrown, so the walk is real but rougher than a park path.",
       "transport": "Rural Avila province; no public transport reaches the trailhead. La Adrada is about 85km southwest of Madrid (published) and roughly 45km from Avila city; a car to the village, then the hike, is the only realistic route.",
@@ -61,7 +62,13 @@
       },
       "photos": [],
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Árboles Notables de Castilla y León (Junta de Castilla y León), no. AS-AV-09",
+        "url": null
+      },
+      "height_m": 34.0,
+      "verify_notes": "Register number and height from Árboles Notables de Castilla y León (Junta de Castilla y León) no. AS-AV-09 (data/registers/castilla-leon-arboles-notables.json), matched on our pin at 25 m (register_match.py, 2026-10-12)."
     }
   ]
 }

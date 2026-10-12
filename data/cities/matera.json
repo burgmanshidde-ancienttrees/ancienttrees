@@ -47,7 +47,8 @@
         "MASAF/Basilicata regional register of monumental trees, sheet 03/F052/MT/17, comune di Matera, locality Viale Aldo Moro, girth 290 cm, height 22 m, flagged urban",
         "https://www.wikidata.org/wiki/Q55740945 (matches the same coordinate)",
         "https://commons.wikimedia.org/wiki/File:Pino_Matera.jpg (Wiki Loves Monuments Italia 2018 entry, wiki-ID 17F05203F052MT17, camera location 40.664333,16.598019, photographed 21 September 2018, so alive and standing as of that date)",
-        "OpenStreetMap node 2505619685, tagged natural=tree, name \"Il Pino\", Viale Aldo Moro, Centro, Matera (40.664378, 16.598034)"
+        "OpenStreetMap node 2505619685, tagged natural=tree, name \"Il Pino\", Viale Aldo Moro, Centro, Matera (40.664378, 16.598034)",
+        "italy-masaf.json, no. 03/F052/MT/17"
       ],
       "access": "Free. Street tree on Viale Aldo Moro, a public road; no gate or permission needed.",
       "transport": "Matera Centrale railway station, about 5 minutes on foot along Viale Aldo Moro. Piazza Vittorio Veneto and the edge of the Sassi are about 10 minutes on foot.",
@@ -60,7 +61,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the wide, flat umbrella crown of a stone pine over a busy avenue, trunk 2.9 metres round. It stands on Viale Aldo Moro, five minutes on foot from Matera Centrale."
+      "how_to_recognise": "You can recognise it by the wide, flat umbrella crown of a stone pine over a busy avenue, trunk 2.9 metres round. It stands on Viale Aldo Moro, five minutes on foot from Matera Centrale.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/F052/MT/17",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 03/F052/MT/17 (data/registers/italy-masaf.json), matched on our pin at 2 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "mat_002",
@@ -80,7 +86,8 @@
       "verified_sources": [
         "MASAF/Basilicata regional register of monumental trees, sheet 07/F052/MT/17, comune di Matera, locality Colle Timmari - Fontana della Madonna, girth 420 cm, height 22 m",
         "https://www.wikidata.org/wiki/Q55740951 (pioppo nero, same coordinate)",
-        "https://www.caimatera.it/escursione/sentiero-del-pioppo-nero-di-timmari/ (CAI Matera hiking-club excursion, run 26 January 2025, whose stated route goes to Fontana della Madonna specifically \"per ammirare il pioppo nero, albero monumentale censito nel catasto regionale\", i.e. an independent, non-register source confirming both the tree and this exact spot)"
+        "https://www.caimatera.it/escursione/sentiero-del-pioppo-nero-di-timmari/ (CAI Matera hiking-club excursion, run 26 January 2025, whose stated route goes to Fontana della Madonna specifically \"per ammirare il pioppo nero, albero monumentale censito nel catasto regionale\", i.e. an independent, non-register source confirming both the tree and this exact spot)",
+        "italy-masaf.json, no. 07/F052/MT/17"
       ],
       "access": "Free, on open hillside within the Timmari archaeological area. No gate, no ticket. It sits well off the beaten path: reachable on foot via forest tracks and part-paved roads through the Parco Archeologico Appulo-Greco di Timmari, and a local hiking club (CAI Matera) runs an 11 km loop trail that passes directly by it. This pass could not confirm whether a shorter direct approach by car exists; treat it as a countryside walk rather than a stroll from the Sassi.",
       "transport": "About 9.5 km / roughly a 20 minute drive west of central Matera; no public transport reaches Timmari directly. On foot from the nearest road it is a rural walk of at least an hour through the archaeological park.",
@@ -93,7 +100,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its size for the species, 4.2 metres round, growing where a spring reaches the surface. It stands at Fontana della Madonna on Colle di Timmari, reached by an eleven kilometre hiking loop."
+      "how_to_recognise": "You can recognise it by its size for the species, 4.2 metres round, growing where a spring reaches the surface. It stands at Fontana della Madonna on Colle di Timmari, reached by an eleven kilometre hiking loop.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 07/F052/MT/17",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 07/F052/MT/17 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "mat_003",
@@ -113,7 +125,8 @@
       "verified_sources": [
         "MASAF/Basilicata regional register of monumental trees, sheet 09/F052/MT/17, comune di Matera, locality Contrada La Vaglia, height 5 m, girth not recorded, flagged urban (the same 'urban' flag carried by the already-published Pino of Viale Aldo Moro, and distinct from the six masseria/jazzo entries in the same register, which are all flagged rural/non-urban)",
         "https://www.wikidata.org/wiki/Q55740953 (ciliegio canino, matching coordinate 40.681944,16.598119)",
-        "OpenStreetMap raw data API (api.openstreetmap.org/api/0.6/map, bbox around the point, fetched 2026-09-03, not the Overpass endpoint that had twice timed out on earlier passes): the point sits about 45 m from a mapped junction of Strada Statale 7 Appia (way 243600167, highway=primary, ref SS7, 'Strada Statale 7 Appia', asphalt, 2 lanes) with a local road (way 144380406, highway=unclassified). No building, fence, barrier or private-landuse polygon is mapped over the tree's coordinate itself; the only landuse polygon nearby is a quarry, 'Cava del Sole', which does not overlap the point."
+        "OpenStreetMap raw data API (api.openstreetmap.org/api/0.6/map, bbox around the point, fetched 2026-09-03, not the Overpass endpoint that had twice timed out on earlier passes): the point sits about 45 m from a mapped junction of Strada Statale 7 Appia (way 243600167, highway=primary, ref SS7, 'Strada Statale 7 Appia', asphalt, 2 lanes) with a local road (way 144380406, highway=unclassified). No building, fence, barrier or private-landuse polygon is mapped over the tree's coordinate itself; the only landuse polygon nearby is a quarry, 'Cava del Sole', which does not overlap the point.",
+        "italy-masaf.json, no. 09/F052/MT/17"
       ],
       "access": "Not confirmed in detail, but the evidence points to a roadside/urban setting rather than private farmland: unlike this register's six masseria and jazzo entries (all flagged non-urban and blocked as private working farms), this tree is flagged 'urban' in the same register, sits right beside the SS7 Appia state road on the northern edge of town, and OSM shows no building or private-land polygon over the spot. No fence or gate is recorded either way. Treat as likely visible/reachable from the public roadside on the SS7 Appia near Contrada La Vaglia; a reader who visits is the best way to settle it precisely.",
       "transport": "About 1.7 km / roughly a 20-25 minute walk, or a short drive, north of Piazza Vittorio Veneto along the SS7 Appia (the historic road into Matera from the north). No dedicated public transport stop confirmed at this exact point.",
@@ -126,7 +139,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You are looking for a small roadside cherry, five metres tall, near where the SS7 Appia meets a minor road in Contrada La Vaglia. Nobody has photographed it lately and we could not confirm it still stands."
+      "how_to_recognise": "You are looking for a small roadside cherry, five metres tall, near where the SS7 Appia meets a minor road in Contrada La Vaglia. Nobody has photographed it lately and we could not confirm it still stands.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 09/F052/MT/17",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 09/F052/MT/17 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "mat_004",

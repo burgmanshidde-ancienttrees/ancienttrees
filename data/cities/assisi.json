@@ -40,7 +40,8 @@
       },
       "verified_sources": [
         "https://www.montagneaperte.it/patriarchiverdi/tasso-assisi-via-borgo-aretino/",
-        "https://it.wikipedia.org/wiki/Tasso_del_conte_Pucci"
+        "https://it.wikipedia.org/wiki/Tasso_del_conte_Pucci",
+        "italy-masaf.json, no. 02/A475/PG/10"
       ],
       "access": "Stands in a raised garden above Via Borgo Aretino that historically belonged to the Pucci family; publicly visible from the street but the garden itself may not be open to walk into. Free to view.",
       "transport": "In Assisi's walled historic centre, near Porta Santa Chiara; a few minutes' walk from Piazza del Comune",
@@ -66,7 +67,11 @@
         "kind": "fruit"
       },
       "height_m": 12.5,
-      "verify_notes": "Height 12.5 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 12.5 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 02/A475/PG/10 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/A475/PG/10",
+        "url": null
+      }
     },
     {
       "id": "asi_002",
@@ -82,7 +87,8 @@
       },
       "verified_sources": [
         "https://it.wikipedia.org/wiki/Roverella_di_via_Lorenzo_Perosi",
-        "https://www.montagneaperte.it/patriarchiverdi/roverella-assisi-via-lorenzo-perosi/"
+        "https://www.montagneaperte.it/patriarchiverdi/roverella-assisi-via-lorenzo-perosi/",
+        "italy-masaf.json, no. 01/A475/PG/10"
       ],
       "access": "Stands within a private orchard/garden at the fork where Via Lorenzo Perosi meets the dirt track to Fontemaggio, just beyond Porta Cappuccini; visible and photographable from the public path, which is the old pilgrim route to the Eremo delle Carceri. No entry to the orchard itself.",
       "transport": "A short walk uphill from Porta Cappuccini, one of Assisi's historic gates, on the walking route toward the Eremo delle Carceri",
@@ -97,7 +103,11 @@
       },
       "how_to_recognise": "A wide downy oak standing alone at the fork just beyond Porta Cappuccini, where the paved road gives way to the dirt track toward Fontemaggio and the hermitage.",
       "height_m": 21.0,
-      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 21.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 01/A475/PG/10 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/A475/PG/10",
+        "url": null
+      }
     },
     {
       "id": "asi_003",
@@ -114,7 +124,8 @@
       },
       "verified_sources": [
         "https://www.umbria24.it/attualita/umbria-dove-si-trovano-i-tre-alberi-monumentali-quello-piu-alto-e-di-30-metri-la-circonferenza-piu-grande-e-634-centimetri/",
-        "https://www.assisinews.it/cronaca/alberi-monumentali-tre-new-entry-in-umbria-uno-e-una-quercia-in-via-di-valecchie/"
+        "https://www.assisinews.it/cronaca/alberi-monumentali-tre-new-entry-in-umbria-uno-e-una-quercia-in-via-di-valecchie/",
+        "italy-masaf.json, no. 06/A475/PG/10"
       ],
       "access": "On or beside Via di Valecchie in the Valecchie hamlet; a public road. Exact street-level access (roadside versus set back on private land) not independently confirmed beyond the register entry and news coverage; worth a reader confirming on the ground.",
       "transport": "In the Valecchie hamlet, west of Assisi's walled centre; lower altitude (273m per the register, versus ~420m for the hilltop old town), likely reached by road rather than on foot from the centre",
@@ -127,7 +138,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "A very tall, straight downy oak on Via di Valecchie, in the lower Valecchie hamlet west of the old town; at 30 metres it stands well above anything else on the street."
+      "how_to_recognise": "A very tall, straight downy oak on Via di Valecchie, in the lower Valecchie hamlet west of the old town; at 30 metres it stands well above anything else on the street.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/A475/PG/10",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 06/A475/PG/10 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "asi_004",
@@ -145,7 +161,8 @@
       },
       "verified_sources": [
         "https://it.wikipedia.org/wiki/Lecci_monumentali_dell%27Eremo_delle_Carceri",
-        "https://www.montagneaperte.it/patriarchiverdi/leccio-assisi-eremo-delle-carceri-1/"
+        "https://www.montagneaperte.it/patriarchiverdi/leccio-assisi-eremo-delle-carceri-1/",
+        "italy-masaf.json, no. 03/A475/PG/10"
       ],
       "access": "Free. The Eremo delle Carceri hermitage is open to the public daily (roughly 6:30/7:30 to 18:00/19:00 depending on season), entry always free, per its own site (santuarioeremodellecarceri.org). This tree stands beside the path near the Grotta di San Francesco within the hermitage grounds.",
       "transport": "About 4km uphill from Assisi's historic centre, reachable by road or the marked path through Monte Subasio's holm oak wood; no public transport, most visitors drive, walk or take a taxi",
@@ -160,7 +177,11 @@
       },
       "how_to_recognise": "The holm oak beside the path near the Grotta di San Francesco carrying its own sign, Albero del tempo di San Francesco; small and gnarled rather than large.",
       "height_m": 9.0,
-      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away)."
+      "verify_notes": "Height 9.0 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 03/A475/PG/10 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/A475/PG/10",
+        "url": null
+      }
     },
     {
       "id": "asi_005",
@@ -177,7 +198,8 @@
       },
       "verified_sources": [
         "https://it.wikipedia.org/wiki/Lecci_monumentali_dell%27Eremo_delle_Carceri",
-        "https://www.montagneaperte.it/patriarchiverdi/leccio-assisi-eremo-delle-carceri-1/"
+        "https://www.montagneaperte.it/patriarchiverdi/leccio-assisi-eremo-delle-carceri-1/",
+        "italy-masaf.json, no. 04/A475/PG/10"
       ],
       "access": "Free. The Eremo delle Carceri hermitage is open to the public daily (roughly 6:30/7:30 to 18:00/19:00 depending on season), entry always free, per its own site (santuarioeremodellecarceri.org). This tree stands on a scarp beside the path to the sanctuary, held by a dry-stone retaining wall per the register/Wikipedia description.",
       "transport": "About 4km uphill from Assisi's historic centre, reachable by road or the marked path through Monte Subasio's holm oak wood; no public transport, most visitors drive, walk or take a taxi",
@@ -190,7 +212,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "Two hundred metres further along the sanctuary path from the signed tree, a bigger, unmarked holm oak growing on a scarp held by a dry-stone retaining wall."
+      "how_to_recognise": "Two hundred metres further along the sanctuary path from the signed tree, a bigger, unmarked holm oak growing on a scarp held by a dry-stone retaining wall.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 04/A475/PG/10",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 04/A475/PG/10 (data/registers/italy-masaf.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "asi_006",
@@ -207,7 +234,8 @@
       },
       "verified_sources": [
         "https://it.wikipedia.org/wiki/Biancospino_di_Vallonica",
-        "https://www.montagneaperte.it/patriarchiverdi/biancospino-comune-assisi-vallonica-monte-subasio/"
+        "https://www.montagneaperte.it/patriarchiverdi/biancospino-comune-assisi-vallonica-monte-subasio/",
+        "italy-masaf.json, no. 05/A475/PG/10"
       ],
       "access": "Free and on open park land (Parco del Monte Subasio), but NOT a casual walk: it sits on a marked hiking trail (CAI 350/351) roughly 5km from Porta Cappuccini, past the Eremo delle Carceri, climbing from about 475m to 1,075m altitude. Treat this as a proper hike of several hours round trip, not an afternoon stroll, and say so plainly on the page.",
       "transport": "No public transport and no road for casual access; reached on foot via the CAI 350/351 trail from Porta Cappuccini through the Eremo delle Carceri (about 3.3km) and on up to Rifugio Vallonica (about 4.9km total), then a further c.500m to the tree itself",
@@ -227,7 +255,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "A low, wide, many-stemmed hawthorn on the open mountaintop about 500m south of the old Rifugio di Vallonica building, spreading wider than it is tall."
+      "how_to_recognise": "A low, wide, many-stemmed hawthorn on the open mountaintop about 500m south of the old Rifugio di Vallonica building, spreading wider than it is tall.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 05/A475/PG/10",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 05/A475/PG/10 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

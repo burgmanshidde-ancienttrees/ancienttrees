@@ -320,7 +320,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://rijksmonumenten.nl/monument/511682/cantonspark-parkaanleg/baarn/"
+        "https://rijksmonumenten.nl/monument/511682/cantonspark-parkaanleg/baarn/",
+        "netherlands-lrmb.json, no. 1696955"
       ],
       "access": "Free, public park, open 08:00-19:00 daily",
       "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
@@ -333,7 +334,12 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "New entry 2026-09-05, prompted by a reader's on-site GPS tag placing an unidentified tree within about 30 metres of the Landelijk Register Monumentale Bomen's 'Tulpenboom Cantonspark' (nr 1696955, planted 1910-1920, owner gemeente, visitable and visible, distinct from the brn_003 grove several kilometres away at Kasteel Groeneveld). Second source is Cantonspark's own Rijksmonument listing, which corroborates the park's protected botanical planting generally rather than this specimen individually; the register carries the specific description (crown condition, minor bark damage) used in the story. No girth recorded by any source found.",
-      "how_to_recognise": "You can recognise it by standing alone a few paces from Cantonspark's giant sequoia, its trunk sound and its crown well kept. It stands by the park's main entrance on Abel Tasmanlaan."
+      "how_to_recognise": "You can recognise it by standing alone a few paces from Cantonspark's giant sequoia, its trunk sound and its crown well kept. It stands by the park's main entrance on Abel Tasmanlaan.",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696955",
+        "url": null
+      },
+      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1696955 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "brn_008",

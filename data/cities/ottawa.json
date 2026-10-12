@@ -723,7 +723,8 @@
       },
       "verified_sources": [
         "https://open.canada.ca/data/en/dataset/4992d291-f99f-4e51-9f4e-5eeff9bcd835",
-        "https://www.inaturalist.org/observations/10478080"
+        "https://www.inaturalist.org/observations/10478080",
+        "canada-capital-ncc-remarkable-trees.json, no. 123"
       ],
       "access": "Free. Public NCC parkway pathway along the Rideau Canal, open at all hours.",
       "transport": "Rideau Canal Eastern/Western Pathway on foot or bike; nearest OC Transpo stops on Bronson Ave or Bank St, about a 5-8 minute walk.",
@@ -736,7 +737,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Remarkable Trees (National Capital Commission), no. 123",
+        "url": null
+      },
+      "verify_notes": "Register number from Remarkable Trees (National Capital Commission) no. 123 (data/registers/canada-capital-ncc-remarkable-trees.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

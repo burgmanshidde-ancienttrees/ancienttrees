@@ -47,7 +47,8 @@
       "verified_sources": [
         "https://www.caib.es/sites/proteccioespecies/ca/n/savina_de_ses_salines-21527/",
         "https://www.periodicodeibiza.es/pitiusas/ibiza/2022/01/21/1690971/arboles-historia-parecen-autenticas-obras-arte.html",
-        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/"
+        "https://www.caib.es/sites/proteccioespecies/ca/fitxes/",
+        "balears-arbres-singulars.json, no. 677"
       ],
       "access": "Free. Stands inside the Ses Salines Natural Park on the dune track between La Savina port and Ses Illetes beach; a public coastal footpath (also used by cyclists) passes the dune area, and vehicle access to the wider area is restricted in summer to protect the park.",
       "transport": "Ferry from Ibiza Town to La Savina port on Formentera (about 25-35 minutes), then roughly 20-30 minutes on foot or by bike along the coastal dune path towards Ses Illetes.",
@@ -59,7 +60,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its unusually broad, spreading shape for a juniper, only 7.5m tall but a crown 12m across on a trunk about 3m round. It stands in the dunes on the path between La Savina port and Ses Illetes beach."
+      "how_to_recognise": "You can recognise it by its unusually broad, spreading shape for a juniper, only 7.5m tall but a crown 12m across on a trunk about 3m round. It stands in the dunes on the path between La Savina port and Ses Illetes beach.",
+      "official_register": {
+        "name": "Catàleg d'Arbres Singulars (Govern de les Illes Balears), no. 677",
+        "url": null
+      },
+      "verify_notes": "Register number from Catàleg d'Arbres Singulars (Govern de les Illes Balears) no. 677 (data/registers/balears-arbres-singulars.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

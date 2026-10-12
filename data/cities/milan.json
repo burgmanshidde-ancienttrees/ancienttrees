@@ -125,7 +125,8 @@
       "story": "Milan calls this species spaccasassi, the stone-splitter, for roots strong enough to crack paving, and this hackberry has had over a century and a half to test the claim against the paths of the city's oldest public park. Standing 27 metres tall with a trunk 4.24 metres around, it is one of seven trees the city has formally recognised as monumental within the Giardini Pubblici Indro Montanelli, sharing that status with the plane and the cypress a short walk away. Celtis australis is native across the Mediterranean and was planted widely in nineteenth century Milan for the same reason it thrives today: almost nothing bothers it, not soot, not drought, not the compacted soil under a park crossed by tens of thousands of people a week. Its small, dark, cherry-like fruit ripens in autumn and draws blackbirds rather than people, who mostly walk past a tree with none of the visible drama of its more contorted neighbours. Italy's monumental tree registry puts its age at 164 years, calculated from growth data rather than any surviving planting record, the only figure any source gives; treated here as an estimate rather than a settled fact.",
       "verified_sources": [
         "https://ilregistrodeglialberi.it/2210-bagolaro-giardini-montanelli-bagolaro-milano-mi-lombardia",
-        "https://www.comune.milano.it/aree-tematiche/verde/manutenzione-progettazione/alberi-monumentali/bagolaro-giardini-montanelli"
+        "https://www.comune.milano.it/aree-tematiche/verde/manutenzione-progettazione/alberi-monumentali/bagolaro-giardini-montanelli",
+        "italy-masaf.json, no. 07/F205/MI/03"
       ],
       "access": "Free, public park (opening hours vary by season)",
       "transport": "5 min walk from Porta Venezia (M1)",
@@ -145,7 +146,9 @@
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 07/F205/MI/03",
         "url": null
-      }
+      },
+      "height_m": 27.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 07/F205/MI/03 (data/registers/italy-masaf.json), matched on our pin at 13 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "mil_004",

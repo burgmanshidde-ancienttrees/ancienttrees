@@ -96,7 +96,8 @@
         "https://ilregistrodeglialberi.it/6490-quercia-da-sughero-firenze-fi-toscana",
         "https://www.ortobotanicoitalia.it/toscana/unifirenze/",
         "https://ilregistrodeglialberi.it/6490-quercia-da-sughero-firenze-fi-toscana (circumference at 130 cm 4.27 m, recorded 14/10/2021)",
-        "https://www.sma.unifi.it/vp-244-orto-botanico.html"
+        "https://www.sma.unifi.it/vp-244-orto-botanico.html",
+        "italy-masaf.json, no. 01/D612/FI/09"
       ],
       "access": "Paid entry: Orto Botanico, Giardino dei Semplici. Open Tuesday to Sunday, 10:00 to 18:00 (10:00 to 16:00 from 27 October to 31 March); closed Mondays, 1 January, Easter, 1 May, 15 August and 25 December. Full ticket 8 euro, reduced 4 euro.",
       "transport": "5 min walk from Piazza San Marco (T2 tram stop)",
@@ -117,7 +118,9 @@
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), codice AMI, no. 01/D612/FI/09",
         "url": null
-      }
+      },
+      "height_m": 35.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 01/D612/FI/09 (data/registers/italy-masaf.json), matched on our pin at 8 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "flo_003",
@@ -216,7 +219,8 @@
       "story": "This holm oak has spent its whole life fighting for balance, and it shows. Growing beside the Arno-facing path through the Parco delle Cascine, not far from the market that sets up every Tuesday along the river, the tree has developed unusually large buttress roots and long exposed root sections that flare out from its base like something built rather than grown. Arborists who surveyed it in 2022 and again in 2025 recorded a trunk holding steady at just over four metres around and a canopy reaching nearly 19 metres high, and rated its health excellent both times, buttresses and all. Holm oaks are evergreen, native across the Mediterranean, and built to survive exactly the kind of periodic flooding the Arno has delivered to this park for centuries; the exposed, muscular root system is very likely the tree's own answer to wet, shifting soil rather than a defect. No documented planting date survives for it, which is typical for a park this old and this large, but its girth puts it easily past its first century. It stands in a stretch of the Cascine most tourists never reach, well past the old horse track, in the quieter western half of a park that has been public land since Napoleon's own sister, Elisa Baciocchi, opened the former Medici hunting grounds to ordinary Florentines during her rule as Grand Duchess of Tuscany.",
       "verified_sources": [
         "https://ilregistrodeglialberi.it/14678-il-leccio-del-parco-delle-cascine-leccio-firenze-fi-toscana",
-        "https://www.ascuoladaglialberi.net/firenze/"
+        "https://www.ascuoladaglialberi.net/firenze/",
+        "italy-masaf.json, no. 44/D612/FI/09"
       ],
       "access": "Free, public park",
       "transport": "10 min walk from the Cascine tram stop (T1), along the Arno-side path",
@@ -234,7 +238,9 @@
       "official_register": {
         "name": "Albero monumentale d'Italia (MASAF), no. 44/D612/FI/09",
         "url": null
-      }
+      },
+      "height_m": 19.0,
+      "verify_notes": "Height from Elenco degli alberi monumentali d'Italia (MASAF) no. 44/D612/FI/09 (data/registers/italy-masaf.json), matched on our pin at 8 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "flo_006",

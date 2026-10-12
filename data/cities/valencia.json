@@ -42,7 +42,8 @@
       "story": "Gardeners planted this fig by accident in 1852, confusing the young sapling for one of the 47 magnolias also going into the newly laid-out Parterre garden that year, the same year Valencia's first railway line opened. The mistake became the city's most celebrated tree. Its trunk now measures nearly 13 metres around, its canopy reaches almost 23 metres high with a spread beyond 35 metres, and the shade it casts covers something close to 1,000 square metres of ground, the widest canopy of any tree in Valencia. It has outlasted a windstorm in 1926 and the catastrophic flood of 1957 that reshaped the whole city's relationship with the Turia river, and in 1915 it became a study subject for Madrid's School of Agricultural Engineers, evidence of how early its scale was recognised as remarkable. For decades it also hosted Sunday sardana dancing and other Valencian cultural gatherings in its shade. A nearby petrol station, whose underground tanks threatened its root system, was finally dismantled in 2020 after years of pressure to protect the tree, valued by the city at some 380,000 euros.",
       "verified_sources": [
         "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
-        "https://www.valenciabonita.es/2018/01/15/la-sombra-de-cuatro-grandes-ficus-de-valencia-los-historicos-ficus-del-parterre-y-la-glorieta/"
+        "https://www.valenciabonita.es/2018/01/15/la-sombra-de-cuatro-grandes-ficus-de-valencia-los-historicos-ficus-del-parterre-y-la-glorieta/",
+        "valencia-arboles-monumentales.json, no. 512"
       ],
       "access": "Free, public garden",
       "transport": "5 min walk from Xativa / Estacio del Nord (metro/train)",
@@ -62,7 +63,9 @@
       "official_register": {
         "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 512",
         "url": null
-      }
+      },
+      "height_m": 26.1,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 512 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 5 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_002",
@@ -80,7 +83,8 @@
       "story": "This olive has stood through more than a dozen generations of Valencians without ever needing to move, unlike almost every other tree on this list, which the city has planted, transplanted or rescued from demolition at some point in its life. It grows in Parque de la Rambleta, a 14 hectare green space wedged between the San Marcelino neighbourhood and the General Cemetery in the south of the city, among a Mediterranean garden of date palms, Greek olives, cypresses, carob trees and a cedar of Lebanon. City sources place its age at roughly 400 years, without an individually documented planting record, which is typical for old olives generally: the species hollows and re-grows from its own base over centuries, making ring counts unreliable even where felling would be permitted. It is named directly, on the city's own monumental trees route, as the oldest single tree among all five of its mapped trails, a title that puts it ahead of trees standing in far more visited parts of the city.",
       "verified_sources": [
         "https://www.valenciabonita.es/2017/10/31/parque-de-la-rambleta/",
-        "https://www.visitvalencia.com/que-hacer-valencia/rutas-por-la-ciudad/ruta-arboles-monumentales"
+        "https://www.visitvalencia.com/que-hacer-valencia/rutas-por-la-ciudad/ruta-arboles-monumentales",
+        "valencia-arboles-monumentales.json, no. 2694"
       ],
       "access": "Free, public park",
       "transport": "Bus lines 8, 89 to Parque de la Rambleta",
@@ -107,7 +111,9 @@
       "official_register": {
         "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 2694",
         "url": null
-      }
+      },
+      "height_m": 7.9,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 2694 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_003",
@@ -131,7 +137,8 @@
       "story": "This ginkgo has survived every conflict Valencia has been through since the mid-19th century simply by belonging to a species built to survive almost anything. Ginkgo biloba is often described as a living fossil, its lineage traceable back some 250 million years, largely unchanged, and famous for its ability to resist fire, disease and pollution better than almost any other large tree. This particular specimen grows in the Jardín de Monforte, a roughly 12,000 square metre neoclassical garden the Marquis of San Juan built from an orchard he bought in 1849, filling it with marble statues, fountains and specimen trees over the following decades. Declared a National Artistic Garden in 1941, it remains the last 19th century historical-artistic garden intact in Valencia, and this ginkgo, planted not long after the garden's founding, is described by the city as the best known of its kind in Valencia. A second, younger female ginkgo grows nearby in the same garden.",
       "verified_sources": [
         "https://www.hoyvalencia.app/rincones-valencia/20240218/jardin-de-monforte-un-oasis-neoclasico-en-el-corazon-de-valencia/",
-        "https://jardins.valencia.es/es/blog/descubre-valencia-traves-de-cinco-rutas-de-arboles-monumentales"
+        "https://jardins.valencia.es/es/blog/descubre-valencia-traves-de-cinco-rutas-de-arboles-monumentales",
+        "valencia-arboles-monumentales.json, no. 684"
       ],
       "access": "Free, public garden",
       "transport": "10 min walk from Alameda metro station",
@@ -151,7 +158,9 @@
       "official_register": {
         "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 684",
         "url": null
-      }
+      },
+      "height_m": 23.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 684 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_004",
@@ -170,7 +179,8 @@
       "verified_sources": [
         "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
         "http://www.callejeandoporvalencia.com/2018/03/el-ficus-de-la-condesa-de-ripalda.html",
-        "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151"
+        "https://geoportal.valencia.es/server/rest/services/OPENDATA/MedioAmbiente/MapServer/151",
+        "valencia-arboles-monumentales.json, no. 2611"
       ],
       "access": "Free, public square",
       "transport": "10 min walk from Angel Guimera metro station",
@@ -188,7 +198,9 @@
       "official_register": {
         "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 2611",
         "url": null
-      }
+      },
+      "height_m": 29.5,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 2611 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 3 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_005",
@@ -300,7 +312,8 @@
       "story": "This palm survived being in the way twice, first of traffic and then of a demolition crew, thanks to one head gardener's refusal to let it simply be cut down. It originally grew in the courtyard of a Marist Brothers school at Plaza Mirasol, until the early 1960s, when that building and others nearby were demolished to widen what had been the narrow street of Les Granotes into today's Calle Poeta Querol. Rather than lose the tree, head gardener Vicente Peris asked mayor Adolfo Rincon de Arellano to close the surrounding streets to traffic for a single night, and the palm was loaded onto two trucks and moved under cover of darkness to a new home at the start of Avenida de Aragon, beside La Alameda, where it still stands today. The relocation is documented specifically enough, down to the mayor's name and the two-truck detail, that it reads as verified local history rather than embellished legend, a rare case on this list of a tree's survival being an entirely deliberate human choice rather than an accident of neglect.",
       "verified_sources": [
         "https://valenciablancoynegro.blogspot.com/2019/10/la-palmera-de-vicente-peris.html",
-        "https://valenciaplaza.com/siete-arboles-historicos-de-valencia"
+        "https://valenciaplaza.com/siete-arboles-historicos-de-valencia",
+        "valencia-arboles-monumentales.json, no. 673"
       ],
       "access": "Free, public promenade",
       "transport": "10 min walk from Alameda metro station",
@@ -318,7 +331,9 @@
       "official_register": {
         "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 673",
         "url": null
-      }
+      },
+      "height_m": 25.7,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 673 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_009",
@@ -336,7 +351,8 @@
       "story": "At just over 41 metres tall, this eucalyptus is the tallest tree in the province of Valencia and the fourth tallest recorded anywhere in the wider region, a scale confirmed by the city's own maintenance crews, who need aerial platforms and, for its highest branches, help from the fire service just to prune it safely. It grows in the Parc Lineal in Benimamet, on the northwestern edge of the city, next to the tram line that was later routed underground past it, and is formally listed both by the Valencia city council and in the Comunitat Valenciana's own Catálogo de Árboles Monumentales y Singulares, the regional register that protects it by law. Eucalyptus camaldulensis, native to Australia, was planted widely across Mediterranean Spain from the early 20th century onward for its fast growth and tolerance of poor, dry soil, but few specimens anywhere in the region have been left to grow as large as this one. Its trunk runs some 6.1 metres around at the base, with a crown spreading 30 metres wide, dimensions that make it visible well beyond the park it stands in.",
       "verified_sources": [
         "https://www.valencia.es/cas/actualidad/-/content/eucalipto-benim%C3%A0met",
-        "https://mediambient.gva.es/es/web/cief/cataleg-d-arbres-monumentals-i-singulars"
+        "https://mediambient.gva.es/es/web/cief/cataleg-d-arbres-monumentals-i-singulars",
+        "valencia-arboles-monumentales.json, no. 2375"
       ],
       "access": "Free, public park",
       "transport": "Adjacent to Les Carolines metro station (Line 4)",
@@ -354,7 +370,9 @@
       "official_register": {
         "name": "Catalogo de Arboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana), no. 2375",
         "url": null
-      }
+      },
+      "height_m": 41.2,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 2375 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_010",
@@ -418,7 +436,9 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 1370,
-      "how_to_recognise": "You can recognise it by its fused, multi-trunked base behind a low fence protecting the roots, with a second giant fig visible thirty metres away over the wall. It stands in Plaza Centenar de la Ploma."
+      "how_to_recognise": "You can recognise it by its fused, multi-trunked base behind a low fence protecting the roots, with a second giant fig visible thirty metres away over the wall. It stands in Plaza Centenar de la Ploma.",
+      "height_m": 26.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 2396 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_013",
@@ -449,7 +469,9 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 620,
-      "how_to_recognise": "You can recognise it as the smallest of Valencia's registered giant figs, standing at the foot of the Torres de Serranos gate. It stands in the Alameditas de Serranos."
+      "how_to_recognise": "You can recognise it as the smallest of Valencia's registered giant figs, standing at the foot of the Torres de Serranos gate. It stands in the Alameditas de Serranos.",
+      "height_m": 17.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 2455 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_014",
@@ -484,7 +506,9 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "girth_cm": 968,
-      "how_to_recognise": "You can recognise it as one of three giant figs in the Glorieta, its trunk 9.7 metres round, a minute's walk from El Titan across the road. It stands in the Jardin de la Glorieta, next to the Palacio de Justicia."
+      "how_to_recognise": "You can recognise it as one of three giant figs in the Glorieta, its trunk 9.7 metres round, a minute's walk from El Titan across the road. It stands in the Jardin de la Glorieta, next to the Palacio de Justicia.",
+      "height_m": 26.0,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 681 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_015",
@@ -525,7 +549,9 @@
       },
       "paid_entry": true,
       "girth_cm": 535,
-      "how_to_recognise": "You can recognise it by a crown of near-vertical branches bundled upright rather than spread wide, unusual among the garden's other trees. It stands in the Jardi Botanic de la Universitat de Valencia."
+      "how_to_recognise": "You can recognise it by a crown of near-vertical branches bundled upright rather than spread wide, unusual among the garden's other trees. It stands in the Jardi Botanic de la Universitat de Valencia.",
+      "height_m": 36.2,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 1137 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_016",
@@ -908,7 +934,9 @@
       },
       "paid_entry": true,
       "notes": "No age or girth in any source. Independently named and described by the Jardi Botanic's own site (jardibotanic.org), which corroborates the register's coordinates and calls it 'la palmera mas especial del Jardin' for its 35+ branching stems, an unusual multi-trunk form for this species.",
-      "how_to_recognise": "You can recognise it by more than 35 trunks all rising and forking from a single base, like a firework caught mid-burst. It stands in the Jardi Botanic de la Universitat de Valencia."
+      "how_to_recognise": "You can recognise it by more than 35 trunks all rising and forking from a single base, like a firework caught mid-burst. It stands in the Jardi Botanic de la Universitat de Valencia.",
+      "height_m": 19.1,
+      "verify_notes": "Height from Catálogo de Árboles Monumentales y Singulares de la Comunitat Valenciana (Generalitat Valenciana) no. 4916 (data/registers/valencia-arboles-monumentales.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "vlc_027",

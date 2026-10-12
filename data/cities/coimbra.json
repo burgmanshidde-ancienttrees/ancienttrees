@@ -44,7 +44,8 @@
       "story": "The University of Coimbra's botanical garden grows seven different species of araucaria. This is the one that stops people on the path. A bunya pine from southeast Queensland, it has a trunk 6.3 metres round and a crown 16.6 metres across, carried on only 19 metres of height: a tree built outward rather than upward.\n\nIts address is half the story. You reach it through the Arcos do Jardim, the arches of the Sao Sebastiao aqueduct, then climb to the upper terrace where the garden keeps its oldest exotics. That collection dates to the nineteenth century and it is not a modest one: thirty species of eucalyptus, seven araucarias, and a Moreton Bay fig that Thomas Pakenham thought worth putting in Remarkable Trees of the World. A Portuguese newspaper surveying the garden's treasures in 2018 described this terrace plainly as the part where the big trees are, some of them a century and a half old.\n\nPortugal's register of trees of public interest classified the bunya in December 2010 and recorded its age as 150 years at that measurement, which puts it around 165 now. The species is Australian and this tree has never seen its own continent. Everything else about the setting, from the aqueduct arches to the terrace walls, is Coimbra.",
       "verified_sources": [
         "ICNF Arvoredo de Interesse Publico register (si.icnf.pt/wfs/arv_class, CC BY 4.0), processo KNJ1/571, classified Aviso n.o 25 de 29/12/2010",
-        "https://www.publico.pt/2018/09/22/fugas/noticia/os-tesouros-do-botanico-cobrem-uma-encosta-1844381 (fetched via web.archive.org/web/20241114105459)"
+        "https://www.publico.pt/2018/09/22/fugas/noticia/os-tesouros-do-botanico-cobrem-uma-encosta-1844381 (fetched via web.archive.org/web/20241114105459)",
+        "portugal-icnf.json, no. KNJ1/571"
       ],
       "access": "Paid entry, University of Coimbra Botanical Garden ticket; reached through the Arcos do Jardim gate under the aqueduct arches.",
       "transport": "5-10 minute walk from Praca da Republica / central Coimbra.",
@@ -61,7 +62,9 @@
       "official_register": {
         "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/571",
         "url": null
-      }
+      },
+      "height_m": 19.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/571 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "cbr_002",
@@ -81,7 +84,8 @@
       "verified_sources": [
         "ICNF Arvoredo de Interesse Publico register, processo KNJ1/415, classified D.R. n.o 188, II Serie de 16/08/2002",
         "https://www.monumentaltrees.com/en/prt/centro/coimbra/4104_valledecanas/ (fetched via web.archive.org/web/20251203102458)",
-        "https://luamarte.wordpress.com/2021/10/15/fui-ver-a-arvore-mais-alta-de-portugal/"
+        "https://luamarte.wordpress.com/2021/10/15/fui-ver-a-arvore-mais-alta-de-portugal/",
+        "portugal-icnf.json, no. KNJ1/415"
       ],
       "access": "Free; inside the Mata Nacional de Vale de Canas, a small enclosed national forest with a marked path from a small parking area.",
       "transport": "About 3.6 km from central Coimbra (car or taxi), then roughly a 15-minute walk from the parking area.",
@@ -97,7 +101,9 @@
       "official_register": {
         "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/415",
         "url": null
-      }
+      },
+      "height_m": 72.9,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/415 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "cbr_003",
@@ -117,7 +123,8 @@
       "verified_sources": [
         "ICNF Arvoredo de Interesse Publico register, processo KNJ1/416, classified D.R. n.o 188, II Serie de 16/08/2002",
         "https://www.monumentaltrees.com/en/prt/centro/coimbra/4104_valledecanas/ (fetched via web.archive.org/web/20251203102458)",
-        "https://luamarte.wordpress.com/2021/10/15/fui-ver-a-arvore-mais-alta-de-portugal/"
+        "https://luamarte.wordpress.com/2021/10/15/fui-ver-a-arvore-mais-alta-de-portugal/",
+        "portugal-icnf.json, no. KNJ1/416"
       ],
       "access": "Free; same Mata Nacional de Vale de Canas forest as the Karri Knight, a few dozen metres away on the same path.",
       "transport": "Same as the Karri Knight: about 3.6 km from central Coimbra, then a roughly 15-minute walk from the parking area.",
@@ -133,7 +140,9 @@
       "official_register": {
         "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/416",
         "url": null
-      }
+      },
+      "height_m": 54.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/416 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "cbr_004",
@@ -152,7 +161,8 @@
       "story": "Its crown is wider than the tree is tall: 34.5 metres across against 28 metres of height. The camphor tree on the agricultural college's campus at Bencanta has had a century and a half to spread and nothing in its way.\n\nCinnamomum camphora comes from East Asia. This one went in in 1860, according to the school, which makes it about 165 years old, and Portugal classified it as a tree of public interest back in July 1969. The trunk has not stopped since: the national register measured 8.5 metres round in 2015 and the school reported more than 9 metres in December 2025.\n\nThat December was a busy month for it. The tree was named one of ten finalists in the public vote for Portugal's Tree of the Year 2026, and in the same announcement the school pointed out that the route planned for a future high-speed railway passes close enough to put it at risk. It has stood through 165 years of whatever the campus did around it, and the thing that could finally move it is a line that does not exist yet.\n\nOne practical note, because the walk out here is 3.7 kilometres. The tree stands on the grounds of a public college and is visible from the campus paths, but the school handles visits through its external relations office rather than leaving the gates open by default. Ask first.",
       "verified_sources": [
         "ICNF Arvoredo de Interesse Publico register, processo KNJ1/170, classified D.G. n.o 173, II Serie de 25/07/1969",
-        "https://www.esac.pt/index.php/2025/12/04/canforeira-da-esac-e-candidata-a-arvore-do-ano-2026/"
+        "https://www.esac.pt/index.php/2025/12/04/canforeira-da-esac-e-candidata-a-arvore-do-ano-2026/",
+        "portugal-icnf.json, no. KNJ1/170"
       ],
       "access": "On the campus of ESAC, a public agricultural college in Bencanta; visible from campus paths. General public walk-in access was not independently confirmed this pass; the school directs formal visit requests through its external relations office (gac@esac.pt), so it is worth confirming before a special trip.",
       "transport": "Near the Bencanta railway station (Linha do Norte, Coimbra suburban services), about 3.7 km from central Coimbra.",
@@ -168,7 +178,9 @@
       "official_register": {
         "name": "Arvoredo de Interesse Público (ICNF), no. KNJ1/170",
         "url": null
-      }
+      },
+      "height_m": 28.0,
+      "verify_notes": "Height from Arvoredo de Interesse Público (ICNF) no. KNJ1/170 (data/registers/portugal-icnf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "name": "The Lovers' Banyan Tree",

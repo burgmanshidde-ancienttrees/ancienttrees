@@ -43,7 +43,8 @@
       },
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/L%C3%ADpy_ve_Zlat%C3%A9_Korun%C4%9B",
-        "AOPK CR national pamatny strom (memorial tree) register, entry supplied with coordinates in the city brief (register itself counts as one source per BRIEF_RESEARCH.md)"
+        "AOPK CR national pamatny strom (memorial tree) register, entry supplied with coordinates in the city brief (register itself counts as one source per BRIEF_RESEARCH.md)",
+        "czech-aopk-pamatne-stromy.json, no. 103092"
       ],
       "access": "Free, on the public village square in Zlata Koruna. Not part of the monastery's ticketed grounds, though it stands only about 150 metres from the gate.",
       "transport": "Zlatá Koruna train station (line České Budějovice-Český Krumlov-Černý Kříž) then a roughly 15-20 minute walk downhill into the village; about 8km / 20-25 minutes by car or bike from Český Krumlov's old town, along the Vltava.",
@@ -59,7 +60,12 @@
         "status": "approved",
         "width": 1550,
         "height": 2250
-      }
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 103092",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103092 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ckr_002",
@@ -77,7 +83,8 @@
       },
       "verified_sources": [
         "https://www.klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy",
-        "https://cs.wikipedia.org/wiki/L%C3%ADpy_ve_Zlat%C3%A9_Korun%C4%9B"
+        "https://cs.wikipedia.org/wiki/L%C3%ADpy_ve_Zlat%C3%A9_Korun%C4%9B",
+        "czech-aopk-pamatne-stromy.json, no. 103091"
       ],
       "access": "Inside Zlata Koruna monastery, a paid national heritage site (from about 180 Kc, discounts available, closed Mondays; roughly 09:00-15:30 April-May, 09:00-16:30 June-August).",
       "transport": "Zlatá Koruna train station (line České Budějovice-Český Krumlov-Černý Kříž) then a roughly 15-20 minute walk downhill; about 8km / 20-25 minutes by car or bike from Český Krumlov's old town.",
@@ -91,7 +98,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 103091",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103091 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ckr_003",
@@ -109,7 +121,8 @@
       },
       "verified_sources": [
         "https://www.klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy",
-        "AOPK CR national pamatny strom (memorial tree) register, entry supplied with coordinates in the city brief"
+        "AOPK CR national pamatny strom (memorial tree) register, entry supplied with coordinates in the city brief",
+        "czech-aopk-pamatne-stromy.json, no. 106314"
       ],
       "access": "Inside Zlata Koruna monastery's garden, on the guided tour route; same paid admission as the Kapucinka Linden.",
       "transport": "Zlatá Koruna train station (line České Budějovice-Český Krumlov-Černý Kříž) then a roughly 15-20 minute walk downhill; about 8km / 20-25 minutes by car or bike from Český Krumlov's old town.",
@@ -133,7 +146,12 @@
         "status": "approved",
         "width": 4640,
         "height": 3472
-      }
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 106314",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 106314 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ckr_004",
@@ -151,7 +169,8 @@
       },
       "verified_sources": [
         "https://www.klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy",
-        "https://cs.wikipedia.org/wiki/L%C3%ADpy_ve_Zlat%C3%A9_Korun%C4%9B"
+        "https://cs.wikipedia.org/wiki/L%C3%ADpy_ve_Zlat%C3%A9_Korun%C4%9B",
+        "czech-aopk-pamatne-stromy.json, no. 106315"
       ],
       "access": "Inside or right at the edge of Zlata Koruna monastery, by the pond near the entrance gate; treat as part of the paid tour route.",
       "transport": "Zlatá Koruna train station (line České Budějovice-Český Krumlov-Černý Kříž) then a roughly 15-20 minute walk downhill; about 8km / 20-25 minutes by car or bike from Český Krumlov's old town.",
@@ -173,7 +192,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 106315",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 106315 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ckr_005",
@@ -189,7 +213,8 @@
       },
       "verified_sources": [
         "AOPK CR national pamatny strom (memorial tree) register, code 106312, entry supplied with coordinates in the city brief",
-        "https://cs.wikipedia.org/wiki/Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_okrese_%C4%8Cesk%C3%BD_Krumlov"
+        "https://cs.wikipedia.org/wiki/Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_okrese_%C4%8Cesk%C3%BD_Krumlov",
+        "czech-aopk-pamatne-stromy.json, no. 106312"
       ],
       "access": "Free, roadside, by the bridge over the Polecnice in Stare Dobrkovice; no gate or private land involved.",
       "transport": "About 2.5km from Český Krumlov's old town along the Kájov road; roughly 30-35 minutes on foot, a few minutes by car or bike. No public transport stop confirmed right at the bridge.",
@@ -213,7 +238,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 106312",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 106312 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "ckr_006",
@@ -229,7 +259,8 @@
       },
       "verified_sources": [
         "AOPK CR national pamatny strom (memorial tree) register, code 103100 / DRUSOP ID 9900, entry supplied with coordinates in the city brief",
-        "https://cs.wikipedia.org/wiki/Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_okrese_%C4%8Cesk%C3%BD_Krumlov (corroborated by the tree's own Wikidata item, Q26788079, which cites the same DRUSOP register entry)"
+        "https://cs.wikipedia.org/wiki/Seznam_pam%C3%A1tn%C3%BDch_strom%C5%AF_v_okrese_%C4%8Cesk%C3%BD_Krumlov (corroborated by the tree's own Wikidata item, Q26788079, which cites the same DRUSOP register entry)",
+        "czech-aopk-pamatne-stromy.json, no. 103100"
       ],
       "access": "Appears to stand free and in the open beside route 1572 at the edge of Drahoslavice, though nobody has confirmed this on the ground.",
       "transport": "About 2.4km from Český Krumlov's old town along route 1572 toward Přídolí; roughly 30 minutes on foot, a few minutes by car or bike. No public transport stop confirmed at Drahoslavice itself.",
@@ -251,7 +282,12 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
-      }
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 103100",
+        "url": null
+      },
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103100 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     }
   ]
 }

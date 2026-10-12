@@ -121,7 +121,8 @@
       "verified_sources": [
         "https://fondoambiente.it/luoghi/cortile-del-leccio",
         "https://www.theaboutmagazine.it/cortile-del-leccio-modena",
-        "register: MASAF national monumental trees, sheet 04/F257/MO/08 (Complesso di San Paolo, Via Selmi 67, Quercus ilex, girth 270cm, height 15m)"
+        "register: MASAF national monumental trees, sheet 04/F257/MO/08 (Complesso di San Paolo, Via Selmi 67, Quercus ilex, girth 270cm, height 15m)",
+        "italy-masaf.json, no. 04/F257/MO/08"
       ],
       "access": "Free. Reached via a corridor from Via Francesco Selmi into the courtyard of the former San Paolo monastery complex, now home to the university law faculty library, a EU documentation centre, and a cafe/coworking space; the courtyard itself is open to the public without an appointment.",
       "transport": "In Modena's historic centre, roughly 10-12 minutes' walk from Piazza Grande / the Duomo.",
@@ -136,7 +137,12 @@
       "curation_status": "flagged",
       "notes": "Sources disagree on the age: theaboutmagazine.it gives 120 years, the FAI listing calls the tree 'secolare' without a figure.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its crown spreading roughly 30 metres, twice as wide as the tree is tall, filling the courtyard it is named for. It stands in the Cortile del Leccio at the former San Paolo monastery."
+      "how_to_recognise": "You can recognise it by its crown spreading roughly 30 metres, twice as wide as the tree is tall, filling the courtyard it is named for. It stands in the Cortile del Leccio at the former San Paolo monastery.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 04/F257/MO/08",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 04/F257/MO/08 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "mod_002",
@@ -157,7 +163,8 @@
       "verified_sources": [
         "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
         "https://ilregistrodeglialberi.it/5199-cipresso-calvo-modena-mo-emilia-romagna",
-        "register: MASAF national monumental trees, sheet 07/F257/MO/08 (Villa Ombrosa, Strada Vaciglio Nord 4, 'Insieme omogeneo di Taxodium distichum', urban)"
+        "register: MASAF national monumental trees, sheet 07/F257/MO/08 (Villa Ombrosa, Strada Vaciglio Nord 4, 'Insieme omogeneo di Taxodium distichum', urban)",
+        "italy-masaf.json, no. 07/F257/MO/08"
       ],
       "access": "Free. Parco Villa Ombrosa is a public municipal park (now also home to Modena's Casa delle Donne), with entrances from Strada Vaciglio Nord, Via Vignolese, Via San Remo and Via Levanto. No gate or appointment needed.",
       "transport": "About 2 km from Piazza Grande; served by city bus lines 2, 3, 731, 740, 760, 820.",
@@ -177,7 +184,12 @@
         "kind": "autumn colour",
         "label": "November, when all five turn foxy red and then drop their needles"
       },
-      "how_to_recognise": "You are looking for five of them rather than one tree, 30 metres tall, dropping their needles every autumn after turning foxy red. The largest is 4.3 metres round. They stand together in the small park."
+      "how_to_recognise": "You are looking for five of them rather than one tree, 30 metres tall, dropping their needles every autumn after turning foxy red. The largest is 4.3 metres round. They stand together in the small park.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 07/F257/MO/08",
+        "url": null
+      },
+      "verify_notes": "Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 07/F257/MO/08 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
     },
     {
       "id": "mod_005",

@@ -40,7 +40,8 @@
       "verified_sources": [
         "https://sk.wikipedia.org/wiki/Lipsk%C3%A9ho_lipy",
         "https://www.trencianskestankovce.sk/obec-3/historia-obce/osobnosti-/",
-        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/275"
+        "http://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/275",
+        "slovakia-chranene-stromy.json, no. 275"
       ],
       "access": "Free, in a public village memorial park with the Ján Lipský monument and bust; open ground, no ticket or booking needed.",
       "transport": "Trenčianske Stankovce village (Sedličná part), on the Trenčín-Nemšová regional bus route; nearest train station is Trenčín, then local bus or a short taxi ride.",
@@ -74,7 +75,12 @@
         "source_name": "Lipského lipy",
         "qid": "Q121362478",
         "views": 4
-      }
+      },
+      "official_register": {
+        "name": "Chránené stromy (Štátna ochrana prírody SR), no. 275",
+        "url": null
+      },
+      "verify_notes": "Register number from Chránené stromy (Štátna ochrana prírody SR) no. 275 (data/registers/slovakia-chranene-stromy.json), matched on our pin at 5 m (register_match.py, 2026-10-12)."
     }
   ]
 }
