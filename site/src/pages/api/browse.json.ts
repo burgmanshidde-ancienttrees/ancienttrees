@@ -84,7 +84,11 @@ export async function GET() {
       : {}),
     // A seat taken by somebody not (yet) named: the app must not offer it as
     // empty, exactly as the website stops drawing the open seat (2026-10-06).
-    ...(!namedAmbassadorsFor(c.id).length && placeHasAmbassador(c.id) ? { seated: true } : {}),
+    // Always sent, true or false (2026-10-12). Sent only when true, the field
+    // vanished from the whole feed the day no city had an unnamed ambassador,
+    // and feedshape.py rightly read that as a field gone; the app reads a
+    // missing value as false, so false says the same thing out loud.
+    seated: !namedAmbassadorsFor(c.id).length && placeHasAmbassador(c.id),
   }));
 
   // Contract D's own gate, the one /collections applies: a draft is built for
