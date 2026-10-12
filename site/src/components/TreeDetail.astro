@@ -235,7 +235,7 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
           somebody else maps". Filled by ADD_PHOTO_JS from the account; hidden
           for anybody with none (Hidde, 2026-10-12: "i see the original photo
           not the photo i had taken"). */}
-      <section class="td-yours" id="td-yours" hidden data-one={U.yourPhoto} data-many={U.yourPhotos}>
+      <section class="td-yours" id="td-yours" hidden data-one={U.yourPhoto} data-many={U.yourPhotos} data-more={U.photoMore} data-deleted={U.photoDeleted} data-more-icon={icon("dots-three", "bold")}>
         <h2 class="td-yours-h"></h2>
         <div class="td-yours-row"></div>
       </section>
@@ -373,6 +373,17 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
 
   {/* Which maps app, asked once on an iPhone (DirectionsAsk): equal choices,
       so both are grey, and the cross is the cancel. */}
+  {/* Delete one of YOUR photographs of this tree (2026-10-12). Google Maps:
+      your photo, More, "Delete this photo", confirm; Apple Photos asks the
+      same once. CONVENTIONS.md, "Deleting your own photograph". */}
+  <Sheet lang={p.lang} class="own-del" id="own-del" aria-labelledby="own-del-h">
+    <h3 class="at-sheet-h" id="own-del-h">{U.photoDeleteTitle}</h3>
+    <p class="at-sheet-p">{U.photoDeleteBody}</p>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--red" data-own-del-yes>{U.photoDeleteBtn}</button>
+      <button type="button" class="sheet-b sheet-b--quiet" data-own-del-no>{U.cancel}</button>
+    </div>
+  </Sheet>
   <Sheet lang={p.lang} class="dir-pick" aria-label={U.dirTitle}>
     <h3 class="at-sheet-h">{U.dirTitle}</h3>
     <div class="at-sheet-btns">

@@ -390,6 +390,12 @@ export interface UIStrings {
   /** Heading over your own photographs of this tree, the app's "Your photograph". */
   yourPhoto: string;
   yourPhotos: string;
+  /** Your own photograph's More button, and the sheet that deletes it (Google Maps: More, Delete this photo). */
+  photoMore: string;
+  photoDeleteTitle: string;
+  photoDeleteBody: string;
+  photoDeleteBtn: string;
+  photoDeleted: string;
   /** The link from the acknowledgement to where the photograph now lives. */
   addPhotoSeeMine: string;
   /** The optional second photograph when somebody adds a tree: the sign
@@ -720,6 +726,11 @@ const EN: UIStrings = {
   addPhotoOnPage: "Your photo is on this page",
   yourPhoto: "Your photograph",
   yourPhotos: "Your photographs",
+  photoMore: "More",
+  photoDeleteTitle: "Delete this photo?",
+  photoDeleteBody: "It leaves your trees. If it is already on the tree's page, it stays there.",
+  photoDeleteBtn: "Delete photo",
+  photoDeleted: "Photo deleted",
   addPhotoSeeMine: "See it in My trees",
   havePhotographed: "Have you photographed this tree?",
   havePhotographedLine: "If yours shows it better than the picture above, it can take its place, or stand beside it.",
@@ -1002,6 +1013,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoOnPage: "Tu foto está en esta página",
     yourPhoto: "Tu fotografía",
     yourPhotos: "Tus fotografías",
+    photoMore: "Más",
+    photoDeleteTitle: "¿Eliminar esta foto?",
+    photoDeleteBody: "Desaparece de tus árboles. Si ya está en la página del árbol, se queda allí.",
+    photoDeleteBtn: "Eliminar foto",
+    photoDeleted: "Foto eliminada",
     addPhotoSeeMine: "Verla en Mis árboles",
     havePhotographed: "¿Has fotografiado este árbol?",
     havePhotographedLine: "Si la tuya lo muestra mejor que la foto de arriba, puede ocupar su lugar, o aparecer junto a ella.",
@@ -1284,6 +1300,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoOnPage: "La tua foto è su questa pagina",
     yourPhoto: "La tua fotografia",
     yourPhotos: "Le tue fotografie",
+    photoMore: "Altro",
+    photoDeleteTitle: "Eliminare questa foto?",
+    photoDeleteBody: "Esce dai tuoi alberi. Se è già sulla pagina dell'albero, resta lì.",
+    photoDeleteBtn: "Elimina foto",
+    photoDeleted: "Foto eliminata",
     addPhotoSeeMine: "Vedila in I miei alberi",
     havePhotographed: "Hai fotografato questo albero?",
     havePhotographedLine: "Se la tua foto lo mostra meglio di quella qui sopra, può prenderne il posto, o comparire accanto ad essa.",
@@ -1566,6 +1587,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoOnPage: "Je foto staat op deze pagina",
     yourPhoto: "Jouw foto",
     yourPhotos: "Jouw foto's",
+    photoMore: "Meer",
+    photoDeleteTitle: "Deze foto verwijderen?",
+    photoDeleteBody: "Hij verdwijnt uit je bomen. Staat hij al op de pagina van de boom, dan blijft hij daar.",
+    photoDeleteBtn: "Foto verwijderen",
+    photoDeleted: "Foto verwijderd",
     addPhotoSeeMine: "Bekijk hem bij Mijn bomen",
     havePhotographed: "Heb je deze boom gefotografeerd?",
     havePhotographedLine: "Als jouw foto hem beter laat zien dan de foto hierboven, kan die de plek innemen, of ernaast komen te staan.",
@@ -1848,6 +1874,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoOnPage: "Dein Foto ist auf dieser Seite",
     yourPhoto: "Dein Foto",
     yourPhotos: "Deine Fotos",
+    photoMore: "Mehr",
+    photoDeleteTitle: "Dieses Foto löschen?",
+    photoDeleteBody: "Es verschwindet aus deinen Bäumen. Steht es schon auf der Seite des Baums, bleibt es dort.",
+    photoDeleteBtn: "Foto löschen",
+    photoDeleted: "Foto gelöscht",
     addPhotoSeeMine: "In Meine Bäume ansehen",
     havePhotographed: "Hast du diesen Baum fotografiert?",
     havePhotographedLine: "Wenn dein Foto ihn besser zeigt als das oben, kann es dessen Platz einnehmen oder daneben stehen.",
@@ -2130,6 +2161,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoOnPage: "A sua foto está nesta página",
     yourPhoto: "A sua fotografia",
     yourPhotos: "As suas fotografias",
+    photoMore: "Mais",
+    photoDeleteTitle: "Eliminar esta foto?",
+    photoDeleteBody: "Sai das suas árvores. Se já estiver na página da árvore, fica lá.",
+    photoDeleteBtn: "Eliminar foto",
+    photoDeleted: "Foto eliminada",
     addPhotoSeeMine: "Ver em As minhas árvores",
     havePhotographed: "Fotografou esta árvore?",
     havePhotographedLine: "Se a sua mostrar melhor do que a foto acima, pode ocupar o lugar dela, ou aparecer ao lado.",
@@ -2412,6 +2448,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoOnPage: "Votre photo est sur cette page",
     yourPhoto: "Votre photo",
     yourPhotos: "Vos photos",
+    photoMore: "Plus",
+    photoDeleteTitle: "Supprimer cette photo ?",
+    photoDeleteBody: "Elle quitte tes arbres. Si elle est déjà sur la page de l'arbre, elle y reste.",
+    photoDeleteBtn: "Supprimer la photo",
+    photoDeleted: "Photo supprimée",
     addPhotoSeeMine: "La voir dans Mes arbres",
     havePhotographed: "Avez-vous photographié cet arbre ?",
     havePhotographedLine: "Si la vôtre le montre mieux que la photo ci-dessus, elle peut prendre sa place, ou apparaître à côté.",
@@ -2693,6 +2734,11 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     addPhotoOnPage: "あなたの写真はこのページに掲載されています",
     yourPhoto: "あなたの写真",
     yourPhotos: "あなたの写真",
+    photoMore: "その他",
+    photoDeleteTitle: "この写真を削除しますか？",
+    photoDeleteBody: "あなたの木から削除されます。すでに木のページに掲載されている場合は、そのまま残ります。",
+    photoDeleteBtn: "写真を削除",
+    photoDeleted: "写真を削除しました",
     addPhotoSeeMine: "アカウントで見る",
     havePhotographed: "この木を撮影しましたか?",
     havePhotographedLine: "上の写真より良く撮れていれば、それに差し替えるか、並べて掲載します。",

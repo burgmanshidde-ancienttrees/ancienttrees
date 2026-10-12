@@ -478,7 +478,14 @@ struct TreeDetail: View {
             PhotoViewer(title: tree.name,
                         isPresented: Binding(get: { viewingOwn != nil },
                                              set: { if !$0 { viewingOwn = nil } }),
-                        local: sightings.image(s))
+                        local: sightings.image(s),
+                        // Your photo of one of OUR trees can go on its own; a
+                        // tree only you have keeps "Remove this tree", since
+                        // its photograph is the tree. The tick stays either way.
+                        onDelete: s.id == mine?.id ? nil : {
+                            sightings.remove(s.id)
+                            navigator.snack = .init(text: "Photo deleted", symbol: "trash")
+                        })
         }
         .sheet(isPresented: $sharing) { ShareSheet(items: shareItems) }
         .sheet(isPresented: $choosingCollect, onDismiss: {

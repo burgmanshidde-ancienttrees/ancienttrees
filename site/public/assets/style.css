@@ -3272,3 +3272,12 @@ dialog.at-sheet .at-sheet-fine[hidden] { display: none; }
    epithet italic, the hybrid sign, rank words and cultivars upright. Wins over
    any component rule that sets an <i> upright for its own use. */
 i[lang="la"], .sr-body i[lang="la"] { font-style: italic; }
+/* More on your own photograph (2026-10-12), the Google Maps pattern: a round
+   button over the corner; 32px drawn, 44px to tap. */
+.td-yours-shot { position: relative; }
+.td-yours-shot > a { display: block; }
+.td-yours-more { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; border-radius: 50%;
+  border: 0; padding: 0; background: rgba(255,255,255,0.92); color: var(--ink); cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.18); }
+.td-yours-more::before { content: ""; position: absolute; inset: -6px; }
+.td-yours-more svg { width: 18px; height: 18px; fill: currentColor; }

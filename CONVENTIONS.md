@@ -3336,3 +3336,11 @@ Sources, read 2026-10-12 (AllTrails' own pages refuse an automated browser):
 - **Reference:** AllTrails and komoot to European visitors; the EDPB cookie-banner taskforce report (2023) and the Dutch AP's guidance.
 - **What they do:** a bar at the foot of the page, not a wall; Accept and Decline side by side with the same size and weight; nothing loads before Accept; a "Cookies" link in the footer reopens the choice at any time.
 - **Ours:** components/ConsentBar.astro. A bar rather than Sheet.astro because a consent question may not block the page it asks about. Google's basic consent mode: gtag.js is not fetched until Accept. Ignoring the bar counts as no. The answer lives in `at_consent`, a device store (data/cross-device.json), because consent is per browser.
+
+---
+
+## Deleting your own photograph (2026-10-12, looked up)
+
+**Reference: Google Maps.** Your contributions, Photos, the photo's More button, "Delete this photo"; deleting removes it from Maps and Search, never from the phone's own gallery. https://support.google.com/maps/answer/2622947 **Apple Photos** puts a bin in the full-screen viewer and confirms once with a destructive sheet.
+
+Ours: on the website each of your photographs in the "Your photograph" row carries a round More button (Phosphor dots-three) that opens the one sheet: "Delete this photo?", a red "Delete photo", Cancel. In the app the full-screen viewer of your own photograph carries a bin in its top bar and the same sheet (PhotoViewer `onDelete`). File first, row second, as SightingSync.remove. The tick stays: a deleted photo is not an undone visit, as on Google Maps. Where we differ: a photograph already published on the tree's page stays there (terms, 2026-10-04), and the sheet says so in one line. A tree only you have keeps "Remove this tree", because its photograph is the tree.

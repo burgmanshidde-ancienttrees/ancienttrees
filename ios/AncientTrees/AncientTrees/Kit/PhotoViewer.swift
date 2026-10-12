@@ -36,6 +36,12 @@ struct PhotoViewer: View {
     /// you stood in front of. Same viewer and same gestures; no credit, since
     /// nobody but you is being shown it.
     var local: UIImage? = nil
+    /// Set only for YOUR photograph of one of our trees (2026-10-12): a bin in
+    /// the top bar, then one confirming sheet, the way Apple Photos and Google
+    /// Maps ("More, Delete this photo") delete a picture of your own. Nil for
+    /// ours and for a tree only you have, whose photograph IS the tree.
+    var onDelete: (() -> Void)? = nil
+    @State private var confirmingDelete = false
 
     @State private var scale: CGFloat = 1
     @State private var steady: CGFloat = 1
@@ -91,6 +97,17 @@ struct PhotoViewer: View {
             if chrome {
                 VStack {
                     HStack {
+                        if onDelete != nil {
+                            Button { confirmingDelete = true } label: {
+                                Image(systemName: "trash")
+                                    .font(.system(size: 15, weight: .semibold))
+                                    .foregroundStyle(.white)
+                                    .frame(width: 44, height: 44)
+                                    .background(.black.opacity(0.45), in: Circle())
+                            }
+                            .accessibilityLabel("Delete photo")
+                            .accessibilityIdentifier("photo-delete")
+                        }
                         Spacer()
                         Button { isPresented = false } label: {
                             Image(systemName: "xmark")
@@ -134,6 +151,20 @@ struct PhotoViewer: View {
         .statusBarHidden()
         .accessibilityIdentifier("photo-viewer")
         .onAppear { at = gallery.indices.contains(startAt) ? startAt : 0 }
+        // The same words as the website's sheet (UIStrings photoDelete*).
+        .sheet(isPresented: $confirmingDelete) {
+            BrandSheet(
+                title: "Delete this photo?",
+                message: "It leaves your trees. If it is already on the tree's page, it stays there.",
+                buttons: [
+                    .destructive("Delete photo", id: "photo-delete-confirm") {
+                        confirmingDelete = false
+                        onDelete?()
+                        isPresented = false
+                    },
+                    .secondary("Cancel") { confirmingDelete = false },
+                ])
+        }
     }
 
     @ViewBuilder private var picture: some View {

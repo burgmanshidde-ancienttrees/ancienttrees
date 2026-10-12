@@ -127,19 +127,84 @@ export const ADD_PHOTO_JS = `
       n === 1 ? yours.getAttribute('data-one') : yours.getAttribute('data-many');
     yours.hidden = n === 0;
   }
-  function addShot(url, iso, first) {
+  function addShot(url, iso, first, rowId, path) {
     if (!yours) return;
     var row = yours.querySelector('.td-yours-row');
-    var fig = document.createElement('a');
+    var fig = document.createElement('div');
     fig.className = 'td-yours-shot';
-    fig.href = url; fig.target = '_blank'; fig.rel = 'noopener';
+    fig.setAttribute('data-id', rowId || '');
+    fig.setAttribute('data-path', path || '');
+    fig.setAttribute('data-url', url);
+    var a = document.createElement('a');
+    a.href = url; a.target = '_blank'; a.rel = 'noopener';
     var img = document.createElement('img');
     img.src = url; img.alt = ''; img.loading = 'lazy';
+    a.appendChild(img);
+    // MORE on your own photograph (Google Maps: More, Delete this photo).
+    var more = document.createElement('button');
+    more.type = 'button'; more.className = 'td-yours-more';
+    more.setAttribute('aria-label', yours.getAttribute('data-more') || 'More');
+    // Phosphor's dots-three, handed over by TreeDetail.astro; never drawn here.
+    more.innerHTML = yours.getAttribute('data-more-icon') || '';
+    more.addEventListener('click', function() { askDelete(fig); });
     var cap = document.createElement('span');
     cap.textContent = dayOf(iso);
-    fig.appendChild(img); fig.appendChild(cap);
+    fig.appendChild(a); fig.appendChild(more); fig.appendChild(cap);
     if (first && row.firstChild) row.insertBefore(fig, row.firstChild); else row.appendChild(fig);
     paintYours(row.children.length);
+  }
+
+  // DELETE ONE OF YOUR PHOTOGRAPHS (2026-10-12). The file first and the row
+  // second, the order SightingSync.remove uses in the app: never leave a row
+  // pointing at nothing. The tick stays: a deleted photo is not an undone
+  // visit, as on Google Maps. A photograph already published stays on the
+  // page (the terms since 2026-10-04); the sheet says so in one line.
+  var delSheet = document.getElementById('own-del');
+  var delTarget = null;
+  function askDelete(fig) {
+    if (!delSheet) return;
+    delTarget = fig;
+    if (delSheet.showModal) delSheet.showModal(); else delSheet.setAttribute('open', '');
+  }
+  function dropShot(fig) {
+    var url = fig.getAttribute('data-url');
+    fig.parentNode.removeChild(fig);
+    var row = yours.querySelector('.td-yours-row');
+    paintYours(row.children.length);
+    var hero = document.querySelector('.photo-stage .td-own-hero');
+    if (hero && hero.getAttribute('src') === url) {
+      var stage = hero.parentNode;
+      stage.removeChild(hero);
+      stage.classList.remove('has-own');
+      var next = row.querySelector('.td-yours-shot');
+      if (next) heroOwn(next.getAttribute('data-url'));
+    }
+  }
+  if (delSheet) {
+    var no = delSheet.querySelector('[data-own-del-no]');
+    var yes = delSheet.querySelector('[data-own-del-yes]');
+    if (no) no.addEventListener('click', function() { delSheet.close(); delTarget = null; });
+    if (yes) yes.addEventListener('click', function() {
+      var fig = delTarget, s = session();
+      delSheet.close(); delTarget = null;
+      if (!fig || !s) return;
+      var id = fig.getAttribute('data-id'), path = fig.getAttribute('data-path');
+      var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token };
+      fig.style.opacity = '0.4';
+      fetch(SB + '/storage/v1/object/sightings/' + path, { method: 'DELETE', headers: h })
+        .then(function(r) {
+          // A file already gone is not a failure; anything else is.
+          if (!r.ok && r.status !== 404 && r.status !== 400) throw new Error('file');
+          return fetch(SB + '/rest/v1/sightings?id=eq.' + encodeURIComponent(id), { method: 'DELETE', headers: h });
+        }).then(function(r) {
+          if (!r.ok) throw new Error('row');
+          dropShot(fig);
+          if (window.atSnack) window.atSnack(yours.getAttribute('data-deleted') || 'Photo deleted');
+        }).catch(function() {
+          fig.style.opacity = '';
+          if (window.atSnack) window.atSnack(msgFailed);
+        });
+    });
   }
   // And on a tree we have NO photograph of, your newest one becomes the
   // hero, for you only: the app's heroOwnShot. Where we have one, ours stays
@@ -166,7 +231,7 @@ export const ADD_PHOTO_JS = `
   (function state() {
     var s = session();
     if (!s || !treeId) return;
-    fetch(SB + '/rest/v1/sightings?select=status,photo,taken_at&photo=not.is.null&tree_id=eq.'
+    fetch(SB + '/rest/v1/sightings?select=id,status,photo,taken_at&photo=not.is.null&tree_id=eq.'
           + encodeURIComponent(treeId) + '&order=taken_at.desc&limit=12',
       { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + s.access_token } })
       .then(function(r) { return r.ok ? r.json() : null; })
@@ -179,7 +244,7 @@ export const ADD_PHOTO_JS = `
           sign(s.access_token, row.photo, function(url) {
             slots[i] = url; done++;
             if (done === rows.length) {
-              slots.forEach(function(u, k) { if (u) addShot(u, rows[k].taken_at, false); });
+              slots.forEach(function(u, k) { if (u) addShot(u, rows[k].taken_at, false, rows[k].id, rows[k].photo); });
               heroOwn(slots.filter(function(u) { return u; })[0]);
             }
           });
@@ -277,7 +342,7 @@ export const ADD_PHOTO_JS = `
         });
       }).then(function(r) {
         if (!r || !r.ok) throw new Error('row');
-        try { var own = URL.createObjectURL(blob); addShot(own, new Date().toISOString(), true); heroOwn(own); } catch (e) {}
+        try { var own = URL.createObjectURL(blob); addShot(own, new Date().toISOString(), true, id, uid + '/' + id + '.jpg'); heroOwn(own); } catch (e) {}
         btn.hidden = true;
         file.value = ''; if (cam) cam.value = '';
         sayWithLink(msgThanks);
