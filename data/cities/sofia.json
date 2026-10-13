@@ -35,14 +35,16 @@
       "age_max": 650,
       "location": {
         "address": "Ulitsa Iskar 2, near the Central Sofia Bath, Sofia",
-        "latitude": 42.6998,
-        "longitude": 23.3245,
+        "latitude": 42.699321,
+        "longitude": 23.324989,
         "neighbourhood": "City Center"
       },
       "story": "According to a story that has passed down through Sofia for generations, Vasil Levski, the revolutionary Bulgarians call the Apostle of Freedom, used to tie his horse to a mulberry tree on what is now Iskar Street whenever he stayed at Hadji Mano's inn nearby, a stop confirmed by Levski's own surviving notes referencing a stay at Manoviya han. He was executed by the Ottomans in 1873, and the tree he supposedly used is still standing, about a hundred paces east of the old Central Sofia Bath, now generally called the oldest tree in the capital. How old exactly is genuinely unresolved: estimates from different experts range from roughly 220 years to more than 600, a gap wide enough to place its planting anywhere from the Bulgarian National Revival period back to before the fall of Constantinople, and even its species is described inconsistently across sources, some calling it a white mulberry, others simply a mulberry without specifying which. What survives every version of the story is the tree's role as a fixed point through Sofia's growth from Ottoman provincial town to national capital, still rooted in the same spot while the city grew up entirely around it, and its formal status today as an officially protected specimen.",
       "verified_sources": [
         "https://about-sofia.com/bg/zabelejitelnosti/priroda/vekovno-darvo-chernitsa-na-levski/",
-        "https://www.bgonair.bg/a/36-sutreshen-blok/425764-taynite-na-vekovnite-darveta-v-sofiya-ot-chernitsata-na-vasil-levski-do-vazoviya-smarch"
+        "https://www.bgonair.bg/a/36-sutreshen-blok/425764-taynite-na-vekovnite-darveta-v-sofiya-ot-chernitsata-na-vasil-levski-do-vazoviya-smarch",
+        "https://www.wikidata.org/wiki/Q106523596",
+        "https://www.wikidata.org/wiki/Q106523596 (P625), matching https://www.openstreetmap.org/node/13752242321 (natural=tree, denotation=natural_monument, genus=Morus, ref=368, wikidata=Q106523596); about 70 m from the old pin"
       ],
       "access": "Free, public street, viewable anytime",
       "transport": "Central Sofia, near the Regional History Museum (former Central Bath); a 5 minute walk from Serdika metro station",
@@ -53,7 +55,7 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           6,
@@ -62,7 +64,17 @@
         "label": "June into July, when the mulberries ripen",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by where it stands, about a hundred paces east of the old Central Sofia Bath on Iskar Street. It is the old mulberry on that stretch and is reckoned the oldest tree in the capital."
+      "how_to_recognise": "You can recognise it by where it stands, about a hundred paces east of the old Central Sofia Bath on Iskar Street. It is the old mulberry on that stretch and is reckoned the oldest tree in the capital.",
+      "official_register": {
+        "name": "Register of centenarian trees (Executive Environment Agency, Bulgaria), no. 368, as mirrored in Wikidata and OpenStreetMap, no. 368",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.wikidata.org/wiki/Q106523596 (P625), matching https://www.openstreetmap.org/node/13752242321 (natural=tree, denotation=natural_monument, genus=Morus, ref=368, wikidata=Q106523596); about 70 m from the old pin",
+        "date": "2026-10-13",
+        "moved_m": 67
+      }
     },
     {
       "id": "sof_002",

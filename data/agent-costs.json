@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "sofia",
+    "kind": "enrich",
+    "tokens": 61000,
+    "trees": 0,
+    "note": "enrichment: Levski mulberry pin (Wikidata + OSM natural monument node, 70 m move) and register no. 368; Wikidata girth/height withheld (no stated source); spruce, Slaveykov oak (register 634/635 ambiguity), Doctors' Garden poplar open; 10 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "reno-valdieu",
     "kind": "enrich",
     "tokens": 62000,
