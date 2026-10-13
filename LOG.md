@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 night run, late attempt: three best_time lines
+
+- Enrich pass palermo+tokyo+munich, by hand (only season gaps open): best_time on the Palermo silk floss tree (Sep to Nov flowers), the Munich fern-leaved beech (Oct to Nov colour), the Dachau wayside lime (Jun to Jul flowers). The other 10 gaps were left, recorded as 90-day dead ends. Preflight clean.
+- Released the stale lucca translate claim. Did not translate it.
+- Not done: 59 READY leads sit unwritten (mostly ordinary street trees in Leipzig, Roosendaal, Oss); recovery mode says no new tree unless its page is rich, so I did not dispatch a write pass.
+
 ## 2026-10-13 session: season calendars on 512 more tree pages
 
 - Hidde asked why so many trees have no season chart. Before: 2,244 of 3,674 trees had a species calendar (58 files). Now 2,756 (102 files). The rest are mostly evergreen conifers and palms with nothing to chart, plus a long tail of one-tree species.
