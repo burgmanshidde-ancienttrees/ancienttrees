@@ -89,11 +89,19 @@ def owners(live=None):
     return out
 
 
-def selection(include_answered=False, live=None):
+def selection(include_answered=False, live=None, fresh_days=2):
     """[(sighting id, judgement row, how many sightings of the same tree)],
     strangers only, one row per tree, newest first as judgements.json keeps them.
     A sighting whose sender cannot be established is shown: missing a reader's
-    tree is the failure this exists for, showing one of ours is only noise."""
+    tree is the failure this exists for, showing one of ours is only noise.
+
+    Only what needs his eye (Hidde, 2026-10-13, on the first list: "9 trees?
+    most of them we already discussed or put live"): a tree judged in the last
+    `fresh_days`, whatever the verdict, so he sees what went live overnight;
+    and a tree that is not live and still waits (lead, hold, open). A tree that
+    went live days ago has had its morning in the digest."""
+    import datetime
+    cutoff = (datetime.date.today() - datetime.timedelta(days=fresh_days)).isoformat()
     live = live if live is not None else live_index()
     who = owners(live)
     rows = json.load(open("data/judgements.json", encoding="utf-8")).get("judgements", [])
@@ -108,7 +116,10 @@ def selection(include_answered=False, live=None):
             continue
         if "SUPERSEDED" in (j.get("reason") or ""):
             continue
-        key = ((j.get("tree") or sid).lower(), (j.get("city") or "").lower())
+        fresh = str(j.get("seen") or "") >= cutoff
+        if not include_answered and not fresh and (j.get("verdict") == "publish" or sid in live):
+            continue
+        key =((j.get("tree") or sid).lower(), (j.get("city") or "").lower())
         if key in by_tree:
             by_tree[key][2] += 1
             continue

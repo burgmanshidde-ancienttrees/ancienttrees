@@ -18,6 +18,47 @@
    "agreed": null
   },
   {
+   "id": "sight:d9c08351-03d1-4b51-a6ec-972f08d308e8",
+   "seen": "2026-10-13",
+   "kind": "a tree we do not map",
+   "tree": "The Great Lawn Plane of Parc Montsouris",
+   "city": "Paris",
+   "species": "London Plane",
+   "photo": "3f3fd52d-4665-41f3-bbaf-1cd863381908/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
+   "reader_note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
+   "reader_girth_cm": 450,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 48.8226040553664,
+      "lng": 2.3367012188551644,
+      "source": "paris-arbres-remarquables",
+      "designation": "Arbre remarquable de Paris",
+      "name": "Hêtre 'riversii'",
+      "species": "Fagus sylvatica",
+      "girth_cm": 420.0,
+      "height_m": 22.0,
+      "distance_m": 43.8
+     }
+    ]
+   },
+   "measure": {
+    "score": 0.879,
+    "via": "girth",
+    "note": "88% of the genus reference (512 cm, n=2, max 512)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "publish",
+   "reason": "Viewed 2026-10-13: a whole London plane with a heart-shaped crown on the Grande pelouse of Parc Montsouris, daylight, tree fills the frame. Matched to the Ville de Paris inventory record 113345 (480 cm, 25 m), 33 m from the reader's GPS fix, which gives a confirmed pin and a written source. Published as par_034 on Hidde's yes; the night run's lead verdict judged the girth without opening the photograph.",
+   "hidde": "publish (2026-10-13, session: 'follow your suggestion')",
+   "agreed": false
+  },
+  {
    "id": "sight:c067dcde-0600-4d9b-b42c-110224aae671",
    "seen": "2026-10-12",
    "kind": "photo of a tree we map",
@@ -78,8 +119,8 @@
    "measure": null,
    "verdict": "publish",
    "reason": "A fig nobody had mapped, beside La Llotja: the reader's photograph shows curtains of aerial roots worth the walk, and their GPS fix puts the pin on the trunk. No written source names it; published on Hidde's 2026-10-12 ruling that good reader input goes live, as The Fig of La Llotja (plm_006), species asked of readers. Not the Lagunaria (plm_003) it was tagged to.",
-   "hidde": null,
-   "agreed": null
+   "hidde": "publish: Hidde's own call on 2026-10-12 ('if users have good input - just use it')",
+   "agreed": true
   },
   {
    "id": "lead:7c8bec8f-b77b-415c-b4ec-a1589130c4a3",
@@ -252,47 +293,6 @@
    "reason": "Viewed: bare deciduous forked tree, not an evergreen holm oak; rejected as wrong tree.",
    "hidde": null,
    "agreed": null
-  },
-  {
-   "id": "sight:d9c08351-03d1-4b51-a6ec-972f08d308e8",
-   "seen": "2026-10-13",
-   "kind": "a tree we do not map",
-   "tree": "The Great Lawn Plane of Parc Montsouris",
-   "city": "Paris",
-   "species": "London Plane",
-   "photo": "3f3fd52d-4665-41f3-bbaf-1cd863381908/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
-   "reader_note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
-   "reader_girth_cm": 450,
-   "coords": [
-    null,
-    null
-   ],
-   "register": {
-    "verdict": "near",
-    "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
-    "nearest": [
-     {
-      "lat": 48.8226040553664,
-      "lng": 2.3367012188551644,
-      "source": "paris-arbres-remarquables",
-      "designation": "Arbre remarquable de Paris",
-      "name": "Hêtre 'riversii'",
-      "species": "Fagus sylvatica",
-      "girth_cm": 420.0,
-      "height_m": 22.0,
-      "distance_m": 43.8
-     }
-    ]
-   },
-   "measure": {
-    "score": 0.879,
-    "via": "girth",
-    "note": "88% of the genus reference (512 cm, n=2, max 512)  THIN: fewer than ten records, treat as a hint"
-   },
-   "verdict": "publish",
-   "reason": "Viewed 2026-10-13: a whole London plane with a heart-shaped crown on the Grande pelouse of Parc Montsouris, daylight, tree fills the frame. Matched to the Ville de Paris inventory record 113345 (480 cm, 25 m), 33 m from the reader's GPS fix, which gives a confirmed pin and a written source. Published as par_034 on Hidde's yes; the night run's lead verdict judged the girth without opening the photograph.",
-   "hidde": "publish (2026-10-13, session: 'follow your suggestion')",
-   "agreed": false
   },
   {
    "id": "lead:d9c08351-03d1-4b51-a6ec-972f08d308e8",
