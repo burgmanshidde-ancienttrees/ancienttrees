@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 session: a portrait photograph on a phone (web and app)
+
+**Product:** on a phone a portrait lead photograph now stands at 4:5 instead of being cut to 3:2, and a tree's other photographs are swiped inside the lead with a "1 / 2" count in the corner instead of sitting in a strip under it (Hidde picked A2 of the mockup; CONVENTIONS.md "A portrait photograph as the lead on a phone"). On the Munch-eika the page now shows 83 percent of the tree instead of 44, and the name, place and the start of the facts are on the first screen. Landscape photographs and desktop are unchanged. One rule for both surfaces: `heroFrame()` in images.ts, sent to the app in the feed as `photo.frame`; an app build older than that, or a feed without it, keeps the 300 point hero.
+
 ## 2026-10-13 night run 15:53 UTC: enrichment pass on seven small cities
 
 Visits last 7 days: 1750 (2360 page views). Inbox empty. Rung 2: the iOS app's scheduled run failed again; 220 of 221 UI tests passed, only `testContributeAsks` (signed out, tapping contribute did not open the sign-in sheet) failed. It needs a macOS simulator, so this run could not reproduce it and left it for a session. Rung 4: one enrichment pass (tenerife, munich, paris, vienna, alicante, hinode, palma-de-mallorca; 10 trees). Improved 5: Sajigami weeping hornbeam (national register page, 4.5 m), Montsouris plane (Paris tree database 480 cm / 25 m), two Munich pins (muc_020 from the Bayern Naturdenkmal register, muc_058 from the Dachau list), and a small named site for the Amur Cork Tree. 16 gaps dead-ended (no authority source reachable; Vienna and Paris planes have no striking season). Preflight 0 problems. Gap to note: enrich.py refuses a pin whose source is not a URL, so the first apply dropped both pins until I resubmitted them with URLs.

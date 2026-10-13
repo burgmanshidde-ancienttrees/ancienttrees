@@ -2361,7 +2361,30 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
    Judged by looking at all four candidates rendered, which is the only way to
    judge a proportion. The same ratio at every width, so the photograph somebody
    chose is the photograph every reader sees. */
-.tree-photo.tree-hero img { aspect-ratio: 3 / 2; height: auto; object-fit: cover; border-radius: 10px; }
+.tree-photo.tree-hero img { aspect-ratio: var(--hero-ar, 3 / 2); height: auto; object-fit: cover; border-radius: 10px; }
+/* THE LEAD'S OWN SHAPE, UP TO 4:5, and the other photographs inside it
+   (Hidde, 2026-10-13, option A2; CONVENTIONS.md "A portrait photograph as the
+   lead on a phone"). --hero-ar comes from heroFrame() in images.ts, the same
+   answer the app reads from the feed: 3:2 for landscape as before, a portrait
+   photograph at 4:5 instead of less than half its height. Capped at 60 percent
+   of the screen so on a short phone (an SE, 667 tall) the name still clears
+   the pinned Open in the app bar. A desktop sets its own shape further down.
+   The extra slides and the count exist only below 900; a desktop keeps the
+   strip. */
+.tree-photo.tree-hero .photo-slide, .photo-count { display: none; }
+@media (max-width: 899px) {
+  .tree-photo.tree-hero .photo-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain; scrollbar-width: none; -webkit-overflow-scrolling: touch; border-radius: 10px; }
+  .tree-photo.tree-hero .photo-track::-webkit-scrollbar { display: none; }
+  .tree-photo.tree-hero .photo-track > .photo-open { display: block; flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; }
+  .tree-photo.tree-hero .photo-track img { width: 100%; max-height: 60svh; }
+  .tree-photo.tree-hero .photo-strip { display: none; }
+  /* Airbnb's corner count: says there is more and how many, without a row. */
+  .tree-photo.tree-hero .photo-count { display: block; position: absolute; left: 12px; bottom: 12px; z-index: 2;
+    padding: 3px 9px; border-radius: 999px; background: rgba(20,22,16,0.62); color: #fff;
+    font-size: 12px; font-weight: 600; line-height: 1.4; font-variant-numeric: tabular-nums; pointer-events: none; }
+  .td-show-map .photo-count { display: none; }
+}
 .tree-photo.tree-hero figcaption { margin-top: 0.4rem; }
 .tree-noph.tree-hero { margin: 0 0 1.75rem; }
 /* The hero's full-bleed treatment applies to the drawing too, so a page with
@@ -2378,7 +2401,7 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
      why a phone never showed the fault the desktop had. */
   .tree-photo.tree-hero,
   .tree-noph.tree-hero { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); width: auto; }
-  .tree-photo.tree-hero img { border-radius: 0; }
+  .tree-photo.tree-hero img, .tree-photo.tree-hero .photo-track { border-radius: 0; }
   .tree-photo.tree-hero figcaption { padding: 0 var(--gutter); }
   /* The strip rides inside the full-bleed figure, so it needs the page's
      gutter back. Padding rather than margin, so the shelf still scrolls out

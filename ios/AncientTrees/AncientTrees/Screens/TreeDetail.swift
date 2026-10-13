@@ -69,6 +69,13 @@ struct TreeDetail: View {
     /// thumbnail sets its own index, because opening every thumbnail on the
     /// first picture is what makes a strip feel broken.
     @State private var photoAt = 0
+    /// Which photograph the hero is showing, swiped (Hidde, 2026-10-13, A2:
+    /// the other photographs live inside the lead, Airbnb's corner count,
+    /// instead of a strip between the picture and the name).
+    @State private var shotAt = 0
+    /// The visible page, measured, so the hero can take the lead's shape and
+    /// still stop at 60 percent of the screen, as the website does (60svh).
+    @State private var pageSize: CGSize = .zero
     /// One of YOUR photographs of this tree, full screen.
     @State private var viewingOwn: Sightings.Sighting?
     /// The picture the share sheet hands on, drawn once when a tree of yours
@@ -252,7 +259,7 @@ struct TreeDetail: View {
                     // "More places nearby". A reading page that simply stops is
                     // a dead end, and this page had one.
                     if mine == nil { discoverMore }
-                    if let p = tree.photo, let c = Photos.credit(p) {
+                    if let p = shownPhoto, let c = Photos.credit(p) {
                         // "Photo:" in front, as the website writes it: a bare
                         // name at the foot of a page reads as a signature, not
                         // a credit (Nadia, 2026-09-26: "shouldn't it say photo by").
@@ -276,6 +283,7 @@ struct TreeDetail: View {
                     .padding(.top, 20)
                 }
             }
+            .onGeometryChange(for: CGSize.self) { $0.size } action: { pageSize = $0 }
             actionBar
                 // On the bar and not on the page: the page already carries the
                 // Remove dialog, and SwiftUI shows only one dialog per view, so
@@ -608,7 +616,7 @@ struct TreeDetail: View {
             // where the photograph was, and the photograph's own thumbnail in
             // the corner to swap back. One control, two directions.
             Color.clear
-                .frame(height: 300)
+                .frame(height: heroHeight)
                 .overlay {
                     MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 240)
                 }
@@ -669,7 +677,7 @@ struct TreeDetail: View {
             // same empty box with the picture laid over it as below, for the
             // same reason: an unbounded image drags the whole page sideways.
             Color.clear
-                .frame(height: 300)
+                .frame(height: heroHeight)
                 .overlay {
                     Image(uiImage: shot).resizable().aspectRatio(contentMode: .fill)
                 }
@@ -694,8 +702,13 @@ struct TreeDetail: View {
                 // An overlay never takes part in layout at all, which is the
                 // only version that cannot do this again.
                 Color.clear
-                    .frame(height: 300)
+                    .frame(height: heroHeight)
                     .overlay {
+                      TabView(selection: $shotAt) {
+                        ForEach(tree.shots.indices, id: \.self) { i in
+                          Color.clear
+                            .overlay {
+                              if i == 0 {
                         // THE CARD'S PICTURE FIRST, the sharp one when it
                         // lands. The card that was tapped to get here already
                         // holds the 500 pixel version, so showing it at once
@@ -709,6 +722,27 @@ struct TreeDetail: View {
                                 heroFallback
                             }
                         }
+                              } else {
+                                // The others, swiped to, with their card-size
+                                // copy as the stand-in until the sharp one lands.
+                                let o = tree.shots[i]
+                                TreePhoto(url: o.full) {
+                                    if let c = o.card, let have = ImageStore.shared.cached(c) {
+                                        Image(uiImage: have).resizable().aspectRatio(contentMode: .fill)
+                                    } else {
+                                        Brand.surfaceMuted
+                                    }
+                                }
+                              }
+                            }
+                            .clipped()
+                            .tag(i)
+                        }
+                      }
+                      // Apple Photos and Airbnb page without dots; the count in
+                      // the corner says how many (CONVENTIONS.md, "Several
+                      // photographs of one tree": dots are for flat lists).
+                      .tabViewStyle(.page(indexDisplayMode: .never))
                     }
                     .clipped()
                     // Tapping the photograph opens it, which is what every
@@ -718,7 +752,7 @@ struct TreeDetail: View {
                     // taps meant for the story below it, which is the fault
                     // TreeCard records at the top of this file's sibling.
                     .contentShape(.rect)
-                    .onTapGesture { photoAt = 0; showingPhoto = true }
+                    .onTapGesture { photoAt = shotAt; showingPhoto = true }
                     .accessibilityAddTraits(.isButton)
                     .accessibilityIdentifier("tree-photo-open")
                     // The way to the map, in the corner a card already trained
@@ -741,8 +775,8 @@ struct TreeDetail: View {
                         .accessibilityLabel("Show this tree on the map")
                     }
                     .overlay(alignment: .topLeading) { addPhotoButton }
+                    .overlay(alignment: .bottomLeading) { shotCount }
 
-                photoStrip
             }
         } else {
             // The whole empty frame is the door to the camera, on a tree of
@@ -860,47 +894,36 @@ struct TreeDetail: View {
     /// dull thing: Google Maps, Apple Maps and Yelp all show a neutral grey
     /// panel with one small glyph, and the way to add a picture is the camera
     /// button in the corner rather than a sentence in the middle.
-    /// The tree's other photographs, in a row under the lead.
-    ///
-    /// Convention: the row Google Maps puts under a place's photograph and
-    /// iNaturalist under an observation. The website grew the same control the
-    /// same day (2026-09-12), which is the both-surfaces rule doing its job:
-    /// the DESIGN differs (a sheet here, a lightbox there) and the behaviour
-    /// does not. 72 square because this is a picture to recognise rather than
-    /// an icon to hit, and it clears the 44 point floor in both directions.
-    ///
-    /// Drawn only when there IS more than one, so every other tree page looks
-    /// exactly as it did.
-    @ViewBuilder private var photoStrip: some View {
-        let extras = Array(tree.shots.dropFirst())
-        if !extras.isEmpty {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 6) {
-                    // Indices rather than `enumerated()`, because a closure
-                    // cannot destructure a tuple parameter: `{ i, p in }` over
-                    // an enumerated sequence has not compiled since Swift 3
-                    // ("does not support destructuring"). extras is an Array,
-                    // so its indices are Int and Hashable.
-                    ForEach(extras.indices, id: \.self) { i in
-                        let p = extras[i]
-                        Button {
-                            // +1 because this row is the set minus its lead.
-                            photoAt = i + 1
-                            showingPhoto = true
-                        } label: {
-                            Color.clear
-                                .frame(width: 72, height: 72)
-                                .overlay { TreePhoto(url: p.card) { Color.black.opacity(0.06) } }
-                                .clipped()
-                                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel("Photograph \(i + 2) of \(tree.shots.count)")
-                    }
-                }
-                .padding(.horizontal, 16)
-            }
-            .accessibilityIdentifier("tree-photo-strip")
+    /// How tall the hero stands: the lead's shape from the feed (3:2 for
+    /// landscape, its own up to 4:5 for the rest; heroFrame on the server),
+    /// across the page's width, stopped at 60 percent of the screen so the
+    /// name still shows on a short phone. 300 until the page is measured or
+    /// for a catalogue older than the `frame` field, which is what it was.
+    private var heroHeight: CGFloat {
+        guard pageSize.width > 0, let r = tree.photo?.frame, r > 0 else { return 300 }
+        return min(pageSize.width / CGFloat(r), pageSize.height * 0.6).rounded()
+    }
+
+    /// The photograph the hero is showing, for the credit line.
+    private var shownPhoto: Photo? {
+        tree.shots.indices.contains(shotAt) ? tree.shots[shotAt] : tree.photo
+    }
+
+    /// "1 / 3" in the corner, when there is more than one (Airbnb's count; the
+    /// website draws the same). Not a control: the swipe is.
+    @ViewBuilder private var shotCount: some View {
+        if tree.shots.count > 1 {
+            Text("\(shotAt + 1) / \(tree.shots.count)")
+                .font(.system(size: 12, weight: .semibold))
+                .monospacedDigit()
+                .foregroundStyle(.white)
+                .padding(.horizontal, 9)
+                .padding(.vertical, 3)
+                .background(Color.black.opacity(0.55), in: .capsule)
+                .padding(12)
+                .allowsHitTesting(false)
+                .accessibilityLabel("Photo \(shotAt + 1) of \(tree.shots.count)")
+                .accessibilityIdentifier("tree-photo-count")
         }
     }
 

@@ -53,6 +53,12 @@ public struct Photo: Codable, Hashable, Sendable {
     /// Unsplash convention; asked for by a photographer, 2026-10-02). Decided
     /// on the server from attribution_url; the phone only draws it.
     public let creditURL: String?
+    /// How the lead stands on the tree page, width over height: 3:2 for
+    /// landscape, the photograph's own shape up to 4:5 for the rest (Hidde,
+    /// 2026-10-13, option A2). Decided once on the server by the function the
+    /// website uses (heroFrame, images.ts); nil in a snapshot older than that.
+    let frameRaw: Double?
+    public var frame: Double? { frameRaw }
 
     enum CodingKeys: String, CodingKey {
         case url, license, attribution, width, height
@@ -62,6 +68,7 @@ public struct Photo: Codable, Hashable, Sendable {
         case attributionShort = "attribution_short"
         case creditLine = "credit_line"
         case creditURL = "credit_url"
+        case frameRaw = "frame"
     }
 
     /// The name to print. Falls back to the untrimmed one only for a snapshot

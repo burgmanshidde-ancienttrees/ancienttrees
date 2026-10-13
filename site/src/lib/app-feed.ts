@@ -22,7 +22,7 @@ import { dayTrips, type DayTrip } from "./day-trips";
 import type { CityEntry } from "./trees";
 import { peakFor, seasonKey } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
-import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText } from "./images";
+import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText, heroFrame } from "./images";
 import { BASE_URL } from "./schema";
 import { latinRanges } from "./latin";
 
@@ -124,6 +124,8 @@ export interface FeedPhoto {
   width: number | null; height: number | null;
   thumb: string; hero: string; credit_required: boolean;
   attribution_short: string | null; credit_line: string | null; credit_url: string | null;
+  /** The lead frame on a phone, width over height (heroFrame, images.ts). */
+  frame: number;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -235,6 +237,9 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
       // the feed, not a rule written twice.
       credit_line: creditText(p.attribution, p.license),
       credit_url: p.attribution_url ?? null,
+      // How tall the photograph stands on the tree page, decided once for
+      // both surfaces (Hidde, 2026-10-13, option A2). The app draws it.
+      frame: heroFrame(p),
       }
     : null;
 }

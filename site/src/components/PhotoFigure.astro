@@ -39,7 +39,7 @@
  * wired by hand is the one that silently missed the Spanish city page. Every
  * string comes from UIStrings so the seven translated page sets get this too.
  */
-import { imgSrcset, photoDims, creditRequired, creditText, creditLinkParts } from "../lib/images";
+import { imgSrcset, photoDims, creditRequired, creditText, creditLinkParts, heroFrame } from "../lib/images";
 import { ui } from "../lib/i18n";
 
 type Shot = { url: string; license?: string | null; attribution?: string | null; attribution_url?: string | null };
@@ -84,23 +84,50 @@ const shots = set.map((p, i) => {
   };
 });
 const leadCredit = shots[0].credit;
-const leadLink = shots[0].link;
+// ON A PHONE THE OTHER PHOTOGRAPHS LIVE INSIDE THE LEAD (Hidde, 2026-10-13,
+// option A2 of the phone benchmark). Airbnb pages its lead by swipe with a
+// "1 / 20" count in the corner and Google Maps puts the name before its photo
+// row; nobody we checked puts a strip between the photograph and the name, and
+// on a portrait tree that strip pushed the facts off the first screen. The
+// frame takes the lead's shape up to 4:5 (heroFrame, the same answer the app
+// reads from the feed). A desktop keeps the strip under the picture.
+const swipe = variant === "hero" && many;
 ---
-<figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}>
+<figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}
+  style={variant === "hero" ? `--hero-ar:${heroFrame(lead)}` : undefined}>
   {/* The stage holds the picture and whatever sits ON it. The tree page puts
       the app's map inset in the corner here (2026-09-24), which has to be
       positioned against the photograph rather than against the whole figure,
       since the credit and the strip run underneath. Empty everywhere else. */}
   <div class="photo-stage">
-    <button type="button" class="photo-open" aria-label={t.photoOpen} data-i="0">
-      <img {...imgSrcset(lead.url, widths, sizes, shots[0].dims.width, shots[0].dims.height)}
-           alt={alt} loading="lazy" />
-    </button>
+    <div class="photo-track">
+      <button type="button" class="photo-open" aria-label={t.photoOpen} data-i="0">
+        <img {...imgSrcset(lead.url, widths, sizes, shots[0].dims.width, shots[0].dims.height)}
+             alt={alt} loading="lazy" />
+      </button>
+      {swipe && shots.slice(1).map((s, i) => (
+        <button type="button" class="photo-open photo-slide" aria-label={s.label} data-i={i + 1}>
+          <img {...imgSrcset(s.photo.url, widths, sizes, s.dims.width, s.dims.height)}
+               alt="" loading="lazy" />
+        </button>
+      ))}
+    </div>
+    {swipe && <span class="photo-count" aria-hidden="true"><span class="pc-at">1</span> / {set.length}</span>}
     <slot name="overlay" />
   </div>
-  {leadCredit && (leadLink
-    ? <figcaption>{leadLink.before}<a href={shots[0].photo.attribution_url} rel="noopener">{leadLink.name}</a>{leadLink.after}</figcaption>
-    : <figcaption>{leadCredit}</figcaption>)}
+  {/* The credit under the picture is the credit OF the picture showing, so on
+      a phone it changes as the lead is swiped; a licence obliges it. One
+      figcaption (a figure takes one) holding a line per photograph; a blank
+      line where none is owed, so a swipe never makes the page below it jump. */}
+  {(swipe ? shots.some((s) => s.credit) : leadCredit) && (
+    <figcaption>
+      {(swipe ? shots : shots.slice(0, 1)).map((s, i) => (
+        <span class="pc-credit" data-i={i} hidden={i !== 0}>{s.credit
+          ? (s.link ? <Fragment>{s.link.before}<a href={s.photo.attribution_url} rel="noopener">{s.link.name}</a>{s.link.after}</Fragment> : s.credit)
+          : <Fragment set:html="&nbsp;" />}</span>
+      ))}
+    </figcaption>
+  )}
 
   {many && (
     <ol class="photo-strip">
@@ -159,6 +186,22 @@ const leadLink = shots[0].link;
 
   const step = (d: HTMLDialogElement, by: number) =>
     show(d, Number(d.dataset.at || 0) + by);
+
+  // The lead swiped on a phone: keep the corner count and the credit line on
+  // the picture that is showing. Scroll events do not bubble, so capture.
+  document.addEventListener("scroll", (e) => {
+    const track = e.target;
+    if (!(track instanceof HTMLElement) || !track.classList.contains("photo-track")) return;
+    const at = Math.round(track.scrollLeft / Math.max(1, track.clientWidth));
+    const fig = track.closest("figure");
+    if (!fig || fig.dataset.at === String(at)) return;
+    fig.dataset.at = String(at);
+    const n = fig.querySelector(".pc-at");
+    if (n) n.textContent = String(at + 1);
+    fig.querySelectorAll<HTMLElement>(":scope > figcaption > .pc-credit").forEach((c) => {
+      c.hidden = c.dataset.i !== String(at);
+    });
+  }, { capture: true, passive: true });
 
   document.addEventListener("click", (e) => {
     const target = e.target as HTMLElement;

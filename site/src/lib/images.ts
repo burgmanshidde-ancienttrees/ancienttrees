@@ -244,6 +244,23 @@ export function photoDims(p: unknown): { width: number; height: number } {
     : { width: 0, height: 0 };
 }
 
+/** The shape of the frame a lead photograph gets on a phone, as width over
+ * height. Hidde, 2026-10-13, option A2 of the phone benchmark (CONVENTIONS.md,
+ * "A portrait photograph as the lead on a phone"): Instagram's rule, the shape
+ * follows the photograph up to 4:5. A landscape photograph keeps the 3:2 crop
+ * it always had; a square-ish one keeps its own shape; a portrait one stands
+ * at 4:5 instead of being cut to less than half its height.
+ *
+ * ONE rule for both surfaces: the website reads it here and the app reads the
+ * answer from the feed (`frame`, app-feed.ts), so the two can never disagree
+ * about how tall a tree's photograph stands. Unmeasured means 3:2, as before. */
+export function heroFrame(p: unknown): number {
+  const { width, height } = photoDims(p);
+  if (!width) return 1.5;
+  const r = width / height;
+  return r >= 1.25 ? 1.5 : Math.round(Math.max(r, 0.8) * 10000) / 10000;
+}
+
 /** src/srcset/sizes attribute string for a photo url, ready to spread into an <img>.
  *
  * `intrinsic` is the file's real width. Offering a 960w candidate for a 375px
