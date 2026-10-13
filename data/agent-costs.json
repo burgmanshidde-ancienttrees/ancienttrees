@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "trento",
+    "kind": "enrich",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work: seven season-only gaps dead-ended (plane, poplar, elms, cedar, hackberry files mark no striking moment); the two pin gaps (Sardagna chestnut, Brigolina beech) checked against OSM via Overpass with a User-Agent: the nodes are copies of the MASAF register coordinates already used, so no new pin evidence; 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "takachiho",
     "kind": "enrich",
     "tokens": 54000,
