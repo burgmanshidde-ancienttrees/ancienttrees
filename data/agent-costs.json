@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "bamberg",
+    "kind": "enrich",
+    "tokens": 82000,
+    "trees": 0,
+    "note": "enrichment: the City of Bamberg's own Naturdenkmal ordinance PDF as register for the two lindens (ND-03739 Buger Hof, ND-03728 Rothof); best_time June flowers for the Teuchatz great lime; no girth or height for any of the six (ordinance tables carry only number, species, plot, place); 5 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "trento",
     "kind": "enrich",
     "tokens": 0,

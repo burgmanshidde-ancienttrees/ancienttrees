@@ -164,6 +164,10 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Stadt Bamberg (Verordnung/ND-Liste), no. Nr. 10, ND-03739",
+        "url": "https://www.stadt.bamberg.de/media/custom/329_68_1.PDF"
       }
     },
     {
@@ -208,6 +212,10 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Naturdenkmal Stadt Bamberg (Verordnung/ND-Liste), no. Nr. 6, ND-03728",
+        "url": "https://www.stadt.bamberg.de/media/custom/329_68_1.PDF"
       }
     },
     {
@@ -248,7 +256,14 @@
         "name": "Naturdenkmal (Bayerisches Landesamt für Umwelt), no. ND-03920",
         "url": null
       },
-      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-03920 (data/registers/bayern-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Naturdenkmal (Bayerisches Landesamt für Umwelt) no. ND-03920 (data/registers/bayern-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "scented pale yellow flowers in June, early for a lime and loud with bees",
+        "kind": "flowers"
+      }
     },
     {
       "id": "bam_006",
