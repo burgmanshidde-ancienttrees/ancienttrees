@@ -458,10 +458,15 @@ def invite_scan(send):
 REQUEST_SUBJECT = "Looking after {place}"
 REQUEST_BODY = (
     "Hi,\n\n"
-    "Thanks for offering to look after our {place} list. Here it is as it stands:\n{listlink}\n\n"
-    "Three questions, answer whichever you like: how do you see the list, which trees would you "
-    "take off or add, and do you have photographs of any of them? Those would go on the pages.\n\n"
-    "Thanks,\nAncient Trees\n"
+    "Thank you so much for offering to look after our {place} list. It means a lot to us: "
+    "people who know the trees on the ground are what make these pages good. "
+    "Here is the list as it stands:\n{listlink}\n\n"
+    "You could really help by:\n"
+    "- checking the list\n"
+    "- adding or removing trees\n"
+    "- helping us get photographs of the trees\n\n"
+    "Whatever you have time for is welcome, just reply to this mail.\n\n"
+    "Thanks again for your support,\nAncient Trees\n"
 )
 
 
@@ -570,8 +575,11 @@ HEADS_UP_BODY = (
     "Hi,\n\n"
     "A heads-up, since you look after {place} for us: {what} on the list since we last wrote.\n"
     "{links}\n\n"
-    "If anything about {them} is off, or you know a better photograph, just reply. "
-    "The full list is here:\n{listlink}\n"
+    "Thanks again for your support. You could really help by:\n"
+    "- checking {them} and the rest of the list\n"
+    "- adding or removing trees\n"
+    "- helping us get photographs of the trees\n\n"
+    "Just reply to this mail. The full list is here:\n{listlink}\n"
     "{appline}\n"
     "Thanks,\nAncient Trees\n"
 )
