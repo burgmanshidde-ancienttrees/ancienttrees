@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "perouges+biei+macugnaga+timber-creek+tolpuddle+gornja-stubica+otama+sulechow",
+    "kind": "enrich",
+    "tokens": 62000,
+    "trees": 0,
+    "note": "enrichment: Perouges DREAL record and height, Tolpuddle ATI, Gornja Stubica county record and height, Otama record and height, Timber Creek NT register, Macugnaga church site; 6 of 10 trees improved, 8 gaps dead-ended; Rzepicha withheld (Wikipedia only, conflicting girths)"
+   },
+   {
+    "date": "2026-10-13",
     "target": "olympic-national-park+yakushima+wessobrunn+gojaus-miskas+llangernyw+salzburg",
     "kind": "enrich",
     "tokens": 76000,
