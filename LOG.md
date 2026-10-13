@@ -19,6 +19,8 @@ Second pass (liverpool, guerneville, takeo, ottawa, sardinia, borrowdale, fulufj
 
 Third pass (utrecht, logan-ohio, ibiza, toronto, leuven, palo-alto, runnymede, glastonbury): 4 trees improved. Oude Hortus price and opening hours for the Utrecht yew, El Palo Alto on the city's Heritage Tree list with its 33.5 m height, the Ankerwycke Yew's Ancient Tree Inventory record, and a churchyard site for the Glastonbury Thorn. 14 gaps dead-ended; three of those were season gaps (ibz_001, lvn_001, lvn_004) the agent closed without opening the phenology files, so they are worth a look when the 90 days lapse. Preflight 0 problems.
 
+Fourth pass (girona, bari, craigends, jaegerspris-nordskov, schenklengsfeld, otoyo): 2 trees improved, both register records (Craigends Yew in the Ancient Tree Inventory, Sugi no Osugi on Cultural Heritage Online). I withheld the agent's October acorn best_time for the Girona oak, since a mast year is not a reliable peak. 8 gaps dead-ended. Preflight 0 problems.
+
 ## 2026-10-13 session: the inbox answered; two Sardinian oaks from a botanist live
 
 **Live:** Sardinia 5 to 7 trees. The Cork Oak of Sa Tuppa (Orune) and the Downy Oak of Su Fundale (Talana), sent by Luisa Carta, curator of the Orto Botanico in Sassari, with Camarda (2020) as source, MASAF register ids, and her own photographs credited by name. Italian overlay done. Both flagged: Sa Tuppa's grazing land has no stated access status; Su Fundale's pin is approximate (her point and the register's are 78 m apart). Copenhagen FAQ and intro now say eight trees stand outside the city, not three (Hans Erik Lund's correction).

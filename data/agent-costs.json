@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "girona+bari+craigends+jaegerspris-nordskov+schenklengsfeld+otoyo",
+    "kind": "enrich",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "enrichment: Ancient Tree Inventory record on the Craigends Yew, Cultural Heritage Online record on Sugi no Osugi; 2 of 10 trees improved, 8 gaps dead-ended; Girona mast-year best_time withheld as too weak"
+   },
+   {
+    "date": "2026-10-13",
     "target": "utrecht+logan-ohio+ibiza+toronto+leuven+palo-alto+runnymede+glastonbury",
     "kind": "enrich",
     "tokens": 50000,
