@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "breda",
+    "kind": "enrich",
+    "tokens": 47000,
+    "trees": 0,
+    "note": "enrichment: nothing applied; agent proposed a Moeierboom June peak (no tree-specific evidence) and a Nieuwe Veste courtyard site (access unclear); gaps left open, two season files unchecked"
+   },
+   {
+    "date": "2026-10-13",
     "target": "zaragoza",
     "kind": "enrich",
     "tokens": 83000,
