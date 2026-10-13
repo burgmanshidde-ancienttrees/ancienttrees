@@ -2,27 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-23T08:14:26+00:00",
-   "date": "2026-08-23",
-   "run_id": "32627720793",
-   "minutes": 36.7,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 297,
-   "denials": 18,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(if), Bash(printenv), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 31015011,
-   "claims_held": [
-    "berlin",
-    "krakow"
-   ],
-   "commits": 14,
-   "cities_touched": 5,
-   "trees": -4,
-   "logged": false
-  },
-  {
    "started": "2026-08-23T10:10:13+00:00",
    "date": "2026-08-23",
    "run_id": "32633009704",
@@ -22737,6 +22716,140 @@
     },
     {
      "city": "warsaw",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-13T22:12:04+00:00",
+   "date": "2026-10-13",
+   "run_id": "38476075284",
+   "minutes": 72.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 605,
+   "denials": 9,
+   "denials_source": "permission_denials: Bash(cat ; import ; to ; no ...), Bash(grep | ? | ? | api ...), Bash(iconv), Bash(mkdir && cat ; ? ; ? ...), Bash(mkdir ; cd ; curl ; ls), Bash(sed), Workflow",
+   "ended": "success",
+   "tokens": 289018,
+   "claims_held": [
+    "bosaca"
+   ],
+   "commits": 68,
+   "cities_touched": 28,
+   "cities": [
+    {
+     "city": "auckland",
+     "trees": 0
+    },
+    {
+     "city": "baarn",
+     "trees": 0
+    },
+    {
+     "city": "bad-homburg",
+     "trees": 0
+    },
+    {
+     "city": "baltimore",
+     "trees": 0
+    },
+    {
+     "city": "bamberg",
+     "trees": 0
+    },
+    {
+     "city": "bucharest",
+     "trees": 0
+    },
+    {
+     "city": "christchurch",
+     "trees": 0
+    },
+    {
+     "city": "gettysburg",
+     "trees": 0
+    },
+    {
+     "city": "gothenburg",
+     "trees": 0
+    },
+    {
+     "city": "hilo",
+     "trees": 0
+    },
+    {
+     "city": "kansas-city",
+     "trees": 0
+    },
+    {
+     "city": "kings-canyon-national-park",
+     "trees": 0
+    },
+    {
+     "city": "lima",
+     "trees": 0
+    },
+    {
+     "city": "mallorca",
+     "trees": 0
+    },
+    {
+     "city": "miedzyzdroje",
+     "trees": 0
+    },
+    {
+     "city": "modena",
+     "trees": 0
+    },
+    {
+     "city": "okinawa",
+     "trees": 0
+    },
+    {
+     "city": "omishima",
+     "trees": 0
+    },
+    {
+     "city": "pagramantis-regional-park",
+     "trees": 0
+    },
+    {
+     "city": "potsdam",
+     "trees": 0
+    },
+    {
+     "city": "reno-valdieu",
+     "trees": 0
+    },
+    {
+     "city": "salt-lake-city",
+     "trees": 0
+    },
+    {
+     "city": "san-antonio",
+     "trees": 0
+    },
+    {
+     "city": "silale",
+     "trees": 0
+    },
+    {
+     "city": "sofia",
+     "trees": 0
+    },
+    {
+     "city": "takachiho",
+     "trees": 0
+    },
+    {
+     "city": "thessaloniki",
+     "trees": 0
+    },
+    {
+     "city": "wilmington-delaware",
      "trees": 0
     }
    ],
