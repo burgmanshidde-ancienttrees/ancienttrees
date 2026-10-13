@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "yosemite-national-park",
+    "kind": "enrich",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "enrichment: Mariposa Grove entrance, shuttle and route access lines on 3 trees; 17 gaps dead-ended (no per-tree NPS record, no sourced girth, giant sequoia has no season)"
+   },
+   {
+    "date": "2026-10-13",
     "target": "breda",
     "kind": "enrich",
     "tokens": 47000,
