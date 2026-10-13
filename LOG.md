@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 session: portrait photos stand whole on desktop
+
+**Tree page, desktop only: a portrait or square lead photo now stands at its own shape on the left, beside the name, facts, buttons and map.** Hidde, on the Munch-eika: portrait trees "really come out bad on desktop". 498 of 982 lead photos are portrait, and the 16:7 strip showed about 29 percent of a 2:3 photo. Benchmarked on the real sites (Unsplash and Wikipedia show a tall photo whole beside the text, Atlas Obscura uses an equal-height row, Airbnb crops; AllTrails behind a device check), three mockups shown, he picked A. Landscape (5:4 or wider) keeps the strip; phones and the app unchanged. Commit 5f6e0e2a6. Aside: Wikipedia now reports the Major Oak died (RSPB, June 2026); it is only a lead in data/leads/_tree-of-the-year.json and must not be picked up.
+
 ## 2026-10-13 session: a reader's Paris plane goes live
 
 **New tree: par_034, The Great Lawn Plane of Parc Montsouris**, from a reader's app photograph sent on 10-05. The night run had filed it as a lead on the girth alone ("photograph not viewed"); the photograph shows a whole plane with a heart-shaped crown, Cadiz standard. The Ville de Paris tree inventory (les-arbres, record 113345, Grande pelouse, 480 cm, 25 m) sits 33 m from the reader's GPS fix, so the pin is confirmed from the inventory and the record is the written source. Not par_009 (670 cm, 190 m east). Age left open, French overlay added, Paris counts now 32. Deploy dispatched. Lesson for the runs: a lead verdict written without opening the photograph missed the best reader tree of the week.
