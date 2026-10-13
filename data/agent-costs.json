@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "mallorca",
+    "kind": "enrich",
+    "tokens": 52000,
+    "trees": 0,
+    "note": "enrichment: all six pins confirmed from named OSM tree nodes (CAIB codes), heights from CAIB pages, girth for 2, register URLs set by hand after the pin answer was refused for a missing URL; Overpass works with a User-Agent header"
+   },
+   {
+    "date": "2026-10-13",
     "target": "hilo",
     "kind": "enrich",
     "tokens": 48000,
