@@ -160,7 +160,8 @@
       "verified_sources": [
         "https://www.sardegnaforeste.it/monumento-naturale/su-sterru-il-golgo-baunei",
         "https://idese.cultura.gov.it/en/place/altopiano-di-golgo/",
-        "data/registers/italy-masaf.json (sheets 04 and 05/A722/OG/20)"
+        "data/registers/italy-masaf.json (sheets 04 and 05/A722/OG/20)",
+        "https://www.fotosardegna.it/chiesa-di-san-pietro-in-golgo/ (a hackberry and a wild olive, both over 200 years old, stand in front of the church walls and are listed among Italy's monumental trees)"
       ],
       "access": "Free, a working rural church on open plateau land reached by the paved road up from Baunei (about 13km); also a stop on the Selvaggio Blu and other hiking routes. No gate, no fee found in any source checked.",
       "transport": "No public transport; a car is the realistic way, roughly 20 to 25 minutes up the plateau road from Baunei. Frequently visited alongside the Su Sterru sinkhole nearby.",
@@ -175,7 +176,11 @@
       "notes": "Treated as one ensemble entry: a wild olive (girth 568cm, MASAF sheet 05/A722/OG/20) and a hackberry/bagolaro (girth 525cm, sheet 04/A722/OG/20) standing together at the same tiny rural church, 13km from Baunei on the Golgo plateau, both individually MASAF-registered at essentially the same coordinates. SardegnaForeste's own regional page (independent of MASAF, describing the wider Golgo/Su Sterru natural monument) confirms in its own words that the church 'e fiancheggiata da annosi olivastri e bagolari', which is the one collectible point here: the little basalt church itself, not a wood. This is a remote pastoral site (shepherds' cumbessias/staulus alongside it, used for an annual festival) rather than a town square, so location_precision is approximate: the two MASAF points sit almost on top of each other and are very likely accurate, but there is no independent tree-level photo or aerial confirmation, only the register plus a regional description of the site as a whole. No age given anywhere; MASAF has no age field and no secondary source ventures one, so this ships with age_estimate 'not documented' rather than guessed. No death or decline signal found; the site is an active, currently promoted natural monument and pilgrimage/festival site.",
       "height_m": 20.0,
       "verify_notes": "Height 20.0 m from the italy-masaf register, matched on our own pin (0 m away).",
-      "how_to_recognise": "You can recognise them as the aged wild olive and hackberry flanking the rural church, trunks 5.68 and 5.25 metres round. They stand beside San Pietro on the Golgo plateau above Baunei."
+      "how_to_recognise": "You can recognise them as the aged wild olive and hackberry flanking the rural church, trunks 5.68 and 5.25 metres round. They stand beside San Pietro on the Golgo plateau above Baunei.",
+      "location_site": {
+        "name": "Church of San Pietro in Golgo (the ground in front of the church walls)",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "sar_005",

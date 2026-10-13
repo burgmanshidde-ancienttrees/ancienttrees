@@ -742,7 +742,14 @@
         "name": "Remarkable Trees (National Capital Commission), no. 123",
         "url": null
       },
-      "verify_notes": "Register number from Remarkable Trees (National Capital Commission) no. 123 (data/registers/canada-capital-ncc-remarkable-trees.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Remarkable Trees (National Capital Commission) no. 123 (data/registers/canada-capital-ncc-remarkable-trees.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "label": "a rich red, sometimes fading to brown",
+        "kind": "colour"
+      }
     }
   ]
 }

@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "liverpool+guerneville+takeo+ottawa+sardinia+borrowdale+fulufjallet",
+    "kind": "enrich",
+    "tokens": 75000,
+    "trees": 0,
+    "note": "enrichment: register records on lvp_001, tak_001, ful_001, Takeo height, Ottawa October colour, Sardinia church site; 5 of 12 trees improved, 12 gaps dead-ended; Takeo girth and Borrowdale group pin withheld"
+   },
+   {
+    "date": "2026-10-13",
     "target": "tenerife+munich+paris+vienna+alicante+hinode+palma-de-mallorca",
     "kind": "enrich",
     "tokens": 64000,
