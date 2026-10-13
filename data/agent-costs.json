@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "utrecht+logan-ohio+ibiza+toronto+leuven+palo-alto+runnymede+glastonbury",
+    "kind": "enrich",
+    "tokens": 50000,
+    "trees": 0,
+    "note": "enrichment: Oude Hortus hours and price, El Palo Alto heritage record and height, Ankerwycke ATI record, Glastonbury churchyard site; 4 of 10 trees improved, 14 gaps dead-ended (three season gaps without reading the phenology files)"
+   },
+   {
+    "date": "2026-10-13",
     "target": "liverpool+guerneville+takeo+ottawa+sardinia+borrowdale+fulufjallet",
     "kind": "enrich",
     "tokens": 75000,
