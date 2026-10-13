@@ -85,19 +85,28 @@ const t = chrome(lang);
 </script>
 )}
 <style>
-  .consent-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 900;
-    background: var(--cream); color: var(--ink); box-shadow: 0 -2px 16px rgba(26,32,18,0.12);
-    padding: 14px var(--gutter) calc(14px + env(safe-area-inset-bottom));
-    display: flex; align-items: center; gap: 16px; }
+  /* The shape most sites use (Cookiebot, OneTrust, Google's own sites): a
+     small card in the bottom-left corner on a desktop, a panel across the
+     foot on a phone. One line, then the two buttons at the same size; Accept
+     filled, the other outlined, as almost every banner does (Hidde,
+     2026-10-13: "as conventional as possible so no one gives it a thought"). */
+  .consent-bar { position: fixed; left: 16px; bottom: 16px; z-index: 900;
+    width: 360px; max-width: calc(100vw - 32px); box-sizing: border-box;
+    background: #fff; color: var(--ink); border: 1px solid var(--cream-dark); border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(26,32,18,0.16); padding: 18px; }
   .consent-bar[hidden] { display: none; }
-  .consent-p { margin: 0; flex: 1 1 auto; font-size: 15px; line-height: 1.4; color: var(--ink); }
+  .consent-p { margin: 0 0 14px; font-size: 15px; line-height: 1.45; color: var(--ink); }
   .consent-p a { color: var(--ink); }
-  .consent-btns { display: flex; gap: 10px; flex: none; }
-  .consent-b { min-height: 44px; padding: 0 1.2rem; border: 0; border-radius: 999px; cursor: pointer;
-    font: inherit; font-size: 15px; font-weight: 600; background: var(--cream-dark); color: var(--ink); }
-  .consent-b:hover { background: #e0ded5; }
+  .consent-btns { display: flex; gap: 8px; }
+  .consent-b { flex: 1 1 0; min-height: 44px; padding: 0 12px; border-radius: 8px; cursor: pointer;
+    font: inherit; font-size: 15px; font-weight: 600;
+    background: #fff; color: var(--ink); border: 1px solid var(--ink-light); }
+  .consent-b:hover { background: var(--surface); }
+  .consent-b[data-consent="yes"] { background: var(--moss); border-color: var(--moss); color: #fff; }
+  .consent-b[data-consent="yes"]:hover { background: #3d5a22; }
   @media (max-width: 600px) {
-    .consent-bar { flex-direction: column; align-items: stretch; gap: 12px; }
-    .consent-btns > .consent-b { flex: 1 1 0; }
+    .consent-bar { left: 0; right: 0; bottom: 0; width: auto; max-width: none;
+      border-radius: 12px 12px 0 0; border-width: 1px 0 0;
+      padding: 16px var(--gutter) calc(16px + env(safe-area-inset-bottom)); }
   }
 </style>

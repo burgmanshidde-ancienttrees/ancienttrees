@@ -3345,6 +3345,7 @@ Sources, read 2026-10-12 (AllTrails' own pages refuse an automated browser):
   - komoot: "We value your privacy" / "We use cookies that are essential... With your consent, we... will also use tracking technologies..." Buttons: Accept all cookies, Customize preferences, Refuse.
   - AllTrails: no bar on first load from NL; "Manage Cookies" in the footer legal strip.
   - Ours, on Hidde's "please just keep it short as this": only "This website uses cookies" and the Privacy link. Buttons: Accept all, Only necessary. Translations use each language's standard banner wording (Alles accepteren / Alleen noodzakelijke, Alle akzeptieren / Nur notwendige, Tout accepter / Tout refuser).
+- **The SHAPE, 2026-10-13**, after Hidde said the full-width cream bar with two grey pills "looks like nothing i see on other website": the Cookiebot / OneTrust / Google look. Desktop: a white card about 360 px wide in the bottom-left corner, the line above, the two buttons below at the same size, Accept all filled in the brand green, Only necessary outlined. Phone: the same card across the foot with rounded top corners.
 
 ## Deleting your own photograph (2026-10-12, looked up)
 
