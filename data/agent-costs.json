@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "hiroshima",
+    "kind": "enrich",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "enrichment: nothing applied; 13 shrine pin gaps stayed open (Nominatim found only shrine points for 2 of 12, no tree-to-shrine evidence, Overpass mirrors dead); 21 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "season-only enrich batches (new-york, edinburgh, paris, london, cagliari, austin, reykjavik, chicago, nara, nijmegen and others)",
     "kind": "enrich",
     "tokens": 0,
