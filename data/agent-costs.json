@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "fort-worth",
+    "kind": "enrich",
+    "tokens": 69000,
+    "trees": 0,
+    "note": "enrichment: 17 Heritage Tree layer register entries (OBJECTID plus tree name), Botanic Garden admission and hours, Quanah Parker pecan height; 18 of 18 briefed trees touched, 13 gaps dead-ended; no city measurements for most"
+   },
+   {
+    "date": "2026-10-13",
     "target": "hiroshima",
     "kind": "enrich",
     "tokens": 75000,
