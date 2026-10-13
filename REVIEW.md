@@ -13,6 +13,15 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-13
+
+Web half: read the new Roosendaal pages as built (copper beech of Nispen cemetery, Julianalinde, the London plane of De Kring in the data) and the Copenhagen FAQ edit (cf54927a, 98729e46: 41 + 8 = 49 trees, the counts agree; the built copenhagen/index.html in site/dist still carries the older text, so that page was read from data/cities). No em dashes or banned words in site/dist/roosendaal.
+
+- WARN /roosendaal/* and at least seven other built pages (`verified_sources` strings in data/cities/roosendaal.json, e.g. lines 199-200, 316-318): an aerial-imagery note was stored as a URL ("https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)") and renders as a Sources bullet "service.pdok.nl" whose href contains spaces and a parenthesis, so the link is broken and names nothing a reader can check. The register's ArcGIS query URL is also printed twice (once as the register line, again as a bare "services-eu1.arcgis.com" bullet) and opens raw JSON. Same family as the 2026-10-12 file-name finding: code leaking as text in Sources. Suggest note-only entries live in `verify_notes` or `pin_source`, and the register link not be repeated as a plain source.
+- WARN /roosendaal/copper-beech-of-nispen-cemetery and /roosendaal/julianalinde-of-nispen (`transport`, data/cities/roosendaal.json:292, 333): the visitor-facing travel line ends "650 m from the Julianalinde (roo_013)" / "(roo_012)", an internal tree id printed as text. The Nearby card on the same page says 640 m, so the page also states the distance twice with two values.
+- WARN same pages (`access`): "Register: visitable ja, visible ja, openbaar ja, owner a religious body (parish)" puts Dutch register field values and a column list into the English access line; "No cemetery hours found" is fine, the "ja" list is not a sentence a visitor can use. Suggest "The register lists it as visible and open to visit."
+- NOTE /roosendaal London plane of De Kring and the Oriental plane: `location_precision` is "confirmed" with the evidence being an aerial frame viewed on 2026-10-13 (CLAUDE.md burn list names "aerial imagery or equivalent evidence" for pin passes; `check_pin_upgrades()` should be the judge of whether that counts, I did not run it).
+
 ## 2026-10-12
 
 Web half: read the header search commit (baf8726c: strings in all eight languages, home and map hide the icon by CSS), the cookie bar copy, the register-matching commit (52ec9b7f) as built on turin and rouen, and scanned portland, trento, alicante, rouen, kaunas, oslo, setubal, valencia and barcelona for em dashes and banned words: none found.
