@@ -85,7 +85,10 @@
   },
   {
    "candidate": "Senckenberg-Eibe (Senckenberg yew, Palmengarten, Wikidata Q2269925)",
-   "coords": [50.1254, 8.65705],
+   "coords": [
+    50.1254,
+    8.65705
+   ],
    "reason": "No photograph in reach: the only Commons file is a black-and-white 1907 scan (not eligible) and no geotagged modern photo within 150 m. Pin is a Wikidata coordinate, park-level (Palmengarten NE edge, south of a playground, north of a greenhouse per de.wikipedia). About 400 years old, transplanted 1907 over 3.5 km by steam rollers. Remarkable story, would ship with a photo or a Palmengarten sighting.",
    "lat": 50.1254,
    "lng": 8.65705
@@ -97,13 +100,59 @@
   },
   {
    "candidate": "Roteiche im Ostpark (register entry 025), Eibe in der Berger Strasse (031), Kastanie am Schaeferkoeppel (032, about 110 years, 5.30 m girth), Linden am Friedhof Nieder-Erlenbach (036)",
-   "coords": [[50.121767, 8.725317], [50.12481, 8.7058], [50.221751, 8.721743], [50.202269, 8.706683]],
+   "coords": [
+    [
+     50.121767,
+     8.725317
+    ],
+    [
+     50.12481,
+     8.7058
+    ],
+    [
+     50.221751,
+     8.721743
+    ],
+    [
+     50.202269,
+     8.706683
+    ]
+   ],
    "reason": "On the official register; Roteiche, Kastanie and Linden carry Commons photos but no city page text was read this pass (frankfurt.de pages are reachable through web.archive.org/web/2025/<url> with a browser user agent, which worked 2026-10-07). Eibe in der Berger Strasse has no photo and a register pin only. Next pass: read the Wayback city pages for the Eibe and the two Nieder-Erlenbach pages, check whether the cemetery lindens count as a small site."
   },
   {
    "candidate": "Eisenholzbaeume am Untermainkai (entry 026) and Schwarze Maulbeere (entry 017)",
-   "coords": [[50.105332, 8.671875], [50.116736, 8.684772]],
+   "coords": [
+    [
+     50.105332,
+     8.671875
+    ],
+    [
+     50.116736,
+     8.684772
+    ]
+   ],
    "reason": "Still no photograph and the pin is the register coordinate only. Retry via Wayback: the frankfurt.de page for these is at the same path scheme (not in the 'Naturdenkmale' list of pages read here, so the slug may differ). Mulberry remains on the school ground question."
+  },
+  {
+   "candidate": "Roteiche im Ostpark (Red oak, Quercus rubra, register entry 025)",
+   "coords": [
+    50.121767,
+    8.725317
+   ],
+   "lat": 50.121767,
+   "lng": 8.725317,
+   "reason": "2026-10-13 deepen pass. Photo in hand: Commons 'Roteiche, 3, Ostend, Frankfurt am Main.jpg' (GeorgDerReisende, CC BY-SA 4.0, taken 2025-11-13, captioned red oak at the north-eastern end of the Ostpark), so findable and recent (alive Nov 2025). Register coordinate from de.wikipedia Naturdenkmale list (entry 025). Missing for RICH: any measurement (girth or height) and the per-tree frankfurt.de page, which 403s (WebFetch, curl) and has no Wayback snapshot (availability API empty for the Eisenholz page too). Park is public (Ostpark). Next pass: a source with the register figures (Amtsblatt Nr. 44/2025 PDF, or a browser session on frankfurt.de) turns this into a deliverable."
+  },
+  {
+   "candidate": "Eisenholzbaeume am Untermainkai (entry 026), re-check 2026-10-13",
+   "coords": [
+    50.105332,
+    8.671875
+   ],
+   "lat": 50.105332,
+   "lng": 8.671875,
+   "reason": "Re-tried: frankfurt.de page 403 again via WebFetch, no Wayback snapshot, Commons has no file for it (search 0 hits). Still no fetched measurement, no photo. WebSearch pointer only: city page lists height 19-23 m, crown 19-22 m, no age, 15 m protection zone; unconfirmed per search-summary rule. photo-auge.de Sumpfzypresse page for entry 018 is a photo album page with no text, no figures."
   }
  ],
  "blocked": []

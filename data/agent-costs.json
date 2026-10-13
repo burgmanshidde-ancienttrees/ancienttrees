@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "frankfurt",
+    "kind": "verify",
+    "tokens": 62000,
+    "trees": 0,
+    "note": "deepen: frankfurt.de 403 blocks register figures; 2 leads added (Roteiche Ostpark, Eisenholz recheck), nothing rich"
+   },
+   {
+    "date": "2026-10-13",
     "target": "miami",
     "kind": "verify",
     "tokens": 70574,
