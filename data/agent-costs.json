@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "silale",
+    "kind": "enrich",
+    "tokens": 59000,
+    "trees": 0,
+    "note": "enrichment: Independence Oak and the 13 January oaks on the Silale municipal protected-heritage list (archive copy; live silale.lt returns 403), Independence Oak girth 240 cm and height 15 m from the cadastre as quoted on lt.wikipedia; Laumenai Oak route (gravel from Bilioniai, last kilometre on foot); Pundzia season only, skipped; 4 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "roosendaal",
     "kind": "enrich",
     "tokens": 0,
