@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "bilu+limmersdorf+yabu+catania+belgrade+chadds-ford",
+    "kind": "enrich",
+    "tokens": 62000,
+    "trees": 0,
+    "note": "enrichment: three Yabu natural monument records with girth and height, Bilu height, Belgrade plane height; 5 of 10 trees improved, 10 gaps dead-ended; girths without a stated height withheld"
+   },
+   {
+    "date": "2026-10-13",
     "target": "girona+bari+craigends+jaegerspris-nordskov+schenklengsfeld+otoyo",
     "kind": "enrich",
     "tokens": 55000,

@@ -21,6 +21,8 @@ Third pass (utrecht, logan-ohio, ibiza, toronto, leuven, palo-alto, runnymede, g
 
 Fourth pass (girona, bari, craigends, jaegerspris-nordskov, schenklengsfeld, otoyo): 2 trees improved, both register records (Craigends Yew in the Ancient Tree Inventory, Sugi no Osugi on Cultural Heritage Online). I withheld the agent's October acorn best_time for the Girona oak, since a mast year is not a reliable peak. 8 gaps dead-ended. Preflight 0 problems.
 
+Fifth pass (bilu, limmersdorf, yabu, catania, belgrade, chadds-ford): 5 trees improved. Three Yabu City national natural monument records (yab_001, yab_002, yab_004) with height, and breast-height girth on two of them; Bilu Sacred Tree height 50 m; Vračar plane height 27 m. Every girth whose measuring height the page did not state was left out. The Brandywine Sycamore (cdf_001) has no register page and conflicting sizes, so it stays open. 10 gaps dead-ended. Preflight 0 problems.
+
 ## 2026-10-13 session: the inbox answered; two Sardinian oaks from a botanist live
 
 **Live:** Sardinia 5 to 7 trees. The Cork Oak of Sa Tuppa (Orune) and the Downy Oak of Su Fundale (Talana), sent by Luisa Carta, curator of the Orto Botanico in Sassari, with Camarda (2020) as source, MASAF register ids, and her own photographs credited by name. Italian overlay done. Both flagged: Sa Tuppa's grazing land has no stated access status; Su Fundale's pin is approximate (her point and the register's are 78 m apart). Copenhagen FAQ and intro now say eight trees stand outside the city, not three (Hans Erik Lund's correction).
