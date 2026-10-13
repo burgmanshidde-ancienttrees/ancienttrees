@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "hiroshima",
+    "kind": "enrich",
+    "tokens": 75000,
+    "trees": 0,
+    "note": "enrichment: 8 A-bombed tree register records with numbers, Shukkeien price and hours, 9 shrine and temple location_sites; 16 of 20 trees improved, 16 gaps dead-ended; no measurements on the city pages"
+   },
+   {
+    "date": "2026-10-13",
     "target": "tulsa+cremines+emmen+oklahoma-city+ueda+viroflay",
     "kind": "enrich",
     "tokens": 92000,

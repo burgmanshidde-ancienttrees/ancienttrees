@@ -47,7 +47,8 @@
       "story": "Three hundred and seventy metres. That is the whole of what makes this willow remarkable, and it is enough: no registered survivor in Hiroshima stood closer to the point the bomb went off. It is the first entry on the city's list, N03a1-01, and the code itself carries the facts. N for north of the hypocentre, 03 for the three hundred metre band, a for never transplanted. It is standing where it stood. A weeping willow is not a strong tree. It is fast, soft-wooded and short-lived, the sort of thing a city plants along a river because it grows quickly and looks well over water, and at this distance the heat and the blast took everything above ground. What survived was underground. The willow came back from its own roots, which is how most of the trees on this register survived, and the trunk you stand in front of grew after 1945 from a root system that did not. Nobody has published its age. The register does not carry one, because the register was built to record a distance rather than a life. It stands in the Chuo Park green space west of the Youth Centre, on ground that is now grass and paths and was, for a while after 1945, expected to grow nothing at all.",
       "verified_sources": [
         "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
-        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021004.html"
       ],
       "access": "Free, public park green space",
       "transport": "About 12 minutes on foot from Hiroshima Peace Memorial Park, or Kamiyacho-nishi tram stop",
@@ -62,7 +63,11 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Age, girth and height are not recorded: Hiroshima's A-bombed tree register carries species, address, owner and distance from the hypocentre only. The 370 m and the identification code N03a1-01 are the city's own. The pin is the west side of the Youth Centre as the register describes it, not a surveyed position for the trunk. The regrowth-from-the-roots account is the general pattern the city and its sources describe for trees at this distance rather than a statement sourced about this individual, and the story says so.",
-      "how_to_recognise": "You can recognise it by the setting: a weeping willow standing alone on the grass west of the Youth Centre, 370 metres from the hypocentre. It stands in the Chuo Park green space at Motomachi 14."
+      "how_to_recognise": "You can recognise it by the setting: a weeping willow standing alone on the grass west of the Youth Centre, 370 metres from the hypocentre. It stands in the Chuo Park green space at Motomachi 14.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. N03a1-01",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021004.html"
+      }
     },
     {
       "id": "hir_002",
@@ -80,7 +85,9 @@
       "story": "Shirakami Shrine sits on a rock. Before Hiroshima was built out across its delta the sea came up to this point, and the outcrop the shrine stands on was a landmark for boats, which is why there is a shrine here at all and why the ground was never levelled. Three camphors grow in the courtyard, 490 metres from the hypocentre, and the city registers all three as A-bombed trees under one code, S04a4-01 to 03. The a in that code matters: none of them has been moved. They are the closest camphors on the register, and camphor is the tree that does best on this list, with more entries than almost any other species, because a mature camphor carries an enormous root system and a thick corky bark that a flash of heat scorches rather than kills. The shrine itself burned. The trees held. Stand in the courtyard now and the odd thing is how ordinary it looks: a small shrine wedged between office blocks a few minutes from Peace Boulevard, with three big trees in it and traffic on both sides. No age is recorded for any of the three. They were grown trees in 1945, which puts a floor under them and nothing more.",
       "verified_sources": [
         "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
-        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021007.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021007.html (the three camphors are listed as standing in the shrine precinct, 白神社境内)"
       ],
       "access": "Free, shrine courtyard open daily",
       "transport": "Tram to Fukuromachi or Chuden-mae, about 3 minutes on foot",
@@ -93,7 +100,15 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "One entry covering the three camphors the register groups as S04a4-01 to 03, all at the same shrine and none transplanted. No age or girth is published for any of them. The pin is the shrine, which is small. The account of why camphors survive better at short range is general species behaviour, not a sourced statement about these three.",
-      "how_to_recognise": "You can recognise them by the count: three big camphors in one small courtyard, on the rock outcrop the shrine was built on. They stand at Shirakami Shrine, wedged between office blocks off Peace Boulevard."
+      "how_to_recognise": "You can recognise them by the count: three big camphors in one small courtyard, on the rock outcrop the shrine was built on. They stand at Shirakami Shrine, wedged between office blocks off Peace Boulevard.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. S04a4-01~03",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021007.html"
+      },
+      "location_site": {
+        "name": "Shirakami Shrine precinct",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hir_003",
@@ -119,7 +134,8 @@
       },
       "verified_sources": [
         "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
-        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021012.html"
       ],
       "access": "Free, public street planting",
       "transport": "Tram to Chuden-mae, about 2 minutes on foot",
@@ -134,7 +150,11 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Registered as S05a6-11 in a group of trees at 530 m in front of Shirakami Shrine; not transplanted. No age, girth or height published. The pin is the planting strip described in the register, not a surveyed position. Fruiting months are the species' habit in a warm-temperate climate.",
-      "how_to_recognise": "You can recognise it by the fruit, hard and orange on bare branches into December, the only persimmon in a group that is otherwise hackberry, muku, holly and bead tree. It stands on Peace Boulevard outside Shirakami Shrine."
+      "how_to_recognise": "You can recognise it by the fruit, hard and orange on bare branches into December, the only persimmon in a group that is otherwise hackberry, muku, holly and bead tree. It stands on Peace Boulevard outside Shirakami Shrine.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. S05a6-11",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021012.html"
+      }
     },
     {
       "id": "hir_004",
@@ -152,7 +172,8 @@
       "story": "An Australian tree survived the bomb in the grounds of a Japanese castle. The eucalyptus in the ninomaru at Hiroshima Castle stood 740 metres from the hypocentre and is registered as N07a7-01, never moved. Everything around it went. Hiroshima Castle had stood since the 1590s and was one of the few original keeps left in Japan; it came down in the blast and what stands there now was rebuilt in concrete in 1958. The castle grounds were not a park in 1945. They held the headquarters of the Second General Army, which is part of why the city was a target, and the ninomaru where this tree grows was inside a working military compound. Beside it on the same register entry is a giant pussy willow at the same distance. How a eucalyptus came to be planted here is not recorded on the city's list, though the species was widely brought into Japan from the late nineteenth century for its speed. It has a habit that suits this ground: eucalypts carry dormant buds under the bark along the whole trunk, which is exactly the equipment a tree needs to come back after fire.",
       "verified_sources": [
         "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
-        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021014.html"
       ],
       "access": "Free, open castle grounds",
       "transport": "About 15 minutes on foot from Hiroshima Station, or tram to Kamiyacho-kita",
@@ -167,7 +188,11 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Registered as N07a7-01 at 740 m, not transplanted. No age, girth or height published. The pin is the ninomaru compound, which is small; the register locates the tree there and no closer. The epicormic-bud point is general eucalypt biology, not a sourced statement about this tree's regrowth.",
-      "how_to_recognise": "You can recognise it as the tree that survived the atomic bomb 740 metres from the hypocentre, registered A-bombed tree N07a7-01. It stands in the ninomaru of Hiroshima Castle."
+      "how_to_recognise": "You can recognise it as the tree that survived the atomic bomb 740 metres from the hypocentre, registered A-bombed tree N07a7-01. It stands in the ninomaru of Hiroshima Castle.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. N07a7-01",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021014.html"
+      }
     },
     {
       "id": "hir_005",
@@ -193,7 +218,8 @@
       },
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E8%A2%AB%E7%88%86%E3%82%A2%E3%82%AA%E3%82%AE%E3%83%AA",
-        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html"
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021036.html"
       ],
       "access": "Free, open public park",
       "transport": "Tram to Genbaku Dome-mae or Chuden-mae, in Peace Memorial Park",
@@ -206,7 +232,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Registered as E13b23-01 and 02; the b means transplanted, so the 1,300 m is where the trees stood on 6 August 1945, at the Hiroshima Telecommunications Bureau, not where they stand now. Moved to Peace Memorial Park in 1973. No age is published: the date of the original planting is recorded as unknown. Two trees, described as one entry because they stand together and are treated as one memorial.",
-      "how_to_recognise": "You can recognise it by its trunk hollowed out on the side that once faced the atomic blast and closed over with new growth on the other. It stands on the north side of the Peace Memorial Museum's east building."
+      "how_to_recognise": "You can recognise it by its trunk hollowed out on the side that once faced the atomic blast and closed over with new growth on the other. It stands on the north side of the Peace Memorial Museum's east building.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. E13b23-01~02",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021036.html"
+      }
     },
     {
       "id": "hir_006",
@@ -224,7 +254,8 @@
       "story": "Teramachi means temple town, and it is a single street of them, laid out when the Asano lords moved Hiroshima's temples together in the seventeenth century so they would form a defensive line along the river. On 6 August 1945 that put a dozen temples in a row 1,100 metres from the hypocentre. The ginkgo at Hosenbo is the one that is still there, registered as N11a19-01 and never moved. Ginkgo is the species most associated with surviving the bomb, and the reason is not sentimental. It carries an enormous amount of water in a thick, spongy bark, it sprouts readily from the base and from dormant buds on old wood, and it is fire-resistant enough that Japanese temples have planted it against fire for centuries, which is why so many of the trees standing near the hypocentre in 1945 were ginkgoes in the first place. The temples along this street burned. Walk it now and it is quiet, narrow, entirely rebuilt, with old trees in the gaps between new buildings. No age is recorded for this one.",
       "verified_sources": [
         "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
-        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html"
+        "https://www.city.hiroshima.lg.jp/site/atomicbomb-peace/9226.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021028.html"
       ],
       "access": "Free, temple grounds open in daylight",
       "transport": "Tram to Teramachi, about 3 minutes on foot",
@@ -246,7 +277,11 @@
         "label": "October: the whole crown turns butter gold, then drops in a day or two",
         "kind": "autumn colour"
       },
-      "how_to_recognise": "You can recognise it as the ginkgo in the temple grounds, the old tree left in a gap between new buildings on Teramachi. It stands at Hosenbo, on the single street the city's temples were moved together into."
+      "how_to_recognise": "You can recognise it as the ginkgo in the temple grounds, the old tree left in a gap between new buildings on Teramachi. It stands at Hosenbo, on the single street the city's temples were moved together into.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. N11a19-01",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021028.html"
+      }
     },
     {
       "id": "hir_007",
@@ -271,9 +306,10 @@
       },
       "verified_sources": [
         "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
-        "https://shukkeien.jp/"
+        "https://shukkeien.jp/",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021040.html"
       ],
-      "access": "Paid entry to the garden, a small fee, open daily",
+      "access": "Paid entry: 350 yen adults, 150 yen university students, free for school pupils (from 14 April 2025). Open daily 9:00 to 18:00 from 16 March to 15 September and 9:00 to 17:00 from 16 September to 15 March, last entry 30 minutes before closing; closed 29 to 31 December.",
       "transport": "About 10 minutes on foot from Hiroshima Station, or tram to Shukkeien-mae",
       "photo": {
         "url": null,
@@ -285,7 +321,11 @@
       "location_precision": "approximate",
       "notes": "Registered as E13a25-01 at 1,370 m, not transplanted. No age, girth or height published for the tree; the 1620 date is the garden's, not the tree's, and the story keeps the two apart. The pin is the garden, which is large, so expect to look. The only paid-entry tree on this page.",
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by the yellow it turns in the second half of November, with the garden's maples. It stands in Shukkeien among the three registered survivors there, the other two a muku and a black pine."
+      "how_to_recognise": "You can recognise it by the yellow it turns in the second half of November, with the garden's maples. It stands in Shukkeien among the three registered survivors there, the other two a muku and a black pine.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. E13a25-01",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1021040.html"
+      }
     },
     {
       "id": "hir_008",
@@ -312,7 +352,8 @@
       },
       "verified_sources": [
         "https://www.hiroshima-navi.or.jp/post/005851.html",
-        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html"
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1003421.html",
+        "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1020754.html"
       ],
       "access": "Free, temple grounds open in daylight",
       "transport": "Bus or about 25 minutes on foot north from Hiroshima Station",
@@ -327,7 +368,11 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Registered as N21a53-01 at 2,160 m, not transplanted. Girth 4.55 m and height 20 m from Hiroshima's tourism authority page for this tree, which is the only measurement published for any tree on this page; no age anywhere. The gate with the hole in its roof was built in 1990 and repaired in 1994 and is separately registered as an A-bombed building. The pin is the temple.",
-      "how_to_recognise": "You can recognise it without asking anyone: it grows up through a hole cut in the roof of the temple gate. It stands at Anrakuji, 20 metres tall on a trunk 4.55 metres round, beside a gate that leans north."
+      "how_to_recognise": "You can recognise it without asking anyone: it grows up through a hole cut in the roof of the temple gate. It stands at Anrakuji, 20 metres tall on a trunk 4.55 metres round, beside a gate that leans north.",
+      "official_register": {
+        "name": "Hiroshima City A-bombed trees (被爆樹木), city register, no. N21a53-01",
+        "url": "https://www.city.hiroshima.lg.jp/atomicbomb-peace/fukko/1021101/1026920/1026922/1020754.html"
+      }
     },
     {
       "id": "hir_009",
@@ -346,7 +391,8 @@
       "verified_sources": [
         "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69341&branch_number=1",
         "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%BA%84%E4%B9%8B%E5%AE%AE%E7%A5%9E%E7%A4%BE",
-        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889"
+        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69341&branch_number=1 (Ministry of the Environment giant-tree database, facility name 新庄の宮神社, owner class temple/shrine)"
       ],
       "access": "Shinto shrine grounds (公表不可の理由 blank on the register, i.e. no withholding reason given); grounds are open to the public in daylight per the public-religious-ground reading of hard rule 10. No admission fee.",
       "transport": "About 2.3-2.5km north of the existing downtown cluster (hir_001-008, Peace Park/Castle area): the ja.wikipedia article itself states the shrine is a 5-minute walk from the 'Oshibacho' (大芝町) bus stop on the Hiroshima Kotsu network. Genuinely a separate, short trip from downtown rather than part of the same walk; honest as its own small cluster with the two other trees on these grounds.",
@@ -361,7 +407,11 @@
       "girth_cm": 640,
       "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop.",
       "how_to_recognise": "You can recognise it as the larger of the two camphors, 6.4 metres round and 35 metres tall against the other's 5.4 and 23. It stands beside its pair at Shinjo-no-miya Shrine, and is called Otoko-gusu, the husband.",
-      "paid_entry": true
+      "paid_entry": true,
+      "location_site": {
+        "name": "Shinjo-no-miya Shrine",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hir_010",
@@ -380,7 +430,8 @@
       "verified_sources": [
         "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69342&branch_number=1",
         "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%BA%84%E4%B9%8B%E5%AE%AE%E7%A5%9E%E7%A4%BE",
-        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889"
+        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69342&branch_number=1 (same shrine facility as report 69341)"
       ],
       "access": "Shinto shrine grounds (公表不可の理由 blank on the register); open to the public in daylight per the public-religious-ground reading of hard rule 10. No admission fee.",
       "transport": "Same site as hir_009: about 2.3-2.5km north of the downtown cluster, 5 minutes' walk from the 'Oshibacho' (大芝町) bus stop per ja.wikipedia.",
@@ -395,7 +446,11 @@
       "girth_cm": 540,
       "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop.",
       "how_to_recognise": "You can recognise it as the smaller of the two camphors, 5.4 metres round and 23 metres tall where the husband is 6.4 and 35. It stands beside him at Shinjo-no-miya Shrine, and is called Onna-gusu, the wife.",
-      "paid_entry": true
+      "paid_entry": true,
+      "location_site": {
+        "name": "Shinjo-no-miya Shrine",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hir_011",
@@ -413,7 +468,8 @@
       "story": "The national register that catalogues this tree keeps a field for a local nickname. Beside the two camphors on the same grounds it is filled in. Beside this one it reads: none.\n\nThat is the only modest thing about it. The 2000 giant-tree survey recorded an enoki, the Chinese hackberry, with a trunk 4.82 metres round and a crown at 26 metres, health good. By the register's own figures that puts it three metres above the celebrated wife camphor on the same grounds, and nobody has ever given it a name for the trouble.\n\nIt is part of the shrine's wood rather than a specimen planted in front of it. The prefecture's encyclopedia of Hiroshima, describing that wood, lists enoki among its broadleaves alongside zelkova, mukunoki and mukuroji, though it names no individual tree and publishes no measurements. Two sources for the species and the grove, then, and one for the tape.\n\nThe wood grows on ground the city has formally recorded: the shrine's main hall, 2.9 kilometres from the hypocentre, is one of Hiroshima's listed hibaku kenzobutsu, the buildings that were still standing after the atomic bomb.\n\nThe hackberry's age has never been documented. The register left the band empty and no second source fills it, so if you know anything about when it went in, tell us.",
       "verified_sources": [
         "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69343&branch_number=1",
-        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889"
+        "http://www.hiroshima-bunka.jp/modules/newdb/detail.php?id=889",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69343&branch_number=1 (same shrine facility as report 69341)"
       ],
       "access": "Shinto shrine grounds (公表不可の理由 blank on the register); open to the public in daylight per the public-religious-ground reading of hard rule 10. No admission fee.",
       "transport": "Same site as hir_009/hir_010: about 2.3-2.5km north of the downtown cluster, 5 minutes' walk from the 'Oshibacho' (大芝町) bus stop per ja.wikipedia (cited on the camphors' entry; the wikipedia article itself does not separately name the hackberry).",
@@ -428,7 +484,11 @@
       "girth_cm": 482,
       "notes": "Ministry of the Environment giant-tree register (kyoju.biodic.go.jp), surveyed 2000, health good, age band not documented. Second source: ja.wikipedia (camphors only) and hiroshima-bunka.jp (all three), both independently describing the same grove. Designation-level discrepancy: the encyclopedia calls the grove's natural-monument status prefectural, the register's own code reads municipal; both recorded rather than resolved. Address/coordinate discrepancy: register gives Oomiya 2-chome, ja.wikipedia gives the shrine's registered address as Oomiya 1-chome 1-9; the OSM place_of_worship node used for this pin sits about 430m from wikipedia's own infobox coordinate. Genuinely a separate short trip from the downtown cluster (hir_001-008), about 2.3-2.5km north, 5 minutes on foot from the Oshibacho bus stop.",
       "how_to_recognise": "You can recognise it as the hackberry at 26 metres, three metres taller than the wife camphor, on a trunk 4.82 metres round. It stands in the shrine's wood rather than out in front, and unlike the camphors it has no name.",
-      "paid_entry": true
+      "paid_entry": true,
+      "location_site": {
+        "name": "Shinjo-no-miya Shrine",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hir_012",
@@ -481,7 +541,8 @@
       "verified_sources": [
         "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69344&branch_number=1",
         "http://www.cf.city.hiroshima.jp/gionnishi-k/webstation/chiiki/rengematu/rengematu.html",
-        "https://sobanikutama.hatenablog.jp/entry/2021/04/24/193948"
+        "https://sobanikutama.hatenablog.jp/entry/2021/04/24/193948",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69344&branch_number=1 (facility name 蓮光寺)"
       ],
       "access": "Free. Temple grounds, open to the public; a recent visitor blog (April 2021) describes walking straight onto the grounds, no gate or fee mentioned.",
       "transport": "Nagatsuka Station (JR Kabe Line) or the Nagatsuka-cho/Choja-machi area of the Astram Line, then a short walk; roughly 4km from central Hiroshima (Peace Memorial Park), within the ordinary day-trip range.",
@@ -494,7 +555,11 @@
       "curation_status": "ai_generated",
       "location_precision": "approximate",
       "notes": "Ministry of Environment giant-tree register (report_id 69344), surveyed 2000, girth 350cm (the temple's own information board gives 320cm, used as girth_cm since it is the more specific site-level source). Age is temple tradition tied to the 1630 relocation (one account says 1624), corroborated by the register's own age band of 300 years or more; not a measured ring count. Pinned to the temple building (OSM place_of_worship node), no independent tree-level coordinate. Unrelated to the A-bombed register; the gate and Kannon hall beside it survived 1945, the pine's own history does not mention the bombing.",
-      "how_to_recognise": "You can recognise it by the twenty-four wooden posts holding its branches out almost level: nine metres tall and twenty-six across. It stands in the grounds of Renkoji, beside the temple's Edo-period gate."
+      "how_to_recognise": "You can recognise it by the twenty-four wooden posts holding its branches out almost level: nine metres tall and twenty-six across. It stands in the grounds of Renkoji, beside the temple's Edo-period gate.",
+      "location_site": {
+        "name": "Renkoji temple precinct",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hir_014",
@@ -514,7 +579,8 @@
       "verified_sources": [
         "https://dive-hiroshima.com/en/explore/3395/",
         "https://www.chugoku-np.co.jp/articles/-/469634",
-        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53004&branch_number=1"
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53004&branch_number=1",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=53004&branch_number=1 (facility name 友広神社)"
       ],
       "access": "Free. Tomohiro Shrine is a neighbourhood tutelary shrine with grounds open to visitors, consistent with its status as a city-designated natural monument.",
       "transport": "JR Kabe Line to Nakashima Station, about 8 minutes on foot",
@@ -534,7 +600,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the torii in front of it, put up in 2012 after the 1943 flood took the old one, and by the limbs reaching nearly ten metres north. It stands behind that gate at Tomohiro Shrine, 25 metres tall."
+      "how_to_recognise": "You can recognise it by the torii in front of it, put up in 2012 after the 1943 flood took the old one, and by the limbs reaching nearly ten metres north. It stands behind that gate at Tomohiro Shrine, 25 metres tall.",
+      "location_site": {
+        "name": "Tomohiro Shrine",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hir_015",
@@ -621,7 +691,8 @@
       "story": "This ginkgo grows roots out of its own branches. They hang down through the crown in pale columns, a habit that only turns up on very old trees of this species, and it is where the neighbourhood name comes from: Chichisagari Icho, the milk-drop ginkgo. Hiroshima's heritage record designated it in 1979 and put its age at about 1,500 years. That number is the designation's own account rather than a ring count or a documented planting, so it is a broad guess and should be read as one: somewhere in the range of 1,200 to 1,600 years, with nobody having cored the tree to check. The trunk is either 5.25 metres round or 4.18, depending on which survey you take. The heritage record gives the larger figure, the Environment Ministry's giant-tree register gives the smaller one from its visit in 2000, and the gap is most likely the height at which each of them ran the tape, or the twenty years between the two measurements. It stands 24 metres tall, with limbs reaching nine and a half metres from east to west. The shrine sits in Kawachi, on the flat ground between the Ota and the Furukawa, two rivers with a long history of putting this district under water. Grounds are free and open in daylight. No station is within walking distance, so it is a local bus toward Kawachi or a car.",
       "verified_sources": [
         "https://www.mogurin.or.jp/maibun/bunkazai/nukui_ichou.htm",
-        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69345&branch_number=1"
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69345&branch_number=1",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69345&branch_number=1 (facility name 温井八幡神社)"
       ],
       "access": "Free. Shinto shrine grounds, ordinarily open to the public in daylight per the public-religious-ground reading of hard rule 10; no fee, no source records any restriction.",
       "transport": "In the Kawachi district of Asaminami-ku, between the Ota and Furukawa rivers; no station within easy walk, nearest access is by car or local bus toward Kawachi from Kobatake or Yokogawa.",
@@ -640,7 +711,11 @@
         "kind": "autumn colour",
         "label": "late November, when the whole crown turns gold"
       },
-      "how_to_recognise": "You can recognise it by the roots hanging out of its own branches in pale columns, which is what gives it the name Chichisagari, the milk-drop ginkgo. It stands in the grounds of Nukui Hachiman Shrine, 24 metres tall."
+      "how_to_recognise": "You can recognise it by the roots hanging out of its own branches in pale columns, which is what gives it the name Chichisagari, the milk-drop ginkgo. It stands in the grounds of Nukui Hachiman Shrine, 24 metres tall.",
+      "location_site": {
+        "name": "Nukui Hachiman Shrine",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hir_018",
@@ -660,7 +735,8 @@
       "verified_sources": [
         "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69346&branch_number=1",
         "https://www.hiroshima-navi.or.jp/post/006006.html",
-        "https://www.mogurin.or.jp/maibun/bunkazai/atomyoujin.htm"
+        "https://www.mogurin.or.jp/maibun/bunkazai/atomyoujin.htm",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69346&branch_number=1 (facility name 阿刀明神社)"
       ],
       "access": "Free. The shrine grove is a city-designated natural monument on ordinary shrine grounds, open in the way shrine precincts generally are.",
       "transport": "Rural Asaminami-ku; reachable by bus toward Numata-cho Ato, about a 2 minute walk from the Kamihara stop per local sources. No detailed transit timetable confirmed.",
@@ -672,7 +748,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the broad evergreen laurel crown over a trunk 3.73 metres round, slightly slimmer than the cedar a few steps away. It stands inside the protected grove of Ato Myojin Shrine, Numata-cho."
+      "how_to_recognise": "You can recognise it by the broad evergreen laurel crown over a trunk 3.73 metres round, slightly slimmer than the cedar a few steps away. It stands inside the protected grove of Ato Myojin Shrine, Numata-cho.",
+      "location_site": {
+        "name": "Ato Myojin Shrine",
+        "radius_m": 50.0
+      }
     },
     {
       "id": "hir_019",
@@ -692,7 +772,8 @@
       "verified_sources": [
         "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69347&branch_number=1",
         "https://www.hiroshima-navi.or.jp/post/006006.html",
-        "https://www.mogurin.or.jp/maibun/bunkazai/atomyoujin.htm"
+        "https://www.mogurin.or.jp/maibun/bunkazai/atomyoujin.htm",
+        "https://kyoju.biodic.go.jp/?_action=gtsearchdetail&report_id=69347&branch_number=1 (facility name 阿刀明神社)"
       ],
       "access": "Free. Same city-designated natural monument grove as the Tabu Tree of Ato Myojin Shrine, on ordinary shrine grounds.",
       "transport": "Rural Asaminami-ku; reachable by bus toward Numata-cho Ato, about a 2 minute walk from the Kamihara stop per local sources.",
@@ -704,7 +785,11 @@
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the straight red-brown fibrous trunk, 4.10 metres round, the thickest thing in the grove and wider than the evergreen laurel beside it. It stands in the protected grove of Ato Myojin Shrine, Numata-cho."
+      "how_to_recognise": "You can recognise it by the straight red-brown fibrous trunk, 4.10 metres round, the thickest thing in the grove and wider than the evergreen laurel beside it. It stands in the protected grove of Ato Myojin Shrine, Numata-cho.",
+      "location_site": {
+        "name": "Ato Myojin Shrine",
+        "radius_m": 50.0
+      }
     },
     {
       "id": "hir_020",
