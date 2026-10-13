@@ -118,7 +118,10 @@
       "how_to_recognise": "Two big yews standing together on the north side of the church; this is the larger of the pair.",
       "verified_sources": [
         "https://www.brighton-hove.gov.uk/sites/default/files/2022-03/Special%20Trees%20of%20Stanmer%20Park%20-%20A2_Fiona%20Le%20Garsmeur%201.pdf",
-        "https://www.ancient-yew.org/yew_tree_database/stanmer/"
+        "https://www.ancient-yew.org/yew_tree_database/stanmer/",
+        "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/parks-and-green-spaces/special-trees-stanmer-park",
+        "https://www.ancient-yew.org/yew_trees/stanmer-735/",
+        "https://www.ancient-yew.org/yew_tree_database/stanmer/ (record places the two yews on the north side of the church, coordinates 50.870545, -0.10168022, about 30 m from our pin; status: Churchyard, public access)"
       ],
       "access": "Free, public churchyard within Stanmer Park, generally open in daylight hours",
       "transport": "Falmer railway station, 20-25 min walk through the park; bus routes to Stanmer village",
@@ -139,6 +142,14 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Ancient Yew Group database (Stanmer 735)",
+        "url": "https://www.ancient-yew.org/yew_trees/stanmer-735/"
+      },
+      "location_site": {
+        "name": "Stanmer churchyard (two old yews on the north side of the church)",
+        "radius_m": 50.0
       }
     },
     {

@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "brighton",
+    "kind": "enrich",
+    "tokens": 58000,
+    "trees": 0,
+    "note": "enrichment: Stanmer yew Ancient Yew Group record and churchyard site; 1 of 6 applied (cedar record withheld, council page covers three cedars and does not say which); brightonelmtrees.com does not resolve, mybrightonandhove and the substack 403; 14 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "hiroshima",
     "kind": "enrich",
     "tokens": 55000,
