@@ -103,7 +103,15 @@
       "curation_status": "ai_generated",
       "notes": "Planting date (20 April 1918), organisers, 1995 plaque, 2015 Tree of the Year win and 2017 Storm Ophelia damage independently confirmed across Wikipedia, BBC News and the Institute of Chartered Foresters. Coordinates from Wikipedia's article-specific geotag, consistent with the Geograph photo's caption placing the tree near Glasgow University in Kelvingrove Park.",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by a crown reduced and rebalanced after Storm Ophelia tore it in 2017, and a 1995 plaque at its base. It stands in Kelvingrove Park, near Glasgow University."
+      "how_to_recognise": "You can recognise it by a crown reduced and rebalanced after Storm Ophelia tore it in 2017, and a 1995 plaque at its base. It stands in Kelvingrove Park, near Glasgow University.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when the oak turns russet and yellow, among the best autumn colour of any oak",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "gla_003",
