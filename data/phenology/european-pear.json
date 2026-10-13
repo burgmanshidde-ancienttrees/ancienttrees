@@ -1,0 +1,42 @@
+{
+ "common_name": "European Pear",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  8,
+  9,
+  10
+ ],
+ "colour": [],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "striking",
+  "fruit": "nice"
+ },
+ "flower_label": "a froth of white blossom in spring",
+ "fruit_label": "pears, from late summer into autumn",
+ "sources": [
+  "https://www.rhs.org.uk/fruit/pears/grow-your-own",
+  "https://www.treesandshrubsonline.org/articles/pyrus/pyrus-communis/"
+ ],
+ "flower_colour": "#F8F6F0",
+ "flower_peak": 4
+}

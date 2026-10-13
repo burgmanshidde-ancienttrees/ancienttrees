@@ -135,6 +135,10 @@ def main():
         with open(f, encoding="utf-8") as fh:
             e = json.load(fh)
         pheno[e["common_name"]] = e
+        # Cultivars and genus names that share the calendar (`covers`, the
+        # same lookup as phenologyByName in site/src/lib/phenology.ts).
+        for c in e.get("covers") or []:
+            pheno.setdefault(c, e)
 
     filled, skipped_nice, skipped_tropics, touched_files = 0, 0, 0, 0
     examples = []

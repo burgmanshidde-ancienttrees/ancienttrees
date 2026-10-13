@@ -1,0 +1,38 @@
+{
+ "common_name": "Bur Oak",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  9,
+  10
+ ],
+ "colour": [],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "nice"
+ },
+ "fruit_label": "the largest acorns of any North American oak, in deep cups with a mossy fringe",
+ "sources": [
+  "https://plants.ces.ncsu.edu/plants/quercus-macrocarpa/",
+  "https://en.wikipedia.org/wiki/Quercus_macrocarpa"
+ ]
+}

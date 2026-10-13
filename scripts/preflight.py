@@ -432,7 +432,7 @@ def check_stacked_pins():
 PHENOLOGY_KEYS = {
     "common_name", "habit", "leaf", "flowers", "fruit", "colour", "bare",
     "intensity", "flower_label", "fruit_label", "colour_label", "sources",
-    "peak", "flower_colour", "flower_peak", "flower_days",
+    "peak", "flower_colour", "flower_peak", "flower_days", "covers",
 }
 # Blossom is not curated the way the other moments are. Hidde, 2026-08-21:
 # "alle bomen die bloeien mogen de animatie van bloei in de kleur van hun bloei,
@@ -461,6 +461,23 @@ INTENSITIES = {"unseen", "nice", "striking", "worth the trip"}
 def check_phenology():
     """Season files: no key the build cannot read, no judgement it cannot parse."""
     out = []
+    # `covers` lends a calendar to a cultivar or genus name. A name with its
+    # own file never borrows one, and no name borrows two.
+    owners, own = {}, set()
+    for path in sorted(glob.glob("data/phenology/*.json")):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except Exception:
+            continue
+        own.add(d.get("common_name"))
+        for c in d.get("covers") or []:
+            if c in owners:
+                out.append("%s: covers %r, already covered by %s" % (os.path.basename(path), c, owners[c]))
+            owners[c] = os.path.basename(path)
+    for c, f in sorted(owners.items()):
+        if c in own:
+            out.append("%s: covers %r, which has its own file" % (f, c))
     for path in sorted(glob.glob("data/phenology/*.json")):
         name = os.path.basename(path)
         try:

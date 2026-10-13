@@ -1,0 +1,42 @@
+{
+ "common_name": "Osage Orange",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  5,
+  6
+ ],
+ "fruit": [
+  10,
+  11
+ ],
+ "colour": [
+  10,
+  11
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "striking",
+  "colour": "nice"
+ },
+ "fruit_label": "wrinkled yellow-green balls the size of a grapefruit, on female trees",
+ "colour_label": "yellow",
+ "sources": [
+  "https://plants.ces.ncsu.edu/plants/maclura-pomifera/"
+ ]
+}

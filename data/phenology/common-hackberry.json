@@ -1,0 +1,41 @@
+{
+ "common_name": "Common Hackberry",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  10,
+  11
+ ],
+ "colour": [
+  10
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "nice",
+  "colour": "nice"
+ },
+ "fruit_label": "small round fruits ripening deep purple, taken by birds",
+ "colour_label": "yellow",
+ "sources": [
+  "https://plants.ces.ncsu.edu/plants/celtis-occidentalis/"
+ ]
+}

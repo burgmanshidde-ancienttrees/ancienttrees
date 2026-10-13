@@ -1,0 +1,40 @@
+{
+ "common_name": "Service Tree",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  5
+ ],
+ "fruit": [
+  9,
+  10
+ ],
+ "colour": [],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "nice",
+  "fruit": "nice"
+ },
+ "flower_label": "broad clusters of white flowers",
+ "fruit_label": "small apple- or pear-shaped fruits, sweet only once they soften",
+ "sources": [
+  "https://www.treesandshrubsonline.org/articles/cormus/cormus-domestica/",
+  "https://en.wikipedia.org/wiki/Sorbus_domestica"
+ ],
+ "flower_colour": "#F7F4EC",
+ "flower_peak": 5
+}

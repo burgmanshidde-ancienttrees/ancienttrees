@@ -1,0 +1,46 @@
+{
+ "common_name": "Kentucky Coffeetree",
+ "habit": "deciduous",
+ "leaf": [
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  6,
+  7
+ ],
+ "fruit": [
+  10,
+  11,
+  12,
+  1,
+  2
+ ],
+ "colour": [
+  10
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3,
+  4
+ ],
+ "intensity": {
+  "flowers": "nice",
+  "fruit": "nice",
+  "colour": "nice"
+ },
+ "flower_label": "sprays of greenish-white, fragrant flowers at the branch tips, showiest on female trees",
+ "fruit_label": "thick reddish-brown pods on female trees, hanging through winter",
+ "colour_label": "a clear yellow",
+ "sources": [
+  "https://plants.ces.ncsu.edu/plants/gymnocladus-dioicus/",
+  "https://en.wikipedia.org/wiki/Gymnocladus_dioicus"
+ ]
+}

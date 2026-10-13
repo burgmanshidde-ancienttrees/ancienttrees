@@ -79,11 +79,24 @@ RECORD = re.compile(
 REG_SLUGS = [os.path.basename(f)[:-5] for f in glob.glob(os.path.join(ROOT, "data", "registers", "*.json"))]
 CONCRETE = re.compile(r"\d{1,2}[:.h]\d{2}|\b(free|gratis|daylight|dawn|dusk|always open|open all|24 hours|eur|€|\$|£|¥|ticket|closed)\b", re.I)
 PHEN = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(ROOT, "data", "phenology", "*.json"))}
+# A file's `covers` names a cultivar or genus that shares its calendar
+# (phenologyByName in site/src/lib/phenology.ts), keyed here by slug.
+PHEN_COVERS = {}
+for _f in glob.glob(os.path.join(ROOT, "data", "phenology", "*.json")):
+    with open(_f, encoding="utf-8") as _fh:
+        for _c in json.load(_fh).get("covers") or []:
+            PHEN_COVERS[re.sub(r"[^a-z0-9]+", "-", _c.lower()).strip("-")] = os.path.basename(_f)[:-5]
 
 
 def species_slug(t):
     common = (t.get("species") or "").split("(")[0].strip().lower()
     return re.sub(r"[^a-z0-9]+", "-", common).strip("-")
+
+
+def phen_slug(t):
+    """The phenology file a tree reads its calendar from, or None."""
+    sl = species_slug(t)
+    return sl if sl in PHEN else PHEN_COVERS.get(sl)
 
 
 def gaps(t):
@@ -99,7 +112,7 @@ def gaps(t):
         out.append("measurement")
     if not CONCRETE.search(t.get("access") or ""):
         out.append("access")
-    if not t.get("best_time") and species_slug(t) in PHEN:
+    if not t.get("best_time") and phen_slug(t):
         out.append("season")
     return out
 
@@ -288,7 +301,7 @@ def brief(arg):
                          "indexed": has_photo(t),
                          "access": t.get("access"), "gaps": g,
                          "sources": t.get("verified_sources") or [],
-                         "season_file": f"data/phenology/{species_slug(t)}.json" if "season" in g else None})
+                         "season_file": f"data/phenology/{phen_slug(t)}.json" if "season" in g else None})
             if t["id"] in rm["skips_by_id"] and ({"register", "measurement"} & set(g)):
                 mine[-1]["register_candidates"] = rm["skips_by_id"][t["id"]]
         # One brief file per city, so --apply and --done dead-end per city.

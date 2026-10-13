@@ -285,6 +285,12 @@ interface PhenologyEntry {
   flower_peak?: number;
   /** How long the display actually lasts, for the reader rather than the map. */
   flower_days?: string;
+  /** Other species names on the site that share this calendar: a cultivar or
+   * variety of the same species ("Fern-leaved Beech"), or a genus-only name
+   * whose genus keeps one calendar ("Lime" for Tilia sp.). Listed by hand,
+   * one name at a time, so no tree borrows a calendar nobody checked
+   * (2026-10-13; an unknown oak is never covered, it may be evergreen). */
+  covers?: string[];
 }
 
 /** The one moment of the year this species is worth a trip for, and what the
@@ -316,6 +322,19 @@ export function loadPhenology(): Map<string, PhenologyEntry> {
   }
   cachedPhenology = out;
   return out;
+}
+
+let cachedCovers: Map<string, PhenologyEntry> | null = null;
+
+/** The calendar for a species name: its own file, else the file that covers it. */
+export function phenologyByName(name: string): PhenologyEntry | undefined {
+  const own = loadPhenology().get(name);
+  if (own) return own;
+  if (!cachedCovers) {
+    cachedCovers = new Map();
+    for (const e of loadPhenology().values()) for (const c of e.covers ?? []) cachedCovers.set(c, e);
+  }
+  return cachedCovers.get(name);
 }
 
 function shift(months: number[], delta: number): number[] {
@@ -385,7 +404,7 @@ export function highlightCurve(ph: PhenologyEntry): [number[], Moment[]] {
 
 /** The species calendar, shifted for where the tree actually stands. */
 export function phenologyFor(tree: Tree, lat: number): PhenologyEntry | null {
-  const e = loadPhenology().get(speciesCommon(tree));
+  const e = phenologyByName(speciesCommon(tree));
   if (!e || Math.abs(lat) < 25) return null;
   // The tropics guard above already used Math.abs; this line did not, and that
   // was the bug (found 2026-08-15 by the Melbourne write pass, live on Hobart

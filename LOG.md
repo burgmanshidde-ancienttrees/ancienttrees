@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 session: season calendars on 512 more tree pages
+
+- Hidde asked why so many trees have no season chart. Before: 2,244 of 3,674 trees had a species calendar (58 files). Now 2,756 (102 files). The rest are mostly evergreen conifers and palms with nothing to chart, plus a long tail of one-tree species.
+- 44 new species calendars, sourced (katsura, zelkova, the elms and American oaks, wisteria, jacaranda, pohutukawa, pear, apple, larch...). Skipped with a reason: Gray Poplar, Tasmanian Blue Gum, Montezuma Cypress, Box Elder (no source or nothing visible).
+- New `covers` key: a calendar file names the cultivars and genus names that share it (Fern-leaved Beech, Lombardy Poplar, the weeping forms, "Lime" and "Plane" for Tilia sp. / Platanus sp., Texas Live Oak under Southern Live Oak). Never "Oak (Quercus sp.)": it may be evergreen. One list, read by phenology.ts (`phenologyByName`), season_backfill.py and enrich.py; preflight refuses a name covered twice.
+- NOT done, on purpose: `season_backfill.py` would have written 309 best_time lines, but 78 limes would all read "June to July, when it flowers" and 106 oaks an acorn line (his 08-20 ruling: acorns are not a highlight). Templated text across many pages is the shape Google demoted. Left undone; the backfill needs an oak exclusion and varied labels before it runs again.
+- Chart only, no new per-tree text, so do not expect it to move Google much; it tells a visitor when to go.
+
 ## 2026-10-13 session: app polish from Hidde's test
 
 - Map: "7 trees you can see" is gone again at full height (his 10-10 ruling; a 10-12 change had brought it back). The strip stays as the grip; the count still shows when the sheet is low.

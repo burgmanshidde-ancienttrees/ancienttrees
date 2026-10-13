@@ -1,0 +1,43 @@
+{
+ "common_name": "Turkey Oak",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  9,
+  10
+ ],
+ "colour": [
+  10,
+  11
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "nice",
+  "colour": "nice"
+ },
+ "fruit_label": "large acorns in bristly, mossy cups, orange at the base",
+ "colour_label": "pale yellow-gold",
+ "sources": [
+  "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/turkey-oak/",
+  "https://en.wikipedia.org/wiki/Quercus_cerris"
+ ]
+}

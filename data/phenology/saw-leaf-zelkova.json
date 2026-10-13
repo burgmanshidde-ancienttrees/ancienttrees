@@ -1,0 +1,41 @@
+{
+ "common_name": "Saw-leaf Zelkova",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  10
+ ],
+ "colour": [
+  10,
+  11
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "unseen",
+  "colour": "nice"
+ },
+ "colour_label": "yellow, orange or rusty red, varying from tree to tree",
+ "sources": [
+  "https://plants.ces.ncsu.edu/plants/zelkova-serrata/",
+  "https://ja.wikipedia.org/wiki/%E3%82%B1%E3%83%A4%E3%82%AD"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "common_name": "Pin Oak",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  5
+ ],
+ "fruit": [
+  10
+ ],
+ "colour": [
+  10,
+  11
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "nice",
+  "colour": "striking"
+ },
+ "fruit_label": "small round acorns, singly or in twos and threes",
+ "colour_label": "dark red to russet, and young trees keep their leaves into winter",
+ "sources": [
+  "https://plants.ces.ncsu.edu/plants/quercus-palustris/"
+ ]
+}

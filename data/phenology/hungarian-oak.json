@@ -1,0 +1,43 @@
+{
+ "common_name": "Hungarian Oak",
+ "habit": "deciduous",
+ "leaf": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "flowers": [
+  4,
+  5
+ ],
+ "fruit": [
+  9,
+  10
+ ],
+ "colour": [
+  10,
+  11
+ ],
+ "bare": [
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "intensity": {
+  "flowers": "unseen",
+  "fruit": "nice",
+  "colour": "striking"
+ },
+ "fruit_label": "acorns in groups of two to eight at the twig ends",
+ "colour_label": "brown, russet or yellow, among the best of any oak, and some leaves hang on until spring",
+ "sources": [
+  "https://www.treesandshrubsonline.org/articles/quercus/quercus-frainetto/",
+  "https://en.wikipedia.org/wiki/Quercus_frainetto"
+ ]
+}
