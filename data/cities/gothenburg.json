@@ -66,7 +66,7 @@
       "age_estimate": "roughly 300 to 500 years",
       "age_min": 300,
       "age_max": 500,
-      "girth_cm": null,
+      "girth_cm": 600,
       "location": {
         "address": "Skarsgatan near Drakenbergsgatan, Orgryte, Goteborg",
         "latitude": 57.6965,
@@ -78,7 +78,8 @@
       "verified_sources": [
         "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
         "http://www5.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/93ec9160f537fa30c12572aa004b6c1a/3df03eb0d7ffce02c1258d0900487fc4/$FILE/Bilaga%203.pdf",
-        "https://www.gp.se/nyheter/goteborg/eken-i-skar-goteborgs-enda-jattetrad-med-egen-tomt.f07dd41f-1d9d-498f-be38-9e0c7942af6c"
+        "https://www.gp.se/nyheter/goteborg/eken-i-skar-goteborgs-enda-jattetrad-med-egen-tomt.f07dd41f-1d9d-498f-be38-9e0c7942af6c",
+        "https://www5.goteborg.se/prod/fastighetskontoret/etjanst/planobygg.nsf/vyFiler/Sk%C3%A5r%20-%20Naturminnesf%C3%B6rklaring%20av%20en%20gr%C3%A4nsek%20p%C3%A5%20fastigheten%20Sk%C3%A5r%20751%3A81-Omr%C3%A5desbest%C3%A4mmelser%20-%20laga%20kraft-Bilaga%201/$File/Bilaga%201.pdf"
       ],
       "access": "Free, standing on a residential street in Orgryte, viewable from public road",
       "transport": "Tram to Danska vagen or Redbergsplatsen then short walk; roughly 15-20 minutes from central Goteborg",
@@ -97,6 +98,10 @@
         ],
         "label": "October to November: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Naturminne (Goteborgs Stad, miljobalken 7 kap. 10 §)",
+        "url": "https://www5.goteborg.se/prod/fastighetskontoret/etjanst/planobygg.nsf/vyFiler/Sk%C3%A5r%20-%20Naturminnesf%C3%B6rklaring%20av%20en%20gr%C3%A4nsek%20p%C3%A5%20fastigheten%20Sk%C3%A5r%20751%3A81-Omr%C3%A5desbest%C3%A4mmelser%20-%20laga%20kraft-Bilaga%201/$File/Bilaga%201.pdf"
       }
     },
     {
@@ -126,7 +131,8 @@
       "verified_sources": [
         "http://www.tradplangoteborg.se/radda_granseken/",
         "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
-        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448",
+        "https://www5.goteborg.se/prod/fastighetskontoret/etjanst/planobygg.nsf/vyFiler/B%C3%B6%20-%20Naturminnesf%C3%B6rklaring%20av%20en%20gr%C3%A4nsek%20p%C3%A5%20fastigheten%20B%C3%B6%20750%3A797-Omr%C3%A5desbest%C3%A4mmelser%20-%20laga%20kraft-Bilaga%201/$File/Bilaga%201.pdf"
       ],
       "access": "Free, standing beside Delsjovagen, viewable and reachable from the public road/verge",
       "transport": "Tram to Danska vagen or bus toward Delsjon then short walk; roughly 15-20 minutes from central Goteborg",
@@ -137,7 +143,11 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Naturminne (Goteborgs Stad, miljobalken 7 kap. 10 §)",
+        "url": "https://www5.goteborg.se/prod/fastighetskontoret/etjanst/planobygg.nsf/vyFiler/B%C3%B6%20-%20Naturminnesf%C3%B6rklaring%20av%20en%20gr%C3%A4nsek%20p%C3%A5%20fastigheten%20B%C3%B6%20750%3A797-Omr%C3%A5desbest%C3%A4mmelser%20-%20laga%20kraft-Bilaga%201/$File/Bilaga%201.pdf"
+      }
     },
     {
       "id": "got_004",
@@ -146,7 +156,7 @@
       "age_estimate": "roughly 300 to 500 years",
       "age_min": 300,
       "age_max": 500,
-      "girth_cm": null,
+      "girth_cm": 500,
       "location": {
         "address": "Skogshagestigen, near Delsjogrillen (Delsjovagen 53), Orgryte, Goteborg",
         "latitude": 57.6997,
@@ -157,7 +167,8 @@
       "how_to_recognise": "The big old oak beside the Skogshagestigen footpath, a short walk uphill from the grill at Delsjovagen 53.",
       "verified_sources": [
         "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
-        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448",
+        "https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/11B58950A944DDB0C1258C5300284517/$File/Bilaga_1_Beslutshandling.pdf"
       ],
       "access": "Free, on a public path (Skogshagestigen) near the Delsjon recreation area",
       "transport": "Bus toward Delsjon/Skatas then short walk; roughly 20 minutes from central Goteborg",
@@ -176,6 +187,10 @@
         ],
         "label": "October to November: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Naturminne (Goteborgs Stad, miljobalken 7 kap. 10 §)",
+        "url": "https://www4.goteborg.se/prod/Intraservice/Namndhandlingar/SamrumPortal.nsf/11B58950A944DDB0C1258C5300284517/$File/Bilaga_1_Beslutshandling.pdf"
       }
     },
     {
@@ -196,7 +211,8 @@
       "how_to_recognise": "The heavy old oak on Laboratoriegatan near the Sankt Sigfridsgatan end, much thicker in the trunk than the street trees along it.",
       "verified_sources": [
         "https://vartgoteborg.se/p/fyra-gransekar-skyddas-i-orgryte/",
-        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448"
+        "https://www.mynewsdesk.com/se/goteborgsstad/pressreleases/goeteborgs-graensekar-har-blivit-naturminnen-3409448",
+        "https://www5.goteborg.se/prod/fastighetskontoret/etjanst/planobygg.nsf/vyFiler/Sk%C3%A5r%20-%20Naturminnesf%C3%B6rklaring%20av%20en%20gr%C3%A4nsek%20p%C3%A5%20fastigheten%20Sk%C3%A5r%20751%3A93-Omr%C3%A5desbest%C3%A4mmelser%20-%20laga%20kraft-Bilaga%201/$File/Bilaga%201.pdf"
       ],
       "access": "Free, on a residential street (Laboratoriegatan) in Orgryte, viewable from public road",
       "transport": "Tram to Danska vagen or Olskrokstorget then short walk; roughly 15-20 minutes from central Goteborg",
@@ -215,6 +231,10 @@
         ],
         "label": "October to November: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Naturminne (Goteborgs Stad, miljobalken 7 kap. 10 §)",
+        "url": "https://www5.goteborg.se/prod/fastighetskontoret/etjanst/planobygg.nsf/vyFiler/Sk%C3%A5r%20-%20Naturminnesf%C3%B6rklaring%20av%20en%20gr%C3%A4nsek%20p%C3%A5%20fastigheten%20Sk%C3%A5r%20751%3A93-Omr%C3%A5desbest%C3%A4mmelser%20-%20laga%20kraft-Bilaga%201/$File/Bilaga%201.pdf"
       }
     }
   ]

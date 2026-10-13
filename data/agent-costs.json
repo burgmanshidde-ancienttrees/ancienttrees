@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "gothenburg",
+    "kind": "enrich",
+    "tokens": 77000,
+    "trees": 0,
+    "note": "enrichment: naturminne decision records (2025-09-23) for the four Orgryte boundary oaks, three with 2024 girth; no pins (decisions carry no coordinates, Overpass 406); Torslanda linden nothing (churchyard over 50 m, no register page); 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "thessaloniki",
     "kind": "enrich",
     "tokens": 51000,
