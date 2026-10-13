@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Roosendaal's registered trees stand in four public places across town. De Kring square holds a pair of planes: a rare Oriental plane from around 1850, the wilder parent of the London plane, with a London plane from the 1900s about 13 metres in front of it. Emile van Loonpark holds a horse chestnut behind the pond that flowers every May. On Burgerhoutsestraat a catalpa and a London plane frame the same building from opposite sides, and in the old cemetery on Bachlaan a double-flowered horse chestnut from the 1870s stands alone among the graves.",
-  "meta_description": "Six registered trees in Roosendaal: an Oriental and a London plane paired at De Kring, a chestnut among the Bachlaan graves, and a catalpa.",
-  "question_meta": "Roosendaal's oldest tree is an Oriental plane at De Kring, banded to around 1850 and roughly 180 years old. Its story and five more.",
+  "meta_description": "Eight registered trees in Roosendaal and Nispen: paired planes at De Kring, a chestnut among the Bachlaan graves, a catalpa and a copper beech.",
+  "question_meta": "Roosendaal's oldest tree is an Oriental plane at De Kring, banded to around 1850 and roughly 180 years old. Its story and seven more.",
   "question_answer": "The oldest tree in Roosendaal is the Oriental Plane of De Kring, which the national tree register bands to a planting around 1850, roughly 180 years old. It stands on De Kring square, a rare tree in a country whose squares are planted with London planes.",
-  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the single source throughout, so every entry ships flagged rather than confirmed. The six trees sit in four spots. De Kring square holds the Oriental plane, a species planted far less often in the Netherlands than its hybrid offspring, the London plane, with a London plane from the 1900s 13 metres in front; the horse chestnut that shared the square with them was felled in 2014 and a young tree planted in its place. Emile van Loonpark holds a horse chestnut behind the pond, from around 1870. Burgerhoutsestraat holds a catalpa and a London plane at opposite corners of the same building, the catalpa flowering white in midsummer and hanging its long bean pods into winter. The Algemene Begraafplaats on Bachlaan holds a double-flowered horse chestnut banded to the 1870s. All six stand on public ground with nothing to pay; the cemetery is open daily from 8.00 to 16.30. Where a pin is marked approximate, we know the site and not the exact trunk.",
+  "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every figure on this page is a band. The register is the main source, so most entries ship flagged. Six of the eight trees sit in four spots in town; two more stand in the village of Nispen, 6 km south. De Kring square holds the Oriental plane with a London plane from the 1900s 13 metres in front. Emile van Loonpark holds a horse chestnut behind the pond, from around 1870. Burgerhoutsestraat holds a catalpa and a London plane at opposite corners of the same building. The Algemene Begraafplaats on Bachlaan holds a double-flowered horse chestnut banded to the 1870s. Nispen holds a copper beech of fused stems at its parish cemetery gate and a lime planted in 1909 for the birth of Princess Juliana. All eight stand on public ground or beside a public road, with nothing to pay; the Bachlaan cemetery is open daily from 8.00 to 16.30. Where a pin is marked approximate, we know the site and not the exact trunk.",
   "hero_tree_id": "roo_001",
   "oldest_tree_id": "roo_001",
   "faq": [
@@ -263,6 +263,85 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      }
+    },
+    {
+      "id": "roo_012",
+      "name": "The Copper Beech of Nispen Cemetery",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "age_estimate": "roughly 175 years, from a registered planting decade",
+      "age_min": 170,
+      "age_max": 180,
+      "age_basis": "source",
+      "girth_cm": 490,
+      "height_m": 26,
+      "location": {
+        "address": "Nispen, Heijbeeksestraat, at the entrance of the parish cemetery",
+        "latitude": 51.482347,
+        "longitude": 4.462579,
+        "neighbourhood": "Nispen"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691942&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691942",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691942&outFields=*&f=json"
+      },
+      "access": "Free. Stands at the cemetery entrance beside the public Heijbeeksestraat and is visible from the street. Register: visitable ja, visible ja, openbaar ja, owner a religious body (parish). No cemetery hours found.",
+      "transport": "Nispen is about 6 km south of Roosendaal station (about 20 minutes by bike or car); a bus connection was not confirmed, check 9292 for the Nispen stop. 650 m from the Julianalinde (roo_013).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The thickest beech in Roosendaal's part of the national tree register is really three trunks grown into one. At chest height the copper beech at the gate of Nispen's parish cemetery measures 4.9 metres round, more than any other beech the register lists for Roosendaal. Look lower and the trick shows: 40 centimetres above the ground it is three stems, fused higher up into one flat, oval column. The register says so itself, so read the 490 as the girth of a fused mass rather than of a single trunk.\n\nThe height needs no footnote. It stands 26 metres tall, a purple crown over the corner where the cemetery entrance meets Heijbeeksestraat.\n\nThe Bomenstichting's Landelijk Register Monumentale Bomen puts its planting in the decade 1840 to 1850, which makes it roughly 175 years old. That register is the only source behind this entry, but it is a recent one: an inspector looked at the tree in September 2023 and kept it on the list as monumental. The ground belongs to the parish of the Maria Hemelvaartkerk, whose church stands in front of the cemetery.\n\nYou can see it from the street without going in. Nispen lies about six kilometres south of Roosendaal, close to the Belgian border, and the lime the village planted in 1909 for the birth of Princess Juliana stands 650 metres away.",
+      "how_to_recognise": "You can recognise it by its purple-leaved crown, 26 metres tall, on a trunk that splits into three stems just above the ground. It stands at the cemetery entrance on the corner with Heijbeeksestraat, behind the Maria Hemelvaartkerk.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the purple leaves turn copper before they fall"
+      }
+    },
+    {
+      "id": "roo_013",
+      "name": "The Julianalinde of Nispen",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "117 years, planted 1909",
+      "age_min": 116,
+      "age_max": 118,
+      "age_basis": "source",
+      "girth_cm": 282,
+      "height_m": 18,
+      "location": {
+        "address": "Nispen, corner of Dorpsstraat and De Lind",
+        "latitude": 51.48774,
+        "longitude": 4.459209,
+        "neighbourhood": "Nispen"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690582&outFields=*&f=json",
+        "https://www.heemkundenispen.nl/oranjebomen_julianalinde.htm (Heemkundekring de Heerlijckheijd Nispen: Julianalinde, planting 24 May 1909, adopted 1993)",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690582",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690582&outFields=*&f=json"
+      },
+      "access": "Free. Municipal green triangle (plantsoen) at a village street corner, public at all times. Register: visitable ja, visible ja, owner gemeente.",
+      "transport": "Nispen is about 6 km south of Roosendaal station (about 20 minutes by bike or car); a bus connection was not confirmed, check 9292 for the Nispen stop. 650 m from the cemetery beech (roo_012).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Somewhere under this lime's roots lies a bottle with a letter in it. In May 1909 Nispen's Oranje-Comité planted the tree to mark the birth of Princess Juliana on 30 April, and a charter signed by mayor Coenen and the committee members was sealed in the bottle and buried at its foot. The village schoolchildren took part. The two sources disagree by a day on the planting, the 24th or the 25th of May, so May 1909 is as close as anyone can honestly put it.\n\nThe princess became queen in 1948. The tree stayed on its grass triangle where Dorpsstraat meets De Lind, and the village kept coming back to it. In 1993 the local history society, Heemkundekring de Heerlijckheijd Nispen, formally adopted the Julianalinde, and its sign was unveiled by Catharina Verhoeven, who had been one of the children at the planting 84 years earlier. For the hundredth year, in 2009, the society held an exhibition at the tree and the Oranje-Comité gave it an orange nest box.\n\nToday it is 2.82 metres round and 18 metres tall, a common lime by the national register's identification. The register last checked it in April 2024 and found it in reasonable condition, with one complaint: the paving has closed in around it, and the inspector advised giving it a better place to grow.\n\nIt is free to visit at any hour, 650 metres from the copper beech at the cemetery gate.",
+      "how_to_recognise": "You can recognise it as the lone lime on the grass triangle where Dorpsstraat meets De Lind, its trunk 2.82 metres round. It stands in the middle of Nispen, 650 metres from the copper beech at the cemetery.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the cream flowers open and the corner hums with bees"
       }
     }
   ]

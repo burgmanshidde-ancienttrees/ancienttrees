@@ -10,18 +10,18 @@
   "girth_cm": 360,
   "height_m": 25,
   "location": {
-    "address": "Roosendaal, Kerkstraat 1, bij De Kring",
-    "latitude": 51.533430,
-    "longitude": 4.458809,
-    "neighbourhood": "Centrum, De Kring"
+   "address": "Roosendaal, Kerkstraat 1, bij De Kring",
+   "latitude": 51.53343,
+   "longitude": 4.458809,
+   "neighbourhood": "Centrum, De Kring"
   },
   "verified_sources": [
-    "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680200&outFields=*&f=json",
-    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+   "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680200&outFields=*&f=json",
+   "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
   ],
   "official_register": {
-    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680200",
-    "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680200&outFields=*&f=json"
+   "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680200",
+   "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680200&outFields=*&f=json"
   },
   "access": "Free. Public square (plein) owned by the municipality, register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
   "transport": "Roosendaal station is about 0.8 km north, roughly a 10 minute walk via Stationsstraat and Kerkstraat.",
@@ -42,20 +42,23 @@
   "girth_cm": 364,
   "height_m": 18,
   "location": {
-    "address": "Roosendaal, Bachlaan 1, Algemene Begraafplaats (closed municipal cemetery)",
-    "latitude": 51.537503,
-    "longitude": 4.479988,
-    "neighbourhood": "Roosendaal-Oost, Bachlaan"
+   "address": "Roosendaal, Bachlaan 1, Algemene Begraafplaats (closed municipal cemetery)",
+   "latitude": 51.537503,
+   "longitude": 4.479988,
+   "neighbourhood": "Roosendaal-Oost, Bachlaan"
   },
-  "location_site": {"name": "Algemene Begraafplaats Bachlaan", "radius_m": 50},
+  "location_site": {
+   "name": "Algemene Begraafplaats Bachlaan",
+   "radius_m": 50
+  },
   "verified_sources": [
-    "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680196&outFields=*&f=json",
-    "https://lokaleregelgeving.overheid.nl/CVDR10613 (Verordening op het beheer en het gebruik van de gesloten gemeentelijke begraafplaatsen, art. 2 para 1: open to everyone daily 8.00 to 16.30)",
-    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, viewed 2026-10-13)"
+   "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680196&outFields=*&f=json",
+   "https://lokaleregelgeving.overheid.nl/CVDR10613 (Verordening op het beheer en het gebruik van de gesloten gemeentelijke begraafplaatsen, art. 2 para 1: open to everyone daily 8.00 to 16.30)",
+   "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, viewed 2026-10-13)"
   ],
   "official_register": {
-    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680196",
-    "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680196&outFields=*&f=json"
+   "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680196",
+   "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680196&outFields=*&f=json"
   },
   "access": "Free. Municipal closed cemetery, open to everyone daily 8.00 to 16.30 (municipal cemetery regulation, art. 2; Oorlogsgraf.nl gives the same hours and says dogs are not allowed). Register: visitable ja, owner gemeente.",
   "transport": "About 1.5 km east of Roosendaal station, roughly a 20 minute walk via Bredaseweg; parking for about 10 cars in front of the cemetery.",
@@ -63,7 +66,92 @@
   "curation_status": "flagged",
   "story": "Every May this horse chestnut covers itself in white flowers, and every autumn it drops not a single conker. It is 'Baumannii', the double-flowered clone of the ordinary horse chestnut, and its flowers set no fruit.\n\nThe national tree register bands its planting to the 1870s, roughly 146 to 156 years ago. Sources disagree on when the Algemene Begraafplaats itself opened, somewhere between about 1880 and 1894, so the tree may be as old as the cemetery or older. Nobody has recorded how it came to stand here.\n\nIt has seen the cemetery's whole working life. Roosendaal buried its dead here until 1978, when the ground closed to new burials, and the chestnut stayed on among the grave rows, alone, 18 metres tall and 3.64 metres round at chest height.\n\nAge has left its mark. The register notes a split in the main fork with small cracks beneath it, and in December 1999 the crown was thinned and anchored. It was inspected again in May 2025 and is still listed as monumental.\n\nThat register is the only record of this tree we have found; if you know its history, tell us. The cemetery is open daily from 8.00 to 16.30, and dogs are not allowed.",
   "how_to_recognise": "You can recognise it as the lone big horse chestnut among the grave rows, 3.64 metres round, with no other crown within about 8 metres. In May its flowers are double, and in autumn it bears no conkers.",
-  "best_time": {"months": [5], "kind": "flowers", "label": "May, when double white flower candles cover the crown"},
+  "best_time": {
+   "months": [
+    5
+   ],
+   "kind": "flowers",
+   "label": "May, when double white flower candles cover the crown"
+  },
   "verify_notes": "Source: LRMB register (official) plus the municipal regulation for the access hours; flagged 'register only' for the tree itself, but the record has a dated inspection (Laatste_waarneming 2025-05-22, status Monumentaal), so it was seen alive in 2025. Register: Witte paardenkastanje 'Baumannii' (the double-flowered, fruitless clone of the white horse chestnut), planting band 1870-1880 (age band, ~146 to 156 years now), girth 364 cm, height 18 m, solitary, setting begraafplaats, owner gemeente. Register remark: split in the fork ('plakoksel') with small cracks beneath; crown thinned and anchored in December 1999. PIN: register point lands on one isolated bare crown standing among the grave rows in the PDOK orthophoto, with no neighbouring crown within ~8 m, so the individual tree is placeable. Cemetery founding date varies by source (about 1880 to 1894) and it closed to burials in 1978; the tree's planting band predates or matches the cemetery's start, no bridge claim made. Two other register trees by the cemetery entrance (silver maple no. 1690555, 325 cm; London plane no. 1690554, 287 cm, both about 50 m north) stand in dense woodland in the orthophoto and could not be placed individually: filed as leads. lifecheck.py returned NONE."
+ },
+ {
+  "id": "roo_012",
+  "name": "The Copper Beech of Nispen Cemetery",
+  "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+  "age_estimate": "roughly 175 years, from a registered planting decade",
+  "age_min": 170,
+  "age_max": 180,
+  "age_basis": "source",
+  "girth_cm": 490,
+  "height_m": 26,
+  "location": {
+   "address": "Nispen, Heijbeeksestraat, at the entrance of the parish cemetery",
+   "latitude": 51.482347,
+   "longitude": 4.462579,
+   "neighbourhood": "Nispen"
+  },
+  "verified_sources": [
+   "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691942&outFields=*&f=json",
+   "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+  ],
+  "official_register": {
+   "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691942",
+   "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691942&outFields=*&f=json"
+  },
+  "access": "Free. Stands at the cemetery entrance beside the public Heijbeeksestraat and is visible from the street. Register: visitable ja, visible ja, openbaar ja, owner a religious body (parish). No cemetery hours found.",
+  "transport": "Nispen is about 6 km south of Roosendaal station (about 20 minutes by bike or car); a bus connection was not confirmed, check 9292 for the Nispen stop. 650 m from the Julianalinde (roo_013).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "The thickest beech in Roosendaal's part of the national tree register is really three trunks grown into one. At chest height the copper beech at the gate of Nispen's parish cemetery measures 4.9 metres round, more than any other beech the register lists for Roosendaal. Look lower and the trick shows: 40 centimetres above the ground it is three stems, fused higher up into one flat, oval column. The register says so itself, so read the 490 as the girth of a fused mass rather than of a single trunk.\n\nThe height needs no footnote. It stands 26 metres tall, a purple crown over the corner where the cemetery entrance meets Heijbeeksestraat.\n\nThe Bomenstichting's Landelijk Register Monumentale Bomen puts its planting in the decade 1840 to 1850, which makes it roughly 175 years old. That register is the only source behind this entry, but it is a recent one: an inspector looked at the tree in September 2023 and kept it on the list as monumental. The ground belongs to the parish of the Maria Hemelvaartkerk, whose church stands in front of the cemetery.\n\nYou can see it from the street without going in. Nispen lies about six kilometres south of Roosendaal, close to the Belgian border, and the lime the village planted in 1909 for the birth of Princess Juliana stands 650 metres away.",
+  "how_to_recognise": "You can recognise it by its purple-leaved crown, 26 metres tall, on a trunk that splits into three stems just above the ground. It stands at the cemetery entrance on the corner with Heijbeeksestraat, behind the Maria Hemelvaartkerk.",
+  "best_time": {
+   "months": [
+    10,
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "late October into November, when the purple leaves turn copper before they fall"
+  }
+ },
+ {
+  "id": "roo_013",
+  "name": "The Julianalinde of Nispen",
+  "species": "Common Lime (Tilia x europaea)",
+  "age_estimate": "117 years, planted 1909",
+  "age_min": 116,
+  "age_max": 118,
+  "age_basis": "source",
+  "girth_cm": 282,
+  "height_m": 18,
+  "location": {
+   "address": "Nispen, corner of Dorpsstraat and De Lind",
+   "latitude": 51.48774,
+   "longitude": 4.459209,
+   "neighbourhood": "Nispen"
+  },
+  "verified_sources": [
+   "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690582&outFields=*&f=json",
+   "https://www.heemkundenispen.nl/oranjebomen_julianalinde.htm (Heemkundekring de Heerlijckheijd Nispen: Julianalinde, planting 24 May 1909, adopted 1993)",
+   "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+  ],
+  "official_register": {
+   "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690582",
+   "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690582&outFields=*&f=json"
+  },
+  "access": "Free. Municipal green triangle (plantsoen) at a village street corner, public at all times. Register: visitable ja, visible ja, owner gemeente.",
+  "transport": "Nispen is about 6 km south of Roosendaal station (about 20 minutes by bike or car); a bus connection was not confirmed, check 9292 for the Nispen stop. 650 m from the cemetery beech (roo_012).",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "story": "Somewhere under this lime's roots lies a bottle with a letter in it. In May 1909 Nispen's Oranje-Comité planted the tree to mark the birth of Princess Juliana on 30 April, and a charter signed by mayor Coenen and the committee members was sealed in the bottle and buried at its foot. The village schoolchildren took part. The two sources disagree by a day on the planting, the 24th or the 25th of May, so May 1909 is as close as anyone can honestly put it.\n\nThe princess became queen in 1948. The tree stayed on its grass triangle where Dorpsstraat meets De Lind, and the village kept coming back to it. In 1993 the local history society, Heemkundekring de Heerlijckheijd Nispen, formally adopted the Julianalinde, and its sign was unveiled by Catharina Verhoeven, who had been one of the children at the planting 84 years earlier. For the hundredth year, in 2009, the society held an exhibition at the tree and the Oranje-Comité gave it an orange nest box.\n\nToday it is 2.82 metres round and 18 metres tall, a common lime by the national register's identification. The register last checked it in April 2024 and found it in reasonable condition, with one complaint: the paving has closed in around it, and the inspector advised giving it a better place to grow.\n\nIt is free to visit at any hour, 650 metres from the copper beech at the cemetery gate.",
+  "how_to_recognise": "You can recognise it as the lone lime on the grass triangle where Dorpsstraat meets De Lind, its trunk 2.82 metres round. It stands in the middle of Nispen, 650 metres from the copper beech at the cemetery.",
+  "best_time": {
+   "months": [
+    6,
+    7
+   ],
+   "kind": "flowers",
+   "label": "late June into July, when the cream flowers open and the corner hums with bees"
+  }
  }
 ]
