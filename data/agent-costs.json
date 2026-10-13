@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "miedzyzdroje",
+    "kind": "enrich",
+    "tokens": 56000,
+    "trees": 0,
+    "note": "enrichment: five Trail of Monumental Trees oaks got the CRFOP register name and the 2004 designating act (Dz. Urz. Woj. Zachodniopomorskiego 2004 Nr 12 poz. 227) and the town board girths (measuring height not stated); height for the Regalinda oak only (boards and Wikipedia conflict on the rest); no best_time; 4 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "kings-canyon-national-park",
     "kind": "enrich",
     "tokens": 51000,
