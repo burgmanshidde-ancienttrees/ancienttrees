@@ -2,24 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-23T02:52:29+00:00",
-   "date": "2026-08-23",
-   "run_id": "32613920207",
-   "minutes": 69.1,
-   "minutes_basis": "measured",
-   "attempts": 2,
-   "turns": 470,
-   "denials": 25,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(echo), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(python3), Bash(rm), Bash(test), Bash(which)",
-   "ended": "success",
-   "tokens": 139120304,
-   "claims_held": [],
-   "commits": 15,
-   "cities_touched": 8,
-   "trees": 70,
-   "logged": true
-  },
-  {
    "started": "2026-08-23T04:24:20+00:00",
    "date": "2026-08-23",
    "run_id": "32617782495",
@@ -22390,6 +22372,192 @@
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-13T15:53:04+00:00",
+   "date": "2026-10-13",
+   "run_id": "38425773210",
+   "minutes": 68.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 346,
+   "denials": 3,
+   "denials_source": "permission_denials: Bash(git), Bash(iconv), Bash(sed | grep | girth | lat ...)",
+   "ended": "success",
+   "tokens": 235887,
+   "claims_held": [
+    "san-diego"
+   ],
+   "commits": 30,
+   "cities_touched": 41,
+   "cities": [
+    {
+     "city": "antwerp",
+     "trees": 0
+    },
+    {
+     "city": "belgrade",
+     "trees": 0
+    },
+    {
+     "city": "bilu",
+     "trees": 0
+    },
+    {
+     "city": "craigends",
+     "trees": 0
+    },
+    {
+     "city": "derby",
+     "trees": 0
+    },
+    {
+     "city": "emmen",
+     "trees": 0
+    },
+    {
+     "city": "fort-worth",
+     "trees": 0
+    },
+    {
+     "city": "fulufjallet",
+     "trees": 0
+    },
+    {
+     "city": "glastonbury",
+     "trees": 0
+    },
+    {
+     "city": "gornja-stubica",
+     "trees": 0
+    },
+    {
+     "city": "hinode",
+     "trees": 0
+    },
+    {
+     "city": "hiroshima",
+     "trees": 0
+    },
+    {
+     "city": "liverpool",
+     "trees": 0
+    },
+    {
+     "city": "llangernyw",
+     "trees": 0
+    },
+    {
+     "city": "macugnaga",
+     "trees": 0
+    },
+    {
+     "city": "munich",
+     "trees": 0
+    },
+    {
+     "city": "nantes",
+     "trees": 0
+    },
+    {
+     "city": "olympic-national-park",
+     "trees": 0
+    },
+    {
+     "city": "otama",
+     "trees": 0
+    },
+    {
+     "city": "otoyo",
+     "trees": 0
+    },
+    {
+     "city": "ottawa",
+     "trees": 0
+    },
+    {
+     "city": "palo-alto",
+     "trees": 0
+    },
+    {
+     "city": "paris",
+     "trees": 0
+    },
+    {
+     "city": "perouges",
+     "trees": 0
+    },
+    {
+     "city": "poznan",
+     "trees": 0
+    },
+    {
+     "city": "rotterdam",
+     "trees": 0
+    },
+    {
+     "city": "runnymede",
+     "trees": 0
+    },
+    {
+     "city": "sardinia",
+     "trees": 0
+    },
+    {
+     "city": "simsbury",
+     "trees": 0
+    },
+    {
+     "city": "takeo",
+     "trees": 0
+    },
+    {
+     "city": "timber-creek",
+     "trees": 0
+    },
+    {
+     "city": "tolpuddle",
+     "trees": 0
+    },
+    {
+     "city": "tulsa",
+     "trees": 0
+    },
+    {
+     "city": "ueda",
+     "trees": 0
+    },
+    {
+     "city": "utrecht",
+     "trees": 0
+    },
+    {
+     "city": "wessobrunn",
+     "trees": 0
+    },
+    {
+     "city": "yabu",
+     "trees": 0
+    },
+    {
+     "city": "yakushima",
+     "trees": 0
+    },
+    {
+     "city": "yosemite-national-park",
+     "trees": 0
+    },
+    {
+     "city": "zaragoza",
+     "trees": 0
+    },
+    {
+     "city": "tarragona",
+     "trees": -1
+    }
+   ],
+   "trees": -1,
    "logged": true
   }
  ],
