@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "auckland",
+    "kind": "enrich",
+    "tokens": 47000,
+    "trees": 0,
+    "note": "enrichment: NZ Tree Register pages for Old Albert (AR/0774), Monte Cecilia fig (AR/0783), Cornwall Park Algerian oak (AR/0665) with girth and height, measuring heights stated; Takapuna coronation oaks open (no register entry, council schedule PDF unread); 8 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "sofia",
     "kind": "enrich",
     "tokens": 61000,
