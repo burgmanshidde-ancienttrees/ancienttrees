@@ -583,8 +583,8 @@ struct HomeView: View {
             .sorted { $0.distanceKm(from: origin.lat, origin.lng) < $1.distanceKm(from: origin.lat, origin.lng) }
     }
 
-    /// WANT TO VISIT, with trees: yours, under the hero, because they are
-    /// yours (Netflix's My List, Spotify's Jump back in). Read live from Saved,
+    /// WANT TO VISIT, with trees. Under the hero until 2026-10-13 (Netflix's
+    /// My List); now below the finding rows, see shelves. Read live from Saved,
     /// so a bookmark tapped on a tree page is here when you come back.
     @ViewBuilder private var wantToVisitFull: some View {
         let mine = wantTrees
@@ -723,8 +723,6 @@ struct HomeView: View {
     }
 
     @ViewBuilder private var shelves: some View {
-        wantToVisitFull
-
         if deck.best.count >= 3 {
             section("At their best now") { tileShelf(deck.best) }
         }
@@ -750,6 +748,9 @@ struct HomeView: View {
             }
         }
 
+        // Full or empty, one place, below the finding rows (Hidde, 2026-10-13:
+        // Discover is for trees you do not know yet; your list has My trees).
+        wantToVisitFull
         wantToVisitEmpty.id("discover-want")
 
         if deck.islands.count >= 3 {
