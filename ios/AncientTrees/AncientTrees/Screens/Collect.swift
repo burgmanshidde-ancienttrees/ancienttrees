@@ -842,9 +842,8 @@ struct CollectView: View {
     /// The line and the way to the map, under an empty or a short list.
     private var wantInvite: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("You can keep a tree you want to visit by tapping its bookmark.")
-                .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                .fixedSize(horizontal: false, vertical: true)
+            // No line explaining the bookmark (Hidde, 2026-10-13: the icon
+            // speaks for itself).
             Button { navigator.selectTab = 0 } label: {
                 Label("Find trees near you", systemImage: "map")
                     .font(.brand(16, .bold))
@@ -878,7 +877,7 @@ struct CollectView: View {
     @ViewBuilder private var signedOutLane: some View {
         VStack(alignment: .leading, spacing: 14) {
             Text(lane == .want
-                 ? "You keep a tree you want to visit by tapping its bookmark. Sign in and we keep the list for you."
+                 ? "Sign in to keep a list of trees you want to visit."
                  : "You collect a tree by photographing it while you stand in front of it. Sign in and we keep them for you.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)

@@ -513,19 +513,18 @@ struct HomeView: View {
             // shape, so one or two kept trees still read as a list to fill
             // (Hidde, 2026-10-12: "add the grey box that suggest to get more
             // in the row").
+            // Not tappable (Hidde, 2026-10-13: the row should not send you to
+            // the map); the button under the row does that.
             ForEach(0..<ghosts, id: \.self) { _ in
-                Button { navigator.selectTab = 0 } label: {
-                    Brand.surfaceMuted
-                        .frame(width: Self.tileWidth, height: Self.tileWidth * 4 / 3)
-                        .clipShape(Self.tileShape)
-                        .overlay {
-                            Image(systemName: "bookmark")
-                                .font(.system(size: 22, weight: .semibold))
-                                .foregroundStyle(Brand.inkSoft.opacity(0.45))
-                        }
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Find trees near you")
+                Brand.surfaceMuted
+                    .frame(width: Self.tileWidth, height: Self.tileWidth * 4 / 3)
+                    .clipShape(Self.tileShape)
+                    .overlay {
+                        Image(systemName: "bookmark")
+                            .font(.system(size: 22, weight: .semibold))
+                            .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                    }
+                    .accessibilityHidden(true)
             }
         }
     }
@@ -597,13 +596,10 @@ struct HomeView: View {
                 })
                 tileShelf(Array(mine.prefix(3)), ghosts: max(0, 3 - mine.count))
                 // A SHORT LIST STILL INVITES MORE (Hidde, 2026-10-12): with
-                // one or two trees the line and the way to the map stay,
-                // as on the empty row.
+                // one or two trees the way to the map stays, as on the empty
+                // row. No line explaining the bookmark (Hidde, 2026-10-13:
+                // the icon speaks for itself).
                 if mine.count < 3 {
-                    Text("You can keep a tree for later by tapping the bookmark on its page.")
-                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .padding(.horizontal, 16)
                     Button { navigator.selectTab = 0 } label: {
                         Label("Find trees near you", systemImage: "map")
                     }
@@ -642,18 +638,15 @@ struct HomeView: View {
                 // save that list"). The list lives in the account, so the
                 // way to start one is signing in; the same words My trees
                 // uses for this lane.
+                // No line explaining the bookmark (Hidde, 2026-10-13).
                 if account.isSignedIn {
-                    Text("You can keep a tree for later by tapping the bookmark on its page.")
-                        .font(.subheadline).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .padding(.horizontal, 16)
                     Button { navigator.selectTab = 0 } label: {
                         Label("Find trees near you", systemImage: "map")
                     }
                     .buttonStyle(BrandButtonStyle(prominent: false))
                     .padding(.horizontal, 16)
                 } else {
-                    Text("You keep a tree you want to visit by tapping its bookmark. Sign in and we keep the list for you.")
+                    Text("Sign in to keep a list of trees you want to visit.")
                         .font(.subheadline).foregroundStyle(Brand.inkSoft)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.horizontal, 16)

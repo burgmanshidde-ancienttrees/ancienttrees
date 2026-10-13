@@ -706,8 +706,11 @@ struct MapTab: View {
             // nothing the list does not. The strip keeps its height, because it
             // is the grip that drags the sheet back down and the search field
             // should not move.
-            // Shown at full height again since 2026-10-12: the search field
-            // that headed the list there is gone (it stays above the sheet).
+            // A 2026-10-12 change showed it at full height again; Hidde,
+            // 2026-10-13, still did not want it there, so the 10-10 ruling
+            // stands: the words go (kept in layout, hidden), the strip stays.
+            .opacity(sheetHeight == .full ? 0 : 1)
+            .accessibilityHidden(sheetHeight == .full)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
             .accessibilityIdentifier("map-count")
