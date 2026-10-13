@@ -88,7 +88,15 @@
       "curation_status": "flagged",
       "notes": "Onroerend Erfgoed inventory entry 309644: three lime trees flank the small 18th-century Kapel Drie Linden (Chapel of the Three Lindens), on a sharp triangular plot at a Wilsele crossroads, opposite the historic Bleydenberg estate. Chapel presumably built last quarter of the 18th century by Professor Dominicus Jozef Hyacint Nelis, who bought Bleydenberg in 1773, in honour of Our Lady of the Linden ('Onze-Lieve-Vrouw ter Linde'); damaged during the French Revolution period and reconsecrated 1829 with a new Mary statue. Only cadastrally registered in 1865, owned then by the Wilsele municipality; the plot's sharp point was rounded off in a 1951 road adjustment, bringing the chapel closer to the street. No age or girth is recorded for the lindens themselves; the ensemble is the collectible point (the chapel with its three flanking trees), not an individually dated specimen, so age_estimate is left empty rather than guessed. Second source is a 2025 VRT news piece about the neighbouring Bleydenberg chapel/estate becoming a school classroom, confirming the site's public, roadside character and local historical standing; it does not itself measure the trees, so this ships flagged on age/species-detail rather than confirmed on every field. Species given as Tilia (genus) in the register with no species epithet; common lime is the usual planting for a Flemish chapel avenue of this date, stated honestly as an inference in age_estimate/species rather than the register's own word.",
       "location_precision": "confirmed",
-      "how_to_recognise": "The three limes around the small roadside chapel on the triangular plot at the crossroads. There is one chapel and one group of three."
+      "how_to_recognise": "The three limes around the small roadside chapel on the triangular plot at the crossroads. There is one chapel and one group of three.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "late June, when the chapel's three lindens flower, heavily scented and loud with bees",
+        "kind": "flowers"
+      }
     },
     {
       "id": "lvn_003",
