@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "kansas-city",
+    "kind": "enrich",
+    "tokens": 43000,
+    "trees": 0,
+    "note": "enrichment: Linda Hall Library accession pages (34-21-1, 2-4-1, 14-2-1, 13b-1-1) and Greater Kansas City champion listing as register for all four; no measurements published; pins open (accession pages show a map image only, Overpass timed out twice); 5 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "ypres",
     "kind": "enrich",
     "tokens": 49000,
