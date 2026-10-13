@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "salt-lake-city",
+    "kind": "enrich",
+    "tokens": 46000,
+    "trees": 0,
+    "note": "enrichment: all five trees matched at 0 m to their own record in the Big_Trees ArcGIS layer (OBJECTIDs 80, 150, 146, 244, 25) with girth and height; layer states no measuring height (4.5 ft assumed) and no owner, so the register name is descriptive; 4 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "miedzyzdroje",
     "kind": "enrich",
     "tokens": 56000,
