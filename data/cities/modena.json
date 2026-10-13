@@ -37,8 +37,8 @@
       "height_m": 25,
       "location": {
         "address": "Giardino Ducale Estense, near the Corso Canalgrande / Corso Cavour entrance, Modena",
-        "latitude": 44.6488,
-        "longitude": 10.9325,
+        "latitude": 44.6490553,
+        "longitude": 10.9319383,
         "neighbourhood": "Centro storico, Modena"
       },
       "story": "Lightning took a large part of this oak's crown and it is still standing, held together with steel and visited by climbing arborists. It was planted at the centre of the Giardino Ducale while Francesco V was duke, though the sources disagree on when: one puts it at 1854, the comune's own account says between 1840 and 1850. Either way it is around 175 years old, 25 metres tall, and 5.4 metres round the trunk, which makes it the thickest tree we have mapped in Modena.\n\nIt is a veteran rather than a specimen in its prime, and the page is better for saying so. Since the strike it has carried a dynamic bracing system, cables that flex with the tree instead of holding it rigid. A 2019 piece described bracket fungi, decay in the wood and beetle activity and argued for urgent treatment. In March 2022 the comune sent certified climbers into the canopy to take out deadwood.\n\nDecay is not the same as dying. An oak can hollow for decades and keep going, and rotten wood in a living tree is the rarest habitat in a city park.\n\nThe garden is free and open daily, ten minutes' walk from Piazza Grande. The oak stands near the Corso Canalgrande side.",
@@ -46,7 +46,9 @@
         "https://www.officinadellambiente.com/it/articolo.php?idl1=0&idl2=0&id=4399",
         "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2022/3/ai-giardini-ducali-intervento-di-potatura-in-201ctree-climbing201d",
         "https://www.lapressa.it/articoli/parola_d_autore/la-quercia-secolare-patriarca-del-giardino-pubblico-bisognoso-di-cure",
-        "register (regional PatER, Emilia-Romagna, Parchi e Giardini record id 196738): describes the same oak at the Corso Canalgrande entrance, trunk diameter 172cm (matches the ~540cm circumference reported elsewhere)"
+        "register (regional PatER, Emilia-Romagna, Parchi e Giardini record id 196738): describes the same oak at the Corso Canalgrande entrance, trunk diameter 172cm (matches the ~540cm circumference reported elsewhere)",
+        "https://archiviostampa.comune.modena.it/archivio-comunicati-stampa/2015/8/monumenti-verdi-a-modena-30-alberi-di-particolare-pregio",
+        "https://www.openstreetmap.org/node/6480341387"
       ],
       "access": "Free. Giardino Ducale Estense is Modena's main public garden, open daily (roughly 6:30-23:30 in summer, 7:00-20:30 in winter), no ticket or appointment.",
       "transport": "In the historic centre, an easy 10-minute walk from Piazza Grande / the Duomo.",
@@ -58,7 +60,7 @@
       },
       "curation_status": "flagged",
       "notes": "Veteran and actively managed: lightning damage, a dynamic cable-consolidation system, and wood decay reported in 2019. Pruned by certified arborists in March 2022 per the comune. Pin marks the Corso Canalgrande side of the garden, not the trunk.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "best_time": {
         "months": [
           1,
@@ -67,7 +69,13 @@
         "kind": "bare silhouette",
         "label": "January and February, when the leaves are gone and the whole broken and rebuilt frame of it shows, cables included"
       },
-      "how_to_recognise": "You can recognise it by the cables braced through its canopy and the crown lightning took part of, over a trunk 5.4 metres round. It stands at the centre of the Giardino Ducale."
+      "how_to_recognise": "You can recognise it by the cables braced through its canopy and the crown lightning took part of, over a trunk 5.4 metres round. It stands at the centre of the Giardino Ducale.",
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.openstreetmap.org/node/6480341387",
+        "date": "2026-10-13",
+        "moved_m": 53
+      }
     },
     {
       "id": "mod_004",

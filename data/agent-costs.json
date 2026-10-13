@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "modena",
+    "kind": "enrich",
+    "tokens": 53000,
+    "trees": 0,
+    "note": "enrichment: Giardino Ducale oak 540 cm girth, 25 m (Comune press release) and a pin from the OSM natural-monument node (70 m move); Villa Ombrosa cypress group 30 m; PatER (bbcc.regione.emilia-romagna.it) returns 403 to the fetcher; no register URL found; 10 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "lima",
     "kind": "enrich",
     "tokens": 49000,
