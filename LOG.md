@@ -25,6 +25,7 @@ Visits last 7 days: 1770 (2380 views). Rung 1 empty (0 sightings). Rung 2: ios.y
 - San Diego: Kauri height 20 m (a horticulturist's estimate, said so), small named sites for the Tipu corner and the Palm Canyon fig. 3 of 6 trees improved; no authority per-tree register page exists.
 - Kamakura: city natural-monument list ids on 5 trees, access lines (price, hours) on 4 temples, Kenchoji girth 650 cm and height 13 m (second-hand from the Meiboku 100 signboard). The Goryo and Kosokuji location_site entries were refused by the script (a source needs a URL) and stay open.
 - Pisa: access lines on all four botanical garden trees (4 EUR; museum closed after the August 2026 earthquake); girth or height for three trees from Italian Wikipedia, weaker than a register or plaque, so recheck if authority-only figures are wanted.
+- Amsterdam/Lisbon (proven roster): best_time June to July (lime flowers) on the Wilhelminalinde and Beatrix Lime; the other eight season gaps stay open (no striking moment in the species file, or the tipu file reads southern-hemisphere and needs a Lisbon source).
 - Not done: no write pass (only held trees wait), no photographs. Subagent tokens roughly 52k, 85k, 44k.
 
 ## 2026-10-13 session: app polish from Hidde's test
