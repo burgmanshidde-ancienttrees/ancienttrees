@@ -2,28 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-23T04:24:20+00:00",
-   "date": "2026-08-23",
-   "run_id": "32617782495",
-   "minutes": 21.1,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 197,
-   "denials": 11,
-   "denials_source": "permission_denials: Bash, Bash(curl), Bash(echo), Bash(env), Bash(mkdir), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 36011794,
-   "claims_held": [
-    "the-hague",
-    "brisbane",
-    "krakow"
-   ],
-   "commits": 12,
-   "cities_touched": 3,
-   "trees": 22,
-   "logged": false
-  },
-  {
    "started": "2026-08-23T06:18:37+00:00",
    "date": "2026-08-23",
    "run_id": "32622587547",
@@ -22558,6 +22536,70 @@
     }
    ],
    "trees": -1,
+   "logged": true
+  },
+  {
+   "started": "2026-10-13T17:18:30+00:00",
+   "date": "2026-10-13",
+   "run_id": "38437505578",
+   "minutes": 85.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 155,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 815306,
+   "claims_held": [],
+   "commits": 17,
+   "cities_touched": 11,
+   "cities": [
+    {
+     "city": "amsterdam",
+     "trees": 0
+    },
+    {
+     "city": "barcelona",
+     "trees": 0
+    },
+    {
+     "city": "gdansk",
+     "trees": 0
+    },
+    {
+     "city": "kamakura",
+     "trees": 0
+    },
+    {
+     "city": "kanazawa",
+     "trees": 0
+    },
+    {
+     "city": "munich",
+     "trees": 0
+    },
+    {
+     "city": "palermo",
+     "trees": 0
+    },
+    {
+     "city": "pisa",
+     "trees": 0
+    },
+    {
+     "city": "san-diego",
+     "trees": 0
+    },
+    {
+     "city": "vilnius",
+     "trees": 0
+    },
+    {
+     "city": "zurich",
+     "trees": 0
+    }
+   ],
+   "trees": 0,
    "logged": true
   }
  ],
