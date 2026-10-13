@@ -12,6 +12,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-13 continuation (night-run)
+
+Product change: the Italian Genoa page is live as a translation (13 trees, i18ncheck clean; its English twin had 18 impressions). Not done: the four written-but-unmerged trees (Delft, Fort Worth, Leipzig, Salt Lake City) were merged on a trial and preflight refused every one (not rich, a Delft tree is within 5 m of a register-dead ash, Fort Worth story 83 words), so they stay out. I claimed Key West and dispatched a verify agent before the archive grep showed it was scouted on 10-04 with no per-tree register; I stopped the agent and released the claim, a repeat of the Miami waste. Findings for the English Genoa page: intro says twelve trees where there are 13, and gnv_009 opens by asking the reader to crush a leaf.
+
 ## 2026-10-13 08:50 run (night-run)
 
 7-day visits: 1771 visits, 2463 page views. No reader photographs waiting. health.py's three flags are the iOS app (still the SE chip overflow, needs a session) and two push-skipped runs; the last real deploy (05:55) succeeded. Product change: seven page-gap intros are written and committed, six species (Common Hackberry, Taiwan Red Cypress, Post Oak, Eastern Hemlock, Cornelian Cherry, American Basswood) and the Tiergarten park page for Berlin, each from its own trees, preflight 0 problems; pagegaps now shows nothing missing. Munich's claim was refused (full at 62 of 60), so the verify pass went to Miami (about 104k tokens): 0 trees. This repeated the 01:15 run's Miami pass, which the archive grep would have shown; the one new finding is a Deering Estate black olive lead (register girth 401 cm vs a 462 cm blog tree, access unconfirmed, deeringestate.org returns 403). Miami needs a session. The 59 READY leads are ordinary trees that preflight's rich rule would refuse, so no write pass was possible. Nothing else was on any lane: scout_next says BUILD Roosendaal, which is near a wall.
