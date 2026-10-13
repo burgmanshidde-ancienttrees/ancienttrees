@@ -20,7 +20,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 ## 2026-10-13 session: a portrait photograph on a phone (web and app)
 
-**Product:** on a phone a portrait lead photograph now stands at 4:5 instead of being cut to 3:2, and a tree's other photographs are swiped inside the lead with a "1 / 2" count in the corner instead of sitting in a strip under it (Hidde picked A2 of the mockup; CONVENTIONS.md "A portrait photograph as the lead on a phone"). On the Munch-eika the page now shows 83 percent of the tree instead of 44, and the name, place and the start of the facts are on the first screen. Landscape photographs and desktop are unchanged. One rule for both surfaces: `heroFrame()` in images.ts, sent to the app in the feed as `photo.frame`; an app build older than that, or a feed without it, keeps the 300 point hero.
+**Product:** on a phone a portrait lead photograph now stands at 4:5 instead of being cut to 3:2, and a tree's other photographs are swiped inside the lead, with a dot per photograph (AllTrails, his pick over the count) instead of a strip under it (Hidde picked A2 of the mockup; CONVENTIONS.md "A portrait photograph as the lead on a phone"). On the Munch-eika the page now shows 83 percent of the tree instead of 44, and the name, place and the start of the facts are on the first screen. Landscape photographs and desktop are unchanged. One rule for both surfaces: `heroFrame()` in images.ts, sent to the app in the feed as `photo.frame`; an app build older than that, or a feed without it, keeps the 300 point hero.
 
 ## 2026-10-13 night run 15:53 UTC: enrichment pass on seven small cities
 

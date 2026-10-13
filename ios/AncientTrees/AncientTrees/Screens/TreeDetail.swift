@@ -739,10 +739,13 @@ struct TreeDetail: View {
                             .tag(i)
                         }
                       }
-                      // Apple Photos and Airbnb page without dots; the count in
-                      // the corner says how many (CONVENTIONS.md, "Several
-                      // photographs of one tree": dots are for flat lists).
-                      .tabViewStyle(.page(indexDisplayMode: .never))
+                      // Dots, one per photograph, the way AllTrails shows a
+                      // trail's photos (Hidde, 2026-10-13: "i like the
+                      // alltrails design better which shows dots"). The system
+                      // page control, so VoiceOver gets it for free; none for
+                      // a single photograph.
+                      .tabViewStyle(.page(indexDisplayMode: tree.shots.count > 1 ? .always : .never))
+                      .indexViewStyle(.page(backgroundDisplayMode: .never))
                     }
                     .clipped()
                     // Tapping the photograph opens it, which is what every
@@ -775,7 +778,6 @@ struct TreeDetail: View {
                         .accessibilityLabel("Show this tree on the map")
                     }
                     .overlay(alignment: .topLeading) { addPhotoButton }
-                    .overlay(alignment: .bottomLeading) { shotCount }
 
             }
         } else {
@@ -907,24 +909,6 @@ struct TreeDetail: View {
     /// The photograph the hero is showing, for the credit line.
     private var shownPhoto: Photo? {
         tree.shots.indices.contains(shotAt) ? tree.shots[shotAt] : tree.photo
-    }
-
-    /// "1 / 3" in the corner, when there is more than one (Airbnb's count; the
-    /// website draws the same). Not a control: the swipe is.
-    @ViewBuilder private var shotCount: some View {
-        if tree.shots.count > 1 {
-            Text("\(shotAt + 1) / \(tree.shots.count)")
-                .font(.system(size: 12, weight: .semibold))
-                .monospacedDigit()
-                .foregroundStyle(.white)
-                .padding(.horizontal, 9)
-                .padding(.vertical, 3)
-                .background(Color.black.opacity(0.55), in: .capsule)
-                .padding(12)
-                .allowsHitTesting(false)
-                .accessibilityLabel("Photo \(shotAt + 1) of \(tree.shots.count)")
-                .accessibilityIdentifier("tree-photo-count")
-        }
     }
 
     private var heroFallback: some View {

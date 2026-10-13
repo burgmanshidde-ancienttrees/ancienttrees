@@ -85,8 +85,8 @@ const shots = set.map((p, i) => {
 });
 const leadCredit = shots[0].credit;
 // ON A PHONE THE OTHER PHOTOGRAPHS LIVE INSIDE THE LEAD (Hidde, 2026-10-13,
-// option A2 of the phone benchmark). Airbnb pages its lead by swipe with a
-// "1 / 20" count in the corner and Google Maps puts the name before its photo
+// option A2 of the phone benchmark). Airbnb pages its lead by swipe and
+// Google Maps puts the name before its photo
 // row; nobody we checked puts a strip between the photograph and the name, and
 // on a portrait tree that strip pushed the facts off the first screen. The
 // frame takes the lead's shape up to 4:5 (heroFrame, the same answer the app
@@ -112,7 +112,10 @@ const swipe = variant === "hero" && many;
         </button>
       ))}
     </div>
-    {swipe && <span class="photo-count" aria-hidden="true"><span class="pc-at">1</span> / {set.length}</span>}
+    {/* One dot per photograph, the one showing filled: AllTrails' trail
+        photos (Hidde, 2026-10-13: "i like the alltrails design better which
+        shows dots"). The slides carry the words; the dots are only a sign. */}
+    {swipe && <span class="photo-dots" aria-hidden="true">{shots.map((_, i) => <i class={i === 0 ? "on" : undefined}></i>)}</span>}
     <slot name="overlay" />
   </div>
   {/* The credit under the picture is the credit OF the picture showing, so on
@@ -187,7 +190,7 @@ const swipe = variant === "hero" && many;
   const step = (d: HTMLDialogElement, by: number) =>
     show(d, Number(d.dataset.at || 0) + by);
 
-  // The lead swiped on a phone: keep the corner count and the credit line on
+  // The lead swiped on a phone: keep the dots and the credit line on
   // the picture that is showing. Scroll events do not bubble, so capture.
   document.addEventListener("scroll", (e) => {
     const track = e.target;
@@ -196,8 +199,7 @@ const swipe = variant === "hero" && many;
     const fig = track.closest("figure");
     if (!fig || fig.dataset.at === String(at)) return;
     fig.dataset.at = String(at);
-    const n = fig.querySelector(".pc-at");
-    if (n) n.textContent = String(at + 1);
+    fig.querySelectorAll(".photo-dots > i").forEach((d, k) => d.classList.toggle("on", k === at));
     fig.querySelectorAll<HTMLElement>(":scope > figcaption > .pc-credit").forEach((c) => {
       c.hidden = c.dataset.i !== String(at);
     });
