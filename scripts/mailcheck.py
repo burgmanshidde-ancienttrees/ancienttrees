@@ -155,6 +155,17 @@ CHECKS = [
     ("FORM LINK IN A LIVE THREAD", [
         r"ancienttrees\.app/contribute",
     ]),
+    # Hidde, 2026-10-13, on a reply to Friends of Cammo that ended "if anyone
+    # ever measured the trunks, that would be great too": "dont ask to measure
+    # trunks wtf". A person who wrote back is asked only what they can tell us
+    # or do in passing: where the tree stands, and a photo with the app if they
+    # ever walk by. Measurements are our job, from registers. "remember this
+    # for the future what is normal to ask and what not."
+    ("ASKING A PERSON TO MEASURE", [
+        r"\bmeasur", r"\bgirth\b", r"\bcircumference\b", r"\bopmeten\b", r"\bomtrek\b",
+        r"\bmessen\b", r"\bStammumfang\b", r"\bmisura", r"\bcirconferenza\b",
+        r"\bmedir\b", r"\bperímetro\b", r"\bmesurer\b",
+    ]),
     ("PROCESS-PITCHING", [
         r"two independent sources", r"\bwe verify\b", r"\bour (?:process|method|workflow)\b",
         r"\bcross-referenc", r"\bevery tree is (?:checked|verified)\b",
