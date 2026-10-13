@@ -85,7 +85,8 @@
       "verified_sources": [
         "https://californiahistoricallandmarks.wordpress.com/2013/03/15/no-764-kate-olivia-sessions-nursery-site/",
         "https://katestrees.org/kates-birthday/",
-        "https://ohp.parks.ca.gov/ListedResources/Detail/764"
+        "https://ohp.parks.ca.gov/ListedResources/Detail/764",
+        "https://californiahistoricallandmarks.wordpress.com/2013/03/15/no-764-kate-olivia-sessions-nursery-site/ (places the tipu tree closer to the corner than the marker, on the same NW corner; state landmark directions at https://ohp.parks.ca.gov/ListedResources/Detail/764)"
       ],
       "access": "Free, on a public street corner. The tree and its California Historical Landmark plaque stand in the open on the northwest corner of Garnet Avenue and Pico Street.",
       "transport": "Served by MTS bus routes through Pacific Beach on Garnet Avenue; roughly a 10 minute walk from the Mission Bay Dr / Garnet Ave corridor.",
@@ -105,6 +106,10 @@
         ],
         "kind": "flowers",
         "label": "late May and June, when the crown turns yellow-orange and then drops the lot onto the pavement"
+      },
+      "location_site": {
+        "name": "Northwest corner of Garnet Avenue and Pico Street (Kate Sessions Nursery site marker)",
+        "radius_m": 30.0
       }
     },
     {
@@ -153,7 +158,8 @@
       },
       "story": "There is a New Zealand kauri on the Plaza de Panama and almost nothing about it is written down. Agathis australis is barely grown anywhere in Southern California, which is what makes a mature one standing beside the House of Charm worth crossing the park for, whatever its size turns out to be. The record that confirms it is a single geotagged, photographed observation made in July 2016, still the only record of the species anywhere near San Diego on that platform.\n\nLocal pieces have described what is almost certainly this same tree, one of them calling it possibly the most valuable plant in the park, and quoting a height and a rough planting decade. None of those pages could be read directly, so none of their numbers are repeated here. This entry carries no age and no height rather than a figure nobody has checked.\n\nWhat is left is the tree itself, and it does not look like its neighbours. Kauri grow a straight grey column of a trunk and hold the crown right at the top of it, which reads oddly on a plaza planted with spreading subtropicals.\n\nIf you know when it went in, or how tall it is now, tell us. Somebody in San Diego knows, and it is not written down anywhere we can reach.",
       "verified_sources": [
-        "https://www.inaturalist.org/observations/342689280"
+        "https://www.inaturalist.org/observations/342689280",
+        "https://www.sandiegoreader.com/news/2025/nov/10/balboa-park-has-more-than-these-ten-trees/ (Balboa Park horticulturist's estimate of about 65 feet, an estimate not a survey)"
       ],
       "access": "Free, in the open plaza outside the Mingei International Museum. No admission needed to see the tree itself; the museum charges for entry to its galleries.",
       "transport": "Central Balboa Park, on the Plaza de Panama; served by MTS bus route 7 to the Prado, about a 10 minute walk.",
@@ -166,7 +172,8 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Existence, species and position confirmed from a geotagged, photographed iNaturalist observation (id 342689280, 2016-07-09, 32.7313561/-117.1511082), the only Agathis australis record near San Diego on that platform. The second source listed by the verify pass (sandiegoreader.com) returned HTTP 403 on every fetch route and was dropped rather than cited unread, so this ships single-sourced. Its reported height (~65ft, or 52ft measured 1994) and a late-1930s/early-1940s planting estimate came only from search summaries and are deliberately not recorded. sandiegoreader.com and pacifichorticulture.org are blocklist candidates.",
-      "how_to_recognise": "You can recognise it by a straight grey column of a trunk holding its crown right at the top, unlike the spreading subtropicals around it. It stands beside the Mingei International Museum on the Plaza de Panama."
+      "how_to_recognise": "You can recognise it by a straight grey column of a trunk holding its crown right at the top, unlike the spreading subtropicals around it. It stands beside the Mingei International Museum on the Plaza de Panama.",
+      "height_m": 20
     },
     {
       "id": "sdg_005",
@@ -214,7 +221,8 @@
       },
       "verified_sources": [
         "https://www.sandiegoreader.com/news/2025/nov/10/balboa-park-has-more-than-these-ten-trees/",
-        "https://www.ktua.com/workpost/historic-palm-canyon-balboa-park/"
+        "https://www.ktua.com/workpost/historic-palm-canyon-balboa-park/",
+        "https://www.sandiegoreader.com/news/2025/nov/10/balboa-park-has-more-than-these-ten-trees/ (the fig stands at the steps from the wooden bridge into Palm Canyon)"
       ],
       "access": "Free; stands beside a public footbridge and steps into Palm Canyon, part of Balboa Park",
       "transport": "Central Balboa Park, a short walk south of the Alcazar Garden and west of the Organ Pavilion; served by Balboa Park's free tram and multiple bus routes",
@@ -227,6 +235,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "location_site": {
+        "name": "Palm Canyon wooden footbridge and the steps down into Palm Canyon",
+        "radius_m": 40.0
       }
     }
   ]
