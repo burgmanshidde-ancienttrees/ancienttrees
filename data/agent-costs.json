@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "gettysburg",
+    "kind": "enrich",
+    "tokens": 48000,
+    "trees": 0,
+    "note": "enrichment: NPS page as record for the Copse of Trees (the page itself says none of the trees inside the fence date to 1863, which our story already states); American Battlefield Trust pages are conservation-group pages and not taken as records; no NPS page for the Sickles tree, no circumference or height for any of the four; 7 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "bamberg",
     "kind": "enrich",
     "tokens": 82000,
