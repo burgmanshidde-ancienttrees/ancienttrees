@@ -153,6 +153,13 @@ struct HomeView: View {
         // a real fix: the fallback is not anybody's city.
         if location.known, let t = catalogue.nearest(to: origin.lat, origin.lng, limit: 1, withinKm: 30).first?.tree {
             s.here = (t.citySlug, t.city)
+            // THE CITY YOU ARE IN LEADS THE CITIES ROW (Hidde, 2026-10-13, on
+            // Melbourne opening with Barcelona and Rome). Still only with a
+            // photographed face, the 2026-10-02 rule for this row.
+            if catalogue.face(city: t.citySlug)?.photo != nil, let c = card(t.citySlug) {
+                s.cities.removeAll { $0.slug == c.slug }
+                s.cities.insert(c, at: 0)
+            }
         }
 
         s.countries = catalogue.countriesWithTrees
@@ -562,7 +569,9 @@ struct HomeView: View {
                     .padding(16)
                 }
                 .frame(height: 240)
-                .overlay(alignment: .topLeading) { TagPill(text: "At its best now").padding(12) }
+                // FAR AWAY, IT SAYS WHERE (Hidde, 2026-10-13: in Melbourne the
+                // only southern tree at its best was in Buenos Aires, unnamed).
+                .overlay(alignment: .topLeading) { TagPill(text: heroPill(s.hero)).padding(12) }
                 .clipShape(.rect(cornerRadius: 14))
                 .contentShape(.rect)
                 // One element, as the stock hero was: the photograph is wider
@@ -576,6 +585,12 @@ struct HomeView: View {
         } else {
             heroBand
         }
+    }
+
+    /// "At its best now", plus the place when the tree is not near you: the
+    /// same 30 km line tag() draws between a distance and a city.
+    private func heroPill(_ t: Tree) -> String {
+        t.distanceKm(from: origin.lat, origin.lng) <= 30 ? "At its best now" : "At its best now · \(t.city)"
     }
 
     private var wantTrees: [Tree] {
