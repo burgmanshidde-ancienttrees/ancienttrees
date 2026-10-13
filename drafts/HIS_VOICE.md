@@ -246,6 +246,16 @@ Kerry Pickett answered the Brighton help-ask with three facts about the Preston 
 
 Somebody who has lived beside a tree for decades and answered our cold mail is worth more than a web search. Put what they gave on the page, written as a local account rather than as our own claim, keep any doubt in verify_notes, and reply "it is on the page now". A reply that checks their homework is a reply they never answer again. Hard rule 2 still holds, which is why the page says "local accounts" rather than presenting the fact as ours.
 
+## Five corrections in one afternoon (Hidde, 2026-10-13: "learn from my feedback plz")
+
+Each is the 10-10 rule below, broken in a new way. Read this section before drafting any reply.
+
+1. **A tree they name is a tree to finish, not a lead to file.** I wrote Simon (Friends of Cammo) "both are on our list now". Hidde: "wees niet zo lui met dingen in leads zetten". Ask what it lacks to go live: where exactly it stands.
+2. **Ask only what someone does in passing.** "Do you have a photograph we may use, with your name under it?" was "weird". His version: if you ever walk past, a photo with our app would be amazing. "If anyone ever measured the trunks" got "wtf": never give a volunteer a task (mailcheck now refuses measuring asks).
+3. **A referral is a thread, not an end.** Sally sent us to Gavin Coates and I replied "Thanks, I'll ask him." Hidde: "kunnen we niet meer uit sally halen". Ask for the introduction, and ask for her own tree.
+4. **Say plainly what we look for; do not flatter their work.** My "After painting so many of them, I'd love to hear your favourite" became "we're just looking for remarkable old trees in Hong Kong. Any favourite of yours we should add to the platform?" Correct the misunderstanding (she thought we only wanted wall trees) by stating what we want, then the ask.
+5. **Take a suggestion warmly and leave the door open.** To Noeleen's "get an expert botanical review" he wrote: "Thanks for your feedback, and good idea, we're going to follow that up. If you have any other tips about the platform, they're all welcome, we've only just started." Also Judith: thank her for forwarding, never "I already knew that one" ("niet bijdehand doen").
+
 ## Every reply activates, with the ask that fits the person (Hidde, 2026-10-10)
 
 "we moeten mensen een beetje activeren naar of de app downloaden of controleren of ambassadeur. net wat gepast is." A thank-you alone ends the thread. Close every reply with the one ask that fits who they are: a forester or arborist is asked which tree we miss; a local enthusiast is asked to check the list or offered the ambassador role (described honestly, see drafts/ambassador-mails.md); somebody walking past trees is pointed at the app. One of them, never all three.
