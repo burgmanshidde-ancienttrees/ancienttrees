@@ -2919,6 +2919,21 @@ div.tb-register > b { color: var(--ink); }
   .td-tall .td-body > .td-group { order: 1; }
   .td-tall .td-side { order: 2; margin-top: 1.5rem; }
   .td-tall .td-stick { position: static; }
+  /* Beside a tall photo the column is narrower, so the facts take one row and
+     the three quiet buttons take one row (Hidde, 2026-10-13: "species age girth
+     can use up one line the same as the multiple buttons"). Google Maps' place
+     panel: one row of actions under the name; Airbnb: the facts on one line. */
+  .td-tall .tree-block { display: flex; flex-wrap: wrap; }
+  .td-tall .tree-block > .tb-cols { flex: 2 1 0; min-width: 0; }
+  .td-tall .tree-block > .tb-row.tb-species { flex: 1 1 0; min-width: 0; border-top: 0;
+    border-left: 1px solid rgba(0,0,0,0.10); padding: 0.8rem 1rem 0.7rem; }
+  .td-tall .tree-block > .tb-loc, .td-tall .tree-block > .tb-ticket { flex: 1 0 100%; }
+  .td-tall .td-stick { display: flex; flex-wrap: wrap; gap: 10px; }
+  .td-tall .td-stick > .td-open, .td-tall .td-stick > .td-side-map { flex: 1 0 100%; }
+  .td-tall .td-sec { display: contents; }
+  .td-tall .td-sec > a, .td-tall .td-sec > .heart-btn, .td-tall .td-collect-wide {
+    flex: 1 1 auto; width: auto; margin: 0; white-space: nowrap; }
+  .td-tall .td-side-map { margin-top: 4px; }
 }
 .tree-sources-how { font-size: 13px; margin: 0.5rem 0 0; }
 .tree-sources-how a { color: var(--ink); }
