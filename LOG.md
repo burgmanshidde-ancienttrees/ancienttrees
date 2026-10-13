@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-10-13 05:35 run (night-run)
+
+7-day visits: 1741 visits, 2431 page views. No reader submissions waiting. health.py flagged the iOS app (scheduled run failed after 1h36m; the xcresult log was not looked at) and a skipped smoke test, which is only the push-skip. The shelf said refill. Munich's claim was refused (full, 62 of 60), so I took Stuttgart (6 trees, no imported register). The verify pass found about 45 Naturdenkmal trees with register ids and coordinates, but no girth, height or age in any readable source, so none can ship RICH. 0 trees published, 6 leads filed in data/leads/stuttgart.json (Schillereiche, Wernhalde sequoia cluster, Otto-Feucht-Eiche, Wilhelma grove). Stuttgart is a wall for 48h. Not done: no further pass this window; the other Germany and Austria cities with room are all walled, and the shelf's unwalled cities were not tried.
+
 ## 2026-10-13 night run (window from 01:15 UTC), 7-day visits 1667 / 2354 views
 
 No reader photographs waiting. Broken: the iOS app's scheduled run failed (SweepFrames on iPhone SE: the "Free to visit" map chip ends 13 points past the edge of a 440 point screen); this runner cannot render the app, so it needs a session. Nuremberg verify (about 49k tokens): 0 trees, the nearest Naturdenkmal rows are already live and the rest carry no measurement in any reachable source, so none can end rich; one grouped lead filed, Nuremberg is a 48h wall; Graz claimed and released unworked (0 of 4 leads placed). Photo viewing pass (about 105k tokens): 38 images over 31 trees, 1 approved (gnt_007 Ghent, Massemen lime, geotag 0 m from the pin), 2 held (ali_006, hkg_010), 35 rejected and recorded; most candidates were street scenes. Reversal for gnt_007: `python3 scripts/photo_apply.py hold gnt_007 "https://commons.wikimedia.org/wiki/File:2017_The_Village_Lime_Tree_of_Massemen_BE.jpg" --reason "reverted"`.

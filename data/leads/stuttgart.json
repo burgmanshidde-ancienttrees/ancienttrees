@@ -26,6 +26,51 @@
    "lat": 48.78743,
    "lng": 9.08391,
    "position_basis": "recovered from the lead's own `coordinates` field (field)"
+  },
+  {
+   "candidate": "Schillereiche (Stieleiche bei der Wernhaldenstrasse, Schillerhoehe lookout)",
+   "coordinates": [48.76246, 9.18195],
+   "reason": "Naturdenkmal 81110000403 (de.wikipedia Liste der Naturdenkmale in Stuttgart, LUBW steckbrief; city ordinance 3/8). Planted 1865 by the Verschoenerungsverein Stuttgart in memory of Schiller's first reading of Die Raeuber (per search summaries of vsv-stuttgart.de and LEO-BW; vsv host refused connection and LEO-BW 403, so not seen first-hand). Public lookout above Neue Weinsteige. Commons photo exists (Naturdenkmal Schillereiche, Stuttgart.jpg). Missing for RICH: any girth or height (no source found, steckbrief and ordinance carry none) and first-hand sight of the planting year. Ends rich if a measurement turns up.",
+   "lat": 48.76246,
+   "lng": 9.18195,
+   "position_basis": "Wikipedia ND list infobox coordinate (register-derived)"
+  },
+  {
+   "candidate": "Mammutbaeume Steinkopfstr. 6 and 8 (Naturdenkmal 81110000027 and 81110000402), Wernhalde cluster",
+   "coordinates": [48.76270, 9.18475],
+   "reason": "Two ND giant sequoias beside Wernhaldenpark (about 40 sequoias, publicly walkable, Wilhelma-Saat seed imported 1864 for King Wilhelm I). Same cluster: Schillereiche, Bopserwaldstr. 79 copper beech (81110000408, 48.7647 9.18562) and Bopserwaldstr. 81 sequoia (81110000409, 48.76445 9.18555), roughly 1 km apart, a real walk. Commons photo of Steinkopfstr. 6 (CC BY-SA 4.0, Laserlicht, 2018, geotag 48.762806 9.185289). Missing: no girth or height for any of them in steckbrief, ordinance, Stuttgarter Zeitung 2016 or stadtbaum-stuttgart.de; Bopserwaldstr. trees stand on a residential street, visibility from the pavement unconfirmed. Needs a measurement (Lutz Krueger, Jahreshefte GfN, 'Die aeltesten Mammutbaeume in Wuerttemberg', ojs-jh-gfn.ub.uni-stuttgart.de article 276 is a scanned PDF, no text layer from this runner; a session with OCR may find a Stuttgart table).",
+   "lat": 48.7627,
+   "lng": 9.18475,
+   "position_basis": "Wikipedia ND list infobox coordinate (register-derived)"
+  },
+  {
+   "candidate": "Four Bergmammutbaeume below Schloss Solitude (forest, in a row)",
+   "coordinates": null,
+   "reason": "Stuttgarter Nachrichten 2021-11-28 (Versteckte Schoenheiten): four sequoias in a row in the forest below Schloss Solitude. Search summary of an info board: measured 2003, largest 44.6 m high, 1.39 m breast-height diameter (about 437 cm girth); figure NOT seen on a fetched page, so unusable. Not a Naturdenkmal (only the Baumgruppe vor Schloss Solitude, ash plus maples, is) so no per-tree official register record; no exact coordinate. Cannot end rich.",
+   "lat": null,
+   "lng": null
+  },
+  {
+   "candidate": "Otto-Feucht-Eiche (Stieleiche, Rotwildpark Stuttgart, Glemswald)",
+   "coordinates": [48.767996, 9.109265],
+   "reason": "Strong tree: 7.55 m girth at breast height, 24 m, about 400 years (Rainer Lippert, monumentale-eichen.de, measured 2022, fetched; monumentaltrees.com 7.65 m cross-check not fetched). Also called Christophseiche; ten oaks over 6 m in the reserve (Alte Eiche 7.10 m, Saufang-Eiche 6.80 m, Bernhards-Eiche 6.65 m, Adlereiche 6.55 m). Fails RICH and honesty: stands in the Naturschutzgebiet Rotwildpark (no per-tree register record), a search summary says no footpath leads to it, and a survey notes rotting sapwood; no open licence photo found; access to the exact tree unsettled. Lead with coordinate for a session that can settle paths from OSM.",
+   "lat": 48.767996,
+   "lng": 9.109265,
+   "position_basis": "monumentale-eichen.de page coordinate"
+  },
+  {
+   "candidate": "Wilhelma sequoia grove (Mammutbaum-Hain, tallest 37 m)",
+   "coordinates": null,
+   "reason": "Stuttgarter Zeitung 2016: almost sixty sequoias behind the Wilhelma main entrance, tallest 37 m, girth 4.20 m (Stuttgarter Nachrichten gives 4.7 m circumference for the thickest: conflict, both seen only as article/search text, the NN page 404s now). Paid entry zoo and botanic garden, owner of the ground is the source for access, but no per-tree register record and no coordinate. Cannot end rich.",
+   "lat": null,
+   "lng": null
+  },
+  {
+   "candidate": "Other Stuttgart Naturdenkmal single trees (register list, all unmeasured)",
+   "coordinates": null,
+   "reason": "From de.wikipedia ND list (wikitext fetched 2026-10-13, IDs and coordinates): Mammutbaum Herdweg 72 (81110000201, 48.78743 9.16163), 2 Mammutbaeume Gutbrodstr. 101 (81110000501, 48.78113 9.15450), Mammutbaum Moerikestr. 1 (81110000407, 48.76817 9.16878), Mammutbaum Sonnenbergstr. 39 (81110000404, 48.76834 9.19035), Mammutbaum Heigst-Staffel (81110000405, 48.75883 9.16879), Mammutbaum Mendelssohnstr. 108 (81110001802, 48.74664 9.20699), Stieleiche Bei der Eiche 16 A (81110000902, 48.82969 9.15276), Jahneiche (81110000903, 48.82906 9.15212), Stieleiche Hasenbergsteige (81110004010, 48.76613 9.15665), Winterlinde Mannspergerstr. 144 (81110001805, 48.75086 9.24128), Winterlinde Schillerweg (81110001501, 48.76821 9.26267), Blutbuchen Hoelderlinstr. 1 D and 3 (81110000205/204), Blutbuche Mineralbad Berg (81110000304/011), Eibe Goezstr. 10 (81110002103, 48.70190 9.21462). None has a girth, height or age in steckbrief, ordinance or any fetched source, and most stand on residential streets with unsettled viewing access. Wikidata sweep extras: Q58013346 3 Eichen im Gewann Uhlberg (48.62648 9.20726), Q58021416 Eichengruppe Jungviehweide (48.62221 9.14772), not examined. Stuttgart is a wall for RICH new trees until a measurement source for the ND list appears.",
+   "lat": null,
+   "lng": null
   }
  ],
  "blocked": [
