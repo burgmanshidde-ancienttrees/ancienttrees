@@ -625,7 +625,16 @@
         "status": "missing"
       },
       "paid_entry": true,
-      "how_to_recognise": "You can recognise it by its barrel-shaped trunk, smooth greenish bark and the hard conical thorns studding its lower stem. It stands in the Jardi Botanic de la Universitat de Valencia."
+      "how_to_recognise": "You can recognise it by its barrel-shaped trunk, smooth greenish bark and the hard conical thorns studding its lower stem. It stands in the Jardi Botanic de la Universitat de Valencia.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "autumn, when large pink flowers with cream centres open on the swollen trunk",
+        "kind": "flowers"
+      }
     },
     {
       "id": "vlc_018",

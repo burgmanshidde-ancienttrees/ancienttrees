@@ -714,7 +714,15 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by leaves larger and more deeply lobed than a native oak's, on a group of three. It stands on the west side of Huijgenspark, opposite Huijgenstraat 12 to 17."
+      "how_to_recognise": "You can recognise it by leaves larger and more deeply lobed than a native oak's, on a group of three. It stands on the west side of Huijgenspark, opposite Huijgenstraat 12 to 17.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "late October, when the oaks turn russet and yellow, among the best autumn colour of any oak",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "hag_023",
