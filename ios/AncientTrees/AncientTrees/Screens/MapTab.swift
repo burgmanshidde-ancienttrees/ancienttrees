@@ -1050,6 +1050,10 @@ struct MapTab: View {
             .padding(.horizontal, 16)
         }
         .scrollClipDisabled()
+        // A shelf by design: the chips scroll, and appfit reads the name.
+        // .contain keeps each chip its own element with its own identifier.
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("map-filters-shelf")
     }
 
     /// One walk free, the rest behind Plus, which is the rule Entitlement.swift

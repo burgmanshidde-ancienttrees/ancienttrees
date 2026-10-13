@@ -360,7 +360,14 @@ def mark_shelves(screen):
             if not children:
                 continue
             span = max(c.right for c in children) - min(c.x for c in children)
-            el._horizontal = span > el.w * 1.1
+            # A row DECLARED as a shelf by its identifier ("...-shelf") scrolls
+            # by design even when it is only a little wider than the screen:
+            # the map's four filter chips spill 13 points on iOS 18, which is
+            # how a chip row says it scrolls (2026-10-13). Undeclared rows keep
+            # the ten percent rule, so the tree page's four-point spill stays a
+            # finding.
+            declared = el.ident.endswith("-shelf") and span > el.w
+            el._horizontal = declared or span > el.w * 1.1
 
 
 def centred(el, W):
