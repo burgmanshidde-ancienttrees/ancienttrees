@@ -11433,6 +11433,22 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "roosendaal",
+    "kind": "verify",
+    "tokens": 110582,
+    "trees": 2,
+    "note": "LRMB plus PDOK aerial pin checks; 9 filed as leads (no confirmable pin)"
+   },
+   {
+    "date": "2026-10-13",
+    "target": "roosendaal (roo_010-011)",
+    "kind": "write",
+    "tokens": 62976,
+    "trees": 2,
+    "note": "merged; roo_001 recognise fixed, city copy updated for 6 trees"
+   },
+   {
+    "date": "2026-10-13",
     "target": "nuremberg",
     "kind": "verify",
     "tokens": 49065,

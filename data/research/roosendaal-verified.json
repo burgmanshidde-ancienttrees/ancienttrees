@@ -1,0 +1,69 @@
+[
+ {
+  "id": "roo_010",
+  "name": "The London Plane of De Kring",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "roughly 120 years, from a registered planting decade",
+  "age_min": 116,
+  "age_max": 126,
+  "age_basis": "source",
+  "girth_cm": 360,
+  "height_m": 25,
+  "location": {
+    "address": "Roosendaal, Kerkstraat 1, bij De Kring",
+    "latitude": 51.533430,
+    "longitude": 4.458809,
+    "neighbourhood": "Centrum, De Kring"
+  },
+  "verified_sources": [
+    "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680200&outFields=*&f=json",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+  ],
+  "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680200",
+    "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680200&outFields=*&f=json"
+  },
+  "access": "Free. Public square (plein) owned by the municipality, register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
+  "transport": "Roosendaal station is about 0.8 km north, roughly a 10 minute walk via Stationsstraat and Kerkstraat.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "The national tree register describes this London plane by the tree behind it. About 13 metres west stands the Oriental plane of De Kring, one of the two species the London plane was bred from, so this corner of the square puts a hybrid and its parent side by side.\n\nThis is the front tree and the younger of the pair, banded by the register to a planting between 1900 and 1910, which makes it roughly 116 to 126 years old. The register gives it 25 metres of height to the Oriental plane's 22, and a trunk 3.6 metres round at chest height.\n\nThe pair have not had an easy century. In 2002 the Bomenstichting, the Dutch tree foundation, studied the ground beneath them and advised keeping both planes. Building went ahead anyway, inside the spread of their crowns and their roots. When the register last checked, in July 2023, it was mostly the Oriental plane behind whose crown had gone thin, with dead tips on its branches. This one is not the tree it describes as declining.\n\nA horse chestnut once made this a trio. The register records it felled in 2014 and a young tree planted in its place, so that young tree is not part of the old group.\n\nThe register is the only source for this tree, and July 2023 is the last time it was recorded standing. If you have walked past it since, tell us.",
+  "how_to_recognise": "You can recognise it as the front one of the two old planes in this corner of De Kring, in its own round tree pit. The rarer Oriental plane stands about 13 metres west, behind it.",
+  "verify_notes": "Source: LRMB register only (one official register; flagged 'register only', but the record carries a dated inspection: Laatste_waarneming 2023-07-28, status Monumentaal, so vitality was last seen in 2023). Register: Gewone plataan, planting band 1900-1910 (age band, ~116 to 126 years now), girth 360 cm, height 25 m (register figures, undated), solitary, owner gemeente, setting plein. The register note on this record: the oriental plane no. 1680199 stands behind this tree. In 2002 the Bomenstichting did a growing-site study and advised keeping the planes; building was nevertheless done inside the crown projection and rooting zone, and by July 2023 the register notes the crown of mostly the oriental plane had gone thin with dead branch tips. This plane (the front tree) is not the one described as visibly declining. PIN: register point 51.533430, 4.458809 lands on the round tree pit with one clear crown in the PDOK orthophoto (leafless frame, tree stands in a ring pit); the Oriental plane (roo_001, no. 1680199) is a separate crown about 13 m west, not folded because it is a different species and trunk, but both stand in the same corner of the square so the writer should treat them as a pair at one place to stand. The register also records a white horse chestnut (no. 1680201) here felled in 2014 and replaced by a young tree; do not confuse. lifecheck.py returned NONE (no photo evidence); alive rests on the register's 2023 observation. Search for 1987 photograph: register cites westbrabantsarchief.nl photo showing the back tree (the oriental plane) in 1987, not this tree."
+ },
+ {
+  "id": "roo_011",
+  "name": "The Baumann's Horse Chestnut of the Algemene Begraafplaats",
+  "species": "Baumann's Horse Chestnut (Aesculus hippocastanum 'Baumannii')",
+  "age_estimate": "roughly 150 years, from a registered planting decade",
+  "age_min": 146,
+  "age_max": 156,
+  "age_basis": "source",
+  "girth_cm": 364,
+  "height_m": 18,
+  "location": {
+    "address": "Roosendaal, Bachlaan 1, Algemene Begraafplaats (closed municipal cemetery)",
+    "latitude": 51.537503,
+    "longitude": 4.479988,
+    "neighbourhood": "Roosendaal-Oost, Bachlaan"
+  },
+  "location_site": {"name": "Algemene Begraafplaats Bachlaan", "radius_m": 50},
+  "verified_sources": [
+    "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680196&outFields=*&f=json",
+    "https://lokaleregelgeving.overheid.nl/CVDR10613 (Verordening op het beheer en het gebruik van de gesloten gemeentelijke begraafplaatsen, art. 2 para 1: open to everyone daily 8.00 to 16.30)",
+    "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, viewed 2026-10-13)"
+  ],
+  "official_register": {
+    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680196",
+    "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680196&outFields=*&f=json"
+  },
+  "access": "Free. Municipal closed cemetery, open to everyone daily 8.00 to 16.30 (municipal cemetery regulation, art. 2; Oorlogsgraf.nl gives the same hours and says dogs are not allowed). Register: visitable ja, owner gemeente.",
+  "transport": "About 1.5 km east of Roosendaal station, roughly a 20 minute walk via Bredaseweg; parking for about 10 cars in front of the cemetery.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "Every May this horse chestnut covers itself in white flowers, and every autumn it drops not a single conker. It is 'Baumannii', the double-flowered clone of the ordinary horse chestnut, and its flowers set no fruit.\n\nThe national tree register bands its planting to the 1870s, roughly 146 to 156 years ago. Sources disagree on when the Algemene Begraafplaats itself opened, somewhere between about 1880 and 1894, so the tree may be as old as the cemetery or older. Nobody has recorded how it came to stand here.\n\nIt has seen the cemetery's whole working life. Roosendaal buried its dead here until 1978, when the ground closed to new burials, and the chestnut stayed on among the grave rows, alone, 18 metres tall and 3.64 metres round at chest height.\n\nAge has left its mark. The register notes a split in the main fork with small cracks beneath it, and in December 1999 the crown was thinned and anchored. It was inspected again in May 2025 and is still listed as monumental.\n\nThat register is the only record of this tree we have found; if you know its history, tell us. The cemetery is open daily from 8.00 to 16.30, and dogs are not allowed.",
+  "how_to_recognise": "You can recognise it as the lone big horse chestnut among the grave rows, 3.64 metres round, with no other crown within about 8 metres. In May its flowers are double, and in autumn it bears no conkers.",
+  "best_time": {"months": [5], "kind": "flowers", "label": "May, when double white flower candles cover the crown"},
+  "verify_notes": "Source: LRMB register (official) plus the municipal regulation for the access hours; flagged 'register only' for the tree itself, but the record has a dated inspection (Laatste_waarneming 2025-05-22, status Monumentaal), so it was seen alive in 2025. Register: Witte paardenkastanje 'Baumannii' (the double-flowered, fruitless clone of the white horse chestnut), planting band 1870-1880 (age band, ~146 to 156 years now), girth 364 cm, height 18 m, solitary, setting begraafplaats, owner gemeente. Register remark: split in the fork ('plakoksel') with small cracks beneath; crown thinned and anchored in December 1999. PIN: register point lands on one isolated bare crown standing among the grave rows in the PDOK orthophoto, with no neighbouring crown within ~8 m, so the individual tree is placeable. Cemetery founding date varies by source (about 1880 to 1894) and it closed to burials in 1978; the tree's planting band predates or matches the cemetery's start, no bridge claim made. Two other register trees by the cemetery entrance (silver maple no. 1690555, 325 cm; London plane no. 1690554, 287 cm, both about 50 m north) stand in dense woodland in the orthophoto and could not be placed individually: filed as leads. lifecheck.py returned NONE."
+ }
+]
