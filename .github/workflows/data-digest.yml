@@ -202,6 +202,9 @@ jobs:
           # archive/ verbatim. Daily, because the weekly job alone let LOG.md
           # reach 387 KB (2026-10-12), and every run reads its top.
           python3 scripts/archive_logs.py || true
+          # The month each new Commons lead photo was taken, for Discover's
+          # season hero (2026-10-13). Only photos without one are asked about.
+          python3 scripts/photo_months.py || true
           git add LOG.md CURATION.md archive/ 2>/dev/null || true
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
             data/cities data/backlinks.json data/photo-autumn.json \

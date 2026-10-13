@@ -19,6 +19,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Discover's new order (his yes): hero, at their best now, cities, the records, lists with an opinion, countries, want to visit, ambassador, species, islands, walks, growing card, more trees near you.
 - Sign in with Apple and the emailed sign-in link failed in Xcode Run builds only: Debug had no entitlements since 08-20 (free-account workaround). Debug carries them again. Apple works in App Store builds (11 Apple accounts since 09-02; Google 14, email 5). The email link landing in the app after Supabase's redirect is still unproven on a real phone.
 - Apple stays first on the sign-in sheet (his ok).
+- Discover away from home: the city you are in leads the cities row; a season hero more than 30 km away names its place.
+- Season hero shows its season: photo.taken_month from Commons EXIF (scripts/photo_months.py, daily in data-digest.yml; 840 of 872 Commons leads). The hero is the nearest tree at its best whose photo was taken in its best months, however far; none means the stock hero. October: 35 trees qualify. New York now gets the Comfort Maple (Pelham), not a green summer oak. Live once the site deploys the feed. Not yet covered: iNaturalist and our own photos (no month read), and data/photo-autumn.json's colour score is a separate, older signal for the web.
 - Live on main (ce89a1828, d7023b1b6, e89bd4523 and the order commit). Seen in the simulator; not yet on his phone.
 
 ## 2026-10-13 session: a portrait photograph on a phone (web and app)
