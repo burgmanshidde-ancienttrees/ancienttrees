@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "tulsa+cremines+emmen+oklahoma-city+ueda+viroflay",
+    "kind": "enrich",
+    "tokens": 92000,
+    "trees": 0,
+    "note": "enrichment: Creek Council Oak NRHP record, Aizen Katsura city monument with girth and height, three Emmen access lines from the LRMB; 5 of 9 improved, 11 gaps dead-ended; Survivor Tree undated 40 ft withheld; 45k tokens lost to an ArcGIS schema read"
+   },
+   {
+    "date": "2026-10-13",
     "target": "derby+nantes+simsbury+ekero+tarragona+gottingen+venon",
     "kind": "enrich",
     "tokens": 91000,

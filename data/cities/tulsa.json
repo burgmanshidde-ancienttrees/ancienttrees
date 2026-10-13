@@ -46,7 +46,8 @@
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Creek_Council_Oak_Tree",
         "https://www.mvskokemedia.com/cycle-of-rebirth-continues-at-council-oak-tree-park/",
-        "https://www.kosu.org/local-news/2026-04-07/rematriation-retreat-returns-to-tulsa-linking-indigenous-language-to-resistance"
+        "https://www.kosu.org/local-news/2026-04-07/rematriation-retreat-returns-to-tulsa-linking-indigenous-language-to-resistance",
+        "https://www.loc.gov/item/ok0081/"
       ],
       "access": "Free, public city/tribal park (Creek Nation Council Oak Park, 1.86 acres), open to visitors; includes an ethno-horticultural garden and Trail of Tears memorial.",
       "transport": "Central Tulsa, Riverview neighbourhood overlooking the Arkansas River; no transit stop confirmed this pass, check current bus routes.",
@@ -57,7 +58,11 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "National Register of Historic Places (NRIS), no. 76001576",
+        "url": "https://www.loc.gov/item/ok0081/"
+      }
     }
   ]
 }
