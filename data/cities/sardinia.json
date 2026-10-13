@@ -3,8 +3,8 @@
   "country": "Italy",
   "status": "needs_curation",
   "kind": "island",
-  "intro": "Sardinia's five trees are spread across three corners of the island and a car is the only way to link them. Two stand a few metres apart at Santu Baltolu near Luras in the Gallura hills, and one of those, S'Ozzastru, is the oldest living tree in Italy. The other three sit far to the south: two around Baunei on the Ogliastra coast, roughly 150 kilometres away, and a cedar in the interior at Laconi. Wild olives make up most of the list. None of it is an afternoon.",
-  "meta_description": "Sardinia's five remarkable trees, including S'Ozzastru near Luras, the oldest living tree in Italy at somewhere between 2,500 and 4,000 years.",
+  "intro": "Sardinia's seven trees are spread across the island and only a car links them. Two stand a few metres apart at Santu Baltolu near Luras in Gallura, and one, S'Ozzastru, is the oldest living tree in Italy. Two more sit around Baunei on the Ogliastra coast, a cedar grows inland at Laconi, and two great oaks stand in the mountains between: the cork oak of Sa Tuppa near Orune, which a Sardinian botanist calls the most imposing on the island, and a downy oak in a wood of two hundred giants at Su Fundale. None of it is an afternoon.",
+  "meta_description": "Sardinia's seven remarkable trees, including S'Ozzastru near Luras, the oldest living tree in Italy at somewhere between 2,500 and 4,000 years.",
   "question_meta": "Sardinia's oldest tree is S'Ozzastru near Luras, a wild olive estimated at 2,500 to 4,000 years and the oldest living tree in Italy.",
   "oldest_tree_id": "sar_001",
   "question_answer": "The oldest tree in Sardinia, and in Italy, is S'Ozzastru, a wild olive at Santu Baltolu di Carana outside Luras in Gallura. Its age is genuinely contested: the University of Sassari estimates 2,500 to 4,000 years, the visitor site that manages it says 3,000 to 4,000, and the botanist Bruno Peyronel once proposed more than 5,000, a figure flagged as having no scientific data behind it. Every serious estimate lands in the thousands, which settles the ranking without settling the number.",
@@ -20,11 +20,11 @@
     },
     {
       "q": "Do you need a car, and how far apart are these trees?",
-      "a": "A car, and they are a long way apart. The two olivastri at Santu Baltolu stand a few metres from each other near Luras in the north. Santa Maria Navarrese and the Golgo plateau are around Baunei on the east coast, roughly 150 kilometres south, and about 25 minutes apart from each other. Laconi is inland again. Treat this as two or three separate days rather than one drive."
+      "a": "A car, and they are a long way apart. The two olivastri at Santu Baltolu stand a few metres from each other near Luras in the north. Santa Maria Navarrese and the Golgo plateau are around Baunei on the east coast, roughly 150 kilometres south, and about 25 minutes apart from each other. Laconi is inland again, and the two great oaks at Orune and Su Fundale lie in the mountains in between. Treat this as two or three separate days rather than one drive."
     },
     {
       "q": "Can you visit S'Ozzastru at any time of year?",
-      "a": "No. The grove at Santu Baltolu is a managed site with a ticket office, open from 1 April to 2 November with guided visits from 10:30 and a fee of around 5 euro. The other three trees on this list are free and open at all hours."
+      "a": "No. The grove at Santu Baltolu is a managed site with a ticket office, open from 1 April to 2 November with guided visits from 10:30 and a fee of around 5 euro. The other trees on this list are free and open at all hours."
     }
   ],
   "trees": [
@@ -223,6 +223,103 @@
       "height_m": 29.0,
       "verify_notes": "Height 29.0 m from the italy-masaf register, matched on our own pin (0 m away).",
       "how_to_recognise": "You can recognise it by its size, 4.4 metres round and 29 metres tall, said to have been planted by a Sardinian marquis in 1835. It stands in Parco Aymerich, Laconi."
+    },
+    {
+      "id": "sar_006",
+      "name": "The Cork Oak of Sa Tuppa",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "200 to 300 years",
+      "age_min": 200,
+      "age_max": 300,
+      "age_basis": "source",
+      "girth_cm": 650,
+      "height_m": 20.0,
+      "location": {
+        "address": "Sa Tuppa, on the plateau about 7 km west of Orune, Province of Nuoro",
+        "latitude": 40.41305,
+        "longitude": 9.2902,
+        "neighbourhood": "Sa Tuppa, Orune, Barbagia"
+      },
+      "story": "This tree is still harvested for its cork, and it has kept its shape anyway. The botanist Ignazio Camarda, who catalogued Sardinia's great trees and old forests in a 2020 book, calls the cork oak of Sa Tuppa the most imposing and best preserved in Sardinia, a tree that could stand as the symbol of its species. The cork comes off regularly, as it does from the working trees around it, and the trunk carries the swellings the cutting leaves behind, yet it has stayed whole and regular.\n\nCamarda measures it at 6.5 metres round at chest height and 9.7 metres at the base, 20 metres tall, and puts its age at 200 to 300 years. Italy's national register of monumental trees lists it too, at 6.2 metres round.\n\nIt grows at about 740 metres up, in a clearing kept for free-range grazing, mostly sheep, which sometimes rest in its shade at midday, the spot Sardinians call a meriagu. Branches brought down by wind and snow lie under the crown, but Camarda records the tree as in very good health. Around it the whole Orune plateau is wooded pasture and cork forest, so dense and so full of big trees that he treats the area itself as a monumental cork oak forest.",
+      "verified_sources": [
+        "Ignazio Camarda, Grandi alberi e foreste vetuste della Sardegna: biodiversità, luoghi, paesaggio, storia (2020), entry sent by Luisa Carta, curator of the Orto Botanico of the University of Sassari, 2026-10-13",
+        "data/registers/italy-masaf.json (sheet 02/G147/NU/20, Orune, Sa Tuppa: Quercus suber, girth 620 cm, height 21.5 m, 9 m from our pin)",
+        "https://www.komoot.com/guide/3906774/natural-monuments-around-orune (a 'Cork Oak Tree' loop from Nuoro to Orune, so visitors ride out to it)"
+      ],
+      "access": "Free, no ticket. Stands in open wooded pasture used for free-range grazing on the Orune plateau, about 740 m up. No facilities, and sheep may be in the field.",
+      "transport": "Car only. Orune lies north-east of Nuoro; the tree is at Sa Tuppa on the plateau about 7 km west of the village.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/sar_006-the-cork-oak-of-sa-tuppa.jpg",
+        "license": "Provided by Luisa Carta with permission, credit required",
+        "attribution": "Luisa Carta",
+        "status": "approved",
+        "width": 1350,
+        "height": 1800,
+        "note": "Photographed by Luisa Carta, curator of the Orto Botanico, University of Sassari; sent by her on 2026-10-13 in reply to our missing-tree ask, with permission: 'Può utilizzare il materiale indicando le fonti: bibliografia e Foto'. Not an open licence; credit her by name, ask before reuse elsewhere."
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "Luisa Carta's coordinate (40°24'46.98\"N 9°17'24.72\"E), 9 m from the MASAF register point for this tree",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/G147/NU/20",
+        "url": null
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 6.5 metres round at chest height and swelling to nearly ten at the base, with the cork stripped from its lower part. It stands alone in a grazing clearing at Sa Tuppa.",
+      "verify_notes": "- Sent 2026-10-13 by Luisa Carta (Orto Botanico, Università di Sassari) as a one-page entry citing Camarda 2020, with her own photograph and coordinates; Hidde asked for it live the same day.\n- Two sources: Camarda's book (via her entry) and the MASAF register (02/G147/NU/20, 620 cm, 21.5 m, altitude 750 m). Book gives 650 cm at 130 cm and 970 cm at the collar, 20 m, age 200-300 estimated. Used the book's figures.\n- Access: grazing clearing ('radura destinata a pascolo brado'). No source states whether the land is common or private; a komoot loop to the tree suggests people ride out to it. Flagged for that reason; a reader report would settle it.\n- Superlative 'most imposing and best preserved cork oak of the island' is Camarda's, credited to him in the story."
+    },
+    {
+      "id": "sar_007",
+      "name": "The Downy Oak of Su Fundale",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "300 to 400 years",
+      "age_min": 300,
+      "age_max": 400,
+      "age_basis": "source",
+      "girth_cm": 640,
+      "height_m": 19.0,
+      "location": {
+        "address": "Su Fundale, on the provincial road from Cantoniera Pira Onni to Talana, Province of Nuoro (Ogliastra)",
+        "latitude": 40.004794,
+        "longitude": 9.433653,
+        "neighbourhood": "Su Fundale, Talana, Ogliastra"
+      },
+      "story": "This oak is one of more than two hundred. At Su Fundale, high in the mountains of Ogliastra, a wood of downy oaks runs for 25 to 30 hectares, and every trunk in it is about a metre across or more. The botanist Ignazio Camarda, who catalogued Sardinia's great trees in 2020, calls it an extraordinary sequence of big trees, with unusual bases and roots often half bare above the ground. Many carry the marks of lightning, some have dead tops, others full and healthy crowns.\n\nThis is the one Italy's national register of monumental trees lists by itself: 6.4 metres round and 19 metres tall, at about 930 metres up. Camarda puts its age at 300 to 400 years. For the wood as a whole he reads 400 to 500 years from the size of fallen and cut stumps and from growth rings only a few millimetres wide. A holm oak 5.25 metres round, also on the register, stands about 50 metres away.\n\nHolm oak forest closes the wood in to the south and heath to the north, and among the oaks grow wild pear, prickly juniper and the rarer Montpellier maple. The provincial road towards Talana runs straight through the stand, so these trees are a stop on the drive rather than a hike: where the road crosses the wood, the trunks are all around you.",
+      "verified_sources": [
+        "Ignazio Camarda, Grandi alberi e foreste vetuste della Sardegna: biodiversità, luoghi, paesaggio, storia (2020), entry sent by Luisa Carta, curator of the Orto Botanico of the University of Sassari, 2026-10-13",
+        "data/registers/italy-masaf.json (sheet 06/L036/OG/20, Talana, Su Fundale: Quercus pubescens, girth 640 cm, height 19 m, 78 m from our pin)",
+        "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260"
+      ],
+      "access": "Free, no ticket. The oak wood at Su Fundale is crossed by the provincial road from Cantoniera Pira Onni to Talana, so the trees stand in open forest beside the road.",
+      "transport": "Car only. Su Fundale is in the mountains of Ogliastra, on the provincial road from Villagrande Strisaili or Passo Correboi through Cantoniera Pira Onni towards Talana.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/sar_007-the-downy-oak-of-su-fundale.jpg",
+        "license": "Provided by Luisa Carta with permission, credit required",
+        "attribution": "Luisa Carta",
+        "status": "approved",
+        "width": 1012,
+        "height": 1800,
+        "note": "Photographed by Luisa Carta, curator of the Orto Botanico, University of Sassari; sent by her on 2026-10-13 in reply to our missing-tree ask, with permission: 'Può utilizzare il materiale indicando le fonti: bibliografia e Foto'. Not an open licence; credit her by name, ask before reuse elsewhere."
+      },
+      "photos": [
+        {
+          "url": "https://ancienttrees.app/photos/sar_007-the-downy-oak-of-su-fundale-c41e7a20.jpg",
+          "license": "Provided by Luisa Carta with permission, credit required",
+          "attribution": "Luisa Carta",
+          "status": "approved",
+          "width": 1012,
+          "height": 1800,
+          "note": "Second frame of the same tree, the hollowed lower trunk; same permission as the lead."
+        }
+      ],
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "pin_source": "Luisa Carta's coordinate (40°0'17.26\"N 9°26'1.15\"E); the MASAF register point for this tree is 78 m away, so kept approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/L036/OG/20",
+        "url": null
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 6.4 metres round on a broad base, with roots partly bare among boulders. It stands beside the provincial road where it crosses the Su Fundale oak wood.",
+      "verify_notes": "- Sent 2026-10-13 by Luisa Carta (Orto Botanico, Università di Sassari) as a one-page entry citing Camarda 2020 and the MASAF list, with two of her photographs and coordinates.\n- Register 06/L036/OG/20 (Talana, Su Fundale, Quercus pubescens 640 cm, 19 m, 930 m) matches her figures exactly; 07/L036/OG/20 is a Quercus ilex 525 cm about 50 m away.\n- Age: entry gives 300-400 for this tree, 400-500 for the stand from stumps and ring widths. Both quoted as Camarda's.\n- Pin: her coordinate and the register point are 78 m apart in a 25-30 ha wood of big oaks, so approximate; the photograph (boulders at the base, road and railing behind) is the recognition aid."
     }
   ]
 }
