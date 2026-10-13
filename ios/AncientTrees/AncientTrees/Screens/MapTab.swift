@@ -696,7 +696,9 @@ struct MapTab: View {
     private var countStrip: some View {
         Text(inReach == 0
              ? "No trees in view"
-             : "\(inReach) \(inReach == 1 ? "tree" : "trees") you can see")
+             // Just the count (Hidde, 2026-10-13, chose "6 trees" over
+             // "6 trees you can see"), komoot's "511 routes".
+             : "\(inReach) \(inReach == 1 ? "tree" : "trees")")
             .font(.brand(16, .bold))
             .foregroundStyle(Brand.inkSoft)
             // AT FULL HEIGHT THE WORDS GO, THE STRIP STAYS (Hidde, 2026-10-10:
