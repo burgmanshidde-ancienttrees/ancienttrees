@@ -388,7 +388,15 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by its shimmering silver-backed leaves along the bank of the moated Haet ende Nijt monument. It stands in Monseigneur Nolenspark, a short walk from the black walnuts and tulip trees.",
       "girth_cm": 420,
-      "height_m": 32
+      "height_m": 32,
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "July, when the weeping silver limes by Haet ende Nijt open their honey-scented flowers, usually the last limes to bloom",
+        "kind": "flowers"
+      }
     },
     {
       "id": "maa_010",

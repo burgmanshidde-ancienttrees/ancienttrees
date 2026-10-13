@@ -62,7 +62,15 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Girth and height from the Environment Ministry's 2007 giant-tree survey, but the source states plainly that it cannot match its individual to a specific ministry record because several katsura of similar size stand nearby and all are multi-stemmed clusters. It also notes the ministry files the tree under a different address and owner, which would place it outside the designated forest. No age published. Both caveats are on the page.",
-      "how_to_recognise": "You can recognise it by the way the roots gather into the trunk, 12.2 metres round in a cluster of stems, on the bank of the stream above the Daishido. Several big katsura grow along this path."
+      "how_to_recognise": "You can recognise it by the way the roots gather into the trunk, 12.2 metres round in a cluster of stems, on the bank of the stream above the Daishido. Several big katsura grow along this path.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October, when the Maruyama katsura turns pink and yellow above the river path",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "spr_002",
@@ -96,7 +104,15 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Girth, height and the 750-year tradition are from Imada Hideki's 150 Giant and Notable Trees of Hokkaido (2018) and the Hokkaido prefectural signboard at the tree; the age is explicitly a tradition and age_min is set far below it. Listed by Hokkaido as a commemorative protected tree, no natural monument designation. The two conflicting accounts of who found the spring are both reported.",
-      "how_to_recognise": "You can recognise it by the torii and straw rope around its trunk, with heavy roots breaking the surface. It stands in the car park at the entrance to Koganeyu Onsen."
+      "how_to_recognise": "You can recognise it by the torii and straw rope around its trunk, with heavy roots breaking the surface. It stands in the car park at the entrance to Koganeyu Onsen.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "mid October, when the Koganeyu katsura turns pink and yellow and the fallen leaves smell of burnt sugar",
+        "kind": "autumn colour"
+      }
     },
     {
       "id": "spr_003",

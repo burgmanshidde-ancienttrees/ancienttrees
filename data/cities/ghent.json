@@ -56,7 +56,15 @@
       "curation_status": "flagged",
       "notes": "Single source (Flanders heritage inventory, agentschap Onroerend Erfgoed, object 133048; CC BY-SA 4.0, attribution '(c) agentschap Onroerend Erfgoed'), corroborated only by a local history page (muinkparkwijk.be) on the park's history, not on this specific tree, so flag as single-sourced on the tree itself. Register: 'stamomtrek van meer dan 3 meter' (trunk girth more than 3m) and 'behoort tot de eerste aanplantgeneratie in het Muinkpark' (belongs to the first planting generation of Muinkpark). Muinkpark is a remnant of the Ghent zoo grounds acquired in 1851 by the Gentse Maatschappij voor Natuurlijke Historie (3.3 ha of meadow). The register directly attributes this individual tree to that first planting generation, which is the basis for the age estimate; it is not an exact planting-year record for this specimen, hence the broad band. Girth recorded as '>300cm' per source; used 300 as the floor value. Park is open, free, public green space in central Ghent near the university quarter. Location precision confirmed from the register's own tree-level polygon (stated accuracy 'tot op 15m').",
       "location_precision": "confirmed",
-      "how_to_recognise": "The southernmost of the three Muinkpark trees, and the only domed one, with branches hanging to the ground and leaves that flash white underneath in wind."
+      "how_to_recognise": "The southernmost of the three Muinkpark trees, and the only domed one, with branches hanging to the ground and leaves that flash white underneath in wind.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "label": "midsummer, when the weeping silver lime in Muinkpark flowers with a strong honey scent, usually the last lime to bloom",
+        "kind": "flowers"
+      }
     },
     {
       "id": "gnt_002",
