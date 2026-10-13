@@ -384,13 +384,13 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/HK_TST_Nathan_Road_green_Sidewalk_Chinese_Banyan_trees_Aug-2015_DSC_%2816%29.JPG",
-        "license": "CC BY-SA 4.0",
-        "attribution": "GrandDCParker, via Wikimedia Commons",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/568946004/medium.jpg",
+        "license": "CC0",
+        "attribution": "no rights reserved, via iNaturalist",
         "status": "held",
-        "note": "fine banyan trunk and crown but one of the Nathan Road row, nothing but proximity ties it to ours",
-        "width": 1944,
-        "height": 2592
+        "note": "fine daylight banyan in a raised planter with benches, but no geotag and nothing ties it to Nathan Road rather than another Tsim Sha Tsui banyan",
+        "width": 375,
+        "height": 500
       },
       "height_m": 19.0,
       "verify_notes": "Height 19.0 m from the hongkong-ovt register, matched on our own pin (0 m away).",

@@ -12,6 +12,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-13 night run (window from 01:15 UTC), 7-day visits 1667 / 2354 views
+
+No reader photographs waiting. Broken: the iOS app's scheduled run failed (SweepFrames on iPhone SE: the "Free to visit" map chip ends 13 points past the edge of a 440 point screen); this runner cannot render the app, so it needs a session. Nuremberg verify (about 49k tokens): 0 trees, the nearest Naturdenkmal rows are already live and the rest carry no measurement in any reachable source, so none can end rich; one grouped lead filed, Nuremberg is a 48h wall; Graz claimed and released unworked (0 of 4 leads placed). Photo viewing pass (about 105k tokens): 38 images over 31 trees, 1 approved (gnt_007 Ghent, Massemen lime, geotag 0 m from the pin), 2 held (ali_006, hkg_010), 35 rejected and recorded; most candidates were street scenes. Reversal for gnt_007: `python3 scripts/photo_apply.py hold gnt_007 "https://commons.wikimedia.org/wiki/File:2017_The_Village_Lime_Tree_of_Massemen_BE.jpg" --reason "reverted"`.
+
 ## 2026-10-12 night run (window from 20:25 UTC), 7-day visits 1630 / 2210 views
 
 No reader photographs waiting; the deploy "skipped" rows in health.py are push runs yielding to the dispatched build, not a red build. Rung 4: Bamberg verify pass (about 45k tokens): the Bavarian register and the Wikipedia Naturdenkmal lists carry no girth, height or age, so no candidate can end rich; 0 trees, one oak filed as a lead, Bamberg is a 48h wall. Translation lane: I translated Enschede into Dutch (about 74k tokens), but another run pushed its own Enschede Dutch overlay first; I kept theirs on rebase and dropped mine, so that spend bought nothing. Worth knowing: the translator found "All seven" in the English free-entry FAQ (the city has 13) and "an oak in a city square" in the meta; check whether the other run's English file still says either (it did not; the other run had fixed both).
