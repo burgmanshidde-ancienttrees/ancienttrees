@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "hilo",
+    "kind": "enrich",
+    "tokens": 48000,
+    "trees": 0,
+    "note": "enrichment: Haili kamani small site (church corner); Rainbow Falls access corrected (state park fees since Jan 2026, story line fixed); Kalakaua Park trees cannot take a small site, no Hawaii exceptional-tree record found; 12 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "potsdam",
     "kind": "enrich",
     "tokens": 66000,

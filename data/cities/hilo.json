@@ -87,7 +87,11 @@
       },
       "how_to_recognise": "On the pavement at the corner of Haili and Ululani, outside Haili Congregational Church. Branches in flat stacked tiers rather than a rounded crown.",
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Haili Congregational Church, corner of Haili and Ululani Streets",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "hbi_003",
@@ -103,11 +107,12 @@
         "longitude": -155.11,
         "neighbourhood": "Rainbow Falls / Wailuku River"
       },
-      "story": "The register designates this tree and then records nothing about it. No girth, no height, no condition: just an Indian banyan at Rainbow Falls, protected under Act 105 like the rest, with every measurement column left blank.\n\nSo what stands here is described rather than measured. It grows along the trail that continues past the upper viewing platform above the falls, away from the crowd that stops at the railing, and it is the sprawling aerial-root kind of banyan rather than a single trunk: props coming down from the limbs and rooting where they land, which is how one of these walks slowly sideways over a century.\n\nNobody has published an age for it either, and that is the honest state of it rather than a gap we intend to fill with arithmetic. Banyans cannot be aged from girth anyway, because the figure would be a measurement of the whole colony rather than of one stem.\n\nWailuku River State Park is free and open from sunrise to sunset, and the falls themselves are the reason most people come. The tree is the thing you find by walking two minutes further than they do. If you know when it went in, tell us.",
+      "story": "The register designates this tree and then records nothing about it. No girth, no height, no condition: just an Indian banyan at Rainbow Falls, protected under Act 105 like the rest, with every measurement column left blank.\n\nSo what stands here is described rather than measured. It grows along the trail that continues past the upper viewing platform above the falls, away from the crowd that stops at the railing, and it is the sprawling aerial-root kind of banyan rather than a single trunk: props coming down from the limbs and rooting where they land, which is how one of these walks slowly sideways over a century.\n\nNobody has published an age for it either, and that is the honest state of it rather than a gap we intend to fill with arithmetic. Banyans cannot be aged from girth anyway, because the figure would be a measurement of the whole colony rather than of one stem.\n\nWailuku River State Park is open daily from early morning to late afternoon, free for Hawaii residents and a small fee for visitors, and the falls themselves are the reason most people come. The tree is the thing you find by walking two minutes further than they do. If you know when it went in, tell us.",
       "verified_sources": [
-        "https://www.wasabitourshawaii.com/rainbow-falls-a-must-visit-waterfall-on-the-big-island-hawaii/"
+        "https://www.wasabitourshawaii.com/rainbow-falls-a-must-visit-waterfall-on-the-big-island-hawaii/",
+        "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/"
       ],
-      "access": "Free, within Wailuku River State Park, generally open sunrise to sunset. A dedicated parking area serves the falls; no public bus stop at the trailhead.",
+      "access": "Wailuku River State Park (Rainbow Falls) is open daily 7:00am to 5:30pm, gates lock at 6:00pm. Entry is free for Hawaii residents with ID; non-residents pay $5 (children 3 and under free) plus $10 per vehicle for parking, card only, one fee also covers Boiling Pots. Fees required since January 2026.",
       "transport": "A short drive or taxi ride from downtown Hilo; the tree stands past the upper viewing platform along the park trail, an easy walk from the parking area.",
       "photo": {
         "url": null,
@@ -199,7 +204,8 @@
       "story": "This shoreline was named for coconuts a century before anyone thought to register one. Waiolama's older name is Waiolama Niu, niu meaning coconut, and an 1864 chant already sings of the coconut grove of Piʻopiʻo standing on these banks, now inside the Wailoa River State Recreation Area. A local history of the area describes the mid-1800s shore as luxuriant with coconut trees, so whichever specimen the state's exceptional-tree register singles out today stands where a much older grove once did.\n\nIt has survived worse than time passing. Hilo's tsunamis of 1946 and 1960 tore through this exact stretch of shoreline, and local accounts credit the coconut, banyan and mango trees along the canal with saving lives, people caught in the wave climbing into their limbs and holding on until the water dropped. The register lists this palm's condition as good and its owner as the State of Hawaii, inside what is now a 132-acre park.\n\nNobody has measured its girth or dated it, and a coconut palm would not tell you either way, it carries no growth rings. The register also does not say exactly which trunk along the canal it designated, so look for a mature, substantial palm near the water rather than a marked one, and if you know which it is, tell us.",
       "verified_sources": [
         "https://data.honolulu.gov/resource/84fd-3fzf.json?$limit=2000",
-        "https://www.kaahelehawaii.com/pi%CA%BBopi%CA%BBo-on-the-shores-of-the-wailoa/"
+        "https://www.kaahelehawaii.com/pi%CA%BBopi%CA%BBo-on-the-shores-of-the-wailoa/",
+        "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area/"
       ],
       "access": "Free, within Wailoa River State Recreation Area (Division of State Parks), open daily during daylight hours, no entrance fee, no check-in required",
       "transport": "A short walk from downtown Hilo; the recreation area borders Kamehameha Avenue and Pauahi Street, a few minutes from Kalakaua Park",
