@@ -11,6 +11,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 night run, 21:10 window: season gaps cleared, 29 best_time lines
+
+- Visits last 7 days: 1,770 (2,390 page views). Rung 1 empty (0 sightings waiting). Rung 2: health.py flagged the iOS app run; its failure was infrastructure (the test job was never acquired by a hosted macOS runner, capacity), no assertion failed. Answered with `health.py --answer`.
+- Rung 4, enrichment, by hand across 13 batches (new-york, edinburgh+brussels+dublin+brisbane, paris+vienna, london+alicante+cadiz+pamplona+prague, cagliari+glasgow+palma+arnhem+krakow, austin+montreal+houston+florence+the-hague, reykjavik+valencia+copenhagen, chicago, nara+warsaw, nijmegen+dallas+ottawa, portland+kanazawa+sardinia, vilnius+boston+utrecht+osaka+budapest+kyoto, leipzig, seattle+geneva+melbourne+toronto+leuven+stockholm+leeuwarden, naples+washington-dc+las-vegas+amersfoort+quebec-city, bari+leiden+pittsburgh+boise+spokane). Every open gap in these briefs was "season"; no dispatch, since the answer comes from reading the phenology file.
+- Added best_time to 29 trees where the species file marks a moment striking or worth the trip and the tree can show it: Hungarian oaks (autumn colour), field maples, larch, katsura, pin oak, limes (flowers), silk floss in Cadiz and Valencia, silky oaks in Alicante, catalpa, pear and apple blossom. The rest (elms, poplars, hazels, walnuts, pecans, live oaks, plane, Amur cork, zelkova, river red gum) have no striking moment, so about 150 season gaps are dead-ended for 90 days. Skipped on purpose: Sardinian wild olives (the species moment is the grove harvest), Vegas weeping mulberry (fruit), 'Nana' catalpas in Vienna (they barely flower), columnar oaks.
+- Every label was rewritten to name its own tree after I saw I had written the same sentence on nine Hungarian oaks, which is the templated shape the 08-13 note above warns about. Rule for the next run: write the label per tree, never paste one across cities.
+- Preflight clean (0 problems). Cost entry in data/agent-costs.json (session work, 0 tokens).
+- Not done: 59 READY leads still unwritten; new trees need a rich page in recovery mode.
+
 ## 2026-10-13 night run, late attempt: three best_time lines
 
 - Enrich pass palermo+tokyo+munich, by hand (only season gaps open): best_time on the Palermo silk floss tree (Sep to Nov flowers), the Munich fern-leaved beech (Oct to Nov colour), the Dachau wayside lime (Jun to Jul flowers). The other 10 gaps were left, recorded as 90-day dead ends. Preflight clean.
