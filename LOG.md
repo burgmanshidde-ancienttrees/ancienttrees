@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 session: the inbox answered; two Sardinian oaks from a botanist live
+
+**Live:** Sardinia 5 to 7 trees. The Cork Oak of Sa Tuppa (Orune) and the Downy Oak of Su Fundale (Talana), sent by Luisa Carta, curator of the Orto Botanico in Sassari, with Camarda (2020) as source, MASAF register ids, and her own photographs credited by name. Italian overlay done. Both flagged: Sa Tuppa's grazing land has no stated access status; Su Fundale's pin is approximate (her point and the register's are 78 m apart). Copenhagen FAQ and intro now say eight trees stand outside the city, not three (Hans Erik Lund's correction).
+
+**Mail:** eleven replies sent on Hidde's word (Mike Sullivan, Judith VHM, Luxembourg parcs, Peter Raggers, Hans Erik, Gröger, Ingar, Luisa, Sally Bunker, Simon Gillam of Friends of Cammo, Noeleen Smyth). Leads filed: Unterlappach lime (Munich north, asked Gröger where it stands), Cammo's 1669 oak and 1715 yew (asked Simon where).
+
+**Learned:** five reply corrections in drafts/HIS_VOICE.md; mailcheck now refuses asking a correspondent to measure anything.
+
+**Open from the mails:** Rainer Lippert's monumentale-eichen.de (compare with ours, his photos usable with name and link) is the richest unworked source; Bildeiche bei Albertshausen waits on a place with four trees; Freiburg Naturdenkmal list (public on freiburg.de); IVN Ede's tip to ask the municipality; Cammo ash "1720" sits in notes only.
+
 ## 2026-10-13 session: portrait photos stand whole on desktop
 
 **Tree page, desktop only: a portrait or square lead photo now stands at its own shape on the left, beside the name, facts, buttons and map.** Hidde, on the Munch-eika: portrait trees "really come out bad on desktop". 498 of 982 lead photos are portrait, and the 16:7 strip showed about 29 percent of a 2:3 photo. Benchmarked on the real sites (Unsplash and Wikipedia show a tall photo whole beside the text, Atlas Obscura uses an equal-height row, Airbnb crops; AllTrails behind a device check), three mockups shown, he picked A. Landscape (5:4 or wider) keeps the strip; phones and the app unchanged. Commit 5f6e0e2a6. Aside: Wikipedia now reports the Major Oak died (RSPB, June 2026); it is only a lead in data/leads/_tree-of-the-year.json and must not be picked up.
