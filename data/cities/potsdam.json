@@ -186,7 +186,8 @@
       "verified_sources": [
         "https://www.berlin.de/sen/uvk/_assets/natur-gruen/naturschutz/schutzgebiete/aktuelle-verfahren/ndvoe_anl1_201201.pdf",
         "https://www.ostdeutsches-baumarchiv.de/photosearch/eiche-jaegerhof-glienicke-berlin",
-        "berlin-naturdenkmale.json, no. 6-73/B"
+        "berlin-naturdenkmale.json, no. 6-73/B",
+        "https://www.ostdeutsches-baumarchiv.de/photosearch/eiche-jaegerhof-glienicke-berlin (circumference 566 cm at 1.3 m, measured 2023; Naturdenkmal per NDVO Berlin)"
       ],
       "access": "Free, open to the public. Volkspark Klein-Glienicke was opened to the public in the 1930s when Berlin acquired the estate; the Jägerhof and the ground around it are publicly accessible, high above the Havel-side path near the Krughorn",
       "transport": "Tram 93 from Potsdam Hauptbahnhof to the Glienicker Brücke stop, about 12 minutes, then roughly a 15-20 minute walk south along the park path to the Jägerhof",
@@ -204,7 +205,8 @@
         "name": "Naturdenkmal (Land Berlin), no. 6-73/B",
         "url": null
       },
-      "verify_notes": "Register number from Naturdenkmal (Land Berlin) no. 6-73/B (data/registers/berlin-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Naturdenkmal (Land Berlin) no. 6-73/B (data/registers/berlin-naturdenkmale.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 566
     },
     {
       "id": "pot_005",
@@ -224,7 +226,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (reproduces the city's Naturdenkmal list: no. 15, girth 685 cm, coordinates, Flurstueck 118/14)",
         "https://www.wikidata.org/wiki/Q106393691",
-        "https://www.inaturalist.org/observations/293834514 (observation 2025-06-29 at the spot)"
+        "https://www.inaturalist.org/observations/293834514 (observation 2025-06-29 at the spot)",
+        "https://www.potsdam.de/de/content/naturdenkmal-nr-15-stiel-eiche-im-schlosspark-sacrow"
       ],
       "access": "Free. Stands in the Schlosspark Sacrow, a public landscape park by the Havel (Lenne design); open in daylight. ",
       "transport": "By bus from central Potsdam to Sacrow, then on foot through the Schlosspark Sacrow to the oak.",
@@ -237,7 +240,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Register only (official Potsdam Naturdenkmal list via de.wikipedia reproduction), one source for species and girth. Girth 685 cm is the thickest of the Potsdam oak monuments, from the register's Umfang column, no measurement date given. The name '1000-jaehrige Eiche' is the register's own designation, NOT a measured age: do not state 1000 years as fact, say 'known as the thousand-year oak'. No age field in the register. Commons has its own category 'Tausendjaehrige Eiche (Sacrow)' and photographs (file 1000-jaehrige Eiche in Sacrow, 1.jpg), so a photograph is in reach. Alive: iNaturalist observation 2025-06-29 at the coordinate (RECENT per lifecheck; proves something photographed there, not the trunk). Note the register's neighbouring Sacrow oaks nos. 13 and 14 (600 and 575 cm, Krampnitzer Strasse) have swapped Commons file labels (ND 13/ND 14), so identity of those two is ambiguous; left as leads.",
-      "how_to_recognise": "You can recognise it by the trunk, 6.85 metres round, thicker than the two protected oaks a short walk away on the Krampnitzer Strasse. It stands in the Schlosspark Sacrow, by the Havel."
+      "how_to_recognise": "You can recognise it by the trunk, 6.85 metres round, thicker than the two protected oaks a short walk away on the Krampnitzer Strasse. It stands in the Schlosspark Sacrow, by the Havel.",
+      "official_register": {
+        "name": "Naturdenkmal Nr. 15 (Landeshauptstadt Potsdam), no. Naturdenkmal Nr. 15",
+        "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-15-stiel-eiche-im-schlosspark-sacrow"
+      }
     },
     {
       "id": "pot_006",
@@ -258,7 +265,9 @@
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (nos. 31 and 32, Flurstueck 692, girths 600 and 395 cm)",
         "https://www.wikidata.org/wiki/Q106393708",
         "https://www.wikidata.org/wiki/Q106393709",
-        "https://www.inaturalist.org/observations/373183774 (2026-06-18) and https://www.inaturalist.org/observations/373177043 (2026-06-18)"
+        "https://www.inaturalist.org/observations/373183774 (2026-06-18) and https://www.inaturalist.org/observations/373177043 (2026-06-18)",
+        "https://www.potsdam.de/de/content/naturdenkmal-nr-32-saeulen-eiche-auf-dem-bassinplatz",
+        "https://www.potsdam.de/de/content/naturdenkmal-nr-31-saeulen-eiche-auf-dem-bassinplatz"
       ],
       "access": "Free. A public city square in central Potsdam, open at all times.",
       "transport": "In central Potsdam, a short walk from the Brandenburger Tor.",
@@ -271,7 +280,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "FOLDED twin: register nos. 31 (52.401872, 13.062176, girth 600 cm) and 32 (52.40203, 13.06268, girth 395 cm) both on Flurstueck 692, about 40 m apart; shown as one stop, pin on no. 31. Register only, one source. Both are fastigiate (columnar) oaks, a cultivar, which is the point of them: an upright form of the English oak on a square. 600 cm girth is large for a fastigiate cultivar, which is a plain register figure, unverified by us (a girth like this on a columnar form is unusual; flagged in case it is a multi-stem measurement). No age in register; do not derive one. Alive: two iNaturalist observations dated 2026-06-18 at the two coordinates (RECENT). Photographs in reach on Commons (files named Naturdenkmal Nr. 31 / Nr. 32 Saeulen-Eiche auf dem Bassinplatz).",
-      "how_to_recognise": "You can recognise them by their shape: two narrow, upright oaks where you would expect broad crowns. They stand on Bassinplatz about 40 metres apart; the pin marks the thicker one, 6 metres round."
+      "how_to_recognise": "You can recognise them by their shape: two narrow, upright oaks where you would expect broad crowns. They stand on Bassinplatz about 40 metres apart; the pin marks the thicker one, 6 metres round.",
+      "official_register": {
+        "name": "Naturdenkmal Nr. 31 und Nr. 32 (Landeshauptstadt Potsdam), no. Naturdenkmal Nr. 31, Nr. 32",
+        "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-31-saeulen-eiche-auf-dem-bassinplatz"
+      }
     },
     {
       "id": "pot_007",
@@ -298,7 +311,8 @@
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (no. 53, Standort 'Weberplatz, an der Kirche vor der Sakristei', girth 380 cm)",
-        "https://www.wikidata.org/wiki/Q106393734"
+        "https://www.wikidata.org/wiki/Q106393734",
+        "https://www.potsdam.de/de/content/naturdenkmal-nr-53-winter-linde-babelsberg-nord"
       ],
       "access": "Free. On the public Weberplatz square beside the church; open at all times.",
       "transport": "In Babelsberg Nord, within walking distance of Babelsberg station.",
@@ -311,7 +325,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Register only, one source, flagged. Alive check weak: lifecheck returned OLD (2011) within the radius, and that Commons photo is of the square, not necessarily this trunk; no recent dated confirmation found, so the page should ask readers to confirm it still stands. The register's own place text 'an der Kirche vor der Sakristei' places it by the church, which is a clear recognition line. The church on the square is the Bohemian Protestant church (Weberplatz 'Boehmisches Dorf' Babelsberg, built for the Bohemian weaver colony); I did not source that history here, writer must not use it unsourced. Neighbouring register no. 52, a white mulberry (370 cm) at Weberplatz / corner Lutherstrasse (52.394441, 13.095122), is about 70 m away and also a candidate (lifecheck OLD 2011); kept as a lead, not folded.",
-      "how_to_recognise": "You can recognise it by where it stands: directly in front of the sacristy of the church on Weberplatz, a lime 3.8 metres round. The square's other protected tree, a white mulberry, is 70 metres away at the Lutherstrasse corner."
+      "how_to_recognise": "You can recognise it by where it stands: directly in front of the sacristy of the church on Weberplatz, a lime 3.8 metres round. The square's other protected tree, a white mulberry, is 70 metres away at the Lutherstrasse corner.",
+      "official_register": {
+        "name": "Naturdenkmal Nr. 53 (Landeshauptstadt Potsdam), no. Naturdenkmal Nr. 53",
+        "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-53-winter-linde-babelsberg-nord"
+      }
     },
     {
       "id": "pot_008",
@@ -330,7 +348,8 @@
       "story": "This oak has a theatre for a neighbour. It stands on the grounds of the Schiffbauergasse, Potsdam's cultural quarter on the shore of the Tiefer See, where the evening crowd comes for a play, a meal or the lakeside walk and can easily walk straight past a protected tree.\n\nThe register lists it as natural monument number 29, a pedunculate oak measured at 480 centimetres round. Nearly five metres of trunk puts it among the larger oaks the city protects, though well behind the thousand-year oak at Sacrow, which tapes 685. Nobody has recorded its age, and we have found no source that tries, so this page leaves the number empty rather than inventing one.\n\nThere is a second gap, and it matters more. The most recent dated picture we can find from this spot is from 2009, and it looks out over the lake rather than at the trunk. The oak is still on the register, but we cannot show you recent proof that it stands, and a register records what was protected, not what survived.\n\nThe grounds themselves are open to the public, so checking is easy: come for the lake or the theatre and look for the big oak on the way. If it is there, or if it is not, tell us. Either answer makes this page better.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (no. 29, girth 480 cm, Flurstueck 899)",
-        "https://www.wikidata.org/wiki/Q106393707"
+        "https://www.wikidata.org/wiki/Q106393707",
+        "https://www.potsdam.de/de/content/naturdenkmal-nr-29-stiel-eiche-auf-dem-gelaende-der-schiffbauergasse"
       ],
       "access": "Free. Stands on the grounds of the Schiffbauergasse cultural quarter on the Tiefer See, which is open to the public (theatre, restaurants, lakeside walk); not checked against opening times of individual venues.",
       "transport": "On the Tiefer See waterfront in the Berliner Vorstadt, at the Schiffbauergasse cultural quarter.",
@@ -343,7 +362,11 @@
       "curation_status": "flagged",
       "location_precision": "confirmed",
       "notes": "Register only, one source. Alive check weak: lifecheck returned OLD (2009) and the matched Commons file is a view of the Tiefer See, not clearly this trunk, so recent proof of life is missing and the page should ask readers. Commons has a dedicated photograph (Naturdenkmal Nr 29 Stiel-Eiche auf dem Gelaende der Schiffbauergasse.jpg), so a photograph is in reach. Pin is the register coordinate; I did not check it against imagery, so call it confirmed only because it is the register's tree-level point. If the writer or a later pass finds the point lands off the crown, downgrade to approximate. No age in register.",
-      "how_to_recognise": "You can recognise it as the large oak on the Schiffbauergasse grounds by the Tiefer See, 4.8 metres round; the pin is the register's own point for this tree."
+      "how_to_recognise": "You can recognise it as the large oak on the Schiffbauergasse grounds by the Tiefer See, 4.8 metres round; the pin is the register's own point for this tree.",
+      "official_register": {
+        "name": "Naturdenkmal Nr. 29 (Landeshauptstadt Potsdam), no. Naturdenkmal Nr. 29",
+        "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-29-stiel-eiche-auf-dem-gelaende-der-schiffbauergasse"
+      }
     },
     {
       "id": "pot_009",
@@ -363,7 +386,8 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam (no. 19, three oaks, girths 460, 515 and 590 cm, three coordinates)",
         "https://www.wikidata.org/wiki/Q106393695",
-        "https://commons.wikimedia.org/wiki/File:Stiel-Eichen_am_Jungfernsee_3.jpg (dated 2025-04-27, lifecheck RECENT)"
+        "https://commons.wikimedia.org/wiki/File:Stiel-Eichen_am_Jungfernsee_3.jpg (dated 2025-04-27, lifecheck RECENT)",
+        "https://www.potsdam.de/de/content/naturdenkmal-nr-19-stiel-eichen-am-jungfernsee"
       ],
       "access": "Free to see from the Bertinistrasse and the shore path by the lake. The register places the three oaks on three separate land parcels, and whether any of them stands inside a fenced private plot has not been confirmed, so look from the street and the path.",
       "transport": "On the Jungfernsee shore north of the centre, along the Bertinistrasse.",
@@ -376,7 +400,11 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "Register only, one source. Three oaks, register points 52.429927,13.064992 / 52.429316,13.064753 / 52.428601,13.064674, spread over about 150 m along the shore: a trio read as one stop, not a single trunk. Girths 460, 515 and 590 cm, but the register does not say which point carries which girth, so the thickest cannot be pinned individually: pin is the northernmost point and precision is approximate for that reason. Alive: Commons photograph dated 2025-04-27 of the trio (RECENT). A photograph is in reach on Commons (Stiel-Eichen am Jungfernsee).",
-      "how_to_recognise": "You can recognise them as three large oaks spread over about 150 metres of the Jungfernsee shore by the Bertinistrasse. The pin is the northernmost; the thickest, 5.9 metres round, is one of the three."
+      "how_to_recognise": "You can recognise them as three large oaks spread over about 150 metres of the Jungfernsee shore by the Bertinistrasse. The pin is the northernmost; the thickest, 5.9 metres round, is one of the three.",
+      "official_register": {
+        "name": "Naturdenkmal Nr. 19 (Landeshauptstadt Potsdam), no. Naturdenkmal Nr. 19",
+        "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-19-stiel-eichen-am-jungfernsee"
+      }
     }
   ]
 }

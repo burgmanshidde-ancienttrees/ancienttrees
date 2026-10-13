@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "potsdam",
+    "kind": "enrich",
+    "tokens": 66000,
+    "trees": 0,
+    "note": "enrichment: City of Potsdam per-tree Naturdenkmal pages for 5 trees (Nr. 15, 19, 29, 31/32, 53); Jägerhof oak girth 566 cm from Ostdeutsches Baumarchiv; Berlin 6-99/B, 6-100/B, 6-105/B girth not found (Senate PDF unread), Jungfernsee pin open; 8 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "bucharest",
     "kind": "enrich",
     "tokens": 47000,
