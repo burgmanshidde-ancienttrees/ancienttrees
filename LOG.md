@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 session: app polish from Hidde's test
+
+- Map: "7 trees you can see" is gone again at full height (his 10-10 ruling; a 10-12 change had brought it back). The strip stays as the grip; the count still shows when the sheet is low.
+- Discover Want to visit: the grey bookmark tiles are no longer tappable; "Find trees near you" under them stays.
+- The line explaining the bookmark is gone on Discover, app My trees and web My trees. Signed out now reads "Sign in to keep a list of trees you want to visit."
+- Live on main (ce89a1828, d7023b1b6). Seen in the simulator; not yet on his phone.
+
 ## 2026-10-13 session: a portrait photograph on a phone (web and app)
 
 **Product:** on a phone a portrait lead photograph now stands at 4:5 instead of being cut to 3:2, and a tree's other photographs are swiped inside the lead with a "1 / 2" count in the corner instead of sitting in a strip under it (Hidde picked A2 of the mockup; CONVENTIONS.md "A portrait photograph as the lead on a phone"). On the Munch-eika the page now shows 83 percent of the tree instead of 44, and the name, place and the start of the facts are on the first screen. Landscape photographs and desktop are unchanged. One rule for both surfaces: `heroFrame()` in images.ts, sent to the app in the feed as `photo.frame`; an app build older than that, or a feed without it, keeps the 300 point hero.
