@@ -19,6 +19,14 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - NOT done, on purpose: `season_backfill.py` would have written 309 best_time lines, but 78 limes would all read "June to July, when it flowers" and 106 oaks an acorn line (his 08-20 ruling: acorns are not a highlight). Templated text across many pages is the shape Google demoted. Left undone; the backfill needs an oak exclusion and varied labels before it runs again.
 - Chart only, no new per-tree text, so do not expect it to move Google much; it tells a visitor when to go.
 
+## 2026-10-13 17:18 window (night run): enrichment, three cities
+
+Visits last 7 days: 1770 (2380 views). Rung 1 empty (0 sightings). Rung 2: ios.yml and smoke.yml only show runs cancelled or in progress, superseded by pushes; no failing log to act on. Rung 4 under recovery mode: enrich.py on the next three cities.
+- San Diego: Kauri height 20 m (a horticulturist's estimate, said so), small named sites for the Tipu corner and the Palm Canyon fig. 3 of 6 trees improved; no authority per-tree register page exists.
+- Kamakura: city natural-monument list ids on 5 trees, access lines (price, hours) on 4 temples, Kenchoji girth 650 cm and height 13 m (second-hand from the Meiboku 100 signboard). The Goryo and Kosokuji location_site entries were refused by the script (a source needs a URL) and stay open.
+- Pisa: access lines on all four botanical garden trees (4 EUR; museum closed after the August 2026 earthquake); girth or height for three trees from Italian Wikipedia, weaker than a register or plaque, so recheck if authority-only figures are wanted.
+- Not done: no write pass (only held trees wait), no photographs. Subagent tokens roughly 52k, 85k, 44k.
+
 ## 2026-10-13 session: app polish from Hidde's test
 
 - Map: "7 trees you can see" is gone again at full height (his 10-10 ruling; a 10-12 change had brought it back). The strip stays as the grip; the count still shows when the sheet is low.

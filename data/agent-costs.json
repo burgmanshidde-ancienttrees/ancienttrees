@@ -11435,6 +11435,30 @@
     "date": "2026-10-13",
     "target": "san-diego",
     "kind": "enrich",
+    "tokens": 52000,
+    "trees": 0,
+    "note": "second pass: Kauri height, two small named sites"
+   },
+   {
+    "date": "2026-10-13",
+    "target": "kamakura",
+    "kind": "enrich",
+    "tokens": 85000,
+    "trees": 0,
+    "note": "register ids on 5, access on 4, one measurement"
+   },
+   {
+    "date": "2026-10-13",
+    "target": "pisa",
+    "kind": "enrich",
+    "tokens": 44000,
+    "trees": 0,
+    "note": "access on 4, measurements on 3 from Italian Wikipedia"
+   },
+   {
+    "date": "2026-10-13",
+    "target": "san-diego",
+    "kind": "enrich",
     "tokens": 43000,
     "trees": 0,
     "note": "enrichment: nothing found (1996 fig measurements without a breast-height statement, no register records); thin pass, sdg_005 and sdg_006 not researched; gaps left open"
