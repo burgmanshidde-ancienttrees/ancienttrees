@@ -11,7 +11,6 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-
 ## 2026-10-13 session: a reader's Paris plane goes live
 
 **New tree: par_034, The Great Lawn Plane of Parc Montsouris**, from a reader's app photograph sent on 10-05. The night run had filed it as a lead on the girth alone ("photograph not viewed"); the photograph shows a whole plane with a heart-shaped crown, Cadiz standard. The Ville de Paris tree inventory (les-arbres, record 113345, Grande pelouse, 480 cm, 25 m) sits 33 m from the reader's GPS fix, so the pin is confirmed from the inventory and the record is the written source. Not par_009 (670 cm, 190 m east). Age left open, French overlay added, Paris counts now 32. Deploy dispatched. Lesson for the runs: a lead verdict written without opening the photograph missed the best reader tree of the week.

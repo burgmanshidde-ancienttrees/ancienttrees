@@ -217,7 +217,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 12 | Alicante | 11.19 | 77,454 | 21 | 4 | 2 | 44 | 30 | measured |
 | 13 | Alkmaar | 11.19 | - | 11 | - | 2 | 79 | 20 | measured |
 | 14 | Barcelona | 11.19 | 346,477 | 56 | 14 | 7 | 180 | 60 | measured |
-| 15 | Paris | 14.92 | 524,268 | 31 | 11 | 4 | 129 | 60 | measured |
+| 15 | Paris | 14.92 | 524,268 | 32 | 12 | 4 | 129 | 60 | measured |
 | 16 | Asheville | 20.89 | - | - | - | - | - | 20 | predicted (travel demand) |
 | 17 | Long Beach | 20.48 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 18 | Little Rock | 20.40 | - | - | - | - | - | 20 | predicted (travel demand) |
@@ -239,7 +239,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 34 | Lisbon | 7.46 | 201,877 | 36 | 17 | 3 | 67 | 30 | measured |
 | 35 | Milan | 7.46 | 212,705 | 30 | 14 | 3 | 25 | 60 | measured |
 | 36 | Monterey | 14.92 | - | 3 | 1 | - | - | 10 | measured |
-| 37 | Roosendaal | 7.46 | - | 6 | - | 1 | 116 | 20 | measured |
+| 37 | Roosendaal | 7.46 | - | 8 | - | 1 | 133 | 20 | measured |
 | 38 | Sorrento | 7.46 | 40,049 | 7 | - | 1 | 20 | 10 | measured |
 | 39 | Saint Petersburg | 14.83 | - | - | - | - | - | 100 | predicted (travel demand) |
 | 40 | St. Louis | 14.80 | - | - | - | - | - | 30 | predicted (travel demand) |
