@@ -44,6 +44,13 @@ jobs:
       - name: Install the one dependency App Store Connect auth needs
         run: pip install --quiet cryptography
 
+      # The deploy recomputes data/noindex.json before every build but never
+      # commits it, so the committed copy froze on 2026-10-09 and the digest's
+      # "returned to Google's index" row read 0 against a week-old snapshot of
+      # itself. Recomputed here and committed with the entry, one copy a day.
+      - name: Recompute which pages Google may index
+        run: python3 scripts/thin_pages.py || true
+
       - name: Build the digest entry
         env:
           CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
@@ -198,7 +205,7 @@ jobs:
           git add LOG.md CURATION.md archive/ 2>/dev/null || true
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
             data/cities data/backlinks.json data/photo-autumn.json \
-            data/city-coords.json data/research/*-register-candidates.json 2>/dev/null || \
+            data/city-coords.json data/research/*-register-candidates.json data/noindex.json data/noindex.md 2>/dev/null || \
             git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/backlinks.json
           if git diff --cached --quiet; then
             echo "No new entry today."

@@ -60,6 +60,7 @@ REGS = os.path.join(ROOT, "data", "registers")
 
 NEAR_M = 5
 FAR_M = 30
+OWN_M = 1   # a row this close to one of our pins is that tree's own row
 GIRTH_CM = (50, 3000)
 HEIGHT_M = (3, 120)
 
@@ -304,8 +305,33 @@ def near(g, la, ln):
             yield from g.get((round(k0 + i / 1000, 3), round(k1 + j / 1000, 3)), [])
 
 
-def match_tree(t, g):
-    """-> (matches [(row, d)] in priority order, skips [str], dead_warnings [str])."""
+def owners(docs, g):
+    """(register slug, row id) -> the ids of our trees whose pin sits within
+    OWN_M of that row: the row's coordinate is that tree's own pin."""
+    out = {}
+    for d in docs.values():
+        for t in d.get("trees", []):
+            loc = t.get("location") or {}
+            la, ln = loc.get("latitude"), loc.get("longitude")
+            if not la or not ln:
+                continue
+            for r in near(g, la, ln):
+                if metres(la, ln, r["lat"], r["lng"]) <= OWN_M:
+                    out.setdefault((r["slug"], r["id"]), set()).add(t["id"])
+    return out
+
+
+def match_tree(t, g, owned=None):
+    """-> (matches [(row, d)] in priority order, skips [str], dead_warnings [str]).
+
+    TWINS, ONE TO ONE (2026-10-13). Two of our trees a few metres apart, each
+    pin on its own register row (Nuremberg's two Kontumazgarten planes, the
+    Paczoski and Kulesza planes in Poznan, Vienna's two Kugeltrompetenbaume)
+    came out ambiguous for both, because each saw the other's row in range. A
+    row that sits on ANOTHER tree's pin (within OWN_M) belongs to that tree and
+    is not a candidate for this one. Nothing else changes: a row nobody owns
+    still makes two candidates a skip."""
+    owned = owned or {}
     loc = t.get("location") or {}
     la, ln = loc.get("latitude"), loc.get("longitude")
     if not la or not ln:
@@ -323,6 +349,9 @@ def match_tree(t, g):
             continue
         if r["dead"]:
             dead.append(f"{r['slug']} no. {r['id']} ({d:.0f} m) is marked dead or gone in the register")
+            continue
+        own = owned.get((r["slug"], r["id"])) or set()
+        if own and t.get("id") not in own:
             continue
         per.setdefault(r["slug"], []).append((r, d))
     matches, skips = [], []
@@ -372,6 +401,7 @@ def run(city=None, write=False, verbose=False, quiet=False):
             if g:
                 genera.add(g)
     g = grid(load(genera))
+    owned = owners(docs, g)
     today = datetime.date.today().isoformat()
     tot = {"trees": 0, "enriched": 0, "register": 0, "girth_cm": 0, "height_m": 0, "ambiguous": 0, "dead": 0}
     skipped, deadlist, lines = [], [], []
@@ -383,7 +413,7 @@ def run(city=None, write=False, verbose=False, quiet=False):
         touched = False
         for t in d.get("trees", []):
             tot["trees"] += 1
-            matches, skips, dead = match_tree(t, g)
+            matches, skips, dead = match_tree(t, g, owned)
             if dead and not matches:
                 tot["dead"] += 1
                 deadlist.append(f"{slug}/{t['id']} {t['name']}: " + "; ".join(dead))

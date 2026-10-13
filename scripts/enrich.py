@@ -160,9 +160,19 @@ def city_trees(slug):
 
 
 def city_rows():
+    """Every published city with open gaps: the proven cities first, by their
+    pre-demotion impressions, then every other city, most gaps first.
+
+    Widened 2026-10-13 (Hidde: "improve the night runs on the enriching
+    part"). The queue had read the frozen roster only, and with a six-gap
+    floor per pass it said "nothing to do" while 1,453 gaps stood open across
+    the site, 1,321 of them outside the roster and the rest stranded three or
+    four to a city. A finished page returns to Google wherever it is
+    (findable.enriched()), so the roster sets the order, not the scope."""
     led = ledger()
-    rows = []
+    rows, seen = [], set()
     for slug, v in roster():
+        seen.add(slug)
         d, trees = city_trees(slug)
         if not trees:
             continue
@@ -170,7 +180,43 @@ def city_rows():
         n = sum(len(x) for x in g.values())
         if n:
             rows.append((slug, v.get("impressions", 0), sum(1 for t in trees if has_photo(t)), len(trees), n, g))
-    return rows
+    rest = []
+    for f in sorted(glob.glob(os.path.join(CITIES, "*.json"))):
+        slug = os.path.basename(f)[:-5]
+        if slug in seen:
+            continue
+        d, trees = city_trees(slug)
+        if not trees:
+            continue
+        g = {t["id"]: open_gaps(t, led) for t in trees}
+        n = sum(len(x) for x in g.values())
+        if n:
+            rest.append((slug, 0, sum(1 for t in trees if has_photo(t)), len(trees), n, g))
+    rest.sort(key=lambda r: -r[4])
+    return rows + rest
+
+
+def next_batch(rows):
+    """The cities the next pass takes: the first city with six gaps or more on
+    its own, else consecutive small cities in queue order until the pass holds
+    at least six gaps, never more than BRIEF_MAX trees. One pass has a fixed
+    cost (CLAUDE.md, no pass under six expected candidates), so three proven
+    cities with two gaps each make one pass rather than none."""
+    if not rows:
+        return []
+    if rows[0][4] >= 6:
+        return [rows[0][0]]
+    picked, gaps_n, trees_n = [], 0, 0
+    for slug, imp, ix, n_trees, n, g in rows:
+        t_open = sum(1 for x in g.values() if x)
+        if picked and trees_n + t_open > BRIEF_MAX:
+            break
+        picked.append(slug)
+        gaps_n += n
+        trees_n += t_open
+        if gaps_n >= 6 and trees_n >= BRIEF_MAX // 2:
+            break
+    return picked if gaps_n >= 6 else []
 
 
 def show(rows, limit=None):
@@ -206,46 +252,53 @@ def status():
 
 # ---- the brief ---------------------------------------------------------------
 
-def brief(slug):
-    d, trees = city_trees(slug)
-    if d is None:
-        sys.exit(f"no such city: {slug}")
-    # The mechanical half first (2026-10-12): every register row we already
-    # hold is matched by script and written, so the brief below carries only
-    # what needs an agent. Ambiguous matches travel as candidates to choose from.
+def brief(arg):
+    """One pass, one city or several joined with '+' (next_batch())."""
+    slugs = [s for s in arg.split("+") if s]
     import register_match
-    rm = register_match.run(city=slug, write=True, quiet=True)
-    if rm["enriched"]:
-        d, trees = city_trees(slug)
-    led = ledger()
-    items = []
-    # Indexed trees first (their page is already in Google and gets better),
-    # then the rest, which RETURN to Google the day they are finished.
-    for t in sorted(trees, key=lambda t: (not has_photo(t), not findable(t))):
-        g = open_gaps(t, led)
-        if not g:
-            continue
-        loc = t.get("location") or {}
-        items.append({"id": t["id"], "name": t["name"], "species": t.get("species"),
-                      "address": loc.get("address"),
-                      "lat": loc.get("latitude"), "lng": loc.get("longitude"),
-                      "location_precision": t.get("location_precision"),
-                      "indexed": has_photo(t),
-                      "access": t.get("access"), "gaps": g,
-                      "sources": t.get("verified_sources") or [],
-                      "season_file": f"data/phenology/{species_slug(t)}.json" if "season" in g else None})
-        if t["id"] in rm["skips_by_id"] and ({"register", "measurement"} & set(g)):
-            items[-1]["register_candidates"] = rm["skips_by_id"][t["id"]]
-        if len(items) >= BRIEF_MAX:
-            break
+    items, names = [], []
     os.makedirs(OUT, exist_ok=True)
-    with open(os.path.join(OUT, f"{slug}.brief.json"), "w", encoding="utf-8") as fh:
-        json.dump({"city": slug, "date": datetime.date.today().isoformat(),
-                   "trees": {i["id"]: i["gaps"] for i in items}}, fh, indent=1)
-    if rm["enriched"]:
-        print(f"register_match.py filled {rm['enriched']} tree(s) of {slug} from data/registers/ before this brief "
-              f"(register {rm['register']}, girth {rm['girth_cm']}, height {rm['height_m']}); commit them with the pass.")
-    print(f"""ENRICHMENT PASS: {d['city']} ({len(items)} trees with open gaps; indexed ones first). Use the verify agent.
+    for slug in slugs:
+        d, trees = city_trees(slug)
+        if d is None:
+            sys.exit(f"no such city: {slug}")
+        # The mechanical half first (2026-10-12): every register row we already
+        # hold is matched by script and written, so the brief below carries only
+        # what needs an agent. Ambiguous matches travel as candidates to choose from.
+        rm = register_match.run(city=slug, write=True, quiet=True)
+        if rm["enriched"]:
+            d, trees = city_trees(slug)
+            print(f"register_match.py filled {rm['enriched']} tree(s) of {slug} from data/registers/ before this brief "
+                  f"(register {rm['register']}, girth {rm['girth_cm']}, height {rm['height_m']}); commit them with the pass.")
+        led = ledger()
+        mine = []
+        # Indexed trees first (their page is already in Google and gets better),
+        # then the rest, which RETURN to Google the day they are finished.
+        for t in sorted(trees, key=lambda t: (not has_photo(t), not findable(t))):
+            if len(items) + len(mine) >= BRIEF_MAX:
+                break
+            g = open_gaps(t, led)
+            if not g:
+                continue
+            loc = t.get("location") or {}
+            mine.append({"id": t["id"], "city": d.get("city"), "name": t["name"], "species": t.get("species"),
+                         "address": loc.get("address"),
+                         "lat": loc.get("latitude"), "lng": loc.get("longitude"),
+                         "location_precision": t.get("location_precision"),
+                         "indexed": has_photo(t),
+                         "access": t.get("access"), "gaps": g,
+                         "sources": t.get("verified_sources") or [],
+                         "season_file": f"data/phenology/{species_slug(t)}.json" if "season" in g else None})
+            if t["id"] in rm["skips_by_id"] and ({"register", "measurement"} & set(g)):
+                mine[-1]["register_candidates"] = rm["skips_by_id"][t["id"]]
+        # One brief file per city, so --apply and --done dead-end per city.
+        with open(os.path.join(OUT, f"{slug}.brief.json"), "w", encoding="utf-8") as fh:
+            json.dump({"city": slug, "date": datetime.date.today().isoformat(),
+                       "trees": {i["id"]: i["gaps"] for i in mine}}, fh, indent=1)
+        items += mine
+        names.append(d["city"])
+    slug = "+".join(slugs)
+    print(f"""ENRICHMENT PASS: {", ".join(names)} ({len(items)} trees with open gaps; indexed ones first). Use the verify agent.
 
 Fill what each tree page lacks, from sources you actually open. Never invent: a gap
 you cannot close stays a gap, and that is a finished answer (it is recorded as a dead
@@ -407,7 +460,8 @@ def apply(path):
     slug = os.path.basename(path).split(".")[0]
     led = ledger()
     today = datetime.date.today().isoformat()
-    n_dead = record_dead_ends(slug, led, today) if os.path.exists(os.path.join(CITIES, slug + ".json")) else 0
+    n_dead = sum(record_dead_ends(s, led, today) for s in slug.split("+")
+                 if os.path.exists(os.path.join(CITIES, s + ".json")))
     save_ledger(led)
     for n in notes:
         print("NOTE " + n)
@@ -417,7 +471,7 @@ def apply(path):
 
 def done(slug):
     led = ledger()
-    n = record_dead_ends(slug, led, datetime.date.today().isoformat())
+    n = sum(record_dead_ends(s, led, datetime.date.today().isoformat()) for s in slug.split("+") if s)
     save_ledger(led)
     print(f"{n} gap(s) on the briefed trees of {slug} recorded as dead ends for {DEAD_END_DAYS} days; the rest of the city stays in the queue.")
 
@@ -435,12 +489,17 @@ def main():
     rows = city_rows()
     if "--next" in a:
         # No pass under six gaps (CLAUDE.md, the assembly line): a pass has a fixed cost.
-        rows = [r for r in rows if r[4] >= 6]
-        if rows:
-            slug, imp, ix, n_trees, n, g = rows[0]
-            print(f"enrich next: {slug} ({n} open gaps on {n_trees} trees, {ix} indexed). python3 scripts/enrich.py --brief {slug}")
+        # Small cities travel together (next_batch()).
+        pick = next_batch(rows)
+        if pick:
+            by = {r[0]: r for r in rows}
+            n = sum(by[s][4] for s in pick)
+            arg = "+".join(pick)
+            what = "proven" if by[pick[0]][1] else "not on the proven roster"
+            print(f"enrich next: {arg} ({n} open gaps in {len(pick)} cit{'y' if len(pick) == 1 else 'ies'}, {what}). "
+                  f"python3 scripts/enrich.py --brief {arg}  (claim each city; answer to out/enrich/{arg}.answer.json)")
         else:
-            print("enrich: nothing to do on the proven cities")
+            print("enrich: nothing to do anywhere")
         return
     show(rows)
 
