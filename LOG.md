@@ -16,7 +16,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Map: "7 trees you can see" is gone again at full height (his 10-10 ruling; a 10-12 change had brought it back). The strip stays as the grip; the count still shows when the sheet is low.
 - Discover Want to visit: the grey bookmark tiles are no longer tappable; "Find trees near you" under them stays.
 - The line explaining the bookmark is gone on Discover, app My trees and web My trees. Signed out now reads "Sign in to keep a list of trees you want to visit."
-- Live on main (ce89a1828, d7023b1b6). Seen in the simulator; not yet on his phone.
+- Discover's new order (his yes): hero, at their best now, cities, the records, lists with an opinion, countries, want to visit, ambassador, species, islands, walks, growing card, more trees near you.
+- Sign in with Apple and the emailed sign-in link failed in Xcode Run builds only: Debug had no entitlements since 08-20 (free-account workaround). Debug carries them again. Apple works in App Store builds (11 Apple accounts since 09-02; Google 14, email 5). The email link landing in the app after Supabase's redirect is still unproven on a real phone.
+- Apple stays first on the sign-in sheet (his ok).
+- Live on main (ce89a1828, d7023b1b6, e89bd4523 and the order commit). Seen in the simulator; not yet on his phone.
 
 ## 2026-10-13 session: a portrait photograph on a phone (web and app)
 

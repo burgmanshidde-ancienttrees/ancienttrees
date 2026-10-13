@@ -722,6 +722,9 @@ struct HomeView: View {
         .buttonStyle(.plain)
     }
 
+    /// THE ORDER (Hidde, 2026-10-13): finding first (what is at its best,
+    /// the cities, then why trees are special: the records and the lists),
+    /// your own list and the asks after, the index rows last.
     @ViewBuilder private var shelves: some View {
         if deck.best.count >= 3 {
             section("At their best now") { tileShelf(deck.best) }
@@ -729,12 +732,22 @@ struct HomeView: View {
 
         cityShelf
 
-        // The open seat of the city you are standing in, under the cities and
-        // well away from "Add a tree" (Hidde, 2026-10-10: "dont put ambassador
-        // cta and add tree cta below each other").
-        if let h = deck.here, catalogue.facets.ambassadors(city: h.slug).isEmpty,
-           !catalogue.facets.seated(city: h.slug) {
-            AmbassadorWantedRow(place: h.name).padding(.horizontal, 16)
+        if deck.records.count == 3 {
+            section("The records") {
+                shelf {
+                    ForEach(deck.records, id: \.label) { r in tile(r.tree, r.label, to: r.route) }
+                }
+            }
+        }
+
+        if deck.lists.count >= 3 {
+            section("Lists with an opinion") {
+                shelf {
+                    ForEach(deck.lists, id: \.collection.slug) { l in
+                        tile(l.face, l.collection.title, to: .collection(l.collection.slug))
+                    }
+                }
+            }
         }
 
         if !deck.countries.isEmpty {
@@ -753,14 +766,12 @@ struct HomeView: View {
         wantToVisitFull
         wantToVisitEmpty.id("discover-want")
 
-        if deck.islands.count >= 3 {
-            section("Tree islands") {
-                shelf {
-                    ForEach(deck.islands.prefix(6), id: \.slug) { c in
-                        if let face = catalogue.face(city: c.slug) { tile(face, c.name, to: .city(c.slug)) }
-                    }
-                }
-            }
+        // The open seat of the city you are standing in, after your own list
+        // and well away from "Add a tree" (Hidde, 2026-10-10: "dont put
+        // ambassador cta and add tree cta below each other").
+        if let h = deck.here, catalogue.facets.ambassadors(city: h.slug).isEmpty,
+           !catalogue.facets.seated(city: h.slug) {
+            AmbassadorWantedRow(place: h.name).padding(.horizontal, 16)
         }
 
         if !deck.species.isEmpty {
@@ -768,19 +779,11 @@ struct HomeView: View {
                 .id("discover-species")
         }
 
-        if deck.records.count == 3 {
-            section("The records") {
+        if deck.islands.count >= 3 {
+            section("Tree islands") {
                 shelf {
-                    ForEach(deck.records, id: \.label) { r in tile(r.tree, r.label, to: r.route) }
-                }
-            }
-        }
-
-        if deck.lists.count >= 3 {
-            section("Lists with an opinion") {
-                shelf {
-                    ForEach(deck.lists, id: \.collection.slug) { l in
-                        tile(l.face, l.collection.title, to: .collection(l.collection.slug))
+                    ForEach(deck.islands.prefix(6), id: \.slug) { c in
+                        if let face = catalogue.face(city: c.slug) { tile(face, c.name, to: .city(c.slug)) }
                     }
                 }
             }
