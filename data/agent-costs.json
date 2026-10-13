@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "bad-homburg",
+    "kind": "enrich",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "enrichment: the city's own page on the Koenigsfluegel cedars as register URL with a 6.40 m trunk circumference (height unstated on the page); no authority record for the dawn redwood, three oaks or plane (no Schlosspark Naturdenkmal on the Wikipedia list; Hessen Natureg and Wikidata not reached); 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "modena",
     "kind": "enrich",
     "tokens": 53000,
