@@ -463,9 +463,9 @@ REQUEST_BODY = (
     "Here is the list as it stands:\n{listlink}\n\n"
     "You could really help by:\n"
     "- checking the list\n"
-    "- adding or removing trees\n"
+    "- telling us which trees to add or remove\n"
     "- helping us get photographs of the trees\n\n"
-    "Whatever you have time for is welcome, just reply to this mail.\n\n"
+    "Whatever you have time for is welcome. Just reply to this mail.\n\n"
     "Thanks again for your support,\nAncient Trees\n"
 )
 
@@ -573,15 +573,15 @@ def requests_scan(send):
 HEADS_UP_SUBJECT = "New on the {place} list"
 HEADS_UP_BODY = (
     "Hi,\n\n"
-    "A heads-up, since you look after {place} for us: {what} on the list since we last wrote.\n"
+    "A heads-up, since you look after {place} for us: {what} joined the list since we last wrote.\n"
     "{links}\n\n"
-    "Thanks again for your support. You could really help by:\n"
+    "You could really help by:\n"
     "- checking {them} and the rest of the list\n"
-    "- adding or removing trees\n"
+    "- telling us which trees to add or remove\n"
     "- helping us get photographs of the trees\n\n"
     "Just reply to this mail. The full list is here:\n{listlink}\n"
     "{appline}\n"
-    "Thanks,\nAncient Trees\n"
+    "Thanks again for your support,\nAncient Trees\n"
 )
 # Every outbound mail carries the App Store link (Hidde, 2026-09-03, enforced
 # by scripts/mailcheck.py), except to somebody who has said they cannot use
@@ -663,8 +663,8 @@ def heads_up(send):
         who = e.get("display_name") or (e.get("user_id") or "?")[:8]
         names = [trees[t] for t in live]
         shown = names[:12]
-        what = (f"one new tree, {shown[0]}, is" if len(live) == 1
-                else f"{len(live)} new trees are")
+        what = (f"one new tree, {shown[0]}, has" if len(live) == 1
+                else f"{len(live)} new trees have")
         links = "\n".join(f"{trees[t]}: {BASE_URL}{urls[t]}" for t in live[:12])
         if len(live) > 12:
             links += f"\nand {len(live) - 12} more on the list"
