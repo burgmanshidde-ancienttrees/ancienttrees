@@ -544,7 +544,13 @@ def main():
                 print("HOLD reply for row %s: mailcheck says:\n%s"
                       % (r["id"], report))
                 continue
-            jobs.append((r, "About what you sent us: %s" % (r.get("tree") or
+            # A tree sent from the app carries the sighting's id in `tree`, and
+            # a subject reading "About what you sent us: D9C08351-03D1-..." is
+            # a database talking (seen 2026-10-13, on the Montsouris reply).
+            thing = (r.get("tree") or "").strip()
+            if re.fullmatch(r"[0-9A-Fa-f-]{36}", thing):
+                thing = "your tree in %s" % r["city"] if r.get("city") else "your tree"
+            jobs.append((r, "About what you sent us: %s" % (thing or
                          r.get("city") or "your tip"), r["reply_text"],
                          "replied_at"))
 
