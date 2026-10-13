@@ -533,7 +533,15 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "late April, when the old pear is a froth of white blossom",
+        "kind": "flowers"
+      }
     }
   ],
   "oldest_tree_id": "bos_001"

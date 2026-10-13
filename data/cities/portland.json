@@ -857,7 +857,15 @@
       },
       "photos": [],
       "height_m": 9.4,
-      "verify_notes": "Height from City of Portland Heritage Trees (Portland Parks & Recreation) no. 290 (data/registers/portland-heritage-trees.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Height from City of Portland Heritage Trees (Portland Parks & Recreation) no. 290 (data/registers/portland-heritage-trees.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "April, when the old apple tree is in spring blossom",
+        "kind": "flowers"
+      }
     },
     {
       "id": "ptl_023",
