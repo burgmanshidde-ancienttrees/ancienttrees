@@ -627,12 +627,16 @@
   {
    "name": "Winter-Linde bei Unterlappach (Dachau county)",
    "status": "lead",
-   "why": "Reader tip by mail 2026-10-12 from a botanist at SNSB (Staatliche Naturwissenschaftliche Sammlungen Bayerns), in reply to our missing-tree ask, as an old tree north of Munich. Not yet checked against the Bavarian Naturdenkmal register; needs a source, a coordinate and a life check."
+   "why": "Reader tip by mail 2026-10-12 from a botanist at SNSB (Staatliche Naturwissenschaftliche Sammlungen Bayerns), in reply to our missing-tree ask, as an old tree north of Munich. Not yet checked against the Bavarian Naturdenkmal register; needs a source, a coordinate and a life check.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   },
   {
    "name": "Stiel-Eiche bei Eisolzried (Dachau county)",
    "status": "lead",
-   "why": "Reader tip by mail 2026-10-12 from a botanist at SNSB, same mail. Not yet checked against the register; needs a source, a coordinate and a life check."
+   "why": "Reader tip by mail 2026-10-12 from a botanist at SNSB, same mail. Not yet checked against the register; needs a source, a coordinate and a life check.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
   }
  ],
  "blocked": [
