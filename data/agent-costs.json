@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "kings-canyon-national-park",
+    "kind": "enrich",
+    "tokens": 51000,
+    "trees": 0,
+    "note": "enrichment: General Grant Tree NPS place page as record with height 88.7 m (NPS gives only a ground circumference, so no girth); current NPS fee lines for all three; Boole access from the Forest Service page (fee collected at park entrance stations); Lee and Boole register, measurement and pin open; 8 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "kansas-city",
     "kind": "enrich",
     "tokens": 43000,

@@ -45,9 +45,11 @@
       },
       "verified_sources": [
         "https://en.wikipedia.org/wiki/General_Grant_(tree)",
-        "https://www.nps.gov/places/000/general-grant-tree.htm"
+        "https://www.nps.gov/places/000/general-grant-tree.htm",
+        "https://www.nps.gov/seki/planyourvisit/fees.htm",
+        "https://www.nps.gov/places/000/general-grant-tree.htm (Tree Facts: height 268.1 ft / 88.7 m; ground circumference 107.5 ft, not a girth at 1.3 m, so girth_cm left out)"
       ],
-      "access": "Paid entry (Kings Canyon National Park entrance fee, shared with Sequoia NP); short paved accessible loop trail from the Grant Grove parking area, benches and audio description available.",
+      "access": "Park entrance fee: $35 per private vehicle (valid 1-7 days, also covers Sequoia NP and the Hume Lake District of the Giant Sequoia National Monument), $20 per person on foot or by bicycle; paid at the entrance stations (nps.gov/seki fees page). Short loop trail from the Grant Grove parking area; the NPS tree page lists audio description and benches.",
       "transport": "No public transit; reached via Highway 180 from Fresno, about 1.5 hours' drive.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -62,7 +64,11 @@
         "height": 3851,
         "taken_month": 6
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "National Park Service, Sequoia & Kings Canyon National Parks (General Grant Tree place page)",
+        "url": "https://www.nps.gov/places/000/general-grant-tree.htm"
+      }
     },
     {
       "id": "kcy_002",
@@ -81,9 +87,10 @@
       },
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Robert_E._Lee_Tree",
-        "https://sequoiaquest.com/robert-e-lee.html"
+        "https://sequoiaquest.com/robert-e-lee.html",
+        "https://www.nps.gov/seki/planyourvisit/fees.htm"
       ],
-      "access": "Paid entry (Kings Canyon National Park entrance fee); Grant Grove.",
+      "access": "Park entrance fee: $35 per private vehicle (valid 1-7 days, shared with Sequoia NP), $20 per person on foot or by bicycle (nps.gov/seki fees page). In Grant Grove.",
       "transport": "No public transit; reached via Highway 180 from Fresno, about 1.5 hours' drive.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -117,9 +124,10 @@
       },
       "verified_sources": [
         "https://en.wikipedia.org/wiki/Boole_Tree",
-        "https://www.altaonline.com/dispatches/a7183/boole-sequoia-tree-matt-jaffe/"
+        "https://www.altaonline.com/dispatches/a7183/boole-sequoia-tree-matt-jaffe/",
+        "https://www.fs.usda.gov/r05/sequoia/recreation/converse-basin-grove"
       ],
-      "access": "Free (no park entrance fee inside the National Forest/Monument); reached by a roughly 2.2-3 mile loop trail with about 500-570 ft of elevation gain from the Boole Tree Trailhead on FS Road 13S55, which per the Forest Service's own current trail page is open seasonally (late spring to early fall) and not recommended for low-clearance vehicles. IMPORTANT: land manager is the U.S. Forest Service (Sequoia National Forest / Giant Sequoia National Monument, Hume Lake Ranger District), NOT the National Park Service, though it sits immediately beside Kings Canyon NP.",
+      "access": "Forest Service Converse Basin Grove page: Boole Tree Trail is a moderate 2.5 mile loop at the end of Forest Road 13S55 (turn off Highway 180 about 5 miles north of Grant Grove village); restrooms at the trailhead, no drinkable water; the Forest Service lists the standard amenity fee as collected at the National Park entrance stations (the $35 vehicle pass covers the Hume Lake District). Road is graded dirt.",
       "transport": "No public transit; reached via Highway 180 north of Grant Grove Village.",
       "location_precision": "approximate",
       "curation_status": "flagged",
