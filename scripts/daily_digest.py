@@ -1962,6 +1962,52 @@ CHIPS = {"wrong location", "dead or gone", "could not reach it",
          "worth it", "not worth it"}
 
 
+def _tree_url(slug, name):
+    s = re.sub(r"^the\s+", "", (name or "").strip(), flags=re.I)
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return "https://ancienttrees.app/%s/%s" % (slug, s)
+
+
+def reader_trees_to_inspect(today):
+    """Every tree a stranger sent that Hidde has not looked at, every morning.
+
+    Hidde, 2026-10-13, after the Montsouris plane sat eight days as a blind
+    lead: "from now on since its not that many people applying trees - every
+    daily digest give me the trees to inspect". Few enough to look at each one,
+    so each one is listed until he has answered it (`hidde` in
+    data/judgements.json, set with `judgement.py --feedback <id> "..."`). Our
+    own sightings are testing and stay out. The photograph and the reader's
+    words are not printed here, because this file is public: a session shows
+    them with `python3 scripts/inspect_readers.py`, which builds a local page.
+    """
+    import inspect_readers as ir    # one selection for the table and the page
+    live = ir.live_index()
+    out_rows = []
+    for sid, j, n in ir.selection(False, live):
+        hit = live.get(sid)
+        page = "[%s](%s)" % (hit[1].get("id"), _tree_url(hit[0], hit[1].get("name"))) if hit else "-"
+        m = j.get("measure") or {}
+        girth = j.get("reader_girth_cm")
+        out_rows.append("| %s | %s | %s | %s | %s | %s | %s |" % (
+            j.get("seen") or "-", (j.get("tree") or "-")[:44] + (" (%d photos)" % n if n > 1 else ""),
+            j.get("city") or (hit[0] if hit else "-"),
+            (j.get("species") or "-")[:30], "%s cm" % girth if girth else "-",
+            j.get("verdict") or "open", page))
+    if not out_rows:
+        return ("**Trees readers sent, for you to inspect:** none waiting. Every tree a stranger "
+                "sent has your answer.")
+    return "\n".join([
+        "**Trees readers sent, for you to inspect** (%d you have not looked at; ours left out)" % len(out_rows),
+        "",
+        "| Judged | Tree | Where | Species | Their girth | Our verdict | Page |",
+        "|---|---|---|---|---:|---|---|",
+        *out_rows,
+        "- Photographs and the readers' own words: `python3 scripts/inspect_readers.py` (a local page, "
+        "never in this public file). Your answer goes in with `python3 scripts/judgement.py --feedback <id> \"...\"`.",
+    ])
+
+
 def readers_gave_section(today):
     """What a reader gave us that went live, first thing in the entry.
 
@@ -3394,6 +3440,7 @@ def main():
         except Exception as e:
             blocks.append("%s: failed today (%s)." % (fn.__name__, str(e)[:90]))
 
+    block(reader_trees_to_inspect, today)
     block(readers_gave_section, today)
     block(product_section, today)
     block(feedback_section, today)
