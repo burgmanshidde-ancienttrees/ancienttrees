@@ -2,6 +2,18 @@
   "note": "Hosts that cost a run its window, with what they actually do. Written because this knowledge existed in data/research/ two days before a pass died on it twice: a research file nobody reads at the moment it matters is not a record, it is a souvenir. Every brief must carry this list, and scripts/passcheck.py prints it.",
   "rule": "Every fetch gets a hard timeout: curl -m 20, or timeout= on urllib. A host that hangs once goes on this list with the date. A hang is far worse than a refusal, because a refusal fails in a second and a hang burns the whole window.",
   "hosts": {
+    "www.mauicounty.gov": {
+      "behaviour": "returns HTTP 403 to curl and WebFetch on every page tried, including the Maui County Arborist Committee Exceptional Trees lists and minutes; refuses fast, does not hang.",
+      "seen": "2026-10-13",
+      "cost": "a few failed fetches",
+      "workaround": "Search summaries show the lists carry height, diameter, crown spread and TMK per tree, but they are not a fetched page; try a web.archive.org copy of the Exceptional Trees Assignment 2022/2025 PDFs."
+    },
+    "bbcc.regione.emilia-romagna.it": {
+      "behaviour": "returns HTTP 403 to curl and WebFetch (PatER records such as 196738, the regional register of Parchi e Giardini); refuses fast, does not hang.",
+      "seen": "2026-10-13",
+      "cost": "a few failed fetches",
+      "workaround": "None found; try a web.archive.org copy."
+    },
     "www.navarra.es": {
       "behaviour": "hangs or refuses connections from the runner (curl times out, WebFetch connection refused), including the /NR/rdonlyres/ ficha PDFs.",
       "seen": "2026-10-09",

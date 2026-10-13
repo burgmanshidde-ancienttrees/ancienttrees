@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "maui",
+    "kind": "enrich",
+    "tokens": 44000,
+    "trees": 0,
+    "note": "enrichment: nothing applied; mauicounty.gov (Arborist Committee Exceptional Trees lists) returns 403, added to the fetch blocklist with bbcc.regione.emilia-romagna.it; no DLNR per-tree page; Banyan Court Park still closed per Feb and Aug 2026 reporting, access line already says so; 8 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "gettysburg",
     "kind": "enrich",
     "tokens": 48000,
