@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "san-antonio",
+    "kind": "enrich",
+    "tokens": 54000,
+    "trees": 0,
+    "note": "enrichment: Texas Big Tree Registry TreeID 858 (Mexican sycamore, girth 328 cm, height 25.3 m, register GPS as pin) and TreeID 1175 (Incarnate Word mountain laurel, girth 152 cm, 2005; registry GPS corrupt, no longer state champion); Alamo access from thealamo.org; Ben Milam cypress and the Alamo oak are in no register; 5 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "pagramantis-regional-park",
     "kind": "enrich",
     "tokens": 51000,

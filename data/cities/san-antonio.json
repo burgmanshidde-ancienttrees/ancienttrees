@@ -85,9 +85,10 @@
       },
       "verified_sources": [
         "https://sanantonioreport.org/heritage-tree-live-oak-at-the-alamo/",
-        "https://spectrumlocalnews.com/tx/austin/news/2026/05/14/alamo-renovations-continue--but-historic-live-oak-tree-safe-from-change"
+        "https://spectrumlocalnews.com/tx/austin/news/2026/05/14/alamo-renovations-continue--but-historic-live-oak-tree-safe-from-change",
+        "https://www.thealamo.org/faqs"
       ],
-      "access": "Free (the Alamo grounds and courtyards are free to enter; only the interior exhibits require a ticket). Reachable by the downtown Blue or Yellow bus routes.",
+      "access": "Free. The Alamo says admission to the church, Long Barrack and grounds is always free; open 9 a.m. to 5:30 p.m. every day except December 25. The oak stands in the Convento Courtyard, behind the north barracks wall.",
       "transport": "In downtown San Antonio at Alamo Plaza; a short walk from the River Walk and san_001 (Ben Milam Cypress).",
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
@@ -113,17 +114,19 @@
       "girth_cm": 328,
       "location": {
         "address": "Trinity University disc golf course, just south of Hildebrand Ave near Devine Rd and Stadium Dr, San Antonio, TX",
-        "latitude": 29.4647,
-        "longitude": -98.4809,
+        "latitude": 29.46466667,
+        "longitude": -98.48094444,
         "neighbourhood": "Trinity University / Monte Vista"
       },
       "verified_sources": [
         "https://sanantonioreport.org/heritage-tree-the-champion-mexican-sycamore-at-trinity-university/",
-        "Texas Big Tree Registry TreeID 858 (lead source only, corroborating measurement)"
+        "Texas Big Tree Registry TreeID 858 (lead source only, corroborating measurement)",
+        "https://texasforestinfo.tamu.edu/BigTreeRegistry/",
+        "https://texasforestinfo.tamu.edu/BigTreeRegistry/ (TreeID 858 GPS LatDec/LongDec, Trinity University, state champion Mexican sycamore)"
       ],
       "access": "Free. Stands on Trinity University's open campus grounds (the disc golf course), reachable on foot; VIA bus Route 8 stops nearby on Stadium Drive.",
       "transport": "On the Trinity University campus, about 4.5km north of downtown San Antonio; reachable by VIA bus Route 8.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "This is the biggest Mexican sycamore in Texas and it is about forty years old. The city forester puts its planting in the mid 1980s, which rules out any romance about ancient wood; what it has instead is speed. Mexican sycamore can put on several feet a year, and this one had reached 328 centimetres of girth by the time the Texas Big Tree Registry taped it in November 2021, taking the state championship for the species and scoring the registry's top grade for condition.\n\nThe bark is the reason to walk over. It sheds in irregular plates, leaving a mottled camouflage pattern that gives way to a trunk close to bone white, which is why people on the Trinity University campus call it the ghost tree. The leaves are large, felted silver underneath, and they flip in wind. A second, slightly smaller Mexican sycamore grows beside it, both of them fed by the drainage creek that runs through the disc golf course.\n\nSo it earns its place on size and strangeness rather than on years, and it is worth saying so plainly rather than dressing a young tree up as an old one. The ground is open campus, no gate and no fee, about 4.5 kilometres north of downtown, with a VIA Route 8 stop on Stadium Drive. Our pin marks the course rather than the trunk. Look for the whitest tree on it.",
       "photo": {
@@ -132,7 +135,18 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the bark, shedding in plates to a trunk close to bone white, which is why the campus calls it the ghost tree. A slightly smaller one grows beside it; this is the bigger."
+      "how_to_recognise": "You can recognise it by the bark, shedding in plates to a trunk close to bone white, which is why the campus calls it the ghost tree. A slightly smaller one grows beside it; this is the bigger.",
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 858",
+        "url": null
+      },
+      "height_m": 25.3,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://texasforestinfo.tamu.edu/BigTreeRegistry/ (TreeID 858 GPS LatDec/LongDec, Trinity University, state champion Mexican sycamore)",
+        "date": "2026-10-13",
+        "moved_m": 6
+      }
     },
     {
       "id": "san_004",
@@ -150,7 +164,8 @@
       },
       "verified_sources": [
         "https://sanantonioreport.org/heritage-tree-champion-mountain-laurel-at-incarnate-word/",
-        "https://docsonline.sanantonio.gov/FileUploads/dsd/TreeDevelopmentProcessPresentation.pdf"
+        "https://docsonline.sanantonio.gov/FileUploads/dsd/TreeDevelopmentProcessPresentation.pdf",
+        "https://texasforestinfo.tamu.edu/BigTreeRegistry/"
       ],
       "access": "Free. Stands on University of the Incarnate Word grounds near the public Lourdes Grotto, a devotional site open to visitors (the grotto's own gate is only decorative, not locked); driving onto campus may require a visitor parking pass, but the grotto itself is a walk-up public site.",
       "transport": "On the UIW campus off Broadway, north-central San Antonio; VIA bus Route 8 runs nearby on Stadium Drive.",
@@ -170,7 +185,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by being a tree at all: nearly ten metres of a species most Texans know as a bush. It stands beside the Lourdes Grotto and in March smells of grape soda from some way off."
+      "how_to_recognise": "You can recognise it by being a tree at all: nearly ten metres of a species most Texans know as a bush. It stands beside the Lourdes Grotto and in March smells of grape soda from some way off.",
+      "official_register": {
+        "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 1175",
+        "url": null
+      }
     }
   ]
 }
