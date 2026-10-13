@@ -1,9 +1,9 @@
 {
   "_note": "Overlay italiano per la Sardegna, scritto a mano il 2026-09-02. Reso da data/cities/sardinia.json, che resta la fonte di verità: coordinate, foto, licenze, età e note di accesso vivono lì e qui non cambia nulla. I termini di ricerca sono l'unica cosa che non è una traduzione: il termine legale e quotidiano in Italia è 'alberi monumentali', quindi titolo, meta description e campi della domanda sono scritti come li cercherebbe un lettore italiano. Due differenze rispetto alla pagina inglese, entrambe correzioni di conteggio: la FAQ inglese dice che 'gli altri quattro alberi' sono gratuiti, ma i due di Santu Baltolu stanno dentro lo stesso sito a pagamento, quindi i gratuiti sono tre e l'italiano scrive tre. La Sardegna è un'isola e non una città: i cinque alberi sono sparsi su tre angoli, e l'italiano tiene le distanze esplicite come fa l'inglese.",
   "city": "Sardegna",
-  "title": "Alberi monumentali della Sardegna: 5 giganti da vedere",
+  "title": "Alberi monumentali della Sardegna: 7 giganti da vedere",
   "meta_description": "I 7 alberi più notevoli della Sardegna: S'Ozzastru vicino a Luras, l'albero vivo più antico d'Italia, fra i 2.500 e i 4.000 anni, e altri sei.",
-  "intro": "I sette alberi della Sardegna sono sparsi per tutta l'isola e solo l'auto li mette in fila. Due crescono a pochi metri l'uno dall'altro a Santu Baltolu, vicino a Luras, in Gallura, e uno dei due, S'Ozzastru, è l'albero vivo più antico d'Italia. Altri due stanno intorno a Baunei, sulla costa dell'Ogliastra, un cedro cresce nell'interno a Laconi, e fra loro, in montagna, ci sono due grandi querce: la sughera di Sa Tuppa vicino a Orune, che un botanico sardo definisce la più imponente dell'isola, e una roverella in un bosco di duecento giganti a Su Fundale. Non è roba da un pomeriggio.",
+  "intro": "I sette alberi della Sardegna sono sparsi per tutta l'isola e solo l'auto li collega. Due crescono a pochi metri l'uno dall'altro a Santu Baltolu, vicino a Luras, in Gallura, e uno dei due, S'Ozzastru, è l'albero vivo più antico d'Italia. Due stanno intorno a Baunei, sulla costa dell'Ogliastra, un cedro cresce nell'interno a Laconi, e fra loro, in montagna, ci sono due grandi querce: la sughera di Sa Tuppa vicino a Orune, che un botanico sardo definisce la più imponente dell'isola, e una roverella in un bosco di duecento giganti a Su Fundale. Non è roba da un pomeriggio.",
   "question_title": "Qual è l'albero più antico della Sardegna? (S'Ozzastru)",
   "question_meta": "L'albero più antico della Sardegna è S'Ozzastru, un olivastro vicino a Luras stimato fra 2.500 e 4.000 anni: è anche il più antico d'Italia.",
   "question_answer": "L'albero più antico della Sardegna, e d'Italia, è S'Ozzastru, un olivastro di Santu Baltolu di Carana, fuori Luras, in Gallura. La sua età è davvero contestata: l'Università di Sassari stima fra i 2.500 e i 4.000 anni, il sito che lo gestisce dice fra i 3.000 e i 4.000, e il botanico Bruno Peyronel propose una volta più di 5.000 anni, cifra segnalata come priva di qualsiasi dato scientifico alle spalle. Ogni stima seria finisce nell'ordine delle migliaia, il che risolve la classifica senza risolvere il numero.",
@@ -70,7 +70,7 @@
     },
     "sar_006": {
       "name": "La sughera di Sa Tuppa",
-      "species": "Sughera (Quercus suber)",
+      "species": "Quercia da sughero (Quercus suber)",
       "age_estimate": "da 200 a 300 anni",
       "access": "Gratuito, senza biglietto. Sta in un pascolo arborato aperto, usato per il pascolo brado, sull'altopiano di Orune, a circa 740 m. Nessun servizio, e nel campo possono esserci pecore.",
       "transport": "Solo in auto. Orune è a nord-est di Nuoro; l'albero è a Sa Tuppa, sull'altopiano, circa 7 km a ovest del paese.",
