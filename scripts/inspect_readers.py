@@ -12,11 +12,17 @@ for the digest and shows him the page.
     python3 scripts/inspect_readers.py           # build the page, print its path
     python3 scripts/inspect_readers.py --all     # also the ones he already answered
 
-The selection is the digest's: not our own accounts (data/our-accounts.json),
+Shown in the preview pane, which cannot read ~/Documents: the page is mirrored
+to /private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/inspect
+and `preview_start {name: "inspect"}` runs preview/serve_inspect.py, which is
+four lines: chdir to that folder, then http.server's ThreadingHTTPServer with
+SimpleHTTPRequestHandler(directory=that folder) on 127.0.0.1:8766. /private/tmp
+can be cleared on a reboot; recreate the folder and that file if so.
+
+The selection is the digest's:not our own accounts (data/our-accounts.json),
 no answer from him yet in data/judgements.json. He answers with
 `python3 scripts/judgement.py --feedback <id> "..."`, and the tree leaves both.
 """
-import base64
 import glob
 import html
 import json
@@ -40,6 +46,7 @@ import sightings_inbox as si  # noqa: E402
 
 si.KEY = KEY
 OUT = os.path.join("out", "inspect")
+PREVIEW = "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/inspect"
 
 
 def tree_url(slug, name):
@@ -151,10 +158,10 @@ def main():
         if photo and KEY:
             dest = os.path.join(OUT, sid + ".jpg")
             if si.fetch_photo(photo, dest):
-                # Inline, so the page works opened anywhere (a preview pane,
-                # a file sent to his phone) without the files beside it.
-                with open(dest, "rb") as fh:
-                    img = '<img src="data:image/jpeg;base64,%s" alt="">' % base64.b64encode(fh.read()).decode()
+                # Beside the page, not inlined: inlined the page grew past what
+                # the preview pane opens. A session serves the folder with
+                # preview_start {name: "inspect"} (.claude/launch.json).
+                img = '<img src="%s.jpg" alt="" loading="lazy">' % sid
         hit = live.get(sid)
         page = ('<a href="%s">%s, live</a>' % (tree_url(hit[0], hit[1].get("name")), html.escape(hit[1].get("id")))
                 if hit else "not on the site")
@@ -184,7 +191,7 @@ def main():
 <style>
 body{font:16px/1.5 -apple-system,system-ui,sans-serif;max-width:760px;margin:0 auto;padding:16px;background:#faf8f3;color:#222}
 section{background:#fff;border-radius:12px;padding:16px;margin:0 0 24px;box-shadow:0 1px 3px #0002}
-img{width:100%%;border-radius:8px}h2{margin:0}.id{color:#888;font-size:13px;margin:2px 0 12px}
+img{display:block;max-width:100%%;max-height:70vh;margin:0 auto;border-radius:8px}h2{margin:0}.id{color:#888;font-size:13px;margin:2px 0 12px}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px}dt{color:#666}dd{margin:0}
 pre{white-space:pre-wrap;font:inherit;background:#f3f0e8;padding:12px;border-radius:8px}
 </style></head><body><h1>Trees readers sent, to inspect (%d)</h1>
@@ -194,6 +201,19 @@ pre{white-space:pre-wrap;font:inherit;background:#f3f0e8;padding:12px;border-rad
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(page)
     print("%d tree(s) to inspect: %s" % (len(picks), path))
+    # The preview pane's server may not read ~/Documents (macOS privacy), so
+    # mirror the page and its photographs to the session-independent preview
+    # folder; preview_start {name: "inspect"} serves it (.claude/launch.json).
+    if os.path.isdir(os.path.dirname(PREVIEW)):
+        import shutil
+        shutil.rmtree(PREVIEW, ignore_errors=True)
+        os.makedirs(PREVIEW)
+        shutil.copy(path, PREVIEW)
+        for sid, _j, _n in picks:
+            src = os.path.join(OUT, sid + ".jpg")
+            if os.path.exists(src):
+                shutil.copy(src, PREVIEW)
+        print("preview copy: %s (preview_start name 'inspect', http://127.0.0.1:8766/)" % PREVIEW)
     return 0
 
 

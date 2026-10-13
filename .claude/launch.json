@@ -8,6 +8,12 @@
         "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/e49011ff-8773-4052-abde-8c0a7b8a88e3/scratchpad/serve_dist.py"
       ],
       "port": 8971
+    },
+    {
+      "name": "inspect",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/serve_inspect.py"],
+      "port": 8766
     }
   ]
 }
