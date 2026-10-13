@@ -5528,7 +5528,9 @@
      "lat": 38.713075,
      "lng": -9.135134,
      "cats": "Category:Buildings in Lisbon Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Photographs by Sergei Gussev, Lisbon Category:Portugal photographs taken on 2016-12-21",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "street square with small young trees; no rubber fig"
     },
     {
      "title": "File:Lisboa (31476536320).jpg",
@@ -5761,7 +5763,9 @@
      "lat": 38.71320611,
      "lng": -9.135379,
      "cats": "Category:1910s engravings Category:Artworks without Wikidata item Category:Engravings from Portugal Category:Files with coordinates missing SDC location of creation Category:Largo da Achada (Lisbon) Category:Lisboa Velha by Roque Gameiro Category:PD-Art (PD-Portugal-URAA) Category:PD-Art missing SDC copyright status Category:PD-Portugal-URAA",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "black-and-white engraving of a fountain square"
     },
     {
      "title": "File:Roque Gameiro (Lisboa Velha, n.º 33) No Largo da Achada 1.png",
@@ -7143,7 +7147,9 @@
      "lat": 38.704266,
      "lng": -9.162758,
      "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC creator Category:Flickr images missing SDC source of file Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Tagus River in Lisbon Category:Views of Lisbon",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "harbour view of cranes and ships; no palm"
     },
     {
      "title": "File:Descanso na Fuga para o Egito Allori.jpg",
@@ -21376,7 +21382,9 @@
      "author": "Rhododendrites",
      "lat": 40.65455745,
      "lng": -73.99109698,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by Rhododendrites - 2025-09 Category:Files uploaded by Rhododendrites (all) Category:Files with coordinates missing SDC location of creation Category:Photographs taken by Rhododendrites - Green-Wood Cemetery Category:Photographs taken by Rhododendrites - birds Category:Self-published work Category:September 2025 in Brooklyn, New York City Category:Setophaga magnolia Category:Wildlife in Green-Wood Cemetery"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by Rhododendrites - 2025-09 Category:Files uploaded by Rhododendrites (all) Category:Files with coordinates missing SDC location of creation Category:Photographs taken by Rhododendrites - Green-Wood Cemetery Category:Photographs taken by Rhododendrites - birds Category:Self-published work Category:September 2025 in Brooklyn, New York City Category:Setophaga magnolia Category:Wildlife in Green-Wood Cemetery",
+     "judged": "reject",
+     "verdict": "bird portrait (magnolia warbler)"
     },
     {
      "title": "File:Magnolia warbler (81252).jpg",
@@ -21386,7 +21394,9 @@
      "author": "Rhododendrites",
      "lat": 40.65455745,
      "lng": -73.99109698,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by Rhododendrites - 2025-09 Category:Files uploaded by Rhododendrites (all) Category:Files with coordinates missing SDC location of creation Category:Photographs taken by Rhododendrites - Green-Wood Cemetery Category:Photographs taken by Rhododendrites - birds Category:Quality images Category:Quality images by Rhododendrites Category:Quality images missing SDC Commons quality assessment Category:Quality images missing SDC depicts Category:Quality images of Green-Wood Cemetery Category:Quality images of Setophaga magnolia Category:Quality images of birds by Rhododendrites Category:Self-published work Category:September 2025 in Brooklyn, New York City Category:Setophaga magnolia Category:Wildlife in Green-Wood Cemetery"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by Rhododendrites - 2025-09 Category:Files uploaded by Rhododendrites (all) Category:Files with coordinates missing SDC location of creation Category:Photographs taken by Rhododendrites - Green-Wood Cemetery Category:Photographs taken by Rhododendrites - birds Category:Quality images Category:Quality images by Rhododendrites Category:Quality images missing SDC Commons quality assessment Category:Quality images missing SDC depicts Category:Quality images of Green-Wood Cemetery Category:Quality images of Setophaga magnolia Category:Quality images of birds by Rhododendrites Category:Self-published work Category:September 2025 in Brooklyn, New York City Category:Setophaga magnolia Category:Wildlife in Green-Wood Cemetery",
+     "judged": "reject",
+     "verdict": "bird portrait (magnolia warbler)"
     }
    ]
   },
@@ -21880,8 +21890,8 @@
      "author": "(c) gwt2102, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "40.7750295015,-73.9670305349",
-     "judged": "hold",
-     "verdict": "Cone close-up identified as Cedrus atlantica, not a readable view of the Lebanon cedar behind the kiosk."
+     "judged": "reject",
+     "verdict": "close-up of cones and needles; no tree form"
     },
     {
      "title": "iNat obs 267623733 (Cedrus atlantica)",
@@ -29703,7 +29713,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Englischer Garten (München) Category:Photographs by User:Rufus46"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Englischer Garten (München) Category:Photographs by User:Rufus46",
+     "judged": "reject",
+     "verdict": "weeping willows by a stream in snow; wrong species (willow, not a lime)"
     }
    ]
   },
@@ -36185,7 +36197,7 @@
      "source": "inaturalist",
      "obs_location": "-27.4776966667,153.0312195",
      "judged": "reject",
-     "verdict": "trunk only, crown not in frame"
+     "verdict": "lower trunk only, crown not readable"
     },
     {
      "title": "iNat obs 263647303 (Macadamia integrifolia)",
@@ -37562,7 +37574,7 @@
      "source": "inaturalist",
      "obs_location": "-27.47767,153.0311888333",
      "judged": "reject",
-     "verdict": "trunk with label only, crown not in frame"
+     "verdict": "trunk close-up with species label; crown not in frame"
     },
     {
      "title": "iNat obs 263647476 (Swietenia mahagoni)",
@@ -41647,7 +41659,9 @@
      "lat": 52.363218,
      "lng": 4.893271,
      "cats": "Category:CC-BY-SA-3.0 Category:Friezes in Amsterdam Category:Museum Van Loon Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ30",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "pediment of the Van Loon coach house; only a leaf tip of a tree"
     },
     {
      "title": "File:Amsterdam - Museum Van Loon 04.JPG",
@@ -41658,7 +41672,9 @@
      "lat": 52.363218,
      "lng": 4.893271,
      "cats": "Category:CC-BY-SA-3.0 Category:Museum Van Loon Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ30",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "house facade framed by foliage; beech not readable as a tree"
     },
     {
      "title": "File:Amsterdam - Museum Van Loon 05.JPG",
@@ -42127,7 +42143,9 @@
      "lat": 52.359976,
      "lng": 4.883395,
      "cats": "Category:CC-BY-SA-3.0 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Photos from Panoramio ID 4678999 Category:Tile panels on the Rijksmuseum Amsterdam Category:West facade of the Rijksmuseum Amsterdam",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Rijksmuseum garden overview; no poplar as subject"
     },
     {
      "title": "File:Portail Jardin Rijksmuseum - Amsterdam (NL32) - 2024-11-25 - 1.jpg",
@@ -44174,7 +44192,9 @@
      "lat": 52.378833,
      "lng": 4.898333,
      "cats": "Category:CC-BY-SA-3.0 Category:Lloyd-Gebouw (Amsterdam) Category:Netherlands photographs taken on 2013-11-21 Category:Night in Amsterdam Category:November 2013 in Amsterdam Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 1286122",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "night shot of hotels across the water"
     },
     {
      "title": "File:By Night , Amsterdam , Netherlands - panoramio (4).jpg",
@@ -44185,7 +44205,9 @@
      "lat": 52.378833,
      "lng": 4.898333,
      "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2013-11-21 Category:Night in Amsterdam Category:November 2013 in Amsterdam Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 1286122 Category:Prins Hendrikkade, Amsterdam Category:Victoria Hotel Amsterdam",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "night shot of the Victoria Hotel; no elm"
     },
     {
      "title": "File:Centraal Station in Amsterdam - panoramio.jpg",
@@ -49826,7 +49848,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Kriegerdenkmal Trudering Category:Photographs by User:Rufus46"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Kriegerdenkmal Trudering Category:Photographs by User:Rufus46",
+     "judged": "reject",
+     "verdict": "war memorial is the subject; no horse chestnut in frame"
     },
     {
      "title": "File:Kirchtruderinger Str. Kriegerdenkmal Muenchen-4.jpg",
@@ -49836,7 +49860,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Kriegerdenkmal Trudering Category:Photographs by User:Rufus46"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Kriegerdenkmal Trudering Category:Photographs by User:Rufus46",
+     "judged": "reject",
+     "verdict": "close-up of the memorial statue; background trees are not the subject"
     },
     {
      "title": "File:Kirchtruderinger Str. Kriegerdenkmal Muenchen-5.jpg",
@@ -53826,7 +53852,7 @@
      "source": "inaturalist",
      "obs_location": "-27.47724322,153.03081315",
      "judged": "reject",
-     "verdict": "Close-up of pods and leaves; not a whole-tree photo."
+     "verdict": "close-up of pods and leaves; no trunk or crown"
     },
     {
      "title": "iNat obs 145043506 (Castanospermum australe)",
@@ -78896,7 +78922,9 @@
      "lat": 38.706276,
      "lng": -9.200792,
      "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Jardim Botânico da Ajuda Category:Photographs by jad99 Category:Taken with Canon PowerShot SX200 IS",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "box-hedge parterre overview; no jacaranda as subject"
     },
     {
      "title": "File:Jardim Botanico da Ajuda (14005617511).jpg",
@@ -78918,7 +78946,9 @@
      "lat": 38.706276,
      "lng": -9.200792,
      "cats": "Category:Animals in Jardim Botânico da Ajuda Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Photographs by jad99 Category:Taken with Canon PowerShot SX200 IS",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "peacocks on a cobbled yard; no tree as subject"
     },
     {
      "title": "File:Jardim Botanico da Ajuda (14008765355).jpg",
@@ -108585,7 +108615,7 @@
      "source": "inaturalist",
      "obs_location": "35.7241969086,139.9313119054",
      "judged": "reject",
-     "verdict": "multi-stemmed ginkgo with shimenawa, but trunk close-up with the crown out of frame; no geotag"
+     "verdict": "ginkgo with shimenawa, multi-stemmed, likely this tree, but lower trunk only and crown not in frame"
     },
     {
      "title": "iNat obs 322189345 (Ginkgo biloba)",
@@ -119293,7 +119323,9 @@
      "author": "Guy Delsaut",
      "lat": 50.840052,
      "lng": 4.378666,
-     "cats": "Category:Belgium photographs taken on 2017-07-09 Category:CC-BY-SA-4.0 Category:Eastman Building (Brussels) Category:Files with coordinates missing SDC location of creation (50° N, 4° E) Category:FoP-Belgium Category:Images from Wiki Loves Public Space 2017 in Belgium Category:Self-published work Category:Uploaded via Campaign:wlps-be"
+     "cats": "Category:Belgium photographs taken on 2017-07-09 Category:CC-BY-SA-4.0 Category:Eastman Building (Brussels) Category:Files with coordinates missing SDC location of creation (50° N, 4° E) Category:FoP-Belgium Category:Images from Wiki Loves Public Space 2017 in Belgium Category:Self-published work Category:Uploaded via Campaign:wlps-be",
+     "judged": "reject",
+     "verdict": "rooftop of the House of European History; no tree"
     },
     {
      "title": "File:House of European History - former Eastman Institute 04.jpg",
@@ -119303,7 +119335,9 @@
      "author": "Guy Delsaut",
      "lat": 50.840052,
      "lng": 4.378666,
-     "cats": "Category:Belgium photographs taken on 2017-07-09 Category:CC-BY-SA-4.0 Category:Eastman Building (Brussels) Category:Files with coordinates missing SDC location of creation (50° N, 4° E) Category:FoP-Belgium Category:Images from Wiki Loves Public Space 2017 in Belgium Category:Self-published work Category:Uploaded via Campaign:wlps-be"
+     "cats": "Category:Belgium photographs taken on 2017-07-09 Category:CC-BY-SA-4.0 Category:Eastman Building (Brussels) Category:Files with coordinates missing SDC location of creation (50° N, 4° E) Category:FoP-Belgium Category:Images from Wiki Loves Public Space 2017 in Belgium Category:Self-published work Category:Uploaded via Campaign:wlps-be",
+     "judged": "reject",
+     "verdict": "building with a cedar in the corner; wrong species (cedar, not beech)"
     }
    ]
   },
@@ -119321,7 +119355,9 @@
      "author": "Jndemi",
      "lat": null,
      "lng": null,
-     "cats": "Category:Memorial to Les Amis Philanthropes Category:PD-self Category:Self-published work Category:Taken with Sony DSLR-A100"
+     "cats": "Category:Memorial to Les Amis Philanthropes Category:PD-self Category:Self-published work Category:Taken with Sony DSLR-A100",
+     "judged": "reject",
+     "verdict": "Masonic sculpture is the subject; bare trees behind"
     },
     {
      "title": "File:Bruxelles-Exposition. L'Incendie des 14-15 Août 1910. Les ruines du Palais de l'Alimentation et front de l'Avenue du Solbosch, GP016444.jpg",
@@ -119331,7 +119367,9 @@
      "author": "Unknown authorUnknown author",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-PD-Mark Category:PD Old Category:Postcards of Brussels in the Leuven University Libraries Category:Template Unknown (author)"
+     "cats": "Category:CC-PD-Mark Category:PD Old Category:Postcards of Brussels in the Leuven University Libraries Category:Template Unknown (author)",
+     "judged": "reject",
+     "verdict": "1910 black-and-white postcard of exhibition fire ruins"
     },
     {
      "title": "File:Clock Tower of the ULB Solbosch Campus in the City of Brussels.JPG",
@@ -123381,7 +123419,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.634006,
      "lng": 4.741911,
-     "cats": "Category:2011 in Alkmaar Category:Bridges in Alkmaar Category:CC-BY-SA-4.0 Category:Canals in Alkmaar Category:Geestersingel, Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Self-published work"
+     "cats": "Category:2011 in Alkmaar Category:Bridges in Alkmaar Category:CC-BY-SA-4.0 Category:Canals in Alkmaar Category:Geestersingel, Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "distant canal view from the Bergerbrug; no single tree is the subject"
     }
    ]
   },
@@ -123399,7 +123439,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.634006,
      "lng": 4.741911,
-     "cats": "Category:2011 in Alkmaar Category:Bridges in Alkmaar Category:CC-BY-SA-4.0 Category:Canals in Alkmaar Category:Geestersingel, Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Self-published work"
+     "cats": "Category:2011 in Alkmaar Category:Bridges in Alkmaar Category:CC-BY-SA-4.0 Category:Canals in Alkmaar Category:Geestersingel, Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 2011-07-15 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "distant canal view from the Bergerbrug; no single tree is the subject"
     }
    ]
   },
@@ -123489,7 +123531,9 @@
      "author": "Joop Elsinga",
      "lat": null,
      "lng": null,
-     "cats": "Category:1974 in Alkmaar Category:CC-Zero Category:Houses in Alkmaar Category:Media from Elsinga Collection Regionaal Archief Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 1974-06-09 Category:Uploaded with pattypan"
+     "cats": "Category:1974 in Alkmaar Category:CC-Zero Category:Houses in Alkmaar Category:Media from Elsinga Collection Regionaal Archief Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 1974-06-09 Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "black-and-white archival street of house fronts; no elm"
     },
     {
      "title": "File:Vanaf rechts Molenbuurt 25-26, P. Schermer ^ Zn. Bouwbedrijf en Houthandel, Molenbuurt 24, Molenbuur - RAA011005146 - RAA Elsinga.jpg",
@@ -123499,7 +123543,9 @@
      "author": "Joop Elsinga",
      "lat": null,
      "lng": null,
-     "cats": "Category:1974 in Alkmaar Category:CC-Zero Category:Houses in Alkmaar Category:Media from Elsinga Collection Regionaal Archief Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 1974-06-09 Category:Timber trade in the Netherlands Category:Uploaded with pattypan"
+     "cats": "Category:1974 in Alkmaar Category:CC-Zero Category:Houses in Alkmaar Category:Media from Elsinga Collection Regionaal Archief Alkmaar Category:Molenbuurt, Alkmaar Category:Netherlands photographs taken on 1974-06-09 Category:Timber trade in the Netherlands Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "black-and-white archival shopfronts; trees incidental, no plume elm"
     }
    ]
   },
@@ -128368,7 +128414,9 @@
      "author": "Andy Waddington",
      "lat": 56.94781881,
      "lng": -4.99323437,
-     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:River Arkaig"
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:River Arkaig",
+     "judged": "reject",
+     "verdict": "slender riverside tree by a footbridge, 228 m off; not an 8 m oak inside a spruce plantation"
     }
    ]
   },
@@ -128386,7 +128434,9 @@
      "author": "rheins",
      "lat": 23.518518,
      "lng": 120.808287,
-     "cats": "Category:2012 photographs of Chiayi County Category:Boardwalks in Alishan National Forest Recreation Area Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Outside stairs in Chiayi County Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:People on stairs in Chiayi County Category:Photos from Panoramio Category:Taiwan photographs taken on 2012-02-01 Category:Views from stairs in Chiayi County Category:Wooden outside stairs in Taiwan"
+     "cats": "Category:2012 photographs of Chiayi County Category:Boardwalks in Alishan National Forest Recreation Area Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Outside stairs in Chiayi County Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:People on stairs in Chiayi County Category:Photos from Panoramio Category:Taiwan photographs taken on 2012-02-01 Category:Views from stairs in Chiayi County Category:Wooden outside stairs in Taiwan",
+     "judged": "reject",
+     "verdict": "boardwalk and people in a cypress forest; no single tree is the subject"
     }
    ]
   }
