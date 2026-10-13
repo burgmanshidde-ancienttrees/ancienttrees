@@ -1912,6 +1912,45 @@ def check_every_submission_got_a_verdict():
     return out
 
 
+_NOT_VIEWED = re.compile(r"\b(photo(graph)?s?|images?)\b[^.]{0,40}\bnot (been )?(viewed|viewable|looked at|opened)\b"
+                         r"|\bnot viewed\b|\bwithout (viewing|opening|looking at) the photo", re.I)
+
+
+def check_a_reader_verdict_looked_at_the_photograph():
+    """A stranger's submission is not judged until somebody looked at the photograph.
+
+    Hidde, 2026-10-13, on a London plane a reader photographed in Parc
+    Montsouris with a heart-shaped crown and Prevert's poem in the note: "this
+    stuff is golden why did you not put it live earlier?" The night run had
+    filed it as a lead on 10-05 and again on 10-12 with "photograph not viewed
+    this run": it scored the girth against a thin genus reference and never
+    opened the picture, which was the whole case for the tree. A verdict
+    written blind is a queue entry wearing a verdict's clothes, so it counts as
+    no verdict: leave it open (--open lists it for a session or for Hidde)
+    rather than write lead or hold. Our own sightings are exempt; they are
+    testing (data/our-accounts.json).
+    """
+    import ours
+    try:
+        with open("data/judgements.json", encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except (OSError, ValueError):
+        return []
+    out = []
+    for j in doc.get("judgements", []):
+        if j.get("verdict") not in ("lead", "hold"):
+            continue
+        uid = str(j.get("photo") or "").split("/")[0]
+        if not uid or ours.is_ours(uid):
+            continue
+        if _NOT_VIEWED.search(j.get("reason") or ""):
+            out.append("%s (%s): a reader's submission got '%s' without anybody looking at the "
+                       "photograph. Look at it (scripts/sightings_inbox.py fetches it), or clear the "
+                       "verdict so it waits in judgement.py --open."
+                       % (j.get("id"), j.get("tree"), j.get("verdict")))
+    return out
+
+
 def note_submissions_waiting_for_a_verdict():
     """The queue, which is where the rule gets sharpened rather than broken."""
     try:
@@ -3321,6 +3360,7 @@ def main():
                 + check_pin_is_in_its_own_country()
                 + check_contributor_photos_are_traceable()
                 + check_every_submission_got_a_verdict()
+                + check_a_reader_verdict_looked_at_the_photograph()
                 + check_a_readers_new_tree_carries_their_photograph()
                 + check_a_permission_covers_the_photographer_it_names()
                 + check_photos_are_not_the_lead_twice()
