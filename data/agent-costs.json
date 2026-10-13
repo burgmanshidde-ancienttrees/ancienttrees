@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "bucharest",
+    "kind": "enrich",
+    "tokens": 47000,
+    "trees": 0,
+    "note": "enrichment: Botanical Garden ginkgos access (hours and prices, unibuc.ro); no girth, register or coordinate on ro.wikipedia or hotnews for any of the four; no city hall protected-tree list found; 13 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "gothenburg",
     "kind": "enrich",
     "tokens": 77000,
