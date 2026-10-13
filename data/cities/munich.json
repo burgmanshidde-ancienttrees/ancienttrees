@@ -599,7 +599,15 @@
         "url": null
       },
       "girth_cm": 295,
-      "height_m": 25
+      "height_m": 25,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: copper and russet leaves",
+        "kind": "colour"
+      }
     },
     {
       "id": "muc_014",
@@ -2668,6 +2676,14 @@
         "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau (Dachau no. 26, 1 Linde; within about 3 m of the Bayern LfU register point)",
         "date": "2026-10-13",
         "moved_m": 1
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "June to July: heavily scented lime flowers loud with bees",
+        "kind": "flowers"
       }
     }
   ]
