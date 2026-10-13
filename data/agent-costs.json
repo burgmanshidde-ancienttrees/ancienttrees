@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "split",
+    "kind": "enrich",
+    "tokens": 72000,
+    "trees": 0,
+    "note": "enrichment: nothing applied; Kolombatovic cypress site offered but withheld because no source says the 1908 cypress still stands; mulberry, ginkgo, walnut have no position, measurement or register; hajduk.hr behind a Cloudflare challenge; 13 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "mallorca",
     "kind": "enrich",
     "tokens": 52000,
