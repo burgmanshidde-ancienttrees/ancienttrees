@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "reno-valdieu",
+    "kind": "enrich",
+    "tokens": 62000,
+    "trees": 0,
+    "note": "enrichment: access line only (grove on foot, no bikes, Perche park trek PDF); no register, measurement or coordinate found, one Overpass attempt timed out; 12 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "christchurch",
     "kind": "enrich",
     "tokens": 76000,
