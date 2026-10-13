@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "pagramantis-regional-park",
+    "kind": "enrich",
+    "tokens": 51000,
+    "trees": 0,
+    "note": "enrichment: Gudlaukis and Geniai oaks got Lithuanian protected-areas cadastre codes (S0310505010257, S0310505010238) and concrete access lines; girths and heights for all four from lt.wikipedia citing the cadastre or park board (not from an authority page); Andriejaiciai registered by municipal list only; Tamosaiciai in no register; 4 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "okinawa",
     "kind": "enrich",
     "tokens": 44000,
