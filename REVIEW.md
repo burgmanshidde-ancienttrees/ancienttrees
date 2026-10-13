@@ -22,6 +22,14 @@ Web half: read the new Roosendaal pages as built (copper beech of Nispen cemeter
 - WARN same pages (`access`): "Register: visitable ja, visible ja, openbaar ja, owner a religious body (parish)" puts Dutch register field values and a column list into the English access line; "No cemetery hours found" is fine, the "ja" list is not a sentence a visitor can use. Suggest "The register lists it as visible and open to visit."
 - NOTE /roosendaal London plane of De Kring and the Oriental plane: `location_precision` is "confirmed" with the evidence being an aerial frame viewed on 2026-10-13 (CLAUDE.md burn list names "aerial imagery or equivalent evidence" for pin passes; `check_pin_upgrades()` should be the judge of whether that counts, I did not run it).
 
+## 2026-10-13 (app half)
+
+App half (collect-identify, collect-intro, collect-place, collect-ticked, collection-tab-full, collection-tab; iPhone SE).
+
+- WARN APP: collect-intro, collect-place and collect-ticked are three more frames of the same "Add a tree" sheet (Take a photograph / Choose from your photos) over different backdrops; none shows a place step or a ticked state, so the screens they are named for ship unlooked-at. Same fault as 2026-10-12 (collect-away/compare/describe), still open: the sweep does not reach the later steps of the add flow.
+- WARN APP: collect-identify, "Which one is it?" with "Pick the one in your photograph" offers a single candidate, 325 m south, under the line "You are standing among trees we map", and its own description says "Nobody has established which lime it is, so tell us if you know." A choice of one that admits it may not be the tree, 325 m away, contradicts the sentence above it and is the data-model-sentence-in-a-row fault logged for search on 2026-10-10. Suggest the step not show when only one candidate exists or the row drop the "nobody has established" line.
+- NOTE APP: collection-tab-full, the Collected grid shows two identical placeholder tree tiles labelled only "Amsterdam" (different backdrop colours, no tree names), so a person cannot tell which two trees they collected. Likely fixture data without photographs; if real collected trees without a photo look like this, the tile needs the tree's name.
+
 ## 2026-10-12
 
 Web half: read the header search commit (baf8726c: strings in all eight languages, home and map hide the icon by CSS), the cookie bar copy, the register-matching commit (52ec9b7f) as built on turin and rouen, and scanned portland, trento, alicante, rouen, kaunas, oslo, setubal, valencia and barcelona for em dashes and banned words: none found.
