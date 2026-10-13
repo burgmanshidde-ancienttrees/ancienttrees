@@ -322,7 +322,8 @@
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
         "https://rijksmonumenten.nl/monument/511682/cantonspark-parkaanleg/baarn/",
-        "netherlands-lrmb.json, no. 1696955"
+        "netherlands-lrmb.json, no. 1696955",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696955&outFields=*&f=json"
       ],
       "access": "Free, public park, open 08:00-19:00 daily",
       "transport": "Baarn train station, roughly 15-20 minute walk; local bus to Cantonlaan/Javalaan area stops closer",
@@ -340,7 +341,9 @@
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696955",
         "url": null
       },
-      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1696955 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Landelijk Register Monumentale Bomen (Bomenstichting) no. 1696955 (data/registers/netherlands-lrmb.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 330,
+      "height_m": 20
     },
     {
       "id": "brn_008",

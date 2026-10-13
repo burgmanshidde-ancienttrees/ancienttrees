@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "baarn",
+    "kind": "enrich",
+    "tokens": 60000,
+    "trees": 0,
+    "note": "enrichment: LRMB records and measurements for the Cantonspark sequoia, the town hall plane and the Cantonspark tulip tree (record status Afgekeurd, so no register id given), register id only for Juliana's catalpa (register says Catalpa speciosa); dawn redwood, Groeneveld grove and copper beech have no LRMB record; 10 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "auckland",
     "kind": "enrich",
     "tokens": 47000,
