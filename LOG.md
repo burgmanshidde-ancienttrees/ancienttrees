@@ -12,6 +12,10 @@
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 
+## 2026-10-13 session: a reader's Paris plane goes live
+
+**New tree: par_034, The Great Lawn Plane of Parc Montsouris**, from a reader's app photograph sent on 10-05. The night run had filed it as a lead on the girth alone ("photograph not viewed"); the photograph shows a whole plane with a heart-shaped crown, Cadiz standard. The Ville de Paris tree inventory (les-arbres, record 113345, Grande pelouse, 480 cm, 25 m) sits 33 m from the reader's GPS fix, so the pin is confirmed from the inventory and the record is the written source. Not par_009 (670 cm, 190 m east). Age left open, French overlay added, Paris counts now 32. Deploy dispatched. Lesson for the runs: a lead verdict written without opening the photograph missed the best reader tree of the week.
+
 ## 2026-10-13 continuation (night-run)
 
 Product change: the Italian Genoa page is live as a translation (13 trees, i18ncheck clean; its English twin had 18 impressions). Not done: the four written-but-unmerged trees (Delft, Fort Worth, Leipzig, Salt Lake City) were merged on a trial and preflight refused every one (not rich, a Delft tree is within 5 m of a register-dead ash, Fort Worth story 83 words), so they stay out. I claimed Key West and dispatched a verify agent before the archive grep showed it was scouted on 10-04 with no per-tree register; I stopped the agent and released the claim, a repeat of the Miami waste. Findings for the English Genoa page: intro says twelve trees where there are 13, and gnv_009 opens by asking the reader to crush a leaf.
