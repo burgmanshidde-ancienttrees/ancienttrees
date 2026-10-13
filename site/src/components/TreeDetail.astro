@@ -42,7 +42,7 @@ import ShareButton from "./ShareButton.astro";
 import Sheet from "./Sheet.astro";
 import { speciesIcon } from "../lib/species-icons";
 import { latinHtml } from "../lib/latin";
-import { imgSrcset } from "../lib/images";
+import { imgSrcset, photoDims } from "../lib/images";
 import { locationIsApproximate } from "../lib/tree-copy";
 import { icon } from "../lib/icons";
 import { ui } from "../lib/i18n";
@@ -108,11 +108,20 @@ const google = `https://www.google.com/maps/dir/?api=1&destination=${loc.latitud
 const expandUrl = `${p.cityUrl}#tree=${encodeURIComponent(tree.id)}`;
 const movedTemplate = U.pinMoved(987654).replace("987654", "{m}");
 const visibleCrumbs = p.crumbs.slice(0, -1);
+// A PORTRAIT OR SQUARE LEAD on a desktop stands beside the facts at its own
+// shape instead of being cut into the wide strip (Hidde, 2026-10-13, on the
+// Munch-eika: "portrait trees really come out bad on desktop"; option A of the
+// benchmark, Wikipedia and Unsplash; half the photographed trees are portrait).
+// Landscape keeps the strip. The phone does not change. Decided from the stored
+// size, so the page is laid out right before the picture arrives.
+const leadDims = photoDims(photo);
+const tall = !!(photo && photo.url && leadDims.width && leadDims.width / leadDims.height < 1.25);
 // The seal, empty and filled, painted by aria-pressed like the bookmark.
 const sealOff = icon("seal-check", "bold", "ic seal-off");
 const sealOn = icon("seal-check", "fill", "ic seal-on");
 ---
-<main class="content-page td-page">
+<main class:list={["content-page", "td-page", { "td-tall": tall }]}
+  style={tall ? `--td-ar:${(leadDims.width / leadDims.height).toFixed(4)}` : undefined}>
   {/* WHERE YOU ARE, a thin row, and nothing else (Hidde, 2026-09-24: the
       white bar holding share "is logical in the app because of the back
       button, not on the web"). AllTrails' trail page on mobile web, read the
