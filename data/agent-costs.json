@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "christchurch",
+    "kind": "enrich",
+    "tokens": 76000,
+    "trees": 0,
+    "note": "enrichment: Albert Edward Oak NZ Tree Register CR/1119 with girth, height and the register's own pin; Cranmer and Latimer squares as 50 m sites (council layer, Approximate XY); Victoria Square withheld because a larger plane (TreeID 3257) stands 13 m away; Alpine Ash and Avon poplars open; 8 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "baltimore",
     "kind": "enrich",
     "tokens": 82000,

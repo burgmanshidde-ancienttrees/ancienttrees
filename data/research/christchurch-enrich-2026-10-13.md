@@ -1,0 +1,13 @@
+# Christchurch enrichment pass, 2026-10-13
+
+Sources opened: CCC open-data Tree layer (https://gis.ccc.govt.nz/server/rest/services/OpenData/Tree/FeatureServer/0, queried by bbox, protection "District Plan%"), NZ Tree Register page CR/1119, Overpass (OSM natural=tree with name/species tags).
+
+Closed
+- chc_002 Albert Edward Oak: NZ Tree Register CR/1119 (Historic tree, International interest). Register coordinate -43.531633, 172.622327, girth 473 cm at 1.4 m, height 24.20 m (observed 29 Nov 2012), planted Jul 1863, plaque text recorded, "In good health", cobra brace installed. OSM node 4880909248 is named "The Albert Edward Oak", within 5 m: pin confirmed. CCC layer TreeID 3750 (English Oak, DBH 1.51 m, height 28 m, 2015, comment "Albert oak, first tree in the Botanic Gardens") is the council twin; the two heights differ (24.2 vs 28), so the register figure is used. Register page says tree is on the south side near the woodland bridge; a 1998 council article reports root stress and monitoring.
+- chc_004, chc_005, chc_006: the council layer marks every position "Approximate XY", so no pin can be confirmed. Each tree sits in a named city square, so location_site (radius 50) is offered. What tells each apart, from the layer: Cranmer TreeID 3444 is the girthiest scheduled plane (DBH 1.61 m; the equal 3419 is "Removed"; next is an Oriental Plane at 1.42). Latimer TreeID 3414 is the girthiest (DBH 1.6 m; next 1.4 m). Victoria TreeID 3258 DBH 1.7 m. Note: a bigger London Plane, TreeID 3257, DBH 2.0 m, height 25.5 m, District Plan Significant, stands about 13 m west on Chester Street West (-43.527797, 172.634821); worth a look as the better trunk for Victoria Square.
+
+Left open
+- chc_001 Alpine Ash: council TreeID 3751 (DBH 3.71 m, height 34.5 m, observed 2020-01-16, Current) is "Approximate XY"; Botanic Gardens is a walk-through garden, so no location_site. No OSM node with a name or species. A web summary said it is listed as the largest in the NZ Tree Register but no register page was found, so no register URL is given.
+- chc_003 Avon poplars: a row on a riverbank (many scheduled poplars, several Removed or Stump per the layer), all "Approximate XY"; not a small site. Our pin matches TreeID 32536 (DBH 1.91 m, height 38 m, observed 2023-01-10, Current). Several neighbours were removed since 2020, so the row is thinning.
+- Season: the phenology files carry northern-hemisphere months (oak fruit "striking", planes and poplars nothing striking); no southern calendar exists, so no best_time set.
+- Overpass main server timed out once on a 600 m double query; the smaller query worked.
