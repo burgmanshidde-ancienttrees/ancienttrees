@@ -197,7 +197,16 @@
       "curation_status": "flagged",
       "notes": "Species and specific in-park location ('behind the cafe bar near the fountain statue') confirmed by two independent sources. No planting date documented anywhere found, so age is presented as a wide, honest estimate rather than invented; bloom month not confirmed precisely enough for Cadiz specifically to set a best_time field, so left unset rather than guessed. Photo found via iNaturalist observation 165918188 (CC BY 4.0) and viewed directly: a tree with the swollen, bottle-shaped, lightly thorned trunk characteristic of Ceiba speciosa, standing in a raised wooden planter among palms and park benches. Its place_guess reads only 'Cadiz', not 'Parque Genoves' specifically, but the coordinates sit close to the confirmed in-park dragon tree and pohutukawa observations, same photographer, same day (2023-06-06), and the species' distinctive trunk makes a different specimen elsewhere in the city unlikely; approved on that basis, weaker than the other two but not a guess. Coordinates tightened 2026-07-28 to this exact observation's own recorded GPS position (queried directly via the iNaturalist API); kept approximate since the underlying place_guess is only city-level, not park-specific.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its swollen, bottle-shaped trunk studded with conical thorns. It stands behind the cafe in Parque Genoves, near the fountain statue."
+      "how_to_recognise": "You can recognise it by its swollen, bottle-shaped trunk studded with conical thorns. It stands behind the cafe in Parque Genoves, near the fountain statue.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "label": "autumn, when large pink flowers with cream centres open on the prickly trunk",
+        "kind": "flowers"
+      }
     }
   ]
 }
