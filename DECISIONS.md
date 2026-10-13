@@ -1,5 +1,9 @@
 # Decisions
 
+## 2026-10-13: copy is checked by whoever writes it
+
+Rewriting the ambassador mails, the first draft asked people to "add or remove trees" (they cannot, they can only tell us), had a comma splice, a tense slip ("are on the list since we last wrote") and thanked twice. Hidde had to ask for the copy check: "please dont make me ask to copy check yourself when you are writing copy". Rule in CLAUDE.md under Copy layers: a session reads its own copy for grammar, tense, repetition and truth about the product before showing it. mailcheck/copycheck/pitchcheck enforce rules; they do not read for sense.
+
 ## 2026-10-10: the tree page's main button follows the distance, and a tree can be collected without a photograph
 
 Hidde asked whether directions should be the main button again and whether collecting should need a photograph; he chose from board "Tree page" on the Discover canvas ("ok makes sense").

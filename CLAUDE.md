@@ -183,7 +183,7 @@ komoot Pioneer convention: one person, one place, a badge. Most come from outrea
 - **Both surfaces by default**: a feature ships on web and app in the same change. A decision travels as data in the feed, never as a rule implemented twice (answers in the feed, rules on the server). `scripts/crosscheck.py`, `scripts/paritycheck.py` (data/parity-allow.json, data/cross-surface-allow.json), `check_faces_travel_to_the_app()`.
 - **Every language**: strings in `UIStrings` (site/src/lib/i18n.ts) for es/it/nl/de/pt/fr/ja. `check_translated_components_have_no_typed_text()`, `check_overlay_coverage()`, `check_every_language_gets_the_same_controls()` (open gaps in data/lang-gaps.json).
 - **One sheet for every overlay**: BrandSheet (app) / Sheet.astro (web); news is the snackbar. `scripts/sheetcheck.py`, data/sheet-allow.json.
-- **Copy layers**: product strings follow PRODUCT_COPY.md (`scripts/copycheck.py`); pitch copy follows drafts/PITCH_VOICE.md (`scripts/pitchcheck.py`); his mail voice drafts/HIS_VOICE.md (`scripts/mailcheck.py`). Public copy never narrates our process.
+- **Copy layers**: product strings follow PRODUCT_COPY.md (`scripts/copycheck.py`); pitch copy follows drafts/PITCH_VOICE.md (`scripts/pitchcheck.py`); his mail voice drafts/HIS_VOICE.md (`scripts/mailcheck.py`). Public copy never narrates our process. **Copy-check your own copy before showing it** (Hidde, 2026-10-13): grammar, tense, repeated words or thanks, and every claim true of the product (an ask the reader cannot do is false); the scripts catch rules, not this.
 
 ## QA
 
