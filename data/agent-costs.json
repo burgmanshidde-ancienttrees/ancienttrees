@@ -11433,6 +11433,22 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "lima",
+    "kind": "enrich",
+    "tokens": 49000,
+    "trees": 0,
+    "note": "enrichment: all five trees got their municipal heritage-tree ordinance as register (San Isidro 535-MSI, Miraflores 555-2020/MM, Pueblo Libre 570-MPL); Infobae height for the araucaria withheld (news, not authority); Chabuca cedar hit by a truck Sept 2026, noted in verify_notes; no girths exist in any ordinance; 6 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
+    "target": "fort-worth",
+    "kind": "enrich",
+    "tokens": 0,
+    "trees": 0,
+    "note": "session work: eleven season-only gaps (live oak, pecan, bur oak files mark no striking moment) dead-ended without a dispatch"
+   },
+   {
+    "date": "2026-10-13",
     "target": "baarn",
     "kind": "enrich",
     "tokens": 60000,
