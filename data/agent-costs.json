@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "tenerife+munich+paris+vienna+alicante+hinode+palma-de-mallorca",
+    "kind": "enrich",
+    "tokens": 64000,
+    "trees": 0,
+    "note": "enrichment: register records on hnd_001 and par_034, two Munich pins from Bayern LfU and Wikipedia list, par_027 location_site; 5 of 10 trees improved, 16 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "miami",
     "kind": "verify",
     "tokens": 104000,

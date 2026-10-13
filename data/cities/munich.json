@@ -661,17 +661,18 @@
       "age_estimate": "",
       "location": {
         "address": "",
-        "latitude": 48.17295,
-        "longitude": 11.61225,
+        "latitude": 48.17187627,
+        "longitude": 11.61091904,
         "neighbourhood": ""
       },
       "story": "This lime is already drawn on a plan of the park from 1807, which makes it one of very few trees in Munich with a paper trail.\n\nMunich's protection ordinance says so in as many words: historic lime, already present in plans from the year 1807. Read that as a floor rather than an age. A tree worth drawing was not a sapling, so it was standing when Bavaria was a kingdom barely a year old and when the Englischer Garten itself was under twenty years into its existence. The park had been laid out from 1789 on the orders of Elector Karl Theodor, at the urging of Benjamin Thompson, and was unusual in Europe for being open to everyone rather than to a court.\n\nWhat the tree has watched since is the whole modern history of the city, from the first generation of Müncheners allowed to walk in a royal park to whoever is crossing the meadow this afternoon.\n\nBeyond that 1807 drawing there is no age and no girth on record, so anything more precise would be invention. Large-leaved lime flowers in June, ahead of the other European limes, and an old one like this holds a broad, heavy, slightly lopsided crown that reads as a single dome from right across the grass.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "access": "Free, in the public Englischer Garten, west of the Friedrich-Ludwig-von-Sckell-Weg about 250 m south of the Amphitheater.",
       "verified_sources": [
         "https://stadt.muenchen.de/rathaus/stadtrecht/vorschrift/910/version2/0.html",
-        "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete%3Anaturdenkmal_punktfoermig&srsName=EPSG%3A4326&FILTER=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsEqualTo%3E%3Cfes%3AValueReference%3Eid%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3END-07044%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsEqualTo%3E%3C%2Ffes%3AFilter%3E"
+        "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete%3Anaturdenkmal_punktfoermig&srsName=EPSG%3A4326&FILTER=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsEqualTo%3E%3Cfes%3AValueReference%3Eid%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3END-07044%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsEqualTo%3E%3C%2Ffes%3AFilter%3E",
+        "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete%3Anaturdenkmal_punktfoermig (Bayern LfU Naturdenkmal register point ND-07044, 1 Sommerlinde, Gmk. Schwabing; about 155 m from our pin)"
       ],
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Englischer_Garten_Winter_Muenchen-5.jpg",
@@ -688,6 +689,12 @@
       "official_register": {
         "name": "Naturdenkmal (Bayern LfU), no. ND-07044",
         "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=natur_wfsschutzgebiete%3Anaturdenkmal_punktfoermig (Bayern LfU Naturdenkmal register point ND-07044, 1 Sommerlinde, Gmk. Schwabing; about 155 m from our pin)",
+        "date": "2026-10-13",
+        "moved_m": 155
       }
     },
     {
@@ -2602,17 +2609,18 @@
       "location": {
         "address": "Etzenhausener Straße, about 20 m south of the Prälat-Pfanzelt-Straße junction, near Dachau Stadt station, 85221 Dachau",
         "latitude": 48.26642,
-        "longitude": 11.43823,
+        "longitude": 11.43822,
         "neighbourhood": "Dachau, Etzenhausener Straße"
       },
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau",
         "https://commons.wikimedia.org/wiki/File:Linde_mit_Wegkreuz_-_N%C3%A4he_Bhf_DAH-Stadt_-_2023-09-03_-_136b.jpg",
-        "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Linde in Dachau auf Fl.Nr. 68' 48.26643, 11.43826"
+        "Bayern LfU Naturdenkmale register (data/registers/bayern-naturdenkmale.json) point 'Linde in Dachau auf Fl.Nr. 68' 48.26643, 11.43826",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau (Dachau no. 26, 1 Linde; within about 3 m of the Bayern LfU register point)"
       ],
       "access": "Free, beside a public street and a wayside cross; parked cars crowd the foot of it",
       "transport": "S2 from Munich to Dachau, roughly 25 minutes from central Munich; the tree stands near Dachau Stadt station (walk time not measured). Dachau is outside Munich city; label as Dachau.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "story": "The cross at the foot of this lime still carries a prayer for field and house, written when the ground around it was grain fields. The fields are gone. Today it is a street near Dachau Stadt station, and when this tree was photographed in September 2023 the parked cars stood almost up against its trunk.\n\nThat pairing is the reason to come. The Landkreis Dachau protects the lime as a natural monument, and the photograph shows the tree and the wayside cross together, which is also the easiest way to be sure you have found the right one. The cross has outlasted the farming its prayer was written for.\n\nThe county list puts the lime at about 100 years, without a date or a method, so read that as a rough band of 90 to 130 years. By that estimate it has stood here through most of Dachau's twentieth century. The list calls it only Linde, a lime, and does not say which kind. If you know, tell us, and a girth or height would be welcome too, since neither has been published.\n\nThe list places it on Etzenhausener Straße, about 20 metres south of the turning into Prälat-Pfanzelt-Straße, and two map points agree to within a few metres. Look for the cross first. Dachau is about 25 minutes from central Munich on the S2.",
       "how_to_recognise": "You can recognise it by the wayside cross at its foot, whose plaque carries a short prayer for field and house. It stands on Etzenhausener Straße, about 20 metres south of the Prälat-Pfanzelt-Straße turning.",
@@ -2624,7 +2632,13 @@
         "status": "missing"
       },
       "photos": [],
-      "verify_notes": "- Landkreis Dachau Naturdenkmal ND 26, 'Linde': 'Etzenhausener Strasse, ca. 20 m suedlich der Abzweigung Praelat-Pfanzelt-Strasse. Etwa 100 Jahre alt.'\n- Pin approximate: Wikipedia 48.26642, 11.43823 and LfU register 48.26643, 11.43826 agree within 3 m, no geotagged file; the Commons photo shows a lime with a wayside cross (Wegkreuz) whose plaque carries a short prayer for field and house, from when the land was grain fields. Cross plus tree is the identifying pair.\n- Commons caption (Martinus KE, 2023-09-03) notes many parked cars at the foot of the tree.\n- Alive: photographed in leaf 2023-09-03.\n- Modest age (about a century) and a street tree: weakest of this batch on remarkableness; the cross is its story. Transport: the S-Bahn station name and walk time were not confirmed by this pass, only the Commons phrase 'Naehe Bahnhof Dachau Stadt'; writer should say 'near Dachau Stadt station' without a minute count.\n- Photo candidate: File:Linde mit Wegkreuz - Nähe Bhf DAH-Stadt - 2023-09-03 - 136b.jpg, CC BY-SA 4.0."
+      "verify_notes": "- Landkreis Dachau Naturdenkmal ND 26, 'Linde': 'Etzenhausener Strasse, ca. 20 m suedlich der Abzweigung Praelat-Pfanzelt-Strasse. Etwa 100 Jahre alt.'\n- Pin approximate: Wikipedia 48.26642, 11.43823 and LfU register 48.26643, 11.43826 agree within 3 m, no geotagged file; the Commons photo shows a lime with a wayside cross (Wegkreuz) whose plaque carries a short prayer for field and house, from when the land was grain fields. Cross plus tree is the identifying pair.\n- Commons caption (Martinus KE, 2023-09-03) notes many parked cars at the foot of the tree.\n- Alive: photographed in leaf 2023-09-03.\n- Modest age (about a century) and a street tree: weakest of this batch on remarkableness; the cross is its story. Transport: the S-Bahn station name and walk time were not confirmed by this pass, only the Commons phrase 'Naehe Bahnhof Dachau Stadt'; writer should say 'near Dachau Stadt station' without a minute count.\n- Photo candidate: File:Linde mit Wegkreuz - Nähe Bhf DAH-Stadt - 2023-09-03 - 136b.jpg, CC BY-SA 4.0.",
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Dachau (Dachau no. 26, 1 Linde; within about 3 m of the Bayern LfU register point)",
+        "date": "2026-10-13",
+        "moved_m": 1
+      }
     }
   ]
 }

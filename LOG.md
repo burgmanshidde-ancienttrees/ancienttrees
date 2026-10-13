@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 night run 15:53 UTC: enrichment pass on seven small cities
+
+Visits last 7 days: 1750 (2360 page views). Inbox empty. Rung 2: the iOS app's scheduled run failed again; 220 of 221 UI tests passed, only `testContributeAsks` (signed out, tapping contribute did not open the sign-in sheet) failed. It needs a macOS simulator, so this run could not reproduce it and left it for a session. Rung 4: one enrichment pass (tenerife, munich, paris, vienna, alicante, hinode, palma-de-mallorca; 10 trees). Improved 5: Sajigami weeping hornbeam (national register page, 4.5 m), Montsouris plane (Paris tree database 480 cm / 25 m), two Munich pins (muc_020 from the Bayern Naturdenkmal register, muc_058 from the Dachau list), and a small named site for the Amur Cork Tree. 16 gaps dead-ended (no authority source reachable; Vienna and Paris planes have no striking season). Preflight 0 problems. Gap to note: enrich.py refuses a pin whose source is not a URL, so the first apply dropped both pins until I resubmitted them with URLs.
+
 ## 2026-10-13 session: the inbox answered; two Sardinian oaks from a botanist live
 
 **Live:** Sardinia 5 to 7 trees. The Cork Oak of Sa Tuppa (Orune) and the Downy Oak of Su Fundale (Talana), sent by Luisa Carta, curator of the Orto Botanico in Sassari, with Camarda (2020) as source, MASAF register ids, and her own photographs credited by name. Italian overlay done. Both flagged: Sa Tuppa's grazing land has no stated access status; Su Fundale's pin is approximate (her point and the register's are 78 m apart). Copenhagen FAQ and intro now say eight trees stand outside the city, not three (Hans Erik Lund's correction).

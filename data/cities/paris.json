@@ -1006,7 +1006,8 @@
       "story": "Paris classifies this Amur cork tree as one of its remarkable trees, and it carries proof of a rough century outdoors: a lightning scar runs down the trunk. It shares its small pocket garden, opposite the Collège de France in the Latin Quarter, with the two Oriental planes already listed here, though almost nobody looks past those two to notice it. Phellodendron amurense is a startling find in a French square, native to the river valleys of northeastern China and the Russian Far East, grown there and studied for a thick, corky, deeply furrowed bark long before anyone planted it for how it looks. This one went into the ground in 1925, and the city's own record has it at 14 metres tall with a trunk 1.8 metres round as of 2011, a girth built less by height than by branching low and wide, so the trunk balls up beneath the crown instead of running straight. Compound leaves shaped like an ash tree's turn a hard yellow every autumn. The measurement is now fifteen years old and the tree has kept growing since, and this pass found only the city's own account of it, so the numbers are given as recorded rather than confirmed twice over. Still worth the two extra steps past the planes: not every French square holds a tree from the Amur river valley with a lightning strike already behind it.",
       "verified_sources": [
         "https://www.paris.fr/equipements/squares-auguste-mariette-pacha-et-michel-foucault-2445 (city's own page for this square, names the phellodendron, 1925 planting and lightning scar)",
-        "https://fr.wikipedia.org/wiki/Square_Auguste-Mariette-Pacha (14m/1.80m circumference, 2011; its own footnote cites paris.fr's 'Les arbres remarquables' page, so this is the same underlying city source read twice, not a second independent one)"
+        "https://fr.wikipedia.org/wiki/Square_Auguste-Mariette-Pacha (14m/1.80m circumference, 2011; its own footnote cites paris.fr's 'Les arbres remarquables' page, so this is the same underlying city source read twice, not a second independent one)",
+        "https://www.paris.fr/equipements/squares-auguste-mariette-pacha-et-michel-foucault-2445 (the city's page names 'un etonnant phellodendron de l'Amour (1925)' with a lightning scar on the trunk in these two adjoining small squares)"
       ],
       "access": "Free, public square, open daily (24/24 in the checked period), dogs permitted on leash",
       "transport": "Maubert-Mutualité (M10) or Cluny-La Sorbonne (M10), 3-5 min walk",
@@ -1021,7 +1022,11 @@
       "height_m": 14.0,
       "verify_notes": "Height 24.0 m from the paris-arbres-remarquables register, matched on our own pin (0 m away).",
       "girth_cm": 180,
-      "how_to_recognise": "You can recognise it by its thick, corky, deeply furrowed bark and a lightning scar running down the trunk, much smaller than the two planes sharing its garden facing the College de France."
+      "how_to_recognise": "You can recognise it by its thick, corky, deeply furrowed bark and a lightning scar running down the trunk, much smaller than the two planes sharing its garden facing the College de France.",
+      "location_site": {
+        "name": "Square Michel-Foucault / Square Auguste-Mariette-Pacha",
+        "radius_m": 50.0
+      }
     },
     {
       "id": "par_028",
@@ -1385,7 +1390,8 @@
       "how_to_recognise": "The plane with the broad, rounded, heart-shaped crown at the edge of the Grande pelouse, the big central lawn, with shrubs behind it. The classified 6.7 metre plane is a different tree on the east side of the park.",
       "story": "A reader sent us this plane, and the photograph makes the case for it: a London plane at the edge of the great lawn of Parc Montsouris, its crown so full and even that it reads as a heart against the sky. The city's own tree inventory lists it on the Grande pelouse at 480 centimetres around the trunk and 25 metres tall. Paris has not classed it as remarkable, which is why no list of the park's famous trees mentions it.\n\nThe park's classified plane, the one every guide names, stands about 190 metres to the east and is thicker, at 6.7 metres round. The two make an easy pair on one walk: the famous trunk first, then this one, which you see whole from the grass, roots to crown, with the lawn opening in front of it.\n\nNobody has dated it. No record we have found says when it was planted, so we leave its age open. If you know, from a park plan, an old photograph or a plaque, tell us.\n\nMontsouris is also the park of Jacques Prévert's poem Le Jardin, from his collection Paroles, about a kiss there one winter morning, “au parc Montsouris à Paris”. The reader who found this tree sent us the poem along with it.",
       "verified_sources": [
-        "https://opendata.paris.fr/explore/dataset/les-arbres/table/?q=idbase%3D113345"
+        "https://opendata.paris.fr/explore/dataset/les-arbres/table/?q=idbase%3D113345",
+        "https://opendata.paris.fr/explore/dataset/les-arbres/table/?q=idbase%3D113345 (circonferenceencm 480, hauteurenm 25, stade Mature; the city's record for this exact tree, which it does not flag remarquable; paris.fr's park sheet lists a 580 cm / 40 m plane but I could not tie it to this trunk, so it is not used)"
       ],
       "found_by_reader": {
         "sighting_id": "d9c08351-03d1-4b51-a6ec-972f08d308e8",
@@ -1417,7 +1423,11 @@
         "note": "The pin is the Ville de Paris inventory point for tree 113345; the reader's GPS fix, where they stood to take the photograph, is 33 m from it."
       },
       "girth_cm": 480,
-      "height_m": 25.0
+      "height_m": 25.0,
+      "official_register": {
+        "name": "Les arbres (Ville de Paris open data, Direction des Espaces verts et de l'Environnement), no. 113345",
+        "url": null
+      }
     }
   ]
 }
