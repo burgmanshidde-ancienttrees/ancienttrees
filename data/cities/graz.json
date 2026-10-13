@@ -55,7 +55,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 5612,
-        "height": 8384
+        "height": 8384,
+        "taken_month": 8
       },
       "curation_status": "flagged",
       "notes": "Register (id 118) plus Wikipedia's Naturdenkmal list agree within 3m on location. Register gives species as Acer campestre; Wikipedia's entry only says 'Ahorn' (maple, genus level), so species rests on the register alone. No age or girth found in either source.",
@@ -94,7 +95,8 @@
         "attribution": "Gerdsch, via Wikimedia Commons",
         "status": "approved",
         "width": 2506,
-        "height": 1670
+        "height": 1670,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Register (id 117) and Wikipedia geocode within 2m; Volksgarten's own Wikipedia article independently confirms the park holds several Naturdenkmal trees. The park's oak-row age (70-100 years) is NOT applied to this specific tree since no source confirms it belongs to that row (bridge-claim avoided). No girth or planting date found.",
@@ -141,7 +143,8 @@
         "attribution": "Gerdsch, via Wikimedia Commons",
         "status": "approved",
         "width": 1670,
-        "height": 2506
+        "height": 2506,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Register (id 119) and Wikipedia geocode within 3m. Register and Wikipedia use slightly different Latin binomials for the same London Plane hybrid (Platanus x hispanica / Platanus x acerifolia); recorded here as Platanus x acerifolia to match this project's existing canonical name for the species (hard rule 9). A dated Commons photo filed under Naturdenkmal 1290 independently corroborates the tree stands in the Volksgarten itself. No age or girth found. Part of a three-tree Volksgarten cluster with grz_002 and grz_004.",
@@ -179,7 +182,8 @@
         "attribution": "Gerdsch, via Wikimedia Commons",
         "status": "approved",
         "width": 1670,
-        "height": 2506
+        "height": 2506,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Register (id 120) and Wikipedia geocode within 3m. Confirmed as a separately registered tree on a different cadastral plot (742/6) from the Muhlgasse pair (742/2), not a duplicate registration. No age or girth found.",
@@ -255,7 +259,8 @@
         "attribution": "Gerdsch, via Wikimedia Commons",
         "status": "approved",
         "width": 1670,
-        "height": 2506
+        "height": 2506,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Register (id 89) and Wikipedia geocode within 2m. A dated 2014 Commons photo, filed under the Naturdenkmal 1138 category, independently shows the tree standing at that date. No age or girth found in any source checked.",
@@ -426,7 +431,8 @@
         "attribution": "Kulac, via Wikimedia Commons",
         "status": "approved",
         "width": 2848,
-        "height": 4288
+        "height": 4288,
+        "taken_month": 6
       },
       "curation_status": "flagged",
       "notes": "Flagged for two narrow reasons, not existence: (1) absent from the City of Graz's own live municipal GIS layer (checked directly; the other nine Eggenberg trees all appear in it, this one does not), so the two-source bar rests on Austria's national register (via Wikipedia) plus a dated, geo-tagged Commons photo rather than two independent GIS layers. (2) Alive-now evidence is a single 2014 photograph, 12 years old, no more recent sighting found. Location itself is solid: register coordinates and photo GPS agree to six decimal places.",
@@ -473,7 +479,8 @@
         "attribution": "Gerdsch, via Wikimedia Commons",
         "status": "approved",
         "width": 1670,
-        "height": 2506
+        "height": 2506,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Register (id 27) and Wikipedia's independent Naturdenkmal list agree on coordinates within 4.5m. A dated Commons photo (Platane Elisabethstrasse 48.JPG, taken 14 May 2014, GPS-tagged at the exact register coordinate) independently shows the tree alive at that date; no more recent sighting found. Register lists species as Platanus x hispanica; recorded here as Platanus x acerifolia to match this project's existing canonical name for the species (hard rule 9). Reverse-geocoding the coordinate (Nominatim) returns a bridge feature (man_made=bridge) on Elisabethstrasse at this exact point, independent corroboration of a streamside public setting rather than a claim joining separate sources. No age or girth found.",
@@ -588,7 +595,8 @@
         "attribution": "Christian Pirkl, via Wikimedia Commons",
         "status": "found_needs_check",
         "width": 1600,
-        "height": 2400
+        "height": 2400,
+        "taken_month": 5
       },
       "photos": [],
       "notes": "Graz Naturdenkmale register id 69 (Styrian Naturdenkmal 1121), owner public, species only. Geotagged Commons photo (Christian Pirkl, 2014-05-08) within about 1 m of the register point. No age, girth, height or recent alive evidence; the 2014 photo shows a storm-snapped top, so the page asks readers how it looks now.",

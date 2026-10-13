@@ -99,7 +99,8 @@
         "approved_by": "viewing pass",
         "approved_on": "2026-10-12",
         "width": 3648,
-        "height": 2736
+        "height": 2736,
+        "taken_month": 8
       },
       "how_to_recognise": "You can recognise it by its single, thick stem standing over the yard of the Erentrudishof farm shop. It stands on the organic farm's grounds, run by Stift Nonnberg convent at Morzg.",
       "official_register": {
@@ -229,7 +230,8 @@
         "attribution": "Microble, via Wikimedia Commons",
         "status": "approved",
         "width": 4000,
-        "height": 6000
+        "height": 6000,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -272,7 +274,8 @@
         "attribution": "Microble, via Wikimedia Commons",
         "status": "approved",
         "width": 4000,
-        "height": 6000
+        "height": 6000,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -308,7 +311,8 @@
         "attribution": "Microble, via Wikimedia Commons",
         "status": "approved",
         "width": 4000,
-        "height": 6000
+        "height": 6000,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -424,7 +428,8 @@
         "approved_by": "viewing pass",
         "approved_on": "2026-10-12",
         "width": 4000,
-        "height": 6000
+        "height": 6000,
+        "taken_month": 5
       },
       "photos": [],
       "official_register": {
@@ -623,7 +628,8 @@
         "attribution": "Flanierer, via Wikimedia Commons",
         "status": "approved",
         "width": 4912,
-        "height": 3264
+        "height": 3264,
+        "taken_month": 3
       },
       "photos": [],
       "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00198 (Katastralgemeinde Gois, plot 341/13 plus surrounding ground), protected since 1985-11-26 per the de.wikipedia list (the preceding row's 1972 date belongs to a different entry); the list gives height 'gut 25 m', crown 20-25 m, girth 5 m. SalzburgWiki independently repeats ca. 25 m / 5 m / 20-25 m and calls it a landscape-shaping Naturdenkmal listed in the Salzburger Naturschutzbuch; SalzburgWiki may derive from the same register so treat the two as one family of data. No age anywhere: leave empty, page asks reader (girth 5 m of an oak in open pasture suggests a few centuries but no basis written down). Pin: register polygon centroid 47.768447,12.959484; Commons photos by Flanierer (CC BY-SA 4.0, 2025-03-08, a dozen frames) carry exactly the same coordinate, so that is not independent pin evidence beyond register; polygon is 616 m2 around one tree so centroid is within a few metres of the trunk; marked confirmed on that basis. Alive: lifecheck RECENT 2025-03-08. PHOTO: openly licensed photographs of this tree exist on Commons (category Tofferl-Eiche, Flanierer, CC BY-SA 4.0, 2025). Photo-or-pin: both. Out-of-town (7 km), not a walk from the other trees.",
@@ -664,7 +670,8 @@
         "attribution": "Flanierer, via Wikimedia Commons",
         "status": "approved",
         "width": 3264,
-        "height": 4912
+        "height": 4912,
+        "taken_month": 3
       },
       "photos": [],
       "verify_notes": "Register only: Land Salzburg Naturdenkmal NDM00231 (Katastralgemeinde Thurnberg, plot 733), protected 1990-12-07. De.wikipedia list (Hallein district) quotes the monument text: height 25 m, crown 18-20 m, girth at breast height 4.20 m at time of survey, branching at 3 m, protected area 20 m radius around the trunk (plots 731/1, 729, 737). Wikidata Q133481867. No age. Pin: register centroid 47.717512,13.112974, list coordinate 47.717543,13.112956; Commons photographs 2025-03-22 (Flanierer, CC BY-SA 4.0, geotagged 6.5 m from the register point) show a single large maple with a hiking signpost at its foot, so the pin is on the trunk. Alive: lifecheck RECENT 2025-03-22; crown in 2025 photo is open, bare in March, trunk ivy-covered. PHOTO exists on Commons (category Bergahorn beim Schartenbauern, Puch bei Hallein, CC BY-SA 4.0). Photo-or-pin: both. Outlying, a rural stop, not a walk from the other Salzburg trees. Recognition (from the 2025 photo): single maple in sloping meadow, ivy on lower trunk, waymarker beside it, woodland behind.",
@@ -713,7 +720,8 @@
         "attribution": "Eweht, via Wikimedia Commons",
         "status": "approved",
         "width": 1024,
-        "height": 682
+        "height": 682,
+        "taken_month": 4
       },
       "photos": [],
       "verify_notes": "Register: Land Salzburg Naturdenkmal NDM00100, protected 1972, area 1,191 m2. The register text (quoted on de.wikipedia list): four trees planted around 1810 along the Freisaalweg (leading from Akademiestraße to Schloss Freisaal) as symbolic protection around an old Marian wayside shrine (Marienbildstock). That is a documented planting date for these four trees themselves, not a bridge from the garden. Species is not stated in the register beyond 'Linden' (genus only; page should ask the reader). Not measured: no girth or height in the sources seen. Four separately sited trunks around ONE shrine: treated as one compact ensemble with one obvious place to stand (the shrine), pin = register centroid and Commons geotag (47.788880,13.055419, identical) which lands on the shrine. Commons photo Linden in Freisaal 01.jpg (Eweht, 2014-04-07, CC BY-SA 3.0 AT, geotagged at that point) shows four large bare-crowned limes around the shrine on a path in an open meadow with Hohensalzburg fortress on the hill behind. Alive: lifecheck RECENT, iNaturalist observation 2026-08-27 at the spot (https://www.inaturalist.org/observations/394935812; proves something was recorded there, not which trunk). Photo-or-pin: both. Same area as szb_010 (Hornbeam of Freisaalweg, about 380 m away): walkable pair. Earlier lead in leads/salzburg.json is superseded. Recognition: four limes around a small wayside shrine on the meadow path, the fortress visible behind.",
@@ -767,7 +775,8 @@
         "attribution": "Heinz-Peter Deska, via Wikimedia Commons",
         "status": "found_needs_check",
         "width": 1263,
-        "height": 1140
+        "height": 1140,
+        "taken_month": 7
       },
       "photos": [],
       "official_register": {
@@ -806,7 +815,8 @@
         "attribution": "Flanierer, via Wikimedia Commons",
         "status": "approved",
         "width": 3264,
-        "height": 4912
+        "height": 4912,
+        "taken_month": 4
       },
       "photos": [],
       "official_register": {

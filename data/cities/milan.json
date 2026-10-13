@@ -96,7 +96,8 @@
         "attribution": "Ugodiamante, via Wikimedia Commons",
         "status": "approved",
         "width": 3096,
-        "height": 4128
+        "height": 4128,
+        "taken_month": 3
       },
       "curation_status": "flagged",
       "notes": "No planting date or age documented anywhere found; age range is a wide, honest estimate from trunk girth alone, bounded loosely by the park's 1784 founding. A candidate Commons photo (Platano_secolare_ai_Giardini_Montanelli.jpg) was viewed and rejected: its caption identifies it only as 'a centuries-old plane tree' in the gardens generally, and the park holds several large planes, so it could not be confirmed as this specific, individually surveyed specimen. The photograph now on the page is a different file (Albero_secolare_nei_giardini_di_Milano.jpg) and it is attached to this tree by evidence rather than by caption: it is the image of Wikidata Q55741802, a pianta monumentale whose own coordinate sits 14 m from our pin, with the next registered plane in the gardens 260 m away.",
@@ -136,7 +137,8 @@
         "attribution": "Sordelli, via Wikimedia Commons",
         "status": "approved",
         "width": 6000,
-        "height": 4724
+        "height": 4724,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "The 164-year age figure comes from RAMI's registry only; the second source (comune.milano.it) confirms species, location and monumental status but not that specific number, so the age is flagged as single-sourced.",
@@ -225,7 +227,8 @@
         "attribution": "Fontema, via Wikimedia Commons",
         "status": "approved",
         "width": 2560,
-        "height": 1920
+        "height": 1920,
+        "taken_month": 6
       },
       "curation_status": "flagged",
       "notes": "The 136-year age figure comes from RAMI's registry only; independent sources confirm the tree, species and garden history but not that specific figure, so it is flagged as single-sourced.",
@@ -266,7 +269,8 @@
         "attribution": "Saggittarius A, via Wikimedia Commons",
         "status": "approved",
         "width": 3456,
-        "height": 4004
+        "height": 4004,
+        "taken_month": 7
       },
       "curation_status": "ai_generated",
       "notes": "The 'oldest tree in Milan' superlative repeated in some local press is not adopted here, per hard rule 8: the ginkgo pair at the Orto Botanico di Brera (mil_004) is considerably older and better documented. The 1924 planting/memorial story is corroborated by two independent press sources plus RAMI's registry entry.",
@@ -314,7 +318,8 @@
         "attribution": "Carlo Dell'Orto, via Wikimedia Commons",
         "status": "approved",
         "width": 2735,
-        "height": 4103
+        "height": 4103,
+        "taken_month": 5
       },
       "curation_status": "ai_generated",
       "notes": "Photo fetched and viewed directly 2026-07-28: a tall, mature tree with a substantial trunk towering over a park path with children and bicycles, the filename itself naming this exact park and species ('Parco Trotter, quercia rossa centenaria', centenarian red oak), consistent with this entry's own description of the tallest tree on the list.",
@@ -384,7 +389,8 @@
         "attribution": "Alberto Panzani, via Wikimedia Commons",
         "status": "approved",
         "width": 2594,
-        "height": 6016
+        "height": 6016,
+        "taken_month": 9
       },
       "curation_status": "flagged",
       "notes": "Genuine age dispute between a 2013 dendrochronological core sample (about 187 years) and the popular Napoleonic-era legend (over 250 years); presented as a range with the scientific figure given more weight, per hard rule 8/P7. This is a different, still-living tree from the similarly aged plane at Villa Litta (also in Affori), which was felled in 2015 after a fungal disease; only a trunk cross-section of that one survives, noted in this city's FAQ rather than listed as a tree to visit. Pin corrected 2026-07-28, about 490m: Italy's volunteer-run RAMI tree registry (ilregistrodeglialberi.it) names this exact tree 'Platano di Affori' at Via Astesani, and OpenStreetMap/Nominatim independently geocodes 'Via Astesani, Affori' to within about 7m of RAMI's own coordinate, two independent sources converging tightly. Upgraded to confirmed.",
@@ -431,7 +437,8 @@
         "attribution": "Carlodell, via Wikimedia Commons",
         "status": "approved",
         "width": 2900,
-        "height": 1635
+        "height": 1635,
+        "taken_month": 10
       },
       "curation_status": "flagged",
       "notes": "No age or planting date documented anywhere found; age range is a wide, honest estimate from trunk girth and the park's 1893 redesign, not a measured figure.",
@@ -566,7 +573,8 @@
         "attribution": "Sordelli, via Wikimedia Commons",
         "status": "approved",
         "width": 5096,
-        "height": 4967
+        "height": 4967,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Existence, species and size from the national MASAF register (Pterocarya fraxinifolia, Giardini Indro Montanelli, girth 550 cm, height 20 m). The second source is the Comune di Milano's monumental-tree page for the Parco Sempione wingnut, which names this tree by the city's own inventory number ('Assieme a quella dei Giardini Montanelli, Pterocaria VTA 36443, e la pterocaria piu datata tra quelle presenti in citta'), confirming both its existence and its standing as one of the two oldest of its species in the city. No age figure exists anywhere; the range is an honest estimate from girth. Only one source publishes a coordinate, so the pin stays approximate. Photo downloaded and viewed at 960px this pass and approved against the Cadiz standard: the tree fills the frame in flat May daylight, the broad low crown and the multi-stemmed base are both readable, and the centre band of the card crop is all tree. Its description reads 'Caucasian wingnut, Giardini Pubblici, Milano' and its photographer, Sordelli, also took the hackberry photo already published on mil_003 in this same park; the file carries no geotag, but the register lists only one wingnut in these gardens, so the identification is safe. NOTE for a later pass: mil_010's story calls the Sempione wingnut's companion 'a companion specimen nearby', which the comune source shows is this tree, 1.6 km away in a different park, not a neighbour.",
@@ -606,7 +614,8 @@
         "attribution": "Ysogo, via Wikimedia Commons",
         "status": "approved",
         "width": 4608,
-        "height": 3456
+        "height": 3456,
+        "taken_month": 7
       },
       "curation_status": "flagged",
       "notes": "Two independent sources: the Comune di Milano monumental-tree page (VTA 44854, trunk diameter 195 cm, crown reduced, fungal decay, periodic checks) and the national MASAF register (Platanus acerifolia, Giardino Roberto Balzen, Corso di Porta Romana 112-116, girth 600 cm, height 16 m; the register's spelling 'Balzen' is a typo for Bazlen). The two coordinates agree to within about 22 m, which is why this pin is confirmed rather than approximate. No age is published by either source; the range is estimated from girth. The tree is alive and monitored as of the comune page's last update, but its own manager says it stays only while it is safe above the playground, so a future pass should re-check before this entry ages.",
@@ -759,7 +768,8 @@
         "status": "held",
         "note": "Fine photograph of a very tall plane 70 m from the pin, but the file names no tree and three other named planes stand within 300 m (mil_022 at 107 m).",
         "width": 2908,
-        "height": 3877
+        "height": 3877,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -984,7 +994,8 @@
         "attribution": "Alberto Panzani, via Wikimedia Commons",
         "status": "approved",
         "width": 4003,
-        "height": 5188
+        "height": 5188,
+        "taken_month": 9
       },
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 23/F205/MI/03",
@@ -1211,7 +1222,8 @@
         "attribution": "Mauro Molinaro, via Wikimedia Commons",
         "status": "approved",
         "width": 2000,
-        "height": 3000
+        "height": 3000,
+        "taken_month": 9
       },
       "photos": []
     }

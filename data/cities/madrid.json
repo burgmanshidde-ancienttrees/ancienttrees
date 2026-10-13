@@ -54,7 +54,8 @@
         "attribution": "UAM Biblioteca y Archivo, Wikimedia Commons",
         "status": "approved",
         "width": 2448,
-        "height": 3264
+        "height": 3264,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Age is presented as a range because sources genuinely and substantially disagree (1633 legend vs. post-1814 estimates from city technicians), per the site's honesty standard rather than picking one figure. Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 4565394685, \"Ahuehuete del Parterre\"), which independently corroborates a Comunidad de Madrid singular-tree ficha reporting near-identical coordinates (40.41564, -3.68798) for the same tree. Photo URL fixed 2026-07-28: the stored thumb path (commons/thumb/e/e4/...) 404'd, a genuine dead link caught by a site-wide approved-photo spot-check, not just a rate limit; Commons' own API gives this exact filename's real path as f/f2, fetched and viewed directly there to confirm it is still the same fenced, multi-trunked Ahuehuete before swapping the URL.",
@@ -178,7 +179,8 @@
         "attribution": "EnriqueSN, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 9
       },
       "curation_status": "ai_generated",
       "notes": "This entry represents the grove of bald cypresses in the pond as a group, of which one specific specimen holds official singular tree status; sources do not distinguish which exact tree in the group carries the designation. Coordinates corrected 2026-07-26 to OpenStreetMap's own node for this tree (id 3919471940, named \"Ciprés Calvo del Estanque del Palacio de Cristal\", matching this entry's Spanish Wikipedia source), which at least pins the specific specimen the community has mapped under that name, even though which physical trunk in the pond that corresponds to is still not independently surveyed.",
@@ -217,7 +219,8 @@
         "attribution": "EnriqueSN, via Wikimedia Commons",
         "status": "approved",
         "width": 3842,
-        "height": 5030
+        "height": 5030,
+        "taken_month": 9
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3170278091, \"Ciprés del Real Jardín Botánico\"), inside the garden on the Plano de la Flor terrace rather than the garden's street entrance.",
@@ -259,7 +262,8 @@
         "attribution": "EnriqueSN, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 9
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates corrected 2026-07-26 to the tree's own OpenStreetMap node (id 3170278093, \"Olmo del Caúcaso del Real Jardín Botánico\", tagged Zelkova carpinifolia matching this entry's species).",
@@ -369,7 +373,8 @@
         "attribution": "Luis Fernandez Garcia, via Wikimedia Commons",
         "status": "approved",
         "width": 2048,
-        "height": 1536
+        "height": 1536,
+        "taken_month": 3
       },
       "curation_status": "flagged",
       "notes": "No source found gives a specific planting date or precise current age for this tree; the age range given is bounded only by the species' 1840 introduction to Europe and general knowledge of Atlas cedar growth rates, stated honestly as an estimate rather than a researched figure. Coordinates corrected 2026-07-26 to a named \"Cedro del Atlas\" node in OpenStreetMap (id 10261810384), the only tree in Parque del Oeste tagged with that Spanish common name, about 300m from the previous estimate but inside the same park and consistent with the Fuente de la Salud/Ruperto Chapi area sources describe. Photo added 2026-07-29: File:Cedrus atlantica 20090311.jpg (CC BY 3.0), whose own Commons description explicitly names Cedrus atlantica, Parque del Oeste, Madrid. Downloaded and personally viewed: a genuine, correctly-identified Atlas cedar branch and needle close-up, species confirmed by the silvery-blue needle clusters. Held at found_needs_check rather than approved: the photo carries no GPS data and is a needle macro with no trunk or landmark in frame, so it cannot positively confirm this is El Abuelo specifically rather than another Atlas cedar elsewhere in the park (OSM shows only one tree named that way, which favours it being the same tree, but the photo itself can't prove it).",
@@ -488,7 +493,8 @@
         "attribution": "EnriqueSN, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 9
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -577,7 +583,8 @@
         "attribution": "EnriqueSN, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 9
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -617,7 +624,8 @@
         "attribution": "EnriqueSN, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 9
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -659,7 +667,8 @@
         "attribution": "Garuskas, via Wikimedia Commons",
         "status": "approved",
         "width": 2205,
-        "height": 4080
+        "height": 4080,
+        "taken_month": 4
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",

@@ -53,7 +53,8 @@
         "attribution": "Philafrenzy, via Wikimedia Commons",
         "status": "approved",
         "width": 3723,
-        "height": 3438
+        "height": 3438,
+        "taken_month": 7
       },
       "curation_status": "ai_generated",
       "notes": "Was single-sourced to monumentaltrees.com, which CLAUDE.md's own research workflow says to use for verification only, not as a citable source; London's single most prominent claim (\"the oldest living thing in London\") stood on one non-citable link. Added exploring-london.com as a genuine independent second source, checked directly: it corroborates the age range (1,000-2,000 years), the girth (25ft, matching this entry's \"nearly eight metres\"), the tree's Great Trees of London listing, and the 2008 Conservation Foundation/Ancient Yew Group/Barnet Council survey that named it possibly London's oldest tree.",
@@ -96,7 +97,8 @@
         "attribution": "AndyScott, via Wikimedia Commons",
         "status": "approved",
         "width": 3000,
-        "height": 1999
+        "height": 1999,
+        "taken_month": 10
       },
       "curation_status": "ai_generated",
       "notes": "Coordinates taken from the tree's own Woodland Trust Ancient Tree Inventory entry (ID 40404), grid reference TQ1938873126, converted from OSGB36 to WGS84. The ATI page carries no language obscuring or rounding this location (unlike some sensitive ATI entries), and the tree is a well-known, publicly signposted landmark, so the precise grid reference is used directly rather than the previous general \"near Pen Ponds\" estimate.",
@@ -137,7 +139,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 9
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Look Up London both independently corroborate the St Peter Cheap site, the 1853 cab-company advert, the 1901 'most valuable tree' claim and the Wordsworth connection.",
@@ -170,7 +173,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 6
       },
       "curation_status": "ai_generated",
       "notes": "Two independent sources now back the planting date, Bouverie attribution, 2008 valuation and Great Trees of London designation. This entry describes the square's plane trees collectively (30+ specimens, one individually named and valued); coordinates mark the square itself rather than one specific trunk among many, so location_precision stays approximate honestly.",
@@ -212,7 +216,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 4032,
-        "height": 3024
+        "height": 3024,
+        "taken_month": 8
       },
       "curation_status": "ai_generated",
       "notes": "Replaces the dead/fallen Queen Elizabeth's Oak on 2026-07-27 per Hidde's living-trees rule. Coordinates upgraded 2026-07-28 to Woodland Trust ATI open-data record Id 2919 (girth 7.26m, Ancient, alive, verified 2021), the only ancient chestnut in that corner of the Flower Garden and ~30m from the approved photo's EXIF point, so precision is confirmed. Great-Tree identification is convergent (Wikipedia lists the Great Tree chestnut in the Flower Garden; this is the garden's largest ancient chestnut) and phrased as attributed. Deliberately NOT claiming Tree of the Year 2023: that shortlisted chestnut stands in the avenue near the Roman Temple, ~350m away. Age derives from the documented 1660-64 planting, not a ring count.",
@@ -251,7 +256,8 @@
         "attribution": "Ethan Doyle White, via Wikimedia Commons",
         "status": "approved",
         "width": 3448,
-        "height": 4592
+        "height": 4592,
+        "taken_month": 8
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Morus Londinium (a Woodland Trust/academic mulberry-mapping project) and London Remembers both corroborate the 1608 planting and James I connection independently. Location corrected the same pass: a systematic geocode audit flagged the stored coordinate as 1055m from Charlton House; Nominatim's own geocode of Charlton House, Charlton Road places it at 51.4807, 0.0371 (postcode SE7 7TH, not the stored SE7 8RE), matching this entry's own 'Charlton, South East London' neighbourhood. Fixed.",
@@ -285,7 +291,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 7
       },
       "curation_status": "ai_generated",
       "notes": "Species corrected 2026-07-22: original data said Pedunculate Oak (Quercus robur), but Fulham Palace's own site and independent photo captions identify it as Holm Oak (Quercus ilex), possibly the oldest in Britain. Photo now found. Location corrected 2026-07-28: a geocode audit flagged the stored coordinate as roughly 1km from Fulham Palace itself; Nominatim's own geocode agrees on two separate queries (51.4704-51.4705, -0.2152 to -0.2154), one of them matching this entry's own postcode (SW6 6EA) exactly. Moved onto the palace grounds; still confirmed since the palace itself, not just a neighbourhood, is now correctly pinpointed.",
@@ -318,7 +325,8 @@
         "attribution": "Deror avi, via Wikimedia Commons",
         "status": "approved",
         "width": 3000,
-        "height": 4000
+        "height": 4000,
+        "taken_month": 7
       },
       "curation_status": "ai_generated",
       "notes": "Both named sources place the five trees at distinct spots across Kew (the pagoda tree by the Hive, the oriental plane by the Orangery, the elm and locust each their own specimen), so a single coordinate for the group is a garden-level estimate rather than a pin on any one trunk; location_precision stays approximate honestly rather than picking one tree's spot to represent all five.",
@@ -366,7 +374,8 @@
         "attribution": "Robin Webster, via Geograph Britain and Ireland / Wikimedia Commons",
         "status": "approved",
         "width": 1024,
-        "height": 768
+        "height": 768,
+        "taken_month": 4
       },
       "curation_status": "ai_generated",
       "notes": "Source URLs backfilled 2026-07-28: Atlas Obscura and Morus Londinium (a Woodland Trust/academic mulberry-mapping project) both corroborate the Evelyn garden, the tree's age and the Peter the Great story; both also independently note historians doubt Peter himself planted it, consistent with this entry's own careful phrasing ('may have survived even that') rather than crediting him with planting it. Location corrected the same pass: the stored coordinate was about 700m from Sayes Court Street itself, whose Nominatim geocode (51.484, -0.031) agrees closely with the independently found Sayes Court Park coordinate from a parks-data source (51.4848, -0.0310). Moved onto the actual street/park cluster.",
@@ -399,7 +408,8 @@
         "attribution": "Matt Brown, via Wikimedia Commons",
         "status": "approved",
         "width": 4032,
-        "height": 3024
+        "height": 3024,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Coordinates updated 2026-07-22 from the EXIF geotag on a CC BY 4.0 photo captioned 'Barney of Barn Elms' (Matt Brown, May 2026). A second independent source found 2026-07-26: Open Plaques records a Great Trees of London commemorative plaque for this exact tree ('the oldest in London... platanus x hispanica') at 51.47441, -0.23106, about 9 metres from the EXIF position, close enough to be the same tree. Location precision upgraded on that agreement. Story rewritten 2026-07-28 to reach the standard word count, grounded entirely in facts already established above, no new claims added.",
@@ -501,7 +511,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 4032,
-        "height": 3024
+        "height": 3024,
+        "taken_month": 6
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -565,7 +576,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 9
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -598,7 +610,8 @@
         "attribution": "Matt Brown, via Wikimedia Commons",
         "status": "approved",
         "width": 3926,
-        "height": 3762
+        "height": 3762,
+        "taken_month": 10
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -663,7 +676,8 @@
         "attribution": "Paulitzer, via Wikimedia Commons",
         "status": "approved",
         "width": 3264,
-        "height": 2448
+        "height": 2448,
+        "taken_month": 10
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -846,7 +860,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 4032,
-        "height": 3024
+        "height": 3024,
+        "taken_month": 7
       },
       "how_to_recognise": "You can recognise it by the circular green plaque at its foot naming it a Great Tree of London and one of the largest of its species in the country. It stands by the sports area and playground in Ravenscourt Park."
     },
@@ -881,7 +896,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 3024,
-        "height": 4032
+        "height": 4032,
+        "taken_month": 8
       }
     },
     {
@@ -956,7 +972,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 4032,
-        "height": 3024
+        "height": 3024,
+        "taken_month": 5
       }
     },
     {
@@ -989,7 +1006,8 @@
         "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
         "status": "approved",
         "width": 4032,
-        "height": 3024
+        "height": 3024,
+        "taken_month": 5
       }
     }
   ]

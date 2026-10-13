@@ -23,6 +23,9 @@ const photoFields = z
     // dimensions while the data files held them all along.
     width: z.number().int().nullable().optional(),
     height: z.number().int().nullable().optional(),
+    // The month the photograph was taken, from Commons EXIF
+    // (scripts/photo_months.py, 2026-10-13), so a season hero shows its season.
+    taken_month: z.number().int().min(1).max(12).nullable().optional(),
     note: z.string().nullable().optional(),
     // A photograph a reader sent us, and the account it came from. Both are
     // named here because zod strips what it does not name, and a stripped

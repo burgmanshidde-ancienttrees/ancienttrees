@@ -62,7 +62,8 @@
         "attribution": "Maculata, via Wikimedia Commons",
         "status": "approved",
         "width": 3135,
-        "height": 4250
+        "height": 4250,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Age is genuinely disputed between two credible sources: Berlin forestry authorities (800-900 years, per visitBerlin.de and multiple secondary sources) versus the German Dendrological Society's 2021 National Heritage Tree assessment (500-600 years, per de.wikipedia). Presented as a range with the disagreement named in the story per P7, rather than picking one figure. Coordinates from the German Wikipedia infobox.",
@@ -109,7 +110,8 @@
         "attribution": "Fridolin freudenfett, via Wikimedia Commons",
         "status": "approved",
         "width": 3000,
-        "height": 4000
+        "height": 4000,
+        "taken_month": 6
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal since 1939, registration 12-25/B. Girth (7.80 m) and age range (400-500 years) confirmed by two independent sources. Coordinates from a GPS-tagged tree registry source, used for cross-check.",
@@ -157,7 +159,8 @@
         "attribution": "Leonhard Lenz (GPSLeo), via Wikimedia Commons",
         "status": "approved",
         "width": 8368,
-        "height": 5584
+        "height": 5584,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "Two independent measurements disagree slightly (6.48 m/2018 survey vs. 6.70 m in the more commonly cited figure; 350 vs. 400 years), presented as a range rather than picking one. Coordinates from a GPS-tagged source, cross-checked against the forest management site's own description of the location. Photo found and approved 2026-07-28: a Wiki Loves Earth 2024 upload explicitly titled \"Naturdenkmal Stiel-Eiche Forst Grunewald Jagen 100\", its own embedded geolocation (52.451547, 13.191778) landing within about 45m of this entry's own stored coordinate, essentially the same tree. Viewed directly: a large oak with a visibly damaged, hollowed lower trunk beside a small building's roofline, consistent with the DLRG lifeguard station this entry's story describes standing near.",
@@ -203,7 +206,8 @@
         "attribution": "Fridolin freudenfett, via Wikimedia Commons",
         "status": "approved",
         "width": 1920,
-        "height": 2560
+        "height": 2560,
+        "taken_month": 8
       },
       "curation_status": "ai_generated",
       "notes": "Age (~200 years), girth (~5 m) and height (>15 m) confirmed by two independent sources reporting matching figures. Coordinates converted from a degrees/minutes tree-registry reading of this specific specimen.",
@@ -243,7 +247,8 @@
         "attribution": "Leonhard Lenz (GPSLeo), via Wikimedia Commons",
         "status": "approved",
         "width": 8144,
-        "height": 5424
+        "height": 5424,
+        "taken_month": 5
       },
       "curation_status": "ai_generated",
       "notes": "Declared a Nationalerbe-Baum (National Heritage Tree) 25 September 2025, confirmed by the district's own press release and a second local news source. Location upgraded to confirmed: the national heritage-tree register's own project page (run by a TU Dresden forestry professor) gives a specific GPS reading and a walking description (750m from the S-Bahn station along the riverside promenade, 150m east of the boat landing), a roughly 460m correction from the previous general-park estimate. A second independent source agrees within 15m: a geotagged Wikimedia Commons photo of this exact tree (file title names it directly), also the photo used below.",
@@ -292,7 +297,8 @@
         "attribution": "Bernard Ladenthin, via Wikimedia Commons",
         "status": "approved",
         "width": 4608,
-        "height": 3456
+        "height": 3456,
+        "taken_month": 6
       },
       "curation_status": "ai_generated",
       "notes": "Replacement for the former ber_006, 'The Bellevue Oak', pulled 2026-07-29 after independent confirmation the original tree is dead: berliner-woche.de's own 2015 headline read 'Die alte Stieleiche ist tot' (the old oak is dead), and ostdeutsches-baumarchiv.de states it was fully dead by 2018 ('ein schneller Tod'). The prior entry's 'declining' framing undersold this; per CLAUDE.md's living-tree rule a dead tree is never a collectible entry. Id reused so the old URL redirects rather than 404s (see RENAMED_TREE_SLUGS in scripts/build_site.py). New tree researched from scratch: age is a floor ('at least 300 years' per Wikipedia, citing Vieth 2004) presented as a range rather than a false precise figure; confirmed still standing and actively protected via alles-mahlsdorf.de (2021), which reports it explicitly retained Naturdenkmal status in that year's register update while two other Mahlsdorf trees were delisted. Photo personally viewed and confirmed: a dramatically leaning, moss-covered, clearly living trunk in full leaf beside the church wall, dated 29 June 2019.",
@@ -332,7 +338,8 @@
         "attribution": "Lotse, via Wikimedia Commons",
         "status": "approved",
         "width": 2736,
-        "height": 3648
+        "height": 3648,
+        "taken_month": 3
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal since 2 March 1993 for regional historical significance, with additional protection for distinctive character added 20 May 2021. Common name standardized to 'London Plane' per project convention for Platanus x acerifolia/x hispanica. Coordinates from the German Wikipedia infobox.",
@@ -380,7 +387,8 @@
         "attribution": "Dirk Ingo Franke, via Wikimedia Commons",
         "status": "approved",
         "width": 3641,
-        "height": 4106
+        "height": 4106,
+        "taken_month": 6
       },
       "curation_status": "ai_generated",
       "notes": "Age calculated from the 1883 replacement planting, not the 1879 original, since the two are different physical trees per both sources. Coordinates from the German Wikipedia infobox.",
@@ -426,7 +434,8 @@
         "attribution": "Barfisch, via Wikimedia Commons",
         "status": "approved",
         "width": 2976,
-        "height": 3968
+        "height": 3968,
+        "taken_month": 6
       },
       "curation_status": "ai_generated",
       "notes": "Planting window (1880-1890) and 'oldest and tallest ginkgo in Berlin' claim confirmed by two independent sources (the palace's own history page and a Berlin.de tourism article). Location upgraded to confirmed: OpenStreetMap carries a single Ginkgo biloba node in the park tagged with the estate's own inventory reference (ref:schlossgutshofbritz=7), the same reference scheme used on neighbouring catalogued trees in the same park, about 120m from the previous palace-address estimate, corroborated independently by Wikidata's coordinates for the same tree's Naturdenkmal designation (ND-8-2/B), about 110m away. Photo is from a dedicated Commons category for this exact tree; viewed directly, shows a tall mature tree with characteristic ginkgo fan-shaped leaves and a monument information sign on site. Approved.",
@@ -464,7 +473,8 @@
         "attribution": "Miriam Guterland, via Wikimedia Commons",
         "status": "approved",
         "width": 3864,
-        "height": 5152
+        "height": 5152,
+        "taken_month": 4
       },
       "curation_status": "ai_generated",
       "notes": "Naturdenkmal 1-41/B. Planting year (1891) confirmed by the district's own Naturdenkmale page; species arrival in Europe (1853 seed import) is well-established botanical history, cited independently. Coordinates from the Wikipedia natural monuments list entry for this specific tree.",
@@ -587,7 +597,8 @@
         "attribution": "S.Makhin, CC BY 4.0, via Wikimedia Commons",
         "status": "approved",
         "width": 4080,
-        "height": 3072
+        "height": 3072,
+        "taken_month": 5
       },
       "how_to_recognise": "You can recognise it by the wide crown branching low over the path. It stands north of the Wasservogelteich, the waterfowl pond, about a kilometre deeper into Pfaueninsel than the island's other two registered oaks.",
       "official_register": {
@@ -688,7 +699,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 5584,
-        "height": 8368
+        "height": 8368,
+        "taken_month": 6
       },
       "how_to_recognise": "You can recognise it by the single trunk, 6.43 metres round and 22 metres tall, the sixth thickest tree recorded in Berlin. It stands on the north shore of the Lietzensee, about 170 metres along the path from the wingnut.",
       "official_register": {
@@ -732,7 +744,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 8368,
-        "height": 5584
+        "height": 5584,
+        "taken_month": 6
       },
       "how_to_recognise": "You can recognise it by the trunk splitting into several stems close to the ground, so it reads as a small grove on one root plate. It stands in the northeast corner of Lietzenseepark, 170 metres from the single-trunked plane.",
       "official_register": {
@@ -768,7 +781,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 5584,
-        "height": 8368
+        "height": 8368,
+        "taken_month": 6
       },
       "how_to_recognise": "You can recognise it by the trunk, 4.88 metres round and 21.5 metres tall, on an elm where most of Europe's big elms are gone. It stands at the southeastern corner of the carp pond behind Charlottenburg Palace.",
       "photos": [
@@ -859,7 +873,8 @@
         "attribution": "Fridolin freudenfett, via Wikimedia Commons",
         "status": "approved",
         "width": 2677,
-        "height": 2437
+        "height": 2437,
+        "taken_month": 9
       },
       "curation_status": "flagged",
       "notes": "Register (4-6/B, designated 1993-03-02) gives species as Quercus petraea and the same coordinates as de.wikipedia's district Naturdenkmal list, which is not independent of the register (same ordinance) but corroborates the pin. Age genuinely disputed between two independent sources: de.wikipedia's Olympiastadion article implies continuity from a c.1820s original ('etwa 200 Jahre alt'), golocal.de says the 1914-named original was felled with the 1913 Deutsches Stadion and a replacement planted in 1936 (~90 years old); both recorded rather than picking a winner. A Commons photo filename ('Westend Olympiastation Stieleiche.jpg') suggests possible confusion with Quercus robur (Stieleiche); not resolved this pass, register's Quercus petraea kept as the recorded species. monumentaltrees.com 403'd throughout, no girth recorded.",
@@ -945,7 +960,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 8368,
-        "height": 5584
+        "height": 5584,
+        "taken_month": 5
       },
       "photos": []
     },
@@ -980,7 +996,8 @@
         "attribution": "Singlespeedfahrer, via Wikimedia Commons",
         "status": "approved",
         "width": 3872,
-        "height": 4848
+        "height": 4848,
+        "taken_month": 9
       },
       "photos": [],
       "best_time": {
@@ -1067,7 +1084,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 5584,
-        "height": 8368
+        "height": 8368,
+        "taken_month": 6
       },
       "photos": [],
       "best_time": {
@@ -1159,7 +1177,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 5584,
-        "height": 8368
+        "height": 8368,
+        "taken_month": 11
       },
       "photos": [],
       "best_time": {
@@ -1206,7 +1225,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 5584,
-        "height": 8368
+        "height": 8368,
+        "taken_month": 11
       },
       "photos": [],
       "official_register": {
@@ -1287,7 +1307,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 8368,
-        "height": 5584
+        "height": 5584,
+        "taken_month": 11
       },
       "photos": [],
       "official_register": {
@@ -1370,7 +1391,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 5584,
-        "height": 8368
+        "height": 8368,
+        "taken_month": 11
       },
       "photos": [],
       "official_register": {
@@ -1408,7 +1430,8 @@
         "attribution": "Leonhard Lenz, via Wikimedia Commons",
         "status": "approved",
         "width": 8368,
-        "height": 5584
+        "height": 5584,
+        "taken_month": 11
       },
       "photos": [],
       "official_register": {

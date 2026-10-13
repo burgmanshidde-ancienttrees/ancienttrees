@@ -94,7 +94,8 @@
         "attribution": "Anual, via Wikimedia Commons",
         "status": "approved",
         "width": 3872,
-        "height": 2592
+        "height": 2592,
+        "taken_month": 3
       },
       "curation_status": "flagged",
       "notes": "The Hernando Colón/1529 origin story rests on one detailed source (a dedicated old-trees blog); the CAAC's own site confirms the monastery's Colón-era history and the site's general access details but does not itself date the tree. Flagged for single-source dating rather than dropped, since the tree's existence, near-death in the 1990s and current protected status are independently corroborated. Coordinates are the museum's street address; the tree's exact spot within the grounds is not independently surveyed, hence approximate.",
@@ -165,7 +166,8 @@
         "attribution": "CarlosVdeHabsburgo, via Wikimedia Commons",
         "status": "approved",
         "width": 4000,
-        "height": 3000
+        "height": 3000,
+        "taken_month": 6
       },
       "curation_status": "ai_generated",
       "notes": "Planting window (1850-1870) and dimensions (5.82 m girth, 33 m height) confirmed by two independent sources, including Spain's own 'Árbol y Bosque del Año' historic-tree competition site. Coordinates from the Spanish Wikipedia infobox for this specific glorieta.",
@@ -266,7 +268,8 @@
         "attribution": "Gzzz, via Wikimedia Commons",
         "status": "approved",
         "width": 3264,
-        "height": 2448
+        "height": 2448,
+        "taken_month": 10
       },
       "curation_status": "ai_generated",
       "notes": "Ensemble entry: 1574 founding, drainage planting and 1764 replanting confirmed by two independent local-history sources; the London planes at both ends are separately described as 'nearly a century old' without a precise planting year. Pin confirmed 2026-07-28 via Seville's Parks and Gardens tree inventory (ArcGIS FeatureServer, services1.arcgis.com/hcmP7kr0Cx3AcTJk, layer 13): dozens of Platanus hispanica individually recorded with the location tag 'Alameda De Hercules, Plaza' itself, several in the oldest age phase, directly around the stored coordinate. An exact place-name match from the city's own inventory rather than an estimate, though still an ensemble pin over the whole plaza rather than one surveyed trunk.",
@@ -308,7 +311,8 @@
         "attribution": "Roberto Chamoso G, via Wikimedia Commons",
         "status": "approved",
         "width": 3646,
-        "height": 2732
+        "height": 2732,
+        "taken_month": 8
       },
       "curation_status": "flagged",
       "notes": "Current trees confirmed as a 20th-century replanting (Félix Hernández restoration) rather than a surviving Almohad-era grove, so age is stated as an estimate bound by the restoration era, not a documented planting year. The 1992 shift from free to paid access is confirmed by a dedicated local news retrospective. Pin resolved 2026-07-29 via OpenStreetMap/Nominatim: a pedestrian feature individually named 'Patio de los Naranjos, Santa Cruz, Casco Antiguo, Sevilla' (an exact name match for the courtyard itself, not just the cathedral's general address), about 60m from the prior address-derived point. This is an ensemble entry (the whole orange-tree courtyard, not one trunk), so a courtyard-level pin is the appropriate precision; treated as confirmed on that basis.",
@@ -342,7 +346,8 @@
         "attribution": "CarlosVdeHabsburgo, via Wikimedia Commons",
         "status": "approved",
         "width": 4320,
-        "height": 3240
+        "height": 3240,
+        "taken_month": 10
       },
       "curation_status": "ai_generated",
       "notes": "Photo fetched and viewed directly 2026-07-27: a large Moreton Bay fig with buttress roots filling a circular railed clearing, its own caption confirming 'gran ficus en el centro' at the Glorieta de Goya, an unambiguous match. The 1929 pavilion history and surviving columns confirmed by two independent sources. No precise planting date found for the fig itself; age is estimated from the species' early-20th-century introduction to Seville. Pin corrected 2026-07-27, about 190m, via an OpenStreetMap feature individually named 'Glorieta de Goya' (an exact name match); no GPS coordinates were found in either original source, so the prior pin was estimated from a described position near Plaza de España's north tower rather than surveyed.",

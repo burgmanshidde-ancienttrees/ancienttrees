@@ -59,9 +59,13 @@ public struct Photo: Codable, Hashable, Sendable {
     /// website uses (heroFrame, images.ts); nil in a snapshot older than that.
     let frameRaw: Double?
     public var frame: Double? { frameRaw }
+    /// The month the photograph was taken, 1 to 12 (scripts/photo_months.py,
+    /// 2026-10-13); nil when unknown or in an older snapshot.
+    public let takenMonth: Int?
 
     enum CodingKeys: String, CodingKey {
         case url, license, attribution, width, height
+        case takenMonth = "taken_month"
         case thumbRaw = "thumb"
         case heroRaw = "hero"
         case creditRequiredRaw = "credit_required"

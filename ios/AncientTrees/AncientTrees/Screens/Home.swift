@@ -143,11 +143,20 @@ struct HomeView: View {
             ($0.tree.bestTime?.months ?? []).contains(month) && ($0.tree.lat < 0) == south
         }
         let bestPhotographed = atBest.filter { $0.tree.photo != nil }.map(\.tree)
-        if let hero = bestPhotographed.first {
+        // THE PICTURE SHOWS THE SEASON IT NAMES (Hidde, 2026-10-13: "it
+        // doesnt make sense to do autumn is here with a non autumn photo,
+        // rather do one not close"). The hero is the nearest tree at its best
+        // whose photograph was taken in its best months, however far; with
+        // none, the stock hero, which claims no season.
+        let hero = bestPhotographed.first { t in
+            guard let m = t.photo?.takenMonth else { return false }
+            return (t.bestTime?.months ?? []).contains(m)
+        }
+        if let hero {
             let near = location.known ? atBest.filter { $0.km <= 20 }.count : 0
             s.season = (Self.seasonWord(month: month, south: south), hero, atBest.count, near)
-            s.best = Array(bestPhotographed.dropFirst().prefix(6))
         }
+        s.best = Array(bestPhotographed.filter { $0.id != hero?.id }.prefix(6))
 
         // The city you are standing in, for its open ambassador seat. Only with
         // a real fix: the fallback is not anybody's city.

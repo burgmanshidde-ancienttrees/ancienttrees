@@ -126,6 +126,8 @@ export interface FeedPhoto {
   attribution_short: string | null; credit_line: string | null; credit_url: string | null;
   /** The lead frame on a phone, width over height (heroFrame, images.ts). */
   frame: number;
+  /** The month it was taken (scripts/photo_months.py), or null. */
+  taken_month: number | null;
 }
 
 export function feedTrees(cities: CityEntry[]): FeedTree[] {
@@ -240,6 +242,9 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
       // How tall the photograph stands on the tree page, decided once for
       // both surfaces (Hidde, 2026-10-13, option A2). The app draws it.
       frame: heroFrame(p),
+      // Discover's season hero shows a tree only when its photograph was
+      // taken in the tree's best months (Hidde, 2026-10-13).
+      taken_month: (p as any).taken_month ?? null,
       }
     : null;
 }
