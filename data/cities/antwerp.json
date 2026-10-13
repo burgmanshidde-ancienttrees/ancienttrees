@@ -62,7 +62,11 @@
       "curation_status": "flagged",
       "notes": "Age is a documented range, not a single figure: protected since 1949 on the strength of it likely being a liberty tree from either 1789 or 1830, per Flanders' own heritage inventory. Neither date is confirmed. monumentaltrees.com used for cross-check only, per hard rule 1, not copied. Pin corrected 2026-07-26: the prior coordinate was about 1.1km from the church itself; the city's own Groeninventaris tree layer places a single large-trunked Fagus sylvatica (505cm circumference, matching this entry's own 495cm measurement) right beside Heilig Hartstraat, with no other beech of comparable size anywhere nearby (every other Fagus in the area is a small ornamental 'Dawyck' street tree under 60cm).",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its huge trunk, nearly five metres round, and wide canopy spreading 32 metres. It stands in the small square between the rectory and Sint-Willibrorduskerk."
+      "how_to_recognise": "You can recognise it by its huge trunk, nearly five metres round, and wide canopy spreading 32 metres. It stands in the small square between the rectory and Sint-Willibrorduskerk.",
+      "official_register": {
+        "name": "Inventaris Onroerend Erfgoed (beschermd cultuurhistorisch landschap, bruine beuk voor de Sint-Willibrorduskerk)",
+        "url": "https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/4884"
+      }
     },
     {
       "id": "ant_002",
@@ -102,7 +106,11 @@
       "curation_status": "flagged",
       "notes": "No specific age, circumference or planting date found for this individual tree despite its 2010 monument protection; the estate's own documented history (15th-17th century) is used only as context, not as evidence of this specific tree's age.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its broad, high crown visible across the meadow. It stands opposite the entrance to the Sterckshof manor house, in Rivierenhof park."
+      "how_to_recognise": "You can recognise it by its broad, high crown visible across the meadow. It stands opposite the entrance to the Sterckshof manor house, in Rivierenhof park.",
+      "official_register": {
+        "name": "Inventaris Onroerend Erfgoed (beschermd monument, Kasteel Rivierenhof: zomerlinde)",
+        "url": "https://inventaris.onroerenderfgoed.be/aanduidingsobjecten/5497"
+      }
     },
     {
       "id": "ant_003",
@@ -232,7 +240,9 @@
       "story": "At 35 metres, this Canadian poplar is among the tallest trees recorded anywhere in Antwerp, its trunk clear of branches for a full 6 metres before the crown even begins, a shape that comes from growing hard and fast for light rather than from any deliberate pruning. Measured at 5.40 metres around in 2011, it stands beside a bridge on Eric Sasselaan, an ordinary stretch of the city with nothing else to recommend it as a destination, which is exactly the point: this is not a castle park or a botanic garden specimen but a street tree that simply grew bigger and faster than anyone expected a hybrid poplar to. Canadian poplar is a fast growing hybrid, not a long lived species by any measure, typically reaching its full size within decades rather than centuries, which makes its scale here more a demonstration of what the species can do under good conditions than a claim to great age. It is a reminder that not every remarkable tree in a city has a noble family or a monastery behind it. Some are simply the biggest thing of their kind that a stretch of unremarkable pavement happened to grow.",
       "verified_sources": [
         "https://inventaris.onroerenderfgoed.be/erfgoedobjecten?typologie=opgaande+bomen&pagina=12",
-        "https://beeldbank.onroerenderfgoed.be/images/192759"
+        "https://beeldbank.onroerenderfgoed.be/images/192759",
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/132419 (Inventarisatie Houtige Beplantingen, measured 18-10-2011; total height 35 m)",
+        "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/132419"
       ],
       "access": "Free, public street",
       "transport": "Tram or bus to Kiel / Nieuw Zuid",
@@ -247,7 +257,12 @@
       "curation_status": "flagged",
       "notes": "Second source added 2026-07-30: Beeldbank Onroerend Erfgoed (the Flanders heritage agency's separate image-archive database, distinct from the Inventaris record already cited), image 192759, captioned \"Opgaande Canadapopulier\" at Eric Sasselaan, photographed 2011-10-18 by Geert Van der Linden, the same photo already used for this entry's approved photo. Independently confirms species and street. Age range reflects typical Canadian poplar growth rates rather than a documented planting date; included on size and visual grounds, not claimed antiquity. Pin corrected 2026-07-27: the previous coordinates (51.201, 4.395) were about 800m from the actual street, verified by geocoding 'Eric Sasselaan, Antwerpen' directly (Nominatim) and cross-checking the street's own OpenStreetMap geometry, which runs through the Tentoonstellingswijk along the former Brialmont fortress's ravelin moat, exactly as the heritage inventory describes. Moved to the street's curved midsection nearest that former moat. The heritage record itself claims only 15m precision and its exact point sits behind a JS-rendered map this session's tools could not read, so this stays approximate rather than confirmed.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its 35 metre height and trunk running clear of branches for six metres before the crown begins. It stands beside the bridge on Eric Sasselaan."
+      "how_to_recognise": "You can recognise it by its 35 metre height and trunk running clear of branches for six metres before the crown begins. It stands beside the bridge on Eric Sasselaan.",
+      "official_register": {
+        "name": "Inventaris Onroerend Erfgoed (Opgaande Canadapopulier bij brug)",
+        "url": "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/132419"
+      },
+      "height_m": 35
     },
     {
       "id": "ant_007",
@@ -339,9 +354,10 @@
       "story": "Belgium's oldest zoo has spent more of its history rebuilding than expanding. Zoo Antwerpen opened on 21 July 1843, right beside what would become the city's Centraal Station, and its site and tree cover were repeatedly caught in the crossfire of a location that made strategic sense for a railway hub and none at all for a garden: German bombardment damaged the zoo badly in August 1914, and the Second World War hit it even harder, destroying the aquarium, reptile house, bird house, hippo house and winter garden in a single conflict. That the zoo's landscaped grounds, laid out and steadily replanted under head gardener Florent Blockx from around 1935 onward, survived both wars intact enough to be protected as a landscape in 1975 and recognised as a full historical monument in 1984, says as much about the tree cover's resilience as about the animals it shelters. A dedicated irrigation system installed in 1982 keeps the older plantings alive through Belgian summers. No single tree here is singled out in the historical record, so this entry stands for the grounds as a whole, a rare case of a European zoo's landscaping surviving through two world wars fought in the same city block.",
       "verified_sources": [
         "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/127085",
-        "https://etwie.be/nl/kennisbank/nieuws/175-jaar-zoo-antwerpen"
+        "https://etwie.be/nl/kennisbank/nieuws/175-jaar-zoo-antwerpen",
+        "https://www.zooantwerpen.be/nl/dagprogramma/"
       ],
-      "access": "Paid zoo admission",
+      "access": "Paid zoo admission (day tickets and prices on the zoo's site). Open 365 days a year from 10:00; closing time varies by season (17:00 on 13 October 2026).",
       "transport": "Adjacent to Antwerpen-Centraal station",
       "photo": {
         "url": null,
