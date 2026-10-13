@@ -1,21 +1,99 @@
 {
-  "city": "Tarragona", "country": "Spain", "city_slug": "tarragona",
+  "city": "Tarragona",
+  "country": "Spain",
+  "city_slug": "tarragona",
   "note": "From the 2026-08-31 pass that opened Tarragona off Catalonia's monumental-tree register. Everything here is a live, declared monumental tree that was NOT published because it stands on a private mas. Kept so the hunt is not repeated, and so they can be published the day access is established.",
   "leads": [
-    {"name": "Alzina del Mas de Borbo", "species": "Holm Oak (Quercus ilex subsp. ilex)", "lat": 41.02, "lng": 1.05, "status": "lead",
-     "why": "11.0 m tall, trunk 6.45 m round, crown 24.5 m, condition normal, declared 1988. The thickest tree within reach of Tarragona and by some way the best one missing from the page. The register's location field is simply Mas de Borbo at L'Aleixar, a private farm, with no track or path named, so hard rule 10 blocks it. A line from the owner or a signposted route would change that. Coordinates here are rounded and must be re-read from the register before use."},
-    {"name": "Cedre Borni de Casa Malla", "species": "Cedar (Cedrus sp.)", "lat": null, "lng": null, "status": "lead",
-     "why": "21.0 m tall, trunk 3.93 m, crown 22.6 m, condition normal, declaration pending. At Casa Malla in Vinyols i els Arcs, a private house."},
-    {"name": "Plàtans del Mas de Cavaller", "species": "London Plane (Platanus x acerifolia)", "lat": null, "lng": null, "status": "lead",
-     "why": "Two planes at a private farm in Constanti, declared 2005, only 9 km from Tarragona. The register publishes no dimensions for them."},
-    {"name": "Pi Gros de Mestres", "species": "Stone Pine (Pinus pinea)", "lat": 41.20678, "lng": 1.21266, "status": "lead",
-     "why": "Declared 1997, at Mas de Mestres in Vilallonga del Camp, 10 km out. Private farm and the register publishes no dimensions."},
-    {"name": "Alzina del Mas de la Barba", "species": "Holm Oak (Quercus ilex)", "lat": null, "lng": null, "status": "lead",
-     "why": "12.0 m tall, trunk 3.27 m, crown 21.8 m, declared 1997, at Siurana in Cornudella de Montsant, 29 km. Private farm."}
+    {
+      "name": "Alzina del Mas de Borbo",
+      "species": "Holm Oak (Quercus ilex subsp. ilex)",
+      "lat": 41.02,
+      "lng": 1.05,
+      "status": "lead",
+      "why": "11.0 m tall, trunk 6.45 m round, crown 24.5 m, condition normal, declared 1988. The thickest tree within reach of Tarragona and by some way the best one missing from the page. The register's location field is simply Mas de Borbo at L'Aleixar, a private farm, with no track or path named, so hard rule 10 blocks it. A line from the owner or a signposted route would change that. Coordinates here are rounded and must be re-read from the register before use."
+    },
+    {
+      "name": "Cedre Borni de Casa Malla",
+      "species": "Cedar (Cedrus sp.)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "21.0 m tall, trunk 3.93 m, crown 22.6 m, condition normal, declaration pending. At Casa Malla in Vinyols i els Arcs, a private house."
+    },
+    {
+      "name": "Plàtans del Mas de Cavaller",
+      "species": "London Plane (Platanus x acerifolia)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "Two planes at a private farm in Constanti, declared 2005, only 9 km from Tarragona. The register publishes no dimensions for them."
+    },
+    {
+      "name": "Pi Gros de Mestres",
+      "species": "Stone Pine (Pinus pinea)",
+      "lat": 41.20678,
+      "lng": 1.21266,
+      "status": "lead",
+      "why": "Declared 1997, at Mas de Mestres in Vilallonga del Camp, 10 km out. Private farm and the register publishes no dimensions."
+    },
+    {
+      "name": "Alzina del Mas de la Barba",
+      "species": "Holm Oak (Quercus ilex)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "12.0 m tall, trunk 3.27 m, crown 21.8 m, declared 1997, at Siurana in Cornudella de Montsant, 29 km. Private farm."
+    },
+    {
+      "id": "tgn_002",
+      "name": "The Pine of Bofarull",
+      "species": "Stone Pine (Pinus pinea)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 428,
+      "height_m": 20.5,
+      "location": {
+        "address": "Carretera de l'aeroport, Reus 43206, Tarragona",
+        "latitude": 41.14451,
+        "longitude": 1.14447,
+        "neighbourhood": "Reus"
+      },
+      "story": "A protected tree on the road to an airport is a strange combination and this one has held its ground. The Pi de Bofarull stands beside the airport road at Reus, 20.5 metres tall with a trunk 4.28 metres round and a crown 21.4 metres across, and Catalonia declared it a monumental tree in 1991, which means it cannot legally be felled however inconvenient the road becomes. Stone pine is the umbrella pine of the Mediterranean, the one with the flat top that everybody draws, and it is grown across Spain as much for the nuts as for the shade: the cones take three years to ripen and the kernels inside them are pinones, the most expensive nut in the country. A stone pine that reaches 20 metres has usually been left alone for a long time, because the species is normally kept low and wide. The register lists it as being in normal condition and, like every Catalan entry, gives it no age. This is the largest of the four trees on this page, which is the only ranking the data supports.",
+      "verified_sources": [
+        "https://mediambient.gencat.cat/ca/05_ambits_dactuacio/patrimoni_natural/arbres-monumentals/am_arbres_monumentals_fitxes/baix-camp-7/",
+        "https://ca.wikipedia.org/wiki/Llista_d'arbres_monumentals_de_Catalunya"
+      ],
+      "access": "Free, beside a public road",
+      "transport": "About 9 km west of Tarragona on the Reus airport road, roughly 15 minutes by car",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Pi_de_Bofarull.jpg",
+        "license": "CC0",
+        "attribution": "Magenri, via Wikimedia Commons",
+        "status": "approved",
+        "width": 3872,
+        "height": 2592
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "notes": "Declared a Catalan monumental tree in 1991, code MA-08.123.01, condition normal. Height 20.5 m, trunk perimeter at 1.3 m of 4.28 m and mean crown diameter 21.4 m, all from the register. No age published.",
+      "how_to_recognise": "You can recognise it by the flat, umbrella-shaped crown of a stone pine, 4.28 metres round and the largest of the four trees on this page. It stands beside the airport road at Reus.",
+      "removed": "2026-10-13",
+      "removed_reason": "Generalitat de Catalunya monumental-tree fitxa (pi-de-bofarull, updated 2021-03-29) records estat de conservacio: mort; local news 2021 reports the pine at the end of its life"
+    }
   ],
   "blocked": [
-    {"name": "Pi del Baro, Vilallonga del Camp", "why": "The register records it as dead in 2008 with the trunk still standing. CLAUDE.md: a dead tree never ships as an entry."},
-    {"name": "Pi del Boter, Riudoms", "why": "Register records it dead in 2001 and the trunk gone."},
-    {"name": "Pi de les Planes, L'Aleixar", "why": "Register records it dead with the trunk still standing."}
+    {
+      "name": "Pi del Baro, Vilallonga del Camp",
+      "why": "The register records it as dead in 2008 with the trunk still standing. CLAUDE.md: a dead tree never ships as an entry."
+    },
+    {
+      "name": "Pi del Boter, Riudoms",
+      "why": "Register records it dead in 2001 and the trunk gone."
+    },
+    {
+      "name": "Pi de les Planes, L'Aleixar",
+      "why": "Register records it dead with the trunk still standing."
+    }
   ]
 }

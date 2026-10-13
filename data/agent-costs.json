@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "derby+nantes+simsbury+ekero+tarragona+gottingen+venon",
+    "kind": "enrich",
+    "tokens": 91000,
+    "trees": 0,
+    "note": "enrichment: Derby boab register links, Nantes chestnut height, Pinchot Sycamore CT registry girth and height, Tarragona plane record and height; 4 of 10 improved, 8 gaps dead-ended; tgn_002 found dead in the Generalitat fitxa and retired; Derby 1905 height withheld"
+   },
+   {
+    "date": "2026-10-13",
     "target": "perouges+biei+macugnaga+timber-creek+tolpuddle+gornja-stubica+otama+sulechow",
     "kind": "enrich",
     "tokens": 62000,

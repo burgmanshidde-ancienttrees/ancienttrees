@@ -191,6 +191,8 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-13, scripts/retire.py: Generalitat de Catalunya monumental-tree fitxa (pi-de-bofarull, updated 2021-03-29) record
+  ["tarragona", "pine-of-bofarull"],
   // 2026-10-12, scripts/retire.py: LRMB nr 1694840 status 5 Dood/geveld. Last inspection 2019-04-29: condition fair, a fungus
   ["emmen", "tiger-oak-of-the-rensenpark"],
   // 2026-10-12, scripts/retire.py: LRMB nr 1679699 status 5 Dood/geveld; inspectors recorded it felled on 2014-08-21 and agai
