@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "baltimore",
+    "kind": "enrich",
+    "tokens": 82000,
+    "trees": 0,
+    "note": "enrichment: access lines for Ruxton (road view only) and the two Cylburn trees (cylburn.org hours); Douglass Elm species and place confirmed from an archive copy of the Sun page; withheld a newspaper girth for Ruxton and the Tree Baltimore map page as a register record; no pins (Overpass timed out, map PDF unreadable); 12 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "wilmington-delaware",
     "kind": "enrich",
     "tokens": 53000,

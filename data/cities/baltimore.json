@@ -44,7 +44,7 @@
         "https://baltimorefishbowl.com/stories/meet-the-man-who-cares-for-the-nearly-400-year-old-ruxton-liberty-tree/",
         "https://www.baltimoresun.com/2002/06/22/ruxton-white-oak-rooted-in-marylands-founding/"
       ],
-      "access": "The tree stands on PRIVATE PROPERTY (owned by the Anastasiades family) but is directly beside and clearly visible from the public roadway (Bellona Avenue), which motorists and pedestrians pass under its canopy on every day. Visitors can view and photograph it from the road; there is no suggestion anyone may step onto the private lawn itself. State plainly: viewable from the road, not enterable.",
+      "access": "Viewable from the public road (Bellona Avenue) only. The tree stands on private property and cannot be entered; look and photograph from the roadside.",
       "transport": "Ruxton, a suburb about 11km/7 miles north of downtown Baltimore; nearest Baltimore Light Rail stop is Falls Road, roughly 2km/a 25-minute walk away, otherwise a roughly 20-25 minute drive from downtown.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -73,7 +73,8 @@
       },
       "verified_sources": [
         "https://www.treebaltimore.org/notable-trees",
-        "search-corroborated citation of https://darkroom.baltimoresun.com/2017/06/baltimores-big-trees/ (page returned HTTP 500 on direct fetch this pass; its specific wording -- 'the orator addressed Baltimoreans beneath the same limbs, in 1878', location and species -- was corroborated identically across three independent search queries, but was not read on the page itself; treat as thin until a future pass can fetch it directly)"
+        "search-corroborated citation of https://darkroom.baltimoresun.com/2017/06/baltimores-big-trees/ (page returned HTTP 500 on direct fetch this pass; its specific wording -- 'the orator addressed Baltimoreans beneath the same limbs, in 1878', location and species -- was corroborated identically across three independent search queries, but was not read on the page itself; treat as thin until a future pass can fetch it directly)",
+        "https://web.archive.org/web/2023/https://darkroom.baltimoresun.com/2017/06/baltimores-big-trees/"
       ],
       "access": "Free. Public property at a city street intersection in Otterbein, near Oriole Park at Camden Yards.",
       "transport": "Downtown Baltimore, Otterbein neighbourhood, walkable from Camden Yards and the Inner Harbor (about 10-15 minutes).",
@@ -103,9 +104,10 @@
         "neighbourhood": "Cylburn, northwest Baltimore"
       },
       "verified_sources": [
-        "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/ (Baltimore Sun guest commentary, 29 Nov 2023, by a named tree tour guide describing a walk through Cylburn Arboretum: calls this tree 'Cylburn's only remaining state champion' and describes it firsthand in late autumn as 'leafless but teeming with berry-like fruit called haws', with 'long sharp thorns that resemble a giant's toothpick' -- a specific, physically checkable eyewitness description, not a copied stat)"
+        "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/ (Baltimore Sun guest commentary, 29 Nov 2023, by a named tree tour guide describing a walk through Cylburn Arboretum: calls this tree 'Cylburn's only remaining state champion' and describes it firsthand in late autumn as 'leafless but teeming with berry-like fruit called haws', with 'long sharp thorns that resemble a giant's toothpick' -- a specific, physically checkable eyewitness description, not a copied stat)",
+        "https://cylburn.org/welcome-to-cylburn-arboretum-2/"
       ],
-      "access": "Free, public city-owned arboretum (Baltimore City Department of Recreation and Parks / Cylburn Arboretum Friends). Open daily except Mondays, no admission charge, per Wikipedia's Cylburn Arboretum article and the arboretum's own trail map.",
+      "access": "Free to enter; no admission fee for the arboretum (some events charge). Open Tuesday to Sunday 8am to 8pm, closed Mondays; from 20 October 2026 Tuesday to Sunday 8am to 5pm.",
       "transport": "Northwest Baltimore, accessible by MTA Bus Route #1; parking on site.",
       "location_precision": "approximate",
       "curation_status": "flagged",
@@ -135,9 +137,10 @@
       },
       "verified_sources": [
         "https://www.baltimoresun.com/2023/11/29/touring-baltimores-big-trees-in-an-oasis-of-beauty-guest-commentary/ (Baltimore Sun guest commentary, 29 Nov 2023: names this a Baltimore City Champion, gives a champion score of 91 points, and describes it firsthand: 'exfoliating and intense cinnamon colored bark')",
-        "https://cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf (Cylburn Arboretum Friends' own official 'Notable Trees' map: point A, 'Paperbark Maple, Acer griseum, City Champion', positioned just southeast of the Visitor Center near the Greenspring Ave entrance -- an independent institutional source, not the newspaper, naming and mapping the same tree with the same champion designation)"
+        "https://cylburn.org/wp-content/uploads/2013/01/cylburn_tree_shrubs_map.pdf (Cylburn Arboretum Friends' own official 'Notable Trees' map: point A, 'Paperbark Maple, Acer griseum, City Champion', positioned just southeast of the Visitor Center near the Greenspring Ave entrance -- an independent institutional source, not the newspaper, naming and mapping the same tree with the same champion designation)",
+        "https://cylburn.org/know-before-you-go/"
       ],
-      "access": "Free, public city-owned arboretum (Baltimore City Department of Recreation and Parks / Cylburn Arboretum Friends). Open daily except Mondays, no admission charge.",
+      "access": "Free to enter; no admission fee for the arboretum (some events charge). Open Tuesday to Sunday 8am to 8pm, closed Mondays; from 20 October 2026 Tuesday to Sunday 8am to 5pm. Vollmer Visitor Center Tuesday to Sunday 10am to 4pm.",
       "transport": "Northwest Baltimore, accessible by MTA Bus Route #1; on-site parking near the Visitor Center, a short walk from point A on the arboretum's own map.",
       "location_precision": "approximate",
       "curation_status": "flagged",
