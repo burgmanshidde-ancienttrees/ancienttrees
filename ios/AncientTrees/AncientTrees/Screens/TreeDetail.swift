@@ -220,6 +220,7 @@ struct TreeDetail: View {
                     // and transport lines are ours to research, not blanks for
                     // you to fill about a tree you already stood at.
                     story
+                    if mine == nil, tree.photo != nil { addPhotoRow }
                     if mine != nil { morePhotosRow }
                     if mine == nil, tree.hasAccessInfo { accessBlock }
                     // "Something's wrong", low on the page, which is where he
@@ -777,7 +778,9 @@ struct TreeDetail: View {
                         .accessibilityIdentifier("tree-map-swap")
                         .accessibilityLabel("Show this tree on the map")
                     }
-                    .overlay(alignment: .topLeading) { addPhotoButton }
+                    // No camera over a photograph that is already there
+                    // (Hidde, 2026-10-13: "feels a bit big and takes up prime
+                    // space"). It is addPhotoRow, under the story.
 
             }
         } else {
@@ -1809,6 +1812,28 @@ struct TreeDetail: View {
             .accessibilityIdentifier("tree-add-photo")
             .accessibilityLabel("Add a photograph of this tree")
         }
+    }
+
+    /// ADD A PHOTO on a tree that already has one: a quiet button under the
+    /// story, not a pill over the photograph (Hidde, 2026-10-13: "takes up
+    /// prime space"). Google Maps keeps "Add a photo" in a place's Photos
+    /// section and Apple Maps "Add Your Photos" in Ratings & Photos, both
+    /// below the description; neither lays it over the header image
+    /// (CONVENTIONS.md, "Add a photo on a place that has one"). A tree with no
+    /// photograph keeps addPhotoButton in its empty frame. Same as the website.
+    private var addPhotoRow: some View {
+        Button { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
+            Label("Add a photo", systemImage: "camera")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Brand.ink)
+                .padding(.horizontal, 18)
+                .frame(minHeight: 44)
+                .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                .contentShape(.capsule)
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("tree-add-photo")
+        .accessibilityLabel("Add a photograph of this tree")
     }
 
     /// One action in the bar, drawn as a circle. Same 52 points, same border

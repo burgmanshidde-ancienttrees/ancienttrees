@@ -197,16 +197,6 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
           <span class="tree-place-dot" aria-hidden="true">·</span>
           <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
         </div>
-        {/* Add a photo on a page that already has a picture, VISIBLE since
-            2026-10-12 (Hidde: "that option should be there whether you already
-            did that before or not", "make it consistent"): the app offers it on
-            every tree, Google Maps keeps Add photos on every place. A photo-less
-            page has its button in the hero instead. */}
-        {photo && photo.url && (
-          <div class="td-addphoto-quiet">
-            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} quiet />
-          </div>
-        )}
         <div class="tree-block">
           <div class="tb-cols">
             <div class="tb-col tb-age"><span>{p.ageLabel}</span><b>{p.ageValue}</b></div>
@@ -255,6 +245,18 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
           story always shows in full: it is why the tree is worth the walk. */}
       <div class="prose-block td-story"><p set:html={latinHtml(p.story)} /></div>
       {p.seasonHtml && <Fragment set:html={p.seasonHtml} />}
+
+      {/* Add a photo on a page that already has a picture, on every tree since
+          2026-10-12 (Hidde: "make it consistent"), UNDER THE STORY since
+          2026-10-13 (Hidde: "takes up prime space"): Google Maps keeps Add a
+          photo in a place's Photos section, Apple Maps Add Your Photos in
+          Ratings & Photos, both below the description. A photo-less page has
+          its button in the hero instead. Same place as the app (addPhotoRow). */}
+      {photo && photo.url && (
+        <div class="td-addphoto-quiet">
+          <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} quiet />
+        </div>
+      )}
 
       {/* HOW TO GET IN AND HOW TO GET THERE (accessBlock: figure.walk and
           tram.fill, footnote, secondary). The address line leads on the web

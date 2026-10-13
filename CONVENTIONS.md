@@ -3373,3 +3373,19 @@ Follow-up, same day (Hidde: maybe not the other photos directly below it?): on a
 **Hidde picked A2 (2026-10-13), built on both surfaces.** The frame shape is one function, `heroFrame()` in site/src/lib/images.ts (3:2 when the lead is wider than 5:4, else its own shape down to 4:5); the website reads it as `--hero-ar`, the app reads the same answer from the feed (`photo.frame`). Both stop the frame at 60 percent of the screen so on an SE the name clears the bottom bar. Below 900 px the extras are scroll-snap slides inside the lead with the count bottom-left and the credit line following the photograph shown; a desktop keeps the strip. App: a paged TabView without dots, the same count, the credit at the foot following the swipe.
 
 **Then dots, not a count (Hidde, same evening):** "i like the alltrails design better which shows dots for the amount of photos you can scroll through". This overrides the line in "Several photographs of one tree" that keeps Apple's page dots for flat lists; his call, said out loud. Web: one 7 px dot per photograph centred at the foot of the picture, the one showing filled. App: the system page control on the paged TabView, no background. Not checked against AllTrails' own page, which sat behind its device check.
+
+---
+
+## Add a photo on a place that already has one (2026-10-13, looked up)
+
+Hidde: "the add photo button feels a bit big and takes up prime space is this how benchmarks do it". It was a pill laid over the top-left of the lead photograph (app) and an outlined button between the place line and the facts (web).
+
+**None of the three references puts it on the header image:**
+
+| Product | Where "add a photo" lives | Source |
+|---|---|---|
+| Google Maps (iPhone) | Tap the place, then **Photos**, then **Add a photo**: inside the Photos section, below the description | [support.google.com/maps/answer/10028567](https://support.google.com/maps/answer/10028567?hl=en) |
+| Apple Maps (iPhone) | **Add Your Photos** in the place card's Ratings & Photos part, reached by scrolling or via Rate | [support.apple.com, Rate places and add photos](https://support.apple.com/en-mt/guide/iphone/iphc3e29e15d/ios) |
+| AllTrails | Open the trail's photos (tap the main photo), add from inside the gallery | [support.alltrails.com, add photos to a trail](https://support.alltrails.com/hc/en-us/articles/360019244491-How-do-I-add-photos-to-a-trail) |
+
+**What we do:** on a tree with a photograph, a quiet outlined "Add a photo" button directly under the story, same place on web (`.td-addphoto-quiet` in TreeDetail.astro) and app (`addPhotoRow` in TreeDetail.swift). On a tree with NO photograph the button stays in the empty photo frame: the empty frame is the request, and the whole frame opens the camera.
