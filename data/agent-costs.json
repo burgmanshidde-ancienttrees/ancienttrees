@@ -11433,6 +11433,22 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "miami",
+    "kind": "verify",
+    "tokens": 50000,
+    "trees": 0,
+    "note": "nothing rich: no register imported, champion rows lack photo and access page"
+   },
+   {
+    "date": "2026-10-13",
+    "target": "proven-roster photo-less trees",
+    "kind": "photo",
+    "tokens": 360000,
+    "trees": 0,
+    "note": "3 photographs approved, 43 candidates rejected, 32 files unjudged; 68 minutes"
+   },
+   {
+    "date": "2026-10-13",
     "target": "san-diego",
     "kind": "enrich",
     "tokens": 52000,
