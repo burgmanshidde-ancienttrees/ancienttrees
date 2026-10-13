@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "zaragoza",
+    "kind": "enrich",
+    "tokens": 83000,
+    "trees": 0,
+    "note": "enrichment: catalogue ficha numbers on 6 trees, Paraninfo yew site and hours; 6 of 7 improved, 15 gaps dead-ended; 2004 measurements withheld as too old; zar_001 pin sits on the dead almez's catalogue point"
+   },
+   {
+    "date": "2026-10-13",
     "target": "rotterdam",
     "kind": "enrich",
     "tokens": 80000,

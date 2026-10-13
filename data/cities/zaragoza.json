@@ -101,7 +101,11 @@
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise it by the leaves, small and dark and furred pale underneath, evergreen all year, on a trunk two metres forty round. It stands in Parque Bruil; the park's hackberry is wider and a metre taller.",
       "girth_cm": 240,
-      "height_m": 14.0
+      "height_m": 14.0,
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares de Zaragoza (Ayuntamiento de Zaragoza, 2006), no. ficha 6, Encina, Parque Bruil",
+        "url": null
+      }
     },
     {
       "id": "zar_003",
@@ -132,7 +136,11 @@
       "curation_status": "flagged",
       "notes": "FLAGGED ON VITALITY AND ON SOURCES. Ficha 34: girth 2.80 m at 1.30 m, 3.60 m at base, 17 m tall, condition 'regular' in 2005 with large pruning stubs, owner Ayuntamiento de Zaragoza. No source later than 2005. Both listed sources are the same municipal catalogue, the 2006 book and its 2013 legal annex, so this tree has one source and not two. It is included ahead of the register's other 'regular' trees because London plane is long-lived and tolerant and a mediocre rating twenty years ago is far less alarming for this species than for the poplars and the black locust, which were dropped to leads for exactly that reason. No age is recorded and none is claimed here. The wall opposite and the 1809 breach are well documented independently, but they are context and not evidence about the tree. Coordinate is datum-corrected from the book's ED50 UTM.",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the big pruning stubs where structural branches were taken off, and by the bark shedding in plates. It stands on the Calle Asalto pavement, opposite the surviving stretch of the medieval wall."
+      "how_to_recognise": "You can recognise it by the big pruning stubs where structural branches were taken off, and by the bark shedding in plates. It stands on the Calle Asalto pavement, opposite the surviving stretch of the medieval wall.",
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares de Zaragoza (Ayuntamiento de Zaragoza, 2006), no. ficha 34, Platano de sombra, Calle Asalto",
+        "url": null
+      }
     },
     {
       "id": "zar_004",
@@ -152,9 +160,11 @@
         "https://www.zaragoza.es/contenidos/medioambiente/arboles_singulares.pdf",
         "https://www.zaragoza.es/cont/paginas/normativa/anexos/anejo-3-arbolado.pdf",
         "https://paraninfo.unizar.es/historia-del-edificio",
-        "https://es.wikipedia.org/wiki/Paraninfo_de_la_Universidad_de_Zaragoza"
+        "https://es.wikipedia.org/wiki/Paraninfo_de_la_Universidad_de_Zaragoza",
+        "https://www.zaragoza.es/sede/portal/cultura/servicio/equipamiento/12238",
+        "https://www.zaragoza.es/contenidos/medioambiente/arboles_singulares.pdf (ficha 52: 'Dentro del recinto del Paraninfo Universitario. Zona ajardinada junto al edificio, colindante con la calle Doctor Cerrada')"
       ],
-      "access": "In the grounds of a working university building. Depends on the Paraninfo being open, and needs checking on the ground.",
+      "access": "The Paraninfo building is open weekdays 8:00 to 22:00 and Saturdays 9:00 to 14:00, closed Sundays and holidays (weekdays 8:30 to 14:00 in school holidays). The yew stands in the garden beside the building, next to Calle Doctor Cerrada; whether that garden is open to walk-ins is not published, so check on the day.",
       "transport": "Plaza Basilio Paraiso, at the top of Paseo Independencia, on the tram line through Gran Via.",
       "photo": {
         "url": null,
@@ -174,7 +184,15 @@
         "label": "August to October: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it as one of a pair of yews, both male, so neither ever carries the red berries. They stand in front of the Paraninfo's brick and ceramic facade, thirteen metres tall on a trunk a metre twenty round."
+      "how_to_recognise": "You can recognise it as one of a pair of yews, both male, so neither ever carries the red berries. They stand in front of the Paraninfo's brick and ceramic facade, thirteen metres tall on a trunk a metre twenty round.",
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares de Zaragoza (Ayuntamiento de Zaragoza, 2006), no. ficha 52, Tejo, Paraninfo Universitario",
+        "url": null
+      },
+      "location_site": {
+        "name": "Garden beside the Paraninfo building, Calle Doctor Cerrada side",
+        "radius_m": 40.0
+      }
     },
     {
       "id": "zar_005",
@@ -213,7 +231,11 @@
         "label": "September to November: the harvest, when the fruit turns from green to black",
         "kind": "fruit"
       },
-      "how_to_recognise": "You can recognise it by the base, four metres ninety around at the ground and folded half hollow, on a tree only five metres tall. It stands behind the Facultad de Medicina, near the Colegio Mayor Pedro Cerbuna."
+      "how_to_recognise": "You can recognise it by the base, four metres ninety around at the ground and folded half hollow, on a tree only five metres tall. It stands behind the Facultad de Medicina, near the Colegio Mayor Pedro Cerbuna.",
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares de Zaragoza (Ayuntamiento de Zaragoza, 2006), no. ficha 23, Olivo, Facultad de Medicina",
+        "url": null
+      }
     },
     {
       "id": "zar_006",
@@ -243,7 +265,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the crown, flat and wide and almost horizontal on a short trunk, after three main branches were taken out. It stands on the Calle Aznar Molina in Tenerias, three hundred metres from the Parque Bruil trees."
+      "how_to_recognise": "You can recognise it by the crown, flat and wide and almost horizontal on a short trunk, after three main branches were taken out. It stands on the Calle Aznar Molina in Tenerias, three hundred metres from the Parque Bruil trees.",
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares de Zaragoza (Ayuntamiento de Zaragoza, 2006), no. ficha 15, Acacia tres espinas, Calle Aznar Molina",
+        "url": null
+      }
     },
     {
       "id": "zar_007",
@@ -273,7 +299,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the pinnate leaves, up to a metre long, on a trunk two metres fifty-seven round and a tree fifteen metres seventy tall. It stands at the entrance to the Jardin Botanico inside the Parque Grande."
+      "how_to_recognise": "You can recognise it by the pinnate leaves, up to a metre long, on a trunk two metres fifty-seven round and a tree fifteen metres seventy tall. It stands at the entrance to the Jardin Botanico inside the Parque Grande.",
+      "official_register": {
+        "name": "Catalogo de Arboles Singulares de Zaragoza (Ayuntamiento de Zaragoza, 2006), no. ficha 48, Ailanto, entrada del Jardin Botanico",
+        "url": null
+      }
     }
   ],
   "not_ready_to_publish": "DO NOT MOVE THIS TO data/cities/ AS IT STANDS. Four trees is the floor and this file holds four, but only zar_001 has dated proof of life. The 2006 catalogue this city was built from is not a list of living trees: the arborist Ismael Sanz is quoted saying that by 2012 nearly half of it had already disappeared or was in poor condition, and two of the four trees checked on 2026-08-05 were confirmed dead, including one that had already been written into this file. What each tree still needs is in its own notes field. The cheapest way to unblock the city is the 2019 'Arbol Singular Urbano de Zaragoza' catalogue, reported as 56 trees plus 15 conjuntos, which would be the city confirming what still stands; no run has yet found that document."
