@@ -62,7 +62,19 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by the trunk, about 14 metres round, the third largest lime girth recorded in Bavaria. It stands against the wall of the former Kloster Wessobrunn."
+      "how_to_recognise": "You can recognise it by the trunk, about 14 metres round, the third largest lime girth recorded in Bavaria. It stands against the wall of the former Kloster Wessobrunn.",
+      "official_register": {
+        "name": "Nationalerbe-Bäume (Deutsche Dendrologische Gesellschaft), Nr. 30",
+        "url": "https://nationalerbe-baeume.de/project/tassilolinde-wessobrunn-nahe-ammersee-oberbayern/"
+      },
+      "height_m": 17,
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "Scented pale yellow flowers in June, loud with bees",
+        "kind": "flowers"
+      }
     },
     {
       "id": "lnw_001",
@@ -102,6 +114,13 @@
         "source_name": "Marienlinde (Linden, Wessobrunn)",
         "qid": "Q136124810",
         "views": 15
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "Scented pale yellow flowers in June, loud with bees",
+        "kind": "flowers"
       }
     }
   ]
