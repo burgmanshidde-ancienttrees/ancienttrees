@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "san-diego",
+    "kind": "enrich",
+    "tokens": 43000,
+    "trees": 0,
+    "note": "enrichment: nothing found (1996 fig measurements without a breast-height statement, no register records); thin pass, sdg_005 and sdg_006 not researched; gaps left open"
+   },
+   {
+    "date": "2026-10-13",
     "target": "poznan",
     "kind": "enrich",
     "tokens": 62000,
