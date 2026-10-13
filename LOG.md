@@ -47,6 +47,9 @@ Visits last 7 days: 1770 (2380 views). Rung 1 empty (0 sightings). Rung 2: ios.y
 - Apple stays first on the sign-in sheet (his ok).
 - Discover away from home: the city you are in leads the cities row; a season hero more than 30 km away names its place.
 - Season hero shows its season: photo.taken_month from Commons EXIF (scripts/photo_months.py, daily in data-digest.yml; 840 of 872 Commons leads). The hero is the nearest tree at its best whose photo was taken in its best months, however far; none means the stock hero. October: 35 trees qualify. New York now gets the Comfort Maple (Pelham), not a green summer oak. Live once the site deploys the feed. Not yet covered: iNaturalist and our own photos (no month read), and data/photo-autumn.json's colour score is a separate, older signal for the web.
+- Map strip now reads "22 trees" (his pick over "22 trees you can see").
+- Add a photo: under the story on a tree that has a photograph, web and app (Google Maps, Apple Maps, AllTrails all keep it below the description; CONVENTIONS.md). Photo-less trees keep it in the empty frame.
+- Seen, not fixed: on the web tree page at 375 px, a long district name pushes the "·" and the thumb onto their own line (Totteridge Yew).
 - Live on main (ce89a1828, d7023b1b6, e89bd4523 and the order commit). Seen in the simulator; not yet on his phone.
 
 ## 2026-10-13 session: a portrait photograph on a phone (web and app)
