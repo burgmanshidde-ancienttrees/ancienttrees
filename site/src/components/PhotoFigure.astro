@@ -125,9 +125,11 @@ const swipe = variant === "hero" && many;
   {(swipe ? shots.some((s) => s.credit) : leadCredit) && (
     <figcaption>
       {(swipe ? shots : shots.slice(0, 1)).map((s, i) => (
-        <span class="pc-credit" data-i={i} hidden={i !== 0}>{s.credit
-          ? (s.link ? <Fragment>{s.link.before}<a href={s.photo.attribution_url} rel="noopener">{s.link.name}</a>{s.link.after}</Fragment> : s.credit)
-          : <Fragment set:html="&nbsp;" />}</span>
+        <span class="pc-credit" data-i={i} hidden={i !== 0}>
+          {s.credit && s.link && <Fragment>{s.link.before}<a href={s.photo.attribution_url} rel="noopener">{s.link.name}</a>{s.link.after}</Fragment>}
+          {s.credit && !s.link && <Fragment>{s.credit}</Fragment>}
+          {!s.credit && <Fragment set:html="&nbsp;" />}
+        </span>
       ))}
     </figcaption>
   )}
