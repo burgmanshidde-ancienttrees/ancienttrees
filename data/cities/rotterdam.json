@@ -76,7 +76,8 @@
       "verified_sources": [
         "https://www.rijnmond.nl/nieuws/amp/1411866/Deze-ruim-anderhalve-eeuw-oude-kolos-in-Rotterdam-is-straks-misschien-Boom-van-het-Jaar",
         "https://straatpoezie.nl/gedicht/graf-van-de-onbekende-dichter/",
-        "https://fredmarree.wordpress.com/2020/10/07/breytenbachboom/"
+        "https://fredmarree.wordpress.com/2020/10/07/breytenbachboom/",
+        "https://www.rotterdam.nl/monumentale-bomen"
       ],
       "access": "Free, public street at any time",
       "transport": "Walkable from central Rotterdam, roughly 10 minutes",
@@ -88,7 +89,11 @@
       },
       "curation_status": "ai_generated",
       "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by its place on Rotterdam's poetry trail, the spot where Breyten Breytenbach recited and called it the grave of the unknown poet. It stands on the corner of Mauritsweg and Westersingel."
+      "how_to_recognise": "You can recognise it by its place on Rotterdam's poetry trail, the spot where Breyten Breytenbach recited and called it the grave of the unknown poet. It stands on the corner of Mauritsweg and Westersingel.",
+      "official_register": {
+        "name": "Landelijk Register van Monumentale Bomen (Bomenstichting), no. 1684847",
+        "url": null
+      }
     },
     {
       "id": "rot_003",
@@ -129,14 +134,16 @@
       "age_max": 130,
       "location": {
         "address": "Parklaan, Scheepvaartkwartier",
-        "latitude": 51.9075341,
-        "longitude": 4.4753899,
+        "latitude": 51.90739468787055,
+        "longitude": 4.473489113419174,
         "neighbourhood": "Scheepvaartkwartier"
       },
       "story": "An 18-year-old queen's coronation once triggered a small nationwide planting spree, and this linden on the Parklaan is Rotterdam's surviving entry in it. When Wilhelmina was crowned Queen of the Netherlands on 6 September 1898, a metalworks foundry in Doetinchem sent a brochure to every Dutch municipality suggesting they mark the occasion with a commemorative tree, offering to supply the decorative iron fencing to go around it. Towns across the country took up the idea, and Rotterdam planted this Crimean linden on the Parklaan, in what was then a fashionable new residential quarter for the city's shipping merchants. The tree's iron fence has outlasted plenty of the era's other civic gestures: it holds its own listing on the Dutch national heritage register, a decorative object protected separately from the tree it surrounds, which is either a bureaucratic curiosity or a sign of how seriously the country still takes its handful of surviving coronation trees. At roughly 128 years old, the linden has outlived the queen it honours by more than seven decades and stands a quiet, well-tended reminder that Rotterdam's grandest 19th-century street was, for one afternoon in 1898, briefly about a young monarch rather than shipping money.",
       "verified_sources": [
         "https://www.monumentaltrees.com/nl/nld/zuidholland/rotterdam/8785_parklaan/17312/",
-        "https://monumentenregister.cultureelerfgoed.nl/monumenten/516445"
+        "https://monumentenregister.cultureelerfgoed.nl/monumenten/516445",
+        "https://www.rotterdam.nl/monumentale-bomen",
+        "https://www.rotterdam.nl/monumentale-bomen (LRMB record nr 1695438, a single-tree point, Krimlinde at corner Parklaan and Kievitslaan, planted 1890-1900; rotterdam.nl says the Parklaan crimean linden was planted 1898 for Wilhelmina's coronation)"
       ],
       "access": "Free, public street at any time",
       "transport": "Walkable from central Rotterdam, roughly 10-15 minutes",
@@ -147,8 +154,19 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the decorative iron fence around it, which holds its own listing on the Dutch national heritage register. It stands on the Parklaan in the Scheepvaartkwartier, planted for Wilhelmina's coronation in 1898."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the decorative iron fence around it, which holds its own listing on the Dutch national heritage register. It stands on the Parklaan in the Scheepvaartkwartier, planted for Wilhelmina's coronation in 1898.",
+      "official_register": {
+        "name": "Landelijk Register van Monumentale Bomen (Bomenstichting), no. 1695438",
+        "url": null
+      },
+      "height_m": 20,
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.rotterdam.nl/monumentale-bomen (LRMB record nr 1695438, a single-tree point, Krimlinde at corner Parklaan and Kievitslaan, planted 1890-1900; rotterdam.nl says the Parklaan crimean linden was planted 1898 for Wilhelmina's coronation)",
+        "date": "2026-10-13",
+        "moved_m": 131
+      }
     },
     {
       "id": "rot_005",
@@ -159,14 +177,16 @@
       "age_max": 138,
       "location": {
         "address": "Koningin Emmaplein, Scheepvaartkwartier",
-        "latitude": 51.9100144,
-        "longitude": 4.4754989,
+        "latitude": 51.91047503009056,
+        "longitude": 4.475230777520651,
         "neighbourhood": "Scheepvaartkwartier"
       },
       "story": "Fifteen grand townhouses built between 1888 and 1891 once earned this small square a joking nickname, Rijkeluishofje, the rich people's almshouse, a dig at how sheltered and comfortable its wealthy residents had it compared with the actual almshouses the word usually described. The copper beech at its centre went into the ground around the same years the houses went up, planted alongside a decorative 1890 urn designed by Hendrik Berlage, the architect who would later define much of Amsterdam's own cityscape. The neo-renaissance townhouses around the square housed Rotterdam's shipping elite, close enough to the harbour to manage their businesses and far enough from it to avoid the noise and smell, and the beech has stood at the centre of that arrangement for roughly 135 years, its trunk now 325 centimetres around. Copper beeches are planted for their colour, deep purple-red leaves that shift with the season and light rather than staying a uniform green, and this one has had over a century to fill out into the kind of specimen that makes an otherwise ordinary residential square worth a detour. It remains free and open, a short walk from the Westersingel and Parklaan trees on the same side of the city centre.",
       "verified_sources": [
         "https://nl.wikipedia.org/wiki/Koningin_Emmaplein_(Rotterdam)",
-        "https://www.monumentaltrees.com/nl/nld/zuidholland/rotterdam/6608_koninginemmaplein/"
+        "https://www.monumentaltrees.com/nl/nld/zuidholland/rotterdam/6608_koninginemmaplein/",
+        "https://www.rotterdam.nl/monumentale-bomen",
+        "https://www.rotterdam.nl/monumentale-bomen (LRMB record nr 1695436, Bruine beuk Koningin Emmaplein, single-tree point; red beech planted when the square was built, 1888-1891)"
       ],
       "access": "Free, public square at any time",
       "transport": "Walkable from central Rotterdam, roughly 10-15 minutes",
@@ -177,8 +197,18 @@
         "status": "missing"
       },
       "curation_status": "ai_generated",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it by the purple-red leaves and the trunk, 325 centimetres around. It stands at the centre of Koningin Emmaplein, beside the 1890 urn designed by Hendrik Berlage, with the square's fifteen townhouses around it."
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it by the purple-red leaves and the trunk, 325 centimetres around. It stands at the centre of Koningin Emmaplein, beside the 1890 urn designed by Hendrik Berlage, with the square's fifteen townhouses around it.",
+      "official_register": {
+        "name": "Landelijk Register van Monumentale Bomen (Bomenstichting), no. 1695436",
+        "url": null
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.rotterdam.nl/monumentale-bomen (LRMB record nr 1695436, Bruine beuk Koningin Emmaplein, single-tree point; red beech planted when the square was built, 1888-1891)",
+        "date": "2026-10-13",
+        "moved_m": 54
+      }
     },
     {
       "id": "rot_006",
@@ -289,7 +319,8 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise them by the group of four planes standing together, three London and one Oriental. They stand on Delftseplein, just east of Rotterdam Centraal."
+      "how_to_recognise": "You can recognise them by the group of four planes standing together, three London and one Oriental. They stand on Delftseplein, just east of Rotterdam Centraal.",
+      "height_m": 26
     },
     {
       "id": "rot_009",
@@ -356,7 +387,15 @@
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1696614",
         "url": null
       },
-      "height_m": 20
+      "height_m": 20,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "copper autumn colour",
+        "kind": "colour"
+      }
     },
     {
       "id": "rot_011",
@@ -402,7 +441,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694861",
         "url": null
-      }
+      },
+      "height_m": 24
     },
     {
       "id": "rot_012",
@@ -593,7 +633,15 @@
         "url": null
       },
       "girth_cm": 230,
-      "height_m": 17
+      "height_m": 17,
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "label": "scented lime flowers, loud with bees",
+        "kind": "flowers"
+      }
     }
   ]
 }

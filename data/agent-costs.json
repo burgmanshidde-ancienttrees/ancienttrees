@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "rotterdam",
+    "kind": "enrich",
+    "tokens": 80000,
+    "trees": 0,
+    "note": "enrichment: LRMB ids and register pins for rot_004 and rot_005, rot_002 id, three heights, two best_times; 7 of 14 improved, 20 gaps dead-ended; rot_002 and rot_003 pin 640 m off the register point left for a session; rot_013 species conflict"
+   },
+   {
+    "date": "2026-10-13",
     "target": "fort-worth",
     "kind": "enrich",
     "tokens": 69000,
