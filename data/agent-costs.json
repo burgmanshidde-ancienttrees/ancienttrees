@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "thessaloniki",
+    "kind": "enrich",
+    "tokens": 51000,
+    "trees": 0,
+    "note": "enrichment: girth and height for 4 planes from the 2019 municipal study via voria.gr; 3 small-site pins; no register record or gazette number found, no best_time (plane file has no striking moment); 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "brighton",
     "kind": "enrich",
     "tokens": 58000,

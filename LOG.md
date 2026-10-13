@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-13 night run, 22:12 window: Thessaloniki planes measured
+
+- Visits last 7 days: 1,827 (2,592 page views). Rung 1 empty (0 sightings waiting). Rung 2: health.py lists Smoke test "skipped" (push-triggered runs skip by design; the scheduled smoke run at 21:23 succeeded, build and deploy green) and the iOS app (a push run failed at 17:45, the scheduled run was still running); nothing to fix from here.
+- Rung 4, enrichment: Thessaloniki, one verify pass (51k tokens). All four Oriental Planes got girth and height from the 2019 municipal study as reported by voria.gr (girth derived from diameter, stated in the note); the Kastro plane is mostly dead and held up by a concrete column, noted. Three got a small named site (Kastra gate junction, Tsirogianni Square, the consulate corner); Navarino stays open because the square is park-like. No per-tree register record or gazette number found (diavgeia.gr is the next place to look); no best_time because the plane file has no striking moment. 9 gaps dead-ended. Preflight clean.
+- Not done: the other enrichment cities and the 59 READY leads.
+
 ## 2026-10-13 night run, 21:10 window: season gaps cleared, 38 best_time lines
 
 - Visits last 7 days: 1,770 (2,390 page views). Rung 1 empty (0 sightings waiting). Rung 2: health.py flagged the iOS app run; its failure was infrastructure (the test job was never acquired by a hosted macOS runner, capacity), no assertion failed. Answered with `health.py --answer`.
