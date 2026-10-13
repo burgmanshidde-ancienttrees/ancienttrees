@@ -1,0 +1,41 @@
+{
+  "city": "Batenburg",
+  "country": "Netherlands",
+  "city_slug": "batenburg",
+  "note": "Village in the municipality of Wijchen (Gelderland). Verification pass 2026-10-13 of four LRMB (Bomenstichting) records, all status 3 monumentaal, openbaar ja, bezoekbaar ja, Laatste_waarneming May 2026 (beech, chestnut, lime) and Feb 2026 (ash). A new place needs four rich trees; only two reached a confirmed pin, so nothing was delivered. PDOK Actueel_orthoHR leafless frame viewed 2026-10-13. Register URL pattern: https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D<NR>&outFields=*&f=json",
+  "leads": [
+    {
+      "name": "Brown Beech at the Old St Victor church",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "lat": 51.823035,
+      "lng": 5.629069,
+      "status": "lead",
+      "why": "LRMB 1677843, Oude of St Victorkerk, Grotestraat 11A. Girth 510 cm, height 20 m, planting band 1880-1890, solitary, owner religieuze instantie, setting plein, paved. Last observed May 2026. Register note: large trunk wound from a broken limb, partly rotten, bracket fungus (Ganoderma lipsiense), regular checks wanted. PDOK: register point lands on a large bare crown beside the church, mostly separable from neighbours; confirmed-pin candidate. Access: register says visitable ja, public ja; not independently evidenced. Would be RICH (pin, register link, girth, access) if a writer pass accepts register access. Held only because the new place cannot reach four. Fungal decay: alive but check before shipping."
+    },
+    {
+      "name": "Horse Chestnut on Grotestraat",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "lat": 51.822759,
+      "lng": 5.628748,
+      "status": "lead",
+      "why": "LRMB 1677842, Bij de kerk, Grotestraat 11A. Girth 508 cm, height 26 m, planting band 1900-1910 (so about 120 years, not the 500+ the girth might suggest), solitary, owner religieuze instantie, setting tuin. Last observed May 2026. Register note: large limb blew out in 1992 and was already treated. PDOK: register point lands exactly on one large bare crown beside the street, clearly identifiable; confirmed-pin candidate. Visible from the street; setting is church garden, register says visitable ja, public ja. Would be RICH. Held only because the new place cannot reach four."
+    },
+    {
+      "name": "Limes at Batenburg castle ruin",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "lat": 51.823749,
+      "lng": 5.631684,
+      "status": "lead",
+      "why": "LRMB 1677845, bij ruine Kasteel Batenburg, t.o. Molendijk 11. A GROUP of 22 limes (aantal_bomen 22), girth 411 cm (largest), height 8 m, band 1600-1700, owner natuurbeschermingsorganisatie (Geldersch Landschap en Kasteelen). Register 1993 note: old court tree ('gerechtsboom'), planted by Jacoba van Beieren (register claim only, NOT corroborated: web search found no source linking her to Batenburg; do not repeat), trunk wounds, much dead wood, the trees have become a ruin themselves. FAILS: pin is a point in a group beside the moat bridge, no individual crown (PDOK shows tree mass, shadows over the moat and path); access to the ruin conflicting (guided Sundays Apr to Oct per Geldersche Kasteelen guide; one source says freely viewable from outside; another open only on Open Monumentendag; news says gate opens 12 April 2026). Needs: the GLK page https://www.glk.nl/gebied/batenburg read for opening, and a decision whether the limes by the bridge are a free-viewing ensemble."
+    },
+    {
+      "name": "Calabrian maple at Batenburg cemetery",
+      "species": "Italian Maple (Acer lobelii), register name 'Calabrische es'",
+      "lat": 51.824495,
+      "lng": 5.632931,
+      "status": "lead",
+      "why": "LRMB 1677848, Begraafplaats Kasteelallee. Girth 345 cm, height 12 m, band 1880-1890, solitary, owner gemeente, reason dendrologisch. Register note: grafted on Acer cappadocicum 'Rubrum', much dead wood, cavity in trunk (1990). Last observed Feb 2026. FAILS pin: PDOK shows a dense dark round mass in the middle of the cemetery gravel about 8 m from the register point, with a grave monument at its edge; it does not read as a leafless maple crown. Needs a ground photograph or a dated aerial in leaf. Species label (Acer lobelii vs ash common name) is a register inconsistency. Cemetery presumably open to all (municipal, bezoekbaar ja) but no hours."
+    }
+  ],
+  "blocked": []
+}

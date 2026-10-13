@@ -17,24 +17,24 @@
       "species": "Common Lime (Tilia x europaea)",
       "lat": 51.805322,
       "lng": 5.541504,
-      "status": "lead",
-      "why": "LRMB register nr 1680017 ('Hollandse linde Basisschool De Linde'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting weg. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+      "status": "blocked",
+      "why": "DEAD per register (checked 2026-10-13): LRMB 1680017 status 5 (dead/felled), last observed 2023-08."
     },
     {
       "name": "doorn",
       "species": "Sycamore (Acer pseudoplatanus)",
       "lat": 51.823982,
       "lng": 5.567164,
-      "status": "lead",
-      "why": "LRMB register nr 1692624 ('Gewone esdoorn'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: In 1928 geplant. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+      "status": "blocked",
+      "why": "DEAD per register (checked 2026-10-13): LRMB 1692624 status 5 (dead/felled)."
     },
     {
       "name": "European Beech, op kerkhof Sint-Lambertuskerk",
       "species": "European Beech (Fagus sylvatica)",
       "lat": 51.798492,
       "lng": 5.585654,
-      "status": "lead",
-      "why": "LRMB register nr 1680015 ('Beuk'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting begraafplaats. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+      "status": "blocked",
+      "why": "DEAD per register (checked 2026-10-13): LRMB 1680015 status 5 (dead/felled), last observed 2016."
     },
     {
       "name": "voormalige Hervormde kerk",
@@ -73,8 +73,8 @@
       "species": "Horse Chestnut (Aesculus hippocastanum)",
       "lat": 51.768863,
       "lng": 5.528165,
-      "status": "lead",
-      "why": "LRMB register nr 1689509 ('Witte paardenkastanje'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+      "status": "blocked",
+      "why": "DEAD per register (checked 2026-10-13): LRMB 1689509 status 5 (dead/felled), replaced by plane 1689510 (status 6)."
     },
     {
       "id": "oss_001",
@@ -162,6 +162,54 @@
       "height_m": 17,
       "removed": "2026-10-12",
       "removed_reason": "Alive, but the Oss page was removed 2026-10-12 (Hidde): two living trees is below the four-tree floor and the thin shape Google demoted. Kept as leads; Oss returns when it holds four."
+    },
+    {
+      "name": "Gewone plataan, kerktuin Berghem",
+      "species": "London Plane (Platanus x hispanica)",
+      "lat": 51.76988,
+      "lng": 5.56504,
+      "status": "lead",
+      "why": "LRMB 1680018, Julianastraat 37, church garden. Girth 435 cm, height 24 m, band 1890-1900, owner religious body, setting tuin, visitable ja, last observed 2023-08. Missing: PDOK aerial shows several overlapping plane crowns, not individually identifiable, so no confirmed pin; church-garden access not evidenced. (pass 2026-10-13)"
+    },
+    {
+      "name": "Hollandse linde voor Sint Annakapel, Herpen",
+      "species": "Common Lime (Tilia x europaea)",
+      "lat": 51.76897,
+      "lng": 5.60748,
+      "status": "lead",
+      "why": "LRMB 1677958, Herpen Koolwijksestraat 5. Girth 250 cm, height 15 m, band 1880-1890, gemeente plantsoen, status 'potentieel'. Missing: several crowns in the forecourt, aerial gives no individual crown, and the girth is modest. (pass 2026-10-13)"
+    },
+    {
+      "name": "Zomerlindes Kasteel Oijen",
+      "species": "Summer Lime (Tilia platyphyllos)",
+      "lat": 51.81208,
+      "lng": 5.52506,
+      "status": "lead",
+      "why": "LRMB 1680024, Oijen Bovendijk 34-38. Girth 320 cm, height 27 m, band 1850-1860, roadside row in front of the castle moat. A row, not one collectible point; no individual crown identifiable in aerial. (pass 2026-10-13)"
+    },
+    {
+      "name": "Zomereiken rondom centrum Ravenstein",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "lat": 51.79532,
+      "lng": 5.64935,
+      "status": "lead",
+      "why": "LRMB 1677952, group of oaks around the Ravenstein centre (park, gemeente). Girth 420 cm. A group along streets, not one collectible point. (pass 2026-10-13)"
+    },
+    {
+      "name": "Zwarte linde, Demen",
+      "species": "Common Lime (Tilia x europaea)",
+      "lat": 51.81443,
+      "lng": 5.63776,
+      "status": "lead",
+      "why": "LRMB 1677849, Demen Burgemeester Canersstraat 1. Girth 250 cm, height 10 m, band 1700-1750, private owner, agrarian setting. Missing: access and pin not evidenced. (pass 2026-10-13)"
+    },
+    {
+      "name": "Batenburg cluster (other municipality, Wijchen)",
+      "species": "mixed",
+      "lat": 51.823,
+      "lng": 5.629,
+      "status": "lead",
+      "why": "NOT Oss: Batenburg (Wijchen) holds a walkable cluster within about 500 m: copper beech 1677843 (510 cm, 20 m), horse chestnut 1677842 (508 cm, 26 m) at the Grotestraat 11A church, winter lime at the castle ruin 1677845 (411 cm, band 1600-1700), Calabrian ash on the cemetery 1677848 (345 cm). Candidate for its own place, or a day-trip addition to Oss/Nijmegen coverage. Not verified (pins/access not checked). (pass 2026-10-13)"
     }
   ],
   "blocked": [

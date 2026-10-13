@@ -1,0 +1,70 @@
+[
+  {
+    "id": "oss_001",
+    "name": "The Lime of Macharen Church",
+    "species": "Common Lime (Tilia x europaea)",
+    "age_estimate": "roughly 190 years, from a registered planting decade",
+    "age_min": 186,
+    "age_max": 196,
+    "age_basis": "source",
+    "girth_cm": 350,
+    "height_m": 17,
+    "location": {"address": "Macharen, Dorpstraat 1, bij Sint-Petrus-Bandenkerk", "latitude": 51.804423, "longitude": 5.544771, "neighbourhood": "Macharen centre"},
+    "verified_sources": [
+      "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680016&outFields=*&f=json",
+      "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+    ],
+    "official_register": {"name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680016", "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680016&outFields=*&f=json"},
+    "access": "Free. Village square (plein) owned by the municipality; register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
+    "transport": "No railway station in Macharen; bus from Oss, not verified here (check the current timetable). About 8 km by road from Oss station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Source: LRMB register only (flagged 'register only', but record carries a dated inspection: Laatste_waarneming 2023-08-04, status 3 monumentaal, photos 2016 and 2023). Register: Hollandse linde 'Pallida' (Tilia x europaea 'Pallida'), planting band 1830-1840 (band, ~186 to 196 years now), girth 350 cm, height 17 m (register figures, undated), solitary, owner gemeente, setting plein. Register notes: 21 Jan 1994 a lot of dead wood, dead-wood removal and growing-site study wanted; 2023 the soil cover is wood chips in a tub (the tree stands in a raised heart-shaped tree pit). Register history field: onbekend (nothing about the tree's own story). PIN: register point lands on the single bare crown inside the heart-shaped tree pit in the middle of the junction in front of the church, PDOK orthophoto (leafless, early-spring frame). The pit and the shadow of the crown are unmistakable, so the pin is on the individual tree. lifecheck.py NONE (no photo evidence); alive rests on the register's 2023 observation and a bare crown with live-looking twig structure in the current aerial. Do not bridge from the church or village to the tree: the register gives no planting story. Earlier pass: this page was published as oss_001 and withdrawn 2026-10-12 only for the four-tree floor; id reused. The sibling register entry 1680017 (Basisschool De Linde, Hoogstraat 1) is status 5 (dead) and must not be added. Macharen is a village in the municipality of Oss; Oss city is about 8 km away."
+  },
+  {
+    "id": "oss_007",
+    "name": "The Lulboom of Megen",
+    "species": "Silver Lime (Tilia tomentosa)",
+    "age_estimate": "roughly 90 years, from a documented planting in 1937",
+    "age_min": 86,
+    "age_max": 96,
+    "age_basis": "source",
+    "girth_cm": 390,
+    "height_m": 17,
+    "location": {"address": "Megen, Maasdijk, nabij afrit naar 't Veer", "latitude": 51.824865, "longitude": 5.566952, "neighbourhood": "Megen, Maasdijk"},
+    "verified_sources": [
+      "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681077&outFields=*&f=json",
+      "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696841&outFields=*&f=json",
+      "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+    ],
+    "official_register": {"name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681077", "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681077&outFields=*&f=json"},
+    "access": "Free. Public planting (plantsoen) on the Maasdijk owned by the municipality, with a bench beside it; register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
+    "transport": "No railway station in Megen; bus from Oss, not verified here (check the current timetable). About 14 km by road from Oss station.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Source: LRMB register (two registrations of the same tree, see below); flagged 'register only', last observation 2023-08-04, status 3 monumentaal, photos 2022 and 2016. Register: Zilverlinde (Tilia tomentosa) nicknamed Lulboom, reason herdenkingsboom, planted for the wedding of Princess Juliana and Prince Bernhard in 1937 (register boom_opm and reden_opm), planting band 1930-1940, girth 390 cm, height 17 m (register figures, undated), solitary, owner gemeente, setting plantsoen, on grass. Register notes: damaged and split by a storm on Ascension Day 1992, braced and anchored by Heidemij in 1992; two cannons dated 1809 and 1811 stand under the tree (historie field); since at least 2023 the music festival 'Lulboompop' is held at the spot every June. The twin registration no. 1696841 ('Zilverlinde als Lulboom', girth 377, height 14, status 6 = withdrawn) is the register's own duplicate of the same tree, its note says the number lapses because the same silver lime was entered earlier as 1681077; folded here. Its history text (cited as register second registration, not independent): the tree was placed as a 'koningslinde' at a prominent spot just outside the historic core; it became a meeting place for young and old, a bench near it gives a view, which is where the name 'lulboom' comes from. PIN: register point lands on the single bare crown (and its shadow) in the grass triangle between the dyke path and the access road, PDOK orthophoto, confirmed on the individual tree; precision confirmed. lifecheck.py NONE; alive rests on the register's 2023 observation and the current aerial showing a full bare crown. Earlier pass: published as oss_007 and withdrawn 2026-10-12 only for the four-tree floor; id reused. Megen is a village in the municipality of Oss; Oss city is about 14 km away."
+  },
+  {
+    "id": "oss_011",
+    "name": "The Silver Maple of Gripper",
+    "species": "Silver Maple (Acer saccharinum)",
+    "age_estimate": "roughly 130 years, from a registered planting decade",
+    "age_min": 126,
+    "age_max": 136,
+    "age_basis": "source",
+    "girth_cm": 431,
+    "height_m": 20,
+    "location": {"address": "Oss, Gripper 28-30", "latitude": 51.766826, "longitude": 5.531101, "neighbourhood": "Centrum, Buurt Berghemseweg-Zuid"},
+    "verified_sources": [
+      "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689257&outFields=*&f=json",
+      "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)",
+      "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=51.76683&lon=5.5311&zoom=18 (OpenStreetMap: the point lies on a leisure=playground way on the street Gripper)"
+    ],
+    "official_register": {"name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689257", "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689257&outFields=*&f=json"},
+    "access": "Free. Municipal planting (plantsoen) at the playground on the residential street Gripper, central Oss; register: visitable ja, visible ja, openbaar ja. OpenStreetMap maps the spot as a playground. No hours; open at all times.",
+    "transport": "Oss station is roughly 0.7 km west, about a 10 minute walk through the town centre.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Source: LRMB register only (flagged 'register only', but record carries a recent inspection: Laatste_waarneming 2026-03-11, status 3 monumentaal, photos 2017 and 2023). Register: Witte esdoorn (Acer saccharinum, silver maple), planting band 1890-1900 (band, ~126 to 136 years now), girth 431 cm, height 20 m, solitary, owner gemeente, setting plantsoen, ground cover open paving (gravel). CAVEAT on the girth: an older register note (written when the site was a closed factory yard, address then Bram van de Berghstraat 22) says the trees stood on a closed factory site so no girth measurement was possible, and that building plans were in preparation; the address was renumbered to Gripper 28 in December 2017 for the new housing area. So the 431 cm is a register figure whose measurement date is not stated; it is plausible for an old silver maple but treat it as register-recorded, not independently measured. The site has since been redeveloped as housing with the tree kept; the 2023 photo date shows it stands in the new layout. PIN: register point lands on the one large bare crown between the brick-paved street and the houses in the PDOK orthophoto (leafless, early-spring frame), confirmed on the individual tree. Open question for the writer: the tree sits next to a fenced garden and a playground patch; OSM tags the point as playground, the register says municipal and open, so access is given as free and open; no hours. lifecheck.py NONE; alive rests on the register's March 2026 observation and the full bare crown in the aerial. The register entry's historie field says onbekend; nothing about the tree's own story is sourced."
+  }
+]
