@@ -43,7 +43,8 @@
         "neighbourhood": "First State National Historical Park, about 10 km north of downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1047, ID 166: circumference 215 in, height 174 ft)"
       ],
       "access": "Free, public park or historic ground.",
       "transport": "",
@@ -63,6 +64,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 166",
+        "url": null
       }
     },
     {
@@ -81,9 +86,11 @@
         "neighbourhood": "Winterthur, about 8 km northwest of downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://www.winterthur.org/visit/admission/",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1048, ID 171: circumference 244 in, height 167 ft)"
       ],
-      "access": "Paid entry: inside the museum and garden grounds.",
+      "access": "Paid entry: garden and estate grounds open Tuesday to Sunday, 10 am to 5 pm (closed Mondays); general admission $29 adult, $27 senior or student, children 3 to 12 less, under 3 free; ticket valid two consecutive days.",
       "transport": "",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -102,7 +109,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 171",
+        "url": null
+      }
     },
     {
       "id": "wil_003",
@@ -120,7 +131,8 @@
         "neighbourhood": "Valley Garden Park, about 7 km northwest of downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1088, ID 243: circumference 232 in, height 130 ft)"
       ],
       "access": "Free, public park or historic ground.",
       "transport": "",
@@ -133,6 +145,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 243",
+        "url": null
       }
     },
     {
@@ -151,7 +167,8 @@
         "neighbourhood": "Bellevue State Park, about 6 km northeast of downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1123, ID 402: circumference 182 in, height 96 ft)"
       ],
       "access": "Free, public park or historic ground.",
       "transport": "",
@@ -172,6 +189,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 402",
+        "url": null
       }
     },
     {
@@ -190,7 +211,8 @@
         "neighbourhood": "Brandywine Park, under a kilometre from downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1026, ID 130: circumference 91 in, height 82 ft)"
       ],
       "access": "Free, public park or historic ground.",
       "transport": "",
@@ -203,6 +225,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 130",
+        "url": null
       }
     },
     {
@@ -221,7 +247,8 @@
         "neighbourhood": "Brandywine Cemetery, under a kilometre from downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1152, ID 370: circumference 102 in, height 84 ft)"
       ],
       "access": "Free, public park or historic ground.",
       "transport": "",
@@ -234,6 +261,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 370",
+        "url": null
       }
     },
     {
@@ -252,9 +283,11 @@
         "neighbourhood": "Hagley Museum, about 4 km northwest of downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://www.hagley.org/hours-tickets",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1021, ID 393: circumference 166 in, height 140 ft)"
       ],
-      "access": "Paid entry: inside the museum and garden grounds.",
+      "access": "Paid entry: $22 adult, $18 student, senior or veteran, $12 child 6 to 14, under 6 free; open 10 am to 5 pm, last admission 4 pm, closed Wednesdays (check hagley.org for holiday changes).",
       "transport": "",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -266,7 +299,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 393",
+        "url": null
+      }
     },
     {
       "id": "wil_009",
@@ -284,9 +321,11 @@
         "neighbourhood": "Winterthur, about 8 km northwest of downtown Wilmington"
       },
       "verified_sources": [
-        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0"
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0",
+        "https://www.winterthur.org/visit/admission/",
+        "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Big_Tree_Champs/FeatureServer/0 (OBJECTID 1063, ID 193: circumference 219 in, height 110 ft)"
       ],
-      "access": "Paid entry: inside the museum and garden grounds.",
+      "access": "Paid entry: garden and estate grounds open Tuesday to Sunday, 10 am to 5 pm (closed Mondays); general admission $29 adult, $27 senior or student, children 3 to 12 less, under 3 free; ticket valid two consecutive days.",
       "transport": "",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -306,7 +345,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "paid_entry": true
+      "paid_entry": true,
+      "official_register": {
+        "name": "Delaware Big Tree Champions (Delaware Forest Service), no. 193",
+        "url": null
+      }
     }
   ]
 }

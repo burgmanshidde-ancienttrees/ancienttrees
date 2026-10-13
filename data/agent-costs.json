@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "wilmington-delaware",
+    "kind": "enrich",
+    "tokens": 53000,
+    "trees": 0,
+    "note": "enrichment: all 8 matched to their own Delaware Big Tree Champions record (ID, circumference, height; breast-height assumed, layer does not state it); Winterthur and Hagley hours and prices; no season (sycamore, honey locust files have no striking moment); 2 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-13",
     "target": "split",
     "kind": "enrich",
     "tokens": 72000,
