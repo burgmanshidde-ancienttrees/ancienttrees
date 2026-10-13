@@ -229,7 +229,8 @@
         "GDOS CRFOP register (gid 217404, designated 2021-04-01)",
         "https://pl.wikipedia.org/wiki/D%C4%85b_Cytadelowc%C3%B3w_Pozna%C5%84skich_w_Poznaniu",
         "https://www.poznan.pl/mim/wos/news/dab-cytadelowcow-poznanskich-nowym-pomnikiem-przyrody,160555.html",
-        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3064011.10514"
+        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3064011.10514",
+        "https://www.poznan.pl/mim/wos/news/dab-cytadelowcow-poznanskich-nowym-pomnikiem-przyrody,160555.html (Poznan City, 2021 designation: 30 m height)"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -251,7 +252,8 @@
         "name": "Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody, no. PL.ZIPOP.1393.PP.3064011.10514",
         "url": null
       },
-      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3064011.10514 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3064011.10514 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "height_m": 30
     },
     {
       "id": "poz_008",
@@ -318,7 +320,8 @@
         "GDOS CRFOP register (gid 241337, designated 2025-06-04)",
         "https://www.poznan.pl/mim/wos/news/nowe-pomniki-przyrody,252781.html",
         "https://codziennypoznan.pl/artykul/2025-04-28/poznan-zyska-nowe-pomniki-przyrody/",
-        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3064011.10845"
+        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3064011.10845",
+        "https://www.poznan.pl/mim/brm/news,1202/dwa-nowe-pomniki-przyrody,252407.html (Poznan City Council, 2025: platan klonolistny, obwod pnia w pierśnicy 484 cm, aerial survey 2022 basis)"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -332,7 +335,8 @@
         "name": "Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody, no. PL.ZIPOP.1393.PP.3064011.10845",
         "url": null
       },
-      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3064011.10845 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3064011.10845 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 484
     },
     {
       "id": "poz_010",
@@ -355,7 +359,8 @@
         "GDOS CRFOP register (gid 204123, designated 2017-12-05)",
         "https://www.poznan.pl/mim/wos/news/dab-krzysztof-nowy-pomnik-przyrody-w-poznaniu,114538.html",
         "https://codziennypoznan.pl/artykul/2023-03-14/dab-krzysztof-ma-krzyski-zzm-wyhodowal-sadzonki-z-zoledzi-wildeckiego-pomnika-przyrody/",
-        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3064011.10211"
+        "poland-gdos-pomniki-przyrody.json, no. PL.ZIPOP.1393.PP.3064011.10211",
+        "https://www.poznan.pl/mim/wos/news/dab-krzysztof-nowy-pomnik-przyrody-w-poznaniu,114538.html (Poznan City, 2017 designation: 375 cm obwodu na wys. 130 cm)"
       ],
       "curation_status": "flagged",
       "photo": {
@@ -377,7 +382,8 @@
         "name": "Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody, no. PL.ZIPOP.1393.PP.3064011.10211",
         "url": null
       },
-      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3064011.10211 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Centralny Rejestr Form Ochrony Przyrody (GDOŚ), pomnik przyrody no. PL.ZIPOP.1393.PP.3064011.10211 (data/registers/poland-gdos-pomniki-przyrody.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "girth_cm": 375
     }
   ]
 }

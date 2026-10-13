@@ -11433,6 +11433,14 @@
   "2026-10-13": [
    {
     "date": "2026-10-13",
+    "target": "poznan",
+    "kind": "enrich",
+    "tokens": 62000,
+    "trees": 0,
+    "note": "enrichment: two breast-height girths and one height from Poznan city pages; 3 of 10 improved, 14 gaps dead-ended; no per-tree register records, girths without a stated height withheld"
+   },
+   {
+    "date": "2026-10-13",
     "target": "antwerp",
     "kind": "enrich",
     "tokens": 71000,
