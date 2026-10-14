@@ -340,20 +340,24 @@ struct SignInSheet: View {
             // OPEN THE MAIL APP, the loud one (Hidde, 2026-10-14). Slack, Notion
             // and Medium all lead this step with it. Gmail when it is on the
             // phone, Apple Mail otherwise, and nothing when neither opens.
-            if !Launch.emailCode, let mail = Self.mailApp {
-                Button { UIApplication.shared.open(mail.url) } label: {
-                    Text(mail.label)
+            // ONE GROUP, 12 apart, as BrandSheet's buttons (Hidde, 2026-10-14:
+            // "look at the spacing"): the stack's 18 plus a 10 of padding each
+            // had put 28 between the two pills.
+            VStack(spacing: 12) {
+                if !Launch.emailCode, let mail = Self.mailApp {
+                    Button { UIApplication.shared.open(mail.url) } label: {
+                        Text(mail.label)
+                    }
+                    .buttonStyle(SheetButtonStyle(kind: .primary))
                 }
-                .buttonStyle(SheetButtonStyle(kind: .primary))
-                .padding(.top, 10)
+                // The sheet's own secondary pill, as every other sheet's second
+                // action (BrandSheet), not a loose green footnote.
+                Button(Launch.emailCode ? "Send another code" : "Send another link") {
+                    Task { await account.sendCode(to: to) }
+                }
+                .buttonStyle(SheetButtonStyle(kind: .secondary))
             }
-            // The sheet's own secondary pill, as every other sheet's second
-            // action (BrandSheet), not a loose green footnote.
-            Button(Launch.emailCode ? "Send another code" : "Send another link") {
-                Task { await account.sendCode(to: to) }
-            }
-            .buttonStyle(SheetButtonStyle(kind: .secondary))
-            .padding(.top, 10)
+            .padding(.top, 4)
         }
         .onAppear { if Launch.emailCode { focus = .code } }
     }
