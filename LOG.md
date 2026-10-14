@@ -20,6 +20,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Hōraiji, Jalhay, Plungė, Priekulė: 8 trees enriched. Aichi big-tree pages gave girth and height for the Kasa sugi and Nezu no Ki (their coordinates sit 360 to 470 m from our pins, over the 300 m limit, so not taken); Les Sept Frères got its 2012 classification decree (press circumferences left out); four Lithuanian trees got saugoma.lt records; Simonaitytė's beech got museum hours and prices plus an October to November colour season. 10 gaps dead-ended. Preflight 0 problems.
 
+- Rouen, São Paulo, Tamba, Wrocław: four Wielka Wyspa oaks got newer girth and height (przyrodniczo.pl survey; the older register figure stays in measure_source, 1.30 m assumed), the Kashiwara zelkova got its city page and height. **Published error fixed:** São Paulo listed the Figueira das Lágrimas twice (spa_001 and fdl_001, the latter pinned 3 km from the tree); fdl_001 is retired to leads with a redirect, the city now has one tree and its intro already said so. 15 gaps dead-ended. Preflight 0 problems.
+
 ## 2026-10-14 night run, 00:24 window
 
 - Visits last 7 days: 1,491. Rung 1 empty. Rung 2: iOS scheduled run failed on one test, `testEveryFlowLeavesAWayBack` (tap on "person-follow" button found no match); needs a simulator session, not fixable from this runner. Smoke "skipped" is the push-trigger default.

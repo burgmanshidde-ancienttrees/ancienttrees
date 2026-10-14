@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "rouen+sao-paulo+tamba+wroclaw",
+    "kind": "enrich",
+    "tokens": 87000,
+    "trees": 0,
+    "note": "enrichment: four Wielka Wyspa monument oaks got newer girth and height from the przyrodniczo.pl survey (older register girth kept in measure_source); Kashiwara zelkova city page as record with height (6.4 m labelled trunk diameter, girth left out); the pass found fdl_001 was a duplicate of spa_001 with a pin 3 km off, retired to leads; 15 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "horaiji+jalhay+plunge+priekule",
     "kind": "enrich",
     "tokens": 98000,
