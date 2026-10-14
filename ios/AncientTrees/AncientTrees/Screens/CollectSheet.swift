@@ -1136,37 +1136,10 @@ struct CollectSheet: View {
             // screen is a control nobody sees.
             WorthTheTripAsk(tree: t, centred: true)
                 .padding(.top, 20)
-            VStack(spacing: 12) {
-                doneButton
-                // THE ESCAPE FROM A CONFIDENT MATCH (Hidde in Nara: "deze hele
-                // bevestiging is wel heel nice maar dan moet je wel 100% zeker
-                // weten of dat m was"): a grey pill the same size as Done,
-                // always shown, never a grey link in the footnote size.
-                // Not on a tree you had already: the button un-ticks, and that
-                // would take back a visit made on another day.
-                if newFind {
-                Button("I am not sure it was this one") {
-                    if case .ticked(let id) = stage { saved.toggleVisited(id) }
-                    // DOUBT IS NOT DENIAL, and this line used to treat it as one.
-                    // With a single candidate near, it sent an unsure person
-                    // straight to "We do not have this one" and a form asking them
-                    // to name a new tree, which is how a duplicate of a tree we
-                    // already map enters the database on the strength of somebody
-                    // hesitating. It is the same mistake "None of these" makes,
-                    // arrived at from the other side, and the flow walk caught it
-                    // on its first run.
-                    //
-                    // The list is the honest destination whatever its length: it
-                    // holds all three answers, including "I am not sure which".
-                    // Only with nothing of ours near at all is the form right.
-                    if candidates.isEmpty { startDraft() } else {
-                        withAnimation(.snappy) { stage = .identify }
-                    }
-                }
-                .buttonStyle(SheetButtonStyle(kind: .secondary))
-                .accessibilityIdentifier("collect-not-this-one")
-                }
-            }
+            // No "I am not sure it was this one" (Hidde, 2026-10-14): it was
+            // the escape from a silent match (Nara), and since the same day you
+            // always pick the tree yourself a tap before this sheet.
+            doneButton
             .padding(.top, 22)
             // No footnote (Hidde, 2026-10-14: "it is in your trees now with
             // photograph clutters, less is more"): the title already says it.

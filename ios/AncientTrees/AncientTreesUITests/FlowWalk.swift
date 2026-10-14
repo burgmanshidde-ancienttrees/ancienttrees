@@ -153,9 +153,9 @@ final class FlowWalk: XCTestCase {
                 Step(name: "back-to-the-list") { Self.tap($0, "Back to the list") },
                 Step(name: "compare-it-again") { Self.tap($0, "collect-compare-0") },
                 Step(name: "say-it-is-the-one") { Self.tap($0, "collect-this-is-the-one") },
-                // The escape from a confident match, which used to be a grey
-                // link and is now the same size as Done.
-                Step(name: "doubt-it-afterwards") { Self.tap($0, "collect-not-this-one") },
+                // Then Done. "I am not sure it was this one" is gone since
+                // 2026-10-14: you picked it yourself a tap ago.
+                Step(name: "done") { Self.tap($0, "collect-done") },
             ]),
 
             // ADDING A TREE WE DO NOT MAP, which ends on the tree's own page as a
