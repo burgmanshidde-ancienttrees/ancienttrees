@@ -39,7 +39,8 @@
       },
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Past%C3%BD%C5%99sk%C3%BD_buk",
-        "https://plzen.rozhlas.cz/pribeh-pastyrskeho-buku-na-chebsku-6710723"
+        "https://plzen.rozhlas.cz/pribeh-pastyrskeho-buku-na-chebsku-6710723",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/brow.php?SHOW_ONE=1&ID=9361"
       ],
       "access": "Free, standing alone on open pastureland at 807m elevation, reachable on foot",
       "transport": "Hamlet of Lazy, Cheb District; rural, reached on foot/by road, no public transport at the tree itself",
@@ -73,7 +74,12 @@
         "source_name": "Pastýřský buk",
         "qid": "Q12043920",
         "views": 16
-      }
+      },
+      "official_register": {
+        "name": "Pamatne stromy (AOPK CR, Pastyrsky buk)",
+        "url": "https://drusop.nature.cz/ost/chrobjekty/pstromy/brow.php?SHOW_ONE=1&ID=9361"
+      },
+      "height_m": 22
     }
   ]
 }

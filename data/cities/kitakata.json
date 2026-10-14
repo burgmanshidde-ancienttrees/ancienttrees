@@ -53,7 +53,8 @@
       },
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%AE%AE%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE",
-        "https://www.pref.fukushima.lg.jp/w4/fgr/perfectview/p17/"
+        "https://www.pref.fukushima.lg.jp/w4/fgr/perfectview/p17/",
+        "https://www.gimu.fks.ed.jp/plugin/databases/detail/4/28/576"
       ],
       "access": "Free, on open shrine grounds in front of the Nagatoko (an Important Cultural Property worship hall). No gate or fee found.",
       "transport": "Kitakata Station (JR Ban'etsu West Line) is about 5km away; the town also runs an on-demand shared-taxi service ('noruuto') on weekdays. Roughly 10 minutes by car from Shiokawa IC.",
@@ -64,7 +65,12 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Kitakata City designated natural monument (Fukushima Prefecture education database)",
+        "url": "https://www.gimu.fks.ed.jp/plugin/databases/detail/4/28/576"
+      },
+      "height_m": 30
     }
   ]
 }

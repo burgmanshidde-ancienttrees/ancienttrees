@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "kintai+kitakata+kitamoto+kotel+krasnystaw+kremnica+ksiaz+lazy-cheb+leliceni+linderhof",
+    "kind": "enrich",
+    "tokens": 91000,
+    "trees": 0,
+    "note": "enrichment: Kotel and Lazy AOPK records (Lazy girth and height), Kitamoto Bunkazai Online record, Kitakata prefectural database record with girth and height, Ksiaz CRFOP id second-hand; Kremnica contest figure withheld (not a register, height of measure unstated); Kintai, Krasnystaw, Leliceni, Linderhof dead ends; 5 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "horni-bradlo+hradek-u-susice+iga+ito+itoshiro+jarvselja+jauze+kamakura+kanagi+kings-canyon-national-park",
     "kind": "enrich",
     "tokens": 79000,
