@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: the digest leaves our own Google searches out
+
+Nothing changed in the product. The follow-up below is done: the daily digest now takes `site:` searches and operator searches (a query starting with + or %, or carrying +"...", also inurl:/intitle:) out of every per-page Google number before anything reads them. The rule lives once in `own_search()` in scripts/ours.py; `drop_own_searches()` in scripts/daily_digest.py subtracts those page x query rows at fetch time, so "Depth is allowed", "Google, from the new floor", "Is enriching working", the top queries and pages, and the city queue (promote) all read the cleaned numbers. A stranger's `-site:reddit.com` stays theirs; anonymised impressions stay. The Google table now says how many impressions were left out. `daily_digest.py --selftest` covers the Prague shape and runs in data-digest.yml before the entry is written. Not covered: the day-by-day totals (no query split per day) and the previous window in the paused trend section. Next digest: Prague stays under Depth-allowed only if readers, not we, give it 10+ impressions.
+
 ## 2026-10-14 session: Prague's Google numbers are mostly ours
 
 Nothing changed in the product. The digest showed /prague at 294 impressions, position 5.6, 0 clicks, which looked like the one city Google still shows. `seo_diagnose.py` now takes `SC_PATH` (workflow input `path`) for one place close up; run for /prague (28 days):

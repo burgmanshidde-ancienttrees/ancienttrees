@@ -101,7 +101,8 @@ def fetch_gsc(today):
     start = (today - datetime.timedelta(days=10)).isoformat()
     end = today.isoformat()
     days = q({"startDate": start, "endDate": end, "dimensions": ["date"], "dataState": "all"})
-    queries = q({"startDate": start, "endDate": end, "dimensions": ["query"], "rowLimit": 5, "dataState": "all"})
+    # 25, cut to five after our own searches leave (drop_own_searches).
+    queries = q({"startDate": start, "endDate": end, "dimensions": ["query"], "rowLimit": 25, "dataState": "all"})
     # Every page, not the top 5 and no longer the top 200. The five best pages
     # tell you where the wins are; the depth rule (CLAUDE.md, 2026-08-12:
     # photos, pins and best_time only on pages with impressions) needs the
@@ -174,7 +175,61 @@ def fetch_gsc(today):
                     "rowLimit": 5000, "dataState": "all"})
     prev_queries = q({"startDate": pstart, "endDate": pend, "dimensions": ["query"],
                       "rowLimit": 5000, "dataState": "all"})
-    return days, queries, pages, gap_queries, pairs, prev_pages, prev_queries
+    return drop_own_searches((days, queries, pages, gap_queries, pairs,
+                              prev_pages, prev_queries))
+
+
+def drop_own_searches(gsc):
+    """Take our own Google searches out of every per-page number, in one place.
+
+    `site:ancienttrees.app prague` from Hidde's phone and operator queries from
+    research agents (ours.own_search) made /prague the "one city Google still
+    shows" on 2026-10-14: 294 impressions, p5.6, 0 clicks, nearly all ours.
+    Each page row loses the impressions and clicks of its own-search page x
+    query pairs, and its position is re-weighted without them; the pairs and
+    query lists lose those rows outright. Anonymised impressions (no query)
+    never appear in the pairs, so they stay on the page. Applied at fetch time,
+    so the depth roster, the recovery and enrichment tables and promote() all
+    read the same cleaned numbers. Returns the 7-tuple plus an 8th element,
+    {"impressions", "clicks"} left out, for the note under the Google table.
+    The previous window's pages (trend_section, paused) have no pairs pull and
+    stay uncleaned."""
+    days, queries, pages, gap_queries, pairs, prev_pages, prev_queries = gsc[:7]
+    own = {}
+    keep_pairs = []
+    left_imp = left_clk = 0
+    for r in pairs or []:
+        if _ours.own_search((r.get("keys") or ["", ""])[1]):
+            i, c, wp = own.get(r["keys"][0], (0, 0, 0.0))
+            imp = r.get("impressions", 0)
+            own[r["keys"][0]] = (i + imp, c + r.get("clicks", 0),
+                                 wp + r.get("position", 0) * imp)
+            left_imp += imp
+            left_clk += r.get("clicks", 0)
+        else:
+            keep_pairs.append(r)
+    clean_pages = []
+    for r in pages or []:
+        cut = own.get(r["keys"][0])
+        if not cut:
+            clean_pages.append(r)
+            continue
+        imp = max(0, r.get("impressions", 0) - cut[0])
+        clk = max(0, r.get("clicks", 0) - cut[1])
+        if imp == 0 and clk == 0:
+            continue
+        wp = r.get("position", 0) * r.get("impressions", 0) - cut[2]
+        clean_pages.append(dict(r, impressions=imp, clicks=clk,
+                                ctr=(clk / imp) if imp else 0.0,
+                                position=(wp / imp) if imp and wp > 0 else r.get("position", 0)))
+    clean_pages.sort(key=lambda r: (-r.get("clicks", 0), -r.get("impressions", 0)))
+
+    def theirs(rows, limit=None):
+        kept = [r for r in rows or [] if not _ours.own_search((r.get("keys") or [""])[0])]
+        return kept[:limit] if limit else kept
+    return (days, theirs(queries, 5), clean_pages, theirs(gap_queries), keep_pairs,
+            prev_pages, theirs(prev_queries),
+            {"impressions": left_imp, "clicks": left_clk})
 
 
 # The industry CTR-by-position curve, rounded from the public studies that
@@ -387,7 +442,7 @@ def language_lines(pages):
     return out
 
 
-def recovery_lines(pages):
+def recovery_lines(pages, own_left_out=0):
     """Google, measured as if we start again (2026-10-01, after the 09-28 demotion).
 
     Hidde: "we hebben geen idee wat googles probleem is... kijk het alsof we
@@ -429,6 +484,9 @@ def recovery_lines(pages):
             "| Clicks | %d |" % clk,
             "| Pages that got at least one impression | %d |" % seen,
             "| Impressions on the proven cities | %d |" % proven,
+            *(["", "- %d impressions from site: and operator searches left out "
+               "(ours, not readers; every Google table below is without them)." % own_left_out]
+              if own_left_out else []),
             "", "What we did (context, proves nothing by itself): %d trees Google may index, "
             "%d kept out for lacking a photo and an exact pin, %d pages on the noindex list."
             % (good, weak, len(noindex))]
@@ -1051,7 +1109,7 @@ def gsc_section(gsc, under_table=None):
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
         *([under_table] if under_table else []),
-        *recovery_lines(pages),
+        *recovery_lines(pages, (gsc[7] if len(gsc) > 7 else {}).get("impressions", 0)),
         *enrichment_lines(pages),
         *demand_lines(pages, pairs),
         *(learning_lines(pages, pairs) if GOOGLE_DETAIL else []),
@@ -1093,7 +1151,7 @@ def trend_section(gsc):
     """
     if gsc is None or len(gsc) < 7:
         return None
-    _, _, pages, _, _, prev_pages, prev_queries = gsc
+    _, _, pages, _, _, prev_pages, prev_queries = gsc[:7]
     if not pages:
         return None
 
@@ -3402,9 +3460,55 @@ def build_entry(days, today, gsc_text):
 """ % (yday.isoformat(), verdict, zone_block, gsc_text, conclusion)
 
 
+def _selftest_own_searches():
+    """Prove drop_own_searches on the 2026-10-14 Prague shape: our site: and
+    operator queries leave every per-page number, a stranger's stays."""
+    U = "https://ancienttrees.app"
+    def pg(page, imp, clicks, pos):
+        return {"keys": [U + page], "impressions": imp, "clicks": clicks,
+                "ctr": clicks / imp, "position": pos}
+    def pr(page, q, imp, clicks=0, pos=5.0):
+        return {"keys": [U + page, q], "impressions": imp, "clicks": clicks, "position": pos}
+    pages = [pg("/prague", 32, 0, 5.0), pg("/prague/old-oak", 12, 0, 4.0),
+             pg("/lisbon", 30, 2, 9.0)]
+    pairs = [pr("/prague", "site:ancienttrees.app prague", 19, 0, 2.0),
+             pr("/prague", '+"oldest" "pear" "on record" "park"', 9, 0, 3.0),
+             pr("/prague", "old trees prague", 4, 0, 14.0),
+             pr("/prague/old-oak", "SITE:ancienttrees.app oak", 12),
+             pr("/lisbon", "quercus aggressive -site:reddit.com", 6, 1, 8.0),
+             pr("/lisbon", "%22oldest tree%22 lisbon", 3)]
+    queries = [{"keys": ["site:ancienttrees.app prague"], "impressions": 19, "clicks": 0, "position": 2},
+               {"keys": ["lisbon old trees"], "impressions": 5, "clicks": 1, "position": 9}]
+    g = drop_own_searches(([], queries, pages, [], pairs, [], []))
+    fails = []
+    def want(cond, msg):
+        if not cond:
+            fails.append(msg)
+    got = {r["keys"][0][len(U):]: r for r in g[2]}
+    want(got["/prague"]["impressions"] == 4, "prague keeps only impressions not from our searches (32-19-9)")
+    want(abs(got["/prague"]["position"] - (32 * 5.0 - 19 * 2.0 - 9 * 3.0) / 4) < 0.01,
+         "position is re-weighted without our rows")
+    want("/prague/old-oak" not in got, "a page seen only by our searches leaves the list")
+    want(got["/lisbon"]["impressions"] == 27 and got["/lisbon"]["clicks"] == 2,
+         "a stranger's -site: is theirs; only the %-query is ours")
+    want(g[7] == {"impressions": 43, "clicks": 0}, "the left-out count is every own row")
+    want(all(not _ours.own_search(r["keys"][1]) for r in g[4]), "no own row survives in the pairs")
+    want([r["keys"][0] for r in g[1]] == ["lisbon old trees"], "top queries lose our searches")
+    rows = city_demand_rows(g[2], g[4])
+    want(not any(r["city"] == "prague" for r in rows),
+         "prague is not on the depth roster on site: searches alone")
+    out = recovery_lines(g[2], g[7]["impressions"])
+    want(not out or "43 impressions from site: and operator searches left out" in "\n".join(out),
+         "the Google table says how much was left out")
+    for f in fails:
+        print("  FAIL " + f)
+    print("own-search self-test: " + ("all passed" if not fails else "%d FAILED" % len(fails)))
+    return 1 if fails else 0
+
+
 def _maybe_selftest():
     if "--selftest" in sys.argv:
-        raise SystemExit(_selftest_trend())
+        raise SystemExit(_selftest_trend() | _selftest_own_searches())
 
 
 def main():

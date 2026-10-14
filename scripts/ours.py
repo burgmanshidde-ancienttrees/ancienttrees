@@ -24,6 +24,7 @@ person from the record.
 import hashlib
 import json
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PATH = os.path.join(ROOT, "data", "our-accounts.json")
@@ -48,6 +49,26 @@ def is_ours(uid):
     if not uid:
         return False
     return hashlib.sha1(str(uid).encode()).hexdigest() in hashes()
+
+
+# A Google query typed by us rather than a reader (2026-10-14). The /prague
+# close-up (seo_diagnose.py, LOG.md "Prague's Google numbers are mostly ours")
+# found its 294 impressions were `site:ancienttrees.app prague` from Hidde's
+# phone and operator searches like `+"oldest" "pear" "on record" "park"` from
+# research agents, and the digest had ranked it the one city Google still
+# shows. A positive site:/inurl:/intitle: checks our own index; a query that
+# starts with + or % (or carries +"...") is a research tool's syntax. A
+# NEGATIVE operator (`quercus aggressive -site:reddit.com`) is a stranger
+# narrowing their own search and stays theirs.
+_OWN_QUERY = re.compile(
+    r'(^|\s)(site|inurl|intitle|intext|allintitle|allinurl|allintext):'
+    r'|^\s*[+%]'
+    r'|(^|\s)\+["“]', re.I)
+
+
+def own_search(query):
+    """True when a Search Console query is our own looking, not demand."""
+    return bool(query) and bool(_OWN_QUERY.search(query))
 
 
 if __name__ == "__main__":

@@ -51,6 +51,12 @@ jobs:
       - name: Recompute which pages Google may index
         run: python3 scripts/thin_pages.py || true
 
+      # Known-input tests for the Google maths (trend, and our own site: and
+      # operator searches left out). A failure stops the entry rather than
+      # writing wrong numbers into DATA.md and the city queue.
+      - name: Digest self-test
+        run: python3 scripts/daily_digest.py --selftest
+
       - name: Build the digest entry
         env:
           CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
