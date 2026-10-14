@@ -39,7 +39,9 @@
       },
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Hrom%C5%AFv_dub",
-        "https://www.kudyznudy.cz/aktivity/hromuv-dub-u-chomutova-na-olomoucku"
+        "https://www.kudyznudy.cz/aktivity/hromuv-dub-u-chomutova-na-olomoucku",
+        "https://cs.wikipedia.org/wiki/Hrom%C5%AFv_dub (measured 2004, citing the AOPK register)",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?frame&SHOW_ONE=1&ID=12437"
       ],
       "access": "Free, reached on foot or by bike along an unmarked dusty field track between the villages of Hlusovice and Chomoutov; no formal tourist trail. One source describes the surrounding ground loosely as private agricultural land, but no gate, fence or restriction on the tree itself was found; flagging rather than blocking.",
       "transport": "No public transport to the exact spot; Bohunovice/Chomoutov area is on regional bus routes, tree is a field-track walk from the nearest stop.",
@@ -64,7 +66,12 @@
         ],
         "label": "September to October: acorns drop, and a good mast year buries the ground in them",
         "kind": "fruit"
-      }
+      },
+      "official_register": {
+        "name": "AOPK ČR Database of nature conservation (DrusOP), significant trees, no. 104762",
+        "url": "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?frame&SHOW_ONE=1&ID=12437"
+      },
+      "height_m": 27
     }
   ]
 }

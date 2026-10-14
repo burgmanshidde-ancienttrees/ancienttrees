@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "atami+aubers+bad-staffelstein+baldenhain+bansko+bargischow+bedomin+boetersheim+bohunovice+bonnerue",
+    "kind": "enrich",
+    "tokens": 56000,
+    "trees": 0,
+    "note": "enrichment: Bohunovice AOPK record, Bargischow DDG champion record (measured 2025), Bad Staffelstein and Bonnerue girth from Wikipedia; six trees searched without result; 8 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "aberford+aga+aguas-de-moura+albersdorf+allouville-bellefosse+amt-neuhaus+antwerp+aosta+arita+asago",
     "kind": "enrich",
     "tokens": 57000,

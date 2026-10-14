@@ -29,6 +29,8 @@ Eighth pass: xhoris+yvignac-la-tour+zaanstad+zadeikoniai+zaragoza+zarzecze+zywie
 
 Ninth pass (the list wrapped back to A): aberford+aga+aguas-de-moura+albersdorf+allouville-bellefosse+amt-neuhaus+antwerp+aosta+arita+asago. Four trees improved: Agas Shogun Sugi (national monument record, girth and height), the Albersdorf Fünffingerlinde (county Naturdenkmal list entry, girth from baumkunde.de, a community register), the Amt Neuhaus oak girth, the Arita ginkgo record (no measurement: only old shaku units). Six found nothing; 7 gaps dead-ended. Preflight 0 problems.
 
+Tenth pass: atami+aubers+bad-staffelstein+baldenhain+bansko+bargischow+bedomin+boetersheim+bohunovice+bonnerue. Four trees improved: Bohunovice (AOPK record, 2004 measurements), Bargischow (DDG Champion Trees record, measured May 2025), and girths from Wikipedia for Bad Staffelstein and Bonnerue (thinner sourcing). Six searched without result; 8 gaps dead-ended. The remaining enrich gaps are mostly single season or access gaps in small cities, so the yield per pass is now about four trees for 55 to 85k tokens. Preflight 0 problems.
+
 Seventh pass: vales+vassununga+veryn+viljandi+vir+visnova+waipoua-forest+wojslawice+wuppertal. Four trees improved: Tāne Mahuta and Te Matua Ngahere (NZ Tree Register records, 2002 laser girth and height), the Wojsławice beech (girth and height from the city of Wrocław), the Viljandi oak access line. I dropped the agent's chestnut-season best_time for Vales, since no source ties that tree to the harvest. Wuppertal, Vír, Višňová, Veryn and Vassununga were researched with no citable record; 15 gaps dead-ended. Preflight 0 problems.
 
 ## 2026-10-14 session: the digest leaves our own Google searches out
