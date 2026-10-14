@@ -41,7 +41,8 @@
       },
       "verified_sources": [
         "https://www.wroclaw.pl/zielony-wroclaw/buk-serce-ogrodu-ktory-rosnie-w-arboretum-wojslawice-zostal-drzewem-roku-2023 (quotes Klub Gaja's own 2023 contest results verbatim)",
-        "https://www.rmf24.pl/regiony/wroclaw/news-buk-z-wojslawic-europejskim-drzewem-roku,nId,7402100 (headline confirms the European Tree of the Year title)"
+        "https://www.rmf24.pl/regiony/wroclaw/news-buk-z-wojslawic-europejskim-drzewem-roku,nId,7402100 (headline confirms the European Tree of the Year title)",
+        "https://www.wroclaw.pl/zielony-wroclaw/buk-serce-ogrodu-ktory-rosnie-w-arboretum-wojslawice-zostal-drzewem-roku-2023"
       ],
       "access": "Paid entry. Arboretum Wojslawice is a ticketed botanical garden (a branch of the University of Wroclaw Botanical Garden), open daily 09:00-18:00 in season (mid-April to late October); tickets at the gate or online. The beech stands in the centre of the historic park, a short walk from the entrance.",
       "paid_entry": true,
@@ -54,11 +55,18 @@
       },
       "story": "In 2024 a beech from a small Silesian arboretum became Europe's tree of the year, beating every other national champion on the continent. Serce Ogrodu, the Heart of the Garden, had already won Poland's own Drzewo Roku contest in 2023 with 6,643 votes, ahead of a pair of oaks in Warsaw and another in Olsztyn, before going on to take the European title outright the following year.\n\nIt earns its colour from a graft rather than a mutation: ordinary green-leaved beech as the fast-growing rootstock, with the slower, copper-red Atropunicea variety grafted on as the crown. The leaves shift through the season, dark purple in spring, rust-green by summer, yellow-orange in autumn, a tree that changes its mind three or four times a year.\n\nIt was likely planted around the turn of the 19th century, when the Wojslawice estate belonged to the von Pritwitz family; the arboretum itself took shape after 1880 under a later owner, Fritz von Oheimb. The garden's caretakers gave it its name sometime in the early 1990s, decades before the votes started coming in.\n\nThe beech stands at 452 centimetres round and 14 metres tall, in the centre of a ticketed botanical garden open in season from mid-April to late October. A continental champion, reachable for the price of admission.",
       "best_time": {
-        "months": [10],
+        "months": [
+          10
+        ],
         "kind": "autumn colour",
         "label": "October, when the coppery leaves turn yellow-orange before falling"
       },
-      "photo": { "url": null, "license": null, "attribution": null, "status": "missing" },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
       "photos": [],
       "how_to_recognise": "You can recognise it by the copper-red leaves of a grafted Atropunicea beech, in the centre of the historic park. It stands in Arboretum Wojslawice, a short walk from the entrance."
     }

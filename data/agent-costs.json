@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "vales+vassununga+veryn+viljandi+vir+visnova+waipoua-forest+wojslawice+wuppertal",
+    "kind": "enrich",
+    "tokens": 58000,
+    "trees": 0,
+    "note": "enrichment: Waipoua two giants (NZ Tree Register NR/0800, NR/0802), Wojslawice beech measured, Viljandi oak access; Vales best_time dropped (no source tying tree to harvest); five trees researched without result; 15 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "tata+telgte+toba+tombeboeuf+trollskogen+tullamore+ueki+urvaste+vainiai+valentin-tineo",
     "kind": "enrich",
     "tokens": 90000,
