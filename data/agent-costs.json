@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "daruvar+dunkeld+eraul+erdmannrode+farnham+ferrara",
+    "kind": "enrich",
+    "tokens": 94000,
+    "trees": 0,
+    "note": "enrichment: Daruvar ginkgo protected-areas authority page and 40 m palace-entrance site; Eraul holm oak Navarra MN1 sheet (archive copy) with height 10.2 and girth 471 derived from the stated 1.5 m diameter at 1.3 m; Erdmannrode linden Hessen ND 3632900 and June season; Dunkeld and Farnham dead ends (only Woodland Trust data, not used); Ferrara season gaps dead ends; 7 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "cinovec+colindres+collm+cooper-creek+coppenbrugge+curinga",
     "kind": "enrich",
     "tokens": 80000,

@@ -68,7 +68,15 @@
       },
       "photos": [],
       "curation_status": "ai_generated",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Spomenik parkovne arhitekture, pojedinacno stablo (JU Priroda Bjelovarsko-bilogorske zupanije), protected 4 October 1967",
+        "url": "https://www.zastita-prirode-bbz.hr/podrucja/stablo-ginka-daruvar/"
+      },
+      "location_site": {
+        "name": "In front of the southern entrance of the Jankovic Palace, Daruvar",
+        "radius_m": 40.0
+      }
     }
   ]
 }
