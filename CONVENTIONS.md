@@ -3393,3 +3393,11 @@ Hidde: "the add photo button feels a bit big and takes up prime space is this ho
 | AllTrails | Open the trail's photos (tap the main photo), add from inside the gallery | [support.alltrails.com, add photos to a trail](https://support.alltrails.com/hc/en-us/articles/360019244491-How-do-I-add-photos-to-a-trail) |
 
 **What we do:** on a tree with a photograph, a quiet outlined "Add a photo" button directly under the story, same place on web (`.td-addphoto-quiet` in TreeDetail.astro) and app (`addPhotoRow` in TreeDetail.swift). On a tree with NO photograph the button stays in the empty photo frame: the empty frame is the request, and the whole frame opens the camera.
+
+---
+
+## Collecting needs a photograph (2026-10-14, Hidde's call)
+
+On 2026-10-10 collecting was three ways, after iNaturalist's Observe: camera, your photos, or a record with no media. Hidde reversed the third on 2026-10-14 after testing: "delete the option to collect trees without photos for now, it makes it more special to collect them and forces people to participate and make photos". A strategy call, not a convention: a collection that costs a photograph means more, and every collection gives the map a picture.
+
+What it is now, app and web alike: the collect sheet offers Take a photograph and Choose from your photos; the map's "you are standing in front of" card opens the camera for that tree. Trees collected without a photograph before this day stay collected. "for now": revisit if collecting stalls.

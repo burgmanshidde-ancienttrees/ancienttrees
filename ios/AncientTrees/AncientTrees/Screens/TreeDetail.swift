@@ -1929,20 +1929,6 @@ struct TreeDetail: View {
         choosingCollect = true
     }
 
-    /// Collecting without a photograph, from anywhere (Hidde, 2026-10-10:
-    /// "shouldnt you also be able to collect trees when you're not around").
-    /// The same gate as the map's arrival card: signed out, sign in first and
-    /// the tick lands after.
-    private func collectWithoutPhoto() {
-        guard account.isSignedIn else {
-            nudge.require(.keepTree(tree.name)) {
-                if !saved.isVisited(tree.id) { saved.toggleVisited(tree.id) }
-            }
-            return
-        }
-        if !saved.isVisited(tree.id) { saved.toggleVisited(tree.id) }
-    }
-
     /// THE CAMERA OR THE LIBRARY, opened from here, straight after the collect
     /// sheet closes (Hidde, 2026-10-10: "when i click either camera or photo
     /// option it opens another overlay before starting the camera"). The flow
@@ -1990,13 +1976,13 @@ struct TreeDetail: View {
                 buttons: [
                     .primary("Take a photograph", "camera", id: "collect-with-photo") { startPhoto(.camera) },
                     .secondary("Choose from your photos", "photo.on.rectangle", id: "collect-from-library") { startPhoto(.library) },
-                    collected
-                        ? .destructiveQuiet("Remove from collected", id: "uncollect") { uncollectWithUndo() }
-                        : .secondary("Collect without a photograph", id: "collect-no-photo") {
-                            afterChoice = { collectWithoutPhoto() }
-                            choosingCollect = false
-                        },
-                ])
+                ] + (collected
+                    ? [.destructiveQuiet("Remove from collected", id: "uncollect") { uncollectWithUndo() }]
+                    // NO "Collect without a photograph" since 2026-10-14 (Hidde:
+                    // "it makes it more special to collect them and forces
+                    // people to participate and make photos"). Trees collected
+                    // without one before then stay collected.
+                    : []))
     }
 
     /// REMOVED AT ONCE, WITH UNDO (Hidde, 2026-10-10: "it feels weird when

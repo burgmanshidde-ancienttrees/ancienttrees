@@ -372,7 +372,10 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
         <button type="button" class="sheet-b sheet-b--primary only-touch" data-act="camera"><Fragment set:html={icon("camera", "bold")} />{U.collectCamera}</button>
         <button type="button" class="sheet-b sheet-b--secondary only-touch" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectLibrary}</button>
         <button type="button" class="sheet-b sheet-b--primary only-fine" data-act="photo"><Fragment set:html={icon("image", "bold")} />{U.collectPhoto}</button>
-        <button type="button" class="sheet-b sheet-b--secondary" data-act="tick">{U.collectNoPhoto}</button>
+        {/* No "Collect without a photograph" since 2026-10-14 (Hidde: collecting
+            with a photograph makes it special and gets people taking them).
+            Trees collected without one before then stay collected. Same in
+            the app's collectChoice. */}
       </div>
     </div>
     <div data-pane="done" hidden>

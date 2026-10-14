@@ -731,12 +731,10 @@ struct MapTab: View {
                 // "all these functionalities of saving stuff should only be
                 // available when you sign in"). Gating the heart and leaving
                 // this open would be the same bug with a different button.
-                guard account.isSignedIn else {
-                    nudge.require(.keepTree(t.name)) {
-                        if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
-                    }
-                    return
-                }
+                // COLLECTING TAKES A PHOTOGRAPH (Hidde, 2026-10-14: "delete
+                // the option to collect trees without photos for now, it makes
+                // it more special"). The button opens the camera for this tree;
+                // signing in, where needed, happens inside that flow.
                 if saved.isVisited(t.id) {
                     // At once, with Undo, as on the tree page (2026-10-10).
                     let when = saved.collected.first(where: { $0.treeId == t.id })?.visitedAt ?? Date()
@@ -745,10 +743,12 @@ struct MapTab: View {
                                             undo: .recollect(t.id, when))
                     return
                 }
-                saved.toggleVisited(t.id)
+                navigator.collectAbout = t.name
+                navigator.collectTree = t.id
+                navigator.collectNearby = true
             } label: {
-                Label(saved.isVisited(t.id) ? "Collected" : "Mark as collected",
-                      systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "checkmark.seal")
+                Label(saved.isVisited(t.id) ? "Collected" : "Photograph to collect",
+                      systemImage: saved.isVisited(t.id) ? "checkmark.seal.fill" : "camera")
                     .font(.subheadline.weight(.semibold))
                     .frame(maxWidth: .infinity).padding(.vertical, 13)
             }
