@@ -292,6 +292,49 @@ query($tag: String!, $since: Date!, $until: Date!) {
         for h, ws in sorted(hosts.items(), key=lambda x: -sum(x[1].values())):
             print("- %s: %s" % (h, ", ".join("%s %d" % (k, v) for k, v in sorted(ws.items()))))
 
+    path = os.environ.get("SC_PATH", "").strip()
+    if path:
+        # One place, close up (2026-10-14: /prague had 294 impressions at
+        # position 5.6 and no click). Which pages, which queries, which kind
+        # of result, and what Google says about the busiest pages.
+        since = (today - datetime.timedelta(days=28)).isoformat()
+        filt = [{"filters": [{"dimension": "page", "operator": "contains",
+                              "expression": BASE + path}]}]
+
+        def by(dims, limit=60):
+            rows = q(access, {"startDate": since, "endDate": end, "dimensions": dims,
+                              "dimensionFilterGroups": filt, "rowLimit": limit,
+                              "dataState": "all"})
+            print("| %s | Impr | Clicks | Position |" % " | ".join(dims))
+            print("|%s---:|---:|---:|" % ("---|" * len(dims)))
+            for r in sorted(rows, key=lambda r: -r["impressions"]):
+                print("| %s | %d | %d | %.1f |" % (
+                    " | ".join(k.replace(BASE, "")[:70] for k in r["keys"]),
+                    r["impressions"], r["clicks"], r["position"]))
+            return rows
+
+        def top_pages():
+            rows = by(["page"])
+            url = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
+            print("\nURL Inspection, busiest five:")
+            for r in sorted(rows, key=lambda r: -r["impressions"])[:5]:
+                try:
+                    s = call(access, url, {"inspectionUrl": r["keys"][0], "siteUrl": SITE})
+                    s = s["inspectionResult"]["indexStatusResult"]
+                    print("- %s: %s | %s | lastCrawl=%s | google canonical=%s" % (
+                        r["keys"][0].replace(BASE, ""), s.get("verdict"), s.get("coverageState"),
+                        s.get("lastCrawlTime"), s.get("googleCanonical")))
+                except Exception as e:
+                    print("- %s: FAILED %s" % (r["keys"][0], e))
+
+        print("# %s close up, %s to %s" % (path, since, end))
+        section("Pages", top_pages)
+        section("Query by page", lambda: by(["query", "page"], 100))
+        section("By day", lambda: by(["date"]))
+        section("By country and device", lambda: by(["country", "device"]))
+        section("Search appearance", lambda: by(["searchAppearance"]))
+        return
+
     print("# SEO diagnosis, %s" % today.isoformat())
     section("1. Day by day, final against fresh data", days)
     section("2a. By country", lambda: split_by("country"))

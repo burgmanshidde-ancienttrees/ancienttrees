@@ -6,6 +6,11 @@ name: SEO diagnosis
 # click instead of an afternoon.
 on:
   workflow_dispatch:
+    inputs:
+      path:
+        description: "Optional: one place close up, e.g. /prague (empty = the full diagnosis)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -22,4 +27,5 @@ jobs:
           GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          SC_PATH: ${{ inputs.path }}
         run: python3 scripts/seo_diagnose.py
