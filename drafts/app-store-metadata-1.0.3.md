@@ -23,7 +23,7 @@ Ancient Trees: Old Tree Map
 Subtitle, 25/30 (no longer repeats "old" and "trees", which the name now carries):
 
 ```
-Remarkable trees near you
+Find remarkable trees near you
 ```
 
 Keywords, 98/100 ("map" left, the name has it):
