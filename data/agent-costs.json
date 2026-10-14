@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "ancient-bristlecone-pine-forest+berga-elster+breukelen+brunswick-georgia+brzoza+busan",
+    "kind": "enrich",
+    "tokens": 118000,
+    "trees": 0,
+    "note": "enrichment: Patriarch Grove fee and season from Forest Service pages; Nijenrode limes LRMB 1685429 and height (castle site refused, no URL); Brzoza oak and limes CRFOP ids with Wikidata-cited girth and height (crfop.gdos.gov.pl 403, added to blocklist); Busan crape myrtles Heritage Service page and height; Berga, Brunswick, Suyeong pine dead-ended; 12 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "siquijor+stratfield-saye+veliki-preslav+villeneuve+achnacarry+alishan",
     "kind": "enrich",
     "tokens": 109000,
