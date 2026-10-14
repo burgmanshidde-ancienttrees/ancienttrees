@@ -77,7 +77,7 @@ Faster scrolling and many small fixes.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Most people have walked past a thousand-year-old tree without knowing it. Open the map and see which ones stand near you.
+Autumn is here. See which old trees near you are at their best this month, and walk to one before the leaves fall.
 ```
 
 
@@ -97,7 +97,7 @@ What's new: same as U.K.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Most people have walked past a thousand-year-old tree without knowing it. Open the map and see which ones stand near you.
+Autumn is here. See which old trees near you are at their best this month, and walk to one before the leaves fall.
 ```
 
 
@@ -160,7 +160,7 @@ Sneller scrollen en veel kleine verbeteringen.
 Promotional text (170, not indexed, editable any time):
 
 ```
-De meeste mensen zijn weleens langs een duizend jaar oude boom gelopen zonder het te weten. Open de kaart en zie welke bij jou in de buurt staan.
+De herfst is er. Zie welke oude bomen bij jou in de buurt deze maand op hun mooist zijn, en loop naar een ervan voordat de bladeren vallen.
 ```
 
 
@@ -223,7 +223,7 @@ Schnelleres Scrollen und viele kleine Verbesserungen.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Die meisten Menschen sind schon an einem tausend Jahre alten Baum vorbeigegangen, ohne es zu wissen. Öffne die Karte und sieh, welche in deiner Nähe stehen.
+Der Herbst ist da. Sieh, welche alten Bäume in deiner Nähe diesen Monat am schönsten sind, und geh zu einem, bevor die Blätter fallen.
 ```
 
 
@@ -286,7 +286,7 @@ Défilement plus fluide et de nombreuses petites corrections.
 Promotional text (170, not indexed, editable any time):
 
 ```
-La plupart des gens sont passés devant un arbre millénaire sans le savoir. Ouvrez la carte et voyez lesquels sont près de vous.
+L'automne est là. Voyez quels vieux arbres près de chez vous sont à leur plus beau ce mois-ci, et allez en voir un avant que les feuilles tombent.
 ```
 
 
@@ -349,7 +349,7 @@ Desplazamiento más rápido y muchas pequeñas correcciones.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Casi todos hemos pasado junto a un árbol milenario sin saberlo. Abre el mapa y mira cuáles tienes cerca.
+Llegó el otoño. Mira qué árboles viejos cerca de ti están en su mejor momento este mes y acércate a uno antes de que caigan las hojas.
 ```
 
 
@@ -412,7 +412,7 @@ Scorrimento più veloce e tante piccole correzioni.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Quasi tutti siamo passati accanto a un albero millenario senza saperlo. Apri la mappa e scopri quali sono vicino a te.
+È arrivato l'autunno. Scopri quali alberi secolari vicino a te sono al loro meglio questo mese e raggiungine uno prima che cadano le foglie.
 ```
 
 
@@ -475,7 +475,7 @@ Deslocamento mais rápido e muitas pequenas correções.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Quase todos já passámos por uma árvore milenar sem o saber. Abra o mapa e veja quais estão perto de si.
+O outono chegou. Veja que árvores antigas perto de si estão no seu melhor este mês e vá até uma antes que as folhas caiam.
 ```
 
 
@@ -538,7 +538,7 @@ What's new:
 Promotional text (170, not indexed, editable any time):
 
 ```
-千年を生きた木のそばを、知らずに通り過ぎた人は多いはず。地図を開いて、近くにある木を見てみましょう。
+秋が来ました。近くの古木のうち今月見ごろの木を見つけて、葉が落ちる前に歩いて会いに行きましょう。
 ```
 
 
