@@ -57,11 +57,6 @@
       "released_at": "2026-10-11T02:07:59+00:00"
     },
     {
-      "slug": "leipzig",
-      "kind": "verify",
-      "released_at": "2026-10-12T19:00:39+00:00"
-    },
-    {
       "slug": "spokane",
       "kind": "verify",
       "released_at": "2026-10-12T20:20:17+00:00"
@@ -100,6 +95,11 @@
       "slug": "rothenburg-ob-der-tauber",
       "kind": "verify",
       "released_at": "2026-10-14T20:51:28+00:00"
+    },
+    {
+      "slug": "leipzig",
+      "kind": "verify",
+      "released_at": "2026-10-14T21:25:52+00:00"
     }
   ]
 }

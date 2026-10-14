@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14, retry attempt: nothing published
+
+Released the standing Leipzig claim: its brief shows no imported register within 20 km, and its four written trees (lpz_019, 021, 022, 023) are the kind preflight refuses as not rich. Leipzig is a wall for 48h. The 53 READY leads are thin register rows (Roosendaal, Oss, Munich, Delft and others), refused by the same rule. langcheck has no city over 10 English impressions to translate. No agent dispatched, because no candidate can end rich. Still open: the iOS app workflow failed on 2026-10-14 and its log was not read.
+
 ## 2026-10-14, night run (window 20:46 UTC): nothing shipped, two passes found no work
 
 7-day visits: 1460 visits, 2060 page views. No reader submissions or app photographs waiting. health.py's "skipped" deploys were push runs superseded by a dispatched deploy still running; the iOS failure is Build 34, a rerun was in progress (not touched).
