@@ -41,6 +41,10 @@ struct LocationState {
     /// buttons: a refusal can only be undone in Settings, while an unasked
     /// permission can still be asked right here.
     var denied: Bool = false
+    /// Said yes, whether or not a fix has landed yet. The Location row in
+    /// Profile reads this, so it does not say Off for the second before the
+    /// first fix arrives.
+    var allowed: Bool = false
     var ask: () -> Void = {}
 }
 

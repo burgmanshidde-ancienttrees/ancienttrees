@@ -23,6 +23,7 @@
 // photograph, "something here is wrong"). This is where it can be FOUND.
 
 import SwiftUI
+import UIKit
 
 struct ProfileView: View {
     let catalogue: Catalogue
@@ -33,6 +34,9 @@ struct ProfileView: View {
     @Environment(Moderation.self) private var moderation
     @Environment(Sightings.self) private var sightings
     @Environment(Profiles.self) private var profiles
+    @Environment(\.locationState) private var location
+    /// The recovery sheet behind the Location row (Screens/PermissionRecovery).
+    @State private var refusedPermission: Permission?
 
 
 
@@ -114,6 +118,7 @@ struct ProfileView: View {
         .sheet(isPresented: $contributing) { ContributeView() }
         .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
+        .sheet(item: $refusedPermission) { PermissionRecovery(permission: $0) }
         // The paywall still opens, from the locked rows themselves; it no
         // longer has a row of its own (2026-08-25).
         .sheet(isPresented: $showingAccount) { accountSheet }
@@ -283,6 +288,41 @@ struct ProfileView: View {
                     .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
+                Divider().padding(.leading, 48)
+                // LOCATION, a row a map app is expected to have (Hidde,
+                // 2026-10-14: "keep the message on the map if its not turned
+                // on and also an option in settings"). AllTrails and komoot
+                // keep the same row: it says On or Off, and a tap asks when
+                // nothing was ever asked, or opens the recovery sheet (and
+                // from there Settings) when the answer was no or is yes,
+                // since only Settings can change an answer already given.
+                Button {
+                    if location.allowed {
+                        // Already on: only Settings can turn it off.
+                        if let u = URL(string: UIApplication.openSettingsURLString) {
+                            UIApplication.shared.open(u)
+                        }
+                    } else if location.denied {
+                        refusedPermission = .location
+                    } else {
+                        location.ask()
+                    }
+                } label: {
+                    HStack(spacing: 12) {
+                        Image(systemName: location.allowed ? "location" : "location.slash")
+                            .frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Location").font(.callout).foregroundStyle(Brand.ink)
+                        Spacer()
+                        Text(location.allowed ? "On" : "Off")
+                            .font(.callout).foregroundStyle(Brand.inkSoft)
+                        Image(systemName: "chevron.right")
+                            .font(.caption2).foregroundStyle(Brand.inkSoft)
+                    }
+                    .padding(.horizontal, 16).frame(height: 48)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("profile-location")
                 if Launch.plus {
                 Divider().padding(.leading, 48)
                 LockedRow(feature: .seasonAlerts, lockGlyph: false) {

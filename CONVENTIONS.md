@@ -1467,6 +1467,8 @@ away from the other.
 
 ## When the location question is asked (2026-08-31)
 
+**Superseded 2026-10-14: the app now asks on the first open.** A reader wrote "Location not working on iOS, permissions for it not available in the options": an app that has never asked has no Location row in iPhone Settings, and people look there first, not at our chip. Hidde chose the Google Maps / AllTrails / komoot shape: the map opens, then iOS's own question, still with no screen of ours in front of it. The chip stays on the map while location is off, and Profile > Preferences > Location says On or Off and asks, or opens the recovery sheet or Settings. LocationAskWalk.swift guards it. The reasoning below is kept as history.
+
 **Settled where it started, after going round the houses in one afternoon.** The
 entry of 2026-08-30 has Apple Maps raising its location sheet only from a control
 that NEEDS location, with a permanent "Location Services is Off" pill as map

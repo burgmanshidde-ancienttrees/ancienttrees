@@ -22,7 +22,7 @@ final class SignedOutWalk: XCTestCase {
 
     private func launch(_ args: [String]) -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = args
+        app.launchArguments = ["-no-location-ask"] + args
         app.launch()
         _ = app.staticTexts.firstMatch.waitForExistence(timeout: 30)
         return app

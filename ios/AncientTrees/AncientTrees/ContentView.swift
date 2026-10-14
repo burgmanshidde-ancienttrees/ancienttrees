@@ -126,6 +126,8 @@ struct ContentView: View {
     var locationState: LocationState {
         LocationState(known: location.coordinate != nil || debugOrigin != nil,
                       denied: location.status == .denied || location.status == .restricted,
+                      allowed: location.status == .authorizedWhenInUse
+                          || location.status == .authorizedAlways || debugOrigin != nil,
                       ask: { location.request() })
     }
 
@@ -816,6 +818,23 @@ struct ContentView: View {
         .task {
             try? await Task.sleep(for: .seconds(2.4))
             withAnimation(.easeOut(duration: 0.4)) { showingCover = false }
+            // ASK ON THE FIRST OPEN, once the map is on screen (Hidde,
+            // 2026-10-14, after a reader wrote "Location not working on iOS,
+            // permissions for it not available in the options"). Until now
+            // only the "Location off" chip or the recentre arrow asked, so a
+            // phone that never tapped them had no Location row in Settings at
+            // all, and the map could not know where anybody was. Google Maps,
+            // AllTrails and komoot ask on first open; still no screen of ours
+            // in front of the system's question (CONVENTIONS.md, 2026-08-31).
+            // The chip stays for later, and Profile > Preferences > Location.
+            // A debug origin (-at=) or -no-location-ask skips it, so the UI
+            // tests are not stopped by a system alert.
+            try? await Task.sleep(for: .seconds(0.5))
+            let args = ProcessInfo.processInfo.arguments
+            if location.status == .notDetermined,
+               debugOrigin == nil, !args.contains("-no-location-ask") {
+                location.request()
+            }
         }
         // SIGNING OUT EMPTIES THIS PHONE (Hidde, 2026-08-29: "de favourites en
         // seen moet ook leeg wanneer niet ingelogd", and beside it "profielfoto
@@ -1103,9 +1122,8 @@ final class LocationProvider: NSObject, CLLocationManagerDelegate {
         super.init()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        // Deliberately does NOT ask here. The system dialog is a single shot,
-        // and asking it before anybody has been told why is how a refusal
-        // becomes permanent. The map's own "Location off" chip asks.
+        // Does not ask HERE: ContentView asks once the cover has gone and the
+        // map is on screen (2026-10-14), so the question has a map behind it.
         if status == .authorizedWhenInUse || status == .authorizedAlways {
             manager.startUpdatingLocation()
         }
