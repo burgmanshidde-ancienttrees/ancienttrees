@@ -11430,6 +11430,24 @@
     "note": "19 MASAF records"
    }
   ],
+  "2026-10-14": [
+   {
+    "date": "2026-10-14",
+    "target": "bosaca",
+    "kind": "enrich",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "no register record or authority measurement found for the three Tree of the Year trees; 6 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
+    "target": "malsfeld",
+    "kind": "enrich",
+    "tokens": 47000,
+    "trees": 0,
+    "note": "LAGIS Gerichtsstaetten record for three lindens; Hilgershausen and season dead-ended"
+   }
+  ],
   "2026-10-13": [
    {
     "date": "2026-10-13",

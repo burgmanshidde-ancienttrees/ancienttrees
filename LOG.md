@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 night run, 00:24 window
+
+- Visits last 7 days: 1,491. Rung 1 empty. Rung 2: iOS scheduled run failed on one test, `testEveryFlowLeavesAWayBack` (tap on "person-follow" button found no match); needs a simulator session, not fixable from this runner. Smoke "skipped" is the push-trigger default.
+- Enrichment: Bošáca had no register record or authority measurement for its three trees (6 gaps dead-ended). Malsfeld got LAGIS register links on three lindens (Berndshausen, Dagobertshausen, Ostheim); LAGIS is a historical court-site database, not a tree-protection register. Preflight 0 problems.
+
 ## 2026-10-13 night run, 22:12 window: 32 enrichment cities, register records and measurements on about 80 trees
 
 Summary: every city in `enrich.py --next` order was worked from Thessaloniki to Assisi. 24 verify passes (about 1.3M agent tokens) and 8 by-hand dead-ends. What changed on pages: official register records (Naturdenkmal-type acts, national and prefecture lists, champion registers) on Potsdam, Gothenburg, Lima, Okinawa, Wilmington DE, Kansas City, Auckland, Christchurch, Baarn, Salt Lake City, San Antonio, Takachiho, Międzyzdroje and others; girth and height where an authority gave them; confirmed pins for Mallorca (six), Sofia (one) and Christchurch (one); one published fact corrected (Rainbow Falls banyan, Hilo: fee since January 2026). **Pushes failed from about 23:13 (the one-hour credential expired); every commit is local and Run health pushes them.** Open questions for a session are flagged inline below: Chabuca Granda cedar hit by a truck (Lima), the "Champion" mountain laurel no longer champion (San Antonio), Victoria Square plane may be the wrong trunk (Christchurch), Cantonspark tulip tree record "Afgekeurd" (Baarn), Mallorca's OSM-node pin upgrade may rest on copied register coordinates. Not done: 59 READY leads (new trees must be rich in recovery mode), the other proven-roster enrichment, and the rest of the enrich queue (about 40 cities at 6 gaps or fewer).

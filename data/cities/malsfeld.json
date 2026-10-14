@@ -45,7 +45,8 @@
       },
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/1718-2_geleitete_linden_in_berndshausen/",
-        "https://www.lagis-hessen.de/de/subjects/rsrec/sn/gst/register/ort/entry/berndshausen"
+        "https://www.lagis-hessen.de/de/subjects/rsrec/sn/gst/register/ort/entry/berndshausen",
+        "https://www.lagis-hessen.de/de/subjects/idrec/sn/gst/id/275"
       ],
       "access": "Free, no permission needed. The trees stand on an open square before the walled churchyard gate, in the middle of the village.",
       "transport": "Rural Hessen, no train station nearby. Homberg (Efze) and Neukirchen are each roughly 15-20 minutes away by car.",
@@ -61,7 +62,11 @@
         "height": 1540,
         "taken_month": 5
       },
-      "how_to_recognise": "You can recognise it by its wide, level canopy, trained flat over a wooden frame, standing as a pair of two different limes. It stands before the gate of the fortified church in Berndshausen."
+      "how_to_recognise": "You can recognise it by its wide, level canopy, trained flat over a wooden frame, standing as a pair of two different limes. It stands before the gate of the fortified church in Berndshausen.",
+      "official_register": {
+        "name": "Gerichtsstätten in Hessen (LAGIS), Gerichtsplatz in Berndshausen",
+        "url": "https://www.lagis-hessen.de/de/subjects/idrec/sn/gst/id/275"
+      }
     },
     {
       "id": "mls_002",
@@ -80,7 +85,8 @@
       },
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/5414-geleitete_linden_in_dagobertshausen/",
-        "https://commons.wikimedia.org/wiki/Geleitete_Linden_im_Schwalm-Eder-Kreis"
+        "https://commons.wikimedia.org/wiki/Geleitete_Linden_im_Schwalm-Eder-Kreis",
+        "https://www.lagis-hessen.de/de/subjects/idrec/sn/gst/id/280"
       ],
       "access": "Free, no permission needed. The trees stand on an open square before the fortified church, in the middle of the village.",
       "transport": "Rural Hessen, no train station nearby. Melsungen is roughly 15 minutes away by car.",
@@ -93,7 +99,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it as the group of three limes trained and pruned together, hollowed by age. It stands before the fortified church in Dagobertshausen."
+      "how_to_recognise": "You can recognise it as the group of three limes trained and pruned together, hollowed by age. It stands before the fortified church in Dagobertshausen.",
+      "official_register": {
+        "name": "Gerichtsstätten in Hessen (LAGIS), Gerichtsplatz in Dagobertshausen",
+        "url": "https://www.lagis-hessen.de/de/subjects/idrec/sn/gst/id/280"
+      }
     },
     {
       "id": "mls_003",
@@ -154,7 +164,8 @@
       },
       "verified_sources": [
         "https://www.baumkunde.de/baumregister/4901-tanzlinde_ostheim/",
-        "https://commons.wikimedia.org/wiki/Geleitete_Linden_im_Schwalm-Eder-Kreis"
+        "https://commons.wikimedia.org/wiki/Geleitete_Linden_im_Schwalm-Eder-Kreis",
+        "https://www.lagis-hessen.de/de/subjects/idrec/sn/gst/id/359"
       ],
       "access": "Free, no permission needed. The tree stands on a small sandstone common before the church, in the middle of the village; the Elisabethpfad pilgrimage route passes nearby.",
       "transport": "Rural Hessen, no train station nearby. Melsungen is roughly 10-15 minutes away by car.",
@@ -178,6 +189,10 @@
         ],
         "label": "June to July, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Gerichtsstätten in Hessen (LAGIS), Gerichtsplatz in Ostheim",
+        "url": "https://www.lagis-hessen.de/de/subjects/idrec/sn/gst/id/359"
       }
     }
   ]
