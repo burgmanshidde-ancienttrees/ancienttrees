@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "capeni+ceska-lipa+chatenay-malabry+cheile-cibinului+chiapa-de-corzo+chirk",
+    "kind": "enrich",
+    "tokens": 76000,
+    "trees": 0,
+    "note": "enrichment: Chatenay-Malabry cedar height 14 m (department tourism page); Ceska Lipa beech small-park site; Capeni, Cibin fir, La Pochota, Chirk oak dead ends (no measuring height, no record page; Woodland Trust data untouched); 11 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "bioul+bojnice+borculo+bulat-pestivien+cabeza-del-buey+cajvana",
     "kind": "enrich",
     "tokens": 114000,
