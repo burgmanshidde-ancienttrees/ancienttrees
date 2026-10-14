@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14, night run (window 22:25 UTC): Roosendaal 10 to 13 trees
+
+7-day visits: 1621 visits, 2340 page views. No reader submissions. iOS app scheduled run failed on layout drift in the SweepFrames check (collect-intro 'Photograph a tree you are standing in fro...' on iPhone SE iOS 18.x); app work, not touched here. Roosendaal deepen pass: verify found four LRMB trees, three merged as roo_016 (Lebanon Cedar, Villa Van Gilse garden, confirmed pin), roo_017 and roo_018 (Paterstuin cedar and chestnut, small-site pin); roo_019 (Nispen sycamore) refused by preflight because its access line is not concrete, story kept in the verified file, needs a sourced access line. Eight lead entries filed. City copy recounted to 13. Preflight 0 problems.
+
 ## 2026-10-14, retry attempt: nothing published
 
 Released the standing Leipzig claim: its brief shows no imported register within 20 km, and its four written trees (lpz_019, 021, 022, 023) are the kind preflight refuses as not rich. Leipzig is a wall for 48h. The 53 READY leads are thin register rows (Roosendaal, Oss, Munich, Delft and others), refused by the same rule. langcheck has no city over 10 English impressions to translate. No agent dispatched, because no candidate can end rich. Still open: the iOS app workflow failed on 2026-10-14 and its log was not read.
