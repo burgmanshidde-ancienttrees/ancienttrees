@@ -16,6 +16,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Visits last 7 days: 1,491. Rung 1 empty. Rung 2: iOS scheduled run failed on one test, `testEveryFlowLeavesAWayBack` (tap on "person-follow" button found no match); needs a simulator session, not fixable from this runner. Smoke "skipped" is the push-trigger default.
 - Enrichment: Bošáca had no register record or authority measurement for its three trees (6 gaps dead-ended). Malsfeld got LAGIS register links on three lindens (Berndshausen, Dagobertshausen, Ostheim); LAGIS is a historical court-site database, not a tree-protection register. Preflight 0 problems.
 - Münsterland: Asbeck lime height 18 m (Legden municipal page), Krüsellinde register id I. A 1 (taken from the de.wikipedia list of the Kreis Steinfurt ordinance, not the image-only PDF); a proposed Heidenbaum flower season was dropped as unsourced for that tree; 5 gaps dead-ended.
+- Rothenburg ob der Tauber: no authority record or measurement for the four trees (only community-register figures); 6 gaps dead-ended.
 
 ## 2026-10-13 night run, 22:12 window: 32 enrichment cities, register records and measurements on about 80 trees
 
