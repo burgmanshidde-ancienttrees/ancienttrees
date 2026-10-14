@@ -61,22 +61,31 @@ struct CollectIntro: View {
     var close: AnyView? = nil
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 24) {
+        VStack(spacing: 0) {
+            // THE COLLECT SHEET'S OWN SHAPE (Hidde, 2026-10-14: "quite an empty
+            // overlay, should look more like" the tree page's collect sheet):
+            // BrandSheet's icon tile, a centred brand title, one line, then the
+            // buttons, with BrandSheet's numbers (16, 8, 22, 12).
             // THE TITLE SAYS WHAT YOU ARE DOING, and nothing else (Hidde,
-            // 2026-09-27: "I'm really not happy with the copy here"). The
-            // buttons that open this sheet say "Add a tree", and a sheet that
-            // answers them with "Build your tree collection" and a sentence
-            // about collections talks past the person who pressed it.
-            HStack(alignment: .center, spacing: 12) {
-                Text(addsPhoto ? "Add a photo"
-                     : about == nil ? "Add a tree"
-                     : "Add this tree")
-                    .font(.brand(28, .bold, relativeTo: .title))
-                    .foregroundStyle(Brand.ink)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                close
-            }
+            // 2026-09-27: "I'm really not happy with the copy here").
+            SheetIconTile(symbol: "camera")
+                .padding(.bottom, 16)
+            Text(addsPhoto ? "Add a photo"
+                 : about == nil ? "Add a tree"
+                 : "Add this tree")
+                .font(.brand(26, .bold, relativeTo: .title2))
+                .foregroundStyle(Brand.ink)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.horizontal, 18)
+            Text(addsPhoto ? "Your photograph goes on this tree's page."
+                 : "Photograph a tree you are standing in front of.")
+                .font(.system(size: 15))
+                .foregroundStyle(Brand.inkSoft)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.top, 8)
+                .padding(.bottom, 22)
 
             // ONE LINE, AND IT IS BACK ON PURPOSE (Hidde, 2026-08-29: "ik denk
             // dat deze toch een onderregel nodig heeft om wat meer uit te
@@ -133,5 +142,8 @@ struct CollectIntro: View {
                 // stopped nobody else; the viewing pass checks every picture.
             }
         }
+        .frame(maxWidth: .infinity)
+        // The close button in the corner, as every BrandSheet carries it.
+        .overlay(alignment: .topTrailing) { close.offset(y: -8) }
     }
 }

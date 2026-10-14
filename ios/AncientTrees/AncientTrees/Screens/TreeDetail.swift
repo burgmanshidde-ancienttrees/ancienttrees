@@ -1970,7 +1970,7 @@ struct TreeDetail: View {
     /// without").
     @ViewBuilder private var collectChoice: some View {
         BrandSheet(
-                icon: "checkmark.seal",
+                icon: collected ? "checkmark.seal" : "camera",
                 title: collected ? "You collected \(tree.name)" : "Collect \(tree.name)",
                 message: collected ? collectedOn : "Take a photograph to add it to your trees.",
                 buttons: [
