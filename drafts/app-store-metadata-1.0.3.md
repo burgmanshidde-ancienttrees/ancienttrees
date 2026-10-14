@@ -35,7 +35,7 @@ monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,beech,walk,h
 Description, the live one with three corrections (2026-10-14): it claimed two independent sources for every tree (a register or a reader's photograph also suffices), said a signed-out collection stays on the phone (hard rule 11: nothing is kept on the device), and promised corrections the same day:
 
 ```
-Ancient Trees maps the remarkable old trees of the world's cities, and shows you the ones near you.
+Some trees in your city were standing before the city was. Ancient Trees takes you to them.
 
 Open it anywhere and the map fills with the trees around you: a yew that was old when the church beside it was built, a plane whose trunk takes four people to reach around, an oak that has stood through everything that happened on the street it shades. Each one has a page telling you what it is, roughly how old, and why it is worth the walk.
 
