@@ -14,28 +14,22 @@ no plurals (Apple handles them).
 
 ## English (U.K.), the primary language
 
-Name, unchanged unless Hidde takes the suffix option (brand decision, his):
-
-```
-Ancient Trees
-```
-
-Option with the reference apps' convention (AllTrails: Hike, Bike & Run), 27/30:
+Name, 27/30 (Hidde took the suffix, 2026-10-14; the reference apps' convention, AllTrails: Hike, Bike & Run). English (U.K.) and English (U.S.) only; the other languages keep "Ancient Trees", because their subtitles already say old trees in their own words:
 
 ```
 Ancient Trees: Old Tree Map
 ```
 
-Subtitle, 29/30:
+Subtitle, 25/30 (no longer repeats "old" and "trees", which the name now carries):
 
 ```
-Remarkable old trees near you
+Remarkable trees near you
 ```
 
-Keywords, 97/100:
+Keywords, 98/100 ("map" left, the name has it):
 
 ```
-monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,map,walk,hike,nature,oak,yew
+monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,beech,walk,hike,nature,oak,yew
 ```
 
 Description: keep the live one. It is not indexed and it reads well.
@@ -61,7 +55,7 @@ Most people have walked past a thousand-year-old tree without knowing it. Open t
 
 ## English (U.S.)
 
-Same name, subtitle and description as U.K. The point of adding it is a second
+Same name (Ancient Trees: Old Tree Map), subtitle and description as U.K. The point of adding it is a second
 keyword field indexed in the US storefront.
 
 Keywords, 98/100:
