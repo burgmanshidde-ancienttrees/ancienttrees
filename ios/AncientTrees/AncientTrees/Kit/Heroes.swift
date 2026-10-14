@@ -51,6 +51,9 @@ import UIKit
 //   hero-3  General Sherman, Eric Kilby, CC BY-SA 2.0, via Wikimedia Commons
 //           (seq_001). The licence asks for a VISIBLE credit, so `credit`
 //           below carries it and the cover prints it.
+// All three lifted in the midtones (gamma 0.78, out/tmp/hero_lift.py) on the
+// same day: they measured 87 to 95 of 255 and read dark (Hidde). An
+// adaptation, which CC BY-SA allows under the same licence.
 public enum Heroes {
     public static let names = ["hero-1", "hero-2", "hero-3"]
 

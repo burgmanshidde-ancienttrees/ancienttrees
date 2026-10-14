@@ -41,8 +41,17 @@ struct HeroCover: View {
                 .overlay {
                     // Dark from the middle down, so the words sit on the tree's
                     // own shade rather than on a bar laid over it.
-                    LinearGradient(colors: [.clear, .black.opacity(0.72)],
-                                   startPoint: .center, endPoint: .bottom)
+                    // Lower and lighter since 2026-10-14 (Hidde: "the splash
+                    // photos seem a bit dark"): only behind the words, as
+                    // Airbnb, AllTrails and Polarsteps keep their scrims. It
+                    // started at the middle at 0.72.
+                    // A little deeper at the foot only, so the gold line still
+                    // reads over a light ground (the Itoshima shrine's stairs).
+                    LinearGradient(stops: [
+                        .init(color: .clear, location: 0),
+                        .init(color: .black.opacity(0.45), location: 0.6),
+                        .init(color: .black.opacity(0.68), location: 1),
+                    ], startPoint: UnitPoint(x: 0.5, y: 0.6), endPoint: .bottom)
                 }
                 .overlay(alignment: .bottomLeading) {
                     VStack(alignment: .leading, spacing: 2) {
