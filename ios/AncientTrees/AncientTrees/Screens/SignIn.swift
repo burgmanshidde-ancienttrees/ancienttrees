@@ -80,7 +80,9 @@ struct SignInSheet: View {
             // 36: room for the handle drawn 12 down (below), then the tile.
             .padding(.top, 36)
             .padding(.bottom, Self.floating ? 28 : 16)
-            .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { askHeight = max(320, $0) }
+            // Floor 200, not 320: the email step is shorter than the first
+            // and the old floor left half the sheet empty (2026-10-14).
+            .onGeometryChange(for: CGFloat.self) { $0.size.height } action: { askHeight = max(200, $0) }
         }
         // THE BLANK BAND UNDER THE FINE PRINT, which Hidde read as the sheet
         // being out of true three times (2026-10-01 "the vertical alignments
@@ -265,15 +267,26 @@ struct SignInSheet: View {
             // LESS IS MORE (Hidde, 2026-10-14: "way too crowded"): no mark
             // above the title (the main sheet lost its glyph on 10-09), one
             // short line, and no terms footer, which was agreed a step ago.
+            // THE SAME HEADER AS THE FIRST STEP (Hidde, 2026-10-14: "completely
+            // horrible", shipped unseen in system type, the title under the
+            // cross, half the sheet empty). Icon tile, brand face and ink,
+            // the side inset that keeps the title clear of the cross.
             VStack(spacing: 8) {
-                Text("Check your email").font(.title2.bold())
+                SheetIconTile(symbol: "envelope.fill")
+                    .padding(.bottom, 16)
+                Text("Check your email")
+                    .font(.brand(26, .bold, relativeTo: .title2))
+                    .foregroundStyle(Brand.ink)
+                    .multilineTextAlignment(.center)
                 Text(Launch.emailCode
                      ? "We sent you a sign-in code."
                      : "We sent you a sign-in link.")
-                    .font(.subheadline).foregroundStyle(.secondary)
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .multilineTextAlignment(.center)
             }
-            .padding(.top, 4)
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 22)
+            .padding(.top, 6)
 
             // The digits only where the mail actually carries digits. See
             // Launch.emailCode: with the built-in sender it carries a link, and
@@ -313,10 +326,13 @@ struct SignInSheet: View {
 
             problemLine
 
+            // The sheet's own secondary pill, as every other sheet's second
+            // action (BrandSheet), not a loose green footnote.
             Button(Launch.emailCode ? "Send another code" : "Send another link") {
                 Task { await account.sendCode(to: to) }
             }
-                .font(.footnote)
+            .buttonStyle(SheetButtonStyle(kind: .secondary))
+            .padding(.top, 10)
         }
         .onAppear { if Launch.emailCode { focus = .code } }
     }

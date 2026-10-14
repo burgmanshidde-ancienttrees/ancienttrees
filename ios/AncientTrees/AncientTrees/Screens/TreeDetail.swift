@@ -644,7 +644,9 @@ struct TreeDetail: View {
             Color.clear
                 .frame(height: heroHeight)
                 .overlay {
-                    MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 240)
+                    // The photograph's own height, so the swap fills the same
+                    // box (Hidde, 2026-10-14: it was a fixed 240 and left a band).
+                    MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: heroHeight)
                 }
                 .clipped()
                 // THE WHOLE PICTURE IS THE WAY TO THE REAL MAP (Hidde,
@@ -683,10 +685,11 @@ struct TreeDetail: View {
                     .accessibilityIdentifier("tree-photo-swap")
                     .accessibilityLabel("Show the photograph again")
                 }
-                .overlay(alignment: .topTrailing) {
+                .overlay(alignment: .bottomLeading) {
                     // The way to the FULL map is still here, because seeing it
                     // in the corner of a page and standing on it are different
-                    // needs.
+                    // needs. Bottom left since 2026-10-14: the box runs up under
+                    // the status bar and the top corner is the bar's buttons.
                     Button { navigator.push = .treeMap(tree.id) } label: {
                         Image(systemName: "arrow.up.left.and.arrow.down.right")
                             .font(.system(size: 14, weight: .semibold))

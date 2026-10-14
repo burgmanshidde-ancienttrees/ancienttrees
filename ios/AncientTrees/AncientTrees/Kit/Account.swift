@@ -212,6 +212,12 @@ public final class Account {
             state = .signedIn(email: session?.email)
             return
         }
+        // The "Check your email" step, openable without sending a mail
+        // (with -signin), so it is LOOKED AT before it ships (2026-10-14).
+        if ProcessInfo.processInfo.arguments.contains("-email-sent") {
+            state = .codeSent(email: "you@example.com")
+            return
+        }
         restore()
     }
 
