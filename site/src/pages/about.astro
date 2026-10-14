@@ -44,39 +44,51 @@ const graph = [
 ];
 ---
 <Base title="About Ancient Trees" description={description} canonical={canonical} headExtra={ldScript(graph)}>
-<main class="content-page">
-  <Breadcrumbs items={crumbItems} />
-  <h1>About Ancient Trees</h1>
-  <section class="maker">
-    <figure>
-      <img src="/photos/about/hidde-cedar-600.jpg" srcset="/photos/about/hidde-cedar-600.jpg 600w, /photos/about/hidde-cedar-1200.jpg 1200w" sizes="(max-width: 760px) calc(100vw - 32px), 260px" width="600" height="800" alt="Hidde at a huge Japanese cedar">
-      <figcaption>Me admiring a <a href="/taketa/cedars-of-noike-shrine">huge Japanese cedar in Kyushu</a></figcaption>
-    </figure>
-    <div class="maker-words prose-block">
-      <h2>Hi, I'm Hidde</h2>
-      <p>The story of Ancient Trees actually started in Lisbon. I travelled there a lot for work, and when you travel for work you have some time to kill. Strolling through the many beautiful parks, I was fascinated by the old jacarandas and fig trees (not that I knew the species then). They seemed ages old, definitely planted by someone no longer living, for us to marvel at. When I later travelled to Palermo and accidentally parked in front of a huge old ficus, I was blown away, and I realised how much I enjoyed these encounters with ancient trees on my trips.</p>
-      <p>I'm not an expert, but I am a fan, and I hope to share this passion with others and make it easier for people to experience trees like these and simply enjoy them, the way I do.</p>
-      <p>The site isn't perfect, and it needs your help to get better. Every tree page has a button to tell me what's wrong or to add your photo, and you can <a href={submitLink("tree")}>send me a tree I'm missing</a>. And if you know the old trees of your city well, you can become its ambassador.</p>
-      <p>The photo is me at a huge Japanese cedar I found recently, on our trip while testing the app. I work on the app every day to make it better. For questions, feedback or anything else, mail me at <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+<main class="about">
+  {/* Layout B (Hidde, 2026-10-14, after "make the pic a lot better"): the
+      photograph as large as the text column and uncropped, held in view while
+      the story scrolls (sticky), edge to edge above the story on a phone.
+      Benchmarked against Polarsteps' full-bleed hero, which crops a portrait
+      tree to a strip on desktop and loses the crown. */}
+  <figure class="about-photo">
+    <img src="/photos/about/hidde-cedar-1200.jpg" srcset="/photos/about/hidde-cedar-600.jpg 600w, /photos/about/hidde-cedar-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 540px" width="1200" height="1600" alt="Hidde admiring a huge Japanese cedar in Kyushu">
+    <figcaption>Me admiring a <a href="/taketa/cedars-of-noike-shrine">huge Japanese cedar in Kyushu</a></figcaption>
+  </figure>
+  <div class="about-words">
+    <Breadcrumbs items={crumbItems} />
+    <h1>About Ancient Trees</h1>
+    <h2 class="about-hi">Hi, I'm Hidde</h2>
+    <p>The story of Ancient Trees actually started in Lisbon. I travelled there a lot for work, and when you travel for work you have some time to kill. Strolling through the many beautiful parks, I was fascinated by the old jacarandas and fig trees (not that I knew the species then). They seemed ages old, definitely planted by someone no longer living, for us to marvel at. When I later travelled to Palermo and accidentally parked in front of a huge old ficus, I was blown away, and I realised how much I enjoyed these encounters with ancient trees on my trips.</p>
+    <p class="about-pull">I'm not an expert, but I am a fan.</p>
+    <p>I'm not an expert, but I am a fan, and I hope to share this passion with others and make it easier for people to experience trees like these and simply enjoy them, the way I do.</p>
+    <p>The site isn't perfect, and it needs your help to get better. Every tree page has a button to tell me what's wrong or to add your photo, and you can <a href={submitLink("tree")}>send me a tree I'm missing</a>. And if you know the old trees of your city well, you can become its ambassador.</p>
+    <p>The photo is me at a huge Japanese cedar I found recently, on our trip while testing the app. I work on the app every day to make it better. For questions, feedback or anything else, mail me at <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+    <div class="about-where">
+      <h2>Where the trees come from</h2>
+      <p>Most trees come from official registers of protected and monumental trees, the rest from tree societies, local newspapers and readers. The stories are written with AI and corrected by people who know the trees. All sources are on the <a href="/sources">sources page</a>.</p>
     </div>
-  </section>
-  <div class="prose-block" data-noclamp>
-    <h2>Where the trees come from</h2>
-    <p>Most trees come from official registers of protected and monumental trees, the rest from tree societies, local newspapers and readers. The stories are written with AI and corrected by people who know the trees. All sources are on the <a href="/sources">sources page</a>.</p>
   </div>
 </main>
 </Base>
 
 <style>
-  .maker { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 32px; align-items: start; margin: 8px 0 40px; }
-  .maker figure { margin: 0; grid-column: 2; grid-row: 1; }
-  .maker img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 14px; display: block; }
-  .maker-words { grid-column: 1; grid-row: 1; }
-  .maker-words h2 { margin-top: 0; }
-  .maker figcaption { font-size: 13px; color: var(--ink-mid); margin-top: 8px; line-height: 1.4; }
+  .about { max-width: 1120px; margin: 0 auto; padding: calc(var(--header-h) + 2.25rem) 24px 4rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+  .about-photo { margin: 0; position: sticky; top: calc(var(--header-h) + 24px); }
+  .about-photo img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 18px; display: block; }
+  .about-photo figcaption { font-size: 13px; color: var(--ink-mid); margin-top: 10px; line-height: 1.4; }
+  .about-words h1 { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-mid); font-weight: 500; margin: 0 0 10px; }
+  .about-hi { font-size: 46px; line-height: 1.05; margin: 0 0 24px; }
+  .about-words p { font-size: 17px; line-height: 1.75; color: var(--ink-mid); font-weight: 300; margin: 0 0 1.1rem; }
+  .about-words .about-pull { font-size: 24px; line-height: 1.35; color: var(--ink); font-weight: 500; margin: 2rem 0; padding-left: 18px; border-left: 3px solid var(--green, #4A6B2A); }
+  .about-where { border-top: 1px solid var(--line, rgba(0, 0, 0, .08)); margin-top: 2.5rem; padding-top: 2rem; }
+  .about-where h2 { font-size: 20px; margin: 0 0 .6rem; }
+  .about-where p { font-size: 15px; }
   @media (max-width: 760px) {
-    .maker { grid-template-columns: minmax(0, 1fr); gap: 16px; }
-    .maker figure, .maker-words { grid-column: 1; grid-row: auto; }
-    .maker img { max-width: none; }
+    .about { grid-template-columns: minmax(0, 1fr); gap: 0; padding: var(--header-h) 0 3rem; }
+    .about-photo { position: static; }
+    .about-photo img { border-radius: 0; aspect-ratio: 4 / 5; }
+    .about-photo figcaption { padding: 0 16px; }
+    .about-words { padding: 24px 16px 0; }
+    .about-hi { font-size: 36px; }
   }
 </style>
