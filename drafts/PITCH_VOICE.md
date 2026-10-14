@@ -178,6 +178,21 @@ belongs in Helpful Details or nowhere.
 - NO: "1818 nahm ein Feuer in Kaditz achtzehn Höfe... (press mail opening cold on the tree fact)"
 - YES: "ich mache Ancient Trees, eine Karte der besonderen alten Bäume, und bei Dresden sind wir auf eine Geschichte gestoßen, die Ihre Leser vielleicht mögen: (then the fact)"
 
+**repeating a line for emphasis; less is more** (added 2026-10-14)
+
+- NO: "a pull quote repeating his line in large type above the same sentence"
+- YES: "highlight the sentence in place, once, lightly"
+
+**opening on our tab name and giving orders, instead of the season the reader can see** (added 2026-10-14)
+
+- NO: "Discover shows which old trees near you are at their best this month. Pick one and walk to it before the leaves fall."
+- YES: "(rejected by Hidde as the worst sentence; replacement pending)"
+
+**explaining our data model instead of saying what the reader does** (added 2026-10-14)
+
+- NO: "Your photograph goes in your trees instead of ours."
+- YES: "Take a photograph to add it to your trees."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**

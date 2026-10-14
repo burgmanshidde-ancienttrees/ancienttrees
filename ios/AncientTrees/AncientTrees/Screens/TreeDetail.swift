@@ -1972,7 +1972,7 @@ struct TreeDetail: View {
         BrandSheet(
                 icon: "checkmark.seal",
                 title: collected ? "You collected \(tree.name)" : "Collect \(tree.name)",
-                message: collected ? collectedOn : "Your photograph goes in your trees instead of ours.",
+                message: collected ? collectedOn : "Take a photograph to add it to your trees.",
                 buttons: [
                     .primary("Take a photograph", "camera", id: "collect-with-photo") { startPhoto(.camera) },
                     .secondary("Choose from your photos", "photo.on.rectangle", id: "collect-from-library") { startPhoto(.library) },
