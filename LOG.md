@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: app 1.0.3 (build 34) submitted to Apple
+
+- Hidde submitted 1.0.3 build 34 for review this evening.
+- In it: collecting needs a photograph (app and web), always "Which one is it?" before a tree is collected, the email sign-in link opens the app (ancienttrees:// scheme), a confirmation after saving a new tree, a new draft keeps its photo (one sightings store per launch), lighter opening photos (his Itoshima camphor, the Unsplash camphor, General Sherman with credit), camera icons on the collect controls, sign-in buttons aligned, calmer sheets throughout.
+- Store: seven new screenshots (6.9 and 6.5 inch, asc_screenshots.py), Hidde's Lisbon description and plain What's new in nine languages, promotional text "Autumn is here...", English subtitle "Find remarkable trees near you", English keywords rebuilt from search data, a header image (Unsplash camphor). Search Results asset left empty on purpose (screenshots sell better there).
+- Open: the double "Open in Ancient Trees?" prompt on the email link (which mail app?); whether to keep the second photo permission (save to Photos).
+
 ## 2026-10-14 session: a reader's cactus goes live in Seville
 
 - **New tree, sev_044 The Cardón of the Expo** (Pachycereus pringlei, Isla de la Cartuja): Mexico's gift for Expo '92, flown in 1992 from the Valle de los Gigantes. A reader replied to our mail with a geotagged photograph; the tree was already in Seville's 2022 catalogue (ficha 27) but sat blocked in leads on titularidad 'Particular'. The photo shows it on an open paved street corner, so it ships. Pin confirmed from the photo's GPS (14 m from the catalogue's). Spanish overlay written, question_meta counts bumped (en/es).
