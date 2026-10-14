@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autumn event mockup</title>
+<style>
+  body { margin: 0; background: #e9e9ee; font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif; color: #000; display: flex; gap: 40px; justify-content: center; padding: 32px 16px; flex-wrap: wrap; }
+  .phone { width: 375px; background: #fff; border-radius: 44px; border: 10px solid #111; overflow: hidden; }
+  .status { height: 44px; display: flex; justify-content: space-between; align-items: center; padding: 0 28px; font-size: 15px; font-weight: 600; }
+  .screen { padding: 8px 20px 28px; }
+  .h1 { font-size: 30px; font-weight: 700; margin: 6px 0 14px; letter-spacing: -0.5px; }
+  .search { background: #eeeef0; border-radius: 10px; height: 36px; display: flex; align-items: center; padding: 0 10px; color: #8a8a8e; font-size: 16px; margin-bottom: 18px; }
+  .applist { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .icon { width: 60px; height: 60px; border-radius: 14px; border: 0.5px solid #ddd; }
+  .icon.sm { width: 38px; height: 38px; border-radius: 9px; }
+  .appname { font-size: 16px; font-weight: 500; }
+  .appsub { font-size: 13px; color: #8a8a8e; }
+  .get { margin-left: auto; background: #eeeef0; color: #007aff; font-weight: 700; font-size: 15px; border-radius: 16px; padding: 5px 20px; }
+  .label { font-size: 12px; font-weight: 600; color: #8a8a8e; letter-spacing: 0.3px; text-transform: uppercase; margin: 2px 0 6px; }
+  .card { position: relative; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 9; background: #c9a227; }
+  .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .shade { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 14px 12px; background: linear-gradient(transparent, rgba(0,0,0,0.6)); color: #fff; }
+  .badge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; opacity: 0.9; }
+  .ename { font-size: 20px; font-weight: 700; line-height: 1.15; margin-top: 2px; }
+  .edesc { font-size: 13px; margin-top: 2px; opacity: 0.95; }
+  .below { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+  .caption { width: 375px; text-align: center; font-size: 13px; color: #555; margin-top: 10px; }
+  .detail-hero { position: relative; height: 470px; }
+  .detail-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .detail-body { padding: 18px 20px 28px; }
+  .dname { font-size: 26px; font-weight: 700; line-height: 1.15; margin: 4px 0 8px; }
+  .dtext { font-size: 15px; line-height: 1.4; color: #333; }
+  .dates { font-size: 13px; color: #8a8a8e; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<div>
+  <div class="phone">
+    <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+    <div class="screen">
+      <div class="h1">Search</div>
+      <div class="search">old tree map</div>
+      <div class="applist">
+        <img class="icon" src="icon.png" alt="">
+        <div>
+          <div class="appname">Ancient Trees: Old Tree Map</div>
+          <div class="appsub">Remarkable trees near you</div>
+        </div>
+        <div class="get">Get</div>
+      </div>
+      <div class="label">New season</div>
+      <div class="card">
+        <img src="autumn-event-pando-1920x1080.jpg" alt="Golden aspens of Pando, Utah">
+        <div class="shade">
+          <div class="ename">Autumn colour, tree by tree</div>
+          <div class="edesc">The old trees near you at their best, this month</div>
+        </div>
+      </div>
+      <div class="below">
+        <img class="icon sm" src="icon.png" alt="">
+        <div class="appname" style="font-size:14px">Ancient Trees</div>
+        <div class="get">Get</div>
+      </div>
+    </div>
+  </div>
+  <div class="caption">1. In the search results, under the app</div>
+</div>
+
+<div>
+  <div class="phone">
+    <div class="detail-hero">
+      <img src="autumn-event-pando-1080x1920.jpg" alt="Golden aspens of Pando, Utah">
+    </div>
+    <div class="detail-body">
+      <div class="label">New season</div>
+      <div class="dname">Autumn colour, tree by tree</div>
+      <div class="dtext">The aspens, ginkgos and beeches on the map are changing colour now. Open it, pick one near you, and walk to it before the leaves drop.</div>
+      <div class="below">
+        <img class="icon sm" src="icon.png" alt="">
+        <div class="appname" style="font-size:14px">Ancient Trees</div>
+        <div class="get">Get</div>
+      </div>
+      <div class="dates">18 Oct to 30 Nov</div>
+    </div>
+  </div>
+  <div class="caption">2. After a tap: the event page</div>
+</div>
+
+</body>
+</html>
