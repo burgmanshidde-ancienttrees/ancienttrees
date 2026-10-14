@@ -68,11 +68,12 @@
       },
       "photos": [],
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "location_site": {
         "name": "Church hill, north side of the Grassalkovich church, Mélykút",
         "radius_m": 50.0
-      }
+      },
+      "verify_notes": "2026-10-14: pin confirmed, European Tree of the Year GPS matches the pin. A GPS fix at the tree is as good as a pin gets (Hidde); it was kept approximate before because the camera stood a few metres off, which was wrong."
     }
   ]
 }

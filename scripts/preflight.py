@@ -210,6 +210,35 @@ PIN_NEW_EVIDENCE = re.compile(
     r"|overpass|openstreetmap|\bosm\b|pdok|luchtfoto|aerial|geoportal|gis\b", re.I)
 
 
+GPS_IS_THE_PIN = re.compile(
+    r"where the photographer stood|camera'?s (?:own )?fix|GPS.{0,80}?match(?:es)? our pin"
+    r"|geotagged.{0,80}?agrees", re.I)
+
+
+def check_a_gps_pin_is_confirmed():
+    """A GPS fix at the tree is as good as a pin gets (Hidde, 2026-10-14: "kun
+    je dat nooit meer doen bij gps ... gps is as good as it gets"). The Noike
+    cedar went live approximate with its pin from his own photograph's GPS, and
+    four older trees (Crete, Aubers, Melykut, Veliki Preslav) had been kept
+    approximate on the same reasoning, "a camera's fix is where the
+    photographer stood". So: a tree whose pin_source names GPS, or whose notes
+    or sources say a GPS fix or geotag matches the pin, must be confirmed."""
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees") or []:
+            if t.get("location_precision") == "confirmed":
+                continue
+            ps = json.dumps(t.get("pin_source") or "")
+            blob = " ".join([t.get("verify_notes") or ""] + [s for s in (t.get("verified_sources") or []) if isinstance(s, str)])
+            if re.search(r"\bgps\b", ps, re.I) or GPS_IS_THE_PIN.search(blob):
+                out.append("%s: %s has a GPS fix at the tree but is marked %s. GPS is as good as "
+                           "a pin gets: set location_precision to confirmed (Hidde, 2026-10-14)"
+                           % (os.path.basename(path)[:-5], t.get("id"), t.get("location_precision")))
+    return out
+
+
 def check_pin_upgrades():
     pins = {}
     for path in sorted(glob.glob("data/research/*-pins.json")):
@@ -3363,7 +3392,7 @@ def check_agent_costs_shape():
 
 
 def main():
-    problems = (check_id_prefixes() + check_pin_upgrades()
+    problems = (check_id_prefixes() + check_pin_upgrades() + check_a_gps_pin_is_confirmed()
                 + check_agent_costs_shape()
                 + check_cross_city_duplicates() + check_same_city_duplicates()
                 + check_phenology() + check_register_licences()

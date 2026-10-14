@@ -56,9 +56,9 @@
         "taken_month": 10
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it by its shape, only 12 metres tall and 5.1 metres round, low and thick rather than grand. It stands alone beside the Chemin du Joncquoy, apart from the village houses.",
-      "verify_notes": "2026-09-10: pin moved 8.8 km southeast, from 50.662500,2.772328 to 50.587625,2.813241. The old coordinate sat north-northwest of Aubers near Armentieres, contradicting our own address field, which says 5 Chemin du Joncquoy in Aubers itself. A photo pass caught it: the Commons photograph of this tree carries a geotag at the new point, a kilometre from the village centre, and the same photographer's second file shows the tree's own stone plaque reading TILLEUL du JONCQUOY. Still approximate: a camera's fix is where the photographer stood.",
+      "verify_notes": "2026-09-10: pin moved 8.8 km southeast, from 50.662500,2.772328 to 50.587625,2.813241. The old coordinate sat north-northwest of Aubers near Armentieres, contradicting our own address field, which says 5 Chemin du Joncquoy in Aubers itself. A photo pass caught it: the Commons photograph of this tree carries a geotag at the new point, a kilometre from the village centre, and the same photographer's second file shows the tree's own stone plaque reading TILLEUL du JONCQUOY. Still approximate: a camera's fix is where the photographer stood. 2026-10-14: pin confirmed, Commons photograph's geotag at the pin. A GPS fix at the tree is as good as a pin gets (Hidde); it was kept approximate before because the camera stood a few metres off, which was wrong.",
       "best_time": {
         "months": [
           6,
