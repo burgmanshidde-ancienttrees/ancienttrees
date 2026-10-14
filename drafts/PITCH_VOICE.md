@@ -193,6 +193,11 @@ belongs in Helpful Details or nowhere.
 - NO: "Your photograph goes in your trees instead of ours."
 - YES: "Take a photograph to add it to your trees."
 
+**say what the thing IS in one plain phrase, not an instruction to open it** (added 2026-10-14)
+
+- NO: "Walking through Lisbon's parks, I kept stumbling on huge, beautiful old trees and wanted a way to find more of them. That became Ancient Trees: open the map wherever you are and find the remarkable old trees around you."
+- YES: "While visiting Lisbon and walking through its parks, I kept stumbling on huge, beautiful old trees and wanted a way to find more of them. That became Ancient Trees: a map of remarkable trees worth a visit, wherever you are."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**

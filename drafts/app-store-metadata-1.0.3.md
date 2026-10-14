@@ -29,15 +29,15 @@ Find remarkable trees near you
 Keywords, 98/100 ("map" left, the name has it):
 
 ```
-monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,beech,walk,hike,nature,oak,yew
+oldest,giant,famous,historic,heritage,monumental,arboretum,botanical,park,foliage,walk,oak,yew
 ```
 
 Description, the live one with three corrections (2026-10-14): it claimed two independent sources for every tree (a register or a reader's photograph also suffices), said a signed-out collection stays on the phone (hard rule 11: nothing is kept on the device), and promised corrections the same day:
 
 ```
-Some trees in your city were standing before the city was. Ancient Trees takes you to them.
+While visiting Lisbon and walking through its parks, I kept stumbling on huge, beautiful old trees and wanted a way to find more of them. That became Ancient Trees: a map of remarkable trees worth a visit, wherever you are.
 
-Open the map wherever you are and find the remarkable old trees around you: a yew older than the church beside it, a plane tree it takes four people to hug, an oak that has seen everything happen on its street. Every tree has a page with what it is, roughly how old, and why it is worth the walk.
+A yew older than the church beside it, a plane tree it takes four people to hug, an oak that has seen everything happen on its street.
 
 FIND
 • The old trees near you, on a map
@@ -53,8 +53,6 @@ COLLECT
 • Photograph a tree you are standing in front of to add it to your collection
 • Keep a list of the trees you want to visit
 • Add a tree that is not on the map yet
-
-Every tree is free to explore, and there are no ads.
 ```
 
 What's new in 1.0.3 (rewritten 2026-10-14):
@@ -84,7 +82,7 @@ keyword field indexed in the US storefront.
 Keywords, 98/100:
 
 ```
-heritage,notable,largest,tallest,sequoia,redwood,live oak,landmark,arboretum,trail,outdoors,forest
+oldest,giant,famous,historic,landmark,sequoia,redwood,live oak,arboretum,botanical,park,foliage,walk
 ```
 
 What's new: same as U.K.
@@ -98,9 +96,9 @@ Autumn is here, and the old trees around you are at their best. Find one worth t
 Description:
 
 ```
-Some trees in your city were standing before the city was. Ancient Trees takes you to them.
+While visiting Lisbon and walking through its parks, I kept stumbling on huge, beautiful old trees and wanted a way to find more of them. That became Ancient Trees: a map of remarkable trees worth a visit, wherever you are.
 
-Open the map wherever you are and find the remarkable old trees around you: a yew older than the church beside it, a plane tree it takes four people to hug, an oak that has seen everything happen on its street. Every tree has a page with what it is, roughly how old, and why it is worth the walk.
+A yew older than the church beside it, a plane tree it takes four people to hug, an oak that has seen everything happen on its street.
 
 FIND
 • The old trees near you, on a map
@@ -116,8 +114,6 @@ COLLECT
 • Photograph a tree you are standing in front of to add it to your collection
 • Keep a list of the trees you want to visit
 • Add a tree that is not on the map yet
-
-Every tree is free to explore, and there are no ads.
 ```
 
 What's new:
@@ -155,9 +151,9 @@ bomenkaart,beroemde,oudste,historische,dikste,kaart,wandeling,wandelen,natuur,ei
 Description:
 
 ```
-Sommige bomen in jouw stad stonden er al voordat de stad er was. Ancient Trees brengt je ernaartoe.
+Toen ik Lissabon bezocht en door de parken wandelde, kwam ik steeds enorme, prachtige oude bomen tegen en wilde ik een manier om er meer te vinden. Zo ontstond Ancient Trees: een kaart van bijzondere bomen die een bezoek waard zijn, waar je ook bent.
 
-Open de kaart waar je ook bent en vind de bijzondere oude bomen om je heen: een taxus ouder dan de kerk ernaast, een plataan waar vier mensen hun armen omheen moeten slaan, een eik die alles heeft gezien wat er in zijn straat gebeurde. Elke boom heeft een pagina met wat het is, hoe oud ongeveer, en waarom hij de wandeling waard is.
+Een taxus ouder dan de kerk ernaast, een plataan waar vier mensen hun armen omheen moeten slaan, een eik die alles heeft gezien wat er in zijn straat gebeurde.
 
 VINDEN
 • De oude bomen bij jou in de buurt, op een kaart
@@ -173,8 +169,6 @@ VERZAMELEN
 • Fotografeer een boom waar je voor staat om hem aan je verzameling toe te voegen
 • Houd een lijst bij van bomen die je wilt bezoeken
 • Voeg een boom toe die nog niet op de kaart staat
-
-Elke boom is gratis te bekijken, en er zijn geen advertenties.
 ```
 
 What's new:
@@ -219,9 +213,9 @@ monumentale,Naturdenkmal,berühmte,älteste,historische,Baumkarte,Karte,Wanderun
 Description:
 
 ```
-Manche Bäume in deiner Stadt standen schon, bevor es die Stadt gab. Ancient Trees bringt dich zu ihnen.
+Als ich Lissabon besuchte und durch die Parks spazierte, stieß ich immer wieder auf riesige, wunderschöne alte Bäume und wollte einen Weg finden, mehr davon zu entdecken. So entstand Ancient Trees: eine Karte besonderer Bäume, die einen Besuch wert sind, wo immer du bist.
 
-Öffne die Karte, wo du gerade bist, und finde die besonderen alten Bäume um dich herum: eine Eibe, älter als die Kirche daneben, eine Platane, die vier Menschen kaum umarmen können, eine Eiche, die alles gesehen hat, was in ihrer Straße geschah. Jeder Baum hat eine Seite: was er ist, wie alt ungefähr und warum er den Weg lohnt.
+Eine Eibe, älter als die Kirche daneben, eine Platane, die vier Menschen kaum umarmen können, eine Eiche, die alles gesehen hat, was in ihrer Straße geschah.
 
 FINDEN
 • Die alten Bäume in deiner Nähe, auf einer Karte
@@ -237,8 +231,6 @@ SAMMELN
 • Fotografiere einen Baum, vor dem du stehst, und er kommt in deine Sammlung
 • Führe eine Liste der Bäume, die du besuchen willst
 • Füge einen Baum hinzu, der noch nicht auf der Karte ist
-
-Jeder Baum ist kostenlos zu entdecken, und es gibt keine Werbung.
 ```
 
 What's new:
@@ -283,9 +275,9 @@ millénaires,monumentaux,anciens,célèbres,historiques,géant,carte,balade,rand
 Description:
 
 ```
-Certains arbres de votre ville étaient déjà là avant la ville. Ancient Trees vous y conduit.
+En visitant Lisbonne et en me promenant dans ses parcs, je tombais sans cesse sur d'immenses et magnifiques vieux arbres, et je voulais un moyen d'en trouver d'autres. C'est devenu Ancient Trees : une carte des arbres remarquables qui valent le détour, où que vous soyez.
 
-Ouvrez la carte où que vous soyez et trouvez les vieux arbres remarquables autour de vous : un if plus vieux que l'église voisine, un platane qu'il faut quatre personnes pour entourer, un chêne qui a tout vu de ce qui s'est passé dans sa rue. Chaque arbre a sa page : ce qu'il est, son âge approximatif et pourquoi il vaut le détour.
+Un if plus vieux que l'église voisine, un platane qu'il faut quatre personnes pour entourer, un chêne qui a tout vu de ce qui s'est passé dans sa rue.
 
 TROUVER
 • Les vieux arbres près de vous, sur une carte
@@ -301,8 +293,6 @@ COLLECTIONNER
 • Photographiez un arbre devant lequel vous vous tenez pour l'ajouter à votre collection
 • Gardez une liste des arbres que vous voulez visiter
 • Ajoutez un arbre qui n'est pas encore sur la carte
-
-Chaque arbre est gratuit à explorer, et il n'y a pas de publicité.
 ```
 
 What's new:
@@ -347,9 +337,9 @@ gigantes,monumentales,antiguos,centenarios,famosos,históricos,milenario,mapa,se
 Description:
 
 ```
-Algunos árboles de tu ciudad ya estaban ahí antes que la ciudad. Ancient Trees te lleva hasta ellos.
+Visitando Lisboa y paseando por sus parques, no paraba de encontrarme con árboles viejos enormes y preciosos, y quería una forma de encontrar más. Así nació Ancient Trees: un mapa de árboles singulares que merecen una visita, estés donde estés.
 
-Abre el mapa estés donde estés y encuentra los árboles viejos y singulares a tu alrededor: un tejo más antiguo que la iglesia de al lado, un plátano que hacen falta cuatro personas para abrazar, un roble que ha visto todo lo que ha pasado en su calle. Cada árbol tiene su página: qué es, cuántos años tiene más o menos y por qué merece el paseo.
+Un tejo más antiguo que la iglesia de al lado, un plátano que hacen falta cuatro personas para abrazar, un roble que ha visto todo lo que ha pasado en su calle.
 
 ENCONTRAR
 • Los árboles viejos cerca de ti, en un mapa
@@ -365,8 +355,6 @@ COLECCIONAR
 • Fotografía un árbol frente al que estás para añadirlo a tu colección
 • Lleva una lista de los árboles que quieres visitar
 • Añade un árbol que aún no está en el mapa
-
-Todos los árboles se pueden explorar gratis, y no hay anuncios.
 ```
 
 What's new:
@@ -411,9 +399,9 @@ patriarchi,antichi,vecchi,famosi,storici,giganti,mappa,passeggiata,camminare,nat
 Description:
 
 ```
-Alcuni alberi della tua città c'erano già prima della città. Ancient Trees ti porta da loro.
+Visitando Lisbona e passeggiando nei suoi parchi, continuavo a imbattermi in alberi antichi enormi e bellissimi, e volevo un modo per trovarne altri. Così è nato Ancient Trees: una mappa di alberi straordinari che valgono una visita, ovunque tu sia.
 
-Apri la mappa ovunque ti trovi e trova gli alberi secolari e straordinari intorno a te: un tasso più antico della chiesa accanto, un platano che servono quattro persone per abbracciare, una quercia che ha visto tutto ciò che è successo nella sua strada. Ogni albero ha la sua pagina: che cos'è, quanti anni ha più o meno e perché vale la passeggiata.
+Un tasso più antico della chiesa accanto, un platano che servono quattro persone per abbracciare, una quercia che ha visto tutto ciò che è successo nella sua strada.
 
 TROVA
 • Gli alberi secolari vicino a te, su una mappa
@@ -429,8 +417,6 @@ COLLEZIONA
 • Fotografa un albero davanti a cui ti trovi per aggiungerlo alla tua collezione
 • Tieni una lista degli alberi che vuoi visitare
 • Aggiungi un albero che non è ancora sulla mappa
-
-Ogni albero si può esplorare gratis, e non ci sono pubblicità.
 ```
 
 What's new:
@@ -475,9 +461,9 @@ monumentais,gigantes,centenárias,velhas,famosas,históricas,milenar,mapa,passei
 Description:
 
 ```
-Algumas árvores da sua cidade já lá estavam antes da cidade. A Ancient Trees leva-o até elas.
+Ao visitar Lisboa e passear pelos seus jardins, dava constantemente com árvores antigas enormes e lindíssimas, e queria uma forma de encontrar mais. Assim nasceu a Ancient Trees: um mapa de árvores notáveis que merecem uma visita, esteja onde estiver.
 
-Abra o mapa onde estiver e encontre as árvores antigas e notáveis à sua volta: um teixo mais velho do que a igreja ao lado, um plátano que são precisas quatro pessoas para abraçar, um carvalho que viu tudo o que aconteceu na sua rua. Cada árvore tem a sua página: o que é, que idade tem mais ou menos e porque merece o passeio.
+Um teixo mais velho do que a igreja ao lado, um plátano que são precisas quatro pessoas para abraçar, um carvalho que viu tudo o que aconteceu na sua rua.
 
 ENCONTRAR
 • As árvores antigas perto de si, num mapa
@@ -493,8 +479,6 @@ COLECIONAR
 • Fotografe uma árvore à sua frente para a juntar à sua coleção
 • Guarde uma lista das árvores que quer visitar
 • Adicione uma árvore que ainda não está no mapa
-
-Todas as árvores são gratuitas para explorar, e não há anúncios.
 ```
 
 What's new:
@@ -539,9 +523,9 @@ Keywords:
 Description:
 
 ```
-あなたの街には、街ができる前から立っている木があります。Ancient Treesがそこへ連れていきます。
+リスボンを訪れて公園を歩いていると、何度も大きく美しい古木に出会いました。もっと見つける方法がほしくて生まれたのがAncient Trees。どこにいても、訪れる価値のある見事な木がわかる地図です。
 
-どこにいても地図を開けば、周りにある見事な古木が見つかります。隣の教会より古いイチイ、四人でやっと囲めるプラタナス、通りで起きたすべてを見てきたオーク。一本ごとにページがあり、何の木か、おおよその樹齢、そしてなぜ歩いて会いに行く価値があるのかがわかります。
+隣の教会より古いイチイ、四人でやっと囲めるプラタナス、通りで起きたすべてを見てきたオーク。
 
 見つける
 • 近くの古木を地図で
@@ -557,8 +541,6 @@ Description:
 • 目の前の木を撮影してコレクションに追加
 • 行きたい木をリストに保存
 • まだ地図にない木を追加
-
-すべての木を無料で見られて、広告はありません。
 ```
 
 What's new:
