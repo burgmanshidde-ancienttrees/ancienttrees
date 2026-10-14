@@ -422,10 +422,14 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Platano_Tesoriera_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Pampuco, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-14",
+        "width": 3456,
+        "height": 4608
       },
       "height_m": 28.0,
       "verify_notes": "Height 28.0 m from the piemonte-alberi-monumentali register, matched on our own pin (0 m away).",

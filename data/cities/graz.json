@@ -521,10 +521,14 @@
       "access": "Free, in Annaplatz, a public park in the Algersdorf/Eggenberg district maintained by the city (Holding Graz), open at all times",
       "transport": "Graz public transport toward Eggenberg/Algersdorf; about 900m on foot from Schlosspark Eggenberg's main entrance",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Eiche%2C_Annaplatz%2C_Graz.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Thomas Ledl, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-14",
+        "width": 4663,
+        "height": 3876
       },
       "curation_status": "flagged",
       "notes": "Register (id 87) and Wikipedia's independent Naturdenkmal list agree on coordinates within 4.4m. Both sources record the species only at genus level ('Eiche'/oak), no Latin binomial in either, so species ships as 'Oak (Quercus, species not established)', matching this project's existing convention for an unidentified oak (see heerlen.json), per the publish-and-ask rule. Annaplatz confirmed by web search as a public park (near the Annakapelle chapel and Ansitz Rothenburg, used for community events such as yoga classes, maintained by Holding Graz's public-space staff), not a private plot despite the street-number-style address. No age or girth found. About 890m on foot from the Eggenberg Weymouth Pine/Copper Beech (grz_009/grz_010).",
