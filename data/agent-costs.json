@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "canberra+deblin+fonte-colombo+fontenay-abbey+fortaleza+fribourg",
+    "kind": "enrich",
+    "tokens": 89000,
+    "trees": 0,
+    "note": "enrichment: Canberra pine height 20 m, Deblin oak height 28 m (6 m trunk girth not stated at 1.3 m, left out), Fontenay abbey tariff and hours, Fortaleza baobab federal Decreto 30.052 of 1951 as register; Fonte Colombo dead end; Fribourg page matches the 1984 tree (a 2026 descendant was planted 100 m away, not this page); 15 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "ancient-bristlecone-pine-forest+berga-elster+breukelen+brunswick-georgia+brzoza+busan",
     "kind": "enrich",
     "tokens": 118000,
