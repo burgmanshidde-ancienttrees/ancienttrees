@@ -546,18 +546,19 @@ Promotional text (170, not indexed, editable any time):
 
 Event name (30), short description (50), long description (120). Badge: New Season.
 Dates: 2026-10-18 to 2026-11-30 (Apple reviews an event separately; a start a few days out leaves room).
-Images, ready in drafts/app-store-event/: event card autumn-event-pando-1920x1080.jpg, event details
-page autumn-event-pando-1080x1920.jpg. Pando, Fish Lake, Utah (a tree on our map), photographed by the
-US Forest Service on 2012-10-03, public domain, so no credit needed on the card.
+Images, ready in drafts/app-store-event/ in both sizes (1920x1080 card, 1080x1920 details page), Hidde picks one
+(2026-10-14, mockup.html shows them in a search result): autumn-ginkgo, autumn-hill, autumn-oak, all Unsplash
+licence (commercial use, no credit required), ids 9DMp4vE5QdU, 5fDtIbglfjI, zhaO8iXTvRs. The Pando set
+(public domain) stays as the fallback. Text is Hidde's ("Autumn is here; find ancient trees around you").
 
 ```
-Autumn colour, tree by tree
-```
-
-```
-The old trees near you at their best, this month
+Autumn is here
 ```
 
 ```
-The aspens, ginkgos and beeches on the map are changing colour now. Open it, pick one near you, and walk to it before the leaves drop.
+Find the ancient trees around you
+```
+
+```
+The old trees near you are turning gold and red. Open the map, pick one, and walk to it before the leaves fall.
 ```
