@@ -116,12 +116,17 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
 // size, so the page is laid out right before the picture arrives.
 const leadDims = photoDims(photo);
 const tall = !!(photo && photo.url && leadDims.width && leadDims.width / leadDims.height < 1.25);
+// NEVER TALLER THAN 3:4 (Hidde, 2026-10-14, on a 9:16 phone photo of the Su
+// Fundale oak: "this page doesnt seem balanced ... it looks better at the other
+// page", the 3:4 Sa Tuppa cork oak). A taller photo is cropped to 3:4 around
+// its middle, so the column keeps one proportion beside the facts.
+const tallAr = tall ? Math.max(leadDims.width / leadDims.height, 0.75) : 0;
 // The seal, empty and filled, painted by aria-pressed like the bookmark.
 const sealOff = icon("seal-check", "bold", "ic seal-off");
 const sealOn = icon("seal-check", "fill", "ic seal-on");
 ---
 <main class:list={["content-page", "td-page", { "td-tall": tall }]}
-  style={tall ? `--td-ar:${(leadDims.width / leadDims.height).toFixed(4)}` : undefined}>
+  style={tall ? `--td-ar:${tallAr.toFixed(4)}` : undefined}>
   {/* WHERE YOU ARE, a thin row, and nothing else (Hidde, 2026-09-24: the
       white bar holding share "is logical in the app because of the back
       button, not on the web"). AllTrails' trail page on mobile web, read the

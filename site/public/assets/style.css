@@ -2939,7 +2939,7 @@ div.tb-register > b { color: var(--ink); }
   .td-tall > .td-top { grid-column: 1 / -1; }
   .td-tall > .td-hero { grid-column: 1; grid-row: 2; position: sticky; top: calc(var(--header-h) + 1.25rem); }
   .td-tall > .td-grid { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; gap: 0; margin-top: 0; }
-  .td-tall .td-hero .tree-photo.tree-hero img { aspect-ratio: var(--td-ar); width: 100%; height: auto; }
+  .td-tall .td-hero .tree-photo.tree-hero img { aspect-ratio: var(--td-ar); width: 100%; height: auto; object-fit: cover; }
   .td-tall .td-body { display: contents; }
   .td-tall .td-body > * { order: 3; }
   .td-tall .td-body > .td-group { order: 1; }
