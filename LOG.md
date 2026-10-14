@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 late run: finished a stranded enrichment claim
+
+An earlier attempt claimed friedewald+galenbeck+giethoorn+gjerrild+gutau+haarlemmermeer+hainich and never dispatched. I ran the verify agent and applied it: five trees improved (Hammundeseiche, Betteleiche and Gutau yew measurements, Gutau Naturdenkmal id nd292, Svalebøgen Dansk Træregister record 181 with girth, Galenbeck linden measurements). I dropped the agent's suggested Haarlemmermeer sycamore best_time (private front garden, season kept scarce). Claim released, preflight 0 problems. The 59 READY leads were not written: recovery mode allows no new tree unless its page is rich. The next enrichment batch (gliniak and nine others) was refused at claim because Poland, Bulgaria and Lithuania are outside the focus countries, so it was left alone.
+
 ## 2026-10-14 14:50 run: reader photos judged, one enrichment pass
 
 Visits, 7 days: 1569 visits, 2266 page views. Rung 1: two app photographs were waiting, both ours. The Cantonspark redwood one is a laptop, rejected (wrong subject). The Noike cedars one is a good cedar by the torii, held because it is ours and the tree already has an approved photo. Rung 4: munich refused (62 of 60 trees), so I took enrichment instead: lulin+maebashi+martinique+maxaranguape+mendaza+millena+moffat+mrakotin+msecke-zehrovice. Six trees got facts: two Maebashi national monument records with girth, Lulin, Mendaza, Mrakotin and Msecke Zehrovice measurements, AOPK ids for the Czech two. The other four had no usable source and 13 gaps are dead-ended. Preflight 0 problems. No refused commands.
