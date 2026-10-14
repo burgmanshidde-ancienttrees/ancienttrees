@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "peesten+pelham+pemberton+perusic+pisa+polchow+poleski-national-park+prosec-pod-jestedem+przybudki+radomsko",
+    "kind": "enrich",
+    "tokens": 116000,
+    "trees": 0,
+    "note": "enrichment: Polchow Naturdenkmal 61 and DDG record with girth and height, Pelham heritage record with height, Pemberton inHerit record with height, Radomsko CRFOP id, Poleski ticket prices, Prosec USOP code; Radomsko and Przybudki measurements withheld (individual-run register, encyclopedia), Prosec Wikidata pin withheld; Peesten, Perusic, Pisa dead ends; 5 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "niedenstein+nikaho+nishio+nuenen+odawara+oguni+ono+otari-wiltons-bush+ottendorf-gaedheim+passo-manghen",
     "kind": "enrich",
     "tokens": 83000,
