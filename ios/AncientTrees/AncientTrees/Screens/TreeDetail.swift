@@ -398,11 +398,12 @@ struct TreeDetail: View {
                 // that has it ships with Xcode 26. This desk has that and the
                 // CI runner has Xcode 16.4, so the gate could not build what
                 // was written here (2026-08-26).
-                #if compiler(>=6.2)
-                if #available(iOS 26.0, *) {
-                    ToolbarSpacer(.fixed, placement: .topBarTrailing)
-                }
-                #endif
+                // NO SPACER SINCE 2026-10-14 (Hidde: "feels a lot of button
+                // space over the picture"): share and report share one glass
+                // capsule, iOS 26's own grouping, as Apple Maps and Photos
+                // draw their trailing pair. Airbnb and AllTrails keep two or
+                // three small controls over a hero; three separate circles was
+                // the heaviest of all of them.
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Button { report("Something here is wrong:") } label: {
@@ -796,7 +797,7 @@ struct TreeDetail: View {
                         // tree and answers the same question. Airbnb does this
                         // exact thing with its photo and its map.
                         Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap.toggle() } } label: {
-                            MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                            MapInset(lat: tree.lat, lng: tree.lng, side: 56).padding(10)
                         }
                         .buttonStyle(.plain)
                         .accessibilityIdentifier("tree-map-swap")
@@ -845,7 +846,7 @@ struct TreeDetail: View {
                 // branch lost an hour ago; a photograph-less tree is not a
                 // reason to throw away where somebody was reading.
                 Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap.toggle() } } label: {
-                    MapInset(lat: tree.lat, lng: tree.lng).padding(10)
+                    MapInset(lat: tree.lat, lng: tree.lng, side: 56).padding(10)
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel("Show this tree on the map")
