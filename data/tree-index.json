@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 74698,
+ "count": 74701,
  "trees": [
   {
    "id": "aac_001",
@@ -47061,6 +47061,54 @@
    "has_photo": false,
    "has_story": true,
    "sources": 1
+  },
+  {
+   "id": "sea_017",
+   "tier": "highlighted",
+   "name": "The Roanoke Park European White Elm",
+   "species": "European White Elm (Ulmus laevis)",
+   "city": "Seattle",
+   "country": "United States",
+   "lat": 47.643904,
+   "lng": -122.320573,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "sea_018",
+   "tier": "highlighted",
+   "name": "The Ross Playground Bigleaf Maple",
+   "species": "Bigleaf Maple (Acer macrophyllum)",
+   "city": "Seattle",
+   "country": "United States",
+   "lat": 47.659026,
+   "lng": -122.361795,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "sea_019",
+   "tier": "highlighted",
+   "name": "The Wallingford Playfield Pin Oak",
+   "species": "Pin Oak (Quercus palustris)",
+   "city": "Seattle",
+   "country": "United States",
+   "lat": 47.659023,
+   "lng": -122.337491,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
   },
   {
    "id": "seg_001",

@@ -217,5 +217,108 @@
     "curation_status": "flagged",
     "story": "This is the Seward Park Douglas fir you can actually find. The city records it at 125 feet tall with a trunk 70 inches across at chest height, about 18 feet round, and it stands by Lake Washington Boulevard South rather than somewhere deep in the woods.\n\nThat matters because Seward Park already has a famous fir, and this is not it. The Big Tree, the 400 to 500 year old survivor of two forest fires, stands a little over a kilometre away in the old-growth interior, in a spot nobody publishes. This one is a city Heritage Tree with a pin that marks the trunk.\n\nThe last city survey of it was in 2019, and naturalists recorded it standing on iNaturalist in April 2026. Beyond that the record is thin. Nobody has published its age, and a Douglas fir this size could be a lot of things: a big tree is not automatically an old one, and we would rather leave the number blank than borrow one from its famous neighbour.\n\nSo stand at its base and look up 125 feet, then walk into the forest knowing the Big Tree in there is taller still. If you know when this one started, or what it has seen, tell us.",
     "how_to_recognise": "You can recognise it as a Douglas fir about 125 feet tall with a trunk around 18 feet round. It stands beside Lake Washington Blvd S (city address 5898), not in the forest interior."
+  },
+  {
+    "id": "sea_017",
+    "name": "The Roanoke Park European White Elm",
+    "species": "European White Elm (Ulmus laevis)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 399,
+    "height_m": 23.2,
+    "location": {
+      "address": "Roanoke Park, 950 E Roanoke St, Seattle",
+      "latitude": 47.643904,
+      "longitude": -122.320573,
+      "neighbourhood": "Eastlake / Portage Bay"
+    },
+    "verified_sources": [
+      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521858&outFields=*&f=json",
+      "https://www.seattle.gov/parks/allparks/roanoke-park",
+      "https://www.openstreetmap.org/way/13801411"
+    ],
+    "official_register": {
+      "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-100726",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521858&outFields=*&f=json"
+    },
+    "access": "Free; Roanoke Park is a Seattle Parks and Recreation park, open 4 a.m. to 11:30 p.m. (seattle.gov park page)",
+    "transport": "Not verified; Eastlake/Capitol Hill bus and Link, stop and walk time not checked",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE 2019-08-19); Heritage flag HERITAGE=Y. DIAM 50 in and TREEHEIGHT 76 ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (2002-01-01) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2019-08-15, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register comment: 'SurfNote=HERITAGE TREE'; crown spread 76 ft (register estimate). Ulmus laevis is an unusual elm for the city; species is the register's, not independently confirmed. Roanoke Park sits about 700 m from sea_014 (Roanoke Street Lombardy Poplar) and a Babylon Weeping Willow (TRE-1047702, 30 in) stands at the mini park; a short two-tree walk.",
+    "story": "By the city's own estimate, this elm's crown is as wide as the tree is tall: 76 feet each way. It is a European white elm, Ulmus laevis, an unusual elm to find in Seattle, and the city lists it as a Heritage Tree.\n\nThose numbers come from Seattle's street-tree inventory, which also gives the trunk as 50 inches across, about 13 feet round, and the height as roughly 23 metres. That inventory is the only source we have for this tree, the species included, and the pin on our map is the city's own coordinate for the trunk. A city crew last checked it in August 2019 and recorded it in service. We found no later sighting we could tie to this tree, so 2019 is the latest firm word on it.\n\nRoanoke Park is a small neighbourhood park between Eastlake and Portage Bay, free and open from four in the morning until half past eleven at night. About 700 metres away on Roanoke Street stands a Heritage Lombardy poplar, which turns this into a short walk past two of the city's listed trees.\n\nNobody has published an age for this elm. If you know when it went in, or remember it as a smaller tree, tell us.",
+    "how_to_recognise": "You can recognise it as an elm whose crown spreads about as wide as it is tall, some 76 feet, on a trunk around 13 feet round. It stands in Roanoke Park, at the city's register point for Heritage Tree TRE-100726."
+  },
+  {
+    "id": "sea_018",
+    "name": "The Ross Playground Bigleaf Maple",
+    "species": "Bigleaf Maple (Acer macrophyllum)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 503,
+    "height_m": 28.0,
+    "location": {
+      "address": "Ross Playground, 4320 4th Ave NW, Seattle",
+      "latitude": 47.659026,
+      "longitude": -122.361795,
+      "neighbourhood": "Fremont"
+    },
+    "verified_sources": [
+      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521669&outFields=*&f=json",
+      "https://www.seattle.gov/parks/find/parks/ross-playground",
+      "https://www.openstreetmap.org/way/32526883"
+    ],
+    "official_register": {
+      "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1047729",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521669&outFields=*&f=json"
+    },
+    "access": "Free; Ross Playground is a Seattle Parks and Recreation park, open 6 a.m. to 10 p.m. (seattle.gov park page)",
+    "transport": "Not verified; bus on Leary Way / 4th Ave NW, stop and walk time not checked",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE 2019-09-03); Heritage flag HERITAGE=Y. DIAM 63 in and TREEHEIGHT 92 ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (1980-11-05) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2019-08-28, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register crown spread 99 ft (estimate). Register address 4300 4th Ave NW lies inside the OSM polygon of Ross Playground (4320 4th Ave NW). A lifecheck RECENT hit within 150 m (iNaturalist 2026-09-06) is a nearby observation, not this trunk. At 63 in diameter it is among the largest heritage maples in the register.",
+    "story": "The trunk of this bigleaf maple is 63 inches across, about 16 and a half feet round, which puts it among the largest Heritage maples in Seattle's tree inventory. The same record gives it a height of 92 feet, about 28 metres, and a crown estimated at 99 feet wide. It spreads further than it climbs.\n\nIt stands in Ross Playground, a small Fremont park on 4th Avenue NW, free and open from six in the morning until ten at night. Bigleaf maple is the native maple of this coast, and the city has listed this one as a Heritage Tree.\n\nEverything we know comes from that one place: the city's street-tree inventory, which also supplies the coordinate our pin uses, at the trunk. A city crew last checked the tree in August 2019 and recorded it in service. Naturalists have logged plants within 150 metres since then, as recently as September 2026, but none of those records is clearly this maple, so 2019 is the latest word on it we can stand behind.\n\nNobody has published an age for it either. A trunk this size invites a guess, and we would rather leave the line empty than make one. If you know how long this maple has stood over the playground, tell us.",
+    "how_to_recognise": "You can recognise it by its size: a bigleaf maple about 92 feet tall with a trunk some 16 feet round and a crown near 99 feet wide. It stands in Ross Playground on 4th Ave NW, at the city's register point."
+  },
+  {
+    "id": "sea_019",
+    "name": "The Wallingford Playfield Pin Oak",
+    "species": "Pin Oak (Quercus palustris)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 399,
+    "location": {
+      "address": "Wallingford Playfield, 4219 Wallingford Ave N, Seattle",
+      "latitude": 47.659023,
+      "longitude": -122.337491,
+      "neighbourhood": "Wallingford"
+    },
+    "verified_sources": [
+      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199641335&outFields=*&f=json",
+      "https://www.seattle.gov/parks/allparks/wallingford-playfield",
+      "https://www.openstreetmap.org/way/158265918"
+    ],
+    "official_register": {
+      "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1145024",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199641335&outFields=*&f=json"
+    },
+    "access": "Free; Wallingford Playfield is a Seattle Parks and Recreation park, open 4 a.m. to 11:30 p.m. (seattle.gov park page)",
+    "transport": "Not verified; bus on N 45th St / Wallingford Ave N, stop and walk time not checked",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE none); Heritage flag HERITAGE=Y. DIAM 50 in and TREEHEIGHT 0 (not recorded; no height given) ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (1950-01-01) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2021-09-10, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register has no height and no comment text for this tree. A pin oak of 50 in diameter is unusually large for the species; lifecheck found a RECENT iNaturalist record within the radius (2025-08-26) that may or may not be this trunk. Weakest of the three: flagged, one source.",
+    "story": "Pin oaks seldom grow a trunk this thick. This one measures 50 inches across, about 13 feet round, in Seattle's street-tree inventory, which lists it as a city Heritage Tree in Wallingford Playfield.\n\nThat inventory is the only source for it, and a thin one. It records no height and carries no notes, so we cannot tell you how tall the tree is. The pin on our map is the city's coordinate for the trunk. A city crew last confirmed it in service in September 2021. An iNaturalist record from August 2025 sits within range of the pin and may be this oak, or may be a neighbour; we cannot say which.\n\nThe record also fills in its planting field, but with a bookkeeping date rather than a planting, so it is no evidence of age, and we give none.\n\nWallingford Playfield is a neighbourhood park on Wallingford Avenue North, free and open from four in the morning until half past eleven at night. Pin oaks turn dark red to russet in autumn, which makes October and November the months to come and look for it.\n\nNobody has dated this oak or put a tape to its height. If you can do either, tell us, and we will put your figure on the page.",
+    "how_to_recognise": "You can recognise it as an oak with a trunk about 13 feet round, 50 inches across, and in autumn by leaves turning dark red to russet. It stands in Wallingford Playfield, at the city's register point.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "October into November, when a pin oak turns dark red to russet"
+    }
   }
 ]

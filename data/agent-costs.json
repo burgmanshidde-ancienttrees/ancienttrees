@@ -11433,6 +11433,22 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "seattle",
+    "kind": "write",
+    "tokens": 150000,
+    "trees": 3,
+    "note": "verify (85k) plus write (65k): SDOT Heritage register park trees sea_017 to sea_019; city copy counts updated"
+   },
+   {
+    "date": "2026-10-14",
+    "target": "san-francisco",
+    "kind": "verify",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "Public Works significant-tree list has no per-tree record, measurement or coordinate; Garfield sequoia alive unconfirmed; walled"
+   },
+   {
+    "date": "2026-10-14",
     "target": "london",
     "kind": "write",
     "tokens": 200000,
