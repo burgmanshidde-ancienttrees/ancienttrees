@@ -97,8 +97,12 @@ def foreign_staged_deletions():
 
 
 def worktree_command(name="app-work"):
-    return ("git worktree add ../ancienttrees-%s HEAD  "
-            "# then work there, and `git worktree remove` it when merged" % name)
+    # Inside .claude/worktrees, never beside the repo: a sibling folder shows
+    # up in Xcode's recent list as a second "AncientTrees" (Hidde, 2026-10-14:
+    # "stop making multiple").
+    return ("git worktree add .claude/worktrees/%s HEAD  "
+            "# then work there, never open it in the Xcode app, and "
+            "`git worktree remove` it when merged" % name)
 
 
 def stale_warning():

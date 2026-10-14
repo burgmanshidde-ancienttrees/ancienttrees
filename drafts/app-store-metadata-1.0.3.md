@@ -40,14 +40,16 @@ monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,near,map,wal
 
 Description: keep the live one. It is not indexed and it reads well.
 
-What's new in 1.0.3 (the field was empty):
+What's new in 1.0.3 (rewritten 2026-10-14):
 
 ```
-City ambassadors: every city has a seat for somebody who knows its trees, and you can ask for it on the city page.
-Discover shows the best trees in your country, the tallest, the thickest and the tree islands.
-Every card carries the tree's age and its season.
-City maps open on the city's own trees.
-Bug fixes.
+A new Discover: the season where you are, the trees at their best this month, the records and our favourite tree cities.
+Collecting is simpler: take a photograph, pick which tree it is, done.
+Add a tree we do not have yet, with a confirmation once it is saved.
+With the app open, it tells you when you stand within 50 metres of a tree you have not collected.
+Want to visit and Collected together in My trees.
+Tree pages with more photographs and the official register a tree is listed in.
+Faster scrolling and many small fixes.
 ```
 
 Promotional text (170, not indexed, editable any time):
@@ -118,11 +120,13 @@ De app is in het Engels. Een account is één e-mailadres; verwijder het en alle
 What's new:
 
 ```
-Stadsambassadeurs: elke stad heeft een plek voor iemand die de bomen kent, en je vraagt die aan op de stadspagina.
-Ontdekken toont de beste bomen in jouw land, de hoogste, de dikste en de bomeneilanden.
-Elke kaart draagt de leeftijd en het seizoen van de boom.
-Stadskaarten openen op de bomen van de stad zelf.
-Foutjes verholpen.
+Een nieuw Ontdekken: het seizoen waar jij bent, de bomen die deze maand op hun mooist zijn, de records en onze favoriete bomensteden.
+Verzamelen is eenvoudiger: maak een foto, kies welke boom het is, klaar.
+Voeg een boom toe die wij nog niet hebben, met een bevestiging zodra hij is opgeslagen.
+Met de app open hoor je het als je binnen 50 meter staat van een boom die je nog niet hebt verzameld.
+Wil ik bezoeken en Verzameld samen in Mijn bomen.
+Boompagina's met meer foto's en het officiële register waarin een boom staat.
+Sneller scrollen en veel kleine verbeteringen.
 ```
 
 Promotional text (170, not indexed, editable any time):
@@ -173,11 +177,13 @@ Die App ist auf Englisch. Ein Konto ist eine E-Mail-Adresse; löschst du es, geh
 What's new:
 
 ```
-Stadtbotschafter: jede Stadt hat einen Platz für jemanden, der ihre Bäume kennt, und du kannst ihn auf der Stadtseite anfragen.
-Entdecken zeigt die besten Bäume in deinem Land, die höchsten, die dicksten und die Bauminseln.
-Jede Karte trägt Alter und Jahreszeit des Baums.
-Stadtkarten öffnen auf den Bäumen der Stadt selbst.
-Fehlerbehebungen.
+Ein neues Entdecken: die Jahreszeit dort, wo du bist, die Bäume, die diesen Monat am schönsten sind, die Rekorde und unsere liebsten Baumstädte.
+Sammeln ist einfacher: Foto machen, den Baum auswählen, fertig.
+Füge einen Baum hinzu, den wir noch nicht haben, mit einer Bestätigung, sobald er gespeichert ist.
+Bei geöffneter App erfährst du, wenn du weniger als 50 Meter von einem Baum entfernt stehst, den du noch nicht gesammelt hast.
+Besuchen und Gesammelt zusammen in Meine Bäume.
+Baumseiten mit mehr Fotos und dem amtlichen Verzeichnis, in dem ein Baum steht.
+Schnelleres Scrollen und viele kleine Verbesserungen.
 ```
 
 Promotional text (170, not indexed, editable any time):
@@ -228,11 +234,13 @@ L'application est en anglais. Un compte, c'est une adresse e-mail ; supprimez-le
 What's new:
 
 ```
-Ambassadeurs de ville : chaque ville a une place pour quelqu'un qui connaît ses arbres, et vous pouvez la demander sur la page de la ville.
-Découvrir montre les meilleurs arbres de votre pays, les plus hauts, les plus gros et les îles aux arbres.
-Chaque carte porte l'âge et la saison de l'arbre.
-Les cartes de ville s'ouvrent sur les arbres de la ville elle-même.
-Corrections de bugs.
+Une nouvelle page Découvrir : la saison là où vous êtes, les arbres à leur plus beau ce mois-ci, les records et nos villes d'arbres préférées.
+Collectionner est plus simple : prenez une photo, choisissez l'arbre, c'est fait.
+Ajoutez un arbre que nous n'avons pas encore, avec une confirmation une fois enregistré.
+Avec l'app ouverte, elle vous prévient quand vous êtes à moins de 50 mètres d'un arbre pas encore collectionné.
+À visiter et Collectionnés réunis dans Mes arbres.
+Des pages d'arbre avec plus de photos et le registre officiel où l'arbre figure.
+Défilement plus fluide et de nombreuses petites corrections.
 ```
 
 Promotional text (170, not indexed, editable any time):
@@ -283,11 +291,13 @@ La app está en inglés. Una cuenta es una dirección de correo; bórrala y todo
 What's new:
 
 ```
-Embajadores de ciudad: cada ciudad tiene un sitio para alguien que conoce sus árboles, y puedes pedirlo en la página de la ciudad.
-Descubrir muestra los mejores árboles de tu país, los más altos, los más gruesos y las islas de árboles.
-Cada tarjeta lleva la edad y la estación del árbol.
-Los mapas de ciudad se abren sobre los árboles de la propia ciudad.
-Corrección de errores.
+Un nuevo Descubrir: la estación donde estás, los árboles en su mejor momento este mes, los récords y nuestras ciudades de árboles favoritas.
+Coleccionar es más sencillo: haz una foto, elige qué árbol es y listo.
+Añade un árbol que aún no tenemos, con una confirmación al guardarlo.
+Con la app abierta, te avisa cuando estás a menos de 50 metros de un árbol que aún no has coleccionado.
+Quiero visitar y Coleccionados juntos en Mis árboles.
+Páginas de árboles con más fotos y el registro oficial en el que figura cada árbol.
+Desplazamiento más rápido y muchas pequeñas correcciones.
 ```
 
 Promotional text (170, not indexed, editable any time):
@@ -338,11 +348,13 @@ L'app è in inglese. Un account è un indirizzo e-mail; cancellalo e tutto se ne
 What's new:
 
 ```
-Ambasciatori di città: ogni città ha un posto per chi ne conosce gli alberi, e puoi chiederlo dalla pagina della città.
-Scopri mostra i migliori alberi del tuo paese, i più alti, i più grossi e le isole degli alberi.
-Ogni scheda riporta l'età e la stagione dell'albero.
-Le mappe di città si aprono sugli alberi della città stessa.
-Correzioni di errori.
+Un nuovo Scopri: la stagione dove ti trovi, gli alberi al loro meglio questo mese, i record e le nostre città degli alberi preferite.
+Collezionare è più semplice: scatta una foto, scegli quale albero è, fatto.
+Aggiungi un albero che non abbiamo ancora, con una conferma quando è salvato.
+Con l'app aperta, ti avvisa quando sei a meno di 50 metri da un albero che non hai ancora collezionato.
+Da visitare e Collezionati insieme in I miei alberi.
+Pagine degli alberi con più foto e il registro ufficiale in cui l'albero è iscritto.
+Scorrimento più veloce e tante piccole correzioni.
 ```
 
 Promotional text (170, not indexed, editable any time):
@@ -393,11 +405,13 @@ A aplicação está em inglês. Uma conta é um endereço de e-mail; apague-a e 
 What's new:
 
 ```
-Embaixadores de cidade: cada cidade tem um lugar para quem conhece as suas árvores, e pode pedi-lo na página da cidade.
-Descobrir mostra as melhores árvores do seu país, as mais altas, as mais grossas e as ilhas de árvores.
-Cada cartão traz a idade e a estação da árvore.
-Os mapas de cidade abrem nas árvores da própria cidade.
-Correções de erros.
+Um novo Descobrir: a estação onde estás, as árvores no seu melhor este mês, os recordes e as nossas cidades de árvores favoritas.
+Colecionar é mais simples: tira uma fotografia, escolhe qual é a árvore e pronto.
+Adiciona uma árvore que ainda não temos, com uma confirmação quando fica guardada.
+Com a app aberta, avisa-te quando estás a menos de 50 metros de uma árvore que ainda não colecionaste.
+Quero visitar e Colecionadas juntas em As minhas árvores.
+Páginas de árvores com mais fotografias e o registo oficial onde a árvore consta.
+Deslocamento mais rápido e muitas pequenas correções.
 ```
 
 Promotional text (170, not indexed, editable any time):
@@ -448,11 +462,13 @@ Description:
 What's new:
 
 ```
-街のアンバサダー：どの街にも、その木をよく知る人のための席があり、街のページから申し込めます。
-「さがす」に、あなたの国の名木、最も高い木、最も太い木、木の島を追加。
-すべてのカードに樹齢と季節を表示。
-街の地図は、その街自身の木から開きます。
-不具合の修正。
+新しい「見つける」：いまいる場所の季節、今月見ごろの木、記録の木、おすすめの木の街。
+コレクションがもっと簡単に：写真を撮って、どの木か選ぶだけ。
+まだ載っていない木を追加でき、保存すると確認が表示されます。
+アプリを開いているとき、まだ集めていない木の50メートル以内に来るとお知らせします。
+「行きたい」と「集めた」を「マイツリー」にまとめました。
+木のページに写真が増え、木が登録されている公式の登録簿も表示。
+スクロールが速くなり、細かな改善も多数。
 ```
 
 Promotional text (170, not indexed, editable any time):
