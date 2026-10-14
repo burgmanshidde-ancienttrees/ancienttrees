@@ -20,44 +20,12 @@ event on the list is unaffected.
 
 **Trees readers sent, for you to inspect:** none waiting. Every tree a stranger sent has your answer.
 
-**What readers gave us, and what the night run approved, and it went live**
+**What readers gave us, and it went live**
 
-| Day | Tree | Where | What |
-|---|---|---|---|
-| 10-13 | The Great Lawn Plane of Parc Montsouris | Paris | a reader's photograph, published |
-| 10-12 | The Town Hall Plane | Baarn | a reader's photograph, published |
-| 10-12 | The Town Hall Plane | Baarn | a reader's photograph, published beside the one it had |
-| 10-12 | The Fig of La Llotja | Palma de Mallorca | a reader's photograph, published |
-| 10-12 | Mikalojaus Daukša Oak, Betygala | Plauginiai Forest | the night run approved a photograph (overrule: `photo_apply.py hold pgn_002 "https://upload.wikimedia.org/wikipedia/commons/4/4f/2-Betygalos_%C4%85%C5%BEuolas.JPG"`) |
-| 10-12 | Le Chêne des Ramolleux | Crécy-en-Ponthieu | the night run approved a photograph (overrule: `photo_apply.py hold crc_001 "https://upload.wikimedia.org/wikipedia/commons/f/f3/Ch%C3%AAne_des_Ramolleux_for%C3%AAt_de_Cr%C3%A9cy.JPG"`) |
-| 10-12 | Ilguva Oak | Raudonė | the night run approved a photograph (overrule: `photo_apply.py hold rdn_003 "https://upload.wikimedia.org/wikipedia/commons/d/dc/Ilguva%2C_%C4%85%C5%BEuolas.JPG"`) |
-| 10-12 | Jonichiji no Icho | Himi | the night run approved a photograph (overrule: `photo_apply.py hold him_002 "https://upload.wikimedia.org/wikipedia/commons/e/ef/Ginkgo_at_Jyonichiji_temple.JPG"`) |
-| 10-12 | The Lodewijkslinde of Vorden | Vorden | the night run approved a photograph (overrule: `photo_apply.py hold vrd_001 "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lodewijkslinde_bij_Kasteel_Vorden.jpg"`) |
-| 10-12 | Tilleul des Lognards | Xhoris | the night run approved a photograph (overrule: `photo_apply.py hold xho_001 "https://upload.wikimedia.org/wikipedia/commons/6/63/Xhoris-tilleul_des_Lognards_%281%29.jpg"`) |
-| 10-12 | The Oak of the Virgin at Rannée | Rannée | the night run approved a photograph (overrule: `photo_apply.py hold ran_001 "https://upload.wikimedia.org/wikipedia/commons/f/f3/Rann%C3%A9e_%2835%29_Ch%C3%AAne_%C3%A0_la_Vierge.jpg"`) |
-| 10-12 | King Cypress | Nyingchi | the night run approved a photograph (overrule: `photo_apply.py hold nyi_001 "https://upload.wikimedia.org/wikipedia/commons/8/86/Cupressus_gigantea_Bajie.jpg"`) |
-| 10-12 | Pagryniai Oak | Žalgiriai | the night run approved a photograph (overrule: `photo_apply.py hold zal_002 "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG"`) |
-| 10-12 | Aizen Katsura | Ueda | the night run approved a photograph (overrule: `photo_apply.py hold bsh_001 "https://upload.wikimedia.org/wikipedia/commons/d/d6/Aizenkatsura_Tree.jpg"`) |
-| 10-12 | Horner Linde | Horn-Lehe | the night run approved a photograph (overrule: `photo_apply.py hold hrn_001 "https://upload.wikimedia.org/wikipedia/commons/4/4a/Horner_Kirche_-_Linde_jh.jpg"`) |
-| 10-13 | Dorpslinde van Massemen | Ghent | the night run approved a photograph (overrule: `photo_apply.py hold gnt_007 "https://upload.wikimedia.org/wikipedia/commons/a/a1/2017_The_Village_Lime_Tree_of_Massemen_BE.jpg"`) |
-| 10-12 | The Pine of Veľké Borové | Veľké Borové | the night run approved a photograph (overrule: `photo_apply.py hold vbo_001 "https://upload.wikimedia.org/wikipedia/commons/c/c5/Strom_roka_borovica_velke_borove_01.jpg"`) |
-| 10-12 | The Kneeling Tree (Klekace Drzewo) | Krasnystaw | the night run approved a photograph (overrule: `photo_apply.py hold krs_001 "https://upload.wikimedia.org/wikipedia/commons/0/0f/2019_Kneeling_tree_PL.jpg"`) |
-| 10-12 | The Gerichtslinde of Zehdenick | Zehdenick | the night run approved a photograph (overrule: `photo_apply.py hold zeh_001 "https://upload.wikimedia.org/wikipedia/commons/7/78/Gerichtslinde_Zehdenick.JPG"`) |
-| 10-12 | Gaurė Oak | Pagramantis Regional Park | the night run approved a photograph (overrule: `photo_apply.py hold pgm_005 "https://upload.wikimedia.org/wikipedia/commons/2/25/Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG"`) |
-| 10-13 | The Chinquapins of Dogata | Kanazawa | the night run approved a photograph (overrule: `photo_apply.py hold kan_001 "https://upload.wikimedia.org/wikipedia/commons/0/01/Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG"`) |
-| 10-12 | The Service Tree of Uzovská Panica | Uzovská Panica | the night run approved a photograph (overrule: `photo_apply.py hold uzp_001 "https://upload.wikimedia.org/wikipedia/commons/5/57/2020_Sorb_Tree_near_Uzovsk%C3%A1_Panica_SK.jpg"`) |
-| 10-12 | The Turenne Lime | Fontaine | the night run approved a photograph (overrule: `photo_apply.py hold fte_001 "https://upload.wikimedia.org/wikipedia/commons/5/56/Tilleul_Turenne_%C3%A0_Fontaine_2008_1.jpg"`) |
-| 10-12 | Tarumi-no-Ozakura | Yabu | the night run approved a photograph (overrule: `photo_apply.py hold yab_001 "https://upload.wikimedia.org/wikipedia/commons/b/bb/A_big_cherry_tree_at_Tarumi_village_-_panoramio.jpg"`) |
-| 10-12 | Nento Hiramatsu | Iheya | the night run approved a photograph (overrule: `photo_apply.py hold ihy_001 "https://upload.wikimedia.org/wikipedia/commons/a/a4/Nento-Hiramatsu_Pine_Tree_202603_03.jpg"`) |
-| 10-13 | The Linden of Linn | Zurich | the night run approved a photograph (overrule: `photo_apply.py hold boz_001 "https://upload.wikimedia.org/wikipedia/commons/d/d5/Linde_von_Linn_%28AG%2C_Schweiz%29%2C_M%C3%A4rz_2014.JPG"`) |
-| 10-12 | Chene de Venon | Venon | the night run approved a photograph (overrule: `photo_apply.py hold vno_001 "https://upload.wikimedia.org/wikipedia/commons/6/67/Le_majestueux_ch%C3%AAne_de_Venon.jpg"`) |
-| 10-12 | The Opatovice Pine | Velke Opatovice | the night run approved a photograph (overrule: `photo_apply.py hold vop_001 "https://upload.wikimedia.org/wikipedia/commons/a/ae/Opatovick%C3%A1_borovice.JPG"`) |
-| 10-12 | The Oak of Erentrudishof | Salzburg | the night run approved a photograph (overrule: `photo_apply.py hold szb_002 "https://upload.wikimedia.org/wikipedia/commons/9/94/00019_Eiche_am_Erentrudishof%2C_Stift_Nonnberg.jpg"`) |
-| 10-12 | The Courtyard Oak of Aigner Straße | Salzburg | the night run approved a photograph (overrule: `photo_apply.py hold szb_011 "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eiche_an_der_Aigner_Strasse_9_%281%29.JPG"`) |
-| 10-12 | The Tassilolinde | Wessobrunn | the night run approved a photograph (overrule: `photo_apply.py hold wes_001 "https://upload.wikimedia.org/wikipedia/commons/a/ab/Tassilolinde_Wessobrunn_1.jpg"`) |
-| 10-12 | Gupčeva lipa | Gornja Stubica | the night run approved a photograph (overrule: `photo_apply.py hold gst_001 "https://upload.wikimedia.org/wikipedia/commons/b/b8/2019_Gubec_linden_HR.jpg"`) |
-| 10-12 | The Wodanseiken | Wolfheze | the night run approved a photograph (overrule: `photo_apply.py hold wlf_001 "https://upload.wikimedia.org/wikipedia/commons/2/24/20191007_WolfhezeWodanseiken_02.jpg"`) |
-| 10-13 | The Antakalnis Swiss Pine | Vilnius | the night run approved a photograph (overrule: `photo_apply.py hold vln_014 "https://upload.wikimedia.org/wikipedia/commons/1/1a/Antakalnis%2C_kedrin%C4%97_pu%C5%A1is.JPG"`) |
+| Day | Tree | Where | What | Page |
+|---|---|---|---|---|
+| 10-13 | The Great Lawn Plane of Parc Montsouris | Paris | a reader's photograph, published | [live](https://ancienttrees.app/paris/great-lawn-plane-of-parc-montsouris) |
+| 10-12 | The Fig of La Llotja | Palma de Mallorca | a reader's photograph, published | [live](https://ancienttrees.app/palma-de-mallorca/fig-of-la-llotja) |
 
 **Did the product happen**
 
@@ -126,7 +94,6 @@ event on the list is unaffected.
 | 10-13 | 1 | 0 | 0 | 0 | 2 | 0 |
 | 10-14 | 0 | 0 | 0 | 0 | 0 | 0 |
 | **14 days** | **9** | **1** | **1** | **2** | **6** | **0** |
-- Our own rows are not in this table: 60 trees, 58 feedback, 3 accounts. They are testing, and counting them reads as traction.
 
 | Ambassadors | Yesterday | 14 days | Total |
 |---|---:|---:|---:|
@@ -142,43 +109,15 @@ event on the list is unaffected.
 
 | Day | Tree | What | Note | From | Outcome |
 |---|---|---|---|---|---|
-| 10-01 | 74066D89-9958-4D93-BFDC-1C78ED97EE | tree sent in | - | us | - |
-| 10-01 | E36A052C-3A48-4EED-BA48-5AB48574FA | tree sent in | - | us | - |
 | 10-01 | lis_030 (The Dragon Tree of Quinta | worth it | - | 08aa | holds |
 | 10-01 | par_031 (The Horse Chestnut of Squ | worth it | - | cfe8 | holds |
 | 10-01 | par_033 (The Turkey Oak of Square  | worth it | - | cfe8 | holds |
-| 10-02 | par_031 (The Horse Chestnut of Squ | worth it | - | us | - |
-| 10-02 | lis_030 (The Dragon Tree of Quinta | worth it | - | us | - |
-| 10-02 | 59E829E3-784F-4302-A98E-2C40D1BE88 | tree sent in | - | us | - |
-| 10-04 | 6151F7E2-9211-4C2B-8CE8-E1BF17DAA3 | tree sent in | - | us | - |
 | 10-04 | 8F4E7266-CC24-46B3-9A6D-5E8A94BBA1 | tree sent in | - | cfe8 | open_question |
-| 10-05 | Reykjavik | ambassador request | - | us | - |
-| 10-05 | rey_001 (The Whitebeam of Víkurgar | worth it | - | us | - |
-| 10-05 | Barcelona | ambassador request | - | us | - |
 | 10-05 | D9C08351-03D1-4B51-A6EC-972F08D308 | tree sent in | 648 chars, read it in the database | cfe8 | changed |
-| 10-06 | Tokyo | ambassador request | - | us | - |
-| 10-06 | 7C8BEC8F-B77B-415C-B4EC-A1589130C4 | tree sent in | - | us | - |
-| 10-06 | A4FA2700-1D89-4BF7-8F6E-0EAFA60DC4 | tree sent in | - | us | - |
-| 10-06 | AE06E952-7DE0-46AB-AADA-AF2BE3D5C8 | tree sent in | - | us | - |
-| 10-06 | D0D4EE1D-A0C3-4C4F-966F-EE01F7ECB5 | tree sent in | - | us | - |
-| 10-06 | 038AB20E-98E0-4335-B154-08263B4949 | tree sent in | - | us | - |
-| 10-06 | Verona | ambassador request | - | us | - |
-| 10-07 | Rome | ambassador request | - | us | - |
 | 10-08 | The Judas Tree of the Real Alcázar | correction sent in | 92 chars, read it in the database | eed7 | open_question |
-| 10-09 | Amsterdam | ambassador request | - | us | - |
-| 10-09 | Paris | ambassador request | - | us | - |
-| 10-09 | Berlin | ambassador request | - | us | - |
-| 10-10 | Baarn | ambassador request | - | us | - |
-| 10-11 | - | Test | - | us | - |
-| 10-11 | brn_008 (The Town Hall Plane) | worth it | - | us | - |
-| 10-11 | brn_008 (The Town Hall Plane) | worth it | - | us | - |
-| 10-12 | 452E8EFB-4537-4FC4-BE23-ABFCE3F959 | tree sent in | - | us | - |
-| 10-12 | 0F8D03E1-CE4A-4BC6-8ACC-719C43E443 | correction sent in | 102 chars, read it in the database | us | - |
-| 10-12 | Berlin | ambassador request | - | us | - |
 | 10-13 | sev_009 (The Fig of the Glorieta d | worth it | - | c922 | - |
 | 10-13 | - | Location not working on iOS, permi | - | c922 | - |
 
-- 27 of these 35 rows are ours, marked us. The rest is the reader traffic.
 - 8 rows from 4 accounts.
 
 **The funnel, as rates**
@@ -201,13 +140,12 @@ event on the list is unaffected.
 | sync_failed | 0 | 0 | 0 | never |
 | **all** | **28** | **414** | **2037** | |
 - Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
-- Ours is not in this table: 22 install(s), 1000 events, the testing before the app went live on 2026-09-03 and every install built by Xcode since (the app says how it was built with each event). An App Store copy on our own phone is the one kind this cannot see.
 - 83 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
 - Yesterday came from 2 installs, and the busiest made 27 of 2 events (1350%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
 - Tabs opened (14d): Discover 15; My trees 12; Map 5
 - Active phones: 2 in the last day, 24 in the last 7 days, 57 in the last 30 days.
 - Coming back: 24 of those 57 phones opened the app on more than one day (42%).
-- Trees opened by the most phones (14d): The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Cedro de Runa (Runa) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Arenbergpark Plane (Leuven) 2; The Olive Trees of Santo Amaro (Lisbon) 2
+- Trees opened by the most phones (14d): The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Olive Trees of Santo Amaro (Lisbon) 2; The Arenbergpark Plane (Leuven) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Cedro de Runa (Runa) 2
 - Where the phones are (30d): United States 13; United Kingdom 7; Portugal 5; Italy 4; The Netherlands 4; Spain 3
 - Trees recorded (14d): a tree we map 18; a tree we do not 2
   A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
@@ -313,7 +251,7 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 10-11 | 53 | 2 | 3.8% | - | - |
 | **7 days** | **550** | **18** | **3.3%** | **641** | **2293** |
 - Week before: 87 impressions, 6 clicks; in index then: 2106. No Bing demotion in sight.
-- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); french trees found in paris (c1/i2, p6); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1)
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3)
 - Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
 
 **Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
@@ -755,7 +693,7 @@ Backlinks (watched pages):
 | 10-14T03:09 | 93.3 | -1 | 49 | 0 | Aberford, Aizuwakamatsu, Alishan, Ancient Bristlecone Pine Forest, +79 more |
 | **8 runs** | **379** | **0** | **201** | | |
 
-- 5 of 8 produced no trees; 3 to 9 commands refused per run; last build that went live: 0h ago.
+- 5 of 8 produced no trees; 3 to 9 commands refused per run; last build that went live: 1h ago.
 
 **What they made**
 
@@ -773,6 +711,41 @@ Backlinks (watched pages):
 - Lukavice, Macon, Malacky, Maria Aurora, Martinsville, Melykut enrich pass; Lukavice oak species corrected; cost and LOG
 - Kozy, Le Guerno, Lebec, Longlou, Lozorno, Luis Correia enrich pass; Lebec and Longlou access corrected; cost and LOG
 - Guaiba, Guernica, Haarlemmermeer, Iida, Innimond, Jericoacoara enrich pass; sycamore species fix; cost and LOG
+
+**Photographs the night run approved** (30; the last column undoes one)
+
+| Day | Tree | Where | Overrule |
+|---|---|---|---|
+| 10-12 | Le Chêne des Ramolleux | Crécy-en-Ponthieu | `photo_apply.py hold crc_001 "https://upload.wikimedia.org/wikipedia/commons/f/f3/Ch%C3%AAne_des_Ramolleux_for%C3%AAt_de_Cr%C3%A9cy.JPG"` |
+| 10-12 | The Turenne Lime | Fontaine | `photo_apply.py hold fte_001 "https://upload.wikimedia.org/wikipedia/commons/5/56/Tilleul_Turenne_%C3%A0_Fontaine_2008_1.jpg"` |
+| 10-13 | Dorpslinde van Massemen | Ghent | `photo_apply.py hold gnt_007 "https://upload.wikimedia.org/wikipedia/commons/a/a1/2017_The_Village_Lime_Tree_of_Massemen_BE.jpg"` |
+| 10-12 | Gupčeva lipa | Gornja Stubica | `photo_apply.py hold gst_001 "https://upload.wikimedia.org/wikipedia/commons/b/b8/2019_Gubec_linden_HR.jpg"` |
+| 10-12 | Jonichiji no Icho | Himi | `photo_apply.py hold him_002 "https://upload.wikimedia.org/wikipedia/commons/e/ef/Ginkgo_at_Jyonichiji_temple.JPG"` |
+| 10-12 | Horner Linde | Horn-Lehe | `photo_apply.py hold hrn_001 "https://upload.wikimedia.org/wikipedia/commons/4/4a/Horner_Kirche_-_Linde_jh.jpg"` |
+| 10-12 | Nento Hiramatsu | Iheya | `photo_apply.py hold ihy_001 "https://upload.wikimedia.org/wikipedia/commons/a/a4/Nento-Hiramatsu_Pine_Tree_202603_03.jpg"` |
+| 10-13 | The Chinquapins of Dogata | Kanazawa | `photo_apply.py hold kan_001 "https://upload.wikimedia.org/wikipedia/commons/0/01/Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG"` |
+| 10-12 | The Kneeling Tree (Klekace Drzewo) | Krasnystaw | `photo_apply.py hold krs_001 "https://upload.wikimedia.org/wikipedia/commons/0/0f/2019_Kneeling_tree_PL.jpg"` |
+| 10-12 | King Cypress | Nyingchi | `photo_apply.py hold nyi_001 "https://upload.wikimedia.org/wikipedia/commons/8/86/Cupressus_gigantea_Bajie.jpg"` |
+| 10-12 | Gaurė Oak | Pagramantis Regional Park | `photo_apply.py hold pgm_005 "https://upload.wikimedia.org/wikipedia/commons/2/25/Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG"` |
+| 10-12 | Mikalojaus Daukša Oak, Betygala | Plauginiai Forest | `photo_apply.py hold pgn_002 "https://upload.wikimedia.org/wikipedia/commons/4/4f/2-Betygalos_%C4%85%C5%BEuolas.JPG"` |
+| 10-12 | The Oak of the Virgin at Rannée | Rannée | `photo_apply.py hold ran_001 "https://upload.wikimedia.org/wikipedia/commons/f/f3/Rann%C3%A9e_%2835%29_Ch%C3%AAne_%C3%A0_la_Vierge.jpg"` |
+| 10-12 | Ilguva Oak | Raudonė | `photo_apply.py hold rdn_003 "https://upload.wikimedia.org/wikipedia/commons/d/dc/Ilguva%2C_%C4%85%C5%BEuolas.JPG"` |
+| 10-12 | The Oak of Erentrudishof | Salzburg | `photo_apply.py hold szb_002 "https://upload.wikimedia.org/wikipedia/commons/9/94/00019_Eiche_am_Erentrudishof%2C_Stift_Nonnberg.jpg"` |
+| 10-12 | The Courtyard Oak of Aigner Straße | Salzburg | `photo_apply.py hold szb_011 "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eiche_an_der_Aigner_Strasse_9_%281%29.JPG"` |
+| 10-12 | Aizen Katsura | Ueda | `photo_apply.py hold bsh_001 "https://upload.wikimedia.org/wikipedia/commons/d/d6/Aizenkatsura_Tree.jpg"` |
+| 10-12 | The Service Tree of Uzovská Panica | Uzovská Panica | `photo_apply.py hold uzp_001 "https://upload.wikimedia.org/wikipedia/commons/5/57/2020_Sorb_Tree_near_Uzovsk%C3%A1_Panica_SK.jpg"` |
+| 10-12 | The Pine of Veľké Borové | Veľké Borové | `photo_apply.py hold vbo_001 "https://upload.wikimedia.org/wikipedia/commons/c/c5/Strom_roka_borovica_velke_borove_01.jpg"` |
+| 10-12 | The Opatovice Pine | Velke Opatovice | `photo_apply.py hold vop_001 "https://upload.wikimedia.org/wikipedia/commons/a/ae/Opatovick%C3%A1_borovice.JPG"` |
+| 10-12 | Chene de Venon | Venon | `photo_apply.py hold vno_001 "https://upload.wikimedia.org/wikipedia/commons/6/67/Le_majestueux_ch%C3%AAne_de_Venon.jpg"` |
+| 10-13 | The Antakalnis Swiss Pine | Vilnius | `photo_apply.py hold vln_014 "https://upload.wikimedia.org/wikipedia/commons/1/1a/Antakalnis%2C_kedrin%C4%97_pu%C5%A1is.JPG"` |
+| 10-12 | The Lodewijkslinde of Vorden | Vorden | `photo_apply.py hold vrd_001 "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lodewijkslinde_bij_Kasteel_Vorden.jpg"` |
+| 10-12 | The Tassilolinde | Wessobrunn | `photo_apply.py hold wes_001 "https://upload.wikimedia.org/wikipedia/commons/a/ab/Tassilolinde_Wessobrunn_1.jpg"` |
+| 10-12 | The Wodanseiken | Wolfheze | `photo_apply.py hold wlf_001 "https://upload.wikimedia.org/wikipedia/commons/2/24/20191007_WolfhezeWodanseiken_02.jpg"` |
+| 10-12 | Tilleul des Lognards | Xhoris | `photo_apply.py hold xho_001 "https://upload.wikimedia.org/wikipedia/commons/6/63/Xhoris-tilleul_des_Lognards_%281%29.jpg"` |
+| 10-12 | Tarumi-no-Ozakura | Yabu | `photo_apply.py hold yab_001 "https://upload.wikimedia.org/wikipedia/commons/b/bb/A_big_cherry_tree_at_Tarumi_village_-_panoramio.jpg"` |
+| 10-12 | Pagryniai Oak | Žalgiriai | `photo_apply.py hold zal_002 "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG"` |
+| 10-12 | The Gerichtslinde of Zehdenick | Zehdenick | `photo_apply.py hold zeh_001 "https://upload.wikimedia.org/wikipedia/commons/7/78/Gerichtslinde_Zehdenick.JPG"` |
+| 10-13 | The Linden of Linn | Zurich | `photo_apply.py hold boz_001 "https://upload.wikimedia.org/wikipedia/commons/d/d5/Linde_von_Linn_%28AG%2C_Schweiz%29%2C_M%C3%A4rz_2014.JPG"` |
 
 Machine: 8 chain attempts yesterday, 8 got real work time (~316 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
