@@ -27,6 +27,7 @@ import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { submitLink } from "../lib/tree-copy";
+import { SPONSOR_URL } from "../lib/site-config";
 
 const canonical = `${BASE_URL}/about`;
 const crumbItems: [string, string | null][] = [["Home", BASE_URL], ["About", null]];
@@ -57,6 +58,7 @@ const graph = [
       <p>I'm not an expert, but I am a fan, and I hope to share this passion with others and make it easier for people to experience trees like these and simply enjoy them, the way I do.</p>
       <p>The site isn't perfect, and it needs your help to get better. Every tree page has a button to tell me what's wrong or to add your photo, and you can <a href={submitLink("tree")}>send me a tree I'm missing</a>. And if you know the old trees of your city well, you can become its ambassador.</p>
       <p>The photo is me at a huge Japanese cedar I found recently, on our trip while testing the app. I work on the app every day to make it better. For questions, feedback or anything else, mail me at <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+      {SPONSOR_URL ? <p class="maker-sponsor"><a class="go-btn" href="/sponsor" data-ev="about-sponsor">Sponsor this project</a></p> : null}
     </div>
   </section>
   <div class="prose-block">
@@ -72,6 +74,7 @@ const graph = [
   .maker img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 14px; display: block; }
   .maker-words { grid-column: 1; grid-row: 1; }
   .maker-words h2 { margin-top: 0; }
+  .maker-sponsor { margin-top: 20px; }
   @media (max-width: 760px) {
     .maker { grid-template-columns: minmax(0, 1fr); gap: 16px; }
     .maker figure, .maker-words { grid-column: 1; grid-row: auto; }

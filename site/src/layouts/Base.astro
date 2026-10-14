@@ -242,14 +242,13 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         )}
         <p class="nav-group only-mobile">{t.takePart}</p>
         <a href="/contribute" class="nav-aside"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>{t.suggestTree}</a>
-        {/* Directly under it and in the same shape (Hidde, 2026-08-26). The two
-            belong together: they are the two ways somebody who likes this can
-            do something about it, one with a tree and one with money. */}
-        {/* A FILLED heart, and gold, because Saved trees two rows up is an
-            outline heart and two identical glyphs in one list is a list you
-            have to read twice. Giving and keeping are drawn apart the way
-            GitHub Sponsors and Patreon draw them apart. */}
-        {SPONSOR_URL ? <a href="/sponsor" class="nav-aside"><span class="mi mi-gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg></span>{t.sponsor}</a> : null}
+        {/* About took Sponsor's place here on 2026-10-14 (Hidde: "replace sponsor
+            this project in the menu bar with about? and put a short sponsor this
+            project button underneath"). The About page now carries his own story,
+            and the sponsor ask moved onto it, under that story, where a reader
+            has just met the person they would be supporting (The Marginalian
+            does the same). Sponsor stays in the footer. */}
+        <a href="/about" class="nav-aside"><span class="mi"><Fragment set:html={icon("user-circle")} /></span>{t.about}</a>
       </div>
     </details>
     {/* What is YOURS hangs off the account, not off Explore (Hidde,
