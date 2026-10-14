@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "neuenrade+oberndorf-bei-salzburg+princeton-new-jersey+ramsau-am-dachstein+raudone+rimov",
+    "kind": "enrich",
+    "tokens": 105000,
+    "trees": 0,
+    "note": "enrichment: Neuenrade lime Naturdenkmal 226/057 with girth 620 and height 18 (Baumkunde.de, a finding aid, repeated by the de.wikipedia list) and June season; Raudone lime saugoma.lt record; Rimov lime DrUSOP 103273, 50 m church site, June season; Oberndorf, Mercer Oak, Ramsau dead ends; 11 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "lukavice+macon+malacky+maria-aurora+martinsville-new-jersey+melykut",
     "kind": "enrich",
     "tokens": 91000,
