@@ -98,8 +98,14 @@ struct TreeDetail: View {
     /// caption rather than a fact about the tree.
     @State private var geocodedPlace: String?
     @State private var confirmingDiscard = false
-    /// "Tree saved", for the second and a half after Save (DoneHUD.swift).
-    @State private var done: String?
+    /// The name of the tree just saved, while its confirmation sheet shows.
+    /// It was a "Tree saved" HUD for a second and a half (DoneHUD.swift), over
+    /// a page that barely changes, and Hidde did not see a confirmation at all
+    /// (2026-10-14: "you then come on almost exactly the same page which should
+    /// have some confirmation in between"). Now the same moment collecting one
+    /// of ours gets: CollectSheet's "You found" sheet, icon, title, one line,
+    /// Done, and you are on your tree.
+    @State private var savedName: String?
     @State private var extraCamera = false
     @State private var photoCamera = false
     @State private var photoLibrary = false
@@ -118,7 +124,7 @@ struct TreeDetail: View {
 
     private func saveDraft() {
         guard let m = live, let s = sightings.commit(m.id) else { return }
-        done = "Tree saved"
+        savedName = s.name
         let city = catalogue.nearest(to: s.lat, s.lng, limit: 1, withinKm: 30).first?.tree.city
         Task { await Submission.offer(s, city: city, account: account, sightings: sightings) }
     }
@@ -476,7 +482,17 @@ struct TreeDetail: View {
                 }
             }
         }
-        .doneHUD($done)
+        .sheet(isPresented: Binding(get: { savedName != nil }, set: { if !$0 { savedName = nil } })) {
+            BrandSheet(
+                icon: "checkmark.seal.fill",
+                // The name under the title, not in it: a tree not yet named
+                // is "A tree in Amsterdam", and "You added A tree in
+                // Amsterdam" reads wrong. No "with your photograph": a tree
+                // can be saved without one.
+                title: "Added to your trees",
+                message: savedName,
+                buttons: [.primary("Done", id: "saved-done") { savedName = nil }])
+        }
         .fullScreenCover(isPresented: $showingPhoto) {
             if let p = tree.photo {
                 PhotoViewer(photo: p, photos: tree.shots, startAt: photoAt,

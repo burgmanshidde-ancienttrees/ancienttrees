@@ -167,6 +167,8 @@ final class FlowWalk: XCTestCase {
                 Step(name: "try-to-leave") { Self.tap($0, "draft-back") },
                 Step(name: "keep-editing") { Self.tap($0, "Keep editing") },
                 Step(name: "save-it") { Self.tap($0, "draft-save") },
+                // The confirmation in between (2026-10-14), then the page.
+                Step(name: "confirmed") { Self.tap($0, "saved-done") },
             ]),
 
             // The honest exit, and the one that must never lose a photograph.
