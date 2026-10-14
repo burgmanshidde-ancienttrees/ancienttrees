@@ -64,9 +64,13 @@ SHOTS = [
     # "you need a ticket" is the wrong promise on the second panel of a store
     # listing. This one is free, outdoors, and the sea is behind it.
     ("2-tree", ["-tab=0", "-open=tree:cad_001", "-at=36.5366,-6.3010"], 7),
-    ("3-city", ["-tab=0", "-open=city:lisbon"], 8),
+    # Barcelona, not Lisbon, since 2026-10-14: Lisbon's page names its
+    # ambassador, and a real person's name has no place in an advert (Hidde:
+    # "dont show a real name"). Barcelona has no ambassador and is photographed.
+    ("3-city", ["-tab=0", "-open=city:barcelona"], 8),
     ("4-discover", ["-tab=1"], 6),
-    ("5-my-trees", ["-tab=2", "-signed-in", "-as=Hidde",
+    ("5-my-trees", ["-tab=2", "-signed-in", "-as=Alex",   # a made-up name, never a real one (2026-10-14)
+                   
                     "-collected=cad_001,cad_002,cad_003",
                     "-at=36.5366,-6.3010"], 7),
     # The one panel that shows what a person DOES rather than what we hold, and

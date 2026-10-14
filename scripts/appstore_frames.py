@@ -29,13 +29,16 @@ Usage:
     python3 scripts/appstore_frames.py    # this, into out/appstore/framed/
 """
 
+import os
 import pathlib
 import sys
 
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-RAW = ROOT / "out" / "appstore"
+# A folder per release (out/appstore-103 for 1.0.3), because the old raw
+# files could not be overwritten in place (2026-10-14).
+RAW = pathlib.Path(os.environ.get("APPSTORE_RAW", ROOT / "out" / "appstore"))
 OUT = RAW / "framed"
 FONTS = ROOT / "ios" / "AncientTrees" / "AncientTrees" / "Fonts"
 
@@ -102,11 +105,15 @@ HERO_SOURCE = "https://images.unsplash.com/photo-1689706085462-93ccce26c411?q=85
 # because the two are set in different weights and the bold half has to make
 # sense alone. That is AllTrails' shape, "Vind routes" over "die je inspireren".
 PANELS = [
+    # 1.0.3 ORDER (Hidde, 2026-10-14), benchmarked on AllTrails, komoot and
+    # PictureThis that morning: promise, the core act, why it is special,
+    # what you do yourself, then the browsing and the rest. The map leads
+    # because "it knows where I am and shows me a tree nearby" is the product.
     ("1-map", "Find remarkable old trees\nwherever you are"),
-    ("3-city", "See every old tree\nin a city"),
     ("2-tree", "Read what makes it\nworth the walk"),
-    ("4-discover", "Browse by city,\ncountry or species"),
     ("5-my-trees", "Collect the trees\nyou have stood in front of"),
+    ("4-discover", "See which trees are\nat their best this month"),
+    ("3-city", "See every old tree\nin a city"),
     ("6-add", "Add a tree\nnobody has mapped yet"),
 ]
 
