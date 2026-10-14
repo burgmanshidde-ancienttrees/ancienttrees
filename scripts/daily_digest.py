@@ -1605,29 +1605,26 @@ def searched_for(rows, days=14):
     somebody standing on our own site went looking for, which includes
     everything we do not have. A term with no result is a request.
     """
+    # YESTERDAY, IN ONE SENTENCE (Hidde, 2026-10-14: "what people typed in
+    # search can just be what they typed yesterday in 1 sentence"). It was a
+    # 14-day table of half-typed prefixes; the day is what he reads.
     terms = {}
-    cutoff = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
+    yday = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
     for r in rows or []:
         if not str(r.get("name", "")).startswith("search-"):
             continue
-        if str(r.get("created_at"))[:10] < cutoff:
+        if str(r.get("created_at"))[:10] != yday:
             continue
         t = (r.get("detail") or "").strip().lower()
         if not t:
             continue
         terms[t] = terms.get(t, 0) + 1
     if not terms:
-        return ["", "**What people typed into our search** (%d days)" % days, "",
-                "- nothing recorded. Either nobody searched, or the detail is "
-                "not arriving: check one row in the events table before "
-                "concluding the first."]
+        return ["", "**Searched yesterday:** nothing."]
     ranked = sorted(terms.items(), key=lambda kv: (-kv[1], kv[0]))[:20]
-    out = ["", "**What people typed into our search** (%d days, %d searches, "
-           "%d different terms)" % (days, sum(terms.values()), len(terms)), "",
-           "| Typed | Times |", "|---|---:|"]
-    for t, n in ranked:
-        out.append("| %s | %d |" % (t.replace("|", "/")[:48], n))
-    return out
+    said = ", ".join("%s%s" % (t.replace("|", "/")[:48], " (%d times)" % n if n > 1 else "")
+                     for t, n in ranked)
+    return ["", "**Searched yesterday:** %s." % said]
 
 
 def ambassador_lines(today):
@@ -1644,7 +1641,7 @@ def ambassador_lines(today):
             doc = json.load(fh)
     except Exception:
         return []
-    since14 = (today - datetime.timedelta(days=14)).isoformat()
+    since14 = (today - datetime.timedelta(days=7)).isoformat()
     yday = (today - datetime.timedelta(days=1)).isoformat()
     amb = doc.get("ambassadors") or []
 
@@ -1656,7 +1653,7 @@ def ambassador_lines(today):
     linked = [e for e in amb if e.get("linked_user_id") and (e.get("linked_on") or "") >= since14]
     invited = [i for i in (doc.get("invited") or []) if (i.get("date") or "") >= since14 and i.get("place_slug") != "*"]
     asked = [r for r in (doc.get("requested") or []) if (r.get("date") or "") >= since14]
-    out = ["", "| Ambassadors | Yesterday | 14 days | Total |", "|---|---:|---:|---:|",
+    out = ["", "| Ambassadors | Yesterday | 7 days | Total |", "|---|---:|---:|---:|",
            "| Granted | %d | %d | %d |" % (len(new_y), len(new), len(amb)),
            "| Invitations sent (app contributors) | %d | %d | %d |" % (
                sum(1 for i in invited if (i.get("date") or "") >= yday), len(invited),
@@ -1665,9 +1662,9 @@ def ambassador_lines(today):
                sum(1 for r in asked if (r.get("date") or "") >= yday), len(asked),
                sum(1 for r in (doc.get("requested") or []) if r.get("date")))]
     if new:
-        out.append("- New in 14 days: " + ", ".join("%s since %s" % (who(e), e.get("since")) for e in new) + ".")
+        out.append("- New in 7 days: " + ", ".join("%s since %s" % (who(e), e.get("since")) for e in new) + ".")
     else:
-        out.append("- No new ambassador in 14 days; %d in all (%s)." % (
+        out.append("- No new ambassador in 7 days; %d in all (%s)." % (
             len(amb), ", ".join(e.get("place_name") or "?" for e in amb)))
     if linked:
         out.append("- Signed in with their mail address, badge now in the app: " + ", ".join(who(e) for e in linked) + ".")
@@ -1739,14 +1736,14 @@ def product_section(today):
         # thing is MADE of, so a number on the page had no composition behind
         # it. Three windows side by side answer it at a glance, and the total
         # is the one that says which actions the product actually consists of.
-        fortnight = (today - datetime.timedelta(days=14)).isoformat()
+        fortnight = (today - datetime.timedelta(days=7)).isoformat()
         c14, total = {}, {}
         for r in rows:
             n = r.get("name") or "?"
             total[n] = total.get(n, 0) + 1
             if str(r.get("created_at"))[:10] >= fortnight:
                 c14[n] = c14.get(n, 0) + 1
-        out += ["", "| Action | Yesterday | 14 days | Ever | Last |",
+        out += ["", "| Action | Yesterday | 7 days | Ever | Last |",
                 "|---|---:|---:|---:|---|"]
         for name in sorted(last, key=lambda k: (-total.get(k, 0), -counts.get(k, 0), k)):
             out.append("| %s | %d | %d | %d | %s |" % (
@@ -1774,7 +1771,7 @@ def product_section(today):
     # feedback, correction, privacy) is a reaction. Both are people, only one
     # is supply, and "Submissions: 3" made them indistinguishable.
     try:
-        since = today - datetime.timedelta(days=14)
+        since = today - datetime.timedelta(days=7)
         series = {}
 
         def bump(day_, label_):
@@ -1828,7 +1825,7 @@ def product_section(today):
                 ours_n["accounts"] += 1
                 continue
             bump(str(u.get("created_at"))[:10], "accounts")
-        days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(15)]
+        days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(8)]
         if any(series.get(d) for d in days_):
             out.append("")
             out.append("| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback | Ambassador asks |")
@@ -1841,11 +1838,11 @@ def product_section(today):
                     v.get("ambassador", 0)))
             tot = {k: sum(v.get(k, 0) for d, v in series.items() if d in days_)
                    for k in ("accounts", "waitlist", "saves", "trees", "feedback", "ambassador")}
-            out.append("| **14 days** | **%d** | **%d** | **%d** | **%d** | **%d** | **%d** |" % (
+            out.append("| **7 days** | **%d** | **%d** | **%d** | **%d** | **%d** | **%d** |" % (
                 tot["accounts"], tot["waitlist"], tot["saves"],
                 tot["trees"], tot["feedback"], tot["ambassador"]))
         else:
-            out.append("- Nothing signed up, saved a tree or was submitted in 14 days.")
+            out.append("- Nothing signed up, saved a tree or was submitted in 7 days.")
         out.extend(ambassador_lines(today))
         # A submission with NO account is not a person we can answer, it is
         # proof that the database still accepts anonymous posts (Hidde,
@@ -1859,7 +1856,7 @@ def product_section(today):
                       and r.get("id") not in TEST_SUBMISSION_IDS
                       and r.get("city") != "sqlcheck anon probe"]
         if no_account:
-            out.append("- **The postbox is open:** %d submission(s) in 14 days arrived with no "
+            out.append("- **The postbox is open:** %d submission(s) in 7 days arrived with no "
                        "account (%s). Paste supabase/postbox-needs-an-account.sql; until then "
                        "every sign-in gate on the site and in the app is JavaScript."
                        % (len(no_account), ", ".join(sorted({"%s %s" % (r.get("kind"), r.get("city") or "")
@@ -2162,7 +2159,7 @@ def feedback_section(today):
     key = os.environ.get("SUPABASE_SERVICE_KEY")
     if not key:
         return None
-    since = (today - datetime.timedelta(days=14)).isoformat()
+    since = (today - datetime.timedelta(days=7)).isoformat()
     try:
         rows, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,why,"
                         "user_id,outcome&created_at=gte.%sT00:00:00&order=created_at.asc" % since, key)
@@ -2183,7 +2180,7 @@ def feedback_section(today):
             return "us"
         return hashlib.sha1(str(uid).encode()).hexdigest()[:4]
 
-    out = ["**What readers told us** (14 days, structure only; the words stay in the database)",
+    out = ["**What readers told us** (7 days, structure only; the words stay in the database)",
            "", "| Day | Tree | What | Note | From | Outcome |", "|---|---|---|---|---|---|"]
     per_acct = {}
     for r in rows:
@@ -2259,9 +2256,9 @@ def funnel_section(today, cf_token):
             r = q([], 1, {"startDate": (today - datetime.timedelta(days=d0)).isoformat(),
                           "endDate": (today - datetime.timedelta(days=d1)).isoformat()})
             return (r[0]["clicks"], r[0]["impressions"]) if r else (0, 0)
-        c1, i1 = window(14, 0)
-        c0, i0 = window(28, 14)
-        rows.append("- Seen to clicked: %.1f%% (%d of %d) vs %.1f%% the fortnight before"
+        c1, i1 = window(7, 0)
+        c0, i0 = window(14, 7)
+        rows.append("- Seen to clicked: %.1f%% (%d of %d) vs %.1f%% the week before"
                     % (rate(c1, i1), c1, i1, rate(c0, i0)))
     if cf_token:
         try:
@@ -2945,7 +2942,7 @@ def app_section(today):
         """
         SELECT event,
                countIf(toDate(timestamp) = toDate('%s')) AS yday,
-               countIf(timestamp >= now() - INTERVAL 14 DAY) AS d14,
+               countIf(timestamp >= now() - INTERVAL 7 DAY) AS d14,
                count() AS ever,
                max(timestamp) AS last
         FROM events
@@ -2957,7 +2954,7 @@ def app_section(today):
     seen = {r[0]: r for r in rows}
     order = [e for e in known] + [e for e in seen if e not in known]
     out.append("")
-    out.append("| What | Yesterday | 14 days | Ever | Last |")
+    out.append("| What | Yesterday | 7 days | Ever | Last |")
     out.append("|---|---:|---:|---:|---|")
     totals = [0, 0, 0]
     for name in order:
@@ -2976,7 +2973,7 @@ def app_section(today):
     phones = _posthog(
         """
         SELECT count(DISTINCT distinct_id),
-               countIf(timestamp >= now() - INTERVAL 14 DAY)
+               countIf(timestamp >= now() - INTERVAL 7 DAY)
         FROM events
         %s
         """ % where, key, project)
@@ -3042,11 +3039,11 @@ def app_section(today):
         """
         SELECT properties.tab, count()
         FROM events
-        WHERE event = 'tab' AND timestamp >= now() - INTERVAL 14 DAY %s
+        WHERE event = 'tab' AND timestamp >= now() - INTERVAL 7 DAY %s
         GROUP BY 1 ORDER BY 2 DESC
         """ % and_ours, key, project)
     if tabs:
-        out.append("- Tabs opened (14d): " + "; ".join(
+        out.append("- Tabs opened (7d): " + "; ".join(
             "%s %d" % (t[0] or "?", int(t[1])) for t in tabs))
 
     # THE PLAIN PICTURE (Hidde, 2026-10-10: "how many active users do we
@@ -3083,7 +3080,7 @@ def app_section(today):
             SELECT properties.tree, count(), uniq(distinct_id)
             FROM events
             WHERE event = 'tree_opened' AND properties.tree != 'own'
-                  AND timestamp >= now() - INTERVAL 14 DAY %s
+                  AND timestamp >= now() - INTERVAL 7 DAY %s
             GROUP BY 1 ORDER BY 3 DESC, 2 DESC LIMIT 5
             """ % and_ours, key, project)
         if top:
@@ -3095,7 +3092,7 @@ def app_section(today):
                     continue
                 for t in c.get("trees", []):
                     tnames[t.get("id")] = "%s (%s)" % (t.get("name"), c.get("city"))
-            out.append("- Trees opened by the most phones (14d): " + "; ".join(
+            out.append("- Trees opened by the most phones (7d): " + "; ".join(
                 "%s %d" % (tnames.get(r[0], r[0] or "?"), int(r[2])) for r in top))
         pay = _posthog(
             """
@@ -3140,12 +3137,12 @@ def app_section(today):
         SELECT properties.known_tree, count()
         FROM events
         WHERE event = 'sighting_recorded'
-              AND timestamp >= now() - INTERVAL 14 DAY %s
+              AND timestamp >= now() - INTERVAL 7 DAY %s
         GROUP BY 1 ORDER BY 2 DESC
         """ % and_ours, key, project)
     if kinds:
         say = {"yes": "a tree we map", "no": "a tree we do not"}
-        out.append("- Trees recorded (14d): " + "; ".join(
+        out.append("- Trees recorded (7d): " + "; ".join(
             "%s %d" % (say.get(str(k[0]), "unsaid"), int(k[1])) for k in kinds))
         out.append("  A sighting reaches our database only through an account. "
                    "Signed out it stays on the phone, so this count can run "
@@ -3163,7 +3160,7 @@ def app_section(today):
                properties.build, properties.signed_in
         FROM events
         WHERE event = 'tree_visited'
-              AND timestamp >= now() - INTERVAL 14 DAY %s
+              AND timestamp >= now() - INTERVAL 7 DAY %s
         ORDER BY timestamp DESC
         """ % and_ours, key, project)
     if ticks:
@@ -3176,7 +3173,7 @@ def app_section(today):
             for t in c.get("trees", []):
                 names[t.get("id")] = (t.get("name"), c.get("city"))
         out.append("")
-        out.append("**Trees collected in the app** (14 days, a person standing at the tree)")
+        out.append("**Trees collected in the app** (7 days, a person standing at the tree)")
         out.append("")
         out.append("| Day | Tree | Where | Install | Build | Signed in |")
         out.append("|---|---|---|---|---|---|")
@@ -3276,7 +3273,7 @@ def app_store_downloads_lines():
         sys.path.insert(0, os.path.dirname(__file__))
         from asc_downloads import (download_rows, split_by_type,
                                    split_by_source, source_lines)
-        rows, note = download_rows(days=14)
+        rows, note = download_rows(days=7)
         split = split_by_type(rows)
         totals = {d: sum(v.values()) for d, v in split.items()}
     except Exception as e:
@@ -3314,7 +3311,7 @@ def app_store_downloads_lines():
     src = source_lines(sources, territories)
     if src:
         out.append("")
-        out.append("**Where the downloads came from** (14 days, Apple's attribution)")
+        out.append("**Where the downloads came from** (7 days, Apple's attribution)")
         out.extend(src)
     return out
 
