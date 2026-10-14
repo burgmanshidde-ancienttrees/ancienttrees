@@ -23,6 +23,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Enrichment, 8 of 10 trees:** Gliniak (Wszebora) register id and measurements, Grybiskes saugoma.lt record, Higashine kunishitei record, Himmelsberg Naturdenkmalbuch number, girth and height for Granit, Hel, Hino and Hniszow. Higashiomi and Horn-Lehe stayed dead ends (5 gaps recorded for 90 days).
 - **Enrichment, second batch, 5 of 10 trees:** Lipka linden (AOPK 8409, girth and height), Agency for Cultural Affairs records for Kagoji, Renchakuji and Itoshiro, Kuningamand register id. Jauze, Junihon-yasu and Boole Tree stayed dead ends.
 - **Enrichment, third batch, 5 of 10 trees:** AOPK records for Kotel and Lazy (Lazy with girth and height), Kitamoto and Kitakata records (Kitakata with girth and height), Ksiaz CRFOP id (second-hand, labelled so). I withheld the Kremnica girth: it came from a Tree of the Year nomination, not a register, and the height of measurement is unstated.
+- **Enrichment, fourth batch, 4 of 10 trees:** Miharu, Maibara and Lohja authority pages (heights), Magescq commune page (girth at 1.3 m and height). Open question for a session: the Lohja city page puts its tree in the Paavola school yard, while our access line says nature reserve and trail; the two descriptions differ and are not reconciled.
 - Species note: roo_015 reads "American Lime (Tilia americana 'Nova')" while Chicago and Minneapolis say American Basswood. Rule 9 says one common name; worth aligning on a later pass.
 
 ## 2026-10-14 session: app 1.0.3 (build 34) submitted to Apple

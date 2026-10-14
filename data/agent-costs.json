@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "lipany+lo+lodz+lohja+lue+machov+magescq+maibara+matsumae+miharu",
+    "kind": "enrich",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "enrichment: Miharu, Maibara and Lohja authority pages with heights, Magescq commune page with girth at 1.3 m and height; girths taken at other heights left out; Lipany, Lo, Lodz, Lue, Machov, Matsumae dead ends; 7 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "kintai+kitakata+kitamoto+kotel+krasnystaw+kremnica+ksiaz+lazy-cheb+leliceni+linderhof",
     "kind": "enrich",
     "tokens": 91000,
