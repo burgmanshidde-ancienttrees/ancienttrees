@@ -53,6 +53,9 @@ const RENAMED_CITY_SLUGS: [string, string][] = [
   // trees dead, which left two, below the four-tree floor. Den Bosch is the
   // nearest published city, 18 km west.
   ["oss", "den-bosch"],
+  // 2026-10-14: the Witch's Spruce, the only tree on the page, is reported dead
+  // (bark beetle, 2024). Silale is the nearest published place in Lithuania.
+  ["rambynas", "silale"],
 ];
 
 // A tree that gets renamed keeps its old URL resolving.
@@ -191,6 +194,8 @@ const CROSS_CITY_MERGED_TREE_SLUGS: [string, string, string, string][] = [
 // rather than a cleanup: check_register_says_the_tree_is_gone() in
 // scripts/preflight.py now fails on any published tree citing a status-5 row.
 const REMOVED_TREE_SLUGS: [string, string][] = [
+  // 2026-10-14, scripts/retire.py: Dead: killed by spruce bark beetle in 2024, specialists found it completely dried out (15m
+  ["rambynas", "witchs-spruce"],
   // 2026-10-14, scripts/retire.py: Duplicate of spa_001: the same Figueira das Lagrimas on Estrada das Lagrimas; fdl_001's pi
   ["sao-paulo", "figueira-das-lagrimas"],
   // 2026-10-13, scripts/retire.py: Generalitat de Catalunya monumental-tree fitxa (pi-de-bofarull, updated 2021-03-29) record
