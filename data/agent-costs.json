@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "lukavice+macon+malacky+maria-aurora+martinsville-new-jersey+melykut",
+    "kind": "enrich",
+    "tokens": 91000,
+    "trees": 0,
+    "note": "enrichment: Lukavice oak DRUSOP 101608 (girth 710, height 31, species corrected to pedunculate oak from the record) and Zamrsk lime group record 101136; Macon lime Walloon exceptional heritage code and June best_time; Malacky oak girth and height from Ekopolis; Melykut Judas tree church-hill site; Maria Aurora and Martinsville dead ends; 12 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "kozy+le-guerno+lebec+longlou+lozorno+luis-correia",
     "kind": "enrich",
     "tokens": 91000,

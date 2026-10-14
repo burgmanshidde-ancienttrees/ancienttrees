@@ -55,7 +55,8 @@
       "verified_sources": [
         "https://index.hu/belfold/2020/10/15/ev_faja_fa_melykut_judasfa/",
         "https://qubit.hu/2021/02/01/derekasan-kuzd-az-europai-ev-faja-cimert-a-melykuti-judasfa",
-        "https://www.treeoftheyear.org/"
+        "https://www.treeoftheyear.org/",
+        "https://okotars.hu/en/node/1130 (planted on the north side of the church on the church hill; European Tree of the Year entry GPS 46°12'57.18\" N, 19°22'47.29\" E matches our pin)"
       ],
       "access": "Free; on the publicly accessible church grounds in the town centre, a popular place to rest and play.",
       "transport": "Centre of Mélykút; on foot from the town centre.",
@@ -67,7 +68,11 @@
       },
       "photos": [],
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Church hill, north side of the Grassalkovich church, Mélykút",
+        "radius_m": 50.0
+      }
     }
   ]
 }

@@ -26,7 +26,7 @@
     {
       "id": "luk_001",
       "name": "Lukavický dub (Dub na Hrádku / Dub u Lukavické tvrze)",
-      "species": "Oak (Quercus sp.)",
+      "species": "Pedunculate Oak (Quercus robur)",
       "age_estimate": "nearly 800 years",
       "age_min": 700,
       "age_max": 850,
@@ -39,7 +39,10 @@
       },
       "verified_sources": [
         "https://ct24.ceskatelevize.cz/clanek/domaci/stromem-roku-je-pamatny-lukavicky-dub-354616",
-        "https://www.stromroku.cz/vylety/lukavicky-dub"
+        "https://www.stromroku.cz/vylety/lukavicky-dub",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/brow.php?SHOW_ONE=1&ID=8408",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/brow.php?SHOW_ONE=1&ID=8408 (register record: Obvod 710 cm, Výška 31,0 m; note: in the north-west of the village on open ground, probably the former courtyard of the Lukavice fortress; protected since 1990-12-01)",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=8408"
       ],
       "access": "Free, on open community ground at the former fortress site",
       "transport": "Village of Lukavice, Chrudim District",
@@ -49,7 +52,7 @@
         "type": "own_place",
         "place": "Lukavice, Czech Republic"
       },
-      "story": "Somebody once tried to kill this oak with a shovel. Before the First World War the management of the Auersberg estate had dozens of cartloads of soil stripped away from around its roots, which is a slow and deniable way to finish a tree. It is still standing, and in 2024 the country voted it Czech Tree of the Year.\n\nIt grows on the open ground of the Hrádek at Lukavice, the site of a fortress belonging to the local nobility, and it stood in that courtyard while the courtyard was still a courtyard. The trunk is more than seven metres round and the tree is 31 metres tall. Its age is estimated at nearly 800 years, which would put its first seasons somewhere in the thirteenth century; that is an estimate rather than a count, and the honest band around it is wide.\n\nEight centuries of standing still has turned it into a habitat rather than a tree. It carries its own fungi, beetles and bats, most of which need wood that has been dead for a long time inside a tree that is still alive. It has been legally protected since 1990.\n\nThe sources call it dub, oak, and go no further. If you can tell a pedunculate from a sessile by the acorn stalks, tell us which this is.",
+      "story": "Somebody once tried to kill this oak with a shovel. Before the First World War the management of the Auersberg estate had dozens of cartloads of soil stripped away from around its roots, which is a slow and deniable way to finish a tree. It is still standing, and in 2024 the country voted it Czech Tree of the Year.\n\nIt grows on the open ground of the Hrádek at Lukavice, the site of a fortress belonging to the local nobility, and it stood in that courtyard while the courtyard was still a courtyard. The trunk is more than seven metres round and the tree is 31 metres tall. Its age is estimated at nearly 800 years, which would put its first seasons somewhere in the thirteenth century; that is an estimate rather than a count, and the honest band around it is wide.\n\nEight centuries of standing still has turned it into a habitat rather than a tree. It carries its own fungi, beetles and bats, most of which need wood that has been dead for a long time inside a tree that is still alive. It has been legally protected since 1990.\n\nThe Czech nature conservation register names it dub letní, the summer oak, which is the pedunculate oak.",
       "best_time": {
         "months": [
           1,
@@ -71,7 +74,12 @@
         "source_name": "Dub u Lukavické tvrze",
         "qid": "Q26787120",
         "views": 10
-      }
+      },
+      "official_register": {
+        "name": "Ústřední seznam ochrany přírody (AOPK ČR, DRUSOP): památný strom Dub letní, kód 101608",
+        "url": "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=8408"
+      },
+      "height_m": 31
     },
     {
       "id": "luk_002",
@@ -89,7 +97,9 @@
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Pam%C3%A1tn%C3%A1_l%C3%ADpa_v_Z%C3%A1mrsku",
         "https://www.turistika.cz/mista/sestikmenna-lipa-v-zamrsku/detail",
-        "https://pardubice.rozhlas.cz/sestikmenna-lipa-v-zamrsku-borovice-ve-snakove-a-buk-v-koclirove-6086496"
+        "https://pardubice.rozhlas.cz/sestikmenna-lipa-v-zamrsku-borovice-ve-snakove-a-buk-v-koclirove-6086496",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/brow.php?SHOW_ONE=1&ID=7936",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=7936"
       ],
       "access": "Free, in the public castle park at Zamrsk, which also houses the regional state archive (Statni oblastni archiv) and serves as a recreation area for visitors. Reached via the blue-marked hiking trail from the Dobrikov u Chocne or Vysoke Myto train stations.",
       "transport": "Nearest station Dobrikov u Chocne or Vysoke Myto, then the blue-marked hiking trail into the castle park.",
@@ -117,6 +127,10 @@
         "source_name": "Šestikmenná lípa v Zámrsku",
         "qid": "Q130748527",
         "views": 6
+      },
+      "official_register": {
+        "name": "Ústřední seznam ochrany přírody (AOPK ČR, DRUSOP): Skupina stromů v zámeckém parku, kód 101136 (group record, the six-stemmed lime is named in its note)",
+        "url": "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?SHOW_ONE=1&ID=7936"
       }
     }
   ]
