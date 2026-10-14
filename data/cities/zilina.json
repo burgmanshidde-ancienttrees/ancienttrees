@@ -40,7 +40,8 @@
       },
       "verified_sources": [
         "https://www.naspark.sk/sk/park/55-budatinsky-park",
-        "http://web.archive.org/web/20251111045234/https://spravy.pravda.sk/domace/clanok/409140-strom-roka-rastie-v-budatinskom-parku/"
+        "http://web.archive.org/web/20251111045234/https://spravy.pravda.sk/domace/clanok/409140-strom-roka-rastie-v-budatinskom-parku/",
+        "https://www.naspark.sk/sk/park/55-budatinsky-park (Zilina city parks page: trunk girth 603 cm, age 270 years); height 27 m from the 2016 Strom roka results, spravy.pravda.sk (web.archive.org copy)"
       ],
       "access": "Free, standing in Budatín Park (Budatínsky park) beside Budatín Castle, an open public park at the confluence of the Kysuca and Váh rivers.",
       "transport": "Žilina; Budatín Park is a short walk or local bus ride from Žilina railway station.",
@@ -71,7 +72,9 @@
       },
       "verified_sources": [
         "https://www.npmalafatra.sk (2022-05 arborist care article on these two lindens)",
-        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku"
+        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku",
+        "https://sk.wikipedia.org/wiki/Lipy_v_%C5%BDiline",
+        "https://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/187"
       ],
       "access": "Free, standing beside Kysucká cesta, a public street in Žilina, no ticket or booking needed.",
       "transport": "Žilina; a short walk or local bus ride from Žilina railway station, about 400m from the Budatín Park plane tree.",
@@ -103,7 +106,12 @@
         "source_name": "Lipy v Žiline",
         "qid": "Q121362394",
         "views": 5
-      }
+      },
+      "official_register": {
+        "name": "Chranene stromy SR (Statna ochrana prirody SR), S 187 Lipy v Ziline, no. S 187",
+        "url": "https://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/187"
+      },
+      "girth_cm": 504
     },
     {
       "id": "zil_003",
@@ -117,7 +125,9 @@
       },
       "verified_sources": [
         "data/registers/slovakia-chranene-stromy.json (register_id 188, publishable true)",
-        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku"
+        "https://sk.wikipedia.org/wiki/Zoznam_chr%C3%A1nen%C3%BDch_stromov_na_Slovensku",
+        "https://sk.wikipedia.org/wiki/Javor_v_%C5%BDiline",
+        "https://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/188"
       ],
       "access": "Free, standing beside Sokolovská ulica, a public street in Žilina, no ticket or booking needed.",
       "transport": "Žilina; a short walk or local bus ride from Žilina railway station, about 1.5km from the Budatín Park plane tree.",
@@ -141,7 +151,13 @@
         "source_name": "Javor v Žiline",
         "qid": "Q121362489",
         "views": 3
-      }
+      },
+      "official_register": {
+        "name": "Chranene stromy SR (Statna ochrana prirody SR), S 188 Javor v Ziline, no. S 188",
+        "url": "https://data.sopsr.sk/chranene-objekty/chranene-stromy/detail/188"
+      },
+      "girth_cm": 333,
+      "height_m": 22
     }
   ]
 }

@@ -22,6 +22,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Rouen, São Paulo, Tamba, Wrocław: four Wielka Wyspa oaks got newer girth and height (przyrodniczo.pl survey; the older register figure stays in measure_source, 1.30 m assumed), the Kashiwara zelkova got its city page and height. **Published error fixed:** São Paulo listed the Figueira das Lágrimas twice (spa_001 and fdl_001, the latter pinned 3 km from the tree); fdl_001 is retired to leads with a redirect, the city now has one tree and its intro already said so. 15 gaps dead-ended. Preflight 0 problems.
 
+- Žilina, Český Krumlov, Chikubushima, Dengfeng, Fort Lauderdale: 12 trees enriched. Žilina's lindens and maple got their Slovak register ids (S 187, S 188; figures via sk.wikipedia because the register pages need JavaScript; the maple's register names it sugar maple but gives the Latin for silver maple, open). Two Krumlov lindens got a June flowering season and the monastery garden its ticket prices and October tour days. Four Fort Lauderdale trees got their Florida Champion Tree Register ids. Dengfeng had only a news article, nothing taken. 9 gaps dead-ended. Preflight 0 problems.
+
 ## 2026-10-14 night run, 00:24 window
 
 - Visits last 7 days: 1,491. Rung 1 empty. Rung 2: iOS scheduled run failed on one test, `testEveryFlowLeavesAWayBack` (tap on "person-follow" button found no match); needs a simulator session, not fixable from this runner. Smoke "skipped" is the push-trigger default.

@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "zilina+cesky-krumlov+chikubushima+dengfeng+fort-lauderdale",
+    "kind": "enrich",
+    "tokens": 119000,
+    "trees": 0,
+    "note": "enrichment: Zilina register entries S 187 and S 188 (ids and figures via sk.wikipedia, sopsr.sk pages are JavaScript-rendered), Budatin plane girth and height; Krumlov linden June best_time and monastery access prices; four Florida Champion Tree Register records; Chikubushima access only; Dengfeng nothing (news article only); 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "rouen+sao-paulo+tamba+wroclaw",
     "kind": "enrich",
     "tokens": 87000,

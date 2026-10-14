@@ -66,7 +66,14 @@
         "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 103092",
         "url": null
       },
-      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103092 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103092 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "scented pale yellow flowers in June, early for a lime and loud with bees",
+        "kind": "flowers"
+      }
     },
     {
       "id": "ckr_002",
@@ -85,7 +92,8 @@
       "verified_sources": [
         "https://www.klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy",
         "https://cs.wikipedia.org/wiki/L%C3%ADpy_ve_Zlat%C3%A9_Korun%C4%9B",
-        "czech-aopk-pamatne-stromy.json, no. 103091"
+        "czech-aopk-pamatne-stromy.json, no. 103091",
+        "https://www.klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy (monastery page: almost 30 m tall, about 400 years)"
       ],
       "access": "Inside Zlata Koruna monastery, a paid national heritage site (from about 180 Kc, discounts available, closed Mondays; roughly 09:00-15:30 April-May, 09:00-16:30 June-August).",
       "transport": "Zlatá Koruna train station (line České Budějovice-Český Krumlov-Černý Kříž) then a roughly 15-20 minute walk downhill; about 8km / 20-25 minutes by car or bike from Český Krumlov's old town.",
@@ -104,7 +112,15 @@
         "name": "Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody), no. 103091",
         "url": null
       },
-      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103091 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Památné stromy (AOPK ČR, Ústřední seznam ochrany přírody) no. 103091 (data/registers/czech-aopk-pamatne-stromy.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",
+      "height_m": 30,
+      "best_time": {
+        "months": [
+          6
+        ],
+        "label": "scented pale yellow flowers in June, early for a lime and loud with bees",
+        "kind": "flowers"
+      }
     },
     {
       "id": "ckr_003",
@@ -123,9 +139,10 @@
       "verified_sources": [
         "https://www.klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy",
         "AOPK CR national pamatny strom (memorial tree) register, entry supplied with coordinates in the city brief",
-        "czech-aopk-pamatne-stromy.json, no. 106314"
+        "czech-aopk-pamatne-stromy.json, no. 106314",
+        "https://www.klaster-zlatakoruna.cz/cs/informace-pro-navstevniky/prohlidkove-okruhy"
       ],
-      "access": "Inside Zlata Koruna monastery's garden, on the guided tour route; same paid admission as the Kapucinka Linden.",
+      "access": "Inside the Zlata Koruna monastery garden, reached on the guided Sacred Route (about 40 minutes, 180 CZK adults, 140 reduced, 50 children 6-17, under 6 free). October 2026 tours run Saturday and Sunday 9:00-15:00; other months differ, check the monastery site.",
       "transport": "Zlatá Koruna train station (line České Budějovice-Český Krumlov-Černý Kříž) then a roughly 15-20 minute walk downhill; about 8km / 20-25 minutes by car or bike from Český Krumlov's old town.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -172,9 +189,10 @@
       "verified_sources": [
         "https://www.klaster-zlatakoruna.cz/cs/o-klastere/pamatne-stromy",
         "https://cs.wikipedia.org/wiki/L%C3%ADpy_ve_Zlat%C3%A9_Korun%C4%9B",
-        "czech-aopk-pamatne-stromy.json, no. 106315"
+        "czech-aopk-pamatne-stromy.json, no. 106315",
+        "https://www.klaster-zlatakoruna.cz/cs/informace-pro-navstevniky/vstupne"
       ],
-      "access": "Inside or right at the edge of Zlata Koruna monastery, by the pond near the entrance gate; treat as part of the paid tour route.",
+      "access": "Stands in front of the gate to the vivarium pond at Zlata Koruna monastery. The site does not say whether this spot can be seen without a ticket; the guided tours cost 180 CZK adults, 140 reduced, 50 children 6-17, under 6 free (October 2026: Saturday and Sunday 9:00-15:00).",
       "transport": "Zlatá Koruna train station (line České Budějovice-Český Krumlov-Černý Kříž) then a roughly 15-20 minute walk downhill; about 8km / 20-25 minutes by car or bike from Český Krumlov's old town.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
