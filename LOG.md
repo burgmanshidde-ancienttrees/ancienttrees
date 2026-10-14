@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: Prague's Google numbers are mostly ours
+
+Nothing changed in the product. The digest showed /prague at 294 impressions, position 5.6, 0 clicks, which looked like the one city Google still shows. `seo_diagnose.py` now takes `SC_PATH` (workflow input `path`) for one place close up; run for /prague (28 days):
+- The biggest query is `site:ancienttrees.app prague` (19 impressions on each of 8 pages): someone checking our index, not a reader. The rest are operator searches (`+"oldest" "pear" "on record" "park"`), which is what a research agent types.
+- 117 of the impressions are Dutch mobile, 60 Japanese mobile, 33 US desktop. Hidde's phone, from home and from Japan, fits that exactly.
+- So Prague is not escaping the demotion; it is the city we look at ourselves. The 8 real clicks to /prague came before 09-28. The Google floor across the site is the true reading.
+- Follow-up, not done: the digest should drop `site:` and operator queries (and their impressions) before any city reaches "Depth is allowed" or "proven" on Google's word.
+
 ## 2026-10-14 session: the iOS 18 floor is green again
 
 - Fixed: the scheduled iOS app check failed twice on 10-13 on the iOS 18 iPhone SE (FlowWalk could not find Follow in Find people; on the earlier run SignedOutWalk got no sign-in sheet). Cause: screens that tests open with a launch argument (Find people, Contribute, Feedback, Edit profile, Sign out, Species) asked iOS for their sheet on the very first frame, and a busy machine drops that request silently. Reproduced on the Mac under CPU load (failed on try 13 of 40); now raised once the screen is up and asked again if dropped (Kit/LaunchSheet.swift): 40 of 40 under the same load. No effect for readers: these arguments exist only for tests and screenshots.
