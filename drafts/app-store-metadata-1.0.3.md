@@ -560,5 +560,5 @@ Find the ancient trees around you
 ```
 
 ```
-The old trees near you are turning gold and red. Open the map, pick one, and walk to it before the leaves fall.
+Discover shows which old trees near you are at their best this month. Pick one and walk to it before the leaves fall.
 ```
