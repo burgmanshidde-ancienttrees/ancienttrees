@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "bracon+braga+braziukai+brielow+calvos+canicosa-de-la-sierra+casta+chapel-hill-north-carolina+chishang+cieletniki",
+    "kind": "enrich",
+    "tokens": 49000,
+    "trees": 0,
+    "note": "enrichment: Braziukai, Brielow, Casta (SOP SR S 456), Cieletniki, Canicosa girth and height; Bracon, Chapel Hill, Chishang searched without result; 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "atami+aubers+bad-staffelstein+baldenhain+bansko+bargischow+bedomin+boetersheim+bohunovice+bonnerue",
     "kind": "enrich",
     "tokens": 56000,
