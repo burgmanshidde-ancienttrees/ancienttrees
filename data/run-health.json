@@ -2,24 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-23T18:36:57+00:00",
-   "date": "2026-08-23",
-   "run_id": "32658589011",
-   "minutes": 63.6,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 441,
-   "denials": 30,
-   "denials_source": "permission_denials: Bash(cd), Bash(command), Bash(curl), Bash(echo), Bash(for), Bash(gh), Bash(git), Bash(grep), Bash(if), Bash(mkdir), Bash(pdftotext), Bash(python3), Bash(rm), Bash(timeout), Bash(until)",
-   "ended": "success",
-   "tokens": 146792535,
-   "claims_held": [],
-   "commits": 28,
-   "cities_touched": 10,
-   "trees": 17,
-   "logged": true
-  },
-  {
    "started": "2026-08-23T20:29:24+00:00",
    "date": "2026-08-23",
    "run_id": "32664551774",
@@ -22862,6 +22844,360 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-14T03:09:14+00:00",
+   "date": "2026-10-14",
+   "run_id": "38504723201",
+   "minutes": 93.3,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 654,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 158586,
+   "claims_held": [
+    "indianapolis+iwata+kasukabe+kawago+kawatana+kawazu"
+   ],
+   "commits": 49,
+   "cities_touched": 83,
+   "cities": [
+    {
+     "city": "aberford",
+     "trees": 0
+    },
+    {
+     "city": "aizuwakamatsu",
+     "trees": 0
+    },
+    {
+     "city": "alishan",
+     "trees": 0
+    },
+    {
+     "city": "ancient-bristlecone-pine-forest",
+     "trees": 0
+    },
+    {
+     "city": "azeitao",
+     "trees": 0
+    },
+    {
+     "city": "bad-blumau",
+     "trees": 0
+    },
+    {
+     "city": "borculo",
+     "trees": 0
+    },
+    {
+     "city": "breukelen",
+     "trees": 0
+    },
+    {
+     "city": "brzoza",
+     "trees": 0
+    },
+    {
+     "city": "bulat-pestivien",
+     "trees": 0
+    },
+    {
+     "city": "busan",
+     "trees": 0
+    },
+    {
+     "city": "cabeza-del-buey",
+     "trees": 0
+    },
+    {
+     "city": "cajvana",
+     "trees": 0
+    },
+    {
+     "city": "canberra",
+     "trees": 0
+    },
+    {
+     "city": "ceska-lipa",
+     "trees": 0
+    },
+    {
+     "city": "cesky-krumlov",
+     "trees": 0
+    },
+    {
+     "city": "chatenay-malabry",
+     "trees": 0
+    },
+    {
+     "city": "chikubushima",
+     "trees": 0
+    },
+    {
+     "city": "collm",
+     "trees": 0
+    },
+    {
+     "city": "cooper-creek",
+     "trees": 0
+    },
+    {
+     "city": "daruvar",
+     "trees": 0
+    },
+    {
+     "city": "deblin",
+     "trees": 0
+    },
+    {
+     "city": "eraul",
+     "trees": 0
+    },
+    {
+     "city": "erdmannrode",
+     "trees": 0
+    },
+    {
+     "city": "flinders-ranges",
+     "trees": 0
+    },
+    {
+     "city": "fontenay-abbey",
+     "trees": 0
+    },
+    {
+     "city": "fort-lauderdale",
+     "trees": 0
+    },
+    {
+     "city": "fortaleza",
+     "trees": 0
+    },
+    {
+     "city": "frydlant",
+     "trees": 0
+    },
+    {
+     "city": "fujikawaguchiko",
+     "trees": 0
+    },
+    {
+     "city": "garmen",
+     "trees": 0
+    },
+    {
+     "city": "ghisonaccia",
+     "trees": 0
+    },
+    {
+     "city": "giessen",
+     "trees": 0
+    },
+    {
+     "city": "gifu",
+     "trees": 0
+    },
+    {
+     "city": "gonzales-texas",
+     "trees": 0
+    },
+    {
+     "city": "guaiba",
+     "trees": 0
+    },
+    {
+     "city": "haarlemmermeer",
+     "trees": 0
+    },
+    {
+     "city": "heede",
+     "trees": 0
+    },
+    {
+     "city": "heerlen",
+     "trees": 0
+    },
+    {
+     "city": "higashiagatsuma",
+     "trees": 0
+    },
+    {
+     "city": "higashimiyoshi",
+     "trees": 0
+    },
+    {
+     "city": "hilvarenbeek",
+     "trees": 0
+    },
+    {
+     "city": "hilversum",
+     "trees": 0
+    },
+    {
+     "city": "himi",
+     "trees": 0
+    },
+    {
+     "city": "hochneukirchen-gschaidt",
+     "trees": 0
+    },
+    {
+     "city": "hokuto",
+     "trees": 0
+    },
+    {
+     "city": "horaiji",
+     "trees": 0
+    },
+    {
+     "city": "ichinohe",
+     "trees": 0
+    },
+    {
+     "city": "iida",
+     "trees": 0
+    },
+    {
+     "city": "innimond",
+     "trees": 0
+    },
+    {
+     "city": "jalhay",
+     "trees": 0
+    },
+    {
+     "city": "koriyama",
+     "trees": 0
+    },
+    {
+     "city": "krka-national-park",
+     "trees": 0
+    },
+    {
+     "city": "lebec",
+     "trees": 0
+    },
+    {
+     "city": "longlou",
+     "trees": 0
+    },
+    {
+     "city": "lozorno",
+     "trees": 0
+    },
+    {
+     "city": "lukavice",
+     "trees": 0
+    },
+    {
+     "city": "macon",
+     "trees": 0
+    },
+    {
+     "city": "malacky",
+     "trees": 0
+    },
+    {
+     "city": "melykut",
+     "trees": 0
+    },
+    {
+     "city": "morioka",
+     "trees": 0
+    },
+    {
+     "city": "neuenrade",
+     "trees": 0
+    },
+    {
+     "city": "plunge",
+     "trees": 0
+    },
+    {
+     "city": "priekule",
+     "trees": 0
+    },
+    {
+     "city": "raudone",
+     "trees": 0
+    },
+    {
+     "city": "rhenen",
+     "trees": 0
+    },
+    {
+     "city": "rimov",
+     "trees": 0
+    },
+    {
+     "city": "sankt-vith",
+     "trees": 0
+    },
+    {
+     "city": "setubal",
+     "trees": 0
+    },
+    {
+     "city": "shokawa",
+     "trees": 0
+    },
+    {
+     "city": "siquijor",
+     "trees": 0
+    },
+    {
+     "city": "solingen",
+     "trees": 0
+    },
+    {
+     "city": "tamba",
+     "trees": 0
+    },
+    {
+     "city": "uda",
+     "trees": 0
+    },
+    {
+     "city": "veliki-preslav",
+     "trees": 0
+    },
+    {
+     "city": "waremme",
+     "trees": 0
+    },
+    {
+     "city": "weywertz",
+     "trees": 0
+    },
+    {
+     "city": "wrexham",
+     "trees": 0
+    },
+    {
+     "city": "wroclaw",
+     "trees": 0
+    },
+    {
+     "city": "wye-mills-maryland",
+     "trees": 0
+    },
+    {
+     "city": "zehdenick",
+     "trees": 0
+    },
+    {
+     "city": "zilina",
+     "trees": 0
+    },
+    {
+     "city": "sao-paulo",
+     "trees": -1
+    }
+   ],
+   "trees": -1,
    "logged": true
   }
  ],
