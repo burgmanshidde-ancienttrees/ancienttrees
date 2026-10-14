@@ -63,7 +63,8 @@
       "verified_sources": [
         "https://www.yamanashi-kankou.jp/english/uncover/yamataka-jindai-zakura.html",
         "https://www.city.hokuto.yamanashi.jp/fc/location/22452.html",
-        "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202104/202104_02_en.html"
+        "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202104/202104_02_en.html",
+        "https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_nb0001.html"
       ],
       "access": "Paid entry to Jisso-ji Temple grounds during blossom season (approx 500 yen adult, per Japanese-language tourism sources); free rest of year per some listings, so check locally. Grounds are open to the public.",
       "transport": "Nearest station is JR Chuo Main Line's Hinoharu, then taxi or the Hokuto municipal bus (Mukawa loop line) to the Jindai Koen stop; from Kobuchizawa station it is roughly a 30-minute taxi ride.",
@@ -77,6 +78,10 @@
         "source_name": "Jindai-zakura, Hokuto",
         "qid": "Q10860801",
         "views": 97
+      },
+      "official_register": {
+        "name": "National Natural Monument, Yamanashi Prefecture cultural property guide (designated 1922-10-12)",
+        "url": "https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_nb0001.html"
       }
     },
     {
@@ -106,7 +111,7 @@
         "https://www.city.hokuto.yamanashi.jp/fc/location/22470.html",
         "https://www.hokuto-kanko.jp/spot/shinden_oitosakura/"
       ],
-      "access": "Free. Stands alone at the edge of a working rice paddy at about 820m elevation; dedicated free parking (about 30 cars, 5 buses) is provided nearby. Close approach may be temporarily restricted in places while soil and root recovery work continues, though the tree remains visible from the paddy edge and parking area.",
+      "access": "Free. Stands alone at the edge of a rice paddy at about 820 m; free temporary parking for about 30 cars and 5 buses. Viewing guidance is currently suspended while the tree recovers, hanami parties are prohibited and there are no toilets. By bus: Hokuto City Bus No. 1 from JR Kobuchisawa or Nagasaka, about 10 minutes to the Hara-mura stop, then about 10 minutes on foot.",
       "transport": "10 minutes by taxi from JR Kobuchisawa Station, or 12 minutes from JR Nagasaka Station; also reachable by municipal bus line 1 (about 10 min) plus a 10-minute walk from the 'Hara Village' stop.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -180,7 +185,12 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "story": "Two zelkovas flank the path to Negoya Shrine, Tagi on the rice-field side and Hatagi on the dry-field side, and Hokuto's farmers still read their spring in the order the pair comes into leaf: Hatagi first favours a good year for the dry fields, Tagi first favours the rice. Both trunks run past ten metres round, among the largest zelkovas recorded anywhere in Japan, though the two sources that measured them disagree by close to two metres and neither figure is picked as the winner here.\n\nTakeda Shingen, the Sengoku-period warlord whose clan held a castle nearby, is said to have passed between the pair about five hundred years ago on his way to pray at the shrine, when they were already old. A 1968 fire hollowed both trunks and snapped a bole; tree surgery roughly a decade ago brought them back from it, and a scatter of ancient boulders at the base of each marks the ground as sacred well before either the fire or the shrine.\n\nThe prefecture's own record gives no age at all. Tourist pages and a 2025 visitor's account put it somewhere between eight hundred and a thousand years, which is tradition rather than measurement, and worth taking as such.",
-      "how_to_recognise": "You can recognise them as the paired giants flanking the sando, Tagi on the rice-field side, Hatagi on the dry-field side, each over ten metres round. They stand at Negoya Shrine's approach."
+      "how_to_recognise": "You can recognise them as the paired giants flanking the sando, Tagi on the rice-field side, Hatagi on the dry-field side, each over ten metres round. They stand at Negoya Shrine's approach.",
+      "official_register": {
+        "name": "National Natural Monument, Yamanashi Prefecture cultural property guide (designated 1958-05-15)",
+        "url": "https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_nb0028.html"
+      },
+      "height_m": 21.5
     }
   ],
   "oldest_tree_id": "hok_001"

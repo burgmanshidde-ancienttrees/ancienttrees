@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "fujikawaguchiko+giessen+hokuto",
+    "kind": "enrich",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "enrichment: Yamanashi prefecture and Minobu town pages as records with girth and height for the Shoji cedar, three ginkgos and two Hokuto trees; Giessen Naturdenkmal list (2016 archive copy) for four trees; Shinden cherry access rewritten; hok_004 location_site refused for missing URL; Jotakuji ginkgo typhoon damage already in the intro; 5 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "setubal",
     "kind": "enrich",
     "tokens": 0,
