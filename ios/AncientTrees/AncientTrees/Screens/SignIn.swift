@@ -262,6 +262,17 @@ struct SignInSheet: View {
     }
 
 
+    /// The mail app to open from "Check your email", or nil.
+    static var mailApp: (label: String, url: URL)? {
+        let app = UIApplication.shared
+        if let g = URL(string: "googlegmail://"), app.canOpenURL(g) { return ("Open Gmail", g) }
+        if let m = URL(string: "message://"), app.canOpenURL(m) { return ("Open Mail", m) }
+        // The simulator has no Mail app; -email-sent is for looking at the step.
+        if ProcessInfo.processInfo.arguments.contains("-email-sent"),
+           let m = URL(string: "message://") { return ("Open Mail", m) }
+        return nil
+    }
+
     private func codeEntry(_ to: String) -> some View {
         VStack(spacing: 18) {
             // LESS IS MORE (Hidde, 2026-10-14: "way too crowded"): no mark
@@ -326,6 +337,16 @@ struct SignInSheet: View {
 
             problemLine
 
+            // OPEN THE MAIL APP, the loud one (Hidde, 2026-10-14). Slack, Notion
+            // and Medium all lead this step with it. Gmail when it is on the
+            // phone, Apple Mail otherwise, and nothing when neither opens.
+            if !Launch.emailCode, let mail = Self.mailApp {
+                Button { UIApplication.shared.open(mail.url) } label: {
+                    Text(mail.label)
+                }
+                .buttonStyle(SheetButtonStyle(kind: .primary))
+                .padding(.top, 10)
+            }
             // The sheet's own secondary pill, as every other sheet's second
             // action (BrandSheet), not a loose green footnote.
             Button(Launch.emailCode ? "Send another code" : "Send another link") {

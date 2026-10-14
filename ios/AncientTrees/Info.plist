@@ -17,5 +17,11 @@
 			</array>
 		</dict>
 	</array>
+	<!-- Asked only to label "Open Gmail" on the Check your email step
+	     (SignIn.swift, 2026-10-14). -->
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlegmail</string>
+	</array>
 </dict>
 </plist>
