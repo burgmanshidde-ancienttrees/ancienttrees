@@ -138,6 +138,7 @@ The floor is a reason somebody standing there can see: big, tall or old for its 
 - Open licence only (CC0, CC BY, CC BY-SA, Unsplash), attribution recorded. Never monumentaltrees.com, Google Maps, or AI imagery presented as a photo. Visible credit only where the licence requires it.
 - **The Cadiz standard**: the tree fills the frame, neither distant nor a bark close-up, in leaf beats bare (tiebreaker only), daylight and colour (`python3 scripts/photo_light.py`; POOR ends a stock candidate), survives the centre card crop. **Look at the pixels before approving.** Possibly the wrong trunk: `held`. Better nothing than a random tree.
 - A photograph a person sent is never refused on the light score: if it is this tree, in daylight and colour, it ships.
+- **A photograph a person mails us of a tree is ours to publish**, uncredited like an app photo; never hold it to ask permission (Hidde, 2026-10-14: "if people mail it to us its fine").
 - Machinery: `photo_hunt.py` (API sweep into data/photo-queue.json), `photo_fetch.py --zero --out <dir> --per-tree 3`, `photo_verdicts.py`, `photo_last_resort.py`, `famous_trees.py` (research list only). Wikimedia rate-limits: about one fetch per three seconds; buckets 250/330/500/960. Every rendered image goes through `img_srcset()`.
 - Filename matching decides what to look at, never what ships; a geotag settles which trunk.
 - Never ask Hidde to photograph or visit anything.

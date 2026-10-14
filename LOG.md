@@ -21,7 +21,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-14 session: a reader's cactus goes live in Seville
 
 - **New tree, sev_044 The Cardón of the Expo** (Pachycereus pringlei, Isla de la Cartuja): Mexico's gift for Expo '92, flown in 1992 from the Valle de los Gigantes. A reader replied to our mail with a geotagged photograph; the tree was already in Seville's 2022 catalogue (ficha 27) but sat blocked in leads on titularidad 'Particular'. The photo shows it on an open paved street corner, so it ships. Pin confirmed from the photo's GPS (14 m from the catalogue's). Spanish overlay written, question_meta counts bumped (en/es).
-- Photograph not on the page yet: it came by mail with no licence. The reply asks for permission.
+- The reader's mailed photograph is on the page, uncredited. Hidde ruled the same evening that a photo mailed to us is ours to use (now in CLAUDE.md Photos). Reply drafted in drafts/reply-peter-kalnai-seville.md.
 - Age left broad: catalogue and press say 1,500 years, the reader 200 to 300.
 
 ## 2026-10-14 late run: finished a stranded enrichment claim
