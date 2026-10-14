@@ -1840,10 +1840,6 @@ def product_section(today):
             out.append("| **14 days** | **%d** | **%d** | **%d** | **%d** | **%d** | **%d** |" % (
                 tot["accounts"], tot["waitlist"], tot["saves"],
                 tot["trees"], tot["feedback"], tot["ambassador"]))
-            if any(ours_n.values()):
-                out.append("- Our own rows are not in this table: %s. They are "
-                           "testing, and counting them reads as traction."
-                           % ", ".join("%d %s" % (v, k) for k, v in ours_n.items() if v))
         else:
             out.append("- Nothing signed up, saved a tree or was submitted in 14 days.")
         out.extend(ambassador_lines(today))
@@ -1962,11 +1958,26 @@ CHIPS = {"wrong location", "dead or gone", "could not reach it",
          "worth it", "not worth it"}
 
 
+_TRANSLIT = {"ß": "ss", "ø": "o", "æ": "ae", "œ": "oe", "ł": "l", "đ": "d", "ð": "d", "þ": "th", "ħ": "h"}
+
+
 def _tree_url(slug, name):
-    s = re.sub(r"^the\s+", "", (name or "").strip(), flags=re.I)
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+    """The live URL, by the site's own rule (slugify() in site/src/lib/slug.ts)."""
+    s = (name or "").lower().replace("'", "").replace("’", "")
+    if s.startswith("the "):
+        s = s[4:]
+    s = "".join(_TRANSLIT.get(ch, ch) for ch in s)
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return "https://ancienttrees.app/%s/%s" % (slug, s)
+
+
+def _page_link(slug, t):
+    """A markdown link when the tree renders (a story and a pin), else a plain note."""
+    loc = (t or {}).get("location") or {}
+    if t and t.get("story") and loc.get("latitude") is not None and loc.get("longitude") is not None:
+        return "[live](%s)" % _tree_url(slug, t.get("name"))
+    return "not live yet"
 
 
 def reader_trees_to_inspect(today):
@@ -2025,6 +2036,10 @@ def readers_gave_section(today):
     reader because judgement and inbox mark them `mine`), and submissions whose
     outcome is `changed`, meaning a reader's correction altered a page. Tree
     and city only, never who: DATA.md is public and a name is never printed."""
+    # Readers only (Hidde, 2026-10-14: "ik wil alleen de door gebruikers
+    # gesuggereerde bomen boven in de daily digest incl link als ze live
+    # staan"). The night run's own photo approvals moved to
+    # night_photos_section(), lower down; each row here links its page.
     since = today - datetime.timedelta(days=2)
     out = []
     try:
@@ -2032,9 +2047,19 @@ def readers_gave_section(today):
             done = json.load(f).get("done", {})
     except (OSError, ValueError):
         done = {}
-    names = {}
+    trees = {}
+    # Our own photographs out too, by the account that sent them (Hidde,
+    # 2026-10-14: "delete the rows that are ours"); the `mine` flag alone
+    # missed the Baarn plane.
+    try:
+        import inspect_readers as ir
+        owner = ir.owners()
+    except Exception:
+        owner = {}
     for sid, d in done.items():
         if d.get("outcome") not in ("published", "added"):
+            continue
+        if is_ours(owner.get(str(sid).lower())):
             continue
         try:
             day = datetime.date.fromisoformat(str(d.get("date"))[:10])
@@ -2043,25 +2068,54 @@ def readers_gave_section(today):
         if day < since or d.get("mine"):
             continue
         tid = d.get("tree_id") or ""
-        if not names:
+        if not trees:
             import glob
             for fp in glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
                 try:
                     c = json.load(open(fp))
                 except ValueError:
                     continue
+                slug = os.path.basename(fp)[:-5]
                 for t in c.get("trees", []):
-                    names[t.get("id")] = (t.get("name"), c.get("city"), t.get("photo") or {})
-        name, city, _ = names.get(tid, (tid, "?", {}))
+                    trees[t.get("id")] = (slug, c.get("city"), t)
+        slug, city, t = trees.get(tid, (None, "?", None))
+        name = (t or {}).get("name") or tid
         what = "a reader's photograph, published" + (
             " beside the one it had" if d.get("outcome") == "added" else "")
-        out.append("| %s | %s | %s | %s |" % (day.isoformat()[5:], name, city, what))
-    # Photographs the NIGHT RUN approved (Hidde, 2026-10-09: "ok do that", on
-    # letting the viewing pass approve again with his review page as the
-    # overrule rather than the gate). photo_apply.py stamps approved_by and
-    # approved_on; each one is printed here with the command that reverses it.
+        out.append("| %s | %s | %s | %s | %s |" % (day.isoformat()[5:], name, city, what,
+                                                   _page_link(slug, t) if t else "not live yet"))
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if key:
+        try:
+            rows, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,"
+                            "user_id,outcome&outcome=eq.changed&created_at=gte.%sT00:00:00"
+                            % since.isoformat(), key)
+            for r in rows or []:
+                if r.get("id") in TEST_SUBMISSION_IDS or is_ours(r.get("user_id")):
+                    continue
+                out.append("| %s | %s | %s | a reader's %s changed the page | - |" % (
+                    str(r.get("created_at"))[5:10], r.get("tree") or "-",
+                    r.get("city") or "-", r.get("kind") or "report"))
+        except Exception:
+            pass
+    if not out:
+        return None
+    return "\n".join(["**What readers gave us, and it went live**", "",
+                      "| Day | Tree | Where | What | Page |", "|---|---|---|---|---|", *out])
+
+
+def night_photos_section(today):
+    """Photographs the NIGHT RUN approved, each with the command that reverses it.
+
+    Hidde, 2026-10-09: "ok do that", on letting the viewing pass approve again
+    with his review page as the overrule rather than the gate. photo_apply.py
+    stamps approved_by and approved_on. Moved out of the readers' table at the
+    top on 2026-10-14 (he wants only readers' trees there); still listed,
+    because CLAUDE.md promises every approval with its reversal."""
+    since = today - datetime.timedelta(days=2)
+    out = []
     import glob as _glob
-    for fp in _glob.glob(os.path.join(ROOT, "data", "cities", "*.json")):
+    for fp in sorted(_glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         try:
             c = json.load(open(fp))
         except ValueError:
@@ -2076,26 +2130,12 @@ def readers_gave_section(today):
                 continue
             if day < since:
                 continue
-            out.append("| %s | %s | %s | the night run approved a photograph (overrule: `photo_apply.py hold %s \"%s\"`) |"
+            out.append("| %s | %s | %s | `photo_apply.py hold %s \"%s\"` |"
                        % (day.isoformat()[5:], t.get("name"), c.get("city"), t.get("id"), ph.get("url")))
-    key = os.environ.get("SUPABASE_SERVICE_KEY")
-    if key:
-        try:
-            rows, _ = _supa("/rest/v1/submissions?select=id,created_at,kind,city,tree,"
-                            "user_id,outcome&outcome=eq.changed&created_at=gte.%sT00:00:00"
-                            % since.isoformat(), key)
-            for r in rows or []:
-                if r.get("id") in TEST_SUBMISSION_IDS or is_ours(r.get("user_id")):
-                    continue
-                out.append("| %s | %s | %s | a reader's %s changed the page |" % (
-                    str(r.get("created_at"))[5:10], r.get("tree") or "-",
-                    r.get("city") or "-", r.get("kind") or "report"))
-        except Exception:
-            pass
     if not out:
         return None
-    return "\n".join(["**What readers gave us, and what the night run approved, and it went live**", "",
-                      "| Day | Tree | Where | What |", "|---|---|---|---|", *out])
+    return "\n".join(["**Photographs the night run approved** (%d; the last column undoes one)" % len(out), "",
+                      "| Day | Tree | Where | Overrule |", "|---|---|---|---|", *out])
 
 
 def feedback_section(today):
@@ -2125,6 +2165,9 @@ def feedback_section(today):
     except Exception as e:
         return "**What readers told us**: unreadable today (%s)" % str(e)[:60]
     rows = [r for r in (rows or []) if r.get("id") not in TEST_SUBMISSION_IDS]
+    # Our own rows and their count are left out (Hidde, 2026-10-14: "delete
+    # the rows that are ours ... and the numbers"): this table is readers only.
+    rows = [r for r in rows if not is_ours(r.get("user_id"))]
     if not rows:
         return None
 
@@ -2176,9 +2219,7 @@ def feedback_section(today):
     # saying that, and it read as a finding.
     anon = per_acct.pop("no acct", 0)
     rest = len(rows) - ours - anon
-    if ours:
-        out += ["", "- %d of these %d rows are ours, marked us. The rest is the reader "
-                    "traffic." % (ours, len(rows))]
+    out.append("")
     if anon:
         out += ["- %d arrived signed out, so they cannot be told apart." % anon]
     if per_acct:
@@ -2939,23 +2980,8 @@ def app_section(today):
     out.append("- Measuring since 2026-08-30, when Measure.swift went in. "
                "Unlinked to any account by design: an install id, the app "
                "version and the OS, nothing else.")
-    if cfg:
-        # What we cut, said out loud. The website's signup table names its own
-        # test rows for the same reason: a number that quietly dropped rows is
-        # a number nobody can check.
-        cut = _posthog("""
-            SELECT count(DISTINCT distinct_id), count()
-            FROM events
-            WHERE NOT (%s)
-            """ % ours, key, project)
-        if cut:
-            out.append("- Ours is not in this table: %d install(s), %d events, "
-                       "the testing before the app went live on %s and every "
-                       "install built by Xcode since (the app says how it was "
-                       "built with each event). An App Store copy on our own "
-                       "phone is the one kind this cannot see."
-                       % (int(cut[0][0]), int(cut[0][1]),
-                          str(cfg.get("live_at"))[:10]))
+    # Our own installs are cut from these numbers and no longer counted out
+    # loud (Hidde, 2026-10-14: "delete the rows that are ours ... and the numbers").
     # INSTALLS, not people, and the distinction is not pedantry: the id is a
     # UUID made on first launch and thrown away with the app, so every
     # reinstall and every TestFlight update that wipes the container counts
@@ -3477,6 +3503,7 @@ def main():
     block(fetch_rum, token, today)
     block(ga_section, today)
     block(night_shift, today)
+    block(night_photos_section, today)
     block(fetch_machine, today)
     gsc_text = "\n\n".join(blocks)
 
