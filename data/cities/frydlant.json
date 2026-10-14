@@ -40,7 +40,8 @@
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Buk_u_vodojemu",
         "https://www.wikidata.org/wiki/Q26787367",
-        "https://commons.wikimedia.org/wiki/File:Fr%C3%BDdlant,_B%C5%99ezinova,_pam%C3%A1tn%C3%BD_buk_(1).jpg"
+        "https://commons.wikimedia.org/wiki/File:Fr%C3%BDdlant,_B%C5%99ezinova,_pam%C3%A1tn%C3%BD_buk_(1).jpg",
+        "https://cs.wikipedia.org/wiki/Buk_u_vodojemu (AOPK register data, mirrored at https://www.wikidata.org/wiki/Q26787367)"
       ],
       "access": "Free, on a public street beside the town's water reservoir",
       "transport": "Central Frýdlant, short walk from the town centre and railway station",
@@ -66,7 +67,12 @@
         "views": 3
       },
       "age_basis": "girth",
-      "verify_notes": "Age derived from girth, not from a source: 422 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright."
+      "verify_notes": "Age derived from girth, not from a source: 422 cm at Mitchell's 2.5 to 1.5 cm of girth a year for an open-grown to shaded temperate broadleaf. Any measured or documented age replaces this outright.",
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR / ÚSOP), no. 101922",
+        "url": null
+      },
+      "height_m": 27
     }
   ]
 }

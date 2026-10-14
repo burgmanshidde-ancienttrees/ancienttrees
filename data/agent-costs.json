@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "fish-lake-utah+flinders-ranges+frydlant+garmen+gifu+groton",
+    "kind": "enrich",
+    "tokens": 71000,
+    "trees": 0,
+    "note": "enrichment: Cazneaux Tree National Trust SA register 239 and height 29 m (en.wikipedia; base girth left out); Frydlant beech AOPK 101922 with girth 422 and height 27 (cs.wikipedia and Wikidata, girth height of measure not stated, Czech convention 1.3 m); Zagradski plane height 24 m; Gifu cherry height 9 m; Pando and Groton mulberry nothing; 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "daruvar+dunkeld+eraul+erdmannrode+farnham+ferrara",
     "kind": "enrich",
     "tokens": 94000,
