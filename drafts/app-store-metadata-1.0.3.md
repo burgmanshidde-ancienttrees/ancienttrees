@@ -560,5 +560,5 @@ Find the ancient trees around you
 ```
 
 ```
-Discover shows which old trees near you are at their best this month. Pick one and walk to it before the leaves fall.
+Ginkgos turn gold, beeches copper, maples red. See which old trees near you are at their best right now.
 ```

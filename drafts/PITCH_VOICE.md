@@ -186,7 +186,7 @@ belongs in Helpful Details or nowhere.
 **opening on our tab name and giving orders, instead of the season the reader can see** (added 2026-10-14)
 
 - NO: "Discover shows which old trees near you are at their best this month. Pick one and walk to it before the leaves fall."
-- YES: "(rejected by Hidde as the worst sentence; replacement pending)"
+- YES: "Ginkgos turn gold, beeches copper, maples red. See which old trees near you are at their best right now."
 
 **explaining our data model instead of saying what the reader does** (added 2026-10-14)
 
