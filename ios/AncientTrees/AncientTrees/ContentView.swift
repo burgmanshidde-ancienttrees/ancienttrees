@@ -43,7 +43,7 @@ struct ContentView: View {
     @State fileprivate var reviewPrompt = ReviewPrompt()
     @State fileprivate var navigator = Navigator()
     @State fileprivate var units = Units()
-    @State fileprivate var sightings = Sightings()
+    @State fileprivate var sightings = Sightings.app
     /// How many people saved each tree, counted by the server because a client
     /// can only see its own rows. Empty until Hidde runs supabase/like-counts.sql.
     @State fileprivate var voteCounts = VoteCounts()
