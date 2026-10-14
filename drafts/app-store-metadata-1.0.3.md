@@ -14,7 +14,7 @@ no plurals (Apple handles them).
 
 ## English (U.K.), the primary language
 
-Name, 27/30 (Hidde took the suffix, 2026-10-14; the reference apps' convention, AllTrails: Hike, Bike & Run). English (U.K.) and English (U.S.) only; the other languages keep "Ancient Trees", because their subtitles already say old trees in their own words:
+Name, 27/30 (Hidde took the suffix, 2026-10-14; the reference apps' convention, AllTrails: Hike, Bike & Run). Every language has its own suffix (Hidde, 2026-10-14: "waarom niet gelijk trekken in andere talen?"):
 
 ```
 Ancient Trees: Old Tree Map
@@ -32,7 +32,35 @@ Keywords, 98/100 ("map" left, the name has it):
 monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,beech,walk,hike,nature,oak,yew
 ```
 
-Description: keep the live one. It is not indexed and it reads well.
+Description, the live one with three corrections (2026-10-14): it claimed two independent sources for every tree (a register or a reader's photograph also suffices), said a signed-out collection stays on the phone (hard rule 11: nothing is kept on the device), and promised corrections the same day:
+
+```
+Ancient Trees maps the remarkable old trees of the world's cities, and shows you the ones near you.
+
+Open it anywhere and the map fills with the trees around you: a yew that was old when the church beside it was built, a plane whose trunk takes four people to reach around, an oak that has stood through everything that happened on the street it shades. Each one has a page telling you what it is, roughly how old, and why it is worth the walk.
+
+WHAT YOU GET
+
+Trees near you, on a map you can search by place, by species or by name.
+
+A story for every tree, written to be read rather than skimmed, and honest about what nobody knows: where an age has never been measured, the page says so and asks you.
+
+Directions to the trunk. Where a location is rough rather than exact, the page tells you before you set off, because sending you to the wrong spot is the one mistake worth avoiding.
+
+Your own collection. Photograph a tree while you stand in front of it and it joins your trees, ours and your own alike. Your collection lives in your account, so it follows you to a new phone, and nobody else can see it.
+
+WHERE THE TREES COME FROM
+
+Official registers of protected and monumental trees are read directly, and where sources disagree the page says which and why. Photographs carry their own open licence and credit.
+
+Nothing here is a wholesale import of a municipal tree inventory. A tree earns its place by being worth crossing town for.
+
+WHEN WE ARE WRONG
+
+We will be, and readers are how it gets fixed. Every page has a way to report a wrong pin, a fallen tree or a mistaken species.
+
+An account is one email address. Delete it and everything goes with it.
+```
 
 What's new in 1.0.3 (rewritten 2026-10-14):
 

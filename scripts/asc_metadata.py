@@ -29,7 +29,7 @@ LOCALES = {
     "German": "de-DE", "French": "fr-FR", "Spanish": "es-ES", "Italian": "it",
     "Portuguese (Portugal)": "pt-PT", "Japanese": "ja",
 }
-LIMITS = {"name": 30, "subtitle": 30, "keywords": 100, "description": 4000, "whatsNew": 4000}
+LIMITS = {"name": 30, "subtitle": 30, "keywords": 100, "description": 4000, "whatsNew": 4000, "promotionalText": 170}
 
 
 def _call(method, url, token, body=None):
@@ -53,8 +53,8 @@ def parse(path):
         if not locale:
             continue
         fields = {}
-        for fm in re.finditer(r"^(Subtitle|Keywords|Description|What's new)[^\n]*\n\n```\n(.*?)\n```", m.group(2), re.S | re.M):
-            key = {"Subtitle": "subtitle", "Keywords": "keywords", "Description": "description", "What's new": "whatsNew"}[fm.group(1)]
+        for fm in re.finditer(r"^(Name|Subtitle|Keywords|Description|What's new|Promotional text)[^\n]*\n\n```\n(.*?)\n```", m.group(2), re.S | re.M):
+            key = {"Name": "name", "Promotional text": "promotionalText", "Subtitle": "subtitle", "Keywords": "keywords", "Description": "description", "What's new": "whatsNew"}[fm.group(1)]
             fields.setdefault(key, fm.group(2).strip())
         if locale == "en-US" and "same as U.K." in m.group(2):
             fields["_copy_from"] = "en-GB"
@@ -62,7 +62,7 @@ def parse(path):
     # en-US inherits what it does not state.
     if "en-US" in out and out["en-US"].get("_copy_from"):
         base = out[out["en-US"].pop("_copy_from")]
-        for k in ("subtitle", "description", "whatsNew"):
+        for k in ("name", "subtitle", "description", "whatsNew"):
             out["en-US"].setdefault(k, base.get(k))
     for locale, f in out.items():
         for k, v in f.items():
@@ -92,10 +92,18 @@ def main():
     have_i = {l["attributes"]["locale"]: l for l in _call("GET", f"{API}/appInfos/{iid}/appInfoLocalizations", tok)["data"]}
     primary_v = have_v.get("en-GB", {}).get("attributes", {})
     primary_i = have_i.get("en-GB", {}).get("attributes", {})
+    # The English description lives only in Connect; a claim the corpus has
+    # dropped (2026-10-14: every tree is not checked against two sources) is
+    # shown here so a release does not carry it unseen.
+    for locale, loc in have_v.items():
+        d = loc["attributes"].get("description") or ""
+        for line in d.splitlines():
+            if re.search(r"two independent|independent sources", line, re.I):
+                print("CHECK %s description: %s" % (locale, line.strip()))
 
     for locale, f in want.items():
-        vattrs = {k: f[k] for k in ("keywords", "description", "whatsNew") if f.get(k)}
-        iattrs = {k: f[k] for k in ("subtitle",) if f.get(k)}
+        vattrs = {k: f[k] for k in ("keywords", "description", "whatsNew", "promotionalText") if f.get(k)}
+        iattrs = {k: f[k] for k in ("name", "subtitle") if f.get(k)}
         if locale in have_v:
             print("PATCH version %-6s %s" % (locale, ", ".join(vattrs)))
             if apply and vattrs:
@@ -120,7 +128,7 @@ def main():
                 _call("PATCH", f"{API}/appInfoLocalizations/{have_i[locale]['id']}", tok,
                       {"data": {"type": "appInfoLocalizations", "id": have_i[locale]["id"], "attributes": iattrs}})
         else:
-            iattrs["name"] = primary_i.get("name")
+            iattrs.setdefault("name", primary_i.get("name"))
             iattrs["privacyPolicyUrl"] = primary_i.get("privacyPolicyUrl")
             iattrs["locale"] = locale
             print("POST  info    %-6s %s" % (locale, ", ".join(k for k in iattrs if k != "locale")))
