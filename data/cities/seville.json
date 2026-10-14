@@ -5,7 +5,7 @@
   "intro": "Seville's grandest trees are mostly not ancient at all. They are the product of two specific bursts of civic ambition: centuries of orange trees planted for scent rather than fruit in Andalusi and Christian gardens alike, and a wave of botanical experimentation around the 1929 Ibero-American Exposition that filled Parque de María Luisa with Australian figs, American eucalyptus and Asian ginkgos never native to this soil. A handful of trees here predate all of that. Most are free to see, and the ones that aren't are inside places worth the ticket anyway.",
   "meta_description": "Seville's remarkable trees range from a 500-year ombu tied to Columbus's son to the city's tallest tree, a hidden 50-metre eucalyptus.",
   "question_answer": "Seville's oldest documented tree is the ombu at the Monasterio de la Cartuja, roughly 500 years old and said to have grown from South American seeds brought back by Hernando Colon, son of Christopher Columbus, around 1529. It stands in the grounds of what is now the CAAC contemporary art museum on Isla de la Cartuja, reachable by tram from the city centre.",
-  "question_meta": "Seville's oldest tree is a 500-year-old ombu at a former monastery, tied to Columbus's own son. Where it stands, and forty-two more remarkable trees.",
+  "question_meta": "Seville's oldest tree is a 500-year-old ombu at a former monastery, tied to Columbus's own son. Where it stands, and forty-three more remarkable trees.",
   "question_context": "The ombu at the Monasterio de la Cartuja has a stronger claim to age than anything else documented in Seville: local tradition holds that Hernando Colon, Christopher Columbus's son, planted it from seeds gathered in South America around 1529, in his own private arboretum, and that the tree or its seed passed to the neighbouring Carthusian monks after his death. If the date holds, it may be the first ombu ever grown in Europe. The tree nearly died in the early 1990s when a botched restoration sealed cavities in its trunk with polyurethane foam, trapping moisture that fed the fungus already damaging the wood; Expo '92 technicians removed the foam just in time, though the removal caused its own damage; the tree has been left untouched since. It grows on the grounds of the former monastery, which today houses the Centro Andaluz de Arte Contemporaneo (CAAC), on Isla de la Cartuja across the river from central Seville. Most other candidates for Seville's oldest tree turn out to be twentieth-century arrivals: the city's famous fig and eucalyptus trees mostly date to the 1910s and 1920s, and the orange trees in the cathedral's Patio de los Naranjos were replanted within living memory.",
   "faq": [
     {
@@ -1656,6 +1656,49 @@
         "name": "Inventario de Arboles Singulares de la Ciudad de Sevilla (Ayuntamiento de Sevilla, 2022), no. ficha 40",
         "url": null
       }
+    },
+    {
+      "id": "sev_044",
+      "name": "The Cardón of the Expo",
+      "species": "Cardón (Pachycereus pringlei)",
+      "age_estimate": "Several hundred years; some estimates say 1,500",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": "source",
+      "height_m": 11.7,
+      "location": {
+        "address": "Calle Tomás Alva Edison, corner of Calle Johannes Kepler, Isla de la Cartuja, 41092 Sevilla",
+        "latitude": 37.40908833,
+        "longitude": -6.00336945,
+        "neighbourhood": "Isla de la Cartuja"
+      },
+      "story": "Mexico flew this cactus to Seville. It was the country's gift to Spain for Expo '92, picked from the most slender giants in the Valle de los Gigantes in Baja California, and taking it turned into a political row. Digging started on 14 December 1991. People in the area protested, the dispute reached the state congress, and work stopped in January before resuming a month later. The fuss left something behind: the valley was declared a sanctuary for its cardones and is protected today.\n\nThe cactus came out of the ground with about ten metres of roots, in a steel cage lifted by three cranes, rode a thirty-wheel trailer to Hermosillo and flew via Miami, landing in Seville on 23 March 1992. Seville's tree catalogue adds that one of the men supervising the move was shut inside the plane and arrived in Spain with it.\n\nIt was planted beside Mexico's pavilion and is still there, 11.7 metres tall when the city measured it in 2022, on a base 2.3 metres round. Steel props now hold it up, and since 2017 paving has replaced the garden around it, which heritage groups say starves the roots.\n\nHow old is it? Several hundred years at least. The city catalogue and the Spanish press repeat 1,500, without saying how anyone counted. If you know, tell us.",
+      "verified_sources": [
+        "Inventario de Arboles Singulares de la Ciudad de Sevilla (2022), Ayuntamiento de Sevilla, ficha 27",
+        "https://sevillasecreta.co/cactus-expo-cartuja/",
+        "https://www.ecoticias.com/naturaleza/el-cactus-de-la-expo-92-en-sevilla-en-peligro-por-el-hormigon-y-el-abandono"
+      ],
+      "access": "Free, on an open paved corner beside the street, no gate or opening hours. The city catalogue lists the ground as privately owned, but nothing stands between the pavement and the cactus.",
+      "transport": "On Isla de la Cartuja, about 25 minutes on foot from the old centre over the Pasarela de la Cartuja; TUSSAM buses C1 and C2 serve the island.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "taken_at": "2026-10-13T14:48:40+00:00",
+        "note": "Geotag of a reader's photograph sent by mail; 14 m from the city catalogue's pin"
+      },
+      "how_to_recognise": "You can recognise it by its bundle of tall, ribbed green columns rising from one trunk, held by rusty steel props in a gravel bed. It stands on the paved corner of Calle Tomás Alva Edison and Calle Johannes Kepler.",
+      "official_register": {
+        "name": "Inventario de Arboles Singulares de la Ciudad de Sevilla (Ayuntamiento de Sevilla, 2022), no. ficha 27",
+        "url": null
+      },
+      "verify_notes": "2026-10-14: a reader's tip by mail with a geotagged photograph (taken 2026-10-13). Was blocked in leads on titularidad 'Particular'; the reader's photograph shows it on an open paved corner by the street, so hard rule 10 is met. Facts from the 2022 city catalogue (ficha 27: Pachycereus pringlei, 11.7 m, 232 cm base perimeter, conservation 'Regular'), sevillasecreta.co (2022, move dates and route) and ecoticias.com (props, paving since 2017). Age conflict: catalogue and press say about 1,500 years, the reader says 200 to 300; left broad. Photograph not used: sent by mail, no licence yet; asked in the reply."
     }
   ]
 }

@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: a reader's cactus goes live in Seville
+
+- **New tree, sev_044 The Cardón of the Expo** (Pachycereus pringlei, Isla de la Cartuja): Mexico's gift for Expo '92, flown in 1992 from the Valle de los Gigantes. A reader replied to our mail with a geotagged photograph; the tree was already in Seville's 2022 catalogue (ficha 27) but sat blocked in leads on titularidad 'Particular'. The photo shows it on an open paved street corner, so it ships. Pin confirmed from the photo's GPS (14 m from the catalogue's). Spanish overlay written, question_meta counts bumped (en/es).
+- Photograph not on the page yet: it came by mail with no licence. The reply asks for permission.
+- Age left broad: catalogue and press say 1,500 years, the reader 200 to 300.
+
 ## 2026-10-14 late run: finished a stranded enrichment claim
 
 An earlier attempt claimed friedewald+galenbeck+giethoorn+gjerrild+gutau+haarlemmermeer+hainich and never dispatched. I ran the verify agent and applied it: five trees improved (Hammundeseiche, Betteleiche and Gutau yew measurements, Gutau Naturdenkmal id nd292, Svalebøgen Dansk Træregister record 181 with girth, Galenbeck linden measurements). I dropped the agent's suggested Haarlemmermeer sycamore best_time (private front garden, season kept scarce). Claim released, preflight 0 problems. The 59 READY leads were not written: recovery mode allows no new tree unless its page is rich. The next enrichment batch (gliniak and nine others) was refused at claim because Poland, Bulgaria and Lithuania are outside the focus countries, so it was left alone.
