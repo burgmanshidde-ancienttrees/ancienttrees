@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: digest top is readers only
+
+- Live: the daily digest opens with the trees readers gave, each linked to its page when live. The night run's photo approvals moved lower, to their own table, with their overrule commands. Our own rows and the lines that counted our testing are gone from the digest. Today's entry was rewritten that way.
+- Found: a reader (10-13) says iOS location cannot be turned on in Settings. Cause: the app only asks when the "Location off" chip or the recentre button is tapped, so until then iPhone Settings shows no Location row. Fix goes in the next app drop.
+
 ## 2026-10-14 night run, 03:09 window
 
 - Visits last 7 days: 1,495. Rung 1 empty; rung 2 unchanged (iOS scheduled failure needs a simulator; smoke "skipped" is the push-trigger default).
