@@ -54,7 +54,7 @@ struct ProfileView: View {
     /// aeroplane mode on.
     @State private var typedToConfirm = ""
     /// -signoutask opens the question without a tap (2026-10-10).
-    @State private var confirmingSignOut = ProcessInfo.processInfo.arguments.contains("-signoutask")
+    @State private var confirmingSignOut = false   // -signoutask: launchSheet below
     /// A second tap used to start a second upload of everything. See below.
     @State private var signingOut = false
     @State private var deleteFailed = false
@@ -66,8 +66,8 @@ struct ProfileView: View {
     /// Debug scaffolding, same family as -tab and -open in ContentView: the
     /// screenshot sweep cannot tap, and this sheet is otherwise only reachable
     /// by tapping a card on this screen.
-    @State private var contributing = ProcessInfo.processInfo.arguments.contains("-contribute")
-    @State private var givingFeedback = ProcessInfo.processInfo.arguments.contains("-feedback")
+    @State private var contributing = false   // -contribute: launchSheet below
+    @State private var givingFeedback = false   // -feedback: launchSheet below
     @State private var editingProfile = false
     /// Same debug scaffolding as -contribute and -feedback: the sweep cannot
     /// tap, so every screen needs an argument or it ships unlooked-at.
@@ -115,7 +115,9 @@ struct ProfileView: View {
         // back button is a room with the door painted over.
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .launchSheet("-contribute", isPresented: $contributing)
         .sheet(isPresented: $contributing) { ContributeView() }
+        .launchSheet("-feedback", isPresented: $givingFeedback)
         .sheet(isPresented: $givingFeedback) { ContributeView(feedbackMode: true) }
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
         .sheet(item: $refusedPermission) { PermissionRecovery(permission: $0) }
@@ -721,6 +723,7 @@ struct ProfileView: View {
             // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10), which also ends
             // the popover trouble the comment above records: a sheet draws
             // every button it is given.
+            .launchSheet("-signoutask", isPresented: $confirmingSignOut)
             .sheet(isPresented: $confirmingSignOut) {
                 BrandSheet(
                     title: "Sign out?",

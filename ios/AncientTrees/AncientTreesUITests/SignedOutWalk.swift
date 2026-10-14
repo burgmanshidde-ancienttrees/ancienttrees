@@ -81,10 +81,12 @@ final class SignedOutWalk: XCTestCase {
     func testSeenTickAsks() {
         // The Seen tick is on the ARRIVAL card, which the map shows when the
         // phone stands within reach of a tree and nothing is selected. -at=
-        // puts the phone at the Heimanseik; the sheet is raised the way
-        // FlowWalk does it so the card is in reach.
-        let app = launch(["-tab=0", "-at=52.3652537,4.9182379"])
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.88)).tap()
+        // puts the phone at the Heimanseik; -sheet=half opens the sheet at
+        // launch, because the card only shows on a raised sheet. It used to
+        // tap at 88% of the screen to raise it, which on the SE lands in the
+        // gap between the count strip and the first card and raises nothing
+        // (2026-10-14: then every swipe looking for the tick panned the map).
+        let app = launch(["-tab=0", "-at=52.3652537,4.9182379", "-sheet=half"])
         tap(app, "seen-tick"); expectSignIn(app, after: "seen-tick")
     }
 

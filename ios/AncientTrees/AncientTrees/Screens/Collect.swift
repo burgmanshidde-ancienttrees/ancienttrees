@@ -66,8 +66,8 @@ struct CollectView: View {
     /// cannot tap a gear, and a screen no argument can open is a screen that
     /// ships unlooked at.
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
-    @State private var editingProfile = ProcessInfo.processInfo.arguments.contains("-profile-edit")
-    @State private var findingPeople = ProcessInfo.processInfo.arguments.contains("-people")
+    @State private var editingProfile = false   // -profile-edit: launchSheet below
+    @State private var findingPeople = false   // -people: launchSheet below
     /// Which list of people is open, if any. An enum rather than two booleans,
     /// so both cannot be true at once.
     private enum PeopleList: String, Identifiable {
@@ -347,7 +347,9 @@ struct CollectView: View {
                                     token: await account.freshToken())
             }
         }
+        .launchSheet("-profile-edit", isPresented: $editingProfile)
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
+        .launchSheet("-people", isPresented: $findingPeople)
         .sheet(isPresented: $findingPeople) { PeopleView() }
         .sheet(item: $peopleList) { which in PeopleView(source: which.source) }
         .sheet(isPresented: $signingIn) {

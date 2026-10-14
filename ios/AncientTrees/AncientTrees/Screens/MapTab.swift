@@ -72,7 +72,7 @@ struct MapTab: View {
     @State private var topCard: String?
     /// Where the floating search field ends, from the top of the screen.
     @State private var searchBottom: CGFloat = 0
-    @State private var pickingSpecies = ProcessInfo.processInfo.arguments.contains("-species")
+    @State private var pickingSpecies = false   // -species: launchSheet below
     @State private var searching = ProcessInfo.processInfo.arguments
         .contains { $0 == "-search" || $0.hasPrefix("-search=") }
     /// Where the map is looking. nil until it has been moved, so the first list
@@ -515,6 +515,7 @@ struct MapTab: View {
         }
         .sheet(item: $refused) { PermissionRecovery(permission: $0) }
         .onAppear { if debugRefused { debugRefused = false; refused = .location } }
+        .launchSheet("-species", isPresented: $pickingSpecies)
         .sheet(isPresented: $pickingSpecies) {
             SpeciesPicker(catalogue: catalogue,
                           nearby: Array(Set(mapTrees.map(\.commonName))),
