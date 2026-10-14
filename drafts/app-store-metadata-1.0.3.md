@@ -560,5 +560,5 @@ Find the ancient trees around you
 ```
 
 ```
-Ginkgos turn gold, beeches copper, maples red. See which old trees near you are at their best right now.
+Ancient trees are turning colour. From gold ginkgos to red maples, see which ones near you are at their best right now.
 ```
