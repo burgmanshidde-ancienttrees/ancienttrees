@@ -217,10 +217,8 @@ export const TREE_ACTIONS_JS = COLLECTION_JS + `
   }
   function openCollect(id) {
     if (!dlg || dlg.dataset.tree !== id) {
-      // A page without the sheet (none today) keeps the plain toggle.
-      var on = !(window.atHasVisited && window.atHasVisited(id));
-      if (window.atPushVisited) window.atPushVisited(id, on);
-      paintSeen();
+      // A page without the sheet (none today) does nothing: collecting needs
+      // a photograph since 2026-10-14, and only the sheet asks for one.
       return;
     }
     var done = Boolean(window.atHasVisited && window.atHasVisited(id));
