@@ -21,6 +21,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Photos:** `photo_hunt.py --recheck` swept 40 trees; `photo_fetch.py --zero` fetched candidates for 13 cities; the ones I viewed were leaf close-ups and building shots, none approved.
 - **Breakage, not mine to fix from here:** the iOS workflow failed on 2026-10-14 (run 38611221113) because simulator creation took about 40 minutes and `xcodebuild test` was killed after a 20-minute hang. It is infrastructure; the app code did not fail an assertion.
 - **Enrichment, 8 of 10 trees:** Gliniak (Wszebora) register id and measurements, Grybiskes saugoma.lt record, Higashine kunishitei record, Himmelsberg Naturdenkmalbuch number, girth and height for Granit, Hel, Hino and Hniszow. Higashiomi and Horn-Lehe stayed dead ends (5 gaps recorded for 90 days).
+- **Enrichment, second batch, 5 of 10 trees:** Lipka linden (AOPK 8409, girth and height), Agency for Cultural Affairs records for Kagoji, Renchakuji and Itoshiro, Kuningamand register id. Jauze, Junihon-yasu and Boole Tree stayed dead ends.
 - Species note: roo_015 reads "American Lime (Tilia americana 'Nova')" while Chicago and Minneapolis say American Basswood. Rule 9 says one common name; worth aligning on a later pass.
 
 ## 2026-10-14 session: app 1.0.3 (build 34) submitted to Apple
