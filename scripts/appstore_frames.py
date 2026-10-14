@@ -267,16 +267,21 @@ def hero(photo_path, line, ground):
     size = 104
     f = font("Gabarito-ExtraBold.ttf", size)
     tracking = -size * 0.02
-    # Two thirds down, measured from the block's own height so both lines sit
-    # under the fold rather than the first one landing there.
+    # LOW AND LEFT, as the app's own opening screen sets it (Hidde,
+    # 2026-10-14: "the text on the splash screen is weird"). Centred at two
+    # thirds it floated over the middle of the photograph, past the scrim.
     lines = line.split("\n")
-    y = int(H * 0.66) - int(size * 1.08) * (len(lines) - 1)
+    y = H - 420 - int(size * 1.08) * (len(lines) - 1)
     for i, text in enumerate(lines):
         gold = i == 1                       # the site puts the second half in <em>
-        w = tracked_width(draw, text, f, tracking)
-        draw_tracked(draw, (W - w) / 2, y, text, f, tracking,
+        draw_tracked(draw, 84, y, text, f, tracking,
                      GOLD_HERO if gold else CREAM)
         y += int(size * 1.08)
+    # The credit a CC BY photograph owes, small at the foot (APPSTORE_CREDIT).
+    credit = os.environ.get("APPSTORE_CREDIT")
+    if credit:
+        draw.text((84, H - 150), credit, font=font("Gabarito-Medium.ttf", 30),
+                  fill=(235, 235, 228))
 
     return canvas
 
