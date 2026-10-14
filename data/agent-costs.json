@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "muxika+myjava+newtown+nicorps+nihonmatsu+nisia-floresta+nyingchi+ofunato+okuizumo",
+    "kind": "enrich",
+    "tokens": 76000,
+    "trees": 0,
+    "note": "enrichment: Nihonmatsu two national monument records with girth and height, Myjava linden, Nicorps yew, Takezaki katsura, Brimmon oak, Urkieta, Nisia Floresta, Ofunato, Nyingchi records; Nicorps location_site refused (no source URL); 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "lulin+maebashi+martinique+maxaranguape+mendaza+millena+moffat+mrakotin+msecke-zehrovice",
     "kind": "enrich",
     "tokens": 55000,

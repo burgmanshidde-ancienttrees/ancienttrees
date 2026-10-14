@@ -41,7 +41,8 @@
       "verified_sources": [
         "https://nisiafloresta.rn.gov.br/o-baoba/ (municipality's own page)",
         "https://www.tripadvisor.com/Attraction_Review-g2351334-d2372665-Reviews-Baoba_tree-Nisia_Floresta_State_of_Rio_Grande_do_Norte.html",
-        "https://pt.wikipedia.org/wiki/Baob%C3%A1_no_Brasil"
+        "https://pt.wikipedia.org/wiki/Baob%C3%A1_no_Brasil",
+        "https://nisiafloresta.rn.gov.br/o-baoba/"
       ],
       "access": "Free. Stands in the town's central plaza, in front of the church, near the bus terminal and old railway station; open public ground.",
       "transport": "Central Nísia Floresta, walking distance of the town centre; the town itself sits roughly 45 minutes by road from Natal (day-trip range, but by car/bus rather than a city walk)",
@@ -60,6 +61,10 @@
       "container": {
         "type": "own_place",
         "place": "Nisia Floresta, Brazil"
+      },
+      "official_register": {
+        "name": "Tombamento (Lei Federal 4.771/65 and Lei Municipal 169/70), Prefeitura de Nísia Floresta",
+        "url": "https://nisiafloresta.rn.gov.br/o-baoba/"
       }
     }
   ]
