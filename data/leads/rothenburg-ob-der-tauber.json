@@ -19,6 +19,26 @@
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
+      "register_id": "ND-Bettwar-49",
+      "name": "ND Nr. 49 Linde (Bettwar, am Hof der Oelmuehle)",
+      "latitude": 49.41494,
+      "longitude": 10.15125,
+      "km_from_centre": 4.1,
+      "species": "Linden (Tilia sp.)",
+      "reason": "Missing for rich: no measurement, no photo, no confirmed pin, no vitality evidence. Register gives id and coordinate only; de.wikipedia Landkreis Ansbach list (section Steinsfeld, 'waren verzeichnet', past-tense heading, so it may be delisted) gives no girth. Courtyard of a mill farm, so hard rule 10 access check needed. Checked 2026-10-14.",
+      "added": "2026-10-14"
+    },
+    {
+      "register_id": "ND-Bettwar-50",
+      "name": "ND Nr. 50 Linde (Bettwar, Dorfplatz)",
+      "latitude": 49.41552,
+      "longitude": 10.15164,
+      "km_from_centre": 4.1,
+      "species": "Linden (Tilia sp.)",
+      "reason": "Missing for rich: no measurement, no photo, no vitality evidence. Village square (a small named site, Bettwar Dorfplatz) would be public, but no source gives girth or age and the Wikipedia list is headed 'waren verzeichnet' (may be delisted). Needs a dated photo or girth from a local source. Checked 2026-10-14.",
+      "added": "2026-10-14"
+    },
+    {
       "note": "A further 20 Bavarian Naturdenkmal register candidates lie 7.5-19.2 km from Rothenburg's centre; see data/research/rothenburg-ob-der-tauber-register-candidates.json for the full list. None were reviewed this pass, which focused on the close-in cluster (walking/cycling distance along the Tauber and Vorbach valleys)."
     }
   ],

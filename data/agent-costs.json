@@ -11433,6 +11433,22 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "rothenburg-ob-der-tauber",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "register has no measurements; Bettwar ND 49 and 50 filed as leads; nothing could end rich; city walled 48h"
+   },
+   {
+    "date": "2026-10-14",
+    "target": "minamialps+minamiaso+miriam-vale+mito+nago+nanjing",
+    "kind": "enrich",
+    "tokens": 58000,
+    "trees": 0,
+    "note": "another run had already closed these gaps before the brief ran; nothing to add; claims released"
+   },
+   {
+    "date": "2026-10-14",
     "target": "it-lucca",
     "kind": "translate",
     "tokens": 72000,

@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14, night run (window 20:46 UTC): nothing shipped, two passes found no work
+
+7-day visits: 1460 visits, 2060 page views. No reader submissions or app photographs waiting. health.py's "skipped" deploys were push runs superseded by a dispatched deploy still running; the iOS failure is Build 34, a rerun was in progress (not touched).
+- Enrichment: claimed six cities (Minami-Alps, Minamiaso, Miriam Vale, Mito, Nago, Nanjing). A parallel run had already closed those gaps before the verify agent ran, so the brief was empty. `enrich.py --next` says nothing to do anywhere. Claims released. `www.xhby.net` hung at 20 s (not yet in the blocklist).
+- Refill: verify pass on Rothenburg ob der Tauber (22 unmined register candidates). The Bavarian Naturdenkmal register has no girth, height or age, so none could end rich. Bettwar ND 49 and 50 filed as leads. Rothenburg is a wall for 48h.
+- Not merged on purpose: the "written and ready to merge" trees (Leipzig, Oss, Delft, Fort Worth, others) are the ones preflight refuses. Four research files hold duplicates or id clashes needing a hand check: chicago chi_016, munich muc_062, taiwan a28_001, philippines phl_003.
+- Git: one push was rejected and the rebase conflicted in data/in-flight.json; resolved by keeping my claims.
+
 ## 2026-10-14, late retry: Trieste in Italian
 
 - **Trieste now has an Italian page**: title, intro, oldest-tree question page and all 36 trees (data/i18n/it/trieste.json). i18ncheck and preflight clean. It was the only city over 10 English impressions still untranslated.
