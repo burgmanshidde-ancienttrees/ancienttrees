@@ -66,7 +66,7 @@ What's new in 1.0.3 (rewritten 2026-10-14):
 
 ```
 See which trees near you are at their best this month: Discover now follows the season where you are, with the records and the finest tree cities.
-Collecting is simpler: take a photograph, pick which tree it is, done.
+Collect a tree by photographing it: take a photo, pick which tree it is, done.
 Add a tree we do not have yet, with a confirmation once it is saved.
 With the app open, it tells you when you stand within 50 metres of a tree you have not collected.
 Want to visit and Collected together in My trees.
@@ -149,7 +149,7 @@ What's new:
 
 ```
 Zie welke bomen bij jou in de buurt deze maand op hun mooist zijn: Ontdekken volgt nu het seizoen waar jij bent, met de records en de mooiste bomensteden.
-Verzamelen is eenvoudiger: maak een foto, kies welke boom het is, klaar.
+Verzamel een boom door hem te fotograferen: maak een foto, kies welke boom het is, klaar.
 Voeg een boom toe die wij nog niet hebben, met een bevestiging zodra hij is opgeslagen.
 Met de app open hoor je het als je binnen 50 meter staat van een boom die je nog niet hebt verzameld.
 Wil ik bezoeken en Verzameld samen in Mijn bomen.
@@ -212,7 +212,7 @@ What's new:
 
 ```
 Sieh, welche Bäume in deiner Nähe diesen Monat am schönsten sind: Entdecken folgt jetzt der Jahreszeit dort, wo du bist, mit den Rekorden und den schönsten Baumstädten.
-Sammeln ist einfacher: Foto machen, den Baum auswählen, fertig.
+Sammle einen Baum, indem du ihn fotografierst: Foto machen, den Baum auswählen, fertig.
 Füge einen Baum hinzu, den wir noch nicht haben, mit einer Bestätigung, sobald er gespeichert ist.
 Bei geöffneter App erfährst du, wenn du weniger als 50 Meter von einem Baum entfernt stehst, den du noch nicht gesammelt hast.
 Besuchen und Gesammelt zusammen in Meine Bäume.
@@ -275,7 +275,7 @@ What's new:
 
 ```
 Voyez quels arbres près de vous sont à leur plus beau ce mois-ci : Découvrir suit désormais la saison là où vous êtes, avec les records et les plus belles villes d'arbres.
-Collectionner est plus simple : prenez une photo, choisissez l'arbre, c'est fait.
+Collectionnez un arbre en le photographiant : prenez une photo, choisissez l'arbre, c'est fait.
 Ajoutez un arbre que nous n'avons pas encore, avec une confirmation une fois enregistré.
 Avec l'app ouverte, elle vous prévient quand vous êtes à moins de 50 mètres d'un arbre pas encore collectionné.
 À visiter et Collectionnés réunis dans Mes arbres.
@@ -338,7 +338,7 @@ What's new:
 
 ```
 Mira qué árboles cerca de ti están en su mejor momento este mes: Descubrir sigue ahora la estación donde estás, con los récords y las mejores ciudades de árboles.
-Coleccionar es más sencillo: haz una foto, elige qué árbol es y listo.
+Colecciona un árbol fotografiándolo: haz una foto, elige qué árbol es y listo.
 Añade un árbol que aún no tenemos, con una confirmación al guardarlo.
 Con la app abierta, te avisa cuando estás a menos de 50 metros de un árbol que aún no has coleccionado.
 Quiero visitar y Coleccionados juntos en Mis árboles.
@@ -401,7 +401,7 @@ What's new:
 
 ```
 Scopri quali alberi vicino a te sono al loro meglio questo mese: Scopri ora segue la stagione dove ti trovi, con i record e le più belle città degli alberi.
-Collezionare è più semplice: scatta una foto, scegli quale albero è, fatto.
+Colleziona un albero fotografandolo: scatta una foto, scegli quale albero è, fatto.
 Aggiungi un albero che non abbiamo ancora, con una conferma quando è salvato.
 Con l'app aperta, ti avvisa quando sei a meno di 50 metri da un albero che non hai ancora collezionato.
 Da visitare e Collezionati insieme in I miei alberi.
@@ -463,12 +463,12 @@ A aplicação está em inglês. Uma conta é um endereço de e-mail; apague-a e 
 What's new:
 
 ```
-Vê que árvores perto de ti estão no seu melhor este mês: Descobrir segue agora a estação onde estás, com os recordes e as melhores cidades de árvores.
-Colecionar é mais simples: tira uma fotografia, escolhe qual é a árvore e pronto.
-Adiciona uma árvore que ainda não temos, com uma confirmação quando fica guardada.
-Com a app aberta, avisa-te quando estás a menos de 50 metros de uma árvore que ainda não colecionaste.
+Veja que árvores perto de si estão no seu melhor este mês: Descobrir segue agora a estação onde está, com os recordes e as melhores cidades de árvores.
+Colecione uma árvore fotografando-a: tire uma fotografia, escolha qual é a árvore e pronto.
+Adicione uma árvore que ainda não temos, com uma confirmação quando fica guardada.
+Com a app aberta, avisa-o quando está a menos de 50 metros de uma árvore que ainda não colecionou.
 Quero visitar e Colecionadas juntas em As minhas árvores.
-Adiciona uma fotografia a partir da página de qualquer árvore.
+Adicione uma fotografia a partir da página de qualquer árvore.
 Deslocamento mais rápido e muitas pequenas correções.
 ```
 
@@ -527,7 +527,7 @@ What's new:
 
 ```
 近くで今月見ごろの木がわかります。「見つける」が、いまいる場所の季節に合わせて、記録の木や木の名所の街とともに表示します。
-コレクションがもっと簡単に：写真を撮って、どの木か選ぶだけ。
+木は写真を撮って集めます。写真を撮って、どの木か選ぶだけ。
 まだ載っていない木を追加でき、保存すると確認が表示されます。
 アプリを開いているとき、まだ集めていない木の50メートル以内に来るとお知らせします。
 「行きたい」と「集めた」を「マイツリー」にまとめました。
