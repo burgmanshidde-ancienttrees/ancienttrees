@@ -2779,6 +2779,8 @@ Breadcrumbs sit in one thin line under the site header, visible on a phone. Then
 
 **What we took.** Hidde found our form before the tree page asked what the page asks again ("this page asks the same info"). So a tree we do not map goes from the photograph straight to its own tree page as a DRAFT: same layout as the saved page, the Age, Girth and Species "+ Add" fields, the story, the sign photograph, and **Save tree** where Share will be. No "Added to your trees" note until it is saved; after Save the page stays, the note appears and the button becomes Share (the three beats of "Landing after you have added something"). Back on a draft asks "Discard this tree?", Keep editing or Discard. A draft lives on the phone only: never synced, never counted, dropped at the next launch if the app closed on it. "Which one is it" still comes first whenever mapped trees stand nearby, because it is what stops duplicates.
 
+**Changed 2026-10-14 (Hidde: "you then come on almost exactly the same page which should have some confirmation in between").** The note after Save was a 1.5 second HUD over a page that barely changes, and he never saw it. Save now opens a sheet, "Added to your trees", the tree's name, Done, the same moment collecting one of ours gets ("You found …", CollectSheet). Done leaves you on the saved page with Share. His call over Material's one-line acknowledgement above.
+
 ---
 
 ## More than one photograph when adding a tree (2026-09-26)
