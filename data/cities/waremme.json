@@ -35,7 +35,7 @@
       "age_estimate": "about 230 years",
       "age_min": 225,
       "age_max": 235,
-      "girth_cm": null,
+      "girth_cm": 290,
       "location": {
         "address": "Avenue Edmond Leburton 6, Waremme, on the paved plaza in front of the Maison Lejeune-d'Anglure",
         "latitude": 50.6976581,
@@ -45,7 +45,9 @@
       "story": "This lime was planted to mark the anniversary of a republic that Belgium has not belonged to for two hundred years. On 22 September 1797, when Waremme and the rest of what is now Belgium were under French rule, it went into the ground as an arbre de la liberté, a liberty tree, on the anniversary of the founding of the French Republic. The regime it was planted for did not last. The tree did, and it is now about 230 years old.\n\nIt stands on the paved plaza in front of the Maison Lejeune-d'Anglure, a neoclassical house built around 1790, which makes the house the elder of the two by roughly seven years. The house has been classified heritage since 25 August 1987, though that protection is the building's and does not necessarily extend to the tree standing in front of it.\n\nThe position is worth knowing before you go. The tree is out on the street frontage rather than inside the private grounds, so you can walk right up to it from Avenue Edmond Leburton without asking anybody's permission.\n\nBoth sources call it simply a tilleul, a lime, and neither says which of the Tilia species it is. Nobody has taped its girth either. If you know, tell us.",
       "verified_sources": [
         "https://fr.wikipedia.org/wiki/Liste_d%27arbres_remarquables_de_Belgique",
-        "https://fr.wikipedia.org/wiki/Maison_Lejeune-d%27Anglure"
+        "https://fr.wikipedia.org/wiki/Maison_Lejeune-d%27Anglure",
+        "https://www.cirkwi.com/fr/point-interet/617886-l-ancienne-maison-lejeune-d-anglure",
+        "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/AHREM/MapServer/0 (AHREM site 14 tree 1, Tilleul a grandes feuilles, Avenue Edmond Leburton, measured 1992; register comment: 'Ancienne rue Porte de Liege ; arbre de l'Independance'; 19 m from our pin)"
       ],
       "access": "Free, on a paved public plaza/street frontage; the tree stands in front of the house, not inside its private grounds.",
       "transport": "In central Waremme, on foot from the town centre; no public transport stop at the site itself.",
@@ -58,7 +60,12 @@
       "photos": [],
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by where it stands: the lime out on the paved plaza in front of the Maison Lejeune-d'Anglure, the neoclassical house at Avenue Edmond Leburton 6, rather than inside its grounds."
+      "how_to_recognise": "You can recognise it by where it stands: the lime out on the paved plaza in front of the Maison Lejeune-d'Anglure, the neoclassical house at Avenue Edmond Leburton 6, rather than inside its grounds.",
+      "official_register": {
+        "name": "Arbres et haies remarquables de Wallonie (AHREM, SPW), no. site 14, tree 1",
+        "url": null
+      },
+      "height_m": 21
     }
   ]
 }

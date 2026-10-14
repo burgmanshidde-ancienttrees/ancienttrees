@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "waremme+weywertz+wrexham+wye-mills-maryland+zehdenick+aberford",
+    "kind": "enrich",
+    "tokens": 92000,
+    "trees": 0,
+    "note": "enrichment: Walloon AHREM records with girth and height for the Waremme and Weywertz limes (Waremme matched by position and species 19 m away, inference; Weywertz pin refused for a missing URL); Wrexham height 24 m (6.1 m circumference not at 1.3 m, girth withheld); Zehdenick ND 228; Wye Oak State Park hours; Aberford access rewritten (estate out of bounds off the rights of way); 12 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "rudy+sankt-vith+shokawa+solingen+uda+velke-borove",
     "kind": "enrich",
     "tokens": 109000,
