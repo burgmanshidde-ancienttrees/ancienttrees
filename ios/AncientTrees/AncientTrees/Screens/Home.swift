@@ -469,6 +469,12 @@ struct HomeView: View {
             .padding(16)
         }
         .frame(height: 260)
+        // The credit where the photograph's licence asks for one (Heroes.credit).
+        .overlay(alignment: .bottomTrailing) {
+            if let c = Heroes.credit {
+                Text(c).font(.caption2).foregroundStyle(.white.opacity(0.7)).padding(10)
+            }
+        }
         .clipShape(.rect(cornerRadius: 16))
         .padding(.horizontal, 16)
         .accessibilityElement(children: .combine)

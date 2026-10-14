@@ -57,6 +57,17 @@ struct HeroCover: View {
                     .padding(.horizontal, 24)
                     .padding(.bottom, 110)
                 }
+                // Only where the photograph's licence asks for it (General
+                // Sherman, CC BY-SA); small, at the foot, out of the words' way.
+                .overlay(alignment: .bottomLeading) {
+                    if let c = Heroes.credit {
+                        Text(c)
+                            .font(.caption2)
+                            .foregroundStyle(.white.opacity(0.7))
+                            .padding(.horizontal, 24)
+                            .padding(.bottom, 44)
+                    }
+                }
         }
         .background(Color.black)
         .ignoresSafeArea()

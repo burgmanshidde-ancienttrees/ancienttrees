@@ -42,8 +42,24 @@
 import Foundation
 import UIKit
 
+// NEW SET, 2026-10-14 (Hidde picked them from the real cover, side by side:
+// a whole tree, daylight, something for scale, over crown close-ups):
+//   hero-1  Hidde's own photograph, the camphor of Kofuji Tenmangu, Itoshima
+//           (fuk_018 on our map; his, so no credit)
+//   hero-2  Kaijun Zhu, Unsplash (the camphor with the roots, was hero-3;
+//           the one Hidde kept from the first set)
+//   hero-3  General Sherman, Eric Kilby, CC BY-SA 2.0, via Wikimedia Commons
+//           (seq_001). The licence asks for a VISIBLE credit, so `credit`
+//           below carries it and the cover prints it.
 public enum Heroes {
     public static let names = ["hero-1", "hero-2", "hero-3"]
+
+    /// The credit a licence obliges us to show, per photograph; nil where the
+    /// licence asks for none (our own, Unsplash).
+    public static let credits: [String: String] = [
+        "hero-3": "Photo: Eric Kilby, CC BY-SA 2.0",
+    ]
+    public static var credit: String? { credits[current] }
 
     private static let key = "hero.index.v1"
 
