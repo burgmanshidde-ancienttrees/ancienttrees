@@ -79,7 +79,7 @@ struct CollectIntro: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.horizontal, 18)
             Text(addsPhoto ? "Your photograph goes on this tree's page."
-                 : "Photograph a tree you are standing in front of.")
+                 : "Photograph a tree you are standing in front of and add it to your collection.")
                 .font(.system(size: 15))
                 .foregroundStyle(Brand.inkSoft)
                 .multilineTextAlignment(.center)
