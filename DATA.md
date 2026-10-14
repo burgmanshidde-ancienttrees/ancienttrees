@@ -29,25 +29,25 @@ event on the list is unaffected.
 
 **Did the product happen**
 
-| Action | Yesterday | 14 days | Ever | Last |
+| Action | Yesterday | 7 days | Ever | Last |
 |---|---:|---:|---:|---|
-| signin-open | 2 | 87 | 501 | yesterday |
-| app-cta | 2 | 23 | 61 | yesterday |
+| signin-open | 2 | 61 | 501 | yesterday |
+| app-cta | 2 | 18 | 61 | yesterday |
 | signin-oauth | 0 | 4 | 41 | 5 days ago |
 | signin-done | 0 | 1 | 39 | 7 days ago |
-| directions | 0 | 4 | 37 | 5 days ago |
-| search-home | 0 | 16 | 31 | 2 days ago |
-| app-open | 0 | 9 | 19 | 4 days ago |
+| directions | 0 | 1 | 37 | 5 days ago |
+| search-home | 0 | 4 | 31 | 2 days ago |
+| app-open | 0 | 8 | 19 | 4 days ago |
 | suggestion-submit | 0 | 0 | 17 | 19 days ago |
-| home-country | 0 | 6 | 10 | 2 days ago |
-| home-fav | 0 | 5 | 8 | 5 days ago |
+| home-country | 0 | 3 | 10 | 2 days ago |
+| home-fav | 0 | 3 | 8 | 5 days ago |
 | signin-link-sent | 0 | 0 | 6 | 19 days ago |
-| save | 0 | 1 | 5 | 12 days ago |
+| save | 0 | 0 | 5 | 12 days ago |
 | waitlist-submit | 0 | 1 | 5 | 4 days ago |
 | home-dir-tree | 0 | 0 | 3 | 21 days ago |
-| search-explore | 0 | 1 | 3 | 12 days ago |
+| search-explore | 0 | 0 | 3 | 12 days ago |
 | visit | 0 | 0 | 3 | 24 days ago |
-| app-page-badge | 0 | 2 | 2 | 5 days ago |
+| app-page-badge | 0 | 1 | 2 | 5 days ago |
 | home-species | 0 | 0 | 2 | 23 days ago |
 | walks-app | 0 | 0 | 2 | 21 days ago |
 | home-dir-species | 0 | 1 | 1 | 3 days ago |
@@ -56,35 +56,13 @@ event on the list is unaffected.
 | worthit-report detail | 0 | 0 | 1 | 20 days ago |
 | worthit-worth it | 0 | 0 | 1 | 24 days ago |
 | worthit-not worth it | 0 | 0 | 0 | never |
-| **all** | **4** | **161** | **800** | |
+| **all** | **4** | **106** | **800** | |
 - 'Ever' counts every row in the events table, which begins 2026-08-01 when the funnel was repaired. Anything named here with a zero has never fired at all.
 
-**What people typed into our search** (14 days, 13 searches, 12 different terms)
-
-| Typed | Times |
-|---|---:|
-| bruss | 2 |
-| brussel | 1 |
-| cop | 1 |
-| granada | 1 |
-| guimaraes | 1 |
-| lis | 1 |
-| manc | 1 |
-| mu | 1 |
-| oslo | 1 |
-| phila | 1 |
-| portland | 1 |
-| tokyo | 1 |
+**Searched yesterday:** nothing.
 
 | Day | Accounts | Android waitlist | Saves | Trees sent | Feedback | Ambassador asks |
 |---|---:|---:|---:|---:|---:|---:|
-| 09-30 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 10-01 | 3 | 0 | 0 | 0 | 3 | 0 |
-| 10-02 | 0 | 0 | 1 | 0 | 0 | 0 |
-| 10-03 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 10-04 | 0 | 0 | 0 | 1 | 0 | 0 |
-| 10-05 | 2 | 0 | 0 | 1 | 0 | 0 |
-| 10-06 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 10-07 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 10-08 | 1 | 0 | 0 | 0 | 1 | 0 |
 | 10-09 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -93,64 +71,59 @@ event on the list is unaffected.
 | 10-12 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 10-13 | 1 | 0 | 0 | 0 | 2 | 0 |
 | 10-14 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **14 days** | **9** | **1** | **1** | **2** | **6** | **0** |
+| **7 days** | **4** | **1** | **0** | **0** | **3** | **0** |
 
-| Ambassadors | Yesterday | 14 days | Total |
+| Ambassadors | Yesterday | 7 days | Total |
 |---|---:|---:|---:|
-| Granted | 0 | 6 | 6 |
-| Invitations sent (app contributors) | 0 | 7 | 7 |
+| Granted | 0 | 1 | 6 |
+| Invitations sent (app contributors) | 0 | 2 | 7 |
 | Open-seat requests answered | 0 | 0 | 0 |
-- New in 14 days: Hans Erik Lund (Copenhagen) since 2026-10-02, Giulia Torta (Florence) since 2026-10-03, Hugo Veríssimo (Lisbon) since 2026-10-05, Aleš Rudl (Prague) since 2026-10-05, Daniel Daggfeldt (Stockholm) since 2026-10-05, Kerry Pickett (Brighton) since 2026-10-10.
+- New in 7 days: Kerry Pickett (Brighton) since 2026-10-10.
 - Android waitlist: 21 total, newest 4 days ago
 - Submissions: 35 total (19 trees sent, 16 feedback), newest yesterday
 - Accounts:    27 total, newest yesterday
 
-**What readers told us** (14 days, structure only; the words stay in the database)
+**What readers told us** (7 days, structure only; the words stay in the database)
 
 | Day | Tree | What | Note | From | Outcome |
 |---|---|---|---|---|---|
-| 10-01 | lis_030 (The Dragon Tree of Quinta | worth it | - | 08aa | holds |
-| 10-01 | par_031 (The Horse Chestnut of Squ | worth it | - | cfe8 | holds |
-| 10-01 | par_033 (The Turkey Oak of Square  | worth it | - | cfe8 | holds |
-| 10-04 | 8F4E7266-CC24-46B3-9A6D-5E8A94BBA1 | tree sent in | - | cfe8 | open_question |
-| 10-05 | D9C08351-03D1-4B51-A6EC-972F08D308 | tree sent in | 648 chars, read it in the database | cfe8 | changed |
 | 10-08 | The Judas Tree of the Real Alcázar | correction sent in | 92 chars, read it in the database | eed7 | open_question |
 | 10-13 | sev_009 (The Fig of the Glorieta d | worth it | - | c922 | - |
 | 10-13 | - | Location not working on iOS, permi | - | c922 | open_question |
 
-- 8 rows from 4 accounts.
+- 3 rows from 2 accounts.
 
 **The funnel, as rates**
-- Seen to clicked: 4.1% (24 of 591) vs 2.3% the fortnight before
+- Seen to clicked: 5.3% (11 of 209) vs 3.0% the week before
 - Pages per visit: 1.3 (6540 visits, 8260 pageviews since 2026-09-16)
 - Visits that did something: 12.5% (816 actions on 6540 visits)
 
 **What people did in the app**
 
-| What | Yesterday | 14 days | Ever | Last |
+| What | Yesterday | 7 days | Ever | Last |
 |---|---:|---:|---:|---|
-| app_open | 11 | 83 | 306 | yesterday |
-| tab | 1 | 32 | 315 | yesterday |
-| tree_opened | 15 | 255 | 1251 | yesterday |
-| directions | 0 | 7 | 45 | 5 days ago |
-| tree_saved | 1 | 4 | 20 | yesterday |
-| tree_visited | 0 | 13 | 27 | 3 days ago |
-| sighting_recorded | 0 | 20 | 73 | 3 days ago |
+| app_open | 11 | 45 | 306 | yesterday |
+| tab | 1 | 19 | 315 | yesterday |
+| tree_opened | 15 | 74 | 1251 | yesterday |
+| directions | 0 | 4 | 45 | 5 days ago |
+| tree_saved | 1 | 1 | 20 | yesterday |
+| tree_visited | 0 | 4 | 27 | 3 days ago |
+| sighting_recorded | 0 | 1 | 73 | 3 days ago |
 | sync_skipped | 0 | 0 | 0 | never |
 | sync_failed | 0 | 0 | 0 | never |
-| **all** | **28** | **414** | **2037** | |
+| **all** | **28** | **148** | **2037** | |
 - Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
 - 83 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
 - Yesterday came from 2 installs, and the busiest made 27 of 2 events (1350%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
-- Tabs opened (14d): Discover 15; My trees 12; Map 5
+- Tabs opened (7d): Discover 11; My trees 5; Map 3
 - Active phones: 2 in the last day, 24 in the last 7 days, 57 in the last 30 days.
 - Coming back: 24 of those 57 phones opened the app on more than one day (42%).
-- Trees opened by the most phones (14d): The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Cedro de Runa (Runa) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Arenbergpark Plane (Leuven) 2; The Olive Trees of Santo Amaro (Lisbon) 2
+- Trees opened by the most phones (7d): The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Arenbergpark Plane (Leuven) 2; The Magnolia of the Cathedral (Seville) 1; The Fig of the Glorieta de Goya (Seville) 1; The Totteridge Yew (London) 1
 - Where the phones are (30d): United States 13; United Kingdom 7; Portugal 5; Italy 4; The Netherlands 4; Spain 3
-- Trees recorded (14d): a tree we map 18; a tree we do not 2
+- Trees recorded (7d): a tree we map 1
   A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
 
-**Trees collected in the app** (14 days, a person standing at the tree)
+**Trees collected in the app** (7 days, a person standing at the tree)
 
 | Day | Tree | Where | Install | Build | Signed in |
 |---|---|---|---|---|---|
@@ -158,15 +131,6 @@ event on the list is unaffected.
 | 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
 | 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
 | 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
-| 10-05 | The Finer Holm Oak of Edinburgh Gardens | Melbourne | 2D66 | ? | ? |
-| 10-05 | The Southern Mahogany of Edinburgh Gardens | Melbourne | 2D66 | ? | ? |
-| 10-03 | The Larch of Hólavallagarður | Reykjavik | 5781 | ? | ? |
-| 10-03 | The City Hall Maple | Reykjavik | 5781 | ? | ? |
-| 10-03 | The Whitebeam of Víkurgarður | Reykjavik | 5781 | ? | ? |
-| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
-| 10-01 | The Turkey Oak of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
-| 10-01 | The Horse Chestnut of Square Rene-Le Gall | Paris | 0E84 | ? | ? |
-| 10-01 | The Dragon Tree of Quinta Conde dos Arcos | Lisbon | B792 | ? | ? |
 
 **The app as a builder reads it** (this week against the week before; the weakest row is the work)
 
@@ -187,27 +151,23 @@ event on the list is unaffected.
 
 | Day | Downloads |
 |---|---:|
-| 2026-09-30 | 1 |
-| 2026-10-01 | 2 |
-| 2026-10-02 | 1 |
-| 2026-10-03 | 1 |
 | 2026-10-05 | 1 |
 | 2026-10-08 | 4 |
 | 2026-10-09 | 4 |
 | 2026-10-10 | 5 |
 | 2026-10-12 | 1 |
-| **9 days** | **20** |
+| **5 days** | **15** |
 - First-time downloads only, which is what App Store Connect's Trends screen counts; redownloads and updates are not in this table.
 
-**Where the downloads came from** (14 days, Apple's attribution)
+**Where the downloads came from** (7 days, Apple's attribution)
 
 | Came from | Via | Downloads |
 |---|---|---:|
-| App Store search | - | 11 |
-| Web referrer | - | 6 |
-| App referrer | - | 3 |
-| **window** | | **20** |
-- Countries: GB (6); US (6); BE (1); ES (1); FR (1); IE (1)
+| App Store search | - | 8 |
+| Web referrer | - | 5 |
+| App referrer | - | 2 |
+| **window** | | **15** |
+- Countries: US (6); GB (5); BE (1); ES (1); IE (1); SK (1)
 - Apple's own source split, first-time downloads only. "Web referrer" with our own domain is the site's app page; "App Store search" is somebody who typed into the store. "Unavailable" is Apple's word for a source it could not attribute.
 
 **Where demand is going to waste**
@@ -251,7 +211,7 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 10-11 | 53 | 2 | 3.8% | - | - |
 | **7 days** | **550** | **18** | **3.3%** | **641** | **2293** |
 - Week before: 87 impressions, 6 clicks; in index then: 2106. No Bing demotion in sight.
-- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6)
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); oldest live oak trees in new orleans (c1/i2, p6); remarkable trees copenhagen (c1/i2, p4); husalle lindens copenhagen (c1/i2, p3); ancient trees in wiesbaden germany (c1/i2, p6); french trees found in paris (c1/i2, p6)
 - Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
 
 **Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
