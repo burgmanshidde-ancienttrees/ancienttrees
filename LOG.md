@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14, window 23:30 UTC, second attempt: no new trees live
+
+Write pass on the 55 READY leads published nothing: none passes the rich-or-reader rule (no girth, pin or photo; Roosendaal and Delft notes decline them; Barcelona's Huingan is already live as bcn_041 and still shows READY because the name check misses it). Batenburg's chestnut would be rich but is one tree in a new place below four. Miami verify (third pass) found nothing for Miami; one Key West tree (kyw_001, Firehouse Museum mamey, Florida champion, 328 cm) is in data/research/miami-verified.json, flagged, no photo, no recognition line, so not published; three more Key West leads filed (the mangrove is a private house). New refusing hosts: overpass-api.de, wlrn.org, keysweekly.com. Claim released. Cost: write pass about 75k tokens, 0 trees; verify about 130k, 0 live. Next: a photo or pin pass on Roosendaal/Munich, or a Key West recognition line plus two more rich trees to reach four.
+
 ## 2026-10-14, window 23:30 UTC: deploy repaired
 
 7-day visits: 1621 visits, 2340 page views. No reader submissions. Rung 2: the site build had failed since a London tree was recorded as "London Plane (Platanus x hispanica)" while every other city says x acerifolia (hard rule 9, checkSpeciesNames). Changed that one species field in london.json to x acerifolia, preflight 0 problems, pushed; deploy should go green on the next push. iOS scheduled failure (SweepFrames layout drift) untouched, app work. No trees added: the window opened 23:30 and the checkout was 8 commits behind main until pulled.

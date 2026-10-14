@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": "kyw_001",
+    "city": "Key West",
+    "name": "Firehouse Museum Mamey",
+    "species": "Mammee Apple (Mammea americana)",
+    "age_estimate": "roughly 110 years",
+    "age_min": 100,
+    "age_max": 120,
+    "girth_cm": 328,
+    "height_m": 14.9,
+    "location": {
+      "address": "Key West Firehouse Museum, 1026 Grinnell St (corner of Virginia St), Key West, FL 33040",
+      "latitude": 24.55387,
+      "longitude": -81.79298,
+      "neighbourhood": "Old Town"
+    },
+    "verified_sources": [
+      "https://ffs.fdacs.gov/ChampionTrees/Home.mvc/Detail/1077 (Florida Forest Service champion record PK 1077, read via Wayback 2025-08-11)",
+      "https://news.wjct.org/post/happy-birthday-mamey-key-west-museum-holds-party-champion-tree (WLRN/WJCT 2019)",
+      "https://www.keysnews.com/news/local/sweet-station/image_93915a78-32f3-11ef-96e8-cba4dc5e6339.html (Keys News, 2024-06-26 caption)",
+      "https://keywestfire.com/tours-tickets (the museum's own hours and admission)"
+    ],
+    "official_register": {
+      "name": "Florida Champion Tree Program (Florida Forest Service)",
+      "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1077"
+    },
+    "access": "Museum is free (suggested donation $5), open Wednesday to Saturday 10:00 to 14:00, last admission 13:30 (museum's own site, fetched). Register: tree is on City of Key West land between the fire station museum and the building next door. NOT CONFIRMED whether the tree is visible from the Grinnell or Virginia Street sidewalk; no fetched source says.",
+    "transport": "Old Town Key West, corner of Grinnell and Virginia streets; walkable from the Old Town streets (no transit stop verified by a fetched page, writer must not invent one)",
+    "location_precision": "approximate",
+    "location_site": {"name": "Key West Firehouse Museum yard", "radius_m": 30},
+    "curation_status": "flagged",
+    "verify_notes": "ONE register plus two news items. Register: Florida Champion (status date 2015-04-27), remeasured 2018-02-27 by county forester Mark Torok: circumference 129 in (328 cm) at 4.5 ft, height 49 ft (14.9 m), crown 57 x 41 ft, 190 points, condition 'Fair (Mature, declining)', non-native, owner City of Key West, nominator Janet Burch, coordinate 24.55387,-81.79298, location text 'between the fire station (museum) and the building next door'. Register measurement is from 2018: 8 years before today. Species: register says Mammea americana ('Mammee apple / Mamey'). News calls it only 'mamey' and 'the state champion mamey tree, the largest of its kind in Florida'; neither news item states a Latin name, so the Latin name rests on the register alone (note 'mamey' is also the common name of Pouteria sapota, a different species; the register's own record says Mammea americana). Age: no documented planting date. WLRN 2019: firehouse built 1908, tree planted 'a few years later', volunteers hold a '105th birthday party' as a best guess from the roughly 21 years a mamey needs to start fruiting. Keys News 2024-06-26 caption: 'Champion mamey tree is 115 years old'. Both are the museum's estimate, not a measurement; hence the broad 100 to 120 range, derived and vague. Alive: fruiting in June 2024 (Keys News caption: its fruit made the museum's mamey ice cream for the annual social); lifecheck.py returned NONE (no CC observation), so the 2024 news item is the alive evidence; flag, register said 'declining' in 2018. Anecdote for the writer: the museum holds an annual mamey ice cream social using fruit from this tree. Museum address is 1026 Grinnell (register, WLRN, keywestfires.org) or 1024 Grinnell (museum's current site, Visit Florida Keys); the museum is Alex Vega Key West Firehouse Museum, Firehouse No. 3 built 1908. Findable: no photograph found (Commons geosearch within 150 m returned only Sloppy Joe's and fire station photos, none of the tree; iNaturalist no CC observation of Mammea americana within 100 m). Pin: register point, not tied to one visible crown by us, so approximate with the museum yard as the small named site. Register has six attached tree pictures (pic 943-945, 1537-1539) but licence unknown, not used. Recognition line must come from the entry alone: the champion mamey tree in the yard beside the Firehouse Museum at Grinnell and Virginia. Still needed to be RICH: a recognition line (writer) is enough since site plus line is findable; a photo or confirmed pin would be better."
+  }
+]
