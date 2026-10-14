@@ -113,7 +113,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683845&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683845&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683845&outFields=*&f=json (LRMB record: locatie 'Splitsing Hilvertsweg - Bosdrift', plantsoen, planted 1937 beside the Juliana lime, stones at the foot)"
       ],
       "access": "Free, public planting, always open.",
       "photo": {
@@ -137,7 +138,11 @@
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683845",
         "url": null
       },
-      "girth_cm": 302
+      "girth_cm": 302,
+      "location_site": {
+        "name": "the Juliana and Bernhard trees at the Hilvertsweg and Bosdrift junction",
+        "radius_m": 30.0
+      }
     },
     {
       "id": "hil_005",
@@ -154,7 +159,8 @@
       },
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683769&outFields=*&f=json"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683769&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1683769&outFields=*&f=json (LRMB record: locatie 'Splitsing Hilvertsweg - Bosdrift', plantsoen, planted 1937 beside the Bernhard chestnut, stones at the foot)"
       ],
       "access": "Free, public planting, always open.",
       "photo": {
@@ -179,7 +185,11 @@
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1683769",
         "url": null
       },
-      "girth_cm": 206
+      "girth_cm": 206,
+      "location_site": {
+        "name": "the Juliana and Bernhard trees at the Hilvertsweg and Bosdrift junction",
+        "radius_m": 30.0
+      }
     },
     {
       "id": "hil_006",

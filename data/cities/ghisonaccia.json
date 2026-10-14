@@ -47,7 +47,7 @@
         "https://ghisonaccia.fr/arburacellu-larbre-oiseau---notre-chene-liege-representera-la-corse-au-concours-2018-du-plus-bel-arbre-de-france./",
         "https://www.corseorientale.com/A-voir-A-faire/Les-incontournables/L-ARBUR-ACELLU-CHENE-LIEGE-GHISONACCIA"
       ],
-      "access": "Free, beside a rural lane near Gattone, with no gate or ticket; listed by the Corse Orientale tourist office among the sights of the area",
+      "access": "Free to see from a rural lane near Gattone, with no gate or ticket; the ground itself is private (the label record lists it as private land), so look from the lane. Listed by the Corse Orientale tourist office among the sights of the area",
       "transport": "Rural Corsican plain, reached by car; nearest town is Ghisonaccia",
       "photo": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/2019_The_bird-tree_FR.jpg",
@@ -60,7 +60,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it by its bark, deformed by an old lightning strike into three outgrowths that from the right angle read as a bird with wings spread. It stands beside a rural lane near Gattone, outside Ghisonaccia."
+      "how_to_recognise": "You can recognise it by its bark, deformed by an old lightning strike into three outgrowths that from the right angle read as a bird with wings spread. It stands beside a rural lane near Gattone, outside Ghisonaccia.",
+      "official_register": {
+        "name": "Arbres Remarquables de France label (A.R.B.R.E.S.), no. 1420",
+        "url": null
+      },
+      "height_m": 18
     },
     {
       "id": "arb_002",
@@ -69,7 +74,7 @@
       "age_estimate": "700 to 1000 years",
       "age_min": 700,
       "age_max": 1000,
-      "girth_cm": null,
+      "girth_cm": 190,
       "location": {
         "address": "Lieu-dit Gattone, near Ghisonaccia-gare, Haute-Corse, Corsica",
         "latitude": 42.04076,
@@ -94,7 +99,12 @@
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
-      "how_to_recognise": "You can recognise it as a mastic grown into a tree rather than a shrub, its roots worked into the stonework of a Roman-era ruin, inside a small fenced enclosure. It stands on the Gattone plain south of Ghisonaccia."
+      "how_to_recognise": "You can recognise it as a mastic grown into a tree rather than a shrub, its roots worked into the stonework of a Roman-era ruin, inside a small fenced enclosure. It stands on the Gattone plain south of Ghisonaccia.",
+      "official_register": {
+        "name": "Arbres Remarquables de France label (A.R.B.R.E.S.), no. 84",
+        "url": null
+      },
+      "height_m": 7
     }
   ]
 }

@@ -24,6 +24,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Žilina, Český Krumlov, Chikubushima, Dengfeng, Fort Lauderdale: 12 trees enriched. Žilina's lindens and maple got their Slovak register ids (S 187, S 188; figures via sk.wikipedia because the register pages need JavaScript; the maple's register names it sugar maple but gives the Latin for silver maple, open). Two Krumlov lindens got a June flowering season and the monastery garden its ticket prices and October tour days. Four Fort Lauderdale trees got their Florida Champion Tree Register ids. Dengfeng had only a news article, nothing taken. 9 gaps dead-ended. Preflight 0 problems.
 
+- Ghisonaccia, Gonzales, Heerlen, Hilversum: 6 trees enriched. The two Ghisonaccia cork oaks got their Arbres Remarquables label ids (1420, 84). **Published access corrected:** the Arburacellu's label record lists the ground as private, so its access line now says to look from the lane instead of "no gate". Sam Houston Oak access says private, viewed from CR 361. Heerlen lime got a June to July flowering season; Hilversum's two 1937 trees a 30 m site. The Terworm ginkgo (hee_008) is "Afgekeurd" (rejected) in the Dutch register, no measurement taken, left published but unconfirmed. 9 gaps dead-ended. Preflight 0 problems.
+
 ## 2026-10-14 night run, 00:24 window
 
 - Visits last 7 days: 1,491. Rung 1 empty. Rung 2: iOS scheduled run failed on one test, `testEveryFlowLeavesAWayBack` (tap on "person-follow" button found no match); needs a simulator session, not fixable from this runner. Smoke "skipped" is the push-trigger default.
