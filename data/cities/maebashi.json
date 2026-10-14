@@ -50,7 +50,9 @@
       "story": "Japan keeps a short list of its three greatest kaya trees, and this one earns its place by sheer girth: 8.1 metres round, a trunk that makes even its two neighbours on the list, in Saitama and Hamamatsu, look modest.\n\nThe age is genuinely contested. A 1991 government survey called it just over 300 years old. The shrine tradition on site says over 1,000. Nobody has settled it, and the honest answer is to give both figures rather than pick a favourite. What nobody disputes is the size, and a Japanese Torreya at this circumference is a rare thing on its own, superlative trio or not.\n\nA Suwa Shrine occupied this ground from 1749 until 1907, when it moved elsewhere and the Kanazawa family took over the plot. They have kept the tree as sacred ground in the century since, on land that is privately theirs, and let anyone come and look at no charge.\n\nThe National Natural Monument designation is dated 1920 by most sources, 1933 by one. 1920 is the figure the government's own heritage database uses, and the one used here.",
       "verified_sources": [
         "https://bunka.nii.ac.jp/heritages/detail/204933",
-        "https://ja.wikipedia.org/wiki/%E6%A8%AA%E5%AE%A4%E3%81%AE%E5%A4%A7%E3%82%AB%E3%83%A4"
+        "https://ja.wikipedia.org/wiki/%E6%A8%AA%E5%AE%A4%E3%81%AE%E5%A4%A7%E3%82%AB%E3%83%A4",
+        "https://online.bunka.go.jp/heritages/detail/204933 (目通幹囲約7.3メートル)",
+        "https://online.bunka.go.jp/heritages/detail/204933"
       ],
       "access": "Free. Stands on privately owned land (the Kanazawa family, who have held it since a Suwa Shrine on the site was relocated in 1907) but is open to the public for viewing at no charge.",
       "transport": "In Fujimi-cho, Maebashi City, Gunma Prefecture; nearest station and walk time not established this pass.",
@@ -65,7 +67,11 @@
         "height": 4000,
         "taken_month": 6
       },
-      "how_to_recognise": "You can recognise it by its trunk, 8.1 metres round, the thickest of Japan's three great kaya trees. It stands on the Kanazawa family's private land at Yokomuro, Fujimi-cho, on ground a Suwa Shrine once occupied."
+      "how_to_recognise": "You can recognise it by its trunk, 8.1 metres round, the thickest of Japan's three great kaya trees. It stands on the Kanazawa family's private land at Yokomuro, Fujimi-cho, on ground a Suwa Shrine once occupied.",
+      "official_register": {
+        "name": "国指定文化財等データベース (文化庁), 天然記念物 designated 1933-04-13",
+        "url": "https://online.bunka.go.jp/heritages/detail/204933"
+      }
     },
     {
       "id": "mae_002",
@@ -74,7 +80,7 @@
       "age_estimate": "second-generation tree, about 35-40 years old",
       "age_min": 35,
       "age_max": 40,
-      "girth_cm": null,
+      "girth_cm": 260,
       "location": {
         "address": "6 Kezoji-cho, Isesaki, Gunma, Japan (Kezoji temple grounds, south of the kitchen building, adjoining Kezoji Park)",
         "latitude": 36.341013,
@@ -85,7 +91,8 @@
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E8%8F%AF%E8%94%B5%E5%AF%BA%E3%81%AE%E3%82%AD%E3%83%B3%E3%83%A2%E3%82%AF%E3%82%BB%E3%82%A4",
         "https://gunma-kanko.jp/features/399",
-        "https://online.bunka.go.jp/heritages/detail/190342"
+        "https://online.bunka.go.jp/heritages/detail/190342",
+        "https://online.bunka.go.jp/heritages/detail/190342 (目通幹圍約2.6メートル)"
       ],
       "access": "Free. Temple grounds adjoining the public Kezoji Park; the tree stands behind a protective fence but is visible and reachable without booking or permission. Accessible by bus from Isesaki Station or about 5 minutes by car from the nearby expressway interchange.",
       "transport": "Bus from JR Isesaki Station toward Kezoji; roughly 5 minutes by car from the nearest expressway interchange. No station-to-door walk time found.",
@@ -107,7 +114,11 @@
         "height": 4000,
         "taken_month": 10
       },
-      "how_to_recognise": "You can recognise it as the young tree behind the low protective fence, south of the kitchen building. The famous original died; this one grew off its root and is about 35 to 40 years old."
+      "how_to_recognise": "You can recognise it as the young tree behind the low protective fence, south of the kitchen building. The famous original died; this one grew off its root and is about 35 to 40 years old.",
+      "official_register": {
+        "name": "国指定文化財等データベース (文化庁), 天然記念物 designated 1937-06-15",
+        "url": "https://online.bunka.go.jp/heritages/detail/190342"
+      }
     }
   ]
 }

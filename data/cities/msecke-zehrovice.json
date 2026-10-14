@@ -39,7 +39,8 @@
       },
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Buk_v_M%C5%A1eck%C3%BDch_%C5%BDehrovic%C3%ADch",
-        "https://www.msecke-zehrovice.cz/turista/buk-u-mseckych-zehrovic/"
+        "https://www.msecke-zehrovice.cz/turista/buk-u-mseckych-zehrovic/",
+        "https://cs.wikipedia.org/wiki/Buk_v_M%C5%A1eck%C3%BDch_%C5%BDehrovic%C3%ADch (AOPK register values; protected since 1978-07-25)"
       ],
       "access": "Free. Stands beside the road on the north edge of the village, near a double bend; publicly visible from the roadside, no restriction.",
       "transport": "No public transport to the exact spot; Msecke Zehrovice is served by regional bus, tree is a short walk from the village.",
@@ -64,7 +65,12 @@
         ],
         "label": "October to November: copper and russet, and young trees keep dead leaves all winter",
         "kind": "autumn colour"
-      }
+      },
+      "official_register": {
+        "name": "AOPK CR Pamatne stromy (ÚSOP/DRUSOP), no. 103386",
+        "url": null
+      },
+      "height_m": 21
     }
   ]
 }

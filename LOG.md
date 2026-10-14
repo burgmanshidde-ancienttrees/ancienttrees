@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 14:50 run: reader photos judged, one enrichment pass
+
+Visits, 7 days: 1569 visits, 2266 page views. Rung 1: two app photographs were waiting, both ours. The Cantonspark redwood one is a laptop, rejected (wrong subject). The Noike cedars one is a good cedar by the torii, held because it is ours and the tree already has an approved photo. Rung 4: munich refused (62 of 60 trees), so I took enrichment instead: lulin+maebashi+martinique+maxaranguape+mendaza+millena+moffat+mrakotin+msecke-zehrovice. Six trees got facts: two Maebashi national monument records with girth, Lulin, Mendaza, Mrakotin and Msecke Zehrovice measurements, AOPK ids for the Czech two. The other four had no usable source and 13 gaps are dead-ended. Preflight 0 problems. No refused commands.
+
 ## 2026-10-14 session: the digest leaves our own Google searches out
 
 Nothing changed in the product. The follow-up below is done: the daily digest now takes `site:` searches and operator searches (a query starting with + or %, or carrying +"...", also inurl:/intitle:) out of every per-page Google number before anything reads them. The rule lives once in `own_search()` in scripts/ours.py; `drop_own_searches()` in scripts/daily_digest.py subtracts those page x query rows at fetch time, so "Depth is allowed", "Google, from the new floor", "Is enriching working", the top queries and pages, and the city queue (promote) all read the cleaned numbers. A stranger's `-site:reddit.com` stays theirs; anonymised impressions stay. The Google table now says how many impressions were left out. `daily_digest.py --selftest` covers the Prague shape and runs in data-digest.yml before the entry is written. Not covered: the day-by-day totals (no query split per day) and the previous window in the paused trend section. Next digest: Prague stays under Depth-allowed only if readers, not we, give it 10+ impressions.
