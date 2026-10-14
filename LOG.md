@@ -14,7 +14,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-14 session: digest top is readers only
 
 - Live: the daily digest opens with the trees readers gave, each linked to its page when live. The night run's photo approvals moved lower, to their own table, with their overrule commands. Our own rows and the lines that counted our testing are gone from the digest. Today's entry was rewritten that way.
-- Found: a reader (10-13) says iOS location cannot be turned on in Settings. Cause: the app only asks when the "Location off" chip or the recentre button is tapped, so until then iPhone Settings shows no Location row. Fix goes in the next app drop.
+- Found: a reader (10-13) says iOS location cannot be turned on in Settings. Cause: the app only asks when the "Location off" chip or the recentre button is tapped, so until then iPhone Settings shows no Location row.
+- On main for the next app drop: the app asks for location on the first open (map first, then iOS's own question), the chip stays while it is off, and Profile > Preferences > Location (On/Off) asks or opens Settings. LocationAskWalk guards it; the full suite on the iOS 18 SE passed apart from three tests that also fail without this change (search and Undo were flaky and passed on rerun; SignedOutWalk.testSeenTickAsks fails locally on main too). The reader got a reply with today's workaround (row 405).
+- The digest now costs far fewer tokens: sessions show it as a page (scripts/show_digest.py), the frozen roster is one line, and the photo overrule is `photo_apply.py hold <id>`. That overrule never worked for most night-run approvals (upload url vs the queue's Commons page url); it matches by file name now, 30 of 30.
+- Not fixed: FlowWalk's find-people flow fails only on GitHub's iOS 18 runner and passes locally; the floor job saves no xcresult to look at.
 
 ## 2026-10-14 night run, 03:09 window
 
