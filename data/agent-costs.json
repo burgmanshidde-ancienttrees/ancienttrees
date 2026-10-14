@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "santa-maria-del-tule+schlagsdorf+schlettau+seja+sliven+soreze+sremski-karlovci+st-georgen-im-attergau+stoutenburg+suzuka",
+    "kind": "enrich",
+    "tokens": 54000,
+    "trees": 0,
+    "note": "enrichment: Tule access line, Seja oak, Soreze beech and St Georgen lime measurements; six trees no citable source; 19 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "port-renfrew+portalegre+prety+ramsau-bei-berchtesgaden+rannee+reyersviller+runa+s-gravenvoeren+sachsenbrunn",
     "kind": "enrich",
     "tokens": 74000,
