@@ -15,6 +15,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Visits last 7 days: 1,350. Rung 1 empty, rung 2 clear (health.py), so rung 4 enrichment.
 - Enrichment of Indianapolis, Iwata, Jachymov, Jerceni, Jihlava, Kasukabe, Kawago, Kawatana, Kawazu (10 trees): register records for Jachymov, Jihlava, Kasukabe, Kawago, Kawatana, Kawazu, Kitahama; girth and height for eight; Iwata wisteria (April) and Jihlava copper beech (autumn) best_time. Open: Indianapolis and Jerceni register, Kasukabe pin. Preflight 0 problems.
+- Second batch (Kimotsuki, Knappfors, Koenigslutter, Komjatice, Kopcany, Kozaki, Lecina, Les Clayes-sous-Bois, Letenye, Liernu): Kimotsuki and Kozaki got national natural monument records, Lecina its Aragon singular-tree sheet, all three with measurements. The other seven stay open (only Wikipedia, press or Tree of the Year figures, withheld); 17 gaps dead-ended. Preflight 0 problems.
 
 ## 2026-10-14 session: digest top is readers only
 

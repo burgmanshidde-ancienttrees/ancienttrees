@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "kimotsuki+knappfors+koenigslutter+komjatice+kopcany+kozaki+lecina+les-clayes-sous-bois+letenye+liernu",
+    "kind": "enrich",
+    "tokens": 59000,
+    "trees": 0,
+    "note": "enrichment: Kimotsuki and Kozaki national natural monument records with measurements, Lecina Aragon singular tree sheet with girth and height; Koenigslutter, Komjatice, Letenye, Liernu girths only from Wikipedia, press or Tree of the Year pages, withheld; Knappfors no source; 17 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "indianapolis+iwata+jachymov+jerceni+jihlava+kasukabe+kawago+kawatana+kawazu",
     "kind": "enrich",
     "tokens": 59000,
