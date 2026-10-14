@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "vytogala+westerlo+wilparting+wisniowa+wolfheze+yamanashi-city+yangshuo+yoshida+zalgiriai+zwieslerwaldhaus",
+    "kind": "enrich",
+    "tokens": 84000,
+    "trees": 0,
+    "note": "enrichment: Westerlo, Wolfheze, Yamanashi, Yoshida, Zalgiriai records, Zalgiriai and Zwieslerwaldhaus girth and height, Yamanashi girth from the Environment Ministry database, Wisniowa height; Wisniowa girth withheld (height of measure unstated); Zwieslerwaldhaus GPS pin refused (no source URL); three dead ends; 4 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "stokaiciai+untermerzbach+uzovska-panica+valdemarpils+velke-opatovice+velp+vepriai+villamudria+volkenroda+vorden",
     "kind": "enrich",
     "tokens": 90000,
