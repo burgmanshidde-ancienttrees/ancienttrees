@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14, late retry: Trieste in Italian
+
+- **Trieste now has an Italian page**: title, intro, oldest-tree question page and all 36 trees (data/i18n/it/trieste.json). i18ncheck and preflight clean. It was the only city over 10 English impressions still untranslated.
+- Needs a fix in the English: tri_009 ("outlived the square's own name twice over" reads as nonsense); tri_023 to tri_027 age field says about 130 years but the stories say 115 to 170.
+- Left the 51 READY leads unwritten on purpose (ordinary street trees, recovery mode wants new trees rich). enrich.py has nothing left anywhere.
+- Not touched: the iOS workflow failure from session start.
+
 ## 2026-10-14, retry of the 19:17 window: Como in Italian
 
 - **Como now has an Italian page**: title, intro, question page and all 9 trees (data/i18n/it/como.json). i18ncheck and preflight clean. Taken as the translate backup because `enrich.py --next` said nothing to do anywhere. Italian is still unproven and Como has 12 English impressions, so this is a small bet.
