@@ -2,26 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-24T00:28:10+00:00",
-   "date": "2026-08-24",
-   "run_id": "32676765476",
-   "minutes": 11.6,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 96,
-   "denials": 14,
-   "denials_source": "permission_denials: Bash(cat), Bash(curl), Bash(echo), Bash(for), Bash(if), Bash(mkdir), Bash(python3), Bash(rm)",
-   "ended": "success",
-   "tokens": 15267723,
-   "claims_held": [
-    "krakow"
-   ],
-   "commits": 5,
-   "cities_touched": 1,
-   "trees": 6,
-   "logged": false
-  },
-  {
    "started": "2026-08-24T02:52:51+00:00",
    "date": "2026-08-24",
    "run_id": "32684501757",
@@ -23851,6 +23831,252 @@
     }
    ],
    "trees": 1,
+   "logged": true
+  },
+  {
+   "started": "2026-10-14T20:46:36+00:00",
+   "date": "2026-10-14",
+   "run_id": "38627791440",
+   "minutes": 40.0,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 120,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 281637,
+   "claims_held": [
+    "vienna"
+   ],
+   "commits": 24,
+   "cities_touched": 56,
+   "cities": [
+    {
+     "city": "alicante",
+     "trees": 0
+    },
+    {
+     "city": "como",
+     "trees": 0
+    },
+    {
+     "city": "coromandel-forest-park",
+     "trees": 0
+    },
+    {
+     "city": "fujikawaguchiko",
+     "trees": 0
+    },
+    {
+     "city": "krakow",
+     "trees": 0
+    },
+    {
+     "city": "malsfeld",
+     "trees": 0
+    },
+    {
+     "city": "minamialps",
+     "trees": 0
+    },
+    {
+     "city": "miriam-vale",
+     "trees": 0
+    },
+    {
+     "city": "mito",
+     "trees": 0
+    },
+    {
+     "city": "nago",
+     "trees": 0
+    },
+    {
+     "city": "naples",
+     "trees": 0
+    },
+    {
+     "city": "neba",
+     "trees": 0
+    },
+    {
+     "city": "nedvedice",
+     "trees": 0
+    },
+    {
+     "city": "nichinan-tottori",
+     "trees": 0
+    },
+    {
+     "city": "odawara",
+     "trees": 0
+    },
+    {
+     "city": "oguni",
+     "trees": 0
+    },
+    {
+     "city": "ono",
+     "trees": 0
+    },
+    {
+     "city": "padua",
+     "trees": 0
+    },
+    {
+     "city": "pelham",
+     "trees": 0
+    },
+    {
+     "city": "pemberton",
+     "trees": 0
+    },
+    {
+     "city": "polchow",
+     "trees": 0
+    },
+    {
+     "city": "poleski-national-park",
+     "trees": 0
+    },
+    {
+     "city": "prosec-pod-jestedem",
+     "trees": 0
+    },
+    {
+     "city": "radomsko",
+     "trees": 0
+    },
+    {
+     "city": "rumskulla",
+     "trees": 0
+    },
+    {
+     "city": "santalfio",
+     "trees": 0
+    },
+    {
+     "city": "shimizu",
+     "trees": 0
+    },
+    {
+     "city": "shingu",
+     "trees": 0
+    },
+    {
+     "city": "shinkamigoto",
+     "trees": 0
+    },
+    {
+     "city": "sittard-geleen",
+     "trees": 0
+    },
+    {
+     "city": "stockholm",
+     "trees": 0
+    },
+    {
+     "city": "stokaiciai",
+     "trees": 0
+    },
+    {
+     "city": "taasinge",
+     "trees": 0
+    },
+    {
+     "city": "tatobity",
+     "trees": 0
+    },
+    {
+     "city": "teleci",
+     "trees": 0
+    },
+    {
+     "city": "tillamook",
+     "trees": 0
+    },
+    {
+     "city": "toga",
+     "trees": 0
+    },
+    {
+     "city": "trento",
+     "trees": 0
+    },
+    {
+     "city": "trollskogen",
+     "trees": 0
+    },
+    {
+     "city": "turin",
+     "trees": 0
+    },
+    {
+     "city": "untermerzbach",
+     "trees": 0
+    },
+    {
+     "city": "velp",
+     "trees": 0
+    },
+    {
+     "city": "vepriai",
+     "trees": 0
+    },
+    {
+     "city": "villamudria",
+     "trees": 0
+    },
+    {
+     "city": "vorden",
+     "trees": 0
+    },
+    {
+     "city": "vytogala",
+     "trees": 0
+    },
+    {
+     "city": "westerlo",
+     "trees": 0
+    },
+    {
+     "city": "wisniowa",
+     "trees": 0
+    },
+    {
+     "city": "wolfheze",
+     "trees": 0
+    },
+    {
+     "city": "yabu",
+     "trees": 0
+    },
+    {
+     "city": "yamanashi-city",
+     "trees": 0
+    },
+    {
+     "city": "yoshida",
+     "trees": 0
+    },
+    {
+     "city": "zalgiriai",
+     "trees": 0
+    },
+    {
+     "city": "zwieslerwaldhaus",
+     "trees": 0
+    },
+    {
+     "city": "zywiec",
+     "trees": 0
+    },
+    {
+     "city": "rambynas",
+     "trees": -1
+    }
+   ],
+   "trees": -1,
    "logged": true
   }
  ],
