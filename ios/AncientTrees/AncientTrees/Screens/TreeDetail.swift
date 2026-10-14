@@ -2165,7 +2165,7 @@ struct TreeDetail: View {
                     .accessibilityLabel("Take me there")
                 } else {
                     Button { openCollectChoice() } label: {
-                        barCircle(collected ? "checkmark.seal.fill" : "checkmark.seal", on: collected)
+                        barCircle(collected ? "checkmark.seal.fill" : "camera", on: collected)
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("tree-add-photo-bar")

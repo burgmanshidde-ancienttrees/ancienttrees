@@ -122,7 +122,7 @@ const tall = !!(photo && photo.url && leadDims.width && leadDims.width / leadDim
 // its middle, so the column keeps one proportion beside the facts.
 const tallAr = tall ? Math.max(leadDims.width / leadDims.height, 0.75) : 0;
 // The seal, empty and filled, painted by aria-pressed like the bookmark.
-const sealOff = icon("seal-check", "bold", "ic seal-off");
+const sealOff = icon("camera", "bold", "ic seal-off");
 const sealOn = icon("seal-check", "fill", "ic seal-on");
 ---
 <main class:list={["content-page", "td-page", { "td-tall": tall }]}
