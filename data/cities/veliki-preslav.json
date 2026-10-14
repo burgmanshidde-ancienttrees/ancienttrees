@@ -48,7 +48,8 @@
       "verified_sources": [
         "https://www.treeoftheyear.org/previous-years/2021/The-Old-Mulberry",
         "https://news.bg/society/450-godishna-chernitsa-stana-darvo-s-koren-za-2020-g.html",
-        "https://bnr.bg/radiobulgaria/post/101416184/450-godishna-chernica-v-konkursa-evropeisko-darvo-na-godinata-2021"
+        "https://bnr.bg/radiobulgaria/post/101416184/450-godishna-chernica-v-konkursa-evropeisko-darvo-na-godinata-2021",
+        "https://www.treeoftheyear.org/previous-years/2021/The-Old-Mulberry (the entry says the tree stands at the central town square, now a public garden with a fountain, and gives GPS N 43 9' 42.48'', E 26 48' 35.15'')"
       ],
       "access": "Free, in a public garden/square with a fountain in the centre of Veliki Preslav; a community gathering spot, open ground with no restrictions.",
       "transport": "Small town centre, walkable from anywhere in Veliki Preslav; no metro or rail, reached by road (Veliki Preslav is on route 73/E772 between Shumen and Zavet, roughly 20km from Shumen).",
@@ -60,7 +61,11 @@
       },
       "photos": [],
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Public garden with fountain on the central square, Veliki Preslav",
+        "radius_m": 40.0
+      }
     }
   ]
 }

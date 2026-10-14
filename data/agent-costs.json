@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "siquijor+stratfield-saye+veliki-preslav+villeneuve+achnacarry+alishan",
+    "kind": "enrich",
+    "tokens": 109000,
+    "trees": 0,
+    "note": "enrichment: two Alishan trees got the scenic area authority pages with girth (diameter x pi) and height 45 m, Sianglin pin moved 285 m; Veliki Preslav mulberry 40 m square site; Siquijor balete pin from an iNaturalist 4 m fix; Achnacarry entry dropped because its only record was Woodland Trust Ancient Tree Inventory (off limits); Stratfield Saye and Villeneuve nothing; 17 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "kaunas+koriyama+krka-national-park+morioka+pesselieres+rhenen",
     "kind": "enrich",
     "tokens": 113000,
