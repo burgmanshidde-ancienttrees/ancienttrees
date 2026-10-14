@@ -116,7 +116,7 @@ event on the list is unaffected.
 | 10-05 | D9C08351-03D1-4B51-A6EC-972F08D308 | tree sent in | 648 chars, read it in the database | cfe8 | changed |
 | 10-08 | The Judas Tree of the Real Alcázar | correction sent in | 92 chars, read it in the database | eed7 | open_question |
 | 10-13 | sev_009 (The Fig of the Glorieta d | worth it | - | c922 | - |
-| 10-13 | - | Location not working on iOS, permi | - | c922 | - |
+| 10-13 | - | Location not working on iOS, permi | - | c922 | open_question |
 
 - 8 rows from 4 accounts.
 
@@ -145,7 +145,7 @@ event on the list is unaffected.
 - Tabs opened (14d): Discover 15; My trees 12; Map 5
 - Active phones: 2 in the last day, 24 in the last 7 days, 57 in the last 30 days.
 - Coming back: 24 of those 57 phones opened the app on more than one day (42%).
-- Trees opened by the most phones (14d): The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Olive Trees of Santo Amaro (Lisbon) 2; The Arenbergpark Plane (Leuven) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Cedro de Runa (Runa) 2
+- Trees opened by the most phones (14d): The Dragon Tree of Quinta Conde dos Arcos (Lisbon) 2; The Cedro de Runa (Runa) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Arenbergpark Plane (Leuven) 2; The Olive Trees of Santo Amaro (Lisbon) 2
 - Where the phones are (30d): United States 13; United Kingdom 7; Portugal 5; Italy 4; The Netherlands 4; Spain 3
 - Trees recorded (14d): a tree we map 18; a tree we do not 2
   A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
@@ -172,12 +172,12 @@ event on the list is unaffected.
 
 | Link | This week | Week before |
 |---|---|---|
-| New phones | 15 | 6 |
-| First day: opened a tree | 9 of 15 (60%) | 5 of 6 (83%) |
+| New phones | 16 | 6 |
+| First day: opened a tree | 10 of 16 (62%) | 5 of 6 (83%) |
 | First day: opened a tree near them | - | - |
 | First day: allowed location | - | - |
-| First day: Take me there | 1 of 15 (7%) | 1 of 6 (17%) |
-| First day: collected a tree | 2 of 15 (13%) | 2 of 6 (33%) |
+| First day: Take me there | 1 of 16 (6%) | 1 of 6 (17%) |
+| First day: collected a tree | 2 of 16 (12%) | 2 of 6 (33%) |
 | Back within a week | 4 of 6 (67%) | 8 of 15 (53%) |
 | Trees collected (all phones) | 4 | 11 |
 - Near and location count only phones on a version that sends them (from 2026-10-10); a dash means none yet.
@@ -251,7 +251,7 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 10-11 | 53 | 2 | 3.8% | - | - |
 | **7 days** | **550** | **18** | **3.3%** | **641** | **2293** |
 - Week before: 87 impressions, 6 clicks; in index then: 2106. No Bing demotion in sight.
-- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3)
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6)
 - Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
 
 **Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
@@ -284,262 +284,8 @@ What we did (context, proves nothing by itself): 2916 trees Google may index, 75
 | prague | 0 | 294 | 0.0% | 5.6 | 5.7% | prague (i17, p1) |
 | sequoia-national-park | 0 | 24 | 0.0% | 73.4 | 0.4% | general sherman tree california (i5, p74) |
 | brussels | 3 | 12 | 25.0% | 10.9 | 2.2% | klint white mulberry (i2, p52) |
-| singapore | 4 | 359 | - | - | - | frozen 09-27 roster |
-| lisbon | 5 | 316 | - | - | - | frozen 09-27 roster |
-| amsterdam | 7 | 284 | - | - | - | frozen 09-27 roster |
-| barcelona | 3 | 284 | - | - | - | frozen 09-27 roster |
-| seville | 7 | 259 | - | - | - | frozen 09-27 roster |
-| bath | 9 | 255 | - | - | - | frozen 09-27 roster |
-| tenerife | 3 | 241 | - | - | - | frozen 09-27 roster |
-| berlin | 5 | 224 | - | - | - | frozen 09-27 roster |
-| rome | 3 | 221 | - | - | - | frozen 09-27 roster |
-| palermo | 2 | 216 | - | - | - | frozen 09-27 roster |
-| oahu | 1 | 213 | - | - | - | frozen 09-27 roster |
-| tokyo | 5 | 209 | - | - | - | frozen 09-27 roster |
-| munich | 8 | 206 | - | - | - | frozen 09-27 roster |
-| new-york | 3 | 188 | - | - | - | frozen 09-27 roster |
-| edinburgh | 8 | 173 | - | - | - | frozen 09-27 roster |
-| dublin | 6 | 168 | - | - | - | frozen 09-27 roster |
-| brisbane | 6 | 163 | - | - | - | frozen 09-27 roster |
-| paris | 2 | 163 | - | - | - | frozen 09-27 roster |
-| malaga | 7 | 161 | - | - | - | frozen 09-27 roster |
-| vienna | 4 | 161 | - | - | - | frozen 09-27 roster |
-| south-korea | 0 | 152 | - | - | - | frozen 09-27 roster |
-| london | 3 | 147 | - | - | - | frozen 09-27 roster |
-| alicante | 1 | 146 | - | - | - | frozen 09-27 roster |
-| athens | 4 | 130 | - | - | - | frozen 09-27 roster |
-| cadiz | 5 | 125 | - | - | - | frozen 09-27 roster |
-| pamplona | 1 | 125 | - | - | - | frozen 09-27 roster |
-| porto | 1 | 124 | - | - | - | frozen 09-27 roster |
-| cagliari | 3 | 116 | - | - | - | frozen 09-27 roster |
-| glasgow | 2 | 110 | - | - | - | frozen 09-27 roster |
-| ede | 0 | 100 | - | - | - | frozen 09-27 roster |
-| hinode | 0 | 98 | - | - | - | frozen 09-27 roster |
-| palma-de-mallorca | 2 | 95 | - | - | - | frozen 09-27 roster |
-| los-angeles | 1 | 94 | - | - | - | frozen 09-27 roster |
-| madrid | 0 | 93 | - | - | - | frozen 09-27 roster |
-| arnhem | 1 | 92 | - | - | - | frozen 09-27 roster |
-| milan | 1 | 92 | - | - | - | frozen 09-27 roster |
-| krakow | 3 | 91 | - | - | - | frozen 09-27 roster |
-| austin | 0 | 91 | - | - | - | frozen 09-27 roster |
-| montreal | 9 | 90 | - | - | - | frozen 09-27 roster |
-| houston | 4 | 90 | - | - | - | frozen 09-27 roster |
-| sintra | 0 | 87 | - | - | - | frozen 09-27 roster |
-| florence | 0 | 86 | - | - | - | frozen 09-27 roster |
-| the-hague | 1 | 84 | - | - | - | frozen 09-27 roster |
-| amerongen | 0 | 84 | - | - | - | frozen 09-27 roster |
-| new-orleans | 1 | 83 | - | - | - | frozen 09-27 roster |
-| switzerland | 0 | 83 | - | - | - | frozen 09-27 roster |
-| reykjavik | 0 | 80 | - | - | - | frozen 09-27 roster |
-| liverpool | 1 | 78 | - | - | - | frozen 09-27 roster |
-| valencia | 3 | 77 | - | - | - | frozen 09-27 roster |
-| guerneville | 0 | 76 | - | - | - | frozen 09-27 roster |
-| copenhagen | 5 | 75 | - | - | - | frozen 09-27 roster |
-| chicago | 2 | 72 | - | - | - | frozen 09-27 roster |
-| nara | 2 | 72 | - | - | - | frozen 09-27 roster |
-| warsaw | 1 | 72 | - | - | - | frozen 09-27 roster |
-| istanbul | 4 | 70 | - | - | - | frozen 09-27 roster |
-| rogalin | 1 | 70 | - | - | - | frozen 09-27 roster |
-| cyprus | 2 | 69 | - | - | - | frozen 09-27 roster |
-| nijmegen | 0 | 69 | - | - | - | frozen 09-27 roster |
-| cork | 3 | 68 | - | - | - | frozen 09-27 roster |
-| dallas | 1 | 68 | - | - | - | frozen 09-27 roster |
-| venice | 1 | 68 | - | - | - | frozen 09-27 roster |
-| hobart | 3 | 66 | - | - | - | frozen 09-27 roster |
-| takeo | 0 | 65 | - | - | - | frozen 09-27 roster |
-| fukuoka | 2 | 64 | - | - | - | frozen 09-27 roster |
-| monterey | 2 | 64 | - | - | - | frozen 09-27 roster |
-| netherlands | 2 | 63 | - | - | - | frozen 09-27 roster |
-| ottawa | 2 | 63 | - | - | - | frozen 09-27 roster |
-| portland | 2 | 63 | - | - | - | frozen 09-27 roster |
-| sydney | 0 | 63 | - | - | - | frozen 09-27 roster |
-| kanazawa | 2 | 60 | - | - | - | frozen 09-27 roster |
-| sardinia | 0 | 60 | - | - | - | frozen 09-27 roster |
-| greece | 2 | 58 | - | - | - | frozen 09-27 roster |
-| vilnius | 0 | 57 | - | - | - | frozen 09-27 roster |
-| coimbra | 1 | 56 | - | - | - | frozen 09-27 roster |
-| borrowdale | 0 | 56 | - | - | - | frozen 09-27 roster |
-| fulufjallet | 2 | 55 | - | - | - | frozen 09-27 roster |
-| beijing | 1 | 55 | - | - | - | frozen 09-27 roster |
-| madeira | 1 | 55 | - | - | - | frozen 09-27 roster |
-| boston | 0 | 55 | - | - | - | frozen 09-27 roster |
-| san-francisco | 0 | 55 | - | - | - | frozen 09-27 roster |
-| seoul | 1 | 54 | - | - | - | frozen 09-27 roster |
-| utrecht | 3 | 54 | - | - | - | frozen 09-27 roster |
-| osaka | 1 | 53 | - | - | - | frozen 09-27 roster |
-| crete | 4 | 52 | - | - | - | frozen 09-27 roster |
-| hong-kong | 1 | 52 | - | - | - | frozen 09-27 roster |
-| budapest | 1 | 51 | - | - | - | frozen 09-27 roster |
-| kyoto | 1 | 51 | - | - | - | frozen 09-27 roster |
-| leipzig | 1 | 51 | - | - | - | frozen 09-27 roster |
-| granada | 2 | 50 | - | - | - | frozen 09-27 roster |
-| logan-ohio | 1 | 50 | - | - | - | frozen 09-27 roster |
-| seattle | 1 | 49 | - | - | - | frozen 09-27 roster |
-| geneva | 3 | 48 | - | - | - | frozen 09-27 roster |
-| ibiza | 2 | 47 | - | - | - | frozen 09-27 roster |
-| melbourne | 3 | 47 | - | - | - | frozen 09-27 roster |
-| toronto | 0 | 47 | - | - | - | frozen 09-27 roster |
-| leuven | 7 | 46 | - | - | - | frozen 09-27 roster |
-| haarlem | 1 | 46 | - | - | - | frozen 09-27 roster |
-| stockholm | 2 | 45 | - | - | - | frozen 09-27 roster |
-| zurich | 5 | 45 | - | - | - | frozen 09-27 roster |
-| leeuwarden | 0 | 45 | - | - | - | frozen 09-27 roster |
-| cambridge | 1 | 44 | - | - | - | frozen 09-27 roster |
-| germany | 1 | 44 | - | - | - | frozen 09-27 roster |
-| dubrovnik | 0 | 44 | - | - | - | frozen 09-27 roster |
-| sweden | 0 | 44 | - | - | - | frozen 09-27 roster |
-| naples | 1 | 43 | - | - | - | frozen 09-27 roster |
-| washington-dc | 0 | 43 | - | - | - | frozen 09-27 roster |
-| nice | 1 | 42 | - | - | - | frozen 09-27 roster |
-| palo-alto | 0 | 42 | - | - | - | frozen 09-27 roster |
-| strasbourg | 1 | 41 | - | - | - | frozen 09-27 roster |
-| las-vegas | 0 | 41 | - | - | - | frozen 09-27 roster |
-| amersfoort | 2 | 40 | - | - | - | frozen 09-27 roster |
-| runnymede | 0 | 40 | - | - | - | frozen 09-27 roster |
-| vancouver | 1 | 39 | - | - | - | frozen 09-27 roster |
-| philadelphia | 0 | 38 | - | - | - | frozen 09-27 roster |
-| kagoshima | 1 | 37 | - | - | - | frozen 09-27 roster |
-| perth | 0 | 37 | - | - | - | frozen 09-27 roster |
-| verona | 5 | 36 | - | - | - | frozen 09-27 roster |
-| eindhoven | 3 | 36 | - | - | - | frozen 09-27 roster |
-| mexico-city | 1 | 36 | - | - | - | frozen 09-27 roster |
-| segovia | 1 | 36 | - | - | - | frozen 09-27 roster |
-| sorrento | 0 | 35 | - | - | - | frozen 09-27 roster |
-| tallinn | 3 | 34 | - | - | - | frozen 09-27 roster |
-| helsinki | 1 | 34 | - | - | - | frozen 09-27 roster |
-| oslo | 1 | 34 | - | - | - | frozen 09-27 roster |
-| bristol | 0 | 33 | - | - | - | frozen 09-27 roster |
-| glastonbury | 0 | 33 | - | - | - | frozen 09-27 roster |
-| quebec-city | 1 | 32 | - | - | - | frozen 09-27 roster |
-| girona | 0 | 32 | - | - | - | frozen 09-27 roster |
-| bari | 1 | 31 | - | - | - | frozen 09-27 roster |
-| leiden | 2 | 31 | - | - | - | frozen 09-27 roster |
-| tricase | 1 | 31 | - | - | - | frozen 09-27 roster |
-| bucaco | 0 | 31 | - | - | - | frozen 09-27 roster |
-| craigends | 0 | 31 | - | - | - | frozen 09-27 roster |
-| pittsburgh | 0 | 31 | - | - | - | frozen 09-27 roster |
-| boise | 4 | 30 | - | - | - | frozen 09-27 roster |
-| luxembourg-city | 0 | 30 | - | - | - | frozen 09-27 roster |
-| spokane | 1 | 29 | - | - | - | frozen 09-27 roster |
-| manchester | 1 | 28 | - | - | - | frozen 09-27 roster |
-| taipei | 1 | 28 | - | - | - | frozen 09-27 roster |
-| maastricht | 0 | 28 | - | - | - | frozen 09-27 roster |
-| sapporo | 0 | 28 | - | - | - | frozen 09-27 roster |
-| bangkok | 2 | 26 | - | - | - | frozen 09-27 roster |
-| parma | 0 | 26 | - | - | - | frozen 09-27 roster |
-| cologne | 0 | 25 | - | - | - | frozen 09-27 roster |
-| laren-gelderland | 0 | 25 | - | - | - | frozen 09-27 roster |
-| ljubljana | 0 | 25 | - | - | - | frozen 09-27 roster |
-| groningen | 1 | 24 | - | - | - | frozen 09-27 roster |
-| slovakia | 1 | 24 | - | - | - | frozen 09-27 roster |
-| dordrecht | 2 | 23 | - | - | - | frozen 09-27 roster |
-| lyon | 1 | 23 | - | - | - | frozen 09-27 roster |
-| charleston | 0 | 23 | - | - | - | frozen 09-27 roster |
-| frankfurt | 0 | 23 | - | - | - | frozen 09-27 roster |
-| jaegerspris-nordskov | 0 | 23 | - | - | - | frozen 09-27 roster |
-| naha | 0 | 23 | - | - | - | frozen 09-27 roster |
-| schenklengsfeld | 2 | 22 | - | - | - | frozen 09-27 roster |
-| cordoba | 2 | 22 | - | - | - | frozen 09-27 roster |
-| otoyo | 1 | 22 | - | - | - | frozen 09-27 roster |
-| bilu | 0 | 22 | - | - | - | frozen 09-27 roster |
-| cardiff | 0 | 22 | - | - | - | frozen 09-27 roster |
-| enschede | 0 | 22 | - | - | - | frozen 09-27 roster |
-| higashi-hiroshima | 0 | 22 | - | - | - | frozen 09-27 roster |
-| limmersdorf | 0 | 22 | - | - | - | frozen 09-27 roster |
-| minneapolis | 0 | 22 | - | - | - | frozen 09-27 roster |
-| savannah | 0 | 22 | - | - | - | frozen 09-27 roster |
-| yabu | 0 | 22 | - | - | - | frozen 09-27 roster |
-| bologna | 1 | 21 | - | - | - | frozen 09-27 roster |
-| guimaraes | 3 | 21 | - | - | - | frozen 09-27 roster |
-| caserta | 0 | 21 | - | - | - | frozen 09-27 roster |
-| heidelberg | 0 | 21 | - | - | - | frozen 09-27 roster |
-| tilburg | 0 | 21 | - | - | - | frozen 09-27 roster |
-| zwolle | 0 | 21 | - | - | - | frozen 09-27 roster |
-| catania | 1 | 20 | - | - | - | frozen 09-27 roster |
-| belgrade | 0 | 20 | - | - | - | frozen 09-27 roster |
-| chadds-ford | 0 | 20 | - | - | - | frozen 09-27 roster |
-| menorca | 0 | 20 | - | - | - | frozen 09-27 roster |
-| miyazaki | 0 | 20 | - | - | - | frozen 09-27 roster |
-| sources | 1 | 19 | - | - | - | frozen 09-27 roster |
-| bordeaux | 0 | 19 | - | - | - | frozen 09-27 roster |
-| hawaii | 0 | 19 | - | - | - | frozen 09-27 roster |
-| olympic-national-park | 0 | 19 | - | - | - | frozen 09-27 roster |
-| yakushima | 0 | 19 | - | - | - | frozen 09-27 roster |
-| wessobrunn | 2 | 18 | - | - | - | frozen 09-27 roster |
-| genoa | 2 | 18 | - | - | - | frozen 09-27 roster |
-| nuremberg | 1 | 18 | - | - | - | frozen 09-27 roster |
-| gojaus-miskas | 0 | 18 | - | - | - | frozen 09-27 roster |
-| llangernyw | 0 | 18 | - | - | - | frozen 09-27 roster |
-| oxford | 0 | 18 | - | - | - | frozen 09-27 roster |
-| taiwan | 0 | 18 | - | - | - | frozen 09-27 roster |
-| toulouse | 2 | 17 | - | - | - | frozen 09-27 roster |
-| aarhus | 1 | 17 | - | - | - | frozen 09-27 roster |
-| freiburg | 1 | 17 | - | - | - | frozen 09-27 roster |
-| padua | 1 | 17 | - | - | - | frozen 09-27 roster |
-| bergamo | 0 | 17 | - | - | - | frozen 09-27 roster |
-| salzburg | 0 | 17 | - | - | - | frozen 09-27 roster |
-| ghent | 1 | 16 | - | - | - | frozen 09-27 roster |
-| hallstatt | 1 | 16 | - | - | - | frozen 09-27 roster |
-| perouges | 1 | 16 | - | - | - | frozen 09-27 roster |
-| biei | 0 | 16 | - | - | - | frozen 09-27 roster |
-| macugnaga | 0 | 16 | - | - | - | frozen 09-27 roster |
-| salamanca | 0 | 16 | - | - | - | frozen 09-27 roster |
-| york | 0 | 16 | - | - | - | frozen 09-27 roster |
-| nagoya | 1 | 15 | - | - | - | frozen 09-27 roster |
-| timber-creek | 0 | 15 | - | - | - | frozen 09-27 roster |
-| tolpuddle | 0 | 15 | - | - | - | frozen 09-27 roster |
-| gornja-stubica | 1 | 14 | - | - | - | frozen 09-27 roster |
-| stuttgart | 2 | 14 | - | - | - | frozen 09-27 roster |
-| bratislava | 0 | 14 | - | - | - | frozen 09-27 roster |
-| heinkenszand | 0 | 14 | - | - | - | frozen 09-27 roster |
-| helmond | 0 | 14 | - | - | - | frozen 09-27 roster |
-| oss | 0 | 14 | - | - | - | frozen 09-27 roster |
-| otama | 0 | 14 | - | - | - | frozen 09-27 roster |
-| rio-de-janeiro | 0 | 14 | - | - | - | frozen 09-27 roster |
-| sulechow | 0 | 14 | - | - | - | frozen 09-27 roster |
-| gdansk | 2 | 13 | - | - | - | frozen 09-27 roster |
-| alkmaar | 0 | 13 | - | - | - | frozen 09-27 roster |
-| den-bosch | 0 | 13 | - | - | - | frozen 09-27 roster |
-| derby | 0 | 13 | - | - | - | frozen 09-27 roster |
-| graz | 0 | 13 | - | - | - | frozen 09-27 roster |
-| hoorn | 0 | 13 | - | - | - | frozen 09-27 roster |
-| lausanne | 0 | 13 | - | - | - | frozen 09-27 roster |
-| lucca | 0 | 13 | - | - | - | frozen 09-27 roster |
-| nantes | 0 | 13 | - | - | - | frozen 09-27 roster |
-| simsbury | 0 | 13 | - | - | - | frozen 09-27 roster |
-| bilbao | 2 | 12 | - | - | - | frozen 09-27 roster |
-| ronda | 1 | 12 | - | - | - | frozen 09-27 roster |
-| belfast | 0 | 12 | - | - | - | frozen 09-27 roster |
-| buenos-aires | 0 | 12 | - | - | - | frozen 09-27 roster |
-| como | 0 | 12 | - | - | - | frozen 09-27 roster |
-| deventer | 0 | 12 | - | - | - | frozen 09-27 roster |
-| ekero | 0 | 12 | - | - | - | frozen 09-27 roster |
-| hamburg | 0 | 12 | - | - | - | frozen 09-27 roster |
-| tarragona | 1 | 11 | - | - | - | frozen 09-27 roster |
-| trieste | 1 | 11 | - | - | - | frozen 09-27 roster |
-| apeldoorn | 0 | 11 | - | - | - | frozen 09-27 roster |
-| brno | 0 | 11 | - | - | - | frozen 09-27 roster |
-| bruges | 0 | 11 | - | - | - | frozen 09-27 roster |
-| canada | 0 | 11 | - | - | - | frozen 09-27 roster |
-| delft | 0 | 11 | - | - | - | frozen 09-27 roster |
-| dresden | 0 | 11 | - | - | - | frozen 09-27 roster |
-| gottingen | 0 | 11 | - | - | - | frozen 09-27 roster |
-| perugia | 0 | 11 | - | - | - | frozen 09-27 roster |
-| riga | 0 | 11 | - | - | - | frozen 09-27 roster |
-| senonches | 0 | 11 | - | - | - | frozen 09-27 roster |
-| venon | 0 | 11 | - | - | - | frozen 09-27 roster |
-| kauai | 1 | 10 | - | - | - | frozen 09-27 roster |
-| regensburg | 1 | 10 | - | - | - | frozen 09-27 roster |
-| tulsa | 1 | 10 | - | - | - | frozen 09-27 roster |
-| assen | 0 | 10 | - | - | - | frozen 09-27 roster |
-| cremines | 0 | 10 | - | - | - | frozen 09-27 roster |
-| emmen | 0 | 10 | - | - | - | frozen 09-27 roster |
-| matera | 0 | 10 | - | - | - | frozen 09-27 roster |
-| nagano | 0 | 10 | - | - | - | frozen 09-27 roster |
-| oklahoma-city | 0 | 10 | - | - | - | frozen 09-27 roster |
-| ueda | 0 | 10 | - | - | - | frozen 09-27 roster |
-| venlo | 0 | 10 | - | - | - | frozen 09-27 roster |
-| viroflay | 0 | 10 | - | - | - | frozen 09-27 roster |
+
+- Plus 256 cities on the frozen 09-27 roster (data/depth-roster-frozen.json), biggest: singapore, lisbon, amsterdam, barcelona, seville, bath, tenerife, berlin.
 
 **Copy test**
 
@@ -683,7 +429,6 @@ Backlinks (watched pages):
 
 | Started | Minutes | Trees | Commits | Refused | Cities |
 |---|---:|---:|---:|---:|---|
-| 10-13T05:34 | 19.6 | 2 | 10 | 0 | Roosendaal +2, Copenhagen |
 | 10-13T08:50 | 13.3 | 0 | 7 | 0 | - |
 | 10-13T15:53 | 68.8 | -1 | 30 | 3 | Antwerp, Belgrade, Bilu, Craigends, +37 more |
 | 10-13T17:18 | 85.8 | 0 | 17 | 0 | Amsterdam, Barcelona, Gdansk, Kamakura, +7 more |
@@ -691,9 +436,9 @@ Backlinks (watched pages):
 | 10-13T22:12 | 72.3 | 0 | 68 | 9 | Auckland, Baarn, Bad Homburg, Baltimore, +24 more |
 | 10-14T00:24 | 6.8 | 0 | 6 | 0 | Malsfeld, Munsterland |
 | 10-14T03:09 | 93.3 | -1 | 49 | 0 | Aberford, Aizuwakamatsu, Alishan, Ancient Bristlecone Pine Forest, +79 more |
-| **8 runs** | **379** | **0** | **201** | | |
+| **7 runs** | **359** | **-2** | **191** | | |
 
-- 5 of 8 produced no trees; 3 to 9 commands refused per run; last build that went live: 1h ago.
+- 5 of 7 produced no trees; 3 to 9 commands refused per run; last build that went live: 0h ago.
 
 **What they made**
 
@@ -716,36 +461,36 @@ Backlinks (watched pages):
 
 | Day | Tree | Where | Overrule |
 |---|---|---|---|
-| 10-12 | Le Chêne des Ramolleux | Crécy-en-Ponthieu | `photo_apply.py hold crc_001 "https://upload.wikimedia.org/wikipedia/commons/f/f3/Ch%C3%AAne_des_Ramolleux_for%C3%AAt_de_Cr%C3%A9cy.JPG"` |
-| 10-12 | The Turenne Lime | Fontaine | `photo_apply.py hold fte_001 "https://upload.wikimedia.org/wikipedia/commons/5/56/Tilleul_Turenne_%C3%A0_Fontaine_2008_1.jpg"` |
-| 10-13 | Dorpslinde van Massemen | Ghent | `photo_apply.py hold gnt_007 "https://upload.wikimedia.org/wikipedia/commons/a/a1/2017_The_Village_Lime_Tree_of_Massemen_BE.jpg"` |
-| 10-12 | Gupčeva lipa | Gornja Stubica | `photo_apply.py hold gst_001 "https://upload.wikimedia.org/wikipedia/commons/b/b8/2019_Gubec_linden_HR.jpg"` |
-| 10-12 | Jonichiji no Icho | Himi | `photo_apply.py hold him_002 "https://upload.wikimedia.org/wikipedia/commons/e/ef/Ginkgo_at_Jyonichiji_temple.JPG"` |
-| 10-12 | Horner Linde | Horn-Lehe | `photo_apply.py hold hrn_001 "https://upload.wikimedia.org/wikipedia/commons/4/4a/Horner_Kirche_-_Linde_jh.jpg"` |
-| 10-12 | Nento Hiramatsu | Iheya | `photo_apply.py hold ihy_001 "https://upload.wikimedia.org/wikipedia/commons/a/a4/Nento-Hiramatsu_Pine_Tree_202603_03.jpg"` |
-| 10-13 | The Chinquapins of Dogata | Kanazawa | `photo_apply.py hold kan_001 "https://upload.wikimedia.org/wikipedia/commons/0/01/Grand_chinquapin_tree_in_front_of_Shiinoki_Cultural_Complex_of_Ishikawa_Prefecture.JPG"` |
-| 10-12 | The Kneeling Tree (Klekace Drzewo) | Krasnystaw | `photo_apply.py hold krs_001 "https://upload.wikimedia.org/wikipedia/commons/0/0f/2019_Kneeling_tree_PL.jpg"` |
-| 10-12 | King Cypress | Nyingchi | `photo_apply.py hold nyi_001 "https://upload.wikimedia.org/wikipedia/commons/8/86/Cupressus_gigantea_Bajie.jpg"` |
-| 10-12 | Gaurė Oak | Pagramantis Regional Park | `photo_apply.py hold pgm_005 "https://upload.wikimedia.org/wikipedia/commons/2/25/Gaur%C4%97s_%C4%85%C5%BEuolas_2021.JPG"` |
-| 10-12 | Mikalojaus Daukša Oak, Betygala | Plauginiai Forest | `photo_apply.py hold pgn_002 "https://upload.wikimedia.org/wikipedia/commons/4/4f/2-Betygalos_%C4%85%C5%BEuolas.JPG"` |
-| 10-12 | The Oak of the Virgin at Rannée | Rannée | `photo_apply.py hold ran_001 "https://upload.wikimedia.org/wikipedia/commons/f/f3/Rann%C3%A9e_%2835%29_Ch%C3%AAne_%C3%A0_la_Vierge.jpg"` |
-| 10-12 | Ilguva Oak | Raudonė | `photo_apply.py hold rdn_003 "https://upload.wikimedia.org/wikipedia/commons/d/dc/Ilguva%2C_%C4%85%C5%BEuolas.JPG"` |
-| 10-12 | The Oak of Erentrudishof | Salzburg | `photo_apply.py hold szb_002 "https://upload.wikimedia.org/wikipedia/commons/9/94/00019_Eiche_am_Erentrudishof%2C_Stift_Nonnberg.jpg"` |
-| 10-12 | The Courtyard Oak of Aigner Straße | Salzburg | `photo_apply.py hold szb_011 "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eiche_an_der_Aigner_Strasse_9_%281%29.JPG"` |
-| 10-12 | Aizen Katsura | Ueda | `photo_apply.py hold bsh_001 "https://upload.wikimedia.org/wikipedia/commons/d/d6/Aizenkatsura_Tree.jpg"` |
-| 10-12 | The Service Tree of Uzovská Panica | Uzovská Panica | `photo_apply.py hold uzp_001 "https://upload.wikimedia.org/wikipedia/commons/5/57/2020_Sorb_Tree_near_Uzovsk%C3%A1_Panica_SK.jpg"` |
-| 10-12 | The Pine of Veľké Borové | Veľké Borové | `photo_apply.py hold vbo_001 "https://upload.wikimedia.org/wikipedia/commons/c/c5/Strom_roka_borovica_velke_borove_01.jpg"` |
-| 10-12 | The Opatovice Pine | Velke Opatovice | `photo_apply.py hold vop_001 "https://upload.wikimedia.org/wikipedia/commons/a/ae/Opatovick%C3%A1_borovice.JPG"` |
-| 10-12 | Chene de Venon | Venon | `photo_apply.py hold vno_001 "https://upload.wikimedia.org/wikipedia/commons/6/67/Le_majestueux_ch%C3%AAne_de_Venon.jpg"` |
-| 10-13 | The Antakalnis Swiss Pine | Vilnius | `photo_apply.py hold vln_014 "https://upload.wikimedia.org/wikipedia/commons/1/1a/Antakalnis%2C_kedrin%C4%97_pu%C5%A1is.JPG"` |
-| 10-12 | The Lodewijkslinde of Vorden | Vorden | `photo_apply.py hold vrd_001 "https://upload.wikimedia.org/wikipedia/commons/5/5c/Lodewijkslinde_bij_Kasteel_Vorden.jpg"` |
-| 10-12 | The Tassilolinde | Wessobrunn | `photo_apply.py hold wes_001 "https://upload.wikimedia.org/wikipedia/commons/a/ab/Tassilolinde_Wessobrunn_1.jpg"` |
-| 10-12 | The Wodanseiken | Wolfheze | `photo_apply.py hold wlf_001 "https://upload.wikimedia.org/wikipedia/commons/2/24/20191007_WolfhezeWodanseiken_02.jpg"` |
-| 10-12 | Tilleul des Lognards | Xhoris | `photo_apply.py hold xho_001 "https://upload.wikimedia.org/wikipedia/commons/6/63/Xhoris-tilleul_des_Lognards_%281%29.jpg"` |
-| 10-12 | Tarumi-no-Ozakura | Yabu | `photo_apply.py hold yab_001 "https://upload.wikimedia.org/wikipedia/commons/b/bb/A_big_cherry_tree_at_Tarumi_village_-_panoramio.jpg"` |
-| 10-12 | Pagryniai Oak | Žalgiriai | `photo_apply.py hold zal_002 "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pagryni%C5%B3_%C4%85%C5%BEuolas_1.JPG"` |
-| 10-12 | The Gerichtslinde of Zehdenick | Zehdenick | `photo_apply.py hold zeh_001 "https://upload.wikimedia.org/wikipedia/commons/7/78/Gerichtslinde_Zehdenick.JPG"` |
-| 10-13 | The Linden of Linn | Zurich | `photo_apply.py hold boz_001 "https://upload.wikimedia.org/wikipedia/commons/d/d5/Linde_von_Linn_%28AG%2C_Schweiz%29%2C_M%C3%A4rz_2014.JPG"` |
+| 10-12 | Le Chêne des Ramolleux | Crécy-en-Ponthieu | `photo_apply.py hold crc_001` |
+| 10-12 | The Turenne Lime | Fontaine | `photo_apply.py hold fte_001` |
+| 10-13 | Dorpslinde van Massemen | Ghent | `photo_apply.py hold gnt_007` |
+| 10-12 | Gupčeva lipa | Gornja Stubica | `photo_apply.py hold gst_001` |
+| 10-12 | Jonichiji no Icho | Himi | `photo_apply.py hold him_002` |
+| 10-12 | Horner Linde | Horn-Lehe | `photo_apply.py hold hrn_001` |
+| 10-12 | Nento Hiramatsu | Iheya | `photo_apply.py hold ihy_001` |
+| 10-13 | The Chinquapins of Dogata | Kanazawa | `photo_apply.py hold kan_001` |
+| 10-12 | The Kneeling Tree (Klekace Drzewo) | Krasnystaw | `photo_apply.py hold krs_001` |
+| 10-12 | King Cypress | Nyingchi | `photo_apply.py hold nyi_001` |
+| 10-12 | Gaurė Oak | Pagramantis Regional Park | `photo_apply.py hold pgm_005` |
+| 10-12 | Mikalojaus Daukša Oak, Betygala | Plauginiai Forest | `photo_apply.py hold pgn_002` |
+| 10-12 | The Oak of the Virgin at Rannée | Rannée | `photo_apply.py hold ran_001` |
+| 10-12 | Ilguva Oak | Raudonė | `photo_apply.py hold rdn_003` |
+| 10-12 | The Oak of Erentrudishof | Salzburg | `photo_apply.py hold szb_002` |
+| 10-12 | The Courtyard Oak of Aigner Straße | Salzburg | `photo_apply.py hold szb_011` |
+| 10-12 | Aizen Katsura | Ueda | `photo_apply.py hold bsh_001` |
+| 10-12 | The Service Tree of Uzovská Panica | Uzovská Panica | `photo_apply.py hold uzp_001` |
+| 10-12 | The Pine of Veľké Borové | Veľké Borové | `photo_apply.py hold vbo_001` |
+| 10-12 | The Opatovice Pine | Velke Opatovice | `photo_apply.py hold vop_001` |
+| 10-12 | Chene de Venon | Venon | `photo_apply.py hold vno_001` |
+| 10-13 | The Antakalnis Swiss Pine | Vilnius | `photo_apply.py hold vln_014` |
+| 10-12 | The Lodewijkslinde of Vorden | Vorden | `photo_apply.py hold vrd_001` |
+| 10-12 | The Tassilolinde | Wessobrunn | `photo_apply.py hold wes_001` |
+| 10-12 | The Wodanseiken | Wolfheze | `photo_apply.py hold wlf_001` |
+| 10-12 | Tilleul des Lognards | Xhoris | `photo_apply.py hold xho_001` |
+| 10-12 | Tarumi-no-Ozakura | Yabu | `photo_apply.py hold yab_001` |
+| 10-12 | Pagryniai Oak | Žalgiriai | `photo_apply.py hold zal_002` |
+| 10-12 | The Gerichtslinde of Zehdenick | Zehdenick | `photo_apply.py hold zeh_001` |
+| 10-13 | The Linden of Linn | Zurich | `photo_apply.py hold boz_001` |
 
 Machine: 8 chain attempts yesterday, 8 got real work time (~316 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
 
