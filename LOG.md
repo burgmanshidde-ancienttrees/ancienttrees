@@ -19,6 +19,8 @@ Oss reopened with five LRMB register trees (oss_001, 007, 011, 012, 013), all ri
 
 Potsdam: pot_010 (Sessile Oak of Paetowstrasse, Naturdenkmal 39, confirmed pin, 450 cm) merged with German overlay; a Commons photo exists but was not viewed. Vienna (one possibly dead poplar, cadastre WFS empty) and Spokane (one park-entrance tree, parks are not small sites) gave nothing publishable and are walled 48h; the Spokane Grant Park Guardian chestnut is the call for a session if an entrance should count. Oss and Roosendaal enrichment gaps (season only, no real peak) closed as dead ends. pagegaps: nothing missing.
 
+Photo viewing pass 4: 41 images viewed, 5 approved (pot_005 Sacrow oak, pot_006 Bassinplatz oak, pot_008 Schiffbauergasse oak, pot_010 Paetowstrasse oak, stu_007 Hohenheim plane, the weakest: trunk hidden by shrubs), 66 rejected, none held. Reverse one with `python3 scripts/photo_apply.py reject <id> <commons url> --reason "..."`. Pillow is not installed on the runner, so photo_light.py scored nothing and exposure was judged by eye.
+
 ## 2026-10-14, retry attempt: nothing published
 
 Released the standing Leipzig claim: its brief shows no imported register within 20 km, and its four written trees (lpz_019, 021, 022, 023) are the kind preflight refuses as not rich. Leipzig is a wall for 48h. The 53 READY leads are thin register rows (Roosendaal, Oss, Munich, Delft and others), refused by the same rule. langcheck has no city over 10 English impressions to translate. No agent dispatched, because no candidate can end rich. Still open: the iOS app workflow failed on 2026-10-14 and its log was not read.

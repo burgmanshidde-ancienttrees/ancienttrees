@@ -433,7 +433,9 @@
      "lat": 52.365066,
      "lng": 4.918081,
      "cats": "Category:CC-BY-SA-3.0 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Plantage Middenlaan, Amsterdam",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Penguin enclosure"
     },
     {
      "title": "File:Weesperbuurt en Plantage, Amsterdam, Netherlands - panoramio (22).jpg",
@@ -6878,7 +6880,9 @@
      "lat": 38.70441667,
      "lng": -9.16236111,
      "cats": "Category:CC-BY-4.0 Category:Edificio na Rua Presidente Arriaga 6 Category:Files with coordinates missing SDC location of creation Category:Self-published work",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Building facade"
     },
     {
      "title": "File:Lisbon, the garden 9 de Abril.JPG",
@@ -12838,7 +12842,7 @@
      "source": "inaturalist",
      "obs_location": "52.1590495278,4.4924313056",
      "judged": "reject",
-     "verdict": "Leaf close-up shot upward into the canopy, green foliage, no tree readable"
+     "verdict": "Trunk close-up"
     },
     {
      "title": "iNat obs 34824036 (Fagus sylvatica)",
@@ -12856,7 +12860,9 @@
      "licence": "CC BY",
      "author": "(c) Casey Chambliss, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.15907428,4.49225869"
+     "obs_location": "52.15907428,4.49225869",
+     "judged": "reject",
+     "verdict": "Leaf and nut close-up"
     }
    ]
   },
@@ -15162,7 +15168,9 @@
      "author": "Mrs W J Sutherland",
      "lat": 51.76354484,
      "lng": -1.25429915,
-     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:University Parks, Oxford"
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:University Parks, Oxford",
+     "judged": "reject",
+     "verdict": "Blue Atlas cedar, not the Caucasian elm"
     },
     {
      "title": "File:Path through trees in University Parks - geograph.org.uk - 3928497.jpg",
@@ -15172,7 +15180,9 @@
      "author": "Roger Templeman",
      "lat": 51.76344572,
      "lng": -1.25270576,
-     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:University Parks, Oxford"
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:University Parks, Oxford",
+     "judged": "reject",
+     "verdict": "Generic path view 168 m off"
     }
    ]
   },
@@ -18506,7 +18516,9 @@
      "lat": 52.367076,
      "lng": 4.907584,
      "cats": "Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2014-05-12 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Plantage Middenlaan, Amsterdam",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Hortus entrance gate"
     },
     {
      "title": "File:Hortus Botanicus Amsterdam - panoramio (2).jpg",
@@ -19241,7 +19253,9 @@
      "author": "Tim Evanson",
      "lat": 38.886551,
      "lng": -77.041778,
-     "cats": "Category:2011 National Cherry Blossom Festival Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Photographs by Tim Evanson Category:Photos uploaded from Flickr by Fæ using a script"
+     "cats": "Category:2011 National Cherry Blossom Festival Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Photographs by Tim Evanson Category:Photos uploaded from Flickr by Fæ using a script",
+     "judged": "reject",
+     "verdict": "Stone lantern detail, blossom blurred"
     }
    ],
    "exhausted": "2026-08-08: the Tidal Basin is photographed constantly and none of it identifies the two 1912 survivors. Only the plaque photographs are at the right spot and they are photographs of a plaque."
@@ -19447,7 +19461,9 @@
      "author": "Ragesoss",
      "lat": 38.912,
      "lng": -76.969,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Ginkgo bonsai Category:License migration redundant Category:Self-published work Category:Taken with Canon PowerShot S2 IS Category:United States National Bonsai & Penjing Museum"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:Ginkgo bonsai Category:License migration redundant Category:Self-published work Category:Taken with Canon PowerShot S2 IS Category:United States National Bonsai & Penjing Museum",
+     "judged": "reject",
+     "verdict": "A ginkgo, not the willow oak"
     }
    ]
   },
@@ -24133,7 +24149,9 @@
      "lat": 52.367653,
      "lng": 4.908742,
      "cats": "Category:CC-BY-SA-2.0 Category:Files from Claire H. Flickr stream Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Fuchsia fulgens Category:Hortus Botanicus Amsterdam Category:Netherlands photographs taken on 2008-06-10 Category:Taken with Canon Digital IXUS 70",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Fuchsia flower close-up"
     },
     {
      "title": "File:Hortus Botanicus Amsterdam Bumblebee (2622168612).jpg",
@@ -24188,7 +24206,9 @@
      "lat": 52.367398,
      "lng": 4.908356,
      "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR Category:Hortus Botanicus Amsterdam Category:Netherlands photographs taken on 2008-06-29",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Butterfly close-up"
     },
     {
      "title": "File:Hortus Botanicus Amsterdam Sunbathing butterfly (2621342333).jpg",
@@ -24642,7 +24662,9 @@
      "lat": 52.367653,
      "lng": 4.908742,
      "cats": "Category:Bletilla striata - flowers Category:CC-BY-SA-2.0 Category:Close-up photographs of Bletilla striata flowers Category:Files from Claire H. Flickr stream Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Garden plants in the Netherlands Category:Netherlands photographs taken on 2008-06-10 Category:Taken with Canon Digital IXUS 70",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Orchid close-up"
     },
     {
      "title": "File:Fuchsia fulgens2573554714.jpg",
@@ -26221,7 +26243,9 @@
      "author": "olekinderhook",
      "lat": 38.914982,
      "lng": -77.062286,
-     "cats": "Category:CC-BY-3.0 Category:Dumbarton Oaks Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4377971"
+     "cats": "Category:CC-BY-3.0 Category:Dumbarton Oaks Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4377971",
+     "judged": "reject",
+     "verdict": "Canopy view at Dumbarton Oaks, not this tree"
     },
     {
      "title": "iNat obs 350518754 (Liriodendron tulipifera)",
@@ -26230,7 +26254,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.9156132,-77.06211674"
+     "obs_location": "38.9156132,-77.06211674",
+     "judged": "reject",
+     "verdict": "Leaf close-up"
     },
     {
      "title": "iNat obs 322779952 (Liriodendron tulipifera)",
@@ -26794,7 +26820,9 @@
      "lat": 38.753213,
      "lng": -9.177504,
      "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Sculpture and bench are the subject"
     },
     {
      "title": "File:Parque Bensaúde 01.jpg",
@@ -26914,7 +26942,9 @@
      "lat": 38.752694,
      "lng": -9.178287,
      "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:Parque Bensaúde (Lisbon) Category:Photographs by Vitor Oliveira",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Park steps and wall, mass of trees, none singled out"
     },
     {
      "title": "File:Parque Bensaúde - Lisboa - Portugal 🇵🇹 (54897323289).jpg",
@@ -31406,7 +31436,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
      "source": "wikidata/Q55741763",
      "judged": "reject",
-     "verdict": "Crown only with cedar alongside; centre band is foliage, trunk tiny"
+     "verdict": "Plane shares frame with dark conifer, trunk tiny at bottom; centre band shows mixed foliage only"
     },
     {
      "title": "File:Como - Viale Geno - Cedro dell Himalaya - codice 07M17705C933CO03 - 20220910 143606.jpg",
@@ -31489,7 +31519,9 @@
      "author": "Ysogo",
      "lat": 45.822589,
      "lng": 9.078181,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
+     "judged": "reject",
+     "verdict": "Deodar cedar, not the ginkgo"
     },
     {
      "title": "File:Como - Viale Geno - Cedro dell Himalaya - codice 07M17705C933CO03 - 20220910 143625.jpg",
@@ -31499,7 +31531,9 @@
      "author": "Ysogo",
      "lat": 45.822589,
      "lng": 9.078181,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
+     "judged": "reject",
+     "verdict": "Deodar cedar, not the ginkgo"
     },
     {
      "title": "File:Como - Viale Geno - Platano occidentale - codice 07M17704C933CO03 - 20220910 144810.jpg",
@@ -31550,7 +31584,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it",
      "source": "wikidata/Q55741770",
      "judged": "reject",
-     "verdict": "Looking straight up the trunk, bark close-up"
+     "verdict": "Bark close-up looking up the trunk"
     },
     {
      "title": "File:Cedro del Libano - dettaglio - corteccia.jpg",
@@ -31666,7 +31700,9 @@
      "author": "Daniela Manili Pessina",
      "lat": 45.82287,
      "lng": 9.0672,
-     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Bust of Foscolo is the subject"
     },
     {
      "title": "File:Ugo Foscolo davanti al Cedro del Libano 2.jpg",
@@ -32609,7 +32645,9 @@
      "author": "Ji-Elle",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:March 2022 Alsace photographs Category:March 2022 in Strasbourg Category:Parc du Contades Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:March 2022 Alsace photographs Category:March 2022 in Strasbourg Category:Parc du Contades Category:Self-published work",
+     "judged": "reject",
+     "verdict": "General park view, no single tree"
     },
     {
      "title": "File:Strasbourg-Parc du Contades (2024).jpg",
@@ -32619,7 +32657,9 @@
      "author": "Ji-Elle",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:March 2022 Alsace photographs Category:March 2022 in Strasbourg Category:Parc du Contades Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:March 2022 Alsace photographs Category:March 2022 in Strasbourg Category:Parc du Contades Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Path view, nearest trunk unidentified"
     },
     {
      "title": "File:Strasbourg-Schiessrein (Contades)-1790.jpg",
@@ -32629,7 +32669,9 @@
      "author": "Jean-Daniel Heimlich",
      "lat": null,
      "lng": null,
-     "cats": "Category:1790 engravings Category:CC-PD-Mark Category:Collections de la Bibliothèque nationale et universitaire de Strasbourg Category:Images from BNU Strasbourg Category:Jean-Daniel Heimlich Category:PD-old-70-expired Category:PD-old missing SDC copyright status Category:Parc du Contades"
+     "cats": "Category:1790 engravings Category:CC-PD-Mark Category:Collections de la Bibliothèque nationale et universitaire de Strasbourg Category:Images from BNU Strasbourg Category:Jean-Daniel Heimlich Category:PD-old-70-expired Category:PD-old missing SDC copyright status Category:Parc du Contades",
+     "judged": "reject",
+     "verdict": "1790 archival engraving"
     }
    ]
   },
@@ -32705,7 +32747,9 @@
      "author": "Valentin R. from France",
      "lat": 48.584854,
      "lng": 7.762323,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (48° N, 7° E) Category:Flickr images reviewed by FlickreviewR 2 Category:Grand Est photographs taken on 2017-09-17 Category:Interior of Palais universitaire de Strasbourg Category:Photographs by Valentin F. R. Category:September 2017 Alsace photographs Category:September 2017 in Strasbourg"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (48° N, 7° E) Category:Flickr images reviewed by FlickreviewR 2 Category:Grand Est photographs taken on 2017-09-17 Category:Interior of Palais universitaire de Strasbourg Category:Photographs by Valentin F. R. Category:September 2017 Alsace photographs Category:September 2017 in Strasbourg",
+     "judged": "reject",
+     "verdict": "Marble detail at the Palais universitaire"
     }
    ]
   },
@@ -34700,7 +34744,9 @@
      "author": "Leonhard Lenz",
      "lat": 49.45540184,
      "lng": 11.06806861,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (49° N, 11° E) Category:Naturdenkmal Linde in der Grünanlage Hallerwiese (Nuremberg) Category:Pages with local camera coordinates and mismatching SDC coordinates Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (49° N, 11° E) Category:Naturdenkmal Linde in der Grünanlage Hallerwiese (Nuremberg) Category:Pages with local camera coordinates and mismatching SDC coordinates Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Hallerwiese linden, not the Kontumazgarten plane"
     },
     {
      "title": "File:Naturdenkmal Linde in der Grünanlage Hallerwiese Nürnberg 2025-02-09 03.jpg",
@@ -34710,7 +34756,9 @@
      "author": "Leonhard Lenz",
      "lat": 49.45540442,
      "lng": 11.06800502,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (49° N, 11° E) Category:Naturdenkmal Linde in der Grünanlage Hallerwiese (Nuremberg) Category:Pages with local camera coordinates and mismatching SDC coordinates Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (49° N, 11° E) Category:Naturdenkmal Linde in der Grünanlage Hallerwiese (Nuremberg) Category:Pages with local camera coordinates and mismatching SDC coordinates Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Hallerwiese linden series, not the Kontumazgarten plane"
     },
     {
      "title": "File:Naturdenkmal Linde in der Grünanlage Hallerwiese Nürnberg 2025-02-09 04.jpg",
@@ -34720,7 +34768,9 @@
      "author": "Leonhard Lenz",
      "lat": 49.455417,
      "lng": 11.0679264,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (49° N, 11° E) Category:Naturdenkmal Linde in der Grünanlage Hallerwiese (Nuremberg) Category:Pages with local camera coordinates and mismatching SDC coordinates Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation (49° N, 11° E) Category:Naturdenkmal Linde in der Grünanlage Hallerwiese (Nuremberg) Category:Pages with local camera coordinates and mismatching SDC coordinates Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Hallerwiese linden series, not the Kontumazgarten plane"
     },
     {
      "title": "File:Naturdenkmal Linde in der Grünanlage Hallerwiese Nürnberg 2025-02-09 05.jpg",
@@ -37283,7 +37333,7 @@
      "cats": "Category:All media supported by Wikimedia CH Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Giardini Pubblici (Cagliari) Category:Images by Sailko - Supported by Wikimedia CH Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Sardinia Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Images from Wiki Loves Monuments 2019 in Italy - without local award Category:Italy photographs taken on 2019-06-20 Category:Jacaranda Category:Photographs by User:Sailko Category:Self-published work Category:Uploaded via Campaign:wlm-it",
      "source": "wikidata/Q55742504",
      "judged": "reject",
-     "verdict": "Avenue of many jacarandas; no single tree identifiable"
+     "verdict": "Avenue of many jacarandas; ours cannot be told apart"
     },
     {
      "title": "File:Albero secolare Giardini Pubblici.jpg",
@@ -37563,7 +37613,9 @@
      "author": "Maurizio Moro5153",
      "lat": 45.836567,
      "lng": 9.04225,
-     "cats": "Category:CC-BY-SA-4.0 Category:Churches in Italy at night Category:Churches in Italy photographed in 2017 Category:Cultural heritage monuments in Italy with known IDs Category:December 2017 in Como Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2019 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Italy photographs taken on 2017-12-07 Category:Night in Como Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Churches in Italy at night Category:Churches in Italy photographed in 2017 Category:Cultural heritage monuments in Italy with known IDs Category:December 2017 in Como Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2019 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Italy photographs taken on 2017-12-07 Category:Night in Como Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Night shot of the lit church"
     },
     {
      "title": "File:Chiesa Romanica di Quarcino Como.jpg",
@@ -37593,7 +37645,9 @@
      "author": "Giulia200",
      "lat": 45.836567,
      "lng": 9.04225,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Church is the subject, chestnut backlit behind it"
     },
     {
      "title": "File:Nevicata a Quarcino.jpg",
@@ -37603,7 +37657,9 @@
      "author": "Moltenimario",
      "lat": 45.836567,
      "lng": 9.04225,
-     "cats": "Category:CC-BY-SA-4.0 Category:Church towers in Como Category:Churches in Italy in snow Category:Churches in Italy photographed in 2012 Category:Cultural heritage monuments in Italy with known IDs Category:December 2012 in Como Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2019 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Italy photographs taken on 2012-12-14 Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:Snow in Como Category:Taken with Samsung HMX-U10 Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Church towers in Como Category:Churches in Italy in snow Category:Churches in Italy photographed in 2012 Category:Cultural heritage monuments in Italy with known IDs Category:December 2012 in Como Category:Images from Wiki Loves Monuments 2019 Category:Images from Wiki Loves Monuments 2019 in Italy Category:Images from Wiki Loves Monuments 2019 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2019 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2019 in Italy - veteran trees Category:Italy photographs taken on 2012-12-14 Category:Santi Filippo e Giacomo in Quarcino Category:Self-published work Category:Snow in Como Category:Taken with Samsung HMX-U10 Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Bell tower in snow, tree a corner"
     }
    ]
   },
@@ -38856,7 +38912,9 @@
      "author": "Isiwal",
      "lat": null,
      "lng": null,
-     "cats": "Category:Animals at Schloss Eggenberg, Graz Category:Austria photographs taken on 2024-05-16 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria with known IDs Category:May 2024 in Graz Category:Media from WikiDaheim 2024 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2024 in Austria/all Category:Media from WikiDaheim in Austria check done Category:Nature of Austria in May 2024 Category:Park benches in Graz Category:Pavo cristatus (captive, male) Category:Prejury selection for WikiDaheim 2024 in Austria Category:Quality images Category:Quality images by Isiwal Category:Quality images from Wiki Loves Monuments Austria 2024 Category:Quality images of Graz Category:Quality images of Pavo cristatus Category:Quality images of birds in Austria Category:Quality images supported by Wikimedia Österreich in 2024 Category:Self-published work"
+     "cats": "Category:Animals at Schloss Eggenberg, Graz Category:Austria photographs taken on 2024-05-16 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria with known IDs Category:May 2024 in Graz Category:Media from WikiDaheim 2024 in Austria/Cultural heritage monuments Category:Media from WikiDaheim 2024 in Austria/all Category:Media from WikiDaheim in Austria check done Category:Nature of Austria in May 2024 Category:Park benches in Graz Category:Pavo cristatus (captive, male) Category:Prejury selection for WikiDaheim 2024 in Austria Category:Quality images Category:Quality images by Isiwal Category:Quality images from Wiki Loves Monuments Austria 2024 Category:Quality images of Graz Category:Quality images of Pavo cristatus Category:Quality images of birds in Austria Category:Quality images supported by Wikimedia Österreich in 2024 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Peacock photograph"
     }
    ]
   },
@@ -39396,7 +39454,7 @@
   "pot_001": {
    "city": "Potsdam",
    "name": "The Linden of Park Jagdschloss Glienicke",
-   "checked": "2026-08-17",
+   "checked": "2026-10-14",
    "sweep": 5,
    "candidates": [
     {
@@ -39430,14 +39488,14 @@
   "pot_002": {
    "city": "Potsdam",
    "name": "The King's Linden",
-   "checked": "2026-08-17",
+   "checked": "2026-10-14",
    "sweep": 5,
    "candidates": []
   },
   "pot_003": {
    "city": "Potsdam",
    "name": "The Schlosspark Glienicke Oak",
-   "checked": "2026-08-17",
+   "checked": "2026-10-14",
    "sweep": 5,
    "candidates": [
     {
@@ -39471,7 +39529,7 @@
   "pot_004": {
    "city": "Potsdam",
    "name": "The Jägerhof Oak",
-   "checked": "2026-08-17",
+   "checked": "2026-10-14",
    "sweep": 5,
    "candidates": []
   },
@@ -41788,7 +41846,9 @@
      "lat": 52.363218,
      "lng": 4.893271,
      "cats": "Category:CC-BY-SA-3.0 Category:Museum Van Loon Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ30",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Garden house facade centre, beech only at the edge"
     },
     {
      "title": "File:Amsterdam - Museum Van Loon 09.JPG",
@@ -41799,7 +41859,9 @@
      "lat": 52.363218,
      "lng": 4.893271,
      "cats": "Category:CC-BY-SA-3.0 Category:Museum Van Loon Category:Self-published work Category:Taken with Panasonic Lumix DMC-FZ30",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Interior staircase"
     },
     {
      "title": "File:Amsterdam - Museum Van Loon 12.JPG",
@@ -68007,7 +68069,7 @@
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:Joergens.mi Category:JöMi Freiburg im Breisgau Category:Jömi(201203) Category:On OSM Category:Self-published work Category:Taken with Pentax K-5 Category:Waldtraut vom Mühlwald (Freiburg im Breisgau)",
      "source": "wikidata/Q112057419",
      "judged": "reject",
-     "verdict": "Forest stand; centre band shows indistinguishable trunks"
+     "verdict": "Tall panorama of a fir stand; centre band is a lattice of trunks"
     },
     {
      "title": "File:Douglasie Waldtraut Hoechster Baum Deutschlands.jpg",
@@ -68076,7 +68138,7 @@
      "source": "inaturalist",
      "obs_location": "47.9532277778,7.8609861111",
      "judged": "reject",
-     "verdict": "Forest view, no geotag, tree not identifiable"
+     "verdict": "Forest interior, no single tree"
     },
     {
      "title": "iNat obs 346808903 (Pseudotsuga menziesii)",
@@ -68149,7 +68211,9 @@
      "author": "James Steakley",
      "lat": 48.002177,
      "lng": 7.862294,
-     "cats": "Category:CC-BY-SA-3.0 Category:Extracted images Category:Files with coordinates missing SDC location of creation (48° N, 7° E) Category:Stolperstein für Jette Judas (Freiburg im Breisgau)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Extracted images Category:Files with coordinates missing SDC location of creation (48° N, 7° E) Category:Stolperstein für Jette Judas (Freiburg im Breisgau)",
+     "judged": "reject",
+     "verdict": "Stolperstein"
     },
     {
      "title": "File:Stolperstein Rosa Regina Bloch Starkenstraße 39 FR i. Br. CROPPED.jpg",
@@ -68159,7 +68223,9 @@
      "author": "James Steakley",
      "lat": 48.002177,
      "lng": 7.862294,
-     "cats": "Category:CC-BY-SA-3.0 Category:Extracted images Category:Files with coordinates missing SDC location of creation (48° N, 7° E) Category:Stolperstein für Rosa Regina Bloch (Freiburg im Breisgau)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Extracted images Category:Files with coordinates missing SDC location of creation (48° N, 7° E) Category:Stolperstein für Rosa Regina Bloch (Freiburg im Breisgau)",
+     "judged": "reject",
+     "verdict": "Stolperstein"
     }
    ]
   },
@@ -69280,7 +69346,9 @@
      "author": "Wolfgang Fricke",
      "lat": null,
      "lng": null,
-     "cats": "Category:Alsterufer (ship, 1954) Category:CC-BY-3.0 Category:GFDL Category:Hornkoog (ship, 1959) Category:License migration redundant Category:Self-published work"
+     "cats": "Category:Alsterufer (ship, 1954) Category:CC-BY-3.0 Category:GFDL Category:Hornkoog (ship, 1959) Category:License migration redundant Category:Self-published work",
+     "judged": "reject",
+     "verdict": "1969 ship photograph"
     },
     {
      "title": "File:Hamburg-Rotherbaum, Consulate General of the United States.jpg",
@@ -69350,7 +69418,9 @@
      "author": "hh oldman",
      "lat": 53.564006,
      "lng": 9.998031,
-     "cats": "Category:Buildings in Hamburg-Rotherbaum Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (53° N, 9° E) Category:Germany photographs taken on 2013-03-05 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4645711"
+     "cats": "Category:Buildings in Hamburg-Rotherbaum Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (53° N, 9° E) Category:Germany photographs taken on 2013-03-05 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4645711",
+     "judged": "reject",
+     "verdict": "Villa facade"
     },
     {
      "title": "File:Rotherbaum, Hamburg, Germany - panoramio (43).jpg",
@@ -69360,7 +69430,9 @@
      "author": "hh oldman",
      "lat": 53.563607,
      "lng": 9.997752,
-     "cats": "Category:Buildings in Hamburg-Rotherbaum Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (53° N, 9° E) Category:Germany photographs taken on 2013-03-05 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4645711"
+     "cats": "Category:Buildings in Hamburg-Rotherbaum Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (53° N, 9° E) Category:Germany photographs taken on 2013-03-05 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 4645711",
+     "judged": "reject",
+     "verdict": "Villa facade"
     },
     {
      "title": "File:US-Konsulat am Alsterufer in Hamburg-Rotherbaum.jpg",
@@ -69544,7 +69616,9 @@
      "author": "Pauli-Pirat",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Hirschpark (Hamburg) Category:Images by Pauli-Pirat Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Hirschpark (Hamburg) Category:Images by Pauli-Pirat Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Duckweed pond in woodland"
     },
     {
      "title": "File:Hirschpark Nienstedten (9).jpg",
@@ -79206,7 +79280,9 @@
      "lat": 38.706276,
      "lng": -9.200792,
      "cats": "Category:CC-BY-SA-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR Category:Jardim Botânico da Ajuda Category:Photographs by jad99 Category:Taken with Canon PowerShot SX200 IS Category:Unidentified Dombeya",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Flowering shrub in front, no jacaranda as subject"
     },
     {
      "title": "File:Jardim Botanico da Ajuda (14028781193).jpg",
@@ -83962,7 +84038,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Craigends Yew Category:Images by Roger Griffith Category:Self-published work",
      "source": "wikidata/Q47533854",
      "judged": "reject",
-     "verdict": "Washed-out yew mass, no trunk readable, overexposed sky"
+     "verdict": "Thicket of yew foliage, no trunk, blown-out sky"
     },
     {
      "title": "File:Craigends Yew grove, Houston, Renfrewshire - eastern section.jpg",
@@ -86323,7 +86399,9 @@
      "author": "Biccie",
      "lat": null,
      "lng": null,
-     "cats": "Category:2012 in Leiden Category:CC-BY-SA-3.0 Category:Car parks in the Netherlands Category:Garenmarkt, Leiden Category:Kruitschip, Leiden Category:Netherlands photographs taken on 2012-04-14 Category:Self-published work Category:Taken with Sony DSC-HX5V"
+     "cats": "Category:2012 in Leiden Category:CC-BY-SA-3.0 Category:Car parks in the Netherlands Category:Garenmarkt, Leiden Category:Kruitschip, Leiden Category:Netherlands photographs taken on 2012-04-14 Category:Self-published work Category:Taken with Sony DSC-HX5V",
+     "judged": "reject",
+     "verdict": "Car park square"
     },
     {
      "title": "File:Leiden - Garenmarkt 17 GM-797 20190531.jpg",
@@ -86674,7 +86752,9 @@
      "author": "Tubantia",
      "lat": 52.15407222,
      "lng": 4.49666944,
-     "cats": "Category:2008 in Leiden Category:4e Binnenvestgracht, Leiden Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-09-14 Category:Self-published work Category:Taken with HP PhotoSmart M417 Category:Wall poems in Leiden by Jan Eijkelboom"
+     "cats": "Category:2008 in Leiden Category:4e Binnenvestgracht, Leiden Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Netherlands photographs taken on 2008-09-14 Category:Self-published work Category:Taken with HP PhotoSmart M417 Category:Wall poems in Leiden by Jan Eijkelboom",
+     "judged": "reject",
+     "verdict": "Wall poem"
     },
     {
      "title": "File:Leiden - Plantsoen (Avary).jpg",
@@ -105669,7 +105749,9 @@
      "author": "qwesy qwesy",
      "lat": 48.756849,
      "lng": 9.230071,
-     "cats": "Category:Bernhardskirche (Stuttgart-Rohracker) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (48° N, 9° E) Category:Germany photographs taken on 2012-03-11 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 596286"
+     "cats": "Category:Bernhardskirche (Stuttgart-Rohracker) Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation (48° N, 9° E) Category:Germany photographs taken on 2012-03-11 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 596286",
+     "judged": "reject",
+     "verdict": "Church is the subject"
     },
     {
      "title": "File:Stuttgart-Rohracker Evang. Bernhardskirche 1.JPG",
@@ -105691,7 +105773,9 @@
      "author": "Bear62",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bernhardskirche (Stuttgart-Rohracker) Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon Coolpix S550"
+     "cats": "Category:Bernhardskirche (Stuttgart-Rohracker) Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon Coolpix S550",
+     "judged": "reject",
+     "verdict": "Church porch stair"
     }
    ]
   },
@@ -105888,7 +105972,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (48° N, 9° E) Category:Platane am Spielhaus Category:Self-published work",
-     "source": "wikidata/Q131947999"
+     "source": "wikidata/Q131947999",
+     "judged": "approve",
+     "verdict": "Viewed: huge plane crown fills frame beside the Spielhaus in the Exotic Garden; plane foliage; file names Platane am Spielhaus (the Nationalerbe source name)"
     },
     {
      "title": "File:HohenheimGötterbaum.jpg",
@@ -105960,7 +106046,9 @@
      "author": "Jan",
      "lat": 48.7098808,
      "lng": 9.20722961,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (48° N, 9° E) Category:Photos imported with import-500px Category:Unidentified Magnolia"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation (48° N, 9° E) Category:Photos imported with import-500px Category:Unidentified Magnolia",
+     "judged": "reject",
+     "verdict": "Magnolia flower close-up"
     }
    ]
   },
@@ -111855,7 +111943,9 @@
      "author": "Alan Hughes",
      "lat": 51.48290267,
      "lng": -3.18387204,
-     "cats": "Category:CC-BY-SA-2.0 Category:Castle, Cardiff Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:CC-BY-SA-2.0 Category:Castle, Cardiff Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "Fungus close-up"
     },
     {
      "title": "File:Charter for Trees, Woods and People, Bute Park - geograph.org.uk - 6244950.jpg",
@@ -111865,7 +111955,9 @@
      "author": "Colin Cheesman",
      "lat": 51.48200427,
      "lng": -3.18469824,
-     "cats": "Category:CC-BY-SA-2.0 Category:Castle, Cardiff Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:CC-BY-SA-2.0 Category:Castle, Cardiff Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "Charter post is the subject"
     },
     {
      "title": "File:Magnolia - geograph.org.uk - 7444798.jpg",
@@ -111875,7 +111967,9 @@
      "author": "Alan Hughes",
      "lat": 51.48271817,
      "lng": -3.18336268,
-     "cats": "Category:CC-BY-SA-2.0 Category:Castle, Cardiff Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:CC-BY-SA-2.0 Category:Castle, Cardiff Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "A magnolia, not the plane"
     }
    ]
   },
@@ -113101,7 +113195,9 @@
      "author": "Agata Zamorska",
      "lat": 54.4114756,
      "lng": 18.56077909,
-     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm"
+     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm",
+     "judged": "reject",
+     "verdict": "A birch, not the katsura"
     },
     {
      "title": "File:Cercidiphyllum japonicum Oliwa.JPG",
@@ -115180,7 +115276,7 @@
      "cats": "Category:CC-BY-SA-3.0 Category:Creek Nation Council Oak Park Category:Famous Quercus in the United States Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the United States Category:Monuments and memorials to trees Category:National Register of Historic Places with known IDs Category:Self-published work Category:Taken with Canon EOS 5D Mark II Category:United States photographs taken on 2012-09-23 Category:WLM 2012 United States reviewed",
      "source": "wikidata/Q19866514",
      "judged": "reject",
-     "verdict": "Park sign dominates; oak is background"
+     "verdict": "Park sign is the subject, oak sits behind it upper left"
     },
     {
      "title": "File:Creek Council Tree Site, Tulsa, OK, Monument 01.JPG",
@@ -123013,7 +123109,9 @@
      "author": "HenkvD",
      "lat": 52.511973,
      "lng": 6.100729,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "House facade series"
     },
     {
      "title": "File:Zwolle GM Groot Wezenland 34.jpg",
@@ -123023,7 +123121,9 @@
      "author": "HenkvD",
      "lat": 52.512259,
      "lng": 6.101031,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-11-26 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "House facade"
     },
     {
      "title": "File:Zwolle GM Groot Wezenland 37.jpg",
@@ -123275,7 +123375,9 @@
      "author": "HenkvD",
      "lat": 52.514464,
      "lng": 6.100732,
-     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Villa facade across water"
     },
     {
      "title": "File:Zwolle GM Badhuiswal 8.jpg",
@@ -123285,7 +123387,9 @@
      "author": "HenkvD",
      "lat": 52.514464,
      "lng": 6.100732,
-     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente"
+     "cats": "Category:2019 in Zwolle Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Zwolle Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2019-12-14 Category:Self-published work Category:Uploaded via Campaign:wlm-nl-gemeente",
+     "judged": "reject",
+     "verdict": "Villa facade series"
     },
     {
      "title": "File:Zwolle GM Badhuiswal 9.jpg",
@@ -124890,7 +124994,9 @@
      "author": "Gerdsch",
      "lat": 47.07743,
      "lng": 15.457006,
-     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1123 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Trees in Graz Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1123 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Trees in Graz Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "A beech in Hartenaugasse 193 m away, not this hornbeam"
     },
     {
      "title": "File:Buche Hartenaugasse Graz 1123 (2).JPG",
@@ -124900,7 +125006,9 @@
      "author": "Gerdsch",
      "lat": 47.07743,
      "lng": 15.457006,
-     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1123 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1123 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "A beech in Hartenaugasse 193 m away, not this hornbeam"
     },
     {
      "title": "File:Buche Hartenaugasse Graz 1123 (4).JPG",
@@ -124920,7 +125028,9 @@
      "author": "Andi oisn",
      "lat": null,
      "lng": null,
-     "cats": "Category:Baron Wilhelm von Tegetthoff Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Austria with known IDs Category:Cultural heritage monuments in Graz Category:Self-published work Category:St. Leonhard, Graz Category:Taken with HTC Desire Category:Tegetthoffdenkmal, Graz"
+     "cats": "Category:Baron Wilhelm von Tegetthoff Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Austria with known IDs Category:Cultural heritage monuments in Graz Category:Self-published work Category:St. Leonhard, Graz Category:Taken with HTC Desire Category:Tegetthoffdenkmal, Graz",
+     "judged": "reject",
+     "verdict": "Tegetthoff monument is the subject"
     },
     {
      "title": "File:Graz-Tegetthoffplatz-Straßenlaternen.jpg",
@@ -128795,6 +128905,324 @@
      "cats": "Category:2012 photographs of Chiayi County Category:Boardwalks in Alishan National Forest Recreation Area Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Outside stairs in Chiayi County Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:People on stairs in Chiayi County Category:Photos from Panoramio Category:Taiwan photographs taken on 2012-02-01 Category:Views from stairs in Chiayi County Category:Wooden outside stairs in Taiwan",
      "judged": "reject",
      "verdict": "boardwalk and people in a cypress forest; no single tree is the subject"
+    }
+   ]
+  },
+  "pot_005": {
+   "city": "Potsdam",
+   "name": "The Thousand-Year Oak of Sacrow",
+   "checked": "2026-10-14",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:1000-jährige Eiche in Sacrow, 3.jpg (Wikidata Q106393691)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_3.jpg/960px-1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_in_Sacrow,_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "WikiVagant",
+     "lat": 52.427544,
+     "lng": 13.092245,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Quercus in Brandenburg in September 2018 Category:Quercus robur in the Northern Hemisphere in September 2018 Category:Self-published work Category:Tausendjährige Eiche (Sacrow)",
+     "source": "wikidata/Q106393691",
+     "judged": "reject",
+     "verdict": "Deadwood close view, crown cut; superseded by Sacrow 2"
+    },
+    {
+     "title": "File:1000-jährige Eiche in Sacrow, 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_1.jpg/960px-1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_in_Sacrow,_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "WikiVagant",
+     "lat": 52.427544,
+     "lng": 13.092245,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Quercus in Brandenburg in September 2018 Category:Quercus robur in the Northern Hemisphere in September 2018 Category:Self-published work Category:Tausendjährige Eiche (Sacrow)",
+     "judged": "reject",
+     "verdict": "Dead fallen limbs dominate; superseded by Sacrow 2"
+    },
+    {
+     "title": "File:1000-jährige Eiche in Sacrow, 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_2.jpg/960px-1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_in_Sacrow,_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "WikiVagant",
+     "lat": 52.427544,
+     "lng": 13.092245,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Quercus in Brandenburg in September 2018 Category:Quercus robur in the Northern Hemisphere in September 2018 Category:Self-published work Category:Tausendjährige Eiche (Sacrow)",
+     "judged": "approve",
+     "verdict": "Viewed: veteran oak in leaf, huge burred trunk centre, fallen limbs around, crown fills frame; oak foliage; file names the Sacrow 1000-year oak, 0 m"
+    },
+    {
+     "title": "File:1000-jährige Eiche in Sacrow, 3.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_3.jpg/960px-1000-j%C3%A4hrige_Eiche_in_Sacrow%2C_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:1000-j%C3%A4hrige_Eiche_in_Sacrow,_3.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "WikiVagant",
+     "lat": 52.427544,
+     "lng": 13.092245,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Quercus in Brandenburg in September 2018 Category:Quercus robur in the Northern Hemisphere in September 2018 Category:Self-published work Category:Tausendjährige Eiche (Sacrow)"
+    }
+   ]
+  },
+  "pot_006": {
+   "city": "Potsdam",
+   "name": "The Columnar Oaks of Bassinplatz",
+   "checked": "2026-10-14",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Bassinplatz in Potsdam - Infotafel \"östliche Wegeverbindung\".jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Bassinplatz_in_Potsdam_-_Infotafel_%22%C3%B6stliche_Wegeverbindung%22.jpg/960px-Bassinplatz_in_Potsdam_-_Infotafel_%22%C3%B6stliche_Wegeverbindung%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Bassinplatz_in_Potsdam_-_Infotafel_%22%C3%B6stliche_Wegeverbindung%22.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Bernd Schwabe",
+     "lat": 52.4014946,
+     "lng": 13.0630261,
+     "cats": "Category:Bassinplatz (Potsdam) Category:Brandenburg photographs taken on 2025-10-06 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Information boards in Potsdam Category:Plaques in Potsdam Category:Self-published work Category:Uploaded with Mobile/Android"
+    },
+    {
+     "title": "File:Naturdenkmal Nr. 31 Säulen-Eiche auf dem Bassinplatz.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Naturdenkmal_Nr._31_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg/960px-Naturdenkmal_Nr._31_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr._31_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Haplochromis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Photographs by Alex Giltjes Category:Self-published work Category:Säuleneichen auf dem Bassinplatz (Potsdam)",
+     "judged": "approve",
+     "verdict": "Viewed: columnar oak, upswept branches, thick trunk centred on Bassinplatz lawn before brick Dutch-quarter houses; file names ND 31, one of the pair"
+    },
+    {
+     "title": "File:Naturdenkmal Nr. 32 Säulen-Eiche auf dem Bassinplatz.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Naturdenkmal_Nr._32_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg/960px-Naturdenkmal_Nr._32_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr._32_S%C3%A4ulen-Eiche_auf_dem_Bassinplatz.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Haplochromis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Photographs by Alex Giltjes Category:Self-published work Category:Säuleneichen auf dem Bassinplatz (Potsdam)"
+    },
+    {
+     "title": "File:Potsdam, Sowjetischer Ehrenfriedhof am Bassinplatz.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Potsdam%2C_Sowjetischer_Ehrenfriedhof_am_Bassinplatz.jpg/960px-Potsdam%2C_Sowjetischer_Ehrenfriedhof_am_Bassinplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam,_Sowjetischer_Ehrenfriedhof_am_Bassinplatz.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Andreas Lippold",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Photos by Andreas Lippold Category:Self-published work Category:Sowjetischer Ehrenfriedhof Bassinplatz Potsdam Category:Taken with Panasonic Lumix DMC-G5 and Panasonic Lumix G Vario 14-42mm F3.5-5.6 Asph. Mega O.I.S."
+    },
+    {
+     "title": "File:Potsdam - Trafohäuschen am Wochenmarkt Bassinplatz - panoramio.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Potsdam_-_Trafoh%C3%A4uschen_am_Wochenmarkt_Bassinplatz_-_panoramio.jpg/960px-Potsdam_-_Trafoh%C3%A4uschen_am_Wochenmarkt_Bassinplatz_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam_-_Trafoh%C3%A4uschen_am_Wochenmarkt_Bassinplatz_-_panoramio.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "Löwe 48",
+     "lat": 52.401327,
+     "lng": 13.060143,
+     "cats": "Category:Art-efx in Potsdam Category:Bassinplatz (Potsdam) Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Germany photographs taken on 2012-07-17 Category:Murals in Potsdam Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 6374708"
+    },
+    {
+     "title": "File:Potsdam Bassinplatz skate park Am Bassin 1.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Potsdam_Bassinplatz_skate_park_Am_Bassin_1.jpg/960px-Potsdam_Bassinplatz_skate_park_Am_Bassin_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam_Bassinplatz_skate_park_Am_Bassin_1.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Orderinchaos",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bassinplatz (Potsdam) Category:CC-BY-SA-4.0 Category:Self-published work Category:Skateparks in Germany"
+    },
+    {
+     "title": "File:Potsdam Bassinplatz skate park Am Bassin 2.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Potsdam_Bassinplatz_skate_park_Am_Bassin_2.jpg/960px-Potsdam_Bassinplatz_skate_park_Am_Bassin_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam_Bassinplatz_skate_park_Am_Bassin_2.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Orderinchaos",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:Bassinplatz (Potsdam) Category:CC-BY-SA-4.0 Category:Self-published work Category:Skateparks in Germany"
+    },
+    {
+     "title": "File:Säulen-Eiche auf dem Bassinplatz in Potsdam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/S%C3%A4ulen-Eiche_auf_dem_Bassinplatz_in_Potsdam.jpg/960px-S%C3%A4ulen-Eiche_auf_dem_Bassinplatz_in_Potsdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:S%C3%A4ulen-Eiche_auf_dem_Bassinplatz_in_Potsdam.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Bernd Schwabe",
+     "lat": 52.4014114,
+     "lng": 13.0625766,
+     "cats": "Category:Brandenburg photographs taken on 2025-10-06 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Säuleneichen auf dem Bassinplatz (Potsdam) Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "Portrait, lower half grass; centre crop loses crown; ND 31 file approved instead"
+    }
+   ]
+  },
+  "pot_007": {
+   "city": "Potsdam",
+   "name": "The Lime of Weberplatz",
+   "checked": "2026-10-14",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Markt auf dem Weberplatz in Potsdam.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Markt_auf_dem_Weberplatz_in_Potsdam.jpg/500px-Markt_auf_dem_Weberplatz_in_Potsdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Markt_auf_dem_Weberplatz_in_Potsdam.jpg",
+     "licence": "CC BY 4.0",
+     "author": "Brataffe",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-4.0 Category:Markets in Potsdam Category:Self-published work Category:Weberplatz (Potsdam)"
+    },
+    {
+     "title": "File:Potsdam-Babelsberg Weberplatz 23.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Potsdam-Babelsberg_Weberplatz_23.JPG/960px-Potsdam-Babelsberg_Weberplatz_23.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam-Babelsberg_Weberplatz_23.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Kvikk",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Potsdam Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Self-published work Category:Weberplatz (Potsdam) Category:Weberviertel (Babelsberg)"
+    },
+    {
+     "title": "File:Potsdam-Babelsberg Weberplatz 26.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Potsdam-Babelsberg_Weberplatz_26.JPG/960px-Potsdam-Babelsberg_Weberplatz_26.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam-Babelsberg_Weberplatz_26.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Kvikk",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Potsdam Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Self-published work Category:Weberplatz (Potsdam) Category:Weberviertel (Babelsberg)"
+    },
+    {
+     "title": "File:Potsdam-Babelsberg Weberplatz 29.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Potsdam-Babelsberg_Weberplatz_29.JPG/960px-Potsdam-Babelsberg_Weberplatz_29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam-Babelsberg_Weberplatz_29.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Kvikk",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Potsdam Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Self-published work Category:Weberplatz (Potsdam) Category:Weberviertel (Babelsberg)"
+    }
+   ]
+  },
+  "pot_008": {
+   "city": "Potsdam",
+   "name": "The Oak of the Schiffbauergasse",
+   "checked": "2026-10-14",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal Nr 29 Stiel-Eiche auf dem Gelände der Schiffbauergasse.jpg (Wikidata Q106393707)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Naturdenkmal_Nr_29_Stiel-Eiche_auf_dem_Gel%C3%A4nde_der_Schiffbauergasse.jpg/960px-Naturdenkmal_Nr_29_Stiel-Eiche_auf_dem_Gel%C3%A4nde_der_Schiffbauergasse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr_29_Stiel-Eiche_auf_dem_Gel%C3%A4nde_der_Schiffbauergasse.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Haplochromis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Photographs by Alex Giltjes Category:Quercus in Brandenburg in December 2020 Category:Quercus robur in Potsdam Category:Quercus robur in the Northern Hemisphere in December 2020 Category:Schiffbauergasse (Potsdam) Category:Self-published work Category:Stiel-Eiche auf dem Gelände der Schiffbauergasse (Potsdam)",
+     "source": "wikidata/Q106393707",
+     "judged": "approve",
+     "verdict": "Viewed: lone broad oak on lakeside lawn (Tiefer See behind), marcescent autumn leaves, trunk and crown centred; file names ND 29"
+    },
+    {
+     "title": "File:Gedenktafel Schiffbauergasse (Potsdam) Kammergebäude.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Gedenktafel_Schiffbauergasse_%28Potsdam%29_Kammergeb%C3%A4ude.jpg/960px-Gedenktafel_Schiffbauergasse_%28Potsdam%29_Kammergeb%C3%A4ude.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Schiffbauergasse_(Potsdam)_Kammergeb%C3%A4ude.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "OTFW, Berlin",
+     "lat": 52.40311944,
+     "lng": 13.07270833,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Hans Otto Theater (Schiffbauergasse) Category:Historischer Parcours Potsdam Category:KGB Category:Leib-Garde-Husaren-Kaserne Category:License migration redundant Category:Schiffbauergasse (Potsdam) Category:Self-published work"
+    },
+    {
+     "title": "File:Gedenktafel Schiffbauergasse (Potsdam) Koksseparation.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Gedenktafel_Schiffbauergasse_%28Potsdam%29_Koksseparation.jpg/960px-Gedenktafel_Schiffbauergasse_%28Potsdam%29_Koksseparation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Schiffbauergasse_(Potsdam)_Koksseparation.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "OTFW, Berlin",
+     "lat": 52.40400556,
+     "lng": 13.074425,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:License migration redundant Category:Plaques in Potsdam Category:Schiffbauergasse (Potsdam) Category:Self-published work"
+    },
+    {
+     "title": "File:Gedenktafel Schiffbauergasse (Potsdam) Pferdeställe.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Gedenktafel_Schiffbauergasse_%28Potsdam%29_Pferdest%C3%A4lle.jpg/960px-Gedenktafel_Schiffbauergasse_%28Potsdam%29_Pferdest%C3%A4lle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Schiffbauergasse_(Potsdam)_Pferdest%C3%A4lle.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "OTFW, Berlin",
+     "lat": 52.40226111,
+     "lng": 13.07266111,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Historischer Parcours Potsdam Category:KGB Category:Karl Friedrich Schinkel Category:Leib-Garde-Husaren-Kaserne Category:License migration redundant Category:Schiffbauergasse (Potsdam) Category:Self-published work"
+    },
+    {
+     "title": "File:Gedenktafel Schiffbauergasse (Potsdam) Schinkelhalle.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Gedenktafel_Schiffbauergasse_%28Potsdam%29_Schinkelhalle.jpg/960px-Gedenktafel_Schiffbauergasse_%28Potsdam%29_Schinkelhalle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Schiffbauergasse_(Potsdam)_Schinkelhalle.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "OTFW, Berlin",
+     "lat": 52.40285278,
+     "lng": 13.07269167,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Historischer Parcours Potsdam Category:KGB Category:Karl Friedrich Schinkel Category:Leib-Garde-Husaren-Kaserne Category:License migration redundant Category:National People's Army of the German Democratic Republic Category:Schiffbauergasse (Potsdam) Category:Self-published work"
+    },
+    {
+     "title": "File:Gedenktafel Schiffbauergasse (Potsdam) Spola&Herbert Mehler&2012.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Gedenktafel_Schiffbauergasse_%28Potsdam%29_Spola%26Herbert_Mehler%262012.jpg/960px-Gedenktafel_Schiffbauergasse_%28Potsdam%29_Spola%26Herbert_Mehler%262012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Schiffbauergasse_(Potsdam)_Spola%26Herbert_Mehler%262012.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "OTFW, Berlin",
+     "lat": 52.40199722,
+     "lng": 13.07368333,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Herbert Mehler Category:License migration redundant Category:Schiffbauergasse (Potsdam) Category:Self-published work Category:Walk of Modern Art Potsdam"
+    },
+    {
+     "title": "File:Gedenktafel Schiffbauergasse (Potsdam) Waschhaus.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Gedenktafel_Schiffbauergasse_%28Potsdam%29_Waschhaus.jpg/960px-Gedenktafel_Schiffbauergasse_%28Potsdam%29_Waschhaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Schiffbauergasse_(Potsdam)_Waschhaus.jpg",
+     "licence": "CC BY-SA 3.0",
+     "author": "OTFW, Berlin",
+     "lat": 52.40327222,
+     "lng": 13.07315278,
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Files with coordinates missing SDC location of creation Category:FoP-Germany Category:GFDL Category:Historischer Parcours Potsdam Category:Leib-Garde-Husaren-Kaserne Category:License migration redundant Category:Schiffbauergasse (Potsdam) Category:Self-published work Category:W. Spindler Category:Waschhaus (Potsdam)"
+    }
+   ]
+  },
+  "pot_009": {
+   "city": "Potsdam",
+   "name": "The Oaks of the Jungfernsee",
+   "checked": "2026-10-14",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Stiel-Eichen am Jungfernsee.jpg (Wikidata Q106393695)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Stiel-Eichen_am_Jungfernsee.jpg/960px-Stiel-Eichen_am_Jungfernsee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Stiel-Eichen_am_Jungfernsee.jpg",
+     "licence": "CC0",
+     "author": "MataataM",
+     "lat": 52.429927,
+     "lng": 13.064992,
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2025 Category:Images from Wiki Loves Earth 2025, DE landscape Category:Images from Wiki Loves Earth 2025 in Germany Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Stiel-Eichen am Jungfernsee (Potsdam) Category:Self-published work Category:Uploaded via Campaign:wle-de-nd",
+     "source": "wikidata/Q106393695",
+     "judged": "reject",
+     "verdict": "Worm's-eye view up one trunk, no whole-tree shape; which of the three oaks unknown"
+    }
+   ]
+  },
+  "pot_010": {
+   "city": "Potsdam",
+   "name": "The Sessile Oak of Paetowstrasse",
+   "checked": "2026-10-14",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal Nr. 39 Trauben-Eiche in der Templiner Vorstadt.jpg (Wikidata Q106393717)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Naturdenkmal_Nr._39_Trauben-Eiche_in_der_Templiner_Vorstadt.jpg/960px-Naturdenkmal_Nr._39_Trauben-Eiche_in_der_Templiner_Vorstadt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr._39_Trauben-Eiche_in_der_Templiner_Vorstadt.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Haplochromis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Trauben-Eiche in der Templiner Vorstadt (Potsdam) Category:On OSM Category:Photographs by Alex Giltjes Category:Quercus petraea in Brandenburg Category:Quercus petraea in January Category:Self-published work",
+     "source": "wikidata/Q106393717",
+     "judged": "approve",
+     "verdict": "Viewed: bare winter oak fills frame on the dirt track by the allotment sheds, ND sign at trunk; file names ND 39; geotag = OSM node; overcast daylight, colour"
     }
    ]
   }
