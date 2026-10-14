@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "bioul+bojnice+borculo+bulat-pestivien+cabeza-del-buey+cajvana",
+    "kind": "enrich",
+    "tokens": 114000,
+    "trees": 0,
+    "note": "enrichment: Cajvana oak girth 1101 at 1.3 m and height 20.1 (Patrut 2011 as quoted on ro.wikipedia) and access; the pass found the published confirmed pin 1.4 km east of the tree, corrected to the ro.wikipedia coordinate (checked live); Borculo access (private estate, seen from the street); Bulat-Pestivien Wikidata pin source; Cabeza del Buey Singular Trees page (group page); Bioul and Bojnice dead ends; 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "aizuwakamatsu+argoules+athens-georgia+azeitao+bad-blumau+bataszek",
     "kind": "enrich",
     "tokens": 92000,
