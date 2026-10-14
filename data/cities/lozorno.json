@@ -46,11 +46,12 @@
       "verified_sources": [
         "https://www.treeoftheyear.org/previous-years/2023/common-oak-dragon-oak",
         "https://vedanadosah.cvtisr.sk/priroda/jedinecne-stromy-na-slovensku-dub-letny-v-lozorne-pripomina-sediaceho-draka/",
-        "https://regionzahorie.sk/draci-dub-strom-roka-na-lozornom/"
+        "https://regionzahorie.sk/draci-dub-strom-roka-na-lozornom/",
+        "https://www.treeoftheyear.org/previous-years/2023/common-oak-dragon-oak (organiser's GPS for the tree: N 48°19'23.95'' E 17°6'7.15'')"
       ],
       "access": "Free, in public forest inside the Male Karpaty Protected Landscape Area. Reached via a signed cycling/hiking trail from Lozorno village (park near the village water reservoir, continue east on the asphalt forest road). No gate, ticket or private-land concern in any source.",
       "transport": "In forest above Lozorno village, Malacky District; bus line 269 runs to Lozorno from Bratislava's main bus station in about 44 minutes, then the trail on foot or bike from the village reservoir. No public transport reaches the tree itself.",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
         "url": null,
@@ -59,7 +60,13 @@
         "status": "missing"
       },
       "photos": [],
-      "how_to_recognise": "You can recognise it by the trunk, nearly 7 metres round, and the dragon-like silhouette with deeply scarred, gnarled bark. It stands in forest on Kopanicka hill, along the marked trail from Lozorno."
+      "how_to_recognise": "You can recognise it by the trunk, nearly 7 metres round, and the dragon-like silhouette with deeply scarred, gnarled bark. It stands in forest on Kopanicka hill, along the marked trail from Lozorno.",
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://www.treeoftheyear.org/previous-years/2023/common-oak-dragon-oak (organiser's GPS for the tree: N 48°19'23.95'' E 17°6'7.15'')",
+        "date": "2026-10-14",
+        "moved_m": 0
+      }
     }
   ]
 }

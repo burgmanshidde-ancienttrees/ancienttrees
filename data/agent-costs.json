@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "kozy+le-guerno+lebec+longlou+lozorno+luis-correia",
+    "kind": "enrich",
+    "tokens": 91000,
+    "trees": 0,
+    "note": "enrichment: Lebec access corrected from the California State Parks page (grounds sunrise to sunset, $6 per vehicle, visitor center Tue-Sat 9-4); Longlou Walloon heritage code via the Wikipedia list row (record content not opened) and access softened for the nature reserve; Lozorno pin source (Tree of the Year GPS equals our pin); Kozy, Le Guerno, Luis Correia dead ends (photo site and press figures not taken); 16 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "guaiba+guernica+haarlemmermeer+iida+innimond+jericoacoara",
     "kind": "enrich",
     "tokens": 86000,
