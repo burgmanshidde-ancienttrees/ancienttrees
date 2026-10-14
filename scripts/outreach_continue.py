@@ -22,6 +22,14 @@ What it does, and the whole of what it does:
 
 Absent credentials it is a printed dry run and exits 0, like the contributor
 step. It never edits mail text and never adds an address.
+
+It only CONTINUES (2026-10-14): a batch nobody has sent from yet is opened
+here only when it carries `approved_word`, Hidde's own words and the date.
+That morning a session flipped the press batch to approved_by_hidde to get
+past a dry run before he had read the texts, rewrote the texts after his
+correction, and this script sent the old version at the next knock. The
+status alone is something a session can set; his quoted word is the record
+that he read it.
 """
 import glob
 import json
@@ -31,6 +39,15 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SEND = os.path.join(ROOT, "scripts", "outreach_send.py")
+
+
+def started(name):
+    """True when outreach_send.py already sent at least one mail of this batch."""
+    try:
+        sent = json.load(open(os.path.join(ROOT, "data", "outreach-sent.json")))["sent"]
+    except (OSError, ValueError, KeyError):
+        return False
+    return any(s.get("batch") == name for s in sent)
 
 
 def main():
@@ -43,6 +60,10 @@ def main():
             print(f"skip {os.path.basename(path)}: unreadable ({e})")
             continue
         if batch.get("status") != "approved_by_hidde":
+            continue
+        if not batch.get("approved_word") and not started(batch.get("batch", "")):
+            print(f"skip {os.path.basename(path)}: approved but never started and no "
+                  f"approved_word; the first send happens in session, after he read it")
             continue
         touched += 1
         args = [sys.executable, SEND, path] + (["--send"] if really else [])
