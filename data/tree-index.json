@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 74660,
+ "count": 74679,
  "trees": [
   {
    "id": "aac_001",
@@ -11522,7 +11522,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -12866,7 +12866,7 @@
    "precision": "confirmed",
    "age_min": 1000,
    "age_max": 1400,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -19300,7 +19300,7 @@
    "age_max": 400,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "goj_001",
@@ -20164,7 +20164,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "gba_001",
@@ -22276,7 +22276,7 @@
    "age_max": 1500,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "hga_001",
@@ -23844,7 +23844,7 @@
    "age_max": 800,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hou_001",
@@ -24148,7 +24148,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ihy_001",
@@ -24468,7 +24468,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ita_001",
@@ -24484,7 +24484,7 @@
    "age_max": 1900,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "iwk_001",
@@ -25668,7 +25668,7 @@
    "age_max": 800,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kit_001",
@@ -25684,7 +25684,7 @@
    "age_max": 850,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "swe_kungseken_knappfors",
@@ -25780,7 +25780,7 @@
    "age_max": 1100,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kzk_001",
@@ -26370,7 +26370,7 @@
    "precision": "confirmed",
    "age_min": 50,
    "age_max": 75,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -27140,7 +27140,7 @@
    "age_max": 280,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "brf_001",
@@ -29348,7 +29348,7 @@
    "age_max": 400,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "lon_001",
@@ -31444,7 +31444,7 @@
    "age_max": 700,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "mai_001",
@@ -31460,7 +31460,7 @@
    "age_max": 220,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mky_001",
@@ -31762,7 +31762,7 @@
    "precision": "confirmed",
    "age_min": 280,
    "age_max": 380,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -32708,7 +32708,7 @@
    "age_max": 1200,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "mil_001",
@@ -33236,7 +33236,7 @@
    "age_max": 1200,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "msa_001",
@@ -33332,7 +33332,7 @@
    "age_max": 130,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mit_001",
@@ -33348,7 +33348,7 @@
    "age_max": 600,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "myz_001",
@@ -35076,7 +35076,7 @@
    "age_max": 320,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ngy_001",
@@ -35506,7 +35506,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -35860,7 +35860,7 @@
    "age_max": 1800,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "prn_001",
@@ -35876,7 +35876,7 @@
    "age_max": 1000,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ndf_001",
@@ -36660,7 +36660,7 @@
    "age_max": 3000,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "nic_001",
@@ -37860,7 +37860,7 @@
    "age_max": 1300,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "nah_001",
@@ -38132,7 +38132,7 @@
    "age_max": 1200,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "osk_001",
@@ -38325,6 +38325,86 @@
    "has_photo": true,
    "has_story": true,
    "sources": 2
+  },
+  {
+   "id": "oss_001",
+   "tier": "highlighted",
+   "name": "The Lime of Macharen Church",
+   "species": "Common Lime (Tilia x europaea)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.804423,
+   "lng": 5.544771,
+   "precision": "confirmed",
+   "age_min": 186,
+   "age_max": 196,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "oss_007",
+   "tier": "highlighted",
+   "name": "The Lulboom of Megen",
+   "species": "Silver Lime (Tilia tomentosa)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.824865,
+   "lng": 5.566952,
+   "precision": "confirmed",
+   "age_min": 86,
+   "age_max": 96,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "oss_011",
+   "tier": "highlighted",
+   "name": "The Silver Maple of Gripper",
+   "species": "Silver Maple (Acer saccharinum)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.766826,
+   "lng": 5.531101,
+   "precision": "confirmed",
+   "age_min": 126,
+   "age_max": 136,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "oss_012",
+   "tier": "highlighted",
+   "name": "The London Plane of Huismanspark",
+   "species": "London Plane (Platanus x acerifolia)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.807318,
+   "lng": 5.442021,
+   "precision": "confirmed",
+   "age_min": 166,
+   "age_max": 176,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "oss_013",
+   "tier": "highlighted",
+   "name": "The Sycamore of the Ravenstein Maasdijk",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.798716,
+   "lng": 5.650957,
+   "precision": "confirmed",
+   "age_min": 176,
+   "age_max": 226,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
   },
   {
    "id": "ota_001",
@@ -40452,7 +40532,7 @@
    "age_max": 541,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pem_001",
@@ -40468,7 +40548,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "pgs_001",
@@ -41236,7 +41316,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "prv_001",
@@ -43287,22 +43367,6 @@
    "sources": 2
   },
   {
-   "id": "rmb_001",
-   "tier": "highlighted",
-   "name": "The Witch's Spruce",
-   "species": "Norway Spruce (Picea abies)",
-   "city": "Rambynas",
-   "country": "Lithuania",
-   "lat": 55.10307,
-   "lng": 22.14684,
-   "precision": "confirmed",
-   "age_min": 160,
-   "age_max": 180,
-   "has_photo": true,
-   "has_story": true,
-   "sources": 2
-  },
-  {
    "id": "ram_001",
    "tier": "highlighted",
    "name": "Ahorn Feistererhof, Ramsau am Dachstein",
@@ -44690,6 +44754,54 @@
    "precision": "confirmed",
    "age_min": 87,
    "age_max": 89,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "roo_016",
+   "tier": "highlighted",
+   "name": "The Lebanon Cedar of Villa Van Gilse",
+   "species": "Cedar of Lebanon (Cedrus libani)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53055,
+   "lng": 4.4624,
+   "precision": "confirmed",
+   "age_min": 116,
+   "age_max": 126,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "roo_017",
+   "tier": "highlighted",
+   "name": "The Himalayan Cedar of the Paterstuin",
+   "species": "Himalayan Cedar (Cedrus deodara)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53288,
+   "lng": 4.45094,
+   "precision": "approximate",
+   "age_min": 116,
+   "age_max": 126,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 4
+  },
+  {
+   "id": "roo_018",
+   "tier": "highlighted",
+   "name": "The Horse Chestnut of the Paterstuin",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53323,
+   "lng": 4.45015,
+   "precision": "approximate",
+   "age_min": 116,
+   "age_max": 126,
    "has_photo": false,
    "has_story": true,
    "sources": 3
@@ -48132,7 +48244,7 @@
    "age_max": 1300,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "shg_001",
@@ -48148,7 +48260,7 @@
    "age_max": 1100,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "skm_001",
@@ -48164,7 +48276,7 @@
    "age_max": 750,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "shw_001",
@@ -49618,7 +49730,7 @@
    "precision": "confirmed",
    "age_min": 290,
    "age_max": 350,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -49677,14 +49789,14 @@
    "species": "Scots Pine (Pinus sylvestris)",
    "city": "Stokaičiai",
    "country": "Lithuania",
-   "lat": 55.37836,
-   "lng": 22.221519,
-   "precision": "confirmed",
+   "lat": 55.378358,
+   "lng": 22.033334,
+   "precision": "approximate",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "stn_001",
@@ -50180,7 +50292,7 @@
    "age_max": 450,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "tpe_001",
@@ -50660,7 +50772,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "tlc_001",
@@ -50676,7 +50788,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "tel_001",
@@ -51524,7 +51636,7 @@
    "age_max": 300,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "gtr_001",
@@ -52322,7 +52434,7 @@
    "precision": "confirmed",
    "age_min": 100,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -53026,7 +53138,7 @@
    "precision": "confirmed",
    "age_min": 800,
    "age_max": 900,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -53202,7 +53314,7 @@
    "precision": "confirmed",
    "age_min": 200,
    "age_max": 260,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 5
   },
@@ -53234,7 +53346,7 @@
    "precision": "confirmed",
    "age_min": 100,
    "age_max": 200,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -54692,7 +54804,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "ven_001",
@@ -56418,7 +56530,7 @@
    "precision": "confirmed",
    "age_min": 90,
    "age_max": 100,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -57396,7 +57508,7 @@
    "age_max": 420,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wey_001",
@@ -57570,9 +57682,9 @@
    "precision": "confirmed",
    "age_min": 450,
    "age_max": 650,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "wsl_001",
@@ -57604,7 +57716,7 @@
    "age_max": 600,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wrx_001",
@@ -57794,7 +57906,7 @@
    "precision": "confirmed",
    "age_min": 1000,
    "age_max": 1900,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -57860,7 +57972,7 @@
    "age_max": 200,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "ymp_001",
@@ -58084,7 +58196,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ypr_003",
@@ -58260,7 +58372,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "zal_002",
@@ -58580,7 +58692,7 @@
    "age_max": 630,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "zwo_001",
@@ -58834,7 +58946,7 @@
    "precision": "confirmed",
    "age_min": 320,
    "age_max": 400,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -1242693,6 +1242805,38 @@
   {
    "id": "lead_unknown_001",
    "tier": "lead",
+   "name": "The Witch's Spruce",
+   "species": "Norway Spruce (Picea abies)",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_002",
+   "tier": "lead",
+   "name": "The Witch's Spruce",
+   "species": "Norway Spruce (Picea abies)",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_001",
+   "tier": "lead",
    "name": "Lady Bird Johnson Grove",
    "species": "",
    "city": "",
@@ -1243827,6 +1243971,134 @@
    "sources": 0
   },
   {
+   "id": "lead_roosendaal_031",
+   "tier": "lead",
+   "name": "Yew, Vrouwenhofpark (langs jeu de boulebaan)",
+   "species": "Yew (Taxus baccata)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.527827,
+   "lng": 4.463295,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690550, 215 cm, 12 m, band 1900-1910, observed 2025-05, gemeente park, visitable ja. Park, not a small site; crown not separable from neighbours in the spring 2026 PDOK frame, so no confirmed pin, no photo. Register note: branch over the boules court needs anchoring.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_032",
+   "tier": "lead",
+   "name": "Yew, Vrouwenhofpark",
+   "species": "Yew (Taxus baccata)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.527625,
+   "lng": 4.4627,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690552, 288 cm, 17 m, band 1870-1880, observed 2025-05, gemeente park, visitable ja; register: pruned too hard. Largest yew of the park but the crown cannot be placed in the PDOK frame (canal bank, many bare crowns); park is not a small site. Needs a pin or photo.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_033",
+   "tier": "lead",
+   "name": "Pedunculate Oak at the entrance of Restaurant Vrouwenhof",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.528085,
+   "lng": 4.461906,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1680974, 315 cm, 19 m, band 1880-1890, observed 2025-05-23 with 2025 register photo, gemeente park, visitable ja. Leafless oak among other bare crowns, not placeable individually; park not a small site. Needs a pin or photo.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_034",
+   "tier": "lead",
+   "name": "Copper Beech, Vrouwenhofpark (langs jeu de boulebaan)",
+   "species": "Copper Beech (Fagus sylvatica Atropunicea)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.527775,
+   "lng": 4.463864,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690551, 348 cm, 19 m, band 1910-1920, observed 2025-05. Register says the position is inexact because no copper beech is visible at the point; cannot be pinned. Weeping beech 1690549 (229 cm, 11 m, 1910-1920, 'potentieel', position inexact) likewise.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_035",
+   "tier": "lead",
+   "name": "Robinia, Villa Van Gilse garden (Burgerhoutsestraat 12)",
+   "species": "Black Locust (Robinia pseudoacacia)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.529882,
+   "lng": 4.462056,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1680932, 338 cm, 15 m, band 1880-1890, observed 2023-08, gemeente garden open as park, lots of dead wood. Same garden as roo_004, roo_009 and the cedar roo_016, but the garden is too big for a small site (about 110 m by 80 m) and the leafless robinia crown cannot be placed in the PDOK frame. Needs a pin or photo.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_036",
+   "tier": "lead",
+   "name": "Horse Chestnut 'Baumannii', Stationsstraat 4-6",
+   "species": "Horse Chestnut (Aesculus hippocastanum Baumannii)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53507,
+   "lng": 4.45322,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1680202, 254 cm, 13 m, band 1860-1870, 8 trees of an originally 11 in a row between road and railway (a row, not a collectible point); small girth. Not shipped.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_037",
+   "tier": "lead",
+   "name": "Paterstuin remaining trees (Kade 23)",
+   "species": "mixed",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53307,
+   "lng": 4.45119,
+   "precision": null,
+   "reason": "",
+   "note": "Alive and small or re-evaluated: oak 1680953 (312 cm) and sycamore 1680954 (297 cm) downgraded to non-monumental in the latest LRMB update; silver maple 1690560 (163 cm) small; linden row 1680948 100 cm. Felled in the 2014/15 renovation: beech 1680951, lime 1680950; felled by 2023: weeping ash 1690561; replaced weeping willow 1690562; ash 1680949 last seen 2017, status 5. Do not publish.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_038",
+   "tier": "lead",
+   "name": "Felled or missing Roosendaal register entries (do not publish)",
+   "species": "mixed",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53,
+   "lng": 4.462,
+   "precision": null,
+   "reason": "",
+   "note": "Burgerhoutsestraat 12: Caucasian wingnut 1680934, scarlet oak 1689664, silver maple 1689665 felled 2005/2014; yellow buckeye 1680935 reported felled 2023; silver maple 1689667 not found 2017. Vrouwenhofpark: beech 1680973 not found 2016, poplar 1680975 felled 2005, Baumann chestnut 1690553 felled by 2018. Norbartlaan chestnut 1690558 felled by 2015. Nispen Het Dreefje lime 1689958 status 5 (last s",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
    "id": "lead_unknown_001",
    "tier": "lead",
    "name": "Hoflinde Gut Burgstall",
@@ -1243860,6 +1244132,38 @@
   },
   {
    "id": "lead_unknown_003",
+   "tier": "lead",
+   "name": "ND Nr. 49 Linde (Bettwar, am Hof der Oelmuehle)",
+   "species": "Linden (Tilia sp.)",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_004",
+   "tier": "lead",
+   "name": "ND Nr. 50 Linde (Bettwar, Dorfplatz)",
+   "species": "Linden (Tilia sp.)",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_005",
    "tier": "lead",
    "name": null,
    "species": "",

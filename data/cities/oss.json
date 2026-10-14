@@ -1,0 +1,236 @@
+{
+  "city": "Oss",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "Only one of Oss's registered trees stands in the town itself: a silver maple from the 1890s that spent years shut inside a factory yard and now shades a playground on Gripper. The rest stand in villages on the Maas. Macharen has a lime from the 1830s in a heart-shaped tree pit before its church. Megen has the Lulboom, a royal lime of 1937 with cannons dated 1809 and 1811 underneath. Lith has an 1850s plane, the one kept of a pair, and on the Ravenstein dyke a sycamore rises 29 metres over a lime lane planted in 1936.",
+  "meta_description": "Five registered trees around Oss: a silver maple from a factory yard, the Lulboom of Megen, a Macharen church lime, a Lith plane and a 29-metre sycamore.",
+  "question_meta": "Oss's oldest firmly dated tree is the lime at Macharen church, planted in the 1830s; a Ravenstein sycamore may be older. Five trees and their stories.",
+  "question_answer": "The oldest firmly dated tree in the Oss area is the Lime of Macharen Church, which the national tree register puts in the decade 1830 to 1840, roughly 190 years old. A sycamore on the Ravenstein Maasdijk may be older still, but its band of 1800 to 1850 rests on the register's own presumption.",
+  "question_context": "Every age on this page comes from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so each figure is a band. The register is the only written source for all five trees, which is why every entry is flagged. The Macharen lime's band, 1830 to 1840, is the firmest of the old ones. The Ravenstein sycamore's band reaches back to 1800, but the register only presumes it dates from the years when the dyke was lined with elms, which were felled in 1918; nothing documents it. Next comes the London plane in Lith's Huismanspark, put in the 1850s, the one kept of a pair whose other tree was felled before 2009. The silver maple on Gripper, the only one in Oss itself, dates from the 1890s and stood for years inside a closed factory yard. The youngest is Megen's Lulboom, a silver lime planted in 1937 for the wedding of Princess Juliana and Prince Bernhard. Macharen, Megen, Lith and Ravenstein are villages on the Maas within the municipality of Oss. All five trees are free to see at any hour.",
+  "hero_tree_id": "oss_007",
+  "oldest_tree_id": "oss_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree in the Oss area?",
+      "a": "The Lime of Macharen Church, which the national tree register puts in the decade 1830 to 1840, roughly 190 years old. The sycamore on the Ravenstein Maasdijk may be older, but the register only presumes its age."
+    },
+    {
+      "q": "Why is Megen's lime called the Lulboom?",
+      "a": "In Dutch, lullen means to talk at length about not very much. The register says the tree became a meeting place for young and old, with a bench beside it on the Maasdijk, and the name came from that. It was planted in 1937 for the wedding of Princess Juliana and Prince Bernhard."
+    },
+    {
+      "q": "Are these trees in the town of Oss?",
+      "a": "One is: the silver maple at Gripper 28 to 30, a ten-minute walk from Oss station. The other four stand in Macharen, Megen, Lith and Ravenstein, villages on the Maas within the municipality, between 8 and 14 kilometres from the station by road."
+    },
+    {
+      "q": "Is it free to see these trees?",
+      "a": "Yes. All five stand on public squares, plantings or roadsides, open at any hour. None of the villages has a railway station, so check the bus timetable from Oss before you go."
+    }
+  ],
+  "trees": [
+    {
+      "id": "oss_001",
+      "name": "The Lime of Macharen Church",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "roughly 190 years, from a registered planting decade",
+      "age_min": 186,
+      "age_max": 196,
+      "age_basis": "source",
+      "girth_cm": 350,
+      "height_m": 17,
+      "location": {
+        "address": "Macharen, Dorpstraat 1, bij Sint-Petrus-Bandenkerk",
+        "latitude": 51.804423,
+        "longitude": 5.544771,
+        "neighbourhood": "Macharen centre"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680016&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680016",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680016&outFields=*&f=json"
+      },
+      "access": "Free. Village square (plein) owned by the municipality; register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
+      "transport": "No railway station in Macharen; bus from Oss, not verified here (check the current timetable). About 8 km by road from Oss station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "A lime planted in the 1830s stands in the middle of a road junction in Macharen, inside a raised, heart-shaped tree pit. The Sint-Petrus-Bandenkerk stands behind it.\n\nThe national register of monumental trees puts its planting in the decade 1830 to 1840, which makes it somewhere between 186 and 196 years old. It is the 'Pallida' form of the common lime, 3.5 metres round and 17 metres tall by the register's figures, which carry no measurement date.\n\nNobody wrote down why it was planted, or by whom. The register's history field says simply 'unknown', and the church behind it is no evidence either way. What the register does record is a tree that has been looked after. An inspector in January 1994 found a lot of dead wood and asked for it to be cleared and for the ground around the roots to be studied. At the 2023 visit the tree stood in its raised tub on a bed of wood chips, still listed as monumental.\n\nIt was not the only registered lime in the village. A second one, at the primary school De Linde on Hoogstraat, is recorded as dead, so this is the one to come for.\n\nMacharen is a village in the municipality of Oss, about eight kilometres from the town. If you know why this lime was planted, tell us.",
+      "how_to_recognise": "You can recognise it by the raised, heart-shaped tree pit it grows from, in the middle of the junction. It stands in front of the Sint-Petrus-Bandenkerk at Dorpstraat 1.",
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the cream flowers open and the scent carries across the junction"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "oss_007",
+      "name": "The Lulboom of Megen",
+      "species": "Silver Lime (Tilia tomentosa)",
+      "age_estimate": "roughly 90 years, from a documented planting in 1937",
+      "age_min": 86,
+      "age_max": 96,
+      "age_basis": "source",
+      "girth_cm": 390,
+      "height_m": 17,
+      "location": {
+        "address": "Megen, Maasdijk, nabij afrit naar 't Veer",
+        "latitude": 51.824865,
+        "longitude": 5.566952,
+        "neighbourhood": "Megen, Maasdijk"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681077&outFields=*&f=json",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696841&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681077",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1681077&outFields=*&f=json"
+      },
+      "access": "Free. Public planting (plantsoen) on the Maasdijk owned by the municipality, with a bench beside it; register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
+      "transport": "No railway station in Megen; bus from Oss, not verified here (check the current timetable). About 14 km by road from Oss station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two cannons dated 1809 and 1811 stand under this lime, more than a century older than the tree that shades them. The tree itself is the Lulboom of Megen, and its name translates, politely, as the chatter tree: in Dutch, lullen is to talk at length about not very much. The register's history notes say it became a meeting place for young and old, with a bench beside it looking out from the Maasdijk, and that is where the name comes from.\n\nIt went in with more ceremony than its nickname suggests. The silver lime was planted as a memorial tree for the wedding of Princess Juliana and Prince Bernhard in 1937, placed as a royal lime at a prominent spot just outside the historic core of Megen. That makes it about 90 years old, young for this map, but in that time it has put on 3.9 metres of girth and 17 metres of height, by the register's undated figures.\n\nIts worst day is on record. A storm on Ascension Day 1992 split and damaged the tree, and the Heidemij braced and anchored it the same year. It was last inspected in 2023 and is still listed as monumental. Since at least 2023 the spot has also hosted Lulboompop, a music festival held at the tree every June.\n\nAll of this rests on one source, the national register of monumental trees, which entered the lime twice and later withdrew the duplicate. Megen lies 14 kilometres from Oss.",
+      "how_to_recognise": "You can recognise it by the two cannons, dated 1809 and 1811, standing under its crown. It stands alone on the grass triangle between the Maasdijk path and the road down to 't Veer, with a bench beside it.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when it flowers after the other limes, strongly scented of honey"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "oss_011",
+      "name": "The Silver Maple of Gripper",
+      "species": "Silver Maple (Acer saccharinum)",
+      "age_estimate": "roughly 130 years, from a registered planting decade",
+      "age_min": 126,
+      "age_max": 136,
+      "age_basis": "source",
+      "girth_cm": 431,
+      "height_m": 20,
+      "location": {
+        "address": "Oss, Gripper 28-30",
+        "latitude": 51.766826,
+        "longitude": 5.531101,
+        "neighbourhood": "Centrum, Buurt Berghemseweg-Zuid"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689257&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-13)",
+        "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=51.76683&lon=5.5311&zoom=18 (OpenStreetMap: the point lies on a leisure=playground way on the street Gripper)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1689257",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1689257&outFields=*&f=json"
+      },
+      "access": "Free. Municipal planting (plantsoen) at the playground on the residential street Gripper, central Oss; register: visitable ja, visible ja, openbaar ja. OpenStreetMap maps the spot as a playground. No hours; open at all times.",
+      "transport": "Oss station is roughly 0.7 km west, about a 10 minute walk through the town centre.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "For years nobody could measure this tree, because nobody could get to it. When the national register of monumental trees noted the silver maple, it stood inside a closed factory yard in the centre of Oss, and the entry said a girth measurement was impossible and that building plans were being prepared.\n\nThe plans happened, and the tree stayed. The factory site became housing, the address changed in December 2017 from Bram van de Berghstraat 22 to Gripper 28, and the maple now stands in a municipal planting by a playground, between the brick-paved street and the new houses. A register photograph from 2023 shows it in its new setting, and an inspector saw it again in March 2026.\n\nThe register now gives it a girth of 4.31 metres and a height of 20 metres. It does not say when that girth was taken, so read it as the register's figure rather than a fresh measurement, though it is a believable size for a silver maple of this age. The planting is put in the 1890s, which makes it roughly 126 to 136 years old: a North American species that has spent its whole life in the middle of a Brabant town.\n\nWhat it saw inside those walls, the register does not say; its history field reads 'unknown'. If you know who planted it, or what the factory made, tell us.\n\nIt is a ten-minute walk from Oss station.",
+      "how_to_recognise": "You can recognise it by the one big crown between the brick-paved street and the new houses, 20 metres tall on a trunk 4.31 metres round. It stands beside the playground at Gripper 28 to 30.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "oss_012",
+      "name": "The London Plane of Huismanspark",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "roughly 170 years, from a registered planting decade",
+      "age_min": 166,
+      "age_max": 176,
+      "age_basis": "source",
+      "girth_cm": 485,
+      "height_m": 24,
+      "location": {
+        "address": "Lith, Huismanspark, dicht bij de Kerkstraat",
+        "latitude": 51.807318,
+        "longitude": 5.442021,
+        "neighbourhood": "Lith centre"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680893&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-14: one large crown at the register point)",
+        "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=51.807318&lon=5.442022&zoom=18 (OpenStreetMap: village Lith, Kerkstraat)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680893",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680893&outFields=*&f=json"
+      },
+      "access": "Free. Municipal planting (plantsoen) in Lith's village centre beside Kerkstraat; register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
+      "transport": "No railway station in Lith; bus from Oss, not verified here (check the current timetable). About 8 km by road from Oss station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Lith once had two big plane trees standing side by side here, and the national register of monumental trees calls the one that is gone the quarrelsome one. It was felled before 2009; it is the left-hand tree in an older register photograph. This is the plane that was kept.\n\nBy the register's figures it is 4.85 metres round and 24 metres tall, numbers that carry no measurement date. The register puts its planting in the 1850s, which makes it somewhere between 166 and 176 years old. Who planted it, and why, is not written down: the history field reads 'unknown'.\n\nIt has not been left to grow as it pleased. The register's notes mention candelabra pruning, the habit of cutting limbs back to a fixed frame, and splits in the trunk. Even so, an inspector found it standing in August 2023, photographed it, and kept it on the list as monumental.\n\nIt stands on its own in the Huismanspark, a municipal planting in the centre of Lith, close to Kerkstraat. Lith is a village on the Maas in the municipality of Oss, about eight kilometres west of the town. The plane has stood in that village centre for some 170 years.\n\nEverything on this page rests on one source, the register, with that 2023 visit as the latest word on the tree. If you know who planted it, or what happened to its neighbour, tell us.",
+      "how_to_recognise": "You can recognise it by its size: the one big plane in the Huismanspark, 4.85 metres round and 24 metres tall. It stands on its own in Lith's village centre, close to Kerkstraat.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "oss_013",
+      "name": "The Sycamore of the Ravenstein Maasdijk",
+      "species": "Sycamore (Acer pseudoplatanus)",
+      "age_estimate": "roughly 180 to 230 years, from the register's planting band",
+      "age_min": 176,
+      "age_max": 226,
+      "age_basis": "source",
+      "girth_cm": 340,
+      "height_m": 29,
+      "location": {
+        "address": "Ravenstein, Maasdijk",
+        "latitude": 51.798716,
+        "longitude": 5.650957,
+        "neighbourhood": "Ravenstein, Maasdijk"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697363&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-14: a crown at the register point standing above the lane planting)",
+        "https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=51.798716&lon=5.650957&zoom=18 (OpenStreetMap: the point lies on the public highway=unclassified Maasdijk, Ravenstein)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1697363",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1697363&outFields=*&f=json"
+      },
+      "access": "Free. Stands in the lane planting along the public road Maasdijk in Ravenstein; register: visitable ja, visible ja, openbaar ja. No hours; open at all times.",
+      "transport": "No railway station in Ravenstein; bus from Oss, not verified here (check the current timetable). About 10 km by road from Oss station.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "At 29 metres, this sycamore towers over the lime lane it stands in on the Ravenstein Maasdijk, and it may be a century older than the limes around it.\n\nThe national register of monumental trees tells the dyke's story in three plantings. In the 19th century the Maasdijk was lined with elms. They were felled in 1918, which the register puts down to elm disease. In 1936 Rijkswaterstaat planted the lime lane that runs along the road today. The sycamore, the register says, presumably dates from the elm period.\n\nThat 'presumably' is the register's own word, and nothing documents it, so the age here is a broad band rather than a date: planted somewhere between 1800 and 1850, which makes it roughly 180 to 230 years old. If that presumption holds, it outlived the elms it grew up with and then watched a new lane planted around it.\n\nWhat is documented is its condition. It is a recent entry in the register, inspected and photographed in 2026, and the inspector found a fine, intact crown in good shape. The register calls the combination of 29 metres of height and 3.4 metres of girth very special.\n\nIt stands in a double row along the public road, although the register lists its owner as a company. Ravenstein is a fortified town on the Maas, about ten kilometres from Oss. Everything here comes from one source, the register. If you know when this tree went in, tell us.",
+      "how_to_recognise": "You can recognise it by its height: at 29 metres it rises above the limes in the double row along the Maasdijk. It stands at the roadside of the Maasdijk in Ravenstein, 3.4 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

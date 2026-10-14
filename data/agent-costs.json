@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "oss",
+    "kind": "write",
+    "tokens": 197000,
+    "trees": 5,
+    "note": "verify (91k) plus write (106k): Oss reopened with five rich LRMB trees (oss_001/007/011 were blocked only by the four-tree floor, oss_012/013 added); oss to den-bosch redirect removed"
+   },
+   {
+    "date": "2026-10-14",
     "target": "roosendaal",
     "kind": "write",
     "tokens": 210000,

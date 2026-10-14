@@ -49,10 +49,9 @@ const RENAMED_CITY_SLUGS: [string, string][] = [
   // Same day: a one-tree place on Martinique, named after its commune. The
   // island is what a reader looks for and where the next tree there will go.
   ["le-precheur", "martinique"],
-  // 2026-10-12, Hidde: "remove oss page". The register showed four of its six
-  // trees dead, which left two, below the four-tree floor. Den Bosch is the
-  // nearest published city, 18 km west.
-  ["oss", "den-bosch"],
+  // 2026-10-12, Hidde: "remove oss page" (two living trees, below the floor);
+  // ["oss", "den-bosch"] lived here until 2026-10-14, when Oss came back with
+  // five register-backed trees and /oss is a page again.
   // 2026-10-14: the Witch's Spruce, the only tree on the page, is reported dead
   // (bark beetle, 2024). Silale is the nearest published place in Lithuania.
   ["rambynas", "silale"],
@@ -223,9 +222,8 @@ const REMOVED_TREE_SLUGS: [string, string][] = [
   // 2026-10-12, scripts/retire.py: Dead: LRMB status 5 (dood/geveld). hag_026 Vreugd en Rust copper beech cut back in 2014, o
   ["the-hague", "copper-beech-south-of-the-vreugd-en-rust-koepel"],
   ["the-hague", "stone-bench-beech-of-juliana-en-bernardpark"],
-  // 2026-10-12, scripts/retire.py: Alive, but the Oss page was removed 2026-10-12 (Hidde): two living trees is below the four
-  ["oss", "lime-of-macharen-church"],
-  ["oss", "lulboom-of-megen"],
+  // 2026-10-14: lime-of-macharen-church and lulboom-of-megen were here while
+  // the Oss page was down; both trees are live again under the same slugs.
   // 2026-10-12, scripts/retire.py: Dead: LRMB status 5 (dood/geveld). oss_002 nr 1680017 felled 2019/20, new lime planted; os
   ["oss", "lime-of-the-old-school"],
   ["oss", "sycamore-of-kloosterstraat"],
