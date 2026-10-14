@@ -173,12 +173,20 @@
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1685730",
         "url": null
       },
-      "girth_cm": 355
+      "girth_cm": 355,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "Autumn gold and copper",
+        "kind": "colour"
+      }
     },
     {
       "id": "hrl_010",
       "name": "The Roadside Maple of Badhoevedorp",
-      "species": "Maple (Acer sp.)",
+      "species": "Sycamore (Acer pseudoplatanus)",
       "age_estimate": "roughly 110 years, from a registered planting date around 1915, though the register's own note suggests 1895",
       "age_min": 106,
       "age_max": 116,
@@ -187,7 +195,7 @@
         "latitude": 52.334806,
         "longitude": 4.797888
       },
-      "story": "This maple stands in the front garden of a house on the Nieuwemeerdijk built in 1915, and the register cannot quite agree with itself about which of the two is older. Its structured record bands the planting to 1910-1920. Its own descriptive note gives 1895 instead, and adds that if that figure is right, the tree was already growing on this dike before the house went up beside it. Both cannot be true, and we have not been able to resolve which the register meant.\n\nThe species is recorded no more precisely than maple, Acer species, without a name for which one. If you can put a name to it from a photograph, tell us that too.\n\nNone of the uncertainty affects what a passerby can see: a full, healthy crown that the register itself calls the single most striking thing about this stretch of the Nieuwemeerdijk, visible the whole way along the road. The tree grows in the garden of a house that is still lived in, so this is a look rather than a visit. There is no gate to try and no reason to open one, just a wide view from the roadside.\n\nThe register is the only source that has looked at this tree, and on its own evidence it has not entirely made up its mind.",
+      "story": "This maple stands in the front garden of a house on the Nieuwemeerdijk built in 1915, and the register cannot quite agree with itself about which of the two is older. Its structured record bands the planting to 1910-1920. Its own descriptive note gives 1895 instead, and adds that if that figure is right, the tree was already growing on this dike before the house went up beside it. Both cannot be true, and we have not been able to resolve which the register meant.\n\nThe register names it a sycamore, Acer pseudoplatanus, which the Dutch call the gewone esdoorn.\n\nNone of the uncertainty affects what a passerby can see: a full, healthy crown that the register itself calls the single most striking thing about this stretch of the Nieuwemeerdijk, visible the whole way along the road. The tree grows in the garden of a house that is still lived in, so this is a look rather than a visit. There is no gate to try and no reason to open one, just a wide view from the roadside.\n\nThe register is the only source that has looked at this tree, and on its own evidence it has not entirely made up its mind.",
       "verified_sources": [
         "https://www.monumentalebomen.nl/",
         "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1696842&outFields=*&f=json"

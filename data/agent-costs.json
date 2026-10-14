@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "guaiba+guernica+haarlemmermeer+iida+innimond+jericoacoara",
+    "kind": "enrich",
+    "tokens": 86000,
+    "trees": 0,
+    "note": "enrichment: Iida city pages as records with girth and height for the Yasutomi and Kega cherries; Innimond lime girth 580 cm and 30 m chapel site (association blog source); Guaiba square site; Hoofddorp beech October-November best_time; hrl_010 species corrected from Acer sp. to sycamore from the LRMB record (checked live); Guernica, Jericoacoara dead ends; 12 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "canberra+deblin+fonte-colombo+fontenay-abbey+fortaleza+fribourg",
     "kind": "enrich",
     "tokens": 89000,

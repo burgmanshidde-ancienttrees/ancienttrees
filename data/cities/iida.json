@@ -50,7 +50,10 @@
       "story": "Japan's oldest cherries tend to end their days on timber props. This one is over 450 years old, twenty metres tall, and carries the whole crown unaided, which is the first thing both records of it reach for.\n\nAbout three metres up, the trunk divides into five major limbs spread like the head of a broom, and the entire crown rides on them. The trunk below is 5.4 metres round. Nagano Prefecture made it a prefectural natural monument on 22 May 1967.\n\nIts formal name is Osahime no Edohigan. Nobody uses it. The tree is the Yasutomi cherry, after the family who lived here: the Yasutomi were karo, chief retainers to the Hori clan who held the Iida domain, and this was their residence ground. The residence has gone, the domain has gone, and the Iida City Art Museum stands on the site with the cherry in its grounds, free to walk up to.\n\nHigan is the equinox, and that is roughly when the tree opens: in Iida, the final days of March running into early April. The city publishes a bloom tracker through the season and lights the tree after dark for as long as it holds its flowers.",
       "how_to_recognise": "You can recognise it by the trunk, 5.4 metres round, splitting about three metres up into five big limbs spread like a broom, and by the twenty-metre crown standing on no props. It is in the art museum grounds.",
       "best_time": {
-        "months": [3, 4],
+        "months": [
+          3,
+          4
+        ],
         "kind": "flowers",
         "label": "late March into early April, when the five-limbed crown opens just after the equinox and the city lights it at night"
       },
@@ -67,7 +70,11 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "confirmed"
+      "location_precision": "confirmed",
+      "official_register": {
+        "name": "Nagano Prefecture Natural Monument (長野県天然記念物, designated 22 May 1967)",
+        "url": "https://www.city.iida.lg.jp/site/bunkazai/yasutomizakura.html"
+      }
     },
     {
       "id": "iid_002",
@@ -105,7 +112,12 @@
         "license": null,
         "attribution": null,
         "status": "missing"
-      }
+      },
+      "official_register": {
+        "name": "Iida City Natural Monument (飯田市天然記念物, designated 22 November 2000)",
+        "url": "https://www.city.iida.lg.jp/site/bunkazai/kuyoto.html"
+      },
+      "height_m": 15
     }
   ]
 }
