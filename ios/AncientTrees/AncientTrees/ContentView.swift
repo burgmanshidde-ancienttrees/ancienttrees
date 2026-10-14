@@ -594,6 +594,18 @@ struct ContentView: View {
                 .task(id: nearKey) { checkNearby() }
                 .appObjects(self)
                 .reviewAsk(reviewPrompt)
+                // SIGNED IN SAYS SO, in the snackbar (Hidde, 2026-10-14: "is it
+                // normal to give confirmation that you're now logged in?"). No
+                // screen (his 2026-08-25 ruling), one line at the foot, for
+                // every route in: Apple, Google, and the emailed link, which
+                // arrives from outside the app with nothing else to show.
+                .onChange(of: account.isSignedIn) { was, now in
+                    if !was && now {
+                        withAnimation(.easeOut(duration: 0.2)) {
+                            navigator.snack = .init(text: "You are signed in", symbol: "checkmark.circle.fill")
+                        }
+                    }
+                }
                 .onChange(of: navigator.collectNearby) { _, want in
                     if want { openCollect(); navigator.collectNearby = false }
                 }
