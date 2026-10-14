@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "it-lucca",
+    "kind": "translate",
+    "tokens": 72000,
+    "trees": 0,
+    "note": "Italian overlay for Lucca, 14 trees, intro, question page and FAQ; one i18ncheck fix (title and intro length)"
+   },
+   {
+    "date": "2026-10-14",
     "target": "vytogala+westerlo+wilparting+wisniowa+wolfheze+yamanashi-city+yangshuo+yoshida+zalgiriai+zwieslerwaldhaus",
     "kind": "enrich",
     "tokens": 84000,
