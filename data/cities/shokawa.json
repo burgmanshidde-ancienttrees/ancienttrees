@@ -50,7 +50,8 @@
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E8%8D%98%E5%B7%9D%E6%A1%9C",
         "https://www.kankou-gifu.jp/spot/detail_1249.html",
-        "https://www.city.takayama.lg.jp/shisetsu/1004139/1000036/1001612.html"
+        "https://www.city.takayama.lg.jp/shisetsu/1004139/1000036/1001612.html",
+        "https://www.city.takayama.lg.jp/kurashi/1000021/1000119/1000847/1000994/1004127.html"
       ],
       "access": "Free, no permission needed. A public park (Shokawa-zakura Park) on a viewpoint above Miboro Lake, open all day, with on-site parking. No confirmed public bus route to the site.",
       "transport": "About 30 to 40 minutes by car from central Takayama via the Tokai-Hokuriku Expressway (Shokawa IC) and National Routes 158/156; no rail connection.",
@@ -63,7 +64,19 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise them as two Edohigan cherries standing together, both transplanted whole in 1960 from ground now underwater. They stand on a bluff in Shokawa-zakura Park, above Miboro Lake."
+      "how_to_recognise": "You can recognise them as two Edohigan cherries standing together, both transplanted whole in 1960 from ground now underwater. They stand on a bluff in Shokawa-zakura Park, above Miboro Lake.",
+      "official_register": {
+        "name": "Gifu Prefecture designated natural monument (Shokawa-zakura, Takayama City list of natural monuments)",
+        "url": "https://www.city.takayama.lg.jp/kurashi/1000021/1000119/1000847/1000994/1004127.html"
+      },
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "label": "blossom, late April to early May",
+        "kind": "flowers"
+      }
     },
     {
       "id": "sho_002",
@@ -95,7 +108,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by one trunk forking into three about two metres up, all three running full height to the crown. It stands on the shoulder of National Route 158, below Matsunoki Pass."
+      "how_to_recognise": "You can recognise it by one trunk forking into three about two metres up, all three running full height to the crown. It stands on the shoulder of National Route 158, below Matsunoki Pass.",
+      "official_register": {
+        "name": "Takayama City designated natural monument (Mumaya Sanbonmatsu, list of natural monuments)",
+        "url": "https://www.city.takayama.lg.jp/kurashi/1000021/1000119/1000847/1000994/1004127.html"
+      }
     }
   ]
 }
