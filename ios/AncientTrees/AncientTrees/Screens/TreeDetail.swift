@@ -291,6 +291,14 @@ struct TreeDetail: View {
                 }
             }
             .onGeometryChange(for: CGSize.self) { $0.size } action: { pageSize = $0 }
+            // THE PHOTOGRAPH RUNS UP UNDER THE BAR (Hidde, 2026-10-14: "can
+            // the photo not sit behind the buttons so you win some space").
+            // Airbnb's listing, AllTrails' trail page and komoot's tour all
+            // start the picture at the top of the screen with the round
+            // buttons floating on it; the white band above our photo was the
+            // navigation bar's own area doing nothing.
+            .ignoresSafeArea(edges: .top)
+            .toolbarBackground(.hidden, for: .navigationBar)
             actionBar
                 // On the bar and not on the page: the page already carries the
                 // Remove dialog, and SwiftUI shows only one dialog per view, so
@@ -842,7 +850,9 @@ struct TreeDetail: View {
                 .buttonStyle(.plain)
                 .accessibilityLabel("Show this tree on the map")
             }
-            .overlay(alignment: .topLeading) { addPhotoButton }
+            // Bottom left since 2026-10-14: the frame runs up under the
+            // status bar now, and at the top the pill sat behind the clock.
+            .overlay(alignment: .bottomLeading) { addPhotoButton }
         }
     }
 
@@ -1822,7 +1832,7 @@ struct TreeDetail: View {
                     .background(.regularMaterial, in: .capsule)
                     // On the page's own 20 point edge, like every other
                     // left edge on the tree page (appfit DRIFT, 2026-10-12).
-                    .padding(.leading, 20).padding(.top, 10)
+                    .padding(.leading, 20).padding(.bottom, 10)
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("tree-add-photo")
