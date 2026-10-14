@@ -81,16 +81,22 @@ struct SignInPill<Mark: View>: View {
     @ViewBuilder let mark: () -> Mark
 
     var body: some View {
-        HStack(spacing: 10) {
-            if Mark.self != EmptyView.self {
-                mark().frame(width: 18, height: 18)
+        // THE WORDS CENTRE ON THE WHOLE PILL, the mark rides the leading edge
+        // on its own (Hidde, 2026-10-14: "align the continue with apple google
+        // words, it feels a bit weird on all 3 buttons"). They were centred in
+        // the space AFTER the mark, so Apple's and Google's words sat 14
+        // points right of the email button's. Airbnb and Google's own button
+        // guidance keep the icon at the edge and the label on the centre line.
+        Text(title)
+            .font(.brand(17, .bold, relativeTo: .headline))
+            .lineLimit(1).minimumScaleFactor(0.8)
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 50)
+            .overlay(alignment: .leading) {
+                if Mark.self != EmptyView.self {
+                    mark().frame(width: 18, height: 18).padding(.leading, 22)
+                }
             }
-            Text(title)
-                .font(.brand(17, .bold, relativeTo: .headline))
-                .lineLimit(1).minimumScaleFactor(0.8)
-                .frame(maxWidth: .infinity)
-        }
-        .padding(.horizontal, 22)
         .frame(maxWidth: .infinity, minHeight: 48)
         // The website's loud pill is #1B2416; in the dark it turns white,
         // which is also what Apple's own rules ask of its button there.

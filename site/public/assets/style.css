@@ -2140,8 +2140,13 @@ footer { border-top: 1px solid var(--cream-dark); }
 .oauth-loud:hover { background: #26301E; border-color: #26301E; }
 .oauth-quiet { background: var(--cream-dark); border-color: var(--cream-dark); color: var(--ink); }
 .oauth-quiet:hover { background: #e0ded5; border-color: #e0ded5; }
-.oauth-btn .oauth-mark { flex: 0 0 18px; }
-.oauth-btn > span { flex: 1 1 auto; text-align: center; }
+/* THE WORDS CENTRE ON THE WHOLE PILL, the mark rides the leading edge on its
+   own (Hidde, 2026-10-14: the words of the three buttons did not line up,
+   Apple's and Google's sat right of the email button's). Same in the app
+   (SignInPill). */
+.oauth-btn { position: relative; }
+.oauth-btn .oauth-mark { position: absolute; left: 1.4rem; top: 50%; transform: translateY(-50%); width: 18px; }
+.oauth-btn > span { flex: 1 1 auto; text-align: center; padding: 0 1.6rem; }
 .account-page .oauth-btn { max-width: 22rem; }
 /* Apple's button, 2026-09-12. Their guidelines allow three appearances, black,
    white and white-with-outline, and ask that the button be shown at least as

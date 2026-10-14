@@ -262,10 +262,14 @@ struct SignInSheet: View {
     }
 
 
-    /// The mail app to open from "Check your email", or nil.
-    static var mailApp: (label: String, url: URL)? {
+    /// The mail app to open from "Check your email", or nil. Chosen by the
+    /// ADDRESS, not by what is installed (Hidde, 2026-10-14: "do you say open
+    /// gmail because you know i have gmail?"): a work address on a phone that
+    /// also has Gmail belongs in Mail. iOS offers no mail-app chooser.
+    static func mailApp(for address: String) -> (label: String, url: URL)? {
         let app = UIApplication.shared
-        if let g = URL(string: "googlegmail://"), app.canOpenURL(g) { return ("Open Gmail", g) }
+        let gmail = address.lowercased().hasSuffix("@gmail.com") || address.lowercased().hasSuffix("@googlemail.com")
+        if gmail, let g = URL(string: "googlegmail://"), app.canOpenURL(g) { return ("Open Gmail", g) }
         if let m = URL(string: "message://"), app.canOpenURL(m) { return ("Open Mail", m) }
         // The simulator has no Mail app; -email-sent is for looking at the step.
         if ProcessInfo.processInfo.arguments.contains("-email-sent"),
@@ -344,7 +348,7 @@ struct SignInSheet: View {
             // "look at the spacing"): the stack's 18 plus a 10 of padding each
             // had put 28 between the two pills.
             VStack(spacing: 12) {
-                if !Launch.emailCode, let mail = Self.mailApp {
+                if !Launch.emailCode, let mail = Self.mailApp(for: to) {
                     Button { UIApplication.shared.open(mail.url) } label: {
                         Text(mail.label)
                     }
