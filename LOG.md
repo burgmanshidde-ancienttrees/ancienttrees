@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14, retry of the 19:17 window: Como in Italian
+
+- **Como now has an Italian page**: title, intro, question page and all 9 trees (data/i18n/it/como.json). i18ncheck and preflight clean. Taken as the translate backup because `enrich.py --next` said nothing to do anywhere. Italian is still unproven and Como has 12 English impressions, so this is a small bet.
+- Removed two lines of our own working notes from the public English access text of com_005 and com_009.
+- Left the 51 READY leads unwritten on purpose: most are ordinary street and car-park trees (Roosendaal, Sittard), and recovery mode allows no new tree unless its page is rich.
+- Not touched: the iOS workflow failure flagged at session start (`gh run list --workflow=ios.yml -L 5`).
+
 ## 2026-10-14 night run (19:17 UTC window): red deploy fixed, two Roosendaal trees
 
 7-day visits: 1,440 visits, 2,030 page views.
