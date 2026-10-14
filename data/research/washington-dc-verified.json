@@ -34,5 +34,39 @@
     ],
     "story": "A white oak that by one estimate is older than the United States stands in the forecourt of a suburban shopping centre, behind its own fence, under its own floodlights and its own lightning rods.\n\nWikipedia puts the Travilah Oak at more than 330 years, a source estimate rather than a count of rings. When the Potomac Oak Shopping Center went up at the corner of Travilah Road and Glen Road in 1979, the tree was already some three centuries into its life. Ten years later it was threatened with removal. From 1997 came the protection it has today: the fence, the patio and seating around it, the lights and the lightning rods.\n\nThe Maryland Big Tree Program measured it in January 2021 at 5.82 metres round, 23.8 metres tall and with a crown 33.5 metres across. Sources disagree on whether that makes it the largest white oak in Montgomery County or the second largest, behind a tree at Wisconsin Avenue and Beech Drive.\n\nThe name comes from Travilah Clagett, a local postmaster, and the tree has a club of its own: the Friends of the Travilah Oak hold a celebration for it every autumn. When the Wye Oak, Maryland's most famous tree, fell in 2002, this one was put forward as a candidate for the state tree.\n\nIt is a long way out from the Mall, a half day by Metro and bus. It is also the rare veteran with a parking lot at its feet.",
     "how_to_recognise": "You can recognise it by the fence, patio and floodlights around its trunk, 5.82 metres round. It stands in the forecourt of the Potomac Oak Shopping Center, at the corner of Travilah Road and Glen Road."
+  },
+  {
+    "id": "wdc_017",
+    "name": "The Frederick Douglass White Oak",
+    "species": "White Oak (Quercus alba)",
+    "age_estimate": "roughly 220 years",
+    "age_min": 200,
+    "age_max": 260,
+    "girth_cm": 375,
+    "height_m": 30,
+    "location": {
+      "address": "Cedar Hill, Frederick Douglass National Historic Site, 1411 W Street SE, Washington, DC 20020 (northeast of the front porch)",
+      "latitude": 38.86339,
+      "longitude": -76.98517,
+      "neighbourhood": "Anacostia"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2012/https://www.nps.gov/crps/commonground/Spring2007/newscloseup.pdf",
+      "https://www.loc.gov/item/dc1028",
+      "https://home.nps.gov/frdo/"
+    ],
+    "official_register": {
+      "name": "NPS / HALS Witness Tree Protection Program, Library of Congress record (Frederick Douglass White Oak)",
+      "url": "https://www.loc.gov/item/dc1028"
+    },
+    "access": "Grounds of the National Park Service site are free to walk; the house interior is guided tour only. Hours and fees not read from a fetched page this pass (nps.gov/frdo hours page lists none): writer should state 'free grounds' only and not quote hours.",
+    "transport": "Anacostia; roughly 15-20 min walk from Anacostia Metro (Green line), or a short ride on the B2 bus (same site as wdc_012).",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Cedar Hill house yard, Frederick Douglass National Historic Site",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "verify_notes": "- Pin: pointer is the published wdc_012 magnolia coordinate beside the residence; the oak is placed by the HALS record title 'Frederick Douglass White Oak, 1411 West Street SE, Northeast of front porch'. Approximate, small named site; no register coordinate, no OSM tree node (OSM bbox around the house checked, no natural=tree with species).\n- Size, seen on the fetched page (NPS Common Ground newsletter, Spring 2007, via Wayback copy): 'a massive 200-year-old white oak measuring 100 feet high and almost 150 inches around its trunk'. 150 in is about 381 cm; recorded 375 as 'almost'. 100 ft is about 30 m. Measured 2006 by Casey Trees' Living Legacy Campaign. Age is the 2007 estimate (200 years then), so about 220 now; broad range.\n- Witness Tree Protection Program (NPS Historic American Landscapes Survey with Casey Trees): 24 trees chosen that have witnessed a major event or have remarkable biology. This oak qualified on size and age and for standing in Douglass's yard.\n- What it witnessed: when Douglass lived at Cedar Hill (1877 to 1896) the tree was already an imposing presence; he described it in his diaries (NPS newsletter). LoC HALS record calls it the largest tree remaining from Douglass's time (seen only in a search summary, not the fetched record; loc.gov is Cloudflare-blocked).\n- Condition: 'examined last summer (2006), healthy and disease free', could live two more centuries (NPS 2007). NO recent dated confirmation fetched. A search summary says a Substack essay (Feb 2026 or so, blocked by Cloudflare, not read) describes visiting it; unconfirmed. Flagged: alive thin. lifecheck.py: NONE.\n- Conflicts: that unread essay is said to give 23 ft girth, 133 ft, and to doubt the white oak id (suggest Shumard oak). Unverified, do not use; NPS/HALS says white oak.\n- Starting trunk question: the Cedar Hill magnolias (wdc_012) are the planted story; this oak is the older, bigger tree on the same lawn. Fold nothing, separate entry, same grounds (exact distance to the magnolias unknown, within the 50 m site).\n- Never claim Douglass planted it; sources say it was already large in his time.\n- Hosts: nps.gov/crps original link is now 404 (use Wayback); substack 403 Cloudflare; loc.gov Cloudflare."
   }
 ]

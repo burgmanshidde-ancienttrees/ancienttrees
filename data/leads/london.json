@@ -17,6 +17,30 @@
    "species": "Common Fig (Ficus carica)",
    "location": "See lon_012 in the delivery file",
    "reason": "Delivered flagged in this pass (see data/research/london-verified.json, lon_012); noted here so a later pass knows a second, non-paywalled independent source for its age (beyond thestreettree.substack.com, which cuts off at a paywall) would upgrade it from flagged to confirmed. The Amwell Society's own history page (amwell.org.uk/history) does not mention the fig at all despite covering the school's construction, which is itself odd and worth a direct follow-up."
+  },
+  {
+   "name": "The Riverside Plane, Richmond",
+   "species": "London Plane (Platanus x hispanica)",
+   "location": "Richmond riverside towpath, 51.456465, -0.304728 (Wikipedia Great Trees list)",
+   "reason": "Verify pass 2026-10-14: 'over 40 m' only from the Great Trees list and a blog (38 m); no fetched measurement page or girth, exact tree unconfirmed. Tree Register reportedly lists two Richmond planes at 40.40 and 40.25 m (secondary, via Secret Carshalton). No measurement seen on a page, so not rich."
+  },
+  {
+   "name": "Carshalton Park sweet chestnut and Ashcombe Sweet Chestnut",
+   "species": "Sweet Chestnut (Castanea sativa)",
+   "location": "Carshalton Park 51.360458,-0.163164; Ashcombe Road 51.359978,-0.162281 (Great Trees list)",
+   "reason": "Verify pass 2026-10-14: Great Trees entries (Carshalton Park one about 400 years old per Time Out 2010 via Wikipedia) but no girth or height found on any fetched page; cluster mates of lon_028 about 600 m south. Needs a measurement to end rich."
+  },
+  {
+   "name": "The Bexley Charter Oak, Danson Park",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "location": "Danson Park 51.4549,0.118025",
+   "reason": "Verify pass 2026-10-14: Kent Heritage Trees survey (2015) record exists but says girth could not be measured because the tree is fenced; no other measurement found. Not rich without one."
+  },
+  {
+   "name": "Kew Gardens black mulberries and Syon Park mulberries (Morus Londinium records)",
+   "species": "Black Mulberry (Morus nigra)",
+   "location": "Kew; Syon Park TQ 17646 76713",
+   "reason": "Verify pass 2026-10-14: Morus Londinium pages (kew-gardens, syon-park) carry no girth and Kew's own site 403s; no measurement, not rich. Chelsea Physic Garden mulberry felled January 2022 per Morus Londinium (do not ship)."
   }
  ],
  "blocked": [

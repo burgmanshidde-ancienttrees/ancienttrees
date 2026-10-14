@@ -23,6 +23,8 @@ Photo viewing pass 4: 41 images viewed, 5 approved (pot_005 Sacrow oak, pot_006 
 
 Chicago 16 to 21: five Cook County Forest Preserves champion trees (chi_018 to chi_022, Thatcher Woods and National Grove), register-only and flagged, GPS-fix pins confirmed, free sunrise to sunset; chi_016 dropped as a duplicate of chi_019. Remaining ~70 Chicago leads are isolated champions with no cluster near live trees. Miami verify (third pass, no rich tree) filed nothing and is not worth a fourth without a reader photograph at a champion stop.
 
+London 27 to 29: lon_028 the Carshalton Plane (39.6 m, 7.6 m girth, Forestry Commission remeasure August 2026; third tallest, not tallest in Britain, said on the page) and lon_030 the Gunnersbury Park Black Mulberry (fruit July to August best_time, small-site pin). lon_029 Marble Hill Black Walnut is written but preflight refuses it (approximate pin, no site, no photo): it ships once a photograph or small site is found. Woodland Trust data was not touched. Washington DC: nothing publishable (Douglass white oak wdc_017 held: pin is borrowed from the magnolia, no recent alive evidence; Northampton white oak fell July 2024); walled 48h.
+
 ## 2026-10-14, retry attempt: nothing published
 
 Released the standing Leipzig claim: its brief shows no imported register within 20 km, and its four written trees (lpz_019, 021, 022, 023) are the kind preflight refuses as not rich. Leipzig is a wall for 48h. The 53 READY leads are thin register rows (Roosendaal, Oss, Munich, Delft and others), refused by the same rule. langcheck has no city over 10 English impressions to translate. No agent dispatched, because no candidate can end rich. Still open: the iOS app workflow failed on 2026-10-14 and its log was not read.

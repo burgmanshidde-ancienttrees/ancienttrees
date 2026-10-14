@@ -11433,6 +11433,22 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "london",
+    "kind": "write",
+    "tokens": 200000,
+    "trees": 2,
+    "note": "verify (130k) plus write (70k): Carshalton Plane lon_028 (2026 Forestry Commission remeasure) and Gunnersbury Mulberry lon_030 merged; lon_029 Marble Hill walnut written but refused (approximate pin, no site, no photo)"
+   },
+   {
+    "date": "2026-10-14",
+    "target": "washington-dc",
+    "kind": "verify",
+    "tokens": 120000,
+    "trees": 0,
+    "note": "wdc_017 Douglass white oak delivered but held (pin is the magnolia coordinate, no recent alive evidence); Capitol measured trees lack pins; two candidates dead"
+   },
+   {
+    "date": "2026-10-14",
     "target": "chicago",
     "kind": "write",
     "tokens": 192000,

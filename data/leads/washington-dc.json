@@ -1,1189 +1,1212 @@
 {
- "leads": [
-  {
-   "candidate": "Willow Oak, U.S. National Arboretum",
-   "why_a_lead": "VERIFIED this pass and delivered as wdc_007 (flagged: single source, and a serious health flag: per Casey Trees' 2023 on-site visit with Arboretum staff, the tree is described as 'near the end of its life' after 2012 derecho damage and 2015 borer treatment). Exact in-grounds coordinates still not found; delivered at park-level precision. Leaving this note so a future pass does not re-research it, only re-confirms health and finds the exact spot."
-  },
-  {
-   "candidate": "Dumbarton Oaks / Dumbarton Oaks Park veteran trees, and the Montrose Park Tulip Poplar (HALS DC-?, tile.loc.gov/.../dc1036), Georgetown",
-   "why_a_lead": "Unchanged from the prior pass for Dumbarton Oaks itself (still not surfaced by open web search; would need doaks.org library-archives plant lists directly). NEW this pass: the Montrose Park Tulip Poplar is confirmed as a distinct, separate HALS witness tree record (dc1036, 'Montrose Park Tulip Poplar, Montrose Park, clearing in northwest corner, Washington, DC') found via web search of the HALS numbering sequence, but www.loc.gov blocks curl/WebFetch with a Cloudflare challenge and the tile.loc.gov PDF for dc1036 returned 403 this pass (unlike dc1027/1028/1029/1030/1034/1039/1040 which returned the PDF fine), so its content is still unverified. Montrose Park is a free, fully public NPS-adjacent Georgetown park directly next to Dumbarton Oaks Park, so the two would form a natural second Georgetown cluster if both pan out. A future pass should retry the dc1036 PDF (transient 403s happened on this host) and search for the tulip poplar by name plus a second source."
-  },
-  {
-   "candidate": "Andrew Jackson Magnolia(s), White House South Portico",
-   "why_a_lead": "UPDATED this pass via the National Park Trust blog (parktrust.org, independent second source, corroborates the NPS 'Silent Sentinels' article): confirms one tree was radically cut back in 2018 due to age/decline (not fully removed in 2017 as an earlier pass understood); the blog states 'still reportedly there today' as of its own (recent, copyright 2026) writing, having watched 39 presidencies, with a seedling from the original standing by for eventual succession. This resolves part of the earlier open question about which of the two trees survives, but the access question is UNCHANGED and still blocking: the White House South Lawn is not general public access, and this pass still could not confirm whether the tree is visible from the public Ellipse/E Street or only from inside ticketed tours. Needs an access check before it could ever ship, per hard rule 10 on withheld/restricted locations."
-  },
-  {
-   "candidate": "1910 Japanese Flowering Cherry Trees, East Potomac Golf Course (HALS DC-8, tile.loc.gov/.../dc1034)",
-   "why_a_lead": "Same 2006 HALS Witness Tree Protection Program as wdc_001/004/006/008/009/010. This pass downloaded the HALS PDF (tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1034/data/dc1034data.pdf, 342KB) but it is a scanned image (JBIG2) with no extractable text and no OCR tool available this pass, so its documented health flag ('hollow condition of most principal branches consistent with past insect infestation', per the LOC item title/metadata found via web search) could not be verified in detail or dated. Also an ensemble ('cherry trees', plural, at a golf course, not one obvious standing point) that needs a collectible-point judgement call. A future pass with OCR/PDF-reading capability, or a session that can view www.loc.gov/pictures/item/dc1034 directly (blocked by Cloudflare to curl and WebFetch this pass, tile.loc.gov PDF host works fine), should resolve both the health question and whether this counts as one collectible point."
-  },
-  {
-   "candidate": "Frederick Douglass White Oak, Cedar Hill (HALS DC-?, tile.loc.gov/.../dc1028, 'Frederick Douglass White Oak, 1411 West Street SE, Northeast of front porch')",
-   "why_a_lead": "Strong candidate on paper: single named tree, NPS-owned National Historic Site (Frederick Douglass NHS, Cedar Hill, Anacostia), part of the same HALS programme, described elsewhere as the largest tree remaining from Douglass's own time on the property. NOT pursued to verification this pass for two reasons: (1) time budget went to the Mall/Tidal Basin cluster per this pass's brief, since Cedar Hill is a separate site in Anacostia, SE DC, roughly 20-25 min from downtown, that would not join the existing wdc_002/004/005 walk; (2) this pass could not find a source confirming the specific named witness tree is still standing as opposed to oaks in general still being present on the knoll (TCLF's Cultural Landscape Foundation page, https://www.tclf.org/frederick-douglass-national-historic-site, confirms 'the knoll is dominated by lawn and crowned with numerous specimen trees, including oak, hickory, and cedar' plus two 19th-century magnolias east of the residence, but does not name the HALS witness tree specifically; a Feb 2026 Casey Trees article on Cedar Hill, https://caseytrees.org/2026/02/frederick-douglass-and-the-nature-at-cedar-hill/, confirms oaks are still present and that Casey Trees/NPS have an active tree-planting partnership there, but likewise does not name this specific tree). A future pass should search NPS frdo park pages directly, or a HALS DC number lookup, for a tree-specific recent confirmation before verifying. Good candidate for a future 'second DC cluster' (Anacostia/Cedar Hill) alongside the two 19th-century magnolias noted by TCLF, which are themselves unresearched leads.",
-   "location_note": "1411 W Street SE, Washington, DC; Frederick Douglass National Historic Site, free, NPS-operated (though the house itself requires a timed tour, the grounds are generally open)."
-  },
-  {
-   "candidate": "Farragut Square Ginkgo (HALS DC-?, dc1030) and a Japanese Pagoda Tree also referenced near Farragut Square (dc1029, unconfirmed title)",
-   "why_a_lead": "Two more HALS-documented trees found by number this pass but not investigated: Farragut Square is downtown DC, not near the Mall/Capitol walk this pass prioritised, so would need its own small downtown cluster to be worth researching. www.loc.gov blocks direct viewing (Cloudflare); the tile.loc.gov PDFs for dc1029 and dc1030 downloaded fine (73KB and 62KB respectively) but are scanned images with no extractable text this pass could read."
-  },
-  {
-   "candidate": "Bur Oak and White Oak originals, U.S. Capitol Grounds (Olmsted 1874 plantings, same cohort as the verified wdc_013 Olmsted Tuliptree)",
-   "why_a_lead": "The Architect of the Capitol's own species table (via Olmsted Network's republished blog, olmsted.org/blog/2024/08/29/the-capitols-original-olmsted-trees, checked this pass) lists 3 surviving original Bur Oak (Quercus macrocarpa) and 2 White Oak (Quercus alba) from the same 1874-1892 Olmsted planting as the verified tulip tree, same age range (roughly 130-150 years) by definition. No individual AOC feature page (like /features/olmsted-tuliptree) was found for these species this pass; aoc.gov's general /features/trees directory page loaded via Wayback but its tree links appear to be JS-rendered and did not resolve in a plain HTML fetch. A future pass should try aoc.gov's site search or the visitthecapitol.gov/apps/grounds/trees/ interactive map (untried this pass, may be JS-heavy too) to find their exact locations, or search 'AOC Bur Oak Capitol Grounds' / 'AOC White Oak Capitol Grounds' directly for dedicated feature pages that may exist under different slugs."
-  },
-  {
-   "candidate": "Congressional Cemetery, Capitol Hill/SE DC - 'an oak tree near the chapel'",
-   "why_a_lead": "Mentioned in passing in general cemetery writeups (search this pass) as an old oak near the chapel with local folklore ('never stops shaking its leaves'), but no source found gives species confirmation beyond 'oak', no age, no HALS or register record, and no second source. The cemetery itself (35 acres, founded 1807, National Historic Landmark) is a plausible old-tree site given its age and would be worth a dedicated pass, but this specific tree does not clear the bar as found."
-  },
-  {
-   "candidate": "Monkey Puzzle Tree (Araucaria araucana), roughly 31st and R St NW, Georgetown, near the Dumbarton Oaks entrance",
-   "why_a_lead": "Confirmed via search (YouTube videos, a 2010 Georgetown Metropolitan tree-week roundup context) as a real, locally famous specimen 'in the front yard of a private house about a block west of the entrance to Dumbarton Oaks.' NOT pursued to verification: it stands on private residential land, viewable only from the public sidewalk rather than a tree a visitor can walk up to, which sits in the grey zone of hard rule 10 (private land, not genuinely 'open to visitors' in the stand-at-the-trunk sense this project uses elsewhere). Left unverified and unpublished rather than risk it; a future pass could resolve the judgement call by finding the exact address and confirming how much of the tree is genuinely visible/photographable from the public right-of-way."
-  },
-  {
-   "candidate": "Dumbarton Oaks Park (the free NPS-adjacent public park, not the private Harvard-run garden) veteran trees",
-   "why_a_lead": "RESOLVED this pass (the fourth attempt, first one to succeed): the American Beech Grove, HALS DC-13, verified and delivered as wdc_014 in data/research/washington-dc-verified.json. What broke the three prior failures was fetching the managing organizations' own site sections directly (TCLF's dedicated Dumbarton Oaks Park page, dopark.org's Signature Project restoration page) rather than a generic web sweep, per this pass's brief. STILL OPEN: no INDIVIDUAL named veteran specimen beyond the grove itself was found (e.g. a single named champion oak inside the park); doaks.org's own Green Garden page (checked again this pass, unchanged from prior passes) confirms the adjacent PRIVATE garden's old oaks were removed decades ago and replaced in 1928 and 2018, too young and on the paid/private side anyway. A future pass could try NPS Rock Creek Park's own tree inventory (untried directly, only its general unit pages returned 404 this pass at /rocr/learn/historyculture/dumbarton-oaks-park.htm and /rocr/planyourvisit/dumbartonoakspark.htm, so the right NPS URL slug is still unknown) for individual specimens beyond the grove."
-  },
-  {
-   "candidate": "The White Oaks of the Tennis Court Garden, Tudor Place, 1644 31st Street NW, Georgetown",
-   "why_a_lead": "Checked this pass per the brief (Tudor Place priority 3): TCLF's Tudor Place page (independent nonprofit source) states 'In the northeast corner of the property, the Tennis Court Garden lies secluded behind a screen of white pine trees and shrubs and is framed by 200-year-old white oaks.' This is a SINGLE source for that specific claim and current living status is uncertain: Tudor Place's own site (tudorplace.org/garden/) describes a 'family of witness trees' on the estate but names only one specifically, 'the Great White Oak', which FELL in 2019 (rings counted at ~160 years) near the East Lawn tennis matches, not explicitly the same feature as TCLF's 'Tennis Court Garden'. It is unclear whether TCLF's plural 'white oaks' are a different, still-standing group, or whether TCLF's page (undated on the copy fetched) is simply stale and describing the now-fallen tree. NOT delivered: single source for the specific still-standing claim, real ambiguity about whether it duplicates the confirmed-dead Great White Oak, and paid-entry access (garden hours Tue-Sun) not yet weighed. A future pass should contact Tudor Place directly or find a second, dated source (photo, recent press) confirming which oaks, if any, still frame the Tennis Court Garden today.",
-   "location_note": "1644 31st Street NW, Washington DC 20007. Garden is paid entry (self-guided visits Feb-Dec, Tue-Sat 10am-4pm, Sun noon-4pm per tudorplace.org)."
-  },
-  {
-   "candidate": "Oak Hill Cemetery, 3001 R Street NW, Georgetown, old trees generally",
-   "why_a_lead": "Checked this pass per the brief (priority 2): general web search returned only a passing, unsourced claim ('Oak Hill has some of the oldest trees in the District of Columbia... not cut down during the Civil War') with no named individual specimen, no species, no age. oakhillcemeterydc.org's own site (fetched directly this pass) has no historic-tree content at all, only a modern 'Memorial Tree Program' for burial plantings, unrelated to old/remarkable trees. No TCLF entry found for Oak Hill Cemetery specifically in the time available. Not pursued further: no named candidate to verify against two sources. A future pass would need to start from a different source entirely, e.g. the cemetery's own published historic preservation plan or a dedicated DC tree survey, since neither the cemetery's own site nor general search names a specific tree."
-  },
-  {
-   "name": "Lafayette Park / President's Park (unnamed specimens)",
-   "location": {
-    "latitude": 38.8993,
-    "longitude": -77.0365,
-    "neighbourhood": "Lafayette Square, President's Park, directly north of the White House"
-   },
-   "sources": [
-    "Jon Pattee, Rock Creek Conservancy, by email 2026-08-11"
-   ],
-   "why_not_published": "READER TIP, not yet researched. Jon Pattee replied to our own question with 'There are several lovely ones in the park in front of the White House!' That is Lafayette Square, seven acres of President's Park, cleared and planted after the Revolutionary War and landscaped by Andrew Jackson Downing in 1851-52, and we publish nothing in it. Needs a pass to identify WHICH trees: NPS designates witness trees here and Casey Trees has written about DC's. Two things make it cheap and worth doing: it is NPS ground, so photographs by federal staff are public domain, which is the standing answer to Washington's photo gap (13 of our 14 DC trees have none); and it is the most walkable spot in the city, steps from wdc_004, wdc_005, wdc_008 and wdc_009 on the Mall. DO NOT use the Jackson Magnolia: it stood on the White House grounds rather than the park, and it was removed in 2025, so it fails the living-tree rule."
-  },
-  {
-   "candidate": "Chinese Hackberry (Celtis sinensis), Donald W. Reynolds Center for American Art and Portraiture, 8th and F Streets NW, Penn Quarter",
-   "why_a_lead": "Found 2026-09-23 while hunting a fifth National Mall tree. Smithsonian Gardens calls it planted 1900-1910 and thought to be one of the largest and oldest of its species in the district, sprawling over the Reynolds Center's grounds. Not on the Mall, so it does not help the park page, and a second independent source was not found in this pass; Smithsonian Gardens is the only account we have. Worth a verify pass: the grounds are open public ground, the tree is accessioned in their tree collection, and it would be the first Celtis we map in the US. Start at gardens.si.edu's tree collection pages."
-  },
-  {
-   "name": "Tulip Poplar",
-   "species": "Tulip Poplar (Liriodendron tulipifera)",
-   "lat": 38.911036,
-   "lng": -77.062716,
-   "register_location": "Tudor Place Foundation, Inc.",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Tudor Place Foundation, Inc.",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/4e06de71-bca0-4902-bfdd-186a5eab2bb3/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875395,
-   "lng": -77.029228,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875369,
-   "lng": -77.02936,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875483,
-   "lng": -77.029422,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875398,
-   "lng": -77.029514,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875314,
-   "lng": -77.029464,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875519,
-   "lng": -77.02955,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875589,
-   "lng": -77.029558,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875559,
-   "lng": -77.029796,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.875526,
-   "lng": -77.029843,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Flowering Cherries",
-   "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
-   "lat": 38.87544,
-   "lng": -77.029816,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
-  },
-  {
-   "name": "Japanese Pagoda Tree",
-   "species": "Japanese Pagoda Tree (Sophora japonica)",
-   "lat": 38.901942,
-   "lng": -77.038764,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/234572ef-00f2-4944-bc1c-053912585d2b/original.jpg?"
-  },
-  {
-   "name": "Sycamore",
-   "species": "Sycamore (Platanus occidentalis)",
-   "lat": 38.912566,
-   "lng": -77.053108,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
-  },
-  {
-   "name": "Sycamore",
-   "species": "Sycamore (Platanus occidentalis)",
-   "lat": 38.912645,
-   "lng": -77.053167,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
-  },
-  {
-   "name": "Sycamore",
-   "species": "Sycamore (Platanus occidentalis)",
-   "lat": 38.912666,
-   "lng": -77.053335,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
-  },
-  {
-   "name": "Sycamore",
-   "species": "Sycamore (Platanus occidentalis)",
-   "lat": 38.912851,
-   "lng": -77.053769,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
-  },
-  {
-   "name": "Sycamore",
-   "species": "Sycamore (Platanus occidentalis)",
-   "lat": 38.912839,
-   "lng": -77.053794,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
-  },
-  {
-   "name": "Pin oak or Royal Pin Oak",
-   "species": "Pin oak or Royal Pin Oak (Quercus palustris)",
-   "lat": 38.71797,
-   "lng": -77.055044,
-   "register_location": "George Washington Memorial Parkway",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "George Washington Memorial Parkway",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/a4a74983-5216-4552-b548-01b4072a891d/original.jpg?"
-  },
-  {
-   "name": "Willow Oak",
-   "species": "Willow Oak (Quercus phellos)",
-   "lat": 38.776837,
-   "lng": -77.051557,
-   "register_location": "George Washington Memorial Parkway",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "George Washington Memorial Parkway",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/a6537d00-33be-4b48-931f-c66611e7ba09/original.jpg?"
-  },
-  {
-   "name": "Willow Oak",
-   "species": "Willow Oak (Quercus phellos)",
-   "lat": 38.802493,
-   "lng": -77.003672,
-   "register_location": "Oxon Cove Park & Oxon Hill Farm",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Capital Parks-East",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/4afe8225-a921-4178-950e-3bdbce249cab/original.jpg?"
-  },
-  {
-   "name": "Deodar Cedar",
-   "species": "Deodar Cedar (Cedrus deodara)",
-   "lat": 38.881089,
-   "lng": -77.07287,
-   "register_location": "Arlington House, The Robert E. Lee Memorial",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "George Washington Memorial Parkway",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/419d158f-f470-484a-8dc3-b5a3fc9c14f9/original.jpg?"
-  },
-  {
-   "name": "Red Maple",
-   "species": "Red Maple (Acer rubrum)",
-   "lat": 38.802232,
-   "lng": -77.009036,
-   "register_location": "Oxon Cove Park & Oxon Hill Farm",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Capital Parks-East",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/9c5d2a1d-940a-4f65-a3ee-d046de22fa12/original.jpg?"
-  },
-  {
-   "name": "Boxwood",
-   "species": "Boxwood (Buxus sp.)",
-   "lat": 38.802097,
-   "lng": -77.008706,
-   "register_location": "Oxon Cove Park & Oxon Hill Farm",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Capital Parks-East",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/24e587aa-68ab-4aae-84eb-a17541187ee3/original.jpg?"
-  },
-  {
-   "name": "Bald Cypress",
-   "species": "Bald Cypress (Taxodium distichum)",
-   "lat": 38.89482,
-   "lng": -77.060837,
-   "register_location": "Theodore Roosevelt Island",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "George Washington Memorial Parkway",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/4e0f5cc1-3bd9-4fba-8ca6-7367d8bbe449/original.jpg?"
-  },
-  {
-   "name": "Bald Cypress",
-   "species": "Bald Cypress (Taxodium distichum)",
-   "lat": 38.894772,
-   "lng": -77.060876,
-   "register_location": "Theodore Roosevelt Island",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "George Washington Memorial Parkway",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/4e0f5cc1-3bd9-4fba-8ca6-7367d8bbe449/original.jpg?"
-  },
-  {
-   "name": "Japanese Pagoda Tree in Farrgut Square",
-   "species": "Pagoda Tree (Styphnolobium sp.)",
-   "lat": 38.901956,
-   "lng": -77.038723,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/234572ef-00f2-4944-bc1c-053912585d2b/original.jpg?",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Elm Trees near the Lincoln Memorial",
-   "species": "Elm (Ulmus sp.)",
-   "lat": 38.88819,
-   "lng": -77.048879,
-   "register_location": "National Mall and Memorial Parks",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/5ecb27f4-3630-4033-8176-82679e83b14e/original.jpg?",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
-  },
-  {
-   "name": "Historic Trees of Lyon's Mill Ruins",
-   "species": "",
-   "lat": 38.912758,
-   "lng": -77.053566,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/ec9be72b-0945-4897-a625-8aa36d2aa1a8/proxyhires.jpg?"
-  },
-  {
-   "name": "Oriental Planetree Street Trees",
-   "species": "",
-   "lat": 38.900871,
-   "lng": -77.055805,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/8989c6f4-4856-493c-84e4-dbdb65245b72/original.jpg?"
-  },
-  {
-   "name": "Willow Oak/ Quercus Phellos",
-   "species": "Willow Oak/ Quercus Phellos",
-   "lat": 38.933159,
-   "lng": -76.95208,
-   "register_location": "Bladensburg Dueling Ground",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Black Oak/ Quercus velutina",
-   "species": "Black Oak/ Quercus velutina",
-   "lat": 38.70403,
-   "lng": -77.02896,
-   "register_location": "Fort Washington National Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Black Walnut/ Juglans nigra",
-   "species": "Black Walnut/ Juglans nigra",
-   "lat": 38.71138,
-   "lng": -77.036,
-   "register_location": "Fort Washington National Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Chestnut Oak/ Quercus montana",
-   "species": "Chestnut Oak/ Quercus montana",
-   "lat": 38.710432,
-   "lng": -77.027803,
-   "register_location": "Fort Washington National Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Northern Red Oak/ Quercus rubra",
-   "species": "Northern Red Oak/ Quercus rubra",
-   "lat": 38.71609,
-   "lng": -77.02448,
-   "register_location": "Fort Washington National Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Sawtooth Oak/ Quercus accutissima",
-   "species": "Sawtooth Oak/ Quercus accutissima",
-   "lat": 38.92953,
-   "lng": -76.81169,
-   "register_location": "Enterprise Golf Course",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Black Cherry/ Prunus serotina",
-   "species": "Black Cherry/ Prunus serotina",
-   "lat": 38.71907,
-   "lng": -76.76976,
-   "register_location": "Prince George's County Department of Transportation",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Bur Oak/ Quercus macrocarpa",
-   "species": "Bur Oak/ Quercus macrocarpa",
-   "lat": 39.052686,
-   "lng": -76.902667,
-   "register_location": "Christian Brothers LaSalle Hall Retirement Center",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Southern Red Oak/ Quercus falcata",
-   "species": "Southern Red Oak/ Quercus falcata",
-   "lat": 38.69635,
-   "lng": -76.72736,
-   "register_location": "Spice Creek Wildlife Management Area",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Overcup Oak/ Quercus Iyrata",
-   "species": "Overcup Oak/ Quercus Iyrata",
-   "lat": 38.874759,
-   "lng": -76.802973,
-   "register_location": "Prince George's County Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Chinkapin Oak/ Quercus muehlenbergii",
-   "species": "Chinkapin Oak/ Quercus muehlenbergii",
-   "lat": 38.714982,
-   "lng": -77.032215,
-   "register_location": "Fort Washington National Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "White Ash/ Fraxinus americana",
-   "species": "White Ash/ Fraxinus americana",
-   "lat": 38.960673,
-   "lng": -76.780848,
-   "register_location": "Prince George's County Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Hackberry/ Celtis occidentalis",
-   "species": "Hackberry/ Celtis occidentalis",
-   "lat": 38.784449,
-   "lng": -76.715008,
-   "register_location": "Mount Calvert Historical and Archaeological Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Bitternut Hickory/ Carya cordiformis",
-   "species": "Bitternut Hickory/ Carya cordiformis",
-   "lat": 38.716365,
-   "lng": -77.02568,
-   "register_location": "Fort Washington National Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Dawn Redwood/ Metasequoia glyptostroboides",
-   "species": "Dawn Redwood/ Metasequoia glyptostroboides",
-   "lat": 38.966919,
-   "lng": -76.7996,
-   "register_location": "Marietta Mansion",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Red Maple/ Aver rubrum",
-   "species": "Red Maple/ Aver rubrum",
-   "lat": 38.747873,
-   "lng": -77.004341,
-   "register_location": "Harmony Hall Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Loblolly Pine/ Pinus taeda",
-   "species": "Loblolly Pine/ Pinus taeda",
-   "lat": 38.747274,
-   "lng": -77.002804,
-   "register_location": "Harmony Hall Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Mocknut Hickory / Carya tomentosa",
-   "species": "Mocknut Hickory / Carya tomentosa",
-   "lat": 38.92739,
-   "lng": -76.82449,
-   "register_location": "Regent Forest Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Post Oak/ Quercus stellata",
-   "species": "Post Oak/ Quercus stellata",
-   "lat": 38.984708,
-   "lng": -76.947704,
-   "register_location": "University of Maryland School of Architecture Building",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Tupelo/ Nyssa sylvatica",
-   "species": "Tupelo/ Nyssa sylvatica",
-   "lat": 38.870396,
-   "lng": -76.868184,
-   "register_location": "Walker Mill Regional Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "American Holly/ Ilex opaca",
-   "species": "American Holly/ Ilex opaca",
-   "lat": 38.88161,
-   "lng": -76.785495,
-   "register_location": "Chelsea Historic Site",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Eastern Red Cedar/ Juniperus virginiana",
-   "species": "Eastern Red Cedar/ Juniperus virginiana",
-   "lat": 39.05899,
-   "lng": -76.80903,
-   "register_location": "Patuxent Wildlife Research Center",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Sand Hickory/ Carya pallida",
-   "species": "Sand Hickory/ Carya pallida",
-   "lat": 39.02102,
-   "lng": -76.83008,
-   "register_location": "Beltsville Agricultural Research Center",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Black Maple/ Acer nigrum",
-   "species": "Black Maple/ Acer nigrum",
-   "lat": 38.87908,
-   "lng": -76.86743,
-   "register_location": "Concord Historic Site",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Japanese Zelkova/ Zelkova serrata",
-   "species": "Japanese Zelkova/ Zelkova serrata",
-   "lat": 39.02585,
-   "lng": -76.92251,
-   "register_location": "US Department of Agriculture",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Persimmon/ Diospyrus virginiana",
-   "species": "Persimmon/ Diospyrus virginiana",
-   "lat": 38.81791,
-   "lng": -76.75252,
-   "register_location": "Old Marlboro Primary School",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Deodar Cedar/ Cedrus deodara",
-   "species": "Deodar Cedar/ Cedrus deodara",
-   "lat": 38.984973,
-   "lng": -76.873567,
-   "register_location": "Schrom Hills Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Fastigiate English Oak",
-   "species": "Fastigiate English Oak",
-   "lat": 39.02707,
-   "lng": -76.92007,
-   "register_location": "US Department of Agriculture",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "London Planetree/ Platanus x acerfolia",
-   "species": "London Planetree/ Platanus x acerfolia",
-   "lat": 39.001337,
-   "lng": -76.877077,
-   "register_location": "Whole Health Wellness Building",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Atlas Cedar/ Cedrus atlantica",
-   "species": "Atlas Cedar/ Cedrus atlantica",
-   "lat": 38.79272,
-   "lng": -77.00518,
-   "register_location": "Oxon Hill Manor",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Japanese False Cypress/ Chamaecyparis pisifera",
-   "species": "Japanese False Cypress/ Chamaecyparis pisifera",
-   "lat": 38.775054,
-   "lng": -76.8785,
-   "register_location": "Mount Airy Mansion",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Japanese Raisin Tree/ Hovenia dulcis",
-   "species": "Japanese Raisin Tree/ Hovenia dulcis",
-   "lat": 38.71426,
-   "lng": -77.03078,
-   "register_location": "Fort Washington National Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Southern Magnolia/ Magnolia grandiflora",
-   "species": "Southern Magnolia/ Magnolia grandiflora",
-   "lat": 39.107854,
-   "lng": -76.855314,
-   "register_location": "St. Mary's of the Mills Catholic Church",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Star Magnolia/ Magnolia stellata",
-   "species": "Star Magnolia/ Magnolia stellata",
-   "lat": 39.000848,
-   "lng": -76.878767,
-   "register_location": "Greenbelt Community Center",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "yes",
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Saucer Magnolia/ Magnolia x soulangiana",
-   "species": "Saucer Magnolia/ Magnolia x soulangiana",
-   "lat": 39.023229,
-   "lng": -76.920814,
-   "register_location": "US Department of Agriculture",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  },
-  {
-   "name": "Northern Pecan/ Carya illinoinensis",
-   "species": "Northern Pecan/ Carya illinoinensis",
-   "lat": 38.966665,
-   "lng": -76.799116,
-   "register_location": "Marietta Manor Historic Site",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
-   ],
-   "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
-   "status": "open"
-  }
- ],
- "blocked": [
-  {
-   "candidate": "The Great White Oak, Tudor Place, Georgetown (near the East Lawn / tennis matches)",
-   "reason": "DEAD, confirmed by Tudor Place's own site (tudorplace.org/garden/, current page, checked this pass): 'the Great White Oak fell in 2019. When its rings were counted it was approximately 160 years old.' Do not re-research as a live candidate; the property's other, possibly-distinct 'Tennis Court Garden' white oaks (TCLF-sourced, single source, status unclear) remain a separate open lead above, not this same blocked tree."
-  },
-  {
-   "candidate": "District of Columbia War Memorial tree plantings (dogwood, holly, magnolia, elm, pine, crabapple, 1931-39)",
-   "reason": "Not a collectible point: a mixed-species memorial landscape planting, not one identifiable tree or a compact named ensemble with one obvious place to stand. No individual specimen is named or dated by either source found (NPS 'Silent Sentinels' article; National Park Trust blog does not mention it at all)."
-  },
-  {
-   "candidate": "Maryland Liberty Tree, U.S. Capitol Grounds (Capitol Square, N.E.)",
-   "reason": "Checked this pass via AOC's own feature page (Wayback snapshot): planted 1978 as a Liberty Tree seedling, replanted 2001, roughly 48 years old. Well short of this project's remarkable-age bar and not visually distinctive; the name commemorates a colonial-era 'Liberty Tree' at St John's College Annapolis, not this tree's own age. Do not re-research."
-  },
-  {
-   "candidate": "Various 1970s-2020s commemorative trees on the Capitol Grounds (Idaho Federation of Women's Clubs Tree 1975, South Carolina Forestry Association Tree 1981, Senator Edward Zorinsky Tree 1987, Donnald Anderson Tree 1998, Senator Chuck Grassley Tree 2024, etc.)",
-   "reason": "AOC documents dozens of these individually plaqued commemorative plantings on Capitol Square; all found this pass are too young (decades, not centuries) for the remarkable-age bar and are one of many similar plaques rather than a singular destination. Only the ~45 surviving ORIGINAL Olmsted-era (1874-1892) plantings are worth pursuing as candidates; verify by checking the planting year against 1874-1892 before researching further."
-  },
-  {
-   "name": "Linden Oak",
-   "reason": "Dead: died by spring 2022, removed 18 Jul 2023 (enwiki, Montgomery Parks); only a lower-trunk memorial remains. Never ship as a living tree.",
-   "coordinates": [
-    39.0228,
-    -77.1022
-   ]
-  },
-  {
-   "name": "Tulip Poplar",
-   "species": "Tulip Poplar (Liriodendron tulipifera)",
-   "lat": 38.914449,
-   "lng": -77.061124,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?",
-   "reason": "already published as The Montrose Park Tulip Poplar (washington-dc), 172 m away with matching name words"
-  },
-  {
-   "name": "White Mulberry",
-   "species": "White Mulberry (Morus alba)",
-   "lat": 38.888968,
-   "lng": -77.036347,
-   "register_location": "Washington Monument",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "National Mall and Memorial Parks",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/756ed568-9c51-4039-be9f-100f6b60c884/original.jpg?",
-   "reason": "already published as The Washington Monument Witness Mulberry (washington-dc), 112 m away with matching name words"
-  },
-  {
-   "name": "Chestnut Oak",
-   "species": "Chestnut Oak (Quercus prinus)",
-   "lat": 38.930449,
-   "lng": -77.096134,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": "Rock Creek Park",
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?",
-   "reason": "already published as The Battery Kemble Chestnut Oak (washington-dc), 177 m away with matching name words"
-  },
-  {
-   "name": "Montrose Park Tulip-poplar",
-   "species": "Tulip Tree (Liriodendron sp.)",
-   "lat": 38.914583,
-   "lng": -77.061073,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "already published as The Montrose Park Tulip Poplar (washington-dc), 162 m away with matching name words"
-  },
-  {
-   "name": "Chestnut Oak at Battery Kemble Park",
-   "species": "Sweet Chestnut (Castanea sp.)",
-   "lat": 38.930503,
-   "lng": -77.096086,
-   "register_location": "Rock Creek Park",
-   "girth_cm": null,
-   "height_m": null,
-   "register_status": null,
-   "sources": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
-   ],
-   "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
-   "status": "open",
-   "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?",
-   "species_basis": "genus read from the tree's own name; ask the reader which species",
-   "reason": "already published as The Battery Kemble Chestnut Oak (washington-dc), 174 m away with matching name words"
-  }
- ]
+  "leads": [
+    {
+      "candidate": "Willow Oak, U.S. National Arboretum",
+      "why_a_lead": "VERIFIED this pass and delivered as wdc_007 (flagged: single source, and a serious health flag: per Casey Trees' 2023 on-site visit with Arboretum staff, the tree is described as 'near the end of its life' after 2012 derecho damage and 2015 borer treatment). Exact in-grounds coordinates still not found; delivered at park-level precision. Leaving this note so a future pass does not re-research it, only re-confirms health and finds the exact spot."
+    },
+    {
+      "candidate": "Dumbarton Oaks / Dumbarton Oaks Park veteran trees, and the Montrose Park Tulip Poplar (HALS DC-?, tile.loc.gov/.../dc1036), Georgetown",
+      "why_a_lead": "Unchanged from the prior pass for Dumbarton Oaks itself (still not surfaced by open web search; would need doaks.org library-archives plant lists directly). NEW this pass: the Montrose Park Tulip Poplar is confirmed as a distinct, separate HALS witness tree record (dc1036, 'Montrose Park Tulip Poplar, Montrose Park, clearing in northwest corner, Washington, DC') found via web search of the HALS numbering sequence, but www.loc.gov blocks curl/WebFetch with a Cloudflare challenge and the tile.loc.gov PDF for dc1036 returned 403 this pass (unlike dc1027/1028/1029/1030/1034/1039/1040 which returned the PDF fine), so its content is still unverified. Montrose Park is a free, fully public NPS-adjacent Georgetown park directly next to Dumbarton Oaks Park, so the two would form a natural second Georgetown cluster if both pan out. A future pass should retry the dc1036 PDF (transient 403s happened on this host) and search for the tulip poplar by name plus a second source."
+    },
+    {
+      "candidate": "Andrew Jackson Magnolia(s), White House South Portico",
+      "why_a_lead": "UPDATED this pass via the National Park Trust blog (parktrust.org, independent second source, corroborates the NPS 'Silent Sentinels' article): confirms one tree was radically cut back in 2018 due to age/decline (not fully removed in 2017 as an earlier pass understood); the blog states 'still reportedly there today' as of its own (recent, copyright 2026) writing, having watched 39 presidencies, with a seedling from the original standing by for eventual succession. This resolves part of the earlier open question about which of the two trees survives, but the access question is UNCHANGED and still blocking: the White House South Lawn is not general public access, and this pass still could not confirm whether the tree is visible from the public Ellipse/E Street or only from inside ticketed tours. Needs an access check before it could ever ship, per hard rule 10 on withheld/restricted locations."
+    },
+    {
+      "candidate": "1910 Japanese Flowering Cherry Trees, East Potomac Golf Course (HALS DC-8, tile.loc.gov/.../dc1034)",
+      "why_a_lead": "Same 2006 HALS Witness Tree Protection Program as wdc_001/004/006/008/009/010. This pass downloaded the HALS PDF (tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1034/data/dc1034data.pdf, 342KB) but it is a scanned image (JBIG2) with no extractable text and no OCR tool available this pass, so its documented health flag ('hollow condition of most principal branches consistent with past insect infestation', per the LOC item title/metadata found via web search) could not be verified in detail or dated. Also an ensemble ('cherry trees', plural, at a golf course, not one obvious standing point) that needs a collectible-point judgement call. A future pass with OCR/PDF-reading capability, or a session that can view www.loc.gov/pictures/item/dc1034 directly (blocked by Cloudflare to curl and WebFetch this pass, tile.loc.gov PDF host works fine), should resolve both the health question and whether this counts as one collectible point."
+    },
+    {
+      "candidate": "Frederick Douglass White Oak, Cedar Hill (HALS DC-?, tile.loc.gov/.../dc1028, 'Frederick Douglass White Oak, 1411 West Street SE, Northeast of front porch')",
+      "why_a_lead": "Strong candidate on paper: single named tree, NPS-owned National Historic Site (Frederick Douglass NHS, Cedar Hill, Anacostia), part of the same HALS programme, described elsewhere as the largest tree remaining from Douglass's own time on the property. NOT pursued to verification this pass for two reasons: (1) time budget went to the Mall/Tidal Basin cluster per this pass's brief, since Cedar Hill is a separate site in Anacostia, SE DC, roughly 20-25 min from downtown, that would not join the existing wdc_002/004/005 walk; (2) this pass could not find a source confirming the specific named witness tree is still standing as opposed to oaks in general still being present on the knoll (TCLF's Cultural Landscape Foundation page, https://www.tclf.org/frederick-douglass-national-historic-site, confirms 'the knoll is dominated by lawn and crowned with numerous specimen trees, including oak, hickory, and cedar' plus two 19th-century magnolias east of the residence, but does not name the HALS witness tree specifically; a Feb 2026 Casey Trees article on Cedar Hill, https://caseytrees.org/2026/02/frederick-douglass-and-the-nature-at-cedar-hill/, confirms oaks are still present and that Casey Trees/NPS have an active tree-planting partnership there, but likewise does not name this specific tree). A future pass should search NPS frdo park pages directly, or a HALS DC number lookup, for a tree-specific recent confirmation before verifying. Good candidate for a future 'second DC cluster' (Anacostia/Cedar Hill) alongside the two 19th-century magnolias noted by TCLF, which are themselves unresearched leads.",
+      "location_note": "1411 W Street SE, Washington, DC; Frederick Douglass National Historic Site, free, NPS-operated (though the house itself requires a timed tour, the grounds are generally open)."
+    },
+    {
+      "candidate": "Farragut Square Ginkgo (HALS DC-?, dc1030) and a Japanese Pagoda Tree also referenced near Farragut Square (dc1029, unconfirmed title)",
+      "why_a_lead": "Two more HALS-documented trees found by number this pass but not investigated: Farragut Square is downtown DC, not near the Mall/Capitol walk this pass prioritised, so would need its own small downtown cluster to be worth researching. www.loc.gov blocks direct viewing (Cloudflare); the tile.loc.gov PDFs for dc1029 and dc1030 downloaded fine (73KB and 62KB respectively) but are scanned images with no extractable text this pass could read."
+    },
+    {
+      "candidate": "Bur Oak and White Oak originals, U.S. Capitol Grounds (Olmsted 1874 plantings, same cohort as the verified wdc_013 Olmsted Tuliptree)",
+      "why_a_lead": "The Architect of the Capitol's own species table (via Olmsted Network's republished blog, olmsted.org/blog/2024/08/29/the-capitols-original-olmsted-trees, checked this pass) lists 3 surviving original Bur Oak (Quercus macrocarpa) and 2 White Oak (Quercus alba) from the same 1874-1892 Olmsted planting as the verified tulip tree, same age range (roughly 130-150 years) by definition. No individual AOC feature page (like /features/olmsted-tuliptree) was found for these species this pass; aoc.gov's general /features/trees directory page loaded via Wayback but its tree links appear to be JS-rendered and did not resolve in a plain HTML fetch. A future pass should try aoc.gov's site search or the visitthecapitol.gov/apps/grounds/trees/ interactive map (untried this pass, may be JS-heavy too) to find their exact locations, or search 'AOC Bur Oak Capitol Grounds' / 'AOC White Oak Capitol Grounds' directly for dedicated feature pages that may exist under different slugs."
+    },
+    {
+      "candidate": "Congressional Cemetery, Capitol Hill/SE DC - 'an oak tree near the chapel'",
+      "why_a_lead": "Mentioned in passing in general cemetery writeups (search this pass) as an old oak near the chapel with local folklore ('never stops shaking its leaves'), but no source found gives species confirmation beyond 'oak', no age, no HALS or register record, and no second source. The cemetery itself (35 acres, founded 1807, National Historic Landmark) is a plausible old-tree site given its age and would be worth a dedicated pass, but this specific tree does not clear the bar as found."
+    },
+    {
+      "candidate": "Monkey Puzzle Tree (Araucaria araucana), roughly 31st and R St NW, Georgetown, near the Dumbarton Oaks entrance",
+      "why_a_lead": "Confirmed via search (YouTube videos, a 2010 Georgetown Metropolitan tree-week roundup context) as a real, locally famous specimen 'in the front yard of a private house about a block west of the entrance to Dumbarton Oaks.' NOT pursued to verification: it stands on private residential land, viewable only from the public sidewalk rather than a tree a visitor can walk up to, which sits in the grey zone of hard rule 10 (private land, not genuinely 'open to visitors' in the stand-at-the-trunk sense this project uses elsewhere). Left unverified and unpublished rather than risk it; a future pass could resolve the judgement call by finding the exact address and confirming how much of the tree is genuinely visible/photographable from the public right-of-way."
+    },
+    {
+      "candidate": "Dumbarton Oaks Park (the free NPS-adjacent public park, not the private Harvard-run garden) veteran trees",
+      "why_a_lead": "RESOLVED this pass (the fourth attempt, first one to succeed): the American Beech Grove, HALS DC-13, verified and delivered as wdc_014 in data/research/washington-dc-verified.json. What broke the three prior failures was fetching the managing organizations' own site sections directly (TCLF's dedicated Dumbarton Oaks Park page, dopark.org's Signature Project restoration page) rather than a generic web sweep, per this pass's brief. STILL OPEN: no INDIVIDUAL named veteran specimen beyond the grove itself was found (e.g. a single named champion oak inside the park); doaks.org's own Green Garden page (checked again this pass, unchanged from prior passes) confirms the adjacent PRIVATE garden's old oaks were removed decades ago and replaced in 1928 and 2018, too young and on the paid/private side anyway. A future pass could try NPS Rock Creek Park's own tree inventory (untried directly, only its general unit pages returned 404 this pass at /rocr/learn/historyculture/dumbarton-oaks-park.htm and /rocr/planyourvisit/dumbartonoakspark.htm, so the right NPS URL slug is still unknown) for individual specimens beyond the grove."
+    },
+    {
+      "candidate": "The White Oaks of the Tennis Court Garden, Tudor Place, 1644 31st Street NW, Georgetown",
+      "why_a_lead": "Checked this pass per the brief (Tudor Place priority 3): TCLF's Tudor Place page (independent nonprofit source) states 'In the northeast corner of the property, the Tennis Court Garden lies secluded behind a screen of white pine trees and shrubs and is framed by 200-year-old white oaks.' This is a SINGLE source for that specific claim and current living status is uncertain: Tudor Place's own site (tudorplace.org/garden/) describes a 'family of witness trees' on the estate but names only one specifically, 'the Great White Oak', which FELL in 2019 (rings counted at ~160 years) near the East Lawn tennis matches, not explicitly the same feature as TCLF's 'Tennis Court Garden'. It is unclear whether TCLF's plural 'white oaks' are a different, still-standing group, or whether TCLF's page (undated on the copy fetched) is simply stale and describing the now-fallen tree. NOT delivered: single source for the specific still-standing claim, real ambiguity about whether it duplicates the confirmed-dead Great White Oak, and paid-entry access (garden hours Tue-Sun) not yet weighed. A future pass should contact Tudor Place directly or find a second, dated source (photo, recent press) confirming which oaks, if any, still frame the Tennis Court Garden today.",
+      "location_note": "1644 31st Street NW, Washington DC 20007. Garden is paid entry (self-guided visits Feb-Dec, Tue-Sat 10am-4pm, Sun noon-4pm per tudorplace.org)."
+    },
+    {
+      "candidate": "Oak Hill Cemetery, 3001 R Street NW, Georgetown, old trees generally",
+      "why_a_lead": "Checked this pass per the brief (priority 2): general web search returned only a passing, unsourced claim ('Oak Hill has some of the oldest trees in the District of Columbia... not cut down during the Civil War') with no named individual specimen, no species, no age. oakhillcemeterydc.org's own site (fetched directly this pass) has no historic-tree content at all, only a modern 'Memorial Tree Program' for burial plantings, unrelated to old/remarkable trees. No TCLF entry found for Oak Hill Cemetery specifically in the time available. Not pursued further: no named candidate to verify against two sources. A future pass would need to start from a different source entirely, e.g. the cemetery's own published historic preservation plan or a dedicated DC tree survey, since neither the cemetery's own site nor general search names a specific tree."
+    },
+    {
+      "name": "Lafayette Park / President's Park (unnamed specimens)",
+      "location": {
+        "latitude": 38.8993,
+        "longitude": -77.0365,
+        "neighbourhood": "Lafayette Square, President's Park, directly north of the White House"
+      },
+      "sources": [
+        "Jon Pattee, Rock Creek Conservancy, by email 2026-08-11"
+      ],
+      "why_not_published": "READER TIP, not yet researched. Jon Pattee replied to our own question with 'There are several lovely ones in the park in front of the White House!' That is Lafayette Square, seven acres of President's Park, cleared and planted after the Revolutionary War and landscaped by Andrew Jackson Downing in 1851-52, and we publish nothing in it. Needs a pass to identify WHICH trees: NPS designates witness trees here and Casey Trees has written about DC's. Two things make it cheap and worth doing: it is NPS ground, so photographs by federal staff are public domain, which is the standing answer to Washington's photo gap (13 of our 14 DC trees have none); and it is the most walkable spot in the city, steps from wdc_004, wdc_005, wdc_008 and wdc_009 on the Mall. DO NOT use the Jackson Magnolia: it stood on the White House grounds rather than the park, and it was removed in 2025, so it fails the living-tree rule."
+    },
+    {
+      "candidate": "Chinese Hackberry (Celtis sinensis), Donald W. Reynolds Center for American Art and Portraiture, 8th and F Streets NW, Penn Quarter",
+      "why_a_lead": "Found 2026-09-23 while hunting a fifth National Mall tree. Smithsonian Gardens calls it planted 1900-1910 and thought to be one of the largest and oldest of its species in the district, sprawling over the Reynolds Center's grounds. Not on the Mall, so it does not help the park page, and a second independent source was not found in this pass; Smithsonian Gardens is the only account we have. Worth a verify pass: the grounds are open public ground, the tree is accessioned in their tree collection, and it would be the first Celtis we map in the US. Start at gardens.si.edu's tree collection pages."
+    },
+    {
+      "name": "Tulip Poplar",
+      "species": "Tulip Poplar (Liriodendron tulipifera)",
+      "lat": 38.911036,
+      "lng": -77.062716,
+      "register_location": "Tudor Place Foundation, Inc.",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Tudor Place Foundation, Inc.",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/4e06de71-bca0-4902-bfdd-186a5eab2bb3/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875395,
+      "lng": -77.029228,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875369,
+      "lng": -77.02936,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875483,
+      "lng": -77.029422,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875398,
+      "lng": -77.029514,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875314,
+      "lng": -77.029464,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875519,
+      "lng": -77.02955,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875589,
+      "lng": -77.029558,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875559,
+      "lng": -77.029796,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.875526,
+      "lng": -77.029843,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Flowering Cherries",
+      "species": "Japanese Flowering Cherries (Prunus x yedonesis)",
+      "lat": 38.87544,
+      "lng": -77.029816,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/381ccb20-5566-466c-aa1f-184b366ec069/original.jpg?"
+    },
+    {
+      "name": "Japanese Pagoda Tree",
+      "species": "Japanese Pagoda Tree (Sophora japonica)",
+      "lat": 38.901942,
+      "lng": -77.038764,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/234572ef-00f2-4944-bc1c-053912585d2b/original.jpg?"
+    },
+    {
+      "name": "Sycamore",
+      "species": "Sycamore (Platanus occidentalis)",
+      "lat": 38.912566,
+      "lng": -77.053108,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Rock Creek Park",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
+    },
+    {
+      "name": "Sycamore",
+      "species": "Sycamore (Platanus occidentalis)",
+      "lat": 38.912645,
+      "lng": -77.053167,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Rock Creek Park",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
+    },
+    {
+      "name": "Sycamore",
+      "species": "Sycamore (Platanus occidentalis)",
+      "lat": 38.912666,
+      "lng": -77.053335,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Rock Creek Park",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
+    },
+    {
+      "name": "Sycamore",
+      "species": "Sycamore (Platanus occidentalis)",
+      "lat": 38.912851,
+      "lng": -77.053769,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Rock Creek Park",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
+    },
+    {
+      "name": "Sycamore",
+      "species": "Sycamore (Platanus occidentalis)",
+      "lat": 38.912839,
+      "lng": -77.053794,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Rock Creek Park",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/2d41746f-f942-45e3-ae92-257aa46f19c8/original.jpg?"
+    },
+    {
+      "name": "Pin oak or Royal Pin Oak",
+      "species": "Pin oak or Royal Pin Oak (Quercus palustris)",
+      "lat": 38.71797,
+      "lng": -77.055044,
+      "register_location": "George Washington Memorial Parkway",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "George Washington Memorial Parkway",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/a4a74983-5216-4552-b548-01b4072a891d/original.jpg?"
+    },
+    {
+      "name": "Willow Oak",
+      "species": "Willow Oak (Quercus phellos)",
+      "lat": 38.776837,
+      "lng": -77.051557,
+      "register_location": "George Washington Memorial Parkway",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "George Washington Memorial Parkway",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/a6537d00-33be-4b48-931f-c66611e7ba09/original.jpg?"
+    },
+    {
+      "name": "Willow Oak",
+      "species": "Willow Oak (Quercus phellos)",
+      "lat": 38.802493,
+      "lng": -77.003672,
+      "register_location": "Oxon Cove Park & Oxon Hill Farm",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Capital Parks-East",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/4afe8225-a921-4178-950e-3bdbce249cab/original.jpg?"
+    },
+    {
+      "name": "Deodar Cedar",
+      "species": "Deodar Cedar (Cedrus deodara)",
+      "lat": 38.881089,
+      "lng": -77.07287,
+      "register_location": "Arlington House, The Robert E. Lee Memorial",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "George Washington Memorial Parkway",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/419d158f-f470-484a-8dc3-b5a3fc9c14f9/original.jpg?"
+    },
+    {
+      "name": "Red Maple",
+      "species": "Red Maple (Acer rubrum)",
+      "lat": 38.802232,
+      "lng": -77.009036,
+      "register_location": "Oxon Cove Park & Oxon Hill Farm",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Capital Parks-East",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/9c5d2a1d-940a-4f65-a3ee-d046de22fa12/original.jpg?"
+    },
+    {
+      "name": "Boxwood",
+      "species": "Boxwood (Buxus sp.)",
+      "lat": 38.802097,
+      "lng": -77.008706,
+      "register_location": "Oxon Cove Park & Oxon Hill Farm",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Capital Parks-East",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/24e587aa-68ab-4aae-84eb-a17541187ee3/original.jpg?"
+    },
+    {
+      "name": "Bald Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "lat": 38.89482,
+      "lng": -77.060837,
+      "register_location": "Theodore Roosevelt Island",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "George Washington Memorial Parkway",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/4e0f5cc1-3bd9-4fba-8ca6-7367d8bbe449/original.jpg?"
+    },
+    {
+      "name": "Bald Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "lat": 38.894772,
+      "lng": -77.060876,
+      "register_location": "Theodore Roosevelt Island",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "George Washington Memorial Parkway",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/4e0f5cc1-3bd9-4fba-8ca6-7367d8bbe449/original.jpg?"
+    },
+    {
+      "name": "Japanese Pagoda Tree in Farrgut Square",
+      "species": "Pagoda Tree (Styphnolobium sp.)",
+      "lat": 38.901956,
+      "lng": -77.038723,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/234572ef-00f2-4944-bc1c-053912585d2b/original.jpg?",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Elm Trees near the Lincoln Memorial",
+      "species": "Elm (Ulmus sp.)",
+      "lat": 38.88819,
+      "lng": -77.048879,
+      "register_location": "National Mall and Memorial Parks",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/5ecb27f4-3630-4033-8176-82679e83b14e/original.jpg?",
+      "species_basis": "genus read from the tree's own name; ask the reader which species"
+    },
+    {
+      "name": "Historic Trees of Lyon's Mill Ruins",
+      "species": "",
+      "lat": 38.912758,
+      "lng": -77.053566,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/ec9be72b-0945-4897-a625-8aa36d2aa1a8/proxyhires.jpg?"
+    },
+    {
+      "name": "Oriental Planetree Street Trees",
+      "species": "",
+      "lat": 38.900871,
+      "lng": -77.055805,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/8989c6f4-4856-493c-84e4-dbdb65245b72/original.jpg?"
+    },
+    {
+      "name": "Willow Oak/ Quercus Phellos",
+      "species": "Willow Oak/ Quercus Phellos",
+      "lat": 38.933159,
+      "lng": -76.95208,
+      "register_location": "Bladensburg Dueling Ground",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Oak/ Quercus velutina",
+      "species": "Black Oak/ Quercus velutina",
+      "lat": 38.70403,
+      "lng": -77.02896,
+      "register_location": "Fort Washington National Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Walnut/ Juglans nigra",
+      "species": "Black Walnut/ Juglans nigra",
+      "lat": 38.71138,
+      "lng": -77.036,
+      "register_location": "Fort Washington National Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Chestnut Oak/ Quercus montana",
+      "species": "Chestnut Oak/ Quercus montana",
+      "lat": 38.710432,
+      "lng": -77.027803,
+      "register_location": "Fort Washington National Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Northern Red Oak/ Quercus rubra",
+      "species": "Northern Red Oak/ Quercus rubra",
+      "lat": 38.71609,
+      "lng": -77.02448,
+      "register_location": "Fort Washington National Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sawtooth Oak/ Quercus accutissima",
+      "species": "Sawtooth Oak/ Quercus accutissima",
+      "lat": 38.92953,
+      "lng": -76.81169,
+      "register_location": "Enterprise Golf Course",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Cherry/ Prunus serotina",
+      "species": "Black Cherry/ Prunus serotina",
+      "lat": 38.71907,
+      "lng": -76.76976,
+      "register_location": "Prince George's County Department of Transportation",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bur Oak/ Quercus macrocarpa",
+      "species": "Bur Oak/ Quercus macrocarpa",
+      "lat": 39.052686,
+      "lng": -76.902667,
+      "register_location": "Christian Brothers LaSalle Hall Retirement Center",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Southern Red Oak/ Quercus falcata",
+      "species": "Southern Red Oak/ Quercus falcata",
+      "lat": 38.69635,
+      "lng": -76.72736,
+      "register_location": "Spice Creek Wildlife Management Area",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Overcup Oak/ Quercus Iyrata",
+      "species": "Overcup Oak/ Quercus Iyrata",
+      "lat": 38.874759,
+      "lng": -76.802973,
+      "register_location": "Prince George's County Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Chinkapin Oak/ Quercus muehlenbergii",
+      "species": "Chinkapin Oak/ Quercus muehlenbergii",
+      "lat": 38.714982,
+      "lng": -77.032215,
+      "register_location": "Fort Washington National Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "White Ash/ Fraxinus americana",
+      "species": "White Ash/ Fraxinus americana",
+      "lat": 38.960673,
+      "lng": -76.780848,
+      "register_location": "Prince George's County Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Hackberry/ Celtis occidentalis",
+      "species": "Hackberry/ Celtis occidentalis",
+      "lat": 38.784449,
+      "lng": -76.715008,
+      "register_location": "Mount Calvert Historical and Archaeological Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Bitternut Hickory/ Carya cordiformis",
+      "species": "Bitternut Hickory/ Carya cordiformis",
+      "lat": 38.716365,
+      "lng": -77.02568,
+      "register_location": "Fort Washington National Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Dawn Redwood/ Metasequoia glyptostroboides",
+      "species": "Dawn Redwood/ Metasequoia glyptostroboides",
+      "lat": 38.966919,
+      "lng": -76.7996,
+      "register_location": "Marietta Mansion",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Red Maple/ Aver rubrum",
+      "species": "Red Maple/ Aver rubrum",
+      "lat": 38.747873,
+      "lng": -77.004341,
+      "register_location": "Harmony Hall Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Loblolly Pine/ Pinus taeda",
+      "species": "Loblolly Pine/ Pinus taeda",
+      "lat": 38.747274,
+      "lng": -77.002804,
+      "register_location": "Harmony Hall Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Mocknut Hickory / Carya tomentosa",
+      "species": "Mocknut Hickory / Carya tomentosa",
+      "lat": 38.92739,
+      "lng": -76.82449,
+      "register_location": "Regent Forest Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Post Oak/ Quercus stellata",
+      "species": "Post Oak/ Quercus stellata",
+      "lat": 38.984708,
+      "lng": -76.947704,
+      "register_location": "University of Maryland School of Architecture Building",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Tupelo/ Nyssa sylvatica",
+      "species": "Tupelo/ Nyssa sylvatica",
+      "lat": 38.870396,
+      "lng": -76.868184,
+      "register_location": "Walker Mill Regional Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "American Holly/ Ilex opaca",
+      "species": "American Holly/ Ilex opaca",
+      "lat": 38.88161,
+      "lng": -76.785495,
+      "register_location": "Chelsea Historic Site",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Eastern Red Cedar/ Juniperus virginiana",
+      "species": "Eastern Red Cedar/ Juniperus virginiana",
+      "lat": 39.05899,
+      "lng": -76.80903,
+      "register_location": "Patuxent Wildlife Research Center",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Sand Hickory/ Carya pallida",
+      "species": "Sand Hickory/ Carya pallida",
+      "lat": 39.02102,
+      "lng": -76.83008,
+      "register_location": "Beltsville Agricultural Research Center",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Black Maple/ Acer nigrum",
+      "species": "Black Maple/ Acer nigrum",
+      "lat": 38.87908,
+      "lng": -76.86743,
+      "register_location": "Concord Historic Site",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Japanese Zelkova/ Zelkova serrata",
+      "species": "Japanese Zelkova/ Zelkova serrata",
+      "lat": 39.02585,
+      "lng": -76.92251,
+      "register_location": "US Department of Agriculture",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Persimmon/ Diospyrus virginiana",
+      "species": "Persimmon/ Diospyrus virginiana",
+      "lat": 38.81791,
+      "lng": -76.75252,
+      "register_location": "Old Marlboro Primary School",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Deodar Cedar/ Cedrus deodara",
+      "species": "Deodar Cedar/ Cedrus deodara",
+      "lat": 38.984973,
+      "lng": -76.873567,
+      "register_location": "Schrom Hills Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Fastigiate English Oak",
+      "species": "Fastigiate English Oak",
+      "lat": 39.02707,
+      "lng": -76.92007,
+      "register_location": "US Department of Agriculture",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "London Planetree/ Platanus x acerfolia",
+      "species": "London Planetree/ Platanus x acerfolia",
+      "lat": 39.001337,
+      "lng": -76.877077,
+      "register_location": "Whole Health Wellness Building",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Atlas Cedar/ Cedrus atlantica",
+      "species": "Atlas Cedar/ Cedrus atlantica",
+      "lat": 38.79272,
+      "lng": -77.00518,
+      "register_location": "Oxon Hill Manor",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Japanese False Cypress/ Chamaecyparis pisifera",
+      "species": "Japanese False Cypress/ Chamaecyparis pisifera",
+      "lat": 38.775054,
+      "lng": -76.8785,
+      "register_location": "Mount Airy Mansion",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Japanese Raisin Tree/ Hovenia dulcis",
+      "species": "Japanese Raisin Tree/ Hovenia dulcis",
+      "lat": 38.71426,
+      "lng": -77.03078,
+      "register_location": "Fort Washington National Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Southern Magnolia/ Magnolia grandiflora",
+      "species": "Southern Magnolia/ Magnolia grandiflora",
+      "lat": 39.107854,
+      "lng": -76.855314,
+      "register_location": "St. Mary's of the Mills Catholic Church",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Star Magnolia/ Magnolia stellata",
+      "species": "Star Magnolia/ Magnolia stellata",
+      "lat": 39.000848,
+      "lng": -76.878767,
+      "register_location": "Greenbelt Community Center",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "yes",
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Saucer Magnolia/ Magnolia x soulangiana",
+      "species": "Saucer Magnolia/ Magnolia x soulangiana",
+      "lat": 39.023229,
+      "lng": -76.920814,
+      "register_location": "US Department of Agriculture",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "name": "Northern Pecan/ Carya illinoinensis",
+      "species": "Northern Pecan/ Carya illinoinensis",
+      "lat": 38.966665,
+      "lng": -76.799116,
+      "register_location": "Marietta Manor Historic Site",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services.arcgis.com/kSZiBgsXsUF788NB/arcgis/rest/services/Prince_Georges_County_Native_Champion_Trees_/FeatureServer/0"
+      ],
+      "source": "Prince George's County (MD) native champion trees (government). Several stand in parks (Fort Washington, Bladensburg Dueling Ground); a street address alone may be a home, hard rule 10. Facts only.",
+      "status": "open"
+    },
+    {
+      "candidate": "Union Square bur oak, U.S. Capitol Grounds (AOC biggest tree 2026)",
+      "why_a_lead": "AOC 'Going on a Tree Hunt' (2026-04-24, fetched via Wayback): DBH 64 in (about 511 cm girth), about 75 ft, canopy spread 113 ft, in a clearing south of the tall Union Square oaks, officially the biggest tree on the Capitol Grounds. No coordinate, no OSM species node, Union Square is a park-sized site, no photo: not findable. Needs a geotagged photo or AOC coordinate.",
+      "status": "open"
+    },
+    {
+      "candidate": "Capitol Square NE tulip tree (AOC 61 in DBH, 85 ft) and Summerhouse Japanese pagoda (63 in DBH, 90 ft, two stems) and Wych elm (69 in DBH, crown cut back)",
+      "why_a_lead": "Measurements seen on AOC tree-hunt page; no coordinates, no photo, pruned/declined specimens. Not findable.",
+      "status": "open"
+    },
+    {
+      "candidate": "Rock Creek Park Willow Oak, Rock Creek Trail Exercise Course",
+      "why_a_lead": "Casey Trees 2023 contest finalist, 250 in circumference (caseytrees.org/2023/08/and-the-largest-tree-is/). Location only 'Rock Creek Trail Exercise Course', a trail with many stations: no pin in reach, no photo.",
+      "status": "open"
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "The Great White Oak, Tudor Place, Georgetown (near the East Lawn / tennis matches)",
+      "reason": "DEAD, confirmed by Tudor Place's own site (tudorplace.org/garden/, current page, checked this pass): 'the Great White Oak fell in 2019. When its rings were counted it was approximately 160 years old.' Do not re-research as a live candidate; the property's other, possibly-distinct 'Tennis Court Garden' white oaks (TCLF-sourced, single source, status unclear) remain a separate open lead above, not this same blocked tree."
+    },
+    {
+      "candidate": "District of Columbia War Memorial tree plantings (dogwood, holly, magnolia, elm, pine, crabapple, 1931-39)",
+      "reason": "Not a collectible point: a mixed-species memorial landscape planting, not one identifiable tree or a compact named ensemble with one obvious place to stand. No individual specimen is named or dated by either source found (NPS 'Silent Sentinels' article; National Park Trust blog does not mention it at all)."
+    },
+    {
+      "candidate": "Maryland Liberty Tree, U.S. Capitol Grounds (Capitol Square, N.E.)",
+      "reason": "Checked this pass via AOC's own feature page (Wayback snapshot): planted 1978 as a Liberty Tree seedling, replanted 2001, roughly 48 years old. Well short of this project's remarkable-age bar and not visually distinctive; the name commemorates a colonial-era 'Liberty Tree' at St John's College Annapolis, not this tree's own age. Do not re-research."
+    },
+    {
+      "candidate": "Various 1970s-2020s commemorative trees on the Capitol Grounds (Idaho Federation of Women's Clubs Tree 1975, South Carolina Forestry Association Tree 1981, Senator Edward Zorinsky Tree 1987, Donnald Anderson Tree 1998, Senator Chuck Grassley Tree 2024, etc.)",
+      "reason": "AOC documents dozens of these individually plaqued commemorative plantings on Capitol Square; all found this pass are too young (decades, not centuries) for the remarkable-age bar and are one of many similar plaques rather than a singular destination. Only the ~45 surviving ORIGINAL Olmsted-era (1874-1892) plantings are worth pursuing as candidates; verify by checking the planting year against 1874-1892 before researching further."
+    },
+    {
+      "name": "Linden Oak",
+      "reason": "Dead: died by spring 2022, removed 18 Jul 2023 (enwiki, Montgomery Parks); only a lower-trunk memorial remains. Never ship as a living tree.",
+      "coordinates": [
+        39.0228,
+        -77.1022
+      ]
+    },
+    {
+      "name": "Tulip Poplar",
+      "species": "Tulip Poplar (Liriodendron tulipifera)",
+      "lat": 38.914449,
+      "lng": -77.061124,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Rock Creek Park",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?",
+      "reason": "already published as The Montrose Park Tulip Poplar (washington-dc), 172 m away with matching name words"
+    },
+    {
+      "name": "White Mulberry",
+      "species": "White Mulberry (Morus alba)",
+      "lat": 38.888968,
+      "lng": -77.036347,
+      "register_location": "Washington Monument",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "National Mall and Memorial Parks",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/756ed568-9c51-4039-be9f-100f6b60c884/original.jpg?",
+      "reason": "already published as The Washington Monument Witness Mulberry (washington-dc), 112 m away with matching name words"
+    },
+    {
+      "name": "Chestnut Oak",
+      "species": "Chestnut Oak (Quercus prinus)",
+      "lat": 38.930449,
+      "lng": -77.096134,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": "Rock Creek Park",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region witness trees (federal; NPS text and NPGallery images are usually public domain, check each image's credit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?",
+      "reason": "already published as The Battery Kemble Chestnut Oak (washington-dc), 177 m away with matching name words"
+    },
+    {
+      "name": "Montrose Park Tulip-poplar",
+      "species": "Tulip Tree (Liriodendron sp.)",
+      "lat": 38.914583,
+      "lng": -77.061073,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/b46fa667-f180-4180-8e09-39e678004169/original.jpg?",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "already published as The Montrose Park Tulip Poplar (washington-dc), 162 m away with matching name words"
+    },
+    {
+      "name": "Chestnut Oak at Battery Kemble Park",
+      "species": "Sweet Chestnut (Castanea sp.)",
+      "lat": 38.930503,
+      "lng": -77.096086,
+      "register_location": "Rock Creek Park",
+      "girth_cm": null,
+      "height_m": null,
+      "register_status": null,
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+      ],
+      "source": "National Park Service, National Capital Region notable trees storymap layer (federal). Image rights vary per image (Image_UseLimit).",
+      "status": "open",
+      "register_photo": "https://npgallery.nps.gov/GetAsset/00d5d7fe-9dd7-412a-8944-ae8da139cc36/original.jpg?",
+      "species_basis": "genus read from the tree's own name; ask the reader which species",
+      "reason": "already published as The Battery Kemble Chestnut Oak (washington-dc), 174 m away with matching name words"
+    },
+    {
+      "candidate": "Northampton Street white oak, 2800 block Northampton St NW (Chevy Chase DC)",
+      "reason": "Fell 2024-07-15 (Washingtonian 2024-07-16, Washington Times, PoPville); also private yard. Never ship."
+    },
+    {
+      "candidate": "Andrew Jackson Magnolia, White House South Portico",
+      "reason": "Felled December 2017 (enwiki 'Jackson Magnolia' now written in the past tense: 'was a southern magnolia'). Never ship; offspring seedlings are young."
+    }
+  ]
 }

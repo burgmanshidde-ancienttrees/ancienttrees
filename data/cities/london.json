@@ -3,10 +3,10 @@
   "country": "United Kingdom",
   "face_tree_id": "lon_007",
   "status": "needs_curation",
-  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These twenty-seven range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
+  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These twenty-nine range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
   "meta_description": "London's ancient trees hide in royal parks and churchyards. Start with the Totteridge Yew, alive since before the Romans built Londinium.",
   "question_answer": "The oldest tree in London is the Totteridge Yew, a European yew in St Andrew's churchyard in Totteridge, North London, estimated at between 1,000 and 2,000 years old. It is the oldest living thing in the city, and it stands a 15 minute walk from Totteridge and Whetstone station on the Northern Line.",
-  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-five more of the city's ancient trees.",
+  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-eight more of the city's ancient trees.",
   "question_context": "Ring counting does not work on ancient yews because their heartwood rots away, so estimates for the Totteridge Yew run from 1,000 to 2,000 years. Even the cautious low end makes it older than any building in London, and the high end means it was already a substantial tree when the Romans founded Londinium. It stands in the churchyard of St Andrew's in Totteridge, a village long since swallowed by North London, and the 13th century church beside it is the newcomer on the plot: the tree predates it by centuries at minimum. The district's Hundred Court once met in its shade, which tells you how long it has been the local landmark. London's runners-up are oaks rather than yews: Richmond Park and Greenwich Park hold hollow pollards in the 700 to 900 year range, survivors of the royal hunting grounds. But for sheer age, nothing in the capital touches the yew. Getting there is simple: Totteridge and Whetstone station on the Northern Line, then a 15 minute walk through the old village.",
   "faq": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are London's ancient trees free to visit?",
-      "a": "Twenty-five of the twenty-seven trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
+      "a": "Twenty-seven of the twenty-nine trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
     },
     {
       "q": "Why does London have so many ancient trees?",
@@ -1008,6 +1008,93 @@
         "width": 4032,
         "height": 3024,
         "taken_month": 5
+      }
+    },
+    {
+      "id": "lon_028",
+      "name": "The Carshalton Plane",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "over 250 years",
+      "age_min": 250,
+      "age_max": null,
+      "girth_cm": 760,
+      "height_m": 39.6,
+      "location": {
+        "address": "Festival Walk beside the stream feeding Carshalton Ponds, Carshalton SM5",
+        "latitude": 51.3652,
+        "longitude": -0.16577,
+        "neighbourhood": "Carshalton"
+      },
+      "verified_sources": [
+        "https://www.secretcarshalton.com/tree-mendous-new-measurement-finally-announced-for-carshaltons-giant-tree/",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+        "https://www.geograph.org.uk/photo/2993649",
+        "https://www.inaturalist.org/observations/170529641"
+      ],
+      "official_register": {
+        "name": "Forestry Commission remeasurement of 5 August 2026 with Sutton Council Parks Service (letter shown in the Secret Carshalton report); Great Trees of London list",
+        "url": "https://www.secretcarshalton.com/tree-mendous-new-measurement-finally-announced-for-carshaltons-giant-tree/"
+      },
+      "access": "Free; stands beside the public Festival Walk by Carshalton Ponds, plaque at its foot (Geograph captions); no hours published, an open path",
+      "transport": "Carshalton station (Southern), roughly 10 minutes on foot (not source-stated; Carshalton Ponds are the landmark)",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "In 1964 the Forestry Commission set a plaque at the foot of this plane recording 123 feet, then the tallest London plane known in Britain. It has not stopped growing. On 5 August 2026 the Forestry Commission and Sutton Council's parks service measured it again: 39.6 metres tall, about 130 feet, and 7.6 metres round the trunk, almost 25 feet. Since the plaque, its girth has grown by 19 percent and its height by 6 percent.\n\nThe height record has moved on, though. On the Tree Register's list, as read by Secret Carshalton, the local site that published the new figures, two planes in Richmond stand at 40.40 and 40.25 metres. That makes Carshalton's the third tallest London plane on that list, still a giant and no longer the champion.\n\nNobody recorded when it was planted, and the guesses do not quite agree. The 1964 plaque already called it likely over 200 years old, which puts it past 250 now. The Great Trees of London list, which counted it among its original 41 trees, gave about 200 years as of 2010. Both are estimates rather than records.\n\nIt stands beside Festival Walk, on the stream that feeds Carshalton Ponds, with the plaque at its base and the Honeywood Museum a few dozen metres away. The path is open and free, and Carshalton station is roughly ten minutes on foot.",
+      "how_to_recognise": "You can recognise it by the Forestry Commission plaque at its base and a trunk 7.6 metres round. It stands beside Festival Walk on the stream feeding Carshalton Ponds, a few dozen metres from the Honeywood Museum.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "lon_030",
+      "name": "The Gunnersbury Park Black Mulberry",
+      "species": "Black Mulberry (Morus nigra)",
+      "age_estimate": "probably 19th century",
+      "age_min": 150,
+      "age_max": 220,
+      "girth_cm": 184,
+      "height_m": 11,
+      "location": {
+        "address": "Gunnersbury Park, below the terrace steps of the Large Mansion (Gunnersbury Park Museum), London W3",
+        "latitude": 51.49928,
+        "longitude": -0.28727,
+        "neighbourhood": "Gunnersbury"
+      },
+      "verified_sources": [
+        "https://www.moruslondinium.org/map/gunnersbury-park",
+        "https://www.moruslondinium.org/research/gunnersbury-mulberries",
+        "https://www.visitgunnersbury.org/plan-your-visit"
+      ],
+      "official_register": {
+        "name": "Morus Londinium London mulberry survey (Conservation Foundation), Gunnersbury Park record",
+        "url": "https://www.moruslondinium.org/map/gunnersbury-park"
+      },
+      "access": "Free; Gunnersbury Park open daily 7am until dusk, museum Tue-Sun 10am-4.30pm, free entry (visitgunnersbury.org)",
+      "transport": "Acton Town station (Piccadilly/District) about 10 minutes to the park gate (official), South Ealing about 10 minutes to Popes Lane gate; Kew Bridge rail to the southern gate; then a walk to the Large Mansion",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Terrace steps below the Large Mansion (Gunnersbury Park Museum)",
+        "radius_m": 40
+      },
+      "curation_status": "flagged",
+      "story": "This mulberry fell over and kept growing. At some date nobody recorded, the twin-stemmed tree below the terrace of Gunnersbury's Large Mansion keeled over. It now lies in a V shape, sending branches straight up to build a new, squat crown. Before it went down it stood about 11 metres tall, according to Morus Londinium, the London mulberry survey, which records a largest girth of 184 centimetres and classes the tree as Notable and recumbent.\n\nPeter Coles of Morus Londinium found it on a visit in April 2024, tucked away near the foot of the steps that climb through an arch to the terrace, and reported it thriving. Its neighbour dwarfs it: a cedar of Lebanon over 200 years old. A young upright mulberry a few metres away seems to have died, so do not mistake that one for it.\n\nThe age is a single source's judgement: probably 19th century. The same writer suggests the Rothschilds planted it, which is an inference rather than a record; the family bought Gunnersbury in 1835. Somewhere between 150 and 220 years is as close as anyone can say.\n\nThe pin is the survey's grid reference, which lands near the steps rather than on the trunk, so let the cedar and the fallen V guide you. Black mulberries fruit in high summer, dark berries that stain whatever lies beneath. The park is free and open daily from 7am until dusk, about ten minutes on foot from Acton Town station.",
+      "how_to_recognise": "You can recognise it by the twin trunk lying on the ground in a V, its branches growing straight up. It stands at the foot of the steps up to the Large Mansion terrace, beside a much larger cedar of Lebanon.",
+      "best_time": {
+        "months": [
+          7,
+          8
+        ],
+        "kind": "fruit",
+        "label": "July and August, when the dark mulberries ripen and stain the ground"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
