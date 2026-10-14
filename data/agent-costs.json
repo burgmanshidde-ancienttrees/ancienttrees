@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "gliniak+granit+grybiskes+hel+higashine+higashiomi+himmelsberg+hino+hniszow+horn-bremen",
+    "kind": "enrich",
+    "tokens": 68000,
+    "trees": 0,
+    "note": "enrichment: Wszebora PL.ZIPOP register id, Grybiskes saugoma.lt record, Higashine kunishitei record, Himmelsberg Naturdenkmalbuch no. 534 443, girth and height for Granit, Hel, Hino, Hniszow; Higashiomi and Horn-Lehe dead ends; 5 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "roosendaal",
     "kind": "write",
     "tokens": 203000,
