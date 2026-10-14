@@ -71,7 +71,15 @@
         "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505010256",
         "url": null
       },
-      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010256 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505010256 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12).",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      }
     }
   ]
 }

@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "stokaiciai+untermerzbach+uzovska-panica+valdemarpils+velke-opatovice+velp+vepriai+villamudria+volkenroda+vorden",
+    "kind": "enrich",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "enrichment: Untermerzbach ND id, Villamudria Castilla y Leon register id and height, Vorden and Vepriai best_time from species files; Velp register pin refused (no source URL); six dead ends; 6 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "stokaiciai+sunderland-massachusetts+taasinge+tatobity+teleci+tillamook+toga+toul+trainiskis+turku",
     "kind": "enrich",
     "tokens": 102000,
