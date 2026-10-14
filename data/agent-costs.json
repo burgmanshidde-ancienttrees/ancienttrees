@@ -11433,6 +11433,22 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "potsdam",
+    "kind": "write",
+    "tokens": 140000,
+    "trees": 1,
+    "note": "verify (70k) plus write (70k): pot_010 Paetowstrasse oak (Naturdenkmal 39), German overlay added; four register trees held as leads for access"
+   },
+   {
+    "date": "2026-10-14",
+    "target": "spokane+vienna",
+    "kind": "verify",
+    "tokens": 170000,
+    "trees": 0,
+    "note": "vienna: only a possibly dead Prater poplar with approximate pin (vie_059 held), Baumkataster WFS returned empty; spokane: Grant Park Guardian chestnut conditional on entrance counting as a small site, held; both walled 48h"
+   },
+   {
+    "date": "2026-10-14",
     "target": "oss",
     "kind": "write",
     "tokens": 197000,

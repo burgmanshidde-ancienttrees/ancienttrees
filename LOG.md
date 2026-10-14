@@ -17,6 +17,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 Oss reopened with five LRMB register trees (oss_001, 007, 011, 012, 013), all rich (confirmed PDOK pin, register link, measurement, concrete access). It had been removed on 2026-10-12 only because the live count fell below the four-tree floor; the oss to den-bosch city redirect and two retired tree slugs are removed from redirect-map.ts so /oss serves again. data/leads/oss.json still holds the old removed copies of oss_001 and oss_007. Preflight 0 problems.
 
+Potsdam: pot_010 (Sessile Oak of Paetowstrasse, Naturdenkmal 39, confirmed pin, 450 cm) merged with German overlay; a Commons photo exists but was not viewed. Vienna (one possibly dead poplar, cadastre WFS empty) and Spokane (one park-entrance tree, parks are not small sites) gave nothing publishable and are walled 48h; the Spokane Grant Park Guardian chestnut is the call for a session if an entrance should count. Oss and Roosendaal enrichment gaps (season only, no real peak) closed as dead ends. pagegaps: nothing missing.
+
 ## 2026-10-14, retry attempt: nothing published
 
 Released the standing Leipzig claim: its brief shows no imported register within 20 km, and its four written trees (lpz_019, 021, 022, 023) are the kind preflight refuses as not rich. Leipzig is a wall for 48h. The 53 READY leads are thin register rows (Roosendaal, Oss, Munich, Delft and others), refused by the same rule. langcheck has no city over 10 English impressions to translate. No agent dispatched, because no candidate can end rich. Still open: the iOS app workflow failed on 2026-10-14 and its log was not read.

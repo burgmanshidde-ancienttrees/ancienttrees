@@ -41,6 +41,42 @@
       "longitude": 13.121932,
       "status": "lead",
       "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-71/B, designated 1993-03-02, reason 'Schoenheit, landeskundliche Gruende') is the only source found this pass. A baumkunde.de entry for a plane tree at the Wirtshaus zur Faehre Pfaueninsel exists but its exact URL/register number and coordinates could not be confirmed this pass (WebSearch snippets only, no direct page fetch succeeded), so identity match to 6-71/B is unconfirmed rather than established. Also flag for a future pass: check whether 'westlich des Wirtshauses' places this tree in the inn's beer garden/private terrace rather than open parkland, which would be an access question under hard rule 10, not yet resolved."
+    },
+    {
+      "name": "Naturdenkmal Nr. 22 Copper/Red Beech of Puschkinallee 17 (Rotbuche, Fagus sylvatica)",
+      "place": "Puschkinallee 17, NE of Villa Gericke",
+      "latitude": 52.41701,
+      "longitude": 13.058912,
+      "status": "held",
+      "reason": "Register page (fetched): girth 410 cm, Flur 1 Flurstueck 191; Commons photo May 2026 (Tdworek, CC BY-SA 4.0) confirms alive but its geotag just repeats the list coordinate. Held: stands in the private Villa Gericke grounds (private residence, sold 2017); no source says the garden is open, street view only per a search summary. Needs access evidence.",
+      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-22-rotbuche-der-nauener-vorstadt"
+    },
+    {
+      "name": "Naturdenkmal Nr. 20 Yew of Grosse Weinmeisterstrasse 42 (Gemeine Eibe, Taxus baccata)",
+      "place": "Grosse Weinmeisterstrasse 42",
+      "latitude": 52.420671,
+      "longitude": 13.065461,
+      "status": "held",
+      "reason": "Register page (fetched): girth 200 cm, Flur 1 Flurstueck 787; Commons photo 2017 (Haplochromis, CC BY-SA 4.0) geotag 52.420822,13.065724. Held: a draft city list puts it in the front garden of a private house; no access evidence; modest girth.",
+      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-20-gemeine-eibe-der-nauener-vorstadt"
+    },
+    {
+      "name": "Naturdenkmal Nr. 24 Large-leaved Lime near Grosse Weinmeisterstrasse 53 (Sommer-Linde, Tilia platyphyllos)",
+      "place": "Parkbereich Grosse Weinmeisterstrasse 53",
+      "latitude": 52.413752,
+      "longitude": 13.062035,
+      "status": "held",
+      "reason": "Register page (fetched): girth 410 cm, Flur 1 Flurstueck 244. Held: no photo found on Commons, no OSM check done, list coordinate only (approximate), access to the park area not established.",
+      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-24-sommer-linde-der-nauener-vorstadt"
+    },
+    {
+      "name": "Naturdenkmal Nr. 40 Turkey Oaks of Paetowstrasse (Zerr-Eiche, Quercus cerris, several trees)",
+      "place": "Paetowstrasse, 80 to 100 m SW of pot_010",
+      "latitude": 52.3809,
+      "longitude": 13.0513,
+      "status": "held",
+      "reason": "Register: girths 160 to 295 cm, Flur 14 Flurstuecke 32 and 34; OSM natural=tree nodes with denotation=natural_monument and a Commons image at 52.38087,13.05129 and 52.38110,13.05159; Commons photo exists. Not verified this pass (ensemble of 5 or more, one place to stand to be judged, girth modest, one OSM way is access=private near it). Pair with pot_010 if pursued.",
+      "source_url": "https://www.potsdam.de/de/content/"
     }
   ],
   "blocked": [

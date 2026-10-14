@@ -130,5 +130,44 @@
     "verify_notes": "Register only, one source. Three oaks, register points 52.429927,13.064992 / 52.429316,13.064753 / 52.428601,13.064674, spread over about 150 m along the shore: a trio read as one stop, not a single trunk. Girths 460, 515 and 590 cm, but the register does not say which point carries which girth, so the thickest cannot be pinned individually: pin is the northernmost point and precision is approximate for that reason. Alive: Commons photograph dated 2025-04-27 of the trio (RECENT). A photograph is in reach on Commons (Stiel-Eichen am Jungfernsee).",
     "story": "Three oaks share one entry in Potsdam's register, and the register will not tell you which is which. Natural monument number 19 is a trio of pedunculate oaks strung along about 150 metres of the Jungfernsee shore by the Bertinistrasse, with girths of 460, 515 and 590 centimetres and three separate coordinates. What it does not record is which girth belongs to which point.\n\nThat turns the biggest of them, close to six metres round, into a small puzzle for whoever comes to look: it is one of these three, and a tape measure is the only way to settle which. Our pin sits on the northernmost of the register's three points, which is why this page marks it as approximate. Walk the shore and all three stand along the same stretch.\n\nThey were photographed together in April 2025, so all three were standing then. Nobody has recorded an age for any of them, and we have not found a source that guesses.\n\nOne more honest note. The register puts them on three different land parcels, and we have not confirmed whether any of them stands behind a private fence. Look from the street and the shore path, and leave the gardens alone. If you can tell us which of the three is the 590, or roughly how old they are, please do.",
     "how_to_recognise": "You can recognise them as three large oaks spread over about 150 metres of the Jungfernsee shore by the Bertinistrasse. The pin is the northernmost; the thickest, 5.9 metres round, is one of the three."
+  },
+  {
+    "id": "pot_010",
+    "name": "The Sessile Oak of Paetowstrasse",
+    "species": "Sessile Oak (Quercus petraea)",
+    "age_estimate": "not documented",
+    "age_min": null,
+    "age_max": null,
+    "girth_cm": 450,
+    "location": {
+      "address": "Paetowstrasse, southern unpaved section by the Kolonie Sternschanze allotments, 14473 Potsdam",
+      "latitude": 52.381563,
+      "longitude": 13.052342,
+      "neighbourhood": "Templiner Vorstadt"
+    },
+    "verified_sources": [
+      "https://www.potsdam.de/de/content/naturdenkmal-nr-39-trauben-eiche-dertempliner-vorstadt",
+      "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr._39_Trauben-Eiche_in_der_Templiner_Vorstadt.jpg",
+      "https://www.openstreetmap.org/node/6454272806",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Potsdam"
+    ],
+    "official_register": {
+      "name": "Landeshauptstadt Potsdam, Naturdenkmal Nr. 39",
+      "url": "https://www.potsdam.de/de/content/naturdenkmal-nr-39-trauben-eiche-dertempliner-vorstadt"
+    },
+    "access": "Free, open at all times: the oak stands about 5 m from a public unpaved track (OSM highway=track, no access restriction), the unpaved southern section of Paetowstrasse beside the allotment colony. No fee, no opening hours.",
+    "transport": "About 1.5 km (20 minutes on foot) from Potsdam Hauptbahnhof; city buses on Templiner Strasse about 600 m away (stop not checked)",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "photo_candidate": {
+      "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr._39_Trauben-Eiche_in_der_Templiner_Vorstadt.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Haplochromis (Alex Giltjes)",
+      "taken": "2021-01-07",
+      "note": "photo of this tree, EXIF geotag 52.381563,13.052342; not viewed or judged"
+    },
+    "verify_notes": "City of Potsdam per-tree page (fetched): Trauben-Eiche (Quercus petraea), Naturdenkmal Nr. 39, Flur 14 Flurstueck 34/36, Stammumfang 450 cm, protection reason scientific, Eigenart und Schoenheit. Page text on species (up to 600 cm girth, 800 to 1000 years) is generic, not about this tree. Girth 450 cm agrees with OSM circumference=4.50 and de.wikipedia list Umfang 450. Pin: de.wikipedia register-list coordinate 52.381411,13.052047 is 26 m off; the Commons photo geotag and OSM tree node 6454272806 (natural=tree, denotation=natural_monument, species Quercus petraea, description:url the city page, mapped 2021) agree at 52.3815634,13.0523425, so pin is tree-level and the register list coordinate is the loose one. Flagged: alive evidence is a January 2021 photo and the 2021 OSM node, lifecheck.py returned NONE, no newer observation found; register-only vitality. Neighbours: Naturdenkmal Nr. 40 (Zerr-Eichen, Quercus cerris, girths 160 to 295 cm, 5 or more trees, OSM nodes near 52.3809,13.0513, about 80 to 100 m south-west) is a separate ensemble not verified here and would make a pair to walk. No age source. Not checked: Wayback copy of city page; fetched live 2026-10-14.",
+    "story": "Four and a half metres of sessile oak stand beside a dirt track, at the edge of an allotment colony in the Templiner Vorstadt. Potsdam lists it as natural monument number 39 and gives two reasons for protecting it: its scientific value, and its character and beauty.\n\nThe girth is the number everyone agrees on. The city's own page, the German Wikipedia list of Potsdam's natural monuments and the OpenStreetMap entry all give 450 centimetres. The city's page adds that the species can reach six metres round, which puts this one three quarters of the way there.\n\nIt is also easy to find. The unpaved southern stretch of the Paetowstrasse runs past the Kolonie Sternschanze allotments, and the oak stands about five metres off the track. A photograph from January 2021 and a map entry from the same year put it on exactly the same spot, which is why the pin here sits on the tree. The coordinate in the public list of Potsdam's monuments is about 26 metres out.\n\nThe thin part is the recent past. That 2021 photograph is the latest sighting we have, and nobody has published an age for the tree. If you walk past, tell us it still stands, and if you know how old it is, tell us that too.\n\nThe Hauptbahnhof is about 20 minutes away on foot. Some 80 to 100 metres south-west, the register lists a group of Turkey oaks as monument number 40.",
+    "how_to_recognise": "You can recognise it by the trunk, 4.5 metres round. It stands about five metres off the unpaved southern end of the Paetowstrasse, beside the Kolonie Sternschanze allotments."
   }
 ]

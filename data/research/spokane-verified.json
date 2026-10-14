@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "id": "spk_015",
+    "name": "Grant Park Guardian",
+    "species": "Horse Chestnut (Aesculus hippocastanum)",
+    "age_estimate": "roughly 90 years or more",
+    "age_min": 85,
+    "age_max": 120,
+    "girth_cm": null,
+    "height_m": 22.9,
+    "location": {
+      "address": "Southeast entrance to Grant Park, E 11th Avenue at S Arthur Street, Spokane, WA 99202",
+      "latitude": 47.645543,
+      "longitude": -117.391226,
+      "neighbourhood": "Grant Park, South Hill"
+    },
+    "verified_sources": [
+      "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/",
+      "https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1",
+      "https://my.spokanecity.org/parks/hours/"
+    ],
+    "official_register": {
+      "name": "Spokane Heritage Tree Register (City of Spokane Urban Forestry), 'Grant Park Guardian', CityandCountyHistoricProp FeatureServer layer 1",
+      "url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+    },
+    "access": "Free. Spokane city parks are open 6 a.m. to 10 p.m. (all city parks closed 10 p.m. to 6 a.m.). Tree stands at the park's southeast entrance.",
+    "transport": "Street parking on E 11th Ave; Spokane Transit stops on the South Hill (route and walk time not checked)",
+    "location_precision": "approximate",
+    "location_site": {"name": "Southeast entrance of Grant Park", "radius_m": 50},
+    "curation_status": "flagged",
+    "verify_notes": "ONE SOURCE (US, official register), flagged. Register text (City of Spokane Urban Forestry heritage tree record, read from the ArcGIS layer in data/registers/spokane-heritage-trees.json): Age ~90, Height 75 feet, Species Horse Chestnut; 'This mature tree acts as a guardian and greeter to the southeast entrance to Grant Park.' Height 75 ft = 22.9 m (register, convert only). Register age is as listed, not re-measured; the listing is some years old so the tree is older now (stay broad). No girth given. Register point (47.645543,-117.391226) is 4 m from the house at 1303 E 11th Ave, so it was probably address-geocoded: pin kept APPROXIMATE, site level. What tells it apart: it is the large chestnut at the park's southeast gate, on the E 11th Ave edge. Alive: iNaturalist obs 315690968 (2025-09-21, Aesculus hippocastanum, 57 m accuracy, CC BY-NC so not usable as a photo) shows a horse chestnut at the spot, so recent presence; lifecheck was not rerun. Park hours from the city's own Park Hours page (fetched). Fetch notes: the heritage tree programme page returns only a shell to curl (per-tree text lives in the ArcGIS layer); inlander.com 429 on two attempts. CAVEATS for the parent: (1) Grant Park is a park, so whether an entrance counts as a 'small named site' under the findable rule is a judgement; if it does not, this is not findable (no photo, pin approximate) and should stay a lead. (2) Register URL is the programme page, not a per-tree page (no per-tree URL exists). (3) An earlier search summary put Grant Park at 1015 S Arthur St, consistent with an 11th/Arthur corner."
+  }
+]
