@@ -37,39 +37,34 @@ Description, the live one with three corrections (2026-10-14): it claimed two in
 ```
 Some trees in your city were standing before the city was. Ancient Trees takes you to them.
 
-Open it anywhere and the map fills with the trees around you: a yew that was old when the church beside it was built, a plane whose trunk takes four people to reach around, an oak that has stood through everything that happened on the street it shades. Each one has a page telling you what it is, roughly how old, and why it is worth the walk.
+Open the map wherever you are and find the remarkable old trees around you: a yew older than the church beside it, a plane tree it takes four people to hug, an oak that has seen everything happen on its street. Every tree has a page with what it is, roughly how old, and why it is worth the walk.
 
-WHAT YOU GET
+FIND
+• The old trees near you, on a map
+• Search by place, species or name
+• Directions to the trunk
 
-Trees near you, on a map you can search by place, by species or by name.
+DISCOVER
+• The trees at their best this month, wherever you are
+• The oldest, tallest and thickest trees
+• Tree cities around the world
 
-A story for every tree, written to be read rather than skimmed, and honest about what nobody knows: where an age has never been measured, the page says so and asks you.
+COLLECT
+• Photograph a tree you are standing in front of to add it to your collection
+• Keep a list of the trees you want to visit
+• Add a tree that is not on the map yet
 
-Directions to the trunk. Where a location is rough rather than exact, the page tells you before you set off, because sending you to the wrong spot is the one mistake worth avoiding.
-
-Your own collection. Photograph a tree while you stand in front of it and it joins your trees, ours and your own alike. Your collection lives in your account, so it follows you to a new phone, and nobody else can see it.
-
-WHERE THE TREES COME FROM
-
-Official registers of protected and monumental trees are read directly, and where sources disagree the page says which and why. Photographs carry their own open licence and credit.
-
-Nothing here is a wholesale import of a municipal tree inventory. A tree earns its place by being worth crossing town for.
-
-WHEN WE ARE WRONG
-
-We will be, and readers are how it gets fixed. Every page has a way to report a wrong pin, a fallen tree or a mistaken species.
-
-An account is one email address. Delete it and everything goes with it.
+Every tree is free to explore, and there are no ads.
 ```
 
 What's new in 1.0.3 (rewritten 2026-10-14):
 
 ```
-See which trees near you are at their best this month: Discover now follows the season where you are, with the records and the finest tree cities.
-Collect a tree by photographing it: take a photo, pick which tree it is, done.
-Add a tree we do not have yet, with a confirmation once it is saved.
-With the app open, it tells you when you stand within 50 metres of a tree you have not collected.
-Want to visit and Collected together in My trees.
+Discover now follows the season: see which trees near you are at their best this month.
+Collect a tree by photographing it, then pick which one it is.
+Add a tree that is not on the map yet.
+Pass within 50 metres of a tree you have not collected, and the app tells you.
+Your collected trees and the ones you want to visit, together in My trees.
 Add a photograph from any tree's page.
 Faster scrolling and many small fixes.
 ```
@@ -77,7 +72,7 @@ Faster scrolling and many small fixes.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Autumn is here. See which old trees near you are at their best this month, and walk to one before the leaves fall.
+Autumn is here, and the old trees around you are at their best. Find one worth the walk before the leaves fall.
 ```
 
 
@@ -97,9 +92,45 @@ What's new: same as U.K.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Autumn is here. See which old trees near you are at their best this month, and walk to one before the leaves fall.
+Autumn is here, and the old trees around you are at their best. Find one worth the walk before the leaves fall.
 ```
 
+Description:
+
+```
+Some trees in your city were standing before the city was. Ancient Trees takes you to them.
+
+Open the map wherever you are and find the remarkable old trees around you: a yew older than the church beside it, a plane tree it takes four people to hug, an oak that has seen everything happen on its street. Every tree has a page with what it is, roughly how old, and why it is worth the walk.
+
+FIND
+• The old trees near you, on a map
+• Search by place, species or name
+• Directions to the trunk
+
+DISCOVER
+• The trees at their best this month, wherever you are
+• The oldest, tallest and thickest trees
+• Tree cities around the world
+
+COLLECT
+• Photograph a tree you are standing in front of to add it to your collection
+• Keep a list of the trees you want to visit
+• Add a tree that is not on the map yet
+
+Every tree is free to explore, and there are no ads.
+```
+
+What's new:
+
+```
+Discover now follows the season: see which trees near you are at their best this month.
+Collect a tree by photographing it, then pick which one it is.
+Add a tree that is not on the map yet.
+Pass within 50 metres of a tree you have not collected, and the app tells you.
+Your collected trees and the ones you want to visit, together in My trees.
+Add a photograph from any tree's page.
+Faster scrolling and many small fixes.
+```
 
 ## Dutch
 
@@ -126,33 +157,34 @@ Description:
 ```
 Sommige bomen in jouw stad stonden er al voordat de stad er was. Ancient Trees brengt je ernaartoe.
 
-Open de app waar je ook bent en de kaart vult zich met de bomen om je heen: een taxus die al oud was toen de kerk ernaast gebouwd werd, een plataan waar vier mensen hun armen omheen moeten slaan, een eik die alles heeft meegemaakt wat er in zijn straat is gebeurd. Elke boom heeft een eigen pagina met wat het is, hoe oud ongeveer, en waarom hij de wandeling waard is.
+Open de kaart waar je ook bent en vind de bijzondere oude bomen om je heen: een taxus ouder dan de kerk ernaast, een plataan waar vier mensen hun armen omheen moeten slaan, een eik die alles heeft gezien wat er in zijn straat gebeurde. Elke boom heeft een pagina met wat het is, hoe oud ongeveer, en waarom hij de wandeling waard is.
 
-WAT JE KRIJGT
+VINDEN
+• De oude bomen bij jou in de buurt, op een kaart
+• Zoeken op plaats, soort of naam
+• Een route naar de stam
 
-Bomen bij jou in de buurt, op een kaart die je doorzoekt op plaats, soort of naam.
+ONTDEKKEN
+• De bomen die deze maand op hun mooist zijn, waar je ook bent
+• De oudste, hoogste en dikste bomen
+• Bomensteden over de hele wereld
 
-Een verhaal bij elke boom, en eerlijk over wat niemand weet: waar de leeftijd nooit gemeten is, zegt de pagina dat en vraagt het aan jou.
+VERZAMELEN
+• Fotografeer een boom waar je voor staat om hem aan je verzameling toe te voegen
+• Houd een lijst bij van bomen die je wilt bezoeken
+• Voeg een boom toe die nog niet op de kaart staat
 
-Een route naar de stam. Waar de locatie bij benadering is, zegt de pagina dat voordat je vertrekt.
-
-Je eigen verzameling. Fotografeer een boom terwijl je ervoor staat en hij hoort bij jouw bomen, de onze en die je zelf toevoegt.
-
-WAAR DE BOMEN VANDAAN KOMEN
-
-Officiële registers van beschermde en monumentale bomen worden rechtstreeks gelezen. Foto's hebben een open licentie en een naamsvermelding.
-
-De app is in het Engels. Een account is één e-mailadres; verwijder het en alles gaat mee.
+Elke boom is gratis te bekijken, en er zijn geen advertenties.
 ```
 
 What's new:
 
 ```
-Zie welke bomen bij jou in de buurt deze maand op hun mooist zijn: Ontdekken volgt nu het seizoen waar jij bent, met de records en de mooiste bomensteden.
-Verzamel een boom door hem te fotograferen: maak een foto, kies welke boom het is, klaar.
-Voeg een boom toe die wij nog niet hebben, met een bevestiging zodra hij is opgeslagen.
-Met de app open hoor je het als je binnen 50 meter staat van een boom die je nog niet hebt verzameld.
-Wil ik bezoeken en Verzameld samen in Mijn bomen.
+Ontdekken volgt nu het seizoen: zie welke bomen bij jou in de buurt deze maand op hun mooist zijn.
+Verzamel een boom door hem te fotograferen en kies dan welke het is.
+Voeg een boom toe die nog niet op de kaart staat.
+Kom je binnen 50 meter van een boom die je nog niet hebt verzameld, dan laat de app het weten.
+Je verzamelde bomen en de bomen die je wilt bezoeken, samen in Mijn bomen.
 Voeg vanaf elke boompagina een foto toe.
 Sneller scrollen en veel kleine verbeteringen.
 ```
@@ -160,7 +192,7 @@ Sneller scrollen en veel kleine verbeteringen.
 Promotional text (170, not indexed, editable any time):
 
 ```
-De herfst is er. Zie welke oude bomen bij jou in de buurt deze maand op hun mooist zijn, en loop naar een ervan voordat de bladeren vallen.
+De herfst is er, en de oude bomen om je heen zijn op hun mooist. Zoek er een die de wandeling waard is, voordat de bladeren vallen.
 ```
 
 
@@ -189,33 +221,34 @@ Description:
 ```
 Manche Bäume in deiner Stadt standen schon, bevor es die Stadt gab. Ancient Trees bringt dich zu ihnen.
 
-Öffne die App, wo du gerade bist, und die Karte füllt sich mit den Bäumen um dich herum: eine Eibe, die schon alt war, als die Kirche daneben gebaut wurde, eine Platane, deren Stamm vier Menschen umfassen müssen, eine Eiche, die alles gesehen hat, was in ihrer Straße je geschah. Jeder Baum hat eine eigene Seite: was er ist, ungefähr wie alt, und warum sich der Weg lohnt.
+Öffne die Karte, wo du gerade bist, und finde die besonderen alten Bäume um dich herum: eine Eibe, älter als die Kirche daneben, eine Platane, die vier Menschen kaum umarmen können, eine Eiche, die alles gesehen hat, was in ihrer Straße geschah. Jeder Baum hat eine Seite: was er ist, wie alt ungefähr und warum er den Weg lohnt.
 
-WAS DU BEKOMMST
+FINDEN
+• Die alten Bäume in deiner Nähe, auf einer Karte
+• Suche nach Ort, Art oder Name
+• Der Weg bis zum Stamm
 
-Bäume in deiner Nähe, auf einer Karte, die du nach Ort, Art oder Name durchsuchst.
+ENTDECKEN
+• Die Bäume, die diesen Monat am schönsten sind, wo immer du bist
+• Die ältesten, höchsten und dicksten Bäume
+• Baumstädte auf der ganzen Welt
 
-Eine Geschichte zu jedem Baum, ehrlich bei allem, was niemand weiß: wo ein Alter nie gemessen wurde, sagt die Seite das und fragt dich.
+SAMMELN
+• Fotografiere einen Baum, vor dem du stehst, und er kommt in deine Sammlung
+• Führe eine Liste der Bäume, die du besuchen willst
+• Füge einen Baum hinzu, der noch nicht auf der Karte ist
 
-Der Weg zum Stamm. Wo der Standort ungefähr ist, sagt die Seite das, bevor du losgehst.
-
-Deine eigene Sammlung. Fotografiere einen Baum, während du vor ihm stehst, und er gehört zu deinen Bäumen, unseren und den selbst gefundenen.
-
-WOHER DIE BÄUME KOMMEN
-
-Amtliche Verzeichnisse geschützter Bäume und Naturdenkmale werden direkt gelesen. Fotos tragen eine offene Lizenz und eine Namensnennung.
-
-Die App ist auf Englisch. Ein Konto ist eine E-Mail-Adresse; löschst du es, geht alles mit.
+Jeder Baum ist kostenlos zu entdecken, und es gibt keine Werbung.
 ```
 
 What's new:
 
 ```
-Sieh, welche Bäume in deiner Nähe diesen Monat am schönsten sind: Entdecken folgt jetzt der Jahreszeit dort, wo du bist, mit den Rekorden und den schönsten Baumstädten.
-Sammle einen Baum, indem du ihn fotografierst: Foto machen, den Baum auswählen, fertig.
-Füge einen Baum hinzu, den wir noch nicht haben, mit einer Bestätigung, sobald er gespeichert ist.
-Bei geöffneter App erfährst du, wenn du weniger als 50 Meter von einem Baum entfernt stehst, den du noch nicht gesammelt hast.
-Besuchen und Gesammelt zusammen in Meine Bäume.
+Entdecken folgt jetzt der Jahreszeit: Sieh, welche Bäume in deiner Nähe diesen Monat am schönsten sind.
+Sammle einen Baum, indem du ihn fotografierst, und wähle dann aus, welcher es ist.
+Füge einen Baum hinzu, der noch nicht auf der Karte ist.
+Kommst du einem Baum, den du noch nicht gesammelt hast, auf 50 Meter nahe, sagt dir die App Bescheid.
+Deine gesammelten Bäume und die, die du besuchen willst, zusammen in Meine Bäume.
 Füge auf jeder Baumseite ein Foto hinzu.
 Schnelleres Scrollen und viele kleine Verbesserungen.
 ```
@@ -223,7 +256,7 @@ Schnelleres Scrollen und viele kleine Verbesserungen.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Der Herbst ist da. Sieh, welche alten Bäume in deiner Nähe diesen Monat am schönsten sind, und geh zu einem, bevor die Blätter fallen.
+Der Herbst ist da, und die alten Bäume um dich herum sind am schönsten. Finde einen, der den Weg lohnt, bevor die Blätter fallen.
 ```
 
 
@@ -252,33 +285,34 @@ Description:
 ```
 Certains arbres de votre ville étaient déjà là avant la ville. Ancient Trees vous y conduit.
 
-Ouvrez l'application où que vous soyez et la carte se remplit des arbres autour de vous : un if déjà vieux quand l'église voisine a été bâtie, un platane dont le tronc demande quatre personnes pour en faire le tour, un chêne qui a tout vu de ce qui s'est passé dans sa rue. Chaque arbre a sa page : ce qu'il est, son âge approximatif, et pourquoi il vaut le détour.
+Ouvrez la carte où que vous soyez et trouvez les vieux arbres remarquables autour de vous : un if plus vieux que l'église voisine, un platane qu'il faut quatre personnes pour entourer, un chêne qui a tout vu de ce qui s'est passé dans sa rue. Chaque arbre a sa page : ce qu'il est, son âge approximatif et pourquoi il vaut le détour.
 
-CE QUE VOUS TROUVEZ
+TROUVER
+• Les vieux arbres près de vous, sur une carte
+• Recherche par lieu, espèce ou nom
+• L'itinéraire jusqu'au tronc
 
-Les arbres près de vous, sur une carte que vous parcourez par lieu, par espèce ou par nom.
+DÉCOUVRIR
+• Les arbres à leur plus beau ce mois-ci, où que vous soyez
+• Les arbres les plus vieux, les plus hauts et les plus gros
+• Des villes d'arbres partout dans le monde
 
-Une histoire pour chaque arbre, honnête sur ce que personne ne sait : quand un âge n'a jamais été mesuré, la page le dit et vous pose la question.
+COLLECTIONNER
+• Photographiez un arbre devant lequel vous vous tenez pour l'ajouter à votre collection
+• Gardez une liste des arbres que vous voulez visiter
+• Ajoutez un arbre qui n'est pas encore sur la carte
 
-L'itinéraire jusqu'au tronc. Quand la position est approximative, la page le dit avant que vous partiez.
-
-Votre propre collection. Photographiez un arbre en vous tenant devant lui et il rejoint vos arbres, les nôtres comme ceux que vous ajoutez.
-
-D'OÙ VIENNENT LES ARBRES
-
-Les registres officiels d'arbres protégés et remarquables sont lus directement. Les photos portent leur licence ouverte et leur crédit.
-
-L'application est en anglais. Un compte, c'est une adresse e-mail ; supprimez-le et tout part avec.
+Chaque arbre est gratuit à explorer, et il n'y a pas de publicité.
 ```
 
 What's new:
 
 ```
-Voyez quels arbres près de vous sont à leur plus beau ce mois-ci : Découvrir suit désormais la saison là où vous êtes, avec les records et les plus belles villes d'arbres.
-Collectionnez un arbre en le photographiant : prenez une photo, choisissez l'arbre, c'est fait.
-Ajoutez un arbre que nous n'avons pas encore, avec une confirmation une fois enregistré.
-Avec l'app ouverte, elle vous prévient quand vous êtes à moins de 50 mètres d'un arbre pas encore collectionné.
-À visiter et Collectionnés réunis dans Mes arbres.
+Découvrir suit désormais la saison : voyez quels arbres près de vous sont à leur plus beau ce mois-ci.
+Collectionnez un arbre en le photographiant, puis choisissez lequel c'est.
+Ajoutez un arbre qui n'est pas encore sur la carte.
+Passez à moins de 50 mètres d'un arbre que vous n'avez pas encore collectionné, et l'app vous le signale.
+Vos arbres collectionnés et ceux que vous voulez visiter, réunis dans Mes arbres.
 Ajoutez une photo depuis la page de n'importe quel arbre.
 Défilement plus fluide et de nombreuses petites corrections.
 ```
@@ -286,7 +320,7 @@ Défilement plus fluide et de nombreuses petites corrections.
 Promotional text (170, not indexed, editable any time):
 
 ```
-L'automne est là. Voyez quels vieux arbres près de chez vous sont à leur plus beau ce mois-ci, et allez en voir un avant que les feuilles tombent.
+L'automne est là, et les vieux arbres autour de vous sont à leur plus beau. Trouvez-en un qui vaut le détour avant que les feuilles tombent.
 ```
 
 
@@ -315,33 +349,34 @@ Description:
 ```
 Algunos árboles de tu ciudad ya estaban ahí antes que la ciudad. Ancient Trees te lleva hasta ellos.
 
-Ábrela donde estés y el mapa se llena con los árboles a tu alrededor: un tejo que ya era viejo cuando se levantó la iglesia de al lado, un plátano cuyo tronco necesita cuatro personas para rodearlo, un roble que ha visto todo lo que ha pasado en su calle. Cada árbol tiene su página: qué es, cuántos años tiene aproximadamente y por qué merece el paseo.
+Abre el mapa estés donde estés y encuentra los árboles viejos y singulares a tu alrededor: un tejo más antiguo que la iglesia de al lado, un plátano que hacen falta cuatro personas para abrazar, un roble que ha visto todo lo que ha pasado en su calle. Cada árbol tiene su página: qué es, cuántos años tiene más o menos y por qué merece el paseo.
 
-LO QUE ENCUENTRAS
+ENCONTRAR
+• Los árboles viejos cerca de ti, en un mapa
+• Busca por lugar, especie o nombre
+• Indicaciones hasta el tronco
 
-Árboles cerca de ti, en un mapa que puedes buscar por lugar, por especie o por nombre.
+DESCUBRIR
+• Los árboles en su mejor momento este mes, estés donde estés
+• Los árboles más viejos, más altos y más gruesos
+• Ciudades de árboles de todo el mundo
 
-Una historia para cada árbol, honesta con lo que nadie sabe: donde la edad nunca se ha medido, la página lo dice y te lo pregunta.
+COLECCIONAR
+• Fotografía un árbol frente al que estás para añadirlo a tu colección
+• Lleva una lista de los árboles que quieres visitar
+• Añade un árbol que aún no está en el mapa
 
-Cómo llegar hasta el tronco. Donde la ubicación es aproximada, la página lo avisa antes de que salgas.
-
-Tu propia colección. Fotografía un árbol mientras estás delante y pasa a ser uno de tus árboles, los nuestros y los que añades tú.
-
-DE DÓNDE SALEN LOS ÁRBOLES
-
-Los catálogos oficiales de árboles protegidos y monumentales se leen directamente. Las fotos llevan su licencia abierta y su crédito.
-
-La app está en inglés. Una cuenta es una dirección de correo; bórrala y todo se va con ella.
+Todos los árboles se pueden explorar gratis, y no hay anuncios.
 ```
 
 What's new:
 
 ```
-Mira qué árboles cerca de ti están en su mejor momento este mes: Descubrir sigue ahora la estación donde estás, con los récords y las mejores ciudades de árboles.
-Colecciona un árbol fotografiándolo: haz una foto, elige qué árbol es y listo.
-Añade un árbol que aún no tenemos, con una confirmación al guardarlo.
-Con la app abierta, te avisa cuando estás a menos de 50 metros de un árbol que aún no has coleccionado.
-Quiero visitar y Coleccionados juntos en Mis árboles.
+Descubrir sigue ahora la estación: mira qué árboles cerca de ti están en su mejor momento este mes.
+Colecciona un árbol fotografiándolo y luego elige cuál es.
+Añade un árbol que aún no está en el mapa.
+Pasa a menos de 50 metros de un árbol que no has coleccionado y la app te avisa.
+Tus árboles coleccionados y los que quieres visitar, juntos en Mis árboles.
 Añade una foto desde la página de cualquier árbol.
 Desplazamiento más rápido y muchas pequeñas correcciones.
 ```
@@ -349,7 +384,7 @@ Desplazamiento más rápido y muchas pequeñas correcciones.
 Promotional text (170, not indexed, editable any time):
 
 ```
-Llegó el otoño. Mira qué árboles viejos cerca de ti están en su mejor momento este mes y acércate a uno antes de que caigan las hojas.
+Llegó el otoño y los árboles viejos a tu alrededor están en su mejor momento. Encuentra uno que merezca el paseo antes de que caigan las hojas.
 ```
 
 
@@ -378,33 +413,34 @@ Description:
 ```
 Alcuni alberi della tua città c'erano già prima della città. Ancient Trees ti porta da loro.
 
-Aprila ovunque ti trovi e la mappa si riempie degli alberi intorno a te: un tasso che era già vecchio quando fu costruita la chiesa accanto, un platano il cui tronco richiede quattro persone per essere abbracciato, una quercia che ha visto tutto ciò che è accaduto nella sua via. Ogni albero ha la sua pagina: che cos'è, quanti anni ha all'incirca, e perché vale la camminata.
+Apri la mappa ovunque ti trovi e trova gli alberi secolari e straordinari intorno a te: un tasso più antico della chiesa accanto, un platano che servono quattro persone per abbracciare, una quercia che ha visto tutto ciò che è successo nella sua strada. Ogni albero ha la sua pagina: che cos'è, quanti anni ha più o meno e perché vale la passeggiata.
 
-COSA TROVI
+TROVA
+• Gli alberi secolari vicino a te, su una mappa
+• Cerca per luogo, specie o nome
+• Le indicazioni fino al tronco
 
-Gli alberi vicino a te, su una mappa che cerchi per luogo, per specie o per nome.
+SCOPRI
+• Gli alberi al loro meglio questo mese, ovunque tu sia
+• Gli alberi più antichi, più alti e più grandi
+• Città degli alberi in tutto il mondo
 
-Una storia per ogni albero, onesta su ciò che nessuno sa: dove l'età non è mai stata misurata, la pagina lo dice e lo chiede a te.
+COLLEZIONA
+• Fotografa un albero davanti a cui ti trovi per aggiungerlo alla tua collezione
+• Tieni una lista degli alberi che vuoi visitare
+• Aggiungi un albero che non è ancora sulla mappa
 
-La strada fino al tronco. Dove la posizione è approssimativa, la pagina lo dice prima che tu parta.
-
-La tua collezione. Fotografa un albero mentre gli stai davanti ed entra fra i tuoi alberi, i nostri e quelli che aggiungi tu.
-
-DA DOVE VENGONO GLI ALBERI
-
-Gli elenchi ufficiali degli alberi monumentali e protetti sono letti direttamente. Le foto portano la loro licenza aperta e il loro credito.
-
-L'app è in inglese. Un account è un indirizzo e-mail; cancellalo e tutto se ne va con lui.
+Ogni albero si può esplorare gratis, e non ci sono pubblicità.
 ```
 
 What's new:
 
 ```
-Scopri quali alberi vicino a te sono al loro meglio questo mese: Scopri ora segue la stagione dove ti trovi, con i record e le più belle città degli alberi.
-Colleziona un albero fotografandolo: scatta una foto, scegli quale albero è, fatto.
-Aggiungi un albero che non abbiamo ancora, con una conferma quando è salvato.
-Con l'app aperta, ti avvisa quando sei a meno di 50 metri da un albero che non hai ancora collezionato.
-Da visitare e Collezionati insieme in I miei alberi.
+Scopri ora segue la stagione: guarda quali alberi vicino a te sono al loro meglio questo mese.
+Colleziona un albero fotografandolo, poi scegli quale è.
+Aggiungi un albero che non è ancora sulla mappa.
+Passa a meno di 50 metri da un albero che non hai ancora collezionato e l'app te lo dice.
+I tuoi alberi collezionati e quelli che vuoi visitare, insieme in I miei alberi.
 Aggiungi una foto dalla pagina di qualsiasi albero.
 Scorrimento più veloce e tante piccole correzioni.
 ```
@@ -412,7 +448,7 @@ Scorrimento più veloce e tante piccole correzioni.
 Promotional text (170, not indexed, editable any time):
 
 ```
-È arrivato l'autunno. Scopri quali alberi secolari vicino a te sono al loro meglio questo mese e raggiungine uno prima che cadano le foglie.
+È arrivato l'autunno e gli alberi secolari intorno a te sono al loro meglio. Trovane uno che valga la passeggiata prima che cadano le foglie.
 ```
 
 
@@ -441,33 +477,34 @@ Description:
 ```
 Algumas árvores da sua cidade já lá estavam antes da cidade. A Ancient Trees leva-o até elas.
 
-Abra a aplicação onde estiver e o mapa enche-se com as árvores à sua volta: um teixo que já era velho quando a igreja ao lado foi construída, um plátano cujo tronco precisa de quatro pessoas para ser abraçado, um carvalho que viu tudo o que aconteceu na sua rua. Cada árvore tem a sua página: o que é, que idade tem aproximadamente, e porque vale a caminhada.
+Abra o mapa onde estiver e encontre as árvores antigas e notáveis à sua volta: um teixo mais velho do que a igreja ao lado, um plátano que são precisas quatro pessoas para abraçar, um carvalho que viu tudo o que aconteceu na sua rua. Cada árvore tem a sua página: o que é, que idade tem mais ou menos e porque merece o passeio.
 
-O QUE ENCONTRA
+ENCONTRAR
+• As árvores antigas perto de si, num mapa
+• Pesquise por local, espécie ou nome
+• Direções até ao tronco
 
-Árvores perto de si, num mapa que pesquisa por lugar, por espécie ou por nome.
+DESCOBRIR
+• As árvores no seu melhor este mês, esteja onde estiver
+• As árvores mais antigas, mais altas e mais grossas
+• Cidades de árvores em todo o mundo
 
-Uma história para cada árvore, honesta sobre o que ninguém sabe: onde a idade nunca foi medida, a página di-lo e pergunta-lhe a si.
+COLECIONAR
+• Fotografe uma árvore à sua frente para a juntar à sua coleção
+• Guarde uma lista das árvores que quer visitar
+• Adicione uma árvore que ainda não está no mapa
 
-O caminho até ao tronco. Onde a localização é aproximada, a página avisa antes de sair.
-
-A sua coleção. Fotografe uma árvore enquanto está à frente dela e passa a ser uma das suas árvores, as nossas e as que acrescenta.
-
-DE ONDE VÊM AS ÁRVORES
-
-Os registos oficiais de árvores protegidas e de interesse público são lidos diretamente. As fotografias trazem a sua licença aberta e o seu crédito.
-
-A aplicação está em inglês. Uma conta é um endereço de e-mail; apague-a e tudo vai com ela.
+Todas as árvores são gratuitas para explorar, e não há anúncios.
 ```
 
 What's new:
 
 ```
-Veja que árvores perto de si estão no seu melhor este mês: Descobrir segue agora a estação onde está, com os recordes e as melhores cidades de árvores.
-Colecione uma árvore fotografando-a: tire uma fotografia, escolha qual é a árvore e pronto.
-Adicione uma árvore que ainda não temos, com uma confirmação quando fica guardada.
-Com a app aberta, avisa-o quando está a menos de 50 metros de uma árvore que ainda não colecionou.
-Quero visitar e Colecionadas juntas em As minhas árvores.
+Descobrir segue agora a estação: veja que árvores perto de si estão no seu melhor este mês.
+Colecione uma árvore fotografando-a e depois escolha qual é.
+Adicione uma árvore que ainda não está no mapa.
+Passe a menos de 50 metros de uma árvore que ainda não colecionou e a app avisa-o.
+As árvores que colecionou e as que quer visitar, juntas em As minhas árvores.
 Adicione uma fotografia a partir da página de qualquer árvore.
 Deslocamento mais rápido e muitas pequenas correções.
 ```
@@ -475,7 +512,7 @@ Deslocamento mais rápido e muitas pequenas correções.
 Promotional text (170, not indexed, editable any time):
 
 ```
-O outono chegou. Veja que árvores antigas perto de si estão no seu melhor este mês e vá até uma antes que as folhas caiam.
+O outono chegou e as árvores antigas à sua volta estão no seu melhor. Encontre uma que mereça o passeio antes que as folhas caiam.
 ```
 
 
@@ -504,33 +541,34 @@ Description:
 ```
 あなたの街には、街ができる前から立っている木があります。Ancient Treesがそこへ連れていきます。
 
-どこでも開けば、周りの木が地図に現れます。隣の寺より古い杉、四人がかりでやっと囲める楠、その通りで起きたすべてを見てきた欅。一本ごとにページがあり、何の木か、おおよその樹齢、そしてなぜ足を運ぶ価値があるのかが書かれています。
+どこにいても地図を開けば、周りにある見事な古木が見つかります。隣の教会より古いイチイ、四人でやっと囲めるプラタナス、通りで起きたすべてを見てきたオーク。一本ごとにページがあり、何の木か、おおよその樹齢、そしてなぜ歩いて会いに行く価値があるのかがわかります。
 
-できること
+見つける
+• 近くの古木を地図で
+• 場所・樹種・名前で検索
+• 幹までの道案内
 
-近くの木を、場所・樹種・名前で探せる地図。
+発見する
+• 今月見ごろの木を、どこにいても
+• いちばん古い木、高い木、太い木
+• 世界各地の木の名所の街
 
-一本ごとの物語。誰も知らないことは正直に書きます。樹齢が測られたことのない木は、そう書いてあなたに尋ねます。
+集める
+• 目の前の木を撮影してコレクションに追加
+• 行きたい木をリストに保存
+• まだ地図にない木を追加
 
-幹までの道順。位置がおおよそのときは、出かける前にページがそう伝えます。
-
-あなたのコレクション。木の前で写真を撮れば、その木はあなたの木になります。
-
-木の出どころ
-
-天然記念物や保護樹の公式台帳を直接読んでいます。写真はオープンライセンスとクレジット付きです。
-
-アプリは英語です。アカウントはメールアドレス一つ。削除すればすべて消えます。
+すべての木を無料で見られて、広告はありません。
 ```
 
 What's new:
 
 ```
-近くで今月見ごろの木がわかります。「見つける」が、いまいる場所の季節に合わせて、記録の木や木の名所の街とともに表示します。
-木は写真を撮って集めます。写真を撮って、どの木か選ぶだけ。
-まだ載っていない木を追加でき、保存すると確認が表示されます。
-アプリを開いているとき、まだ集めていない木の50メートル以内に来るとお知らせします。
-「行きたい」と「集めた」を「マイツリー」にまとめました。
+「見つける」が季節に合わせて、近くで今月見ごろの木を表示します。
+木は写真を撮って集めます。撮ったら、どの木かを選ぶだけ。
+まだ地図にない木を追加できます。
+まだ集めていない木の50メートル以内に来ると、アプリがお知らせします。
+集めた木と行きたい木を「マイツリー」にまとめました。
 どの木のページからでも写真を追加できます。
 スクロールが速くなり、細かな改善も多数。
 ```
@@ -538,7 +576,7 @@ What's new:
 Promotional text (170, not indexed, editable any time):
 
 ```
-秋が来ました。近くの古木のうち今月見ごろの木を見つけて、葉が落ちる前に歩いて会いに行きましょう。
+秋が来ました。近くの古木が見ごろを迎えています。葉が落ちる前に、歩いて会いに行く価値のある一本を見つけましょう。
 ```
 
 
