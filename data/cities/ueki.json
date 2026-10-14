@@ -45,7 +45,8 @@
       },
       "verified_sources": [
         "https://kyoju.biodic.go.jp/?_action=gtcontents&_command=column025",
-        "https://jl-db.nfaj.go.jp/en/location/430300008/"
+        "https://jl-db.nfaj.go.jp/en/location/430300008/",
+        "https://kyoju.biodic.go.jp/?_action=gtcontents&_command=column025 (Ministry of the Environment giant tree database: height 30 m, girth 1710 cm, branch spread 50 m)"
       ],
       "access": "Free, no permission needed. The tree stands in Jakushin Ryokuchi, a public green space and park created around it in 1989, formerly surrounding farmland; open ground, walk in freely.",
       "transport": "About 20 minutes on foot from JR Ueki Station on the JR Kagoshima Main Line.",
@@ -58,7 +59,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its above-ground roots, surfacing in shapes locals compare to animals. It stands at the centre of Jakushin Ryokuchi, the park cleared around it in 1989."
+      "how_to_recognise": "You can recognise it by its above-ground roots, surfacing in shapes locals compare to animals. It stands at the centre of Jakushin Ryokuchi, the park cleared around it in 1989.",
+      "official_register": {
+        "name": "Kumamoto Prefecture Natural Monument (1974), Japan Location Database",
+        "url": "https://jl-db.nfaj.go.jp/en/location/430300008/"
+      }
     }
   ]
 }

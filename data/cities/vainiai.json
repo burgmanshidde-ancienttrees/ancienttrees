@@ -44,7 +44,9 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Vaini%C5%B3_tuopa",
-        "https://evendo.com/locations/lithuania/jonava/landmark/vainiu-tuopa"
+        "https://evendo.com/locations/lithuania/jonava/landmark/vainiu-tuopa",
+        "https://lt.wikipedia.org/wiki/Vaini%C5%B3_tuopa (infobox: girth 6.85 m at 1.3 m, height 35.5 m; cadastre linked from that page)",
+        "https://stvk.lt/map/S0310505060001-vainiu-tuopa"
       ],
       "access": "Free, in the remains of a former manor park; a footpath leads to the tree from the nearby road",
       "transport": "In Vainiai, Jonava district, near the KK224 road; rural, best reached by car, no public transport identified",
@@ -64,7 +66,12 @@
         "source_name": "Vainiai poplar",
         "qid": "Q16475062",
         "views": 6
-      }
+      },
+      "official_register": {
+        "name": "Saugomu teritoriju valstybes kadastras (Lithuanian protected areas cadastre), natural monument",
+        "url": "https://stvk.lt/map/S0310505060001-vainiu-tuopa"
+      },
+      "height_m": 35.5
     },
     {
       "id": "vni_002",
