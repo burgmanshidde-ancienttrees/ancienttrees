@@ -546,10 +546,10 @@ Promotional text (170, not indexed, editable any time):
 
 Event name (30), short description (50), long description (120). Badge: New Season.
 Dates: 2026-10-18 to 2026-11-30 (Apple reviews an event separately; a start a few days out leaves room).
-Images, ready in drafts/app-store-event/ in both sizes (1920x1080 card, 1080x1920 details page), Hidde picks one
-(2026-10-14, mockup.html shows them in a search result): autumn-ginkgo, autumn-hill, autumn-oak, all Unsplash
-licence (commercial use, no credit required), ids 9DMp4vE5QdU, 5fDtIbglfjI, zhaO8iXTvRs. The Pando set
-(public domain) stays as the fallback. Text is Hidde's ("Autumn is here; find ancient trees around you").
+Images (Hidde's pick, 2026-10-14): a golden ginkgo against a blue sky, Unsplash lkBussHk6vw (Unsplash licence:
+commercial use, no credit required). Event card drafts/app-store-event/autumn-ginkgo-blue-1920x1080.jpg, event
+details page autumn-ginkgo-blue-1080x1920.jpg; mockup.html shows both. Text is Hidde's ("Autumn is here; find
+ancient trees around you").
 
 ```
 Autumn is here
