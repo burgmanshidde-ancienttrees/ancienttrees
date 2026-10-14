@@ -35,7 +35,7 @@
       "age_estimate": "",
       "age_min": null,
       "age_max": null,
-      "girth_cm": null,
+      "girth_cm": 382,
       "location": {
         "address": "Heuvelke, at a crossing of two hollow roads, about 350m southwest of the Sint-Lambertuskerk, 's-Gravenvoeren, Voeren",
         "latitude": 50.7577654,
@@ -65,6 +65,14 @@
         ],
         "label": "May, when it flowers",
         "kind": "flowers"
+      },
+      "official_register": {
+        "name": "Inventaris Onroerend Erfgoed (Flanders)",
+        "url": "https://inventaris.onroerenderfgoed.be/erfgoedobjecten/132372"
+      },
+      "location_site": {
+        "name": "Heuvelke, crossing of two hollow roads",
+        "radius_m": 25.0
       }
     }
   ]

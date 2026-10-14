@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "port-renfrew+portalegre+prety+ramsau-bei-berchtesgaden+rannee+reyersviller+runa+s-gravenvoeren+sachsenbrunn",
+    "kind": "enrich",
+    "tokens": 74000,
+    "trees": 0,
+    "note": "enrichment: Port Renfrew two giants measured, Portalegre plane girth, Hindenburglinde and Sachsenbrunn linden with June-July best_time, Rannee Inventaire record, Reyersviller girth, s-Gravenvoeren Flemish record with location_site; Prety, Runa nothing; 11 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "ondategi+ora+oyodo+parry-kauri-park+peruc+pianello+pirangi+pisz-forest+plauginiai-forest",
     "kind": "enrich",
     "tokens": 86000,
