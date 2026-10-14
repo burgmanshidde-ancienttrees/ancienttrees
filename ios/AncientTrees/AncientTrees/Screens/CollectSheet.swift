@@ -835,9 +835,12 @@ struct CollectSheet: View {
                     Image(systemName: "plus.circle.fill")
                         .font(.system(size: 22)).foregroundStyle(Brand.moss)
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("None of these")
+                        // The act, not the absence (Hidde, 2026-10-14: "should
+                        // the title be none of these or add a new tree"); a
+                        // button says what it does, the condition goes under.
+                        Text("Add a new tree")
                             .font(.brand(16, .bold)).foregroundStyle(Brand.ink)
-                        Text("Then it is a tree we do not have yet")
+                        Text("It is none of these")
                             .font(.footnote).foregroundStyle(Brand.inkSoft)
                     }
                 }
@@ -1078,10 +1081,15 @@ struct CollectSheet: View {
                 // actually standing between two trees. About a fifth of trees
                 // carry one, so this is conditional and stays quiet otherwise.
                 if !t.howToRecognise.isEmpty {
+                    // Two lines; the whole line is behind ⓘ (Hidde, 2026-10-14:
+                    // "make it shorter"). At six lines a phone showed two
+                    // trees at a time.
                     Text(t.howToRecognise)
                         .font(.footnote)
                         .foregroundStyle(Brand.ink)
                         .multilineTextAlignment(.leading)
+                        .lineLimit(2)
+                        .truncationMode(.tail)
                         .fixedSize(horizontal: false, vertical: true)
                 } else if t.precision == .approximate {
                     // The metres above are measured from a pin that only ever
