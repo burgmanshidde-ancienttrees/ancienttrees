@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "columbia-missouri+concoret+cooper-creek+coos-bay+coromandel-forest-park+crecy-en-ponthieu+debina+den-hout+drnava+dubinne",
+    "kind": "enrich",
+    "tokens": 53000,
+    "trees": 0,
+    "note": "enrichment: Columbia, Concoret, Coos Bay (height and trail-closed access), Debina (CRFOP id), Den Hout (LRMB id via nl.wikipedia), Drnava, Dubinne measurements; Cooper Creek, Coromandel, Crecy searched without result; 8 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "bracon+braga+braziukai+brielow+calvos+canicosa-de-la-sierra+casta+chapel-hill-north-carolina+chishang+cieletniki",
     "kind": "enrich",
     "tokens": 49000,
