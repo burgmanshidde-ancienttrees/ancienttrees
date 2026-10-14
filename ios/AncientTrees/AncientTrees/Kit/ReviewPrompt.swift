@@ -184,7 +184,9 @@ struct ReviewAsk: ViewModifier {
                 BrandSheet(
                     icon: "heart",
                     title: "Are you enjoying Ancient Trees?",
-                    message: "You can tell us what would make it better.",
+                    // Why a rating matters (Hidde, 2026-10-14). Allowed: 5.6.1
+                    // forbids rewarding or requiring a review, not explaining it.
+                    message: "A rating helps other tree lovers find the app.",
                     buttons: [
                         .primary("Yes", id: "review-yes") { asking = false; requestReview() },
                         .secondary("Not really", id: "review-no") { wantsFeedback = true; asking = false },
