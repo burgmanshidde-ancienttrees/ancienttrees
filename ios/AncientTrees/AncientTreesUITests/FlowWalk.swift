@@ -80,6 +80,13 @@ final class FlowWalk: XCTestCase {
     /// The one-line diff sits ready to apply at drafts/ios-floor-retry.patch;
     /// see that file's comment and LOG.md 2026-09-09/13 before spending more
     /// time here.
+    ///
+    /// THE CAUSE, found 2026-10-14: the people flows open their sheet with a
+    /// launch argument, and the sheet's @State started at true, so UIKit was
+    /// asked to present on the first frame and dropped it on a busy runner.
+    /// The button was never coming, which is why no timeout helped. Those
+    /// sheets now go through Kit/LaunchSheet.swift, which asks once the
+    /// screen is up and asks again if the request was dropped.
     private static func tap(_ app: XCUIApplication, _ id: String) {
         let b = app.buttons[id].firstMatch
         _ = b.waitForExistence(timeout: 20)

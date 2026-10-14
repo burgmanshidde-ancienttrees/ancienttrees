@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: the iOS 18 floor is green again
+
+- Fixed: the scheduled iOS app check failed twice on 10-13 on the iOS 18 iPhone SE (FlowWalk could not find Follow in Find people; on the earlier run SignedOutWalk got no sign-in sheet). Cause: screens that tests open with a launch argument (Find people, Contribute, Feedback, Edit profile, Sign out, Species) asked iOS for their sheet on the very first frame, and a busy machine drops that request silently. Reproduced on the Mac under CPU load (failed on try 13 of 40); now raised once the screen is up and asked again if dropped (Kit/LaunchSheet.swift): 40 of 40 under the same load. No effect for readers: these arguments exist only for tests and screenshots.
+- SignedOutWalk.testSeenTickAsks (failed on this Mac) opens the map sheet directly instead of tapping a spot that on the SE lands between the count and the first card.
+- The floor job now keeps its own test results (they were overwritten before upload, so a red run had no screenshot), and a dispatch can rerun named tests on iOS 18 alone in ~25 minutes: `gh workflow run ios.yml -f floor_only=AncientTreesUITests/FlowWalk`.
+- Verified: dispatched run 38541980903, all three jobs green (iOS 18: 223 passed, 0 failed). The brief's "keeps failing on its schedule" clears after the next scheduled run (17:00 UTC) passes.
+- Open: NameTests.testNoAnswerFromTheServerAsksNobody crashed once on this Mac (malloc "pointer being freed was not allocated" in the host app); CI has not seen it.
+
 ## 2026-10-14 session: the About page has a maker
 
 **Live:** /about opens with Hidde's own story (Lisbon, the Palermo ficus, "not an expert, but a fan"), his photo at a Japanese cedar beside it (above it on a phone, EXIF stripped) and info@ancienttrees.app, written by him. The four process sections were cut; one sentence on sources and AI remains. The menu's "Sponsor this project" became "About"; a sponsor button now sits under his story, and Sponsor stays in the footer. Seen live at 375px and desktop, menu open. Blueprint v1.26, DECISIONS.md 2026-10-14; qa allows the first name on /about only.
