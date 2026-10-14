@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "stokaiciai+sunderland-massachusetts+taasinge+tatobity+teleci+tillamook+toga+toul+trainiskis+turku",
+    "kind": "enrich",
+    "tokens": 102000,
+    "trees": 0,
+    "note": "enrichment: Tatobity and Teleci AOPK records with girth and height, Tillamook Oregon Heritage Tree page with height, Toga Natural Monument record, Ambrosius-egen protection record, Stokaiciai register id; found the Stokaiciai pin 12 km off (longitude 22.2215 vs 22.0333 in saugoma.lt and Wikipedia), corrected and set approximate; four dead ends; 4 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "san-quirico-d-orcia+santalfio+scheessel+senica+shimizu+shingu+shinkamigoto+sittard-geleen+stary-smokovec+stelmuze",
     "kind": "enrich",
     "tokens": 70000,
