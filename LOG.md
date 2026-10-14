@@ -21,6 +21,8 @@ Potsdam: pot_010 (Sessile Oak of Paetowstrasse, Naturdenkmal 39, confirmed pin, 
 
 Photo viewing pass 4: 41 images viewed, 5 approved (pot_005 Sacrow oak, pot_006 Bassinplatz oak, pot_008 Schiffbauergasse oak, pot_010 Paetowstrasse oak, stu_007 Hohenheim plane, the weakest: trunk hidden by shrubs), 66 rejected, none held. Reverse one with `python3 scripts/photo_apply.py reject <id> <commons url> --reason "..."`. Pillow is not installed on the runner, so photo_light.py scored nothing and exposure was judged by eye.
 
+Chicago 16 to 21: five Cook County Forest Preserves champion trees (chi_018 to chi_022, Thatcher Woods and National Grove), register-only and flagged, GPS-fix pins confirmed, free sunrise to sunset; chi_016 dropped as a duplicate of chi_019. Remaining ~70 Chicago leads are isolated champions with no cluster near live trees. Miami verify (third pass, no rich tree) filed nothing and is not worth a fourth without a reader photograph at a champion stop.
+
 ## 2026-10-14, retry attempt: nothing published
 
 Released the standing Leipzig claim: its brief shows no imported register within 20 km, and its four written trees (lpz_019, 021, 022, 023) are the kind preflight refuses as not rich. Leipzig is a wall for 48h. The 53 READY leads are thin register rows (Roosendaal, Oss, Munich, Delft and others), refused by the same rule. langcheck has no city over 10 English impressions to translate. No agent dispatched, because no candidate can end rich. Still open: the iOS app workflow failed on 2026-10-14 and its log was not read.

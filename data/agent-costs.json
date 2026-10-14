@@ -11433,6 +11433,22 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "chicago",
+    "kind": "write",
+    "tokens": 192000,
+    "trees": 5,
+    "note": "verify (90k) plus write (102k): Cook County Forest Preserves champion trees chi_018 to chi_022 (Thatcher Woods, National Grove), all register-only and flagged; chi_016 dropped as duplicate of chi_019"
+   },
+   {
+    "date": "2026-10-14",
+    "target": "miami",
+    "kind": "verify",
+    "tokens": 70000,
+    "trees": 0,
+    "note": "third pass with no rich tree: champion rows have no tree-level pin or photo, mostly ticketed gardens; nothing new filed"
+   },
+   {
+    "date": "2026-10-14",
     "target": "photo viewing pass 4: Potsdam, Stuttgart and 17 other cities (43 trees)",
     "kind": "photo",
     "tokens": 158000,

@@ -3,9 +3,9 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "chi_003",
-  "intro": "Chicago is a young city on old prairie, and its oldest trees are the prairie's survivors: bur oaks that stood here before the city had a name. One shaded the Midway while the 1893 World's Fair rose around it, and a Norwood Park savanna remnant may be older than the United States. Out in the county's forest preserves stand ranked champions, among them hackberries and white oaks. The famous zoo oak fell in 2023. Fourteen of the sixteen are free; the two golf-course champions generally need a green fee.",
-  "meta_description": "Chicago's remarkable trees: prairie bur oaks older than the city, and Cook County's forest preserve champions, from hackberries to white oaks.",
-  "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and 15 more remarkable trees.",
+  "intro": "Chicago is a young city on old prairie, and its oldest trees are the prairie's survivors: bur oaks that stood here before the city had a name. One shaded the Midway while the 1893 World's Fair rose around it, and a Norwood Park savanna remnant may be older than the United States. Out in the county's forest preserves stand ranked champions, among them a cottonwood 41.5 metres tall, hackberries, white oaks and a chinkapin oak. The famous zoo oak fell in 2023. Nineteen of the twenty-one are free; the two golf-course champions generally need a green fee.",
+  "meta_description": "Chicago's remarkable trees: prairie bur oaks older than the city, and Cook County's forest preserve champions, from 40-metre cottonwoods to white oaks.",
+  "question_meta": "Chicago's oldest trees are the bur oaks of Union Ridge Cemetery, estimated at 325 to 375 years. Their story, and 20 more remarkable trees.",
   "question_answer": "Chicago's oldest known trees are the bur oaks of the Union Ridge Cemetery savanna in Norwood Park, estimated by one expert survey at 325 to 375 years, older than the United States. The most storied is the bur oak on the Midway Plaisance in Hyde Park, which stood before the 1893 World's Fair was laid out around it.",
   "question_context": "Chicago's relationship with old trees is mostly a story of what the prairie kept. The city itself is young, incorporated in 1837, and it burned in 1871, so almost nothing planted stands out for age. What survives is what was already here: bur oaks, the prairie's fire-resistant veterans, in the few corners the city never quite got around to flattening. The best known of them, the bur oak at Lincoln Park Zoo that generations called Chicago's oldest tree, was cut down in May 2023 after it died, which quietly promoted the others. The Midway oak in Hyde Park carries a genuine dispute, one university account says it was planted for the 1893 fair, others say the fair was built around it, and its page gives both versions. The Union Ridge savanna's ages rest on a single expert's estimate and say so. That honesty matters here more than in most cities, because the register Illinois keeps for its champion trees records size, not age, and so does the county's own; a champion is not automatically ancient.",
   "faq": [
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are Chicago's remarkable trees free to visit?",
-      "a": "Fourteen of the sixteen are free. The Midway oak and the Wooded Island grove stand in public parks, Union Ridge is a cemetery open in daylight hours, and the forest preserve champions stand on public preserve land. The champion boxelder and the champion red pine stand on public golf courses, where a green fee is generally needed to walk the course; ask at the clubhouse."
+      "a": "Nineteen of the twenty-one are free. The Midway oak and the Wooded Island grove stand in public parks, Union Ridge is a cemetery open in daylight hours, and the forest preserve champions stand on public preserve land. The champion boxelder and the champion red pine stand on public golf courses, where a green fee is generally needed to walk the course; ask at the clubhouse."
     },
     {
       "q": "Why are they almost all bur oaks?",
@@ -604,6 +604,186 @@
         ],
         "label": "October, when the pin oak turns dark red to russet",
         "kind": "autumn colour"
+      }
+    },
+    {
+      "id": "chi_018",
+      "name": "The Cottonwood of Thatcher Woods",
+      "species": "Eastern Cottonwood (Populus deltoides)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 594,
+      "height_m": 41.5,
+      "location": {
+        "address": "Entrance on Chicago Ave, west of Thatcher Ave, River Forest, IL 60305, Forest Preserves of Cook County",
+        "latitude": 41.898841,
+        "longitude": -87.832668,
+        "neighbourhood": "Thatcher Woods"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=45&outFields=*&f=json",
+        "https://fpdcc.com/places/locations/thatcher-woods/"
+      ],
+      "access": "Free. Forest Preserves of Cook County: open year-round, sunrise to sunset (preserve page: fpdcc.com/places/locations/thatcher-woods/, read via Wayback 2025 copy).",
+      "transport": "Entrance Chicago Ave west of Thatcher Ave, River Forest; public transport not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "At 41.5 metres, this cottonwood is the tallest tree anyone has measured on our Chicago map, and the Forest Preserves of Cook County still rank it only second among their cottonwoods.\n\nThe trunk is just as far out of scale. Measured in July 2023, it is 5.94 metres round, the thickest recorded girth on this page. The crown is far from round: about 28 metres one way and only 17 the other. Somewhere else on preserve land stands a cottonwood the register puts ahead of it.\n\nIt also anchors the best short walk on the page. About 130 metres to the north stands the county's second-ranked silver maple, and just beyond it the two ranked hackberries, the champion and its taller runner-up. A third-ranked bitternut hickory stands about 400 metres to the south-east. That is five register trees inside roughly 600 metres of the same woods.\n\nThe nearest rival in size is another cottonwood, at National Grove about seven kilometres south: 5.82 metres round, 39 metres tall, and ranked third.\n\nEverything here comes from one source, the county's champion tree register, which records size, rank and place. It says nothing about age. Nobody has dated this cottonwood. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by its size, 41.5 metres tall on a trunk 5.94 metres round, the biggest of the ranked trees in Thatcher Woods. It stands about 130 metres south of the second-ranked silver maple.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, record 45",
+        "url": "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=45&outFields=*&f=json"
+      }
+    },
+    {
+      "id": "chi_019",
+      "name": "The Second-Ranked Hackberry of Thatcher Woods",
+      "species": "Common Hackberry (Celtis occidentalis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 335,
+      "height_m": 39.0,
+      "location": {
+        "address": "Entrance on Chicago Ave, west of Thatcher Ave, River Forest, IL 60305, Forest Preserves of Cook County",
+        "latitude": 41.900247,
+        "longitude": -87.832372,
+        "neighbourhood": "Thatcher Woods"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=307&outFields=*&f=json",
+        "https://fpdcc.com/places/locations/thatcher-woods/"
+      ],
+      "access": "Free. Forest Preserves of Cook County: open year-round, sunrise to sunset (preserve page: fpdcc.com/places/locations/thatcher-woods/, read via Wayback 2025 copy).",
+      "transport": "Entrance Chicago Ave west of Thatcher Ave, River Forest; public transport not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This hackberry stands 2.4 metres taller than the county's champion hackberry, 66 metres away, and the register still ranks it second.\n\nAt 39 metres, 128 feet, it is the tallest of the three hackberries at the top of the Forest Preserves of Cook County's champion register. The champion beats it everywhere else: 3.51 metres round against this tree's 3.35, and a crown about 22 metres across both ways against this one's 19.5 by 15.5. The register crowns the stout tree, not the tall one.\n\nFor a sense of what 39 metres means for the species, the only other common hackberry we have measured, the Leaning Hackberry of Parco Treves in Padua, is 9 metres tall. This one is more than four times that.\n\nThe pair is the reason to come. Stand between them and you see one species on one patch of ground grown two ways, one taller and one stouter. The county's second-ranked silver maple stands about 30 metres to the south, and the second-ranked cottonwood, at 41.5 metres the one ranked tree here taller still, about 160 metres south.\n\nThe register gives no date for this measurement and no age. It is the only source for the tree. Nobody has dated this hackberry. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by its height, 39 metres, taller and slimmer than the champion hackberry 66 metres away. It stands about 30 metres north of the second-ranked silver maple.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, record 307",
+        "url": "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=307&outFields=*&f=json"
+      }
+    },
+    {
+      "id": "chi_020",
+      "name": "The Bitternut Hickory of Thatcher Woods",
+      "species": "Bitternut Hickory (Carya cordiformis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 192,
+      "height_m": 34.1,
+      "location": {
+        "address": "Entrance on Chicago Ave, west of Thatcher Ave, River Forest, IL 60305, Forest Preserves of Cook County",
+        "latitude": 41.89596,
+        "longitude": -87.829652,
+        "neighbourhood": "Thatcher Woods"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=20&outFields=*&f=json",
+        "https://fpdcc.com/places/locations/thatcher-woods/"
+      ],
+      "access": "Free. Forest Preserves of Cook County: open year-round, sunrise to sunset (preserve page: fpdcc.com/places/locations/thatcher-woods/, read via Wayback 2025 copy).",
+      "transport": "Entrance Chicago Ave west of Thatcher Ave, River Forest; public transport not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This bitternut hickory stands 34 metres tall on a trunk only 1.92 metres round, about 61 centimetres across.\n\nThat is a lot of tree on a slim stem. The Forest Preserves of Cook County measured it in November 2023 and ranked it third among the bitternut hickories on their land. Its height, 34.1 metres, matches the third-ranked hackberry at National Grove to the decimetre, on a trunk little more than half that tree's girth.\n\nBitternut is a tree we rarely get to show. The only other one on our map grows in Ottawa's Dominion Arboretum, where it was planted between 1886 and 1890 and no girth is recorded. This one has measurements and no history; that one has history and no measurements.\n\nIn Thatcher Woods it sits at the south-east end of the preserve's ranked trees: about 400 metres from the second-ranked cottonwood and about 580 metres from the champion hackberry. Walk the group from north to south and the hickory is where you finish.\n\nThe county's champion register is the only source for it. It records size, rank and the measurement date, and nothing on age. Nobody has dated this hickory. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by the slender trunk, 1.92 metres round, on a tree 34 metres tall. It stands about 400 metres south-east of the second-ranked cottonwood, the southernmost of the ranked trees in Thatcher Woods.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, record 20",
+        "url": "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=20&outFields=*&f=json"
+      }
+    },
+    {
+      "id": "chi_021",
+      "name": "The Chinkapin Oak of National Grove",
+      "species": "Chinkapin Oak (Quercus muehlenbergii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 372,
+      "height_m": 29.3,
+      "location": {
+        "address": "National Grove North entrance W 26th St east of 1st Ave, North Riverside, IL 60546, Forest Preserves of Cook County",
+        "latitude": 41.841289,
+        "longitude": -87.82926,
+        "neighbourhood": "National Grove"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=230&outFields=*&f=json",
+        "https://fpdcc.com/places/locations/national-grove/"
+      ],
+      "access": "Free. Forest Preserves of Cook County: open year-round, sunrise to sunset (preserve page: fpdcc.com/places/locations/national-grove/, read via Wayback 2025 copy).",
+      "transport": "North entrance W 26th St east of 1st Ave, North Riverside; public transport not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This is the only chinkapin oak on our map, and it happens to be the biggest one the Forest Preserves of Cook County have found on all their land.\n\nThe county measured it in July 2024 and ranked it first of its species in their champion tree register. Its trunk is 3.72 metres round, and it stands 29.3 metres tall, exactly the height of the county's champion white oak at Red Gate Woods. Its crown spreads about 25 metres one way and 23 the other, close to round, a fraction narrower than the champion pin oak's at Rolling Knolls.\n\nThe point of coming to National Grove is that it does not stand alone. About 240 metres to the south is the county's third-ranked hackberry, and about 125 metres beyond that the third-ranked cottonwood, 5.82 metres round and 39 metres tall. Three ranked trees of three different species in under 400 metres make this the second walk on the page, after Thatcher Woods to the north.\n\nOf those three, the oak is the only champion. That title is about size on preserve land, not age, and the register keeps no age for any of its trees. It is also the only source for this one. Nobody has dated this oak. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it as the only oak among National Grove's ranked trees, a trunk 3.72 metres round under a crown about 25 by 23 metres. It stands about 240 metres north of the third-ranked hackberry.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, record 230",
+        "url": "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=230&outFields=*&f=json"
+      }
+    },
+    {
+      "id": "chi_022",
+      "name": "The Cottonwood of National Grove",
+      "species": "Eastern Cottonwood (Populus deltoides)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 582,
+      "height_m": 39.0,
+      "location": {
+        "address": "National Grove North entrance W 26th St east of 1st Ave, North Riverside, IL 60546, Forest Preserves of Cook County",
+        "latitude": 41.838197,
+        "longitude": -87.830776,
+        "neighbourhood": "National Grove"
+      },
+      "verified_sources": [
+        "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=47&outFields=*&f=json",
+        "https://fpdcc.com/places/locations/national-grove/"
+      ],
+      "access": "Free. Forest Preserves of Cook County: open year-round, sunrise to sunset (preserve page: fpdcc.com/places/locations/national-grove/, read via Wayback 2025 copy).",
+      "transport": "North entrance W 26th St east of 1st Ave, North Riverside; public transport not verified.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Ranked only third among Cook County's forest preserve cottonwoods, this tree has a trunk 5.82 metres round, the thickest recorded on our Chicago map bar one.\n\nThe exception is its rival at Thatcher Woods, about seven kilometres north. The two are close enough to be twins on paper: 12 centimetres of girth and 2.5 metres of height between them, this one at 39 metres, 128 feet, and the Thatcher tree at 41.5. The register still sets a full ranked place between them.\n\nTo see how far out of line these cottonwoods are, set this one beside the oaks. The thickest white oak on this page, the county's second-ranked tree at McClaughrey Springs Woods, is 4.76 metres round, more than a metre thinner. The champion chinkapin oak a few hundred metres north of here manages 3.72.\n\nThe Forest Preserves of Cook County measured it on 21 December 2023, the same day as the third-ranked hackberry, which stands about 125 metres to the north-north-east. With the chinkapin oak beyond that, it makes the southern end of a short line of three ranked trees in National Grove.\n\nThe register is the only source for this tree, and it records size and rank but not age. Nobody has dated this cottonwood. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.82 metres round, far thicker than the hackberry nearby, on a tree 39 metres tall. It stands about 125 metres south-south-west of the third-ranked hackberry.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Forest Preserves of Cook County Champion Tree Register, record 47",
+        "url": "https://services2.arcgis.com/I5Or36sMcO7Y9vQ3/arcgis/rest/services/Forest_Preserve_Champion_Tree_Public_view/FeatureServer/0/query?objectIds=47&outFields=*&f=json"
       }
     }
   ]
