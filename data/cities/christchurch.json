@@ -49,10 +49,13 @@
       "access": "Free. Christchurch Botanic Gardens, open daily, no entry fee.",
       "transport": "Central Christchurch, short walk from Cathedral Square / Christchurch city centre (Rolleston Ave entrance); on the central city bus network.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/561714584/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Jenny Saito, via iNaturalist",
+        "status": "held",
+        "note": "Eucalypt with ribbony upper bark fits the species, but a straight forked trunk, not the corkscrew twisted gum; no geotag; may be another gum",
+        "width": 281,
+        "height": 500
       },
       "photos": [],
       "curation_status": "flagged",
@@ -84,10 +87,14 @@
       "access": "Free. Christchurch Botanic Gardens, open daily, no entry fee.",
       "transport": "Central Christchurch, short walk from Cathedral Square via Rolleston Avenue; on the central city bus network.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/270650516/medium.jpg",
+        "license": "CC0",
+        "attribution": "no rights reserved, via iNaturalist",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-14",
+        "width": 500,
+        "height": 375
       },
       "photos": [],
       "curation_status": "flagged",

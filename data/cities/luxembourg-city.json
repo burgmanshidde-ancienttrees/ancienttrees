@@ -229,10 +229,13 @@
       "access": "Free, in the public Parc Amelie",
       "transport": "Royal-Hamilius tram stop, ~8 min walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/535411286/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Christophe, via iNaturalist",
+        "status": "held",
+        "note": "One sequoia browned (likely the dying felled one) beside a green one; survivor not settled",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
