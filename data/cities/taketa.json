@@ -1,0 +1,71 @@
+{
+  "city": "Taketa",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Taketa maps one stop for now: Noike, a spring-fed park in Kuju on the Kuju plateau, opened in 1873 as one of the first public parks in Japan and named a national scenic site in 2025. Two giant cedars flank the torii at its entrance, and Japan's forest tree breeding centre lists the shrine's cedar at about 800 years old and 41 metres tall. The pond beside them is fed by two volcanic springs that stay at 12 to 13 degrees all year.",
+  "meta_description": "The cedars of Noike Shrine in Kuju, Taketa: a giant cedar about 800 years old and 41 m tall at the torii of a spring-fed park opened in 1873.",
+  "question_meta": "Taketa's mapped tree is the cedar of Noike Shrine in Kuju, listed at about 800 years old, 41 metres tall and 7.2 metres round.",
+  "question_answer": "The tree mapped at Taketa is the cedar of Noike Shrine, in Noike Park in Kuju. Japan's forest tree breeding centre lists it at an estimated 800 years old, 41 metres tall and 7.2 metres round. Two giant cedars flank the torii at the park entrance.",
+  "question_context": "Noike was a shrine to a water deity long before it became a park. It opened as a public park in 1873, under the government decree that created Japan's first parks, and in March 2025 the national government designated it a scenic site. The park is small, about 250 metres from end to end, and a third of it is a pond fed by two springs from the volcanic Kuju plateau, which keep the water at 12 to 13 degrees in every season. Old cedars, tabu trees and Japanese andromeda grow along its banks. At the entrance a torii stands between two giant cedars. Japan's forest tree breeding centre lists the shrine's cedar at an estimated 800 years, 41 metres tall and 7.2 metres round; no second source gives an age, so the figure stays an estimate. The same centre runs a gene bank for giant trees, growing young trees from cuttings or grafts at an owner's request, and in March 2008 it returned young cedars grown from this one to the shrine. The park is free, and the drive from Bungo-Taketa Station takes about 25 minutes.",
+  "hero_tree_id": "tkt_001",
+  "oldest_tree_id": "tkt_001",
+  "faq": [
+    {
+      "q": "Where are the cedars of Noike Shrine?",
+      "a": "At the entrance to Noike Park in Kuju, Taketa, Oita Prefecture, where a torii stands between two giant cedars."
+    },
+    {
+      "q": "How old is the cedar?",
+      "a": "Japan's forest tree breeding centre gives an estimated 800 years for the shrine's cedar. No second source gives an age, so treat it as an estimate."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "By car: about 25 minutes from Bungo-Taketa Station on the JR Hohi Line."
+    }
+  ],
+  "trees": [
+    {
+      "id": "tkt_001",
+      "name": "The Cedars of Noike Shrine",
+      "species": "Japanese Cedar (Cryptomeria japonica)",
+      "age_estimate": "roughly 800 years (one source)",
+      "age_min": 700,
+      "age_max": 900,
+      "age_basis": "source",
+      "girth_cm": 720,
+      "height_m": 41.0,
+      "location": {
+        "address": "Noike Park entrance, at the torii, Kuju-machi Shirani, Taketa, Oita Prefecture",
+        "latitude": 33.04572,
+        "longitude": 131.299653,
+        "neighbourhood": "Kuju, Taketa"
+      },
+      "location_precision": "approximate",
+      "pin_source": "GPS of our own photograph at the torii, 2026-09-16, and an app sighting 13 m away the same day",
+      "verified_sources": [
+        "https://www.ffpri.affrc.go.jp/kyuiku/business/documents/satogaeri_r3.pdf (Forest Tree Breeding Center, Kyushu Regional Breeding Office, gene bank 'satogaeri' list: 納池神社のスギ, Kuju-machi, Taketa, estimated 800 years, height 41 m, girth 7.2 m; successor trees returned 2008-03-15)",
+        "https://online.bunka.go.jp/heritages/detail/545024 (Agency for Cultural Affairs: 納池, national scenic site designated 2025-03-10, a spring site and an early park under a Dajokan decree)",
+        "https://www.mlit.go.jp/tagengo-db/H30-01297.html (Japan Tourism Agency multilingual text: park opened 1873, shrine to a water deity, torii flanked by two giant cedars, two volcanic springs at 12 to 13 C)",
+        "https://www.visit-oita.jp/spots/detail/6031 (old cedars around the spring pond; 25 minutes by car from Bungo-Taketa Station)",
+        "https://www.pref.oita.jp/site/archive/200615.html (Oita Prefecture: old cedars, andromeda (asebi) and tabu trees along the spring pond)",
+        "https://ooitanoyama.in.coocan.jp/sub4115.html (photographs of the park's sign: about 250 m north to south, a third of it spring pond)",
+        "On-site visit 2026-09-16: the cedar photographed beside the torii, position from the photograph's GPS"
+      ],
+      "access": "Free, a public park with no gate or ticket; the cedars stand at the torii at the park entrance.",
+      "transport": "Car: about 25 minutes from Bungo-Taketa Station (JR Hohi Line). No bus route was confirmed.",
+      "curation_status": "flagged",
+      "verify_notes": "The breeding centre's figures (800 years, 41 m, 7.2 m) are for the shrine's cedar (納池神社のスギ) and do not say which of the two torii cedars that is; the page treats the pair as one stop and says so. Age has one source only. A local site's 'about 500 years' belongs to a different cedar, at Miyadokoro Shrine, and is not used. Added on Hidde's call 2026-10-14 as an exception to the four-tree pause ('nee doe 1'); his own photograph from the 2026-09-16 visit.",
+      "story": "Noike was a shrine to a water deity before it was anything else. In 1873 it became a public park under the government decree that created Japan's first parks, one of the earliest in the country, and in 2025 the national government named it a scenic site. Two springs from the volcanic Kuju plateau feed its pond, and they run at 12 to 13 degrees in every season.\n\nThe torii at the park entrance stands between two giant cedars. Japan's forest tree breeding centre lists the shrine's cedar at an estimated 800 years, 41 metres tall and 7.2 metres round, which no second source confirms, so take the age as an estimate. The same centre runs a gene bank for giant trees: at an owner's request it grows young trees from cuttings or grafts, keeps some and gives some back. In March 2008 it returned young cedars grown from this one to the shrine.\n\nThe park is small, about 250 metres from end to end, and a third of it is water. Stand at the torii and look up: the cedar's crown spreads far above the bamboo grove beside it. Old cedars, tabu trees and Japanese andromeda line the pond behind.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/tkt_001-noike-shrine-cedars.jpg",
+        "license": "Own photograph",
+        "attribution": "Ancient Trees",
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 9
+      },
+      "how_to_recognise": "You can recognise it as one of the two giant cedars that flank the torii at the entrance to Noike Park, with a bamboo grove beside it."
+    }
+  ]
+}
