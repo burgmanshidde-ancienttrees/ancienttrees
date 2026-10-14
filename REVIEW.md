@@ -13,6 +13,20 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-14
+
+Web half: read the rebuilt /about (d82aab58) in site/dist, and sampled amsterdam, seattle, bruges, riga, kimotsuki and riga/kaltini-oak. No em dashes, no surname on /about, no leaked code in the text of the pages sampled.
+
+- WARN /about ("Where the trees come from"): "The stories are written with AI and corrected by people who know the trees." DECISIONS.md 2026-10-14 declined "drafted by AI, checked by humans" because no person checks every story before it ships; "corrected by people who know the trees" reads as the same promise (hard rule 2 spirit, CLAUDE.md "every claim true of the product"). Suggest "and readers who know the trees correct them".
+- WARN verified_sources entries with an annotation after the URL keep appearing in the enrichment passes of the last day (data/cities/jerceni.json:52 "https://lv.wikipedia.org/wiki/... (circumference 9.2 to 9.4 m ...)", data/cities/cooper-creek.json:52 "https://trusttrees.org.au/... (National Trust ... last measured 1 Oct 2014)"). Same family as the 2026-10-13 Roosendaal finding: the href contains spaces and a parenthesis, so the Sources link breaks. A grep finds the pattern in 250+ city files. Suggest `enrich.py --apply` split the URL from the note (note to `verify_notes`) and qa refuse a source string with a space after a URL.
+- NOTE /about: the page says "Every tree page has a button to tell me what's wrong or to add your photo"; the built tree page I opened (riga/kaltini-oak) shows "Add a photo", and I did not find a separate what's-wrong button in its text. Worth a check that both exist on every tree page.
+
+## 2026-10-14 (app half)
+
+App half could not run: /tmp/appshots-list.txt is empty and /tmp/appshots-note.txt says "no screenshots under /tmp/appshots".
+
+---
+
 ## 2026-10-13
 
 Web half: read the new Roosendaal pages as built (copper beech of Nispen cemetery, Julianalinde, the London plane of De Kring in the data) and the Copenhagen FAQ edit (cf54927a, 98729e46: 41 + 8 = 49 trees, the counts agree; the built copenhagen/index.html in site/dist still carries the older text, so that page was read from data/cities). No em dashes or banned words in site/dist/roosendaal.
