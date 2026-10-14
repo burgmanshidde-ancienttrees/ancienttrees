@@ -1,5 +1,9 @@
 # Decisions
 
+## 2026-10-14: the About page has a maker, in his own words
+
+A tree expert in Cologne answered our missing-tree mail that he could find nothing about who makes the site, and wanted to talk about data quality before helping. Hidde: "misschien is het toch maar eens een idee om een goede about pagina met een gezicht te maken", then "alleen hidde lijkt me genoeg" and "ik denk dat het beter is dat ik deze pagina zelf schrijf". The page now opens with his story (Lisbon's parks, the Palermo ficus, "not an expert, but a fan"), his photo at a Japanese cedar, and info@ancienttrees.app. This partly reverses the 2026-07-28 privacy ruling: first name and the project address only, no surname, Organization schema unchanged. The reason is trust with the people we write to, not ranking. The process sections were cut ("less is more"); the AI disclosure stays as one true sentence, after his "drafted by AI, checked by humans" was declined because no person checks every story before it ships. Blueprint v1.26; qa's check_no_owner_name() allows the first name on /about only.
+
 ## 2026-10-13: copy is checked by whoever writes it
 
 Rewriting the ambassador mails, the first draft asked people to "add or remove trees" (they cannot, they can only tell us), had a comma splice, a tense slip ("are on the list since we last wrote") and thanked twice. Hidde had to ask for the copy check: "please dont make me ask to copy check yourself when you are writing copy". Rule in CLAUDE.md under Copy layers: a session reads its own copy for grammar, tense, repetition and truth about the product before showing it. mailcheck/copycheck/pitchcheck enforce rules; they do not read for sense.

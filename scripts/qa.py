@@ -1185,14 +1185,23 @@ def check_no_owner_name():
     exists so that stays true the day somebody writes an about line, a terms
     page or a press quote in a hurry. The reader's own name is a separate rule
     with its own history and is not this check's business.
+
+    One page is excepted, by his own choice: on 2026-10-14 he wrote the About
+    page himself, "Hi, I'm Hidde" with his photo ("alleen hidde lijkt me
+    genoeg"), because a tree expert we wrote to could find nothing about who
+    makes this. So his FIRST name may render on /about and nowhere else; the
+    surname stays refused on every page, that one included.
     """
     out = []
     hits = []
     pattern = re.compile(r"\bHidde\b|\bBurgmans\b", re.I)
+    surname = re.compile(r"\bBurgmans\b", re.I)
     for page in sorted(DIST.rglob("*.html")):
         scan = PageScan()
         scan.feed(page.read_text(encoding="utf-8"))
-        if pattern.search(" ".join(scan.text_parts)):
+        rel = page.relative_to(DIST).as_posix()
+        rule = surname if rel in ("about.html", "about/index.html") else pattern
+        if rule.search(" ".join(scan.text_parts)):
             hits.append(str(page.relative_to(DIST)))
     if hits:
         out.append("%d page(s) render the owner's personal name, which is never "

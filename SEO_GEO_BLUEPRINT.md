@@ -1,5 +1,5 @@
 # SEO_GEO_BLUEPRINT.md — Ancient Trees
-Version 1.25 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
+Version 1.26 — Owner: Hidde. No page ships without conforming to this document. Changes require Hidde's explicit approval and a version bump with changelog entry (bottom of file).
 
 This document has two layers with different lifespans. Layer 1 (Principles) should almost never change. Layer 2 (Page Contracts) changes rarely and only via versioning. Volatile tactics (current keyword targets, AI-citation trends, measurement results) do NOT belong here — they live in CLAUDE.md and CURATION.md.
 
@@ -142,6 +142,8 @@ The index at `/parks` uses the same browse-card grid as `/cities` and `/species`
 ### Contract E — About page  `/about`
 
 Named person, short bio, why this exists, one verifiable external link (LinkedIn or equivalent). Person schema with sameAs. This page exists for entity verification as much as for readers.
+
+**As shipped (v1.26, 2026-10-14):** first name only, written by the owner himself: his story, his photograph, and the project address info@ancienttrees.app. No surname, no external profile, and the site-level entity stays the Organization (P5). Below it one short section on where the trees and stories come from, with the AI disclosure in one sentence and the link to /sources.
 
 ### Contract I — Press page  `/press`
 
@@ -328,6 +330,7 @@ The hypothesis order, checked in Search Console: (1) question pages show impress
 
 ## CHANGELOG
 
+- **v1.26 (2026-10-14):** Contract E (About) reopens in a narrow form on Hidde's instruction in session ("alleen hidde lijkt me genoeg", then "bouw"). He wrote the page himself after a tree expert answered our outreach that he could find nothing about who makes the site. First name, photograph (EXIF stripped) and the project address only; P5's Organization entity and the no-surname rule stand. qa's check_no_owner_name() allows the first name on /about and nowhere else.
 - **v1.25 (2026-10-04):** The noindex list's tree criterion (v1.23's data/noindex.json, group 4) asks whether a reader could FIND the tree rather than whether its pin is surveyed. Approved by Hidde in session ("voer dat door"), sitewide. A tree page stays indexed with a usable photograph, a confirmed pin, or a pin on a small named site (`location_site`, radius at most 50 m, a place taken in at one glance and never a park or campus) together with a recognition line. The rule lives once in scripts/findable.py, read by thin_pages.py and by preflight's refusal of new trees, so the index and the publishing gate cannot disagree.
 - **v1.24 (2026-10-01):** Contract A takes the per-tree Sources list back, approved by Hidde in session ("punt 1 klinkt als een goed idee") after Google's 09-28 demotion. v1.21 removed it as web-only noise on 09-24, four days before the drop. Google's own self-assessment asks whether content shows "clear sourcing", and its rater guidelines rate main content produced at scale with little visible effort lowest: the sources are the visible evidence that each story was checked against two independent sources. Rendered by the shared TreeDetail component, so every language gets it, below the getting-there block.
 - **v1.23 (2026-10-01):** P9 no longer promises every content page is indexable. Approved by Hidde in session ("start with point 1 to 4") after Google demoted the whole site on 09-28, most likely under the September 2026 spam update and its scaled-content rule. `data/noindex.json`, written by scripts/thin_pages.py, takes 7,744 of 12,923 pages out of the index: the 7,019 fallback language pages (English text on a /de/, /es/ ... URL, live since 09-17), the place and question pages of 355 places holding one to three trees (their tree pages stay indexed, because the tree page carries the story; places with a destination tree or real impressions are kept), and question pages Search Console never showed, which share about 45 percent of their text with every other question page. Pages stay live and keep their URLs (hard rule 3); a noindexed page canonicalises to itself, leaves sitemap.xml, and is listed in a temporary sitemap-recrawl.xml so Google sees the change sooner. Undo by emptying `paths`.
