@@ -38,7 +38,16 @@ on:
       - 'scripts/appfit.py'
       - 'scripts/appsweep.py'
       - 'scripts/layout_rules.py'
+  # `floor_only` reruns ONLY the named tests on the iOS 18 floor and skips
+  # every other job and step: a floor failure reproduced in about 25 minutes
+  # rather than the full two hours (2026-10-14, FlowWalk on iOS 18).
+  # Example: AncientTreesUITests/FlowWalk,AncientTreesUITests/SignedOutWalk
   workflow_dispatch:
+    inputs:
+      floor_only:
+        description: 'Comma-separated test ids to run on the iOS 18 floor only'
+        required: false
+        default: ''
 
   # TWICE A DAY, WHATEVER ELSE HAPPENS, and this is the piece that was missing.
   #
@@ -73,6 +82,7 @@ concurrency:
 
 jobs:
   test:
+    if: inputs.floor_only == '' || inputs.floor_only == null
     runs-on: macos-15
     # Measured on the green run of 2026-08-29, step by step, because the old
     # figures here were a year of screens out of date and were the reason the
@@ -349,6 +359,7 @@ jobs:
   # they lived there. Running in parallel keeps that property and stops the
   # slow half deciding whether the fast half gets to report.
   look:
+    if: inputs.floor_only == '' || inputs.floor_only == null
     runs-on: macos-15
     timeout-minutes: 75
     steps:
@@ -509,6 +520,8 @@ jobs:
       # the same reason as above: two apps launching at once on this runner
       # measures the runner rather than the app.
       - name: Build and test on the floor
+        env:
+          FLOOR_ONLY: ${{ inputs.floor_only }}
         run: |
           set -o pipefail
           UDID=$(python3 -c "
@@ -518,22 +531,38 @@ jobs:
           print(appsweep.udid_for(*d))
           ")
           echo "udid=$UDID"
+          # Which tests: all of them, or only floor_only's from a dispatch.
+          if [ -n "$FLOOR_ONLY" ]; then
+            WHICH=""
+            for t in $(echo "$FLOOR_ONLY" | tr ',' ' '); do
+              WHICH="$WHICH -only-testing:$t"
+            done
+          else
+            WHICH="-skip-testing:AncientTreesUITests/SweepFrames -skip-testing:AncientTreesUITests/RefusedWalk"
+          fi
+          echo "tests: $WHICH"
+          # ITS OWN RESULT BUNDLE, outside /tmp/dd. appfit and appsweep run
+          # xcodebuild into /tmp/dd afterwards and the suite's bundle was gone
+          # by the time it was uploaded: the 2026-10-13 artifact held two
+          # one-test bundles and not the one that failed, so a red floor came
+          # with no screenshot of what it saw.
+          rm -rf /tmp/floor.xcresult
           xcodebuild test \
             -project ios/AncientTrees/AncientTrees.xcodeproj \
             -scheme AncientTrees \
             -destination "id=$UDID" \
             -derivedDataPath /tmp/dd \
+            -resultBundlePath /tmp/floor.xcresult \
             -retry-tests-on-failure -test-iterations 2 \
             -parallel-testing-enabled NO \
-            -skip-testing:AncientTreesUITests/SweepFrames \
-            -skip-testing:AncientTreesUITests/RefusedWalk \
+            $WHICH \
             > /tmp/floor.log 2>&1 || true
           grep -E "Test case|error:|\*\* (TEST|BUILD)" /tmp/floor.log | tail -40 || true
 
       - name: Verdict
         run: |
-          R=$(ls -td /tmp/dd/Logs/Test/*.xcresult 2>/dev/null | head -1)
-          if [ -z "$R" ]; then
+          R=/tmp/floor.xcresult
+          if [ ! -d "$R" ]; then
             echo "no test results were produced on the floor"
             tail -60 /tmp/floor.log || true
             exit 1
@@ -557,8 +586,17 @@ jobs:
       # the device and puts them back, so it cannot share a run with tests that
       # expect a working location. Running it inside the suite is exactly the
       # mistake that produced a false "iOS 18 is broken" on 2026-08-31.
-      - name: What happens when somebody says no, on iOS 18
+      - name: Keep the floor suite's result bundle
         if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcresult-ios18-suite-${{ github.run_id }}
+          path: /tmp/floor.xcresult
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: What happens when somebody says no, on iOS 18
+        if: always() && (inputs.floor_only == '' || inputs.floor_only == null)
         run: |
           UDID=$(python3 -c "
           import sys; sys.path.insert(0, 'scripts')
@@ -569,15 +607,15 @@ jobs:
           python3 scripts/refused.py --udid "$UDID"
 
       - name: Does it line up on iOS 18
-        if: always()
+        if: always() && (inputs.floor_only == '' || inputs.floor_only == null)
         run: python3 scripts/appfit.py --os 18
 
       - name: Photograph every screen on iOS 18
-        if: always()
+        if: always() && (inputs.floor_only == '' || inputs.floor_only == null)
         run: python3 scripts/appsweep.py --no-build --os 18 --device "iPhone SE (sweep)" || true
 
       - name: Keep the floor's screenshots
-        if: always()
+        if: always() && (inputs.floor_only == '' || inputs.floor_only == null)
         uses: actions/upload-artifact@v4
         with:
           name: appsweep-ios18-${{ github.run_id }}
@@ -586,7 +624,7 @@ jobs:
           if-no-files-found: warn
 
       - name: Keep the floor's result bundle
-        if: always()
+        if: always() && (inputs.floor_only == '' || inputs.floor_only == null)
         uses: actions/upload-artifact@v4
         with:
           name: xcresult-ios18-${{ github.run_id }}
