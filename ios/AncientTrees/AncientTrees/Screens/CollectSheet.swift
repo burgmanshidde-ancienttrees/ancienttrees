@@ -559,9 +559,16 @@ struct CollectSheet: View {
         shot = image
         at = here
         fix = source
+        // ALWAYS ASK WHICH ONE when any of ours stands near (Hidde,
+        // 2026-10-14: "more often than not when in a park multiple trees are
+        // 80m distance, so is it safer to just show the other screen first
+        // where people can pick?"). confident() used to tick the nearest off
+        // in silence. The list costs one tap, puts the nearest first, and
+        // keeps "None of these" in reach, so an unmapped tree photographed
+        // beside one of ours becomes a new tree instead of a wrong tick.
+        // iNaturalist suggests and you confirm; Google Maps asks which place.
+        // Only a tree you came from (`known`, the tree page) is claimed directly.
         if let t = known {
-            claim(t, image: image, at: here)
-        } else if Self.mayClaimWithoutAsking(source), let t = Self.confident(origin: here, trees: catalogue.trees) {
             claim(t, image: image, at: here)
         } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty {
             startDraft()
@@ -1119,7 +1126,7 @@ struct CollectSheet: View {
             sheetMessage(subtitle(t))
             if newFind, let first = Self.firstOf(tree: t, visited: saved.entries,
                                                  trees: catalogue.trees) {
-                milestone(first).padding(.top, 18)
+                milestone(first).padding(.top, 12)
             }
             // THE ONE MOMENT THIS QUESTION CAN BE ASKED HONESTLY. Somebody is
             // standing in front of a tree we already map, having just found
@@ -1161,12 +1168,9 @@ struct CollectSheet: View {
                 }
             }
             .padding(.top, 22)
-            // What we may do with a photograph lives in the terms, not on this
-            // screen (Hidde, 2026-10-12: "it shouldnt mention what we do with
-            // photos, that is in the terms"). It replaces the on-screen line
-            // of 2026-09-02; /terms "What you send us" says it in full.
-            sheetFootnote(newFind ? "It is in your trees now, with your photograph."
-                                  : "It is with this tree in your trees.")
+            // No footnote (Hidde, 2026-10-14: "it is in your trees now with
+            // photograph clutters, less is more"): the title already says it.
+            // What we may do with a photograph lives in the terms (2026-10-12).
         }
     }
 
@@ -1208,19 +1212,15 @@ struct CollectSheet: View {
 
     /// A first is marked rather than narrated: one row, the project's own
     /// green, and no exclamation mark doing the work a fact should do.
+    /// Centred under the subtitle, in the sheet's own column, no box (Hidde,
+    /// 2026-10-14: "doesnt seem to be designed that well", "less is more"). It
+    /// was a left-aligned card in a bold face on a centred sheet.
     private func milestone(_ line: String) -> some View {
-        HStack(alignment: .top, spacing: 10) {
-            Image(systemName: "rosette")
-                .font(.system(size: 18, weight: .semibold))
-                .foregroundStyle(Brand.moss)
-            Text(line)
-                .font(.brand(15, .bold))
-                .foregroundStyle(Brand.ink)
-                .fixedSize(horizontal: false, vertical: true)
-        }
-        .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Brand.surface, in: .rect(cornerRadius: 14))
+        Label(line, systemImage: "rosette")
+            .font(.system(size: 15, weight: .semibold))
+            .foregroundStyle(Brand.moss)
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
     }
 
     private func subtitle(_ t: Tree) -> String {

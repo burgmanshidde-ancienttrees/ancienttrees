@@ -249,7 +249,7 @@ struct ContentView: View {
     /// An approximate pin never fires, because "40 m" is a promise it cannot
     /// keep.
     private func checkNearby() {
-        guard locationState.known, navigator.beginWalk == nil,
+        guard locationState.known, navigator.beginWalk == nil, rootSheet == nil,
               let cat = store.catalogue,
               let hit = cat.nearest(to: origin.lat, origin.lng, limit: 1, withinKm: 0.05).first,
               hit.tree.precision == .confirmed,
@@ -573,7 +573,9 @@ struct ContentView: View {
                 }
                 .overlay(alignment: .bottom) { SnackBar() }
                 .overlay(alignment: .top) {
-                    if let n = nearby {
+                    // Not over a sheet: with the camera open the banner sat on
+                    // top of "You found" for the very tree it named (2026-10-14).
+                    if let n = nearby, rootSheet == nil {
                         NearbyBanner(tree: n.tree, meters: n.meters,
                                      open: {
                                          withAnimation { nearby = nil }
