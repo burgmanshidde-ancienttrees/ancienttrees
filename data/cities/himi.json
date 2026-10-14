@@ -50,7 +50,8 @@
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E8%80%81%E8%B0%B7%E3%81%AE%E5%A4%A7%E3%83%84%E3%83%90%E3%82%AD",
         "https://www.city.himi.toyama.jp/gyosei/soshiki/hakubutsukan/bunkazai/1749.html",
-        "https://www.pref.toyama.jp/1603/kurashi/sportsleisure/leisure/kj00000696/kj00000696-039-01.html"
+        "https://www.pref.toyama.jp/1603/kurashi/sportsleisure/leisure/kj00000696/kj00000696-039-01.html",
+        "https://www.city.himi.toyama.jp/gyosei/soshiki/hakubutsukan/bunkazai/1749.html (height 7.5 m; the page's girth 3.89 m does not say where it was measured, so left out)"
       ],
       "access": "Free, no ticket. Stands inside a small community hillside graveyard at the far end of Oidani hamlet, an ordinary open village burial ground rather than anyone's private garden; both government sources give a plain address and neither mentions a gate, fee or restriction. Very remote: about 18km from Himi's city centre, close to the Ishikawa Prefecture border, up a side valley off the Oidani river.",
       "transport": "From JR Himi Line's Himi Station: taxi about 35 minutes, or Kaetsunou bus to the Shimo-Iwase stop then about 30 minutes on foot.",
@@ -73,7 +74,11 @@
         "height": 4000,
         "taken_month": 9
       },
-      "how_to_recognise": "You can recognise it by splitting into three thick trunks less than a metre up, their branches tangled back together into a mass solid enough to sit on. It stands in a hillside graveyard at the end of Oidani hamlet."
+      "how_to_recognise": "You can recognise it by splitting into three thick trunks less than a metre up, their branches tangled back together into a mass solid enough to sit on. It stands in a hillside graveyard at the end of Oidani hamlet.",
+      "official_register": {
+        "name": "Toyama Prefecture Natural Monument (Himi City cultural properties record)",
+        "url": "https://www.city.himi.toyama.jp/gyosei/soshiki/hakubutsukan/bunkazai/1749.html"
+      }
     },
     {
       "id": "him_002",
@@ -93,7 +98,8 @@
         "https://www.city.himi.toyama.jp/gyosei/soshiki/hakubutsukan/bunkazai/2147.html",
         "https://toyama-bunkaisan.jp/en/search/2201/",
         "https://ja.wikipedia.org/wiki/上日寺のイチョウ",
-        "https://www.hokkoku.co.jp/articles/-/1927165"
+        "https://www.hokkoku.co.jp/articles/-/1927165",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/948"
       ],
       "access": "Free, within the grounds of Jonichiji Temple, a functioning Koyasan Shingon Buddhist temple next to Asahiyama Park. National Natural Monument since 20 October 1926, so the grounds are a maintained public/visitable site; no entry fee or restriction found.",
       "transport": "About 20 minutes on foot from Himi Station (JR West Himi Line).",
@@ -118,6 +124,10 @@
         "width": 3456,
         "height": 5184,
         "taken_month": 7
+      },
+      "official_register": {
+        "name": "Natural Monument (Agency for Cultural Affairs, National Cultural Properties Database)",
+        "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/948"
       }
     }
   ]

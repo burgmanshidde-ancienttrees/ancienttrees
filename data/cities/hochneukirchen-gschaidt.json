@@ -42,7 +42,9 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Wiener_Neustadt (reproduces the Land Niederösterreich register row WB-032: ND, designated 1938-05-08, Tilia platyphyllos per Commons category, ca. 650 yrs, 20 m high, crown 16 m, girth 5.4 m, cadastral plot 1888/1, coords 47.456945/16.199255)",
         "https://commons.wikimedia.org/wiki/Category:N%C3%96-Naturdenkmal_WB-032_Sommerlinde_in_Hochneukirchen",
-        "https://commons.wikimedia.org/wiki/File:AlteLinde_Hochneukirchen.jpg"
+        "https://commons.wikimedia.org/wiki/File:AlteLinde_Hochneukirchen.jpg",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Wiener_Neustadt",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Wiener_Neustadt (reproduces the Land NOe register row WB-032: 20 m high, crown 16 m; the stem circumference 5.4 m has no stated height of measurement, so left out)"
       ],
       "access": "Free. Stands at a village street (Lindenstraße) in Hochneukirchen; Naturdenkmal sign on the tree, photographed from public ground (Commons 2014 and 2025). Not checked against private plot boundary beyond that.",
       "transport": "Not checked: rural village on the Styria/Burgenland border; car is the realistic way (no timetable verified).",
@@ -60,7 +62,11 @@
         "attribution": null,
         "status": "missing"
       },
-      "photos": []
+      "photos": [],
+      "official_register": {
+        "name": "Naturdenkmal Niederoesterreich (Land Niederoesterreich, Abteilung Naturschutz), no. WB-032",
+        "url": null
+      }
     }
   ]
 }

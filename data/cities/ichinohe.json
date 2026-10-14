@@ -63,7 +63,14 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by the steel trellis supporting it since a 1954 typhoon split the trunk, with a small Benzaiten shrine at its base. It stands next to Kozuya Elementary School, Ichinohe."
+      "how_to_recognise": "You can recognise it by the steel trellis supporting it since a 1954 typhoon split the trunk, with a small Benzaiten shrine at its base. It stands next to Kozuya Elementary School, Ichinohe.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "label": "late May, when the wisteria blooms and the festival is held on the last Sunday",
+        "kind": "flowers"
+      }
     },
     {
       "id": "ich_002",
@@ -82,7 +89,8 @@
       },
       "verified_sources": [
         "https://www.town.ichinohe.iwate.jp/kanko_bunka_sports/kanko_tokusan/6/2672.html",
-        "https://ja.wikipedia.org/wiki/%E5%AE%9F%E7%9B%B8%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6"
+        "https://ja.wikipedia.org/wiki/%E5%AE%9F%E7%9B%B8%E5%AF%BA%E3%81%AE%E3%82%A4%E3%83%81%E3%83%A7%E3%82%A6",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/144"
       ],
       "access": "Free, on the grounds of Jissoji Temple, a working temple in Ichinohe town",
       "transport": "In Ichinohe town centre, about 6km from the town's other mapped tree, the Wisteria of Fujishima.",
@@ -110,6 +118,10 @@
         "source_name": "Jissoji no Icho",
         "qid": "Q113877814",
         "views": 18
+      },
+      "official_register": {
+        "name": "Natural Monument (Agency for Cultural Affairs, National Cultural Properties Database)",
+        "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/144"
       }
     }
   ]
