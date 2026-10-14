@@ -11,6 +11,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: the collect flow, from Hidde's test
+
+- Saving a tree you added: a confirmation sheet ("Added to your trees", its name, Done) before the page; was a 1.5 s HUD he never saw.
+- Camera near our trees: always "Which one is it?" now, no silent match (parks have several trees inside 80 m). Only a camera opened from a tree page claims directly.
+- "Which one is it?": "Add a new tree" (under it "It is none of these") replaces "None of these"; recognition lines cut to two lines, full line behind the compare button.
+- "You found": no footnote, milestone line centred, "I am not sure it was this one" removed (you picked the tree a tap before).
+- The near-a-tree banner hides while a sheet is open.
+- All in the simulator; FlowWalk updated. Not yet on his phone.
+
 ## 2026-10-14 night run, 09:13 window
 
 - Visits last 7 days: 1,350. Rung 1 empty, rung 2 clear (health.py), so rung 4 enrichment.
