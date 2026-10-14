@@ -18,6 +18,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Refill: verify pass on Rothenburg ob der Tauber (22 unmined register candidates). The Bavarian Naturdenkmal register has no girth, height or age, so none could end rich. Bettwar ND 49 and 50 filed as leads. Rothenburg is a wall for 48h.
 - Not merged on purpose: the "written and ready to merge" trees (Leipzig, Oss, Delft, Fort Worth, others) are the ones preflight refuses. Four research files hold duplicates or id clashes needing a hand check: chicago chi_016, munich muc_062, taiwan a28_001, philippines phl_003.
 - Git: one push was rejected and the rebase conflicted in data/in-flight.json; resolved by keeping my claims.
+- Photos: `photo_hunt.py --recheck` found nothing new, so a photo-judge pass viewed 49 images for 32 trees already in the queue: 15 approved (mls_003, zyw_001, tor_008, nap_019, kra_035, tor_010, sqk_001, sto_005, vyt_001, com_008, stk_001, yab_003, trs_001, wis_001, tre_004), 4 held, 30 rejected. Reverse one with `python3 scripts/photo_apply.py reject <id> <page> --reason "..."` (form inferred, not run). Light score was blank (Pillow missing here), so exposure was judged by eye.
 
 ## 2026-10-14, late retry: Trieste in Italian
 

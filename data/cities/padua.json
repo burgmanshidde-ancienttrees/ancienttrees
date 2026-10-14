@@ -190,10 +190,13 @@
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Orto_botanico_di_Padova_-_magnolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Bultro, via Wikimedia Commons",
+        "status": "held",
+        "note": "Magnolia trunk with label in Orto Botanico; label unreadable at this size, crown mostly cut off; identity not settled",
+        "width": 2160,
+        "height": 2880
       },
       "paid_entry": true,
       "how_to_recognise": "You can recognise it by its wide evergreen crown, about 13 metres across, with huge cream flowers opening a few at a time. It stands in the Orto Botanico, not the Basilica's magnolia 300 metres away.",
@@ -501,10 +504,13 @@
       "curation_status": "flagged",
       "story": "Padua's botanical garden has two ginkgos worth stopping for, and both carry the same odd trick: a female branch grafted onto a male tree, so a single trunk produces the messy, foul-smelling fruit that an all-male ginkgo never would. The more famous of the pair is dated to 1750. This is the second, the register's own 'Ginko dell'Orto Botanico n. 2', a separate three-metre-round tree with no planting date of its own on record.\n\nGinkgo biloba is dioecious, meaning a tree is born strictly male or strictly female, and European gardens have grafted female branches onto male specimens since at least the 18th century, partly out of curiosity and partly because male trees were what nurseries could reliably supply. Both of Padua's ginkgos wear the graft, which makes this garden an unusually direct place to see the trick performed twice.\n\nSeventeen metres tall on a three-metre girth, it stands within a stone's throw of the garden's better-known ginkgo, inside grounds that require standard admission. Nobody has recorded when it went in. If you know, say so.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/382212862/medium.jpg",
+        "license": "CC BY-SA",
+        "attribution": "lejones417, via iNaturalist",
+        "status": "held",
+        "note": "Ginkgo in Orto Botanico, but the garden has two registered ginkgos and the iNat file has no geotag",
+        "width": 375,
+        "height": 500
       },
       "paid_entry": true,
       "best_time": {

@@ -168,10 +168,14 @@
       ],
       "curation_status": "ai_generated",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Olmo_montano_monumentale_%28Trento%29_%2895279%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ivanbranco, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-14",
+        "width": 3072,
+        "height": 4080
       },
       "height_m": 30.5,
       "verify_notes": "Height 30.5 m from the italy-masaf register, matched on our own pin (0 m away). Register number from Elenco degli alberi monumentali d'Italia (MASAF) no. 22/L378/TN/22 (data/registers/italy-masaf.json), matched on our pin at 0 m (register_match.py, 2026-10-12).",

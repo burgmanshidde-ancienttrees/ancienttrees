@@ -365,10 +365,14 @@
       "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Platano_piazza_camerlata_como.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "FrangeCe, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-14",
+        "width": 1920,
+        "height": 2560
       },
       "how_to_recognise": "You can recognise it by its trunk, 4.3 metres round, standing in the middle of the square where Como's traffic converges. It stands in Piazzale Camerlata.",
       "official_register": {
