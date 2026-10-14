@@ -8894,6 +8894,9 @@
    "measurement": "2026-10-14",
    "season": "2026-10-14"
   },
+  "xho_001": {
+   "season": "2026-10-14"
+  },
   "yab_002": {
    "access": "2026-10-13"
   },
@@ -8967,6 +8970,15 @@
    "season": "2026-10-13",
    "register": "2026-10-13"
   },
+  "zaa_002": {
+   "pin": "2026-10-14"
+  },
+  "zaa_003": {
+   "season": "2026-10-14"
+  },
+  "zad_001": {
+   "season": "2026-10-14"
+  },
   "zar_001": {
    "register": "2026-10-13",
    "pin": "2026-10-13",
@@ -8990,17 +9002,23 @@
   },
   "zar_006": {
    "pin": "2026-10-13",
-   "measurement": "2026-10-13"
+   "measurement": "2026-10-13",
+   "season": "2026-10-14"
   },
   "zar_007": {
    "pin": "2026-10-13",
-   "measurement": "2026-10-13"
+   "measurement": "2026-10-13",
+   "season": "2026-10-14"
   },
   "zeh_001": {
    "measurement": "2026-10-14",
    "season": "2026-10-14"
   },
   "zil_001": {
+   "register": "2026-10-14",
+   "season": "2026-10-14"
+  },
+  "zrz_001": {
    "register": "2026-10-14",
    "season": "2026-10-14"
   },
@@ -9059,6 +9077,10 @@
   },
   "zwo_019": {
    "season": "2026-10-11"
+  },
+  "zyw_001": {
+   "measurement": "2026-10-14",
+   "register": "2026-10-14"
   }
  },
  "_note": "Dead ends per tree and gap: a pass briefed on this tree looked for this and found nothing, on this date. Expires after 90 days. Written by scripts/enrich.py --apply / --done, read by --next; a city stays in the queue until every gap is closed or dead-ended."

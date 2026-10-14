@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "xhoris+yvignac-la-tour+zaanstad+zadeikoniai+zaragoza+zarzecze+zywiec+aachen",
+    "kind": "enrich",
+    "tokens": 84000,
+    "trees": 0,
+    "note": "enrichment: Xhoris Wallonia inventory record, Yvignac yew girth and churchyard location_site, Zadeikoniai cadastre entry with measurements, Aachen Forster Linde Naturdenkmal record; Zywiec, Zarzecze, Zuiddijk no source; 10 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "vales+vassununga+veryn+viljandi+vir+visnova+waipoua-forest+wojslawice+wuppertal",
     "kind": "enrich",
     "tokens": 58000,

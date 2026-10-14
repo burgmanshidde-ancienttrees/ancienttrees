@@ -25,6 +25,8 @@ Fifth pass: santa-maria-del-tule+schlagsdorf+schlettau+seja+sliven+soreze+sremsk
 
 Sixth pass: tata+telgte+toba+tombeboeuf+trollskogen+tullamore+ueki+urvaste+vainiai+valentin-tineo. Seven trees improved with a record link or girth and height (Tata, Toba, Ueki, Vainiai, Valentin, Tullamore, Urvaste). Telgte and Trollskogen had no citable source. The agent did not research Tombeboeuf, yet `--apply` dead-ended its gaps for 90 days: a retry of Tombeboeuf (pin, register) is worth a look before then. 15 gaps dead-ended. Preflight 0 problems.
 
+Eighth pass: xhoris+yvignac-la-tour+zaanstad+zadeikoniai+zaragoza+zarzecze+zywiec+aachen. Four trees improved: the Xhoris lime (Wallonia heritage inventory record), the Yvignac yew (girth and a 40 m churchyard location_site; its "Arbre remarquable" register link is only the commune's page), the Žadeikoniai oak (Lithuanian cadastre id, measurements quoted from pasvalia.lt), and Aachen's Forster Linde (city Naturdenkmal page, base girth left out). Zywiec, Zarzecze and the Zuiddijk beech found nothing; 10 gaps dead-ended. That is the end of the unproven-city enrich list for now. Preflight 0 problems.
+
 Seventh pass: vales+vassununga+veryn+viljandi+vir+visnova+waipoua-forest+wojslawice+wuppertal. Four trees improved: Tāne Mahuta and Te Matua Ngahere (NZ Tree Register records, 2002 laser girth and height), the Wojsławice beech (girth and height from the city of Wrocław), the Viljandi oak access line. I dropped the agent's chestnut-season best_time for Vales, since no source ties that tree to the harvest. Wuppertal, Vír, Višňová, Veryn and Vassununga were researched with no citable record; 15 gaps dead-ended. Preflight 0 problems.
 
 ## 2026-10-14 session: the digest leaves our own Google searches out

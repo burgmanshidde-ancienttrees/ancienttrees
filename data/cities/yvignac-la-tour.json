@@ -42,7 +42,8 @@
       "verified_sources": [
         "https://krapooarboricole.wordpress.com/2010/11/16/if-millenaire-yvignac-la-tour-cotes-darmor/",
         "https://fr.wikipedia.org/wiki/Liste_des_arbres_remarquables_des_C%C3%B4tes-d'Armor",
-        "https://yvignac.fr/a-la-decouverte-dyvignac-la-tour/"
+        "https://yvignac.fr/a-la-decouverte-dyvignac-la-tour/",
+        "https://krapooarboricole.wordpress.com/2010/11/16/if-millenaire-yvignac-la-tour-cotes-darmor/ (yew stands near the church; commune: https://yvignac.fr/a-la-decouverte-dyvignac-la-tour/)"
       ],
       "access": "Free, standing behind the parish church; ordinary churchyard access, no restriction.",
       "transport": "No station; reached by car, near Dinan in Cotes-d'Armor.",
@@ -63,6 +64,14 @@
         ],
         "label": "September to November: red arils on female trees, the only part that is not poisonous",
         "kind": "fruit"
+      },
+      "official_register": {
+        "name": "Arbre remarquable de France (association A.R.B.R.E.S.)",
+        "url": "https://yvignac.fr/a-la-decouverte-dyvignac-la-tour/"
+      },
+      "location_site": {
+        "name": "Eglise Saint-Malo churchyard, Yvignac-la-Tour",
+        "radius_m": 40.0
       }
     }
   ]
