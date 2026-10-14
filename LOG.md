@@ -27,6 +27,8 @@ London 27 to 29: lon_028 the Carshalton Plane (39.6 m, 7.6 m girth, Forestry Com
 
 Seattle 16 to 19: sea_017 Roanoke Park white elm, sea_018 Ross Playground bigleaf maple, sea_019 Wallingford pin oak (SDOT Heritage register rows in free parks, register-only, flagged, pins are the register's coordinates). San Francisco: nothing can end rich (Public Works list has no per-tree record, measurement or coordinate); walled.
 
+Heidelberg and Regensburg: nothing publishable; the Naturdenkmal sources give no girth or height and only map-centre coordinates. Unblock: a municipal Baumkataster export or a reader's measurement (Commons photos exist for the Heidelberg Aukopf and Muenchelstrasse oaks and the Regensburg Tegernheimer oak). Window total: Roosendaal +3, Oss reopened (5), Potsdam +1, Chicago +5, London +2, Seattle +3 = 19 trees, 5 photographs approved.
+
 ## 2026-10-14, retry attempt: nothing published
 
 Released the standing Leipzig claim: its brief shows no imported register within 20 km, and its four written trees (lpz_019, 021, 022, 023) are the kind preflight refuses as not rich. Leipzig is a wall for 48h. The 53 READY leads are thin register rows (Roosendaal, Oss, Munich, Delft and others), refused by the same rule. langcheck has no city over 10 English impressions to translate. No agent dispatched, because no candidate can end rich. Still open: the iOS app workflow failed on 2026-10-14 and its log was not read.

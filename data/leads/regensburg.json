@@ -103,6 +103,54 @@
    "latitude": 49.0168306,
    "longitude": 12.0821109,
    "reason": "Designated 8 December 2003, has a dated (2024) Commons photo, but the address geocodes to a private residential building (OSM tags it 'residential'). Moved to blocked rather than shipped; see blocked list. Left here too as a pointer in case a future pass finds evidence the ensemble is street-visible or on a public verge."
+  },
+  {
+   "name": "Tegernheimer Eiche (ND 3), Tegernheimer Keller",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. Decree 27 Oct 1937, entrance to the Tegernheimer Keller (Schwabelweis, parcel 1030 1/9); a Commons caption says about 400 years, unsourced. Has a Commons photo (2014). Needs girth and exact pin; access to the beer-cellar entrance unconfirmed.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus from name"
+  },
+  {
+   "name": "Martha-Linde (ND 28), Ziegetsdorfer Höhe",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. Named lime; no coordinate, no age, no second source found.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus from name"
+  },
+  {
+   "name": "Linde an der Ziegetsdorfer Höhe (ND 27)",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. Corner Vitus-/Karl-Stieler-Strasse; no coordinate, no age.",
+   "species": "Lime (Tilia sp.)",
+   "species_basis": "genus from name"
+  },
+  {
+   "name": "2 Eichen an der Friedenstrasse (ND 29), Evangelischer Friedhof entrance",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. Cemetery gate is a possible small named site, but no girth, no coordinate, no photo found.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus from name"
+  },
+  {
+   "name": "Saeuleneiche (ND 48), Alte Nuernberger Strasse",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. Columnar oak; no coordinate or measurement found.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus from name"
+  },
+  {
+   "name": "Unterislinger Eichen (ND 50), Papstwiese",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. East of Stadlerstrasse 11 near Papstwiese; no coordinate or measurement.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus from name"
+  },
+  {
+   "name": "Wutzlhofener Eiche (ND 51) and Baumgruppe Wutzlhofen (ND 49)",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. Opposite Wutzlhofen 42 and at Wutzlhofen 16; village setting, access and pin unconfirmed.",
+   "species": "Oak (Quercus sp.)",
+   "species_basis": "genus from name"
+  },
+  {
+   "name": "Blutbuche (ND 44) Ligastrasse 34 and Haengebuch-Blutbuche (ND 47) Kumpfmuehler Strasse 3",
+   "reason": "City ND list (de.wikipedia Liste der Naturdenkmäler in Regensburg, Stand 2020; ND-SicherungsVO 2007) gives no girth or height and the city publishes no per-tree record, so the page cannot end rich. Street-address trees, likely private grounds (same pattern as the blocked ND 42, 55, 56, 57); no evidence of public access.",
+   "species": "Beech (Fagus sylvatica)",
+   "species_basis": "from name"
   }
  ],
  "blocked": [

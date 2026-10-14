@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "heidelberg+regensburg",
+    "kind": "verify",
+    "tokens": 135000,
+    "trees": 0,
+    "note": "no girth or height in any Naturdenkmal source for either city, register coordinates are map-centre derived; leads filed (2 Heidelberg, 8 Regensburg); both walled"
+   },
+   {
+    "date": "2026-10-14",
     "target": "seattle",
     "kind": "write",
     "tokens": 150000,
