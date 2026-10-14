@@ -21,8 +21,8 @@ Johannes Kepler, geotagged, taken 2026-10-13.
 What happened on our side before this goes out: the cactus is live as sev_044,
 The Cardón of the Expo, pin confirmed from his photo's GPS. It was in Seville's
 2022 tree catalogue (ficha 27) but blocked on private ownership; his photo shows
-it on an open street corner. His photograph is on the page, uncredited (Hidde,
-2026-10-14: a photo mailed to us is ours to use).
+it on an open street corner. His photograph is on the page, uncredited, and the
+reply asks if that is ok (Hidde, 2026-10-14).
 
 Send from info@ancienttrees.app, in the existing thread.
 
@@ -30,7 +30,7 @@ Send from info@ancienttrees.app, in the existing thread.
 
 Hi Peter,
 
-Thanks, what a find! It's on the map now, with your photo:
+Thanks, what a find! It's on the map now, with your photo. Hope that's ok with you?
 https://ancienttrees.app/seville/cardon-of-the-expo
 
 Seville's own tree catalogue lists it, succulent or not, so it belongs. Mexico flew it over for the Expo, and one of the men supervising the move got shut inside the plane and landed in Spain with it.
