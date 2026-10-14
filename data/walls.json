@@ -12,11 +12,6 @@
       "released_at": "2026-10-05T08:01:00+00:00"
     },
     {
-      "slug": "london",
-      "kind": "verify",
-      "released_at": "2026-10-09T23:40:53+00:00"
-    },
-    {
       "slug": "austin",
       "kind": "verify",
       "released_at": "2026-10-10T10:40:55+00:00"
@@ -115,6 +110,11 @@
       "slug": "regensburg",
       "kind": "verify",
       "released_at": "2026-10-14T23:25:13+00:00"
+    },
+    {
+      "slug": "london",
+      "kind": "verify",
+      "released_at": "2026-10-14T23:26:28+00:00"
     }
   ]
 }

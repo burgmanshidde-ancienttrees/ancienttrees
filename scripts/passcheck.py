@@ -1197,7 +1197,8 @@ def do_claim(target, kind, by, deepen=None, outside_us=None, country=None, retry
             leads = []
         if len(leads) >= 4:
             def _has_xy(l):
-                loc = l.get("location") or {}
+                loc = l.get("location")
+                loc = loc if isinstance(loc, dict) else {}
                 return bool(l.get("lat") or l.get("latitude") or loc.get("latitude"))
             n_xy = sum(1 for l in leads if isinstance(l, dict) and _has_xy(l))
             print(f"NOTE: {n_xy} of {len(leads)} open leads here carry a coordinate.")
