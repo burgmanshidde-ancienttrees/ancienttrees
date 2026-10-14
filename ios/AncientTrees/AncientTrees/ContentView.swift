@@ -213,7 +213,9 @@ struct ContentView: View {
     /// the browser and that page forwards to the App Store.
     private func open(_ url: URL) {
         guard let comps = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return }
-        if comps.path == "/auth" {
+        // ancienttrees://auth-callback#tokens: the emailed sign-in link
+        // (Account.sendCode, 2026-10-14).
+        if comps.path == "/auth" || (url.scheme == OAuth.callbackScheme && url.host == "auth-callback") {
             Task { await account.signInFromLink(url) }
             return
         }

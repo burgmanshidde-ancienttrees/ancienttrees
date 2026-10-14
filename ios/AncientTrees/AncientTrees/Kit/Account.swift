@@ -385,7 +385,15 @@ public final class Account {
         // It must also be on Supabase's redirect allow-list, or Supabase
         // silently substitutes the Site URL and the link lands on the homepage
         // with the tokens attached and nothing to catch them.
-        let back = "https://ancienttrees.app/auth"
+        // THE APP'S OWN SCHEME SINCE 2026-10-14 (Hidde: "the email sends me to
+        // the website, not the app"). The https /auth route above relied on
+        // iOS honouring a universal link at the END of Supabase's redirect,
+        // and it does not: Safari loaded the page. A custom scheme at the end
+        // of a redirect does open the app (Safari asks once). It is the same
+        // callback Google sign-in uses, so it is already on Supabase's
+        // allow-list. The cost: a link opened on a computer goes nowhere, and
+        // this sheet is only ever reached from the phone.
+        let back = OAuth.callback
         let escaped = back.addingPercentEncoding(
             withAllowedCharacters: .alphanumerics) ?? back
         let r = Supa.request("/auth/v1/otp?redirect_to=\(escaped)",

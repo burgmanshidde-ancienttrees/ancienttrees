@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Merged with the generated Info.plist. Only what build settings cannot say:
+     the ancienttrees:// scheme, so the emailed sign-in link opens the app
+     (Account.sendCode, 2026-10-14). Kept outside AncientTrees/ on purpose: that
+     folder is a synchronized group and would copy this file as a resource. -->
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>app.ancienttrees.AncientTrees</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ancienttrees</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
