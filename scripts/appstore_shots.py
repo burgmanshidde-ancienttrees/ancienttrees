@@ -75,7 +75,10 @@ SHOTS = [
                     "-at=36.5366,-6.3010"], 7),
     # The one panel that shows what a person DOES rather than what we hold, and
     # the only one he had that I could not make: it was not in the list.
-    ("6-add", ["-tab=1", "-collect"], 6),
+    # The draft page you fill in after the photograph, not the camera sheet
+    # (Hidde, 2026-10-14): what adding a tree actually looks like.
+    ("6-add", ["-tab=1", "-signed-in", "-collect", "-collect-describe",
+               "-describe-photo=hero-1", "-at=33.5577,130.1953"], 8),
 ]
 
 

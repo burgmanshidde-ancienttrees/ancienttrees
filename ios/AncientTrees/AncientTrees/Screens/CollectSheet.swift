@@ -386,8 +386,17 @@ struct CollectSheet: View {
             }
             if Launch.collectDescribe {
                 at = origin
-                shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
-                    .image { _ in }
+                // -describe-photo=hero-1 puts a real picture on the draft, for
+                // the App Store panel of adding a tree (2026-10-14).
+                if let name = ProcessInfo.processInfo.arguments
+                    .first(where: { $0.hasPrefix("-describe-photo=") })?.dropFirst(16),
+                   let url = Bundle.main.url(forResource: String(name), withExtension: "jpg"),
+                   let img = UIImage(contentsOfFile: url.path) {
+                    shot = img
+                } else {
+                    shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
+                        .image { _ in }
+                }
                 startDraft()
                 return
             }

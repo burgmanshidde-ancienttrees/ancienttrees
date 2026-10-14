@@ -977,6 +977,9 @@ final class Sightings {
     /// when the index that described them is broken.
     private(set) var orphanPhotos: [String] = []
 
+    /// Whether this process has already dropped the drafts left from last time.
+    private static var sweptDrafts = false
+
     private func load() {
         guard let d = try? Data(contentsOf: index) else {
             // No file at all is the ordinary first launch, not a fault.
@@ -986,7 +989,12 @@ final class Sightings {
         if let list = try? JSONDecoder().decode([Sighting].self, from: d) {
             all = list
             // A draft the app closed on was never saved: drop it and its files.
-            let stale = all.filter { $0.draft == true }
+            // ONCE PER LAUNCH (2026-10-14). SwiftUI may build ContentView's
+            // @State default, this store, more than once; every extra copy
+            // ran this sweep and deleted the photograph of the draft being
+            // edited right now, so a new tree showed "No photograph yet".
+            let stale = Self.sweptDrafts ? [] : all.filter { $0.draft == true }
+            Self.sweptDrafts = true
             if !stale.isEmpty {
                 for s in stale {
                     for f in [s.photo, s.signPhoto].compactMap({ $0 }) + (s.extraPhotos ?? []) {
