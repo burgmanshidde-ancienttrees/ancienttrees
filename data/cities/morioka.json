@@ -49,9 +49,12 @@
       "verified_sources": [
         "https://www.city.morioka.iwate.jp/kankou/kankou/1037106/rekishi/1009335/1009340/1009348.html",
         "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%89%B2%E6%A1%9C",
-        "https://www.city.morioka.iwate.jp/kankou/kankou/1037103/1037212/sakura/1007959.html"
+        "https://www.city.morioka.iwate.jp/kankou/kankou/1037103/1037212/sakura/1007959.html",
+        "https://www.tohokukanko.jp/attractions/detail_1470.html",
+        "https://www.tohokukanko.jp/attractions/detail_1470.html (Tohoku Tourism Promotion Organization: height about 10 m; base girth 4.3 m given, not a breast-height girth, so left out)",
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/119"
       ],
-      "access": "Free, on the public grounds of the Morioka District Court in front of the courthouse building; open to visitors daily, dogs must stay outside the grounds. No ticket, appointment or reception needed.",
+      "access": "Free. The tree stands in the front grounds of Morioka District Court, open 8:30 to 17:45; outside those hours it can be seen from the pavement. About 20 minutes on foot from JR Morioka Station, no parking (temporary coach parking in blossom season).",
       "transport": "About 15-20 minutes on foot from JR Morioka Station.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -72,6 +75,18 @@
         "source_name": "Ishiwari-zakura",
         "qid": "Q11585194",
         "views": 523
+      },
+      "official_register": {
+        "name": "Morioka Ishiwari Zakura, National Natural Monument (Agency for Cultural Affairs, Kunishitei database)",
+        "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/119"
+      },
+      "height_m": 10,
+      "best_time": {
+        "months": [
+          4
+        ],
+        "label": "Blossom opens from mid-April",
+        "kind": "flowers"
       }
     },
     {
@@ -91,7 +106,8 @@
       "verified_sources": [
         "https://ja.wikipedia.org/wiki/%E7%80%A7%E6%BA%90%E5%AF%BA%E3%81%AE%E3%82%B7%E3%83%80%E3%83%AC%E3%82%AB%E3%83%84%E3%83%A9",
         "http://www.hitozato-kyoboku.com/ryuugenji-shidarekatsura.htm",
-        "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg"
+        "https://commons.wikimedia.org/wiki/File:Shidarekatsura2_Takigenji.jpg",
+        "https://online.bunka.go.jp/heritages/detail/161981"
       ],
       "access": "Free, on temple grounds (behind the main hall, at the edge of the graveyard); Ryugen-ji is an ordinary working Soto Zen temple, grounds open, no gate or booking involved",
       "transport": "No station nearby; Ohgayu is a rural district outside central Morioka, reachable by car",
@@ -104,6 +120,10 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "official_register": {
+        "name": "Shidare Katsura, National Natural Monument, designated 9 December 1924 (Agency for Cultural Affairs, Cultural Heritage Online; one record covering the Ryugen-ji, Mon and Sakanamachi trees)",
+        "url": "https://online.bunka.go.jp/heritages/detail/161981"
       }
     }
   ]

@@ -35,7 +35,7 @@
       "age_estimate": "over 350 years",
       "age_min": 350,
       "age_max": 450,
-      "girth_cm": null,
+      "girth_cm": 930,
       "location": {
         "address": "Konan-machi Akatsu, Koriyama, Fukushima Prefecture",
         "latitude": 37.342458,
@@ -45,9 +45,11 @@
       "story": "Japan made this katsura a national natural monument on 27 January 1941, and it has been getting smaller ever since. The record made at the designation describes a tree over 30 metres tall with a crown spreading about as wide. Typhoons have taken limbs since then and soil has washed out from under its roots, leaving 25 metres of height and a 20 metre spread. It is still one of the largest katsura in the country.\n\nThe trunk measures 3.5 metres through at chest height, and at roughly 1.2 metres above the ground it stops pretending to be a single tree: fourteen stems, some huge and some slight, climb out of it from that point. Old katsura routinely do this. Very few do it on this scale.\n\nThat 1941 survey is also the only reason anyone can say what the tree has lost. Its age is put at over 350 years, with nothing published about what the figure rests on, so read three and a half centuries as a floor rather than a verdict. If you know what dates it, tell us.\n\nIt stands unfenced on a rural road toward Aizu-Nunobikiyama, west of Koriyama, with no station within reach. Our coordinates mark the area rather than the trunk, so expect a short hunt when you arrive.",
       "verified_sources": [
         "https://www.kanko-koriyama.gr.jp/tourism/detail7-1-400.html",
-        "https://adeac.jp/koriyama-city/viewer/ct00000070/bunkazai058/"
+        "https://adeac.jp/koriyama-city/viewer/ct00000070/bunkazai058/",
+        "https://online.bunka.go.jp/heritages/detail/209640 (record gives trunk girth 9.30 m, a base girth of 12.65 m measured on the slant, height about 25 m); designated 27 January 1941",
+        "https://online.bunka.go.jp/heritages/detail/209640"
       ],
-      "access": "Free, standing beside a rural road/trail area, publicly viewable",
+      "access": "Free, publicly viewable, but remote: about 8 km up a mountain track from the river and Konan-machi Akatsu, roughly 50 minutes by car from Koriyama South IC (Koriyama city tourism page)",
       "transport": "No nearby train station; reached by car, roughly 8km from Konan-machi Akatsu toward Aizu-Nunobikiyama",
       "location_precision": "approximate",
       "curation_status": "flagged",
@@ -57,7 +59,12 @@
         "attribution": null,
         "status": "missing"
       },
-      "how_to_recognise": "You can recognise it by its trunk splitting into fourteen separate stems about 1.2 metres up, 3.5 metres round and 25 metres tall. It stands unfenced on the rural road toward Aizu-Nunobikiyama, west of Koriyama."
+      "how_to_recognise": "You can recognise it by its trunk splitting into fourteen separate stems about 1.2 metres up, 3.5 metres round and 25 metres tall. It stands unfenced on the rural road toward Aizu-Nunobikiyama, west of Koriyama.",
+      "official_register": {
+        "name": "Akatsu no Katsura, National Natural Monument (Agency for Cultural Affairs, Cultural Heritage Online)",
+        "url": "https://online.bunka.go.jp/heritages/detail/209640"
+      },
+      "height_m": 25
     }
   ]
 }

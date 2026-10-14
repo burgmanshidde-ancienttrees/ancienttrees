@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "kaunas+koriyama+krka-national-park+morioka+pesselieres+rhenen",
+    "kind": "enrich",
+    "tokens": 113000,
+    "trees": 0,
+    "note": "enrichment: Bunka-cho records for Akatsu katsura (girth 930, height 25), Ishiwari cherry and Ryugen-ji katsura; Ishiwari height, court hours and April best_time; Krka mulberry girth and park hours; Achterberg lime LRMB 1683006 girth 604 height 10; Koriyama access corrected to remote; Kaunas oaks, Sully lime, Koningstafel oaks dead-ended (lt.wikipedia figures not an authority); 17 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "ghisonaccia+gonzales-texas+heerlen+hilversum",
     "kind": "enrich",
     "tokens": 117000,

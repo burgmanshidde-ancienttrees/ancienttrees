@@ -26,6 +26,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Ghisonaccia, Gonzales, Heerlen, Hilversum: 6 trees enriched. The two Ghisonaccia cork oaks got their Arbres Remarquables label ids (1420, 84). **Published access corrected:** the Arburacellu's label record lists the ground as private, so its access line now says to look from the lane instead of "no gate". Sam Houston Oak access says private, viewed from CR 361. Heerlen lime got a June to July flowering season; Hilversum's two 1937 trees a 30 m site. The Terworm ginkgo (hee_008) is "Afgekeurd" (rejected) in the Dutch register, no measurement taken, left published but unconfirmed. 9 gaps dead-ended. Preflight 0 problems.
 
+- Kaunas, Koriyama, Krka, Morioka, Pesselières, Rhenen: 5 trees enriched. Akatsu katsura, Ishiwari cherry and the Ryūgen-ji katsura got their Bunka-chō national monument records (katsura girth 930 cm, height 25 m); Ishiwari got court hours and an April blossom season; Krka mulberry girth 475 cm and park hours; Achterberg lime its Dutch register entry (604 cm, 10 m). **Published access corrected:** the Akatsu katsura line said "rural road/trail"; it is 8 km up a mountain track, about 50 minutes by car from Koriyama South IC. Kaunas oaks, Sully lime and Koningstafel oaks found nothing usable (17 gaps dead-ended). Preflight 0 problems.
+
 ## 2026-10-14 night run, 00:24 window
 
 - Visits last 7 days: 1,491. Rung 1 empty. Rung 2: iOS scheduled run failed on one test, `testEveryFlowLeavesAWayBack` (tap on "person-follow" button found no match); needs a simulator session, not fixable from this runner. Smoke "skipped" is the push-trigger default.
