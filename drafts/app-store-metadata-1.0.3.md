@@ -75,16 +75,22 @@ Most people have walked past a thousand-year-old tree without knowing it. Open t
 
 ## Dutch
 
-Subtitle, 30/30:
+Name, 25/30:
 
 ```
-Oude bomen bij jou in de buurt
+Ancient Trees: Oude bomen
+```
+
+Subtitle, 29/30:
+
+```
+Monumentale bomen in de buurt
 ```
 
 Keywords, 98/100:
 
 ```
-monumentale,beroemde,oudste,historische,dikste,kaart,wandeling,wandelen,natuur,eik,linde,boom,park
+bomenkaart,beroemde,oudste,historische,dikste,kaart,wandeling,wandelen,natuur,eik,linde,boom,park
 ```
 
 Description:
@@ -132,16 +138,22 @@ De meeste mensen zijn weleens langs een duizend jaar oude boom gelopen zonder he
 
 ## German
 
+Name, 25/30:
+
+```
+Ancient Trees: Alte Bäume
+```
+
 Subtitle, 25/30:
 
 ```
-Alte Bäume in deiner Nähe
+Baumriesen in deiner Nähe
 ```
 
 Keywords, 99/100:
 
 ```
-monumentale,Naturdenkmal,berühmte,älteste,historische,Baumriese,Karte,Wanderung,wandern,Natur,Eiche
+monumentale,Naturdenkmal,berühmte,älteste,historische,Baumkarte,Karte,Wanderung,wandern,Natur,Eiche
 ```
 
 Description:
@@ -189,16 +201,22 @@ Die meisten Menschen sind schon an einem tausend Jahre alten Baum vorbeigegangen
 
 ## French
 
-Subtitle, 30/30:
+Name, 27/30:
 
 ```
-Vieux arbres près de chez vous
+Ancient Trees: Vieux arbres
+```
+
+Subtitle, 27/30:
+
+```
+Arbres remarquables proches
 ```
 
 Keywords, 100/100:
 
 ```
-remarquables,monumentaux,anciens,célèbres,historiques,géant,carte,balade,randonnée,nature,chêne,parc
+millénaires,monumentaux,anciens,célèbres,historiques,géant,carte,balade,randonnée,nature,chêne,parc
 ```
 
 Description:
@@ -246,16 +264,22 @@ La plupart des gens sont passés devant un arbre millénaire sans le savoir. Ouv
 
 ## Spanish
 
-Subtitle, 26/30:
+Name, 29/30:
 
 ```
-Árboles viejos cerca de ti
+Ancient Trees: Árboles viejos
+```
+
+Subtitle, 30/30:
+
+```
+Árboles singulares cerca de ti
 ```
 
 Keywords, 96/100:
 
 ```
-singulares,monumentales,antiguos,centenarios,famosos,históricos,milenario,mapa,senderismo,naturaleza
+gigantes,monumentales,antiguos,centenarios,famosos,históricos,milenario,mapa,senderismo,naturaleza
 ```
 
 Description:
@@ -303,16 +327,22 @@ Casi todos hemos pasado junto a un árbol milenario sin saberlo. Abre el mapa y 
 
 ## Italian
 
-Subtitle, 27/30:
+Name, 30/30:
 
 ```
-Alberi secolari vicino a te
+Ancient Trees: Alberi secolari
+```
+
+Subtitle, 30/30:
+
+```
+Alberi monumentali vicino a te
 ```
 
 Keywords, 97/100:
 
 ```
-monumentali,antichi,vecchi,famosi,storici,giganti,mappa,passeggiata,camminare,natura,quercia,parco
+patriarchi,antichi,vecchi,famosi,storici,giganti,mappa,passeggiata,camminare,natura,quercia,parco
 ```
 
 Description:
@@ -360,16 +390,22 @@ Quasi tutti siamo passati accanto a un albero millenario senza saperlo. Apri la 
 
 ## Portuguese (Portugal)
 
-Subtitle, 27/30:
+Name, 30/30:
 
 ```
-Árvores antigas perto de si
+Ancient Trees: Árvores antigas
+```
+
+Subtitle, 28/30:
+
+```
+Árvores notáveis perto de si
 ```
 
 Keywords, 97/100:
 
 ```
-monumentais,notáveis,centenárias,velhas,famosas,históricas,milenar,mapa,passeio,caminhada,natureza
+monumentais,gigantes,centenárias,velhas,famosas,históricas,milenar,mapa,passeio,caminhada,natureza
 ```
 
 Description:
@@ -417,16 +453,22 @@ Quase todos já passámos por uma árvore milenar sem o saber. Abra o mapa e vej
 
 ## Japanese
 
-Subtitle:
+Name, 20/30:
 
 ```
-近くの古木と巨樹を探す
+Ancient Trees: 巨樹マップ
+```
+
+Subtitle, 11/30:
+
+```
+近くの古木と名木を探す
 ```
 
 Keywords:
 
 ```
-巨木,大木,老木,名木,天然記念物,御神木,地図,散歩,自然,公園,桜,銀杏,楠
+巨木,大木,老木,樹齢,天然記念物,御神木,地図,散歩,自然,公園,桜,銀杏,楠
 ```
 
 Description:
