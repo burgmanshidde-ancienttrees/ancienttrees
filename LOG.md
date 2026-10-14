@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 session: the About page has a maker
+
+**Live:** /about opens with Hidde's own story (Lisbon, the Palermo ficus, "not an expert, but a fan"), his photo at a Japanese cedar beside it (above it on a phone, EXIF stripped) and info@ancienttrees.app, written by him. The four process sections were cut; one sentence on sources and AI remains. The menu's "Sponsor this project" became "About"; a sponsor button now sits under his story, and Sponsor stays in the footer. Seen live at 375px and desktop, menu open. Blueprint v1.26, DECISIONS.md 2026-10-14; qa allows the first name on /about only.
+
+**Inbox:** six replies drafted in drafts/batches/replies-2026-10-14.json (status draft, waiting for his word): Bauer (Koeln) is held for a careful reply now the About page exists; Jeanne (Helmond), Groeger (Munich), Kerry (Brighton), Pere Fraga (Menorca), Jon Pattee (optional). The Unterlappach lime lead got its baumkunde source.
+
 ## 2026-10-14 session: the collect flow, from Hidde's test
 
 - Saving a tree you added: a confirmation sheet ("Added to your trees", its name, Done) before the page; was a 1.5 s HUD he never saw.
