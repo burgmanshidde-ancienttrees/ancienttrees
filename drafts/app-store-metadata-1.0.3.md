@@ -35,7 +35,7 @@ Remarkable old trees near you
 Keywords, 97/100:
 
 ```
-monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,near,map,walk,hike,nature,oak
+monumental,famous,oldest,historic,veteran,champion,giant,big,nearby,map,walk,hike,nature,oak,yew
 ```
 
 Description: keep the live one. It is not indexed and it reads well.
@@ -48,7 +48,7 @@ Collecting is simpler: take a photograph, pick which tree it is, done.
 Add a tree we do not have yet, with a confirmation once it is saved.
 With the app open, it tells you when you stand within 50 metres of a tree you have not collected.
 Want to visit and Collected together in My trees.
-Tree pages with more photographs and the official register a tree is listed in.
+Add a photograph from any tree's page.
 Faster scrolling and many small fixes.
 ```
 
@@ -112,7 +112,7 @@ Je eigen verzameling. Fotografeer een boom terwijl je ervoor staat en hij hoort 
 
 WAAR DE BOMEN VANDAAN KOMEN
 
-Elke boom is gecontroleerd aan de hand van minstens twee onafhankelijke bronnen. Officiële registers van beschermde en monumentale bomen worden rechtstreeks gelezen. Foto's hebben een open licentie en een naamsvermelding.
+Officiële registers van beschermde en monumentale bomen worden rechtstreeks gelezen. Foto's hebben een open licentie en een naamsvermelding.
 
 De app is in het Engels. Een account is één e-mailadres; verwijder het en alles gaat mee.
 ```
@@ -125,7 +125,7 @@ Verzamelen is eenvoudiger: maak een foto, kies welke boom het is, klaar.
 Voeg een boom toe die wij nog niet hebben, met een bevestiging zodra hij is opgeslagen.
 Met de app open hoor je het als je binnen 50 meter staat van een boom die je nog niet hebt verzameld.
 Wil ik bezoeken en Verzameld samen in Mijn bomen.
-Boompagina's met meer foto's en het officiële register waarin een boom staat.
+Voeg vanaf elke boompagina een foto toe.
 Sneller scrollen en veel kleine verbeteringen.
 ```
 
@@ -147,7 +147,7 @@ Alte Bäume in deiner Nähe
 Keywords, 99/100:
 
 ```
-monumentale,Naturdenkmal,alte,berühmte,älteste,historische,Baum,Karte,Wanderung,wandern,Natur,Eiche
+monumentale,Naturdenkmal,berühmte,älteste,historische,Baumriese,Karte,Wanderung,wandern,Natur,Eiche
 ```
 
 Description:
@@ -169,7 +169,7 @@ Deine eigene Sammlung. Fotografiere einen Baum, während du vor ihm stehst, und 
 
 WOHER DIE BÄUME KOMMEN
 
-Jeder Baum ist gegen mindestens zwei unabhängige Quellen geprüft. Amtliche Verzeichnisse geschützter Bäume und Naturdenkmale werden direkt gelesen. Fotos tragen eine offene Lizenz und eine Namensnennung.
+Amtliche Verzeichnisse geschützter Bäume und Naturdenkmale werden direkt gelesen. Fotos tragen eine offene Lizenz und eine Namensnennung.
 
 Die App ist auf Englisch. Ein Konto ist eine E-Mail-Adresse; löschst du es, geht alles mit.
 ```
@@ -182,7 +182,7 @@ Sammeln ist einfacher: Foto machen, den Baum auswählen, fertig.
 Füge einen Baum hinzu, den wir noch nicht haben, mit einer Bestätigung, sobald er gespeichert ist.
 Bei geöffneter App erfährst du, wenn du weniger als 50 Meter von einem Baum entfernt stehst, den du noch nicht gesammelt hast.
 Besuchen und Gesammelt zusammen in Meine Bäume.
-Baumseiten mit mehr Fotos und dem amtlichen Verzeichnis, in dem ein Baum steht.
+Füge auf jeder Baumseite ein Foto hinzu.
 Schnelleres Scrollen und viele kleine Verbesserungen.
 ```
 
@@ -204,7 +204,7 @@ Vieux arbres près de chez vous
 Keywords, 100/100:
 
 ```
-remarquables,monumentaux,anciens,célèbres,historiques,arbre,carte,balade,randonnée,nature,chêne,parc
+remarquables,monumentaux,anciens,célèbres,historiques,géant,carte,balade,randonnée,nature,chêne,parc
 ```
 
 Description:
@@ -226,7 +226,7 @@ Votre propre collection. Photographiez un arbre en vous tenant devant lui et il 
 
 D'OÙ VIENNENT LES ARBRES
 
-Chaque arbre est vérifié auprès d'au moins deux sources indépendantes. Les registres officiels d'arbres protégés et remarquables sont lus directement. Les photos portent leur licence ouverte et leur crédit.
+Les registres officiels d'arbres protégés et remarquables sont lus directement. Les photos portent leur licence ouverte et leur crédit.
 
 L'application est en anglais. Un compte, c'est une adresse e-mail ; supprimez-le et tout part avec.
 ```
@@ -239,7 +239,7 @@ Collectionner est plus simple : prenez une photo, choisissez l'arbre, c'est fait
 Ajoutez un arbre que nous n'avons pas encore, avec une confirmation une fois enregistré.
 Avec l'app ouverte, elle vous prévient quand vous êtes à moins de 50 mètres d'un arbre pas encore collectionné.
 À visiter et Collectionnés réunis dans Mes arbres.
-Des pages d'arbre avec plus de photos et le registre officiel où l'arbre figure.
+Ajoutez une photo depuis la page de n'importe quel arbre.
 Défilement plus fluide et de nombreuses petites corrections.
 ```
 
@@ -261,7 +261,7 @@ Subtitle, 26/30:
 Keywords, 96/100:
 
 ```
-singulares,monumentales,antiguos,centenarios,famosos,históricos,árbol,mapa,senderismo,naturaleza
+singulares,monumentales,antiguos,centenarios,famosos,históricos,milenario,mapa,senderismo,naturaleza
 ```
 
 Description:
@@ -283,7 +283,7 @@ Tu propia colección. Fotografía un árbol mientras estás delante y pasa a ser
 
 DE DÓNDE SALEN LOS ÁRBOLES
 
-Cada árbol está comprobado con al menos dos fuentes independientes. Los catálogos oficiales de árboles protegidos y monumentales se leen directamente. Las fotos llevan su licencia abierta y su crédito.
+Los catálogos oficiales de árboles protegidos y monumentales se leen directamente. Las fotos llevan su licencia abierta y su crédito.
 
 La app está en inglés. Una cuenta es una dirección de correo; bórrala y todo se va con ella.
 ```
@@ -296,7 +296,7 @@ Coleccionar es más sencillo: haz una foto, elige qué árbol es y listo.
 Añade un árbol que aún no tenemos, con una confirmación al guardarlo.
 Con la app abierta, te avisa cuando estás a menos de 50 metros de un árbol que aún no has coleccionado.
 Quiero visitar y Coleccionados juntos en Mis árboles.
-Páginas de árboles con más fotos y el registro oficial en el que figura cada árbol.
+Añade una foto desde la página de cualquier árbol.
 Desplazamiento más rápido y muchas pequeñas correcciones.
 ```
 
@@ -318,7 +318,7 @@ Alberi secolari vicino a te
 Keywords, 97/100:
 
 ```
-monumentali,antichi,vecchi,famosi,storici,albero,mappa,passeggiata,camminare,natura,quercia,parco
+monumentali,antichi,vecchi,famosi,storici,giganti,mappa,passeggiata,camminare,natura,quercia,parco
 ```
 
 Description:
@@ -340,7 +340,7 @@ La tua collezione. Fotografa un albero mentre gli stai davanti ed entra fra i tu
 
 DA DOVE VENGONO GLI ALBERI
 
-Ogni albero è verificato su almeno due fonti indipendenti. Gli elenchi ufficiali degli alberi monumentali e protetti sono letti direttamente. Le foto portano la loro licenza aperta e il loro credito.
+Gli elenchi ufficiali degli alberi monumentali e protetti sono letti direttamente. Le foto portano la loro licenza aperta e il loro credito.
 
 L'app è in inglese. Un account è un indirizzo e-mail; cancellalo e tutto se ne va con lui.
 ```
@@ -353,7 +353,7 @@ Collezionare è più semplice: scatta una foto, scegli quale albero è, fatto.
 Aggiungi un albero che non abbiamo ancora, con una conferma quando è salvato.
 Con l'app aperta, ti avvisa quando sei a meno di 50 metri da un albero che non hai ancora collezionato.
 Da visitare e Collezionati insieme in I miei alberi.
-Pagine degli alberi con più foto e il registro ufficiale in cui l'albero è iscritto.
+Aggiungi una foto dalla pagina di qualsiasi albero.
 Scorrimento più veloce e tante piccole correzioni.
 ```
 
@@ -375,7 +375,7 @@ Subtitle, 27/30:
 Keywords, 97/100:
 
 ```
-monumentais,notáveis,centenárias,velhas,famosas,históricas,árvore,mapa,passeio,caminhada,natureza
+monumentais,notáveis,centenárias,velhas,famosas,históricas,milenar,mapa,passeio,caminhada,natureza
 ```
 
 Description:
@@ -397,7 +397,7 @@ A sua coleção. Fotografe uma árvore enquanto está à frente dela e passa a s
 
 DE ONDE VÊM AS ÁRVORES
 
-Cada árvore é verificada com pelo menos duas fontes independentes. Os registos oficiais de árvores protegidas e de interesse público são lidos diretamente. As fotografias trazem a sua licença aberta e o seu crédito.
+Os registos oficiais de árvores protegidas e de interesse público são lidos diretamente. As fotografias trazem a sua licença aberta e o seu crédito.
 
 A aplicação está em inglês. Uma conta é um endereço de e-mail; apague-a e tudo vai com ela.
 ```
@@ -410,7 +410,7 @@ Colecionar é mais simples: tira uma fotografia, escolhe qual é a árvore e pro
 Adiciona uma árvore que ainda não temos, com uma confirmação quando fica guardada.
 Com a app aberta, avisa-te quando estás a menos de 50 metros de uma árvore que ainda não colecionaste.
 Quero visitar e Colecionadas juntas em As minhas árvores.
-Páginas de árvores com mais fotografias e o registo oficial onde a árvore consta.
+Adiciona uma fotografia a partir da página de qualquer árvore.
 Deslocamento mais rápido e muitas pequenas correções.
 ```
 
@@ -429,10 +429,10 @@ Subtitle:
 近くの古木と巨樹を探す
 ```
 
-Keywords (46/100):
+Keywords:
 
 ```
-巨木,巨樹,古木,大木,老木,名木,天然記念物,御神木,地図,散歩,自然,公園,桜,銀杏,楠
+巨木,大木,老木,名木,天然記念物,御神木,地図,散歩,自然,公園,桜,銀杏,楠
 ```
 
 Description:
@@ -454,7 +454,7 @@ Description:
 
 木の出どころ
 
-すべての木は、独立した二つ以上の資料で確認しています。天然記念物や保護樹の公式台帳を直接読んでいます。写真はオープンライセンスとクレジット付きです。
+天然記念物や保護樹の公式台帳を直接読んでいます。写真はオープンライセンスとクレジット付きです。
 
 アプリは英語です。アカウントはメールアドレス一つ。削除すればすべて消えます。
 ```
@@ -467,7 +467,7 @@ What's new:
 まだ載っていない木を追加でき、保存すると確認が表示されます。
 アプリを開いているとき、まだ集めていない木の50メートル以内に来るとお知らせします。
 「行きたい」と「集めた」を「マイツリー」にまとめました。
-木のページに写真が増え、木が登録されている公式の登録簿も表示。
+どの木のページからでも写真を追加できます。
 スクロールが速くなり、細かな改善も多数。
 ```
 
