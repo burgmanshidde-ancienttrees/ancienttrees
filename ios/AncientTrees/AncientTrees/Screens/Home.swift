@@ -762,6 +762,14 @@ struct HomeView: View {
 
         cityShelf
 
+        // The open seat of the city you are standing in, right after the cities
+        // (Hidde, 2026-10-14), well away from "Add a tree" (Hidde, 2026-10-10: "dont put
+        // ambassador cta and add tree cta below each other").
+        if let h = deck.here, catalogue.facets.ambassadors(city: h.slug).isEmpty,
+           !catalogue.facets.seated(city: h.slug) {
+            AmbassadorWantedRow(place: h.name).padding(.horizontal, 16)
+        }
+
         if deck.records.count == 3 {
             section("The records") {
                 shelf {
@@ -795,14 +803,6 @@ struct HomeView: View {
         // Discover is for trees you do not know yet; your list has My trees).
         wantToVisitFull
         wantToVisitEmpty.id("discover-want")
-
-        // The open seat of the city you are standing in, after your own list
-        // and well away from "Add a tree" (Hidde, 2026-10-10: "dont put
-        // ambassador cta and add tree cta below each other").
-        if let h = deck.here, catalogue.facets.ambassadors(city: h.slug).isEmpty,
-           !catalogue.facets.seated(city: h.slug) {
-            AmbassadorWantedRow(place: h.name).padding(.horizontal, 16)
-        }
 
         if !deck.species.isEmpty {
             section("By species", more: .index(.species)) { speciesRows }

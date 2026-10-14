@@ -262,12 +262,14 @@ struct SignInSheet: View {
 
     private func codeEntry(_ to: String) -> some View {
         VStack(spacing: 18) {
+            // LESS IS MORE (Hidde, 2026-10-14: "way too crowded"): no mark
+            // above the title (the main sheet lost its glyph on 10-09), one
+            // short line, and no terms footer, which was agreed a step ago.
             VStack(spacing: 8) {
-                SpeciesMark(species: "Ginkgo", color: brand).frame(width: 48, height: 48)
                 Text("Check your email").font(.title2.bold())
                 Text(Launch.emailCode
-                     ? "We sent a six digit code to \(to). Type it here and you are in."
-                     : "We sent a sign-in link to \(to). Tap it and you come back here, signed in. It works once and lasts fifteen minutes.")
+                     ? "We sent you a sign-in code."
+                     : "We sent you a sign-in link.")
                     .font(.subheadline).foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
             }
@@ -315,7 +317,6 @@ struct SignInSheet: View {
                 Task { await account.sendCode(to: to) }
             }
                 .font(.footnote)
-            footer
         }
         .onAppear { if Launch.emailCode { focus = .code } }
     }

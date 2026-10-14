@@ -880,7 +880,10 @@ struct CollectView: View {
         VStack(alignment: .leading, spacing: 14) {
             Text(lane == .want
                  ? "Sign in to keep a list of trees you want to visit."
-                 : "You collect a tree by photographing it while you stand in front of it. Sign in and we keep them for you.")
+                 // Hidde, 2026-10-14: "register and login to start your
+                 // tree collection". One "Sign in", because the same tap
+                 // makes the account (Apple, Google, email all do).
+                 : "Sign in to start your tree collection.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             // THE GREEN ONE, and it is the only one on the page while nobody
