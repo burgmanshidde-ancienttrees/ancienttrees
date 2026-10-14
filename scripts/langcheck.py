@@ -114,6 +114,14 @@ def english_impressions():
             out[cells[0]] = (int(cells[1]), int(cells[2]))
         except ValueError:
             continue
+    # The frozen 09-27 roster is one line in DATA.md since 2026-10-14; its
+    # numbers live in data/depth-roster-frozen.json.
+    try:
+        frozen = json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json"))).get("cities") or {}
+    except (OSError, ValueError):
+        frozen = {}
+    for c, v in frozen.items():
+        out.setdefault(c, (int(v.get("clicks", 0)), int(v.get("impressions", 0))))
     return out
 
 

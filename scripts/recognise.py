@@ -72,6 +72,14 @@ def demand():
         m = re.match(r"\|\s*([a-z0-9\-]+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|", line)
         if m:
             out[m.group(1)] = int(m.group(3))
+    # The frozen 09-27 roster is one line in DATA.md since 2026-10-14; its
+    # numbers live in data/depth-roster-frozen.json.
+    try:
+        frozen = json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json"))).get("cities") or {}
+    except (OSError, ValueError):
+        frozen = {}
+    for c, v in frozen.items():
+        out.setdefault(c, int(v.get("impressions", 0)))
     return out
 
 

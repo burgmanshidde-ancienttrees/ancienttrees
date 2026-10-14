@@ -561,9 +561,13 @@ def demand_lines(pages, pairs=None):
         out.append("| %s | %d | %d | %.1f%% | %.1f | %.1f%% | %s |"
                    % (r["city"], r["clicks"], r["impressions"], r["ctr"],
                       r["position"], r["expected"], qcell))
-    for c, v in extra:
-        out.append("| %s | %d | %d | - | - | - | frozen 09-27 roster |"
-                   % (c, v.get("clicks", 0), v.get("impressions", 0)))
+    # The frozen roster as ONE line, not ~250 rows (Hidde, 2026-10-14, on the
+    # digest's token cost: a third of every entry was "frozen 09-27 roster").
+    # Scripts that need those cities read data/depth-roster-frozen.json.
+    if extra:
+        out.append("")
+        out.append("- Plus %d cities on the frozen 09-27 roster (data/depth-roster-frozen.json), "
+                   "biggest: %s." % (len(extra), ", ".join(c for c, _ in extra[:8])))
     return out
 
 
@@ -2130,8 +2134,8 @@ def night_photos_section(today):
                 continue
             if day < since:
                 continue
-            out.append("| %s | %s | %s | `photo_apply.py hold %s \"%s\"` |"
-                       % (day.isoformat()[5:], t.get("name"), c.get("city"), t.get("id"), ph.get("url")))
+            out.append("| %s | %s | %s | `photo_apply.py hold %s` |"
+                       % (day.isoformat()[5:], t.get("name"), c.get("city"), t.get("id")))
     if not out:
         return None
     return "\n".join(["**Photographs the night run approved** (%d; the last column undoes one)" % len(out), "",

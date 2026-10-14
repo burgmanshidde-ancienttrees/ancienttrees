@@ -232,6 +232,29 @@ def credit(cand):
     return f"{author}, via Wikimedia Commons" if author else "via Wikimedia Commons"
 
 
+def find_candidate(entry, url):
+    """The queue candidate a url names, exactly or by file name.
+
+    BY FILE NAME when the address differs. A tree's photo url is the
+    upload.wikimedia.org original while the queue keeps the Commons page
+    (File:...) and a thumb, so the overrule the digest printed matched
+    nothing for most night-run approvals (found 2026-10-14)."""
+    for c in entry.get("candidates", []):
+        if url in (c.get("url"), c.get("thumb")) or (url and url in (c.get("thumb") or "")):
+            return c
+    if not url:
+        return None
+    from urllib.parse import unquote
+    want = unquote(url.rstrip("/").split("/")[-1]).replace(" ", "_").lower()
+    for c in entry.get("candidates", []):
+        names = {unquote((c.get("url") or "").split("File:")[-1]).replace(" ", "_").lower()}
+        thumb = unquote(c.get("thumb") or "").split("?")[0]
+        names.add(thumb.split("/")[-2].lower() if "/thumb/" in thumb else thumb.split("/")[-1].lower())
+        if want and want in names:
+            return c
+    return None
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
@@ -254,11 +277,14 @@ def main():
         print(f"{tree_id}: marked exhausted ({entry['exhausted']})")
         return 0
 
-    cand = None
-    for c in entry.get("candidates", []):
-        if url in (c.get("url"), c.get("thumb")) or (url and url in (c.get("thumb") or "")):
-            cand = c
-            break
+    # `hold <id>` with no url holds the photograph the tree wears now, which
+    # is what the digest's overrule column means (2026-10-14: the full url in
+    # every row was 13% of each digest entry).
+    if url is None and verb == "hold":
+        _, _, now = find_tree(tree_id)
+        url = ((now or {}).get("photo") or {}).get("url")
+
+    cand = find_candidate(entry, url)
     if cand is None:
         print(f"{tree_id}: no candidate matching {url}")
         return 1
