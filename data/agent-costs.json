@@ -11433,6 +11433,22 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "roosendaal",
+    "kind": "write",
+    "tokens": 203000,
+    "trees": 2,
+    "note": "verify (114k) plus write (89k): LRMB Nispen oak and Beatrixlinde, both rich, merged as roo_014 and roo_015"
+   },
+   {
+    "date": "2026-10-14",
+    "target": "leipzig",
+    "kind": "verify",
+    "tokens": 184000,
+    "trees": 0,
+    "note": "verify (98k) plus write (87k): city Baumkataster WFS gives girth and height for Naturdenkmal trees; 3 stories written but preflight refused all (approximate pin, no photo); Commons photos viewed and held (sign shots, ivy-covered elm); kept as leads, source is a future lane"
+   },
+   {
+    "date": "2026-10-14",
     "target": "photo-less published trees pass 2: Japan, Germany, Spain and register-backed EU (30 trees)",
     "kind": "photo",
     "tokens": 205000,

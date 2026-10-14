@@ -4,7 +4,7 @@
   "data/registers",
   "data/leads"
  ],
- "count": 74617,
+ "count": 74660,
  "trees": [
   {
    "id": "aac_001",
@@ -148,7 +148,7 @@
    "age_max": 110,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ach_001",
@@ -180,7 +180,7 @@
    "age_max": 1800,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "agm_001",
@@ -212,7 +212,7 @@
    "age_max": 550,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "alb_001",
@@ -228,7 +228,7 @@
    "age_max": 300,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "ali_001",
@@ -573,14 +573,14 @@
    "species": "Taiwan Red Cypress (Chamaecyparis formosensis)",
    "city": "Alishan",
    "country": "Taiwan",
-   "lat": 23.517457,
-   "lng": 120.807533,
-   "precision": "approximate",
+   "lat": 23.51897,
+   "lng": 120.8098,
+   "precision": "confirmed",
    "age_min": 626,
    "age_max": 2300,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "alh_002",
@@ -589,14 +589,14 @@
    "species": "Taiwan Red Cypress (Chamaecyparis formosensis)",
    "city": "Alishan",
    "country": "Taiwan",
-   "lat": 23.5191726,
-   "lng": 120.8097294,
-   "precision": "approximate",
+   "lat": 23.51917,
+   "lng": 120.80973,
+   "precision": "confirmed",
    "age_min": 1087,
    "age_max": 1103,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "alk_001",
@@ -1556,7 +1556,7 @@
    "age_max": 500,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "abp_001",
@@ -1572,7 +1572,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ant_001",
@@ -1668,7 +1668,7 @@
    "age_max": 80,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "ant_007",
@@ -1716,7 +1716,7 @@
    "age_max": 90,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ant_010",
@@ -1908,7 +1908,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "arn_001",
@@ -2943,7 +2943,7 @@
    "country": "France",
    "lat": 50.587625,
    "lng": 2.813241,
-   "precision": "approximate",
+   "precision": "confirmed",
    "age_min": 500,
    "age_max": 550,
    "has_photo": true,
@@ -3316,7 +3316,7 @@
    "age_max": 116,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "brn_008",
@@ -3348,7 +3348,7 @@
    "age_max": 1000,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "bhg_001",
@@ -3460,7 +3460,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "bdh_001",
@@ -3508,7 +3508,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "bal_003",
@@ -3524,7 +3524,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "bal_004",
@@ -3540,7 +3540,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "bam_001",
@@ -4644,7 +4644,7 @@
    "age_max": 500,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "bar_001",
@@ -5108,7 +5108,7 @@
    "age_max": 200,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "brb_001",
@@ -6356,7 +6356,7 @@
    "age_max": 3300,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "bio_001",
@@ -6404,7 +6404,7 @@
    "age_max": 450,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "boi_001",
@@ -6692,7 +6692,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "bcl_001",
@@ -7348,7 +7348,7 @@
    "age_max": 320,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "bre_001",
@@ -7556,7 +7556,7 @@
    "age_max": 600,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "bhm_001",
@@ -7604,7 +7604,7 @@
    "age_max": 1000,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 5
   },
   {
    "id": "bhm_004",
@@ -8146,7 +8146,7 @@
    "precision": "confirmed",
    "age_min": 150,
    "age_max": 160,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -8868,7 +8868,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "brp_003",
@@ -8884,7 +8884,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "bsc_001",
@@ -9236,7 +9236,7 @@
    "age_max": 145,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "bud_001",
@@ -9517,14 +9517,14 @@
    "species": "Pedunculate Oak (Quercus robur)",
    "city": "Bulat-Pestivien",
    "country": "France",
-   "lat": 48.4487,
-   "lng": -3.3251,
-   "precision": "approximate",
+   "lat": 48.44912,
+   "lng": -3.32479,
+   "precision": "confirmed",
    "age_min": 900,
    "age_max": 1600,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "bsn_001",
@@ -9540,7 +9540,7 @@
    "age_max": 900,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "bsn_002",
@@ -9572,7 +9572,7 @@
    "age_max": 250,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "cad_001",
@@ -9885,14 +9885,14 @@
    "species": "Pedunculate Oak (Quercus robur)",
    "city": "Cajvana",
    "country": "Romania",
-   "lat": 47.704719,
-   "lng": 25.986667,
+   "lat": 47.70195,
+   "lng": 25.96787,
    "precision": "confirmed",
    "age_min": 735,
    "age_max": 885,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "clv_001",
@@ -10004,7 +10004,7 @@
    "age_max": 92,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pcs_001",
@@ -10020,7 +10020,7 @@
    "age_max": 280,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "cap_001",
@@ -10434,9 +10434,9 @@
    "precision": "confirmed",
    "age_min": 450,
    "age_max": 550,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "cat_001",
@@ -10564,7 +10564,7 @@
    "age_max": 450,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ckr_003",
@@ -10580,7 +10580,7 @@
    "age_max": 300,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ckr_004",
@@ -10596,7 +10596,7 @@
    "age_max": 260,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ckr_005",
@@ -11028,7 +11028,7 @@
    "age_max": 425,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "chr_001",
@@ -11085,14 +11085,14 @@
    "species": "Pedunculate Oak (Quercus robur)",
    "city": "Christchurch",
    "country": "New Zealand",
-   "lat": -43.531673,
-   "lng": 172.622315,
-   "precision": "approximate",
+   "lat": -43.531633,
+   "lng": 172.622327,
+   "precision": "confirmed",
    "age_min": 163,
    "age_max": 163,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "chc_003",
@@ -11124,7 +11124,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "chc_005",
@@ -11140,7 +11140,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "chc_006",
@@ -11172,7 +11172,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "cin_001",
@@ -11300,7 +11300,7 @@
    "age_max": 900,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "kol_001",
@@ -11396,7 +11396,7 @@
    "age_max": 400,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "com_001",
@@ -11556,7 +11556,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "cpc_001",
@@ -11572,7 +11572,7 @@
    "age_max": 250,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "coo_001",
@@ -11588,7 +11588,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "cop_001",
@@ -12884,7 +12884,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "crc_001",
@@ -12975,7 +12975,7 @@
    "country": "Greece",
    "lat": 35.06347,
    "lng": 24.94667,
-   "precision": "approximate",
+   "precision": "confirmed",
    "age_min": null,
    "age_max": null,
    "has_photo": false,
@@ -13284,7 +13284,7 @@
    "age_max": 450,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "deb_001",
@@ -14724,7 +14724,7 @@
    "age_max": 750,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "dbi_001",
@@ -14740,7 +14740,7 @@
    "age_max": 900,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "dub_001",
@@ -16132,7 +16132,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "edm_001",
@@ -16804,7 +16804,7 @@
    "age_max": 900,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "fcl_001",
@@ -16836,7 +16836,7 @@
    "age_max": 250,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "fmt_001",
@@ -16868,7 +16868,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ftl_002",
@@ -16884,7 +16884,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ftl_003",
@@ -16900,7 +16900,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ftl_004",
@@ -16916,7 +16916,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ftw_001",
@@ -16932,7 +16932,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ftw_002",
@@ -16948,7 +16948,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ftw_003",
@@ -16964,7 +16964,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ftw_004",
@@ -16980,7 +16980,7 @@
    "age_max": 150,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ftw_005",
@@ -16996,7 +16996,7 @@
    "age_max": 260,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ftw_006",
@@ -17012,7 +17012,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_007",
@@ -17028,7 +17028,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_008",
@@ -17044,7 +17044,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_009",
@@ -17060,7 +17060,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_010",
@@ -17076,7 +17076,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_011",
@@ -17092,7 +17092,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_012",
@@ -17108,7 +17108,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_013",
@@ -17124,7 +17124,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_014",
@@ -17140,7 +17140,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_015",
@@ -17156,7 +17156,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_016",
@@ -17172,7 +17172,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_017",
@@ -17188,7 +17188,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ftw_019",
@@ -17204,7 +17204,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "ppf_001",
@@ -17220,7 +17220,7 @@
    "age_max": 116,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "for_001",
@@ -17588,7 +17588,7 @@
    "age_max": 300,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "fjk_001",
@@ -17604,7 +17604,7 @@
    "age_max": 1400,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "fjk_002",
@@ -17634,7 +17634,7 @@
    "precision": "confirmed",
    "age_min": 150,
    "age_max": 250,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -17652,7 +17652,7 @@
    "age_max": 750,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "fjk_005",
@@ -18004,7 +18004,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "gda_001",
@@ -18434,7 +18434,7 @@
    "precision": "confirmed",
    "age_min": 148,
    "age_max": 230,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -18980,7 +18980,7 @@
    "age_max": 330,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "gie_002",
@@ -18996,7 +18996,7 @@
    "age_max": 350,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "gie_003",
@@ -19012,7 +19012,7 @@
    "age_max": 167,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "gie_004",
@@ -19028,7 +19028,7 @@
    "age_max": 400,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ghn_001",
@@ -19188,7 +19188,7 @@
    "age_max": 350,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "gla_001",
@@ -19332,7 +19332,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "gst_001",
@@ -19380,7 +19380,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "got_003",
@@ -19396,7 +19396,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "got_004",
@@ -19412,7 +19412,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "got_005",
@@ -19428,7 +19428,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "gtn_001",
@@ -19794,7 +19794,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -20226,7 +20226,7 @@
    "precision": "confirmed",
    "age_min": 10,
    "age_max": 12,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -20794,7 +20794,7 @@
    "id": "hrl_010",
    "tier": "highlighted",
    "name": "The Roadside Maple of Badhoevedorp",
-   "species": "Maple (Acer sp.)",
+   "species": "Sycamore (Acer pseudoplatanus)",
    "city": "Haarlemmermeer",
    "country": "Netherlands",
    "lat": 52.334806,
@@ -21140,7 +21140,7 @@
    "age_max": 800,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hee_001",
@@ -22260,7 +22260,7 @@
    "age_max": 1100,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "hgn_001",
@@ -22372,7 +22372,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "hbi_004",
@@ -22420,7 +22420,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hvb_001",
@@ -22500,7 +22500,7 @@
    "age_max": 96,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hil_005",
@@ -22516,7 +22516,7 @@
    "age_max": 96,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hil_006",
@@ -22564,7 +22564,7 @@
    "age_max": 800,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "him_002",
@@ -22580,7 +22580,7 @@
    "age_max": 1350,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "hmb_001",
@@ -22628,7 +22628,7 @@
    "age_max": 200,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "hir_001",
@@ -22644,7 +22644,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_002",
@@ -22660,7 +22660,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "hir_003",
@@ -22676,7 +22676,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_004",
@@ -22692,7 +22692,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_005",
@@ -22708,7 +22708,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_006",
@@ -22724,7 +22724,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_007",
@@ -22740,7 +22740,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_008",
@@ -22756,7 +22756,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_009",
@@ -22772,7 +22772,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hir_010",
@@ -22788,7 +22788,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hir_011",
@@ -22804,7 +22804,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_012",
@@ -22836,7 +22836,7 @@
    "age_max": 400,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hir_014",
@@ -22852,7 +22852,7 @@
    "age_max": 325,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hir_015",
@@ -22900,7 +22900,7 @@
    "age_max": 1600,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hir_018",
@@ -22916,7 +22916,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hir_019",
@@ -22932,7 +22932,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hir_020",
@@ -23364,7 +23364,7 @@
    "age_max": 650,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "hok_001",
@@ -23380,7 +23380,7 @@
    "age_max": 2000,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "hok_002",
@@ -23796,7 +23796,7 @@
    "age_max": 900,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hrj_002",
@@ -23812,7 +23812,7 @@
    "age_max": 1400,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "hrn_001",
@@ -24116,7 +24116,7 @@
    "age_max": 340,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "iga_001",
@@ -24212,7 +24212,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "inm_001",
@@ -24548,7 +24548,7 @@
    "age_max": 220,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "jae_001",
@@ -24580,7 +24580,7 @@
    "age_max": 400,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "gos_002",
@@ -24594,7 +24594,7 @@
    "precision": "approximate",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -24644,7 +24644,7 @@
    "age_max": 825,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "jer_001",
@@ -24676,7 +24676,7 @@
    "age_max": 220,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "kga_001",
@@ -24964,7 +24964,7 @@
    "age_max": 750,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kmk_002",
@@ -24996,7 +24996,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kmk_004",
@@ -25012,7 +25012,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kmk_005",
@@ -25028,7 +25028,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kmk_006",
@@ -25044,7 +25044,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kng_001",
@@ -25074,7 +25074,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 4
   },
@@ -25188,7 +25188,7 @@
    "age_max": 65,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kcm_002",
@@ -25204,7 +25204,7 @@
    "age_max": 75,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "kcm_003",
@@ -25220,7 +25220,7 @@
    "age_max": 60,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kcm_004",
@@ -25236,7 +25236,7 @@
    "age_max": 55,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ksk_001",
@@ -25252,7 +25252,7 @@
    "age_max": 1300,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "kau_001",
@@ -25506,7 +25506,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -25524,7 +25524,7 @@
    "age_max": 3500,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kwt_001",
@@ -25540,7 +25540,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "kwz_001",
@@ -25556,7 +25556,7 @@
    "age_max": 1500,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kwz_002",
@@ -25604,7 +25604,7 @@
    "age_max": 1800,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "kcy_002",
@@ -25620,7 +25620,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kcy_003",
@@ -25636,7 +25636,7 @@
    "age_max": 2500,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "kin_001",
@@ -25764,7 +25764,7 @@
    "age_max": 450,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "kot_001",
@@ -25794,7 +25794,7 @@
    "precision": "confirmed",
    "age_min": 1200,
    "age_max": 1400,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -25810,7 +25810,7 @@
    "precision": "approximate",
    "age_min": 200,
    "age_max": 250,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -26468,7 +26468,7 @@
    "age_max": 400,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "ksz_001",
@@ -27172,7 +27172,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "lec_001",
@@ -27186,9 +27186,9 @@
    "precision": "confirmed",
    "age_min": 800,
    "age_max": 1200,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "lee_001",
@@ -28468,7 +28468,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "lim_002",
@@ -29188,7 +29188,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "lvp_002",
@@ -29796,7 +29796,7 @@
    "age_max": 280,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "lax_002",
@@ -29983,12 +29983,12 @@
    "country": "Slovakia",
    "lat": 48.323319,
    "lng": 17.101986,
-   "precision": "approximate",
+   "precision": "confirmed",
    "age_min": 600,
    "age_max": 800,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "luc_001",
@@ -30250,7 +30250,7 @@
    "id": "luk_001",
    "tier": "highlighted",
    "name": "Lukavický dub (Dub na Hrádku / Dub u Lukavické tvrze)",
-   "species": "Oak (Quercus sp.)",
+   "species": "Pedunculate Oak (Quercus robur)",
    "city": "Lukavice",
    "country": "Czech Republic",
    "lat": 49.88918667,
@@ -30260,7 +30260,7 @@
    "age_max": 850,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 5
   },
   {
    "id": "luk_002",
@@ -30276,7 +30276,7 @@
    "age_max": 200,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "lul_001",
@@ -30292,7 +30292,7 @@
    "age_max": 2800,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "lux_001",
@@ -30948,7 +30948,7 @@
    "age_max": 320,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mac_001",
@@ -30964,7 +30964,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mdr_001",
@@ -31412,7 +31412,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "mae_002",
@@ -31428,7 +31428,7 @@
    "age_max": 40,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "mgs_001",
@@ -31469,14 +31469,14 @@
    "species": "Pedunculate Oak (Quercus robur)",
    "city": "Malacky",
    "country": "Slovakia",
-   "lat": 48.439075,
-   "lng": 17.036208,
-   "precision": "approximate",
+   "lat": 48.43908,
+   "lng": 17.03621,
+   "precision": "confirmed",
    "age_min": 500,
    "age_max": 600,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "mlg_001",
@@ -31629,14 +31629,14 @@
    "species": "Mediterranean Hackberry (Celtis australis)",
    "city": "Mallorca",
    "country": "Spain",
-   "lat": 39.822624,
-   "lng": 2.883793,
-   "precision": "approximate",
+   "lat": 39.8226241,
+   "lng": 2.8837678,
+   "precision": "confirmed",
    "age_min": 150,
    "age_max": 350,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "mlc_002",
@@ -31645,14 +31645,14 @@
    "species": "Mediterranean Hackberry (Celtis australis)",
    "city": "Mallorca",
    "country": "Spain",
-   "lat": 39.566466,
-   "lng": 2.988742,
-   "precision": "approximate",
+   "lat": 39.5665581,
+   "lng": 2.9888217,
+   "precision": "confirmed",
    "age_min": null,
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "mlc_003",
@@ -31661,14 +31661,14 @@
    "species": "Stone Pine (Pinus pinea)",
    "city": "Mallorca",
    "country": "Spain",
-   "lat": 39.754053,
-   "lng": 2.637286,
-   "precision": "approximate",
+   "lat": 39.75389,
+   "lng": 2.6372,
+   "precision": "confirmed",
    "age_min": 100,
    "age_max": 200,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "mlc_004",
@@ -31677,14 +31677,14 @@
    "species": "Holm Oak (Quercus ilex)",
    "city": "Mallorca",
    "country": "Spain",
-   "lat": 39.821816,
-   "lng": 2.869551,
-   "precision": "approximate",
+   "lat": 39.8219666,
+   "lng": 2.8694273,
+   "precision": "confirmed",
    "age_min": 500,
    "age_max": 600,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "mlc_005",
@@ -31693,14 +31693,14 @@
    "species": "Holm Oak (Quercus ilex)",
    "city": "Mallorca",
    "country": "Spain",
-   "lat": 39.841091,
-   "lng": 2.909569,
-   "precision": "approximate",
+   "lat": 39.8410914,
+   "lng": 2.9095757,
+   "precision": "confirmed",
    "age_min": 400,
    "age_max": 600,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "mlc_006",
@@ -31709,14 +31709,14 @@
    "species": "Aleppo Pine (Pinus halepensis)",
    "city": "Mallorca",
    "country": "Spain",
-   "lat": 39.630312,
-   "lng": 2.732178,
-   "precision": "approximate",
+   "lat": 39.6303334,
+   "lng": 2.7321449,
+   "precision": "confirmed",
    "age_min": null,
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "mls_001",
@@ -31732,7 +31732,7 @@
    "age_max": 450,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mls_002",
@@ -31748,7 +31748,7 @@
    "age_max": 160,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mls_003",
@@ -31780,7 +31780,7 @@
    "age_max": 350,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mcr_001",
@@ -32351,12 +32351,12 @@
    "country": "Hungary",
    "lat": 46.215883,
    "lng": 19.379803,
-   "precision": "approximate",
+   "precision": "confirmed",
    "age_min": 230,
    "age_max": 260,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "mza_001",
@@ -32372,7 +32372,7 @@
    "age_max": 1400,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "men_003",
@@ -32628,7 +32628,7 @@
    "age_max": 400,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "mzd_002",
@@ -33218,7 +33218,7 @@
    "precision": "confirmed",
    "age_min": 650,
    "age_max": 750,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -33485,14 +33485,14 @@
    "species": "Pedunculate Oak (Quercus robur)",
    "city": "Modena",
    "country": "Italy",
-   "lat": 44.6488,
-   "lng": 10.9325,
-   "precision": "approximate",
+   "lat": 44.6490553,
+   "lng": 10.9319383,
+   "precision": "confirmed",
    "age_min": 170,
    "age_max": 186,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "mod_004",
@@ -33860,7 +33860,7 @@
    "age_max": 420,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 6
   },
   {
    "id": "mor_002",
@@ -33876,7 +33876,7 @@
    "age_max": 220,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "mtz_001",
@@ -33901,14 +33901,14 @@
    "species": "European Pear (Pyrus communis)",
    "city": "Mrákotín",
    "country": "Czech Republic",
-   "lat": 49.81877,
-   "lng": 15.95953,
-   "precision": "approximate",
+   "lat": 49.81975,
+   "lng": 15.96243,
+   "precision": "confirmed",
    "age_min": 90,
    "age_max": 130,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "mze_001",
@@ -33924,7 +33924,7 @@
    "age_max": 450,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "muc_001",
@@ -34173,14 +34173,14 @@
    "species": "Large-leaved Lime (Tilia platyphyllos)",
    "city": "Munich",
    "country": "Germany",
-   "lat": 48.17295,
-   "lng": 11.61225,
-   "precision": "approximate",
+   "lat": 48.17187627,
+   "lng": 11.61091904,
+   "precision": "confirmed",
    "age_min": null,
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "muc_021",
@@ -34910,13 +34910,13 @@
    "city": "Munich",
    "country": "Germany",
    "lat": 48.26642,
-   "lng": 11.43823,
-   "precision": "approximate",
+   "lng": 11.43822,
+   "precision": "confirmed",
    "age_min": 90,
    "age_max": 130,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "msl_001",
@@ -35012,7 +35012,7 @@
    "age_max": 650,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "nga_001",
@@ -35204,7 +35204,7 @@
    "age_max": 1200,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "nap_001",
@@ -35908,7 +35908,7 @@
    "age_max": 900,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "nol_001",
@@ -37092,7 +37092,7 @@
    "age_max": 155,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "nvp_001",
@@ -38004,7 +38004,7 @@
    "age_max": 1200,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "oly_002",
@@ -38100,7 +38100,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ond_001",
@@ -38164,7 +38164,7 @@
    "age_max": 760,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "osa_001",
@@ -38340,7 +38340,7 @@
    "age_max": 1000,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "mko_001",
@@ -38354,7 +38354,7 @@
    "precision": "confirmed",
    "age_min": 700,
    "age_max": 900,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -38372,7 +38372,7 @@
    "age_max": 3000,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ott_001",
@@ -39028,7 +39028,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pgm_002",
@@ -39044,7 +39044,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pgm_003",
@@ -39076,7 +39076,7 @@
    "age_max": 400,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pgm_005",
@@ -39556,7 +39556,7 @@
    "age_max": 1100,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pam_001",
@@ -40180,7 +40180,7 @@
    "age_max": 101,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "par_028",
@@ -40279,6 +40279,22 @@
    "sources": 1
   },
   {
+   "id": "par_034",
+   "tier": "highlighted",
+   "name": "The Great Lawn Plane of Parc Montsouris",
+   "species": "London Plane (Platanus x acerifolia)",
+   "city": "Paris",
+   "country": "France",
+   "lat": 48.82314021693391,
+   "lng": 2.336081457770188,
+   "precision": "confirmed",
+   "age_min": null,
+   "age_max": null,
+   "has_photo": true,
+   "has_story": true,
+   "sources": 2
+  },
+  {
    "id": "prm_001",
    "tier": "highlighted",
    "name": "The Great Plane of Palazzo Ducale",
@@ -40370,9 +40386,9 @@
    "precision": "confirmed",
    "age_min": 700,
    "age_max": 900,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pky_002",
@@ -40386,9 +40402,9 @@
    "precision": "confirmed",
    "age_min": 550,
    "age_max": 650,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pmn_001",
@@ -40580,7 +40596,7 @@
    "age_max": 1000,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pgi_001",
@@ -40916,7 +40932,7 @@
    "age_max": 245,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "psa_002",
@@ -40932,7 +40948,7 @@
    "age_max": 245,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "psa_003",
@@ -40948,7 +40964,7 @@
    "age_max": 225,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "psa_004",
@@ -40964,7 +40980,7 @@
    "age_max": 200,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "psz_001",
@@ -40980,7 +40996,7 @@
    "age_max": 800,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pit_001",
@@ -41060,7 +41076,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pgn_002",
@@ -41092,7 +41108,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "plg_002",
@@ -41156,7 +41172,7 @@
    "age_max": 700,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "plg_006",
@@ -41252,7 +41268,7 @@
    "age_max": 1200,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pta_001",
@@ -42292,7 +42308,7 @@
    "age_max": 350,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pot_005",
@@ -42308,7 +42324,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pot_006",
@@ -42324,7 +42340,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "pot_007",
@@ -42340,7 +42356,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pot_008",
@@ -42356,7 +42372,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pot_009",
@@ -42372,7 +42388,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "poz_001",
@@ -42484,7 +42500,7 @@
    "age_max": 155,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "poz_008",
@@ -42516,7 +42532,7 @@
    "age_max": 115,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "poz_010",
@@ -42532,7 +42548,7 @@
    "age_max": 300,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "prg_001",
@@ -43060,7 +43076,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pri_003",
@@ -43076,7 +43092,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "pri_004",
@@ -43108,7 +43124,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "pnj_001",
@@ -43316,7 +43332,7 @@
    "age_max": 1000,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ran_001",
@@ -43332,7 +43348,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "rdn_001",
@@ -43348,7 +43364,7 @@
    "age_max": 450,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "rdn_002",
@@ -43524,7 +43540,7 @@
    "age_max": 385,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "rvd_002",
@@ -43540,7 +43556,7 @@
    "age_max": 385,
    "has_photo": true,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "rvd_003",
@@ -43556,7 +43572,7 @@
    "age_max": 350,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "rvd_004",
@@ -43572,7 +43588,7 @@
    "age_max": 350,
    "has_photo": false,
    "has_story": true,
-   "sources": 5
+   "sources": 6
   },
   {
    "id": "rys_001",
@@ -43588,7 +43604,7 @@
    "age_max": 500,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "rey_001",
@@ -43780,7 +43796,7 @@
    "age_max": 660,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "rio_001",
@@ -44586,7 +44602,7 @@
    "id": "roo_010",
    "tier": "highlighted",
    "name": "The London Plane of De Kring",
-   "species": "London Plane (Platanus x hispanica)",
+   "species": "London Plane (Platanus x acerifolia)",
    "city": "Roosendaal",
    "country": "Netherlands",
    "lat": 51.53343,
@@ -44610,6 +44626,70 @@
    "precision": "confirmed",
    "age_min": 146,
    "age_max": 156,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "roo_012",
+   "tier": "highlighted",
+   "name": "The Copper Beech of Nispen Cemetery",
+   "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.482347,
+   "lng": 4.462579,
+   "precision": "confirmed",
+   "age_min": 170,
+   "age_max": 180,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "roo_013",
+   "tier": "highlighted",
+   "name": "The Julianalinde of Nispen",
+   "species": "Common Lime (Tilia x europaea)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.48774,
+   "lng": 4.459209,
+   "precision": "confirmed",
+   "age_min": 116,
+   "age_max": 118,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "roo_014",
+   "tier": "highlighted",
+   "name": "The Oak of Nispen",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.479747,
+   "lng": 4.460782,
+   "precision": "confirmed",
+   "age_min": 96,
+   "age_max": 106,
+   "has_photo": false,
+   "has_story": true,
+   "sources": 2
+  },
+  {
+   "id": "roo_015",
+   "tier": "highlighted",
+   "name": "The Beatrixlinde of Nispen",
+   "species": "American Lime (Tilia americana Nova)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.482753,
+   "lng": 4.456668,
+   "precision": "confirmed",
+   "age_min": 87,
+   "age_max": 89,
    "has_photo": false,
    "has_story": true,
    "sources": 3
@@ -44708,7 +44788,7 @@
    "age_max": 170,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "rot_003",
@@ -44733,14 +44813,14 @@
    "species": "Crimean Linden (Tilia x euchlora)",
    "city": "Rotterdam",
    "country": "Netherlands",
-   "lat": 51.9075341,
-   "lng": 4.4753899,
-   "precision": "approximate",
+   "lat": 51.90739468787055,
+   "lng": 4.473489113419174,
+   "precision": "confirmed",
    "age_min": 125,
    "age_max": 130,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "rot_005",
@@ -44749,14 +44829,14 @@
    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
    "city": "Rotterdam",
    "country": "Netherlands",
-   "lat": 51.9100144,
-   "lng": 4.4754989,
-   "precision": "approximate",
+   "lat": 51.91047503009056,
+   "lng": 4.475230777520651,
+   "precision": "confirmed",
    "age_min": 130,
    "age_max": 138,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "rot_006",
@@ -45586,7 +45666,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -45796,7 +45876,7 @@
    "age_max": 165,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "san_003",
@@ -45805,14 +45885,14 @@
    "species": "Mexican Sycamore (Platanus mexicana)",
    "city": "San Antonio",
    "country": "United States",
-   "lat": 29.4647,
-   "lng": -98.4809,
-   "precision": "approximate",
+   "lat": 29.46466667,
+   "lng": -98.48094444,
+   "precision": "confirmed",
    "age_min": 35,
    "age_max": 45,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "san_004",
@@ -45828,7 +45908,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "sdg_001",
@@ -45860,7 +45940,7 @@
    "age_max": 106,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "sdg_003",
@@ -45892,7 +45972,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "sdg_005",
@@ -45924,7 +46004,7 @@
    "age_max": 95,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "sfo_001",
@@ -46084,7 +46164,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "tul_001",
@@ -46100,7 +46180,7 @@
    "age_max": 3000,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "sal_001",
@@ -46165,22 +46245,6 @@
    "has_photo": false,
    "has_story": true,
    "sources": 4
-  },
-  {
-   "id": "fdl_001",
-   "tier": "highlighted",
-   "name": "Figueira das Lágrimas",
-   "species": "Fig (Ficus sp.)",
-   "city": "Sao Paulo",
-   "country": "Brazil",
-   "lat": -23.6321513,
-   "lng": -46.5824821,
-   "precision": "approximate",
-   "age_min": 200,
-   "age_max": 280,
-   "has_photo": false,
-   "has_story": true,
-   "sources": 3
   },
   {
    "id": "spr_001",
@@ -46340,7 +46404,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "sar_005",
@@ -46357,6 +46421,38 @@
    "has_photo": true,
    "has_story": true,
    "sources": 4
+  },
+  {
+   "id": "sar_006",
+   "tier": "highlighted",
+   "name": "The Cork Oak of Sa Tuppa",
+   "species": "Cork Oak (Quercus suber)",
+   "city": "Sardinia",
+   "country": "Italy",
+   "lat": 40.41305,
+   "lng": 9.2902,
+   "precision": "confirmed",
+   "age_min": 200,
+   "age_max": 300,
+   "has_photo": true,
+   "has_story": true,
+   "sources": 3
+  },
+  {
+   "id": "sar_007",
+   "tier": "highlighted",
+   "name": "The Downy Oak of Su Fundale",
+   "species": "Downy Oak (Quercus pubescens)",
+   "city": "Sardinia",
+   "country": "Italy",
+   "lat": 40.004794,
+   "lng": 9.433653,
+   "precision": "approximate",
+   "age_min": 300,
+   "age_max": 400,
+   "has_photo": true,
+   "has_story": true,
+   "sources": 3
   },
   {
    "id": "sav_001",
@@ -46836,7 +46932,7 @@
    "age_max": 530,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "sen_001",
@@ -48007,6 +48103,22 @@
    "sources": 3
   },
   {
+   "id": "sev_044",
+   "tier": "highlighted",
+   "name": "The Cardón of the Expo",
+   "species": "Cardón (Pachycereus pringlei)",
+   "city": "Seville",
+   "country": "Spain",
+   "lat": 37.40908833,
+   "lng": -6.00336945,
+   "precision": "confirmed",
+   "age_min": 200,
+   "age_max": 300,
+   "has_photo": true,
+   "has_story": true,
+   "sources": 3
+  },
+  {
    "id": "smz_001",
    "tier": "highlighted",
    "name": "The Great Cycad of Ryuge-ji",
@@ -48084,7 +48196,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "sho_002",
@@ -48116,7 +48228,7 @@
    "age_max": 99,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "sll_002",
@@ -48132,7 +48244,7 @@
    "age_max": 36,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "sll_003",
@@ -48180,7 +48292,7 @@
    "age_max": 300,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "sgp_001",
@@ -48813,14 +48925,14 @@
    "species": "Fig (Ficus sp.)",
    "city": "Siquijor",
    "country": "Philippines",
-   "lat": 9.121,
-   "lng": 123.5754,
-   "precision": "approximate",
+   "lat": 9.1209778,
+   "lng": 123.57543,
+   "precision": "confirmed",
    "age_min": 400,
    "age_max": 600,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "sit_001",
@@ -48893,14 +49005,14 @@
    "species": "White Mulberry (Morus alba)",
    "city": "Sofia",
    "country": "Bulgaria",
-   "lat": 42.6998,
-   "lng": 23.3245,
-   "precision": "approximate",
+   "lat": 42.699321,
+   "lng": 23.324989,
+   "precision": "confirmed",
    "age_min": 220,
    "age_max": 650,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "sof_002",
@@ -48980,7 +49092,7 @@
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "srn_001",
@@ -49396,7 +49508,7 @@
    "age_max": 1000,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "sms_001",
@@ -49794,7 +49906,7 @@
    "precision": "approximate",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -50189,14 +50301,14 @@
    "species": "Ginkgo (Ginkgo biloba)",
    "city": "Takachiho",
    "country": "Japan",
-   "lat": 32.7450026,
-   "lng": 131.3080147,
-   "precision": "approximate",
+   "lat": 32.745152,
+   "lng": 131.307602,
+   "precision": "confirmed",
    "age_min": 600,
    "age_max": 900,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "tkc_005",
@@ -50205,14 +50317,14 @@
    "species": "Saw-leaf Zelkova (Zelkova serrata)",
    "city": "Takachiho",
    "country": "Japan",
-   "lat": 32.7450026,
-   "lng": 131.3080147,
-   "precision": "approximate",
+   "lat": 32.745079,
+   "lng": 131.307495,
+   "precision": "confirmed",
    "age_min": null,
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "tkh_001",
@@ -50276,7 +50388,23 @@
    "age_max": 3000,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
+  },
+  {
+   "id": "tkt_001",
+   "tier": "highlighted",
+   "name": "The Cedars of Noike Shrine",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "city": "Taketa",
+   "country": "Japan",
+   "lat": 33.04572,
+   "lng": 131.299653,
+   "precision": "confirmed",
+   "age_min": 700,
+   "age_max": 900,
+   "has_photo": true,
+   "has_story": true,
+   "sources": 7
   },
   {
    "id": "tln_001",
@@ -50436,7 +50564,7 @@
    "age_max": 1200,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "tmb_002",
@@ -50468,23 +50596,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
-  },
-  {
-   "id": "tgn_002",
-   "tier": "highlighted",
-   "name": "The Pine of Bofarull",
-   "species": "Stone Pine (Pinus pinea)",
-   "city": "Tarragona",
-   "country": "Spain",
-   "lat": 41.14451,
-   "lng": 1.14447,
-   "precision": "confirmed",
-   "age_min": null,
-   "age_max": null,
-   "has_photo": true,
-   "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "tgn_003",
@@ -50532,7 +50644,7 @@
    "age_max": 250,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "tat_001",
@@ -50882,7 +50994,7 @@
    "precision": "confirmed",
    "age_min": 126,
    "age_max": 136,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -51076,7 +51188,7 @@
    "age_max": 870,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 5
   },
   {
    "id": "the_002",
@@ -51092,7 +51204,7 @@
    "age_max": 330,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "the_003",
@@ -51108,7 +51220,7 @@
    "age_max": 255,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "the_004",
@@ -51124,7 +51236,7 @@
    "age_max": 220,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "til_004",
@@ -51442,9 +51554,9 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "tga_001",
@@ -51458,7 +51570,7 @@
    "precision": "confirmed",
    "age_min": 700,
    "age_max": 1000,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -52948,7 +53060,7 @@
    "age_max": 800,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "tsa_001",
@@ -52964,7 +53076,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "tor_001",
@@ -53106,7 +53218,7 @@
    "precision": "confirmed",
    "age_min": 200,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -53154,7 +53266,7 @@
    "precision": "confirmed",
    "age_min": 260,
    "age_max": 280,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -53220,7 +53332,7 @@
    "age_max": 1200,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "uek_001",
@@ -53236,7 +53348,7 @@
    "age_max": 800,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "unn_001",
@@ -53250,7 +53362,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -53284,7 +53396,7 @@
    "age_max": 710,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 5
   },
   {
    "id": "utr_001",
@@ -53348,7 +53460,7 @@
    "age_max": 200,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "utr_005",
@@ -53794,9 +53906,9 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "vni_002",
@@ -53826,7 +53938,7 @@
    "precision": "confirmed",
    "age_min": 250,
    "age_max": 350,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 4
   },
@@ -54356,7 +54468,7 @@
    "age_max": 700,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "val_001",
@@ -54511,12 +54623,12 @@
    "country": "Bulgaria",
    "lat": 43.1618,
    "lng": 26.809764,
-   "precision": "approximate",
+   "precision": "confirmed",
    "age_min": 400,
    "age_max": 500,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "vbo_001",
@@ -56194,7 +56306,7 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -56324,7 +56436,7 @@
    "age_max": 2500,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "wai_002",
@@ -56340,7 +56452,7 @@
    "age_max": 4000,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wrm_001",
@@ -56356,7 +56468,7 @@
    "age_max": 235,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "war_001",
@@ -57300,7 +57412,7 @@
    "age_max": 400,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wil_001",
@@ -57316,7 +57428,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "wil_002",
@@ -57332,7 +57444,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 3
   },
   {
    "id": "wil_003",
@@ -57348,7 +57460,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "wil_004",
@@ -57364,7 +57476,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "wil_006",
@@ -57380,7 +57492,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "wil_007",
@@ -57396,7 +57508,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "wil_008",
@@ -57412,7 +57524,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 3
   },
   {
    "id": "wil_009",
@@ -57428,7 +57540,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 3
   },
   {
    "id": "wpg_001",
@@ -57476,7 +57588,7 @@
    "age_max": 230,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wlf_001",
@@ -57508,7 +57620,7 @@
    "age_max": 550,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "wro_001",
@@ -57524,7 +57636,7 @@
    "age_max": 450,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wro_002",
@@ -57540,7 +57652,7 @@
    "age_max": 460,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wro_003",
@@ -57556,7 +57668,7 @@
    "age_max": null,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wro_004",
@@ -57572,7 +57684,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "wro_005",
@@ -57586,7 +57698,7 @@
    "precision": "confirmed",
    "age_min": 200,
    "age_max": 220,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -57620,7 +57732,7 @@
    "age_max": 20,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "xho_001",
@@ -57636,7 +57748,7 @@
    "age_max": 300,
    "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "yab_001",
@@ -57652,7 +57764,7 @@
    "age_max": 1300,
    "has_photo": true,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "yab_002",
@@ -57668,7 +57780,7 @@
    "age_max": 900,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "yab_003",
@@ -57698,9 +57810,9 @@
    "precision": "confirmed",
    "age_min": 350,
    "age_max": 450,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "yak_001",
@@ -57732,7 +57844,7 @@
    "age_max": 3000,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "ynh_001",
@@ -57746,7 +57858,7 @@
    "precision": "confirmed",
    "age_min": 150,
    "age_max": 200,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -57924,7 +58036,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ynp_004",
@@ -57940,7 +58052,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "ynp_005",
@@ -57956,7 +58068,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "yos_001",
@@ -57970,7 +58082,7 @@
    "precision": "confirmed",
    "age_min": 500,
    "age_max": 1000,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 3
   },
@@ -58068,7 +58180,7 @@
    "age_max": 1000,
    "has_photo": false,
    "has_story": true,
-   "sources": 3
+   "sources": 4
   },
   {
    "id": "zaa_002",
@@ -58132,7 +58244,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 1
+   "sources": 3
   },
   {
    "id": "zal_001",
@@ -58228,7 +58340,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 4
+   "sources": 6
   },
   {
    "id": "zar_005",
@@ -58322,9 +58434,9 @@
    "precision": "confirmed",
    "age_min": 250,
    "age_max": 280,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 3
   },
   {
    "id": "zil_002",
@@ -58340,7 +58452,7 @@
    "age_max": null,
    "has_photo": false,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "zil_003",
@@ -58354,9 +58466,9 @@
    "precision": "confirmed",
    "age_min": null,
    "age_max": null,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
-   "sources": 2
+   "sources": 4
   },
   {
    "id": "zur_001",
@@ -58450,7 +58562,7 @@
    "precision": "confirmed",
    "age_min": 600,
    "age_max": 900,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -58466,7 +58578,7 @@
    "precision": "confirmed",
    "age_min": 580,
    "age_max": 630,
-   "has_photo": false,
+   "has_photo": true,
    "has_story": true,
    "sources": 2
   },
@@ -1204355,6 +1204467,70 @@
    "sources": 0
   },
   {
+   "id": "lead_batenburg_001",
+   "tier": "lead",
+   "name": "Brown Beech at the Old St Victor church",
+   "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+   "city": "Batenburg",
+   "country": "Netherlands",
+   "lat": 51.823035,
+   "lng": 5.629069,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1677843, Oude of St Victorkerk, Grotestraat 11A. Girth 510 cm, height 20 m, planting band 1880-1890, solitary, owner religieuze instantie, setting plein, paved. Last observed May 2026. Register note: large trunk wound from a broken limb, partly rotten, bracket fungus (Ganoderma lipsiense), regular checks wanted. PDOK: register point lands on a large bare crown beside the church, mostly separa",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_batenburg_002",
+   "tier": "lead",
+   "name": "Horse Chestnut on Grotestraat",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "city": "Batenburg",
+   "country": "Netherlands",
+   "lat": 51.822759,
+   "lng": 5.628748,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1677842, Bij de kerk, Grotestraat 11A. Girth 508 cm, height 26 m, planting band 1900-1910 (so about 120 years, not the 500+ the girth might suggest), solitary, owner religieuze instantie, setting tuin. Last observed May 2026. Register note: large limb blew out in 1992 and was already treated. PDOK: register point lands exactly on one large bare crown beside the street, clearly identifiable; c",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_batenburg_003",
+   "tier": "lead",
+   "name": "Limes at Batenburg castle ruin",
+   "species": "Small-leaved Lime (Tilia cordata)",
+   "city": "Batenburg",
+   "country": "Netherlands",
+   "lat": 51.823749,
+   "lng": 5.631684,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1677845, bij ruine Kasteel Batenburg, t.o. Molendijk 11. A GROUP of 22 limes (aantal_bomen 22), girth 411 cm (largest), height 8 m, band 1600-1700, owner natuurbeschermingsorganisatie (Geldersch Landschap en Kasteelen). Register 1993 note: old court tree ('gerechtsboom'), planted by Jacoba van Beieren (register claim only, NOT corroborated: web search found no source linking her to Batenburg;",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_batenburg_004",
+   "tier": "lead",
+   "name": "Calabrian maple at Batenburg cemetery",
+   "species": "Italian Maple (Acer lobelii), register name 'Calabrische es'",
+   "city": "Batenburg",
+   "country": "Netherlands",
+   "lat": 51.824495,
+   "lng": 5.632931,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1677848, Begraafplaats Kasteelallee. Girth 345 cm, height 12 m, band 1880-1890, solitary, owner gemeente, reason dendrologisch. Register note: grafted on Acer cappadocicum 'Rubrum', much dead wood, cavity in trunk (1990). Last observed Feb 2026. FAILS pin: PDOK shows a dense dark round mass in the middle of the cemetery gravel about 8 m from the register point, with a grave monument at its ed",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
    "id": "lead_unknown_001",
    "tier": "lead",
    "name": "The Ormeau Plane",
@@ -1214051,6 +1214227,38 @@
    "sources": 0
   },
   {
+   "id": "lead_unknown_007",
+   "tier": "lead",
+   "name": "Oak in Low Meadow, Cammo Estate",
+   "species": "Oak (Quercus sp.)",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "Said to be the oldest tree in Cammo, dated 1669 (basis unknown, predates Sir John Clerk). Friends of Cammo (Simon Gillam, secretary) by mail 2026-10-13, in reply to our missing-tree ask; they say the dates are what they were told, origin unknown. Needs a pin and a second source; asked them how to pick it out.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_008",
+   "tier": "lead",
+   "name": "Yew near the former north-west gate, Cammo Estate",
+   "species": "Yew (Taxus baccata)",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "Dated 1715, one of two surviving trees from Sir John Clerk's time, now inside a grove of later yews planted as an entrance feature. Friends of Cammo (Simon Gillam, secretary) by mail 2026-10-13, in reply to our missing-tree ask; they say the dates are what they were told, origin unknown. Needs a pin and a second source.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
    "id": "lead_unknown_001",
    "tier": "lead",
    "name": "Witte moerbei (White Mulberry) at the Van Abbemuseum",
@@ -1216283,6 +1216491,38 @@
    "country": "",
    "lat": null,
    "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_013",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": 50.121767,
+   "lng": 8.725317,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_014",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": 50.105332,
+   "lng": 8.671875,
    "precision": null,
    "reason": "",
    "note": "",
@@ -1222461,7 +1222701,7 @@
    "lng": 12.35598,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q117663021.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. DELIVERED as lpz_022 (N78917, 291 cm, 19 m). Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark'",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222477,7 +1222717,7 @@
    "lng": 12.32978,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q117663121.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. DELIVERED as lpz_021 (N78815, 357 cm, 24 m). Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark'",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222493,7 +1222733,7 @@
    "lng": 12.37409,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q138747841.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78902 Feld-Ulme 645 cm, 33 m (baumkunde 365 cm, 29 m, 2017), the stoutest ND elm, but cadastre area is 'Naturdenkmale auf Privatgrund' and baumkunde says Zugang: ",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222509,7 +1222749,7 @@
    "lng": 12.41107,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118216005.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No cadastre tree within 60 m of the lead coordinate (51.33529,12.41107); not matched, not checked further. Earlier note: Naturdenkmal (Leipzig council ordinance, d",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222525,7 +1222765,7 @@
    "lng": 12.4078,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118256246.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78822 Gemeine Esche 390 cm, 20 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wi",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222541,7 +1222781,7 @@
    "lng": 12.40854,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118279279.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78821 Platane 455 cm, 27 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedi",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222557,7 +1222797,7 @@
    "lng": 12.40914,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118259357.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. Cadastre has N78823 Veredelte Blut-Buche 377 cm, 23 m nearby on 'Naturdenkmale auf Privatgrund'; no hanging beech matched. Private ground, access unverified. Earli",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222573,7 +1222813,7 @@
    "lng": 12.40447,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q117714201.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No ND weeping willow matched within 60 m of the lead coordinate in the cadastre (only unrelated park trees); not matched. Earlier note: Naturdenkmal (Leipzig counc",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222589,7 +1222829,7 @@
    "lng": 12.41989,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118211754.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78825 Faecherblattbaum 178 cm, 23 m, 'Naturdenkmale auf Privatgrund': private ground, small girth, access unverified. Earlier note: Naturdenkmal (Leipzig council ",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222605,7 +1222845,7 @@
    "lng": 12.42065,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118212512.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78824 Veredelte Blut-Buche 340 cm, 15 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222621,7 +1222861,7 @@
    "lng": 12.41856,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118211172.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78858 Veredelte Blut-Buche 435 cm, 26 m, 'Naturdenkmale auf Privatgrund' next to Abtnaundorfer Park: private ground, access unverified. Earlier note: Naturdenkmal",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1222637,7 +1222877,39 @@
    "lng": 12.43557,
    "precision": null,
    "reason": "",
-   "note": "Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the authority's site was found (leipzig.de ND page 404; no register record URL for this tree), so it cannot end RICH (measurement + official record missing). 2026-10-12 deepen pass. Wikidata Q118225344.",
+   "note": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. N78880 Berg-Ahorn 291 cm, 17 m, 'Naturdenkmale auf Privatgrund': private ground, access unverified. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikip",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_leipzig_014",
+   "tier": "lead",
+   "name": "Stiel-Eichen am Torhaus Doelitz (Helenenstrasse)",
+   "species": "Quercus robur (Pedunculate Oak)",
+   "city": "Leipzig",
+   "country": "Germany",
+   "lat": 51.287766,
+   "lng": 12.38873,
+   "precision": null,
+   "reason": "",
+   "note": "Cadastre N78872 Stiel-Eiche 570 cm, 28 m (city green Helenenstrasse/Torhaus) and N78884 550 cm, 23 m at 51.287454,12.389199 (36 m away), both Naturdenkmal. Public city green, lifecheck RECENT (iNaturalist 2026-04-26) but no photograph of either trunk in reach (Commons files nearby show the war memorial and Torhaus); the war memorial register entry mentions a Friedenseiche planted 1872 plus two lat",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_leipzig_015",
+   "tier": "lead",
+   "name": "Stieleiche Dorfanger Probstheida (Russenstrasse)",
+   "species": "Quercus robur",
+   "city": "Leipzig",
+   "country": "Germany",
+   "lat": 51.306533,
+   "lng": 12.428878,
+   "precision": null,
+   "reason": "",
+   "note": "2026-10-14 verify pass: city Baumkataster N78812, girth 374 cm, height 19 m, crown 20 m, public village green beside the Immanuelkirche; delivered as lpz_023. 2026-10-14 write pass: story and recognition line written (data/research/leipzig-verified.json, lpz_023) but preflight refused it as not rich: missing pin (approximate cadastre point, no photo). Ships once the Commons photo (Leipzig Stieleic",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1226755,6 +1227027,38 @@
    "sources": 0
   },
   {
+   "id": "lead_unknown_073",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_074",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
    "id": "lead_milan_001",
    "tier": "lead",
    "name": "Il bagolaro di Villa Marietti Radice Fossati [RESOLVED 2026-08-17, delivered as mil_019]",
@@ -1228094,6 +1228398,38 @@
    "precision": null,
    "reason": "",
    "note": "Every unmined row inside Munich city (ND 1/8, 2/8, 2/2, 3/3, 4/3, 1/2, 14/9, 10/1, 5/3, 5/1, 12/9, 11/1, 3/1) is already published, blocked by an earlier pass, or a multi-tree group (ND 3/1, 5 Platanen at 48.13283,11.56858: group, not collectible). The Dachau county rows (about 14 to 18 km) were mined on earlier passes; remaining ones are groups or have no photo in reach. Nothing further deliverab",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_munich_056",
+   "tier": "lead",
+   "name": "Winter-Linde bei Unterlappach (Dachau county)",
+   "species": "Lime (Tilia sp.)",
+   "city": "Munich",
+   "country": "Germany",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "Reader tip by mail 2026-10-12 from a botanist at SNSB (Staatliche Naturwissenschaftliche Sammlungen Bayerns), in reply to our missing-tree ask, as an old tree north of Munich. Follow-up mail 2026-10-13 gave its source: https://www.baumkunde.de/baumregister/3877-linde_bei_unterlappach/ (Maisach, Ortsteil Unterlappach, on the road to Rottbach; girth 5.65 m measured 2021-10-11). Baumkunde links a Mer",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_munich_057",
+   "tier": "lead",
+   "name": "Stiel-Eiche bei Eisolzried (Dachau county)",
+   "species": "Oak (Quercus sp.)",
+   "city": "Munich",
+   "country": "Germany",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "Reader tip by mail 2026-10-12 from a botanist at SNSB, same mail. Not yet checked against the register; needs a source, a coordinate and a life check. Already live as eis_001 (Schlosseiche bei Eisolzried, its own place page); duplicate tip.",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1237780,7 +1238116,7 @@
   },
   {
    "id": "lead_oss_002",
-   "tier": "lead",
+   "tier": "blocked",
    "name": "Basisschool De Linde",
    "species": "Common Lime (Tilia x europaea)",
    "city": "Oss",
@@ -1237789,14 +1238125,14 @@
    "lng": 5.541504,
    "precision": null,
    "reason": "",
-   "note": "LRMB register nr 1680017 ('Hollandse linde Basisschool De Linde'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting weg. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with c",
+   "note": "DEAD per register (checked 2026-10-13): LRMB 1680017 status 5 (dead/felled), last observed 2023-08.",
    "has_photo": false,
    "has_story": false,
    "sources": 0
   },
   {
    "id": "lead_oss_003",
-   "tier": "lead",
+   "tier": "blocked",
    "name": "doorn",
    "species": "Sycamore (Acer pseudoplatanus)",
    "city": "Oss",
@@ -1237805,14 +1238141,14 @@
    "lng": 5.567164,
    "precision": null,
    "reason": "",
-   "note": "LRMB register nr 1692624 ('Gewone esdoorn'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: In 1928 geplant. The register is ONE source. A second is wanted; without one the tree still ships with curation_stat",
+   "note": "DEAD per register (checked 2026-10-13): LRMB 1692624 status 5 (dead/felled).",
    "has_photo": false,
    "has_story": false,
    "sources": 0
   },
   {
    "id": "lead_oss_004",
-   "tier": "lead",
+   "tier": "blocked",
    "name": "European Beech, op kerkhof Sint-Lambertuskerk",
    "species": "European Beech (Fagus sylvatica)",
    "city": "Oss",
@@ -1237821,7 +1238157,7 @@
    "lng": 5.585654,
    "precision": null,
    "reason": "",
-   "note": "LRMB register nr 1680015 ('Beuk'). Register planting band 1880-1890, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting begraafplaats. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_st",
+   "note": "DEAD per register (checked 2026-10-13): LRMB 1680015 status 5 (dead/felled), last observed 2016.",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1237892,7 +1238228,7 @@
   },
   {
    "id": "lead_oss_009",
-   "tier": "lead",
+   "tier": "blocked",
    "name": "Horse Chestnut, Klaphekkenstraat 1/Goudmijnstraat",
    "species": "Horse Chestnut (Aesculus hippocastanum)",
    "city": "Oss",
@@ -1237901,7 +1238237,7 @@
    "lng": 5.528165,
    "precision": null,
    "reason": "",
-   "note": "LRMB register nr 1689509 ('Witte paardenkastanje'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_statu",
+   "note": "DEAD per register (checked 2026-10-13): LRMB 1689509 status 5 (dead/felled), replaced by plane 1689510 (status 6).",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1237934,6 +1238270,102 @@
    "precision": null,
    "reason": "",
    "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_oss_012",
+   "tier": "lead",
+   "name": "Gewone plataan, kerktuin Berghem",
+   "species": "London Plane (Platanus x hispanica)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.76988,
+   "lng": 5.56504,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1680018, Julianastraat 37, church garden. Girth 435 cm, height 24 m, band 1890-1900, owner religious body, setting tuin, visitable ja, last observed 2023-08. Missing: PDOK aerial shows several overlapping plane crowns, not individually identifiable, so no confirmed pin; church-garden access not evidenced. (pass 2026-10-13)",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_oss_013",
+   "tier": "lead",
+   "name": "Hollandse linde voor Sint Annakapel, Herpen",
+   "species": "Common Lime (Tilia x europaea)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.76897,
+   "lng": 5.60748,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1677958, Herpen Koolwijksestraat 5. Girth 250 cm, height 15 m, band 1880-1890, gemeente plantsoen, status 'potentieel'. Missing: several crowns in the forecourt, aerial gives no individual crown, and the girth is modest. (pass 2026-10-13)",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_oss_014",
+   "tier": "lead",
+   "name": "Zomerlindes Kasteel Oijen",
+   "species": "Summer Lime (Tilia platyphyllos)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.81208,
+   "lng": 5.52506,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1680024, Oijen Bovendijk 34-38. Girth 320 cm, height 27 m, band 1850-1860, roadside row in front of the castle moat. A row, not one collectible point; no individual crown identifiable in aerial. (pass 2026-10-13)",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_oss_015",
+   "tier": "lead",
+   "name": "Zomereiken rondom centrum Ravenstein",
+   "species": "Pedunculate Oak (Quercus robur)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.79532,
+   "lng": 5.64935,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1677952, group of oaks around the Ravenstein centre (park, gemeente). Girth 420 cm. A group along streets, not one collectible point. (pass 2026-10-13)",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_oss_016",
+   "tier": "lead",
+   "name": "Zwarte linde, Demen",
+   "species": "Common Lime (Tilia x europaea)",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.81443,
+   "lng": 5.63776,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1677849, Demen Burgemeester Canersstraat 1. Girth 250 cm, height 10 m, band 1700-1750, private owner, agrarian setting. Missing: access and pin not evidenced. (pass 2026-10-13)",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_oss_017",
+   "tier": "lead",
+   "name": "Batenburg cluster (other municipality, Wijchen)",
+   "species": "mixed",
+   "city": "Oss",
+   "country": "Netherlands",
+   "lat": 51.823,
+   "lng": 5.629,
+   "precision": null,
+   "reason": "",
+   "note": "NOT Oss: Batenburg (Wijchen) holds a walkable cluster within about 500 m: copper beech 1677843 (510 cm, 20 m), horse chestnut 1677842 (508 cm, 26 m) at the Grotestraat 11A church, winter lime at the castle ruin 1677845 (411 cm, band 1600-1700), Calabrian ash on the cemetery 1677848 (345 cm). Candidate for its own place, or a day-trip addition to Oss/Nijmegen coverage. Not verified (pins/access not",
    "has_photo": false,
    "has_story": false,
    "sources": 0
@@ -1243267,6 +1243699,134 @@
    "sources": 0
   },
   {
+   "id": "lead_roosendaal_023",
+   "tier": "lead",
+   "name": "Summer Lime, Kerkplein 8 Nispen (pastorie front garden)",
+   "species": "Tilia platyphyllos",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.481966,
+   "lng": 4.461173,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690586, 304 cm, 26 m, band 1890-1900, former candelabra form, observed 2024-05-18, register visitable ja. Small crown among roofs and gardens in the PDOK frame, cannot be placed individually; no photo. Needs a pin.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_024",
+   "tier": "lead",
+   "name": "Robinia, Kerkplein 8 Nispen (next to presbytery)",
+   "species": "Robinia pseudoacacia",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.481984,
+   "lng": 4.460867,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690587, 380 cm, 15 m, band 1870-1880, observed 2024-05-18; inspection notes dead wood and sulphur polypore at the base. Church garden, crown not placeable in the PDOK frame; no photo or exact pin.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_025",
+   "tier": "lead",
+   "name": "Canadian Poplar, Adriaan Roland Holstlaan 1",
+   "species": "Populus x canadensis",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.51328,
+   "lng": 4.46247,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690564, 520 cm, 21 m, band 1920-1930. PDOK frame (spring 2026 vintage) shows only a bare topped trunk in a cleared ring on the lawn, no crown: probably felled or reduced to a stump. Check for removal before any use.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_026",
+   "tier": "lead",
+   "name": "Silver Maple, Brugstraat 23",
+   "species": "Acer saccharinum",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53743,
+   "lng": 4.46166,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690906, 515 cm, 26 m, band 1890-1900, setting private garden (tuin), visitable onbekend: no evidence it can be seen from public ground.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_027",
+   "tier": "lead",
+   "name": "Horse Chestnut, Emile van Loonpark behind the pond",
+   "species": "Aesculus hippocastanum",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.534394,
+   "lng": 4.455283,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1680920, 432 cm, 22 m (already listed above by band); the register says it blew over years ago and was set upright, propped with steel beams. In the PDOK frame the park crowns overlap and this one cannot be isolated; park is not a small site. Needs a pin.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_028",
+   "tier": "lead",
+   "name": "Pedunculate Oaks, Wouw Lenaertsstraat 6 / Heerle Herelsestraat",
+   "species": "mixed",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.52391,
+   "lng": 4.38897,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690921 (oak 387 cm), 1690598 and 1690599 (beech 383 cm, silver lime 442 cm): all in private gardens or farm yards, visitable onbekend. Not public.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_029",
+   "tier": "lead",
+   "name": "Copper Beech, school playground De Linde, Nispen (Dorpsstraat 71)",
+   "species": "Copper Beech (Fagus sylvatica Atropunicea)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.483422,
+   "lng": 4.462025,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690584, 331 cm, 24 m, band 1920-1930, gemeente, observed 2023-09; stands behind on a primary school playground: no evidence the grounds are open to visitors (schools only with evidence), so not shipped. Same school, lime LRMB 1690583 (306 cm, 26 m, 1890-1900) at 51.483482, 4.461400.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_roosendaal_030",
+   "tier": "lead",
+   "name": "Tulip Tree, Vincentiusstraat 7 (partly in plantsoen), Roosendaal",
+   "species": "Tulip Tree (Liriodendron tulipifera)",
+   "city": "Roosendaal",
+   "country": "Netherlands",
+   "lat": 51.53757,
+   "lng": 4.45553,
+   "precision": null,
+   "reason": "",
+   "note": "LRMB 1690547, 375 cm, 25 m, band 1920-1930, gemeente plantsoen, 2 trees, observed 2025-08-10; PDOK frame 2026-10-14 shows no single clear crown at the point (streetside crowns, buildings), no pin, no photo. Also LRMB 1690634 Caucasian wingnut (369 cm, 23 m, Emile van Loonpark by the station road, 51.5339, 4.4529): crown merges with the park thicket, no pin.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
    "id": "lead_unknown_001",
    "tier": "lead",
    "name": "Hoflinde Gut Burgstall",
@@ -1245527,6 +1246087,22 @@
    "tier": "lead",
    "name": null,
    "species": "",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_001",
+   "tier": "lead",
+   "name": "Figueira das Lágrimas",
+   "species": "Fig (Ficus sp.)",
    "city": "",
    "country": "",
    "lat": null,
@@ -1252563,6 +1253139,102 @@
    "sources": 0
   },
   {
+   "id": "lead_unknown_004",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": 48.76246,
+   "lng": 9.18195,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_005",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": 48.7627,
+   "lng": 9.18475,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_006",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_007",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": 48.767996,
+   "lng": 9.109265,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_008",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_unknown_009",
+   "tier": "lead",
+   "name": null,
+   "species": "",
+   "city": "",
+   "country": "",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
    "id": "lead_unknown_001",
    "tier": "lead",
    "name": null,
@@ -1253422,6 +1254094,22 @@
    "precision": null,
    "reason": "",
    "note": "12.0 m tall, trunk 3.27 m, crown 21.8 m, declared 1997, at Siurana in Cornudella de Montsant, 29 km. Private farm.",
+   "has_photo": false,
+   "has_story": false,
+   "sources": 0
+  },
+  {
+   "id": "lead_tarragona_006",
+   "tier": "lead",
+   "name": "The Pine of Bofarull",
+   "species": "Stone Pine (Pinus pinea)",
+   "city": "Tarragona",
+   "country": "Spain",
+   "lat": null,
+   "lng": null,
+   "precision": null,
+   "reason": "",
+   "note": "",
    "has_photo": false,
    "has_story": false,
    "sources": 0

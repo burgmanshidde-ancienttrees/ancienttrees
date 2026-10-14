@@ -11,6 +11,17 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 night run (19:17 UTC window): red deploy fixed, two Roosendaal trees
+
+7-day visits: 1,440 visits, 2,030 page views.
+
+- **Fixed the red deploy.** Seville sev_044 (the mailed cactus photo) was approved but the gate dropped it: no attribution and no `source: "contributor"`. It now carries `source: "contributor"` and `unlinked: true` (no account id exists for a mailed photo; preflight allows exactly that pair). Pushed as f20ac2c7.
+- **New trees: Roosendaal roo_014 (Oak of Nispen) and roo_015 (Beatrixlinde of Nispen).** Both from the LRMB register with girth, height and a lone-crown pin like roo_012 and roo_013. Neither has a photo yet. Roosendaal is now ten trees, four of them in Nispen.
+- **Leipzig, nothing published.** The city's open Baumkataster WFS (`geodienste.leipzig.de/l3/OpenData/wfs`, layer `OpenData:Baeume`) gives girth and height per Naturdenkmal tree, which is a new lane. Three stories were written (Ginkgo of Kleinzschocher, Elm of Poelitzstrasse, Oak of Probstheida) and preflight refused all three: approximate pin, no photo. The Commons photos I fetched are sign close-ups and an ivy-covered worm's-eye view, so all three are held as leads. Eight Naturdenkmal leads are on private ground. New lead: the two Torhaus Doelitz oaks (570 and 550 cm).
+- **Photos:** `photo_hunt.py --recheck` swept 40 trees; `photo_fetch.py --zero` fetched candidates for 13 cities; the ones I viewed were leaf close-ups and building shots, none approved.
+- **Breakage, not mine to fix from here:** the iOS workflow failed on 2026-10-14 (run 38611221113) because simulator creation took about 40 minutes and `xcodebuild test` was killed after a 20-minute hang. It is infrastructure; the app code did not fail an assertion.
+- Species note: roo_015 reads "American Lime (Tilia americana 'Nova')" while Chicago and Minneapolis say American Basswood. Rule 9 says one common name; worth aligning on a later pass.
+
 ## 2026-10-14 session: app 1.0.3 (build 34) submitted to Apple
 
 - Hidde submitted 1.0.3 build 34 for review this evening.
