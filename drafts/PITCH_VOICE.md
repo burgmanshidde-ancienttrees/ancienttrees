@@ -168,6 +168,16 @@ belongs in Helpful Details or nowhere.
 - NO: "We add trees from council tree trails, dendrological societies, local newspapers and the people below"
 - YES: "Others come from council tree walks, tree societies, local newspapers and readers who send us a tree."
 
+**smoothing his own words into polished copy; when he writes it, translate close, keep his rhythm and phrasing** (added 2026-10-14)
+
+- NO: "I think I became a tree fan in Lisbon. On long walks through its parks I kept running into huge ficus trees and jacarandas"
+- YES: "Did I actually become a tree fan in Lisbon? The beautiful ficus trees and jacarandas I saw there, on lots of walks through the park."
+
+**a press mail says who writes and why to them in line one; the fact is the subject line and line two** (added 2026-10-14)
+
+- NO: "1818 nahm ein Feuer in Kaditz achtzehn Höfe... (press mail opening cold on the tree fact)"
+- YES: "ich mache Ancient Trees, eine Karte der besonderen alten Bäume, und bei Dresden sind wir auf eine Geschichte gestoßen, die Ihre Leser vielleicht mögen: (then the fact)"
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
