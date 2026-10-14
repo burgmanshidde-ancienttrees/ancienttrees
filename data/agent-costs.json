@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "aberford+aga+aguas-de-moura+albersdorf+allouville-bellefosse+amt-neuhaus+antwerp+aosta+arita+asago",
+    "kind": "enrich",
+    "tokens": 57000,
+    "trees": 0,
+    "note": "enrichment: Shogun Sugi record with girth and height, Albersdorf Naturdenkmal entry and measurements, Amt Neuhaus oak girth, Arita ginkgo record; six trees no result; 7 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "xhoris+yvignac-la-tour+zaanstad+zadeikoniai+zaragoza+zarzecze+zywiec+aachen",
     "kind": "enrich",
     "tokens": 84000,
