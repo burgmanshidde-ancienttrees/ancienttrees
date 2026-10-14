@@ -40,7 +40,8 @@
       "verified_sources": [
         "https://cs.wikipedia.org/wiki/Buk_u_kostela_v_Jihlav%C4%9B",
         "https://www.stromroku.cz/vylety/buk-u-kostela-v-jihlave",
-        "https://zpravy.kurzy.cz/873105-jihlava-po-23-letech-se-vratili-k-buku-ktery-pomohli-proslavit/"
+        "https://zpravy.kurzy.cz/873105-jihlava-po-23-letech-se-vratili-k-buku-ktery-pomohli-proslavit/",
+        "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?frame&SHOW_ONE=1&ID=7733"
       ],
       "access": "Free, in a public churchyard/square in central Jihlava",
       "transport": "Central Jihlava, short walk from the main square",
@@ -64,6 +65,19 @@
         "source_name": "Buk v Jihlavě",
         "qid": "Q11362389",
         "views": 11
+      },
+      "official_register": {
+        "name": "Památné stromy (AOPK ČR, ÚSOP evid. č. 100933)",
+        "url": "https://drusop.nature.cz/ost/chrobjekty/pstromy/index.php?frame&SHOW_ONE=1&ID=7733"
+      },
+      "height_m": 19,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "leaves turn copper before they fall",
+        "kind": "colour"
       }
     }
   ]

@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-14 night run, 09:13 window
+
+- Visits last 7 days: 1,350. Rung 1 empty, rung 2 clear (health.py), so rung 4 enrichment.
+- Enrichment of Indianapolis, Iwata, Jachymov, Jerceni, Jihlava, Kasukabe, Kawago, Kawatana, Kawazu (10 trees): register records for Jachymov, Jihlava, Kasukabe, Kawago, Kawatana, Kawazu, Kitahama; girth and height for eight; Iwata wisteria (April) and Jihlava copper beech (autumn) best_time. Open: Indianapolis and Jerceni register, Kasukabe pin. Preflight 0 problems.
+
 ## 2026-10-14 session: digest top is readers only
 
 - Live: the daily digest opens with the trees readers gave, each linked to its page when live. The night run's photo approvals moved lower, to their own table, with their overrule commands. Our own rows and the lines that counted our testing are gone from the digest. Today's entry was rewritten that way.

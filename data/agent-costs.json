@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "indianapolis+iwata+jachymov+jerceni+jihlava+kasukabe+kawago+kawatana+kawazu",
+    "kind": "enrich",
+    "tokens": 59000,
+    "trees": 0,
+    "note": "enrichment: register records for six Japanese and Czech trees, girth and height for eight, Iwata wisteria April and Jihlava copper beech autumn best_time; Indianapolis and Jerceni have no record page; Kasukabe pin open (Wikipedia coordinate equals ours); 9 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "higashimiyoshi+hilvarenbeek+himi+hochneukirchen-gschaidt+hronsek+ichinohe",
     "kind": "enrich",
     "tokens": 91000,
