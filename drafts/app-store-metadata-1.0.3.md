@@ -475,8 +475,10 @@ Promotional text (170, not indexed, editable any time):
 ## In-app event: autumn colour
 
 Event name (30), short description (50), long description (120). Badge: New Season.
-Dates: 2026-10-15 to 2026-11-30. Card image: a photographed tree in autumn colour from
-our own approved set, 1920 x 1080, no text on it.
+Dates: 2026-10-18 to 2026-11-30 (Apple reviews an event separately; a start a few days out leaves room).
+Images, ready in drafts/app-store-event/: event card autumn-event-pando-1920x1080.jpg, event details
+page autumn-event-pando-1080x1920.jpg. Pando, Fish Lake, Utah (a tree on our map), photographed by the
+US Forest Service on 2012-10-03, public domain, so no credit needed on the card.
 
 ```
 Autumn colour, tree by tree
@@ -487,5 +489,5 @@ The old trees near you at their best, this month
 ```
 
 ```
-The ginkgos, beeches and larches on the map are changing colour now. Open it, pick one near you, and walk to it before the leaves drop.
+The aspens, ginkgos and beeches on the map are changing colour now. Open it, pick one near you, and walk to it before the leaves drop.
 ```
