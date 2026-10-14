@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "horaiji+jalhay+plunge+priekule",
+    "kind": "enrich",
+    "tokens": 98000,
+    "trees": 0,
+    "note": "enrichment: Aichi big-tree pages for Kasa sugi and Nezu no Ki (girth, height; their coordinates 360 to 470 m off and refused for a missing URL); Les Sept Freres decree via etaamb mirror (press circumferences left out); saugoma.lt objects for two Plunge and two Priekule oaks/fir; Simonaityte beech access and October-November best_time; 10 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-14",
     "target": "fujikawaguchiko+giessen+hokuto",
     "kind": "enrich",
     "tokens": 90000,

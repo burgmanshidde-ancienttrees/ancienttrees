@@ -85,7 +85,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Vingio_parko_%C4%85%C5%BEuolas",
-        "https://ve.lt/naujienos/lietuva/vakaru-lietuva/priekules-seniunijoje-rasti-5-gamtos-paveldo-objektai-1574961"
+        "https://ve.lt/naujienos/lietuva/vakaru-lietuva/priekules-seniunijoje-rasti-5-gamtos-paveldo-objektai-1574961",
+        "https://saugoma.lt/lt/objektai/objektai-vingio-parko-azuolas"
       ],
       "access": "Free, in a public park (Vingio parkas); cleared area and information sign mark the tree, reached via the park's main walking path",
       "transport": "In Vingio parkas in the small town of Priekulė, about 15 km south of Klaipėda; walkable from the town centre",
@@ -105,6 +106,10 @@
         "source_name": "Priekulė Oak",
         "qid": "Q119079097",
         "views": 11
+      },
+      "official_register": {
+        "name": "Gamtos paveldo objektas (State Service for Protected Areas, Lithuania), no. 5379",
+        "url": "https://saugoma.lt/lt/objektai/objektai-vingio-parko-azuolas"
       }
     },
     {
@@ -122,9 +127,10 @@
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Ievos_Simonaityt%C4%97s_bukas",
         "https://www.pamatyklietuvoje.lt/lankytinos-vietos/i-simonaitytes-memorialinis-muziejus/26497",
-        "lithuania-stvk-gpo.json, no. 0310505190003"
+        "lithuania-stvk-gpo.json, no. 0310505190003",
+        "https://www.gargzdumuziejus.lt/darbo-laikas-2/"
       ],
-      "access": "In the garden of a house museum (Ieva Simonaitytė Memorial Museum); visible from Vingio gatvė and reachable on the museum grounds, likely during museum opening hours (opening hours and any entry fee not independently confirmed by this pass)",
+      "access": "Garden of the Ieva Simonaitytė Memorial Museum, Vingio g. 11; the red-leaved beech is visible from afar. The Gargždai Regional Museum branch is open Tuesday to Saturday, 11:00 to 18:00 (Saturday until 15:30 from November to March); no Sunday or Monday hours are published. The museum lists €2 adults and €1 reduced tickets.",
       "transport": "On Vingio gatvė in the small town of Priekulė, about 15 km south of Klaipėda, on the edge of Vingio parkas",
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -148,7 +154,15 @@
         "name": "Saugomų teritorijų valstybės kadastras (STVK), no. 0310505190003",
         "url": null
       },
-      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505190003 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12)."
+      "verify_notes": "Register number from Saugomų teritorijų valstybės kadastras (STVK) no. 0310505190003 (data/registers/lithuania-stvk-gpo.json), matched on our pin at 1 m (register_match.py, 2026-10-12).",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: the purple leaves turn copper before they fall",
+        "kind": "colour"
+      }
     },
     {
       "id": "pri_004",
@@ -209,7 +223,8 @@
       },
       "verified_sources": [
         "https://lt.wikipedia.org/wiki/Klio%C5%A1%C5%B3_parko_k%C4%97nis",
-        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai"
+        "https://vstt.lrv.lt/lt/saugomu-teritoriju-sistema/gamtos-paveldo-objektai",
+        "https://saugoma.lt/lt/objektai/objektai-kliosu-parko-kenis"
       ],
       "access": "Free, in a former manor park now overgrown as woodland; a signpost at a nearby crossroads ('Europinis kėnis', 1 km) specifically directs visitors to it",
       "transport": "In Kliošai, on the southern edge of Priekulė (about 15 km south of Klaipėda), roughly 1.2-1.5 km / 15-20 min walk from Priekulė's Vingio parkas cluster and about 150-200 m from the Kliošai Park Beech (pri_004)",
@@ -229,6 +244,10 @@
         "source_name": "Kliošų parko kėnis",
         "qid": "Q120765319",
         "views": 12
+      },
+      "official_register": {
+        "name": "Gamtos paveldo objektas (State Service for Protected Areas, Lithuania), no. 3828",
+        "url": "https://saugoma.lt/lt/objektai/objektai-kliosu-parko-kenis"
       }
     }
   ]

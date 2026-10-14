@@ -18,6 +18,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Fujikawaguchiko, Giessen, Hokuto: 11 trees got register records and measurements (Yamanashi prefecture and Minobu town pages for the cedar, ginkgos and two Hokuto trees; Gießen's Naturdenkmal list via a 2016 archive copy, dated in the register name). Shinden cherry access rewritten from the tourism association page. The Negoya zelkova site was refused by apply (no source URL), so that pin stays open. 5 gaps dead-ended. Preflight 0 problems.
 
+- Hōraiji, Jalhay, Plungė, Priekulė: 8 trees enriched. Aichi big-tree pages gave girth and height for the Kasa sugi and Nezu no Ki (their coordinates sit 360 to 470 m from our pins, over the 300 m limit, so not taken); Les Sept Frères got its 2012 classification decree (press circumferences left out); four Lithuanian trees got saugoma.lt records; Simonaitytė's beech got museum hours and prices plus an October to November colour season. 10 gaps dead-ended. Preflight 0 problems.
+
 ## 2026-10-14 night run, 00:24 window
 
 - Visits last 7 days: 1,491. Rung 1 empty. Rung 2: iOS scheduled run failed on one test, `testEveryFlowLeavesAWayBack` (tap on "person-follow" button found no match); needs a simulator session, not fixable from this runner. Smoke "skipped" is the push-trigger default.
