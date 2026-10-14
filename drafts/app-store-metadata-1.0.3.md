@@ -43,7 +43,7 @@ Description: keep the live one. It is not indexed and it reads well.
 What's new in 1.0.3 (rewritten 2026-10-14):
 
 ```
-A new Discover: the season where you are, the trees at their best this month, the records and our favourite tree cities.
+See which trees near you are at their best this month: Discover now follows the season where you are, with the records and the finest tree cities.
 Collecting is simpler: take a photograph, pick which tree it is, done.
 Add a tree we do not have yet, with a confirmation once it is saved.
 With the app open, it tells you when you stand within 50 metres of a tree you have not collected.
@@ -120,7 +120,7 @@ De app is in het Engels. Een account is één e-mailadres; verwijder het en alle
 What's new:
 
 ```
-Een nieuw Ontdekken: het seizoen waar jij bent, de bomen die deze maand op hun mooist zijn, de records en onze favoriete bomensteden.
+Zie welke bomen bij jou in de buurt deze maand op hun mooist zijn: Ontdekken volgt nu het seizoen waar jij bent, met de records en de mooiste bomensteden.
 Verzamelen is eenvoudiger: maak een foto, kies welke boom het is, klaar.
 Voeg een boom toe die wij nog niet hebben, met een bevestiging zodra hij is opgeslagen.
 Met de app open hoor je het als je binnen 50 meter staat van een boom die je nog niet hebt verzameld.
@@ -177,7 +177,7 @@ Die App ist auf Englisch. Ein Konto ist eine E-Mail-Adresse; löschst du es, geh
 What's new:
 
 ```
-Ein neues Entdecken: die Jahreszeit dort, wo du bist, die Bäume, die diesen Monat am schönsten sind, die Rekorde und unsere liebsten Baumstädte.
+Sieh, welche Bäume in deiner Nähe diesen Monat am schönsten sind: Entdecken folgt jetzt der Jahreszeit dort, wo du bist, mit den Rekorden und den schönsten Baumstädten.
 Sammeln ist einfacher: Foto machen, den Baum auswählen, fertig.
 Füge einen Baum hinzu, den wir noch nicht haben, mit einer Bestätigung, sobald er gespeichert ist.
 Bei geöffneter App erfährst du, wenn du weniger als 50 Meter von einem Baum entfernt stehst, den du noch nicht gesammelt hast.
@@ -234,7 +234,7 @@ L'application est en anglais. Un compte, c'est une adresse e-mail ; supprimez-le
 What's new:
 
 ```
-Une nouvelle page Découvrir : la saison là où vous êtes, les arbres à leur plus beau ce mois-ci, les records et nos villes d'arbres préférées.
+Voyez quels arbres près de vous sont à leur plus beau ce mois-ci : Découvrir suit désormais la saison là où vous êtes, avec les records et les plus belles villes d'arbres.
 Collectionner est plus simple : prenez une photo, choisissez l'arbre, c'est fait.
 Ajoutez un arbre que nous n'avons pas encore, avec une confirmation une fois enregistré.
 Avec l'app ouverte, elle vous prévient quand vous êtes à moins de 50 mètres d'un arbre pas encore collectionné.
@@ -291,7 +291,7 @@ La app está en inglés. Una cuenta es una dirección de correo; bórrala y todo
 What's new:
 
 ```
-Un nuevo Descubrir: la estación donde estás, los árboles en su mejor momento este mes, los récords y nuestras ciudades de árboles favoritas.
+Mira qué árboles cerca de ti están en su mejor momento este mes: Descubrir sigue ahora la estación donde estás, con los récords y las mejores ciudades de árboles.
 Coleccionar es más sencillo: haz una foto, elige qué árbol es y listo.
 Añade un árbol que aún no tenemos, con una confirmación al guardarlo.
 Con la app abierta, te avisa cuando estás a menos de 50 metros de un árbol que aún no has coleccionado.
@@ -348,7 +348,7 @@ L'app è in inglese. Un account è un indirizzo e-mail; cancellalo e tutto se ne
 What's new:
 
 ```
-Un nuovo Scopri: la stagione dove ti trovi, gli alberi al loro meglio questo mese, i record e le nostre città degli alberi preferite.
+Scopri quali alberi vicino a te sono al loro meglio questo mese: Scopri ora segue la stagione dove ti trovi, con i record e le più belle città degli alberi.
 Collezionare è più semplice: scatta una foto, scegli quale albero è, fatto.
 Aggiungi un albero che non abbiamo ancora, con una conferma quando è salvato.
 Con l'app aperta, ti avvisa quando sei a meno di 50 metri da un albero che non hai ancora collezionato.
@@ -405,7 +405,7 @@ A aplicação está em inglês. Uma conta é um endereço de e-mail; apague-a e 
 What's new:
 
 ```
-Um novo Descobrir: a estação onde estás, as árvores no seu melhor este mês, os recordes e as nossas cidades de árvores favoritas.
+Vê que árvores perto de ti estão no seu melhor este mês: Descobrir segue agora a estação onde estás, com os recordes e as melhores cidades de árvores.
 Colecionar é mais simples: tira uma fotografia, escolhe qual é a árvore e pronto.
 Adiciona uma árvore que ainda não temos, com uma confirmação quando fica guardada.
 Com a app aberta, avisa-te quando estás a menos de 50 metros de uma árvore que ainda não colecionaste.
@@ -462,7 +462,7 @@ Description:
 What's new:
 
 ```
-新しい「見つける」：いまいる場所の季節、今月見ごろの木、記録の木、おすすめの木の街。
+近くで今月見ごろの木がわかります。「見つける」が、いまいる場所の季節に合わせて、記録の木や木の名所の街とともに表示します。
 コレクションがもっと簡単に：写真を撮って、どの木か選ぶだけ。
 まだ載っていない木を追加でき、保存すると確認が表示されます。
 アプリを開いているとき、まだ集めていない木の50メートル以内に来るとお知らせします。
