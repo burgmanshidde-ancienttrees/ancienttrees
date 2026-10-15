@@ -924,6 +924,12 @@
    "country": "United States",
    "status": "no_supply",
    "note": "SCOUTED 2026-10-07. Nothing usable. No Municipality of Anchorage heritage or landmark tree list found (ArcGIS Online search for Anchorage tree and owner MOA returned only a UAA student StoryMap on Food Forest Park, a spruce decline web map and forest-health aerial survey layers, none a tree register). Alaska Division of Forestry champion page (forestry.alaska.gov/champion-trees) is a 404; the Alaska Big Tree register is run by the state Big Tree Coordinator under American Forests, and American Forests states it never discloses exact locations of listed trees, so per hard rule 10 it is neither a coordinate source nor usable for pins. Nothing imported, no lead file written. Alaska's real big trees (Sitka spruce, Tongass Landmark Trees Project) are in Southeast, far outside Anchorage's day-trip boundary. Anchorage has no register and no naming body; do not re-scout without a new named source."
+  },
+  {
+   "place": "Fort Worth",
+   "country": "United States",
+   "status": "stalled",
+   "note": "FOUND 2026-10-15. The City of Fort Worth Parks Forestry Heritage Tree program publishes a StoryMap (arcgis item 9f6ce79e10a7491aa8d29327cf389831, fetch https://www.arcgis.com/sharing/rest/content/items/<id>/data?f=json) with about 54 named trees, each with a story, coordinates (tour-map geometries joined to places by featureId) and photographs. Several in the second section are listed as lost (Hollow Pecan, Timberline Post Oak, Chittamwood, green hawthorn, Brite elm). Saved as data/registers/fort-worth-heritage-trees-storymap.json (title, story, latitude, longitude, section). The Feature Service on testmapit.fortworthtexas.gov times out from the runner. Stalled on: no licence line read yet (city publication), pins are story-map points so approximate until checked, photos are the city own (not open-licensed). NEXT: read the city terms, drop the lost ones, then verify clusters (Casino Beach, Arrow S Park, Trinity Park/Van Zandt, Greenwood Cemetery, Botanic Garden) enrich-first; Fort Worth has 18 trees live."
   }
  ],
  "out_of_focus": {

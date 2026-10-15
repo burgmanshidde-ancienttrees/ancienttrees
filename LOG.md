@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (seventh attempt): nothing published; found Fort Worth's Heritage Tree register
+
+Released the stale Miami claim (no register candidates, two earlier passes found nothing rich). 60 READY leads unchanged and still refused by the richness rule. Scouted Fort Worth (#195): the city's Heritage Tree StoryMap holds about 54 named trees with stories and coordinates, saved to data/registers/fort-worth-heritage-trees-storymap.json; `stalled` in data/register-scouting.json until the city's terms are read and the lost trees dropped. This is the best lead for a next window: clusters at Casino Beach, Arrow S Park, Trinity Park and Greenwood Cemetery. 0 trees.
+
 ## 2026-10-15 (sixth attempt, 19:38 window): nothing published; scouted San Antonio
 
 Visits, 7 days: 1610 (2260 page views). No sightings waiting. health.py's "smoke test skipped" is a false alarm: smoke.yml skips data-only pushes, and Build and deploy is green. Enrichment nothing; shelf still only refused or duplicate trees. Scouted San Antonio (#193): no register with coordinates, `stalled` in data/register-scouting.json (Quadrangle Oak at Fort Sam Houston is a lead, base access unclear). 0 trees.
