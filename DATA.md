@@ -14,6 +14,486 @@ roughly double the real number, and do not compare one across that date.
 because those point at /app and the listener matched the href. Every other
 event on the list is unaffected.
 
+## 2026-10-14 (previous UTC day)
+
+**Today: an account was opened yesterday (28 total).**
+
+**Trees readers sent, for you to inspect:** none waiting. Every tree a stranger sent has your answer.
+
+**What readers gave us, and it went live**
+
+| Day | Tree | Where | What | Page |
+|---|---|---|---|---|
+| 10-13 | The Great Lawn Plane of Parc Montsouris | Paris | a reader's photograph, published | [live](https://ancienttrees.app/paris/great-lawn-plane-of-parc-montsouris) |
+
+**Did the product happen**
+
+| Action | Yesterday | 7 days | Ever | Last |
+|---|---:|---:|---:|---|
+| signin-open | 3 | 31 | 504 | yesterday |
+| app-cta | 0 | 17 | 61 | today |
+| signin-oauth | 0 | 1 | 41 | 6 days ago |
+| signin-done | 0 | 0 | 39 | 8 days ago |
+| directions | 0 | 1 | 37 | 6 days ago |
+| search-home | 1 | 5 | 29 | yesterday |
+| app-open | 0 | 7 | 19 | 5 days ago |
+| suggestion-submit | 0 | 0 | 17 | 20 days ago |
+| home-country | 0 | 3 | 10 | 3 days ago |
+| home-fav | 0 | 2 | 8 | 6 days ago |
+| signin-link-sent | 0 | 0 | 6 | 20 days ago |
+| save | 0 | 0 | 5 | 13 days ago |
+| waitlist-submit | 0 | 1 | 5 | 5 days ago |
+| home-dir-tree | 0 | 0 | 3 | 22 days ago |
+| visit | 0 | 0 | 3 | 25 days ago |
+| app-page-badge | 0 | 1 | 2 | 6 days ago |
+| home-species | 0 | 0 | 2 | 24 days ago |
+| search-explore | 0 | 0 | 2 | 13 days ago |
+| walks-app | 0 | 0 | 2 | 22 days ago |
+| home-dir-species | 0 | 1 | 1 | 4 days ago |
+| sponsor-open | 0 | 0 | 1 | 25 days ago |
+| worthit-report | 0 | 0 | 1 | 21 days ago |
+| worthit-report detail | 0 | 0 | 1 | 21 days ago |
+| worthit-worth it | 0 | 0 | 1 | 25 days ago |
+| worthit-not worth it | 0 | 0 | 0 | never |
+| **all** | **4** | **70** | **800** | |
+- 'Ever' counts every row in the events table, which begins 2026-08-01 when the funnel was repaired. Anything named here with a zero has never fired at all.
+
+**Searched yesterday:** zurich.
+
+| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback | Ambassador asks |
+|---|---:|---:|---:|---:|---:|---:|
+| 10-08 | 1 | 0 | 0 | 0 | 1 | 0 |
+| 10-09 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-10 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 10-11 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 10-12 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-13 | 1 | 0 | 0 | 0 | 2 | 0 |
+| 10-14 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 10-15 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **7 days** | **5** | **1** | **0** | **0** | **3** | **0** |
+
+| Ambassadors | Yesterday | 7 days | Total |
+|---|---:|---:|---:|
+| Granted | 0 | 1 | 6 |
+| Invitations sent (app contributors) | 0 | 2 | 7 |
+| Open-seat requests answered | 0 | 0 | 0 |
+- New in 7 days: Kerry Pickett (Brighton) since 2026-10-10.
+- Android waitlist: 21 total, newest 5 days ago
+- Submissions: 35 total (19 trees sent, 16 feedback), newest 2 days ago
+- Accounts:    28 total, newest yesterday
+
+**What readers told us** (7 days, structure only; the words stay in the database)
+
+| Day | Tree | What | Note | From | Outcome |
+|---|---|---|---|---|---|
+| 10-08 | The Judas Tree of the Real Alcázar | correction sent in | 92 chars, read it in the database | eed7 | open_question |
+| 10-13 | sev_009 (The Fig of the Glorieta d | worth it | - | c922 | - |
+| 10-13 | - | Location not working on iOS, permi | - | c922 | open_question |
+
+- 3 rows from 2 accounts.
+
+**The funnel, as rates**
+- Seen to clicked: 5.6% (11 of 195) vs 3.9% the week before
+- Pages per visit: 1.3 (6580 visits, 8340 pageviews since 2026-09-17)
+- Visits that did something: 12.4% (819 actions on 6580 visits)
+
+**What people did in the app**
+
+| What | Yesterday | 7 days | Ever | Last |
+|---|---:|---:|---:|---|
+| app_open | 17 | 64 | 328 | today |
+| tab | 6 | 24 | 323 | today |
+| tree_opened | 7 | 84 | 1268 | today |
+| directions | 1 | 5 | 46 | yesterday |
+| tree_saved | 0 | 1 | 20 | 2 days ago |
+| tree_visited | 0 | 4 | 27 | 4 days ago |
+| sighting_recorded | 0 | 1 | 73 | 4 days ago |
+| sync_skipped | 0 | 0 | 0 | never |
+| sync_failed | 0 | 0 | 0 | never |
+| location | 1 | 1 | 1 | yesterday |
+| **all** | **32** | **184** | **2086** | |
+- Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
+- 85 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
+- Yesterday came from 3 installs, and the busiest made 22 of 3 events (733%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
+- Tabs opened (7d): Discover 10; My trees 8; Map 6
+- Active phones: 3 in the last day, 24 in the last 7 days, 57 in the last 30 days.
+- Coming back: 26 of those 57 phones opened the app on more than one day (46%).
+- Trees opened by the most phones (7d): The Fig of the Glorieta de Goya (Seville) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Ombú of La Cartuja (Seville) 1; The Mulberry of the Alamillo Cortijo (Seville) 1; The Magnolia of the Cathedral (Seville) 1
+- Where the phones are (30d): United States 13; United Kingdom 7; Portugal 5; Spain 4; Italy 4; The Netherlands 4
+- Trees recorded (7d): a tree we map 1
+  A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
+
+**Trees collected in the app** (7 days, a person standing at the tree)
+
+| Day | Tree | Where | Install | Build | Signed in |
+|---|---|---|---|---|---|
+| 10-11 | The Lagunària de la Llotja | Palma de Mallorca | A98A | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+| 10-08 | The Stone Pine of the Jardines de Cristina | Seville | 92A2 | ? | ? |
+
+**The app as a builder reads it** (this week against the week before; the weakest row is the work)
+
+| Link | This week | Week before |
+|---|---|---|
+| New phones | 16 | 6 |
+| First day: opened a tree | 10 of 16 (62%) | 5 of 6 (83%) |
+| First day: opened a tree near them | - | - |
+| First day: allowed location | - | - |
+| First day: Take me there | 1 of 16 (6%) | 1 of 6 (17%) |
+| First day: collected a tree | 2 of 16 (12%) | 2 of 6 (33%) |
+| Back within a week | 4 of 6 (67%) | 8 of 15 (53%) |
+| Trees collected (all phones) | 4 | 11 |
+- Near and location count only phones on a version that sends them (from 2026-10-10); a dash means none yet.
+- Back within a week looks at the phones that arrived a week earlier, so each has had its seven days.
+
+**App Store downloads** (Apple's own count, not PostHog)
+
+| Day | Downloads |
+|---|---:|
+| 2026-10-08 | 4 |
+| 2026-10-09 | 4 |
+| 2026-10-10 | 5 |
+| 2026-10-12 | 1 |
+| 2026-10-13 | 2 |
+| **5 days** | **16** |
+- First-time downloads only, which is what App Store Connect's Trends screen counts; redownloads and updates are not in this table.
+
+**Where the downloads came from** (7 days, Apple's attribution)
+
+| Came from | Via | Downloads |
+|---|---|---:|
+| App Store search | - | 7 |
+| Web referrer | - | 5 |
+| App referrer | - | 3 |
+| App Store browse | - | 1 |
+| **window** | | **16** |
+- Countries: US (6); GB (4); BE (1); ES (1); IE (1); NL (1)
+- Apple's own source split, first-time downloads only. "Web referrer" with our own domain is the site's app page; "App Store search" is somebody who typed into the store. "Unavailable" is Apple's word for a source it could not attribute.
+
+**Where demand is going to waste**
+
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). The newest row is also still FILLING: Google backfills for days and backfills impressions harder than clicks, so it reads as an unusually good day and is not one (08-22 arrived as 12/769 and settled at 17/1030). Position is an average across every query, so it dips whenever we start ranking for something new:
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 10-05 | 4 | 47 | 8.5% | 39.0 |
+| 10-06 | 1 | 45 | 2.2% | 34.5 |
+| 10-07 | 0 | 47 | 0.0% | 34.7 |
+| 10-08 | 5 | 35 | 14.3% | 21.8 |
+| 10-09 | 3 | 37 | 8.1% | 49.5 |
+| 10-10 | 0 | 35 | 0.0% | 29.8 |
+| 10-11 | 1 | 32 | 3.1% | 31.7 |
+| 10-12 | 1 | 26 | 3.8% | 30.3 |
+| 10-13 | 1 | 25 | 4.0% | 34.1 |
+| 10-14 *partial* | 0 | 5 | 0.0% | 14.8 |
+| **window** | **16** | **334** | **4.8%** | |
+- Top queries (10d): pokaz na mapie (i1, p1); alte bäume (i3, p27); ancient douglas fir tree (i1, p48); ancient tree (i1, p89); angelystor (i1, p1)
+- Top pages (10d): / (c6/i15); /brussels/oldest-tree (c2/i3); /de/berlin/englischer-garten-wingnut (c1/i2); /it/rome/mexican-blue-palm-of-villa-sciarra (c1/i2); /cagliari/ficus-of-piazza-matteotti (c1/i1)
+- Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
+    - 'alte bäume' (i3, p27)
+    - 'big sherman tree' (i2, p69)
+    - 'pokaz na mapie' (i1, p1)
+    - 'angelystor' (i1, p1)
+    - 'araucaria norfolk' (i1, p88)
+    - 'avenue de laune' (i1, p24)
+    - 'bunya tree' (i1, p97)
+    - 'chapina garden' (i1, p13)
+    - and 1 more
+**What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)
+
+| Day | Impressions | Clicks | CTR | Pages crawled | Pages in index |
+|---|---:|---:|---:|---:|---:|
+| 10-06 | 65 | 2 | 3.1% | 192 | 2157 |
+| 10-07 | 81 | 2 | 2.5% | 78 | 2244 |
+| 10-08 | 168 | 4 | 2.4% | 164 | 2293 |
+| 10-09 | 47 | 2 | 4.3% | 150 | 2380 |
+| 10-10 | 57 | 1 | 1.8% | - | - |
+| 10-11 | 53 | 2 | 3.8% | - | - |
+| 10-12 | 81 | 3 | 3.7% | - | - |
+| **7 days** | **552** | **16** | **2.9%** | **584** | **2380** |
+- Week before: 166 impressions, 11 clicks; in index then: 2106. No Bing demotion in sight.
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); husalle lindens copenhagen (c1/i2, p3); ancient trees in wiesbaden germany (c1/i2, p6); oldest live oak trees in new orleans (c1/i2, p6); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); remarkable trees copenhagen (c1/i2, p4); french trees found in paris (c1/i2, p6)
+- Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
+
+**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
+
+What Google does, last 10 days:
+
+| Measure | Now |
+|---|---:|
+| Impressions | 417 |
+| Clicks | 16 |
+| Pages that got at least one impression | 221 |
+| Impressions on the proven cities | 322 |
+
+- 213 impressions from site: and operator searches left out (ours, not readers; every Google table below is without them).
+
+What we did (context, proves nothing by itself): 2947 trees Google may index, 751 kept out for lacking a photo and an exact pin, 2802 pages on the noindex list.
+
+**Is enriching working** (indexed tree pages, last 10 days of Google; rich = register record, a measurement and concrete access)
+
+| Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |
+|---|---:|---:|---:|---:|---:|
+| Rich | 1714 | 42 | 129 | 0.08 | 3 |
+| Not yet rich | 490 | 26 | 37 | 0.08 | 0 |
+| Returned to Google's index in the last 7 days | 0 | 0 | 0 | 0.00 | 0 |
+
+- Google lags 2 to 3 days, so a page returned this week has had a few days at most. Compare the per-page numbers across weeks, not the totals across rows.
+
+**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
+
+| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
+|---|---:|---:|---:|---:|---:|---|
+| prague | 0 | 87 | 0.0% | 5.6 | 5.9% | - |
+| sequoia-national-park | 0 | 26 | 0.0% | 73.9 | 0.4% | general sherman tree california (i5, p74) |
+| brussels | 2 | 10 | 20.0% | 12.9 | 1.6% | klint white mulberry (i2, p52) |
+
+- Plus 256 cities on the frozen 09-27 roster (data/depth-roster-frozen.json), biggest: singapore, lisbon, amsterdam, barcelona, seville, bath, tenerife, berlin.
+
+**Copy test**
+
+```
+Copy test: city-title-age-first (day 35 of 56, review 2026-11-05)
+The age is the hook and the count is inventory, so naming the oldest tree before the number earns more clicks.
+
+  control      n1    before 1.38  now 0.00  change -1.38
+
+  TOO EARLY. At about 2 clicks per page per ten days this needs the full window; a lead now is noise wearing a result's clothes.
+```
+
+**What was sent in, and what we decided**
+
+| seen | what | where | size for its species | ours | Hidde |
+|---|---|---|---|---|---|
+| before 2026-09-23 | The Twisted Muku of Omiya Gate, Kyoto  | Kyoto | - | publish | - |
+| 2026-10-13 | The Great Lawn Plane of Parc Montsouri | Paris | 88% girth | publish | publish (2026-10-13, session: 'follow your suggestion') |
+| 2026-10-12 | The Town Hall Plane | Baarn | - | publish | - |
+| 2026-10-12 | The Town Hall Plane | Baarn | - | publish | - |
+| 2026-10-12 | The Town Hall Plane | Baarn | - | hold | - |
+| 2026-10-12 | The Lagunària de la Llotja | Palma de Mallorca | - | publish | publish: Hidde's own call on 2026-10-12 ('if users have good input - just use it') |
+| 2026-10-06 | A tree in Tokyo | - | - | lead | - |
+| 2026-10-06 | A tree in Tokyo | - | - | lead | - |
+| 2026-10-06 | Ginkgo in Tokyo | - | - | lead | - |
+| 2026-10-06 | A tree in Tokyo | - | - | lead | - |
+| 2026-10-06 | A tree in Tokyo | - | - | lead | - |
+| 2026-10-05 | The Southern Mahogany of Edinburgh Gar | Melbourne | - | publish | - |
+| 2026-10-05 | The Finer Holm Oak of Edinburgh Garden | Melbourne | - | hold | hold: a bare deciduous tree, not our evergreen holm oak (discussed 2026-10-13) |
+| 2026-10-05 | London Plane in Paris | Paris | 88% girth | publish | publish (2026-10-13, session: 'follow your suggestion') |
+| 2026-10-04 | Ginkgo in Tokyo | - | - | lead | - |
+
+0 waiting for a verdict. Disagree with one and the rule changes: `python3 scripts/judgement.py --feedback <id> "..."`, and `--learn` prints every verdict he has overruled.
+
+**The language test** (Contract J v1.13: a translated set should pass its English twin's impressions within four weeks of indexing):
+
+| Lang | City | Clicks | Impressions | Position | English twin |
+|---|---|---:|---:|---:|---:|
+| es | tenerife | 0 | 6 | 73.0 | 6 |
+| de | vienna | 0 | 6 | 31.2 | 1 |
+| es | barcelona | 0 | 5 | 46.8 | 2 |
+| de | graz | 0 | 4 | 49.5 | 0 |
+| de | hamburg | 0 | 4 | 24.5 | 0 |
+| pt | rio-de-janeiro | 0 | 4 | 9.8 | 0 |
+| de | berlin | 1 | 3 | 26.3 | 2 |
+| it | rome | 1 | 3 | 33.0 | 1 |
+| es | seville | 1 | 3 | 9.7 | 6 |
+| ja | fukuoka | 0 | 3 | 26.3 | 0 |
+| nl | arnhem | 0 | 3 | 83.3 | 0 |
+| de | munich | 0 | 2 | 11.0 | 6 |
+| es | palma-de-mallorca | 0 | 2 | 75.5 | 1 |
+| fr | lyon | 0 | 2 | 44.0 | 2 |
+| nl | amsterdam | 0 | 2 | 34.0 | 0 |
+| de | zurich | 0 | 1 | 10.0 | 0 |
+| es | madrid | 0 | 1 | 28.0 | 1 |
+| fr | nantes | 0 | 1 | 27.0 | 0 |
+| fr | nice | 0 | 1 | 6.0 | 0 |
+| ja | kagoshima | 0 | 1 | 83.0 | 1 |
+| ja | tokyo | 0 | 1 | 5.0 | 2 |
+| nl | the-hague | 0 | 1 | 1.0 | 0 |
+- Seen, not clicked: /sequoia-national-park/general-sherman-tree (c0/i25, 0.0%) for general sherman tree california (i5, p74); sequoia national park general sherman (i3, p64); sequoia tree general sherman (i2, p71)
+
+**Who they are**
+Audience, 28 days of search (589 clicks, 24263 impressions):
+- Countries: usa c81/i5499; esp c55/i2004; nld c51/i1250; gbr c49/i1879; deu c47/i1362
+- Devices: MOBILE c428/i14832; DESKTOP c155/i9135; TABLET c6/i296
+- Landing pages: / c23/i227; /prague c8/i190; /bath/plane-trees-of-the-circus c7/i123; /leuven c7/i47; /malaga c6/i146
+
+Web Analytics (beacon, cookieless), people only.
+Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
+
+| Day | Visits | Pageviews | From Google |
+|---|---:|---:|---:|
+| 10-07 | 70 | 150 | 0 |
+| 10-08 | 10 | 90 | 0 |
+| 10-09 | 60 | 150 | 0 |
+| 10-10 | 40 | 140 | 10 |
+| 10-11 | 30 | 90 | 0 |
+| 10-12 | 20 | 90 | 0 |
+| 10-13 | 20 | 90 | 0 |
+| 10-14 | 10 | 70 | 0 |
+| **window** | **260** | **870** | **10** |
+- Top paths: /leuven (30); /explore (30); / (30); /contribute (30); /perth (20); /logan-ohio (20); /rothenburg-ob-der-tauber/vorbachtal-spruces (20); /de/cologne/moltke-lime-of-the-kahnweiher (20); /palma-de-mallorca/solivera-de-cort (10); /cambridge/newtons-apple-tree (10); /portalegre/plane-tree-of-rossio (10); /es/palma-de-mallorca/ficus-de-la-misericordia (10)
+- Referrers: (direct) (150); ancienttrees.app (610); duckduckgo.com (30); search.yahoo.com (30); bing.com (10); www.google.com (10); de.search.yahoo.com (10); localhost (10); uk.search.yahoo.com (10)
+- Moved between our own pages: 610 of 870 pageviews (70%); the rest arrived from search or straight in. Cookieless means no session, so which page led to which cannot be measured.
+- Countries: US (190); DE (140); NL (90); FR (80); PT (70)
+- Devices: mobile (530); desktop (340)
+- Page load (8d): p50 1866ms, p90 6806ms
+
+Links: external referrers (a link somebody actually clicked): search.yahoo.com (30); de.search.yahoo.com (10); localhost (10); uk.search.yahoo.com (10)
+AI: arrivals from an assistant that cited us: none yet
+
+Backlinks (watched pages):
+| Site | Links to | rel | First seen |
+|---|---|---|---|
+| getlisbon.com | /lisbon | followed | 2026-09-08 |
+| getlisbon.com | /pt/lisbon | followed | 2026-09-08 |
+| www.baumkunde.de | /copenhagen | followed | 2026-09-26 |
+| www.baumkunde.de | /rogalin/russ-oak | followed | 2026-09-26 |
+4 linking page(s), 4 followed. Checked by fetching the page: a link with rel="noreferrer" never appears in the referrer table, so these two lines measure different things and neither replaces the other. Unknown links stay a manual read of Search Console's Links report. This run read 12 of 12 fetched (0 unreachable), out of 27 watched pages.
+
+**Google Analytics** (last 7 days, visitors who accepted cookies)
+
+| Day | People | New | Returning | Visits | Pageviews | Engaged visits |
+|---|---:|---:|---:|---:|---:|---:|
+| 10-12 | 3 | 3 | 0 | 4 | 7 | 3 |
+| 10-13 | 8 | 8 | 0 | 10 | 38 | 6 |
+| 10-14 | 4 | 4 | 0 | 4 | 8 | 3 |
+| **window** | | **15** | | **18** | **53** | **12** |
+- People per day are not summed: one person on two days is one person, and GA counts them once per day.
+- Coming back (28 days): 1 returning against 15 new, 6% of the people GA saw.
+
+| Page | Pageviews | People |
+|---|---:|---:|
+| / | 5 | 4 |
+| /privacy | 5 | 3 |
+| /cardiff/bute-park-sweet-chestnut | 3 | 1 |
+| /terms | 3 | 1 |
+| /de/cologne | 2 | 1 |
+| /de/cologne/moltke-lime-of-the-kahnweiher | 2 | 1 |
+| /helmond | 2 | 2 |
+| /about | 1 | 1 |
+| /bristol/planes-of-queen-square | 1 | 1 |
+| /budapest | 1 | 1 |
+
+| Came from | Visits | People |
+|---|---:|---:|
+| (direct) / (none) | 14 | 11 |
+| bing / organic | 1 | 1 |
+| dias-com-arvores.blogspot.com / referral | 1 | 1 |
+| ecosia.org / organic | 1 | 1 |
+| teams.public.onecdn.static.microsoft / referral | 1 | 1 |
+- GA sees only visitors who pressed Accept on the cookie bar; read it as a sample. Cloudflare's table stays the count.
+
+
+**What the machine did, the last 24 hours**
+
+| Started | Minutes | Trees | Commits | Refused | Cities |
+|---|---:|---:|---:|---:|---|
+| 10-14T14:50 | 86.1 | 0 | 21 | 1 | Aachen, Aga, Albersdorf, Amt Neuhaus, +93 more |
+| 10-14T19:17 | 87.5 | 1 | 21 | 11 | Roosendaal +2, Como, Gliniak, Granit, +61 more |
+| 10-14T20:46 | 40.0 | -1 | 24 | 0 | Alicante, Como, Coromandel Forest Park, Fujikawaguchiko, +52 more |
+| 10-14T22:25 | 63.4 | 19 | 11 | 3 | Chicago +5, Oss +5, Roosendaal +3, Seattle +3, +3 more |
+| 10-14T23:30 | 9.5 | 10 | 14 | 0 | Chicago +5, Seattle +3, London +2, Potsdam, +1 more |
+| 10-15T02:48 | 59.8 | 3 | 15 | 2 | Roosendaal +3, Ancient Bristlecone Pine Forest, Belfast, Brighton, +10 more |
+| 10-15T05:15 | 3.6 | 0 | 5 | 0 | - |
+| **7 runs** | **350** | **32** | **111** | | |
+
+- 2 of 7 produced no trees; 1 to 11 commands refused per run; last build that went live: 1h ago.
+
+**What they made**
+
+- Record when each page last changed
+- Roosendaal: roo_019 to roo_021 register trees, copy recounted to 16, LOG
+- LOG and cost: fourth photo pass, queue drained
+- Photo viewing pass 4: 16 candidates judged, 0 approved, 1 held (rot_015), 15 rejected
+- LOG and cost: third photo pass, 5 approved
+- Photo viewing pass 3: 52 candidates judged, 5 approved (bfs_003, gut_001, kcy_002, mty_003, ank_001), 2 held (ind_001, mau_001)
+- LOG and cost: second photo pass, 4 approved
+- Photo viewing pass 2: 48 candidates judged, 4 approved (abp_001, bhm_005, hst_002, hst_004), 2 held
+- LOG and cost: photo viewing pass, 2 approved
+- Photo viewing pass: 52 candidates judged, 2 approved (spr_002, mlc_005)
+- Graz verify: nothing rich, leads filed, claim released; LOG
+- Photographs readers sent, queued for a look; vouched ones live
+- Record when each page last changed
+- Miami verify: Key West leads filed, claim released; LOG
+
+**Photographs the night run approved** (68; the last column undoes one)
+
+| Day | Tree | Where | Overrule |
+|---|---|---|---|
+| 10-15 | The Patriarch Tree | Ancient Bristlecone Pine Forest | `photo_apply.py hold abp_001` |
+| 10-15 | The Dawn Redwood by the Kelvin Statue | Belfast | `photo_apply.py hold bfs_003` |
+| 10-15 | The Queen's Park Champion Wych Elm | Brighton | `photo_apply.py hold bhm_005` |
+| 10-14 | The Plane Tree of St Anne's | Brno | `photo_apply.py hold brq_005` |
+| 10-14 | The Great Chestnut of Časta | Časta | `photo_apply.py hold cst_001` |
+| 10-14 | The Albert Edward Oak | Christchurch | `photo_apply.py hold chc_002` |
+| 10-14 | The Plane Tree of Piazza Camerlata | Como | `photo_apply.py hold com_008` |
+| 10-14 | Square Kauri | Coromandel Forest Park | `photo_apply.py hold sqk_001` |
+| 10-14 | The Ohatsuki Ginkgo of Yagisawa | Fujikawaguchiko | `photo_apply.py hold fjk_003` |
+| 10-14 | The Plane of the University Garden | Geneva | `photo_apply.py hold gen_015` |
+| 10-13 | Dorpslinde van Massemen | Ghent | `photo_apply.py hold gnt_007` |
+| 10-14 | The Annaplatz Oak | Graz | `photo_apply.py hold grz_012` |
+| 10-14 | Gernikako Arbola, the Tree of Gernika | Guernica | `photo_apply.py hold grk_001` |
+| 10-15 | 1000jährige Eibe Gutau | Gutau | `photo_apply.py hold gut_001` |
+| 10-15 | The Obertraun Dorfeibe | Hallstatt | `photo_apply.py hold hst_002` |
+| 10-15 | The Bad Goisern Parish Church Yew | Hallstatt | `photo_apply.py hold hst_004` |
+| 10-14 | Clawé Fawe (the nail tree of Foyr) | Jalhay | `photo_apply.py hold gos_002` |
+| 10-13 | The Chinquapins of Dogata | Kanazawa | `photo_apply.py hold kan_001` |
+| 10-14 | Gastilonys Oak | Kaunas | `photo_apply.py hold kun_010` |
+| 10-15 | Robert E. Lee Tree | Kings Canyon National Park | `photo_apply.py hold kcy_002` |
+| 10-14 | Kozaki no Okusu | Kozaki | `photo_apply.py hold kzk_001` |
+| 10-14 | The Kozy Plane Tree (Platan Klonolistny) | Kozy | `photo_apply.py hold koz_001` |
+| 10-14 | The Beliny-Prazmowskiego Dawn Redwood | Krakow | `photo_apply.py hold kra_035` |
+| 10-14 | Carrasca Milenaria de Lecina | Lecina | `photo_apply.py hold lec_001` |
+| 10-15 | The Alzina d'en Pere | Mallorca | `photo_apply.py hold mlc_005` |
+| 10-14 | The Tanzlinde of Hilgershausen | Malsfeld | `photo_apply.py hold mls_003` |
+| 10-14 | The Junipers of Kochozenji | Minami-Alps | `photo_apply.py hold mna_001` |
+| 10-15 | The Moon Tree of Friendly Plaza | Monterey | `photo_apply.py hold mty_003` |
+| 10-14 | The Podocarpus of Piazza Cavour | Naples | `photo_apply.py hold nap_019` |
+| 10-14 | Moko | Otari-Wilton's Bush | `photo_apply.py hold mko_001` |
+| 10-14 | McKinney Kauri | Parry Kauri Park | `photo_apply.py hold pky_001` |
+| 10-14 | Simpson Kauri | Parry Kauri Park | `photo_apply.py hold pky_002` |
+| 10-14 | The Thousand-Year Oak of Sacrow | Potsdam | `photo_apply.py hold pot_005` |
+| 10-14 | The Columnar Oaks of Bassinplatz | Potsdam | `photo_apply.py hold pot_006` |
+| 10-14 | The Oak of the Schiffbauergasse | Potsdam | `photo_apply.py hold pot_008` |
+| 10-14 | The Sessile Oak of Paetowstrasse | Potsdam | `photo_apply.py hold pot_010` |
+| 10-15 | The Ankerwycke Yew | Runnymede | `photo_apply.py hold ank_001` |
+| 10-14 | The Meadow Oak of Buchholzhofstraße | Salzburg | `photo_apply.py hold szb_012` |
+| 10-15 | The Katsura Fudo of Koganeyu | Sapporo | `photo_apply.py hold spr_002` |
+| 10-14 | Valkasken | Stockholm | `photo_apply.py hold sto_005` |
+| 10-14 | The Visbarai Pine | Stokaičiai | `photo_apply.py hold stk_001` |
+| 10-14 | The Hutteneiche | Stuttgart | `photo_apply.py hold stu_002` |
+| 10-14 | The Hohenheim Love Plane | Stuttgart | `photo_apply.py hold stu_007` |
+| 10-14 | The Planes of the Grote Kerk | The Hague | `photo_apply.py hold hag_020` |
+| 10-14 | Kozoji no Kotsubugaya | Toba | `photo_apply.py hold tob_001` |
+| 10-14 | Wakidani no Tochinoki | Toga | `photo_apply.py hold tga_001` |
+| 10-14 | The Elm of Piazza Dante | Trento | `photo_apply.py hold tre_004` |
+| 10-14 | Trolleken (the Troll Oak of Trollskogen) | Trollskogen | `photo_apply.py hold trs_001` |
+| 10-14 | The Plane of the Fontana dei Dodici Mesi | Turin | `photo_apply.py hold tor_008` |
+| 10-14 | The Grandfather Plane of Parco della Tesoriera | Turin | `photo_apply.py hold tor_009` |
+| 10-14 | The Caucasian Elm of the Giardini Reali | Turin | `photo_apply.py hold tor_010` |
+| 10-14 | Kalm's Oak | Turku | `photo_apply.py hold tku_001` |
+| 10-14 | Ushio no Katsura | Unnan | `photo_apply.py hold unn_001` |
+| 10-14 | Vainiai Poplar | Vainiai | `photo_apply.py hold vni_001` |
+| 10-14 | Nevėžio Dvilypis Oak | Vainiai | `photo_apply.py hold vni_003` |
+| 10-13 | The Antakalnis Swiss Pine | Vilnius | `photo_apply.py hold vln_014` |
+| 10-14 | The Vytogala Independence Oaks | Vytogala | `photo_apply.py hold vyt_001` |
+| 10-14 | Dąb Józef | Wiśniowa | `photo_apply.py hold wis_001` |
+| 10-14 | The Witness Plane (Swiadek) | Wroclaw | `photo_apply.py hold wro_005` |
+| 10-14 | Yashiro-no-Okeyaki | Yabu | `photo_apply.py hold yab_003` |
+| 10-14 | Kuchioya no O-Abemaki | Yabu | `photo_apply.py hold yab_004` |
+| 10-14 | Okkazuma no Shidarezakura (the Weeping Cherry of Okkazuma) | Yamanashi City | `photo_apply.py hold ynh_001` |
+| 10-14 | Nomanji no Sotetsu | Yoshida | `photo_apply.py hold yos_001` |
+| 10-14 | The Plane Tree of Budatín Park | Žilina | `photo_apply.py hold zil_001` |
+| 10-14 | The Maple of Sokolovská Street | Žilina | `photo_apply.py hold zil_003` |
+| 10-13 | The Linden of Linn | Zurich | `photo_apply.py hold boz_001` |
+| 10-14 | The Waldhaustanne (Zwieslerwaldhaus Silver Fir) | Zwieslerwaldhaus | `photo_apply.py hold zwi_001` |
+| 10-14 | Dąb Franciszek (the Franciszek Oak) | Żywiec | `photo_apply.py hold zyw_001` |
+
+Machine: 8 chain attempts yesterday, 8 got real work time (~487 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Conclusion:** Search is the only channel with real data and it is still small: 0 clicks and 5 impressions on Google's freshest day (day before: c1/i25). Directional at best; no strategic conclusions from these volumes.
+
 ## 2026-10-13 (previous UTC day)
 
 **Today: 2 feedback reports arrived yesterday (35 total); an account was opened yesterday (27 total).**
