@@ -126,10 +126,13 @@
       "access": "Free, public churchyard within Stanmer Park, generally open in daylight hours",
       "transport": "Falmer railway station, 20-25 min walk through the park; bus routes to Stanmer village",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/681927482/medium.jpg",
+        "license": "CC0",
+        "attribution": "no rights reserved, via iNaturalist",
+        "status": "held",
+        "note": "Hollow churchyard yew among gravestones, geotag 16 m, but two yews grow together here and the frame does not show which one is the larger",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
@@ -214,10 +217,14 @@
       "access": "Free, public park, open year-round",
       "transport": "Brighton railway station, 25 min walk or short bus ride to Queen's Park Road; also walkable from the seafront",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/523321879/large.jpg",
+        "license": "CC0",
+        "attribution": "via iNaturalist",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-15",
+        "width": 768,
+        "height": 1024
       },
       "curation_status": "flagged",
       "location_precision": "approximate"

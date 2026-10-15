@@ -10030,7 +10030,9 @@
      "author": "Smb1001",
      "lat": 52.199183,
      "lng": 0.127267,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 0° E) Category:Self-published work Category:The Oak Bistro, Cambridge"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 0° E) Category:Self-published work Category:The Oak Bistro, Cambridge",
+     "judged": "reject",
+     "verdict": "Pub facade, no tree"
     },
     {
      "title": "File:Benchmark at 6 Lensfield Road, Cambridge - geograph.org.uk - 2973871.jpg",
@@ -10040,7 +10042,9 @@
      "author": "Meirion",
      "lat": 52.19915377,
      "lng": 0.12709121,
-     "cats": "Category:Benchmarks in Cambridge Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Taken with Huawei U8160 / Vodafone 858 Category:The Oak Bistro, Cambridge"
+     "cats": "Category:Benchmarks in Cambridge Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Taken with Huawei U8160 / Vodafone 858 Category:The Oak Bistro, Cambridge",
+     "judged": "reject",
+     "verdict": "Benchmark on a wall, no tree"
     },
     {
      "title": "File:Cambridge, Idaho.jpg",
@@ -10050,7 +10054,9 @@
      "author": "Jsayre64",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cambridge, Idaho Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cambridge, Idaho Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Street in Cambridge, Idaho, wrong place"
     },
     {
      "title": "File:Cambridge IOOF.jpg",
@@ -26265,7 +26271,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.91557758,-77.06225889"
+     "obs_location": "38.91557758,-77.06225889",
+     "judged": "reject",
+     "verdict": "Tulip tree leaf close-up"
     },
     {
      "title": "iNat obs 361733170 (Liriodendron tulipifera)",
@@ -26274,7 +26282,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.91529488,-77.06153419"
+     "obs_location": "38.91529488,-77.06153419",
+     "judged": "reject",
+     "verdict": "Tulip tree leaf close-up"
     },
     {
      "title": "iNat obs 131502374 (Liriodendron tulipifera)",
@@ -26283,7 +26293,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.91513026,-77.0614211"
+     "obs_location": "38.91513026,-77.0614211",
+     "judged": "reject",
+     "verdict": "Seed on pavement, no tree"
     }
    ]
   },
@@ -26301,7 +26313,9 @@
      "author": "Eric T. Gunther",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-3.0 Category:Douglass (Washington, D.C.) Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Self-published work"
+     "cats": "Category:CC-BY-3.0 Category:Douglass (Washington, D.C.) Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Residential street with young cherries, no magnolia"
     }
    ]
   },
@@ -26344,7 +26358,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.91533532,-77.06163953"
+     "obs_location": "38.91533532,-77.06163953",
+     "judged": "reject",
+     "verdict": "Beech leaf close-up"
     },
     {
      "title": "iNat obs 251340157 (Fagus grandifolia)",
@@ -26353,7 +26369,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.91538166,-77.06089337"
+     "obs_location": "38.91538166,-77.06089337",
+     "judged": "reject",
+     "verdict": "Beech leaf close-up"
     },
     {
      "title": "iNat obs 324228474 (Fagus grandifolia)",
@@ -26362,7 +26380,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "38.91508496,-77.0605244"
+     "obs_location": "38.91508496,-77.0605244",
+     "judged": "reject",
+     "verdict": "Beech leaf close-up"
     },
     {
      "title": "iNat obs 352304600 (Fagus grandifolia)",
@@ -46410,7 +46430,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Open lawn with TV tower, no linden"
     },
     {
      "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 03.jpg",
@@ -46420,7 +46442,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Group of beeches, not the eight-stemmed lime"
     },
     {
      "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 04.jpg",
@@ -46430,7 +46454,9 @@
      "author": "Leonhard Lenz",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Grüneburgpark Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Group of beeches, not the eight-stemmed lime"
     },
     {
      "title": "File:Grüneburgpark Frankfurt am Main 2021-08-17 05.jpg",
@@ -67270,7 +67296,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "50.8704352,-0.1019746997"
+     "obs_location": "50.8704352,-0.1019746997",
+     "judged": "hold",
+     "verdict": "Hollow churchyard yew among gravestones, geotag 16 m, but two yews grow together here and the frame does not show which one is the larger"
     }
    ]
   },
@@ -67361,7 +67389,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "50.8252548997,-0.1258684997"
+     "obs_location": "50.8252548997,-0.1258684997",
+     "judged": "approve",
+     "verdict": "Viewed full size: wych elm (large rough elm leaves), single trunk forking at 2 m, Queen's Park lawn; observer labels it the county girth champion, Queen's Park; geotag 83 m; sunny, colour, fills frame"
     },
     {
      "title": "iNat obs 290883057 (Ulmus glabra)",
@@ -80042,7 +80072,9 @@
      "author": "Michael Graham",
      "lat": 54.50748785,
      "lng": -3.14745427,
-     "cats": "Category:Borrowdale Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:Borrowdale Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "Valley landscape from a ridge, no yews"
     },
     {
      "title": "File:Borrowdale - Rosthwaite.jpg",
@@ -80052,7 +80084,9 @@
      "author": "Steve Mason",
      "lat": 54.523673,
      "lng": -3.146671,
-     "cats": "Category:Borrowdale Category:CC-BY-SA-2.0 Category:Images by Steve Mason Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:United Kingdom photographs taken on 2005-05-17"
+     "cats": "Category:Borrowdale Category:CC-BY-SA-2.0 Category:Images by Steve Mason Category:Images from Geograph Britain and Ireland Category:Information field template with formatting Category:United Kingdom photographs taken on 2005-05-17",
+     "judged": "reject",
+     "verdict": "Valley landscape, no yews"
     },
     {
      "title": "File:Borrowdale - geograph.org.uk - 2238871.jpg",
@@ -80062,7 +80096,9 @@
      "author": "Mick Garratt",
      "lat": 54.50551745,
      "lng": -3.09844116,
-     "cats": "Category:Borrowdale Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland"
+     "cats": "Category:Borrowdale Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland",
+     "judged": "reject",
+     "verdict": "Fell landscape, no yews"
     },
     {
      "title": "File:Borrowdale - geograph.org.uk - 3492314.jpg",
@@ -100537,7 +100573,9 @@
      "licence": "CC BY",
      "author": "(c) Liam Maguire, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "51.44455,-0.55697833"
+     "obs_location": "51.44455,-0.55697833",
+     "judged": "reject",
+     "verdict": "Looking up inside the hollow trunk, bark close-up, tree does not read"
     }
    ]
   },
@@ -100767,7 +100805,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Josef-Mayburger-Kai Category:Josef-Mayburger-Kai 8 (Salzburg) Category:Photographs of Salzburg by Eweht Category:Salzburg photographs taken on 2017-03-10 Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Josef-Mayburger-Kai Category:Josef-Mayburger-Kai 8 (Salzburg) Category:Photographs of Salzburg by Eweht Category:Salzburg photographs taken on 2017-03-10 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "House facade, bare street trees, no poplar"
     },
     {
      "title": "File:Salzburg - Elisabeth-Vorstadt - Josef-Mayburger-Kai Ansicht - 2024 05 11-1.jpg",
@@ -100777,7 +100817,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:Austria photographs taken on 2024-05-11 Category:CC-BY-SA-4.0 Category:Josef-Mayburger-Kai Category:May 2024 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work Category:Views from bridges in Salzburg"
+     "cats": "Category:Austria photographs taken on 2024-05-11 Category:CC-BY-SA-4.0 Category:Josef-Mayburger-Kai Category:May 2024 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work Category:Views from bridges in Salzburg",
+     "judged": "reject",
+     "verdict": "Lime avenue along the quay, no poplar as subject"
     },
     {
      "title": "File:Salzburg - Elisabeth-Vorstadt - Josef-Mayburger-Kai Ansicht - 2024 05 11-2.jpg",
@@ -100787,7 +100829,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:Austria photographs taken on 2024-05-11 Category:CC-BY-SA-4.0 Category:Josef-Mayburger-Kai Category:May 2024 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work Category:Views from bridges in Salzburg"
+     "cats": "Category:Austria photographs taken on 2024-05-11 Category:CC-BY-SA-4.0 Category:Josef-Mayburger-Kai Category:May 2024 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work Category:Views from bridges in Salzburg",
+     "judged": "reject",
+     "verdict": "Lime avenue along the quay, no poplar as subject"
     },
     {
      "title": "File:Salzburg - Itzling - Josef-Mayburger-Kai - 2020 08 31-1.jpg",
@@ -100883,7 +100927,9 @@
      "author": "Ввласенко",
      "lat": 47.803907,
      "lng": 13.042493,
-     "cats": "Category:CC-BY-SA-3.0 Category:Exterior of Andräkirche (Salzburg) (as seen from Mirabellgarten) Category:Exterior of Mirabell Castle - southern facade Category:Files with coordinates missing SDC location of creation Category:Images with annotations Category:Photographs by Ввласенко/Volodymyr Vlasenko Category:Quality images Category:Quality images by Ввласенко Category:Quality images of Salzburg Category:Salzburg photographs taken on 2015-05-18 Category:Self-published work Category:Vier-Elemente-Brunnen (Mirabellgarten)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Exterior of Andräkirche (Salzburg) (as seen from Mirabellgarten) Category:Exterior of Mirabell Castle - southern facade Category:Files with coordinates missing SDC location of creation Category:Images with annotations Category:Photographs by Ввласенко/Volodymyr Vlasenko Category:Quality images Category:Quality images by Ввласенко Category:Quality images of Salzburg Category:Salzburg photographs taken on 2015-05-18 Category:Self-published work Category:Vier-Elemente-Brunnen (Mirabellgarten)",
+     "judged": "reject",
+     "verdict": "Mirabell garden flowerbeds and people, no sequoia"
     },
     {
      "title": "File:Mirabellgarten Schloss Mirabell Salzburg Austria - panoramio (2).jpg",
@@ -100893,7 +100939,9 @@
      "author": "Hiroki Ogawa",
      "lat": 47.803276,
      "lng": 13.042831,
-     "cats": "Category:CC-BY-3.0 Category:Exterior of Mirabell Castle - southern facade Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7204433"
+     "cats": "Category:CC-BY-3.0 Category:Exterior of Mirabell Castle - southern facade Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 7204433",
+     "judged": "reject",
+     "verdict": "Mirabell parterre and palace, no sequoia"
     },
     {
      "title": "File:Salzburg Mirabellgarten-8098.jpg",
@@ -100903,7 +100951,9 @@
      "author": "Isiwal",
      "lat": 47.80402,
      "lng": 13.042619,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Herakles erwürgt Antaios (Mirabellgarten) Category:Media from WikiDaheim 2022 in Austria/Wikidata Category:Media from WikiDaheim 2022 in Austria/all Category:Media from WikiDaheim in Austria check done Category:Mirabellgarten Category:Prejury selection for WikiDaheim 2022 in Austria Category:Quality images Category:Quality images by Isiwal Category:Quality images of Salzburg Category:Quality images supported by Wikimedia Österreich in 2022 Category:Raub der Helena (Mirabellgarten) Category:Self-published work Category:Uploaded via Campaign:WikiDaheim-at-wd Category:Vier-Elemente-Brunnen (Mirabellgarten)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Herakles erwürgt Antaios (Mirabellgarten) Category:Media from WikiDaheim 2022 in Austria/Wikidata Category:Media from WikiDaheim 2022 in Austria/all Category:Media from WikiDaheim in Austria check done Category:Mirabellgarten Category:Prejury selection for WikiDaheim 2022 in Austria Category:Quality images Category:Quality images by Isiwal Category:Quality images of Salzburg Category:Quality images supported by Wikimedia Österreich in 2022 Category:Raub der Helena (Mirabellgarten) Category:Self-published work Category:Uploaded via Campaign:WikiDaheim-at-wd Category:Vier-Elemente-Brunnen (Mirabellgarten)",
+     "judged": "reject",
+     "verdict": "Fountain and palace, no sequoia"
     }
    ]
   },
@@ -101359,7 +101409,9 @@
      "licence": "CC BY",
      "author": "(c) Nate Sabo, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "29.4647605631,-98.4808775141"
+     "obs_location": "29.4647605631,-98.4808775141",
+     "judged": "reject",
+     "verdict": "Leaf and fruit close-up"
     },
     {
      "title": "iNat obs 207959508 (Platanus occidentalis)",
@@ -101368,7 +101420,9 @@
      "licence": "CC BY",
      "author": "(c) Nate Sabo, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "29.4645248959,-98.4802072217"
+     "obs_location": "29.4645248959,-98.4802072217",
+     "judged": "reject",
+     "verdict": "Leaf close-up with hand"
     },
     {
      "title": "iNat obs 359333821 (Platanus mexicana)",
@@ -101415,7 +101469,9 @@
      "author": "Boston Public Library",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Postcards of buildings in San Antonio, Texas Category:Postcards published by Weiner News Co. Category:University of the Incarnate Word Administration Building"
+     "cats": "Category:CC-BY-2.0 Category:Flickr images reviewed by FlickreviewR 2 Category:Postcards of buildings in San Antonio, Texas Category:Postcards published by Weiner News Co. Category:University of the Incarnate Word Administration Building",
+     "judged": "reject",
+     "verdict": "Archival postcard of college buildings"
     },
     {
      "title": "File:McDermott Center, University of the Incarnate Word, San Antonio, TX.jpg",
@@ -101425,7 +101481,9 @@
      "author": "Zereshk",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:McDermott Center Category:Self-published work Category:Taken with Sony DSC-H3"
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:McDermott Center Category:Self-published work Category:Taken with Sony DSC-H3",
+     "judged": "reject",
+     "verdict": "Building facade with small crape myrtles"
     },
     {
      "title": "File:The Champion Atlantic Coast Line 1941.JPG",
@@ -112119,7 +112177,9 @@
      "author": "Uoaei1",
      "lat": 47.563333,
      "lng": 13.648997,
-     "cats": "Category:All images by Uoaei1 Category:Austria photographs taken on 2018-02-06 Category:CC-BY-SA-4.0 Category:Christuskirche (Hallstatt) Category:Clock towers in Austria Category:Cultural heritage monuments in Austria with known IDs Category:Featured pictures by Uoaei1 Category:Featured pictures of Upper Austria Category:Featured pictures of churches in Austria Category:Featured pictures on Wikimedia Commons Category:Pictures of the day (2020) Category:Quality images Category:Quality images by Uoaei1 Category:Quality images of Upper Austria Category:Quality images of churches in Austria Category:Quality images of clock towers Category:Quality images of cultural heritage monuments in Austria Category:Self-published work Category:Taken with AF-S DX NIKKOR 16–80 mm f/2.8–4E ED VR Category:Taken with Nikon D7100 Category:Time 02:34"
+     "cats": "Category:All images by Uoaei1 Category:Austria photographs taken on 2018-02-06 Category:CC-BY-SA-4.0 Category:Christuskirche (Hallstatt) Category:Clock towers in Austria Category:Cultural heritage monuments in Austria with known IDs Category:Featured pictures by Uoaei1 Category:Featured pictures of Upper Austria Category:Featured pictures of churches in Austria Category:Featured pictures on Wikimedia Commons Category:Pictures of the day (2020) Category:Quality images Category:Quality images by Uoaei1 Category:Quality images of Upper Austria Category:Quality images of churches in Austria Category:Quality images of clock towers Category:Quality images of cultural heritage monuments in Austria Category:Self-published work Category:Taken with AF-S DX NIKKOR 16–80 mm f/2.8–4E ED VR Category:Taken with Nikon D7100 Category:Time 02:34",
+     "judged": "reject",
+     "verdict": "Church spire, the yew not as subject"
     },
     {
      "title": "File:Hallstatt from above.jpg",
@@ -112149,7 +112209,9 @@
      "author": "Uoaei1",
      "lat": 47.563387,
      "lng": 13.64883,
-     "cats": "Category:All images by Uoaei1 Category:Austria photographs taken on 2018-02-06 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria with known IDs Category:Featured pictures by Uoaei1 Category:Featured pictures of Upper Austria Category:Featured pictures of altars Category:Featured pictures of churches in Austria Category:Featured pictures on Wikimedia Commons Category:Images with 10+ annotations Category:Images with annotations Category:Large images Category:Pfarrkirche Mariä Himmelfahrt (Hallstatt) - Marienaltar Category:Pictures of the day (2019) Category:Quality images Category:Quality images by Uoaei1 Category:Quality images of Upper Austria Category:Quality images of altars in Austria Category:Quality images of church interiors in Austria Category:Quality images of cultural heritage monuments in Austria Category:Self-published work Category:Taken with AF-S DX NIKKOR 16–80 mm f/2.8–4E ED VR Category:Taken with Nikon D7100 Category:Valued images by Uoaei1 Category:Valued images of Upper Austria Category:Valued images of altars Category:Valued images of church interiors Category:Valued images promoted 2018-03 Category:Valued images sorted by promotion date"
+     "cats": "Category:All images by Uoaei1 Category:Austria photographs taken on 2018-02-06 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria with known IDs Category:Featured pictures by Uoaei1 Category:Featured pictures of Upper Austria Category:Featured pictures of altars Category:Featured pictures of churches in Austria Category:Featured pictures on Wikimedia Commons Category:Images with 10+ annotations Category:Images with annotations Category:Large images Category:Pfarrkirche Mariä Himmelfahrt (Hallstatt) - Marienaltar Category:Pictures of the day (2019) Category:Quality images Category:Quality images by Uoaei1 Category:Quality images of Upper Austria Category:Quality images of altars in Austria Category:Quality images of church interiors in Austria Category:Quality images of cultural heritage monuments in Austria Category:Self-published work Category:Taken with AF-S DX NIKKOR 16–80 mm f/2.8–4E ED VR Category:Taken with Nikon D7100 Category:Valued images by Uoaei1 Category:Valued images of Upper Austria Category:Valued images of altars Category:Valued images of church interiors Category:Valued images promoted 2018-03 Category:Valued images sorted by promotion date",
+     "judged": "reject",
+     "verdict": "Church interior altar"
     },
     {
      "title": "File:Hallstatt kath. Kirche Marienaltar Gesprenge 01.jpg",
@@ -112169,7 +112231,9 @@
      "author": "Uoaei1",
      "lat": 47.563387,
      "lng": 13.64883,
-     "cats": "Category:All images by Uoaei1 Category:Austria photographs taken on 2019-03-06 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria with known IDs Category:Featured pictures by Uoaei1 Category:Featured pictures of Upper Austria Category:Featured pictures of altars Category:Featured pictures of churches in Austria Category:Featured pictures on Wikimedia Commons Category:Pfarrkirche Mariä Himmelfahrt (Hallstatt) - Marienaltar Category:Pictures of the day (2020) Category:Quality images Category:Quality images by Uoaei1 Category:Quality images of Upper Austria Category:Quality images of altars in Austria Category:Quality images of church interiors in Austria Category:Quality images of cultural heritage monuments in Austria Category:Self-published work Category:Taken with AF-S DX NIKKOR 16–80 mm f/2.8–4E ED VR Category:Taken with Nikon D7100 Category:Valued images by Uoaei1 Category:Valued images of Upper Austria Category:Valued images of altars Category:Valued images of church interiors Category:Valued images promoted 2019-03 Category:Valued images sorted by promotion date"
+     "cats": "Category:All images by Uoaei1 Category:Austria photographs taken on 2019-03-06 Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Austria with known IDs Category:Featured pictures by Uoaei1 Category:Featured pictures of Upper Austria Category:Featured pictures of altars Category:Featured pictures of churches in Austria Category:Featured pictures on Wikimedia Commons Category:Pfarrkirche Mariä Himmelfahrt (Hallstatt) - Marienaltar Category:Pictures of the day (2020) Category:Quality images Category:Quality images by Uoaei1 Category:Quality images of Upper Austria Category:Quality images of altars in Austria Category:Quality images of church interiors in Austria Category:Quality images of cultural heritage monuments in Austria Category:Self-published work Category:Taken with AF-S DX NIKKOR 16–80 mm f/2.8–4E ED VR Category:Taken with Nikon D7100 Category:Valued images by Uoaei1 Category:Valued images of Upper Austria Category:Valued images of altars Category:Valued images of church interiors Category:Valued images promoted 2019-03 Category:Valued images sorted by promotion date",
+     "judged": "reject",
+     "verdict": "Church interior altar"
     }
    ]
   },
@@ -112188,7 +112252,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Austria photographs taken on 2015-10-23 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Natural monuments in Bezirk Gmunden Category:Obertraun Category:Self-published work Category:Taxus baccata in Austria Category:Uploaded via Campaign:wle-at-nd",
-     "source": "wikidata/Q119881049"
+     "source": "wikidata/Q119881049",
+     "judged": "approve",
+     "verdict": "Viewed: yew trunk (flaking red-brown bark) and dark needled crown by a wooden house; file named ND 145 (register id), geotag on our pin; overcast daylight, colour, tree fills frame"
     },
     {
      "title": "File:A-Hallstatt-salzw-blick-obertraun.jpg",
@@ -112198,7 +112264,9 @@
      "author": "Balou46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Obertraun Category:Schloss Grub (Obertraun) Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Obertraun Category:Schloss Grub (Obertraun) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Aerial lake view, no tree"
     },
     {
      "title": "File:Hallstatt mountains view to Obertraun September 2022 01.jpg",
@@ -112208,7 +112276,9 @@
      "author": "HiyoriX",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Hallstätter See Category:KatzarmarMuvhar/11 Category:Obertraun Category:Self-published work Category:Taken with OnePlus 8"
+     "cats": "Category:CC-BY-SA-3.0 Category:Hallstätter See Category:KatzarmarMuvhar/11 Category:Obertraun Category:Self-published work Category:Taken with OnePlus 8",
+     "judged": "reject",
+     "verdict": "Lake and mountain view, no tree"
     },
     {
      "title": "File:Hallstatt mountains view to Obertraun September 2022 02.jpg",
@@ -112244,7 +112314,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Austria photographs taken on 2016-04-13 Category:Bad Goisern Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Natural monuments in Bezirk Gmunden Category:Self-published work Category:Taxus baccata in Austria Category:Uploaded via Campaign:wle-at-nd",
-     "source": "wikidata/Q119882028"
+     "source": "wikidata/Q119882028",
+     "judged": "approve",
+     "verdict": "Viewed: tall dense yew (dark flat needles) on the street beside buildings, trunk at base right; file named ND 650 (the register id) and geotag on our pin; ~15 m tall as recorded; daylight, colour"
     }
    ]
   },
@@ -112270,7 +112342,9 @@
      "licence": "CC BY",
      "author": "(c) Tom Norton, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "39.76271151,-86.06546269"
+     "obs_location": "39.76271151,-86.06546269",
+     "judged": "hold",
+     "verdict": "Big bur oak labelled The Kile Oak by observer, geotag 23 m, but no fence or plaques visible at the base, which our recognition line promises"
     }
    ]
   },
@@ -125112,7 +125186,9 @@
      "author": "Gerdsch",
      "lat": 47.07743,
      "lng": 15.457006,
-     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1123 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria check done Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1123 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "Beech in Hartenaugasse, wrong tree"
     },
     {
      "title": "File:Graz-Persönlichkeitsdenkmal-Wilhelm von Tegetthoff-Tegetthoffplatz.jpg",
@@ -125144,7 +125220,9 @@
      "author": "Gerdsch",
      "lat": 47.077672,
      "lng": 15.456768,
-     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1124 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd"
+     "cats": "Category:Austria photographs taken on 2014-05-05 Category:CC-BY-SA-3.0-AT Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2014 Category:Images from Wiki Loves Earth 2014 in Austria Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Austria needing check Category:Natural monuments in Austria with known ID Category:Self-published work Category:Steirisches Naturdenkmal 1124 Category:Taken with Panasonic Lumix DMC-TZ8 Category:Uploaded via Campaign:wle-at-nd",
+     "judged": "reject",
+     "verdict": "Red oak in Leechgasse, wrong tree, crown in leaves"
     },
     {
      "title": "File:Roteiche Leechgasse Graz 1124 (2).JPG",
@@ -125394,7 +125472,9 @@
      "licence": "CC BY",
      "author": "(c) wonton_soup, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "37.5279,-118.1979133333"
+     "obs_location": "37.5279,-118.1979133333",
+     "judged": "approve",
+     "verdict": "Viewed full size: The Patriarch, broad multi-stemmed bristlecone (short dense bottlebrush needles) with the bronze THE PATRIARCH plaque boulder in front; obs geotag 33 m; daylight, colour, fills frame"
     },
     {
      "title": "iNat obs 300452424 (Pinus longaeva)",
@@ -125403,7 +125483,9 @@
      "licence": "CC BY",
      "author": "(c) Arvel Hernandez, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "37.52803333,-118.19793056"
+     "obs_location": "37.52803333,-118.19793056",
+     "judged": "reject",
+     "verdict": "Another bristlecone near the Patriarch, identity not settled; the approved candidate shows the plaque"
     },
     {
      "title": "iNat obs 137333528 (Pinus longaeva)",
@@ -125412,7 +125494,9 @@
      "licence": "CC BY",
      "author": "(c) harrii, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "37.5280456543,-118.1980285645"
+     "obs_location": "37.5280456543,-118.1980285645",
+     "judged": "reject",
+     "verdict": "Photographer's shadow in foreground, tree at edge of frame"
     },
     {
      "title": "iNat obs 320690316 (Pinus longaeva)",
@@ -127323,7 +127407,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.0874055,-75.2206116667"
+     "obs_location": "40.0874055,-75.2206116667",
+     "judged": "reject",
+     "verdict": "Bud and leaf close-up"
     },
     {
      "title": "iNat obs 367519229 (Quercus vaseyana)",
@@ -127332,7 +127418,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.0876195,-75.2211966667"
+     "obs_location": "40.0876195,-75.2211966667",
+     "judged": "reject",
+     "verdict": "Leaf close-up with hand"
     },
     {
      "title": "iNat obs 367519229 (Quercus vaseyana)",
@@ -127415,7 +127503,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.0875166667,-75.22165"
+     "obs_location": "40.0875166667,-75.22165",
+     "judged": "reject",
+     "verdict": "Label tag close-up"
     },
     {
      "title": "iNat obs 69589362 (Tsuga chinensis)",
@@ -127424,7 +127514,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Conboy, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.0875638333,-75.22187"
+     "obs_location": "40.0875638333,-75.22187",
+     "judged": "reject",
+     "verdict": "Needle close-up in hand"
     },
     {
      "title": "iNat obs 69589362 (Tsuga chinensis)",
@@ -127782,7 +127874,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:Austria photographs taken on 2023-01-04 Category:Buildings in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Freisaalweg 16, Salzburg Category:January 2023 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work"
+     "cats": "Category:Austria photographs taken on 2023-01-04 Category:Buildings in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Freisaalweg 16, Salzburg Category:January 2023 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Villa facade, bare tree in front not a framed subject"
     },
     {
      "title": "File:Salzburg - Nonntal - Freisaalweg 16 (ZAMG) - 2023 01 04-2.jpg",
@@ -127792,7 +127886,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:Austria photographs taken on 2023-01-04 Category:Buildings in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Freisaalweg 16, Salzburg Category:January 2023 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work"
+     "cats": "Category:Austria photographs taken on 2023-01-04 Category:Buildings in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Freisaalweg 16, Salzburg Category:January 2023 in Salzburg Category:Photographs of Salzburg by Eweht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Villa behind hedge, bare trunks cut off, tree does not read"
     }
    ]
   },
