@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, session with Hidde: tree page photo shape and collect wording
+
+- Tree pages whose lead photograph is 4:3 (263 of them) now show the whole photograph: beside the facts on a desktop, at 4:3 on a phone and in the app feed, instead of a wide strip that cut 40 percent of the height (the Cardón of the Expo lost its top). Commit 28d6112ab.
+- The website's collect button reads "Collect this tree" in all eight languages, the app's words; it used to say "Mark as collected", although collecting has needed a photograph since 10-14.
+
 ## 2026-10-15, third retry: no new trees live
 
 No claims standing. Same 60 READY leads and written-but-unmerged entries refused under rich-or-reader; enrich nothing to do; langcheck table empty; BACKUP only Roosendaal (deepened three times today). Nothing dispatched, 0 trees, about 10k tokens.
