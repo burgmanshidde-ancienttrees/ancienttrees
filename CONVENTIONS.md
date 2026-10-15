@@ -1172,6 +1172,44 @@ drawn as a bubble marked 2:
 - https://github.com/mapbox/supercluster
 - https://developer.apple.com/documentation/mapkit/mkannotationview/clusteringidentifier
 
+## Two trees on exactly the same spot (2026-10-15)
+
+Hidde, on the Lisbon map: the Ajuda dragon tree had no pin, because the
+First Jacarandas sit on the same coordinate and one marker drew over the
+other. Counted that day: 43 coordinates shared by 108 published trees (Hawaii
+6 on one point; Pisa, Oahu, Higashi-Hiroshima, Reno-Valdieu 4 each), so 65
+trees are unreachable on their city map; 45 more pairs stand under 15 m apart.
+Our city map draws one DOM marker per tree with no clustering, so nothing
+tells you a second tree is underneath.
+
+**Zooming never separates them**, and every library says so. Google's
+MarkerClusterer and MapLibre's clusters keep identical points in one bubble at
+every zoom; the fixes live beside the clusterer, not in it.
+
+**Two answers, used everywhere:**
+- **Fan out on tap ("spiderfy").** Leaflet.markercluster does it by default at
+  the deepest zoom (`spiderfyOnMaxZoom`), and since 1.4.0 at ANY zoom when every
+  marker shares one coordinate. Google's ecosystem uses OverlappingMarkerSpiderfier.
+  Desktop-era, built for a mouse; the fanned pins sit at invented positions
+  while open.
+- **One marker with a count; tap opens a list.** MapKit hands the cluster's
+  `memberAnnotations` to the app, which shows them as a list. Real-estate maps
+  do this for a building with several units (one marker, a panel of cards).
+- **What not to copy: Airbnb.** Hosts report several listings at one address
+  show as ONE bubble and the rest are only reachable from the list. That is our
+  current bug.
+
+**What fits us:** the count-and-list. It uses the sheet we already have (one
+sheet for every overlay), works at 375 px with a thumb, and never draws a pin
+where no tree stands (preflight: "never spread pins apart to fake precision").
+
+Read 2026-10-15:
+- https://github.com/Leaflet/Leaflet.markercluster (README, CHANGELOG 1.4.0)
+- https://github.com/jawj/OverlappingMarkerSpiderfier
+- https://developer.apple.com/documentation/mapkit/mkclusterannotation
+- https://help.repliers.com/en/article/handling-overlapping-map-pins-for-units-sharing-the-same-address-92ous3/
+- https://community.withairbnb.com/t5/Ask-about-your-listing/Map-view-showing-smaller-bubbles-without-prices/m-p/1872869
+
 ---
 
 ## What a sign-in sheet says
