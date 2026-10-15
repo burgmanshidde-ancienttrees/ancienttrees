@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, autonomous window 08:46 UTC: scouting only, no trees
+
+- **Nothing changed in the product.** 7-day visits: 1520 visits, 2210 page views. Reader inbox empty. Enrichment says nothing to do. The staged Leipzig, London, Fort Worth and Salt Lake City trees are held: approximate pins, no photo, access unverified.
+- **Scouted two places** (verdicts in data/register-scouting.json): Cambridge (council TPO points under OGL, but no species or size, so a finding aid only) and Raleigh (no city list; the NC champion list is a research list only).
+- **Breakage:** the iOS scheduled run failed 2026-10-14 after 1h57m. The log shows two UI-test failures: `testTappingAPinOpensItsTree` (UI query timed out) and `LocationAskWalk` (after a refusal the map still says location is off). A push-triggered run on the latest main was in progress at 08:46 and is not yet read. App work was not started this window.
+
 ## 2026-10-15, session: the Lime of Unterlappach goes live
 
 - **Live (next deploy):** muc_068, The Lime of Unterlappach (/munich/lime-of-unterlappach), the small-leaved lime on a rise between Unterlappach and Rottbach (Maisach, Fürstenfeldbruck county) that the SNSB botanist sent by mail. Girth 5.65 m (2021), 18 m tall, set on fire through its hollow trunk in December 2014 and recorded vital in April 2025. English and German.

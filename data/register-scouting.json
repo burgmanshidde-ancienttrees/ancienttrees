@@ -9,6 +9,18 @@
  },
  "places": [
   {
+   "place": "Raleigh",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#63). Standard web search found no City of Raleigh heritage or significant tree list. The N.C. Forest Service keeps a statewide champion list (ncagr.gov/divisions/nc-forest-service/nc-champion-tree-list), a finding aid with county-level places and no reuse statement checked. Route here: the champion list as a research list, plus Raleigh's Tree of the Year nominations (WRAL) and the Henry Clay Oak story, each needing a second source and a pin."
+  },
+  {
+   "place": "Cambridge",
+   "country": "United Kingdom",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#9). Cambridge City Council publishes its tree preservation orders (984 records, Open Government Licence) and preservation zones (390) on provide.planning.data.gov.uk with point geometry, TPO number and address, but no species, girth or age: protection alone is not a reason to give a tree a page, so it is a finding aid, not a remarkable-tree register. No Cambridge heritage or champion tree list found. Route here: named college gardens, Cambridge Botanic Garden and Wikidata, not a register. Woodland Trust Ancient Tree Inventory data stays untouched."
+  },
+  {
    "place": "Salt Lake City",
    "country": "United States",
    "status": "empty",
