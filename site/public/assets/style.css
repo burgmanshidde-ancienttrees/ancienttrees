@@ -78,7 +78,6 @@
   --page-max: 1100px;
   --page-pad: 2.5rem;
   --content-max: 700px;
-  --heart-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21C6.5 16.3 3.5 13 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.4-3 6.7-8.5 11.4z'/%3E%3C/svg%3E");
   --ink-light: #8A8B80; --moss: #4A6B2A; --moss-light: #EDF3E3; --surface: #F7F6F1; --shadow: 0 1px 3px rgba(26,32,18,0.08), 0 4px 14px rgba(26,32,18,0.05); --gold: #D9A13F;
   --serif: 'Gabarito', system-ui, sans-serif; --sans: 'Gabarito', system-ui, sans-serif;
   --hand: 'Gabarito', system-ui, sans-serif;
@@ -1470,11 +1469,10 @@ footer { border-top: 1px solid var(--cream-dark); }
 .pin-fav { position: absolute; top: -3px; right: -3px; width: 15px; height: 15px;
   border-radius: 50%; background: var(--cream); border: 1.5px solid var(--cream);
   box-shadow: 0 1px 3px rgba(26,26,20,0.3); display: none; }
-.pin-tree.kept .pin-fav { display: block; }
-.pin-fav::after { content: ''; position: absolute; inset: 0;
-  background: #D93340;
-  -webkit-mask: var(--heart-mask) center / 9px 9px no-repeat;
-  mask: var(--heart-mask) center / 9px 9px no-repeat; }
+.pin-tree.kept .pin-fav { display: flex; align-items: center; justify-content: center; }
+/* The bookmark (2026-10-15), red as the app's TreeMap draws it. The colour is
+   set on the svg itself for the same reason as the ticket's below. */
+.pin-tree .pin-fav svg.pin-fav-ic { width: 9px; height: 9px; fill: #D93340; color: #D93340; }
 .pin-ticket { position: absolute; bottom: -3px; left: -3px; width: 15px; height: 15px;
   border-radius: 50%; background: var(--cream); box-shadow: 0 1px 3px rgba(26,26,20,0.3);
   display: flex; align-items: center; justify-content: center; color: #2E6BA8; }

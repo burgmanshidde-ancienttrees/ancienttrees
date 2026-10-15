@@ -23,6 +23,10 @@ import { NO_PHOTO_CARD } from "./images";
 import { mapScript, CLUSTER_RADIUS } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
+import { icon } from "./icons";
+
+// The saved-tree corner of a pin: the cards' own bookmark, filled.
+const PIN_BOOKMARK = icon("bookmark-simple", "fill", "pin-fav-ic");
 
 export interface OtherCity {
   slug: string;
@@ -328,10 +332,12 @@ markers.forEach(function(m, idx) {
                //                 visit rather than something you have done
                //   bottom right  the tick, moved down from the top right to
                //                 make room and to agree with the app
-               //   top right     the heart, red, because a heart is red in
-               //                 every app anybody has used and ours is red
-               //                 on the cards already
-               + '<span class="pin-fav" aria-hidden="true"></span>'
+               //   top right     the bookmark, red, as TreeMap.swift draws it:
+               //                 the save became a bookmark on 2026-10-09
+               //                 and this corner kept the heart until
+               //                 2026-10-15 (Hidde: "it should be a
+               //                 bookmark icon")
+               + '<span class="pin-fav" aria-hidden="true">${PIN_BOOKMARK}</span>'
                + (m.paid ? '<span class="pin-ticket" aria-hidden="true">'
                    + '<svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5V10a2 2 0 0 0 0 4v2.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5V14a2 2 0 0 0 0-4V7.5Z"/></svg>'
                    + '</span>' : '');
