@@ -1482,12 +1482,17 @@ footer { border-top: 1px solid var(--cream-dark); }
 .pin-stack { width: 30px; height: 30px; padding: 0; border-radius: 50%; border: 2px solid #F6F2E9;
   background: var(--moss); color: #F6F2E9; font: 600 12px/1 var(--sans); cursor: pointer;
   box-shadow: 0 3px 10px rgba(26,26,20,0.28); }
-.pin-stack:hover { transform: scale(1.12); }
 .stack-legs-host { width: 0; height: 0; pointer-events: none; }
 .stack-leg { position: absolute; left: 0; top: -0.75px; height: 1.5px; background: var(--moss);
   transform-origin: 0 50%; }
 .stack-dot { position: absolute; left: -3.5px; top: -3.5px; width: 7px; height: 7px; border-radius: 50%;
   background: var(--moss); }
+/* The same spread on the circle-pin maps (explore, country, My trees): each
+   dot is that map's own tree circle, radius 7 and a 2px ring. PILES_JS in
+   lib/map.ts. */
+.pile-dot { width: 18px; height: 18px; padding: 0; border-radius: 50%; border: 2px solid #F6F2E9;
+  background: #4A6B2A; cursor: pointer; box-shadow: 0 1px 4px rgba(26,26,20,0.3); }
+.pile-dot--hollow { background: transparent; border: 2.5px solid #4A6B2A; box-shadow: none; }
 .pin-ticket { position: absolute; bottom: -3px; left: -3px; width: 15px; height: 15px;
   border-radius: 50%; background: var(--cream); box-shadow: 0 1px 3px rgba(26,26,20,0.3);
   display: flex; align-items: center; justify-content: center; color: #2E6BA8; }

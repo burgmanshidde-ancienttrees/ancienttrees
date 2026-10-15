@@ -55,6 +55,108 @@ setTimeout(function () {
  *  a 26 pixel bubble plus its ring, the app's clusterPin at 32 points.
  *  CONVENTIONS.md 2026-10-04. */
 export const CLUSTER_RADIUS = 13;
+
+/** TREES ON ONE SPOT, on every clustered map (Hidde, 2026-10-15: "map
+ *  interaction need to stay consistent so do everywhere"). The city map and
+ *  the app do it first (spreadStack() in city-map-script.ts, MapLayers.spread
+ *  in TreeMap.swift); this is the same behaviour for maps that draw trees as
+ *  circles in a clustered GeoJSON source: /explore, the country maps, My trees.
+ *
+ *  Native clustering stops at clusterMaxZoom, and from there trees on one
+ *  coordinate drew one dot over the other with only the top one reachable.
+ *  So before the data goes in, atMarkPiles() gives every feature a `pile`:
+ *  0 alone, n on the one feature that stands for a pile of n, -1 on the rest.
+ *  The tree layer draws pile 0 only; atPileLayers() adds a bubble (the
+ *  cluster's own) for the rest. A tap flies to zoom 17 on the spot and the
+ *  dots spring apart round it on thin legs, Leaflet's spiderfy; a dot opens
+ *  its tree through `open`; a tap on the map or your own zoom folds them.
+ *  Clusters still count every tree, hidden ones included.
+ *  CONVENTIONS.md, "Two trees on exactly the same spot". */
+export const PILES_JS = `
+// The piles as the DATA has them. Never read back from the map: a feature
+// from the map's tiles has its coordinate rounded to the tile grid, so it no
+// longer matches its own spot (the app's first tap only zoomed because of
+// this, 2026-10-15).
+var atPiles = [];
+function atPileKey(c) { return c[1].toFixed(5) + ',' + c[0].toFixed(5); }
+function atMarkPiles(features) {
+  var by = {};
+  features.forEach(function(f) {
+    var c = f.geometry && f.geometry.coordinates;
+    if (!c || c[0] == null || c[1] == null) { return; }
+    var k = atPileKey(c);
+    (by[k] = by[k] || []).push(f);
+  });
+  atPiles = [];
+  Object.keys(by).forEach(function(k) {
+    var g = by[k];
+    g.forEach(function(f, i) { f.properties.pile = g.length < 2 ? 0 : (i === 0 ? g.length : -1); f.properties.pk = k; });
+    if (g.length > 1) { atPiles.push({c: g[0].geometry.coordinates.slice(), fs: g}); }
+  });
+  return features;
+}
+function atPileLayers(map, source, treeLayer, open, hollow) {
+  var pileOnly = ['all', ['!', ['has', 'point_count']], ['>=', ['coalesce', ['get', 'pile'], 0], 2]];
+  map.setFilter(treeLayer, ['all', ['!', ['has', 'point_count']], ['==', ['coalesce', ['get', 'pile'], 0], 0]]);
+  map.addLayer({id: treeLayer + '-pile', type: 'circle', source: source, filter: pileOnly,
+    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${CLUSTER_RADIUS},
+            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  map.addLayer({id: treeLayer + '-pile-n', type: 'symbol', source: source, filter: pileOnly,
+    layout: {'text-field': ['to-string', ['get', 'pile']], 'text-font': ['Noto Sans Regular'],
+             'text-size': 12, 'text-allow-overlap': true},
+    paint: {'text-color': '#F6F2E9'}});
+  var spread = [], tapAt = 0;
+  // The bubble is a map layer, so while its pile is spread it is filtered out.
+  function showBubbles(except) {
+    var f = except ? ['all', pileOnly, ['!=', ['get', 'pk'], except]] : pileOnly;
+    map.setFilter(treeLayer + '-pile', f);
+    map.setFilter(treeLayer + '-pile-n', f);
+  }
+  function fold() {
+    if (!spread.length) { return; }
+    spread.forEach(function(m) { m.remove(); });
+    spread = [];
+    showBubbles(null);
+  }
+  function fan(pile) {
+    fold();
+    var c = pile.c, g = pile.fs, n = g.length, R = n <= 2 ? 24 : 30;
+    showBubbles(atPileKey(c));
+    var legs = document.createElement('div');
+    legs.className = 'stack-legs-host';
+    var html = '<i class="stack-dot"></i>';
+    g.forEach(function(f, i) {
+      var a = n === 2 ? Math.PI * i : -Math.PI / 2 + i * 2 * Math.PI / n;
+      html += '<i class="stack-leg" style="width:' + (R - 9) + 'px;transform:rotate(' + (a * 180 / Math.PI) + 'deg)"></i>';
+      var d = document.createElement('button');
+      d.type = 'button';
+      d.className = 'pile-dot' + (hollow && hollow(f.properties) ? ' pile-dot--hollow' : '');
+      if (f.properties.name) { d.setAttribute('aria-label', f.properties.name); d.title = f.properties.name; }
+      d.addEventListener('click', function(e) { e.stopPropagation(); tapAt = Date.now(); open(f.properties, c); });
+      spread.push(new maplibregl.Marker({element: d, offset: [Math.round(R * Math.cos(a)), Math.round(R * Math.sin(a))]})
+        .setLngLat(c).addTo(map));
+    });
+    legs.innerHTML = html;
+    spread.unshift(new maplibregl.Marker({element: legs}).setLngLat(c).addTo(map));
+  }
+  map.on('click', treeLayer + '-pile', function(e) {
+    tapAt = Date.now();
+    // The nearest pile on screen to the tap: the bubble was drawn there.
+    var best = null, bestD = 30 * 30;
+    atPiles.forEach(function(p) {
+      var q = map.project(p.c), dx = q.x - e.point.x, dy = q.y - e.point.y;
+      if (dx * dx + dy * dy < bestD) { bestD = dx * dx + dy * dy; best = p; }
+    });
+    if (!best) { return; }
+    if (map.getZoom() >= 16.5) { fan(best); return; }
+    map.easeTo({center: best.c, zoom: 17, duration: 900});
+    setTimeout(function() { fan(best); }, 950);
+  });
+  map.on('click', function() { if (Date.now() - tapAt > 400) { fold(); } });
+  map.on('zoomstart', function(e) { if (e.originalEvent) { fold(); } });
+  map.on('mouseenter', treeLayer + '-pile', function() { map.getCanvas().style.cursor = 'pointer'; });
+  map.on('mouseleave', treeLayer + '-pile', function() { map.getCanvas().style.cursor = ''; });
+}`;
 export function mapScript(body: string): string {
   return `\n<script defer src="${MAPLIBRE_JS}"></script>\n<script>\n` +
     `document.addEventListener("DOMContentLoaded", function () {\n${body}\n${COLLAPSE_ATTRIBUTION}\n});\n</script>\n`;
@@ -116,8 +218,9 @@ export function countryMapScript(cities: CountryMapCity[],
       properties: { cs: "/" + c.slug, url: m.url ?? "/" + c.slug },
     }))),
   };
-  return mapScript(`
-var TREES = ${JSON.stringify(data)};
+  return mapScript(`${PILES_JS}
+var TREES = atMarkPiles(${JSON.stringify(data)}.features);
+TREES = { type: 'FeatureCollection', features: TREES };
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [0, 0], zoom: 3, renderWorldCopies: false,
@@ -188,6 +291,7 @@ map.on('load', function() {
   map.on('click', 'tree', function(e) {
     window.location.href = e.features[0].properties.url;
   });
+  atPileLayers(map, 'trees', 'tree', function(p) { window.location.href = p.url; });
   ['clusters', 'tree'].forEach(function(l) {
     map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
@@ -233,7 +337,7 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
   const speciesJson = JSON.stringify(species);
   return (
     mapScript(
-    `
+    `${PILES_JS}
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
 var SPECIES = ${speciesJson};
@@ -289,7 +393,7 @@ function applyFilters() {
   var src = (typeof map !== 'undefined' && map && map.getSource) ? map.getSource('trees') : null;
   if (!src) return;
   var kept = filtersOn() ? DATA.features.filter(keepsTree) : DATA.features;
-  src.setData({ type: 'FeatureCollection', features: kept });
+  src.setData({ type: 'FeatureCollection', features: atMarkPiles(kept) });
   var note = document.getElementById('mf-count');
   if (note) {
     // A number only while a filter is on. The map's own copy carries no counts
@@ -401,6 +505,7 @@ try {
 } catch (e) {}
 function initTreeLayers() {
   if (map.getSource('trees')) { return; }
+  atMarkPiles(DATA.features);
   map.addSource('trees', {type: 'geojson', data: DATA, cluster: true,
                           clusterMaxZoom: 11, clusterRadius: 42});
   // The season heartbeat (a pulse and a gold dot behind trees at their peak)
@@ -477,6 +582,7 @@ function initTreeLayers() {
     var p = e.features[0].properties;
     if (p.url) { window.location.href = p.url; }
   });
+  atPileLayers(map, 'trees', 'tree', function(p) { if (p.url) { window.location.href = p.url; } });
   ['clusters', 'tree'].forEach(function(l) {
     map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
     map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
@@ -565,7 +671,7 @@ renderPanel();
  * like.
  */
 export function myTreesMapScript(): string {
-  return mapScript(`
+  return mapScript(`${PILES_JS}
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [8, 48], zoom: 2.6, minZoom: 1.3,
@@ -616,6 +722,11 @@ function initMine() {
       .setHTML('<strong>' + p.name + '</strong><br>' + p.city)
       .addTo(map);
   });
+  atPileLayers(map, 'mine', 'mine-tree', function(p, c) {
+    if (p.url) { window.location.href = p.url; return; }
+    new maplibregl.Popup({offset: 12}).setLngLat(c)
+      .setHTML('<strong>' + p.name + '</strong><br>' + p.city).addTo(map);
+  }, function(p) { return p.got !== 1; });
   map.on('click', 'mine-clusters', function(e) {
     var f = map.queryRenderedFeatures(e.point, {layers: ['mine-clusters']})[0];
     map.getSource('mine').getClusterExpansionZoom(f.properties.cluster_id).then(function(z) {
@@ -630,7 +741,7 @@ function initMine() {
 }
 
 function paint(features) {
-  map.getSource('mine').setData({ type: 'FeatureCollection', features: features });
+  map.getSource('mine').setData({ type: 'FeatureCollection', features: atMarkPiles(features) });
   if (!features.length) { return; }
   // Frame the whole collection. One tree gets a city-level zoom rather than
   // a bounding box of nothing.
