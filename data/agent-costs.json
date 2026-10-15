@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "photo queue pass 2 (US/UK/DE/AT)",
+    "kind": "photo",
+    "tokens": 250000,
+    "trees": 0,
+    "note": "run of 2026-10-15: 48 judged, 4 approved (abp_001, bhm_005, hst_004, hst_002), 2 held; viewer hit request limits, ~50 candidates left in out/dl/photos3"
+   },
+   {
+    "date": "2026-10-14",
     "target": "photo-queue zero-photo sweep (14 cities)",
     "kind": "photo",
     "tokens": 115000,
