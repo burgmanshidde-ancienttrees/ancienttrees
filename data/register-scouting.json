@@ -942,6 +942,15 @@
    "country": "United Kingdom",
    "status": "stalled",
    "note": "SCOUTED 2026-10-15. Two searches plus one fetch. No Highland or Inverness register of notable trees exists in open form. Scottish Tree Register / Tree Register of the British Isles champion database is members only (not ours to import); Woodland Trust Ancient Tree Inventory untouched by rule. Highland Council Tree Preservation Orders sit on data.gov.uk (dataset 62785c4c-653a-4c2a-b216-b7f43a56103d) with licence field 'Not set', and TPOs are amenity protections, not a remarkable-tree list, so no proving sentence and nothing saved. (Argyll and Bute's TPO set is OGL v3, which shows the portal can carry it, but it is a different council.) Next angle: ancient-yew.org 'Yew Trees in the Scottish Highlands' PDF names Tomnahurich cemetery and Ness Islands trees (lead list only, licence unknown); OSM natural=tree nodes on the Ness Islands; Wikidata."
+  },
+  {
+   "place": "Tyrol",
+   "country": "Austria",
+   "status": "imported",
+   "note": "SCOUTED 2026-10-15. Land Tirol (TIRIS) Naturdenkmaeler_Punkt WFS, CC BY 4.0 (WFS AccessConstraints 'CC BY 4.0 AT'; data.europa.eu record land-tirol_naturdenkmlerflchigtirol). 260 active points (about 198 trees) plus 45 revoked kept as a dead list: data/registers/tirol-naturdenkmaeler.json. Name, date and legal source only, no species/girth/owner, pins 1:1000 to 1:5000 so approximate; publishable false until per-tree access is checked. Innsbruck has about 34 tree rows (Meinhardstrasse oak, Hoetting, Innpromenade, Pradl copper beech, Bergisel linden). Innsbruck's own Baumkataster not checked.",
+   "covers": [
+    "Innsbruck"
+   ]
   }
  ],
  "out_of_focus": {
