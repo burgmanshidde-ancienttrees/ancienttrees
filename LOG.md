@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (fourteenth attempt): nothing published; scouted Belfast, Brighton
+
+No claims. Tried merging the 7 written-but-unmerged trees (delft, leipzig, london, fort-worth, salt-lake-city); preflight refused all (not rich, one 83-word story, Delft ash within 5 m of a register-dead ash and on the removed-slug list), so reverted. Scouted Belfast (#321): no register, Open Data NI street-tree CSV only. Brighton (#334): CPRE Sussex notable-trees map, licence unknown, finding aid only. Both `stalled` in data/register-scouting.json. 0 trees.
+
 ## 2026-10-15 (thirteenth attempt): nothing published; scouted Stratford-upon-Avon
 
 No claims. Enrich nothing; the 60 READY leads and the written-but-unmerged trees are still refused by the richness rule, so no write pass. Scouted Stratford-upon-Avon (#313): no open notable-tree register, TPO points only, Woodland Trust ATI unlicensed. `stalled` in data/register-scouting.json with next angles. 0 trees.
