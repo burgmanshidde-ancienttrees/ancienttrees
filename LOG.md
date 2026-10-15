@@ -11,9 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-10-15 (twelfth attempt): nothing published; scouted Bristol and Cardiff
+## 2026-10-15 (twelfth attempt): nothing published; scouted Bristol, Cardiff, Oxford
 
-7-day visits 1762 (2577 views). No sightings waiting. health.py: iOS app scheduled run failed (UI test `testSearchingForATreeMovesTheMapToIt` found no Beethoven Plane, and FlowWalk collect-intro/collect-away had 2 findings each); needs a macOS simulator, not reproducible here, left for a session. Site build is green. Enrich nothing; READY leads and unmerged files still refused by the richness rule. Scouted Bristol (#283) and Cardiff (#294): no notable-tree register in either; Bristol has TPO points and a council inventory (OGL), both protection or amenity, so `stalled` with next angles in data/register-scouting.json. 0 trees.
+7-day visits 1762 (2577 views). No sightings waiting. health.py: iOS app scheduled run failed (UI test `testSearchingForATreeMovesTheMapToIt` found no Beethoven Plane, and FlowWalk collect-intro/collect-away had 2 findings each); needs a macOS simulator, not reproducible here, left for a session. Site build is green. Enrich nothing; READY leads and unmerged files still refused by the richness rule. Scouted Bristol (#283), Cardiff (#294) and Oxford (#304): no notable-tree register in any; Bristol has TPO points and a council inventory (OGL), both protection or amenity, so `stalled` with next angles in data/register-scouting.json. 0 trees.
 
 ## 2026-10-15 (eleventh attempt): nothing published; scouted Canterbury
 
