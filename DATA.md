@@ -42,35 +42,34 @@ event on the list is unaffected.
 
 **Did the product happen**
 
-| Action | Yesterday | 7 days | Ever | Last |
-|---|---:|---:|---:|---|
-| signin-open | 3 | 31 | 504 | yesterday |
-| app-cta | 0 | 17 | 61 | today |
-| signin-oauth | 0 | 1 | 41 | 6 days ago |
-| signin-done | 0 | 0 | 39 | 8 days ago |
-| directions | 0 | 1 | 37 | 6 days ago |
-| search-home | 1 | 5 | 29 | yesterday |
-| app-open | 0 | 7 | 19 | 5 days ago |
-| suggestion-submit | 0 | 0 | 17 | 20 days ago |
-| home-country | 0 | 3 | 10 | 3 days ago |
-| home-fav | 0 | 2 | 8 | 6 days ago |
-| signin-link-sent | 0 | 0 | 6 | 20 days ago |
-| save | 0 | 0 | 5 | 13 days ago |
-| waitlist-submit | 0 | 1 | 5 | 5 days ago |
-| home-dir-tree | 0 | 0 | 3 | 22 days ago |
-| visit | 0 | 0 | 3 | 25 days ago |
-| app-page-badge | 0 | 1 | 2 | 6 days ago |
-| home-species | 0 | 0 | 2 | 24 days ago |
-| search-explore | 0 | 0 | 2 | 13 days ago |
-| walks-app | 0 | 0 | 2 | 22 days ago |
-| home-dir-species | 0 | 1 | 1 | 4 days ago |
-| sponsor-open | 0 | 0 | 1 | 25 days ago |
-| worthit-report | 0 | 0 | 1 | 21 days ago |
-| worthit-report detail | 0 | 0 | 1 | 21 days ago |
-| worthit-worth it | 0 | 0 | 1 | 25 days ago |
-| worthit-not worth it | 0 | 0 | 0 | never |
-| **all** | **4** | **70** | **800** | |
-- 'Ever' counts every row in the events table, which begins 2026-08-01 when the funnel was repaired. Anything named here with a zero has never fired at all.
+| Action | Yesterday | 7 days | Last |
+|---|---:|---:|---|
+| signin-open | 3 | 31 | yesterday |
+| app-cta | 0 | 17 | today |
+| signin-oauth | 0 | 1 | 6 days ago |
+| signin-done | 0 | 0 | 8 days ago |
+| directions | 0 | 1 | 6 days ago |
+| search-home | 1 | 5 | yesterday |
+| app-open | 0 | 7 | 5 days ago |
+| suggestion-submit | 0 | 0 | 20 days ago |
+| home-country | 0 | 3 | 3 days ago |
+| home-fav | 0 | 2 | 6 days ago |
+| signin-link-sent | 0 | 0 | 20 days ago |
+| save | 0 | 0 | 13 days ago |
+| waitlist-submit | 0 | 1 | 5 days ago |
+| home-dir-tree | 0 | 0 | 22 days ago |
+| visit | 0 | 0 | 25 days ago |
+| app-page-badge | 0 | 1 | 6 days ago |
+| home-species | 0 | 0 | 24 days ago |
+| search-explore | 0 | 0 | 13 days ago |
+| walks-app | 0 | 0 | 22 days ago |
+| home-dir-species | 0 | 1 | 4 days ago |
+| sponsor-open | 0 | 0 | 25 days ago |
+| worthit-report | 0 | 0 | 21 days ago |
+| worthit-report detail | 0 | 0 | 21 days ago |
+| worthit-worth it | 0 | 0 | 25 days ago |
+| worthit-not worth it | 0 | 0 | never |
+| **all** | **4** | **70** | |
 
 **Searched yesterday:** zurich.
 
@@ -113,25 +112,25 @@ event on the list is unaffected.
 
 **What people did in the app**
 
-| What | Yesterday | 7 days | Ever | Last |
-|---|---:|---:|---:|---|
-| app_open | 17 | 64 | 328 | today |
-| tab | 6 | 24 | 323 | today |
-| tree_opened | 7 | 84 | 1268 | today |
-| directions | 1 | 5 | 46 | yesterday |
-| tree_saved | 0 | 1 | 20 | 2 days ago |
-| tree_visited | 0 | 4 | 27 | 4 days ago |
-| sighting_recorded | 0 | 1 | 73 | 4 days ago |
-| sync_skipped | 0 | 0 | 0 | never |
-| sync_failed | 0 | 0 | 0 | never |
-| location | 1 | 1 | 1 | yesterday |
-| **all** | **32** | **184** | **2086** | |
+| What | Yesterday | 7 days | Last |
+|---|---:|---:|---|
+| app_open | 17 | 67 | today |
+| tab | 6 | 24 | today |
+| tree_opened | 7 | 84 | today |
+| directions | 1 | 5 | yesterday |
+| tree_saved | 0 | 1 | 2 days ago |
+| tree_visited | 0 | 4 | 4 days ago |
+| sighting_recorded | 0 | 1 | 4 days ago |
+| sync_skipped | 0 | 0 | never |
+| sync_failed | 0 | 0 | never |
+| location | 1 | 1 | yesterday |
+| **all** | **32** | **187** | |
 - Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
 - 85 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
 - Yesterday came from 3 installs, and the busiest made 22 of 3 events (733%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
 - Tabs opened (7d): Discover 10; My trees 8; Map 6
-- Active phones: 3 in the last day, 24 in the last 7 days, 57 in the last 30 days.
-- Coming back: 26 of those 57 phones opened the app on more than one day (46%).
+- Active phones: 3 in the last day, 24 in the last 7 days, 56 in the last 30 days.
+- Coming back: 26 of those 56 phones opened the app on more than one day (46%).
 - Trees opened by the most phones (7d): The Fig of the Glorieta de Goya (Seville) 2; The Great White Oak of Logan (Logan Oak) (Logan, Ohio) 2; The Ombú of La Cartuja (Seville) 1; The Mulberry of the Alamillo Cortijo (Seville) 1; The Magnolia of the Cathedral (Seville) 1
 - Where the phones are (30d): United States 13; United Kingdom 7; Portugal 5; Spain 4; Italy 4; The Netherlands 4
 - Trees recorded (7d): a tree we map 1
@@ -216,19 +215,19 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
     - and 1 more
 **What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)
 
-| Day | Impressions | Clicks | CTR | Pages crawled | Pages in index |
-|---|---:|---:|---:|---:|---:|
-| 10-06 | 65 | 2 | 3.1% | 192 | 2157 |
-| 10-07 | 81 | 2 | 2.5% | 78 | 2244 |
-| 10-08 | 168 | 4 | 2.4% | 164 | 2293 |
-| 10-09 | 47 | 2 | 4.3% | 150 | 2380 |
-| 10-10 | 57 | 1 | 1.8% | - | - |
-| 10-11 | 53 | 2 | 3.8% | - | - |
-| 10-12 | 81 | 3 | 3.7% | - | - |
-| **7 days** | **552** | **16** | **2.9%** | **584** | **2380** |
-- Week before: 166 impressions, 11 clicks; in index then: 2106. No Bing demotion in sight.
-- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6)
-- Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
+| Day | Impressions | Clicks | CTR |
+|---|---:|---:|---:|
+| 10-06 | 65 | 2 | 3.1% |
+| 10-07 | 81 | 2 | 2.5% |
+| 10-08 | 168 | 4 | 2.4% |
+| 10-09 | 47 | 2 | 4.3% |
+| 10-10 | 57 | 1 | 1.8% |
+| 10-11 | 53 | 2 | 3.8% |
+| 10-12 | 81 | 3 | 3.7% |
+| **7 days** | **552** | **16** | **2.9%** |
+- Week before: 166 impressions, 11 clicks. No Bing demotion in sight.
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); french trees found in paris (c1/i2, p6); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3)
+- Bing alone, from Bing Webmaster Tools. DuckDuckGo and Yahoo draw on the same index and publish no numbers; their arrivals are columns in the Cloudflare table. Bing's data lags about two days.
 
 **Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
 
@@ -265,17 +264,6 @@ What we did (context, proves nothing by itself): 2947 trees Google may index, 75
 
 - Plus 256 cities on the frozen 09-27 roster (data/depth-roster-frozen.json), biggest: singapore, lisbon, amsterdam, barcelona, seville, bath, tenerife, berlin.
 
-**Copy test**
-
-```
-Copy test: city-title-age-first (day 35 of 56, review 2026-11-05)
-The age is the hook and the count is inventory, so naming the oldest tree before the number earns more clicks.
-
-  control      n1    before 1.38  now 0.00  change -1.38
-
-  TOO EARLY. At about 2 clicks per page per ten days this needs the full window; a lead now is noise wearing a result's clothes.
-```
-
 **What was sent in, and what we decided**
 
 | seen | what | where | size for its species | ours | Hidde |
@@ -297,33 +285,6 @@ The age is the hook and the count is inventory, so naming the oldest tree before
 | 2026-10-04 | Ginkgo in Tokyo | - | - | lead | - |
 
 0 waiting for a verdict. Disagree with one and the rule changes: `python3 scripts/judgement.py --feedback <id> "..."`, and `--learn` prints every verdict he has overruled.
-
-**The language test** (Contract J v1.13: a translated set should pass its English twin's impressions within four weeks of indexing):
-
-| Lang | City | Clicks | Impressions | Position | English twin |
-|---|---|---:|---:|---:|---:|
-| es | tenerife | 0 | 6 | 73.0 | 6 |
-| de | vienna | 0 | 6 | 31.2 | 1 |
-| es | barcelona | 0 | 5 | 46.8 | 2 |
-| de | graz | 0 | 4 | 49.5 | 0 |
-| de | hamburg | 0 | 4 | 24.5 | 0 |
-| pt | rio-de-janeiro | 0 | 4 | 9.8 | 0 |
-| de | berlin | 1 | 3 | 26.3 | 2 |
-| it | rome | 1 | 3 | 33.0 | 1 |
-| es | seville | 1 | 3 | 9.7 | 6 |
-| ja | fukuoka | 0 | 3 | 26.3 | 0 |
-| nl | arnhem | 0 | 3 | 83.3 | 0 |
-| de | munich | 0 | 2 | 11.0 | 6 |
-| es | palma-de-mallorca | 0 | 2 | 75.5 | 1 |
-| fr | lyon | 0 | 2 | 44.0 | 2 |
-| nl | amsterdam | 0 | 2 | 34.0 | 0 |
-| de | zurich | 0 | 1 | 10.0 | 0 |
-| es | madrid | 0 | 1 | 28.0 | 1 |
-| fr | nantes | 0 | 1 | 27.0 | 0 |
-| fr | nice | 0 | 1 | 6.0 | 0 |
-| ja | kagoshima | 0 | 1 | 83.0 | 1 |
-| ja | tokyo | 0 | 1 | 5.0 | 2 |
-| nl | the-hague | 0 | 1 | 1.0 | 0 |
 - Seen, not clicked: /sequoia-national-park/general-sherman-tree (c0/i25, 0.0%) for general sherman tree california (i5, p74); sequoia national park general sherman (i3, p64); sequoia tree general sherman (i2, p71)
 
 **Who they are**
@@ -355,48 +316,6 @@ Counts are bucketed to the nearest ten by Cloudflare; read the window, not the d
 
 Links: external referrers (a link somebody actually clicked): localhost (10)
 AI: arrivals from an assistant that cited us: none yet
-
-Backlinks (watched pages):
-| Site | Links to | rel | First seen |
-|---|---|---|---|
-| getlisbon.com | /lisbon | followed | 2026-09-08 |
-| getlisbon.com | /pt/lisbon | followed | 2026-09-08 |
-| www.baumkunde.de | /copenhagen | followed | 2026-09-26 |
-| www.baumkunde.de | /rogalin/russ-oak | followed | 2026-09-26 |
-4 linking page(s), 4 followed. Checked by fetching the page: a link with rel="noreferrer" never appears in the referrer table, so these two lines measure different things and neither replaces the other. Unknown links stay a manual read of Search Console's Links report. This run read 12 of 12 fetched (0 unreachable), out of 27 watched pages.
-
-**Google Analytics** (last 7 days, visitors who accepted cookies)
-
-| Day | People | New | Returning | Visits | Pageviews | Engaged visits |
-|---|---:|---:|---:|---:|---:|---:|
-| 10-12 | 3 | 3 | 0 | 4 | 7 | 3 |
-| 10-13 | 8 | 8 | 0 | 10 | 38 | 6 |
-| 10-14 | 4 | 4 | 0 | 4 | 8 | 3 |
-| **window** | | **15** | | **18** | **53** | **12** |
-- People per day are not summed: one person on two days is one person, and GA counts them once per day.
-- Coming back (28 days): 1 returning against 15 new, 6% of the people GA saw.
-
-| Page | Pageviews | People |
-|---|---:|---:|
-| / | 5 | 4 |
-| /privacy | 5 | 3 |
-| /cardiff/bute-park-sweet-chestnut | 3 | 1 |
-| /terms | 3 | 1 |
-| /de/cologne | 2 | 1 |
-| /de/cologne/moltke-lime-of-the-kahnweiher | 2 | 1 |
-| /helmond | 2 | 2 |
-| /about | 1 | 1 |
-| /bristol/planes-of-queen-square | 1 | 1 |
-| /budapest | 1 | 1 |
-
-| Came from | Visits | People |
-|---|---:|---:|
-| (direct) / (none) | 14 | 11 |
-| bing / organic | 1 | 1 |
-| dias-com-arvores.blogspot.com / referral | 1 | 1 |
-| ecosia.org / organic | 1 | 1 |
-| teams.public.onecdn.static.microsoft / referral | 1 | 1 |
-- GA sees only visitors who pressed Accept on the cookie bar; read it as a sample. Cloudflare's table stays the count.
 
 
 **What the machine did, the last 24 hours**
