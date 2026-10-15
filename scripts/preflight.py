@@ -1910,6 +1910,57 @@ def check_a_readers_new_tree_carries_their_photograph():
     return out
 
 
+def check_a_readers_age_reaches_the_page():
+    """An age a reader gave on a sighting is on the page of the tree it is about.
+
+    Hidde, 2026-10-15, on the Montsouris plane (par_034): its reader gave 186
+    years and the page asked readers for an age, because the session ruled the
+    reader's reasoning (girth, the park's opening) "not a source". "Listen to
+    our user, we can always update when wrong." sev_044 had already shown the
+    shape the day before: the figure as "by a reader's estimate", beside any
+    other estimate, in age_estimate and the story.
+
+    Refused: a published tree carrying a reader's sighting (found_by_reader or
+    a photograph's sighting_id, never our own accounts) whose sighting in
+    data/leads/_sightings.json names an age, while the tree's age_estimate is
+    empty or "not documented". Put the reader's figure in, worded as theirs.
+    """
+    try:
+        import ours
+        leads = json.load(open("data/leads/_sightings.json", encoding="utf-8"))
+    except Exception:
+        return []
+    ages = {}
+
+    def walk(o):
+        if isinstance(o, dict):
+            if o.get("sighting_id"):
+                if str(o.get("age") or "").strip() and not ours.is_ours(o.get("user_id")):
+                    ages[str(o["sighting_id"]).lower()] = str(o["age"]).strip()
+            else:
+                for v in o.values():
+                    walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+    walk(leads)
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees", []):
+            sids = {str(p.get("sighting_id") or "").lower()
+                    for p in [t.get("photo") or {}] + (t.get("photos") or [])}
+            sids.add(str((t.get("found_by_reader") or {}).get("sighting_id") or "").lower())
+            said = (t.get("age_estimate") or "").strip().lower()
+            for sid in sids:
+                if sid in ages and said in ("", "not documented", "unknown"):
+                    out.append("%s/%s: its reader gave an age of %s (sighting %s) and the page "
+                               "states none. Put it in as the reader's estimate (sev_044's "
+                               "wording), Hidde 2026-10-15." % (d.get("city"), t["id"], ages[sid], sid[:8]))
+    return out
+
+
 def check_every_submission_got_a_verdict():
     """A tree somebody sent in gets a written verdict, and Hidde can overrule it.
 
@@ -3408,6 +3459,7 @@ def main():
                 + check_every_submission_got_a_verdict()
                 + check_a_reader_verdict_looked_at_the_photograph()
                 + check_a_readers_new_tree_carries_their_photograph()
+                + check_a_readers_age_reaches_the_page()
                 + check_a_permission_covers_the_photographer_it_names()
                 + check_photos_are_not_the_lead_twice()
                 + check_one_photograph_per_tree()

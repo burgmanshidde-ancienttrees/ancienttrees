@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, session with Hidde: the Montsouris plane gets its reader's age
+
+- **Live (next deploy):** par_034 now gives "about 186 years by a reader's estimate", in the age field and the story, where it had asked readers for an age its own reader had already given.
+- New preflight check `check_a_readers_age_reaches_the_page()`: a reader's tree whose sighting names an age the page omits is refused. Swept every sighting with an age: no other published tree was missing one. Unused, as a lead only: the same reader's pedunculate oak, 245 years, 440 cm.
+
 ## 2026-10-15, session with Hidde: tree page photo shape and collect wording
 
 - Tree pages whose lead photograph is 4:3 (263 of them) now show the whole photograph: beside the facts on a desktop, at 4:3 on a phone and in the app feed, instead of a wide strip that cut 40 percent of the height (the Cardón of the Expo lost its top). Commit 28d6112ab.

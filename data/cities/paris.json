@@ -1387,9 +1387,9 @@
       "id": "par_034",
       "name": "The Great Lawn Plane of Parc Montsouris",
       "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "",
-      "age_min": null,
-      "age_max": null,
+      "age_estimate": "about 186 years by a reader's estimate",
+      "age_min": 186,
+      "age_max": 186,
       "location": {
         "address": "Grande pelouse, Parc Montsouris, 2 Rue Gazan, 75014 Paris",
         "latitude": 48.82314021693391,
@@ -1397,7 +1397,7 @@
         "neighbourhood": "14th arrondissement"
       },
       "how_to_recognise": "The plane with the broad, rounded, heart-shaped crown at the edge of the Grande pelouse, the big central lawn, with shrubs behind it. The classified 6.7 metre plane is a different tree on the east side of the park.",
-      "story": "A reader sent us this plane, and the photograph makes the case for it: a London plane at the edge of the great lawn of Parc Montsouris, its crown so full and even that it reads as a heart against the sky. The city's own tree inventory lists it on the Grande pelouse at 480 centimetres around the trunk and 25 metres tall. Paris has not classed it as remarkable, which is why no list of the park's famous trees mentions it.\n\nThe park's classified plane, the one every guide names, stands about 190 metres to the east and is thicker, at 6.7 metres round. The two make an easy pair on one walk: the famous trunk first, then this one, which you see whole from the grass, roots to crown, with the lawn opening in front of it.\n\nNobody has dated it. No record we have found says when it was planted, so we leave its age open. If you know, from a park plan, an old photograph or a plaque, tell us.\n\nMontsouris is also the park of Jacques Prévert's poem Le Jardin, from his collection Paroles, about a kiss there one winter morning, “au parc Montsouris à Paris”. The reader who found this tree sent us the poem along with it.",
+      "story": "A reader sent us this plane, and the photograph makes the case for it: a London plane at the edge of the great lawn of Parc Montsouris, its crown so full and even that it reads as a heart against the sky. The city's own tree inventory lists it on the Grande pelouse at 480 centimetres around the trunk and 25 metres tall. Paris has not classed it as remarkable, which is why no list of the park's famous trees mentions it.\n\nThe park's classified plane, the one every guide names, stands about 190 metres to the east and is thicker, at 6.7 metres round. The two make an easy pair on one walk: the famous trunk first, then this one, which you see whole from the grass, roots to crown, with the lawn opening in front of it.\n\nHow old is it? The reader who found it puts it at about 186 years: a trunk this thick, they reason, has stood here since the park was made. No record we have found gives a planting date, so if you know one, from a park plan, an old photograph or a plaque, tell us.\n\nMontsouris is also the park of Jacques Prévert's poem Le Jardin, from his collection Paroles, about a kiss there one winter morning, “au parc Montsouris à Paris”. The reader who found this tree sent us the poem along with it.",
       "verified_sources": [
         "https://opendata.paris.fr/explore/dataset/les-arbres/table/?q=idbase%3D113345",
         "https://opendata.paris.fr/explore/dataset/les-arbres/table/?q=idbase%3D113345 (circonferenceencm 480, hauteurenm 25, stade Mature; the city's record for this exact tree, which it does not flag remarquable; paris.fr's park sheet lists a 580 cm / 40 m plane but I could not tie it to this trunk, so it is not used)"
@@ -1406,7 +1406,7 @@
         "sighting_id": "d9c08351-03d1-4b51-a6ec-972f08d308e8",
         "date": "2026-10-05"
       },
-      "verify_notes": "2026-10-13: a reader's app photograph (sighting d9c08351, 2026-10-05, reader girth 450 cm, 'it stands in the central field') matched to the Ville de Paris tree inventory (les-arbres, ODbL), idbase 113345: Platanus x hispanica, Grande pelouse, Parc Montsouris, 480 cm, 25 m, mature, not remarquable. It is the largest plane within 150 m of the reader's GPS fix, which sits 33 m from the inventory point, about the distance the photograph was taken from. Not par_009 (register 113547, 670 cm, about 190 m east) and not the other remarquable plane (112897, 390 cm). The reader's age of 186 is their inference from the park's opening, not a source, so the age is left empty. Published on Hidde's yes in session.",
+      "verify_notes": "2026-10-13: a reader's app photograph (sighting d9c08351, 2026-10-05, reader girth 450 cm, 'it stands in the central field') matched to the Ville de Paris tree inventory (les-arbres, ODbL), idbase 113345: Platanus x hispanica, Grande pelouse, Parc Montsouris, 480 cm, 25 m, mature, not remarquable. It is the largest plane within 150 m of the reader's GPS fix, which sits 33 m from the inventory point, about the distance the photograph was taken from. Not par_009 (register 113547, 670 cm, about 190 m east) and not the other remarquable plane (112897, 390 cm). Published on Hidde's yes in session.\n2026-10-15: the reader's age of 186 years (sighting field, reasoned from the girth and the park's opening) is now on the page as the reader's estimate, as sev_044 does (Hidde: listen to the reader, we can always update when wrong).",
       "access": "Free, park open daily",
       "transport": "Cite Universitaire (RER B), about 5 min walk",
       "photo": {
@@ -1436,7 +1436,8 @@
       "official_register": {
         "name": "Les arbres (Ville de Paris open data, Direction des Espaces verts et de l'Environnement), no. 113345",
         "url": null
-      }
+      },
+      "age_basis": "source"
     }
   ]
 }

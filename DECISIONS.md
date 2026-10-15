@@ -1,5 +1,9 @@
 # Decisions
 
+## 2026-10-15: a reader's age goes on the page
+
+The Montsouris plane (par_034) went live on 10-13 with its age empty and the page asking readers for one, while the reader who found it had given 186 years. The session that published it ruled the figure "their inference from the park's opening, not a source". Hidde: "why the f did we not use it can we remember to listen to our user we can always update when wrong". The page now gives about 186 years as the reader's estimate, in sev_044's wording from the day before (the Cardón, where a reader's 200 to 300 stands beside the press's 1,500). The rule against bridging a park's date to a tree binds our own claims; a reader's estimate printed as theirs is not our claim. preflight's `check_a_readers_age_reaches_the_page()` refuses a reader's tree whose sighting names an age the page omits. A sweep of every sighting found no other published tree missing one; Friedewald's reader correction was already used. One age still unused: the same reader's pedunculate oak (245 years, 440 cm), a lead with no page.
+
 ## 2026-10-15: the web's collect button says "Collect this tree", and 4:3 photographs keep their shape
 
 Hidde, on the website's tree page: "the collect button is ok to have but you should only be able to collect with photo - so mark as collected is just the wrong wording". The button and the phone bar's seal now read "Collect this tree" (the app's words) in all eight languages; the sheet behind it was already photograph-only since 10-14. This corrects the 10-10 entry below, which said the web tree page had no tick: the same day's commit 1d2106b82 had put the seal back, and it stays.
