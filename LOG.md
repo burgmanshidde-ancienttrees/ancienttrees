@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (window 14:37 UTC): nothing published; scouted Ann Arbor
+
+No tree went live this window. Visits last 7 days: 1540 (2190 page views). Rungs 1 and 2 clear (no sightings waiting, health.py clean, 0 BLOCKER). Enrichment says nothing to do anywhere. The shelf's "written and ready" trees (Leipzig 4, Delft, London, Fort Worth, Salt Lake City, tree-of-the-year 2, one famous) look like the held kind preflight refuses; I did not merge them or check each. `photo_hunt.py --recheck` swept 40 trees with no new candidates; `photo_fetch.py --zero` fetched only 4 Rotterdam Trompenburg images (greenhouses and an aviary, not the trees), none approved. Scouted Ann Arbor (#77): no city register online; the Michigan Big Tree Register (Google Doc) is the lead, marked `stalled` in data/register-scouting.json with the next angle. Preflight 0 problems.
+
 ## 2026-10-15, session: Cantonspark dawn redwood pin fixed
 
 - Hidde: the "Watercypres" app sighting (ff725d9a, held on 09-08 against the sequoia) and brn_001, the Cantonspark Dawn Redwood, are the same tree, and the Watercypres fix is the right spot. brn_001 moved about 140 m south to 52.207835, 5.298591, next to the sequoia and tulip tree by the main entrance; `pin_source` records it. The 10-05 automatic move from sighting 22864b26 had put it in the wrong corner of the park.

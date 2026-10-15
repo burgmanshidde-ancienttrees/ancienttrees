@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Ann Arbor",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#77). No city heritage-tree register published; the Ann Arbor Forestry Department is said to keep a list but it is not online. The Michigan Big Tree Register (Michigan Botanical Society, michiganbotanicalsociety.org/big-tree, a Google Doc) lists champions by county with owner-approved locations, among them a chinkapin oak in Ann Arbor (Washtenaw; measurements not interpreted). Licence for reuse not yet read and the doc not parsed. Next angle: read the doc's terms, extract the Washtenaw rows, and treat as finding aid (each needs a second source and a pin)."
+  },
+  {
    "place": "Nashville",
    "country": "United States",
    "status": "empty",
