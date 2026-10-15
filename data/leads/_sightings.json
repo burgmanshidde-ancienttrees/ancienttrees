@@ -1051,6 +1051,33 @@
    "status": "lead",
    "why": "2026-10-06 verdict: lead. Owner-account test photographs in Shinjuku (mine, never credited). No register entry within 100 m, no article within 300 m, no age or girth, nothing marking it out from its neighbours. Photograph not on disk (private bucket), so not judged against the Cadiz standard. No page until something sets it apart.",
    "seen": "2026-10-06"
+  },
+  {
+   "sighting_id": "34bc1a6d-a58a-427c-985e-d252a97a697b",
+   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+   "mine": true,
+   "name": "The Meiji Jingu Gaien Ginkgo Avenue",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 35.6792716666667,
+   "longitude": 139.717253333333,
+   "taken_at": "2026-10-15T17:38:38+00:00",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/34BC1A6D-A58A-427C-985E-D252A97A697B.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [],
+   "nearest_published_m": 588,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-15"
   }
  ]
 }
