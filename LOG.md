@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, autonomous window (retry): no trees shipped
+
+- **Nothing changed in the product.** No claims stood. I merged the 8 staged trees that had stories (Delft del_011, Fort Worth ftw_018, Leipzig lpz_019/021/022/023, London lon_029, Salt Lake City slc_006) and preflight refused all of them, so I reverted the merge. Reasons: none is rich (pins approximate or missing, no register record, access unconfirmed). ftw_018's story is 83 words. del_011 sits within 5 m of a dead-marked LRMB tree and its slug is in REMOVED_TREE_SLUGS. They need a pin, register record or photo before they can ship.
+- Scouted Nashville (#74): no coordinate register; verdict in data/register-scouting.json.
+- The 60 READY leads (mostly Roosendaal register trees) were not written: recovery mode forbids new trees that are not rich.
+
 ## 2026-10-15, autonomous window 08:46 UTC: scouting only, no trees
 
 - **Nothing changed in the product.** 7-day visits: 1520 visits, 2210 page views. Reader inbox empty. Enrichment says nothing to do. The staged Leipzig, London, Fort Worth and Salt Lake City trees are held: approximate pins, no photo, access unverified.

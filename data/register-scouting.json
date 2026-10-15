@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Nashville",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#74). No downloadable register with tree-level coordinates found. Metro Nashville's Historic & Specimen Trees Program (since 2016, under 100 private-property trees, nominated through Public Works) and the Nashville Tree Foundation's Big Old Tree Contest (since 1986, 1,000+ honoured trees) publish no coordinate list that turned up; Vanderbilt's campus champions are a campus list. Next angles: Metro open-data portal, Tennessee Urban Forestry Council, Nashville Tree Foundation directly."
+  },
+  {
    "place": "El Paso",
    "country": "United States",
    "status": "empty",
