@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, second retry after the 3-minute stop: no new trees live
+
+No claims standing. 60 READY leads are the same rows earlier runs refused under the rich-or-reader rule; enrich says nothing to do; prepare.py's only BACKUP is Roosendaal, already deepened three times today. Nothing dispatched, 0 trees, about 15k tokens.
+
 ## 2026-10-15, retry window after 05:15: no new trees live
 
 No claims standing. 60 READY leads and the written-but-unmerged entries (lpz_019/021/022/023, lon_029, std_001, nsb_001, ftw_018, slc_006, del_011) are the same thin or access-doubtful rows earlier runs refused under the rich-or-reader rule; no write pass dispatched. Amersfoort English fixes flagged by the translator (FAQ count, raw register fields in ame_015 access) were already corrected. Enrichment says nothing to do anywhere. 0 trees, about 20k tokens.
