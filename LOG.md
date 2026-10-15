@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (fourth attempt, same window): nothing published; the "written, ready to merge" files are blocked by rules
+
+No claims standing; `enrich.py --next` says nothing to do. Tried merging the written-but-unmerged verified entries: preflight refused both batches I tried. Delft del_011 sits within 5 m of LRMB 1691008 (status 5, felled) and its slug is in REMOVED_TREE_SLUGS, so it should become a lead, not a page. Leipzig lpz_019/021/022/023 are not rich (no confirmed pin, partly no register or access), so recovery mode refuses them. Both reverted. Left alone: london lon_029, fort-worth ftw_018, salt-lake-city slc_006, tree-of-the-year std_001/nsb_001, famous-czech-brazil fdl_001 (same richness rule likely applies; not tried). The 60 READY leads are mostly Roosendaal/Dutch street trees and would fail the same rule. Next step for a run with network: enrich-first (photo + pin) on those ten, then merge. Untried: BACKUP scout of Pittsburgh (#173).
+
 ## 2026-10-15 19:03 run: own photos held, Manchester scouted (no trees added)
 
 Visits, 7 days: 1590 visits, 2240 page views. Rung 1: looked at the two own app photographs (brn_005, brn_008, both planes in daylight, fine frames) and held both, since own photos are never auto-published and both trees already have approved photos; the Gaien ginkgo avenue (34bc1a6d) stays a lead with its why written (an avenue, not a trunk, no register). Rung 2 clear. Rung 4: ladder sent me to scouting; Manchester recorded as stalled in data/register-scouting.json (no heritage register, only an OGL TPO layer as a finding aid). Shelf had no writable or enrichable work (enrich: nothing; writable pile held by photo/pin rule). No trees published, no pass dispatched. Short window: stopped here.
