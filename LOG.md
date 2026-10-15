@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (tenth attempt): nothing published; scouted Middletown
+
+No claims. Enrich nothing; the 60 READY leads and the written-but-unmerged files are still refused by the richness rule (see fourth attempt), so no write pass. Scouted Middletown CT (#276): no city register; Connecticut's Notable Trees database (Connecticut College Arboretum) is the naming body, but its certificate failed to verify and no licence or coordinates were seen. `stalled` in data/register-scouting.json with next angle. 0 trees.
+
 ## 2026-10-15 (ninth attempt, 22:08 window): fixed the broken deploy; scouted Inverness
 
 7-day visits: 1754 visits, 2568 page views.

@@ -39,6 +39,12 @@
    "note": "SCOUTED 2026-10-15. Naming bodies exist: TreeBaltimore Baltimore City Notable Trees Map (city champions, exemplary specimens, state champions, unusual species; ArcGIS Shortlist app baltimore.maps.arcgis.com appid b9da33b47550485ea47c195eb32126d8, linked from treebaltimore.org/notable-trees/) and the Maryland Big Tree Program (mdbigtrees.org, Tree Listings at /websitedata, county and accessibility per tree, no coordinates seen). Neither states a licence or offers a download: the TreeBaltimore page shows only the footer 'copyright 2007 by Baltimore City Department of Recreation and Parks', mdbigtrees.org shows no terms. No proving sentence, so no import. The TreeBaltimore ArcGIS service found (Treeplnt) is annual plantings, not remarkable trees. Next angle: ask Rec and Parks / TreeBaltimore for a written reuse yes, or read the map's feature layer for the notable list as a research lead (bal_001 to bal_004 already published from other sources)."
   },
   {
+   "place": "Middletown",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#276), Middletown, Connecticut. One search: no city register. Connecticut's Notable Trees database (Connecticut College Arboretum, oak.conncoll.edu/notabletrees, town selector includes Middletown; champion and historic trees) is the naming body, but its certificate failed to verify on fetch, so no licence sentence and no coordinates were seen. No Wesleyan champion list found. Next angle: read the Middletown rows by town (SelectTown.jsp) from a session that can open the site, and ask the Arboretum's Notable Trees Committee for reuse terms; National Champion list at ctmq.org is a finding aid only."
+  },
+  {
    "place": "Minneapolis",
    "country": "United States",
    "status": "stalled",
