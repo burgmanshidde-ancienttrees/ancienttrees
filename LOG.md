@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, session: the Lime of Unterlappach goes live
+
+- **Live (next deploy):** muc_068, The Lime of Unterlappach (/munich/lime-of-unterlappach), the small-leaved lime on a rise between Unterlappach and Rottbach (Maisach, Fürstenfeldbruck county) that the SNSB botanist sent by mail. Girth 5.65 m (2021), 18 m tall, set on fire through its hollow trunk in December 2014 and recorded vital in April 2025. English and German.
+- Sources: Baumkunde register 3877, Münchner Merkur 23.12.2014, Bayern LfU Naturdenkmal ND-00668. Pin confirmed: the LfU point and Baumkunde's coordinate agree within 8 m on a solitary tree. Age kept broad (Baumkunde 250, Merkur "several hundred", locally "the thousand-year lime"). Lead marked published.
+- Open: no open-licence photograph exists (Commons and the de.wikipedia county list have none; Baumkunde's are all rights reserved). Flagged: species from Baumkunde only. The botanist has not been told it is live.
+
 ## 2026-10-15, session with Hidde: trees on one spot, and the saved pin
 
 - **Live (next deploy), web and app:** trees that share one coordinate are one moss bubble with the count. One tap flies onto the spot and spreads the pins round it, each on a thin line to a dot on the real spot; a pin opens its tree; a tap on the map or your own zoom folds them back. 65 published trees were unreachable under another pin (43 shared coordinates, 108 trees; Hawaii has 6 on one point). Hidde picked this over a list sheet after a mockup of both. Recorded: CONVENTIONS.md, "Two trees on exactly the same spot".
