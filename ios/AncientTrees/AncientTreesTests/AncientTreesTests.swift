@@ -59,6 +59,28 @@ struct SpotSplit {
         let farField = (lat: 52.03, lng: 5.91)
         #expect(CollectSheet.nearby(origin: farField, trees: cat.trees).isEmpty,
                 "an empty field claims a nearby tree")
+        #expect(CollectSheet.closest(origin: farField, trees: cat.trees).isEmpty,
+                "an empty field offers trees from another town")
+    }
+
+    /// Peter, Seville, 2026-10-15: at the real Ombú our pin was 1.7 km off,
+    /// so nothing was near and the app offered only "new tree". The far list
+    /// must offer it, and the search must find it without the accent.
+    @Test func aWrongPinStillOffersTheTree() async throws {
+        let store = CatalogueStore()
+        await store.loadBundled()
+        let cat = try #require(store.catalogue, "the bundled catalogue did not load")
+
+        let byTheMonastery = (lat: 37.4260, lng: -6.0080)
+        #expect(CollectSheet.nearby(origin: byTheMonastery, trees: cat.trees).isEmpty)
+        let far = CollectSheet.closest(origin: byTheMonastery, trees: cat.trees)
+        #expect(far.contains { $0.id == "sev_002" }, "the Ombú is not among the closest")
+        #expect(far.count <= 3)
+        #expect(CollectSheet.search("ombu", origin: byTheMonastery, trees: cat.trees)
+                    .first?.id == "sev_002", "searching ombu does not find the Ombú")
+        #expect(CollectSheet.search("o", origin: byTheMonastery, trees: cat.trees).isEmpty)
+        #expect(CollectSheet.distance(1672) == "1.7 km")
+        #expect(CollectSheet.distance(40) == "40 m")
     }
 }
 

@@ -3457,3 +3457,15 @@ What it is now, app and web alike: the collect sheet offers Take a photograph an
 Hidde asked whether the filled triangle behind Explore and Account is what others use. Looked at on the live sites, 1280 wide: **AllTrails** puts a small thin stroked chevron-down after each dropdown word (Explore, Saved, Shop); **komoot** has no dropdowns in its header at all (Routes, Planner, Features, Updates are plain links, then App and Login or Signup pills). Nobody uses a filled triangle.
 
 What we do: the AllTrails chevron, Phosphor caret-down bold, small and thin, on Explore and Account. The account button is the plain word, no leaf, like its neighbours. Its menu is two rows of one shape (icon, label): My trees, Settings. No group heading (the button already says whose menu it is) and no sign out row (Hidde: sign out lives on Settings).
+
+---
+
+## A photograph whose place we have pinned wrong (2026-10-15)
+
+Peter, a reader in Seville, photographed the Ombú of La Cartuja standing at it. Our pin was 1.7 km off, so nothing of ours was inside the 400 m the collect flow looks in, and the app offered only "new tree": no way to say "it is one of yours".
+
+**Google Maps** (Contribute, Add photos): the app suggests places near where the photo was taken, and when none is right you search for the place by name and attach the photo there. The suggestion list is a start, never the only door. https://support.google.com/maps/answer/6230175
+
+**iNaturalist**: the location on an observation is the observer's, and an observation can be attached to any taxon by search when the suggestions miss; a wrong suggestion never blocks the record.
+
+What we do: when nothing of ours is within 400 m, "Which one is it?" still shows the closest three on our map within 3 km, with a search by name under the blurb (live results, see "Search"). Picking a tree further than 400 m opens the compare screen once, which says how far our pin is from the photo; "This is the one" collects it AND sends a pin correction (kind `correction`, the photo's coordinate), and the last screen says we will check it and move our pin. With nothing within 3 km the photo still goes straight to a new tree. CollectSheet.swift, `closest`, `search`, `reportPin`.

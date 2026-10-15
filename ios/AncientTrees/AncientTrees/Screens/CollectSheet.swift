@@ -167,6 +167,11 @@ struct CollectSheet: View {
     @State private var signingIn = false
     /// Leaving with a photograph in hand asks first. See closeRow.
     @State private var confirmingDiscard = false
+    /// The search on the far list. See `closest`.
+    @State private var query = ""
+    /// Whether this collect also sent a pin correction, so the last screen
+    /// can say what happens with it.
+    @State private var pinReported = false
 
     /// Everything close enough to be the tree in front of the lens. 400 metres
     /// is deliberately wide: GPS under a canopy is poor and a short list beats
@@ -209,10 +214,57 @@ struct CollectSheet: View {
         return first.0
     }
 
+    /// WHEN OUR PIN IS THE THING THAT IS WRONG (Peter, Seville, 2026-10-15).
+    /// He stood at the Ombú of La Cartuja and photographed it, and the app
+    /// offered only "new tree": our pin was 1.7 km off, so nothing of ours sat
+    /// inside `nearby`'s 400 metres. A wrong pin is exactly when somebody's
+    /// photograph is worth most to us, and it was the one case with no way to
+    /// say "it is yours". So when nothing is near, the list still shows the
+    /// closest trees on our map, up to three within three kilometres, and a
+    /// search by name. Google Maps does the same when you add a photo: it
+    /// suggests places near where it was taken and lets you search for the one
+    /// it really is (CONVENTIONS.md, "A photograph whose place we have pinned
+    /// wrong"). With nothing of ours within three kilometres the photograph
+    /// goes straight to a new tree, as before: out there it almost always is one.
+    static func closest(origin: (lat: Double, lng: Double), trees: [Tree]) -> [Tree] {
+        let measured: [(tree: Tree, km: Double)] = trees.map { ($0, Geo.km(origin, ($0.lat, $0.lng))) }
+        let inReach = measured.filter { $0.km > 0.4 && $0.km <= 3 }
+        return inReach.sorted { $0.km < $1.km }.prefix(3).map { $0.tree }
+    }
+
+    /// Our trees by name, nearest first. Accents and case do not count, so
+    /// "ombu" finds the Ombú.
+    static func search(_ query: String, origin: (lat: Double, lng: Double), trees: [Tree]) -> [Tree] {
+        let q = query.trimmingCharacters(in: .whitespaces)
+            .folding(options: [.caseInsensitive, .diacriticInsensitive], locale: nil)
+        guard q.count >= 2 else { return [] }
+        let named: [Tree] = trees.filter {
+            $0.name.folding(options: [.caseInsensitive, .diacriticInsensitive], locale: nil).contains(q)
+        }
+        let measured: [(tree: Tree, km: Double)] = named.map { ($0, Geo.km(origin, ($0.lat, $0.lng))) }
+        return measured.sorted { $0.km < $1.km }.prefix(8).map { $0.tree }
+    }
+
     private var known: Tree? { knownTree.flatMap { catalogue.tree($0) } }
 
+    /// Nothing of ours within 400 m of the photograph: the far list.
+    private var nothingNear: Bool {
+        Self.nearby(origin: at ?? origin, trees: catalogue.trees).isEmpty
+    }
+
     private var candidates: [Tree] {
-        Self.nearby(origin: at ?? origin, trees: catalogue.trees)
+        let here = at ?? origin
+        if nothingNear {
+            return query.trimmingCharacters(in: .whitespaces).isEmpty
+                ? Self.closest(origin: here, trees: catalogue.trees)
+                : Self.search(query, origin: here, trees: catalogue.trees)
+        }
+        return Self.nearby(origin: here, trees: catalogue.trees)
+    }
+
+    /// Further than `nearby` reaches, so picking it says our pin is wrong.
+    private func isFar(_ t: Tree) -> Bool {
+        Geo.km(at ?? origin, (t.lat, t.lng)) > 0.4
     }
 
     var body: some View {
@@ -368,17 +420,20 @@ struct CollectSheet: View {
             SignInSheet(reason: .feedback, localCount: saved.savedCount)
         }
         .task {
-            if Launch.collectCompare, let t = Self.nearby(origin: origin,
-                                                          trees: catalogue.trees).first {
+            // Falls back to the far list's first tree, so -at= somewhere with
+            // nothing of ours within 400 m shows the far version of the screen.
+            if Launch.collectCompare, let t = Self.nearby(origin: origin, trees: catalogue.trees).first
+                ?? Self.closest(origin: origin, trees: catalogue.trees).first {
                 at = origin
                 shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
                     .image { _ in }
                 stage = .compare(t.id)
                 return
             }
-            if Launch.collectTicked, let t = Self.nearby(origin: origin,
-                                                         trees: catalogue.trees).first {
+            if Launch.collectTicked, let t = Self.nearby(origin: origin, trees: catalogue.trees).first
+                ?? Self.closest(origin: origin, trees: catalogue.trees).first {
                 at = origin
+                pinReported = isFar(t)
                 shot = UIGraphicsImageRenderer(size: .init(width: 1, height: 1))
                     .image { _ in }
                 stage = .ticked(t.id)
@@ -577,9 +632,12 @@ struct CollectSheet: View {
         // beside one of ours becomes a new tree instead of a wrong tick.
         // iNaturalist suggests and you confirm; Google Maps asks which place.
         // Only a tree you came from (`known`, the tree page) is claimed directly.
+        pinReported = false
+        query = ""
         if let t = known {
             claim(t, image: image, at: here)
-        } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty {
+        } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty
+                    && Self.closest(origin: here, trees: catalogue.trees).isEmpty {
             startDraft()
         } else {
             withAnimation(.snappy) { stage = .identify }
@@ -627,7 +685,14 @@ struct CollectSheet: View {
         // between two limes tells you nothing you did not already know; "40 m
         // north-east" tells you which one to walk to.
         let d = direction.isEmpty ? "" : " \(direction)"
-        return "\(species) · \(metres) m\(d)"
+        return "\(species) · \(distance(metres))\(d)"
+    }
+
+    /// Metres up to a kilometre, then kilometres with one decimal: "1672 m"
+    /// is a number to read, "1.7 km" is a distance. The far list below is the
+    /// first place a candidate can be more than 400 m away.
+    static func distance(_ metres: Int) -> String {
+        metres < 1000 ? "\(metres) m" : String(format: "%.1f km", Double(metres) / 1000)
     }
 
     /// Eight compass points, in words.
@@ -722,6 +787,26 @@ struct CollectSheet: View {
         }
     }
 
+    /// A far pick is a pin correction as well as a find, sent through the same
+    /// channel PlacePin uses (kind `correction`, the coordinate in
+    /// `location_hint`), so a run moves the pin at rung 1 or writes down why
+    /// not. The sighting alone would not do it: `move_pin()` only moves a pin
+    /// by up to 300 m on its own. Fire and forget: the find does not wait on it.
+    private func reportPin(_ t: Tree, at here: (lat: Double, lng: Double)) {
+        pinReported = true
+        let metres = Int(Geo.km(here, (t.lat, t.lng)) * 1000)
+        var d = Submission.Draft()
+        d.kind = .correction
+        d.city = t.city
+        d.tree = t.name
+        d.locationHint = String(format: "%.6f, %.6f (%@)", here.lat, here.lng, fix.note)
+        d.why = "Collected with a photograph \(metres) m from the published position, "
+              + "picked from the closest trees because none of ours was pinned within 400 m. "
+              + "Our pin was \(t.precision == .confirmed ? "marked confirmed" : "marked approximate")."
+        let page = t.url
+        Task { _ = await Submission.send(d, from: page, token: await account.freshToken()) }
+    }
+
     // MARK: - The photograph does not say where it was taken
 
     /// Not a failure and not an error state. Most photographs that reach a
@@ -797,6 +882,7 @@ struct CollectSheet: View {
             // sometimes four lines telling the tree from its neighbours.
             Text("Not sure which? Tap \(Image(systemName: "info.circle")) to compare.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
+            if nothingNear { searchField }
             // Tapping a candidate OPENS it rather than claiming it (Hidde,
             // 2026-09-07, sketching the flow he wanted: "dan als je op de boom
             // klikt dan krijg je uitleg of foto of een exacte pin om te
@@ -819,7 +905,13 @@ struct CollectSheet: View {
                 // compare control could not be reached (FlowWalk caught it).
                 ZStack(alignment: .topTrailing) {
                     Button {
-                        if let shot, let at { claim(t, image: shot, at: at) }
+                        // A far tree is asked about once more, on the compare
+                        // screen, because picking it also says our pin is wrong.
+                        if isFar(t) {
+                            withAnimation(.snappy) { stage = .compare(t.id) }
+                        } else if let shot, let at {
+                            claim(t, image: shot, at: at)
+                        }
                     } label: { row(t) }
                         .buttonStyle(.plain)
                         // Indexed rather than named: a UI test runs in its own
@@ -874,6 +966,29 @@ struct CollectSheet: View {
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("collect-not-sure")
+        }
+    }
+
+    /// The far list's search: live results under the field, a tap goes to the
+    /// tree (CONVENTIONS.md, "Search"). Same surface as the rows.
+    @ViewBuilder private var searchField: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass").foregroundStyle(Brand.inkSoft)
+            TextField("Search our trees by name", text: $query)
+                .font(.system(size: 16))
+                .foregroundStyle(Brand.ink)
+                .autocorrectionDisabled()
+                .submitLabel(.search)
+                .accessibilityIdentifier("collect-search")
+        }
+        .padding(.horizontal, 12)
+        .frame(minHeight: 44)
+        // Muted, like the map's own search pill: on white, Brand.surface
+        // leaves a field that does not look like one (seen in the sweep).
+        .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+        if candidates.isEmpty && query.trimmingCharacters(in: .whitespaces).count >= 2 {
+            Text("None of our trees is called that.")
+                .font(.footnote).foregroundStyle(Brand.inkSoft)
         }
     }
 
@@ -1022,8 +1137,17 @@ struct CollectSheet: View {
                 .padding(.top, 18)
             }
 
+            if isFar(t) {
+                // The second look the far list promised: it costs one tap and
+                // stops a photograph landing on a tree two kilometres away
+                // because the name was close.
+                sheetFootnote("Our pin is \(Self.distance(Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000))) from where you took this photo. If it is this tree, your photo shows us where it really stands.")
+            }
+
             Button("This is the one") {
-                if let shot, let at { claim(t, image: shot, at: at) }
+                guard let shot, let at else { return }
+                if isFar(t) { reportPin(t, at: at) }
+                claim(t, image: shot, at: at)
             }
             .buttonStyle(SheetButtonStyle(kind: .primary))
             .accessibilityIdentifier("collect-this-is-the-one")
@@ -1051,6 +1175,11 @@ struct CollectSheet: View {
     /// were not certain about first. Saying so turns "I am not sure" from
     /// their failure into our honesty, which is what it actually is.
     private var pickerBlurb: String {
+        if nothingNear {
+            return query.trimmingCharacters(in: .whitespaces).isEmpty
+                ? "None of our trees is pinned near your photo. These are the closest on our map. If it is one of them, our pin is off and your photo helps us fix it."
+                : "None of our trees is pinned near your photo. If it is one of ours, our pin is off and your photo helps us fix it."
+        }
         if candidates.contains(where: { $0.precision == .approximate }) {
             return "Our own pin is rough for some of these, so we cannot tell you which is which. Pick one if you know, and say you are not sure if you do not."
         }
@@ -1141,6 +1270,9 @@ struct CollectSheet: View {
             // the news, so the title says that and nothing celebrates.
             sheetTitle(newFind ? "You found \(t.name)" : "Photo added to \(t.name)")
             sheetMessage(subtitle(t))
+            if pinReported {
+                sheetFootnote("Thank you for the location. We will check it and move our pin.")
+            }
             if newFind, let first = Self.firstOf(tree: t, visited: saved.entries,
                                                  trees: catalogue.trees) {
                 milestone(first).padding(.top, 12)
