@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (eighth attempt): nothing published; scouted Tulsa
+
+No claims standing. 60 READY leads are still refused by the richness rule; every awaiting-writer file is refused or duplicate (see fourth attempt). enrich.py nothing; langcheck has no city over 10 impressions. Scouted Tulsa (#198): no heritage register, only Oklahoma's state champion list and the Creek Council Oak site; `stalled` in data/register-scouting.json. 0 trees.
+
 ## 2026-10-15 (seventh attempt): nothing published; found Fort Worth's Heritage Tree register
 
 Released the stale Miami claim (no register candidates, two earlier passes found nothing rich). 60 READY leads unchanged and still refused by the richness rule. Scouted Fort Worth (#195): the city's Heritage Tree StoryMap holds about 54 named trees with stories and coordinates, saved to data/registers/fort-worth-heritage-trees-storymap.json; `stalled` in data/register-scouting.json until the city's terms are read and the lost trees dropped. This is the best lead for a next window: clusters at Casino Beach, Arrow S Park, Trinity Park and Greenwood Cemetery. 0 trees.
