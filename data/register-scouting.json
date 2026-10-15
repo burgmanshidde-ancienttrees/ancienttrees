@@ -21,6 +21,12 @@
    "note": "SCOUTED 2026-10-15 on scout_next.py --target (#150). No Glasgow heritage-tree register with coordinates found. Glasgow City Council publishes its confirmed TPOs as a document list (no coordinates seen). The Improvement Service Scotland-wide TPO layer (spatialhub.scot, OGL) may hold Glasgow points and polygons, not yet checked; TPO is protection, not remarkable-tree status, so a finding aid at most. Named trees to lead-check: Argyle Street ash (UK Tree of the Year 2025), Darnley Sycamore (Heritage Tree, storm damaged by Eowyn), Kelvingrove Park London plane (largest-in-Glasgow claim unverified). Next angle: Ancient Tree Inventory rows for Glasgow, then those three as leads."
   },
   {
+   "place": "Pittsburgh",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#173). Real register: Remarkable Trees of Pittsburgh (Shade Tree Commission and Tree Pittsburgh, remarkabletreespgh.com, public-property trees, eight categories; 2023 class of 8: Mellon Park bald cypress, katsura and lacebark pine, Arsenal Park European hornbeam and bald cypress, Frick Park copper beech, Stanton Ave bald cypress, Phillips Park white oak; March 2024 minutes add Highland Park ginkgo and black locust, Allegheny Commons American elm, Westinghouse Park sawtooth oak, West End Park oak). The site's text pages carry no per-tree data (map loads separately) and the licence is 'All Rights Reserved', so facts only until the terms are read. Next angle: read /terms, /2024-remarkable-trees/ and the map's data source; treat the named trees as leads with a pin from a second source."
+  },
+  {
    "place": "Santa Fe",
    "country": "United States",
    "status": "empty",

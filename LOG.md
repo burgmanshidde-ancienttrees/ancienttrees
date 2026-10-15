@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (fifth attempt, same window): nothing published; scouted Pittsburgh
+
+No claims, 60 READY leads still thin (Dutch street trees; rule refuses them), written trees still refused, so no write pass. Scouted Pittsburgh (#173): the Remarkable Trees of Pittsburgh register exists (about 16 named trees across Mellon, Arsenal, Frick, Highland parks), but its site shows no per-tree data and is All Rights Reserved; marked `stalled` in data/register-scouting.json with next angle. 0 trees.
+
 ## 2026-10-15 (fourth attempt, same window): nothing published; the "written, ready to merge" files are blocked by rules
 
 No claims standing; `enrich.py --next` says nothing to do. Tried merging the written-but-unmerged verified entries: preflight refused both batches I tried. Delft del_011 sits within 5 m of LRMB 1691008 (status 5, felled) and its slug is in REMOVED_TREE_SLUGS, so it should become a lead, not a page. Leipzig lpz_019/021/022/023 are not rich (no confirmed pin, partly no register or access), so recovery mode refuses them. Both reverted. Left alone: london lon_029, fort-worth ftw_018, salt-lake-city slc_006, tree-of-the-year std_001/nsb_001, famous-czech-brazil fdl_001 (same richness rule likely applies; not tried). The 60 READY leads are mostly Roosendaal/Dutch street trees and would fail the same rule. Next step for a run with network: enrich-first (photo + pin) on those ten, then merge. Untried: BACKUP scout of Pittsburgh (#173).
