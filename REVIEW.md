@@ -20,6 +20,13 @@ Web half: read the new Seville Cardón of the Expo (sev_044) as built, and check
 - WARN /seville/cardon-of-the-expo (Sources): the same official register is listed twice, "Inventario de Arboles Singulares de la Ciudad de Sevilla (Ayuntamiento de Sevilla, 2022), no. ficha 27" and "Inventario de Arboles Singulares de la Ciudad de Sevilla (2022), Ayuntamiento de Sevilla, ficha 27", so one source reads as two (CLAUDE.md "two independent sources" is about counting honestly). The string appears 54 times in data/cities/seville.json, so it is likely the register-match step adding a second spelling of an entry already there. Suggest register_match.py skip a register already named in `verified_sources`.
 - NOTE /seville/cardon-of-the-expo (meta description and og:description): "A 200-year-old Cardón" states the low end of a reader's range as a plain fact, while the page body says "200 to 300 years" and the press says 1,500. A snippet should not sharpen a vague basis (CLAUDE.md Verify, "never sharpen a vague source"); "A 200 to 300 year old" would match the page.
 
+## 2026-10-15 (app half)
+
+App half (map, own-tree, paywall, people, photo-viewer, place-pin; iPhone SE). map, own-tree, people, photo-viewer and place-pin read clearly and agree with themselves (the photograph's credit shows where CC BY-SA asks for it).
+
+- WARN APP: paywall, "Unlock every walk" lists "Add your own photographs: Photograph a tree nobody has photographed yet, and offer it for its page" under "Also included". The same app lets anyone add a tree and a photograph today (2026-10-14 commits: collecting needs a photograph, the Add a tree sheet), and CLAUDE.md says nothing is gated, so the screen sells something readers already have for nothing and "promises something that is not there" as a paid benefit. The sheet also says "Plus is not open yet", which is honest, but the list should name only what Plus will add. FOR HIDDE: which items are paywall and which stay free is his line (hard list 2).
+- NOTE APP: map, the bottom sheet's first card is hidden behind the tab bar at rest (only a sliver of the photograph shows under "21 trees"), so the sheet's content is mostly covered on the SE. Likely the collapsed detent; worth a look that a person can tell the sheet lifts.
+
 ---
 
 ## 2026-10-14
