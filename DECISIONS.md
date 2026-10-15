@@ -1,5 +1,11 @@
 # Decisions
 
+## 2026-10-15: the web's collect button says "Collect this tree", and 4:3 photographs keep their shape
+
+Hidde, on the website's tree page: "the collect button is ok to have but you should only be able to collect with photo - so mark as collected is just the wrong wording". The button and the phone bar's seal now read "Collect this tree" (the app's words) in all eight languages; the sheet behind it was already photograph-only since 10-14. This corrects the 10-10 entry below, which said the web tree page had no tick: the same day's commit 1d2106b82 had put the seal back, and it stays.
+
+Same day, on the Cardón of the Expo ("this page really doesnt work for this picture"): a 4:3 lead photograph stands beside the facts on a desktop and keeps 4:3 on a phone and in the app feed, instead of being cut to the wide strip (`HERO_OWN_SHAPE_BELOW` 1.4 in images.ts, was 1.25). 263 tree pages change; 3:2 and wider keep the strip.
+
 ## 2026-10-14: the About page has a maker, in his own words
 
 A tree expert in Cologne answered our missing-tree mail that he could find nothing about who makes the site, and wanted to talk about data quality before helping. Hidde: "misschien is het toch maar eens een idee om een goede about pagina met een gezicht te maken", then "alleen hidde lijkt me genoeg" and "ik denk dat het beter is dat ik deze pagina zelf schrijf". The page now opens with his story (Lisbon's parks, the Palermo ficus, "not an expert, but a fan"), his photo at a Japanese cedar, and info@ancienttrees.app. This partly reverses the 2026-07-28 privacy ruling: first name and the project address only, no surname, Organization schema unchanged. The reason is trust with the people we write to, not ranking. The process sections were cut ("less is more"); the AI disclosure stays as one true sentence, after his "drafted by AI, checked by humans" was declined because no person checks every story before it ships. Blueprint v1.26; qa's check_no_owner_name() allows the first name on /about only.

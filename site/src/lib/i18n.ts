@@ -291,6 +291,9 @@ export interface UIStrings {
   /** The Discover more chip to a city's question page, a name like the others. */
   chipOldest: string;
   googleMaps: string;
+  /** The tree page's collect button, the app's "Collect this tree" word for
+   *  word (Hidde, 2026-10-15: "mark as collected is just the wrong wording";
+   *  collecting needs a photograph, so it is an act, not a tick). */
   seenIt: string;
   worthItAsk: (name: string) => string;
   worthItDone: (name: string) => string;
@@ -662,7 +665,7 @@ const EN: UIStrings = {
   goBack: "Back",
   chipOldest: "Oldest tree",
   googleMaps: "Google Maps",
-  seenIt: "Mark as collected",
+  seenIt: "Collect this tree",
   worthItAsk: (n) => `Yes, ${n} was worth the visit`,
   worthItDone: (n) => `You found ${n} worth the visit. Tap to undo`,
   seenItDone: "Collected",
@@ -949,7 +952,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     goBack: "Atrás",
     chipOldest: "Árbol más antiguo",
     googleMaps: "Google Maps",
-    seenIt: "Marcar como coleccionado",
+    seenIt: "Coleccionar este árbol",
     worthItAsk: (n) => `Sí, ${n} mereció la visita`,
     worthItDone: (n) => `Te mereció la visita ${n}. Toca para deshacer`,
     seenItDone: "Coleccionado",
@@ -1236,7 +1239,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     goBack: "Indietro",
     chipOldest: "Albero più antico",
     googleMaps: "Google Maps",
-    seenIt: "Segna come collezionato",
+    seenIt: "Colleziona questo albero",
     worthItAsk: (n) => `Sì, ${n} valeva la visita`,
     worthItDone: (n) => `Hai trovato ${n} degno della visita. Tocca per annullare`,
     seenItDone: "Collezionato",
@@ -1523,7 +1526,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     goBack: "Terug",
     chipOldest: "Oudste boom",
     googleMaps: "Google Maps",
-    seenIt: "Markeer als verzameld",
+    seenIt: "Deze boom verzamelen",
     worthItAsk: (n) => `Ja, ${n} was de moeite waard`,
     worthItDone: (n) => `Je vond ${n} de moeite waard. Tik om het terug te nemen`,
     seenItDone: "Verzameld",
@@ -1810,7 +1813,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     goBack: "Zurück",
     chipOldest: "Ältester Baum",
     googleMaps: "Google Maps",
-    seenIt: "Als gesammelt markieren",
+    seenIt: "Diesen Baum sammeln",
     worthItAsk: (n) => `Ja, ${n} war den Besuch wert`,
     worthItDone: (n) => `Du fandest ${n} sehenswert. Zum Zurücknehmen tippen`,
     seenItDone: "Gesammelt",
@@ -2097,7 +2100,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     goBack: "Voltar",
     chipOldest: "Árvore mais antiga",
     googleMaps: "Google Maps",
-    seenIt: "Marcar como colecionada",
+    seenIt: "Colecionar esta árvore",
     worthItAsk: (n) => `Sim, ${n} valeu a visita`,
     worthItDone: (n) => `Achaste ${n} digna da visita. Toca para desfazer`,
     seenItDone: "Colecionada",
@@ -2384,7 +2387,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     goBack: "Retour",
     chipOldest: "Arbre le plus vieux",
     googleMaps: "Google Maps",
-    seenIt: "Marquer comme collectionné",
+    seenIt: "Collectionner cet arbre",
     worthItAsk: (n) => `Oui, ${n} valait le détour`,
     worthItDone: (n) => `Vous avez trouvé ${n} digne du détour. Touchez pour annuler`,
     seenItDone: "Collectionné",
@@ -2670,7 +2673,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     goBack: "戻る",
     chipOldest: "最古の木",
     googleMaps: "Google マップ",
-    seenIt: "集めた木にする",
+    seenIt: "この木を集める",
     worthItAsk: (n) => `はい、${n}は行く価値がありました`,
     worthItDone: (n) => `${n}を「行く価値あり」としました。タップで取り消し`,
     seenItDone: "集めた",

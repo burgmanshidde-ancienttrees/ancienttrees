@@ -253,12 +253,19 @@ export function photoDims(p: unknown): { width: number; height: number } {
  *
  * ONE rule for both surfaces: the website reads it here and the app reads the
  * answer from the feed (`frame`, app-feed.ts), so the two can never disagree
- * about how tall a tree's photograph stands. Unmeasured means 3:2, as before. */
+ * about how tall a tree's photograph stands. Unmeasured means 3:2, as before.
+ *
+ * 4:3 KEEPS ITS OWN SHAPE TOO (Hidde, 2026-10-15, on the Cardón of the Expo:
+ * "this page really doesnt work for this picture"; a 4:3 phone photograph cut
+ * to the wide strip lost 40 percent of its height, the cactus its top). The
+ * same cut-off decides the desktop layout in TreeDetail.astro. */
+export const HERO_OWN_SHAPE_BELOW = 1.4;
+
 export function heroFrame(p: unknown): number {
   const { width, height } = photoDims(p);
   if (!width) return 1.5;
   const r = width / height;
-  return r >= 1.25 ? 1.5 : Math.round(Math.max(r, 0.8) * 10000) / 10000;
+  return r >= HERO_OWN_SHAPE_BELOW ? 1.5 : Math.round(Math.max(r, 0.8) * 10000) / 10000;
 }
 
 /** src/srcset/sizes attribute string for a photo url, ready to spread into an <img>.
