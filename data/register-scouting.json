@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Albuquerque",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#90). No city heritage or champion tree register with tree-level coordinates found; cabq.gov Parks and Recreation tree information covers planting and a species list only. The New Mexico State Forestry Big Tree Database (emnrd.nm.gov NMBigTreeDatabase_2020.pdf, updated April 2020) lists champions by county and location notes, no coordinates; the 2013 national champion Rio Grande cottonwood in Albuquerque is on private land. Next angles: parse the NM big tree PDF for Bernalillo County rows, ask the City Forester."
+  },
+  {
    "place": "Ann Arbor",
    "country": "United States",
    "status": "stalled",
