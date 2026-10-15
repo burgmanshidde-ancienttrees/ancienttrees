@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, iOS CI red since 10-14: two test-side causes, no app regression
+
+- **Nothing changed in the app.** The map's "Location off" chip after a refusal was never broken.
+- **LocationAskWalk was a race in the test.** The CI run's video shows the "Don't Allow" tap landing while iOS was still animating the location alert in: it fell through to a map pin, opened that tree's page, and the alert stayed up over it. The test now waits for the alert to stop moving, taps, and requires the alert to be gone. 20 of 20 passes on the local iPhone SE under CPU load.
+- **The layout step did not hang.** Each phone's sweep was timed together with its build against a 20-minute guard, and a green run on 10-14 already took 16 to 17 minutes per phone on the runner (4 minutes locally). appfit.py now builds once outside the clock, gives each phone's sweep 30 minutes, and prints how long the build and each sweep took. The look job's ceiling went from 75 to 100 minutes to fit.
+
 ## 2026-10-15, autonomous window (retry): no trees shipped
 
 - **Nothing changed in the product.** No claims stood. I merged the 8 staged trees that had stories (Delft del_011, Fort Worth ftw_018, Leipzig lpz_019/021/022/023, London lon_029, Salt Lake City slc_006) and preflight refused all of them, so I reverted the merge. Reasons: none is rich (pins approximate or missing, no register record, access unconfirmed). ftw_018's story is 83 words. del_011 sits within 5 m of a dead-marked LRMB tree and its slug is in REMOVED_TREE_SLUGS. They need a pin, register record or photo before they can ship.

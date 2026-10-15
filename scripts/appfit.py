@@ -41,6 +41,7 @@ import pathlib
 import re
 import subprocess
 import sys
+import time
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 APP_DIR = ROOT / "ios" / "AncientTrees"
@@ -582,6 +583,9 @@ def check(screen):
 
 DUMP_NAME = "appfit-frames.txt"
 
+# Set once the app is built for testing, so a second phone reuses the build.
+_BUILT = []
+
 
 def run_test(device, scratch):
     """Run the dumping UI test and read the file it leaves behind.
@@ -620,20 +624,51 @@ def run_test(device, scratch):
 
     from worktree_guard import guard
     guard("running the app's UI test")
-    print(f"running SweepFrames on {device}, this takes a few minutes")
+    dd = pathlib.Path(scratch) / "dd"
+    # BUILT ONCE, OUTSIDE THE CLOCK (2026-10-15). This used to be one
+    # `xcodebuild test` per phone, so the 20-minute hang guard below timed the
+    # build AND the sweep together. On the CI runner a GREEN run already took
+    # 16 to 17 minutes per phone (2026-10-14, run 38581205917), and every run
+    # that landed on a slower runner after it was killed at 20 and reported as
+    # a hang. Locally the same sweep passes in four minutes with no screen
+    # failing. Nothing hung; the budget had no headroom left.
+    if not _BUILT:
+        t0 = time.monotonic()
+        print("building for testing", flush=True)
+        try:
+            b = subprocess.run(
+                ["xcodebuild", "build-for-testing",
+                 "-scheme", "AncientTrees",
+                 "-destination", f"platform=iOS Simulator,id={udid}",
+                 "-derivedDataPath", str(dd),
+                 "CODE_SIGNING_ALLOWED=NO", "CODE_SIGNING_REQUIRED=NO",
+                 "CODE_SIGN_IDENTITY="],
+                cwd=APP_DIR, capture_output=True, text=True, timeout=1800)
+        except subprocess.TimeoutExpired:
+            sys.exit("xcodebuild build-for-testing hung past 30 minutes and was killed")
+        if b.returncode != 0:
+            for line in (b.stdout + b.stderr).splitlines():
+                if "error:" in line or "BUILD FAILED" in line:
+                    print("  " + line)
+            sys.exit("the app did not build for testing")
+        print(f"  built in {(time.monotonic() - t0) / 60:.1f} min", flush=True)
+        _BUILT.append(True)
+    t0 = time.monotonic()
+    print(f"running SweepFrames on {device}, this takes a few minutes", flush=True)
     # A HARD TIMEOUT, found missing 2026-08-30 the expensive way: a hang here
     # ran the whole 110-minute CI job to its own timeout rather than failing
     # in the "few minutes" the comment above promises, and a job-level kill
     # leaves no error message at all, just a run stuck "in progress" for an
-    # hour and forty minutes. 20 minutes is generous against the normal run
-    # and still small next to the job budget, so a real hang costs a chunk of
-    # the window instead of the whole thing.
+    # hour and forty minutes. It times the sweep alone now (the build is
+    # above), and 30 minutes is about twice the slowest green sweep the CI
+    # runner has produced, so a real hang still fails here while a slow
+    # runner no longer does.
     try:
         r = subprocess.run(
-            ["xcodebuild", "test",
+            ["xcodebuild", "test-without-building",
              "-scheme", "AncientTrees",
              "-destination", f"platform=iOS Simulator,id={udid}",
-             "-derivedDataPath", str(pathlib.Path(scratch) / "dd"),
+             "-derivedDataPath", str(dd),
              "-only-testing:AncientTreesUITests/SweepFrames",
              # WITHOUT THIS THERE IS NOTHING TO READ. Xcode runs UI tests on a
              # throwaway CLONE of the simulator and deletes it when the run ends,
@@ -652,11 +687,11 @@ def run_test(device, scratch):
              # simulator test.
              "CODE_SIGNING_ALLOWED=NO", "CODE_SIGNING_REQUIRED=NO",
              "CODE_SIGN_IDENTITY="],
-            cwd=APP_DIR, capture_output=True, text=True, timeout=1200)
+            cwd=APP_DIR, capture_output=True, text=True, timeout=1800)
     except subprocess.TimeoutExpired:
         subprocess.run(["xcrun", "simctl", "shutdown", udid],
                        capture_output=True, text=True)
-        sys.exit("xcodebuild test hung past 20 minutes and was killed; "
+        sys.exit("xcodebuild test hung past 30 minutes and was killed; "
                  "this used to run the whole CI job to its 110-minute "
                  "timeout instead of failing here")
 
@@ -670,6 +705,7 @@ def run_test(device, scratch):
     # because a desk runs `--device` and measures one phone.
     subprocess.run(["xcrun", "simctl", "shutdown", udid],
                    capture_output=True, text=True)
+    print(f"  swept in {(time.monotonic() - t0) / 60:.1f} min", flush=True)
 
     found = sorted(device_dir.rglob(DUMP_NAME), key=lambda p: p.stat().st_mtime)
     if not found:

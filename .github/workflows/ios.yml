@@ -358,10 +358,14 @@ jobs:
   # when a test failed, which is why these steps carried `if: always()` when
   # they lived there. Running in parallel keeps that property and stops the
   # slow half deciding whether the fast half gets to report.
+  #
+  # 100, not 75 (2026-10-15): appfit now builds once and gives each phone's
+  # sweep a 30-minute hang guard of its own, so the step can legitimately run
+  # a build plus two slow sweeps before the screenshots. Free, as above.
   look:
     if: inputs.floor_only == '' || inputs.floor_only == null
     runs-on: macos-15
-    timeout-minutes: 75
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
 
