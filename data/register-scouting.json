@@ -33,6 +33,12 @@
    "note": "SCOUTED 2026-10-15 on scout_next.py --target (#198). Two searches: no Tulsa heritage tree register. Oklahoma Forestry Services keeps a state champion list (ag.ok.gov/championtrees, about 100 trees, no Tulsa County rows seen). Only named tree: Creek Council Oak (NRHP 76001576, 18th and Cheyenne), a site rather than a big tree. Next angle: open the ag.ok.gov champion list for Tulsa County rows; get the Council Oak coordinate from the NRHP listing and check the tree still stands."
   },
   {
+   "place": "Minneapolis",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15. The Minneapolis Park and Recreation Board runs a Heritage Tree Program (86 trees; champion size, significant size, historical/cultural), but its own page and the Parks Foundation article would not render to a fetch and no Heritage layer is on Open Data Minneapolis. Found a public ArcGIS feature service 'Minneapolis Heritage Trees to survey 2026' (owner University of Minnesota, services.arcgis.com/8df8p0NlLFEShl0r) with tree-level lon/lat, species, category, nominator, year and a 2026 condition survey (Healthy/Poor/Dead or Missing), 86 rows saved to data/research/minneapolis-heritage-trees-umn-survey-2026.json. Not imported as a register: licenseInfo is null, so there is no proving sentence for commercial reuse, and the coordinates are 5-decimal values some notes call 'unsure of tree id'. Next angle: ask UMN/MPRB for the licence, or request the list from MPRB; the survey's Dead or Missing flags are useful as a life check against leads in data/leads/minneapolis.json."
+  },
+  {
    "place": "San Antonio",
    "country": "United States",
    "status": "stalled",
