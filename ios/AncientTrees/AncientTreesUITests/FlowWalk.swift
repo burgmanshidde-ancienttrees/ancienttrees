@@ -178,6 +178,30 @@ final class FlowWalk: XCTestCase {
                 Step(name: "confirmed") { Self.tap($0, "saved-done") },
             ]),
 
+            // "Add a new tree" from the list, which nothing walked until Hidde
+            // tapped it on 2026-10-15 and landed on "Thank you, that helps":
+            // it has to end on the new tree's draft page, near and far.
+            Flow(name: "add-new-tree-from-the-list",
+                 args: ["-collect", "-collect-identify"] + signedIn, steps: [
+                Step(name: "it-is-none-of-these") { Self.tap($0, "collect-none-of-these") },
+                Step(name: "the-draft-page") { Self.tap($0, "draft-save") },
+            ]),
+            Flow(name: "add-new-tree-from-the-far-list",
+                 args: ["-collect", "-collect-identify", "-at=37.4260,-6.0080"] + signedIn, steps: [
+                Step(name: "it-is-none-of-these") { Self.tap($0, "collect-none-of-these") },
+                Step(name: "the-draft-page") { Self.tap($0, "draft-save") },
+            ]),
+            // A WRONG PIN (Peter, Seville, 2026-10-15): 1.5 km from our Ombú
+            // pin, the far list offers the closest trees, a tap asks once, and
+            // it collects. The first row, whichever tree it is: any of them is
+            // more than 400 m away, which is what this walks.
+            Flow(name: "a-tree-whose-pin-is-wrong",
+                 args: ["-collect", "-collect-identify", "-at=37.4260,-6.0080"] + signedIn, steps: [
+                Step(name: "pick-a-far-tree") { Self.tap($0, "collect-candidate-0") },
+                Step(name: "say-it-is-the-one") { Self.tap($0, "collect-this-is-the-one") },
+                Step(name: "done") { Self.tap($0, "collect-done") },
+            ]),
+
             // The honest exit, and the one that must never lose a photograph.
             Flow(name: "not-sure-which",
                  args: ["-collect", "-collect-identify"] + signedIn, steps: [
@@ -355,7 +379,10 @@ final class FlowWalk: XCTestCase {
 
         for flow in Self.flows {
             let app = XCUIApplication()
-            app.launchArguments = ["-at=52.3731,4.8922", "-reset-collection", "-reset-blocks", "-no-cover", "-no-review-prompt"] + flow.args
+            // Amsterdam unless the flow names its own place: the app reads the
+            // FIRST -at=, so a flow's own would otherwise be ignored.
+            let place = flow.args.contains { $0.hasPrefix("-at=") } ? [] : ["-at=52.3731,4.8922"]
+            app.launchArguments = place + ["-reset-collection", "-reset-blocks", "-no-cover", "-no-review-prompt"] + flow.args
             app.launch()
             // The catalogue is 2.5 MB of JSON and nothing exists until it is
             // read; a step taken before that taps an empty window.
