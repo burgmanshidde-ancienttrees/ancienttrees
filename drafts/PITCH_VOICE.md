@@ -198,6 +198,11 @@ belongs in Helpful Details or nowhere.
 - NO: "Walking through Lisbon's parks, I kept stumbling on huge, beautiful old trees and wanted a way to find more of them. That became Ancient Trees: open the map wherever you are and find the remarkable old trees around you."
 - YES: "While visiting Lisbon and walking through its parks, I kept stumbling on huge, beautiful old trees and wanted a way to find more of them. That became Ancient Trees: a map of remarkable trees worth a visit, wherever you are."
 
+**naming our versions and screens instead of what the person gets** (added 2026-10-15)
+
+- NO: "It comes with version 1.0.3: Discover now follows the season of your own half of the world."
+- YES: "What people get: which trees near them are at their best now, a walk to one, a photograph that collects it."
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**
@@ -273,3 +278,25 @@ When somebody asks what to say about Ancient Trees (a partner page, a newsletter
 - Anyone can add a tree they love, on the website or in the app.
 
 Then the city page link and the App Store link (https://apps.apple.com/app/id6806177833), and the logo with and without the name (https://ancienttrees.app/assets/press/). Bullets are fine; each one is a sentence a person would say. Nothing about price, nothing about how we work.
+
+## A featuring nomination he approved (Hidde, 2026-10-15: "this is good copy")
+
+Sent to Apple's App Store team for the autumn in-app event, through App Store Connect's Featuring → Nominations (field limit 1,000 characters). Reuse its shape for any note to editors or press: the season or the world first, then what people do, then the scale in one line, then him in his own words, then a plain thank you. No version numbers, no screen names.
+
+```
+Hi App Store team,
+
+Autumn is here and ancient trees are turning color.
+
+From 18 October to 17 November, our in-app event shows people which old trees near them are at their best: ginkgos going gold, beeches copper, maples red. It invites them to walk to one before the leaves fall.
+
+Ancient Trees maps 3,600+ remarkable old trees in 230+ cities, from Lisbon to Kyoto and New York, each with its story, age and why it is worth the walk.
+
+I'm Hidde, an independent designer from the Netherlands, and I make it on my own. It started in the parks of Lisbon, among old jacarandas and fig trees, and in Palermo, where I parked in front of a huge old ficus. I'm not a tree expert, just a big fan who wants anyone to find trees like these.
+
+A new version that follows the season wherever you are is in review now. Thank you for considering it.
+
+Hidde
+```
+
+What made it good, against my drafts that day: it opens on his own event line ("ancient trees are turning color"), not an explanation; it names what people see and do (gold, copper, red; walk to one before the leaves fall), never our screens or version numbers; his story is short and in his About-page words; one "turning", not two.
