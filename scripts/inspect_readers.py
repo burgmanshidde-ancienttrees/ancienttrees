@@ -206,8 +206,14 @@ pre{white-space:pre-wrap;font:inherit;background:#f3f0e8;padding:12px;border-rad
     # folder; preview_start {name: "inspect"} serves it (.claude/launch.json).
     if os.path.isdir(os.path.dirname(PREVIEW)):
         import shutil
+        # Keep digest.html: show_digest.py runs first and shares this folder.
+        digest = os.path.join(PREVIEW, "digest.html")
+        kept = open(digest, "rb").read() if os.path.exists(digest) else None
         shutil.rmtree(PREVIEW, ignore_errors=True)
         os.makedirs(PREVIEW)
+        if kept is not None:
+            with open(digest, "wb") as fh:
+                fh.write(kept)
         shutil.copy(path, PREVIEW)
         for sid, _j, _n in picks:
             src = os.path.join(OUT, sid + ".jpg")
