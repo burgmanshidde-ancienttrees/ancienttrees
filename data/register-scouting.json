@@ -33,6 +33,12 @@
    "note": "SCOUTED 2026-10-15 on scout_next.py --target (#198). Two searches: no Tulsa heritage tree register. Oklahoma Forestry Services keeps a state champion list (ag.ok.gov/championtrees, about 100 trees, no Tulsa County rows seen). Only named tree: Creek Council Oak (NRHP 76001576, 18th and Cheyenne), a site rather than a big tree. Next angle: open the ag.ok.gov champion list for Tulsa County rows; get the Council Oak coordinate from the NRHP listing and check the tree still stands."
   },
   {
+   "place": "Baltimore",
+   "country": "United States",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15. Naming bodies exist: TreeBaltimore Baltimore City Notable Trees Map (city champions, exemplary specimens, state champions, unusual species; ArcGIS Shortlist app baltimore.maps.arcgis.com appid b9da33b47550485ea47c195eb32126d8, linked from treebaltimore.org/notable-trees/) and the Maryland Big Tree Program (mdbigtrees.org, Tree Listings at /websitedata, county and accessibility per tree, no coordinates seen). Neither states a licence or offers a download: the TreeBaltimore page shows only the footer 'copyright 2007 by Baltimore City Department of Recreation and Parks', mdbigtrees.org shows no terms. No proving sentence, so no import. The TreeBaltimore ArcGIS service found (Treeplnt) is annual plantings, not remarkable trees. Next angle: ask Rec and Parks / TreeBaltimore for a written reuse yes, or read the map's feature layer for the notable list as a research lead (bal_001 to bal_004 already published from other sources)."
+  },
+  {
    "place": "Minneapolis",
    "country": "United States",
    "status": "stalled",

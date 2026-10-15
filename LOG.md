@@ -20,6 +20,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Scouted Innsbruck (#228): imported. Tyrol's Naturdenkmaeler points are CC BY 4.0; data/registers/tirol-naturdenkmaeler.json holds 260 active points (about 198 trees, about 34 around Innsbruck) plus 45 revoked. Names only, no species or girth, pins approximate, none publishable until access is checked. Innsbruck's own Baumkataster not looked at. qa source checks clean. 0 trees.
 - Scouted Minneapolis (#259): stalled. The Park Board Heritage Tree list is an 86-row public ArcGIS layer (UMN survey 2026, with coordinates, species and a Healthy/Poor/Dead flag) but carries no licence. Saved as data/research/minneapolis-heritage-trees-umn-survey-2026.json; the Dead-or-Missing flags are a life check for data/leads/minneapolis.json. Next step: ask UMN or the Park Board for the licence. 0 trees.
 - Scouted Stirling (#264): stalled. No open tree layer; the Scotland-wide TPO layer says only "Licence: Open" with no proving sentence. Next angles: OSM and Wikidata, Forestry and Land Scotland. 0 trees.
+- Scouted Baltimore (#265): stalled. TreeBaltimore Notable Trees Map (city and state champions) and the Maryland Big Tree Program state no licence and offer no download. Next angle: a written reuse yes from Recreation and Parks or TreeBaltimore. 0 trees.
 - Shelf unchanged: enrich has nothing; 60 READY leads still refused by the richness rule.
 
 ## 2026-10-15 (eighth attempt): nothing published; scouted Tulsa
