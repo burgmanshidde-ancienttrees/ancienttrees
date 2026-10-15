@@ -83,10 +83,12 @@
       "age_max": 400,
       "location": {
         "address": "Jardim Botânico da Ajuda, Calçada da Ajuda, 1300-011 Lisboa",
-        "latitude": 38.706111,
-        "longitude": -9.200833,
+        "latitude": 38.706778,
+        "longitude": -9.200778,
         "neighbourhood": "Ajuda"
       },
+      "pin_source": "Geotag of our lead photograph (Commons, Dguendel), which shows this tree: the steel mast and propped crown beside the glasshouse",
+      "verify_notes": "2026-10-15: pin moved about 75 m north from the garden's address point (38.706111, -9.200833), which it shared exactly with lis_034 so one marker hid the other on the Lisbon map. The new point is the Commons geotag of the approved photograph; Commons file 'Old Dracaena draco in Jardim Botanico da Ajuda 01' shows the same propped tree beside the glasshouse. iNaturalist fixes clustering at 38.70599, -9.20178 show a younger dome-crowned dragon tree with an intact crown, not this one.",
       "story": "This tree bleeds red. The resin of Dracaena draco oxidizes into a dark crimson sap once prized across Europe as dragon's blood, used in medieval varnish, dye and folk medicine. This specimen was already a mature adult when the Italian botanist Domingos Vandelli transplanted it into Lisbon's first botanical garden in 1768, which makes it at least 258 years old and possibly closer to 400, since dragon trees carry no annual rings and nobody recorded its birth. Its crown once spread nearly 23 metres across, among the largest of its kind in the country, until a rot infection took hold around 2006 and cost it roughly half its size. A steel frame now holds up what remains. The garden, built on the grounds of the royal Ajuda Palace for King José I, treats the tree as its emblem, and cuttings from its offshoots have been propagated into a small nursery of younger dragon trees nearby. Dragon trees grow slowly and can live for centuries once established, so this one, missing half its canopy and still standing, may yet be young for its kind.",
       "verified_sources": [
         "https://florestas.pt/descobrir/dragoeiro-a-especie-e-o-mais-antigo-sangue-de-dragao-em-lisboa/",
