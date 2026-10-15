@@ -11433,6 +11433,14 @@
   "2026-10-14": [
    {
     "date": "2026-10-14",
+    "target": "graz",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "run of 2026-10-15 02:48: no register or Wikipedia measurement for any unblocked public row, so no rich tree; 3 leads and 2 blocks filed; walled"
+   },
+   {
+    "date": "2026-10-14",
     "target": "heidelberg+regensburg",
     "kind": "verify",
     "tokens": 135000,

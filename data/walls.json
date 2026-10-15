@@ -52,11 +52,6 @@
       "released_at": "2026-10-12T20:28:03+00:00"
     },
     {
-      "slug": "graz",
-      "kind": "verify",
-      "released_at": "2026-10-13T01:16:42+00:00"
-    },
-    {
       "slug": "nuremberg",
       "kind": "verify",
       "released_at": "2026-10-13T01:17:37+00:00"
@@ -120,6 +115,11 @@
       "slug": "chicago",
       "kind": "verify",
       "released_at": "2026-10-14T23:27:08+00:00"
+    },
+    {
+      "slug": "graz",
+      "kind": "verify",
+      "released_at": "2026-10-15T02:51:17+00:00"
     }
   ]
 }

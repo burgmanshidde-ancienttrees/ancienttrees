@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, window 02:48 UTC: no new trees live
+
+7-day visits: 1200 visits, 1730 page views. No reader submissions or app photographs waiting. health.py flags the iOS scheduled run (timed out at 1h57m, app work, untouched) and Smoke "skipped" on push (not a build failure; deploy is green). Shelf had no write-ready trees, so Graz verify (the top US/UK/DE/AT city with register supply): the register carries no girth, height or age and every measured Naturdenkmal is already published or blocked, so nothing could end rich. Filed 3 leads and 2 blocks in data/leads/graz.json, Graz walled for 48h. Munich refused (62 of 60). Cost about 90k tokens, 0 trees. Next: a photo or pin pass on Roosendaal/Munich, or Frankfurt/Nuremberg if they hold measured supply.
+
 ## 2026-10-14, window 23:30 UTC, second attempt: no new trees live
 
 Write pass on the 55 READY leads published nothing: none passes the rich-or-reader rule (no girth, pin or photo; Roosendaal and Delft notes decline them; Barcelona's Huingan is already live as bcn_041 and still shows READY because the name check misses it). Batenburg's chestnut would be rich but is one tree in a new place below four. Miami verify (third pass) found nothing for Miami; one Key West tree (kyw_001, Firehouse Museum mamey, Florida champion, 328 cm) is in data/research/miami-verified.json, flagged, no photo, no recognition line, so not published; three more Key West leads filed (the mangrove is a private house). New refusing hosts: overpass-api.de, wlrn.org, keysweekly.com. Claim released. Cost: write pass about 75k tokens, 0 trees; verify about 130k, 0 live. Next: a photo or pin pass on Roosendaal/Munich, or a Key West recognition line plus two more rich trees to reach four.
