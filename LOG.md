@@ -23,6 +23,12 @@ Write pass on the 55 READY leads published nothing: none passes the rich-or-read
 
 7-day visits: 1621 visits, 2340 page views. No reader submissions. Rung 2: the site build had failed since a London tree was recorded as "London Plane (Platanus x hispanica)" while every other city says x acerifolia (hard rule 9, checkSpeciesNames). Changed that one species field in london.json to x acerifolia, preflight 0 problems, pushed; deploy should go green on the next push. iOS scheduled failure (SweepFrames layout drift) untouched, app work. No trees added: the window opened 23:30 and the checkout was 8 commits behind main until pulled.
 
+## 2026-10-15, retry attempt: nothing published
+
+- No product change. Claims were clear. All 55 READY leads are ordinary trees (Roosendaal 17, Munich 5, Delft 5, others), which recovery mode and preflight's rich rule refuse, so I dispatched no write pass. The 12 "written and ready to merge" trees were already tried on 10-13 and preflight refused them (not rich, approximate pin, thin access line); they stay out.
+- `enrich.py` has nothing to do anywhere. `langcheck.py --next` has an empty queue (24 cities under 10 English impressions). The lanes left need a session or a new source: Roosendaal roo_019 needs a sourced access line, Miami and Key West have no per-tree register, the German cities lack girth data.
+- iOS app scheduled-run failure at session start is untouched (app work, needs a session).
+
 ## 2026-10-14, night run (window 22:25 UTC): Roosendaal 10 to 13 trees
 
 7-day visits: 1621 visits, 2340 page views. No reader submissions. iOS app scheduled run failed on layout drift in the SweepFrames check (collect-intro 'Photograph a tree you are standing in fro...' on iPhone SE iOS 18.x); app work, not touched here. Roosendaal deepen pass: verify found four LRMB trees, three merged as roo_016 (Lebanon Cedar, Villa Van Gilse garden, confirmed pin), roo_017 and roo_018 (Paterstuin cedar and chestnut, small-site pin); roo_019 (Nispen sycamore) refused by preflight because its access line is not concrete, story kept in the verified file, needs a sourced access line. Eight lead entries filed. City copy recounted to 13. Preflight 0 problems.
