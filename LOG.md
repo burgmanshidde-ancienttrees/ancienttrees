@@ -22,6 +22,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Scouted Stirling (#264): stalled. No open tree layer; the Scotland-wide TPO layer says only "Licence: Open" with no proving sentence. Next angles: OSM and Wikidata, Forestry and Land Scotland. 0 trees.
 - Scouted Baltimore (#265): stalled. TreeBaltimore Notable Trees Map (city and state champions) and the Maryland Big Tree Program state no licence and offer no download. Next angle: a written reuse yes from Recreation and Parks or TreeBaltimore. 0 trees.
 - Scouted Trier (#272): imported. Rhineland-Palatinate Naturdenkmal points (LANIS naturdenkmale_punkte) are ODbL, "mit Quellenangabe zulaessig"; data/registers/rlp-naturdenkmaeler.json holds 1,676 points for the state (1,486 with a tree word), 199 in Trier city (196 trees) and 46 in Trier-Saarburg. Names only, pins approximate, none publishable until access is checked (many sit on the Hauptfriedhof, abbey grounds, the Karthaeuser Hof arboretum). qa source checks and preflight clean. Best next lead for Germany supply. 0 trees.
+- Scouted York (#274): stalled. The council's tree layer is OGL 3.0 but a plain amenity inventory (no veteran, girth or age field); TPO layers skipped. Next angles: York Museum Gardens champion trees, ancient-yew.org Yorkshire yews, OSM and Wikidata for the Minster grounds. 0 trees.
 - Shelf unchanged: enrich has nothing; 60 READY leads still refused by the richness rule.
 
 ## 2026-10-15 (eighth attempt): nothing published; scouted Tulsa
