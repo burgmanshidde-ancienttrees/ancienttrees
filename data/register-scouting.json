@@ -936,6 +936,12 @@
    "country": "United States",
    "status": "stalled",
    "note": "FOUND 2026-10-15. The City of Fort Worth Parks Forestry Heritage Tree program publishes a StoryMap (arcgis item 9f6ce79e10a7491aa8d29327cf389831, fetch https://www.arcgis.com/sharing/rest/content/items/<id>/data?f=json) with about 54 named trees, each with a story, coordinates (tour-map geometries joined to places by featureId) and photographs. Several in the second section are listed as lost (Hollow Pecan, Timberline Post Oak, Chittamwood, green hawthorn, Brite elm). Saved as data/registers/fort-worth-heritage-trees-storymap.json (title, story, latitude, longitude, section). The Feature Service on testmapit.fortworthtexas.gov times out from the runner. Stalled on: no licence line read yet (city publication), pins are story-map points so approximate until checked, photos are the city own (not open-licensed). NEXT: read the city terms, drop the lost ones, then verify clusters (Casino Beach, Arrow S Park, Trinity Park/Van Zandt, Greenwood Cemetery, Botanic Garden) enrich-first; Fort Worth has 18 trees live."
+  },
+  {
+   "place": "Inverness",
+   "country": "United Kingdom",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15. Two searches plus one fetch. No Highland or Inverness register of notable trees exists in open form. Scottish Tree Register / Tree Register of the British Isles champion database is members only (not ours to import); Woodland Trust Ancient Tree Inventory untouched by rule. Highland Council Tree Preservation Orders sit on data.gov.uk (dataset 62785c4c-653a-4c2a-b216-b7f43a56103d) with licence field 'Not set', and TPOs are amenity protections, not a remarkable-tree list, so no proving sentence and nothing saved. (Argyll and Bute's TPO set is OGL v3, which shows the portal can carry it, but it is a different council.) Next angle: ancient-yew.org 'Yew Trees in the Scottish Highlands' PDF names Tomnahurich cemetery and Ness Islands trees (lead list only, licence unknown); OSM natural=tree nodes on the Ness Islands; Wikidata."
   }
  ],
  "out_of_focus": {

@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (ninth attempt, 22:08 window): fixed the broken deploy; scouted Inverness
+
+7-day visits: 1754 visits, 2568 page views.
+- Rung 2 fixed: the deploy and smoke failures were one cause, the Fort Worth StoryMap list (no licence block) saved in data/registers/. Moved to data/research/fort-worth-heritage-trees-storymap.json (the scouting notes still name the old path). Preflight 0 problems; pushed.
+- Not fixed, needs a session with Xcode: iOS app. (1) testSearchingForATreeMovesTheMapToIt: "search found no Beethoven Plane". (2) appfit DRIFT on collect-intro and collect-away: text 'Photograph a tree you are standing in fro...' starts at x=26 while two other things start at x=20, on all four phone sizes.
+- Scouted Inverness (#214): stalled. Scottish Tree Register is members only, Highland TPO data has no licence. Leads: ancient-yew.org Highland yews, OSM, Wikidata. About 40k tokens. 0 trees.
+- Shelf unchanged: enrich has nothing; 60 READY leads still refused by the richness rule.
+
 ## 2026-10-15 (eighth attempt): nothing published; scouted Tulsa
 
 No claims standing. 60 READY leads are still refused by the richness rule; every awaiting-writer file is refused or duplicate (see fourth attempt). enrich.py nothing; langcheck has no city over 10 impressions. Scouted Tulsa (#198): no heritage register, only Oklahoma's state champion list and the Creek Council Oak site; `stalled` in data/register-scouting.json. 0 trees.
