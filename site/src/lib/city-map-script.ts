@@ -418,7 +418,6 @@ STACKS.forEach(function(s) {
   b.type = 'button';
   b.className = 'pin-stack';
   b.textContent = s.ix.length;
-  b.setAttribute('aria-label', s.label);
   b.addEventListener('click', function(e) {
     e.stopPropagation();
     stackTapAt = Date.now();
@@ -428,6 +427,9 @@ STACKS.forEach(function(s) {
   });
   s.bubble = b;
   new maplibregl.Marker({ element: b }).setLngLat([m.lng, m.lat]).addTo(map);
+  // After addTo: MapLibre labels every marker "Map marker" and would
+  // overwrite a label set before it.
+  b.setAttribute('aria-label', s.label);
 });
 function spreadStack(s) {
   if (openStack === s) { return; }
