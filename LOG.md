@@ -23,6 +23,10 @@ Write pass on the 55 READY leads published nothing: none passes the rich-or-read
 
 7-day visits: 1621 visits, 2340 page views. No reader submissions. Rung 2: the site build had failed since a London tree was recorded as "London Plane (Platanus x hispanica)" while every other city says x acerifolia (hard rule 9, checkSpeciesNames). Changed that one species field in london.json to x acerifolia, preflight 0 problems, pushed; deploy should go green on the next push. iOS scheduled failure (SweepFrames layout drift) untouched, app work. No trees added: the window opened 23:30 and the checkout was 8 commits behind main until pulled.
 
+## 2026-10-15, second retry: Roosendaal 13 to 16
+
+Roosendaal deepen pass: verify found two LRMB trees with confirmed pins, girth and height (roo_020 London Plane, Oostelijke Havendijk, 407 cm; roo_021 White Willow near Nispen, 502 cm), both view-only and said so. The writer corrected my verify notes against the register (Schietwilg is white willow, not a pollard; age band 1900-1910). roo_019 (sycamore) got a concrete sourced access line and is now live. City copy recounted to 16, plane species spelled x acerifolia to match the site rule. Preflight 0 problems; the site build was not run in this session (command denied), so the deploy is the check. Eight more leads filed; Roosendaal's 300 cm+ register list is exhausted. The other "written and ready" trees (Leipzig, Delft, Fort Worth, SLC) stay out for the same preflight reasons. Claim released. Cost: verify ~90k, write ~75k tokens, 3 trees.
+
 ## 2026-10-15, retry attempt: nothing published
 
 - No product change. Claims were clear. All 55 READY leads are ordinary trees (Roosendaal 17, Munich 5, Delft 5, others), which recovery mode and preflight's rich rule refuse, so I dispatched no write pass. The 12 "written and ready to merge" trees were already tried on 10-13 and preflight refused them (not rich, approximate pin, thin access line); they stay out.

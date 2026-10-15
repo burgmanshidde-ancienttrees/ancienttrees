@@ -349,12 +349,75 @@
    "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690592",
    "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690592&outFields=*&f=json"
   },
-  "access": "Visible from the public road Grensstraat. Register: owner municipality, visitable ja, public ja, setting listed as pasture (weiland), so view it from the road edge; no hours.",
+  "access": "Free, open at all times: visible from the public road Grensstraat. Register: owner municipality, visitable ja, public ja, setting listed as pasture (weiland), so view it from the road edge; no hours.",
   "transport": "No rail. About 1.9 km south of the centre of Nispen (De Lind), roughly a 25 minute walk; no bus stop was checked.",
   "location_precision": "confirmed",
   "curation_status": "flagged",
   "story": "Around 2001 or 2002, workers laid a deep sewer under the road beside this sycamore and cut away the roots that ran beneath it. When the inspectors came back in 2003, the tree showed no loss of condition at all.\n\nThe national tree register gives it a name that doubles as directions: 'Esdoorn net voor de grens', the maple just before the border. It stands at Grensstraat 2, south of Nispen, with Belgium a short way further down the road.\n\nThe Bomenstichting's Landelijk Register Monumentale Bomen bands its planting to the decade 1890 to 1900, which makes it roughly 126 to 136 years old. It is 2.96 metres round at chest height and 18 metres tall. The register last recorded it in April 2023, and an aerial photograph from spring 2026 still shows its crown at the edge of the grass, with no other tree within about 30 metres.\n\nThat register is the only source we have for this sycamore. Nobody has written down who planted it, or why a sycamore went in here on the border road. If you know, tell us.\n\nThe ground it stands on is listed as pasture, so look from the road edge rather than walking in. There is no train out here: it is about 1.9 kilometres south of the village centre at De Lind, roughly a 25 minute walk, and 1.4 kilometres beyond the oak of Nispen.",
   "how_to_recognise": "You can recognise it as the lone tree at the edge of the grass beside Grensstraat, no other tree within about 30 metres, its trunk 2.96 metres round. It stands at number 2, just before the Belgian border.",
   "verify_notes": "LRMB 1690592 'Esdoorn net voor de grens' (register name), band 1890-1900, girth 296 cm, height 18 m, status 3, last observed 2023-04, register photo 2023 (not licensed). Register note: in 2001/2002 a deep sewer was laid and roots under the road removed, no condition loss visible at the 2003 inspection; so the roots lost on the road side are a fact the writer may use. Alive: 2023 observation with photo; spring 2026 PDOK frame shows one bare crown on the register point at the verge of a lawn beside the road, no other tree within about 30 m, so pin held as confirmed, but the crown sits in shadow in a leafless frame, so this is a modest confirmation. Register only, flagged (no second source; transport stop not checked). Nearest published trees: roo_014 oak of Nispen about 1.4 km north."
+ },
+ {
+  "id": "roo_020",
+  "name": "The London Plane of Oostelijke Havendijk",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "roughly 110 years, from a registered planting decade",
+  "age_min": 106,
+  "age_max": 116,
+  "age_basis": "source",
+  "girth_cm": 407,
+  "height_m": 27,
+  "location": {
+   "address": "Roosendaal, Oostelijke Havendijk 15, in front of the Sensus office",
+   "latitude": 51.542842,
+   "longitude": 4.450601,
+   "neighbourhood": "Borchwerf Noord"
+  },
+  "verified_sources": [
+   "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690578&outFields=*&f=json",
+   "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-15)",
+   "https://nominatim.openstreetmap.org/search?q=Oostelijke+Havendijk+15+Roosendaal&format=json (OSM node: Sensus office at 51.54279,4.45092, about 22 m east of the tree, matching the register wording 'voor kantoor van Sensus')"
+  ],
+  "official_register": {
+   "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1690578",
+   "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1690578&outFields=*&f=json"
+  },
+  "access": "View from the public pavement and quay of Oostelijke Havendijk, free, no hours. The tree stands in the lawn strip in front of an office (register: owner private, visible ja, visitable onbekend); crown overhangs the street side. Do not assume entry to the office grounds.",
+  "transport": "Roosendaal station is about 0.6 km east-southeast in a straight line (roughly 10 minutes on foot).",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "One of the thickest plane trees in Roosendaal does not stand in a park or on a square. It grows on the lawn in front of an office on Oostelijke Havendijk, by the town's harbour canal, 4.07 metres round at chest height and 27 metres tall.\n\nThose figures come from the Bomenstichting's Landelijk Register Monumentale Bomen, which bands its planting to the decade 1910 to 1920. That makes it roughly 106 to 116 years old, and the band is the only basis for its age. By the register's tape it is wider than the London plane on De Kring, at 3.60 metres, though a plane on Burgerhoutsestraat beats them both at 4.40.\n\nThe register is the only written source we have found for this tree, and it says little. A single tree, grown in its natural shape, in a garden setting. Its one piece of advice is that the crown needs lifting. An inspector last recorded it on 29 March 2025, and an aerial photograph from spring 2026 still shows one large crown standing on its own between the office and the street, with two smaller ones further north and south.\n\nNobody has written down who planted it, or why a plane went in here by the harbour. If you know, tell us.\n\nThe lawn belongs to the office, so see it from the pavement and the quay, where the crown reaches out over the street side. It is about ten minutes on foot from Roosendaal station.",
+  "how_to_recognise": "You can recognise it as the one big plane on the office lawn at Oostelijke Havendijk 15, 4.07 metres round, its crown over the street. It stands alone; two smaller crowns lie further north and south."
+ },
+ {
+  "id": "roo_021",
+  "name": "The White Willow of Heijbeek",
+  "species": "White Willow (Salix alba)",
+  "age_estimate": "roughly 120 years, from a registered planting decade",
+  "age_min": 116,
+  "age_max": 126,
+  "age_basis": "source",
+  "girth_cm": 502,
+  "height_m": 22,
+  "location": {
+   "address": "Nispen, corner of Broekakkerstraat and Heijbeeksestraat, in a meadow",
+   "latitude": 51.482104,
+   "longitude": 4.466615,
+   "neighbourhood": "Nispen"
+  },
+  "verified_sources": [
+   "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691941&outFields=*&f=json",
+   "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless spring frame, viewed 2026-10-15)"
+  ],
+  "official_register": {
+   "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1691941",
+   "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1691941&outFields=*&f=json"
+  },
+  "access": "View from the roadside only: free, no hours. The tree stands about 30 m inside a private meadow (register: owner private, visitable onbekend, visible ja, openbaar ja) beside the road junction; no right of entry is documented.",
+  "transport": "No bus stop verified. About 6.5 km south of Roosendaal station in a straight line, so a cycle ride rather than a walk.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "The fourth-thickest trunk in Roosendaal's part of the national tree register belongs not to an oak or a plane but to a willow standing alone in a meadow at the edge of Nispen. It measures 5.02 metres round at chest height and stands 22 metres tall.\n\nThe Bomenstichting's Landelijk Register Monumentale Bomen identifies it as a schietwilg, the white willow, and bands its planting to the decade 1900 to 1910, so it has been growing here for well over a century. That band is the only basis for its age. The register records it in its natural shape, a free-grown crown rather than a cropped pollard, in grassland where Broekakkerstraat meets Heijbeeksestraat.\n\nIt has not been pampered. In July 2003 an inspector wrote that maintenance was long overdue and that the crown urgently needed lifting. The tree carried on regardless: the register photographed it again in 2016 and in 2024, and last recorded it on 16 May 2024, still on the list as monumental. An aerial photograph from spring 2026 shows a single rounded crown about 13 metres across, alone in the open field.\n\nThe register is the only source we have, and its history field reads simply 'unknown'. Nobody has written down who planted a willow here or why. If you know, tell us.\n\nThe meadow is private, so see it from the road. It is about 280 metres east of the copper beech at the gate of Nispen's parish cemetery.",
+  "how_to_recognise": "You can recognise it as the lone willow about 30 metres into the meadow at the corner of Broekakkerstraat and Heijbeeksestraat, its crown about 13 metres across and nothing else beside it."
  }
 ]
