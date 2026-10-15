@@ -39,6 +39,18 @@
    "note": "SCOUTED 2026-10-15. Naming bodies exist: TreeBaltimore Baltimore City Notable Trees Map (city champions, exemplary specimens, state champions, unusual species; ArcGIS Shortlist app baltimore.maps.arcgis.com appid b9da33b47550485ea47c195eb32126d8, linked from treebaltimore.org/notable-trees/) and the Maryland Big Tree Program (mdbigtrees.org, Tree Listings at /websitedata, county and accessibility per tree, no coordinates seen). Neither states a licence or offers a download: the TreeBaltimore page shows only the footer 'copyright 2007 by Baltimore City Department of Recreation and Parks', mdbigtrees.org shows no terms. No proving sentence, so no import. The TreeBaltimore ArcGIS service found (Treeplnt) is annual plantings, not remarkable trees. Next angle: ask Rec and Parks / TreeBaltimore for a written reuse yes, or read the map's feature layer for the notable list as a research lead (bal_001 to bal_004 already published from other sources)."
   },
   {
+   "place": "Bristol",
+   "country": "United Kingdom",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#283). Bristol City Council has no notable or heritage tree register. planning.data.gov.uk carries its Tree Preservation Order points (OGL v3.0, e.g. tree:MQHUWLDN0GL00 Copper Beech, TP1247; notes are one species word, no size or age) and data.gov.uk has a council-managed Trees inventory (OGL v3.0, partly updated, amenity inventory). Protection and inventory are not remarkableness, so not a register under our rule. Woodland Trust Ancient Tree Inventory is off limits. Next angle: Bristol Tree Forum or Bristol Tree Woodland Strategy for named veteran trees (finding aid), Ashton Court and Leigh Woods veteran surveys."
+  },
+  {
+   "place": "Cardiff",
+   "country": "United Kingdom",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#294). One search: no Cardiff Council notable or heritage tree register or open tree dataset found; the council uses the National Tree Map (aerial, no public download seen) and a 2017 i-Tree Eco sample study, neither tree-level remarkable. Woodland Trust Ancient Tree Inventory is off limits. Next angle: Cardiff Council open data portal for TPO points via planning.data.gov.uk (protection, not remarkableness), Bute Park Arboretum collection list (finding aid)."
+  },
+  {
    "place": "Canterbury",
    "country": "United Kingdom",
    "status": "stalled",
