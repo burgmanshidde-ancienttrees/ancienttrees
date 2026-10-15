@@ -1209,8 +1209,10 @@ on a circle for three and more, each on a thin moss leg to a dot on the real
 spot. A spread pin opens its tree like any pin. A tap on the map or a zoom of
 your own folds them back. Never spread for good: two pins drawn apart would
 claim a precision the data does not have. Web: spreadStack() in
-lib/city-map-script.ts. App: MapLayers.stackSpots() and spread() in
-TreeMap.swift.
+lib/city-map-script.ts (the city map), PILES_JS in lib/map.ts (explore,
+country, My trees). App: MapLayers.stackSpots() and spread() in TreeMap.swift,
+which every app map uses. Find a pile from the DATA, never from features read
+back from the map: tile coordinates are rounded and miss the spot.
 
 Read 2026-10-15:
 - https://github.com/Leaflet/Leaflet.markercluster (README, CHANGELOG 1.4.0)
