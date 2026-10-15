@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 session: a wrong pin no longer forces a new tree (app, build 35)
+
+- **Peter's bug (Seville, mail of 15 Oct).** At the real Ombú of La Cartuja the app offered only "new tree" and his pin move failed. Cause: our sev_002 pin is about 1.7 km off (approximate), the collect flow only offers our trees within 400 m of the photo, and the live 1.0.2 has no tree-page shortcut. His "The tree is here" correction never reached Supabase (no row since his 8 Oct Judas tree one), most likely a lapsed sign-in sending anonymously; not reproduced.
+- **Fixed in the app:** with nothing within 400 m, "Which one is it?" now shows the closest three within 3 km plus a search by name; a far pick asks once on the compare screen ("Our pin is 1.2 km from where you took this photo"), collects, and sends a `correction` row with the photo's coordinate; the last screen says we will move our pin. Unit test `aWrongPinStillOffersTheTree`, FlowWalk green, looked at on 17 Pro and SE. CONVENTIONS.md entry (Google Maps add-photo search).
+- **For Hidde:** build 35 of 1.0.3 is archived for the Organizer. To ship it instead of 34: remove 34 from review in App Store Connect, upload 35, submit. This restarts Apple's review.
+- **Still open:** the Ombú pin itself (needs Peter's photo with its location; our sources do not place it), and the pin screen's "Try again" message when the sign-in has lapsed.
+
 ## 2026-10-15 (third attempt, same window): nothing published; scouted Santa Fe and Glasgow
 
 No claims standing; same 60 thin READY leads and refused written trees as before, so no write pass. langcheck table empty, enrichment nothing to do. The two Amersfoort English fixes the translator flagged were already in place. Scouted Santa Fe (#136, `empty`: only the NM Big Tree PDF) and Glasgow (#150, `stalled`: Scotland TPO layer unchecked; Argyle Street ash, Darnley Sycamore and Kelvingrove plane named as leads). Verdicts in data/register-scouting.json. 0 trees.
