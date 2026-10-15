@@ -969,6 +969,16 @@
    "covers": [
     "Innsbruck"
    ]
+  },
+  {
+   "place": "Rhineland-Palatinate",
+   "country": "Germany",
+   "status": "imported",
+   "note": "SCOUTED 2026-10-15. LANIS (SGD Nord) WFS naturdenkmale_punkte, ODbL with attribution (LANIS metadata id 4890: 'Nutzung entsprechend den Lizenzbestimmungen der Odbl mit Quellenangabe zulaessig'). Whole state: 1676 points, of which 1486 have a tree word in the name. Trier city (ND-7211): 199 points, 196 tree-named. Landkreis Trier-Saarburg (ND-7235): 46 points. Saved as data/registers/rlp-naturdenkmaeler.json. Names only (count, species, street), no girth/age/owner; approximate pins; publishable false until per-tree access checked. Trier highlights: Hauptfriedhof cemetery (about 30 rows), Karthaeuser Hof arboretum Eitelsbach, Quint park, Abtei St. Matthias, Sudallee/Ostallee street trees, Balduinstaelchen copper beeches.",
+   "covers": [
+    "Trier",
+    "Koblenz"
+   ]
   }
  ],
  "out_of_focus": {
