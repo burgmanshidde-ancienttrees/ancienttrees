@@ -1401,27 +1401,37 @@ query($tag: String!, $since: Date!, $until: Date!) {
     # Console lag came from this beacon, read by hand three days late. It is
     # independent of Search Console, so it is the column that says on the first
     # morning whether search traffic actually arrived.
-    google = {}
+    # Every search engine gets its own column (Hidde, 2026-10-15: "why isnt
+    # duckduckgo and yahoo added"). Only Google and Bing have a console with
+    # impressions; DuckDuckGo and Yahoo publish none, and both show results
+    # largely from Bing's index, so an arrival here is all we can know of them.
+    engines = {name: {} for name, _hosts in SEARCH_ENGINES}
     for r in acct[0].get("gdays") or []:
         host = (r["dimensions"].get("refererHost") or "").lower()
-        if "google." in host or "googlequicksearchbox" in host:
-            dd = r["dimensions"]["date"]
-            google[dd] = google.get(dd, 0) + r["count"]
+        for name, hosts in SEARCH_ENGINES:
+            if any(h in host for h in hosts):
+                dd = r["dimensions"]["date"]
+                engines[name][dd] = engines[name].get(dd, 0) + r["count"]
+                break
+    google = engines["Google"]
+    HEADLINE["search"] = (sum(sum(v.values()) for v in engines.values()), None)
     # NO BOT COLUMN, EVER (Hidde, 2026-10-02: "can you please never ever count
     # en show bots again evr"). The crawler pageviews are filtered out of
     # every query above and that is the whole of their appearance here: the
     # table counts people and says nothing about what it left out. The one
     # internal use that survives is subtracting them from the no-referrer row
     # below, so that line counts people too; it never prints them.
-    rows = ["| Day | Visits | Pageviews | From Google |",
-            "|---|---:|---:|---:|"]
+    names = [name for name, _hosts in SEARCH_ENGINES]
+    rows = ["| Day | Visits | Pageviews | %s |" % " | ".join("From " + n for n in names),
+            "|---|---:|---:|%s" % ("---:|" * len(names))]
     for d in days:
         dd = d["dimensions"]["date"]
-        rows.append("| %s | %d | %d | %d |" % (
-            dd[5:], d["sum"]["visits"], d["count"], google.get(dd, 0)))
-    rows.append("| **window** | **%d** | **%d** | **%d** |" % (
+        rows.append("| %s | %d | %d | %s |" % (
+            dd[5:], d["sum"]["visits"], d["count"],
+            " | ".join(str(engines[n].get(dd, 0)) for n in names)))
+    rows.append("| **window** | **%d** | **%d** | %s |" % (
         sum(d["sum"]["visits"] for d in days), sum(d["count"] for d in days),
-        sum(google.values())))
+        " | ".join("**%d**" % sum(engines[n].values()) for n in names)))
     trend = "\n" + "\n".join(rows)
     top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
     def _dim(rows, key, skip=("", None)):
@@ -1475,10 +1485,20 @@ query($tag: String!, $since: Date!, $until: Date!) {
             + "\n\n" + backlinks_section())
 
 
+# The engines the Cloudflare table splits arrivals by, name and referrer hosts.
+SEARCH_ENGINES = (
+    ("Google", ("google.", "googlequicksearchbox")),
+    ("Bing", ("bing.",)),
+    ("DuckDuckGo", ("duckduckgo.",)),
+    ("Yahoo", ("yahoo.",)),
+    ("Ecosia", ("ecosia.",)),
+)
+
+
 # Hosts that are us, or a search engine sending us traffic we already measure
 # in Search Console. Neither is a link somebody chose to give us.
 NOT_A_BACKLINK = (
-    "ancienttrees.app", "google.", "bing.", "duckduckgo.", "ecosia.",
+    "ancienttrees.app", "google.", "bing.", "duckduckgo.", "ecosia.", "yahoo.",
     "yandex.", "baidu.", "search.brave.", "startpage.", "qwant.",
 )
 
@@ -1618,6 +1638,11 @@ def is_ours(uid):
 # so in words. Without it the report has no front door: fifteen true blocks and
 # no statement of which one, if any, is today's.
 ATTENTION = []
+
+# The numbers the conclusion on top reads, filled by the blocks that already
+# fetch them so nothing is asked twice: name -> (this week, week before), the
+# week before None where the source only gives one window.
+HEADLINE = {}
 
 
 def _supa(path, key, timeout=30):
@@ -1883,6 +1908,21 @@ def product_section(today):
                 ours_n["accounts"] += 1
                 continue
             bump(str(u.get("created_at"))[:10], "accounts")
+        # Strangers' accounts per week for the conclusion on top: this week is
+        # the seven days to yesterday, the same window as the app's.
+        wk = [0, 0]
+        for u in ((users or {}).get("users") or []):
+            if is_ours(u.get("id")):
+                continue
+            try:
+                age = (today - datetime.date.fromisoformat(str(u.get("created_at"))[:10])).days
+            except ValueError:
+                continue
+            if 1 <= age <= 7:
+                wk[0] += 1
+            elif 8 <= age <= 14:
+                wk[1] += 1
+        HEADLINE["accounts"] = tuple(wk)
         days_ = [(since + datetime.timedelta(days=i)).isoformat() for i in range(8)]
         if any(series.get(d) for d in days_):
             out.append("")
@@ -2931,6 +2971,11 @@ def app_builder_section(today):
     now_c, prev_c = cohort(8, 1), cohort(15, 8)
     now_b, prev_b = back(15, 8), back(22, 15)
     now_t, prev_t = collected(7, 0), collected(14, 7)
+    HEADLINE["collected"] = (now_t, prev_t)
+    HEADLINE["new_phones"] = (now_c[0], prev_c[0])
+    HEADLINE["first_opened"] = ((now_c[1], now_c[0]), (prev_c[1], prev_c[0]))
+    HEADLINE["first_there"] = ((now_c[6], now_c[0]), (prev_c[6], prev_c[0]))
+    HEADLINE["back"] = ((now_b[1], now_b[0]), (prev_b[1], prev_b[0]))
 
     def pct(part, whole):
         return "-" if not whole else "%d of %d (%.0f%%)" % (part, whole, 100.0 * part / whole)
@@ -3374,6 +3419,103 @@ def app_store_downloads_lines():
     return out
 
 
+def _readers_live(today):
+    """Readers' photographs and trees that went live: this week, week before."""
+    try:
+        with open(os.path.join(ROOT, "data", "sightings-processed.json")) as f:
+            done = json.load(f).get("done", {})
+    except (OSError, ValueError):
+        return None
+    try:
+        import inspect_readers as ir
+        owner = ir.owners()
+    except Exception:
+        owner = {}
+    wk = [0, 0]
+    for sid, d in done.items():
+        if d.get("outcome") not in ("published", "added") or d.get("mine"):
+            continue
+        if is_ours(owner.get(str(sid).lower())):
+            continue
+        try:
+            age = (today - datetime.date.fromisoformat(str(d.get("date"))[:10])).days
+        except ValueError:
+            continue
+        if 1 <= age <= 7:
+            wk[0] += 1
+        elif 8 <= age <= 14:
+            wk[1] += 1
+    return tuple(wk)
+
+
+def headline_section(today):
+    """The conclusion on top: the six numbers that matter in phase 1, this week
+    against the week before, and two sentences reading them.
+
+    Hidde, 2026-10-15: "can you do some research on which numbers are good to
+    prioritise in this phase of product development and make a conclusion on
+    top". Before product-market fit the advice converges (RevenueCat, June,
+    Amplitude, Lenny Rachitsky's retention benchmarks): one north-star action
+    that is the value itself, whether a newcomer reaches it on the first day
+    (activation), whether they come back (retention), weekly, and pageviews,
+    impressions, downloads and all-time totals demoted as vanity. Here that
+    reads as goal 1 (a person standing at a tree), then the two things phase 1
+    collects (people, data), then search arrivals as the one traction input.
+    At our volumes every row is a handful, so the reading says counts, never
+    trends. The full blocks below stay as the evidence."""
+    H = dict(HEADLINE)
+    H["readers"] = _readers_live(today)
+
+    def share(p):
+        part, whole = p
+        return "-" if not whole else "%d of %d (%.0f%%)" % (part, whole, 100.0 * part / whole)
+
+    def cell(v):
+        if v is None:
+            return "-"
+        return share(v) if isinstance(v, tuple) else str(v)
+
+    rows = [
+        ("Stood at a tree (app collections)", "goal 1, the north star", "collected"),
+        ("New phones that opened a tree on day one", "activation", "first_opened"),
+        ("New phones that tapped Take me there on day one", "activation", "first_there"),
+        ("Phones back within a week", "retention", "back"),
+        ("New accounts (strangers)", "people collected", "accounts"),
+        ("Readers' trees and photographs live", "data collected", "readers"),
+        ("Arrivals from search, every engine (8 days)", "traction", "search"),
+    ]
+    out = ["**Conclusion: the numbers that matter now** (this week against the week before)", "",
+           "| Number | Why it counts | This week | Week before |", "|---|---|---:|---:|"]
+    for label, why, k in rows:
+        v = H.get(k)
+        out.append("| %s | %s | %s | %s |" % (label, why, cell(v[0]) if v else "-",
+                                            cell(v[1]) if v else "-"))
+
+    # The reading. First the north star as a count; then the weakest link in
+    # the chain from a new phone to a walk, which is the work.
+    said = []
+    c = H.get("collected")
+    if c:
+        said.append("%d collection%s at a tree this week against %d the week before%s." % (
+            c[0], "" if c[0] == 1 else "s", c[1],
+            ", a handful: read it as a count, not a trend" if max(c) < 20 else ""))
+    links = []
+    for k, name in (("first_opened", "opening a tree on day one"),
+                    ("first_there", "tapping Take me there on day one"),
+                    ("back", "coming back within a week")):
+        v = H.get(k)
+        if v and v[0][1]:
+            links.append((v[0][0] / float(v[0][1]), name, v[0]))
+    if links:
+        low = min(links)
+        said.append("The weakest link is %s (%d of %d): that step is the work, more traffic "
+                    "only pours more people into it." % (low[1], low[2][0], low[2][1]))
+    if not said:
+        said.append("The app numbers did not arrive today, so there is nothing to read yet.")
+    out += ["", " ".join(said)]
+    return "\n".join(out)
+
+
 def build_entry(days, today, gsc_text):
     yday = today - datetime.timedelta(days=1)
     by_date = {d["dimensions"]["date"]: d for d in days}
@@ -3455,9 +3597,7 @@ def build_entry(days, today, gsc_text):
 %s
 
 %s%s
-
-**Conclusion:** %s
-""" % (yday.isoformat(), verdict, zone_block, gsc_text, conclusion)
+""" % (yday.isoformat(), verdict, zone_block, gsc_text)
 
 
 def _selftest_own_searches():
@@ -3610,24 +3750,17 @@ def main():
     block(night_shift, today)
     block(night_photos_section, today)
     block(fetch_machine, today)
+    # The conclusion goes on top (Hidde, 2026-10-15), built last because it
+    # reads the numbers the blocks above fetched.
+    try:
+        blocks.insert(0, headline_section(today))
+    except Exception as e:
+        blocks.insert(0, "headline_section: failed today (%s)." % str(e)[:90])
     gsc_text = "\n\n".join(blocks)
 
+    # The old one-line conclusion at the bottom (Google's freshest day, "no
+    # strategic conclusions") gave way to headline_section on top, 2026-10-15.
     entry = build_entry(days, today, gsc_text)
-    # While the CF zone is dormant (domain not proxied), its zeros must not drive
-    # the conclusion. If search data exists, it replaces the conclusion line.
-    if gsc_latest is not None:
-        c, i = gsc_latest["clicks"], gsc_latest["impressions"]
-        pc, pi = gsc_latest["prev_clicks"], gsc_latest["prev_impressions"]
-        if i < 1000:
-            concl = ("Search is the only channel with real data and it is still small: "
-                     "%d clicks and %d impressions on Google's freshest day (day before: c%d/i%d). "
-                     "Directional at best; no strategic conclusions from these volumes." % (c, i, pc, pi))
-        else:
-            concl = ("Google's freshest day: %d clicks, %d impressions (day before: c%d/i%d). "
-                     "Volumes are past noise; a run should replace this line with an actual "
-                     "reading of what moved." % (c, i, pc, pi))
-        import re as _re
-        entry = _re.sub(r"\*\*Conclusion:\*\* .*\n", "**Conclusion:** %s\n" % concl, entry)
     body = existing[len(PREAMBLE):] if existing.startswith(PREAMBLE) else (
         "\n" + existing if existing else ""
     )
