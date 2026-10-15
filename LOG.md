@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, session: new photo on the about page
+
+- /about now shows Hidde and his son under the Noike torii between the two cedars, facing the camera, full frame (his ask). Caption and the photo sentence say "me and my son"; the son is not named. New files site/public/photos/about/hidde-noike-{600,1200}.jpg, EXIF and GPS stripped. The old hidde-cedar files stay in place, unused.
+- Looked at it rendered at 375px and desktop before pushing.
+
 ## 2026-10-15, iOS CI red since 10-14: two test-side causes, no app regression
 
 - **Nothing changed in the app.** The map's "Location off" chip after a refusal was never broken.
