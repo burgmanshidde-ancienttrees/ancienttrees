@@ -13,6 +13,15 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-15
+
+Web half: read the new Seville Cardón of the Expo (sev_044) as built, and checked seville, munich, chicago, roosendaal, oss and potsdam in site/dist for em dashes: none. The Cardón page carries the reader's 200 to 300 years beside the press's 1,500, as the ruling asks, and its access line says honestly that the ground is private but open.
+
+- WARN /seville/cardon-of-the-expo (Sources): the same official register is listed twice, "Inventario de Arboles Singulares de la Ciudad de Sevilla (Ayuntamiento de Sevilla, 2022), no. ficha 27" and "Inventario de Arboles Singulares de la Ciudad de Sevilla (2022), Ayuntamiento de Sevilla, ficha 27", so one source reads as two (CLAUDE.md "two independent sources" is about counting honestly). The string appears 54 times in data/cities/seville.json, so it is likely the register-match step adding a second spelling of an entry already there. Suggest register_match.py skip a register already named in `verified_sources`.
+- NOTE /seville/cardon-of-the-expo (meta description and og:description): "A 200-year-old Cardón" states the low end of a reader's range as a plain fact, while the page body says "200 to 300 years" and the press says 1,500. A snippet should not sharpen a vague basis (CLAUDE.md Verify, "never sharpen a vague source"); "A 200 to 300 year old" would match the page.
+
+---
+
 ## 2026-10-14
 
 Web half: read the rebuilt /about (d82aab58) in site/dist, and sampled amsterdam, seattle, bruges, riga, kimotsuki and riga/kaltini-oak. No em dashes, no surname on /about, no leaked code in the text of the pages sampled.
