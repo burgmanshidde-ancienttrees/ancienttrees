@@ -209,7 +209,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 4 | Birmingham | 37.53 | - | - | - | - | - | 60 | predicted (travel demand) |
 | 5 | Seville | 24.51 | 170,545 | 44 | 12 | 2 | - | 30 | measured |
 | 6 | Tenerife | 24.51 | - | 4 | 4 | - | - | 30 | measured |
-| 7 | Munich | 24.51 | 224,067 | 62 | 32 | 8 | 76 | 60 | measured |
+| 7 | Munich | 24.51 | 224,067 | 63 | 32 | 8 | 74 | 60 | measured |
 | 8 | Brisbane | 20.43 | 162,602 | 20 | 2 | 2 | 186 | 60 | measured |
 | 9 | Cambridge | 28.60 | 97,974 | 5 | 2 | 1 | - | 20 | measured |
 | 10 | Madeira | 16.34 | - | 10 | 1 | 1 | - | 30 | measured |
