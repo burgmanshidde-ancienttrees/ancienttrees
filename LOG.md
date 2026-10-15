@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (eleventh attempt): nothing published; scouted Canterbury
+
+No claims standing. READY leads (60, thin Dutch street trees) and the written-but-unmerged trees are the same ones refused under rich-or-reader in earlier attempts; not retried. Enrichment says nothing to do. Scouted Canterbury (#277): no city register; only TPO points (OGL) which are protection, not remarkableness; Woodland Trust ATI licence unseen. `stalled` in data/register-scouting.json with next angle. 0 trees.
+
 ## 2026-10-15 (tenth attempt): nothing published; scouted Middletown
 
 No claims. Enrich nothing; the 60 READY leads and the written-but-unmerged files are still refused by the richness rule (see fourth attempt), so no write pass. Scouted Middletown CT (#276): no city register; Connecticut's Notable Trees database (Connecticut College Arboretum) is the naming body, but its certificate failed to verify and no licence or coordinates were seen. `stalled` in data/register-scouting.json with next angle. 0 trees.
