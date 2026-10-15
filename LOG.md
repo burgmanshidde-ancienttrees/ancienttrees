@@ -20,7 +20,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-15, session with Hidde: the Montsouris plane gets its reader's age
 
 - **Live (next deploy):** par_034 now gives "about 186 years by a reader's estimate", in the age field and the story, where it had asked readers for an age its own reader had already given.
-- New preflight check `check_a_readers_age_reaches_the_page()`: a reader's tree whose sighting names an age the page omits is refused. Swept every sighting with an age: no other published tree was missing one. Unused, as a lead only: the same reader's pedunculate oak near Santranges, 245 years, 440 cm. Its photograph, viewed this session, is a garden well and not the oak, so it cannot go live; a reply asking for the oak's photo waits in drafts/santranges-oak-photo.md, not sent.
+- New preflight check `check_a_readers_age_reaches_the_page()`: a reader's tree whose sighting names an age the page omits is refused. Swept every sighting with an age: no other published tree was missing one. Unused, as a lead only: the same reader's pedunculate oak near Santranges, 245 years, 440 cm. Its photograph, viewed this session, is a garden well and not the oak, so it cannot go live; the reader was already asked for the oak's photo in the 2026-10-13 Montsouris mail, so no second mail (the duplicate draft is removed).
 
 ## 2026-10-15, session with Hidde: tree page photo shape and collect wording
 
