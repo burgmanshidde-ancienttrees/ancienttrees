@@ -7691,30 +7691,7 @@
    "wikidata": 98
   },
   {
-   "city": "Oss",
-   "country": "Netherlands",
-   "trees": 5,
-   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
-   "status": "published",
-   "photos": 0,
-   "walks": 0,
-   "register": 48,
-   "ready": 4,
-   "supply": 52,
-   "target": 20,
-   "ease": 2.0,
-   "work_score": 0.88,
    "rank": 332,
-   "impressions_10d": 0,
-   "clicks_10d": 0,
-   "score": 0.44,
-   "basis": "predicted (travel demand)",
-   "wikidata": 0,
-   "travel": 438,
-   "slug": "oss"
-  },
-  {
-   "rank": 333,
    "city": "Crete",
    "country": "Greece",
    "slug": "crete",
@@ -7738,7 +7715,7 @@
    "wikidata": 0
   },
   {
-   "rank": 334,
+   "rank": 333,
    "city": "Segovia",
    "country": "Spain",
    "slug": "segovia",
@@ -7761,7 +7738,7 @@
    "wikidata": 0
   },
   {
-   "rank": 335,
+   "rank": 334,
    "city": "Brighton",
    "country": "United Kingdom",
    "slug": "brighton",
@@ -7784,7 +7761,7 @@
    "wikidata": 0
   },
   {
-   "rank": 336,
+   "rank": 335,
    "city": "Busan",
    "country": "South Korea",
    "slug": "busan",
@@ -7807,7 +7784,7 @@
    "wikidata": 1
   },
   {
-   "rank": 337,
+   "rank": 336,
    "city": "Potsdam",
    "country": "Germany",
    "slug": "potsdam",
@@ -7843,7 +7820,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.76,
-   "rank": 338,
+   "rank": 337,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.38,
@@ -7853,7 +7830,7 @@
    "slug": "enschede"
   },
   {
-   "rank": 339,
+   "rank": 338,
    "city": "Trento",
    "country": "Italy",
    "slug": "trento",
@@ -7876,7 +7853,7 @@
    "wikidata": 23
   },
   {
-   "rank": 340,
+   "rank": 339,
    "city": "Heidelberg",
    "country": "Germany",
    "slug": "heidelberg",
@@ -7899,7 +7876,7 @@
    "wikidata": 6
   },
   {
-   "rank": 341,
+   "rank": 340,
    "city": "Ibiza",
    "country": "Spain",
    "slug": "ibiza",
@@ -7923,7 +7900,7 @@
    "wikidata": 0
   },
   {
-   "rank": 342,
+   "rank": 341,
    "city": "Modena",
    "country": "Italy",
    "slug": "modena",
@@ -7946,7 +7923,7 @@
    "wikidata": 5
   },
   {
-   "rank": 343,
+   "rank": 342,
    "city": "Den Bosch",
    "country": "Netherlands",
    "slug": "den-bosch",
@@ -7969,7 +7946,7 @@
    "wikidata": 0
   },
   {
-   "rank": 344,
+   "rank": 343,
    "city": "Ronda",
    "country": "Spain",
    "slug": "ronda",
@@ -8005,7 +7982,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.7,
-   "rank": 345,
+   "rank": 344,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.35,
@@ -8028,7 +8005,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.7,
-   "rank": 346,
+   "rank": 345,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.35,
@@ -8038,7 +8015,7 @@
    "slug": "heerlen"
   },
   {
-   "rank": 347,
+   "rank": 346,
    "city": "Kamakura",
    "country": "Japan",
    "slug": "kamakura",
@@ -8074,7 +8051,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.7,
-   "rank": 348,
+   "rank": 347,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.35,
@@ -8084,7 +8061,7 @@
    "slug": "zwolle"
   },
   {
-   "rank": 349,
+   "rank": 348,
    "city": "Coimbra",
    "country": "Portugal",
    "slug": "coimbra",
@@ -8107,7 +8084,7 @@
    "wikidata": 12
   },
   {
-   "rank": 350,
+   "rank": 349,
    "city": "Cordoba",
    "country": "Spain",
    "slug": "cordoba",
@@ -8144,7 +8121,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.62,
-   "rank": 351,
+   "rank": 350,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.31,
@@ -8154,7 +8131,7 @@
    "slug": "deventer"
   },
   {
-   "rank": 352,
+   "rank": 351,
    "city": "Tarragona",
    "country": "Spain",
    "slug": "tarragona",
@@ -8177,7 +8154,7 @@
    "wikidata": 11
   },
   {
-   "rank": 353,
+   "rank": 352,
    "city": "Ghent",
    "country": "Belgium",
    "slug": "ghent",
@@ -8213,7 +8190,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.6,
-   "rank": 354,
+   "rank": 353,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.3,
@@ -8223,7 +8200,7 @@
    "slug": "hoorn"
   },
   {
-   "rank": 355,
+   "rank": 354,
    "city": "Lima",
    "country": "Peru",
    "slug": "lima",
@@ -8259,7 +8236,7 @@
    "target": 20,
    "ease": 2.0,
    "work_score": 0.58,
-   "rank": 356,
+   "rank": 355,
    "impressions_10d": 0,
    "clicks_10d": 0,
    "score": 0.29,
@@ -8269,7 +8246,7 @@
    "slug": "helmond"
   },
   {
-   "rank": 357,
+   "rank": 356,
    "city": "Hallstatt",
    "country": "Austria",
    "slug": "hallstatt",
@@ -8292,7 +8269,7 @@
    "wikidata": 7
   },
   {
-   "rank": 358,
+   "rank": 357,
    "city": "Pamplona",
    "country": "Spain",
    "slug": "pamplona",
@@ -8315,7 +8292,7 @@
    "wikidata": 0
   },
   {
-   "rank": 359,
+   "rank": 358,
    "city": "Perugia",
    "country": "Italy",
    "slug": "perugia",
@@ -8347,7 +8324,7 @@
    "score": 0.55,
    "basis": "predicted (travel demand)",
    "work_score": 0.55,
-   "rank": 360,
+   "rank": 359,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -8361,7 +8338,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 361,
+   "rank": 360,
    "city": "Cesky Krumlov",
    "country": "Czech Republic",
    "slug": "cesky-krumlov",
@@ -8384,7 +8361,7 @@
    "wikidata": 114
   },
   {
-   "rank": 362,
+   "rank": 361,
    "city": "Windsor",
    "country": "United Kingdom",
    "slug": "windsor",
@@ -8407,7 +8384,7 @@
    "wikidata": 0
   },
   {
-   "rank": 363,
+   "rank": 362,
    "city": "Matera",
    "country": "Italy",
    "slug": "matera",
@@ -8431,7 +8408,7 @@
    "settled": "Verification pass 2026-09-01, working from data/research/matera-staged.json (16 register rows, mostly duplicated between MASAF and the Puglia/Basilicata regional sheets, 10 Wikidata entities, largely the same trees as the register). Delivered 2 trees to data/research/matera-verified.json: the Pino domestico of Viale Aldo Moro (mat_001, an urban street tree 5 min from Matera Centrale station, corroborated by the register, Wikidata, a geolocated 2018 Wikimedia Commons photo, and an OpenStreetMap node that already names it 'Il Pino') and the Pioppo nero of Colle Timmari (mat_002, on public but remote and poorly signposted ground within the Timmari archaeological park, corroborated by the register plus an independent CAI Matera hiking-club excursion write-up naming this exact tree). That is below the 4-tree floor for a page; everything else near Matera in the staged supply either sits on a private masseria (a fortified working farm, the standard rural land unit here) or could not be confirmed as public within this pass's time-box. Matches the 2026-08-31 scouting verdict already on file below: this city fails on ACCESS, not on trees.\n\nNOT PUBLISHED 2026-09-01, and the reason is the single-famous-tree test rather than the evidence. Both trees below are fully verified, sourced and pinned, and Matera stands at two, under the four-tree floor. Hidde's 2026-08-31 exception lets a place publish below four when ONE tree is itself the destination: would somebody travel specifically for this tree? A stone pine on Viale Aldo Moro and a black poplar 9.5 km out in the Timmari archaeological park are not that, however good they are. People go to Matera for the Sassi. So the exception correctly says no, and the two trees wait here rather than being stretched into a page. Do not re-verify them. Matera's problem is ACCESS and not supply: eleven register trees sit on working masserie and fail hard rule 10, which is what caps this city. Two more publicly reachable trees would open it under the normal floor.\n\nVerification pass 2026-09-02 (second attempt to clear the four-tree floor): confirmed the register is exhausted for Matera comune itself, all 9 rows accounted for (2 verified, 6 masseria-blocked, 1 lead: the Ciliegio canino). Tried to settle the Ciliegio canino access question via Overpass (per the Ypres OSM-access technique in BRIEF_RESEARCH.md): both overpass-api.de and the kumi.systems mirror failed, first with a server-busy error and then with a hard timeout on a widened 250m radius query, so no OSM tags were retrieved either way. WebSearch on the contrada found only that La Vaglia sits at the edge of Matera along the old SS7 Appia (the entrance to Matera from the north) near a rock church (Chiesa rupestre di Santa Maria della Vaglia), which fetched directly makes no mention of any tree. That is circumstantial support for a roadside setting (unlike the named masserie, this register row carries no private estate name and is flagged urban) but not positive evidence of public access, so it stays a lead rather than shipping. Searched systematically for a naming body per the 2026-09-02 lesson in BRIEF_RESEARCH.md (does anybody NAME Matera's trees individually, as opposed to describing tree populations): the Basilicata regional monumental-tree register (exhausted, see above), Matera alberi monumentali press coverage (materanews.net covers only Laurenzana's 2026 update, nothing in Matera comune), the Villa Comunale di Matera (a public 4-hectare park on Colle Belvedere planted 1903-1915 with lecci, ippocastani, aceri, tigli, pini and palme; its own local history piece on sassilive.it describes the planting programme generically and names no individual specimen), Matera's historic cemetery (no monumental-tree coverage found) and the Sant Agostino/San Domenico/Franciscan convent cloisters in the Sassi (architecture only, no tree coverage found). None produced a named, individually identifiable specimen the way the register did for the two published leads. Matera fits the pattern this project's own notes already describe for cities with no naming body: it fails on NAMING as much as on access. No new trees found or added; data/research/matera-verified.json unchanged at 2.\n\nVerification pass 2026-09-03 (third attempt to clear the four-tree floor): SHIPPED the Ciliegio canino as mat_003, curation_status flagged, location_precision approximate. What changed the verdict: instead of Overpass (which had timed out twice on prior passes), this pass queried the raw OSM Planet API directly (api.openstreetmap.org/api/0.6/map with a small bbox), which returned cleanly. It showed the tree's register/Wikidata coordinate sits about 45 m from a mapped junction of the SS7 Appia (highway=primary, named 'Strada Statale 7 Appia') with a minor road, with no building or private-landuse polygon over the point itself, only a non-overlapping quarry ('Cava del Sole') nearby. Combined with the register's own 'urban' flag on this row (shared with the confirmed-public Pino of Viale Aldo Moro, not shared with any of the six blocked masseria/jazzo rows), that tipped it from 'lead' to 'flagged and shippable': not proof of public access, but real secondary evidence pointing that way, exactly the kind of evidence this project ships as flagged rather than holding forever. Full sourcing is in data/research/matera-verified.json.\n\nAlso searched fresh ground this pass looking for a 4th tree and a naming body beyond what 2026-09-02 already exhausted, all dead ends: Parco della Murgia Materana's own flora page on the fragno (Quercus trojana) describes the species generically with no individual specimen named; no wild fig or symbolic Sassi-rock tree found in English or Italian searches; no 'ulivo millenario/secolare' near Matera itself (Basilicata's famous ancient olives are all 20+ km away near Ferrandina, already recorded as an out-of-scope lead below); Villa Comunale di Matera's own tourism page names no individual tree even after its 2026 renovation, only species lists; the WWF Oasi/Riserva San Giuliano (the wetland below the Diga di San Giuliano, near mat_002's Timmari) is described everywhere as a birdlife and landscape destination, never a named-tree one; a 2023 materanews.net piece on a collapsed 110-120 year old carob tree in Piazzetta San Giovanni is a DEAD tree (already removed) and not usable per the never-dead-as-entry rule. Matera now stands at 3 verified trees (2 confirmed, 1 flagged), still one short of the 4-tree floor and not eligible for the 2026-08-31 single-destination exception (none of the three is individually famous enough to be a trip's reason). The register for Matera comune itself is now fully exhausted (all 9 rows accounted for: 2 shipped, 6 masseria-blocked, 1 shipped flagged). Any future pass's best remaining angle is a genuinely new source this project has not tried (a fresh press search closer to publication, or a reader submission), not another sweep of the same register or the same generic search terms. 2026-09-03 write pass: stories written for all 3 verified trees (mat_001, mat_002, mat_003), delivered in data/research/matera-verified.json, which is now the current authoritative copy (this file no longer keeps a verified_but_unpublished duplicate). Still 3, one short of the 4-tree floor, and none clears the single-tree exception per the 2026-09-01 ruling above. Register exhausted per the 2026-09-03 pass; the next honest move is a genuinely new source or a reader submission, not another sweep."
   },
   {
-   "rank": 364,
+   "rank": 363,
    "city": "Hong Kong",
    "country": "China",
    "slug": "hong-kong",
@@ -8455,7 +8432,7 @@
    "wikidata": 2
   },
   {
-   "rank": 365,
+   "rank": 364,
    "city": "Ferrara",
    "country": "Italy",
    "slug": "ferrara",
@@ -8478,7 +8455,7 @@
    "wikidata": 5
   },
   {
-   "rank": 366,
+   "rank": 365,
    "city": "Toledo",
    "country": "Spain",
    "slug": "toledo",
@@ -8501,7 +8478,7 @@
    "wikidata": 0
   },
   {
-   "rank": 367,
+   "rank": 366,
    "city": "Regensburg",
    "country": "Germany",
    "slug": "regensburg",
@@ -8524,7 +8501,7 @@
    "wikidata": 1
   },
   {
-   "rank": 368,
+   "rank": 367,
    "city": "Caserta",
    "country": "Italy",
    "slug": "caserta",
@@ -8547,7 +8524,7 @@
    "wikidata": 6
   },
   {
-   "rank": 369,
+   "rank": 368,
    "city": "Bamberg",
    "country": "Germany",
    "slug": "bamberg",
@@ -8579,7 +8556,7 @@
    "score": 0.29,
    "basis": "predicted (travel demand)",
    "work_score": 0.29,
-   "rank": 370,
+   "rank": 369,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -8593,7 +8570,7 @@
    "clicks_10d": 0
   },
   {
-   "rank": 371,
+   "rank": 370,
    "city": "Assisi",
    "country": "Italy",
    "slug": "assisi",
@@ -8616,7 +8593,7 @@
    "wikidata": 0
   },
   {
-   "rank": 372,
+   "rank": 371,
    "city": "George Town",
    "country": "Malaysia",
    "slug": "george-town",
@@ -8648,7 +8625,7 @@
    "score": 0.24,
    "basis": "predicted (travel demand)",
    "work_score": 0.24,
-   "rank": 373,
+   "rank": 372,
    "photos": 0,
    "walks": 0,
    "register": 0,
@@ -8660,6 +8637,29 @@
    "slug": "allentown",
    "impressions_10d": 0,
    "clicks_10d": 0
+  },
+  {
+   "city": "Oss",
+   "country": "Netherlands",
+   "trees": 5,
+   "note": "staged 2026-08-22 from the Dutch LRMB register: candidates are READY in data/leads/ and the write-pass input is in data/research/. Needs only stories.",
+   "status": "published",
+   "photos": 0,
+   "walks": 0,
+   "register": 48,
+   "ready": 4,
+   "supply": 52,
+   "target": 20,
+   "ease": 2.0,
+   "work_score": 0.22,
+   "rank": 373,
+   "impressions_10d": 0,
+   "clicks_10d": 0,
+   "score": 0.11,
+   "basis": "published, never ranked (may be uncrawled)",
+   "wikidata": 0,
+   "travel": 438,
+   "slug": "oss"
   },
   {
    "rank": 374,

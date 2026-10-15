@@ -454,7 +454,7 @@ Thin places kept indexed (17), a destination tree or real impressions: Alishan, 
 | Oklahoma City | United States | 1 | 0 |
 | Palo Alto | United States | 1 | 0 |
 | Princeton, New Jersey | United States | 1 | 0 |
-| Savannah | United States | 3 | 1 |
+| Savannah | United States | 3 | 0 |
 | Simsbury | United States | 1 | 0 |
 | Sunderland, Massachusetts | United States | 1 | 0 |
 | Tillamook | United States | 1 | 0 |

@@ -18,6 +18,20 @@ event on the list is unaffected.
 
 **Today: an account was opened yesterday (28 total).**
 
+**Conclusion: the numbers that matter now** (this week against the week before)
+
+| Number | Why it counts | This week | Week before |
+|---|---|---:|---:|
+| Stood at a tree (app collections) | goal 1, the north star | 4 | 11 |
+| New phones that opened a tree on day one | activation | 10 of 16 (62%) | 5 of 6 (83%) |
+| New phones that tapped Take me there on day one | activation | 1 of 16 (6%) | 1 of 6 (17%) |
+| Phones back within a week | retention | 4 of 6 (67%) | 8 of 15 (53%) |
+| New accounts (strangers) | people collected | 5 | 5 |
+| Readers' trees and photographs live | data collected | 3 | 14 |
+| Arrivals from search, every engine (8 days) | traction | 100 | - |
+
+4 collections at a tree this week against 11 the week before, a handful: read it as a count, not a trend. The weakest link is tapping Take me there on day one (1 of 16): that step is the work, more traffic only pours more people into it.
+
 **Trees readers sent, for you to inspect:** none waiting. Every tree a stranger sent has your answer.
 
 **What readers gave us, and it went live**
@@ -213,7 +227,7 @@ Search Console, the last 10 days Google will give us (its data lags 2-3 days, so
 | 10-12 | 81 | 3 | 3.7% | - | - |
 | **7 days** | **552** | **16** | **2.9%** | **584** | **2380** |
 - Week before: 166 impressions, 11 clicks; in index then: 2106. No Bing demotion in sight.
-- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); husalle lindens copenhagen (c1/i2, p3); ancient trees in wiesbaden germany (c1/i2, p6); oldest live oak trees in new orleans (c1/i2, p6); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); remarkable trees copenhagen (c1/i2, p4); french trees found in paris (c1/i2, p6)
+- Top Bing queries: trees in the plaza dus burgos seville (c1/i3, p5); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1); french trees found in paris (c1/i2, p6); ancient trees in wiesbaden germany (c1/i2, p6); husalle lindens copenhagen (c1/i2, p3); remarkable trees copenhagen (c1/i2, p4); oldest live oak trees in new orleans (c1/i2, p6)
 - Bing alone, from Bing Webmaster Tools; the in-index column is the last day's count. DuckDuckGo and Yahoo draw on the same index and are not in these numbers. Bing's data lags about two days.
 
 **Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
@@ -321,17 +335,17 @@ Audience, 28 days of search (589 clicks, 24263 impressions):
 Web Analytics (beacon, cookieless), people only.
 Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.
 
-| Day | Visits | Pageviews | From Google |
-|---|---:|---:|---:|
-| 10-07 | 70 | 150 | 0 |
-| 10-08 | 10 | 90 | 0 |
-| 10-09 | 60 | 150 | 0 |
-| 10-10 | 40 | 140 | 10 |
-| 10-11 | 30 | 90 | 0 |
-| 10-12 | 20 | 90 | 0 |
-| 10-13 | 20 | 90 | 0 |
-| 10-14 | 10 | 70 | 0 |
-| **window** | **260** | **870** | **10** |
+| Day | Visits | Pageviews | From Google | From Bing | From DuckDuckGo | From Yahoo | From Ecosia |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 10-07 | 70 | 150 | 0 | 0 | 10 | 20 | 0 |
+| 10-08 | 10 | 90 | 0 | 0 | 0 | 10 | 0 |
+| 10-09 | 60 | 150 | 0 | 10 | 10 | 10 | 0 |
+| 10-10 | 40 | 140 | 10 | 0 | 0 | 0 | 0 |
+| 10-11 | 30 | 90 | 0 | 0 | 10 | 0 | 0 |
+| 10-12 | 20 | 90 | 0 | 0 | 0 | 10 | 0 |
+| 10-13 | 20 | 90 | 0 | 0 | 0 | 0 | 0 |
+| 10-14 | 10 | 70 | 0 | 0 | 0 | 0 | 0 |
+| **window** | **260** | **870** | **10** | **10** | **30** | **50** | **0** |
 - Top paths: /leuven (30); /explore (30); / (30); /contribute (30); /perth (20); /logan-ohio (20); /rothenburg-ob-der-tauber/vorbachtal-spruces (20); /de/cologne/moltke-lime-of-the-kahnweiher (20); /palma-de-mallorca/solivera-de-cort (10); /cambridge/newtons-apple-tree (10); /portalegre/plane-tree-of-rossio (10); /es/palma-de-mallorca/ficus-de-la-misericordia (10)
 - Referrers: (direct) (150); ancienttrees.app (610); duckduckgo.com (30); search.yahoo.com (30); bing.com (10); www.google.com (10); de.search.yahoo.com (10); localhost (10); uk.search.yahoo.com (10)
 - Moved between our own pages: 610 of 870 pageviews (70%); the rest arrived from search or straight in. Cookieless means no session, so which page led to which cannot be measured.
@@ -339,7 +353,7 @@ Counts are bucketed to the nearest ten by Cloudflare; read the window, not the d
 - Devices: mobile (530); desktop (340)
 - Page load (8d): p50 1866ms, p90 6806ms
 
-Links: external referrers (a link somebody actually clicked): search.yahoo.com (30); de.search.yahoo.com (10); localhost (10); uk.search.yahoo.com (10)
+Links: external referrers (a link somebody actually clicked): localhost (10)
 AI: arrivals from an assistant that cited us: none yet
 
 Backlinks (watched pages):
@@ -398,7 +412,7 @@ Backlinks (watched pages):
 | 10-15T05:15 | 3.6 | 0 | 5 | 0 | - |
 | **7 runs** | **350** | **32** | **111** | | |
 
-- 2 of 7 produced no trees; 1 to 11 commands refused per run; last build that went live: 1h ago.
+- 2 of 7 produced no trees; 1 to 11 commands refused per run; last build that went live: 0h ago.
 
 **What they made**
 
@@ -491,8 +505,6 @@ Backlinks (watched pages):
 | 10-14 | Dąb Franciszek (the Franciszek Oak) | Żywiec | `photo_apply.py hold zyw_001` |
 
 Machine: 8 chain attempts yesterday, 8 got real work time (~487 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
-
-**Conclusion:** Search is the only channel with real data and it is still small: 0 clicks and 5 impressions on Google's freshest day (day before: c1/i25). Directional at best; no strategic conclusions from these volumes.
 
 ## 2026-10-13 (previous UTC day)
 
