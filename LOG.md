@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, retry window after 05:15: no new trees live
+
+No claims standing. 60 READY leads and the written-but-unmerged entries (lpz_019/021/022/023, lon_029, std_001, nsb_001, ftw_018, slc_006, del_011) are the same thin or access-doubtful rows earlier runs refused under the rich-or-reader rule; no write pass dispatched. Amersfoort English fixes flagged by the translator (FAQ count, raw register fields in ame_015 access) were already corrected. Enrichment says nothing to do anywhere. 0 trees, about 20k tokens.
+
 ## 2026-10-15, window 05:15 UTC: no new trees live
 
 7-day visits: 1210 visits, 1750 page views. No reader submissions or app photographs. health.py: iOS scheduled run still failing (timed out at 1h57m, app work, untouched); Smoke "skipped" on push is by design, deploy is green. Enrichment: the only open gaps (7 trees in London, Chicago, Seattle, Roosendaal, Potsdam) were all season; only the sycamore and sessile oak have a "striking" fruit moment and neither tree is a real fruit-peak case, so no best_time added and the gaps are recorded as dead ends for 90 days (no agent dispatched). Frankfurt (top unwalled DE city) claimed for verify, but passcheck found no imported register within 20 km and from-zero research is off, so no pass; claim released, Frankfurt walled 48h. London claim released with --force (lon_029 is written but preflight-refused as not rich). pagegaps: nothing missing. langcheck: nothing worth translating. scout_next points at Roosendaal, already deepened three times today. Lanes are drained; 0 trees, about 30k tokens.
