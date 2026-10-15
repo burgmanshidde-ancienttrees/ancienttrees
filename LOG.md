@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (sixth attempt, 19:38 window): nothing published; scouted San Antonio
+
+Visits, 7 days: 1610 (2260 page views). No sightings waiting. health.py's "smoke test skipped" is a false alarm: smoke.yml skips data-only pushes, and Build and deploy is green. Enrichment nothing; shelf still only refused or duplicate trees. Scouted San Antonio (#193): no register with coordinates, `stalled` in data/register-scouting.json (Quadrangle Oak at Fort Sam Houston is a lead, base access unclear). 0 trees.
+
 ## 2026-10-15 (fifth attempt, same window): nothing published; scouted Pittsburgh
 
 No claims, 60 READY leads still thin (Dutch street trees; rule refuses them), written trees still refused, so no write pass. Scouted Pittsburgh (#173): the Remarkable Trees of Pittsburgh register exists (about 16 named trees across Mellon, Arsenal, Frick, Highland parks), but its site shows no per-tree data and is All Rights Reserved; marked `stalled` in data/register-scouting.json with next angle. 0 trees.
