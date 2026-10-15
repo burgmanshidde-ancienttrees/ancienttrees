@@ -521,8 +521,15 @@ export function seasonBlock(tree: Tree, lat: number): string {
       marked.push([peakM, kind]);
     }
   }
+  // ONE SEASON, ONE BADGE (Hidde, 2026-10-15, on the Santo Amaro olives: "does
+  // this tree have fruit twice?"). The tree's best_time spans Oct and Nov, its
+  // badge sat on Nov, and the species' fruit moment in Oct drew a second one.
+  // A species moment of the same kind inside the tree's own months is that
+  // same season, so it is not drawn again.
+  const btMonths = hasBt ? bt.months ?? [] : [];
   for (const mo of moments) {
-    if ((mo.word === "striking" || mo.word === "worth the trip") && mo.month !== peakM && mo.month !== null) {
+    const sameSeason = mo.kind === kind && mo.month !== null && btMonths.includes(mo.month);
+    if ((mo.word === "striking" || mo.word === "worth the trip") && mo.month !== peakM && mo.month !== null && !sameSeason) {
       badges.push(badge(mo.month, mo.kind));
       marked.push([mo.month, mo.kind]);
     }
