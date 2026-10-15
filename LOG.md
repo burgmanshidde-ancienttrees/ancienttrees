@@ -17,6 +17,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Rung 2 fixed: the deploy and smoke failures were one cause, the Fort Worth StoryMap list (no licence block) saved in data/registers/. Moved to data/research/fort-worth-heritage-trees-storymap.json (the scouting notes still name the old path). Preflight 0 problems; pushed.
 - Not fixed, needs a session with Xcode: iOS app. (1) testSearchingForATreeMovesTheMapToIt: "search found no Beethoven Plane". (2) appfit DRIFT on collect-intro and collect-away: text 'Photograph a tree you are standing in fro...' starts at x=26 while two other things start at x=20, on all four phone sizes.
 - Scouted Inverness (#214): stalled. Scottish Tree Register is members only, Highland TPO data has no licence. Leads: ancient-yew.org Highland yews, OSM, Wikidata. About 40k tokens. 0 trees.
+- Scouted Innsbruck (#228): imported. Tyrol's Naturdenkmaeler points are CC BY 4.0; data/registers/tirol-naturdenkmaeler.json holds 260 active points (about 198 trees, about 34 around Innsbruck) plus 45 revoked. Names only, no species or girth, pins approximate, none publishable until access is checked. Innsbruck's own Baumkataster not looked at. qa source checks clean. 0 trees.
 - Shelf unchanged: enrich has nothing; 60 READY leads still refused by the richness rule.
 
 ## 2026-10-15 (eighth attempt): nothing published; scouted Tulsa
