@@ -888,7 +888,9 @@ def copy_test_lines():
         out += ["\n".join("- " + l.strip() for l in did), ""]
     if body:
         out += ["```", body, "```"]
-    return out
+    # The standing report waits for Monday (2026-10-15); a day the tick
+    # decided something is news and stays in the day.
+    return out if did else _weekly(out)
 
 
 def learning_lines(pages, pairs=None):
@@ -1116,7 +1118,7 @@ def gsc_section(gsc, under_table=None):
         *(grouped_pages_lines(pages, pairs) if GOOGLE_DETAIL else []),
         *copy_test_lines(),
         *judgement_lines(),
-        *language_lines(pages),
+        *_weekly(language_lines(pages)),
         *zero_click_queries(pages, pairs),
         *leak_lines,
     ]
@@ -1482,7 +1484,7 @@ query($tag: String!, $since: Date!, $until: Date!) {
             % (trend, top, _dim(refs, "refererHost"), nav,
                _dim(countries, "countryName"), _dim(devices, "deviceType"), speed)
             + "\n\n" + referrers_section(refs)
-            + "\n\n" + backlinks_section())
+            + "".join(_weekly([backlinks_section()])))
 
 
 # The engines the Cloudflare table splits arrivals by, name and referrer hosts.
@@ -1643,6 +1645,21 @@ ATTENTION = []
 # fetch them so nothing is asked twice: name -> (this week, week before), the
 # week before None where the source only gives one window.
 HEADLINE = {}
+
+# The tables that do not steer a day (Hidde, 2026-10-15: "move the tables that
+# don't steer anything (copy test, language test, GA sample, ever-totals,
+# backlinks, Bing index) to a Monday-only section"). Blocks put them here; main
+# prints them under one heading on Mondays and drops them on other days.
+WEEKLY = []
+MONDAY = False
+
+
+def _weekly(lines):
+    """Park a block's lines for the Monday section; nothing stays in place."""
+    text = "\n".join(l for l in (lines or []) if l is not None).strip()
+    if text:
+        WEEKLY.append(text)
+    return []
 
 
 def _supa(path, key, timeout=30):
@@ -1826,17 +1843,22 @@ def product_section(today):
             total[n] = total.get(n, 0) + 1
             if str(r.get("created_at"))[:10] >= fortnight:
                 c14[n] = c14.get(n, 0) + 1
-        out += ["", "| Action | Yesterday | 7 days | Ever | Last |",
-                "|---|---:|---:|---:|---|"]
+        # The Ever column lives in the Monday section (2026-10-15); the day
+        # keeps the windows that can move.
+        out += ["", "| Action | Yesterday | 7 days | Last |",
+                "|---|---:|---:|---|"]
+        ever = ["**Website actions, ever** (the events table begins 2026-08-01, when the "
+                "funnel was repaired; a zero has never fired at all)", "",
+                "| Action | Ever |", "|---|---:|"]
         for name in sorted(last, key=lambda k: (-total.get(k, 0), -counts.get(k, 0), k)):
-            out.append("| %s | %d | %d | %d | %s |" % (
-                name, counts.get(name, 0), c14.get(name, 0), total.get(name, 0),
+            out.append("| %s | %d | %d | %s |" % (
+                name, counts.get(name, 0), c14.get(name, 0),
                 _ago(_days_since(last[name], today))))
-        out.append("| **all** | **%d** | **%d** | **%d** | |" % (
-            sum(counts.values()), sum(c14.values()), sum(total.values())))
-        out.append("- 'Ever' counts every row in the events table, which begins "
-                   "2026-08-01 when the funnel was repaired. Anything named here "
-                   "with a zero has never fired at all.")
+            ever.append("| %s | %d |" % (name, total.get(name, 0)))
+        out.append("| **all** | **%d** | **%d** | |" % (
+            sum(counts.values()), sum(c14.values())))
+        ever.append("| **all** | **%d** |" % sum(total.values()))
+        _weekly(ever)
         out += searched_for(rows)
 
     # Sign-ups over time, not just a running total. Hidde, 2026-08-10: he wants
@@ -3057,19 +3079,23 @@ def app_section(today):
     seen = {r[0]: r for r in rows}
     order = [e for e in known] + [e for e in seen if e not in known]
     out.append("")
-    out.append("| What | Yesterday | 7 days | Ever | Last |")
-    out.append("|---|---:|---:|---:|---|")
+    out.append("| What | Yesterday | 7 days | Last |")
+    out.append("|---|---:|---:|---|")
+    ever = ["**App events, ever** (measured since 2026-08-30)", "", "| What | Ever |", "|---|---:|"]
     totals = [0, 0, 0]
     for name in order:
         r = seen.get(name)
         if not r:
-            out.append("| %s | 0 | 0 | 0 | never |" % name)
+            out.append("| %s | 0 | 0 | never |" % name)
+            ever.append("| %s | 0 |" % name)
             continue
         totals = [totals[i] + int(r[i + 1]) for i in range(3)]
-        out.append("| %s | %d | %d | %d | %s |" % (
-            name, int(r[1]), int(r[2]), int(r[3]),
-            _ago(_days_since(str(r[4]), today))))
-    out.append("| **all** | **%d** | **%d** | **%d** | |" % tuple(totals))
+        out.append("| %s | %d | %d | %s |" % (
+            name, int(r[1]), int(r[2]), _ago(_days_since(str(r[4]), today))))
+        ever.append("| %s | %d |" % (name, int(r[3])))
+    out.append("| **all** | **%d** | **%d** | |" % tuple(totals[:2]))
+    ever.append("| **all** | **%d** |" % totals[2])
+    _weekly(ever)
 
     # How many phones those taps came from. The number that decides whether
     # anything above may be read as behaviour at all.
@@ -3308,7 +3334,7 @@ def bing_section(_today=None):
     secret indexnow.yml passes; the first version of this block read a name
     that was never stored and was silent for a day."""
     sys.path.insert(0, os.path.dirname(__file__))
-    from bing_search import fetch, key, lines
+    from bing_search import fetch, index_lines, key, lines
     head = "**What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)"
     if not key():
         return head + "\n\n- Bing Webmaster Tools: BING_API_KEY not set; the Bing table is skipped."
@@ -3318,7 +3344,10 @@ def bing_section(_today=None):
         return head + "\n\n- Bing Webmaster Tools: fetch failed today (%s); numbers resume tomorrow." % str(e)[:90]
     if got is None:
         return head + "\n\n- Bing Webmaster Tools: BING_API_KEY not set; the Bing table is skipped."
-    return head + "\n\n" + "\n".join(lines(*got))
+    # The index columns go to the Monday section (2026-10-15); the demotion
+    # watchdog in lines() still reads them every day.
+    _weekly(index_lines(got[0], got[1]))
+    return head + "\n\n" + "\n".join(lines(*got, index=False))
 
 
 def ga_section(_today=None):
@@ -3658,6 +3687,8 @@ def main():
         return 0
 
     today = datetime.datetime.now(datetime.timezone.utc).date()
+    global MONDAY
+    MONDAY = today.weekday() == 0 or "--monday" in sys.argv
     yday = yesterday_header = "## %s" % (today - datetime.timedelta(days=1)).isoformat()
 
     existing = ""
@@ -3746,7 +3777,10 @@ def main():
     block(audience_section, today, token, today.weekday() != 0)
 
     block(fetch_rum, token, today)
-    block(ga_section, today)
+    try:
+        _weekly([ga_section(today)])
+    except Exception as e:
+        _weekly(["ga_section: failed today (%s)." % str(e)[:90]])
     block(night_shift, today)
     block(night_photos_section, today)
     block(fetch_machine, today)
@@ -3756,6 +3790,10 @@ def main():
         blocks.insert(0, headline_section(today))
     except Exception as e:
         blocks.insert(0, "headline_section: failed today (%s)." % str(e)[:90])
+    # The slow tables, together at the bottom on Mondays, gone on other days.
+    if MONDAY and WEEKLY:
+        blocks.append("**Monday: the slow tables.** They rarely change a day's decision, "
+                      "so they come once a week.\n\n" + "\n\n".join(WEEKLY))
     gsc_text = "\n\n".join(blocks)
 
     # The old one-line conclusion at the bottom (Google's freshest day, "no

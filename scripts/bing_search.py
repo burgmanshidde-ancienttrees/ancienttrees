@@ -177,35 +177,58 @@ def _cell(v):
     return "-" if v is None else "%d" % v
 
 
-def lines(this_week, last_week, queries):
+def lines(this_week, last_week, queries, index=True):
     """Digest-ready markdown: one row per day, totals, the watchdog line when
-    it fires, then top queries and the standing note."""
+    it fires, then top queries and the standing note. index=False leaves the
+    crawl and index columns out (the daily digest prints them on Mondays only,
+    via index_lines); the watchdog still reads them every day."""
     if not this_week:
         return ["- Bing Webmaster Tools: connected, no rows for the window yet."]
-    out = ["| Day | Impressions | Clicks | CTR | Pages crawled | Pages in index |",
-           "|---|---:|---:|---:|---:|---:|"]
+    extra = " Pages crawled | Pages in index |" if index else ""
+    out = ["| Day | Impressions | Clicks | CTR |" + extra,
+           "|---|---:|---:|---:|" + ("---:|---:|" if index else "")]
     for d in this_week:
         imp, clk = d["impressions"] or 0, d["clicks"] or 0
-        out.append("| %s | %s | %s | %.1f%% | %s | %s |" % (
-            d["date"][5:], _cell(d["impressions"]), _cell(d["clicks"]),
-            clk * 100.0 / max(imp, 1), _cell(d["crawled"]), _cell(d["in_index"])))
+        row = "| %s | %s | %s | %.1f%% |" % (
+            d["date"][5:], _cell(d["impressions"]), _cell(d["clicks"]), clk * 100.0 / max(imp, 1))
+        if index:
+            row += " %s | %s |" % (_cell(d["crawled"]), _cell(d["in_index"]))
+        out.append(row)
     ti, tc = _sum(this_week, "impressions"), _sum(this_week, "clicks")
-    out.append("| **%d days** | **%d** | **%d** | **%.1f%%** | **%d** | **%s** |" % (
-        len(this_week), ti, tc, tc * 100.0 / max(ti, 1), _sum(this_week, "crawled"),
-        _cell(_latest(this_week, "in_index"))))
+    total = "| **%d days** | **%d** | **%d** | **%.1f%%** |" % (
+        len(this_week), ti, tc, tc * 100.0 / max(ti, 1))
+    if index:
+        total += " **%d** | **%s** |" % (_sum(this_week, "crawled"),
+                                         _cell(_latest(this_week, "in_index")))
+    out.append(total)
     alarm = watchdog(this_week, last_week)
     if alarm:
         out.append(alarm)
     elif last_week:
-        out.append("- Week before: %d impressions, %d clicks; in index then: %s. No Bing demotion in sight."
+        out.append("- Week before: %d impressions, %d clicks%s. No Bing demotion in sight."
                    % (_sum(last_week, "impressions"), _sum(last_week, "clicks"),
-                      _cell(_latest(last_week, "in_index"))))
+                      "; in index then: %s" % _cell(_latest(last_week, "in_index")) if index else ""))
     if queries:
         out.append("- Top Bing queries: " + "; ".join(
             "%s (c%d/i%d, p%.0f)" % (q["query"], q["clicks"], q["impressions"], q["position"]) for q in queries))
-    out.append("- Bing alone, from Bing Webmaster Tools; the in-index column is the "
-               "last day's count. DuckDuckGo and Yahoo draw on the same index and are "
-               "not in these numbers. Bing's data lags about two days.")
+    out.append("- Bing alone, from Bing Webmaster Tools%s. DuckDuckGo and Yahoo draw on the "
+               "same index and publish no numbers; their arrivals are columns in the "
+               "Cloudflare table. Bing's data lags about two days."
+               % ("; the in-index column is the last day's count" if index else ""))
+    return out
+
+
+def index_lines(this_week, last_week):
+    """Bing's crawl and index, day by day: the Monday half of the Bing block."""
+    rows = [d for d in this_week if d.get("crawled") is not None or d.get("in_index") is not None]
+    if not rows:
+        return []
+    out = ["**Bing's index** (pages crawled and in index, Bing Webmaster Tools)", "",
+           "| Day | Pages crawled | Pages in index |", "|---|---:|---:|"]
+    for d in rows:
+        out.append("| %s | %s | %s |" % (d["date"][5:], _cell(d["crawled"]), _cell(d["in_index"])))
+    if last_week:
+        out.append("- In index the week before: %s." % _cell(_latest(last_week, "in_index")))
     return out
 
 
