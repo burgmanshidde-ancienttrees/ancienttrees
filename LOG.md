@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, session with Hidde: trees on one spot, and the saved pin
+
+- **Live (next deploy), web and app:** trees that share one coordinate are one moss bubble with the count. One tap flies onto the spot and spreads the pins round it, each on a thin line to a dot on the real spot; a pin opens its tree; a tap on the map or your own zoom folds them back. 65 published trees were unreachable under another pin (43 shared coordinates, 108 trees; Hawaii has 6 on one point). Hidde picked this over a list sheet after a mockup of both. Recorded: CONVENTIONS.md, "Two trees on exactly the same spot".
+- **Live:** a saved tree's pin on the web city map wears the bookmark, as the app's already did, not the heart.
+- The Ajuda dragon tree (lis_002) keeps its old pin: Hidde has stood there and says it is right. A move to its photo's geotag was reverted the same day.
+- Not done: /explore and the country maps still cluster identical points into a bubble that never opens past full zoom. Same fix, separate change.
+
 ## 2026-10-15, session with Hidde: the account menu
 
 - **Live (this push):** the desktop bar's Account is a plain word with a small thin chevron, as is Explore (AllTrails' marker; the filled triangle is gone). Its menu is two rows, My trees and Settings, each with its icon; the "Yours" heading is gone. Sign out stays on Settings, on Hidde's word.

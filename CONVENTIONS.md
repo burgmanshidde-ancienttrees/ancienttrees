@@ -1199,9 +1199,18 @@ every zoom; the fixes live beside the clusterer, not in it.
   show as ONE bubble and the rest are only reachable from the list. That is our
   current bug.
 
-**What fits us:** the count-and-list. It uses the sheet we already have (one
-sheet for every overlay), works at 375 px with a thumb, and never draws a pin
-where no tree stands (preflight: "never spread pins apart to fake precision").
+**What we do: zoom in, then spread** (Hidde chose it over the list on
+2026-10-15, after a mockup of both: "I would expect when clicking the 2 bubble
+it would separate"). Our largest pile is 6 trees and most are 2, which is the
+size spiderfy is good at; the list is for piles of twenty. One bubble with the
+count (the cluster bubble each surface already has); one tap flies to zoom 17
+on the spot and the pins spring apart, 36 points out for two side by side, 44
+on a circle for three and more, each on a thin moss leg to a dot on the real
+spot. A spread pin opens its tree like any pin. A tap on the map or a zoom of
+your own folds them back. Never spread for good: two pins drawn apart would
+claim a precision the data does not have. Web: spreadStack() in
+lib/city-map-script.ts. App: MapLayers.stackSpots() and spread() in
+TreeMap.swift.
 
 Read 2026-10-15:
 - https://github.com/Leaflet/Leaflet.markercluster (README, CHANGELOG 1.4.0)
