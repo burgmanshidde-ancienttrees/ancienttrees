@@ -45,8 +45,8 @@
    "taken_at": "2026-09-05T07:12:55+00:00",
    "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/FF725D9A-9950-4F0F-A657-1CF19901C9C0.jpg",
    "nearest_published_m": 141,
-   "status": "held",
-   "why": "LOOKED at 2026-09-08 and held against brn_002 (the Cantonspark Giant Sequoia, distance-matched at 21 m) via sightings_publish.py, not published: the reader's own note says Watercypres (dawn redwood), and the foliage and trunk in the photo are a deciduous conifer, not Sequoiadendron giganteum. Likely brn_001 (the Cantonspark Dawn Redwood, 128 m away) or an unmapped third specimen in this former pinetum. Verdict recorded in data/sightings-processed.json; not a fresh lead.",
+   "status": "matched",
+   "why": "Hidde, 2026-10-15: this is brn_001, the Cantonspark Dawn Redwood, and this GPS fix is its right location; brn_001's pin was moved here. Earlier: LOOKED at 2026-09-08 and held against brn_002 (the Cantonspark Giant Sequoia, distance-matched at 21 m) via sightings_publish.py, not published: the reader's own note says Watercypres (dawn redwood), and the foliage and trunk in the photo are a deciduous conifer, not Sequoiadendron giganteum. Likely brn_001 (the Cantonspark Dawn Redwood, 128 m away) or an unmapped third specimen in this former pinetum. Verdict recorded in data/sightings-processed.json; not a fresh lead.",
    "seen": "2026-09-05"
   },
   {
