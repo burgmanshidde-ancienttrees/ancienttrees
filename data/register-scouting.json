@@ -9,6 +9,18 @@
  },
  "places": [
   {
+   "place": "Glasgow",
+   "country": "United Kingdom",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#150). No Glasgow heritage-tree register with coordinates found. Glasgow City Council publishes its confirmed TPOs as a document list (no coordinates seen). The Improvement Service Scotland-wide TPO layer (spatialhub.scot, OGL) may hold Glasgow points and polygons, not yet checked; TPO is protection, not remarkable-tree status, so a finding aid at most. Named trees to lead-check: Argyle Street ash (UK Tree of the Year 2025), Darnley Sycamore (Heritage Tree, storm damaged by Eowyn), Kelvingrove Park London plane (largest-in-Glasgow claim unverified). Next angle: Ancient Tree Inventory rows for Glasgow, then those three as leads."
+  },
+  {
+   "place": "Santa Fe",
+   "country": "United States",
+   "status": "empty",
+   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#136). One search: no Santa Fe city heritage or champion tree register found. Only the New Mexico Big Tree Program (emnrd.state.nm.us/SFD/bigtreeprogram) applies, the same statewide PDF already noted under Albuquerque (county and location notes, no coordinates). Next angle: Bernalillo and Santa Fe County rows of that PDF in one pass, ask the Santa Fe city urban forester."
+  },
+  {
    "place": "Albuquerque",
    "country": "United States",
    "status": "empty",

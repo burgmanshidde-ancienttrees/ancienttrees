@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 (third attempt, same window): nothing published; scouted Santa Fe and Glasgow
+
+No claims standing; same 60 thin READY leads and refused written trees as before, so no write pass. langcheck table empty, enrichment nothing to do. The two Amersfoort English fixes the translator flagged were already in place. Scouted Santa Fe (#136, `empty`: only the NM Big Tree PDF) and Glasgow (#150, `stalled`: Scotland TPO layer unchecked; Argyle Street ash, Darnley Sycamore and Kelvingrove plane named as leads). Verdicts in data/register-scouting.json. 0 trees.
+
 ## 2026-10-15 (retry, same window): nothing published; scouted Albuquerque
 
 No claims standing. The 60 READY leads and the written-but-unmerged trees (Leipzig 4, Delft, London, Fort Worth, Salt Lake City, tree-of-the-year 2) are the same thin rows preflight refuses under recovery mode, so no write pass. Enrichment: nothing to do anywhere. langcheck table empty. Scouted Albuquerque (#90): no city register; the NM Big Tree Database PDF is the lead (no coordinates), verdict `empty` in data/register-scouting.json. 0 trees, about 30k tokens.
