@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15, session with Hidde: the account menu
+
+- **Live (this push):** the desktop bar's Account is a plain word with a small thin chevron, as is Explore (AllTrails' marker; the filled triangle is gone). Its menu is two rows, My trees and Settings, each with its icon; the "Yours" heading is gone. Sign out stays on Settings, on Hidde's word.
+- Bug fixed: signing in renamed the My trees row to a second "Account" and wiped its leaf, on desktop and in the phone sheet (the nav painter matched every /account link). The smoke test now fails if a row to /account loses its icon once signed in.
+- The phone menu button is Phosphor's list icon instead of a hand-drawn one (iconcheck refused the touched line). Looked up and recorded: CONVENTIONS.md, "The desktop header's dropdown marker".
+
 ## 2026-10-15, session with Hidde: the Montsouris plane gets its reader's age
 
 - **Live (next deploy):** par_034 now gives "about 186 years by a reader's estimate", in the age field and the story, where it had asked readers for an age its own reader had already given.

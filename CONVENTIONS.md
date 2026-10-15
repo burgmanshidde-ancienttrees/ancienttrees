@@ -3439,3 +3439,10 @@ Hidde: "the add photo button feels a bit big and takes up prime space is this ho
 On 2026-10-10 collecting was three ways, after iNaturalist's Observe: camera, your photos, or a record with no media. Hidde reversed the third on 2026-10-14 after testing: "delete the option to collect trees without photos for now, it makes it more special to collect them and forces people to participate and make photos". A strategy call, not a convention: a collection that costs a photograph means more, and every collection gives the map a picture.
 
 What it is now, app and web alike: the collect sheet offers Take a photograph and Choose from your photos; the map's "you are standing in front of" card opens the camera for that tree. Trees collected without a photograph before this day stay collected. "for now": revisit if collecting stalls.
+
+
+## The desktop header's dropdown marker, and the account menu (2026-10-15, looked up)
+
+Hidde asked whether the filled triangle behind Explore and Account is what others use. Looked at on the live sites, 1280 wide: **AllTrails** puts a small thin stroked chevron-down after each dropdown word (Explore, Saved, Shop); **komoot** has no dropdowns in its header at all (Routes, Planner, Features, Updates are plain links, then App and Login or Signup pills). Nobody uses a filled triangle.
+
+What we do: the AllTrails chevron, Phosphor caret-down bold, small and thin, on Explore and Account. The account button is the plain word, no leaf, like its neighbours. Its menu is two rows of one shape (icon, label): My trees, Settings. No group heading (the button already says whose menu it is) and no sign out row (Hidde: sign out lives on Settings).

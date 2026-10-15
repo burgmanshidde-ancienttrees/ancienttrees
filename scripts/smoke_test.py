@@ -432,6 +432,12 @@ f.addEventListener('load', function () {
     out.painterPaints = false; out.painterClears = false;
     try {
       w.atPaintNav(true);  out.painterPaints = d.documentElement.dataset.signedIn === '1';
+      // The painter renames the bar's button only. It once matched every menu
+      // row linking to /account and turned My trees into a second "Account"
+      // with its icon wiped (Hidde's screenshot, 2026-10-15).
+      out.rowsKeptIcons = Array.prototype.every.call(
+        d.querySelectorAll('.nav-drop-menu a[href="/account"]:not(.sheet-signin)'),
+        function (a) { return Boolean(a.querySelector('.mi')); });
       w.atPaintNav(false); out.painterClears = d.documentElement.dataset.signedIn === undefined;
     } catch (e) { out.painterError = String(e); }
     var b = d.querySelector('.save-btn');
@@ -679,6 +685,8 @@ def stale_session_is_refused(chrome, base, page):
                      % (page, (": " + r["painterError"]) if r.get("painterError") else ""))
     elif not r.get("painterClears"):
         fails.append("stale session: window.atPaintNav(false) does not clear html[data-signed-in] (%s)" % page)
+    if r.get("rowsKeptIcons") is False or r.get("rowsKeptIcons") == "false":
+        fails.append("signed in, a menu row to /account lost its icon: the painter must rename the bar's button only (%s)" % page)
     return fails
 
 

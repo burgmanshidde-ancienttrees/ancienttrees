@@ -24,6 +24,9 @@ import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
 // app's tab and leaf, and Settings, the app's gear. It had two rows to one page.
 const LEAF = icon("leaf", "bold", "ic");
 const GEAR = icon("gear-six", "bold", "ic");
+// The dropdown marker is AllTrails' small thin chevron, not a filled triangle
+// (CONVENTIONS.md 2026-10-15, looked up on the live sites).
+const CARET = icon("caret-down", "bold", "nav-caret");
 import AppModal from "../components/AppModal.astro";
 import AppDownloadModal from "../components/AppDownloadModal.astro";
 import ConsentBar from "../components/ConsentBar.astro";
@@ -194,7 +197,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
       </div>
     </details>
     <details class="nav-drop">
-      <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}</span><span class="sum-mobile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span></summary>
+      <summary aria-label={t.menu}><span class="sum-desktop">{t.explore}<Fragment set:html={CARET} /></span><span class="sum-mobile" aria-hidden="true"><Fragment set:html={icon("list", "bold")} /></span></summary>
       <div class="nav-drop-menu">
         {/* Below 800px this panel is a full-screen sheet rather than a
             dropdown, copied from AllTrails' own phone menu (CONVENTIONS.md
@@ -258,9 +261,11 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         the site and the account is where you find your own things. */}
     {AUTH_ENABLED && (
       <details class="nav-drop nav-acct only-desktop">
-        <summary id="bar-login" aria-label={t.savedTrees}><span class="mi acct-leaf" aria-hidden="true"><Fragment set:html={LEAF} /></span><span class="acct-word">{t.savedTrees}</span></summary>
+        {/* A plain word like Map and Explore beside it, no leaf, and no group
+            heading inside: the button already says whose menu this is
+            (Hidde, 2026-10-15, CONVENTIONS.md). */}
+        <summary id="bar-login" aria-label={t.account}><span class="acct-word">{t.account}</span><Fragment set:html={CARET} /></summary>
         <div class="nav-drop-menu">
-          <p class="nav-group">{t.yours}</p>
           <a href="/account"><span class="mi"><Fragment set:html={LEAF} /></span>{t.savedTrees}</a>
           <a href="/account/settings"><span class="mi"><Fragment set:html={GEAR} /></span><span>{t.yourAccount}</span></a>
         </div>
@@ -568,7 +573,10 @@ document.addEventListener('click', function(e) {
 // markup, which is why no check saw it.
 window.atPaintNav = function(inNow) {
   try {
-    document.querySelectorAll('#bar-login, .nav-drop-menu a[href="/account"]').forEach(function(a) {
+    // The bar's button only. This also matched every menu row linking to
+    // /account, so signing in renamed My trees to "Account" and wiped its
+    // leaf with the textContent below (Hidde's screenshot, 2026-10-15).
+    document.querySelectorAll('#bar-login').forEach(function(a) {
       var label = a.querySelector('span:not(.mi)') || a;
       // What the page rendered, kept the first time we touch it, so signing out
       // restores the real word rather than a second guess at it.
