@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-15 19:03 run: own photos held, Manchester scouted (no trees added)
+
+Visits, 7 days: 1590 visits, 2240 page views. Rung 1: looked at the two own app photographs (brn_005, brn_008, both planes in daylight, fine frames) and held both, since own photos are never auto-published and both trees already have approved photos; the Gaien ginkgo avenue (34bc1a6d) stays a lead with its why written (an avenue, not a trunk, no register). Rung 2 clear. Rung 4: ladder sent me to scouting; Manchester recorded as stalled in data/register-scouting.json (no heritage register, only an OGL TPO layer as a finding aid). Shelf had no writable or enrichable work (enrich: nothing; writable pile held by photo/pin rule). No trees published, no pass dispatched. Short window: stopped here.
+
 ## 2026-10-15 session: a wrong pin no longer forces a new tree (app, build 35)
 
 - **Peter's bug (Seville, mail of 15 Oct).** At the real Ombú of La Cartuja the app offered only "new tree" and his pin move failed. Cause: our sev_002 pin is about 1.7 km off (approximate), the collect flow only offers our trees within 400 m of the photo, and the live 1.0.2 has no tree-page shortcut. His "The tree is here" correction never reached Supabase (no row since his 8 Oct Judas tree one), most likely a lapsed sign-in sending anonymously; not reproduced.
