@@ -14,6 +14,7 @@ same preview server shows both: `preview_start {name: "inspect"}`, then open
 http://127.0.0.1:8766/digest.html. See inspect_readers.py's docstring for the
 server (four lines; /private/tmp can be cleared on a reboot).
 """
+import datetime
 import html
 import os
 import re
@@ -106,6 +107,13 @@ def main():
         except OSError as e:
             print("could not write %s (%s)" % (folder, e))
     print("digest %s: out/digest/index.html; preview: http://127.0.0.1:8766/digest.html" % day)
+    # Hidde, 2026-10-15, after being shown the 13th on the 15th: when he asks
+    # in the morning, yesterday's digest is made first, not shown stale.
+    yesterday = (datetime.datetime.now(datetime.timezone.utc).date()
+                 - datetime.timedelta(days=1)).isoformat()
+    if day < yesterday:
+        print("STALE: the newest entry is %s, not %s. Run `gh workflow run data-digest.yml --ref main`,"
+              " watch it, git pull, then run this again before showing him the link." % (day, yesterday))
     # The lines for chat: the headline and the trees waiting for him.
     for line in md.splitlines():
         if line.startswith("**Today:") or line.startswith("**Trees readers sent"):
