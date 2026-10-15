@@ -1475,6 +1475,19 @@ footer { border-top: 1px solid var(--cream-dark); }
 /* The bookmark (2026-10-15), red as the app's TreeMap draws it. The colour is
    set on the svg itself for the same reason as the ticket's below. */
 .pin-tree .pin-fav svg.pin-fav-ic { width: 9px; height: 9px; fill: #D93340; color: #D93340; }
+/* TREES ON ONE SPOT (2026-10-15): one bubble, the explore map's cluster drawn
+   as an element (CLUSTER_RADIUS 13 plus its 2px ring), until a tap spreads the
+   pins round a dot on the real spot. city-map-script.ts, spreadStack(). */
+.pin-tree.pin-stacked, .pin-stack.pin-stacked { display: none; }
+.pin-stack { width: 30px; height: 30px; padding: 0; border-radius: 50%; border: 2px solid #F6F2E9;
+  background: var(--moss); color: #F6F2E9; font: 600 12px/1 var(--sans); cursor: pointer;
+  box-shadow: 0 3px 10px rgba(26,26,20,0.28); }
+.pin-stack:hover { transform: scale(1.12); }
+.stack-legs-host { width: 0; height: 0; pointer-events: none; }
+.stack-leg { position: absolute; left: 0; top: -0.75px; height: 1.5px; background: var(--moss);
+  transform-origin: 0 50%; }
+.stack-dot { position: absolute; left: -3.5px; top: -3.5px; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--moss); }
 .pin-ticket { position: absolute; bottom: -3px; left: -3px; width: 15px; height: 15px;
   border-radius: 50%; background: var(--cream); box-shadow: 0 1px 3px rgba(26,26,20,0.3);
   display: flex; align-items: center; justify-content: center; color: #2E6BA8; }

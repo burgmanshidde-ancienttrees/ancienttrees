@@ -24,6 +24,7 @@ import { mapScript, CLUSTER_RADIUS } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
+import { ui } from "./i18n";
 
 // The saved-tree corner of a pin: the cards' own bookmark, filled.
 const PIN_BOOKMARK = icon("bookmark-simple", "fill", "pin-fav-ic");
@@ -89,9 +90,23 @@ export function cityMapScript(
   /** The city's own trees, without its day trips (lib/day-trips.ts). The
    *  opening frame is drawn round these, so Copenhagen opens on Copenhagen
    *  and not on Dyrehaven as well (Hidde, 2026-10-06). */
-  inTown?: { lat: number; lng: number }[]
+  inTown?: { lat: number; lng: number }[],
+  lang = "en"
 ): string {
   const data = JSON.stringify(markers);
+  // TREES ON ONE SPOT (Hidde, 2026-10-15, the Ajuda dragon tree hidden under
+  // the jacarandas' pin). Grouped here at build time by coordinate to about a
+  // metre, which is the case zooming can never pull apart. CONVENTIONS.md,
+  // "Two trees on exactly the same spot".
+  const bySpot = new Map<string, number[]>();
+  markers.forEach((m, i) => {
+    const k = m.lat.toFixed(5) + "," + m.lng.toFixed(5);
+    bySpot.set(k, [...(bySpot.get(k) ?? []), i]);
+  });
+  const stacksJson = JSON.stringify(
+    [...bySpot.values()].filter((ix) => ix.length > 1)
+      .map((ix) => ({ ix, label: ui(lang).homeTreesCount(ix.length) }))
+  );
   const routeCoords = JSON.stringify(route && markers.length > 1 ? route.order.map((i) => [markers[i].lng, markers[i].lat]) : []);
   const walksJson = JSON.stringify(
     walks.map((w) => ({
@@ -201,6 +216,9 @@ function updatePinsFar() {
   if (!pins) { return; }
   var far = OTHER_CITIES.features.length > 0 && map.getZoom() < FAR;
   for (var i = 0; i < pins.length; i++) { pins[i].style.visibility = far ? 'hidden' : ''; }
+  document.querySelectorAll('.pin-stack, .stack-legs-host').forEach(function(el) {
+    el.style.visibility = far ? 'hidden' : '';
+  });
 }
 map.on('zoom', updatePinsFar);
 var CHOOSER_CITIES = ${chooserCitiesJson};
@@ -264,6 +282,7 @@ if (markers.length > 1) {
 map.on('moveend', updatePanelMode);
 
 var pins = [];
+var pinMarkers = [];
 var activeIdx = -1;
 
 function setActive(idx, fly, scroll) {
@@ -281,6 +300,8 @@ function setActive(idx, fly, scroll) {
   }
   activeIdx = idx;
   var m = markers[idx];
+  // A tree that shares its spot comes out of the pile to be lit.
+  if (stackOf[idx]) { spreadStack(stackOf[idx]); }
   pins[idx].classList.add('active');
   var card = document.getElementById('tree-' + (idx + 1));
   card.classList.add('active');
@@ -374,10 +395,80 @@ markers.forEach(function(m, idx) {
     var a = card && card.querySelector('.tree-name a');
     if (a) { window.location.href = a.href; } else { setActive(idx, true, true); }
   });
-  new maplibregl.Marker({ element: el }).setLngLat([m.lng, m.lat]).addTo(map);
+  pinMarkers.push(new maplibregl.Marker({ element: el }).setLngLat([m.lng, m.lat]).addTo(map));
   pins.push(el);
   bounds.extend([m.lng, m.lat]);
 });
+
+// TREES ON ONE SPOT: ZOOM IN, THEN SPREAD (Hidde, 2026-10-15, choosing this
+// over a list). Leaflet.markercluster's spiderfy: the pile is one bubble with
+// a count, one tap flies onto the spot and the pins spring apart around it,
+// each on a thin leg back to the dot where the trees really stand. A spread
+// pin opens its tree like any other. Nothing moves for good: a tap on the map
+// or a zoom of your own folds them back, because two trees drawn apart would
+// claim a precision the data does not have.
+var STACKS = ${stacksJson};
+var stackOf = {};
+var openStack = null;
+var stackTapAt = 0;
+STACKS.forEach(function(s) {
+  var m = markers[s.ix[0]];
+  s.ix.forEach(function(i) { stackOf[i] = s; pins[i].classList.add('pin-stacked'); });
+  var b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'pin-stack';
+  b.textContent = s.ix.length;
+  b.setAttribute('aria-label', s.label);
+  b.addEventListener('click', function(e) {
+    e.stopPropagation();
+    stackTapAt = Date.now();
+    if (map.getZoom() >= 16.5) { spreadStack(s); return; }
+    map.easeTo({ center: [m.lng, m.lat], zoom: 17, duration: 900 });
+    setTimeout(function() { spreadStack(s); }, 950);
+  });
+  s.bubble = b;
+  new maplibregl.Marker({ element: b }).setLngLat([m.lng, m.lat]).addTo(map);
+});
+function spreadStack(s) {
+  if (openStack === s) { return; }
+  foldStack();
+  var n = s.ix.length, R = n <= 2 ? 36 : 44, m = markers[s.ix[0]];
+  // Two side by side; more on a circle starting at the top. Each leg is a
+  // plain rotated line that stops at the pin's edge (17 is half a pin), so it
+  // never crosses the drawing; the dot is the spot itself.
+  var legs = document.createElement('div');
+  legs.className = 'stack-legs-host';
+  var html = '<i class="stack-dot"></i>';
+  s.ix.forEach(function(i, k) {
+    var a = n === 2 ? Math.PI * k : -Math.PI / 2 + k * 2 * Math.PI / n;
+    var dx = Math.round(R * Math.cos(a)), dy = Math.round(R * Math.sin(a));
+    html += '<i class="stack-leg" style="width:' + (R - 17) + 'px;transform:rotate(' + (a * 180 / Math.PI) + 'deg)"></i>';
+    pinMarkers[i].setOffset([dx, dy]);
+    pins[i].classList.remove('pin-stacked');
+  });
+  legs.innerHTML = html;
+  s.legs = new maplibregl.Marker({ element: legs }).setLngLat([m.lng, m.lat]).addTo(map);
+  s.bubble.classList.add('pin-stacked');
+  openStack = s;
+}
+function foldStack() {
+  var s = openStack;
+  if (!s) { return; }
+  s.ix.forEach(function(i) { pinMarkers[i].setOffset([0, 0]); pins[i].classList.add('pin-stacked'); });
+  s.legs.remove();
+  s.bubble.classList.remove('pin-stacked');
+  openStack = null;
+}
+// The bubble's own tap also reaches the map as a click; that one is not a
+// request to fold what it is about to spread.
+map.on('click', function() { if (Date.now() - stackTapAt > 400) { foldStack(); } });
+map.on('zoomstart', function(e) { if (e.originalEvent) { foldStack(); } });
+// A walk that dims trees dims a bubble whose trees are all dimmed.
+function paintStacks() {
+  STACKS.forEach(function(s) {
+    s.bubble.classList.toggle('pin-off', s.ix.every(function(i) { return pins[i].classList.contains('pin-off'); }));
+  });
+}
 if (markers.length > 1) { map.fitBounds(HOME, { padding: 70, maxZoom: 13 }); }
 updatePinsFar();
 
@@ -498,6 +589,7 @@ function selectWalk(idx) {
   var on = {};
   w.members.forEach(function(i) { on[i] = true; });
   pins.forEach(function(el, i) { el.classList.toggle('pin-off', !on[i]); });
+  paintStacks();
   document.querySelectorAll('.tree-card').forEach(function(card, i) {
     card.classList.toggle('card-off', !on[i]);
   });
@@ -517,6 +609,7 @@ function showWholeCity() {
   setAllWalksFilter(-1);
   drawWalk([]);
   pins.forEach(function(el) { el.classList.remove('pin-off'); });
+  paintStacks();
   document.querySelectorAll('.tree-card').forEach(function(card) {
     card.classList.remove('card-off');
   });
