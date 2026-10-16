@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 fifteenth attempt (21:25 window, 7-day visits: 2073 visits, 2892 page views): nothing shipped
+
+- Sightings inbox empty, health.py clear. Enrich, langcheck (no city over 10 impressions) and the 60 READY leads unchanged (blocked by the rich-page rule), so no pass was dispatched. Scouting: Chattanooga retried; the city's notable-trees page now 404s, no list or licence, so it stays stalled (`retried` set). Unlock: a Tree Commission ask, Hidde's to send.
+
 ## 2026-10-16 thirteenth attempt: nothing shipped
 
 - No claims standing. The 60 READY leads are still blocked by the rich-page rule, and enrich has nothing to do, so no pass was dispatched. Scouting: Reno retried. forestry.nv.gov shows no newer big-tree list and no licence, so it stays stalled (`retried` set). The unlock is a licence ask to the Nevada Division of Forestry, Hidde's to send.
