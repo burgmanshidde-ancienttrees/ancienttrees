@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 05:02 run: nothing published; scouted Buffalo
+
+- 0 trees. Visits, 7 days: 1651 visits, 2404 page views. No reader photographs waiting. Deploy green (smoke "skipped" is just log-only pushes). The scheduled iOS run failed on `testSearchingForATreeMovesTheMapToIt`, the known iOS 18 runner flake from 2026-09-09; the fix is drafts/ios-floor-retry.patch and needs `workflows` permission this bot lacks (FOR HIDDE). Enrich empty, staged cities walled, written files still refused. Buffalo (#375): only a street-tree inventory and the Olmsted park inventory, no heritage register; `stalled` in data/register-scouting.json. Untried: NY DEC Big Tree Register, Forest Lawn Cemetery.
+
 ## 2026-10-16 (another retry): nothing published; scouted Allentown
 
 - 0 trees. No claims; 60 READY and written-but-unmerged files still refused by rich-or-reader; langcheck has nothing to translate. Allentown (#372): no city register, only the PA Forestry Association statewide champion list (untried: PAbigtrees.com Lehigh County); `stalled` in data/register-scouting.json.
