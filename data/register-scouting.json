@@ -339,7 +339,7 @@
       "place": "Hallstatt",
       "country": "Austria",
       "status": "stalled",
-      "note": "2026-10-16: no tree-level Naturdenkmal list with coordinates for Hallstatt in web search (Land OOe publishes a 1989 printed booklet, Unsere Naturdenkmale, and a 2011 biotope report, neither with coordinates). The Upper Austria CC BY natural-monument dataset noted under Steiermark (data.europa.eu) is the route, untried: fetch it and check for points inside Hallstatt.",
+      "note": "2026-10-16: no tree-level Naturdenkmal list with coordinates for Hallstatt in web search (Land OOe publishes a 1989 printed booklet, Unsere Naturdenkmale, and a 2011 biotope report, neither with coordinates). The Upper Austria CC BY natural-monument dataset noted under Steiermark (data.europa.eu) is the route (confirmed to exist 2026-10-16 as data.europa.eu dataset land-ooe_naturdenkmaler-oberosterreich, High Value Dataset; not yet downloaded): fetch it and check for points inside Hallstatt.",
       "covers": [
         "Hallstatt"
       ]
