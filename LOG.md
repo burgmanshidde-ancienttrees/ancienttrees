@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 session: Cardiff's Wallenberg tree has a species
+
+A Cardiff parks officer mailed Hidde that the Raoul Wallenberg tree in Alexandra Gardens (crd_001) is Ailanthus altissima. The page had asked readers for exactly that. Species is now Tree of Heaven, the story's "nobody has recorded which species" paragraph is rewritten, and the recognition line names the leaves. Logged in verify_notes; no name on the site. Reply drafted in drafts/reply-cardiff-wallenberg.md for Hidde to send.
+
 ## 2026-10-16 session: the app's crash reports now reach a person
 
 - **What changed:** the app's MetricKit crashes (Supabase `diagnostics`) are read every day now. Until today nothing read that table, which is why one reader's 1.0.2 crashed 37 times from 10-13 to 10-16 before his mail told us.
