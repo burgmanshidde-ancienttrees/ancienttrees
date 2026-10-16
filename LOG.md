@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 retry in the same window
+
+- Nothing shipped. No claims standing. `leads.py --ready` lists 60 but recovery mode's rich-page rule blocks new trees. I trial-merged the 11 "written and ready" research entries (delft, leipzig x4, london, fort-worth, salt-lake-city) and preflight refused each. Delft del_011 is a removed tree on the redirect list and sits within 5 m of a dead register ash. The others lack a pin, register record, measurement or access, and fort-worth's story is 83 words. All reverted, nothing committed. The roster only moves if someone enriches these (pin or register) first.
+- Also open: `enrich.py --next` and `photo_gaps.py --shortlist` are empty. Birmingham and Monterey scouting are stalled on unreadable PDFs. 30 photographs still sit off our domain (`vendor_photos.py`, daily photos.yml).
+
 ## 2026-10-16 night run 14:17 UTC (7-day visits: 1810 visits, 2420 page views)
 
 - **App**: the scheduled iOS run failed only on the sweep's drift check (Add a tree sheet: the one line started at x=26, other things at x=20). The text now spans the sheet's width (CollectIntro.swift); the next iOS run proves it. Floor tests were 224 passed.
