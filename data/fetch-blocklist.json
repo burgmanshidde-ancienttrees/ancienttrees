@@ -8,6 +8,12 @@
       "cost": "a failed fetch",
       "workaround": "Search summaries only; try a web.archive.org copy."
     },
+    "dffm.az.gov": {
+      "behaviour": "returns HTTP 403 to WebFetch and to curl with a browser user agent; refuses fast, does not hang.",
+      "seen": "2026-10-16",
+      "cost": "a failed fetch",
+      "workaround": "Search summaries only; try a web.archive.org copy of the Magnificent Trees annual report PDFs."
+    },
     "crfop.gdos.gov.pl": {
       "behaviour": "returns HTTP 403 to curl and WebFetch (Polish Central Register of Nature Monuments records); refuses fast, does not hang.",
       "seen": "2026-10-14",

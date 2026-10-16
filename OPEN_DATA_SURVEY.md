@@ -3819,3 +3819,12 @@ Not scouted this pass, noted for a later one: Kapiti Coast heritage trees
 parties", so blocked), and the Taupo (CC BY 4.0), Hastings, Rangitikei,
 Waimakariri and Far North notable-tree layers the search surfaced, none of them
 near a ranked city.
+
+**Phoenix / Arizona: STALLED (2026-10-16).**
+Arizona's Magnificent Trees (Dept of Forestry and Fire Management, 227 trees in
+the 2023 report) is the only designated register; it is published as annual
+report PDFs on dffm.az.gov, which refuses automated fetches (403), so no
+coordinates and no licence sentence could be read. No proving sentence, so
+nothing imported. Tempe's tree inventory is CC BY 4.0 point data but is a full
+street-tree inventory, which layer 2 does not take. No Phoenix or Scottsdale
+heritage-tree dataset found.

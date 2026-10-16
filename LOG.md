@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 (retry window): nothing published; scouted Phoenix
+
+- No product change, 0 trees published. No claims standing; enrich queue empty; the 60 READY leads are mostly thin Dutch rows, which recovery mode (rich-only new trees) blocks.
+- Munich refused (full, 63 of 60). Nuremberg claimed then released: 3 of 14 leads carry a coordinate; walled 48h.
+- Phoenix scouted, stalled: Arizona's Magnificent Trees list is PDF-only, no coordinates or licence readable, dffm.az.gov returns 403 (now in the fetch blocklist). Next angle: a web.archive.org copy of the 2023 report.
+
 ## 2026-10-16 (02:45 window): nothing published; scouted Hallstatt
 
 7-day visits: 1605 visits, 2353 page views. No reader photographs waiting, enrich says nothing to do. The written leftovers (delft, fort-worth, leipzig, london, salt-lake-city, tree-of-the-year) have no photo or confirmed pin, so I did not merge them. Scouted Hallstatt: no tree-level register with coordinates; the Upper Austria CC BY dataset is the untried route (verdict in data/register-scouting.json). The scheduled iOS run failed on one UI test, testSearchingForATreeMovesTheMapToIt ("search found no Beethoven Plane", 223 passed); it needs a macOS session. The Smoke test shows "skipped" on push runs only.

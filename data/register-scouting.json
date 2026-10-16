@@ -9,6 +9,12 @@
   },
   "places": [
     {
+      "place": "Phoenix",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-16. The only designated-remarkable register is Arizona's Magnificent Trees (Dept of Forestry and Fire Management; 227 trees in the 2023 report: 143 Champions plus 84 Heritage/Witness; contact ucf@dffm.az.gov), published as annual report PDFs, no coordinates seen and no licence statement; dffm.az.gov returns 403 to every automated fetch (now in fetch-blocklist.json), so the PDFs could not be read. Tempe publishes a full street-tree inventory (CC BY 4.0, point data) but that is an inventory, not a designated-remarkable list, so not imported. No Phoenix or Scottsdale heritage-tree dataset found on ArcGIS search or open-data catalogues. Next angle: web.archive.org copy of the 2023 report to read locations and licence; American Forests national champions in Arizona as a finding aid; Phoenix Historic Preservation / Encanto-Palmcroft and Heritage Square old trees by hand as leads."
+    },
+    {
       "place": "Brighton",
       "country": "United Kingdom",
       "status": "stalled",
