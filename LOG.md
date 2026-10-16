@@ -25,6 +25,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 ## 2026-10-16 fourteenth attempt: nothing shipped
 
+- Seventeenth attempt, 0 trees. No claims standing. Re-checked: the 11 written-but-unmerged trees and the 60 READY leads are still blocked by the rich-page rule (see earlier entries), so no write pass dispatched. Backup lane: Cincinnati retried; Spring Grove's champions page has no coordinates or licence, stays `stalled` (`retried` set). Unlock: ask Spring Grove or ODNR.
 - No claims standing. The 60 READY leads are still refused by the rich-page rule; enrich says nothing to do. Backup lane: Des Moines retried. The Iowa DNR Big Tree service still has an empty copyright/licence field, so it stays stalled (`retried` set). Unlock: a licence ask to Iowa DNR Forestry, Hidde's to send.
 
 ## 2026-10-16 sixteenth attempt: nothing shipped

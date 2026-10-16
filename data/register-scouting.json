@@ -228,7 +228,8 @@
    "place": "Cincinnati",
    "country": "United States",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-04 on scout_next.py --target (#97). One web search finds no city heritage-tree register with coordinates. Leads: Spring Grove Cemetery's Champions of the Grove list (September Elm national champion, Cilician Fir state champion; springgrove.org/arboretum/champions-of-the-grove, a cemetery arboretum, access and licence unchecked) and ODNR's Ohio Champion Trees list (no coordinates known). Next angle: the ODNR champion list as a finding aid, and Cincinnati Parks' own tree pages."
+   "note": "SCOUTED 2026-10-04 on scout_next.py --target (#97). One web search finds no city heritage-tree register with coordinates. Leads: Spring Grove Cemetery's Champions of the Grove list (September Elm national champion, Cilician Fir state champion; springgrove.org/arboretum/champions-of-the-grove, a cemetery arboretum, access and licence unchecked) and ODNR's Ohio Champion Trees list (no coordinates known). Next angle: the ODNR champion list as a finding aid, and Cincinnati Parks' own tree pages. RETRIED 2026-10-16: Spring Grove champions page loads (200) but is a copyrighted cemetery marketing list with no coordinates or licence sentence; nothing saved. Next angle only: ask Spring Grove or ODNR.",
+   "retried": "2026-10-16"
   },
   {
    "place": "Tampa",
