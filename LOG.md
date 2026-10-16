@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 night run (third attempt): nothing shipped
+
+No claims stood. 0 trees, nothing changed in the product. The READY leads and the written-but-unmerged trees fail the rich-or-reader rule (see the entries below), so no write pass was dispatched; `enrich.py --next` says nothing to do. health.py: the scheduled iOS run on 10-15 failed after 1h35 (timed out; the push runs since are cancelled or still going), smoke is skipped, and the migration for profiles.country is not pasted (Hidde's to apply). Birmingham retry: the Alabama champion list is still a PDF with no stated licence and pypdf is not installed, so it stays stalled. Next: roster photo hunts need a new angle, not another sweep.
+
 ## 2026-10-16 night run (retry): nothing shipped, Memphis scouted
 
 No claims stood. Nothing in the product changed; 0 trees. The 60 READY leads are mostly Roosendaal and other Dutch street trees, and the ten written-but-unmerged trees (Delft, Fort Worth, Leipzig, London, Salt Lake City, tree-of-the-year, Czech/Brazil) were already refused by preflight on two earlier runs for richness, so I did not retry. Scouted Memphis (#378): no register with tree-level coordinates, only a statewide Tennessee registry and champion list, plus Elmwood Cemetery's arboretum and Memphis Botanic Garden as sites. Recorded `empty` in data/register-scouting.json. Still open: vie_059, spk_015 and kyw_001 need stories but would likely fail the richness rule.
