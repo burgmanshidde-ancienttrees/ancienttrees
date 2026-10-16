@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 night run (retry): nothing shipped, Memphis scouted
+
+No claims stood. Nothing in the product changed; 0 trees. The 60 READY leads are mostly Roosendaal and other Dutch street trees, and the ten written-but-unmerged trees (Delft, Fort Worth, Leipzig, London, Salt Lake City, tree-of-the-year, Czech/Brazil) were already refused by preflight on two earlier runs for richness, so I did not retry. Scouted Memphis (#378): no register with tree-level coordinates, only a statewide Tennessee registry and champion list, plus Elmwood Cemetery's arboretum and Memphis Botanic Garden as sites. Recorded `empty` in data/register-scouting.json. Still open: vie_059, spk_015 and kyw_001 need stories but would likely fail the richness rule.
+
 ## 2026-10-16 night run (08:41 window): photos on roster pages
 
 - Visits last 7 days: 1793. Rung 1 empty. Rung 2: iOS scheduled run still red (its newest push run in progress; needs a macOS look), and **profiles.country migration still unpasted (Hidde: supabase/PENDING.sql)**.
