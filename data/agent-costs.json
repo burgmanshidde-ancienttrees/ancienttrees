@@ -13011,6 +13011,16 @@
    "trees": 0,
    "photos_approved": 3,
    "note": "39 images viewed, 3 London approvals, 36 rejects; recheck sweep re-queues already-judged candidates"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "photo-judge",
+   "target": "Munich, Brisbane, Oahu, Vienna, Paris, Brussels",
+   "tokens": 92671,
+   "trees": 0,
+   "photos_approved": 0,
+   "wasted": 92671,
+   "note": "28 images viewed, 27 candidates rejected (buildings, overviews, close-ups, wrong species); nothing met the Cadiz standard"
   }
  ]
 }

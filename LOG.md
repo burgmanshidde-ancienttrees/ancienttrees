@@ -16,7 +16,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Visits last 7 days: 1793. Rung 1 empty. Rung 2: iOS scheduled run still red (its newest push run in progress; needs a macOS look), and **profiles.country migration still unpasted (Hidde: supabase/PENDING.sql)**.
 - Photo lane: London re-sweep plus one photo-judge pass (39 images): **3 live** (lon_025 Battersea strawberry tree, lon_028 Carshalton Plane, lon_030 Gunnersbury mulberry); 36 rejected. lon_028 shows trunk and limbs, not the whole crown; reverse with `python3 scripts/photo_apply.py hold lon_028`. Not judged: iNaturalist candidates for lon_025, Munich, Brisbane, Oahu, Dublin, Paris, Brussels.
 - Bug seen: `photo_hunt.py --recheck` re-queues candidates already judged (Seville, Palermo, Amsterdam), so judges pay twice. Also `photo_hunt.py --help` runs a real sweep instead of printing help.
-- Tokens: photo-judge 148k.
+- Second pass on the remaining roster candidates (Munich, Brisbane, Oahu, Vienna, Paris, Brussels): 28 images, **0 approved**, all 27 candidates rejected and recorded in the queue (buildings, close-ups, wrong species; vie_041's file is Naturdenkmal 620, ours is 457). The roster's open-licence photo candidates are now used up; the lane needs new sources, not more judging.
+- Tokens: photo-judge 148k + 93k (second one wasted).
 
 ## 2026-10-16 session with Hidde: recovery reprioritised, early-adopter tag and flag, 23 photos
 
