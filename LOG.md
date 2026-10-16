@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 twenty-first attempt: nothing shipped
+
+- No claims standing. 60 READY leads, still blocked by the rich-page rule (recovery mode), so no write pass was dispatched. Nothing changed since the twentieth attempt.
+
 ## 2026-10-16 twentieth attempt: nothing shipped
 
 - No claims standing. 60 READY leads still blocked by the rich-page rule (recovery mode), so no write pass was dispatched. Nothing new since the nineteenth attempt.
