@@ -83,6 +83,7 @@ struct CollectIntro: View {
                 .font(.system(size: 15))
                 .foregroundStyle(Brand.inkSoft)
                 .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity)
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.top, 8)
                 .padding(.bottom, 22)
