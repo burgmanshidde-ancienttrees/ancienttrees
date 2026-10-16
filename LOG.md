@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 sixth attempt: nothing shipped
+
+- Resolved a LOG.md rebase conflict and pushed. No claims standing. `leads.py --ready` lists 60 (roosendaal 22, munich 5, delft 5 and others), but the rich-page rule still blocks new trees and the 11 research entries were already trial-merged and refused earlier today. No write pass dispatched, since it would only produce refusals.
+
 ## 2026-10-16 retry in the same window
 
 - Nothing shipped. No claims standing. `leads.py --ready` lists 60 but recovery mode's rich-page rule blocks new trees. I trial-merged the 11 "written and ready" research entries (delft, leipzig x4, london, fort-worth, salt-lake-city) and preflight refused each. Delft del_011 is a removed tree on the redirect list and sits within 5 m of a dead register ash. The others lack a pin, register record, measurement or access, and fort-worth's story is 83 words. All reverted, nothing committed. The roster only moves if someone enriches these (pin or register) first.
