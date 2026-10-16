@@ -234,7 +234,8 @@
    "place": "Tampa",
    "country": "United States",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-04 on scout_next.py --target (#91). The city runs a Heritage Tree designation (native species, 36 in DBH or more) and a Grand Tree list (32 in or more) with a heritage tree map, but a web search finds no downloadable list with coordinates. Next angle: the City of Tampa ArcGIS open-data hub for a Heritage/Grand Tree layer, and the Florida Champion Trees register (FDACS) for Hillsborough County. Not yet tried."
+   "note": "SCOUTED 2026-10-04 on scout_next.py --target (#91). The city runs a Heritage Tree designation (native species, 36 in DBH or more) and a Grand Tree list (32 in or more) with a heritage tree map, but a web search finds no downloadable list with coordinates. RETRIED 2026-10-16: hub.arcgis.com and arcgis.com searches for Tampa heritage/grand/champion tree return only canopy-cover rasters (USF Water Institute, licence none) and other cities' heritage layers; no City of Tampa Heritage/Grand Tree layer is published. FDACS Champion Tree Lists page is a JS shell with no downloadable list or licence statement reachable by curl (champion lists are state-wide nominations, no coordinates). No list with coordinates and no commercial-reuse licence sentence, so nothing saved. Next angle only if wanted: ask the City of Tampa Urban Forestry for the Heritage/Grand Tree list (draft for Hidde), or the Hillsborough County Tree Registry.",
+   "retried": "2026-10-16"
   },
   {
    "place": "Chattanooga",

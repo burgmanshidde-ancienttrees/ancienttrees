@@ -27,6 +27,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - No claims standing. The 60 READY leads are still refused by the rich-page rule; enrich says nothing to do. Backup lane: Des Moines retried. The Iowa DNR Big Tree service still has an empty copyright/licence field, so it stays stalled (`retried` set). Unlock: a licence ask to Iowa DNR Forestry, Hidde's to send.
 
+## 2026-10-16 sixteenth attempt: nothing shipped
+
+- No claims standing. The 60 READY leads (thin Dutch street trees) are still blocked by the rich-page rule, so no write pass. Backup lane: Tampa retried; no Heritage/Grand Tree layer on the open-data hub, FDACS champion list has no coordinates or licence. Stays stalled (`retried` set). Next step is an Urban Forestry request, Hidde's to send.
+
 ## 2026-10-16 eleventh attempt: nothing shipped
 
 - No claims standing. Tried merging the 9 written-but-unmerged trees (london lon_029, delft del_011, fort-worth ftw_018, leipzig lpz_019/021/022/023, salt-lake-city slc_006); preflight refused all of them (not rich: pin/register/access missing; ftw_018 story is 83 words; del_011 sits on a register-dead ash and its slug is a removed-tree redirect; Leipzig also needs German overlays). Reverted. lon_029 is the closest: needs only a confirmed pin. `photo_hunt --recheck --city london`: 0 new candidates for 7 trees.
