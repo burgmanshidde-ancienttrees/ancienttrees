@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 session: the app 1.0.2 "crashes on WiFi" (a reader's mail)
+
+- **Cause, from our own MetricKit rows** (`diagnostics` table, three crashes at 08:18 UTC, the minute he wrote): build 20 (1.0.2) traps in `MyVotes.load` at launch. `treeId` took `[0]` of an empty split, and his general feedback of 13 Oct ("Location not working on iOS") has no tree. Every launch that reached Supabase crashed; on mobile data the request likely never got through, which is the whole WiFi difference. Same bug that crashed Hidde's phone on 10-11, fixed in 3c841e501, and confirmed inside build 34's binary (WorthIt.swift:89, the `.first` form).
+- **Fixed today on the data side:** the four feedback rows with `tree = ''` now hold NULL, which 1.0.2 skips (`as? String` fails, the loop continues). Our scripts already read both as "-". No code change.
+- **Still open:** any new general feedback from a 1.0.2 phone writes `''` again and crashes that sender until 1.0.3 is out. Re-run the same PATCH (`submissions?kind=eq.feedback&tree=eq.` set to null) if a crash shows up in `diagnostics` before then.
+- **For Hidde:** a reply is drafted in drafts/reply-peter-wifi-crash.md (mailcheck clean, not committed: the repo is public).
+
 ## 2026-10-16 05:02 run: nothing published; scouted Buffalo
 
 - 0 trees. Visits, 7 days: 1651 visits, 2404 page views. No reader photographs waiting. Deploy green (smoke "skipped" is just log-only pushes). The scheduled iOS run failed on `testSearchingForATreeMovesTheMapToIt`, the known iOS 18 runner flake from 2026-09-09; the fix is drafts/ios-floor-retry.patch and needs `workflows` permission this bot lacks (FOR HIDDE). Enrich empty, staged cities walled, written files still refused. Buffalo (#375): only a street-tree inventory and the Olmsted park inventory, no heritage register; `stalled` in data/register-scouting.json. Untried: NY DEC Big Tree Register, Forest Lawn Cemetery. San Juan (#376): no DRNA or municipal notable-tree register found in one Spanish search; `stalled`, untried: DRNA protected trees, Programa de Forestacion Urbana.
