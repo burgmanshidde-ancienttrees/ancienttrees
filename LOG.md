@@ -16,6 +16,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **App**: the scheduled iOS run failed only on the sweep's drift check (Add a tree sheet: the one line started at x=26, other things at x=20). The text now spans the sheet's width (CollectIntro.swift); the next iOS run proves it. Floor tests were 224 passed.
 - **Photos**: 4 approved in Berlin (ber_039, 042, 046, 062; reversal `photo_apply.py hold <id>`), ber_059 held on species. Singapore had nothing new (judged earlier today). ber_062's December photos show the crown cut back and fungus; a rewrite is noted in its verify_notes. Photo lanes are close to exhausted: three viewing passes today, yield 23, 3, 0, 4.
 - Nothing from readers waiting; health.py's only item was the iOS run.
+- **Scouting**: Birmingham (Alabama champion trees) retried: the PDF downloads but nothing here can read it (no pypdf, Read needs pdftoppm) and no licence is stated; still stalled, `retried` set. Monterey is next in scout_next and has the same stall shape. Nothing else to do: enrich, pagegaps, recognise --stuck and langcheck all print empty. No new trees this window; shelf trees are blocked by the rich-page rule.
 
 <!-- continued below -->
 ## 2026-10-16 session: launch outreach to the big-tree communities
