@@ -61,9 +61,49 @@ struct AmbassadorBadge: View {
     }
 }
 
+/// The early-adopter badge (Kit/EarlyAdopter.swift, 2026-10-16): the
+/// ambassador's pill with its numbers unchanged, in gold rather than moss so
+/// the two never read as the same thing. Apple's sparkle; the website draws
+/// Phosphor's sparkle, its listed twin. A label, never a button.
+struct EarlyAdopterBadge: View {
+    var size: CGFloat = 12
+
+    var body: some View {
+        HStack(spacing: 4) {
+            Image(systemName: "sparkle")
+                .font(.system(size: size + 1, weight: .semibold))
+            Text("Early adopter")
+                .font(.system(size: size, weight: .medium))
+                .lineLimit(1)
+        }
+        .foregroundStyle(Brand.goldInk)
+        .padding(.vertical, 3)
+        .padding(.leading, 7).padding(.trailing, 9)
+        .background(Brand.gold.opacity(0.18), in: .capsule)
+        .accessibilityElement(children: .combine)
+        .accessibilityIdentifier("early-adopter-badge")
+    }
+}
+
+/// Shown once per account, the first time the profile opens with the badge.
+/// The website's sheet says the same (account.astro, early-dialog).
+struct EarlyAdopterSheet: View {
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        BrandSheet(
+            icon: "sparkle",
+            title: "You're an early adopter",
+            message: "You joined Ancient Trees in its first months. This badge is only for the people who did.",
+            buttons: [.primary("Done", id: "early-adopter-done") { dismiss() }],
+            tint: .gold)
+    }
+}
+
 #Preview {
     VStack(alignment: .leading, spacing: 12) {
         AmbassadorBadge(places: [.init(user_id: "u", place_slug: "paris", place_name: "Paris", public: false)])
+        EarlyAdopterBadge()
         AmbassadorBadge(places: [.init(user_id: "u", place_slug: "friedewald", place_name: "Friedewald", public: true),
                                  .init(user_id: "u", place_slug: "bad-homburg", place_name: "Bad Homburg", public: true)], size: 13)
     }

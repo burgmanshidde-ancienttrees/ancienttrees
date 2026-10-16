@@ -27,6 +27,10 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## An early-adopter badge on your own profile (2026-10-16)
+
+**The interaction:** every account opened before a cutoff wears a badge on its own profile, explained once by a sheet. **Reference:** Polarsteps, named by Hidde. Its badge is not described anywhere public: a search on 2026-10-16 (web, "Polarsteps early adopter badge profile") returned only company news, so what Polarsteps actually does is unverified. **What we copied instead** is our own entry "Recognising a contributor: ambassador, Pioneer, Local Guide" (2026-10-02): komoot's Pioneer pill beside the name, a label and never a button, on the person's own profile. The explainer is the one-sheet rule's sheet, shown once per account. Re-check Polarsteps on a phone that has the badge before leaning on this further.
+
 ## Making and sharing your own list of places (2026-10-03)
 
 **The interaction: a person collects trees into a list of their own, including

@@ -68,6 +68,10 @@ struct CollectView: View {
     @State private var openSettings = ProcessInfo.processInfo.arguments.contains("-settings")
     @State private var editingProfile = false   // -profile-edit: launchSheet below
     @State private var findingPeople = false   // -people: launchSheet below
+    /// The early-adopter badge and its one-time sheet (Kit/EarlyAdopter.swift).
+    /// Both come from the server on every open; nothing is kept here.
+    @State private var earlyAdopter = false
+    @State private var showingEarlyAdopter = false   // -earlyadoptersheet: launchSheet below
     /// Which list of people is open, if any. An enum rather than two booleans,
     /// so both cannot be true at once.
     private enum PeopleList: String, Identifiable {
@@ -346,7 +350,26 @@ struct CollectView: View {
                 await profiles.load(userId: account.session?.userId,
                                     token: await account.freshToken())
             }
+            // The badge from the server's created_at and the feed's cutoff;
+            // the sheet once per account, the flag the website also writes.
+            // -earlyadopter draws the badge for the sweep; -earlyadoptersheet
+            // also opens the sheet (launchSheet below).
+            let args = ProcessInfo.processInfo.arguments
+            if args.contains("-earlyadopter") || args.contains("-earlyadoptersheet") {
+                earlyAdopter = true
+            } else if account.isSignedIn, let token = await account.freshToken(),
+                      let s = await EarlyAdopter.status(token: token) {
+                earlyAdopter = s.hasBadge
+                if s.hasBadge, !s.seenSheet { showingEarlyAdopter = true }
+            } else {
+                earlyAdopter = false
+            }
         }
+        .launchSheet("-earlyadoptersheet", isPresented: $showingEarlyAdopter)
+        // Every way out counts as seen: Done, the cross, a swipe.
+        .sheet(isPresented: $showingEarlyAdopter, onDismiss: {
+            Task { if let t = await account.freshToken() { await EarlyAdopter.markSeen(token: t) } }
+        }) { EarlyAdopterSheet() }
         .launchSheet("-profile-edit", isPresented: $editingProfile)
         .sheet(isPresented: $editingProfile) { ProfileEditor() }
         .launchSheet("-people", isPresented: $findingPeople)
@@ -1001,6 +1024,13 @@ struct CollectView: View {
         .accessibilityIdentifier(id)
     }
 
+    @ViewBuilder private var badges: some View {
+        if !profiles.myPlaces.isEmpty {
+            AmbassadorBadge(places: profiles.myPlaces, size: 13).fixedSize()
+        }
+        if earlyAdopter { EarlyAdopterBadge(size: 13).fixedSize() }
+    }
+
     @ViewBuilder private var whoYouAre: some View {
         HStack(spacing: 14) {
             let editable = account.isSignedIn
@@ -1049,9 +1079,17 @@ struct CollectView: View {
                     // Your ambassador badge, when a place has given you one
                     // (AmbassadorBadge.swift, komoot's Pioneer shape). Drawn
                     // above the name so the name keeps its tap target intact.
-                    if editable, !profiles.myPlaces.isEmpty {
-                        AmbassadorBadge(places: profiles.myPlaces, size: 13)
-                            .padding(.bottom, 4)
+                    if editable, !profiles.myPlaces.isEmpty || earlyAdopter {
+                        // Ambassador first, because it says more; the early
+                        // adopter pill beside it in gold (2026-10-16).
+                        // Side by side when both fit; stacked on a small
+                        // phone, where side by side cut both to "Paris a..."
+                        // (iPhone SE, 2026-10-16).
+                        ViewThatFits(in: .horizontal) {
+                            HStack(spacing: 6) { badges }
+                            VStack(alignment: .leading, spacing: 4) { badges }
+                        }
+                        .padding(.bottom, 4)
                     }
                     // The part before the @ rather than the whole address
                     // truncated in the middle, which rendered as "burgma...ail.com"
