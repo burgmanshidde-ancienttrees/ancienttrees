@@ -3,6 +3,7 @@
   "app": {
     "BrandSheet": "the one sheet itself",
     "AmbassadorApplySheet": "two BrandSheet steps, the explainer and the receipt",
+    "EarlyAdopterSheet": "a BrandSheet, one step: what the early-adopter badge is, shown once per account",
     "PermissionRecovery": "a BrandSheet, wrapped so three call sites share the words",
     "collectChoice": "the tree page's collect sheet, three BrandSheet states",
     "SignInSheet": "the reference the one sheet is measured from (CONVENTIONS.md, the sign-in sheet); same handle, cross, tile and button sizes, provider buttons in the providers' own colours",

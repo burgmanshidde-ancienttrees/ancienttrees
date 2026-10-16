@@ -90,6 +90,9 @@ final class SweepFrames: XCTestCase {
         ("feedback",     ["-tab=2", "-settings", "-feedback"], "contribute-sheet"),
         ("profile-edit", ["-tab=2", "-profile-edit"], nil),
         ("people",       ["-tab=2", "-signed-in", "-people", "-people-demo"], "people-sheet"),
+        // The early-adopter badge on My trees and its one-time sheet (2026-10-16).
+        ("early-adopter", ["-tab=2", "-signed-in", "-earlyadopter"], nil),
+        ("early-adopter-sheet", ["-tab=2", "-signed-in", "-earlyadoptersheet"], nil),
     ]
 
     /// The file appfit.py goes looking for.
