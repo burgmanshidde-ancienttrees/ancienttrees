@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 night run (fourth attempt): nothing shipped
+
+No claims stood. 60 READY leads (mostly Roosendaal street trees) still fail the rich-or-reader rule in recovery mode, so no write pass. `langcheck.py --next`: no city has 10+ English impressions untranslated. 0 trees, nothing changed in the product.
+
 ## 2026-10-16 night run (third attempt): nothing shipped
 
 No claims stood. 0 trees, nothing changed in the product. The READY leads and the written-but-unmerged trees fail the rich-or-reader rule (see the entries below), so no write pass was dispatched; `enrich.py --next` says nothing to do. health.py: the scheduled iOS run on 10-15 failed after 1h35 (timed out; the push runs since are cancelled or still going), smoke is skipped, and the migration for profiles.country is not pasted (Hidde's to apply). Birmingham retry: the Alabama champion list is still a PDF with no stated licence and pypdf is not installed, so it stays stalled. Next: roster photo hunts need a new angle, not another sweep.
