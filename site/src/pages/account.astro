@@ -85,7 +85,9 @@ const canonical = `${BASE_URL}/account`;
     <div class="profile-top">
       <span class="profile-avatar" id="in-avatar" aria-hidden="true"></span>
       <div class="profile-who">
-        <h1 id="in-handle">Your trees</h1>
+        {/* Your flag after your name (lib/countries.ts, 2026-10-16), the
+            app's CountryFlag: the country picked in settings, none if not. */}
+        <div class="profile-name"><h1 id="in-handle">Your trees</h1><img class="profile-flag" id="in-flag" alt="" width="20" height="20" hidden /></div>
         <p class="profile-follow"><b id="n-followers">0</b> followers &nbsp; <b id="n-following">0</b> following</p>
       </div>
       {/* No add-a-tree button here (Hidde, 2026-10-10: "the plus sign on

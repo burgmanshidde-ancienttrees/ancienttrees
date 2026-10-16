@@ -61,9 +61,11 @@ struct AmbassadorBadge: View {
     }
 }
 
-/// The early-adopter badge (Kit/EarlyAdopter.swift, 2026-10-16): the
+/// The early-adopter tag (Kit/EarlyAdopter.swift, 2026-10-16): the
 /// ambassador's pill with its numbers unchanged, in gold rather than moss so
-/// the two never read as the same thing. Apple's sparkle; the website draws
+/// the two never read as the same thing, on the same row after it. Hidde
+/// chose this as option 1 of five, over Polarsteps' hexagon seal on the photo
+/// ("honestly i liked the tag better"). Apple's sparkle; the website draws
 /// Phosphor's sparkle, its listed twin. A label, never a button.
 struct EarlyAdopterBadge: View {
     var size: CGFloat = 12
@@ -82,6 +84,40 @@ struct EarlyAdopterBadge: View {
         .background(Brand.gold.opacity(0.18), in: .capsule)
         .accessibilityElement(children: .combine)
         .accessibilityIdentifier("early-adopter-badge")
+    }
+}
+
+/// The flag after your name (Hidde, 2026-10-16), Polarsteps' round flag: the
+/// country the person picked in Edit profile, as Apple's own flag emoji
+/// clipped to a circle. Nothing when they have not picked one.
+struct CountryFlag: View {
+    let code: String?
+    var size: CGFloat = 20
+
+    var body: some View {
+        if let flag = Self.emoji(code) {
+            Text(flag)
+                .font(.system(size: size * 1.5))
+                .frame(width: size, height: size)
+                .clipShape(.circle)
+                .overlay(Circle().strokeBorder(.black.opacity(0.08), lineWidth: 1))
+                .dynamicTypeSize(.large)
+                .accessibilityLabel(Self.name(code) ?? "")
+                .accessibilityIdentifier("profile-flag")
+        }
+    }
+
+    /// "NL" to the regional-indicator pair Apple draws as the Dutch flag.
+    static func emoji(_ code: String?) -> String? {
+        guard let c = code?.uppercased(), c.count == 2,
+              c.unicodeScalars.allSatisfy({ ("A"..."Z").contains(Character($0)) }) else { return nil }
+        return String(String.UnicodeScalarView(c.unicodeScalars.compactMap {
+            Unicode.Scalar(127397 + $0.value)
+        }))
+    }
+
+    static func name(_ code: String?) -> String? {
+        code.flatMap { Locale(identifier: "en").localizedString(forRegionCode: $0) }
     }
 }
 
@@ -104,6 +140,7 @@ struct EarlyAdopterSheet: View {
     VStack(alignment: .leading, spacing: 12) {
         AmbassadorBadge(places: [.init(user_id: "u", place_slug: "paris", place_name: "Paris", public: false)])
         EarlyAdopterBadge()
+        CountryFlag(code: "NL")
         AmbassadorBadge(places: [.init(user_id: "u", place_slug: "friedewald", place_name: "Friedewald", public: true),
                                  .init(user_id: "u", place_slug: "bad-homburg", place_name: "Bad Homburg", public: true)], size: 13)
     }

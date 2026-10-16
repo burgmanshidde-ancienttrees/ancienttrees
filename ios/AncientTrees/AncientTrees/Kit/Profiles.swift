@@ -49,6 +49,11 @@ public final class Profiles {
     public private(set) var following = 0
     /// The places you are the ambassador of, usually none.
     public private(set) var myPlaces: [Ambassador] = []
+    /// Your country, an ISO two-letter code you picked in Edit profile, for
+    /// the flag after your name (supabase/profiles.sql, 2026-10-16). Read on
+    /// its own rather than in the profile select, so a database without the
+    /// column yet costs the flag and never the name.
+    public private(set) var myCountry: String?
     /// Other people's badges, by user id, filled as lists load.
     public private(set) var placesByUser: [String: [Ambassador]] = [:]
 
@@ -84,6 +89,11 @@ public final class Profiles {
                 myPlaces = [Ambassador(user_id: me?.user_id ?? "00000000-0000-0000-0000-0000000000ab",
                                        place_slug: place.lowercased(), place_name: place, public: false)]
             }
+        }
+        // -country=NL: the flag on the demo account, for the sweep.
+        if let arg = ProcessInfo.processInfo.arguments
+            .first(where: { $0.hasPrefix("-country=") }) {
+            myCountry = String(arg.dropFirst(9)).uppercased()
         }
     }
 
@@ -126,6 +136,12 @@ public final class Profiles {
             myPlaces = rows
             placesByUser[userId] = rows
         }
+        struct CountryRow: Decodable { let country: String? }
+        if let data = try? await send(request(
+            "profiles?select=country&user_id=eq.\(userId)", "GET", token: token)),
+           let rows = try? JSONDecoder().decode([CountryRow].self, from: data) {
+            myCountry = rows.first?.country
+        }
         struct Counts: Decodable { let followers: Int; let following: Int }
         if let data = try? await send(request("rpc/follow_counts", "POST", token: token,
                                               body: try? JSONEncoder().encode(["uid": userId]))),
@@ -147,6 +163,7 @@ public final class Profiles {
         followers = 0
         following = 0
         myPlaces = []
+        myCountry = nil
     }
 
     /// The badges of the people in a list, one request for the whole list.
@@ -283,6 +300,17 @@ public final class Profiles {
         _ = try? await send(request("profiles?on_conflict=user_id", "POST", token: token,
                                     body: body, prefer: "resolution=merge-duplicates"))
         me?.units = units
+    }
+
+    /// Your country, or nil to show no flag. Its own call, like units, so it
+    /// never rewrites a name and a picture. Returns whether the server took it.
+    public func saveCountry(_ code: String?, userId: String, token: String) async -> Bool {
+        struct Row: Encodable { let user_id: String; let country: String? }
+        let body = try? JSONEncoder().encode([Row(user_id: userId, country: code)])
+        let ok = (try? await send(request("profiles?on_conflict=user_id", "POST", token: token,
+                                          body: body, prefer: "resolution=merge-duplicates"))) != nil
+        if ok { myCountry = code }
+        return ok
     }
 
     private func send(_ r: URLRequest) async throws -> Data {

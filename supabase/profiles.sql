@@ -32,12 +32,21 @@ create table if not exists public.profiles (
   -- fall back to where the reader is: the phone's locale in the app, the
   -- browser's region on the website. Only an explicit choice writes a value.
   units text check (units in ('km', 'mi')),
+  -- The flag after your name (Hidde, 2026-10-16: "Yes to storing a country
+  -- per account"). One ISO two-letter code the person picks in Edit
+  -- profile; null shows no flag. Polarsteps' profile is the reference.
+  country text check (country ~ '^[A-Z]{2}$'),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
 
 -- Safe to run against a table that already exists.
 alter table public.profiles add column if not exists units text;
+alter table public.profiles add column if not exists country text;
+do $$ begin
+  alter table public.profiles add constraint profiles_country_check
+    check (country ~ '^[A-Z]{2}$');
+exception when duplicate_object then null; end $$;
 do $$ begin
   alter table public.profiles add constraint profiles_units_check
     check (units in ('km', 'mi'));
