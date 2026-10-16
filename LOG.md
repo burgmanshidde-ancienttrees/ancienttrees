@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 session: launch outreach to the big-tree communities
+
+Hidde mailed, in his own words, the admin of Big Tree Seekers and Big Trees of New York (Landis Arboretum) and the coordinator of Australia's National Register of Big Trees (Finding Big Trees group): what do they think of the app, and may he share it in their groups. Both logged in the private OUTREACH.md. Not mailed: the Ancient Tree Forum (three unanswered mails since August) and the Ancient Yew Group (its contact goes to the Tree Register inbox, already mailed twice). The Australian register is All Rights Reserved: a finding aid only, permission to be asked in a reply (data/register-scouting.json).
+
+Next, Hidde's call: posting starts in about a week, once the app is tested. Channels, ask-first mod messages and four example posts are on Hidde's private page https://claude.ai/artifact/CX8HzNwrwuo9wyKXEAfig4 (local copies drafts/where-to-post.html and drafts/group-messages.md stay out of the public repo: they name people). Home turf (Dutch groups, r/Amsterdam) parked at his wish; Product Hunt waits for phase 2. Hidde has no Facebook profile, so Facebook goes through the admins by mail for now. The scheduled iOS build is still failing and comes before any post.
+
 ## 2026-10-16 session: Cardiff's Wallenberg tree has a species
 
 A Cardiff parks officer mailed Hidde that the Raoul Wallenberg tree in Alexandra Gardens (crd_001) is Ailanthus altissima. The page had asked readers for exactly that. Species is now Tree of Heaven, the story's "nobody has recorded which species" paragraph is rewritten, and the recognition line names the leaves. Logged in verify_notes; no name on the site. Reply drafted in drafts/reply-cardiff-wallenberg.md for Hidde to send.
