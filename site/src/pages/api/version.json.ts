@@ -5,6 +5,7 @@
 import { getCollection } from "astro:content";
 import { cityIsRenderable } from "../../lib/trees";
 import { feedTrees, feedVersion } from "../../lib/app-feed";
+import { EARLY_ADOPTER_UNTIL } from "../../lib/early-adopter";
 // EVERY FEED THE APP DOWNLOADS, not just the trees.
 //
 // The version was a hash of the tree data alone, so a change to any other feed
@@ -43,5 +44,9 @@ export async function GET() {
     trees_url: "/api/trees.json",
     species_url: "/api/species.json",
     walks_url: "/api/walks.json",
+    // Accounts opened before this date wear the early-adopter badge; null
+    // means every account does (lib/early-adopter.ts). The app reads it here
+    // on every launch, so moving the date never needs a new build.
+    early_adopter_until: EARLY_ADOPTER_UNTIL,
   }), { headers: { "Content-Type": "application/json" } });
 }

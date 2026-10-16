@@ -15,6 +15,7 @@ platforms only). `bold` matches SF Symbols' regular weight best at UI sizes.
 | arrow.turn.up.right                | arrow-bend-up-right     |
 | camera / camera.fill               | camera / camera fill    |
 | checkmark.seal.fill (ambassador)   | seal-check fill (bold for the line) |
+| sparkle (early adopter)             | sparkle fill (bold for the sheet tile) |
 | heart / heart.fill                 | heart / heart fill      |
 | hand.thumbsup / .fill              | thumbs-up / fill        |
 | figure.walk                        | person-simple-walk      |

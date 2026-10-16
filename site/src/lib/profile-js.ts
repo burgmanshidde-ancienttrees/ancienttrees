@@ -11,6 +11,7 @@
 // surfaces answering the same question must not answer it differently.
 import { SUPABASE_URL, SUPABASE_KEY } from "./site-config";
 import { icon } from "./icons";
+import { EARLY_ADOPTER_UNTIL } from "./early-adopter";
 
 // The seal the badge wears, Phosphor's own file, so the account page and the
 // city page draw the same glyph (never hand-drawn, Hidde 2026-09-24).
@@ -86,11 +87,39 @@ export const PROFILE_JS = `
             amb.lastChild.textContent = label;
             amb.hidden = false;
           }).catch(function() {});
+        early(token, u);
         head(token, '/rest/v1/follows?select=follower&followee=eq.' + encodeURIComponent(u.id))
           .then(function(n) { setText('n-followers', n); });
         head(token, '/rest/v1/follows?select=followee&follower=eq.' + encodeURIComponent(u.id))
           .then(function(n) { setText('n-following', n); });
       }).catch(function() {});
+  }
+
+  // THE EARLY-ADOPTER BADGE (lib/early-adopter.ts, 2026-10-16). Who has it is
+  // the server's created_at against the cutoff baked in at build time, never
+  // anything this browser kept. The sheet shows once per account: closing it
+  // writes early_adopter_seen into the account's own metadata, so the app and
+  // a second browser do not show it again.
+  function early(token, u) {
+    var until = ${JSON.stringify(EARLY_ADOPTER_UNTIL)};
+    if (!u.created_at || (until && !(u.created_at < until))) return;
+    var pill = el('in-early');
+    if (pill) pill.hidden = false;
+    var dlg = el('early-dialog');
+    if (!dlg || (u.user_metadata && u.user_metadata.early_adopter_seen)) return;
+    var marked = false;
+    function seen() {
+      if (marked) return;
+      marked = true;
+      fetch(SB + '/auth/v1/user', { method: 'PUT',
+        headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data: { early_adopter_seen: true } }) }).catch(function() {});
+    }
+    var done = dlg.querySelector('.early-done');
+    if (done) done.addEventListener('click', function() { dlg.close(); });
+    // Every way out counts as seen: Done, the cross, the backdrop, Escape.
+    dlg.addEventListener('close', seen);
+    dlg.showModal();
   }
 
   // The units switch lived here until 2026-09-18. It is on /account/settings

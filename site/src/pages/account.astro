@@ -29,6 +29,7 @@ import { PROFILE_JS } from "../lib/profile-js";
 import { MY_TREES_JS } from "../lib/my-trees-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import SignInPanel from "../components/SignInPanel.astro";
+import Sheet from "../components/Sheet.astro";
 import { myTreesMapScript, mapHead } from "../lib/map";
 import { SHEET_JS } from "../lib/sheet-js";
 import { icon } from "../lib/icons";
@@ -87,6 +88,9 @@ const canonical = `${BASE_URL}/account`;
         <h1 id="in-handle">Your trees</h1>
         <p class="profile-follow"><b id="n-followers">0</b> followers &nbsp; <b id="n-following">0</b> following</p>
         <p class="profile-ambassador" id="in-ambassador" hidden></p>
+        {/* The early-adopter badge (lib/early-adopter.ts, 2026-10-16): the
+            ambassador's pill in gold, after it, a label and never a button. */}
+        <p class="profile-early" id="in-early" hidden><Fragment set:html={icon("sparkle", "fill", "ic")} /><span>Early adopter</span></p>
       </div>
       {/* No add-a-tree button here (Hidde, 2026-10-10: "the plus sign on
           web on profile ... is so random"): adding a tree is "Suggest a
@@ -108,6 +112,19 @@ const canonical = `${BASE_URL}/account`;
 
   </section>
   </div></div>
+
+  {/* Shown once per ACCOUNT, the first time the profile opens with the badge;
+      the account remembers it (user_metadata.early_adopter_seen), so a second
+      device does not show it again. The app's sheet is EarlyAdopterSheet in
+      AmbassadorBadge.swift, with the same words. */}
+  <Sheet lang="en" class="early-dialog" id="early-dialog" aria-labelledby="early-title">
+    <span class="at-sheet-tile at-sheet-tile--gold"><Fragment set:html={icon("sparkle", "bold")} /></span>
+    <h3 class="at-sheet-h" id="early-title">You're an early adopter</h3>
+    <p class="at-sheet-p">You joined Ancient Trees in its first months. This badge is only for the people who did.</p>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--primary early-done">Done</button>
+    </div>
+  </Sheet>
 
   <div class="sheet-body">
 
