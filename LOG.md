@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 (02:45 window): nothing published; scouted Hallstatt
+
+7-day visits: 1605 visits, 2353 page views. No reader photographs waiting, enrich says nothing to do. The written leftovers (delft, fort-worth, leipzig, london, salt-lake-city, tree-of-the-year) have no photo or confirmed pin, so I did not merge them. Scouted Hallstatt: no tree-level register with coordinates; the Upper Austria CC BY dataset is the untried route (verdict in data/register-scouting.json). The scheduled iOS run failed on one UI test, testSearchingForATreeMovesTheMapToIt ("search found no Beethoven Plane", 223 passed); it needs a macOS session. The Smoke test shows "skipped" on push runs only.
+
 ## 2026-10-15 (fourteenth attempt): nothing published; scouted Belfast, Brighton
 
 No claims. Tried merging the 7 written-but-unmerged trees (delft, leipzig, london, fort-worth, salt-lake-city); preflight refused all (not rich, one 83-word story, Delft ash within 5 m of a register-dead ash and on the removed-slug list), so reverted. Scouted Belfast (#321): no register, Open Data NI street-tree CSV only. Brighton (#334): CPRE Sussex notable-trees map, licence unknown, finding aid only. Both `stalled` in data/register-scouting.json. 0 trees.
