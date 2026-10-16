@@ -13,6 +13,12 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-16
+
+Web half: read the Cardiff Wallenberg tree (species corrected to tree of heaven by the parks officer, 8c0522dfb) and the three new London photographs (Battersea strawberry tree, Carshalton plane, Gunnersbury mulberry) as built in site/dist. No em dashes, the story, recognition line and meta agree with the new species, each photo carries its CC BY-SA credit, and the Cardiff page still says honestly that the pin is approximate. Nothing found.
+
+---
+
 ## 2026-10-15
 
 Web half: read the new Seville Cardón of the Expo (sev_044) as built, and checked seville, munich, chicago, roosendaal, oss and potsdam in site/dist for em dashes: none. The Cardón page carries the reader's 200 to 300 years beside the press's 1,500, as the ruling asks, and its access line says honestly that the ground is private but open.
