@@ -336,6 +336,24 @@ NO_APP_LINK = {
 
 
 def check_app_link(path, text, body):
+    """A reply carries no App Store link (Hidde, 2026-10-15 on the Bauer draft:
+    "Laat die app maar even weg, want dat voelt heel verkoopachtig", and again
+    2026-10-16 on the Cardiff reply: "dont add the app link its too salsy").
+    Two days, so it is a check. A reply is a drafts/reply-*.md file; a cold
+    outreach mail is not measured either way any more.
+
+    What this replaced: from 2026-09-03 every outbound mail had to carry it.
+    The old reasoning below is kept for the record."""
+    if not BODY_SPLIT.search(text):
+        return []
+    if os.path.basename(path).startswith("reply-") and "6806177833" in body:
+        return [("APP LINK IN A REPLY", "6806177833",
+                 "Hidde, 2026-10-15 and 10-16: the App Store link in a reply "
+                 "reads as selling. Answer them and ask about a tree.")]
+    return []
+
+
+def _old_check_app_link(path, text, body):
     """Every outbound mail carries the App Store link from 2026-09-03.
 
     Hidde, that day: "onze app staat live dus vertel dat en we zijn beniewud

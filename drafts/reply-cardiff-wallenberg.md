@@ -11,8 +11,7 @@ https://ancienttrees.app/cardiff/raoul-wallenberg-tree
 
 If there are any other details you'd like to share about trees in Cardiff, it would be highly appreciated.
 
-And if you ever happen to walk past, we've made an app to make it easy to add a photo. That would really help:
-https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
+And if you ever happen to walk past, we've made an app to make it easy to add a photo. That would really help.
 
 Either way, thanks again for the help.
 
