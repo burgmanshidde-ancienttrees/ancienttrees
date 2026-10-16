@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 night run (08:41 window): photos on roster pages
+
+- Visits last 7 days: 1793. Rung 1 empty. Rung 2: iOS scheduled run still red (its newest push run in progress; needs a macOS look), and **profiles.country migration still unpasted (Hidde: supabase/PENDING.sql)**.
+- Photo lane: London re-sweep plus one photo-judge pass (39 images): **3 live** (lon_025 Battersea strawberry tree, lon_028 Carshalton Plane, lon_030 Gunnersbury mulberry); 36 rejected. lon_028 shows trunk and limbs, not the whole crown; reverse with `python3 scripts/photo_apply.py hold lon_028`. Not judged: iNaturalist candidates for lon_025, Munich, Brisbane, Oahu, Dublin, Paris, Brussels.
+- Bug seen: `photo_hunt.py --recheck` re-queues candidates already judged (Seville, Palermo, Amsterdam), so judges pay twice. Also `photo_hunt.py --help` runs a real sweep instead of printing help.
+- Tokens: photo-judge 148k.
+
 ## 2026-10-16 session with Hidde: recovery reprioritised, early-adopter tag and flag, 23 photos
 
 - **Recovery mode reordered** (Hidde: "do this"): photos on cities Google used to show now come first; enrichment is the frozen roster only (`ROSTER_ONLY` in enrich.py). Why: ~565 enrichment commits since 10-01 and Google flat at ~35 impressions a day; rich pages earned 0.06 per page, not-rich 0.08. The noindex list was already tight (16 of 459 sub-four places indexable). DECISIONS.md 2026-10-16.
