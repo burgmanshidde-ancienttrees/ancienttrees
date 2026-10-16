@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 tenth attempt: nothing shipped
+
+- No claims standing. The 60 READY leads are still blocked by the rich-page rule and enrich has nothing to do, so no pass was dispatched. Backup lane: Long Beach retried; it is the same Cal Poly register with no licence, so it stays stalled (`retried` set). The unlock is still the permission email to Cal Poly, Hidde's to send.
+
 ## 2026-10-16 ninth attempt: nothing shipped
 
 - No claims standing. The 60 READY leads are still blocked by the rich-page rule; enrich and photo lanes are empty. Backup lane: Jacksonville retried. The only public Duval row is one Tough Bumelia at an unidentified state facility, and the Florida register withholds private rows, so it stays stalled (`retried` set).
