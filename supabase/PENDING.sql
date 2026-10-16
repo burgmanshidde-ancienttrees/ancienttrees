@@ -1,3 +1,5 @@
+-- APPLIED 2026-10-16 by Hidde (checked: profiles?select=country answers). Nothing pending.
+--
 -- profiles.country (2026-10-16): the flag after your name.
 --
 -- Hidde, 2026-10-16, choosing option 1 of the early-adopter designs: "Ship
