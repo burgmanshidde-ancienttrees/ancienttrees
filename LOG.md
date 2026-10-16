@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 eighteenth attempt: nothing shipped
+
+- No claims standing. Looked at the "written and ready to merge" trees in `passcheck.py --pending` (Leipzig, Delft, London, Fort Worth, Salt Lake City, tree-of-the-year, Figueira das Lágrimas). The one I opened, lpz_019 (Kleinzschocher Ginkgo), has no established access (hard rule 10) and an approximate pin, so it is not rich and stays unmerged. I did not open the other nine. The 60 READY leads are still blocked by the rich-page rule, so no pass was dispatched. I did not retry scouting: Lansing, the next BACKUP item, was already scouted twice on 10-05 and the last 17 attempts all ended the same way. For lpz_019 the unlock is a source for visitor access; I did not check what the others lack.
+
 ## 2026-10-16 fifteenth attempt (21:25 window, 7-day visits: 2073 visits, 2892 page views): nothing shipped
 
 - Sightings inbox empty, health.py clear. Enrich, langcheck (no city over 10 impressions) and the 60 READY leads unchanged (blocked by the rich-page rule), so no pass was dispatched. Scouting: Chattanooga retried; the city's notable-trees page now 404s, no list or licence, so it stays stalled (`retried` set). Unlock: a Tree Commission ask, Hidde's to send.
