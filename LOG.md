@@ -13,7 +13,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 ## 2026-10-16 05:02 run: nothing published; scouted Buffalo
 
-- 0 trees. Visits, 7 days: 1651 visits, 2404 page views. No reader photographs waiting. Deploy green (smoke "skipped" is just log-only pushes). The scheduled iOS run failed on `testSearchingForATreeMovesTheMapToIt`, the known iOS 18 runner flake from 2026-09-09; the fix is drafts/ios-floor-retry.patch and needs `workflows` permission this bot lacks (FOR HIDDE). Enrich empty, staged cities walled, written files still refused. Buffalo (#375): only a street-tree inventory and the Olmsted park inventory, no heritage register; `stalled` in data/register-scouting.json. Untried: NY DEC Big Tree Register, Forest Lawn Cemetery.
+- 0 trees. Visits, 7 days: 1651 visits, 2404 page views. No reader photographs waiting. Deploy green (smoke "skipped" is just log-only pushes). The scheduled iOS run failed on `testSearchingForATreeMovesTheMapToIt`, the known iOS 18 runner flake from 2026-09-09; the fix is drafts/ios-floor-retry.patch and needs `workflows` permission this bot lacks (FOR HIDDE). Enrich empty, staged cities walled, written files still refused. Buffalo (#375): only a street-tree inventory and the Olmsted park inventory, no heritage register; `stalled` in data/register-scouting.json. Untried: NY DEC Big Tree Register, Forest Lawn Cemetery. San Juan (#376): no DRNA or municipal notable-tree register found in one Spanish search; `stalled`, untried: DRNA protected trees, Programa de Forestacion Urbana.
 
 ## 2026-10-16 (another retry): nothing published; scouted Allentown
 
