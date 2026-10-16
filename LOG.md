@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 twentieth attempt: nothing shipped
+
+- No claims standing. 60 READY leads still blocked by the rich-page rule (recovery mode), so no write pass was dispatched. Nothing new since the nineteenth attempt.
+
 ## 2026-10-16 nineteenth attempt (22:25 window, 7-day visits: 2091 visits, 2914 page views): nothing shipped
 
 - Sightings inbox empty. health.py lists the push-triggered smoke skips (1s, deploy green) and the scheduled iOS run failing again at 1h55m, which looks like the 120-minute cap and not an assertion; I did not open its log. It needs a Mac session. Enrich has nothing to do, the 60 READY leads are still blocked by the rich-page rule, and `photo_hunt.py --recheck --city london` found no new candidates for its 7 photo-less trees. No pass dispatched, no scouting retry (every BACKUP target was retried today).
