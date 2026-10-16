@@ -24,6 +24,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Scouting**: Birmingham (Alabama champion trees) retried: the PDF downloads but nothing here can read it (no pypdf, Read needs pdftoppm) and no licence is stated; still stalled, `retried` set. Monterey is next in scout_next and has the same stall shape. Nothing else to do: enrich, pagegaps, recognise --stuck and langcheck all print empty. No new trees this window; shelf trees are blocked by the rich-page rule.
 
 <!-- continued below -->
+## 2026-10-16 night run (fifth attempt, 14:52 window): nothing shipped
+
+0 trees, nothing changed in the product. Visits: 1810 in 7 days. Sightings inbox empty. health.py: smoke and deploy "skipped" are push runs superseded by a dispatched deploy that was in progress; the iOS scheduled failure is already answered by 43b717d12 (its push run was still going). enrich.py --next, langcheck --next and pagegaps all say nothing to do; Birmingham retry was already tried this morning (PDF licence unstated), so it stays stalled. `photo_hunt.py --recheck` swept 40 trees (Aarhus to Amerongen) and found 0 new candidates. Next: roster photo hunts need a new angle, not another sweep.
+
 ## 2026-10-16 session: launch outreach to the big-tree communities
 
 Hidde mailed, in his own words, the admin of Big Tree Seekers and Big Trees of New York (Landis Arboretum) and the coordinator of Australia's National Register of Big Trees (Finding Big Trees group): what do they think of the app, and may he share it in their groups. Both logged in the private OUTREACH.md. Not mailed: the Ancient Tree Forum (three unanswered mails since August) and the Ancient Yew Group (its contact goes to the Tree Register inbox, already mailed twice). The Australian register is All Rights Reserved: a finding aid only, permission to be asked in a reply (data/register-scouting.json).
