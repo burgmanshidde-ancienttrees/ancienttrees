@@ -75,6 +75,12 @@
       "note": "SCOUTED 2026-10-15 on scout_next.py --target (#313). Wikidata search holds no tree entries for the town. No Stratford-on-Avon District or Warwickshire notable-tree register with open terms seen; TPO points on planning.data.gov.uk (OGL v3.0) are protection, not remarkableness. Woodland Trust Ancient Tree Inventory has no reuse licence for us. Next angle: Shakespeare Birthplace Trust gardens (mulberry at New Place, a finding aid), Holy Trinity churchyard yews, Warwickshire veteran-tree surveys."
     },
     {
+      "place": "Windsor",
+      "country": "United Kingdom",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-16. data.gov.uk search for Windsor / Maidenhead / Royal Borough tree returned no RBWM dataset (only other councils' TPO layers: York, Camden, City of London, Daventry). ArcGIS Online search for the same terms returned one unrelated StoryMap. RBWM TPO page answers 202 (bot challenge), no open download found. TPO points would be protection, not remarkableness, as for Oxford, Bristol and Belfast. Veteran oaks of Windsor Great Park and Windsor Castle grounds are held in the Woodland Trust Ancient Tree Inventory (ati.woodlandtrust.org.uk, 200 but no licence text on the landing page; terms not open, treat as off limits without written permission). Crown Estate has no tree-level open register found. Next angle: Crown Estate Windsor Great Park published veteran-tree guides as finding aids, or the Windsor Great Park Savill Garden trail; an RBWM TPO layer via planning.data.gov.uk (OGL v3.0) only as a pin source for known trees."
+    },
+    {
       "place": "Oxford",
       "country": "United Kingdom",
       "status": "stalled",
