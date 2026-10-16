@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 session with Hidde: recovery reprioritised, early-adopter tag and flag, 23 photos
+
+- **Recovery mode reordered** (Hidde: "do this"): photos on cities Google used to show now come first; enrichment is the frozen roster only (`ROSTER_ONLY` in enrich.py). Why: ~565 enrichment commits since 10-01 and Google flat at ~35 impressions a day; rich pages earned 0.06 per page, not-rich 0.08. The noindex list was already tight (16 of 459 sub-four places indexable). DECISIONS.md 2026-10-16.
+- **23 photos live** from a Commons re-sweep of the 20 top roster cities plus one photo-judge pass (21 Berlin Naturdenkmale, nyc_021, vie_044). 4 held, 11 trees with nothing usable. **ber_062 may be felled** (2025 photos show a stump): CURATION.md, check today. About 40 trees with fresh candidates were not judged yet (Munich, Brisbane, Oahu, Dublin, rest of Vienna, Paris, Brussels, Barcelona): next photo-judge pass.
+- **Early-adopter tag and flag, app and web.** Every account opened before the paid tier goes live wears a gold "Early adopter" tag beside the ambassador tag (option 1 of five; the Polarsteps seal and a tag above the name were tried and dropped). The cutoff is `EARLY_ADOPTER_UNTIL` in site/src/lib/early-adopter.ts, null now, served to the app as `early_adopter_until` in /api/version.json. A one-time sheet explains it, remembered per account in user_metadata. Plus a **round country flag after your name**, picked in Edit profile (Hidde's yes to storing a country). **FOR HIDDE: paste supabase/PENDING.sql** (adds profiles.country); until then the flag stays empty and nothing else breaks. App needs a new build to reach phones.
+- **Backlinks:** cold link asks are out (886 mails, 4 backlinks, none from a straight ask); ambassadors are never asked (CLAUDE.md). Two scouts found ~10 getLISBON-like city sites naming our trees (data/research/link-partners-2026-10-16*.json); strongest Bowery Boys (NYC, 5 trees) and Balarm (Palermo, 5). Not mailed; give-first citation then one mail is the plan if Hidde says go.
+- Tokens: two link scouts 460k, photo-judge 255k (data/agent-costs.json).
+
 ## 2026-10-16 session: the app 1.0.2 "crashes on WiFi" (a reader's mail)
 
 - **Cause, from our own MetricKit rows** (`diagnostics` table, three crashes at 08:18 UTC, the minute he wrote): build 20 (1.0.2) traps in `MyVotes.load` at launch. `treeId` took `[0]` of an empty split, and his general feedback of 13 Oct ("Location not working on iOS") has no tree. Every launch that reached Supabase crashed; on mobile data the request likely never got through, which is the whole WiFi difference. Same bug that crashed Hidde's phone on 10-11, fixed in 3c841e501, and confirmed inside build 34's binary (WorthIt.swift:89, the `.first` form).
