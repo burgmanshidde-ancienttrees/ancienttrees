@@ -1,0 +1,14 @@
+{
+  "_about": "App crash signatures already dealt with, read by scripts/crashes.py, the digest and health.py. signature is the top AncientTrees frame as crashes.py prints it, on the store build it fired on. fix_commit / first_fixed_build: the code fix and the first build that carries it. server_remedy / contained_at: a server-side fix that stops it without a new build, and when it was applied; crashes before contained_at count as answered. A run that fixes a crash adds its entry here in the same change.",
+  "fixes": [
+    {
+      "signature": "AncientTrees+0xb8180",
+      "build": "20",
+      "what": "empty-tree feedback crash at launch: MyVotes.treeId took [0] of an empty split (WorthIt.swift:84)",
+      "fix_commit": "3c841e501",
+      "first_fixed_build": "34",
+      "server_remedy": "a general feedback row holds tree='' again: re-run the PATCH submissions?kind=eq.feedback&tree=eq. with {\"tree\": null} (service key)",
+      "contained_at": "2026-10-16T08:19:00"
+    }
+  ]
+}

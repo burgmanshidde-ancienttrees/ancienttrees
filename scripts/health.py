@@ -757,17 +757,18 @@ def main():
         if sigs is None:
             unknown.append("app crashes (no service key)")
         else:
-            hot = crashes.bursts(sigs, stores)
+            # The fix-in-source step lives in crashes.FIX_IN_SOURCE and rides
+            # in the act item itself, so the run that reads it knows the way.
+            found = crashes.assess(sigs, stores)
             live = sum(s["count"] for s in sigs if crashes.is_store(s["build"], stores))
-            print(f"  {'App crashes':20s} {'BURST' if hot else 'ok':10s} "
+            worst = found[0]["level"].upper() if found else "ok"
+            print(f"  {'App crashes':20s} {worst:10s} "
                   f"{live} from store builds in 48h")
-            for s, n in hot:
-                fix = (" Known: " + s["known"]["remedy"] + "." if s["known"] else
-                       " Unknown signature: python3 scripts/crashes.py symbolicates "
-                       "it on the Mac, where the dSYM lives.")
-                problems.append(
-                    f"The app crashed {n} times in {crashes.BURST_HOURS}h on store "
-                    f"build {s['version']} ({s['build']}) at {crashes.where(s)}.{fix}")
+            for a in found:
+                if a["level"] == "waiting":
+                    notes.append("App crash " + crashes.message(a))
+                else:
+                    problems.append("The app is crashing: " + crashes.message(a))
     except Exception as e:
         unknown.append(f"app crashes ({e.__class__.__name__})")
 

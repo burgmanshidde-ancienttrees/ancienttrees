@@ -25,6 +25,18 @@ They are used here only to estimate how many phones a signature came from and
 never printed or written anywhere: DATA.md sits in a public repository, so the
 output is counts and builds, nothing else.
 
+SYMBOLS IN CI: the dSYMs live only in Hidde's Xcode archives, so the Mac
+writes a compact map per store build (scripts/crash_symbols.py, into
+data/crash-symbols/) and every machine reads the source line from that.
+
+WHAT A SIGNATURE ASKS OF US (assess(), Hidde 2026-10-16: "check for crashes,
+flag them and improve for the next build", and flag one that needs an
+immediate update): URGENT when a store build is unusable for someone or the
+crash spreads and no server-side fix stops it; act when it bursts with no fix
+yet (fix it in the source, the next build carries it); reapply when a crash we
+contained server-side fires again; waiting when the fix is in a build that is
+not on sale. Fixes are recorded in data/crash-fixes.json.
+
 STORE BUILDS: which builds reached the App Store is asked of App Store Connect
 (appStoreVersions, READY_FOR_SALE or since replaced) and cached in
 data/store-builds.json, so health.py can tell a store build from one Hidde ran
@@ -42,6 +54,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from inbox import SUPA, load_key  # noqa: E402
+import crash_symbols  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STORE_BUILDS = os.path.join(ROOT, "data", "store-builds.json")
@@ -50,24 +63,48 @@ BINARY = "AncientTrees"
 LOAD = 0x100000000
 PAGE = 5  # the payload column is big; a larger select times out
 
-# Signatures we already understand, keyed by (build, offset of the top frame).
-# `remedy` is what to do if it fires again; crashes before `answered` were
-# dealt with already and do not count towards a burst.
-KNOWN = {
-    ("20", 0xb8180): {
-        "remedy": (
-            "the empty-tree feedback crash (MyVotes.treeId) in 1.0.2, fixed in "
-            "1.0.3 build 35. Its data side was fixed on 2026-10-16 by setting "
-            "submissions.tree from '' to NULL; firing again means a new general "
-            "feedback row holds tree='' again. Re-run that PATCH with the "
-            "service key: submissions?kind=eq.feedback&tree=eq. set to "
-            "{\"tree\": null}"),
-        "answered": "2026-10-16T08:19:00",
-    },
-}
+# Signatures already dealt with: a code fix and the first build carrying it,
+# and/or a server-side fix that stops it without a build (data/crash-fixes.json).
+FIXES = os.path.join(ROOT, "data", "crash-fixes.json")
 
 BURST = 3          # crashes of one signature on a store build ...
 BURST_HOURS = 24   # ... inside this many hours is an act item
+
+# URGENT (Hidde, 2026-10-16: flag "when a crash needs an immediate update"):
+# the app is unusable for someone (one phone crashing URGENT_SAME_PHONE times
+# inside URGENT_PHONE_HOURS, the crash-at-every-launch pattern: Peter's 1.0.2
+# crashed 37 times from one phone), or the crash is spreading (URGENT_PHONES
+# phones on one signature in 24h). Only when no server-side fix stops it.
+URGENT_SAME_PHONE = 3
+URGENT_PHONE_HOURS = 6
+URGENT_PHONES = 2
+
+FIX_IN_SOURCE = (
+    "Fix it in the app source on main, in a .claude/worktrees/ worktree (the "
+    "app rules), with a unit test that reproduces it where possible, and merge "
+    "so the next archive carries it. Add it to data/crash-fixes.json "
+    "(signature, build, fix_commit, first_fixed_build = the next build number) "
+    "and log 'For Hidde: next build carries fix for <signature>' in LOG.md. "
+    "The night run never archives, uploads or submits; Hidde does.")
+
+CHECK_SERVER_FIRST = (
+    "First check whether a server-side fix stops it (a data row the app trips "
+    "on, like the empty-tree PATCH of 2026-10-16). If one does, apply it, add "
+    "server_remedy and contained_at to its data/crash-fixes.json entry, and "
+    "log 'contained, ships with next build': then it is not urgent.")
+
+EXPEDITE = (
+    "For Hidde: archive in Xcode (Product, Archive), upload to App Store "
+    "Connect, and submit the version with 'Request expedited review' "
+    "(developer.apple.com/contact/app-store/?topic=expedite).")
+
+
+def load_fixes():
+    try:
+        with open(FIXES, encoding="utf-8") as f:
+            return json.load(f).get("fixes") or []
+    except (OSError, ValueError):
+        return []
 
 
 def _get(path, key, timeout=30):
@@ -155,12 +192,28 @@ def _tidy(line):
     return line.replace("|", "/").strip()
 
 
+def _pick(lines):
+    """Inlined frames come innermost first; the lines that name our own code
+    are what a person needs, so runtime frames are folded away."""
+    if not lines:
+        return None
+    ours = [ln for ln in lines if ".swift:" in ln]
+    head = lines[0] if "Swift runtime failure" in lines[0] else None
+    picked = ([head] if head else []) + ours[:2]
+    return " < ".join(picked or lines[:2])
+
+
 def symbol(binary, uuid, offset):
-    """atos on the matching dSYM, or None when this machine has none.
-    Inlined frames come back too, innermost first; the line that names our
-    own code is what a person needs, so runtime frames are folded away."""
+    """The source line for a frame: from the stored symbol map
+    (data/crash-symbols/, readable in CI), else atos on this Mac's dSYM,
+    else None."""
     if not uuid or offset is None:
         return None
+    got = crash_symbols.lookup(uuid, offset)
+    if got is None and crash_symbols.ensure(uuid):
+        got = crash_symbols.lookup(uuid, offset)
+    if got:
+        return _pick(got.split(" < "))
     if uuid not in _dsyms:
         path = None
         try:
@@ -185,13 +238,7 @@ def symbol(binary, uuid, offset):
                            capture_output=True, text=True, timeout=20)
     except (OSError, subprocess.SubprocessError):
         return None
-    lines = [_tidy(ln) for ln in r.stdout.splitlines() if ln.strip()]
-    if not lines:
-        return None
-    ours = [ln for ln in lines if ".swift:" in ln]
-    head = lines[0] if "Swift runtime failure" in lines[0] else None
-    picked = ([head] if head else []) + ours[:2]
-    return " < ".join(picked or lines[:2])
+    return _pick([_tidy(ln) for ln in r.stdout.splitlines() if ln.strip()])
 
 
 def group(diags, symbolicate=True):
@@ -203,21 +250,23 @@ def group(diags, symbolicate=True):
             "kind": d["kind"], "build": d["build"], "version": d["version"],
             "exc": d["exc"], "binary": d["binary"], "uuid": d["uuid"],
             "offset": d["offset"],
-            "count": 0, "first": d["at"], "last": d["at"], "_phones": set(),
-            "times": [], "testflight": d["testflight"]})
+            "count": 0, "first": d["at"], "last": d["at"],
+            # phone fingerprint -> crash times, in memory only, never printed
+            "_phone_times": {}, "times": [], "testflight": d["testflight"]})
         s["count"] += 1
         s["first"] = min(s["first"], d["at"])
         s["last"] = max(s["last"], d["at"])
-        s["_phones"].add(d["_phone"])
+        s["_phone_times"].setdefault(d["_phone"], []).append(d["at"])
         s["times"].append(d["at"])
+    fixes = load_fixes()
     out = []
     for s in sigs.values():
-        s["phones"] = len(s.pop("_phones"))
+        s["phones"] = len(s["_phone_times"])
         s["frame"] = ("%s+%s" % (s["binary"], hex(s["offset"]))
                       if s["offset"] is not None else "(no %s frame)" % BINARY)
         s["symbol"] = symbol(s["binary"], s["uuid"], s["offset"]) if symbolicate else None
-        known = KNOWN.get((s["build"], s["offset"]))
-        s["known"] = known
+        s["fix"] = next((f for f in fixes if f.get("signature") == s["frame"]
+                         and str(f.get("build")) == s["build"]), None)
         out.append(s)
     out.sort(key=lambda s: (-s["count"], s["last"]))
     return out
@@ -278,29 +327,119 @@ def _when(iso):
         tzinfo=datetime.timezone.utc)
 
 
-def bursts(sigs, stores, now=None):
-    """Signatures on a store build that fired BURST times in BURST_HOURS."""
+def released(fix, stores):
+    """The store build that carries this fix and is on sale, or None."""
+    try:
+        first = int(fix.get("first_fixed_build"))
+    except (TypeError, ValueError):
+        return None
+    for b, v in stores.items():
+        if v.get("state") == "READY_FOR_SALE" and b.isdigit() and int(b) >= first:
+            return b
+    return None
+
+
+def fix_label(s, stores):
+    f = s.get("fix")
+    if not f:
+        return ""
+    if f.get("first_fixed_build"):
+        r = released(f, stores)
+        label = ("fixed in build %s, released" % r if r else
+                 "fixed in build %s, waiting for release" % f["first_fixed_build"])
+    else:
+        label = "no code fix yet"
+    if f.get("server_remedy"):
+        label += "; contained server-side"
+    return label
+
+
+def _max_in_window(times, hours):
+    ts = sorted(_when(t) for t in times)
+    best, j = 0, 0
+    for i, t in enumerate(ts):
+        while t - ts[j] > datetime.timedelta(hours=hours):
+            j += 1
+        best = max(best, i - j + 1)
+    return best
+
+
+def assess(sigs, stores, now=None):
+    """What each store-build crash signature asks of us, newest window only.
+
+    level: urgent  needs a new build now (no server-side fix stops it)
+           reapply a contained crash fired again: re-apply its server fix
+           act     a burst with no fix yet: fix it in the source tonight
+           waiting fixed in a build that is not on sale yet, or on sale and
+                   this phone is on an old build; nothing to do but wait
+    Crashes before a fix's contained_at count as answered."""
     now = now or datetime.datetime.now(datetime.timezone.utc)
     out = []
     for s in sigs:
         if s["kind"] != "crash" or not is_store(s["build"], stores):
             continue
+        f = s.get("fix") or {}
         cut = now - datetime.timedelta(hours=BURST_HOURS)
-        if s["known"] and s["known"].get("answered"):
-            cut = max(cut, _when(s["known"]["answered"]))
-        n = sum(1 for t in s["times"] if _when(t) >= cut)
-        if n >= BURST:
-            out.append((s, n))
+        if f.get("contained_at"):
+            cut = max(cut, _when(f["contained_at"]))
+        recent = {p: [t for t in ts if _when(t) >= cut]
+                  for p, ts in s["_phone_times"].items()}
+        recent = {p: ts for p, ts in recent.items() if ts}
+        n = sum(len(ts) for ts in recent.values())
+        phones = len(recent)
+        same_phone = max((_max_in_window(ts, URGENT_PHONE_HOURS)
+                          for ts in recent.values()), default=0)
+        pattern = same_phone >= URGENT_SAME_PHONE or phones >= URGENT_PHONES
+        if not (pattern or n >= BURST):
+            continue
+        if f.get("server_remedy"):
+            level = "reapply"
+        elif f.get("first_fixed_build"):
+            level = "urgent" if pattern and not released(f, stores) else "waiting"
+        else:
+            level = "urgent" if pattern else "act"
+        out.append({"s": s, "level": level, "n": n, "phones": phones,
+                    "same_phone": same_phone, "label": fix_label(s, stores)})
+    order = {"urgent": 0, "reapply": 1, "act": 2, "waiting": 3}
+    out.sort(key=lambda a: (order[a["level"]], -a["n"]))
     return out
+
+
+def message(a):
+    """One sentence a run, or Hidde, can act on."""
+    s, f = a["s"], a["s"].get("fix") or {}
+    head = ("%s on store build %s (%s): %d crash(es) on %d phone(s) in %dh"
+            % (where(s), s["version"], s["build"], a["n"], a["phones"], BURST_HOURS))
+    if a["same_phone"] >= URGENT_SAME_PHONE:
+        head += ", one phone %d times inside %dh (a crash at every launch)" % (
+            a["same_phone"], URGENT_PHONE_HOURS)
+    if a["level"] == "urgent":
+        if f.get("first_fixed_build"):
+            return ("URGENT, needs a new build now: %s. The fix is in build %s, "
+                    "which is not on sale. %s" % (head, f["first_fixed_build"], EXPEDITE))
+        return ("URGENT, needs a new build now: %s. %s Otherwise: %s Then: %s"
+                % (head, CHECK_SERVER_FIRST, FIX_IN_SOURCE, EXPEDITE))
+    if a["level"] == "reapply":
+        return ("%s. Contained before, and it fired again: %s. Then log "
+                "'contained, ships with next build'." % (head, f["server_remedy"]))
+    if a["level"] == "act":
+        return "%s. %s %s" % (head, CHECK_SERVER_FIRST, FIX_IN_SOURCE)
+    return "%s. %s." % (head, a["label"] or "fixed")
+
+
+_loaded = {}
 
 
 def load(days=30, symbolicate=True):
     """(signatures, store builds), or (None, reason) when the key is absent."""
+    if (days, symbolicate) in _loaded:
+        return _loaded[(days, symbolicate)]
     key = load_key()
     if not key:
         return None, "SUPABASE_SERVICE_KEY not set"
     sigs = group(diagnostics(fetch_rows(key, days)), symbolicate)
-    return sigs, store_builds()
+    _loaded[(days, symbolicate)] = (sigs, store_builds())
+    return _loaded[(days, symbolicate)]
 
 
 def where(s):
@@ -330,12 +469,11 @@ def main():
             where(s), s["phones"], s["first"][:16].replace("T", " "),
             s["last"][:16].replace("T", " ")))
     for s in sigs:
-        if s["known"]:
-            print("\n  %s on build %s is known: %s" % (s["frame"], s["build"],
-                                                       s["known"]["remedy"]))
-    for s, n in bursts(sigs, stores):
-        print("\n  BURST: %s on store build %s crashed %d times in %dh."
-              % (where(s), s["build"], n, BURST_HOURS))
+        if s["fix"]:
+            print("\n  %s on build %s: %s (%s)." % (
+                s["frame"], s["build"], s["fix"].get("what", ""), fix_label(s, stores)))
+    for a in assess(sigs, stores):
+        print("\n  %s: %s" % (a["level"].upper(), message(a)))
     return 0
 
 

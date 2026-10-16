@@ -187,6 +187,41 @@ def broken_gates(out):
             "then gh run view <id> --log-failed", ""]
 
 
+def app_crashes(out):
+    """A crash on a store build that needs a new build now, with Hidde's steps
+    (2026-10-16: flag "when a crash needs an immediate update"), and a store
+    build whose archive has no symbol map yet, which only this Mac can make.
+    Capped at 20 seconds: a slow Supabase must not hold up the session."""
+    def ask():
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import crashes
+        import crash_symbols
+        lines = []
+        sigs, stores = crashes.load(days=2)
+        if sigs is not None:
+            for a in crashes.assess(sigs, stores):
+                if a["level"] == "urgent":
+                    lines.append("  " + crashes.message(a))
+        todo = crash_symbols.missing()
+        return lines, todo
+
+    try:
+        from concurrent.futures import ThreadPoolExecutor
+        pool = ThreadPoolExecutor(max_workers=1)
+        lines, todo = pool.submit(ask).result(timeout=20)
+        pool.shutdown(wait=False)
+    except Exception:
+        return
+    if lines:
+        out.append("BROKEN, the app on readers' phones (URGENT, CLAUDE.md rung 2):")
+        out += lines + [""]
+    if todo:
+        out.append("%d store build(s) have no crash symbol map, so a night run "
+                   "cannot name the line: python3 scripts/crash_symbols.py"
+                   % len({b for b, _, _ in todo}))
+        out.append("")
+
+
 def photos_still_off_domain(out):
     """Card photographs still served by somebody else, which a session must fix.
 
@@ -349,6 +384,7 @@ def window_lost_to_refusals(out):
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
     since_last_visit(out)
+    app_crashes(out)
     broken_gates(out)
     window_lost_to_refusals(out)
     photos_still_off_domain(out)

@@ -3399,23 +3399,36 @@ def app_crashes_section(_today=None):
     other = [s for s in sigs if not crashes.is_store(s["build"], stores)]
     out = [head, ""]
     if live:
-        out.append("| Crashes | Kind | Build | Where | Phones | Last |")
-        out.append("|---:|---|---|---|---:|---|")
+        out.append("| Crashes | Kind | Build | Where | Phones | Last | Fix |")
+        out.append("|---:|---|---|---|---:|---|---|")
         for s in live:
-            out.append("| %d | %s | %s (%s) | %s | %d | %s |" % (
-                s["count"], s["kind"], s["version"], s["build"],
-                crashes.where(s) + (" (known)" if s["known"] else ""),
-                s["phones"], s["last"][:10]))
+            out.append("| %d | %s | %s (%s) | %s | %d | %s | %s |" % (
+                s["count"], s["kind"], s["version"], s["build"], crashes.where(s),
+                s["phones"], s["last"][:10], crashes.fix_label(s, stores) or "none"))
     else:
         out.append("- No crash or hang reported from a store build.")
     if other:
         out.append("- Builds not from the App Store (Xcode or review): %d report(s) "
                    "on build %s." % (sum(s["count"] for s in other),
                                      ", ".join(sorted({s["build"] for s in other}))))
-    for s, n in crashes.bursts(live, stores):
-        out.append("- **%s fired %d times in 24h on build %s**: rung-2 work "
-                   "(python3 scripts/crashes.py)." % (s["frame"], n, s["build"]))
+    for a in crashes.assess(live, stores):
+        if a["level"] != "waiting":
+            out.append("- **%s** (rung 2): %s" % (a["level"], crashes.message(a)))
     return "\n".join(out)
+
+
+def urgent_crash_line(_today=None):
+    """One line above the headline when a store build needs a new build now
+    (Hidde, 2026-10-16: flag a crash that needs an immediate update)."""
+    import crashes
+    sigs, stores = crashes.load(days=7)
+    if sigs is None:
+        return ""
+    urgent = [a for a in crashes.assess(sigs, stores) if a["level"] == "urgent"]
+    return "\n".join("**URGENT: %s, %d phone(s), build %s (%s): needs a new build "
+                     "now.** %s" % (a["s"]["frame"], a["phones"], a["s"]["build"],
+                                    a["s"]["version"], crashes.EXPEDITE)
+                     for a in urgent)
 
 
 def app_store_downloads_lines():
@@ -3825,6 +3838,13 @@ def main():
         blocks.insert(0, headline_section(today))
     except Exception as e:
         blocks.insert(0, "headline_section: failed today (%s)." % str(e)[:90])
+    # Above even the headline: a crash that needs a new build now.
+    try:
+        urgent = urgent_crash_line(today)
+        if urgent:
+            blocks.insert(0, urgent)
+    except Exception as e:
+        blocks.insert(0, "urgent_crash_line: failed today (%s)." % str(e)[:90])
     # The slow tables, together at the bottom on Mondays, gone on other days.
     if MONDAY and WEEKLY:
         blocks.append("**Monday: the slow tables.** They rarely change a day's decision, "

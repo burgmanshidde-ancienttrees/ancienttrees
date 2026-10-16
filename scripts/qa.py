@@ -358,6 +358,59 @@ def check_no_strategy_in_workflows():
     return out
 
 
+def check_app_crashes_reach_a_person():
+    """The app's crash reports are read, flagged and acted on, every day.
+
+    2026-10-16: one reader's 1.0.2 crashed 37 times over three days in the
+    `diagnostics` table while nothing read it; he had to mail. Hidde: "can
+    this be added to our nightrun rhythm? check for crashes, flag them and
+    improve for the next build", and flag a crash that needs an immediate
+    update. This holds the wiring in place: health.py turns a burst into
+    rung-2 work, the digest carries the table and the URGENT line, brief.py
+    shows URGENT at session start, the thresholds do not loosen, and
+    data/crash-fixes.json stays readable. Removing this check needs Hidde.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    scripts = root / "scripts"
+
+    def text(name):
+        p = scripts / name
+        return p.read_text(encoding="utf-8") if p.exists() else ""
+
+    wiring = [
+        ("crashes.py", "def assess(", "crashes.py lost assess(), which decides urgent, act, reapply"),
+        ("health.py", "crashes.assess(", "health.py no longer turns an app crash burst into rung-2 work"),
+        ("daily_digest.py", "block(app_crashes_section", "the digest no longer carries the App crashes table"),
+        ("daily_digest.py", "urgent_crash_line(today)", "the digest no longer puts an URGENT crash above the headline"),
+        ("brief.py", "app_crashes(out)", "brief.py no longer shows an URGENT crash at session start"),
+    ]
+    for name, needle, why in wiring:
+        if needle not in text(name):
+            out.append(f"scripts/{name}: {why} (check_app_crashes_reach_a_person).")
+    limits = {"BURST": 3, "BURST_HOURS": 24, "URGENT_SAME_PHONE": 3,
+              "URGENT_PHONES": 2}
+    src = text("crashes.py")
+    for name, most in limits.items():
+        m = re.search(r"^%s = (\d+)" % name, src, re.M)
+        if not m:
+            out.append(f"scripts/crashes.py: {name} is gone (check_app_crashes_reach_a_person).")
+        elif (int(m.group(1)) < most) if name == "BURST_HOURS" else (int(m.group(1)) > most):
+            out.append(f"scripts/crashes.py: {name} = {m.group(1)} loosens the crash alarm "
+                       f"(was {most}); that needs Hidde.")
+    fixes = root / "data" / "crash-fixes.json"
+    try:
+        for f in json.loads(fixes.read_text(encoding="utf-8")).get("fixes", []):
+            if not f.get("signature") or not f.get("build"):
+                out.append("data/crash-fixes.json: an entry without signature or build.")
+            if not (f.get("first_fixed_build") or f.get("server_remedy")):
+                out.append(f"data/crash-fixes.json: {f.get('signature')} names neither a "
+                           "fixed build nor a server remedy, so it would hide a live crash.")
+    except (OSError, ValueError) as e:
+        out.append(f"data/crash-fixes.json unreadable ({e.__class__.__name__}).")
+    return out
+
+
 def check_a_stored_session_is_verified_with_the_server():
     """Every page that carries a heart must also carry the code that checks a
     stored session with Supabase and forgets it when the server says no.
@@ -2870,6 +2923,7 @@ def main():
         check_css_braces_balance,
         check_hidden_means_hidden,
         check_an_organisation_beside_a_name_was_asked_for,
+        check_app_crashes_reach_a_person,
     ]
     if args.source_only:
         # The photo checks are left out on purpose: they read every image in
@@ -2897,6 +2951,7 @@ def main():
     failures += check_scripts_are_valid_python()
     failures += check_auth_corpus_agreement()
     failures += check_people_s_addresses_stay_out_of_the_repo()
+    failures += check_app_crashes_reach_a_person()
     failures += check_every_gate_asks_the_server()
     failures += check_a_user_id_is_not_read_from_the_stored_session()
     failures += check_icons_are_drawn()
