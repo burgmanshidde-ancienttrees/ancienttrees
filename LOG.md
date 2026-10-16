@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 eighth attempt (18:12 window, 7-day visits: 2019 visits, 2825 page views): nothing shipped
+
+- Sightings inbox empty. health.py's only item, "Smoke test skipped", is every push-triggered smoke run skipping in 1-2 seconds (deploy is green, 1.5h ago), not a broken build. `enrich.py --next` and `langcheck.py --next` print nothing to do; the 60 READY leads stay blocked by the rich-page rule, so no pass was dispatched.
+- Scouting: Monterey retried. The Cal Poly big-trees API is live but still states no licence; the only unlock is the permission email to Cal Poly (drafts/OUTREACH.md), Hidde's to send. `retried` set in data/register-scouting.json so scout_next moves on.
+
 ## 2026-10-16 seventh attempt: photographs vendored, no new trees
 
 - Ran `vendor_photos.py`: 30 photographs (Berlin 25, London 3, NYC 1, Vienna 1) now sit on our own domain, so the app's image URLs for them stop depending on the source host. 47 skipped on licence as before. No claims standing; the 60 READY leads are still blocked by the rich-page rule, so no write pass was dispatched.
