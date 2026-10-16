@@ -75,6 +75,18 @@
       "note": "SCOUTED 2026-10-15 on scout_next.py --target (#313). Wikidata search holds no tree entries for the town. No Stratford-on-Avon District or Warwickshire notable-tree register with open terms seen; TPO points on planning.data.gov.uk (OGL v3.0) are protection, not remarkableness. Woodland Trust Ancient Tree Inventory has no reuse licence for us. Next angle: Shakespeare Birthplace Trust gardens (mulberry at New Place, a finding aid), Holy Trinity churchyard yews, Warwickshire veteran-tree surveys."
     },
     {
+      "place": "Newark",
+      "country": "United States",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-16 on scout_next.py --target (#369). One search: no Newark NJ heritage or notable-tree register with open data; a 1980s street-tree inventory is mentioned but no public geolocated copy seen. The NJ Forest Service Big and Heritage Tree Registry (nj.gov/dep/parksandforests/forest/bigtrees) is statewide, 569 big-tree entries, licence and coordinates unchecked. Military Park Washington Sycamore is history only (Newark Public Library, Knowing Newark). Next angle: fetch the NJ Big Tree list and check for Essex County rows with coordinates and reuse terms."
+    },
+    {
+      "place": "Regensburg",
+      "country": "Germany",
+      "status": "stalled",
+      "note": "SCOUTED 2026-10-16 on scout_next.py --target (#366). German Wikipedia 'Liste der Naturdenkmaeler in Regensburg' (wikitext, Stand 2020) mirrors the city ND-SicherungsVO: about 20 surviving entries with ordinance numbers (e.g. Nr. 3 Tegernheimer Eiche, Nr. 10 Platane im Herzogspark, Nr. 28 Martha-Linde, Nr. 34 Platane am Alten Kornmarkt, Nr. 29 two oaks at the Evangelischer Friedhof). Street or locality text only: no coordinates, girth or age, and many rows are avenues, groups or parks, not single points. A finding aid, not an import. The Bayern LfU dataset (CC BY 4.0) holds only one city-centre row. Next angle: geocode the single-tree rows (Nr. 3, 10, 27, 28, 29, 34) from the ordinance PDF on regensburg.de and check each against Commons category photographs for pin evidence."
+    },
+    {
       "place": "Windsor",
       "country": "United Kingdom",
       "status": "stalled",

@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 (later retry): nothing published; scouted Regensburg and Newark
+
+- 0 trees. No claims; enrich empty; written-but-unmerged files and the 60 READY leads still fail the rich-or-reader rule (same as earlier attempts, not retried). Regensburg (#366): de.wikipedia mirror of the city ND ordinance lists about 20 surviving entries but no coordinates, girth or age; finding aid, `stalled`. Newark (#369): no open register; NJ statewide Big Tree list is the untried angle. Both in data/register-scouting.json.
+
 ## 2026-10-16 (retry window): nothing published; scouted Phoenix
 
 - No product change, 0 trees published. No claims standing; enrich queue empty; the 60 READY leads are mostly thin Dutch rows, which recovery mode (rich-only new trees) blocks.
