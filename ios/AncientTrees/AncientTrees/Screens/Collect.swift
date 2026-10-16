@@ -1032,6 +1032,26 @@ struct CollectView: View {
     }
 
     @ViewBuilder private var whoYouAre: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            whoRow
+            // YOUR BADGES ON THEIR OWN ROW, under the whole header and level
+            // with the page's left edge (Hidde, 2026-10-16: "the alignment is
+            // pretty bad"). Above the name they floated over its 44-point tap
+            // frame with a gap beneath, and beside the avatar the column was
+            // too narrow for two, so they stacked even on a Pro. Instagram
+            // puts a profile's labels in the same place, under the picture.
+            // Ambassador first, because it says more; side by side, stacked
+            // only if even the full width cannot hold both.
+            if account.isSignedIn, !profiles.myPlaces.isEmpty || earlyAdopter {
+                ViewThatFits(in: .horizontal) {
+                    HStack(spacing: 6) { badges }
+                    VStack(alignment: .leading, spacing: 4) { badges }
+                }
+            }
+        }
+    }
+
+    @ViewBuilder private var whoRow: some View {
         HStack(spacing: 14) {
             let editable = account.isSignedIn
             // ONLY THE NAME IS TAPPABLE (Hidde, 2026-08-27: "als ik de slider
@@ -1076,21 +1096,6 @@ struct CollectView: View {
                 .accessibilityIdentifier("mytrees-edit-photo")
     
                 VStack(alignment: .leading, spacing: 0) {
-                    // Your ambassador badge, when a place has given you one
-                    // (AmbassadorBadge.swift, komoot's Pioneer shape). Drawn
-                    // above the name so the name keeps its tap target intact.
-                    if editable, !profiles.myPlaces.isEmpty || earlyAdopter {
-                        // Ambassador first, because it says more; the early
-                        // adopter pill beside it in gold (2026-10-16).
-                        // Side by side when both fit; stacked on a small
-                        // phone, where side by side cut both to "Paris a..."
-                        // (iPhone SE, 2026-10-16).
-                        ViewThatFits(in: .horizontal) {
-                            HStack(spacing: 6) { badges }
-                            VStack(alignment: .leading, spacing: 4) { badges }
-                        }
-                        .padding(.bottom, 4)
-                    }
                     // The part before the @ rather than the whole address
                     // truncated in the middle, which rendered as "burgma...ail.com"
                     // on his own phone and reads as a bug rather than as a name.
