@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 night run 14:17 UTC (7-day visits: 1810 visits, 2420 page views)
+
+- **App**: the scheduled iOS run failed only on the sweep's drift check (Add a tree sheet: the one line started at x=26, other things at x=20). The text now spans the sheet's width (CollectIntro.swift); the next iOS run proves it. Floor tests were 224 passed.
+- **Photos**: 4 approved in Berlin (ber_039, 042, 046, 062; reversal `photo_apply.py hold <id>`), ber_059 held on species. Singapore had nothing new (judged earlier today). ber_062's December photos show the crown cut back and fungus; a rewrite is noted in its verify_notes. Photo lanes are close to exhausted: three viewing passes today, yield 23, 3, 0, 4.
+- Nothing from readers waiting; health.py's only item was the iOS run.
+
+<!-- continued below -->
 ## 2026-10-16 session: launch outreach to the big-tree communities
 
 Hidde mailed, in his own words, the admin of Big Tree Seekers and Big Trees of New York (Landis Arboretum) and the coordinator of Australia's National Register of Big Trees (Finding Big Trees group): what do they think of the app, and may he share it in their groups. Both logged in the private OUTREACH.md. Not mailed: the Ancient Tree Forum (three unanswered mails since August) and the Ancient Yew Group (its contact goes to the Tree Register inbox, already mailed twice). The Australian register is All Rights Reserved: a finding aid only, permission to be asked in a reply (data/register-scouting.json).
