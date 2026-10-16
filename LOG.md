@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 ninth attempt: nothing shipped
+
+- No claims standing. The 60 READY leads are still blocked by the rich-page rule; enrich and photo lanes are empty. Backup lane: Jacksonville retried. The only public Duval row is one Tough Bumelia at an unidentified state facility, and the Florida register withholds private rows, so it stays stalled (`retried` set).
+
 ## 2026-10-16 eighth attempt (18:12 window, 7-day visits: 2019 visits, 2825 page views): nothing shipped
 
 - Sightings inbox empty. health.py's only item, "Smoke test skipped", is every push-triggered smoke run skipping in 1-2 seconds (deploy is green, 1.5h ago), not a broken build. `enrich.py --next` and `langcheck.py --next` print nothing to do; the 60 READY leads stay blocked by the rich-page rule, so no pass was dispatched.
