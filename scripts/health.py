@@ -747,6 +747,30 @@ def main():
                   f"checked {(mh.get('last_ok_at') or '?')[:16]}, "
                   f"last sent {(mh.get('last_sent_at') or 'never')[:16]}")
 
+    # THE APP CRASHING ON READERS' PHONES (2026-10-16). MetricKit posts every
+    # crash to the `diagnostics` table, and for three days one reader's 1.0.2
+    # crashed 37 times there while nothing read it; he had to mail. A signature
+    # on a store build that fires BURST times in a day is rung-2 work.
+    try:
+        import crashes
+        sigs, stores = crashes.load(days=2)
+        if sigs is None:
+            unknown.append("app crashes (no service key)")
+        else:
+            hot = crashes.bursts(sigs, stores)
+            live = sum(s["count"] for s in sigs if crashes.is_store(s["build"], stores))
+            print(f"  {'App crashes':20s} {'BURST' if hot else 'ok':10s} "
+                  f"{live} from store builds in 48h")
+            for s, n in hot:
+                fix = (" Known: " + s["known"]["remedy"] + "." if s["known"] else
+                       " Unknown signature: python3 scripts/crashes.py symbolicates "
+                       "it on the Mac, where the dSYM lives.")
+                problems.append(
+                    f"The app crashed {n} times in {crashes.BURST_HOURS}h on store "
+                    f"build {s['version']} ({s['build']}) at {crashes.where(s)}.{fix}")
+    except Exception as e:
+        unknown.append(f"app crashes ({e.__class__.__name__})")
+
     # APPLE'S WEB SECRET EXPIRES, and that is the whole reason this check
     # exists. Sign in with Apple on the WEB authenticates us with a JWT we sign
     # ourselves, and Apple caps its life at six months. The day it lapses the

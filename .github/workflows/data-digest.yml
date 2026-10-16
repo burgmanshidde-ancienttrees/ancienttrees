@@ -214,7 +214,8 @@ jobs:
           git add LOG.md CURATION.md archive/ 2>/dev/null || true
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
             data/cities data/backlinks.json data/photo-autumn.json \
-            data/city-coords.json data/research/*-register-candidates.json data/noindex.json data/noindex.md 2>/dev/null || \
+            data/city-coords.json data/research/*-register-candidates.json data/noindex.json data/noindex.md \
+            data/store-builds.json 2>/dev/null || \
             git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json data/city-coords.json data/backlinks.json
           if git diff --cached --quiet; then
             echo "No new entry today."

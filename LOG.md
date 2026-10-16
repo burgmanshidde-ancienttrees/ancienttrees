@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 session: the app's crash reports now reach a person
+
+- **What changed:** the app's MetricKit crashes (Supabase `diagnostics`) are read every day now. Until today nothing read that table, which is why one reader's 1.0.2 crashed 37 times from 10-13 to 10-16 before his mail told us.
+- `python3 scripts/crashes.py [--days N]`: groups crashes and hangs by build, exception/signal and the top AncientTrees frame; on the Mac it symbolicates with the dSYM (today: 37 on build 20 at `MyVotes.treeId` WorthIt.swift:84, the known one; 9 on Xcode build 25). In CI it prints the raw offset. Output is counts and builds only, never device or region.
+- **Daily digest:** an "App crashes" table, last 7 days, store builds only; Xcode and review builds are one line under it. Store builds come from App Store Connect and are cached in data/store-builds.json (the digest commits it) so the night run, which holds no Apple key, can still tell them apart.
+- **health.py:** a signature on a store build firing 3+ times in 24h is a rung-2 act item. The known `AncientTrees+0xb8180` on build 20 carries its remedy (re-run the `submissions?kind=eq.feedback&tree=eq.` to NULL PATCH); crashes before this morning's data fix count as answered, so health is green on it today.
+- MetricKit only reports from phones that share analytics with developers: a sample, not the count.
+
 ## 2026-10-16 night run (fourth attempt): nothing shipped
 
 No claims stood. 60 READY leads (mostly Roosendaal street trees) still fail the rich-or-reader rule in recovery mode, so no write pass. `langcheck.py --next`: no city has 10+ English impressions untranslated. 0 trees, nothing changed in the product.

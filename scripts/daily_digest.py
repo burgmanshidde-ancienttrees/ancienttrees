@@ -3384,6 +3384,40 @@ def app_store_section(_today=None):
     return "\n".join(lines).strip() if lines else ""
 
 
+def app_crashes_section(_today=None):
+    """The app's MetricKit crash reports, grouped by signature (scripts/crashes.py).
+    Added 2026-10-16: one reader's 1.0.2 crashed 37 times over three days in a
+    table nobody read, and we heard about it from his mail. Store builds only in
+    the table; builds Hidde ran from Xcode are one line under it. Counts and
+    builds only: the payload's device and region never leave crashes.py."""
+    import crashes
+    head = "**App crashes** (last 7 days, store builds; MetricKit, a sample)"
+    sigs, stores = crashes.load(days=7)
+    if sigs is None:
+        return head + "\n\n- %s; the crash table is skipped." % stores
+    live = [s for s in sigs if crashes.is_store(s["build"], stores)]
+    other = [s for s in sigs if not crashes.is_store(s["build"], stores)]
+    out = [head, ""]
+    if live:
+        out.append("| Crashes | Kind | Build | Where | Phones | Last |")
+        out.append("|---:|---|---|---|---:|---|")
+        for s in live:
+            out.append("| %d | %s | %s (%s) | %s | %d | %s |" % (
+                s["count"], s["kind"], s["version"], s["build"],
+                crashes.where(s) + (" (known)" if s["known"] else ""),
+                s["phones"], s["last"][:10]))
+    else:
+        out.append("- No crash or hang reported from a store build.")
+    if other:
+        out.append("- Builds not from the App Store (Xcode or review): %d report(s) "
+                   "on build %s." % (sum(s["count"] for s in other),
+                                     ", ".join(sorted({s["build"] for s in other}))))
+    for s, n in crashes.bursts(live, stores):
+        out.append("- **%s fired %d times in 24h on build %s**: rung-2 work "
+                   "(python3 scripts/crashes.py)." % (s["frame"], n, s["build"]))
+    return "\n".join(out)
+
+
 def app_store_downloads_lines():
     """Real App Store download counts, from Apple's own Analytics Reports
     API rather than PostHog: a download that never opens the app, or opens
@@ -3750,6 +3784,7 @@ def main():
     block(app_section, today)
     block(app_builder_section, today)
     block(app_store_section, today)
+    block(app_crashes_section, today)
 
     gsc_latest = None
     gsc_data = None
