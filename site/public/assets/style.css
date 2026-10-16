@@ -931,7 +931,10 @@ a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--c
 /* The early-adopter badge (lib/early-adopter.ts, 2026-10-16): the ambassador's pill, its numbers unchanged, in the app's gold (Brand.gold / goldInk). Sits on the same line after it when both fit. */
 .profile-early { display: inline-flex; align-items: center; gap: 6px; margin: 0.4rem 0 0; font-size: 13px; color: #8F6210; background: rgba(217,161,63,0.18); border-radius: 999px; padding: 4px 10px 4px 8px; }
 .profile-early svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
-.profile-ambassador:not([hidden]) + .profile-early { margin-left: 6px; }
+/* The badges' own row under the header (account.astro, 2026-10-16), the app's layout: side by side, wrapping only when the width runs out. Gone while both badges are hidden. */
+.profile-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.profile-badges .profile-ambassador, .profile-badges .profile-early { margin: 0; }
+.profile-badges:not(:has(> :not([hidden]))) { display: none; }
 /* 44px, Apple's own minimum, which the first sweep of the app found broken in
    four places. A gear is the easiest control on a page to under-size. */
 .profile-gear { flex: none; width: 44px; height: 44px; border-radius: 50%;
