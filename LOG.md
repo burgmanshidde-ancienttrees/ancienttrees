@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 nineteenth attempt (22:25 window, 7-day visits: 2091 visits, 2914 page views): nothing shipped
+
+- Sightings inbox empty. health.py lists the push-triggered smoke skips (1s, deploy green) and the scheduled iOS run failing again at 1h55m, which looks like the 120-minute cap and not an assertion; I did not open its log. It needs a Mac session. Enrich has nothing to do, the 60 READY leads are still blocked by the rich-page rule, and `photo_hunt.py --recheck --city london` found no new candidates for its 7 photo-less trees. No pass dispatched, no scouting retry (every BACKUP target was retried today).
+
 ## 2026-10-16 eighteenth attempt: nothing shipped
 
 - No claims standing. Looked at the "written and ready to merge" trees in `passcheck.py --pending` (Leipzig, Delft, London, Fort Worth, Salt Lake City, tree-of-the-year, Figueira das Lágrimas). The one I opened, lpz_019 (Kleinzschocher Ginkgo), has no established access (hard rule 10) and an approximate pin, so it is not rich and stays unmerged. I did not open the other nine. The 60 READY leads are still blocked by the rich-page rule, so no pass was dispatched. I did not retry scouting: Lansing, the next BACKUP item, was already scouted twice on 10-05 and the last 17 attempts all ended the same way. For lpz_019 the unlock is a source for visitor access; I did not check what the others lack.
