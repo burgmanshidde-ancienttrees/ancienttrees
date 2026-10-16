@@ -1,15 +1,19 @@
 # Reply to the Cardiff parks officer, Raoul Wallenberg tree (2026-10-16)
 
-To: Laura (Cardiff parks), reply in her thread. Hidde sends.
+To: Laura (Cardiff parks), reply in her thread. Hidde sends. His words, typos tidied.
 
 ---
 
 Hi Laura,
 
-Thanks so much, that was exactly the gap on the page. It now says tree of heaven, and the recognition line mentions the leaves so people can pick it out in Alexandra Gardens:
+Thanks so much for letting us know, we've included it on the page:
 https://ancienttrees.app/cardiff/raoul-wallenberg-tree
 
-You know Cardiff's parks far better than we do. Is there an old tree in the city you think we're missing?
+If there are any other details you'd like to share about trees in Cardiff, it would be highly appreciated.
 
-Thanks again,
+And if you ever happen to walk past, we've made an app to make it easy to add a photo. That would really help:
+https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB
+
+Either way, thanks again for the help.
+
 Hidde
