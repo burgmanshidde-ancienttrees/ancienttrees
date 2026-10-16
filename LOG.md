@@ -19,6 +19,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Sightings inbox empty. health.py's only item is again the push-triggered smoke run skipping in 1s (deploy green). Enrich, langcheck and the 60 READY leads are unchanged (blocked by the rich-page rule), so no pass was dispatched. Scouting: Little Rock retried; the Arkansas Agriculture champion-trees page now loads but states no licence, so it stays stalled (`retried` set). Needs a licence ask to the Arkansas Forestry Division, Hidde's to send.
 
+## 2026-10-16 fourteenth attempt: nothing shipped
+
+- No claims standing. The 60 READY leads are still refused by the rich-page rule; enrich says nothing to do. Backup lane: Des Moines retried. The Iowa DNR Big Tree service still has an empty copyright/licence field, so it stays stalled (`retried` set). Unlock: a licence ask to Iowa DNR Forestry, Hidde's to send.
+
 ## 2026-10-16 eleventh attempt: nothing shipped
 
 - No claims standing. Tried merging the 9 written-but-unmerged trees (london lon_029, delft del_011, fort-worth ftw_018, leipzig lpz_019/021/022/023, salt-lake-city slc_006); preflight refused all of them (not rich: pin/register/access missing; ftw_018 story is 83 words; del_011 sits on a register-dead ash and its slug is a removed-tree redirect; Leipzig also needs German overlays). Reverted. lon_029 is the closest: needs only a confirmed pin. `photo_hunt --recheck --city london`: 0 new candidates for 7 trees.
