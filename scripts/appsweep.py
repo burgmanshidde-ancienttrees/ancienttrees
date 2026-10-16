@@ -342,7 +342,7 @@ def screens(sub):
         ("people",        ["-tab=2", "-signed-in", "-people", "-people-demo"], 5),
         # The early-adopter badge on My trees, and its one-time sheet
         # (Kit/EarlyAdopter.swift, 2026-10-16).
-        ("early-adopter", ["-tab=2", "-signed-in", "-earlyadopter"], 6),
+        ("early-adopter", ["-tab=2", "-signed-in", "-earlyadopter", "-country=NL", "-ambassador=Paris"], 6),
         ("early-adopter-sheet", ["-tab=2", "-signed-in", "-earlyadoptersheet"], 6),
     ]
     names = [p[0] for p in plan]

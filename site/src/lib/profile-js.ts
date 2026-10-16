@@ -88,6 +88,19 @@ export const PROFILE_JS = `
             amb.hidden = false;
           }).catch(function() {});
         early(token, u);
+        // YOUR FLAG (profiles.country, 2026-10-16), read on its own so a
+        // database without the column yet costs the flag and never the name.
+        fetch(SB + '/rest/v1/profiles?select=country&user_id=eq.' + encodeURIComponent(u.id),
+              { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
+          .then(function(r) { return r.ok ? r.json() : null; })
+          .then(function(rows) {
+            var c = rows && rows[0] && rows[0].country;
+            var img = el('in-flag');
+            if (!img || !c || !/^[A-Z]{2}$/.test(c)) return;
+            img.src = '/flags/' + c.toLowerCase() + '.svg';
+            try { img.alt = new Intl.DisplayNames(['en'], { type: 'region' }).of(c) || c; } catch (e) { img.alt = c; }
+            img.hidden = false;
+          }).catch(function() {});
         head(token, '/rest/v1/follows?select=follower&followee=eq.' + encodeURIComponent(u.id))
           .then(function(n) { setText('n-followers', n); });
         head(token, '/rest/v1/follows?select=followee&follower=eq.' + encodeURIComponent(u.id))

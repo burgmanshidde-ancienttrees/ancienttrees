@@ -575,7 +575,7 @@ struct ProfileView: View {
                 // catching the location one, and this was the worst of them,
                 // because it stands on the screen where somebody decides
                 // whether to trust us with any of it.
-                Text("We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.")
+                Text("We hold your email address, the name, picture and country you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 Text("To use a different address, write to info@ancienttrees.app and we will move your collection across.")

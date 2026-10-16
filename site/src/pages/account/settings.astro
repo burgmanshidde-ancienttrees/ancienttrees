@@ -25,7 +25,9 @@ import Sheet from "../../components/Sheet.astro";
 import { icon } from "../../lib/icons";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
+import { countryOptions } from "../../lib/countries";
 
+const countries = countryOptions();
 const canonical = `${BASE_URL}/account/settings`;
 const crumbItems: [string, string | null][] = [
   ["Your trees", `${BASE_URL}/account`],
@@ -121,6 +123,14 @@ const crumbItems: [string, string | null][] = [
       <label for="in-name" class="set-edit-label">Your name</label>
       <input id="in-name" type="text" maxlength="40" autocomplete="nickname" placeholder="The name people see" />
       <p class="at-sheet-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
+      {/* The flag after your name (lib/countries.ts, 2026-10-16), the app's
+          Country row as the web's native dropdown. Optional, never guessed. */}
+      <label for="in-country" class="set-edit-label">Your country</label>
+      <select id="in-country" class="set-edit-select">
+        <option value="">None</option>
+        {countries.map((c) => <option value={c.code}>{c.name}</option>)}
+      </select>
+      <p class="at-sheet-fine">Optional. Its flag shows after your name.</p>
     </div>
     <div class="at-sheet-btns">
       <button type="button" id="save-name" class="sheet-b sheet-b--primary">Save</button>
@@ -142,7 +152,7 @@ const crumbItems: [string, string | null][] = [
       screen, sentence for sentence. */}
   <Sheet id="del-sheet" aria-labelledby="del-h">
     <h3 class="at-sheet-h" id="del-h">Delete your account?</h3>
-    <p class="at-sheet-p">We hold your email address, the name and picture you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.</p>
+    <p class="at-sheet-p">We hold your email address, the name, picture and country you chose, and the trees you have saved, collected and photographed. You can delete all of it from this screen.</p>
     <p class="at-sheet-p">We delete your email address and your collection. This cannot be undone.</p>
     <p class="at-sheet-p">To use a different address, write to <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a> and we will move your collection across.</p>
     <div class="set-edit">
@@ -210,7 +220,17 @@ const crumbItems: [string, string | null][] = [
           }
           units(rows[0] ? rows[0].units : null);
         }).catch(function() {});
+      // YOUR COUNTRY, read on its own (profiles.country, 2026-10-16), so a
+      // database without the column yet costs the flag and never the name.
+      fetch(SB + "/rest/v1/profiles?select=country&user_id=eq." + encodeURIComponent(u.id),
+            { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(rows) {
+          myCountry = (rows && rows[0] && rows[0].country) || "";
+          document.getElementById("in-country").value = myCountry;
+        }).catch(function() {});
     }).catch(function() {});
+  var myCountry = "";
 
   // KILOMETRES OR MILES, the same profiles.units the app writes, so the choice
   // follows somebody between the phone and the laptop. The row stays hidden
@@ -367,13 +387,24 @@ const crumbItems: [string, string | null][] = [
                    "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
         body: JSON.stringify([row])
       }).then(function(r) {
-        nameBtn.disabled = false;
         if (r.ok && url) { myAvatar = url; picked = null; }
-        say(r.ok ? "Saved." : "That did not save. Try again in a moment.");
-        if (r.ok) {
-          document.getElementById("me-name").textContent = v;
-          setTimeout(function() { shut("me-sheet"); }, 700);
-        }
+        if (!r.ok) { nameBtn.disabled = false; say("That did not save. Try again in a moment."); return; }
+        document.getElementById("me-name").textContent = v;
+        // The country on its own write, like the app's saveCountry, and only
+        // when it changed: null clears the flag.
+        var want = document.getElementById("in-country").value;
+        var done = function(ok) {
+          nameBtn.disabled = false;
+          say(ok ? "Saved." : "That did not save. Your country would not save.");
+          if (ok) { myCountry = want; setTimeout(function() { shut("me-sheet"); }, 700); }
+        };
+        if (want === myCountry) { done(true); return; }
+        fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+          method: "POST",
+          headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                     "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
+          body: JSON.stringify([{ user_id: myId, country: want || null }])
+        }).then(function(r2) { done(r2.ok); }).catch(function() { done(false); });
       }).catch(function() {
         nameBtn.disabled = false;
         say("That did not save. Try again in a moment.");

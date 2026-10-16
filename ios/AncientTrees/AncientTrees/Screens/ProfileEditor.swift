@@ -6,6 +6,10 @@
 // persoonsgegevens moet gewoon"), and the way to keep an opened door narrow is
 // to ask for the least that makes the feature work.
 //
+// One door opened wider on 2026-10-16: a COUNTRY, for the flag after your name
+// (Hidde: "Yes to storing a country per account", after Polarsteps' profile).
+// Optional, picked by the person, never guessed from where the phone is.
+//
 // The photograph is optional and stays optional. It goes to the `avatars`
 // bucket under the person's own id, so one person owns one folder and deleting
 // the account leaves nothing behind pointing at it.
@@ -19,6 +23,7 @@ struct ProfileEditor: View {
     @Environment(Profiles.self) private var profiles
 
     @State private var name = ""
+    @State private var country: String?
     @State private var picked: PhotosPickerItem?
     @State private var preview: UIImage?
     @State private var saving = false
@@ -69,6 +74,23 @@ struct ProfileEditor: View {
                     Text("Any name you like. It does not have to be your real one.")
                 }
 
+                // The flag after your name. iOS Settings' own shape for a
+                // long choice: a row that opens a list (Language & Region).
+                Section {
+                    Picker("Country", selection: $country) {
+                        Text("None").tag(String?.none)
+                        ForEach(Self.countries, id: \.code) { c in
+                            Text("\(CountryFlag.emoji(c.code) ?? "")  \(c.name)").tag(Optional(c.code))
+                        }
+                    }
+                    .pickerStyle(.navigationLink)
+                    .accessibilityIdentifier("profile-country")
+                } header: {
+                    Text("Your country")
+                } footer: {
+                    Text("Optional. Its flag shows after your name.")
+                }
+
                 if failed {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("That did not save. Try again in a moment.")
@@ -93,6 +115,7 @@ struct ProfileEditor: View {
             }
             .task {
                 name = profiles.me?.display_name ?? ""
+                country = profiles.myCountry
             }
             .onChange(of: picked) { _, item in
                 guard let item else { return }
@@ -127,16 +150,31 @@ struct ProfileEditor: View {
             if let preview, let jpeg = Sightings.downsized(preview, max: 512) {
                 url = await Avatars.upload(jpeg, userId: s.userId, token: token) ?? url
             }
-            let ok = await profiles.save(name: name.trimmingCharacters(in: .whitespaces),
+            var ok = await profiles.save(name: name.trimmingCharacters(in: .whitespaces),
                                          avatarURL: url, userId: s.userId, token: token)
+            var countryFailed = false
+            if ok, country != profiles.myCountry {
+                ok = await profiles.saveCountry(country, userId: s.userId, token: token)
+                countryFailed = !ok
+            }
             saving = false
             if ok { dismiss() } else {
-                reason = Avatars.lastFailure.map { "\($0) would not upload" }
-                    ?? "the server refused it"
+                reason = countryFailed ? "your country would not save"
+                    : Avatars.lastFailure.map { "\($0) would not upload" } ?? "the server refused it"
                 failed = true
             }
         }
     }
+
+    /// Every ISO country by its English name, for the picker.
+    static let countries: [(code: String, name: String)] = {
+        let en = Locale(identifier: "en")
+        return Locale.Region.isoRegions
+            .map(\.identifier)
+            .filter { $0.count == 2 && $0.allSatisfy(\.isLetter) }
+            .compactMap { code in en.localizedString(forRegionCode: code).map { (code, $0) } }
+            .sorted { $0.1.localizedCaseInsensitiveCompare($1.1) == .orderedAscending }
+    }()
 }
 
 /// The bucket half. One file per person, at a path only they may write, which

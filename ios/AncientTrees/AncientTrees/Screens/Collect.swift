@@ -1024,7 +1024,8 @@ struct CollectView: View {
         .accessibilityIdentifier(id)
     }
 
-    @ViewBuilder private var badges: some View {
+
+    @ViewBuilder private var tags: some View {
         if !profiles.myPlaces.isEmpty {
             AmbassadorBadge(places: profiles.myPlaces, size: 13).fixedSize()
         }
@@ -1034,18 +1035,15 @@ struct CollectView: View {
     @ViewBuilder private var whoYouAre: some View {
         VStack(alignment: .leading, spacing: 10) {
             whoRow
-            // YOUR BADGES ON THEIR OWN ROW, under the whole header and level
+            // YOUR TAGS ON THEIR OWN ROW, under the whole header and level
             // with the page's left edge (Hidde, 2026-10-16: "the alignment is
-            // pretty bad"). Above the name they floated over its 44-point tap
-            // frame with a gap beneath, and beside the avatar the column was
-            // too narrow for two, so they stacked even on a Pro. Instagram
-            // puts a profile's labels in the same place, under the picture.
-            // Ambassador first, because it says more; side by side, stacked
-            // only if even the full width cannot hold both.
+            // pretty bad" about tags above the name; then option 1 of five:
+            // the gold tag beside the ambassador tag). Ambassador first;
+            // side by side, stacked only if the full width cannot hold both.
             if account.isSignedIn, !profiles.myPlaces.isEmpty || earlyAdopter {
                 ViewThatFits(in: .horizontal) {
-                    HStack(spacing: 6) { badges }
-                    VStack(alignment: .leading, spacing: 4) { badges }
+                    HStack(spacing: 6) { tags }
+                    VStack(alignment: .leading, spacing: 4) { tags }
                 }
             }
         }
@@ -1094,7 +1092,7 @@ struct CollectView: View {
                 .accessibilityAddTraits(.isButton)
                 .accessibilityLabel(editable ? "Change your photo and name" : "Sign in")
                 .accessibilityIdentifier("mytrees-edit-photo")
-    
+
                 VStack(alignment: .leading, spacing: 0) {
                     // The part before the @ rather than the whole address
                     // truncated in the middle, which rendered as "burgma...ail.com"
@@ -1106,6 +1104,10 @@ struct CollectView: View {
                     // fires on release even after a 40 point drag, because the
                     // row is the width of the sheet and the finger never
                     // leaves its bounds, and that is the whole complaint.
+                    // YOUR FLAG AFTER YOUR NAME, Polarsteps' round flag (Hidde,
+                    // 2026-10-16), the country picked in Edit profile. Beside
+                    // the name rather than inside its tap frame.
+                    HStack(alignment: .bottom, spacing: 8) {
                     Text(editable
                          ? (profiles.me?.display_name
                             ?? account.email?.split(separator: "@").first.map(String.init)
@@ -1129,6 +1131,10 @@ struct CollectView: View {
                         .accessibilityIdentifier("mytrees-edit-profile")
                         .accessibilityAddTraits(.isButton)
                         .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
+                        if editable {
+                            CountryFlag(code: profiles.myCountry).padding(.bottom, 4)
+                        }
+                    }
                     if account.isSignedIn {
                         // The two numbers Polarsteps runs beside the name. They
                         // are here from the first day rather than added later, so

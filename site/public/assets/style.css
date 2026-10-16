@@ -893,7 +893,7 @@ a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--c
 .set-edit .acct-pic { width: 72px; height: 72px; font-size: 26px; }
 .set-pic-btn { width: auto; padding: 0 18px; }
 .set-edit-label { align-self: stretch; font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); margin-top: 6px; }
-.set-edit input[type="text"] { align-self: stretch; font-family: var(--sans); font-size: 16px; padding: 0 16px; height: 48px;
+.set-edit input[type="text"], .set-edit .set-edit-select { align-self: stretch; font-family: var(--sans); font-size: 16px; padding: 0 16px; height: 48px;
   border: 1.5px solid var(--cream-dark); border-radius: 12px; background: #fff; color: var(--ink); box-sizing: border-box; }
 .set-edit .at-sheet-fine { align-self: stretch; margin: 0; text-align: left; }
 /* The disclosure that stands in for the app's pushed Account screen. */
@@ -932,6 +932,9 @@ a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--c
 .profile-early { display: inline-flex; align-items: center; gap: 6px; margin: 0.4rem 0 0; font-size: 13px; color: #8F6210; background: rgba(217,161,63,0.18); border-radius: 999px; padding: 4px 10px 4px 8px; }
 .profile-early svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
 /* The badges' own row under the header (account.astro, 2026-10-16), the app's layout: side by side, wrapping only when the width runs out. Gone while both badges are hidden. */
+/* The name and the round flag after it (account.astro, 2026-10-16), Polarsteps' flag. */
+.profile-name { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.profile-flag { width: 20px; height: 20px; border-radius: 50%; flex: none; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); }
 .profile-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .profile-badges .profile-ambassador, .profile-badges .profile-early { margin: 0; }
 .profile-badges:not(:has(> :not([hidden]))) { display: none; }
