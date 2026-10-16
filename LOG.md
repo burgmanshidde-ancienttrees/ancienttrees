@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-16 seventh attempt: photographs vendored, no new trees
+
+- Ran `vendor_photos.py`: 30 photographs (Berlin 25, London 3, NYC 1, Vienna 1) now sit on our own domain, so the app's image URLs for them stop depending on the source host. 47 skipped on licence as before. No claims standing; the 60 READY leads are still blocked by the rich-page rule, so no write pass was dispatched.
+
 ## 2026-10-16 sixth attempt: nothing shipped
 
 - Resolved a LOG.md rebase conflict and pushed. No claims standing. `leads.py --ready` lists 60 (roosendaal 22, munich 5, delft 5 and others), but the rich-page rule still blocks new trees and the 11 research entries were already trial-merged and refused earlier today. No write pass dispatched, since it would only produce refusals.
