@@ -80,7 +80,7 @@ struct ProfileEditor: View {
                     Picker("Country", selection: $country) {
                         Text("None").tag(String?.none)
                         ForEach(Self.countries, id: \.code) { c in
-                            Text("\(CountryFlag.emoji(c.code) ?? "")  \(c.name)").tag(Optional(c.code))
+                            Text(Self.row(c)).tag(Optional(c.code))
                         }
                     }
                     .pickerStyle(.navigationLink)
@@ -164,6 +164,11 @@ struct ProfileEditor: View {
                 failed = true
             }
         }
+    }
+
+    /// A picker row: the flag, then the country's name.
+    static func row(_ c: (code: String, name: String)) -> String {
+        [CountryFlag.emoji(c.code), c.name].compactMap { $0 }.joined(separator: "  ")
     }
 
     /// Every ISO country by its English name, for the picker.
