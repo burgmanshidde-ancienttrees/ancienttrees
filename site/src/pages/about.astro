@@ -23,9 +23,9 @@
 // maker block: photo beside the text on desktop, above it on a phone. The four
 // sections that narrated our process were cut on his "less is more"; the AI
 // disclosure Google's self-assessment asks for stays as one sentence.
-// 2026-10-15: photo swapped on his ask for one of him and his son facing the
-// camera under the Noike torii, full frame so the two trunks keep their scale.
-// The son is never named. EXIF stripped again.
+// 2026-10-16: a photo of him and his son at the Noike torii was live for a
+// day and went back to this one on his word ("the lighting kinda sucks": shot
+// into the sun, a brightened copy only washed it out). hidde-noike-*.jpg kept.
 import Base from "../layouts/Base.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
@@ -54,8 +54,8 @@ const graph = [
       Benchmarked against Polarsteps' full-bleed hero, which crops a portrait
       tree to a strip on desktop and loses the crown. */}
   <figure class="about-photo">
-    <img src="/photos/about/hidde-noike-1200.jpg" srcset="/photos/about/hidde-noike-600.jpg 600w, /photos/about/hidde-noike-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 540px" width="1200" height="1600" alt="Hidde and his son in a pushchair under a shrine gate between two huge Japanese cedars in Kyushu">
-    <figcaption>Me and my son at the <a href="/taketa/cedars-of-noike-shrine">huge Japanese cedars of Noike Shrine in Kyushu</a></figcaption>
+    <img src="/photos/about/hidde-cedar-1200.jpg" srcset="/photos/about/hidde-cedar-600.jpg 600w, /photos/about/hidde-cedar-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 540px" width="1200" height="1600" alt="Hidde admiring a huge Japanese cedar in Kyushu">
+    <figcaption>Me admiring a <a href="/taketa/cedars-of-noike-shrine">huge Japanese cedar in Kyushu</a></figcaption>
   </figure>
   <div class="about-words">
     <Breadcrumbs items={crumbItems} />
@@ -64,7 +64,7 @@ const graph = [
     <p><strong class="about-mark">I'm not a tree expert, but I am a big fan.</strong> I hope to share this passion with others and make it easier for people to experience trees like these and simply enjoy them, the way I do.</p>
     <p>The site isn't perfect, and it needs your help to get better. You can <a href={submitLink("tree")}>add trees you like</a>, improve the current trees we have or add stories about trees to make it even more interesting to visit.</p>
     <p>If you really want to help, you can <a href="/cities">become a city-ambassador</a> and help guide others to see the most remarkable trees in your city.</p>
-    <p>The photo is me and my son at two huge Japanese cedars we found recently, on our trip while testing the app. I work on the app every day to make it better. For questions, feedback or anything else, mail me at <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
+    <p>The photo is me at a huge Japanese cedar I found recently, on our trip while testing the app. I work on the app every day to make it better. For questions, feedback or anything else, mail me at <a href="mailto:info@ancienttrees.app">info@ancienttrees.app</a>.</p>
     <p class="about-sign">Thanks,<br>Hidde</p>
     <div class="about-where">
       <h2>Where the trees come from</h2>

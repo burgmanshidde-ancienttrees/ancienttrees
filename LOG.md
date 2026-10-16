@@ -115,6 +115,10 @@ No tree went live this window. Visits last 7 days: 1540 (2190 page views). Rungs
 - Hidde: the "Watercypres" app sighting (ff725d9a, held on 09-08 against the sequoia) and brn_001, the Cantonspark Dawn Redwood, are the same tree, and the Watercypres fix is the right spot. brn_001 moved about 140 m south to 52.207835, 5.298591, next to the sequoia and tulip tree by the main entrance; `pin_source` records it. The 10-05 automatic move from sighting 22864b26 had put it in the wrong corner of the park.
 - Story's closing note no longer talks about a pin in a cluster of conifers; it now says the 2021 measurements are dated. The sighting lead is marked matched.
 
+## 2026-10-16, session: about page back to the cedar photo
+
+- Hidde: "the lighting kinda sucks" on the Noike photo (shot into the sun). A brightened copy only washed it out, so /about shows the cedar photo and its old caption and text again, exactly as on 10-14. The Noike files stay in site/public/photos/about/, unused.
+
 ## 2026-10-15, session: new photo on the about page
 
 - /about now shows Hidde and his son under the Noike torii between the two cedars, facing the camera, full frame (his ask). Caption and the photo sentence say "me and my son"; the son is not named. New files site/public/photos/about/hidde-noike-{600,1200}.jpg, EXIF and GPS stripped. The old hidde-cedar files stay in place, unused.
