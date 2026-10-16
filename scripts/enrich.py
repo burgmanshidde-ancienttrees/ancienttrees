@@ -69,6 +69,7 @@ LEDGER = os.path.join(ROOT, "data", "enrich-done.json")
 DEAD_END_DAYS = 90
 BRIEF_MAX = 20          # trees per pass: a brief's cost is set by its stopping condition
 PIN_MOVE_MAX_M = 300    # the same guard sightings_publish.move_pin applies to a reader's fix
+ROSTER_ONLY = True      # 2026-10-16: enrichment only where Google once showed us (city_rows())
 
 RECORD = re.compile(
     r"online\.bunka\.go\.jp/.*detail/|kunishitei\.bunka\.go\.jp/heritage/detail/|kyoju\.biodic\.go\.jp/.*gtsearchdetail"
@@ -181,7 +182,13 @@ def city_rows():
     floor per pass it said "nothing to do" while 1,453 gaps stood open across
     the site, 1,321 of them outside the roster and the rest stranded three or
     four to a city. A finished page returns to Google wherever it is
-    (findable.enriched()), so the roster sets the order, not the scope."""
+    (findable.enriched()), so the roster sets the order, not the scope.
+
+    Narrowed again 2026-10-16 (Hidde, "do this", on the pushback that most
+    of 565 enrichment commits went to places nobody searches for and Google
+    moved nothing): the frozen roster only. Photos on pages with impressions
+    now come first (CLAUDE.md, Google recovery mode). ROSTER_ONLY = False
+    restores the widening."""
     led = ledger()
     rows, seen = [], set()
     for slug, v in roster():
@@ -193,6 +200,8 @@ def city_rows():
         n = sum(len(x) for x in g.values())
         if n:
             rows.append((slug, v.get("impressions", 0), sum(1 for t in trees if has_photo(t)), len(trees), n, g))
+    if ROSTER_ONLY:
+        return rows
     rest = []
     for f in sorted(glob.glob(os.path.join(CITIES, "*.json"))):
         slug = os.path.basename(f)[:-5]
