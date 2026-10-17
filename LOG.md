@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-17 19:58 window (7-day visits: 2079 visits, 2875 page views): nothing shippable
+Inbox empty, health's only flag was Smoke test "skipped", which is a false alarm (it skips LOG-only pushes; the last scheduled run passed). Enrich empty, 60 READY leads and 28 written trees still held by the rich-or-reader rule. Photo shortlist names only the Sequoia Sentinel Tree, already judged ("nothing to fetch"); Brussels is swept and empty. Nothing dispatched, no claims left. Note: `photo_hunt.py --help` starts a sweep instead of printing help (ran over the 120s limit).
+
 ## 2026-10-17 16:48 window: nothing shippable, one scouting verdict
 
 Visits 7 days: 2070 visits, 2864 views. Rungs 1 and 2 clear (no sightings, health green). Enrichment says nothing to do. The photo lane: `photo_fetch.py --zero` ignored `--city` and fetched 25 candidates across Chicago, Dallas, Fort Worth, Oss, Rotterdam, Salt Lake City; I looked at the pixels of the plausible ones and none ships (leaf in a hand, a street tree of unknown identity, a building with trees, greenhouses). Nothing approved. The 28 written trees waiting are the held ones (no photo, no confirmed pin or not rich). Backup lane: Lansing scouting retried, the Michigan Botanical Society register is a Google Doc champion list with no stated licence, so it stays stalled (verdict in data/register-scouting.json). No trees added.
