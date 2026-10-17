@@ -17,6 +17,12 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 Web half: read the four new Berlin photographs (Fontanesia, katsura, coffeetree, Tiergarten beech) as built in site/dist, plus the 30 vendored photographs. The Fontanesia page serves the vendored /photos/ber_042 file, carries its CC0 attribution, has no em dashes. Nothing found.
 
+## 2026-10-17 (app half)
+
+App half (map, own-tree, paywall, people, photo-viewer, place-pin; iPhone SE; the same six as 10-15, so the rotation repeated). map, own-tree, people, photo-viewer (credit shown) and place-pin read clearly and agree with themselves.
+
+- WARN APP: paywall, still unchanged from the 10-15 finding: "Add your own photographs" sits under "Also included" in "Unlock every walk", though readers add photographs for nothing today (nothing is gated, CLAUDE.md). FOR HIDDE: which items are Plus is his line (hard list 2).
+
 ---
 
 ## 2026-10-16
