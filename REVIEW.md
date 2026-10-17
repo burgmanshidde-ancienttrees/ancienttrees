@@ -13,6 +13,12 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-17
+
+Web half: read the four new Berlin photographs (Fontanesia, katsura, coffeetree, Tiergarten beech) as built in site/dist, plus the 30 vendored photographs. The Fontanesia page serves the vendored /photos/ber_042 file, carries its CC0 attribution, has no em dashes. Nothing found.
+
+---
+
 ## 2026-10-16
 
 Web half: read the Cardiff Wallenberg tree (species corrected to tree of heaven by the parks officer, 8c0522dfb) and the three new London photographs (Battersea strawberry tree, Carshalton plane, Gunnersbury mulberry) as built in site/dist. No em dashes, the story, recognition line and meta agree with the new species, each photo carries its CC BY-SA credit, and the Cardiff page still says honestly that the pin is approximate. Nothing found.
