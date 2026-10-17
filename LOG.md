@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 ninth attempt: nothing shipped
+Pulled; no claims. 60 READY leads and the written trees are still held by the rich-or-reader rule; enrich empty. Lansing BACKUP: michiganbotany.org does not resolve from this runner (Wikimedia does), so no scouting. Nothing dispatched.
 ## 2026-10-17 08:12 window: nothing shipped (scouting verdict only)
 7-day visits: 2033 (peak 568 on 10-16). Inbox empty, enrich.py says nothing to do, the writable pile is only held trees (no photo or pin), so no dispatch. Network worked this time: took the BACKUP scout (New York retry); the Wikipedia notable-trees table lists nothing we lack, verdict rewritten in data/register-scouting.json (NYC Parks' 2024 list of 120 still needs a browser session). `photo_fetch.py --zero` ignores --city and only produced junk candidates (greenhouse, lake photos), none judged. London photo recheck found 0 new candidates.
 Breakage: iOS scheduled run (10-16 19:48) failed twice over: xcodebuild hung past 30 min on iPhone 17 Pro, and appsweep flagged `early-adopter-done` in EarlyAdopterSheet (AmbassadorBadge.swift) starting at x=24 while the rest start at x=20 (DRIFT). Not fixed: needs a simulator sweep to verify, which this runner lacks. Smoke "skipped" is log-only pushes, not a failure.
