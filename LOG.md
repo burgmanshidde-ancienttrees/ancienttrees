@@ -15,6 +15,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 Visits 7 days: 2070 visits, 2864 views. Rungs 1 and 2 clear (no sightings, health green). Enrichment says nothing to do. The photo lane: `photo_fetch.py --zero` ignored `--city` and fetched 25 candidates across Chicago, Dallas, Fort Worth, Oss, Rotterdam, Salt Lake City; I looked at the pixels of the plausible ones and none ships (leaf in a hand, a street tree of unknown identity, a building with trees, greenhouses). Nothing approved. The 28 written trees waiting are the held ones (no photo, no confirmed pin or not rich). Backup lane: Lansing scouting retried, the Michigan Botanical Society register is a Google Doc champion list with no stated licence, so it stays stalled (verdict in data/register-scouting.json). No trees added.
 <!-- archive-index -->
+## 2026-10-17 eighteenth attempt: nothing shipped
+Pulled; no claims standing; 60 READY leads still held by the rich-or-reader rule. Tried to claim the starred staged cities for a verify pass: munich (63 of 60) and portland (33 of 30) are full and refused. Nothing dispatched, no claim left behind.
 ## 2026-10-17 seventeenth attempt: nothing shipped
 Pulled; no claims; 60 READY leads and 28 written trees still held by the rich-or-reader rule (recovery mode); enrich says nothing to do; backup is Detroit scouting retry. Nothing dispatched.
 ## 2026-10-17 session: in the app, a city page is now its map
