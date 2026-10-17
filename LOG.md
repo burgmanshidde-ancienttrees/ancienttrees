@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 eleventh attempt: nothing shipped
+Pulled; no claims; inbox empty; enrich empty. 60 READY leads and the written trees (delft, leipzig, london, fort-worth, tree-of-the-year, salt-lake-city) still held by the rich-or-reader rule; the unwritten ones (miami, spokane, vienna) lack photo or pin. No dispatch.
 ## 2026-10-17 tenth attempt: nothing shipped
 Pulled; no claims. 60 READY leads still held by the rich-or-reader rule; langcheck --next lists no city above 10 English impressions, so no translation. Nothing dispatched.
 ## 2026-10-17 ninth attempt: nothing shipped
