@@ -106,11 +106,10 @@ final class SignedOutWalk: XCTestCase {
     }
 
     func testAmbassadorSeatAsks() {
-        // Cadiz has no ambassador, so its city page shows the open seat under
-        // the map preview (CityView), and the same row sits under the header
-        // of the pushed map page (PlaceMapPage). Both are walked: until
-        // 2026-10-07 the row lived only on the map page, and -open=city:
-        // opens the browse page, which is how this test failed three times.
+        // Cadiz has no ambassador, so its city page shows the open seat at the
+        // top of the sheet. Since 2026-10-17 the city page IS the map page
+        // (PlaceMapPage), so this walks it at the sheet's opening height and
+        // the test below walks it with the sheet full.
         let app = launch(["-tab=0", "-open=city:cadiz"])
         tap(app, "ambassador-wanted"); expectSignIn(app, after: "ambassador-wanted")
     }

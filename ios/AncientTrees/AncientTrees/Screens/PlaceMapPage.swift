@@ -174,6 +174,16 @@ struct PlaceMapPage: View {
         .brandGround()
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            // Since a city opens here (2026-10-17) this is the city page, so
+            // it carries the share the old browse page had.
+            if case .city(let slug) = place {
+                ShareTo(url: URL(string: "https://ancienttrees.app/\(slug)")!,
+                        subject: title,
+                        message: "Ancient trees in \(title).",
+                        label: "Share this city")
+            }
+        }
         .accessibilityIdentifier("place-map-page")
     }
 }

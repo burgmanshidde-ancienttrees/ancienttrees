@@ -462,9 +462,12 @@ struct ContentView: View {
         case .species(let name):
             SpeciesView(commonName: name, catalogue: cat, origin: origin)
         case .city(let slug):
-            CityView(slug: slug,
-                     name: cat.trees.first(where: { $0.citySlug == slug })?.city ?? slug,
-                     catalogue: cat, origin: origin)
+            // A CITY IS ITS MAP (Hidde, 2026-10-17: "die twee paginas zijn
+            // bijna hetzelfde en met interactieve kaart veel beter"). The city
+            // page was a picture of the map over a list, and its one control
+            // pushed this page, which held the same list under a real map. The
+            // website's city page has been the map all along.
+            PlaceMapPage(place: .city(slug), catalogue: cat)
         }
     }
 

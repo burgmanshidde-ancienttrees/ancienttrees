@@ -294,8 +294,9 @@ def screens(sub):
         ("profile-signed-in", ["-tab=2", "-settings", "-signed-in", "-ambassador=Paris"], 6),
         ("tree",          ["-tab=0", f'-open=tree:{sub["tree"]}'], 6),
         ("tree-nophoto",  ["-tab=0", f'-open=tree:{sub["tree_nophoto"]}'], 5),
-        ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 5),
-        ("city-map",      ["-tab=0", f'-open=citymap:{sub["city"]}'], 7),
+        # A city opens on its map since 2026-10-17, so "city" is the map page
+        # with its sheet at half; the old separate city-map row was the same.
+        ("city",          ["-tab=0", f'-open=city:{sub["city"]}'], 7),
         ("city-map-full", ["-tab=0", f'-open=citymap:{sub["city"]}', "-sheet=full"], 7),
         ("species",       ["-tab=0", f'-open=species:{sub["species"]}'], 5),
         ("collection",    ["-tab=0", f'-open=collection:{sub["collection"]}'], 5),

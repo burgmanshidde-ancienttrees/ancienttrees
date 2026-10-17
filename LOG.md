@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 session: in the app, a city page is now its map
+Hidde: "die twee paginas zijn bijna hetzelfde en met interactieve kaart veel beter". A city opens straight on the interactive map with its trees in the sheet (PlaceMapPage), the way the website's city page already works; the old page with the map picture and the "Expand map" button (CityView) is gone. The share button moved to the map page. Countries keep their own page. Goes out with the next app build. Checked in the simulator (London); the SE layout gate runs in ios.yml on push.
 ## 2026-10-17 sixteenth attempt: nothing shipped
 Pulled; no claims; 60 READY leads and the written trees still held by the rich-or-reader rule; langcheck lists nothing above 10 impressions; Lansing needs network that is not here. Nothing dispatched.
 ## 2026-10-17 fifteenth attempt: nothing shipped
