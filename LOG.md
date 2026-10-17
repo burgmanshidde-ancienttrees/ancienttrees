@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 fifth attempt: nothing shipped
+Pulled; no claims standing. 60 READY leads and the ten written trees are still held by the rich-or-reader rule; enrich has nothing to do; the Lansing BACKUP needs network this runner lacks. No pass dispatched, since it would only produce refusals.
 ## 2026-10-17 fourth attempt: nothing shipped
 Same state: no claims, 60 READY and the written-but-unmerged trees blocked by the rich-page rule, `enrich.py --next` empty. BACKUP lane (Lansing, Michigan Botanical Society Big Tree register) could not run: this runner has no network (curl exit 6). Retry on a run with network.
 ## 2026-10-17 later attempt: nothing shipped
