@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 retry attempt: nothing shipped
+Pulled; no claims standing. 60 READY leads and the 28 written trees are still held by the rich-or-reader rule, enrich has nothing to do, and the Lansing BACKUP could not run (curl exit 6, no network on this runner). No pass dispatched. iOS scheduled-run failure still needs a Mac session.
+
 ## 2026-10-17 11:00 window (7-day visits: 2045 visits, 2831 page views): nothing shipped
 Inbox empty, enrich empty, 60 READY leads and the 28 written trees still held by the rich-or-reader rule, so no dispatch. Lansing BACKUP retry: michiganbotany.org still does not resolve (curl exit 6), so no scouting. iOS scheduled-run failure unchanged (needs a Mac session).
 ## 2026-10-17 eleventh attempt: nothing shipped
