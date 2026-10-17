@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-17 22:00 window (7-day visits: 2040 visits, 2630 page views): nothing shippable
+Inbox empty, enrich empty, 60 READY leads and 28 written trees still held by the rich-or-reader rule. Health flags Smoke "skipped" (log-only pushes) and the iOS scheduled-run failure (needs a Mac session). Nothing dispatched, no claims left.
+
 ## 2026-10-17 19:58 window (7-day visits: 2079 visits, 2875 page views): nothing shippable
 Inbox empty, health's only flag was Smoke test "skipped", which is a false alarm (it skips LOG-only pushes; the last scheduled run passed). Enrich empty, 60 READY leads and 28 written trees still held by the rich-or-reader rule. Photo shortlist names only the Sequoia Sentinel Tree, already judged ("nothing to fetch"); Brussels is swept and empty. Nothing dispatched, no claims left. Note: `photo_hunt.py --help` starts a sweep instead of printing help (ran over the 120s limit).
 
