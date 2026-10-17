@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-17 twenty-fifth attempt: nothing shipped
+Pulled; no claims; 60 READY leads still held by the rich-or-reader rule (recovery mode); no write pass dispatched, as it would publish photo-less new trees. Nothing claimed.
+
 ## 2026-10-17 22:00 window (7-day visits: 2040 visits, 2630 page views): nothing shippable
 Inbox empty, enrich empty, 60 READY leads and 28 written trees still held by the rich-or-reader rule. Health flags Smoke "skipped" (log-only pushes) and the iOS scheduled-run failure (needs a Mac session). Nothing dispatched, no claims left.
 
