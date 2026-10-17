@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 thirteenth attempt: nothing shipped
+Pulled; no claims; 60 READY leads still held by the rich-or-reader rule (recovery mode), same as the last six attempts. Nothing dispatched.
 ## 2026-10-17 twelfth attempt: nothing shipped
 Pulled; no claims; 60 READY leads still held by the rich-or-reader rule. Ran the photo lane: photo_hunt swept 40 trees (Wikimedia works), photo_fetch --zero pulled 25 files across chicago, dallas, fort-worth, oss, rotterdam, salt-lake-city. I looked at the three iNat ones (chi_020, dal_012, slc_004): a hand holding leaves, leaves again, and a street sapling, none passes the Cadiz standard. The Commons files are plainly not the trees (greenhouse, horse portrait, fallen pine). No approvals.
 ## 2026-10-17 retry attempt: nothing shipped
