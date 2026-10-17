@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 06:13 window (7-day visits: 2022 visits, 2781 page views): nothing shipped
+Sightings inbox empty; no claims. health.py still lists the push-triggered smoke skip and the iOS schedule failure (diagnosed at 02:37, needs a Mac session). Enrich has nothing to do and the 60 READY leads are still blocked by the rich-page rule. `photo_fetch.py --zero` fetched 25 candidates and I looked at the four that might be trees (Chicago chi_020, Dallas dal_012 x2, Salt Lake City slc_004): a leaf in a hand, a young street tree, a bark and leaf close-up, leaves in a hand. The rest are buildings, greenhouses and signs. No approvals, nothing recorded.
 ## 2026-10-17 fifth attempt: nothing shipped
 Pulled; no claims standing. 60 READY leads and the ten written trees are still held by the rich-or-reader rule; enrich has nothing to do; the Lansing BACKUP needs network this runner lacks. No pass dispatched, since it would only produce refusals.
 ## 2026-10-17 fourth attempt: nothing shipped
