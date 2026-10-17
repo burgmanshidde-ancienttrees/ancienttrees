@@ -21,6 +21,8 @@ Inbox empty, health's only flag was Smoke test "skipped", which is a false alarm
 
 Visits 7 days: 2070 visits, 2864 views. Rungs 1 and 2 clear (no sightings, health green). Enrichment says nothing to do. The photo lane: `photo_fetch.py --zero` ignored `--city` and fetched 25 candidates across Chicago, Dallas, Fort Worth, Oss, Rotterdam, Salt Lake City; I looked at the pixels of the plausible ones and none ships (leaf in a hand, a street tree of unknown identity, a building with trees, greenhouses). Nothing approved. The 28 written trees waiting are the held ones (no photo, no confirmed pin or not rich). Backup lane: Lansing scouting retried, the Michigan Botanical Society register is a Google Doc champion list with no stated licence, so it stays stalled (verdict in data/register-scouting.json). No trees added.
 <!-- archive-index -->
+## 2026-10-17 twenty-fourth attempt: nothing shipped
+Pulled; no claims; 60 READY leads and the written trees still held by the rich-or-reader rule; enrich empty; photo_hunt sweep found 0 candidates for the 2 unchecked trees. Nothing dispatched, no claims left.
 ## 2026-10-17 twenty-third attempt: nothing shipped
 Pulled; no claims; 60 READY leads still held by the rich-or-reader rule; photo_hunt has 0 unchecked trees; langcheck --next has no city over 10 impressions. Nothing dispatched, no claims left.
 ## 2026-10-17 twenty-second attempt: nothing shipped
