@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 fourteenth attempt: nothing shipped
+Pulled; no claims; 60 READY leads (roosendaal 22, munich 5, delft 5, ...) still held by the rich-or-reader rule in recovery mode, so no write pass. Nothing dispatched.
 ## 2026-10-17 13:25 window (7-day visits: 2030 visits, 2610 page views): nothing shipped
 Inbox empty, enrich empty, 60 READY leads and 28 written trees still held by the rich-or-reader rule. pagegaps: nothing missing. London photo recheck found 0 new candidates across 7 trees. Smoke "skipped" is log-only pushes; the iOS scheduled run still needs a Mac session. No pass dispatched.
 ## 2026-10-17 thirteenth attempt: nothing shipped
