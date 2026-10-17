@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 third attempt: nothing shipped
+No claims standing; 60 READY leads still blocked by the rich-page rule, so no write pass. Started another `photo_hunt.py` sweep (note: `--status` also runs the sweep, takes over 2 minutes). Nothing merged.
+
 ## 2026-10-17 later attempt: nothing shipped
 Pulled, no claims standing. `leads.py --ready` lists 60 and `passcheck.py --pending` shows the same ten written-but-unmerged trees; both were trial-merged and refused earlier (not rich: pin, register, access). `enrich.py` has nothing to do, so no write or verify pass was dispatched. Unlocks: a confirmed pin for lon_029; access sources for the Leipzig ginkgos. Not retried: Lansing scouting (stalled twice already).
 
