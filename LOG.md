@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 02:37 window (7-day visits: 1938 visits, 2691 page views): nothing shipped
+Sightings inbox empty; no claims. I read the failing log of the scheduled iOS run (38957584662). The run did not time out. The iPhone SE sweep passed. The iPhone 17 Pro sweep hung past 30 minutes and was killed, and the floor job then reported 6 findings on 160 screens, among them `early-adopter-sheet` where the Done button starts at x=24 while 7 other things start at x=20 (DRIFT). The sheet is a plain BrandSheet in AmbassadorBadge.swift, so the cause is probably in the shared BrandSheet button inset. I cannot render it on this runner and did not edit it blind. It needs a Mac session. The 60 READY leads and the 28 written trees are still blocked by the rich-page rule, so no pass was dispatched.
+
 ## 2026-10-17 third attempt: nothing shipped
 No claims standing; 60 READY leads still blocked by the rich-page rule, so no write pass. Started another `photo_hunt.py` sweep (note: `--status` also runs the sweep, takes over 2 minutes). Nothing merged.
 
