@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 seventh attempt: nothing shipped
+Pulled; no claims standing; 60 READY leads still blocked by the rich-or-reader rule (mostly Dutch register trees with no photo or confirmed pin), so no write pass. No network for the BACKUP register scout. Nothing dispatched.
 ## 2026-10-17 sixth attempt: nothing shipped
 Pulled; no claims standing. Same state as the earlier attempts: 60 READY leads and the written-but-unmerged trees held by the rich-or-reader rule, enrich empty, only BACKUP is the New York register retry and this runner has no network (`photo_hunt.py --help` hung past 120s). No pass dispatched.
 ## 2026-10-17 06:13 window (7-day visits: 2022 visits, 2781 page views): nothing shipped
