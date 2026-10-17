@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 later attempt: nothing shipped
+Pulled, no claims standing. `leads.py --ready` lists 60 and `passcheck.py --pending` shows the same ten written-but-unmerged trees; both were trial-merged and refused earlier (not rich: pin, register, access). `enrich.py` has nothing to do, so no write or verify pass was dispatched. Unlocks: a confirmed pin for lon_029; access sources for the Leipzig ginkgos. Not retried: Lansing scouting (stalled twice already).
+
 ## 2026-10-17 01:35 window (7-day visits: 1914 visits, 2663 page views): nothing shipped
 
 - Sightings inbox empty. health.py again lists the push-triggered smoke skip and the iOS schedule failure (needs a Mac session; I did not open its log). Enrich has nothing to do and the 60 READY leads are still blocked by the rich-page rule, so no write pass. `photo_hunt.py --recheck` swept 40 more trees (new candidates for Oss, New Orleans and others). Fetched Oss oss_013 (Ravenstein sycamore): all three candidates are street or castle views 140 to 276 m off, so no photograph. `photo_verdicts.py` refused to record the reject (page key `oss` matched no candidate), so it stays unrecorded. New Orleans: "nothing to fetch". Note: `photo_hunt.py --help` runs the sweep instead of printing help.
