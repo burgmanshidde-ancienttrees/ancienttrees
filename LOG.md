@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 fourth attempt: nothing shipped
+Same state: no claims, 60 READY and the written-but-unmerged trees blocked by the rich-page rule, `enrich.py --next` empty. BACKUP lane (Lansing, Michigan Botanical Society Big Tree register) could not run: this runner has no network (curl exit 6). Retry on a run with network.
 ## 2026-10-17 later attempt: nothing shipped
 Pulled; no claims standing. `leads.py --ready` still lists 60 and `passcheck.py --pending` the same ten written-but-unmerged trees, all refused earlier by the rich-or-reader rule (pin, register, access missing). Not retried; no pass dispatched, since it would only produce refusals. `enrich.py` has nothing to do. Stale research files (about 25) are safe to delete but I did not do it blind.
 ## 2026-10-17 02:37 window (7-day visits: 1938 visits, 2691 page views): nothing shipped
