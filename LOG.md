@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 tenth attempt: nothing shipped
+Pulled; no claims. 60 READY leads still held by the rich-or-reader rule; langcheck --next lists no city above 10 English impressions, so no translation. Nothing dispatched.
 ## 2026-10-17 ninth attempt: nothing shipped
 Pulled; no claims. 60 READY leads and the written trees are still held by the rich-or-reader rule; enrich empty. Lansing BACKUP: michiganbotany.org does not resolve from this runner (Wikimedia does), so no scouting. Nothing dispatched.
 ## 2026-10-17 08:12 window: nothing shipped (scouting verdict only)
