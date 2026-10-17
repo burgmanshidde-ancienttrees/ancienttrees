@@ -11,6 +11,8 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-17 eighth attempt: nothing shipped
+Pulled; no claims; 60 READY leads still held by the rich-or-reader rule, no network for BACKUP scouting. Nothing dispatched.
 ## 2026-10-17 seventh attempt: nothing shipped
 Pulled; no claims standing; 60 READY leads still blocked by the rich-or-reader rule (mostly Dutch register trees with no photo or confirmed pin), so no write pass. No network for the BACKUP register scout. Nothing dispatched.
 ## 2026-10-17 sixth attempt: nothing shipped
