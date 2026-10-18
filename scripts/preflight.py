@@ -1171,6 +1171,23 @@ def check_tree_name_fits_a_title():
     return out
 
 
+def check_no_null_objects():
+    """An optional object field may be absent but never null: the site's zod
+    schema (site/src/content.config.ts) rejects official_register: null and
+    the whole build stops. Happened 2026-10-18 when a verify pass wrote null
+    for 'no register', and preflight passed it while CI failed."""
+    out = []
+    for p in sorted(glob.glob("data/cities/*.json")):
+        with open(p, encoding="utf-8") as fh:
+            d = json.load(fh)
+        for t in d.get("trees") or []:
+            for k in ("official_register", "fame", "photo", "best_time", "location"):
+                if k in t and t[k] is None:
+                    out.append("%s: %s has %s: null; leave the field out instead (the site build rejects null here)"
+                               % (os.path.basename(p)[:-5], t.get("id"), k))
+    return out
+
+
 def check_no_new_thin_places():
     """No new place below four trees while search recovers (Hidde, 2026-10-01,
     after Google stopped showing the site on 09-28). 456 of 716 places held
@@ -3471,6 +3488,7 @@ def main():
                 + check_no_invitation_to_harm_the_tree()
                 + check_tree_name_fits_a_title()
                 + check_no_new_thin_places()
+                + check_no_null_objects()
                 + check_publishing_pace()
                 + check_species_copy_states_no_count()
                 + check_a_tree_can_be_told_apart()
