@@ -25,6 +25,12 @@ Visits last 7 days: 1980. Rung 1: two app photographs of lis_014 (Yew of Campo S
 
 **Checked:** build plus screenshots on the iPhone SE simulator (the park while standing still, the tree page). Not checked: a real walk through the park, and the tap itself (simctl cannot tap). Still no push notifications and nothing in the background, as it was.
 
+## 2026-10-18 session: Lady Liberty and a Cedar Breaks bristlecone from the US register sieve
+
+**New on the site, both with photographs:** Lady Liberty in Longwood, Florida (bald cypress, about 2,000 years by Seminole County's estimate, 10 m round), and the Spectra Point Bristlecone at Cedar Breaks, Utah (Utah's state champion, 8.26 m round, past 1,500 years; pin confirmed because the photo geotag sits 10 m from the register's GPS). Both are lone-tree places.
+
+**The sieve:** six state registers with coordinates (Florida, Ohio, Utah, Oklahoma, New Jersey, Delaware; 1,800 public rows), Commons geosearch within 100 m of the top 50 per state. 11 of 300 had a tree-named photo nearby; 2 were real and epic. The state register counts as the official source, so verification was quick: about 60k tokens for both, done in-session without agents, against about 100k per tree in Australia. Script: out/tmp/us_sieve.py, output out/us-register/ (not in the repo). Weak hits not pursued: the Ohio champion Atlantic white cedar (named photo, small tree), the Hollywood FL baobab (girth uncorroborated before), the Dover elm.
+
 ## 2026-10-18 session: four Australian giants from the big-tree register trial
 
 **New on the site:** the Giant Tingle Tree near Walpole (with photo), the Prison Boab near Wyndham (with photo), the Ada Tree near Powelltown and the Dave Evans Bicentennial Tree at Pemberton. The Gloucester Tree got its first photograph. Walpole, Wyndham and Powelltown are lone-tree places under Hidde's new rule of the same day: a lone tree goes live as a tree page, and its place page stays out of Google until it has four.
