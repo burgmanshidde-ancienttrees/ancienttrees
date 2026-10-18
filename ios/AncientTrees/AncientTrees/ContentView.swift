@@ -491,6 +491,86 @@ struct ContentView: View {
         }
     }
 
+    /// The bottom inset under the tabs, out of `body` for the same reason
+    /// as nearbyBannerOverlay.
+    @ViewBuilder
+    private var tabBarInset: some View {
+        // Gone on a pushed page, which the native bar already did
+        // and which AllTrails does too: a reading page has no bar
+        // and back is the way out. An EmptyView reserves no space,
+        // so the page grows into it rather than leaving a gap.
+        // ALWAYS IN THE LAYOUT, hidden rather than removed
+        // (Hidde, 2026-08-26: "de floating menu verdwijnt nu als
+        // ik van settings terug kom naar de andere schermen").
+        //
+        // It used to be inserted and removed from the safe area,
+        // and a safeAreaInset that appears and disappears is a
+        // known way to end up with neither: come back from a
+        // pushed page and the inset does not always come back with
+        // you. Keeping one bar and giving it no height on a pushed
+        // page cannot fail that way, because there is nothing to
+        // re-insert.
+        let showing = path(tab).wrappedValue.isEmpty
+        // THE INSET ALWAYS HAS CONTENT, and the content is either
+        // the bar or nothing at all.
+        //
+        // Two failures, one line apart. An `if` with no `else`
+        // makes the inset itself come and go, and it does not
+        // always come back: that is the bar vanishing after
+        // settings. Keeping the bar and merely making it
+        // transparent leaves it in the accessibility tree, so
+        // VoiceOver reads three tabs that are not there and the
+        // layout gate finds the tree page's own buttons buried
+        // under a bar nobody can see. This has an else, so the
+        // inset never disappears, and it swaps the bar out rather
+        // than dimming it, so nothing invisible is left behind.
+        if showing {
+            TabBar(selected: tab,
+                   select: { tabSelection.wrappedValue = $0 },
+                   collect: { openCollect() })
+        } else {
+            Color.clear.frame(height: 0)
+        }
+            // AND GONE FROM THE TREE, not merely transparent. A
+            // bar with no height, no opacity and no hit testing is
+            // invisible to a person and still present to anything
+            // reading the screen: VoiceOver would announce three
+            // tabs that are not there, and the layout gate reported
+            // the tree page's own buttons as buried underneath it
+            // (2026-08-27). Both are the same mistake, which is
+            // hiding something from eyes only.
+    }
+
+    /// The near-a-tree banner, kept out of `body`: inline there it pushed
+    /// the type-checker past its time limit on the CI runner (2026-10-18).
+    @ViewBuilder
+    private var nearbyBannerOverlay: some View {
+        // Not over a sheet: with the camera open the banner sat on
+        // top of "You found" for the very tree it named (2026-10-14).
+        if let n = nearby, rootSheet == nil {
+            let onItsPage = path(tab).wrappedValue.last == .tree(n.tree.id)
+            NearbyBanner(tree: n.tree, meters: n.meters, onItsPage: onItsPage,
+                         open: {
+                             withAnimation { nearby = nil }
+                             if onItsPage {
+                                 // Already reading it: the tap is the
+                                 // page's own Collect, not the page again.
+                                 navigator.collectAbout = n.tree.name
+                                 navigator.collectTree = n.tree.id
+                                 navigator.collectAddsPhoto = true
+                                 navigator.collectNearby = true
+                             } else {
+                                 navigator.push = .tree(n.tree.id)
+                             }
+                         },
+                         dismiss: { withAnimation { nearby = nil } })
+                .task(id: n.tree.id) {
+                    try? await Task.sleep(for: .seconds(8))
+                    if nearby?.tree.id == n.tree.id { withAnimation { nearby = nil } }
+                }
+        }
+    }
+
     var body: some View {
         Group {
             if let cat = store.catalogue {
@@ -549,80 +629,9 @@ struct ContentView: View {
                 // same). The .none variant sits on each Label because iOS
                 // applies its automatic .fill inside the tab item, underneath
                 // an environment set on the TabView itself.
-                .safeAreaInset(edge: .bottom, spacing: 0) {
-                    // Gone on a pushed page, which the native bar already did
-                    // and which AllTrails does too: a reading page has no bar
-                    // and back is the way out. An EmptyView reserves no space,
-                    // so the page grows into it rather than leaving a gap.
-                    // ALWAYS IN THE LAYOUT, hidden rather than removed
-                    // (Hidde, 2026-08-26: "de floating menu verdwijnt nu als
-                    // ik van settings terug kom naar de andere schermen").
-                    //
-                    // It used to be inserted and removed from the safe area,
-                    // and a safeAreaInset that appears and disappears is a
-                    // known way to end up with neither: come back from a
-                    // pushed page and the inset does not always come back with
-                    // you. Keeping one bar and giving it no height on a pushed
-                    // page cannot fail that way, because there is nothing to
-                    // re-insert.
-                    let showing = path(tab).wrappedValue.isEmpty
-                    // THE INSET ALWAYS HAS CONTENT, and the content is either
-                    // the bar or nothing at all.
-                    //
-                    // Two failures, one line apart. An `if` with no `else`
-                    // makes the inset itself come and go, and it does not
-                    // always come back: that is the bar vanishing after
-                    // settings. Keeping the bar and merely making it
-                    // transparent leaves it in the accessibility tree, so
-                    // VoiceOver reads three tabs that are not there and the
-                    // layout gate finds the tree page's own buttons buried
-                    // under a bar nobody can see. This has an else, so the
-                    // inset never disappears, and it swaps the bar out rather
-                    // than dimming it, so nothing invisible is left behind.
-                    if showing {
-                        TabBar(selected: tab,
-                               select: { tabSelection.wrappedValue = $0 },
-                               collect: { openCollect() })
-                    } else {
-                        Color.clear.frame(height: 0)
-                    }
-                        // AND GONE FROM THE TREE, not merely transparent. A
-                        // bar with no height, no opacity and no hit testing is
-                        // invisible to a person and still present to anything
-                        // reading the screen: VoiceOver would announce three
-                        // tabs that are not there, and the layout gate reported
-                        // the tree page's own buttons as buried underneath it
-                        // (2026-08-27). Both are the same mistake, which is
-                        // hiding something from eyes only.
-
-                }
+                .safeAreaInset(edge: .bottom, spacing: 0) { tabBarInset }
                 .overlay(alignment: .bottom) { SnackBar() }
-                .overlay(alignment: .top) {
-                    // Not over a sheet: with the camera open the banner sat on
-                    // top of "You found" for the very tree it named (2026-10-14).
-                    if let n = nearby, rootSheet == nil {
-                        let onItsPage = path(tab).wrappedValue.last == .tree(n.tree.id)
-                        NearbyBanner(tree: n.tree, meters: n.meters, onItsPage: onItsPage,
-                                     open: {
-                                         withAnimation { nearby = nil }
-                                         if onItsPage {
-                                             // Already reading it: the tap is the
-                                             // page's own Collect, not the page again.
-                                             navigator.collectAbout = n.tree.name
-                                             navigator.collectTree = n.tree.id
-                                             navigator.collectAddsPhoto = true
-                                             navigator.collectNearby = true
-                                         } else {
-                                             navigator.push = .tree(n.tree.id)
-                                         }
-                                     },
-                                     dismiss: { withAnimation { nearby = nil } })
-                            .task(id: n.tree.id) {
-                                try? await Task.sleep(for: .seconds(8))
-                                if nearby?.tree.id == n.tree.id { withAnimation { nearby = nil } }
-                            }
-                    }
-                }
+                .overlay(alignment: .top) { nearbyBannerOverlay }
                 .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)
                 .task(id: nearKey) { checkNearby() }
                 // A sheet hides the banner and with it the timer that clears
