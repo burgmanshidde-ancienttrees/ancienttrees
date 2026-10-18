@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 thirty-fifth attempt: nothing shipped
+Pulled; no claims; 60 READY leads still held by the rich-or-reader rule (recovery mode), so no write pass; langcheck --next lists no city with impressions. Nothing dispatched.
+
 ## 2026-10-18 thirty-fourth attempt: nothing shipped
 Pulled; no claims; 60 READY leads and 28 written trees still held by the rich-or-reader rule (recovery mode); enrich empty. Denver scouting note re-read: no licence statement and no coordinates, needs a permission ask to Colorado Tree Coalition (Hidde's call), so it stays stalled. Nothing dispatched.
 
