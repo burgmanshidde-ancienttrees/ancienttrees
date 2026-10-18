@@ -1,0 +1,77 @@
+{
+  "city": "Cedar Breaks National Monument",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Cedar Breaks National Monument holds a bristlecone pine that Utah's register of big trees lists as a state champion: 8.3 metres round and only 32 feet tall, on the rim more than 10,000 feet up. It grows beside the Spectra Point trail, where the National Park Service says some bristlecones are more than 1,500 years old and trail guides point to one of 1,600. Nobody has published a ring count for this trunk, so its exact age stays open, and the road in closes for the winter.",
+  "meta_description": "A champion bristlecone pine at Cedar Breaks, Utah: 8.3 m round and 32 ft tall on the Spectra Point trail, where trees pass 1,500 years.",
+  "question_meta": "The oldest trees at Cedar Breaks are bristlecone pines past 1,500 years on the Spectra Point trail. Which one to see and how to reach it.",
+  "question_answer": "The oldest trees at Cedar Breaks National Monument in Utah are Great Basin bristlecone pines on the rim along the Spectra Point trail, where the National Park Service says some trees are more than 1,500 years old and trail guides name one of 1,600. The one on this page is listed in Utah's big tree register as a state champion, 325 inches round and 32 feet tall when measured in 2018. The trail runs about a mile along the rim from the visitor center.",
+  "question_context": "Cedar Breaks sits on a high plateau in southern Utah, and its bristlecone pines grow on the rim above 10,000 feet. The National Park Service says some trees in the grove at Spectra Point are more than 1,500 years old; trail guides point to a 1,600-year-old bristlecone at the point, and one blog says 1,700. None of these is a published ring count, and none says in writing which trunk it means. The tree on this page is the one Utah's Division of Forestry, Fire and State Lands lists in its big tree register as a state champion, measured in 2018 at 325 inches round and 32 feet tall, with a crown about 29 feet across. It stands beside the Spectra Point trail, which runs along the rim from the visitor center, about a mile each way and above 10,000 feet. The monument charges an entrance fee: $25 per private vehicle or $15 per person on foot, by card only. Utah 148 closes to cars for winter, on average from mid-November to mid-May, when the road becomes a marked snowmobile route.",
+  "faq": [
+    {
+      "q": "What is the oldest tree at Cedar Breaks?",
+      "a": "The bristlecone pines along the Spectra Point trail. The National Park Service says some there are more than 1,500 years old, and trail guides name one of 1,600. No ring count has been published for a single trunk."
+    },
+    {
+      "q": "How big is the champion bristlecone?",
+      "a": "Utah's big tree register measured it in 2018 at 325 inches round, about 8.3 metres, and 32 feet tall, with a crown about 29 feet across."
+    },
+    {
+      "q": "Do you have to pay?",
+      "a": "Yes. The monument charges $25 per private vehicle for seven days, or $15 per person arriving without a car, card only. National fee-free days apply."
+    },
+    {
+      "q": "When can you go?",
+      "a": "Utah 148 through the monument closes to cars for winter snow, on average from mid-November to mid-May. Check the park's current conditions before going."
+    }
+  ],
+  "hero_tree_id": "cbk_001",
+  "oldest_tree_id": "cbk_001",
+  "trees": [
+    {
+      "id": "cbk_001",
+      "name": "The Spectra Point Bristlecone",
+      "species": "Great Basin Bristlecone Pine (Pinus longaeva)",
+      "age_estimate": "over 1,500 years (National Park Service, for the grove); 1,600 to 1,700 by trail guides",
+      "age_min": 1500,
+      "age_max": 1700,
+      "age_basis": "source",
+      "girth_cm": 826,
+      "height_m": 9.8,
+      "location": {
+        "address": "Spectra Point trail, south rim, Cedar Breaks National Monument, Utah",
+        "latitude": 37.610249,
+        "longitude": -112.844629,
+        "neighbourhood": "Spectra Point"
+      },
+      "story": "Utah's register of big trees lists this bristlecone pine as a state champion: 325 inches round, about 8.3 metres, and only 32 feet tall when it was measured in 2018. It grows on the rim of Cedar Breaks, more than 10,000 feet up, beside the trail to Spectra Point.\n\nHow old it is depends on whom you ask. The National Park Service says some trees in the bristlecone grove at Spectra Point are more than 1,500 years old. Trail guides go further and name a 1,600-year-old bristlecone at the point, and one blog says 1,700. Whether those figures mean this trunk, nobody has said in writing, and nobody has published a ring count for it, so read its age as somewhere past 1,500 years.\n\nEven the low end is a long time for anything alive on an exposed rim. The register's other numbers say what that life looks like: a crown about 29 feet across on a tree barely taller than a house, nearly all of its growth gone into the trunk.\n\nIt stands beside the Spectra Point trail, about a mile along the rim from the visitor center. The monument charges an entrance fee, and Utah 148, the road through it, closes to cars for winter snow, on average from mid-November to mid-May. If you know of a ring count or a better age for this tree, tell us.",
+      "how_to_recognise": "You can recognise it by the low, broad trunk, about 8.3 metres round on a tree only 32 feet tall. It stands beside the Spectra Point trail on the rim.",
+      "verified_sources": [
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0",
+        "https://npgallery.nps.gov/GetAsset/28481be5-15ef-40bc-b4a1-8d7355fd88aa/original.pdf",
+        "http://dyeclan.com/outdooractivities/hiking/?id=328",
+        "https://www.nationalparkstraveler.org/node/8961",
+        "https://www.nps.gov/cebr/planyourvisit/fees.htm",
+        "https://www.nps.gov/cebr/learn/news/2026-seasonal-closure-of-sr-148.htm"
+      ],
+      "official_register": {
+        "name": "Utah Big Tree Register, Division of Forestry, Fire and State Lands",
+        "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      },
+      "access": "Cedar Breaks National Monument entrance fee: $25 per private vehicle (7 days) or $15 per person without a car, card only; free on national fee-free days. The Spectra Point trail runs along the rim from the visitor center, about a mile each way, above 10,000 feet. Utah 148 closes to cars in winter, on average mid-November to mid-May; check the park's current conditions.",
+      "transport": "By car only, on Utah 148 in summer or Utah 143, which stays open almost year-round; no public transport.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/1600-year-old_Joshua_Tree_in_Cedar_Breaks%2C_dyeclan.com_-_panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "The Dye Clan, Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:1600-year-old_Joshua_Tree_in_Cedar_Breaks,_dyeclan.com_-_panoramio.jpg",
+        "status": "approved",
+        "width": 3000,
+        "height": 4000
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "verify_notes": "2026-10-18, from the US register sieve. Utah FFSL big tree register row: Pinus longaeva, STATE_CHAMP_STATUS 1, measured 2018, circumference 325 in, height 32 ft, spread 29 ft, PUBLIC_ACCESS Y, GPS point. The Commons photo (mislabelled 'Joshua Tree' in its title, clearly a bristlecone) is geotagged 37.610167,-112.844578, about 10 m from the register point: two GPS fixes at the same trunk, hence confirmed. Age: NPS gallery PDF says some trees in the Spectra Point grove are over 1,500 years; dyeclan names a 1,600-year-old bristlecone at Spectra Point; one blog says 1,700; none ties a figure to this trunk in writing, so flagged and the story says so."
+    }
+  ]
+}

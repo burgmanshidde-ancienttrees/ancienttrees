@@ -1,0 +1,75 @@
+{
+  "city": "Longwood",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Longwood's tree is Lady Liberty, a bald cypress in Big Tree Park that Seminole County puts at about 2,000 years old. For most of that time she grew forty feet from The Senator, an older and larger cypress that was one of Florida's oldest tourist attractions until a fire burned it down in 2012. She is the one that is left: about ten metres round, between 82 and 89 feet tall depending on who measured, fenced beside a boardwalk in a free county park.",
+  "meta_description": "Lady Liberty in Longwood, FL: a bald cypress about 2,000 years old and ten metres round, in free Big Tree Park beside the site of The Senator.",
+  "question_meta": "The oldest tree in Longwood is Lady Liberty, a bald cypress of about 2,000 years in Big Tree Park. What is there and how to visit.",
+  "question_answer": "The oldest tree in Longwood, Florida, is Lady Liberty, a bald cypress in Seminole County's Big Tree Park that the county's historic marker puts at about 2,000 years old. Its trunk is about ten metres round: 389 inches on the marker, 394 in the Florida Forest Service's champion register. It stood forty feet from The Senator, an older cypress of about 3,500 years that burned in 2012. The park is free and open daily from 8 a.m.",
+  "question_context": "Big Tree Park is a small Seminole County park built around two trees. The Senator, a bald cypress usually put at 3,500 years old and 47 feet round, was one of Florida's oldest tourist attractions until 2012, when a fire lit inside its hollow base burned it down. Lady Liberty stood forty feet away and survived, and the county's marker calls her the Companion tree or the Sister tree. Her age, about 2,000 years, is the county's estimate rather than a ring count. Her size has been measured twice: 389 inches round and 89 feet tall on the marker, 394 inches and 82 feet in the state's champion register, so about ten metres round and somewhere between 25 and 27 metres tall. Students from Geneva Elementary School named her in 2005, and she now carries a lightning rod. The park is on General Hutchison Parkway in Longwood and is free, with a short boardwalk to the fenced tree, restrooms and a trailhead on the Cross Seminole Trail. It opens daily at 8 a.m. and closes at sunset by one account and 6 p.m. by another.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Longwood?",
+      "a": "Lady Liberty, a bald cypress in Big Tree Park, about 2,000 years old by Seminole County's estimate. Nobody has published a ring count, so treat the figure as an estimate."
+    },
+    {
+      "q": "What happened to The Senator?",
+      "a": "The Senator, a bald cypress usually put at 3,500 years old, burned down in 2012 after a fire was lit inside its hollow base. It stood forty feet from Lady Liberty."
+    },
+    {
+      "q": "Do you have to pay?",
+      "a": "No. Big Tree Park is a free Seminole County park, open daily from 8 a.m."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "By car or bike. The park is at 761 General Hutchison Parkway in Longwood and is a trailhead on the Cross Seminole Trail."
+    }
+  ],
+  "hero_tree_id": "lgw_001",
+  "oldest_tree_id": "lgw_001",
+  "trees": [
+    {
+      "id": "lgw_001",
+      "name": "Lady Liberty",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "about 2,000 years (Seminole County estimate)",
+      "age_min": 2000,
+      "age_max": 2000,
+      "age_basis": "source",
+      "girth_cm": 1001,
+      "height_m": 25,
+      "location": {
+        "address": "Big Tree Park, 761 General Hutchison Parkway, Longwood, FL 32750",
+        "latitude": 28.718554,
+        "longitude": -81.331334,
+        "neighbourhood": "Big Tree Park"
+      },
+      "story": "For about two thousand years, Lady Liberty grew forty feet from an older neighbour. Since 2012 she has been the oldest tree in her park.\n\nThe neighbour was The Senator, a bald cypress usually put at 3,500 years old and 47 feet round, one of Florida's oldest tourist attractions. In 2012 a fire lit inside its hollow base burned it down. Lady Liberty, also a bald cypress, is the one that is left, and the county's historic marker calls her the Companion tree or the Sister tree.\n\nHer age is an estimate, about 2,000 years, from that Seminole County marker; nobody has published a ring count. Her size is measured, twice and slightly differently: 389 inches round and 89 feet tall on the marker, 394 inches and 82 feet in the Florida Forest Service's champion tree register. Either way the trunk is about ten metres round.\n\nHer name came much later. Students from Geneva Elementary School gave it to her in 2005. She now carries a lightning rod, because, as a biologist told Spectrum News in 2026, Florida is \"a lightning capital of the world\".\n\nShe stands beside the boardwalk in Big Tree Park in Longwood, a free Seminole County park, open daily from 8 a.m.",
+      "how_to_recognise": "You can recognise it by the fenced trunk, about ten metres round, beside the park's boardwalk. It stands about 40 feet from the spot where The Senator grew.",
+      "verified_sources": [
+        "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0",
+        "https://seminolecountyfl.gov/locations/big-tree-park.stml",
+        "https://richesmi.cah.ucf.edu/omeka/items/show/1208",
+        "https://mynews13.com/fl/orlando/florida-on-a-tankful/2026/03/13/a-giant-remembered-in-longwood--big-tree-park-keeps-the-legacy-of--the-senator--alive"
+      ],
+      "official_register": {
+        "name": "Florida Champion Trees register, Florida Forest Service",
+        "url": "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_Champion_Trees_Public_View/FeatureServer/0"
+      },
+      "access": "Free. Big Tree Park, a Seminole County park, open daily from 8 a.m. until sunset (the county also gives 6 p.m.). A short boardwalk leads to the fenced tree; restrooms in the park.",
+      "transport": "By car, or by bike: the park is a trailhead on the Cross Seminole Trail.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Longwood_Senator_Park_Lady01.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Ebyabe, Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Ebyabe",
+        "status": "approved",
+        "width": 2448,
+        "height": 3264
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "verify_notes": "2026-10-18, from the US register sieve. Florida Forest Service champion register row (394 in, 82 ft, GPS point) plus Seminole County historic marker (2,000 years est., 389 in, 89 ft, named 2005 by Geneva Elementary) plus Spectrum News 13, 2026-03-13 (alive, lightning rod, park open daily 8 a.m. to sunset). Photo Longwood_Senator_Park_Lady01.jpg looked at: the fenced trunk from the boardwalk, named for her in the file; light OK. Pin is the register point, kept approximate."
+    }
+  ]
+}
