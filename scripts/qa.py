@@ -1244,16 +1244,36 @@ def check_no_owner_name():
     genoeg"), because a tree expert we wrote to could find nothing about who
     makes this. So his FIRST name may render on /about and nowhere else; the
     surname stays refused on every page, that one included.
+
+    A second exception, 2026-10-18: he became the Baarn ambassador and said
+    "je mag mijn naam wel gewoon op de site zetten", so his first name may also
+    render on the page of a place where data/ambassadors.json lists him by
+    that first name with public consent (and its language copies). The
+    session that named him did not widen this check, and every deploy failed
+    on baarn.html until it was. The surname stays refused there too.
     """
     out = []
     hits = []
     pattern = re.compile(r"\bHidde\b|\bBurgmans\b", re.I)
     surname = re.compile(r"\bBurgmans\b", re.I)
+    first_name_ok = {"about"}
+    try:
+        amb = json.loads((ROOT / "data" / "ambassadors.json").read_text(encoding="utf-8"))
+        for a in amb.get("ambassadors") or []:
+            if a.get("public") and (a.get("display_name") or "").strip().lower() == "hidde":
+                first_name_ok.add(a["place_slug"])
+    except (OSError, ValueError, KeyError):
+        pass
     for page in sorted(DIST.rglob("*.html")):
         scan = PageScan()
         scan.feed(page.read_text(encoding="utf-8"))
         rel = page.relative_to(DIST).as_posix()
-        rule = surname if rel in ("about.html", "about/index.html") else pattern
+        parts = rel[:-5].split("/")
+        if parts and parts[-1] == "index":
+            parts = parts[:-1]
+        slug = parts[-1] if parts else ""
+        place_page = len(parts) == 1 or (len(parts) == 2 and len(parts[0]) == 2)
+        rule = surname if place_page and slug in first_name_ok else pattern
         if rule.search(" ".join(scan.text_parts)):
             hits.append(str(page.relative_to(DIST)))
     if hits:
