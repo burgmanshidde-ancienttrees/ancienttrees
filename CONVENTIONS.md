@@ -3473,3 +3473,15 @@ Peter, a reader in Seville, photographed the Ombú of La Cartuja standing at it.
 **iNaturalist**: the location on an observation is the observer's, and an observation can be attached to any taxon by search when the suggestions miss; a wrong suggestion never blocks the record.
 
 What we do: when nothing of ours is within 400 m, "Which one is it?" still shows the closest three on our map within 3 km, with a search by name under the blurb (live results, see "Search"). Picking a tree further than 400 m opens the compare screen once, which says how far our pin is from the photo; "This is the one" collects it AND sends a pin correction (kind `correction`, the photo's coordinate), and the last screen says we will check it and move our pin. With nothing within 3 km the photo still goes straight to a new tree. CollectSheet.swift, `closest`, `search`, `reportPin`.
+
+---
+
+## Adding a tree that is already on the map (2026-10-18, from memory)
+
+Hidde, in Baarn: the app held a second Town Hall Plane among his own trees, a few metres from ours, made by "Add a new tree" in the collect list. "dat moet niet kunnen dan krijg je allemaal rommelige duplicaten", and "dat je alsnog achteraf bomen kan mergen right?"
+
+**Google Maps** (Add a missing place): when the new place sits where Maps already has one, it shows the existing place and asks whether that is the one before it takes a new one; afterwards a duplicate is fixed with Suggest an edit, "Place is a duplicate", which merges it into the place already there. From memory; not re-checked in this session.
+
+**OpenStreetMap (iD editor)**: a new point on top of an existing feature with the same tags is flagged as a likely duplicate before saving, never refused outright.
+
+What we do, app only (the web form takes no coordinate, so it cannot make this duplicate; the inbox matches at 30 m on the server): "Add a new tree" with one of ours within 30 m (the server's MATCH_M) first asks "Is it <name>?" on the compare screen, with "Yes, it is this tree" (collects ours with your photo) and "No, it is a different tree" (adds it as before: an unnamed veteran beside a famous tree is real). Afterwards, a tree of yours within 30 m of one of ours shows "Is this <name>?" under its status, and "It is this tree" folds it into ours: the same row gains the tree id, nothing is deleted, the account and the website follow through the usual sync. Because our pin is not always where the trunk is (Hidde, same day), the same box carries "Another of our trees" ("Already on our map?" when nothing of ours is within 30 m): the collect sheet's own list inline (ours within 400 m, else the closest three within 3 km, and a search by name), and a pick further than 400 m also sends the pin correction the collect sheet sends. CollectSheet.swift `sameTree`, `addNew`; Sightings.swift `fold`; TreeDetail.swift `sameTreeRow`.

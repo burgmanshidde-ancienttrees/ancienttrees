@@ -789,6 +789,23 @@ final class Sightings {
         return all[i]
     }
 
+    /// A tree you added that turns out to be one of ours becomes your
+    /// photograph of that tree (Hidde, 2026-10-18: a second Town Hall Plane in
+    /// his own trees, and "dat je alsnog achteraf bomen kan mergen"). Nothing
+    /// is deleted: the row keeps its id, photographs, note and date, and only
+    /// gains the tree it belongs to, which is exactly what `record` would
+    /// have written had the right row been picked in the first place. The
+    /// account gets the same row through the usual upsert, so the website's
+    /// My trees follows without a rule of its own.
+    func fold(_ id: UUID, into tree: Tree) {
+        guard let i = all.firstIndex(where: { $0.id == id }) else { return }
+        all[i].treeId = tree.id
+        all[i].name = tree.name
+        all[i].draft = nil
+        persist()
+        Self.syncOne?(all[i])
+    }
+
     /// A photograph of the sign, added on the tree's own page.
     func setSign(_ id: UUID, image: UIImage) {
         guard let i = all.firstIndex(where: { $0.id == id }),

@@ -445,7 +445,12 @@ struct ContentView: View {
         case .index(let kind):
             IndexView(kind: kind, catalogue: cat, origin: origin)
         case .mine(let id):
-            if let s = sightings.all.first(where: { $0.id == id }) {
+            // FOLDED INTO ONE OF OURS (Sightings.fold): the page becomes that
+            // tree's own page where it stands, rather than a copy of it.
+            if let s = sightings.all.first(where: { $0.id == id }),
+               let ours = s.treeId, let t = cat.tree(ours) {
+                TreeDetail(tree: t, catalogue: cat, origin: origin)
+            } else if let s = sightings.all.first(where: { $0.id == id }) {
                 TreeDetail(tree: sightings.asTree(s), mine: s, catalogue: cat, origin: origin)
             } else {
                 ContentUnavailableView("That tree is gone", systemImage: "leaf")
