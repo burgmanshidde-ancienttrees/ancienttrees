@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 thirty-sixth attempt: nothing shipped
+Pulled; no claims; 60 READY leads and 28 written trees still held by the rich-or-reader rule (recovery mode); enrich empty; langcheck --next has no city over 10 impressions; Denver still has no licence or coordinates. Nothing dispatched.
+
 ## 2026-10-18 08:29 window: one sighting verdict, no trees
 Rung 1: sighting c86ff6bf (owner-account tulip tree, Cantonspark, Amersfoort area) judged lead: no register or Wikipedia entry nearby, no size or note, photo not on disk. Rung 2: smoke "skipped" is just the path filter on log-only pushes; the iOS app's scheduled runs fail on appsweep DRIFT findings (collect-intro and collect-away 'Photograph a tree you are standing in fro...' starts at x=26 vs 20; early-adopter-sheet 'early-adopter-done' x=24 vs 20), while the push-triggered run at 15:36 passed. Swift layout work, not doable on this Linux runner: For Hidde/a Mac session. photo_hunt --recheck london: 0 new candidates; photo_fetch --zero ignored --city and pulled filename-only junk (Dallas, Fort Worth, Oss, Rotterdam), none approved. Verified-unpublished trees are still the held ones; no write pass. Visits last 7 days: 1920.
 
