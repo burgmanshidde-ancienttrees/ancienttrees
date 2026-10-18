@@ -11,6 +11,8 @@ the rule is to look at the pixels, which means the pixels have to be on disk.
 
     python3 scripts/photo_fetch.py --zero --out <dir> --per-tree 3
     python3 scripts/photo_fetch.py Ferrara Zurich --out <dir>
+    python3 scripts/photo_fetch.py --city lisbon,vienna --out <dir>
+    python3 scripts/photo_fetch.py --roster --out <dir> --per-tree 3   (recovery mode)
 
 It writes <dir>/<city-slug>/<tree_id>-<n>.jpg plus a manifest.json per city
 carrying, for each file: the tree, its name and species, the candidate's title,
@@ -87,6 +89,13 @@ PAUSE = 3.0  # seconds between fetches; below this Wikimedia starts returning 42
 
 def slug(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def _key(name):
+    """A queue city ("Zürich") and a roster slug ("zurich") compare equal."""
+    import unicodedata
+    plain = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    return slug(plain)
 
 
 FAR_KM = 25
@@ -191,7 +200,17 @@ def main():
         per_city = int(sys.argv[sys.argv.index("--per-city") + 1])
         args = [a for a in args if a != str(per_city)]
 
-    cities = SL.cities_without_photos() if "--zero" in sys.argv else args
+    # Named cities win over --zero (2026-10-18): night runs passed --city with
+    # --zero and got every photo-less city instead, so the roster lane fetched
+    # Dallas and Oss. --roster is the recovery-mode lane: the frozen roster,
+    # most impressions first.
+    if "--city" in sys.argv:
+        named = sys.argv[sys.argv.index("--city") + 1]
+        args = [a for a in args if a != named] + [c for c in named.split(",") if c]
+    if "--roster" in sys.argv:
+        roster = json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json")))["cities"]
+        args = sorted(roster, key=lambda c: -((roster[c] or {}).get("impressions") or 0))
+    cities = args if args else (SL.cities_without_photos() if "--zero" in sys.argv else [])
     queue = json.load(open(SL.QUEUE))["trees"]
     trees = {}
     import glob
@@ -203,7 +222,7 @@ def main():
     for city in cities:
         rows = []
         for tid, entry in queue.items():
-            if (entry.get("city") or "").lower() != city.lower():
+            if _key(entry.get("city") or "") != _key(city):
                 continue
             tree = trees.get(tid)
             if tree is None or SL.live_photo(tree):

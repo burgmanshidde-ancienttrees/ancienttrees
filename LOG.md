@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 session with Hidde: new trees without a photograph go live again; the photo fetcher keeps to its cities
+- New trees no longer have to be rich to ship (`ADD_NEEDS_RICH = False` in scripts/findable.py). Hidde: "let new trees without a photo go live again (readers and Bing only)". Google cannot see them until they get a photograph (the noindex change below), so the hold bought nothing and kept 60 READY leads and 28 written trees idle through 38 empty night attempts. Every other gate holds (photo-or-pin, told-apart, a named source, the reason floor), so not all 88 will pass. prepare.py and passcheck.py briefs now print the rule from the flag. Undo: set it True.
+- `photo_fetch.py` ignored `--city` whenever `--zero` was given and fetched every photo-less city (Dallas, Oss, Rotterdam) instead of the pages Google shows. Named cities now win, `--city a,b` works, and `--roster` fetches the frozen roster most impressions first; prepare.py points the night run at `--roster`.
+
 ## 2026-10-18 session with Hidde: Google now sees only tree pages with a photograph
 The 10-09 exception that let finished tree pages without a photograph back into Google is closed (`RETURN_ENRICHED = False` in scripts/thin_pages.py). 1,128 tree pages (1,810 urls with their translations) get the googlebot-only noindex on the next deploy; readers still see them, Bing keeps them through sitemap-bing.xml, and each returns to Google the day it gets a photograph. Why: the digest's "Is enriching working" table showed those pages earned 0.05 impressions a page after they came back on 10-12/13, and the 10-13 rule (widen only once returned pages earn impressions) was never met. Hidde: "Yes, take the 1,128 photo-less pages out of Google; Bing keeps them." Undo: set it True. Next look: mid-November, impressions per photographed page.
 

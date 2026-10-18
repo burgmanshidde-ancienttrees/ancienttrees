@@ -90,7 +90,13 @@ def enriched(tree, gaps):
 # Trees live that day are in data/rich-baseline.json and stay (hard rule 3).
 # preflight's check_a_new_tree_is_rich_or_a_readers() reads this; False
 # switches it off and needs Hidde.
-ADD_NEEDS_RICH = True
+# OFF since 2026-10-18 (Hidde: "let new trees without a photo go live again
+# (readers and Bing only)"). Google now sees only tree pages with a photograph
+# (thin_pages.py RETURN_ENRICHED = False), so a thin new tree reaches readers
+# and Bing and never Google's view of the site; holding it bought nothing and
+# left 60 READY leads and 28 written trees idle for 38 night attempts. Every
+# other gate still holds: photo-or-pin, told-apart, a source, the reason floor.
+ADD_NEEDS_RICH = False
 
 
 def reader_added(tree):

@@ -212,13 +212,18 @@ def pipeline_status():
     print("  *** ENRICH THE INDEXED PAGES FIRST (Hidde, 2026-10-06): register record, measurement,")
     print("      access facts, season, pin evidence, on EVERY tree page of a proven city, indexed first (2026-10-09). ***")
     print("      " + nxt)
-    print("      A PHOTOGRAPH FIRST, and you may APPROVE it (Hidde, 2026-10-09): photo_fetch.py --zero --out <dir> --per-tree 3,")
+    print("      A PHOTOGRAPH FIRST, and you may APPROVE it (Hidde, 2026-10-09): photo_fetch.py --roster --out <dir> --per-tree 3,")
     print("      LOOK at the files, photo_verdicts.py applies your verdicts. Held, never approved, when two similar trees stand nearby.")
     print("      claim it (passcheck.py --claim <city> --kind enrich, push), verify agent on the brief, then enrich.py --apply out/enrich/<city>.answer.json")
     print("      A pass that closed nothing: enrich.py --done <city> (dead-ends the briefed gaps, 90 days). Only when this says nothing to do,")
     print("      take the rest of THE LINE below (new trees, refill, backup).")
-    print("      NEW TREES ship only RICH (findable + register + measurement + access) or reader-sent (Hidde, 2026-10-09);")
-    print("      preflight refuses the rest, so a verify pass delivers those fields or files the tree as a lead.")
+    from findable import ADD_NEEDS_RICH
+    if ADD_NEEDS_RICH:
+        print("      NEW TREES ship only RICH (findable + register + measurement + access) or reader-sent (Hidde, 2026-10-09);")
+        print("      preflight refuses the rest, so a verify pass delivers those fields or files the tree as a lead.")
+    else:
+        print("      NEW TREES WITHOUT A PHOTOGRAPH SHIP AGAIN (Hidde, 2026-10-18): readers and Bing see them, Google")
+        print("      only once they have a photograph. Write the READY leads and the trees awaiting a writer.")
     # Rung 1 before any of the stages below it, because a photograph somebody
     # walked to a tree to take outranks anything the machine found by itself.
     # Printed here rather than left to memory: the queue is written by a
