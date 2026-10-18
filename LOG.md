@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 night run (13:43 UTC): reader photographs, rung 1
+
+Visits last 7 days: 1980. Rung 1: two app photographs of lis_014 (Yew of Campo Santana, Lisbon) looked at and both rejected: they show a bleached dead trunk laid on a mound beside the pond, not a living yew. Open question for a session: that dead wood stands 5 to 25 m from our pin, so the yew may have died or been cut down. Check the garden (Jardim Braamcamp Freire) before the page keeps claiming a living 14 m yew; not retired, nothing could confirm it from here. Nothing else done in this window beyond that: shelf lanes untouched.
+
 ## 2026-10-18 session: near-a-tree banner in a park
 
 **Changed in the app (next build):** the "You are 40 m from ..." banner now works in a park with many trees. Before, it only looked at the single nearest tree, so other trees close by never got a banner, and a new banner could push the previous one off the screen. Now each tree gets its turn, nearest first, one banner at a time, and the next one comes only once you walk on. Standing still in Parc d'Egmont (eleven trees within 50 m) gives one banner, not a new one every nine seconds. The banner now also shows on the tree's own page (Hidde: "deze uitzondering hoeft van mij niet"), and tapping it there opens Collect.
