@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 session: four Australian giants from the big-tree register trial
+
+**New on the site:** the Giant Tingle Tree near Walpole (with photo), the Prison Boab near Wyndham (with photo), the Ada Tree near Powelltown and the Dave Evans Bicentennial Tree at Pemberton. The Gloucester Tree got its first photograph. Walpole, Wyndham and Powelltown are lone-tree places under Hidde's new rule of the same day: a lone tree goes live as a tree page, and its place page stays out of Google until it has four.
+
+**How:** Australia's National Register of Big Trees (923 trees, All Rights Reserved) was used as a finding aid only. A free script searched Commons for the 107 trees scoring 500+ points; 25 had filename hits, about 6 were real candidates. Then one verify pass (127k tokens), one photo pass (153k) and one writing pass (133k): roughly 410k tokens for 4 trees plus a photo, about 100k per tree, well over the 15k target. The sieve is cheap, but most register giants have no usable photo and no second source.
+
+**Kept as leads:** Grandma Tingle (written, but no trunk photo or recognition line), the Wonnerup Giant (approved photo, only the register as source), the Woodford blue gum, and Big Red, Grey Bark, Pleated Lady, Forest Lord, The Tyrant and Hawke (register only). The sieve output is in out/au-register/ (not in the repo).
+
+**Open:** the Pemberton FAQ and the Gloucester story call it "second-tallest fire lookout behind Dave Evans", but Dave Evans was never a fire lookout. Needs a source check. The Gloucester pin sits about 260 m from two photo geotags.
+
 ## 2026-10-18 A stranger in Lisbon gave two trees their first photographs
 A signed-in reader (not our account) collected the Moreton Bay Fig and the Prickly Paperbark of Jardim Constantino in the app this morning and took three photographs. Neither tree had a photograph. Looked at all three: fig whole with its surface roots and the Prometheus statue behind (lead), the fig from under its crown (added beside it), the paperbark's white peeling bark (lead). Published with sightings_publish.py, mail off; verdicts in data/judgements.json. Both pages now qualify for Google (Lisbon is on the proven roster). Found because Hidde asked about the two collections in the digest: `sightings_inbox.py --status` reads only the local queue, so it said 0 waiting until the inbox itself ran. Also: judgement.py --scan reads the queue, which sightings_publish empties, so scan before publishing.
 
