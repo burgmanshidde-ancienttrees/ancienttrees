@@ -75,9 +75,9 @@
         "sighting_id": "ff725d9a-9950-4f0f-a657-1cf19901c9c0",
         "taken_at": "2026-09-05T07:12:55+00:00",
         "date": "2026-10-15",
-        "note": "Hidde, 2026-10-15: the Watercypres sighting and this dawn redwood are the same tree, and the Watercypres fix is the right spot. Replaces the 2026-10-05 pin from sighting 22864b26, which sat about 140 m north. Old pin 52.2091, 5.2988."
+        "note": "Owner, 2026-10-15: the Watercypres sighting and this dawn redwood are the same tree, and the Watercypres fix is the right spot. Replaces the 2026-10-05 pin from sighting 22864b26, which sat about 140 m north. Old pin 52.2091, 5.2988."
       },
-      "verify_notes": "2026-10-15: pin moved to the Watercypres app sighting (ff725d9a), which Hidde confirmed is this tree at the right location."
+      "verify_notes": "2026-10-15: pin moved to the Watercypres app sighting (ff725d9a), which the owner confirmed is this tree at the right location."
     },
     {
       "id": "brn_002",
@@ -384,7 +384,7 @@
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
       "how_to_recognise": "The single large plane on the open lawn directly in front of the town hall at Stationsweg 18, with the patchwork bark planes carry and a trunk over four and a half metres round.",
-      "verify_notes": "Added 2026-09-12 from a newspaper clipping Hidde photographed. Two independent lines of evidence: the LRMB register entry 1677447 (position, planted band, girth, ownership, access, condition) and the municipality's own TreeTag announcement carried by the Baarnsche Courant (height, leaf area, water and carbon figures, measured by boomdeskundige Pius Floris for the campaign). Age band and girth agree independently: 450cm at roughly 3.5cm of girth a year puts a plane near 130, which matches the register's 1890-1900 band. The planting date is the register's own hedge ('mogelijk ... in de bouwperiode van deze villa') and is repeated as a hedge, not sharpened. Pin taken from the register's per-tree coordinate at a named street address with a single registered tree on it. No open-licensed photograph found; the press image is credited Gemeente Baarn and is not openly licensed. NOTE: baarn.nl, baarnschecourant.nl, mooibaarn.nl and boomkronen.eu are all blocked by this session's egress proxy, so the two web sources were confirmed to exist and summarised via search rather than read in full. A run with open egress should read them and fill in the other five nominated trees.",
+      "verify_notes": "Added 2026-09-12 from a newspaper clipping the owner photographed. Two independent lines of evidence: the LRMB register entry 1677447 (position, planted band, girth, ownership, access, condition) and the municipality's own TreeTag announcement carried by the Baarnsche Courant (height, leaf area, water and carbon figures, measured by boomdeskundige Pius Floris for the campaign). Age band and girth agree independently: 450cm at roughly 3.5cm of girth a year puts a plane near 130, which matches the register's 1890-1900 band. The planting date is the register's own hedge ('mogelijk ... in de bouwperiode van deze villa') and is repeated as a hedge, not sharpened. Pin taken from the register's per-tree coordinate at a named street address with a single registered tree on it. No open-licensed photograph found; the press image is credited Gemeente Baarn and is not openly licensed. NOTE: baarn.nl, baarnschecourant.nl, mooibaarn.nl and boomkronen.eu are all blocked by this session's egress proxy, so the two web sources were confirmed to exist and summarised via search rather than read in full. A run with open egress should read them and fill in the other five nominated trees.",
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677447",
         "url": null
