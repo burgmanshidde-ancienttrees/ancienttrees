@@ -133,6 +133,12 @@ struct EarlyAdopterSheet: View {
             message: "You joined Ancient Trees in its first months. This badge is only for the people who did.",
             buttons: [.primary("Done", id: "early-adopter-done") { dismiss() }],
             tint: .gold)
+            // One container with a name, as the sign-in sheet carries, so the
+            // layout sweep measures the sheet on its own and not against the
+            // profile behind it (2026-10-18: "Done" at 24 read as a drift from
+            // the profile's 20).
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("early-adopter-sheet")
     }
 }
 

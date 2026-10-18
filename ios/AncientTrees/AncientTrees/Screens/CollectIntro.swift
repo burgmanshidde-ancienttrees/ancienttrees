@@ -83,8 +83,12 @@ struct CollectIntro: View {
                 .font(.system(size: 15))
                 .foregroundStyle(Brand.inkSoft)
                 .multilineTextAlignment(.center)
-                .frame(maxWidth: .infinity)
                 .fixedSize(horizontal: false, vertical: true)
+                // The headline's own 18 at the sides, so the sentence keeps
+                // its measure and reads as centred text. Spanning the full
+                // width left its widest line at 26 against the buttons' 20, a
+                // near miss of the edge rather than a centre (2026-10-18).
+                .padding(.horizontal, 18)
                 .padding(.top, 8)
                 .padding(.bottom, 22)
 

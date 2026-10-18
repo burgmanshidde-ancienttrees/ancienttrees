@@ -91,7 +91,7 @@ final class SweepFrames: XCTestCase {
         ("people",       ["-tab=2", "-signed-in", "-people", "-people-demo"], "people-sheet"),
         // The early-adopter badge on My trees and its one-time sheet (2026-10-16).
         ("early-adopter", ["-tab=2", "-signed-in", "-earlyadopter", "-country=NL", "-ambassador=Paris"], nil),
-        ("early-adopter-sheet", ["-tab=2", "-signed-in", "-earlyadoptersheet"], nil),
+        ("early-adopter-sheet", ["-tab=2", "-signed-in", "-earlyadoptersheet"], "early-adopter-sheet"),
     ]
 
     /// The file appfit.py goes looking for.
