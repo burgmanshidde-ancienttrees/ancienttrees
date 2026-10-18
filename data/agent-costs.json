@@ -12897,6 +12897,14 @@
     "trees": 0,
     "photos_approved": 3,
     "note": "27 candidates, all viewed: 3 approved (lpz_024 pagoda tree, lpz_025 Kantatenweg oak, lpz_027 Steinlinde), 0 held, 24 rejected (Viertelsweg house facades, ginkgo signs for lpz_021, a Rosental conifer, a seedling leaf close-up for lpz_029)"
+   },
+   {
+    "date": "2026-10-18",
+    "target": "frankfurt write frk_012 to frk_017 (6 trees)",
+    "kind": "write",
+    "tokens": 135000,
+    "trees": 6,
+    "note": "6 stories, recognition lines, 3 best_time (frk_013 autumn colour, frk_014 July flowers, frk_016 May flowers); merged into data/cities/frankfurt.json with German overlay for all 6; counts to 17, oldest_tree_id to frk_012 (Senckenberg Yew, roughly 400); frk_014 species normalised to Small-leaved Lime; frk_012 paid_entry true."
    }
   ]
  },
