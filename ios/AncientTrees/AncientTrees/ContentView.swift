@@ -247,24 +247,39 @@ struct ContentView: View {
     }
 
     /// Within 50 metres of a tree with a confirmed pin that you have not
-    /// collected, and not on that tree's own page or during a walk: say so.
-    /// An approximate pin never fires, because "40 m" is a promise it cannot
-    /// keep.
+    /// collected, and not during a walk: say so. An approximate pin never
+    /// fires, because "40 m" is a promise it cannot keep.
+    ///
+    /// A PARK, NOT ONE TREE (Hidde, 2026-10-18: "wat gebeurt er als je naar
+    /// een park loopt waar opeens 5 bomen in de buurt van 100m staan"). This
+    /// used to look at the single nearest tree, so once that one had been
+    /// announced the second, thirty metres off, stayed silent until you stood
+    /// nearer it than the first; and a new hit replaced a banner still on
+    /// screen. Now it takes the nearest tree not yet said, and only once the
+    /// banner before it has gone and you have walked on (see nearKey), so a
+    /// park comes one tree at a time, at walking pace.
+    ///
+    /// The tree's own page no longer suppresses it (Hidde, same day: "deze
+    /// uitzondering hoeft van mij niet"): reading the page on the way there
+    /// is exactly when arriving is worth a word. Tapping it there collects.
     private func checkNearby() {
         guard locationState.known, navigator.beginWalk == nil, rootSheet == nil,
+              nearby == nil,
               let cat = store.catalogue,
-              let hit = cat.nearest(to: origin.lat, origin.lng, limit: 1, withinKm: 0.05).first,
-              hit.tree.precision == .confirmed,
-              !saved.isVisited(hit.tree.id),
-              !announced.contains(hit.tree.id),
-              path(tab).wrappedValue.last != .tree(hit.tree.id) else { return }
+              let hit = cat.nearest(to: origin.lat, origin.lng, limit: 50, withinKm: 0.05)
+                  .first(where: { $0.tree.precision == .confirmed
+                                  && !saved.isVisited($0.tree.id)
+                                  && !announced.contains($0.tree.id) }) else { return }
         announced.insert(hit.tree.id)
         let m = max(5, Int((hit.km * 1000 / 5).rounded()) * 5)
         withAnimation(.spring(duration: 0.35)) { nearby = (hit.tree, m) }
     }
 
     /// Changes every ten metres or so, which is as often as the banner needs
-    /// to ask.
+    /// to ask. Deliberately NOT when a banner goes: tried on 2026-10-18 in
+    /// Parc d'Egmont, where eleven trees stand within 50 m, and somebody
+    /// standing still got a new banner every nine seconds for a minute and a
+    /// half. The next tree waits for the next steps.
     private var nearKey: String {
         "\(Int(origin.lat * 10_000))|\(Int(origin.lng * 10_000))|\(store.catalogue?.version ?? "")"
     }
@@ -581,10 +596,20 @@ struct ContentView: View {
                     // Not over a sheet: with the camera open the banner sat on
                     // top of "You found" for the very tree it named (2026-10-14).
                     if let n = nearby, rootSheet == nil {
-                        NearbyBanner(tree: n.tree, meters: n.meters,
+                        let onItsPage = path(tab).wrappedValue.last == .tree(n.tree.id)
+                        NearbyBanner(tree: n.tree, meters: n.meters, onItsPage: onItsPage,
                                      open: {
                                          withAnimation { nearby = nil }
-                                         navigator.push = .tree(n.tree.id)
+                                         if onItsPage {
+                                             // Already reading it: the tap is the
+                                             // page's own Collect, not the page again.
+                                             navigator.collectAbout = n.tree.name
+                                             navigator.collectTree = n.tree.id
+                                             navigator.collectAddsPhoto = true
+                                             navigator.collectNearby = true
+                                         } else {
+                                             navigator.push = .tree(n.tree.id)
+                                         }
                                      },
                                      dismiss: { withAnimation { nearby = nil } })
                             .task(id: n.tree.id) {
@@ -595,6 +620,10 @@ struct ContentView: View {
                 }
                 .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)
                 .task(id: nearKey) { checkNearby() }
+                // A sheet hides the banner and with it the timer that clears
+                // it, which would leave `nearby` set and every later tree
+                // waiting behind a banner nobody can see.
+                .onChange(of: rootSheet != nil) { _, open in if open { nearby = nil } }
                 .appObjects(self)
                 .reviewAsk(reviewPrompt)
                 // SIGNED IN SAYS SO, in the snackbar (Hidde, 2026-10-14: "is it

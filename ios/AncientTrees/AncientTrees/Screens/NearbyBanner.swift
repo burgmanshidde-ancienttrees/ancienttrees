@@ -15,6 +15,8 @@ import SwiftUI
 struct NearbyBanner: View {
     let tree: Tree
     let meters: Int
+    /// On the tree's own page the tap collects rather than opens.
+    var onItsPage = false
     let open: () -> Void
     let dismiss: () -> Void
 
@@ -37,7 +39,7 @@ struct NearbyBanner: View {
                             .foregroundStyle(Brand.ink)
                             .lineLimit(2)
                             .multilineTextAlignment(.leading)
-                        Text("You can open it to collect it")
+                        Text(onItsPage ? "Tap here to collect it" : "You can open it to collect it")
                             .font(.footnote)
                             .foregroundStyle(Brand.inkSoft)
                     }
