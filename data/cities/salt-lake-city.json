@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "intro": "Utah's biggest London plane stands in Liberty Park, 505 centimetres round and 30.5 metres tall. Five state champion trees from Utah's big tree register make up this page. Two stand together on one corner of Washington Square, a hackberry and an Ohio buckeye about 15 metres apart. Two more grow on Temple Square: a European wych elm beside the Tabernacle, and a Cedar of Lebanon at the temple that, by the story told of it, arrived around 1949 in a suitcase. None has a recorded planting date, and if you know one, tell us.",
   "meta_description": "Utah's champion London plane, 505 cm round, stands in Liberty Park. Five state record trees in Salt Lake City, from Washington Square to Temple Square.",
-  "question_meta": "Nobody has dated Salt Lake City's champion trees. The biggest is Utah's champion London plane in Liberty Park, 505 cm round. Where to find all five.",
-  "question_answer": "No planting date is recorded for any of the five trees we map in Salt Lake City, so the oldest is not known. The biggest is the state champion London plane in Liberty Park, 505 centimetres round and 30.5 metres tall. The best documented is the Cedar of Lebanon on Temple Square, which the Deseret News reported arrived around 1949 as a seedling seven inches high.",
-  "question_context": "All five come from the big tree register of the Utah Division of Forestry, Fire and State Lands, which measures trunk, height and crown and records no planting dates. Each one is the largest of its species in the state.\n\nFour stand downtown. The champion hackberry and the champion Ohio buckeye share the southwest corner of Washington Square, around the City and County Building. The wych elm stands at the northeast corner of the Tabernacle on Temple Square, and the Cedar of Lebanon at the southeast corner of the Salt Lake Temple, a few minutes' walk apart. The London plane is in Liberty Park, about three kilometres south-east of downtown. All five are free to visit.\n\nTemple Square has been under renovation since 2020, with work expected to finish by the end of 2026, and parts of the grounds have been closed during it. The cedar was measured in 2019, before the excavation around the temple began, so it deserves a fresh look from anyone passing.",
+  "question_meta": "Nobody has dated Salt Lake City's champion trees. The biggest is Utah's champion London plane in Liberty Park, 505 cm round. Where to find all six.",
+  "question_answer": "No planting date is recorded for any of the six trees we map in Salt Lake City, so the oldest is not known. The biggest is the state champion London plane in Liberty Park, 505 centimetres round and 30.5 metres tall. The best documented is the Cedar of Lebanon on Temple Square, which the Deseret News reported arrived around 1949 as a seedling seven inches high.",
+  "question_context": "All six come from the big tree register of the Utah Division of Forestry, Fire and State Lands, which measures trunk, height and crown and records no planting dates. Each one is the largest of its species in the state.\n\nFour stand downtown. The champion hackberry and the champion Ohio buckeye share the southwest corner of Washington Square, around the City and County Building. The wych elm stands at the northeast corner of the Tabernacle on Temple Square, and the Cedar of Lebanon at the southeast corner of the Salt Lake Temple, a few minutes' walk apart. The London plane is in Liberty Park, about three kilometres south-east of downtown. All six are free to visit.\n\nTemple Square has been under renovation since 2020, with work expected to finish by the end of 2026, and parts of the grounds have been closed during it. The cedar was measured in 2019, before the excavation around the temple began, so it deserves a fresh look from anyone passing.",
   "faq": [
     {
       "q": "What is the oldest tree in Salt Lake City?",
@@ -203,6 +203,36 @@
       "official_register": {
         "name": "Big Trees register for Salt Lake City (ArcGIS Big_Trees layer, state champion records), no. OBJECTID 25",
         "url": null
+      }
+    },
+    {
+      "id": "slc_006",
+      "name": "The Mount Olivet Cemetery Linden",
+      "species": "Small-leaved Lime (Tilia cordata)",
+      "age_estimate": "not documented",
+      "girth_cm": 411,
+      "height_m": 21.0,
+      "location": {
+        "address": "Mt. Olivet Cemetery, 1342 W 500 S, Salt Lake City",
+        "latitude": 40.757339,
+        "longitude": -111.849789,
+        "neighbourhood": "Foothill / Salt Lake City east side"
+      },
+      "verified_sources": [
+        "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Big_Trees/FeatureServer/0"
+      ],
+      "access": "Free; Mount Olivet is a public cemetery, open in daylight",
+      "transport": "East bench; reached by car or bus, no walk time established",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Utah's champion small-leaved lime has a trunk 4.11 metres round, and its crown is almost as wide as the tree is tall.\n\nThe state's big tree register, kept by the Utah Division of Forestry, Fire and State Lands, measured it in 2016: 21.0 metres tall, with a spread of 20.7 metres. In the United States this species usually goes by littleleaf linden, and this is the largest one the register knows of in the state. It stands in Mount Olivet Cemetery, and the register marks it as open to the public.\n\nThat is where the certainty ends. The register's own record disagrees with itself: its street address points to the west side of the city, while its coordinate sits on the east bench. Our pin follows the coordinate and is approximate, and in a cemetery this size that leaves you looking among a great many trees. The register's measurements are the best guide: a lime this broad, with a trunk over four metres round, should not be easy to confuse with its neighbours.\n\nThe 2016 measurement is also the last sighting we have, so we cannot promise the tree is still standing. Nobody has dated it. If you find it, tell us where exactly it stands and how it looks, and if you know when it was planted, tell us that too. Come in July, when this species carries its small, scented flowers, later than most limes.",
+      "how_to_recognise": "You can recognise it by its size: a trunk 4.11 metres round and a crown about 20 metres across, the state champion of its species. It stands somewhere in Mount Olivet Cemetery; our pin is approximate.",
+      "best_time": {
+        "months": [
+          7
+        ],
+        "kind": "flowers",
+        "label": "July, when the small-leaved lime flowers and its scent carries"
       }
     }
   ]
