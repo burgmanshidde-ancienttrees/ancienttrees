@@ -42,7 +42,7 @@
    "lat": 51.33529,
    "lng": 12.41107,
    "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No cadastre tree within 60 m of the lead coordinate (51.33529,12.41107); not matched, not checked further. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+   "why": "[SKIPPED 2026-10-18 by the write pass] no cadastre match, no measurement, no photograph and nothing beyond the designation list; nothing to write a story from without inventing it. 2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No cadastre tree within 60 m of the lead coordinate (51.33529,12.41107); not matched, not checked further. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
   },
   {
    "name": "Esche in residential quarter (Anger-Crottendorf area)",
@@ -74,7 +74,7 @@
    "lat": 51.30635,
    "lng": 12.40447,
    "status": "lead",
-   "why": "2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No ND weeping willow matched within 60 m of the lead coordinate in the cadastre (only unrelated park trees); not matched. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
+   "why": "[SKIPPED 2026-10-18 by the write pass] no cadastre match, no measurement, no photograph and nothing beyond the designation list; nothing to write a story from without inventing it. 2026-10-14 verify pass: Leipzig city Baumkataster open data (geodienste.leipzig.de/l3/OpenData/wfs, layer OpenData:Baeume, baumnummer N7xxxx = Naturdenkmal trees, per-tree girth/height, featureID record URL) gives register measurements. No ND weeping willow matched within 60 m of the lead coordinate in the cadastre (only unrelated park trees); not matched. Earlier note: Naturdenkmal (Leipzig council ordinance, de.wikipedia list reproduces designation, coordinate 'landmark' level only). The list and Wikidata carry no girth or height, and no per-tree page on the author"
   },
   {
    "name": "Ginkgo Abtnaundorfer Strasse 46",
@@ -114,7 +114,7 @@
    "lat": 51.287766,
    "lng": 12.38873,
    "status": "lead",
-   "why": "Cadastre N78872 Stiel-Eiche 570 cm, 28 m (city green Helenenstrasse/Torhaus) and N78884 550 cm, 23 m at 51.287454,12.389199 (36 m away), both Naturdenkmal. Public city green, lifecheck RECENT (iNaturalist 2026-04-26) but no photograph of either trunk in reach (Commons files nearby show the war memorial and Torhaus); the war memorial register entry mentions a Friedenseiche planted 1872 plus two later oaks, so which trunk is which is unsettled and the 570 cm girth does not fit an 1872 planting. Needs a photo or a sign to tell them apart. Strong candidate for a photo pass. 2026-10-18 verify pass: DELIVERED folded as lpz_029 (ND 114 = N78884; Commons photo Stieleiche Lzg. Helenenstr.jpg CC BY-SA 3.0 exists but which oak it shows is unsettled)."
+   "why": "Already published as lpz_029 (The Oaks of Doelitz Torhaus); write pass 2026-10-18. Cadastre N78872 Stiel-Eiche 570 cm, 28 m (city green Helenenstrasse/Torhaus) and N78884 550 cm, 23 m at 51.287454,12.389199 (36 m away), both Naturdenkmal. Public city green, lifecheck RECENT (iNaturalist 2026-04-26) but no photograph of either trunk in reach (Commons files nearby show the war memorial and Torhaus); the war memorial register entry mentions a Friedenseiche planted 1872 plus two later oaks, so which trunk is which is unsettled and the 570 cm girth does not fit an 1872 planting. Needs a photo or a sign to tell them apart. Strong candidate for a photo pass. 2026-10-18 verify pass: DELIVERED folded as lpz_029 (ND 114 = N78884; Commons photo Stieleiche Lzg. Helenenstr.jpg CC BY-SA 3.0 exists but which oak it shows is unsettled)."
   },
   {
    "name": "Stieleiche Dorfanger Probstheida (Russenstrasse)",
@@ -154,7 +154,7 @@
    "lat": 51.31782,
    "lng": 12.35941,
    "status": "lead",
-   "why": "2026-10-18 verify pass: cadastre N78826 girth 374 cm height 24 m (list says 13 m); Commons photo 'Flatterulme Lzg. B2.jpg' (CC BY-SA 3.0, Geisler Martin, 2014-04-19). On the verge of a federal road, no liveness evidence, list/cadastre height conflict; not a pleasant place to stand. Could ship flagged if the photo is approved."
+   "why": "Shipped as lpz_030 on 2026-10-18 (cadastre record Baeume.34681951, flagged, approximate, no photo yet; Commons 'Flatterulme Lzg. B2.jpg' CC BY-SA 3.0 Geisler Martin awaits a photo-judge look). 2026-10-18 verify pass: cadastre N78826 girth 374 cm height 24 m (list says 13 m); Commons photo 'Flatterulme Lzg. B2.jpg' (CC BY-SA 3.0, Geisler Martin, 2014-04-19). On the verge of a federal road, no liveness evidence, list/cadastre height conflict; not a pleasant place to stand. Could ship flagged if the photo is approved."
   },
   {
    "name": "Zerreiche Windorfer Strasse (ND 116)",
@@ -162,7 +162,7 @@
    "lat": 51.31277,
    "lng": 12.32697,
    "status": "lead",
-   "why": "2026-10-18 verify pass: cadastre N78886 girth 220 cm, height 21 m, in Volkspark Kleinzschocher, cadastre planting year 1936 (class estimate): a young tree, modest for a page. Commons photo 'Zerreiche Lzg. Wind. Str.jpg' CC BY-SA 3.0 (2014). Cluster with the Kantatenweg oak and manor ginkgo if the city wants a Kleinzschocher walk."
+   "why": "[SKIPPED 2026-10-18 by the write pass] below the floor of a reason somebody can see: 220 cm girth, 21 m, cadastre class year 1936; nothing in the record makes it worth the walk on its own. 2026-10-18 verify pass: cadastre N78886 girth 220 cm, height 21 m, in Volkspark Kleinzschocher, cadastre planting year 1936 (class estimate): a young tree, modest for a page. Commons photo 'Zerreiche Lzg. Wind. Str.jpg' CC BY-SA 3.0 (2014). Cluster with the Kantatenweg oak and manor ginkgo if the city wants a Kleinzschocher walk."
   },
   {
    "name": "Walnusshybride im Alumnat Hillerstrasse 8-10 (ND 119)",
@@ -170,7 +170,7 @@
    "lat": 51.33685,
    "lng": 12.36046,
    "status": "lead",
-   "why": "2026-10-18 verify pass: cadastre N78224 girth 324 cm, height 27 m, Commons photo 'Leipzig Naturdenkmal Walnussbaum Hillerstr 8 Nr 9.jpg'. Stands in the Alumnat, an institution courtyard: access needs a source (hard rule 10). About 380 m from lpz_007."
+   "why": "[SKIPPED 2026-10-18 by the write pass] stands in the Alumnat, an institution courtyard; no source says the grounds are open (hard rule 10). 2026-10-18 verify pass: cadastre N78224 girth 324 cm, height 27 m, Commons photo 'Leipzig Naturdenkmal Walnussbaum Hillerstr 8 Nr 9.jpg'. Stands in the Alumnat, an institution courtyard: access needs a source (hard rule 10). About 380 m from lpz_007."
   },
   {
    "name": "Eiche im Hahnholz (Weisse Elster, Volkspark Kleinzschocher)",
