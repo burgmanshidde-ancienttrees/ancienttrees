@@ -1135,6 +1135,35 @@
    "status": "lead",
    "why": "2026-10-18 verdict: lead. Owner-account photograph (mine, never credited), looked at: a large old willow (Salix) trunk with a second stem on a waterside bank in Baarn. No register entry within 100 m, no Wikipedia article within 300 m, no note, age or girth. Nearest tree we publish is 910 m away. Kept with its coordinate; a page needs a source or a measured girth.",
    "seen": "2026-10-18"
+  },
+  {
+   "sighting_id": "2aa7147b-3a7b-49eb-8b8a-da81f726eda1",
+   "user_id": "46131158-1a3f-4710-9405-e662370356fe",
+   "mine": false,
+   "name": "Moreton Bay Fig",
+   "species": "Moreton Bay Fig",
+   "age": "~120-140 years",
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "The Mendoubia Moreton Bay Fig (Ficus macrophylla) is the most notable tree located in the Mendoubia Gardens (Jardin de la Mendoubia) in central Tangier, Morocco. Native to the subtropical coastal rainforests of eastern Australia, the species was introduced to North Africa in the late 19th century. Planted between the 1880s and 1900s during Tangier's diplomatic expansion, the tree was placed adjacent to the residency of the Mendoub (the representative of the Moroccan Sultan to the international a",
+   "latitude": 35.7851216666667,
+   "longitude": -5.81336166666667,
+   "taken_at": "2026-10-18T10:06:09+00:00",
+   "photo": "46131158-1a3f-4710-9405-e662370356fe/2AA7147B-3A7B-49EB-8B8A-DA81F726EDA1.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [
+    "out/sightings/2aa7147b-3a7b-49eb-8b8a-da81f726eda1-extra-1.jpg"
+   ],
+   "nearest_published_m": null,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-18"
   }
  ]
 }
