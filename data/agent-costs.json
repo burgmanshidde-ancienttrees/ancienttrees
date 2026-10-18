@@ -12861,6 +12861,17 @@
     "trees": 0,
     "note": "deepen: 0 delivered, 13 leads filed to data/leads/leipzig.json; no authority measurements or per-tree register records reachable for Leipzig Naturdenkmale"
    }
+  ],
+  "2026-10-18": [
+   {
+    "date": "2026-10-18",
+    "target": "vienna photo recheck (19 trees)",
+    "kind": "photo",
+    "tokens": 150000,
+    "trees": 0,
+    "photos_approved": 3,
+    "note": "80 candidates judged, 50 viewed: 3 approved (vie_049, vie_056, vie_058), 0 held, 77 rejected (mostly Gugerell general park views and station interiors)"
+   }
   ]
  },
  "passes": [
