@@ -353,46 +353,6 @@
   "how_to_recognise": "You can recognise it by its big leaves, rough as sandpaper on top and lopsided at the base, on a tree of about 14 metres. It stands on the plot at Demmeringstrasse 77, maybe behind a fence, 200 m from the Oak of Demmeringstrasse."
  },
  {
-  "id": "lpz_019",
-  "name": "The Ginkgo of Kleinzschocher Manor",
-  "species": "Ginkgo (Ginkgo biloba)",
-  "age_estimate": "not documented",
-  "height_m": 15,
-  "location": {
-   "address": "Rittergut Kleinzschocher, Kantatenweg 31, 04229 Leipzig",
-   "latitude": 51.31432,
-   "longitude": 12.32978,
-   "neighbourhood": "Kleinzschocher"
-  },
-  "verified_sources": [
-   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig (ND 18, Beschluss 601/96, 15 m)",
-   "https://www.wikidata.org/wiki/Q117663121",
-   "https://de.wikipedia.org/wiki/Rittergut_Kleinzschocher",
-   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Ginkgo_im_Rittergut_Kleinzschocher-Kantatenweg_31_Leipzig_-_2.jpg",
-   "https://www.inaturalist.org/observations/395825130"
-  ],
-  "access": "On the grounds of the former manor at Kantatenweg 31; whether the grounds are open to visitors is NOT established. Writer: hold unless access is stated; do not send anyone into private yards.",
-  "transport": "Kleinzschocher, about 5 km south-west of the centre; stops not verified.",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "photo_seen": {
-   "file": "Naturdenkmal Ginkgo im Rittergut Kleinzschocher-Kantatenweg 31 Leipzig - 2.jpg",
-   "license": "CC BY-SA 4.0",
-   "author": "Pixelkaktus",
-   "date": "2019-08-15"
-  },
-  "verify_notes": "Register only (city Naturdenkmal ND 18, Beschluss 601/96); Wikidata item has two Commons photos and a Commons category. Register height 15 m; no girth or age. Life: lifecheck RECENT, iNaturalist observation 2026-08-30 at the spot. Manor history (de.wikipedia): first mentioned 1350; Bach's Bauernkantate premiered here 30 Aug 1742; publisher Christian Bernhard Tauchnitz bought the estate in 1848. The page does NOT say the ginkgo dates from any of these owners (bridge-claim trap, no age basis). A Flatterulme (ND 17, 12 m) stands about 45 m away in the same estate at 51.31471,12.32996, not delivered separately. Access is the open question; potential hard-rule-10 issue.",
-  "story": "Bach's Peasant Cantata had its first performance at this manor on 30 August 1742, and a ginkgo now stands on its grounds as one of Leipzig's protected natural monuments. The Rittergut Kleinzschocher is first mentioned in 1350, and the publisher Christian Bernhard Tauchnitz bought the estate in 1848. None of those dates belongs to the tree. No source we have found says when the ginkgo was planted, or by which owner, and we are not going to guess.\n\nWhat the city's register does say is short. It lists the tree as natural monument 18, protected under council resolution 601/96, and gives its height as 15 metres. No girth, no age. A photograph from 2019 and a naturalist's observation in August 2026 show that it is still standing.\n\nGinkgo is the oldest tree lineage on earth still growing, a species that was already old when the dinosaurs were young, and it ended up in European parks and manor gardens as a curiosity from East Asia. Here it shares the old estate with a second protected tree, a European white elm about 45 metres away, natural monument 17.\n\nIn November the leaves turn a clean butter yellow and tend to drop within days of each other. If you know when this one was planted, or how big it is round the trunk, tell us.",
-  "how_to_recognise": "You can recognise it by its fan-shaped leaves, a ginkgo about 15 metres tall on the Rittergut Kleinzschocher grounds at Kantatenweg 31. The protected white elm stands about 45 metres away.",
-  "best_time": {
-   "months": [
-    11
-   ],
-   "kind": "autumn colour",
-   "label": "November, when the fan-shaped leaves turn yellow and drop almost together"
-  }
- },
- {
   "id": "lpz_020",
   "name": "The Copper Beech of Kirschbergstrasse",
   "species": "Copper Beech (Fagus sylvatica 'Purpurea')",
@@ -567,7 +527,13 @@
   "recognise_facts": "Single tall pagoda tree with propped crown on the Flossplatz at the Riemannstrasse corner; trunk 3.5 m round.",
   "story": "Nobody knows when this pagoda tree was planted, but the two best guesses land seven years apart. The tree survey site baumkunde.de, measuring it in March 2022, thought it possibly went in around 1873. Leipzig's tree cadastre files 1866, a year it gives to a whole class of old trees rather than a record of this one. Neither is a document, so the honest age is a range: somewhere between 120 and 200 years.\n\nThe measurements are firmer. The cadastre gives the trunk 3.55 metres round and the crown 20 metres across, on a height of 25 metres. The 2022 survey found 3.52 metres and 25, while the city's list of natural monuments says 23. Leipzig protects it as natural monument number 100, under council resolution 1036/97.\n\nIt stands on the Flossplatz, a small public square south of the old town, at the corner of Riemannstrasse. The survey called it a Baumveteran and found it vital, with old wounds long since callused over and several supports fitted in the crown to hold it together. What it saw of the city's twentieth century, nobody has written down.\n\nDespite the name, the species comes from China. Time a visit for August if you can: that is when it flowers, in loose sprays of cream, at a point in the summer when almost nothing else is in bloom.",
   "how_to_recognise": "You can recognise it by the supports in its crown and a trunk about 3.5 metres round, the one big pagoda tree on the square. It stands on the Flossplatz at the corner of Riemannstrasse.",
-  "best_time": {"months": [8], "kind": "flowers", "label": "August, when the crown carries cream flowers and almost nothing else is in bloom"}
+  "best_time": {
+   "months": [
+    8
+   ],
+   "kind": "flowers",
+   "label": "August, when the crown carries cream flowers and almost nothing else is in bloom"
+  }
  },
  {
   "id": "lpz_025",
@@ -640,7 +606,15 @@
   "verify_notes": "Widely called Leipzig's oldest and stoutest tree. Two independent surveys. (1) Rainer Lippert, monumentale-eichen.de, measured 2017, page updated 22 June 2017: girth at breast height 6.65 m, at ground 9.50 m, 7.20 m at 1 m, 5.96 m at 2.5 m, height about 27 m, crown about 20 m; trunk runs unbranched for over 10 m; one side has a 1 m wide opening rising over 5 m, inside fully hollow and soot-blackened; age 'about 350 years', he notes that the 600 years in circulation seems far too high; vitality 'still ok' (2017); some dead branches in the crown. (2) baumkunde.de register 5221, observers incl. treetrip, JoachimSt, HerrMoritz: girth 6.69 m measured 1 Dec 2021, height 27 m, age 350, lightning marks and fire traces, last visit 1 March 2024, last register update 20 Sept 2024, condition 'krank, kleine Krone, womoeglich zuruecksetzend' (sick, small crown, perhaps retrenching). Age conflict: 350 (surveys) vs 600 (press and Stadtforst circulation); the page should give the range. Not a Naturdenkmal and no city register record found, so no official_register. Pin: Lippert coordinate 51.355873,12.349381 and baumkunde GPS (51.355861,12.349389) agree within 2 m, and an OSM information board for the tree stands 4 m away (51.3558011,12.3493625); confirmed. Alive: seen March 2024 (baumkunde), but declining; flagged. No Commons photograph found (geosearch 200 m and name search empty); a reader or iNaturalist photo is needed. An adjacent Stadtforst poster (leipziger-auwald.de, Starkbaumkartierung) names other Rosental oaks of 6.50 m and 6.02 m girth: unnamed veterans nearby, lead for a pass with the poster in hand.",
   "story": "The board beside this oak calls it Leipzig's oldest tree, and the age that travels with it is 600 years. The two surveys that put a tape round it think that is far too high.\n\nRainer Lippert, who records Germany's monumental oaks, measured it in 2017: 6.65 metres round at chest height, 9.50 at the ground, about 27 metres tall, the trunk running without a branch for more than ten metres. He put it at about 350 years and wrote that the 600 in circulation seems far too high. The tree register baumkunde.de measured 6.69 metres in December 2021 and also says 350. So the age sits somewhere between 350 and 600 years, with the people holding tape measures at the lower end. Even that lower figure means it was already old when Napoleon's armies fought for the city in 1813.\n\nThe trunk shows what it has been through. One side has an opening a metre wide that rises more than five metres, and behind it the tree is hollow and blackened with soot. Lightning marks and traces of fire are on record. At the last recorded visit, in March 2024, the register called it sick, with a small crown and perhaps retrenching, an old oak drawing its crown in.\n\nIt stands in the floodplain forest of the Rosental, just off the path Zum Wackelturm, and in summer the woodland hides it well. Go when the leaves are down.",
   "how_to_recognise": "You can recognise it by the hollow trunk, about 6.7 metres round, with a metre-wide opening rising over five metres. It stands just off the Zum Wackelturm path in the Rosental woodland, beside its information board.",
-  "best_time": {"months": [12, 1, 2], "kind": "bare silhouette", "label": "winter, when the leaves are down and the woodland stops hiding the trunk"}
+  "best_time": {
+   "months": [
+    12,
+    1,
+    2
+   ],
+   "kind": "bare silhouette",
+   "label": "winter, when the leaves are down and the woodland stops hiding the trunk"
+  }
  },
  {
   "id": "lpz_027",
@@ -684,7 +658,13 @@
   "verify_notes": "Naturdenkmal ND 145 'Steinlinde Plaussig', council resolution 1522/99, Wikidata Q117712502; not on the list of dead or repealed trees. Cadastre N78908 (record updated 2026-10-16, gefaellt_am empty): Tilia cordata, girth 390 cm, trunk diameter 124 cm, height 11 m (kept low, heavily topped), crown 8 m. Planting dates conflict: Commons caption by the photographer says 'gepflanzt 1868' (beside the parsonage); cadastre class estimate says 1861; no planting document seen, so both are weak. The local name 'Steinlinde' is the register's own and no source seen explains it. Pin: cadastre point and the photo geotag within 17 m on a village street, not on the trunk, so approximate. Alive: cadastre unfelled in 2026, photo 2017; lifecheck not run, flagged. I could not find a second text source for the tree beyond the register, Wikidata and the Commons caption (the search summary that mentioned a Wikipedia Plaussig article could not be confirmed on the fetched article, which does not mention the lime).",
   "story": "This lime has a trunk 3.90 metres round and stands only 11 metres tall. It has been cut back hard and kept low, so what you meet is nearly all girth.\n\nTwo dates compete for its planting. The photographer who put it on Wikimedia Commons in 2017 captioned it as planted in 1868, beside the parsonage. Leipzig's tree cadastre files 1861, but that is a year it gives to a whole class of old trees, not a record of this one. Nobody we have found has seen a planting document, so somewhere between 150 and 170 years is as close as it gets.\n\nIts name is a puzzle too. The city registers it as the Steinlinde, the stone lime, and no source we have read says why. If you know, tell us.\n\nPlaussig lies on Leipzig's north-eastern edge, and the lime stands in its village street beside the parsonage, by Grundstrasse 18. The cadastre measures the trunk at 1.24 metres through under a crown just 8 metres across. It has been protected as natural monument number 145 since council resolution 1522/99, and the city still lists it as standing.\n\nThe ground it stands on is city property, but no source says whether the plot is open, so look from the street. Come in July if you can. Small-leaved limes flower later than most limes, and the flowers are scented.",
   "how_to_recognise": "You can recognise it by the short, hard-cut crown on a trunk 3.9 metres round, more girth than height. It stands in Plaussig's village street beside the parsonage, by Grundstrasse 18.",
-  "best_time": {"months": [7], "kind": "flowers", "label": "July, when the small-leaved lime flowers, later than most limes"}
+  "best_time": {
+   "months": [
+    7
+   ],
+   "kind": "flowers",
+   "label": "July, when the small-leaved lime flowers, later than most limes"
+  }
  },
  {
   "id": "lpz_028",
@@ -726,7 +706,13 @@
   "verify_notes": "Naturdenkmal ND 63 'Roteiche Viertelsweg/Ecke Heinrich-Budde-Strasse', council resolution 601/96; not on the list of dead or repealed trees. Cadastre N78850 (record updated 2026-10-16, gefaellt_am empty): girth 331 cm, trunk diameter 105 cm, height 19 m (list says 25 m), crown 14 m. Cadastre planting year 1886 is a class estimate, age derived and broad. A non-native species (North American) that is large for its kind. Pin: list and cadastre point agree (same place within metres); an OSM node 'ND63 Roteiche' sits on the identical list coordinate and was evidently imported from it, so approximate. Alive: cadastre unfelled in 2026; lifecheck NONE, so flagged, register only.",
   "story": "The oak on this Gohlis street corner comes from North America, and in October it gives itself away. A northern red oak's leaves turn a rich red in autumn, where the native oaks of Saxony go yellow and brown.\n\nLeipzig protects it as natural monument number 63, under council resolution 601/96, on a patch of public green where Viertelsweg meets Heinrich-Budde-Strasse. The city's tree cadastre measures the trunk at 3.31 metres round and 1.05 metres through, under a crown 14 metres across. Its height depends on which record you read: 19 metres in the cadastre, 25 in the city's list of natural monuments. For a species planted far from home, that is a big tree.\n\nNobody has published when it went in. The cadastre's planting year of 1886 is a figure it gives to a whole class of trees rather than a record of this one, which puts the oak at roughly 120 to 160 years and no closer. How an American oak came to be planted on this corner is not written down either. If you know, tell us.\n\nThe leaves are worth a look in any month. They are bigger than a native oak's and cut into pointed lobes that end in fine bristles, where the oaks Saxony grew up with have rounded ones.\n\nThe latest word on it is the city still listing it as standing, and nobody has posted a photograph of it lately. If you pass the corner, tell us how it looks.",
   "how_to_recognise": "You can recognise it by the big, pointed, bristle-tipped leaves of an American red oak, which turn red in October. It stands on the green at the corner of Viertelsweg and Heinrich-Budde-Strasse.",
-  "best_time": {"months": [10], "kind": "autumn colour", "label": "October, when the leaves turn a rich red, unlike any native oak"}
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "autumn colour",
+   "label": "October, when the leaves turn a rich red, unlike any native oak"
+  }
  },
  {
   "id": "lpz_029",
