@@ -1106,6 +1106,35 @@
    "why": "2026-10-18 verdict: lead. Owner-account photograph (mine, never credited) of a tulip tree in Cantonspark, Amersfoort area. No register entry within 100 m, no Wikipedia article within 300 m, no age, girth or note, photograph not on disk (private bucket) so not judged against the Cadiz standard. Nearest tree we publish is 829 m away. No page until a source or a visible size sets it apart.",
    "seen": "2026-10-18",
    "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "sighting_id": "f9336891-77a8-4a77-b859-a5940a4c5657",
+   "user_id": "a8ca51da-00ce-4afa-bc7e-d477d61c0507",
+   "mine": true,
+   "name": "A tree in Baarn",
+   "species": null,
+   "age": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "latitude": 52.2128194491538,
+   "longitude": 5.30935032002472,
+   "taken_at": "2026-10-18T07:37:03+00:00",
+   "photo": "a8ca51da-00ce-4afa-bc7e-d477d61c0507/F9336891-77A8-4A77-B859-A5940A4C5657.jpg",
+   "sign_photo": null,
+   "sign_file": null,
+   "extra_files": [
+    "out/sightings/f9336891-77a8-4a77-b859-a5940a4c5657-extra-1.jpg"
+   ],
+   "nearest_published_m": 910,
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "status": "lead",
+   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "seen": "2026-10-18"
   }
  ]
 }
