@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 22:16 window: deploy fix and roster photo pass
+
+Visits last 7 days: 2079 (3240 page views). Rung 2: the failed deploy was qa's soft-hero check on Portland's Balch Creek Fir (375px iNaturalist medium file); swapped to the 1024px large file, measured by photo_res.py, preflight 0 problems, pushed (567f5b563). The iOS app failure is the scheduled run only and needs a session (not touched). Rung 4/6: `photo_hunt --recheck` plus `photo_fetch --roster` and a photo-judge pass: 2 approved (ber_059 Berlin oak, wdc_015 Smithsonian elm, large file), 1 held (nyc_022), 70 rejected. The roster photo sweep is close to exhausted; the yield per pass keeps falling. Written trees waiting in data/research (ftw_018 access unstated by its register, kyw_001 Miami below the four-tree floor) were left alone. Refused or odd: `python3 scripts/photo_fetch.py --roster` ran past the 600 s foreground limit and moved to the background on its own.
+
 ## 2026-10-18, second restart: merged written trees
 
 - Live: Spokane gets the Grant Park Guardian (horse chestnut, no photo yet, so Bing and readers only). Counts and FAQ updated to 14.
