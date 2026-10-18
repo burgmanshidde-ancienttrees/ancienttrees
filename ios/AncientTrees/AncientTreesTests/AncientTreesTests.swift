@@ -82,6 +82,23 @@ struct SpotSplit {
         #expect(CollectSheet.distance(1672) == "1.7 km")
         #expect(CollectSheet.distance(40) == "40 m")
     }
+
+    /// Hidde, Baarn, 2026-10-18: "Add a new tree" at the Town Hall Plane made
+    /// a second one in his own trees. Within 30 m the add path asks about
+    /// ours first and a tree of yours offers to fold into it; 146 m away, at
+    /// the next plane, it is a different tree and nothing is asked.
+    @Test func aNewTreeOnTopOfOursIsAskedAbout() async throws {
+        let store = CatalogueStore()
+        await store.loadBundled()
+        let cat = try #require(store.catalogue, "the bundled catalogue did not load")
+
+        let atTheTownHall = (lat: 52.21076, lng: 5.29160)
+        #expect(CollectSheet.sameTree(origin: atTheTownHall, trees: cat.trees)?.id == "brn_008",
+                "standing at the Town Hall Plane does not find it")
+        let halfwayToTheNext = (lat: 52.21140, lng: 5.29160)
+        #expect(CollectSheet.sameTree(origin: halfwayToTheNext, trees: cat.trees) == nil,
+                "70 m away still counts as the same tree")
+    }
 }
 
 // The stores are main-actor isolated (see Account.swift), so a suite that

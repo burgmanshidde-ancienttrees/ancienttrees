@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 session with Hidde: no more second copies of our trees in the app
+Hidde found a second Town Hall Plane among his own trees in Baarn, made by "Add a new tree" right beside ours. App only, on branch `claude/baarn-ambassador-experience-sag8ct`, not built (no Xcode in the cloud): "Add a new tree" with one of ours within 30 m first asks "Is it <name>?" (yes collects ours with the photo, no adds the new tree as before), and a tree of yours within 30 m of ours shows "Is this <name>?" with "It is this tree", which folds it into ours without deleting anything (`Sightings.fold`). The server already matched at 30 m, so the site never had the duplicate. New unit test `aNewTreeOnTopOfOursIsAskedAbout`. For Hidde: build, run the tests, open your Baarn copy and tap "It is this tree".
+
 ## 2026-10-18 session with Hidde: Google now sees only tree pages with a photograph
 The 10-09 exception that let finished tree pages without a photograph back into Google is closed (`RETURN_ENRICHED = False` in scripts/thin_pages.py). 1,128 tree pages (1,810 urls with their translations) get the googlebot-only noindex on the next deploy; readers still see them, Bing keeps them through sitemap-bing.xml, and each returns to Google the day it gets a photograph. Why: the digest's "Is enriching working" table showed those pages earned 0.05 impressions a page after they came back on 10-12/13, and the 10-13 rule (widen only once returned pages earn impressions) was never met. Hidde: "Yes, take the 1,128 photo-less pages out of Google; Bing keeps them." Undo: set it True. Next look: mid-November, impressions per photographed page.
 

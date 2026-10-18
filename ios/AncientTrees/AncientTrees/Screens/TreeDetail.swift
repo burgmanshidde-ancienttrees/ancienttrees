@@ -186,6 +186,7 @@ struct TreeDetail: View {
                     // somebody opening this page an hour later has no way to
                     // ask what happened to their tree.
                     if mine != nil && !isDraft { mineStatus }
+                    if mine != nil && !isDraft { sameTreeRow }
                     // ONE BLOCK, because it answers one question: what a
                     // person needs to know before setting off (2026-09-04,
                     // after Hidde walked eight drawings of it). Two columns
@@ -1694,6 +1695,48 @@ struct TreeDetail: View {
             .accessibilityIdentifier("mine-status")
             .accessibilityElement(children: .combine)
         }
+    }
+
+    /// A TREE OF YOURS ON TOP OF ONE OF OURS (Hidde, 2026-10-18, on a second
+    /// Town Hall Plane in his own trees: "dat je alsnog achteraf bomen kan
+    /// mergen"). Within CollectSheet.sameTreeMetres it is nearly always the
+    /// same trunk, so the page asks, in the same box and words as the status
+    /// above it, and one tap makes it your photograph of ours
+    /// (Sightings.fold); the route then shows our tree's page in its place.
+    /// Asked, never done for you: an unnamed veteran beside a famous tree is
+    /// real. Not on an approved tree, which is ours by then anyway.
+    @ViewBuilder private var sameTreeRow: some View {
+        if let m = live, m.treeId == nil, m.status != .published,
+           let t = CollectSheet.sameTree(origin: (m.lat, m.lng), trees: catalogue.trees) {
+            let metres = Int(Geo.km((m.lat, m.lng), (t.lat, t.lng)) * 1000)
+            HStack(alignment: .top, spacing: 8) {
+                Image(systemName: "arrow.triangle.merge")
+                    .foregroundStyle(Brand.moss)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("Is this \(t.name)?")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Brand.ink)
+                    Text("It is on our map \(CollectSheet.distance(metres)) from here. If it is the same tree, your photo goes on its page.")
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Button("It is this tree") { merge(m, into: t) }
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Brand.moss)
+                        .frame(minHeight: 44)
+                        .accessibilityIdentifier("mine-same-tree")
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Brand.moss.opacity(0.12), in: .rect(cornerRadius: 10))
+        }
+    }
+
+    private func merge(_ m: Sightings.Sighting, into t: Tree) {
+        if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
+        sightings.fold(m.id, into: t)
+        navigator.snack = .init(text: "Your photo is on the tree's page", symbol: "checkmark.seal")
     }
 
     private func icon(for status: Sightings.Status) -> String {
