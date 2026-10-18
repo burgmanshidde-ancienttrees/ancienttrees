@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 session: iOS CI compiles again
+
+**Breakage, fixed:** since the near-a-tree banner commit (8ed90c196) the app did not compile on CI: ContentView's `body` was too big for the runner's type-checker ("unable to type-check this expression in reasonable time"). The first fix (a33538bab, moving the banner and tab-bar inset out) was not enough; measured locally, `body` still took 14.4 s. The second fix (54644b983) splits it into three pieces (tabs, routed, presented) and gets it down to 0.27 s. No change in behaviour; appfit (iOS 18, iPhone 16 Pro Max) gives 0 findings on 39 screens.
+
+**CI now:** push run 39141889872 on main is green (test, look). Dispatched run 39145554047: floor and look green, but test is red from `UndoWalk.testRemoveFromCollectedOffersUndo` failing its first attempt and passing its retry. Run 39137010429 had the same pattern with `testTappingAPinOpensItsTree`, which also did it at 09:53 that morning, before the banner commit. Still open: ios.yml fails on any failure line even when `-retry-tests-on-failure` then passes, so flakes like these keep the scheduled run red.
+
 ## 2026-10-18 17:02 window: reader verdict, photo lane, Sequoia
 
 7-day visits: 1,990 visits, 2,790 page views (peak 550 on 10-16).
