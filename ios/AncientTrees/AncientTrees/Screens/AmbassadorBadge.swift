@@ -5,8 +5,10 @@
 // region and earned by what they already did. Google's Local Guides badge is
 // the same shape at level 4. Ours is Apple's checkmark.seal.fill (the website
 // draws Phosphor's seal-check, its listed twin) in the moss pill the app
-// already uses for a person's avatar, with the place's name. It is a label,
-// never a button: nothing happens when it is tapped, exactly as on komoot.
+// already uses for a person's avatar, with the place's name. On your OWN
+// profile it opens the place you look after (Hidde, 2026-10-18: "Baarn
+// ambassador ... zou klikbaar moeten zijn"); on somebody else's row it stays
+// a label.
 //
 // Hidde, 2026-10-02: "ambassador idea is perfect lets implement it in both app
 // and web." The website draws the same badge beside your name on /account and
@@ -25,8 +27,22 @@ struct AmbassadorBadge: View {
     /// komoot's list rows carry the seal alone; the word "ambassador" belongs
     /// on the person's own header, where there is room for it.
     var compact = false
+    /// Set on your own profile: a tap opens the (first) place's page.
+    var open: ((Profiles.Ambassador) -> Void)? = nil
 
     var body: some View {
+        if let open, let first = places.first {
+            Button { open(first) } label: { pill }
+                .buttonStyle(.plain)
+                .frame(minHeight: 44)
+                .contentShape(.rect)
+                .accessibilityHint("Opens \(first.place_name)")
+        } else {
+            pill
+        }
+    }
+
+    @ViewBuilder private var pill: some View {
         if !places.isEmpty {
             HStack(spacing: 4) {
                 Image(systemName: "checkmark.seal.fill")
@@ -130,7 +146,7 @@ struct EarlyAdopterSheet: View {
         BrandSheet(
             icon: "sparkle",
             title: "You're an early adopter",
-            message: "You joined Ancient Trees in its first months. This badge is only for the people who did.",
+            message: "You are one of the first users of Ancient Trees. This badge is only for them.",
             buttons: [.primary("Done", id: "early-adopter-done") { dismiss() }],
             tint: .gold)
             // One container with a name, as the sign-in sheet carries, so the

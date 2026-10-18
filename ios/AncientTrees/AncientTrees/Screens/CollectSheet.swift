@@ -251,6 +251,24 @@ struct CollectSheet: View {
         return measured.filter { $0.km * 1000 <= sameTreeMetres }.min { $0.km < $1.km }?.tree
     }
 
+    /// YOUR OWN TREE, PHOTOGRAPHED AGAIN (Hidde, 2026-10-18: "twee losse
+    /// pins voor twee foto's van 1 boom"). A second photograph of a tree you
+    /// added yourself went through "Add a new tree" and became a second tree
+    /// with its own pin, because the list only ever offered OUR trees. Now a
+    /// tree of yours within `sameTreeMetres` is offered first; picking it adds
+    /// the photograph to that tree (Sightings.addExtra), as Google Maps adds a
+    /// photo to a place you already put on the map instead of a new place.
+    static func yoursNear(origin: (lat: Double, lng: Double),
+                          yours: [Sightings.Sighting]) -> [Sightings.Sighting] {
+        let measured = yours.map { ($0, Geo.km(origin, ($0.lat, $0.lng)) * 1000) }
+        return measured.filter { $0.1 <= sameTreeMetres }
+            .sorted { $0.1 < $1.1 }.prefix(2).map(\.0)
+    }
+
+    private var ownNear: [Sightings.Sighting] {
+        Self.yoursNear(origin: at ?? origin, yours: sightings.yoursOnly)
+    }
+
     /// Our trees by name, nearest first. Accents and case do not count, so
     /// "ombu" finds the Ombú.
     static func search(_ query: String, origin: (lat: Double, lng: Double), trees: [Tree]) -> [Tree] {
@@ -656,7 +674,8 @@ struct CollectSheet: View {
         if let t = known {
             claim(t, image: image, at: here)
         } else if Self.nearby(origin: here, trees: catalogue.trees).isEmpty
-                    && Self.closest(origin: here, trees: catalogue.trees).isEmpty {
+                    && Self.closest(origin: here, trees: catalogue.trees).isEmpty
+                    && Self.yoursNear(origin: here, yours: sightings.yoursOnly).isEmpty {
             startDraft()
         } else {
             withAnimation(.snappy) { stage = .identify }
@@ -899,8 +918,15 @@ struct CollectSheet: View {
             // Said once here rather than repeated on every row: the rows are
             // already carrying a name, a species, a distance, a direction and
             // sometimes four lines telling the tree from its neighbours.
-            Text("Not sure which? Tap \(Image(systemName: "info.circle")) to compare.")
-                .font(.footnote).foregroundStyle(Brand.inkSoft)
+            if !candidates.isEmpty {
+                Text("Not sure which? Tap \(Image(systemName: "info.circle")) to compare.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+            }
+            ForEach(Array(ownNear.enumerated()), id: \.element.id) { i, s in
+                Button { addToYours(s) } label: { ownRow(s) }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("collect-yours-\(i)")
+            }
             if nothingNear { searchField }
             // Tapping a candidate OPENS it rather than claiming it (Hidde,
             // 2026-09-07, sketching the flow he wanted: "dan als je op de boom
@@ -969,6 +995,7 @@ struct CollectSheet: View {
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("collect-none-of-these")
+            if !candidates.isEmpty {
             Button { notSure() } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "questionmark.circle.fill")
@@ -985,6 +1012,7 @@ struct CollectSheet: View {
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("collect-not-sure")
+            }
         }
     }
 
@@ -1194,6 +1222,9 @@ struct CollectSheet: View {
     /// were not certain about first. Saying so turns "I am not sure" from
     /// their failure into our honesty, which is what it actually is.
     private var pickerBlurb: String {
+        if candidates.isEmpty && !ownNear.isEmpty {
+            return "You added a tree right here before. If this is the same one, your photo goes with it."
+        }
         if nothingNear {
             return query.trimmingCharacters(in: .whitespaces).isEmpty
                 ? "None of our trees is pinned near your photo. These are the closest on our map. If it is one of them, our pin is off and your photo helps us fix it."
@@ -1205,6 +1236,43 @@ struct CollectSheet: View {
         return fix == .device
             ? "You are standing among trees we map. Pick the one in your photograph."
             : "Your photograph was taken near these trees. Pick the one you photographed, or say it is none of them."
+    }
+
+    /// A tree you added, in the same card as ours: your photograph, its name,
+    /// and how far it is.
+    private func ownRow(_ s: Sightings.Sighting) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            Group {
+                if let img = sightings.thumbnail(s, maxPixel: 168) {
+                    Image(uiImage: img).resizable().scaledToFill()
+                } else {
+                    Brand.surfaceMuted
+                }
+            }
+            .frame(width: 56, height: 56)
+            .clipShape(.rect(cornerRadius: 11))
+            VStack(alignment: .leading, spacing: 3) {
+                Text(s.name)
+                    .font(.brand(16, .bold))
+                    .foregroundStyle(Brand.ink)
+                    .multilineTextAlignment(.leading)
+                Text("Your tree · " + Self.distance(Int(Geo.km(at ?? origin, (s.lat, s.lng)) * 1000)))
+                    .font(.footnote)
+                    .foregroundStyle(Brand.inkSoft)
+            }
+            Spacer(minLength: 32)
+        }
+        .padding(12)
+        .background(Brand.surface, in: .rect(cornerRadius: 14))
+    }
+
+    /// The photograph joins the tree you already added, and its page opens.
+    private func addToYours(_ s: Sightings.Sighting) {
+        for img in ([shot].compactMap { $0 } + extras) { sightings.addExtra(s.id, image: img) }
+        extras = []
+        shot = nil
+        dismiss()
+        navigator.push = .mine(s.id)
     }
 
     private func row(_ t: Tree) -> some View {

@@ -556,7 +556,7 @@ struct TreeMap: UIViewRepresentable {
         private func startBreathing(on style: MLNStyle) {
             breath?.invalidate()
             guard !UIAccessibility.isReduceMotionEnabled,
-                  let halo = style.layer(withIdentifier: MapLayers.haloLayer) as? MLNCircleStyleLayer
+                  let halo = style.layer(withIdentifier: MapLayers.live(MapLayers.haloLayer, on: style)) as? MLNCircleStyleLayer
             else { return }
             var out = true
             breath = Timer.scheduledTimer(withTimeInterval: 1.15, repeats: true) { [weak halo] _ in
@@ -621,7 +621,7 @@ struct TreeMap: UIViewRepresentable {
             let box = CGRect(x: point.x - 22, y: point.y - 22, width: 44, height: 44)
 
             let clusterHits = map.visibleFeatures(in: box,
-                                                  styleLayerIdentifiers: [MapLayers.clusterLayer])
+                                                  styleLayerIdentifiers: [MapLayers.live(MapLayers.clusterLayer, on: style)])
             if let cluster = clusterHits.first {
                 // TREES ON ONE SPOT never come apart by zooming, so their
                 // bubble zooms onto the spot and then spreads them (Hidde,
@@ -665,7 +665,7 @@ struct TreeMap: UIViewRepresentable {
             // meant that one. They were not in this list at all, which is why
             // they could not be opened.
             let mineHits = map.visibleFeatures(in: box,
-                                               styleLayerIdentifiers: [MapLayers.mineLayer])
+                                               styleLayerIdentifiers: [MapLayers.live(MapLayers.mineLayer, on: style)])
             if let hit = mineHits.first,
                let raw = hit.attribute(forKey: MapLayers.idKey) as? String,
                let id = UUID(uuidString: raw) {
@@ -674,8 +674,8 @@ struct TreeMap: UIViewRepresentable {
             }
 
             let treeHits = map.visibleFeatures(in: box,
-                                               styleLayerIdentifiers: [MapLayers.treeLayer,
-                                                                       MapLayers.peakLayer])
+                                               styleLayerIdentifiers: [MapLayers.live(MapLayers.treeLayer, on: style),
+                                                                       MapLayers.live(MapLayers.peakLayer, on: style)])
             if let hit = treeHits.first,
                let id = hit.attribute(forKey: MapLayers.idKey) as? String,
                let tree = parent.trees.first(where: { $0.id == id }) {
@@ -1116,6 +1116,11 @@ enum MapLayers {
         var spreadZoom: Double = 0
         /// The identifier the live tree source currently carries. See apply().
         var liveSourceID = treeSource
+        /// Which set of pin layers is on screen. See apply(): a redraw puts a
+        /// new set on top and takes the old set away only once the new one
+        /// has its points, so the pins never blink out in between.
+        var gen = 0
+        var retired: [(layers: [String], source: String)] = []
         var writeCount = 0
         /// This style's own slot in the temporary directory.
         let seq: Int
@@ -1124,6 +1129,12 @@ enum MapLayers {
 
     private static let states = NSMapTable<MLNStyle, StyleState>.weakToStrongObjects()
     private static var seq = 0
+
+    /// The identifier a pin layer has on screen right now. The base names
+    /// above stay the vocabulary; every redraw appends its generation.
+    static func live(_ base: String, on style: MLNStyle) -> String {
+        base + "#\(state(for: style).gen)"
+    }
 
     private static func state(for style: MLNStyle) -> StyleState {
         if let s = states.object(forKey: style) { return s }
@@ -1314,23 +1325,62 @@ enum MapLayers {
             .appendingPathComponent("at-trees-\(st.seq)-\(st.writeCount).geojson")
         guard (try? data.write(to: file)) != nil else { return }
 
-        for id in [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer, mineLayer] {
-            if let layer = style.layer(withIdentifier: id) { style.removeLayer(layer) }
-        }
+        // THE OLD PINS STAY UNTIL THE NEW ONES ARE DRAWN (Hidde, 2026-10-18:
+        // "knipperende pins bij openen app voor het eerst"). This removed every
+        // layer and the source, then added the new source, which MapLibre reads
+        // from its file asynchronously: for a third of a second the map held
+        // no pins at all. On first open that happens when the fresh feed
+        // replaces the bundled trees, filmed frame by frame in the simulator.
+        // Now the new set goes on top under the next generation's
+        // identifiers, and the old set is retired once the new source reports
+        // its points (or after a second, for an empty map). The double buffer
+        // every map SDK's own docs give for swapping a GeoJSON source.
+        let old = (layers: [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer, mineLayer]
+                    .map { live($0, on: style) },
+                   source: st.liveSourceID)
+        st.retired.append(old)
+        st.gen += 1
         // A NEW identifier as well as a new file. Re-adding a source under an
         // identifier the style has just seen leaves it holding nothing: the
         // file is read, no error is raised, and `features(matching:)` returns
-        // zero. Measured, 2026-08-24. The layer identifiers stay fixed, which
-        // is what the tap handler reads, so nothing downstream notices.
-        if let old = style.source(withIdentifier: st.liveSourceID) { style.removeSource(old) }
+        // zero. Measured, 2026-08-24.
         st.liveSourceID = "\(treeSource)-\(st.seq)-\(st.writeCount)"
         let source = MLNShapeSource(identifier: st.liveSourceID, url: file, options: [:])
         style.addSource(source)
         addTreeLayers(on: style, source: source, clustered: clustered)
-        // Yesterday's file is no longer read once the new source is in.
-        let stale = FileManager.default.temporaryDirectory
-            .appendingPathComponent("at-trees-\(st.seq)-\(st.writeCount - 1).geojson")
-        try? FileManager.default.removeItem(at: stale)
+        retireWhenDrawn(source, gen: st.gen, on: style, expecting: !features.isEmpty, tries: 0)
+    }
+
+    /// Takes the previous pin layers away once `source` holds its points.
+    /// Only the newest redraw's check acts; an older one stops when a newer
+    /// generation exists, because that one's check will clear everything.
+    private static func retireWhenDrawn(_ source: MLNShapeSource, gen: Int, on style: MLNStyle,
+                                        expecting: Bool, tries: Int) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak style, weak source] in
+            MainActor.assumeIsolated {
+                guard let style, let source else { return }
+                let st = state(for: style)
+                guard st.gen == gen else { return }
+                let drawn = !expecting || !source.features(matching: nil).isEmpty
+                if !drawn && tries < 20 {
+                    retireWhenDrawn(source, gen: gen, on: style, expecting: expecting, tries: tries + 1)
+                    return
+                }
+                for r in st.retired {
+                    for id in r.layers {
+                        if let layer = style.layer(withIdentifier: id) { style.removeLayer(layer) }
+                    }
+                    if let s = style.source(withIdentifier: r.source) { style.removeSource(s) }
+                }
+                st.retired = []
+                // The files no live source reads any more.
+                let tmp = FileManager.default.temporaryDirectory
+                for n in max(1, st.writeCount - 30)..<st.writeCount {
+                    try? FileManager.default.removeItem(
+                        at: tmp.appendingPathComponent("at-trees-\(st.seq)-\(n).geojson"))
+                }
+            }
+        }
     }
 
     /// WHERE THE PILING STOPS, and both numbers are the convention rather than
@@ -1676,7 +1726,7 @@ enum MapLayers {
     /// with it.
     private static func addTreeLayers(on style: MLNStyle, source trees: MLNShapeSource,
                                       clustered: Bool) {
-        let pins = MLNSymbolStyleLayer(identifier: treeLayer, source: trees)
+        let pins = MLNSymbolStyleLayer(identifier: live(treeLayer, on: style), source: trees)
         pins.iconImageName = NSExpression(forKeyPath: "icon")
         pins.iconAllowsOverlap = NSExpression(forConstantValue: true)
         pins.iconAnchor = NSExpression(forConstantValue: "center")
@@ -1686,7 +1736,7 @@ enum MapLayers {
         // The halo goes UNDER the peaking pin and is the thing that breathes.
         // Its colour follows the moment, same as the pin: a ginkgo's gold, a
         // cherry's pink, from the same server-computed value the website uses.
-        let halo = MLNCircleStyleLayer(identifier: haloLayer, source: trees)
+        let halo = MLNCircleStyleLayer(identifier: live(haloLayer, on: style), source: trees)
         halo.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking == YES")
         halo.circleColor = NSExpression(forConstantValue:
             UIColor(red: 0.85, green: 0.63, blue: 0.25, alpha: 1))
@@ -1696,7 +1746,7 @@ enum MapLayers {
         halo.circleOpacityTransition = MLNTransition(duration: 1.1, delay: 0)
         style.addLayer(halo)
 
-        let peak = MLNSymbolStyleLayer(identifier: peakLayer, source: trees)
+        let peak = MLNSymbolStyleLayer(identifier: live(peakLayer, on: style), source: trees)
         peak.iconImageName = NSExpression(forKeyPath: "icon")
         peak.iconAllowsOverlap = NSExpression(forConstantValue: true)
         peak.iconAnchor = NSExpression(forConstantValue: "center")
@@ -1710,7 +1760,7 @@ enum MapLayers {
             // error anywhere. Symbol layers reading `icon` are the one thing on
             // this map that has always worked, so the count is drawn into the
             // image and there is nothing left to go wrong at layer level.
-            let bubble = MLNSymbolStyleLayer(identifier: clusterLayer, source: trees)
+            let bubble = MLNSymbolStyleLayer(identifier: live(clusterLayer, on: style), source: trees)
             bubble.predicate = NSPredicate(format: "at_kind == 'cluster'")
             bubble.iconImageName = NSExpression(forKeyPath: "icon")
             bubble.iconAllowsOverlap = NSExpression(forConstantValue: true)
@@ -1728,7 +1778,7 @@ enum MapLayers {
         //
         // A feature only reaches this layer when the clusterer left it
         // standing alone; inside a pile it is one of the numbers instead.
-        let minePins = MLNSymbolStyleLayer(identifier: mineLayer, source: trees)
+        let minePins = MLNSymbolStyleLayer(identifier: live(mineLayer, on: style), source: trees)
         minePins.predicate = NSPredicate(format: "at_kind == 'mine'")
         minePins.iconImageName = NSExpression(forKeyPath: "icon")
         minePins.iconAllowsOverlap = NSExpression(forConstantValue: true)

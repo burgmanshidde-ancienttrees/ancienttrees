@@ -103,7 +103,7 @@ const canonical = `${BASE_URL}/account`;
         early-adopter pill (lib/early-adopter.ts) after it in gold. Labels,
         never buttons. The row hides itself while both are hidden. */}
     <div class="profile-badges">
-      <p class="profile-ambassador" id="in-ambassador" hidden></p>
+      <a class="profile-ambassador" id="in-ambassador" hidden></a>
       <p class="profile-early" id="in-early" hidden><Fragment set:html={icon("sparkle", "fill", "ic")} /><span>Early adopter</span></p>
     </div>
 
@@ -127,7 +127,7 @@ const canonical = `${BASE_URL}/account`;
   <Sheet lang="en" class="early-dialog" id="early-dialog" aria-labelledby="early-title">
     <span class="at-sheet-tile at-sheet-tile--gold"><Fragment set:html={icon("sparkle", "bold")} /></span>
     <h3 class="at-sheet-h" id="early-title">You're an early adopter</h3>
-    <p class="at-sheet-p">You joined Ancient Trees in its first months. This badge is only for the people who did.</p>
+    <p class="at-sheet-p">You are one of the first users of Ancient Trees. This badge is only for them.</p>
     <div class="at-sheet-btns">
       <button type="button" class="sheet-b sheet-b--primary early-done">Done</button>
     </div>

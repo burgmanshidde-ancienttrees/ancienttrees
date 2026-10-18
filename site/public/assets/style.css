@@ -927,6 +927,8 @@ a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--c
 .profile-follow b { color: var(--ink); }
 /* The ambassador badge beside your own name (komoot Pioneer shape, CONVENTIONS.md 2026-10-02); the city page draws the same pill in AmbassadorLine.astro. */
 .profile-ambassador { display: inline-flex; align-items: center; gap: 6px; margin: 0.4rem 0 0; font-size: 13px; color: var(--moss); background: var(--moss-light); border-radius: 999px; padding: 4px 10px 4px 8px; }
+.profile-ambassador[href] { text-decoration: none; min-height: 32px; }
+.profile-ambassador[href]:hover { background: var(--moss-light); filter: brightness(0.96); }
 .profile-ambassador svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
 /* The early-adopter badge (lib/early-adopter.ts, 2026-10-16): the ambassador's pill, its numbers unchanged, in the app's gold (Brand.gold / goldInk). Sits on the same line after it when both fit. */
 .profile-early { display: inline-flex; align-items: center; gap: 6px; margin: 0.4rem 0 0; font-size: 13px; color: #8F6210; background: rgba(217,161,63,0.18); border-radius: 999px; padding: 4px 10px 4px 8px; }

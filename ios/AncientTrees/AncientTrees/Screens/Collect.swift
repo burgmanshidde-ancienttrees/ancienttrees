@@ -995,7 +995,8 @@ struct CollectView: View {
                     .foregroundStyle(Brand.ink)
                     .lineLimit(1)
                 if !profiles.myPlaces.isEmpty {
-                    AmbassadorBadge(places: profiles.myPlaces, size: 12)
+                    AmbassadorBadge(places: profiles.myPlaces, size: 12,
+                                    open: { navigator.push = .city($0.place_slug) })
                 }
                 Spacer(minLength: 0)
                 Button { findingPeople = true } label: {
@@ -1027,7 +1028,8 @@ struct CollectView: View {
 
     @ViewBuilder private var tags: some View {
         if !profiles.myPlaces.isEmpty {
-            AmbassadorBadge(places: profiles.myPlaces, size: 13).fixedSize()
+            AmbassadorBadge(places: profiles.myPlaces, size: 13,
+                            open: { navigator.push = .city($0.place_slug) }).fixedSize()
         }
         if earlyAdopter { EarlyAdopterBadge(size: 13).fixedSize() }
     }

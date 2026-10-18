@@ -11,6 +11,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 session: Hidde's app test, four fixes
+
+**What changed in the product:**
+- **Pins no longer blink on first open.** When the fresh feed replaced the bundled trees, the map removed every pin layer before the new data was drawn, so for about 0.3 s it was empty (filmed frame by frame). Now the new pins go on top and the old ones are removed only once the new source has its points (MapLayers.apply / retireWhenDrawn). Re-filmed: no gap.
+- **A second photo of a tree you added yourself joins that tree** instead of becoming a second tree with its own pin. Within 30 m the "Which one is it?" list offers "Your tree" first; picking it adds the photo (Sightings.addExtra). Test: aSecondPhotoOfYourOwnTreeOffersIt. His account still holds older pairs (Nara 1d61e594/b6706a98, Tokyo a4fa2700/ae06e952), left untouched.
+- **The ambassador tag opens its place**, in the app (My trees) and on /account.
+- **Early-adopter sheet** says "You are one of the first users of Ancient Trees", no months, app and web.
+
+**Not changed, needs Hidde:** auto-removing a tree from Want to visit once collected (his own ruling 2026-08-26 keeps the two lists independent); "Open in app" on the website goes to the App Store even with the app installed, because iOS ignores a universal link to the domain you are already on.
+
 ## 2026-10-18 session: small code tidy (Hidde asked)
 
 **No product change.** 17 one-off scripts (old register importers, two `_tmp_` files, finished batch helpers) moved to archive/scripts/, nothing deleted. Two app views nobody shows any more removed: SentCard (unused since Collected became a grid, 10-09) and ProfileButton (gatecheck entry dropped with it). DATA.md went from 2 MB to 435 KB: `archive_logs.py` now also moves DATA.md entries older than 14 days to archive/DATA-YYYY-MM.md, daily, every line checked present after the move. A stale August copy "BRIEF_RESEARCH 2.md" removed (every line is in archive/BRIEF_RESEARCH-full-2026-10-12.md).

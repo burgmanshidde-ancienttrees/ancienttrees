@@ -98,6 +98,17 @@ struct SpotSplit {
         #expect(CollectSheet.sameTree(origin: halfwayToTheNext, trees: cat.trees) == nil,
                 "70 m away still counts as the same tree")
     }
+
+    /// Hidde, 2026-10-18: "twee losse pins voor twee foto's van 1 boom". A
+    /// second photograph beside a tree you added offers that tree first.
+    @Test func aSecondPhotoOfYourOwnTreeOffersIt() {
+        let ginkgo = Sightings.Sighting(name: "Ginkgo in Tokyo", lat: 35.68813, lng: 139.70774)
+        let farOff = Sightings.Sighting(name: "A tree in Tokyo", lat: 35.68834, lng: 139.70899)
+        let here = (lat: 35.68795, lng: 139.70772)   // 20 m from the ginkgo
+        let offered = CollectSheet.yoursNear(origin: here, yours: [farOff, ginkgo])
+        #expect(offered.map(\.name) == ["Ginkgo in Tokyo"],
+                "a tree of yours 20 m away is not offered, or one 115 m away is")
+    }
 }
 
 // The stores are main-actor isolated (see Account.swift), so a suite that

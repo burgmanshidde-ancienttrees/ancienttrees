@@ -71,7 +71,7 @@ export const PROFILE_JS = `
         // Your badge, if a place has made you its ambassador (2026-10-02). The
         // seal is Phosphor's seal-check, the same file AmbassadorLine.astro
         // draws; the text is the place's name as the row carries it.
-        fetch(SB + '/rest/v1/ambassadors?select=place_name&user_id=eq.' + encodeURIComponent(u.id),
+        fetch(SB + '/rest/v1/ambassadors?select=place_name,place_slug&user_id=eq.' + encodeURIComponent(u.id),
               { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
           .then(function(r) { return r.ok ? r.json() : null; })
           .then(function(rows) {
@@ -83,6 +83,9 @@ export const PROFILE_JS = `
             var label = names.length === 1 ? names[0] + ' ambassador'
               : names.length === 2 ? names[0] + ' and ' + names[1] + ' ambassador'
               : names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' more, ambassador';
+            // A link to the place you look after (Hidde, 2026-10-18: "zou
+            // klikbaar moeten zijn"); the app's tag opens the same page.
+            if (rows[0].place_slug) amb.setAttribute('href', '/' + encodeURIComponent(rows[0].place_slug));
             amb.innerHTML = SEAL + '<span></span>';
             amb.lastChild.textContent = label;
             amb.hidden = false;
