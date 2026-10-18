@@ -12905,6 +12905,15 @@
     "tokens": 135000,
     "trees": 6,
     "note": "6 stories, recognition lines, 3 best_time (frk_013 autumn colour, frk_014 July flowers, frk_016 May flowers); merged into data/cities/frankfurt.json with German overlay for all 6; counts to 17, oldest_tree_id to frk_012 (Senckenberg Yew, roughly 400); frk_014 species normalised to Small-leaved Lime; frk_012 paid_entry true."
+   },
+   {
+    "date": "2026-10-18",
+    "target": "photo-judge frankfurt frk_005 to frk_017 (11 trees)",
+    "kind": "photo",
+    "tokens": 90000,
+    "trees": 0,
+    "photos_approved": 5,
+    "note": "43 candidates: 29 viewed as pixels, 14 duplicate cross-tree Nieder-Erlenbach street/bus-stop/map files rejected by title; 5 approved (frk_008, frk_010, frk_014, frk_016, frk_017), 0 held, 38 rejected (frk_015 right tree but POOR dusk light; frk_012 only the 1907 B&W scan; frk_013 bare November frames; frk_005 no bundle lime in any frame; frk_007 sign close-ups)"
    }
   ]
  },
