@@ -112,6 +112,9 @@ struct TreeDetail: View {
     @State private var photoRefused: Permission?
     @State private var pendingShot: UIImage?
     @State private var pendingPicked: LibraryPicker.Picked?
+    /// "Another of our trees" is open on a tree of yours (sameTreeRow).
+    @State private var findingOurs = false
+    @State private var oursQuery = ""
 
     /// The live record, so a draft that is saved on this page turns into a
     /// saved tree on this page without being opened again.
@@ -1705,35 +1708,136 @@ struct TreeDetail: View {
     /// (Sightings.fold); the route then shows our tree's page in its place.
     /// Asked, never done for you: an unnamed veteran beside a famous tree is
     /// real. Not on an approved tree, which is ours by then anyway.
+    ///
+    /// AND ANY OTHER OF OURS, because our pin is not always where the trunk
+    /// is (Hidde, 2026-10-18: "moet je ook de optie met een andere boom samen
+    /// te voegen die niet op 30m staat aangezien onze locatie niet altijd
+    /// klopt?"). "Another of our trees" opens the list the collect sheet
+    /// shows: ours within 400 m, else the closest three within 3 km, and a
+    /// search by name (CollectSheet.nearby, closest, search; CONVENTIONS.md,
+    /// "A photograph whose place we have pinned wrong"). Picking one further
+    /// than 400 m also sends the pin correction the collect sheet sends.
     @ViewBuilder private var sameTreeRow: some View {
-        if let m = live, m.treeId == nil, m.status != .published,
-           let t = CollectSheet.sameTree(origin: (m.lat, m.lng), trees: catalogue.trees) {
-            let metres = Int(Geo.km((m.lat, m.lng), (t.lat, t.lng)) * 1000)
-            HStack(alignment: .top, spacing: 8) {
-                Image(systemName: "arrow.triangle.merge")
-                    .foregroundStyle(Brand.moss)
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("Is this \(t.name)?")
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(Brand.ink)
-                    Text("It is on our map \(CollectSheet.distance(metres)) from here. If it is the same tree, your photo goes on its page.")
-                        .font(.footnote).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Button("It is this tree") { merge(m, into: t) }
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(Brand.moss)
-                        .frame(minHeight: 44)
-                        .accessibilityIdentifier("mine-same-tree")
+        if let m = live, m.treeId == nil, m.status != .published {
+            let here = (lat: m.lat, lng: m.lng)
+            VStack(alignment: .leading, spacing: 10) {
+                if let t = CollectSheet.sameTree(origin: here, trees: catalogue.trees) {
+                    HStack(alignment: .top, spacing: 8) {
+                        Image(systemName: "arrow.triangle.merge")
+                            .foregroundStyle(Brand.moss)
+                        VStack(alignment: .leading, spacing: 3) {
+                            Text("Is this \(t.name)?")
+                                .font(.subheadline.weight(.semibold))
+                                .foregroundStyle(Brand.ink)
+                            Text("It is on our map \(CollectSheet.distance(metresTo(t, from: here))) from here. If it is the same tree, your photo goes on its page.")
+                                .font(.footnote).foregroundStyle(Brand.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                            Button("It is this tree") { merge(m, into: t) }
+                                .font(.subheadline.weight(.semibold))
+                                .foregroundStyle(Brand.moss)
+                                .frame(minHeight: 44)
+                                .accessibilityIdentifier("mine-same-tree")
+                        }
+                        Spacer(minLength: 0)
+                    }
+                    .padding(12)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Brand.moss.opacity(0.12), in: .rect(cornerRadius: 10))
                 }
-                Spacer(minLength: 0)
+                if findingOurs {
+                    oursFinder(m, here: here)
+                } else {
+                    Button {
+                        withAnimation(.snappy) { findingOurs = true }
+                    } label: {
+                        Label(CollectSheet.sameTree(origin: here, trees: catalogue.trees) == nil
+                                  ? "Already on our map?" : "Another of our trees",
+                              systemImage: "magnifyingglass")
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Brand.moss)
+                            .frame(minHeight: 44)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("mine-find-ours")
+                }
             }
-            .padding(12)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Brand.moss.opacity(0.12), in: .rect(cornerRadius: 10))
         }
     }
 
+    /// The list behind "Another of our trees": the collect sheet's rows, in
+    /// words, and a tap folds this tree into the one picked.
+    @ViewBuilder private func oursFinder(_ m: Sightings.Sighting,
+                                         here: (lat: Double, lng: Double)) -> some View {
+        let q = oursQuery.trimmingCharacters(in: .whitespaces)
+        let near = CollectSheet.nearby(origin: here, trees: catalogue.trees)
+        let picks = !q.isEmpty
+            ? CollectSheet.search(q, origin: here, trees: catalogue.trees)
+            : (near.isEmpty ? CollectSheet.closest(origin: here, trees: catalogue.trees) : near)
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Which of our trees is it?")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Brand.ink)
+            HStack(spacing: 8) {
+                Image(systemName: "magnifyingglass").foregroundStyle(Brand.inkSoft)
+                TextField("Search our trees by name", text: $oursQuery)
+                    .font(.system(size: 16))
+                    .foregroundStyle(Brand.ink)
+                    .autocorrectionDisabled()
+                    .submitLabel(.search)
+                    .accessibilityIdentifier("mine-find-search")
+            }
+            .padding(.horizontal, 12)
+            .frame(minHeight: 44)
+            .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+            ForEach(picks) { t in
+                Button { merge(m, into: t) } label: {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(t.name)
+                            .font(.brand(16, .bold)).foregroundStyle(Brand.ink)
+                        Text(CollectSheet.candidateLabel(species: t.commonName,
+                                                         metres: metresTo(t, from: here)))
+                            .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    }
+                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                    .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+            }
+            if picks.isEmpty {
+                Text(q.count >= 2 ? "None of our trees is called that." : "None of our trees is pinned near here. Search for it by name.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+            }
+            Button("Cancel") {
+                withAnimation(.snappy) { findingOurs = false; oursQuery = "" }
+            }
+            .font(.subheadline).foregroundStyle(Brand.inkSoft)
+            .frame(minHeight: 44)
+        }
+    }
+
+    private func metresTo(_ t: Tree, from here: (lat: Double, lng: Double)) -> Int {
+        Int(Geo.km(here, (t.lat, t.lng)) * 1000)
+    }
+
     private func merge(_ m: Sightings.Sighting, into t: Tree) {
+        // FURTHER THAN THE COLLECT SHEET'S 400 M, the pick also says our pin
+        // is wrong, and is sent as the same correction CollectSheet.reportPin
+        // sends, so a run moves the pin or writes down why not.
+        let metres = metresTo(t, from: (m.lat, m.lng))
+        if metres > 400 {
+            var d = Submission.Draft()
+            d.kind = .correction
+            d.city = t.city
+            d.tree = t.name
+            d.locationHint = String(format: "%.6f, %.6f (%@)", m.lat, m.lng,
+                                    m.fixNote ?? "where the person's own tree stands")
+            d.why = "A tree the person added, folded into this one \(metres) m from the published position. "
+                  + "Our pin was \(t.precision == .confirmed ? "marked confirmed" : "marked approximate")."
+            let page = t.url
+            Task { _ = await Submission.send(d, from: page, token: await account.freshToken()) }
+        }
+        findingOurs = false
+        oursQuery = ""
         if !saved.isVisited(t.id) { saved.toggleVisited(t.id) }
         sightings.fold(m.id, into: t)
         navigator.snack = .init(text: "Your photo is on the tree's page", symbol: "checkmark.seal")
