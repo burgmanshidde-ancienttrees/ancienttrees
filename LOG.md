@@ -15,6 +15,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - No new trees. Claims were empty; READY (43) is mostly Roosendaal leads earlier passes declined, so no write pass.
 - Frankfurt enrichment (5 trees): frk_014 and frk_015 got a girth and height from the city's ND object pages (read via Wayback, frankfurt.de is blocklisted) and a firmer access line for frk_014. frk_015's location_site was refused (needs a source URL), so its pin stays approximate. frk_012, frk_013, frk_017: no per-tree record found; 10 gaps recorded as dead ends. Claim released.
+- Stuttgart enrichment (3 trees, 7 gaps): stu_008, stu_009, stu_010 gained LUBW register records (Naturdenkmal numbers); stu_010 pin from Wikipedia's coordinate. No measurements found; the city PDF 3-8.pdf may hold them. Claim released.
 - Needs a tool: the pass has no PDF reader, so the Palmengarten tree PDF (Senckenberg Yew) stays unread.
 
 ## 2026-10-18, 19:58 run: reader sighting verdict, roster photo pass

@@ -315,7 +315,7 @@
       "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it as the oak on the Schillerhöhe lookout, with benches beside it and the city laid out below from 408 metres. It stands by the footpath along Wernhaldenstraße.",
       "official_register": {
-        "name": "LUBW Naturdenkmal 81110000403 (Stuttgart ordinance 3/8, entry 3/8, designated 2003-06-24)",
+        "name": "Naturdenkmal Einzelgebilde 81110000403 (LUBW Schutzgebietssteckbrief, Stadt Stuttgart), no. 81110000403",
         "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000080"
       }
     },
@@ -355,7 +355,7 @@
       "location_precision": "approximate",
       "how_to_recognise": "You can recognise them as the two giant sequoias about ten metres apart between the houses at Steinkopfstraße 6 and 8. You see them from the street over a fence, beside the Wernhaldenpark.",
       "official_register": {
-        "name": "LUBW Naturdenkmal 81110000027 (Steinkopfstr. 6) and 81110000402 (Steinkopfstr. 8), designated 2003-06-24",
+        "name": "Naturdenkmal Einzelgebilde 81110000027 (LUBW Schutzgebietssteckbrief, Stadt Stuttgart), no. 81110000027",
         "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000078"
       }
     },
@@ -368,8 +368,8 @@
       "age_max": null,
       "location": {
         "address": "Marconistrasse at the end of Lange Allee, Zuffenhausen, Stuttgart",
-        "latitude": 48.82906,
-        "longitude": 9.152118,
+        "latitude": 48.829074,
+        "longitude": 9.15209,
         "neighbourhood": "Zuffenhausen"
       },
       "story": "By 1711 this oak was already called a stately old tree, and a duke chose it as the spot for his hunting lodge. That is the account in the German Wikipedia: Duke Eberhard Ludwig of Württemberg had a hunting pavilion built beside it for his Schlotwiese hunting ground. We have not seen the 1711 record behind the claim, so we carry it as Wikipedia's and put the tree's age no closer than over 300 years. Nobody has measured the trunk to test that. If the 1711 mention holds, it is the oldest tree on this page.\n\nThe name is far younger than the tree. In 1929 the Turnverein Zuffenhausen, the district's gymnastics club, marked its 40th anniversary by naming the oak after Friedrich Ludwig Jahn, the Turnvater of German gymnastics. A tree that stood in a duke's hunting ground now carries a gymnastics club's birthday present.\n\nIt has not had an untroubled old age. Some years ago, a local newspaper reported, a gust of wind broke off a heavy branch and the area around it was cordoned off. The report is no longer online. Stuttgart has protected the oak as a natural monument since 2003, and a photograph from April 2020 names it.\n\nIt stands where Lange Allee ends at Marconistraße. The pin is the register's approximate point, and no source describes whether the trunk sits on a verge or a green strip. If you go, tell us what you find, and its girth if you can measure it.",
@@ -377,7 +377,8 @@
         "https://de.wikipedia.org/wiki/Jahneiche_(Stuttgart-Zuffenhausen)",
         "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000095",
         "https://www.stuttgart.de/medien/ibs/3-8.pdf",
-        "https://commons.wikimedia.org/wiki/File:Jahneiche_Stuttgart.jpg"
+        "https://commons.wikimedia.org/wiki/File:Jahneiche_Stuttgart.jpg",
+        "https://de.wikipedia.org/wiki/Jahneiche_(Stuttgart-Zuffenhausen) (Coordinate template, landmark)"
       ],
       "access": "Standing at the junction of Lange Allee and Marconistrasse, a public street junction; no ticket. Exact surroundings (verge or green strip) not confirmed.",
       "transport": "Zuffenhausen, Stuttgart; nearest stop not checked (S-Bahn Zuffenhausen is in the district, walk time unknown)",
@@ -392,11 +393,17 @@
         "height": 4608
       },
       "curation_status": "flagged",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "how_to_recognise": "You can recognise it as the old oak at the junction where Lange Allee ends at Marconistraße in Zuffenhausen. Another protected oak stands about 70 metres north-east; this is the one on the junction.",
       "official_register": {
-        "name": "LUBW Naturdenkmal 81110000903 (designated 2003-06-24; Stuttgart ordinance entry 9/3)",
+        "name": "Naturdenkmal Einzelgebilde 81110000903 (LUBW Schutzgebietssteckbrief, Stadt Stuttgart), no. 81110000903",
         "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000095"
+      },
+      "pin_source": {
+        "kind": "enrich",
+        "url": "https://de.wikipedia.org/wiki/Jahneiche_(Stuttgart-Zuffenhausen) (Coordinate template, landmark)",
+        "date": "2026-10-18",
+        "moved_m": 3
       }
     }
   ]
