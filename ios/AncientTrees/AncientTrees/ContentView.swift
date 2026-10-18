@@ -571,239 +571,259 @@ struct ContentView: View {
         }
     }
 
+    // THE ROOT IN THREE PIECES (2026-10-18). As one expression `body` took
+    // fourteen seconds to type-check on a Mac and the CI runner gave up on it
+    // ("unable to type-check this expression in reasonable time"). Each piece
+    // returns an opaque view, so the compiler checks them one at a time.
+
+    /// The tabs, with what sits over and under them.
+    private func tabs(_ cat: Catalogue) -> some View {
+        TabView(selection: tabSelection) {
+            // ONE line weight across the whole bar, nothing filled,
+            // and the selection said by the pill and the colour alone.
+            //
+            // This reverses the 2026-08-22 decision to fill the
+            // selected symbol, which came from Hidde's Komoot
+            // screenshots. On 2026-08-24 he sent an AllTrails frame
+            // and said the bar was "afschuwelijk lelijk": filling
+            // `map` turns it into a solid green blob next to a
+            // hairline magnifying glass, so the bar carries two
+            // drawing styles at once. AllTrails uses one outline
+            // weight for all four and lets the pill do the selecting,
+            // and that is what he asked for, precisely.
+            //
+            // Symbols are the lightest member of one family for the
+            // same reason. `map` for the map, `magnifyingglass` for
+            // search (AllTrails' own), `camera` for the act of
+            // collecting (Hidde, 2026-08-23: a camera and never a
+            // plus) and `checkmark.circle` for the ones ticked off.
+            stack(0, cat) {
+                if let id = debugTree, let t = cat.tree(id) {
+                    TreeDetail(tree: t, catalogue: cat, origin: origin)
+                } else {
+                    MapTab(catalogue: cat, origin: origin,
+                           located: location.coordinate != nil || debugOrigin != nil,
+                           locationDenied: location.status == .denied || location.status == .restricted,
+                           onUseMyLocation: { location.request() })
+                }
+            }
+                .tag(0)
+                .tabItem { Label("Map", systemImage: "map")
+                    .environment(\.symbolVariants, .none) }
+
+            stack(1, cat) { HomeView(catalogue: cat, origin: origin) }
+                .tag(1)
+
+            // MY TREES, which is the Collection and the account in one
+            // place (Hidde, 2026-08-26). Polarsteps is the reference he
+            // gave: your own page carries the map of what you have
+            // done, your numbers, and your things, with settings behind
+            // a gear in the corner rather than as a destination of its
+            // own. Profile stopped being a tab the same day.
+            stack(2, cat) { CollectView(catalogue: cat, origin: origin) }
+                .tag(2)
+        }
+        // Whether `origin` is a fix or a fallback, published once for
+        // every screen under here. See LocationOff.swift: origin always
+        // has a value, and printing a distance measured from Dam square
+        // is the one error this product cannot afford.
+        .environment(\.locationState, locationState)
+        // Outline icons that stay outline when selected, colour doing
+        // the selecting (Careem is Hidde's reference; Airbnb does the
+        // same). The .none variant sits on each Label because iOS
+        // applies its automatic .fill inside the tab item, underneath
+        // an environment set on the TabView itself.
+        .safeAreaInset(edge: .bottom, spacing: 0) { tabBarInset }
+        .overlay(alignment: .bottom) { SnackBar() }
+        .overlay(alignment: .top) { nearbyBannerOverlay }
+        .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)
+        .task(id: nearKey) { checkNearby() }
+        // A sheet hides the banner and with it the timer that clears
+        // it, which would leave `nearby` set and every later tree
+        // waiting behind a banner nobody can see.
+        .onChange(of: rootSheet != nil) { _, open in if open { nearby = nil } }
+        .appObjects(self)
+        .reviewAsk(reviewPrompt)
+    }
+
+    /// What moves between tabs and pages from outside the page itself.
+    private func routed(_ cat: Catalogue) -> some View {
+        tabs(cat)
+        // SIGNED IN SAYS SO, in the snackbar (Hidde, 2026-10-14: "is it
+        // normal to give confirmation that you're now logged in?"). No
+        // screen (his 2026-08-25 ruling), one line at the foot, for
+        // every route in: Apple, Google, and the emailed link, which
+        // arrives from outside the app with nothing else to show.
+        .onChange(of: account.isSignedIn) { was, now in
+            if !was && now {
+                withAnimation(.easeOut(duration: 0.2)) {
+                    navigator.snack = .init(text: "You are signed in", symbol: "checkmark.circle.fill")
+                }
+            }
+        }
+        .onChange(of: navigator.collectNearby) { _, want in
+            if want { openCollect(); navigator.collectNearby = false }
+        }
+        .onChange(of: navigator.push) { _, new in
+            guard let new else { return }
+            path(tab).wrappedValue.append(new)
+            navigator.push = nil
+        }
+        // A REAL LINK, not a launch argument: the app's half of
+        // Universal Links (AncientTrees.entitlements carries
+        // applinks:ancienttrees.app, 2026-09-03). The associated
+        // domain was added the same day as this handler; before that
+        // the app had no way to receive one at all, whatever the
+        // site's own apple-app-site-association implied. Kept to the
+        // one path that actually goes anywhere: the site's AASA
+        // lists only /t, a shared sighting, which is what the
+        // thank-you mail now links to (contributor_reply.py). Every
+        // other path this app COULD show a page for (a tree, a city)
+        // is deliberately not in the site's AASA yet, so tapping one
+        // still opens Safari with the real page rather than the app
+        // sitting on whatever tab it last had open.
+        .onOpenURL { url in open(url) }
+        .sheet(isPresented: $askingForName) { ProfileEditor().appObjects(self) }
+        .onChange(of: navigator.selectTab) { _, new in
+            // ONLY A TAB THAT EXISTS. A selection matching no tag
+            // leaves the TabView showing its first page with our bar
+            // gone, which is a dead end: no bar, no back button, and
+            // the tab it thinks it is on is not on screen. One stale
+            // call site did exactly that for a day (Profile's identity
+            // row still asked for tab 3), and the cost of the guard is
+            // a comparison.
+            if let new {
+                if (0...2).contains(new) {
+                    tab = new
+                } else {
+                    // AND IT SAYS SO NOW. Dropping it silently is what
+                    // let a dead "Add a tree" button sit on Discover
+                    // for over a week (2026-09-04): the guard did its
+                    // job, the button did nothing, and nothing anywhere
+                    // said why. In a debug build this stops the app in
+                    // the test that hits it; in release it still fails
+                    // safe, because a dead end is worse than a dead
+                    // button.
+                    assertionFailure("selectTab \(new) matches no tab; the camera is an action, not a tab. Use navigator.collectNearby.")
+                }
+                navigator.selectTab = nil
+            }
+        }
+        .onChange(of: navigator.showCityOnMap) { _, new in
+            // Same handling as showOnMap below: pop the map's stack and
+            // go there. MapTab frames the city and clears the request.
+            if new != nil { mapPath = []; tab = 0 }
+        }
+        .onChange(of: navigator.showOnMap) { _, new in
+            // POP the map's own stack as well. The tree page you
+            // tapped the inset on is usually pushed ON the map tab, so
+            // switching to tab 0 left you looking at the same page and
+            // the little map read as a dead control (Hidde,
+            // 2026-08-21: "als ik op het kaartje klik opent hij niet").
+            if new != nil { mapPath = [] }
+            if new != nil { tab = 0 }
+        }
+    }
+
+    /// The sheets and the walk cover over everything.
+    private func presented(_ cat: Catalogue) -> some View {
+        routed(cat)
+        // ONE sheet modifier, driven by one optional, because SwiftUI
+        // honours only one per view and stacking three meant the ask
+        // silently never appeared. The ask is presented from the root so
+        // that a tick on a tree page and a third save on the map land in
+        // the same sheet rather than in two near-identical ones.
+        .sheet(item: $rootSheet) { which in
+            Group {
+                switch which {
+                case .signIn(let reason):
+                    SignInSheet(reason: reason, localCount: saved.savedCount)
+                case .paywall(let feature):
+                    PaywallView(feature: feature)
+                case .spot(let mode):
+                    // The tree the camera was opened from lasts exactly
+                    // as long as this sheet. Without the reset, tapping
+                    // the camera on Old Tjikko and then opening the
+                    // camera from the tab bar an hour later would still
+                    // offer to add Old Tjikko.
+                    //
+                    // ON THE SHEET, not on the body above. As an
+                    // `.onChange(of: rootSheet)` up there it was one
+                    // modifier too many for that chain and the CI
+                    // compiler gave up on the whole expression
+                    // ("unable to type-check this expression in
+                    // reasonable time", 2026-09-04), while Xcode 26 on
+                    // this desk compiled it fine. Same effect, and a
+                    // small expression the type-checker can hold.
+                    CollectSheet(catalogue: cat, origin: origin, mode: mode,
+                                 about: navigator.collectAbout,
+                                 addsPhoto: navigator.collectAddsPhoto,
+                                 knownTree: navigator.collectTree,
+                                 shotIn: navigator.collectShot,
+                                 pickedIn: navigator.collectPicked)
+                        .onDisappear {
+                            navigator.collectAbout = nil
+                            navigator.collectAddsPhoto = false
+                            navigator.collectTree = nil
+                            navigator.collectShot = nil
+                            navigator.collectPicked = nil
+                        }
+                }
+            }
+            // A sheet does not inherit the environment set on the view
+            // below this modifier, so every object goes in here, once,
+            // for every case. Per-case lists were how the Spot sheet
+            // crashed on 2026-08-21: it gained an Account read and the
+            // .spot case still injected only Saved and Navigator. Any
+            // view a sheet might contain can read any of these.
+            .appObjects(self)
+        }
+        // DERIVED from the request rather than mirrored into a second
+        // piece of state. The mirror version lost the launch argument
+        // every time: -begin sets the request in the same update in
+        // which the TabView first exists, and an onChange registered by
+        // that same update never sees it as a change. A binding cannot
+        // miss it, because there is nothing to miss.
+        .fullScreenCover(item: Binding(
+            get: { navigator.beginWalk.flatMap { r in
+                cat.walks(inCity: r.city).first { $0.name == r.name } } },
+            set: { if $0 == nil { navigator.beginWalk = nil } })) { w in
+            walkMode(w, cat)
+        }
+        .onChange(of: nudge.pending) { _, new in
+            if let new { rootSheet = .signIn(new); nudge.pending = nil }
+        }
+        // WHICH MAPS APP, asked once, from the ROOT. Presented here
+        // rather than from the button because Take me there exists on a
+        // tree page, on the pushed map and inside walk mode, and a
+        // dialog attached to each would be three to keep in step.
+        //
+        // AN ALERT, NOT A confirmationDialog, and the first version was
+        // the second one. iOS 26 draws a confirmationDialog as a
+        // floating card and silently drops every button carrying
+        // role: .cancel: the sweep photographed this question with
+        // Apple Maps, Google Maps and no way out, which is the same
+        // fault a destructive confirmation shipped with on 2026-08-27.
+        // Presenting from the root was supposed to avoid it and does
+        // not. An alert renders every button it is given.
+        .sheet(isPresented: Binding(get: { directionsAsk.pending != nil },
+                                    set: { if !$0 { directionsAsk.pending = nil } })) {
+            // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10): equal
+            // choices, so every button is grey; the cross and a swipe
+            // are the cancel.
+            BrandSheet(
+                title: "Open directions in",
+                message: "You can change this in Settings.",
+                buttons: Directions.MapsApp.allCases.map { app in
+                    .secondary(app.label, id: "directions-\(app.rawValue)") { directionsAsk.answer(app) }
+                })
+        }
+    }
+
     var body: some View {
         Group {
             if let cat = store.catalogue {
-                TabView(selection: tabSelection) {
-                    // ONE line weight across the whole bar, nothing filled,
-                    // and the selection said by the pill and the colour alone.
-                    //
-                    // This reverses the 2026-08-22 decision to fill the
-                    // selected symbol, which came from Hidde's Komoot
-                    // screenshots. On 2026-08-24 he sent an AllTrails frame
-                    // and said the bar was "afschuwelijk lelijk": filling
-                    // `map` turns it into a solid green blob next to a
-                    // hairline magnifying glass, so the bar carries two
-                    // drawing styles at once. AllTrails uses one outline
-                    // weight for all four and lets the pill do the selecting,
-                    // and that is what he asked for, precisely.
-                    //
-                    // Symbols are the lightest member of one family for the
-                    // same reason. `map` for the map, `magnifyingglass` for
-                    // search (AllTrails' own), `camera` for the act of
-                    // collecting (Hidde, 2026-08-23: a camera and never a
-                    // plus) and `checkmark.circle` for the ones ticked off.
-                    stack(0, cat) {
-                        if let id = debugTree, let t = cat.tree(id) {
-                            TreeDetail(tree: t, catalogue: cat, origin: origin)
-                        } else {
-                            MapTab(catalogue: cat, origin: origin,
-                                   located: location.coordinate != nil || debugOrigin != nil,
-                                   locationDenied: location.status == .denied || location.status == .restricted,
-                                   onUseMyLocation: { location.request() })
-                        }
-                    }
-                        .tag(0)
-                        .tabItem { Label("Map", systemImage: "map")
-                            .environment(\.symbolVariants, .none) }
-
-                    stack(1, cat) { HomeView(catalogue: cat, origin: origin) }
-                        .tag(1)
-
-                    // MY TREES, which is the Collection and the account in one
-                    // place (Hidde, 2026-08-26). Polarsteps is the reference he
-                    // gave: your own page carries the map of what you have
-                    // done, your numbers, and your things, with settings behind
-                    // a gear in the corner rather than as a destination of its
-                    // own. Profile stopped being a tab the same day.
-                    stack(2, cat) { CollectView(catalogue: cat, origin: origin) }
-                        .tag(2)
-                }
-                // Whether `origin` is a fix or a fallback, published once for
-                // every screen under here. See LocationOff.swift: origin always
-                // has a value, and printing a distance measured from Dam square
-                // is the one error this product cannot afford.
-                .environment(\.locationState, locationState)
-                // Outline icons that stay outline when selected, colour doing
-                // the selecting (Careem is Hidde's reference; Airbnb does the
-                // same). The .none variant sits on each Label because iOS
-                // applies its automatic .fill inside the tab item, underneath
-                // an environment set on the TabView itself.
-                .safeAreaInset(edge: .bottom, spacing: 0) { tabBarInset }
-                .overlay(alignment: .bottom) { SnackBar() }
-                .overlay(alignment: .top) { nearbyBannerOverlay }
-                .sensoryFeedback(.impact(weight: .light), trigger: nearby?.tree.id)
-                .task(id: nearKey) { checkNearby() }
-                // A sheet hides the banner and with it the timer that clears
-                // it, which would leave `nearby` set and every later tree
-                // waiting behind a banner nobody can see.
-                .onChange(of: rootSheet != nil) { _, open in if open { nearby = nil } }
-                .appObjects(self)
-                .reviewAsk(reviewPrompt)
-                // SIGNED IN SAYS SO, in the snackbar (Hidde, 2026-10-14: "is it
-                // normal to give confirmation that you're now logged in?"). No
-                // screen (his 2026-08-25 ruling), one line at the foot, for
-                // every route in: Apple, Google, and the emailed link, which
-                // arrives from outside the app with nothing else to show.
-                .onChange(of: account.isSignedIn) { was, now in
-                    if !was && now {
-                        withAnimation(.easeOut(duration: 0.2)) {
-                            navigator.snack = .init(text: "You are signed in", symbol: "checkmark.circle.fill")
-                        }
-                    }
-                }
-                .onChange(of: navigator.collectNearby) { _, want in
-                    if want { openCollect(); navigator.collectNearby = false }
-                }
-                .onChange(of: navigator.push) { _, new in
-                    guard let new else { return }
-                    path(tab).wrappedValue.append(new)
-                    navigator.push = nil
-                }
-                // A REAL LINK, not a launch argument: the app's half of
-                // Universal Links (AncientTrees.entitlements carries
-                // applinks:ancienttrees.app, 2026-09-03). The associated
-                // domain was added the same day as this handler; before that
-                // the app had no way to receive one at all, whatever the
-                // site's own apple-app-site-association implied. Kept to the
-                // one path that actually goes anywhere: the site's AASA
-                // lists only /t, a shared sighting, which is what the
-                // thank-you mail now links to (contributor_reply.py). Every
-                // other path this app COULD show a page for (a tree, a city)
-                // is deliberately not in the site's AASA yet, so tapping one
-                // still opens Safari with the real page rather than the app
-                // sitting on whatever tab it last had open.
-                .onOpenURL { url in open(url) }
-                .sheet(isPresented: $askingForName) { ProfileEditor().appObjects(self) }
-                .onChange(of: navigator.selectTab) { _, new in
-                    // ONLY A TAB THAT EXISTS. A selection matching no tag
-                    // leaves the TabView showing its first page with our bar
-                    // gone, which is a dead end: no bar, no back button, and
-                    // the tab it thinks it is on is not on screen. One stale
-                    // call site did exactly that for a day (Profile's identity
-                    // row still asked for tab 3), and the cost of the guard is
-                    // a comparison.
-                    if let new {
-                        if (0...2).contains(new) {
-                            tab = new
-                        } else {
-                            // AND IT SAYS SO NOW. Dropping it silently is what
-                            // let a dead "Add a tree" button sit on Discover
-                            // for over a week (2026-09-04): the guard did its
-                            // job, the button did nothing, and nothing anywhere
-                            // said why. In a debug build this stops the app in
-                            // the test that hits it; in release it still fails
-                            // safe, because a dead end is worse than a dead
-                            // button.
-                            assertionFailure("selectTab \(new) matches no tab; the camera is an action, not a tab. Use navigator.collectNearby.")
-                        }
-                        navigator.selectTab = nil
-                    }
-                }
-                .onChange(of: navigator.showCityOnMap) { _, new in
-                    // Same handling as showOnMap below: pop the map's stack and
-                    // go there. MapTab frames the city and clears the request.
-                    if new != nil { mapPath = []; tab = 0 }
-                }
-                .onChange(of: navigator.showOnMap) { _, new in
-                    // POP the map's own stack as well. The tree page you
-                    // tapped the inset on is usually pushed ON the map tab, so
-                    // switching to tab 0 left you looking at the same page and
-                    // the little map read as a dead control (Hidde,
-                    // 2026-08-21: "als ik op het kaartje klik opent hij niet").
-                    if new != nil { mapPath = [] }
-                    if new != nil { tab = 0 }
-                }
-                // ONE sheet modifier, driven by one optional, because SwiftUI
-                // honours only one per view and stacking three meant the ask
-                // silently never appeared. The ask is presented from the root so
-                // that a tick on a tree page and a third save on the map land in
-                // the same sheet rather than in two near-identical ones.
-                .sheet(item: $rootSheet) { which in
-                    Group {
-                        switch which {
-                        case .signIn(let reason):
-                            SignInSheet(reason: reason, localCount: saved.savedCount)
-                        case .paywall(let feature):
-                            PaywallView(feature: feature)
-                        case .spot(let mode):
-                            // The tree the camera was opened from lasts exactly
-                            // as long as this sheet. Without the reset, tapping
-                            // the camera on Old Tjikko and then opening the
-                            // camera from the tab bar an hour later would still
-                            // offer to add Old Tjikko.
-                            //
-                            // ON THE SHEET, not on the body above. As an
-                            // `.onChange(of: rootSheet)` up there it was one
-                            // modifier too many for that chain and the CI
-                            // compiler gave up on the whole expression
-                            // ("unable to type-check this expression in
-                            // reasonable time", 2026-09-04), while Xcode 26 on
-                            // this desk compiled it fine. Same effect, and a
-                            // small expression the type-checker can hold.
-                            CollectSheet(catalogue: cat, origin: origin, mode: mode,
-                                         about: navigator.collectAbout,
-                                         addsPhoto: navigator.collectAddsPhoto,
-                                         knownTree: navigator.collectTree,
-                                         shotIn: navigator.collectShot,
-                                         pickedIn: navigator.collectPicked)
-                                .onDisappear {
-                                    navigator.collectAbout = nil
-                                    navigator.collectAddsPhoto = false
-                                    navigator.collectTree = nil
-                                    navigator.collectShot = nil
-                                    navigator.collectPicked = nil
-                                }
-                        }
-                    }
-                    // A sheet does not inherit the environment set on the view
-                    // below this modifier, so every object goes in here, once,
-                    // for every case. Per-case lists were how the Spot sheet
-                    // crashed on 2026-08-21: it gained an Account read and the
-                    // .spot case still injected only Saved and Navigator. Any
-                    // view a sheet might contain can read any of these.
-                    .appObjects(self)
-                }
-                // DERIVED from the request rather than mirrored into a second
-                // piece of state. The mirror version lost the launch argument
-                // every time: -begin sets the request in the same update in
-                // which the TabView first exists, and an onChange registered by
-                // that same update never sees it as a change. A binding cannot
-                // miss it, because there is nothing to miss.
-                .fullScreenCover(item: Binding(
-                    get: { navigator.beginWalk.flatMap { r in
-                        cat.walks(inCity: r.city).first { $0.name == r.name } } },
-                    set: { if $0 == nil { navigator.beginWalk = nil } })) { w in
-                    walkMode(w, cat)
-                }
-                .onChange(of: nudge.pending) { _, new in
-                    if let new { rootSheet = .signIn(new); nudge.pending = nil }
-                }
-                // WHICH MAPS APP, asked once, from the ROOT. Presented here
-                // rather than from the button because Take me there exists on a
-                // tree page, on the pushed map and inside walk mode, and a
-                // dialog attached to each would be three to keep in step.
-                //
-                // AN ALERT, NOT A confirmationDialog, and the first version was
-                // the second one. iOS 26 draws a confirmationDialog as a
-                // floating card and silently drops every button carrying
-                // role: .cancel: the sweep photographed this question with
-                // Apple Maps, Google Maps and no way out, which is the same
-                // fault a destructive confirmation shipped with on 2026-08-27.
-                // Presenting from the root was supposed to avoid it and does
-                // not. An alert renders every button it is given.
-                .sheet(isPresented: Binding(get: { directionsAsk.pending != nil },
-                                            set: { if !$0 { directionsAsk.pending = nil } })) {
-                    // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10): equal
-                    // choices, so every button is grey; the cross and a swipe
-                    // are the cancel.
-                    BrandSheet(
-                        title: "Open directions in",
-                        message: "You can change this in Settings.",
-                        buttons: Directions.MapsApp.allCases.map { app in
-                            .secondary(app.label, id: "directions-\(app.rawValue)") { directionsAsk.answer(app) }
-                        })
-                }
+                presented(cat)
             } else if let err = store.loadError {
                 ContentUnavailableView("Something is wrong with the catalogue",
                                        systemImage: "exclamationmark.triangle",
