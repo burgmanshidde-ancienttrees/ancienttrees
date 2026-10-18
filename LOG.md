@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 06:37 window (7-day visits: 1910 visits, 2510 page views): one photograph
+Rung 4 photos lane. photo_fetch.py --zero (it ignores --city and fetches every city) gave 35 candidates; I looked at the pixels and approved one: the Ypres Four-Trunked Survivor (sweet chestnut in leaf, Wikidata-linked file, 6 m from pin, CC BY-SA 4.0 Stad Ieper). Reversal: set ypr_005 photo status back to missing. The rest were leaves, hands, indoor or unrelated shots; photo_verdicts.py cannot record rejects for iNat candidates (no matching page), so those come back next sweep. Sequoia's Sentinel Tree has 13 new candidates queued but photo_fetch --zero did not fetch it; not judged. Health still shows Smoke skipped and iOS scheduled failure (needs a Mac session). Enrich empty; 60 READY leads and 28 written trees still held by the rich-or-reader rule.
+
 ## 2026-10-18 thirty-second attempt: nothing shipped
 Pulled; no claims; 60 READY leads and 28 written trees still held by the rich-or-reader rule (recovery mode); enrich empty; only backup is the Detroit retry (host unreachable earlier). Nothing dispatched.
 
