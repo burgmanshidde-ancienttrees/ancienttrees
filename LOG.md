@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 session: small code tidy (Hidde asked)
+
+**No product change.** 17 one-off scripts (old register importers, two `_tmp_` files, finished batch helpers) moved to archive/scripts/, nothing deleted. Two app views nobody shows any more removed: SentCard (unused since Collected became a grid, 10-09) and ProfileButton (gatecheck entry dropped with it). DATA.md went from 2 MB to 435 KB: `archive_logs.py` now also moves DATA.md entries older than 14 days to archive/DATA-YYYY-MM.md, daily, every line checked present after the move. A stale August copy "BRIEF_RESEARCH 2.md" removed (every line is in archive/BRIEF_RESEARCH-full-2026-10-12.md).
+**Left alone on purpose:** site/src/lib/city-walks.ts is imported by nothing, yet SEO_GEO_BLUEPRINT.md names its `hasWalksPage()` as the gate on the word "walk". So either the gate silently stopped running or it lives elsewhere; that is a finding, not a deletion.
+
 ## 2026-10-18 session: iOS CI compiles again
 
 **Breakage, fixed:** since the near-a-tree banner commit (8ed90c196) the app did not compile on CI: ContentView's `body` was too big for the runner's type-checker ("unable to type-check this expression in reasonable time"). The first fix (a33538bab, moving the banner and tab-bar inset out) was not enough; measured locally, `body` still took 14.4 s. The second fix (54644b983) splits it into three pieces (tabs, routed, presented) and gets it down to 0.27 s. No change in behaviour; appfit (iOS 18, iPhone 16 Pro Max) gives 0 findings on 39 screens.

@@ -31,7 +31,6 @@ IDENT_STR = re.compile(r'"([^"\\]+)')
 REACHED_ANOTHER_WAY = {
     "Collect.swift": "signed out the Collection tab IS the sign-in lane (lane-signin); nothing to gate behind it",
     "Profile.swift": "the profile screen signed out is the sign-in lane; its edit gate needs an account to exist",
-    "ProfileButton.swift": "the bar's avatar opens sign-in itself; it is the door, not a gate",
     "CollectSheet.swift": "reached only through tab-collect, which the walk taps (testCameraAsks)",
     "PlacePin.swift": "inside the collect flow behind tab-collect",
     "Paywall.swift": "the paywall's own sign-in is the purchase gate, Hidde's under hard rule 2, not an account act",

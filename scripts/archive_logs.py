@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Move old LOG.md and CURATION.md entries into monthly archives.
+"""Move old LOG.md, CURATION.md and DATA.md entries into monthly archives.
 
 Hidde, 2026-08-08: "onze files steeds groter aan het worden en daarmee token
 verbruik, moeten we een ritme afspreken dat we dit opruimen." He is right and
@@ -21,7 +21,12 @@ import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCHIVE_DIR = os.path.join(ROOT, "archive")
-FILES = ("LOG.md", "CURATION.md")
+FILES = ("LOG.md", "CURATION.md", "DATA.md")
+# DATA.md keeps two weeks, not three days: every reader takes the newest entry
+# only (show_digest, seolearn, langcheck, recognise, weekly_mail), and
+# thin_pages.question_evidence() already reads archive/DATA-*.md too. It had
+# reached 2 MB across 93 days by 2026-10-18 (Hidde: "opruimen").
+DAYS_FOR = {"DATA.md": 14}
 ENTRY_RE = re.compile(r"^## (\d{4})-(\d{2})-(\d{2})", re.M)
 
 ARCHIVE_HEADER = """# {name} archive, {month}
@@ -190,9 +195,12 @@ def main():
                     help="entries older than this move to the archive")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
-    cutoff = datetime.date.today() - datetime.timedelta(days=args.days)
-    print(f"cutoff: entries before {cutoff} move to archive/")
+    today = datetime.date.today()
+    print(f"cutoff: entries older than {args.days} days move to archive/ "
+          f"(DATA.md: {DAYS_FOR['DATA.md']})")
     for fname in FILES:
+        days = max(args.days, DAYS_FOR.get(fname, 0))
+        cutoff = today - datetime.timedelta(days=days)
         r = archive_file(fname, cutoff, args.dry_run)
         if not r:
             print(f"  {fname}: no dated entries")
