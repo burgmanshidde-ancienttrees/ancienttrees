@@ -20,6 +20,13 @@ Web half: read leipzig (index and Menzellinde), vienna, baarn, london and salt-l
 - WARN /leipzig (meta description and og): "19 protected trees in Leipzig" while the page lists 22 trees (data/cities/leipzig.json has 22) and `question_meta` says "21 more", so the count is stale after the three new trees (CLAUDE.md "when a place grows, its intro and meta grow with it"; checkParkCountPromises style fault). Update the count in `meta_description`.
 - NOTE /leipzig/menzellinde (meta description): "A 200-year-old Small-leaved Lime" sharpens the source's "roughly 200 to 300 years" (age_min 200, age_max 300) to its low end, the same pattern as the 10-15 Cardón note (Verify: never sharpen a vague source). "A lime of 200 to 300 years" matches the body.
 
+## 2026-10-18 (app half)
+
+App half (search, signin, signin-email, species, species-pick, tree-nophoto; iPhone SE). The two sign-in sheets, species-pick, the Aleppo Pine species page and the photo-less tree page read clearly and agree with themselves.
+
+- WARN APP: search, typing "lis" returns a species row "Elm" whose subtitle is a sentence cut off mid-word ("the city register lists American Elm, Ulmus amer...") and a second "Elm, listed as Lombarts' Elm". The query matched the word "lists/listed" in register wording, so a person searching for Lisbon sees two elm rows that look like data leaking into the results; a species row should show its Latin name and tree count like the Lombarts' row does.
+- NOTE APP: tree-nophoto, the "Years old" box reads "96-106" with a hyphen and no unit beside it, while the title and the rest of the screen speak in plain words; fine as data, but it sits as a precise-looking range for an age the page cannot have measured (check it is the register's range, not derived).
+
 ---
 
 ## 2026-10-17
