@@ -2,10 +2,10 @@
   "city": "Pemberton",
   "country": "Australia",
   "status": "needs_curation",
-  "intro": "Pemberton maps one tree: a karri turned into a fire lookout in 1947, its trunk fitted with a spiral of steel pegs a prince himself helped drill. Once 61 metres tall, it lost its rotting crown in a recent trim and reopened to climbers in 2026 at a lower platform. You can recognise it by the spiral of steel pegs driven up its trunk to a climbing platform. It stands in Gloucester National Park near Pemberton, Western Australia.",
+  "intro": "Pemberton maps two climbing karris. The first is a karri turned into a fire lookout in 1947, its trunk fitted with a spiral of steel pegs a prince himself helped drill. Once 61 metres tall, it lost its rotting crown in a recent trim and reopened to climbers in 2026 at a lower platform. You can recognise it by the spiral of steel pegs driven up its trunk to a climbing platform. It stands in Gloucester National Park near Pemberton, Western Australia. The Dave Evans Bicentennial Tree was pegged in 1988 for climbers, never for fires.",
   "meta_description": "The Gloucester Tree in Pemberton, WA: a former fire lookout karri you can still climb via steel pegs, reopened 2026 after a safety closure.",
-  "question_meta": "Pemberton's only mapped tree is the Gloucester Tree, a karri fire-lookout tree fitted with a climbable spiral of steel pegs since 1947.",
-  "question_answer": "Pemberton's only mapped tree, and its oldest, is the Gloucester Tree, a Karri (Eucalyptus diversicolor) in Gloucester National Park about 3km from town. Fitted in 1947 with a spiral of steel pegs to serve as a fire lookout, it was once the second tallest such tree in the world, and its climb reopened to the public on 1 July 2026 after a three-year safety closure, now stopping at a lower platform.",
+  "question_meta": "Pemberton's two mapped trees are climbing karris: the Gloucester Tree, a fire lookout pegged in 1947, and the Dave Evans Bicentennial Tree, pegged in 1988.",
+  "question_answer": "Pemberton's oldest mapped tree, the only one of its two with an age on record, is the Gloucester Tree, a Karri (Eucalyptus diversicolor) in Gloucester National Park about 3km from town. Fitted in 1947 with a spiral of steel pegs to serve as a fire lookout, it was once the second tallest such tree in the world, and its climb reopened to the public on 1 July 2026 after a three-year safety closure, now stopping at a lower platform. The other, the Dave Evans Bicentennial Tree about 15km south in Warren National Park, was pegged in 1988 and is closed to climbers until the end of November 2026.",
   "question_context": "The tree takes its name from Prince Henry, Duke of Gloucester, who worked an auger into the trunk himself during a visit in the late 1940s. Forester George Reynolds drove the spiral of pegs up the trunk in 1947, one of eight fire-lookout trees raised across the south west between 1937 and 1952, and Jack Watson, a forester and Gallipoli veteran, made the first test climb, taking six hours. At the climbing zone the trunk measured 7.3 metres round on that first ascent. The tree stood 61 metres tall until a trim removed seven metres of rotting crown; the climb closed in November 2023 on safety grounds and reopened in July 2026 at a new platform 37 metres up rather than the old 53. There is no harness and the risk is the climber's own. Its age is given only as a floor, at least 250 years, with no ceiling and no ring count on record. A DPaW day-use entry fee applies for vehicle access to Gloucester National Park; there is no public transport, and Pemberton itself is a short, rural drive away.",
   "hero_tree_id": "pem_001",
   "oldest_tree_id": "pem_001",
@@ -53,10 +53,11 @@
       "access": "Free to view; DPaW national park day-use entry fee applies for vehicle entry to Gloucester National Park. Open daylight hours. The climb itself (pegs spiralling the trunk) reopened 1 July 2026 after a 3-year safety closure, now restricted to a new 37m platform (was 53m) after the crown was trimmed 7m for rot; no harness provided, climb at own risk.",
       "transport": "No public transport to the park; ~5 minute drive / 3km from Pemberton town, which itself is rural and has limited coach/bus service. Car is the practical way in.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Gloucester_Tree%2C_Western_Australia.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "David La Rosa, Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Arbaon_au",
+        "status": "approved"
       },
       "curation_status": "ai_generated",
       "location_precision": "confirmed",
@@ -73,6 +74,40 @@
         "url": "https://inherit.dplh.wa.gov.au/public/inventory/details/68faa5a0-de21-4262-ab44-58560750b093"
       },
       "height_m": 61
+    },
+    {
+      "id": "pem_002",
+      "name": "Dave Evans Bicentennial Tree",
+      "species": "Karri (Eucalyptus diversicolor)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Old Vasse Road, Warren National Park, near Pemberton WA 6260",
+        "latitude": -34.49535,
+        "longitude": 115.975021,
+        "neighbourhood": "Warren National Park"
+      },
+      "verified_sources": [
+        "https://www.exploroz.com/places/108539/wa+dave-evans-bicentennial-tree",
+        "https://www.pembertonvisitor.com.au/dave-evans-bicentennial-tree",
+        "https://en.wikipedia.org/wiki/Warren_National_Park"
+      ],
+      "official_register": null,
+      "access": "Warren National Park entry fee applies (day pass or WA parks pass); climbing itself is free. Picnic and barbecue area, toilets and parking. The whole site was closed to 2 October 2026 for re-pegging; it reopens 3 October but the tree stays closed for climbing until the end of November 2026, so confirm with Pemberton Visitor Centre (+61 8 9776 1133).",
+      "transport": "No public transport; about 15 minutes by car (15 km) south of Pemberton.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This is a lookout tree that never looked out for a fire. The karri lookouts around Pemberton were pegged in the 1930s and 1940s so foresters could spot smoke over the forest. This one was pegged in 1988, for the Australian Bicentenary.\n\nIt carries the name of Dave Evans, a local teacher and politician with an interest in tree towers. A spiral of metal pegs runs up the trunk, 165 of them by one count and 130 by another, to a platform about 20 metres up and a hut at the top, above the canopy.\n\nOf the three climbing trees around Pemberton, the Gloucester Tree, the Diamond Tree and this one, it is the tallest. How tall depends on who you ask: 75 metres in one parks listing, 68 in the parks service's Pemberton brochure, 65 on Wikipedia. Nobody has published a girth or an age either, so if you know of one, tell us.\n\nIt is in the middle of an overhaul. The pegs and the ladder mesh were renewed in 2026, and the whole site was shut for the work until 2 October. It has reopened, but the tree itself stays closed to climbers until the end of November 2026, so check with the Pemberton Visitor Centre before counting on a climb.\n\nIt stands in Warren National Park off Old Vasse Road, about 15 kilometres south of Pemberton by car. A park entry fee applies; the climb costs nothing extra.",
+      "how_to_recognise": "You can recognise it by the spiral of metal pegs running up its trunk to a hut above the canopy. It stands beside the picnic area off Old Vasse Road in Warren National Park, south of Pemberton.",
+      "photo": {
+        "url": "",
+        "license": "",
+        "attribution": "",
+        "status": "missing"
+      }
     }
   ]
 }

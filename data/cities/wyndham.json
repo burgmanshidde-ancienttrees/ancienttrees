@@ -1,0 +1,70 @@
+{
+  "city": "Wyndham",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Wyndham maps one tree, a hollow boab beside King River Road whose trunk once carried the carved words \"Hillgrove Lockup\", legible in a photograph from around 1917 to 1925. Later visitors cut their own names over the letters until they nearly vanished. Oral tradition says Aboriginal people used the tree first, then pastoralists and mounted police escorting prisoners between Derby and Wyndham; the historian Chris Dawson doubts the prison part, because written reports of it only begin in the 1910s. The boab measures 11.62 metres round and is reached only by 4WD.",
+  "meta_description": "The Prison Boab near Wyndham, WA: a hollow boab 11.62 m round, once carved \"Hillgrove Lockup\", on King River Road. 4WD only.",
+  "question_meta": "Wyndham's one mapped tree is the Prison Boab on King River Road, once carved \"Hillgrove Lockup\". What the story is, how true it is, and how to reach it.",
+  "question_answer": "The tree mapped at Wyndham, in Western Australia's East Kimberley, is the Prison Boab Tree on King River Road south of town, a hollow Boab (Adansonia gregorii) 11.62 metres round and 14 metres tall by the National Register of Big Trees. It is known for the words \"Hillgrove Lockup\" carved into its trunk and for an oral tradition that police escorting prisoners between Derby and Wyndham held them there, a story the historian Chris Dawson doubts. Nobody has published a reliable age for it, and the road is 4WD only.",
+  "question_context": "A photograph taken around 1917 to 1925 shows \"Hillgrove Lockup\" cut into the trunk. Since then so many visitors have carved their names into the bark that the original lettering is nearly obliterated, and the Shire of Wyndham-East Kimberley's heritage inventory, which lists the tree, records the damage from engravings alongside a top branch broken by lightning; it rates the tree's condition as good. The story the lettering tells comes from oral tradition: Aboriginal people used the hollow tree first, then early pastoralists, then mounted police moving prisoners between Derby and Wyndham. Chris Dawson doubts the prison part, pointing out that written reports of it only start in the 1910s. The size is better attested than the story: the National Register of Big Trees gives 11.62 metres round, and a 1938 newspaper gave nearly 40 feet at the hollow base, about 12 metres. This is a different tree from the better-known prison boab at Derby. It stands at a camping spot with water, and Visit Kununurra describes the road as 4WD only, with water crossings reported, so the dry season is the time to go.",
+  "hero_tree_id": "wyn_001",
+  "oldest_tree_id": "wyn_001",
+  "faq": [
+    {
+      "q": "Is the Prison Boab at Wyndham the same as the one at Derby?",
+      "a": "No. Derby's Boab Prison Tree is a different tree on the Gibb River Road. The Wyndham one stands beside King River Road at Hillgrove, south of Wyndham, and was once carved with the words \"Hillgrove Lockup\"."
+    },
+    {
+      "q": "Were prisoners really held in it?",
+      "a": "Oral tradition says mounted police escorting prisoners between Derby and Wyndham used it, after Aboriginal people and early pastoralists. The historian Chris Dawson doubts it, because written reports only begin in the 1910s. The carved lettering is real; what it describes is uncertain."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Nobody has published a reliable age. It measures 11.62 metres round by the National Register of Big Trees, and a 1938 newspaper gave nearly 40 feet, so its size has been on record for most of a century. If you know of a dating, tell us."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "Only by 4WD, along King River Road south of Wyndham. Water crossings have been reported, so go in the dry season and check road conditions first. There is no public transport, and visiting is free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wyn_001",
+      "name": "Prison Boab Tree (Hillgrove Lockup)",
+      "species": "Boab (Adansonia gregorii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 1162,
+      "height_m": 14,
+      "location": {
+        "address": "King River Road, south of Wyndham WA 6740",
+        "latitude": -15.6305,
+        "longitude": 128.095,
+        "neighbourhood": "Wyndham"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Boab_Prison_Tree,_Wyndham",
+        "https://inherit.dplh.wa.gov.au/public/inventory/details/9796e7a9-e471-4cac-97c6-f0b184c6c6ef",
+        "https://www.visitkununurra.com/kununurra/prison-tree"
+      ],
+      "official_register": {
+        "name": "Shire of Wyndham-East Kimberley Municipal Heritage Inventory (inHerit, Heritage Council of WA)",
+        "url": "https://inherit.dplh.wa.gov.au/public/inventory/details/9796e7a9-e471-4cac-97c6-f0b184c6c6ef"
+      },
+      "access": "Free, roadside. Reached by King River Road, described by Visit Kununurra as accessible only by 4WD (a traveller journal mentions water crossings); remote, check road conditions, dry season best. Visitors are asked not to climb into or carve the tree.",
+      "transport": "No public transport; by 4WD from Wyndham town, roughly 15 km by Wikipedia coordinate (road distance not confirmed).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Someone once carved the words \"Hillgrove Lockup\" into this boab, clearly enough to read in a photograph taken around 1917 to 1925. Later visitors carved their own names over the top, and the lettering is now nearly gone, erased by the very habit that put it there.\n\nThe story behind the words is that this hollow tree served as a lockup. Oral tradition says Aboriginal people used it first, then the early pastoralists, then the mounted police escorting prisoners between Derby and Wyndham. The historian Chris Dawson doubts the prison part, for a plain reason: written reports of it only begin in the 1910s. The carving is real and old. What it claims is less certain.\n\nThe tree itself is not in doubt. The National Register of Big Trees lists it at 11.62 metres round and 14 metres tall, and a 1938 newspaper put it at nearly 40 feet in circumference at the hollow base, about 12 metres, so it has kept roughly the same waistline for most of a century. The shire's heritage inventory records it in good condition, with a top branch broken by lightning and damage from engraved names. Nobody has published a reliable age. If you know of one, tell us.\n\nIt is not the better-known prison boab at Derby. This one stands beside King River Road south of Wyndham, a camping spot with water, reachable only by 4WD. Go in the dry season and check the road first.",
+      "how_to_recognise": "You can recognise it by the hollow boab trunk, about 11.6 metres round and covered in carved names. It stands beside King River Road at Hillgrove, south of Wyndham, not to be confused with the prison boab at Derby.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Wyndham_Prison_Boab.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Djambalawa, Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Djambalawa",
+        "status": "approved"
+      }
+    }
+  ]
+}

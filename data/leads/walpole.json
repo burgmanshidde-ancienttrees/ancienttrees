@@ -1,0 +1,76 @@
+{
+  "leads": [
+    {
+      "name": "Big Red (register)",
+      "species": "Red Tingle (Eucalyptus jacksonii)",
+      "lat": -34.98237,
+      "lon": 116.90408,
+      "girth_m": 16.5,
+      "height_m": 52,
+      "reason": "Register-only (Pickering Brook copy of the national register): 'road to Valley of the Giants', burnt on one side, trunk splits at 24 m. No independent source, no visitor stop named, no photo."
+    },
+    {
+      "name": "Grey Bark (register)",
+      "species": "Red Tingle (Eucalyptus jacksonii)",
+      "lat": -34.98582,
+      "lon": 116.90507,
+      "girth_m": 17.0,
+      "height_m": 40,
+      "reason": "Register-only: Rate Rd (Bibbulmun Track side), top struck by lightning with a bleached dead crown; no independent source, no visitor stop named, no photo. Dead crown but trunk alive not established."
+    },
+    {
+      "name": "Pleated Lady (register)",
+      "species": "Red Tingle (Eucalyptus jacksonii)",
+      "lat": null,
+      "lon": null,
+      "girth_m": 18.6,
+      "height_m": 33,
+      "reason": "Register says Bibbulmun track at Rate Rd (18.6 / 33, flaring buttress about 6 m). A ranger article (natureplaywa.org.au, updated May 2025) says it is on a new trail around Valley of the Giants, buttress like a pleated skirt: two sources, but no coordinate and no trail name; revisit with the DBCA trail map for a pin."
+    },
+    {
+      "name": "Forest Lord (register)",
+      "species": "Red Tingle (Eucalyptus jacksonii)",
+      "lat": null,
+      "lon": null,
+      "girth_m": 19.65,
+      "height_m": 40,
+      "reason": "Register-only, no source or location found anywhere."
+    },
+    {
+      "id": "wlp_002",
+      "name": "Grandma Tingle",
+      "species": "Red Tingle (Eucalyptus jacksonii)",
+      "age_estimate": "roughly 400 years",
+      "age_min": 300,
+      "age_max": 500,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "Ancient Empire Walk, Valley of the Giants, Walpole-Nornalup National Park, Nornalup WA 6333",
+        "latitude": -34.9775,
+        "longitude": 116.8934,
+        "neighbourhood": "Valley of the Giants"
+      },
+      "verified_sources": [
+        "https://www.natureplaywa.org.au/insider-info-walpole-nornalup-national-park/",
+        "https://trailswa.com.au/trails/trail/valley-of-the-giants-tree-top-walk-walpole-nornalup-np",
+        "https://www.dbca.wa.gov.au/news/2025/record-breaking-visitation-valley-giants-tree-top-walk"
+      ],
+      "official_register": null,
+      "access": "The Ancient Empire forest-floor boardwalk (540 m loop, fully wheelchair and pram accessible, upgraded 2024-25) is free; the neighbouring Tree Top Walk (600 m, up to 40 m high) charges an entry fee. Open daily except Christmas Day. Valley of the Giants, off South Coast Highway between Walpole and Denmark.",
+      "transport": "No public transport; by car, about 15 km from Walpole.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The best-known tree in the Valley of the Giants has a name a child might give and an age nobody has measured. Rangers put Grandma Tingle at about 400 years old, but no ring count or core stands behind it, so read it as somewhere between 300 and 500.\n\nShe is a red tingle on the Ancient Empire Walk, a forest-floor boardwalk that loops 540 metres through the trunks of Walpole-Nornalup National Park. At one point the boardwalk passes straight through the hollowed base of a living tingle.\n\nThe valley's other draw is the Tree Top Walk, 600 metres of walkway climbing to 40 metres above the ground. It charges an entry fee, and it is a structure, not a tree. The Ancient Empire is the free half of the visit, upgraded in 2024 and 2025 and now fully accessible by wheelchair and pram, and it keeps you down at the foot of the trunks.\n\nThere is no published girth or height for her, and we have not been able to pin her trunk exactly: the map point marks the Tree Top Walk entrance, and the Ancient Empire boardwalk is right beside it. If you have stood at her trunk and know which one she is, tell us.\n\nThe valley is open every day except Christmas Day, off the South Coast Highway between Walpole and Denmark, about 15 kilometres from Walpole by car. There is no public transport.",
+      "photo": {
+        "url": "",
+        "license": "",
+        "attribution": "",
+        "status": "missing"
+      },
+      "age_basis": "source",
+      "reason": "Written and verified 2026-10-18 but cannot be told apart: no photograph, no recognition line in any source, and the pin is the Tree Top Walk entrance, not her trunk. Ships with a trunk photo or a GPS fix at the tree."
+    }
+  ],
+  "blocked": []
+}

@@ -1,0 +1,69 @@
+{
+  "city": "Powelltown",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "Powelltown maps one tree, a mountain ash in the Yarra State Forest whose height depends on which year you read: 67 metres when the National Trust measured it in 1986, 76 in an article from 1993. The Ada Tree is 15 metres round, more than 300 years old by the Trust's account, and stands alone in a small gully of myrtle beech, its buttress wings ringed by a platform. A 3.6 kilometre loop walks there from the picnic area, and the key to a gated access road for less mobile visitors comes from the Powelltown Post Office.",
+  "meta_description": "The Ada Tree near Powelltown, Victoria: a mountain ash 15 m round and over 300 years old, on a 3.6 km forest loop in the Yarra State Forest.",
+  "question_meta": "The Ada Tree near Powelltown is a mountain ash 15 metres round in the Yarra State Forest. How tall, how old, and how to reach it.",
+  "question_answer": "The tree mapped at Powelltown, Victoria, is the Ada Tree, a Mountain Ash (Eucalyptus regnans) in the Ada Tall Trees Reserve of the Yarra State Forest, 15 metres round at a metre and a half above the ground. It is more than 300 years old by the National Trust and the Yarra Valley tourism page, and somewhere between 67 and 76 metres tall depending on the measurement. It is free to visit by a 3.6 kilometre loop walk from the Ada Tree picnic area.",
+  "question_context": "The National Trust of Australia (Victoria) classified the Ada Tree in 2015, from a measurement taken in 1986 that gave 67 metres. A 1993 article reproduced on the Trust's own page, and the tourism page, give 76 metres, and another guide says 75.1, so the height is best read as a range. The girth is steadier: 15 metres at 1.5 metres above the ground by the Trust, with 15.5 reported for the Victorian Heritage Database. The Trust's register header puts the age at about 350 years; elsewhere it and the tourism page say more than 300. The same entry calls the tree's condition poor in one place and good in another. The walk from the picnic area is a 3.6 kilometre loop of about an hour and a half, grade 3. For visitors who cannot manage the walk, a gated forest road, Federal Road, runs 1.8 kilometres to a car park about ten metres from the boardwalk, and the gate key is collected from the Powelltown Post Office at 1657 Little Yarra Road. There is no public transport; Powelltown is about an hour and a half from Melbourne by car.",
+  "hero_tree_id": "pwt_001",
+  "oldest_tree_id": "pwt_001",
+  "faq": [
+    {
+      "q": "How tall is the Ada Tree?",
+      "a": "Somewhere between 67 and 76 metres. The National Trust's 1986 measurement gave 67 metres; a 1993 article and the tourism page give 76, and another guide says 75.1. Nobody has published which is right."
+    },
+    {
+      "q": "How old is the Ada Tree?",
+      "a": "More than 300 years by the National Trust and the Yarra Valley tourism page, with the Trust's register header putting it at about 350."
+    },
+    {
+      "q": "Can you drive to the Ada Tree?",
+      "a": "Partly. A gated forest road, Federal Road, runs 1.8 kilometres to a small car park about ten metres from the boardwalk, for visitors who cannot do the walk. The gate key is collected from the Powelltown Post Office, 1657 Little Yarra Road; check the gate is open before going. Everyone else walks the 3.6 kilometre loop from the Ada Tree picnic area."
+    },
+    {
+      "q": "How do you get there from Melbourne?",
+      "a": "By car, about an hour and a half to Powelltown, then a short drive to the Ada Tree picnic area. There is no public transport to the tree, and visiting is free."
+    }
+  ],
+  "trees": [
+    {
+      "id": "pwt_001",
+      "name": "The Ada Tree",
+      "species": "Mountain Ash (Eucalyptus regnans)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": 1500,
+      "height_m": 67,
+      "location": {
+        "address": "Ada Tree picnic area, Ada River Valley, off Federal Track, Yarra State Forest, near Powelltown VIC 3797",
+        "latitude": -37.816853,
+        "longitude": 145.868783,
+        "neighbourhood": "Powelltown"
+      },
+      "verified_sources": [
+        "https://www.trusttrees.org.au/tree/VIC/Powelltown/Federal_Track",
+        "https://www.visityarravalley.com.au/products/ada-tree-walk-1"
+      ],
+      "official_register": {
+        "name": "National Trust of Australia (Victoria) Significant Tree Register",
+        "url": "https://www.trusttrees.org.au/tree/VIC/Powelltown/Federal_Track"
+      },
+      "access": "Free. Walk from the Ada Tree picnic area and car park (3.6 km loop, about 1.5 hours, grade 3). A gated forest road (Federal Road, 1.8 km) gives all-abilities access to a small car park about 10 m from a boardwalk; the key is collected from Powelltown Post Office, 1657 Little Yarra Road. Check the gate is open before going.",
+      "transport": "No public transport to the tree; Powelltown is about 1.5 hours from Melbourne by car; the picnic area is a short drive from the village.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Measured for the National Trust in 1986, the Ada Tree stood 67 metres tall. An article from 1993, reproduced on the Trust's own register page, gives it 76, and another guide says 75.1. The honest answer is somewhere between the high sixties and the mid seventies.\n\nThe girth is less disputed: 15 metres round at a metre and a half above the ground by the Trust's figure, with the state heritage database reported at 15.5. Great buttress wings flare from the base, and a platform has been built around it so visitors stay off the roots.\n\nIt is a mountain ash, more than 300 years old by both the Trust and the Yarra Valley tourism page, with the Trust's register putting it at about 350. It stands alone in a small gully of myrtle beech in the Yarra State Forest, protected as the Ada Tall Trees Reserve, and the Trust classified it in 2015. Even the Trust's own entry cannot settle its health: the header says poor condition, the statement of significance says good.\n\nThere are two ways in. The walk from the Ada Tree picnic area is a 3.6 kilometre loop, about an hour and a half, grade 3. A gated forest road, Federal Road, runs 1.8 kilometres to a small car park about ten metres from the boardwalk. The key to the gate is collected from the Powelltown Post Office, 1657 Little Yarra Road. Check the gate is open before relying on it.",
+      "how_to_recognise": "You can recognise it by the huge buttressed trunk, about 15 metres round, ringed by a protective platform. It stands on its own in a small gully of myrtle beech on the Ada Tree walk.",
+      "photo": {
+        "url": "",
+        "license": "",
+        "attribution": "",
+        "status": "missing"
+      },
+      "age_basis": "source"
+    }
+  ]
+}

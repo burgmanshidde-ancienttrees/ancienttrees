@@ -1,0 +1,68 @@
+{
+  "city": "Walpole",
+  "country": "Australia",
+  "status": "needs_curation",
+  "intro": "The Giant Tingle Tree stands on a short loop walk off Hilltop Road, just east of Walpole in Walpole-Nornalup National Park. It is a red tingle, Eucalyptus jacksonii, and fire has burned its trunk hollow. A register measured it at 22.3 metres round, and trail and tourism pages call it the largest living eucalypt known by girth. Its height is modest, 30 metres by the same register, so the claim is about width. No age has been published for it, and a boardwalk now circles its base to protect the roots.",
+  "meta_description": "The Giant Tingle Tree near Walpole, WA: a fire-hollowed red tingle 22.3 m round, called the largest living eucalypt by girth. Free, by car.",
+  "question_meta": "The Giant Tingle Tree off Hilltop Road near Walpole is a hollow red tingle 22.3 m round. What is there and how to reach it.",
+  "question_answer": "The old tree mapped near Walpole, Western Australia, is the Giant Tingle Tree, a red tingle (Eucalyptus jacksonii) in Walpole-Nornalup National Park. It stands on an 800 metre loop off Hilltop Road about two kilometres east of town: a fire-hollowed trunk 22.3 metres round by a register measurement, which trail and tourism pages call the largest living eucalypt known by girth. No age has been published for it. The park charges no entry fee.",
+  "question_context": "The Giant Tingle Tree is about size, and even that comes with a caveat: tourism pages quote a base of about 24 metres, the register measurement is 22.3, and two of those pages print the 24 as a height, which looks like the girth copied into the wrong line. The one height on record, from the register, is 30 metres. The trunk is hollow, burned out by fire, and a boardwalk now circles its base to protect the roots. No age has been published for it, so this page leaves the figure blank rather than guessing. The Valley of the Giants, about 15 kilometres away off the South Coast Highway, holds more tingles on the free Ancient Empire boardwalk beside the paid Tree Top Walk; we cannot yet say which trunk there is which, so none of them is mapped. The Giant Tingle Tree is reached by car only. Hilltop Road leaves the South Coast Highway about two kilometres east of Walpole, is one-way gravel and not suitable for caravans, and there is no public transport.",
+  "hero_tree_id": "wlp_001",
+  "oldest_tree_id": "wlp_001",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Walpole?",
+      "a": "No age has been published for the Giant Tingle Tree, the one tree mapped here, so this page leaves it blank rather than guessing. If you know of a dating, tell us."
+    },
+    {
+      "q": "Is the Giant Tingle Tree the biggest eucalypt in the world?",
+      "a": "Trail and tourism pages call it the largest living eucalypt known by girth and quote a base of about 24 metres. The register measurement we found is 22.3 metres round. Its height, 30 metres by the same register, is modest; the claim is about width."
+    },
+    {
+      "q": "Do you have to pay?",
+      "a": "No. Walpole-Nornalup National Park has no entry fee, and the loop walk to the Giant Tingle Tree is free."
+    },
+    {
+      "q": "How do you get there?",
+      "a": "By car. Hilltop Road leaves the South Coast Highway about two kilometres east of Walpole; it is one-way gravel, fine for an ordinary car but not for caravans, and an 800 metre loop walk leads to the Giant Tingle Tree. There is no public transport."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wlp_001",
+      "name": "The Giant Tingle Tree",
+      "species": "Red Tingle (Eucalyptus jacksonii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 2230,
+      "height_m": 30,
+      "location": {
+        "address": "Hilltop Road, Walpole-Nornalup National Park, Walpole WA 6398",
+        "latitude": -34.98457,
+        "longitude": 116.78832,
+        "neighbourhood": "Walpole"
+      },
+      "verified_sources": [
+        "https://trailswa.com.au/trails/trail/giant-tingle-tree-loop-walpole-nornalup-np",
+        "https://walpole.com.au/forrest_attractions/giant-tingle-tree/",
+        "https://www.exploroz.com/places/102749/wa+giant-tingle-tree",
+        "https://old.pickeringbrookheritagegroup.com.au/timber6.html"
+      ],
+      "official_register": null,
+      "access": "Free (Walpole-Nornalup National Park entry is free). Hilltop Road is a one-way gravel road off South Coast Highway about 2 km east of Walpole (not for caravans; 2WD). Car park, then an 800 m circular walk (20 to 40 minutes) to the tree, which has a boardwalk around its base.",
+      "transport": "No public transport; about 7 km by road from Walpole town.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Trail and tourism pages call this the largest living eucalypt known in the world by girth, and quote a base of about 24 metres. The register measurement we found is a little more modest, 22.3 metres round. Either way, both numbers describe a trunk with a hole burned through the middle of it.\n\nThis is a red tingle, hollowed out by fire and still standing, at the heart of a short loop walk in Walpole-Nornalup National Park. A boardwalk runs right around its base, there to keep the feet of everyone who comes to look off its roots.\n\nThe figures deserve a word of caution. Two of the tourism pages print 24 metres as the tree's height, which looks like the girth copied into the wrong line. The only height we found, from the same register as the girth, is 30 metres. So this is not a tall tree. It is a wide one, and wide is the whole point.\n\nNobody has published an age for it. If you know of a dating, tell us.\n\nGetting there is part of the visit. Hilltop Road leaves the South Coast Highway about two kilometres east of Walpole and runs one way, on gravel, fine for an ordinary car but not for caravans. From the car park an 800 metre circular walk, 20 to 40 minutes, brings you to the tree. Entry to the national park is free, and there is no public transport; town is about seven kilometres back by road.",
+      "how_to_recognise": "You can recognise it by the fire-hollowed trunk, 22.3 metres round by the register's measure, with a boardwalk all the way around its base. It stands on the 800 metre loop walk from the Hilltop Road car park, east of Walpole.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Giant_Red_Tingle_Tree%2C_Valley_of_the_Giants_Walpole_Western_Australia_314.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Gypsy Denise, Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/User:Gypsy_Denise",
+        "status": "approved"
+      }
+    }
+  ]
+}
