@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18, second restart: merged written trees
+
+- Live: Spokane gets the Grant Park Guardian (horse chestnut, no photo yet, so Bing and readers only). Counts and FAQ updated to 14.
+- Not merged: ftw_018 Memorial Bur Oak (register does not say the ground is public, hard rule 10); fdl_001 Figueira das Lágrimas (slug is in REMOVED_TREE_SLUGS, removed on purpose). Key West, Studena and Novo Selo have no city file; left in research.
+- READY (43) is mostly Roosendaal street trees; no write pass dispatched.
+
 ## 2026-10-18, restart after early stop: Frankfurt enrichment
 
 - No new trees. Claims were empty; READY (43) is mostly Roosendaal leads earlier passes declined, so no write pass.

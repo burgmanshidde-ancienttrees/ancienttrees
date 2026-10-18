@@ -5,7 +5,7 @@
   "oldest_tree_id": "spk_001",
   "hero_tree_id": "spk_001",
   "intro": "Spokane's oldest trees survived by being useless to loggers: three Douglas firs above Mystic Falls in Indian Canyon were left standing because their tapering trunks made poor lumber, put at roughly 400 years by the city's arborist. A small park behind the Corbin Art Center holds three of the only trees on the city's Heritage Registry. Finch Arboretum adds a champion willow, America's first dawn redwoods, a rare Miyabe maple and a towering spruce, and three more scattered across the city round out thirteen.",
-  "meta_description": "400-year Douglas firs holding a canyon rim together, a state champion willow, and America's first dawn redwoods: 13 remarkable trees around Spokane.",
+  "meta_description": "400-year Douglas firs holding a canyon rim together, a state champion willow, and America's first dawn redwoods: 14 remarkable trees around Spokane.",
   "question_meta": "Spokane's oldest mapped trees are the Douglas Firs of Indian Canyon, put at roughly 300 to 450 years by the city's own arborist.",
   "question_answer": "Spokane's oldest mapped trees are the Ancient Douglas Firs of Indian Canyon, three old-growth firs on the cliff edge above Mystic Falls. The city's lead arborist, Jeff Perry, put the largest at around 400 years in 2019, saying his own arms could not reach a third of the way around its trunk.",
   "question_context": "The estimate rests on one account rather than a ring count: a 2019 Spokesman-Review feature in which Perry said measuring the tree properly is not really possible, because its roots are holding the edge of the cliff together. No girth has ever been published for any of the three. What makes the survival plausible is straightforward: Douglas fir with a sharply tapering trunk makes poor lumber, so logging crews that took nearly all the old growth out of the hills around Spokane left these three standing on the canyon rim. Four centuries of age would put their germination in the early 1600s, which means they were already more than two centuries old when Chief Spokane Garry, whose last campsite stood a short walk away, died in 1892. Nothing else on this page comes close to that age: the next oldest, a state-champion white willow at Finch Arboretum, is put at only 90 to 100 years, and the city says plainly it may not have thirty more.",
@@ -16,7 +16,7 @@
     },
     {
       "q": "Are Spokane's remarkable trees free to see?",
-      "a": "Yes, all thirteen stand in public city parks with no entry charge: Indian Canyon Park, John A. Finch Arboretum, Edwidge Woldson Park, Webster Park and Chief Garry Park, though the Moore-Turner Heritage Gardens within Woldson Park keep seasonal hours."
+      "a": "Yes, all fourteen stand in public city parks with no entry charge: Grant Park, Indian Canyon Park, John A. Finch Arboretum, Edwidge Woldson Park, Webster Park and Chief Garry Park, though the Moore-Turner Heritage Gardens within Woldson Park keep seasonal hours."
     },
     {
       "q": "What is Spokane's Heritage Tree Registry?",
@@ -587,6 +587,54 @@
         "url": "https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1 (Spokane Heritage Tree Register point for 'The Littleleaf Linden', CityandCountyHistoricProp FeatureServer layer 1)",
         "date": "2026-10-10",
         "moved_m": 0
+      }
+    },
+    {
+      "id": "spk_015",
+      "name": "Grant Park Guardian",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 90 years or more",
+      "age_min": 85,
+      "age_max": 120,
+      "girth_cm": null,
+      "height_m": 22.9,
+      "location": {
+        "address": "Southeast entrance to Grant Park, E 11th Avenue at S Arthur Street, Spokane, WA 99202",
+        "latitude": 47.645543,
+        "longitude": -117.391226,
+        "neighbourhood": "Grant Park, South Hill"
+      },
+      "verified_sources": [
+        "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/",
+        "https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/CityandCountyHistoricProp/FeatureServer/1",
+        "https://my.spokanecity.org/parks/hours/"
+      ],
+      "official_register": {
+        "name": "Spokane Heritage Tree Register (City of Spokane Urban Forestry), 'Grant Park Guardian', CityandCountyHistoricProp FeatureServer layer 1",
+        "url": "https://my.spokanecity.org/urbanforestry/programs/heritage-tree/"
+      },
+      "access": "Free. Spokane city parks are open 6 a.m. to 10 p.m. (all city parks closed 10 p.m. to 6 a.m.). Tree stands at the park's southeast entrance.",
+      "transport": "Street parking on E 11th Ave; Spokane Transit stops on the South Hill (route and walk time not checked)",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Southeast entrance of Grant Park",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "Heritage registers are usually dry reading. Spokane's gives this horse chestnut a job title: it calls the tree a guardian and greeter at the southeast entrance to Grant Park, and that is the name it goes by.\n\nThe job description fits. The register puts it at 75 feet, about 23 metres, on the park's East 11th Avenue edge. Horse chestnuts are a European species, not native to Washington, so this is a tree somebody chose for a park gate and the gate has kept it.\n\nThe city's listing gives its age as about 90. That figure was set when the tree was listed some years ago and nobody has re-measured since, so it is older now; somewhere from the mid-80s to past a century is the honest range. The register records no girth. If you have ever put a tape round it, tell us.\n\nIt was still standing in September 2025, when a naturalist logged a horse chestnut at the spot.\n\nCome in May. That is when the tree carries its white flower candles upright over the whole crown, and a greeter at a gate earns its title. In autumn the conkers come down in their spiny cases. The park is free and open from 6 a.m. to 10 p.m., like every city park in Spokane, with street parking on East 11th.",
+      "how_to_recognise": "You can recognise it as the large horse chestnut right at the park's southeast entrance, 75 feet tall by the city register. It stands on the East 11th Avenue edge of Grant Park, near South Arthur Street.",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when white candles stand upright over the whole crown"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]
