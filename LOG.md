@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 session: near-a-tree banner in a park
+
+**Changed in the app (next build):** the "You are 40 m from ..." banner now works in a park with many trees. Before, it only looked at the single nearest tree, so other trees close by never got a banner, and a new banner could push the previous one off the screen. Now each tree gets its turn, nearest first, one banner at a time, and the next one comes only once you walk on. Standing still in Parc d'Egmont (eleven trees within 50 m) gives one banner, not a new one every nine seconds. The banner now also shows on the tree's own page (Hidde: "deze uitzondering hoeft van mij niet"), and tapping it there opens Collect.
+
+**Checked:** build plus screenshots on the iPhone SE simulator (the park while standing still, the tree page). Not checked: a real walk through the park, and the tap itself (simctl cannot tap). Still no push notifications and nothing in the background, as it was.
+
 ## 2026-10-18 session: four Australian giants from the big-tree register trial
 
 **New on the site:** the Giant Tingle Tree near Walpole (with photo), the Prison Boab near Wyndham (with photo), the Ada Tree near Powelltown and the Dave Evans Bicentennial Tree at Pemberton. The Gloucester Tree got its first photograph. Walpole, Wyndham and Powelltown are lone-tree places under Hidde's new rule of the same day: a lone tree goes live as a tree page, and its place page stays out of Google until it has four.
