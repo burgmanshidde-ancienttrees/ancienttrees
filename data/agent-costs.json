@@ -12880,6 +12880,14 @@
     "trees": 0,
     "photos_approved": 2,
     "note": "18 candidates judged, all viewed: 2 approved (lon_029 Marble Hill walnut, lpz_023 Probstheida oak), 0 held, 16 rejected (signs, bark close-ups, scrub-hidden trunks, a lime and a sculpture display for the wrong trees)"
+   },
+   {
+    "date": "2026-10-18",
+    "target": "leipzig write lpz_024 to lpz_029 (6 trees)",
+    "kind": "write",
+    "tokens": 150000,
+    "trees": 6,
+    "note": "6 stories, recognition lines, 4 best_time; merged into data/cities/leipzig.json with German overlay for all 6; counts to 28, oldest_tree_id to lpz_026 (Starkeiche). lpz_029 kept: larger oak on public city green, ND oak viewed from Helenenstrasse."
    }
   ]
  },
