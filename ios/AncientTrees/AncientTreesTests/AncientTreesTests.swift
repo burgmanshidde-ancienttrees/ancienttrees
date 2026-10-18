@@ -84,10 +84,9 @@ struct SpotSplit {
     }
 
     /// Hidde, Baarn, 2026-10-18: "Add a new tree" at the Town Hall Plane made
-    /// a second one in his own trees. Within 30 m the add path asks about
-    /// ours first and a tree of yours offers to fold into it; 146 m away, at
-    /// the next plane, it is a different tree and nothing is asked.
-    @Test func aNewTreeOnTopOfOursIsAskedAbout() async throws {
+    /// a second one in his own trees. Within 30 m a tree of yours offers to
+    /// fold into ours; 73 m away it is a different tree and nothing is offered.
+    @Test func aTreeOfYoursOnTopOfOursOffersToFold() async throws {
         let store = CatalogueStore()
         await store.loadBundled()
         let cat = try #require(store.catalogue, "the bundled catalogue did not load")
