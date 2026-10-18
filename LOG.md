@@ -11,6 +11,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 17:02 window: reader verdict, photo lane, Sequoia
+
+7-day visits: 1,990 visits, 2,790 page views (peak 550 on 10-16).
+- **Rung 1:** the Baarn photograph f9336891 (owner account, no note) is a large old willow trunk on a waterside bank. No register or Wikipedia match, no age or girth, so verdict lead with its coordinate; written to judgements and `_sightings.json`.
+- **Photos on roster pages:** `photo_hunt.py --recheck` for Vienna, London, Leipzig, Cardiff, then two photo-judge passes: 5 approved in all (vie_049, vie_056, vie_058, lon_029, lpz_023; reversals in the entry below). I approved the Sequoia National Park Sentinel Tree myself (the park's SENTINEL sign is in the frame, geotag 12 m; undo with `photo_verdicts.py` hold on seq_007).
+- **Enrichment:** the vienna+london+leipzig+cardiff brief held only season and pin gaps with no evidence on hand, so I recorded it as dead ends (`enrich.py --done`); `enrich.py --next` now says nothing to do.
+- **Scouting:** Denver retried, still stalled (no open register of Denver's remarkable trees; Forestry's champion register is not a download).
+- Not done: I tried merging del_011 and then reverted it, because the entry below records it was held on purpose (register-dead neighbour, removed slug). No new trees this window.
+
 ## 2026-10-18 night run (retry): written-but-unmerged trees, rung 4
 
 The rich-or-reader rule is off since 10-18, so the ten trees earlier runs refused were merged again. Live: London Marble Hill Black Walnut (lon_029), Salt Lake City Mount Olivet Linden (slc_006), Leipzig lpz_021, lpz_022, lpz_023, Vienna Prater black poplar (vie_059, approximate pin, last photographs 2014, said on the page). German overlays for Leipzig and Vienna written; city counts fixed. Dropped lpz_019 as a twin of lpz_021 (same ginkgo; its access note was an internal "hold" line). Not merged: del_011 (stands on a register tree marked dead, and its slug is a removed redirect), ftw_018 and spk_015 (story now written, but fort-worth access ground unknown and Grant Park may not be a findable small site), kyw_001 (no Key West city file yet), std_001/nsb_001 and fdl_001 (famous batches with no city file). The 60 READY leads are still not turned into verified files; stale research files left alone. Mount Olivet's address looks odd (1342 W vs the pin) and wants a check.
