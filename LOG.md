@@ -10,6 +10,14 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-10-18, retry run: READY write pass
+
+- Live: Leipzig +1 (lpz_030, white elm by the B2, German overlay), Delft +3 (del_012 to del_014); counts fixed on both pages (Leipzig 29, Delft 12).
+- 22 READY leads handed over, 4 written: 6 already live, 7 access not established, 5 too thin or too small. Claims for leipzig, delft, vienna released. Munich and Salzburg had nothing to write.
+- leads.py --ready overcounts: earlier passes declined many of these in wording it does not recognise.
+- Next: photo-judge on the Commons candidate for lpz_030 ("Flatterulme Lzg. B2.jpg", CC BY-SA 3.0). Roosendaal (22 READY) untouched.
+- Breakage: iOS app workflow shows FAILED (newest run 2026-10-18), not looked at this run.
 <!-- archive-index -->
 ## 2026-10-18 session: Hidde's app test, four fixes
 
