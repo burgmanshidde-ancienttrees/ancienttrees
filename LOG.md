@@ -79,6 +79,12 @@ Visits last 7 days: 1980. Rung 1: two app photographs of lis_014 (Yew of Campo S
 
 **Checked:** build plus screenshots on the iPhone SE simulator (the park while standing still, the tree page). Not checked: a real walk through the park, and the tap itself (simctl cannot tap). Still no push notifications and nothing in the background, as it was.
 
+## 2026-10-18 session: Hidde's photo review, round 2
+
+- **His unapplied verdicts are in:** 108 verdicts given on the review page after the 10-01 pass were never applied. Now 59 rejects are recorded in data/photo-queue.json, and his 17 "good photo" picks are held, not approved: none could be tied to the trunk. They named only the place, e.g. a Trsteno file of the plane tree offered for the ginkgo, or had geotags 86 to 561 m off.
+- **Round 2 on the page** (https://claude.ai/artifact/T4TtkFaSAmJXdTVJy1unHp): 35 candidates for 25 trees, roster cities first. The gate is new and strict: the filename must name a tree or the species, AND either the geotag is within 60 m of the pin or the filename names the species and the site. Built by out/tmp/review_batch.py; images numbered from 1001 so old verdict ids never collide.
+- **Applying round 2 (a session does this):** read `verdicts` with ArtifactData, take only ids whose number is 1001 or higher, rejects to photo_verdicts.py, goods through the identity check (geotag or named file), then preflight, commit, push.
+
 ## 2026-10-18 session: Lady Liberty and a Cedar Breaks bristlecone from the US register sieve
 
 **New on the site, both with photographs:** Lady Liberty in Longwood, Florida (bald cypress, about 2,000 years by Seminole County's estimate, 10 m round), and the Spectra Point Bristlecone at Cedar Breaks, Utah (Utah's state champion, 8.26 m round, past 1,500 years; pin confirmed because the photo geotag sits 10 m from the register's GPS). Both are lone-tree places.

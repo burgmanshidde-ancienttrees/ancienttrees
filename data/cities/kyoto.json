@@ -529,10 +529,13 @@
       "access": "Free to enter the shrine precinct.",
       "transport": "Keihan Jingu-Marutamachi Station, roughly 8 minute walk",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Nashinoki-jinja_%28Kyoto_Gyoen%29_Shrine_hdsr_S5_07.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Hyppolyte de Saint-Rambert, via Wikimedia Commons",
+        "status": "held",
+        "note": "Hidde: good photograph of a tree; identity not settled (no geotag; filename names only the place)",
+        "width": 5245,
+        "height": 3938
       },
       "curation_status": "flagged",
       "notes": "Effectively single-sourced: Wikipedia confirms the shrine's identity, 1885 founding and coordinates but its tree content covers only the katsura known locally as the Tree of Love, not this hackberry. No age given anywhere. The story states the katsura distinction explicitly so a visitor does not mistake one tree for the other. Coordinates are the shrine's, not the tree's position within the grounds.",
@@ -711,10 +714,13 @@
       "transport": "Marutamachi Station (Kyoto Municipal Subway Karasuma Line), roughly 15 minute walk",
       "notes": "Coordinate is Seisho-mon gate itself (verified via OSM/Nominatim, 35.0258332/135.7610189), not a GPS fix on the trunk: a web search independently confirms the tree stands 'southwest of Seisho-mon' (車返桜は京都御苑の清所門南西に位置), so this is a gate-area estimate in the same honest style as kyo_011's Demizu-guchi pin, not the tree's exact trunk. Previously HELD 2026-08-12 on a placeholder coordinate identical to kyo_017's; resolved this pass by looking up each gate's real position rather than guessing.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/703124319/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Rachael Kaiser, via iNaturalist",
+        "status": "held",
+        "note": "Hidde: good photograph of a tree; identity not settled (no geotag; filename names only the place)",
+        "width": 375,
+        "height": 500
       },
       "how_to_recognise": "You can recognise it in April by the flowers, single five-petalled ones and crowded double rosettes opening together on the same crown. It stands southwest of Seisho-mon gate."
     },
