@@ -1,1 +1,89 @@
-[]
+[
+ {
+  "id": "stu_008",
+  "name": "The Schillereiche",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "about 160 years",
+  "age_min": 155,
+  "age_max": 165,
+  "location": {
+   "address": "Schillerhoehe lookout, Wernhaldenstrasse above Neue Weinsteige, Stuttgart",
+   "latitude": 48.7625,
+   "longitude": 9.181944,
+   "neighbourhood": "Stuttgart-Sued (Bopser)"
+  },
+  "verified_sources": [
+   "http://www.vsv-stuttgart.de/index.php?article_id=52",
+   "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+   "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000080",
+   "https://commons.wikimedia.org/wiki/File:Schillereiche_(Wernhaldenstra%C3%9Fe,_Stuttgart),_2024-05-05,_yj.jpg"
+  ],
+  "official_register": {
+   "name": "LUBW Naturdenkmal 81110000403 (Stuttgart ordinance 3/8, entry 3/8, designated 2003-06-24)",
+   "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000080"
+  },
+  "access": "Free, open lookout with benches and a footpath beside Wernhaldenstrasse; the ground belongs to the Verschoenerungsverein Stuttgart, which keeps it as a public viewpoint. No ticket.",
+  "transport": "Stadtbahn U5/U6 to Weinsteige, then roughly 10 to 15 minutes' walk along Wernhaldenstrasse (walk time estimated, not sourced)",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Planted 1865 by the Verschoenerungsverein (VSV, owner of the plot, fetched 2026-10-18: 'Aussichtsanlage mit Eiche, 1865 errichtet und gepflanzt', planted in memory of the first reading from Schiller's Die Raeuber; Stuttgarter Zeitung per search summary gives the same year but is vague on where the reading happened, so treat the Raeuber link as the club's own account). Documented planting of THIS tree, so age derived at about 160 years (2026 minus 1865). Lookout on the Schillerhoehe, 408 m, view south-west to north-east over the city; a Kurhaus/restaurant Schillereiche once stood beside it and is gone; lookout renovated 2005 for the 200th anniversary of Schiller's death, with Garten-, Friedhofs- und Forstamt. No girth or height in any source found. ALIVE: Commons photo by Fyrtaarn dated 2024-05-05 shows a full-crowned oak in leaf on a path with a bench (viewed). PIN: that photo is geotagged 48.7625 9.181944, 4.5 m from the register coordinate (48.762458 9.181948): confirmed. PHOTO CANDIDATE (not downloaded into the repo): Commons 'Schillereiche (Wernhaldenstrasse, Stuttgart), 2024-05-05, yj.jpg', CC BY-SA 4.0, author Fyrtaarn, good Cadiz-standard framing, trunk and crown. Also 'Naturdenkmal Schillereiche, Stuttgart.jpg' (not examined). Same walk as stu_009 (about 250 m east)."
+ },
+ {
+  "id": "stu_009",
+  "name": "The Wernhalde Giant Sequoias",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Steinkopfstrasse 6 and 8, beside the Wernhaldenpark, Stuttgart",
+   "latitude": 48.7627,
+   "longitude": 9.18475,
+   "neighbourhood": "Stuttgart-Sued (Bopser)"
+  },
+  "verified_sources": [
+   "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000078",
+   "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+   "https://stuttgartwege.blogspot.com/2010/02/durch-den-landschaftspark-wernhalde.html",
+   "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stuttgart_-_1_Mammutbaum_%E2%80%9ESteinkopfstr._6%E2%80%9C.jpg"
+  ],
+  "official_register": {
+   "name": "LUBW Naturdenkmal 81110000027 (Steinkopfstr. 6) and 81110000402 (Steinkopfstr. 8), designated 2003-06-24",
+   "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000078"
+  },
+  "access": "View-only from the public street and footpath beside Steinkopfstrasse (visible over a fence in the Commons photo); the tree itself stands between houses and its plot status is not stated by any source. The Wernhaldenpark next door is public, with five entrances, steep paths and many more sequoias.",
+  "transport": "Stadtbahn U5/U6 to Weinsteige, then about 10 minutes down Roemerstrasse into the park (per stuttgartwege blog route; time estimated)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Two separately numbered Naturdenkmal sequoias (Steinkopfstr. 6 = 81110000027, register coord 48.762697 9.184752; Steinkopfstr. 8 = 81110000402, 48.762787 9.184752), about 10 m apart: folded into one entry. Register is the only per-tree source; no girth or height found. Context (stuttgartwege blog, fetched): many of Stuttgart's and Wuerttemberg's sequoias trace to King Wilhelm I of Wuerttemberg, who bought a pound of seed in 1864; the park's sequoias have reached sizes 'unbelievable for Wuerttemberg'; a young planting of 1990 stands in the park (do not confuse). Planting date of these two ND trees is NOT documented: do not bridge the 1864 seed to them. Stuttgarter Nachrichten (search summary only, not used) says sequoias in the park are over 30 m. ALIVE: Commons photo by Laserlicht, 2018-04-06 (CC BY-SA 4.0, Wiki Loves Earth), viewed: a tall healthy conifer of about 35 m by eye behind a roadside rail, houses beside it. Photo geotag 48.762806 9.185289 is the camera spot 40 m east of the register coordinate on the public road, consistent with the tree lying west. Pin stays approximate (register coordinate, not on a visible crown). Flagged: register only, access view-only, photo is the 2018 one. PHOTO CANDIDATE: that file, CC BY-SA 4.0, author Laserlicht, tree fills the frame vertically, daylight, bare trees around, passable. Neighbours not folded in: Bopserwaldstr. 79 copper beech (81110000408, 48.7647 9.18562) and Bopserwaldstr. 81 sequoia (81110000409, 48.76445 9.18555), residential street, unverified."
+ },
+ {
+  "id": "stu_010",
+  "name": "The Jahneiche",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "over 300 years",
+  "age_min": 300,
+  "age_max": null,
+  "location": {
+   "address": "Marconistrasse at the end of Lange Allee, Zuffenhausen, Stuttgart",
+   "latitude": 48.82906,
+   "longitude": 9.152118,
+   "neighbourhood": "Zuffenhausen"
+  },
+  "verified_sources": [
+   "https://de.wikipedia.org/wiki/Jahneiche_(Stuttgart-Zuffenhausen)",
+   "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000095",
+   "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+   "https://commons.wikimedia.org/wiki/File:Jahneiche_Stuttgart.jpg"
+  ],
+  "official_register": {
+   "name": "LUBW Naturdenkmal 81110000903 (designated 2003-06-24; Stuttgart ordinance entry 9/3)",
+   "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000095"
+  },
+  "access": "Standing at the junction of Lange Allee and Marconistrasse, a public street junction; no ticket. Exact surroundings (verge or green strip) not confirmed.",
+  "transport": "Zuffenhausen, Stuttgart; nearest stop not checked (S-Bahn Zuffenhausen is in the district, walk time unknown)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Only de.wikipedia (article 'Jahneiche (Stuttgart-Zuffenhausen)', fetched via API 2026-10-18) gives the history: already mentioned in 1711 as a stately old tree, beside which Duke Eberhard Ludwig had a hunting pavilion built for his Schlotwiese hunting ground; named Jahneiche in 1929 on the 40th anniversary of Turnverein Zuffenhausen, after Friedrich Ludwig Jahn ('Turnvater'). The 1711 claim is Wikipedia's alone (no source seen), so age is kept vague: 'over 300 years' with no upper bound. Stuttgarter Zeitung 'Windboee schaedigt Naturdenkmal' (a storm gust broke a heavy branch, area cordoned; article about 7 years old, page now 404, search summary only; the same summary says about 400 years: NOT used). No girth or height. Register only plus Wikipedia: flagged; vitality: Commons photo 'Jahneiche Stuttgart.jpg' by Florian Hoffmann, 2020-04-19, CC BY-SA 4.0 (named after the tree, not geotagged, not viewed). Pin: register coordinate, approximate. A second ND oak, 'Bei der Eiche 16 A' (81110000902, 48.829692 9.15276), stands about 70 m north-east; left as a lead (street address suggests a house plot). Photo gate met only by the named Commons file; viewing it before approval is needed."
+ }
+]
