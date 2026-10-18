@@ -6619,7 +6619,9 @@
      "author": "Ces-VLC",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-2.0 Category:Estanque del Retiro Category:Flickr images reviewed by FlickreviewR Category:Sunsets of Parque del Buen Retiro"
+     "cats": "Category:CC-BY-2.0 Category:Estanque del Retiro Category:Flickr images reviewed by FlickreviewR Category:Sunsets of Parque del Buen Retiro",
+     "judged": "reject",
+     "verdict": "dusk silhouette of the Retiro lake, no tree as subject"
     }
    ]
   },
@@ -20297,7 +20299,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "40.7892019535,-73.958028406"
+     "obs_location": "40.7892019535,-73.958028406",
+     "judged": "reject",
+     "verdict": "near-duplicate of the approved frame from the same observation"
     },
     {
      "title": "iNat obs 59067493 (Platanus × hispanica)",
@@ -20306,7 +20310,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "40.7892019535,-73.958028406"
+     "obs_location": "40.7892019535,-73.958028406",
+     "judged": "approve",
+     "verdict": "multi-trunk fused London plane beside the Bridle Path, mottled bark, crown and trunk; obs 11 m from pin, noted oldest in park"
     }
    ]
   },
@@ -25303,7 +25309,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Nashinoki-jinja Category:Self-published work Category:Tōrō in Nashinoki-jinja (Kyoto Gyoen)"
+     "cats": "Category:CC-BY-4.0 Category:Nashinoki-jinja Category:Self-published work Category:Tōrō in Nashinoki-jinja (Kyoto Gyoen)",
+     "judged": "reject",
+     "verdict": "shrine storehouse is the subject"
     },
     {
      "title": "File:Nashinoki-jinja (Kyoto Gyoen) Tōrō hdsr S5 02.jpg",
@@ -25313,7 +25321,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Tōrō in Nashinoki-jinja (Kyoto Gyoen)"
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Tōrō in Nashinoki-jinja (Kyoto Gyoen)",
+     "judged": "reject",
+     "verdict": "stone lantern"
     }
    ]
   },
@@ -29703,8 +29713,8 @@
      "author": "no rights reserved",
      "source": "inaturalist",
      "obs_location": "22.3020843,114.1716749997",
-     "judged": "hold",
-     "verdict": "fine daylight banyan in a raised planter with benches, but no geotag and nothing ties it to Nathan Road rather than another Tsim Sha Tsui banyan"
+     "judged": "approve",
+     "verdict": "banyan in the raised Nathan Road planter, whole tree; same observation's plate reads LCSD YTM/6, our tree; 9 m"
     },
     {
      "title": "iNat obs 314972052 (Ficus microcarpa)",
@@ -29713,7 +29723,9 @@
      "licence": "CC0",
      "author": "no rights reserved",
      "source": "inaturalist",
-     "obs_location": "22.3020843,114.1716749997"
+     "obs_location": "22.3020843,114.1716749997",
+     "judged": "reject",
+     "verdict": "trunk with register plate LCSD YTM/6 (our tree), a close view; its sibling whole-tree photo is approved"
     },
     {
      "title": "iNat obs 40736083 (Ficus microcarpa)",
@@ -29722,7 +29734,9 @@
      "licence": "CC BY",
      "author": "(c) WaiTsun Yeung, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "22.3018916667,114.1719383333"
+     "obs_location": "22.3018916667,114.1719383333",
+     "judged": "reject",
+     "verdict": "seedling leaves on a wall, not the tree"
     }
    ]
   },
@@ -36758,7 +36772,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:Lithuania photographs taken on 2014-09-04 Category:PD-self Category:Self-published work Category:Taken with Nikon D5100 Category:Trees in Vilnius Category:Vilnius University Central Campus",
-     "source": "wikidata/Q20504189"
+     "source": "wikidata/Q20504189",
+     "judged": "approve",
+     "verdict": "ash in the university courtyard planter, pinnate crown and trunk; Wikidata image of the tree, 8 m"
     },
     {
      "title": "File:Adam Mickiewicz Portrait detail.jpg",
@@ -36909,7 +36925,9 @@
      "author": "Pofka",
      "lat": null,
      "lng": null,
-     "cats": "Category:2013 in Vilnius Category:Bernardinai garden Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Samsung GT-I9300"
+     "cats": "Category:2013 in Vilnius Category:Bernardinai garden Category:CC-BY-SA-3.0 Category:Self-published work Category:Taken with Samsung GT-I9300",
+     "judged": "reject",
+     "verdict": "park lawn scene, no single tree"
     }
    ]
   },
@@ -42520,7 +42538,9 @@
      "licence": "CC BY",
      "author": "(c) Mário de Pinto Balsemão, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "32.8117942,-17.1446924"
+     "obs_location": "32.8117942,-17.1446924",
+     "judged": "hold",
+     "verdict": "good lone til in the Fanal pasture, but one of dozens; nothing settles that it is the Witch Tree"
     }
    ]
   },
@@ -50694,7 +50714,9 @@
      "author": "Michal Klajban",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cyprus photographs taken on 2019-02-10 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images by User:Podzemnik (supported by Wikimedia Germany) Category:Images of Cyprus by User:Podzemnik Category:Panagia Theoskepasti (Paphos) Category:Quality images Category:Quality images by User:Podzemnik Category:Quality images missing SDC depicts Category:Quality images of Cyprus by User:Podzemnik Category:Quality images of Paphos Category:Quality images of architecture in Cyprus Category:Quatrefoils Category:Self-published work Category:Supported by Wikimedia Deutschland"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cyprus photographs taken on 2019-02-10 Category:Files with coordinates missing SDC location of creation Category:Images by User:Podzemnik Category:Images by User:Podzemnik (supported by Wikimedia Germany) Category:Images of Cyprus by User:Podzemnik Category:Panagia Theoskepasti (Paphos) Category:Quality images Category:Quality images by User:Podzemnik Category:Quality images missing SDC depicts Category:Quality images of Cyprus by User:Podzemnik Category:Quality images of Paphos Category:Quality images of architecture in Cyprus Category:Quatrefoils Category:Self-published work Category:Supported by Wikimedia Deutschland",
+     "judged": "reject",
+     "verdict": "chapel staircase through a quatrefoil"
     }
    ]
   },
@@ -54413,7 +54435,9 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "46.2241666667,6.1480555556"
+     "obs_location": "46.2241666667,6.1480555556",
+     "judged": "reject",
+     "verdict": "needles in hand"
     },
     {
      "title": "iNat obs 111699156 (Cedrus deodara)",
@@ -54422,7 +54446,9 @@
      "licence": "CC BY",
      "author": "(c) Karim Haddad, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "46.2241666667,6.1480555556"
+     "obs_location": "46.2241666667,6.1480555556",
+     "judged": "reject",
+     "verdict": "needles in hand"
     }
    ]
   },
@@ -60734,7 +60760,9 @@
      "author": "Daniel Ramirez from Honolulu, USA",
      "lat": 21.316492,
      "lng": -157.857956,
-     "cats": "Category:CC-BY-2.0 Category:Files uploaded from Flickr by Jacopo Werther via Bot Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Foster Botanical Garden, Honolulu Category:Photographs by Daniel Ramirez Category:Taken with Nikon D3000"
+     "cats": "Category:CC-BY-2.0 Category:Files uploaded from Flickr by Jacopo Werther via Bot Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Foster Botanical Garden, Honolulu Category:Photographs by Daniel Ramirez Category:Taken with Nikon D3000",
+     "judged": "reject",
+     "verdict": "quipo tree, not a baobab"
     },
     {
      "title": "File:Silk Cotton Tree (4719376435).jpg",
@@ -60844,7 +60872,9 @@
      "author": "Daniel Ramirez from Honolulu, USA",
      "lat": 21.316492,
      "lng": -157.857956,
-     "cats": "Category:CC-BY-2.0 Category:Files uploaded from Flickr by Jacopo Werther via Bot Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Flora in Honolulu Category:Photographs by Daniel Ramirez Category:Taken with Nikon D3000"
+     "cats": "Category:CC-BY-2.0 Category:Files uploaded from Flickr by Jacopo Werther via Bot Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Flora in Honolulu Category:Photographs by Daniel Ramirez Category:Taken with Nikon D3000",
+     "judged": "reject",
+     "verdict": "silk cotton tree, not the bodhi tree"
     },
     {
      "title": "File:Silk Cotton Tree pod (4720023506).jpg",
@@ -70866,7 +70896,9 @@
      "author": "EmDee",
      "lat": null,
      "lng": null,
-     "cats": "Category:2017 photographs Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Saint Gertrude church in Leuven Category:Self-published work"
+     "cats": "Category:2017 photographs Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Saint Gertrude church in Leuven Category:Self-published work",
+     "judged": "reject",
+     "verdict": "church apse, no mulberry"
     },
     {
      "title": "File:België - Leuven - Sint-Geertrui - 03.JPG",
@@ -70876,7 +70908,9 @@
      "author": "EmDee",
      "lat": null,
      "lng": null,
-     "cats": "Category:2015 photographs Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Saint Gertrude church in Leuven Category:Self-published work"
+     "cats": "Category:2015 photographs Category:CC-BY-SA-4.0,3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Saint Gertrude church in Leuven Category:Self-published work",
+     "judged": "reject",
+     "verdict": "church tower"
     },
     {
      "title": "File:België - Leuven - Sint-Geertrui - 04.JPG",
@@ -88851,7 +88885,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0 Category:Eucalyptus robusta Category:Files with coordinates missing SDC location of creation Category:Flora of Campania in May Category:Self-published work",
-     "source": "wikidata/Q55741293"
+     "source": "wikidata/Q55741293",
+     "judged": "approve",
+     "verdict": "river red gum against the Villa Comunale fence, whole tree in leaf; Wikidata image of the register tree, 2 m"
     }
    ]
   },
@@ -102297,7 +102333,9 @@
      "author": "OSeveno",
      "lat": null,
      "lng": null,
-     "cats": "Category:2015 in The Hague Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2015-10-02 Category:Paleistuin, the Hague Category:Self-published work"
+     "cats": "Category:2015 in The Hague Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2015-10-02 Category:Paleistuin, the Hague Category:Self-published work",
+     "judged": "reject",
+     "verdict": "garden scene, several trees, no bald cypress as subject"
     },
     {
      "title": "File:Paleistuin, The Hague (2015) imgnr. 026.jpg",
@@ -102307,7 +102345,9 @@
      "author": "OSeveno",
      "lat": null,
      "lng": null,
-     "cats": "Category:2015 in The Hague Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2015-10-02 Category:Paleistuin, the Hague Category:Self-published work"
+     "cats": "Category:2015 in The Hague Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2015-10-02 Category:Paleistuin, the Hague Category:Self-published work",
+     "judged": "reject",
+     "verdict": "street and gate scene"
     },
     {
      "title": "File:Paleistuin, The Hague (2015) imgnr. 031.jpg",
@@ -102317,7 +102357,9 @@
      "author": "OSeveno",
      "lat": null,
      "lng": null,
-     "cats": "Category:2015 in The Hague Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2015-10-02 Category:Paleistuin, the Hague Category:Self-published work"
+     "cats": "Category:2015 in The Hague Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2015-10-02 Category:Paleistuin, the Hague Category:Self-published work",
+     "judged": "reject",
+     "verdict": "garden urn"
     }
    ]
   },
@@ -107812,7 +107854,9 @@
      "author": "Assianir",
      "lat": 43.786,
      "lng": 11.21,
-     "cats": "Category:Acer campestre (leaves) Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Canon EOS 6D"
+     "cats": "Category:Acer campestre (leaves) Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Taken with Canon EOS 6D",
+     "judged": "reject",
+     "verdict": "field maple branch, wrong species"
     },
     {
      "title": "File:Acero campestreIMG 3378 02.JPG",
@@ -108069,7 +108113,9 @@
      "author": "Alberto Panzani",
      "lat": 45.515147,
      "lng": 9.166122,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Villa Litta series is the mil_024 pair (approved there); geotag 209 m from this tree's pin"
     },
     {
      "title": "File:Platano comune a03.jpg",
@@ -108079,7 +108125,9 @@
      "author": "Alberto Panzani",
      "lat": 45.515147,
      "lng": 9.166122,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-30 Category:Platanus - Platano comune (Milano, Villa Litta) Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Villa Litta series is the mil_024 pair (approved there); geotag 209 m from this tree's pin"
     }
    ]
   },
@@ -111863,7 +111911,9 @@
      "licence": "CC BY",
      "author": "(c) Bobo-X, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "52.2179304,21.0283242"
+     "obs_location": "52.2179304,21.0283242",
+     "judged": "reject",
+     "verdict": "broad-crowned oak with benches, not the columnar pair at the observatory entrance"
     }
    ]
   },
@@ -112333,7 +112383,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-SA-3.0-PL Category:Images by User:Panek/Nature Category:Images by User:Panek/Ochota Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Monumental elm in Zasław Malicki Park Category:Poland photographs taken on 2015-05-13 Category:Self-published work Category:Taken with Fujifilm FinePix HS50EXR Category:Template Unknown (unspecified) Category:Uploaded via Campaign:wle-pl-nm",
-     "source": "wikidata/Q131328990"
+     "source": "wikidata/Q131328990",
+     "judged": "reject",
+     "verdict": "right elm (Wikidata image) but the trunk is hidden behind foreground trees; crown alone"
     },
     {
      "title": "File:Narodowe Towarzystwo Chowu Koni Wyścigowych copy.jpg",
@@ -125916,7 +125968,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51266494,
      "lng": 13.40891347,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Samthaarige Stinkesche auf Höhe der Australischen Botschaft Fischerinsel 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Samthaarige Stinkesche auf Höhe der Australischen Botschaft Fischerinsel 5 Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "approve",
+     "verdict": "multi-stem Korean evodia, smooth grey stems and pinnate leaves, Naturdenkmal sign at base; geotag 19 m"
     },
     {
      "title": "File:Naturdenkmal Samthaarige Stinkesche auf Höhe der Australischen Botschaft Fischerinsel 5 2024-05-19 09.jpg",
@@ -125926,7 +125980,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.51269781,
      "lng": 13.40893273,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Samthaarige Stinkesche auf Höhe der Australischen Botschaft Fischerinsel 5 Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Samthaarige Stinkesche auf Höhe der Australischen Botschaft Fischerinsel 5 Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "near-duplicate of the approved frame"
     },
     {
      "title": "File:Naturdenkmal Samthaarige Stinkesche auf Höhe der Australischen Botschaft Fischerinsel 5 2024-05-19 10.jpg",
@@ -126325,7 +126381,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.48883881,
      "lng": 13.38237654,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Weisse Maulbeere Viktoriapark Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Weisse Maulbeere Viktoriapark Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "same series as the rejected 03: trunk tangled into neighbouring crowns, mulberry crown unreadable"
     },
     {
      "title": "File:Naturdenkmal Weisse Maulbeere Viktoriapark Kreuzberg Berlin-Kreuzberg 2024-05-05 07.jpg",
@@ -126335,7 +126393,9 @@
      "author": "Leonhard Lenz",
      "lat": 52.48883309,
      "lng": 13.38238136,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Weisse Maulbeere Viktoriapark Category:Photographs by Leonhard Lenz Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Weisse Maulbeere Viktoriapark Category:Photographs by Leonhard Lenz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "same series as the rejected 03: trunk tangled into neighbouring crowns, mulberry crown unreadable"
     },
     {
      "title": "File:Panorama Viktoriapark Berlin.jpg",
@@ -127990,7 +128050,9 @@
      "licence": "CC BY",
      "author": "(c) aberkov, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.7258805556,-73.9828027778"
+     "obs_location": "40.7258805556,-73.9828027778",
+     "judged": "reject",
+     "verdict": "leaf and samara close-up"
     },
     {
      "title": "iNat obs 190126315 (Ulmus americana)",
@@ -127999,7 +128061,9 @@
      "licence": "CC BY",
      "author": "(c) Sinéad Tuttle-Lerner, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "40.7263161747,-73.9828506445"
+     "obs_location": "40.7263161747,-73.9828506445",
+     "judged": "hold",
+     "verdict": "two elms behind the Tompkins Square fence, 76 m from pin; cannot tell which, if either, is the Hare Krishna elm"
     },
     {
      "title": "iNat obs 220174370 (Ulmus americana)",
@@ -128329,7 +128393,9 @@
      "author": "Herzi Pinki",
      "lat": 48.186852,
      "lng": 16.368033,
-     "cats": "Category:Alois-Drasche-Park Category:Built in Vienna in 1898 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Herzi Pinki Category:Residential buildings in Vienna Category:Rudolf Kmunke Category:Self-published work Category:Supported by Wikimedia Österreich in 2021"
+     "cats": "Category:Alois-Drasche-Park Category:Built in Vienna in 1898 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Images by Herzi Pinki Category:Residential buildings in Vienna Category:Rudolf Kmunke Category:Self-published work Category:Supported by Wikimedia Österreich in 2021",
+     "judged": "reject",
+     "verdict": "building facade"
     },
     {
      "title": "File:Grass, Alois-Drasche-Park, Vienna.jpg",
@@ -128349,7 +128415,9 @@
      "author": "Gugerell",
      "lat": 48.186531,
      "lng": 16.367564,
-     "cats": "Category:Alois-Drasche-Park Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Taken with Panasonic Lumix DMC-LX7"
+     "cats": "Category:Alois-Drasche-Park Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Taken with Panasonic Lumix DMC-LX7",
+     "judged": "hold",
+     "verdict": "bare central tree on the park lawn; beech not confirmed (trunk looks furrowed) and it is a park scene"
     },
     {
      "title": "File:Wien 04 Alois-Drasche-Park b.jpg",
@@ -128395,7 +128463,9 @@
      "author": "Gugerell",
      "lat": 48.186209,
      "lng": 16.368819,
-     "cats": "Category:Alois-Drasche-Park Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Taken with Panasonic Lumix DMC-LX7"
+     "cats": "Category:Alois-Drasche-Park Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Taken with Panasonic Lumix DMC-LX7",
+     "judged": "reject",
+     "verdict": "park name sign, no tree"
     },
     {
      "title": "File:Wiener Naturdenkmal 842 - Rotbuche, Wieden 01.jpg",
@@ -128950,7 +129020,9 @@
      "author": "Todd Dwyer",
      "lat": 30.263728,
      "lng": -97.771314,
-     "cats": "Category:CC-BY-SA-2.0 Category:Carya illinoinensis Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2"
+     "cats": "Category:CC-BY-SA-2.0 Category:Carya illinoinensis Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2",
+     "judged": "hold",
+     "verdict": "fine backlit pecan at Barton Springs, but Zilker has many pecans and nothing ties this one to the Mother Pecan"
     },
     {
      "title": "File:Pecan tree canopy zilker.jpg",
@@ -128960,7 +129032,9 @@
      "author": "Larry D. Moore",
      "lat": 30.2639,
      "lng": -97.7715,
-     "cats": "Category:CC-BY-4.0 Category:Carya illinoinensis Category:Files by User:Nv8200p Category:July 2013 in Texas Category:Self-published work Category:Taken with Canon EOS 550D and Canon EF-S 17-85mm F4-5.6 IS USM Category:Tree canopies Category:Trees in Texas Category:United States photographs taken on 2013-07-14 Category:Zilker Park"
+     "cats": "Category:CC-BY-4.0 Category:Carya illinoinensis Category:Files by User:Nv8200p Category:July 2013 in Texas Category:Self-published work Category:Taken with Canon EOS 550D and Canon EF-S 17-85mm F4-5.6 IS USM Category:Tree canopies Category:Trees in Texas Category:United States photographs taken on 2013-07-14 Category:Zilker Park",
+     "judged": "reject",
+     "verdict": "canopy seen from below, no trunk"
     }
    ]
   },
@@ -129340,7 +129414,9 @@
      "licence": "CC BY-SA",
      "author": "(c) Mike B, some rights reserved (CC BY-SA)",
      "source": "inaturalist",
-     "obs_location": "41.8963283333,-87.8302633333"
+     "obs_location": "41.8963283333,-87.8302633333",
+     "judged": "reject",
+     "verdict": "leaf in hand, and the observation is shagbark hickory"
     }
    ]
   },
@@ -129522,7 +129598,9 @@
      "licence": "CC BY",
      "author": "(c) Rick_Larimore, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "32.7769166667,-96.8005616667"
+     "obs_location": "32.7769166667,-96.8005616667",
+     "judged": "reject",
+     "verdict": "pavement street oak, observation is Shumard oak, not the cemetery grove"
     },
     {
      "title": "iNat obs 39754095 (Quercus stellata)",
@@ -129531,7 +129609,9 @@
      "licence": "CC BY",
      "author": "(c) Sam Kieschnick, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "32.7753734526,-96.8001264994"
+     "obs_location": "32.7753734526,-96.8001264994",
+     "judged": "reject",
+     "verdict": "bark and catkin close-up"
     },
     {
      "title": "iNat obs 39754095 (Quercus stellata)",
@@ -129540,7 +129620,9 @@
      "licence": "CC BY",
      "author": "(c) Sam Kieschnick, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "32.7753734526,-96.8001264994"
+     "obs_location": "32.7753734526,-96.8001264994",
+     "judged": "approve",
+     "verdict": "post oak among the headstones with the convention centre behind, crown and trunk readable; obs ID Q. stellata, grove page"
     }
    ]
   },
@@ -132483,7 +132565,9 @@
      "lat": 34.043374,
      "lng": -118.192516,
      "cats": "Category:Araucaria bidwillii (cultivated) Category:CC-BY-2.0 Category:Famous trees in the United States Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Taken with Canon EOS 50D",
-     "source": "wikidata/Q5351846"
+     "source": "wikidata/Q5351846",
+     "judged": "approve",
+     "verdict": "bunya pine dome over the Folsom St lot fence, fills frame, clear daylight; Wikidata image of El Pino, 5 m"
     },
     {
      "title": "File:Bunya, cultivated, Los Angeles.jpg",
@@ -132804,7 +132888,9 @@
      "author": "edenpictures",
      "lat": 29.921981,
      "lng": -90.1301,
-     "cats": "Category:2023 in Audubon Zoo Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Eden, Janine and Jim in New Orleans Category:Quercus virginiana in New Orleans Category:Trees in Audubon Park, New Orleans"
+     "cats": "Category:2023 in Audubon Zoo Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Photographs by Eden, Janine and Jim in New Orleans Category:Quercus virginiana in New Orleans Category:Trees in Audubon Park, New Orleans",
+     "judged": "hold",
+     "verdict": "big live oak inside Audubon Zoo, 190 m from our approximate pin; the zoo has many, rhino habitat not seen"
     },
     {
      "title": "File:Tree of Life - Audubon Park, New Orleans January 2026.jpg",
@@ -132814,7 +132900,9 @@
      "author": "ksjantz",
      "lat": 29.921241,
      "lng": -90.129421,
-     "cats": "Category:2026 in Audubon Park, New Orleans Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:January 2026 in New Orleans Category:Trees in Audubon Park, New Orleans"
+     "cats": "Category:2026 in Audubon Park, New Orleans Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images missing SDC published in Category:Flickr images reviewed by FlickreviewR 2 Category:January 2026 in New Orleans Category:Trees in Audubon Park, New Orleans",
+     "judged": "reject",
+     "verdict": "Tree of Life in Audubon Park, a different tree (published as the Etienne de Bore Oak)"
     },
     {
      "title": "File:Tree of life 2021.jpg",
@@ -132824,7 +132912,9 @@
      "author": "MallardTV",
      "lat": 29.9208,
      "lng": -90.129411,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Trees"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Self-published work Category:Trees",
+     "judged": "reject",
+     "verdict": "Tree of Life in Audubon Park, a different tree (published as the Etienne de Bore Oak)"
     },
     {
      "title": "File:Vista de Seattle, Washington, Estados Unidos, 2017-09-02, DD 07-08 HDR.jpg",
@@ -133144,7 +133234,9 @@
      "author": "brx0",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Parks in Portland, Oregon Category:Taken with Canon PowerShot A520"
+     "cats": "Category:CC-BY-SA-2.0 Category:Flickr images reviewed by FlickreviewR Category:Parks in Portland, Oregon Category:Taken with Canon PowerShot A520",
+     "judged": "approve",
+     "verdict": "Oregon white oak on the mound at SW Corbett and SW Lane (street sign legible), crown and trunk fill frame, sunny; pole in front"
     }
    ]
   },
@@ -133585,7 +133677,9 @@
      "author": "Joe Mabel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-migrated Category:GFDL Category:Hiawatha Playfield Category:License migration completed Category:Quercus rubra (cultivated) Category:Self-published work Category:Taken with Nikon Coolpix P50"
+     "cats": "Category:CC-BY-SA-3.0-migrated Category:GFDL Category:Hiawatha Playfield Category:License migration completed Category:Quercus rubra (cultivated) Category:Self-published work Category:Taken with Nikon Coolpix P50",
+     "judged": "approve",
+     "verdict": "low-forking red oak with heritage plaque at base, playfield behind, ridged bark and pointed lobes"
     }
    ]
   },
@@ -133663,7 +133757,9 @@
      "author": "Joe Mabel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:National Register of Historic Places with known IDs Category:Parks in Seattle Category:Roanoke Park Historic District Category:Self-published work Category:Taken with Nikon D5000 Category:Ulmus laevis (cultivated)"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:National Register of Historic Places with known IDs Category:Parks in Seattle Category:Roanoke Park Historic District Category:Self-published work Category:Taken with Nikon D5000 Category:Ulmus laevis (cultivated)",
+     "judged": "reject",
+     "verdict": "same tree as the approved landscape frame, portrait with lawn foreground"
     },
     {
      "title": "File:Seattle - Roanoke Park Ulmis laevis 02.jpg",
@@ -133673,7 +133769,9 @@
      "author": "Joe Mabel",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:National Register of Historic Places with known IDs Category:Parks in Seattle Category:Roanoke Park Historic District Category:Self-published work Category:Taken with Nikon D5000 Category:Ulmus laevis (cultivated)"
+     "cats": "Category:CC-BY-SA-3.0 Category:GFDL Category:License migration redundant Category:National Register of Historic Places with known IDs Category:Parks in Seattle Category:Roanoke Park Historic District Category:Self-published work Category:Taken with Nikon D5000 Category:Ulmus laevis (cultivated)",
+     "judged": "approve",
+     "verdict": "whole European white elm dome in Roanoke Park, sunny, small serrate leaves; filename names species and park"
     },
     {
      "title": "File:Seattle - Roanoke Park Ulmis laevis 03.jpg",
@@ -134122,7 +134220,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:2011 in Stockholm Category:Alfred Nyström Category:Bellmanseken Category:CC-BY-SA-3.0 Category:Carl Michael Bellman Category:Cirkus, Stockholm Category:Hasselbacken Category:November 2011 Sweden photographs Category:Photographs by Holger Ellgaard Category:Self-published work Category:Statues in Djurgården Category:Statues of poets Category:Statues of sitting men Category:Taken with Nikon Coolpix S51",
-     "source": "wikidata/Q10427897"
+     "source": "wikidata/Q10427897",
+     "judged": "approve",
+     "verdict": "Bellmanseken beside the Bellman statue at Hasselbacken, broken crown as the story says; Wikidata image, 0 m"
     },
     {
      "title": "File:Bellmanseken 1889.jpg",
@@ -134269,7 +134369,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:CC-BY-3.0 Category:Hongō-yumimachi no Kusu Category:Self-published work",
-     "source": "wikidata/Q11520877"
+     "source": "wikidata/Q11520877",
+     "judged": "approve",
+     "verdict": "huge camphor with shimenawa between Hongo apartment blocks, crown and trunk; Wikidata image of the tree, 0 m"
     },
     {
      "title": "File:Tokyo Sky Tree - panoramio.jpg",
@@ -135119,7 +135221,9 @@
      "author": "WeeJeeVee",
      "lat": 52.088211,
      "lng": 5.122392,
-     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Information boards about trees in the Netherlands Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Platanus orientalis in the Netherlands Category:Self-published work"
+     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Information boards about trees in the Netherlands Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Platanus orientalis in the Netherlands Category:Self-published work",
+     "judged": "reject",
+     "verdict": "trunk portrait of the right tree, crown cut off; the whole-tree frame 02 is used"
     },
     {
      "title": "File:Platanus orientalis, Abraham Dolehof Utrecht 02.jpg",
@@ -135129,7 +135233,9 @@
      "author": "WeeJeeVee",
      "lat": 52.088211,
      "lng": 5.122392,
-     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Platanus orientalis in the Netherlands Category:Self-published work"
+     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Platanus orientalis in the Netherlands Category:Self-published work",
+     "judged": "approve",
+     "verdict": "whole Oriental plane in the Dolehof, burred trunk and bare crown readable; geotag 1 m, plaque on the wall in the series; overcast"
     },
     {
      "title": "File:Platanus orientalis, Abraham Dolehof Utrecht 03.jpg",
@@ -135139,7 +135245,9 @@
      "author": "WeeJeeVee",
      "lat": 52.088211,
      "lng": 5.122392,
-     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Self-published work"
+     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Self-published work",
+     "judged": "reject",
+     "verdict": "trunk close view, crown not in frame"
     },
     {
      "title": "File:Platanus orientalis, Abraham Dolehof Utrecht 04.jpg",
@@ -135295,7 +135403,9 @@
      "author": "WeeJeeVee",
      "lat": 52.088211,
      "lng": 5.122392,
-     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Platanus orientalis in the Netherlands Category:Self-published work"
+     "cats": "Category:April 2024 in Utrecht (city) Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-04-05 Category:Platanus orientalis, Abraham Dolehof, Utrecht Category:Platanus orientalis in the Netherlands Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Abraham Dolehof series: shows the Dolehof oriental plane, not the Hamburgerstraat pair"
     },
     {
      "title": "File:Platanus orientalis, Abraham Dolehof Utrecht 05.jpg",
@@ -136571,7 +136681,9 @@
      "lat": null,
      "lng": null,
      "cats": "Category:2020 in Montgomery County, Maryland Category:CC-BY-SA-4.0 Category:Nature of Montgomery County, Maryland Category:Quercus alba Category:Self-published work Category:Travilah, Maryland Category:Trees in Maryland",
-     "source": "wikidata/Q7836190"
+     "source": "wikidata/Q7836190",
+     "judged": "approve",
+     "verdict": "wide bare white oak inside its fence on the lawn, crown and trunk; Wikidata image of Travilah Oak, 10 m"
     }
    ]
   },

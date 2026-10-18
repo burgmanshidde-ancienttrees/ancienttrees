@@ -784,10 +784,14 @@
       "access": "Free, public park, beside the Reservoir's public running/bridle path",
       "transport": "6 train to 96th Street, about 10 minute walk west into the park to the Reservoir's Bridle Path",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/94351384/medium.jpg",
+        "license": "CC0",
+        "attribution": "no rights reserved, via iNaturalist",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-18",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "notes": "NYC Parks 'Great Trees of NYC' register (id=43): multi-trunked London plane, Bridle Path near the East 96th Street entrance, northeast corner of the Reservoir, 95.94 ft tall, trunk diameter over 5 ft owing to multiple trunks. Untapped Cities independently corroborates the same tree and measurements, citing nature writer Dennis Burton's claim it was 'possibly planted when the Reservoir was dug' in 1862. A 2026-05-18 Ephemeral New York piece independently repeats the same 1862 dating and measurements, while noting a competing claim that nyc_002 (Black Tupelo of the Ramble) may date to 1858 instead, a dispute between two OTHER trees, not evidence against this one. AGE: 'possibly planted' 1862 is explicitly one writer's guess, not a documented planting record, hence 'not documented' in the chip and flagged status. COORDINATES: same nycgovparks.org access problem as nyc_018; estimate built from the Reservoir's published Wikipedia centroid projected to its northeast corner per the register's own 'near East 96th Street, east side' description, cross-checked against a Nominatim anchor landing within about 60m. Marked approximate. DISTANCE: about 170m from nyc_018, 670m from nyc_020, part of the same second walk.",
@@ -913,10 +917,13 @@
       "access": "Free; public park, open daily.",
       "transport": "Nearest subway: L at 1st Ave or 6 at Astor Place, about 10 to 12 min walk; M14A/D bus on Avenue A.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/333273128/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Sinéad Tuttle-Lerner, via iNaturalist",
+        "status": "held",
+        "note": "two elms behind the Tompkins Square fence, 76 m from pin; cannot tell which, if either, is the Hare Krishna elm",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "location_precision": "approximate",
