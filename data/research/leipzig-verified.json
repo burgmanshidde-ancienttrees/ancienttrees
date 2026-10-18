@@ -524,5 +524,232 @@
   "verify_notes": "Naturdenkmal tree on the Dorfanger Probstheida (cadastre area 'Gruen- und Parkanlagen', 'Dorfanger Probstheida (Kirche)'). City cadastre record N78812: Quercus robur, girth 374 cm, trunk diameter 119 cm, height 19 m, crown 20 m, gefaellt_am empty in the export of 2026-10-14. Wikidata Q109644239 'Quercus robur, Russenstrasse Leipzig' carries the same position. Cadastre planting year 1886 is a class estimate, not a planting record: age not documented. The wider Dorfanger is also described by BUND Leipzig (campaign for traffic calming, 2024) as a protected Naturdenkmal village green, one of few historic ones left in the city. Alive: lifecheck NONE; only the cadastre listing it unfelled today, hence flagged 'register only'. Pin is the cadastre tree point, approximate; the green is too large to count as a small named site, so no location_site is set. Photo in reach: Wikidata P18 is Commons 'Leipzig Stieleiche Russenstrasse.jpg'; photo pass must check it shows this oak and the licence.",
   "story": "This oak is wider than it is tall. Leipzig's tree cadastre gives it a crown 20 metres across on a height of 19, the shape an oak takes when nothing crowds it.\n\nNothing does, because it stands on a village green. The Dorfanger of Probstheida is the open heart of what was a village before it became a Leipzig district, beside the Immanuelkirche on Russenstrasse. The local branch of the conservation group BUND describes the green as a protected natural monument and one of the few historic village greens left in the city, and in 2024 it campaigned to calm the traffic around it.\n\nThe trunk is 3.74 metres round and 1.19 metres through, by the city's own measurement. That is a serious oak, but a measurement is not a date. The cadastre files a planting year of 1886, and that figure is an estimate for a whole age class rather than a record of this tree, so we leave it out.\n\nProbstheida was fought over on 18 October 1813, the decisive day of the Battle of Leipzig. Whether this oak was already on the green that day, nobody has written down.\n\nThe city still lists it as standing in October 2026, and that is the latest word: nobody has posted a photograph of it lately. If you are on Russenstrasse, tell us how it looks, and if you know when it was planted, tell us that too.",
   "how_to_recognise": "You can recognise it by its crown, about 20 metres across and wider than the tree is tall, on a trunk 3.74 metres round. It stands on the Probstheida village green beside the Immanuelkirche on Russenstrasse."
+ },
+ {
+  "id": "lpz_024",
+  "name": "The Japanese Pagoda Tree of Flossplatz",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "about 150 years",
+  "age_basis": "derived",
+  "age_min": 120,
+  "age_max": 200,
+  "girth_cm": 355,
+  "height_m": 25,
+  "location": {
+   "address": "Flossplatz, corner of Riemannstrasse, 04107 Leipzig",
+   "latitude": 51.33135,
+   "longitude": 12.37168,
+   "neighbourhood": "Zentrum-Sued"
+  },
+  "verified_sources": [
+   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34789416&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+   "https://www.baumkunde.de/baumregister/8614-schnurbaum_zentrum_sued_leipzig/",
+   "https://commons.wikimedia.org/wiki/File:Jap._Schnurbaum_Lzg._Flo%C3%9Fpl.jpg"
+  ],
+  "official_register": {
+   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 100, tree N78220",
+   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34789416&outputFormat=application/json"
+  },
+  "access": "Free, on the public city square Flossplatz (cadastre area 'Gruen- und Parkanlagen'); baumkunde.de lists it as publicly accessible. No opening hours.",
+  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file": "File:Jap. Schnurbaum Lzg. Floßpl.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Jap._Schnurbaum_Lzg._Flo%C3%9Fpl.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Geisler Martin",
+   "taken": "2014-08-11",
+   "note": "Caption 'Japanischer Schnurbaum am Flossplatz Ecke Riemannstrasse', named for this tree, no geotag; seen via API metadata only, pixels not viewed"
+  },
+  "verify_notes": "Naturdenkmal ND 100 'Japanischer Schnurbaum am Flossplatz' (Sophora japonica L.), designated by city council resolution 1036/97 (de.wikipedia list; Leipzig Stadtrecht Satzung 8.8.4 lists it). Not among the list's dead or repealed trees. City cadastre N78220 (export 2026-10-16, record updated 2026-10-16, gefaellt_am empty): girth 355 cm, trunk diameter 113 cm, height 25 m, crown 20 m. List gives 23 m. baumkunde.de register 8614 (observer treetrip, measured 23.03.2022): girth 3.52 m, height 25 m, 'Baumveteran', vital, old callused wounds, several crown supports installed; 'possibly planted around 1873', age 150 (observer estimate, not a record). Cadastre planting year 1866 is a class estimate. Age therefore derived and broad, from register estimates only; no planting document. Pin: cadastre tree point 51.33135,12.37168 and the observer GPS (baumkunde, 51.33138,12.37170) agree within 4 m on a single large tree on a small square, so confirmed. OSM node 'ND100 Japanischer Schnurbaum' sits on the identical coordinate but was evidently imported from the list, so it is not counted as independent. Alive: cadastre unfelled in 2026, baumkunde observation 2022 vital; lifecheck hit was only a panorama of the square (2025), not this tree.",
+  "recognise_facts": "Single tall pagoda tree with propped crown on the Flossplatz at the Riemannstrasse corner; trunk 3.5 m round."
+ },
+ {
+  "id": "lpz_025",
+  "name": "The Oak of Kantatenweg",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "about 200 years",
+  "age_basis": "derived",
+  "age_min": 200,
+  "age_max": 300,
+  "girth_cm": 545,
+  "height_m": 19,
+  "location": {
+   "address": "Kantatenweg 5, 04229 Leipzig (Kleinzschocher)",
+   "latitude": 51.316171,
+   "longitude": 12.330764,
+   "neighbourhood": "Kleinzschocher"
+  },
+  "verified_sources": [
+   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34702517&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+   "https://commons.wikimedia.org/wiki/File:Eiche_Lzg._Kantatenweg_5.JPG",
+   "https://www.openstreetmap.org/node/5607986199"
+  ],
+  "official_register": {
+   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 158, tree N78916",
+   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34702517&outputFormat=application/json"
+  },
+  "access": "Cadastre area 'Staedtische Liegenschaften' (city property), Kantatenweg 039. Whether the oak can be walked up to from the street is not stated by any source; it stands about 220 m from the Kleinzschocher manor ginkgo. OSM has it as a natural=tree 'Baumdenkmal' node. Visit from Kantatenweg.",
+  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file": "File:Eiche Lzg. Kantatenweg 5.JPG",
+   "url": "https://commons.wikimedia.org/wiki/File:Eiche_Lzg._Kantatenweg_5.JPG",
+   "license": "CC BY-SA 4.0",
+   "author": "Martin Geisler",
+   "taken": "2018-05-03",
+   "note": "Caption 'Stieleiche am Kantatenweg 5 in Leipzig', no geotag; pixels not viewed"
+  },
+  "verify_notes": "Naturdenkmal ND 158 'Stieleiche Kantatenweg 5', designated by council resolution 1522/99; the de.wikipedia list gives 23 m and coordinate 51.316171,12.330764. Not on the list of dead or repealed trees. City cadastre N78916 (record updated 2026-10-16, gefaellt_am empty): girth 545 cm, trunk diameter 174 cm, height 19 m, crown 24 m; cadastre planting year 1816 is a class estimate only, so age is derived and broad (a girth of 5.4 m on an oak suggests it may be older than the estimate, no source says). Height conflict: list 23 m, cadastre 19 m. Pin: list coordinate, cadastre point (51.316183,12.330927, about 11 m east) and an OSM natural=tree node named 'Baumdenkmal' (51.3161745,12.3308213, 3 m from the list point) agree on one clear crown; confirmed. Cluster: 220 m from the Kleinzschocher ginkgo already live (lpz_021) and ND 17 elm; Volkspark Kleinzschocher is next door. Alive: cadastre unfelled in 2026; lifecheck NONE, so flagged.",
+  "recognise_facts": "Oak 5.4 m round beside Kantatenweg, a few minutes' walk from the Kleinzschocher manor ginkgo."
+ },
+ {
+  "id": "lpz_026",
+  "name": "The Starkeiche of Rosental",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "350 to 600 years, disputed",
+  "age_basis": "source",
+  "age_min": 350,
+  "age_max": 600,
+  "girth_cm": 669,
+  "height_m": 27,
+  "location": {
+   "address": "Rosental floodplain forest, path 'Zum Wackelturm', 04105 Leipzig",
+   "latitude": 51.355873,
+   "longitude": 12.349381,
+   "neighbourhood": "Zentrum-Nordwest"
+  },
+  "verified_sources": [
+   "https://www.monumentale-eichen.de/sachsen/2-kategorie/leipzig/",
+   "https://www.baumkunde.de/baumregister/5221-starke_eiche_im_auwald_in_leipzig/",
+   "https://www.openstreetmap.org/search?query=Starkeiche%20im%20Rosental"
+  ],
+  "access": "Free, public Rosental park and floodplain forest (baumkunde.de: publicly accessible). Stands in dense woodland just off the path 'Zum Wackelturm', hard to see in summer leaf. An information board in OSM names it 'Die Starkeiche im Rosental - Leipzigs aeltester Baum'.",
+  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Widely called Leipzig's oldest and stoutest tree. Two independent surveys. (1) Rainer Lippert, monumentale-eichen.de, measured 2017, page updated 22 June 2017: girth at breast height 6.65 m, at ground 9.50 m, 7.20 m at 1 m, 5.96 m at 2.5 m, height about 27 m, crown about 20 m; trunk runs unbranched for over 10 m; one side has a 1 m wide opening rising over 5 m, inside fully hollow and soot-blackened; age 'about 350 years', he notes that the 600 years in circulation seems far too high; vitality 'still ok' (2017); some dead branches in the crown. (2) baumkunde.de register 5221, observers incl. treetrip, JoachimSt, HerrMoritz: girth 6.69 m measured 1 Dec 2021, height 27 m, age 350, lightning marks and fire traces, last visit 1 March 2024, last register update 20 Sept 2024, condition 'krank, kleine Krone, womoeglich zuruecksetzend' (sick, small crown, perhaps retrenching). Age conflict: 350 (surveys) vs 600 (press and Stadtforst circulation); the page should give the range. Not a Naturdenkmal and no city register record found, so no official_register. Pin: Lippert coordinate 51.355873,12.349381 and baumkunde GPS (51.355861,12.349389) agree within 2 m, and an OSM information board for the tree stands 4 m away (51.3558011,12.3493625); confirmed. Alive: seen March 2024 (baumkunde), but declining; flagged. No Commons photograph found (geosearch 200 m and name search empty); a reader or iNaturalist photo is needed. An adjacent Stadtforst poster (leipziger-auwald.de, Starkbaumkartierung) names other Rosental oaks of 6.50 m and 6.02 m girth: unnamed veterans nearby, lead for a pass with the poster in hand."
+ },
+ {
+  "id": "lpz_027",
+  "name": "The Steinlinde of Plausig",
+  "species": "Small-leaved Lime (Tilia cordata)",
+  "age_estimate": "about 160 years",
+  "age_basis": "derived",
+  "age_min": 150,
+  "age_max": 170,
+  "girth_cm": 390,
+  "height_m": 11,
+  "location": {
+   "address": "Plaussiger Dorfstrasse beside the parsonage, Grundstrasse 18, 04349 Leipzig",
+   "latitude": 51.392086,
+   "longitude": 12.455898,
+   "neighbourhood": "Plaussig"
+  },
+  "verified_sources": [
+   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34672107&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+   "https://commons.wikimedia.org/wiki/File:Plaussig_Steinlinde-01.jpg",
+   "https://www.wikidata.org/wiki/Q117712502"
+  ],
+  "official_register": {
+   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 145, tree N78908",
+   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34672107&outputFormat=application/json"
+  },
+  "access": "Cadastre area 'Staedtische Liegenschaften', Plaussiger Dorfstrasse; stands in the village street beside the parsonage. Free to see from the street; access to the plot not stated.",
+  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file": "File:Plaussig Steinlinde-01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Plaussig_Steinlinde-01.jpg",
+   "license": "CC BY-SA 4.0",
+   "author": "Radler59",
+   "taken": "2017-05-26",
+   "geotag": "51.392162,12.455674 (about 17 m from the cadastre point)",
+   "note": "Caption names the tree; pixels not viewed"
+  },
+  "verify_notes": "Naturdenkmal ND 145 'Steinlinde Plaussig', council resolution 1522/99, Wikidata Q117712502; not on the list of dead or repealed trees. Cadastre N78908 (record updated 2026-10-16, gefaellt_am empty): Tilia cordata, girth 390 cm, trunk diameter 124 cm, height 11 m (kept low, heavily topped), crown 8 m. Planting dates conflict: Commons caption by the photographer says 'gepflanzt 1868' (beside the parsonage); cadastre class estimate says 1861; no planting document seen, so both are weak. The local name 'Steinlinde' is the register's own and no source seen explains it. Pin: cadastre point and the photo geotag within 17 m on a village street, not on the trunk, so approximate. Alive: cadastre unfelled in 2026, photo 2017; lifecheck not run, flagged. I could not find a second text source for the tree beyond the register, Wikidata and the Commons caption (the search summary that mentioned a Wikipedia Plaussig article could not be confirmed on the fetched article, which does not mention the lime)."
+ },
+ {
+  "id": "lpz_028",
+  "name": "The Red Oak of Viertelsweg",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "about 140 years",
+  "age_basis": "derived",
+  "age_min": 120,
+  "age_max": 160,
+  "girth_cm": 331,
+  "height_m": 19,
+  "location": {
+   "address": "Viertelsweg at the corner of Heinrich-Budde-Strasse, 04157 Leipzig",
+   "latitude": 51.371303,
+   "longitude": 12.373622,
+   "neighbourhood": "Gohlis-Mitte"
+  },
+  "verified_sources": [
+   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34771140&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+   "https://commons.wikimedia.org/wiki/File:H_Buddensweg_63.JPG"
+  ],
+  "official_register": {
+   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 63, tree N78850",
+   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34771140&outputFormat=application/json"
+  },
+  "access": "Free, public city green at a street corner (cadastre area 'Gruen- und Parkanlagen', Viertelsweg/Heinrich-Budde-Strasse).",
+  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file": "File:H Buddensweg 63.JPG",
+   "url": "https://commons.wikimedia.org/wiki/File:H_Buddensweg_63.JPG",
+   "license": "CC BY-SA 3.0 de",
+   "author": "Edlerin",
+   "taken": "2015-06-15",
+   "note": "Caption 'Leipzig, Naturdenkmal, Roteiche, Viertelsweg/Heinrich-Buddestr'; no geotag; pixels not viewed"
+  },
+  "verify_notes": "Naturdenkmal ND 63 'Roteiche Viertelsweg/Ecke Heinrich-Budde-Strasse', council resolution 601/96; not on the list of dead or repealed trees. Cadastre N78850 (record updated 2026-10-16, gefaellt_am empty): girth 331 cm, trunk diameter 105 cm, height 19 m (list says 25 m), crown 14 m. Cadastre planting year 1886 is a class estimate, age derived and broad. A non-native species (North American) that is large for its kind. Pin: list and cadastre point agree (same place within metres); an OSM node 'ND63 Roteiche' sits on the identical list coordinate and was evidently imported from it, so approximate. Alive: cadastre unfelled in 2026; lifecheck NONE, so flagged, register only."
+ },
+ {
+  "id": "lpz_029",
+  "name": "The Oaks of Doelitz Torhaus",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "not documented",
+  "age_basis": "derived",
+  "girth_cm": 570,
+  "height_m": 25,
+  "location": {
+   "address": "Helenenstrasse by the Torhaus Doelitz, 04279 Leipzig",
+   "latitude": 51.28749,
+   "longitude": 12.38919,
+   "neighbourhood": "Doelitz-Doesen"
+  },
+  "verified_sources": [
+   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34678265&outputFormat=application/json",
+   "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34736314&outputFormat=application/json",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+   "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Helenenstr.jpg"
+  ],
+  "official_register": {
+   "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal ND 114, trees N78884 and N78872",
+   "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34678265&outputFormat=application/json"
+  },
+  "access": "The larger oak N78872 stands in city green (cadastre area 'Gruen- und Parkanlagen', Helenenstrasse/Torhaus) beside the Doelitz war memorial and the Torhaus (a museum, Helenenstrasse 24); the ND-designated oak is 36 m away. Whether the second oak is reachable from the public green is not stated; view from Helenenstrasse.",
+  "transport": "Nearest stop and walking time not verified (Leipzig tram/bus network)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "photo_candidate": {
+   "file": "File:Stieleiche Lzg. Helenenstr.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Stieleiche_Lzg._Helenenstr.jpg",
+   "license": "CC BY-SA 3.0",
+   "author": "Geisler Martin",
+   "taken": "2014-04-23",
+   "note": "Caption 'Stieleiche in der Naehe der Helenenstrasse in Leipzig'; no geotag; unsettled which of the two oaks it shows; pixels not viewed"
+  },
+  "verify_notes": "Folded pair of cadastre oaks 36 m apart. ND 114 'Stieleiche Helenenstrasse' (council resolution 1142/98, Flurstueck 115/4, protected radius 21 m, list coordinate 51.28749,12.38919, not on the dead list) matches cadastre N78884 (girth 550 cm, diameter 175 cm, height 23 m, crown 14 m, 51.287454,12.389199, 4 m from the list point). The second cadastre oak N78872 (girth 570 cm, diameter 182 cm, height 25 m, crown 19 m, 51.287766,12.38873) is the larger and stands in the green by the Torhaus; both have cadastre planting year 1816, a class estimate that cannot be right for both and is not recorded as an age. Earlier lead noted the war memorial register mentions a Friedenseiche planted 1872 plus two later oaks, so identity of the trunks is unsettled and a 5.7 m girth does not fit an 1872 planting. Which trunk is worth the visit: the larger N78872. Pin approximate (cadastre points; OSM node 'ND114 Stieleiche' sits on the identical list coordinate, imported). Alive: cadastre unfelled in 2026; the lifecheck RECENT hit (iNaturalist 2026-04-26) is a dandelion at the spot, not evidence for the oak, so flagged, register only."
  }
 ]
