@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 thirty-second attempt: nothing shipped
+Pulled; no claims; 60 READY leads and 28 written trees still held by the rich-or-reader rule (recovery mode); enrich empty; only backup is the Detroit retry (host unreachable earlier). Nothing dispatched.
+
 ## 2026-10-18 thirty-first attempt: nothing shipped
 Pulled; no claims; 60 READY leads and the 28 written trees still held by the rich-or-reader rule (recovery mode); enrich empty; scout target Detroit retry unchanged. Nothing dispatched.
 
