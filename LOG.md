@@ -22,6 +22,12 @@ The rich-or-reader rule is off since 10-18, so the ten trees earlier runs refuse
 
 Two things for a later session: the newer plaque on vie_055 (Türkisgasse) reads "Schwarzpappel, Populus nigra", which settles the register/cadastre conflict in the cadastre's favour. And Theodor-Körner-Park has a stone reading "Theodor Körner Eiche 1813 1913", so vie_045 may be a 1913 commemorative planting; check that before the page claims an age. photo_light.py could not run here (no PIL).
 
+**Photographs for the five new trees (photo-judge pass, recovery lane):** 18 open candidates for lon_029, lpz_021, lpz_022, lpz_023 and crd_004, all viewed, 2 approved, 0 held, 16 rejected. Approved, with reversal:
+- lon_029 Marble Hill Black Walnut: Jim Linwood's Flickr view (CC BY 2.0), named file in the Commons category for this tree; pinnate leaves, near-black ridged bark, the forked trunk with its hollow matches the CC BY-SA "Marble Hill Black Walnut" set. Undo: `python3 scripts/photo_apply.py hold lon_029 "https://commons.wikimedia.org/wiki/File:The_Black_Walnut_Tree_Of_Marble_Hill_Park,_London._(4621674542).jpg" --reason "reversed"`
+- lpz_023 Probstheida Village Green Oak: Leipzig Stieleiche Russenstrasse (CC BY-SA 4.0, Reise Reise), Commons category of the natural monument, geotag 30 m from the pin; broad crown wider than tall at April bud-burst. Undo: `python3 scripts/photo_apply.py hold lpz_023 "https://commons.wikimedia.org/wiki/File:Leipzig_Stieleiche_Russenstra%C3%9Fe.jpg" --reason "reversed"`
+
+No photograph yet: lpz_021 (Pixelkaktus's seven files are the sign, bark and leaf close-ups; the one whole-tree view has a blown white sky and a shrub over the trunk), lpz_022 (only candidate is the Schillerlinde 158 m away), crd_004 (a sculpture show garden). For a session: the lpz_021 sign at the tree reads 19 m and 260 cm girth, against the cadastre's 24 m and 357 cm on the page.
+
 ## 2026-10-18 night run (13:43 UTC): reader photographs, rung 1
 
 Visits last 7 days: 1980. Rung 1: two app photographs of lis_014 (Yew of Campo Santana, Lisbon) looked at and both rejected: they show a bleached dead trunk laid on a mound beside the pond, not a living yew. Open question for a session: that dead wood stands 5 to 25 m from our pin, so the yew may have died or been cut down. Check the garden (Jardim Braamcamp Freire) before the page keeps claiming a living 14 m yew; not retired, nothing could confirm it from here. Nothing else done in this window beyond that: shelf lanes untouched.
