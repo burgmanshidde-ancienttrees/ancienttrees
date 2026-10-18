@@ -4,7 +4,7 @@
   "status": "needs_curation",
   "intro": "Leipzig protects 148 trees as Naturdenkmale, Saxon state law's highest tier for an individual tree. Two restored villas on Karl-Heine-Strasse in Plagwitz hold a ginkgo, an elm, a bald cypress, a copper beech and a pagoda tree within 150 metres, with a fern-leaved beech and an oak a short walk east. Across the city stand a lime the painter Adolf von Menzel drew, an oak above the Pleissemuehlgraben, two Lindenau street oaks, Wahren's peace oak, a great plane, a Lebanon oak and number 1 on the city's list, a medlar-leaved oak on the ring.",
   "meta_description": "19 protected trees in Leipzig: villa-garden rarities in Plagwitz, the lime Menzel drew, a peace oak, a Lebanon oak and the city's Naturdenkmal number 1.",
-  "question_meta": "Leipzig's oldest dated tree is the Menzellinde, a lime of 200 to 300 years. Where it stands, and 18 more protected trees across the city.",
+  "question_meta": "Leipzig's oldest dated tree is the Menzellinde, a lime of 200 to 300 years. Where it stands, and 21 more protected trees across the city.",
   "question_answer": "The oldest tree in Leipzig with a published age is the Menzellinde in Schoenefeld, a small-leaved lime estimated at 200 to 300 years; the trunk is hollow, so it cannot be dated more closely. The painter Adolf von Menzel drew it on visits to the philosopher Moritz Lazarus's summer house. Most of Leipzig's other natural monuments carry no age at all, only the resolution that protected them: a bald cypress, a Japanese pagoda tree, a female ginkgo, a European white elm and a copper beech in two former villa gardens on Karl-Heine-Strasse in Plagwitz, and across the city a series of oaks, a plane on Leibnizstrasse and a Lebanon oak in Schoenau.",
   "question_context": "Saxony's nature protection law lets a municipality declare an individual tree a Naturdenkmal, its strongest legal protection, without requiring a documented age. Leipzig's own list gives each tree a designation number, a plot reference, the resolution that protects it and the protected zone around the trunk, which is often the only measure of size on record: 33 metres across for the oak on Dufourstrasse, 14 for the medlar-leaved oak on the Martin-Luther-Ring. The resolution year is a floor on how long each tree has stood, not a planting date. Only the Menzellinde has a published age and girth, 3.50 metres round. Every tree on this page rests on the city's list and photographs of it standing, and is flagged where that is all there is. Access varies by tree: most stand on the pavement or public ground, the elm and cypress grow in a villa garden now run as a public gallery, and four of the Plagwitz-area trees are seen from the street over villa walls.",
   "faq": [
@@ -776,6 +776,106 @@
         "name": "Naturdenkmale der Stadt Leipzig (Verordnung 601/96), no. ND 64",
         "url": null
       }
+    },
+    {
+      "id": "lpz_021",
+      "name": "The Ginkgo of Kleinzschocher",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 357,
+      "height_m": 24,
+      "location": {
+        "address": "Volkspark Kleinzschocher, Kantatenweg 31 (Rittergut Kleinzschocher), 04229 Leipzig",
+        "latitude": 51.314319,
+        "longitude": 12.329781,
+        "neighbourhood": "Kleinzschocher"
+      },
+      "verified_sources": [
+        "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34417507&outputFormat=application/json",
+        "https://www.baumkunde.de/baumregister/8482-ginkgo_im_volkspark_kleinzschocher_in_leipzig/",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+        "https://www.wikidata.org/wiki/Q117663121",
+        "https://de.wikipedia.org/wiki/Rittergut_Kleinzschocher",
+        "https://www.inaturalist.org/observations/395825130"
+      ],
+      "official_register": {
+        "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78815",
+        "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34417507&outputFormat=application/json"
+      },
+      "access": "Free, public park (Volkspark Kleinzschocher); baumkunde.de lists it as publicly accessible (visited 13.09.2026). No opening hours published.",
+      "transport": "Kleinzschocher, beside the Taborkirche; nearest stop and walking time not verified (Leipzig tram/bus network)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Three records give this ginkgo three heights: 15 metres, 20 and 24. Leipzig's list of natural monuments says 15. A survey by the tree site baumkunde.de, made on 30 June 2021, measured 20. The city's own tree cadastre says 24. The trunk is less contested, 3.44 metres round in that survey and 3.57 in the cadastre, which makes it a big ginkgo by either figure.\n\nIt grows on the old grounds of the Rittergut Kleinzschocher, a manor first mentioned in 1350 and now the Volkspark Kleinzschocher, beside the Taborkirche. Bach's Peasant Cantata had its first performance at this manor on 30 August 1742, and the publisher Christian Bernhard Tauchnitz bought the estate in 1848. None of those dates belongs to the tree. No source says when it was planted or by whom, and we will not borrow a date from the house.\n\nIt is a male tree, so it drops none of the rancid-smelling seeds that female ginkgos are known for. Two braces now hold its crown together. A naturalist logged it in August 2026 and the survey site visited again that September, so it is still standing.\n\nGinkgo is the last species of a lineage otherwise known from fossils. In November the fan-shaped leaves turn yellow and fall within days of each other. A second protected tree, a European white elm, stands about 45 metres away on the same grounds.\n\nNobody has dated this ginkgo. If you know when it went in, tell us.",
+      "how_to_recognise": "You can recognise it by the fan-shaped leaves and the two braces in its crown, on a trunk about 3.5 metres round. It stands on the old manor grounds in Volkspark Kleinzschocher, about 45 metres from the protected white elm.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the fan-shaped leaves turn yellow and fall within days of each other"
+      }
+    },
+    {
+      "id": "lpz_022",
+      "name": "The Elm of Poelitzstrasse",
+      "species": "European White Elm (Ulmus laevis)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 291,
+      "height_m": 19,
+      "location": {
+        "address": "Poelitzstrasse 32, 04155 Leipzig",
+        "latitude": 51.358188,
+        "longitude": 12.355995,
+        "neighbourhood": "Gohlis-Sued"
+      },
+      "verified_sources": [
+        "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34457488&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+        "https://www.wikidata.org/wiki/Q117663021"
+      ],
+      "official_register": {
+        "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78917",
+        "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34457488&outputFormat=application/json"
+      },
+      "access": "Free, street tree on the public pavement of Poelitzstrasse (cadastre area 'Strassengruen'). No opening hours apply.",
+      "transport": "Gohlis-Sued street tree; nearest stop and walking time not verified (Leipzig tram/bus network)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The records cannot agree on what this tree is. Leipzig's list of natural monuments, as transcribed on Wikipedia, calls it a field elm. The city's tree cadastre and Wikidata call it a European white elm. We have gone with the cadastre, the city's own record of its trees, but the question is open.\n\nEither way it is an elm that made the list as a street tree. It stands on the pavement of Poelitzstrasse in Gohlis-Sued, 2.91 metres round the trunk and 19 metres tall by the cadastre's figures, and it has been protected as natural monument number 159 since 1999, with a protected zone 15 metres around it.\n\nElms are the trees Europe lost. Dutch elm disease has killed most of the continent's big field elms since the last century, while white elms have held out better. What this one came through, nobody has written down.\n\nThe record is thin in other ways. No source gives an age; the cadastre's planting year of 1896 is an estimate for an age class, not a record of this tree. And the latest sign of life is the cadastre still listing it as standing in October 2026. Nobody has posted a photograph or an observation of it lately.\n\nAnyone passing can settle both questions. White elm seeds hang on long stalks with a fringe of fine hairs; field elm seeds sit close to the twig. Tell us which you see, and that it is still there.",
+      "how_to_recognise": "You can recognise it by its size, an elm 2.91 metres round and 19 metres tall growing out of the pavement. It stands outside Poelitzstrasse 32 in Gohlis-Sued."
+    },
+    {
+      "id": "lpz_023",
+      "name": "The Oak of Probstheida Village Green",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_basis": "derived",
+      "girth_cm": 374,
+      "height_m": 19,
+      "location": {
+        "address": "Dorfanger Probstheida at the Immanuelkirche, Russenstrasse, 04289 Leipzig",
+        "latitude": 51.306533,
+        "longitude": 12.428878,
+        "neighbourhood": "Probstheida"
+      },
+      "verified_sources": [
+        "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34408928&outputFormat=application/json",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Leipzig",
+        "https://www.wikidata.org/wiki/Q109644239"
+      ],
+      "official_register": {
+        "name": "Stadt Leipzig Baumkataster (open data WFS), Naturdenkmal tree N78812",
+        "url": "https://geodienste.leipzig.de/l3/OpenData/wfs?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&typeNames=OpenData:Baeume&featureID=Baeume.34408928&outputFormat=application/json"
+      },
+      "access": "Free, on the public village green (Dorfanger) beside the Immanuelkirche. No opening hours apply.",
+      "transport": "Probstheida village green on Russenstrasse; nearest stop and walking time not verified (Leipzig tram/bus network)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This oak is wider than it is tall. Leipzig's tree cadastre gives it a crown 20 metres across on a height of 19, the shape an oak takes when nothing crowds it.\n\nNothing does, because it stands on a village green. The Dorfanger of Probstheida is the open heart of what was a village before it became a Leipzig district, beside the Immanuelkirche on Russenstrasse. The local branch of the conservation group BUND describes the green as a protected natural monument and one of the few historic village greens left in the city, and in 2024 it campaigned to calm the traffic around it.\n\nThe trunk is 3.74 metres round and 1.19 metres through, by the city's own measurement. That is a serious oak, but a measurement is not a date. The cadastre files a planting year of 1886, and that figure is an estimate for a whole age class rather than a record of this tree, so we leave it out.\n\nProbstheida was fought over on 18 October 1813, the decisive day of the Battle of Leipzig. Whether this oak was already on the green that day, nobody has written down.\n\nThe city still lists it as standing in October 2026, and that is the latest word: nobody has posted a photograph of it lately. If you are on Russenstrasse, tell us how it looks, and if you know when it was planted, tell us that too.",
+      "how_to_recognise": "You can recognise it by its crown, about 20 metres across and wider than the tree is tall, on a trunk 3.74 metres round. It stands on the Probstheida village green beside the Immanuelkirche on Russenstrasse."
     }
   ]
 }

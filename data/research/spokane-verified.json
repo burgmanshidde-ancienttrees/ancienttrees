@@ -26,8 +26,19 @@
     "access": "Free. Spokane city parks are open 6 a.m. to 10 p.m. (all city parks closed 10 p.m. to 6 a.m.). Tree stands at the park's southeast entrance.",
     "transport": "Street parking on E 11th Ave; Spokane Transit stops on the South Hill (route and walk time not checked)",
     "location_precision": "approximate",
-    "location_site": {"name": "Southeast entrance of Grant Park", "radius_m": 50},
+    "location_site": {
+      "name": "Southeast entrance of Grant Park",
+      "radius_m": 50
+    },
     "curation_status": "flagged",
-    "verify_notes": "ONE SOURCE (US, official register), flagged. Register text (City of Spokane Urban Forestry heritage tree record, read from the ArcGIS layer in data/registers/spokane-heritage-trees.json): Age ~90, Height 75 feet, Species Horse Chestnut; 'This mature tree acts as a guardian and greeter to the southeast entrance to Grant Park.' Height 75 ft = 22.9 m (register, convert only). Register age is as listed, not re-measured; the listing is some years old so the tree is older now (stay broad). No girth given. Register point (47.645543,-117.391226) is 4 m from the house at 1303 E 11th Ave, so it was probably address-geocoded: pin kept APPROXIMATE, site level. What tells it apart: it is the large chestnut at the park's southeast gate, on the E 11th Ave edge. Alive: iNaturalist obs 315690968 (2025-09-21, Aesculus hippocastanum, 57 m accuracy, CC BY-NC so not usable as a photo) shows a horse chestnut at the spot, so recent presence; lifecheck was not rerun. Park hours from the city's own Park Hours page (fetched). Fetch notes: the heritage tree programme page returns only a shell to curl (per-tree text lives in the ArcGIS layer); inlander.com 429 on two attempts. CAVEATS for the parent: (1) Grant Park is a park, so whether an entrance counts as a 'small named site' under the findable rule is a judgement; if it does not, this is not findable (no photo, pin approximate) and should stay a lead. (2) Register URL is the programme page, not a per-tree page (no per-tree URL exists). (3) An earlier search summary put Grant Park at 1015 S Arthur St, consistent with an 11th/Arthur corner."
+    "story": "Heritage registers are usually dry reading. Spokane's gives this horse chestnut a job title: it calls the tree a guardian and greeter at the southeast entrance to Grant Park, and that is the name it goes by.\n\nThe job description fits. The register puts it at 75 feet, about 23 metres, on the park's East 11th Avenue edge. Horse chestnuts are a European species, not native to Washington, so this is a tree somebody chose for a park gate and the gate has kept it.\n\nThe city's listing gives its age as about 90. That figure was set when the tree was listed some years ago and nobody has re-measured since, so it is older now; somewhere from the mid-80s to past a century is the honest range. The register records no girth. If you have ever put a tape round it, tell us.\n\nIt was still standing in September 2025, when a naturalist logged a horse chestnut at the spot.\n\nCome in May. That is when the tree carries its white flower candles upright over the whole crown, and a greeter at a gate earns its title. In autumn the conkers come down in their spiny cases. The park is free and open from 6 a.m. to 10 p.m., like every city park in Spokane, with street parking on East 11th.",
+    "how_to_recognise": "You can recognise it as the large horse chestnut right at the park's southeast entrance, 75 feet tall by the city register. It stands on the East 11th Avenue edge of Grant Park, near South Arthur Street.",
+    "best_time": {
+      "months": [
+        5
+      ],
+      "kind": "flowers",
+      "label": "May, when white candles stand upright over the whole crown"
+    }
   }
 ]
