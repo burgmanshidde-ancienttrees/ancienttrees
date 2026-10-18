@@ -98,7 +98,6 @@ struct CollectSheet: View {
         case ticked(String)    // tree id, matched and claimed
         case unsure            // one of ours, and they could not say which
         case compare(String)   // looking at one candidate before committing
-        case same(String)      // "Add a new tree" right on top of one of ours
     }
 
     /// Where the coordinate on this record came from. Kept because it changes
@@ -238,12 +237,13 @@ struct CollectSheet: View {
     /// kunnen dan krijg je allemaal rommelige duplicaten"). Within 30 metres a
     /// tree "only you have" is nearly always the one we already map, which is
     /// the same distance the server matches a sighting at
-    /// (scripts/sightings_inbox.py, MATCH_M). Used twice: "Add a new tree"
-    /// asks once more before it makes one, and a tree of yours this close
+    /// (scripts/sightings_inbox.py, MATCH_M). A tree of yours this close
     /// offers to become your photograph of ours (TreeDetail, sameTreeRow).
-    /// Google Maps does the same when you add a place: it shows the place it
-    /// already has there and asks whether that is the one (CONVENTIONS.md,
-    /// "Adding a tree that is already on the map").
+    /// NOT asked again on "Add a new tree" (Hidde, 2026-10-18: "deze vraag
+    /// staat al op het eerste scherm ... deze stap is onnodig"): the list
+    /// above that button already names the tree, so a second screen asking
+    /// the same question was removed the day it shipped. CONVENTIONS.md,
+    /// "Adding a tree that is already on the map".
     static let sameTreeMetres = 30.0
 
     static func sameTree(origin: (lat: Double, lng: Double), trees: [Tree]) -> Tree? {
@@ -326,8 +326,6 @@ struct CollectSheet: View {
                         case .unsure: unsureState
                         case .compare(let id):
                             if let t = catalogue.tree(id) { compareState(t) }
-                        case .same(let id):
-                            if let t = catalogue.tree(id) { compareState(t, asking: true) }
                         default: EmptyView()
                         }
                     }
@@ -508,7 +506,7 @@ struct CollectSheet: View {
     /// The steps drawn as the one sheet: one answer or one question each.
     private var fits: Bool {
         switch stage {
-        case .ticked, .unsure, .compare, .same: true
+        case .ticked, .unsure, .compare: true
         default: false
         }
     }
@@ -952,7 +950,7 @@ struct CollectSheet: View {
                 }
             }
             Divider().padding(.vertical, 4)
-            Button { addNew() } label: {
+            Button { startDraft() } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "plus.circle.fill")
                         .font(.system(size: 22)).foregroundStyle(Brand.moss)
@@ -1122,24 +1120,16 @@ struct CollectSheet: View {
     /// something, so it says so in plain words rather than showing an empty
     /// space. Hidde's rule, same day: without one of the three it should not
     /// be offered as a thing you can confirm.
-    ///
-    /// `asking` is the same screen as the second look before "Add a new tree"
-    /// (`addNew`): the title becomes the question and the two answers are
-    /// "this one" and "a different tree".
-    private func compareState(_ t: Tree, asking: Bool = false) -> some View {
+    private func compareState(_ t: Tree) -> some View {
         VStack(spacing: 0) {
-            sheetTitle(asking ? "Is it \(t.name)?" : t.name)
-            if asking {
-                sheetMessage("It is on our map \(Self.distance(Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000))) from where you took this photo.")
-            } else {
-                sheetMessage(Self.candidateLabel(species: t.commonName,
-                                                 metres: (at != nil || location.known)
-                                                     ? Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)
-                                                     : nil,
-                                                 direction: (at != nil || location.known)
-                                                     ? Self.compass(from: at ?? origin, to: (t.lat, t.lng))
-                                                     : ""))
-            }
+            sheetTitle(t.name)
+            sheetMessage(Self.candidateLabel(species: t.commonName,
+                                             metres: (at != nil || location.known)
+                                                 ? Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000)
+                                                 : nil,
+                                             direction: (at != nil || location.known)
+                                                 ? Self.compass(from: at ?? origin, to: (t.lat, t.lng))
+                                                 : ""))
 
             // A photograph of OUR tree, as large as the sheet allows, because
             // comparing two pictures is the one check anybody can do standing
@@ -1173,21 +1163,14 @@ struct CollectSheet: View {
                 sheetFootnote("Our pin is \(Self.distance(Int(Geo.km(at ?? origin, (t.lat, t.lng)) * 1000))) from where you took this photo. If it is this tree, your photo shows us where it really stands.")
             }
 
-            Button(asking ? "Yes, it is this tree" : "This is the one") {
+            Button("This is the one") {
                 guard let shot, let at else { return }
                 if isFar(t) { reportPin(t, at: at) }
                 claim(t, image: shot, at: at)
             }
             .buttonStyle(SheetButtonStyle(kind: .primary))
-            .accessibilityIdentifier(asking ? "collect-same-yes" : "collect-this-is-the-one")
+            .accessibilityIdentifier("collect-this-is-the-one")
             .padding(.top, 22)
-
-            if asking {
-                Button("No, it is a different tree") { startDraft() }
-                    .buttonStyle(SheetButtonStyle(kind: .secondary))
-                    .accessibilityIdentifier("collect-same-no")
-                    .padding(.top, 12)
-            }
 
             Button("Back to the list") {
                 withAnimation(.snappy) { stage = .identify }
@@ -1401,20 +1384,6 @@ struct CollectSheet: View {
     }
 
     // MARK: - A tree we do not have
-
-    /// "Add a new tree", asked once more when one of ours stands within
-    /// `sameTreeMetres` of the photograph (see `sameTree`). The list above it
-    /// already named that tree, so this is the second look, not the first:
-    /// "Yes" makes it your photograph of ours, "No" adds the new tree as
-    /// before, because an unnamed veteran beside a famous tree is real and
-    /// must stay addable.
-    private func addNew() {
-        if let t = Self.sameTree(origin: at ?? origin, trees: catalogue.trees) {
-            withAnimation(.snappy) { stage = .same(t.id) }
-        } else {
-            startDraft()
-        }
-    }
 
     /// ADDING A TREE NEEDS AN ACCOUNT (Hidde, 2026-08-29, asked directly:
     /// "nee, inloggen verplicht"). It is the rule he set for the thumbs on
