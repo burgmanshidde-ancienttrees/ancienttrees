@@ -23,7 +23,17 @@ date it was read. An entry with no source URL is one recorded from our own
 corpus, where the reference was named at the time but the lookup was not
 written down; treat those as weaker and re-check before leaning on them.
 
+**Never from memory** (Hidde, 2026-10-18: "please dont do this from memory show me a interaction of another platform how they do it better"). Before a design goes to him, record the reference doing it: Apple Maps and the other system apps run in the iOS simulator, so tap through them there (the simulator control tool taps) and show the screenshots; otherwise real footage or screens from a source he can open. An entry marked "from memory" is a lead to check, never a reference to build on.
+
 **Do not read this file whole** (200 KB, about 50k tokens): `grep -n '^## ' CONVENTIONS.md` lists every entry with its line number; read only the one you need. New entries go at the top, under this line.
+
+---
+
+## Tapping a pin on a map that has a list in a sheet (2026-10-18, recorded)
+
+**Reference: Apple Maps, tapped by hand in the iOS 26 simulator** (search "park" in London: pins on the map, results in the sheet, the same arrangement as our map tab). Tap a pin: the pin grows in place and the SAME sheet turns into that place (name, kind, share, a cross, Directions, photos); no card floats over the list and no page is pushed. The cross puts the results list back as it was and the pin shrinks. Screenshots were shown to Hidde in the preview, not committed (they carry third-party photographs).
+
+Ours (MapTab.swift `onSelectTree`) pushes the full tree page on a pin tap, which came in on 2026-08-25 when a tap did nothing at all. Not yet changed: Hidde is choosing.
 
 ---
 
