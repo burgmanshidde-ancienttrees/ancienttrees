@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 night run (retry): written-but-unmerged trees, rung 4
+
+The rich-or-reader rule is off since 10-18, so the ten trees earlier runs refused were merged again. Live: London Marble Hill Black Walnut (lon_029), Salt Lake City Mount Olivet Linden (slc_006), Leipzig lpz_021, lpz_022, lpz_023, Vienna Prater black poplar (vie_059, approximate pin, last photographs 2014, said on the page). German overlays for Leipzig and Vienna written; city counts fixed. Dropped lpz_019 as a twin of lpz_021 (same ginkgo; its access note was an internal "hold" line). Not merged: del_011 (stands on a register tree marked dead, and its slug is a removed redirect), ftw_018 and spk_015 (story now written, but fort-worth access ground unknown and Grant Park may not be a findable small site), kyw_001 (no Key West city file yet), std_001/nsb_001 and fdl_001 (famous batches with no city file). The 60 READY leads are still not turned into verified files; stale research files left alone. Mount Olivet's address looks odd (1342 W vs the pin) and wants a check.
+
 ## 2026-10-18 night run (13:43 UTC): reader photographs, rung 1
 
 Visits last 7 days: 1980. Rung 1: two app photographs of lis_014 (Yew of Campo Santana, Lisbon) looked at and both rejected: they show a bleached dead trunk laid on a mound beside the pond, not a living yew. Open question for a session: that dead wood stands 5 to 25 m from our pin, so the yew may have died or been cut down. Check the garden (Jardim Braamcamp Freire) before the page keeps claiming a living 14 m yew; not retired, nothing could confirm it from here. Nothing else done in this window beyond that: shelf lanes untouched.
