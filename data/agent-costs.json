@@ -12914,6 +12914,14 @@
     "trees": 0,
     "photos_approved": 5,
     "note": "43 candidates: 29 viewed as pixels, 14 duplicate cross-tree Nieder-Erlenbach street/bus-stop/map files rejected by title; 5 approved (frk_008, frk_010, frk_014, frk_016, frk_017), 0 held, 38 rejected (frk_015 right tree but POOR dusk light; frk_012 only the 1907 B&W scan; frk_013 bare November frames; frk_005 no bundle lime in any frame; frk_007 sign close-ups)"
+   },
+   {
+    "date": "2026-10-18",
+    "target": "stuttgart write stu_008 to stu_010 (3 trees)",
+    "kind": "write",
+    "tokens": 70000,
+    "trees": 3,
+    "note": "3 stories and recognition lines, no best_time (young-ish oak, evergreen sequoias, veteran oak with no recorded shape); merged into data/cities/stuttgart.json with German overlay for all 3; counts to 9, oldest_tree_id to stu_010 (Jahneiche, over 300, Wikipedia-only 1711 mention, hedged); 1864 seed not tied to stu_009; question_context and FAQ rewritten."
    }
   ]
  },

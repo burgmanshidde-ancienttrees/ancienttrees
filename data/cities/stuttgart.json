@@ -2,25 +2,25 @@
   "city": "Stuttgart",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Stuttgart's designated trees are scattered across the whole city rather than clustered in one district, from a churchyard lime in Rohracker to a 6.72-metre ash at Schloss Solitude and three swamp cypresses beside a former gravel-pit lake. The oldest by measurement is the Solitude ash, put at roughly 250 years by a dendrological register. All are protected natural monuments, free and open at any time, each its own short outing rather than one connected walk.",
-  "meta_description": "Stuttgart's ancient trees: a 6.72m ash at Schloss Solitude, swamp cypresses by a lake, a duel-legend oak, a churchyard lime and more. All free.",
-  "question_meta": "Stuttgart's oldest measured tree is the Ash at Schloss Solitude, put at roughly 250 years by a dendrological register. Where it stands.",
-  "question_answer": "The oldest tree in Stuttgart with a measured estimate is the Ash at Schloss Solitude, a European ash with a trunk 6.72 metres round, put at roughly 250 years by the German tree register baumkunde.de. Several other designated trees on this page, including the Hutteneiche, carry no recorded age at all and could in principle be older.",
-  "question_context": "The Solitude ash's age comes from baumkunde.de, a dendrological register that measured the trunk at 6.72 metres round in May 2026 and estimated 250 years from that girth, a figure this page carries as a band, 200 to 300 years, rather than a false-precise number. It stands on the open lawn in front of Schloss Solitude, a baroque hunting lodge whose grounds are free at any hour, part of a designated group with two unmeasured sycamore maples. Nothing else on this page has a comparable reading. The Hutteneiche carries a story to 1515, when Duke Ulrich of Wurttemberg is said to have hanged his stable master from an oak on this spot, but no source claims the standing tree is that same individual, so no age follows from the legend. The Oberdorfplatz Mulberry and the Kurpark's three bald cypresses are documented only by their 2003 designation date, which records when the city started protecting them, not when they were planted. Where a tree's own age is unknown, this page says so rather than guessing, and asks anyone who can help to tell us.",
+  "intro": "Stuttgart's old trees are scattered across the whole city rather than clustered in one district, from a churchyard lime in Rohracker to a 6.72-metre ash at Schloss Solitude, a duke's 1779 plane at Hohenheim and an oak in Zuffenhausen that was already called stately in 1711. The one tight pairing is on the Bopser slope, where an oak planted in 1865 on the Schillerhöhe lookout stands about 250 metres from two giant sequoias. Every tree here is free to see, most from open parks, churchyards and squares, one pair only from the street.",
+  "meta_description": "Stuttgart's ancient trees: an oak named in 1711, a 6.72m ash at Schloss Solitude, Schiller's oak, giant sequoias, a duke's plane and more. All free.",
+  "question_meta": "Stuttgart's oldest tree by its record is likely the Jahneiche, a Zuffenhausen oak said to be stately already in 1711. Where it stands and how sure that is.",
+  "question_answer": "The oldest tree in Stuttgart by its written record is likely the Jahneiche, a pedunculate oak in Zuffenhausen that the German Wikipedia says was already a stately old tree in 1711, which puts it at over 300 years. That date rests on one account, so the best measured figure belongs to the Ash at Schloss Solitude, put at roughly 250 years from its 6.72-metre girth.",
+  "question_context": "The Jahneiche's age rests on one account: the German Wikipedia says Duke Eberhard Ludwig of Württemberg built a hunting pavilion beside it in 1711, when it was already a stately old tree. We have not seen the record behind that, so this page carries the age as over 300 years with no upper figure; nobody has measured the trunk. The Solitude ash is the best measured: the register baumkunde.de put its trunk at 6.72 metres round in May 2026 and estimated 250 years from that girth, which this page carries as a band of 200 to 300 years. The Hohenheim Love Plane was planted in 1779 and the Schillereiche in 1865. The Hutteneiche carries a story to 1515, but no source claims the standing tree is the oak of that legend, so no age follows from it. The Oberdorfplatz Mulberry, the Kurpark's bald cypresses and the Wernhalde sequoias are documented only by their 2003 designation, which records when the city started protecting them, not when they were planted. Where an age is unknown, this page says so and asks anyone who knows to tell us.",
   "hero_tree_id": "stu_006",
-  "oldest_tree_id": "stu_006",
+  "oldest_tree_id": "stu_010",
   "faq": [
     {
       "q": "What is the oldest tree in Stuttgart?",
-      "a": "The Ash at Schloss Solitude, put at roughly 250 years by a dendrological register based on its 6.72-metre girth. Several other trees here have no recorded age and could be older."
+      "a": "Probably the Jahneiche in Zuffenhausen, an oak the German Wikipedia describes as already stately in 1711, so over 300 years old; that rests on one account. The best measured is the Ash at Schloss Solitude, put at roughly 250 years from its 6.72-metre girth."
     },
     {
       "q": "Are Stuttgart's ancient trees clustered together?",
-      "a": "No. They are spread across the city, from Rohracker in the east to Solitude in the west, so treat each as its own short outing rather than one walking route."
+      "a": "Mostly not. They are spread from Rohracker in the east to Solitude in the west, so treat most as short outings of their own. The exception is the Bopser slope, where the Schillereiche and the Wernhalde sequoias stand about 250 metres apart."
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes, every tree here stands on open public ground: churchyards, parks, forest and the grounds of Schloss Solitude. No ticket needed to see any of them."
+      "a": "Yes, no ticket is needed for any of them. Most stand on open ground: churchyards, parks, squares, forest and the grounds of Schloss Solitude. The two Wernhalde sequoias stand between houses and are seen from the street."
     },
     {
       "q": "What is the story behind the Hutteneiche?",
@@ -277,6 +277,114 @@
         "width": 2370,
         "height": 3544,
         "taken_month": 8
+      }
+    },
+    {
+      "id": "stu_008",
+      "name": "The Schillereiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 160 years",
+      "age_min": 155,
+      "age_max": 165,
+      "location": {
+        "address": "Schillerhoehe lookout, Wernhaldenstrasse above Neue Weinsteige, Stuttgart",
+        "latitude": 48.7625,
+        "longitude": 9.181944,
+        "neighbourhood": "Stuttgart-Sued (Bopser)"
+      },
+      "story": "This oak was planted for a play. In 1865 the Verschönerungsverein, Stuttgart's beautification society, laid out a lookout on the Schillerhöhe and put this tree on it. By the club's own account it marks the first reading of Schiller's Die Räuber; a newspaper agrees on the year but is vaguer about where that reading happened, so treat the link to the play as the club's story.\n\nThe planting is what makes it datable, which is rarer than it sounds. Counted from 1865 rather than guessed from a trunk, it is about 160 years old. Nobody has published its girth or height.\n\nIt has outlasted most of what was built around it. A Kurhaus and restaurant named after the oak once stood beside it and is gone. In 2005, for the 200th anniversary of Schiller's death, the lookout was renovated together with the city's parks, cemeteries and forestry office. The club still owns the ground and keeps it open as a public viewpoint, and Stuttgart has protected the oak as a natural monument since 2003.\n\nThe view is the other reason to climb up. From 408 metres the lookout takes in the city from south-west to north-east, with benches beside the trunk and a footpath along Wernhaldenstraße. A photograph from May 2024 shows the crown full and in leaf.\n\nPair it with the Wernhalde sequoias, about 250 metres east on the same slope.",
+      "verified_sources": [
+        "http://www.vsv-stuttgart.de/index.php?article_id=52",
+        "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000080",
+        "https://commons.wikimedia.org/wiki/File:Schillereiche_(Wernhaldenstra%C3%9Fe,_Stuttgart),_2024-05-05,_yj.jpg"
+      ],
+      "access": "Free, open lookout with benches and a footpath beside Wernhaldenstrasse; the ground belongs to the Verschoenerungsverein Stuttgart, which keeps it as a public viewpoint. No ticket.",
+      "transport": "Stadtbahn U5/U6 to Weinsteige, then roughly 10 to 15 minutes' walk along Wernhaldenstrasse (walk time estimated, not sourced)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "how_to_recognise": "You can recognise it as the oak on the Schillerhöhe lookout, with benches beside it and the city laid out below from 408 metres. It stands by the footpath along Wernhaldenstraße.",
+      "official_register": {
+        "name": "LUBW Naturdenkmal 81110000403 (Stuttgart ordinance 3/8, entry 3/8, designated 2003-06-24)",
+        "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000080"
+      }
+    },
+    {
+      "id": "stu_009",
+      "name": "The Wernhalde Giant Sequoias",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Steinkopfstrasse 6 and 8, beside the Wernhaldenpark, Stuttgart",
+        "latitude": 48.7627,
+        "longitude": 9.18475,
+        "neighbourhood": "Stuttgart-Sued (Bopser)"
+      },
+      "story": "Two giant sequoias stand about ten metres apart between the houses of Steinkopfstraße, and Stuttgart protects each one under its own number. The trees at number 6 and number 8 were made natural monuments in June 2003; we list them as one stop, because you will see them together.\n\nSequoias are something of a Stuttgart habit. A local walking writer traces many of the ones in the city and across Württemberg to King Wilhelm I, who bought a pound of seed in 1864, and describes the sequoias in the Wernhaldenpark next door as reaching sizes unbelievable for Württemberg. Whether these two grew from that pound of seed, nobody has recorded. Their planting date is not documented, and we are not going to borrow the king's year for them. If you know when they went in, tell us.\n\nThe official register is the only source that names these two individually, and it gives no girth or height. A photograph from April 2018 shows a tall, healthy conifer behind a roadside rail, with houses beside it.\n\nBe clear about access. They stand between houses on ground no source describes, so these are trees to look at from the street and footpath, not to walk up to, and the pin is the register's approximate point. For sequoias you can stand under, the public Wernhaldenpark next door has many more on its steep paths, along with a young planting from 1990 not to be mistaken for the old ones.",
+      "verified_sources": [
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000078",
+        "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+        "https://stuttgartwege.blogspot.com/2010/02/durch-den-landschaftspark-wernhalde.html",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stuttgart_-_1_Mammutbaum_%E2%80%9ESteinkopfstr._6%E2%80%9C.jpg"
+      ],
+      "access": "View-only from the public street and footpath beside Steinkopfstrasse (visible over a fence in the Commons photo); the tree itself stands between houses and its plot status is not stated by any source. The Wernhaldenpark next door is public, with five entrances, steep paths and many more sequoias.",
+      "transport": "Stadtbahn U5/U6 to Weinsteige, then about 10 minutes down Roemerstrasse into the park (per stuttgartwege blog route; time estimated)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise them as the two giant sequoias about ten metres apart between the houses at Steinkopfstraße 6 and 8. You see them from the street over a fence, beside the Wernhaldenpark.",
+      "official_register": {
+        "name": "LUBW Naturdenkmal 81110000027 (Steinkopfstr. 6) and 81110000402 (Steinkopfstr. 8), designated 2003-06-24",
+        "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000078"
+      }
+    },
+    {
+      "id": "stu_010",
+      "name": "The Jahneiche",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_max": null,
+      "location": {
+        "address": "Marconistrasse at the end of Lange Allee, Zuffenhausen, Stuttgart",
+        "latitude": 48.82906,
+        "longitude": 9.152118,
+        "neighbourhood": "Zuffenhausen"
+      },
+      "story": "By 1711 this oak was already called a stately old tree, and a duke chose it as the spot for his hunting lodge. That is the account in the German Wikipedia: Duke Eberhard Ludwig of Württemberg had a hunting pavilion built beside it for his Schlotwiese hunting ground. We have not seen the 1711 record behind the claim, so we carry it as Wikipedia's and put the tree's age no closer than over 300 years. Nobody has measured the trunk to test that. If the 1711 mention holds, it is the oldest tree on this page.\n\nThe name is far younger than the tree. In 1929 the Turnverein Zuffenhausen, the district's gymnastics club, marked its 40th anniversary by naming the oak after Friedrich Ludwig Jahn, the Turnvater of German gymnastics. A tree that stood in a duke's hunting ground now carries a gymnastics club's birthday present.\n\nIt has not had an untroubled old age. Some years ago, a local newspaper reported, a gust of wind broke off a heavy branch and the area around it was cordoned off. The report is no longer online. Stuttgart has protected the oak as a natural monument since 2003, and a photograph from April 2020 names it.\n\nIt stands where Lange Allee ends at Marconistraße. The pin is the register's approximate point, and no source describes whether the trunk sits on a verge or a green strip. If you go, tell us what you find, and its girth if you can measure it.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Jahneiche_(Stuttgart-Zuffenhausen)",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000095",
+        "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+        "https://commons.wikimedia.org/wiki/File:Jahneiche_Stuttgart.jpg"
+      ],
+      "access": "Standing at the junction of Lange Allee and Marconistrasse, a public street junction; no ticket. Exact surroundings (verge or green strip) not confirmed.",
+      "transport": "Zuffenhausen, Stuttgart; nearest stop not checked (S-Bahn Zuffenhausen is in the district, walk time unknown)",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "how_to_recognise": "You can recognise it as the old oak at the junction where Lange Allee ends at Marconistraße in Zuffenhausen. Another protected oak stands about 70 metres north-east; this is the one on the junction.",
+      "official_register": {
+        "name": "LUBW Naturdenkmal 81110000903 (designated 2003-06-24; Stuttgart ordinance entry 9/3)",
+        "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=1119013000095"
       }
     }
   ]
