@@ -68,7 +68,7 @@ Google demoted the site on 09-28 (scaled-content shape). Algorithmic, not manual
 - **Indexing**: a tree page is in Google only with a photograph (`INDEX_NEEDS_PHOTO = True` in scripts/thin_pages.py) (since 2026-10-18 no exception for enriched pages: `RETURN_ENRICHED = False`, Hidde "take the 1,128 photo-less pages out of Google"; they earned 0.05 impressions a page). Photo-less tree pages carry a googlebot-only noindex and go to sitemap-bing.xml (`GOOGLE_ONLY_WEAK_TREES`; `check_the_noindex_split_holds()`). data/noindex.json is recomputed before every build.
 - Adding is not indexing: `ADD_NEEDS_FINDABLE = False` (findable.py), `PROVEN_ONLY = False`, `OPEN_FIRST` off (passcheck.py). Proven cities (data/depth-roster-frozen.json) still lead `city_queue.py --next`.
 - Findable = photo, confirmed pin, or a small named site (`location_site`, at most 50 m radius, never a park or campus) plus a recognition line. The rule lives once in scripts/findable.py.
-- No new place below four trees (`check_no_new_thin_places()`; frozen list data/thin-places-frozen.json). Trees into existing places beat new places. When a place grows, its intro and meta grow with it.
+- **A place under four trees gets no place page; its trees may go live as tree pages** (Hidde, 2026-10-18: "losse boompagina's die niet tot een stad behoren mogen wel live"). An epic tree far from any city ships on its own, if it is rich. `check_no_new_thin_places()` now guards that place pages under four stay out of Google (thin_pages.py group A). Trees into existing places still beat new places. When a place grows, its intro and meta grow with it.
 - No new page types or templated sets. Fallback pages (English text on a language URL) are gone and redirect (redirect-map.ts, `cityHref()` in i18n.ts). Translations continue for pages whose English twin has impressions.
 - `check_index_grows_with_the_trees()` (qa.py): at most 1.5 indexable pages per tree and 80 new indexable urls per deploy. Outlives recovery mode.
 - Accident guard only: `check_publishing_pace()` at 60 new trees in 24 hours. Past 10 a day, passcheck prints a depth note, never a refusal.
@@ -105,11 +105,11 @@ Depth (photos, pins, best_time) goes only to cities DATA.md's newest entry lists
 - A tree qualifies if genuinely old OR visually spectacular OR historically significant, AND publicly accessible. At every site ask which trunk is worth the visit, not which has the name; record an unnamed veteran beside a famous young tree as a lead with a coordinate. `note_a_young_tree_is_not_ancient()`.
 - Walkable clusters over famous singletons: four to eight trees inside about two kilometres is a walk. `scripts/cluster_register.py`. Rank by cheapest cluster, not cheapest tree.
 - Day-trip boundary: within about 30 minutes by public transport, labelled with its real place and travel time.
-- Count follows the trees: floor four, ceiling is the target in data/city-queue.json, never padded, never held back for being ninth in line. When a city passes ten, titles stop saying ten.
+- Count follows the trees: a city page needs four (fewer means lone tree pages), ceiling is the target in data/city-queue.json, never padded, never held back for being ninth in line. When a city passes ten, titles stop saying ten.
 - Alive only. A tree known dead never ships and one reported dead is checked and removed the same day; thin confirmation is stated on the page, not a reason to hold a city. Replacements reuse the id.
 - At most about a third of a city behind a ticket (`check_paid_share()`, a note); fix by adding free trees. Retire with `python3 scripts/retire.py <city> <id>... --reason "why"` (moves to leads, adds the redirect, deletes photos, prints stale counts).
 - A collectible point: one tree, or an ensemble only when the ensemble is the destination with one place to stand.
-- Single-famous-tree places (below four) are paused during recovery.
+- Single epic trees ship as tree pages (2026-10-18); their place page stays out of Google until the place reaches four.
 
 ## Verify
 

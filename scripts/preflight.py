@@ -1179,23 +1179,26 @@ def check_no_new_thin_places():
     what Google's spam policies call scaled content. The places already live
     are frozen in data/thin-places-frozen.json; anything else below four fails.
     A place grows to four in its first commit or waits as a lead. Removing this
-    check needs Hidde."""
+    check needs Hidde.
+
+    CHANGED BY HIDDE, 2026-10-18: "steden met minder dan 4 bomen krijgen geen
+    stadspagina, maar losse boompagina's die niet tot een stad behoren mogen wel
+    live". An epic tree in the outback is a tree page, not a place. So a new
+    place below four may ship its trees, and what this guards now is the other
+    half of his sentence: the place page of anything under four never reaches
+    Google. thin_pages.py puts every place of one to three trees in group A (place
+    and question pages noindexed, tree pages kept), so that threshold must not
+    drop. Each new tree still has to be rich or a reader's
+    (check_a_new_tree_is_rich_or_a_readers)."""
     try:
-        with open("data/thin-places-frozen.json", encoding="utf-8") as fh:
-            frozen = set(json.load(fh)["places"])
-    except (OSError, ValueError, KeyError):
-        return ["data/thin-places-frozen.json is missing or unreadable"]
-    out = []
-    for p in sorted(glob.glob("data/cities/*.json")):
-        slug = os.path.basename(p)[:-5]
-        with open(p, encoding="utf-8") as fh:
-            d = json.load(fh)
-        n = sum(1 for t in d.get("trees") or []
-                if t.get("story") and (t.get("location") or {}).get("latitude") is not None)
-        if 0 < n < 4 and slug not in frozen:
-            out.append("%s: a new place with %d tree(s). New places need four while search "
-                       "recovers (2026-10-01); keep these as leads in data/leads/%s.json" % (slug, n, slug))
-    return out
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import thin_pages
+    except Exception as e:  # noqa: BLE001
+        return ["thin_pages.py does not import (%s), so nothing keeps place pages under four out of Google" % e]
+    if getattr(thin_pages, "THIN_MAX", 0) < 3:
+        return ["thin_pages.THIN_MAX is %r: places with fewer than four trees must keep their place page "
+                "out of Google (Hidde, 2026-10-18)" % getattr(thin_pages, "THIN_MAX", None)]
+    return []
 
 
 # NOT A PACE. Hidde, 2026-10-02, asked three times whether a daily number
