@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18, 19:58 run: reader sighting verdict, roster photo pass
+
+- 7-day visits: 2010 visits, 2900 page views.
+- Rung 1: the one reader photograph of an unmapped tree (Moreton Bay Fig, Jardin de la Mendoubia, Tangier) was looked at: a huge buttressed fig, worth the walk, but no register or encyclopaedia source and Morocco is out of focus. Kept as a lead with a written verdict in data/leads/_sightings.json.
+- Photos first (recovery mode): `photo_hunt.py --recheck` found no new candidates, so `photo_fetch.py --roster` plus a photo-judge pass on the queue: 14 photographs approved (Utrecht Dolehof plane, Portland Corbett Oak, Hong Kong Nathan Road banyan, Dallas Post Oak Grove, New York Reservoir plane, Berlin Korean Evodia, Los Angeles El Pino, Tokyo Hongo camphor, Stockholm Bellmanseken, Vilnius Mickiewicz ash, Washington DC Travilah Oak, Naples Villa Comunale gum, Seattle Hiawatha oak and Roanoke elm), 5 held, 38 rejected. Reversal commands are in the pass report (`photo_apply.py hold <id> --reason overrule`).
+- The six written-and-ready trees (fdl_001, ftw_018, kyw_001, spk_015, std_001, nsb_001) were not merged: they have neither a photograph nor a confirmed pin, and preflight refuses them. No new trees this window.
+- The image viewer hit a request limit for a long stretch, so the pass ran about 45 minutes.
+
 ## 2026-10-18, retry run: READY write pass
 
 - Live: Leipzig +1 (lpz_030, white elm by the B2, German overlay), Delft +3 (del_012 to del_014); counts fixed on both pages (Leipzig 29, Delft 12).
