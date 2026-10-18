@@ -13,6 +13,15 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 ---
 
+## 2026-10-18
+
+Web half: read leipzig (index and Menzellinde), vienna, baarn, london and salt-lake-city as built; no em dashes, no leaked code. Two findings.
+
+- WARN /leipzig (meta description and og): "19 protected trees in Leipzig" while the page lists 22 trees (data/cities/leipzig.json has 22) and `question_meta` says "21 more", so the count is stale after the three new trees (CLAUDE.md "when a place grows, its intro and meta grow with it"; checkParkCountPromises style fault). Update the count in `meta_description`.
+- NOTE /leipzig/menzellinde (meta description): "A 200-year-old Small-leaved Lime" sharpens the source's "roughly 200 to 300 years" (age_min 200, age_max 300) to its low end, the same pattern as the 10-15 Cardón note (Verify: never sharpen a vague source). "A lime of 200 to 300 years" matches the body.
+
+---
+
 ## 2026-10-17
 
 Web half: read the four new Berlin photographs (Fontanesia, katsura, coffeetree, Tiergarten beech) as built in site/dist, plus the 30 vendored photographs. The Fontanesia page serves the vendored /photos/ber_042 file, carries its CC0 attribution, has no em dashes. Nothing found.
