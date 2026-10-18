@@ -55,6 +55,17 @@ INDEX_NEEDS_PHOTO = True
 # 40 rather than 60 so that a deploy carrying new photographed trees as well
 # stays under the guard.
 RETURN_PER_BUILD = 40
+# CLOSED 2026-10-18 (Hidde: "Yes, take the 1,128 photo-less pages out of
+# Google; Bing keeps them"). The digest's "Is enriching working" table: when
+# about 1,100 finished pages without a photograph came back (10-12 to 10-13),
+# rich pages went from 471 to 1,715 while their impressions fell from 0.46 a
+# page to 0.05, and all 1,715 together earned 91 in ten days. They earn
+# nothing in Google and keep the demoted shape, and the 10-13 rule (widen only
+# once returned pages earn impressions) was never met. False sends every such
+# page, the ones already back included, to the googlebot-only noindex with
+# the other photo-less trees (Bing keeps them); a photograph returns it. True
+# reopens the exception with the budget below.
+RETURN_ENRICHED = False
 # AND THE BUDGET IS URLS AGAINST THE LIVE SITEMAP, NOT TREES (2026-10-09, the
 # same afternoon). The first deploy under RETURN_PER_BUILD failed the guard
 # twice: 40 returning trees brought their Portuguese, Italian and Dutch copies
@@ -248,7 +259,7 @@ def main():
         for t, ts in zip(trees, tslugs):
             if has_photo(t) if INDEX_NEEDS_PHOTO else findable(t):
                 continue
-            if INDEX_NEEDS_PHOTO and slug in on_roster and enriched(t, enrich_gaps(t)):
+            if RETURN_ENRICHED and INDEX_NEEDS_PHOTO and slug in on_roster and enriched(t, enrich_gaps(t)):
                 en_url = f"{BASE}/{slug}/{ts}"
                 if en_url[len(BASE):] not in prev:
                     continue  # already back
@@ -340,7 +351,7 @@ def main():
            f"| 1 | Fallback language pages (English text on a /de/, /es/ ... URL): removed 2026-10-09, every URL redirects to its English page | {len(set(groups['fallback']))} |",
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
-           f"| 4 | Tree pages without a photograph (since 2026-10-06), unless in a proven city and finished: findable + register + measurement + access (since 2026-10-09). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
+           f"| 4 | Tree pages without a photograph (since 2026-10-06), finished pages included since 2026-10-18 (the 2026-10-09 exception for finished pages in a proven city is closed, RETURN_ENRICHED). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | of which Google-only (the googlebot tag) | {len(google_only)} |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",

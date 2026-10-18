@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-18 session with Hidde: Google now sees only tree pages with a photograph
+The 10-09 exception that let finished tree pages without a photograph back into Google is closed (`RETURN_ENRICHED = False` in scripts/thin_pages.py). 1,128 tree pages (1,810 urls with their translations) get the googlebot-only noindex on the next deploy; readers still see them, Bing keeps them through sitemap-bing.xml, and each returns to Google the day it gets a photograph. Why: the digest's "Is enriching working" table showed those pages earned 0.05 impressions a page after they came back on 10-12/13, and the 10-13 rule (widen only once returned pages earn impressions) was never met. Hidde: "Yes, take the 1,128 photo-less pages out of Google; Bing keeps them." Undo: set it True. Next look: mid-November, impressions per photographed page.
+
 ## 2026-10-18 thirty-eighth attempt: nothing shipped
 Pulled; no claims; 60 READY leads and 28 written trees still held by the rich-or-reader rule (recovery mode); enrich empty; BACKUP is Denver only (no licence, needs Hidde's ask). Nothing dispatched.
 
