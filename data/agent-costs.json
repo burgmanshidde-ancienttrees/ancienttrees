@@ -12922,6 +12922,15 @@
     "tokens": 70000,
     "trees": 3,
     "note": "3 stories and recognition lines, no best_time (young-ish oak, evergreen sequoias, veteran oak with no recorded shape); merged into data/cities/stuttgart.json with German overlay for all 3; counts to 9, oldest_tree_id to stu_010 (Jahneiche, over 300, Wikipedia-only 1711 mention, hedged); 1864 seed not tied to stu_009; question_context and FAQ rewritten."
+   },
+   {
+    "date": "2026-10-18",
+    "target": "photo-judge stuttgart stu_008 to stu_010 (3 trees)",
+    "kind": "photo",
+    "tokens": 45000,
+    "trees": 0,
+    "photos_approved": 3,
+    "note": "8 candidate verdicts on 6 files, all viewed, oaks zoomed at full size: 3 approved (stu_008 Schillereiche, geotag on pin; stu_009 Steinkopfstr. 6 sequoia, named in title; stu_010 Jahneiche, named in title), 0 held, 5 rejected (cross-tree swaps, an archival map, a vineyard view, a different ND oak at dusk)"
    }
   ]
  },
