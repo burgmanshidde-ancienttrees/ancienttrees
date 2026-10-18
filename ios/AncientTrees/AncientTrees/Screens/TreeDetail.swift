@@ -1732,11 +1732,15 @@ struct TreeDetail: View {
                             Text("It is on our map \(CollectSheet.distance(metresTo(t, from: here))) from here. If it is the same tree, your photo goes on its page.")
                                 .font(.footnote).foregroundStyle(Brand.inkSoft)
                                 .fixedSize(horizontal: false, vertical: true)
-                            Button("It is this tree") { merge(m, into: t) }
-                                .font(.subheadline.weight(.semibold))
-                                .foregroundStyle(Brand.moss)
-                                .frame(minHeight: 44)
-                                .accessibilityIdentifier("mine-same-tree")
+                            Button { merge(m, into: t) } label: {
+                                Text("It is this tree")
+                                    .font(.subheadline.weight(.semibold))
+                                    .foregroundStyle(Brand.moss)
+                                    .frame(minHeight: 44)
+                                    .contentShape(.rect)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("mine-same-tree")
                         }
                         Spacer(minLength: 0)
                     }
@@ -1750,12 +1754,18 @@ struct TreeDetail: View {
                     Button {
                         withAnimation(.snappy) { findingOurs = true }
                     } label: {
-                        Label(CollectSheet.sameTree(origin: here, trees: catalogue.trees) == nil
-                                  ? "Already on our map?" : "Another of our trees",
-                              systemImage: "magnifyingglass")
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(Brand.moss)
-                            .frame(minHeight: 44)
+                        // An HStack rather than a Label, the shape of the
+                        // other text buttons on this page: a Label's frame
+                        // measured 18 tall in the sweep (SMALL, 2026-10-18).
+                        HStack(spacing: 6) {
+                            Image(systemName: "magnifyingglass")
+                            Text(CollectSheet.sameTree(origin: here, trees: catalogue.trees) == nil
+                                     ? "Already on our map?" : "Another of our trees")
+                        }
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Brand.moss)
+                        .frame(minHeight: 44)
+                        .contentShape(.rect)
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("mine-find-ours")
@@ -1807,11 +1817,15 @@ struct TreeDetail: View {
                 Text(q.count >= 2 ? "None of our trees is called that." : "None of our trees is pinned near here. Search for it by name.")
                     .font(.footnote).foregroundStyle(Brand.inkSoft)
             }
-            Button("Cancel") {
+            Button {
                 withAnimation(.snappy) { findingOurs = false; oursQuery = "" }
+            } label: {
+                Text("Cancel")
+                    .font(.subheadline).foregroundStyle(Brand.inkSoft)
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
             }
-            .font(.subheadline).foregroundStyle(Brand.inkSoft)
-            .frame(minHeight: 44)
+            .buttonStyle(.plain)
         }
     }
 
