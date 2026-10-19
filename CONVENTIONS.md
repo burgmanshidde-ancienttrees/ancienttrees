@@ -35,7 +35,9 @@ written down; treat those as weaker and re-check before leaning on them.
 
 **AllTrails, read 2026-10-19** (support.alltrails.com/hc/en-us/articles/4410205748244, "Your account privacy options", and /4409891661588, "Which parts of my profile can other people see"): every new account starts Public; profile photo, name, location and high-level stats are always visible; each content type (completed trails, activities, maps, lists) is Public, Followers only or Only me; follower approval is a separate switch. Motherboard (vice.com) found the public default came with no warning at sign-up. **Hidde chose AllTrails' default for new accounts (2026-10-19)**; accounts opened before it stay private.
 
-**What we copied first** (superseded the same day on the default): a "Private profile" switch in Settings, ON for everyone; turning it off opens the one sheet listing what becomes visible, and only "Make public" writes. Turning it back on is one tap. A public profile is /account as a visitor sees it (same header, Follow where the gear sits, same tabs, same grid, same map), at /profile?u=<id>, noindexed. An ambassador's name on a city page links there only while the profile is public.
+**Renamed "Public profile", ON is public** (Hidde, 2026-10-19: "Private profile is heel negatief"), AllTrails' Public-first wording.
+
+**What we copied first** (superseded the same day on the default and the name): a "Private profile" switch in Settings, ON for everyone; turning it off opens the one sheet listing what becomes visible, and only "Make public" writes. Turning it back on is one tap. A public profile is /account as a visitor sees it (same header, Follow where the gear sits, same tabs, same grid, same map), at /profile?u=<id>, noindexed. An ambassador's name on a city page links there only while the profile is public.
 
 **Where we differ**: Polarsteps has a third state (followers only) and per-trip settings. We have one switch and no per-tree setting, and the server never returns the day a tree was ticked, which is the part of a travel log that says where somebody is now.
 

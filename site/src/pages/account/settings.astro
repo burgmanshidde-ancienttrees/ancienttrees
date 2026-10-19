@@ -81,8 +81,8 @@ const crumbItems: [string, string | null][] = [
     <div id="st-privacy" hidden>
       <p class="acct-group">Privacy</p>
       <div class="acct-rows">
-        <button type="button" class="set-row" id="priv-row" role="switch" aria-checked="true">
-          <Fragment set:html={icon("lock-simple", "bold", "ic set-ic")} /><span class="set-label">Private profile</span><span class="set-switch" aria-hidden="true"></span>
+        <button type="button" class="set-row" id="priv-row" role="switch" aria-checked="false">
+          <Fragment set:html={icon("globe-hemisphere-east", "bold", "ic set-ic")} /><span class="set-label">Public profile</span><span class="set-switch" aria-hidden="true"></span>
         </button>
       </div>
       <p class="set-foot" id="priv-foot" data-on="Only you see your profile." data-off="Anyone can see your profile and your trees.">Only you see your profile.</p>
@@ -274,14 +274,15 @@ const crumbItems: [string, string | null][] = [
     }).catch(function() {});
   var myCountry = "";
 
-  // The switch reads "Private profile", so ON is private, as Polarsteps and
-  // Instagram word it. profiles.public is its opposite, stored on the server
-  // so the phone and the laptop agree (hard rule 11).
+  // The switch reads "Public profile", so ON is public (Hidde, 2026-10-19:
+  // "Private profile is heel negatief"; AllTrails words it Public first).
+  // profiles.public, stored on the server so the phone and the laptop agree
+  // (hard rule 11).
   var isPublic = false, hasName = false;
   function paintPrivacy() {
     var row = document.getElementById("priv-row");
     var foot = document.getElementById("priv-foot");
-    row.setAttribute("aria-checked", isPublic ? "false" : "true");
+    row.setAttribute("aria-checked", isPublic ? "true" : "false");
     foot.textContent = foot.getAttribute(isPublic ? "data-off" : "data-on");
     var link = document.getElementById("priv-link");
     link.hidden = !isPublic;

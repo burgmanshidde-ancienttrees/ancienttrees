@@ -69,7 +69,7 @@ struct ProfileView: View {
     @State private var contributing = false   // -contribute: launchSheet below
     @State private var givingFeedback = false   // -feedback: launchSheet below
     @State private var editingProfile = false
-    /// The Make public sheet, opened by turning Private profile off.
+    /// The Make public sheet, opened by turning Public profile on.
     @State private var confirmingPublic = false   // -publicask: launchSheet below
     /// Same debug scaffolding as -contribute and -feedback: the sweep cannot
     /// tap, so every screen needs an argument or it ships unlooked-at.
@@ -230,10 +230,10 @@ struct ProfileView: View {
 
     // MARK: - privacy
 
-    /// PRIVATE PROFILE (Hidde, 2026-10-19, after the design page: "ja dit ziet
-    /// er goed uit"). Polarsteps' and Instagram's "Private account" switch, on
-    /// for everybody until the person turns it off and confirms the sheet
-    /// (CONVENTIONS.md, "A public profile, and the private switch"). Shown only
+    /// PUBLIC PROFILE (Hidde, 2026-10-19: "Private profile is heel negatief").
+    /// AllTrails words its privacy choice Public first; ON is public here, and
+    /// turning it on asks first with the sheet (CONVENTIONS.md, "A public
+    /// profile, and the private switch"). Shown only
     /// once the server has said what it is (profiles.public), like the
     /// website's row: a switch that stores nothing is worse than none.
     @ViewBuilder private var privacyCard: some View {
@@ -242,17 +242,17 @@ struct ProfileView: View {
                 Text("Privacy").font(.eyebrow).textCase(.uppercase)
                     .foregroundStyle(Brand.inkSoft).tracking(0.8)
                 Toggle(isOn: Binding(
-                    get: { !isPublic },
-                    set: { wantPrivate in
-                        if wantPrivate { setPublic(false) }
+                    get: { isPublic },
+                    set: { wantPublic in
+                        if !wantPublic { setPublic(false) }
                         // A public profile shows a name, and no profile row
                         // exists until somebody sets one, so the name first.
                         else if profiles.me?.display_name.isEmpty ?? true { editingProfile = true }
                         else { confirmingPublic = true }
                     })) {
                     HStack(spacing: 12) {
-                        Image(systemName: "lock").frame(width: 20).foregroundStyle(Brand.moss)
-                        Text("Private profile").font(.callout).foregroundStyle(Brand.ink)
+                        Image(systemName: "globe.europe.africa").frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Public profile").font(.callout).foregroundStyle(Brand.ink)
                     }
                 }
                 .tint(Brand.moss)

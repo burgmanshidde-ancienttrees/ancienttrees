@@ -10,7 +10,7 @@
 //
 // WHO MAY BE SEEN is the server's answer, never this page's: public_profile()
 // (supabase/public-profiles.sql) returns the profile only while its owner's
-// "Private profile" switch is off, and null otherwise. Private, unknown and
+// "Public profile" switch is on, and null otherwise. Private, unknown and
 // not-yet-migrated all read the same: "This profile is private."
 //
 // What it never shows, because the function never returns it: the day a tree

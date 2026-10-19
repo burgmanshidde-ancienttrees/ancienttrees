@@ -2,7 +2,7 @@
 -- Supabase, SQL editor, Run. Safe to run twice. The same lines are in
 -- public-profiles.sql, which explains every choice.
 --
--- Until it runs, nothing breaks: the Private profile switch stays hidden on
+-- Until it runs, nothing breaks: the Public profile switch stays hidden on
 -- both surfaces and a profile link says the profile is private.
 
 alter table public.profiles add column if not exists public boolean not null default false;

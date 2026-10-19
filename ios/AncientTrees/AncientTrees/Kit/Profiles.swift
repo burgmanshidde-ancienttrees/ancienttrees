@@ -58,7 +58,7 @@ public final class Profiles {
     public private(set) var placesByUser: [String: [Ambassador]] = [:]
     /// Whether your profile is open to anybody (profiles.public, 2026-10-19;
     /// supabase/public-profiles.sql). Nil until the server answers, and nil
-    /// for good on a database without the column, so the Private profile
+    /// for good on a database without the column, so the Public profile
     /// switch in Settings shows only when it can store something.
     public private(set) var myPublic: Bool?
 
@@ -110,7 +110,7 @@ public final class Profiles {
                                        place_slug: place.lowercased(), place_name: place, public: false)]
             }
         }
-        // -public=off / -public=on: the Private profile switch on the demo
+        // -public=off / -public=on: the Public profile switch on the demo
         // account, for the sweep (2026-10-19).
         if let arg = ProcessInfo.processInfo.arguments
             .first(where: { $0.hasPrefix("-public=") }) {
@@ -346,7 +346,7 @@ public final class Profiles {
         return ok
     }
 
-    /// The Private profile switch, written as its opposite: `on` makes the
+    /// The Public profile switch: `on` makes the
     /// profile public. Returns whether the server took it.
     public func savePublic(_ on: Bool, userId: String, token: String) async -> Bool {
         let body = try? JSONEncoder().encode(["public": on])

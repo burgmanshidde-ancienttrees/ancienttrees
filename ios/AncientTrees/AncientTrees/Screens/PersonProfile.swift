@@ -10,7 +10,7 @@
 // /profile?u= page is the same screen (site/src/pages/profile.astro).
 //
 // WHO MAY BE SEEN is the server's answer: public_profile() returns the
-// profile only while its owner's Private profile switch is off. Private,
+// profile only while its owner's Public profile switch is on. Private,
 // unknown and unreachable all read the same, Instagram's "This account is
 // private" in our words, under the name the person already shows in People.
 
