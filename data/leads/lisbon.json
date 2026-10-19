@@ -878,6 +878,55 @@
       "last_measured": 2006,
       "source": "ICNF, Arvoredo de Interesse Publico (CC BY 4.0)",
       "reason": "Access: stands on the working campus of the Academia Militar (the Portuguese Army officer academy) in Amadora, an active restricted military campus. Hard rule 10."
+    },
+    {
+      "id": "lis_014",
+      "name": "The Yew of Campo Santana",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "about 130 years",
+      "age_min": 120,
+      "age_max": 145,
+      "location": {
+        "address": "Jardim Braamcamp Freire, Campo dos Mártires da Pátria, 1150-230 Lisboa",
+        "latitude": 38.7217,
+        "longitude": -9.14,
+        "neighbourhood": "Campo Santana, Arroios"
+      },
+      "story": "A European yew has no business growing here. The species belongs to damp northern churchyards and mountain shade, and Lisbon offers neither, yet this one has put on close to four metres of girth and fourteen metres of height on a hill above the Avenida. Portugal classified it in May 1968, which makes it one of the earliest protected trees in the city, and the national register now puts it a little past 130 years old. The ground under it has a harder history than the lawns suggest. This field held a slaughterhouse and then a bullring, and in 1817 the men condemned with Gomes Freire de Andrade were hanged on it, which is how Campo de Santana became Campo dos Mártires da Pátria. The garden came afterwards, laid out around a lake with exotic birds wandering the paths, and the medical school and the Hospital de São José still crowd its edges. At the top of the same field stands the statue of Sousa Martins, a physician who died in 1897, its plinth buried under marble plaques left by people who believe he still answers. Every part of a yew is poisonous except the red flesh around the seed.",
+      "best_time": {
+        "months": [
+          9,
+          10,
+          11
+        ],
+        "kind": "fruit",
+        "label": "red arils on female trees, the only part that is not poisonous"
+      },
+      "verified_sources": [
+        "https://si.icnf.pt/wfs/arv_class",
+        "https://pt.wikipedia.org/wiki/Jardim_Braamcamp_Freire",
+        "https://www.e-cultura.pt/patrimonio_item/11717"
+      ],
+      "access": "Free, municipal garden, open daily",
+      "transport": "Metro Intendente (green line), about 8 min walk, or Metro Avenida (blue line), about 10 min",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "notes": "ICNF processo AIP11065607I, 'teixo', classified D.G. n.º 121, II Série, 21/05/1968 and re-published D.R. n.º 115, II Série, 18/06/2018. Register figures: girth 3.80 m, height 14 m, age 123 at the 2016 survey, so about 133 in 2026. Second source: Wikipedia PT 'Jardim Braamcamp Freire' independently lists Taxus baccata L. among the garden's árvores de interesse público under the same 1968 diploma. One unresolved point recorded rather than published: a search snippet claims two classified yews here, one from 1968 and one from 2000, but the register holds only this one teixo and the Wikipedia list names only one, so the story does not claim a pair. Pin is the register's own surveyed point and this is the only classified yew in the garden, hence confirmed.",
+      "girth_cm": 380,
+      "how_to_recognise": "You can recognise it by the dark, dense needles, which nothing else on this slope has. It stands close to four metres round and fourteen metres tall, fifty paces from the glossy-leaved weeping fig.",
+      "official_register": {
+        "name": "Arvoredo de Interesse Público (ICNF), no. AIP11065607I",
+        "url": null
+      },
+      "height_m": 14,
+      "removed": "2026-10-19",
+      "removed_reason": "Dead: a reader's two app photographs at the pin (2026-10-18, GPS 6 and 20 m off) show bleached bare wood propped on a mound, no foliage; their correction says 'the tree is dead'."
     }
   ]
 }

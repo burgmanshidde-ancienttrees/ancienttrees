@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session: the Yew of Campo Santana is dead, retired
+
+- A reader's correction (submission 466, 2026-10-18): "Look at the pictures, please. The tree is dead". Their two app photographs, GPS 6 and 20 m from our pin, show bleached bare yew wood propped on an earth mound, no foliage. Hidde saw them.
+- Retired lis_014 with retire.py (to data/leads/lisbon.json, blocked, reason recorded); /lisbon/yew-of-campo-santana redirects. Lisbon is 35 trees; the Portuguese title count fixed by hand. Preflight 0 problems. Submission 466 outcome set to `changed`; no reply_text written (a reply is a mail, his call).
+- Also: the local digest page now shows readers' own words where DATA.md says "read it in the database" (show_digest.py, check_the_digest_page_shows_readers_words()).
+
 ## 2026-10-19 session: a profile anybody can open, when its owner says so
 
 What changed in the product (web and app, merged and pushed; nothing visible yet): a "Private profile" switch in Settings, on for everyone (Polarsteps' default). Turning it off opens one sheet that says what becomes visible (name and picture, Collected and Want to visit, badges); only "Make public" writes. A public profile is your own profile as a visitor sees it: /profile?u=<id> on the web (noindexed), a pushed screen in the app, reached from People and from an ambassador's name on a city page, which becomes a link with a chevron only while that person's profile is public. The server answers through `public_profile()`, never the dates a tree was ticked. Rule in CLAUDE.md (Privacy and accounts), story in DECISIONS.md, reference in CONVENTIONS.md.
