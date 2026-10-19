@@ -898,6 +898,10 @@ a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--c
 /* A group's footer, iOS Settings' grey line under a group. */
 .set-foot { margin: 6px 16px 0; font-family: var(--sans); font-size: 13px; line-height: 1.4; color: var(--ink-mid); }
 .set-foot[hidden] { display: none; }
+/* The switch inside the Privacy settings sheet: the page's row, left-aligned. */
+dialog.at-sheet .priv-rows { margin-top: 0.4rem; text-align: left; }
+dialog.at-sheet .priv-step .set-foot { text-align: left; }
+.priv-step[hidden] { display: none; }
 /* Follow on somebody else's profile (profile.astro, 2026-10-19), where the
    gear sits on your own: Polarsteps' Follow pill. */
 .profile-follow-btn { flex: none; height: 36px; padding: 0 16px; border-radius: 999px; border: 0; cursor: pointer;

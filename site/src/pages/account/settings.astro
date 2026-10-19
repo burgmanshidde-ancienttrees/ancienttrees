@@ -72,23 +72,6 @@ const crumbItems: [string, string | null][] = [
       <Fragment set:html={icon("caret-right", "bold", "ic set-go")} />
     </button>
 
-    {/* PRIVATE PROFILE (Hidde, 2026-10-19, after the design page: "ja dit
-        ziet er goed uit"). Polarsteps' and Instagram's "Private account"
-        switch, ON for everybody until the person turns it off and confirms
-        the sheet below (CONVENTIONS.md, "A public profile, and the private
-        switch"). The row stays hidden until profiles.public answers, like
-        Distances: a switch that stores nothing is worse than none. */}
-    <div id="st-privacy" hidden>
-      <p class="acct-group">Privacy</p>
-      <div class="acct-rows">
-        <button type="button" class="set-row" id="priv-row" role="switch" aria-checked="false">
-          <Fragment set:html={icon("globe-hemisphere-east", "bold", "ic set-ic")} /><span class="set-label">Public profile</span><span class="set-switch" aria-hidden="true"></span>
-        </button>
-      </div>
-      <p class="set-foot" id="priv-foot" data-on="Only you see your profile." data-off="Anyone can see your profile and your trees.">Only you see your profile.</p>
-      <p class="set-foot" id="priv-link" hidden><a href="/account">See your public profile</a></p>
-    </div>
-
     <p class="acct-group">Preferences</p>
     <div class="acct-rows">
       <label class="set-row" id="st-units" hidden>
@@ -103,6 +86,14 @@ const crumbItems: [string, string | null][] = [
           <option value="">Ask each time</option><option value="apple">Apple Maps</option><option value="google">Google Maps</option>
         </select><Fragment set:html={icon("caret-up-down", "bold", "ic set-caret")} /></span>
       </label>
+      {/* PRIVACY SETTINGS, one row among the others (Hidde, 2026-10-19: "is
+          het benchmark dat dit bovenaan je settings staat?"). AllTrails:
+          Profile, gear, "Privacy Settings", its own screen; Polarsteps:
+          Settings, "Account type". Hidden until profiles.public answers. */}
+      <button type="button" class="set-row" id="priv-open" hidden aria-haspopup="dialog">
+        <Fragment set:html={icon("lock-simple", "bold", "ic set-ic")} /><span class="set-label">Privacy settings</span>
+        <span class="set-val" id="priv-val" data-on="Public" data-off="Only me">Only me</span><Fragment set:html={icon("caret-right", "bold", "ic set-go")} />
+      </button>
     </div>
 
     <p class="acct-group">Help</p>
@@ -155,21 +146,33 @@ const crumbItems: [string, string | null][] = [
     <p class="at-sheet-fine" id="name-status" role="status" hidden></p>
   </Sheet>
 
-  {/* TURNING THE SWITCH OFF ASKS FIRST, and says what becomes visible: the
-      same two lists you see on your own profile, which is where you have
-      been. Turning it back on is one tap and asks nothing (Instagram). */}
-  <Sheet id="pub-sheet" aria-labelledby="pub-h">
-    <span class="at-sheet-tile"><Fragment set:html={icon("globe-hemisphere-east", "bold")} /></span>
-    <h3 class="at-sheet-h" id="pub-h">Make your profile public?</h3>
-    <p class="at-sheet-p">Anyone can then open it, with or without an account.</p>
-    <ul class="at-sheet-pts">
-      <li><Fragment set:html={icon("check", "bold")} />Your name and picture</li>
-      <li><Fragment set:html={icon("check", "bold")} />The trees you collected and want to visit</li>
-      <li><Fragment set:html={icon("check", "bold")} />Your badges</li>
-    </ul>
-    <div class="at-sheet-btns">
-      <button type="button" id="pub-yes" class="sheet-b sheet-b--primary">Make public</button>
-      <button type="button" id="pub-no" class="sheet-b sheet-b--quiet">Not now</button>
+  {/* PRIVACY SETTINGS, the one sheet (Sheet.astro) with two steps, as the
+      ambassador sheet has: the switch, and turning it on asks first and says
+      what becomes visible. Turning it off is one tap and asks nothing. */}
+  <Sheet id="priv-sheet" aria-labelledby="priv-h">
+    <div class="priv-step" data-step="set">
+      <h3 class="at-sheet-h" id="priv-h">Privacy settings</h3>
+      <div class="acct-rows priv-rows">
+        <button type="button" class="set-row" id="priv-row" role="switch" aria-checked="false">
+          <Fragment set:html={icon("globe-hemisphere-east", "bold", "ic set-ic")} /><span class="set-label">Public profile</span><span class="set-switch" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="set-foot" id="priv-foot" data-on="Anyone can see your profile and your trees." data-off="Only you see your profile.">Only you see your profile.</p>
+      <p class="set-foot" id="priv-link" hidden><a href="/account">See your public profile</a></p>
+    </div>
+    <div class="priv-step" data-step="ask" hidden>
+      <span class="at-sheet-tile"><Fragment set:html={icon("globe-hemisphere-east", "bold")} /></span>
+      <h3 class="at-sheet-h">Make your profile public?</h3>
+      <p class="at-sheet-p">Anyone can then open it, with or without an account.</p>
+      <ul class="at-sheet-pts">
+        <li><Fragment set:html={icon("check", "bold")} />Your name and picture</li>
+        <li><Fragment set:html={icon("check", "bold")} />The trees you collected and want to visit</li>
+        <li><Fragment set:html={icon("check", "bold")} />Your badges</li>
+      </ul>
+      <div class="at-sheet-btns">
+        <button type="button" id="pub-yes" class="sheet-b sheet-b--primary">Make public</button>
+        <button type="button" id="pub-no" class="sheet-b sheet-b--quiet">Not now</button>
+      </div>
     </div>
   </Sheet>
 
@@ -283,7 +286,9 @@ const crumbItems: [string, string | null][] = [
     var row = document.getElementById("priv-row");
     var foot = document.getElementById("priv-foot");
     row.setAttribute("aria-checked", isPublic ? "true" : "false");
-    foot.textContent = foot.getAttribute(isPublic ? "data-off" : "data-on");
+    foot.textContent = foot.getAttribute(isPublic ? "data-on" : "data-off");
+    var val = document.getElementById("priv-val");
+    val.textContent = val.getAttribute(isPublic ? "data-on" : "data-off");
     var link = document.getElementById("priv-link");
     link.hidden = !isPublic;
     if (myId) link.firstChild.href = "/profile?u=" + encodeURIComponent(myId);
@@ -300,23 +305,29 @@ const crumbItems: [string, string | null][] = [
       .catch(function() { if (done) done(false); });
   }
   function privacy(row) {
-    document.getElementById("st-privacy").hidden = false;
+    document.getElementById("priv-open").hidden = false;
     isPublic = Boolean(row && row.public);
     hasName = Boolean(row && row.display_name);
     paintPrivacy();
   }
+  function step(name) {
+    document.querySelectorAll("#priv-sheet .priv-step").forEach(function(d) {
+      d.hidden = d.getAttribute("data-step") !== name;
+    });
+  }
+  document.getElementById("priv-open").addEventListener("click", function() { step("set"); open("priv-sheet"); });
   document.getElementById("priv-row").addEventListener("click", function() {
     if (isPublic) { writePublic(false); return; }
     // A public profile needs a name to show: no profiles row exists until
     // somebody sets one (supabase/profiles.sql), so the name comes first.
-    if (!hasName) { say("Add a name first; it is what your public profile shows."); open("me-sheet"); return; }
-    open("pub-sheet");
+    if (!hasName) { shut("priv-sheet"); say("Add a name first; it is what your public profile shows."); open("me-sheet"); return; }
+    step("ask");
   });
   document.getElementById("pub-yes").addEventListener("click", function() {
     var b = this; b.disabled = true;
-    writePublic(true, function() { b.disabled = false; shut("pub-sheet"); });
+    writePublic(true, function() { b.disabled = false; step("set"); });
   });
-  document.getElementById("pub-no").addEventListener("click", function() { shut("pub-sheet"); });
+  document.getElementById("pub-no").addEventListener("click", function() { step("set"); });
 
   // KILOMETRES OR MILES, the same profiles.units the app writes, so the choice
   // follows somebody between the phone and the laptop. The row stays hidden
