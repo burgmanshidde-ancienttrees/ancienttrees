@@ -2,7 +2,7 @@
   "city": "Frankfurt",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the seventeen trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: a ginkgo from about 1750 in Rödelheim, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach an oak planted around 1590.",
+  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the twenty trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: a ginkgo from about 1750 in Rödelheim, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach an oak planted around 1590.",
   "meta_description": "Frankfurt's Naturdenkmal trees: the lime the U-Bahn curves around, a yew moved by steam roller in 1907, and an oak planted around 1590 in Offenbach.",
   "question_answer": "Frankfurt's oldest tree is probably the Senckenberg Yew in the Palmengarten, roughly 400 years old: it was already about 300 when two steam rollers moved it across the city in 1907, and local tradition has it planted before the Thirty Years War. The oldest on the city's register with a dated record is the Eschersheimer Linde, a large-leaved lime from the end of the 17th century beside Lindenbaum U-Bahn station. The Schwanheim oaks rival both, a group the city dates to up to 500 years without dating any single trunk.",
   "question_meta": "The Senckenberg Yew in the Palmengarten, roughly 400 years old and moved across Frankfurt by steam roller in 1907, is probably the city's oldest tree.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can I see several of Frankfurt's old trees in one walk?",
-      "a": "Yes. Five of the seventeen are in the Westend within a few hundred metres of each other: two beeches and the Senckenberg Yew in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all five. In Nieder-Erlenbach in the far north, the cemetery limes and the oak on An der Bleiche are about 500 metres apart."
+      "a": "Yes. Five of the twenty are in the Westend within a few hundred metres of each other: two beeches and the Senckenberg Yew in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all five. In Nieder-Erlenbach in the far north, the cemetery limes and the oak on An der Bleiche are about 500 metres apart."
     },
     {
       "q": "Are Frankfurt's old trees free to visit?",
-      "a": "Twelve of the seventeen cost nothing and have no gate: the trees on public streets and squares, in Gruneburgpark, the Ostpark, the Bockenheimer Anlage, the Botanical Garden, the Schwanheimer Wald, the Nieder-Erlenbach cemetery and the Offenbach city forest. The two beeches and the Senckenberg Yew are inside the Palmengarten, which sells an admission ticket. The Goethe Ginkgo is free, but the Petrihaus grounds in Rödelheim open only for events and on the last Sunday afternoon of each month from spring to autumn. The oak on An der Bleiche stands on church grounds and is seen from the street."
+      "a": "Fifteen of the twenty cost nothing and have no gate: the trees on public streets and squares, in Gruneburgpark, the Ostpark, the Bockenheimer Anlage, the Botanical Garden, the Schwanheimer Wald, the Nieder-Erlenbach cemetery and the Offenbach city forest. The two beeches and the Senckenberg Yew are inside the Palmengarten, which sells an admission ticket. The Goethe Ginkgo is free, but the Petrihaus grounds in Rödelheim open only for events and on the last Sunday afternoon of each month from spring to autumn. The oak on An der Bleiche stands on church grounds and is seen from the street."
     },
     {
       "q": "Why does the U-Bahn curve at Lindenbaum?",
@@ -752,6 +752,123 @@
       },
       "how_to_recognise": "You can recognise it by its height, about 40 metres, and the bushes grown up round its trunk. It stands at stop 10 of the Waldroute, by the path over the bridge near the Pechschneise.",
       "height_m": 40
+    },
+    {
+      "id": "frk_018",
+      "name": "The Service Tree of Riedberg",
+      "species": "Service Tree (Sorbus domestica)",
+      "age_estimate": "roughly 100 to 130 years",
+      "age_min": 100,
+      "age_max": 130,
+      "girth_cm": 289,
+      "height_m": 15,
+      "location": {
+        "address": "Graf-von-Stauffenberg-Allee, small meadow at the Niederurseler Hang, 60438 Frankfurt am Main",
+        "latitude": 50.175377,
+        "longitude": 8.616509,
+        "neighbourhood": "Riedberg"
+      },
+      "verified_sources": [
+        "https://www.baumkunde.de/baumregister/8751-speierling_am_niederurseler_hang_in_frankfurt_am_main/",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Frankfurt_am_Main",
+        "https://commons.wikimedia.org/wiki/File:Speierling,_1,_Riedberg,_Frankfurt_am_Main.jpg"
+      ],
+      "official_register": {
+        "name": "Frankfurt am Main Naturdenkmale, entry 001 (2025 list)",
+        "url": "https://frankfurt.de/themen/umwelt-und-gruen/umwelt-und-gruen-a-z/im-gruenen/baeume/naturdenkmale/speierling-an-der-graf-von-stauffenberg-allee"
+      },
+      "access": "Free; open meadow beside the public street Graf-von-Stauffenberg-Allee (Baumkunde register: 'oeffentlich zugaenglich'). Protected site is a 15 m radius around the trunk.",
+      "transport": "Western edge of Riedberg, Frankfurt U-Bahn area; nearest stop and walk time not measured",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "In 2020 two conservation groups, NABU and BUND, put up a stele for this tree's hundredth birthday. The volunteer register that reports the party also gives its planting year as 1896, which would have made it 124 on the day. Neither date comes with a paper trail we could read, so the honest age is somewhere between 100 and 130 years.\n\nThe species is not in doubt. This is a Speierling, a service tree, one of Germany's rare native fruit trees, and it stands alone on a small meadow at the Niederurseler Hang. Frankfurt's 2025 list of natural monuments puts it first, as entry 001, for its rarity, its character and its beauty.\n\nIt is still putting on wood. Volunteers measured the trunk at 2.71 metres round in 2015 and 2.89 metres in 2022, when they found it 15 metres tall and in vital health. In September and October it carries small fruit shaped like apples or pears, sweet only once they soften.\n\nOne loose end. The description of a 2020 photograph on Wikimedia Commons says the tree was designated in January 2014 and no longer was by 2020. The city's 2025 list, the newer word, still carries it.\n\nThe meadow is free and open, beside Graf-von-Stauffenberg-Allee on the western edge of Riedberg. The protected ground is the circle within 15 metres of the trunk.",
+      "how_to_recognise": "You can recognise it as the only tree on its small meadow, a service tree about 15 metres tall with a trunk 2.89 metres round. It stands beside Graf-von-Stauffenberg-Allee at the Niederurseler Hang.",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "kind": "fruit",
+        "label": "September and October, when the small apple- and pear-shaped fruit ripen"
+      },
+      "verify_notes": "PHOTO IN HAND (not fetched, for the photo lane): Commons 'Speierling, 1, Riedberg, Frankfurt am Main.jpg', GeorgDerReisende, CC BY-SA 4.0, taken 2020-07-20, geotag 50.175349, 8.616108 (about 28 m west of the register point, camera position). Facts seen on fetched pages: Baumkunde register 8751 (volunteer register, updated 2025-11-03; observers Baumradler / HerrMoritz): lone Speierling on a small meadow, girth 2.89 m measured 2022-05-01 (a forum post cites 2.71 m in 2015), height 15.0 m, condition 'vital' at the 2022-05-01 visit, access 'public', coordinates N50 10.523 E8 36.992 (same as register point, not independent). Description there: NABU and BUND honoured it with a stele for its '100th birthday in 2020' (stele photographed 2022). CONFLICT on age: the same page lists planting year 1896 and age 130, the stele text implies planting around 1920; no source for either is fetched, so age is given broad, 100 to 130. City register (Wikipedia mirror of the 2025 list, entry 001): Speierling an der Graf-von-Stauffenberg-Allee, Riedberg, 50.175377, 8.616509, grounds: rarity, character, beauty, natural-history reasons. frankfurt.de page is Cloudflare 403 and has no Wayback snapshot, so the city's own figures are unread (a search snippet said the city calls it one of the most stately service trees in Frankfurt; snippet only, not used). FLAG: the Commons file description says it was designated a Naturdenkmal in January 2014 but 'not any more' by 2020, while the 2025 city list still carries it as entry 001; unresolved, the page should not claim current protection beyond 'on the city's 2025 list'. Service tree (Speierling) is a rare native fruit tree in Germany; the 'spared by the Riedberg building boom' remark comes from a Baumkunde forum poster, forum not fetched. Pin: single tree on a small meadow, register point and Commons geotag within 30 m, so approximate rather than confirmed. Lifecheck OLD (2020 photo), alive supported by the 2022 'vital' observation. Source count: one official register plus one volunteer register with measurements, flagged.",
+      "photo": {
+        "url": "",
+        "license": "",
+        "attribution": "",
+        "status": "missing"
+      }
+    },
+    {
+      "id": "frk_019",
+      "name": "The Border Oak at Berger Warte",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 330,
+      "girth_cm": 410,
+      "location": {
+        "address": "Vilbeler Landstrasse (B521), forest track entrance beside the Seckbacher Busch, at the Frankfurt / Bad Vilbel boundary near the Berger Warte",
+        "latitude": 50.162933,
+        "longitude": 8.735679,
+        "neighbourhood": "Seckbacher Busch, Bad Vilbel (Frankfurt city boundary, Berger Rücken)"
+      },
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Enkheimer_Alteichen",
+        "https://www.fnp.de/frankfurt/enkheim-jahre-alte-baeume-sind-noch-keine-naturdenkmale-10506097.html",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_in_Bad_Vilbel",
+        "https://commons.wikimedia.org/wiki/File:Bad_Vilbel,_Eiche_am_Seckbacher_Busch.jpg"
+      ],
+      "official_register": {
+        "name": "Wetteraukreis Naturdenkmale, ND 440.142 'Eiche (am Seckbacher Busch)', Bad Vilbel, list status May 2020",
+        "url": "https://wetteraukreis.de/fileadmin/2_Service/natur_landschaft/ND_2020_05.pdf"
+      },
+      "access": "Free; stands at the mouth of a forest track at the edge of the B521 (Vilbeler Landstrasse) beside a prefab-house showroom, marked with a red plaque 'Abteilung 2 Seckbacher Busch'. Roadside, no entry needed; busy road, so approach from the track.",
+      "transport": "Between Frankfurt-Bergen and Bad Vilbel, about 6 km north-east of Frankfurt centre; nearest bus stop and walk time not measured",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Citizen surveyors counted 51 old oaks around Enkheim and Bergen in 2016. This is the only one of them designated a natural monument, and its near twin stands unmarked on the other side of the road.\n\nThe pair flank the B521 where it leaves the Vilbeler Wald, about 300 metres north-west of the old Jewish cemetery of Bergen. The surveyors put a tape round both at chest height and got 4.00 and 4.10 metres, without saying which is which. Their rule of thumb for forest oaks turns that girth into a germination date around 1700: an estimate from size, not a count of rings, so call it somewhere between 250 and 330 years. Senckenberg staff told the Frankfurter Neue Presse that oaks this old are otherwise known only in the Schwanheim forest.\n\nFive metres away stands a boundary stone carved GH, for the Grand Duchy of Hesse. The survey suggests that could make this an old border oak. It is a suggestion, not a finding.\n\nThe protection comes from the Wetteraukreis, because the tree stands just inside Bad Vilbel, on Frankfurt's city line. Its register entry, natural monument 440.142, is named for the Seckbacher Busch, as is the red plaque on the tree, but no shared coordinate ties the register to the surveyors' oak, so the match is very likely rather than proven.\n\nNobody says whether it is pedunculate or sessile; if you can tell, tell us. The latest dated photograph is from 2018.",
+      "how_to_recognise": "You can recognise it by the red plaque reading 'Abteilung 2 Seckbacher Busch' and a GH boundary stone five metres off. It stands at the mouth of a forest track beside the B521, next to a prefab-house showroom.",
+      "verify_notes": "PHOTO IN HAND (for the photo lane): Commons 'Bad Vilbel, Eiche am Seckbacher Busch.jpg', Karsten Ratzke (User:Karsten11), CC0, taken 2018-07-03, no geotag. It is Wikidata Q125389854's image. Facts seen on fetched pages: (1) de.wikipedia 'Enkheimer Alteichen' (article by the citizen surveyors, uses their 2016 tape measurements at 1.30 m): two outstanding oaks on the Berger Rücken either side of the B521 at the edge of the Vilbeler Wald, about 300 m north-west of the old Jewish cemetery Bergen, girths 4.00 and 4.10 m, germinated around 1700 by the survey's age formula (girth x 0.8 for forest oaks, so an estimate, not a core). One of the two, at the mouth of a forest track next to a prefab-house centre and carrying a red plaque 'Abteilung 2 Seckbacher Busch', is the ONLY tree of the whole Enkheim and Bergen old-oak stand that is a designated Naturdenkmal; the other, across the road, is nearly identical and unmarked (candidate second lead, same spot). A boundary stone with the initials GH (Grand Duchy of Hesse) stands 5 m from the tree, which the article says could mean an old boundary oak; this is the article's suggestion, not established. Which of 4.00 or 4.10 m belongs to the designated tree is not stated, so 4.1 is recorded as the upper figure. (2) FNP 2016-10-25 article (fetched) independently reports the survey and names the thickest of 51 oaks then found as 4.46 m; Senckenberg staff in it say comparably old oaks are known only in the Schwanheim forest. Register: Wetteraukreis ND list May 2020 (PDF unreadable here, text not extracted), number and name taken from a search result and from Wikidata Q125389854 (P1435 citing that PDF, P625 50.162933, 8.735679), Wikipedia 'Liste der Naturdenkmaeler in Bad Vilbel' lists it in Flur 13 at about the same coordinate, protection for being an old tree, no size data. IDENTITY CAUTION: the match between the register entry and the oak the survey describes rests on the shared name 'Seckbacher Busch' and the plaque text, not on a shared coordinate; the survey article gives no coordinate for the Berger Warte pair. Hence pin approximate. Species: article says all surveyed oaks are Pedunculate or Sessile, not which, so genus only. Age derived and broad (girth 4.0 to 4.1 m, forest-oak factor 0.8 gives roughly 320 to 330 years, article says around 1700); lifecheck NONE for the coordinate, last dated evidence the 2018 photo and the 2016 survey, so alive is thin. Note it stands in Bad Vilbel (Wetteraukreis), a different municipality from Frankfurt, but at the city boundary, about 6 km from the centre. Register-only plus one survey source, flagged.",
+      "photo": {
+        "url": "",
+        "license": "",
+        "attribution": "",
+        "status": "missing"
+      }
+    },
+    {
+      "id": "frk_020",
+      "name": "The Brentanopark Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 300 years",
+      "age_min": 250,
+      "age_max": 350,
+      "girth_cm": 690,
+      "height_m": 25,
+      "location": {
+        "address": "Brentanopark, Roedelheim, 60489 Frankfurt am Main",
+        "latitude": 50.124379,
+        "longitude": 8.615942,
+        "neighbourhood": "Roedelheim"
+      },
+      "verified_sources": [
+        "https://www.monumentale-eichen.de/hessen/2-kategorie/frankfurt/",
+        "https://www.baumkunde.de/baumregister/1175-eiche_im_brentanopark_in_frankfurt/"
+      ],
+      "access": "Free; the oak stands in the middle of the Brentanopark, a public park owned by the city of Frankfurt since 1926 (monumentale-eichen.de); Baumkunde register lists access as public.",
+      "transport": "S-Bahn S3, S4, S5 to Frankfurt-Roedelheim (the Petrihaus ginkgo frk_007, 150 m away, is given as about 500 m from the station); exact walk to the oak not measured",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "This oak is getting thinner. Volunteer measurers found its waist at 6.97 metres in 2019 and 6.90 metres two years later, and the bark that has come away in large patches accounts for about eight centimetres of the loss. Even so, nearly seven metres round is a great deal of pedunculate oak.\n\nIt has lost height too. The crown stood 28 metres until it was cut back a few years before 2021; it now measures 25 to 26 metres, with a spread of about 25. The first branches leave the trunk at two metres, and the stubs of others, sawn off long ago, have almost grown over.\n\nThe measurers put it at about 300 years, an estimate from its size, so read that as somewhere between 250 and 350. The Brentanopark around it was laid out in 1770 and extended in 1823; nobody has recorded whether the oak was planted for the park or was already standing. The city has owned it since 1926 and rebuilt it for the public.\n\nIts health is the honest worry. In 2021 its vitality seemed to be declining, and the register visit of July 2026 recorded it as ill, with bark damage. It was alive and photographed that month.\n\nIt stands in the middle of the park, free to visit, in Rödelheim. The S3, S4 and S5 stop at Frankfurt-Rödelheim, and the Petrihaus ginkgo is about 150 metres away, which makes the two a single stop.",
+      "how_to_recognise": "You can recognise it by the trunk, 6.9 metres round, with bark missing in large patches and old sawn-off branch stubs almost grown over. It stands in the middle of the Brentanopark, about 150 metres from the Petrihaus ginkgo.",
+      "verify_notes": "Facts seen on two fetched pages, both volunteer measurers (no official register, so flagged; neither is a finding aid or monumentaltrees.com). (1) monumentale-eichen.de (Rainer Lippert, measured 2021, page updated 2021-10-21): Pedunculate oak, 'about 300 years', breast-height girth 6.90 m, waist girth 6.80 m, height 26 m, crown spread 25 m; first branches at 2 m; trunk shows several sawn-off branch stubs almost fully overgrown; bark missing in large patches; crown was reduced a few years ago and stood 28 m before; condition 'still quite good, vitality seems to be declining'; coordinate 50.124379, 8.615942. Park laid out 1770, extended 1823, owned by the city since 1926 and rebuilt for the public. (2) Baumkunde register 1175 (updated 2026-07-10, last visit and measurement 2026-07-05, observers incl. Baumradler, Rainer Lippert, Palme): girth 6.9 m (waist girth 6.88 m in 2017, 6.97 m in 2019, 6.90 m in 2021, bark loss has cost about 8 cm), height 25 m, age 300 (an estimate), 'Zustand: krank, Borkenschaden' (ill, bark damage), photos dated up to July 2026 so it is ALIVE now, but declining; coordinate 50.12428, 8.61602 (about 12 m from the Lippert point). Park/oak age caution: the park's 1770 founding is NOT a date for this tree; 300 years is the measurers' estimate and Lippert's page gives the method on its 'Alter' page (not read), so age is kept broad 250 to 350. Girth of 6.9 m is large for a Pedunculate oak; the reading is consistent across five measurements 2017 to 2026, so not a corrupt field. Pin: two independent GPS positions of the measurers within 12 m, a single monumental oak in the middle of the park, so confirmed. Same park as the Petrihaus ginkgo (frk_007, 50.123927, 8.613951, about 150 m away): a two-tree stop. Nearby but separate: the Baumkunde register 7325 'Eiche am Brentano Bad' (Pedunculate, girth 6.12 m in 2020, 22 m, about 300 years, 50.12604, 8.62003) stands on the grounds of the Frankfurter Sportjugend, access 'Privatgelaende', cut back hard in May 2024: NOT delivered (private grounds), recorded here as a lead. PHOTO LEADS for the photo lane (not judged, identity unconfirmed): Commons 'Brentanopark 2020-03-27 07.jpg' and '08.jpg' are geotagged 13 to 15 m from the pin (March 2020, bare); lifecheck gives OLD 2020-03-27 for the point. Nothing here is fabricated beyond these two pages; frankfurt.de does not list it as a Naturdenkmal in the 2025 list I read.",
+      "photo": {
+        "url": "",
+        "license": "",
+        "attribution": "",
+        "status": "missing"
+      }
     }
   ],
   "oldest_tree_id": "frk_012"

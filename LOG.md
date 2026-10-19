@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-19 night run, second attempt: Frankfurt 17 to 20 trees
+
+- Frankfurt: three new trees live (frk_018 Service Tree of Riedberg, frk_019 Border Oak at Berger Warte, frk_020 Brentanopark Oak), none with a photograph yet (Commons candidates noted in verify_notes for the photo lane). Intro and FAQ counts updated, German overlay translated. Preflight 0 problems; full site build not run here. Six rejects kept in data/leads/frankfurt.json. frankfurt.de returns 403 to every fetch.
+- fdl_001, ftw_018, std_001 are not READY to merge: their files carry a not_merged_reason (no honest container), so they stay.
+- Claim released. Costs: verify about 120k tokens, write about 60k, translate about 75k.
+
 ## 2026-10-19 night run (window from 21:56 UTC): nothing published, no tree added
 
 - Rung 1: one reader photograph of an unmapped tree (European Beech, Freiburg, ed90210d). corroborate.py: no register entry within 100 m, no article within 300 m. The photograph is not on this runner (out/sightings/ empty), so the verdict stays open until a run can look at it.

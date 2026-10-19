@@ -257,6 +257,60 @@
         ]
       ],
       "reason": "2026-10-18. All on the 2025 register with a coordinate and no description, no measurement. Only the Riedberg Speierling has a Commons image. Not looked at; no age or size basis, and the species-size rule gives no floor. Leave unless a source with figures turns up."
+    },
+    {
+      "candidate": "Enkheimer Alteichen, oldest single stem at the Nachtigallenweg (Bergen-Enkheim)",
+      "coords": [
+        50.15346,
+        8.78001
+      ],
+      "lat": 50.15346,
+      "lng": 8.78001,
+      "reason": "2026-10-19. Citizen survey 2016 (Kaltenborn, tape at 1.30 m): 78 oaks over 3 m girth; thickest single stem 4.46 m, about 35 m, germinated about 1670 by the girth x 0.8 formula (de.wikipedia 'Enkheimer Alteichen'). FNP 2016-10-25 (fetched) independently gives 4.46 m for the thickest of 51 oaks then found and says it stands 'tief im Wald'; a Wikipedia photo caption says 4.30 m, so figure disputed. Commons photos by Kaltolaf (CC BY-SA 4.0, 2016-06-12) have no geotag, so which trunk is unproven. Citizen survey, no official register, none of the 78 is a Naturdenkmal except the Berger Warte oak (frk_019). Not delivered: no individual pin, no photo that settles the trunk. Survey coordinates: Nachtigallenweg 50.15346,8.78001; Wagenweg 50.15656,8.78097 (five trees 250 to 280 years at 50 m spacing, a walkable row); Gaenseweiher 50.14729,8.79164; Dammweg/Postweg 50.14765,8.76919 (six trees, easy from the main path, Waldrastplatz). A GPS fix at the Nachtigallenweg tree would settle it."
+    },
+    {
+      "candidate": "Second oak at the Berger Warte, opposite side of the B521 from the Naturdenkmal oak (frk_019)",
+      "coords": [
+        50.1629,
+        8.7357
+      ],
+      "lat": 50.1629,
+      "lng": 8.7357,
+      "reason": "2026-10-19. de.wikipedia 'Enkheimer Alteichen': unmarked twin of near-identical habit across the road, girth 4.00 or 4.10 m, about 300 m north-west of the old Jewish cemetery Bergen. No coordinate, no photograph. Fold with frk_019 if a page is ever written."
+    },
+    {
+      "candidate": "Eiche am Brentano Bad, Roedelheim (Baumkunde 7325)",
+      "coords": [
+        50.126045,
+        8.620033
+      ],
+      "lat": 50.126045,
+      "lng": 8.620033,
+      "reason": "2026-10-19. Pedunculate oak, girth 6.12 m (2020), 22 m, about 300 years, 'vital' May 2024 but cut back hard; stands on the grounds of the Frankfurter Sportjugend, Baumkunde access 'Privatgelaende'. Hard rule 10: not shipped. Next pass: only if a source says the grounds are open."
+    },
+    {
+      "candidate": "Trauben-Eiche im Holzhausenpark, Nordend (Baumkunde 2174)",
+      "coords": [],
+      "lat": null,
+      "lng": null,
+      "reason": "2026-10-19. Sessile oak, girth about 4.5 m (an entry figure, not measured; date 2023-09-22), planted about 1850 per the Frankfurt Baumkataster as quoted by Baumkunde, public park. A modest 175-year tree: not remarkable enough for a page; kept as a lead. No coordinate read."
+    },
+    {
+      "candidate": "Eiche an der Wolfsweide (ND 005) and Eiche an der Herrenwiese (ND 003)",
+      "coords": [],
+      "lat": null,
+      "lng": null,
+      "reason": "2026-10-19. frankfurt.de pages exist (403 to fetchers; search snippet only, not a source): Wolfsweide Pedunculate oak 25 m, crown 23 m, girth 3.58 m, 15 m protected radius; Herrenwiese Pedunculate oak at the Muehlgraben, no size. Baumkunde has neither. Needs a Wayback copy of the pages (none found for the Speierling page, availability API empty)."
+    },
+    {
+      "candidate": "Speierling Graf-von-Stauffenberg-Allee: delisting question",
+      "coords": [
+        50.175377,
+        8.616509
+      ],
+      "lat": 50.175377,
+      "lng": 8.616509,
+      "reason": "2026-10-19, delivered as frk_018 flagged. Commons file description (2020) says it was a Naturdenkmal in January 2014 but no longer; the 2025 city list still carries ND 001. If a reader or the Amtsblatt shows delisting, the page must drop the protection claim, not the tree."
     }
   ],
   "blocked": [
