@@ -15,7 +15,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - Submission 466 (the reader who reported the Yew of Campo Santana dead) was set to `changed` with no reply_text, so the 09:31 knock auto-composed and sent "What you sent us is on the site now", linking /lisbon, with the App Store line to an app user. Only that mail went; no real answer.
 - Fixed in scripts/contributor_reply.py: the auto template now only fires for an added tree or city; a correction set to `changed` with no reply_text is held ("write one"). The App Store line to app users was already fixed in 4b7d89c65.
-- The correction for the reader (drafts/reply-campo-santana-yew.md, mailcheck clean) was approved by Hidde and put on submission 466 as reply_text with replied_at cleared; the next knock's contributor_reply.py --send mails it. Check replied_at on row 466 is set again afterwards.
+- The correction for the reader (drafts/reply-campo-santana-yew.md, mailcheck clean) was approved by Hidde and put on submission 466 as reply_text with replied_at cleared; no knock ran (review yield), so it was sent from the Mac with contributor_reply.py --send at 13:28 UTC, the only mail in the queue; replied_at is set.
 - Then, on Hidde's word ("the message about the app is very irrelevant keep that out of all mails to users"): the App Store line is gone from every automated mail (contributor_reply.py thank-you, change confirmation and the line it appended to written replies; ambassador.py heads-up), and mailcheck now refuses the link in any letter, not only reply drafts. This ends the 2026-09-03 standing instruction. "Add it in the app" asks to people writing from the app stay.
 
 ## 2026-10-19 session: the iOS app check stops going red on tests it passed
