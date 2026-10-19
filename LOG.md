@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+
+## 2026-10-19 session with Hidde: 40 readers' photographs were wrongly unlinked; restored, and a brake added
+The 16:45 UTC knock unlinked every reader photograph on the site (40, seven accounts) as if all seven had deleted their account, twenty minutes after the ids became codes. Almost certainly the runner's codes do not match the files' (a different SUPABASE_SERVICE_KEY), so every account looked gone. Reverted a1e70b7 (links back) and photo_takedown.py now refuses a sweep where every account, or more than two, reads as deleted. FOR HIDDE: run `python3 scripts/people.py --check` on the Mac; if it passes there, the GitHub secret SUPABASE_SERVICE_KEY differs from the Mac's key and must be made the same, or real deletions will never be processed.
 ## 2026-10-19 session: three Randenbroek trees live in Amersfoort, from IVN's expert list
 
 **Live on /amersfoort (21 trees, English and Dutch):** ame_019 the oak on the pond bank behind Huize Randenbroek (LRMB 1677723, 5.34 m round, 25 m) carries both ages, about 160 by the register and about 375 by the local expert's 1650, and the page's oldest-tree answer now says the expert's date contests the Hertekop oak's title; ame_020 the pair of planes at the park gate (LRMB 1680326, 4.81 m, 30 m, observed by the register July 2026); ame_021 the two-stemmed yew by the house (LRMB 1680327, 19 m). Pins are the register's, confirmed; estate history (Jacob van Campen, 1626 onwards) from the Rijksmonumentenregister. No photos yet, so Bing only until one lands. The expert is not named anywhere.
