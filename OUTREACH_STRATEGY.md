@@ -49,6 +49,18 @@ Feeders, all code, almost no tokens:
 
 Ambassadors are never asked for links or badges (Hidde, 2026-10-16). Nobody gets a second cold mail; a second mail needs news or a reply.
 
+## Communities: Reddit and Facebook (decided 2026-10-16)
+
+Posts, not mails, and Hidde posts them himself from his own accounts; a session drafts. The full plan, the four example posts and the ask-the-admin messages are on his private page https://claude.ai/artifact/CX8HzNwrwuo9wyKXEAfig4 (local copies drafts/where-to-post.html and drafts/group-messages.md stay out of the repo: they name people).
+
+- **Start when the app is tested and stable**, not before: posting was planned for about a week after 2026-10-16.
+- **Order:** Big Tree Seekers (via its admin), r/marijuanaenthusiasts (Reddit's real tree community; r/trees is cannabis), then one city subreddit a week: r/lisbon, r/Edinburgh, r/Munich, r/london. r/bath waits until Bath has more than five trees.
+- **Parked at Hidde's wish:** Dutch and Flemish groups and r/Amsterdam (home turf). Product Hunt waits for phase 2; Hacker News and r/SideProject later or not at all.
+- **Shape that works:** be open that he built it, lead with one tree (a number in the title, one strong photo with its licence credit), ask which tree is missing, link last or in a comment. Ask the admin or mods first.
+- **Reddit:** a fresh account first comments for one to two weeks (10 to 20 useful comments, no links) before any post. **Facebook:** Hidde has no profile; admins are reached by mail instead.
+- **Done:** 2026-10-16 the Big Tree Seekers / Big Trees of New York admin and the coordinator of Australia's National Register of Big Trees were mailed in Hidde's own words (log in drafts/OUTREACH.md). Answers decide whether the Facebook posts happen.
+- **Measure:** the digest's numbers the morning after, never upvotes.
+
 ## The daily rhythm
 
 1. `contacts_db.py --build` then `--ready source --limit 15` (and the other groups on their days).
