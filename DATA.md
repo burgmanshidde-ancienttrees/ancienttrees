@@ -25,6 +25,67 @@ event on the list is unaffected.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## Weekly analysis 2026-10-19
+
+Twelfth weekly analysis. Compares 10-12 to 10-18 with 10-05 to 10-11, read from
+the 10-18 daily entry. 10-18 is partial in Search Console and Google backfills,
+so this week's row can still move a little. Volumes are small throughout;
+nothing below is a trend unless it says so.
+
+**Scorecard**
+
+| Week | Impressions | Clicks | CTR | Avg position | Visits (beacon) | Directions (web) | App-CTA | App downloads (first-time) | Waitlist total | Submissions total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 10-05 to 10-11 | 277 | 14 | 5.1% | 22 to 50 | 330 | 5 (14d) | 19 (14d) | 14 | 21 | 33 |
+| 10-12 to 10-18 | 317 | 12 | 3.8% | 30 to 53 | not in the entry | 0 (7d) | 14 (7d) | 14 (6 days) | 22 | 37 |
+
+Bing, same weeks: 537 impressions and 18 clicks, then 523 and 23 (4.4% CTR).
+App ratios (new phones this week against last): opened a tree day one 86%
+against 58%, tapped Take me there 14% against 8%, back within a week 17%
+against 56% (2 of 12 against 5 of 9). Device split is not in the 10-18 entry.
+
+**What moved:**
+1. Google is flat at the floor for a third week: 317 impressions (about 45 a
+   day), 12 clicks, position 30 to 53. The 10-16 and 10-17 days (73, 62) are
+   one blip, not recovery.
+2. Bing is steady and ahead on clicks: 23 against Google's 12, index up to
+   2,775 pages (2,447 the week before). It converts at 4.4%.
+3. The app held its size (14 new phones against 12, 14 downloads, 8 from App
+   Store search). Day-one opening of a tree rose; the 17% return rate is two
+   phones of twelve, so it is noise either way. Web Take me there: 0 clicks
+   in 7 days.
+4. Readers gave more: submissions 33 to 37 (4 feedback), 3 accounts, 1
+   Android signup, and two Lisbon trees (Jardim Constantino fig and
+   paperbark) went live from one app contributor who stood at 3 trees.
+5. The machine was busy: 273 minutes, 44 trees, 29 first photographs in the
+   last 24 hours; week meter 1,383 minutes against 791 last week.
+
+**Suggestions, ranked:**
+1. **[run]** Sequoia National Park is the only city above the depth threshold
+   (38 impressions, position 73) and "big sherman tree" is a content lead
+   (i2, p69). Check whether a Sherman page exists and what its title says
+   against the query; fix the title or add the photograph first. Traces to
+   the Depth table and the content-leads list.
+2. **[run]** Keep feeding Bing: queries already click at positions 1 to 5
+   (fig tree in square alicante c2, big trees of quebec city c2, queen square
+   bristol, oak tree in zurich). Give those pages a photograph, register
+   link and access line, since Bing is where the clicks are.
+3. **[sessie]** The tree-opened row says 89 events yesterday from 7 installs,
+   one install making 486% of the average. Check whether that install is
+   ours and add it to excluded_installs in data/app-measure.json before the
+   day-one activation ratios are read as real.
+4. **[sessie]** Take me there is the weakest app step (2 of 14, 14%), and web
+   directions are at 0. Walk the tree screen on a phone and see where the
+   button sits and what it says; only 14 phones, so decide by looking, not
+   by waiting for more data.
+5. **[FOR HIDDE]** No new decision. Recovery has now run three weeks with
+   Manual actions clear, so the open choice is only how long to wait before
+   widening RETURN again; suggest a checkpoint date rather than a number.
+
+**Watch next week:** Google daily impressions above 100 for two days in a row,
+whether the Sherman or Sequoia pages move off position 70, and the app
+return rate on a larger base than 12 phones.
+
 ## 2026-10-18 (previous UTC day)
 
 **Today: 2 feedback reports arrived yesterday (37 total).**
