@@ -169,6 +169,28 @@ public final class Saved {
         entries.values.filter { !$0.favourite && $0.visitedAt != nil }
     }
 
+    /// THE ONE-OFF of 2026-10-19: trees hearted AND collected before
+    /// collecting took a tree off Want to visit (toggleVisited). Their hearts
+    /// come off once, here and in the account (CloudSync.merge), so the list
+    /// matches the new rule. A heart put on a collected tree after today is a
+    /// fresh wish to go back and stays.
+    public func clearFulfilledWishes() -> [String] {
+        let ids = entries.values.filter { $0.favourite && $0.visitedAt != nil }.map(\.treeId)
+        for id in ids {
+            if let e = entries[id] {
+                entries[id] = Entry(treeId: id, visitedAt: e.visitedAt, savedAt: e.savedAt, favourite: false)
+            }
+        }
+        if !ids.isEmpty { persist() }
+        return ids
+    }
+
+    private let wishesKey = "saved.collected_leaves_want_v1"
+    public var wishesCleared: Bool {
+        get { defaults.bool(forKey: wishesKey) }
+        set { defaults.set(newValue, forKey: wishesKey) }
+    }
+
     private let repairKey = "saved.saves_are_hearts_v1"
 
     public var savesRepaired: Bool {
@@ -225,8 +247,14 @@ public final class Saved {
                 entries[id] = nil
             }
         } else {
+            // COLLECTING TAKES IT OFF WANT TO VISIT (Hidde, 2026-10-19:
+            // "remove a tree from want to visit yes, because you visited it").
+            // This reverses the 2026-08-26 ruling above for this one direction:
+            // the wish is fulfilled, so it leaves the wish list. Unticking does
+            // not put it back, and taking the heart off still never touches
+            // the collection.
             entries[id] = Entry(treeId: id, visitedAt: Date(),
-                                savedAt: existing?.savedAt ?? Date(), favourite: fav)
+                                savedAt: existing?.savedAt ?? Date(), favourite: false)
         }
         persist()
         if entries[id]?.visitedAt != nil { Measure.event("tree_visited", ["tree": id]) }

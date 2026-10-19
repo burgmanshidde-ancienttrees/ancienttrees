@@ -48,6 +48,13 @@ export const VISITED_SYNC_JS = `
     else if (at === -1) { seen.push(id); }
     var before = seen.slice();
     C.visit(id, on !== false, day).then(function(ok) {
+      // COLLECTING TAKES IT OFF WANT TO VISIT (Hidde, 2026-10-19: "remove a
+      // tree from want to visit yes, because you visited it"), as the app's
+      // Saved.toggleVisited does. Not on Undo (day set): that puts back a
+      // tick, never a wish.
+      if (ok && on !== false && !day && C.save) {
+        C.save(id, false).then(function() { if (window.atSyncSaves) window.atSyncSaves(); });
+      }
       if (ok) return;
       // Refused by the account: back to what it was, and say so on screen.
       seen = before;

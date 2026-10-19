@@ -46,17 +46,24 @@ struct TheTwoLists {
         #expect(saved.favourites.isEmpty)
     }
 
-    /// And the same thing pointing the other way.
-    @Test func untickingATreeYouAlsoHeartedKeepsTheHeart() {
+    /// Hidde, 2026-10-19: "remove a tree from want to visit yes, because you
+    /// visited it". Collecting a hearted tree takes it off Want to visit, and
+    /// unticking does not put it back.
+    @Test func collectingAWantedTreeTakesItOffWantToVisit() {
         let s = Scratch(); defer { s.clean() }
         let saved = Saved(defaults: s.defaults)
 
         saved.toggleSaved("ams_002")
         saved.toggleVisited("ams_002")
-        saved.toggleVisited("ams_002")          // untick
+        #expect(saved.isVisited("ams_002"))
+        #expect(!saved.isSaved("ams_002"), "a collected tree stayed on Want to visit")
+        #expect(saved.favourites.isEmpty)
 
-        #expect(!saved.isVisited("ams_002"))
-        #expect(saved.isSaved("ams_002"), "unticking a visit took the heart with it")
+        // A heart and a tick from before this rule: cleared once.
+        saved.adopt(treeId: "ams_009", visitedAt: Date(), savedAt: Date(), favourite: true)
+        #expect(saved.clearFulfilledWishes() == ["ams_009"])
+        #expect(saved.favourites.isEmpty, "an older hearted-and-collected tree is still listed")
+        #expect(saved.isVisited("ams_009"), "clearing the wish took the collection with it")
     }
 
     /// A row with nothing left in it means nothing and goes, or the collection

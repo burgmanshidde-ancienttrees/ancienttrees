@@ -80,6 +80,17 @@ public enum CloudSync {
             }
         }
 
+        // AFTER the pull, once: a heart on a tree you have also collected
+        // comes off (Hidde, 2026-10-19; Saved.clearFulfilledWishes), here and
+        // in `saves`, or the next pull would put it straight back.
+        if !saved.wishesCleared {
+            var ok = true
+            for id in saved.clearFulfilledWishes() {
+                if !(await Supa.delete("/rest/v1/saves?tree_id=eq.\(id)", token: s.accessToken)) { ok = false }
+            }
+            if ok { saved.wishesCleared = true }
+        }
+
         await pushAll(account: account, saved: saved)
         return pulled
     }

@@ -238,8 +238,8 @@ struct WithTheNetworkTakenAway {
             let s = Scratch(); defer { s.clean() }
 
             let saved = Saved(defaults: s.defaults)
-            saved.toggleSaved("ams_003")
             saved.toggleVisited("ams_003")
+            saved.toggleSaved("ams_003")                            // a wish to go back
             saved.toggleSaved("ams_003")                            // heart off, visit stays
 
             // Stubbed rather than left bare: FaultProtocol only claims a

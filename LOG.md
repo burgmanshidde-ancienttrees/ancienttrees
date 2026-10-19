@@ -65,6 +65,10 @@ Visits last 7 days: 2079 (3240 page views). Rung 2: the failed deploy was qa's s
 - Next: photo-judge on the Commons candidate for lpz_030 ("Flatterulme Lzg. B2.jpg", CC BY-SA 3.0). Roosendaal (22 READY) untouched.
 - Breakage: iOS app workflow shows FAILED (newest run 2026-10-18), not looked at this run.
 <!-- archive-index -->
+## 2026-10-19 session: collecting a tree takes it off Want to visit (Hidde's call)
+
+**What changed in the product:** collecting a tree now removes it from Want to visit, in the app (Saved.toggleVisited) and on the website (atPushVisited). Unticking does not bring it back; a heart put on a collected tree afterwards stays. Older hearted-and-collected trees: cleared once on each phone at its next sign-in sync, and 4 rows in 3 accounts deleted from `saves` today (backup in out/tmp/saves-backup-2026-10-19.json, main checkout). Reverses part of the 2026-08-26 ruling; DECISIONS.md has it. Unit tests pass (FailureTests' unheart test reordered to the new rule). The app half ships with the next build.
+
 ## 2026-10-18 session: Hidde's app test, four fixes
 
 **What changed in the product:**

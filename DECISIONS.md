@@ -1,5 +1,9 @@
 # Decisions
 
+## 2026-10-19: collecting a tree takes it off Want to visit
+
+Testing the app, Hidde asked whether a collected tree should leave Want to visit; told it contradicted his 2026-08-26 ruling that the two lists are independent, he answered "remove a tree from want to visit yes - because you visited it". Only that direction changed: unticking does not put the heart back, and taking a heart off still never touches the collection. A heart put on a collected tree afterwards is a new wish and stays. App: Saved.toggleVisited, plus a one-time clear of older hearted-and-collected rows (Saved.clearFulfilledWishes, run once from CloudSync.merge). Web: atPushVisited (visited-sync-js.ts). Existing accounts: 4 rows in 3 accounts deleted from `saves` the same day, backed up to out/tmp/saves-backup-2026-10-19.json in the main checkout. Test: collectingAWantedTreeTakesItOffWantToVisit.
+
 ## 2026-10-16: photos on pages Google shows come before enrichment
 
 Asked how enrichment was going, the session found the queue empty after about 565 enrichment commits since 10-01, and Google flat at about 35 impressions a day: rich indexed tree pages earned 0.06 impressions each over ten days, not-yet-rich ones 0.08. Most of the commits went to one-tree places with no searches (Westerlo, Wolfheze, Zalgiriai). The session pushed back: move effort to photographs on the cities Google used to show, to backlinks, and keep the noindex list tight (it already is: 16 of 459 places under four trees are indexable). Hidde: "do this". Enrichment is now the frozen roster only (`ROSTER_ONLY` in scripts/enrich.py), undoing the 10-13 widening to every city; photos lead the recovery-mode list in CLAUDE.md. A Commons re-sweep ran the same day on the 20 roster cities with the most pre-demotion impressions (642 trees without a photograph in the top 40).

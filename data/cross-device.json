@@ -107,6 +107,10 @@
       "verdict": "device",
       "why": "The latch on the one-off saves-are-hearts repair of 2026-09-18 (CloudSync.repairSaves). Device rather than account on purpose: the repair identifies a stray row by asking THIS phone's own record of taps which entries are ticked-but-not-hearted, so a second device with a different local history has its own strays to clear. Syncing the latch would suppress a repair that device still needs. It is a bounded migration flag and carries no user data, so nothing is lost when the app is deleted."
     },
+    "saved.collected_leaves_want_v1": {
+      "verdict": "device",
+      "why": "The latch on the one-off of 2026-10-19 (Saved.clearFulfilledWishes, run once from CloudSync.merge): hearts on trees this phone also holds as collected come off, here and in saves. Device for the same reason as saves_are_hearts_v1: each phone clears what its own copy still holds. A bounded migration flag, no user data."
+    },
     "file:CatalogueStore.swift": {
       "verdict": "device",
       "why": "The last downloaded copy of OUR catalogue (trees, walks, species, browse) in Application Support, so the app opens offline. Nobody's data, the same on every phone, replaced on the next refresh."
