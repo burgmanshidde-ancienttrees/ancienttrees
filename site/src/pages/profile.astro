@@ -99,7 +99,10 @@ const LOCK = icon("lock-simple", "bold", "ic");
   var UNTIL = ${JSON.stringify(EARLY_ADOPTER_UNTIL)};
   function el(id) { return document.getElementById(id); }
   var uid = new URLSearchParams(location.search).get("u") || "";
-  function closed() { el("pp-private").hidden = false; }
+  // The sheet's peek is one header tall and is measured on resize
+  // (sheet-js.ts), so it is told when the header fills in after the fetch.
+  function remeasure() { window.dispatchEvent(new Event("resize")); }
+  function closed() { el("pp-private").hidden = false; remeasure(); }
   if (!/^[0-9a-f-]{36}$/i.test(uid)) { closed(); return; }
 
   fetch(SB + "/rest/v1/rpc/public_profile", {
@@ -140,6 +143,7 @@ const LOCK = icon("lock-simple", "bold", "ic");
     if (p.created_at && (!UNTIL || p.created_at < UNTIL)) el("pp-early").hidden = false;
     follow(p);
     lists(p.visited || [], p.saves || []);
+    remeasure();
   }
 
   // FOLLOW, the app's PeopleView button on the web: a follows row written
