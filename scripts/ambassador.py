@@ -595,10 +595,6 @@ HEADS_UP_BODY = (
     "{appline}\n"
     "Thanks again for your support,\nAncient Trees\n"
 )
-# Every outbound mail carries the App Store link (Hidde, 2026-09-03, enforced
-# by scripts/mailcheck.py), except to somebody who has said they cannot use
-# it (NO_APP_LINK there) and to somebody who already holds the app.
-HEADS_UP_APPLINE = "The app, if you want the list with you outside: {app}\n"
 
 
 def _private_addresses():
@@ -692,12 +688,8 @@ def heads_up(send):
                     if h in private:
                         addr = private[h]
                         break
-        try:
-            from mailcheck import NO_APP_LINK, APP_STORE_URL
-        except Exception:
-            NO_APP_LINK, APP_STORE_URL = {}, "https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-GB"
-        no_link = has_app or (addr or "").lower() in NO_APP_LINK
-        appline = "" if no_link else HEADS_UP_APPLINE.format(app=APP_STORE_URL)
+        # No App Store line in any mail to a reader (Hidde, 2026-10-19).
+        no_link, appline = True, ""
         body = HEADS_UP_BODY.format(place=place, what=what, links=links,
                                     them="it" if len(live) == 1 else "them",
                                     listlink=f"{BASE_URL}/{slug}", appline=appline)

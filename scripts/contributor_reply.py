@@ -48,7 +48,6 @@ import urllib.request
 from email.message import EmailMessage
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from mailcheck import NO_APP_LINK, APP_STORE_URL  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPA = "https://caimvxiyrtifilimlkqw.supabase.co"
@@ -261,31 +260,10 @@ def thanks_body(rows_for_addr, addr=None):
             "a photograph. Every one of them makes the map better, and a real "
             "person telling us about a real tree is the best thing this "
             "project receives.", ""]
-    # THE APP IS LIVE, SO SAY SO (Hidde, 2026-09-03: "onze app staat live dus
-    # vertel dat en we zijn beniewud wat ie er van vindt", then "stuur dat nu
-    # altijd maar mee met de komende mailtjes"). Standing instruction on every
-    # outbound mail, mailcheck.py's check_app_link enforces it, and the exact
-    # two lines are HIS_VOICE.md's own. Somebody already using the app gets
-    # the shorter form: telling them it exists would be telling them what they
-    # are holding.
-    if addr and addr.lower() in NO_APP_LINK:
-        pass
-    elif from_the_app(rows_for_addr):
-        # NOTHING. Hidde, 2026-09-11, on a thank-you he got for a tree he had
-        # added in the app, which closed by pointing him at the App Store:
-        # "onder deze mail hoeft geen verwijzing naar de app."
-        #
-        # It used to send the shorter form, on the reasoning that somebody
-        # holding the app can still be asked what they think of it. That was
-        # the wrong read of the same instruction this file already follows for
-        # a published photograph (sightings_publish.py): a link to the thing
-        # in your hand is not an invitation, it is a letter that has not
-        # noticed who it is writing to. His 2026-09-03 instruction was that
-        # the app is live, so TELL PEOPLE, and these people know.
-        pass
-    else:
-        out += ["Our app is also live now. We would like to know what you "
-                "think of it:", "", APP_STORE_URL, ""]
+    # NO APP STORE LINE IN ANY MAIL TO A READER (Hidde, 2026-10-19, after
+    # the dead-yew reader got one: "the message about the app is very
+    # irrelevant keep that out of all mails to users"). mailcheck.py's
+    # check_app_link refuses it. The 2026-09-03 standing line is over.
     out += ["Ancient Trees", SITE]
     return "\n".join(out) + "\n"
 
@@ -332,23 +310,6 @@ def uses_the_app(uid, key):
     except Exception:
         return False
     return bool(rows)
-
-
-def with_app_link(text, addr, page):
-    """Append the standing App Store paragraph if a reply does not already
-    carry it (Hidde, 2026-09-03: every outbound mail says the app is live).
-    mailcheck.py enforces this on any real letter, and a specific answer
-    composed by hand or by an earlier run is not exempt just because it was
-    written before the auto-composed template learned the same line: eight
-    rows sat on HOLD for exactly this reason before this existed."""
-    if "6806177833" in text or addr in NO_APP_LINK:
-        return text
-    if (page or "").startswith("app"):
-        para = "We would like to know what you think of the app:\n\n" + APP_STORE_URL
-    else:
-        para = ("Our app is also live now. We would like to know what you "
-                "think of it:\n\n" + APP_STORE_URL)
-    return text.rstrip("\n") + "\n\n" + para + "\n"
 
 
 def mailcheck_ok(text, app_user=False):
@@ -523,7 +484,6 @@ def main():
             # select did not even carry, and which holds the referrer rather
             # than the tree: a reader who arrived from Google would have been
             # sent a link to Google.
-            low_addr = addr.lower()
             page = tip_link(r)
             if not page and r.get("city"):
                 page = "%s/%s" % (SITE, r["city"].strip().lower().replace(" ", "-"))
@@ -539,36 +499,13 @@ def main():
                       "Have a look and tell us if anything is still wrong. And "
                       "if you know another tree worth adding, we would like to "
                       "hear about it.", ""]
-            # THE STANDING APP LINE, which this mail never carried, so
-            # mailcheck held every single one of them from the day the line
-            # became standing (2026-09-03) until this was found on 09-11. The
-            # symptom was invisible: the run prints HOLD and moves on, so a
-            # reader whose tip we acted on was told nothing at all. Same rule
-            # as the thank-you above, including the exemptions.
-            if not (low_addr in NO_APP_LINK or from_the_app([r])
-                    or uses_the_app(r.get("user_id"), key)):
-                lines += ["Our app is also live now. We would like to know "
-                          "what you think of it:", "", APP_STORE_URL, ""]
             lines += ["Ancient Trees", "https://ancienttrees.app"]
             r["reply_text"] = "\n".join(lines) + "\n"
             supa("/rest/v1/submissions?id=eq.%s" % r["id"], key, "PATCH",
                  {"reply_text": r["reply_text"]})
             print("AUTO composed a change confirmation for row %s" % r["id"])
         if r.get("reply_text") and not r.get("replied_at"):
-            # Somebody writing from inside the app is the one case that gets
-            # neither: no line appended and none demanded (Hidde, 2026-09-11,
-            # on a thank-you that closed by pointing him at an app he was
-            # holding: "onder deze mail hoeft geen verwijzing naar de app").
-            # The declaration rides in the draft header, above the separator,
-            # so it never reaches the reader.
             app_user = from_the_app([r]) or uses_the_app(r.get("user_id"), key)
-            if not app_user:
-                fixed = with_app_link(r["reply_text"], addr, r.get("page"))
-                if fixed != r["reply_text"]:
-                    r["reply_text"] = fixed
-                    supa("/rest/v1/submissions?id=eq.%s" % r["id"], key, "PATCH",
-                         {"reply_text": fixed})
-                    print("Added the app-store line to row %s's reply" % r["id"])
             ok, report = mailcheck_ok(r["reply_text"], app_user=app_user)
             if not ok:
                 print("HOLD reply for row %s: mailcheck says:\n%s"

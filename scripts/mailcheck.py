@@ -346,10 +346,14 @@ def check_app_link(path, text, body):
     The old reasoning below is kept for the record."""
     if not BODY_SPLIT.search(text):
         return []
-    if os.path.basename(path).startswith("reply-") and "6806177833" in body:
-        return [("APP LINK IN A REPLY", "6806177833",
-                 "Hidde, 2026-10-15 and 10-16: the App Store link in a reply "
-                 "reads as selling. Answer them and ask about a tree.")]
+    # Since 2026-10-19 every letter, not only a reply-*.md draft: the automated
+    # mails to readers pass through here as temp files and were still sending
+    # it ("the message about the app is very irrelevant keep that out of all
+    # mails to users", Hidde, after the dead-yew reader got one).
+    if "6806177833" in body or re.search(r"apps\.apple\.com", body):
+        return [("APP LINK IN A MAIL", "6806177833",
+                 "Hidde, 2026-10-15, 10-16 and 10-19: no App Store link in a "
+                 "mail to a reader. Answer them and ask about a tree.")]
     return []
 
 
