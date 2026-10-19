@@ -10,6 +10,10 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-10-19 night run (window from 21:39 UTC): nothing published
+
+Rung 1: one app sighting, ed90210d (European Beech, Freiburg, 47.9543 7.8067). No register entry within 100 m, no encyclopaedia article within 300 m. Its photograph is not on this runner (out/sightings/ has no file), so the verdict stays open rather than judged blind. Rung 4: `photo_hunt.py --recheck --city london` found 0 new candidates for the 7 photo-less trees. The writable pile is three finished trees (fdl_001, ftw_018, std_001) and prepare.py asks for a verify refill (1026 leads short only a source); I dispatched no verify agent this run. Not done: no trees added, no commits besides this entry. Also open from the session brief: the Build and deploy site failure (1 in a row) and 31 photographs not yet vendored.
 <!-- archive-index -->
 ## 2026-10-19 session with Hidde: the headline never grades a first day by Take me there
 A session quoted the 10-18 digest's old activation table and called "2 of 14 tapped Take me there on day one" the weakest link. Hidde: people are often scouting for their holidays and are far too far away for that button. The headline already dropped the row this morning; what was missing was a ratchet. `check_the_headline_never_judges_take_me_there()` in qa.py refuses a Take me there, first-day, weakest-link or back-within-a-week line in `headline_section()` and in DATA.md's newest entry from 2026-10-20 on. CLAUDE.md's digest line says why. Nothing in the product changed.
