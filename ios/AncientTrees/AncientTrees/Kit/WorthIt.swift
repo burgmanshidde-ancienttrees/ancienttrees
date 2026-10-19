@@ -164,6 +164,11 @@ struct WorthItView: View {
                                       "The thicker trunk, the one nearest the path, by the bench"),
         "could not reach it": ("What stopped you? (optional)",
                                "A locked gate, a fence, opening hours, private land"),
+        // A duplicate is reported, never merged by the reader (Hidde,
+        // 2026-10-19: they report, we review). Google Maps' "Place is a
+        // duplicate" sits in its report menu the same way.
+        "on the map twice": ("Which other tree is it? (optional)",
+                             "Its name, or where the other pin is"),
         "something else": ("Tell us in a line.",
                            "What we got wrong, or what we are missing"),
     ]
@@ -233,6 +238,7 @@ struct WorthItView: View {
             chip("Wrong location", "wrong location")
             chip("Couldn't tell which tree", "could not tell which tree")
             chip("Couldn't reach it", "could not reach it")
+            chip("It's on the map twice", "on the map twice")
             chip("Something else", "something else")
         }
     }

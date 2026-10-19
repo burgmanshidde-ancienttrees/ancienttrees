@@ -232,24 +232,15 @@ struct CollectSheet: View {
         return inReach.sorted { $0.km < $1.km }.prefix(3).map { $0.tree }
     }
 
-    /// ONE OF OURS, ALMOST CERTAINLY (Hidde, 2026-10-18, on a second Town
-    /// Hall Plane among his own trees, a few metres from ours: "dat moet niet
-    /// kunnen dan krijg je allemaal rommelige duplicaten"). Within 30 metres a
-    /// tree "only you have" is nearly always the one we already map, which is
-    /// the same distance the server matches a sighting at
-    /// (scripts/sightings_inbox.py, MATCH_M). A tree of yours this close
-    /// offers to become your photograph of ours (TreeDetail, sameTreeRow).
-    /// NOT asked again on "Add a new tree" (Hidde, 2026-10-18: "deze vraag
-    /// staat al op het eerste scherm ... deze stap is onnodig"): the list
-    /// above that button already names the tree, so a second screen asking
-    /// the same question was removed the day it shipped. CONVENTIONS.md,
-    /// "Adding a tree that is already on the map".
+    /// Within 30 metres two photographs are nearly always of the same trunk,
+    /// the distance the server matches a sighting at
+    /// (scripts/sightings_inbox.py, MATCH_M). Merging a tree of yours into
+    /// one of ours is in the ⋯ menu of its page (MergeChooser), never asked
+    /// on the way in: "Add a new tree" sits under a list that already names
+    /// our trees, and a second screen asking again was removed the day it
+    /// shipped (Hidde, 2026-10-18: "deze stap is onnodig"; CONVENTIONS.md,
+    /// "Adding a tree that is already on the map").
     static let sameTreeMetres = 30.0
-
-    static func sameTree(origin: (lat: Double, lng: Double), trees: [Tree]) -> Tree? {
-        let measured: [(tree: Tree, km: Double)] = trees.map { ($0, Geo.km(origin, ($0.lat, $0.lng))) }
-        return measured.filter { $0.km * 1000 <= sameTreeMetres }.min { $0.km < $1.km }?.tree
-    }
 
     /// YOUR OWN TREE, PHOTOGRAPHED AGAIN (Hidde, 2026-10-18: "twee losse
     /// pins voor twee foto's van 1 boom"). A second photograph of a tree you

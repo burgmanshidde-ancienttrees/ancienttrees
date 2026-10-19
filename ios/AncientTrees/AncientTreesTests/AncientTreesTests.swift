@@ -83,22 +83,6 @@ struct SpotSplit {
         #expect(CollectSheet.distance(40) == "40 m")
     }
 
-    /// Hidde, Baarn, 2026-10-18: "Add a new tree" at the Town Hall Plane made
-    /// a second one in his own trees. Within 30 m a tree of yours offers to
-    /// fold into ours; 73 m away it is a different tree and nothing is offered.
-    @Test func aTreeOfYoursOnTopOfOursOffersToFold() async throws {
-        let store = CatalogueStore()
-        await store.loadBundled()
-        let cat = try #require(store.catalogue, "the bundled catalogue did not load")
-
-        let atTheTownHall = (lat: 52.21076, lng: 5.29160)
-        #expect(CollectSheet.sameTree(origin: atTheTownHall, trees: cat.trees)?.id == "brn_008",
-                "standing at the Town Hall Plane does not find it")
-        let halfwayToTheNext = (lat: 52.21140, lng: 5.29160)
-        #expect(CollectSheet.sameTree(origin: halfwayToTheNext, trees: cat.trees) == nil,
-                "70 m away still counts as the same tree")
-    }
-
     /// Hidde, 2026-10-18: "twee losse pins voor twee foto's van 1 boom". A
     /// second photograph beside a tree you added offers that tree first.
     @Test func aSecondPhotoOfYourOwnTreeOffersIt() {
