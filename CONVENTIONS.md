@@ -29,6 +29,14 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## "Open in app" from the website (2026-10-19, recorded)
+
+**Reference: AllTrails, read from the association files iOS itself downloads** (Apple's CDN, `https://app-site-association.cdn-apple.com/a/v1/www.alltrails.com`, and each link domain's `/.well-known/apple-app-site-association`, fetched 2026-10-19). The page itself sits behind a bot check, so the button's own href was not seen. Three domains open their app: **www.alltrails.com** (content paths: `/trail/*`, `/parks/*`, `/lists/*`, `/members/*`, every country page), the same arrangement as ours; **alltrails.onelink.me** (AppsFlyer's OneLink, a few short path prefixes, plus App Clips); and **alltrails.page.link** (Firebase Dynamic Links, `/*`). The two extra domains exist for one reason, and it is Apple's rule: a universal link opens the app only when it is tapped on a DIFFERENT domain. A link to alltrails.com tapped on alltrails.com stays in Safari, so the "open the app" button has to point at another domain, which hands the tap to the app when it is installed and to the App Store when it is not. Nothing on the web page ever learns whether the app is there; iOS decides at the tap.
+
+Ours today: TreeDetail's button points at ancienttrees.app/open, the same domain, so on an iPhone with the app it always ends in the App Store (Hidde, 2026-10-18: "Open in app op website moet die niet herkennen of de app er al is?"). The AllTrails pattern without a third-party service (hard list 5): a subdomain of our own (for example open.ancienttrees.app) serving the same AASA and the /open fallback page, `applinks:` for it in the app's entitlements (a new build), the button pointed there. Not built: needs the subdomain set up on Cloudflare and Hidde's yes.
+
+---
+
 ## A public profile, and the private switch (2026-10-19)
 
 **Reference: Polarsteps** (support.polarsteps.com/hc/articles/24267891448850, "Who can see my Polarsteps account and trips", and Polarsteps' statement of 2026-09-04 at polarsteps.com/comment-follow-the-money, both read 2026-10-19). Every account starts private; the person switches to "Everyone", which opens the profile to anybody, with or without an account. The setting lives in Settings under the account type, a switch. Polarsteps' statement after a journalist investigation: profiles are "private/followers only" by default, never public, and live location on a public trip is visible to anyone. Instagram's "Private account" switch is the same shape (from memory, a lead to check).
