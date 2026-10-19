@@ -72,6 +72,23 @@ const crumbItems: [string, string | null][] = [
       <Fragment set:html={icon("caret-right", "bold", "ic set-go")} />
     </button>
 
+    {/* PRIVATE PROFILE (Hidde, 2026-10-19, after the design page: "ja dit
+        ziet er goed uit"). Polarsteps' and Instagram's "Private account"
+        switch, ON for everybody until the person turns it off and confirms
+        the sheet below (CONVENTIONS.md, "A public profile, and the private
+        switch"). The row stays hidden until profiles.public answers, like
+        Distances: a switch that stores nothing is worse than none. */}
+    <div id="st-privacy" hidden>
+      <p class="acct-group">Privacy</p>
+      <div class="acct-rows">
+        <button type="button" class="set-row" id="priv-row" role="switch" aria-checked="true">
+          <Fragment set:html={icon("lock-simple", "bold", "ic set-ic")} /><span class="set-label">Private profile</span><span class="set-switch" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="set-foot" id="priv-foot" data-on="Only you see your profile." data-off="Anyone can see your profile and your trees.">Only you see your profile.</p>
+      <p class="set-foot" id="priv-link" hidden><a href="/account">See your public profile</a></p>
+    </div>
+
     <p class="acct-group">Preferences</p>
     <div class="acct-rows">
       <label class="set-row" id="st-units" hidden>
@@ -136,6 +153,24 @@ const crumbItems: [string, string | null][] = [
       <button type="button" id="save-name" class="sheet-b sheet-b--primary">Save</button>
     </div>
     <p class="at-sheet-fine" id="name-status" role="status" hidden></p>
+  </Sheet>
+
+  {/* TURNING THE SWITCH OFF ASKS FIRST, and says what becomes visible: the
+      same two lists you see on your own profile, which is where you have
+      been. Turning it back on is one tap and asks nothing (Instagram). */}
+  <Sheet id="pub-sheet" aria-labelledby="pub-h">
+    <span class="at-sheet-tile"><Fragment set:html={icon("globe-hemisphere-east", "bold")} /></span>
+    <h3 class="at-sheet-h" id="pub-h">Make your profile public?</h3>
+    <p class="at-sheet-p">Anyone can then open it, with or without an account.</p>
+    <ul class="at-sheet-pts">
+      <li><Fragment set:html={icon("check", "bold")} />Your name and picture</li>
+      <li><Fragment set:html={icon("check", "bold")} />The trees you collected and want to visit</li>
+      <li><Fragment set:html={icon("check", "bold")} />Your badges</li>
+    </ul>
+    <div class="at-sheet-btns">
+      <button type="button" id="pub-yes" class="sheet-b sheet-b--primary">Make public</button>
+      <button type="button" id="pub-no" class="sheet-b sheet-b--quiet">Not now</button>
+    </div>
   </Sheet>
 
   <Sheet id="out-sheet" aria-labelledby="out-h">
@@ -229,8 +264,58 @@ const crumbItems: [string, string | null][] = [
           myCountry = (rows && rows[0] && rows[0].country) || "";
           document.getElementById("in-country").value = myCountry;
         }).catch(function() {});
+      // PRIVATE PROFILE, read on its own like the country, so a database
+      // without profiles.public yet costs the switch and nothing else.
+      fetch(SB + "/rest/v1/profiles?select=public,display_name&user_id=eq." + encodeURIComponent(u.id),
+            { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(rows) { if (rows) privacy(rows[0] || null); })
+        .catch(function() {});
     }).catch(function() {});
   var myCountry = "";
+
+  // The switch reads "Private profile", so ON is private, as Polarsteps and
+  // Instagram word it. profiles.public is its opposite, stored on the server
+  // so the phone and the laptop agree (hard rule 11).
+  var isPublic = false, hasName = false;
+  function paintPrivacy() {
+    var row = document.getElementById("priv-row");
+    var foot = document.getElementById("priv-foot");
+    row.setAttribute("aria-checked", isPublic ? "false" : "true");
+    foot.textContent = foot.getAttribute(isPublic ? "data-off" : "data-on");
+    var link = document.getElementById("priv-link");
+    link.hidden = !isPublic;
+    if (myId) link.firstChild.href = "/profile?u=" + encodeURIComponent(myId);
+  }
+  function writePublic(want, done) {
+    var cur = session();
+    if (!cur || !myId) return;
+    fetch(SB + "/rest/v1/profiles?user_id=eq." + encodeURIComponent(myId), {
+      method: "PATCH",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                 "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({ public: want })
+    }).then(function(r) { if (r.ok) { isPublic = want; paintPrivacy(); } if (done) done(r.ok); })
+      .catch(function() { if (done) done(false); });
+  }
+  function privacy(row) {
+    document.getElementById("st-privacy").hidden = false;
+    isPublic = Boolean(row && row.public);
+    hasName = Boolean(row && row.display_name);
+    paintPrivacy();
+  }
+  document.getElementById("priv-row").addEventListener("click", function() {
+    if (isPublic) { writePublic(false); return; }
+    // A public profile needs a name to show: no profiles row exists until
+    // somebody sets one (supabase/profiles.sql), so the name comes first.
+    if (!hasName) { say("Add a name first; it is what your public profile shows."); open("me-sheet"); return; }
+    open("pub-sheet");
+  });
+  document.getElementById("pub-yes").addEventListener("click", function() {
+    var b = this; b.disabled = true;
+    writePublic(true, function() { b.disabled = false; shut("pub-sheet"); });
+  });
+  document.getElementById("pub-no").addEventListener("click", function() { shut("pub-sheet"); });
 
   // KILOMETRES OR MILES, the same profiles.units the app writes, so the choice
   // follows somebody between the phone and the laptop. The row stays hidden
@@ -390,6 +475,7 @@ const crumbItems: [string, string | null][] = [
         if (r.ok && url) { myAvatar = url; picked = null; }
         if (!r.ok) { nameBtn.disabled = false; say("That did not save. Try again in a moment."); return; }
         document.getElementById("me-name").textContent = v;
+        hasName = true;
         // The country on its own write, like the app's saveCountry, and only
         // when it changed: null clears the flag.
         var want = document.getElementById("in-country").value;

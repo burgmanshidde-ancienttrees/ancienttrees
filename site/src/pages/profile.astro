@@ -1,0 +1,238 @@
+---
+// Somebody else's profile, when they made it public: /profile?u=<user id>.
+//
+// Reference: Polarsteps' public profile (polarsteps.com/<name>), and our own
+// /account. Hidde, 2026-10-19, looking at the design page: "ja dit ziet er goed
+// uit", and on the two lists: "die kunnen gewoon gelijk blijven toch?". So this
+// is /account as a visitor sees it: the same skeleton, the same header row with
+// Follow where your own gear sits, the same badges, the same two tabs and the
+// same grid, and the same map of the trees beside it.
+//
+// WHO MAY BE SEEN is the server's answer, never this page's: public_profile()
+// (supabase/public-profiles.sql) returns the profile only while its owner's
+// "Private profile" switch is off, and null otherwise. Private, unknown and
+// not-yet-migrated all read the same: "This profile is private."
+//
+// What it never shows, because the function never returns it: the day a tree
+// was ticked, a private sighting photograph, an email address.
+//
+// Noindexed and out of the sitemap: during Google recovery no new page type
+// enters the index, and a person's page is not a search landing.
+import Base from "../layouts/Base.astro";
+import { BASE_URL } from "../lib/schema";
+import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
+import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
+import { myTreesMapScript, mapHead } from "../lib/map";
+import { icon } from "../lib/icons";
+import { EARLY_ADOPTER_UNTIL } from "../lib/early-adopter";
+
+const canonical = `${BASE_URL}/profile`;
+const SEAL = icon("seal-check", "fill", "ic").replace(/\n/g, "").replace(/'/g, "");
+const LOCK = icon("lock-simple", "bold", "ic");
+---
+<Base
+  title="Profile"
+  description="Trees somebody collected on Ancient Trees."
+  canonical={canonical}
+  headExtra={'<meta name="robots" content="noindex, nofollow">' + mapHead()}
+  footer={false}
+>
+<div class="split">
+  <aside class="panel" id="sheet">
+  <div class="sheet-grab"><div class="panel-head">
+
+  <section id="pp-private" class="acct-card" hidden>
+    <p class="pp-private"><Fragment set:html={LOCK} />This profile is private.</p>
+  </section>
+
+  <section id="pp-in" class="profile-head" hidden>
+    <div class="profile-top">
+      <span class="profile-avatar" id="pp-avatar" aria-hidden="true"></span>
+      <div class="profile-who">
+        <div class="profile-name"><h1 id="pp-name"></h1><img class="profile-flag" id="pp-flag" alt="" width="20" height="20" hidden /></div>
+        <p class="profile-follow"><b id="pp-followers">0</b> followers &nbsp; <b id="pp-following">0</b> following</p>
+      </div>
+      {/* Follow where the gear sits on your own profile (Polarsteps). Your
+          own public profile shows no button: you do not follow yourself. */}
+      <button type="button" class="profile-follow-btn" id="pp-follow" hidden>Follow</button>
+    </div>
+    <div class="profile-badges">
+      <p class="profile-ambassador" id="pp-ambassador" hidden></p>
+      <p class="profile-early" id="pp-early" hidden><Fragment set:html={icon("sparkle", "fill", "ic")} /><span>Early adopter</span></p>
+    </div>
+  </section>
+  </div></div>
+
+  <div class="sheet-body">
+  <section class="acct-lanes" id="pp-lanes" hidden>
+    <div class="lane-picker" role="tablist" aria-label="Their lists">
+      <button type="button" id="lane-mine" class="lane on" role="tab" aria-selected="true" aria-controls="pane-mine">Collected</button>
+      <button type="button" id="lane-saved" class="lane" role="tab" aria-selected="false" aria-controls="pane-saved">Want to visit</button>
+    </div>
+    <div id="pane-mine" role="tabpanel" aria-labelledby="lane-mine">
+      <ul id="visited-list" class="saved-list" hidden></ul>
+      <p id="mine-empty" class="pp-empty" hidden>No trees collected yet.</p>
+    </div>
+    <div id="pane-saved" role="tabpanel" aria-labelledby="lane-saved" hidden>
+      <ul id="saved-list" class="saved-list" hidden></ul>
+      <p id="saved-empty" class="pp-empty" hidden>No trees saved yet.</p>
+    </div>
+  </section>
+  </div>
+  </aside>
+  <div class="stage">
+    <div id="map" class="map"></div>
+  </div>
+</div>
+<style>
+  .pp-private { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 16px; color: var(--ink-mid); }
+  .pp-private :global(svg) { width: 20px; height: 20px; flex: none; }
+  .pp-empty { grid-column: 1 / -1; margin: 0; color: var(--ink-mid); font-size: 15px; }
+</style>
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + `
+<script>
+(function() {
+  var C = window.atCollection;
+  var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
+  var SEAL = '${SEAL}';
+  var UNTIL = ${JSON.stringify(EARLY_ADOPTER_UNTIL)};
+  function el(id) { return document.getElementById(id); }
+  var uid = new URLSearchParams(location.search).get("u") || "";
+  function closed() { el("pp-private").hidden = false; }
+  if (!/^[0-9a-f-]{36}$/i.test(uid)) { closed(); return; }
+
+  fetch(SB + "/rest/v1/rpc/public_profile", {
+    method: "POST",
+    headers: { "apikey": KEY, "Authorization": "Bearer " + KEY, "Content-Type": "application/json" },
+    body: JSON.stringify({ uid: uid })
+  }).then(function(r) { return r.ok ? r.json() : null; })
+    .then(function(p) { if (p && p.display_name) show(p); else closed(); })
+    .catch(closed);
+
+  function show(p) {
+    document.title = p.display_name + " · Ancient Trees";
+    el("pp-in").hidden = false;
+    el("pp-lanes").hidden = false;
+    el("pp-name").textContent = p.display_name;
+    var av = el("pp-avatar");
+    if (p.avatar_url) av.style.backgroundImage = "url(" + String(p.avatar_url).replace(/[()'"]/g, "") + ")";
+    else av.textContent = p.display_name.charAt(0).toUpperCase();
+    if (p.country && /^[A-Z]{2}$/.test(p.country)) {
+      var img = el("pp-flag");
+      img.src = "/flags/" + p.country.toLowerCase() + ".svg";
+      try { img.alt = new Intl.DisplayNames(["en"], { type: "region" }).of(p.country) || p.country; } catch (e) { img.alt = p.country; }
+      img.hidden = false;
+    }
+    el("pp-followers").textContent = p.followers || 0;
+    el("pp-following").textContent = p.following || 0;
+    // The badges in the app's words (AmbassadorBadge.swift, profile-js.ts).
+    var names = p.ambassador || [];
+    if (names.length) {
+      var label = names.length === 1 ? names[0] + " ambassador"
+        : names.length === 2 ? names[0] + " and " + names[1] + " ambassador"
+        : names[0] + ", " + names[1] + " and " + (names.length - 2) + " more, ambassador";
+      var amb = el("pp-ambassador");
+      amb.innerHTML = SEAL + "<span></span>";
+      amb.lastChild.textContent = label;
+      amb.hidden = false;
+    }
+    if (p.created_at && (!UNTIL || p.created_at < UNTIL)) el("pp-early").hidden = false;
+    follow(p);
+    lists(p.visited || [], p.saves || []);
+  }
+
+  // FOLLOW, the app's PeopleView button on the web: a follows row written
+  // with the viewer's own session (supabase/profiles.sql), behind the one gate.
+  function follow(p) {
+    var btn = el("pp-follow");
+    var following = false;
+    function paint() {
+      btn.textContent = following ? "Following" : "Follow";
+      btn.classList.toggle("on", following);
+      btn.setAttribute("aria-pressed", following ? "true" : "false");
+    }
+    function api(s, method, path, body) {
+      var h = { "apikey": KEY, "Authorization": "Bearer " + s.access_token };
+      if (body) { h["Content-Type"] = "application/json"; h["Prefer"] = "return=minimal"; }
+      return fetch(SB + path, { method: method, headers: h, body: body ? JSON.stringify(body) : undefined });
+    }
+    var me = null;
+    C.verify().then(function(ok) {
+      var s = ok && C.session();
+      if (!s) { btn.hidden = false; paint(); return; }
+      fetch(SB + "/auth/v1/user", { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(u) {
+          me = u && u.id;
+          if (me === p.user_id) return;          // your own public profile
+          btn.hidden = false; paint();
+          if (!me) return;
+          api(s, "GET", "/rest/v1/follows?select=followee&follower=eq." + me + "&followee=eq." + p.user_id)
+            .then(function(r) { return r.ok ? r.json() : []; })
+            .then(function(rows) { following = !!(rows && rows.length); paint(); });
+        });
+    });
+    btn.addEventListener("click", function() {
+      C.gate(function(s) {
+        if (!me || me === p.user_id) return;
+        btn.disabled = true;
+        var req = following
+          ? api(s, "DELETE", "/rest/v1/follows?follower=eq." + me + "&followee=eq." + p.user_id)
+          : api(s, "POST", "/rest/v1/follows", { follower: me, followee: p.user_id });
+        req.then(function(r) {
+          btn.disabled = false;
+          if (!r.ok) return;
+          var n = el("pp-followers");
+          n.textContent = Math.max(0, parseInt(n.textContent, 10) + (following ? -1 : 1));
+          following = !following; paint();
+        }).catch(function() { btn.disabled = false; });
+      }, function() { if (window.atOpenSignIn) window.atOpenSignIn(null, "feedback"); });
+    });
+  }
+
+  // THE TWO LISTS AND THE MAP, the account page's own: ids from the server,
+  // what each tree is from /api/cards.json, the one card.
+  function lists(visited, saves) {
+    C.catalogue().then(function(cards) {
+      function fill(listId, emptyId, ids) {
+        var known = ids.filter(function(id) { return cards[id]; });
+        var node = el(listId);
+        if (!known.length) { el(emptyId).hidden = false; return; }
+        node.innerHTML = known.map(function(id) {
+          var city = String(cards[id].c || "").replace(/[&"<>]/g, "");
+          return '<li' + (city ? ' data-city="' + city + '"' : '') + '>' + C.card(id, cards[id], false, false) + '</li>';
+        }).join("");
+        node.hidden = false;
+        if (window.atPaintSaves) window.atPaintSaves();
+      }
+      fill("visited-list", "mine-empty", visited);
+      fill("saved-list", "saved-empty", saves);
+      if (!window.atSetMyTrees) return;
+      var got = {};
+      visited.forEach(function(id) { got[id] = true; });
+      var all = visited.concat(saves.filter(function(id) { return !got[id]; }));
+      window.atSetMyTrees(all.filter(function(id) {
+        var c = cards[id]; return c && typeof c.x === "number" && typeof c.y === "number";
+      }).map(function(id) {
+        var c = cards[id];
+        return { type: "Feature", geometry: { type: "Point", coordinates: [c.x, c.y] },
+                 properties: { name: c.n, city: c.c || "", url: c.u, got: got[id] ? 1 : 0 } };
+      }));
+    });
+  }
+
+  var lanes = [["lane-mine", "pane-mine"], ["lane-saved", "pane-saved"]];
+  lanes.forEach(function(pair) {
+    el(pair[0]).addEventListener("click", function() {
+      lanes.forEach(function(other) {
+        var on = other[0] === pair[0];
+        el(other[0]).classList.toggle("on", on);
+        el(other[0]).setAttribute("aria-selected", on ? "true" : "false");
+        el(other[1]).hidden = !on;
+      });
+    });
+  });
+})();
+</script>
+`} />
+</Base>

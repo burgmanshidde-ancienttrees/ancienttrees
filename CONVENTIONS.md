@@ -29,6 +29,15 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## A public profile, and the private switch (2026-10-19)
+
+**Reference: Polarsteps** (support.polarsteps.com/hc/articles/24267891448850, "Who can see my Polarsteps account and trips", and Polarsteps' statement of 2026-09-04 at polarsteps.com/comment-follow-the-money, both read 2026-10-19). Every account starts private; the person switches to "Everyone", which opens the profile to anybody, with or without an account. The setting lives in Settings under the account type, a switch. Polarsteps' statement after a journalist investigation: profiles are "private/followers only" by default, never public, and live location on a public trip is visible to anyone. Instagram's "Private account" switch is the same shape (from memory, a lead to check).
+
+**What we copied**: a "Private profile" switch in Settings, ON for everyone; turning it off opens the one sheet listing what becomes visible, and only "Make public" writes. Turning it back on is one tap. A public profile is /account as a visitor sees it (same header, Follow where the gear sits, same tabs, same grid, same map), at /profile?u=<id>, noindexed. An ambassador's name on a city page links there only while the profile is public.
+
+**Where we differ**: Polarsteps has a third state (followers only) and per-trip settings. We have one switch and no per-tree setting, and the server never returns the day a tree was ticked, which is the part of a travel log that says where somebody is now.
+
+
 ## Tapping a pin on a map that has a list in a sheet (2026-10-18, recorded)
 
 **Reference: Apple Maps, tapped by hand in the iOS 26 simulator** (search "park" in London: pins on the map, results in the sheet, the same arrangement as our map tab). Tap a pin: the pin grows in place and the SAME sheet turns into that place (name, kind, share, a cross, Directions, photos); no card floats over the list and no page is pushed. The cross puts the results list back as it was and the pin shrinks. Screenshots were shown to Hidde in the preview, not committed (they carry third-party photographs).

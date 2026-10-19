@@ -886,6 +886,24 @@ a.set-row:hover, button.set-row:hover, label.set-row:hover { background: var(--c
   color: var(--ink-mid); padding: 0 18px 0 0; cursor: pointer; text-align: right; }
 .set-caret { position: absolute; right: 0; width: 13px; height: 13px; pointer-events: none; }
 .set-danger { color: #B22222; }
+/* THE SWITCH (2026-10-19), iOS's own control at its own 51 by 31, which is
+   what Polarsteps and Instagram put beside "Private account". The row is the
+   button (role="switch"); this is only its drawing. Moss when on. */
+.set-switch { flex: none; position: relative; width: 51px; height: 31px; margin-left: auto; border-radius: 999px;
+  background: #E3E2DC; transition: background 0.2s; }
+.set-switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 27px; height: 27px; border-radius: 50%;
+  background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.18); transition: left 0.2s; }
+.set-row[aria-checked="true"] .set-switch { background: var(--moss); }
+.set-row[aria-checked="true"] .set-switch::after { left: 22px; }
+/* A group's footer, iOS Settings' grey line under a group. */
+.set-foot { margin: 6px 16px 0; font-family: var(--sans); font-size: 13px; line-height: 1.4; color: var(--ink-mid); }
+.set-foot[hidden] { display: none; }
+/* Follow on somebody else's profile (profile.astro, 2026-10-19), where the
+   gear sits on your own: Polarsteps' Follow pill. */
+.profile-follow-btn { flex: none; height: 36px; padding: 0 16px; border-radius: 999px; border: 0; cursor: pointer;
+  background: var(--moss); color: #fff; font-family: var(--sans); font-size: 14px; font-weight: 700; }
+.profile-follow-btn.on { background: var(--cream-dark); color: var(--ink); }
+.profile-follow-btn[hidden] { display: none; }
 .set-danger .set-go { color: #B22222; }
 /* The editing inside the sheets: a field is the website's own, 16px so Safari
    does not zoom, full width, the sheet's rounded shapes. */

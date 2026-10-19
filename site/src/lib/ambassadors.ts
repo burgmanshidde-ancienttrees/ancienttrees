@@ -19,6 +19,15 @@ export interface Ambassador {
   /** The institution beside the name, printed only where the person said yes
    *  to it as well (Giulia Torta, Orto botanico di Firenze, 2026-10-03). */
   affiliation?: string;
+  /** The person turned their profile public (profiles.public, 2026-10-19),
+   *  so the name links to /profile?u=<user_id>. A second consent beside
+   *  `public`: being named is not the same yes as showing your trees. */
+  profile_public?: boolean;
+}
+
+/** Where the name on the city page goes, or null when it stays plain text. */
+export function profileHref(a: Ambassador): string | null {
+  return a.profile_public && a.user_id ? `/profile?u=${encodeURIComponent(a.user_id)}` : null;
 }
 
 let cache: Ambassador[] | null = null;

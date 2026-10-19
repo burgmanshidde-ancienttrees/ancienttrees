@@ -46,7 +46,7 @@ import { icon } from "../lib/icons";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import Sheet from "./Sheet.astro";
 import { ui } from "../lib/i18n";
-import type { Ambassador } from "../lib/ambassadors";
+import { profileHref, type Ambassador } from "../lib/ambassadors";
 
 interface Props {
   people: Ambassador[]; lang?: string; place?: string;
@@ -60,18 +60,29 @@ const U = ui(lang);
 ---
 {people.length > 0 && (
   <ul class="ambassadors" aria-label={U.ambassadorsLabel}>
-    {people.map((p) => (
-      <li class="ambassador">
-        <span class="ambassador-avatar" aria-hidden="true">
-          {p.display_name!.trim().charAt(0).toUpperCase()}
-          <Fragment set:html={icon("seal-check", "fill", "ic ambassador-seal")} />
-        </span>
-        <span class="ambassador-text">
-          <span class="ambassador-name">{p.display_name}</span>
-          <span class="ambassador-role">{U.ambassadorRole(place ?? p.place_name)}{p.affiliation ? ` · ${p.affiliation}` : ""}</span>
-        </span>
-      </li>
-    ))}
+    {people.map((p) => {
+      // THE NAME OPENS THE PROFILE when its owner made it public (Hidde,
+      // 2026-10-19, design page frames 1 and 6): the whole row is the link
+      // with a chevron, as the open seat's row already is. A private profile
+      // keeps plain text, so no link ever lands on a closed page.
+      const href = profileHref(p);
+      const Row = href ? "a" : "span";
+      return (
+        <li>
+          <Row class={href ? "ambassador ambassador-link" : "ambassador"} href={href ?? undefined}>
+            <span class="ambassador-avatar" aria-hidden="true">
+              {p.display_name!.trim().charAt(0).toUpperCase()}
+              <Fragment set:html={icon("seal-check", "fill", "ic ambassador-seal")} />
+            </span>
+            <span class="ambassador-text">
+              <span class="ambassador-name">{p.display_name}</span>
+              <span class="ambassador-role">{U.ambassadorRole(place ?? p.place_name)}{p.affiliation ? ` · ${p.affiliation}` : ""}</span>
+            </span>
+            {href && <Fragment set:html={icon("caret-right", "bold", "ic ambassador-chev")} />}
+          </Row>
+        </li>
+      );
+    })}
   </ul>
 )}
 {people.length === 0 && place && requestCity && (
@@ -224,6 +235,11 @@ const U = ui(lang);
   .ambassador-apply .ambassador-text { flex: 1; }
   .ambassador-chev { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
   .ambassador-asked .ambassador-chev { display: none; }
+  /* The named row as a link (2026-10-19): the open seat's row, same chevron. */
+  .ambassador-link { min-height: 44px; text-decoration: none; color: inherit; }
+  .ambassador-link .ambassador-text { flex: 1; }
+  .ambassador-link :global(.ambassador-chev) { flex: none; width: 16px; height: 16px; color: var(--ink-mid); }
+  @media (hover: hover) { .ambassador-link:hover .ambassador-name { text-decoration: underline; } }
   .ambassador-avatar-open { background: transparent; border: 1.5px dashed var(--moss); }
   .ambassador-avatar-open :global(.ic) { width: 16px; height: 16px; fill: var(--moss); }
 </style>

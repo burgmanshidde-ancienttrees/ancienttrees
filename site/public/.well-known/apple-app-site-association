@@ -68,6 +68,10 @@
             "exclude": true
           },
           {
+            "/": "/profile",
+            "exclude": true
+          },
+          {
             "/": "/contribute",
             "exclude": true
           },

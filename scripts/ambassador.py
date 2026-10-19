@@ -253,11 +253,21 @@ def sync():
             return 0
         raise
     names = {}
+    open_profiles = set()
     public_ids = sorted({r["user_id"] for r in table if r.get("public")})
     if public_ids:
         q = ",".join(public_ids)
-        for p in _req(f"/rest/v1/profiles?select=user_id,display_name&user_id=in.({q})") or []:
+        # profiles.public (supabase/public-profiles.sql, 2026-10-19) makes the
+        # name on the city page a link to the person's profile. Before that
+        # column exists the read falls back to the name alone.
+        try:
+            got = _req(f"/rest/v1/profiles?select=user_id,display_name,public&user_id=in.({q})") or []
+        except urllib.error.HTTPError:
+            got = _req(f"/rest/v1/profiles?select=user_id,display_name&user_id=in.({q})") or []
+        for p in got:
             names[p["user_id"]] = p.get("display_name")
+            if p.get("public"):
+                open_profiles.add(p["user_id"])
     with open(FILE, encoding="utf-8") as fh:
         doc0 = json.load(fh)
     linked_names = {e["linked_user_id"]: e.get("display_name") for e in doc0.get("ambassadors", [])
@@ -273,6 +283,8 @@ def sync():
                  "since": r.get("since")}
         if entry["public"] and names.get(r["user_id"]):
             entry["display_name"] = names[r["user_id"]]
+            if r["user_id"] in open_profiles:
+                entry["profile_public"] = True
         elif entry["public"]:
             # Consented, but never set a name: nothing to print, and the page
             # says nothing rather than inventing one.

@@ -1,21 +1,38 @@
--- APPLIED 2026-10-16 by Hidde (checked: profiles?select=country answers). Nothing pending.
+-- PENDING since 2026-10-19: the public profile. Paste everything below into
+-- Supabase, SQL editor, Run. Safe to run twice. Check afterwards that
+-- profiles?select=public answers. The same lines are in public-profiles.sql,
+-- which explains every choice.
 --
--- profiles.country (2026-10-16): the flag after your name.
---
--- Hidde, 2026-10-16, choosing option 1 of the early-adopter designs: "Ship
--- option 1 with the flag ... Yes to storing a country per account." That is
--- the explicit yes the accounts rule asks for before a new personal-data
--- column (DECISIONS.md 2026-08-14). The same lines are in profiles.sql.
---
--- WHAT THIS STORES: one ISO 3166 two-letter country code, chosen by the
--- person in Edit profile, nothing derived and never filled in for them.
--- Null means nobody said, and then no flag shows. It lives on the profile
--- row, so deleting the account deletes it with everything else.
---
--- Paste into Supabase, SQL editor, Run. Safe to run twice.
+-- Until it runs, nothing breaks: the Private profile switch stays hidden on
+-- both surfaces and a profile link says the profile is private.
 
-alter table public.profiles add column if not exists country text;
-do $$ begin
-  alter table public.profiles add constraint profiles_country_check
-    check (country ~ '^[A-Z]{2}$');
-exception when duplicate_object then null; end $$;
+alter table public.profiles add column if not exists public boolean not null default false;
+
+create or replace function public.public_profile(uid uuid)
+returns json
+language sql
+security definer
+set search_path = public
+stable
+as $$
+  select json_build_object(
+    'user_id', p.user_id,
+    'display_name', p.display_name,
+    'avatar_url', p.avatar_url,
+    'country', p.country,
+    'created_at', (select u.created_at from auth.users u where u.id = p.user_id),
+    'followers', (select count(*) from public.follows where followee = p.user_id),
+    'following', (select count(*) from public.follows where follower = p.user_id),
+    'ambassador', coalesce((select json_agg(a.place_name order by a.since)
+                            from public.ambassadors a where a.user_id = p.user_id), '[]'::json),
+    'visited', coalesce((select json_agg(v.tree_id order by v.created_at desc)
+                         from public.visited v where v.user_id = p.user_id), '[]'::json),
+    'saves', coalesce((select json_agg(s.tree_id order by s.created_at desc)
+                       from public.saves s where s.user_id = p.user_id), '[]'::json)
+  )
+  from public.profiles p
+  where p.user_id = uid and p.public
+$$;
+
+revoke all on function public.public_profile(uuid) from public;
+grant execute on function public.public_profile(uuid) to anon, authenticated;
