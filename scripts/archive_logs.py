@@ -21,12 +21,13 @@ import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCHIVE_DIR = os.path.join(ROOT, "archive")
-FILES = ("LOG.md", "CURATION.md", "DATA.md")
+FILES = ("LOG.md", "CURATION.md", "DATA.md", "REVIEW.md")
 # DATA.md keeps two weeks, not three days: every reader takes the newest entry
 # only (show_digest, seolearn, langcheck, recognise, weekly_mail), and
 # thin_pages.question_evidence() already reads archive/DATA-*.md too. It had
-# reached 2 MB across 93 days by 2026-10-18 (Hidde: "opruimen").
-DAYS_FOR = {"DATA.md": 14}
+# reached 2 MB across 93 days by 2026-10-18 (Hidde: "opruimen"). REVIEW.md
+# likewise: health.py reads the newest block, the reviewer skims for repeats.
+DAYS_FOR = {"DATA.md": 14, "REVIEW.md": 14}
 ENTRY_RE = re.compile(r"^## (\d{4})-(\d{2})-(\d{2})", re.M)
 
 ARCHIVE_HEADER = """# {name} archive, {month}
@@ -197,7 +198,7 @@ def main():
     args = ap.parse_args()
     today = datetime.date.today()
     print(f"cutoff: entries older than {args.days} days move to archive/ "
-          f"(DATA.md: {DAYS_FOR['DATA.md']})")
+          f"(DATA.md and REVIEW.md: {DAYS_FOR['DATA.md']})")
     for fname in FILES:
         days = max(args.days, DAYS_FOR.get(fname, 0))
         cutoff = today - datetime.timedelta(days=days)

@@ -211,7 +211,7 @@ jobs:
           # The month each new Commons lead photo was taken, for Discover's
           # season hero (2026-10-13). Only photos without one are asked about.
           python3 scripts/photo_months.py || true
-          git add LOG.md CURATION.md archive/ 2>/dev/null || true
+          git add LOG.md CURATION.md REVIEW.md archive/ 2>/dev/null || true
           git add DATA.md data/city-queue.json data/city-list.json CITY_QUEUE.md LEDGER.html data/copy-tests.json \
             data/cities data/backlinks.json data/photo-autumn.json \
             data/city-coords.json data/research/*-register-candidates.json data/noindex.json data/noindex.md \
