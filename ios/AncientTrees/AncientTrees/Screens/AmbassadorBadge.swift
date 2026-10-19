@@ -111,9 +111,15 @@ struct CountryFlag: View {
     var size: CGFloat = 20
 
     var body: some View {
-        if let flag = Self.emoji(code) {
-            Text(flag)
-                .font(.system(size: size * 1.5))
+        if let flag = Self.emoji(code), let img = Self.trimmed(flag) {
+            // THE FLAG ITSELF, NOT ITS GLYPH BOX (Hidde, 2026-10-19: "the flag
+            // is completely misaligned in the round circle"). The emoji's box
+            // carries empty space above the flag, so a centred Text left a
+            // white crescent top left. Drawn once, cropped to its own pixels,
+            // then filled into the circle: Polarsteps' round flag.
+            Image(uiImage: img)
+                .resizable()
+                .scaledToFill()
                 .frame(width: size, height: size)
                 .clipShape(.circle)
                 .overlay(Circle().strokeBorder(.black.opacity(0.08), lineWidth: 1))
@@ -121,6 +127,50 @@ struct CountryFlag: View {
                 .accessibilityLabel(Self.name(code) ?? "")
                 .accessibilityIdentifier("profile-flag")
         }
+    }
+
+    /// The emoji drawn large and cropped to where it has pixels, cached per
+    /// flag. Nil if nothing drew (an unknown pair renders as letters, which
+    /// still crops to something, so in practice never).
+    @MainActor private static var cache: [String: UIImage] = [:]
+    @MainActor static func trimmed(_ flag: String) -> UIImage? {
+        if let hit = cache[flag] { return hit }
+        let font = UIFont.systemFont(ofSize: 96)
+        let text = flag as NSString
+        let attrs: [NSAttributedString.Key: Any] = [.font: font]
+        let box = text.size(withAttributes: attrs)
+        let fmt = UIGraphicsImageRendererFormat(); fmt.scale = 1
+        let drawn = UIGraphicsImageRenderer(size: box, format: fmt).image { _ in
+            text.draw(at: .zero, withAttributes: attrs)
+        }
+        guard let cg = drawn.cgImage, let crop = opaqueBounds(cg),
+              let cut = cg.cropping(to: crop) else { return nil }
+        // An inset of a few percent so the waving edge of the flag never
+        // shows as a pale rim inside the circle.
+        let inset = cut.cropping(to: CGRect(x: 0, y: 0, width: cut.width, height: cut.height)
+            .insetBy(dx: CGFloat(cut.width) * 0.06, dy: CGFloat(cut.height) * 0.08)) ?? cut
+        let out = UIImage(cgImage: inset)
+        cache[flag] = out
+        return out
+    }
+
+    /// The smallest rectangle holding every pixel that is not transparent.
+    private static func opaqueBounds(_ cg: CGImage) -> CGRect? {
+        let w = cg.width, h = cg.height
+        var px = [UInt8](repeating: 0, count: w * h * 4)
+        guard let ctx = CGContext(data: &px, width: w, height: h, bitsPerComponent: 8, bytesPerRow: w * 4,
+                                  space: CGColorSpaceCreateDeviceRGB(),
+                                  bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue) else { return nil }
+        ctx.draw(cg, in: CGRect(x: 0, y: 0, width: w, height: h))
+        var minX = w, minY = h, maxX = -1, maxY = -1
+        for y in 0..<h {
+            for x in 0..<w where px[(y * w + x) * 4 + 3] > 24 {
+                minX = min(minX, x); maxX = max(maxX, x)
+                minY = min(minY, y); maxY = max(maxY, y)
+            }
+        }
+        guard maxX >= minX, maxY >= minY else { return nil }
+        return CGRect(x: minX, y: minY, width: maxX - minX + 1, height: maxY - minY + 1)
     }
 
     /// "NL" to the regional-indicator pair Apple draws as the Dutch flag.

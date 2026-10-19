@@ -1109,7 +1109,7 @@ struct CollectView: View {
                     // YOUR FLAG AFTER YOUR NAME, Polarsteps' round flag (Hidde,
                     // 2026-10-16), the country picked in Edit profile. Beside
                     // the name rather than inside its tap frame.
-                    HStack(alignment: .bottom, spacing: 8) {
+                    HStack(alignment: .center, spacing: 8) {
                     Text(editable
                          ? (profiles.me?.display_name
                             ?? account.email?.split(separator: "@").first.map(String.init)
@@ -1126,15 +1126,20 @@ struct CollectView: View {
                         // called, and appfit caught the tap target at 33.7 by
                         // 44 on iOS 18 for a two-letter name. A short name is
                         // not a smaller person to aim at.
-                        .frame(minWidth: 44, minHeight: 44, alignment: .bottomLeading)
+                        .frame(minWidth: 44, minHeight: 44, alignment: .leading)
                         .tapUnlessDragged {
                             if editable { editingProfile = true } else { signingIn = true }
                         }
+                        // 44 to hit, its own height to lay out, as the counts
+                        // below do (Hidde, 2026-10-19: "is the vertical
+                        // alignment ok?"). The empty top of the 44 frame pushed
+                        // name and counts below the photo's centre.
+                        .padding(.vertical, -8)
                         .accessibilityIdentifier("mytrees-edit-profile")
                         .accessibilityAddTraits(.isButton)
                         .accessibilityLabel(editable ? "Edit your profile" : "Sign in")
                         if editable {
-                            CountryFlag(code: profiles.myCountry).padding(.bottom, 4)
+                            CountryFlag(code: profiles.myCountry)
                         }
                     }
                     if account.isSignedIn {
