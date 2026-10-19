@@ -146,6 +146,14 @@ Visits last 7 days: 1980. Rung 1: two app photographs of lis_014 (Yew of Campo S
 
 **Checked:** build plus screenshots on the iPhone SE simulator (the park while standing still, the tree page). Not checked: a real walk through the park, and the tap itself (simctl cannot tap). Still no push notifications and nothing in the background, as it was.
 
+## 2026-10-19 session: Hidde's photo review round 2 applied, three photographs live
+
+- **Live with a photograph now:** the Independence Spruce in Helsinki, Takinoya no Hidarimakigaya in Yabu and the Münzgrabenstraße plane in Graz. Each file names the tree, and each tree is unique at its spot.
+- **Held, not dropped (13):** Hidde's "Twijfel" picks (the new button, added today for "good photo, not sure it is this tree"), plus good photos with no tie to the trunk. One was the Corstorphine sycamore clone in the Botanic Garden rather than the churchyard tree; others were shore-wide cherry views, one of two crutched mulberries, and a generic Brisbane file.
+- **Rejected (12):** recorded in data/photo-queue.json. Seven good picks were for trees that already had a photograph (Seattle, Utrecht, Los Angeles, Berlin), so those were left alone.
+- **Yield:** 3 approvals from 35 candidates, against 5 from 212 in round 1. Even with the strict gate, Hidde's time mostly goes to photos we cannot tie to the trunk. The ones that ship are single named trees with the name in the filename.
+- Also fixed: a comment in AmbassadorLine.astro, from this morning's profile commit, sat in the markup where preflight reads it as English page text. It is moved into the frontmatter, wording unchanged.
+
 ## 2026-10-18 session: Hidde's photo review, round 2
 
 - **His unapplied verdicts are in:** 108 verdicts given on the review page after the 10-01 pass were never applied. Now 59 rejects are recorded in data/photo-queue.json, and his 17 "good photo" picks are held, not approved: none could be tied to the trunk. They named only the place, e.g. a Trsteno file of the plane tree offered for the ginkgo, or had geotags 86 to 561 m off.

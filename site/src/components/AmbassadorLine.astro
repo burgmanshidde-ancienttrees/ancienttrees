@@ -57,14 +57,14 @@ interface Props {
 }
 const { people, lang = "en", place, requestCity } = Astro.props as Props;
 const U = ui(lang);
+// THE NAME OPENS THE PROFILE when its owner made it public (Hidde,
+// 2026-10-19, design page frames 1 and 6): the whole row is the link
+// with a chevron, as the open seat's row already is. A private profile
+// keeps plain text, so no link ever lands on a closed page.
 ---
 {people.length > 0 && (
   <ul class="ambassadors" aria-label={U.ambassadorsLabel}>
     {people.map((p) => {
-      // THE NAME OPENS THE PROFILE when its owner made it public (Hidde,
-      // 2026-10-19, design page frames 1 and 6): the whole row is the link
-      // with a chevron, as the open seat's row already is. A private profile
-      // keeps plain text, so no link ever lands on a closed page.
       const href = profileHref(p);
       const Row = href ? "a" : "span";
       return (

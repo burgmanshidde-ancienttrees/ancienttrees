@@ -1434,10 +1434,13 @@
       "how_to_recognise": "You can recognise it by the leaves, white-felted underneath so the crown flashes silver in a gust, and by the trunk, 4.5 metres round. It stands on plac Emila Serkowskiego in Stare Podgorze, on the far side of the river from the Old Town.",
       "verify_notes": "Fills a species gap (White Poplar, absent from Krakow's page) in a Podgorze location the page does not otherwise cover. GDOS register (kodinspire .1066, gid 71988) gives coordinates and 1997 designation; Polish Wikipedia's wykaz (entry 16) confirms address (plac Serkowskiego), girth 450 cm, designated 1997, with its own Commons photo file. No felled/removed note. Confirmed via Nominatim that Plac Emila Serkowskiego is a genuine public street/square in Stare Podgorze (OSM highway=residential), not a private courtyard. A WebSearch summary separately cited a girth of 430 cm from an unclear mix of sources (one of which, familyfunspace.com, describes a different, unrelated white poplar called 'Plawianka' elsewhere), so that figure is NOT used; girth recorded here is the wykaz's own 450 cm only. Age is a broad estimate from that girth using the same fast-poplar-growth reasoning as kra_036. Flagged for having only two written sources (register + its own wiki reproduction).",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Krak%C3%B3w_pl._Serkowskiego_pomnik_przyrody_Topola_bia%C5%82a_Populus_alba.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Janusz Krzyżek, via Wikimedia Commons",
+        "status": "held",
+        "note": "Hidde: good photograph, not sure it is this tree",
+        "width": 2963,
+        "height": 5552
       },
       "photos": []
     },

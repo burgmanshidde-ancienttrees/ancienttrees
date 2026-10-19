@@ -320,10 +320,13 @@
       "access": "Free. City Botanic Gardens is open 24 hours, 7 days a week; the cafe and information kiosk keep their own hours.",
       "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Tree_Botanic_Garden_-_panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Korkut Tas, via Wikimedia Commons",
+        "status": "held",
+        "note": "Hidde: good photograph; generic file, 51 m, nothing ties it to the Alice Street figs",
+        "width": 3264,
+        "height": 2448
       },
       "location_precision": "confirmed",
       "curation_status": "flagged",
@@ -508,7 +511,16 @@
         "name": "National Trust of Australia (Queensland) Register of Significant Trees",
         "url": "https://www.trusttrees.org.au/tree/QLD/Brisbane/Brisbane_City_Botanic_Gardens_Alice_Street_10"
       },
-      "height_m": 22
+      "height_m": 22,
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Tree_Botanic_Garden_-_panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Korkut Tas, via Wikimedia Commons",
+        "status": "held",
+        "note": "Hidde: good photograph, not sure it is this tree",
+        "width": 3264,
+        "height": 2448
+      }
     },
     {
       "id": "bne_015",
