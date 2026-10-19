@@ -147,7 +147,7 @@ const cityHasQuestion = hasQuestionPage(city);
         <AmbassadorLine people={namedAmbassadorsFor(cslug)} lang={lang} place={tr.city} requestCity={placeHasAmbassador(cslug) ? undefined : city.data.city} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> / {trees.length}</strong> {U.visitedOf(trees.length, tr.city)}
-          <span class="passport-total" id="passport-total"></span>
+          <a class="passport-save" href="/account#saved">{U.seeCollection}</a>
         </p>
       </div>
       {split.inTown.map((t) => {

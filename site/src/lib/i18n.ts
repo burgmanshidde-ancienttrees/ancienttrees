@@ -109,6 +109,7 @@ export interface UIStrings {
   heading: (city: string) => string;
   readMore: string;
   visitedOf: (n: number, city: string) => string;
+  seeCollection: string;
   mappingAll: string;
   missingOrWrong: (city: string) => string;
   tellUs: string;
@@ -539,6 +540,7 @@ const EN: UIStrings = {
   heading: (c) => `Ancient Trees in ${c}`,
   readMore: "Read more",
   visitedOf: (n, city) => `visited in ${city}`,
+  seeCollection: "See your full collection",
   mappingAll: "We are mapping every remarkable tree in the world.",
   missingOrWrong: (city) => `Do you know one in ${city} we are missing, or see a mistake here?`,
   tellUs: "Tell us",
@@ -1043,6 +1045,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `\u00c1rboles hist\u00f3ricos de ${c}`,
     readMore: "Leer m\u00e1s",
     visitedOf: (n, city) => `visitados en ${city}`,
+    seeCollection: "Ver tu colecci\u00f3n completa",
     mappingAll: "Estamos cartografiando todos los \u00e1rboles singulares del mundo.",
     missingOrWrong: (city) => `\u00bfConoces uno en ${city} que nos falte, o ves aqu\u00ed un error?`,
     tellUs: "Cu\u00e9ntanoslo",
@@ -1331,6 +1334,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Alberi monumentali di ${c}`,
     readMore: "Leggi di pi\u00f9",
     visitedOf: (n, city) => `visitati a ${city}`,
+    seeCollection: "Vedi la tua collezione completa",
     mappingAll: "Stiamo mappando tutti gli alberi notevoli del mondo.",
     missingOrWrong: (city) => `Ne conosci uno a ${city} che ci manca, o vedi un errore qui?`,
     tellUs: "Segnalacelo",
@@ -1619,6 +1623,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Monumentale bomen in ${c}`,
     readMore: "Lees meer",
     visitedOf: (n, city) => `bezocht in ${city}`,
+    seeCollection: "Bekijk je hele collectie",
     mappingAll: "We brengen alle bijzondere bomen ter wereld in kaart.",
     missingOrWrong: (city) => `Ken je er een in ${city} die hier mist, of zie je een fout?`,
     tellUs: "Laat het ons weten",
@@ -1907,6 +1912,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Alte B\u00e4ume in ${c}`,
     readMore: "Mehr lesen",
     visitedOf: (n, city) => `in ${city} besucht`,
+    seeCollection: "Ihre ganze Sammlung ansehen",
     mappingAll: "Wir kartieren alle bemerkenswerten B\u00e4ume der Welt.",
     missingOrWrong: (city) => `Kennen Sie einen in ${city}, der hier fehlt, oder sehen Sie einen Fehler?`,
     tellUs: "Sagen Sie es uns",
@@ -2195,6 +2201,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `\u00c1rvores hist\u00f3ricas de ${c}`,
     readMore: "Ler mais",
     visitedOf: (n, city) => `visitadas em ${city}`,
+    seeCollection: "Ver a sua cole\u00e7\u00e3o completa",
     mappingAll: "Estamos a mapear todas as \u00e1rvores not\u00e1veis do mundo.",
     missingOrWrong: (city) => `Conhece alguma em ${city} que nos falte, ou v\u00ea aqui um erro?`,
     tellUs: "Diga-nos",
@@ -2483,6 +2490,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `Arbres remarquables de ${c}`,
     readMore: "Lire la suite",
     visitedOf: (n, city) => `visit\u00e9s \u00e0 ${city}`,
+    seeCollection: "Voir toute votre collection",
     mappingAll: "Nous cartographions tous les arbres remarquables du monde.",
     missingOrWrong: (city) => `Vous en connaissez un \u00e0 ${city} qui manque ici, ou vous voyez une erreur ?`,
     tellUs: "Dites-le-nous",
@@ -2770,6 +2778,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     heading: (c) => `${c}\u306e\u53e4\u6a39`,
     readMore: "\u7d9a\u304d\u3092\u8aad\u3080",
     visitedOf: (n, city) => `${city}\u3067\u8a2a\u308c\u305f\u6570`,
+    seeCollection: "\u30b3\u30ec\u30af\u30b7\u30e7\u30f3\u3092\u3059\u3079\u3066\u898b\u308b",
     mappingAll: "\u4e16\u754c\u4e2d\u306e\u9280\u91cd\u306a\u6a39\u6728\u3092\u5730\u56f3\u306b\u3057\u3066\u3044\u307e\u3059\u3002",
     missingOrWrong: (city) => `${city}\u3067\u629c\u3051\u3066\u3044\u308b\u6a39\u6728\u3092\u3054\u5b58\u3058\u3067\u3059\u304b\u3001\u307e\u305f\u306f\u8aa4\u308a\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u304b\u3002`,
     tellUs: "\u304a\u77e5\u3089\u305b\u304f\u3060\u3055\u3044",

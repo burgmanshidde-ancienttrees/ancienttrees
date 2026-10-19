@@ -292,7 +292,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
         <AmbassadorLine people={namedAmbassadorsFor(city.id)} place={cityName} requestCity={placeHasAmbassador(city.id) ? undefined : cityName} />
         <p class="passport" id="passport" hidden>
           <strong><span id="passport-count">0</span> of {trees.length}</strong> visited in {cityName}
-          <span class="passport-total" id="passport-total"></span>
+          <a class="passport-save" href="/account#saved">{ui("en").seeCollection}</a>
         </p>
       </div>
       {split.inTown.map((t) => (

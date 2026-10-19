@@ -683,14 +683,9 @@ function paintPassport() {
     document.getElementById('passport-count').textContent = here;
     box.hidden = here === 0;
     box.classList.toggle('complete', here === markers.length);
-    var total = document.getElementById('passport-total');
-    if (seen.length > here) {
-      total.textContent = seen.length + ' trees in total, across every city.';
-    } else if (here === markers.length) {
-      total.textContent = 'Every tree here. Go find another city.';
-    } else {
-      total.textContent = '';
-    }
+    // The line under the count is a link to the collection, in the page's
+    // language (Hidde, 2026-10-19). It used to say "N trees in total, across
+    // every city" in English on every language.
   }
 }
 
