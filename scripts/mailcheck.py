@@ -329,10 +329,19 @@ APP_STORE_URL = "https://apps.apple.com/nl/app/ancient-trees/id6806177833?l=en-G
 # tel heeft." Paulo Araujo said so himself on 2026-09-02, cheerfully, and a mail
 # that invites him again reads as not having listened. A name comes off this
 # list only when the person says otherwise.
+# Kept by address hash (addr_hash below): this repository is public.
 NO_APP_LINK = {
-    "dias.com.arvores@sapo.pt": "has no smartphone, said so on 2026-09-02",
-    "woelfie@gmx.de": "has no iPhone, said so on 2026-09-20",
+    "66aaa6442a8385e2c6c4": "has no smartphone, said so on 2026-09-02",
+    "337cc30fe5b905006b5b": "has no iPhone, said so on 2026-09-20",
 }
+
+
+def addr_hash(addr):
+    """An address as this repository may hold it: the first 20 hex of its
+    sha256, lower-cased. The repository is public, so lists of people are
+    kept by hash (privacy audit, 2026-10-19)."""
+    import hashlib
+    return hashlib.sha256(addr.strip().lower().encode()).hexdigest()[:20]
 
 
 def check_app_link(path, text, body):
@@ -373,8 +382,8 @@ def _old_check_app_link(path, text, body):
         return []
     if "6806177833" in body:
         return []
-    for addr in NO_APP_LINK:
-        if addr in text:
+    for addr in re.findall(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", text):
+        if addr_hash(addr) in NO_APP_LINK:
             return []
     # And the other way somebody can have no use for the link: they are
     # already holding the app. From 2026-09-04 a reader who sends a photograph

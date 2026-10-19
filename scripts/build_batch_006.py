@@ -171,7 +171,7 @@ TARGETS = [
  # France: 83 trees published, no contact anywhere until now
  ("a_arbres@arbres.org", "Association A.R.B.R.E.S.", "fr", "les arbres de Paris", "Paris", "paris"),
  ("secretariat@sfa-asso.fr", "Societe francaise d'arboriculture", "fr", "les vieux arbres de Paris", "Paris", "paris"),
- ("lestetardsarboricoles@yahoo.fr", "Les tetards arboricoles", "fr", "les arbres de Bordeaux", "Bordeaux", "bordeaux"),
+ ("[address removed]", "Les tetards arboricoles", "fr", "les arbres de Bordeaux", "Bordeaux", "bordeaux"),
  ("contact@unjourdeplusaparis.com", "Un jour de plus a Paris", "fr", "les arbres remarquables de Paris", "Paris", "paris"),
  # Poland
  ("klubgaja@klubgaja.pl", "Klub Gaja", "pl", "drzewa Krakowa", "w Krakowie", "krakow"),
@@ -188,7 +188,7 @@ TARGETS = [
  ("advocacy@nationaltrust.com.au", "National Trust of Australia (NSW)", "en", "the significant trees of Sydney", "Sydney", "sydney"),
  # UK and Ireland
  ("info@treeregister.org", "The Tree Register (TROBI)", "en", "the old trees of London", "London", "london"),
- ("bristoltreeforum@gmail.com", "Bristol Tree Forum", "en", "the old trees of Bristol", "Bristol", "bristol"),
+ ("[address removed]", "Bristol Tree Forum", "en", "the old trees of Bristol", "Bristol", "bristol"),
  ("info@conservationfoundation.co.uk", "The Conservation Foundation (Morus Londinium)", "en", "London's old trees", "London", "london"),
  ("mail@avonwildlifetrust.org.uk", "Avon Wildlife Trust", "en", "the old trees of Bristol", "Bristol", "bristol"),
  ("info@treesforcities.org", "Trees for Cities", "en", "the old trees of London", "London", "london"),
@@ -196,7 +196,7 @@ TARGETS = [
  ("info@stcuthbertschurch.org.uk", "St Cuthbert's Parish Church, Edinburgh", "en", "the old trees of Edinburgh", "Edinburgh", "edinburgh"),
  ("office@dendrology.org", "International Dendrology Society", "en", "the old trees of London", "London", "london"),
  # Germany
- ("ddg-web@web.de", "Deutsche Dendrologische Gesellschaft", "de", "die alten Bäume Berlins", "Berlin", "berlin"),
+ ("[address removed]", "Deutsche Dendrologische Gesellschaft", "de", "die alten Bäume Berlins", "Berlin", "berlin"),
  ("kontakt@bmsgb.de", "Baumschutzgemeinschaft Berlin", "de", "die alten Bäume Berlins", "Berlin", "berlin"),
  # Italy
  ("info@apgi.it", "APGI, Associazione Parchi e Giardini d'Italia", "it", "gli alberi di Roma", "Roma", "rome"),
@@ -212,11 +212,11 @@ TARGETS = [
  # Netherlands and Belgium
  ("bureau@knnv.nl", "KNNV", "nl", "de oude bomen van Nederland", "Nederland", "netherlands"),
  ("info@artis.nl", "ARTIS", "nl", "de Heimanseik, de oudste boom van Amsterdam", "Amsterdam", "amsterdam"),
- ("secretariaatgroenesteeg@gmail.com", "Begraafplaats Groenesteeg, Leiden", "nl", "de oude bomen van Leiden", "Leiden", "leiden"),
+ ("[address removed]", "Begraafplaats Groenesteeg, Leiden", "nl", "de oude bomen van Leiden", "Leiden", "leiden"),
  ("info@natuurpunt.be", "Natuurpunt", "nl", "de oude bomen van Antwerpen", "Antwerpen", "antwerp"),
  ("rivierenhof@provincieantwerpen.be", "Provincie Antwerpen, domein Rivierenhof", "nl", "de zomerlinde van het Rivierenhof", "Antwerpen", "antwerp"),
  ("middelheimmuseum@antwerpen.be", "Middelheimmuseum", "nl", "de oude bomen van Antwerpen", "Antwerpen", "antwerp"),
- ("woodwideweb.brussels@gmail.com", "woodwideweb.be", "nl", "de oude bomen van Brussel", "Brussel", "brussels"),
+ ("[address removed]", "woodwideweb.be", "nl", "de oude bomen van Brussel", "Brussel", "brussels"),
 ]
 
 COUNTRY = {"portugal": "Portugal", "netherlands": "Netherlands"}

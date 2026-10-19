@@ -60,10 +60,19 @@ LAUNCH_BATCH = "010-app-launch"
 
 # Hidde, 2026-09-10: "ignore myrthe and eric - family and the last one is for
 # android". The third is already outside the cutoff.
+# Kept by address hash (addr_hash below): this repository is public.
 SKIP = {
-    "myrthe@koos.agency": "his own agency, not a stranger who signed up",
-    "ep.burgmans@casema.nl": "family",
+    "41262cb68edd5f873ba9": "his own agency, not a stranger who signed up",
+    "149c510f02c6c3d12203": "family",
 }
+
+def addr_hash(addr):
+    """An address as this repository may hold it: the first 20 hex of its
+    sha256, lower-cased. The repository is public, so lists of people are
+    kept by hash (privacy audit, 2026-10-19)."""
+    import hashlib
+    return hashlib.sha256(addr.strip().lower().encode()).hexdigest()[:20]
+
 
 SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
 
@@ -140,8 +149,8 @@ def main():
         if low in dnc:
             dropped.append((addr, "do not contact"))
             continue
-        if low in SKIP:
-            dropped.append((addr, SKIP[low]))
+        if addr_hash(low) in SKIP:
+            dropped.append((addr, SKIP[addr_hash(low)]))
             continue
         if low in launched:
             dropped.append((addr, f"already had the launch in {LAUNCH_BATCH}"))

@@ -328,7 +328,6 @@ def move_pin(tree, lat, lon, sighting_id, taken_at, today):
     tree["pin_source"] = {
         "kind": "reader GPS fix",
         "sighting_id": sighting_id,
-        "taken_at": taken_at,
         "moved_m": round(d),
         "date": today,
         "note": ("The pin marks where a reader stood to photograph this tree; the "
@@ -627,8 +626,7 @@ def main():
         dropped = drop_vendored(old_url) if old_url and old_url != block["url"] else 0
         done[sid] = {"outcome": "added" if extra else "published", "date": today,
                      "tree_id": entry["tree_id"], "file": fname, "reason": reason[:300],
-                     "lat": entry.get("latitude"), "lon": entry.get("longitude"),
-                     "taken_at": entry.get("taken_at")}
+                     "lat": entry.get("latitude"), "lon": entry.get("longitude")}
         pin = pin_from_reader(entry["city_slug"], entry["tree_id"], entry.get("latitude"),
                               entry.get("longitude"), sid, entry.get("taken_at"), today)
         done[sid]["pin_checked"] = today

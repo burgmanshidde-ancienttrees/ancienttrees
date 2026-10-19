@@ -2460,6 +2460,87 @@ def check_people_s_addresses_stay_out_of_the_repo():
     return out
 
 
+# Matched from the @ on: a pattern that starts with the local part backtracks
+# through every word in a 9 MB feed and took minutes (2026-10-19).
+PERSONAL_MAIL = re.compile(
+    r"(?<=[A-Za-z0-9._%+-])@(?:gmail\.com|googlemail\.com|gmx\.[a-z.]+|hotmail\.[a-z.]+|outlook\.[a-z.]+|"
+    r"live\.[a-z.]+|icloud\.com|me\.com|mac\.com|yahoo\.[a-z.]+|casema\.nl|ziggo\.nl|kpnmail\.nl|"
+    r"xs4all\.nl|planet\.nl|hetnet\.nl|home\.nl|sapo\.pt|web\.de|t-online\.de|protonmail\.[a-z]+|"
+    r"proton\.me|aol\.com|koos\.agency|privaterelay\.appleid\.com|libero\.it|orange\.fr|free\.fr|"
+    r"wanadoo\.fr|telenet\.be|skynet\.be|btinternet\.com|bluewin\.ch)", re.I)
+
+
+def check_no_reader_traces_in_the_repo():
+    """The repository is public; a person's mail address and the moment a
+    reader stood somewhere do not belong in it (privacy audit, 2026-10-19,
+    Hidde: "wat als follow the money ons onderzoekt"). Refuses, in any tracked
+    text file, an address at a personal mail provider (lists of people are
+    kept by addr_hash() instead, as in mailcheck.py), and, under data/, a
+    taken_at longer than a date: the time stays in Supabase, the sighting id
+    is enough to look it up. Removing it needs Hidde."""
+    import subprocess
+    try:
+        tracked = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True,
+                                 text=True, timeout=30).stdout.split("\n")
+    except Exception:
+        return []
+    out = []
+    stamp = re.compile(r'"taken_at":\s*"\d{4}-\d{2}-\d{2}[T ]')
+    for f in tracked:
+        if not f.endswith((".md", ".json", ".py", ".ts", ".astro", ".html", ".txt", ".yml", ".swift", ".csv")):
+            continue
+        if f.startswith(("site/public/photos", "out/")):
+            continue
+        try:
+            text = (ROOT / f).read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+        n = len(PERSONAL_MAIL.findall(text)) if "@" in text else 0
+        if n:
+            out.append(f"{f}: {n} personal mail address(es) in a public repository; "
+                       "keep people in Supabase (private_store.py) or by addr_hash()")
+        if f.startswith("data/") and stamp.search(text):
+            out.append(f"{f}: a reader's photo time (taken_at with a clock time) in a public file; "
+                       "keep the day at most, the sighting id finds the rest")
+    return out
+
+
+def check_served_photos_carry_no_location():
+    """No photograph we serve carries a GPS position in its EXIF. Found on
+    2026-10-19: one of 1,222, the owner's own photo with the spot it was taken.
+    Camera and date EXIF on a Commons photograph is the photographer's own
+    public record and stays. Removing this check needs Hidde."""
+    import struct
+    out = []
+    for path in sorted((ROOT / "site" / "public" / "photos").rglob("*.jp*g")):
+        try:
+            data = path.read_bytes()
+        except OSError:
+            continue
+        i = 2
+        while i < len(data) - 10 and data[i] == 0xFF:
+            marker = data[i + 1]
+            size = struct.unpack(">H", data[i + 2:i + 4])[0]
+            if marker == 0xE1 and data[i + 4:i + 10] == b"Exif\x00\x00":
+                t = data[i + 10:i + 2 + size]
+                end = "<" if t[:2] == b"II" else ">"
+                try:
+                    off = struct.unpack(end + "I", t[4:8])[0]
+                    n = struct.unpack(end + "H", t[off:off + 2])[0]
+                    tags = {struct.unpack(end + "H", t[off + 2 + 12 * k:off + 4 + 12 * k])[0]
+                            for k in range(n)}
+                except struct.error:
+                    tags = set()
+                if 0x8825 in tags:
+                    out.append(f"{path.relative_to(ROOT)}: carries a GPS position in its EXIF; "
+                               "strip the APP1 segment before it is served (out/tmp/strip_exif.py)")
+                break
+            if marker == 0xDA:
+                break
+            i += 2 + size
+    return out
+
+
 def check_no_personal_address():
     """The fourteenth ratchet check, from 2026-09-03.
 
@@ -2996,6 +3077,8 @@ def main():
     failures += check_scripts_are_valid_python()
     failures += check_auth_corpus_agreement()
     failures += check_people_s_addresses_stay_out_of_the_repo()
+    failures += check_no_reader_traces_in_the_repo()
+    failures += check_served_photos_carry_no_location()
     failures += check_app_crashes_reach_a_person()
     failures += check_every_gate_asks_the_server()
     failures += check_a_user_id_is_not_read_from_the_stored_session()

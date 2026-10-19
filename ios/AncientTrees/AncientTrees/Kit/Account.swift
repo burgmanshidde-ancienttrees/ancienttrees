@@ -24,7 +24,7 @@
 // DIFFERENT address, so Apple on the phone and Google on the laptop are two
 // accounts and the second one looks empty. That is why every screen that shows
 // an account shows which address it is: a person who can see
-// "someone@privaterelay.appleid.com" can work out what happened, and a person
+// "[address removed]" can work out what happened, and a person
 // who cannot just thinks we lost their trees.
 //
 // What we store is unchanged from the rule Hidde set when he opened the account

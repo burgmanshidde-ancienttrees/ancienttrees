@@ -47,7 +47,7 @@ def our_subjects():
     """The subjects we sent, normalised. A reply keeps them behind "Re:".
 
     Added 2026-08-23, and it closes the hole that mattered most. Hanna Hirsch,
-    chair of Bomenstichting Amsterdam, answered from hhirsch@xs4all.nl, a
+    chair of Bomenstichting Amsterdam, answered from [address removed], a
     private address at a free-mail host. The sender filter excludes free-mail
     domains on purpose, so that mail was never opened and the most useful
     reply this project has had was invisible to the reader. Hidde spotted it:

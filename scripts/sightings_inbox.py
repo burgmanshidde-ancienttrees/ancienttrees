@@ -703,7 +703,9 @@ def main():
                     "girth_hugs": row.get("girth_hugs"),
                     "note": (row.get("note") or "")[:500],
                     "latitude": row.get("lat"), "longitude": row.get("lng"),
-                    "taken_at": row.get("taken_at"), "photo": row.get("photo"),
+                    # No taken_at: this file is public, and the time a reader
+                    # stood somewhere stays in Supabase (2026-10-19 audit).
+                    "photo": row.get("photo"),
                     # THE SIGN beside it, when they photographed one: the
                     # cheapest second source a lead can have. Downloaded so a
                     # judge can read it; evidence only, never published.
@@ -751,7 +753,8 @@ def main():
             "girth_cm": row.get("girth_cm"),
             "girth_hugs": row.get("girth_hugs"),
             "note": (row.get("note") or "")[:300],
-            "taken_at": row.get("taken_at"), "photo_path": row["photo"],
+            # The day only: the queue file is public (2026-10-19 audit).
+            "taken_at": (row.get("taken_at") or "")[:10] or None, "photo_path": row["photo"],
             # The sign, for READING (species, age, which tree), never for the
             # page: sightings_publish.py publishes photo_path and nothing else.
             "sign_path": row.get("sign_photo"), "sign_file": fetch_sign(row),

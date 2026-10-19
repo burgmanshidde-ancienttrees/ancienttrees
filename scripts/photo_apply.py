@@ -63,7 +63,7 @@ def clean_author(raw):
 
     Commons' Artist field is free text, and people put a request in it. Catania's
     bunya carries "Ivan Ruggiero\\nI'd appreciate if you could mail me
-    (ivanrugg+credit@gmail.com) if you want to use this picture out of the", all
+    ([address removed]) if you want to use this picture out of the", all
     of which would have been rendered as the credit on a public page. Publishing
     a private email address is the one thing this project never does with a
     person's details, licence or no licence, and it takes the first line only,

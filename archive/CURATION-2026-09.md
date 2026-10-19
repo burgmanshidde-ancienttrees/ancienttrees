@@ -2259,7 +2259,7 @@ released. `data/agent-costs.json` logged for the write pass.
 ## 2026-09-10 - Two Kyoto submissions (98, 99): GPS only, not enough to identify a tree
 
 Submissions #98 and #99 in the `submissions` table, kind `tree`, `page: app:collect`,
-both from the same account (Hidde's own, burgmans.hidde@gmail.com, the same one
+both from the same account (Hidde's own, [address removed], the same one
 behind the Nara and Baarn sightings) via the contribute form on 2026-09-10. Both
 carry nothing but a GPS fix ("standing at the tree") and a city name: no name, no
 species, no note, no photo. #98 sits at 35.00566, 135.77446 (Higashiyama, ~600m
@@ -4544,7 +4544,7 @@ The push that shipped the 6 Japan places broke `deploy.yml` for three commits ru
 
 ## 2026-09-03 (continuation run) - Submissions 61/62: Hidde's own account, testing the collect flow at a Baarn house
 
-Two rows five minutes apart (`kind: tree`, city "Baarn", `page: app:collect`), both with empty `tree` and `why` fields, GPS 52.20707/52.20709,5.28865/5.28866, two metres apart. The `user_id` resolves via the admin API to burgmans.hidde@gmail.com, i.e. Hidde's own account, not a reader. Reverse-geocoded to 31 Bilderdijklaan, Baarn, a house. No species, no description, nothing to verify: this reads as him exercising the app's collect flow in person rather than a report, same shape as row 59 (a different tester at a different house). Set `outcome: holds` via the service key on both rows, no reply needed. Appended to `data/submissions-processed.json`.
+Two rows five minutes apart (`kind: tree`, city "Baarn", `page: app:collect`), both with empty `tree` and `why` fields, GPS 52.20707/52.20709,5.28865/5.28866, two metres apart. The `user_id` resolves via the admin API to [address removed], i.e. Hidde's own account, not a reader. Reverse-geocoded to 31 Bilderdijklaan, Baarn, a house. No species, no description, nothing to verify: this reads as him exercising the app's collect flow in person rather than a report, same shape as row 59 (a different tester at a different house). Set `outcome: holds` via the service key on both rows, no reply needed. Appended to `data/submissions-processed.json`.
 
 ## 2026-09-03 - Submission 60: a fig tree in Baarn, GPS resolves to a house
 
@@ -4552,7 +4552,7 @@ Row 60 (`kind: tree`, city "Baarn", tree blank, `why: "Figtree"`, GPS 52.21395,5
 
 ## 2026-09-03 (continuation run) - Submission 59: another app-collect test, Hilversum
 
-Row 59 (`kind: tree`, city "Hilversum", tree blank, `why: "Test"`, GPS 52.22837,5.17493 from `page: app:collect`) is the same shape as row 41's Baarn test: no tree name, no species, just the word "Test" and a coordinate. The `user_id` resolves via the admin API to gielkeburgmans@gmail.com, not Hidde's own account, so this reads as a family member or tester exercising the app's collect-photo submission flow rather than a reader report. The point reverse-geocodes to a house at 16 Gerardus Gullaan, Hilversum, a residential address, not a park or known tree site, so it is not treated as a lead regardless. Set `outcome: holds` via the service key, no reply needed. Appended to `data/submissions-processed.json`.
+Row 59 (`kind: tree`, city "Hilversum", tree blank, `why: "Test"`, GPS 52.22837,5.17493 from `page: app:collect`) is the same shape as row 41's Baarn test: no tree name, no species, just the word "Test" and a coordinate. The `user_id` resolves via the admin API to [address removed], not Hidde's own account, so this reads as a family member or tester exercising the app's collect-photo submission flow rather than a reader report. The point reverse-geocodes to a house at 16 Gerardus Gullaan, Hilversum, a residential address, not a park or known tree site, so it is not treated as a lead regardless. Set `outcome: holds` via the service key, no reply needed. Appended to `data/submissions-processed.json`.
 
 ## 2026-09-03 - Matera: stuck at 3, register exhausted, general search unfruitful
 
@@ -4760,7 +4760,7 @@ is gone, only that our one photograph disagrees with our own story.
 
 Row 57 (`kind: tree`, city "Baarn", `app:collect`, no tree name, no species, `why`
 empty, GPS 52.21401,5.29697 "standing at the tree") resolves via the admin API to
-`burgmans.hidde@gmail.com` on a freshly created account (signed in minutes before
+`[address removed]` on a freshly created account (signed in minutes before
 the row was written). The GPS sits about 7 metres from rows 43 and 44
 (52.21395,5.29700), already identified 2026-08-29 as his own click-through test of
 the same submission flow from a different account. Same pattern: an empty pin, no

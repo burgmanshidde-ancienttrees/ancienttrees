@@ -1281,7 +1281,7 @@ this session cannot reach the domain): identities are **linked automatically
 when the email address is the same and verified**. "When a new user signs in
 with OAuth, Supabase Auth will attempt to look for an existing user that uses
 the same email address. If a match is found, the new identity is linked to the
-user." So a magic link to somebody@gmail.com on the website and Continue with
+user." So a magic link to [address removed] on the website and Continue with
 Google on the same address in the app are ONE account, and nothing has to be
 built for that.
 
