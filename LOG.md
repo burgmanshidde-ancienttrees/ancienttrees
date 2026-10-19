@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session: privacy audit ("wat als Follow the Money ons onderzoekt")
+
+Closed: names and the follow graph were readable with the website's public key (now signed-in only, via the profile SQL Hidde ran); one served photo (the owner's own Pekingtuin oak) carried GPS (stripped; 1,221 others clean); readers' exact photo times sat in public repo files (78 removed, scripts stop writing them); personal mail addresses in 17 tracked files (masked; two exclusion lists now hashed); ambassadors' mail quotes (out); the shared_trees view listed all 86 shared sightings to anybody (now one tree by its link through `shared_tree()`, waiting in PENDING.sql). Two new ratchet checks in qa.py keep the repo and the photos clean.
+
+Not closed: everything removed is still in git history, because the repository is public and rewriting history needs a force-push (hard list 3, Hidde's call). Readers' account ids still sit beside tree coordinates in data/leads/_sightings.json and as contributor_user_id on photos; they no longer resolve to a name without an account, and hashing them touches the account-deletion chain (photo_takedown.py), so it is its own job.
+
+FOR HIDDE: paste supabase/PENDING.sql (shared trees) once the deploy of this session is live.
+
 ## 2026-10-19 session: the dead-yew reader got "on the site now"
 
 - Submission 466 (the reader who reported the Yew of Campo Santana dead) was set to `changed` with no reply_text, so the 09:31 knock auto-composed and sent "What you sent us is on the site now", linking /lisbon, with the App Store line to an app user. Only that mail went; no real answer.
