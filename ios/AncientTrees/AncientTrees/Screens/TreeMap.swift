@@ -339,14 +339,20 @@ struct TreeMap: UIViewRepresentable {
         // point of staying on the map rather than opening a page.
         if let sel = selected, context.coordinator.centred != sel.id {
             context.coordinator.centred = sel.id
+            // Centred at the zoom it already had, never zoomed in: Apple Maps
+            // leaves the neighbours on screen so the next pin is one tap away
+            // (recorded 2026-10-18). Only a map zoomed out past the city is
+            // brought in, so the tapped pin is not a dot among continents.
+            let zoom = max(map.zoomLevel, Self.zoom(forMeters: 20_000))
             map.setCenter(.init(latitude: sel.lat, longitude: sel.lng),
-                          zoomLevel: Self.zoom(forMeters: 900), animated: true)
+                          zoomLevel: zoom, animated: true)
         } else if selected == nil {
             context.coordinator.centred = nil
         }
 
         context.coordinator.sync(trees: trees, mine: mine, route: route,
                                  routeIsReal: routeIsReal, clusters: clusters, on: map)
+        if let style = map.style { MapLayers.select(selected?.id, on: style) }
     }
 
     // MARK: camera arithmetic
@@ -713,8 +719,11 @@ struct TreeMap: UIViewRepresentable {
                 }
                 return
             }
-            // A tap on the map itself folds a spread pile back.
+            // A tap on the map itself folds a spread pile back, and where a
+            // pin selects rather than opens, lets the selected tree go: Apple
+            // Maps puts its list back on a tap on empty map.
             MapLayers.fold(on: style, zoom: map.zoomLevel, clustered: parent.clusters)
+            if parent.onSelectTree == nil, parent.selected != nil { parent.selected = nil }
         }
 
         /// The mean of a pile, so the camera lands on the trees rather than on
@@ -1079,6 +1088,9 @@ enum MapLayers {
     static let routeSource = "at-route"
     static let treeLayer = "at-trees-pin"
     static let peakLayer = "at-trees-peak"
+    /// The tapped tree, drawn again on top and bigger: Apple Maps grows the
+    /// pin it is showing in the sheet (recorded 2026-10-18).
+    static let selectedLayer = "at-trees-selected"
     static let haloLayer = "at-trees-halo"
     static let clusterLayer = "at-cluster"
     static let clusterCount = "at-cluster-count"
@@ -1160,6 +1172,8 @@ enum MapLayers {
         var gen = 0
         var retired: [(layers: [String], source: String)] = []
         var writeCount = 0
+        /// The tree the sheet is showing, so a redraw keeps its pin big.
+        var selectedID: String? = nil
         /// This style's own slot in the temporary directory.
         let seq: Int
         init(seq: Int) { self.seq = seq }
@@ -1172,6 +1186,16 @@ enum MapLayers {
     /// above stay the vocabulary; every redraw appends its generation.
     static func live(_ base: String, on style: MLNStyle) -> String {
         base + "#\(state(for: style).gen)"
+    }
+
+    /// Points the big pin at one tree, or at none.
+    static func select(_ id: String?, on style: MLNStyle) {
+        let st = state(for: style)
+        guard st.selectedID != id else { return }
+        st.selectedID = id
+        if let layer = style.layer(withIdentifier: live(selectedLayer, on: style)) as? MLNSymbolStyleLayer {
+            layer.predicate = NSPredicate(format: "%K == %@", idKey, id ?? "")
+        }
     }
 
     private static func state(for style: MLNStyle) -> StyleState {
@@ -1373,7 +1397,7 @@ enum MapLayers {
         // identifiers, and the old set is retired once the new source reports
         // its points (or after a second, for an empty map). The double buffer
         // every map SDK's own docs give for swapping a GeoJSON source.
-        let old = (layers: [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer, mineLayer]
+        let old = (layers: [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer, selectedLayer, mineLayer]
                     .map { live($0, on: style) },
                    source: st.liveSourceID)
         st.retired.append(old)
@@ -1790,6 +1814,15 @@ enum MapLayers {
         peak.iconAnchor = NSExpression(forConstantValue: "center")
         peak.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking == YES")
         style.addLayer(peak)
+
+        // Matches nothing until a tree is selected; select(_:on:) aims it.
+        let chosen = MLNSymbolStyleLayer(identifier: live(selectedLayer, on: style), source: trees)
+        chosen.iconImageName = NSExpression(forKeyPath: "icon")
+        chosen.iconAllowsOverlap = NSExpression(forConstantValue: true)
+        chosen.iconAnchor = NSExpression(forConstantValue: "center")
+        chosen.iconScale = NSExpression(forConstantValue: 1.5)
+        chosen.predicate = NSPredicate(format: "%K == %@", idKey, state(for: style).selectedID ?? "")
+        style.addLayer(chosen)
         if clustered {
             // A SYMBOL layer with a rendered image, not a circle layer plus a
             // text layer. Two days went into the circle-and-text pair and it

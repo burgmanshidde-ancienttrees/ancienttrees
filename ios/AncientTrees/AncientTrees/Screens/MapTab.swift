@@ -36,6 +36,9 @@ struct MapTab: View {
     @State private var mapIdle = false
 
     @State private var selected: Tree?
+    /// The list's height when a pin was tapped, so the cross puts it back
+    /// where it was (Apple Maps, recorded 2026-10-18).
+    @State private var heightBeforeSelect: SheetHeight?
     /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
     /// simctl cannot tap, so the one screen that only exists after a tap could
     /// not be looked at before it shipped.
@@ -324,7 +327,9 @@ struct MapTab: View {
                     favourites: favouriteIds,
                     onLocationRefused: { refused = .location },
                     onSelectMine: { navigator.push = .mine($0) },
-                    onSelectTree: { navigator.push = .tree($0) },
+                    // A pin SELECTS, it does not open (Hidde, 2026-10-18, from
+                    // the Apple Maps recording): no onSelectTree, so TreeMap
+                    // writes `selected` and the sheet becomes that tree.
                     onMapIdle: { mapIdle = true },
                     focus: .init(latitude: origin.lat, longitude: origin.lng),
                     // So the map can tell a fix from Dam square and retake its
@@ -349,10 +354,15 @@ struct MapTab: View {
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {
-                // The count is the header now, outside the scroll view: it stays
-                // visible while the list scrolls and it is the handle that makes
-                // the sheet draggable again once it has (2026-08-25).
-                countStrip
+                // A tapped tree takes the header, as a tapped place does in
+                // Apple Maps; otherwise the count, outside the scroll view: it
+                // stays visible while the list scrolls and it is the handle
+                // that makes the sheet draggable again once it has (2026-08-25).
+                if let t = selected {
+                    TreePlaceHeader(tree: t, onClose: closePlace)
+                } else {
+                    countStrip
+                }
                 // Invisible on purpose: a marker for testTappingAPinOpensItsTree
                 // to wait on, so it stops sleeping and guessing at when the
                 // pins are actually tappable. See TreeMap.onMapIdle.
@@ -371,7 +381,13 @@ struct MapTab: View {
                 // sheet instead of scrolling past them. At full height the list
                 // scrolls, and the grabber at the top stays outside the scroll
                 // view so there is always a way back down.
-                sheet
+                if let t = selected {
+                    TreePlaceBody(tree: t,
+                                  km: located ? t.distanceKm(from: origin.lat, origin.lng) : nil,
+                                  onOpen: { navigator.push = .tree(t.id) })
+                } else {
+                    sheet
+                }
         }
         // The title used to float over the map as bare text with nothing behind
         // it, and worse, "Near Amsterdam" was a statement of a problem with no
@@ -471,7 +487,6 @@ struct MapTab: View {
         .task {
             if let id = debugSelect, let t = catalogue.tree(id) {
                 selected = t
-                sheetHeight = .card
             }
         }
         // SCROLLING THE LIST NO LONGER MOVES THE MAP (Hidde, 2026-10-12:
@@ -507,7 +522,6 @@ struct MapTab: View {
         .onChange(of: navigator.showOnMap) { _, new in
             guard let id = new, let t = catalogue.tree(id) else { return }
             selected = t
-            sheetHeight = .card
             navigator.showOnMap = nil
         }
         .sheet(isPresented: $askingPlus) {
@@ -591,14 +605,27 @@ struct MapTab: View {
             }
         }
         .toolbar(.hidden, for: .navigationBar)
-        .onChange(of: selected) { _, new in
-            // Tapping a pin raises the sheet and puts that tree at the top of
-            // the list, rather than making it the only thing in it.
-            if let t = new {
-                if sheetHeight == .peek { sheetHeight = .half }
-                topCard = t.id
+        .onChange(of: selected) { old, new in
+            // A tapped tree opens the sheet to half, the height Apple Maps
+            // shows a place at; the list's own height is kept for the cross.
+            if new != nil {
+                if old == nil { heightBeforeSelect = sheetHeight }
+                withAnimation(.spring(duration: 0.3)) { sheetHeight = .half }
+            } else if let before = heightBeforeSelect {
+                // Let go by a tap on the empty map: the same as the cross.
+                withAnimation(.spring(duration: 0.3)) { sheetHeight = before }
+                heightBeforeSelect = nil
             }
         }
+    }
+
+    /// The cross: the list comes back at the height it had, the pin shrinks.
+    private func closePlace() {
+        withAnimation(.spring(duration: 0.3)) {
+            selected = nil
+            sheetHeight = heightBeforeSelect ?? .peek
+        }
+        heightBeforeSelect = nil
     }
 
     /// Close enough to see it. Beyond this the honest thing is to point rather
