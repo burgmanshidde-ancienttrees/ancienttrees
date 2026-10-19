@@ -30,6 +30,12 @@ Web half: read the Roehampton Lucombe Oak (new photograph), /lisbon after the Ca
 - WARN /lisbon (meta_description and question_meta): "an olive, a dragon tree ... and thirty-five more" while the page lists 35 trees in total, so the count is stale after the lis_014 retirement and over by two (SEO blueprint count promises; CLAUDE.md "when a place grows, its intro and meta grow with it", same for shrinking). Should say thirty-three more (or the olive and thirty-four more in question_meta).
 - NOTE /london/roehampton-lucombe-oak (title and meta): "250 Year Old Tree" / "250-year-old" sharpens the story's own "somewhere between 200 and 260 years" to the guide's single estimate (Verify: never sharpen a vague source). "Up to about 250 years old" would match the body.
 
+## 2026-10-19 (app half)
+
+App half (tree, walk-begin, walk, city-map-full, city, collect-away; iPhone SE). The splash, both walks, the Add a tree sheet and the map read clearly and agree with themselves.
+
+- NOTE APP: city (Aachen), the card says "1,000 years" without "roughly", while the only source says "more than 800 years" (1852) and the page says "roughly 1,000"; a bare figure reads as measured (Verify: never sharpen a vague source). Show the data's "roughly 1,000 years" or the range.
+
 ## 2026-10-18
 
 Web half: read leipzig (index and Menzellinde), vienna, baarn, london and salt-lake-city as built; no em dashes, no leaked code. Two findings.
