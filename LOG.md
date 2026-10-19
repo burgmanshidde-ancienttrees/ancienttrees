@@ -11,6 +11,18 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session: photo push on the roster, and why Take me there looks low
+
+**Live:** 8 roster trees have their first photograph: four Dresden oaks (dre_006 Rieseneiche Sauerbusch, dre_023 Luthereiche Kleinluga, dre_024 Oberpoyritz, dre_026 König-Albert-Eiche), Salzburg szb_013, Brno brq_002 (GPS fix 8 m and the memorial-tree sign; large iNaturalist file), Viroflay vir_001 (Chêne de la Vierge) and Nagoya ngy_001 (Castle kaya). These pages come back into Google's index with the next deploy. Undo any one with `python3 scripts/photo_apply.py hold <id> --reason overrule`.
+
+Held (photo parked, nothing live changed): lux_009, nyc_022, utr_037, yak_002, slm_001 (right tree, file on disk only 200x500: fetch the full-size original), per_005, ali_006, bil_001.
+
+**The negative that matters:** `photo_hunt --recheck` on the top 27 roster cities plus `photo_fetch --roster` gave 236 candidates; 216 rejected (buildings, statues, plaques, birds, archival black-and-white, wrong species). About 940k tokens for 8 photographs, roughly 117k a photo against the 15k target. The Commons and iNaturalist supply for roster trees is close to used up: do not run another full roster viewing pass without a new source. Better lanes: readers' app photographs, and the `slm_001` full-size fetch.
+
+**Take me there on day one** (data/research/take-me-there-diagnosis-2026-10-19.md): nothing is broken; the event and button are unchanged and ungated. The likely cause is that most new phones come from App Store search and browse from far away; 14 phones prove no rate either way. The PostHog key file `~/.ancienttrees-posthog.env` is missing on this Mac, so the per-version split could not run. Proposed: count Take me there only among phones that opened a tree near them (measurement only); for a far tree, Save leads (needs Hidde's yes).
+
+Also: photo-judge must never send a person's name or address in a User-Agent (one batch did once, to Wikimedia, in a failed request).
+
 ## 2026-10-19 session: privacy audit ("wat als Follow the Money ons onderzoekt")
 
 Closed: names and the follow graph were readable with the website's public key (now signed-in only, via the profile SQL Hidde ran); one served photo (the owner's own Pekingtuin oak) carried GPS (stripped; 1,221 others clean); readers' exact photo times sat in public repo files (78 removed, scripts stop writing them); personal mail addresses in 17 tracked files (masked; two exclusion lists now hashed); ambassadors' mail quotes (out); the shared_trees view listed all 86 shared sightings to anybody (now one tree by its link through `shared_tree()`, waiting in PENDING.sql). Two new ratchet checks in qa.py keep the repo and the photos clean.
