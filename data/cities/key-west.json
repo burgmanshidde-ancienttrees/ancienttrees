@@ -1,0 +1,65 @@
+{
+  "city": "Key West",
+  "country": "United States",
+  "status": "needs_curation",
+  "oldest_tree_id": "kyw_001",
+  "intro": "Key West's champion tree is one you can eat. Florida's largest mammee apple grows in the yard of the Key West Firehouse Museum in Old Town, and its fruit goes into the museum's annual mamey ice cream social. Nobody recorded when it was planted. Firehouse No. 3 was built in 1908, the museum says the tree followed a few years later, and its own guesses put it between 100 and 120 years old. The museum is free, with a suggested donation, and opens four days a week.",
+  "meta_description": "Florida's state champion mammee apple grows in the Key West Firehouse Museum yard, and its fruit becomes ice cream every year.",
+  "question_answer": "The tree we map in Key West is the Firehouse Museum Mamey, Florida's state champion mammee apple, which the museum puts at somewhere between 100 and 120 years old. No planting record survives; the museum worked its age back from when the species starts to fruit.",
+  "question_meta": "The Firehouse Museum Mamey, Florida's champion mammee apple, roughly 100 to 120 years old, stands in Old Town Key West. Where and when to see it.",
+  "question_context": "The tree stands on city land between the Key West Firehouse Museum and the building next door, at the corner of Grinnell and Virginia streets in Old Town. In 2018 the county forester measured it at 328 centimetres round and 14.9 metres tall, and recorded its condition as fair, mature and declining; it was still bearing fruit in June 2024. Its age is the museum's estimate rather than a record. Volunteers threw it a 105th birthday party in 2019, a figure worked back from the roughly 21 years a mamey needs before it fruits, while a 2024 newspaper caption made it 115; both point to somewhere between 100 and 120 years. Watch the name: \"mamey\" is also used for Pouteria sapota, a different species, and the register is specific that this one is Mammea americana. The museum is free, with a suggested donation, and opens Wednesday to Saturday from 10:00 to 14:00. Whether the crown can be seen from the street without going in, we have not been able to confirm.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Key West?",
+      "a": "On this page, the Firehouse Museum Mamey, Florida's champion mammee apple, which the museum puts at between 100 and 120 years old. No planting record survives."
+    },
+    {
+      "q": "Is the Firehouse Museum Mamey free to see?",
+      "a": "The museum is free, with a suggested donation of $5, and opens Wednesday to Saturday from 10:00 to 14:00, last admission 13:30."
+    }
+  ],
+  "trees": [
+    {
+      "id": "kyw_001",
+      "name": "Firehouse Museum Mamey",
+      "species": "Mammee Apple (Mammea americana)",
+      "age_estimate": "roughly 110 years",
+      "age_min": 100,
+      "age_max": 120,
+      "girth_cm": 328,
+      "height_m": 14.9,
+      "location": {
+        "address": "Key West Firehouse Museum, 1026 Grinnell St (corner of Virginia St), Key West, FL 33040",
+        "latitude": 24.55387,
+        "longitude": -81.79298,
+        "neighbourhood": "Old Town"
+      },
+      "verified_sources": [
+        "https://ffs.fdacs.gov/ChampionTrees/Home.mvc/Detail/1077 (Florida Forest Service champion record PK 1077, read via Wayback 2025-08-11)",
+        "https://news.wjct.org/post/happy-birthday-mamey-key-west-museum-holds-party-champion-tree (WLRN/WJCT 2019)",
+        "https://www.keysnews.com/news/local/sweet-station/image_93915a78-32f3-11ef-96e8-cba4dc5e6339.html (Keys News, 2024-06-26 caption)",
+        "https://keywestfire.com/tours-tickets (the museum's own hours and admission)"
+      ],
+      "official_register": {
+        "name": "Florida Champion Tree Program (Florida Forest Service)",
+        "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1077"
+      },
+      "access": "Museum is free (suggested donation $5), open Wednesday to Saturday 10:00 to 14:00, last admission 13:30 (museum's own site, fetched). Register: tree is on City of Key West land between the fire station museum and the building next door. NOT CONFIRMED whether the tree is visible from the Grinnell or Virginia Street sidewalk; no fetched source says.",
+      "transport": "Old Town Key West, corner of Grinnell and Virginia streets; walkable from the Old Town streets (no transit stop verified by a fetched page, writer must not invent one)",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Key West Firehouse Museum yard",
+        "radius_m": 30
+      },
+      "curation_status": "flagged",
+      "story": "Florida's largest mammee apple tree ends up, every year, as ice cream. The Key West Firehouse Museum holds an annual mamey ice cream social, made with fruit from the tree in its yard, and in June 2024 the tree was still bearing.\n\nIt is the state champion of its species on the Florida Forest Service register. In 2018 the county forester measured it at 328 centimetres round at chest height and 14.9 metres tall, with a crown about 17 by 12 metres. He also wrote down its condition: fair, mature and declining. The 2024 fruit is the most recent word on its health.\n\nNobody recorded when it went in. Firehouse No. 3 was built in 1908, and the museum's account is that the tree followed a few years later. Volunteers threw it a 105th birthday party in 2019, a date worked back from the roughly 21 years a mamey needs before it fruits; a 2024 newspaper caption made it 115. Both are the museum's guess, so call it somewhere between 100 and 120.\n\nOne naming trap: \"mamey\" is also the common name of Pouteria sapota, a different species altogether. The register is specific that this one is Mammea americana.\n\nThe tree stands on city land between the museum and the building next door. The museum is free, with a suggested donation, and opens Wednesday to Saturday from 10:00 to 14:00. Whether you can see the crown from the street without going in, we have not been able to confirm.",
+      "how_to_recognise": "You can recognise it as the state champion mamey in the museum's yard. It stands between the Key West Firehouse Museum and the building next door, at the corner of Grinnell and Virginia streets.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

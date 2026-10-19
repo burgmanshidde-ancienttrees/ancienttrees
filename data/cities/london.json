@@ -1192,6 +1192,37 @@
         "height": 480
       },
       "verify_notes": "Planting date 1855 stated by london trees blog (2015) and the Grafting Gardeners guide ('said to have been planted in 1855', 'one of the oldest and largest in the country'), and by the Great Trees list. These may all derive from the Trees for Cities list, so treated as one chain; stated as 'said to'. Age is derived from that planting claim: 2026 minus 1855 = 171. Location: 'north side of the lake directly south of the mansion' (blog, guide); Great Trees coordinate is the pin, not tree-level. No measurements found. Alive: iNaturalist observation 2026-07-05 within radius (lifecheck RECENT, may not be this exact tree) and the blog shows it in leaf in winter. Owner National Trust; parkland access wording is from search snippets of third-party listings, National Trust page not fetched (404 on the page tried), so access is flagged. Photo: Geograph 571640 by I M Chengappa (CC BY-SA 2.0, via Commons), geotag 51.48833,-0.352 about 45 m from the pin, caption 'large cork oak tree by the lake'; approved on the pixels (cork bark, evergreen leaves, lake behind). The file is only 640x480 pixels, so it renders soft at large sizes; a larger photograph of this tree would replace it."
+    },
+    {
+      "id": "lon_033",
+      "name": "The Roehampton Lucombe Oak",
+      "species": "Lucombe Oak (Quercus x hispanica 'Lucombeana')",
+      "age_estimate": "roughly 250 years",
+      "age_min": 200,
+      "age_max": 260,
+      "location": {
+        "address": "junction of Danebury Avenue and Tangley Grove, Alton Estate, Roehampton SW15",
+        "latitude": 51.451337,
+        "longitude": -0.246961,
+        "neighbourhood": "Roehampton"
+      },
+      "verified_sources": [
+        "https://www.graftingardeners.co.uk/greatest-trees-london/",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+      ],
+      "access": "Open estate green space between housing blocks; no gate reported (not stated by a source, unconfirmed)",
+      "transport": "Roehampton and Putney area buses; nearest station Barnes or Putney, over 2 km (not source-checked)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Grafting Gardeners guide: about 250 years old, 'probably planted by Capability Brown' who landscaped the area around 1773: that is an inference by the guide, not documented, do NOT carry the Brown link as fact (no bridge claims). The Lucombe cultivar was named after William Lucombe of Exeter, who grew it about 1763 (guide), so a 250-year tree is plausible. Hybrid of cork oak and Turkey oak. One search summary (not a fetched page) places it slightly south of Finchdean House on the Alton Estate; unverified. Great Trees of London lists it at 51.451337,-0.246961 (not tree-level). Historic England listing 1466474 for the Alton West landscape returned 403, so no official statement about the tree. Alive: iNaturalist observation 2026-01-28 within radius (lifecheck RECENT, may not be this exact tree). Flagged: sources are a single chain (Trees for Cities list and a guide drawing on it), access not stated.",
+      "story": "This oak belongs to a variety that is barely older than it is. William Lucombe, a nurseryman in Exeter, raised the cross of a cork oak and a Turkey oak around 1763, and the hybrid still carries his name. The Grafting Gardeners guide to London's greatest trees puts this one at about 250 years old, which would make it one of the early generation.\n\nThe guide also says it was probably planted by Capability Brown, who landscaped the area around 1773. That is the guide's guess, and no record we have found backs it, so read it as a possibility rather than a pedigree.\n\nWhoever put it in, it now stands on the green between the housing blocks of the Alton Estate, at the junction of Danebury Avenue and Tangley Grove in Roehampton, and it was chosen as one of the Great Trees of London.\n\nTwo caveats. Our sources are one chain, the Great Trees list and a guide drawing on it, so the age is a single estimate, somewhere between 200 and 260 years, and nobody has published a girth or height. And the pin comes from the Great Trees list rather than from the trunk, so it is approximate; one unconfirmed account puts the tree just south of Finchdean House. No source describes a gate, but none confirms open access either. If you have stood under it, tell us.",
+      "how_to_recognise": "You can recognise it by its spot on the estate green at the junction of Danebury Avenue and Tangley Grove. It stands between the housing blocks, by one unconfirmed account just south of Finchdean House.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

@@ -1,0 +1,178 @@
+{
+  "city": "Miami",
+  "country": "United States",
+  "status": "needs_curation",
+  "oldest_tree_id": "mia_002",
+  "intro": "Miami's remarkable trees are mostly one man's doing and one forest's leftovers. Between 1914 and 1922 James Deering built Vizcaya on the Brickell Hammock, raising an artificial hill for live oaks that were already large when they were moved in, and buying more than a hundred royal palms in Cuba, of which one survives. Its forest holds national champions too, among them the biggest redberry stopper known in the country. Two kilometres north-east, Simpson Park keeps 7.8 acres of the old hammock and a co-champion paradise tree on its nature trail. Vizcaya charges admission; Simpson Park is free.",
+  "meta_description": "Vizcaya's hoisted live oaks, the last of Deering's Cuban royal palms, and national champion trees in the Brickell Hammock.",
+  "question_answer": "The oldest trees on this page are the Garden Mound Oaks at Vizcaya, four southern live oaks that Vizcaya's own label calls 200 years old, though a caption on the same page says 100. They were already large when they were moved onto an artificial hill built for James Deering between 1914 and 1922, so somewhere between one century and two is the honest range.",
+  "question_meta": "Vizcaya's Garden Mound Oaks, 100 to 200 years old by Vizcaya's own captions, lead Miami's old trees. Where they stand and the rest of the list.",
+  "question_context": "No tree on this page has been dated from its wood. The live oaks on Vizcaya's Garden Mound carry two ages from the same institution, 200 years on the mound's label and 100 in a video caption, and nobody has published a girth that would settle it. The estate's surviving Cuban royal palm is about a century old, worked out from the palm deliveries of 1916 to 1921 rather than measured. The two champions, the redberry stopper at Vizcaya and the paradise tree in Simpson Park, are ranked by the Florida Forest Service on size, not years, and neither has an age at all: the paradise tree was 170 centimetres round when measured in 2009, the stopper 135 centimetres in 2013, both before Hurricane Irma stripped the hammock in 2017. The settings are half the reason to come. Simpson Park is a 7.8 acre remnant of the Brickell Hammock, and Vizcaya's own forest holds eight known national champion trees. The two sites are about two kilometres apart, close enough to walk between, and Vizcaya Metrorail station is about 500 metres from Vizcaya's entrance. If you know how old any of them is, tell us.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Miami?",
+      "a": "On this page, the Garden Mound Oaks at Vizcaya: four southern live oaks that Vizcaya calls 200 years old on one label and 100 on another. They were already large when moved onto the mound, built between 1914 and 1922."
+    },
+    {
+      "q": "Are Miami's remarkable trees free to see?",
+      "a": "The paradise tree in Simpson Park is free, in a city park open daily from 8:00 to 17:00. The three Vizcaya trees need a ticket to Vizcaya Museum and Gardens, which is closed on Tuesdays."
+    },
+    {
+      "q": "What is the Brickell Hammock?",
+      "a": "A tropical hardwood forest on the Miami shore, of which Simpson Park keeps a 7.8 acre remnant. Vizcaya's own forest holds eight known national champion trees."
+    },
+    {
+      "q": "How do I get to Vizcaya by public transport?",
+      "a": "Take Metrorail to Vizcaya station, about 500 metres, a five to ten minute walk, from the entrance."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mia_001",
+      "name": "The Champion Paradise Tree of Simpson Park",
+      "species": "Paradise Tree (Simarouba glauca)",
+      "age_estimate": "not documented",
+      "girth_cm": 170,
+      "height_m": 16.8,
+      "location": {
+        "address": "Simpson Park Hammock, 55 SW 17th Road, Miami, FL 33129 (behind the Charles Torrey Simpson Garden Center building, a stop on the park's numbered nature trail)",
+        "latitude": 25.7587,
+        "longitude": -80.1958,
+        "neighbourhood": "The Roads / Brickell"
+      },
+      "verified_sources": [
+        "https://web.archive.org/web/20250520235933/https://www.miami.gov/files/sharedassets/public/v/1/parks/simpson-park-brochure-2022.pdf (City of Miami 2022 park brochure, labels the stop 'Paradise Tree (Champion Tree)')",
+        "https://floridahikes.com/simpson-rockland-hammock-preserve/ (independent: large paradise tree behind the building, national champion)",
+        "Florida Champion Tree register, FeatureServer/0 OBJECTID 499 (PK 417), National Co-Champion"
+      ],
+      "official_register": {
+        "name": "Florida Champion Tree Program (Florida Forest Service)",
+        "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/417"
+      },
+      "access": "Free. City of Miami park, open daily 8:00 to 17:00 (east entrance closes 16:00), closed on holidays (2022 brochure).",
+      "transport": "Brickell / The Roads, just south of downtown Miami; nearest Metrorail roughly a mile away (earlier pass); about 20 to 25 minutes on foot from Brickell.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register facts (seen on the FeatureServer record): circumference 67 in (170 cm), height 55 ft (16.8 m), crown 44 ft, measured 2009 (pre-Irma 2017), National Co-Champion by size. A second paradise tree in the same park, OBJECTID 506 (58 in, 65 ft, PENDING), exists, so the register cannot say which trunk the brochure stop shows. Register point (25.75821,-80.19675) is about 100 m from the brochure trail stop, so the pin is the brochure stop, approximate; the park is 7.8 acres, not a small site. Champion status is about size, not age; no age or girth in the brochure or floridahikes. Alive: park open and tended in the 2022 brochure; lifecheck RECENT (iNaturalist 2026-09-29 near the park) but not tied to this tree; Irma 2017 defoliated the hammock (Commons photos). Flagged: no dated tree-specific confirmation, pin is stop-level. Setting is the point: 7.8-acre remnant of the Brickell Hammock. Willow Bustic champion (OBJECTID 82, 54 in, 57 ft, 2009) is in the same park, see leads. Photo: none in reach (no CC file tied to the champion).",
+      "story": "This paradise tree shares the title of largest of its species in the United States. The Florida Forest Service lists it as a National Co-Champion: measured in 2009, it was 170 centimetres round, 16.8 metres tall and about 13 metres across the crown. Champion status is about size, not years, and nobody has dated it.\n\nThe setting is half the reason to come. Simpson Park is 7.8 acres of what remains of the Brickell Hammock, a scrap of tropical forest just south of downtown Miami, and the city's park brochure marks this tree as a stop on the numbered nature trail, labelled \"Paradise Tree (Champion Tree)\", behind the Charles Torrey Simpson Garden Center. The register's champion willow bustic grows in the same park.\n\nOne caution about which trunk. The register also lists a second paradise tree here, taller and thinner, still awaiting a verdict, and its own point for the champion sits about 100 metres from the brochure stop. Our pin is the brochure stop, so take the labelled tree on the trail as the one the city means.\n\nHurricane Irma stripped the hammock of its leaves in 2017, eight years after that measurement, and we have found no dated report of this particular tree since. The park is free, open daily from 8:00 to 17:00, with the east entrance closing at 16:00, and shut on holidays. If you know how old it is, tell us.",
+      "how_to_recognise": "You can recognise it by its place on the nature trail: the numbered stop the park brochure calls Paradise Tree (Champion Tree). It stands behind the Charles Torrey Simpson Garden Center building.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_002",
+      "name": "The Garden Mound Oaks of Vizcaya",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "about a century or more",
+      "age_min": 100,
+      "age_max": 220,
+      "location": {
+        "address": "Vizcaya Museum and Gardens, 3251 South Miami Avenue, Miami, FL 33129 (the Garden Mound, south end of the formal gardens)",
+        "latitude": 25.7447,
+        "longitude": -80.2116,
+        "neighbourhood": "Coconut Grove / Brickell Hammock"
+      },
+      "verified_sources": [
+        "https://vizcaya.org/gardenmound-label/ (Vizcaya's label, fetched 2026-10-18: '200-year old, windswept Live Oak trees'; a video caption on the same page says '100-year-old oak trees')",
+        "https://vizcaya.org/collections/gardens/about-gardens/ (fetched 2026-10-18: 'massive live oaks that were transported to Vizcaya and lifted onto the top of the Garden Mound'; caption: regularly trimmed to be more resilient during storms)",
+        "https://www.sofiascountrygardens.com/post/vizcaya-museum-and-gardens (fetched 2026-10-18: four Southern live oaks on the mound, from another Deering property, 'already large when they were transplanted one hundred years ago')"
+      ],
+      "access": "Paid admission to Vizcaya Museum and Gardens; open Wednesday to Monday, closed Tuesday (earlier pass, hours not refetched). Mound is a short walk up stone steps from the formal gardens.",
+      "transport": "Vizcaya Metrorail station, about 500 m (5 to 10 minute walk) from the entrance.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Vizcaya Garden Mound",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Ensemble: four oaks on one artificial hill (built 1914 to 1922 for James Deering), one place to stand. Age conflict recorded: Vizcaya's own label says 200 years, a caption on the same page says 100; sofiascountrygardens says large when moved about a century ago. No source gives a girth. Range 100 to 220 is institutional PR, not a measurement; page should state it. Alive: Vizcaya's own page describes current storm-resilience trimming of these oaks and a 2025 dated item on the same site; no tree-dated photo seen. Pin is the property centroid (register points for Vizcaya champions sit at 25.7433 to 25.7456, -80.2132 to -80.2107); mound coordinate not found (Nominatim empty). The 'small site' radius is a stretch (mound plus steps); drop location_site if the writer finds it too broad. Paid entry.",
+      "story": "These four live oaks were already big trees when they were hoisted onto the top of a hill that had not existed a few years earlier. The Garden Mound at Vizcaya is artificial, built between 1914 and 1922 for James Deering's Miami estate, and Vizcaya's own account says the massive oaks were transported in and lifted onto it. A garden writer adds that they came from another Deering property.\n\nHow old they are depends on which caption you read. Vizcaya's label for the mound calls them 200-year-old, windswept live oaks; a video caption on the same page says 100. The garden writer says only that they were already large when moved, about a century ago. Nobody has published a girth that could settle it, so the honest answer is somewhere between one century and two.\n\nWhat is certain is where they have spent the last hundred years: on an exposed hilltop in hurricane country. Vizcaya trims them regularly to make them more resilient when the storms come.\n\nThe four make a single stop. The mound sits at the south end of the formal gardens, up a short flight of stone steps, and the oaks are seen together from the top. Entry is paid, and Vizcaya opens Wednesday to Monday, closed on Tuesdays; check the hours before going. Vizcaya Metrorail station is about 500 metres from the entrance, a five to ten minute walk. Our pin marks the estate, not the mound itself.",
+      "how_to_recognise": "You can recognise them by where they grow: four windswept live oaks on top of the Garden Mound, the artificial hill at Vizcaya. It stands at the south end of the formal gardens, up a short flight of stone steps.",
+      "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_004",
+      "name": "Vizcaya's Red Stopper Champion",
+      "species": "Redberry Stopper (Eugenia confusa)",
+      "age_estimate": "not documented",
+      "girth_cm": 135,
+      "height_m": 17.4,
+      "location": {
+        "address": "Vizcaya Museum and Gardens, 3251 South Miami Avenue, Miami, FL 33129 (hammock/forest part of the grounds)",
+        "latitude": 25.74457,
+        "longitude": -80.21323,
+        "neighbourhood": "Coconut Grove / Brickell Hammock"
+      },
+      "verified_sources": [
+        "Florida Champion Tree register, FeatureServer/0 OBJECTID 299 (PK 1023), National Champion, queried 2026-10-18",
+        "https://vizcaya.org/collections/gardens/about-gardens/ (fetched 2026-10-18: photo caption 'Red Stopper Champion Tree at Vizcaya'; forest holds 8 known national champion trees)"
+      ],
+      "official_register": {
+        "name": "Florida Champion Tree Program (Florida Forest Service)",
+        "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/1023"
+      },
+      "access": "Paid admission to Vizcaya (see mia_002). Whether the hammock trail reaches this tree is not stated by any source.",
+      "transport": "Vizcaya Metrorail station, about 500 m from the entrance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: circumference 53 in (135 cm) at 4.5 ft, height 57 ft (17.4 m), crown 22 by 14 ft, measured Dec 2013, National Champion by size (total points 115). Vizcaya itself names a Red Stopper champion, which is the owner-of-ground corroboration, but its caption does not say which of the several Vizcaya redberry stopper records (PK 10, 877, 895, 1023) it shows; 1023 is the only one currently titled National Champion, the others pending or emeritus. Register point is the only coordinate, not tied to a crown, so approximate. Registers are 2013; Irma 2017 and Vizcaya's hammock damage not checked. Alive: not tree-dated. Slender hammock tree, remarkable as the largest of its species in the US, not for age. Weak page: no photo, no age.",
+      "story": "The biggest redberry stopper known in the United States grows in the forest at Vizcaya, James Deering's estate in Miami. In December 2013 the Florida Forest Service measured it at 135 centimetres round at chest height and 17.4 metres tall, with a narrow crown about 7 by 4 metres, and named it National Champion for its species.\n\nThat is a claim about size. A stopper is a slender hammock tree, not a giant, and nobody has dated this one. Vizcaya, which owns the ground, is proud enough of it to caption a photograph \"Red Stopper Champion Tree at Vizcaya\", and says its forest holds eight known national champion trees.\n\nThere is a complication. The register carries several redberry stopper records at Vizcaya, and Vizcaya's caption does not say which one it shows. This record is the only one currently titled National Champion; the others are pending or emeritus. The measurement also predates Hurricane Irma in 2017, and we have not found a dated report of this tree since.\n\nThe stopper stands in the hammock, the forested part of the estate, on the register's coordinate, which we have not been able to tie to a particular crown. No source says whether the visitor paths reach it, so go knowing you may see the forest rather than the tree. Entry to Vizcaya is paid, and Vizcaya Metrorail station is about 500 metres from the gate. If you have found it on the ground, tell us where.",
+      "how_to_recognise": "You can recognise it by its build: a slender trunk about 135 centimetres round, rising some 17 metres to a narrow crown. It stands in the hammock forest on the Vizcaya grounds, not in the formal gardens.",
+      "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_005",
+      "name": "Vizcaya's Surviving Cuban Royal Palm",
+      "species": "Royal Palm (Roystonea regia)",
+      "age_estimate": "about a century",
+      "age_min": 90,
+      "age_max": 110,
+      "girth_cm": 152,
+      "height_m": 22.6,
+      "location": {
+        "address": "Vizcaya Museum and Gardens, 3251 South Miami Avenue, Miami, FL 33129",
+        "latitude": 25.74333,
+        "longitude": -80.21095,
+        "neighbourhood": "Coconut Grove / Brickell Hammock"
+      },
+      "verified_sources": [
+        "https://vizcaya.org/collections/gardens/about-gardens/ (fetched 2026-10-18: Deering purchased over one hundred Royal Palms from Cuba; 'One remaining palm is a Florida Challenger, the 4th largest Royal Palm'; palm delivery photo dated 28 Nov 1921)",
+        "Florida Champion Tree register, FeatureServer/0 OBJECTID 598 (PK 878), Royal Palm, Florida Challenger, Vizcaya Museum & Gardens, queried 2026-10-18"
+      ],
+      "official_register": {
+        "name": "Florida Champion Tree Program (Florida Forest Service)",
+        "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/878"
+      },
+      "access": "Paid admission to Vizcaya (see mia_002).",
+      "transport": "Vizcaya Metrorail station, about 500 m from the entrance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Register: circumference 60 in (152 cm), height 74 ft (22.6 m), crown 25 by 21 ft, measured Apr 2012, titled Florida Challenger, matching Vizcaya's wording. Not independently proven to be the same palm (Vizcaya gives no location), but only one Vizcaya royal palm record exists. Age: Vizcaya documents the Cuban palms arriving around 1916 to 1921 (dated delivery photo 1921) and says one remains; a palm of that planting is roughly a century, but the page does not state this specimen's year, so treat the range as derived from 'one remaining' original, not a measured age. Palm girth is a trunk circumference, not a tree-ring measure. Alive: Vizcaya's page (2025 items) still says it remains; register 2012; not tree-dated. Pin is the register coordinate, approximate.",
+      "story": "James Deering bought more than a hundred royal palms in Cuba for his Miami estate. Vizcaya says one is left. Vizcaya publishes a photograph of a palm delivery dated 28 November 1921, and the shipments ran from about 1916 to that year, so the survivor has been standing here for roughly a century. That figure is worked out from the planting, not measured on the palm, and Vizcaya gives no year for this particular trunk.\n\nIt is also big. Vizcaya calls it a Florida Challenger, \"the 4th largest Royal Palm\", and the Florida Forest Service register agrees on the title: measured in April 2012, it stood 22.6 metres tall, with a trunk 152 centimetres round and a crown about 7.6 by 6.4 metres.\n\nOne honest gap. Vizcaya does not say where on the grounds its survivor stands, so we cannot prove the register's palm is the same one. It is the only royal palm the register records at Vizcaya, which makes it very likely, and our pin is the register's coordinate rather than a fix at the trunk.\n\nThe rest of the Cuban shipment is gone. Vizcaya's recent pages still say this one remains, though we have not seen a dated photograph of it. Entry to Vizcaya is paid, and Vizcaya Metrorail station is about 500 metres from the entrance.",
+      "how_to_recognise": "You can recognise it by its height: a single trunk about 152 centimetres round rising 22.6 metres, the last of Deering's Cuban royal palms. It stands on the Vizcaya grounds near the register's pin, which is approximate.",
+      "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -1,219 +1,221 @@
 [
- {
-  "id": "lon_027",
-  "name": "The Dulwich Park Turkey Oak",
-  "species": "Turkey Oak (Quercus cerris)",
-  "age_estimate": "not documented",
-  "location": {
-   "address": "south side of the south carriageway, Dulwich Park, London SE21",
-   "latitude": 51.444121,
-   "longitude": -0.081079,
-   "neighbourhood": "Dulwich"
+  {
+    "id": "lon_027",
+    "name": "The Dulwich Park Turkey Oak",
+    "species": "Turkey Oak (Quercus cerris)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "south side of the south carriageway, Dulwich Park, London SE21",
+      "latitude": 51.444121,
+      "longitude": -0.081079,
+      "neighbourhood": "Dulwich"
+    },
+    "verified_sources": [
+      "https://www.dulwichsociety.com/the-journal/winter-2020/notable-trees-of-dulwich-the-turkey-oak",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://www.geograph.org.uk/photo/5482959"
+    ],
+    "access": "Free; Dulwich Park is a public park (Southwark), open daily",
+    "transport": "North Dulwich or West Dulwich station about 15 minutes' walk; several buses to the park gates",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Dulwich has exactly one Great Tree of London, and it is not a native oak. It is a Turkey oak, a southern European species, and it was among the original 41 trees chosen for the Great Trees list. The Dulwich Society, writing about the area's notable trees in 2020, called it perhaps the finest Turkey oak in Dulwich. The species has been planted in Britain since the early 18th century.\n\nThat date belongs to the species, not to this tree. Nobody has published when this one went in, how tall it is or how far round, and this page will not guess. If you know, or have measured it, tell us.\n\nWhat it has instead is a plaque, set beside it to mark it as a Great Tree, and that is the most useful thing a visitor can know. Look for the broad, low crown near the south carriageway, the park's road on the south side, and then for the plaque at its foot.\n\nThe pin comes from the Great Trees map and lands close to where a photographer stood to take its picture in 2017, so it puts you within a few metres rather than on the trunk. Dulwich Park is free and open daily, about fifteen minutes on foot from North Dulwich or West Dulwich station.",
+    "how_to_recognise": "You can recognise it by the plaque beside it naming it a Great Tree of London, the only one in Dulwich. It stands on the south side of the south carriageway in Dulwich Park, under a broad, low crown.",
+    "age_min": null,
+    "age_max": null,
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Dulwich_Park_Oak_%281%29.jpg",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
+      "status": "approved",
+      "width": 4032,
+      "height": 3024
+    }
   },
-  "verified_sources": [
-   "https://www.dulwichsociety.com/the-journal/winter-2020/notable-trees-of-dulwich-the-turkey-oak",
-   "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-   "https://www.geograph.org.uk/photo/5482959"
-  ],
-  "access": "Free; Dulwich Park is a public park (Southwark), open daily",
-  "transport": "North Dulwich or West Dulwich station about 15 minutes' walk; several buses to the park gates",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "story": "Dulwich has exactly one Great Tree of London, and it is not a native oak. It is a Turkey oak, a southern European species, and it was among the original 41 trees chosen for the Great Trees list. The Dulwich Society, writing about the area's notable trees in 2020, called it perhaps the finest Turkey oak in Dulwich. The species has been planted in Britain since the early 18th century.\n\nThat date belongs to the species, not to this tree. Nobody has published when this one went in, how tall it is or how far round, and this page will not guess. If you know, or have measured it, tell us.\n\nWhat it has instead is a plaque, set beside it to mark it as a Great Tree, and that is the most useful thing a visitor can know. Look for the broad, low crown near the south carriageway, the park's road on the south side, and then for the plaque at its foot.\n\nThe pin comes from the Great Trees map and lands close to where a photographer stood to take its picture in 2017, so it puts you within a few metres rather than on the trunk. Dulwich Park is free and open daily, about fifteen minutes on foot from North Dulwich or West Dulwich station.",
-  "how_to_recognise": "You can recognise it by the plaque beside it naming it a Great Tree of London, the only one in Dulwich. It stands on the south side of the south carriageway in Dulwich Park, under a broad, low crown.",
-  "age_min": null,
-  "age_max": null,
-  "photo": {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Dulwich_Park_Oak_%281%29.jpg",
-   "license": "CC BY-SA 4.0",
-   "attribution": "Hopefully Acceptable Username, via Wikimedia Commons",
-   "status": "approved",
-   "width": 4032,
-   "height": 3024
+  {
+    "id": "lon_028",
+    "name": "The Carshalton Plane",
+    "species": "London Plane (Platanus x hispanica)",
+    "age_estimate": "over 250 years",
+    "age_min": 250,
+    "age_max": null,
+    "girth_cm": 760,
+    "height_m": 39.6,
+    "location": {
+      "address": "Festival Walk beside the stream feeding Carshalton Ponds, Carshalton SM5",
+      "latitude": 51.3652,
+      "longitude": -0.16577,
+      "neighbourhood": "Carshalton"
+    },
+    "verified_sources": [
+      "https://www.secretcarshalton.com/tree-mendous-new-measurement-finally-announced-for-carshaltons-giant-tree/",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://www.geograph.org.uk/photo/2993649",
+      "https://www.inaturalist.org/observations/170529641"
+    ],
+    "official_register": {
+      "name": "Forestry Commission remeasurement of 5 August 2026 with Sutton Council Parks Service (letter shown in the Secret Carshalton report); Great Trees of London list",
+      "url": "https://www.secretcarshalton.com/tree-mendous-new-measurement-finally-announced-for-carshaltons-giant-tree/"
+    },
+    "access": "Free; stands beside the public Festival Walk by Carshalton Ponds, plaque at its foot (Geograph captions); no hours published, an open path",
+    "transport": "Carshalton station (Southern), roughly 10 minutes on foot (not source-stated; Carshalton Ponds are the landmark)",
+    "location_precision": "confirmed",
+    "curation_status": "ai_generated",
+    "verify_notes": "Great Trees of London original 41 (Wikipedia list gives site as Sutton Ecology Centre grounds, 'about 200 years old as of 2010'). Remeasured by Forestry Commission (Pherenice Worsey-Buck) and Sutton Council Parks (Simon Ffoulkes): 39.6 m tall (130 ft) and 7.6 m circumference (almost 25 ft); letter dated 5 August 2026; Secret Carshalton published 20 Aug 2026. 1964 Forestry Commission plaque at ground level recorded 123 ft, then the tallest London plane known in Britain; girth up 19 percent and height up 6 percent since. Age not recorded; 1964 plaque already said likely over 200 years, so article says probably more than 250 now (derived, kept broad). Tree Register list (as read by Secret Carshalton, not fetched by us) has two Richmond planes at 40.40 m and 40.25 m, so Carshalton is third-tallest London plane on that list, no longer the tallest: do not write 'tallest in Britain'. Alive: RECENT iNaturalist observation 2023-07-01 (lifecheck) plus the Aug 2026 measuring visit. Pin: Geograph 2993649 plaque next to the base, subject location OSGB TQ 2779 6450 (10 m precision) = 51.36520, -0.16577; Commons geosearch shows the plaque photo 9.7 m away, Geograph 'Base of the tallest London plane' 14 m and 'The tallest London plane in Britain' 36 m (CC BY-SA, photographer Marathon): a photo of this tree is in reach for the photo pass. Official register caveat: no council or Great Trees web page for this tree found (sutton.gov.uk page 403/access denied); the measurement body is the Forestry Commission, reported secondarily. Honeywood Museum is 37 m away (Commons geosearch). Lead cluster mates in Carshalton: Ashcombe Sweet Chestnut (51.35998,-0.16228) and Carshalton Park sweet chestnut (51.36046,-0.16316), both about 600 m south, no measurements found.",
+    "story": "In 1964 the Forestry Commission set a plaque at the foot of this plane recording 123 feet, then the tallest London plane known in Britain. It has not stopped growing. On 5 August 2026 the Forestry Commission and Sutton Council's parks service measured it again: 39.6 metres tall, about 130 feet, and 7.6 metres round the trunk, almost 25 feet. Since the plaque, its girth has grown by 19 percent and its height by 6 percent.\n\nThe height record has moved on, though. On the Tree Register's list, as read by Secret Carshalton, the local site that published the new figures, two planes in Richmond stand at 40.40 and 40.25 metres. That makes Carshalton's the third tallest London plane on that list, still a giant and no longer the champion.\n\nNobody recorded when it was planted, and the guesses do not quite agree. The 1964 plaque already called it likely over 200 years old, which puts it past 250 now. The Great Trees of London list, which counted it among its original 41 trees, gave about 200 years as of 2010. Both are estimates rather than records.\n\nIt stands beside Festival Walk, on the stream that feeds Carshalton Ponds, with the plaque at its base and the Honeywood Museum a few dozen metres away. The path is open and free, and Carshalton station is roughly ten minutes on foot.",
+    "how_to_recognise": "You can recognise it by the Forestry Commission plaque at its base and a trunk 7.6 metres round. It stands beside Festival Walk on the stream feeding Carshalton Ponds, a few dozen metres from the Honeywood Museum."
+  },
+  {
+    "id": "lon_029",
+    "name": "The Marble Hill Black Walnut",
+    "species": "Black Walnut (Juglans nigra)",
+    "age_estimate": "roughly 300 years",
+    "age_min": 250,
+    "age_max": 320,
+    "girth_cm": 578,
+    "height_m": 27,
+    "location": {
+      "address": "Marble Hill Park, near the entrance from the Thames towpath, Richmond Road, Twickenham TW1",
+      "latitude": 51.448576,
+      "longitude": -0.310797,
+      "neighbourhood": "Twickenham"
+    },
+    "verified_sources": [
+      "https://web.archive.org/web/2023/http://johngrimshawsgardendiary.blogspot.com/2010/06/black-walnut-at-marble-hill.html",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London",
+      "https://www.english-heritage.org.uk/visit/places/marble-hill/",
+      "https://www.inaturalist.org/observations/396644896"
+    ],
+    "official_register": {
+      "name": "The Tree Register of the British Isles (champion record, measured by Owen Johnson 2001); Great Trees of London list",
+      "url": "https://www.treeregister.org/"
+    },
+    "access": "Free: Marble Hill Park (English Heritage, open daily; park hours dawn to dusk, closing time varies by source, check English Heritage); the house is separate (Wed-Sun, seasonal, ticketed)",
+    "transport": "St Margarets or Twickenham rail station, roughly 15 to 20 minutes on foot (walk times estimated, not source-stated)",
+    "location_precision": "approximate",
+    "location_site": null,
+    "curation_status": "flagged",
+    "verify_notes": "Great Trees of London original 41. Measurements seen on the fetched Grimshaw page (via Wayback, original blogspot 429s): Elwes and Henry, Trees of Great Britain and Ireland (1907) ranked it first of its species, measured 1905 at 98 ft (29.8 m) with girth 14 ft 3 in (about 434 cm); Tree Register (Owen Johnson) 2001: 27 m tall, diameter 184 cm, so girth about 578 cm (computed pi x 184; a monumentaltrees/TROBI snippet gave 5.78 m at 1.5 m but that page 403s and was not seen). Grimshaw, citing TROBI: none other in England achieves these proportions of both height and girth with a full canopy (a superlative to attribute, not to repeat). 'Said to have been planted by Henrietta Howard in the 1720s' (hearsay, Grimshaw); GIGL snippet: probably from the original landscaping of the park (snippet only, page 403). Age therefore broad and derived: the 1720s planting is a claim, not a record. Alive: RECENT iNaturalist observation 2026-08-26 (lifecheck). Pin: Great Trees list coordinate; park described as 'near the entrance from the Thames footpath' (GIGL snippet); approximate, one clear crown on Commons: file 'The Black Walnut Tree Of Marble Hill Park, London. (4621674542).jpg' is the Great Trees table image, so a photo of this tree is in reach. Cluster: Riverside Plane (Richmond, 51.45647,-0.30473) and Maids of Honour Stone Pine (Richmond Green, 51.46138,-0.30867) lie 1 to 2 km away across the river; no measurements found for the stone pine. Official register caveat: Tree Register has no per-tree public URL; record is member-only. If the pass owner will not accept treeregister.org as the register, this tree is rich only through the photo + measurement + access.",
+    "story": "In 1907 the standard survey of British trees ranked this walnut first of its kind in the country. Elwes and Henry, in The Trees of Great Britain and Ireland, recorded it in 1905 at 98 feet tall with a trunk 14 feet 3 inches round. Owen Johnson of the Tree Register measured it again in 2001: 27 metres tall and 184 centimetres across the trunk, which works out at roughly 5.8 metres round. A century had taken a few metres off the top and added well over a metre to the waist.\n\nThe Tree Register's verdict, as quoted in John Grimshaw's garden diary, is that no other black walnut in England matches it for both height and girth with a full canopy. It was among the original 41 Great Trees of London.\n\nIts age rests on a story. Tradition, repeated by Grimshaw, says Henrietta Howard planted it in the 1720s, and a London parks survey thinks it probably belongs to the park's original landscaping. Neither is a planting record, so roughly 300 years, somewhere between 250 and 320, is as close as anyone can honestly put it.\n\nThe pin comes from the Great Trees coordinate and is approximate. The park's own description puts the tree near the entrance from the Thames towpath, so start there. Marble Hill Park is free and open daily from dawn to dusk; the house is ticketed separately. St Margarets and Twickenham stations are each about 15 to 20 minutes on foot.",
+    "how_to_recognise": "You can recognise it by its size: a black walnut 27 metres tall with a trunk close to six metres round under a full canopy. It stands in Marble Hill Park near the entrance from the Thames towpath."
+  },
+  {
+    "id": "lon_030",
+    "name": "The Gunnersbury Park Black Mulberry",
+    "species": "Black Mulberry (Morus nigra)",
+    "age_estimate": "probably 19th century",
+    "age_min": 150,
+    "age_max": 220,
+    "girth_cm": 184,
+    "height_m": 11,
+    "location": {
+      "address": "Gunnersbury Park, below the terrace steps of the Large Mansion (Gunnersbury Park Museum), London W3",
+      "latitude": 51.49928,
+      "longitude": -0.28727,
+      "neighbourhood": "Gunnersbury"
+    },
+    "verified_sources": [
+      "https://www.moruslondinium.org/map/gunnersbury-park",
+      "https://www.moruslondinium.org/research/gunnersbury-mulberries",
+      "https://www.visitgunnersbury.org/plan-your-visit"
+    ],
+    "official_register": {
+      "name": "Morus Londinium London mulberry survey (Conservation Foundation), Gunnersbury Park record",
+      "url": "https://www.moruslondinium.org/map/gunnersbury-park"
+    },
+    "access": "Free; Gunnersbury Park open daily 7am until dusk, museum Tue-Sun 10am-4.30pm, free entry (visitgunnersbury.org)",
+    "transport": "Acton Town station (Piccadilly/District) about 10 minutes to the park gate (official), South Ealing about 10 minutes to Popes Lane gate; Kew Bridge rail to the southern gate; then a walk to the Large Mansion",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "Terrace steps below the Large Mansion (Gunnersbury Park Museum)",
+      "radius_m": 40
+    },
+    "curation_status": "flagged",
+    "verify_notes": "Morus Londinium record: site class Notable, Recumbent; largest height 11 m, largest girth 184 cm; OS grid TQ 18983 79206 (converted to 51.49928, -0.28727 with an OSGB36 to WGS84 Helmert script checked against a Geograph point). Record places it 'south-west of Gunnersbury Park Museum, by a curved path'; the Morus Londinium field visit of April 2024 (Peter Coles) found it 'tucked away near the foot of steps leading up through an arch to the terrace' of the Large Mansion, recumbent in a V shape, twin-stemmed, dwarfed by a Cedar of Lebanon over 200 years old, probably 19th century and planted by the Rothschilds, about 11 m tall before it fell; it keeled over at an unknown date and is sending branches vertically to form a new squat crown. A young upright scion a few metres away seems dead. Alive: observed April 2024 (visit report), and flagged as thriving. A semi-mature Paper mulberry stands separately south-east of the museum near the mock-gothic tile kiln ruin (not this tree). Grid reference is a survey coordinate, not a verified crown: approximate with the small named site; recognition is the fallen V-shaped twin trunk beside the cedar. No Commons photo of the tree within 120 m (geosearch). Age is a source's 'probably 19th century' only; planting by the Rothschilds is the author's inference, the Rothschilds bought in 1835. Second tree to consider at the same spot: the cedar, no measurement found.",
+    "story": "This mulberry fell over and kept growing. At some date nobody recorded, the twin-stemmed tree below the terrace of Gunnersbury's Large Mansion keeled over. It now lies in a V shape, sending branches straight up to build a new, squat crown. Before it went down it stood about 11 metres tall, according to Morus Londinium, the London mulberry survey, which records a largest girth of 184 centimetres and classes the tree as Notable and recumbent.\n\nPeter Coles of Morus Londinium found it on a visit in April 2024, tucked away near the foot of the steps that climb through an arch to the terrace, and reported it thriving. Its neighbour dwarfs it: a cedar of Lebanon over 200 years old. A young upright mulberry a few metres away seems to have died, so do not mistake that one for it.\n\nThe age is a single source's judgement: probably 19th century. The same writer suggests the Rothschilds planted it, which is an inference rather than a record; the family bought Gunnersbury in 1835. Somewhere between 150 and 220 years is as close as anyone can say.\n\nThe pin is the survey's grid reference, which lands near the steps rather than on the trunk, so let the cedar and the fallen V guide you. Black mulberries fruit in high summer, dark berries that stain whatever lies beneath. The park is free and open daily from 7am until dusk, about ten minutes on foot from Acton Town station.",
+    "how_to_recognise": "You can recognise it by the twin trunk lying on the ground in a V, its branches growing straight up. It stands at the foot of the steps up to the Large Mansion terrace, beside a much larger cedar of Lebanon.",
+    "best_time": {
+      "months": [
+        7,
+        8
+      ],
+      "kind": "fruit",
+      "label": "July and August, when the dark mulberries ripen and stain the ground"
+    }
+  },
+  {
+    "id": "lon_031",
+    "name": "The Royal Oak, Richmond Park",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "roughly 750 years",
+    "age_min": 600,
+    "age_max": 800,
+    "location": {
+      "address": "Richmond Park near Pen Ponds, Richmond TW10",
+      "latitude": 51.444646,
+      "longitude": -0.283504,
+      "neighbourhood": "Richmond Park"
+    },
+    "verified_sources": [
+      "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/",
+      "https://exploring-london.com/2024/05/22/10-significant-and-historic-london-trees4-the-royal-oak-richmond-park/",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Free; Richmond Park (The Royal Parks) is open to pedestrians 24 hours a day per exploring-london",
+    "transport": "Richmond station, then bus 371 or a walk of about 30 minutes to Richmond Gate; the oak is roughly 1.5 km further in near Pen Ponds (transport times not source-checked)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Age is an estimate repeated by sources, not a measurement: Ancient Tree Forum 'estimated to be around 750 years old' (Royal Parks the manager), exploring-london 'more than 750', Great Trees of London list '~750 (2020)'. Age range 600 to 800 is broad on purpose. Hollow, pollarded for several hundred years, no royal connection despite the name (exploring-london). Pin: Great Trees list coordinate (51.444646,-0.283504) agrees with Ancient Tree Forum grid ref TQ193731 to about 50 m; neither is a tree-level fix so kept approximate. The tree is reported to have its own enclosure (secondary source, not seen on a primary page). No girth recorded: the only figure found (6.11 m) is from the Woodland Trust Ancient Tree Inventory, which we do not use. Alive: iNaturalist observation 2024-10-05 within radius (lifecheck RECENT, may not be this exact tree); older Great Trees entry says 2020. Flagged: age is a popular estimate; no official register page for this single tree."
+  },
+  {
+    "id": "lon_032",
+    "name": "The Osterley Park Cork Oak",
+    "species": "Cork Oak (Quercus suber)",
+    "age_estimate": "about 170 years",
+    "age_min": 165,
+    "age_max": 175,
+    "location": {
+      "address": "north side of the lake, south of Osterley House, Osterley Park, Jersey Road, Isleworth TW7 4RB",
+      "latitude": 51.488575,
+      "longitude": -0.351411,
+      "neighbourhood": "Osterley"
+    },
+    "verified_sources": [
+      "https://londontreesblog.wordpress.com/2015/01/08/cork-oak-at-osterley-park/",
+      "https://www.graftingardeners.co.uk/greatest-trees-london/",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Parkland of the National Trust estate is free on foot daily; opening hours differ between listings (about 9am to 5pm per Art Fund), check National Trust before going",
+    "transport": "Osterley Underground station (Piccadilly line) about 10 to 15 minutes' walk to the park gate (not source-checked)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Planting date 1855 stated by london trees blog (2015) and the Grafting Gardeners guide ('said to have been planted in 1855', 'one of the oldest and largest in the country'), and by the Great Trees list. These may all derive from the Trees for Cities list, so treated as one chain; stated as 'said to'. Age is derived from that planting claim: 2026 minus 1855 = 171. Location: 'north side of the lake directly south of the mansion' (blog, guide); Great Trees coordinate is the pin, not tree-level. No measurements found. Alive: iNaturalist observation 2026-07-05 within radius (lifecheck RECENT, may not be this exact tree) and the blog shows it in leaf in winter. Owner National Trust; parkland access wording is from search snippets of third-party listings, National Trust page not fetched (404 on the page tried), so access is flagged.",
+    "story": "A Mediterranean oak has stood beside a lake in west London since, by the account everyone repeats, 1855. Cork oaks belong to Portugal and Spain, where their thick, spongy bark is stripped for bottle stoppers. This one has kept its bark, and its leaves too: the species is evergreen, and the London Trees blog photographed it in full leaf in winter.\n\nThe Grafting Gardeners guide to London's greatest trees calls it one of the oldest and largest cork oaks in the country, and it was chosen as one of the Great Trees of London.\n\nThe date needs a caveat. The blog, the guide and the Great Trees list all give 1855, but they may be repeating one another rather than three separate records, so it is a date the tree is said to carry. If it holds, the oak is about 170 years old. Nobody has published its height or girth; if you have measured it, tell us.\n\nIt stands on the north side of the lake, directly south of Osterley House. The pin is approximate, so walk down to the lakeshore below the mansion and look for the ridged, corky bark that gives the species its name. The parkland belongs to the National Trust and is free on foot daily. Art Fund gives about 9am to 5pm, but listings disagree, so check the National Trust first. Osterley station on the Piccadilly line is roughly 10 to 15 minutes' walk from the park gate.",
+    "how_to_recognise": "You can recognise it by the thick, ridged corky bark and small evergreen leaves, still green in winter. It stands on the north side of the lake, directly south of Osterley House."
+  },
+  {
+    "id": "lon_033",
+    "name": "The Roehampton Lucombe Oak",
+    "species": "Lucombe Oak (Quercus x hispanica 'Lucombeana')",
+    "age_estimate": "roughly 250 years",
+    "age_min": 200,
+    "age_max": 260,
+    "location": {
+      "address": "junction of Danebury Avenue and Tangley Grove, Alton Estate, Roehampton SW15",
+      "latitude": 51.451337,
+      "longitude": -0.246961,
+      "neighbourhood": "Roehampton"
+    },
+    "verified_sources": [
+      "https://www.graftingardeners.co.uk/greatest-trees-london/",
+      "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+    ],
+    "access": "Open estate green space between housing blocks; no gate reported (not stated by a source, unconfirmed)",
+    "transport": "Roehampton and Putney area buses; nearest station Barnes or Putney, over 2 km (not source-checked)",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Grafting Gardeners guide: about 250 years old, 'probably planted by Capability Brown' who landscaped the area around 1773: that is an inference by the guide, not documented, do NOT carry the Brown link as fact (no bridge claims). The Lucombe cultivar was named after William Lucombe of Exeter, who grew it about 1763 (guide), so a 250-year tree is plausible. Hybrid of cork oak and Turkey oak. One search summary (not a fetched page) places it slightly south of Finchdean House on the Alton Estate; unverified. Great Trees of London lists it at 51.451337,-0.246961 (not tree-level). Historic England listing 1466474 for the Alton West landscape returned 403, so no official statement about the tree. Alive: iNaturalist observation 2026-01-28 within radius (lifecheck RECENT, may not be this exact tree). Flagged: sources are a single chain (Trees for Cities list and a guide drawing on it), access not stated.",
+    "story": "This oak belongs to a variety that is barely older than it is. William Lucombe, a nurseryman in Exeter, raised the cross of a cork oak and a Turkey oak around 1763, and the hybrid still carries his name. The Grafting Gardeners guide to London's greatest trees puts this one at about 250 years old, which would make it one of the early generation.\n\nThe guide also says it was probably planted by Capability Brown, who landscaped the area around 1773. That is the guide's guess, and no record we have found backs it, so read it as a possibility rather than a pedigree.\n\nWhoever put it in, it now stands on the green between the housing blocks of the Alton Estate, at the junction of Danebury Avenue and Tangley Grove in Roehampton, and it was chosen as one of the Great Trees of London.\n\nTwo caveats. Our sources are one chain, the Great Trees list and a guide drawing on it, so the age is a single estimate, somewhere between 200 and 260 years, and nobody has published a girth or height. And the pin comes from the Great Trees list rather than from the trunk, so it is approximate; one unconfirmed account puts the tree just south of Finchdean House. No source describes a gate, but none confirms open access either. If you have stood under it, tell us.",
+    "how_to_recognise": "You can recognise it by its spot on the estate green at the junction of Danebury Avenue and Tangley Grove. It stands between the housing blocks, by one unconfirmed account just south of Finchdean House."
   }
- },
- {
-  "id": "lon_028",
-  "name": "The Carshalton Plane",
-  "species": "London Plane (Platanus x hispanica)",
-  "age_estimate": "over 250 years",
-  "age_min": 250,
-  "age_max": null,
-  "girth_cm": 760,
-  "height_m": 39.6,
-  "location": {
-   "address": "Festival Walk beside the stream feeding Carshalton Ponds, Carshalton SM5",
-   "latitude": 51.3652,
-   "longitude": -0.16577,
-   "neighbourhood": "Carshalton"
-  },
-  "verified_sources": [
-   "https://www.secretcarshalton.com/tree-mendous-new-measurement-finally-announced-for-carshaltons-giant-tree/",
-   "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-   "https://www.geograph.org.uk/photo/2993649",
-   "https://www.inaturalist.org/observations/170529641"
-  ],
-  "official_register": {
-   "name": "Forestry Commission remeasurement of 5 August 2026 with Sutton Council Parks Service (letter shown in the Secret Carshalton report); Great Trees of London list",
-   "url": "https://www.secretcarshalton.com/tree-mendous-new-measurement-finally-announced-for-carshaltons-giant-tree/"
-  },
-  "access": "Free; stands beside the public Festival Walk by Carshalton Ponds, plaque at its foot (Geograph captions); no hours published, an open path",
-  "transport": "Carshalton station (Southern), roughly 10 minutes on foot (not source-stated; Carshalton Ponds are the landmark)",
-  "location_precision": "confirmed",
-  "curation_status": "ai_generated",
-  "verify_notes": "Great Trees of London original 41 (Wikipedia list gives site as Sutton Ecology Centre grounds, 'about 200 years old as of 2010'). Remeasured by Forestry Commission (Pherenice Worsey-Buck) and Sutton Council Parks (Simon Ffoulkes): 39.6 m tall (130 ft) and 7.6 m circumference (almost 25 ft); letter dated 5 August 2026; Secret Carshalton published 20 Aug 2026. 1964 Forestry Commission plaque at ground level recorded 123 ft, then the tallest London plane known in Britain; girth up 19 percent and height up 6 percent since. Age not recorded; 1964 plaque already said likely over 200 years, so article says probably more than 250 now (derived, kept broad). Tree Register list (as read by Secret Carshalton, not fetched by us) has two Richmond planes at 40.40 m and 40.25 m, so Carshalton is third-tallest London plane on that list, no longer the tallest: do not write 'tallest in Britain'. Alive: RECENT iNaturalist observation 2023-07-01 (lifecheck) plus the Aug 2026 measuring visit. Pin: Geograph 2993649 plaque next to the base, subject location OSGB TQ 2779 6450 (10 m precision) = 51.36520, -0.16577; Commons geosearch shows the plaque photo 9.7 m away, Geograph 'Base of the tallest London plane' 14 m and 'The tallest London plane in Britain' 36 m (CC BY-SA, photographer Marathon): a photo of this tree is in reach for the photo pass. Official register caveat: no council or Great Trees web page for this tree found (sutton.gov.uk page 403/access denied); the measurement body is the Forestry Commission, reported secondarily. Honeywood Museum is 37 m away (Commons geosearch). Lead cluster mates in Carshalton: Ashcombe Sweet Chestnut (51.35998,-0.16228) and Carshalton Park sweet chestnut (51.36046,-0.16316), both about 600 m south, no measurements found.",
-  "story": "In 1964 the Forestry Commission set a plaque at the foot of this plane recording 123 feet, then the tallest London plane known in Britain. It has not stopped growing. On 5 August 2026 the Forestry Commission and Sutton Council's parks service measured it again: 39.6 metres tall, about 130 feet, and 7.6 metres round the trunk, almost 25 feet. Since the plaque, its girth has grown by 19 percent and its height by 6 percent.\n\nThe height record has moved on, though. On the Tree Register's list, as read by Secret Carshalton, the local site that published the new figures, two planes in Richmond stand at 40.40 and 40.25 metres. That makes Carshalton's the third tallest London plane on that list, still a giant and no longer the champion.\n\nNobody recorded when it was planted, and the guesses do not quite agree. The 1964 plaque already called it likely over 200 years old, which puts it past 250 now. The Great Trees of London list, which counted it among its original 41 trees, gave about 200 years as of 2010. Both are estimates rather than records.\n\nIt stands beside Festival Walk, on the stream that feeds Carshalton Ponds, with the plaque at its base and the Honeywood Museum a few dozen metres away. The path is open and free, and Carshalton station is roughly ten minutes on foot.",
-  "how_to_recognise": "You can recognise it by the Forestry Commission plaque at its base and a trunk 7.6 metres round. It stands beside Festival Walk on the stream feeding Carshalton Ponds, a few dozen metres from the Honeywood Museum."
- },
- {
-  "id": "lon_029",
-  "name": "The Marble Hill Black Walnut",
-  "species": "Black Walnut (Juglans nigra)",
-  "age_estimate": "roughly 300 years",
-  "age_min": 250,
-  "age_max": 320,
-  "girth_cm": 578,
-  "height_m": 27,
-  "location": {
-   "address": "Marble Hill Park, near the entrance from the Thames towpath, Richmond Road, Twickenham TW1",
-   "latitude": 51.448576,
-   "longitude": -0.310797,
-   "neighbourhood": "Twickenham"
-  },
-  "verified_sources": [
-   "https://web.archive.org/web/2023/http://johngrimshawsgardendiary.blogspot.com/2010/06/black-walnut-at-marble-hill.html",
-   "https://en.wikipedia.org/wiki/Great_Trees_of_London",
-   "https://www.english-heritage.org.uk/visit/places/marble-hill/",
-   "https://www.inaturalist.org/observations/396644896"
-  ],
-  "official_register": {
-   "name": "The Tree Register of the British Isles (champion record, measured by Owen Johnson 2001); Great Trees of London list",
-   "url": "https://www.treeregister.org/"
-  },
-  "access": "Free: Marble Hill Park (English Heritage, open daily; park hours dawn to dusk, closing time varies by source, check English Heritage); the house is separate (Wed-Sun, seasonal, ticketed)",
-  "transport": "St Margarets or Twickenham rail station, roughly 15 to 20 minutes on foot (walk times estimated, not source-stated)",
-  "location_precision": "approximate",
-  "location_site": null,
-  "curation_status": "flagged",
-  "verify_notes": "Great Trees of London original 41. Measurements seen on the fetched Grimshaw page (via Wayback, original blogspot 429s): Elwes and Henry, Trees of Great Britain and Ireland (1907) ranked it first of its species, measured 1905 at 98 ft (29.8 m) with girth 14 ft 3 in (about 434 cm); Tree Register (Owen Johnson) 2001: 27 m tall, diameter 184 cm, so girth about 578 cm (computed pi x 184; a monumentaltrees/TROBI snippet gave 5.78 m at 1.5 m but that page 403s and was not seen). Grimshaw, citing TROBI: none other in England achieves these proportions of both height and girth with a full canopy (a superlative to attribute, not to repeat). 'Said to have been planted by Henrietta Howard in the 1720s' (hearsay, Grimshaw); GIGL snippet: probably from the original landscaping of the park (snippet only, page 403). Age therefore broad and derived: the 1720s planting is a claim, not a record. Alive: RECENT iNaturalist observation 2026-08-26 (lifecheck). Pin: Great Trees list coordinate; park described as 'near the entrance from the Thames footpath' (GIGL snippet); approximate, one clear crown on Commons: file 'The Black Walnut Tree Of Marble Hill Park, London. (4621674542).jpg' is the Great Trees table image, so a photo of this tree is in reach. Cluster: Riverside Plane (Richmond, 51.45647,-0.30473) and Maids of Honour Stone Pine (Richmond Green, 51.46138,-0.30867) lie 1 to 2 km away across the river; no measurements found for the stone pine. Official register caveat: Tree Register has no per-tree public URL; record is member-only. If the pass owner will not accept treeregister.org as the register, this tree is rich only through the photo + measurement + access.",
-  "story": "In 1907 the standard survey of British trees ranked this walnut first of its kind in the country. Elwes and Henry, in The Trees of Great Britain and Ireland, recorded it in 1905 at 98 feet tall with a trunk 14 feet 3 inches round. Owen Johnson of the Tree Register measured it again in 2001: 27 metres tall and 184 centimetres across the trunk, which works out at roughly 5.8 metres round. A century had taken a few metres off the top and added well over a metre to the waist.\n\nThe Tree Register's verdict, as quoted in John Grimshaw's garden diary, is that no other black walnut in England matches it for both height and girth with a full canopy. It was among the original 41 Great Trees of London.\n\nIts age rests on a story. Tradition, repeated by Grimshaw, says Henrietta Howard planted it in the 1720s, and a London parks survey thinks it probably belongs to the park's original landscaping. Neither is a planting record, so roughly 300 years, somewhere between 250 and 320, is as close as anyone can honestly put it.\n\nThe pin comes from the Great Trees coordinate and is approximate. The park's own description puts the tree near the entrance from the Thames towpath, so start there. Marble Hill Park is free and open daily from dawn to dusk; the house is ticketed separately. St Margarets and Twickenham stations are each about 15 to 20 minutes on foot.",
-  "how_to_recognise": "You can recognise it by its size: a black walnut 27 metres tall with a trunk close to six metres round under a full canopy. It stands in Marble Hill Park near the entrance from the Thames towpath."
- },
- {
-  "id": "lon_030",
-  "name": "The Gunnersbury Park Black Mulberry",
-  "species": "Black Mulberry (Morus nigra)",
-  "age_estimate": "probably 19th century",
-  "age_min": 150,
-  "age_max": 220,
-  "girth_cm": 184,
-  "height_m": 11,
-  "location": {
-   "address": "Gunnersbury Park, below the terrace steps of the Large Mansion (Gunnersbury Park Museum), London W3",
-   "latitude": 51.49928,
-   "longitude": -0.28727,
-   "neighbourhood": "Gunnersbury"
-  },
-  "verified_sources": [
-   "https://www.moruslondinium.org/map/gunnersbury-park",
-   "https://www.moruslondinium.org/research/gunnersbury-mulberries",
-   "https://www.visitgunnersbury.org/plan-your-visit"
-  ],
-  "official_register": {
-   "name": "Morus Londinium London mulberry survey (Conservation Foundation), Gunnersbury Park record",
-   "url": "https://www.moruslondinium.org/map/gunnersbury-park"
-  },
-  "access": "Free; Gunnersbury Park open daily 7am until dusk, museum Tue-Sun 10am-4.30pm, free entry (visitgunnersbury.org)",
-  "transport": "Acton Town station (Piccadilly/District) about 10 minutes to the park gate (official), South Ealing about 10 minutes to Popes Lane gate; Kew Bridge rail to the southern gate; then a walk to the Large Mansion",
-  "location_precision": "approximate",
-  "location_site": {
-   "name": "Terrace steps below the Large Mansion (Gunnersbury Park Museum)",
-   "radius_m": 40
-  },
-  "curation_status": "flagged",
-  "verify_notes": "Morus Londinium record: site class Notable, Recumbent; largest height 11 m, largest girth 184 cm; OS grid TQ 18983 79206 (converted to 51.49928, -0.28727 with an OSGB36 to WGS84 Helmert script checked against a Geograph point). Record places it 'south-west of Gunnersbury Park Museum, by a curved path'; the Morus Londinium field visit of April 2024 (Peter Coles) found it 'tucked away near the foot of steps leading up through an arch to the terrace' of the Large Mansion, recumbent in a V shape, twin-stemmed, dwarfed by a Cedar of Lebanon over 200 years old, probably 19th century and planted by the Rothschilds, about 11 m tall before it fell; it keeled over at an unknown date and is sending branches vertically to form a new squat crown. A young upright scion a few metres away seems dead. Alive: observed April 2024 (visit report), and flagged as thriving. A semi-mature Paper mulberry stands separately south-east of the museum near the mock-gothic tile kiln ruin (not this tree). Grid reference is a survey coordinate, not a verified crown: approximate with the small named site; recognition is the fallen V-shaped twin trunk beside the cedar. No Commons photo of the tree within 120 m (geosearch). Age is a source's 'probably 19th century' only; planting by the Rothschilds is the author's inference, the Rothschilds bought in 1835. Second tree to consider at the same spot: the cedar, no measurement found.",
-  "story": "This mulberry fell over and kept growing. At some date nobody recorded, the twin-stemmed tree below the terrace of Gunnersbury's Large Mansion keeled over. It now lies in a V shape, sending branches straight up to build a new, squat crown. Before it went down it stood about 11 metres tall, according to Morus Londinium, the London mulberry survey, which records a largest girth of 184 centimetres and classes the tree as Notable and recumbent.\n\nPeter Coles of Morus Londinium found it on a visit in April 2024, tucked away near the foot of the steps that climb through an arch to the terrace, and reported it thriving. Its neighbour dwarfs it: a cedar of Lebanon over 200 years old. A young upright mulberry a few metres away seems to have died, so do not mistake that one for it.\n\nThe age is a single source's judgement: probably 19th century. The same writer suggests the Rothschilds planted it, which is an inference rather than a record; the family bought Gunnersbury in 1835. Somewhere between 150 and 220 years is as close as anyone can say.\n\nThe pin is the survey's grid reference, which lands near the steps rather than on the trunk, so let the cedar and the fallen V guide you. Black mulberries fruit in high summer, dark berries that stain whatever lies beneath. The park is free and open daily from 7am until dusk, about ten minutes on foot from Acton Town station.",
-  "how_to_recognise": "You can recognise it by the twin trunk lying on the ground in a V, its branches growing straight up. It stands at the foot of the steps up to the Large Mansion terrace, beside a much larger cedar of Lebanon.",
-  "best_time": {
-   "months": [
-    7,
-    8
-   ],
-   "kind": "fruit",
-   "label": "July and August, when the dark mulberries ripen and stain the ground"
-  }
- },
- {
-  "id": "lon_031",
-  "name": "The Royal Oak, Richmond Park",
-  "species": "Pedunculate Oak (Quercus robur)",
-  "age_estimate": "roughly 750 years",
-  "age_min": 600,
-  "age_max": 800,
-  "location": {
-   "address": "Richmond Park near Pen Ponds, Richmond TW10",
-   "latitude": 51.444646,
-   "longitude": -0.283504,
-   "neighbourhood": "Richmond Park"
-  },
-  "verified_sources": [
-   "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/",
-   "https://exploring-london.com/2024/05/22/10-significant-and-historic-london-trees4-the-royal-oak-richmond-park/",
-   "https://en.wikipedia.org/wiki/Great_Trees_of_London"
-  ],
-  "access": "Free; Richmond Park (The Royal Parks) is open to pedestrians 24 hours a day per exploring-london",
-  "transport": "Richmond station, then bus 371 or a walk of about 30 minutes to Richmond Gate; the oak is roughly 1.5 km further in near Pen Ponds (transport times not source-checked)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Age is an estimate repeated by sources, not a measurement: Ancient Tree Forum 'estimated to be around 750 years old' (Royal Parks the manager), exploring-london 'more than 750', Great Trees of London list '~750 (2020)'. Age range 600 to 800 is broad on purpose. Hollow, pollarded for several hundred years, no royal connection despite the name (exploring-london). Pin: Great Trees list coordinate (51.444646,-0.283504) agrees with Ancient Tree Forum grid ref TQ193731 to about 50 m; neither is a tree-level fix so kept approximate. The tree is reported to have its own enclosure (secondary source, not seen on a primary page). No girth recorded: the only figure found (6.11 m) is from the Woodland Trust Ancient Tree Inventory, which we do not use. Alive: iNaturalist observation 2024-10-05 within radius (lifecheck RECENT, may not be this exact tree); older Great Trees entry says 2020. Flagged: age is a popular estimate; no official register page for this single tree."
- },
- {
-  "id": "lon_032",
-  "name": "The Osterley Park Cork Oak",
-  "species": "Cork Oak (Quercus suber)",
-  "age_estimate": "about 170 years",
-  "age_min": 165,
-  "age_max": 175,
-  "location": {
-   "address": "north side of the lake, south of Osterley House, Osterley Park, Jersey Road, Isleworth TW7 4RB",
-   "latitude": 51.488575,
-   "longitude": -0.351411,
-   "neighbourhood": "Osterley"
-  },
-  "verified_sources": [
-   "https://londontreesblog.wordpress.com/2015/01/08/cork-oak-at-osterley-park/",
-   "https://www.graftingardeners.co.uk/greatest-trees-london/",
-   "https://en.wikipedia.org/wiki/Great_Trees_of_London"
-  ],
-  "access": "Parkland of the National Trust estate is free on foot daily; opening hours differ between listings (about 9am to 5pm per Art Fund), check National Trust before going",
-  "transport": "Osterley Underground station (Piccadilly line) about 10 to 15 minutes' walk to the park gate (not source-checked)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Planting date 1855 stated by london trees blog (2015) and the Grafting Gardeners guide ('said to have been planted in 1855', 'one of the oldest and largest in the country'), and by the Great Trees list. These may all derive from the Trees for Cities list, so treated as one chain; stated as 'said to'. Age is derived from that planting claim: 2026 minus 1855 = 171. Location: 'north side of the lake directly south of the mansion' (blog, guide); Great Trees coordinate is the pin, not tree-level. No measurements found. Alive: iNaturalist observation 2026-07-05 within radius (lifecheck RECENT, may not be this exact tree) and the blog shows it in leaf in winter. Owner National Trust; parkland access wording is from search snippets of third-party listings, National Trust page not fetched (404 on the page tried), so access is flagged.",
-  "story": "A Mediterranean oak has stood beside a lake in west London since, by the account everyone repeats, 1855. Cork oaks belong to Portugal and Spain, where their thick, spongy bark is stripped for bottle stoppers. This one has kept its bark, and its leaves too: the species is evergreen, and the London Trees blog photographed it in full leaf in winter.\n\nThe Grafting Gardeners guide to London's greatest trees calls it one of the oldest and largest cork oaks in the country, and it was chosen as one of the Great Trees of London.\n\nThe date needs a caveat. The blog, the guide and the Great Trees list all give 1855, but they may be repeating one another rather than three separate records, so it is a date the tree is said to carry. If it holds, the oak is about 170 years old. Nobody has published its height or girth; if you have measured it, tell us.\n\nIt stands on the north side of the lake, directly south of Osterley House. The pin is approximate, so walk down to the lakeshore below the mansion and look for the ridged, corky bark that gives the species its name. The parkland belongs to the National Trust and is free on foot daily. Art Fund gives about 9am to 5pm, but listings disagree, so check the National Trust first. Osterley station on the Piccadilly line is roughly 10 to 15 minutes' walk from the park gate.",
-  "how_to_recognise": "You can recognise it by the thick, ridged corky bark and small evergreen leaves, still green in winter. It stands on the north side of the lake, directly south of Osterley House."
- },
- {
-  "id": "lon_033",
-  "name": "The Roehampton Lucombe Oak",
-  "species": "Lucombe Oak (Quercus x hispanica 'Lucombeana')",
-  "age_estimate": "roughly 250 years",
-  "age_min": 200,
-  "age_max": 260,
-  "location": {
-   "address": "junction of Danebury Avenue and Tangley Grove, Alton Estate, Roehampton SW15",
-   "latitude": 51.451337,
-   "longitude": -0.246961,
-   "neighbourhood": "Roehampton"
-  },
-  "verified_sources": [
-   "https://www.graftingardeners.co.uk/greatest-trees-london/",
-   "https://en.wikipedia.org/wiki/Great_Trees_of_London"
-  ],
-  "access": "Open estate green space between housing blocks; no gate reported (not stated by a source, unconfirmed)",
-  "transport": "Roehampton and Putney area buses; nearest station Barnes or Putney, over 2 km (not source-checked)",
-  "location_precision": "approximate",
-  "curation_status": "flagged",
-  "verify_notes": "Grafting Gardeners guide: about 250 years old, 'probably planted by Capability Brown' who landscaped the area around 1773: that is an inference by the guide, not documented, do NOT carry the Brown link as fact (no bridge claims). The Lucombe cultivar was named after William Lucombe of Exeter, who grew it about 1763 (guide), so a 250-year tree is plausible. Hybrid of cork oak and Turkey oak. One search summary (not a fetched page) places it slightly south of Finchdean House on the Alton Estate; unverified. Great Trees of London lists it at 51.451337,-0.246961 (not tree-level). Historic England listing 1466474 for the Alton West landscape returned 403, so no official statement about the tree. Alive: iNaturalist observation 2026-01-28 within radius (lifecheck RECENT, may not be this exact tree). Flagged: sources are a single chain (Trees for Cities list and a guide drawing on it), access not stated."
- }
 ]
