@@ -1,6 +1,7 @@
 // Somebody else's profile, when they made it public.
 //
-// Reference: Polarsteps' profile, and our own My trees (Collect.swift).
+// Reference: Polarsteps' profile, and our own My trees (Collect.swift);
+// CONVENTIONS.md, "A public profile, and the private switch" (2026-10-19).
 // Hidde, 2026-10-19, on the design page: "ja dit ziet er goed uit", and on the
 // two lists: "die kunnen gewoon gelijk blijven toch?". So this is My trees as a
 // visitor sees it: picture, name and flag, the follow line, Follow where your
