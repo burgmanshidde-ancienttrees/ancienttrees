@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 night run 09:31: one photograph, roster sweep spent
+
+- Rung 1: the one open sighting (ed90210d, European Beech in Freiburg, unlisted in registers and Wikipedia) has no photograph file on this runner, so no verdict; left open for a session that can view it. Rung 2: health.py's only item is the profiles.public migration, which needs Hidde to paste supabase/PENDING.sql (already in his FOR HIDDE above).
+- Photos: London recheck found one usable file; approved lon_033 (Roehampton Lucombe Oak, CC BY-SA 4.0), preflight 0 problems, committed. Roster sweep (photo_fetch --roster) judged 72 images for 40 trees: 0 approved, 71 rejected and recorded. It repeats 10-18's "near exhausted" finding: the roster's Commons supply is spent, do not rerun it until new candidates exist. Visits last 7 days: 2080.
+- Not done: the shelf's READY pile is 44 Dutch trees without a photograph or story pull (low value in recovery mode); london enrichment brief (7 gaps) untouched.
+
 ## 2026-10-19 session: the Yew of Campo Santana is dead, retired
 
 - A reader's correction (submission 466, 2026-10-18): "Look at the pictures, please. The tree is dead". Their two app photographs, GPS 6 and 20 m from our pin, show bleached bare yew wood propped on an earth mound, no foliage. Hidde saw them.

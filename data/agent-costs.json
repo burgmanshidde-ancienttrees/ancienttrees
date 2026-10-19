@@ -12865,6 +12865,15 @@
   "2026-10-19": [
    {
     "date": "2026-10-19",
+    "target": "roster photo-judge (first 40 trees, out/dl/roster) plus lon_033",
+    "kind": "photo",
+    "tokens": 160000,
+    "trees": 0,
+    "photos_approved": 1,
+    "note": "lon_033 approved by me (Roehampton Lucombe Oak); 72 roster images for 40 trees all rejected (buildings, wrong species, archival); roster sweep is exhausted, do not rerun"
+   },
+   {
+    "date": "2026-10-19",
     "target": "delft enrich (del_012, del_013, del_014)",
     "kind": "verify",
     "tokens": 51000,
