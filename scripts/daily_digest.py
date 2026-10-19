@@ -3588,71 +3588,212 @@ def _readers_live(today):
     return tuple(wk)
 
 
-def headline_section(today):
-    """The conclusion on top: the six numbers that matter in phase 1, this week
-    against the week before, and two sentences reading them.
+def _week_of(iso, today):
+    """0 for the seven days to yesterday, 1 for the seven before, else None."""
+    age = _days_since(iso, today)
+    if age is None:
+        return None
+    return 0 if 1 <= age <= 7 else (1 if 8 <= age <= 14 else None)
 
-    Hidde, 2026-10-15: "can you do some research on which numbers are good to
-    prioritise in this phase of product development and make a conclusion on
-    top". Before product-market fit the advice converges (RevenueCat, June,
-    Amplitude, Lenny Rachitsky's retention benchmarks): one north-star action
-    that is the value itself, whether a newcomer reaches it on the first day
-    (activation), whether they come back (retention), weekly, and pageviews,
-    impressions, downloads and all-time totals demoted as vanity. Here that
-    reads as goal 1 (a person standing at a tree), then the two things phase 1
-    collects (people, data), then search arrivals as the one traction input.
-    At our volumes every row is a handful, so the reading says counts, never
-    trends. The full blocks below stay as the evidence."""
-    H = dict(HEADLINE)
-    H["readers"] = _readers_live(today)
 
-    def share(p):
-        part, whole = p
-        return "-" if not whole else "%d of %d (%.0f%%)" % (part, whole, 100.0 * part / whole)
+def _hl_web(today, token):
+    """Website visits and visits from search, this week and the week before.
+    Cloudflare's beacon, people only (the same desktop-without-referrer cut as
+    fetch_rum), bucketed by Cloudflare to tens, so read it as a size."""
+    q = {"query": """
+query($tag: String!, $since: Date!, $until: Date!) {
+  viewer { accounts(filter: {accountTag: $tag}) {
+    days: rumPageloadEventsAdaptiveGroups(limit: 40,
+        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [date_ASC]) {
+      dimensions { date } sum { visits }
+    }
+    gdays: rumPageloadEventsAdaptiveGroups(limit: 3000,
+        filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
+      count dimensions { date refererHost }
+    }
+  } }
+}""", "variables": {"tag": ACCOUNT_TAG,
+                     "since": (today - datetime.timedelta(days=14)).isoformat(),
+                     "until": today.isoformat()}}
+    g = api("https://api.cloudflare.com/client/v4/graphql", q, token=token)
+    acct = g["data"]["viewer"]["accounts"][0]
+    visits, search = [0, 0], [0, 0]
+    for d in acct["days"]:
+        w = _week_of(d["dimensions"]["date"], today)
+        if w is not None:
+            visits[w] += d["sum"]["visits"]
+    for r in acct["gdays"]:
+        host = (r["dimensions"].get("refererHost") or "").lower()
+        w = _week_of(r["dimensions"]["date"], today)
+        if w is not None and any(h in host for _n, hosts in SEARCH_ENGINES for h in hosts):
+            search[w] += r["count"]
+    return visits, search
+
+
+def _hl_downloads(_today):
+    """First-time App Store downloads, Apple's own count, by week."""
+    if not os.environ.get("ASC_KEY_ID"):
+        return None
+    from asc_downloads import download_rows, split_by_type
+    rows, note = download_rows(days=15)
+    if note:
+        return None
+    split = split_by_type(rows)
+    days = sorted(split)[-14:]
+    wk = [0, 0]
+    for i, d in enumerate(reversed(days)):
+        wk[0 if i < 7 else 1] += split[d].get("first-time download", 0)
+    return wk
+
+
+def _hl_supabase(today):
+    """Accounts, want-to-go saves and readers' contributions, strangers only."""
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not key:
+        return {}
+    out = {}
+    users, _ = _supa("/auth/v1/admin/users?page=1&per_page=1000", key)
+    wk = [0, 0]
+    for u in ((users or {}).get("users") or []):
+        w = _week_of(u.get("created_at"), today)
+        if w is not None and not is_ours(u.get("id")):
+            wk[w] += 1
+    out["accounts"] = wk
+    since = (today - datetime.timedelta(days=15)).isoformat()
+    rows, _ = _supa("/rest/v1/saves?select=user_id,created_at&created_at=gte.%sT00:00:00" % since, key)
+    wk = [0, 0]
+    for r in rows or []:
+        w = _week_of(r.get("created_at"), today)
+        if w is not None and not is_ours(r.get("user_id")):
+            wk[w] += 1
+    out["saves"] = wk
+    # Any feedback is a good sign (Hidde, 2026-10-19): every submission a
+    # stranger sends (a tree, a city, a correction, a worth-it vote, an
+    # ambassador ask) plus every photograph shared from the app.
+    rows, _ = _supa("/rest/v1/submissions?select=id,created_at,why,user_id"
+                    "&created_at=gte.%sT00:00:00" % since, key)
+    wk = [0, 0]
+    for r in rows or []:
+        if r.get("id") in TEST_SUBMISSION_IDS or is_ours(r.get("user_id")):
+            continue
+        if (r.get("why") or "").startswith("vote undone"):
+            continue
+        w = _week_of(r.get("created_at"), today)
+        if w is not None:
+            wk[w] += 1
+    try:
+        rows, _ = _supa("/rest/v1/sightings?select=user_id,created_at&photo=not.is.null"
+                        "&shared=eq.true&created_at=gte.%sT00:00:00" % since, key)
+    except Exception:
+        rows = []
+    for r in rows or []:
+        w = _week_of(r.get("created_at"), today)
+        if w is not None and not is_ours(r.get("user_id")):
+            wk[w] += 1
+    out["contributions"] = wk
+    return out
+
+
+def _hl_app(_today):
+    """Trees collected, and phones back within 30 days, from PostHog."""
+    key = os.environ.get("POSTHOG_READ_KEY")
+    if not key:
+        return {}
+    project, _why = _ph_project(key)
+    if not project:
+        return {}
+    ours, _cfg = _ph_ours()
+    where = ("WHERE " + ours) if ours else ""
+    and_ours = ("AND " + ours) if ours else ""
+    first = "SELECT distinct_id, min(timestamp) AS first FROM events %s GROUP BY distinct_id" % where
+
+    def collected(a, b):
+        r = _posthog("""
+            SELECT count() FROM events
+            WHERE (event = 'tree_visited'
+                   OR (event = 'sighting_recorded' AND properties.known_tree = 'no'))
+                  AND timestamp >= now() - INTERVAL %d DAY
+                  AND timestamp < now() - INTERVAL %d DAY %s
+            """ % (a, b, and_ours), key, project)
+        return int(r[0][0] or 0) if r else 0
+
+    def back(a, b):
+        # Phones whose first day was a and b days ago, so each has had its
+        # full thirty days: the share seen again on days 1 to 30 after it.
+        r = _posthog("""
+            SELECT count(), countIf(again > 0)
+            FROM (
+              SELECT e.distinct_id AS d,
+                countIf(toDate(e.timestamp) > toDate(f.first)
+                        AND e.timestamp < f.first + INTERVAL 31 DAY) AS again
+              FROM events e
+              JOIN (%s) f ON e.distinct_id = f.distinct_id
+              WHERE f.first >= now() - INTERVAL %d DAY
+                    AND f.first < now() - INTERVAL %d DAY
+              GROUP BY e.distinct_id)
+            """ % (first, a, b), key, project)
+        return tuple(int(v or 0) for v in r[0]) if r else (0, 0)
+
+    nb, pb = back(38, 31), back(45, 38)
+    return {"collected": [collected(8, 1), collected(15, 8)],
+            "back30": [(nb[1], nb[0]), (pb[1], pb[0])]}
+
+
+def headline_section(today, token=None):
+    """The conclusion on top: Hidde's seven numbers, this week against the week
+    before, and one sentence reading them.
+
+    Hidde, 2026-10-19, replacing the 10-15 activation table: "new visitors
+    website, app downloads, new accounts, some recurring customer measure,
+    trees added to 'want to go', tree collected, photo added", with visitors
+    split by search (Google recovery is the open question), "any sort of
+    feedback is a good sign not just photo", and "came back within month"
+    (trees are a weekend and holiday thing, so a week punishes normal use).
+    Take me there left the headline: a person browsing from home and saving a
+    tree for later is doing what we want. Each number is fetched here on its
+    own, so a source that fails today costs one row, never the table. At our
+    volumes every row is a handful: counts, never trends."""
+    H = {}
+    for name, fn in (("web", lambda: _hl_web(today, token) if token else None),
+                     ("downloads", lambda: _hl_downloads(today))):
+        try:
+            H[name] = fn()
+        except Exception as e:
+            print("headline %s: %s" % (name, str(e)[:120]))
+    for fn in (_hl_supabase, _hl_app):
+        try:
+            H.update(fn(today) or {})
+        except Exception as e:
+            print("headline %s: %s" % (fn.__name__, str(e)[:120]))
 
     def cell(v):
         if v is None:
             return "-"
-        return share(v) if isinstance(v, tuple) else str(v)
+        if isinstance(v, tuple):
+            part, whole = v
+            return "-" if not whole else "%d of %d" % (part, whole)
+        return str(v)
 
+    web = H.get("web")
     rows = [
-        ("Stood at a tree (app collections)", "goal 1, the north star", "collected"),
-        ("New phones that opened a tree on day one", "activation", "first_opened"),
-        ("New phones that tapped Take me there on day one", "activation", "first_there"),
-        ("Phones back within a week", "retention", "back"),
-        ("New accounts (strangers)", "people collected", "accounts"),
-        ("Readers' trees and photographs live", "data collected", "readers"),
-        ("Arrivals from search, every engine (8 days)", "traction", "search"),
+        ("Website visits", "people", web[0] if web else None),
+        ("... of which from search", "Google's recovery", web[1] if web else None),
+        ("App downloads (first-time)", "people", H.get("downloads")),
+        ("New accounts", "people", H.get("accounts")),
+        ("Phones back within 30 days", "people who stay", H.get("back30")),
+        ("Trees saved to Want to go", "intent", H.get("saves")),
+        ("Trees collected", "goal 1: stood at a tree", H.get("collected")),
+        ("Readers' contributions", "data: trees, photos, corrections, votes", H.get("contributions")),
     ]
-    out = ["**Conclusion: the numbers that matter now** (this week against the week before)", "",
-           "| Number | Why it counts | This week | Week before |", "|---|---|---:|---:|"]
-    for label, why, k in rows:
-        v = H.get(k)
+    out = ["**The numbers that matter** (this week against the week before; strangers only)", "",
+           "| Number | Why | This week | Week before |", "|---|---|---:|---:|"]
+    for label, why, v in rows:
         out.append("| %s | %s | %s | %s |" % (label, why, cell(v[0]) if v else "-",
                                             cell(v[1]) if v else "-"))
-
-    # The reading. First the north star as a count; then the weakest link in
-    # the chain from a new phone to a walk, which is the work.
-    said = []
-    c = H.get("collected")
-    if c:
-        said.append("%d collection%s at a tree this week against %d the week before%s." % (
-            c[0], "" if c[0] == 1 else "s", c[1],
-            ", a handful: read it as a count, not a trend" if max(c) < 20 else ""))
-    links = []
-    for k, name in (("first_opened", "opening a tree on day one"),
-                    ("first_there", "tapping Take me there on day one"),
-                    ("back", "coming back within a week")):
-        v = H.get(k)
-        if v and v[0][1]:
-            links.append((v[0][0] / float(v[0][1]), name, v[0]))
-    if links:
-        low = min(links)
-        said.append("The weakest link is %s (%d of %d): that step is the work, more traffic "
-                    "only pours more people into it." % (low[1], low[2][0], low[2][1]))
-    if not said:
-        said.append("The app numbers did not arrive today, so there is nothing to read yet.")
-    out += ["", " ".join(said)]
+    if web:
+        out.append("")
+        out.append("Website visits are bucketed to tens by Cloudflare. The 30-day row is "
+                   "the phones that arrived five weeks ago, so it moves slowly.")
     return "\n".join(out)
 
 
@@ -3900,7 +4041,7 @@ def main():
     # The conclusion goes on top (Hidde, 2026-10-15), built last because it
     # reads the numbers the blocks above fetched.
     try:
-        blocks.insert(0, headline_section(today))
+        blocks.insert(0, headline_section(today, token))
     except Exception as e:
         blocks.insert(0, "headline_section: failed today (%s)." % str(e)[:90])
     # Above even the headline: a crash that needs a new build now.
