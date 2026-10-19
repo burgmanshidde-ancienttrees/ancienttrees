@@ -23,6 +23,13 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19
+
+Web half: read the Roehampton Lucombe Oak (new photograph), /lisbon after the Campo Santana yew retirement, no em dashes, CC BY-SA credit present. Two findings.
+
+- WARN /lisbon (meta_description and question_meta): "an olive, a dragon tree ... and thirty-five more" while the page lists 35 trees in total, so the count is stale after the lis_014 retirement and over by two (SEO blueprint count promises; CLAUDE.md "when a place grows, its intro and meta grow with it", same for shrinking). Should say thirty-three more (or the olive and thirty-four more in question_meta).
+- NOTE /london/roehampton-lucombe-oak (title and meta): "250 Year Old Tree" / "250-year-old" sharpens the story's own "somewhere between 200 and 260 years" to the guide's single estimate (Verify: never sharpen a vague source). "Up to about 250 years old" would match the body.
+
 ## 2026-10-18
 
 Web half: read leipzig (index and Menzellinde), vienna, baarn, london and salt-lake-city as built; no em dashes, no leaked code. Two findings.
