@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session: a profile anybody can open, when its owner says so
+
+What changed in the product (web and app, merged and pushed; nothing visible yet): a "Private profile" switch in Settings, on for everyone (Polarsteps' default). Turning it off opens one sheet that says what becomes visible (name and picture, Collected and Want to visit, badges); only "Make public" writes. A public profile is your own profile as a visitor sees it: /profile?u=<id> on the web (noindexed), a pushed screen in the app, reached from People and from an ambassador's name on a city page, which becomes a link with a chevron only while that person's profile is public. The server answers through `public_profile()`, never the dates a tree was ticked. Rule in CLAUDE.md (Privacy and accounts), story in DECISIONS.md, reference in CONVENTIONS.md.
+
+Checked: app built and looked at on the SE simulator (public profile, private profile, the switch, the sheet); signed-out Follow added to SignedOutWalk and passing. Web checked by the source checkers only (no local Astro build); the dispatched deploy is the verdict. Not seen: the linked ambassador row in the app, which needs a public profile in the data first.
+
+FOR HIDDE: paste supabase/PENDING.sql into Supabase (SQL editor, Run). Until then the switch stays hidden on both surfaces and every profile link reads "This profile is private".
+
 ## 2026-10-19 05:21 window: Miami opens, Key West and London added
 
 Visits last 7 days: 1920 (3080 page views). Inbox empty. health.py: same two flags as the earlier window (scheduled iOS run failed again, smoke "skipped" on push); not touched, needs a session. Rung 4: write pass (Opus, ~95k tokens) on the staged Miami file. New: Miami with 4 trees (Simpson Park paradise tree, Vizcaya Garden Mound oaks, redberry stopper, last Cuban royal palm; page copy written), Key West as its own one-tree place (kyw_001, 250 km from Miami, tree page only), and London lon_033 Roehampton Lucombe Oak. All pins approximate, no photographs yet; 3 of 4 Miami trees sit behind Vizcaya's ticket (note only, free trees wanted). us-states.json and city_names updated. Preflight 0 problems. Claim released with --force (kyw_001 lives in key-west.json).
