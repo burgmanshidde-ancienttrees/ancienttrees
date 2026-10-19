@@ -80,7 +80,7 @@ export async function GET() {
     // prints the same row the website prints under the intro (2026-10-03).
     // Only those who consented to be named; the list is an ANSWER.
     ...(namedAmbassadorsFor(c.id).length
-      ? { ambassadors: namedAmbassadorsFor(c.id).map((a) => ({ name: a.display_name!, ...(a.affiliation ? { affiliation: a.affiliation } : {}) })) }
+      ? { ambassadors: namedAmbassadorsFor(c.id).map((a) => ({ name: a.display_name!, ...(a.affiliation ? { affiliation: a.affiliation } : {}), ...(a.profile_public && a.user_id ? { profile: a.user_id } : {}) })) }
       : {}),
     // A seat taken by somebody not (yet) named: the app must not offer it as
     // empty, exactly as the website stops drawing the open seat (2026-10-06).

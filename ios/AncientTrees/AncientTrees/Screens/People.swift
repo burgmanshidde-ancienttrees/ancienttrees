@@ -45,6 +45,9 @@ struct PeopleView: View {
     /// Signed out, Follow and search ask for an account instead of doing
     /// nothing (2026-10-02, the same gate the heart and the tick carry).
     @State private var signingIn = false
+    /// A person's profile opens on the stack under this sheet, where every
+    /// other page opens (Route.person), so the sheet closes first.
+    @Environment(Navigator.self) private var navigator
 
     /// Blocked people go to the BOTTOM rather than out of the list.
     ///
@@ -144,6 +147,11 @@ struct PeopleView: View {
                 }
                 ForEach(visible, id: \.user_id) { p in
                     HStack(spacing: 12) {
+                        // THE PERSON OPENS THEIR PROFILE (2026-10-19): picture
+                        // and name together, as Polarsteps' and Instagram's
+                        // rows do; Follow and the ellipsis stay their own.
+                        Button { dismiss(); navigator.push = .person(p.user_id) } label: {
+                        HStack(spacing: 12) {
                         ZStack {
                             Circle().fill(Brand.moss.opacity(0.12))
                             if let url = p.avatar_url, let u = URL(string: url) {
@@ -169,6 +177,11 @@ struct PeopleView: View {
                             // (AmbassadorBadge.swift); nothing for almost everybody.
                             AmbassadorBadge(places: profiles.placesByUser[p.user_id] ?? [], compact: true)
                         }
+                        }
+                        .contentShape(.rect)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityIdentifier("person-open")
                         Spacer(minLength: 8)
 
                         if moderation.hides(p.user_id) {

@@ -36,6 +36,14 @@ public enum EarlyAdopter {
         return Status(hasBadge: has, seenSheet: u.seen)
     }
 
+    /// The same rule for SOMEBODY ELSE's account, from the created_at their
+    /// public profile carries (2026-10-19). False when the feed cannot say.
+    public static func has(createdAt: String?) async -> Bool {
+        guard let created = createdAt, let until = await feedCutoff() else { return false }
+        guard let day = until else { return true }
+        return created < day
+    }
+
     /// Closing the sheet, from either surface, writes this once. Best effort:
     /// a failure only means the sheet may show once more.
     public static func markSeen(token: String) async {

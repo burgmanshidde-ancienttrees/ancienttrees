@@ -164,6 +164,9 @@ struct ContentView: View {
         // exactly the condition under which a control goes missing unnoticed.
         case "treemap": return .treeMap(value)
         case "profile": return .profile
+        // Somebody else's profile (2026-10-19); with -people-demo, the a1
+        // demo person is public and a2 is private.
+        case "person": return .person(value)
         // A tree of YOURS, which was the last screen here no argument could
         // open. Sightings.demoIDs are the two that -mine-demo always creates.
         case "mine": return UUID(uuidString: value).map { Route.mine($0) }
@@ -467,6 +470,8 @@ struct ContentView: View {
             }
         case .profile:
             ProfileView(catalogue: cat)
+        case .person(let id):
+            PersonProfileView(userId: id, catalogue: cat)
         case .collectionMap:
             CollectionMapPage(catalogue: cat)
         case .placeMap(let place):

@@ -69,6 +69,8 @@ struct ProfileView: View {
     @State private var contributing = false   // -contribute: launchSheet below
     @State private var givingFeedback = false   // -feedback: launchSheet below
     @State private var editingProfile = false
+    /// The Make public sheet, opened by turning Private profile off.
+    @State private var confirmingPublic = false   // -publicask: launchSheet below
     /// Same debug scaffolding as -contribute and -feedback: the sweep cannot
     /// tap, so every screen needs an argument or it ships unlooked-at.
 
@@ -82,6 +84,7 @@ struct ProfileView: View {
                 // disagree about its own name is the "title twice" fault the
                 // tree page already fixed once.
                 identity
+                privacyCard
                 // "Know a tree we are missing?" left Settings (Hidde,
                 // 2026-10-10, the settings board): adding a tree is the camera
                 // in the tab bar, and inside Settings it was the one card that
@@ -115,6 +118,23 @@ struct ProfileView: View {
         // back button is a room with the door painted over.
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .launchSheet("-publicask", isPresented: $confirmingPublic)
+        .sheet(isPresented: $confirmingPublic) {
+            BrandSheet(
+                icon: "globe.europe.africa",
+                title: "Make your profile public?",
+                message: "Anyone can then open it, with or without an account.",
+                points: ["Your name and picture",
+                         "The trees you collected and want to visit",
+                         "Your badges"],
+                buttons: [
+                    .primary("Make public", id: "public-yes") {
+                        confirmingPublic = false
+                        setPublic(true)
+                    },
+                    .quiet("Not now", id: "public-no") { confirmingPublic = false },
+                ])
+        }
         .launchSheet("-contribute", isPresented: $contributing)
         .sheet(isPresented: $contributing) { ContributeView() }
         .launchSheet("-feedback", isPresented: $givingFeedback)
@@ -206,6 +226,52 @@ struct ProfileView: View {
         // profile page with a sign-in prompt does it. A pill button beside the
         // text squeezed the sentence into a four-line column.
         .contentShape(.rect)
+    }
+
+    // MARK: - privacy
+
+    /// PRIVATE PROFILE (Hidde, 2026-10-19, after the design page: "ja dit ziet
+    /// er goed uit"). Polarsteps' and Instagram's "Private account" switch, on
+    /// for everybody until the person turns it off and confirms the sheet
+    /// (CONVENTIONS.md, "A public profile, and the private switch"). Shown only
+    /// once the server has said what it is (profiles.public), like the
+    /// website's row: a switch that stores nothing is worse than none.
+    @ViewBuilder private var privacyCard: some View {
+        if account.isSignedIn, let isPublic = profiles.myPublic {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Privacy").font(.eyebrow).textCase(.uppercase)
+                    .foregroundStyle(Brand.inkSoft).tracking(0.8)
+                Toggle(isOn: Binding(
+                    get: { !isPublic },
+                    set: { wantPrivate in
+                        if wantPrivate { setPublic(false) }
+                        // A public profile shows a name, and no profile row
+                        // exists until somebody sets one, so the name first.
+                        else if profiles.me?.display_name.isEmpty ?? true { editingProfile = true }
+                        else { confirmingPublic = true }
+                    })) {
+                    HStack(spacing: 12) {
+                        Image(systemName: "lock").frame(width: 20).foregroundStyle(Brand.moss)
+                        Text("Private profile").font(.callout).foregroundStyle(Brand.ink)
+                    }
+                }
+                .tint(Brand.moss)
+                .padding(.horizontal, 16).frame(minHeight: 48)
+                .brandCard()
+                .accessibilityIdentifier("profile-private")
+                Text(isPublic ? "Anyone can see your profile and your trees." : "Only you see your profile.")
+                    .font(.footnote).foregroundStyle(Brand.inkSoft)
+                    .padding(.horizontal, 16)
+            }
+        }
+    }
+
+    private func setPublic(_ on: Bool) {
+        guard let uid = account.session?.userId else { return }
+        Task {
+            guard let t = await account.freshToken() else { return }
+            _ = await profiles.savePublic(on, userId: uid, token: t)
+        }
     }
 
     // The upgrade card lived here until 2026-08-25. Its two rows are in
