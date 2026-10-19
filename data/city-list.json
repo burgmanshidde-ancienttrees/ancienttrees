@@ -64,7 +64,7 @@
    "country": "Portugal",
    "slug": "lisbon",
    "status": "published",
-   "trees": 36
+   "trees": 35
   },
   {
    "city": "Tokyo",
@@ -163,14 +163,6 @@
    "status": "published",
    "demand_views_90d": 146161,
    "trees": 12
-  },
-  {
-   "city": "Miami",
-   "country": "United States",
-   "slug": "miami",
-   "status": "published",
-   "demand_views_90d": null,
-   "trees": 7
   },
   {
    "city": "Cagliari",
@@ -724,6 +716,14 @@
    "status": "published",
    "demand_views_90d": 140824,
    "trees": 38
+  },
+  {
+   "city": "Miami",
+   "country": "United States",
+   "slug": "miami",
+   "status": "published",
+   "demand_views_90d": null,
+   "trees": 7
   },
   {
    "city": "Ljubljana",
