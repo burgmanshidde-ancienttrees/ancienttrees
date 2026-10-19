@@ -55,6 +55,8 @@ import people  # noqa: E402  account ids are codes in public files (2026-10-19)
 
 BASE = "https://caimvxiyrtifilimlkqw.supabase.co"
 KEY = os.environ.get("SUPABASE_SERVICE_KEY")
+# Real account deletions arrive one at a time; more in one sweep is a mismatch.
+MAX_GONE = 2
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # What a photograph is credited to once the account behind it is gone. Not a
 # name, because a name is the part that had to go; not blank, because a reader
@@ -273,6 +275,21 @@ def main():
             gone.append(item)
         elif verdicts[uid] is None:
             unknown.append(item)
+
+    # A BRAKE ON A MASS TAKEDOWN (2026-10-19). Twenty minutes after the account
+    # ids became codes (scripts/people.py), a knock read every one of seven
+    # readers' accounts as gone and unlinked all 40 of their photographs: the
+    # codes in the files and the codes the runner computed did not match, which
+    # looks exactly like "everybody deleted their account". Real deletions come
+    # one at a time. So when every account checked reads as gone, or more than
+    # MAX_GONE in one sweep, nothing is touched and a session has to look.
+    gone_accounts = {u for u, v in verdicts.items() if v is False}
+    if len(gone_accounts) > MAX_GONE or (len(verdicts) >= 2 and len(gone_accounts) == len(verdicts)):
+        print("photo_takedown: REFUSED. %d of %d account(s) read as deleted in one sweep, "
+              "which is a key or code mismatch far more often than real deletions "
+              "(run python3 scripts/people.py --check). Nothing was unlinked."
+              % (len(gone_accounts), len(verdicts)))
+        return 1 if args.check else 0
 
     print("photo_takedown: %d reader photograph(s) published, %d account(s), "
           "%d to unlink" % (len(photos), len(verdicts), len(gone)))
