@@ -400,7 +400,8 @@
         "status": "held",
         "note": "Hidde: good photograph, but it shows the Corstorphine sycamore clone in the Royal Botanic Garden, not the churchyard tree",
         "width": 2448,
-        "height": 3264
+        "height": 3264,
+        "taken_month": 5
       },
       "curation_status": "flagged",
       "notes": "A candidate photo exists (Geograph, M J Richardson, CC BY-SA 2.0) but its own caption places it 'in the Royal Botanic Garden', a different corstorphinense specimen RBGE grows for conservation, not the churchyard replacement tree itself. Not used, to avoid the same misidentification error flagged in other cities' runs (e.g. Rome's Villa Torlonia, Amsterdam's Kirstenbosch photo). Exact replanting year of the current cutting not found in any source; age range is an estimate based on the 2005 death date. Pin tightened 2026-07-28 to the church's own OSM/Nominatim geocode (~110-150m from the earlier estimate), cross-checked against Historic Environment Scotland's listing for the same building; still a building point rather than a tree-specific one, so precision stays approximate.",

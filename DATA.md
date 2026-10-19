@@ -25,6 +25,562 @@ event on the list is unaffected.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-18 (previous UTC day)
+
+**Today: 2 feedback reports arrived yesterday (37 total).**
+
+**Conclusion: the numbers that matter now** (this week against the week before)
+
+| Number | Why it counts | This week | Week before |
+|---|---|---:|---:|
+| Stood at a tree (app collections) | goal 1, the north star | 6 | 5 |
+| New phones that opened a tree on day one | activation | 12 of 14 (86%) | 7 of 12 (58%) |
+| New phones that tapped Take me there on day one | activation | 2 of 14 (14%) | 1 of 12 (8%) |
+| Phones back within a week | retention | 2 of 12 (17%) | 5 of 9 (56%) |
+| New accounts (strangers) | people collected | 3 | 5 |
+| Readers' trees and photographs live | data collected | 5 | 2 |
+| Arrivals from search, every engine (8 days) | traction | - | - |
+
+6 collections at a tree this week against 5 the week before, a handful: read it as a count, not a trend. The weakest link is tapping Take me there on day one (2 of 14): that step is the work, more traffic only pours more people into it.
+
+**Trees readers sent, for you to inspect** (2 you have not looked at; ours left out)
+
+| Judged | Tree | Where | Species | Their girth | Our verdict | Page |
+|---|---|---|---|---:|---|---|
+| 2026-10-18 | The Moreton Bay Fig of Jardim Constantino (2 photos) | Lisbon | Moreton Bay Fig (Ficus macroph | - | publish | [lis_027](https://ancienttrees.app/lisbon/moreton-bay-fig-of-jardim-constantino) |
+| 2026-10-18 | The Paperbark of Jardim Constantino | Lisbon | Prickly Paperbark (Melaleuca s | - | publish | [lis_026](https://ancienttrees.app/lisbon/paperbark-of-jardim-constantino) |
+- Photographs and the readers' own words: `python3 scripts/inspect_readers.py` (a local page, never in this public file). Your answer goes in with `python3 scripts/judgement.py --feedback <id> "..."`.
+
+**What readers gave us, and it went live**
+
+| Day | Tree | Where | What | Page |
+|---|---|---|---|---|
+| 10-18 | The Moreton Bay Fig of Jardim Constantino | Lisbon | a reader's photograph, published | [live](https://ancienttrees.app/lisbon/moreton-bay-fig-of-jardim-constantino) |
+| 10-18 | The Moreton Bay Fig of Jardim Constantino | Lisbon | a reader's photograph, published beside the one it had | [live](https://ancienttrees.app/lisbon/moreton-bay-fig-of-jardim-constantino) |
+| 10-18 | The Paperbark of Jardim Constantino | Lisbon | a reader's photograph, published | [live](https://ancienttrees.app/lisbon/paperbark-of-jardim-constantino) |
+
+**Photographs added to trees already live, last 24 hours** (29)
+
+| Tree | Where | What | By | Page |
+|---|---|---|---|---|
+| The Velvet-leaf Euodia of Fischerinsel | Berlin | first photograph | night run | [live](https://ancienttrees.app/berlin/velvet-leaf-euodia-of-fischerinsel) |
+| The Oak between the Neuer See and the Landwehr Canal | Berlin | first photograph | night run | [live](https://ancienttrees.app/berlin/oak-between-the-neuer-see-and-the-landwehr-canal) |
+| The Post Oak Grove of Pioneer Park Cemetery | Dallas | first photograph | night run | [live](https://ancienttrees.app/dallas/post-oak-grove-of-pioneer-park-cemetery) |
+| The Paradieseiche of Sachsenhausen | Frankfurt | first photograph | night run | [live](https://ancienttrees.app/frankfurt/paradieseiche-of-sachsenhausen) |
+| The Peace Oak of Sossenheim | Frankfurt | first photograph | night run | [live](https://ancienttrees.app/frankfurt/peace-oak-of-sossenheim) |
+| The Münzgrabenstrasse Oriental Plane | Graz | first photograph | night run | [live](https://ancienttrees.app/graz/munzgrabenstrasse-oriental-plane) |
+| The Independence Spruce | Helsinki | first photograph | night run | [live](https://ancienttrees.app/helsinki/independence-spruce) |
+| The Banyan of Nathan Road | Hong Kong | first photograph | night run | [live](https://ancienttrees.app/hong-kong/banyan-of-nathan-road) |
+| The Paperbark of Jardim Constantino | Lisbon | first photograph | a reader | [live](https://ancienttrees.app/lisbon/paperbark-of-jardim-constantino) |
+| The Moreton Bay Fig of Jardim Constantino | Lisbon | first photograph, 1 more photograph | a reader | [live](https://ancienttrees.app/lisbon/moreton-bay-fig-of-jardim-constantino) |
+| El Pino (The Pine Tree) | Los Angeles | first photograph | night run | [live](https://ancienttrees.app/los-angeles/el-pino-the-pine-tree) |
+| The Eucalyptus of the Villa Comunale | Naples | first photograph | night run | [live](https://ancienttrees.app/naples/eucalyptus-of-the-villa-comunale) |
+| The London Plane of the Reservoir | New York | first photograph | night run | [live](https://ancienttrees.app/new-york/london-plane-of-the-reservoir) |
+| The Gloucester Tree | Pemberton | first photograph | session or your review | [live](https://ancienttrees.app/pemberton/gloucester-tree) |
+| The Balch Creek Fir | Portland | new lead photograph | session or your review | [live](https://ancienttrees.app/portland/balch-creek-fir) |
+| The Corbett Oak | Portland | first photograph | night run | [live](https://ancienttrees.app/portland/corbett-oak) |
+| The Hiawatha Playfield Red Oak | Seattle | first photograph | night run | [live](https://ancienttrees.app/seattle/hiawatha-playfield-red-oak) |
+| The Roanoke Park European White Elm | Seattle | first photograph | night run | [live](https://ancienttrees.app/seattle/roanoke-park-european-white-elm) |
+| Sentinel Tree | Sequoia National Park | first photograph | night run | [live](https://ancienttrees.app/sequoia-national-park/sentinel-tree) |
+| Bellmanseken | Stockholm | first photograph | night run | [live](https://ancienttrees.app/stockholm/bellmanseken) |
+| The Camphor Tree of Hongo Yumicho | Tokyo | first photograph | night run | [live](https://ancienttrees.app/tokyo/camphor-tree-of-hongo-yumicho) |
+| The Oriental Plane of the Abraham Dolehof | Utrecht | first photograph | night run | [live](https://ancienttrees.app/utrecht/oriental-plane-of-the-abraham-dolehof) |
+| The Maurer Schubertpark Lime | Vienna | first photograph | night run | [live](https://ancienttrees.app/vienna/maurer-schubertpark-lime) |
+| The Oberlaa Horse Chestnut | Vienna | first photograph | night run | [live](https://ancienttrees.app/vienna/oberlaa-horse-chestnut) |
+| The Strassergasse Oak | Vienna | first photograph | night run | [live](https://ancienttrees.app/vienna/strassergasse-oak) |
+| The Ash of Mickiewicz's Courtyard | Vilnius | first photograph | night run | [live](https://ancienttrees.app/vilnius/ash-of-mickiewiczs-courtyard) |
+| The Smithsonian Witness Elm | Washington DC | first photograph | night run | [live](https://ancienttrees.app/washington-dc/smithsonian-witness-elm) |
+| Travilah Oak | Washington DC | first photograph | night run | [live](https://ancienttrees.app/washington-dc/travilah-oak) |
+| Takinoya no Hidarimakigaya | Yabu | first photograph | night run | [live](https://ancienttrees.app/yabu/takinoya-no-hidarimakigaya) |
+
+**Did the product happen**
+
+| Action | Yesterday | 7 days | Last |
+|---|---:|---:|---|
+| signin-open | 0 | 9 | 3 days ago |
+| app-cta | 0 | 14 | 2 days ago |
+| signin-oauth | 0 | 0 | 10 days ago |
+| signin-done | 0 | 0 | 12 days ago |
+| directions | 0 | 0 | 10 days ago |
+| search-home | 1 | 5 | yesterday |
+| app-open | 0 | 2 | 3 days ago |
+| suggestion-submit | 0 | 0 | 24 days ago |
+| home-country | 0 | 2 | 4 days ago |
+| home-fav | 0 | 0 | 10 days ago |
+| signin-link-sent | 0 | 0 | 24 days ago |
+| save | 0 | 0 | 17 days ago |
+| waitlist-submit | 0 | 1 | 3 days ago |
+| home-dir-tree | 0 | 1 | 4 days ago |
+| search-explore | 0 | 2 | 3 days ago |
+| visit | 0 | 0 | 29 days ago |
+| search-bar | 2 | 2 | yesterday |
+| app-page-badge | 0 | 0 | 10 days ago |
+| home-species | 0 | 0 | 28 days ago |
+| search-bar-m | 0 | 2 | 2 days ago |
+| sponsor-open | 0 | 1 | 4 days ago |
+| home-dir-city | 0 | 1 | 2 days ago |
+| home-dir-species | 0 | 0 | 8 days ago |
+| walks-app | 0 | 0 | 26 days ago |
+| worthit-report | 0 | 0 | 25 days ago |
+| worthit-report detail | 0 | 0 | 25 days ago |
+| worthit-worth it | 0 | 0 | 29 days ago |
+| worthit-not worth it | 0 | 0 | never |
+| **all** | **3** | **42** | |
+
+**Searched yesterday:** london plane (2 times), nepal.
+
+| Day | Accounts | Android waitlist | Saves | Trees sent | Feedback | Ambassador asks |
+|---|---:|---:|---:|---:|---:|---:|
+| 10-12 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-13 | 1 | 0 | 0 | 0 | 2 | 0 |
+| 10-14 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 10-15 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 10-16 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 10-17 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 10-18 | 0 | 0 | 0 | 0 | 2 | 0 |
+| 10-19 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **7 days** | **3** | **1** | **0** | **0** | **4** | **0** |
+
+| Ambassadors | Yesterday | 7 days | Total |
+|---|---:|---:|---:|
+| Granted | 1 | 1 | 7 |
+| Invitations sent (app contributors) | 0 | 1 | 7 |
+| Open-seat requests answered | 0 | 0 | 0 |
+- New in 7 days: Hidde (Baarn) since 2026-10-18.
+- Android waitlist: 22 total, newest 3 days ago
+- Submissions: 37 total (19 trees sent, 18 feedback), newest yesterday
+- Accounts:    29 total, newest 2 days ago
+
+**What readers told us** (7 days, structure only; the words stay in the database)
+
+| Day | Tree | What | Note | From | Outcome |
+|---|---|---|---|---|---|
+| 10-13 | sev_009 (The Fig of the Glorieta d | worth it | - | c922 | - |
+| 10-13 | - | Location not working on iOS, permi | - | c922 | open_question |
+| 10-18 | The Yew of Campo Santana | correction sent in | 49 chars, read it in the database | 08aa | - |
+| 10-18 | lis_014 (The Yew of Campo Santana) | worth it | - | 08aa | - |
+| 10-18 | lis_014 (The Yew of Campo Santana) | vote undone | worth it | 08aa | - |
+
+- 3 of the other 5 came from one account (08aa), which is one person rather than a pattern.
+
+**The funnel, as rates**
+- Seen to clicked: 3.8% (12 of 317) vs 4.9% the week before
+- Pages per visit: 1.3 (7430 visits, 9670 pageviews since 2026-09-21)
+- Visits that did something: 9.9% (735 actions on 7430 visits)
+
+**What people did in the app**
+
+| What | Yesterday | 7 days | Last |
+|---|---:|---:|---|
+| app_open | 19 | 124 | today |
+| tab | 15 | 82 | yesterday |
+| tree_opened | 89 | 237 | yesterday |
+| directions | 1 | 3 | yesterday |
+| tree_saved | 0 | 8 | 2 days ago |
+| tree_visited | 3 | 3 | yesterday |
+| sighting_recorded | 8 | 8 | yesterday |
+| sync_skipped | 0 | 0 | never |
+| sync_failed | 0 | 0 | never |
+| location | 2 | 9 | yesterday |
+| **all** | **137** | **474** | |
+- Measuring since 2026-08-30, when Measure.swift went in. Unlinked to any account by design: an install id, the app version and the OS, nothing else.
+- 94 installs have ever sent anything. An install id is made fresh on each install, so this is an upper bound on people, not a count of them.
+- Yesterday came from 7 installs, and the busiest made 34 of 7 events (486%). One install making most of a day is what our own reinstall looks like: add its id to excluded_installs in data/app-measure.json if it is ours.
+- Tabs opened (7d): Discover 32; My trees 30; Map 20
+- Active phones: 7 in the last day, 20 in the last 7 days, 66 in the last 30 days.
+- Coming back: 29 of those 66 phones opened the app on more than one day (44%).
+- Trees opened by the most phones (7d): The Fig of the Glorieta de Goya (Seville) 3; The Ombú of La Cartuja (Seville) 2; The Yew of Campo Santana (Lisbon) 2; The Paperbark of Jardim Constantino (Lisbon) 2; The Moreton Bay Fig of Jardim Constantino (Lisbon) 2
+- Where the phones are (30d): United States 16; The Netherlands 8; United Kingdom 7; Portugal 6; Spain 4; Italy 4
+- Trees recorded (7d): a tree we map 5; a tree we do not 3
+  A sighting reaches our database only through an account. Signed out it stays on the phone, so this count can run ahead of the trees and photographs we actually receive.
+
+**Trees collected in the app** (7 days, a person standing at the tree)
+
+| Day | Tree | Where | Install | Build | Signed in |
+|---|---|---|---|---|---|
+| 10-18 | The Yew of Campo Santana | Lisbon | B792 | ? | ? |
+| 10-18 | The Moreton Bay Fig of Jardim Constantino | Lisbon | B792 | ? | ? |
+| 10-18 | The Paperbark of Jardim Constantino | Lisbon | B792 | ? | ? |
+
+**The app as a builder reads it** (this week against the week before; the weakest row is the work)
+
+| Link | This week | Week before |
+|---|---|---|
+| New phones | 14 | 12 |
+| First day: opened a tree | 12 of 14 (86%) | 7 of 12 (58%) |
+| First day: opened a tree near them | 2 of 4 (50%) | - |
+| First day: allowed location | 5 of 5 (100%) | - |
+| First day: Take me there | 2 of 14 (14%) | 1 of 12 (8%) |
+| First day: collected a tree | 1 of 14 (7%) | 1 of 12 (8%) |
+| Back within a week | 2 of 12 (17%) | 5 of 9 (56%) |
+| Trees collected (all phones) | 6 | 5 |
+- Near and location count only phones on a version that sends them (from 2026-10-10); a dash means none yet.
+- Back within a week looks at the phones that arrived a week earlier, so each has had its seven days.
+
+**App Store downloads** (Apple's own count, not PostHog)
+
+| Day | Downloads |
+|---|---:|
+| 2026-10-10 | 5 |
+| 2026-10-12 | 1 |
+| 2026-10-13 | 2 |
+| 2026-10-15 | 1 |
+| 2026-10-16 | 2 |
+| 2026-10-17 | 3 |
+| **6 days** | **14** |
+- First-time downloads only, which is what App Store Connect's Trends screen counts; redownloads and updates are not in this table.
+
+**Where the downloads came from** (7 days, Apple's attribution)
+
+| Came from | Via | Downloads |
+|---|---|---:|
+| App Store search | - | 8 |
+| Web referrer | - | 3 |
+| App referrer | - | 2 |
+| App Store browse | - | 1 |
+| **window** | | **14** |
+- Countries: US (6); NL (2); DE (1); DK (1); GB (1); IE (1)
+- Apple's own source split, first-time downloads only. "Web referrer" with our own domain is the site's app page; "App Store search" is somebody who typed into the store. "Unavailable" is Apple's word for a source it could not attribute.
+
+**App crashes** (last 7 days, store builds; MetricKit, a sample)
+
+| Crashes | Kind | Build | Where | Phones | Last | Fix |
+|---:|---|---|---|---:|---|---|
+| 37 | crash | 1.0.2 (20) | Swift runtime failure: Index out of range < static MyVotes.treeId(_:) (WorthIt.swift:84) < MyVotes.load(account:) (WorthIt.swift:103) | 1 | 2026-10-16 | fixed in build 35, released; contained server-side |
+- Builds not from the App Store (Xcode or review): 2 report(s) on build 25.
+
+**Where demand is going to waste**
+
+Search Console, the last 10 days Google will give us (its data lags 2-3 days, so the newest row is never yesterday). The newest row is also still FILLING: Google backfills for days and backfills impressions harder than clicks, so it reads as an unusually good day and is not one (08-22 arrived as 12/769 and settled at 17/1030). Position is an average across every query, so it dips whenever we start ranking for something new:
+
+| Day | Clicks | Impressions | CTR | Position |
+|---|---:|---:|---:|---:|
+| 10-09 | 3 | 37 | 8.1% | 49.5 |
+| 10-10 | 0 | 35 | 0.0% | 29.8 |
+| 10-11 | 1 | 32 | 3.1% | 31.7 |
+| 10-12 | 1 | 26 | 3.8% | 30.3 |
+| 10-13 | 1 | 34 | 2.9% | 38.7 |
+| 10-14 | 1 | 39 | 2.6% | 36.9 |
+| 10-15 | 2 | 40 | 5.0% | 37.0 |
+| 10-16 | 3 | 73 | 4.1% | 53.0 |
+| 10-17 | 2 | 62 | 3.2% | 44.6 |
+| 10-18 *partial* | 2 | 43 | 4.7% | 41.6 |
+| **window** | **16** | **421** | **3.8%** | |
+- Top queries (10d): amsterdam trees (i1, p81); ancient tree (i1, p89); ancient trees (i1, p82); araucaria norfolk island pine (i1, p86); arboles de cadiz (i5, p72)
+- Top pages (10d): / (c5/i21); /leiden/beets-beech-of-the-burcht (c2/i2); /app (c1/i9); /seville (c1/i5); /de (c1/i3)
+- Content leads, biggest first. A lead is a query no page TITLE covers, so some are ranking problems on a page we have rather than a page to write ('vegas trees' against /las-vegas). Check before building:
+    - 'big sherman tree' (i2, p69)
+    - 'big macadamia' (i1, p100)
+    - 'bunya tree' (i1, p97)
+    - 'canary island dates' (i1, p99)
+    - 'chapina garden' (i1, p13)
+**What Bing shows and sends** (last 7 days with data, Bing Webmaster Tools)
+
+| Day | Impressions | Clicks | CTR |
+|---|---:|---:|---:|
+| 10-11 | 53 | 2 | 3.8% |
+| 10-12 | 81 | 3 | 3.7% |
+| 10-13 | 90 | 2 | 2.2% |
+| 10-14 | 94 | 3 | 3.2% |
+| 10-15 | 78 | 8 | 10.3% |
+| 10-16 | 70 | 2 | 2.9% |
+| 10-17 | 57 | 3 | 5.3% |
+| **7 days** | **523** | **23** | **4.4%** |
+- Week before: 537 impressions, 18 clicks. No Bing demotion in sight.
+- Top Bing queries: fig tree in square alicante (c2/i4, p4); big trees of quebec city (c2/i1, p2); how old are the trees in queen square bristol (c1/i4, p3); oak tree in zurich (c1/i4, p2); trees in the plaza dus burgos seville (c1/i3, p5); remarkable trees copenhagen (c1/i2, p4); berlin tree (c1/i2, p1); oldest tree in belfast (c1/i2, p1)
+- Bing alone, from Bing Webmaster Tools. DuckDuckGo and Yahoo draw on the same index and publish no numbers; their arrivals are columns in the Cloudflare table. Bing's data lags about two days.
+
+**Google, from the new floor** (2026-10-01: ~50 impressions a day, 0 clicks; before 09-28: ~2,000 a day)
+
+What Google does, last 10 days:
+
+| Measure | Now |
+|---|---:|
+| Impressions | 463 |
+| Clicks | 16 |
+| Pages that got at least one impression | 247 |
+| Impressions on the proven cities | 290 |
+
+- 342 impressions from site: and operator searches left out (ours, not readers; every Google table below is without them).
+
+What we did (context, proves nothing by itself): 2973 trees Google may index, 776 kept out for lacking a photo and an exact pin, 4585 pages on the noindex list.
+
+**Is enriching working** (indexed tree pages, last 10 days of Google; rich = register record, a measurement and concrete access)
+
+| Indexed tree pages | Pages | With an impression | Impressions | Per page | Clicks |
+|---|---:|---:|---:|---:|---:|
+| Rich | 615 | 27 | 72 | 0.12 | 3 |
+| Not yet rich | 528 | 23 | 43 | 0.08 | 0 |
+| Returned to Google's index in the last 7 days | 0 | 0 | 0 | 0.00 | 0 |
+
+- Google lags 2 to 3 days, so a page returned this week has had a few days at most. Compare the per-page numbers across weeks, not the totals across rows.
+
+**Depth is allowed on these cities** (10+ impressions in the window; photos, pins and best_time go here and nowhere else):
+
+| City | Clicks | Impressions | CTR | Position | Normal there | Biggest query, and where it really sits |
+|---|---:|---:|---:|---:|---:|---|
+| sequoia-national-park | 0 | 38 | 0.0% | 73.1 | 0.4% | general sherman tree california (i4, p74) |
+
+- Plus 258 cities on the frozen 09-27 roster (data/depth-roster-frozen.json), biggest: singapore, lisbon, amsterdam, barcelona, seville, bath, tenerife, berlin.
+
+**What was sent in, and what we decided**
+
+| seen | what | where | size for its species | ours | Hidde |
+|---|---|---|---|---|---|
+| before 2026-09-23 | The Twisted Muku of Omiya Gate, Kyoto  | Kyoto | - | publish | - |
+| 2026-10-18 | The Tulip Tree of Cantonspark | - | - | lead | - |
+| 2026-10-18 | The Moreton Bay Fig of Jardim Constant | Lisbon | - | publish | - |
+| 2026-10-18 | The Moreton Bay Fig of Jardim Constant | Lisbon | - | publish | - |
+| 2026-10-18 | The Paperbark of Jardim Constantino | Lisbon | - | publish | - |
+| 2026-10-18 | A tree in Baarn | - | - | lead | - |
+| 2026-10-18 | Moreton Bay Fig | - | - | open | - |
+| 2026-10-15 | The Meiji Jingu Gaien Ginkgo Avenue | - | - | lead | - |
+| 2026-10-13 | The Great Lawn Plane of Parc Montsouri | Paris | 88% girth | publish | publish (2026-10-13, session: 'follow your suggestion') |
+| 2026-10-12 | The Town Hall Plane | Baarn | - | publish | - |
+| 2026-10-12 | The Town Hall Plane | Baarn | - | publish | - |
+| 2026-10-12 | The Town Hall Plane | Baarn | - | hold | - |
+| 2026-10-12 | The Lagunària de la Llotja | Palma de Mallorca | - | publish | publish: Hidde's own call on 2026-10-12 ('if users have good input - just use it') |
+| 2026-10-06 | A tree in Tokyo | - | - | lead | - |
+| 2026-10-06 | A tree in Tokyo | - | - | lead | - |
+
+1 waiting for a verdict. Disagree with one and the rule changes: `python3 scripts/judgement.py --feedback <id> "..."`, and `--learn` prints every verdict he has overruled.
+- Seen, not clicked: /sequoia-national-park/general-sherman-tree (c0/i32, 0.0%) for general sherman tree california (i4, p74); sherman tree (i3, p78); sequoia national park general sherman (i3, p64)
+
+**Who they are** (full cut, Mondays)
+Audience, 28 days of search (417 clicks, 16212 impressions):
+- Countries: usa c62/i3446; deu c40/i989; esp c39/i1341; nld c35/i864; gbr c33/i1140
+- Devices: MOBILE c294/i9577; DESKTOP c120/i6433; TABLET c3/i202
+- Landing pages: / c23/i174; /prague c6/i127; /seville c6/i77; /de/graz c5/i44; /de/vienna/chestnut-avenue-of-the-hauptallee c5/i128
+- Search language (top 100 named queries, crude match, most clicks are in queries Google withholds): English 33q c7/i173; unclassified 43q c13/i143; Spanish 14q c0/i25; German 3q c0/i24; French 4q c0/i5; Italian 2q c0/i2; Portuguese 1q c0/i2
+On the site since 2026-09-21 (7430 visits, 9670 pageviews, 1.3 pages per visit):
+- Countries: SG 2410; US 1250; DE 480; BR 470; NL 400
+- Devices: desktop 7510; mobile 2130; tablet 30
+- Browsers: Chrome 4730; Firefox 1330; Edge 1030; ChromeMobile 930
+- Arrived via: (direct) 6630; ancienttrees.app 2240; www.google.com 450; duckduckgo.com 110; www.facebook.com 50
+- Opened: /open 890; /contribute 250; / 210; /explore 120; /florence 80; /lisbon 80; /countries 70; /cities 60
+
+fetch_rum: failed today (rum graphql: [{"message": "unable to execute query, please try again later", "path": ["vie).
+
+
+**What the machine did, the last 24 hours**
+
+| Started | Minutes | Trees | Commits | Refused | Cities |
+|---|---:|---:|---:|---:|---|
+| 10-18T08:29 | 5.1 | 0 | 7 | 0 | - |
+| 10-18T13:43 | 10.1 | 6 | 8 | 0 | Leipzig +3, London +1, Salt Lake City +1, Vienna +1 |
+| 10-18T17:02 | 112.1 | 19 | 36 | 2 | Leipzig +7, Frankfurt +6, Delft +3, Stuttgart +3, +13 more |
+| 10-18T19:57 | 67.1 | 1 | 11 | 1 | Spokane +1, Austin, Berlin, Dallas, +14 more |
+| 10-18T22:16 | 22.7 | 0 | 6 | 0 | Berlin, New York, Portland, Washington Dc |
+| 10-19T00:31 | 14.5 | 1 | 5 | 1 | London +1, Delft |
+| 10-19T02:51 | 5.5 | 0 | 4 | 0 | - |
+| 10-19T05:21 | 35.8 | 17 | 15 | 6 | Miami +7, Innsbruck +6, Key West +2, London +1, +1 more |
+| **8 runs** | **273** | **44** | **92** | | |
+
+- 3 of 8 produced no trees; 1 to 6 commands refused per run; last build that went live: 0h ago.
+
+**What they made**
+
+- Photo pass: two Innsbruck oaks approved, costs and log
+- Photo viewing pass: Innsbruck oaks inn_003 and inn_006 approved, kyw_002 held, 20 candidates rejected
+- Innsbruck opens with six trees, claim released, costs and log
+- Innsbruck write pass: six register trees as a new place, inn_007 held
+- Innsbruck verify pass: seven register trees (flagged), leads and blocked recorded
+- Miami, Key West, Novo Selo: five more trees live, claim released, costs and log
+- Miami, Key West and Novo Selo write pass: five trees, page copy updated
+- Miami and Key West verify pass: four trees verified (flagged), leads and blocked recorded
+- Miami, Key West and London: six trees live, claim released, costs and log
+- Miami and London write pass: four Miami trees, Key West mamey, Roehampton Lucombe Oak
+- Las Vegas verify pass: two UNLV champions flagged, not written; claim released, log and costs
+- Record when each page last changed
+- Scouting: London and Edinburgh retried 2026-10-19, still stalled
+- London: add the Osterley Park Cork Oak with photograph, count copy follows
+
+**Photographs the night run approved** (40; the last column undoes one)
+
+| Day | Tree | Where | Overrule |
+|---|---|---|---|
+| 10-18 | The Velvet-leaf Euodia of Fischerinsel | Berlin | `photo_apply.py hold ber_047` |
+| 10-18 | The Oak between the Neuer See and the Landwehr Canal | Berlin | `photo_apply.py hold ber_059` |
+| 10-18 | The Post Oak Grove of Pioneer Park Cemetery | Dallas | `photo_apply.py hold dal_012` |
+| 10-18 | The Paradieseiche of Sachsenhausen | Frankfurt | `photo_apply.py hold frk_008` |
+| 10-18 | The Peace Oak of Sossenheim | Frankfurt | `photo_apply.py hold frk_010` |
+| 10-18 | The Cemetery Lindens of Nieder-Erlenbach | Frankfurt | `photo_apply.py hold frk_014` |
+| 10-18 | The Chestnut at the Schaeferkoeppel | Frankfurt | `photo_apply.py hold frk_016` |
+| 10-18 | The August Reiss Oak of Offenbach | Frankfurt | `photo_apply.py hold frk_017` |
+| 10-19 | The Münzgrabenstrasse Oriental Plane | Graz | `photo_apply.py hold grz_016` |
+| 10-19 | The Independence Spruce | Helsinki | `photo_apply.py hold hel_010` |
+| 10-18 | The Banyan of Nathan Road | Hong Kong | `photo_apply.py hold hkg_010` |
+| 10-19 | The Schulgasse Oak in Hötting | Innsbruck | `photo_apply.py hold inn_003` |
+| 10-19 | The Traklpark Oak | Innsbruck | `photo_apply.py hold inn_006` |
+| 10-18 | The Oak of Probstheida Village Green | Leipzig | `photo_apply.py hold lpz_023` |
+| 10-18 | The Japanese Pagoda Tree of Flossplatz | Leipzig | `photo_apply.py hold lpz_024` |
+| 10-18 | The Oak of Kantatenweg | Leipzig | `photo_apply.py hold lpz_025` |
+| 10-18 | The Steinlinde of Plausig | Leipzig | `photo_apply.py hold lpz_027` |
+| 10-18 | The Marble Hill Black Walnut | London | `photo_apply.py hold lon_029` |
+| 10-19 | The Osterley Park Cork Oak | London | `photo_apply.py hold lon_032` |
+| 10-18 | El Pino (The Pine Tree) | Los Angeles | `photo_apply.py hold lax_013` |
+| 10-18 | The Eucalyptus of the Villa Comunale | Naples | `photo_apply.py hold nap_020` |
+| 10-18 | The London Plane of the Reservoir | New York | `photo_apply.py hold nyc_019` |
+| 10-18 | The Corbett Oak | Portland | `photo_apply.py hold ptl_021` |
+| 10-18 | The Hiawatha Playfield Red Oak | Seattle | `photo_apply.py hold sea_009` |
+| 10-18 | The Roanoke Park European White Elm | Seattle | `photo_apply.py hold sea_017` |
+| 10-18 | Sentinel Tree | Sequoia National Park | `photo_apply.py hold seq_007` |
+| 10-18 | Bellmanseken | Stockholm | `photo_apply.py hold sto_007` |
+| 10-18 | The Schillereiche | Stuttgart | `photo_apply.py hold stu_008` |
+| 10-18 | The Wernhalde Giant Sequoias | Stuttgart | `photo_apply.py hold stu_009` |
+| 10-18 | The Jahneiche | Stuttgart | `photo_apply.py hold stu_010` |
+| 10-18 | The Camphor Tree of Hongo Yumicho | Tokyo | `photo_apply.py hold tok_022` |
+| 10-18 | The Oriental Plane of the Abraham Dolehof | Utrecht | `photo_apply.py hold utr_035` |
+| 10-18 | The Maurer Schubertpark Lime | Vienna | `photo_apply.py hold vie_049` |
+| 10-18 | The Oberlaa Horse Chestnut | Vienna | `photo_apply.py hold vie_056` |
+| 10-18 | The Strassergasse Oak | Vienna | `photo_apply.py hold vie_058` |
+| 10-18 | The Ash of Mickiewicz's Courtyard | Vilnius | `photo_apply.py hold vln_004` |
+| 10-18 | The Smithsonian Witness Elm | Washington DC | `photo_apply.py hold wdc_015` |
+| 10-18 | Travilah Oak | Washington DC | `photo_apply.py hold wdc_016` |
+| 10-19 | Takinoya no Hidarimakigaya | Yabu | `photo_apply.py hold yab_002` |
+| 10-18 | The Four-Trunked Survivor | Ypres | `photo_apply.py hold ypr_005` |
+
+Machine: 7 chain attempts yesterday, 7 got real work time (~237 min total). Dead-in-seconds attempts cost nothing; few get-throughs means the usage window was full or closed.
+
+**Monday: the slow tables.** They rarely change a day's decision, so they come once a week.
+
+**Website actions, ever** (the events table begins 2026-08-01, when the funnel was repaired; a zero has never fired at all)
+
+| Action | Ever |
+|---|---:|
+| signin-open | 505 |
+| app-cta | 51 |
+| signin-oauth | 40 |
+| signin-done | 38 |
+| directions | 36 |
+| search-home | 31 |
+| app-open | 21 |
+| suggestion-submit | 17 |
+| home-country | 11 |
+| home-fav | 7 |
+| signin-link-sent | 6 |
+| save | 5 |
+| waitlist-submit | 5 |
+| home-dir-tree | 4 |
+| search-explore | 4 |
+| visit | 3 |
+| search-bar | 2 |
+| app-page-badge | 2 |
+| home-species | 2 |
+| search-bar-m | 2 |
+| sponsor-open | 2 |
+| home-dir-city | 1 |
+| home-dir-species | 1 |
+| walks-app | 1 |
+| worthit-report | 1 |
+| worthit-report detail | 1 |
+| worthit-worth it | 1 |
+| worthit-not worth it | 0 |
+| **all** | **800** |
+
+**App events, ever** (measured since 2026-08-30)
+
+| What | Ever |
+|---|---:|
+| app_open | 415 |
+| tab | 394 |
+| tree_opened | 1465 |
+| directions | 48 |
+| tree_saved | 27 |
+| tree_visited | 30 |
+| sighting_recorded | 81 |
+| sync_skipped | 0 |
+| sync_failed | 0 |
+| location | 9 |
+| **all** | **2469** |
+
+**Bing's index** (pages crawled and in index, Bing Webmaster Tools)
+
+| Day | Pages crawled | Pages in index |
+|---|---:|---:|
+| 10-11 | 155 | 2600 |
+| 10-12 | 173 | 2447 |
+| 10-13 | 210 | 2447 |
+| 10-14 | 426 | 2600 |
+| 10-15 | 361 | 2668 |
+| 10-16 | 358 | 2668 |
+| 10-17 | 249 | 2775 |
+- In index the week before: 2447.
+
+**The language test** (Contract J v1.13: a translated set should pass its English twin's impressions within four weeks of indexing):
+
+| Lang | City | Clicks | Impressions | Position | English twin |
+|---|---|---:|---:|---:|---:|
+| es | tenerife | 0 | 9 | 78.0 | 2 |
+| de | vienna | 0 | 7 | 8.1 | 2 |
+| es | cadiz | 0 | 6 | 71.2 | 1 |
+| de | berlin | 1 | 5 | 32.2 | 2 |
+| de | graz | 0 | 5 | 47.0 | 1 |
+| es | barcelona | 0 | 5 | 47.4 | 2 |
+| pt | rio-de-janeiro | 0 | 4 | 9.8 | 0 |
+| nl | amsterdam | 0 | 3 | 43.3 | 4 |
+| de | stuttgart | 1 | 2 | 9.0 | 1 |
+| de | leiden | 0 | 2 | 7.0 | 8 |
+| es | seville | 0 | 2 | 11.5 | 6 |
+| fr | paris | 0 | 2 | 8.0 | 4 |
+| it | leiden | 0 | 2 | 4.0 | 8 |
+| nl | arnhem | 0 | 2 | 88.0 | 1 |
+| pt | leiden | 0 | 2 | 6.0 | 8 |
+| de | munich | 0 | 2 | 9.5 | 9 |
+| ja | yakushima | 0 | 2 | 97.5 | 4 |
+| nl | the-hague | 0 | 2 | 40.5 | 0 |
+| de | cologne | 0 | 1 | 7.0 | 0 |
+| de | nuremberg | 0 | 1 | 8.0 | 0 |
+| de | zurich | 0 | 1 | 10.0 | 0 |
+| es | pamplona | 0 | 1 | 54.0 | 0 |
+| fr | geneva | 0 | 1 | 1.0 | 3 |
+| fr | lyon | 0 | 1 | 80.0 | 1 |
+| fr | nice | 0 | 1 | 6.0 | 0 |
+| it | cagliari | 0 | 1 | 70.0 | 2 |
+| it | naples | 0 | 1 | 12.0 | 0 |
+| it | palermo | 0 | 1 | 92.0 | 2 |
+| ja | osaka | 0 | 1 | 7.0 | 2 |
+| nl | nijmegen | 0 | 1 | 58.0 | 0 |
+| pt | lisbon | 0 | 1 | 4.0 | 4 |
+
+**Google Analytics** (last 7 days, visitors who accepted cookies)
+
+| Day | People | New | Returning | Visits | Pageviews | Engaged visits |
+|---|---:|---:|---:|---:|---:|---:|
+| 10-12 | 3 | 3 | 0 | 4 | 7 | 3 |
+| 10-13 | 8 | 8 | 0 | 10 | 38 | 6 |
+| 10-14 | 4 | 4 | 0 | 4 | 8 | 3 |
+| 10-15 | 4 | 3 | 1 | 4 | 13 | 3 |
+| 10-16 | 2 | 2 | 0 | 2 | 3 | 2 |
+| 10-17 | 3 | 3 | 0 | 6 | 30 | 3 |
+| **window** | | **23** | | **30** | **99** | **20** |
+- People per day are not summed: one person on two days is one person, and GA counts them once per day.
+- Coming back (28 days): 4 returning against 23 new, 15% of the people GA saw.
+
+| Page | Pageviews | People |
+|---|---:|---:|
+| / | 5 | 4 |
+| /privacy | 5 | 3 |
+| /estry | 4 | 1 |
+| /cardiff/bute-park-sweet-chestnut | 3 | 1 |
+| /terms | 3 | 1 |
+| /about | 2 | 1 |
+| /amsterdam/rijksmuseum-wingnut | 2 | 1 |
+| /cologne | 2 | 2 |
+| /cologne/hohenlind-oak | 2 | 1 |
+| /de | 2 | 1 |
+
+| Came from | Visits | People |
+|---|---:|---:|
+| (direct) / (none) | 22 | 16 |
+| ecosia.org / organic | 2 | 2 |
+| google / organic | 2 | 1 |
+| bing / organic | 1 | 1 |
+| dias-com-arvores.blogspot.com / referral | 1 | 1 |
+| duckduckgo / organic | 1 | 1 |
+| teams.public.onecdn.static.microsoft / referral | 1 | 1 |
+- GA sees only visitors who pressed Accept on the cookie bar; read it as a sample. Cloudflare's table stays the count.
+
 ## 2026-10-17 (previous UTC day)
 
 **Today: an account was opened yesterday (29 total).**
