@@ -11,7 +11,6 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-
 ## 2026-10-19 session with Hidde: 40 readers' photographs were wrongly unlinked; restored, and a brake added
 The 16:45 UTC knock unlinked every reader photograph on the site (40, seven accounts) as if all seven had deleted their account, twenty minutes after the ids became codes. Almost certainly the runner's codes do not match the files' (a different SUPABASE_SERVICE_KEY), so every account looked gone. Reverted a1e70b7 (links back) and photo_takedown.py now refuses a sweep where every account, or more than two, reads as deleted. Resolved the same evening: `people.py --check` passed on the Mac (9 of 10 codes are live accounts; the tenth is probably a real deletion) and the GitHub secret SUPABASE_SERVICE_KEY was set to the Mac's key at 17:32 UTC. The next knock will show whether the sweep now unlinks only that one.
 
