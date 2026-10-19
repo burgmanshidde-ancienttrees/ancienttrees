@@ -8,8 +8,9 @@ scripts/ga_auth.py because the Cloud organisation blocks service-account
 keys). On the Mac it falls back to ~/.ancienttrees-ga.env.
 
 GA only sees visitors who pressed Accept on the cookie bar, so every table
-here is a sample of the site, not a count of it; Cloudflare's beacon stays
-the count until the two have run side by side (from 2026-10-12).
+here is a sample of the site, not a count of it. Since 2026-10-19 it is the
+digest's only visitor source (Hidde: "i want to keep GA and get rid of
+cloudflare"); week_numbers() feeds the headline's first two rows.
 
     python3 scripts/ga_report.py          prints the digest block
 """
@@ -81,6 +82,30 @@ def fetch(days=7):
         "dateRanges": [{"startDate": "28daysAgo", "endDate": "yesterday"}],
         "dimensions": [{"name": "newVsReturning"}], "metrics": [{"name": "activeUsers"}]})
     return daily, pages, sources, returning
+
+
+def week_numbers():
+    """New visitors, and new visitors from search, for the seven days to
+    yesterday and the seven before: the digest's first two headline rows
+    (Hidde, 2026-10-19: "i want to keep GA and get rid of cloudflare").
+    Returns ([this week, week before], [from search, from search]) or None."""
+    c = creds()
+    if not c:
+        return None
+    tok = _token(c)
+    rows = _report(tok, {
+        "dateRanges": [{"startDate": "7daysAgo", "endDate": "yesterday", "name": "now"},
+                       {"startDate": "14daysAgo", "endDate": "8daysAgo", "name": "before"}],
+        "dimensions": [{"name": "sessionMedium"}],
+        "metrics": [{"name": "newUsers"}]})
+    new, search = [0, 0], [0, 0]
+    for row in rows:
+        medium, rng, n = row[0], row[1], int(float(row[2]))
+        w = 0 if rng == "now" else 1
+        new[w] += n
+        if medium == "organic":
+            search[w] += n
+    return new, search
 
 
 def lines(daily, pages, sources, returning):

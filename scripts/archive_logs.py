@@ -23,7 +23,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCHIVE_DIR = os.path.join(ROOT, "archive")
 FILES = ("LOG.md", "CURATION.md", "DATA.md", "REVIEW.md")
 # DATA.md keeps two weeks, not three days: every reader takes the newest entry
-# only (show_digest, seolearn, langcheck, recognise, weekly_mail), and
+# only (show_digest, seolearn, langcheck, recognise), and
 # thin_pages.question_evidence() already reads archive/DATA-*.md too. It had
 # reached 2 MB across 93 days by 2026-10-18 (Hidde: "opruimen"). REVIEW.md
 # likewise: health.py reads the newest block, the reviewer skims for repeats.

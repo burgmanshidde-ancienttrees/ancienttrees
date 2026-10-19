@@ -2,7 +2,8 @@
 """Daily data digest: writes one dated entry per day into DATA.md.
 
 Sources:
-- Cloudflare zone analytics (GraphQL API), token from CLOUDFLARE_ANALYTICS_TOKEN.
+- Google Analytics for website visitors (scripts/ga_report.py); Cloudflare
+  left the digest on 2026-10-19 (Hidde: "keep GA and get rid of cloudflare").
 - Search Console via OAuth refresh token (GSC_CLIENT_ID / GSC_CLIENT_SECRET /
   GSC_REFRESH_TOKEN), authorised by Hidde 2026-07-27. Data lags 2-3 days.
 
@@ -27,7 +28,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_MD = os.path.join(ROOT, "DATA.md")
-ZONE_NAME = "ancienttrees.app"
 
 # Hidde, 2026-10-12: "the grouping pages ... are no longer interesting neither
 # are the pages that lose and win unless we have google coming back again. so
@@ -40,7 +40,6 @@ ZONE_NAME = "ancienttrees.app"
 # the site recovering, which is also when recovery mode ends.
 GOOGLE_DETAIL = False
 PH_BASE = "https://eu.posthog.com"
-ACCOUNT_TAG = "949aa102070e5f296c9cc0d5bc1e1891"  # Cloudflare account for Web Analytics (RUM)
 
 PREAMBLE = """# DATA — the daily numbers, and what they mean
 
@@ -1279,296 +1278,6 @@ def clean_query(q):
     return " ".join(q.split())[:40] or "(operators only)"
 
 
-def fetch_cloudflare(token, today):
-    """Per-day zone numbers for the last 8 days, oldest first, or [] if the
-    zone is gone.
-
-    This has always been structurally zero (see the note beside zone_block
-    below: nothing is proxied, DNS lives at the registrar and points straight
-    at GitHub Pages), and on 2026-08-18 Cloudflare removed the domain from the
-    account entirely because its nameservers were never pointed there. From
-    then on this raised, and the raise killed the whole digest before it could
-    write a line: on 2026-08-19 the daily numbers simply stopped, and Search
-    Console, the signups and the beacon went unreported with them.
-
-    So a missing zone is now an empty list rather than an exception. The one
-    number anybody quotes comes from fetch_rum(), which is ACCOUNT-scoped Web
-    Analytics and is unaffected by any of this; it kept working throughout.
-    """
-    zones = api(
-        "https://api.cloudflare.com/client/v4/zones?name=" + ZONE_NAME,
-        token=token,
-    )
-    if not zones.get("success") or not zones.get("result"):
-        print("NOTE: no Cloudflare zone for %s, so no proxied-traffic block. "
-              "Expected since 2026-08-18; the beacon numbers are unaffected." % ZONE_NAME)
-        return []
-    tag = zones["result"][0]["id"]
-
-    query = {
-        "query": """
-query($tag: String!, $since: String!, $until: String!) {
-  viewer { zones(filter: {zoneTag: $tag}) {
-    httpRequests1dGroups(limit: 10, filter: {date_geq: $since, date_lt: $until},
-                         orderBy: [date_ASC]) {
-      dimensions { date }
-      sum { requests pageViews countryMap { clientCountryName requests } }
-      uniq { uniques }
-    } } }
-}""",
-        "variables": {
-            "tag": tag,
-            "since": (today - datetime.timedelta(days=8)).isoformat(),
-            "until": today.isoformat(),
-        },
-    }
-    g = api("https://api.cloudflare.com/client/v4/graphql", query, token=token)
-    if g.get("errors"):
-        raise RuntimeError("graphql: %s" % json.dumps(g["errors"]))
-    return g["data"]["viewer"]["zones"][0]["httpRequests1dGroups"]
-
-
-def fetch_rum(token, today, window=8):
-    """Cookieless Web Analytics (beacon) numbers, PEOPLE only.
-    Returns text; never raises past itself.
-
-    The beacon runs in any browser that executes JavaScript, and headless
-    crawlers do. Measured 2026-10-01 after Google went to zero: 649 of 735
-    pageviews in three days had no referrer, were one page per visit, 89%
-    desktop on Firefox and Edge, from Brazil, Singapore, India, Bangladesh and
-    Pakistan, one hit per page across the whole site. Singapore had been our
-    "first country" since mid-September for the same reason. So every figure
-    here except the Bots column leaves out a DESKTOP pageview with NO
-    referrer. That costs the odd real desktop bookmark, which at our volume
-    is noise beside a crawler sending hundreds a day (Hidde: "off course wtf").
-    """
-    q = {
-        "query": """
-query($tag: String!, $since: Date!, $until: Date!) {
-  viewer { accounts(filter: {accountTag: $tag}) {
-    days: rumPageloadEventsAdaptiveGroups(limit: 40,
-        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [date_ASC]) {
-      count dimensions { date } sum { visits }
-    }
-    paths: rumPageloadEventsAdaptiveGroups(limit: 12,
-        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [count_DESC]) {
-      count dimensions { requestPath }
-    }
-    refs: rumPageloadEventsAdaptiveGroups(limit: 25,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [count_DESC]) {
-      count dimensions { refererHost }
-    }
-    countries: rumPageloadEventsAdaptiveGroups(limit: 5,
-        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [count_DESC]) {
-      count dimensions { countryName }
-    }
-    bots: rumPageloadEventsAdaptiveGroups(limit: 40,
-        filter: {date_geq: $since, date_lt: $until, refererHost: "", deviceType: "desktop"},
-        orderBy: [date_ASC]) {
-      count dimensions { date } sum { visits }
-    }
-    gdays: rumPageloadEventsAdaptiveGroups(limit: 1500,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
-      count dimensions { date refererHost }
-    }
-    devices: rumPageloadEventsAdaptiveGroups(limit: 3,
-        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [count_DESC]) {
-      count dimensions { deviceType }
-    }
-    perf: rumPerformanceEventsAdaptiveGroups(limit: 1,
-        filter: {date_geq: $since, date_lt: $until}) {
-      quantiles { pageLoadTimeP50 pageLoadTimeP90 }
-    }
-  } }
-}""",
-        "variables": {"tag": ACCOUNT_TAG,
-                      "since": (today - datetime.timedelta(days=window)).isoformat(),
-                      "until": today.isoformat()},
-    }
-    g = api("https://api.cloudflare.com/client/v4/graphql", q, token=token)
-    if g.get("errors"):
-        raise RuntimeError("rum graphql: %s" % json.dumps(g["errors"]))
-    acct = g["data"]["viewer"]["accounts"]
-    if not acct:
-        return "Web Analytics (beacon): no account data visible to this token."
-    days, paths = acct[0]["days"], acct[0]["paths"]
-    refs = acct[0].get("refs") or []
-    countries = acct[0].get("countries") or []
-    devices = acct[0].get("devices") or []
-    if not days:
-        return "Web Analytics (beacon): live since 2026-07-27, no visits recorded yet."
-    # Same table treatment as the search rows, plus the warning that belongs
-    # beside every one of these numbers: Cloudflare's beacon buckets counts to
-    # the nearest ten, so "10 visits" is anywhere from 5 to 14 and "0" is not
-    # zero. At our volume that makes the per-day column decorative and the
-    # window total the only figure worth reading. Search Console does not
-    # round, which is why it, and not this, is the series to steer by.
-    # From Google per day, added 2026-10-01: Google demoted the whole site on
-    # 09-28 and the only per-day proof that it was real rather than a Search
-    # Console lag came from this beacon, read by hand three days late. It is
-    # independent of Search Console, so it is the column that says on the first
-    # morning whether search traffic actually arrived.
-    # Every search engine gets its own column (Hidde, 2026-10-15: "why isnt
-    # duckduckgo and yahoo added"). Only Google and Bing have a console with
-    # impressions; DuckDuckGo and Yahoo publish none, and both show results
-    # largely from Bing's index, so an arrival here is all we can know of them.
-    engines = {name: {} for name, _hosts in SEARCH_ENGINES}
-    for r in acct[0].get("gdays") or []:
-        host = (r["dimensions"].get("refererHost") or "").lower()
-        for name, hosts in SEARCH_ENGINES:
-            if any(h in host for h in hosts):
-                dd = r["dimensions"]["date"]
-                engines[name][dd] = engines[name].get(dd, 0) + r["count"]
-                break
-    google = engines["Google"]
-    HEADLINE["search"] = (sum(sum(v.values()) for v in engines.values()), None)
-    # NO BOT COLUMN, EVER (Hidde, 2026-10-02: "can you please never ever count
-    # en show bots again evr"). The crawler pageviews are filtered out of
-    # every query above and that is the whole of their appearance here: the
-    # table counts people and says nothing about what it left out. The one
-    # internal use that survives is subtracting them from the no-referrer row
-    # below, so that line counts people too; it never prints them.
-    names = [name for name, _hosts in SEARCH_ENGINES]
-    rows = ["| Day | Visits | Pageviews | %s |" % " | ".join("From " + n for n in names),
-            "|---|---:|---:|%s" % ("---:|" * len(names))]
-    for d in days:
-        dd = d["dimensions"]["date"]
-        rows.append("| %s | %d | %d | %s |" % (
-            dd[5:], d["sum"]["visits"], d["count"],
-            " | ".join(str(engines[n].get(dd, 0)) for n in names)))
-    rows.append("| **window** | **%d** | **%d** | %s |" % (
-        sum(d["sum"]["visits"] for d in days), sum(d["count"] for d in days),
-        " | ".join("**%d**" % sum(engines[n].values()) for n in names)))
-    trend = "\n" + "\n".join(rows)
-    top = "; ".join("%s (%d)" % (p["dimensions"]["requestPath"], p["count"]) for p in paths)
-    def _dim(rows, key, skip=("", None)):
-        out = []
-        for r in rows:
-            v = r["dimensions"].get(key)
-            if v in skip:
-                v = "(direct)" if key == "refererHost" else "(unknown)"
-            out.append("%s (%d)" % (v, r["count"]))
-        return "; ".join(out) if out else "none recorded"
-    perf = acct[0].get("perf") or []
-    speed = ""
-    if perf and perf[0].get("quantiles"):
-        qq = perf[0]["quantiles"]
-        # Cloudflare's RUM returns page load time in MICROseconds. We printed
-        # it as milliseconds for weeks, so the dashboard read "p50 519000ms",
-        # which is eight and a half minutes and would mean the site never
-        # loads. Nobody flinched, which is the point: CLAUDE.md already tells
-        # us to sanity-check every numeric field against the physical world,
-        # and that rule was written for other people's registers rather than
-        # for our own dashboard.
-        speed = "\n- Page load (8d): p50 %dms, p90 %dms" % (
-            (qq.get("pageLoadTimeP50") or 0) / 1000,
-            (qq.get("pageLoadTimeP90") or 0) / 1000)
-    # How much of the site people actually walk through, which is the closest
-    # thing to navigation this beacon can give (Hidde, 2026-08-22: "hoe ze
-    # navigeren"). A pageview whose referrer is our own host is somebody
-    # moving from one of our pages to another; one from a search engine or
-    # nothing at all is an arrival. Cloudflare's cookieless beacon carries no
-    # session, so page-to-page paths do not exist to be reported: this ratio
-    # and pages-per-visit are the honest substitutes.
-    # The bots all sit in the no-referrer row; take them out of it so the
-    # Referrers line counts people like every other line here.
-    nbots = sum(b["count"] for b in acct[0].get("bots") or [])
-    for r in refs:
-        if not r["dimensions"].get("refererHost"):
-            r["count"] = max(0, r["count"] - nbots)
-            break
-    internal = sum(r["count"] for r in refs
-                   if "ancienttrees.app" in (r["dimensions"].get("refererHost") or ""))
-    total_pv = sum(r["count"] for r in refs) or 1
-    nav = ("\n- Moved between our own pages: %d of %d pageviews (%.0f%%); the rest arrived "
-           "from search or straight in. Cookieless means no session, so which page led to "
-           "which cannot be measured." % (internal, total_pv, 100.0 * internal / total_pv))
-    return ("Web Analytics (beacon, cookieless), people only.\n"
-            "Counts are bucketed to the nearest ten by Cloudflare; read the window, not the day.\n%s\n- Top paths: %s\n"
-            "- Referrers: %s%s\n- Countries: %s\n- Devices: %s%s"
-            % (trend, top, _dim(refs, "refererHost"), nav,
-               _dim(countries, "countryName"), _dim(devices, "deviceType"), speed)
-            + "\n\n" + referrers_section(refs)
-            + "".join(_weekly([backlinks_section()])))
-
-
-# The engines the Cloudflare table splits arrivals by, name and referrer hosts.
-SEARCH_ENGINES = (
-    ("Google", ("google.", "googlequicksearchbox")),
-    ("Bing", ("bing.",)),
-    ("DuckDuckGo", ("duckduckgo.",)),
-    ("Yahoo", ("yahoo.",)),
-    ("Ecosia", ("ecosia.",)),
-)
-
-
-# Hosts that are us, or a search engine sending us traffic we already measure
-# in Search Console. Neither is a link somebody chose to give us.
-NOT_A_BACKLINK = (
-    "ancienttrees.app", "google.", "bing.", "duckduckgo.", "ecosia.", "yahoo.",
-    "yandex.", "baidu.", "search.brave.", "startpage.", "qwant.",
-)
-
-# The assistants, kept separate from both lists above because an arrival from
-# one is neither a search click nor a backlink: it means a model answered
-# somebody's question and cited us, which is the only evidence of AI
-# visibility this project can currently gather at all.
-#
-# Everything else about AI findability is unmeasurable from here and it is
-# worth writing down why, so nobody spends a window rediscovering it. The site
-# is served straight from GitHub Pages with no proxy in front, so there are no
-# access logs and a crawl by GPTBot, ClaudeBot or PerplexityBot leaves no
-# trace we can see. Cloudflare Web Analytics is a JavaScript beacon and bots
-# do not run JavaScript, so it cannot see them either. That leaves the human
-# who clicks a citation, which is what this list catches.
-#
-# It is deliberately a named line rather than a host in the referrer list: the
-# referrer pull was limit 5 until 2026-08-16, and with direct, self, google
-# and one corporate proxy filling those slots, the first arrival from an
-# assistant would have been cut off before anybody saw it. The limit is 25
-# now, and this line names the answer instead of leaving it to be spotted.
-AI_SOURCES = (
-    "chatgpt.com", "chat.openai.com", "openai.com", "perplexity.ai",
-    "claude.ai", "copilot.microsoft.com", "gemini.google.com",
-    "bard.google.com", "you.com", "phind.com", "poe.com",
-)
-
-
-def referrers_section(refs):
-    """The external referrers, which is the closest thing to a backlink report
-    we can automate.
-
-    Google's Search Console API has no links endpoint at all: the Links report
-    exists only in the web interface, confirmed 2026-08-07. So the number of
-    sites linking to us cannot be pulled here, and the digest says so and links
-    straight to the report rather than pretending otherwise.
-
-    What this line does measure is better in one way and worse in another: a
-    referrer is a link somebody actually followed, which is traffic rather than
-    an index entry, but it only sees links that get clicked."""
-    external, ai = [], []
-    for r in refs or []:
-        host = (r["dimensions"].get("refererHost") or "").lower()
-        if not host:
-            continue
-        if any(a in host for a in AI_SOURCES):
-            ai.append("%s (%d)" % (host, r["count"]))
-            continue
-        if any(b in host for b in NOT_A_BACKLINK):
-            continue
-        external.append("%s (%d)" % (host, r["count"]))
-    line = "; ".join(external) if external else "none yet"
-    ai_line = ("\nAI: arrivals from an assistant that cited us: %s"
-               % ("; ".join(ai) if ai else "none yet"))
-    # The standing "read your backlinks by hand" instruction that used to sit
-    # here was printed identically every morning for a fortnight, which is the
-    # definition of a line nobody reads. Ahrefs Webmaster Tools answers it now,
-    # and the honest state as of 2026-08-09 is that our 298 referring domains
-    # are a spam network, every one nofollow, so the count is not the metric.
-    return ("Links: external referrers (a link somebody actually clicked): %s%s"
-            % (line, ai_line))
-
-
 def backlinks_section():
     """The other half of the link picture, and the half the beacon cannot see.
 
@@ -2439,71 +2148,6 @@ def feedback_section(today):
     elif not ours and not anon:
         out += ["", "- %d rows from %d accounts." % (len(rows), len(per_acct))]
     return "\n".join(out)
-
-
-def funnel_section(today, cf_token):
-    """Block 2: the same journey as rates rather than levels.
-
-    Levels tell you how big yesterday was; rates tell you which step is
-    leaking, and those need opposite work. 78 clicks and 0 actions is a
-    fact you cannot act on. "2.1% of people who see us click, 1.6 pages per
-    visit, 0% of visits do anything" points at one step.
-
-    Two weeks against the two before, because a day of this is noise."""
-    import audience as A
-    rows = []
-
-    def rate(a, b):
-        return (100.0 * a / b) if b else 0.0
-
-    q = A.gsc_client(today)
-    if q is not None:
-        def window(d0, d1):
-            r = q([], 1, {"startDate": (today - datetime.timedelta(days=d0)).isoformat(),
-                          "endDate": (today - datetime.timedelta(days=d1)).isoformat()})
-            return (r[0]["clicks"], r[0]["impressions"]) if r else (0, 0)
-        c1, i1 = window(7, 0)
-        c0, i0 = window(14, 7)
-        rows.append("- Seen to clicked: %.1f%% (%d of %d) vs %.1f%% the week before"
-                    % (rate(c1, i1), c1, i1, rate(c0, i0)))
-    if cf_token:
-        try:
-            a, since = A.rum(cf_token, today)
-        except Exception:
-            a = None
-        if a:
-            days = a.get("days") or []
-            pv = sum(d["count"] for d in days)
-            vis = sum(d["sum"]["visits"] for d in days)
-            rows.append("- Pages per visit: %.1f (%d visits, %d pageviews since %s)"
-                        % ((pv / vis) if vis else 0, vis, pv, since))
-            key = os.environ.get("SUPABASE_SERVICE_KEY")
-            if key and vis:
-                try:
-                    ev, _ = _supa("/rest/v1/events?select=id&created_at=gte.%sT00:00:00Z"
-                                  % since, key)
-                    rows.append("- Visits that did something: %.1f%% (%d actions on %d visits)"
-                                % (rate(len(ev), vis), len(ev), vis))
-                    # The watchdog that was missing, added 2026-08-16 the day
-                    # the beacon bug was found. Every funnel event had been
-                    # silently dropped since launch (sendBeacon cannot
-                    # preflight a Blob of type application/json, so the request
-                    # died and sendBeacon still returned true), and the zeros
-                    # were read for five weeks as a fact about users. A number
-                    # that is exactly zero on hundreds of visits is the
-                    # signature of a broken instrument, not of an audience, so
-                    # the digest says so itself rather than waiting for
-                    # somebody to wonder.
-                    if not ev and vis >= 100:
-                        rows.append("- **WARNING: %d visits and not one event of "
-                                    "any kind. At this volume that reads as a "
-                                    "broken recorder rather than as user "
-                                    "behaviour. Check at.track() reaches the "
-                                    "events table before drawing any conclusion "
-                                    "from a zero above.**" % vis)
-                except Exception:
-                    pass
-    return "**The funnel, as rates**\n" + ("\n".join(rows) if rows else "- no data")
 
 
 def audience_section(today, cf_token, short=False):
@@ -3437,11 +3081,10 @@ def bing_section(_today=None):
 
 
 def ga_section(_today=None):
-    """Google Analytics, beside Cloudflare's site table (Hidde, 2026-10-12:
-    "id rather use google analytics im used to it"). It sees only visitors who
-    accepted the cookie bar, so it is a sample beside Cloudflare's count until
-    the two have run side by side. Without the GA_* secrets it prints one line,
-    like Bing's block (scripts/ga_report.py)."""
+    """Google Analytics' full week, Mondays (Hidde, 2026-10-12: "id rather use
+    google analytics im used to it"; 2026-10-19 the site's one visitor source).
+    It sees only visitors who accepted the cookie bar. Without the GA_* secrets
+    it prints one line, like Bing's block (scripts/ga_report.py)."""
     sys.path.insert(0, os.path.dirname(__file__))
     from ga_report import fetch, lines
     head = "**Google Analytics** (last 7 days, visitors who accepted cookies)"
@@ -3620,40 +3263,6 @@ def _week_of(iso, today):
     return 0 if 1 <= age <= 7 else (1 if 8 <= age <= 14 else None)
 
 
-def _hl_web(today, token):
-    """Website visits and visits from search, this week and the week before.
-    Cloudflare's beacon, people only (the same desktop-without-referrer cut as
-    fetch_rum), bucketed by Cloudflare to tens, so read it as a size."""
-    q = {"query": """
-query($tag: String!, $since: Date!, $until: Date!) {
-  viewer { accounts(filter: {accountTag: $tag}) {
-    days: rumPageloadEventsAdaptiveGroups(limit: 40,
-        filter: {AND: [{date_geq: $since}, {date_lt: $until}, {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}, orderBy: [date_ASC]) {
-      dimensions { date } sum { visits }
-    }
-    gdays: rumPageloadEventsAdaptiveGroups(limit: 3000,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
-      count dimensions { date refererHost }
-    }
-  } }
-}""", "variables": {"tag": ACCOUNT_TAG,
-                     "since": (today - datetime.timedelta(days=14)).isoformat(),
-                     "until": today.isoformat()}}
-    g = api("https://api.cloudflare.com/client/v4/graphql", q, token=token)
-    acct = g["data"]["viewer"]["accounts"][0]
-    visits, search = [0, 0], [0, 0]
-    for d in acct["days"]:
-        w = _week_of(d["dimensions"]["date"], today)
-        if w is not None:
-            visits[w] += d["sum"]["visits"]
-    for r in acct["gdays"]:
-        host = (r["dimensions"].get("refererHost") or "").lower()
-        w = _week_of(r["dimensions"]["date"], today)
-        if w is not None and any(h in host for _n, hosts in SEARCH_ENGINES for h in hosts):
-            search[w] += r["count"]
-    return visits, search
-
-
 def _hl_downloads(_today):
     """First-time App Store downloads, Apple's own count, by week."""
     if not os.environ.get("ASC_KEY_ID"):
@@ -3763,7 +3372,7 @@ def _hl_app(_today):
             "back30": [(nb[1], nb[0]), (pb[1], pb[0])]}
 
 
-def headline_section(today, token=None):
+def headline_section(today):
     """The conclusion on top: Hidde's seven numbers, this week against the week
     before, and one sentence reading them.
 
@@ -3776,9 +3385,13 @@ def headline_section(today, token=None):
     Take me there left the headline: a person browsing from home and saving a
     tree for later is doing what we want. Each number is fetched here on its
     own, so a source that fails today costs one row, never the table. At our
-    volumes every row is a handful: counts, never trends."""
+    volumes every row is a handful: counts, never trends. Website visitors
+    come from Google Analytics (Hidde, 2026-10-19: "i want to keep GA and get
+    rid of cloudflare"), which knows new from returning and search from the
+    rest, and counts only the people who accepted the cookie bar."""
+    import ga_report
     H = {}
-    for name, fn in (("web", lambda: _hl_web(today, token) if token else None),
+    for name, fn in (("web", ga_report.week_numbers),
                      ("downloads", lambda: _hl_downloads(today))):
         try:
             H[name] = fn()
@@ -3800,7 +3413,7 @@ def headline_section(today, token=None):
 
     web = H.get("web")
     rows = [
-        ("Website visits", "people", web[0] if web else None),
+        ("New website visitors", "people", web[0] if web else None),
         ("... of which from search", "Google's recovery", web[1] if web else None),
         ("App downloads (first-time)", "people", H.get("downloads")),
         ("New accounts", "people", H.get("accounts")),
@@ -3814,81 +3427,15 @@ def headline_section(today, token=None):
     for label, why, v in rows:
         out.append("| %s | %s | %s | %s |" % (label, why, cell(v[0]) if v else "-",
                                             cell(v[1]) if v else "-"))
-    if web:
-        out.append("")
-        out.append("Website visits are bucketed to tens by Cloudflare. The 30-day row is "
-                   "the phones that arrived five weeks ago, so it moves slowly.")
+    out.append("")
+    out.append("Website visitors are Google Analytics' count, so only people who accepted "
+               "the cookie bar. The 30-day row is the phones that arrived five weeks ago, "
+               "so it moves slowly.")
     return "\n".join(out)
 
 
-def build_entry(days, today, gsc_text):
+def build_entry(today, gsc_text):
     yday = today - datetime.timedelta(days=1)
-    by_date = {d["dimensions"]["date"]: d for d in days}
-    y = by_date.get(yday.isoformat())
-    b = by_date.get((yday - datetime.timedelta(days=1)).isoformat())
-
-    def n(day, *path):
-        cur = day
-        for p in path:
-            if cur is None:
-                return 0
-            cur = cur.get(p)
-        return cur or 0
-
-    y_views, y_uniq, y_req = n(y, "sum", "pageViews"), n(y, "uniq", "uniques"), n(y, "sum", "requests")
-    b_views, b_uniq = n(b, "sum", "pageViews"), n(b, "uniq", "uniques")
-
-    def delta(cur, prev):
-        d = cur - prev
-        return "%+d" % d if prev or cur else "0"
-
-    trend = "  ".join(
-        "%s:%d" % (d["dimensions"]["date"][5:], n(d, "sum", "pageViews")) for d in days
-    ) or "no data"
-
-    countries = {}
-    for c in (n(y, "sum", "countryMap") or []) if y else []:
-        countries[c["clientCountryName"]] = c["requests"]
-    top = sorted(countries.items(), key=lambda kv: -kv[1])[:5]
-    top_line = ", ".join("%s %d" % kv for kv in top) or "none recorded"
-
-    week_uniques = sum(n(d, "uniq", "uniques") for d in days)
-    if y_uniq < 100:
-        conclusion = (
-            "Volume is still noise-level (%d unique visitors yesterday, %d over the "
-            "window): direction is not readable and no strategic conclusion should "
-            "be drawn from these numbers yet." % (y_uniq, week_uniques)
-        )
-    else:
-        half = len(days) // 2
-        first = sum(n(d, "uniq", "uniques") for d in days[:half]) or 1
-        second = sum(n(d, "uniq", "uniques") for d in days[half:])
-        conclusion = (
-            "Second half of the window vs first: %d vs %d unique visitors "
-            "(%+.0f%%). A run reading this should replace this templated line "
-            "with a sharper one when something real happens." % (second, first, 100.0 * (second - first) / first)
-        )
-
-    # The zone block is structurally zero and always will be: it counts
-    # requests through Cloudflare's proxy, and this site's DNS lives at the
-    # registrar so no request ever passes through it (the "Invalid
-    # nameservers" notice in the dashboard is the same fact). Printed only
-    # when a number actually appears, so the report stops carrying a
-    # guaranteed zero every day (weekly analysis, 2026-08-02).
-    zone_block = ""
-    if y_req or y_views or y_uniq:
-        zone_block = """Cloudflare zone (proxied traffic), %s:
-- Page views: %d (day before: %d, %s)
-- Unique visitors: %d (day before: %d, %s)
-- Requests total: %d
-- Page views, last days: %s
-- Top countries by requests: %s
-
-""" % (ZONE_NAME,
-       y_views, b_views, delta(y_views, b_views),
-       y_uniq, b_uniq, delta(y_uniq, b_uniq),
-       y_req, trend, top_line)
-
     # The front door. Most mornings the honest answer is that nothing here
     # needs him, and saying so plainly is what keeps the report readable on
     # the mornings when something does.
@@ -3901,8 +3448,8 @@ def build_entry(days, today, gsc_text):
 
 %s
 
-%s%s
-""" % (yday.isoformat(), verdict, zone_block, gsc_text)
+%s
+""" % (yday.isoformat(), verdict, gsc_text)
 
 
 def _selftest_own_searches():
@@ -3957,11 +3504,6 @@ def _maybe_selftest():
 
 
 def main():
-    token = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
-    if not token:
-        print("SKIP: CLOUDFLARE_ANALYTICS_TOKEN not set")
-        return 0
-
     today = datetime.datetime.now(datetime.timezone.utc).date()
     global MONDAY
     MONDAY = today.weekday() == 0 or "--monday" in sys.argv
@@ -3986,16 +3528,6 @@ def main():
         with open(DATA_MD, "w") as f:
             f.write(existing)
         print("Entry for %s replaced (--force)" % yday)
-
-    try:
-        days = fetch_cloudflare(token, today)
-    except (RuntimeError, urllib.error.URLError, KeyError) as e:
-        # Never fatal. This block is a bonus; the numbers that matter come from
-        # Search Console, Supabase and the beacon, and losing all of those
-        # because a proxy we do not use went away is how 2026-08-19 lost its
-        # digest entirely.
-        print("NOTE: Cloudflare zone fetch failed (%s); carrying on without it." % e)
-        days = []
 
     # The hierarchy, agreed with Hidde 2026-08-09. The old entry was a
     # collection: fifteen true things in the order they happened to be
@@ -4072,9 +3604,12 @@ def main():
         if bing_text:
             blocks.append(bing_text)
 
-    # Who visits, from where and on what, moves slowly: Mondays only.
-    weekly_block(audience_section, today, token, False)
-    weekly_block(fetch_rum, token, today)
+    # Who visits, from where and on what, moves slowly: Mondays only. Google
+    # Analytics is the site's one visitor source since 2026-10-19 (Hidde: "i
+    # want to keep GA and get rid of cloudflare").
+    weekly_block(audience_section, today, None, False)
+    weekly_block(ga_section, today)
+    weekly_block(backlinks_section)
 
     # The night run's own lists, below a line (2026-10-19).
     machine = []
@@ -4090,7 +3625,7 @@ def main():
     # The conclusion goes on top (Hidde, 2026-10-15), built last because it
     # reads the numbers the blocks above fetched.
     try:
-        blocks.insert(0, headline_section(today, token))
+        blocks.insert(0, headline_section(today))
     except Exception as e:
         blocks.insert(0, "headline_section: failed today (%s)." % str(e)[:90])
     # Above even the headline: a crash that needs a new build now.
@@ -4111,7 +3646,7 @@ def main():
 
     # The old one-line conclusion at the bottom (Google's freshest day, "no
     # strategic conclusions") gave way to headline_section on top, 2026-10-15.
-    entry = build_entry(days, today, gsc_text)
+    entry = build_entry(today, gsc_text)
     body = existing[len(PREAMBLE):] if existing.startswith(PREAMBLE) else (
         "\n" + existing if existing else ""
     )
