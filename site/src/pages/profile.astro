@@ -24,6 +24,7 @@ import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { myTreesMapScript, mapHead } from "../lib/map";
 import { icon } from "../lib/icons";
+import { SHEET_JS } from "../lib/sheet-js";
 import { EARLY_ADOPTER_UNTIL } from "../lib/early-adopter";
 
 const canonical = `${BASE_URL}/profile`;
@@ -89,7 +90,7 @@ const LOCK = icon("lock-simple", "bold", "ic");
   .pp-private :global(svg) { width: 20px; height: 20px; flex: none; }
   .pp-empty { grid-column: 1 / -1; margin: 0; color: var(--ink-mid); font-size: 15px; }
 </style>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + `
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + SHEET_JS + `
 <script>
 (function() {
   var C = window.atCollection;
