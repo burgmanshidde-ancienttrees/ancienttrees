@@ -1,4 +1,7 @@
--- PENDING since 2026-10-19: the public profile. Paste everything below into
+-- APPLIED 2026-10-19 by Hidde (checked: rpc/public_profile answers, profiles and
+-- follows refuse the public key). Nothing pending.
+--
+-- The public profile. Paste everything below into
 -- Supabase, SQL editor, Run. Safe to run twice. The same lines are in
 -- public-profiles.sql, which explains every choice.
 --
