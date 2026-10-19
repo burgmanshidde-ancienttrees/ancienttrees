@@ -11,7 +11,15 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
-## 2026-10-19 night run (window from 21:39 UTC): nothing published
+## 2026-10-19 night run (window from 21:56 UTC): nothing published, no tree added
+
+- Rung 1: one reader photograph of an unmapped tree (European Beech, Freiburg, ed90210d). corroborate.py: no register entry within 100 m, no article within 300 m. The photograph is not on this runner (out/sightings/ empty), so the verdict stays open until a run can look at it.
+- Rung 2: the failed deploys were feedshape.py refusing null photo credits; 8a9ad1a24 (empty strings) is the fix and the 21:44 dispatched deploy carries it, still in progress at 22:15.
+- Spokane claimed and released: one unmined candidate, under the six-candidate minimum (wall 48h). Munich refused: full (63/60). The writable pile is mostly small Dutch trees; the few other written ones (fdl_001, ftw_018, std_001) were not merged this run.
+- Photo recheck on the London plus seven frozen-roster cities (47 trees): one new candidate (ams_028), nothing to judge. Lane is near empty.
+- For Hidde: nothing.
+
+## 2026-10-19 night run (earlier, window from 21:39 UTC): nothing published
 
 Rung 1: one app sighting, ed90210d (European Beech, Freiburg, 47.9543 7.8067). No register entry within 100 m, no encyclopaedia article within 300 m. Its photograph is not on this runner (out/sightings/ has no file), so the verdict stays open rather than judged blind. Rung 4: `photo_hunt.py --recheck --city london` found 0 new candidates for the 7 photo-less trees. The writable pile is three finished trees (fdl_001, ftw_018, std_001) and prepare.py asks for a verify refill (1026 leads short only a source); I dispatched no verify agent this run. Not done: no trees added, no commits besides this entry. Also open from the session brief: the Build and deploy site failure (1 in a row) and 31 photographs not yet vendored.
 <!-- archive-index -->
