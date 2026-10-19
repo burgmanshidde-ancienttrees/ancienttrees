@@ -532,6 +532,59 @@ def check_the_digest_never_shows_bots():
     return out
 
 
+def check_the_headline_never_judges_take_me_there():
+    """The headline never grades a first day by Take me there, and "back" is 30 days.
+
+    Hidde, 2026-10-19, after a session quoted the old activation table and
+    called "2 of 14 tapped Take me there on day one" the weakest link: "people
+    are often scouting for their holidays and are way too far away for that
+    button". A person browsing from the sofa and saving a tree for a trip is
+    doing what we want, and a week between visits punishes normal use (trees
+    are a weekend and holiday thing). So the headline table carries no
+    "Take me there" row, no "first day" or "day one" rate, no "weakest link"
+    sentence, and its returning-phones row says 30 days, never a week. Read in
+    headline_section's own code and in DATA.md's newest entry dated after the
+    ruling (so a digest written by an older checkout is caught the next
+    morning). Removing this check needs Hidde.
+    """
+    out = []
+    root = Path(__file__).resolve().parent.parent
+    bad = ("take me there", "first day:", "day one", "weakest link", "weakest row",
+           "back within a week")
+    src = (root / "scripts/daily_digest.py").read_text(encoding="utf-8")
+    m = re.search(r"^def headline_section\(.*?(?=^def )", src, re.M | re.S)
+    if not m:
+        out.append("scripts/daily_digest.py: headline_section() is gone; his numbers on top "
+                   "are the digest (Hidde, 2026-10-19).")
+    else:
+        body = m.group(0)
+        body = body[body.find('"""', body.find('"""') + 3) + 3:]  # skip the docstring
+        for i, line in enumerate(body.splitlines(), 1):
+            low = line.lower()
+            if low.lstrip().startswith("#"):
+                continue
+            if any(b in low for b in bad):
+                out.append(f"headline_section, line {i}: grades the first day or a week "
+                           f"({line.strip()[:70]!r}). Take me there and day-one rates are not "
+                           "headline numbers; back is 30 days (Hidde, 2026-10-19).")
+    data = root / "DATA.md"
+    if data.is_file():
+        text = data.read_text(encoding="utf-8")
+        heads = [m.start() for m in re.finditer(r"^## (\d{4}-\d{2}-\d{2})", text, re.M)]
+        if heads:
+            newest = text[heads[0]:heads[1]] if len(heads) > 1 else text[heads[0]:]
+            date = re.match(r"## (\d{4}-\d{2}-\d{2})", newest).group(1)
+            if date >= "2026-10-20":
+                head = newest.split("**Trees readers sent")[0]
+                for i, line in enumerate(head.splitlines(), 1):
+                    low = line.lower()
+                    if any(b in low for b in bad):
+                        out.append(f"DATA.md newest entry, line {i}: the headline grades Take me "
+                                   f"there, a first day or a week ({line.strip()[:70]!r}). "
+                                   "Scouting from far away is use, not a miss (Hidde, 2026-10-19).")
+    return out
+
+
 def check_the_digest_page_shows_readers_words():
     """The local digest page shows what a reader wrote, not "read it in the database".
 
@@ -3043,6 +3096,7 @@ def main():
         check_scripts_are_valid_python,
         check_no_strategy_in_workflows,
         check_the_digest_never_shows_bots,
+        check_the_headline_never_judges_take_me_there,
         check_the_digest_page_shows_readers_words,
         check_every_site_route_is_claimed_or_excluded,
         check_app_downloads_are_their_own_block,
@@ -3233,6 +3287,7 @@ def main():
 
     failures += check_no_strategy_in_workflows()
     failures += check_the_digest_never_shows_bots()
+    failures += check_the_headline_never_judges_take_me_there()
     failures += check_the_digest_page_shows_readers_words()
     failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
