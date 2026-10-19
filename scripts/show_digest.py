@@ -15,13 +15,70 @@ http://127.0.0.1:8766/digest.html. See inspect_readers.py's docstring for the
 server (four lines; /private/tmp can be cleared on a reboot).
 """
 import datetime
+import hashlib
 import html
 import os
 import re
+import sys
+import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "out", "digest")
 PREVIEW = "/private/tmp/claude-501/-Users-hidde-Documents-Ancienttrees/preview/inspect"
+WITHHELD = re.compile(r"^(\d+) chars, read it in the database$")
+
+
+def readers_words(md, day):
+    """Put a reader's own words where DATA.md says "read it in the database".
+
+    Hidde, 2026-10-19, on "The Yew of Campo Santana | correction sent in |
+    49 chars, read it in the database": "please also show me these things
+    always with digest". DATA.md is public, so daily_digest.py withholds what
+    a reader typed; this page is local, so it fetches the words and shows
+    them. A row is matched on its day, tree, kind, account marker and length,
+    the same fields daily_digest.readers_said() printed.
+    """
+    if "read it in the database" not in md:
+        return md, 0, 0
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import inbox
+    key = inbox.load_key()
+    if not key:
+        return md, 0, -1
+    since = (datetime.date.fromisoformat(day) - datetime.timedelta(days=10)).isoformat()
+    try:
+        rows = inbox.get("/rest/v1/submissions?select=created_at,kind,city,tree,why,user_id"
+                         "&created_at=gte.%s&order=created_at.asc"
+                         % urllib.parse.quote(since + "T00:00:00"), key)
+    except Exception as e:
+        print("reader words: database unreadable (%s)" % str(e)[:60])
+        return md, 0, -1
+    found = {}
+    for r in rows or []:
+        why = (r.get("why") or "").strip()
+        uid = r.get("user_id")
+        who = hashlib.sha1(str(uid).encode()).hexdigest()[:4] if uid else "no acct"
+        k = (str(r.get("created_at"))[5:10], (r.get("tree") or r.get("city") or "-")[:34],
+             "%s sent in" % (r.get("kind") or "?"), len(why), who)
+        found[k] = why
+    out, shown, missing = [], 0, 0
+    for line in md.splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")] if line.startswith("|") else []
+        m = WITHHELD.match(cells[3]) if len(cells) >= 5 else None
+        if m:
+            words = found.get((cells[0], cells[1], cells[2], int(m.group(1)), cells[4]))
+            if words is None:
+                missing += 1
+            else:
+                cells[3] = "“%s”" % re.sub(r"\s+", " ", words).replace("|", "/")
+                line = "| " + " | ".join(cells) + " |"
+                shown += 1
+        out.append(line)
+    text = "\n".join(out)
+    if shown:
+        text = text.replace("structure only; the words stay in the database",
+                            "their words fetched from the database for this page")
+    return text, shown, missing
 
 
 def newest_entry():
@@ -109,6 +166,11 @@ def main():
         if extra:
             md = extra + " (computed now)\n\n" + md if extra.endswith("none.") else \
                 extra.replace("\n\n", " (computed now)\n\n", 1) + "\n\n" + md
+    md, shown, missing = readers_words(md, day)
+    if missing < 0:
+        print("READER WORDS NOT SHOWN: no database key (~/.ancienttrees-supabase.env); the page still says 'read it in the database'.")
+    elif missing:
+        print("reader words: %d shown, %d not matched in the database" % (shown, missing))
     page = PAGE % {"day": html.escape(day), "body": render(md)}
     for folder, name in ((OUT, "index.html"), (PREVIEW, "digest.html")):
         try:

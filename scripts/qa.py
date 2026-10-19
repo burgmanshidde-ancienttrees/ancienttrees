@@ -532,6 +532,30 @@ def check_the_digest_never_shows_bots():
     return out
 
 
+def check_the_digest_page_shows_readers_words():
+    """The local digest page shows what a reader wrote, not "read it in the database".
+
+    Hidde, 2026-10-19, on a correction row reading "49 chars, read it in the
+    database": "please also show me these things always with digest". DATA.md
+    is public and keeps withholding the words; scripts/show_digest.py fetches
+    them for the local page by matching that exact phrase. So both files must
+    carry the same phrase, and show_digest.py must still call readers_words().
+    Removing this check needs Hidde.
+    """
+    root = Path(__file__).resolve().parent.parent
+    digest = (root / "scripts/daily_digest.py").read_text(encoding="utf-8")
+    show = (root / "scripts/show_digest.py").read_text(encoding="utf-8")
+    phrase = "chars, read it in the database"
+    out = []
+    if phrase not in digest:
+        out.append("scripts/daily_digest.py no longer writes '%d " + phrase + "', so show_digest.py "
+                   "cannot find the rows whose words it should show; change both together.")
+    if phrase not in show or "readers_words(md, day)" not in show:
+        out.append("scripts/show_digest.py no longer puts readers' words on the digest page "
+                   "(Hidde, 2026-10-19: show them always with the digest).")
+    return out
+
+
 # The eighth ratchet check, and the same disease as the one above: a second
 # copy of something that already has one place to live. data/city-list.json
 # carried rank/queue/tier from an older scheme while CITY_QUEUE.md carried the
@@ -2925,6 +2949,7 @@ def main():
         check_scripts_are_valid_python,
         check_no_strategy_in_workflows,
         check_the_digest_never_shows_bots,
+        check_the_digest_page_shows_readers_words,
         check_every_site_route_is_claimed_or_excluded,
         check_app_downloads_are_their_own_block,
         check_auth_corpus_agreement,
@@ -3112,6 +3137,7 @@ def main():
 
     failures += check_no_strategy_in_workflows()
     failures += check_the_digest_never_shows_bots()
+    failures += check_the_digest_page_shows_readers_words()
     failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()
