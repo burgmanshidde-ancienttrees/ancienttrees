@@ -56,6 +56,26 @@ public final class Profiles {
     public private(set) var myCountry: String?
     /// Other people's badges, by user id, filled as lists load.
     public private(set) var placesByUser: [String: [Ambassador]] = [:]
+    /// Whether your profile is open to anybody (profiles.public, 2026-10-19;
+    /// supabase/public-profiles.sql). Nil until the server answers, and nil
+    /// for good on a database without the column, so the Private profile
+    /// switch in Settings shows only when it can store something.
+    public private(set) var myPublic: Bool?
+
+    /// Somebody's profile as anybody may see it, from public_profile(): only
+    /// while its owner made it public, never the day a tree was ticked.
+    public struct PublicProfile: Decodable, Sendable, Hashable {
+        public let user_id: String
+        public let display_name: String
+        public let avatar_url: String?
+        public let country: String?
+        public let created_at: String?
+        public let followers: Int
+        public let following: Int
+        public let ambassador: [String]
+        public let visited: [String]
+        public let saves: [String]
+    }
 
     public init() {
         // Debug scaffolding, the same family as -collected=, -mine-demo and
@@ -89,6 +109,12 @@ public final class Profiles {
                 myPlaces = [Ambassador(user_id: me?.user_id ?? "00000000-0000-0000-0000-0000000000ab",
                                        place_slug: place.lowercased(), place_name: place, public: false)]
             }
+        }
+        // -public=off / -public=on: the Private profile switch on the demo
+        // account, for the sweep (2026-10-19).
+        if let arg = ProcessInfo.processInfo.arguments
+            .first(where: { $0.hasPrefix("-public=") }) {
+            myPublic = arg == "-public=on"
         }
         // -country=NL: the flag on the demo account, for the sweep.
         if let arg = ProcessInfo.processInfo.arguments
@@ -142,6 +168,12 @@ public final class Profiles {
            let rows = try? JSONDecoder().decode([CountryRow].self, from: data) {
             myCountry = rows.first?.country
         }
+        struct PublicRow: Decodable { let `public`: Bool }
+        if let data = try? await send(request(
+            "profiles?select=public&user_id=eq.\(userId)", "GET", token: token)),
+           let rows = try? JSONDecoder().decode([PublicRow].self, from: data) {
+            myPublic = rows.first?.public ?? false
+        }
         struct Counts: Decodable { let followers: Int; let following: Int }
         if let data = try? await send(request("rpc/follow_counts", "POST", token: token,
                                               body: try? JSONEncoder().encode(["uid": userId]))),
@@ -164,6 +196,7 @@ public final class Profiles {
         following = 0
         myPlaces = []
         myCountry = nil
+        myPublic = nil
     }
 
     /// The badges of the people in a list, one request for the whole list.
@@ -311,6 +344,26 @@ public final class Profiles {
                                           body: body, prefer: "resolution=merge-duplicates"))) != nil
         if ok { myCountry = code }
         return ok
+    }
+
+    /// The Private profile switch, written as its opposite: `on` makes the
+    /// profile public. Returns whether the server took it.
+    public func savePublic(_ on: Bool, userId: String, token: String) async -> Bool {
+        let body = try? JSONEncoder().encode(["public": on])
+        let ok = (try? await send(request("profiles?user_id=eq.\(userId)", "PATCH", token: token,
+                                          body: body, prefer: "return=minimal"))) != nil
+        if ok { myPublic = on }
+        return ok
+    }
+
+    /// Somebody's public profile, or nil when it is private, unknown, or the
+    /// server cannot say. All three read the same on screen.
+    public func publicProfile(_ userId: String, token: String?) async -> PublicProfile? {
+        if let demo = DemoPeople.publicProfile(userId) { return demo }
+        guard let data = try? await send(request("rpc/public_profile", "POST", token: token,
+                                                 body: try? JSONEncoder().encode(["uid": userId])))
+        else { return nil }
+        return try? JSONDecoder().decode(PublicProfile.self, from: data)
     }
 
     private func send(_ r: URLRequest) async throws -> Data {

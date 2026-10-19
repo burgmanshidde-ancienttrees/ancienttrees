@@ -430,6 +430,9 @@ public struct BrowseFeed: Codable, Sendable {
 public struct CityAmbassador: Codable, Hashable, Sendable {
     public let name: String
     public let affiliation: String?
+    /// Their user id, only while their profile is public (2026-10-19): the
+    /// row then opens it. Absent from feeds before that day.
+    public let profile: String?
 }
 
 public struct BrowseFacets: Sendable {

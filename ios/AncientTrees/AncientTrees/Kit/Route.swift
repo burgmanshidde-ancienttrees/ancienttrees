@@ -77,6 +77,10 @@ public enum Route: Hashable {
     /// Not a tab any more (Hidde, 2026-08-22): the avatar top right of
     /// Collect, which is where Komoot keeps it.
     case profile
+    /// SOMEBODY ELSE'S PROFILE, by user id (2026-10-19): what they made
+    /// public, or a line saying it is private. Opened from People and from a
+    /// city's ambassador row.
+    case person(String)
 
     public enum Index: String, Hashable {
         case cities, countries, species, oldest

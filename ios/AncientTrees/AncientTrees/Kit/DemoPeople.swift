@@ -26,4 +26,16 @@ public enum DemoPeople {
         .init(user_id: "00000000-0000-0000-0000-0000000000a3",
               display_name: "Sofia", avatar_url: nil),
     ]
+
+    /// -people-demo: Marieke's profile is public, Tom's and Sofia's private,
+    /// so the sweep photographs both faces of a profile (2026-10-19).
+    public static func publicProfile(_ userId: String) -> Profiles.PublicProfile? {
+        guard on, userId == all[0].user_id else { return nil }
+        return Profiles.PublicProfile(
+            user_id: userId, display_name: "Marieke", avatar_url: nil, country: "NL",
+            created_at: "2026-09-01T10:00:00Z", followers: 12, following: 4,
+            ambassador: ["Amsterdam"],
+            visited: ["brn_001", "brn_002", "brn_008", "brn_005"],
+            saves: ["brn_003", "brn_007"])
+    }
 }

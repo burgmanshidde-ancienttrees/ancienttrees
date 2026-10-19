@@ -141,7 +141,25 @@ struct PlaceMapPage: View {
                 if case .city(let slug) = place {
                     let named = catalogue.facets.ambassadors(city: slug)
                     ForEach(named, id: \.self) { a in
-                        AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
+                        // The row opens the person's profile while it is
+                        // public, with the chevron the open seat's row wears;
+                        // otherwise it stays a byline (2026-10-19).
+                        if let id = a.profile {
+                            Button { navigator.push = .person(id) } label: {
+                                HStack {
+                                    AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
+                                    Spacer(minLength: 8)
+                                    Image(systemName: "chevron.right")
+                                        .font(.caption.weight(.semibold)).foregroundStyle(Brand.inkSoft)
+                                }
+                                .frame(minHeight: 44)
+                                .contentShape(.rect)
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("ambassador-profile")
+                        } else {
+                            AmbassadorRow(name: a.name, place: title, affiliation: a.affiliation)
+                        }
                     }
                     // Nobody named: the open seat, as the website draws it,
                     // unless an ambassador holds it who is not named yet.

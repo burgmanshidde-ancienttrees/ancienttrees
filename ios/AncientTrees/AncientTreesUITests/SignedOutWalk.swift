@@ -119,6 +119,13 @@ final class SignedOutWalk: XCTestCase {
         tap(app, "ambassador-wanted"); expectSignIn(app, after: "ambassador-wanted")
     }
 
+    func testFollowOnAProfileAsks() {
+        // Somebody's public profile (PersonProfile.swift, 2026-10-19): the
+        // -people-demo person a1 is public, so Follow is on screen.
+        let app = launch(["-tab=0", "-people-demo", "-open=person:00000000-0000-0000-0000-0000000000a1"])
+        tap(app, "person-profile-follow"); expectSignIn(app, after: "person-profile-follow")
+    }
+
     func testContributeAsks() {
         // The form opens sign-in by itself for anybody without an account.
         // -contribute is read by the profile screen (Profile.swift), which is
