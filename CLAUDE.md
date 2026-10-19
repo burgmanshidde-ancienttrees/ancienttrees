@@ -165,7 +165,7 @@ komoot Pioneer convention: one person, one place, a badge. Most come from outrea
 - **People's addresses never live in the repository** (it is public): outreach files sync through the `private_files` table with `python3 scripts/private_store.py sync|pull|push`; a run that cannot pull sends nothing. `check_people_s_addresses_stay_out_of_the_repo()`.
 - **The server decides who is signed in; nothing a person does is kept on the device** (hard rule 11). Every gate goes through `atCollection.gate` (web) or a server refresh (app). Checks: `check_a_stored_session_is_verified_with_the_server()`, `check_every_gate_asks_the_server()`, `check_nothing_is_stored_locally()`, `stale_session_is_refused()`, `signed_out_controls_ask()`, `every_button_asks_or_does_nothing()`, SignedOutWalk.swift, `scripts/crossdevice.py` with data/cross-device.json, `scripts/gatecheck.py`. A new account control joins `signed_out_controls_ask()` in the same change.
 - Postbox needs an account: supabase/postbox-needs-an-account.sql, watched by postbox.yml.
-- **A profile is private until its owner turns the switch off** (Hidde, 2026-10-19, Polarsteps): `profiles.public` default false, read only through `public_profile()` (supabase/public-profiles.sql), which never returns visit dates. Consent to be named on a city page does not open a profile.
+- **Profiles: new accounts public, older ones private** (Hidde, 2026-10-19, AllTrails' default): the switch in Settings is the way out. Read only through `public_profile()` (supabase/public-profiles.sql): no visit dates, no time order, nothing from the last 24 hours. Names and the follow graph are signed-in only. Consent to be named on a city page does not open a profile.
 
 ## How to work
 
