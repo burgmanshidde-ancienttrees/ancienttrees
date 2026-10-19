@@ -408,7 +408,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 450,
+      "height_m": 25
     },
     {
       "id": "del_013",
@@ -428,13 +430,14 @@
       "how_to_recognise": "You can recognise them by their weeping form: three elms whose branches hang down around a sheltered space, an arbour in the register's word. They stand in Jaffa cemetery off the Jaffalaan; the pin is approximate.",
       "verified_sources": [
         "Landelijk Register Monumentale Bomen v2024 (Bomenstichting), register nr 1681488: Prieel iep, three trees, Begraafplaats Jaffalaan 10, Delft, planting band 1890-1900, setting begraafplaats, form 'Treurvorm' (weeping), reason 'dendrologisch', owner gemeente, recorded as visitable",
-        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1"
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1",
+        "https://www.delft.nl/begraafplaatsen-delft"
       ],
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1681488",
         "url": null
       },
-      "access": "Free. Jaffa municipal cemetery, Jaffalaan 10, listed as visitable in the register; opening hours not checked.",
+      "access": "Free. Municipal cemetery at Jaffalaan 10, open every day between sunrise and sunset.",
       "transport": "About 1.2 km east of Delft station (straight line); nearest stop not checked",
       "photo": {
         "url": null,
@@ -443,7 +446,9 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 104,
+      "height_m": 4
     },
     {
       "id": "del_014",
@@ -478,7 +483,17 @@
         "status": "missing"
       },
       "curation_status": "flagged",
-      "location_precision": "approximate"
+      "location_precision": "approximate",
+      "girth_cm": 380,
+      "height_m": 18,
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "leaves turn from purple to copper before they fall",
+        "kind": "autumn colour"
+      }
     }
   ]
 }

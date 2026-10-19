@@ -12862,6 +12862,16 @@
     "note": "deepen: 0 delivered, 13 leads filed to data/leads/leipzig.json; no authority measurements or per-tree register records reachable for Leipzig Naturdenkmale"
    }
   ],
+  "2026-10-19": [
+   {
+    "date": "2026-10-19",
+    "target": "delft enrich (del_012, del_013, del_014)",
+    "kind": "verify",
+    "tokens": 51000,
+    "trees": 0,
+    "note": "enrich pass: 3 register ids with girth and height, one sourced access line, one autumn best_time; pins left open, 4 gaps dead-ended"
+   }
+  ],
   "2026-10-18": [
    {
     "date": "2026-10-18",
