@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-19 02:51 window: Las Vegas retry, little on the shelf
+
+Visits last 7 days: 1920 (2970 page views). Inbox empty. health.py: the scheduled iOS run failed again, in the log a simulator "Timed out while requesting launch progress" (infrastructure, push-triggered runs pass); smoke "skipped" is its push trigger, deploy green. Enrich empty. Shelf: READY 43 are mostly Roosendaal street trees earlier passes declined; the written trees in data/research are blocked (ftw_018 access, fdl_001 removed on purpose, no city file for Studena/Novo Selo/Key West). Scouting RETRY Las Vegas (already live with 11 trees, so a deepen): verify pass (Sonnet, ~85k tokens) flagged 2 UNLV champions, lvg_015 Mondell Pine (157 cm girth, 2023 Nevada register plus UNLV) and lvg_016 Holly Oak (small, one source); approximate pins, no photograph, so not written; the rest stay leads with reasons. Claim released with --force, Las Vegas a 48h wall. The scouting note is stale (the city is published).
+
 ## 2026-10-19 00:31 window: Delft enrichment
 
 Visits last 7 days: 1951 (3075 page views). Inbox empty. health.py flags the scheduled iOS run (timed out at 1h54m, hand runs pass; needs a session, not touched) and a "skipped" smoke test (push-triggered, build itself green). Rung 4 on the frozen roster: Delft enrichment (Sonnet, ~51k tokens). del_012, del_013 and del_014 now carry register ids with girth and height from the LRMB layer, del_013 a sourced access line (free, sunrise to sunset), del_014 an autumn best_time. Pins stay approximate for all three (register coordinate equals ours, cemetery too big for a site). Preflight 0 problems.

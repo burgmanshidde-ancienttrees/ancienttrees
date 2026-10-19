@@ -1,0 +1,49 @@
+[
+  {
+    "id": "lvg_015",
+    "name": "The Mondell Pine behind the Carlson Education Building",
+    "species": "Mondell Pine (Pinus eldarica)",
+    "age_estimate": "not documented",
+    "girth_cm": 157,
+    "height_m": 18.3,
+    "location": {
+      "address": "Behind the William D. Carlson Education Building, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+      "latitude": 36.1091651,
+      "longitude": -115.139717,
+      "neighbourhood": "UNLV campus"
+    },
+    "verified_sources": [
+      "https://www.unlv.edu/news/article/rooted-champions",
+      "https://forestry.nv.gov/uploads/missions/2023_Big_Tree_Program_Register.pdf"
+    ],
+    "official_register": {
+      "name": "Nevada Big Tree Register 2023 (Nevada Division of Forestry)",
+      "url": "https://forestry.nv.gov/uploads/missions/2023_Big_Tree_Program_Register.pdf"
+    },
+    "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+    "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Resolves the earlier lead's conflict. The 2015 register put its Pinus eldarica champion at a private property in Reno; the 2023 Nevada Big Tree Register lists a Pinus eldarica Champion in Clark county owned by University of Nevada, Las Vegas: circumference 62 in (157 cm), height 60 ft (18.3 m), average crown 50 ft, crown points 13, total 135. (Text extracted from the PDF is column-flattened; the row is Pine / Pinus eldarica / Champion / 62 / 60 / 50 / 13 / 135 / Clark / UNLV.) UNLV's own news article 'Rooted in Champions' (4 Nov 2025) names the Mondell pine, sometimes known as Afghan pine, 'behind the Carlson Education Building', worth a visit at Christmas for its symmetrical shape, and says it suffered a prolonged dry spell during the pandemic and 'continues to recover thanks to attentive care'. Alive: stated alive Nov 2025 by the ground's owner. Pin is the Carlson building (same point as lvg_003 and lvg_012), so approximate; the tree stands behind the building, no tree-level coordinate found. Registered by UNLV article as one of 10 state champions on campus; this is a tall pine for the campus, not an old tree; no planting date found, age not derivable. Photo: none open found (UNLV article photos are UNLV's, not licensed). Register is the only vitality-free record; flagged: register plus owner article, one tree-level position missing."
+  },
+  {
+    "id": "lvg_016",
+    "name": "The Holly Oak beside White Hall",
+    "species": "Holly Oak (Quercus ilex)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Beside White Hall, UNLV campus, 4505 S Maryland Pkwy, Las Vegas, NV 89154",
+      "latitude": 36.1102662,
+      "longitude": -115.1423813,
+      "neighbourhood": "UNLV campus"
+    },
+    "verified_sources": [
+      "https://www.unlv.edu/news/article/rooted-champions"
+    ],
+    "access": "Free. Public university campus, open grounds, walkable any time the campus is open.",
+    "transport": "On the UNLV campus; nearest RTC bus stops serve Maryland Parkway, short walk in.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "One source (US, the ground's owner): UNLV 'Rooted in Champions', 4 Nov 2025: 'Found next to White Hall, this holly oak was recently pruned, slightly reducing its spread.' Described as one of the hardiest evergreen oaks, from the Mediterranean, giving shade on the north side of campus; one of 10 trees designated state champions by the Nevada Division of Forestry. The article gives no measurements. Not found in the 2015 or 2023 Nevada Big Tree Register text (Quercus ilex absent; the register only lists Ilex aquifolium at Reno), so the champion claim and its size rest on UNLV alone. No girth, height or age. Alive: recently pruned per Nov 2025 article. Pin is White Hall building point (same as lvg_013 Buddhist pine, which also stands against White Hall), approximate. Flagged: one source, no measurement, small tree by UNLV's own words ('smaller size'). Photo: none open found."
+  }
+]
