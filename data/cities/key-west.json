@@ -3,19 +3,23 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "kyw_001",
-  "intro": "Key West's champion tree is one you can eat. Florida's largest mammee apple grows in the yard of the Key West Firehouse Museum in Old Town, and its fruit goes into the museum's annual mamey ice cream social. Nobody recorded when it was planted. Firehouse No. 3 was built in 1908, the museum says the tree followed a few years later, and its own guesses put it between 100 and 120 years old. The museum is free, with a suggested donation, and opens four days a week.",
+  "intro": "Key West's two remarkable trees are a champion you can eat and a pair the city has asked to cut down. Florida's largest mammee apple grows in the yard of the Key West Firehouse Museum in Old Town, its fruit goes into the museum's annual mamey ice cream social, and the museum puts it at 100 to 120 years old. In the city cemetery, two strangler figs have grown so far into the graves that the city's own foresters asked to remove them. In February 2026 that decision was postponed indefinitely.",
   "meta_description": "Florida's state champion mammee apple grows in the Key West Firehouse Museum yard, and its fruit becomes ice cream every year.",
-  "question_answer": "The tree we map in Key West is the Firehouse Museum Mamey, Florida's state champion mammee apple, which the museum puts at somewhere between 100 and 120 years old. No planting record survives; the museum worked its age back from when the species starts to fruit.",
-  "question_meta": "The Firehouse Museum Mamey, Florida's champion mammee apple, roughly 100 to 120 years old, stands in Old Town Key West. Where and when to see it.",
-  "question_context": "The tree stands on city land between the Key West Firehouse Museum and the building next door, at the corner of Grinnell and Virginia streets in Old Town. In 2018 the county forester measured it at 328 centimetres round and 14.9 metres tall, and recorded its condition as fair, mature and declining; it was still bearing fruit in June 2024. Its age is the museum's estimate rather than a record. Volunteers threw it a 105th birthday party in 2019, a figure worked back from the roughly 21 years a mamey needs before it fruits, while a 2024 newspaper caption made it 115; both point to somewhere between 100 and 120 years. Watch the name: \"mamey\" is also used for Pouteria sapota, a different species, and the register is specific that this one is Mammea americana. The museum is free, with a suggested donation, and opens Wednesday to Saturday from 10:00 to 14:00. Whether the crown can be seen from the street without going in, we have not been able to confirm.",
+  "question_answer": "We map two trees in Key West: the Firehouse Museum Mamey, Florida's state champion mammee apple, which the museum puts at somewhere between 100 and 120 years old, and the strangler figs of the Key West Cemetery, which the local paper calls over a century old. Neither has a planting record.",
+  "question_meta": "Florida's champion mammee apple and the cemetery's strangler figs, both roughly a century old or more, in Old Town Key West. Where and when to see them.",
+  "question_context": "The mamey stands on city land between the Key West Firehouse Museum and the building next door, at the corner of Grinnell and Virginia streets. In 2018 the county forester measured it at 328 centimetres round and 14.9 metres tall and recorded it as fair, mature and declining; it was still bearing fruit in June 2024. Its age is the museum's estimate, worked back from the roughly 21 years a mamey needs before it fruits. The museum is free, with a suggested donation, and opens Wednesday to Saturday from 10:00 to 14:00. The cemetery figs are over a century old by the local paper's account, though nobody has a planting date. The city measured them at 96 and 53 inches across, and its report shows them breaking and engulfing gravestones, most of them from the 1880s by a resident's account. The urban foresters asked to remove both in November 2025; residents objected, and the decision was postponed. We have not found where in the 19-acre cemetery they stand.",
   "faq": [
     {
       "q": "What is the oldest tree in Key West?",
-      "a": "On this page, the Firehouse Museum Mamey, Florida's champion mammee apple, which the museum puts at between 100 and 120 years old. No planting record survives."
+      "a": "Nobody knows for certain. The Firehouse Museum Mamey is put at 100 to 120 years by the museum, and the strangler figs in the Key West Cemetery are called over a century old by the local paper. Neither has a planting record."
     },
     {
       "q": "Is the Firehouse Museum Mamey free to see?",
       "a": "The museum is free, with a suggested donation of $5, and opens Wednesday to Saturday from 10:00 to 14:00, last admission 13:30."
+    },
+    {
+      "q": "Are the Key West Cemetery figs being cut down?",
+      "a": "The city's urban foresters asked to remove both in November 2025. Residents objected, and by February 2026 the decision had been postponed indefinitely, with no vote since that we have found."
     }
   ],
   "trees": [
@@ -54,6 +58,39 @@
       "curation_status": "flagged",
       "story": "Florida's largest mammee apple tree ends up, every year, as ice cream. The Key West Firehouse Museum holds an annual mamey ice cream social, made with fruit from the tree in its yard, and in June 2024 the tree was still bearing.\n\nIt is the state champion of its species on the Florida Forest Service register. In 2018 the county forester measured it at 328 centimetres round at chest height and 14.9 metres tall, with a crown about 17 by 12 metres. He also wrote down its condition: fair, mature and declining. The 2024 fruit is the most recent word on its health.\n\nNobody recorded when it went in. Firehouse No. 3 was built in 1908, and the museum's account is that the tree followed a few years later. Volunteers threw it a 105th birthday party in 2019, a date worked back from the roughly 21 years a mamey needs before it fruits; a 2024 newspaper caption made it 115. Both are the museum's guess, so call it somewhere between 100 and 120.\n\nOne naming trap: \"mamey\" is also the common name of Pouteria sapota, a different species altogether. The register is specific that this one is Mammea americana.\n\nThe tree stands on city land between the museum and the building next door. The museum is free, with a suggested donation, and opens Wednesday to Saturday from 10:00 to 14:00. Whether you can see the crown from the street without going in, we have not been able to confirm.",
       "how_to_recognise": "You can recognise it as the state champion mamey in the museum's yard. It stands between the Key West Firehouse Museum and the building next door, at the corner of Grinnell and Virginia streets.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "kyw_002",
+      "name": "The Strangler Figs of the Key West Cemetery",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "over a century",
+      "age_min": 100,
+      "age_max": 180,
+      "girth_cm": 766,
+      "location": {
+        "address": "Historic Key West City Cemetery, Old Town, Key West, FL",
+        "latitude": 24.55583,
+        "longitude": -81.79556,
+        "neighbourhood": "Old Town"
+      },
+      "verified_sources": [
+        "https://www.keysnews.com/news/local/city-tree-commission-postpones-decision-on-cemetery-trees-indefinitely/article_34109605-dc00-4558-9ddf-97e7a4051d10.html (Keys Weekly/Keys News, Feb 2026, quoting the City urban forestry report)",
+        "https://www.keysnews.com/news/local/tree-commission-cancels-meeting-as-debate-brews-over-key-wests-history/article_03988f9c-be57-444f-9b7f-bb6b35f4245d.html (Keys News, Nov 2025)",
+        "https://en.wikipedia.org/wiki/Key_West_Cemetery (cemetery coordinate, 19 acres, founded 1847)"
+      ],
+      "access": "Free. City-owned historic cemetery in Old Town, open to walk through (hours not fetched; writer must not invent any).",
+      "transport": "Old Town Key West at the foot of Solares Hill; walkable from the Old Town streets (no transit stop verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "ONE source family (local press quoting the City's own Urban Forestry report), flagged. The report by Urban Forestry Manager Brett Mayle and Assistant Zach Bentley measured two strangler figs at 96 inches and 53 inches DIAMETER. girth_cm 766 is pi x 96 in (243.8 cm), the larger tree; the second would be about 423 cm. The articles do not say how high the diameters were taken. Species given only as 'strangler figs' (Ficus aurea is the native strangler of the Keys but no source names it here), so genus only. The report shows the figs deeply intertwined with gravestones, breaking slabs or engulfing them. A resident's letter says most graves beneath them date to the 1880s; the cemetery was founded in 1847 after the 1846 hurricane. 'Over century-old' is the paper's wording, no planting date. THE CITY URBAN FORESTERS ASKED TO REMOVE BOTH TREES (item on the Tree Commission agenda since Nov 2025; residents wrote letters of opposition; the Nov 10 meeting was cancelled for lack of quorum, then staff requested indefinite postponement). No decision found as of the last article. A writer must say the trees are under a removal request; before publishing re-check keywest.legistar.com Tree Commission agendas for a removal vote. Alive check: lifecheck RECENT 2025-05-15 is an unrelated iNaturalist observation nearby, not these trees. Exact position inside the 19-acre cemetery NOT found (agenda attachments on keywest.legistar.com not fetched); pin is the cemetery centre, approximate, not a small site. Twin trees: two figs reported, distance apart unknown, delivered as one collectible point only if they stand near each other; otherwise the larger alone.",
+      "story": "Key West's own urban foresters have asked to cut these two trees down. The strangler figs in the city cemetery have grown so deep into the graves that the city's forestry report shows them breaking slabs and engulfing headstones, and in November 2025 removing both went on the Tree Commission's agenda.\n\nThe report, by Brett Mayle and Zach Bentley of the city's urban forestry team, measured them at 96 and 53 inches across, about 2.4 and 1.35 metres. Worked out as a circle, which a strangler fig's trunk never quite is, the larger comes to roughly 7.7 metres round. It does not say how high up the trunk the tape went.\n\nThe local paper calls them over a century old; there is no planting date. The cemetery was founded in 1847, after the hurricane of 1846, and a resident wrote to the commission that most of the graves beneath the figs date from the 1880s.\n\nResidents wrote in against it.The November meeting was cancelled for lack of a quorum, and by February 2026 city staff had asked for the decision to be postponed indefinitely. That is the last word we have found: no vote, and the figs still standing among the stones.\n\nNo source names the species, so we give only the genus, and none says where in the 19-acre cemetery they stand, or how far apart. Our pin is the cemetery's middle, in Old Town. Entry is free. If you find them, tell us where.",
+      "how_to_recognise": "You can recognise them by what they are doing to the graves: two strangler figs grown into the headstones, the larger about 2.4 metres across. They stand somewhere inside the Key West Cemetery in Old Town.",
       "photo": {
         "url": null,
         "license": null,

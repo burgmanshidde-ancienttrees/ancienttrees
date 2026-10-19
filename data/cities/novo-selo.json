@@ -1,0 +1,56 @@
+{
+  "city": "Novo Selo",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "oldest_tree_id": "nsb_001",
+  "hero_tree_id": "nsb_001",
+  "intro": "Novo Selo, a village near Veliko Tarnovo, keeps an oak in its centre that Bulgarian press reports put at about 500 years old, which would make it older than the village, founded in 1750. Nobody has published a measurement to settle it. The oak won Bulgaria's Tree with Roots contest in 2019 and was the country's entry to European Tree of the Year in 2020. It stands in the village centre and is free to see.",
+  "meta_description": "The Venerable Oak of Novo Selo near Veliko Tarnovo, said to be about 500 years old, Bulgaria's entry to European Tree of the Year 2020.",
+  "question_answer": "The tree we map in Novo Selo is the Venerable Oak, a pedunculate oak in the village centre that Bulgarian press reports put at about 500 years old. Nobody has published a measurement, so the age is a report rather than a count.",
+  "question_meta": "The Venerable Oak of Novo Selo, said to be about 500 years old, stands in the village centre near Veliko Tarnovo. Where it is and what is known.",
+  "question_context": "The village dates its founding to 1750, and the oak is said to be older, about 500 years by Bulgarian press reports citing specialists. Those two figures come from different places and should be kept apart: the founding date is the village's own history, the age is a report, and no girth, height or ring count has been published to test it. What the record does show is how much the village thinks of it. The contest entry calls it a pedunculate oak, and the village treats it as the keeper of its history since 1750. In December 2019 it won Bulgaria's Tree with Roots contest with 1,073 votes, and in 2020 it represented Bulgaria in European Tree of the Year. An arborist's assessment was promised at the time, and we have found no report of it since. It stands in the centre of the village, free to see, and the trip from Veliko Tarnovo is best made by car. If you know its girth, tell us.",
+  "faq": [
+    {
+      "q": "How old is the oak in Novo Selo?",
+      "a": "Bulgarian press reports put it at about 500 years, citing specialists. Nobody has published a measurement, so treat it as an estimate."
+    },
+    {
+      "q": "Is it free to see?",
+      "a": "Yes. It stands in the centre of the village."
+    }
+  ],
+  "trees": [
+    {
+      "id": "nsb_001",
+      "name": "The Venerable Oak of Novo Selo",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 500 years",
+      "age_min": 300,
+      "age_max": 500,
+      "location": {
+        "address": "Village centre, in front of the five-spout fountain, Novo Selo, Veliko Tarnovo Municipality, Bulgaria",
+        "latitude": 43.079139,
+        "longitude": 25.363667,
+        "neighbourhood": "Novo Selo"
+      },
+      "verified_sources": [
+        "https://news.bg/bulgaria/5-vekoven-dab-ot-tarnovsko-stana-darvo-s-koren-2019.html",
+        "https://bepf-bg.org/toy2019-winners",
+        "https://www.treeoftheyear.org/previous-years/2020/Ctihodny-dub-ve-vesnici-Novo-selo"
+      ],
+      "access": "Free; stands in the centre of the village by a public fountain (press and search summaries; not seen on a map).",
+      "transport": "Village near Veliko Tarnovo; distance and bus not checked, treat as a car trip.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "- Bulgaria 'Tree with Roots 2019' winner (1,073 votes per news.bg, 17 Dec 2019); Bulgaria's entry to European Tree of the Year 2020.\n- Age 'about 500 years' is stated by press (BNR headline '500-year-old oak', 'according to specialists' in a search summary I could not open); news.bg only says it has kept the village's history since its founding in 1750, which is a tension: the tree is claimed older than the village. Do not link the two. No measurement seen; girth and height not found in any source I reached.\n- Fountain detail (five spouts of cold water in front of the oak) and the 2010 planting of a young oak grown from its acorn beside it, so the roots intertwine: from a search summary of BNR/contest text, not a fetched page. Treat as lead until seen.\n- Species from contest entry (Quercus robur); press says only 'oak'.\n- Alive: news.bg Dec 2019 (article says an arborist assessment will follow); Commons photo dated 2019-09-26/2020 at the coordinate (lifecheck OLD). Nothing later found: flagged.\n- Pin: contest GPS only; the site is a village-centre landmark so probably good to a few metres, but not cross-checked.",
+      "story": "The village of Novo Selo, near Veliko Tarnovo, dates its founding to 1750. The oak in its centre is said to be about 500 years old, which would make the tree older than the village by a couple of centuries.\n\nThose two numbers do not come from the same place, and it is worth keeping them apart. The founding date is the village's own history. The 500 years comes from Bulgarian press reports citing specialists, and nobody has published a measurement, a ring count, a girth or a height. So the honest version is simpler: a big old oak that the village regards as the keeper of its history since 1750, of an age nobody has settled. If you know more, tell us.\n\nIt stands in the middle of the village, a landmark rather than a secret. In December 2019 it won Bulgaria's Tree with Roots contest with 1,073 votes, and in 2020 it was the country's entry to European Tree of the Year. At the time an arborist's assessment was promised, and we have found no report of it since.\n\nThe contest entry names it as a pedunculate oak; the press says only oak.",
+      "how_to_recognise": "You can recognise it as the big old oak at the heart of Novo Selo, the tree the village treats as its landmark. It stands in the village centre.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

@@ -3,11 +3,11 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "mia_002",
-  "intro": "Miami's remarkable trees are mostly one man's doing and one forest's leftovers. Between 1914 and 1922 James Deering built Vizcaya on the Brickell Hammock, raising an artificial hill for live oaks that were already large when they were moved in, and buying more than a hundred royal palms in Cuba, of which one survives. Its forest holds national champions too, among them the biggest redberry stopper known in the country. Two kilometres north-east, Simpson Park keeps 7.8 acres of the old hammock and a co-champion paradise tree on its nature trail. Vizcaya charges admission; Simpson Park is free.",
+  "intro": "Miami's remarkable trees are mostly one man's doing and one forest's leftovers. Between 1914 and 1922 James Deering built Vizcaya on the Brickell Hammock, hoisting already large live oaks onto an artificial hill and buying more than a hundred Cuban royal palms, of which one survives. Simpson Park keeps 7.8 acres of the old hammock and a co-champion paradise tree. Further out stand a baobab in Miami Beach, a Coral Gables fig holding the last post of a packing house, and a champion false mastic near Homestead that was given up for dead after Hurricane Andrew. Only Vizcaya charges admission.",
   "meta_description": "Vizcaya's hoisted live oaks, the last of Deering's Cuban royal palms, and national champion trees in the Brickell Hammock.",
   "question_answer": "The oldest trees on this page are the Garden Mound Oaks at Vizcaya, four southern live oaks that Vizcaya's own label calls 200 years old, though a caption on the same page says 100. They were already large when they were moved onto an artificial hill built for James Deering between 1914 and 1922, so somewhere between one century and two is the honest range.",
   "question_meta": "Vizcaya's Garden Mound Oaks, 100 to 200 years old by Vizcaya's own captions, lead Miami's old trees. Where they stand and the rest of the list.",
-  "question_context": "No tree on this page has been dated from its wood. The live oaks on Vizcaya's Garden Mound carry two ages from the same institution, 200 years on the mound's label and 100 in a video caption, and nobody has published a girth that would settle it. The estate's surviving Cuban royal palm is about a century old, worked out from the palm deliveries of 1916 to 1921 rather than measured. The two champions, the redberry stopper at Vizcaya and the paradise tree in Simpson Park, are ranked by the Florida Forest Service on size, not years, and neither has an age at all: the paradise tree was 170 centimetres round when measured in 2009, the stopper 135 centimetres in 2013, both before Hurricane Irma stripped the hammock in 2017. The settings are half the reason to come. Simpson Park is a 7.8 acre remnant of the Brickell Hammock, and Vizcaya's own forest holds eight known national champion trees. The two sites are about two kilometres apart, close enough to walk between, and Vizcaya Metrorail station is about 500 metres from Vizcaya's entrance. If you know how old any of them is, tell us.",
+  "question_context": "No tree on this page has been dated from its wood. The live oaks on Vizcaya's Garden Mound carry two ages from the same institution, 200 years on the mound's label and 100 in a video caption, and nobody has published a girth that would settle it. The estate's surviving Cuban royal palm is about a century old, worked out from the palm deliveries of 1916 to 1921 rather than measured. The champions are ranked by the Florida Forest Service on size, not years: the redberry stopper at Vizcaya, the paradise tree in Simpson Park, and the false mastic in Castellow Hammock near Homestead, which was thought lost in Hurricane Andrew and found alive in 1995. None has an age. Nor do the baobab in Collins Park, Miami Beach, or the Merrick fig in Coral Gables, which is on the map for the plantation post in its roots rather than its size. Vizcaya and Simpson Park are about two kilometres apart, and Vizcaya Metrorail station is about 500 metres from Vizcaya's entrance. If you know how old any of them is, tell us.",
   "faq": [
     {
       "q": "What is the oldest tree in Miami?",
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Miami's remarkable trees free to see?",
-      "a": "The paradise tree in Simpson Park is free, in a city park open daily from 8:00 to 17:00. The three Vizcaya trees need a ticket to Vizcaya Museum and Gardens, which is closed on Tuesdays."
+      "a": "Most are. Simpson Park, Collins Park in Miami Beach, the Merrick fig's street corner in Coral Gables and Castellow Hammock Preserve are free. The three Vizcaya trees need a ticket to Vizcaya Museum and Gardens, which is closed on Tuesdays."
     },
     {
       "q": "What is the Brickell Hammock?",
@@ -167,6 +167,103 @@
       "story": "James Deering bought more than a hundred royal palms in Cuba for his Miami estate. Vizcaya says one is left. Vizcaya publishes a photograph of a palm delivery dated 28 November 1921, and the shipments ran from about 1916 to that year, so the survivor has been standing here for roughly a century. That figure is worked out from the planting, not measured on the palm, and Vizcaya gives no year for this particular trunk.\n\nIt is also big. Vizcaya calls it a Florida Challenger, \"the 4th largest Royal Palm\", and the Florida Forest Service register agrees on the title: measured in April 2012, it stood 22.6 metres tall, with a trunk 152 centimetres round and a crown about 7.6 by 6.4 metres.\n\nOne honest gap. Vizcaya does not say where on the grounds its survivor stands, so we cannot prove the register's palm is the same one. It is the only royal palm the register records at Vizcaya, which makes it very likely, and our pin is the register's coordinate rather than a fix at the trunk.\n\nThe rest of the Cuban shipment is gone. Vizcaya's recent pages still say this one remains, though we have not seen a dated photograph of it. Entry to Vizcaya is paid, and Vizcaya Metrorail station is about 500 metres from the entrance.",
       "how_to_recognise": "You can recognise it by its height: a single trunk about 152 centimetres round rising 22.6 metres, the last of Deering's Cuban royal palms. It stands on the Vizcaya grounds near the register's pin, which is approximate.",
       "paid_entry": true,
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_006",
+      "name": "The National Champion False-Mastic of Castellow Hammock",
+      "species": "False Mastic (Sideroxylon foetidissimum)",
+      "age_estimate": "not documented",
+      "girth_cm": 279,
+      "height_m": 26.2,
+      "location": {
+        "address": "Castellow Hammock Preserve & Nature Center, 22301 SW 162nd Avenue, Miami, FL 33170",
+        "latitude": 25.5587,
+        "longitude": -80.4526,
+        "neighbourhood": "Redland / Leisure City"
+      },
+      "verified_sources": [
+        "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/19 (Florida Forest Service Champion Tree record PK 19, read via Wayback 2025)",
+        "https://www.miamidade.gov/parks/castello-hammock.asp (the park owner's page: 112-acre preserve, half-mile self-guided trail, office hours 9 to 5 daily)"
+      ],
+      "official_register": {
+        "name": "Florida Champion Tree Program (Florida Forest Service)",
+        "url": "https://ffs.fdacs.gov/ChampionTrees/home.mvc/Detail/19"
+      },
+      "access": "Free per Florida Birding Trail and visitor reports (county page states no fee and office hours 9 a.m. to 5 p.m. seven days; Florida Birding Trail says Wednesday to Sunday, so hours conflict: check before a visit). Self-guided half-mile limestone hammock trail, uneven and rocky. Whether the champion stands on the public trail is NOT stated by any source.",
+      "transport": "Southwest Miami-Dade near Homestead, 22301 SW 162nd Avenue; a car is the practical way (no transit stop verified).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "REGISTER ONLY, flagged: one official register (Florida Forest Service), owner Miami-Dade County Parks and Recreation. Record: National Champion, status date 2014-03-18, remeasured 2020-01-14 as a New Nomination, verified by County Forester Mark B. Torok. Circumference 110 in at 4.5 ft = 279 cm; height 86 ft = 26.2 m; crown 49 by 36 ft; 207 points; condition Good (mature, healthy). Nomination comment: the tree was thought to have perished in Hurricane Andrew (Aug 1992) and was dropped as National Champion; it was found with some crown loss but in good health (R. Hammer, Oct 1995). That survived-Andrew fact is the anecdote. PIN PROBLEM: the register coordinate 25.55937,-80.44945 falls on SW 157th Avenue about 700 m east of the preserve (Nominatim reverse), and the register address says 22430 SW 153rd St, which does not match the preserve address; so the register coordinate is NOT trusted. Delivered pin is the preserve centre (OSM way 1424670003), park-level approximate; the preserve is 112 acres so not a small site. Age: none published. Alive: 2020 remeasure with condition Good, nothing newer; lifecheck RECENT 2026-07-17 is an unrelated vine observation nearby.",
+      "story": "Hurricane Andrew was supposed to have killed this tree. After the storm of August 1992 the false mastic at Castellow Hammock was thought to have perished, and it was dropped as National Champion of its species. In October 1995, a note by R. Hammer on its register record says, it was found standing, with some crown loss and otherwise in good health.\n\nIt has the title back. The Florida Forest Service lists it as the National Champion false mastic, and when the county forester, Mark Torok, remeasured it in January 2020 it was 279 centimetres round at chest height and 26.2 metres tall, with a crown about 15 by 11 metres. He recorded it as mature and healthy, the latest word on it we have found.\n\nChampion means biggest, not oldest, and nobody has published an age. If you know one, tell us.\n\nThe tree grows in Castellow Hammock Preserve, 112 acres of Miami-Dade County parkland in the Redland, near Homestead, with a half-mile self-guided trail over uneven, rocky limestone. Entry is free. The county gives hours of 9:00 to 17:00 every day, while the Florida Birding Trail says Wednesday to Sunday, so check before you drive. You will need a car.\n\nOne honest gap: no source says whether the champion stands beside the trail, and the register's own coordinate lands on a road about 700 metres east of the preserve, so we do not trust it. Our pin marks the middle of the preserve, not the trunk.",
+      "how_to_recognise": "You can recognise it by its size: 279 centimetres round and 26.2 metres tall, the biggest false mastic on the national register. It stands somewhere in Castellow Hammock Preserve; no source places it on the trail.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_007",
+      "name": "The Merrick Packing House Fig",
+      "species": "Fig (Ficus sp.)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Castile Avenue at South Greenway Drive, Coral Gables, FL 33134",
+        "latitude": 25.75002,
+        "longitude": -80.27172,
+        "neighbourhood": "Coral Gables (Country Club of Coral Gables Historic District)"
+      },
+      "verified_sources": [
+        "https://www.hmdb.org/m.asp?m=73634 (Historical Marker Database entry, 'Site of Packing House of Coral Gables Plantation', erected by the Gov. John West Chapter, Daughters of the American Revolution; read via Wayback)",
+        "https://www.coralgables.com/department/public-works/tree-year-contest/tree-year-submissions (City of Coral Gables Tree of the Year submissions, entries 'Merrick fig', 'Merrick Shack' and 'Merrick Post in the Fig', Centennial year 2025)"
+      ],
+      "access": "Free. A public street corner on Castile Avenue where the marker stands; no entry needed.",
+      "transport": "Coral Gables, Castile Avenue at South Greenway Drive, beside the Granada Golf Course; no transit stop verified, writer must not invent one.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Castile Avenue and South Greenway Drive corner, marker site",
+        "radius_m": 30
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Historic rather than big: the point is the post. The marker text (HMDB transcription): 'Site of Packing House of Coral Gables Plantation, established by Rev. Solomon Greasley Merrick. Post in fig tree only evidence remaining.' HMDB marker coordinate 25 deg 45.001' N, 80 deg 16.303' W = 25.75002, -80.27172, 'at the intersection of Castile Avenue and South Greenway Drive, on the right when traveling west on Castile Avenue'. City nominations (resident submissions, edited by staff): 'the plantation's packing house is only survived by a single wooden plank, wedged between the aerial roots of a modest fig tree'; the Coral Gables Plantation was established 1906 by Solomon Merrick on grapefruit groves (a second nomination: Merricks bought 160 acres in mid 1899 for $1,100); one nomination says the shack was moved to that spot and used as an office for Merrick's plantation. Dates differ between nominations (1899 purchase vs 1906 plantation) and are resident statements, writer should use only the marker's words. Species: one nominator says Florida Strangler Fig, others only 'fig'; no authority names it, so genus only. Age of the fig: none published, do not derive. Alive: nominated in the 2025 Centennial contest; lifecheck NONE (no iNaturalist record nearby), thin, flagged. Pin is the marker; the fig stands at the marker per the marker text, not a surveyed trunk, so approximate with a 30 m site. A nearby tree is the Merrick House banyan (907 Coral Way, see leads), a different site.",
+      "story": "All that is left of the Coral Gables Plantation's packing house is a wooden post inside a fig tree. The historical marker at the corner of Castile Avenue and South Greenway Drive says so in one dry line: \"Post in fig tree only evidence remaining.\"\n\nThe Daughters of the American Revolution put the marker up. It records the packing house of the plantation established by the Rev. Solomon Greasley Merrick, then hands the rest of the job to the tree.\n\nWhen Coral Gables ran its Tree of the Year contest for its centennial in 2025, residents nominated this fig three times over, as the Merrick fig, the Merrick Shack and the Merrick Post in the Fig. One nomination describes the packing house as survived by a single wooden plank, wedged between the aerial roots of a modest fig tree. Modest is fair. This is not a big tree, and it is on the map for what it is holding.\n\nWhich fig it is, nobody with authority has said. One nominator calls it a Florida strangler fig; the others say only fig, and so do we. Nobody has dated it either. If you know when it took hold, tell us.\n\nIt stands on a public street corner in Coral Gables, beside the Granada Golf Course, free to see from the pavement. The marker is on the right as you travel west on Castile Avenue, and the fig is at the marker. Our pin is the marker's position, not a surveyed trunk.",
+      "how_to_recognise": "You can recognise it by the wooden post wedged between its aerial roots. It stands at the historical marker on the corner of Castile Avenue and South Greenway Drive, on the right as you head west.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "mia_008",
+      "name": "The Baobabs of Collins Park",
+      "species": "Baobab (Adansonia digitata)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Collins Park, Collins Avenue at 21st Street, Miami Beach, FL 33139",
+        "latitude": 25.797,
+        "longitude": -80.1297,
+        "neighbourhood": "Collins Park, Miami Beach"
+      },
+      "verified_sources": [
+        "https://communitynewspapers.com/miami-beach-news/miami-beach-sun-sand-surf-and-the-trees/ (City of Miami Beach piece, 11 May 2015, Urban Forester Mark Williams: 'a visit to Collins Park to see the majestic Baobab Tree should not be missed')",
+        "https://www.inaturalist.org/observations/379173230 (iNaturalist, 2026-07-07, Adansonia digitata, 6 m accuracy, marked cultivated); 15 observations 2024 to 2026 in Collins Park"
+      ],
+      "access": "Free. Collins Park is a City of Miami Beach public park beside the Bass Museum; open access (hours not fetched, writer must not invent any).",
+      "transport": "Collins Avenue at 21st Street, South Beach, beside the Bass Museum (2100 Collins Avenue); no transit stop verified on a transit page, writer must not invent one.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Plural on purpose: iNaturalist observations 2024 to 2026 land at 25.7967 to 25.7973 and -80.1294 to -80.1303, an 80 m spread, so there may be more than one baobab and no source says which one the city's urban forester means. No girth, height or age found in any fetched source, so none recorded (a stock-photo caption mentioned 'hand carved initials' in the trunk, not fetched, ignore). Cultivated, not wild (iNaturalist marks the records captive), so it was planted; planting date unknown. A baobab outside Africa is the draw, in the words of the Urban Forester the tree is 'not just pretty, it also carries some lore. In some African cultures, the tree is considered the Tree of Life due to its strength and size.' Alive: iNaturalist record 2026-07-07 (research-grade neighbours, newest 2026). Source count: a city statement plus iNaturalist observations; flagged. Coral Gables has a separate baobab (6221 Leonardo St, nominated 'The Elephant's Foot', unverified, lead only).",
+      "story": "Miami Beach's urban forester once told visitors not to miss an African tree. Writing for the city in May 2015, Mark Williams said a visit to Collins Park to see the baobab should not be missed, and gave it a line of lore: in some African cultures, he wrote, the baobab is considered the Tree of Life, for its strength and size.\n\nIt did not get here on its own. The naturalists who log it on iNaturalist mark it as cultivated, which means somebody planted it, and nobody has published when. Nobody has published a girth or a height either, so we can tell you what it is but not how big. If you know when it went in, or have put a tape round it, tell us.\n\nThe plural in our name is deliberate. Baobabs in the park have been recorded about fifteen times between 2024 and 2026, and those records spread across some 80 metres, which suggests more than one tree. No source says which one the forester meant. The newest record is from July 2026, so at least one is standing.\n\nCollins Park is a free public park run by the City of Miami Beach, on Collins Avenue at 21st Street, beside the Bass Museum. We have not found its opening hours. Our pin is the middle of that 80-metre spread, not a particular trunk, so look for the baobab rather than the dot.",
+      "how_to_recognise": "You can recognise it as the African baobab in Collins Park, an African species planted far from home. It stands in the park beside the Bass Museum, at Collins Avenue and 21st Street; there may be more than one.",
       "photo": {
         "url": null,
         "license": null,
