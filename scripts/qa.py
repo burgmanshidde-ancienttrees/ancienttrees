@@ -590,10 +590,13 @@ def check_app_downloads_are_their_own_block():
             "daily_digest.py: app_section calls app_store_downloads_lines(). "
             "App Store downloads is its own block (Hidde, 2026-09-08); folded "
             "in, a PostHog failure takes Apple's numbers down with it.")
+    # Since 2026-10-19 the daily count is a headline row and the table comes on
+    # Mondays (Hidde: "kill a lot out of the digest"), so weekly_block counts.
     if "block(app_store_section" not in src:
         out.append(
-            "daily_digest.py: main() does not call block(app_store_section). "
-            "Without it the digest prints no App Store downloads at all.")
+            "daily_digest.py: main() does not call block(app_store_section) or "
+            "weekly_block(app_store_section). Without it the digest prints no "
+            "App Store downloads table at all.")
     return out
 
 

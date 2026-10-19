@@ -838,7 +838,12 @@ def judgement_lines():
         doc = judgement.load()
     except Exception as exc:          # a submission must never take the digest down
         return ["", "**Submissions:** reading failed (%s)" % exc]
-    rows = doc.get("judgements", [])[:15]
+    # The last seven days, plus anything still open (2026-10-19, the digest cut:
+    # a September verdict he never answered is not this morning's news).
+    week = (datetime.date.today() - datetime.timedelta(days=7)).isoformat()
+    rows = [j for j in doc.get("judgements", [])
+            if not j.get("verdict")
+            or (str(j.get("seen") or "")[:1].isdigit() and str(j.get("seen")) >= week)][:15]
     if not rows:
         return []
     open_n = sum(1 for j in doc.get("judgements", []) if not j.get("verdict"))
@@ -1096,32 +1101,32 @@ def gsc_section(gsc, under_table=None):
             page.replace("https://ancienttrees.app", ""), v["clicks"], v["imp"],
             v["clicks"] * 100.0 / max(v["imp"], 1), top))
 
+    # Hidde, 2026-10-19: "kill a lot out of the digest it is too much". His part
+    # is Google's day table, the top queries and Bing beside it. The work lists
+    # the runs read (content leads, recovery, enrichment, the depth roster) go
+    # to MACHINE, printed below a line at the bottom. The tests and the
+    # winning/losing tables need Google's traffic to say anything, so they wait
+    # behind GOOGLE_DETAIL with the rest of that family.
     lines = [
-        "Search Console, the last 10 days Google will give us (its data lags 2-3 days,"
-        " so the newest row is never yesterday). The newest row is also still"
-        " FILLING: Google backfills for days and backfills impressions harder"
-        " than clicks, so it reads as an unusually good day and is not one"
-        " (08-22 arrived as 12/769 and settled at 17/1030). Position is an"
-        " average across every query, so it dips whenever we start ranking for"
-        " something new:",
+        "Google, the last 10 days it will give us (2-3 days behind; the newest row"
+        " is still filling, so it reads better than it is):",
         "%s" % trend,
         "- Top queries (10d): " + "; ".join(
             "%s (i%d, p%.0f)" % (clean_query(r["keys"][0]), r["impressions"], r["position"]) for r in queries) if queries else "- Top queries: none",
+        *([under_table] if under_table else []),
+    ]
+    MACHINE.extend([
         "- Top pages (10d): " + "; ".join(
             "%s (c%d/i%d)" % (r["keys"][0].replace("https://ancienttrees.app", ""), r["clicks"], r["impressions"]) for r in pages[:5]) if pages else "- Top pages: none",
         gap_line,
-        *([under_table] if under_table else []),
         *recovery_lines(pages, (gsc[7] if len(gsc) > 7 else {}).get("impressions", 0)),
         *enrichment_lines(pages),
         *demand_lines(pages, pairs),
-        *(learning_lines(pages, pairs) if GOOGLE_DETAIL else []),
-        *(grouped_pages_lines(pages, pairs) if GOOGLE_DETAIL else []),
-        *copy_test_lines(),
-        *judgement_lines(),
-        *_weekly(language_lines(pages)),
-        *zero_click_queries(pages, pairs),
-        *leak_lines,
-    ]
+    ])
+    if GOOGLE_DETAIL:
+        lines += [*learning_lines(pages, pairs), *grouped_pages_lines(pages, pairs),
+                  *copy_test_lines(), *_weekly(language_lines(pages)),
+                  *zero_click_queries(pages, pairs), *leak_lines]
     return "\n".join(lines), {"clicks": latest["clicks"], "impressions": latest["impressions"],
                                "prev_clicks": prev["clicks"] if prev else 0,
                                "prev_impressions": prev["impressions"] if prev else 0}
@@ -1653,6 +1658,11 @@ HEADLINE = {}
 WEEKLY = []
 MONDAY = False
 
+# The work lists the night runs read (the depth roster above all), printed
+# below a line at the very bottom so Hidde can stop reading before them
+# (2026-10-19). They stay in DATA.md because CLAUDE.md sends the runs there.
+MACHINE = []
+
 
 def _weekly(lines):
     """Park a block's lines for the Monday section; nothing stays in place."""
@@ -1725,6 +1735,18 @@ def searched_for(rows, days=14):
     said = ", ".join("%s%s" % (t.replace("|", "/")[:48], " (%d times)" % n if n > 1 else "")
                      for t, n in ranked)
     return ["", "**Searched yesterday:** %s." % said]
+
+
+def searched_section(today):
+    """What people typed into our own search yesterday, on its own since the
+    product block left the daily digest (2026-10-19)."""
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not key:
+        return None
+    since = (today - datetime.timedelta(days=2)).isoformat()
+    rows, _ = _supa("/rest/v1/events?select=name,detail,created_at&name=like.search-*"
+                    "&created_at=gte.%sT00:00:00" % since, key)
+    return "\n".join(searched_for(rows)).strip()
 
 
 def ambassador_lines(today):
@@ -3470,7 +3492,9 @@ def app_crashes_section(_today=None):
                 s["count"], s["kind"], s["version"], s["build"], crashes.where(s),
                 s["phones"], s["last"][:10], crashes.fix_label(s, stores) or "none"))
     else:
-        out.append("- No crash or hang reported from a store build.")
+        # Silent on a clean week (2026-10-19, the digest cut): the block only
+        # earns its place when a reader's phone actually crashed.
+        return None
     if other:
         out.append("- Builds not from the App Store (Xcode or review): %d report(s) "
                    "on build %s." % (sum(s["count"] for s in other),
@@ -3979,11 +4003,21 @@ def main():
     # what we do tomorrow, and anything that has not changed a decision in a
     # fortnight should be demoted out of it rather than kept for tidiness.
     #
-    #   1. did the product happen        goal 1, the only block that is the point
-    #   2. the funnel, as rates          which step leaks, which levels cannot say
-    #   3. demand we are wasting         a work queue, not a report
-    #   4. who they are                  slow-moving, three lines daily, full on Mondays
-    #   5. supply and machine            it matters, it rarely changes the day
+    # Cut down 2026-10-19 (Hidde: "kill a lot out of the digest it is too
+    # much"), from about 25 blocks to what he reads:
+    #
+    #   1. his numbers (headline_section, inserted on top at the end)
+    #   2. what needs him: readers' trees to inspect, what readers gave, decisions
+    #   3. what people searched for on our site yesterday
+    #   4. Google and Bing, day by day
+    #   then Monday's slow tables, then a line, then the night run's work lists.
+    #
+    # Gone from the daily read: the product block, the funnel as rates, the app
+    # tables and the app-builder chain (his numbers replace them), photos on
+    # existing trees (a double count of the night run's list), Google Analytics
+    # (a consent-only sample beside Cloudflare's full count). The product and
+    # app blocks still run silently: they feed the "Today:" line and Monday's
+    # ever-totals.
     blocks = []
 
     def block(fn, *a):
@@ -3994,15 +4028,28 @@ def main():
         except Exception as e:
             blocks.append("%s: failed today (%s)." % (fn.__name__, str(e)[:90]))
 
+    def quiet(fn, *a):
+        try:
+            fn(*a)
+        except Exception as e:
+            print("%s (silent): %s" % (fn.__name__, str(e)[:120]))
+
+    def weekly_block(fn, *a):
+        try:
+            t = fn(*a)
+            if t:
+                _weekly([t])
+        except Exception as e:
+            _weekly(["%s: failed today (%s)." % (fn.__name__, str(e)[:90])])
+
     block(reader_trees_to_inspect, today)
     block(readers_gave_section, today)
-    block(photos_on_existing_section, today)
-    block(product_section, today)
-    block(feedback_section, today)
-    block(funnel_section, today, token)
-    block(app_section, today)
-    block(app_builder_section, today)
-    block(app_store_section, today)
+    block(lambda: "\n".join(judgement_lines()).strip())
+    block(searched_section, today)
+    quiet(product_section, today)
+    quiet(app_section, today)
+    weekly_block(feedback_section, today)
+    weekly_block(app_store_section, today)
     block(app_crashes_section, today)
 
     gsc_latest = None
@@ -4016,7 +4063,7 @@ def main():
     try:
         gsc_data = fetch_gsc(today)
         gsc_text, gsc_latest = gsc_section(gsc_data, under_table=bing_text)
-        blocks.append("**Where demand is going to waste**\n\n" + gsc_text)
+        blocks.append("**Search**\n\n" + gsc_text)
         trend = trend_section(gsc_data) if GOOGLE_DETAIL else ""
         if trend:
             blocks.append(trend.strip())
@@ -4025,19 +4072,21 @@ def main():
         if bing_text:
             blocks.append(bing_text)
 
-    # Monday gets the full audience cut, every other day gets the three lines
-    # that can actually move. A 28-day window barely differs from yesterday's
-    # 28-day window, and printing it in full daily buries the blocks above it.
-    block(audience_section, today, token, today.weekday() != 0)
+    # Who visits, from where and on what, moves slowly: Mondays only.
+    weekly_block(audience_section, today, token, False)
+    weekly_block(fetch_rum, token, today)
 
-    block(fetch_rum, token, today)
-    try:
-        _weekly([ga_section(today)])
-    except Exception as e:
-        _weekly(["ga_section: failed today (%s)." % str(e)[:90]])
-    block(night_shift, today)
-    block(night_photos_section, today)
-    block(fetch_machine, today)
+    # The night run's own lists, below a line (2026-10-19).
+    machine = []
+    for fn in (night_shift, night_photos_section, fetch_machine):
+        try:
+            t = fn(today)
+            if t:
+                machine.append(t)
+        except Exception as e:
+            machine.append("%s: failed today (%s)." % (fn.__name__, str(e)[:90]))
+    if MACHINE:
+        machine.append("**Search work lists**\n\n" + "\n".join(l for l in MACHINE if l is not None).strip())
     # The conclusion goes on top (Hidde, 2026-10-15), built last because it
     # reads the numbers the blocks above fetched.
     try:
@@ -4055,6 +4104,9 @@ def main():
     if MONDAY and WEEKLY:
         blocks.append("**Monday: the slow tables.** They rarely change a day's decision, "
                       "so they come once a week.\n\n" + "\n\n".join(WEEKLY))
+    if machine:
+        blocks.append("---\n\n**For the night run, not for you.** You can stop reading here.\n\n"
+                      + "\n\n".join(machine))
     gsc_text = "\n\n".join(blocks)
 
     # The old one-line conclusion at the bottom (Google's freshest day, "no
