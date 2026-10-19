@@ -43,6 +43,10 @@ Also: photo-judge must never send a person's name or address in a User-Agent (on
 
 Then: Google Analytics is the digest's one visitor source and Cloudflare left it (Hidde's call; GA counts only cookie-accepters, the headline says so); the Cloudflare beacon script is still on the site. The Monday mail (weekly-mail.yml, weekly_mail.py) is deleted: alarms now reach Hidde only through a session's brief.py and the digest's URGENT line.
 
+Then Cloudflare left the project altogether (Hidde: "lets get rid of cloudflare alltogether and clean up"): the beacon is off every page, the privacy page no longer names it, visitors.py, country_look.py and country-look.yml are deleted, audience.py and seo_diagnose.py keep only their Search Console halves, and no workflow passes the token. `?notrack=1` still opts our own devices out, now handled by the event tracker in Base.astro. For Hidde (optional): the CLOUDFLARE_ANALYTICS_TOKEN secret and the Web Analytics site in the Cloudflare dashboard can be deleted; nothing reads them.
+
+**Breakage, fixed:** every deploy since 16:45 UTC failed preflight on the Palma fig (plm_006). Its reader deleted their account, photo_takedown.py unlinked the photograph, and `reader_found()` stopped seeing a reader's tree. An unlinked contributor photograph now counts as the reader's evidence (DECISIONS.md 2026-09-04: the picture outlives the account).
+
 ## 2026-10-19 session: privacy audit ("wat als Follow the Money ons onderzoekt")
 
 Closed: names and the follow graph were readable with the website's public key (now signed-in only, via the profile SQL Hidde ran); one served photo (the owner's own Pekingtuin oak) carried GPS (stripped; 1,221 others clean); readers' exact photo times sat in public repo files (78 removed, scripts stop writing them); personal mail addresses in 17 tracked files (masked; two exclusion lists now hashed); ambassadors' mail quotes (out); the shared_trees view listed all 86 shared sightings to anybody (now one tree by its link through `shared_tree()`, waiting in PENDING.sql). Two new ratchet checks in qa.py keep the repo and the photos clean.
