@@ -1,4 +1,5 @@
--- PENDING since 2026-10-19. Paste everything below into Supabase, SQL editor, Run.
+-- APPLIED 2026-10-19 by Hidde (checked: shared_trees refuses the public key,
+-- rpc/shared_tree answers). Nothing pending.
 -- Safe to run twice. Explained in shared-tree-by-link.sql.
 --
 -- ONE SHARED TREE BY ITS LINK, never the list (privacy audit, 2026-10-19).
