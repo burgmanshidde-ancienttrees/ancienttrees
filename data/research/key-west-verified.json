@@ -1,0 +1,28 @@
+[
+ {
+  "id": "kyw_002",
+  "city": "Key West",
+  "name": "The Strangler Figs of the Key West Cemetery",
+  "species": "Strangler Fig (Ficus sp.)",
+  "age_estimate": "over a century",
+  "age_min": 100,
+  "age_max": 180,
+  "girth_cm": 766,
+  "location": {
+   "address": "Historic Key West City Cemetery, Old Town, Key West, FL",
+   "latitude": 24.55583,
+   "longitude": -81.79556,
+   "neighbourhood": "Old Town"
+  },
+  "verified_sources": [
+   "https://www.keysnews.com/news/local/city-tree-commission-postpones-decision-on-cemetery-trees-indefinitely/article_34109605-dc00-4558-9ddf-97e7a4051d10.html (Keys Weekly/Keys News, Feb 2026, quoting the City urban forestry report)",
+   "https://www.keysnews.com/news/local/tree-commission-cancels-meeting-as-debate-brews-over-key-wests-history/article_03988f9c-be57-444f-9b7f-bb6b35f4245d.html (Keys News, Nov 2025)",
+   "https://en.wikipedia.org/wiki/Key_West_Cemetery (cemetery coordinate, 19 acres, founded 1847)"
+  ],
+  "access": "Free. City-owned historic cemetery in Old Town, open to walk through (hours not fetched; writer must not invent any).",
+  "transport": "Old Town Key West at the foot of Solares Hill; walkable from the Old Town streets (no transit stop verified).",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "ONE source family (local press quoting the City's own Urban Forestry report), flagged. The report by Urban Forestry Manager Brett Mayle and Assistant Zach Bentley measured two strangler figs at 96 inches and 53 inches DIAMETER. girth_cm 766 is pi x 96 in (243.8 cm), the larger tree; the second would be about 423 cm. The articles do not say how high the diameters were taken. Species given only as 'strangler figs' (Ficus aurea is the native strangler of the Keys but no source names it here), so genus only. The report shows the figs deeply intertwined with gravestones, breaking slabs or engulfing them. A resident's letter says most graves beneath them date to the 1880s; the cemetery was founded in 1847 after the 1846 hurricane. 'Over century-old' is the paper's wording, no planting date. THE CITY URBAN FORESTERS ASKED TO REMOVE BOTH TREES (item on the Tree Commission agenda since Nov 2025; residents wrote letters of opposition; the Nov 10 meeting was cancelled for lack of quorum, then staff requested indefinite postponement). No decision found as of the last article. A writer must say the trees are under a removal request; before publishing re-check keywest.legistar.com Tree Commission agendas for a removal vote. Alive check: lifecheck RECENT 2025-05-15 is an unrelated iNaturalist observation nearby, not these trees. Exact position inside the 19-acre cemetery NOT found (agenda attachments on keywest.legistar.com not fetched); pin is the cemetery centre, approximate, not a small site. Twin trees: two figs reported, distance apart unknown, delivered as one collectible point only if they stand near each other; otherwise the larger alone."
+ }
+]
