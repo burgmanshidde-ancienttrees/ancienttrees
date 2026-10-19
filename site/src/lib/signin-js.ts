@@ -240,7 +240,8 @@ export const SIGNIN_JS = `
       var slug = location.pathname.split('/').filter(Boolean)[0] || '';
       var q = t && t.dataset.tree ? '?tree=' + encodeURIComponent(t.dataset.tree)
             : (slug && slug !== 'account' ? '?city=' + encodeURIComponent(slug) : '');
-      open.setAttribute('href', '/open' + q);
+      // Another domain, so iOS opens the app (site-config OPEN_APP_URL).
+      open.setAttribute('href', 'https://open.ancienttrees.app/open' + q);
       open.hidden = false;
       // The rule separates continuing from signing in, so it belongs directly
       // under the app button rather than where the sign-in layout left it.

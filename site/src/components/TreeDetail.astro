@@ -35,6 +35,7 @@
 // check_every_language_gets_the_same_controls() in qa.py exists to catch.
 import Breadcrumbs from "./Breadcrumbs.astro";
 import PhotoFigure from "./PhotoFigure.astro";
+import { OPEN_APP_URL } from "../lib/site-config";
 import AddPhoto from "./AddPhoto.astro";
 import WorthIt from "./WorthIt.astro";
 import SaveHeart from "./SaveHeart.astro";
@@ -103,7 +104,11 @@ const register = officialRegister(tree as any);
 const m = /^(.*?)\s*\(([^)]+)\)\s*$/.exec(p.species || "");
 const spCommon = m ? m[1] : p.species;
 
-const openUrl = `/open?tree=${encodeURIComponent(tree.id)}`;
+// ANOTHER DOMAIN ON PURPOSE (2026-10-19, CONVENTIONS.md "Open in app from the
+// website"): iOS opens the app from a universal link only when it is tapped on
+// a different domain, so a link to ancienttrees.app/open from ancienttrees.app
+// always went to the App Store. AllTrails does the same with its link domains.
+const openUrl = `${OPEN_APP_URL}?tree=${encodeURIComponent(tree.id)}`;
 const google = `https://www.google.com/maps/dir/?api=1&destination=${loc.latitude},${loc.longitude}&travelmode=walking`;
 const expandUrl = `${p.cityUrl}#tree=${encodeURIComponent(tree.id)}`;
 const movedTemplate = U.pinMoved(987654).replace("987654", "{m}");
@@ -328,7 +333,7 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
     {/* THE SIDE CARD on a desktop holds what the phone's pinned bar holds. */}
     <aside class="td-side">
       <div class="td-stick">
-        <a class="td-open" href={openUrl} data-ev="app-open"><Fragment set:html={icon("device-mobile")} />{U.openInApp}</a>
+        <a class="td-open" href={openUrl} rel="nofollow" data-ev="app-open"><Fragment set:html={icon("device-mobile")} />{U.openInApp}</a>
         <div class="td-sec">
           <a class="dir-link" href={google} target="_blank" rel="noopener"><Fragment set:html={icon("arrow-bend-up-right")} />{U.takeMeThere}</a>
           <SaveHeart treeId={tree.id} treeName={p.name} labelSave={U.cardSave} labelSaved={U.cardSaved} />
@@ -348,7 +353,7 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
 
   {/* THE BAR (actionBar): the loud button, then two 52 point circles. */}
   <div class="td-bar" aria-label={U.actions}>
-    <a class="td-open" href={openUrl} data-ev="app-open"><Fragment set:html={icon("device-mobile")} />{U.openInApp}</a>
+    <a class="td-open" href={openUrl} rel="nofollow" data-ev="app-open"><Fragment set:html={icon("device-mobile")} />{U.openInApp}</a>
     <a class="dir-link td-round" href={google} target="_blank" rel="noopener" aria-label={U.takeMeThere} title={U.takeMeThere}><Fragment set:html={icon("arrow-bend-up-right")} /></a>
     <button type="button" class="seen-btn td-round" data-tree={tree.id} data-name={p.name}
       data-l-seen={U.seenIt} data-l-done={U.seenItDone} aria-pressed="false" title={U.seenIt}>

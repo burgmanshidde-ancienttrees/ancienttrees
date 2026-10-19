@@ -18,7 +18,7 @@
 // `acct-email` keep their exact names, because account.astro's own script binds
 // the submit and drives the sent/expired states off them.
 import { signInCopy } from "../lib/signin-strings";
-import { APPLE_SIGNIN } from "../lib/site-config";
+import { APPLE_SIGNIN, OPEN_APP_URL } from "../lib/site-config";
 
 interface Props { lang?: string; prefix?: string }
 const { lang = "en", prefix = "signin" } = Astro.props as Props;
@@ -33,7 +33,7 @@ const Heading = p === "signin" ? "h3" : "h1";
 
 {/* Continue in the app: the loud slot on a phone, hidden everywhere else,
     revealed by signin-js. A laptop cannot honour it. */}
-<a class="oauth-btn oauth-loud" id={`${p}-openapp`} href="/open" hidden data-ev="app-open"><span>{T.openApp}</span></a>
+<a class="oauth-btn oauth-loud" id={`${p}-openapp`} href={OPEN_APP_URL} rel="nofollow" hidden data-ev="app-open"><span>{T.openApp}</span></a>
 
 {/* Google is the front screen and Apple is behind More options, which is
     what AllTrails does and what Hidde asked for on 2026-09-17: "Google hoort
