@@ -23,6 +23,8 @@ Held (photo parked, nothing live changed): lux_009, nyc_022, utr_037, yak_002, s
 
 Also: photo-judge must never send a person's name or address in a User-Agent (one batch did once, to Wikimedia, in a failed request).
 
+**The digest is short now** (Hidde's yes, DECISIONS.md 2026-10-19): it opens with his numbers (visits and from search, first-time downloads, accounts, back within 30 days, Want to go, collected, readers' contributions), then readers, decisions, yesterday's site searches, Google and Bing. About 60 lines a day; Monday adds the slow tables; the night run's lists (shift, photo approvals with reversals, depth roster) sit below a line at the bottom. Google Analytics is out. Dry-run here with Supabase and App Store keys; Cloudflare, Google and PostHog rows are first seen in tomorrow's CI entry.
+
 ## 2026-10-19 session: privacy audit ("wat als Follow the Money ons onderzoekt")
 
 Closed: names and the follow graph were readable with the website's public key (now signed-in only, via the profile SQL Hidde ran); one served photo (the owner's own Pekingtuin oak) carried GPS (stripped; 1,221 others clean); readers' exact photo times sat in public repo files (78 removed, scripts stop writing them); personal mail addresses in 17 tracked files (masked; two exclusion lists now hashed); ambassadors' mail quotes (out); the shared_trees view listed all 86 shared sightings to anybody (now one tree by its link through `shared_tree()`, waiting in PENDING.sql). Two new ratchet checks in qa.py keep the repo and the photos clean.
