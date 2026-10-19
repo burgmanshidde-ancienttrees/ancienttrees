@@ -315,9 +315,6 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       )}
       <div class="panel-foot">
         <p class="subtle-suggest">Know one in {cityName} we missed, or spot a mistake here? <a href={submitLink("tree")}>Tell us</a>.</p>
-        <div class="take-with-you">
-          <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>{trees.length === 1 ? "Download this tree" : `Download all ${nTrees(trees.length)}`}</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
-        </div>
         {/* The word "walk" only where the app's walks feed has walks worth
             pointing at (hasWalksPage, same planner as /api/walks.json). */}
         <div class="app-pitch">

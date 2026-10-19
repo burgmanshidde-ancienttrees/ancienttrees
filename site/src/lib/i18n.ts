@@ -112,9 +112,6 @@ export interface UIStrings {
   mappingAll: string;
   missingOrWrong: (city: string) => string;
   tellUs: string;
-  goingThere: string;
-  downloadTrees: (n: number) => string;
-  worksOffline: string;
   faqHeading: string;
   moreOnOldest: string;
   /** City page foot: the eight closest cities, then a link to /cities. */
@@ -545,9 +542,6 @@ const EN: UIStrings = {
   mappingAll: "We are mapping every remarkable tree in the world.",
   missingOrWrong: (city) => `Do you know one in ${city} we are missing, or see a mistake here?`,
   tellUs: "Tell us",
-  goingThere: "Going?",
-  downloadTrees: (n) => `Download the ${n} trees`,
-  worksOffline: "as a map file and open it in Google Maps, Organic Maps or any hiking app. It works offline.",
   faqHeading: "Frequently asked questions",
   moreOnOldest: "More on the oldest tree",
   nearbyCities: "Ancient trees in nearby cities",
@@ -1052,9 +1046,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     mappingAll: "Estamos cartografiando todos los \u00e1rboles singulares del mundo.",
     missingOrWrong: (city) => `\u00bfConoces uno en ${city} que nos falte, o ves aqu\u00ed un error?`,
     tellUs: "Cu\u00e9ntanoslo",
-    goingThere: "\u00bfVas a ir?",
-    downloadTrees: (n) => `Descarga los ${n} \u00e1rboles`,
-    worksOffline: "como archivo de mapa y \u00e1brelo en Google Maps, Organic Maps o cualquier aplicaci\u00f3n de senderismo. Funciona sin conexi\u00f3n.",
     faqHeading: "Preguntas frecuentes",
     moreOnOldest: "M\u00e1s sobre el \u00e1rbol m\u00e1s antiguo",
     nearbyCities: "Árboles antiguos en ciudades cercanas",
@@ -1343,9 +1334,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     mappingAll: "Stiamo mappando tutti gli alberi notevoli del mondo.",
     missingOrWrong: (city) => `Ne conosci uno a ${city} che ci manca, o vedi un errore qui?`,
     tellUs: "Segnalacelo",
-    goingThere: "Ci vai?",
-    downloadTrees: (n) => `Scarica i ${n} alberi`,
-    worksOffline: "come file di mappa e aprilo in Google Maps, Organic Maps o in qualsiasi app da escursionismo. Funziona anche offline.",
     faqHeading: "Domande frequenti",
     moreOnOldest: "Altro sull'albero pi\u00f9 antico",
     nearbyCities: "Alberi antichi nelle città vicine",
@@ -1634,9 +1622,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     mappingAll: "We brengen alle bijzondere bomen ter wereld in kaart.",
     missingOrWrong: (city) => `Ken je er een in ${city} die hier mist, of zie je een fout?`,
     tellUs: "Laat het ons weten",
-    goingThere: "Ga je erheen?",
-    downloadTrees: (n) => `Download de ${n} bomen`,
-    worksOffline: "als kaartbestand en open het in Google Maps, Organic Maps of een wandelapp naar keuze. Werkt ook zonder internet.",
     faqHeading: "Veelgestelde vragen",
     moreOnOldest: "Meer over de oudste boom",
     nearbyCities: "Oude bomen in steden in de buurt",
@@ -1925,9 +1910,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     mappingAll: "Wir kartieren alle bemerkenswerten B\u00e4ume der Welt.",
     missingOrWrong: (city) => `Kennen Sie einen in ${city}, der hier fehlt, oder sehen Sie einen Fehler?`,
     tellUs: "Sagen Sie es uns",
-    goingThere: "Sie fahren hin?",
-    downloadTrees: (n) => `Die ${n} B\u00e4ume herunterladen`,
-    worksOffline: "als Kartendatei und \u00f6ffnen Sie sie in Google Maps, Organic Maps oder einer Wander-App. Funktioniert auch offline.",
     faqHeading: "H\u00e4ufige Fragen",
     moreOnOldest: "Mehr zum \u00e4ltesten Baum",
     nearbyCities: "Alte Bäume in Städten in der Nähe",
@@ -2216,9 +2198,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     mappingAll: "Estamos a mapear todas as \u00e1rvores not\u00e1veis do mundo.",
     missingOrWrong: (city) => `Conhece alguma em ${city} que nos falte, ou v\u00ea aqui um erro?`,
     tellUs: "Diga-nos",
-    goingThere: "Vai l\u00e1?",
-    downloadTrees: (n) => `Descarregue as ${n} \u00e1rvores`,
-    worksOffline: "como ficheiro de mapa e abra-o no Google Maps, Organic Maps ou em qualquer aplica\u00e7\u00e3o de caminhadas. Funciona sem liga\u00e7\u00e3o.",
     faqHeading: "Perguntas frequentes",
     moreOnOldest: "Mais sobre a \u00e1rvore mais antiga",
     nearbyCities: "Árvores antigas em cidades próximas",
@@ -2507,9 +2486,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     mappingAll: "Nous cartographions tous les arbres remarquables du monde.",
     missingOrWrong: (city) => `Vous en connaissez un \u00e0 ${city} qui manque ici, ou vous voyez une erreur ?`,
     tellUs: "Dites-le-nous",
-    goingThere: "Vous y allez ?",
-    downloadTrees: (n) => `T\u00e9l\u00e9charger les ${n} arbres`,
-    worksOffline: "comme fichier de carte et ouvrez-le dans Google Maps, Organic Maps ou n'importe quelle application de randonn\u00e9e. Fonctionne hors ligne.",
     faqHeading: "Questions fr\u00e9quentes",
     moreOnOldest: "En savoir plus sur l'arbre le plus vieux",
     nearbyCities: "Arbres anciens dans les villes voisines",
@@ -2797,9 +2773,6 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     mappingAll: "\u4e16\u754c\u4e2d\u306e\u9280\u91cd\u306a\u6a39\u6728\u3092\u5730\u56f3\u306b\u3057\u3066\u3044\u307e\u3059\u3002",
     missingOrWrong: (city) => `${city}\u3067\u629c\u3051\u3066\u3044\u308b\u6a39\u6728\u3092\u3054\u5b58\u3058\u3067\u3059\u304b\u3001\u307e\u305f\u306f\u8aa4\u308a\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u304b\u3002`,
     tellUs: "\u304a\u77e5\u3089\u305b\u304f\u3060\u3055\u3044",
-    goingThere: "\u884c\u304d\u307e\u3059\u304b\u3002",
-    downloadTrees: (n) => `${n}\u672c\u5206\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9`,
-    worksOffline: "\u5730\u56f3\u30d5\u30a1\u30a4\u30eb\u3068\u3057\u3066\u3001Google Maps\u3084Organic Maps\u306a\u3069\u3067\u958b\u3051\u307e\u3059\u3002\u30aa\u30d5\u30e9\u30a4\u30f3\u3067\u3082\u4f7f\u3048\u307e\u3059\u3002",
     faqHeading: "\u3088\u304f\u3042\u308b\u8cea\u554f",
     moreOnOldest: "\u6700\u3082\u53e4\u3044\u6a39\u6728\u306b\u3064\u3044\u3066",
     nearbyCities: "近くの都市の古木",

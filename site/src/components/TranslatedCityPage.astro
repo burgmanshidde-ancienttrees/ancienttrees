@@ -178,10 +178,7 @@ const cityHasQuestion = hasQuestionPage(city);
       )}
       <div class="panel-foot">
         <p class="subtle-suggest">{U.missingOrWrong(tr.city)} <a href="/contribute?kind=tree">{U.tellUs}</a>.</p>
-        <div class="take-with-you">
-          <strong>{U.goingThere}</strong> <a href={`/${cslug}.gpx`} download>{U.downloadTrees(trees.length)}</a> {U.worksOffline}
-        </div>
-        {/* Between the offline file and the FAQ, exactly where the English
+        {/* Above the FAQ, exactly where the English
             city page puts it. Translated 2026-09-12. */}
         <div class="app-pitch">
           <strong>{withWalks ? U.appPitchCityTitle : U.appPitchTreeTitle}</strong>
