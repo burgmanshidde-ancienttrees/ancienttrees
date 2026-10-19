@@ -62,7 +62,9 @@ Ours today: TreeDetail's button points at ancienttrees.app/open, the same domain
 
 **Reference: Apple Maps, tapped by hand in the iOS 26 simulator** (search "park" in London: pins on the map, results in the sheet, the same arrangement as our map tab). Tap a pin: the pin grows in place and the SAME sheet turns into that place (name, kind, share, a cross, Directions, photos); no card floats over the list and no page is pushed. The cross puts the results list back as it was and the pin shrinks. Screenshots were shown to Hidde in the preview, not committed (they carry third-party photographs).
 
-Ours (MapTab.swift `onSelectTree`) pushes the full tree page on a pin tap, which came in on 2026-08-25 when a tap did nothing at all. Not yet changed: Hidde is choosing.
+Ours (MapTab.swift `onSelectTree`) pushed the full tree page on a pin tap, which came in on 2026-08-25 when a tap did nothing at all.
+
+**What Hidde chose (2026-10-19), after seeing three rounds rendered:** the tree's own list card rises in the sheet ("using the card in the list and make it come up makes sense"); a separate title row, photo and story did "not look good". **No cross ON the app card** ("the cross seems unconventional", then "or make the X more visible?"): the cross sits in the sheet's top right as in the Apple Maps recording, our SheetCloseButton, and the list also comes back when the sheet is swiped down or the empty map is tapped. On the website at desktop width the card floats on the map beside the pin with save and a cross, like Airbnb's map card (his screenshot, 2026-10-19; about 327 by 358 points there, ours about 300 by 290). On a phone the website does what the app does.
 
 ---
 

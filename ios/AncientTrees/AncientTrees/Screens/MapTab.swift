@@ -358,7 +358,16 @@ struct MapTab: View {
                 // Otherwise the count, outside the scroll view: it
                 // stays visible while the list scrolls and it is the handle
                 // that makes the sheet draggable again once it has (2026-08-25).
-                if selected == nil { countStrip }
+                if selected == nil {
+                    countStrip
+                } else {
+                    // THE CROSS WHERE APPLE MAPS HAS IT: the sheet's top right,
+                    // the grey circle every sheet of ours already wears (Hidde,
+                    // 2026-10-19: on the photograph it read as unconventional,
+                    // "or make the X more visible?").
+                    HStack { Spacer(); SheetCloseButton(action: closePlace, onGround: true) }
+                        .frame(height: 36, alignment: .top)
+                }
                 // Invisible on purpose: a marker for testTappingAPinOpensItsTree
                 // to wait on, so it stops sleeping and guessing at when the
                 // pins are actually tappable. See TreeMap.onMapIdle.
@@ -378,10 +387,7 @@ struct MapTab: View {
                 // scrolls, and the grabber at the top stays outside the scroll
                 // view so there is always a way back down.
                 if let t = selected {
-                    TreePlaceBody(tree: t,
-                                  km: located ? t.distanceKm(from: origin.lat, origin.lng) : nil,
-                                  onOpen: { navigator.push = .tree(t.id) },
-                                  onClose: closePlace)
+                    TreePlaceBody(tree: t, onOpen: { navigator.push = .tree(t.id) })
                 } else {
                     sheet
                 }
@@ -612,6 +618,14 @@ struct MapTab: View {
                 // Let go by a tap on the empty map: the same as the cross.
                 withAnimation(.spring(duration: 0.3)) { sheetHeight = before }
                 heightBeforeSelect = nil
+            }
+        }
+        // SWIPED DOWN TO THE LIP lets the tree go too: the third way back to
+        // the list, beside the cross and a tap on the empty map.
+        .onChange(of: sheetHeight) { _, new in
+            if new == .peek, selected != nil {
+                heightBeforeSelect = nil
+                selected = nil
             }
         }
     }
