@@ -2259,6 +2259,70 @@ def night_photos_section(today):
                       "| Day | Tree | Where | Overrule |", "|---|---|---|---|", *out])
 
 
+def photos_on_existing_section(_today=None):
+    """Photographs that reached trees that were already live, the last 24 hours.
+
+    Hidde, 2026-10-19: "kun je vanaf nu naast nieuwe bomen ook me laten weten
+    welke fotos zijn toegevoegd aan bestaande bomen". Photos are the recovery
+    lane, and until now a photo only showed here when a reader sent it or the
+    viewing pass approved it; one a session or his review page approved went
+    by unseen. Read from git, every city file 24 hours ago against now, so it
+    counts every route a photograph takes: a tree that existed then and now
+    has an approved lead photo it did not have, or more further photographs.
+    New trees are left out, they are the trees column above."""
+    import glob as _glob
+    try:
+        sha = subprocess.run(
+            ["git", "-C", ROOT, "log", "-1", "--before=24 hours ago", "--format=%H"],
+            capture_output=True, text=True, timeout=60).stdout.strip()
+    except Exception:
+        return None
+    if not sha:
+        return None
+
+    def approved(t):
+        ph = t.get("photo") or {}
+        return ph.get("url") if ph.get("status") == "approved" and ph.get("url") else None
+
+    def by(t):
+        ph = t.get("photo") or {}
+        if ph.get("source") == "contributor":
+            return "a reader"
+        # Only the viewing pass stamps approved_by; a session and his review
+        # page leave it empty, so they share one label.
+        return "night run" if ph.get("approved_by") == "viewing pass" else "session or your review"
+
+    out = []
+    for fp in sorted(_glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
+        rel = os.path.relpath(fp, ROOT)
+        try:
+            old = subprocess.run(["git", "-C", ROOT, "show", "%s:%s" % (sha, rel)],
+                                 capture_output=True, text=True, timeout=60)
+            before = {t.get("id"): t for t in json.loads(old.stdout).get("trees", [])} \
+                if old.returncode == 0 else {}
+            c = json.load(open(fp))
+        except (ValueError, OSError, subprocess.SubprocessError):
+            continue
+        slug = os.path.basename(fp)[:-5]
+        for t in c.get("trees", []):
+            was = before.get(t.get("id"))
+            if not was:
+                continue
+            what = []
+            if approved(t) and approved(t) != approved(was):
+                what.append("first photograph" if not approved(was) else "new lead photograph")
+            extra = len(t.get("photos") or []) - len(was.get("photos") or [])
+            if extra > 0:
+                what.append("%d more photograph%s" % (extra, "s" if extra > 1 else ""))
+            if what:
+                out.append("| %s | %s | %s | %s | %s |" % (
+                    t.get("name"), c.get("city"), ", ".join(what), by(t), _page_link(slug, t)))
+    if not out:
+        return "**Photographs added to trees already live, last 24 hours:** none."
+    return "\n".join(["**Photographs added to trees already live, last 24 hours** (%d)" % len(out), "",
+                      "| Tree | Where | What | By | Page |", "|---|---|---|---|---|", *out])
+
+
 def feedback_section(today):
     """What readers actually told us, one line each, so the count can be judged.
 
@@ -3791,6 +3855,7 @@ def main():
 
     block(reader_trees_to_inspect, today)
     block(readers_gave_section, today)
+    block(photos_on_existing_section, today)
     block(product_section, today)
     block(feedback_section, today)
     block(funnel_section, today, token)

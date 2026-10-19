@@ -98,6 +98,17 @@ def main():
         print("DATA.md carries no day entry")
         return 1
     day = head.split(" ")[0]
+    # An entry written before 2026-10-19 has no block for photographs on
+    # existing trees; compute it now so the page always answers that.
+    if "Photographs added to trees already live" not in md:
+        try:
+            import daily_digest
+            extra = daily_digest.photos_on_existing_section()
+        except Exception:
+            extra = None
+        if extra:
+            md = extra + " (computed now)\n\n" + md if extra.endswith("none.") else \
+                extra.replace("\n\n", " (computed now)\n\n", 1) + "\n\n" + md
     page = PAGE % {"day": html.escape(day), "body": render(md)}
     for folder, name in ((OUT, "index.html"), (PREVIEW, "digest.html")):
         try:
