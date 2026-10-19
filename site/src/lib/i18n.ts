@@ -135,6 +135,8 @@ export interface UIStrings {
   appPitchTreeBody: string;
   appPitchCityTitle: string;
   appPitchCityBody: string;
+  /** The city pitch where hasWalksPage() is false: no walk promised. */
+  appPitchCityBodyNoWalks: string;
   getTheApp: string;
   whereAmI: string;
   cardMore: string;
@@ -557,6 +559,7 @@ const EN: UIStrings = {
   appPitchTreeBody: "Ticking this one off, walks past several more, and your collection growing city by city: that is the Ancient Trees app.",
   appPitchCityTitle: "Walk them with the app",
   appPitchCityBody: "The walking routes, your saved trees, and the collection of the ones you have stood in front of: the Ancient Trees app.",
+  appPitchCityBodyNoWalks: "Your saved trees and every one you tick off, city by city: the Ancient Trees app.",
   getTheApp: "Get the app",
   whereAmI: "Where am I",
   cardMore: "Read more and get directions \u2192",
@@ -1057,6 +1060,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     appPitchTreeBody: "Marcar este, rutas a pie que pasan por varios más y tu colección creciendo ciudad a ciudad: eso es la aplicación Ancient Trees.",
     appPitchCityTitle: "Recórrelos con la aplicación",
     appPitchCityBody: "Las rutas a pie, tus árboles guardados y la colección de aquellos ante los que ya te has plantado: la aplicación Ancient Trees.",
+    appPitchCityBodyNoWalks: "Tus árboles guardados y cada uno que marcas, ciudad a ciudad: la aplicación Ancient Trees.",
     getTheApp: "Descargar la aplicación",
     whereAmI: "D\u00f3nde estoy",
     cardMore: "Leer m\u00e1s y c\u00f3mo llegar \u2192",
@@ -1344,6 +1348,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     appPitchTreeBody: "Spuntare questo, camminate che ne toccano molti altri e la tua collezione che cresce città dopo città: questa è l'app Ancient Trees.",
     appPitchCityTitle: "Percorrili con l'app",
     appPitchCityBody: "Gli itinerari a piedi, i tuoi alberi salvati e la collezione di quelli davanti a cui ti sei già fermato: l'app Ancient Trees.",
+    appPitchCityBodyNoWalks: "I tuoi alberi salvati e ognuno che spunti, città dopo città: l'app Ancient Trees.",
     getTheApp: "Scarica l'app",
     whereAmI: "Dove mi trovo",
     cardMore: "Leggi di pi\u00f9 e come arrivare \u2192",
@@ -1631,6 +1636,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     appPitchTreeBody: "Deze afvinken, wandelingen langs een stuk of wat andere, en je verzameling die per stad groeit: dat is de Ancient Trees-app.",
     appPitchCityTitle: "Loop ze met de app",
     appPitchCityBody: "De wandelroutes, je bewaarde bomen en de verzameling van de bomen waar je voor hebt gestaan: de Ancient Trees-app.",
+    appPitchCityBodyNoWalks: "Je bewaarde bomen en elke boom die je afvinkt, stad voor stad: de Ancient Trees-app.",
     getTheApp: "Download de app",
     whereAmI: "Waar ben ik",
     cardMore: "Lees meer en route \u2192",
@@ -1918,6 +1924,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     appPitchTreeBody: "Diesen abhaken, Spaziergänge an mehreren weiteren vorbei und deine Sammlung, die Stadt für Stadt wächst: das ist die Ancient-Trees-App.",
     appPitchCityTitle: "Lauf sie mit der App ab",
     appPitchCityBody: "Die Spazierrouten, deine gespeicherten Bäume und die Sammlung derer, vor denen du gestanden hast: die Ancient-Trees-App.",
+    appPitchCityBodyNoWalks: "Deine gespeicherten Bäume und jeder, den du abhakst, Stadt für Stadt: die Ancient-Trees-App.",
     getTheApp: "App holen",
     whereAmI: "Wo bin ich",
     cardMore: "Mehr lesen und Anfahrt \u2192",
@@ -2205,6 +2212,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     appPitchTreeBody: "Marcar esta, percursos a pé que passam por várias outras e a sua coleção a crescer cidade a cidade: é isso a aplicação Ancient Trees.",
     appPitchCityTitle: "Percorra-as com a aplicação",
     appPitchCityBody: "Os percursos a pé, as suas árvores guardadas e a coleção daquelas diante das quais já esteve: a aplicação Ancient Trees.",
+    appPitchCityBodyNoWalks: "As suas árvores guardadas e cada uma que marca, cidade a cidade: a aplicação Ancient Trees.",
     getTheApp: "Obter a aplicação",
     whereAmI: "Onde estou",
     cardMore: "Ler mais e como chegar \u2192",
@@ -2492,6 +2500,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     appPitchTreeBody: "Cocher celui-ci, des marches qui en longent plusieurs autres, et votre collection qui grandit ville après ville : voilà l'application Ancient Trees.",
     appPitchCityTitle: "Parcourez-les avec l'application",
     appPitchCityBody: "Les itinéraires à pied, vos arbres enregistrés et la collection de ceux devant lesquels vous vous êtes tenu : l'application Ancient Trees.",
+    appPitchCityBodyNoWalks: "Vos arbres enregistrés et chacun de ceux que vous cochez, ville après ville : l'application Ancient Trees.",
     getTheApp: "Obtenir l'application",
     whereAmI: "O\u00f9 suis-je",
     cardMore: "Lire la suite et l’acc\u00e8s \u2192",
@@ -2778,6 +2787,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     appPitchTreeBody: "この木にチェックを入れ、ほかの何本かを巡る散歩をして、街ごとにコレクションが増えていく。それがAncient Treesのアプリです。",
     appPitchCityTitle: "アプリを持って歩く",
     appPitchCityBody: "散歩コース、保存した木、そして実際に訪れた木のコレクション。Ancient Treesのアプリです。",
+    appPitchCityBodyNoWalks: "保存した木と、チェックを入れた木が街ごとに並ぶ。Ancient Treesのアプリです。",
     getTheApp: "アプリを入手",
     whereAmI: "\u73fe\u5728\u5730",
     cardMore: "\u8a73\u3057\u304f\u898b\u308b\u30fb\u884c\u304d\u65b9 \u2192",

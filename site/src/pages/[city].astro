@@ -28,6 +28,7 @@ import { SHARE_JS } from "../lib/share-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { type WalkMarker } from "../lib/walks";
+import { hasWalksPage } from "../lib/city-walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor, nearbyCitiesFor, cityCentre } from "../lib/other-cities";
@@ -87,6 +88,7 @@ const cityName = city.data.city;
 const country = city.data.country;
 const cslug = city.id;
 const trees = renderableTrees(city);
+const withWalks = hasWalksPage(city);
 // The city's own trees first, then "A day trip away" (lib/day-trips.ts).
 const split = splitForPage(city.data.city, trees as any);
 // Contract B v1.18: a one-tree place has no question page to link to.
@@ -316,9 +318,11 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
         <div class="take-with-you">
           <strong>Going there?</strong> <a href={`/${cslug}.gpx`} download>{trees.length === 1 ? "Download this tree" : `Download all ${nTrees(trees.length)}`}</a> as a map file and open it in Google Maps, Organic Maps or any hiking app. Works offline, no app needed.
         </div>
+        {/* The word "walk" only where the app's walks feed has walks worth
+            pointing at (hasWalksPage, same planner as /api/walks.json). */}
         <div class="app-pitch">
-          <strong>Walk them with the app</strong>
-          <p>The walking routes, your saved trees, and the collection of the ones you have stood in front of: the Ancient Trees app.</p>
+          <strong>{withWalks ? ui("en").appPitchCityTitle : ui("en").appPitchTreeTitle}</strong>
+          <p>{withWalks ? ui("en").appPitchCityBody : ui("en").appPitchCityBodyNoWalks}</p>
           <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">Get the app</a>
         </div>
 

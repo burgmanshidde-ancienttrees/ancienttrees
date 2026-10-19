@@ -22,6 +22,7 @@ import { speciesIcon } from "../lib/species-icons";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { mapHead } from "../lib/map";
 import { type WalkMarker } from "../lib/walks";
+import { hasWalksPage } from "../lib/city-walks";
 import { cityMapScript } from "../lib/city-map-script";
 import { SHEET_JS } from "../lib/sheet-js";
 import { SHARE_JS } from "../lib/share-js";
@@ -38,6 +39,7 @@ const { lang, city, tr, fallback = false } = Astro.props as Props;
 
 const U = ui(lang);
 const cslug = city.id;
+const withWalks = hasWalksPage(city);
 /** Where this city's tree and question pages live. A translated city has them
  * in its own language; a fallback city does not, because only real
  * translations render tree pages (i18n.ts allTreePathsFor, 2026-09-17), so its
@@ -182,8 +184,8 @@ const cityHasQuestion = hasQuestionPage(city);
         {/* Between the offline file and the FAQ, exactly where the English
             city page puts it. Translated 2026-09-12. */}
         <div class="app-pitch">
-          <strong>{U.appPitchCityTitle}</strong>
-          <p>{U.appPitchCityBody}</p>
+          <strong>{withWalks ? U.appPitchCityTitle : U.appPitchTreeTitle}</strong>
+          <p>{withWalks ? U.appPitchCityBody : U.appPitchCityBodyNoWalks}</p>
           <a class="go-btn" href="/app" data-app-modal data-ev="app-cta">{U.getTheApp}</a>
         </div>
         <h2>{U.faqHeading}</h2>
