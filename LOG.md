@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session: three Randenbroek trees live in Amersfoort, from IVN's expert list
+
+**Live on /amersfoort (21 trees, English and Dutch):** ame_019 the oak on the pond bank behind Huize Randenbroek (LRMB 1677723, 5.34 m round, 25 m) carries both ages, about 160 by the register and about 375 by the local expert's 1650, and the page's oldest-tree answer now says the expert's date contests the Hertekop oak's title; ame_020 the pair of planes at the park gate (LRMB 1680326, 4.81 m, 30 m, observed by the register July 2026); ame_021 the two-stemmed yew by the house (LRMB 1680327, 19 m). Pins are the register's, confirmed; estate history (Jacob van Campen, 1626 onwards) from the Rijksmonumentenregister. No photos yet, so Bing only until one lands. The expert is not named anywhere.
+**Not shipped, and why:** the copper beech before the house is felled (LRMB "Gekapt", status 5). The weeping ash in the Provenierssteeg is also status 5 in the register (dead or felled, last seen December 2024), though the expert's October 2026 list still gives it; held in data/leads/amersfoort.json until someone confirms it stands. **For Hidde:** the IVN reply in out/tmp/reply-ivn-amersfoort.md now asks whether that ash still stands instead of saying it is going up; it is ready to send.
+Found in passing: the LRMB file holds 4,472 status 5 (dead or felled) rows, and `passcheck.py --brief` lists them as candidates. No live tree points at one.
+
 ## 2026-10-19 session with Hidde: merging trees moves into the menu, and readers can report a tree that is on the map twice
 App: the green "Is this <name>?" box on a tree you added is gone (Hidde: "hell intrusive flow for how rare it is"). Instead the ⋯ menu on your own tree has "Merge with another tree": a list of our nearest trees with search, then "Merge into <name>?" and "Merge trees". It is instant (it only changes your own tree) and lands on our tree with "Trees merged". App and web: "Something's wrong" has a new chip, "It's on the map twice", with "Which other tree is it?" in all eight languages; those reports are reviewed by a run, never merged on the reader's word (rule in CLAUDE.md, Reader input).
 

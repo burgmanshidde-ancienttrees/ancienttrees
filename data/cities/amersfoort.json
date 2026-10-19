@@ -3,9 +3,9 @@
   "country": "Netherlands",
   "status": "needs_curation",
   "intro": "Around 1388 Amersfoort built a second city wall, heaviest on the northeast side because that was the direction Gelre would come from. The wall is mostly gone and what is left of it is a park with old trees growing out of the rampart, including a catalpa that flowers hard enough to stop people. The oldest tree in the city is nowhere near it: an oak at a crossroads called the Hertekop, where a hunting lodge hung with antlers became a pub, then a meeting point, and then a motorway junction. The oak is what is left.",
-  "meta_description": "Eighteen remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a motorway, and a plane the city built a school around.",
-  "question_meta": "Amersfoort's oldest tree is the oak at the Hertekop crossroads, banded 1750 to 1800. Where it stands, and seventeen more worth the walk.",
-  "question_answer": "The oldest tree in Amersfoort is the oak at the Hertekop, on the Arnhemseweg where it crosses the Dodeweg beside the A28 slip road, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. The crossroads takes its name from a hunting chalet that once stood there with deer antlers fixed to it. That building became an inn, then a well known meeting place and a starting point for walks and outings, and then it disappeared, when a southern ring road was laid around the city and later joined to a new trunk road from Utrecht. The junction that resulted bears no resemblance to the place the tree was planted in. The oak is the only part of the Hertekop still standing.",
+  "meta_description": "21 remarkable trees in Amersfoort: a catalpa on a 14th-century rampart, an oak that outlasted a motorway, and a plane the city built a school around.",
+  "question_meta": "Amersfoort's oldest tree is the oak at the Hertekop crossroads, banded 1750 to 1800. Where it stands, and twenty more worth the walk.",
+  "question_answer": "The oldest tree in Amersfoort is the oak at the Hertekop, on the Arnhemseweg where it crosses the Dodeweg beside the A28 slip road, which the national register places in a planting band of 1750 to 1800, so between about 225 and 275 years old. The crossroads takes its name from a hunting chalet that once stood there with deer antlers fixed to it. That building became an inn, then a well known meeting place and a starting point for walks and outings, and then it disappeared, when a southern ring road was laid around the city and later joined to a new trunk road from Utrecht. The junction that resulted bears no resemblance to the place the tree was planted in. The oak is the only part of the Hertekop still standing. One tree contests the title: a local tree expert dates the oak on the pond bank in Park Randenbroek to 1650, though the register bands it to the 1860s.",
   "question_context": "Ages here come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so every age on this page is a band and none is narrowed to look precise. The register is the 2024 edition and is the main source for these trees, which is why they are all flagged. One of them is a special case. The plane on the Schimmelpenninckkade grows inside the playground of the Sint Jorisschool, and an earlier version of this page left it out for that reason. It is here now because the register records it as both visitable and visible, and because you can see the whole crown from the public quay, which is where this page sends you: the yard is a working school and is not somewhere to walk into. Where the register describes a tree's condition we pass that on, as with the weeping lime in Park Schothorst, whose root flare is walked on constantly and which the register thinks is standing up to it. Pins marked approximate mean we know the place and not the trunk.",
   "hero_tree_id": "ame_008",
   "oldest_tree_id": "ame_002",
@@ -24,7 +24,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "All eighteen can be seen from public ground, with two qualifications. The Plantsoen Oost and Park Schothorst are public parks, the Hertekop oak stands at a road junction, and most of the rest are on streets, squares and a cemetery. The plane of the Sint Jorisschool is inside a school playground, so you look at it from the Schimmelpenninckkade rather than walking in."
+      "a": "All twenty-one can be seen from public ground, with two qualifications. The Plantsoen Oost, Park Schothorst and Park Randenbroek are public parks, the Hertekop oak stands at a road junction, and most of the rest are on streets, squares and a cemetery. The plane of the Sint Jorisschool is inside a school playground, so you look at it from the Schimmelpenninckkade rather than walking in."
     }
   ],
   "trees": [
@@ -795,6 +795,125 @@
         "url": null
       },
       "verify_notes": "2026-10-19: IVN Amersfoort forwarded a local tree expert's checked list (trees of 80 years and over). It gives 'Hollandse linde, Op 't Havik naast de brug, 1850'. Added as a local estimate beside the register band; the expert's name is not recorded here."
+    },
+    {
+      "id": "ame_019",
+      "name": "The Oak at the Randenbroek Pond",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 160 years by the register; about 375 years by a local tree expert's estimate",
+      "age_min": 156,
+      "age_max": 376,
+      "age_basis": "source",
+      "location": {
+        "address": "Behind the house on the bank of the pond, Park Randenbroek, Heiligenbergerweg, Amersfoort",
+        "latitude": 52.148872,
+        "longitude": 5.398287,
+        "neighbourhood": "Park Randenbroek"
+      },
+      "girth_cm": 534,
+      "height_m": 25,
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677723&outFields=*&f=json",
+        "https://monumentenregister.cultureelerfgoed.nl/print/pdf/node/572058",
+        "https://en.wikipedia.org/wiki/Jacob_van_Campen"
+      ],
+      "access": "Free. Public municipal park around the house of Randenbroek, no ticket.",
+      "transport": "About 2 km on foot south-east of Amersfoort Centraal, and about 700 m south of the Monnikendam water gate.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two counts put this oak two centuries apart. The national register of monumental trees bands its planting to the 1860s, which makes it about 160 years old. A local tree expert's list, sent to us through IVN Amersfoort in October 2026, names it as the oldest tree in the city and dates it to 1650, which would make it about 375. This page carries both.\n\nIf the local date is right, the oak went into the ground while the painter and architect Jacob van Campen, who designed Amsterdam's town hall, was living here. He was granted Randenbroek in 1626, made the house habitable again after imperial troops occupying Amersfoort burned it in 1629, and turned a farm on marshy ground into a pleasure garden with fish ponds, fountains, orchards and a vineyard of more than forty kinds of grape. When the estate was sold in 1739, the notice listed its plantings of oak, elm and beech.\n\nAfter 1814 the formal garden was remade in the landscape style, with new paths and ponds, and trees were felled to make room for them. This one stands behind the house on the bank of the pond, 5.34 metres round and 25 metres tall by the register's measure. In 2002 the register noted that its dead tops had been cut out, leaving a crown shaped more or less like a candelabra.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.34 metres round and 25 metres tall. It stands behind the house of Randenbroek, on the bank of the pond.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677723",
+        "url": null
+      },
+      "verify_notes": "2026-10-19: LRMB 1677723 (status 3 monumental, last observed 2024-07-17), Zomereik, planted 1860-1870, girth 534 cm, height 25 m, municipal, visitable; 2002 remark: dead tops removed, crown now more or less candelabra-shaped. IVN Amersfoort forwarded a local tree expert's list (October 2026) naming this oak 'Park Randenbroek op terras aan de grote vijver', planted 1650, as the oldest; both ages published, not chosen between. Estate history from the Rijksmonumentenregister complex 529188. The expert's name is not recorded here."
+    },
+    {
+      "id": "ame_020",
+      "name": "The Planes at the Randenbroek Gate",
+      "species": "London Plane (Platanus x acerifolia)",
+      "age_estimate": "about 160 years (register planting band 1860 to 1870)",
+      "age_min": 156,
+      "age_max": 166,
+      "age_basis": "source",
+      "location": {
+        "address": "Main entrance of Park Randenbroek, Amersfoort",
+        "latitude": 52.150864,
+        "longitude": 5.400144,
+        "neighbourhood": "Park Randenbroek"
+      },
+      "girth_cm": 481,
+      "height_m": 30,
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680326&outFields=*&f=json",
+        "https://monumentenregister.cultureelerfgoed.nl/print/pdf/node/572058"
+      ],
+      "access": "Free. Public municipal park around the house of Randenbroek, no ticket.",
+      "transport": "About 2 km on foot south-east of Amersfoort Centraal; the oak by the pond is about 250 m into the park.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "The house at Randenbroek has been rebuilt, extended, cut back and restored since these two planes went in, and they are still at the gate. The national register of monumental trees lists them as a pair at the main entrance to the park, bands their planting to the 1860s and records a trunk 4.81 metres round and a height of 30 metres.\n\nIn the 1860s Randenbroek was a private country house that changed hands often. It had been auctioned in 1833, shortly after the house was renewed in the fashion of the day, and in 1873 Godert Jan Adolph van Hardenbroek laid the first stone of an extension on the brook side of the house. The planes have outlasted that wing: it was taken down again in the restoration of 1958.\n\nThe estate is now a public park owned by the city, and the register's most recent look at the pair was in the summer of 2026, so these are about 160 years old and still standing guard. Nobody has written down who planted them or which owner wanted them there. If you know, tell us.",
+      "how_to_recognise": "You can recognise them as the pair of planes at the main entrance of Park Randenbroek, about 30 metres tall, one trunk 4.81 metres round.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680326",
+        "url": null
+      },
+      "verify_notes": "2026-10-19: LRMB 1680326 (status 3 monumental, last observed 2026-07-03), Gewone plataan, 2 trees (municipal numbers 56904 and 56905), planted 1860-1870, girth 481 cm, height 30 m, municipal, visitable; register place note 'Op kaart locatie verbeterd' (map location corrected). Single register source, flagged; the July 2026 observation is the life check. Estate history from the Rijksmonumentenregister complex 529188."
+    },
+    {
+      "id": "ame_021",
+      "name": "The Yew of Randenbroek",
+      "species": "European Yew (Taxus baccata)",
+      "age_estimate": "about 160 years (register planting band 1860 to 1870)",
+      "age_min": 156,
+      "age_max": 166,
+      "age_basis": "source",
+      "location": {
+        "address": "Near the main house, Park Randenbroek, Amersfoort",
+        "latitude": 52.149218,
+        "longitude": 5.397945,
+        "neighbourhood": "Park Randenbroek"
+      },
+      "girth_cm": 334,
+      "height_m": 19,
+      "verified_sources": [
+        "https://www.monumentalebomen.nl/",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1680327&outFields=*&f=json",
+        "https://monumentenregister.cultureelerfgoed.nl/print/pdf/node/572058",
+        "https://amersfoort.nl/sites/default/files/2023-02/Beheerplan%20Park%20Randenbroek.pdf"
+      ],
+      "access": "Free. Public municipal park around the house of Randenbroek, no ticket.",
+      "transport": "About 2 km on foot south-east of Amersfoort Centraal, a few steps from the house and the oak by the pond.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Most yews stop well short of twenty metres. This one, near the house at Randenbroek, has reached nineteen, and it has done it on two stems. The national register of monumental trees measures it at 3.34 metres round and bands its planting to the 1860s, which makes it about 160 years old.\n\nBy the standards of its species that is young. Yews are the long-lived trees of European churchyards and gardens, and a yew of 160 is only getting started. The reason to come and look is its height and its shape, not its age.\n\nYew is everywhere else in this park, kept low. The city's management plan for Randenbroek counts about 700 metres of yew hedge, clipped to 80 centimetres, around the old kitchen garden and the house, and keeps yew, holly and rhododendron as the undergrowth of the wooded part of the park. This is the one that was allowed to grow into a tree.\n\nThe estate it stands on goes back to a farm on marshy ground, owned by the bishops of Utrecht in the fourteenth century and turned into a country house with gardens by the architect Jacob van Campen after 1626. The landscape park around it dates from the years after 1814.",
+      "how_to_recognise": "You can recognise it by its two stems and its height, 19 metres, tall for a yew. It stands near the house of Randenbroek.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1680327",
+        "url": null
+      },
+      "verify_notes": "2026-10-19: LRMB 1680327 (status 3 monumental, last observed 2024-07-17), Venijnboom / Taxus baccata, two-stemmed, planted 1860-1870, girth 334 cm, height 19 m, municipal, visitable; register remark 'locatie gecorrigeerd'. Yew hedges (700 m at 80 cm) and yew undergrowth from the city's Beheerplan Park Randenbroek. Single register source, flagged."
     }
   ]
 }
