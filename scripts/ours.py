@@ -44,11 +44,24 @@ def hashes():
         return set()
 
 
+def refs():
+    """Our accounts' codes (scripts/people.py), as recorded beside the sha1s."""
+    try:
+        with open(PATH) as fh:
+            return {a["ref"] for a in json.load(fh).get("accounts", []) if a.get("ref")}
+    except Exception:
+        return set()
+
+
 def is_ours(uid):
-    """True when a row was made by us rather than by a reader."""
+    """True when a row was made by us rather than by a reader. Takes an
+    account id or its code (people.ref), since public files hold codes."""
     if not uid:
         return False
-    return hashlib.sha1(str(uid).encode()).hexdigest() in hashes()
+    uid = str(uid)
+    if uid.startswith("p_") and len(uid) == 26:
+        return uid in refs()
+    return hashlib.sha1(uid.encode()).hexdigest() in hashes()
 
 
 # A Google query typed by us rather than a reader (2026-10-14). The /prague

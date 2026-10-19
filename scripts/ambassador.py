@@ -80,6 +80,9 @@ import urllib.parse
 import urllib.request
 import smtplib
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import people  # noqa: E402  account ids as codes in public files (2026-10-19)
+
 import mailer
 from email.message import EmailMessage
 import glob
@@ -344,9 +347,12 @@ def _contributions():
             for p in shots:
                 if p.get("source") == "contributor" and p.get("contributor_user_id") \
                         and p.get("status") == "approved":
-                    out.setdefault((p["contributor_user_id"], slug), [])
-                    if (t["name"], t["id"]) not in out[(p["contributor_user_id"], slug)]:
-                        out[(p["contributor_user_id"], slug)].append((t["name"], t["id"]))
+                    who = people.uid(p["contributor_user_id"])
+                    if not who:
+                        continue
+                    out.setdefault((who, slug), [])
+                    if (t["name"], t["id"]) not in out[(who, slug)]:
+                        out[(who, slug)].append((t["name"], t["id"]))
     return out
 
 
@@ -402,15 +408,15 @@ def invite_scan(send):
     covered = {e["place_slug"] for e in doc.get("ambassadors", [])}
     badged = {e.get("user_id") for e in doc.get("ambassadors", []) if e.get("user_id")}
     invited = doc.setdefault("invited", [])
-    already = {(i["user_id"][:8], i["place_slug"]) for i in invited}
+    already = {(people.ref(i["user_id"]), i["place_slug"]) for i in invited}
     # A person Hidde has said never to mail: an entry with place "*", matched
     # on the first eight characters of the id (Leon, 2026-10-02).
-    never = {i["user_id"][:8] for i in invited if i.get("place_slug") == "*"}
+    never = {people.ref(i["user_id"]) for i in invited if i.get("place_slug") == "*"}
     sent_log_path = os.path.join(ROOT, "data", "outreach-sent.json")
     n = 0
     for (uid, slug), pairs in sorted(_contributions().items()):
         names = [n for n, _ in pairs]
-        if ours.is_ours(uid) or slug in covered or uid in badged or (uid[:8], slug) in already or uid[:8] in never:
+        if ours.is_ours(uid) or slug in covered or uid in badged or (people.ref(uid), slug) in already or people.ref(uid) in never:
             continue
         place = place_name(slug)
         what, itis = _what(names)
@@ -446,7 +452,7 @@ def invite_scan(send):
             print(f"invite {uid[:8]} / {slug}: transport failed ({e.__class__.__name__})")
             continue
         today = datetime.date.today().isoformat()
-        invited.append({"user_id": uid, "place_slug": slug, "place_name": place,
+        invited.append({"user_id": people.ref(uid), "place_slug": slug, "place_name": place,
                         "date": today, "trees": names})
         try:
             with open(sent_log_path, encoding="utf-8") as fh:
@@ -506,7 +512,7 @@ def requests_scan(send):
         doc = json.load(fh)
     requested = doc.setdefault("requested", [])
     seen_rows = {r.get("row") for r in requested}
-    asked = {(r["user_id"], r["place_slug"]) for r in requested if r.get("user_id")}
+    asked = {(people.ref(r["user_id"]), r["place_slug"]) for r in requested if r.get("user_id")}
     badged = {(e.get("user_id"), e["place_slug"]) for e in doc.get("ambassadors", [])}
     rows_ = _req("/rest/v1/submissions?select=id,user_id,city,created_at"
                  "&kind=eq.ambassador&order=created_at.asc") or []
@@ -531,15 +537,15 @@ def requests_scan(send):
                               "place_name": row.get("city"), "date": None, "note": "anonymous"})
             continue
         if ours.is_ours(uid):
-            requested.append({"row": rid, "user_id": uid, "place_slug": _slug_for(row.get("city")),
+            requested.append({"row": rid, "user_id": people.ref(uid), "place_slug": _slug_for(row.get("city")),
                               "place_name": row.get("city"), "date": None, "note": "ours"})
             continue
         slug = _slug_for(row.get("city"))
         if not slug:
             print(f"request {rid}: no published place called {row.get('city')!r}")
             continue
-        if (uid, slug) in asked or (uid, slug) in badged:
-            requested.append({"row": rid, "user_id": uid, "place_slug": slug, "date": None, "note": "repeat"})
+        if (people.ref(uid), slug) in asked or (uid, slug) in badged:
+            requested.append({"row": rid, "user_id": people.ref(uid), "place_slug": slug, "date": None, "note": "repeat"})
             continue
         place = place_name(slug)
         subject = REQUEST_SUBJECT.format(place=place)
@@ -567,9 +573,9 @@ def requests_scan(send):
         except Exception as e:
             print(f"request {rid} / {slug}: transport failed ({e.__class__.__name__})")
             continue
-        requested.append({"row": rid, "user_id": uid, "place_slug": slug, "place_name": place,
+        requested.append({"row": rid, "user_id": people.ref(uid), "place_slug": slug, "place_name": place,
                           "date": datetime.date.today().isoformat()})
-        asked.add((uid, slug))
+        asked.add((people.ref(uid), slug))
         n += 1
         print(f"request {rid} / {slug}: editor mail sent")
     with open(FILE, "w", encoding="utf-8") as fh:

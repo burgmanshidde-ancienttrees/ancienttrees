@@ -46,6 +46,9 @@ import urllib.error
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import people  # noqa: E402  account ids as codes in public files (2026-10-19)
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import corroborate  # noqa: E402
 import ours  # noqa: E402
 
@@ -166,6 +169,15 @@ def save(path, doc):
 def fetch_photo(path, dest):
     if os.path.exists(dest) and os.path.getsize(dest) > 0:
         return True
+    # A stored path starts with the owner's account id; public files hold it
+    # with the id as a code (people.ref, 2026-10-19), so turn it back here.
+    head, _, tail = str(path).partition("/")
+    if people.is_ref(head):
+        real = people.uid(head)
+        if not real:
+            print(f"  photo {path}: the account behind it is gone or unreadable")
+            return False
+        path = real + "/" + tail
     req = urllib.request.Request(f"{SUPA}/storage/v1/object/sightings/{path}", headers={
         "apikey": KEY, "Authorization": "Bearer " + KEY})
     try:
@@ -613,8 +625,9 @@ def main():
     vouched = load(VOUCHED, {"sightings": {}, "users": {}})
     v_sight, v_user = vouched.setdefault("sightings", {}), vouched.setdefault("users", {})
     for row in rows:
-        if row["id"] in v_sight and row.get("user_id") and row["user_id"] not in v_user:
-            v_user[row["user_id"]] = v_sight[row["id"]]
+        # Keyed by code (people.ref): this file is public (2026-10-19).
+        if row["id"] in v_sight and row.get("user_id") and people.ref(row["user_id"]) not in v_user:
+            v_user[people.ref(row["user_id"])] = v_sight[row["id"]]
     leads_doc = load(LEADS, {"_note": "Trees readers added through the app that match "
                                       "nothing we map. Leads for the normal pipeline, never "
                                       "an import: a page needs the bar every tree meets. "
@@ -652,7 +665,7 @@ def main():
             reopen = (outcome == "ours"
                       or (outcome == "lead" and match(row, index)[0] is not None)
                       or (outcome in ("held", "rejected")
-                          and (sid in v_sight or row.get("user_id") in v_user)))
+                          and (sid in v_sight or people.ref(row.get("user_id")) in v_user)))
             if not reopen:
                 skipped += 1
                 continue
@@ -688,7 +701,7 @@ def main():
         if tid is None:
             if sid not in lead_ids:
                 leads_doc["leads"].append({
-                    "sighting_id": sid, "user_id": row["user_id"], "mine": is_mine,
+                    "sighting_id": sid, "user_id": people.ref(row["user_id"]), "mine": is_mine,
                     "name": row.get("name") or "", "species": row.get("species"),
                     "age": row.get("age"), "girth_cm": row.get("girth_cm"),
                     # THE TRUNK, in adult hugs, as they answered it (2026-09-11).
@@ -735,8 +748,8 @@ def main():
         if not fetch_photo(row["photo"], dest):
             continue
         queue.append({
-            "sighting_id": sid, "user_id": row["user_id"],
-            "display_name": profiles.get(row["user_id"]) or "",
+            # A code, and no name: this queue file is public (2026-10-19).
+            "sighting_id": sid, "user_id": people.ref(row["user_id"]),
             "tree_id": tid, "city_slug": t["slug"], "city": t["city"], "tree_name": t["name"],
             "match": how, "distance_m": dist, "mine": is_mine,
             "current_photo": t["photo_status"], "current_source": t["photo_source"],
@@ -768,7 +781,7 @@ def main():
             "latitude": row.get("lat"), "longitude": row.get("lng"),
             "file": os.path.relpath(dest, ROOT),
             "light": light(dest),
-            "vouched": v_sight.get(sid) or v_user.get(row["user_id"]),
+            "vouched": v_sight.get(sid) or v_user.get(people.ref(row["user_id"])),
         })
         queue[-1]["rank"], queue[-1]["worth"] = worth(queue[-1])
     queue.sort(key=lambda e: (e["rank"], -(e.get("distance_m") or 0)))

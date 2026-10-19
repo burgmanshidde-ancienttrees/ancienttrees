@@ -31,6 +31,9 @@ import os
 import sys
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import people  # noqa: E402  account ids as codes in public files (2026-10-19)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import ours  # noqa: E402
@@ -138,11 +141,11 @@ def main(argv):
         if not page:
             print(f"  {tree['id']}: not in the live feed yet, waits for the deploy")
             continue
-        addr = address_of(uid)
+        addr = address_of(people.uid(uid))
         if not addr:
             print(f"  {tree['id']}: no address for the account (no service key, or the account is gone)")
             continue
-        subject, body = mail_for(display_name(uid), tree, city_name, page)
+        subject, body = mail_for(display_name(people.uid(uid)), tree, city_name, page)
         if send_mail(addr, subject, body, really, sid):
             done[sid] = {"tree_id": tree["id"], "date": datetime.date.today().isoformat()}
             sent += 1

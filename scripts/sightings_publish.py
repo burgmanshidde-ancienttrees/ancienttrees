@@ -86,9 +86,12 @@ import json
 import os
 import re
 import smtplib
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import people  # noqa: E402  account ids as codes in public files (2026-10-19)
 
 import mailer
-import sys
 from email.message import EmailMessage
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -174,7 +177,7 @@ def photo_block(entry, width, height, reason, today, fname=None):
         "width": width,
         "height": height,
         "source": "contributor",
-        "contributor_user_id": entry["user_id"],
+        "contributor_user_id": people.ref(entry["user_id"]),
         "sighting_id": entry["sighting_id"],
         "note": (f"Photographed by a reader and sent through the app "
                  f"({(entry.get('taken_at') or '')[:10] or 'date unknown'}); a viewing pass "
@@ -640,7 +643,7 @@ def main():
         if not MAIL_WHEN_LIVE:
             print("  mail: off, a photograph going live sends no mail (Hidde, 2026-10-02)")
             continue
-        addr = address_of(entry["user_id"])
+        addr = address_of(people.uid(entry["user_id"]))
         if addr:
             subject, body = mail_for(entry, reason)
             send_mail(addr, subject, body, really, sid)

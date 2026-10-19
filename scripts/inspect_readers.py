@@ -116,7 +116,7 @@ def selection(include_answered=False, live=None, fresh_days=2):
     for j in rows:
         sid = str(j.get("id", "")).split(":", 1)[-1].lower()
         uid = who.get(sid) or (str(j.get("photo") or "").split("/")[0]
-                               if re.match(r"^[0-9a-f-]{36}/", str(j.get("photo") or "")) else None)
+                               if re.match(r"^([0-9a-f-]{36}|p_[0-9a-f]{24})/", str(j.get("photo") or "")) else None)
         if uid and ours.is_ours(uid):
             continue
         if j.get("hidde") and not include_answered:

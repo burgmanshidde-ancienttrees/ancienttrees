@@ -2480,7 +2480,9 @@ def check_no_reader_traces_in_the_repo():
     text file, an address at a personal mail provider (lists of people are
     kept by addr_hash() instead, as in mailcheck.py), and, under data/, a
     taken_at longer than a date: the time stays in Supabase, the sighting id
-    is enough to look it up. Removing it needs Hidde."""
+    is enough to look it up; and a reader's raw account id where people.ref()
+    belongs (contributor_user_id, a lead's user_id, a photo path). Removing it
+    needs Hidde."""
     import subprocess
     try:
         tracked = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True,
@@ -2505,6 +2507,14 @@ def check_no_reader_traces_in_the_repo():
         if f.startswith("data/") and stamp.search(text):
             out.append(f"{f}: a reader's photo time (taken_at with a clock time) in a public file; "
                        "keep the day at most, the sighting id finds the rest")
+        # A reader's account as a code (scripts/people.py, 2026-10-19), never
+        # the id: the fields that name a reader, and a photo path's first part.
+        if f.startswith("data/") and f.endswith(".json") and f != "data/ambassadors.json":
+            raw = re.findall(r'"(?:contributor_user_id|user_id)":\s*"([0-9a-f]{8}-[0-9a-f-]{27})"', text)
+            raw += re.findall(r'"photo":\s*"([0-9a-f]{8}-[0-9a-f-]{27})/', text)
+            if raw:
+                out.append(f"{f}: {len(raw)} reader account id(s) where a code belongs; "
+                           "write people.ref(uid) (scripts/people.py)")
     return out
 
 

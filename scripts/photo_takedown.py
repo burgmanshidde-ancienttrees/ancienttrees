@@ -50,6 +50,9 @@ import sys
 import urllib.error
 import urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import people  # noqa: E402  account ids are codes in public files (2026-10-19)
+
 BASE = "https://caimvxiyrtifilimlkqw.supabase.co"
 KEY = os.environ.get("SUPABASE_SERVICE_KEY")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -120,18 +123,10 @@ def account_exists(user_id):
     None matters: a network failure must never be read as "this account is
     gone", because the action on the other side is deleting a photograph.
     """
-    req = urllib.request.Request(f"{BASE}/auth/v1/admin/users/{user_id}")
-    req.add_header("apikey", KEY)
-    req.add_header("Authorization", f"Bearer {KEY}")
-    try:
-        with urllib.request.urlopen(req, timeout=20) as resp:
-            return resp.status == 200
-    except urllib.error.HTTPError as e:
-        if e.code in (403, 404):
-            return False
-        return None
-    except Exception:
-        return None
+    # Since 2026-10-19 the files hold a code (scripts/people.py), not the id:
+    # the account list is read once and every code is looked up in it. An
+    # unreadable list is None, never "gone".
+    return people.exists(user_id)
 
 
 def unvendor(url):

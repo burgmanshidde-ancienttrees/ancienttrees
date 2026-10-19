@@ -8,6 +8,8 @@ import sys
 import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Codes need a key; a test key when the real one is not around (CI).
+os.environ.setdefault("SUPABASE_SERVICE_KEY", "test-service-key")
 import sightings_inbox as inbox  # noqa: E402
 import sightings_publish as pub  # noqa: E402
 
@@ -51,7 +53,8 @@ class TestPhotoBlock(unittest.TestCase):
     def test_block_carries_both_takedown_fields(self):
         b = pub.photo_block(self.ENTRY, 1200, 1600, "good frame", "2026-09-04")
         self.assertEqual(b["source"], "contributor")
-        self.assertEqual(b["contributor_user_id"], "u-1")
+        # The code, never the id: data/cities is public (people.py, 2026-10-19).
+        self.assertEqual(b["contributor_user_id"], pub.people.ref("u-1"))
         self.assertEqual(b["status"], "approved")
         self.assertEqual((b["width"], b["height"]), (1200, 1600))
 

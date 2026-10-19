@@ -34,6 +34,7 @@ DECISIONS.md / RULINGS.md  the why                        REVIEW.md         fres
 Reference: data/cities/london.json. Per tree: `id`, `name`, `species` ("Common (Latin)"), `age_estimate`, `age_min`, `age_max`, `age_basis` (`source|derived`), `location` {address, latitude, longitude, neighbourhood}, `story` (150 to 250 words), `verified_sources`, `access`, `transport`, `photo` {url, license, attribution, attribution_url?, status `missing|found_needs_check|approved|held`}, optional `photos` (further photographs, same licence terms as the lead), `curation_status`, `location_precision` (`confirmed|approximate`, always set honestly). Optional: `girth_cm`, `height_m` (from a register or plaque, never our prose), `best_time` {months, label, kind}, `recognise`, `location_site`, `official_register`, `pin_source`, `verify_notes`.
 - `attribution_url`: the photographer's name renders as the link (creditLinkParts in site/src/lib/images.ts; feed `credit_url`).
 - A reader's photograph carries `source: "contributor"` and `contributor_user_id` together, always (preflight refuses one without the other; photo_takedown.py depends on it).
+- A reader's account in any public file is a code, `people.ref(uid)` (scripts/people.py, since 2026-10-19), never the id: `contributor_user_id`, a lead's `user_id`, a photo path's first part. `people.uid(code)` finds the person where a script must (mail, takedown). qa's `check_no_reader_traces_in_the_repo()`.
 
 ## How runs fire
 
