@@ -18929,7 +18929,7 @@
   "lon_011": {
    "city": "London",
    "name": "The St Paul's Churchyard Planes",
-   "checked": "2026-10-18",
+   "checked": "2026-10-19",
    "sweep": 5,
    "candidates": [
     {
@@ -19048,7 +19048,7 @@
   "lon_012": {
    "city": "London",
    "name": "The Amwell Street Fig",
-   "checked": "2026-10-18",
+   "checked": "2026-10-19",
    "sweep": 5,
    "candidates": []
   },
@@ -19191,7 +19191,7 @@
   "lon_014": {
    "city": "London",
    "name": "The Marylebone Elm",
-   "checked": "2026-10-18",
+   "checked": "2026-10-19",
    "sweep": 5,
    "candidates": [
     {
@@ -21212,7 +21212,7 @@
   "lon_017": {
    "city": "London",
    "name": "The Valence Park Holm Oak",
-   "checked": "2026-10-18",
+   "checked": "2026-10-19",
    "sweep": 5,
    "candidates": []
   },
@@ -23344,14 +23344,14 @@
   "lon_020": {
    "city": "London",
    "name": "The Inner Temple Mulberry",
-   "checked": "2026-10-18",
+   "checked": "2026-10-19",
    "sweep": 5,
    "candidates": []
   },
   "lon_021": {
    "city": "London",
    "name": "The Finsbury Circus Pagoda Tree",
-   "checked": "2026-10-18",
+   "checked": "2026-10-19",
    "sweep": 5,
    "candidates": [
     {
@@ -23371,7 +23371,7 @@
   "lon_022": {
    "city": "London",
    "name": "The Quaker Garden Planes",
-   "checked": "2026-10-18",
+   "checked": "2026-10-19",
    "sweep": 5,
    "candidates": [
     {
@@ -138854,6 +138854,130 @@
      "cats": "Category:CC-BY-2.0 Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by FlickreviewR 2 Category:Key West Cemetery",
      "judged": "hold",
      "verdict": "A Ficus with aerial-root trunk among fenced graves, daylight; but our pin is the cemetery centre and the city has two figs (or more); no source places this trunk. Graves here are not visibly engulfed."
+    }
+   ]
+  },
+  "lon_033": {
+   "city": "London",
+   "name": "The Roehampton Lucombe Oak",
+   "checked": "2026-10-19",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Priory Lane, Roehampton - geograph.org.uk - 2219235.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Priory_Lane%2C_Roehampton_-_geograph.org.uk_-_2219235.jpg/960px-Priory_Lane%2C_Roehampton_-_geograph.org.uk_-_2219235.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Priory_Lane,_Roehampton_-_geograph.org.uk_-_2219235.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "David Howard",
+     "lat": 51.45645952,
+     "lng": -0.25322385,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Priory Lane, Roehampton"
+    },
+    {
+     "title": "File:Roehampton, Clarence Lane - geograph.org.uk - 3427744.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Roehampton%2C_Clarence_Lane_-_geograph.org.uk_-_3427744.jpg/960px-Roehampton%2C_Clarence_Lane_-_geograph.org.uk_-_3427744.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton,_Clarence_Lane_-_geograph.org.uk_-_3427744.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Dr Neil Clifton",
+     "lat": 51.45531532,
+     "lng": -0.25485105,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Roehampton Category:Streets in the London Borough of Wandsworth"
+    },
+    {
+     "title": "File:Roehampton, Roehampton Gate - geograph.org.uk - 3427734.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Roehampton%2C_Roehampton_Gate_-_geograph.org.uk_-_3427734.jpg/960px-Roehampton%2C_Roehampton_Gate_-_geograph.org.uk_-_3427734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton,_Roehampton_Gate_-_geograph.org.uk_-_3427734.jpg",
+     "licence": "CC BY-SA 2.0",
+     "author": "Dr Neil Clifton",
+     "lat": 51.45792113,
+     "lng": -0.25489517,
+     "cats": "Category:CC-BY-SA-2.0 Category:Images from Geograph Britain and Ireland Category:Roehampton Category:Streets in the London Borough of Wandsworth"
+    },
+    {
+     "title": "File:Roehampton Lucombe Oak (1).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Roehampton_Lucombe_Oak_%281%29.jpg/960px-Roehampton_Lucombe_Oak_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton_Lucombe_Oak_(1).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Quercus × hispanica Category:Roehampton Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Single large oak filling the frame in daylight and colour, file titled for this tree; crop survives centre card."
+    },
+    {
+     "title": "File:Roehampton Lucombe Oak (2).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Roehampton_Lucombe_Oak_%282%29.jpg/960px-Roehampton_Lucombe_Oak_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton_Lucombe_Oak_(2).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Quercus × hispanica Category:Roehampton Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Backlit, dark crown with sun flare, tree lost among neighbours."
+    },
+    {
+     "title": "File:Roehampton Lucombe Oak (3).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Roehampton_Lucombe_Oak_%283%29.jpg/960px-Roehampton_Lucombe_Oak_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton_Lucombe_Oak_(3).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Quercus × hispanica Category:Roehampton Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Underexposed and distant, flats dominate the frame."
+    },
+    {
+     "title": "File:Roehampton Lucombe Oak (4).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Roehampton_Lucombe_Oak_%284%29.jpg/960px-Roehampton_Lucombe_Oak_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton_Lucombe_Oak_(4).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Quercus × hispanica Category:Roehampton Category:Self-published work"
+    },
+    {
+     "title": "File:Roehampton Lucombe Oak (5).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Roehampton_Lucombe_Oak_%285%29.jpg/960px-Roehampton_Lucombe_Oak_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton_Lucombe_Oak_(5).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Quercus × hispanica Category:Roehampton Category:Self-published work"
+    },
+    {
+     "title": "File:Roehampton Lucombe Oak (6).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Roehampton_Lucombe_Oak_%286%29.jpg/960px-Roehampton_Lucombe_Oak_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton_Lucombe_Oak_(6).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Quercus × hispanica Category:Roehampton Category:Self-published work"
+    },
+    {
+     "title": "File:Roehampton Lucombe Oak (7).jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Roehampton_Lucombe_Oak_%287%29.jpg/960px-Roehampton_Lucombe_Oak_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Roehampton_Lucombe_Oak_(7).jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Hopefully Acceptable Username",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Great Trees of London Category:Quercus × hispanica Category:Roehampton Category:Self-published work"
+    },
+    {
+     "title": "File:West Putney, University of Roehampton, Roehampton Golf Club.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/West_Putney%2C_University_of_Roehampton%2C_Roehampton_Golf_Club.jpg/960px-West_Putney%2C_University_of_Roehampton%2C_Roehampton_Golf_Club.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:West_Putney,_University_of_Roehampton,_Roehampton_Golf_Club.jpg",
+     "licence": "CC0",
+     "author": "Mertbiol",
+     "lat": 51.46,
+     "lng": -0.239,
+     "cats": "Category:Aerial photographs of the London Borough of Wandsworth Category:CC-Zero Category:Files with coordinates missing SDC location of creation (51° N, 1° W) Category:Putney Category:Self-published work Category:University of Roehampton"
     }
    ]
   }
