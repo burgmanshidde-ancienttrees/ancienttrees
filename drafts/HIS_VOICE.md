@@ -256,6 +256,10 @@ Each is the 10-10 rule below, broken in a new way. Read this section before draf
 4. **Say plainly what we look for; do not flatter their work.** My "After painting so many of them, I'd love to hear your favourite" became "we're just looking for remarkable old trees in Hong Kong. Any favourite of yours we should add to the platform?" Correct the misunderstanding (she thought we only wanted wall trees) by stating what we want, then the ask.
 5. **Take a suggestion warmly and leave the door open.** To Noeleen's "get an expert botanical review" he wrote: "Thanks for your feedback, and good idea, we're going to follow that up. If you have any other tips about the platform, they're all welcome, we've only just started." Also Judith: thank her for forwarding, never "I already knew that one" ("niet bijdehand doen").
 
+## Thank them more than once (Hidde, 2026-10-19: "zeg vaker bedankt")
+
+On a reply to a reader who reported a dead yew and had sent photographs of two other trees. Thank them for each thing they gave, in its own sentence (the report, the photographs), and close with "Thanks again". Generous thanks is not the repeated thanks the copy-check warns about: that is the same thank-you pasted twice for one thing.
+
 ## Every reply activates, with the ask that fits the person (Hidde, 2026-10-10)
 
 "we moeten mensen een beetje activeren naar of de app downloaden of controleren of ambassadeur. net wat gepast is." A thank-you alone ends the thread. Close every reply with the one ask that fits who they are: a forester or arborist is asked which tree we miss; a local enthusiast is asked to check the list or offered the ambassador role (described honestly, see drafts/ambassador-mails.md); somebody walking past trees is pointed at the app. One of them, never all three.

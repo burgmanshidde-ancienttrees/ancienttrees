@@ -317,6 +317,23 @@ def supa(path, key, method="GET", body=None):
         return json.loads(raw) if raw else None
 
 
+def uses_the_app(uid, key):
+    """Whether this account has trees collected in the app.
+
+    A correction typed on the website by somebody who walks with the app was
+    getting "Our app is also live now" (seen 2026-10-19, submission 466: a
+    Lisbon reader with seven app sightings). Pointing an app user at the app
+    is the same mistake from_the_app() exists to prevent.
+    """
+    if not uid:
+        return False
+    try:
+        rows = supa("/rest/v1/sightings?select=id&limit=1&user_id=eq.%s" % uid, key)
+    except Exception:
+        return False
+    return bool(rows)
+
+
 def with_app_link(text, addr, page):
     """Append the standing App Store paragraph if a reply does not already
     carry it (Hidde, 2026-09-03: every outbound mail says the app is live).
@@ -516,7 +533,8 @@ def main():
             # symptom was invisible: the run prints HOLD and moves on, so a
             # reader whose tip we acted on was told nothing at all. Same rule
             # as the thank-you above, including the exemptions.
-            if not (low_addr in NO_APP_LINK or from_the_app([r])):
+            if not (low_addr in NO_APP_LINK or from_the_app([r])
+                    or uses_the_app(r.get("user_id"), key)):
                 lines += ["Our app is also live now. We would like to know "
                           "what you think of it:", "", APP_STORE_URL, ""]
             lines += ["Ancient Trees", "https://ancienttrees.app"]
@@ -531,7 +549,7 @@ def main():
             # holding: "onder deze mail hoeft geen verwijzing naar de app").
             # The declaration rides in the draft header, above the separator,
             # so it never reaches the reader.
-            app_user = from_the_app([r])
+            app_user = from_the_app([r]) or uses_the_app(r.get("user_id"), key)
             if not app_user:
                 fixed = with_app_link(r["reply_text"], addr, r.get("page"))
                 if fixed != r["reply_text"]:
