@@ -4,8 +4,7 @@
 //
 // Read from data/city-queue.json, which the daily digest refreshes from
 // Search Console: clicks in the last ten days, then impressions. It is the one
-// per-page visit figure we store; Cloudflare's beacon only reaches DATA.md as a
-// top list. Clicks weigh a thousand impressions, so a page people chose beats
+// per-page visit figure we store. Clicks weigh a thousand impressions, so a page people chose beats
 // a page Google merely showed.
 import fs from "node:fs";
 import path from "node:path";

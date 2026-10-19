@@ -12,7 +12,6 @@ It answers, in order:
   3. What does Google say about our pages? (URL Inspection API)
   4. Can Google fetch the sitemaps, and when did it last? (Sitemaps API)
   5. What does the site send a crawler right now? (robots.txt, headers, meta)
-  6. Did real Google visitors fall per day? (Cloudflare beacon, per day)
 
 Never raises past a section: one failing question must not hide the others.
 """
@@ -25,7 +24,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from daily_digest import api, ACCOUNT_TAG  # noqa: E402
+from daily_digest import api  # noqa: E402
 
 SITE = "sc-domain:ancienttrees.app"
 BASE = "https://ancienttrees.app"
@@ -161,137 +160,6 @@ def main():
                 if path == "/robots.txt" and name == "human":
                     print("```\n" + body[:1500] + "\n```")
 
-    def beacon():
-        tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
-        if not tok:
-            print("no CLOUDFLARE_ANALYTICS_TOKEN")
-            return
-        query = {"query": """
-query($tag: String!, $since: Date!, $until: Date!) {
-  viewer { accounts(filter: {accountTag: $tag}) {
-    g: rumPageloadEventsAdaptiveGroups(limit: 200,
-        filter: {date_geq: $since, date_lt: $until}, orderBy: [date_ASC]) {
-      count dimensions { date refererHost }
-    }
-  } }
-}""", "variables": {"tag": ACCOUNT_TAG, "since": start, "until": end}}
-        g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
-        if g.get("errors"):
-            raise RuntimeError(json.dumps(g["errors"]))
-        per = {}
-        for r in g["data"]["viewer"]["accounts"][0]["g"]:
-            d, host = r["dimensions"]["date"], (r["dimensions"]["refererHost"] or "")
-            row = per.setdefault(d, {"google": 0, "bing": 0, "all": 0})
-            row["all"] += r["count"]
-            if "google." in host or "googlequicksearchbox" in host:
-                row["google"] += r["count"]
-            if "bing." in host:
-                row["bing"] += r["count"]
-        print("| Day | From Google | From Bing | All pageviews |")
-        print("|---|---:|---:|---:|")
-        for d in sorted(per):
-            print("| %s | %d | %d | %d |" % (d, per[d]["google"], per[d]["bing"], per[d]["all"]))
-
-    def who_is_left():
-        # The digest's own beacon reader, run here so a change to it can be
-        # seen against live data without waiting for the morning digest.
-        from daily_digest import fetch_rum
-        tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
-        if not tok:
-            print("no CLOUDFLARE_ANALYTICS_TOKEN")
-            return
-        print(fetch_rum(tok, today, window=31).split("\n\nLinks:")[0])
-
-    def people_since_google_left():
-        # Raw (unbucketed) rows of the PEOPLE filter since 09-28, so the
-        # non-Google remainder can be read one arrival at a time.
-        tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
-        if not tok:
-            print("no CLOUDFLARE_ANALYTICS_TOKEN")
-            return
-        query = {"query": """
-query($tag: String!, $since: Date!, $until: Date!) {
-  viewer { accounts(filter: {accountTag: $tag}) {
-    g: rumPageloadEventsAdaptiveGroups(limit: 80,
-        filter: {AND: [{date_geq: $since}, {date_lt: $until},
-                       {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]},
-        orderBy: [count_DESC]) {
-      count dimensions { date requestPath countryName deviceType refererHost userAgentOS }
-    }
-  } }
-}""", "variables": {"tag": ACCOUNT_TAG, "since": "2026-09-28", "until": today.isoformat()}}
-        g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
-        if g.get("errors"):
-            raise RuntimeError(json.dumps(g["errors"]))
-        print("| Views | Day | Path | Country | Device | OS | Referrer |")
-        print("|---:|---|---|---|---|---|---|")
-        for r in g["data"]["viewer"]["accounts"][0]["g"]:
-            d = r["dimensions"]
-            print("| %d | %s | %s | %s | %s | %s | %s |" % (
-                r["count"], d["date"][5:], d["requestPath"], d["countryName"], d["deviceType"],
-                d["userAgentOS"], d["refererHost"] or "(direct)"))
-
-    def channels_by_week():
-        # People's ARRIVALS per week by channel, Google left out, raw counts.
-        # Internal clicks are not arrivals; desktop with no referrer is bots.
-        tok = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN")
-        if not tok:
-            print("no CLOUDFLARE_ANALYTICS_TOKEN")
-            return
-        since = (today - datetime.timedelta(days=35)).isoformat()
-        query = {"query": """
-query($tag: String!, $since: Date!, $until: Date!) {
-  viewer { accounts(filter: {accountTag: $tag}) {
-    g: rumPageloadEventsAdaptiveGroups(limit: 5000,
-        filter: {AND: [{date_geq: $since}, {date_lt: $until},
-                       {OR: [{refererHost_neq: ""}, {deviceType_neq: "desktop"}]}]}) {
-      count dimensions { date refererHost }
-    }
-  } }
-}""", "variables": {"tag": ACCOUNT_TAG, "since": since, "until": today.isoformat()}}
-        g = api("https://api.cloudflare.com/client/v4/graphql", query, token=tok)
-        if g.get("errors"):
-            raise RuntimeError(json.dumps(g["errors"]))
-        cols = ["Google", "Direct on a phone", "Other search", "Mail and apps", "Other sites", "AI"]
-        def kind(h):
-            h = (h or "").lower()
-            if not h:
-                return "Direct on a phone"
-            if "ancienttrees" in h:
-                return None
-            if "google." in h or "googlequicksearchbox" in h:
-                return "Google"
-            if any(x in h for x in ("bing", "duckduckgo", "yahoo", "ecosia", "yandex",
-                                    "baidu", "naver", "qwant", "startpage", "brave")):
-                return "Other search"
-            if h.startswith("com.") or "mail" in h or "facebook" in h or "instagram" in h \
-                    or "t.co" == h or "reddit" in h or "linkedin" in h:
-                return "Mail and apps"
-            if "chatgpt" in h or "perplexity" in h or "claude" in h or "gemini" in h \
-                    or "copilot" in h:
-                return "AI"
-            return "Other sites"
-        weeks, hosts = {}, {}
-        for r in g["data"]["viewer"]["accounts"][0]["g"]:
-            d = datetime.date.fromisoformat(r["dimensions"]["date"])
-            k = kind(r["dimensions"]["refererHost"])
-            if not k:
-                continue
-            wk = (d - datetime.timedelta(days=d.weekday())).isoformat()[5:]
-            weeks.setdefault(wk, dict.fromkeys(cols, 0))[k] += r["count"]
-            if k in ("Other sites", "Mail and apps", "AI"):
-                hosts.setdefault(r["dimensions"]["refererHost"], {}).setdefault(wk, 0)
-                hosts[r["dimensions"]["refererHost"]][wk] += r["count"]
-        print("| Week from | " + " | ".join(cols) + " | Without Google |")
-        print("|---|" + "---:|" * (len(cols) + 1))
-        for wk in sorted(weeks):
-            w = weeks[wk]
-            print("| %s | %s | %d |" % (wk, " | ".join(str(w[c]) for c in cols),
-                                        sum(w[c] for c in cols if c != "Google")))
-        print("\nOther sites, mail, apps and AI by host:")
-        for h, ws in sorted(hosts.items(), key=lambda x: -sum(x[1].values())):
-            print("- %s: %s" % (h, ", ".join("%s %d" % (k, v) for k, v in sorted(ws.items()))))
-
     path = os.environ.get("SC_PATH", "").strip()
     if path:
         # One place, close up (2026-10-14: /prague had 294 impressions at
@@ -345,10 +213,6 @@ query($tag: String!, $since: Date!, $until: Date!) {
     section("3. What Google says about our pages (URL Inspection)", inspect)
     section("4. Sitemaps", sitemaps)
     section("5. What the site sends right now", live)
-    section("6. Real visitors from search engines, per day (beacon)", beacon)
-    section("7. The digest's beacon table, people only", who_is_left)
-    section("8. People since Google left, row by row (raw)", people_since_google_left)
-    section("9. People arriving per week by channel (raw)", channels_by_week)
 
 
 if __name__ == "__main__":

@@ -40,8 +40,7 @@ const t = chrome(lang);
   var bar = document.getElementById("consent-bar");
   function load() {
     if (window.__atGa) { return; }
-    // Our own devices opt out with ?notrack=1 (Base.astro keeps the flag);
-    // Cloudflare already skipped them, Google Analytics did not.
+    // Our own devices opt out with ?notrack=1 (Base.astro keeps the flag).
     var off = null;
     try { off = new URLSearchParams(location.search).get("notrack") || localStorage.getItem("at_notrack"); } catch (e) {}
     if (off === "1") { return; }

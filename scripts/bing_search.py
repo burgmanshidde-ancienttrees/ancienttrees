@@ -212,8 +212,7 @@ def lines(this_week, last_week, queries, index=True):
         out.append("- Top Bing queries: " + "; ".join(
             "%s (c%d/i%d, p%.0f)" % (q["query"], q["clicks"], q["impressions"], q["position"]) for q in queries))
     out.append("- Bing alone, from Bing Webmaster Tools%s. DuckDuckGo and Yahoo draw on the "
-               "same index and publish no numbers; their arrivals are columns in the "
-               "Cloudflare table. Bing's data lags about two days."
+               "same index and publish no numbers. Bing's data lags about two days."
                % ("; the in-index column is the last day's count" if index else ""))
     return out
 

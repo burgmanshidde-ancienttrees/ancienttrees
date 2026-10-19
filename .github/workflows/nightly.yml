@@ -419,16 +419,10 @@ jobs:
         if: steps.budget.outputs.start == 'yes'
         uses: anthropics/claude-code-action@v1
         env:
-          # The runs' eyes: lets a run read the visitor trend itself via
-          # scripts/visitors.py and carry it into LOG.md. Absent secret = the
-          # script prints one line and the run continues blind, never broken.
-          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           # Reader submissions intake (native form -> Supabase). Absent secret
           # = runs skip reading submissions, never broken. Hidde adds it as a
           # GitHub secret when he is ready to open the tap.
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          # Account id, not a secret: it appears in every dashboard URL.
-          CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # Without this the action REFUSES any run a bot started: "Workflow
@@ -447,8 +441,7 @@ jobs:
             the work" exactly as written (RULINGS.md holds the reasoning;
             read a section of it only when a rule's edge is unclear).
 
-            Begin every run with: python3 scripts/visitors.py, then
-            python3 scripts/prepare.py. The second one stocks the staging
+            Begin every run with: python3 scripts/prepare.py. It stocks the staging
             shelf (register candidates for the next sprint cities, deduped
             and annotated) and prints the state of the whole line: what is
             staged for a verify pass and what verified trees await a writer.
@@ -916,9 +909,7 @@ jobs:
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
-          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           allowed_bots: "github-actions[bot]"
@@ -972,9 +963,7 @@ jobs:
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
-          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           allowed_bots: "github-actions[bot]"
@@ -1012,9 +1001,7 @@ jobs:
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
-          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          CF_ACCOUNT_TAG: "949aa102070e5f296c9cc0d5bc1e1891"
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           allowed_bots: "github-actions[bot]"

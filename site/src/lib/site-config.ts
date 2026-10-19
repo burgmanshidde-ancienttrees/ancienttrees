@@ -74,10 +74,6 @@ export const SUPABASE_KEY = "sb_publishable_qOTuw-LCejk2VhO2J6aXGQ_6X2O2mgb";
 // scripts/apple_secret.py on a machine holding the .p8.
 export const APPLE_SIGNIN = true;
 
-// Cloudflare Web Analytics: cookieless and aggregate only, chosen 2026-07-21
-// specifically because it needs no consent banner. build_site.py:849.
-export const ANALYTICS_TOKEN = "fcbbfb8b426c4f6aa2066b00be6454f6";
-
 // Google Analytics 4, chosen by Hidde 2026-10-12 over PostHog on the web
 // ("id rather use google analytics im used to it"). Loaded only after the
 // visitor presses Accept on the cookie bar (components/ConsentBar.astro);

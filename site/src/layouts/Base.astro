@@ -34,7 +34,6 @@ import {
   AUTH_ENABLED,
   SUPABASE_URL,
   SUPABASE_KEY,
-  ANALYTICS_TOKEN,
   SPONSOR_URL,
   APP_STORE_ID,
   TITLE_MAX,
@@ -407,6 +406,14 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
 <ConsentBar lang={lang} />
 <script define:vars={{ SB_URL: SUPABASE_URL, SB_KEY: SUPABASE_KEY }}>
 window.at = window.at || {};
+// Our own devices opt out of every measurement once, with ?notrack=1 (and
+// back in with ?notrack=0). Lived in the Cloudflare beacon's script until
+// that left the site on 2026-10-19.
+try {
+  var nt = new URLSearchParams(location.search).get("notrack");
+  if (nt === "1") { localStorage.setItem("at_notrack", "1"); }
+  else if (nt === "0") { localStorage.removeItem("at_notrack"); }
+} catch (e) {}
 at.track = function (name, detail) {
   try {
     // Only the real site measures. Smoke tests load these pages in headless
@@ -449,31 +456,6 @@ document.addEventListener("click", function (e) {
 });
 </script>
 <slot name="scripts" />
-{ANALYTICS_TOKEN && (
-  <script define:vars={{ token: ANALYTICS_TOKEN }}>
-    (function () {
-      try {
-        if (location.hostname !== "ancienttrees.app") { return; }
-        // Automated browsers are not an audience. The hostname gate above
-        // already keeps CI out (the smoke test renders 127.0.0.1), but six
-        // headless pageviews still showed up in the beacon on 2026-08-09, so
-        // something automated is loading the live site: our own research
-        // agents' browser sessions, a checker, a bot that does not spoof.
-        // navigator.webdriver is the standard flag every automation tool sets,
-        // and one polluted number is worse than a missing one.
-        if (navigator.webdriver) { return; }
-        var p = new URLSearchParams(location.search);
-        if (p.get("notrack") === "1") { localStorage.setItem("at_notrack", "1"); }
-        else if (p.get("notrack") === "0") { localStorage.removeItem("at_notrack"); }
-        if (localStorage.getItem("at_notrack") === "1") { return; }
-      } catch (e) {}
-      var s = document.createElement("script");
-      s.defer = true;
-      s.src = "https://static.cloudflareinsights.com/beacon.min.js";
-      s.setAttribute("data-cf-beacon", JSON.stringify({ token: token }));
-      document.head.appendChild(s);
-    })();
-  </script>
 <script>
 // One listener tracks every element carrying data-ev, so adding a funnel
 // step is an attribute, never a new script (FUNNELS.md, 2026-08-14).
@@ -486,7 +468,6 @@ document.addEventListener('click', function(e) {
 });
 </script>
 
-)}
 {/* Kilometres or miles, decided from the reader's own region (2026-09-12).
     Here rather than per page because a distance can appear on any page type
     and a script every one of them has to remember to include is a script one

@@ -49,7 +49,7 @@
     },
     "at_notrack": {
       "verdict": "device",
-      "why": "This browser's opt-out of the cookieless beacon. The convention everywhere is per-browser, and an account-wide copy would mean storing a preference against a person we deliberately do not profile."
+      "why": "This browser's opt-out of our own measurement (our button counts and Google Analytics). The convention everywhere is per-browser, and an account-wide copy would mean storing a preference against a person we deliberately do not profile."
     },
     "hero.index.v1": {
       "verdict": "device",

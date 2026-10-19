@@ -112,11 +112,6 @@ def lines(daily, pages, sources, returning):
     out = []
     if not daily:
         return ["- No visitor has accepted the cookie bar yet, so Google Analytics has nothing to report."]
-    # Hidde, 2026-10-12: Cloudflare goes once GA proves itself beside it. The
-    # digest says when, so nobody has to remember the date: fourteen days in a
-    # row with GA rows, then this line asks for the removal.
-    if len(daily) >= 7 and all(int(r[1]) > 0 for r in daily):
-        out.append("- **GA has reported every day this week beside Cloudflare. When the 14-day mark passes (from 2026-10-26), compare the two and remove Cloudflare (Base.astro beacon, ANALYTICS_TOKEN, the Cloudflare site table here), on Hidde's ruling of 2026-10-12.**")
     out += ["| Day | People | New | Returning | Visits | Pageviews | Engaged visits |",
             "|---|---:|---:|---:|---:|---:|---:|"]
     tot = [0, 0, 0, 0, 0]
@@ -138,7 +133,7 @@ def lines(daily, pages, sources, returning):
     if sources:
         out += ["", "| Came from | Visits | People |", "|---|---:|---:|"]
         out += ["| %s / %s | %s | %s |" % (s, m, v, u) for s, m, v, u in sources]
-    out.append("- GA sees only visitors who pressed Accept on the cookie bar; read it as a sample. Cloudflare's table stays the count.")
+    out.append("- GA sees only visitors who pressed Accept on the cookie bar; read it as a sample.")
     return out
 
 

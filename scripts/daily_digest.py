@@ -2150,7 +2150,7 @@ def feedback_section(today):
     return "\n".join(out)
 
 
-def audience_section(today, cf_token, short=False):
+def audience_section(today, short=False):
     """Who they are, over 28 days: country, device, search language, landing
     page, and how they arrived. Volume answers 'how many', this answers 'who',
     and the two need different windows: a day is enough for a click count and
@@ -2205,31 +2205,6 @@ def audience_section(today, cf_token, short=False):
             len(queries), "; ".join("%s %dq c%d/i%d" % (k, v["n"], v["c"], v["i"])
                                     for k, v in ranked)))
 
-    if cf_token:
-        try:
-            a, since = A.rum(cf_token, today)
-        except Exception as e:
-            a = None
-            out.append("- On-site beacon: unreadable (%s)" % str(e)[:80])
-        if a:
-            days = a.get("days") or []
-            pv = sum(d["count"] for d in days)
-            vis = sum(d["sum"]["visits"] for d in days)
-
-            def dim(rows, key, n=5):
-                bits = []
-                for r in (rows or [])[:n]:
-                    v = r["dimensions"].get(key) or "(direct)"
-                    bits.append("%s %d" % (str(v)[:26], r["count"]))
-                return "; ".join(bits) if bits else "none"
-
-            out.append("On the site since %s (%d visits, %d pageviews, %.1f pages per visit):"
-                       % (since, vis, pv, (pv / vis) if vis else 0))
-            out.append("- Countries: " + dim(a.get("countries"), "countryName"))
-            out.append("- Devices: " + dim(a.get("devices"), "deviceType", 4))
-            out.append("- Browsers: " + dim(a.get("browsers"), "userAgentBrowser", 4))
-            out.append("- Arrived via: " + dim(a.get("refs"), "refererHost"))
-            out.append("- Opened: " + dim(a.get("paths"), "requestPath", 8))
     return "\n".join(out)
 
 
@@ -3607,7 +3582,7 @@ def main():
     # Who visits, from where and on what, moves slowly: Mondays only. Google
     # Analytics is the site's one visitor source since 2026-10-19 (Hidde: "i
     # want to keep GA and get rid of cloudflare").
-    weekly_block(audience_section, today, None, False)
+    weekly_block(audience_section, today, False)
     weekly_block(ga_section, today)
     weekly_block(backlinks_section)
 

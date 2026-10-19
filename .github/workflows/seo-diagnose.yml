@@ -23,7 +23,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Ask Google
         env:
-          CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
           GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
           GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
           GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
