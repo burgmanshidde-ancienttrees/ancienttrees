@@ -100,7 +100,8 @@ struct SharedTreeView: View {
     }
 
     private func load() async {
-        let rows = await Supa.rows("/rest/v1/shared_trees?select=*&id=eq." + id.uuidString)
+        // One tree by its link's id (shared_tree, 2026-10-19), never the list.
+        let rows = await Supa.rows("/rest/v1/rpc/shared_tree?tid=" + id.uuidString.lowercased())
         guard let row = rows.first else { state = .missing; return }
         let name = (row["name"] as? String) ?? "A tree"
         let photo = (row["photo"] as? String).map { file in
@@ -108,7 +109,10 @@ struct SharedTreeView: View {
         }
         var takenAt: Date?
         if let raw = row["taken_at"] as? String {
-            takenAt = ISO8601DateFormatter().date(from: raw)
+            // The day only now ("2026-10-19"); a full timestamp still parses.
+            let day = ISO8601DateFormatter()
+            day.formatOptions = [.withFullDate]
+            takenAt = ISO8601DateFormatter().date(from: raw) ?? day.date(from: raw)
         }
         state = .found(name: name, species: row["species"] as? String,
                        age: row["age"] as? String, note: row["note"] as? String,
