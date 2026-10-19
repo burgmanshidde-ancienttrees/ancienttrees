@@ -1,0 +1,265 @@
+{
+  "city": "Innsbruck",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Innsbruck's oldest protected trees grow on street corners and lanes more than in parks. Six are on this map: a corkscrew oak beside the Hofgarten, the last protected tree left on its plot; an oak on the Meinhardstrasse whose crown clears a five-storey building; a very old 30-metre oak and a pair of ivy-clad black locusts a short walk apart in Hötting; a damaged pine above the Planötzenhof, protected in 1928; and a riverside oak in the Traklpark in Mühlau. None has a published age.",
+  "meta_description": "Innsbruck's protected trees: a corkscrew oak by the Hofgarten, a very old 30-metre oak in Hötting, and a pine above the Planötzenhof protected since 1928.",
+  "question_answer": "Nobody has published an age for any of these Innsbruck trees, so the answer comes in two parts. The Schulgasse Oak in Hötting, almost 30 metres tall and three and a half metres round, is the one the Land Tirol survey calls very old. The Old Pine above the Planötzenhof has the oldest protection, from 1928, and the survey counts it among the oldest natural monuments in Tyrol, though that dates the listing, not the tree.",
+  "question_meta": "No Innsbruck tree here has a published age. The Schulgasse Oak in Hötting is called very old; a pine above the Planötzenhof has been protected since 1928.",
+  "question_context": "The Schulgasse Oak stands at a fork in a public lane in Hötting, where the Schulgasse meets the access road to the old people's home, about one and a half kilometres north-west of the main station. It was protected in 1940. A short walk away, two old black locusts protected together in 1978 stand in a small park beside the Hötting cemetery, so the two make one outing. The pine is further up the same hillside, at a path fork about 100 metres above the Planötzenhof farm inn, and getting there is an uphill walk. It once split into three stems; the main trunk and lower branches have since been removed, and no source gives its species beyond pine, its girth or its height. Down in the centre, the corkscrew oak on the Rennweg, protected in 1984, is a cultivar valued for its twisting shape rather than its age, and the Meinhardstrasse oak near the station has been protected since 1934. Every tree here is free to see.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Innsbruck?",
+      "a": "No source gives an age for any of them. The Land Tirol survey calls the Schulgasse Oak in Hötting very old, and gives it almost 30 metres of height and a trunk three and a half metres round. The Old Pine above the Planötzenhof has the oldest protection, from 1928, which dates the listing rather than the tree."
+    },
+    {
+      "q": "Are Innsbruck's protected trees free to see?",
+      "a": "Yes, all six. Two stand in public street space in the centre, one on a public lane and two in small public parks, and the pine above the Planötzenhof is on a public path up the Hötting hillside."
+    },
+    {
+      "q": "Can I see them in one walk?",
+      "a": "Two walks work better. The Meinhardstrasse oak and the corkscrew oak on the Rennweg are under a kilometre apart in the centre. The Schulgasse oak and the black locusts by the Hötting church are a short walk from each other, with the pine an uphill climb beyond them. The Traklpark oak is on its own, by the Inn in Mühlau."
+    },
+    {
+      "q": "Which Innsbruck tree is the strangest?",
+      "a": "The corkscrew oak in front of the Stadtcafé on the Rennweg, a cultivated form of the pedunculate oak with a pointed crown and branches that snake as they climb. It is more than 20 metres tall and the last protected tree left at Rennweg 2."
+    }
+  ],
+  "hero_tree_id": "inn_003",
+  "oldest_tree_id": "inn_003",
+  "trees": [
+    {
+      "id": "inn_001",
+      "name": "The Meinhardstrasse Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 200,
+      "location": {
+        "address": "Meinhardstrasse 13 / Brixner Strasse 1",
+        "latitude": 47.265075,
+        "longitude": 11.398825,
+        "neighbourhood": "Innsbruck city centre"
+      },
+      "story": "Innsbruck put this oak under protection in 1934, earlier than most trees on its list of natural monuments, and it grows on an ordinary street corner a few minutes' walk from the main station.\n\nOn paper it looks modest. The Land Tirol survey puts the trunk of this pedunculate oak at about two metres round at the base, and does not say when the tape went on. The crown tells a different story. It climbs past the fifth floor of the Landwirtschaftskammer, the agricultural chamber building next door, and the survey describes it as a tree that shapes the look of the whole street. Registers rarely say that about anything.\n\nProtection in 1934 means it was already a named feature of this corner before the Second World War. The list has lost trees since, among them a copper beech by the Landestheater felled in September 2025. This one is still on it.\n\nThat is as far as the record goes. The register dates the protection, not the planting, and nobody has published an age. If you know when it went in, tell us.\n\nOur pin is the register's own point, good to a few tens of metres, so trust the crown over the dot: the oak that rises above the building beside it, where the Meinhardstrasse meets the Brixner Strasse. It costs nothing to see, from the pavement.",
+      "how_to_recognise": "You can recognise it by the crown, which rises past the fifth floor of the Landwirtschaftskammer building next door. It stands on the corner of the Meinhardstrasse and the Brixner Strasse, a few minutes from the main station.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Innsbruck",
+        "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      ],
+      "access": "Free: stands on a public street corner in the city centre.",
+      "transport": "About 250 m straight line from Innsbruck Hauptbahnhof (a few minutes on foot).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Naturdenkmal ND_101_7, Land Tirol, Naturdenkmaeler Tirol (TIRIS), CC BY 4.0",
+        "url": "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      },
+      "verify_notes": "Wikipedia list (from the Land Tirol survey): Stieleiche, trunk circumference about 2 m at the base, crown rises above the 5th floor of the Landwirtschaftskammer building next door; described as shaping the look of the street. Protected since 1934 (older than most of the list). A Commons photo of Meinhardstrasse dated 2024-01-14 is within lifecheck range (not confirmed to show the tree). Girth is the survey's figure, date of measurement not given. Age not in any source: leave empty. Designated 1934 (register id ND_101_7). Alive: register entry is active (revoked ND rows are listed separately in the Land Tirol data and the de.wikipedia list, which was edited in Sept 2025 to record the felled Blutbuche at the Landestheater, still carries this tree as current). No dated photo or news of this specific trunk seen in this pass; lifecheck's nearby iNaturalist hits were weeds, not the tree, so they prove nothing. Pin is the register point (digitised at 1:1000 to 1:5000), approximate; Wikipedia list gives a coordinate within about 25 m of it. Not checked against OSM (Overpass returns 406 here)."
+    },
+    {
+      "id": "inn_002",
+      "name": "The Corkscrew Oak on the Rennweg",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 300,
+      "height_m": 20,
+      "location": {
+        "address": "Rennweg 2 (in front of the Stadtcafe), Innsbruck",
+        "latitude": 47.268949,
+        "longitude": 11.395695,
+        "neighbourhood": "Innsbruck old town, beside the Hofgarten"
+      },
+      "story": "Most oaks spread sideways. This one corkscrews upward. In front of the Stadtcafé on the Rennweg grows Quercus robur 'Fastigiata Tortuosa', a cultivated form of the pedunculate oak with a pointed, pyramid-shaped crown and branches that snake as they climb. The city's tree register, as cited in Wikipedia's list of Innsbruck's natural monuments, puts it at more than 20 metres tall and more than three metres round.\n\nIt is a curiosity rather than an ancient, and it was protected as a natural monument in 1984 for what it looks like, which is reason enough. The Hofgarten, the old court garden, is next door, so the walk from one to the other takes a minute.\n\nIt is also the last protected tree on its plot. Rennweg 2 once held three. A black pine lost its protection in 2013 and collapsed in January 2021. A copper beech at the Landestheater, on the same plot, was felled in September 2025. The corkscrew oak is the one still standing.\n\nNobody has recorded when it was planted, and the register gives no age. If you know, tell us.\n\nOur pin is the register's point, good to a few tens of metres, which matters less here than usual: no other tree on the Rennweg grows in this shape. It stands in public street space and costs nothing to see.",
+      "how_to_recognise": "You can recognise it by the crown: narrow, pointed and twisting, its branches snaking upward instead of spreading. It stands in front of the Stadtcafé at Rennweg 2, beside the Hofgarten.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Innsbruck",
+        "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      ],
+      "access": "Free: public street space at the Rennweg, central Innsbruck.",
+      "transport": "Central Innsbruck; roughly 10 minutes on foot (about 700 m) from Innsbruck Hauptbahnhof.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Naturdenkmal ND_101_24, Land Tirol, Naturdenkmaeler Tirol (TIRIS), CC BY 4.0",
+        "url": "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      },
+      "verify_notes": "Wikipedia list cites the city's Baumkataster for it: a pyramid-shaped corkscrew fastigiate oak (Quercus robur 'Fastigiata Tortuosa'), probably from North America or East Asia per Wikipedia (the cultivar's origin claim is unsourced there, do not repeat as fact), pointed habit and snaking branches, more than 20 m high, girth more than 3 m (girth_cm 300 is that floor). A cultivar, so an odd specimen rather than an ancient one: the page should sell its shape, not age. Same Rennweg 2 plot held the Blutbuche (felled Sept 2025, see blocked) and a black pine (collapsed Jan 2021, protection revoked 2013). The Hofgarten is next door. Designated 1984 (register id ND_101_24). Alive: register entry is active (revoked ND rows are listed separately in the Land Tirol data and the de.wikipedia list, which was edited in Sept 2025 to record the felled Blutbuche at the Landestheater, still carries this tree as current). No dated photo or news of this specific trunk seen in this pass; lifecheck's nearby iNaturalist hits were weeds, not the tree, so they prove nothing. Pin is the register point (digitised at 1:1000 to 1:5000), approximate; Wikipedia list gives a coordinate within about 25 m of it. Not checked against OSM (Overpass returns 406 here)."
+    },
+    {
+      "id": "inn_003",
+      "name": "The Schulgasse Oak in Hötting",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented, called very old",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 350,
+      "height_m": 30,
+      "location": {
+        "address": "Schulgasse, Hötting, Innsbruck",
+        "latitude": 47.272413,
+        "longitude": 11.385145,
+        "neighbourhood": "Hötting"
+      },
+      "story": "The survey that lists Innsbruck's natural monuments did not put a number on this oak's age. It simply called it very old.\n\nIt gave the rest. This pedunculate oak stands almost 30 metres tall, and its trunk measures three and a half metres round, by the Land Tirol survey's figures, which carry no date of measurement. Those are big numbers for any oak, and this one grows not in a park but at a fork in a lane in Hötting, where the Schulgasse meets the access road to the old people's home.\n\nIt was put under protection in 1940, in the middle of the war, and has held that status for more than eighty years. The register records the protection, not the planting, and \"very old\" is the survey's word, not a date. Nobody has published anything firmer. If you know how old it is, tell us.\n\nIt makes an easy pairing with the two old black locusts beside the Hötting church and cemetery, a short walk away, so one trip up to Hötting covers both. The pin is the register's point, good to a few tens of metres; at nearly 30 metres, the oak is easier to find than the dot. It stands on a public lane and costs nothing to see.",
+      "how_to_recognise": "You can recognise it by its size: almost 30 metres tall, the trunk three and a half metres round. It stands at the fork of the Schulgasse and the access road to the old people's home in Hötting.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Innsbruck",
+        "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      ],
+      "access": "Free: stands at the fork of the Schulgasse and the access road to the old people's home; public lane.",
+      "transport": "Hötting, about 1.5 km north-west of Innsbruck Hauptbahnhof; the Hötting church area is a short walk away.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Naturdenkmal ND_101_10, Land Tirol, Naturdenkmaeler Tirol (TIRIS), CC BY 4.0",
+        "url": "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      },
+      "verify_notes": "Wikipedia list (from the survey): 'sehr alte' Stieleiche, almost 30 m high, trunk circumference 3.5 m. Girth is the survey's figure, measurement date not given. Standing a few hundred metres from inn_004, so the two make a Hötting stop. Age not in a source: empty. Designated 1940 (register id ND_101_10). Alive: register entry is active (revoked ND rows are listed separately in the Land Tirol data and the de.wikipedia list, which was edited in Sept 2025 to record the felled Blutbuche at the Landestheater, still carries this tree as current). No dated photo or news of this specific trunk seen in this pass; lifecheck's nearby iNaturalist hits were weeds, not the tree, so they prove nothing. Pin is the register point (digitised at 1:1000 to 1:5000), approximate; Wikipedia list gives a coordinate within about 25 m of it. Not checked against OSM (Overpass returns 406 here)."
+    },
+    {
+      "id": "inn_004",
+      "name": "The Robinia Pair by the Old Hötting Church",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "not documented, called old",
+      "age_min": null,
+      "age_max": null,
+      "height_m": 23,
+      "location": {
+        "address": "Steinbruchstrasse, north of the Hoettinger Friedhof",
+        "latitude": 47.273056,
+        "longitude": 11.384491,
+        "neighbourhood": "Hötting"
+      },
+      "story": "Innsbruck protects these two black locusts as one natural monument. They were listed together in 1978, under a single entry, and they stand in a small public park beside the cemetery of the old Hötting church.\n\nThe larger is about 23 metres tall, with a trunk more than a metre across at the base, and the survey records it as covered in ivy. A metre across works out to more than three metres round if the trunk were a perfect circle, which trunks never quite are, so take that as a floor rather than a measurement.\n\nBlack locust came to Europe from North America. The survey calls these two old and says no more: no planting date, no age, nothing that ties them to the church's own history. Nobody has dated them. If you know when they went in, tell us.\n\nThe park is tiny, which makes them easy to find: two tall trees side by side by the cemetery wall, north of the Hötting cemetery on the Steinbruchstrasse. Black locusts flower in early summer, hanging white and strongly scented, and June is when to come if you want them at their best.\n\nThe very old oak on the Schulgasse is a short walk away, so one trip to Hötting covers both. Entry to the park is free.",
+      "how_to_recognise": "You can recognise them as a pair: two tall black locusts side by side, the larger about 23 metres high and covered in ivy. They stand in the small park by the wall of the Hötting cemetery, beside the old church.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Innsbruck",
+        "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      ],
+      "access": "Free: in a small public park beside the old Hötting church and cemetery.",
+      "transport": "Hötting, about 1.5 km north-west of Innsbruck Hauptbahnhof; about 100 m from inn_003.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Naturdenkmal ND_101_22, Land Tirol, Naturdenkmaeler Tirol (TIRIS), CC BY 4.0",
+        "url": "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      },
+      "location_site": {
+        "name": "small park north of the Hoettinger Friedhof",
+        "radius_m": 40
+      },
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when both robinias hang with white, strongly scented flowers"
+      },
+      "verify_notes": "Two old robinias (a pair, protected together; fold as one collectible point). Wikipedia list: the larger is about 23 m high, trunk diameter at base more than 1 m (about 315 cm girth if round: diameter times pi, derived, and a lower bound), covered in ivy. The park is tiny, so what tells them apart is the pair beside the cemetery wall. Age not in a source. Designated 1978 (register id ND_101_22). Alive: register entry is active (revoked ND rows are listed separately in the Land Tirol data and the de.wikipedia list, which was edited in Sept 2025 to record the felled Blutbuche at the Landestheater, still carries this tree as current). No dated photo or news of this specific trunk seen in this pass; lifecheck's nearby iNaturalist hits were weeds, not the tree, so they prove nothing. Pin is the register point (digitised at 1:1000 to 1:5000), approximate; Wikipedia list gives a coordinate within about 25 m of it. Not checked against OSM (Overpass returns 406 here)."
+    },
+    {
+      "id": "inn_005",
+      "name": "The Old Pine above the Planötzenhof",
+      "species": "Pine (Pinus sp.)",
+      "age_estimate": "called one of the oldest natural monuments in Tyrol",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Path fork about 100 m above the Planoetzenhof, Hötting",
+        "latitude": 47.275218,
+        "longitude": 11.375011,
+        "neighbourhood": "Hötting hillside"
+      },
+      "story": "Tyrol put this pine under protection in 1928, and the survey of Innsbruck's natural monuments calls it one of the oldest in the province. That is a claim about the paperwork, not the tree: the protection is old, and nobody has published the pine's age.\n\nThe tree has paid for its years. Its trunk once split about four metres up into three stems. The main trunk and the lower branches have since had to be removed, so what stands at the path fork above the Planötzenhof, a farm inn on the Hötting hillside, is a damaged survivor rather than a complete tree.\n\nIt has held its protection for nearly a century, longer than any other tree we map in Innsbruck, through the war years and every winter on the slope since.\n\nThe sources call it a Föhre, a pine, and stop there. In Tyrol that usually means Scots pine, but no source says so for this tree, so we give only the genus. None gives a girth or a height either. If you can name the species, or have measured it, tell us.\n\nGetting there is a walk: uphill from Hötting to the Planötzenhof, then about 100 metres higher to the fork in the public path. Our pin is the register's point, good to a few tens of metres. It costs nothing to see.",
+      "how_to_recognise": "You can recognise it by what is missing: a pine whose trunk once split into three stems about four metres up, with the main trunk and lower branches cut away. It stands at the path fork about 100 metres above the Planötzenhof.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Innsbruck",
+        "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      ],
+      "access": "Free: stands at a fork of a public path above the Planoetzenhof, a farm inn on the Hötting hillside. A walk uphill from Hötting.",
+      "transport": "Hötting hillside, about 2.3 km north-west of Innsbruck Hauptbahnhof by straight line, uphill on foot; check a local bus to Hötting for the approach.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Naturdenkmal ND_101_13, Land Tirol, Naturdenkmaeler Tirol (TIRIS), CC BY 4.0",
+        "url": "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      },
+      "verify_notes": "Wikipedia list: 'eines der aeltesten Naturdenkmaeler Tirols' (one of the oldest natural monuments in Tyrol, meaning the protection, designated 1928, not necessarily the tree's age). The trunk originally split about 4 m up into three stems, but the main trunk and the lower branches had to be removed. So a damaged old pine. Species: sources say Foehre/Kiefer only; in Tyrol that is normally Scots pine but no source here says so, hence genus only. No girth, height or age in any source seen. A search for a second description (age, girth) found nothing; Wikipedia Commons has a 2014-05-07 photo of it. This is the most 'old' tree in the set but the one with least data. Designated 1928 (register id ND_101_13). Alive: register entry is active (revoked ND rows are listed separately in the Land Tirol data and the de.wikipedia list, which was edited in Sept 2025 to record the felled Blutbuche at the Landestheater, still carries this tree as current). No dated photo or news of this specific trunk seen in this pass; lifecheck's nearby iNaturalist hits were weeds, not the tree, so they prove nothing. Pin is the register point (digitised at 1:1000 to 1:5000), approximate; Wikipedia list gives a coordinate within about 25 m of it. Not checked against OSM (Overpass returns 406 here)."
+    },
+    {
+      "id": "inn_006",
+      "name": "The Traklpark Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 310,
+      "height_m": 20,
+      "location": {
+        "address": "Haller Strasse 5, opposite, in the Traklpark, Muehlau/Innsbruck",
+        "latitude": 47.280895,
+        "longitude": 11.406045,
+        "neighbourhood": "Mühlau, by the Inn promenade"
+      },
+      "story": "The register still files this oak under a guesthouse. Its entry reads \"beim Gasthof Dollinger\", by the Dollinger inn, while the tree itself stands in the Traklpark, a small public park on the Inn beside the Mühlau fire station.\n\nIt is a pedunculate oak, about 20 metres tall, with a trunk almost a metre across at the time of the survey. Worked out as a circle, that is roughly three metres round, an estimate rather than a measurement, and the survey gives no date for it.\n\nIt was protected in 1940, the same year as the very old oak on the Schulgasse in Hötting, and has held that status ever since. Innsbruck has lost protected trees in the decades between; this one is still on the list. Nobody has published its age, and the register dates the protection, not the planting. If you know when it went in, tell us.\n\nThe register's point and the one in Wikipedia's list of natural monuments sit about 20 metres apart, so treat our pin as approximate. In a park this small it hardly matters: walk to the riverside park beside the fire station, opposite Haller Strasse 5, and look for the big oak.\n\nIt is on the north bank, about one and a half kilometres from the old town across the Inn, and free to visit.",
+      "how_to_recognise": "You can recognise it as the big oak of the Traklpark, about 20 metres tall with a trunk almost a metre across. It stands in the small riverside park beside the Mühlau fire station, opposite Haller Strasse 5.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Innsbruck",
+        "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      ],
+      "access": "Free: in a small public park on the Inn beside the fire station.",
+      "transport": "North of the Inn near the Innpromenade; about 2 km straight line from Innsbruck Hauptbahnhof, 1.5 km from the old town across the river.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Naturdenkmal ND_101_11, Land Tirol, Naturdenkmaeler Tirol (TIRIS), CC BY 4.0",
+        "url": "https://www.data.gv.at/katalog/dataset/afae36df-2f5f-4fea-a90f-9b8def39c326"
+      },
+      "location_site": {
+        "name": "Traklpark (small riverside park)",
+        "radius_m": 50
+      },
+      "verify_notes": "Wikipedia list: Stieleiche in a small park on the Inn beside the Feuerwehrhaus, 20 m high, trunk diameter almost 1 m at survey time (girth about 310 cm derived: diameter times pi, approximate). Register name says 'beim Gasthof Dollinger'; the register point is about 20 m from the Wikipedia point. Commons carries a photo of it from Wiki Loves Earth 2014 (not recent). Designated 1940 (register id ND_101_11). Alive: register entry is active (revoked ND rows are listed separately in the Land Tirol data and the de.wikipedia list, which was edited in Sept 2025 to record the felled Blutbuche at the Landestheater, still carries this tree as current). No dated photo or news of this specific trunk seen in this pass; lifecheck's nearby iNaturalist hits were weeds, not the tree, so they prove nothing. Pin is the register point (digitised at 1:1000 to 1:5000), approximate; Wikipedia list gives a coordinate within about 25 m of it. Not checked against OSM (Overpass returns 406 here)."
+    }
+  ]
+}
