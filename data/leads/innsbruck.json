@@ -1,0 +1,76 @@
+{
+ "leads": [
+  {
+   "site": "Hungerburg",
+   "candidate": "Winterlinde auf der Hungerburg (ND_101_18, 47.28577,11.398635)",
+   "reason": "Wikipedia list: Winter-Linde 30 m high, crown 15 m, base diameter about 1 m, in the garden behind the former Gasthof Zur Linde, Hoehenstrasse 143, below the Nordkettenbahn base station. The house is now a municipal kindergarten (innsbruck-erinnert.at), so it may be inside a kindergarten garden; access not settled. A Stadtarchiv blog says the Hoetting/Muehlau boundary runs through this tree (not fetched in full). Strong tree, needs an access check."
+  },
+  {
+   "site": "Pradl",
+   "candidate": "Blutbuche suedlich der Pradler Kirche (ND_101_29, 47.265346,11.417841)",
+   "reason": "Wikipedia list: copper beech about 12 m high, crown nearly wider than tall; address Landseestrasse 14, and a comment says the church meant is probably the Schutzengelkirche. Likely on church or private ground; access not settled. Small tree."
+  },
+  {
+   "site": "city centre",
+   "candidate": "Rotbuche in a courtyard on the Museumstrasse (ND_101_40, 47.267034,11.400462)",
+   "reason": "Protected 2015 for size and habit, but stands in an inner courtyard (Innenhof): access not shown, no size in the list. Hold until access is known."
+  },
+  {
+   "site": "city centre",
+   "candidate": "Rosskastanie Dreiheiligenstrasse / Zeughausgasse (ND_101_39, 47.269373,11.406698)",
+   "reason": "Protected 2012 for size, no measurements in any source seen; street corner, so likely public. Wants a girth figure and a recent observation."
+  },
+  {
+   "site": "Saggen",
+   "candidate": "Buche (copper beech) at Gaensbacherstrasse 5 (ND_101_36, 47.275044,11.402298)",
+   "reason": "Protected 2006 for overall appearance; no size or access info; address looks like a residential plot."
+  },
+  {
+   "site": "Muehlau",
+   "candidate": "Blutbuche am Richardsweg (ND_101_33), Linde at Josef-Schraffl-Strasse 4 (ND_101_38), two plane trees at the Mariahilf chapel between Muehlau and Arzl (ND_101_15, 47.281997,11.420591)",
+   "reason": "On the register; no size data in any source; the plane pair stands beside a baroque chapel above the Arzlerstrasse and is the best of these for a walk. Not checked for access or life."
+  },
+  {
+   "site": "Igls / Vill",
+   "candidate": "Fohre am See 6 (ND_101_37), Foehrengruppe ueber der Igler Strasse (ND_101_2), Schirmfoehre at the road to the Lungenheilanstalt (ND_3_60), Ulme (1900) (ND_3_87), Eiche (ND_3_95, 47.242262,11.440292, protected 2023)",
+   "reason": "Outer districts; names only, no size, access or life data. Foehrengruppe: originally 10 to 12 pines, some already felled."
+  },
+  {
+   "site": "Allerheiligenhoefe / Voels",
+   "candidate": "Eiche an der Voelserstrasse (ND_101_6, 47.250105,11.348544), Winterlinde on the Lindenbuehel (ND_101_20, 47.269544,11.364508), Eschengruppe und Eiche (ND_101_30), Blutbuche Berchtoldshofweg (ND_101_31), Nussbaum Sadrachstrasse 20 (ND_101_41), Drei Schwarzfoehren Kranebitten campsite (ND_101_21)",
+   "reason": "Wikipedia list: Voelserstrasse oak over 100 years, 20 m, girth about 3.2 m (the original double oak lost its western stem); Lindenbuehel lime over 100 years and the last old tree of the former Lindenbuehel; Kranebitten pines about 27 m high, girth 2 to 3 m (register says two, Wikipedia says three). West Innsbruck, outside the central cluster; none checked for access or life."
+  },
+  {
+   "site": "Hofgarten and Schloss Ambras",
+   "candidate": "Named by the requester, not in the register",
+   "reason": "Not researched in this pass: the Tirol register has no points in either park, so there is no naming body in hand. Needs its own pass with the Bundesgaerten or Schloss Ambras pages."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Blutbuche beim Landestheater am Rennweg (ND_101_23)",
+   "reason": "Felled September 2025 after a fungal disease (tirol.orf.at/stories/3323229, cited by the de.wikipedia list)."
+  },
+  {
+   "candidate": "Mammutbaum in Muehlau (NDW_101_26)",
+   "reason": "Protection lifted 2021, felled February 2022 (Tiroler Tageszeitung 10 Feb 2022, cited by de.wikipedia)."
+  },
+  {
+   "candidate": "Schwarzfoehre and Eiben opposite the Volkskundemuseum (NDW_101_25)",
+   "reason": "Pine collapsed under snow January 2021 (ORF Tirol); protection revoked 2013."
+  },
+  {
+   "candidate": "Pyramidenpappeln am Hohen Weg (NDW_101_3)",
+   "reason": "Protection revoked 1983; two cut-back poplars left, not a collectible point."
+  },
+  {
+   "candidate": "Rosskastanienbaeume Koenig-Laurin-Strasse (ND_101_32)",
+   "reason": "An avenue along the Sill canal, not one collectible point."
+  },
+  {
+   "candidate": "Hopfenbuchen in der Muehlauer Klamm (ND_101_16), Galgenbuehel (ND_101_28), Eichen-Foehrenwald (ND_101_34), Gletschermuehle (ND_101_35), Seerosenweiher, Voelser Giessen, Erdpyramiden, Hirschlacke",
+   "reason": "Woods, biotopes or geological monuments, not single trees (the hornbeam stand is multi-stemmed shrubs)."
+  }
+ ],
+ "note": "Innsbruck verify pass 2026-10-19 from the Tirol Naturdenkmaeler register (CC BY 4.0) joined to the de.wikipedia list 'Liste der Naturdenkmaeler im Bezirk Innsbruck'."
+}
