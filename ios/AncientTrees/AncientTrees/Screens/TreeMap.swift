@@ -1196,6 +1196,19 @@ enum MapLayers {
         if let layer = style.layer(withIdentifier: live(selectedLayer, on: style)) as? MLNSymbolStyleLayer {
             layer.predicate = NSPredicate(format: "%K == %@", idKey, id ?? "")
         }
+        // The small pin steps aside while its big one is drawn, or the two
+        // read as a target (seen in the simulator, 2026-10-19).
+        if let pins = style.layer(withIdentifier: live(treeLayer, on: style)) as? MLNSymbolStyleLayer {
+            pins.predicate = pinPredicate(peaking: false, without: id)
+        }
+        if let peak = style.layer(withIdentifier: live(peakLayer, on: style)) as? MLNSymbolStyleLayer {
+            peak.predicate = pinPredicate(peaking: true, without: id)
+        }
+    }
+
+    static func pinPredicate(peaking: Bool, without id: String?) -> NSPredicate {
+        NSPredicate(format: "at_kind == 'tree' AND peaking \(peaking ? "==" : "!=") YES AND %K != %@",
+                    idKey, id ?? "")
     }
 
     private static func state(for style: MLNStyle) -> StyleState {
@@ -1792,7 +1805,7 @@ enum MapLayers {
         pins.iconImageName = NSExpression(forKeyPath: "icon")
         pins.iconAllowsOverlap = NSExpression(forConstantValue: true)
         pins.iconAnchor = NSExpression(forConstantValue: "center")
-        pins.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking != YES")
+        pins.predicate = pinPredicate(peaking: false, without: state(for: style).selectedID)
         style.addLayer(pins)
 
         // The halo goes UNDER the peaking pin and is the thing that breathes.
@@ -1812,7 +1825,7 @@ enum MapLayers {
         peak.iconImageName = NSExpression(forKeyPath: "icon")
         peak.iconAllowsOverlap = NSExpression(forConstantValue: true)
         peak.iconAnchor = NSExpression(forConstantValue: "center")
-        peak.predicate = NSPredicate(format: "at_kind == 'tree' AND peaking == YES")
+        peak.predicate = pinPredicate(peaking: true, without: state(for: style).selectedID)
         style.addLayer(peak)
 
         // Matches nothing until a tree is selected; select(_:on:) aims it.

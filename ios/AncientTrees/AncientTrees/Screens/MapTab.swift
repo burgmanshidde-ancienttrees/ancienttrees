@@ -354,15 +354,11 @@ struct MapTab: View {
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {
-                // A tapped tree takes the header, as a tapped place does in
-                // Apple Maps; otherwise the count, outside the scroll view: it
+                // No count while a tree is selected: its card is the sheet.
+                // Otherwise the count, outside the scroll view: it
                 // stays visible while the list scrolls and it is the handle
                 // that makes the sheet draggable again once it has (2026-08-25).
-                if let t = selected {
-                    TreePlaceHeader(tree: t, onClose: closePlace)
-                } else {
-                    countStrip
-                }
+                if selected == nil { countStrip }
                 // Invisible on purpose: a marker for testTappingAPinOpensItsTree
                 // to wait on, so it stops sleeping and guessing at when the
                 // pins are actually tappable. See TreeMap.onMapIdle.
@@ -384,7 +380,8 @@ struct MapTab: View {
                 if let t = selected {
                     TreePlaceBody(tree: t,
                                   km: located ? t.distanceKm(from: origin.lat, origin.lng) : nil,
-                                  onOpen: { navigator.push = .tree(t.id) })
+                                  onOpen: { navigator.push = .tree(t.id) },
+                                  onClose: closePlace)
                 } else {
                     sheet
                 }
