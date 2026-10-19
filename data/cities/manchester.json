@@ -138,25 +138,33 @@
       "girth_cm": null,
       "location": {
         "address": "Alexandra Park, Whalley Range, Manchester M16 8HZ",
-        "latitude": 53.452374,
-        "longitude": -2.2493909,
+        "latitude": 53.449988,
+        "longitude": -2.251078,
         "neighbourhood": "Whalley Range"
       },
       "verified_sources": [
         "https://www.manchester.gov.uk/info/709/looking_after_parks_and_open_spaces/5754/trees/4"
       ],
-      "access": "Free, in a large public park open to Whalley Range/Moss Side; exact spot within the park's 60 acres not established this pass. The Friends of Alexandra Park run tree walks and could confirm the exact tree.",
+      "access": "Free, in a large public park in Whalley Range; the tree stands beside a park path at the pin.",
       "transport": "Wilbraham Road Metrolink stop, about a 10 minute walk; Manchester Oxford Road railway station then bus",
-      "location_precision": "approximate",
+      "location_precision": "confirmed",
       "curation_status": "flagged",
       "photo": {
-        "url": null,
-        "license": null,
+        "url": "https://ancienttrees.app/photos/mcr_004-the-variegated-green-ash.jpg",
+        "license": "Provided by a reader by mail, all rights reserved",
         "attribution": null,
-        "status": "missing"
+        "source": "contributor",
+        "unlinked": true,
+        "status": "approved",
+        "width": 480,
+        "height": 640,
+        "taken_month": 10,
+        "note": "Photographed by a Friends of Alexandra Park volunteer on 2026-10-19 and mailed to us the same day; published on Hidde's 2026-10-14 ruling that a photo mailed to us goes up at once. Daylight, colour, the forked trunk fills the frame. EXIF (GPS) stripped from the published file. No name printed beside it. Not an open licence: ask before reuse elsewhere."
       },
-      "story": "Alexandra Park holds over seven thousand trees, and this is the one a specialist stops at. The council's survey calls it a very rare tree, planted at the turn of the 20th century, and a potential champion, which is the surveyor's own careful wording: a possible national record-holder rather than a confirmed one. That planting period is the only date anywhere on this page, and it puts the tree at roughly 110 to 135 years, a generation younger than the park it grows in.\n\nGreen ash is a North American tree, planted in Britain as an ornamental. The variegated form is the uncommon part: leaves that come out marked and streaked with cream rather than plain green, so the whole crown reads paler than the trees around it, which is how you pick it out at a distance.\n\nAlexandra Park opened in 1870, sixty acres of Victorian municipal park between Whalley Range and Moss Side, and it is still a working local park rather than a collection. The survey does not say where in those sixty acres the ash stands, and the pin marks the park. The Friends of Alexandra Park run tree walks and will know the exact tree, which is the shortest route to it.",
-      "how_to_recognise": "Look for a crown that reads noticeably paler than its neighbours: the leaves are streaked and edged with cream rather than plain green."
+      "story": "Alexandra Park holds over seven thousand trees, and this is the one a specialist stops at. The council's survey calls it a very rare tree, planted at the turn of the 20th century, and a potential champion, which is the surveyor's own careful wording: a possible national record-holder rather than a confirmed one. That planting period is the only date anywhere on this page, and it puts the tree at roughly 110 to 135 years, a generation younger than the park it grows in.\n\nGreen ash is a North American tree, planted in Britain as an ornamental. The variegated form is the uncommon part: leaves that come out marked and streaked with cream rather than plain green, so the crown reads paler than the trees around it.\n\nAlexandra Park opened in 1870, sixty acres of Victorian municipal park between Whalley Range and Moss Side, and it is still a working local park rather than a collection. The survey never said where in those sixty acres the ash stands. The Friends of Alexandra Park went looking in October 2026 and point to this trunk, the one that forks into two long leaders beside the path, and the pin stands on it.",
+      "how_to_recognise": "A tall ash whose trunk divides into two long leaders leaning apart; the leaves are streaked and edged with cream.",
+      "pin_source": "GPS of a photograph taken at the trunk on 2026-10-19 by a Friends of Alexandra Park volunteer and mailed to us the same day (about 280 m south-west of the old park-centre pin)",
+      "verify_notes": "2026-10-19: a Friends of Alexandra Park volunteer (answering our 2026-10-09 help mail) mailed a photograph of the trunk they believe is the survey's variegated green ash, with a geotag (53.449988, -2.251078) and a what3words screenshot (flying.closes.groom). Their own words: 'This may be the tree you're looking for', so the identification is theirs and hedged; at 480 px the photograph does not show variegation clearly. Pin moved to the GPS fix (confirmed, GPS at the tree), photo published per the mailed-photo ruling. A canopy photograph is to follow by mail. If the canopy shows plain green leaves, revisit species."
     },
     {
       "id": "mcr_005",

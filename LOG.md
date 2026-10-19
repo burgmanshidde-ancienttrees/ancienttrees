@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session: Manchester's Variegated Green Ash found by the Friends of Alexandra Park
+
+**Live (next deploy):** mcr_004 has its first photograph and a confirmed pin. A Friends of Alexandra Park volunteer, answering the 2026-10-09 help mail, went looking and mailed a geotagged photo of the trunk ("This may be the tree you're looking for"). Pin moved about 280 m to the GPS fix, photo published uncredited per the mailed-photo ruling (EXIF stripped, 480x640 as mail delivered it), story and access no longer say the spot is unknown. Identification is theirs and hedged; a canopy photo follows by mail and is the check on the cream leaves (verify_notes). Reply drafted for Hidde in out/tmp/reply-tony-craven.md (not in the repo: it names him); no automatic mail goes for a mailed tip.
+
 ## 2026-10-19 session: photo push on the roster, and why Take me there looks low
 
 **Live:** 8 roster trees have their first photograph: four Dresden oaks (dre_006 Rieseneiche Sauerbusch, dre_023 Luthereiche Kleinluga, dre_024 Oberpoyritz, dre_026 König-Albert-Eiche), Salzburg szb_013, Brno brq_002 (GPS fix 8 m and the memorial-tree sign; large iNaturalist file), Viroflay vir_001 (Chêne de la Vierge) and Nagoya ngy_001 (Castle kaya). These pages come back into Google's index with the next deploy. Undo any one with `python3 scripts/photo_apply.py hold <id> --reason overrule`.
