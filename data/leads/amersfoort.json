@@ -1,0 +1,188 @@
+{
+  "leads": [
+    {
+      "name": "The Oak at the Randenbroek Pond",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "location_hint": "Park Randenbroek, behind the house on the bank of the big pond, Amersfoort",
+      "latitude": 52.148872,
+      "longitude": 5.398287,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "Top candidate. The expert's list calls it the oldest: 'Park Randenbroek op terras aan de grote vijver', planted 1650 (376 years). The LRMB register (nr 1677723) puts the same spot's oak at 1860-1870, visitable, municipal. Two ages two centuries apart: publish both, the expert's as a local estimate. Anchors a Randenbroek walk (beech, plane, yew below).",
+      "status": "lead",
+      "register_nr": 1677723
+    },
+    {
+      "name": "The Copper Beech before Huize Randenbroek",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "location_hint": "In front of the house, Park Randenbroek, Amersfoort",
+      "latitude": 52.149357,
+      "longitude": 5.397435,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "LRMB 1677724, planted 1830-1840, municipal, visitable. The expert's list notes oaks of about 120 cm diameter beside and in front of the house.",
+      "status": "lead",
+      "register_nr": 1677724
+    },
+    {
+      "name": "The Plane at the Randenbroek Gate",
+      "species": "London Plane (Platanus x acerifolia)",
+      "location_hint": "By the main entrance of Park Randenbroek, Amersfoort",
+      "latitude": 52.150864,
+      "longitude": 5.400144,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "LRMB 1680326, planted 1860-1870, municipal, visitable; the register warns its map pin may be off.",
+      "status": "lead",
+      "register_nr": 1680326
+    },
+    {
+      "name": "The Yew of Randenbroek",
+      "species": "Yew (Taxus baccata)",
+      "location_hint": "Near the main house, Park Randenbroek, Amersfoort",
+      "latitude": 52.149218,
+      "longitude": 5.397945,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "LRMB 1680327, planted 1860-1870, municipal, visitable.",
+      "status": "lead",
+      "register_nr": 1680327
+    },
+    {
+      "name": "The Weeping Ash of the Provenierssteeg",
+      "species": "Weeping Ash (Fraxinus excelsior 'Pendula')",
+      "location_hint": "Provenierssteeg, Amersfoort",
+      "latitude": 52.155941,
+      "longitude": 5.390907,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "Expert's list 1840; LRMB 1678371 band 1830-1840, municipal, visitable. Two sources agree. Inside the old-town walk with ame_015 and ame_001.",
+      "status": "lead",
+      "register_nr": 1678371
+    },
+    {
+      "name": "The Copper Beech of the Town Hall",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "location_hint": "Before the entrance of the town hall, Stadhuisplein 1, Amersfoort",
+      "latitude": 52.156597,
+      "longitude": 5.384364,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "LRMB 1678816, planted 1840-1850, municipal, visitable. The expert's list names a plane 'bij stadhuis' (1900) instead; check which trunk is the one to walk to.",
+      "status": "lead",
+      "register_nr": 1678816
+    },
+    {
+      "name": "The Horse Chestnut of the Bleekerseiland",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "location_hint": "Former Bleekerseiland, Stadsring, Amersfoort",
+      "latitude": 52.15342,
+      "longitude": 5.393852,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "LRMB 1679869, planted 1830-1840, municipal. The expert lists an oak and a double-flowered horse chestnut ('Baumannii') at the corner of Stadsring and Arnhemsestraat by the Kei, both 1840; may be this spot, unconfirmed.",
+      "status": "lead",
+      "register_nr": 1679869
+    },
+    {
+      "name": "The Turkey Oak of the Stadswal",
+      "species": "Turkey Oak (Quercus cerris)",
+      "location_hint": "Plantsoen Stadswal by the St Andriesstraat bridge, Amersfoort",
+      "latitude": 52.15513,
+      "longitude": 5.394834,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "LRMB 1678818, planted 1830-1840, municipal, visitable. Not on the expert's list.",
+      "status": "lead",
+      "register_nr": 1678818
+    },
+    {
+      "name": "The Beech of Plantsoen-Oost",
+      "species": "Common Beech (Fagus sylvatica)",
+      "location_hint": "Plantsoen-Oost, in front of the old row of houses, Amersfoort",
+      "latitude": null,
+      "longitude": null,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "Expert's list 1880. Probably LRMB 1680418 (copper beech by the Herenstraat bridge, 1850-1860); needs a coordinate.",
+      "status": "lead"
+    },
+    {
+      "name": "The Oriental Plane of the Boldershof",
+      "species": "Oriental Plane (Platanus orientalis)",
+      "location_hint": "Plantsoen-Noord by the Boldershof, Amersfoort",
+      "latitude": null,
+      "longitude": null,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "Expert's list 1920; not in the LRMB. Needs a pin.",
+      "status": "lead"
+    },
+    {
+      "name": "Other Plantsoen-Oost trees on the expert's list",
+      "species": "various",
+      "location_hint": "Plantsoen-Oost, Amersfoort",
+      "latitude": null,
+      "longitude": null,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "Expert's list, 1900 to 1931: American lime, horse chestnut, plane and catalpa near the St Andriesstraat; plane and weeping beech behind Binnen de Veste; Crimean lime behind the Waltoren; black alder and honey locust by the old wall; sycamore by the Mariënhof (1920); black walnut by the Stadsring path (1930). Under 100 years mostly: depth for a walk, not pages.",
+      "status": "lead"
+    },
+    {
+      "name": "Coelhorster apple orchard",
+      "species": "Apple (Malus sp.)",
+      "location_hint": "Hoogland-West, Amersfoort",
+      "latitude": null,
+      "longitude": null,
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "reason": "Expert's list, no age. An orchard, not a single collectible tree.",
+      "status": "lead"
+    },
+    {
+      "name": "Zuidsingel horse chestnut and oak, garden no. 1",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: in a private garden opposite Zuidsingel 8 (expert's list 1870)"
+    },
+    {
+      "name": "Yew in the garden of Muurhuizen 3",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: private home garden (expert's list 1870)"
+    },
+    {
+      "name": "Weeping beech, garden Muurhuizen 23",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: private home garden; LRMB 1678368 not visitable"
+    },
+    {
+      "name": "Copper beech of Tinnenburg",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: private back garden; LRMB 1678827 not visitable"
+    },
+    {
+      "name": "Pear, garden Muurhuizen 181",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: private garden (expert 1915; LRMB 1679864)"
+    },
+    {
+      "name": "Weeping ash, garden Muurhuizen 197",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: garden behind a house (expert 1915; LRMB 1679865)"
+    },
+    {
+      "name": "Copper beech, garden 't Zand 7",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: private garden, seen from the street only (expert 1860; LRMB 1678832 not visitable)"
+    },
+    {
+      "name": "Weeping ash by the Elleboogkerk, garden Langegracht 37",
+      "location_hint": "Amersfoort old town",
+      "source": "IVN Amersfoort, local tree expert's list 'Ancient Trees Amersfoort', October 2026 (mailed 2026-10-19)",
+      "status": "blocked",
+      "reason": "Not public: garden of a house (expert 1910; LRMB 1679866)"
+    }
+  ]
+}

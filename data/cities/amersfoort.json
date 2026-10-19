@@ -756,9 +756,9 @@
       "id": "ame_018",
       "name": "The Lime of the Havik",
       "species": "Common Lime (Tilia x europaea)",
-      "age_estimate": "roughly 140 years",
+      "age_estimate": "roughly 140 years by the register; about 175 years by a local tree expert's estimate",
       "age_min": 136,
-      "age_max": 146,
+      "age_max": 176,
       "location": {
         "address": "Havik, next to the Bolle brug, Amersfoort",
         "latitude": 52.157546,
@@ -774,7 +774,7 @@
       "transport": "About 400 m north of Amersfoort station, on the Havik beside the Bolle brug.",
       "location_precision": "confirmed",
       "curation_status": "flagged",
-      "story": "Every other old lime along this quay was cut back hard and made to grow again. This one was left alone, and it is the tree that still gives the Havik its shape. The national register's own history for the Havik-linde says the two rows that once lined both sides of the water were all rejuvenated at some point, except this one, and that it is in good health.\n\nThe water it stands on was a working harbour. Havik comes from Havenwijk, the harbour quarter, and this short canal was where medieval Amersfoort loaded and unloaded before the trade moved on and the quay became a street of houses with a bridge in the middle of it.\n\nThe age is where the sources part company. The Bomenstichting register puts the planting between 1880 and 1890, which is the figure we carry, and places the tree beside the Bolle brug. An older city nature walk describes the surviving Havik lime as planted in 1850 and standing opposite Krommestraat 1, a few doors along the same row. Thirty or forty years apart, and possibly not even the same tree: the two accounts may describe one lime dated twice, or two survivors of the same planting. We give the register's coordinate and its band, and flag the rest rather than pick the neater story.",
+      "story": "Every other old lime along this quay was cut back hard and made to grow again. This one was left alone, and it is the tree that still gives the Havik its shape. The national register's own history for the Havik-linde says the two rows that once lined both sides of the water were all rejuvenated at some point, except this one, and that it is in good health.\n\nThe water it stands on was a working harbour. Havik comes from Havenwijk, the harbour quarter, and this short canal was where medieval Amersfoort loaded and unloaded before the trade moved on and the quay became a street of houses with a bridge in the middle of it.\n\nThe age is where the sources part company. The Bomenstichting register puts the planting between 1880 and 1890 and places the tree beside the Bolle brug. An older city nature walk dates the surviving Havik lime to 1850, and a local tree expert's list, sent to us through IVN Amersfoort in October 2026, also gives 1850 for the lime beside the bridge. So the page carries both: about 140 years by the register, about 175 by local reckoning.",
       "how_to_recognise": "You can recognise it as the one full-grown lime on the quay: the others along the Havik were cut back and regrown, so they read as visibly younger. It stands on the canal side of the street beside the Bolle brug.",
       "photo": {
         "url": null,
@@ -793,7 +793,8 @@
       "official_register": {
         "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1678830",
         "url": null
-      }
+      },
+      "verify_notes": "2026-10-19: IVN Amersfoort forwarded a local tree expert's checked list (trees of 80 years and over). It gives 'Hollandse linde, Op 't Havik naast de brug, 1850'. Added as a local estimate beside the register band; the expert's name is not recorded here."
     }
   ]
 }
