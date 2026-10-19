@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session with Hidde: the headline never grades a first day by Take me there
+A session quoted the 10-18 digest's old activation table and called "2 of 14 tapped Take me there on day one" the weakest link. Hidde: people are often scouting for their holidays and are far too far away for that button. The headline already dropped the row this morning; what was missing was a ratchet. `check_the_headline_never_judges_take_me_there()` in qa.py refuses a Take me there, first-day, weakest-link or back-within-a-week line in `headline_section()` and in DATA.md's newest entry from 2026-10-20 on. CLAUDE.md's digest line says why. Nothing in the product changed.
+
 ## 2026-10-19 session with Hidde: 40 readers' photographs were wrongly unlinked; restored, and a brake added
 The 16:45 UTC knock unlinked every reader photograph on the site (40, seven accounts) as if all seven had deleted their account, twenty minutes after the ids became codes. Almost certainly the runner's codes do not match the files' (a different SUPABASE_SERVICE_KEY), so every account looked gone. Reverted a1e70b7 (links back) and photo_takedown.py now refuses a sweep where every account, or more than two, reads as deleted. Resolved the same evening: `people.py --check` passed on the Mac (9 of 10 codes are live accounts; the tenth is probably a real deletion) and the GitHub secret SUPABASE_SERVICE_KEY was set to the Mac's key at 17:32 UTC. The next knock will show whether the sweep now unlinks only that one.
 
