@@ -12870,6 +12870,31 @@
     "tokens": 51000,
     "trees": 0,
     "note": "enrich pass: 3 register ids with girth and height, one sourced access line, one autumn best_time; pins left open, 4 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-19",
+    "target": "london Great Trees list",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "3 flagged (Royal Oak turned out to be live as lon_002, Osterley cork oak, Roehampton Lucombe); Forty Hall cedar and Downe yew to leads"
+   },
+   {
+    "date": "2026-10-19",
+    "target": "london lon_031-033",
+    "kind": "photo-judge",
+    "tokens": 90000,
+    "trees": 0,
+    "photos_approved": 2,
+    "note": "19 Commons candidates viewed; Royal Oak and Osterley approved, Lucombe held (no geotag, ambiguous trunk)"
+   },
+   {
+    "date": "2026-10-19",
+    "target": "london lon_032",
+    "kind": "write",
+    "tokens": 66000,
+    "trees": 1,
+    "note": "Osterley Park Cork Oak shipped with photo; lon_031 duplicate of lon_002"
    }
   ],
   "2026-10-18": [

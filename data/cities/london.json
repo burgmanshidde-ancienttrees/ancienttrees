@@ -3,10 +3,10 @@
   "country": "United Kingdom",
   "face_tree_id": "lon_007",
   "status": "needs_curation",
-  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. These thirty range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
+  "intro": "No European capital does ancient trees quite like London. Its oldest oaks survive largely thanks to royal appetite: kings walled off huge hunting parks for their deer, and the trees inside were left to grow old while the countryside around them was cleared. The city even gave its name to the London plane, the soot-proof hybrid that lines its streets. The trees here range from a churchyard yew older than Londinium itself to a plane once valued at three quarters of a million pounds. All but Kew are free, though two Temple trees keep lawyers' hours.",
   "meta_description": "London's ancient trees hide in royal parks and churchyards. Start with the Totteridge Yew, alive since before the Romans built Londinium.",
   "question_answer": "The oldest tree in London is the Totteridge Yew, a European yew in St Andrew's churchyard in Totteridge, North London, estimated at between 1,000 and 2,000 years old. It is the oldest living thing in the city, and it stands a 15 minute walk from Totteridge and Whetstone station on the Northern Line.",
-  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and twenty-eight more of the city's ancient trees.",
+  "question_meta": "The Totteridge Yew, up to 2,000 years old, is London's oldest tree. Where it stands, how to reach it, and the rest of the city's ancient trees.",
   "question_context": "Ring counting does not work on ancient yews because their heartwood rots away, so estimates for the Totteridge Yew run from 1,000 to 2,000 years. Even the cautious low end makes it older than any building in London, and the high end means it was already a substantial tree when the Romans founded Londinium. It stands in the churchyard of St Andrew's in Totteridge, a village long since swallowed by North London, and the 13th century church beside it is the newcomer on the plot: the tree predates it by centuries at minimum. The district's Hundred Court once met in its shade, which tells you how long it has been the local landmark. London's runners-up are oaks rather than yews: Richmond Park and Greenwich Park hold hollow pollards in the 700 to 900 year range, survivors of the royal hunting grounds. But for sheer age, nothing in the capital touches the yew. Getting there is simple: Totteridge and Whetstone station on the Northern Line, then a 15 minute walk through the old village.",
   "faq": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are London's ancient trees free to visit?",
-      "a": "Twenty-nine of the thirty trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
+      "a": "All but one of the trees on this list are free: they stand in public parks, streets, churchyards and squares. The exception is the Old Lions of Kew, which need a Kew Gardens ticket."
     },
     {
       "q": "Why does London have so many ancient trees?",
@@ -1154,6 +1154,44 @@
         "width": 3000,
         "height": 4000
       }
+    },
+    {
+      "id": "lon_032",
+      "name": "The Osterley Park Cork Oak",
+      "species": "Cork Oak (Quercus suber)",
+      "age_estimate": "about 170 years",
+      "age_min": 165,
+      "age_max": 175,
+      "age_basis": "derived",
+      "location": {
+        "address": "north side of the lake, south of Osterley House, Osterley Park, Jersey Road, Isleworth TW7 4RB",
+        "latitude": 51.488575,
+        "longitude": -0.351411,
+        "neighbourhood": "Osterley"
+      },
+      "verified_sources": [
+        "https://londontreesblog.wordpress.com/2015/01/08/cork-oak-at-osterley-park/",
+        "https://www.graftingardeners.co.uk/greatest-trees-london/",
+        "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+      ],
+      "access": "Parkland of the National Trust estate is free on foot daily; opening hours differ between listings (about 9am to 5pm per Art Fund), check National Trust before going",
+      "transport": "Osterley Underground station (Piccadilly line) about 10 to 15 minutes' walk to the park gate (not source-checked)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "A Mediterranean oak has stood beside a lake in west London since, by the account everyone repeats, 1855. Cork oaks belong to Portugal and Spain, where their thick, spongy bark is stripped for bottle stoppers. This one has kept its bark, and its leaves too: the species is evergreen, and the London Trees blog photographed it in full leaf in winter.\n\nThe Grafting Gardeners guide to London's greatest trees calls it one of the oldest and largest cork oaks in the country, and it was chosen as one of the Great Trees of London.\n\nThe date needs a caveat. The blog, the guide and the Great Trees list all give 1855, but they may be repeating one another rather than three separate records, so it is a date the tree is said to carry. If it holds, the oak is about 170 years old. Nobody has published its height or girth; if you have measured it, tell us.\n\nIt stands on the north side of the lake, directly south of Osterley House. The pin is approximate, so walk down to the lakeshore below the mansion and look for the ridged, corky bark that gives the species its name. The parkland belongs to the National Trust and is free on foot daily. Art Fund gives about 9am to 5pm, but listings disagree, so check the National Trust first. Osterley station on the Piccadilly line is roughly 10 to 15 minutes' walk from the park gate.",
+      "how_to_recognise": "You can recognise it by the thick, ridged corky bark and small evergreen leaves, still green in winter. It stands on the north side of the lake, directly south of Osterley House.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Cork_oak_tree%2C_Osterley_House_Grounds_-_geograph.org.uk_-_571640.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "I M Chengappa, via Wikimedia Commons",
+        "attribution_url": "https://www.geograph.org.uk/profile/15421",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-19",
+        "width": 640,
+        "height": 480
+      },
+      "verify_notes": "Planting date 1855 stated by london trees blog (2015) and the Grafting Gardeners guide ('said to have been planted in 1855', 'one of the oldest and largest in the country'), and by the Great Trees list. These may all derive from the Trees for Cities list, so treated as one chain; stated as 'said to'. Age is derived from that planting claim: 2026 minus 1855 = 171. Location: 'north side of the lake directly south of the mansion' (blog, guide); Great Trees coordinate is the pin, not tree-level. No measurements found. Alive: iNaturalist observation 2026-07-05 within radius (lifecheck RECENT, may not be this exact tree) and the blog shows it in leaf in winter. Owner National Trust; parkland access wording is from search snippets of third-party listings, National Trust page not fetched (404 on the page tried), so access is flagged. Photo: Geograph 571640 by I M Chengappa (CC BY-SA 2.0, via Commons), geotag 51.48833,-0.352 about 45 m from the pin, caption 'large cork oak tree by the lake'; approved on the pixels (cork bark, evergreen leaves, lake behind). The file is only 640x480 pixels, so it renders soft at large sizes; a larger photograph of this tree would replace it."
     }
   ]
 }

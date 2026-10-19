@@ -142,5 +142,78 @@
    "kind": "fruit",
    "label": "July and August, when the dark mulberries ripen and stain the ground"
   }
+ },
+ {
+  "id": "lon_031",
+  "name": "The Royal Oak, Richmond Park",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 750 years",
+  "age_min": 600,
+  "age_max": 800,
+  "location": {
+   "address": "Richmond Park near Pen Ponds, Richmond TW10",
+   "latitude": 51.444646,
+   "longitude": -0.283504,
+   "neighbourhood": "Richmond Park"
+  },
+  "verified_sources": [
+   "https://www.ancienttreeforum.org.uk/ancient-trees/ancient-tree-sites-to-visit/london-the-south-east/the-royal-oak-richmond-park/",
+   "https://exploring-london.com/2024/05/22/10-significant-and-historic-london-trees4-the-royal-oak-richmond-park/",
+   "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+  ],
+  "access": "Free; Richmond Park (The Royal Parks) is open to pedestrians 24 hours a day per exploring-london",
+  "transport": "Richmond station, then bus 371 or a walk of about 30 minutes to Richmond Gate; the oak is roughly 1.5 km further in near Pen Ponds (transport times not source-checked)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Age is an estimate repeated by sources, not a measurement: Ancient Tree Forum 'estimated to be around 750 years old' (Royal Parks the manager), exploring-london 'more than 750', Great Trees of London list '~750 (2020)'. Age range 600 to 800 is broad on purpose. Hollow, pollarded for several hundred years, no royal connection despite the name (exploring-london). Pin: Great Trees list coordinate (51.444646,-0.283504) agrees with Ancient Tree Forum grid ref TQ193731 to about 50 m; neither is a tree-level fix so kept approximate. The tree is reported to have its own enclosure (secondary source, not seen on a primary page). No girth recorded: the only figure found (6.11 m) is from the Woodland Trust Ancient Tree Inventory, which we do not use. Alive: iNaturalist observation 2024-10-05 within radius (lifecheck RECENT, may not be this exact tree); older Great Trees entry says 2020. Flagged: age is a popular estimate; no official register page for this single tree."
+ },
+ {
+  "id": "lon_032",
+  "name": "The Osterley Park Cork Oak",
+  "species": "Cork Oak (Quercus suber)",
+  "age_estimate": "about 170 years",
+  "age_min": 165,
+  "age_max": 175,
+  "location": {
+   "address": "north side of the lake, south of Osterley House, Osterley Park, Jersey Road, Isleworth TW7 4RB",
+   "latitude": 51.488575,
+   "longitude": -0.351411,
+   "neighbourhood": "Osterley"
+  },
+  "verified_sources": [
+   "https://londontreesblog.wordpress.com/2015/01/08/cork-oak-at-osterley-park/",
+   "https://www.graftingardeners.co.uk/greatest-trees-london/",
+   "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+  ],
+  "access": "Parkland of the National Trust estate is free on foot daily; opening hours differ between listings (about 9am to 5pm per Art Fund), check National Trust before going",
+  "transport": "Osterley Underground station (Piccadilly line) about 10 to 15 minutes' walk to the park gate (not source-checked)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Planting date 1855 stated by london trees blog (2015) and the Grafting Gardeners guide ('said to have been planted in 1855', 'one of the oldest and largest in the country'), and by the Great Trees list. These may all derive from the Trees for Cities list, so treated as one chain; stated as 'said to'. Age is derived from that planting claim: 2026 minus 1855 = 171. Location: 'north side of the lake directly south of the mansion' (blog, guide); Great Trees coordinate is the pin, not tree-level. No measurements found. Alive: iNaturalist observation 2026-07-05 within radius (lifecheck RECENT, may not be this exact tree) and the blog shows it in leaf in winter. Owner National Trust; parkland access wording is from search snippets of third-party listings, National Trust page not fetched (404 on the page tried), so access is flagged.",
+  "story": "A Mediterranean oak has stood beside a lake in west London since, by the account everyone repeats, 1855. Cork oaks belong to Portugal and Spain, where their thick, spongy bark is stripped for bottle stoppers. This one has kept its bark, and its leaves too: the species is evergreen, and the London Trees blog photographed it in full leaf in winter.\n\nThe Grafting Gardeners guide to London's greatest trees calls it one of the oldest and largest cork oaks in the country, and it was chosen as one of the Great Trees of London.\n\nThe date needs a caveat. The blog, the guide and the Great Trees list all give 1855, but they may be repeating one another rather than three separate records, so it is a date the tree is said to carry. If it holds, the oak is about 170 years old. Nobody has published its height or girth; if you have measured it, tell us.\n\nIt stands on the north side of the lake, directly south of Osterley House. The pin is approximate, so walk down to the lakeshore below the mansion and look for the ridged, corky bark that gives the species its name. The parkland belongs to the National Trust and is free on foot daily. Art Fund gives about 9am to 5pm, but listings disagree, so check the National Trust first. Osterley station on the Piccadilly line is roughly 10 to 15 minutes' walk from the park gate.",
+  "how_to_recognise": "You can recognise it by the thick, ridged corky bark and small evergreen leaves, still green in winter. It stands on the north side of the lake, directly south of Osterley House."
+ },
+ {
+  "id": "lon_033",
+  "name": "The Roehampton Lucombe Oak",
+  "species": "Lucombe Oak (Quercus x hispanica 'Lucombeana')",
+  "age_estimate": "roughly 250 years",
+  "age_min": 200,
+  "age_max": 260,
+  "location": {
+   "address": "junction of Danebury Avenue and Tangley Grove, Alton Estate, Roehampton SW15",
+   "latitude": 51.451337,
+   "longitude": -0.246961,
+   "neighbourhood": "Roehampton"
+  },
+  "verified_sources": [
+   "https://www.graftingardeners.co.uk/greatest-trees-london/",
+   "https://en.wikipedia.org/wiki/Great_Trees_of_London"
+  ],
+  "access": "Open estate green space between housing blocks; no gate reported (not stated by a source, unconfirmed)",
+  "transport": "Roehampton and Putney area buses; nearest station Barnes or Putney, over 2 km (not source-checked)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Grafting Gardeners guide: about 250 years old, 'probably planted by Capability Brown' who landscaped the area around 1773: that is an inference by the guide, not documented, do NOT carry the Brown link as fact (no bridge claims). The Lucombe cultivar was named after William Lucombe of Exeter, who grew it about 1763 (guide), so a 250-year tree is plausible. Hybrid of cork oak and Turkey oak. One search summary (not a fetched page) places it slightly south of Finchdean House on the Alton Estate; unverified. Great Trees of London lists it at 51.451337,-0.246961 (not tree-level). Historic England listing 1466474 for the Alton West landscape returned 403, so no official statement about the tree. Alive: iNaturalist observation 2026-01-28 within radius (lifecheck RECENT, may not be this exact tree). Flagged: sources are a single chain (Trees for Cities list and a guide drawing on it), access not stated."
  }
 ]
