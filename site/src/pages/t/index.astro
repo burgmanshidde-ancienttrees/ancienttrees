@@ -53,7 +53,8 @@ const canonical = `${BASE_URL}/t`;
   var gone = document.getElementById('shared-missing');
   // A uuid or nothing: anything else never reaches the network.
   if (!/^[0-9a-f-]{36}$/i.test(id)) { gone.hidden = false; return; }
-  fetch(SB + '/rest/v1/shared_trees?select=*&id=eq.' + encodeURIComponent(id), {
+  // One tree by its link's id (shared_tree, 2026-10-19), never the list.
+  fetch(SB + '/rest/v1/rpc/shared_tree?tid=' + encodeURIComponent(id), {
     headers: { 'apikey': KEY } })
     .then(function(r) { return r.ok ? r.json() : null; })
     .then(function(rows) {
