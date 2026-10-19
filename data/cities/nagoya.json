@@ -57,10 +57,14 @@
       "paid_entry": true,
       "transport": "Subway to Shiyakusho, about 5 minutes on foot",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Torreya_Nucifera_in_Nagoya_Castle%2C_Honmaru_Naka_Ward_Nagoya_2021.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Tomio344456, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-19",
+        "width": 1500,
+        "height": 1000
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",

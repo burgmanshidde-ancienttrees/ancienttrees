@@ -55,5 +55,8 @@ all fail keeps its honest gap; a mediocre photo is not a rough version of a
 good one. Record the outcome per tree back into the queue file (approved /
 rejected with one-line reason), so no image is ever judged twice.
 
+Fetching a full-size original: send the project's own User-Agent (the `UA`
+string in scripts/photo_fetch.py), never a person's name or email address.
+
 With your final report, return a cost line for data/agent-costs.json (kind
 "photo-judge"): target, tokens, photos approved, one-line note.

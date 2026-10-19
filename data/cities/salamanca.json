@@ -56,10 +56,13 @@
       "how_to_recognise": "You can recognise it by being the only sequoia in the courtyard, 27 metres of conifer over Renaissance stonework, its trunk 2.64 metres round. It stands in the Patio de las Escuelas Mayores, on the paid visitor route.",
       "curation_status_reason": "identification of register entry with newspaper-mentioned tree is a strong but not source-explicit match",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/236082508/medium.jpeg",
+        "license": "CC BY",
+        "attribution": "scolym, via iNaturalist",
+        "status": "held",
+        "note": "Narrow conifer in an arcaded stone courtyard fits the Escuelas Mayores redwood and the foliage reads Sequoia, but the file on disk is 200x500 px, too small for a card; fetch the full-size original and",
+        "width": 200,
+        "height": 500
       },
       "official_register": {
         "name": "Arboles notables (Junta de Castilla y Leon, Catalogo de especimenes vegetales de singular relevancia, Orden MAM/1156/2006), no. AS-SA-10",
