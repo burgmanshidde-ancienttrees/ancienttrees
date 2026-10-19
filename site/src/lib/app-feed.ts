@@ -205,7 +205,7 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
     ? {
       url: p.url,
       license: p.license ?? null,
-      attribution: p.attribution ?? null,
+      attribution: p.attribution ?? "",
       // So a client can lay out a list before the first byte of image
       // arrives, and can tell when a file changed underneath us.
       width: (p as any).width ?? null,
@@ -229,7 +229,7 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
       // rule lived in Swift and the website printed the long form, so
       // one photograph was credited two ways (Hidde, 2026-08-26, asked
       // which wins: "ingekort natuurlijk").
-      attribution_short: creditName(p.attribution),
+      attribution_short: creditName(p.attribution) ?? "",
       // The finished line, name and terms together, because the app
       // was joining those two itself and a gift breaks that join: its
       // licence field is a sentence ("Provided by Paulo V. Araujo
@@ -237,7 +237,7 @@ function resolvePhoto(p: ReturnType<typeof usablePhoto>): FeedPhoto | null {
       // so the phone printed the giver's name twice and the words "all
       // rights reserved" under a photograph he gave us. An answer in
       // the feed, not a rule written twice.
-      credit_line: creditText(p.attribution, p.license),
+      credit_line: creditText(p.attribution, p.license) ?? "",
       credit_url: p.attribution_url ?? null,
       // How tall the photograph stands on the tree page, decided once for
       // both surfaces (Hidde, 2026-10-13, option A2). The app draws it.
