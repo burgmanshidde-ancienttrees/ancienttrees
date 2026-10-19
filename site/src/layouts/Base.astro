@@ -406,9 +406,7 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
 <ConsentBar lang={lang} />
 <script define:vars={{ SB_URL: SUPABASE_URL, SB_KEY: SUPABASE_KEY }}>
 window.at = window.at || {};
-// Our own devices opt out of every measurement once, with ?notrack=1 (and
-// back in with ?notrack=0). Lived in the Cloudflare beacon's script until
-// that left the site on 2026-10-19.
+// Our own devices opt out with ?notrack=1 (back in with ?notrack=0).
 try {
   var nt = new URLSearchParams(location.search).get("notrack");
   if (nt === "1") { localStorage.setItem("at_notrack", "1"); }
