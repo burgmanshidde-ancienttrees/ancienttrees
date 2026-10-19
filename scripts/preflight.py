@@ -1027,8 +1027,15 @@ def reader_found(tree):
     if tree.get("location_precision") != "confirmed":
         return False
     shots = [tree.get("photo") or {}] + list(tree.get("photos") or [])
-    return any(p.get("source") == "contributor" and p.get("contributor_user_id")
-               and not ours.is_ours(p.get("contributor_user_id")) for p in shots)
+    # A photograph whose account was later deleted is `unlinked` (photo_takedown.py):
+    # it was a stranger's when it was published and the picture outlives the
+    # account (DECISIONS.md 2026-09-04), so the tree keeps its evidence. Found
+    # 2026-10-19 when the Palma fig's reader deleted their account and every
+    # deploy stopped on "no verified_sources".
+    return any(p.get("source") == "contributor"
+               and (p.get("unlinked") or (p.get("contributor_user_id")
+                                          and not ours.is_ours(p.get("contributor_user_id"))))
+               for p in shots)
 
 
 _HARM_VERB = r"(peel(?:s|ing)?|strip|tear|climb|carve|break|snap|pick|scratch|hammer|nail|cut|pull)"
