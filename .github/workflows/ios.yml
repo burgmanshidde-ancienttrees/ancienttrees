@@ -250,10 +250,13 @@ jobs:
           # Counted with -c rather than tested with -q: BSD grep (this is a
           # macOS runner) returns 1 from `grep -qv` even when a line survives
           # the -v, which would re-run a suite with a real failure in it.
-          INFRA='Lost connection to the application|Failed to get matching snapshots|did not have a process ID|Unable to boot|Timed out waiting for'
+          # Only when the suite as a whole failed: a lost app that its retry
+          # recovered is already green and needs no second suite.
+          INFRA='Lost connection to the application|Failed to get matching snapshots|did not have a process ID|Unable to boot|Timed out waiting for|Failed to get launch progress'
           FAILS=$(grep -cE ': error: -\[' /tmp/xcodebuild.log || true)
           REAL=$(grep -E ': error: -\[' /tmp/xcodebuild.log | grep -cvE "$INFRA" || true)
-          if [ "${FAILS:-0}" -gt 0 ] && [ "${REAL:-0}" -eq 0 ]; then
+          if ! grep -q '\*\* TEST SUCCEEDED \*\*' /tmp/xcodebuild.log \
+             && [ "${FAILS:-0}" -gt 0 ] && [ "${REAL:-0}" -eq 0 ]; then
             echo "::warning::Every failure was the simulator losing the app, not an assertion; running the suite once more."
             cp /tmp/xcodebuild.log /tmp/xcodebuild-first.log
             run_tests
@@ -297,7 +300,21 @@ jobs:
           # "<file>:<line>: error: -[Class test] : ...", which the
           # COMPILE_ERR pattern above never matches because that one always
           # carries a column number.
-          if grep -qE ': error: -\[' /tmp/xcodebuild.log; then
+          #
+          # A FAILURE ITS RETRY PASSED IS A WARNING, NOT A RED (2026-10-19).
+          # -retry-tests-on-failure runs a failed test once more and xcodebuild
+          # judges the suite on the last attempt, but this grep read the FIRST
+          # attempt's failure line and went red under "** TEST SUCCEEDED **".
+          # That was four of the five reds between 10-18 and 10-19 (UndoWalk
+          # twice, testTappingAPinOpensItsTree, a "Failed to get launch
+          # progress"), each one a test xcodebuild itself had passed. The
+          # verdict is xcodebuild's, read again from the result bundle in the
+          # Verdict step below, as the floor job already does; a test that
+          # needed its retry is still named here so a flaky one stays visible.
+          if grep -q '\*\* TEST SUCCEEDED \*\*' /tmp/xcodebuild.log; then
+            grep -E ': error: -\[' /tmp/xcodebuild.log | sed 's/^.*: error: //' | sort -u \
+              | while read -r line; do echo "::warning::Passed on its retry: $line"; done || true
+          elif grep -qE ': error: -\[' /tmp/xcodebuild.log; then
             echo "::error::The app built. Tests FAILED, named below. This is not a build problem."
             grep -E ': error: -\[' /tmp/xcodebuild.log | sed 's/^.*: error: //' | sort -u
             exit 1

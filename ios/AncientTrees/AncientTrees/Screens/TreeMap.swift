@@ -210,8 +210,19 @@ struct TreeMap: UIViewRepresentable {
         // somebody taps on purpose. Without this guard the system would get in
         // first, on launch, with no reason given, which is the one outcome
         // both designs were built to avoid.
-        let status = CLLocationManager().authorizationStatus
-        map.showsUserLocation = (status == .authorizedWhenInUse || status == .authorizedAlways)
+        //
+        // READ FROM THE CALLBACK, NEVER ASKED FOR HERE (2026-10-19). This was
+        // `CLLocationManager().authorizationStatus`, a synchronous trip to
+        // locationd on the main thread while the map was being built, which
+        // Apple documents as able to freeze the UI. On the CI runner, right
+        // after a location reset, it froze: the cover never left and the
+        // first-open question never came (LocationAskWalk, run 39214058571,
+        // 30 seconds of the opening photograph twice). The delegate hands
+        // over the status on its own, just after the manager is made, and
+        // again whenever the answer changes, so a yes given to the first-open
+        // question now puts the dot on this map too.
+        map.showsUserLocation = false
+        context.coordinator.watchPermission(for: map)
         map.logoView.isHidden = true          // our own attribution sits in the sheet
         // Hidden AND out of the accessibility tree. isHidden alone left both
         // controls in the tree, so the layout gate kept reporting a 40 by 40
@@ -491,6 +502,22 @@ struct TreeMap: UIViewRepresentable {
 
         init(_ p: TreeMap) { parent = p }
         deinit { breath?.invalidate() }
+
+        // MARK: permission
+
+        /// Only for the delegate's status callbacks; this manager never asks.
+        private let permission = CLLocationManager()
+        private weak var permissionMap: MLNMapView?
+
+        /// Shows the dot once location is allowed, without a blocking read.
+        func watchPermission(for map: MLNMapView) {
+            permissionMap = map
+            permission.delegate = self
+        }
+
+        func permissionMapShowsDot(_ on: Bool) {
+            if permissionMap?.showsUserLocation != on { permissionMap?.showsUserLocation = on }
+        }
 
         // MARK: style
 
@@ -956,6 +983,17 @@ struct TreeMap: UIViewRepresentable {
             // the documented way out: let the update finish, then change the
             // state that starts the next one.
             DispatchQueue.main.async { binding.wrappedValue = now }
+        }
+    }
+}
+
+extension TreeMap.Coordinator: CLLocationManagerDelegate {
+    /// Delivered on the main thread, where the manager was made, once at the
+    /// start and again on every change of answer.
+    nonisolated func locationManagerDidChangeAuthorization(_ m: CLLocationManager) {
+        let status = m.authorizationStatus
+        MainActor.assumeIsolated {
+            permissionMapShowsDot(status == .authorizedWhenInUse || status == .authorizedAlways)
         }
     }
 }
