@@ -504,6 +504,18 @@ def main():
         # submission sets outcome 'changed'; it should not also have to write
         # the mail. When it did write one, that wins, because a specific
         # answer always beats a template.
+        # Only an addition gets the template. A correction marked 'changed'
+        # can mean we removed the tree, and "What you sent us is on the site
+        # now" went to the reader who told us the Yew of Campo Santana was
+        # dead (submission 466, 2026-10-19), linking the city page because
+        # the tree's own page was already gone. A correction waits for a
+        # written answer.
+        if (r.get("outcome") == "changed" and not r.get("reply_text")
+                and not r.get("replied_at")
+                and r.get("kind") not in ("tree", "city")):
+            print("HOLD row %s: outcome changed on a %s with no reply_text; "
+                  "write one" % (r["id"], r.get("kind") or "row"))
+            continue
         if (r.get("outcome") == "changed" and not r.get("reply_text")
                 and not r.get("replied_at")):
             # The tree's own page when we can name it, the city page
