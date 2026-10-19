@@ -2096,7 +2096,7 @@ def product_section(today):
 # The report chips and the two verdicts, which are OUR words rather than the
 # reader's: a fixed list the control offers, so printing one publishes nothing
 # about the person who tapped it.
-CHIPS = {"wrong location", "dead or gone", "could not reach it",
+CHIPS = {"wrong location", "dead or gone", "could not reach it", "on the map twice",
          "could not tell which tree", "something else",
          "worth it", "not worth it"}
 

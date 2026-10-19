@@ -24,7 +24,8 @@
     "editor": "a one-field form on your own tree (FieldEditor)",
     "accountSheet": "a page: your account and deleting it, with a field to type DELETE",
     "legalSheet": "a page of map and photo credits",
-    "walkMode": "a walk, full screen (WalkMode)"
+    "walkMode": "a walk, full screen (WalkMode)",
+    "MergeChooser": "a list to pick which tree a tree of yours merges into, shaped like SpeciesChooser; its confirmation is a BrandSheet"
   },
   "web": {
     "signin-dialog": "the reference the one sheet is measured from (SignInModal.astro), and AppModal.astro which shares its frame",

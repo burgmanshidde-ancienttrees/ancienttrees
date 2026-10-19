@@ -352,6 +352,9 @@ export interface UIStrings {
   worthCouldNotReach: string;
   worthCouldNotReachQ: string;
   worthCouldNotReachPh: string;
+  worthTwice: string;
+  worthTwiceQ: string;
+  worthTwicePh: string;
   worthSomethingElse: string;
   worthSomethingElseQ: string;
   worthSomethingElsePh: string;
@@ -707,6 +710,9 @@ const EN: UIStrings = {
   worthCouldNotReach: "Couldn't reach it",
   worthCouldNotReachQ: "What stopped you? (optional)",
   worthCouldNotReachPh: "A locked gate, a fence, opening hours, private land",
+  worthTwice: "It's on the map twice",
+  worthTwiceQ: "Which other tree is it? (optional)",
+  worthTwicePh: "Its name, or where the other pin is",
   worthSomethingElse: "Something else",
   worthSomethingElseQ: "Tell us in a line.",
   worthSomethingElsePh: "What we got wrong, or what we are missing",
@@ -994,6 +1000,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worthCouldNotReach: "No pude llegar",
     worthCouldNotReachQ: "¿Qué te lo impidió? (opcional)",
     worthCouldNotReachPh: "Una verja cerrada, una valla, el horario, terreno privado",
+    worthTwice: "Está dos veces en el mapa",
+    worthTwiceQ: "¿Qué otro árbol es? (opcional)",
+    worthTwicePh: "Su nombre, o dónde está el otro marcador",
     worthSomethingElse: "Otra cosa",
     worthSomethingElseQ: "Cuéntanoslo en una línea.",
     worthSomethingElsePh: "En qué nos equivocamos, o qué nos falta",
@@ -1282,6 +1291,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worthCouldNotReach: "Non sono riuscito ad arrivarci",
     worthCouldNotReachQ: "Che cosa te lo ha impedito? (facoltativo)",
     worthCouldNotReachPh: "Un cancello chiuso, una recinzione, gli orari, terreno privato",
+    worthTwice: "È due volte sulla mappa",
+    worthTwiceQ: "Quale altro albero è? (facoltativo)",
+    worthTwicePh: "Il suo nome, o dove si trova l'altro segnaposto",
     worthSomethingElse: "Altro",
     worthSomethingElseQ: "Raccontacelo in una riga.",
     worthSomethingElsePh: "Che cosa abbiamo sbagliato, o che cosa ci manca",
@@ -1570,6 +1582,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worthCouldNotReach: "Ik kon er niet bij",
     worthCouldNotReachQ: "Wat hield je tegen? (optioneel)",
     worthCouldNotReachPh: "Een hek op slot, een schutting, openingstijden, privéterrein",
+    worthTwice: "Hij staat twee keer op de kaart",
+    worthTwiceQ: "Welke andere boom is het? (optioneel)",
+    worthTwicePh: "De naam, of waar de andere pin staat",
     worthSomethingElse: "Iets anders",
     worthSomethingElseQ: "Vertel het ons in één regel.",
     worthSomethingElsePh: "Wat we fout hebben, of wat we missen",
@@ -1858,6 +1873,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worthCouldNotReach: "Ich kam nicht hin",
     worthCouldNotReachQ: "Was hat dich aufgehalten? (optional)",
     worthCouldNotReachPh: "Ein verschlossenes Tor, ein Zaun, Öffnungszeiten, Privatgelände",
+    worthTwice: "Er ist zweimal auf der Karte",
+    worthTwiceQ: "Welcher andere Baum ist es? (optional)",
+    worthTwicePh: "Sein Name, oder wo die andere Markierung ist",
     worthSomethingElse: "Etwas anderes",
     worthSomethingElseQ: "Sag es uns in einer Zeile.",
     worthSomethingElsePh: "Was wir falsch haben, oder was uns fehlt",
@@ -2146,6 +2164,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worthCouldNotReach: "Não consegui chegar",
     worthCouldNotReachQ: "O que o impediu? (opcional)",
     worthCouldNotReachPh: "Um portão fechado, uma vedação, horários, terreno privado",
+    worthTwice: "Está duas vezes no mapa",
+    worthTwiceQ: "Que outra árvore é? (opcional)",
+    worthTwicePh: "O nome, ou onde está o outro marcador",
     worthSomethingElse: "Outra coisa",
     worthSomethingElseQ: "Conte-nos numa linha.",
     worthSomethingElsePh: "Aquilo em que erramos, ou o que nos falta",
@@ -2434,6 +2455,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worthCouldNotReach: "Je n'ai pas pu y accéder",
     worthCouldNotReachQ: "Qu'est-ce qui vous a arrêté ? (facultatif)",
     worthCouldNotReachPh: "Un portail fermé, une clôture, les horaires, un terrain privé",
+    worthTwice: "Il est deux fois sur la carte",
+    worthTwiceQ: "Quel autre arbre est-ce ? (facultatif)",
+    worthTwicePh: "Son nom, ou l'emplacement de l'autre repère",
     worthSomethingElse: "Autre chose",
     worthSomethingElseQ: "Dites-le-nous en une ligne.",
     worthSomethingElsePh: "Ce que nous avons faux, ou ce qui nous manque",
@@ -2721,6 +2745,9 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     worthCouldNotReach: "たどり着けなかった",
     worthCouldNotReachQ: "何に阻まれましたか（任意）",
     worthCouldNotReachPh: "施錠された門、柵、開いている時間、私有地",
+    worthTwice: "地図に2回載っている",
+    worthTwiceQ: "どの木と同じですか（任意）",
+    worthTwicePh: "その木の名前、またはもう一つのピンの場所",
     worthSomethingElse: "その他",
     worthSomethingElseQ: "一行で教えてください",
     worthSomethingElsePh: "こちらの誤り、または足りないこと",
