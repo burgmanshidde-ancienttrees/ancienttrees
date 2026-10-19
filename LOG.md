@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-19 session: readers' account ids are codes in every public file
+
+Every reader account id in the repository (photos in 13 city files, leads, judgements' photo paths, the vouched list, the ambassador invitation lists: 210 places) is now `people.ref(uid)`, a keyed code nobody without the service key can turn back. Scripts that need the person (mail, takedown) resolve the code through the account list (scripts/people.py). The account-deletion promise is tested: scripts/test_people.py unlinks a deleted account's photo and lead on a copy and touches nothing when the account list is unreadable; on the real data the takedown check reads 40 reader photos from 9 accounts, none gone. qa refuses a raw id where a code belongs. Ambassadors' own rows keep their id (consented, public through the badge). Still in git history, like everything removed today; no force-push, no private repo (Hidde: too expensive).
+
 ## 2026-10-19 session: profile header aligned, round flag fixed, open.ancienttrees.app prepared
 
 **What changed in the product (app, next build):** on My trees the name and counts now sit centred on the photo (the name's 44-point tap frame no longer takes layout space), and the flag after your name fills its circle (the emoji is cropped to its own pixels; it sat off-centre with a white crescent). Polarsteps layout unchanged.
