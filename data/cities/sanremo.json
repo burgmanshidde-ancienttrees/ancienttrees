@@ -1,0 +1,252 @@
+{
+  "city": "Sanremo",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Sanremo's remarkable trees are palms more than oaks, because the Riviera hardly freezes. Three are on the national list of monumental trees: a Chilean wine palm in the Parco Marsaglia, a stand of California fan palms at the Zampillo fountain, and a Senegal date palm nearly 20 metres tall in the Giardini Nobel, opposite Villa Ormond. A short train ride west, Bordighera adds two Moreton Bay figs ten metres round and a Canary pine 40 metres tall, all within a kilometre of its station.",
+  "meta_description": "Sanremo's monumental palms, from the Parco Marsaglia to the Giardini Nobel, and Bordighera's giant figs one short train ride away.",
+  "question_answer": "Nobody has published a reliable age for Sanremo's listed palms; the city's own garden guide dates the Senegal palms of Villa Ormond to 1974 to 1980, so size here is not age. The oldest documented tree nearby is the Moreton Bay fig at the gate of the Museo Bicknell in Bordighera, which the Clarence Bicknell Association says Bicknell planted in 1886.",
+  "question_meta": "Sanremo's listed palms have no published age. The oldest documented tree nearby is Bordighera's Bicknell fig, planted in 1886.",
+  "question_context": "All three Sanremo trees on the national list stand near the seafront, about two kilometres apart from end to end, so one walk takes them in. Start in the west at the Parco Marsaglia, the garden left from the Marsaglia family's villa off the Corso Imperatrice, where the Chilean wine palm stands among other palms. Walk about a kilometre east to the Zampillo fountain on Corso Orazio Raimondo, in the centre of town, for the stand of California fan palms. Another kilometre east along Corso Cavallotti brings you to the small Giardini Nobel, opposite Villa Ormond, and the Senegal date palm with its many trunks. All three are free to see, in public parks or street space. Bordighera, one short regional train ride west, makes a second walk of about a kilometre from its station: the two Moreton Bay figs at the Museo Bicknell on Via Romana, the 40-metre Canary pine at the corner of Via Tumiati, and the Scibretta fig beside the town hall. None of the three Bordighera trees charges entry either.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Sanremo?",
+      "a": "No source gives an age for Sanremo's listed palms. The oldest documented tree nearby is in Bordighera: the Moreton Bay fig at the gate of the Museo Bicknell, planted in 1886 by the botanist Clarence Bicknell, according to the association that carries his name."
+    },
+    {
+      "q": "Are Sanremo's monumental trees free to see?",
+      "a": "Yes. The Chilean wine palm stands in the public Parco Marsaglia, the fan palms at a fountain in the street, and the Senegal date palm in the public Giardini Nobel. In Bordighera the Scibretta and the Canary pine are in public space, and the Bicknell figs can be seen from the museum's garden gate."
+    },
+    {
+      "q": "Can I see them in one day?",
+      "a": "Yes. The Sanremo palms are a walk of about two kilometres along the seafront. Bordighera is one short regional train ride west, and its three trees are within a kilometre of the station."
+    },
+    {
+      "q": "What is the biggest tree near Sanremo?",
+      "a": "By trunk, the Scibretta in Bordighera: the national list measures this Moreton Bay fig at 11.8 metres round. By height, the Canary pine on Via Romana in Bordighera, listed at 40 metres."
+    }
+  ],
+  "hero_tree_id": "srm_004",
+  "oldest_tree_id": "srm_005",
+  "trees": [
+    {
+      "id": "srm_001",
+      "name": "The Senegal Date Palm of the Giardini Nobel",
+      "species": "Senegal Date Palm (Phoenix reclinata)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 830,
+      "height_m": 19.5,
+      "location": {
+        "address": "Giardini A. Nobel, Corso Felice Cavallotti, Sanremo",
+        "latitude": 43.8213,
+        "longitude": 7.789581,
+        "neighbourhood": "Corso Cavallotti, east Sanremo"
+      },
+      "story": "Most palms keep to one trunk. A Senegal date palm grows a crowd of them, slender stems leaning out from one base, and the one Italy's national list of monumental trees records in the Giardini Nobel is 19.5 metres tall and 8.3 metres round at the base of its clump.\n\nThe species comes from much of Africa, from Senegal down to the Cape and across to Madagascar, and it does well here because Sanremo barely knows frost. The garden is small and public, on the seaward side of Corso Cavallotti, and it takes its name from Alfred Nobel, who spent his last years in the villa a few hundred metres further east.\n\nDirectly across the road is the park of Villa Ormond, which has Senegal palms of its own; the city's garden guide dates those to between 1974 and 1980. Nobody has published an age for this one, so we leave it empty. If you know when it went in, tell us.\n\nOur pin is the register's point, close but not exact, so look for the palm with many trunks rather than one. It costs nothing to see.",
+      "how_to_recognise": "You can recognise it by its many slender trunks rising together from one base and arching outwards, nearly 20 metres tall, in the small Giardini Nobel on the sea side of Corso Cavallotti, opposite Villa Ormond.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q55741679",
+        "https://www.sanremoliveandlove.it/en/?p=14393"
+      ],
+      "access": "Free: a public municipal garden on the seaward side of Corso Felice Cavallotti, opposite Villa Ormond.",
+      "transport": "About 880 m east of the Zampillo fountain along the seafront, and about 160 m from Villa Ormond across the road.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/I138/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 03/I138/IM/07: Phoenix reclinata, locality 'Giardini A. Nobel', girth 830 cm (clump), height 19.5 m, urban, 43.8213, 7.789581. Wikidata Q55741679 mirrors the register (not independent). OSM: the point falls inside the park 'Giardini A. Nobel' (way 103061757, 43.8205 to 43.8215 N), seaward of Corso Cavallotti, directly south of 'Giardini Comunali Villa Ormond' (way 103061763). The Grandi Giardini Italiani guide (via liguria.bizjournal.it 2018) calls a Phoenix reclinata at Villa Ormond the most majestic in Europe, and sanremoliveandlove.it (the comune's tourism site) dates the Villa Ormond P. reclinata to 1974-80; neither says this register tree is one of them, so no bridge in the story and no age. Alive: no dated photo or report of this exact trunk found in this pass; register entry current. Single register source: flagged. Researched 2026-10-20 for Hidde's sister's visit."
+    },
+    {
+      "id": "srm_002",
+      "name": "The Chilean Wine Palm of the Parco Marsaglia",
+      "species": "Chilean Wine Palm (Jubaea chilensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 334,
+      "height_m": 12,
+      "location": {
+        "address": "Parco Marsaglia, Corso Imperatrice, Sanremo",
+        "latitude": 43.8134,
+        "longitude": 7.767011,
+        "neighbourhood": "Corso Imperatrice, west Sanremo"
+      },
+      "story": "The Chilean wine palm is one of the most massive palms there is, and it grows slowly enough that a trunk like this one, 3.34 metres round on Italy's national list of monumental trees, takes a long time to build.\n\nThe Chilean wine palm comes from a small strip of central Chile, where the wild trees were felled for centuries for the sweet sap that gives the species its name. Here it stands in the Parco Marsaglia, the garden that survived the Marsaglia family's turreted villa. Giovanni Marsaglia helped build modern Sanremo in the second half of the nineteenth century; the house was wrecked in the Second World War and pulled down, and the town kept the garden. The Italian Botanical Heritage directory calls this specimen mammoth, and it sits among Brazilian queen palms, Kentia palms, a dragon tree and cycads.\n\nThe park opens off the Corso Imperatrice, the seafront avenue named after the Russian empress Maria Alexandrovna, who gave palms to line it. No one has published when this palm was planted or how old it is. If you know, tell us.\n\nOur pin is the register's point; the palm is the stout grey column with a dense crown. It costs nothing to see.",
+      "how_to_recognise": "You can recognise it by the trunk, a smooth grey column far thicker than the slim palms around it, topped by a dense round crown of feathery leaves, in the Parco Marsaglia off the Corso Imperatrice.",
+      "verified_sources": [
+        "https://luoghi.italianbotanicalheritage.com/en/?p=29903",
+        "https://www.wikidata.org/wiki/Q55741678"
+      ],
+      "access": "Free: a public municipal park entered from the Corso Imperatrice.",
+      "transport": "On the Corso Imperatrice in west Sanremo, about 1.1 km west of the Zampillo fountain along the seafront.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 02/I138/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 02/I138/IM/07: Jubaea chilensis, Parco Marsaglia, girth 334 cm, height 12 m, 43.8134, 7.767011. Italian Botanical Heritage (luoghi.italianbotanicalheritage.com/en/?p=29903) names 'the mammoth Jubea chilensis, giant of Chile' among the park's palms, plus the Marsaglia history and the Tsarina's palm gift for the Corso Imperatrice. airial.travel listing says the palm is recognised as a Monumental Tree of Italy and stands at the centre of the park (a lead, not used as a source). Species facts (thick trunk, slow growth, central Chile, sap harvest) from en.wikipedia Jubaea. Age not in any source. Alive: current register entry and 2020s directory text; no dated photo of this trunk found. Pin is the register's point, approximate."
+    },
+    {
+      "id": "srm_003",
+      "name": "The California Fan Palms of the Zampillo",
+      "species": "California Fan Palm (Washingtonia filifera)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Fontana dello Zampillo, Corso Orazio Raimondo, Sanremo",
+        "latitude": 43.817839,
+        "longitude": 7.779722,
+        "neighbourhood": "Sanremo centre"
+      },
+      "story": "These palms are protected as a group, which Italy's national list of monumental trees does only when the stand matters as much as any one trunk. They rise around the Zampillo, the fountain on Corso Orazio Raimondo in the middle of Sanremo.\n\nThe California fan palm grows wild along desert streams in California, Arizona and northern Mexico. It reached Europe in 1871, and by 1882 it was already common in Sanremo's gardens, according to the city's own garden guide, which also records the first flowering of the species in Europe here, in 1891, in the garden of the West-End Hotel. In other words this is a town that took to the tree early.\n\nThe species is easy to tell from the date palms around it: a straight, stout trunk, and huge fan-shaped leaves edged with white threads. Left alone it keeps its dead leaves as a brown skirt under the crown. The register gives no count, no height and no planting date for these, and no one else we found has either. If you know when they were planted, tell us.\n\nThey stand in public street space in the centre of town, so seeing them costs nothing.",
+      "how_to_recognise": "You can recognise them by their fan-shaped leaves on long stalks, edged with fine white threads, on straight stout trunks around the Zampillo fountain on Corso Orazio Raimondo.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q55741680",
+        "https://www.sanremoliveandlove.it/en/?p=14310"
+      ],
+      "access": "Free: public street space around the fountain in the town centre.",
+      "transport": "In the centre of Sanremo, about 1.1 km east of the Parco Marsaglia and 880 m west of the Giardini Nobel.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 04/I138/IM/07 (group)",
+        "url": null
+      },
+      "verify_notes": "MASAF register 04/I138/IM/07: 'Insieme omogeneo di Washingtonia filifera', Zampillo - Corso Orazio Raimondo, group, no girth or height, 43.817839, 7.779722. Wikidata Q55741680 (Dichiarazione di notevole interesse pubblico; has a Commons panoramio image, 18038 Sanremo IM, Italy - panoramio (29).jpg, not yet checked or licensed for us). Species history in Sanremo (Europe 1871, widespread by 1882, first European flowering 1891 at the West-End Hotel) from sanremoliveandlove.it, the comune's tourism site; it does not mention the Zampillo palms. An ensemble point: the fountain is the one place to stand. Count and age unknown. Single register source for the group: flagged."
+    },
+    {
+      "id": "srm_004",
+      "name": "La Scibretta, Bordighera",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "more than a century, by local account",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": "source",
+      "girth_cm": 1180,
+      "height_m": 14,
+      "location": {
+        "address": "Beside the town hall (Palazzo Garnier), Via Giuseppe Parini, Bordighera",
+        "latitude": 43.779381,
+        "longitude": 7.672583,
+        "neighbourhood": "Bordighera (day trip from Sanremo)"
+      },
+      "story": "Bordighera calls itself the queen of palms, but its symbol is a fig. La Scibretta, as the town calls this Moreton Bay fig beside the town hall, is 11.8 metres round on Italy's national list of monumental trees, with a crown that spreads sideways far more than it climbs.\n\nIn summer the lawn under it turns into the Scibretta Arena, with open-air concerts beneath the branches. In 2017 the crown had thinned and the deputy mayor launched a rescue, calling the tree dear to the town and a draw for the dozens of people who come up every day to photograph it. Experts assessed its health and stability that November, and the dead wood came out in March 2018.\n\nThe species is from the rainforests of eastern Australia, where it often starts life high on another tree and strangles its host with its roots. Here it drops aerial roots from its limbs that thicken into extra trunks and prop up the crown. Local accounts say it has stood here for more than a century; nobody has published a planting date. Sources disagree on its size: one garden directory gives about ten metres round and eighteen tall, the register 11.8 and 14.\n\nIt stands in public space and costs nothing to see.",
+      "how_to_recognise": "You can recognise it by its huge low crown of glossy, leathery leaves spreading sideways over the lawn beside the town hall, propped on aerial roots that have grown into extra trunks.",
+      "verified_sources": [
+        "https://luoghi.italianbotanicalheritage.com/en/?p=29804",
+        "https://www.sharry.land/en/wonders/la-scibretta-l-albero-monumentale-simbolo-di-bordighera"
+      ],
+      "access": "Free: public garden beside the town hall in Bordighera.",
+      "transport": "In Bordighera, one short regional train ride west of Sanremo; about 800 m straight line from Bordighera station.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 03/A984/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 03/A984/IM/07: Ficus macrophylla, Bordighera, Palazzo Comunale, girth 1180 cm, height 14 m, 43.779381, 7.672583. Italian Botanical Heritage (?p=29804): magnificent Ficus macrophylla in the small garden a few steps from the town hall (Palazzo Garnier), circumference over 32 ft, height 59 ft; poor health for years, phytosanitary and stability assessments November 2017, dry branches cut March 2018 (its contact line says Piazza del Capo). SharryLand: 'La Scibretta', solitary in the courtyard in front of the municipal palace (Palazzo Garnier), address Via Giuseppe Parini 9; Scibretta Arena summer concerts; 'more than a century'; 2017 deputy mayor quote; on the national list; mentions a second Ficus macrophylla at the top of Piazza De Amicis (not on our map). Size conflict stated on the page. Day trip from Sanremo: Bordighera is about 10 km west on the Genoa to Ventimiglia line. Pin is the register's point."
+    },
+    {
+      "id": "srm_005",
+      "name": "The Bicknell Figs, Bordighera",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "planted 1886",
+      "age_min": null,
+      "age_max": null,
+      "age_basis": "source",
+      "height_m": 21,
+      "location": {
+        "address": "Museo Bicknell, Via Romana 39 (garden gate on Via Clarence Bicknell), Bordighera",
+        "latitude": 43.782022,
+        "longitude": 7.667261,
+        "neighbourhood": "Bordighera (day trip from Sanremo)"
+      },
+      "story": "This fig has swallowed part of the garden wall and the old entrance gate of the museum it stands in front of. It is 21 metres tall, and the Clarence Bicknell Association says Bicknell himself planted it in 1886, two years before he built the museum.\n\nClarence Bicknell was an English clergyman who gave up his Bordighera chaplaincy, painted wild flowers, wrote the flora of the coast between Bordighera and Sanremo, and catalogued the prehistoric rock carvings of Monte Bego in the Maritime Alps. His collections are still inside: butterflies, sketchbooks, thousands of pressed plants. Bordighera in the 1880s had more British residents than Italians, and they filled it with exotic gardens.\n\nThere are two great figs here, both on Italy's national list of monumental trees, which measures them at 9.75 and 10.2 metres round. The one at the gate, roots wrapped around the stones and a small palm growing up between its buttresses, is the one people come for; the other stands in the garden beyond. A local guide calls the Bicknell trees the oldest of Bordighera's monumental three. In spring the wisteria on the museum front, listed too, is in flower.\n\nThe gate fig can be seen from the lane; the garden opens with the museum.",
+      "how_to_recognise": "You can recognise it by the gate: the fig's grey buttress roots have swallowed part of the wall and the old entrance of the garden on Via Clarence Bicknell, beside the museum's columned portico at Via Romana 39.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Bicknell_Museum",
+        "https://clarencebicknell.com/bicknell-and-bordighera-in-the-guardian/"
+      ],
+      "access": "Free to see from the lane at the garden gate on Via Clarence Bicknell; the garden itself opens with the museum's hours.",
+      "transport": "In Bordighera, about 500 m straight line from Bordighera station, and about 260 m from the Canary pine on Via Romana.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), nos. 02/A984/IM/07 and 04/A984/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register: 02/A984/IM/07 Ficus macrophylla, Museo Bicknell, girth 975 cm, height 20 m, 43.781978, 7.667406; 04/A984/IM/07 Ficus macrophylla, Museo Bicknell - Via Romana 39, girth 1020 cm, height 22 m, 43.782022, 7.667261 (13 m apart). Also 01/A984/IM/07 Wisteria sinensis on the museum, girth 160 cm, height 7.5 m. en.wikipedia Bicknell Museum: huge Ficus magnolioide near the entrance, 21 m tall, 8.6 m diameter, has incorporated part of the wall and the gate's original entry, on the national list; museum built 1888. clarencebicknell.com quoting The Guardian (2023-09-27): planted in 1886 by Clarence Bicknell; 21-metre strangler fig crushing the entrance gate, a small palm growing between its buttress roots; another ficus in the garden beyond; 1880s British population over 3,000. Which register row is the gate tree is not settled, so the entry is one collectible point for the pair, girth left out of the field and both register figures given in the story. Height 21 from Wikipedia and the Guardian. Planting year single source (association quoting a newspaper): stated with its source. SharryLand: oldest of Bordighera's 3 monumental specimens is in the Bicknell garden. Museum hours not checked this pass."
+    },
+    {
+      "id": "srm_006",
+      "name": "The Canary Pine of Via Romana, Bordighera",
+      "species": "Canary Pine (Pinus canariensis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 390,
+      "height_m": 40,
+      "location": {
+        "address": "Corner of Via Tumiati and Via Romana, Bordighera",
+        "latitude": 43.781347,
+        "longitude": 7.670339,
+        "neighbourhood": "Bordighera (day trip from Sanremo)"
+      },
+      "story": "Forty metres is the height Italy's national list of monumental trees gives this Canary pine, which makes it taller than any other tree on this page by a long way, on a street corner in Bordighera.\n\nVia Romana is the old road along the hillside above the sea, lined with the villas and gardens the British built here in the late nineteenth century, when Bordighera was a winter resort. The pine stands where Via Tumiati meets it, 3.9 metres round at the trunk on the register.\n\nThe Canary pine comes from the mountains of Tenerife, La Palma and Gran Canaria, where it is famous for surviving forest fires: thick bark shields the trunk, and it can sprout fresh shoots straight from a burnt stem. Its needles come in threes and are very long, up to about thirty centimetres, and they hang in soft tassels.\n\nNo one has published when it was planted. If you know, tell us. It sits between the Bicknell figs, a few hundred metres west, and the Scibretta, a few hundred metres east, so it is on the way. It stands in public street space and costs nothing to see.",
+      "how_to_recognise": "You can recognise it by its height, a tall straight trunk with long, drooping tassels of needles far above the rooftops, at the corner where Via Tumiati meets Via Romana.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q55741671"
+      ],
+      "access": "Free: public street corner on Via Romana.",
+      "transport": "In Bordighera, about 260 m from the Bicknell figs and 280 m from the Scibretta.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 06/A984/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 06/A984/IM/07: Pinus canariensis, Via Tumiati angolo Via Romana, girth 390 cm, height 40 m, 43.781347, 7.670339. Wikidata Q55741671 mirrors it (has a Commons image, not yet checked). Species facts (Canary Islands, fire resistance, epicormic sprouting, needles in threes to about 30 cm) are general botany, en.wikipedia Pinus canariensis. Height 40 m is the register's figure, unusually tall: stated as the register's. Alive: register current; no dated photo found this pass. Single source: flagged."
+    }
+  ]
+}

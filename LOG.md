@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: Sanremo opens with six register trees (his sister visits tomorrow)
+
+- **New place: Sanremo**, six MASAF register trees, all flagged, approximate register pins, recognition line on each, no photos yet (Hidde: "met foto's is bonus maar hoeft niet"). Sanremo: srm_001 Senegal Date Palm in the Giardini Nobel (19.5 m, the register's locality; OSM puts the point in that park opposite Villa Ormond, never bridged to Ormond's "most majestic" palm), srm_002 Chilean Wine Palm in the Parco Marsaglia, srm_003 California Fan Palms at the Zampillo (group). Day trip Bordighera: srm_004 La Scibretta (11.8 m girth), srm_005 the Bicknell figs (planted 1886 per the Clarence Bicknell Association; two register rows 13 m apart, one point), srm_006 Canary Pine on Via Romana (40 m).
+- Left as leads in the brief, not written: the Poggio olive (Via Val d'Olivi 248, could be private ground), the hill trees 8 to 20 km out. Commons images on Wikidata Q55741680 (Zampillo) and Q55741671 (the pine) are unchecked photo candidates.
+- One pass done in-session by hand (verify and write together, under the six-candidate floor) because of the deadline; about 90k tokens.
+
 ## 2026-10-20 session with Hidde: Gavin Coates's HKU Digital Arboretum, and the Kam Tin Tree House pin
 
 - **Fixed:** hkg_003, the Kam Tin Tree House, was pinned about 300 m from the register coordinate of the tree it cites (LCSD YL/6). Moved to the register point, which three of Gavin's videos at the tree confirm within 11 m; height 18.5 m from the register.
