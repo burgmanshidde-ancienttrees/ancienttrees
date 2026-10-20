@@ -381,8 +381,34 @@ def window_lost_to_refusals(out):
             ""]
 
 
+def worktrees_beside_the_repo(out):
+    """Worktrees outside .claude/worktrees, each a second AncientTrees in Xcode.
+
+    Hidde, 2026-10-14: "stop making multiple". worktree_guard.py has said where
+    a worktree goes ever since, and sessions still made at-count, at-ci-green,
+    at-mytrees and at-ga beside the repo in Documents/. On 2026-10-20 he asked
+    "why are there two projects in xcode?" Advice did not hold, so the brief
+    names every one at session start until it is removed.
+    """
+    allowed = str(ROOT / ".claude" / "worktrees") + "/"
+    side = []
+    for line in sh("git", "worktree", "list", "--porcelain").splitlines():
+        if not line.startswith("worktree "):
+            continue
+        path = line[len("worktree "):]
+        if path != str(ROOT) and not path.startswith(allowed):
+            side.append(path)
+    if side:
+        out += [f"{len(side)} worktree(s) beside the repo, each a second project "
+                f"in Hidde's Xcode (CLAUDE.md: only under .claude/worktrees/):"]
+        out += [f"  git worktree remove {p}   (check `git -C {p} status` first)"
+                for p in side]
+        out += [""]
+
+
 def main():
     out = ["ANCIENT TREES — state at session start", ""]
+    worktrees_beside_the_repo(out)
     since_last_visit(out)
     app_crashes(out)
     broken_gates(out)
