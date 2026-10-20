@@ -25,7 +25,7 @@ import Sheet from "../../components/Sheet.astro";
 import { icon } from "../../lib/icons";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { SUPABASE_URL, SUPABASE_KEY } from "../../lib/site-config";
-import { countryOptions } from "../../lib/countries";
+import { countryOptions, COUNTRY_JS } from "../../lib/countries";
 
 const countries = countryOptions();
 const canonical = `${BASE_URL}/account/settings`;
@@ -132,13 +132,14 @@ const crumbItems: [string, string | null][] = [
       <input id="in-name" type="text" maxlength="40" autocomplete="nickname" placeholder="The name people see" />
       <p class="at-sheet-fine" id="name-note">Any name you like. It does not have to be your real one.</p>
       {/* The flag after your name (lib/countries.ts, 2026-10-16), the app's
-          Country row as the web's native dropdown. Optional, never guessed. */}
+          Country row as the web's native dropdown. Unchosen, the country you
+          appear to be in; "Don't show" on top turns it off (2026-10-20). */}
       <label for="in-country" class="set-edit-label">Your country</label>
       <select id="in-country" class="set-edit-select">
-        <option value="">None</option>
+        <option value="">Don't show</option>
         {countries.map((c) => <option value={c.code}>{c.name}</option>)}
       </select>
-      <p class="at-sheet-fine">Optional. Its flag shows after your name.</p>
+      <p class="at-sheet-fine">Its flag shows after your name.</p>
     </div>
     <div class="at-sheet-btns">
       <button type="button" id="save-name" class="sheet-b sheet-b--primary">Save</button>
@@ -203,7 +204,7 @@ const crumbItems: [string, string | null][] = [
     </div>
   </Sheet>
 </main>
-<Fragment slot="scripts" set:html={`
+<Fragment slot="scripts" set:html={COUNTRY_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}", KEY = "${SUPABASE_KEY}";
@@ -260,12 +261,14 @@ const crumbItems: [string, string | null][] = [
         }).catch(function() {});
       // YOUR COUNTRY, read on its own (profiles.country, 2026-10-16), so a
       // database without the column yet costs the flag and never the name.
-      fetch(SB + "/rest/v1/profiles?select=country&user_id=eq." + encodeURIComponent(u.id),
-            { headers: { "apikey": KEY, "Authorization": "Bearer " + s.access_token } })
-        .then(function(r) { return r.ok ? r.json() : null; })
-        .then(function(rows) {
-          myCountry = (rows && rows[0] && rows[0].country) || "";
-          document.getElementById("in-country").value = myCountry;
+      // Unchosen, it is the country you appear to be in, written once
+      // (countries.ts); with no profile row yet the guess is only preselected,
+      // so the first Save stores it with your name.
+      window.atSettleCountry(SB, KEY, s.access_token, u.id)
+        .then(function(c) {
+          myCountry = c.country;
+          myHidden = c.hidden;
+          document.getElementById("in-country").value = c.country || (c.hidden ? "" : c.guess);
         }).catch(function() {});
       // PRIVATE PROFILE, read on its own like the country, so a database
       // without profiles.public yet costs the switch and nothing else.
@@ -275,7 +278,7 @@ const crumbItems: [string, string | null][] = [
         .then(function(rows) { if (rows) privacy(rows[0] || null); })
         .catch(function() {});
     }).catch(function() {});
-  var myCountry = "";
+  var myCountry = "", myHidden = false;
 
   // The switch reads "Public profile", so ON is public (Hidde, 2026-10-19:
   // "Private profile is heel negatief"; AllTrails words it Public first).
