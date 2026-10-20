@@ -23,7 +23,9 @@
    "species": "possibly Chinese Lacquer Tree (Toxicodendron/Rhus verniciflua), per register name",
    "latitude": 50.843589,
    "longitude": 5.68328,
-   "reason": "DATA QUALITY FLAG, not a new tree: this register entry's coordinates (50.843589, 5.68328) are identical to six decimal places with the already-published maa_013 'Golden Rain Tree of Aldenhofpark' (Koelreuteria paniculata, 50.843589, 5.68328). Either this is the same physical specimen registered under a different Dutch common name than we published it under, or two genuinely different trees occupy the exact same point (unlikely). Needs a north-Aldenhofpark site check or a look at the register's own photo/ID before treating as a distinct tree; not researched further this pass to stay within the 4-candidate exposure limit. Flag for whoever next touches maa_013's sourcing."
+   "reason": "DATA QUALITY FLAG, not a new tree: this register entry's coordinates (50.843589, 5.68328) are identical to six decimal places with the already-published maa_013 'Golden Rain Tree of Aldenhofpark' (Koelreuteria paniculata, 50.843589, 5.68328). Either this is the same physical specimen registered under a different Dutch common name than we published it under, or two genuinely different trees occupy the exact same point (unlikely). Needs a north-Aldenhofpark site check or a look at the register's own photo/ID before treating as a distinct tree; not researched further this pass to stay within the 4-candidate exposure limit. Flag for whoever next touches maa_013's sourcing.",
+   "status": "held",
+   "held_reason": "Same coordinate as live maa_013; a data-quality question for maa_013, not a new tree. (2026-10-20)"
   },
   {
    "nr": 1679960,

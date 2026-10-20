@@ -25,16 +25,18 @@
    "species": "European Ash (Fraxinus excelsior)",
    "lat": 50.998639,
    "lng": 5.871331,
-   "status": "lead",
-   "why": "LRMB register nr 1691231 ('Gewone es'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1691231 ('Gewone es'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1691231 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "doorn",
    "species": "Sycamore (Acer pseudoplatanus)",
    "lat": 50.97729,
    "lng": 5.84119,
-   "status": "lead",
-   "why": "LRMB register nr 1684953 ('Gewone esdoorn'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1684953 ('Gewone esdoorn'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1684953 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "bij Middengebied Noord in Geleen",
@@ -49,8 +51,9 @@
    "species": "Pin Oak (Quercus palustris)",
    "lat": 50.992545,
    "lng": 5.86509,
-   "status": "lead",
-   "why": "LRMB register nr 1691229 ('Moeraseik'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1691229 ('Moeraseik'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1691229 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Parklaan 13",
@@ -65,8 +68,9 @@
    "species": "Tulip Tree (Liriodendron tulipifera)",
    "lat": 50.992007,
    "lng": 5.864053,
-   "status": "lead",
-   "why": "LRMB register nr 1684947 ('Tulpenboom'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1684947 ('Tulpenboom'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1684947 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Horse Chestnut, Sittard",

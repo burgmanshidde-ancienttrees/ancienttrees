@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 write pass: six Dutch register trees live, READY pile cleaned
+
+- Live: Roosendaal 16 to 20 trees, roo_022 Silver Maple behind the Library (5.25 m round, now the thickest tree on the page), roo_023 Black Locust of Emile van Loonpark (4.06 m), roo_024 Caucasian Wingnut of Emile van Loonpark (23 m), roo_025 Beech in the Path at Vrouwenhof (29 m, tallest on the page). Intro, meta and question copy recounted to twenty. New place Batenburg (Wijchen), two trees, no indexed place page under four: btb_001 Horse Chestnut of Batenburg Church (5.08 m, 26 m) and btb_002 Copper Beech of the St Victorkerk (5.10 m), pins confirmed from the register point on one crown in the PDOK frame. All six from the live LRMB layer, re-queried today (status 3; Batenburg inspected May 2026, Emile van Loonpark trees March 2023, said on each page). No photographs yet.
+- Not written: most of the 44 "READY" leads were not ready. 20 Dutch leads were dead in the register (LRMB status 5), among them Assen's Overcingel oak, all of Haarlemmermeer, Sittard-Geleen and Zaanstad, and three Roosendaal leads. leads.py's dead-register filter did not catch them; they carry the number only as "LRMB register nr N" in their why text. Worth a fix in leads.py. Marked blocked. Barcelona's huingan is already live as bcn_041 (marked duplicate). Rows, groups, the Mariadal convent, an appointment-only farmyard, trees below the size floor, Walpole's Grandma Tingle (no way to tell her apart), Cardiff, Maastricht and Rothenburg are marked held with a reason. The two reader sightings (Tangier fig, Freiburg beech) are left untouched for rung 1.
+- Preflight 0 problems; qa.py needs a site build, not run here.
+
 ## 2026-10-20 night run (00:54): four photographs approved
 
 - Rung 6/photos: photo_fetch.py --roster plus a photo-judge pass over 120 candidates: 4 approved (Dresden dre_025, dre_029, dre_030 oaks; Luxembourg lux_008 sycamore, bare in winter), 1 held (kra_033), 115 rejected. Reversal commands are in the commit message of 3e862b604's report: `python3 scripts/photo_apply.py hold <id> <url> --reason "overruled"`. Some of these look like the Dresden oaks already approved on 10-19; the sweep was marked exhausted and I reran it anyway, so do not run it again.

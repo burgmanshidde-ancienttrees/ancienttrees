@@ -54,7 +54,9 @@
    "sources_checked": [
     "data/registers/netherlands-lrmb.json nr 1690252",
     "Gemeente Eindhoven open data 'bomen' geosearch within 25m of the point, no match found"
-   ]
+   ],
+   "status": "blocked",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1690252 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Hongaarse eik PSV-stadion",

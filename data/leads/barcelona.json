@@ -99,8 +99,9 @@
       "species": "Schinus longifolia",
       "lat": 41.37205,
       "lng": 2.15539,
-      "status": "lead",
-      "why": "1916, public, but a street tree with no second source found and little to say beyond the species."
+      "status": "duplicate",
+      "why": "1916, public, but a street tree with no second source found and little to say beyond the species.",
+      "held_reason": "Already live as bcn_041 (The Pepper Tree of Carrer Joaquim Blume), 9 m from this lead point. (2026-10-20)"
     },
     {
       "name": "Taronger de Louisiana del carrer Maria Montessori",
@@ -212,10 +213,11 @@
       "species": "Schinus longifolia (register) / Schinus polygama (OpenStreetMap)",
       "lat": 41.37205,
       "lng": 2.15539,
-      "status": "lead",
+      "status": "duplicate",
       "why": "Species dispute, and it is the only thing holding this back. The city register says Schinus longifolia, an Argentine species; OSM node 4506714524, surveyed from the same catalogue, says Schinus polygamus; and huingan, the common name the city itself uses, is the Chilean name for S. polygama. With the build now failing on species naming, shipping a tree under a contested binomial is not worth it. Everything else is fine: 1916, public, on the Montjuic walk 200 m from the Teatre Grec gardens, and the municipal record calls it a botanical rarity with only one other specimen in the whole city, larger, in the Jardi d'Aclimatacio. Resolve the species with one look at the leaves in a photograph and this ships.",
       "register_id": 99400454952,
-      "register_notes": "Girth 1.6 m, 8 m tall, crown 9 m. Public. Pin would be confirmed: register 41.37211/2.15533 and OSM node 4506714524 are 9 m apart."
+      "register_notes": "Girth 1.6 m, 8 m tall, crown 9 m. Public. Pin would be confirmed: register 41.37211/2.15533 and OSM node 4506714524 are 9 m apart.",
+      "held_reason": "Already live as bcn_041 (The Pepper Tree of Carrer Joaquim Blume), 9 m from this lead point. (2026-10-20)"
     },
     {
       "name": "Araucaria de l'avinguda Francesc Ferrer i Guardia",

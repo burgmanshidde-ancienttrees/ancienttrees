@@ -1,0 +1,113 @@
+{
+  "city": "Batenburg",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "oldest_tree_id": "btb_002",
+  "hero_tree_id": "btb_001",
+  "intro": "Batenburg, a village on the Maas in the municipality of Wijchen, keeps two trees of almost the same girth about 40 metres apart at its Oude or St Victorkerk on Grotestraat. A horse chestnut from the 1900s measures 5.08 metres round and stands 26 metres tall in the church garden; a copper beech from the 1880s, 5.10 metres round, grows out of the paving beside the church. Both are on the national register of monumental trees, both were inspected in May 2026, and both can be seen for free.",
+  "meta_description": "Two monumental trees at Batenburg church: a horse chestnut 5.08 metres round and a copper beech 5.10 metres round, 40 metres apart, free to see.",
+  "question_answer": "The oldest tree we map in Batenburg is the copper beech by the Oude or St Victorkerk on Grotestraat, which the national tree register bands to a planting in the 1880s, about 140 years ago. The horse chestnut in the church garden beside it is about twenty years younger and almost exactly as thick.",
+  "question_meta": "Batenburg's oldest mapped tree is a copper beech from the 1880s at the St Victorkerk, 5.10 metres round. Where it is and its neighbour.",
+  "question_context": "Both ages come from the Landelijk Register Monumentale Bomen, which records a planting decade rather than a year, so each is a band: 1880 to 1890 for the copper beech, 1900 to 1910 for the horse chestnut. The register is the only written source for either tree, which is why both entries are flagged, but it is a recent one: an inspector saw both trees in May 2026 and kept them on the list as monumental. The beech carries a partly rotted wound where a limb broke out, with brackets of Ganoderma lipsiense, and the register asks for regular checks; the chestnut lost a large limb in 1992, and the damage was worked on afterwards. They stand about 40 metres apart at Grotestraat 11A, the chestnut in the church garden and the beech on the paved ground by the church. There is no railway station in Batenburg, which lies on the Maas about 16 kilometres west of Nijmegen, so come by car or bike.",
+  "faq": [
+    {
+      "q": "What is the oldest tree in Batenburg?",
+      "a": "The copper beech by the Oude or St Victorkerk on Grotestraat, banded by the national tree register to a planting in the 1880s, about 140 years ago."
+    },
+    {
+      "q": "Are the Batenburg church trees free to see?",
+      "a": "Yes. The register lists both as public and open to visitors, and both stand beside Grotestraat at number 11A."
+    }
+  ],
+  "trees": [
+    {
+      "id": "btb_001",
+      "name": "The Horse Chestnut of Batenburg Church",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "about 120 years, from a registered planting decade",
+      "age_min": 116,
+      "age_max": 126,
+      "age_basis": "source",
+      "girth_cm": 508,
+      "height_m": 26,
+      "location": {
+        "address": "Bij de kerk, Grotestraat 11A, Batenburg",
+        "latitude": 51.822759,
+        "longitude": 5.628748,
+        "neighbourhood": "Batenburg"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677842&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless frame, viewed 2026-10-13: the register point lands on one large crown beside the street)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677842",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677842&outFields=*&f=json"
+      },
+      "access": "Free to see. Church garden beside the Oude or St Victorkerk, owner a religious body; register: visitable ja, openbaar ja. The crown stands beside Grotestraat and can be seen from the street; no garden hours found.",
+      "transport": "No rail. Batenburg is a village on the Maas in the municipality of Wijchen, about 16 km west of Nijmegen in a straight line; a bus connection was not checked, so treat it as a car or bike trip.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          5
+        ],
+        "kind": "flowers",
+        "label": "May, when white flower candles stand over the whole crown"
+      },
+      "story": "At 5.08 metres round, the horse chestnut beside Batenburg's church has a thicker trunk than chestnuts decades older. The one behind the pond in Roosendaal's Emile van Loonpark, planted around 1870, measures 4.32. This one went in between 1900 and 1910, by the national tree register's band, which makes it about 120 years old.\n\nIt stands 26 metres tall in the church garden at Grotestraat 11A, beside the Oude or St Victorkerk, and the register records it as standing on its own rather than in a row. It has not had an entirely easy century. In 1992 a large limb blew out of the crown, and the register notes that the damage was worked on afterwards. An inspector saw the tree again in May 2026 and kept it on the list as monumental, so it is standing and watched.\n\nMay is the month to come, when the white flower candles stand up over the whole crown. In September and October the conkers come down in their spiny cases.\n\nAbout 40 metres away, on the paved ground by the same church, stands a copper beech planted twenty years earlier with almost exactly the same girth, 5.10 metres. Two trees of that size at one small village church make the detour worth it.\n\nBatenburg is a village on the Maas, about 16 kilometres west of Nijmegen, and the chestnut's crown stands right beside Grotestraat. Nobody has recorded who planted it; if you know, tell us.",
+      "how_to_recognise": "You can recognise it by the trunk, 5.08 metres round, and by the white flower candles in May. It stands in the church garden beside the Oude or St Victorkerk on Grotestraat; the purple-leaved beech 40 metres away is its neighbour.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    },
+    {
+      "id": "btb_002",
+      "name": "The Copper Beech of the St Victorkerk",
+      "species": "Copper Beech (Fagus sylvatica 'Atropunicea')",
+      "age_estimate": "about 140 years, from a registered planting decade",
+      "age_min": 136,
+      "age_max": 146,
+      "age_basis": "source",
+      "girth_cm": 510,
+      "height_m": 20,
+      "location": {
+        "address": "Oude of St Victorkerk, Grotestraat 11A, Batenburg",
+        "latitude": 51.823035,
+        "longitude": 5.629069,
+        "neighbourhood": "Batenburg"
+      },
+      "verified_sources": [
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677843&outFields=*&f=json",
+        "https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0 (Actueel_orthoHR, leafless frame, viewed 2026-10-13: the register point lands on a large crown beside the church)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1677843",
+        "url": "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1677843&outFields=*&f=json"
+      },
+      "access": "Free to see. Paved church square by the Oude or St Victorkerk, owner a religious body; register: visitable ja, openbaar ja. No hours found.",
+      "transport": "No rail. Batenburg is a village on the Maas in the municipality of Wijchen, about 16 km west of Nijmegen in a straight line; a bus connection was not checked, so treat it as a car or bike trip.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the purple leaves turn copper before they fall"
+      },
+      "story": "This copper beech grows out of paving. The national tree register records the ground around it, by Batenburg's Oude or St Victorkerk, as closed paving, and out of it rises a trunk 5.10 metres round.\n\nThat is a big copper beech. The one at the gate of Nispen's cemetery near Roosendaal is 4.90 metres round, and that girth belongs to three stems fused into one. The Landelijk Register Monumentale Bomen bands this tree's planting to the 1880s, so it is about 140 years old, and puts it at 20 metres tall.\n\nIt carries an old injury. A large limb once broke out of it, and the register notes that the wound has partly rotted, with the flat brackets of the artist's fungus, Ganoderma lipsiense, growing from it, and asks for regular checks. An inspector saw the tree in May 2026 and kept it on the list as monumental, so it is standing and watched.\n\nCome in late October or early November, when the purple leaves turn copper before they fall. In May the other reason to be here is in flower: the horse chestnut in the church garden, about 40 metres away, planted twenty years later and almost exactly the same girth at 5.08 metres.\n\nBatenburg is a village on the Maas in the municipality of Wijchen, about 16 kilometres west of Nijmegen. The register lists the beech as public and open to visitors, on the church square at Grotestraat 11A.",
+      "how_to_recognise": "You can recognise it by the purple leaves and a trunk 5.10 metres round rising straight out of the paving. It stands by the Oude or St Victorkerk on Grotestraat, about 40 metres from the big horse chestnut in the church garden.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

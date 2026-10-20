@@ -25,8 +25,9 @@
    "species": "Horse Chestnut (Aesculus hippocastanum)",
    "lat": 51.533716,
    "lng": 4.459202,
-   "status": "lead",
-   "why": "LRMB register nr 1680201 ('Witte paardenkastanje'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1680201 ('Witte paardenkastanje'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1680201 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "(catalpa)",
@@ -41,8 +42,9 @@
    "species": "European Beech (Fagus sylvatica)",
    "lat": 51.527941,
    "lng": 4.464392,
-   "status": "lead",
-   "why": "LRMB register nr 1680973 ('Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1680973 ('Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1680973 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Dennestraat Nispen",
@@ -57,8 +59,9 @@
    "species": "Canadian Poplar (Populus x canadensis)",
    "lat": 51.533692,
    "lng": 4.457607,
-   "status": "lead",
-   "why": "LRMB register nr 1690544 ('Canadese populier'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1690544 ('Canadese populier'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plein. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1690544 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Horse Chestnut, achter vijver",
@@ -223,16 +226,18 @@
    "species": "Silver Maple (Acer saccharinum)",
    "lat": 51.53383,
    "lng": 4.45474,
-   "status": "lead",
-   "why": "LRMB 1690632, girth 525 cm (largest in town), height 12 m, band 1870-1880, gemeente park, visitable, observed 2023-03-15. Register point lands among several small crowns in the leafless PDOK frame, so no one trunk can be placed: no confirmed pin, so not rich."
+   "status": "published",
+   "why": "LRMB 1690632, girth 525 cm (largest in town), height 12 m, band 1870-1880, gemeente park, visitable, observed 2023-03-15. Register point lands among several small crowns in the leafless PDOK frame, so no one trunk can be placed: no confirmed pin, so not rich.",
+   "published_id": "roo_022"
   },
   {
    "name": "Beech, Vrouwenhofpark (achter restaurant Vrouwenhof)",
    "species": "European Beech (Fagus sylvatica)",
    "lat": 51.52835,
    "lng": 4.46276,
-   "status": "lead",
-   "why": "LRMB 1690548, girth 379 cm, height 29 m, band 1870-1880, gemeente plantsoen, observed 2025-05-23. Register itself says 'Midden op het pad. Situering boom is onnauwkeurig aangegeven'; the dominant crown in the PDOK frame is about 8 m from the point. Pin stays approximate, so not rich. Strong tree, worth a ground-truth pin from a reader."
+   "status": "published",
+   "why": "LRMB 1690548, girth 379 cm, height 29 m, band 1870-1880, gemeente plantsoen, observed 2025-05-23. Register itself says 'Midden op het pad. Situering boom is onnauwkeurig aangegeven'; the dominant crown in the PDOK frame is about 8 m from the point. Pin stays approximate, so not rich. Strong tree, worth a ground-truth pin from a reader.",
+   "published_id": "roo_025"
   },
   {
    "name": "Beeches, Wouwseweg 19",
@@ -247,56 +252,63 @@
    "species": "Silver Maple (Acer saccharinum)",
    "lat": 51.53813,
    "lng": 4.47985,
-   "status": "lead",
-   "why": "LRMB 1690555, girth 325 cm, band 1910-1920, gemeente cemetery, observed 2025-05-22; stands in dense woodland by the entrance in the PDOK frame, trunk cannot be placed. Neighbour of roo_011 candidate (the Baumannii chestnut)."
+   "status": "held",
+   "why": "LRMB 1690555, girth 325 cm, band 1910-1920, gemeente cemetery, observed 2025-05-22; stands in dense woodland by the entrance in the PDOK frame, trunk cannot be placed. Neighbour of roo_011 candidate (the Baumannii chestnut).",
+   "held_reason": "325 cm in dense woodland, trunk cannot be placed. (2026-10-20)"
   },
   {
    "name": "London Plane, Algemene Begraafplaats Bachlaan",
    "species": "London Plane (Platanus x hispanica)",
    "lat": 51.53797,
    "lng": 4.48006,
-   "status": "lead",
-   "why": "LRMB 1690554, girth 287 cm, height 26 m, band 1910-1920, gemeente cemetery, observed 2025-05-22; dense woodland, trunk cannot be placed."
+   "status": "held",
+   "why": "LRMB 1690554, girth 287 cm, height 26 m, band 1910-1920, gemeente cemetery, observed 2025-05-22; dense woodland, trunk cannot be placed.",
+   "held_reason": "287 cm plane in dense woodland: below the reason floor and cannot be placed. (2026-10-20)"
   },
   {
    "name": "Robinia, Emile van Loonpark (Markt 54)",
    "species": "Black Locust (Robinia pseudoacacia)",
    "lat": 51.53426,
    "lng": 4.45318,
-   "status": "lead",
-   "why": "LRMB 1690542, girth 406 cm, height 14 m, band 1910-1920, gemeente park by the main road; crown merges with neighbours in the PDOK frame, no confirmed pin."
+   "status": "published",
+   "why": "LRMB 1690542, girth 406 cm, height 14 m, band 1910-1920, gemeente park by the main road; crown merges with neighbours in the PDOK frame, no confirmed pin.",
+   "published_id": "roo_023"
   },
   {
    "name": "London Plane, Vughtstraat 15",
    "species": "London Plane (Platanus x hispanica)",
    "lat": 51.53493,
    "lng": 4.45469,
-   "status": "lead",
-   "why": "LRMB 1690545, girth 366 cm, height 22 m, band 1910-1920, gemeente plein; one continuous canopy blob with neighbours in the PDOK frame, no confirmed pin."
+   "status": "held",
+   "why": "LRMB 1690545, girth 366 cm, height 22 m, band 1910-1920, gemeente plein; one continuous canopy blob with neighbours in the PDOK frame, no confirmed pin.",
+   "held_reason": "366 cm plane, an ordinary town plane, crown merges with neighbours. (2026-10-20)"
   },
   {
    "name": "Oaks, Burgerhoutsestraat (bij muziekschool)",
    "species": "Pedunculate Oak (Quercus robur)",
    "lat": 51.53063,
    "lng": 4.46243,
-   "status": "lead",
-   "why": "LRMB 1680931, girth 395 cm, height 23 m, band 1880-1890, but register counts 8 trees along the street (a row, not one collectible point); mixed with spruce and other crowns in the PDOK frame."
+   "status": "held",
+   "why": "LRMB 1680931, girth 395 cm, height 23 m, band 1880-1890, but register counts 8 trees along the street (a row, not one collectible point); mixed with spruce and other crowns in the PDOK frame.",
+   "held_reason": "A row of 8, not one collectible point. (2026-10-20)"
   },
   {
    "name": "Mariadal convent garden trees (Vincentiusstraat 7)",
    "species": "mixed",
    "lat": 51.53655,
    "lng": 4.46015,
-   "status": "lead",
-   "why": "Poplar 1680938 (482 cm, 32 m), beech 1680946 (315 cm), plane 1680944 (320 cm), red chestnut 1680942 (285 cm): register lists the convent garden as bezoekbaar 'nee' (one 'op afspraak'), owner religieuze instantie. Enclosed convent grounds: do not ship."
+   "status": "blocked",
+   "why": "Poplar 1680938 (482 cm, 32 m), beech 1680946 (315 cm), plane 1680944 (320 cm), red chestnut 1680942 (285 cm): register lists the convent garden as bezoekbaar 'nee' (one 'op afspraak'), owner religieuze instantie. Enclosed convent grounds: do not ship.",
+   "held_reason": "Enclosed convent garden, register bezoekbaar nee. (2026-10-20)"
   },
   {
    "name": "Summer Lime, Kerkplein 8 Nispen (pastorie front garden)",
    "species": "Tilia platyphyllos",
    "lat": 51.481966,
    "lng": 4.461173,
-   "status": "lead",
-   "why": "LRMB 1690586, 304 cm, 26 m, band 1890-1900, former candelabra form, observed 2024-05-18, register visitable ja. Small crown among roofs and gardens in the PDOK frame, cannot be placed individually; no photo. Needs a pin."
+   "status": "held",
+   "why": "LRMB 1690586, 304 cm, 26 m, band 1890-1900, former candelabra form, observed 2024-05-18, register visitable ja. Small crown among roofs and gardens in the PDOK frame, cannot be placed individually; no photo. Needs a pin.",
+   "held_reason": "Front garden of the pastorie (a home); 304 cm; cannot be placed from the street. (2026-10-20)"
   },
   {
    "name": "Robinia, Kerkplein 8 Nispen (next to presbytery)",
@@ -351,40 +363,45 @@
    "species": "Tulip Tree (Liriodendron tulipifera)",
    "lat": 51.53757,
    "lng": 4.45553,
-   "status": "lead",
-   "why": "LRMB 1690547, 375 cm, 25 m, band 1920-1930, gemeente plantsoen, 2 trees, observed 2025-08-10; PDOK frame 2026-10-14 shows no single clear crown at the point (streetside crowns, buildings), no pin, no photo. Also LRMB 1690634 Caucasian wingnut (369 cm, 23 m, Emile van Loonpark by the station road, 51.5339, 4.4529): crown merges with the park thicket, no pin."
+   "status": "held",
+   "why": "LRMB 1690547, 375 cm, 25 m, band 1920-1930, gemeente plantsoen, 2 trees, observed 2025-08-10; PDOK frame 2026-10-14 shows no single clear crown at the point (streetside crowns, buildings), no pin, no photo. Also LRMB 1690634 Caucasian wingnut (369 cm, 23 m, Emile van Loonpark by the station road, 51.5339, 4.4529): crown merges with the park thicket, no pin.",
+   "held_reason": "A pair at 375 cm, about two thirds of the species reference. The Caucasian wingnut named in this note shipped as roo_024. (2026-10-20)"
   },
   {
    "name": "Yew, Vrouwenhofpark (langs jeu de boulebaan)",
    "species": "Yew (Taxus baccata)",
    "lat": 51.527827,
    "lng": 4.463295,
-   "status": "lead",
-   "why": "LRMB 1690550, 215 cm, 12 m, band 1900-1910, observed 2025-05, gemeente park, visitable ja. Park, not a small site; crown not separable from neighbours in the spring 2026 PDOK frame, so no confirmed pin, no photo. Register note: branch over the boules court needs anchoring."
+   "status": "held",
+   "why": "LRMB 1690550, 215 cm, 12 m, band 1900-1910, observed 2025-05, gemeente park, visitable ja. Park, not a small site; crown not separable from neighbours in the spring 2026 PDOK frame, so no confirmed pin, no photo. Register note: branch over the boules court needs anchoring.",
+   "held_reason": "215 cm, small for a yew: below the reason floor. (2026-10-20)"
   },
   {
    "name": "Yew, Vrouwenhofpark",
    "species": "Yew (Taxus baccata)",
    "lat": 51.527625,
    "lng": 4.4627,
-   "status": "lead",
-   "why": "LRMB 1690552, 288 cm, 17 m, band 1870-1880, observed 2025-05, gemeente park, visitable ja; register: pruned too hard. Largest yew of the park but the crown cannot be placed in the PDOK frame (canal bank, many bare crowns); park is not a small site. Needs a pin or photo."
+   "status": "held",
+   "why": "LRMB 1690552, 288 cm, 17 m, band 1870-1880, observed 2025-05, gemeente park, visitable ja; register: pruned too hard. Largest yew of the park but the crown cannot be placed in the PDOK frame (canal bank, many bare crowns); park is not a small site. Needs a pin or photo.",
+   "held_reason": "288 cm, about half the species reference: below the reason floor. (2026-10-20)"
   },
   {
    "name": "Pedunculate Oak at the entrance of Restaurant Vrouwenhof",
    "species": "Pedunculate Oak (Quercus robur)",
    "lat": 51.528085,
    "lng": 4.461906,
-   "status": "lead",
-   "why": "LRMB 1680974, 315 cm, 19 m, band 1880-1890, observed 2025-05-23 with 2025 register photo, gemeente park, visitable ja. Leafless oak among other bare crowns, not placeable individually; park not a small site. Needs a pin or photo."
+   "status": "held",
+   "why": "LRMB 1680974, 315 cm, 19 m, band 1880-1890, observed 2025-05-23 with 2025 register photo, gemeente park, visitable ja. Leafless oak among other bare crowns, not placeable individually; park not a small site. Needs a pin or photo.",
+   "held_reason": "315 cm oak, a park oak: below the reason floor. (2026-10-20)"
   },
   {
    "name": "Copper Beech, Vrouwenhofpark (langs jeu de boulebaan)",
    "species": "Copper Beech (Fagus sylvatica Atropunicea)",
    "lat": 51.527775,
    "lng": 4.463864,
-   "status": "lead",
-   "why": "LRMB 1690551, 348 cm, 19 m, band 1910-1920, observed 2025-05. Register says the position is inexact because no copper beech is visible at the point; cannot be pinned. Weeping beech 1690549 (229 cm, 11 m, 1910-1920, 'potentieel', position inexact) likewise."
+   "status": "held",
+   "why": "LRMB 1690551, 348 cm, 19 m, band 1910-1920, observed 2025-05. Register says the position is inexact because no copper beech is visible at the point; cannot be pinned. Weeping beech 1690549 (229 cm, 11 m, 1910-1920, 'potentieel', position inexact) likewise.",
+   "held_reason": "Register itself says no copper beech is visible at its point; cannot be placed. (2026-10-20)"
   },
   {
    "name": "Robinia, Villa Van Gilse garden (Burgerhoutsestraat 12)",
@@ -431,8 +448,9 @@
    "species": "Silver Maple (Acer saccharinum)",
    "lat": 51.51968,
    "lng": 4.389941,
-   "status": "lead",
-   "why": "LRMB 1690594, 4 trees, 360 cm, 25 m, band 1900-1910, gemeente park, visitable ja, observed 2024-10-26. Polygon of 4; register note says the trees are wrongly drawn on the aerial photo, so no individual pin; park, not a small site."
+   "status": "held",
+   "why": "LRMB 1690594, 4 trees, 360 cm, 25 m, band 1900-1910, gemeente park, visitable ja, observed 2024-10-26. Polygon of 4; register note says the trees are wrongly drawn on the aerial photo, so no individual pin; park, not a small site.",
+   "held_reason": "A group of 4 drawn wrongly on the register map, no single point. (2026-10-20)"
   },
   {
    "name": "Beeches along the churchyard, Plantagebaan 221, Wouwse Plantage",
@@ -447,32 +465,36 @@
    "species": "European Beech (Fagus sylvatica)",
    "lat": 51.516069,
    "lng": 4.496145,
-   "status": "lead",
-   "why": "LRMB 1680958, 21 trees in a line, 315 cm, 27 m, band 1880-1890, gemeente wood: a row in woodland, not one collectible point."
+   "status": "held",
+   "why": "LRMB 1680958, 21 trees in a line, 315 cm, 27 m, band 1880-1890, gemeente wood: a row in woodland, not one collectible point.",
+   "held_reason": "A row of 21, not one collectible point. (2026-10-20)"
   },
   {
    "name": "Beeches, Bergsebaan 45, Heerle",
    "species": "European Beech (Fagus sylvatica)",
    "lat": 51.512005,
    "lng": 4.369562,
-   "status": "lead",
-   "why": "LRMB 1690603, 10 trees in a line, 367 cm, 22 m, band 1890-1900, by a former dairy at a level crossing: a row, not one collectible point."
+   "status": "held",
+   "why": "LRMB 1690603, 10 trees in a line, 367 cm, 22 m, band 1890-1900, by a former dairy at a level crossing: a row, not one collectible point.",
+   "held_reason": "A row of 10, not one collectible point. (2026-10-20)"
   },
   {
    "name": "Silver Maples, Ireneplein 1 (de Hooge Vaart)",
    "species": "Silver Maple (Acer saccharinum)",
    "lat": 51.532798,
    "lng": 4.474974,
-   "status": "lead",
-   "why": "LRMB 1690556, 2 trees, 310 cm, 23 m, band 1890-1900, visitable onbekend, register coordinate not checked against aerial, no photo or confirmed pin in reach."
+   "status": "held",
+   "why": "LRMB 1690556, 2 trees, 310 cm, 23 m, band 1890-1900, visitable onbekend, register coordinate not checked against aerial, no photo or confirmed pin in reach.",
+   "held_reason": "A pair, visitable onbekend, 310 cm: below the reason floor for the species. (2026-10-20)"
   },
   {
    "name": "Horse Chestnuts, Huijbergseweg 38, Roosenberg",
    "species": "Horse Chestnut (Aesculus hippocastanum)",
    "lat": 51.505499,
    "lng": 4.413053,
-   "status": "lead",
-   "why": "LRMB 1690574, 2 trees, 316 cm, 23 m, band 1890-1900, farmyard, visitable only op afspraak (by appointment): not open."
+   "status": "blocked",
+   "why": "LRMB 1690574, 2 trees, 316 cm, 23 m, band 1890-1900, farmyard, visitable only op afspraak (by appointment): not open.",
+   "held_reason": "Farmyard, visitable only by appointment. (2026-10-20)"
   },
   {
    "name": "Beech, Eerenburg 12, Nispen",

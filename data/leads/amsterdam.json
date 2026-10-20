@@ -77,8 +77,9 @@
    "species": "White Poplar (Populus alba)",
    "lat": 52.305796,
    "lng": 4.848439,
-   "status": "lead",
-   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690752 ('Witte abeel Broersepark'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De witte abeel staat aan de zuidzijde (vlak naast de vijver) in het Broersepark. Het park is in 1926 ontworpen en in de jaren daarna aangelegd als \"Wandelpark\". In 1967 werd het park door de gemeente vernoemd naar Chris P. Broerse (vanaf 1926 in het park werkzaam geweest). In 1999 is er de parasitaire houtschimmel de honingzwam aangetroffen aan de stamvoet. De kroon is in de loop der jaren gehavend en de conditie matig. De boom heeft een scheefstand, de wortelkluit is blijkbaar omhoog gekomen gezien de bult bij de stamvoet. Deze boom is niet meer indrukwekkend of monumentaal maar gezien de opgegeven plantperiode (1860-1870) mogelijk wel het oudste exemplaar van het park. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690752 ('Witte abeel Broersepark'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: De witte abeel staat aan de zuidzijde (vlak naast de vijver) in het Broersepark. Het park is in 1926 ontworpen en in de jaren daarna aangelegd als \"Wandelpark\". In 1967 werd het park door de gemeente vernoemd naar Chris P. Broerse (vanaf 1926 in het park werkzaam geweest). In 1999 is er de parasitaire houtschimmel de honingzwam aangetroffen aan de stamvoet. De kroon is in de loop der jaren gehavend en de conditie matig. De boom heeft een scheefstand, de wortelkluit is blijkbaar omhoog gekomen gezien de bult bij de stamvoet. Deze boom is niet meer indrukwekkend of monumentaal maar gezien de opgegeven plantperiode (1860-1870) mogelijk wel het oudste exemplaar van het park. The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1690752 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "De Jakoba Mulderboom",
@@ -101,24 +102,27 @@
    "species": "Canadian Poplar (Populus x canadensis)",
    "lat": 52.31588,
    "lng": 4.872811,
-   "status": "lead",
-   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690651 ('Canadese populier'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690651 ('Canadese populier'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1690651 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Dutch Elm, Amstelveen",
    "species": "Dutch Elm (Ulmus x hollandica)",
    "lat": 52.297086,
    "lng": 4.88895,
-   "status": "lead",
-   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690654 ('Hollandse iep'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Boom wordt ieder jaar geinjecteerd tegen iepenziekte The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1690654 ('Hollandse iep'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: Boom wordt ieder jaar geinjecteerd tegen iepenziekte The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1690654 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Red Horse Chestnut, Amstelveen",
    "species": "Red Horse Chestnut (Aesculus x carnea)",
    "lat": 52.309306,
    "lng": 4.844711,
-   "status": "lead",
-   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1684073 ('Rode paardenkastanje'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "Staged 2026-08-22 from Amstelveen, which sits 7.4 km from the Amsterdam city centre and is inside this site's day-trip boundary, so it belongs on the Amsterdam page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1684073 ('Rode paardenkastanje'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting plantsoen. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1684073 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Lime, Veenendaalplein (tegenover huisnummer 1)",

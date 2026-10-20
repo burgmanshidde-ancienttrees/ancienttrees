@@ -73,8 +73,9 @@
    "species": "Horse Chestnut (Aesculus hippocastanum)",
    "lat": 52.473445,
    "lng": 4.746024,
-   "status": "lead",
-   "why": "LRMB register nr 1679699 ('Witte paardenkastanje'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1679699 ('Witte paardenkastanje'). Register planting band 1900-1910, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1679699 in the register snapshot, checked 2026-10-20."
   },
   {
    "id": "zaa_009",

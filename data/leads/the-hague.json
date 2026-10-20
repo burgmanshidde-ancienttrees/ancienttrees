@@ -30,8 +30,9 @@
    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
    "lat": 52.069878,
    "lng": 4.367151,
-   "status": "lead",
-   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685213 ('Bruine Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685213 ('Bruine Beuk'). Register planting band 1830-1840, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1685213 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "European Beech, Voorburg",
@@ -70,8 +71,9 @@
    "species": "European Beech (Fagus sylvatica)",
    "lat": 52.072607,
    "lng": 4.366624,
-   "status": "lead",
-   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685216 ('Beuk'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "Staged 2026-08-22 from Leidschendam-Voorburg, which sits 3.6 km from the The Hague city centre and is inside this site's day-trip boundary, so it belongs on the The Hague page rather than on a thin page of its own. Name the real place honestly in the location fields and the true travel time in transport. LRMB register nr 1685216 ('Beuk'). Register planting band 1860-1870, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting park. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1685216 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "The Juttepeer of Heilige Geesthofje",

@@ -168,24 +168,27 @@
       "species": "London Plane (Platanus x hispanica)",
       "lat": 51.76988,
       "lng": 5.56504,
-      "status": "lead",
-      "why": "LRMB 1680018, Julianastraat 37, church garden. Girth 435 cm, height 24 m, band 1890-1900, owner religious body, setting tuin, visitable ja, last observed 2023-08. Missing: PDOK aerial shows several overlapping plane crowns, not individually identifiable, so no confirmed pin; church-garden access not evidenced. (pass 2026-10-13)"
+      "status": "held",
+      "why": "LRMB 1680018, Julianastraat 37, church garden. Girth 435 cm, height 24 m, band 1890-1900, owner religious body, setting tuin, visitable ja, last observed 2023-08. Missing: PDOK aerial shows several overlapping plane crowns, not individually identifiable, so no confirmed pin; church-garden access not evidenced. (pass 2026-10-13)",
+      "held_reason": "Register counts 6 planes at this point: a group, not one trunk. (2026-10-20)"
     },
     {
       "name": "Hollandse linde voor Sint Annakapel, Herpen",
       "species": "Common Lime (Tilia x europaea)",
       "lat": 51.76897,
       "lng": 5.60748,
-      "status": "lead",
-      "why": "LRMB 1677958, Herpen Koolwijksestraat 5. Girth 250 cm, height 15 m, band 1880-1890, gemeente plantsoen, status 'potentieel'. Missing: several crowns in the forecourt, aerial gives no individual crown, and the girth is modest. (pass 2026-10-13)"
+      "status": "held",
+      "why": "LRMB 1677958, Herpen Koolwijksestraat 5. Girth 250 cm, height 15 m, band 1880-1890, gemeente plantsoen, status 'potentieel'. Missing: several crowns in the forecourt, aerial gives no individual crown, and the girth is modest. (pass 2026-10-13)",
+      "held_reason": "250 cm lime, status potentieel: below the reason floor. (2026-10-20)"
     },
     {
       "name": "Zomerlindes Kasteel Oijen",
       "species": "Summer Lime (Tilia platyphyllos)",
       "lat": 51.81208,
       "lng": 5.52506,
-      "status": "lead",
-      "why": "LRMB 1680024, Oijen Bovendijk 34-38. Girth 320 cm, height 27 m, band 1850-1860, roadside row in front of the castle moat. A row, not one collectible point; no individual crown identifiable in aerial. (pass 2026-10-13)"
+      "status": "held",
+      "why": "LRMB 1680024, Oijen Bovendijk 34-38. Girth 320 cm, height 27 m, band 1850-1860, roadside row in front of the castle moat. A row, not one collectible point; no individual crown identifiable in aerial. (pass 2026-10-13)",
+      "held_reason": "A roadside row, not one collectible point. (2026-10-20)"
     },
     {
       "name": "Zomereiken rondom centrum Ravenstein",
@@ -208,8 +211,9 @@
       "species": "mixed",
       "lat": 51.823,
       "lng": 5.629,
-      "status": "lead",
-      "why": "NOT Oss: Batenburg (Wijchen) holds a walkable cluster within about 500 m: copper beech 1677843 (510 cm, 20 m), horse chestnut 1677842 (508 cm, 26 m) at the Grotestraat 11A church, winter lime at the castle ruin 1677845 (411 cm, band 1600-1700), Calabrian ash on the cemetery 1677848 (345 cm). Candidate for its own place, or a day-trip addition to Oss/Nijmegen coverage. Not verified (pins/access not checked). (pass 2026-10-13)"
+      "status": "held",
+      "why": "NOT Oss: Batenburg (Wijchen) holds a walkable cluster within about 500 m: copper beech 1677843 (510 cm, 20 m), horse chestnut 1677842 (508 cm, 26 m) at the Grotestraat 11A church, winter lime at the castle ruin 1677845 (411 cm, band 1600-1700), Calabrian ash on the cemetery 1677848 (345 cm). Candidate for its own place, or a day-trip addition to Oss/Nijmegen coverage. Not verified (pins/access not checked). (pass 2026-10-13)",
+      "held_reason": "Chestnut and copper beech shipped as btb_001 and btb_002; the castle limes (group of 22) and the cemetery maple stay leads in data/leads/batenburg.json. (2026-10-20)"
     }
   ],
   "blocked": [

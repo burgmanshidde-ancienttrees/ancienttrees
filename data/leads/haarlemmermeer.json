@@ -9,8 +9,9 @@
    "species": "Horse Chestnut (Aesculus hippocastanum)",
    "lat": 52.264485,
    "lng": 4.632846,
-   "status": "lead",
-   "why": "LRMB register nr 1688940 ('Witte paardenkastanje'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1688940 ('Witte paardenkastanje'). Register planting band 1910-1920, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1688940 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Tree of Heaven, Nieuw-Vennep op scheiding pastorietuin en gr",
@@ -25,16 +26,18 @@
    "species": "European Ash (Fraxinus excelsior)",
    "lat": 52.264262,
    "lng": 4.633167,
-   "status": "lead",
-   "why": "LRMB register nr 1688939 ('Gewone es'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1688939 ('Gewone es'). Register planting band 1920-1930, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category gemeente, setting agrarisch. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1688939 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "Norway Maple, Nieuw-Vennep",
    "species": "Norway Maple (Acer platanoides)",
    "lat": 52.264724,
    "lng": 4.635064,
-   "status": "lead",
-   "why": "LRMB register nr 1685909 ('Noorse esdoorn'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged."
+   "status": "blocked",
+   "why": "LRMB register nr 1685909 ('Noorse esdoorn'). Register planting band 1930-1940, so the age is a BAND and must not be sharpened. Register records it as publicly visitable; owner category religieuze instantie, setting tuin. Register history of the PLACE, not of the tree, so do not bridge from it: onbekend The register is ONE source. A second is wanted; without one the tree still ships with curation_status flagged.",
+   "blocked_reason": "LRMB status 5 (Dood/geveld) for nr 1685909 in the register snapshot, checked 2026-10-20."
   },
   {
    "name": "European Ash, Nieuw-Vennep",
