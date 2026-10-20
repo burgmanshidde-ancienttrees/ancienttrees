@@ -260,10 +260,14 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
         the site and the account is where you find your own things. */}
     {AUTH_ENABLED && (
       <details class="nav-drop nav-acct only-desktop">
-        {/* A plain word like Map and Explore beside it, no leaf, and no group
-            heading inside: the button already says whose menu this is
-            (Hidde, 2026-10-15, CONVENTIONS.md). */}
-        <summary id="bar-login" aria-label={t.account}><span class="acct-word">{t.account}</span><Fragment set:html={CARET} /></summary>
+        {/* YOUR FACE, not the word (Hidde, 2026-10-20, after the mockup: "ja
+            bouw alles"): AllTrails, komoot, Airbnb and Google put your round
+            picture where the bar's account sits once you are signed in, and
+            your initial when there is none. Signed out the bar still says
+            Sign in in words, so in and out never look alike (2026-10-06).
+            The word stays for screen readers. No group heading inside: the
+            button already says whose menu this is (2026-10-15). */}
+        <summary id="bar-login" aria-label={t.account}><span class="acct-face" aria-hidden="true"></span><span class="acct-word sr-only">{t.account}</span><Fragment set:html={CARET} /></summary>
         <div class="nav-drop-menu">
           <a href="/account"><span class="mi"><Fragment set:html={LEAF} /></span>{t.savedTrees}</a>
           <a href="/account/settings"><span class="mi"><Fragment set:html={GEAR} /></span><span>{t.yourAccount}</span></a>
@@ -499,7 +503,7 @@ document.addEventListener('click', function(e) {
     still tells me to log in"). The desktop bar hid it until 2026-10-06, when
     the avatar started depending on the flag. A variable a script needs is
     declared on that script; the smoke test now calls the painter directly. */}
-<script define:vars={{ accountWord: t.account }}>
+<script define:vars={{ accountWord: t.account, faceSB: SUPABASE_URL, faceKey: SUPABASE_KEY }}>
 // The nav must know who you are (2026-08-14 consistency pass): AllTrails
 // swaps Log in for your avatar; ours swaps the word, which is the honest
 // minimum for a site without profile pictures. Session shape is the one
@@ -556,7 +560,7 @@ window.atPaintNav = function(inNow) {
     // /account, so signing in renamed My trees to "Account" and wiped its
     // leaf with the textContent below (Hidde's screenshot, 2026-10-15).
     document.querySelectorAll('#bar-login').forEach(function(a) {
-      var label = a.querySelector('span:not(.mi)') || a;
+      var label = a.querySelector('.acct-word') || a;
       // What the page rendered, kept the first time we touch it, so signing out
       // restores the real word rather than a second guess at it.
       if (a.dataset.outWord === undefined) { a.dataset.outWord = label.textContent; }
@@ -564,6 +568,35 @@ window.atPaintNav = function(inNow) {
     });
     if (inNow) { document.documentElement.dataset.signedIn = '1'; }
     else { delete document.documentElement.dataset.signedIn; }
+    window.atPaintFace(inNow);
+  } catch (e) {}
+};
+// THE FACE IN THE BAR (2026-10-20): your profile picture, else your initial,
+// asked of the server each page with the session's own token, never kept on
+// the device. Until it answers, or with no profile yet, a plain cream circle.
+// signin-js repaints after renewing a spent token, so this runs again then.
+window.atPaintFace = function(inNow) {
+  var face = document.querySelector('#bar-login .acct-face');
+  if (!face) return;
+  face.textContent = ''; face.style.backgroundImage = ''; face.classList.remove('has-initial');
+  if (!inNow) return;
+  try {
+    var s = JSON.parse(localStorage.getItem('ancienttrees_session'));
+    var b = s.access_token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    var uid = JSON.parse(atob(b + '==='.slice((b.length + 3) % 4))).sub;
+    fetch(faceSB + '/rest/v1/profiles?select=display_name,avatar_url&user_id=eq.' + encodeURIComponent(uid),
+          { headers: { 'apikey': faceKey, 'Authorization': 'Bearer ' + s.access_token } })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(rows) {
+        var p = rows && rows[0];
+        if (!p || !document.documentElement.dataset.signedIn) return;
+        if (p.avatar_url && /^https:/.test(p.avatar_url)) {
+          face.style.backgroundImage = 'url("' + p.avatar_url.replace(/"/g, '%22') + '")';
+        } else if (p.display_name) {
+          face.textContent = p.display_name.trim().charAt(0).toUpperCase();
+          face.classList.add('has-initial');
+        }
+      }).catch(function() {});
   } catch (e) {}
 };
 (function() {

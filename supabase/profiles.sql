@@ -36,6 +36,11 @@ create table if not exists public.profiles (
   -- per account"). One ISO two-letter code the person picks in Edit
   -- profile; null shows no flag. Polarsteps' profile is the reference.
   country text check (country ~ '^[A-Z]{2}$'),
+  -- "Don't show" in the country picker (Hidde, 2026-10-20). Until somebody
+  -- chooses, both surfaces fill country with where they appear to be (the
+  -- phone's region, the computer's time zone), as Polarsteps does; this is
+  -- how a deliberate no is told apart from never having been asked.
+  flag_hidden boolean not null default false,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
@@ -43,6 +48,7 @@ create table if not exists public.profiles (
 -- Safe to run against a table that already exists.
 alter table public.profiles add column if not exists units text;
 alter table public.profiles add column if not exists country text;
+alter table public.profiles add column if not exists flag_hidden boolean not null default false;
 do $$ begin
   alter table public.profiles add constraint profiles_country_check
     check (country ~ '^[A-Z]{2}$');

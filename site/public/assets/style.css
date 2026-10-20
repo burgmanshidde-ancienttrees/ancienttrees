@@ -143,6 +143,13 @@ html:not([data-signed-in="1"]) .nav-acct.only-desktop { display: none; }
 html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .nav-drop summary { display: inline-flex; align-items: center; font-size: 13px; font-weight: 700; color: var(--ink); cursor: pointer; list-style: none; }
 .nav-drop summary::-webkit-details-marker { display: none; }
+/* The signed-in face in the desktop bar (2026-10-20): 32 round, the photo
+   covering it, else the initial as .profile-avatar draws it, else plain cream. The
+   same hairline ring as the profile flag. */
+.acct-face { width: 32px; height: 32px; border-radius: 50%; flex: none; display: inline-flex;
+  align-items: center; justify-content: center; background: var(--cream-dark) center / cover no-repeat;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.08); font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--moss); }
+.acct-face.has-initial { background-color: var(--moss-light); }
 /* AllTrails' small thin chevron after a dropdown word, not a filled triangle
    (CONVENTIONS.md 2026-10-15). Phosphor caret-down, set in Base.astro. */
 .nav-drop summary .sum-desktop { display: inline-flex; align-items: center; }
