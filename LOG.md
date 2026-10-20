@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 night run (00:41): nothing published
+
+- Rung 1: the one open reader photograph (ed90210d, European Beech in Freiburg, 47.9543 7.8067) has no file on this runner (out/sightings/ is empty for it), so its verdict stays open until a run can look at the pixels. corroborate.py: no register entry within 100 m, no Wikipedia tree article within 300 m.
+- Rung 4: Frankfurt deepen pass, 0 trees. The de.wikipedia Naturdenkmal list is used up; three more candidates (Wolfsweide oak, Niddaaltarm walnut, Herrenwiese oak) filed as leads, none has a photograph or a pin from a source. frankfurt.de still 403. Frankfurt is a 48h wall. Stuttgart has no register supply (from-zero stays off). The ready-to-merge Memorial Bur Oak (ftw_018) has no stated access, so it waits.
+- Nothing left on the shelf that a window can move; the READY pile is ordinary Dutch trees.
+
 ## 2026-10-19 night run, second attempt: Frankfurt 17 to 20 trees
 
 - Frankfurt: three new trees live (frk_018 Service Tree of Riedberg, frk_019 Border Oak at Berger Warte, frk_020 Brentanopark Oak), none with a photograph yet (Commons candidates noted in verify_notes for the photo lane). Intro and FAQ counts updated, German overlay translated. Preflight 0 problems; full site build not run here. Six rejects kept in data/leads/frankfurt.json. frankfurt.de returns 403 to every fetch.
