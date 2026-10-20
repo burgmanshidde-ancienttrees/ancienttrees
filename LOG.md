@@ -19,7 +19,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 ## 2026-10-20 session with Hidde: Gavin Coates's HKU Digital Arboretum, and the Kam Tin Tree House pin
 
-- **Fixed:** hkg_003, the Kam Tin Tree House, was pinned about 300 m from the register coordinate of the tree it cites (LCSD YL/6). Moved to the register point, which three of Gavin's videos at the tree confirm within 11 m; height 18.5 m from the register.
+- **Fixed, six of ten Hong Kong pins:** hkg_001, 002, 003, 004, 005 and 006 were each about 300 m off by the identical vector (170 m south, 252 m east missing): an earlier hand conversion of HK1980 grid references left out the datum shift. All six now sit on the register's own WGS84 point (shifted, each old pin lands within 6 m of it). hkg_001 and hkg_002 gained their register numbers (LCSD YTM/97, ARCHSD CW/47); register heights added. Gavin's videos at Kam Tin are what exposed it.
+- hkg_003, the Kam Tin Tree House, was pinned about 300 m from the register coordinate of the tree it cites (LCSD YL/6). Moved to the register point, which three of Gavin's videos at the tree confirm within 11 m; height 18.5 m from the register.
 - The arboretum's map is a public GeoJSON (1,182 dated, placed videos, 324 species) with no licence: a finding aid for pins, life checks and leads, never imported or shown. Notes and uses in data/research/hong-kong-digarb.md. It maps where Gavin teaches, not old trees: 15 videos sit at an Old and Valuable Tree.
 
 ## 2026-10-20 session with Hidde: iPad question, and the header fits an iPad in portrait
