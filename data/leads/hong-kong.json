@@ -35,7 +35,78 @@
       "ovt_no": "LCSD CW/103",
       "species": "Ficus virens, Hong Kong Park, outside the perimeter wall of the Tai Chi Garden",
       "reason": "dbh 2710mm, height 20m, crown spread 34m, the largest candidate in the Central district, 3143m from hkg_001 and roughly 3km from the Forbes Street/Ka Wai Man Road cluster. The brief specifically asked whether any stonewall or notable trees sit 'within reach of the existing Kowloon Park cluster or Central'; this is the strongest Central candidate found, but at 3+ km from every currently published tree it would need to anchor a wholly new 'Central' cluster rather than extend an existing walk, which this topping-up pass (needing only 4 trees) did not have room for. Strong candidate for a future Hong Kong deepening pass built around Hong Kong Park / Central specifically."
+    },
+    {
+      "ovt_no": "ARCHSD TW/2 + ARCHSD TW/1",
+      "species": "Ficus elastica, Kwan Mun Hau Resite Village, Tsuen Wan",
+      "latitude": 22.372368,
+      "longitude": 114.123655,
+      "reason": "Twin rubber trees 7 m apart (dbh 4200 and 3400 mm, 26 and 25 m tall, crowns 33 and 40 m), both Alive on the register site (10 April 2026). Lead because public access to a resite village is not settled (rule 10: village ground may be residential); no source or OSM check done. If access holds, fold into one entry."
+    },
+    {
+      "ovt_no": "LCSD CW/145",
+      "species": "Ficus virens, Former Central Government Offices planting areas",
+      "latitude": 22.279394,
+      "longitude": 114.159399,
+      "reason": "dbh 2080 mm, 17 m. Not found on the register site (ids 1 to 1060 scanned) so its Alive status is unconfirmed, and the former CGO grounds' public access was not checked. Neighbours CW/141-144 same area."
+    },
+    {
+      "ovt_no": null,
+      "species": "Ficus microcarpa tree house, Kuk Po",
+      "latitude": 22.528556,
+      "longitude": 114.238654,
+      "reason": "Only source is a HKU Digital Arboretum video (2025-02-27, 'A Ficus microcarpa Tree House Conservation'); English and Chinese web searches found no second source, no name, no register entry. No second source or photograph in reach. Remote Sha Tau Kok village, access by hike or ferry."
+    },
+    {
+      "ovt_no": "LCSD YTM/41",
+      "species": "Ficus microcarpa, Granville Square",
+      "latitude": 22.300282,
+      "longitude": 114.176942,
+      "reason": "dbh 2200 mm, 23 m, crown 30 m, Alive 13 July 2026 on the register site. Public status of the square (shopping-district setting) not checked, so held as a lead; strong if open."
+    },
+    {
+      "ovt_no": "HKP WCH/1",
+      "species": "Ficus elastica, Post Office Recreation Club, Leighton Road",
+      "latitude": 22.277398,
+      "longitude": 114.185821,
+      "reason": "Register site says Alive but last inspection 26 April 2021; private recreation club land, access still unconfirmed (earlier-pass note stands)."
+    },
+    {
+      "ovt_no": "LCSD CW/100",
+      "species": "Ficus microcarpa, Hong Kong Park near the Squash Centre",
+      "latitude": 22.277019,
+      "longitude": 114.160069,
+      "reason": "dbh 1418 mm, crown 28 m, Alive 20 May 2026. Surplus to the hkg_012 to hkg_014 park trio; also CW/37 (1600 mm) and CW/38 (1345 mm) in the same park."
+    },
+    {
+      "ovt_no": "LCSD CW/80 and CW/81",
+      "species": "Ficus microcarpa, Garden Road at the Lower Albert Road junction",
+      "latitude": 22.27812,
+      "longitude": 114.159428,
+      "reason": "dbh 1240 and 1250 mm, both Alive 2026. Two roadside banyans 30 m apart, surplus to hkg_016."
     }
   ],
-  "blocked": []
+  "blocked": [
+    {
+      "ovt_no": "LCSD CW/77",
+      "species": "Ficus microcarpa, Garden Road (dbh 2100 mm)",
+      "latitude": 22.277641,
+      "longitude": 114.157885,
+      "reason": "Register site Assessment Status: Removed (last inspection 3 April 2023). The OVT GeoJSON in data/registers still lists it. Never ship."
+    },
+    {
+      "ovt_no": "ARCHSD CW/28",
+      "species": "Parkia javanica, Zoological and Botanical Gardens",
+      "latitude": 22.276949,
+      "longitude": 114.156497,
+      "reason": "Register site says Removed."
+    },
+    {
+      "ovt_no": "LCSD CW/78",
+      "species": "Ficus microcarpa, C&W roadside",
+      "latitude": 22.277723,
+      "longitude": 114.158274,
+      "reason": "Register site says Removed."
+    }
+  ]
 }

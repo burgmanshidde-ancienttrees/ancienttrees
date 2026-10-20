@@ -13375,6 +13375,14 @@
    "tokens": 90000,
    "trees": 0,
    "note": "deepen pass: no new tree verified; Wilhelma plane owner-confirmed but lacks pin and photo; 5 leads added; Hohenheim pre-1800 owner list needs a browser session"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "verify",
+   "target": "hong-kong",
+   "tokens": 201623,
+   "trees": 11,
+   "note": "Hidde's ask after the HKU Digital Arboretum pin fixes; register detail-page scan found 195 removed and 37 failed OVTs the GeoJSON still lists (data/research/hong-kong-ovt-status.json); 7 leads, 3 blocked as removed"
   }
  ]
 }
