@@ -15,6 +15,7 @@
 - Shelf: only held trees were awaiting a writer (ftw_018 access, std_001 no viewing pin, inn_007 pin on a house). Graz walled for 48h (0 of 7 leads placed). Nuremberg verify found two Dutzendteich oaks (nbg_019, nbg_020), written and merged: Nuremberg 18 to 20, no photographs, German overlay and count copy updated.
 - Nuremberg's register is now mostly exhausted; next deepen should go elsewhere (Vienna was claimed at 13:31 by an earlier run).
 - Photo pass on nbg_006, nbg_019, nbg_020: 14 Commons candidates viewed, all rejected (hollow-trunk interiors, lake postcards), none approved.
+- Heidelberg verify: one tree (hei_007, two Münchelstrasse oaks, register only, approximate pin, no measurements) held in data/research/heidelberg-verified.json; not written, since a photo or confirmed pin is needed in a covered country and a register listing is not a reason to visit. Plöck 45-49 courtyard trees (access settled) are the best lead, wanting a photo or pin. Heidelberg walled 48h.
 - Hallstatt (5 to 7 trees): hst_006 Tausendjährige Linde, Bad Ischl (register says 400 to 500 years, not a thousand; 20 km away, said on the page) and hst_007 Gosau wych elm (last seen 2015, stated). Oldest-tree answer moved to hst_006. For a look: the hst_006 story adds Franz Joseph's summers at Bad Ischl, general knowledge with no source on file.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.

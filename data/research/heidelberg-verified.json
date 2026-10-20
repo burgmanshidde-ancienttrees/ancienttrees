@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "id": "hei_007",
+    "name": "The Münchelstrasse Oaks",
+    "species": "Pedunculate Oak (Quercus robur)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Münchelstrasse (forest track above Ziegelhausen), 69118 Heidelberg",
+      "latitude": 49.41711,
+      "longitude": 8.77402,
+      "neighbourhood": "Ziegelhausen"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+      "https://commons.wikimedia.org/wiki/Category:Natural_monuments_in_Heidelberg",
+      "https://nominatim.openstreetmap.org/reverse?lat=49.416813&lon=8.77382&format=jsonv2&zoom=18"
+    ],
+    "official_register": {
+      "name": "LUBW Schutzgebietsverzeichnis Baden-Württemberg, Naturdenkmal Einzelgebilde 82210001208 and 82210001209",
+      "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000027"
+    },
+    "access": "Stands on or beside Münchelstrasse, mapped in OpenStreetMap as a public track (highway=track, no access restriction seen). No source states opening conditions; evidence only.",
+    "transport": "Ziegelhausen, Heidelberg; bus to Ziegelhausen then an uphill walk on Münchelstrasse (exact stop and time not verified).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Two separately registered pedunculate oaks, 82210001208 'Stieleiche Münchelstrasse (1)' (LUBW map centre 49.416813, 8.77382) and 82210001209 '(2)' (49.417398, 8.774223), about 70 m apart, folded into one entry. Both designated 1951-04-05. The register's 'Linde Münchelstrasse' (82210001211, 49.418177, 8.774663, also designated 1951-04-05, about 50 m further on) belongs to the same group and could be named in the story; no photo of it found. Coordinates are LUBW-derived map centres (de.wikipedia comment: 'von Kartenmittelpunkt (LUBW) abgeleitet'), so approximate; the Commons Object location on both photos is identical to the register centre, so it is not an independent GPS fix. Alive: both trunks photographed 2024-11-04 by Commons user Albrecht62 (CC BY-SA 4.0), files 'Stieleiche Münchelstraße-1.jpg' (pageid 154870714) and 'Stieleiche Münchelstraße-2.jpg' (pageid 154870908), Commons category Natural monuments in Heidelberg. Species: register name 'Stieleiche' plus Commons description; single register source, so flagged 'register only'. No girth, height or age found: LUBW Steckbriefe carry none (earlier pass 2026-10-14), no other source found in two searches. Age left empty; the page asks the reader. Photo route is open (photographs exist), judging the frame is for the photo pass. Not verified: whether the trunks stand on public ground or beside the track."
+  }
+]

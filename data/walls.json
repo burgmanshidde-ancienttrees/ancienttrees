@@ -67,11 +67,6 @@
       "released_at": "2026-10-14T23:23:23+00:00"
     },
     {
-      "slug": "heidelberg",
-      "kind": "verify",
-      "released_at": "2026-10-14T23:25:12+00:00"
-    },
-    {
       "slug": "regensburg",
       "kind": "verify",
       "released_at": "2026-10-14T23:25:13+00:00"
@@ -135,6 +130,11 @@
       "slug": "graz",
       "kind": "verify",
       "released_at": "2026-10-20T15:15:13+00:00"
+    },
+    {
+      "slug": "heidelberg",
+      "kind": "verify",
+      "released_at": "2026-10-20T15:34:38+00:00"
     }
   ]
 }
