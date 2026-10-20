@@ -39,7 +39,7 @@ FREEMAIL = {"gmail.com", "hotmail.com", "yahoo.com", "outlook.com", "libero.it",
 MANUAL = ("notes", "linked", "linked_url", "segment", "hold")
 
 # The groups of the strategy, one ask each (OUTREACH_STRATEGY.md).
-SEGMENTS = ("source", "press", "garden", "society", "guide", "council", "reader", "other")
+SEGMENTS = ("source", "press", "tourism", "garden", "society", "guide", "council", "reader", "other")
 EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$", re.I)
 JUNK = re.compile(r"example\.|beispiel|domein\.nl|przyklad|xxxxx|legalmail|^pec\.|@pec\.|"
                   r"abbonament|publicid|pubblicit|contabilid|rrhh|assinatur|suscrip|"
@@ -48,9 +48,19 @@ NEWS = re.compile(r"zeitung|krant|dagblad|courant|news|nieuws|gazette|times|post
                   r"herald|press|diario|giornale|corriere|quotidiano|tribune|advertiser|"
                   r"advocate|omroep|rtv|radio|tv|actualidad|report|magazine|nazione|"
                   r"ominho|primabergamo|staradvertiser|infobae|elespanol|telemadrid|beteve|rtbf|voria", re.I)
-GUIDE = re.compile(r"tourism|turism|welcome|bonita|untapped|bonjour|visit|guide|getlisbon", re.I)
-COUNCIL = re.compile(r"\.gov|gemeente|comune|ayuntamiento|ajuntament|stadt-|stadt\.|"
-                     r"municip|council|\.gv\.|overheid|ville-|city\.|regione|junta", re.I)
+# Official tourism sites (Hidde, 2026-10-20: a new group; a visit-the-city site
+# links to free local resources, which a register or a ministry never does).
+TOURISM = re.compile(r"\bvisit[a-z-]*\.|tourism|turism|tourisme|toerisme|\bvvv\b|turisme|"
+                     r"office-de-tourisme|tourist|fremdenverkehr|visitor", re.I)
+GUIDE = re.compile(r"welcome|bonita|untapped|bonjour|guide|getlisbon", re.I)
+# Registers, ministries and regional governments are council, not source
+# (2026-10-20: zero of 29 source mails to them answered, and none would link;
+# the source ask is for sites a person runs).
+COUNCIL = re.compile(r"\.gov|\.gob\.|\.gouv\.|gemeente|comune|ayuntamiento|ajuntament|stadt-|stadt\.|"
+                     r"municip|council|\.gv\.|overheid|ville-|city\.|regione|junta|jcyl\.es|navarra\.es|"
+                     r"\.ge\.ch|\.vd\.ch|\.zh\.ch|\.bs\.ch|kanton|canton|landkreis|bezirk|regierung|"
+                     r"ministerio|ministero|ministry|minist[eè]re|bund\.de|\.land\.|landesamt|"
+                     r"generalitat|provincia|diputaci|medioambiente|naturschutz|lubw|forst", re.I)
 
 
 def load(path, default):
@@ -78,10 +88,12 @@ def guess_segment(c):
         return "council"
     if NEWS.search(blob):
         return "press"
-    if GUIDE.search(blob):
-        return "guide"
     if COUNCIL.search(blob):
         return "council"
+    if TOURISM.search(blob):
+        return "tourism"
+    if GUIDE.search(blob):
+        return "guide"
     if c.get("_from") == "source":
         return "source"
     return "other"
@@ -161,8 +173,16 @@ def build():
     for e, r in db.items():
         prev = old.get(e, {})
         for k in MANUAL:
+            # A segment survives a rebuild only when a person set it (--set
+            # marks segment_manual); otherwise the regexes decide afresh, so a
+            # rule change (2026-10-20: registers are council, tourism is a
+            # group) reaches every address instead of only new ones.
+            if k == "segment" and not prev.get("segment_manual"):
+                continue
             if k in prev:
                 r[k] = prev[k]
+        if prev.get("segment_manual"):
+            r["segment_manual"] = True
         r["segment"] = r.get("segment") or r.pop("_seg", "other")
         r.pop("_seg", None)
         r["language"] = lang_of(r)
@@ -250,6 +270,8 @@ def main():
             if k not in MANUAL:
                 print(f"{k}: only {', '.join(MANUAL)} are set by hand"); return 1
             doc["contacts"][e][k] = v
+            if k == "segment":
+                doc["contacts"][e]["segment_manual"] = True
         json.dump(doc, open(DB, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         return 0
     doc = build() if (a.build or not os.path.exists(DB)) else load(DB, {})

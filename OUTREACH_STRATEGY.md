@@ -40,8 +40,9 @@ Feeders, all code, almost no tokens:
 
 | Group | Who | The ask | Per day |
 |---|---|---|---|
-| source | sites that our tree pages cite | "Our page on <tree> uses yours as a source, with a link; a mention would help these trees get noticed" plus a tree question | 10 |
-| press | local and regional desks | the city's most surprising sourced tree fact, then the app as news, photos offered | 3, after the round 1 and 2 readout on 10-21 |
+| source | sites that our tree pages cite, **and only sites a person runs** (blogs, societies, local history, tree enthusiasts; since 2026-10-20 registers, ministries and regional governments are classed council: zero of 29 answered and none would link) | "Our page on <tree> uses yours as a source, with a link; a mention would help these trees get noticed" plus a tree question | 10 |
+| press | local and regional desks, **regional before big-city, focus countries, roster cities first** (what answered: Brabants Dagblad, Omrop Fryslân; what did not: the capitals' desks) | the city's most surprising sourced tree fact, then the app as news, photos offered | 3, after the round 1 and 2 readout on 10-21 |
+| tourism | official visit-the-city sites of roster cities (new 2026-10-20, Hidde: "start doing all this"); scripts/tourism_sites.py feeds it | our map of the city's old trees as a free resource for their parks or green page; one tree named | 2 |
 | guide | city guides and walking blogs | our map of the city's old trees as a resource for their parks article | 2 |
 | society, garden | tree groups, friends-of groups, gardens that own trees | local knowledge: which tree is missing, what did we get wrong | 2 |
 | reader | people who sent us a tree or photo | the ambassador invitation for their city (ambassador.py --invite-scan) | as they come |
