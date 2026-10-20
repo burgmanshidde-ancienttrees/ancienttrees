@@ -1425,22 +1425,35 @@ enum MapLayers {
         let source = MLNShapeSource(identifier: st.liveSourceID, url: file, options: [:])
         style.addSource(source)
         addTreeLayers(on: style, source: source, clustered: clustered)
-        retireWhenDrawn(source, gen: st.gen, on: style, expecting: !features.isEmpty, tries: 0)
+        retireWhenDrawn(st.liveSourceID, gen: st.gen, on: style, expecting: !features.isEmpty, tries: 0)
     }
 
     /// Takes the previous pin layers away once `source` holds its points.
     /// Only the newest redraw's check acts; an older one stops when a newer
     /// generation exists, because that one's check will clear everything.
-    private static func retireWhenDrawn(_ source: MLNShapeSource, gen: Int, on style: MLNStyle,
-                                        expecting: Bool, tries: Int) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak style, weak source] in
+    ///
+    /// BY NAME, asked of the style each time, never a weak capture of the
+    /// source object (Hidde, 2026-10-20, bubbles stacked on bubbles at
+    /// Leusden). The style keeps the source but not the Swift object made for
+    /// it, so the weak reference was already nil on the first check, the
+    /// closure returned, and no old set of pins was ever taken away: every
+    /// zoom level left its bubbles on the map under the next one's.
+    private static func retireWhenDrawn(_ sourceID: String, gen: Int, on style: MLNStyle,
+                                        expecting: Bool, tries: Int, settled: Bool = false) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + (settled ? 0.3 : 0.05)) { [weak style] in
             MainActor.assumeIsolated {
-                guard let style, let source else { return }
+                guard let style else { return }
                 let st = state(for: style)
                 guard st.gen == gen else { return }
-                let drawn = !expecting || !source.features(matching: nil).isEmpty
-                if !drawn && tries < 20 {
-                    retireWhenDrawn(source, gen: gen, on: style, expecting: expecting, tries: tries + 1)
+                if !settled {
+                    let source = style.source(withIdentifier: sourceID) as? MLNShapeSource
+                    let drawn = !expecting || !(source?.features(matching: nil).isEmpty ?? true)
+                    // Loaded is not yet painted: MapLibre fades new symbols in
+                    // over 0.3 s, so the old set waits that long, or the map
+                    // shows only half-faded pins in between (seen in the
+                    // simulator, 2026-10-20).
+                    retireWhenDrawn(sourceID, gen: gen, on: style, expecting: expecting,
+                                    tries: tries + 1, settled: drawn || tries >= 20)
                     return
                 }
                 for r in st.retired {
@@ -1512,14 +1525,82 @@ enum MapLayers {
     /// a simulator, a style or a single pixel.
     nonisolated static func groups(of coords: [CLLocationCoordinate2D],
                                    cell: Double) -> [[Int]] {
-        var cells: [Int64: [Int]] = [:]
-        for (i, c) in coords.enumerated() {
-            let x = (c.longitude + 180.0) / 360.0
+        piles(of: coords, cell: cell).map(\.members)
+    }
+
+    /// The groups, each with the spot its bubble is drawn on.
+    ///
+    /// NO TWO PILES CLOSER THAN A CELL (Hidde, 2026-10-20, a screenshot of
+    /// Soest and Leusden: "er gaat een hoop mis met de pinnen"). This used to
+    /// be a fixed grid, one pile per cell, and a grid only answers whether two
+    /// trees share a cell, never whether two pins touch. Trees either side of
+    /// a cell boundary became two piles whose bubbles stood a few points
+    /// apart: a 9 over a 10 at Leusden, a 5 with two more rings showing round
+    /// its edge at Baarn, two single pins half on top of each other.
+    ///
+    /// Now it is the distance rule MapKit and supercluster use, run until it
+    /// holds: anything within a cell of a pile joins it, the pile moves to its
+    /// members' centre, and passes repeat until no two piles are closer than a
+    /// cell. That last part is what the grid could never promise. Distances in
+    /// the same normalised web mercator as before, and the spot is the mean in
+    /// mercator, converted back, so what is measured is what is drawn.
+    nonisolated static func piles(of coords: [CLLocationCoordinate2D],
+                                  cell: Double) -> [(members: [Int], centre: CLLocationCoordinate2D)] {
+        struct Pile { var x: Double; var y: Double; var members: [Int] }
+        var piles: [Pile] = coords.enumerated().map { i, c in
             let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
-            let y = (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0
-            cells[cellKey(x: x, y: y, cell: cell), default: []].append(i)
+            return Pile(x: (c.longitude + 180.0) / 360.0,
+                        y: (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0,
+                        members: [i])
         }
-        return Array(cells.values)
+        let r2 = cell * cell
+        var merged = true
+        while merged && piles.count > 1 {
+            merged = false
+            // A grid only to FIND neighbours: anything within a cell of a pile
+            // lies in its own cell or one of the eight round it.
+            var buckets: [Int64: [Int]] = [:]
+            for (i, p) in piles.enumerated() {
+                buckets[cellKey(x: p.x, y: p.y, cell: cell), default: []].append(i)
+            }
+            // The biggest piles take their neighbours first, so a city's pile
+            // swallows the stray tree beside it rather than the other way round.
+            let order = piles.indices.sorted {
+                piles[$0].members.count != piles[$1].members.count
+                    ? piles[$0].members.count > piles[$1].members.count
+                    : piles[$0].members[0] < piles[$1].members[0]
+            }
+            var taken = [Bool](repeating: false, count: piles.count)
+            var next: [Pile] = []
+            for i in order where !taken[i] {
+                taken[i] = true
+                var p = piles[i]
+                let cx = Int64(floor(p.x / cell)), cy = Int64(floor(p.y / cell))
+                var sx = p.x * Double(p.members.count), sy = p.y * Double(p.members.count)
+                for dx in -1...1 {
+                    for dy in -1...1 {
+                        for j in buckets[((cx + Int64(dx)) << 32) | (cy + Int64(dy))] ?? [] where !taken[j] {
+                            let q = piles[j]
+                            let ddx = q.x - piles[i].x, ddy = q.y - piles[i].y
+                            guard ddx * ddx + ddy * ddy < r2 else { continue }
+                            taken[j] = true
+                            merged = true
+                            sx += q.x * Double(q.members.count)
+                            sy += q.y * Double(q.members.count)
+                            p.members += q.members
+                        }
+                    }
+                }
+                p.x = sx / Double(p.members.count)
+                p.y = sy / Double(p.members.count)
+                next.append(p)
+            }
+            piles = next
+        }
+        return piles.map { p in
+            let lat = atan(sinh(.pi * (1.0 - 2.0 * p.y))) * 180.0 / .pi
+            return (p.members.sorted(), CLLocationCoordinate2D(latitude: lat, longitude: p.x * 360.0 - 180.0))
+        }
     }
 
     /// OUR OWN CLUSTERING, 2026-08-24, because MapLibre's does not work here.
@@ -1588,8 +1669,8 @@ enum MapLayers {
         let worldPoints = 512.0 * pow(2.0, zoom)
         let cell = clusterCellPoints / worldPoints
         var out: [MLNPointFeature] = []
-        for indices in groups(of: all.map(\.coordinate), cell: cell) {
-            let group = indices.map { all[$0] }
+        for pile in piles(of: all.map(\.coordinate), cell: cell) {
+            let group = pile.members.map { all[$0] }
             if group.count == 1 {
                 out.append(group[0])
                 continue
@@ -1604,13 +1685,7 @@ enum MapLayers {
                 style.setImage(clusterPin(count: shown), forName: icon)
             }
             let bubble = MLNPointFeature()
-            var lonSum = 0.0, latSum = 0.0
-            for g in group {
-                lonSum += g.coordinate.longitude
-                latSum += g.coordinate.latitude
-            }
-            bubble.coordinate = .init(latitude: latSum / Double(group.count),
-                                      longitude: lonSum / Double(group.count))
+            bubble.coordinate = pile.centre
             // The SAME keys as a leaf, every one of them. A feature carrying
             // a subset of the others' properties made the whole source load as
             // empty: 974 features in, zero out, no error. Measured 2026-08-24
@@ -1780,20 +1855,14 @@ enum MapLayers {
         let worldPoints = 512.0 * pow(2.0, st.lastClusterZoom)
         let cell = clusterCellPoints / worldPoints
         let coords = (st.leaves + st.mine).map(\.coordinate)
-        // A bubble is drawn at its group's mean, so the nearest mean is it.
-        // Matching on the cell the tap fell in would be wrong at low zoom: we
-        // average LATITUDE while the grid divides MERCATOR y, and those two
-        // part company as cells get tall.
+        // A bubble is drawn at its pile's centre, so the nearest centre is it.
         var best: [CLLocationCoordinate2D] = []
         var bestDistance = Double.greatestFiniteMagnitude
-        for indices in groups(of: coords, cell: cell) where indices.count > 1 {
-            let group = indices.map { coords[$0] }
-            var lat = 0.0, lon = 0.0
-            for c in group { lat += c.latitude; lon += c.longitude }
-            let dLat = lat / Double(group.count) - coordinate.latitude
-            let dLon = lon / Double(group.count) - coordinate.longitude
+        for pile in piles(of: coords, cell: cell) where pile.members.count > 1 {
+            let dLat = pile.centre.latitude - coordinate.latitude
+            let dLon = pile.centre.longitude - coordinate.longitude
             let d = dLat * dLat + dLon * dLon
-            if d < bestDistance { bestDistance = d; best = group }
+            if d < bestDistance { bestDistance = d; best = pile.members.map { coords[$0] } }
         }
         return best
     }
