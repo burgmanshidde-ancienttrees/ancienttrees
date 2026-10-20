@@ -2,9 +2,9 @@
   "city": "Washington DC",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The sixteen below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Ten sit on or near the Mall and Capitol grounds, one walk apart; all sixteen are free.",
+  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The twenty below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Ten sit on or near the Mall and Capitol grounds, one walk apart; a few lie across the line in Virginia and Maryland.",
   "meta_description": "Washington DC's remarkable trees keep federal paperwork: the two original 1912 Tidal Basin cherries, a bur oak at the Grant Memorial, and more, mapped.",
-  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and fourteen more remarkable trees nearby.",
+  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and nineteen more remarkable trees nearby.",
   "question_answer": "The oldest tree on our Washington map is the Travilah Oak, a white oak of more than 330 years in Potomac, Maryland, a day trip out of the city. The oldest documented tree in central Washington DC is the Grant Memorial Bur Oak in Union Square, at the foot of the Capitol, which predates the memorial landscape laid out around it. The city's biggest tree, and possibly its oldest overall, is the champion chestnut oak in Battery Kemble Park.",
   "question_context": "Age and documentation are different things in Washington, and the distinction shapes this whole list. Most cities on this site guess at their oldest tree from girth and legend; Washington can often simply look it up. The Architect of the Capitol has recorded plantings on the Capitol grounds since the Olmsted landscape was laid out, which is how the Grant Memorial Bur Oak's seniority over its own memorial is a matter of record rather than estimate. The National Park Service goes further and keeps a formal register of witness trees, individuals that stood through documented history, from the mulberry that predates the Washington Monument's completion to the elm whose cuttings became the disease-resistant Jefferson cultivar planted across the country. Even the champion chestnut oak in Battery Kemble Park, the city's largest tree, carries an official co-champion designation with measurements behind it. None of these trees rivals a European yew for age. What they offer instead is certainty, and for a project built on verification, a 150-year-old tree with a planting ledger can be a better tree than a 500-year-old one with a story.",
   "faq": [
@@ -18,7 +18,7 @@
     },
     {
       "q": "Are Washington DC's remarkable trees free to visit?",
-      "a": "All fifteen on this list are free. Ten stand on public federal ground on or near the National Mall, the Capitol grounds and the Tidal Basin. The rest are in the National Arboretum, Battery Kemble Park, Montrose Park, Dumbarton Oaks Park and the grounds of Frederick Douglass's house, none of which charges to walk in."
+      "a": "Almost all of them. Ten stand on public federal ground on or near the National Mall, the Capitol grounds and the Tidal Basin. The National Arboretum, Battery Kemble Park, Montrose Park, Dumbarton Oaks Park, Farragut Square and the grounds of Frederick Douglass's house charge nothing to walk in, and Arlington House is free inside a cemetery with its own entry procedure. Tudor Place's garden asks a suggested donation."
     },
     {
       "q": "When should I visit the Tidal Basin cherries?",
@@ -624,6 +624,189 @@
       "location_precision": "confirmed",
       "girth_cm": 582,
       "how_to_recognise": "You can recognise it by the fence, patio and floodlights around its trunk, 5.82 metres round. It stands in the forecourt of the Potomac Oak Shopping Center, at the corner of Travilah Road and Glen Road."
+    },
+    {
+      "id": "wdc_018",
+      "name": "The Tudor Place Tulip Poplar",
+      "species": "Tulip Tree (Liriodendron tulipifera)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 300,
+      "age_basis": "derived",
+      "location": {
+        "address": "Tudor Place, 1644 31st Street NW, Washington, DC 20007 (southeast corner of the south lawn)",
+        "latitude": 38.91103,
+        "longitude": -77.06271,
+        "neighbourhood": "Georgetown"
+      },
+      "story": "This tulip poplar was a seedling when the city of Washington was founded in 1790, and it is one of only two trees left from the original Tudor Place grounds. The other is an American holly.\n\nThat date comes from Tudor Place itself, so the age is worked out from it rather than counted in rings: something over two hundred years, and we keep the band wide, up to three hundred. The National Park Service recorded the tree for its witness tree program as survey DC-3 and called it likely among the oldest tulip poplars in Washington. The trunk measured 60.9 inches across at chest height, about 4.85 metres round, and the estate gives its height as more than 100 feet.\n\nThe register ties it to the Peter family and the estate they held on the Georgetown heights. It has also outlasted the estate's Great White Oak, which fell in 2019, and that leaves this as the great old tree of the grounds.\n\nThe newest dated record of it is the 2018 survey. The garden's own pages still show daffodils flowering on the South Lawn under the Tulip Poplar, but carry no date, so if you have stood under it recently, tell us.\n\nThe garden is open for self-guided visits for a suggested donation, with no booking needed for the garden alone. Its own pages disagree about which days it opens, so check before you go. Montrose Park and the Dumbarton Oaks beeches are a ten minute walk away.",
+      "best_time": {
+        "months": [
+          10
+        ],
+        "kind": "autumn colour",
+        "label": "October, when the crown over the south lawn turns clear yellow"
+      },
+      "verified_sources": [
+        "https://tclf.org/sites/default/files/microsites/everytree/tulip_poplar.html",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1029/data/dc1029data.pdf",
+        "https://tudorplace.org/garden/"
+      ],
+      "access": "Tudor Place garden is open for self-guided visits (Wed to Sat 10 to 4, Sun noon to 4 per the garden page; a banner says Tue to Sat, so confirm); advance registration not required for garden-only visits, suggested donation, no entry after 3:30 pm. Ticket prices not published on the fetched page.",
+      "transport": "About 20 to 25 minute walk from Dupont Circle Metro (Red line), or Georgetown buses; 10 minute walk from the Montrose Park and Dumbarton Oaks Park trees (wdc_011, wdc_014).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Tudor Place south lawn",
+        "radius_m": 50
+      },
+      "girth_cm": 485,
+      "height_m": 30,
+      "official_register": {
+        "name": "NPS National Capital Region Witness Tree Protection Program / HALS DC-3 (Library of Congress)",
+        "url": "https://www.loc.gov/item/dc1029"
+      },
+      "how_to_recognise": "You can recognise it by the trunk, about 4.85 metres round, under a crown more than 30 metres tall. It stands at the southeast corner of the south lawn at Tudor Place.",
+      "verify_notes": "- Register: NPS NCR Witness Tree layer (federal, updated 2018) record HALS DC-3, location 'Tudor Place, 1644 31st Street NW, southeast corner of south lawn'; recorded DBH 60.9 in (about 155 cm diameter; girth about 485 cm worked from it). HALS says 'likely amongst the oldest tulip poplars in Washington, D.C.', tied to the Peter family and the Tudor Place estate. Register coordinate 38.91103,-77.06271 is the lawn corner, not proven on one crown: approximate.\n- Second source, Tudor Place / The Cultural Landscape Foundation page (fetched): 'was a seedling when the city was founded in 1790'; 'more than 100 feet tall'; trunk 'diameter of 60 inches at breast height'; 'one of only two trees original to the site, along with an American holly'. Agrees with the register DBH. Page is undated.\n- Age: derived from the seedling-in-1790 statement, so about 230 years; kept broad (200 to 300).\n- Alive: HALS 2018 record plus Tudor Place's current garden pages (daffodils under the Tulip Poplar on the South Lawn caption, undated). No dated 2024 or later observation fetched; flagged thin. lifecheck not run.\n- Search-summary only (not fetched, do not use): 2002 'Millennium Landmark Tree' of the District of Columbia from America the Beautiful Fund; trunk ~20 ft round.\n- Context: Tudor Place's Great White Oak fell in 2019 (own site; blocked in leads), so this is now the estate's remaining champion trunk.\n- Cluster: Georgetown walk with Montrose Park tulip poplar (wdc_011) and Dumbarton Oaks beeches (wdc_014), under 1 km."
+    },
+    {
+      "id": "wdc_019",
+      "name": "The Farragut Square Pagoda Tree",
+      "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+      "age_estimate": "over 140 years",
+      "age_min": 140,
+      "age_max": 200,
+      "age_basis": "source",
+      "location": {
+        "address": "Farragut Square, 17th Street NW between I and K Streets (east side of the square), Washington, DC",
+        "latitude": 38.90193,
+        "longitude": -77.03876,
+        "neighbourhood": "Downtown / Golden Triangle"
+      },
+      "story": "The National Park Service dates two trees in Farragut Square to before 1886: a ginkgo and a sophora. The ginkgo was cut down by mistake in 2013. The sophora, a Japanese pagoda tree, is the one the Park Service recorded on the square's east side, two minutes on foot from two Metro stations.\n\nThat date makes it at least about 140 years old, and it is a floor, not a birthday. Nobody recorded when this tree was planted. The square itself was laid out over the decades before 1886, which tells you about the square and nothing certain about the tree.\n\nIts survey record, DC-5 in the Park Service's witness tree program, calls it a character defining feature of Farragut Square and ties it to the square's change from an undeveloped tract into a small urban park, Washington's first memorial to a naval hero. The trunk measured 49.5 inches across at chest height, close to four metres round.\n\nThat record dates from 2018. The newest account of the square's trees, from Casey Trees in December 2024, counts 26 of them there and tells the story of the lost ginkgo, but does not mention this one. We have no dated photograph of it since, so if you walk through and find it standing, tell us.\n\nJapanese pagoda trees flower late, in August, with cream flowers at a time when almost nothing else in a city is in bloom.",
+      "best_time": {
+        "months": [
+          8
+        ],
+        "kind": "flowers",
+        "label": "August, when cream flowers open over 17th Street"
+      },
+      "verified_sources": [
+        "https://nps.gov/articles/600227.htm",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1000/dc1031/data/dc1031data.pdf",
+        "https://caseytrees.org/2024/12/reviving-farragut-square-a-legacy-of-trees-returns/"
+      ],
+      "access": "Free, open public square (NPS reservation) in the downtown street grid; no hours.",
+      "transport": "Farragut North and Farragut West Metro stations are each about a 2 minute walk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Farragut Square",
+        "radius_m": 50
+      },
+      "girth_cm": 395,
+      "official_register": {
+        "name": "NPS National Capital Region Witness Tree Protection Program / HALS DC-5 (Library of Congress)",
+        "url": "https://www.loc.gov/item/dc1031"
+      },
+      "how_to_recognise": "You can recognise it by the trunk, close to four metres round, and in August by its cream flowers. It stands on the east side of Farragut Square, along 17th Street NW between I and K Streets.",
+      "verify_notes": "- Register: NPS NCR Witness Tree layer (federal, 2018) record HALS DC-5, 'east side of Farragut Square, 17th Street NW between I and K streets'; DBH 49.5 in (about 126 cm diameter; girth about 395 cm worked from it). HALS significance: 'a character defining feature of Farragut Square ... longevity ... association with the transformation of an undeveloped tract into a small urban park, Washington D.C.'s first memorial to a naval hero'.\n- NPS page nps.gov/articles/600227 (fetched): 'Two trees, a gingko and a sophora, date from before 1886.' It does not say 'Japanese pagoda' but the register ties sophora to this tree. Same agency as the register, so this is one-source (US bar), not two.\n- Age: pre-1886 gives at least about 140 years; no planting date for this tree. Range kept broad. The Square was laid out in the 1860s to 1880s; do not bridge that to the tree.\n- Alive: Casey Trees (Dec 2024) says the square held 26 trees in Nov 2024 and describes the 2013 ginkgo loss but is silent on the pagoda tree; HALS record 2018 only. Flagged: alive thin, no dated photo of this tree fetched.\n- The companion historic Farragut ginkgo was cut down by mistake in 2013 (Casey Trees article names the loss; the 102 ft / 142 in figures are search-summary only). Do not list the ginkgo.\n- Which trunk: pin is the register coordinate on the east side of the park; square is a small named site taken in at a glance, no individual crown confirmed."
+    },
+    {
+      "id": "wdc_020",
+      "name": "The Arlington House Deodar Cedar",
+      "species": "Himalayan Cedar (Cedrus deodara)",
+      "age_estimate": "about 150 years",
+      "age_min": 140,
+      "age_max": 160,
+      "age_basis": "source",
+      "location": {
+        "address": "Arlington House, The Robert E. Lee Memorial, west service court off Lee Drive, Arlington National Cemetery, Arlington, Virginia",
+        "latitude": 38.88108,
+        "longitude": -77.07287,
+        "neighbourhood": "Arlington National Cemetery (Arlington, VA, across the Potomac from DC)"
+      },
+      "story": "This cedar was still a seedling in a nursery across the river the last time Mary Lee visited Arlington House. It is not a Lee tree, and its own paperwork says so.\n\nIn 1873, as the grounds were remade after the Civil War, the Quartermaster General's Office hired a landscape gardener named David H. Rhodes. The following year Rhodes planted two deodar cedars in circular beds behind the house. The Park Service's newsletter for the site finishes the story in four words: we have one left. That survivor is this tree, planted in 1874 and so about 150 years old by a documented planting, not an estimate.\n\nA Himalayan cedar behind a Virginia mansion is an exotic, and the site once considered taking it out. The park chose instead to leave it alone and let it live out its life. The witness tree survey, VA-10, recorded it in 2018 for its size, its longevity and its part in the post-Civil War development of the grounds. The trunk measured 54.5 inches across at chest height, about 4.35 metres round.\n\nThat 2018 record is the latest dated sighting we have, so if you see it, tell us.\n\nIt stands beside the house on its west side, in Virginia rather than Washington proper. Arlington House is free and open daily; the cemetery around it has its own entry procedure. Arlington Cemetery station on the Blue line is about 15 minutes by Metro from downtown, then the walk up through the cemetery.",
+      "verified_sources": [
+        "https://www.npshistory.com/publications/arho/newsletter/v6n6.pdf",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/va/va2000/va2023/data/va2023data.pdf",
+        "https://www.nps.gov/arho/planyourvisit/index.htm"
+      ],
+      "access": "Arlington House is free, buildings open daily 9:00 to 4:30 (NPS), inside Arlington National Cemetery, which has its own entry procedure at arlingtoncemetery.mil; the tree stands in the west service court beside the house. Whether the service court itself is open to walk into was not read from a source: state 'beside the house' only.",
+      "transport": "Arlington National Cemetery station (Metro Blue line) is the cemetery entrance; about 15 minutes by Metro from downtown DC plus the walk up through the cemetery (walk not timed from a source).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Arlington House west service court",
+        "radius_m": 50
+      },
+      "girth_cm": 435,
+      "official_register": {
+        "name": "NPS National Capital Region Witness Tree Protection Program / HALS VA-10 (Library of Congress)",
+        "url": "https://www.loc.gov/item/va2023"
+      },
+      "how_to_recognise": "You can recognise it by the evergreen needles and a trunk about 4.35 metres round, the one survivor of a planted pair. It stands beside Arlington House on its west side, in the service court off Lee Drive.",
+      "verify_notes": "- Register: NPS NCR Witness Tree layer (federal, 2018) HALS VA-10, 'Arlington House, west service court, Lee Drive'; DBH 54.5 in (about 138 cm diameter, girth about 435 cm worked from it). HALS: significant for 'large size, longevity and association with the post-Civil War development of the grounds'. Register coordinate is the house court; one crown not proven: approximate.\n- Age: documented planting for this specimen. NPS Arlington House newsletter v6n6 (site manager Kendell Thompson, fetched, undated issue, around 2005): in 1873 the Quartermaster General's Office hired landscape gardener David H. Rhodes; 'The following year Rhodes planted two Cedrus deodara, Deodar Cedars, in circular planting beds behind the House. We have one left.' So 1874, about 150 years. The newsletter says when Mary Lee last visited the tree was still a seedling in a nursery across the river: i.e. it is not a Lee-era tree. Newsletter presents it as an exotic that was considered for removal; park chose to let it die on its own.\n- Which of the two: HALS names the survivor; the newsletter says one left. Same agency for both, so this is one-source (US bar), flagged.\n- Alive: no dated observation after the 2018 HALS record found (search for 2024 or 2025 photos returned nothing relevant). Flagged: alive thin.\n- Not in Washington DC proper: Virginia, but 15 minutes by Metro. Do not claim it is a Mall-area walk.\n- Search-summary only (not used): HALS record carries National Register number 14000146."
+    },
+    {
+      "id": "wdc_021",
+      "name": "The War of 1812 Willow Oak",
+      "species": "Willow Oak (Quercus phellos)",
+      "age_estimate": "over 200 years",
+      "age_min": 200,
+      "age_max": 300,
+      "age_basis": "source",
+      "location": {
+        "address": "Oxon Cove Park & Oxon Hill Farm, in the field near the parking lot (Bald Eagle Road entrance), 6411 Oxon Hill Road, Oxon Hill, Maryland 20745",
+        "latitude": 38.80249,
+        "longitude": -77.00367,
+        "neighbourhood": "Oxon Hill (Prince George's County, MD, just across the DC line)"
+      },
+      "story": "Mary Debutts, of Mount Welby, the house Dr Samuel Debutts built on this land, wrote in 1815 of the Battle of Bladensburg: \"we heard every fire. Our house shook.\" She also saw the Capitol burning. A forestry blog says this willow oak was standing that night too. That is the blog's claim, and the honest version is narrower.\n\nThe National Park Service registered the tree in its witness tree program as survey MD-13 and says it was likely planted in at least the early nineteenth century. The Forest Foundation, writing in May 2023, believes it is at least 200 years old. Neither has a planting record, and neither date reaches back to August 1814 with any certainty.\n\nWhat the register does tie it to is the land. Oxon Hill Manor, the Godding Croft farms and the long working life of Oxon Hill Farm, now run by the Park Service, are all part of its story. The trunk measured 56.5 inches across at chest height, about 4.5 metres round.\n\nIt stands alone in a grassy field by the parking lot, with picnic tables near it and a view of Washington, and the 2023 visit found it still standing. The farm is open every day from 9:00 to 4:30.\n\nThis is Maryland, a short drive south of Anacostia, and a car is the practical way to reach it. Two hundred years old or not, it is a large oak with the open field to itself.",
+      "verified_sources": [
+        "https://www.forestfoundation.org/why-we-do-it/family-forest-blog/witnessing-history-from-a-trees-perspective/",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1700/md1753/data/md1753data.pdf",
+        "https://www.nps.gov/oxhi/planyourvisit/index.htm"
+      ],
+      "access": "NPS site, open seven days 9:00 to 4:30 (NPS plan-your-visit page); the tree stands in an open field by the parking lot with picnic tables. Fee not stated on the fetched page (check before quoting).",
+      "transport": "Car is the practical way (Oxon Hill, a short drive south of Anacostia); no transit route was checked.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Oxon Hill Farm parking-lot field",
+        "radius_m": 50
+      },
+      "girth_cm": 451,
+      "official_register": {
+        "name": "NPS National Capital Region Witness Tree Protection Program / HALS MD-13 (Library of Congress)",
+        "url": "https://www.loc.gov/item/md1753"
+      },
+      "how_to_recognise": "You can recognise it as the one big oak standing alone in the grassy field, with picnic tables near it. It stands beside the parking lot at Oxon Hill Farm, by the Bald Eagle Road entrance.",
+      "verify_notes": "- Register: NPS NCR Witness Tree layer (federal, 2018) HALS MD-13 'Oxon Cove Park & Oxon Hill Farm, near parking lot'; DBH 56.5 in (about 143 cm diameter; girth about 451 cm worked from it). HALS: 'likely planted in at least the early nineteenth century', a living witness to the War of 1812, the Godding Croft farms and the evolution of Oxon Hill Farm.\n- Independent source: Forest Foundation family forest blog, 29 May 2023 (fetched): 'now believed to be at least 200 years old'; stands alone in a grassy field near the parking lot with picnic tables and a view of Washington; 'still stands'. This also gives a dated alive confirmation (2023).\n- Context from the register text: land was Oxon Hill Manor (Addison family); Dr Samuel Debutts built Mount Welby; Mary Debutts wrote in 1815 that at Bladensburg 'we heard every fire. Our house shook' and saw the Capitol burning. The blog ties the tree to the night of 24 Aug 1814; the register says only that it likely dates to at least the early nineteenth century. Do not claim the tree was standing in 1814 as a fact; age is 'at least about 200 years'.\n- Pin: register coordinate (38.80249,-77.00367) near the car park; the field has one big oak but the crown was not confirmed against imagery: approximate, small named site.\n- Companion NPS register items on the same farm: boxwoods 150 to 250 years old east of the farmhouse (HALS MD-20, 38.80209,-77.00870), a red maple (no photo, 38.80222,-77.00903). Boxwood is a shrub group, not a collectible tree; recorded as lead only.\n- Outside DC (Maryland); within the district's day-trip range by car."
     }
   ]
 }
