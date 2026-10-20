@@ -1,0 +1,66 @@
+[
+  {
+    "id": "hst_006",
+    "name": "Tausendjährige Linde (Thousand-year Linden), Bad Ischl",
+    "species": "Large-leaved Lime (Tilia platyphyllos)",
+    "age_estimate": "roughly 400 to 500 years",
+    "age_min": 400,
+    "age_max": 500,
+    "age_basis": "source",
+    "girth_cm": 545,
+    "height_m": 20,
+    "location": {
+      "address": "Right bank of the Traun, about 40 m before the old Traun bridge, south of the Lindenvilla, Griesgasse 4, 4820 Bad Ischl",
+      "latitude": 47.709517,
+      "longitude": 13.620289,
+      "neighbourhood": "Bad Ischl, Griesgasse"
+    },
+    "verified_sources": [
+      "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd137",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Gmunden",
+      "https://www.inaturalist.org/observations/381042935"
+    ],
+    "official_register": {
+      "name": "Naturschutzbuch Oberösterreich, Naturdenkmal nd137",
+      "url": "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd137"
+    },
+    "access": "Free, on the public riverbank beside the old Traun bridge in the town centre of Bad Ischl; no entry needed.",
+    "transport": "Bad Ischl town centre, a few minutes' walk from the old Traun bridge; Bad Ischl is reached from Hallstatt by the Salzkammergut railway/bus (journey time not checked this pass).",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "The name says a thousand years. The register that protects it says 400 to 500.\n\nThis large-leaved lime stands on the right bank of the Traun in Bad Ischl, about 40 metres before the old Traun bridge, south of a house the official file uses as its landmark: the Lindenvilla. Whether the villa took its name from the tree, no source says.\n\nWhen Upper Austria made it a natural monument on 18 December 1980, the trunk measured 5.45 metres round at a metre off the ground, the crown spread 14 metres and the top stood about 20 metres up. Those are 1980 numbers and the tree has grown since; nobody has published a newer count. The age came from the same file, an estimate rather than a ring count. If even the low end holds, the lime was already well over two centuries old when Emperor Franz Joseph began spending his summers in Bad Ischl. Legend rounded it up to a millennium. The state did not.\n\nThe most recent sign of it is a citizen-science record from July 2026 of a large lime about 20 metres from the register's point. That fits, but nobody has confirmed it is this tree. If you stand under it, tell us.\n\nBad Ischl is not Hallstatt. It lies about 20 kilometres north, past Bad Goisern on the Salzkammergut railway, so this tree extends the walk by a train ride rather than joining it.",
+    "how_to_recognise": "You can recognise it by the trunk, 5.45 metres round when measured in 1980, under a crown about 14 metres wide. It stands on the right bank of the Traun, about 40 metres before the old Traun bridge, south of the Lindenvilla.",
+    "best_time": {"months": [6], "kind": "flowers", "label": "June, when the scented pale yellow flowers open and the crown is loud with bees"},
+    "verify_notes": "Register (Land Oberösterreich Naturschutzbuch nd137, protected 1980-12-18) names it 'Tausendjährige Linde', Sommerlinde, with the position given in words: right bank of the Traun, about 40 m before the old Traun bridge, south of the Lindenvilla, Griesgasse 4. The register page itself carries no measurements; the figures come from the de.wikipedia Liste der Naturdenkmäler im Bezirk Gmunden (which reproduces the register text): at designation girth 5.45 m measured at 1 m height, crown diameter 14 m, height 20 m, age estimated 400 to 500 years. So the name says a thousand years but the register's own estimate is 400 to 500; both go to the writer, the name is a legend-level label. Girth is at designation (1980), so it has grown since. Coordinate 47.709517, 13.620289 is the register/Wikipedia coordinate (the Commons photo geotag is the same number, so it is not an independent fix); kept approximate. Alive: iNaturalist observation 381042935 on 2026-07-13 records a Sommerlinde at 47.70938, 13.62011 (about 20 m from the register point, cc-by-nc, needs_id), which supports a large linden still standing there but is not a confirmed ID of this tree; Commons photo from 2015-06-29. Flagged: register-only plus one recent nearby observation. Not the Kirchham 'Tausendjährige Linde' (a different tree in Eisengattern). Commons category: OÖ-Naturdenkmal nd137 1000jährige Linde, Bad Ischl. Bad Ischl is a separate valley town north of Hallstatt, so it extends the walk by about 20 km; the 12 km span of the city is already stretched."
+  },
+  {
+    "id": "hst_007",
+    "name": "Bergulme (Wych Elm) at the forestry office, Gosau",
+    "species": "Wych Elm (Ulmus glabra)",
+    "age_estimate": "not documented",
+    "age_basis": "source",
+    "height_m": 27,
+    "location": {
+      "address": "Opposite the Gemeindeamt Gosau, about 8 m west of the Forstverwaltung building, Gosau",
+      "latitude": 47.585559,
+      "longitude": 13.535276,
+      "neighbourhood": "Gosau village centre"
+    },
+    "verified_sources": [
+      "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd147",
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Gmunden"
+    ],
+    "official_register": {
+      "name": "Naturschutzbuch Oberösterreich, Naturdenkmal nd147",
+      "url": "https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd147"
+    },
+    "access": "Free; stands in the village centre by the municipal office and forestry office, visible from the road (private ground not entered).",
+    "transport": "Gosau village centre; about 9 km from Hallstatt by the regional bus over the Gosau valley (journey time not checked this pass).",
+    "location_precision": "approximate",
+    "location_site": {"name": "Forstverwaltung Gosau, opposite the Gemeindeamt", "radius_m": 30},
+    "curation_status": "flagged",
+    "story": "Upper Austria's list of natural monuments calls this elm one of the largest of a rare species in the province: a wych elm 27 metres tall, standing opposite the village office in Gosau.\n\nThe province protected it on 18 December 1980, the same day as the copper beech on the hill about 80 metres away, and described the spot with a precision most registers never bother with: opposite the Gemeindeamt, about eight metres west of the forestry office building. The file gives a height and nothing else. No girth, no age. Nobody has dated this tree; if you know when it went in, or have put a tape round it, tell us.\n\nThen the honest part. The most recent dated evidence that it still stands is a photograph taken in October 2015. Wych elm is one of the species Dutch elm disease kills, and eleven years is long enough for that to happen without anyone updating a register. We have no report that it has gone, and none that it is still there. If you pass the forestry office, a photograph would settle it.\n\nWhat the register does make easy is finding it. With the beech, it turns Gosau into one stop rather than two: a pair of trees protected on the same winter day, a short walk apart, on the valley road up from Bad Goisern. Look from the road; the register's directions are all you need.",
+    "how_to_recognise": "You can recognise it by its height, 27 metres when protected; the round-crowned copper beech 80 metres off is its neighbour. It stands about eight metres west of the Forstverwaltung building, opposite the Gemeindeamt.",
+    "verify_notes": "Register nd147 (Land Oberösterreich Naturschutzbuch, protected 1980-12-18, parcel 206/4): Bergulme (Ulmus glabra), position 'opposite the Gemeindeamt Gosau, about 8 m west of the Forstverwaltung building'. Wikipedia list (reproducing the register): 27 m tall, one of the largest specimens of this rare species in Upper Austria. No girth or age in either source. Alive: not confirmed recently. lifecheck returned NONE; the only dated evidence is a Commons photograph taken 2015-10-23. Wych elm is exposed to Dutch elm disease, so flagged with 'register only, last seen 2015'. Coordinate is the register/Commons coordinate (same number on the Commons photo, not an independent fix), approximate. The register's own text gives the offset from a named building, which makes the spot findable at a glance. Neighbouring Blutbuche (ND148) is already live as hst_005, about 80 m away, so the two form one stop in Gosau."
+  }
+]

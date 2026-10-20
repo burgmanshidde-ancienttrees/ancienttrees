@@ -8,7 +8,8 @@
         "longitude": 13.535276,
         "note": "Naturdenkmal ND147, Gosau, Bezirk Gmunden"
       },
-      "reason": "Not researched this pass: Gosau sits roughly 9km from Hallstatt centre, at the edge of or outside the day-trip cluster, and this pass kept to the four closest register candidates (three yews plus the nearby Bad Goisern one) per the max-four-candidates rule. Register text: 27m tall, one of the largest of its kind in Upper Austria, protected since 1980-12-18. Source: https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd147 and the Liste der Naturdenkmaeler im Bezirk Gmunden. Worth a look if a future pass covers Gosau, alongside the copper beech and school linden below (all three stand within about 100m of each other near the Gosau forestry office)."
+      "reason": "Not researched this pass: Gosau sits roughly 9km from Hallstatt centre, at the edge of or outside the day-trip cluster, and this pass kept to the four closest register candidates (three yews plus the nearby Bad Goisern one) per the max-four-candidates rule. Register text: 27m tall, one of the largest of its kind in Upper Austria, protected since 1980-12-18. Source: https://e-gov.ooe.gv.at/ndbinternet/NDBInternetGenisysDetail.jsp?mod=NSB&genisysInventarNr=nd147 and the Liste der Naturdenkmaeler im Bezirk Gmunden. Worth a look if a future pass covers Gosau, alongside the copper beech and school linden below (all three stand within about 100m of each other near the Gosau forestry office). [RESOLVED 2026-10-20, delivered as hst_007 flagged, in data/research/hallstatt-verified.json]",
+      "status": "resolved"
     },
     {
       "name": "Blutbuche (copper beech) near the forestry office in Gosau",
@@ -30,6 +31,22 @@
         "note": "Wikidata Q119889409, ~50m southwest of the Evangelical church in Gosau"
       },
       "reason": "Third Gosau candidate, ~800m from the other two; not pursued this pass. Register text (Liste der Naturdenkmaeler im Bezirk Gmunden): planted around 1790, girth 3.7m and height ~21m at designation. Stands next to a school -- per hard rule 10 school grounds need real evidence of genuinely open access before shipping (a public path, weekend opening, or a churchyard-like setting); this one is 50m from a church rather than clearly on school property, but that distinction should be checked properly rather than assumed, so it stays a lead."
+    },
+    {
+      "name": "Schul-Linde Gosau: status check 2026-10-20",
+      "location": {"latitude": 47.582298, "longitude": 13.524591, "note": "gnd403, Wikipedia list row marked Status ehemalig"},
+      "reason": "blocked: the de.wikipedia Liste der Naturdenkmäler im Bezirk Gmunden carries this row as 'ehemalig' (former natural monument, designated 1990-01-17); no source shows it still stands, and the school-grounds access question is also open. Recheck only if a source shows the tree alive.",
+      "status": "blocked"
+    },
+    {
+      "name": "Wikidata Bad Ischl / Reiterndorf lindens (Q119887605, Q119879440, Q119889618) and Rauhgarten beeches (Q119879492)",
+      "location": {"latitude": 47.70296, "longitude": 13.62926, "note": "Upper Austria natural monuments around Bad Ischl, Reiterndorf and Rauhgarten"},
+      "reason": "Not researched this pass (time and the four-candidate limit; Bad Ischl already added via the Tausendjährige Linde). Q119889618 Sterzens Abendsitz has a Commons image. Rauhgarten is a circle of 13 beeches in a park-like area (group, would need one place to stand)."
+    },
+    {
+      "name": "Landauer Linde (47.71714, 13.43661)",
+      "location": {"latitude": 47.71714, "longitude": 13.43661, "note": "salzburg-naturdenkmale register"},
+      "reason": "Not researched: 20 km from the Hallstatt centre in a different valley (Salzburg state), outside the day-trip boundary."
     },
     {
       "name": "Mostbaumallee von Bad Goisern (avenue of cider-pear trees)",
