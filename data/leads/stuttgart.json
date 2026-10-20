@@ -1,195 +1,248 @@
 {
- "leads": [
-  {
-   "candidate": "Speierling im Kräherwald bei Kräherwaldstr. 190 a",
-   "coordinates": [
-    48.79003,
-    9.14863
-   ],
-   "reason": "Official Naturdenkmal (register no. 81110000505, ordinance entry 5/5, Stadtbezirk West, Flurstuck 9546/1), designated 24-06-2003 for rarity (Seltenheit) and landscape character. Re-checked 2026-09-03: still only one source (the register/LUBW steckbrief, restated verbatim by the city ordinance PDF and by de.wikipedia's 'Liste der Naturdenkmale in Stuttgart', which is not independent since it is sourced from the same register). Searched baumkunde.de, komoot highlights (2836920, 2596561, 2661655, all unrelated: a dead Speierling in Bavaria and two generic Kräherwald-forest highlights with no tree content), and Stuttgart forestry-office pages; nothing further found. Two search attempts made per BRIEF_RESEARCH.md's stall rule; stopping here. Still needs a second, independent descriptive source before it can ship.",
-   "lat": 48.79003,
-   "lng": 9.14863,
-   "position_basis": "recovered from the lead's own `coordinates` field (field)"
-  },
-  {
-   "candidate": "Speierling im Kräherwald (plain, without street address)",
-   "coordinates": null,
-   "reason": "A second, separately numbered Naturdenkmal (register no. 81110000208, ordinance entry 2/8, Stadtbezirk Nord, Flurstuck 9546/14, a different Flurstuck and a different Stadtbezirk than the Kräherwaldstr. 190a tree). The Wikipedia/Wikitext infobox gives it the IDENTICAL coordinates to the Kräherwaldstr. 190a tree (48.79003, 9.14863), which cannot be right for two objects in different city districts; this looks like a copy-paste error in the Wikipedia source rather than a real duplicate location. Re-checked 2026-09-03, same wikitext fetch, coordinates still identical to the other Speierling and no independent coordinate found. Needs its own coordinate (e.g. the LUBW map viewer or an on-the-ground source) before it can be verified or folded with the other Speierling."
-  },
-  {
-   "candidate": "Baumgruppe vor Schloss Solitude, the two Bergahorn (sycamore maples)",
-   "coordinates": [
-    48.78743,
-    9.08391
-   ],
-   "reason": "Same official Naturdenkmal group as stu_006 (the ash). Re-checked 2026-09-03: searched baumkunde.de and general web for a Bergahorn/Solitude description; nothing found beyond the register's ash entry. The two accompanying sycamore maples are still not individually measured or described by any source. The ash alone remains well enough documented (baumkunde.de) to ship on its own. If a source is later found describing the maples specifically, they belong to stu_006's entry rather than a new one.",
-   "lat": 48.78743,
-   "lng": 9.08391,
-   "position_basis": "recovered from the lead's own `coordinates` field (field)"
-  },
-  {
-   "candidate": "Schillereiche (Stieleiche bei der Wernhaldenstrasse, Schillerhoehe lookout)",
-   "coordinates": [
-    48.76246,
-    9.18195
-   ],
-   "reason": "Naturdenkmal 81110000403 (de.wikipedia Liste der Naturdenkmale in Stuttgart, LUBW steckbrief; city ordinance 3/8). Planted 1865 by the Verschoenerungsverein Stuttgart in memory of Schiller's first reading of Die Raeuber (per search summaries of vsv-stuttgart.de and LEO-BW; vsv host refused connection and LEO-BW 403, so not seen first-hand). Public lookout above Neue Weinsteige. Commons photo exists (Naturdenkmal Schillereiche, Stuttgart.jpg). Missing for RICH: any girth or height (no source found, steckbrief and ordinance carry none) and first-hand sight of the planting year. Ends rich if a measurement turns up.",
-   "lat": 48.76246,
-   "lng": 9.18195,
-   "position_basis": "Wikipedia ND list infobox coordinate (register-derived)"
-  },
-  {
-   "candidate": "Mammutbaeume Steinkopfstr. 6 and 8 (Naturdenkmal 81110000027 and 81110000402), Wernhalde cluster",
-   "coordinates": [
-    48.7627,
-    9.18475
-   ],
-   "reason": "Two ND giant sequoias beside Wernhaldenpark (about 40 sequoias, publicly walkable, Wilhelma-Saat seed imported 1864 for King Wilhelm I). Same cluster: Schillereiche, Bopserwaldstr. 79 copper beech (81110000408, 48.7647 9.18562) and Bopserwaldstr. 81 sequoia (81110000409, 48.76445 9.18555), roughly 1 km apart, a real walk. Commons photo of Steinkopfstr. 6 (CC BY-SA 4.0, Laserlicht, 2018, geotag 48.762806 9.185289). Missing: no girth or height for any of them in steckbrief, ordinance, Stuttgarter Zeitung 2016 or stadtbaum-stuttgart.de; Bopserwaldstr. trees stand on a residential street, visibility from the pavement unconfirmed. Needs a measurement (Lutz Krueger, Jahreshefte GfN, 'Die aeltesten Mammutbaeume in Wuerttemberg', ojs-jh-gfn.ub.uni-stuttgart.de article 276 is a scanned PDF, no text layer from this runner; a session with OCR may find a Stuttgart table).",
-   "lat": 48.7627,
-   "lng": 9.18475,
-   "position_basis": "Wikipedia ND list infobox coordinate (register-derived)"
-  },
-  {
-   "candidate": "Four Bergmammutbaeume below Schloss Solitude (forest, in a row)",
-   "coordinates": null,
-   "reason": "Stuttgarter Nachrichten 2021-11-28 (Versteckte Schoenheiten): four sequoias in a row in the forest below Schloss Solitude. Search summary of an info board: measured 2003, largest 44.6 m high, 1.39 m breast-height diameter (about 437 cm girth); figure NOT seen on a fetched page, so unusable. Not a Naturdenkmal (only the Baumgruppe vor Schloss Solitude, ash plus maples, is) so no per-tree official register record; no exact coordinate. Cannot end rich.",
-   "lat": null,
-   "lng": null
-  },
-  {
-   "candidate": "Otto-Feucht-Eiche (Stieleiche, Rotwildpark Stuttgart, Glemswald)",
-   "coordinates": [
-    48.767996,
-    9.109265
-   ],
-   "reason": "Strong tree: 7.55 m girth at breast height, 24 m, about 400 years (Rainer Lippert, monumentale-eichen.de, measured 2022, fetched; monumentaltrees.com 7.65 m cross-check not fetched). Also called Christophseiche; ten oaks over 6 m in the reserve (Alte Eiche 7.10 m, Saufang-Eiche 6.80 m, Bernhards-Eiche 6.65 m, Adlereiche 6.55 m). Fails RICH and honesty: stands in the Naturschutzgebiet Rotwildpark (no per-tree register record), a search summary says no footpath leads to it, and a survey notes rotting sapwood; no open licence photo found; access to the exact tree unsettled. Lead with coordinate for a session that can settle paths from OSM.",
-   "lat": 48.767996,
-   "lng": 9.109265,
-   "position_basis": "monumentale-eichen.de page coordinate"
-  },
-  {
-   "candidate": "Wilhelma sequoia grove (Mammutbaum-Hain, tallest 37 m)",
-   "coordinates": null,
-   "reason": "Stuttgarter Zeitung 2016: almost sixty sequoias behind the Wilhelma main entrance, tallest 37 m, girth 4.20 m (Stuttgarter Nachrichten gives 4.7 m circumference for the thickest: conflict, both seen only as article/search text, the NN page 404s now). Paid entry zoo and botanic garden, owner of the ground is the source for access, but no per-tree register record and no coordinate. Cannot end rich.",
-   "lat": null,
-   "lng": null
-  },
-  {
-   "candidate": "Other Stuttgart Naturdenkmal single trees (register list, all unmeasured)",
-   "coordinates": null,
-   "reason": "From de.wikipedia ND list (wikitext fetched 2026-10-13, IDs and coordinates): Mammutbaum Herdweg 72 (81110000201, 48.78743 9.16163), 2 Mammutbaeume Gutbrodstr. 101 (81110000501, 48.78113 9.15450), Mammutbaum Moerikestr. 1 (81110000407, 48.76817 9.16878), Mammutbaum Sonnenbergstr. 39 (81110000404, 48.76834 9.19035), Mammutbaum Heigst-Staffel (81110000405, 48.75883 9.16879), Mammutbaum Mendelssohnstr. 108 (81110001802, 48.74664 9.20699), Stieleiche Bei der Eiche 16 A (81110000902, 48.82969 9.15276), Jahneiche (81110000903, 48.82906 9.15212), Stieleiche Hasenbergsteige (81110004010, 48.76613 9.15665), Winterlinde Mannspergerstr. 144 (81110001805, 48.75086 9.24128), Winterlinde Schillerweg (81110001501, 48.76821 9.26267), Blutbuchen Hoelderlinstr. 1 D and 3 (81110000205/204), Blutbuche Mineralbad Berg (81110000304/011), Eibe Goezstr. 10 (81110002103, 48.70190 9.21462). None has a girth, height or age in steckbrief, ordinance or any fetched source, and most stand on residential streets with unsettled viewing access. Wikidata sweep extras: Q58013346 3 Eichen im Gewann Uhlberg (48.62648 9.20726), Q58021416 Eichengruppe Jungviehweide (48.62221 9.14772), not examined. Stuttgart is a wall for RICH new trees until a measurement source for the ND list appears.",
-   "lat": null,
-   "lng": null
-  },
-  {
-   "candidate": "Stieleiche Bei der Eiche 16 A (ND 81110000902)",
-   "coordinates": [
-    48.829692,
-    9.15276
-   ],
-   "lat": 48.829692,
-   "lng": 9.15276,
-   "reason": "2026-10-18 pass: Commons photo (2022-10-23, CC BY-SA 4.0, geotagged within 250 m) exists, register entry only, no girth, height, age or description found; street-number address suggests a house plot, public access unconfirmed (rule 10). Sits about 70 m from stu_010 Jahneiche. Needs a source describing it and access evidence."
-  },
-  {
-   "candidate": "Mammutbaum Steinkopfstr. 8 (81110000402) and Bopserwaldstr. 79/81 (81110000408/409)",
-   "coordinates": [
-    48.7627866,
-    9.184752
-   ],
-   "lat": 48.7627866,
-   "lng": 9.184752,
-   "reason": "2026-10-18 pass: Steinkopfstr. 8 folded into stu_009 (10 m twin). Bopserwaldstr. 79 copper beech and 81 sequoia stand on a residential street, access and visibility unverified, no measurements."
-  },
-  {
-   "candidate": "Wilhelma plane tree (Platanus x hispanica, monumentaltrees id 24812), Bad Cannstatt",
-   "reason": "2026-10-20 pass: only monumentaltrees.com (search summary, host 403s): girth 6.80 m at 1.3 m measured Oct 2010, planted about 1840, near the greenhouse row beside the Wilhelma ginkgos (stu_013 at 48.804984 9.207091). No second source and no coordinate; DDG or Wilhelma own page would settle it. Paid entry zoo."
-  },
-  {
-   "candidate": "Rosensteinpark horse chestnut (Aesculus hippocastanum), monumentaltrees id 26655",
-   "reason": "2026-10-20 pass: only monumentaltrees.com (search summary): girth 5.30 m at 1.3 m (7 Nov 2020, Arbus), about 25 m, planted about 1840 +/- 30, ranks 5th oldest in Baden-Wuerttemberg there. No second source, no coordinate; public city park. Needs a second source (Blumle, Baumschaetze BW, or city park report)."
-  },
-  {
-   "candidate": "Hohenheim Landesarboretum plane (Platanus x hispanica '12402') 7.56 m girth, 36 m, and Schlosspark giant sequoias 4.35 to 4.75 m girth",
-   "reason": "2026-10-20 pass: figures only from a monumentaltrees.com list seen as a search summary (measured 2021). Same gardens as stu_011 (free, open day and night per gaerten.uni-hohenheim.de). Needs a fetched source and coordinates; the Hohenheim plane could be the thicker one than stu_011's 7.70 m only if a second measurement agrees (7.56 m is thinner)."
-  },
-  {
-   "candidate": "Other duke-era trees in the Exotischer Garten Hohenheim (American tulip trees, two summer limes, 1779 to 1793)",
-   "reason": "2026-10-20 pass: named only in de.wikipedia 'Hohenheimer Gaerten' (not independent of the university), no measurements or coordinates. Look in the garden around stu_011."
-  }
- ],
- "blocked": [
-  {
-   "candidate": "Bruchweide im Dronfieldpark (Wikidata Q108806255)",
-   "coordinates": [
-    48.70606,
-    9.00692
-   ],
-   "reason": "Not in Stuttgart. Dronfieldpark is in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, picked up by the brief's 15 km Wikidata radius sweep rather than being inside city limits. Publishing it under Stuttgart would misstate its location; it is a candidate for a future Sindelfingen page instead, not this one."
-  },
-  {
-   "candidate": "Dicke Eiche im Mietholz (Wikidata Q58020248)",
-   "coordinates": [
-    48.73628,
-    9.04887
-   ],
-   "reason": "Location uncertain: the Mietholz is a strictly protected Bannwald forest reserve described as separated from the Sindelfingen forest by the A8/A81 motorway and as the forest reserve closest to Stuttgart, which suggests it may sit outside Stuttgart's own municipal boundary (unconfirmed either way this pass). Access is also a concern independent of the boundary question: sources describe the oak as 'deep within the forest, hidden off marked trails', and a Bannwald (strict forest nature reserve) commonly restricts visitors to marked paths, which would put the tree itself off-limits even if the general area is open. Needs a boundary check and an access answer (does a permissive path reach it, per the OSM-access technique in BRIEF_RESEARCH.md) before it can be verified either way."
-  },
-  {
-   "candidate": "Eiche am Schafweideweg (Wikidata Q108744770)",
-   "coordinates": [
-    48.71838,
-    8.99515
-   ],
-   "reason": "Checked 2026-09-03: Wikidata's own location data places this oak in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, the same as the already-blocked Dronfieldpark willow. Not in Stuttgart; a candidate for a future Sindelfingen page, not this one."
-  },
-  {
-   "candidate": "Linde am Steinbaß (Wikidata Q1430583)",
-   "coordinates": [
-    48.6616,
-    9.0683
-   ],
-   "reason": "Checked 2026-09-03: Wikidata's own location data places this lime in Schönaich (Böblingen district), a separate municipality roughly 15 km south of Stuttgart's centre, protected under its own LUBW entry (81150440002). Not in Stuttgart; a candidate for a future Schönaich page, not this one."
-  },
-  {
-   "id": "stu_003",
-   "name": "The Max-Eyth-See Oak",
-   "species": "Pedunculate Oak (Quercus robur)",
-   "age_estimate": "",
-   "age_min": null,
-   "age_max": null,
-   "girth_cm": null,
-   "location": {
-    "address": "Max-Eyth-See lakeside park, Mühlhausen/Hofen, Stuttgart",
-    "latitude": 48.83698,
-    "longitude": 9.21885,
-    "neighbourhood": "Mühlhausen/Hofen"
-   },
-   "story": "Stuttgart's protection ordinance obliges the city to have this oak examined once a year for its health and safety. That is a level of attention most trees never get, and it comes with the natural monument status the pedunculate oak was given in June 2003, for its character and for its value as habitat.\n\nIt stands on the shore of the Max-Eyth-See, which is not a natural lake at all. The water sits in a gravel quarry that was worked out and then flooded in 1935, put under landscape protection in 1961, and has been Stuttgart's biggest outdoor escape ever since. On a warm weekend up to 15,000 people come out here, and the paths run the whole way round the water.\n\nSo this oak has spent its recent decades as a piece of public furniture, which is a harder life than a forest. It has watched a working pit turn into a lake, then into a protected landscape, then into a place where a good part of the city spends its Sundays.\n\nWhat no source will tell us is how old it is. Nobody has recorded an age or a girth, so we do not know whether it stood here before the quarry filled with water or arrived with the park. A photograph taken in May 2022 puts it firmly alive and standing. If you know its age, tell us.",
-   "verified_sources": [
-    "https://www.stuttgart.de/medien/ibs/3-8.pdf",
-    "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_am_Max-Eyth-See_Stuttgart.jpg"
-   ],
-   "access": "In the public lakeside park around the Max-Eyth-See, a free and heavily used recreation area with paths all around the lake; open at all times, no ticket.",
-   "transport": "Stadtbahn U14 to the Max-Eyth-See stop, a few minutes' walk",
-   "photo": {
-    "url": null,
-    "license": null,
-    "attribution": null,
-    "status": "missing"
-   },
-   "curation_status": "ai_generated",
-   "location_precision": "confirmed",
-   "best_time": {
-    "months": [
-     9,
-     10
-    ],
-    "label": "September to October: acorns drop, and a good mast year buries the ground in them",
-    "kind": "fruit"
-   },
-   "removed": "2026-09-10",
-   "removed_reason": "Dead. Its own Commons photograph, dated 21 May 2022 and taken 27 m from our pin, shows every limb sawn off with fresh cut faces and not one leaf on the trunk while everything around it stands in full spring green. Stuttgart's ordinance protected it partly 'for its value as habitat', which is why a dead oak is left standing there. Removed under the rule that a dead tree is never a collectible entry. If the city ever plants a successor at the Max-Eyth-See, this is where the research is."
-  }
- ]
+  "leads": [
+    {
+      "candidate": "Speierling im Kräherwald bei Kräherwaldstr. 190 a",
+      "coordinates": [
+        48.79003,
+        9.14863
+      ],
+      "reason": "Official Naturdenkmal (register no. 81110000505, ordinance entry 5/5, Stadtbezirk West, Flurstuck 9546/1), designated 24-06-2003 for rarity (Seltenheit) and landscape character. Re-checked 2026-09-03: still only one source (the register/LUBW steckbrief, restated verbatim by the city ordinance PDF and by de.wikipedia's 'Liste der Naturdenkmale in Stuttgart', which is not independent since it is sourced from the same register). Searched baumkunde.de, komoot highlights (2836920, 2596561, 2661655, all unrelated: a dead Speierling in Bavaria and two generic Kräherwald-forest highlights with no tree content), and Stuttgart forestry-office pages; nothing further found. Two search attempts made per BRIEF_RESEARCH.md's stall rule; stopping here. Still needs a second, independent descriptive source before it can ship.",
+      "lat": 48.79003,
+      "lng": 9.14863,
+      "position_basis": "recovered from the lead's own `coordinates` field (field)"
+    },
+    {
+      "candidate": "Speierling im Kräherwald (plain, without street address)",
+      "coordinates": null,
+      "reason": "A second, separately numbered Naturdenkmal (register no. 81110000208, ordinance entry 2/8, Stadtbezirk Nord, Flurstuck 9546/14, a different Flurstuck and a different Stadtbezirk than the Kräherwaldstr. 190a tree). The Wikipedia/Wikitext infobox gives it the IDENTICAL coordinates to the Kräherwaldstr. 190a tree (48.79003, 9.14863), which cannot be right for two objects in different city districts; this looks like a copy-paste error in the Wikipedia source rather than a real duplicate location. Re-checked 2026-09-03, same wikitext fetch, coordinates still identical to the other Speierling and no independent coordinate found. Needs its own coordinate (e.g. the LUBW map viewer or an on-the-ground source) before it can be verified or folded with the other Speierling."
+    },
+    {
+      "candidate": "Baumgruppe vor Schloss Solitude, the two Bergahorn (sycamore maples)",
+      "coordinates": [
+        48.78743,
+        9.08391
+      ],
+      "reason": "Same official Naturdenkmal group as stu_006 (the ash). Re-checked 2026-09-03: searched baumkunde.de and general web for a Bergahorn/Solitude description; nothing found beyond the register's ash entry. The two accompanying sycamore maples are still not individually measured or described by any source. The ash alone remains well enough documented (baumkunde.de) to ship on its own. If a source is later found describing the maples specifically, they belong to stu_006's entry rather than a new one.",
+      "lat": 48.78743,
+      "lng": 9.08391,
+      "position_basis": "recovered from the lead's own `coordinates` field (field)"
+    },
+    {
+      "candidate": "Schillereiche (Stieleiche bei der Wernhaldenstrasse, Schillerhoehe lookout)",
+      "coordinates": [
+        48.76246,
+        9.18195
+      ],
+      "reason": "Naturdenkmal 81110000403 (de.wikipedia Liste der Naturdenkmale in Stuttgart, LUBW steckbrief; city ordinance 3/8). Planted 1865 by the Verschoenerungsverein Stuttgart in memory of Schiller's first reading of Die Raeuber (per search summaries of vsv-stuttgart.de and LEO-BW; vsv host refused connection and LEO-BW 403, so not seen first-hand). Public lookout above Neue Weinsteige. Commons photo exists (Naturdenkmal Schillereiche, Stuttgart.jpg). Missing for RICH: any girth or height (no source found, steckbrief and ordinance carry none) and first-hand sight of the planting year. Ends rich if a measurement turns up.",
+      "lat": 48.76246,
+      "lng": 9.18195,
+      "position_basis": "Wikipedia ND list infobox coordinate (register-derived)"
+    },
+    {
+      "candidate": "Mammutbaeume Steinkopfstr. 6 and 8 (Naturdenkmal 81110000027 and 81110000402), Wernhalde cluster",
+      "coordinates": [
+        48.7627,
+        9.18475
+      ],
+      "reason": "Two ND giant sequoias beside Wernhaldenpark (about 40 sequoias, publicly walkable, Wilhelma-Saat seed imported 1864 for King Wilhelm I). Same cluster: Schillereiche, Bopserwaldstr. 79 copper beech (81110000408, 48.7647 9.18562) and Bopserwaldstr. 81 sequoia (81110000409, 48.76445 9.18555), roughly 1 km apart, a real walk. Commons photo of Steinkopfstr. 6 (CC BY-SA 4.0, Laserlicht, 2018, geotag 48.762806 9.185289). Missing: no girth or height for any of them in steckbrief, ordinance, Stuttgarter Zeitung 2016 or stadtbaum-stuttgart.de; Bopserwaldstr. trees stand on a residential street, visibility from the pavement unconfirmed. Needs a measurement (Lutz Krueger, Jahreshefte GfN, 'Die aeltesten Mammutbaeume in Wuerttemberg', ojs-jh-gfn.ub.uni-stuttgart.de article 276 is a scanned PDF, no text layer from this runner; a session with OCR may find a Stuttgart table).",
+      "lat": 48.7627,
+      "lng": 9.18475,
+      "position_basis": "Wikipedia ND list infobox coordinate (register-derived)"
+    },
+    {
+      "candidate": "Four Bergmammutbaeume below Schloss Solitude (forest, in a row)",
+      "coordinates": null,
+      "reason": "Stuttgarter Nachrichten 2021-11-28 (Versteckte Schoenheiten): four sequoias in a row in the forest below Schloss Solitude. Search summary of an info board: measured 2003, largest 44.6 m high, 1.39 m breast-height diameter (about 437 cm girth); figure NOT seen on a fetched page, so unusable. Not a Naturdenkmal (only the Baumgruppe vor Schloss Solitude, ash plus maples, is) so no per-tree official register record; no exact coordinate. Cannot end rich.",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "candidate": "Otto-Feucht-Eiche (Stieleiche, Rotwildpark Stuttgart, Glemswald)",
+      "coordinates": [
+        48.767996,
+        9.109265
+      ],
+      "reason": "Strong tree: 7.55 m girth at breast height, 24 m, about 400 years (Rainer Lippert, monumentale-eichen.de, measured 2022, fetched; monumentaltrees.com 7.65 m cross-check not fetched). Also called Christophseiche; ten oaks over 6 m in the reserve (Alte Eiche 7.10 m, Saufang-Eiche 6.80 m, Bernhards-Eiche 6.65 m, Adlereiche 6.55 m). Fails RICH and honesty: stands in the Naturschutzgebiet Rotwildpark (no per-tree register record), a search summary says no footpath leads to it, and a survey notes rotting sapwood; no open licence photo found; access to the exact tree unsettled. Lead with coordinate for a session that can settle paths from OSM.",
+      "lat": 48.767996,
+      "lng": 9.109265,
+      "position_basis": "monumentale-eichen.de page coordinate"
+    },
+    {
+      "candidate": "Wilhelma sequoia grove (Mammutbaum-Hain, tallest 37 m)",
+      "coordinates": null,
+      "reason": "Stuttgarter Zeitung 2016: almost sixty sequoias behind the Wilhelma main entrance, tallest 37 m, girth 4.20 m (Stuttgarter Nachrichten gives 4.7 m circumference for the thickest: conflict, both seen only as article/search text, the NN page 404s now). Paid entry zoo and botanic garden, owner of the ground is the source for access, but no per-tree register record and no coordinate. Cannot end rich.",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "candidate": "Other Stuttgart Naturdenkmal single trees (register list, all unmeasured)",
+      "coordinates": null,
+      "reason": "From de.wikipedia ND list (wikitext fetched 2026-10-13, IDs and coordinates): Mammutbaum Herdweg 72 (81110000201, 48.78743 9.16163), 2 Mammutbaeume Gutbrodstr. 101 (81110000501, 48.78113 9.15450), Mammutbaum Moerikestr. 1 (81110000407, 48.76817 9.16878), Mammutbaum Sonnenbergstr. 39 (81110000404, 48.76834 9.19035), Mammutbaum Heigst-Staffel (81110000405, 48.75883 9.16879), Mammutbaum Mendelssohnstr. 108 (81110001802, 48.74664 9.20699), Stieleiche Bei der Eiche 16 A (81110000902, 48.82969 9.15276), Jahneiche (81110000903, 48.82906 9.15212), Stieleiche Hasenbergsteige (81110004010, 48.76613 9.15665), Winterlinde Mannspergerstr. 144 (81110001805, 48.75086 9.24128), Winterlinde Schillerweg (81110001501, 48.76821 9.26267), Blutbuchen Hoelderlinstr. 1 D and 3 (81110000205/204), Blutbuche Mineralbad Berg (81110000304/011), Eibe Goezstr. 10 (81110002103, 48.70190 9.21462). None has a girth, height or age in steckbrief, ordinance or any fetched source, and most stand on residential streets with unsettled viewing access. Wikidata sweep extras: Q58013346 3 Eichen im Gewann Uhlberg (48.62648 9.20726), Q58021416 Eichengruppe Jungviehweide (48.62221 9.14772), not examined. Stuttgart is a wall for RICH new trees until a measurement source for the ND list appears.",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "candidate": "Stieleiche Bei der Eiche 16 A (ND 81110000902)",
+      "coordinates": [
+        48.829692,
+        9.15276
+      ],
+      "lat": 48.829692,
+      "lng": 9.15276,
+      "reason": "2026-10-18 pass: Commons photo (2022-10-23, CC BY-SA 4.0, geotagged within 250 m) exists, register entry only, no girth, height, age or description found; street-number address suggests a house plot, public access unconfirmed (rule 10). Sits about 70 m from stu_010 Jahneiche. Needs a source describing it and access evidence."
+    },
+    {
+      "candidate": "Mammutbaum Steinkopfstr. 8 (81110000402) and Bopserwaldstr. 79/81 (81110000408/409)",
+      "coordinates": [
+        48.7627866,
+        9.184752
+      ],
+      "lat": 48.7627866,
+      "lng": 9.184752,
+      "reason": "2026-10-18 pass: Steinkopfstr. 8 folded into stu_009 (10 m twin). Bopserwaldstr. 79 copper beech and 81 sequoia stand on a residential street, access and visibility unverified, no measurements."
+    },
+    {
+      "candidate": "Wilhelma plane tree (Platanus x hispanica, monumentaltrees id 24812), Bad Cannstatt",
+      "reason": "2026-10-20 pass: only monumentaltrees.com (search summary, host 403s): girth 6.80 m at 1.3 m measured Oct 2010, planted about 1840, near the greenhouse row beside the Wilhelma ginkgos (stu_013 at 48.804984 9.207091). No second source and no coordinate; DDG or Wilhelma own page would settle it. Paid entry zoo."
+    },
+    {
+      "candidate": "Rosensteinpark horse chestnut (Aesculus hippocastanum), monumentaltrees id 26655",
+      "reason": "2026-10-20 pass: only monumentaltrees.com (search summary): girth 5.30 m at 1.3 m (7 Nov 2020, Arbus), about 25 m, planted about 1840 +/- 30, ranks 5th oldest in Baden-Wuerttemberg there. No second source, no coordinate; public city park. Needs a second source (Blumle, Baumschaetze BW, or city park report)."
+    },
+    {
+      "candidate": "Hohenheim Landesarboretum plane (Platanus x hispanica '12402') 7.56 m girth, 36 m, and Schlosspark giant sequoias 4.35 to 4.75 m girth",
+      "reason": "2026-10-20 pass: figures only from a monumentaltrees.com list seen as a search summary (measured 2021). Same gardens as stu_011 (free, open day and night per gaerten.uni-hohenheim.de). Needs a fetched source and coordinates; the Hohenheim plane could be the thicker one than stu_011's 7.70 m only if a second measurement agrees (7.56 m is thinner)."
+    },
+    {
+      "candidate": "Other duke-era trees in the Exotischer Garten Hohenheim (American tulip trees, two summer limes, 1779 to 1793)",
+      "reason": "2026-10-20 pass: named only in de.wikipedia 'Hohenheimer Gaerten' (not independent of the university), no measurements or coordinates. Look in the garden around stu_011."
+    },
+    {
+      "candidate": "Wilhelma plane tree behind the main entrance (Platanus x hispanica), update",
+      "reason": "2026-10-20 deepen pass: the owner confirms the tree and its date. live.wilhelma.de/entdecken/pflanzen/pflanze/ahornblaettrige-platane (fetched): planting date of the plane behind the main entrance estimated 1840, with the start of the Moorish Landhaus; 'ein grosses Exemplar steht wenige Meter hinter dem Haupteingang vor dem Wintergarten'. Girth 6.80 m exists only on monumentaltrees.com (403, not seen), so not recorded. lifecheck RECENT 2026-04-30 at the Wilhelma. Still no tree-level coordinate (Overpass dead, Commons geosearch near the entrance shows no plane file; File:Baumhoehle.jpg 'Baumhoehle in Platane, Wilhelma' has no geotag and identity unknown) and no photo, in a covered country, so it cannot ship. Ends shippable with a geotagged photo or OSM node of the plane in front of the Wintergarten."
+    },
+    {
+      "candidate": "Bismarckeiche an der Rotenwaldstrasse (Stuttgart-West)",
+      "reason": "2026-10-20 pass: vsv-stuttgart.de article_id=102 (owner of the lookout) says a young oak was planted 1 April 1894, named Bismarckeiche; page carries no girth, height or current vitality statement, and the lookout sits beside a three-lane arterial that 'nobody walks along any more'. About 130 years, not remarkable, no coordinate. Not a reason to walk."
+    },
+    {
+      "candidate": "Rosensteinpark horse chestnut, second-source attempt",
+      "reason": "2026-10-20 pass: search again returns only monumentaltrees.com (5.30 m, 7 Nov 2020, Arbus, about 1840 +/- 30); nothing else names this tree. Remains one non-citable source, no coordinate."
+    },
+    {
+      "candidate": "Hohenheim: trees planted before 1800 (owner's own list)",
+      "reason": "2026-10-20 pass: virtuelle-gaerten.uni-hohenheim.de HG_4_7_de?HistoricalTrees=true (owner, fetched) lists 32 accessions planted before 1800 in the Exotischer Garten: many Quercus robur, Quercus cerris, Robinia, Fagus purpurea, several Liriodendron tulipifera (EG-D-071, EG-I-050, EG-P-048, EG-N-047, EG-P-063, EG-P-030 ...). The list gives accession codes only; detail pages are script-driven, no girth or coordinate fetched. A guide text (search summary only) says the tulip trees are over 30 m with a girth of almost 5 m, planted 1776 (Wikipedia says 1779 to 1793). Needs the accession detail pages (browser session) for pins and girth; same free garden as stu_011."
+    },
+    {
+      "candidate": "Adlereiche (Stieleiche, Glemswald / Rotwildpark, Stuttgart-West)",
+      "reason": "2026-10-20 pass: appears in monumentaltrees.com record list at about 426 years (search summary only). Same Rotwildpark nature reserve as the Otto-Feucht-Eiche lead, access to the exact tree unsettled, no source fetched. Lead only."
+    },
+    {
+      "id": "stu_011",
+      "name": "Franziska-Platane (Liebesplatane) at the Spielhaus, Hohenheim",
+      "species": "London Plane (Platanus x hispanica)",
+      "age_estimate": "about 245 years",
+      "age_min": 240,
+      "age_max": 250,
+      "girth_cm": 770,
+      "height_m": 34,
+      "location": {
+        "address": "Exotischer Garten, Hohenheimer Gaerten, beside the Spielhaus (Museum of Hohenheim history), Garbenstrasse, Stuttgart-Hohenheim",
+        "latitude": 48.710189,
+        "longitude": 9.20743,
+        "neighbourhood": "Hohenheim (Plieningen)"
+      },
+      "verified_sources": [
+        "https://nationalerbe-baeume.de/project/platane-am-spielhaus-im-exotischen-garten-der-hohenheimer-gaerten-stuttgart-hohenheim-baden-wuerttemberg/",
+        "https://de.wikipedia.org/wiki/Hohenheimer_G%C3%A4rten",
+        "https://gaerten.uni-hohenheim.de/",
+        "https://www.stuttgarter-zeitung.de/inhalt.auszeichnung-in-hohenheim-liebesplatane-ist-nationalerbe-baum.7276f9bc-e17c-440a-90ff-132773f241cf.html"
+      ],
+      "official_register": {
+        "name": "Nationalerbe-Baeume Deutschland (Deutsche Dendrologische Gesellschaft initiative, Andreas Roloff), NEB since 2023-05-06",
+        "url": "https://nationalerbe-baeume.de/project/platane-am-spielhaus-im-exotischen-garten-der-hohenheimer-gaerten-stuttgart-hohenheim-baden-wuerttemberg/"
+      },
+      "access": "Free: the Hohenheimer Gaerten (owner: Universitaet Hohenheim) state on their own homepage 'durchgehend geoeffnet, kostenloser Eintritt' (fetched 2026-10-20); a garden regulation (Gartenordnung) applies at the entrances. Tree stands beside the Spielhaus; the museum inside has its own hours.",
+      "transport": "U3 terminus S-Plieningen is about 300 m from the Exotischer Garten car park on Garbenstrasse per the NEB page (the tree is further inside the garden); the NEB page gives the district as about 10 km south of the city centre (Stadtbahn travel time not sourced).",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "verify_notes": "Facts as read on fetched pages 2026-10-20. NEB page (nationalerbe-baeume.de): London Plane (Platanus x hispanica), planted 1779, 'ca. 245 Jahre', girth 7.70 m at 1.3 m measured Dec 2022, height ca. 34 m, quarter E tree 70, GPS N 48.710189 E 9.207430 (a published GPS position, so confirmed per house rule). de.wikipedia 'Hohenheimer Gaerten' (wikitext): planted 1779 by Duke Carl Eugen and Franziska von Hohenheim (Duchess from 1786), at the time 244 years old with girth 'fast acht Meter', among the oldest of its species and the 100 most important trees in Germany (cites SWR Landesschau 2023-05-17); declared Nationalerbe-Baum by Andreas Roloff (TU Dresden, DDG). Stuttgarter Zeitung 2023-05-07 headline 'Liebesplatane ist Nationalerbe-Baum' (title seen in the Wikipedia citation and search, article body not fetched). Nickname Liebesplatane. The Exotischer Garten (1776 to 1793, English landscape garden, called Franziskas Doerfle) is the oldest part of the Hohenheim gardens; other duke-era survivors per Wikipedia: several American tulip trees and two summer limes (1779 to 1793), unmeasured here. The age is a documented planting date for this specimen, so age_min/max are narrow. Life check: python3 scripts/lifecheck.py at the pin returned RECENT 2026-06-15 (iNaturalist observation 371917504, not opened). Possible related finds in the garden (leads, unverified): a Platanus x hispanica '12402' with 7.56 m girth and 36 m in the Landesarboretum and several Sequoiadendron giganteum 4.35 to 4.75 m girth in the Schlosspark, both only in a monumentaltrees.com list seen as a search summary; not recorded as facts. No photo hunted.",
+      "status": "duplicate",
+      "why": "Same trunk as live stu_007 The Hohenheim Love Plane (0 m apart); folded 2026-10-20."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Bruchweide im Dronfieldpark (Wikidata Q108806255)",
+      "coordinates": [
+        48.70606,
+        9.00692
+      ],
+      "reason": "Not in Stuttgart. Dronfieldpark is in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, picked up by the brief's 15 km Wikidata radius sweep rather than being inside city limits. Publishing it under Stuttgart would misstate its location; it is a candidate for a future Sindelfingen page instead, not this one."
+    },
+    {
+      "candidate": "Dicke Eiche im Mietholz (Wikidata Q58020248)",
+      "coordinates": [
+        48.73628,
+        9.04887
+      ],
+      "reason": "Location uncertain: the Mietholz is a strictly protected Bannwald forest reserve described as separated from the Sindelfingen forest by the A8/A81 motorway and as the forest reserve closest to Stuttgart, which suggests it may sit outside Stuttgart's own municipal boundary (unconfirmed either way this pass). Access is also a concern independent of the boundary question: sources describe the oak as 'deep within the forest, hidden off marked trails', and a Bannwald (strict forest nature reserve) commonly restricts visitors to marked paths, which would put the tree itself off-limits even if the general area is open. Needs a boundary check and an access answer (does a permissive path reach it, per the OSM-access technique in BRIEF_RESEARCH.md) before it can be verified either way."
+    },
+    {
+      "candidate": "Eiche am Schafweideweg (Wikidata Q108744770)",
+      "coordinates": [
+        48.71838,
+        8.99515
+      ],
+      "reason": "Checked 2026-09-03: Wikidata's own location data places this oak in Sindelfingen (Böblingen district), a separate town roughly 15 km from Stuttgart's centre, the same as the already-blocked Dronfieldpark willow. Not in Stuttgart; a candidate for a future Sindelfingen page, not this one."
+    },
+    {
+      "candidate": "Linde am Steinbaß (Wikidata Q1430583)",
+      "coordinates": [
+        48.6616,
+        9.0683
+      ],
+      "reason": "Checked 2026-09-03: Wikidata's own location data places this lime in Schönaich (Böblingen district), a separate municipality roughly 15 km south of Stuttgart's centre, protected under its own LUBW entry (81150440002). Not in Stuttgart; a candidate for a future Schönaich page, not this one."
+    },
+    {
+      "id": "stu_003",
+      "name": "The Max-Eyth-See Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Max-Eyth-See lakeside park, Mühlhausen/Hofen, Stuttgart",
+        "latitude": 48.83698,
+        "longitude": 9.21885,
+        "neighbourhood": "Mühlhausen/Hofen"
+      },
+      "story": "Stuttgart's protection ordinance obliges the city to have this oak examined once a year for its health and safety. That is a level of attention most trees never get, and it comes with the natural monument status the pedunculate oak was given in June 2003, for its character and for its value as habitat.\n\nIt stands on the shore of the Max-Eyth-See, which is not a natural lake at all. The water sits in a gravel quarry that was worked out and then flooded in 1935, put under landscape protection in 1961, and has been Stuttgart's biggest outdoor escape ever since. On a warm weekend up to 15,000 people come out here, and the paths run the whole way round the water.\n\nSo this oak has spent its recent decades as a piece of public furniture, which is a harder life than a forest. It has watched a working pit turn into a lake, then into a protected landscape, then into a place where a good part of the city spends its Sundays.\n\nWhat no source will tell us is how old it is. Nobody has recorded an age or a girth, so we do not know whether it stood here before the quarry filled with water or arrived with the park. A photograph taken in May 2022 puts it firmly alive and standing. If you know its age, tell us.",
+      "verified_sources": [
+        "https://www.stuttgart.de/medien/ibs/3-8.pdf",
+        "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Stieleiche_am_Max-Eyth-See_Stuttgart.jpg"
+      ],
+      "access": "In the public lakeside park around the Max-Eyth-See, a free and heavily used recreation area with paths all around the lake; open at all times, no ticket.",
+      "transport": "Stadtbahn U14 to the Max-Eyth-See stop, a few minutes' walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "ai_generated",
+      "location_precision": "confirmed",
+      "best_time": {
+        "months": [
+          9,
+          10
+        ],
+        "label": "September to October: acorns drop, and a good mast year buries the ground in them",
+        "kind": "fruit"
+      },
+      "removed": "2026-09-10",
+      "removed_reason": "Dead. Its own Commons photograph, dated 21 May 2022 and taken 27 m from our pin, shows every limb sawn off with fresh cut faces and not one leaf on the trunk while everything around it stands in full spring green. Stuttgart's ordinance protected it partly 'for its value as habitat', which is why a dead oak is left standing there. Removed under the rule that a dead tree is never a collectible entry. If the city ever plants a successor at the Max-Eyth-See, this is where the research is."
+    }
+  ]
 }

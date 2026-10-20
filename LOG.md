@@ -16,8 +16,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - New place Thalmassing, one tree (thm_001): St. Wolfgang's Oak, 9.80 m round, a Nationalerbe-Baum, 15 km from Regensburg. The story was already written; it went into its own one-tree place file because it is not part of Regensburg's walk (same shape as Eisolzried). No photograph yet; the Commons candidate is in its verify_notes for a photo pass.
 - Not done: the Freiburg beech sighting (ed90210d). No register or Wikipedia entry within 100 m, and its photograph is not on disk, so the verdict stays open.
 - Fort-worth: claimed, then found 0 unmined candidates. Released with --force and it is on the 48h wall list.
-- Written but held on purpose: ftw_018 (access unknown), std_001 and its sibling (no honest container), inn_007 (register pin on a private yard). fdl_001 (Figueira das Lágrimas) carries no hold reason and I did not merge it.
-- Not dispatched: any of the 91 staged cities.
+- Written but held on purpose: ftw_018 (access unknown), std_001 and its sibling (no honest container), inn_007 (register pin on a private yard). fdl_001 was a duplicate of spa_001.
+- Stuttgart verify pass (about 99k tokens): 0 trees. Wilhelma plane is owner-confirmed but has no tree-level pin or photo; Hohenheim's pre-1800 list needs a browser; five leads with reasons added to data/leads/stuttgart.json. stu_011 folded into the live stu_007 as a duplicate. Wall for 48h.
+- fdl_001 was a duplicate of the live spa_001 and is dropped from the research file.
+- Munich is full at 63 of 60, so no claim. The staged Stuttgart/Fort Worth supply is exhausted; the shelf is walled for now.
 
 ## 2026-10-20 07:00 run
 
