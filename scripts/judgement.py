@@ -43,6 +43,20 @@ LEADS = "data/leads/_sightings.json"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 
+def coded_photo(path):
+    """A storage path whose first part is a reader's account id gets their
+    code instead (people.ref). A lead written by hand on 2026-10-20 carried the
+    raw id, this copied it on, and qa refused every deploy until both were
+    fixed. Raises without the key rather than write the id (people.ref)."""
+    if not path or "/" not in path:
+        return path
+    head, rest = path.split("/", 1)
+    if len(head) == 36 and head.count("-") == 4:
+        import people
+        return people.ref(head) + "/" + rest
+    return path
+
+
 def load():
     if not os.path.exists(FILE):
         return {"_note": "One verdict per reader submission. See DECISIONS.md 2026-09-23.",
@@ -121,7 +135,7 @@ def scan():
             doc["judgements"].append({
                 "id": jid, "seen": e.get("seen") or today, "kind": "a tree we do not map",
                 "tree": e.get("name"), "city": e.get("city") or e.get("near"),
-                "species": e.get("species"), "photo": e.get("photo"),
+                "species": e.get("species"), "photo": coded_photo(e.get("photo")),
                 "reader_note": e.get("note") or "", "reader_girth_cm": e.get("girth_cm"),
                 "coords": [e.get("lat"), e.get("lng")], "register": e.get("register"),
                 "measure": measure(e.get("species"), e.get("girth_cm")),
