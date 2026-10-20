@@ -905,6 +905,48 @@ struct WhenPermissionIsRefused {
         #expect(grouped.count == 2)
         #expect(grouped.allSatisfy { $0.count == 1 })
     }
+
+    /// Two trees either side of a cell boundary were two piles a hair apart,
+    /// so their bubbles lay on top of each other (Hidde, 2026-10-20, Leusden's
+    /// 9 over its 10). Touching pins are one pile, wherever the lines fall.
+    @Test func twoTreesThatWouldTouchAreOnePileAcrossABoundary() {
+        let cell = 44.0 / (512.0 * pow(2.0, 11.0))
+        // Straddling a boundary in x, a tenth of a cell apart.
+        let lonPerCell = cell * 360.0
+        let edge = (floor((5.39 + 180.0) / 360.0 / cell) + 1) * cell * 360.0 - 180.0
+        let a = CLLocationCoordinate2D(latitude: 52.15, longitude: edge - lonPerCell * 0.05)
+        let b = CLLocationCoordinate2D(latitude: 52.15, longitude: edge + lonPerCell * 0.05)
+
+        #expect(MapLayers.groups(of: [a, b], cell: cell).count == 1)
+    }
+
+    /// The promise itself: whatever comes in, no two piles that come out are
+    /// closer than a cell, so no bubble or pin is drawn over another.
+    @Test func noTwoPilesAreCloserThanACell() {
+        let zoom = 10.5
+        let cell = 44.0 / (512.0 * pow(2.0, zoom))
+        var rng = SystemRandomNumberGenerator()
+        // Three hundred trees scattered round Amersfoort, about the density
+        // in the screenshot and well past it.
+        let coords = (0..<300).map { _ in
+            CLLocationCoordinate2D(latitude: 52.10 + Double.random(in: 0...0.2, using: &rng),
+                                   longitude: 5.20 + Double.random(in: 0...0.3, using: &rng))
+        }
+        let piles = MapLayers.piles(of: coords, cell: cell)
+
+        #expect(piles.reduce(0) { $0 + $1.members.count } == coords.count)
+        func xy(_ c: CLLocationCoordinate2D) -> (Double, Double) {
+            let lat = c.latitude * .pi / 180
+            return ((c.longitude + 180) / 360, (1 - log(tan(lat) + 1 / cos(lat)) / .pi) / 2)
+        }
+        for i in piles.indices {
+            for j in piles.indices where j > i {
+                let (ax, ay) = xy(piles[i].centre), (bx, by) = xy(piles[j].centre)
+                let d = ((ax - bx) * (ax - bx) + (ay - by) * (ay - by)).squareRoot()
+                #expect(d >= cell * 0.999, "two piles \(d / cell) cells apart")
+            }
+        }
+    }
 }
 
 // A correction made somewhere else, reaching the phone that holds the row.

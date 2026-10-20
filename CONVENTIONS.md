@@ -1210,6 +1210,13 @@ two pins are on top of each other whatever we do, and the bubble is telling the
 truth. What a smaller cell buys is the cases where the pins were merely near,
 not overlapping.
 
+**A radius, not a grid (2026-10-20).** The app used a fixed 44 point grid, which
+only asks whether two trees share a cell. Trees either side of a line became two
+piles a few points apart, and the map filled with bubbles stacked on bubbles
+(Hidde's screenshot of Soest and Leusden). supercluster and MapKit both measure
+the DISTANCE between pins; the app now does the same and repeats until no two
+piles are closer than 44 points.
+
 Read 2026-08-29, after Hidde saw two trees a couple of streets apart in Baarn
 drawn as a bubble marked 2:
 - https://maplibre.org/maplibre-style-spec/sources/
