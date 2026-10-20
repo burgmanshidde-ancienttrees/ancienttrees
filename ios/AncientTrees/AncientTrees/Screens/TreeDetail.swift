@@ -868,6 +868,7 @@ struct TreeDetail: View {
                     MapInset(lat: tree.lat, lng: tree.lng, side: 56).padding(10)
                 }
                 .buttonStyle(.plain)
+                .accessibilityIdentifier("tree-map-swap")
                 .accessibilityLabel("Show this tree on the map")
             }
             // Bottom left since 2026-10-14: the frame runs up under the

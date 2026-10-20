@@ -29,6 +29,9 @@ looks for the three faults a screenshot does not reliably show a human:
             heading at x=20 over a card at x=16 reads as "off" without reading
             as anything nameable. Only NEAR misses are reported, because a real
             inset is deliberate and large; a drift is small and is a mistake.
+  TRAIL     the same near miss on the RIGHT edge (2026-10-20): cards ending at
+            W-16 and one ending at W-20. Same exemptions, mirrored, plus
+            leading-aligned text, whose right end is only where its words stop.
 
 Every finding names the screen and the element, so the fix is a grep away.
 """
@@ -140,7 +143,11 @@ FLOATS_OVER_PAGES = ("tab-map", "tab-discover", "tab-my-trees", "tab-collect")
 # (2026-10-04). The white "Seen" pill joined MineCard on 2026-10-08 and the
 # check read its deliberate 10 point inset as a 10 point drift. Exempt from
 # DRIFT only, by the identifiers SeenTag and the season chip carry.
-ON_A_PHOTO = ("tree-card-seen", "tree-card-season")
+# The tree page's map inset joined on 2026-10-20, the first time the RIGHT edge
+# was measured: it sits 10 in from the hero photograph's bottom-right corner,
+# Airbnb's photo-and-map swap, and read as a 10 point TRAIL against the page's
+# 20. Inset from the photograph, like the pills; both hero branches carry it.
+ON_A_PHOTO = ("tree-card-seen", "tree-card-season", "tree-map-swap")
 
 
 def inside(el, types, idents=()):
@@ -523,6 +530,28 @@ def check(screen):
             findings.append(("SMALL", el,
                              f"{el.w:.0f} by {el.h:.0f}, under Apple's 44 by 44"))
 
+    findings += edge_drift(screen, els, "left")
+    findings += edge_drift(screen, els, "right")
+    return findings
+
+
+def edge_of(el, W, side):
+    """Distance from the screen's own edge on that side: x, or W minus right."""
+    return el.x if side == "left" else W - el.right
+
+
+def edge_drift(screen, els, side):
+    """DRIFT on one edge, or TRAIL on the other (2026-10-20).
+
+    The left edge was the only one measured until 2026-10-20, when the map
+    tab's tapped-pin sheet reached Hidde with its cross floating off the right
+    edge of the card under it ("slordig") and nothing had caught it. The right
+    edge is the same question asked from the other side: things that end at
+    W-16 and one that ends at W-20 is the same near miss as a heading at 20
+    over a card at 16. Same exemptions, mirrored.
+    """
+    W = screen["w"]
+    kind = "DRIFT" if side == "left" else "TRAIL"
     # Leading edges. Only real content: something with width, on screen, and of
     # a type a reader can actually see.
     lefts = collections.defaultdict(list)
@@ -542,12 +571,15 @@ def check(screen):
         # that a 6 point drift asks for the icon to sit flush against the pill
         # (2026-08-25). This check is about the margins of text and cards, and
         # those are all far wider than a thumb.
+        e = edge_of(el, W, side)
         if (el.type not in INVISIBLE and el.type not in NOT_OURS and el.w > 48 and el.h > 4
-                and 0 <= el.x < W / 2 and not in_shelf(el)
+                and 0 <= e < W / 2 and not in_shelf(el)
                 and el.ident not in FLOATS_OVER_PAGES and el.ident not in ON_A_PHOTO
                 and not inside(el, NOT_OURS, NOT_OURS_IDS) and not centred(el, W)
-                and not centred_in_button(el, els)):
-            lefts[round(el.x * 2) / 2].append(el)
+                and not centred_in_button(el, els)
+                and not (side == "right" and ragged(el, els, W))):
+            lefts[round(e * 2) / 2].append(el)
+    findings = []
     if lefts:
         dominant = max(lefts, key=lambda x: len(lefts[x]))
 
@@ -572,13 +604,32 @@ def check(screen):
                 # centre and half-width are what centred() reads, so printing
                 # them says in one line why the exemption did or did not apply.
                 el = group[0]
-                findings.append(("DRIFT", el,
-                                 f"starts at x={x:g} while {len(lefts[dominant])} "
-                                 f"other things on this screen start at x={dominant:g}"
+                verb, at = (("starts", "x=") if side == "left"
+                            else ("ends", "W-"))
+                findings.append((kind, el,
+                                 f"{verb} at {at}{x:g} while {len(lefts[dominant])} "
+                                 f"other things on this screen {verb[:-1]} at {at}{dominant:g}"
                                  + (f", and {len(group) - 1} more like it" if len(group) > 1 else "")
                                  + f" [w={el.w:g}, centre={el.x + el.w / 2:g} "
                                    f"vs screen {W / 2:g}, w/W={el.w / W:.3f}]"))
     return findings
+
+
+def ragged(el, els, W):
+    """True for words whose right end is wherever the sentence runs out.
+
+    Leading-aligned text has one edge, the left. Where a line of it ENDS is
+    the length of the words, so "Oak" and "Pedunculate Oak" stacked at x=16
+    end 90 points apart and neither is a fault. The right edge only means
+    something for text set against it: a value at the end of a row, a
+    trailing count. So text that starts on a left edge something else on the
+    screen also starts on is read as leading-aligned and has no right edge
+    to keep. Cards, buttons, fields and photographs keep both.
+    """
+    if el.type != "StaticText":
+        return False
+    return any(o is not el and o.w > 0 and abs(o.x - el.x) <= SAME
+               and o.type not in INVISIBLE for o in els)
 
 
 DUMP_NAME = "appfit-frames.txt"

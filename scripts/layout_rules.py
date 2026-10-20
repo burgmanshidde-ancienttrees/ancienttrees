@@ -23,6 +23,8 @@ The three faults, in the vocabulary both checks now print:
             A heading at x=20 over a card at x=16 reads as "off" without reading
             as anything nameable, which is why eyes miss it and a number does
             not. Only NEAR misses count: a real inset is deliberate and large.
+            The app also asks it of the RIGHT edge (TRAIL in appfit.py, since
+            2026-10-20), with the same DRIFT_MAX.
 
   SMALL     a control under Apple's 44 by 44 point minimum. Not a matter of
             taste; it is somebody's thumb missing the button three times.
