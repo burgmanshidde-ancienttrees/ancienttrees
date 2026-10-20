@@ -273,6 +273,12 @@ struct BottomSheet<Header: View, Content: View>: View {
     @Environment(\.sheetPageClose) private var pageClose
     @Environment(\.sheetFullInset) private var fullInset
     @Environment(\.sheetLocked) private var locked
+    @Environment(\.sheetCardFits) private var cardFits
+    /// The header's bottom and the content's height, read from the drawn
+    /// frames, so a fitted card stop is the sheet's real content and nothing
+    /// more (see sheetCardFits).
+    @State private var headerBottom: CGFloat = 0
+    @State private var contentHeight: CGFloat = 0
     /// Whether the list inside is scrolled to its very top. The handoff downward
     /// is only allowed from there, because taking the gesture mid-list would
     /// yank the sheet away while somebody is reading.
@@ -363,7 +369,18 @@ struct BottomSheet<Header: View, Content: View>: View {
             // stops the sheet just below it, as Google Maps does, instead of
             // letting the list become the page under the field (2026-10-12).
             let page = visible + top - fullInset
-            let target = height == .full ? page : height.points(in: visible)
+            // A FITTED CARD STOP (Hidde, 2026-10-20, a tapped pin: "er is veel
+            // leegte tussen menu en de boom kaart"): the header, the content
+            // and the same end room the list keeps clear of the floating bar,
+            // never taller than half. Until both are measured, the fixed stop.
+            let fitted = headerBottom + contentHeight + barDepth + 8
+            let stop: (SheetHeight) -> CGFloat = { s in
+                if s == .card, cardFits, contentHeight > 0 {
+                    return min(fitted, SheetHeight.half.points(in: visible))
+                }
+                return s.points(in: visible)
+            }
+            let target = height == .full ? page : stop(height)
             let h = min(max(target - drag, 90), page)
             // 0 at the half stop, 1 at the page: what the corners, the handle,
             // the chevron and the chrome over the map all follow frame by
@@ -427,11 +444,15 @@ struct BottomSheet<Header: View, Content: View>: View {
                     // sheet's own top: see headerDepth.
                     .onGeometryChange(for: CGFloat.self) { $0.frame(in: .named("sheet")).maxY } action: {
                         headerDepth = max(90, $0)
+                        headerBottom = $0 - top * progress
                     }
 
                 ScrollView {
                     content
                         .frame(maxWidth: .infinity, alignment: .top)
+                        .onGeometryChange(for: CGFloat.self) { $0.size.height } action: {
+                            contentHeight = $0
+                        }
                 }
                 // ROOM AT THE END OF THE LIST, not a shorter list.
                 //
@@ -560,8 +581,8 @@ struct BottomSheet<Header: View, Content: View>: View {
                         guard drag != 0 else { return }
                         let settled = target - value.translation.height
                         let next = SheetHeight.allCases.min {
-                            abs(($0 == .full ? page : $0.points(in: visible)) - settled)
-                                < abs(($1 == .full ? page : $1.points(in: visible)) - settled)
+                            abs(($0 == .full ? page : stop($0)) - settled)
+                                < abs(($1 == .full ? page : stop($1)) - settled)
                         } ?? .peek
                         // ONE change, not two (2026-09-26). The stop and the
                         // drag used to be set one after the other, so for a
@@ -643,4 +664,14 @@ extension EnvironmentValues {
         get { self[SheetLockedKey.self] }
         set { self[SheetLockedKey.self] = newValue }
     }
+    var sheetCardFits: Bool {
+        get { self[SheetCardFitsKey.self] }
+        set { self[SheetCardFitsKey.self] = newValue }
+    }
 }
+
+/// True when the card stop should be exactly as tall as what the sheet holds,
+/// which is what a tapped pin wants (PinSelection). Apple's sheets call this a
+/// custom detent resolved from the content; Google Maps raises a place card
+/// to its own height. Off by default, so lists and walks keep their stops.
+private struct SheetCardFitsKey: EnvironmentKey { static let defaultValue = false }

@@ -94,8 +94,8 @@ private struct PlaceCircle: View {
 }
 
 /// How a map screen's sheet answers a tapped pin, written once for the Map
-/// tab, a city's map and My trees: a tap opens the sheet to half, the height
-/// Apple Maps shows a place at; letting go (the cross, a tap on empty map)
+/// tab, a city's map and My trees: a tap opens the sheet to its card stop,
+/// sized to one tree rather than half the screen; letting go (the cross, a tap on empty map)
 /// puts the list back at the height it had; swiping the sheet down to its lip
 /// lets the tree go.
 struct PinSelection: ViewModifier {
@@ -105,10 +105,16 @@ struct PinSelection: ViewModifier {
 
     func body(content: Content) -> some View {
         content
+            // The card stop takes the tree's own height while one is chosen.
+            .environment(\.sheetCardFits, selected != nil)
             .onChange(of: selected) { old, new in
                 if new != nil {
                     if old == nil { before = height }
-                    withAnimation(.spring(duration: 0.3)) { height = .half }
+                    // THE CARD STOP, not half (Hidde, 2026-10-20: "er is veel
+                    // leegte tussen menu en de boom kaart"). Half held one
+                    // photograph and a band of empty sheet under it, which he
+                    // ruled out on 2026-08-24 and is why .card exists.
+                    withAnimation(.spring(duration: 0.3)) { height = .card }
                 } else if let b = before {
                     withAnimation(.spring(duration: 0.3)) { height = b }
                     before = nil
