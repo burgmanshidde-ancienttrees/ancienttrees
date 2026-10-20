@@ -177,6 +177,13 @@ ASK_PATTERNS = [
     r"\blink\b", r"\blinken\b", r"\blinkje\b", r"\bmention\b",
     r"\bverlinken\b", r"\bliga(?:ç|c)(?:ã|a)o\b", r"\bhiperliga(?:ç|c)(?:ã|a)o\b",
     r"\bmen(?:ç|c)(?:ã|a)o\b", r"\bdivulga", r"\benlace\b", r"\bVerweis\b",
+    # The tree ask counts too. Hidde, 2026-10-20, on a thank-you to Richard
+    # Weddle that asked for his favourite Glasgow tree after his first mail
+    # already asked for help adding trees: "just say thank you, stop asking
+    # for more tree input when this already happened earlier".
+    r"\btrees? of your own\b", r"\bshould (?:we )?add\b", r"\bfavou?rite (?:\w+ )?trees?\b",
+    r"\btrees? (?:are|we(?:'re| are)) missing\b", r"\bany (?:other )?(?:tips|suggestions)\b",
+    r"\bhelp (?:me )?with adding\b",
 ]
 
 
