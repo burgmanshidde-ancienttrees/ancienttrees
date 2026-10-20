@@ -44,6 +44,11 @@
    "site": "Hofgarten and Schloss Ambras",
    "candidate": "Named by the requester, not in the register",
    "reason": "Not researched in this pass: the Tirol register has no points in either park, so there is no naming body in hand. Needs its own pass with the Bundesgaerten or Schloss Ambras pages."
+  },
+  {
+   "site": "Wilten, below the Bergisel",
+   "candidate": "Winterlinde unter dem Bergisel (ND_101_9, 47.250691,11.396469), Brennerstrasse 6f",
+   "reason": "Verified 2026-10-20 (data/research/innsbruck-verified.json, inn_007) but not written: Held 2026-10-20, not written: the register pin reverse-geocodes onto the building at Brennerstrasse 6f (Nominatim), so the lime likely stands in a private yard; no source says it is public or visible from the road. Floor is modest too (over 100 years, 25 m, no girth). Revisit with a girth and a confirmed public viewing point. Write pass 2026-10-20 agreed: access cannot be stated honestly (hard rule 10)."
   }
  ],
  "blocked": [

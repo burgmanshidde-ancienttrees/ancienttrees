@@ -4,9 +4,9 @@
   "status": "needs_curation",
   "oldest_tree_id": "rot_001",
   "intro": "Rotterdam's old trees are survivors first and monuments second. The German bombing of May 1940 erased most of the city centre in a single night, and the soft, subsiding soil across much of the region shortens most trees' working lives regardless of what happens above ground; the city has barely 3,000 monumental trees against 600,000 total. What remains earned its place the hard way: a plane that predates the park built around it, another that survived the exact firestorm that flattened everything nearby, a coronation linden, a beech that watched the shipping elite build their street.",
-  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. 15 verified locations.",
+  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. 17 verified locations.",
   "question_answer": "Rotterdam's oldest tree is the Plane of het Park, standing since around 1800, before landscape architects Jan David and Louis Paul Zocher designed the park around it in 1852. At roughly 226 years old, it has survived both the 1940 bombing that destroyed much of the city centre and the 1953 flood that put het Park itself underwater.",
-  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus fourteen more.",
+  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus sixteen more.",
   "question_context": "Rotterdam's tree ages tell a story most Dutch cities don't have to tell: almost everything old here either predates the 20th century's two great disasters or was planted afterward to replace what didn't survive them. The Park Plane and the Breitenbach Plane both cleared the German bombing of 14 May 1940 that flattened the historic centre a short walk from each of them, and the Park Plane cleared a second disaster besides, the 1953 flood that put much of the park underwater for weeks. That double survival is the actual basis for calling it Rotterdam's oldest confirmed tree rather than simply its most storied one; several other candidates are old enough to be plausible rivals but lack a comparably documented history reaching back before 1900. The Wilhelmina Linden and the Koningin Emmaplein Beech are both younger by a wide enough margin, planted within a few decades of each other in the 1890s, that the ranking among Rotterdam's oldest three genuinely rests on the two 19th-century-or-earlier planes rather than any of the turn-of-the-century additions.",
   "faq": [
     {
@@ -615,6 +615,95 @@
         "label": "scented lime flowers, loud with bees",
         "kind": "flowers"
       }
+    },
+    {
+      "id": "rot_017",
+      "name": "The Wilhelmina Chestnut of Noordereiland",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "roughly 130 to 150 years",
+      "age_min": 125,
+      "age_max": 155,
+      "age_basis": "derived",
+      "girth_cm": 390,
+      "height_m": 21,
+      "location": {
+        "address": "Burgemeester Hoffmanplein, corner of Van der Takstraat, Noordereiland, Rotterdam",
+        "latitude": 51.914017,
+        "longitude": 4.49587,
+        "neighbourhood": "Noordereiland"
+      },
+      "verified_sources": [
+        "https://noordereiland.org/2026/twee-verhalen-een-kastanje/",
+        "https://noordereiland.org/2022/bijzondere-bomen-op-het-noordereiland/",
+        "https://nl.wikipedia.org/wiki/Wilhelminafontein_(Rotterdam)"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1691895",
+        "url": "https://www.monumentalebomen.nl/"
+      },
+      "access": "Free, open public square (Burgemeester Hoffmanplein) on Noordereiland; no hours.",
+      "transport": "Noordereiland is reached over the Koninginnebrug from Rotterdam Centrum; walking time from the nearest metro stop not verified.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Burgemeester Hoffmanplein (small square with the Wilhelmina fountain)",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "verify_notes": "Alive per noordereiland.org, 26 June 2026 (updated 30 Sept 2026): the chestnut stands but is in poor health (chestnut bleeding canker plus two life-threatening fungi on the trunk); a large main branch broke off some years ago and was saved by tree surgeons; expected to become a safety risk and be removed 'in a few years'. Not yet removed. Girth 'almost 4 m', height 18-24 m (noordereiland.org, citing tree knight Pim Janse; same figures on the 2022 page). Age disputed: register planted_band 1880-1890 and register history 'planted 1898 for Wilhelmina's accession'; noordereiland.org 2026 says planted 1889 for the inauguration; noordereiland.org 2022 says 'from 1870'; nl.wikipedia says probably planted 1898 with the fountain. Wilhelmina was inaugurated in 1898, so 1889 reads as a typo. Derived age is broad, from the register band plus the 1898 claim; not sharpened. WWII story (register and noordereiland.org agree): known to resistance people as the 'dubbele paardenkastanje' (double chestnut), a Wilhelmina tree residents guarded as a quiet act of resistance; a second story told that it grew on ground where the dead were buried so better not cut; elders in the 1970s said 'come back when it flowers, then you see two flowers'; survived the fighting around Noordereiland and the Maas bridges and the Hunger Winter when trees were felled for fuel; a tale says someone tried to fell it and gave up after one branch. Its roots cracked the Wilhelmina fountain (Evers design, 1898) in the early 1990s; fountain removed, restored and replaced a century after the inauguration (nl.wikipedia). Flowers April-May (noordereiland.org). A second chestnut on the same square opposite the Lelieblok, planted 1920, girth almost 3 m, height 15-18 m, good health, is the SMALLER one; the subject is the larger one at the corner of Van der Takstraat beside the fountain. Pin: register coordinate (nr 1691895, n_trees 1), not checked on aerial imagery; OSM natural=tree nodes on the square carry no species, so approximate. Covered-country rule (NL): no photo and no confirmed pin, so strictly a lead; delivered as flagged for the orchestrator's gate. Commons geosearch within 100 m found no tree photo; lifecheck NONE.",
+      "story": "Noordereiland kept this chestnut alive through the Second World War with a ghost story. It was a Wilhelmina tree, and while trees across occupied Rotterdam went for firewood, a tale went round that it grew on ground where the dead lay, and that whoever cut it would bring bad luck on himself and his neighbours. Among resistance people it was known as the double chestnut. In the 1970s older islanders still said it: come back when it flowers, and you will see two flowers.\n\nIt came through the fighting around the island and the Maas bridges, and the Hunger Winter. One tale says somebody did try to fell it and gave up after a single branch.\n\nWhen it went in is less settled. The national register gives 1880 to 1890 and also 1898, for Wilhelmina's accession; Dutch Wikipedia says probably 1898, with the fountain beside it; the island's website has said 1870 and, elsewhere, 1889. That leaves it somewhere between about 125 and 155 years old.\n\nIt is almost four metres round and 18 to 24 metres tall. In the early 1990s its roots cracked the Wilhelmina fountain, which was removed, restored and put back.\n\nThe news now is not good. The trunk carries bleeding canker and two life-threatening fungi, and a main branch broke off some years ago. Local reporting in 2026 expects it to be felled within a few years. If you want to see the double chestnut in flower, do not wait long.",
+      "how_to_recognise": "You can recognise it as the larger of the two horse chestnuts on the Burgemeester Hoffmanplein, almost four metres round. It stands at the corner of Van der Takstraat beside the fountain; the smaller one faces the Lelieblok.",
+      "best_time": {
+        "months": [
+          4,
+          5
+        ],
+        "kind": "flowers",
+        "label": "late April into May, when white flower candles stand over the whole crown"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": []
+    },
+    {
+      "id": "rot_018",
+      "name": "The Copper Beech of Overschie",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "about 130 years",
+      "age_min": 130,
+      "age_max": 132,
+      "age_basis": "source",
+      "location": {
+        "address": "Overschiese Dorpsstraat, opposite no. 100, at the Grote Kerk (no. 95), Overschie, Rotterdam",
+        "latitude": 51.938906,
+        "longitude": 4.419946,
+        "neighbourhood": "Overschie"
+      },
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (nr 1692083)",
+        "https://services-eu1.arcgis.com/qONmLUR87PipcM5W/arcgis/rest/services/LRMB_v2024_openbaar/FeatureServer/1/query?where=nr%3D1692083&outFields=*&f=json"
+      ],
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692083",
+        "url": null
+      },
+      "access": "Free to view from the street: the register says it stands about six metres from the Overschiese Dorpsstraat, opposite no. 100, and is easy to see from the public road. The ground belongs to the church.",
+      "transport": "Overschie is in north-west Rotterdam; public transport to the Overschiese Dorpsstraat not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "In 1899 lightning burned down Overschie's medieval church. A new Grote Kerk went up, and in 1901, once it was finished, a gardener named Voorhorst planted a copper beech on the church's ground. This is that beech.\n\nThe national register of monumental trees, which tells the story, also does the arithmetic. The young tree was probably five to seven years old when Voorhorst put it in, which makes it about 130 years old now. A planting year, an occasion and a gardener's name, all on one tree.\n\nThere were once two. The register says a second copper beech was lost to a strong westerly wind; this one is the survivor.\n\nYou do not need to go through a gate to see it. The register puts it about six metres back from the Overschiese Dorpsstraat, opposite number 100, and says it is easy to see from the public road. Copper beeches open their leaves purple in spring and turn copper before they fall, so the same tree reads differently in April and in October.\n\nOne caveat, stated plainly. The most recent photograph we could find dates from 2021, and a register cannot say whether a tree still stands. If you pass the church, tell us it is there, and if you have a tape measure, how far round it has grown in 130 years.",
+      "how_to_recognise": "You can recognise it by its purple-brown leaves, the copper beech's colour. It stands about six metres back from the Overschiese Dorpsstraat, opposite number 100, at the Grote Kerk.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "photos": [],
+      "verify_notes": "Register only (LRMB nr 1692083, status 3, owner religious body, visitable ja, visible onbekend, setting agrarisch). Register history: planted 1901 by gardener Voorhorst after the new Grote Kerk of Overschie was finished, assumed 5 to 7 years old then, so circa 130 years; a second specimen lost to strong westerly wind; the old medieval church burned after a lightning strike in 1899; the tree is very well visible from the public road, about six metres from the Overschiese Dorpsstraat (opposite no. 100). No independent second source found; lifecheck OLD (2021), so alive is thin and the page says so. Pin is the register coordinate, not checked on aerial imagery: approximate. Written from READY lead 'Bruine beuk Overschie' (data/leads/rotterdam.json) 2026-10-20; nearest live Rotterdam tree is rot_012 at 3.5 km, so not a duplicate."
     }
   ]
 }

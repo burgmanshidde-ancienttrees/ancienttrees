@@ -100,6 +100,10 @@
     "2026-10-13": {
       "note": "iOS app run 38441230076 failed on infrastructure: test job not acquired by a hosted macOS runner (capacity), no assertion failed",
       "at": "2026-10-13T21:12:17+00:00"
+    },
+    "2026-10-20": {
+      "note": "iOS app failure at 10:55 was 40 passed 1 failed (flaky-looking, after a merge of flag-avatar); the failing test name is only in the xcresult artifact; the 12:46 run is in progress on newer main, so no action until it finishes",
+      "at": "2026-10-20T13:15:48+00:00"
     }
   }
 }
