@@ -2,50 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-30T14:33:45+00:00",
-   "date": "2026-08-30",
-   "run_id": "33317187641",
-   "minutes": 98.5,
-   "minutes_basis": "measured",
-   "attempts": 3,
-   "turns": 322,
-   "denials": 53,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(printenv), Bash(python3), Bash(rm), Bash(tail), Bash(test), Bash(which)",
-   "ended": "success",
-   "tokens": 40840954,
-   "claims_held": [],
-   "commits": 12,
-   "cities_touched": 6,
-   "cities": [
-    {
-     "city": "krakow",
-     "trees": 8
-    },
-    {
-     "city": "singapore",
-     "trees": 4
-    },
-    {
-     "city": "nuremberg",
-     "trees": 1
-    },
-    {
-     "city": "assisi",
-     "trees": 0
-    },
-    {
-     "city": "bamberg",
-     "trees": 0
-    },
-    {
-     "city": "cesky-krumlov",
-     "trees": 0
-    }
-   ],
-   "trees": 13,
-   "logged": true
-  },
-  {
    "started": "2026-08-30T16:36:06+00:00",
    "date": "2026-08-30",
    "run_id": "33322902676",
@@ -24210,6 +24166,53 @@
     }
    ],
    "trees": 5,
+   "logged": true
+  },
+  {
+   "started": "2026-10-20T15:13:32+00:00",
+   "date": "2026-10-20",
+   "run_id": "39446346192",
+   "minutes": 67.8,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 168,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 355146,
+   "claims_held": [
+    "fort-worth",
+    "vienna"
+   ],
+   "commits": 26,
+   "cities_touched": 6,
+   "cities": [
+    {
+     "city": "potsdam",
+     "trees": 4
+    },
+    {
+     "city": "washington-dc",
+     "trees": 4
+    },
+    {
+     "city": "hallstatt",
+     "trees": 2
+    },
+    {
+     "city": "nuremberg",
+     "trees": 2
+    },
+    {
+     "city": "seattle",
+     "trees": 2
+    },
+    {
+     "city": "regensburg",
+     "trees": 1
+    }
+   ],
+   "trees": 15,
    "logged": true
   }
  ],
