@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 night run (13:13 UTC window)
+- **Product:** a reader's photograph of the Campo Santana weeping fig (Lisbon, lis_015) is live, replacing a held panoramio image; their GPS fix moved the pin 129 m and confirmed it. Looked at the pixels first: big fig, aerial roots, daylight and colour. Five trees written: Bamberg bam_007 to 009 (now 9), Rotterdam rot_017 and rot_018 (now 17), with the city copy counts fixed. Held as leads on access: Innsbruck inn_007 (probably a private yard) and the Rotterdam church-garden beech at the Pelgrimvaderskerk.
+- **Breakage:** iOS app run of 10:55 failed 40 passed 1 failed (test name only in the xcresult); newer runs are in progress, answered in health.py, no action without the Mac. Mistake worth knowing: sightings_publish does not write the judgements.json entry, and preflight then refuses; I added it by hand (out/tmp/addjudge.py) after the queue had emptied.
+- Still on the shelf: 91 claimable staged cities, REFILL THE SHELF flag (1,024 leads need only a source).
+
 ## 2026-10-20 session: the app's layout gate now measures the right edge too
 - **App, layout gate (appfit.py).** Until now it only caught things a few points off the shared LEFT edge. It now asks the same of the RIGHT edge (TRAIL): cards, buttons and photos that should end at the same distance from the right side and miss by 2 to 11 points. Prompted by the map tab's pin sheet, whose cross sat off the card's edge (2026-10-19/20). Same exemptions as the left edge, plus left-aligned text, whose right end is just where the words stop.
 - First run on both phones (iPhone 17 Pro and SE, iOS 26.5): one element on five screens, the tree page's little map in the photo's bottom-right corner. It sits 10 points in from the photograph's corner on purpose (Airbnb's photo-and-map swap), so it is exempt like the pills on a card photo; the photo-less branch now carries the same identifier. After that, 0 findings on 80 screens, and the rule fails the gate like DRIFT does.
