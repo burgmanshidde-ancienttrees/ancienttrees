@@ -216,5 +216,52 @@
   "story": "Frederick Law Olmsted and Calvert Vaux are remembered for Central Park and Prospect Park, but some of their planting still stands in Fort Greene. This English elm, according to the coverage of NYC Parks' 2024 Great Trees list, was planted as part of their original design for the park, and the city now counts it among its Great Trees.\n\nThe Olmsted and Vaux work here dates from the 1860s, which puts the elm at about 160 years, give or take a couple of decades. Treat that as a derivation rather than a record: nobody has published a planting year for this particular tree, and one writer who went looking called the date simply unknown.\n\nIts size is in a similar state. A blogger who walked the park counted 760 trees, 37 of them elms, and judged this one about 80 feet tall and the largest in the park bar one rival, with a trunk he guessed at ten feet across. That is an eyeball estimate, and it does not match other figures in circulation, so we print no trunk size as fact. If you bring a tape measure, the number is yours to give us.\n\nLook for it on the eastern side of the park, along its Tree Trail; our pin puts you in that half of the park rather than at the trunk.",
   "how_to_recognise": "You can recognise it as one of the two biggest trees in the park by one count, an English elm about 80 feet tall. It stands on the eastern side of Fort Greene Park, along the park's Tree Trail.",
   "written": true
+ },
+ {
+  "id": "nyc_028",
+  "name": "The Weeping Beech of Weeping Beech Park",
+  "species": "European Weeping Beech (Fagus sylvatica 'Pendula')",
+  "age_estimate": "not documented",
+  "location": {
+   "address": "Weeping Beech Park, 37th Avenue at Parsons Boulevard, Flushing, Queens",
+   "latitude": 40.7636,
+   "longitude": -73.8242,
+   "neighbourhood": "Flushing, Queens"
+  },
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Weeping_Beech_(Queens)",
+   "https://www.ny1.com/nyc/all-boroughs/human-interest/2022/08/15/a-massive-weeping-beech-tree-grows-in-flushing",
+   "https://www.qchron.com/news/north/historic-douglaston-beech-tree-has-beginnings-in-flushing/article_f624e606-e073-5c73-9201-4a4403cf7319.html"
+  ],
+  "access": "Free, public NYC park (playground and beech grove behind the Kingsland Homestead); the two museum houses keep their own hours.",
+  "transport": "Flushing-Main St (7 train) station is the nearest hub; walk time not measured.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "THE ORIGINAL IS DEAD; this entry is the living replacement/offspring only. Original: cutting brought from Belgium by Samuel Bowne Parsons, planted 1847, NYC Landmark 1966 (spread 85 ft, height 65 ft, girth 14 ft then), declared dead by Parks 1998, funeral December 1998, a 10 ft trunk section kept as memorial March 1999 (Wikipedia). Alive today: Wikipedia says the park has a grove of weeping beeches descended from the 1847 original and, as of 2022, 'a large weeping beech occupies the site of the original'. NY1 (16 Aug 2022): a cross-section of the old trunk was replanted on the same spot and a new tree now stands there, behind Kingsland Homestead. Queens Chronicle: eight young trees around the stump are offshoots. Sources differ on whether the big tree is a replanting or offspring: state as 'descendant'. No age or girth source for the living tree; leave empty. Lifecheck RECENT: iNaturalist observation 2026-07-24 within range (https://www.inaturalist.org/observations/384756042). Pin is the Wikidata Q60748087 coordinate for the park, not the trunk. Also in the park per Wikipedia: Golden Larch on 37th Ave sidewalk, large Cedar of Lebanon in the playground, abutting Northern Red Oak (49 in diameter) and White Oak (50 in), both over 80 ft; unpinned, left as leads. Douglaston weeping beech (maybe a first cutting, kept by the Douglaston Garden Club) is separate and unverified. Great Trees id=115 not readable (405)."
+ },
+ {
+  "id": "nyc_029",
+  "name": "The American Hornbeam of Prospect Park",
+  "species": "American Hornbeam (Carpinus caroliniana)",
+  "age_estimate": "not documented",
+  "height_m": 25.7,
+  "location": {
+   "address": "Across from the Camperdown Elm where three trails meet, Prospect Park, Brooklyn",
+   "latitude": 40.6605,
+   "longitude": -73.9655,
+   "neighbourhood": "Prospect Park, Brooklyn"
+  },
+  "verified_sources": [
+   "https://www.nycgovparks.org/facilities/great-trees?id=9"
+  ],
+  "official_register": {
+   "name": "NYC Parks Great Trees (Prop ID B073, tree code Bk15)",
+   "url": "https://www.nycgovparks.org/facilities/great-trees?id=9"
+  },
+  "access": "Free, open public park; stands at a path junction.",
+  "transport": "Subway to Prospect Park (B, Q) or Grand Army Plaza (2, 3); walk time not measured. The Camperdown Elm is the landmark.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register only (NYC Parks Great Trees, read on a Wayback snapshot dated 2026-07-15; nycgovparks.org itself returns 405). Register fields: height 84.46 ft (25.7 m), average canopy spread 72.5 ft, trunk diameter 115 in, AFA points 464. Description: 'located across from the camperdown elm in Prospect Park... known for its distinctive blue-grey limbs, sinewy and smooth, that twist and swell like muscular arms.' SANITY FLAG: 115 in diameter (292 cm) is not plausible for a hornbeam; the AFA total (464) only works if 115 is read as a diameter and circumference 361 in, which is as implausible. The unit or measurement is probably corrupt; no girth recorded here and none should be printed. Height 84 ft is also very tall for the species. Hence flagged. Alive: iNaturalist observation 2026-10-13 within range of the register point (https://www.inaturalist.org/observations/408768204; not confirmed to be this trunk). Register page map point 40.6605, -73.9655 sits beside the Camperdown Elm (nyc_003): approximate, not one proven crown. No planting date or age in any source. Unusual among Great Trees as a native understory species. Same spot as nyc_003 (Camperdown Elm), so one walk."
  }
 ]
