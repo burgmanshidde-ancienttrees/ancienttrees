@@ -476,7 +476,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 271 | Middletown | 1.64 | - | - | - | - | - | 10 | predicted (travel demand) |
 | 272 | Canterbury | 1.59 | 53,301 | - | - | - | - | 20 | predicted (travel demand) |
 | 273 | Liverpool | 1.61 | 248,189 | 2 | 2 | - | - | 30 | published, never ranked (may be uncrawled) |
-| 274 | Freiburg | 1.54 | 92,752 | 7 | 3 | 1 | - | 20 | published, never ranked (may be uncrawled) |
+| 274 | Freiburg | 1.54 | 92,752 | 8 | 4 | 1 | - | 20 | published, never ranked (may be uncrawled) |
 | 275 | Rio de Janeiro | 1.59 | 279,431 | 6 | - | - | - | 100 | published, never ranked (may be uncrawled) |
 | 276 | Mostar | 1.58 | 63,907 | - | - | - | - | 20 | predicted (travel demand) |
 | 277 | Reykjavik | 1.38 | 166,789 | 4 | 3 | 1 | - | 20 | published, never ranked (may be uncrawled) |
