@@ -34,28 +34,37 @@ struct TreePlaceHeader: View {
         } else if let lo = tree.ageMin, lo > 0 {
             parts.append(tree.ageMax.map { $0 > lo ? "\(lo)-\($0) years" : "\(lo) years" } ?? "\(lo) years")
         }
-        return parts.joined(separator: " · ")
+        return parts.filter { !$0.isEmpty }.joined(separator: " · ")
     }
 
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
-            ShareLink(item: URL(string: "https://ancienttrees.app" + tree.url)!,
-                      subject: Text(tree.name)) {
-                PlaceCircle(symbol: "square.and.arrow.up")
+            // A tree you added has no public page yet, so nothing to share:
+            // the same space stays empty and the name stays centred.
+            if tree.url.isEmpty {
+                Color.clear.frame(width: 38, height: 38)
+            } else {
+                ShareLink(item: URL(string: "https://ancienttrees.app" + tree.url)!,
+                          subject: Text(tree.name)) {
+                    PlaceCircle(symbol: "square.and.arrow.up")
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Share \(tree.name)")
+                .accessibilityIdentifier("place-share")
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Share \(tree.name)")
-            .accessibilityIdentifier("place-share")
 
             VStack(spacing: 2) {
                 Text(tree.name)
                     .font(.brand(20, .bold, relativeTo: .title3))
                     .foregroundStyle(Brand.ink)
                     .lineLimit(2)
-                Text(meta)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(1)
+                // A tree you added may have no species or age yet.
+                if !meta.isEmpty {
+                    Text(meta)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(1)
+                }
             }
             .multilineTextAlignment(.center)
             .frame(maxWidth: .infinity)
@@ -137,10 +146,18 @@ extension View {
 
 struct TreePlaceBody: View {
     let tree: Tree
+    /// A tree you added yourself wears your photograph, as its card does in
+    /// My trees (Hidde, 2026-10-20: the pin step "ook voor mijn eigen bomen").
+    var ownPhoto: UIImage? = nil
+    var isOwn = false
     let onOpen: () -> Void
 
     var body: some View {
-        Button(action: onOpen) { TreeCard(tree: tree, showText: false) }
+        // No heart on your own tree: it is in your collection already, the
+        // rule the tree page keeps too.
+        Button(action: onOpen) {
+            TreeCard(tree: tree, showHeart: ownPhoto == nil && !isOwn, ownPhoto: ownPhoto, showText: false)
+        }
             .buttonStyle(.plain)
             .accessibilityIdentifier("place-card")
             .padding(.horizontal, 16)

@@ -36,6 +36,9 @@ struct MapTab: View {
     @State private var mapIdle = false
 
     @State private var selected: Tree?
+    /// Set when the tapped pin is one of YOUR trees, so its card wears your
+    /// photograph and opens your tree's own page (Hidde, 2026-10-20).
+    @State private var selectedMine: UUID?
     /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
     /// simctl cannot tap, so the one screen that only exists after a tap could
     /// not be looked at before it shipped.
@@ -311,6 +314,13 @@ struct MapTab: View {
             .map { ($0, $0.distanceKm(from: focus.lat, focus.lng)) }
     }
 
+    /// The sighting behind the selected pin when it is one of yours, and only
+    /// while that same pin is still the one selected.
+    private func mine(for t: Tree) -> Sightings.Sighting? {
+        guard let id = selectedMine else { return nil }
+        return sightings.all.first { $0.id == id && sightings.asTree($0).id == t.id }
+    }
+
     var body: some View {
         // THE SHARED COMPONENT (Hidde, 2026-08-26: "je wilt deze interactie als
         // component hebben en overal hetzelfde hebben"). This screen is where
@@ -323,7 +333,12 @@ struct MapTab: View {
                     collected: collectedIds,
                     favourites: favouriteIds,
                     onLocationRefused: { refused = .location },
-                    onSelectMine: { navigator.push = .mine($0) },
+                    // Your own tree selects too, the same step as ours (2026-10-20).
+                    onSelectMine: { id in
+                        guard let m = sightings.all.first(where: { $0.id == id }) else { return }
+                        selectedMine = id
+                        selected = sightings.asTree(m)
+                    },
                     // A pin SELECTS, it does not open (Hidde, 2026-10-18, from
                     // the Apple Maps recording): no onSelectTree, so TreeMap
                     // writes `selected` and the sheet becomes that tree.
@@ -381,7 +396,13 @@ struct MapTab: View {
                 // scrolls, and the grabber at the top stays outside the scroll
                 // view so there is always a way back down.
                 if let t = selected {
-                    TreePlaceBody(tree: t, onOpen: { navigator.push = .tree(t.id) })
+                    TreePlaceBody(tree: t,
+                                  ownPhoto: mine(for: t).flatMap { sightings.thumbnail($0, maxPixel: 900) },
+                                  isOwn: mine(for: t) != nil,
+                                  onOpen: {
+                                      if let m = mine(for: t) { navigator.push = .mine(m.id) }
+                                      else { navigator.push = .tree(t.id) }
+                                  })
                 } else {
                     sheet
                 }

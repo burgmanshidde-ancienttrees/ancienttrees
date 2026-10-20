@@ -87,6 +87,9 @@ struct CollectView: View {
     @State private var sheetHeight: SheetHeight =
         ProcessInfo.processInfo.arguments.contains("-sheet=full") ? .full : .half
     @State private var selectedTree: Tree?
+    /// Set when the tapped pin is one of YOUR trees, so its card wears your
+    /// photograph and opens your tree's own page (Hidde, 2026-10-20).
+    @State private var selectedMine: UUID?
     @Environment(Profiles.self) private var profiles
 
     // TWO lanes, not three. "Collected" and "Added by you" were separate until
@@ -309,6 +312,13 @@ struct CollectView: View {
         lane = .want
     }
 
+    /// The sighting behind the selected pin when it is one of yours, and only
+    /// while that same pin is still the one selected.
+    private func mine(for t: Tree) -> Sightings.Sighting? {
+        guard let id = selectedMine else { return nil }
+        return sightings.all.first { $0.id == id && sightings.asTree($0).id == t.id }
+    }
+
     var body: some View {
         // THE SAME COMPONENT THE MAP SCREEN USES (Hidde, 2026-08-26: "ik wil
         // gewoon dezelfde interactie als op home ... je wilt deze interactie
@@ -327,7 +337,13 @@ struct CollectView: View {
             }
         } content: {
             if let t = selectedTree {
-                TreePlaceBody(tree: t, onOpen: { navigator.push = .tree(t.id) })
+                TreePlaceBody(tree: t,
+                                  ownPhoto: mine(for: t).flatMap { sightings.thumbnail($0, maxPixel: 900) },
+                                  isOwn: mine(for: t) != nil,
+                                  onOpen: {
+                                      if let m = mine(for: t) { navigator.push = .mine(m.id) }
+                                      else { navigator.push = .tree(t.id) }
+                                  })
             } else {
                 sheetBody
             }
@@ -499,7 +515,12 @@ struct CollectView: View {
                      photo: sightings.thumbnail($0, maxPixel: 160)) },
                 collected: Set(saved.collected.map(\.treeId)),
                 favourites: Set(saved.favourites.map(\.treeId)),
-                onSelectMine: { navigator.push = .mine($0) },
+                // Your own tree selects too, the same step as ours (2026-10-20).
+                    onSelectMine: { id in
+                        guard let m = sightings.all.first(where: { $0.id == id }) else { return }
+                        selectedMine = id
+                        selectedTree = sightings.asTree(m)
+                    },
                 // A pin selects, as on the Map tab (TreePlaceSheet.swift).
                 focus: centreOfYours,
                 spanMeters: spanOfYours,
