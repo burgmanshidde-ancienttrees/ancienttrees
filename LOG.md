@@ -19,6 +19,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: a "Yes" waits for a newer version, four months on
+
+- **App**: refines the entry below. Somebody can say "Yes" and never rate, so a yes no longer ends the asking for good: it stays quiet until a newer app version AND at least 120 days, then asks once more (Apple's own sample asks once per version; somebody who did rate usually sees nothing then, iOS keeps its dialog away). New device key `reviewPrompt.yes.v1` ruled `device` in data/cross-device.json; ReviewPromptTests 14/14.
+
 ## 2026-10-20 session with Hidde: a "Yes" to the review question ends the asking
 
 - **App**: after "Yes" on "Are you enjoying Ancient Trees?" the app never asks again (Hidde: "iemand die al beoordeeld heeft niet meer vragen, dat lijkt me de conventie"). Apple never tells an app whether somebody rated, so the yes is the signal; "Not really" keeps the later milestones. Apple's dialog is now asked for once our sheet has closed, since a request during the dismissal may be dropped. Kit/ReviewPrompt.swift, new test `aYesEndsTheAskingForGood`; ReviewPromptTests 13/13 on the 17 Pro.

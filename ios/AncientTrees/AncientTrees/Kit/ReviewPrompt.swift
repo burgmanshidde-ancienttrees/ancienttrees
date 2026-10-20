@@ -41,8 +41,12 @@ public final class ReviewPrompt {
     private let firedKey = "reviewPrompt.fired.v2"
     private let lastKey = "reviewPrompt.last.v2"
     private let seenKey = "reviewPrompt.seen.v1"
+    private let yesKey = "reviewPrompt.yes.v1"
     private let maxAsks = 3
     private let quietDays = 7.0
+    /// After a "Yes": silent until a NEWER version and this many days.
+    static let yesQuietDays = 120.0
+    private let version: String
     private let suppressedOverride: Bool?
 
     /// Set the moment a milestone is reached; the ROOT view watches this and
@@ -78,13 +82,32 @@ public final class ReviewPrompt {
 
     public var seenCount: Int { seen.count }
 
-    public init(defaults: UserDefaults = .standard, suppressed: Bool? = nil) {
+    /// The version and day somebody said "Yes", until the one ask after it.
+    private var yes: (version: String, date: Date)? {
+        get {
+            guard let d = defaults.dictionary(forKey: yesKey),
+                  let v = d["version"] as? String, let t = d["date"] as? Date else { return nil }
+            return (v, t)
+        }
+        set {
+            if let newValue {
+                defaults.set(["version": newValue.version, "date": newValue.date], forKey: yesKey)
+            } else {
+                defaults.removeObject(forKey: yesKey)
+            }
+        }
+    }
+
+    public init(defaults: UserDefaults = .standard, suppressed: Bool? = nil, version: String? = nil) {
         self.defaults = defaults
         self.suppressedOverride = suppressed
+        self.version = version
+            ?? Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
         if ProcessInfo.processInfo.arguments.contains("-reset-collection") {
             defaults.removeObject(forKey: firedKey)
             defaults.removeObject(forKey: lastKey)
             defaults.removeObject(forKey: seenKey)
+            defaults.removeObject(forKey: yesKey)
         }
     }
 
@@ -117,6 +140,13 @@ public final class ReviewPrompt {
         return milestones.first { total >= $0.count && !fired.contains($0.name) }?.name
     }
 
+    /// After a "Yes", the one later ask: a different version than the one
+    /// they said yes on, and at least `yesQuietDays` since.
+    static func asksAgainAfterYes(yesVersion: String, yesDate: Date, version: String, now: Date,
+                                  quietDays: Double = yesQuietDays) -> Bool {
+        version != yesVersion && now.timeIntervalSince(yesDate) >= quietDays * 86_400
+    }
+
     /// Called at a pause: a tree page closing, or a tree just ticked off.
     /// Sets `pending` when a new milestone is reached and conditions allow
     /// it, which is the root's cue to make the system ask. Returns the same
@@ -124,6 +154,14 @@ public final class ReviewPrompt {
     @discardableResult
     public func consider(now: Date = Date()) -> Bool {
         guard !suppressed else { return false }
+        if let yes {
+            guard Self.asksAgainAfterYes(yesVersion: yes.version, yesDate: yes.date,
+                                         version: version, now: now) else { return false }
+            self.yes = nil
+            last = now
+            pending = true
+            return true
+        }
         guard let name = Self.milestone(for: seen.count, fired: fired, last: last, now: now,
                                          maxAsks: maxAsks, quietDays: quietDays) else {
             return false
@@ -136,13 +174,16 @@ public final class ReviewPrompt {
         return true
     }
 
-    /// A "Yes" ends the asking for good (Hidde, 2026-10-20: "iemand die al
-    /// beoordeeld heeft niet meer vragen, dat lijkt me de conventie").
-    /// Apple never tells an app whether somebody rated, so the yes is the
-    /// closest thing we know: every milestone counts as fired from here.
-    /// A "Not really" leaves the later milestones in place.
-    public func answeredYes() {
+    /// A "Yes" quiets the asking until a newer version, at least four months
+    /// on (Hidde, 2026-10-20). Apple never tells an app whether somebody
+    /// rated, so a yes that never became a rating gets one more chance, as
+    /// Apple's own sample asks once per version; somebody who did rate
+    /// usually sees nothing then, because iOS does not show its dialog
+    /// again. Every milestone counts as fired from here. A "Not really"
+    /// leaves the later milestones in place.
+    public func answeredYes(now: Date = Date()) {
         fired = Set(Self.milestones.map(\.name))
+        yes = (version, now)
     }
 }
 

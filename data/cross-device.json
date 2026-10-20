@@ -83,6 +83,10 @@
       "verdict": "device",
       "why": "Which trees this install saw before asking."
     },
+    "reviewPrompt.yes.v1": {
+      "verdict": "device",
+      "why": "The app version and day this install said yes to the review question, so it waits for a newer version."
+    },
     "at_id": {
       "verdict": "not a store",
       "why": "A MapLibre feature property name, not persistence."

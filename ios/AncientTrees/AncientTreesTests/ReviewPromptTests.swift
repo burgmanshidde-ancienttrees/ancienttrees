@@ -129,19 +129,39 @@ struct ReviewPromptTests {
         #expect(second.consider() == true)
     }
 
-    @Test func aYesEndsTheAskingForGood() {
-        // Somebody who said yes is never asked again, however many trees
-        // they look at or how long they wait.
+    @Test func aYesStaysQuietOnTheSameVersion() {
+        // A year on, same version: still nothing, however many trees.
         let s = Scratch(); defer { s.clean() }
-        let prompt = ReviewPrompt(defaults: s.defaults, suppressed: false)
+        let prompt = ReviewPrompt(defaults: s.defaults, suppressed: false, version: "1.4")
         let now = Date()
         prompt.saw("a"); prompt.saw("b"); prompt.saw("c")
         #expect(prompt.consider(now: now) == true)
-        prompt.answeredYes()
+        prompt.answeredYes(now: now)
 
         for i in 0..<30 { prompt.saw("tree_\(i)") }
         let yearLater = now.addingTimeInterval(365 * 86_400)
-        #expect(ReviewPrompt(defaults: s.defaults, suppressed: false).consider(now: yearLater) == false)
+        let same = ReviewPrompt(defaults: s.defaults, suppressed: false, version: "1.4")
+        #expect(same.consider(now: yearLater) == false)
+    }
+
+    @Test func aYesAsksOnceMoreOnANewerVersionFourMonthsOn() {
+        let s = Scratch(); defer { s.clean() }
+        let now = Date()
+        let first = ReviewPrompt(defaults: s.defaults, suppressed: false, version: "1.4")
+        first.saw("a"); first.saw("b"); first.saw("c")
+        #expect(first.consider(now: now) == true)
+        first.answeredYes(now: now)
+
+        // A new version too soon: quiet.
+        let monthLater = now.addingTimeInterval(30 * 86_400)
+        #expect(ReviewPrompt(defaults: s.defaults, suppressed: false, version: "1.5")
+            .consider(now: monthLater) == false)
+
+        // A new version four months on: one ask, and only one.
+        let later = now.addingTimeInterval(121 * 86_400)
+        let newer = ReviewPrompt(defaults: s.defaults, suppressed: false, version: "1.6")
+        #expect(newer.consider(now: later) == true)
+        #expect(newer.consider(now: later.addingTimeInterval(365 * 86_400)) == false)
     }
 
     @Test func neverFiresUnderXCTest() {
