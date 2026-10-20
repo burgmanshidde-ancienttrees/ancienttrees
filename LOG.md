@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session: the app's layout gate now measures the right edge too
+- **App, layout gate (appfit.py).** Until now it only caught things a few points off the shared LEFT edge. It now asks the same of the RIGHT edge (TRAIL): cards, buttons and photos that should end at the same distance from the right side and miss by 2 to 11 points. Prompted by the map tab's pin sheet, whose cross sat off the card's edge (2026-10-19/20). Same exemptions as the left edge, plus left-aligned text, whose right end is just where the words stop.
+- First run on both phones (iPhone 17 Pro and SE, iOS 26.5): one element on five screens, the tree page's little map in the photo's bottom-right corner. It sits 10 points in from the photograph's corner on purpose (Airbnb's photo-and-map swap), so it is exempt like the pills on a card photo; the photo-less branch now carries the same identifier. After that, 0 findings on 80 screens, and the rule fails the gate like DRIFT does.
+- Limit, said plainly: 44 point icon buttons stay exempt on both edges, because their hit box is wider than the drawn circle (the pin sheet's cross is a 38 point circle in a 44 box pulled 3 points out). A frame check cannot see the circle; the eyes rule and the reference beside the design still carry that case.
+
 ## 2026-10-20 side session: the tourism-site feeder, and ten mails to visit-the-city sites on Hidde's desk
 
 - **No product change.** Outreach only (Hidde, 2026-10-20: "start doing all this", the tourism group of OUTREACH_STRATEGY.md).
