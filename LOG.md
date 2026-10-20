@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 night run (00:54): four photographs approved
+
+- Rung 6/photos: photo_fetch.py --roster plus a photo-judge pass over 120 candidates: 4 approved (Dresden dre_025, dre_029, dre_030 oaks; Luxembourg lux_008 sycamore, bare in winter), 1 held (kra_033), 115 rejected. Reversal commands are in the commit message of 3e862b604's report: `python3 scripts/photo_apply.py hold <id> <url> --reason "overruled"`. Some of these look like the Dresden oaks already approved on 10-19; the sweep was marked exhausted and I reran it anyway, so do not run it again.
+- Rung 1: the Freiburg beech (ed90210d) still has no file on this runner, verdict left open. New trees: none; Rothenburg has only 5 leads (under the six-candidate floor, 48h wall), Munich is full at 63/60.
+
 ## 2026-10-20 night run (00:41): nothing published
 
 - Rung 1: the one open reader photograph (ed90210d, European Beech in Freiburg, 47.9543 7.8067) has no file on this runner (out/sightings/ is empty for it), so its verdict stays open until a run can look at the pixels. corroborate.py: no register entry within 100 m, no Wikipedia tree article within 300 m.
