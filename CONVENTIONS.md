@@ -1238,7 +1238,11 @@ The two web libraries regroup only per whole zoom level, so inside a level a
 pile stays a pile while its pins drift apart; MapKit has no levels and parts a
 pile as soon as its pins would clear. An iPhone app answers to MapKit, so the
 app regroups on every settled zoom (Hidde saw the whole-level version as "een 2
-blijft een 2"). Read 2026-10-20:
+blijft een 2"). The website pins with MapLibre's own clustering and the SAME two
+numbers (radius 40, piles to zoom 14, `CLUSTER_DISTANCE` and `CLUSTER_MAX_ZOOM`
+in site/src/lib/map.ts); it regroups per whole level, which is the web
+convention (MapLibre and Google alike). Its 11 left pins overlapping between
+zoom 12 and 15 where the app drew a bubble. Read 2026-10-20:
 - https://github.com/mapbox/supercluster/blob/main/index.js (`_limitZoom`, `getClusterExpansionZoom`)
 - https://maplibre.org/maplibre-gl-js/docs/examples/create-and-style-clusters/
 - https://github.com/googlemaps/js-markerclusterer/blob/main/src/markerclusterer.ts (`defaultOnClusterClickHandler`, `idle`)

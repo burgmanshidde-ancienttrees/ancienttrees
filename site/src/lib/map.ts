@@ -56,6 +56,18 @@ setTimeout(function () {
  *  CONVENTIONS.md 2026-10-04. */
 export const CLUSTER_RADIUS = 13;
 
+/** WHEN PINS PILE, the same two numbers as the app (Hidde, 2026-10-20: "trek
+ *  het gelijk als dat ook de conventie is"). Google Maps and AllTrails pile
+ *  the same way on web and phone; only WHEN a map regroups belongs to its
+ *  engine (MapLibre per whole zoom level, the app on every settled zoom).
+ *  CLUSTER_DISTANCE is clusterCellPoints in TreeMap.swift, supercluster's own
+ *  default. CLUSTER_MAX_ZOOM 14 is MapLibre's example value and lands where
+ *  the app stops (it piles below zoom 15); this was 11, so between 12 and 15
+ *  the web drew pins over each other that the app drew as one bubble.
+ *  CONVENTIONS.md, "How close two pins have to be". */
+export const CLUSTER_DISTANCE = 40;
+export const CLUSTER_MAX_ZOOM = 14;
+
 /** TREES ON ONE SPOT, on every clustered map (Hidde, 2026-10-15: "map
  *  interaction need to stay consistent so do everywhere"). The city map and
  *  the app do it first (spreadStack() in city-map-script.ts, MapLayers.spread
@@ -260,7 +272,7 @@ new ResizeObserver(function() { map.resize(); fit(); }).observe(document.getElem
 map.on('load', function() {
   fit();
   map.addSource('trees', {type: 'geojson', data: TREES, cluster: true,
-                          clusterMaxZoom: 11, clusterRadius: 42});
+                          clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE}});
   map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
     filter: ['has', 'point_count'],
     paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
@@ -507,7 +519,7 @@ function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   atMarkPiles(DATA.features);
   map.addSource('trees', {type: 'geojson', data: DATA, cluster: true,
-                          clusterMaxZoom: 11, clusterRadius: 42});
+                          clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE}});
   // The season heartbeat (a pulse and a gold dot behind trees at their peak)
   // is switched off: Hidde, 2026-10-03, "its not good enough lets look at it
   // later". The 'now' property still travels in DATA, so bringing it back is
@@ -688,7 +700,7 @@ var pending = null;
 function initMine() {
   if (map.getSource('mine')) { return; }
   map.addSource('mine', { type: 'geojson', data: EMPTY, cluster: true,
-                          clusterMaxZoom: 11, clusterRadius: 42 });
+                          clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE} });
   map.addLayer({id: 'mine-clusters', type: 'circle', source: 'mine',
     filter: ['has', 'point_count'],
     paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,

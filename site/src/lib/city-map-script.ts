@@ -20,7 +20,7 @@
 // proximity check that needed it went; there is no duplicate of it left here.
 import {MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
-import { mapScript, CLUSTER_RADIUS } from "./map";
+import { mapScript, CLUSTER_RADIUS, CLUSTER_DISTANCE } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
@@ -176,7 +176,7 @@ if (OTHER_CITIES.features.length) {
   map.on('load', function() {
     if (map.getSource('othercities')) { return; }
     map.addSource('othercities', {type: 'geojson', data: OTHER_CITIES, cluster: true,
-      clusterMaxZoom: FAR - 1, clusterRadius: 42,
+      clusterMaxZoom: FAR - 1, clusterRadius: ${CLUSTER_DISTANCE},
       clusterProperties: {n: ['+', ['get', 'n']], home: ['max', ['get', 'home']]}});
     map.addLayer({id: 'othercity', type: 'circle', source: 'othercities', maxzoom: FAR,
       paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${CLUSTER_RADIUS},
