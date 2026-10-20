@@ -388,6 +388,8 @@ function showPop(idx) {
   placePop();
 }
 map.on('move', placePop);
+// And when the window changes size, or the card is left hanging off the map.
+map.on('resize', placePop);
 // A tap on the map itself lets the tree go, on both (the sheet's own
 // listener drops a phone's sheet back to the list).
 map.on('click', function() { if (popEl) closePop(); else if (phoneMq.matches) clearPin(); });

@@ -246,13 +246,16 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .map-pop .tree-card-photo { margin: 0; border-radius: 0; }
 .map-pop .tree-story, .map-pop .tree-card-credit, .map-pop .tree-more { display: none; }
 .map-pop .tree-card-top, .map-pop .tree-meta { padding-left: 16px; padding-right: 16px; margin-left: 0; margin-right: 0; }
-.map-pop .tree-card-top { padding-top: 14px; }
-.map-pop .tree-meta { margin: 4px 0 0; }
-.map-pop .tag-row { left: 12px; top: 12px; }
-.map-pop .heart-card, .map-pop-close { position: absolute; top: 12px; width: 32px; height: 32px;
+/* Doubled selectors: the card's own rules further down this file (heart at
+   10/10, meta margin 0 24px) are as specific and later, and won on the live
+   page (2026-10-20, measured: heart under the cross, species line at 40). */
+.map-pop .tree-card .tree-card-top { padding: 14px 16px 0; margin: 0; }
+.map-pop .tree-card .tree-meta { margin: 4px 0 0; padding: 0 16px; }
+.map-pop .tree-card .tag-row { left: 12px; top: 12px; }
+.map-pop .tree-card-photo .heart-card, .map-pop-close { position: absolute; top: 12px; width: 32px; height: 32px;
   border-radius: 50%; border: 0; padding: 0; background: rgba(255,255,255,0.95); color: var(--ink);
   box-shadow: 0 1px 4px rgba(0,0,0,0.18); display: grid; place-items: center; cursor: pointer; z-index: 3; }
-.map-pop .heart-card { right: 52px; }
+.map-pop .tree-card-photo .heart-card { right: 52px; }
 .map-pop-close { right: 12px; }
 .map-pop-close svg, .map-pop .heart-card svg { width: 16px; height: 16px; }
 .stage .map { position: absolute; inset: 0; width: 100%; height: 100%; }
