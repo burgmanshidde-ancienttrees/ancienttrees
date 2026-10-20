@@ -1136,10 +1136,11 @@
     "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
     "nearest": []
    },
-   "status": "lead",
-   "why": "added by a reader through the app; matches no tree we map. Verify to the normal bar before it gets a page.",
+   "status": "published",
+   "why": "2026-10-20 verdict: publish. Looked at the photograph: a veteran beech on the Schönberg above Ebringen, multi-stemmed, a Rotbuche label on a low limb; live as frb_008 under the reader rule.",
    "seen": "2026-10-19",
-   "unlinked": true
+   "unlinked": true,
+   "tree_id": "frb_008"
   }
  ]
 }

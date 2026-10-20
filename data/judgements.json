@@ -18,6 +18,34 @@
    "agreed": null
   },
   {
+   "id": "sight:ed90210d-8ed3-4c85-8af7-f75f6f34ff15",
+   "seen": "2026-10-19",
+   "kind": "photo of a tree we map",
+   "tree": "The Schönberg Beech above Ebringen",
+   "city": "Freiburg",
+   "species": "European Beech",
+   "photo": "p_c42cb7cb55255ee10572d165/ED90210D-8ED3-4C85-8AF7-F75F6F34FF15.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    47.9543033333333,
+    7.80672833333333
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about European Beech"
+   },
+   "verdict": "publish",
+   "reason": "Looked at the photograph (fetched 2026-10-20; it never reached the GitHub runner): a veteran beech on the Schönberg above Ebringen, split low into several moss-covered stems, one limb bending to the ground, a Rotbuche label on it; daylight, colour, tree fills the frame. No register or article within 300 m, no web source, no age or girth. Live as frb_008 under the 2026-10-12 reader rule (GPS fix, stranger's account); the page asks for a girth.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "lead:c86ff6bf-232a-499b-bf45-d34626073ac7",
    "seen": "2026-10-18",
    "kind": "a tree we do not map",
@@ -133,6 +161,34 @@
    "measure": null,
    "verdict": "lead",
    "reason": "Owner-account photograph (mine, never credited) of a large old willow (Salix) trunk with a second stem, on a waterside bank in Baarn. Looked at the photograph: a big girth, but no register entry within 100 m, no Wikipedia article within 300 m, no note, age or girth given. Nearest tree we publish is 910 m away. Kept as a lead with its coordinate; a page needs a source or a measured girth.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:2aa7147b-3a7b-49eb-8b8a-da81f726eda1",
+   "seen": "2026-10-18",
+   "kind": "a tree we do not map",
+   "tree": "Moreton Bay Fig",
+   "city": null,
+   "species": "Moreton Bay Fig",
+   "photo": "p_3ede14c55de0e0de9b87562a/2AA7147B-3A7B-49EB-8B8A-DA81F726EDA1.jpg",
+   "reader_note": "The Mendoubia Moreton Bay Fig (Ficus macrophylla) is the most notable tree located in the Mendoubia Gardens (Jardin de la Mendoubia) in central Tangier, Morocco. Native to the subtropical coastal rainforests of eastern Australia, the species was introduced to North Africa in the late 19th century. Planted between the 1880s and 1900s during Tangier's diplomatic expansion, the tree was placed adjacent to the residency of the Mendoub (the representative of the Moroccan Sultan to the international a",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Moreton Bay Fig"
+   },
+   "verdict": null,
+   "reason": null,
    "hidde": null,
    "agreed": null
   },

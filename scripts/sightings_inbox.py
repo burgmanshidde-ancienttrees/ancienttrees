@@ -399,6 +399,37 @@ def open_leads():
     return out
 
 
+def lead_file(sid):
+    return os.path.join(OUT, f"{sid}.jpg")
+
+
+def fetch_open_lead_photos():
+    """Put every open lead's MAIN photograph on disk, every run.
+
+    THE HOLE THIS CLOSES (2026-10-20). The loop in main() downloads a
+    photograph only after a sighting matched a tree we map; one matching
+    nothing was filed as a lead with its sign and extras fetched and the
+    photograph itself left in the bucket. And out/ is gitignored, so even a
+    file fetched once is gone on the next runner. A stranger's tree is never
+    judged blind (CLAUDE.md), so the Freiburg beech (ed90210d) sat open through
+    seven night runs, each logging "photograph not on this runner", until a
+    session with the key fetched it by hand. Now the file is where the
+    verdict needs it before any run reads the inbox. Returns how many it got.
+    """
+    if not KEY:
+        return 0
+    got = 0
+    for l in open_leads():
+        if l.get("mine") or not l.get("photo") or not l.get("sighting_id"):
+            continue
+        dest = lead_file(l["sighting_id"])
+        if os.path.exists(dest) and os.path.getsize(dest) > 0:
+            continue
+        if fetch_photo(l["photo"], dest):
+            got += 1
+    return got
+
+
 def judge():
     """One screen per pending user-added tree, so a manual check is minutes.
 
@@ -476,10 +507,13 @@ def status():
     for l in leads:
         where = (f"{l.get('latitude'):.4f},{l.get('longitude'):.4f}"
                  if l.get("latitude") is not None else "no coordinate")
+        on_disk = os.path.exists(lead_file(l.get("sighting_id"))) if l.get("sighting_id") else False
         print(f"  {str(l.get('sighting_id'))[:8]}  NOT ON THE MAP  "
               f"{(l.get('name') or 'unnamed')[:34]}  {where}"
               + (f"  note: {l['note'].strip()[:40]}" if (l.get("note") or "").strip() else "")
-              + ("  +sign" if l.get("sign_photo") else ""))
+              + ("  +sign" if l.get("sign_photo") else "")
+              + (f"  photo: {os.path.relpath(lead_file(l['sighting_id']), ROOT)}" if on_disk
+                 else "  photo: NOT ON DISK (run the inbox with the key, never judge blind)"))
     if leads:
         print("  ^ these need the normal bar, not a page. Check each with:")
         print("      python3 scripts/corroborate.py <lat> <lng> --country <country>")
@@ -803,6 +837,9 @@ def main():
     leads_doc["leads"] = merge_leads(leads_doc["leads"])
     if new_leads:
         save(LEADS, leads_doc)
+    fetched = fetch_open_lead_photos()
+    if fetched:
+        print(f"sightings inbox: {fetched} open lead photograph(s) downloaded to {os.path.relpath(OUT, ROOT)}/")
     print(f"sightings inbox: {len(rows)} row(s) with a photograph, {skipped} already handled, "
           f"{mine} ours, {len(queue)} queued for a look, "
           + (f"{rematched} lead(s) the map has since caught up with, " if rematched else "")
