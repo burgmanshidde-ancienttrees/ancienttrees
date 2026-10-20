@@ -268,6 +268,14 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .map-pop .tree-card-nophoto .heart-card, .map-pop .tree-card-top .map-pop-close {
   position: static; order: 2; background: rgba(38,48,30,0.08); box-shadow: none; }
 .map-pop .tree-card-top .map-pop-close { order: 3; }
+/* The no-photo card's own padding (14 on top) and the row heart's -6 lift
+   are later, more specific rules; measured live 2026-10-20: save at 22,
+   cross at 28. One 16 from the top for the pair, the name's first line
+   centred on it ((32 - 23.4) / 2). */
+.map-pop .tree-card.tree-card-nophoto { padding-top: 0; }
+.map-pop .tree-card.tree-card-nophoto .tree-card-top { padding-top: 16px; }
+.map-pop .tree-card .tree-card-top .heart-card { margin-top: 0; }
+.map-pop .tree-card-nophoto .tree-name { padding-top: 4px; }
 .map-pop .map-pop-close svg, .map-pop .heart-card svg { width: 16px; height: 16px; }
 .stage .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
