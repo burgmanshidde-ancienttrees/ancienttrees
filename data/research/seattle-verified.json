@@ -320,5 +320,65 @@
       "kind": "autumn colour",
       "label": "October into November, when a pin oak turns dark red to russet"
     }
+  },
+  {
+    "id": "sea_020",
+    "name": "The Aloha Street Tulip Tree",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "age_estimate": "not documented",
+    "girth_cm": 367,
+    "height_m": 28,
+    "location": {
+      "address": "747 16th Ave E, at E Aloha St, Seattle",
+      "latitude": 47.62681,
+      "longitude": -122.31138,
+      "neighbourhood": "Capitol Hill"
+    },
+    "verified_sources": [
+      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47272%27&outFields=*&f=json",
+      "https://arthurleej.com/articles/a-specialcapt.html",
+      "https://www.inaturalist.org/observations/390049639"
+    ],
+    "official_register": {
+      "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y)",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47272%27&outFields=*&f=json"
+    },
+    "access": "View from the public sidewalk at 16th Ave E and E Aloha St; the trunk stands on a private lot, so look from the pavement only.",
+    "transport": "Capitol Hill Station (Link light rail) about 1.2 km, roughly 15 minutes on foot; King County Metro stops on 15th Ave E.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register (SDOT inventory tree TRE-47272, HERITAGE=Y, comment 'HERITAGE TREE. Crownspread 69'): last known diameter 46 in (about 117 cm, girth about 367 cm by diameter x pi), height 92 ft (about 28 m), status INSVC, last verified 2024-07. Ownership listed PRIV (property owner approved heritage designation); register coordinate 47.62681,-122.31138 is the tree record, not checked on aerial imagery, so precision stays approximate. Jacobson (Seattle tree expert, 'Special Capitol Hill Trees', 2001): 'towering tulip tree at 16th Avenue E and E Aloha Street, where the street, curb and sidewalk were realigned to accommodate the tree's immense size', listed under trees that are conspicuous and loved, not under big or old. A neighbourhood walk guide lists it at 747 E Aloha; a mosaic art piece sits at the corner (seen in search results only, the Seattle arts page is behind Cloudflare). A 2010 Capitol Hill Seattle post, seen only as a search summary, says it passed 10 years as a heritage tree in 2010 and calls it 70+ ft; the register's 92 ft is the later figure. Alive: lifecheck RECENT, iNaturalist observation 2026-08-10 within range. No planting date found, age left blank. Register plus one expert article; flagged for one official source and private lot.",
+    "story": "Seattle realigned a street for this tree. At the corner of 16th Avenue East and East Aloha Street on Capitol Hill, the roadway, the curb and the sidewalk were all shifted to accommodate its size, as the Seattle tree expert Arthur Lee Jacobson recorded in his 2001 survey of the hill's special trees.\n\nHe listed it among the trees that are conspicuous and loved, rather than the big or the old. The city's figures suggest he was being modest. Its tree records give the trunk as 46 inches across, roughly 12 feet round, a height of 92 feet, about 28 metres, and a crown 69 feet wide. The tree is a city Heritage Tree, a listing the owner of the lot agreed to, and the city last recorded it in service in July 2024.\n\nThat lot is private, so this is a tree to see from the public sidewalk at the corner, and a crown 69 feet across leaves plenty to look at from there. Stay on the pavement.\n\nA tulip tree is neither a tulip nor a poplar, despite the nickname tulip poplar. It is a magnolia relative, and its leaves give it away: four lobes, with the tip cut off square as if somebody took scissors to it.\n\nNobody has published when it was planted or how old it is. If you know the history of this corner, tell us.",
+    "how_to_recognise": "You can recognise it by its size, about 92 feet tall with a crown 69 feet wide, and by square-tipped, four-lobed leaves. It stands at the corner of 16th Ave E and E Aloha St, where the street and sidewalk were realigned around it."
+  },
+  {
+    "id": "sea_021",
+    "name": "The Leschi Park Tulip Tree",
+    "species": "Tulip Tree (Liriodendron tulipifera)",
+    "age_estimate": "not documented",
+    "girth_cm": 415,
+    "height_m": 32,
+    "location": {
+      "address": "Leschi Park, 201 Lakeside Ave S, Seattle",
+      "latitude": 47.60101,
+      "longitude": -122.28665,
+      "neighbourhood": "Leschi"
+    },
+    "verified_sources": [
+      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1054309%27&outFields=*&f=json",
+      "https://www.seattle.gov/parks/parks/leschi-park",
+      "https://www.inaturalist.org/observations/370909571"
+    ],
+    "official_register": {
+      "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner Parks)",
+      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1054309%27&outFields=*&f=json"
+    },
+    "access": "Free, in Leschi Park (Seattle Parks), open 6 am to 10 pm per the city park page.",
+    "transport": "King County Metro routes serve Lake Washington Blvd and Jackson St near Leschi, about 5 to 10 minutes on foot from the stop; confirm the route before travelling.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register (SDOT inventory tree TRE-1054309, HERITAGE=Y, ownership PARK, address 201 LAKESIDE AVE S which is Leschi Park's own address on the city page): last known diameter 52 in (about 132 cm, girth about 415 cm by diameter x pi), height 106 ft (about 32 m), status INSVC, last verified 2019-08, crown spread 74 ft. Register coordinate 47.60101,-122.28665 sits in the park, individual crown not confirmed on aerial imagery, so approximate. The register date 'planted 2011' is an inventory entry, not a planting date; age left blank. Alive: lifecheck RECENT, iNaturalist observation 2026-06-12 in range (identity of the tulip tree on that observation not checked). Register-only for vitality (last verified 2019); flagged. Colman Park forestry note did not mention it; no second source found.",
+    "story": "Seattle once realigned a Capitol Hill street to make room for a tulip tree. The one in Leschi Park is bigger: 106 feet tall to that tree's 92, and 52 inches across the trunk to its 46.\n\nThose figures come from the city's tree records, which list it as a Heritage Tree on park land, about 32 metres high with a crown 74 feet wide. Across 52 inches of diameter, the trunk works out at roughly 13 and a half feet round, a little over four metres.\n\nThe records are also the only source for it, and they are not new. A city crew last noted the tree in service in August 2019. A naturalist photographed a plant close to the city's point for it in June 2026, but whether that picture shows this trunk is not certain, so treat the 2019 entry as the firm word on it. The pin sits at that city point inside the park; the crown itself has not been checked against it.\n\nA tulip tree is a magnolia relative, not a poplar, whatever its old nickname says. Its leaves have four lobes and a tip cut off square, which is the quickest way to tell it from a maple.\n\nLeschi Park is free and open from six in the morning until ten at night. Nobody has published an age for this tree. If you know when it was planted, tell us.",
+    "how_to_recognise": "You can recognise it by its height, about 106 feet, a trunk some 13 and a half feet round, and square-tipped, four-lobed leaves. It stands in Leschi Park, 201 Lakeside Ave S, near the city's register point."
   }
 ]
