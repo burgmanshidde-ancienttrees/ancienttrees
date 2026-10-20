@@ -103,6 +103,14 @@
     {
       "name": "Nuremberg Naturdenkmal remainder (Platnersberg oaks ND 12-15,17-21; Dutzendteich ND 32; Gerasmuehle ND 24/25; Kleinreuth willow ND 44; Ziegelsteinstrasse oaks ND 46-50)",
       "reason": "2026-10-13 deepen pass: cannot end rich. Bayern register rows (data/registers/bayern-naturdenkmale.json) carry no girth or height; de.wikipedia 'Liste der Naturdenkmaeler in Nuernberg' wikitext has no measurement fields; nuernberg.de/internet/umweltamt/naturdenkmale.html has no girths. All closer candidates (Kontumazgarten, Hallerwiese, Cramer Klett, Stadtpark) are already published or blocked. Revisit only if a measured source (monumentale-eichen.de girths, a survey) can be tied to an ND number."
+    },
+    {
+      "name": "ND Nr. 36 oak row, south shore of the Kleiner Dutzendteich, other oaks",
+      "reason": "Row listed in city ordinance 2020; two oaks delivered as nbg_019/020; the other trunks have no girth or coordinate in reach."
+    },
+    {
+      "name": "ND Nr. 37 avenue between Flachweiher and Kleiner Dutzendteich; Stiel-Eiche am Flachweiher (city monitors it, nuernberg.de/internet/soer_nbg/fuehrungdutzendteich.html)",
+      "reason": "Avenue is not a single collectible point; the Flachweiher oak has no girth or coordinate in reach. Worth a later pass for a measured source."
     }
   ],
   "blocked": [
@@ -150,6 +158,10 @@
       "register_id": "ND-06877",
       "name": "ND Nr. 43 Eiche Marloffsteiner Str. 80",
       "reason": "Access: official ordinance describes it as 'Eiche auf dem Grundstück Marloffsteiner Straße 80' - on a private property. Private land, not open to visitors."
+    },
+    {
+      "name": "Oak in the Delpstrasse (5.90 m, monumentale-eichen.de)",
+      "reason": "Private: a 20 x 20 m green court for 12 houses, not open to the public (Lippert, monumentale-eichen.de 4th category)."
     }
   ]
 }

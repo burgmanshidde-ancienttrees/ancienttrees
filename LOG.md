@@ -9,6 +9,12 @@
 - [2026-08](archive/LOG-2026-08.md)
 - [2026-07](archive/LOG-2026-07.md)
 
+## 2026-10-20, 15:13 window (night run)
+
+- Rung 1: inbox empty. Rung 2: health flagged the Smoke test as skipped; it skips on push by design, Build and deploy succeeded, answered with `health.py --answer`.
+- Shelf: only held trees were awaiting a writer (ftw_018 access, std_001 no viewing pin, inn_007 pin on a house). Graz walled for 48h (0 of 7 leads placed). Nuremberg verify found two Dutzendteich oaks (nbg_019, nbg_020), written and merged: Nuremberg 18 to 20, no photographs, German overlay and count copy updated.
+- Nuremberg's register is now mostly exhausted; next deepen should go elsewhere (Vienna was claimed at 13:31 by an earlier run).
+
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
 ## 2026-10-20 night run (13:13 UTC window)
