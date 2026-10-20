@@ -3501,7 +3501,7 @@ What it is now, app and web alike: the collect sheet offers Take a photograph an
 
 Hidde asked whether the filled triangle behind Explore and Account is what others use. Looked at on the live sites, 1280 wide: **AllTrails** puts a small thin stroked chevron-down after each dropdown word (Explore, Saved, Shop); **komoot** has no dropdowns in its header at all (Routes, Planner, Features, Updates are plain links, then App and Login or Signup pills). Nobody uses a filled triangle.
 
-What we do: the AllTrails chevron, Phosphor caret-down bold, small and thin, on Explore and Account. The account button is the plain word, no leaf, like its neighbours. Its menu is two rows of one shape (icon, label): My trees, Settings. No group heading (the button already says whose menu it is) and no sign out row (Hidde: sign out lives on Settings).
+What we do: the AllTrails chevron, Phosphor caret-down bold, small and thin, on Explore. Since the account became your round photo (2026-10-20), it stands alone with no chevron, like Google and AllTrails (Hidde: "go for the cleaner version"). The account button is the plain word, no leaf, like its neighbours. Its menu is two rows of one shape (icon, label): My trees, Settings. No group heading (the button already says whose menu it is) and no sign out row (Hidde: sign out lives on Settings).
 
 ---
 

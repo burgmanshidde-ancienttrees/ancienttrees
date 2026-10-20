@@ -266,8 +266,10 @@ const robotsName = noindexScope(Astro.url.pathname) === "google" ? "googlebot" :
             your initial when there is none. Signed out the bar still says
             Sign in in words, so in and out never look alike (2026-10-06).
             The word stays for screen readers. No group heading inside: the
-            button already says whose menu this is (2026-10-15). */}
-        <summary id="bar-login" aria-label={t.account}><span class="acct-face" aria-hidden="true"></span><span class="acct-word sr-only">{t.account}</span><Fragment set:html={CARET} /></summary>
+            button already says whose menu this is (2026-10-15). No chevron
+            after the face (Hidde, 2026-10-20: "go for the cleaner version"),
+            as Google and AllTrails show the avatar alone. */}
+        <summary id="bar-login" aria-label={t.account}><span class="acct-face" aria-hidden="true"></span><span class="acct-word sr-only">{t.account}</span></summary>
         <div class="nav-drop-menu">
           <a href="/account"><span class="mi"><Fragment set:html={LEAF} /></span>{t.savedTrees}</a>
           <a href="/account/settings"><span class="mi"><Fragment set:html={GEAR} /></span><span>{t.yourAccount}</span></a>
