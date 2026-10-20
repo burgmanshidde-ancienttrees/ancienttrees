@@ -23,6 +23,7 @@ The selection is the digest's:not our own accounts (data/our-accounts.json),
 no answer from him yet in data/judgements.json. He answers with
 `python3 scripts/judgement.py --feedback <id> "..."`, and the tree leaves both.
 """
+import datetime
 import glob
 import html
 import json
@@ -145,10 +146,39 @@ def reader_row(sid):
     return rows[0] if rows else {}
 
 
+def stamp_shown(picks):
+    """Write today's date into each unanswered pick's `shown` list in
+    data/judgements.json and return the ids he saw on an earlier day.
+
+    Hidde, 2026-10-20, on two Lisbon photographs the page showed him again:
+    "deze twee hebben we al besproken". The session that discussed them never
+    filed his answer, and the page cannot know what was said in chat. So it
+    remembers what it showed him: a tree shown before and still unanswered is
+    not news, it is a verdict that was never written down, and the session
+    asks for it and files it instead of presenting the tree as new."""
+    today = datetime.date.today().isoformat()
+    doc = json.load(open("data/judgements.json", encoding="utf-8"))
+    rows = {j.get("id"): j for j in doc.get("judgements", [])}
+    before = set()
+    for _sid, j, _n in picks:
+        row = rows.get(j.get("id"))
+        if row is None or row.get("hidde"):
+            continue
+        shown = [d for d in (row.get("shown") or []) if d < today]
+        if shown:
+            before.add(j["id"])
+        if today not in (row.get("shown") or []):
+            row["shown"] = sorted(set((row.get("shown") or []) + [today]))
+    with open("data/judgements.json", "w", encoding="utf-8") as fh:
+        json.dump(doc, fh, ensure_ascii=False, indent=1)
+    return before
+
+
 def main():
     include = "--all" in sys.argv
     live = live_index()
     picks = selection(include, live)
+    before = stamp_shown(picks)
     os.makedirs(OUT, exist_ok=True)
     cards = []
     for sid, j, _n in picks:
@@ -180,9 +210,15 @@ def main():
         dl = "".join("<dt>%s</dt><dd>%s</dd>" % (k, html.escape(str(v))) for k, v in facts if v)
         dl += "<dt>Page</dt><dd>%s</dd>" % page
         note = r.get("note") or j.get("reader_note") or ""
+        seen_before = ""
+        if j.get("id") in before:
+            days = ", ".join(d for d in (j.get("shown") or []) if d < datetime.date.today().isoformat())
+            seen_before = ('<p class="before">Shown to you on %s, no answer filed. Say it once more and the '
+                           'session files it: <code>python3 scripts/judgement.py --feedback %s "..." agreed</code></p>'
+                           % (html.escape(days), html.escape(j.get("id"))))
         cards.append(
-            '<section><h2>%s</h2><p class="id">%s</p>%s<dl>%s</dl>%s</section>' % (
-                html.escape(r.get("name") or j.get("tree") or "unnamed"), html.escape(j.get("id")), img, dl,
+            '<section><h2>%s</h2><p class="id">%s</p>%s%s<dl>%s</dl>%s</section>' % (
+                html.escape(r.get("name") or j.get("tree") or "unnamed"), html.escape(j.get("id")), seen_before, img, dl,
                 '<h3>Their note, word for word</h3><pre>%s</pre>' % html.escape(note) if note.strip()
                 else "<p><em>No note.</em></p>"))
     body = "\n".join(cards) or "<p>Nothing waiting: every tree a stranger sent has your answer.</p>"
@@ -194,13 +230,18 @@ section{background:#fff;border-radius:12px;padding:16px;margin:0 0 24px;box-shad
 img{display:block;max-width:100%%;max-height:70vh;margin:0 auto;border-radius:8px}h2{margin:0}.id{color:#888;font-size:13px;margin:2px 0 12px}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px}dt{color:#666}dd{margin:0}
 pre{white-space:pre-wrap;font:inherit;background:#f3f0e8;padding:12px;border-radius:8px}
+.before{background:#fff3cd;border-radius:8px;padding:8px 12px;margin:0 0 12px}
 </style></head><body><h1>Trees readers sent, to inspect (%d)</h1>
-<p>Answer one with <code>python3 scripts/judgement.py --feedback &lt;id&gt; "..."</code>.</p>
+<p>Answer one with <code>python3 scripts/judgement.py --feedback &lt;id&gt; "..." agreed</code> (leave off <code>agreed</code> when you overrule us).</p>
 %s</body></html>""" % (len(picks), body)
     path = os.path.join(OUT, "index.html")
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(page)
     print("%d tree(s) to inspect: %s" % (len(picks), path))
+    if before:
+        print("%d of them were shown to Hidde on an earlier day and never got an answer filed: "
+              "ask him for the verdict and file it with judgement.py --feedback <id> \"...\" agreed; "
+              "do not present them as new." % len(before))
     # The preview pane's server may not read ~/Documents (macOS privacy), so
     # mirror the page and its photographs to the session-independent preview
     # folder; preview_start {name: "inspect"} serves it (.claude/launch.json).
