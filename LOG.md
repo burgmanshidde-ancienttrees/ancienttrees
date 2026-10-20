@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: your face in the bar, and a flag by default
+
+**Live (web):** signed in, the desktop bar shows your round profile picture (else your initial) instead of the word Account; signed out it still says Sign in. Mockup shown first, Hidde: "ja bouw alles". This reverses 2026-10-10's "no icons in the menu bar" (that was a line-art person; this is your own photo). The country picker has "Don't show" on top. **Flag by default** (Hidde: Polarsteps showed his flag without him choosing): unchosen, the website takes the computer's time zone and the app the phone's region, written once; "Don't show" is remembered in the new profiles.flag_hidden. App: next build. Why nobody had a flag: none of the 14 profiles had ever picked a country; yesterday's flag was the simulator's demo account.
+**FOR HIDDE:** paste supabase/PENDING.sql (one line, the flag_hidden column). Until then nobody gets a default flag; the face in the bar does not need it.
+**Breakage, fixed:** a code comment in settings ("stores it with your name") tripped qa's never-publish-a-name check and failed one deploy, which also held back another session's push for about 25 minutes. Also: another session's reset threw away this session's uncommitted site edits once; the work moved to a worktree.
+
 ## 2026-10-20 session with Hidde: Sanremo opens with six register trees (his sister visits tomorrow)
 
 - **New place: Sanremo**, six MASAF register trees, all flagged, approximate register pins, recognition line on each, no photos yet (Hidde: "met foto's is bonus maar hoeft niet"). Sanremo: srm_001 Senegal Date Palm in the Giardini Nobel (19.5 m, the register's locality; OSM puts the point in that park opposite Villa Ormond, never bridged to Ormond's "most majestic" palm), srm_002 Chilean Wine Palm in the Parco Marsaglia, srm_003 California Fan Palms at the Zampillo (group). Day trip Bordighera: srm_004 La Scibretta (11.8 m girth), srm_005 the Bicknell figs (planted 1886 per the Clarence Bicknell Association; two register rows 13 m apart, one point), srm_006 Canary Pine on Via Romana (40 m).
