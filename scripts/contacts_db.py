@@ -19,8 +19,9 @@ gitignored (data/outreach-*.json) and synced by private_store.py. Never commit i
     python3 scripts/contacts_db.py --set someone@example.org linked=yes notes="link on /about"
 
 Status, in order of precedence: do_not_contact, ambassador (never asked for
-links, Hidde 2026-10-16), declined, replied, linked, mailed, ready (an address
-and never mailed), no_address.
+links, Hidde 2026-10-16), declined, replied, linked, mailed, org_mailed (another
+address of the same organisation was mailed), ready (an address and never
+mailed), no_address.
 """
 import argparse
 import glob
@@ -33,6 +34,8 @@ import time
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 DB = os.path.join(DATA, "outreach-db.json")
+FREEMAIL = {"gmail.com", "hotmail.com", "yahoo.com", "outlook.com", "libero.it", "seznam.cz",
+            "gmx.de", "web.de", "proton.me", "icloud.com", "tiscali.it", "freenet.de", "hetnet.nl"}
 MANUAL = ("notes", "linked", "linked_url", "segment", "hold")
 
 # The groups of the strategy, one ask each (OUTREACH_STRATEGY.md).
@@ -185,6 +188,20 @@ def build():
             st = "ready"
         r["status"] = st
 
+    # An organisation is one contact, whatever address we found for it: a second
+    # address of a domain or site we already wrote to is not a fresh one
+    # (botanic@uv.es after 24cicbotanic@uv.es, jirka@ after honza@turistika.cz, 2026-10-20).
+    touched = [r for r in db.values() if r["status"] not in ("ready", "no_address")]
+    domains = {r["email"].split("@")[-1] for r in touched} - FREEMAIL
+    sites = {(r.get("org") or "").lower() for r in touched} | {(r.get("source_url") or "").lower() for r in touched}
+    sites -= {""}
+    for r in db.values():
+        if r["status"] != "ready":
+            continue
+        dom = r["email"].split("@")[-1]
+        if dom in domains or (r.get("org") or "").lower() in sites or (r.get("source_url") or "").lower() in sites:
+            r["status"] = "org_mailed"
+
     doc = {"_note": "One row per address. Built by scripts/contacts_db.py from every outreach file; "
                     "manual fields (notes, linked, linked_url, segment, hold) survive rebuilds. Private: never commit.",
            "built": time.strftime("%Y-%m-%d %H:%M"), "contacts": dict(sorted(db.items()))}
@@ -194,7 +211,7 @@ def build():
 
 def status(doc):
     rows = doc["contacts"].values()
-    states = ("ready", "mailed", "replied", "linked", "declined", "ambassador", "do_not_contact")
+    states = ("ready", "mailed", "org_mailed", "replied", "linked", "declined", "ambassador", "do_not_contact")
     print(f"{len(doc['contacts'])} addresses, built {doc['built']}\n")
     print(f"{'segment':10}" + "".join(f"{s[:10]:>12}" for s in states))
     for seg in SEGMENTS:
