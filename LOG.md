@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: iPad question, and the header fits an iPad in portrait
+
+- Live (65eb661fc): at 801 to 1023px the header's logo, Sign in and app pill no longer wrap onto two lines; the search field shrinks instead. Checked in English and French (longest labels) at 801 and 820px, and the phone bar is unchanged.
+- iPad app: parked. Google Analytics holds 26 consented visitors in 8 days, too few to count iPads (and iPad Safari reports itself as a Mac). The real count is App Store Connect downloads by device, which only Hidde can see. Revisit when that shows iPad downloads or traffic recovers.
+
 ## 2026-10-20 session with Hidde: the Freiburg beech is live, and the inbox now downloads every open lead's photograph
 - **Product:** frb_008, The Schönberg Beech above Ebringen, a stranger's app sighting of 10-18 (ed90210d), live on Freiburg's page under the 2026-10-12 reader rule (photo shows a tree worth the walk, GPS pin, not our account). No register, article or web source; the page asks for a girth. Freiburg is eight trees now; intro, question texts, faq and the German overlay updated. The congratulation mail (tree_approved.py) goes on the next knock once the deploy carries frb_008.
 - **Why it sat open a day:** sightings_inbox.py fetched a photograph only after a sighting matched a tree we map; one matching nothing was filed as a lead without its file, and out/ is fresh on every runner. Seven night runs logged "photograph not on this runner". Fixed: `fetch_open_lead_photos()` runs on every inbox read, and `--status` says per lead whether the file is on disk.
@@ -94,6 +99,9 @@ A session quoted the 10-18 digest's old activation table and called "2 of 14 tap
 
 ## 2026-10-19 session with Hidde: 40 readers' photographs were wrongly unlinked; restored, and a brake added
 The 16:45 UTC knock unlinked every reader photograph on the site (40, seven accounts) as if all seven had deleted their account, twenty minutes after the ids became codes. Almost certainly the runner's codes do not match the files' (a different SUPABASE_SERVICE_KEY), so every account looked gone. Reverted a1e70b7 (links back) and photo_takedown.py now refuses a sweep where every account, or more than two, reads as deleted. Resolved the same evening: `people.py --check` passed on the Mac (9 of 10 codes are live accounts; the tenth is probably a real deletion) and the GitHub secret SUPABASE_SERVICE_KEY was set to the Mac's key at 17:32 UTC. The next knock will show whether the sweep now unlinks only that one.
+
+## 2026-10-20 session: IVN Amersfoort reply sent
+On Hidde's "verstuur", the reply to IVN Amersfoort went out in Lenny's thread (batch reply-ivn-amersfoort-2026-10-20): thanks for the expert's list, the Randenbroek oak is live with both ages, the Havik lime's age is updated, and would he be Amersfoort's ambassador. Watch for his answer; an ambassador grant waits for it.
 
 ## 2026-10-19 session: three Randenbroek trees live in Amersfoort, from IVN's expert list
 
