@@ -49,6 +49,8 @@ Feeders, all code, almost no tokens:
 
 Ambassadors are never asked for links or badges (Hidde, 2026-10-16). Nobody gets a second cold mail; a second mail needs news or a reply.
 
+**Warm repliers (Hidde, 2026-10-20: "go do this"):** the people who answered a mail are the best link source we have, and a second mail to them carries the news that concerns them (their tree live, their correction on the page) and the one plain link ask. Two rules he set the same minute: **read his inbox first** (`outreach_inbox.py`), so a batch mail never lands in the middle of a conversation he is having ("check my inbox before jumping in with random conversation in between"); and **the organisations he is already deep in conversation with get no batch mail at all**: Quercus, the Woodland Trust, the Bomenstichtingen (Amsterdam, Den Haag), Baumkunde. Those threads are his.
+
 ## Communities: Reddit and Facebook (decided 2026-10-16)
 
 Posts, not mails, and Hidde posts them himself from his own accounts; a session drafts. The full plan, the four example posts and the ask-the-admin messages are on his private page https://claude.ai/artifact/CX8HzNwrwuo9wyKXEAfig4 (local copies drafts/where-to-post.html and drafts/group-messages.md stay out of the repo: they name people).
