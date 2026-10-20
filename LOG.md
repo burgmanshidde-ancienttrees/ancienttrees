@@ -19,6 +19,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: Imperia opens with five register trees (his sister lives at Villa Guardia, Pontedassio)
+
+- **New place: Imperia**, five MASAF register trees, flagged, approximate pins: imp_001 Bunya Pine at the Palazzo della Provincia (26 m; **photo approved**, Commons CC BY-SA 4.0, linked from the register tree's own Wikidata item), imp_002 Mediterranean Hackberry at San Michele, Diano Borello (5.1 m girth), imp_003 the Downy Oak pair of Maro Castello (meadow access not confirmed, said on the page), imp_005 the Sweet Chestnut of the Passo Furchè above Ceriana (8.5 m girth, 5 m tall; a MTB guide's "1,300 years" reported as its claim, age left empty), imp_006 the Horse Chestnut pair of Sant'Agostino, Triora.
+- **Held for tomorrow by the 60-in-24h pace cap**: imp_004 Holm Oak at the Lampedusa sanctuary, Castellaro, and imp_007 Horse Chestnut of San Bernardino, Triora. Both written and ready in data/research/imperia-verified.json: move them into data/cities/imperia.json and add Castellaro and San Bernardino back to the intro and context.
+- Leads not written: Conio oak (03/B020, 30 m, access unknown), Dolcedo olive (01/D319, likely a grove), Prelà lime (small), Chiusanico strawberry tree (at an agriturismo).
+
 ## 2026-10-20, 15:13 window (night run)
 
 - Rung 1: inbox empty. Rung 2: health flagged the Smoke test as skipped; it skips on push by design, Build and deploy succeeded, answered with `health.py --answer`.

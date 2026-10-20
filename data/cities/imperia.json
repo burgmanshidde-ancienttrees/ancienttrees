@@ -1,0 +1,218 @@
+{
+  "city": "Imperia",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Imperia's remarkable trees are mostly in the hill villages behind it, by churches and on mountain passes, and you need a car for most of them. Five are on this map, all from Italy's national list of monumental trees: a Bunya pine 26 metres tall in Imperia itself, a hackberry five metres round at the church of Diano Borello, a pair of downy oaks at Maro Castello, two tall horse chestnuts at the church of Sant'Agostino in Triora, and a sweet chestnut eight and a half metres round on the Passo Furchè above Ceriana.",
+  "meta_description": "Monumental trees around Imperia: a giant chestnut above Ceriana, a hackberry at Diano Borello, oaks in Borgomaro and the horse chestnuts of Triora.",
+  "question_answer": "No reliable age is published for any of these trees. By size the likeliest oldest is the sweet chestnut on the Passo Furchè above Ceriana, 8.5 metres round on the national list; a mountain-bike guide calls it 1,300 years old, which nobody has measured. A trunk that size could be several centuries old.",
+  "question_meta": "No reliable age is published. By size the likeliest oldest is the sweet chestnut on the Passo Furchè above Ceriana, 8.5 metres round.",
+  "question_context": "These trees spread over the valleys behind Imperia rather than one town, so plan them as drives. The Bunya pine stands in Imperia itself, on Viale Matteotti at the Palazzo della Provincia. Five kilometres inland, the hackberry stands on the cobbled churchyard of San Michele Arcangelo at Diano Borello, with a view over the Diano valley, and up the Impero valley the two downy oaks grow at Maro Castello in the commune of Borgomaro, near the ruins of the castle of Maro. The big chestnut is the most remote: it grows on the Passo Furchè, on a mountain ridge above Ceriana, reached by a long climb and then a dirt road, and it is the one to plan a day around. Triora, high in the Argentina valley and known as the site of the last witch trials held in Italy, has two tall listed horse chestnuts by the church of Sant'Agostino. All five stand by churches, on a public street or on open mountain land, and none charges entry, though for the oaks at Maro Castello we could not confirm whether the meadow they grow in is open, so look from the lane.",
+  "faq": [
+    {
+      "q": "What is the oldest tree near Imperia?",
+      "a": "No source gives a reliable age. The biggest trunk belongs to the sweet chestnut on the Passo Furchè above Ceriana, 8.5 metres round on the national list. A mountain-bike guide calls it 1,300 years old; nobody has measured, so we leave its age open."
+    },
+    {
+      "q": "Do I need a car?",
+      "a": "For most of them, yes. The Bunya pine is in Imperia itself, but the others are in hill villages with few buses, and the Ceriana chestnut is at the end of a long dirt road over a mountain ridge."
+    },
+    {
+      "q": "Which trees are closest to Pontedassio?",
+      "a": "The hackberry at the church of Diano Borello and the downy oaks at Maro Castello in Borgomaro, each about five kilometres away as the crow flies. The Bunya pine in Imperia is about seven."
+    },
+    {
+      "q": "Are they free to see?",
+      "a": "Yes. They stand by churches, on a public street and on open mountain land. For the oaks at Maro Castello we could not confirm whether the meadow they grow in is open, so look from the lane if in doubt."
+    }
+  ],
+  "hero_tree_id": "imp_001",
+  "oldest_tree_id": "imp_005",
+  "trees": [
+    {
+      "id": "imp_001",
+      "name": "The Bunya Pine of the Palazzo della Provincia",
+      "species": "Bunya Pine (Araucaria bidwillii)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 345,
+      "height_m": 26,
+      "location": {
+        "address": "Palazzo della Provincia, Viale Giacomo Matteotti 147, Imperia",
+        "latitude": 43.883067,
+        "longitude": 8.021842,
+        "neighbourhood": "Porto Maurizio, Imperia"
+      },
+      "story": "The cones of this tree can weigh up to about ten kilograms, which is why people in Australia are told not to park under one. This Bunya pine on Viale Matteotti in Imperia is 26 metres tall and 3.45 metres round, according to Italy's national list of monumental trees, and it is the only one of the province's listed trees in the city itself.\n\nThe Bunya pine comes from the rainforests of south-east Queensland, where Aboriginal peoples gathered in great numbers for the bunya nut harvest. It reached European gardens in the nineteenth century and suits the Riviera, where frost is rare. You can tell it from the palms and pines around it by its shape: a straight trunk carrying a dense dome of stiff, prickly, glossy leaves arranged in whorls, more like a giant candelabra than a pine.\n\nIt stands at the Palazzo della Provincia, the provincial government building, on the main road through Porto Maurizio. Nobody has published when it was planted or how old it is. If you know, tell us.\n\nOur pin is the register's point. The tree is tall enough to see from the street, and seeing it costs nothing.",
+      "how_to_recognise": "You can recognise it by its height and shape, a straight 26-metre trunk with a dense dark dome of stiff, prickly leaves, beside the Palazzo della Provincia at Viale Matteotti 147.",
+      "verified_sources": [
+        "https://www.wikidata.org/wiki/Q55741676"
+      ],
+      "access": "Free: visible from Viale Matteotti at the Palazzo della Provincia; the grounds belong to the provincial offices.",
+      "transport": "In Imperia (Porto Maurizio), about 7 km straight line from Pontedassio; buses run along Viale Matteotti.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Imperia_-_pino_del_Qeensland_-_202109241618.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "RobertoClaudioMariaBottino, via Wikimedia Commons",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Imperia_-_pino_del_Qeensland_-_202109241618.jpg",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-20",
+        "width": 4680,
+        "height": 3120,
+        "taken_month": 9
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/E290/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 01/E290/IM/07: Araucaria bidwillii, Imperia, Palazzo della Provincia - Viale Matteotti 147, girth 345 cm, height 26 m, 43.883067, 8.021842. Wikidata Q55741676 ('Araucaria bidwilli in the garden of Palazzo della Prefettura e della Provincia', 43.883061, 8.021861) mirrors the register and links a Commons photo, 'Imperia - pino del Qeensland - 202109241618.jpg', not yet checked or judged: the first photo candidate. Single register source; no second source found in a short search 2026-10-20. Species facts (Queensland, bunya nut gatherings, heavy cones) are general botany (en.wikipedia Araucaria bidwillii). Access: grounds of the provincial offices; view from the street assumed from height, not confirmed by a source. Written for Hidde's sister, who lives at Villa Guardia (Pontedassio). Flagged. Photo approved 2026-10-20 after viewing the pixels: the Bunya pine fills the frame from below, daylight and colour, palms around it; which trunk is settled by Wikidata Q55741676, the register tree's own item, linking this file. Taken 2021-09-24 per filename."
+    },
+    {
+      "id": "imp_002",
+      "name": "The Hackberry of San Michele, Diano Borello",
+      "species": "Mediterranean Hackberry (Celtis australis)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 510,
+      "height_m": 15,
+      "location": {
+        "address": "Chiesa di San Michele Arcangelo, Diano Borello, Diano Arentino",
+        "latitude": 43.946144,
+        "longitude": 8.050489,
+        "neighbourhood": "Diano Borello, Valle Dianese"
+      },
+      "story": "A hackberry five metres round is a big one: this species is planted in squares and by churches all over the Mediterranean, and most never come close. Italy's national list of monumental trees measures this one at 5.1 metres round and 15 metres tall, at the parish church of San Michele Arcangelo in Diano Borello.\n\nThe church stands on a promontory above the Diano valley, on a cobbled churchyard. Over its door a fresco of Saint Michael between Saint Peter and Saint John the Baptist carries the date 11 June 1485 in Roman numerals, and the stone balls on the facade are, by local tradition, the remains of a temple to Diana that gave the valley its name.\n\nThe hackberry is the classic shade tree of Mediterranean squares, with smooth grey bark like an elephant's skin, leaves with a long pointed tip, and small dark berries that birds love. Nobody has published how old this one is. If you know, tell us.\n\nOur pin is the register's point. It costs nothing to see, and the view over the valley from the churchyard is worth the stop as well.",
+      "how_to_recognise": "You can recognise it by its thick trunk of smooth grey bark, more than five metres round, at the cobbled churchyard of San Michele Arcangelo on the promontory of Diano Borello.",
+      "verified_sources": [
+        "https://rivieradeifiori.travel/en/?p=32150"
+      ],
+      "access": "Free: the churchyard of the parish church of San Michele Arcangelo.",
+      "transport": "In the hills behind Diano Marina, about 5 km straight line from Pontedassio; by car is easiest.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/D293/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 01/D293/IM/07: Celtis australis, Diano Arentino, Chiesa di San Michele Arcangelo - Diano Borello, girth 510 cm, height 15 m, 43.946144, 8.050489. Riviera dei Fiori DMO page on Diano Arentino (rivieradeifiori.travel/en/?p=32150): San Michele Arcangelo on a cobblestone churchyard on the promontory of Diano Borello, fresco over the portal dated 11 June 1485, stone spheres said to be the head of Diana; it does not mention the tree. Tree facts single register source: flagged."
+    },
+    {
+      "id": "imp_003",
+      "name": "The Downy Oaks of Maro Castello",
+      "species": "Downy Oak (Quercus pubescens)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 332,
+      "height_m": 19,
+      "location": {
+        "address": "Prato della Corte, Maro Castello, Borgomaro",
+        "latitude": 43.970356,
+        "longitude": 7.938061,
+        "neighbourhood": "Maro Castello, Valle Impero"
+      },
+      "story": "These two oaks are listed together on Italy's national list of monumental trees, a few metres apart in the meadow called Prato della Corte at Maro Castello, and the list gives them the same measurements: 3.32 metres round and 19 metres tall each.\n\nMaro Castello is a hamlet of Borgomaro, high in the Impero valley, named for the castle of Maro, now in ruins after it was destroyed in battle. Borgomaro itself is an odd one among Ligurian villages, laid out on a grid like a chessboard instead of in rings, and the valley is known for its rare Conio beans.\n\nThe downy oak is the oak of dry Mediterranean hillsides, named for the soft hairs on the underside of its young leaves and shoots. It holds its dead brown leaves through much of the winter, so even in January the pair will not look bare. Nobody has published how old they are. If you know, tell us.\n\nOur pin is the register's point, and we could not confirm whether the meadow itself is open, so look from the lane if you are unsure. Seeing them costs nothing.",
+      "how_to_recognise": "You can recognise them as a matched pair of broad oaks about 19 metres tall, standing together in the Prato della Corte meadow at the hamlet of Maro Castello.",
+      "verified_sources": [
+        "https://rivieradeifiori.travel/en/borgomaro/"
+      ],
+      "access": "Free to see from the lane; the meadow is called Prato della Corte, and we could not confirm whether it is open ground.",
+      "transport": "Up the Impero valley, about 5 km straight line west of Pontedassio; by car is easiest.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), nos. 01/B020/IM/07 and 02/B020/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 01/B020/IM/07 and 02/B020/IM/07: Quercus pubescens, Borgomaro, Maro Castello - Prato della Corte, each girth 332 cm, height 19 m, at 43.970628, 7.938003 and 43.970356, 7.938061 (about 30 m apart): one collectible point. Riviera dei Fiori DMO page on Borgomaro: grid plan, ruined Castle of Maro destroyed in battle, Conio beans; it does not mention the oaks. Access of the Prato della Corte not confirmed: said so in access and story. Also listed nearby but not written: 03/B020/IM/07, a downy oak at Conio - Vallone, girth 427 cm, height 30 m (43.9765, 7.902881), access unknown; a lead. Flagged."
+    },
+    {
+      "id": "imp_005",
+      "name": "The Chestnut of the Passo Furchè, Ceriana",
+      "species": "Sweet Chestnut (Castanea sativa)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 850,
+      "height_m": 5,
+      "location": {
+        "address": "Passo Furchè, on the ridge road above Ceriana",
+        "latitude": 43.8997,
+        "longitude": 7.784439,
+        "neighbourhood": "Ceriana, Valle Armea"
+      },
+      "story": "Eight and a half metres round and only five metres tall: that is how Italy's national list of monumental trees measures this sweet chestnut on the Passo Furchè, a pass on the mountain ridge above Ceriana. A trunk that thick on a tree that short is the shape of a very old chestnut that has lost its top and kept going.\n\nA mountain-bike guide to the ridge route calls it a 1,300-year-old chestnut and says it is worth the trip on its own. Nobody has measured its age, and a Swiss survey of monumental chestnuts warns that girth is a poor clock: a trunk of eight metres could mean anything from three to seven centuries. So we leave the age open and let the trunk speak.\n\nCeriana sits among chestnut woods, olive groves and flower fields in the upper Armea valley, and this tree stands high above it, on the dirt ridge road that runs under the Fascia d'Ubaga towards Monte Furchè.\n\nGetting here is part of the trip: a long climb by car or bike, then gravel. It stands on open mountain land and costs nothing to see.",
+      "how_to_recognise": "You can recognise it by the trunk, enormous and squat, eight and a half metres round but only about five metres tall, beside the gravel ridge road at the Passo Furchè.",
+      "verified_sources": [
+        "https://www.gulliver.it/?p=426646",
+        "https://www.waldwissen.net/it/tecnica-e-pianificazione/inventari-e-teledetezione/castagni-monumentali"
+      ],
+      "access": "Free: open mountain land beside the ridge road; the last stretch is a gravel track.",
+      "transport": "On the ridge above Ceriana, about 17 km straight line from Pontedassio; by car on a long climb, the last part gravel.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), no. 01/C511/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 01/C511/IM/07: Castanea sativa, Ceriana, Passo Furche', girth 850 cm, height 5 m, 43.8997, 7.784439. Gulliver.it MTB route 'Furchè (Cima) da Bussana' (baloo, 2013, revised 2026-10-01): 'al passo e Monte Furchè dove c'è un castagno di 1300 anni che vale il viaggio', photo captioned 'il castagno di 1300 anni', on the sterrata di dorsale under the Fascia d'Ubaga; route summit 1033 m. The 1,300 years is an unsourced claim, reported as the guide's, never as our age. waldwissen.net (Swiss monumental chestnut survey): girth is a very rough guide; about 8 m could be 300 to 700 years. Ceriana among chestnut woods, olive groves and ornamental flower fields in the Alta Valle Armea: cittadellolio.it town page (via search summary). Flagged."
+    },
+    {
+      "id": "imp_006",
+      "name": "The Horse Chestnuts of Sant'Agostino, Triora",
+      "species": "Horse Chestnut (Aesculus hippocastanum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "height_m": 28,
+      "location": {
+        "address": "Chiesa di Sant'Agostino, Triora",
+        "latitude": 43.994867,
+        "longitude": 7.763064,
+        "neighbourhood": "Triora, Valle Argentina"
+      },
+      "story": "Triora is famous for its witches. In 1588 women of this mountain village were accused of witchcraft, inquisitors came from Genoa, and the trials dragged on for years; the village is known as the site of the last witch trials held in Italy, and keeps the story alive with a museum and a festival. Its trees are a quieter reason to come.\n\nTwo horse chestnuts stand by the church of Sant'Agostino, and Italy's national list of monumental trees records both: one 3.9 metres round and 24.5 metres tall, the other 3.62 metres round and 28 metres tall. That is tall for trees in a mountain village.\n\nThe horse chestnut comes from the mountains of the Balkans and was planted all over Europe for its shade and its spring candles of white flowers, which come out here in May. In autumn the shiny brown conkers drop from their spiky cases, and the leaves turn yellow and rust.\n\nA third listed horse chestnut stands at the church of San Bernardino, a few hundred metres away. Nobody has published how old any of them are. If you know, tell us. They stand by a church and cost nothing to see.",
+      "how_to_recognise": "You can recognise them as two tall horse chestnuts with big hand-shaped leaves of five to seven leaflets, standing together by the church of Sant'Agostino in Triora.",
+      "verified_sources": [
+        "https://www.borghidiriviera.it/en/?p=4108"
+      ],
+      "access": "Free: beside the church of Sant'Agostino.",
+      "transport": "In Triora, high in the Argentina valley, about 19 km straight line from Pontedassio; by car up the valley from Arma di Taggia, or the bus from Sanremo.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali d'Italia (MASAF), nos. 01/L430/IM/07 and 02/L430/IM/07",
+        "url": null
+      },
+      "verify_notes": "MASAF register 01/L430/IM/07: Aesculus hippocastanum, Triora, Chiesa di Sant'Agostino, girth 390 cm, height 24.5 m, 43.994797, 7.762883; 02/L430/IM/07 same church, girth 362 cm, height 28 m, 43.994867, 7.763064 (about 17 m apart): one collectible point; height field 28 is the taller of the two, girth left out of the field. Triora: site of the last witch trials held in Italy (en.wikipedia Triora); accusations in 1588, inquisitors from Genoa, museum of ethnology and witchcraft, Strigora festival (ligurialetters.substack.com, 2023). borghidiriviera.it lists Sant'Agostino among Triora's churches; no source beyond the register mentions the trees. Bus from Sanremo up the Valle Argentina exists (Riviera Trasporti line to Triora) per general knowledge, not checked this pass. Flagged."
+    }
+  ]
+}
