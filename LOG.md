@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: tapping a pin shows the tree instead of leaving the map
+- **App and website, every city map.** A tapped pin grows and the tree comes up in place, as in Apple Maps (recorded in the simulator) and Airbnb (Hidde's screenshot). In the app (Map tab, a city's map, My trees) and on a phone's website the sheet's top becomes one row: share, the name with species and age, a cross; the tree's photograph under it opens the tree page. On a computer the tree's card floats beside the pin with save and a cross. The cross, a swipe down, or a tap on the map gives the list back. Approved by Hidde after five rendered rounds. App: next build; website: live with this deploy.
+- Fixed with it: the app's map count read "No trees in view" after letting a tree go.
+- Not changed: /explore still opens the tree page on a pin (its pins carry no card data yet).
+- Breakage: the smoke test was red since the Hong Kong commit (Kapok/Bombax and Kigelia pinnata clashed with other cities' names, hard rule 9); fixed and pushed separately.
+- For next time: a new screen state gets a sweep row (map-pin added) so the layout gate measures its edges; designs go to Hidde beside the recorded reference, never alone.
+
 ## 2026-10-20 session with Hidde: your face in the bar, and a flag by default
 
 **Live (web):** signed in, the desktop bar shows your round profile picture (else your initial) instead of the word Account; signed out it still says Sign in. Mockup shown first, Hidde: "ja bouw alles". This reverses 2026-10-10's "no icons in the menu bar" (that was a line-art person; this is your own photo). The country picker has "Don't show" on top. **Flag by default** (Hidde: Polarsteps showed his flag without him choosing): unchosen, the website takes the computer's time zone and the app the phone's region, written once; "Don't show" is remembered in the new profiles.flag_hidden. App: next build. Why nobody had a flag: none of the 14 profiles had ever picked a country; yesterday's flag was the simulator's demo account.

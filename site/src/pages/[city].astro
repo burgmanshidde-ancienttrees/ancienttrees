@@ -24,6 +24,7 @@ import { mapHead } from "../lib/map";
 import TreeCard from "../components/TreeCard.astro";
 import { splitForPage } from "../lib/day-trips";
 import ShareButton from "../components/ShareButton.astro";
+import PlaceRow from "../components/PlaceRow.astro";
 import { SHARE_JS } from "../lib/share-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
@@ -277,7 +278,7 @@ const avgLng = markers.reduce((s, m) => s + m.lng, 0) / markers.length;
       <div class="sheet-grab">
         <div class="panel-head">
           <Breadcrumbs items={crumbItems} />
-          <button type="button" class="sheet-back">← All {nTrees(trees.length)}</button>
+          <PlaceRow shareLabel={ui("en").share} copiedLabel={ui("en").shareCopied} closeLabel={ui("en").photoClose} />
           <p class="eyebrow">{country}</p>
           <div class="page-head">
             <h1>Ancient Trees in <em>{cityName}</em></h1>

@@ -1,0 +1,32 @@
+---
+// A tapped pin on a phone: the sheet's top row becomes that tree.
+//
+// Reference: Apple Maps, recorded in the iOS 26 simulator on 2026-10-18
+// (CONVENTIONS.md, "Tapping a pin on a map that has a list in a sheet"): a
+// share circle, the place's name and kind centred, a cross circle, all on one
+// row, everything under it on the same edge. The app's TreePlaceSheet.swift
+// draws the same row; Hidde approved both on 2026-10-20.
+//
+// Empty in the HTML and filled by the map script when a pin is tapped
+// (city-map-script.ts), so a crawler sees nothing new. The cross carries
+// .sheet-back, the class sheet-js.ts already listens to for "back to the
+// list". Labels come from UIStrings, so every language gets its own.
+import { icon } from "../lib/icons";
+
+interface Props {
+  shareLabel: string;
+  copiedLabel: string;
+  closeLabel: string;
+}
+const { shareLabel, copiedLabel, closeLabel } = Astro.props as Props;
+---
+<div class="place-row" aria-live="polite">
+  <button type="button" class="place-circle share-btn" data-share data-share-url=""
+          data-share-title="" data-share-copied={copiedLabel} aria-label={shareLabel}>
+    <Fragment set:html={icon("export")} />
+  </button>
+  <div class="place-title"><strong></strong><span></span></div>
+  <button type="button" class="place-circle sheet-back" aria-label={closeLabel}>
+    <Fragment set:html={icon("x")} />
+  </button>
+</div>

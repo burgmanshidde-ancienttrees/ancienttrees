@@ -13,6 +13,7 @@ import TreeCard from "./TreeCard.astro";
 import { splitForPage } from "../lib/day-trips";
 import LanguagePicker from "./LanguagePicker.astro";
 import ShareButton from "./ShareButton.astro";
+import PlaceRow from "./PlaceRow.astro";
 import Base from "../layouts/Base.astro";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
@@ -132,7 +133,7 @@ const cityHasQuestion = hasQuestionPage(city);
       <div class="sheet-grab">
       <div class="panel-head">
         <nav class="crumbs" aria-label="Breadcrumb"><a href={`/${lang}/cities`}>{U.citiesCrumb}</a> › <span>{tr.city}</span></nav>
-        <button type="button" class="sheet-back">{U.backToTrees(trees.length)}</button>
+        <PlaceRow shareLabel={U.share} copiedLabel={U.shareCopied} closeLabel={U.photoClose} />
         <p class="eyebrow">{countryLabel}</p>
         <div class="page-head">
           <h1>{U.heading("")}<em>{tr.city}</em></h1>

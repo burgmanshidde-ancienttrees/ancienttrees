@@ -220,7 +220,7 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
    these the desktop split renders a stray back button and a tree count
    under the heading, because their display rules live inside the phone
    media query. */
-.sheet-back { display: none; }
+.place-row { display: none; }
 /* The walking-routes overlay reuses the sign-in dialog wholesale; all it adds
    is the three-line list of what the app does (2026-08-18). */
 .app-dialog-list { list-style: none; margin: 0 0 1.1rem; padding: 0; text-align: left; }
@@ -235,6 +235,26 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .lede { font-size: 14px; font-weight: 300; color: var(--ink-mid); line-height: 1.7; }
 .notice { background: var(--moss-light); border-left: 3px solid var(--moss); padding: 0.7rem 1rem; font-size: 12px; color: var(--ink-mid); margin-top: 1rem; }
 .stage { flex: 1; position: relative; }
+/* A tapped pin on a computer: the tree's own card beside it, Airbnb's map
+   card (Hidde's screenshot, 2026-10-19), approved 2026-10-20. The numbers are
+   the approved render's: 320 wide, save and cross one pair of 32 circles on
+   the same 12 line as the season tag, name and species on one 16 edge. The
+   credit and story stay on the tree page, one click away, as in the app. */
+.map-pop { position: absolute; z-index: 30; width: 320px; background: #fff; border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.22); overflow: hidden; cursor: pointer; }
+.map-pop .tree-card { margin: 0; border: 0; box-shadow: none; padding: 0 0 16px; border-radius: 0; }
+.map-pop .tree-card-photo { margin: 0; border-radius: 0; }
+.map-pop .tree-story, .map-pop .tree-card-credit, .map-pop .tree-more { display: none; }
+.map-pop .tree-card-top, .map-pop .tree-meta { padding-left: 16px; padding-right: 16px; margin-left: 0; margin-right: 0; }
+.map-pop .tree-card-top { padding-top: 14px; }
+.map-pop .tree-meta { margin: 4px 0 0; }
+.map-pop .tag-row { left: 12px; top: 12px; }
+.map-pop .heart-card, .map-pop-close { position: absolute; top: 12px; width: 32px; height: 32px;
+  border-radius: 50%; border: 0; padding: 0; background: rgba(255,255,255,0.95); color: var(--ink);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18); display: grid; place-items: center; cursor: pointer; z-index: 3; }
+.map-pop .heart-card { right: 52px; }
+.map-pop-close { right: 12px; }
+.map-pop-close svg, .map-pop .heart-card svg { width: 16px; height: 16px; }
 .stage .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
 /* The one tree card, used by TreeCard.astro on every page that shows a tree
@@ -1479,8 +1499,12 @@ footer { border-top: 1px solid var(--cream-dark); }
   transition: transform 0.18s ease, box-shadow 0.18s ease; }
 .pin-tree svg { width: 21px; height: 21px; color: var(--moss); transition: color 0.18s ease; }
 .pin-tree:hover { transform: scale(1.12); box-shadow: 0 5px 16px rgba(26,26,20,0.34); }
-.pin-tree.active { background: var(--moss); transform: scale(1.2); z-index: 5; }
-.pin-tree.active svg { color: var(--cream); }
+/* The tapped pin GROWS, as in Apple Maps and the app (2026-10-20). By size,
+   not transform: MapLibre positions a marker with an inline transform, which
+   always beat the scale(1.2) that used to stand here. */
+.pin-tree.active { background: var(--moss); width: 50px; height: 50px; z-index: 5;
+  box-shadow: 0 5px 16px rgba(26,26,20,0.36); }
+.pin-tree.active svg { color: var(--cream); width: 30px; height: 30px; }
 /* The collect mark, and nothing else. This used to be .pin-rank and carried the
    tree's number in the list beside the map, which was our ordering rather than
    anything a visitor needed, and it sat on top of the species silhouette that is
@@ -1890,16 +1914,32 @@ footer { border-top: 1px solid var(--cream-dark); }
   :root[data-sheet="half"] .walks,
   :root[data-sheet="full"] .walks { opacity: 0; pointer-events: none; }
 
-  /* Movement 3: one tree fills the sheet, the rest stay in the DOM. */
-  .sheet-back { display: none; }
-  .panel.is-detail .sheet-back { display: inline-flex; align-items: center; gap: 0.4rem;
-    font-family: inherit; font-size: 13px; background: none; border: 0; color: var(--moss);
-    padding: 0.2rem 0; cursor: pointer; }
+  /* Movement 3: a tapped pin. The sheet's top becomes Apple Maps' place row
+     (PlaceRow.astro: share, name and kind, cross) and the tree's own card
+     shows its photograph under it, on the same edge; the rest stay in the
+     DOM. The app draws the same (TreePlaceSheet.swift), approved 2026-10-20. */
+  .panel.is-detail .place-row { display: flex; align-items: center; gap: 12px;
+    padding: 0 0 16px; }
+  .place-circle { width: 38px; height: 38px; flex: none; border-radius: 50%; border: 0;
+    padding: 0; background: rgba(38,48,30,0.08); color: var(--ink); cursor: pointer;
+    display: grid; place-items: center; }
+  .place-circle svg { width: 17px; height: 17px; }
+  .place-title { flex: 1; min-width: 0; text-align: center; color: var(--ink); }
+  .place-title strong { display: block; font-size: 20px; line-height: 1.2; font-weight: 700;
+    overflow-wrap: anywhere; }
+  .place-title span { display: block; font-size: 14px; color: var(--ink-soft, #6b7066);
+    margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .panel.is-detail .panel-head .crumbs, .panel.is-detail .panel-head .page-head,
   .panel.is-detail .panel-head h1, .panel.is-detail .panel-head .eyebrow,
-  .panel.is-detail .city-intro,
+  .panel.is-detail .city-intro, .panel.is-detail .day-trips-head,
+  .panel.is-detail .day-trip-where,
   .panel.is-detail .panel-foot { display: none; }
   .panel.is-detail .tree-card { display: none; }
-  .panel.is-detail .tree-card.is-open { display: block; }
+  .panel.is-detail .tree-card.is-open { display: block; padding: 0; overflow: hidden;
+    border-radius: 16px; }
+  .panel.is-detail .tree-card.is-open > :not(.tree-card-photo) { display: none; }
+  .panel.is-detail .tree-card.is-open .tree-card-photo { margin: 0; border-radius: 16px;
+    cursor: pointer; }
   .crumbs { display: none; }
   .tree-meta, .tree-story, .tree-more { margin-left: 0; }
   /* Keep the bar on one line on phones: secondary links stay reachable from
