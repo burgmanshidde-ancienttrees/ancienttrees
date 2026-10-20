@@ -1,0 +1,79 @@
+{
+  "city": "Thalmassing",
+  "country": "Germany",
+  "status": "needs_curation",
+  "intro": "Thalmassing maps one tree: St. Wolfgang's Oak, a hollow pedunculate oak whose great horizontal limb, over ten metres long, has rested on three props for more than a century. It burned in 1878 and again in 1909, the second time on St. Wolfgang's day, and was restored in 1972. In January 2025 it measured 9.80 metres round, and in June 2025 it became Nationalerbe-Baum number 48. Its age is disputed, from about 500 to 800 years.",
+  "meta_description": "St. Wolfgang's Oak near Thalmassing, a Bavarian oak 9.80 metres round whose huge limb rests on three props, fifteen kilometres from Regensburg.",
+  "question_meta": "Thalmassing's mapped tree is St. Wolfgang's Oak, a hollow oak 9.80 metres round with a ten-metre limb resting on three props.",
+  "question_answer": "The tree mapped at Thalmassing is St. Wolfgang's Oak, a pedunculate oak on a meadow by a forest path at Neueglofsheim, 9.80 metres round in January 2025 and one of the largest oaks in Bavaria. Published ages run from about 500 to around 800 years, and a legend says 1,250.",
+  "question_context": "Legend says St. Wolfgang preached from this oak's great sideways limb. That limb, over ten metres long, has rested on three props for more than a century; a photograph from 1905 already shows them. The tree has survived a good deal. It burned in 1878 and again in 1909, the second time on St. Wolfgang's own day, and lightning has struck it repeatedly. The trunk is hollow, with an oval opening where an ancient limb broke away, and in 1972 the district of Regensburg and the municipality of Thalmassing restored it.\n\nEvery figure for its size depends on where the tape goes, because the trunk is buttressed with knobs and root flare. It measured 9.80 metres round at chest height in January 2025, against 8 metres at one metre up in 1905. Its age is argued over: about 500 years by one measurer, up to 600 by another, 700 to 850 by the Nationalerbe-Baeume initiative, and a legend says 1,250. In June 2025 it was named Nationalerbe-Baum number 48.\n\nIt stands on a meadow beside a forest path, about 300 metres east of Schloss Haus at Neueglofsheim, fifteen kilometres from Regensburg, and is free to visit at any hour.",
+  "hero_tree_id": "thm_001",
+  "oldest_tree_id": "thm_001",
+  "faq": [
+    {
+      "q": "What is the mapped tree at Thalmassing?",
+      "a": "St. Wolfgang's Oak, a pedunculate oak 9.80 metres round, one of the largest oaks in Bavaria and Nationalerbe-Baum number 48."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Disputed. Published estimates run from about 500 to 800 years, with mentions from 400 to 1,300; the legend's 1,250 years is a story, not a measurement."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. It stands on a meadow beside a forest path at the end of an access road with a car park, open at any time."
+    },
+    {
+      "q": "How far is it from Regensburg?",
+      "a": "About 15 km south-east, so a trip rather than a walk. A bus line from Regensburg Hauptbahnhof reportedly runs on weekdays only; check the current timetable."
+    }
+  ],
+  "trees": [
+    {
+      "id": "thm_001",
+      "name": "St. Wolfgang's Oak (Wolfgangseiche)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 500 to 800 years",
+      "age_min": 400,
+      "age_max": 850,
+      "girth_cm": 980,
+      "height_m": 20,
+      "location": {
+        "address": "Forest path about 300 m east of Schloss Haus, Neueglofsheim, 93107 Thalmassing",
+        "latitude": 48.901827,
+        "longitude": 12.182629,
+        "neighbourhood": "Neueglofsheim (Thalmassing), about 15 km south-east of Regensburg"
+      },
+      "verified_sources": [
+        "https://nationalerbe-baeume.de/project/wolfgangseiche-thalmassing-bei-regensburg-bayern/",
+        "https://www.monumentale-eichen.de/bayern/schloss-haus/",
+        "https://www.baumkunde.de/baumregister/1555-sankt_wolfgangs_eiche_bei_schloss_haus_neueglofsheim/"
+      ],
+      "official_register": {
+        "name": "Bavarian LfU Naturdenkmal register ND-02671 (Landkreis Regensburg ND no. 46); Nationalerbe-Baum no. 48",
+        "url": "https://nationalerbe-baeume.de/project/wolfgangseiche-thalmassing-bei-regensburg-bayern/"
+      },
+      "access": "Free, open at any time. Stands on a meadow beside a field and forest path at the end of an access road with a car park; locally signposted as the landmark of Thalmassing.",
+      "transport": "About 15 km from Regensburg, so a trip rather than a walk. RVV bus line 20 from Regensburg Hbf to Neueglofsheim reportedly runs on weekdays only (Moovit; not checked against a current timetable, check RVV/VGN). Then about 300 m on foot east of Schloss Haus. By car there is a car park at the end of the access road.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Legend says St. Wolfgang preached from this oak's great sideways limb, and for more than a century that limb has needed help to stay up. Over ten metres long, it rests on three props, already in place in a photograph from 1905.\n\nThe tree has survived more than its share. It burned in 1878 and again in 1909, the second time on St. Wolfgang's own day. Lightning has struck it repeatedly. The trunk is hollow, and an oval opening marks where an ancient limb broke away. In 1972 the district of Regensburg and the municipality of Thalmassing restored it.\n\nIt is one of the largest oaks in Bavaria: 9.80 metres round at chest height in January 2025, on a trunk so buttressed with knobs and root flare that every figure depends on where the tape goes. In 1905 it measured 8 metres at one metre up. It stands about 18 to 20 metres tall.\n\nNobody agrees on its age. Published estimates run from about 500 to around 800 years, and mentions range from 400 to 1,300; the legend's 1,250 years is a story, not a measurement. In June 2025 it was named Nationalerbe-Baum number 48, a national heritage tree, on top of its standing as a Bavarian natural monument.\n\nIt stands on a meadow beside a forest path, about 300 metres east of Schloss Haus and fifteen kilometres from Regensburg, free and open at any hour.",
+      "how_to_recognise": "You can recognise it by the huge horizontal limb resting on three props and the buttressed trunk, 9.80 metres round. It stands on a meadow by the forest path about 300 metres east of Schloss Haus.",
+      "best_time": {
+        "months": [
+          12,
+          1,
+          2
+        ],
+        "kind": "bare silhouette",
+        "label": "winter, when the bare crown shows the propped limb in full"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "verify_notes": "Photo candidate to look at: https://commons.wikimedia.org/wiki/File:Sankt_Wolfgangs_Eiche_VI.jpg (CC BY-SA 4.0)"
+    }
+  ]
+}
