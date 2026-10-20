@@ -29,6 +29,14 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Your face in the bar, and a flag nobody had to pick (2026-10-20, from memory)
+
+**The bar.** AllTrails, komoot, Airbnb, Google and Polarsteps all show your round profile picture where the account sits once you are signed in, and your initial when there is no picture; signed out they say Log in in words. From memory: their signed-in bars were not opened this session (no account of ours there). **Ours (Hidde approved the mockup, "ja bouw alles"):** the desktop bar's Account word is now your 32-point face with the caret, the initial drawn as .profile-avatar draws it, signed out still "Sign in" in words so the two never look alike (the 2026-10-06 lesson). This reverses 2026-10-10's "none [icons] in the menu bar": that was a line-art person, this is your own photo. The phone keeps its full menu. Base.astro `atPaintFace`.
+
+**The flag.** Polarsteps showed Hidde's Dutch flag without him ever choosing a country; it most likely reads the phone's region (not checked). **Ours:** unchosen, the app takes the phone's region and the website the computer's time zone (a browser's language is often en-US for Dutch people), written once to a profile that exists; "Don't show" sits on top of the picker and is remembered in profiles.flag_hidden so the default never returns. countries.ts `COUNTRY_JS`, Profiles.swift `countryGuess`.
+
+---
+
 ## "Open in app" from the website (2026-10-19, recorded)
 
 **Reference: AllTrails, read from the association files iOS itself downloads** (Apple's CDN, `https://app-site-association.cdn-apple.com/a/v1/www.alltrails.com`, and each link domain's `/.well-known/apple-app-site-association`, fetched 2026-10-19). The page itself sits behind a bot check, so the button's own href was not seen. Three domains open their app: **www.alltrails.com** (content paths: `/trail/*`, `/parks/*`, `/lists/*`, `/members/*`, every country page), the same arrangement as ours; **alltrails.onelink.me** (AppsFlyer's OneLink, a few short path prefixes, plus App Clips); and **alltrails.page.link** (Firebase Dynamic Links, `/*`). The two extra domains exist for one reason, and it is Apple's rule: a universal link opens the app only when it is tapped on a DIFFERENT domain. A link to alltrails.com tapped on alltrails.com stays in Safari, so the "open the app" button has to point at another domain, which hands the tap to the app when it is installed and to the App Store when it is not. Nothing on the web page ever learns whether the app is there; iOS decides at the tap.

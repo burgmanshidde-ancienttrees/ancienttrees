@@ -176,9 +176,9 @@ public final class Profiles {
            let rows = try? JSONDecoder().decode([FlagRow].self, from: data) {
             myCountry = rows.first?.country
             myFlagHidden = rows.first?.flag_hidden ?? false
-            if rows.first != nil, myCountry == nil, !myFlagHidden, let uid = userId,
+            if rows.first != nil, myCountry == nil, !myFlagHidden, let token,
                let guess = Self.countryGuess() {
-                _ = await saveCountry(guess, userId: uid, token: token)
+                _ = await saveCountry(guess, userId: userId, token: token)
             }
         } else if let data = try? await send(request(
             "profiles?select=country&user_id=eq.\(userId)", "GET", token: token)),
