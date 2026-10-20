@@ -489,20 +489,27 @@ const crumbItems: [string, string | null][] = [
         document.getElementById("me-name").textContent = v;
         hasName = true;
         // The country on its own write, like the app's saveCountry, and only
-        // when it changed: null clears the flag.
+        // when it changed. "Don't show" stores flag_hidden, so the default
+        // never comes back; a database without that column yet takes the
+        // country alone.
         var want = document.getElementById("in-country").value;
         var done = function(ok) {
           nameBtn.disabled = false;
           say(ok ? "Saved." : "That did not save. Your country would not save.");
-          if (ok) { myCountry = want; setTimeout(function() { shut("me-sheet"); }, 700); }
+          if (ok) { myCountry = want; myHidden = !want; setTimeout(function() { shut("me-sheet"); }, 700); }
         };
-        if (want === myCountry) { done(true); return; }
-        fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
-          method: "POST",
-          headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
-                     "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
-          body: JSON.stringify([{ user_id: myId, country: want || null }])
-        }).then(function(r2) { done(r2.ok); }).catch(function() { done(false); });
+        if (want === myCountry && (want || myHidden)) { done(true); return; }
+        var put = function(row) {
+          return fetch(SB + "/rest/v1/profiles?on_conflict=user_id", {
+            method: "POST",
+            headers: { "apikey": KEY, "Authorization": "Bearer " + cur.access_token,
+                       "Content-Type": "application/json", "Prefer": "resolution=merge-duplicates" },
+            body: JSON.stringify([row])
+          });
+        };
+        put({ user_id: myId, country: want || null, flag_hidden: !want })
+          .then(function(r2) { return r2.ok ? r2 : put({ user_id: myId, country: want || null }); })
+          .then(function(r3) { done(r3.ok); }).catch(function() { done(false); });
       }).catch(function() {
         nameBtn.disabled = false;
         say("That did not save. Try again in a moment.");

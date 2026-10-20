@@ -26,6 +26,7 @@ import Base from "../layouts/Base.astro";
 import { BASE_URL } from "../lib/schema";
 import { SUPABASE_URL, SUPABASE_KEY } from "../lib/site-config";
 import { PROFILE_JS } from "../lib/profile-js";
+import { COUNTRY_JS } from "../lib/countries";
 import { MY_TREES_JS } from "../lib/my-trees-js";
 import { TREE_ACTIONS_JS } from "../lib/tree-actions-js";
 import SignInPanel from "../components/SignInPanel.astro";
@@ -190,7 +191,7 @@ const canonical = `${BASE_URL}/account`;
     <div id="map" class="map"></div>
   </div>
 </div>
-<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + PROFILE_JS + MY_TREES_JS + SHEET_JS + `
+<Fragment slot="scripts" set:html={TREE_ACTIONS_JS + myTreesMapScript() + COUNTRY_JS + PROFILE_JS + MY_TREES_JS + SHEET_JS + `
 <script>
 (function() {
   var SB = "${SUPABASE_URL}";
