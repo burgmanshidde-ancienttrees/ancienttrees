@@ -958,10 +958,12 @@ struct TreeMap: UIViewRepresentable {
                     }
                 }
             }
-            // While a tree is selected the camera is being driven by the pager,
-            // so reporting the region back would rebuild the list under the
-            // pager and shuffle what you are swiping through.
-            guard parent.selected == nil, let binding = parent.region else { return }
+            // Reported while a tree is selected too (2026-10-20). The guard here
+            // protected a sideways pager that no longer exists: a selected tree
+            // now replaces the list in the sheet, so nothing shuffles, and
+            // skipping the report left the count reading "No trees in view"
+            // once the tree was let go over a map full of pins.
+            guard let binding = parent.region else { return }
             let now = TreeMap.region(map.visibleCoordinateBounds)
             if let last = binding.wrappedValue {
                 let a = CLLocation(latitude: last.center.latitude, longitude: last.center.longitude)

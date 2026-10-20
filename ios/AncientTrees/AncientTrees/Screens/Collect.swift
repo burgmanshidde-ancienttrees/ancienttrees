@@ -318,12 +318,23 @@ struct CollectView: View {
         MapWithSheet(height: $sheetHeight) {
             coverMap
         } header: {
-            sheetHeader
+            // A tapped pin takes the sheet, as on the Map tab
+            // (TreePlaceSheet.swift).
+            if let t = selectedTree {
+                TreePlaceHeader(tree: t, onClose: { selectedTree = nil })
+            } else {
+                sheetHeader
+            }
         } content: {
-            sheetBody
+            if let t = selectedTree {
+                TreePlaceBody(tree: t, onOpen: { navigator.push = .tree(t.id) })
+            } else {
+                sheetBody
+            }
         } floating: {
             settingsButton.frame(maxWidth: .infinity, alignment: .trailing)
         }
+        .pinSelection($selectedTree, height: $sheetHeight)
         .brandGround()
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
@@ -489,7 +500,7 @@ struct CollectView: View {
                 collected: Set(saved.collected.map(\.treeId)),
                 favourites: Set(saved.favourites.map(\.treeId)),
                 onSelectMine: { navigator.push = .mine($0) },
-                onSelectTree: { navigator.push = .tree($0) },
+                // A pin selects, as on the Map tab (TreePlaceSheet.swift).
                 focus: centreOfYours,
                 spanMeters: spanOfYours,
                 fitsTrees: true,

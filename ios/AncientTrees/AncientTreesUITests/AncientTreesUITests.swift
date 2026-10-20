@@ -405,7 +405,11 @@ final class AncientTreesUITests: XCTestCase {
     /// the sheet's heights change. Somewhere on that column is the tree the map
     /// was told to centre on.
     @MainActor
-    func testTappingAPinOpensItsTree() throws {
+    // SINCE 2026-10-20 A PIN SELECTS: the sheet becomes that tree (Apple
+    // Maps' place row, TreePlaceSheet.swift) and its card opens the page. So
+    // the sweep waits for the place row, then taps the card, and the page is
+    // still what is asserted at the end.
+    func testTappingAPinShowsItsTree() throws {
         // SIGNED IN, and that is the fix for the red this test was, not a
         // detail. Diagnosed 2026-08-30 from the runner's own result bundle.
         //
@@ -421,7 +425,9 @@ final class AncientTreesUITests: XCTestCase {
         // -signed-in is exactly the scaffolding for this and its own comment
         // says so: a local session with no tokens, so nothing can ask anybody
         // to sign in while a test is measuring something else.
-        let app = launch(["-map", "-select=ams_002", "-signed-in"])
+        // No -select: a tree already in the sheet would be let go by the first
+        // tap that lands on empty map, which is what that tap is for now.
+        let app = launch(["-map", "-signed-in"])
         let map = app.otherElements["tree-map"]
         XCTAssertTrue(map.waitForExistence(timeout: 14), "no map")
         // Let the tiles and the pins arrive. Where the camera ends up does not
@@ -517,7 +523,12 @@ final class AncientTreesUITests: XCTestCase {
                     // and the previous 0.5s let the next tap in the same sweep
                     // land mid-animation, on coordinates that no longer matched
                     // what the eye would see.
-                    if app.buttons["tree-take-me-there"].waitForExistence(timeout: 2.0) {
+                    if app.descendants(matching: .any)["place-header"].waitForExistence(timeout: 2.0) {
+                        let card = app.buttons["place-card"]
+                        XCTAssertTrue(card.waitForExistence(timeout: 3), "the place row came up without the tree's card")
+                        card.tap()
+                        XCTAssertTrue(app.buttons["tree-take-me-there"].waitForExistence(timeout: 6),
+                                      "the tree's card in the sheet did not open its page")
                         return
                     }
                     // AND STOP IF WE HAVE LEFT THE APP. Belt as well as braces:

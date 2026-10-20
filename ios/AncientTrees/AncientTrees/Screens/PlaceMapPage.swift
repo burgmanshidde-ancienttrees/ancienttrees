@@ -119,7 +119,7 @@ struct PlaceMapPage: View {
             TreeMap(trees: trees,
                     collected: Set(saved.collected.map(\.treeId)),
                     favourites: Set(saved.favourites.map(\.treeId)),
-                    onSelectTree: { navigator.push = .tree($0) },
+                    // A pin selects, as on the Map tab (TreePlaceSheet.swift).
                     focus: centre,
                     spanMeters: span,
                     // The whole point of this page is these trees, so it frames
@@ -129,12 +129,42 @@ struct PlaceMapPage: View {
                     selected: $selected)
                 .accessibilityIdentifier("tree-map")
         } header: {
-            Text("\(treesLabel(trees.count)) in \(title)")
-                .font(.brand(16, .bold, relativeTo: .headline))
-                .foregroundStyle(Brand.ink)
-                .frame(maxWidth: .infinity)
-                .padding(.bottom, 10)
+            if let t = selected {
+                TreePlaceHeader(tree: t, onClose: { selected = nil })
+            } else {
+                Text("\(treesLabel(trees.count)) in \(title)")
+                    .font(.brand(16, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.ink)
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 10)
+            }
         } content: {
+            if let t = selected {
+                TreePlaceBody(tree: t, onOpen: { navigator.push = .tree(t.id) })
+            } else {
+                list
+            }
+        }
+        .pinSelection($selected, height: $sheetHeight)
+        .brandGround()
+        .navigationTitle(title)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            // Since a city opens here (2026-10-17) this is the city page, so
+            // it carries the share the old browse page had.
+            if case .city(let slug) = place {
+                ShareTo(url: URL(string: "https://ancienttrees.app/\(slug)")!,
+                        subject: title,
+                        message: "Ancient trees in \(title).",
+                        label: "Share this city")
+            }
+        }
+        .accessibilityIdentifier("place-map-page")
+    }
+
+    /// The trees, the ambassador row and the day trips: the sheet when no pin
+    /// is selected.
+    private var list: some View {
             VStack(alignment: .leading, spacing: 18) {
                 // Who looks after this city, komoot's person row, above the
                 // trees as the website prints it under the intro.
@@ -188,20 +218,5 @@ struct PlaceMapPage: View {
             }
             .padding(.horizontal, 20)
             .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .brandGround()
-        .navigationTitle(title)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            // Since a city opens here (2026-10-17) this is the city page, so
-            // it carries the share the old browse page had.
-            if case .city(let slug) = place {
-                ShareTo(url: URL(string: "https://ancienttrees.app/\(slug)")!,
-                        subject: title,
-                        message: "Ancient trees in \(title).",
-                        label: "Share this city")
-            }
-        }
-        .accessibilityIdentifier("place-map-page")
     }
 }

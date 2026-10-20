@@ -93,6 +93,42 @@ private struct PlaceCircle: View {
     }
 }
 
+/// How a map screen's sheet answers a tapped pin, written once for the Map
+/// tab, a city's map and My trees: a tap opens the sheet to half, the height
+/// Apple Maps shows a place at; letting go (the cross, a tap on empty map)
+/// puts the list back at the height it had; swiping the sheet down to its lip
+/// lets the tree go.
+struct PinSelection: ViewModifier {
+    @Binding var selected: Tree?
+    @Binding var height: SheetHeight
+    @State private var before: SheetHeight?
+
+    func body(content: Content) -> some View {
+        content
+            .onChange(of: selected) { old, new in
+                if new != nil {
+                    if old == nil { before = height }
+                    withAnimation(.spring(duration: 0.3)) { height = .half }
+                } else if let b = before {
+                    withAnimation(.spring(duration: 0.3)) { height = b }
+                    before = nil
+                }
+            }
+            .onChange(of: height) { _, new in
+                if new == .peek, selected != nil {
+                    before = nil
+                    selected = nil
+                }
+            }
+    }
+}
+
+extension View {
+    func pinSelection(_ selected: Binding<Tree?>, height: Binding<SheetHeight>) -> some View {
+        modifier(PinSelection(selected: selected, height: height))
+    }
+}
+
 struct TreePlaceBody: View {
     let tree: Tree
     let onOpen: () -> Void

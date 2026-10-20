@@ -36,9 +36,6 @@ struct MapTab: View {
     @State private var mapIdle = false
 
     @State private var selected: Tree?
-    /// The list's height when a pin was tapped, so the cross puts it back
-    /// where it was (Apple Maps, recorded 2026-10-18).
-    @State private var heightBeforeSelect: SheetHeight?
     /// Debug only, same family as -tab and -at: selecting a pin needs a tap and
     /// simctl cannot tap, so the one screen that only exists after a tap could
     /// not be looked at before it shipped.
@@ -605,36 +602,13 @@ struct MapTab: View {
             }
         }
         .toolbar(.hidden, for: .navigationBar)
-        .onChange(of: selected) { old, new in
-            // A tapped tree opens the sheet to half, the height Apple Maps
-            // shows a place at; the list's own height is kept for the cross.
-            if new != nil {
-                if old == nil { heightBeforeSelect = sheetHeight }
-                withAnimation(.spring(duration: 0.3)) { sheetHeight = .half }
-            } else if let before = heightBeforeSelect {
-                // Let go by a tap on the empty map: the same as the cross.
-                withAnimation(.spring(duration: 0.3)) { sheetHeight = before }
-                heightBeforeSelect = nil
-            }
-        }
-        // SWIPED DOWN TO THE LIP lets the tree go too: the third way back to
-        // the list, beside the cross and a tap on the empty map.
-        .onChange(of: sheetHeight) { _, new in
-            if new == .peek, selected != nil {
-                heightBeforeSelect = nil
-                selected = nil
-            }
-        }
+        // A tapped pin: TreePlaceSheet.swift's PinSelection, shared with a
+        // city's map and My trees.
+        .pinSelection($selected, height: $sheetHeight)
     }
 
     /// The cross: the list comes back at the height it had, the pin shrinks.
-    private func closePlace() {
-        withAnimation(.spring(duration: 0.3)) {
-            selected = nil
-            sheetHeight = heightBeforeSelect ?? .peek
-        }
-        heightBeforeSelect = nil
-    }
+    private func closePlace() { selected = nil }
 
     /// Close enough to see it. Beyond this the honest thing is to point rather
     /// than to offer a tick, because a tick you can press from your sofa is

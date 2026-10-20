@@ -242,6 +242,11 @@ def screens(sub):
     plan = [
         ("map",           ["-tab=0"], 7),
         ("map-full",      ["-tab=0", "-sheet=full"], 7),
+        # A TAPPED PIN, the sheet as that tree (2026-10-20). Photographed and
+        # measured because four rounds of it reached Hidde misaligned before
+        # anything had checked its edges ("how can we prevent you in the
+        # future from making such sloppy designs").
+        ("map-pin",       ["-tab=0", f'-select={sub["tree"]}'], 8),
         ("explore",       ["-tab=1"], 4),
         ("collect-intro", ["-collect"], 5),
         ("collect-away",  ["-collect", "-at=52.03,5.91"], 6),
