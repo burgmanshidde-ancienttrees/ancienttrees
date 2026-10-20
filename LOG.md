@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: Gavin Coates's HKU Digital Arboretum, and the Kam Tin Tree House pin
+
+- **Fixed:** hkg_003, the Kam Tin Tree House, was pinned about 300 m from the register coordinate of the tree it cites (LCSD YL/6). Moved to the register point, which three of Gavin's videos at the tree confirm within 11 m; height 18.5 m from the register.
+- The arboretum's map is a public GeoJSON (1,182 dated, placed videos, 324 species) with no licence: a finding aid for pins, life checks and leads, never imported or shown. Notes and uses in data/research/hong-kong-digarb.md. It maps where Gavin teaches, not old trees: 15 videos sit at an Old and Valuable Tree.
+
 ## 2026-10-20 session with Hidde: iPad question, and the header fits an iPad in portrait
 
 - Live (65eb661fc): at 801 to 1023px the header's logo, Sign in and app pill no longer wrap onto two lines; the search field shrinks instead. Checked in English and French (longest labels) at 801 and 820px, and the phone bar is unchanged.

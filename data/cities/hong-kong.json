@@ -102,8 +102,8 @@
       "age_max": 150,
       "location": {
         "address": "Shui Mei Village Playground, Kam Tin, Yuen Long",
-        "latitude": 22.44919,
-        "longitude": 114.058279,
+        "latitude": 22.447664,
+        "longitude": 114.060733,
         "neighbourhood": "Kam Tin, Yuen Long"
       },
       "story": "Nobody agrees on what this stone house was originally for, a temple, a study hall, a family residence, but everybody agrees on why it stands empty: in 1661, the new Qing dynasty ordered Hong Kong's coastline evacuated to cut off supplies reaching Ming loyalist rebels, and the Tang clan family who owned this house in Kam Tin left with everyone else. Villagers were kept from the coast for eight years, and by the time the order lifted, whoever had lived here never came back. The building sat abandoned long enough that, at some point in the following centuries, a Chinese banyan took root in it, and it has spent more than a hundred years since growing directly through the structure rather than around it, trunk and roots forcing themselves through gaps in the brickwork until tree and ruin became a single object. What is left today reads less like a house with a tree beside it than a tree that happens to have kept a house's walls as part of its own shape, roof long gone, window openings now just holes the trunk grows past. It stands in a public playground in Shui Mei Village, a short trip by minibus from Yuen Long or Kam Sheung Road, one of the more unusual things a seventeenth-century eviction order has ever produced.",
@@ -133,7 +133,9 @@
         "name": "Register of Old and Valuable Trees (Development Bureau, Greening, Landscape and Tree Management Section), no. LCSD YL/6 (Tree Register No. LCSD/YL/00004)",
         "url": null
       },
-      "height_m": 18.5
+      "height_m": 18.5,
+      "pin_source": "Register of Old and Valuable Trees coordinate for LCSD YL/6; three videos filmed at the tree by the HKU Digital Arboretum (2025-09-06) are placed within 11 m of it. The earlier pin was about 300 m off.",
+      "verify_notes": "2026-10-20: pin moved about 300 m to the register coordinate of LCSD YL/6 (22.447664, 114.060733), confirmed by three HKU Digital Arboretum videos at the tree. Height 18.5 m from the register."
     },
     {
       "id": "hkg_004",
