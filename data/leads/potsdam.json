@@ -1,160 +1,162 @@
 {
-  "city": "Potsdam",
-  "country": "Germany",
-  "city_slug": "potsdam",
-  "note": "Candidates from the 2026-08-15 Potsdam verification pass. Four trees, pot_001 to pot_004, were delivered and published in data/cities/potsdam.json on 2026-08-15: two Naturdenkmal limes and two oaks in the Glienicke parkland on the Berlin bank of the bridge. A fifth and sixth tree, pot_005 (Door Oak of Pfaueninsel, register 6-101/B) and pot_006 (Schlosswiese Oak of Pfaueninsel, register 6-102/B), shipped the same pass and were retired 2026-08-16 per REVIEW.md's 2026-08-16 BLOCKER: both duplicate trees already published in data/cities/berlin.json (ber_012 and ber_011 respectively, same register ids, coordinates within 12-15m, same sources), and Potsdam's own FAQ already conceded they were 'not actually in Potsdam'. Their old URLs now redirect to the Berlin pages via RENAMED_TREE_SLUGS in site/src/lib/redirect-map.ts. Folded into blocked below so a future pass does not re-research them into Potsdam.",
-  "leads": [
-    {
-      "register_ids": [
-        "6-38/B-1",
-        "6-38/B-2",
-        "6-38/B-3"
-      ],
-      "name": "The plane trees behind Jagdschloss Glienicke (Ahornblättrige Platane x3)",
-      "species": "London Plane (Platanus x acerifolia)",
-      "place": "Garten Klein-Glienicke, hinter dem Jagdschloss, Königstraße 36B",
-      "latitude": 52.410565,
-      "longitude": 13.098013,
-      "status": "held",
-      "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate. CONFIRMED 2026-08-15: this trio is genuinely distinct from the Pfaueninsel candidates verified the same pass (different coordinates, ~2km apart, different island entirely), not a re-surfacing of the same trees."
-    },
-    {
-      "register_ids": [
-        "6-108/B"
-      ],
-      "name": "Split-leaved oak near Schloss Pfaueninsel (Geschlitzblaettrige Trauben-Eiche)",
-      "species": "Sessile Oak, cut-leaved form (Quercus petraea)",
-      "place": "Pfaueninsel, ca. 150m nordoestlich vom Schloss",
-      "latitude": 52.431763,
-      "longitude": 13.1212,
-      "status": "duplicate",
-      "reason": "Already published, under Berlin not Potsdam: this is the exact same tree as Berlin's ber_015 (\"The Cut-Leaf Oak of Pfaueninsel\"), same register id 6-108/B, same coordinates (52.431763, 13.121202 here vs 52.431763, 13.121202 there). Pfaueninsel is administratively part of Berlin (Steglitz-Zehlendorf), not Potsdam, even though it sits geographically closer to Potsdam and a distance-based register query pulls it into this city's candidate list. Same situation as the other two Pfaueninsel oaks this file already recorded as folded into ber_011 and ber_012. Marked 'duplicate' 2026-08-23 after leads.py's READY check surfaced this as needing a story, which it does not."
-    },
-    {
-      "register_ids": [
-        "6-71/B"
-      ],
-      "name": "The Plane by the Wirtshaus zur Pfaueninsel",
-      "species": "London Plane (Platanus acerifolia)",
-      "place": "Pfaueninsel, westlich des Wirtshauses zur Pfaueninsel, Pfaueninselchaussee 100",
-      "latitude": 52.428433,
-      "longitude": 13.121932,
-      "status": "lead",
-      "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-71/B, designated 1993-03-02, reason 'Schoenheit, landeskundliche Gruende') is the only source found this pass. A baumkunde.de entry for a plane tree at the Wirtshaus zur Faehre Pfaueninsel exists but its exact URL/register number and coordinates could not be confirmed this pass (WebSearch snippets only, no direct page fetch succeeded), so identity match to 6-71/B is unconfirmed rather than established. Also flag for a future pass: check whether 'westlich des Wirtshauses' places this tree in the inn's beer garden/private terrace rather than open parkland, which would be an access question under hard rule 10, not yet resolved."
-    },
-    {
-      "name": "Naturdenkmal Nr. 22 Copper/Red Beech of Puschkinallee 17 (Rotbuche, Fagus sylvatica)",
-      "place": "Puschkinallee 17, NE of Villa Gericke",
-      "latitude": 52.41701,
-      "longitude": 13.058912,
-      "status": "held",
-      "reason": "Register page (fetched): girth 410 cm, Flur 1 Flurstueck 191; Commons photo May 2026 (Tdworek, CC BY-SA 4.0) confirms alive but its geotag just repeats the list coordinate. Held: stands in the private Villa Gericke grounds (private residence, sold 2017); no source says the garden is open, street view only per a search summary. Needs access evidence.",
-      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-22-rotbuche-der-nauener-vorstadt"
-    },
-    {
-      "name": "Naturdenkmal Nr. 20 Yew of Grosse Weinmeisterstrasse 42 (Gemeine Eibe, Taxus baccata)",
-      "place": "Grosse Weinmeisterstrasse 42",
-      "latitude": 52.420671,
-      "longitude": 13.065461,
-      "status": "held",
-      "reason": "Register page (fetched): girth 200 cm, Flur 1 Flurstueck 787; Commons photo 2017 (Haplochromis, CC BY-SA 4.0) geotag 52.420822,13.065724. Held: a draft city list puts it in the front garden of a private house; no access evidence; modest girth.",
-      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-20-gemeine-eibe-der-nauener-vorstadt"
-    },
-    {
-      "name": "Naturdenkmal Nr. 24 Large-leaved Lime near Grosse Weinmeisterstrasse 53 (Sommer-Linde, Tilia platyphyllos)",
-      "place": "Parkbereich Grosse Weinmeisterstrasse 53",
-      "latitude": 52.413752,
-      "longitude": 13.062035,
-      "status": "held",
-      "reason": "Register page (fetched): girth 410 cm, Flur 1 Flurstueck 244. Held: no photo found on Commons, no OSM check done, list coordinate only (approximate), access to the park area not established.",
-      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-24-sommer-linde-der-nauener-vorstadt"
-    },
-    {
-      "name": "Naturdenkmal Nr. 40 Turkey Oaks of Paetowstrasse (Zerr-Eiche, Quercus cerris, several trees)",
-      "place": "Paetowstrasse, 80 to 100 m SW of pot_010",
-      "latitude": 52.3809,
-      "longitude": 13.0513,
-      "status": "held",
-      "reason": "Register: girths 160 to 295 cm, Flur 14 Flurstuecke 32 and 34; OSM natural=tree nodes with denotation=natural_monument and a Commons image at 52.38087,13.05129 and 52.38110,13.05159; Commons photo exists. Not verified this pass (ensemble of 5 or more, one place to stand to be judged, girth modest, one OSM way is access=private near it). Pair with pot_010 if pursued.",
-      "source_url": "https://www.potsdam.de/de/content/"
-    },
-    {
-      "name": "Naturdenkmal Nr. 13 Oak of Krampnitzer Strasse 17, Sacrow (Stiel-Eiche, Quercus robur)",
-      "place": "Krampnitzer Strasse 17, shore of the Sacrower See",
-      "latitude": 52.428776,
-      "longitude": 13.089546,
-      "status": "lead",
-      "reason": "City page (fetched 2026-10-20): girth 600 cm, Flur 3 Flurstueck 10/2, 'am Ufer des Sacrower Sees'. Commons photo (WikiVagant, 2018-09-01, geotag = list coordinate) says the trunk is hidden behind a fence and bushes seen from the street: access to the trunk not established (a private plot is likely; Baumarchiv also mentions a private plot at the south tip of the lake). OSM tree node 8678713312 (circumference 6.0) at 52.428776,13.089546. No access evidence, no photo of the trunk.",
-      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-13-stiel-eiche-sacrow"
-    },
-    {
-      "name": "Naturdenkmal Nr. 16 Copper/Red Beech west of Sacrow (Rotbuche, Fagus sylvatica)",
-      "place": "Koenigswald, west of Sacrow, 'Strasse nach Sacrow'",
-      "latitude": 52.425965,
-      "longitude": 13.08178,
-      "status": "lead",
-      "reason": "City page (fetched 2026-10-20): girth 405 cm, Flur 3 Flurstueck 35, 'westlich von Sacrow im Koenigswald'. OSM node 8679244125 (circumference 4.05) sits exactly on the register coordinate, so not independent. Forest tree with a register point only: no photograph, no recent observation (lifecheck NONE), pin cannot be placed on a crown. Reason: no photo or exact pin in reach. Public forest, so access is not the issue.",
-      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-16-rotbuche-bei-sacrow"
-    },
-    {
-      "name": "Naturdenkmal Nr. 27 Caucasian Wingnut of Berliner Strasse 52 (Pterocarya fraxinifolia)",
-      "place": "Berliner Strasse 52, garden behind the house",
-      "latitude": 52.409256,
-      "longitude": 13.079765,
-      "status": "held",
-      "reason": "Register (search result of the city page, Flur 2 Flurstueck 762): girth 375 cm, 'im Garten hinter dem Haus Berliner Strasse 52'. Private garden behind a house: no public access evidence (hard rule 10). Wikidata Q106393705.",
-      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-27-kaukasische-fluegelnuss-der-berliner-vorstadt"
-    },
-    {
-      "name": "Naturdenkmal Nr. 28 Small-leaved Lime of Hebbelstrasse 37 (Winter-Linde, Tilia cordata)",
-      "place": "Hebbelstrasse 37, 'auf dem Grundstueck hinter dem Haus'",
-      "latitude": 52.405269,
-      "longitude": 13.061464,
-      "status": "held",
-      "reason": "City page (fetched 2026-10-20): girth 350 cm, stands on the plot behind the house at Hebbelstrasse 37. Private plot, no access evidence (hard rule 10). Commons photo January 2021 (Wikidata P18).",
-      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-28-winter-linde-der-hebbelstrasse"
-    },
-    {
-      "name": "Naturdenkmal Nr. 40 Eleven Turkey Oaks of Paetowstrasse (Zerr-Eiche, Quercus cerris)",
-      "place": "Paetowstrasse, unpaved southern section beside the allotment colony, 80 to 100 m SW of pot_010",
-      "latitude": 52.3809,
-      "longitude": 13.0513,
-      "status": "lead",
-      "reason": "City page (fetched 2026-10-20): eleven Turkey oaks (foreign species), girths 160 to 295 cm, Flur 14 Flurstuecke 32 and 34. Eleven OSM natural=tree nodes (denotation natural_monument, mapped 2021-05) run in a row about 70 m long from 52.38073,13.05115 to 52.38119,13.05171 along a track: a short row, modest girth, not one place to stand; Turkey oaks reach about 200 years. Could be a single stop with pot_010 if a later pass wants it; walkable from pot_010 (OSM shows highway=track and footway nearby, one way access=private near it)."
-    },
-    {
-      "name": "Naturdenkmal Nr. 26 Apple Tree of Alexandrowka",
-      "place": "Alexandrowka colony",
-      "latitude": 52.410591,
-      "longitude": 13.058016,
-      "status": "held",
-      "reason": "Register girth 260 cm (de.wikipedia list), Wikidata Q106393704 with a Commons image; the garden of the Russian colony belongs to its houses and no source found says which garden or whether it is visible from a public path. Not researched further this pass: no access evidence."
-    }
-  ],
-  "blocked": [
-    {
-      "register_ids": [
-        "6-101/B"
-      ],
-      "name": "The Door Oak of Pfaueninsel",
-      "species": "Sessile Oak (Quercus petraea)",
-      "place": "Pfaueninsel, about 100m northeast of the ferry landing",
-      "latitude": 52.430667,
-      "longitude": 13.122139,
-      "status": "blocked",
-      "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_012 (\"The Tuereiche (Door Oak) of Pfaueninsel\"), same register id, coordinates 12m apart, same sources (baumkunde.de #6402, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_005 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
-    },
-    {
-      "register_ids": [
-        "6-102/B"
-      ],
-      "name": "The Schlosswiese Oak of Pfaueninsel",
-      "species": "Sessile Oak (Quercus petraea)",
-      "place": "Pfaueninsel, Schlosswiese meadow about 100m northeast of the Schloss",
-      "latitude": 52.431453,
-      "longitude": 13.120752,
-      "status": "blocked",
-      "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_011 (\"The Great Oak of Pfaueninsel\"), same register id, coordinates 10m apart, same sources (baumkunde.de #2135, Ostdeutsches Baumarchiv, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_006 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
-    }
-  ]
+ "city": "Potsdam",
+ "country": "Germany",
+ "city_slug": "potsdam",
+ "note": "Candidates from the 2026-08-15 Potsdam verification pass. Four trees, pot_001 to pot_004, were delivered and published in data/cities/potsdam.json on 2026-08-15: two Naturdenkmal limes and two oaks in the Glienicke parkland on the Berlin bank of the bridge. A fifth and sixth tree, pot_005 (Door Oak of Pfaueninsel, register 6-101/B) and pot_006 (Schlosswiese Oak of Pfaueninsel, register 6-102/B), shipped the same pass and were retired 2026-08-16 per REVIEW.md's 2026-08-16 BLOCKER: both duplicate trees already published in data/cities/berlin.json (ber_012 and ber_011 respectively, same register ids, coordinates within 12-15m, same sources), and Potsdam's own FAQ already conceded they were 'not actually in Potsdam'. Their old URLs now redirect to the Berlin pages via RENAMED_TREE_SLUGS in site/src/lib/redirect-map.ts. Folded into blocked below so a future pass does not re-research them into Potsdam.",
+ "leads": [
+  {
+   "register_ids": [
+    "6-38/B-1",
+    "6-38/B-2",
+    "6-38/B-3"
+   ],
+   "name": "The plane trees behind Jagdschloss Glienicke (Ahornblättrige Platane x3)",
+   "species": "London Plane (Platanus x acerifolia)",
+   "place": "Garten Klein-Glienicke, hinter dem Jagdschloss, Königstraße 36B",
+   "latitude": 52.410565,
+   "longitude": 13.098013,
+   "status": "held",
+   "reason": "LEAD, access uncertain, not blocked outright. Three co-located London Planes (near-identical siting, treat as one collectible point if pursued, per the register-twin rule) stand in the walled garden directly behind Jagdschloss Glienicke, which has housed the Sozialpädagogisches Fortbildungsinstitut Berlin-Brandenburg (SFBB), a training institute, since 2007. Search results say the wider park around the building is open to the public 'at any time', but nothing found this pass confirms the specific fenced garden behind the building itself, as distinct from the surrounding open parkland (which is where pot_001 stands, and is NOT this garden). Per BRIEF_RESEARCH.md, when access cannot be stated honestly the tree waits as a lead rather than shipping or being blocked outright. A future pass should check the SFBB's own site or call to confirm whether the garden is open to casual visitors or only to institute guests; also present but unexamined at the same address, a Blutbuche (copper beech), register id 6-39/B, not yet a candidate. CONFIRMED 2026-08-15: this trio is genuinely distinct from the Pfaueninsel candidates verified the same pass (different coordinates, ~2km apart, different island entirely), not a re-surfacing of the same trees."
+  },
+  {
+   "register_ids": [
+    "6-108/B"
+   ],
+   "name": "Split-leaved oak near Schloss Pfaueninsel (Geschlitzblaettrige Trauben-Eiche)",
+   "species": "Sessile Oak, cut-leaved form (Quercus petraea)",
+   "place": "Pfaueninsel, ca. 150m nordoestlich vom Schloss",
+   "latitude": 52.431763,
+   "longitude": 13.1212,
+   "status": "duplicate",
+   "reason": "Already published, under Berlin not Potsdam: this is the exact same tree as Berlin's ber_015 (\"The Cut-Leaf Oak of Pfaueninsel\"), same register id 6-108/B, same coordinates (52.431763, 13.121202 here vs 52.431763, 13.121202 there). Pfaueninsel is administratively part of Berlin (Steglitz-Zehlendorf), not Potsdam, even though it sits geographically closer to Potsdam and a distance-based register query pulls it into this city's candidate list. Same situation as the other two Pfaueninsel oaks this file already recorded as folded into ber_011 and ber_012. Marked 'duplicate' 2026-08-23 after leads.py's READY check surfaced this as needing a story, which it does not."
+  },
+  {
+   "register_ids": [
+    "6-71/B"
+   ],
+   "name": "The Plane by the Wirtshaus zur Pfaueninsel",
+   "species": "London Plane (Platanus acerifolia)",
+   "place": "Pfaueninsel, westlich des Wirtshauses zur Pfaueninsel, Pfaueninselchaussee 100",
+   "latitude": 52.428433,
+   "longitude": 13.121932,
+   "status": "lead",
+   "reason": "Evidence-only lead: register entry (Berlin Naturdenkmal 6-71/B, designated 1993-03-02, reason 'Schoenheit, landeskundliche Gruende') is the only source found this pass. A baumkunde.de entry for a plane tree at the Wirtshaus zur Faehre Pfaueninsel exists but its exact URL/register number and coordinates could not be confirmed this pass (WebSearch snippets only, no direct page fetch succeeded), so identity match to 6-71/B is unconfirmed rather than established. Also flag for a future pass: check whether 'westlich des Wirtshauses' places this tree in the inn's beer garden/private terrace rather than open parkland, which would be an access question under hard rule 10, not yet resolved."
+  },
+  {
+   "name": "Naturdenkmal Nr. 22 Copper/Red Beech of Puschkinallee 17 (Rotbuche, Fagus sylvatica)",
+   "place": "Puschkinallee 17, NE of Villa Gericke",
+   "latitude": 52.41701,
+   "longitude": 13.058912,
+   "status": "held",
+   "reason": "Register page (fetched): girth 410 cm, Flur 1 Flurstueck 191; Commons photo May 2026 (Tdworek, CC BY-SA 4.0) confirms alive but its geotag just repeats the list coordinate. Held: stands in the private Villa Gericke grounds (private residence, sold 2017); no source says the garden is open, street view only per a search summary. Needs access evidence.",
+   "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-22-rotbuche-der-nauener-vorstadt"
+  },
+  {
+   "name": "Naturdenkmal Nr. 20 Yew of Grosse Weinmeisterstrasse 42 (Gemeine Eibe, Taxus baccata)",
+   "place": "Grosse Weinmeisterstrasse 42",
+   "latitude": 52.420671,
+   "longitude": 13.065461,
+   "status": "held",
+   "reason": "Register page (fetched): girth 200 cm, Flur 1 Flurstueck 787; Commons photo 2017 (Haplochromis, CC BY-SA 4.0) geotag 52.420822,13.065724. Held: a draft city list puts it in the front garden of a private house; no access evidence; modest girth.",
+   "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-20-gemeine-eibe-der-nauener-vorstadt"
+  },
+  {
+   "name": "Naturdenkmal Nr. 24 Large-leaved Lime near Grosse Weinmeisterstrasse 53 (Sommer-Linde, Tilia platyphyllos)",
+   "place": "Parkbereich Grosse Weinmeisterstrasse 53",
+   "latitude": 52.413752,
+   "longitude": 13.062035,
+   "status": "held",
+   "reason": "Register page (fetched): girth 410 cm, Flur 1 Flurstueck 244. Held: no photo found on Commons, no OSM check done, list coordinate only (approximate), access to the park area not established.",
+   "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-24-sommer-linde-der-nauener-vorstadt"
+  },
+  {
+   "name": "Naturdenkmal Nr. 40 Turkey Oaks of Paetowstrasse (Zerr-Eiche, Quercus cerris, several trees)",
+   "place": "Paetowstrasse, 80 to 100 m SW of pot_010",
+   "latitude": 52.3809,
+   "longitude": 13.0513,
+   "status": "held",
+   "reason": "Register: girths 160 to 295 cm, Flur 14 Flurstuecke 32 and 34; OSM natural=tree nodes with denotation=natural_monument and a Commons image at 52.38087,13.05129 and 52.38110,13.05159; Commons photo exists. Not verified this pass (ensemble of 5 or more, one place to stand to be judged, girth modest, one OSM way is access=private near it). Pair with pot_010 if pursued.",
+   "source_url": "https://www.potsdam.de/de/content/"
+  },
+  {
+   "name": "Naturdenkmal Nr. 13 Oak of Krampnitzer Strasse 17, Sacrow (Stiel-Eiche, Quercus robur)",
+   "place": "Krampnitzer Strasse 17, shore of the Sacrower See",
+   "latitude": 52.428776,
+   "longitude": 13.089546,
+   "status": "lead",
+   "reason": "City page (fetched 2026-10-20): girth 600 cm, Flur 3 Flurstueck 10/2, 'am Ufer des Sacrower Sees'. Commons photo (WikiVagant, 2018-09-01, geotag = list coordinate) says the trunk is hidden behind a fence and bushes seen from the street: access to the trunk not established (a private plot is likely; Baumarchiv also mentions a private plot at the south tip of the lake). OSM tree node 8678713312 (circumference 6.0) at 52.428776,13.089546. No access evidence, no photo of the trunk.",
+   "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-13-stiel-eiche-sacrow"
+  },
+  {
+   "name": "Naturdenkmal Nr. 16 Copper/Red Beech west of Sacrow (Rotbuche, Fagus sylvatica)",
+   "place": "Koenigswald, west of Sacrow, 'Strasse nach Sacrow'",
+   "latitude": 52.425965,
+   "longitude": 13.08178,
+   "status": "lead",
+   "reason": "City page (fetched 2026-10-20): girth 405 cm, Flur 3 Flurstueck 35, 'westlich von Sacrow im Koenigswald'. OSM node 8679244125 (circumference 4.05) sits exactly on the register coordinate, so not independent. Forest tree with a register point only: no photograph, no recent observation (lifecheck NONE), pin cannot be placed on a crown. Reason: no photo or exact pin in reach. Public forest, so access is not the issue.",
+   "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-16-rotbuche-bei-sacrow",
+   "species": "Beech (Fagus sp.)",
+   "species_basis": "genus read from the tree's own name; ask the reader which species"
+  },
+  {
+   "name": "Naturdenkmal Nr. 27 Caucasian Wingnut of Berliner Strasse 52 (Pterocarya fraxinifolia)",
+   "place": "Berliner Strasse 52, garden behind the house",
+   "latitude": 52.409256,
+   "longitude": 13.079765,
+   "status": "held",
+   "reason": "Register (search result of the city page, Flur 2 Flurstueck 762): girth 375 cm, 'im Garten hinter dem Haus Berliner Strasse 52'. Private garden behind a house: no public access evidence (hard rule 10). Wikidata Q106393705.",
+   "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-27-kaukasische-fluegelnuss-der-berliner-vorstadt"
+  },
+  {
+   "name": "Naturdenkmal Nr. 28 Small-leaved Lime of Hebbelstrasse 37 (Winter-Linde, Tilia cordata)",
+   "place": "Hebbelstrasse 37, 'auf dem Grundstueck hinter dem Haus'",
+   "latitude": 52.405269,
+   "longitude": 13.061464,
+   "status": "held",
+   "reason": "City page (fetched 2026-10-20): girth 350 cm, stands on the plot behind the house at Hebbelstrasse 37. Private plot, no access evidence (hard rule 10). Commons photo January 2021 (Wikidata P18).",
+   "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-28-winter-linde-der-hebbelstrasse"
+  },
+  {
+   "name": "Naturdenkmal Nr. 40 Eleven Turkey Oaks of Paetowstrasse (Zerr-Eiche, Quercus cerris)",
+   "place": "Paetowstrasse, unpaved southern section beside the allotment colony, 80 to 100 m SW of pot_010",
+   "latitude": 52.3809,
+   "longitude": 13.0513,
+   "status": "lead",
+   "reason": "City page (fetched 2026-10-20): eleven Turkey oaks (foreign species), girths 160 to 295 cm, Flur 14 Flurstuecke 32 and 34. Eleven OSM natural=tree nodes (denotation natural_monument, mapped 2021-05) run in a row about 70 m long from 52.38073,13.05115 to 52.38119,13.05171 along a track: a short row, modest girth, not one place to stand; Turkey oaks reach about 200 years. Could be a single stop with pot_010 if a later pass wants it; walkable from pot_010 (OSM shows highway=track and footway nearby, one way access=private near it)."
+  },
+  {
+   "name": "Naturdenkmal Nr. 26 Apple Tree of Alexandrowka",
+   "place": "Alexandrowka colony",
+   "latitude": 52.410591,
+   "longitude": 13.058016,
+   "status": "held",
+   "reason": "Register girth 260 cm (de.wikipedia list), Wikidata Q106393704 with a Commons image; the garden of the Russian colony belongs to its houses and no source found says which garden or whether it is visible from a public path. Not researched further this pass: no access evidence."
+  }
+ ],
+ "blocked": [
+  {
+   "register_ids": [
+    "6-101/B"
+   ],
+   "name": "The Door Oak of Pfaueninsel",
+   "species": "Sessile Oak (Quercus petraea)",
+   "place": "Pfaueninsel, about 100m northeast of the ferry landing",
+   "latitude": 52.430667,
+   "longitude": 13.122139,
+   "status": "blocked",
+   "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_012 (\"The Tuereiche (Door Oak) of Pfaueninsel\"), same register id, coordinates 12m apart, same sources (baumkunde.de #6402, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_005 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
+  },
+  {
+   "register_ids": [
+    "6-102/B"
+   ],
+   "name": "The Schlosswiese Oak of Pfaueninsel",
+   "species": "Sessile Oak (Quercus petraea)",
+   "place": "Pfaueninsel, Schlosswiese meadow about 100m northeast of the Schloss",
+   "latitude": 52.431453,
+   "longitude": 13.120752,
+   "status": "blocked",
+   "reason": "FOLDED, not researched wrong: this is the same physical tree as Berlin's ber_011 (\"The Great Oak of Pfaueninsel\"), same register id, coordinates 10m apart, same sources (baumkunde.de #2135, Ostdeutsches Baumarchiv, the Berlin Naturdenkmal PDF). Shipped as Potsdam's pot_006 on 2026-08-15, retired 2026-08-16 per the fresh-eyes BLOCKER: one physical tree cannot hold two ids in two cities. Do not re-add to Potsdam; it is Berlin's."
+  }
+ ]
 }
