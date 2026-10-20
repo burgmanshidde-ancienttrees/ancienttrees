@@ -1,5 +1,41 @@
 {
  "_note": "Photographs readers sent through the app, matched to a tree we map, waiting for a viewing pass. Judge with the photo-judge agent and apply with scripts/sightings_publish.py. Rebuilt on every knock from the rows without a verdict.",
  "written": "2026-10-20",
- "queue": []
+ "queue": [
+  {
+   "sighting_id": "bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
+   "user_id": "p_0ca44ad155ecd346c570f251",
+   "tree_id": "lis_015",
+   "city_slug": "lisbon",
+   "city": "Lisbon",
+   "tree_name": "The Weeping Fig of Campo Santana",
+   "match": "app",
+   "distance_m": 129,
+   "mine": false,
+   "current_photo": "held",
+   "current_source": null,
+   "tree_species": "Weeping Fig (Ficus benjamina)",
+   "recognise": "You can recognise it by the glossy leaves and the fine roots hanging from its limbs. It stands fifty paces from the yew on the same slope, five metres round with its crown twenty metres up.",
+   "tree_girth_cm": 500,
+   "tree_height_m": 20,
+   "story": "Ficus benjamina is the tree most people know as a pot plant, the glossy thing sulking in an office corner and shedding leaves whenever somebody moves it. Fifty paces from the yew, on the same slope, one of them has a trunk five metres around and a crown twenty metres up. Portugal classified it on exactly the same day as the yew, 21 May 1968, and the national register still files it under a second name that says what the species does when nothing stops it: matapalo, tree killer. Like its Moreton Bay relatives it can begin high in another tree and work downward, and even planted honestly in soil it keeps the habit of letting fine roots down from the limbs. One useful correction before you go. ",
+   "name": "The Weeping Fig of Campo Santana",
+   "species": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "taken_at": "2026-10-18",
+   "photo_path": "07957439-f6a6-4418-854c-f06e553bf517/BF8D0DF1-B2D1-4E04-90E8-A2B7FB8FE61F.jpg",
+   "sign_path": null,
+   "sign_file": null,
+   "extra_files": [],
+   "latitude": 38.7226783333333,
+   "longitude": -9.13963883333333,
+   "file": "out/sightings/bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f.jpg",
+   "light": null,
+   "vouched": null,
+   "rank": 1,
+   "worth": "the tree already has one: ship this only if it is better"
+  }
+ ]
 }
