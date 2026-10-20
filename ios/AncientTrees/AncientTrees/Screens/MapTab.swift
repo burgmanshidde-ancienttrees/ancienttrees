@@ -360,13 +360,10 @@ struct MapTab: View {
                 // that makes the sheet draggable again once it has (2026-08-25).
                 if selected == nil {
                     countStrip
-                } else {
-                    // THE CROSS WHERE APPLE MAPS HAS IT: the sheet's top right,
-                    // the grey circle every sheet of ours already wears (Hidde,
-                    // 2026-10-19: on the photograph it read as unconventional,
-                    // "or make the X more visible?").
-                    HStack { Spacer(); SheetCloseButton(action: closePlace, onGround: true) }
-                        .frame(height: 36, alignment: .top)
+                } else if let t = selected {
+                    // Apple Maps' place row: share, name, cross. See
+                    // TreePlaceSheet.swift for the measurements.
+                    TreePlaceHeader(tree: t, onClose: closePlace)
                 }
                 // Invisible on purpose: a marker for testTappingAPinOpensItsTree
                 // to wait on, so it stops sleeping and guessing at when the

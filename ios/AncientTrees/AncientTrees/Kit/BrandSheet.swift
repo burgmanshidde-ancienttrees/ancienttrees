@@ -228,18 +228,13 @@ struct SheetIconTile: View {
 /// and 48 to hit, inset from the corner. The sign-in sheet's, shared.
 struct SheetCloseButton: View {
     let action: () -> Void
-    /// The circle's fill. The map sheet's ground IS surfaceMuted, so there the
-    /// circle vanished and the cross floated loose (2026-10-19); Apple Maps'
-    /// circle is a step darker than its sheet, which is what `onGround` gives.
-    var onGround = false
     var body: some View {
         Button(action: action) {
             Image(systemName: "xmark")
                 .font(.system(size: 13, weight: .bold))
-                .foregroundStyle(onGround ? Brand.ink : .secondary)
+                .foregroundStyle(.secondary)
                 .frame(width: 30, height: 30)
-                .background(onGround ? AnyShapeStyle(Brand.ink.opacity(0.09)) : AnyShapeStyle(Brand.surfaceMuted),
-                            in: .circle)
+                .background(Brand.surfaceMuted, in: .circle)
                 // 48 to hit, not 44: at 44 the sheet's own top edge took two
                 // points off it and appfit measured 42 (2026-10-10). The drawn
                 // circle stays where the sign-in sheet's sits.

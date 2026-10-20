@@ -42,6 +42,11 @@ struct TreeCard: View {
     /// is beside the card, so reserving space there would only add a blank
     /// line under every short name.
     var uniformTitle: Bool = false
+    /// Off where the name and meta already stand above the card, in the map
+    /// sheet's header for a tapped pin (TreePlaceSheet, Apple Maps' layout):
+    /// the same card, its photograph, heart and tags, without saying the name
+    /// twice.
+    var showText: Bool = true
     @Environment(Saved.self) private var saved
 
     private let corner: CGFloat = 14
@@ -59,12 +64,14 @@ struct TreeCard: View {
                 // No "Your photograph" tag (Hidde, 2026-10-09: "die mag ook
                 // weg laten we dit consistent over web en app trekken").
             }
-            VStack(alignment: .leading, spacing: 5) {
-                Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink)
-                    .lineLimit(uniformTitle ? 2 : 3, reservesSpace: uniformTitle)
-                meta
+            if showText {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(tree.name).font(.cardTitle).foregroundStyle(Brand.ink)
+                        .lineLimit(uniformTitle ? 2 : 3, reservesSpace: uniformTitle)
+                    meta
+                }
+                .padding(.horizontal, 12).padding(.vertical, 10)
             }
-            .padding(.horizontal, 12).padding(.vertical, 10)
         }
         .background(Brand.surface)
         .clipShape(.rect(cornerRadius: corner))
