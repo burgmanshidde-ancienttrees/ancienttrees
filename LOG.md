@@ -19,6 +19,16 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 - Night run 2026-10-20 22:28 UTC ended without saying anything
+
+Written by the workflow's Run health step, not by the run. 0.0 minutes of its 120 minute window, 1 turns, ended clean (success). 1 commit(s), none of them a published tree.
+
+This entry exists because the run wrote none. The prompt asks every run to log even when it ships nothing, and a run that gives up is exactly the one that skips that instruction, so the count above is measured rather than reported.
+
+What each attempt said as it stopped, in its own words (secrets scrubbed):
+
+- Attempt 1: You've hit your weekly limit · resets 9am (UTC)
+
 ## 2026-10-20 session with Hidde: your own trees get the pin step too
 - **App (next build):** tapping one of your own trees on the Map tab or in My trees now shows it in the sheet first (your photograph, the name, a cross), as our trees do; the card opens your tree's page. No save and no share on it (it is yours, and has no public page yet).
 - **Freeze on a pin tap, fixed (next build):** Hidde's phone hung when a tree's card came up. My own change from this afternoon: the map reported what was in view while a tree was selected, the rising sheet moves the map every frame, and every report rebuilt the list of trees. Measured on the simulator: 66 percent of a Mac core for a second per tap before, 3 percent after; a phone is several times slower. Now the map stays quiet while a tree is selected and reports once when it is let go, so the count is still right afterwards ("8 trees", checked).
