@@ -2,9 +2,9 @@
   "city": "Nuremberg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Nine of Nuremberg's seventeen protected trees stand within a kilometre of the old town, six of them in the Kontumazgarten, a park of under two hectares named after a quarantine station. In Woehrd stand a Stadtpark lime eight metres round, at around four hundred years the best documented of the lot, and a pair of undated beeches in Cramer-Klett-Park. Further out are three oaks along the Nummernweiher in the Volkspark Dutzendteich, a bricked-up oak nearly seven metres round on the Platnersberg, and in Gebersdorf a wild pear named after Gustav Adolf of Sweden.",
-  "meta_description": "Seventeen protected Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, a bricked-up oak, a pear named for a king.",
-  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus sixteen more.",
+  "intro": "Nine of the twenty trees here stand within a kilometre of the old town, six of them in the Kontumazgarten, a park of under two hectares named after a quarantine station. In Woehrd stand a Stadtpark lime eight metres round, at around four hundred years the best documented of the lot, and a pair of undated beeches in Cramer-Klett-Park. Further out are six oaks around the Volkspark Dutzendteich, two with great burls, a bricked-up oak nearly seven metres round on the Platnersberg, and in Gebersdorf a wild pear named after Gustav Adolf of Sweden.",
+  "meta_description": "Twenty Nuremberg trees, nine in one walk: a 400-year lime, six in a former quarantine garden, a bricked-up oak, a pear named for a king.",
+  "question_meta": "Nuremberg's oldest tree is the Stadtpark lime, roughly 400 years old with a trunk eight metres round. Where it stands, plus nineteen more.",
   "question_answer": "The oldest tree in Nuremberg is the large-leaved lime in the Stadtpark, reckoned at around four hundred years with a trunk about eight metres round, which makes it both the oldest and the thickest tree on this page. It stands in a free public park about fifteen minutes' walk from the Kontumazgarten cluster. It is also the best documented: two independent sources describe it, where most of the city's protected trees rest on the ordinance alone.",
   "question_context": "Nuremberg protects individual trees by city ordinance rather than through a state heritage list, and the Bavarian register that carries them gives a number, a German name and a coordinate, with no species column, no girth and no age. So the species on this page were established from the city's own 2020 ordinance and from local sources, and several are identified at genus level or inferred from the tree's German name rather than confirmed outright; each of those says so in its own story. The same thinness cuts the other way too. Cross-checking the state layer against the current city ordinance turned up two protected trees that the state still lists as current and that the ordinance no longer carries, both at addresses where German sources record monuments lost to fungal infection. Those are absent here. Four more are on private ground, one is a seventy-nine tree avenue with nowhere to stand, and two are in institutional courtyards.",
   "faq": [
@@ -14,7 +14,7 @@
     },
     {
       "q": "Can I see Nuremberg's protected trees in one walk?",
-      "a": "Nine of the seventeen, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town. The three Dutzendteich oaks in the south-east, the Bear Oak on the Platnersberg in the east and the Gustav Adolf pear in Gebersdorf, in the west, are separate trips."
+      "a": "Nine of the twenty, yes. Six stand in the Kontumazgarten and three on the Hallerwiese, all within about a kilometre of the centre. The Stadtpark lime and the Cramer-Klett-Park pair are separate stops in Woehrd, a further fifteen to twenty minutes on foot from the old town. The six Dutzendteich oaks in the south-east, the Bear Oak on the Platnersberg in the east and the Gustav Adolf pear in Gebersdorf, in the west, are separate trips."
     },
     {
       "q": "Are they free to visit?",
@@ -725,6 +725,69 @@
         "name": "Naturdenkmalverordnung der Stadt Nürnberg, Anlage 1 (Liste der Naturdenkmäler), no. ND Nr. 35",
         "url": null
       }
+    },
+    {
+      "id": "nbg_019",
+      "name": "The Globe Oak of the Little Dutzendteich (Globuseiche)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 656,
+      "height_m": 15,
+      "location": {
+        "address": "Alfred-Hensel-Weg, south shore of the Kleiner Dutzendteich, by the Congress hotel petrol station, Volkspark Dutzendteich",
+        "latitude": 49.424724,
+        "longitude": 11.106221,
+        "neighbourhood": "Gleißhammer / Dutzendteich"
+      },
+      "verified_sources": [
+        "https://www.ostdeutsches-baumarchiv.de/photosearch/globuseiche-nuernberg-dutzendteich",
+        "https://www.monumentale-eichen.de/bayern/2-kategorie/n%C3%BCrnberg-1/",
+        "https://www.nuernberg.de/imperia/md/stadtrecht/dokumente/3/325/325_589_anlage1.pdf"
+      ],
+      "official_register": {
+        "name": "Stadt Nürnberg, Naturdenkmalverordnung 325.589 Anlage 1 (2. Nachtrag 2020), ND Nr. 36 Eichenreihe am Südufer des kleinen Dutzendteiches",
+        "url": "https://www.nuernberg.de/imperia/md/stadtrecht/dokumente/3/325/325_589_anlage1.pdf"
+      },
+      "access": "Free, public park path (Alfred-Hensel-Weg) in Volkspark Dutzendteich; Ostdeutsches Baumarchiv records it as publicly accessible.",
+      "transport": "Dutzendteich tram stop (line 4 terminus, ND 32 stands there) is about 1.2 km away, roughly 15 minutes on foot along the lake; confirm the nearest stop locally.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Girth 656 cm measured 2023 (Ostdeutsches Baumarchiv, visits 2004, 2007, 2009, 2019, 2023); 650 cm at breast height, 487 cm at waist, height about 15 m, crown about 12 m, measured 2021 (Rainer Lippert, monumentale-eichen.de, 2nd category). Both give the same oak: baumarchiv GPS 49.424724,11.106221 and Lippert GPS 49.424740,11.106086 are about 11 m apart, both on Alfred-Hensel-Weg. What sets it apart: a very large, globe-shaped burl wrapping about three fifths of the trunk and reaching the ground on the slope side. Fully barked until 2009, now with large bark-free patches (baumarchiv). Lippert: burl up to 1.5 m high, measured over the burl; without it the oak would be too thin for his list. Crown heavily shortened, all main limbs cut back, but still very vital (baumarchiv), vitality fine (Lippert, 2021). Baumarchiv says six pedunculate oaks over 5 m girth stand in Volkspark Dutzendteich. Age 'roughly 200 years' is Lippert's estimate only. CONFLICT: Lippert says the oak row on the south shore of the Kleiner Dutzendteich is registered as a Naturdenkmal and the city ordinance lists ND 36 'Eichenreihe am Südufer des kleinen Dutzendteiches, parallel zum Alfred-Hensel-Weg' (Gleißhammer); baumarchiv says this specific oak is 'Naturdenkmal: Nein'. So it stands in the protected row's stretch but is not confirmed as one of its numbered trees; do not state it is a Naturdenkmal. Lippert notes another oak with a large burl about 300 m east (nbg_020). Lifecheck: NONE (no OSM/Commons recency hit); alive evidence is the 2023 baumarchiv visit and 2021 Lippert measurement. Pin from two independent published GPS positions within 11 m on a distinctive tree. Not in data/registers/bayern-naturdenkmale.json (ND 36 absent there).",
+      "story": "Much of what makes this oak 6.56 metres round is not trunk at all. A burl shaped like a globe wraps about three fifths of it, rises up to 1.5 metres and reaches the ground on the slope side. Rainer Lippert, who measures Germany's monumental oaks, says that without it the tree would be too thin for his list. With it, the oak measured 6.50 metres at chest height in 2021, and 6.56 metres when the Ostdeutsches Baumarchiv came back in 2023.\n\nThat archive has visited five times since 2004, and its notes record the change. The burl was fully barked until 2009; now it has large bare patches. The crown has been cut hard, every main limb shortened, leaving a tree about 15 metres tall. Both visitors still call it vital.\n\nLippert puts its age at roughly 200 years, his estimate rather than a count, so read it as somewhere between 150 and 250. On any figure in that band it was already standing on the south shore of the Kleiner Dutzendteich when the Nazi party rally grounds were laid out around these ponds in the 1930s.\n\nThe city protects the row of oaks along this shore, parallel to the Alfred-Hensel-Weg, as a natural monument. Whether this oak is one of the row's trees is unclear: the Baumarchiv records it as not protected, and the city has not published which trunks the row includes. Another burled oak stands about 300 metres east along the same path.",
+      "how_to_recognise": "You can recognise it by the globe-shaped burl wrapping most of the trunk, up to 1.5 metres high, under a hard-cut crown. It stands on the Alfred-Hensel-Weg, south shore of the Kleiner Dutzendteich, by the petrol station."
+    },
+    {
+      "id": "nbg_020",
+      "name": "The Burl Oak of the Little Dutzendteich",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 200 years",
+      "age_min": 150,
+      "age_max": 250,
+      "girth_cm": 605,
+      "height_m": 22,
+      "location": {
+        "address": "Alfred-Hensel-Weg, south shore of the Kleiner Dutzendteich, Volkspark Dutzendteich",
+        "latitude": 49.424653,
+        "longitude": 11.110267,
+        "neighbourhood": "Gleißhammer / Dutzendteich"
+      },
+      "verified_sources": [
+        "https://www.monumentale-eichen.de/bayern/3-kategorie/n%C3%BCrnberg/",
+        "https://www.nuernberg.de/imperia/md/stadtrecht/dokumente/3/325/325_589_anlage1.pdf"
+      ],
+      "official_register": {
+        "name": "Stadt Nürnberg, Naturdenkmalverordnung 325.589 Anlage 1 (2. Nachtrag 2020), ND Nr. 36 Eichenreihe am Südufer des kleinen Dutzendteiches",
+        "url": "https://www.nuernberg.de/imperia/md/stadtrecht/dokumente/3/325/325_589_anlage1.pdf"
+      },
+      "access": "Free, public park path (Alfred-Hensel-Weg) beside the Kleiner Dutzendteich in Volkspark Dutzendteich.",
+      "transport": "Dutzendteich tram stop (line 4 terminus) about 1.1 km away, roughly 15 minutes on foot; confirm the nearest stop locally.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "One independent measurer plus the city's row listing, hence flagged. Rainer Lippert (monumentale-eichen.de, 3rd category, updated 10 March 2021): Pedunculate Oak, breast-height girth 6.05 m, waist 4.95 m, height about 22 m, crown about 18 m, age about 200 years (his estimate), measured 2021, GPS 49.424653,11.110267. He calls it the thickest of the row of oaks on the south bank of the Kleiner Dutzendteich, the Alfred-Hensel-Weg passing it, with a view across the pond to the Kongresshalle. A large burl covers one side up to about 1.5 m; measured over the burl the girth is over 6 m, above it under 5 m. Several lower branches missing, crown otherwise complete, vitality good. The row is listed in the city ordinance as ND Nr. 36 'Eichenreihe am Südufer des kleinen Dutzendteiches, parallel zum Alfred-Hensel-Weg' (Gleißhammer, 2020 version); which numbered trunk is which is not published, so this tree is the thickest of a protected row by Lippert's account, not individually registered. Stands about 285 m east of nbg_019 (Globe Oak). Lifecheck NONE. Pin is a published GPS position at the tree; no photograph checked.",
+      "story": "Measure this oak at chest height and you get just over six metres. Measure it above the burl and you get under five. A large burl covers one side of the trunk up to about 1.5 metres, and it is the burl that carries the oak to 6.05 metres round, the figure Rainer Lippert recorded in 2021 for his survey of Germany's monumental oaks.\n\nIt stands on the south bank of the Kleiner Dutzendteich, with the Alfred-Hensel-Weg passing beside it and a view across the water to the Kongresshalle, the vast unfinished congress hall of the Nazi party rally grounds. Lippert estimates the oak at roughly 200 years, a reckoning rather than a count, so read it as 150 to 250. On any figure in that band the tree was already grown when building on the hall began in the 1930s.\n\nIt is the taller of two burled oaks on this path. The Globe Oak, about 285 metres west, has the bigger burl and the thicker measurement, but this one reaches about 22 metres, with a crown some 18 metres across. Several lower branches are gone; the crown is otherwise whole, and Lippert judged its vitality good.\n\nThe city protects the row of oaks along this shore as a natural monument. It has not published which trunks the row includes, so all we can say is that this oak stands in that row, not that it is one of the protected trees.",
+      "how_to_recognise": "You can recognise it by the large burl on one side of the trunk, up to 1.5 metres high, and a crown missing several lower branches. It stands beside the Alfred-Hensel-Weg on the south bank, about 285 metres east of the Globe Oak."
     }
   ]
 }
