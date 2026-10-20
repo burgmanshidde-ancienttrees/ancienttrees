@@ -1027,10 +1027,11 @@
     "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
     "nearest": []
    },
-   "status": "lead",
-   "why": "2026-10-15 verdict: lead. Owner-account photograph (mine, never credited) of the Gaien ginkgo avenue in Tokyo. An avenue, not one tree; no register entry within 100 m, no age or girth, no species or note, photograph not on disk (private bucket) so not judged against the Cadiz standard. Nearest tree we publish is tok_009 at 588 m. No page until a single trunk or a source sets it apart.",
+   "status": "duplicate",
+   "why": "2026-10-20 verdict: duplicate of tok_009 (The Meiji Jingu Gaien Ginkgo Avenue, live in Tokyo). The inbox did not match it because the fix was 588 m from our approximate pin, past the 30 m match radius; Hidde asked about it in the digest. Owner-account photograph, never published.",
    "seen": "2026-10-15",
-   "unlinked": true
+   "unlinked": true,
+   "tree_id": "tok_009"
   },
   {
    "sighting_id": "c86ff6bf-232a-499b-bf45-d34626073ac7",
