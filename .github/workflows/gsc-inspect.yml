@@ -1,0 +1,51 @@
+name: Search Console inspection
+
+# One-off, by hand: asks Google's URL Inspection API what it has crawled and
+# indexed for a fixed sample of our pages (scripts/gsc_inspect.py) and commits
+# the answers to data/research/. No schedule: 2,000 inspections a day is the
+# quota, and the question only needs asking when something changed.
+
+on:
+  workflow_dispatch:
+    inputs:
+      per_sample:
+        description: "Pages per sample (out / kept / places)"
+        type: number
+        default: 25
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gsc-inspect
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Recompute which pages Google may index
+        run: python3 scripts/thin_pages.py || true
+
+      - name: Ask Google about the sample
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+        run: python3 scripts/gsc_inspect.py --per-sample ${{ inputs.per_sample }}
+
+      - name: Commit the answers
+        run: |
+          git config user.name "burgmanshidde-ancienttrees"
+          git config user.email "304936064+burgmanshidde-ancienttrees@users.noreply.github.com"
+          git add data/research/gsc-inspection-*.json
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -m "Search Console inspection sample"
+          # thin_pages.py rewrote data/noindex.json above and it is not staged;
+          # a plain rebase refuses unstaged changes (data-digest.yml learnt
+          # this on 2026-08-18), so stash them around the pull.
+          git pull --rebase --autostash
+          git push
