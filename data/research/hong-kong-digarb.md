@@ -22,4 +22,16 @@ Uses:
 4. best_time hints: the filming month for flowering trees (Bombax ceiba in March, Delonix regia),
    never a calendar by itself.
 
+## Photo search on the corrected pins (2026-10-20)
+
+Earlier geo photo sweeps searched 300 m off (the datum error). Re-searched every Commons file within
+150 m and iNaturalist CC observations of the genus within 150 m of hkg_001, 004, 005, 006, 007, 008.
+Nothing ships. Looked at and rejected (do not judge again): Kowloon Park "mini football pitch April 2023 Px3 02",
+"evening February 2021 SS2 14", "Kowloon Park 01-05-2025(5)", "Kowloon Park February 2020 SS2 06" (no banyan);
+"Ka Wai Man Road Garden 2026" (empty plaza); "Ka Wai Man Road Sitting-out Area 2026" (a fine fenced banyan,
+but geotag 22.282311,114.125908 is 108 m from CW/9 and 48 m from an unnumbered 1.0 m fig: not our stonewall
+tree); King George V Memorial Park "(JUN 2026) img 06 to 09" and "21-07-2026" (gate and paths).
+She Shan, Sha Lo Wan and Lai Chi Wo: no geotagged open photograph at all. The realistic photo source for
+these is a reader, or Gavin's permission for stills.
+
 Matches to the OVT register: out/tmp/digarb_ovt_matches.json from out/tmp/digarb_analyse.py (rerunnable).
