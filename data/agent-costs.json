@@ -13383,6 +13383,14 @@
    "tokens": 201623,
    "trees": 11,
    "note": "Hidde's ask after the HKU Digital Arboretum pin fixes; register detail-page scan found 195 removed and 37 failed OVTs the GeoJSON still lists (data/research/hong-kong-ovt-status.json); 7 leads, 3 blocked as removed"
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "write",
+   "target": "hong-kong",
+   "tokens": 137326,
+   "trees": 11,
+   "note": "hkg_011 to hkg_021 written and merged (Hong Kong 10 to 21); two photos approved in session (hkg_017 Commons, hkg_020 iNaturalist CC0); no best_time (below 25N)"
   }
  ]
 }
