@@ -2,8 +2,8 @@
   "city": "Stuttgart",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Stuttgart's old trees are scattered across the whole city rather than clustered in one district, from a churchyard lime in Rohracker to a 6.72-metre ash at Schloss Solitude, a duke's 1779 plane at Hohenheim and an oak in Zuffenhausen that was already called stately in 1711. The one tight pairing is on the Bopser slope, where an oak planted in 1865 on the Schillerhöhe lookout stands about 250 metres from two giant sequoias. Every tree here is free to see, most from open parks, churchyards and squares, one pair only from the street.",
-  "meta_description": "Stuttgart's ancient trees: an oak named in 1711, a 6.72m ash at Schloss Solitude, Schiller's oak, giant sequoias, a duke's plane and more. All free.",
+  "intro": "Stuttgart's old trees are scattered across the city, from a churchyard lime in Rohracker to a 6.72-metre ash at Schloss Solitude, a duke's 1779 plane at Hohenheim and an oak in Zuffenhausen already called stately in 1711. On the Bopser slope an oak planted in 1865 stands about 250 metres from two giant sequoias. In Bad Cannstatt the Wilhelma holds two more: a grove of about 70 sequoias it traces to a king's 1864 seed and a ginkgo ranked fourth in Baden-Württemberg. Those two need a ticket; the rest are free.",
+  "meta_description": "Stuttgart's ancient trees: an oak named in 1711, a 6.72m ash at Schloss Solitude, Schiller's oak, the Wilhelma's sequoia grove, a duke's plane and more.",
   "question_meta": "Stuttgart's oldest tree by its record is likely the Jahneiche, a Zuffenhausen oak said to be stately already in 1711. Where it stands and how sure that is.",
   "question_answer": "The oldest tree in Stuttgart by its written record is likely the Jahneiche, a pedunculate oak in Zuffenhausen that the German Wikipedia says was already a stately old tree in 1711, which puts it at over 300 years. That date rests on one account, so the best measured figure belongs to the Ash at Schloss Solitude, put at roughly 250 years from its 6.72-metre girth.",
   "question_context": "The Jahneiche's age rests on one account: the German Wikipedia says Duke Eberhard Ludwig of Württemberg built a hunting pavilion beside it in 1711, when it was already a stately old tree. We have not seen the record behind that, so this page carries the age as over 300 years with no upper figure; nobody has measured the trunk. The Solitude ash is the best measured: the register baumkunde.de put its trunk at 6.72 metres round in May 2026 and estimated 250 years from that girth, which this page carries as a band of 200 to 300 years. The Hohenheim Love Plane was planted in 1779 and the Schillereiche in 1865. The Hutteneiche carries a story to 1515, but no source claims the standing tree is the oak of that legend, so no age follows from it. The Oberdorfplatz Mulberry, the Kurpark's bald cypresses and the Wernhalde sequoias are documented only by their 2003 designation, which records when the city started protecting them, not when they were planted. Where an age is unknown, this page says so and asks anyone who knows to tell us.",
@@ -20,7 +20,7 @@
     },
     {
       "q": "Are they free to visit?",
-      "a": "Yes, no ticket is needed for any of them. Most stand on open ground: churchyards, parks, squares, forest and the grounds of Schloss Solitude. The two Wernhalde sequoias stand between houses and are seen from the street."
+      "a": "Almost all of them. Most stand on open ground: churchyards, parks, squares, forest and the grounds of Schloss Solitude. The two Wernhalde sequoias stand between houses and are seen from the street. The sequoia grove and the ginkgo at the Wilhelma are inside the zoo and botanic garden, which charges entry."
     },
     {
       "q": "What is the story behind the Hutteneiche?",
@@ -408,6 +408,84 @@
         "date": "2026-10-18",
         "moved_m": 3
       }
+    },
+    {
+      "id": "stu_012",
+      "name": "The Wilhelma sequoia grove (Mammutbaumwaeldchen)",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "age_estimate": "about 160 years",
+      "age_min": 155,
+      "age_max": 165,
+      "height_m": 38.6,
+      "location": {
+        "address": "Wilhelma 13, Zoologisch-Botanischer Garten, Neckarvorstadt, Bad Cannstatt, Stuttgart (grove behind the main entrance)",
+        "latitude": 48.80585,
+        "longitude": 9.20467,
+        "neighbourhood": "Bad Cannstatt (Neckarvorstadt)"
+      },
+      "verified_sources": [
+        "https://lb01.wilhelma.de/aktuelles/aktuelles/news-presse/archiv/meldung/wilhelma-tut-viel-fuer-die-mammutbaeume",
+        "https://www.stuttgarter-zeitung.de/lokales/stuttgart/mammutbaeume-in-stuttgart-urbane-urwelt-78898574.html",
+        "https://www.stuttgarter-nachrichten.de/inhalt.mammutbaeume-in-der-wilhelma-5000-mammuts-aus-federleichten-samen.ef88ce4a-d62e-4fdc-a315-0d50e45042c1.html"
+      ],
+      "access": "Paid entry: inside the Wilhelma zoo and botanic garden (owner and manager of the ground); prices and opening hours are on wilhelma.de. One sequoia at the grove's edge has a circular wooden platform (built 2023) so visitors can walk around and touch the trunk; the other trees are not approached, to protect roots.",
+      "transport": "Wilhelma, Bad Cannstatt; nearest stop not checked this pass.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "A king asked for a little seed and got a pound of it. In 1864 King Wilhelm I of Württemberg ordered giant sequoia seed from America. As the Wilhelma tells it, he asked for a lot, meaning a small lot of about 15 grams, and the Americans sent a pound. The seedlings went out to parks and woods across the kingdom, and the Wilhelma counts this grove as where that seed's story starts. Germany's largest sequoia, 57 metres tall in the Rems-Murr district, grew from the same seed.\n\nThe grove behind the main entrance holds about 70 trees, which the garden puts at about 160 years old. Its tallest measures 38.6 metres by the Wilhelma's own figure. Local newspapers have printed other numbers over the years: a tallest of 37 metres, a thickest trunk of 4.2 or 4.7 metres round, fewer trees. We carry the garden's figures and leave the girth open.\n\nThe grove has not had an easy recent run. Climate change and drought have stressed it, and the Wilhelma has laid water lines and hydrants, aerated the soil and buried moisture sensors at four depths, saying the trees do not develop optimally.\n\nSince 2023 one sequoia at the edge of the grove has a circular wooden platform round it, so you can walk all the way round and put a hand on the bark. The rest are left alone to protect their roots. Entry is paid, and the pin marks the garden rather than the grove.",
+      "how_to_recognise": "You can recognise the one to visit by the circular wooden platform round its trunk, at the edge of a grove of about 70 giant sequoias. The grove stands behind the Wilhelma's main entrance.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "age_basis": "source",
+      "paid_entry": true
+    },
+    {
+      "id": "stu_013",
+      "name": "The Wilhelma Ginkgo",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "roughly 160 to 190 years",
+      "age_min": 160,
+      "age_max": 190,
+      "girth_cm": 458,
+      "location": {
+        "address": "Wilhelma Zoologisch-Botanischer Garten, beside the Palmenhaus near the main entrance, Bad Cannstatt, Stuttgart",
+        "latitude": 48.804984,
+        "longitude": 9.207091,
+        "neighbourhood": "Bad Cannstatt"
+      },
+      "verified_sources": [
+        "https://ddg-web.de/rekordbaeume.html?VCardId=3801",
+        "https://www.monumentaltrees.com/de/deu/badenwurttemberg/stuttgart/12830_wilhelma/24811/"
+      ],
+      "official_register": {
+        "name": "Deutsche Dendrologische Gesellschaft champion tree list (Rekordbaeume), ID 3801, rank DE 15 and BW 4 for Ginkgo",
+        "url": "https://ddg-web.de/rekordbaeume.html?VCardId=3801"
+      },
+      "access": "Paid entry: inside the Wilhelma zoo and botanic garden; DDG record states 'oeffentlich zugaenglich, Oeffnungszeiten beachten, Eintrittsgeld'. Prices and opening hours are on wilhelma.de.",
+      "transport": "Wilhelma, Bad Cannstatt; nearest stop not checked this pass.",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "story": "Two male ginkgos stand side by side at the Wilhelma's Palmenhaus, and the eastern one is the fourth-largest of its kind in Baden-Württemberg. That ranking comes from the German Dendrological Society's champion-tree list, which also puts it 15th in Germany. In August 2019 Jürgen Blümle measured its trunk at 4.58 metres round at chest height.\n\nIts age is an estimate, and the record is honest about how loose it is. It gives about 167 years, planted around 1859, then notes that it may have gone in as early as 1840. Neither date is documented for this tree, so we carry it as somewhere between about 160 and 190 years. If you know when it was planted, tell us.\n\nWhat the record is sure of is its health. When it was measured in 2019 the tree was judged fully vital, its wood undamaged.\n\nBeing male has a practical upside. Female ginkgos drop fleshy seeds in autumn that smell strongly; this pair does not. What both do is turn, usually in November, the whole crown going butter gold before the leaves come down within a day or two. That is the week to go.\n\nEntry to the Wilhelma is paid and runs to opening hours, so check before you set out. Inside, find the Palmenhaus near the main entrance and the two ginkgos beside it, and take the one on the east.",
+      "how_to_recognise": "You can recognise it as the eastern of the two male ginkgos standing side by side, its trunk 4.58 metres round at chest height. It stands beside the Palmenhaus near the Wilhelma's main entrance.",
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the whole crown turns butter gold and drops within days"
+      },
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "age_basis": "source",
+      "paid_entry": true
     }
   ]
 }

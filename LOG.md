@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 05:20 run
+
+- Stuttgart: 2 trees live (Wilhelma sequoia grove, Wilhelma ginkgo; both paid entry, no photo, grove pin approximate). City copy corrected (not all free any more) and the German overlay updated. Preflight 0 problems. stu_011 was a duplicate of stu_007, dropped.
+- Rung 1: the Freiburg beech reader photo (ed90210d) is not on this runner, so I could not look at it; verdict left open. No register or Wikipedia entry within 100 to 300 m.
+- Not touched: iOS app workflow failure flagged at session start (needs a session), 36 photos not yet vendored (daily photos.yml).
+
 ## 2026-10-20 retry attempt: nothing shipped, chicago claim released
 
 Chicago's brief had 0 register candidates (under the six-candidate floor), so the claim was released and chicago is a wall for 48h. READY holds only two reader sightings; the Freiburg beech (ed90210d) stays open because the photograph is not in out/sightings/ on this machine and a stranger's submission is never judged blind. The prepare.py staged list (munich, portland, potsdam, salzburg, vienna, bamberg) points at cities already published whose verified files are stale; briefs for them show no candidates. Not done: Las Vegas register retry (BACKUP 1), stale research file cleanup.

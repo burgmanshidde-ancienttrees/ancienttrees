@@ -91,5 +91,94 @@
   "verify_notes": "Only de.wikipedia (article 'Jahneiche (Stuttgart-Zuffenhausen)', fetched via API 2026-10-18) gives the history: already mentioned in 1711 as a stately old tree, beside which Duke Eberhard Ludwig had a hunting pavilion built for his Schlotwiese hunting ground; named Jahneiche in 1929 on the 40th anniversary of Turnverein Zuffenhausen, after Friedrich Ludwig Jahn ('Turnvater'). The 1711 claim is Wikipedia's alone (no source seen), so age is kept vague: 'over 300 years' with no upper bound. Stuttgarter Zeitung 'Windboee schaedigt Naturdenkmal' (a storm gust broke a heavy branch, area cordoned; article about 7 years old, page now 404, search summary only; the same summary says about 400 years: NOT used). No girth or height. Register only plus Wikipedia: flagged; vitality: Commons photo 'Jahneiche Stuttgart.jpg' by Florian Hoffmann, 2020-04-19, CC BY-SA 4.0 (named after the tree, not geotagged, not viewed). Pin: register coordinate, approximate. A second ND oak, 'Bei der Eiche 16 A' (81110000902, 48.829692 9.15276), stands about 70 m north-east; left as a lead (street address suggests a house plot). Photo gate met only by the named Commons file; viewing it before approval is needed.",
   "story": "By 1711 this oak was already called a stately old tree, and a duke chose it as the spot for his hunting lodge. That is the account in the German Wikipedia: Duke Eberhard Ludwig of Württemberg had a hunting pavilion built beside it for his Schlotwiese hunting ground. We have not seen the 1711 record behind the claim, so we carry it as Wikipedia's and put the tree's age no closer than over 300 years. Nobody has measured the trunk to test that. If the 1711 mention holds, it is the oldest tree on this page.\n\nThe name is far younger than the tree. In 1929 the Turnverein Zuffenhausen, the district's gymnastics club, marked its 40th anniversary by naming the oak after Friedrich Ludwig Jahn, the Turnvater of German gymnastics. A tree that stood in a duke's hunting ground now carries a gymnastics club's birthday present.\n\nIt has not had an untroubled old age. Some years ago, a local newspaper reported, a gust of wind broke off a heavy branch and the area around it was cordoned off. The report is no longer online. Stuttgart has protected the oak as a natural monument since 2003, and a photograph from April 2020 names it.\n\nIt stands where Lange Allee ends at Marconistraße. The pin is the register's approximate point, and no source describes whether the trunk sits on a verge or a green strip. If you go, tell us what you find, and its girth if you can measure it.",
   "how_to_recognise": "You can recognise it as the old oak at the junction where Lange Allee ends at Marconistraße in Zuffenhausen. Another protected oak stands about 70 metres north-east; this is the one on the junction."
+ },
+ {
+  "id": "stu_011",
+  "name": "Franziska-Platane (Liebesplatane) at the Spielhaus, Hohenheim",
+  "species": "London Plane (Platanus x hispanica)",
+  "age_estimate": "about 245 years",
+  "age_min": 240,
+  "age_max": 250,
+  "girth_cm": 770,
+  "height_m": 34,
+  "location": {
+   "address": "Exotischer Garten, Hohenheimer Gaerten, beside the Spielhaus (Museum of Hohenheim history), Garbenstrasse, Stuttgart-Hohenheim",
+   "latitude": 48.710189,
+   "longitude": 9.20743,
+   "neighbourhood": "Hohenheim (Plieningen)"
+  },
+  "verified_sources": [
+   "https://nationalerbe-baeume.de/project/platane-am-spielhaus-im-exotischen-garten-der-hohenheimer-gaerten-stuttgart-hohenheim-baden-wuerttemberg/",
+   "https://de.wikipedia.org/wiki/Hohenheimer_G%C3%A4rten",
+   "https://gaerten.uni-hohenheim.de/",
+   "https://www.stuttgarter-zeitung.de/inhalt.auszeichnung-in-hohenheim-liebesplatane-ist-nationalerbe-baum.7276f9bc-e17c-440a-90ff-132773f241cf.html"
+  ],
+  "official_register": {
+   "name": "Nationalerbe-Baeume Deutschland (Deutsche Dendrologische Gesellschaft initiative, Andreas Roloff), NEB since 2023-05-06",
+   "url": "https://nationalerbe-baeume.de/project/platane-am-spielhaus-im-exotischen-garten-der-hohenheimer-gaerten-stuttgart-hohenheim-baden-wuerttemberg/"
+  },
+  "access": "Free: the Hohenheimer Gaerten (owner: Universitaet Hohenheim) state on their own homepage 'durchgehend geoeffnet, kostenloser Eintritt' (fetched 2026-10-20); a garden regulation (Gartenordnung) applies at the entrances. Tree stands beside the Spielhaus; the museum inside has its own hours.",
+  "transport": "U3 terminus S-Plieningen is about 300 m from the Exotischer Garten car park on Garbenstrasse per the NEB page (the tree is further inside the garden); the NEB page gives the district as about 10 km south of the city centre (Stadtbahn travel time not sourced).",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "verify_notes": "Facts as read on fetched pages 2026-10-20. NEB page (nationalerbe-baeume.de): London Plane (Platanus x hispanica), planted 1779, 'ca. 245 Jahre', girth 7.70 m at 1.3 m measured Dec 2022, height ca. 34 m, quarter E tree 70, GPS N 48.710189 E 9.207430 (a published GPS position, so confirmed per house rule). de.wikipedia 'Hohenheimer Gaerten' (wikitext): planted 1779 by Duke Carl Eugen and Franziska von Hohenheim (Duchess from 1786), at the time 244 years old with girth 'fast acht Meter', among the oldest of its species and the 100 most important trees in Germany (cites SWR Landesschau 2023-05-17); declared Nationalerbe-Baum by Andreas Roloff (TU Dresden, DDG). Stuttgarter Zeitung 2023-05-07 headline 'Liebesplatane ist Nationalerbe-Baum' (title seen in the Wikipedia citation and search, article body not fetched). Nickname Liebesplatane. The Exotischer Garten (1776 to 1793, English landscape garden, called Franziskas Doerfle) is the oldest part of the Hohenheim gardens; other duke-era survivors per Wikipedia: several American tulip trees and two summer limes (1779 to 1793), unmeasured here. The age is a documented planting date for this specimen, so age_min/max are narrow. Life check: python3 scripts/lifecheck.py at the pin returned RECENT 2026-06-15 (iNaturalist observation 371917504, not opened). Possible related finds in the garden (leads, unverified): a Platanus x hispanica '12402' with 7.56 m girth and 36 m in the Landesarboretum and several Sequoiadendron giganteum 4.35 to 4.75 m girth in the Schlosspark, both only in a monumentaltrees.com list seen as a search summary; not recorded as facts. No photo hunted."
+ },
+ {
+  "id": "stu_012",
+  "name": "The Wilhelma sequoia grove (Mammutbaumwaeldchen)",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "age_estimate": "about 160 years",
+  "age_min": 155,
+  "age_max": 165,
+  "height_m": 38.6,
+  "location": {
+   "address": "Wilhelma 13, Zoologisch-Botanischer Garten, Neckarvorstadt, Bad Cannstatt, Stuttgart (grove behind the main entrance)",
+   "latitude": 48.80585,
+   "longitude": 9.20467,
+   "neighbourhood": "Bad Cannstatt (Neckarvorstadt)"
+  },
+  "verified_sources": [
+   "https://lb01.wilhelma.de/aktuelles/aktuelles/news-presse/archiv/meldung/wilhelma-tut-viel-fuer-die-mammutbaeume",
+   "https://www.stuttgarter-zeitung.de/lokales/stuttgart/mammutbaeume-in-stuttgart-urbane-urwelt-78898574.html",
+   "https://www.stuttgarter-nachrichten.de/inhalt.mammutbaeume-in-der-wilhelma-5000-mammuts-aus-federleichten-samen.ef88ce4a-d62e-4fdc-a315-0d50e45042c1.html"
+  ],
+  "access": "Paid entry: inside the Wilhelma zoo and botanic garden (owner and manager of the ground); ticket price and hours not fetched this pass, check wilhelma.de. One sequoia at the grove's edge has a circular wooden platform (built 2023) so visitors can walk around and touch the trunk; the other trees are not approached, to protect roots.",
+  "transport": "Wilhelma, Bad Cannstatt; nearest stop not checked this pass.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "A king asked for a little seed and got a pound of it. In 1864 King Wilhelm I of Württemberg ordered giant sequoia seed from America. As the Wilhelma tells it, he asked for a lot, meaning a small lot of about 15 grams, and the Americans sent a pound. The seedlings went out to parks and woods across the kingdom, and the Wilhelma counts this grove as where that seed's story starts. Germany's largest sequoia, 57 metres tall in the Rems-Murr district, grew from the same seed.\n\nThe grove behind the main entrance holds about 70 trees, which the garden puts at about 160 years old. Its tallest measures 38.6 metres by the Wilhelma's own figure. Local newspapers have printed other numbers over the years: a tallest of 37 metres, a thickest trunk of 4.2 or 4.7 metres round, fewer trees. We carry the garden's figures and leave the girth open.\n\nThe grove has not had an easy recent run. Climate change and drought have stressed it, and the Wilhelma has laid water lines and hydrants, aerated the soil and buried moisture sensors at four depths, saying the trees do not develop optimally.\n\nSince 2023 one sequoia at the edge of the grove has a circular wooden platform round it, so you can walk all the way round and put a hand on the bark. The rest are left alone to protect their roots. Entry is paid, and the pin marks the garden rather than the grove.",
+  "how_to_recognise": "You can recognise the one to visit by the circular wooden platform round its trunk, at the edge of a grove of about 70 giant sequoias. The grove stands behind the Wilhelma's main entrance.",
+  "verify_notes": "Ensemble with one place to stand (the platform tree at the grove edge). Pin is the Wilhelma garden centre (Nominatim relation 13371824 centre 48.80585 9.20467), NOT the grove: no source gave a grove coordinate; treat as park-level approximate. Wilhelma's own press release 31.03.2023 (fetched 2026-10-20): the Mammutbaumwaeldchen has about 70 trees, the tallest 38.6 m, trees are about 160 years old, seed was ordered by King Wilhelm I of Wuerttemberg in 1864 from America (the legend: he ordered a 'lot', about 15 g, and the Americans delivered 'a lot', a pound of seed); the seedlings were planted in many parks and woods of the kingdom, so this is the origin place of the Wilhelma-Saat sequoias; the largest sequoia in Germany (57 m, Rems-Murr-Kreis, from the same seed) is named there. Stress: climate change and drought; Wilhelma laid water lines, hydrants and soil aeration and installed soil-moisture sensors at four depths, saying the trees 'do not develop optimally'. Conflicts, seen only as search-result text of the Stuttgarter Zeitung and Stuttgarter Nachrichten (articles not fetched this pass; earlier lead notes record: StZ 2016 almost sixty trees, tallest 37 m, girth 4.20 m; StN 4.7 m girth for the thickest, 35 original trees now about 70): tallest 37 m versus 38.6 m (owner's figure wins), girth 4.20 m versus 4.7 m (probably different trees); girth_cm left empty because no fetched page has it. Seeds sown under glass 1865 per an info board quoted in search results (not fetched). Single source for most figures (the owner of the ground, which is enough per rulebook). Alive: press release 2023 says the grove stands; lifecheck not run (no tree coordinate). Not the Rosensteinpark sequoias."
+ },
+ {
+  "id": "stu_013",
+  "name": "The Wilhelma Ginkgo",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "roughly 160 to 190 years",
+  "age_min": 160,
+  "age_max": 190,
+  "girth_cm": 458,
+  "location": {
+   "address": "Wilhelma Zoologisch-Botanischer Garten, beside the Palmenhaus near the main entrance, Bad Cannstatt, Stuttgart",
+   "latitude": 48.804984,
+   "longitude": 9.207091,
+   "neighbourhood": "Bad Cannstatt"
+  },
+  "verified_sources": [
+   "https://ddg-web.de/rekordbaeume.html?VCardId=3801",
+   "https://www.monumentaltrees.com/de/deu/badenwurttemberg/stuttgart/12830_wilhelma/24811/"
+  ],
+  "official_register": {
+   "name": "Deutsche Dendrologische Gesellschaft champion tree list (Rekordbaeume), ID 3801, rank DE 15 and BW 4 for Ginkgo",
+   "url": "https://ddg-web.de/rekordbaeume.html?VCardId=3801"
+  },
+  "access": "Paid entry: inside the Wilhelma zoo and botanic garden; DDG record states 'oeffentlich zugaenglich, Oeffnungszeiten beachten, Eintrittsgeld'. Ticket price and hours not fetched this pass, check wilhelma.de.",
+  "transport": "Wilhelma, Bad Cannstatt; nearest stop not checked this pass.",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "Two male ginkgos stand side by side at the Wilhelma's Palmenhaus, and the eastern one is the fourth-largest of its kind in Baden-Württemberg. That ranking comes from the German Dendrological Society's champion-tree list, which also puts it 15th in Germany. In August 2019 Jürgen Blümle measured its trunk at 4.58 metres round at chest height.\n\nIts age is an estimate, and the record is honest about how loose it is. It gives about 167 years, planted around 1859, then notes that it may have gone in as early as 1840. Neither date is documented for this tree, so we carry it as somewhere between about 160 and 190 years. If you know when it was planted, tell us.\n\nWhat the record is sure of is its health. When it was measured in 2019 the tree was judged fully vital, its wood undamaged.\n\nBeing male has a practical upside. Female ginkgos drop fleshy seeds in autumn that smell strongly; this pair does not. What both do is turn, usually in November, the whole crown going butter gold before the leaves come down within a day or two. That is the week to go.\n\nEntry to the Wilhelma is paid and runs to opening hours, so check before you set out. Inside, find the Palmenhaus near the main entrance and the two ginkgos beside it, and take the one on the east.",
+  "how_to_recognise": "You can recognise it as the eastern of the two male ginkgos standing side by side, its trunk 4.58 metres round at chest height. It stands beside the Palmenhaus near the Wilhelma's main entrance.",
+  "best_time": {"months": [11], "kind": "autumn colour", "label": "November, when the whole crown turns butter gold and drops within days"},
+  "verify_notes": "DDG champion-tree record (fetched 2026-10-20): Ginkgo biloba, 'Wilhelma, am Palmenhaus Naehe Haupteingang', girth 458 cm at 1.3 m, measured August 2019 by Juergen Bluemle (reported by Volker Andre Bouffier), age 'ca. 167 Jahre (geschaetzt ca. 1859)', note 'Oestlicher Baum der beiden maennlichen Ginkgos, Pflanzung evtl. schon 1840', vitality 'vollkommen vital', wood body 'keine Schaeden', GPS 48.804984, 9.207091 (published GPS, so pin confirmed; note two male ginkgos stand side by side, this one is the eastern of the pair). Rank DE 15 and BW 4 among ginkgos in the DDG list. Source for the data: Beitraege zur Gehoelzkunde 2013 pp. 211-261 and Bluemle, Baumschaetze Baden-Wuerttembergs, 2nd ed. 2023 (not seen). monumentaltrees.com (cross-check only, same measurer, not independent, not fetched because the host 403s; figures known from search result text): 4.40 m girth measured 10 Oct 2010, planted about 1840 +/- 10; the 2010 to 2019 growth from 440 to 458 cm is plausible. Age is an estimate with planting date uncertain (1840 or 1859), never documented for this specimen: kept broad. Both measurements come from one person, so independence is weak; the ground's owner (Wilhelma) is the access source. Life check: lifecheck.py at the pin returned RECENT 2026-04-30 (iNaturalist observation 357703226, not opened); DDG itself records full vitality in 2019. No photo hunted (DDG pictures by Bluemle are (c) with rights page, not usable without checking)."
  }
 ]

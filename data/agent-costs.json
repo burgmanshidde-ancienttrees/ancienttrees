@@ -10,6 +10,30 @@
     "trees": 0,
     "photos_approved": 4,
     "note": "4 approved (dre_025, dre_029, dre_030, lux_008), 1 held (kra_033), 115 rejected; roster sweep was already marked exhausted on 10-19, do not rerun"
+   },
+   {
+    "date": "2026-10-20",
+    "target": "stuttgart deepen",
+    "kind": "verify",
+    "tokens": 115000,
+    "trees": 2,
+    "note": "Wilhelma sequoia grove and ginkgo verified; stu_011 duplicate of stu_007; no register covers Stuttgart"
+   },
+   {
+    "date": "2026-10-20",
+    "target": "stuttgart stu_012, stu_013",
+    "kind": "write",
+    "tokens": 83000,
+    "trees": 2,
+    "note": "2 shipped, no photos; city copy corrected for paid Wilhelma trees"
+   },
+   {
+    "date": "2026-10-20",
+    "target": "de/stuttgart overlay",
+    "kind": "translate",
+    "tokens": 73000,
+    "trees": 0,
+    "note": "German overlay updated for 2 new trees and copy"
    }
   ],
   "2026-08-05": [

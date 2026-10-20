@@ -100,6 +100,22 @@
    "lat": 48.7627866,
    "lng": 9.184752,
    "reason": "2026-10-18 pass: Steinkopfstr. 8 folded into stu_009 (10 m twin). Bopserwaldstr. 79 copper beech and 81 sequoia stand on a residential street, access and visibility unverified, no measurements."
+  },
+  {
+   "candidate": "Wilhelma plane tree (Platanus x hispanica, monumentaltrees id 24812), Bad Cannstatt",
+   "reason": "2026-10-20 pass: only monumentaltrees.com (search summary, host 403s): girth 6.80 m at 1.3 m measured Oct 2010, planted about 1840, near the greenhouse row beside the Wilhelma ginkgos (stu_013 at 48.804984 9.207091). No second source and no coordinate; DDG or Wilhelma own page would settle it. Paid entry zoo."
+  },
+  {
+   "candidate": "Rosensteinpark horse chestnut (Aesculus hippocastanum), monumentaltrees id 26655",
+   "reason": "2026-10-20 pass: only monumentaltrees.com (search summary): girth 5.30 m at 1.3 m (7 Nov 2020, Arbus), about 25 m, planted about 1840 +/- 30, ranks 5th oldest in Baden-Wuerttemberg there. No second source, no coordinate; public city park. Needs a second source (Blumle, Baumschaetze BW, or city park report)."
+  },
+  {
+   "candidate": "Hohenheim Landesarboretum plane (Platanus x hispanica '12402') 7.56 m girth, 36 m, and Schlosspark giant sequoias 4.35 to 4.75 m girth",
+   "reason": "2026-10-20 pass: figures only from a monumentaltrees.com list seen as a search summary (measured 2021). Same gardens as stu_011 (free, open day and night per gaerten.uni-hohenheim.de). Needs a fetched source and coordinates; the Hohenheim plane could be the thicker one than stu_011's 7.70 m only if a second measurement agrees (7.56 m is thinner)."
+  },
+  {
+   "candidate": "Other duke-era trees in the Exotischer Garten Hohenheim (American tulip trees, two summer limes, 1779 to 1793)",
+   "reason": "2026-10-20 pass: named only in de.wikipedia 'Hohenheimer Gaerten' (not independent of the university), no measurements or coordinates. Look in the garden around stu_011."
   }
  ],
  "blocked": [
