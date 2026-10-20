@@ -9774,7 +9774,9 @@
      "author": "Bbruno",
      "lat": 44.44623611,
      "lng": 8.96891944,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Molassana Category:Montesignano Category:Self-published work Category:Staglieno Category:Taken with Nikon Coolpix S560"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:GFDL Category:License migration redundant Category:Molassana Category:Montesignano Category:Self-published work Category:Staglieno Category:Taken with Nikon Coolpix S560",
+     "judged": "reject",
+     "verdict": "Landscape 1.1 km off"
     },
     {
      "title": "File:La chiesa di Montesignano a Genova vista dal deposito delle Gavette, ottobre 2008.jpg",
@@ -9784,7 +9786,9 @@
      "author": "Angelo G. Valle",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Italy photographs taken on 2008-10-10 Category:Montesignano Category:October 2008 in Genoa Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Italy photographs taken on 2008-10-10 Category:Montesignano Category:October 2008 in Genoa Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Church view"
     }
    ]
   },
@@ -10953,7 +10957,7 @@
      "source": "inaturalist",
      "obs_location": "52.1590495278,4.4924313056",
      "judged": "reject",
-     "verdict": "Bark close-up of a beech trunk at the Burcht walls; no crown, colour of foliage not readable as copper"
+     "verdict": "Trunk close-up, crown cut"
     },
     {
      "title": "iNat obs 34824036 (Fagus sylvatica)",
@@ -12357,7 +12361,7 @@
      "source": "inaturalist",
      "obs_location": "40.86167,14.2618033333",
      "judged": "reject",
-     "verdict": "Upward close-up of foliage into the sun; no trunk or crown readable, and observation is labelled Angophora, not our Eucalyptus globulus"
+     "verdict": "Angophora observation, wrong species"
     },
     {
      "title": "iNat obs 379023808 (Angophora melanoxylon)",
@@ -18989,7 +18993,7 @@
   "lon_011": {
    "city": "London",
    "name": "The St Paul's Churchyard Planes",
-   "checked": "2026-10-19",
+   "checked": "2026-10-20",
    "sweep": 5,
    "candidates": [
     {
@@ -19108,7 +19112,7 @@
   "lon_012": {
    "city": "London",
    "name": "The Amwell Street Fig",
-   "checked": "2026-10-19",
+   "checked": "2026-10-20",
    "sweep": 5,
    "candidates": []
   },
@@ -19251,7 +19255,7 @@
   "lon_014": {
    "city": "London",
    "name": "The Marylebone Elm",
-   "checked": "2026-10-19",
+   "checked": "2026-10-20",
    "sweep": 5,
    "candidates": [
     {
@@ -20351,7 +20355,7 @@
      "source": "inaturalist",
      "obs_location": "40.789455,-73.956505",
      "judged": "reject",
-     "verdict": "Two photos on this observation: a close-up of elm samaras on a twig, and a dark backlit silhouette of the trunk fork (POOR); neither shows the tree whole"
+     "verdict": "Dark backlit silhouette of trunk and limbs"
     },
     {
      "title": "iNat obs 22348733 (Ulmus)",
@@ -21274,7 +21278,7 @@
   "lon_017": {
    "city": "London",
    "name": "The Valence Park Holm Oak",
-   "checked": "2026-10-19",
+   "checked": "2026-10-20",
    "sweep": 5,
    "candidates": []
   },
@@ -23406,14 +23410,14 @@
   "lon_020": {
    "city": "London",
    "name": "The Inner Temple Mulberry",
-   "checked": "2026-10-19",
+   "checked": "2026-10-20",
    "sweep": 5,
    "candidates": []
   },
   "lon_021": {
    "city": "London",
    "name": "The Finsbury Circus Pagoda Tree",
-   "checked": "2026-10-19",
+   "checked": "2026-10-20",
    "sweep": 5,
    "candidates": [
     {
@@ -23433,7 +23437,7 @@
   "lon_022": {
    "city": "London",
    "name": "The Quaker Garden Planes",
-   "checked": "2026-10-19",
+   "checked": "2026-10-20",
    "sweep": 5,
    "candidates": [
     {
@@ -25470,7 +25474,7 @@
      "source": "inaturalist",
      "obs_location": "35.0262666667,135.7605583333",
      "judged": "reject",
-     "verdict": "Leaf close-up only."
+     "verdict": "Leaf close-up"
     },
     {
      "title": "iNat obs 384127590 (Prunus jamasakura)",
@@ -26406,7 +26410,7 @@
      "source": "inaturalist",
      "obs_location": "45.6987826485,9.6736257523",
      "judged": "reject",
-     "verdict": "Both observation photos are close-ups of blue-green cedar needle tufts (Cedrus atlantica fits) but no trunk or crown; obs page has a second image judged the same"
+     "verdict": "Needle close-up, no tree"
     },
     {
      "title": "iNat obs 372232752 (Cedrus atlantica)",
@@ -27880,7 +27884,7 @@
      "source": "inaturalist",
      "obs_location": "40.3772978,-8.3712134",
      "judged": "reject",
-     "verdict": "Steep upward view of a moss-covered trunk lost in surrounding foliage; no crown, cork bark hidden under moss, tree not separable from its neighbours"
+     "verdict": "Looking up a mossy trunk in dense foliage, no cork bark readable, no tree shape"
     },
     {
      "title": "iNat obs 125603573 (Quercus suber)",
@@ -27987,7 +27991,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
      "source": "wikidata/Q55741763",
      "judged": "reject",
-     "verdict": "Right tree (register code in title, plane leaves, pale flaking upper bark over darker scaly base fits P. occidentalis, lakefront road) but the crown merges with a big conifer on the right and the trun"
+     "verdict": "Plane shares the frame with a cedar, centre band is half cedar; tree not unmistakably the subject"
     },
     {
      "title": "File:Como - Viale Geno - Cedro dell Himalaya - codice 07M17705C933CO03 - 20220910 143606.jpg",
@@ -28009,7 +28013,9 @@
      "author": "Ysogo",
      "lat": 45.822589,
      "lng": 9.078181,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
+     "judged": "reject",
+     "verdict": "Himalayan cedar, wrong tree"
     },
     {
      "title": "File:Como - Viale Geno - Platano occidentale - codice 07M17704C933CO03 - 20220910 144810.jpg",
@@ -28041,7 +28047,9 @@
      "author": "Mipiacecamminare",
      "lat": 45.822589,
      "lng": 9.078181,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-20 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como Category:WLM Lake Como - selection"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-20 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como Category:WLM Lake Como - selection",
+     "judged": "reject",
+     "verdict": "Himalayan cedar, wrong tree"
     }
    ]
   },
@@ -28106,7 +28114,9 @@
      "author": "Ysogo",
      "lat": 45.824292,
      "lng": 9.0791,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Lake Como Category:Images from Wiki Loves Monuments 2022 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Images from Wiki Loves Monuments 2022 in Italy - veteran trees Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Veteran trees in Como",
+     "judged": "reject",
+     "verdict": "American sycamore file, not the ginkgo"
     },
     {
      "title": "File:Villa Geno cedro dell' Himalaya.jpg",
@@ -28139,7 +28149,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it",
      "source": "wikidata/Q55741770",
      "judged": "reject",
-     "verdict": "Straight-up view of a cedar trunk and limbs; bark dominates, crown and form not readable as a tree, fails the frame rule"
+     "verdict": "Looking straight up a cedar trunk, bark close-up, no crown shape"
     },
     {
      "title": "File:Cedro del Libano - dettaglio - corteccia.jpg",
@@ -28406,7 +28416,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:Villa del Grumello (Como) Category:WLM Lake Como - selection",
      "source": "wikidata/Q55741771",
      "judged": "reject",
-     "verdict": "Glossy magnolia leaves and trunk edge framing a villa window; the window is the subject, the tree is not readable as a whole"
+     "verdict": "Magnolia trunk and leaves framing a villa window, close-up"
     },
     {
      "title": "File:Cedro del Libano - dettaglio - corteccia.jpg",
@@ -28428,7 +28438,9 @@
      "author": "Daniela Manili Pessina",
      "lat": 45.822831,
      "lng": 9.067217,
-     "cats": "Category:Bust of Ugo Foscolo (Como) Category:Busts in Lombardy Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Monuments and memorials in Como Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:WLM Lake Como - selection"
+     "cats": "Category:Bust of Ugo Foscolo (Como) Category:Busts in Lombardy Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Monuments and memorials in Como Category:Self-published work Category:Uploaded via Campaign:wlm-it Category:WLM Lake Como - selection",
+     "judged": "reject",
+     "verdict": "Cedar behind a bust, not the magnolia"
     },
     {
      "title": "File:Cedro del Libano - radici.jpg",
@@ -28438,7 +28450,9 @@
      "author": "Daniela Manili Pessina",
      "lat": 45.822831,
      "lng": 9.067217,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cedro del Libano (Villa Grumello) Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Italy Category:Images from Wiki Loves Monuments 2018 in Italy - Como Category:Images from Wiki Loves Monuments 2018 in Italy - Lombardy Category:Images from Wiki Loves Monuments 2018 in Italy - veteran trees Category:Italy photographs taken on 2018-09-18 Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Cedar roots, not the magnolia"
     },
     {
      "title": "File:Cedro del Libano - rami.jpg",
@@ -29559,7 +29573,9 @@
      "author": "Albertomos",
      "lat": null,
      "lng": null,
-     "cats": "Category:1900s postcards of Italy Category:CC-BY-SA-4.0 Category:Giosuè Carducci Category:Postcards of celebrities in Italy Category:Self-published work"
+     "cats": "Category:1900s postcards of Italy Category:CC-BY-SA-4.0 Category:Giosuè Carducci Category:Postcards of celebrities in Italy Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Portrait of Carducci, not a tree"
     }
    ]
   },
@@ -32471,8 +32487,8 @@
      "author": "(c) Marc Riera, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "38.3443862997,-0.4833475997",
-     "judged": "hold",
-     "verdict": "Moreton Bay fig with fused aerial roots, species right, but the register has four figs within 25 m and nothing settles which trunk this is; also only 375 px wide."
+     "judged": "reject",
+     "verdict": "Fig trunk close-up at 375 px; four figs within 25 m, trunk not settled"
     },
     {
      "title": "iNat obs 204426677 (Ficus macrophylla)",
@@ -34736,7 +34752,9 @@
      "author": "GFreihalter",
      "lat": null,
      "lng": null,
-     "cats": "Category:Busts in Bratislava Category:CC-BY-SA-3.0 Category:Files by User:GFreihalter/Slowakei 2019 Category:Ján Levoslav Bella Category:Self-published work Category:Šulekova, Bratislava"
+     "cats": "Category:Busts in Bratislava Category:CC-BY-SA-3.0 Category:Files by User:GFreihalter/Slowakei 2019 Category:Ján Levoslav Bella Category:Self-published work Category:Šulekova, Bratislava",
+     "judged": "reject",
+     "verdict": "Street and monument view, not the oak"
     }
    ]
   },
@@ -36035,7 +36053,7 @@
      "source": "inaturalist",
      "obs_location": "39.5626,2.6202388889",
      "judged": "reject",
-     "verdict": "Both photos are close-ups of lentisc leaves and berries (Pistacia lentiscus fits) but no trunk or the four-stemmed form; not our specimen identifiable"
+     "verdict": "Foliage and berry close-up"
     },
     {
      "title": "iNat obs 104571527 (Pistacia lentiscus)",
@@ -39436,7 +39454,9 @@
      "author": "Kaz Alting",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-3.0 Category:GFDL Category:July 2011 in Amsterdam Category:License migration redundant Category:Netherlands photographs taken on 2011-07-07 Category:Self-published work Category:Taken with Nikon D3100 Category:Tweede Weteringplantsoen, Amsterdam"
+     "cats": "Category:CC-BY-3.0 Category:GFDL Category:July 2011 in Amsterdam Category:License migration redundant Category:Netherlands photographs taken on 2011-07-07 Category:Self-published work Category:Taken with Nikon D3100 Category:Tweede Weteringplantsoen, Amsterdam",
+     "judged": "reject",
+     "verdict": "Park scene with tram and gardener, no single tree subject"
     }
    ]
   },
@@ -43144,8 +43164,8 @@
      "author": "(c) Em Lamond, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "-32.1541013526,116.0161882639",
-     "judged": "hold",
-     "verdict": "Crown cut off at the top, and the upper trunk reads pale and smooth, not jarrah's stringy bark; cannot confirm species or tree."
+     "judged": "reject",
+     "verdict": "Pale smooth upper trunk does not read as jarrah; crown cut"
     },
     {
      "title": "iNat obs 47083440 (Eucalyptus marginata)",
@@ -49479,7 +49499,7 @@
      "source": "inaturalist",
      "obs_location": "-27.4760583333,153.0289916667",
      "judged": "reject",
-     "verdict": "Upward view into the crown from the trunk base; tree not readable as a whole, fails the card crop"
+     "verdict": "Trunk close-up with label, crown cut"
     },
     {
      "title": "iNat obs 263547446 (Araucaria cunninghamii)",
@@ -50653,7 +50673,7 @@
      "source": "inaturalist",
      "obs_location": "51.9273925,-8.5709786",
      "judged": "reject",
-     "verdict": "Young striped-bark Acer pensylvanicum stem close-up, wrong species."
+     "verdict": "Acer pensylvanicum observation, wrong species"
     },
     {
      "title": "iNat obs 312494356 (Acer pensylvanicum)",
@@ -61029,7 +61049,9 @@
      "author": "Daniel Ramirez from Honolulu, USA",
      "lat": 21.316492,
      "lng": -157.857956,
-     "cats": "Category:CC-BY-2.0 Category:Files uploaded from Flickr by Jacopo Werther via Bot Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Flora in Honolulu Category:Photographs by Daniel Ramirez Category:Taken with Nikon D3000"
+     "cats": "Category:CC-BY-2.0 Category:Files uploaded from Flickr by Jacopo Werther via Bot Category:Files with coordinates missing SDC location of creation Category:Flickr images reviewed by File Upload Bot (Magnus Manske) Category:Flora in Honolulu Category:Photographs by Daniel Ramirez Category:Taken with Nikon D3000",
+     "judged": "reject",
+     "verdict": "Silk cotton pod, wrong subject"
     }
    ]
   },
@@ -63181,7 +63203,9 @@
      "author": "Marc Ryckaert",
      "lat": 51.202912,
      "lng": 3.235492,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Gentpoort (Brugge) Category:Images by MJJR Category:Quality Images by MJJR Category:Quality images Category:Quality images of Bruges Category:Self-published work Category:Taken with Canon EOS 6D"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Gentpoort (Brugge) Category:Images by MJJR Category:Quality Images by MJJR Category:Quality images Category:Quality images of Bruges Category:Self-published work Category:Taken with Canon EOS 6D",
+     "judged": "reject",
+     "verdict": "Gentpoort gate is the subject, limes at the edges"
     },
     {
      "title": "File:Brugge Gentpoort R04.jpg",
@@ -63191,7 +63215,9 @@
      "author": "Marc Ryckaert",
      "lat": 51.202912,
      "lng": 3.235492,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Gentpoort (Brugge) Category:Images by MJJR Category:Self-published work Category:Taken with Canon EOS 6D"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Gentpoort (Brugge) Category:Images by MJJR Category:Self-published work Category:Taken with Canon EOS 6D",
+     "judged": "reject",
+     "verdict": "Gentpoort gate series, gate is the subject"
     },
     {
      "title": "File:Gentpoort (Brugge) 01.jpg",
@@ -63860,7 +63886,7 @@
      "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Information field template with formatting Category:Joergens.mi Category:JöMi Freiburg im Breisgau Category:Jömi(201203) Category:On OSM Category:Self-published work Category:Taken with Pentax K-5 Category:Waldtraut vom Mühlwald (Freiburg im Breisgau)",
      "source": "wikidata/Q112057419",
      "judged": "reject",
-     "verdict": "Very tall portrait of a forest stand; Waldtraut is not singled out and the centre crop shows a tangle of trunks among other trees."
+     "verdict": "Forest panorama of many conifers, the fir must be searched for"
     },
     {
      "title": "File:Douglasie Waldtraut Hoechster Baum Deutschlands.jpg",
@@ -64551,7 +64577,9 @@
      "author": "Verhelst, Julie",
      "lat": null,
      "lng": null,
-     "cats": "Category:2014 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Onroerend erfgoed with known IDs Category:Vroonstalledries (Gent)"
+     "cats": "Category:2014 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Onroerend erfgoed with known IDs Category:Vroonstalledries (Gent)",
+     "judged": "reject",
+     "verdict": "War memorial is the subject"
     },
     {
      "title": "File:Gent Vroonstalledries - 204662 - onroerenderfgoed.jpg",
@@ -64561,7 +64589,9 @@
      "author": "Verhelst, Julie",
      "lat": null,
      "lng": null,
-     "cats": "Category:2014 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Onroerend erfgoed with known IDs Category:Vroonstalledries (Gent)"
+     "cats": "Category:2014 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Onroerend erfgoed with known IDs Category:Vroonstalledries (Gent)",
+     "judged": "reject",
+     "verdict": "War memorial is the subject"
     },
     {
      "title": "File:Gent Vroonstalledries 41-44 - 204817 - onroerenderfgoed.jpg",
@@ -64571,7 +64601,9 @@
      "author": "Lanclus, Kathleen",
      "lat": null,
      "lng": null,
-     "cats": "Category:1978 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Onroerend erfgoed in Ghent Category:Onroerend erfgoed with known IDs Category:Vroonstalledries (Gent)"
+     "cats": "Category:1978 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation (51° N, 3° E) Category:Onroerend erfgoed in Ghent Category:Onroerend erfgoed with known IDs Category:Vroonstalledries (Gent)",
+     "judged": "reject",
+     "verdict": "Black-and-white house facade"
     },
     {
      "title": "File:Gent Vroonstalledries 58-59 - 204822 - onroerenderfgoed.jpg",
@@ -66299,7 +66331,9 @@
      "author": "A pool full of water",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Kagoshima Category:Montages of cities in Japan Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Kagoshima Category:Montages of cities in Japan Category:Self-published work",
+     "judged": "reject",
+     "verdict": "City montage"
     },
     {
      "title": "File:Somuta cemetery in Kagoshima (Somuta, Kagoshima) VLux5 hdsr 04.jpg",
@@ -66309,7 +66343,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Somuta cemetery in Kagoshima (Somuta, Kagoshima)"
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Somuta cemetery in Kagoshima (Somuta, Kagoshima)",
+     "judged": "reject",
+     "verdict": "Cemetery path, no camphor"
     },
     {
      "title": "File:Somuta cemetery in Kagoshima (Somuta, Kagoshima) VLux5 hdsr 06.jpg",
@@ -66319,7 +66355,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Somuta cemetery in Kagoshima (Somuta, Kagoshima)"
+     "cats": "Category:CC-BY-4.0 Category:Self-published work Category:Somuta cemetery in Kagoshima (Somuta, Kagoshima)",
+     "judged": "reject",
+     "verdict": "Cemetery series, no camphor"
     }
    ]
   },
@@ -66429,7 +66467,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Sakurajima view from Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work Category:Self-published work missing SDC copyright license"
+     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Sakurajima view from Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work Category:Self-published work missing SDC copyright license",
+     "judged": "reject",
+     "verdict": "Sakurajima view through twigs"
     },
     {
      "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr xw25.jpg",
@@ -66439,7 +66479,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work Category:Self-published work missing SDC copyright license"
+     "cats": "Category:CC-BY-4.0 Category:Creative Commons Attribution 4.0 missing SDC copyright license Category:Creative Commons Attribution missing SDC copyright status Category:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work Category:Self-published work missing SDC copyright license",
+     "judged": "reject",
+     "verdict": "Bay landscape"
     }
    ]
   },
@@ -66498,7 +66540,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Bird on a pylon"
     },
     {
      "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr pd01.jpg",
@@ -66508,7 +66552,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Passer domesticus in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Passer domesticus in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Sparrow on pavement"
     },
     {
      "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr xw18.jpg",
@@ -68917,7 +68963,9 @@
      "author": "Poziomhcxze",
      "lat": 50.04183,
      "lng": 19.94862,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Poland missing SDC location of creation Category:Cultural heritage monuments in Poland with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2023 Category:Images from Wiki Loves Monuments 2023 in Poland Category:Images from Wiki Loves Monuments in Poland – Lesser Poland Voivodeship Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pl"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Poland missing SDC location of creation Category:Cultural heritage monuments in Poland with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2023 Category:Images from Wiki Loves Monuments 2023 in Poland Category:Images from Wiki Loves Monuments in Poland – Lesser Poland Voivodeship Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pl",
+     "judged": "reject",
+     "verdict": "Monument to Bednarski"
     },
     {
      "title": "File:Pomnik Wojciecha Bednarskiego w Krakowie.jpg",
@@ -68927,7 +68975,9 @@
      "author": "Poziomhcxze",
      "lat": 50.04183,
      "lng": 19.94862,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Poland missing SDC location of creation Category:Cultural heritage monuments in Poland with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2023 Category:Images from Wiki Loves Monuments 2023 in Poland Category:Images from Wiki Loves Monuments in Poland – Lesser Poland Voivodeship Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pl"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Poland missing SDC location of creation Category:Cultural heritage monuments in Poland with known IDs Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Monuments 2023 Category:Images from Wiki Loves Monuments 2023 in Poland Category:Images from Wiki Loves Monuments in Poland – Lesser Poland Voivodeship Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Self-published work Category:Uploaded via Campaign:wlm-pl",
+     "judged": "reject",
+     "verdict": "Monument to Bednarski"
     }
    ]
   },
@@ -69074,7 +69124,7 @@
      "source": "inaturalist",
      "obs_location": "50.0619430542,19.9572219849",
      "judged": "reject",
-     "verdict": "Bark close-up only, and the observation is labelled Quercus petraea, not frainetto"
+     "verdict": "Quercus petraea observation, wrong species"
     },
     {
      "title": "iNat obs 34384447 (Quercus petraea)",
@@ -69136,7 +69186,9 @@
      "licence": "CC BY",
      "author": "(c) Daniel Cahen, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "50.062920415,19.9573312075"
+     "obs_location": "50.062920415,19.9573312075",
+     "judged": "hold",
+     "verdict": "Tall Canary palm in the winter greenhouse, species right, but a second palm stands behind it and file is 375 px; which trunk not settled"
     }
    ]
   },
@@ -73286,7 +73338,9 @@
      "author": "Dietrich Michael Weidmann",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Crémines Category:Files by User:DidiWeidmann Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon D40x"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Crémines Category:Files by User:DidiWeidmann Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon D40x",
+     "judged": "reject",
+     "verdict": "Village school building"
     },
     {
      "title": "File:Cremines 148.JPG",
@@ -73296,7 +73350,9 @@
      "author": "Dietrich Michael Weidmann",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Crémines Category:Files by User:DidiWeidmann Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon D40x"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Crémines Category:Files by User:DidiWeidmann Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon D40x",
+     "judged": "reject",
+     "verdict": "Farmhouse and road"
     },
     {
      "title": "File:Cremines 171.JPG",
@@ -73306,7 +73362,9 @@
      "author": "Dietrich Michael Weidmann",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Crémines Category:Files by User:DidiWeidmann Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon D40x"
+     "cats": "Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:Crémines Category:Files by User:DidiWeidmann Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Nikon D40x",
+     "judged": "reject",
+     "verdict": "Village sign and road"
     },
     {
      "title": "File:Cremines 172.JPG",
@@ -76735,7 +76793,7 @@
      "source": "inaturalist",
      "obs_location": "49.6141024179,6.1244645342",
      "judged": "reject",
-     "verdict": "Upward trunk view under a dull grey sky (POOR light); sequoia bark readable but the photo cannot say whether it shows the survivor or the twin felled in February 2026"
+     "verdict": "Sparse browning sequoia crown, likely the felled diseased twin; survivor not settled"
     },
     {
      "title": "iNat obs 297299605 (Sequoiadendron giganteum)",
@@ -76848,7 +76906,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Hollerich Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan",
      "source": "wikidata/Q132663264",
      "judged": "reject",
-     "verdict": "Trunk base only, crown out of frame"
+     "verdict": "Trunk fork only, crown cut off; lux_008-4 approved instead"
     },
     {
      "title": "File:Cessange, Hollerich, Merl and Belair.jpg",
@@ -76928,7 +76986,9 @@
      "author": "GilPe",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Hollerich Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Hollerich Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "Trunk close view, crown cut; lux_008-4 approved instead"
     },
     {
      "title": "File:Luxembourg, érable sycomore remarquable Hollerich (106).jpg",
@@ -76938,7 +76998,9 @@
      "author": "GilPe",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Hollerich Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Hollerich Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan",
+     "judged": "approve",
+     "verdict": "Multi-stem sycamore with flaking plate bark (sibling 105) on the Petrusse path, stone walls and bench; Commons category Remarkable sycamore in Hollerich; bare but whole tree in frame"
     },
     {
      "title": "File:Luxembourg-ville, route d'Esch, vers église de Hollerich, 2019.jpg",
@@ -76999,7 +77061,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Pfaffenthal Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan",
      "source": "wikidata/Q132663401",
      "judged": "reject",
-     "verdict": "Hidde: poor photograph"
+     "verdict": "Bare crown silhouette only, no trunk, lamp posts"
     },
     {
      "title": "File:Luxembourg, hêtre pourpre remarquable Corniche (103).jpg",
@@ -77069,7 +77131,9 @@
      "author": "GilPe",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Pfaffenthal Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan"
+     "cats": "Category:CC-BY-SA-4.0 Category:February 2025 Luxembourg photographs Category:Remarkable sycamore in Pfaffenthal Category:Self-published work Category:Taken with Samsung Galaxy S23 Category:Uploaded with pattypan",
+     "judged": "reject",
+     "verdict": "Backlit bare silhouette over a path, trunk unreadable"
     },
     {
      "title": "File:Luxembourg, érable sycomore remarquable Pfaffenthal (105).jpg",
@@ -77089,7 +77153,9 @@
      "author": "Cayambe",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Montée de Pfaffenthal Category:October 2017 Luxembourg photographs Category:Quality images Category:Quality images by Cayambe Category:Quality images missing SDC depicts Category:Quality images of Luxembourg City Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Montée de Pfaffenthal Category:October 2017 Luxembourg photographs Category:Quality images Category:Quality images by Cayambe Category:Quality images missing SDC depicts Category:Quality images of Luxembourg City Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Street view of the Montee de Pfaffenthal, not a tree portrait"
     },
     {
      "title": "File:Luxembourg City - Montée de Pfaffenthal upwards 2017.jpg",
@@ -78847,7 +78913,9 @@
      "author": "水だらけのプール",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Miyazaki, Miyazaki Category:Montages of cities in Japan Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Miyazaki, Miyazaki Category:Montages of cities in Japan Category:Self-published work",
+     "judged": "reject",
+     "verdict": "City montage"
     }
    ]
   },
@@ -79648,7 +79716,7 @@
      "cats": "Category:CC-BY-SA-4.0 Category:Craigends Yew Category:Images by Roger Griffith Category:Self-published work",
      "source": "wikidata/Q47533854",
      "judged": "reject",
-     "verdict": "Low scrubby yew grove under a blown-out sky; no single tree reads."
+     "verdict": "Low yew thicket under white sky, no trunk or tree shape"
     },
     {
      "title": "File:Craigends Yew grove, Houston, Renfrewshire - eastern section.jpg",
@@ -89054,7 +89122,9 @@
      "author": "Gerard Dukker",
      "lat": null,
      "lng": null,
-     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nature of Borsele Category:Photographs by Gerard Dukker"
+     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nature of Borsele Category:Photographs by Gerard Dukker",
+     "judged": "reject",
+     "verdict": "Black-and-white archival pond view"
     },
     {
      "title": "File:Wiel - Heinkenszand - 20107057 - RCE.jpg",
@@ -89064,7 +89134,9 @@
      "author": "Gerard Dukker",
      "lat": null,
      "lng": null,
-     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nature of Borsele Category:Photographs by Gerard Dukker"
+     "cats": "Category:1964 in Zeeland Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Heinkenszand Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Nature of Borsele Category:Photographs by Gerard Dukker",
+     "judged": "reject",
+     "verdict": "Black-and-white archival tree row"
     }
    ]
   },
@@ -90074,7 +90146,9 @@
      "author": "Agora",
      "lat": null,
      "lng": null,
-     "cats": "Category:Balance (Nijmegen) Category:CC-BY-SA-4.0 Category:Daalseweg (Nijmegen) Category:Mariken van Nieumeghen Category:Netherlands photographs taken on 2014-10-25 Category:Self-published work Category:Taken with HTC Incredible S Category:Theaters in Nijmegen"
+     "cats": "Category:Balance (Nijmegen) Category:CC-BY-SA-4.0 Category:Daalseweg (Nijmegen) Category:Mariken van Nieumeghen Category:Netherlands photographs taken on 2014-10-25 Category:Self-published work Category:Taken with HTC Incredible S Category:Theaters in Nijmegen",
+     "judged": "reject",
+     "verdict": "Roundabout artwork, not the beech"
     }
    ]
   },
@@ -91682,7 +91756,7 @@
      "source": "inaturalist",
      "obs_location": "45.3993866667,11.8807533333",
      "judged": "reject",
-     "verdict": "Close-up of the species label on the bark."
+     "verdict": "Plaque reading 1750, the first ginkgo not ours; no tree shape"
     },
     {
      "title": "iNat obs 216135586 (Ginkgo biloba)",
@@ -93214,7 +93288,9 @@
      "author": "elinasnow",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:July 2022 in Helsinki Category:Self-published work Category:Seurasaari Category:Signs in Helsinki"
+     "cats": "Category:CC-BY-SA-4.0 Category:July 2022 in Helsinki Category:Self-published work Category:Seurasaari Category:Signs in Helsinki",
+     "judged": "reject",
+     "verdict": "Signpost and wooden buildings, no pine subject"
     }
    ]
   },
@@ -93232,7 +93308,9 @@
      "author": "Edwardina von Boxis",
      "lat": 60.18333,
      "lng": 25.03333,
-     "cats": "Category:2008 in Helsinki Category:CC-BY-SA-4.0 Category:Finland photographs taken on 2008-06-28 Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Finland Category:Self-published work Category:Summer 2008 in Finland Category:Tullisaari Category:Uploaded via Campaign:wlm-fi-rephotography-wikidata"
+     "cats": "Category:2008 in Helsinki Category:CC-BY-SA-4.0 Category:Finland photographs taken on 2008-06-28 Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Finland Category:Self-published work Category:Summer 2008 in Finland Category:Tullisaari Category:Uploaded via Campaign:wlm-fi-rephotography-wikidata",
+     "judged": "reject",
+     "verdict": "Landscape 790 m off"
     },
     {
      "title": "File:Tullisaari beach in Helsinki, Finland, 2020 December.jpg",
@@ -93242,7 +93320,9 @@
      "author": "Timo Newton-Syms",
      "lat": 60.177564,
      "lng": 25.021317,
-     "cats": "Category:CC-BY-SA-2.0 Category:December 2020 in Helsinki Category:Files from Timo Newton-Syms Flickr stream Category:Files with coordinates missing SDC location of creation Category:Finland photographs taken on 2020-12-31 Category:Flickr images reviewed by FlickreviewR 2 Category:Sea in front of Helsinki Category:Tullisaari"
+     "cats": "Category:CC-BY-SA-2.0 Category:December 2020 in Helsinki Category:Files from Timo Newton-Syms Flickr stream Category:Files with coordinates missing SDC location of creation Category:Finland photographs taken on 2020-12-31 Category:Flickr images reviewed by FlickreviewR 2 Category:Sea in front of Helsinki Category:Tullisaari",
+     "judged": "reject",
+     "verdict": "Beach view 1 km off"
     },
     {
      "title": "File:Tullisaari merenrantalehto kevät Helsinki.jpg",
@@ -93252,7 +93332,9 @@
      "author": "Edwardina von Boxis",
      "lat": 60.18333,
      "lng": 25.03333,
-     "cats": "Category:CC-BY-SA-4.0 Category:Finland photographs taken on 2010-05-15 Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Finland Category:May 2010 in Helsinki Category:Self-published work Category:Summer in Helsinki Category:Tullisaari Category:Uploaded via Campaign:wlm-fi-rephotography-wikidata"
+     "cats": "Category:CC-BY-SA-4.0 Category:Finland photographs taken on 2010-05-15 Category:Images from Wiki Loves Monuments 2018 Category:Images from Wiki Loves Monuments 2018 in Finland Category:May 2010 in Helsinki Category:Self-published work Category:Summer in Helsinki Category:Tullisaari Category:Uploaded via Campaign:wlm-fi-rephotography-wikidata",
+     "judged": "reject",
+     "verdict": "Grove landscape 790 m off"
     },
     {
      "title": "File:Tullisaari merenrantaniitty Henrik Borgstöm puisto Helsinki.jpg",
@@ -97534,7 +97616,7 @@
      "source": "inaturalist",
      "obs_location": "43.0525568769,141.3110470022",
      "judged": "reject",
-     "verdict": "Katsura leaf close-up, same observation; no tree in frame."
+     "verdict": "Leaf close-up on bark"
     },
     {
      "title": "iNat obs 308655605 (Cercidiphyllum japonicum)",
@@ -107250,7 +107332,9 @@
      "author": "C.Stadler/Bwag",
      "lat": 47.56462,
      "lng": 13.65002,
-     "cats": "Category:2019 in Hallstatt Category:Austria photographs taken on 2019-06-30 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Hallstätter See Category:Images with annotations Category:June 2019 in Upper Austria Category:Media from WikiDaheim 2019 in Austria/Unspecified Category:Media from WikiDaheim 2019 in Austria/all Category:Photographs by Bwag/Panoramic views Category:Quality images Category:Quality images of Austria Category:Self-published work Category:Views of Hallstatt Category:Vorderer Hirlatz"
+     "cats": "Category:2019 in Hallstatt Category:Austria photographs taken on 2019-06-30 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Hallstätter See Category:Images with annotations Category:June 2019 in Upper Austria Category:Media from WikiDaheim 2019 in Austria/Unspecified Category:Media from WikiDaheim 2019 in Austria/all Category:Photographs by Bwag/Panoramic views Category:Quality images Category:Quality images of Austria Category:Self-published work Category:Views of Hallstatt Category:Vorderer Hirlatz",
+     "judged": "reject",
+     "verdict": "Town view of Hallstatt"
     },
     {
      "title": "File:Hallstatt - Zentrum .JPG",
@@ -107260,7 +107344,9 @@
      "author": "C.Stadler/Bwag",
      "lat": 47.56462,
      "lng": 13.65002,
-     "cats": "Category:Austria photographs taken on 2019-06-30 Category:CC-BY-SA-4.0 Category:Christuskirche (Hallstatt) Category:Featured pictures on Wikipedia, Vietnamese Category:Files with coordinates missing SDC location of creation Category:Hallstätter See in Hallstatt Category:Images with annotations Category:Media from WikiDaheim 2019 in Austria/Unspecified Category:Media from WikiDaheim 2019 in Austria/all Category:Pfarrkirche Mariä Himmelfahrt (Hallstatt) Category:Photographs by Bwag/Panoramic views Category:Quality images Category:Quality images of Austria Category:Self-published work Category:Taken with Canon EOS 5D Mark IV Category:Vorderer Hirlatz"
+     "cats": "Category:Austria photographs taken on 2019-06-30 Category:CC-BY-SA-4.0 Category:Christuskirche (Hallstatt) Category:Featured pictures on Wikipedia, Vietnamese Category:Files with coordinates missing SDC location of creation Category:Hallstätter See in Hallstatt Category:Images with annotations Category:Media from WikiDaheim 2019 in Austria/Unspecified Category:Media from WikiDaheim 2019 in Austria/all Category:Pfarrkirche Mariä Himmelfahrt (Hallstatt) Category:Photographs by Bwag/Panoramic views Category:Quality images Category:Quality images of Austria Category:Self-published work Category:Taken with Canon EOS 5D Mark IV Category:Vorderer Hirlatz",
+     "judged": "reject",
+     "verdict": "Town centre view"
     },
     {
      "title": "File:Hallstatt evangelische Kirche 20180206.jpg",
@@ -107282,7 +107368,9 @@
      "author": "MarinaBaranova",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Hallstatt Category:Hallstätter See Category:Media from WikiDaheim 2024 in Austria/Wikidata Category:Media from WikiDaheim 2024 in Austria/all Category:Media from WikiDaheim in Austria check done Category:Sarstein Category:Self-published work Category:Uploaded via Campaign:WikiDaheim-at-wd Category:Wehrkogel (Sarstein)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Hallstatt Category:Hallstätter See Category:Media from WikiDaheim 2024 in Austria/Wikidata Category:Media from WikiDaheim 2024 in Austria/all Category:Media from WikiDaheim in Austria check done Category:Sarstein Category:Self-published work Category:Uploaded via Campaign:WikiDaheim-at-wd Category:Wehrkogel (Sarstein)",
+     "judged": "reject",
+     "verdict": "Aerial town view"
     },
     {
      "title": "File:Hallstatt kath. Kirche Knappenaltar Kreuzigung 01.jpg",
@@ -107712,7 +107800,9 @@
      "author": "Alessandro Vecchi",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Pecetto (Macugnaga) Category:Self-published work"
+     "cats": "Category:CC-BY-SA-3.0 Category:Pecetto (Macugnaga) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Village view"
     },
     {
      "title": "File:Macugnaga paese.jpg",
@@ -107722,7 +107812,9 @@
      "author": "BelPatty86",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Piedmont Category:Images from Wiki Loves Monuments 2022 in Italy - cityscapes Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Macugnaga Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Piedmont Category:Images from Wiki Loves Monuments 2022 in Italy - cityscapes Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Macugnaga Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Village view"
     },
     {
      "title": "File:Macugnaga paese innevato.jpg",
@@ -107732,7 +107824,9 @@
      "author": "BelPatty86",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Piedmont Category:Images from Wiki Loves Monuments 2022 in Italy - cityscapes Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Macugnaga Category:Self-published work Category:Uploaded via Campaign:wlm-it"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cultural heritage monuments in Italy with known IDs Category:Images from Wiki Loves Monuments 2022 Category:Images from Wiki Loves Monuments 2022 in Italy Category:Images from Wiki Loves Monuments 2022 in Italy - Piedmont Category:Images from Wiki Loves Monuments 2022 in Italy - cityscapes Category:Images from Wiki Loves Monuments 2022 in Italy - traditional contest Category:Macugnaga Category:Self-published work Category:Uploaded via Campaign:wlm-it",
+     "judged": "reject",
+     "verdict": "Snowy village view"
     },
     {
      "title": "File:Tiglio secolare addobbato a festa Rapolla PZ.jpg",
@@ -108504,7 +108598,9 @@
      "author": "Agata Zamorska",
      "lat": 54.4114756,
      "lng": 18.56077909,
-     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm"
+     "cats": "Category:2015 in Gdańsk Category:Betula in May Category:Betula pendula in Poland Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC location of creation Category:Natural monuments in Gdańsk Category:Park Steffensa in Gdańsk Category:Poland photographs taken on 2015-05-31 Category:Self-published work Category:Trees in Gdańsk Category:Uploaded via Campaign:wle-pl-nm",
+     "judged": "reject",
+     "verdict": "Birch file, wrong species"
     }
    ]
   },
@@ -109838,7 +109934,7 @@
      "source": "inaturalist",
      "obs_location": "40.9613466514,-5.6669286655",
      "judged": "reject",
-     "verdict": "Foliage close-up only, no trunk or crown."
+     "verdict": "Foliage close-up"
     },
     {
      "title": "iNat obs 138160059 (Sequoia sempervirens)",
@@ -110458,7 +110554,7 @@
      "cats": "Category:CC-BY-SA-3.0 Category:Creek Nation Council Oak Park Category:Famous Quercus in the United States Category:Images from Wiki Loves Monuments 2012 Category:Images from Wiki Loves Monuments 2012 in the United States Category:Monuments and memorials to trees Category:National Register of Historic Places with known IDs Category:Self-published work Category:Taken with Canon EOS 5D Mark II Category:United States photographs taken on 2012-09-23 Category:WLM 2012 United States reviewed",
      "source": "wikidata/Q19866514",
      "judged": "reject",
-     "verdict": "Park sign is the subject; the oak sits behind it off-centre, cut by the sign in the crop."
+     "verdict": "Park sign is the subject, oak at the left edge"
     },
     {
      "title": "File:Creek Council Tree Site, Tulsa, OK, Monument 01.JPG",
@@ -112705,7 +112801,9 @@
      "author": "Jolanta Dyr",
      "lat": 52.205675,
      "lng": 21.02526806,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej Category:Self-published work Category:Taken with Sony DSC-HX200V"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej Category:Self-published work Category:Taken with Sony DSC-HX200V",
+     "judged": "reject",
+     "verdict": "Memorial, not the oak"
     },
     {
      "title": "File:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej - 04.jpg",
@@ -112715,7 +112813,9 @@
      "author": "Jolanta Dyr",
      "lat": 52.20571472,
      "lng": 21.02518806,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej Category:Self-published work Category:Taken with Sony DSC-HX200V"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej Category:Self-published work Category:Taken with Sony DSC-HX200V",
+     "judged": "reject",
+     "verdict": "Memorial, not the oak"
     },
     {
      "title": "File:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej - 05.jpg",
@@ -112725,7 +112825,9 @@
      "author": "Jolanta Dyr",
      "lat": 52.20569472,
      "lng": 21.02517806,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej Category:Self-published work Category:Taken with Sony DSC-HX200V"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Pomnik Żołnierzy Armii Krajowej Pułku \"Baszta\" zamordowanych na Dworkowej Category:Self-published work Category:Taken with Sony DSC-HX200V",
+     "judged": "reject",
+     "verdict": "Memorial, not the oak"
     },
     {
      "title": "iNat obs 93248829 (Quercus robur)",
@@ -113048,7 +113150,9 @@
      "author": "Panek",
      "lat": 52.20761111,
      "lng": 20.993925,
-     "cats": "Category:Betula in April Category:Birch avenue in Rakowiec allotments Category:CC-BY-SA-3.0-PL Category:Ficaria verna (habitat) Category:Ficaria verna in Poland Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Park benches in Warsaw Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR"
+     "cats": "Category:Betula in April Category:Birch avenue in Rakowiec allotments Category:CC-BY-SA-3.0-PL Category:Ficaria verna (habitat) Category:Ficaria verna in Poland Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Park benches in Warsaw Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR",
+     "judged": "reject",
+     "verdict": "Low view of a trunk among birches, 225 m off, lime not settled"
     },
     {
      "title": "File:Wawa pomnik przyr 293 5.JPG",
@@ -113253,7 +113357,9 @@
      "author": "Bokkema",
      "lat": null,
      "lng": null,
-     "cats": "Category:2011 in Amersfoort Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Monnikendam Category:Netherlands photographs taken on 2011-06-12 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Nikon Coolpix S3000"
+     "cats": "Category:2011 in Amersfoort Category:CC-BY-SA-3.0,2.5,2.0,1.0 Category:GFDL Category:License migration redundant Category:Monnikendam Category:Netherlands photographs taken on 2011-06-12 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Nikon Coolpix S3000",
+     "judged": "reject",
+     "verdict": "Monnikendam gate, building is the subject"
     },
     {
      "title": "File:Monnikendam gate in Amersfoort.jpg",
@@ -113263,7 +113369,9 @@
      "author": "Michael A. Echteld",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2015 Category:Images from Wiki Loves Monuments 2015 in the Netherlands Category:Monnikendam Category:Netherlands photographs taken on 2015-07-18 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl"
+     "cats": "Category:CC-BY-SA-4.0 Category:Images from Wiki Loves Monuments 2015 Category:Images from Wiki Loves Monuments 2015 in the Netherlands Category:Monnikendam Category:Netherlands photographs taken on 2015-07-18 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Uploaded via Campaign:wlm-nl",
+     "judged": "reject",
+     "verdict": "Monnikendam gate, building is the subject"
     }
    ]
   },
@@ -113317,7 +113425,9 @@
      "author": "Ymblanter",
      "lat": 52.15261,
      "lng": 5.38593,
-     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Amersfoort Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Stadsring, Amersfoort Category:Taken with Nikon D3400"
+     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Amersfoort Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Stadsring, Amersfoort Category:Taken with Nikon D3400",
+     "judged": "reject",
+     "verdict": "Building at Stadsring 105, 363 m off"
     },
     {
      "title": "File:Amersfoort Stadsring 105 seen from the northeast.jpg",
@@ -113327,7 +113437,9 @@
      "author": "Ymblanter",
      "lat": 52.15275,
      "lng": 5.38598,
-     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Amersfoort Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Stadsring, Amersfoort Category:Taken with Nikon D3400"
+     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Gemeentelijke monumenten in Amersfoort Category:Gemeentelijke monumenten with known IDs Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Stadsring, Amersfoort Category:Taken with Nikon D3400",
+     "judged": "reject",
+     "verdict": "Building at Stadsring 105, 350 m off"
     },
     {
      "title": "File:Amersfoort Stadsring 107.jpg",
@@ -113337,7 +113449,9 @@
      "author": "Ymblanter",
      "lat": 52.15219,
      "lng": 5.38582,
-     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Stadsring, Amersfoort Category:Taken with Nikon D3400"
+     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Stadsring, Amersfoort Category:Taken with Nikon D3400",
+     "judged": "reject",
+     "verdict": "Building at Stadsring 107, 405 m off"
     },
     {
      "title": "File:Amersfoort Stadsring Side lane next to 248-250.jpg",
@@ -113387,7 +113501,9 @@
      "author": "Ymblanter",
      "lat": 52.15659,
      "lng": 5.38578,
-     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Doors in Amersfoort Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400 Category:Westsingel 43, Amersfoort"
+     "cats": "Category:2024 in Amersfoort Category:CC-BY-SA-4.0 Category:Doors in Amersfoort Category:Files with coordinates missing SDC location of creation (52° N, 5° E) Category:Netherlands photographs taken on 2024-06-22 Category:Photographs of the Netherlands by Ymblanter Category:Self-published work Category:Taken with Nikon D3400 Category:Westsingel 43, Amersfoort",
+     "judged": "reject",
+     "verdict": "Building entrance, not a tree"
     },
     {
      "title": "File:Uitzicht vanaf voormalig staduis Amersfoort op Westsingel 2011.jpg",
@@ -113397,7 +113513,9 @@
      "author": "JopkeB",
      "lat": null,
      "lng": null,
-     "cats": "Category:Amersfoort photographs taken on 2011-09-10 Category:CC-BY-SA-4.0 Category:Self-published work Category:Uploads by user:JopkeB Category:Views from Westsingel 43, Amersfoort Category:Westsingel (Amersfoort)"
+     "cats": "Category:Amersfoort photographs taken on 2011-09-10 Category:CC-BY-SA-4.0 Category:Self-published work Category:Uploads by user:JopkeB Category:Views from Westsingel 43, Amersfoort Category:Westsingel (Amersfoort)",
+     "judged": "reject",
+     "verdict": "Town view from a window, not a tree portrait"
     },
     {
      "title": "File:Uitzicht vanaf voormalig staduis Amersfoort op Westsingel en St. Joriskerk 2011.jpg",
@@ -113407,7 +113525,9 @@
      "author": "JopkeB",
      "lat": null,
      "lng": null,
-     "cats": "Category:Amersfoort photographs taken on 2011-09-10 Category:CC-BY-SA-4.0 Category:Self-published work Category:Uploads by user:JopkeB Category:Views from Westsingel 43, Amersfoort Category:Westsingel (Amersfoort)"
+     "cats": "Category:Amersfoort photographs taken on 2011-09-10 Category:CC-BY-SA-4.0 Category:Self-published work Category:Uploads by user:JopkeB Category:Views from Westsingel 43, Amersfoort Category:Westsingel (Amersfoort)",
+     "judged": "reject",
+     "verdict": "Town view toward the church, not a tree portrait"
     },
     {
      "title": "File:Uitzicht vanaf voormalig staduis Amersfoort op Westsingel en St Aegtenkapel 2011.jpg",
@@ -115168,7 +115288,9 @@
      "author": "Jane023",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files uploaded by Jane023 Category:Oosterbegraafplaats, Enschede Category:Self-published work Category:Taken with Panasonic Lumix DMC-FX30",
+     "judged": "reject",
+     "verdict": "Cemetery path view, spruce not singled out"
     },
     {
      "title": "File:Oosterbegraafplaats Enschede 6.JPG",
@@ -115280,7 +115402,9 @@
      "author": "Vlaamse Gemeenschap",
      "lat": null,
      "lng": null,
-     "cats": "Category:1976 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Onroerend erfgoed with known IDs Category:Photographs by Vlaamse Gemeenschap Category:Prudens Van Duyseplein 2-3, 7, Gent"
+     "cats": "Category:1976 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Onroerend erfgoed with known IDs Category:Photographs by Vlaamse Gemeenschap Category:Prudens Van Duyseplein 2-3, 7, Gent",
+     "judged": "reject",
+     "verdict": "Black-and-white archival street scene"
     },
     {
      "title": "File:Gent Prudens Van Duyseplein 4-6 - 182438 - onroerenderfgoed.jpg",
@@ -115290,7 +115414,9 @@
      "author": "Vlaamse Gemeenschap",
      "lat": null,
      "lng": null,
-     "cats": "Category:1976 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Onroerend erfgoed with known IDs Category:Photographs by Vlaamse Gemeenschap Category:Prudens Van Duyseplein 2-3, 7, Gent"
+     "cats": "Category:1976 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Onroerend erfgoed with known IDs Category:Photographs by Vlaamse Gemeenschap Category:Prudens Van Duyseplein 2-3, 7, Gent",
+     "judged": "reject",
+     "verdict": "Black-and-white archival street scene"
     },
     {
      "title": "File:Gent Prudens Van Duyseplein 4-6 - 182441 - onroerenderfgoed.jpg",
@@ -115300,7 +115426,9 @@
      "author": "Vlaamse Gemeenschap",
      "lat": null,
      "lng": null,
-     "cats": "Category:1976 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Onroerend erfgoed with known IDs Category:Photographs by Vlaamse Gemeenschap Category:Prudens Van Duyseplein 2-3, 7, Gent"
+     "cats": "Category:1976 in Ghent Category:Buildings with addresses Category:CC-BY-4.0 Category:Onroerend erfgoed with known IDs Category:Photographs by Vlaamse Gemeenschap Category:Prudens Van Duyseplein 2-3, 7, Gent",
+     "judged": "reject",
+     "verdict": "Black-and-white archival street scene"
     },
     {
      "title": "File:Gent Prudens Van Duyseplein 4-8 - 182439 - onroerenderfgoed.jpg",
@@ -116095,7 +116223,9 @@
      "author": "Panek",
      "lat": 52.20583056,
      "lng": 20.99062222,
-     "cats": "Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Monumental Polish larch in allotment 198 (Warsaw-Rakowiec) Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR"
+     "cats": "Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Monumental Polish larch in allotment 198 (Warsaw-Rakowiec) Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR",
+     "judged": "reject",
+     "verdict": "Larch-like conifer, not a black locust"
     },
     {
      "title": "File:Wawa pomnik przyr 351 3.JPG",
@@ -122587,7 +122717,7 @@
      "source": "inaturalist",
      "obs_location": "40.0876195,-75.2211966667",
      "judged": "reject",
-     "verdict": "Hand holding holly-like oak leaves (Quercus vaseyana); leaf close-up, different species."
+     "verdict": "Quercus vaseyana leaf in hand, wrong species and close-up"
     },
     {
      "title": "iNat obs 367519229 (Quercus vaseyana)",
@@ -122607,7 +122737,7 @@
      "source": "inaturalist",
      "obs_location": "40.0875333333,-75.2211916667",
      "judged": "reject",
-     "verdict": "Accession label on a young Quercus x deamii; not the Bender Oak."
+     "verdict": "Quercus x deamii observation, wrong species"
     },
     {
      "title": "iNat obs 219643272 (Quercus × deamii)",
@@ -122689,7 +122819,7 @@
      "source": "inaturalist",
      "obs_location": "40.0875638333,-75.22187",
      "judged": "reject",
-     "verdict": "Interpretive sign for a Chinese hemlock in snow; no tree, different species."
+     "verdict": "Chinese hemlock plaque in snow"
     },
     {
      "title": "iNat obs 69589362 (Tsuga chinensis)",
@@ -126869,7 +126999,7 @@
      "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2024 Category:Images from Wiki Loves Earth 2024 in Germany Category:Images from Wiki Loves Earth 2024 in Germany outside of the competition Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Weisse Maulbeere Viktoriapark Category:Photographs by Leonhard Lenz Category:Self-published work",
      "source": "wikidata/Q125772655",
      "judged": "reject",
-     "verdict": "Right tree (named file, 10 m from pin, sparse heart-shaped fresh leaves fit Morus alba) but its thin crown dissolves into the lime crowns behind; third agreeing reject"
+     "verdict": "Mulberry lost among shrubs and trees at a path fork, not clearly the subject"
     },
     {
      "title": "File:Berlin Viktoriapark 19.01.2015 10-58-21.JPG",
@@ -128667,8 +128797,8 @@
      "author": "(c) Sinéad Tuttle-Lerner, some rights reserved (CC BY)",
      "source": "inaturalist",
      "obs_location": "40.726847387,-73.9822419141",
-     "judged": "hold",
-     "verdict": "Big vase-crowned elm in full leaf behind railings with people on benches, daylight, frames well; but Tompkins Square has several old elms and nothing in the photo (no plaque, no geotag check) settles "
+     "judged": "reject",
+     "verdict": "Backlit elm crown over benches; same several-elm ambiguity as the held photo"
     },
     {
      "title": "iNat obs 220174370 (Ulmus americana)",
@@ -128733,7 +128863,7 @@
      "source": "inaturalist",
      "obs_location": "40.7117035104,-74.0132054307",
      "judged": "reject",
-     "verdict": "Blossom close-ups of a Callery pear on the plaza; no tree as subject and no way to tell the Survivor Tree from the other pears there"
+     "verdict": "Blossom close-up"
     },
     {
      "title": "iNat obs 20388088 (Pyrus)",
@@ -128753,7 +128883,7 @@
      "source": "inaturalist",
      "obs_location": "40.711245,-74.013525",
      "judged": "reject",
-     "verdict": "Leaf close-up (glossy rounded pear leaf), no tree"
+     "verdict": "Looking up into a crown among several trunks, tree shape unreadable"
     },
     {
      "title": "iNat obs 3541943 (Pyrus calleryana)",
@@ -129009,7 +129139,9 @@
      "author": "Gugerell",
      "lat": 48.24313717,
      "lng": 16.35896183,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Franz Keim monument, Wertheimsteinpark Category:Images by Peter Gugerell, Vienna Category:Self-published work"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Franz Keim monument, Wertheimsteinpark Category:Images by Peter Gugerell, Vienna Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Bust of Franz Keim, not the service tree"
     }
    ]
   },
@@ -129326,7 +129458,9 @@
      "author": "Gugerell",
      "lat": 48.243417,
      "lng": 16.358872,
-     "cats": "Category:Benches in Vienna Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Wertheimsteinpark"
+     "cats": "Category:Benches in Vienna Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Wertheimsteinpark",
+     "judged": "reject",
+     "verdict": "Benches and visitors, no beech subject"
     }
    ]
   },
@@ -131358,7 +131492,9 @@
      "author": "Albrecht Voß",
      "lat": 50.9925267,
      "lng": 13.7779183,
-     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2022-04-11 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche Kauscha Category:Photographs by Albrecht Voß Category:Stadtbildfotografie Dresden, Stadtteil: Lockwitz Category:Uploaded with pattypan Category:Zur Eiche, Dresden"
+     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2022-04-11 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche Kauscha Category:Photographs by Albrecht Voß Category:Stadtbildfotografie Dresden, Stadtteil: Lockwitz Category:Uploaded with pattypan Category:Zur Eiche, Dresden",
+     "judged": "reject",
+     "verdict": "Same Kauscha oak, bare and cropped at the crown; dre_025-1 approved instead"
     },
     {
      "title": "File:Dresden, Zur Eiche 3, 17.6.2.40-030441.jpg",
@@ -131378,7 +131514,9 @@
      "author": "Albrecht Voß",
      "lat": 50.9924574,
      "lng": 13.7782925,
-     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2022-04-11 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche Kauscha Category:Photographs by Albrecht Voß Category:Stadtbildfotografie Dresden, Stadtteil: Lockwitz Category:Uploaded with pattypan Category:Zur Eiche, Dresden"
+     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2022-04-11 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche Kauscha Category:Photographs by Albrecht Voß Category:Stadtbildfotografie Dresden, Stadtteil: Lockwitz Category:Uploaded with pattypan Category:Zur Eiche, Dresden",
+     "judged": "reject",
+     "verdict": "Same Kauscha oak bare with sun flare and a car in front; dre_025-1 approved instead"
     },
     {
      "title": "File:Naturdenkmal Stieleiche Kauscha.jpg",
@@ -131388,7 +131526,9 @@
      "author": "Derbrauni",
      "lat": 50.992734,
      "lng": 13.778385,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche Kauscha Category:Photographs by User:Derbrauni Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche Kauscha Category:Photographs by User:Derbrauni Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Massive spreading pedunculate oak on the Kauscha village square, stone at its foot as the story says; autumn leaf, daylight, fills frame; title names the Kauscha oak"
     }
    ]
   },
@@ -131573,7 +131713,9 @@
      "author": "Staubi59",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2017-05-12 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2017 Category:Images from Wiki Loves Earth 2017, DE-SN Category:Images from Wiki Loves Earth 2017 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Eiche am Brauteich Category:Quercus in Saxony in May 2017 Category:Quercus robur in the Northern Hemisphere in May 2017 Category:Self-published work Category:Uploaded via Campaign:wle-de-sn"
+     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2017-05-12 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2017 Category:Images from Wiki Loves Earth 2017, DE-SN Category:Images from Wiki Loves Earth 2017 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Eiche am Brauteich Category:Quercus in Saxony in May 2017 Category:Quercus robur in the Northern Hemisphere in May 2017 Category:Self-published work Category:Uploaded via Campaign:wle-de-sn",
+     "judged": "approve",
+     "verdict": "Broad open-grown oak in pasture beside the Brauteich (sibling file shows the pond at its trunk); fresh oak leaf, whole tree fills frame; title names it"
     },
     {
      "title": "File:Eiche am Brauteich Langebrueck (2).jpg",
@@ -131583,7 +131725,9 @@
      "author": "Staubi59",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2017-05-12 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2017 Category:Images from Wiki Loves Earth 2017, DE-SN Category:Images from Wiki Loves Earth 2017 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Eiche am Brauteich Category:Quercus in Saxony in May 2017 Category:Quercus robur in the Northern Hemisphere in May 2017 Category:Self-published work Category:Uploaded via Campaign:wle-de-sn"
+     "cats": "Category:CC-BY-SA-4.0 Category:Dresden photographs taken on 2017-05-12 Category:Files with coordinates missing SDC location of creation Category:Images from Wiki Loves Earth 2017 Category:Images from Wiki Loves Earth 2017, DE-SN Category:Images from Wiki Loves Earth 2017 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Naturdenkmal Eiche am Brauteich Category:Quercus in Saxony in May 2017 Category:Quercus robur in the Northern Hemisphere in May 2017 Category:Self-published work Category:Uploaded via Campaign:wle-de-sn",
+     "judged": "reject",
+     "verdict": "Trunk and lower limbs only, crown cut; dre_029-7 approved instead"
     }
    ]
   },
@@ -131601,7 +131745,9 @@
      "author": "Geri-oc",
      "lat": 51.0265709,
      "lng": 13.64964321,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Pesteiche Oberpesterwitz Category:Self-published work Category:September 2015 in Freital"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Pesteiche Oberpesterwitz Category:Self-published work Category:September 2015 in Freital",
+     "judged": "reject",
+     "verdict": "Same Pesteiche, white overcast sky, dull; dre_030-4 approved instead"
     },
     {
      "title": "File:Flächennaturdenkmal Pesterwitzer Weinberg.jpg",
@@ -131621,7 +131767,9 @@
      "author": "Dr. Bernd Gross",
      "lat": 51.02656246,
      "lng": 13.64965416,
-     "cats": "Category:2016 in Freital Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Germany photographs taken on 2016-05-06 Category:Images from Wiki Loves Earth 2016 Category:Images from Wiki Loves Earth 2016, DE-SN Category:Images from Wiki Loves Earth 2016 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Pesteiche Oberpesterwitz Category:Self-published work"
+     "cats": "Category:2016 in Freital Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Germany photographs taken on 2016-05-06 Category:Images from Wiki Loves Earth 2016 Category:Images from Wiki Loves Earth 2016, DE-SN Category:Images from Wiki Loves Earth 2016 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Pesteiche Oberpesterwitz Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Same Pesteiche portrait duplicate; dre_030-4 approved instead"
     },
     {
      "title": "File:Naturdenkmal Pesteiche Oberpesterwitz (2).JPG",
@@ -131631,7 +131779,9 @@
      "author": "Dr. Bernd Gross",
      "lat": 51.02650173,
      "lng": 13.64969708,
-     "cats": "Category:2016 in Freital Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Germany photographs taken on 2016-05-06 Category:Images from Wiki Loves Earth 2016 Category:Images from Wiki Loves Earth 2016, DE-SN Category:Images from Wiki Loves Earth 2016 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Pesteiche Oberpesterwitz Category:Self-published work"
+     "cats": "Category:2016 in Freital Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Germany photographs taken on 2016-05-06 Category:Images from Wiki Loves Earth 2016 Category:Images from Wiki Loves Earth 2016, DE-SN Category:Images from Wiki Loves Earth 2016 in Germany Category:Images from Wiki Loves Earth missing SDC location of creation Category:Pesteiche Oberpesterwitz Category:Self-published work",
+     "judged": "approve",
+     "verdict": "Pesteiche on the road bend at the village entrance, fence and lamp as described; spring leaf oak, blue sky, whole tree fills frame; title names it"
     },
     {
      "title": "File:Naturdenkmal Pesteiche Oberpesterwitz (3).JPG",
@@ -133640,7 +133790,9 @@
      "licence": "CC BY",
      "author": "(c) Ben Hayden, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "29.9216283333,-90.1289445"
+     "obs_location": "29.9216283333,-90.1289445",
+     "judged": "reject",
+     "verdict": "Moss-hung live oak with a modest trunk, not plausibly the 8.5 m Martha Washington; 104 m off"
     },
     {
      "title": "iNat obs 30957298 (Quercus virginiana)",
@@ -134245,7 +134397,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:2023 in Wals-Siezenheim Category:Austria photographs taken on 2023-09-11 Category:Buses in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Kasernenstraße (Wals-Siezenheim) Category:Media from WikiDaheim 2023 in Austria/Unspecified Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Media from WikiDaheim in Austria check done Category:Photographs of Bezirk Salzburg-Umgebung by Eweht Category:Roundabouts in Salzburg (state) Category:Self-published work Category:September 2023 in Salzburg (state) Category:Trolleybuses on route 2 in Salzburg Category:Uploaded via Campaign:WikiDaheim-at"
+     "cats": "Category:2023 in Wals-Siezenheim Category:Austria photographs taken on 2023-09-11 Category:Buses in Austria photographed in 2023 Category:CC-BY-SA-4.0 Category:Kasernenstraße (Wals-Siezenheim) Category:Media from WikiDaheim 2023 in Austria/Unspecified Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Media from WikiDaheim in Austria check done Category:Photographs of Bezirk Salzburg-Umgebung by Eweht Category:Roundabouts in Salzburg (state) Category:Self-published work Category:September 2023 in Salzburg (state) Category:Trolleybuses on route 2 in Salzburg Category:Uploaded via Campaign:WikiDaheim-at",
+     "judged": "reject",
+     "verdict": "Roundabout with bus, no pear tree"
     },
     {
      "title": "File:Wals-Siezenheim - Walserfeld - Kasernenstraße - 2023 09 11-7.jpg",
@@ -134255,7 +134409,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:2023 in Wals-Siezenheim Category:2023 in road transport in Salzburg (state) Category:Austria photographs taken on 2023-09-11 Category:Bus route 27 (Salzburg) Category:Bus stop signs in Salzburg (state) Category:CC-BY-SA-4.0 Category:Kasernenstraße (Wals-Siezenheim) Category:Media from WikiDaheim 2023 in Austria/Unspecified Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Media from WikiDaheim in Austria check done Category:Photographs of Bezirk Salzburg-Umgebung by Eweht Category:Schwarzenbergkaserne Category:Self-published work Category:September 2023 in Salzburg (state) Category:September 2023 in road transport in Austria Category:Signs in Wals-Siezenheim Category:Trolleybus route 10 (Salzburg) Category:Trolleybus route 2 (Salzburg) Category:Uploaded via Campaign:WikiDaheim-at"
+     "cats": "Category:2023 in Wals-Siezenheim Category:2023 in road transport in Salzburg (state) Category:Austria photographs taken on 2023-09-11 Category:Bus route 27 (Salzburg) Category:Bus stop signs in Salzburg (state) Category:CC-BY-SA-4.0 Category:Kasernenstraße (Wals-Siezenheim) Category:Media from WikiDaheim 2023 in Austria/Unspecified Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Media from WikiDaheim in Austria check done Category:Photographs of Bezirk Salzburg-Umgebung by Eweht Category:Schwarzenbergkaserne Category:Self-published work Category:September 2023 in Salzburg (state) Category:September 2023 in road transport in Austria Category:Signs in Wals-Siezenheim Category:Trolleybus route 10 (Salzburg) Category:Trolleybus route 2 (Salzburg) Category:Uploaded via Campaign:WikiDaheim-at",
+     "judged": "reject",
+     "verdict": "Kasernenstrasse street series, no pear tree subject"
     },
     {
      "title": "File:Wals-Siezenheim - Walserfeld - Schulzentrum Walserfeld - 2023 09 11.jpg",
@@ -134265,7 +134421,9 @@
      "author": "Eweht",
      "lat": null,
      "lng": null,
-     "cats": "Category:2023 in Wals-Siezenheim Category:Austria photographs taken on 2023-09-11 Category:Buildings in Austria photographed in 2023 Category:Buildings in Wals-Siezenheim Category:CC-BY-SA-4.0 Category:Media from WikiDaheim 2023 in Austria/Unspecified Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Media from WikiDaheim in Austria check done Category:Photographs of Bezirk Salzburg-Umgebung by Eweht Category:Schools in Salzburg (state) Category:Schulstraße (Wals-Siezenheim) Category:Self-published work Category:September 2023 in Salzburg (state) Category:Uploaded via Campaign:WikiDaheim-at"
+     "cats": "Category:2023 in Wals-Siezenheim Category:Austria photographs taken on 2023-09-11 Category:Buildings in Austria photographed in 2023 Category:Buildings in Wals-Siezenheim Category:CC-BY-SA-4.0 Category:Media from WikiDaheim 2023 in Austria/Unspecified Category:Media from WikiDaheim 2023 in Austria/all Category:Media from WikiDaheim 2023 in Austria not for prejury Category:Media from WikiDaheim in Austria check done Category:Photographs of Bezirk Salzburg-Umgebung by Eweht Category:Schools in Salzburg (state) Category:Schulstraße (Wals-Siezenheim) Category:Self-published work Category:September 2023 in Salzburg (state) Category:Uploaded via Campaign:WikiDaheim-at",
+     "judged": "reject",
+     "verdict": "School centre street view"
     },
     {
      "title": "File:Wals-Siezenheim - Walserfeld - Walserfeldhalle - 2023 09 11-2.jpg",
@@ -135305,7 +135463,7 @@
      "source": "inaturalist",
      "obs_location": "45.6462399532,13.7736130133",
      "judged": "reject",
-     "verdict": "Close-up of a hackberry seedling's leaves; no tree."
+     "verdict": "Seedling on a wall, not the tree"
     },
     {
      "title": "iNat obs 346847951 (Celtis australis)",
@@ -135360,7 +135518,9 @@
      "author": "Fulvio Bacchia",
      "lat": 45.704153,
      "lng": 13.713459,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Italy photographs taken on 2011-04-02 Category:Miramare Castle gardens Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Italy photographs taken on 2011-04-02 Category:Miramare Castle gardens Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Upward trunk shot; title names the headline redwood, not this second one"
     },
     {
      "title": "File:Castello di Miramare (Trieste) (7).jpg",
@@ -135418,7 +135578,9 @@
      "author": "Fulvio Bacchia",
      "lat": 45.705449,
      "lng": 13.714757,
-     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Italy photographs taken on 2010-03-24 Category:Miramare Castle gardens Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-SA-3.0 Category:Files with coordinates missing SDC location of creation Category:Italy photographs taken on 2010-03-24 Category:Miramare Castle gardens Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Sequoia file, not the Aleppo pine"
     },
     {
      "title": "File:Trieste - Castello di Miramare - Bagno Ducale - 2026-09-02 22-22-12 001.jpg",
@@ -135694,7 +135856,9 @@
      "author": "Wilrooij",
      "lat": 45.653964,
      "lng": 13.784173,
-     "cats": "Category:Aesculus hippocastanum in Italy Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Giardino pubblico Muzio de' Tommasini Category:Self-published work"
+     "cats": "Category:Aesculus hippocastanum in Italy Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Giardino pubblico Muzio de' Tommasini Category:Self-published work",
+     "judged": "reject",
+     "verdict": "Horse chestnut file, wrong tree"
     },
     {
      "title": "iNat obs 76141846 (Platanus × hispanica)",
@@ -136109,7 +136273,9 @@
      "author": "China Crisis",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0-NL Category:Hamburgerstraat 38, Utrecht Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-02 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-GF1"
+     "cats": "Category:CC-BY-SA-3.0-NL Category:Hamburgerstraat 38, Utrecht Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-02 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-GF1",
+     "judged": "reject",
+     "verdict": "House facade, no tree"
     },
     {
      "title": "File:Platanus orientalis, Abraham Dolehof Utrecht 02.jpg",
@@ -137698,7 +137864,9 @@
      "author": "Σ64",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-3.0 Category:Forests in Yakushima Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Canon EOS 300D"
+     "cats": "Category:CC-BY-3.0 Category:Forests in Yakushima Category:GFDL Category:License migration redundant Category:Self-published work Category:Taken with Canon EOS 300D",
+     "judged": "reject",
+     "verdict": "Forest view, no single cedar"
     },
     {
      "title": "File:Forest in Yakushima 80 (cropped).jpg",
@@ -137708,7 +137876,9 @@
      "author": "Σ64, cropped by Tmv",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-3.0 Category:Extracted images Category:Forests in Yakushima Category:GFDL Category:License migration redundant Category:Self-published work Category:Wikivoyage banners by Tmv Category:Wikivoyage banners of Japan Category:Wikivoyage banners of other destinations"
+     "cats": "Category:CC-BY-3.0 Category:Extracted images Category:Forests in Yakushima Category:GFDL Category:License migration redundant Category:Self-published work Category:Wikivoyage banners by Tmv Category:Wikivoyage banners of Japan Category:Wikivoyage banners of other destinations",
+     "judged": "reject",
+     "verdict": "Forest view, no single cedar"
     },
     {
      "title": "File:Forest on Yakushima from Route 592.jpg",
@@ -137718,7 +137888,9 @@
      "author": "Grendelkhan",
      "lat": 30.317,
      "lng": 130.609,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Forests in Yakushima Category:Japan photographs taken on 2018-04-23 Category:Overcast in Japan Category:Photos by Grendelkhan Category:Quality images Category:Quality images taken with mobile phones Category:Self-published work Category:Taken with Google Pixel XL Category:Uploaded with Mobile/Android Category:Uploaded with Mobile/Android (Nov 2017-Aug 2019)"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Forests in Yakushima Category:Japan photographs taken on 2018-04-23 Category:Overcast in Japan Category:Photos by Grendelkhan Category:Quality images Category:Quality images taken with mobile phones Category:Self-published work Category:Taken with Google Pixel XL Category:Uploaded with Mobile/Android Category:Uploaded with Mobile/Android (Nov 2017-Aug 2019)",
+     "judged": "reject",
+     "verdict": "Forest from a road 8 km off"
     }
    ]
   },
@@ -139048,7 +139220,9 @@
      "author": "StevenL",
      "lat": 52.014746,
      "lng": 4.360113,
-     "cats": "Category:CC-BY-SA-3.0 Category:Doelentuin, Delft Category:Netherlands photographs taken on 2009-11-24 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio"
+     "cats": "Category:CC-BY-SA-3.0 Category:Doelentuin, Delft Category:Netherlands photographs taken on 2009-11-24 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
+     "judged": "reject",
+     "verdict": "Blurry housing row, no tree subject"
     }
    ]
   },
