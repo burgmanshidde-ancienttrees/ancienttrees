@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 write pass: the John Peter Smith Oak live in Fort Worth (19 trees)
+
+- Live: ftw_020 John Peter Smith Oak, the 4.5 m Texas live oak on the Kimbell Art Museum's lawn on Darnell Street, named at the school district's 1982 centennial and listed by the city in 2009 (Gathering Growth: 13.7 m tall, crown about 28 m). Pin approximate (register point, not checked against imagery); the newest dated report is 2018, and the story says so and asks readers. No photograph yet, so Bing only. Fort Worth intro, meta and FAQ counts now say nineteen, and the Cultural District walk names it.
+- Held, with reasons in the research files: ftw_018 Memorial Bur Oak (the register never says the ground is public; the point is near the Trinity Trails path in Benbrook but nothing shows the pin itself is public). inn_007 Winterlinde unter dem Bergisel (the register pin falls on the building at Brennerstrasse 6f, likely a private yard; not written). fdl_001 is the live spa_001, a duplicate. std_001 Studena oak has no roadside viewing pin and one chain of sources.
+- Preflight 0 problems; qa.py not run (needs a site build).
+
 ## 2026-10-20 write pass: six Dutch register trees live, READY pile cleaned
 
 - Live: Roosendaal 16 to 20 trees, roo_022 Silver Maple behind the Library (5.25 m round, now the thickest tree on the page), roo_023 Black Locust of Emile van Loonpark (4.06 m), roo_024 Caucasian Wingnut of Emile van Loonpark (23 m), roo_025 Beech in the Path at Vrouwenhof (29 m, tallest on the page). Intro, meta and question copy recounted to twenty. New place Batenburg (Wijchen), two trees, no indexed place page under four: btb_001 Horse Chestnut of Batenburg Church (5.08 m, 26 m) and btb_002 Copper Beech of the St Victorkerk (5.10 m), pins confirmed from the register point on one crown in the PDOK frame. All six from the live LRMB layer, re-queried today (status 3; Batenburg inspected May 2026, Emile van Loonpark trees March 2023, said on each page). No photographs yet.

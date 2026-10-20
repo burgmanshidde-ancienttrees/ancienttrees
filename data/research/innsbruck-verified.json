@@ -190,6 +190,7 @@
   "location_precision": "approximate",
   "curation_status": "flagged",
   "verify_notes": "Wikipedia list: Winter-Linde 'ueber 100 Jahre alt' (older than 100 years at survey time, so the age floor is a source's word), more than 25 m high, next to a weeping willow. Only a 2016 Commons photo (lifecheck OLD): alive status thin, flag. Access unsettled: hold from the first batch unless a pass can open the plot. Designated 1937 (register id ND_101_9). Alive: register entry is active (revoked ND rows are listed separately in the Land Tirol data and the de.wikipedia list, which was edited in Sept 2025 to record the felled Blutbuche at the Landestheater, still carries this tree as current). No dated photo or news of this specific trunk seen in this pass; lifecheck's nearby iNaturalist hits were weeds, not the tree, so they prove nothing. Pin is the register point (digitised at 1:1000 to 1:5000), approximate; Wikipedia list gives a coordinate within about 25 m of it. Not checked against OSM (Overpass returns 406 here). ",
-  "height_m": 25
+  "height_m": 25,
+  "not_merged_reason": "Held 2026-10-20, not written: the register pin reverse-geocodes onto the building at Brennerstrasse 6f (Nominatim), so the lime likely stands in a private yard; no source says it is public or visible from the road. Floor is modest too (over 100 years, 25 m, no girth). Revisit with a girth and a confirmed public viewing point."
  }
 ]

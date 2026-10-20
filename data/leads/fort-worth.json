@@ -453,7 +453,7 @@
         "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
-      "status": "verified 2026-10-06, in data/research/fort-worth-verified.json",
+      "status": "verified 2026-10-06, held 2026-10-20: access unknown, see not_merged_reason in data/research/fort-worth-verified.json",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
@@ -469,7 +469,7 @@
         "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/Heritage_Trees_Test/FeatureServer/0"
       ],
       "source": "City of Fort Worth heritage trees layer (government; the service name says Test, so treat the list as the city's draft). Species is in PopupInfo text. Facts only.",
-      "status": "verified 2026-10-20, in data/research/fort-worth-verified.json",
+      "status": "published 2026-10-20 as ftw_020",
       "species_basis": "genus read from the tree's own name; ask the reader which species"
     },
     {
