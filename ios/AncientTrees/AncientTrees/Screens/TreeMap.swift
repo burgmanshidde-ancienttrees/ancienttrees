@@ -1652,22 +1652,22 @@ enum MapLayers {
             clearSpread(on: style)
             force = true
         }
-        // A QUARTER LEVEL, not a whole one (Hidde, 2026-10-20: "een 2 blijft
-        // een 2"). Recomputed only per whole zoom level, a pile built at 12.1
-        // stood until 13.0 while its trees drew apart to nearly twice the
-        // distance on screen: zooming in did nothing, and only a tap, which
-        // forces a pass, split it. One pass over the trees per quarter level
-        // costs nothing next to the pinch itself.
-        let bucket = clustered && zoom < clusterMaxZoom ? Int(floor(zoom * 4)) : 99
-        if !force && bucket == st.lastBucket && clustered == st.lastClustered { return }
-        // HYSTERESIS, or the pins blink out while you pan (Hidde, 2026-08-24:
-        // "de iconen verdwijnen als ik over de map scroll"). A pan wobbles the
-        // zoom by hundredths, and a wobble across a whole-number boundary used
-        // to count as a new bucket: rebuilding the source means removing the
-        // layers, writing a file and letting MapLibre load it, and for that
-        // moment there are no pins at all. A real zoom change moves far more
-        // than this; a pan never does.
-        if !force && bucket != 99 && abs(zoom - st.lastClusterZoom) < 0.15 { return }
+        // EVERY TIME THE CAMERA SETTLES AT A NEW ZOOM, which is MapKit's rule
+        // (CONVENTIONS.md, "How close two pins have to be", benchmarked
+        // 2026-10-20 after Hidde: "een 2 blijft een 2"). This is called from
+        // regionDidChange, so once per finished gesture, the moment Google's
+        // markerclusterer also regroups (its map "idle"). It used to regroup
+        // only per whole zoom level, as supercluster does, plus a 0.45 dead
+        // band: a pile built at 12.1 stood until 13.0 or later while its trees
+        // drew apart to nearly twice the distance on screen. Apple clusters
+        // pins that collide in the view you are looking at, so a pile parts
+        // the moment its pins would clear each other.
+        let bucket = clustered && zoom < clusterMaxZoom ? 0 : 99
+        // A pan wobbles the zoom by hundredths and moves no pin apart (Hidde,
+        // 2026-08-24: "de iconen verdwijnen als ik over de map scroll"), so a
+        // pan alone never regroups.
+        if !force && bucket == st.lastBucket && clustered == st.lastClustered
+            && (bucket == 99 || abs(zoom - st.lastClusterZoom) < 0.05) { return }
         st.lastBucket = bucket
         st.lastClustered = clustered
         st.lastClusterZoom = zoom

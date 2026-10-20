@@ -1221,7 +1221,30 @@ only asks whether two trees share a cell. Trees either side of a line became two
 piles a few points apart, and the map filled with bubbles stacked on bubbles
 (Hidde's screenshot of Soest and Leusden). supercluster and MapKit both measure
 the DISTANCE between pins; the app now does the same and repeats until no two
-piles are closer than 44 points.
+piles are closer than 40 points.
+
+**Benchmark, from the sources themselves (2026-10-20, Hidde: "benchmark dit
+eens, deze interactie hoeven we niet zelf uit te vinden").**
+
+| | supercluster (MapLibre, Mapbox) | Google markerclusterer | Apple MapKit | Our app |
+|---|---|---|---|---|
+| What piles | distance, radius 40 at a 512 tile (MapLibre source default 50) | supercluster, radius 60 | annotation views that collide on screen | distance, 40 points (pins are 38) |
+| Where the bubble sits | count-weighted centre | same | average of the members | count-weighted centre |
+| When it regroups | per WHOLE zoom level (`Math.floor(zoom)`) | on map idle, at `Math.round(zoom)` | at the view you are looking at | every time the camera settles at a new zoom |
+| Tap on a bubble | ease to `getClusterExpansionZoom`, the zoom where it parts | `fitBounds` to the cluster | apps call `showAnnotations` on the members | zoom to where the members part; one spot spreads |
+| Stops piling | `clusterMaxZoom` 14 in MapLibre's example | `maxZoom` | never | zoom 15 |
+
+The two web libraries regroup only per whole zoom level, so inside a level a
+pile stays a pile while its pins drift apart; MapKit has no levels and parts a
+pile as soon as its pins would clear. An iPhone app answers to MapKit, so the
+app regroups on every settled zoom (Hidde saw the whole-level version as "een 2
+blijft een 2"). Read 2026-10-20:
+- https://github.com/mapbox/supercluster/blob/main/index.js (`_limitZoom`, `getClusterExpansionZoom`)
+- https://maplibre.org/maplibre-gl-js/docs/examples/create-and-style-clusters/
+- https://github.com/googlemaps/js-markerclusterer/blob/main/src/markerclusterer.ts (`defaultOnClusterClickHandler`, `idle`)
+- https://github.com/googlemaps/js-markerclusterer/blob/main/src/algorithms/supercluster.ts
+- https://developer.apple.com/documentation/mapkit/mkclusterannotation
+- https://developer.apple.com/documentation/mapkitjs/clustering-annotations
 
 Read 2026-08-29, after Hidde saw two trees a couple of streets apart in Baarn
 drawn as a bubble marked 2:
