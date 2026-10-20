@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 side session: press round 3 drafted, twenty regional desks
+
+- **For Hidde to read:** drafts/batch-press-regional-2026-10-20-preview.md, ten mails to regional desks in roster cities (New York, Edinburgh, Glasgow, Los Angeles, Austin, Liverpool, Guerneville, Monterey, Portland, Frankfurt in German), each on one sourced fact from a tree page with an approved photo. Nothing sent; status drafted, your word goes into approved_word. mailcheck clean, every link checked live.
+- Twenty desks hand-found from the papers' own contact pages, all new to the database (press ready 271 to 291), in the private contacts file; the ten without a mail wait for round 4 after tomorrow's readout of rounds 1 and 2. Details and the why-this-desk per city in drafts/OUTREACH.md (private).
+- Judgement calls: Frankfurt is the only German city on the roster with a photo and real impressions; Sequoia National Park skipped (no city desk); where the paper of record blocks fetches or lists no newsroom address, the public-radio web desk stands in (LAist, KUT, WBUR, KUOW, WHYY).
+
 ## 2026-10-20 session with Hidde: tapping a pin shows the tree instead of leaving the map
 - **App and website, every city map.** A tapped pin grows and the tree comes up in place, as in Apple Maps (recorded in the simulator) and Airbnb (Hidde's screenshot). In the app (Map tab, a city's map, My trees) and on a phone's website the sheet's top becomes one row: share, the name with species and age, a cross; the tree's photograph under it opens the tree page. On a computer the tree's card floats beside the pin with save and a cross. The cross, a swipe down, or a tap on the map gives the list back. Approved by Hidde after five rendered rounds. App: next build; website: live with this deploy.
 - Fixed with it: the app's map count read "No trees in view" after letting a tree go.
