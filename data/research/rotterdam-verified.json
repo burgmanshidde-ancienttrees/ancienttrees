@@ -1,0 +1,36 @@
+[
+ {
+  "id": "rot_017",
+  "name": "The Wilhelmina Chestnut of Noordereiland",
+  "species": "Horse Chestnut (Aesculus hippocastanum)",
+  "age_estimate": "roughly 130 to 150 years",
+  "age_min": 125,
+  "age_max": 155,
+  "girth_cm": 390,
+  "height_m": 21,
+  "location": {
+   "address": "Burgemeester Hoffmanplein, corner of Van der Takstraat, Noordereiland, Rotterdam",
+   "latitude": 51.914017,
+   "longitude": 4.49587,
+   "neighbourhood": "Noordereiland"
+  },
+  "verified_sources": [
+   "https://noordereiland.org/2026/twee-verhalen-een-kastanje/",
+   "https://noordereiland.org/2022/bijzondere-bomen-op-het-noordereiland/",
+   "https://nl.wikipedia.org/wiki/Wilhelminafontein_(Rotterdam)"
+  ],
+  "official_register": {
+   "name": "Landelijk Register Monumentale Bomen (Bomenstichting), nr 1691895",
+   "url": "https://www.monumentalebomen.nl/"
+  },
+  "access": "Free, open public square (Burgemeester Hoffmanplein) on Noordereiland; no hours.",
+  "transport": "Noordereiland is reached over the Koninginnebrug from Rotterdam Centrum; walking time from the nearest metro stop not verified.",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Burgemeester Hoffmanplein (small square with the Wilhelmina fountain)",
+   "radius_m": 50
+  },
+  "curation_status": "flagged",
+  "verify_notes": "Alive per noordereiland.org, 26 June 2026 (updated 30 Sept 2026): the chestnut stands but is in poor health (chestnut bleeding canker plus two life-threatening fungi on the trunk); a large main branch broke off some years ago and was saved by tree surgeons; expected to become a safety risk and be removed 'in a few years'. Not yet removed. Girth 'almost 4 m', height 18-24 m (noordereiland.org, citing tree knight Pim Janse; same figures on the 2022 page). Age disputed: register planted_band 1880-1890 and register history 'planted 1898 for Wilhelmina's accession'; noordereiland.org 2026 says planted 1889 for the inauguration; noordereiland.org 2022 says 'from 1870'; nl.wikipedia says probably planted 1898 with the fountain. Wilhelmina was inaugurated in 1898, so 1889 reads as a typo. Derived age is broad, from the register band plus the 1898 claim; not sharpened. WWII story (register and noordereiland.org agree): known to resistance people as the 'dubbele paardenkastanje' (double chestnut), a Wilhelmina tree residents guarded as a quiet act of resistance; a second story told that it grew on ground where the dead were buried so better not cut; elders in the 1970s said 'come back when it flowers, then you see two flowers'; survived the fighting around Noordereiland and the Maas bridges and the Hunger Winter when trees were felled for fuel; a tale says someone tried to fell it and gave up after one branch. Its roots cracked the Wilhelmina fountain (Evers design, 1898) in the early 1990s; fountain removed, restored and replaced a century after the inauguration (nl.wikipedia). Flowers April-May (noordereiland.org). A second chestnut on the same square opposite the Lelieblok, planted 1920, girth almost 3 m, height 15-18 m, good health, is the SMALLER one; the subject is the larger one at the corner of Van der Takstraat beside the fountain. Pin: register coordinate (nr 1691895, n_trees 1), not checked on aerial imagery; OSM natural=tree nodes on the square carry no species, so approximate. Covered-country rule (NL): no photo and no confirmed pin, so strictly a lead; delivered as flagged for the orchestrator's gate. Commons geosearch within 100 m found no tree photo; lifecheck NONE."
+ }
+]

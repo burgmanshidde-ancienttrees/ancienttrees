@@ -4,10 +4,10 @@
   "status": "needs_curation",
   "oldest_tree_id": "rot_001",
   "intro": "Rotterdam's old trees are survivors first and monuments second. The German bombing of May 1940 erased most of the city centre in a single night, and the soft, subsiding soil across much of the region shortens most trees' working lives regardless of what happens above ground; the city has barely 3,000 monumental trees against 600,000 total. What remains earned its place the hard way: a plane that predates the park built around it, another that survived the exact firestorm that flattened everything nearby, a coronation linden, a beech that watched the shipping elite build their street.",
-  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. 16 verified locations.",
+  "meta_description": "Rotterdam's oldest trees survived what the city itself often didn't: the 1940 bombing, the 1953 flood, a canal redesign. 15 verified locations.",
   "question_answer": "Rotterdam's oldest tree is the Plane of het Park, standing since around 1800, before landscape architects Jan David and Louis Paul Zocher designed the park around it in 1852. At roughly 226 years old, it has survived both the 1940 bombing that destroyed much of the city centre and the 1953 flood that put het Park itself underwater.",
-  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus fifteen more.",
-  "question_context": "Rotterdam's tree ages tell a story most Dutch cities don't have to tell: almost everything old here either predates the 20th century's two great disasters or was planted afterward to replace what didn't survive them. The Park Plane and the Breitenbach Plane both cleared the German bombing of 14 May 1940 that flattened the historic centre a short walk from each of them, and the Park Plane cleared a second disaster besides, the 1953 flood that put much of the park underwater for weeks. That double survival is the actual basis for calling it Rotterdam's oldest confirmed tree rather than simply its most storied one; several other candidates are old enough to be plausible rivals but lack a comparably documented history reaching back before 1900. The Westersingel Plane, the Wilhelmina Linden and the Koningin Emmaplein Beech are all younger by a wide enough margin, planted within a few decades of each other in the 1890s, that the ranking among Rotterdam's oldest three genuinely rests on the two 19th-century-or-earlier planes rather than any of the turn-of-the-century additions.",
+  "question_meta": "A plane tree older than the park around it, standing since 1800, survived the 1940 bombing and the 1953 flood. Rotterdam's oldest, plus fourteen more.",
+  "question_context": "Rotterdam's tree ages tell a story most Dutch cities don't have to tell: almost everything old here either predates the 20th century's two great disasters or was planted afterward to replace what didn't survive them. The Park Plane and the Breitenbach Plane both cleared the German bombing of 14 May 1940 that flattened the historic centre a short walk from each of them, and the Park Plane cleared a second disaster besides, the 1953 flood that put much of the park underwater for weeks. That double survival is the actual basis for calling it Rotterdam's oldest confirmed tree rather than simply its most storied one; several other candidates are old enough to be plausible rivals but lack a comparably documented history reaching back before 1900. The Wilhelmina Linden and the Koningin Emmaplein Beech are both younger by a wide enough margin, planted within a few decades of each other in the 1890s, that the ranking among Rotterdam's oldest three genuinely rests on the two 19th-century-or-earlier planes rather than any of the turn-of-the-century additions.",
   "faq": [
     {
       "q": "What is the oldest tree in Rotterdam?",
@@ -94,36 +94,6 @@
         "name": "Landelijk Register van Monumentale Bomen (Bomenstichting), no. 1684847",
         "url": null
       }
-    },
-    {
-      "id": "rot_003",
-      "name": "The Westersingel Plane",
-      "species": "London Plane (Platanus x acerifolia)",
-      "age_estimate": "about 130 years",
-      "age_min": 125,
-      "age_max": 135,
-      "location": {
-        "address": "Westersingel, moved from the west to the east side of the canal in the 1960s",
-        "latitude": 51.9134174,
-        "longitude": 4.4755315,
-        "neighbourhood": "Dijkzigt"
-      },
-      "story": "Moving a mature tree across a street sounds like a euphemism for felling it and planting a new one, but Rotterdam actually did it: sometime in the 1960s, engineers transplanted this plane tree bodily from the west side of the Westersingel canal to the east side, roots and all, rather than lose it to whatever roadworks or redesign prompted the move. It survived the operation and kept growing, now roughly 130 years old and widely considered one of Rotterdam's most impressive individual trees, a status confirmed in 2021 when it placed second in the Netherlands' national Tree of the Year competition, a public vote that draws entries from across the country. The achievement is not really about beauty or age alone. Rotterdam has fewer monumental trees than almost any comparable Dutch city, a direct consequence of the 1940 bombing that flattened its historic centre and the soft, subsiding soil across much of the region that shortens most trees' working lives regardless of what happens above ground. A plane tree that not only reached this size but survived being dug up and relocated says something about the species' famous toughness along waterways, and about a city that has had unusually good reason to fight for the few old trees it has left.",
-      "verified_sources": [
-        "https://www.rijnmond.nl/nieuws/198634/waarom-staan-er-zo-weinig-monumentale-bomen-in-rotterdam",
-        "https://www.monumentaltrees.com/nl/nld/zuidholland/rotterdam/"
-      ],
-      "access": "Free, public street at any time",
-      "transport": "Walkable from central Rotterdam, roughly 10 minutes",
-      "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
-      },
-      "curation_status": "ai_generated",
-      "location_precision": "approximate",
-      "how_to_recognise": "You can recognise it as the one that was dug up and moved: it grew on the west side of the Westersingel until the 1960s. It stands on the east bank now, and came second in the 2021 national Tree of the Year vote."
     },
     {
       "id": "rot_004",

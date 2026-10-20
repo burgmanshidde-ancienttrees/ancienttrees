@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 (second attempt in the window)
+- No product change; no new trees. Rotterdam deepen pass (verify, ~93k tokens): 1 flagged candidate, rot_017 Wilhelmina Chestnut (Noordereiland; cankered, expected to go within years, no photo, approximate pin), left in data/research as research, not written (under the six-candidate minimum). 2 blocked (felled elm, private garden), 3 leads kept in data/leads/rotterdam.json.
+- Fixed a published duplicate: rot_002 and rot_003 were the same Breytenbach plane on one pin. Kept rot_002, retired rot_003 (redirect added), fixed the city's meta, question_meta and question_context counts (15). The 2021 Tree of the Year runner-up and 1960s move facts from rot_003 are not yet on rot_002. The register places the tree about 600 m north of our pin (51.9192, 4.4720); not moved, pin evidence needed. See data/research/rotterdam-corrections.json.
+- Shelf: the 2 READY leads are reader sightings; ftw_018, std_001, inn_007 stay held for access reasons (see earlier entries). Portland and Munich are full. Rotterdam is a 48h wall.
+
 ## 2026-10-20 retry attempt: 1 tree live
 
 - New place Thalmassing, one tree (thm_001): St. Wolfgang's Oak, 9.80 m round, a Nationalerbe-Baum, 15 km from Regensburg. The story was already written; it went into its own one-tree place file because it is not part of Regensburg's walk (same shape as Eisolzried). No photograph yet; the Commons candidate is in its verify_notes for a photo pass.
