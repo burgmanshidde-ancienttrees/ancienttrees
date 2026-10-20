@@ -54,6 +54,9 @@ public final class Profiles {
     /// its own rather than in the profile select, so a database without the
     /// column yet costs the flag and never the name.
     public private(set) var myCountry: String?
+    /// You chose "Don't show" (profiles.flag_hidden, 2026-10-20), so the
+    /// default flag never comes back. False until the server says otherwise.
+    public private(set) var myFlagHidden = false
     /// Other people's badges, by user id, filled as lists load.
     public private(set) var placesByUser: [String: [Ambassador]] = [:]
     /// Whether your profile is open to anybody (profiles.public, 2026-10-19;
@@ -162,8 +165,22 @@ public final class Profiles {
             myPlaces = rows
             placesByUser[userId] = rows
         }
+        // Unchosen, your flag is the phone's region (Hidde, 2026-10-20: "bij
+        // polarsteps heb ik de vlag zonder ooit actief nederland te hebben
+        // aangevinkt"), written once to a profile row that exists. A database
+        // without flag_hidden yet reads the country alone and fills nothing.
+        struct FlagRow: Decodable { let country: String?; let flag_hidden: Bool }
         struct CountryRow: Decodable { let country: String? }
         if let data = try? await send(request(
+            "profiles?select=country,flag_hidden&user_id=eq.\(userId)", "GET", token: token)),
+           let rows = try? JSONDecoder().decode([FlagRow].self, from: data) {
+            myCountry = rows.first?.country
+            myFlagHidden = rows.first?.flag_hidden ?? false
+            if rows.first != nil, myCountry == nil, !myFlagHidden, let token,
+               let guess = Self.countryGuess() {
+                _ = await saveCountry(guess, userId: userId, token: token)
+            }
+        } else if let data = try? await send(request(
             "profiles?select=country&user_id=eq.\(userId)", "GET", token: token)),
            let rows = try? JSONDecoder().decode([CountryRow].self, from: data) {
             myCountry = rows.first?.country
@@ -196,6 +213,7 @@ public final class Profiles {
         following = 0
         myPlaces = []
         myCountry = nil
+        myFlagHidden = false
         myPublic = nil
     }
 
@@ -335,15 +353,30 @@ public final class Profiles {
         me?.units = units
     }
 
-    /// Your country, or nil to show no flag. Its own call, like units, so it
-    /// never rewrites a name and a picture. Returns whether the server took it.
+    /// Your country, or nil for "Don't show", which is remembered so the
+    /// default never returns. Its own call, like units, so it never rewrites a
+    /// name and a picture. Returns whether the server took it.
     public func saveCountry(_ code: String?, userId: String, token: String) async -> Bool {
-        struct Row: Encodable { let user_id: String; let country: String? }
-        let body = try? JSONEncoder().encode([Row(user_id: userId, country: code)])
-        let ok = (try? await send(request("profiles?on_conflict=user_id", "POST", token: token,
+        struct Row: Encodable { let user_id: String; let country: String?; let flag_hidden: Bool }
+        struct Plain: Encodable { let user_id: String; let country: String? }
+        let body = try? JSONEncoder().encode([Row(user_id: userId, country: code, flag_hidden: code == nil)])
+        var ok = (try? await send(request("profiles?on_conflict=user_id", "POST", token: token,
                                           body: body, prefer: "resolution=merge-duplicates"))) != nil
-        if ok { myCountry = code }
+        if !ok {
+            // A database without flag_hidden yet: the country alone.
+            let plain = try? JSONEncoder().encode([Plain(user_id: userId, country: code)])
+            ok = (try? await send(request("profiles?on_conflict=user_id", "POST", token: token,
+                                          body: plain, prefer: "resolution=merge-duplicates"))) != nil
+        }
+        if ok { myCountry = code; myFlagHidden = code == nil }
         return ok
+    }
+
+    /// Where the phone says you are: Settings, General, Language & Region.
+    public static func countryGuess() -> String? {
+        guard let code = Locale.current.region?.identifier, code.count == 2,
+              Locale.Region.isoRegions.contains(where: { $0.identifier == code }) else { return nil }
+        return code
     }
 
     /// The Public profile switch: `on` makes the

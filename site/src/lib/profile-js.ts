@@ -93,11 +93,10 @@ export const PROFILE_JS = `
         early(token, u);
         // YOUR FLAG (profiles.country, 2026-10-16), read on its own so a
         // database without the column yet costs the flag and never the name.
-        fetch(SB + '/rest/v1/profiles?select=country&user_id=eq.' + encodeURIComponent(u.id),
-              { headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token } })
-          .then(function(r) { return r.ok ? r.json() : null; })
-          .then(function(rows) {
-            var c = rows && rows[0] && rows[0].country;
+        // Unchosen, it is the country you appear to be in (countries.ts).
+        if (window.atSettleCountry) window.atSettleCountry(SB, KEY, token, u.id)
+          .then(function(s) {
+            var c = s.country;
             var img = el('in-flag');
             if (!img || !c || !/^[A-Z]{2}$/.test(c)) return;
             img.src = '/flags/' + c.toLowerCase() + '.svg';

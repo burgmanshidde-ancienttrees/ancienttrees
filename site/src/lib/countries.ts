@@ -34,3 +34,50 @@ export function countryOptions(): { code: string; name: string }[] {
 }
 
 export const flagUrl = (code: string) => `/flags/${code.toLowerCase()}.svg`;
+
+// A FLAG BY DEFAULT (Hidde, 2026-10-20: "bij polarsteps heb ik de vlag zonder
+// ooit actief nederland te hebben aangevinkt"). Until you choose, your flag is
+// the country you appear to be in; "Don't show" at the top of the picker turns
+// it off for good (profiles.flag_hidden, supabase/profiles.sql). The app reads
+// the phone's region; the website reads the computer's time zone, because a
+// browser's language says nothing reliable (many Dutch browsers run en-US).
+// Only a profile row that exists is written: a row needs a name first.
+//
+// window.atCountryGuess() -> "NL" or ""; window.atSettleCountry(sb, key, token,
+// uid) -> Promise of { country, hidden, guess }, writing the guess once.
+// tz-country.json is the system zone.tab (time zone -> ISO country).
+import TZ_COUNTRY from "./tz-country.json";
+
+export const COUNTRY_JS = `
+<script>
+(function() {
+  var TZ = ${JSON.stringify(TZ_COUNTRY)};
+  window.atCountryGuess = function() {
+    try { return TZ[Intl.DateTimeFormat().resolvedOptions().timeZone] || ''; } catch (e) { return ''; }
+  };
+  window.atSettleCountry = function(SB, KEY, token, uid) {
+    var h = { 'apikey': KEY, 'Authorization': 'Bearer ' + token };
+    var guess = window.atCountryGuess();
+    function plain() {
+      // A database without flag_hidden yet: the flag as stored, no default.
+      return fetch(SB + '/rest/v1/profiles?select=country&user_id=eq.' + encodeURIComponent(uid), { headers: h })
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(rows) { return { country: (rows && rows[0] && rows[0].country) || '', hidden: false, guess: '' }; });
+    }
+    return fetch(SB + '/rest/v1/profiles?select=country,flag_hidden&user_id=eq.' + encodeURIComponent(uid), { headers: h })
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(rows) {
+        if (!rows) return plain();
+        var row = rows[0];
+        if (!row) return { country: '', hidden: false, guess: guess };
+        if (row.country) return { country: row.country, hidden: false, guess: guess };
+        if (row.flag_hidden || !guess) return { country: '', hidden: !!row.flag_hidden, guess: guess };
+        return fetch(SB + '/rest/v1/profiles?user_id=eq.' + encodeURIComponent(uid), {
+          method: 'PATCH',
+          headers: { 'apikey': KEY, 'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ country: guess })
+        }).then(function(r) { return { country: r.ok ? guess : '', hidden: false, guess: guess }; });
+      }).catch(function() { return { country: '', hidden: false, guess: '' }; });
+  };
+})();
+</script>`;

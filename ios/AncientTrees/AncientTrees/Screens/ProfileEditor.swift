@@ -78,7 +78,7 @@ struct ProfileEditor: View {
                 // long choice: a row that opens a list (Language & Region).
                 Section {
                     Picker("Country", selection: $country) {
-                        Text("None").tag(String?.none)
+                        Text("Don't show").tag(String?.none)
                         ForEach(Self.countries, id: \.code) { c in
                             Text(Self.row(c)).tag(Optional(c.code))
                         }
@@ -88,7 +88,7 @@ struct ProfileEditor: View {
                 } header: {
                     Text("Your country")
                 } footer: {
-                    Text("Optional. Its flag shows after your name.")
+                    Text("Its flag shows after your name.")
                 }
 
                 if failed {
@@ -115,7 +115,10 @@ struct ProfileEditor: View {
             }
             .task {
                 name = profiles.me?.display_name ?? ""
+                // Unchosen and no row yet: the phone's region, stored with
+                // the first Save. "Don't show" stays as chosen.
                 country = profiles.myCountry
+                    ?? (profiles.myFlagHidden ? nil : Profiles.countryGuess())
             }
             .onChange(of: picked) { _, item in
                 guard let item else { return }
@@ -153,7 +156,7 @@ struct ProfileEditor: View {
             var ok = await profiles.save(name: name.trimmingCharacters(in: .whitespaces),
                                          avatarURL: url, userId: s.userId, token: token)
             var countryFailed = false
-            if ok, country != profiles.myCountry {
+            if ok, country != profiles.myCountry || (country == nil && !profiles.myFlagHidden) {
                 ok = await profiles.saveCountry(country, userId: s.userId, token: token)
                 countryFailed = !ok
             }
