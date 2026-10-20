@@ -1490,7 +1490,14 @@ enum MapLayers {
     /// would touch become one bubble and two that would not stay two. It was
     /// 60, which is a thumb rather than a pin, and it piled up trees that were
     /// comfortably far apart on screen.
-    private static let clusterCellPoints = 44.0
+    ///
+    /// 40 since 2026-10-20, when the grid became a distance (see piles()):
+    /// a grid cell of 44 only piled trees that shared a cell, a radius of 44
+    /// piles everything within 44 in any direction, which is more, and Hidde
+    /// felt it at once ("ik heb het idee dat die nu te snel clustert"). 40 is
+    /// supercluster's own default, and two 38 point pins whose centres are 40
+    /// apart just clear each other.
+    private static let clusterCellPoints = 40.0
     /// And past this nothing piles up at all. Left at 15 deliberately: raising
     /// it makes pins cluster for LONGER, which is the opposite of what was
     /// asked, and lowering it drops a whole city's worth of overlapping pins on
@@ -1645,7 +1652,13 @@ enum MapLayers {
             clearSpread(on: style)
             force = true
         }
-        let bucket = clustered && zoom < clusterMaxZoom ? Int(floor(zoom)) : 99
+        // A QUARTER LEVEL, not a whole one (Hidde, 2026-10-20: "een 2 blijft
+        // een 2"). Recomputed only per whole zoom level, a pile built at 12.1
+        // stood until 13.0 while its trees drew apart to nearly twice the
+        // distance on screen: zooming in did nothing, and only a tap, which
+        // forces a pass, split it. One pass over the trees per quarter level
+        // costs nothing next to the pinch itself.
+        let bucket = clustered && zoom < clusterMaxZoom ? Int(floor(zoom * 4)) : 99
         if !force && bucket == st.lastBucket && clustered == st.lastClustered { return }
         // HYSTERESIS, or the pins blink out while you pan (Hidde, 2026-08-24:
         // "de iconen verdwijnen als ik over de map scroll"). A pan wobbles the
@@ -1654,7 +1667,7 @@ enum MapLayers {
         // layers, writing a file and letting MapLibre load it, and for that
         // moment there are no pins at all. A real zoom change moves far more
         // than this; a pan never does.
-        if !force && bucket != 99 && abs(zoom - st.lastClusterZoom) < 0.45 { return }
+        if !force && bucket != 99 && abs(zoom - st.lastClusterZoom) < 0.15 { return }
         st.lastBucket = bucket
         st.lastClustered = clustered
         st.lastClusterZoom = zoom
