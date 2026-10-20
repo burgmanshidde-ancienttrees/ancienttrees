@@ -287,10 +287,14 @@
       "access": "Free. Stands at a road junction on the way to the village cemetery, on public ground as far as the register wording shows ('an der Abzweigung der Hauptstrasse zum Friedhof'); not checked against OSM tags.",
       "transport": "About 15 km north of Bamberg. Regional bus from Bamberg ZOB to the Schesslitz Kilianskirche stop, roughly 25 minutes (line 969 in the 2024 VGN timetable; check the current one), then on foot to the junction of the Hauptstrasse and the road to the cemetery.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Kilianseiche_-_panoramio.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Immanuel Giel, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-20",
+        "width": 1971,
+        "height": 1851
       },
       "curation_status": "flagged",
       "location_precision": "confirmed",
@@ -368,10 +372,13 @@
       "age_min": null,
       "age_max": null,
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/ND_Linde_bei_Unterhaid.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Stephan van Helden, via Wikimedia Commons",
+        "status": "held",
+        "note": "A lime beside a wayside cross; our register entry describes a tree in a tree field and says nothing of a cross, so it could be another trunk.",
+        "width": 4000,
+        "height": 6000
       },
       "photos": []
     },
@@ -404,10 +411,14 @@
       "age_min": null,
       "age_max": null,
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/ND-03734_Linde_in_P%C3%B6deldorf.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Stephan van Helden, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-20",
+        "width": 3019,
+        "height": 3402
       },
       "photos": []
     }
