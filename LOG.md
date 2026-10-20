@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 07:00 run
+
+- Rung 1: Freiburg beech (ed90210d) photo still not on this runner, verdict stays open.
+- Bamberg verify pass (claimed, 107k tokens): 3 register-only Naturdenkmal trees (bam_007 maple, bam_008 and bam_009 lindens) in data/research/bamberg-verified.json, all with CC BY-SA photographs, none with girth, age or a story, so remarkability is weak ("protected is not a reason"). Not written or merged; claim stays until a writer decides. 3 more leads added to data/leads/bamberg.json. Nothing new is live.
+
 ## 2026-10-20 05:20 run
 
 - Stuttgart: 2 trees live (Wilhelma sequoia grove, Wilhelma ginkgo; both paid entry, no photo, grove pin approximate). City copy corrected (not all free any more) and the German overlay updated. Preflight 0 problems. stu_011 was a duplicate of stu_007, dropped.

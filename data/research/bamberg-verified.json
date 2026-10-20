@@ -21,5 +21,81 @@
     "verify_notes": "Register only, one source (Bavarian LfU point layer ND-03526 plus the Landkreis ordinance reproduced on de.wikipedia). The register gives NO species, girth, height or age: 'Kilianseiche' means 'Kilian's oak' so oak is inferred from the name only, not from a record; call it an oak and leave the species a question for readers. Alive: weak. lifecheck returned RECENT 2025-01-06 but that match was a beer-glass photograph 16 m away, not the tree, so it proves nothing; the only tree image is an old Panoramio upload on Commons. Page should say the register lists it and ask readers to confirm it stands. Pin is the register's tree-level point and a geotagged Commons photograph sits 16 m from it, so confirmed is defensible but not checked against aerial imagery. Photograph in reach (Commons category). Why it is worth a stop: it is one of the few named (not just numbered) monuments in the district, named for Saint Kilian, the patron of Schesslitz's parish church (the church's St. Kilian dedication is visible in nearby Commons file names; no tree history sourced, writer must not invent one). Same ordinance also lists no. 62 'Eiche' at the Demmelsdorfer Strasse / Altenbach junction (49.97416, 11.03862, Flurstueck 536), about 300 m away, a plain unnamed oak, not delivered.",
     "story": "Most protected trees in the Bamberg district get a number. This one got a name. The district's 2009 ordinance lists natural monument 61 as the Kilianseiche, Kilian's oak, standing where the Hauptstrasse in Schesslitz turns off toward the cemetery. A plain oak a few hundred metres away, number 62, is listed simply as an oak.\n\nThe name is nearly all the register gives. It records no species, no girth, no height and no age, so even calling this an oak rests on the name rather than on a survey. Which oak it is, and how old, are questions this page cannot answer yet.\n\nThe name does point somewhere. The parish church in Schesslitz is dedicated to Saint Kilian, and the bus from Bamberg stops at a halt called Kilianskirche. Whether the tree was named for the church, or for some older reason, no source we have found says, so we will not invent a story for it.\n\nThen the caveat that matters most. The only photograph of the tree we can find is an old upload to the Panoramio photo site, taken sixteen metres from the register's point, and there is nothing recent. The ordinance still protects it, but we cannot show you dated proof that it stands.\n\nSchesslitz is about fifteen kilometres north of Bamberg, roughly twenty-five minutes on the regional bus. If you make the trip, tell us whether Kilian's oak is still at its junction, and if you know your oaks, which kind it is.",
     "how_to_recognise": "You can recognise it by where it stands: at the junction where the Hauptstrasse in Schesslitz turns off toward the cemetery, near the Ziegelmuehle. An unnamed protected oak stands 300 metres away on the Demmelsdorfer Strasse."
+  },
+  {
+    "id": "bam_007",
+    "name": "The Maple of Dörfleins",
+    "species": "Maple (Acer sp.)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "Field north of Dörfleins, Fl.Nr. 4050, Gemarkung Hallstadt",
+      "latitude": 49.93639,
+      "longitude": 10.86391,
+      "neighbourhood": "Dörfleins (Hallstadt)"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Bamberg (reproduces Landkreis Bamberg register: ND-06940, 'Ahorn nördlich von Dörfleins', Fl.Nr. 4050, schutzgrund quoted)",
+      "https://www.landkreis-bamberg.de/loadDocument.phtml?ObjSvrID=1633&ObjID=4084&ObjLa=1&Ext=PDF (Verordnung über das Naturdenkmal Ahorn nördlich von Dörfleins, 30 April 2010; fetched and read: protects the maple on Fl.Nr. 4050, 10 m surrounding zone)",
+      "https://commons.wikimedia.org/wiki/Category:Ahorn_n%C3%B6rdlich_von_D%C3%B6rfleins (ten geotagged photographs by Stephan van Helden, 17 Feb 2024, CC BY-SA 4.0)"
+    ],
+    "official_register": {
+      "name": "Bayerisches Landesamt für Umwelt Naturdenkmal ND-06940 / Landkreis Bamberg ordinance 2010",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Bamberg"
+    },
+    "access": "Not stated by a source. Stands on a field parcel north of the village; no access tags checked (Overpass unreachable). Viewable from the field edge as far as the 2024 photographs show; unverified whether a footpath reaches it.",
+    "transport": "Dörfleins is part of Hallstadt, about 7 km north of Bamberg centre. Bus timetable not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register plus ordinance (one official source, owner of the ground's regulator) plus 10 Commons photographs dated Feb 2024, so alive as of 2024-02-17. Register point 49.93652,10.86397; photographer GPS fixes cluster at 49.93637-49.93642, 10.86374-10.86391, within about 15 m of it, so the pin is confirmed by GPS at the tree. Ordinance names only 'Ahorn' (genus Acer), no girth, height or age; species left as a question for readers. Official protection reason, quoted from the Wikipedia list's Schutzgrund column: the tree 'bereichert und prägt durch seine Schönheit und Dominanz das Ortsbild' (enriches and shapes the village scene by its beauty and dominance). Ordinance sets a 10 m protected zone around it. Photograph in reach: Commons category above (Stephan van Helden, CC BY-SA 4.0, user Plozessor). Another register oak (ND-04404, Kilianstraße cul-de-sac, already a lead) stands about 700 m away in the same village, but is not a delivered tree. Not a spectacular-age claim: do not call it old. The register has no vitality field; 2024 photographs are the life evidence."
+  },
+  {
+    "id": "bam_008",
+    "name": "The Linden of Unterhaid",
+    "species": "Linden (Tilia sp.)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "About 200 m north of the railway underpass, in the tree field east of the Flurbereinigungsweg, Unterhaid, Fl.Nr. 669",
+      "latitude": 49.93915,
+      "longitude": 10.78808,
+      "neighbourhood": "Unterhaid (Oberhaid)"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Bamberg (Landkreis Bamberg register: no. 48, ND-03903, '1 Linde', Unterhaid, Fl.Nr. 669, coordinates 49.93915, 10.78808)",
+      "https://commons.wikimedia.org/wiki/Category:Gro%C3%9Fe_Linde_bei_Unterhaid (photographs 18 March 2023 titled 'Naturdenkmal ND-03903 1 Linde bei Unterhaid', geotagged 49.93920,10.78812; Stephan van Helden, CC BY-SA 4.0)"
+    ],
+    "official_register": {
+      "name": "Bayerisches Landesamt für Umwelt Naturdenkmal ND-03903 / Landkreis Bamberg list no. 48",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Bamberg"
+    },
+    "access": "Not stated by a source. The register places it in a 'Baumfeld' (tree field) beside a consolidation farm track; presumably reachable on foot along that track but not verified (OSM tags unreachable).",
+    "transport": "Unterhaid is in Oberhaid, about 12 km west of Bamberg centre. Public transport not checked.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "verify_notes": "Register (one official source) plus Commons photographs dated 18 March 2023, so alive as of 2023-03. Register point and the photographs' GPS agree within about 6 m, so pin confirmed by GPS at the tree. No species beyond 'Linde' in the register; no girth, height or age found. A second Commons category 'Große Linde bei Unterhaid' (parent of the 'Linde bei Unterhaid' category) holds the same ND-03903 files, so 'big linden' is a Commons label, not a measured claim. Separate Commons aerial photographs by Ermell (22 Oct 2022, 'Linden tree in Unterhaid') are geotagged about 75 m west of the pin and may show a different linden; not used. Photograph in reach: Commons category above. Weak on remarkability: a protected field linden with no sourced story; flagged. The register has no vitality field."
+  },
+  {
+    "id": "bam_009",
+    "name": "The Linden between Pödeldorf and Naisa",
+    "species": "Linden (Tilia sp.)",
+    "age_estimate": "not documented",
+    "location": {
+      "address": "On the rise between Pödeldorf and Naisa, about 50 m east of the edge of Pödeldorf, Fl.Nr. 105",
+      "latitude": 49.90946,
+      "longitude": 10.99578,
+      "neighbourhood": "Pödeldorf"
+    },
+    "verified_sources": [
+      "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Bamberg (Landkreis Bamberg register: no. 46, ND-03734, '1 Linde', Pödeldorf, Fl.Nr. 105, 'auf der Höhe zwischen Pödeldorf und Naisa, ca. 50 m östlich des Ortsrandes', coordinates 49.90946, 10.99578)",
+      "https://commons.wikimedia.org/wiki/Category:Linde_in_P%C3%B6deldorf (two photographs 'ND-03734 Linde in Pödeldorf', 11 Sept 2023, Stephan van Helden, CC BY-SA 4.0)"
+    ],
+    "official_register": {
+      "name": "Bayerisches Landesamt für Umwelt Naturdenkmal ND-03734 / Landkreis Bamberg list no. 46",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Landkreis_Bamberg"
+    },
+    "access": "Not stated by a source. Register describes it as standing on open rise just outside the village edge; no access tags checked (OSM unreachable).",
+    "transport": "Pödeldorf is about 4 km east of Bamberg centre. Public transport not checked.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "verify_notes": "Register (one official source) plus two Commons photographs dated 11 Sept 2023, so alive as of 2023-09. Photograph geotag (49.90913-49.90914, 10.99555) is the camera position about 36 m south-west of the register point (49.90946, 10.99578), so the exact trunk is not fixed: kept approximate, not confirmed. Register gives genus only (Linde), no girth, height or age. Photograph in reach: Commons category above. Weak on remarkability: a protected rise-top linden with no sourced story; flagged. The register has no vitality field."
   }
 ]
