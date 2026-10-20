@@ -9,6 +9,12 @@
  },
  "places": [
   {
+   "place": "Ibiza",
+   "country": "Spain",
+   "status": "stalled",
+   "note": "SCOUTED 2026-10-20 on scout_next.py --target (#42). The register behind it is the Govern de les Illes Balears Catalogue of Singular Trees, already imported (data/registers/balears-arbres-singulars.json, 65 trees); passcheck.py --brief ibiza finds 4 rows within 20 km and 0 unmined (the one published tree, ibz_001, is the only one that fits). cluster_register.py finds the only walkable cluster in Palma (6 trees); the other 59 stand alone. So the register is exhausted for Ibiza. Next angle: Eivissa town hall or Consell d'Eivissa tree lists (Catalan search), ancient sabinas and olive terraces of Sant Joan and Formentera by hand as leads."
+  },
+  {
    "place": "Australia (national)",
    "country": "Australia",
    "status": "stalled",
