@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-20 retry attempt: nothing shipped, chicago claim released
+
+Chicago's brief had 0 register candidates (under the six-candidate floor), so the claim was released and chicago is a wall for 48h. READY holds only two reader sightings; the Freiburg beech (ed90210d) stays open because the photograph is not in out/sightings/ on this machine and a stranger's submission is never judged blind. The prepare.py staged list (munich, portland, potsdam, salzburg, vienna, bamberg) points at cities already published whose verified files are stale; briefs for them show no candidates. Not done: Las Vegas register retry (BACKUP 1), stale research file cleanup.
+
 ## 2026-10-20 write pass: the John Peter Smith Oak live in Fort Worth (19 trees)
 
 - Live: ftw_020 John Peter Smith Oak, the 4.5 m Texas live oak on the Kimbell Art Museum's lawn on Darnell Street, named at the school district's 1982 centennial and listed by the city in 2009 (Gathering Growth: 13.7 m tall, crown about 28 m). Pin approximate (register point, not checked against imagery); the newest dated report is 2018, and the story says so and asks readers. No photograph yet, so Bing only. Fort Worth intro, meta and FAQ counts now say nineteen, and the Cultural District walk names it.
