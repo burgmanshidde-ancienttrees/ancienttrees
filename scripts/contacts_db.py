@@ -86,6 +86,8 @@ def guess_segment(c):
         return "society"
     if t in ("municipality", "register", "government"):
         return "council"
+    if t == "tourism":  # typed by tourism_sites.py; checked before the host regexes
+        return "tourism"
     if NEWS.search(blob):
         return "press"
     if COUNCIL.search(blob):
@@ -124,6 +126,15 @@ def gather():
                 out.append({"org": p["name"], "email": e, "type": "press", "city": slug,
                             "country": city.get("country"), "language": p.get("language", ""),
                             "source_url": p.get("site"), "_from": "press_desks"})
+    # Official tourism sites per roster city (scripts/tourism_sites.py, 2026-10-20):
+    # one address per city, the best-scored inbox, typed tourism so the segment
+    # holds even when the host does not read as one (iamsterdam.com, gotokyo.org).
+    for slug, r in load(os.path.join(DATA, "outreach-tourism-sites.json"), {}).get("cities", {}).items():
+        if r.get("email"):
+            out.append({"org": r.get("org"), "email": r["email"], "type": "tourism", "city": slug,
+                        "country": r.get("country"), "language": r.get("language", ""),
+                        "source_url": r.get("site"), "why_them": r.get("why_them"),
+                        "trees": [slug + "/" + t for t in r.get("trees", [])], "_from": "tourism_sites"})
     for host, v in load(os.path.join(DATA, "outreach-source-contacts.json"), {}).get("domains", {}).items():
         for e in v.get("emails", [])[:2]:
             trees = v.get("trees", [])

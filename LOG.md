@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 side session: the tourism-site feeder, and ten mails to visit-the-city sites on Hidde's desk
+
+- **No product change.** Outreach only (Hidde, 2026-10-20: "start doing all this", the tourism group of OUTREACH_STRATEGY.md).
+- **New feeder, scripts/tourism_sites.py:** finds the official tourism site of every roster city (Wikidata's tourist office, else the tourism domain the city's Wikivoyage page links most, else visit<city>-style host patterns in the local spelling; parked domains and redirects that drop the city's name refused) and reads its contact and press pages for an address, scored like press_desks.py. Private output data/outreach-tourism-sites.json; contacts_db.py reads it into the tourism segment (`contacts_db.py --ready tourism`: 18 ready). Forty roster cities looked up, 17 with a usable address. The big boards (visitlondon.com, muenchen.travel, parisjetaime.com, thisisbarcelona.com) sit behind bot walls and need a browser read; the feeder records the wall.
+- **Ten mails drafted, nothing sent:** Lisbon, Amsterdam, Seville, Madrid, Bath, Berlin, Rome, Vienna, Brussels, Austin, each in the city's language, one photographed tree with its page link, the city map in that language, one ask (a place on their parks or green page). Under 120 words, mailcheck clean, links checked live. Preview drafts/batch-tourism-2026-10-20-preview.md (private, English gloss per mail), batch drafts/batches/tourism-2026-10-20.json, status drafted. **FOR HIDDE:** read the preview; his word goes into approved_word.
+- Full note in drafts/OUTREACH.md (private). Feeder cost: code, about 90 minutes of fetching; the session itself about 250k tokens.
+
 ## 2026-10-20 side session: press round 3 drafted, twenty regional desks
 
 - **For Hidde to read:** drafts/batch-press-regional-2026-10-20-preview.md, ten mails to regional desks in roster cities (New York, Edinburgh, Glasgow, Los Angeles, Austin, Liverpool, Guerneville, Monterey, Portland, Frankfurt in German), each on one sourced fact from a tree page with an approved photo. Nothing sent; status drafted, your word goes into approved_word. mailcheck clean, every link checked live.
