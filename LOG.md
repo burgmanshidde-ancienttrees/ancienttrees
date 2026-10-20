@@ -16,6 +16,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - Stuttgart: 2 trees live (Wilhelma sequoia grove, Wilhelma ginkgo; both paid entry, no photo, grove pin approximate). City copy corrected (not all free any more) and the German overlay updated. Preflight 0 problems. stu_011 was a duplicate of stu_007, dropped.
 - Rung 1: the Freiburg beech reader photo (ed90210d) is not on this runner, so I could not look at it; verdict left open. No register or Wikipedia entry within 100 to 300 m.
 - London enrich (lon_032, lon_033): one access line closed (Osterley, National Trust hours); register, measurement and season found nothing, 6 gaps dead-ended for 90 days.
+- Enrich amersfoort+frankfurt+stuttgart: Wilhelma ginkgo got its DDG register record, girth 458 cm and opening hours; sequoia grove got hours; frk_018 location_site was refused by the tool (no source URL), still open. 9 gaps dead-ended. Preflight 0 problems.
 - Not touched: iOS app workflow failure flagged at session start (needs a session), 36 photos not yet vendored (daily photos.yml).
 
 ## 2026-10-20 retry attempt: nothing shipped, chicago claim released
