@@ -3392,6 +3392,15 @@ i[lang="la"], .sr-body i[lang="la"] { font-style: italic; }
 .bar-find .at-search > svg { width: 17px; height: 17px; margin-left: 0.6rem; }
 .bar-find .at-search input { padding: 0.4rem 0.5rem; font-size: 15px; }
 .bar-find .ats-drop { min-width: 320px; }
+/* iPad portrait (801 to 1023px) wrapped the logo, Sign in and the app pill
+   onto two lines each (Hidde, 2026-10-20). The words never wrap; the search
+   field gives up the width instead. Measured in French, the longest labels. */
+.bar-logo, .bar-links > a, .bar-links > details > summary { white-space: nowrap; }
+.bar-find { min-width: 0; }
+@media (min-width: 801px) and (max-width: 1023px) {
+  .bar-find { margin: 0 1rem; }
+  .bar-links { gap: 0.9rem; }
+}
 /* Phone: the magnifier, a circle like the menu button. */
 .nav-search .bar-search-btn::after { content: none; }
 .nav-search .bar-search-btn .ic { width: 18px; height: 18px; display: block; }
