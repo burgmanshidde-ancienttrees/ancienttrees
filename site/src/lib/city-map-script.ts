@@ -378,7 +378,10 @@ function showPop(idx) {
   close.setAttribute('aria-label', ${JSON.stringify(ui(lang).photoClose)});
   close.innerHTML = ${JSON.stringify(icon("x"))};
   close.addEventListener('click', function(e) { e.stopPropagation(); closePop(); });
-  popEl.appendChild(close);
+  // With a photograph the pair floats on it; without one, the save already
+  // sits on the name's row, so the cross joins it there (2026-10-20).
+  var row = copy.classList.contains('tree-card-nophoto') && copy.querySelector('.tree-card-top');
+  if (row) { row.appendChild(close); } else { popEl.appendChild(close); }
   // The card opens the tree page; its heart still saves, as on every card.
   popEl.addEventListener('click', function(e) {
     if (e.target.closest('.heart-card, .map-pop-close, a')) return;

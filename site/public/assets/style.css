@@ -236,28 +236,39 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .notice { background: var(--moss-light); border-left: 3px solid var(--moss); padding: 0.7rem 1rem; font-size: 12px; color: var(--ink-mid); margin-top: 1rem; }
 .stage { flex: 1; position: relative; }
 /* A tapped pin on a computer: the tree's own card beside it, Airbnb's map
-   card (Hidde's screenshot, 2026-10-19), approved 2026-10-20. The numbers are
-   the approved render's: 320 wide, save and cross one pair of 32 circles on
-   the same 12 line as the season tag, name and species on one 16 edge. The
-   credit and story stay on the tree page, one click away, as in the app. */
+   card (Hidde's screenshot, 2026-10-19). ONE INSET for everything, as on
+   Airbnb's card (text, the heart and the cross all sit about 14 in from its
+   edge): 16 here, the app's edge. Season tag top left, save and cross one
+   pair of 32 circles top right, name and species on the same 16 line
+   (Hidde, 2026-10-20: "de alignment lijkt toch niet helemaal lekker"; the
+   first version had the photo layer on 12 and the text on 16).
+   A card WITHOUT a photograph has no picture to float on: the pair sits on the
+   name's row instead (the map script moves the cross there) and the tag lines
+   up under the name, on the same 16 ("hier staat een dubbel kruis").
+   Credit and story stay on the tree page, one click away, as in the app.
+   Doubled selectors throughout: the card's own rules further down this file
+   are as specific and later, and won on the live page. */
 .map-pop { position: absolute; z-index: 30; width: 320px; background: #fff; border-radius: 16px;
   box-shadow: 0 8px 28px rgba(0,0,0,0.22); overflow: hidden; cursor: pointer; }
-.map-pop .tree-card { margin: 0; border: 0; box-shadow: none; padding: 0 0 16px; border-radius: 0; }
-.map-pop .tree-card-photo { margin: 0; border-radius: 0; }
+.map-pop .tree-card.tree-card { margin: 0; border: 0; box-shadow: none; padding: 0 0 16px; border-radius: 0; }
+.map-pop .tree-card .tree-card-photo { margin: 0; border-radius: 0; }
 .map-pop .tree-story, .map-pop .tree-card-credit, .map-pop .tree-more { display: none; }
-.map-pop .tree-card-top, .map-pop .tree-meta { padding-left: 16px; padding-right: 16px; margin-left: 0; margin-right: 0; }
-/* Doubled selectors: the card's own rules further down this file (heart at
-   10/10, meta margin 0 24px) are as specific and later, and won on the live
-   page (2026-10-20, measured: heart under the cross, species line at 40). */
-.map-pop .tree-card .tree-card-top { padding: 14px 16px 0; margin: 0; }
-.map-pop .tree-card .tree-meta { margin: 4px 0 0; padding: 0 16px; }
-.map-pop .tree-card .tag-row { left: 12px; top: 12px; }
-.map-pop .tree-card-photo .heart-card, .map-pop-close { position: absolute; top: 12px; width: 32px; height: 32px;
+.map-pop .tree-card .tree-card-top { padding: 14px 16px 0; margin: 0; display: flex; align-items: flex-start; gap: 8px; }
+.map-pop .tree-card .tree-name { margin: 0; flex: 1; min-width: 0; }
+.map-pop .tree-card .tree-meta { margin: 6px 0 0; padding: 0 16px; }
+.map-pop .tree-card-photo .tag-row { left: 16px; top: 16px; margin: 0; }
+.map-pop .tree-card .tag-row-under { margin: 10px 16px 0; padding: 0; }
+.map-pop .tree-card .heart-card, .map-pop .map-pop-close { width: 32px; height: 32px; flex: none;
   border-radius: 50%; border: 0; padding: 0; background: rgba(255,255,255,0.95); color: var(--ink);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.18); display: grid; place-items: center; cursor: pointer; z-index: 3; }
-.map-pop .tree-card-photo .heart-card { right: 52px; }
-.map-pop-close { right: 12px; }
-.map-pop-close svg, .map-pop .heart-card svg { width: 16px; height: 16px; }
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18); display: grid; place-items: center; cursor: pointer; z-index: 3;
+  margin: 0; align-self: flex-start; }
+.map-pop .tree-card-photo .heart-card { position: absolute; top: 16px; right: 56px; }
+.map-pop > .map-pop-close { position: absolute; top: 16px; right: 16px; }
+/* No photograph: the pair joins the name's row, on a pale fill as in the sheet. */
+.map-pop .tree-card-nophoto .heart-card, .map-pop .tree-card-top .map-pop-close {
+  position: static; order: 2; background: rgba(38,48,30,0.08); box-shadow: none; }
+.map-pop .tree-card-top .map-pop-close { order: 3; }
+.map-pop .map-pop-close svg, .map-pop .heart-card svg { width: 16px; height: 16px; }
 .stage .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
 /* The one tree card, used by TreeCard.astro on every page that shows a tree
@@ -3307,6 +3318,17 @@ figure.season .ph-foot { font-size: 12px; line-height: 1.5; }
   min-height: 52px; padding: 0 8px 0 16px; background: var(--cream); color: var(--ink); border: 1px solid #E6E6E6;
   border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.16); font-weight: 600; font-size: 15px; }
 .at-snack[hidden], .at-snack-act[hidden] { display: none; }
+/* ON A MAP PAGE ON A COMPUTER it sits at the foot of the MAP, centred on it,
+   not on the window, where it straddled the list's edge (Hidde, 2026-10-20:
+   "message op de juiste plek ziet er raar uit"). Material Design's snackbar
+   guidelines, read that day at m3.material.io/components/snackbar/guidelines:
+   "at the bottom of a UI, in front of the main content", never in front of
+   navigation; here the map is the main content and the list is the panel. */
+@media (min-width: 801px) {
+  body:has(.split) .at-snack { --panel: min(30rem, 45vw);
+    left: calc(var(--panel) + (100vw - var(--panel)) / 2); bottom: 24px;
+    width: min(480px, calc(100vw - var(--panel) - 32px)); }
+}
 a.at-snack-act { display: inline-flex; align-items: center; font-weight: 700; text-decoration: none; }
 .at-snack-text { flex: 1; min-width: 0; }
 .at-snack-act { min-height: 44px; min-width: 44px; padding: 0 10px; border: 0; background: none; color: var(--moss);

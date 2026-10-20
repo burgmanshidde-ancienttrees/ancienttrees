@@ -58,6 +58,12 @@ Ours today: TreeDetail's button points at ancienttrees.app/open, the same domain
 **Where we differ**: Polarsteps has a third state (followers only) and per-trip settings. We have one switch and no per-tree setting, and the server never returns the day a tree was ticked, which is the part of a travel log that says where somebody is now.
 
 
+## Where the one-line confirmation sits on a map page (2026-10-20, read)
+
+**Reference: Material Design 3, snackbar guidelines, Placement** (m3.material.io/components/snackbar/guidelines, read 2026-10-20): "Snackbars should be placed at the bottom of a UI, in front of the main content", nudged up for FABs or docked toolbars, never in front of navigation. On our split map pages on a computer the main content is the map, so the confirmation is centred on the map, 24 from its foot, not on the window, where it straddled the list's edge (Hidde: "message op de juiste plek ziet er raar uit"). Phones keep it centred over everything above the tab bar. style.css, `.at-snack`.
+
+---
+
 ## Tapping a pin on a map that has a list in a sheet (2026-10-18, recorded)
 
 **Reference: Apple Maps, tapped by hand in the iOS 26 simulator** (search "park" in London: pins on the map, results in the sheet, the same arrangement as our map tab). Tap a pin: the pin grows in place and the SAME sheet turns into that place (name, kind, share, a cross, Directions, photos); no card floats over the list and no page is pushed. The cross puts the results list back as it was and the pin shrinks. Screenshots were shown to Hidde in the preview, not committed (they carry third-party photographs).
