@@ -19,6 +19,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20 session with Hidde: a "Yes" to the review question ends the asking
+
+- **App**: after "Yes" on "Are you enjoying Ancient Trees?" the app never asks again (Hidde: "iemand die al beoordeeld heeft niet meer vragen, dat lijkt me de conventie"). Apple never tells an app whether somebody rated, so the yes is the signal; "Not really" keeps the later milestones. Apple's dialog is now asked for once our sheet has closed, since a request during the dismissal may be dropped. Kit/ReviewPrompt.swift, new test `aYesEndsTheAskingForGood`; ReviewPromptTests 13/13 on the 17 Pro.
+- **For Hidde**: next build carries this. His own "Yes" with no dialog was most likely Apple's limit (already rated, three a year, or TestFlight), not ours.
+
 ## 2026-10-20 session with Hidde: Imperia opens with five register trees (his sister lives at Villa Guardia, Pontedassio)
 
 - **New place: Imperia**, five MASAF register trees, flagged, approximate pins: imp_001 Bunya Pine at the Palazzo della Provincia (26 m; **photo approved**, Commons CC BY-SA 4.0, linked from the register tree's own Wikidata item), imp_002 Mediterranean Hackberry at San Michele, Diano Borello (5.1 m girth), imp_003 the Downy Oak pair of Maro Castello (meadow access not confirmed, said on the page), imp_005 the Sweet Chestnut of the Passo Furchè above Ceriana (8.5 m girth, 5 m tall; a MTB guide's "1,300 years" reported as its claim, age left empty), imp_006 the Horse Chestnut pair of Sant'Agostino, Triora.

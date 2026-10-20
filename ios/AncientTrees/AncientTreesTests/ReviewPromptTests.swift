@@ -129,6 +129,21 @@ struct ReviewPromptTests {
         #expect(second.consider() == true)
     }
 
+    @Test func aYesEndsTheAskingForGood() {
+        // Somebody who said yes is never asked again, however many trees
+        // they look at or how long they wait.
+        let s = Scratch(); defer { s.clean() }
+        let prompt = ReviewPrompt(defaults: s.defaults, suppressed: false)
+        let now = Date()
+        prompt.saw("a"); prompt.saw("b"); prompt.saw("c")
+        #expect(prompt.consider(now: now) == true)
+        prompt.answeredYes()
+
+        for i in 0..<30 { prompt.saw("tree_\(i)") }
+        let yearLater = now.addingTimeInterval(365 * 86_400)
+        #expect(ReviewPrompt(defaults: s.defaults, suppressed: false).consider(now: yearLater) == false)
+    }
+
     @Test func neverFiresUnderXCTest() {
         // This test itself runs under XCTest, so the real environment guard
         // inside `consider` should refuse regardless of the milestone data.

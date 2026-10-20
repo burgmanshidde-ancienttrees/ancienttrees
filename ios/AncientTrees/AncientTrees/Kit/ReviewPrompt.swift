@@ -135,6 +135,15 @@ public final class ReviewPrompt {
         pending = true
         return true
     }
+
+    /// A "Yes" ends the asking for good (Hidde, 2026-10-20: "iemand die al
+    /// beoordeeld heeft niet meer vragen, dat lijkt me de conventie").
+    /// Apple never tells an app whether somebody rated, so the yes is the
+    /// closest thing we know: every milestone counts as fired from here.
+    /// A "Not really" leaves the later milestones in place.
+    public func answeredYes() {
+        fired = Set(Self.milestones.map(\.name))
+    }
 }
 
 /// THE ONE PLACE THE SYSTEM DIALOG IS ASKED FOR. The screens that notice a
@@ -167,6 +176,7 @@ struct ReviewAsk: ViewModifier {
     @State private var asking = false
     @State private var feedback = false
     @State private var wantsFeedback = false
+    @State private var wantsReview = false
 
     func body(content: Content) -> some View {
         content
@@ -177,9 +187,11 @@ struct ReviewAsk: ViewModifier {
             }
             // THE ONE SHEET (Kit/BrandSheet.swift, 2026-10-10). The feedback
             // form opens once this one has gone, because two sheets cannot
-            // swap in one frame.
+            // swap in one frame. Apple's dialog waits for the same reason:
+            // asked for while our sheet is still leaving, iOS may drop it.
             .sheet(isPresented: $asking, onDismiss: {
                 if wantsFeedback { wantsFeedback = false; feedback = true }
+                if wantsReview { wantsReview = false; requestReview() }
             }) {
                 BrandSheet(
                     icon: "heart",
@@ -188,7 +200,7 @@ struct ReviewAsk: ViewModifier {
                     // forbids rewarding or requiring a review, not explaining it.
                     message: "A rating helps other tree lovers find the app.",
                     buttons: [
-                        .primary("Yes", id: "review-yes") { asking = false; requestReview() },
+                        .primary("Yes", id: "review-yes") { prompt.answeredYes(); wantsReview = true; asking = false },
                         .secondary("Not really", id: "review-no") { wantsFeedback = true; asking = false },
                     ])
             }
