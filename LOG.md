@@ -1,5 +1,13 @@
 # LOG
 
+
+**Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
+
+- [2026-10](archive/LOG-2026-10.md)
+- [2026-09](archive/LOG-2026-09.md)
+- [2026-08](archive/LOG-2026-08.md)
+- [2026-07](archive/LOG-2026-07.md)
+
 <!-- archive-index -->
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
@@ -9,6 +17,8 @@
 - [2026-08](archive/LOG-2026-08.md)
 - [2026-07](archive/LOG-2026-07.md)
 
+So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+<!-- archive-index -->
 ## 2026-10-20, 15:13 window (night run)
 
 - Rung 1: inbox empty. Rung 2: health flagged the Smoke test as skipped; it skips on push by design, Build and deploy succeeded, answered with `health.py --answer`.
@@ -20,7 +30,6 @@
 - Hallstatt (5 to 7 trees): hst_006 Tausendjährige Linde, Bad Ischl (register says 400 to 500 years, not a thousand; 20 km away, said on the page) and hst_007 Gosau wych elm (last seen 2015, stated). Oldest-tree answer moved to hst_006. For a look: the hst_006 story adds Franz Joseph's summers at Bad Ischl, general knowledge with no source on file.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-<!-- archive-index -->
 ## 2026-10-20 night run (13:13 UTC window)
 - **Product:** a reader's photograph of the Campo Santana weeping fig (Lisbon, lis_015) is live, replacing a held panoramio image; their GPS fix moved the pin 129 m and confirmed it. Looked at the pixels first: big fig, aerial roots, daylight and colour. Five trees written: Bamberg bam_007 to 009 (now 9), Rotterdam rot_017 and rot_018 (now 17), with the city copy counts fixed. Held as leads on access: Innsbruck inn_007 (probably a private yard) and the Rotterdam church-garden beech at the Pelgrimvaderskerk.
 - **Breakage:** iOS app run of 10:55 failed 40 passed 1 failed (test name only in the xcresult); newer runs are in progress, answered in health.py, no action without the Mac. Mistake worth knowing: sightings_publish does not write the judgements.json entry, and preflight then refuses; I added it by hand (out/tmp/addjudge.py) after the queue had emptied.
