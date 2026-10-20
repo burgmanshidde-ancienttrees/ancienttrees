@@ -109,7 +109,38 @@ def display_name(user_id):
         return None
 
 
-def mail_for(name, tree, city_name, page):
+def what_they_gave(sid):
+    """What the reader filled in when adding the tree: age, trunk size, a note."""
+    sid = str(sid).lower()
+    for l in (load(LEADS, {}).get("leads") or []):
+        if str(l.get("sighting_id") or "").lower() == sid:
+            return {
+                "age": bool(l.get("age")),
+                "trunk": bool(l.get("girth_cm") or l.get("girth_hugs")),
+                "story": len((l.get("note") or "").strip()) >= 40,
+            }
+    return {"age": False, "trunk": False, "story": False}
+
+
+def mail_for(name, tree, city_name, page, gave=None):
+    """THE ASK FOLLOWS WHAT THEY GAVE (Hidde, 2026-10-20, on the Freiburg beech,
+    which arrived as a photograph and a pin and nothing else: "ask if they have
+    more info on the tree (age, girth, story etc) ... make that standard unless
+    they gave a full info thing"). A page built from a photograph alone is a
+    page that asks its readers for everything; the person who stood there is
+    the one most likely to know. So the one ask in this mail is for what is
+    missing, by name, and only when nothing is missing does it ask for the next
+    tree. One ask, never two (drafts/HIS_VOICE.md), and a reply to the mail,
+    never a form. Nothing here reads as a task: it asks what they know."""
+    gave = gave or {"age": False, "trunk": False, "story": False}
+    missing = [w for k, w in (("age", "how old it might be"), ("trunk", "how big around the trunk is"),
+                              ("story", "a story about it")) if not gave.get(k)]
+    if missing:
+        wants = ", ".join(missing[:-1]) + (" or " if len(missing) > 1 else "") + missing[-1]
+        ask = (f"Do you know more about it, {wants}? Just reply to this mail and it goes on the page.")
+    else:
+        ask = ("Is there another tree near you that belongs on the map? You can add it in the app "
+               "the same way.")
     subject = "Your tree is on Ancient Trees"
     body = (
         f"Hi {name or 'there'},\n\n"
@@ -117,8 +148,7 @@ def mail_for(name, tree, city_name, page):
         f"approved and is now on Ancient Trees for everybody to find:\n"
         f"{page}\n\n"
         f"You stood in front of it and sent it to us, and now other people can go and see it too.\n\n"
-        f"Is there another tree near you that belongs on the map? You can add it in the app "
-        f"the same way.\n\n"
+        f"{ask}\n\n"
         f"Ancient Trees\n{BASE_URL}\n"
     )
     return subject, body
@@ -145,7 +175,7 @@ def main(argv):
         if not addr:
             print(f"  {tree['id']}: no address for the account (no service key, or the account is gone)")
             continue
-        subject, body = mail_for(display_name(people.uid(uid)), tree, city_name, page)
+        subject, body = mail_for(display_name(people.uid(uid)), tree, city_name, page, what_they_gave(sid))
         if send_mail(addr, subject, body, really, sid):
             done[sid] = {"tree_id": tree["id"], "date": datetime.date.today().isoformat()}
             sent += 1
