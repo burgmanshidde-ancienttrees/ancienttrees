@@ -23,6 +23,17 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-20
+
+Web half: read /freiburg (count now 8, intro "Seven are natural monuments; the eighth is a reader's find" agrees with the list), the new Schönberg Beech page (reader find, no sender name, no em dashes) and the moved Kam Tin Tree House. Two findings.
+
+- NOTE /hong-kong/kam-tin-tree-house (title, meta): "100 Year Old Tree" / "A 100-year-old" takes the low end of the data's 100 to 150 and the source's "over 100 years" (Verify: never sharpen a vague source). "Over 100 years old" matches the body.
+- NOTE /hong-kong/kam-tin-tree-house (species vs story): the species line says "Indian Laurel Fig (Ficus microcarpa)" while the story calls it "a Chinese banyan", two names for one tree on one page (hard rule 9, one canonical common name). Say "Indian Laurel Fig" or explain once that it is the banyan.
+
+## 2026-10-20 (app half)
+
+- WARN APP: collect-compare, collect-describe, collect-identify, collect-intro, collect-place and collect-ticked are six screenshots of the same "Add a tree" sheet over different background photographs. None shows the screen its name promises (compare, describe, identify, intro, place, ticked), so either the sweep never navigates past the sheet or the flow is not reachable; the collect flow was not seen tonight and appsweep's `--check-lists` would not notice.
+
 ## 2026-10-19
 
 Web half: read the Roehampton Lucombe Oak (new photograph), /lisbon after the Campo Santana yew retirement, no em dashes, CC BY-SA credit present. Two findings.
