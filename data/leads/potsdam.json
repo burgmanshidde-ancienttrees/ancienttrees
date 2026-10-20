@@ -77,6 +77,58 @@
       "status": "held",
       "reason": "Register: girths 160 to 295 cm, Flur 14 Flurstuecke 32 and 34; OSM natural=tree nodes with denotation=natural_monument and a Commons image at 52.38087,13.05129 and 52.38110,13.05159; Commons photo exists. Not verified this pass (ensemble of 5 or more, one place to stand to be judged, girth modest, one OSM way is access=private near it). Pair with pot_010 if pursued.",
       "source_url": "https://www.potsdam.de/de/content/"
+    },
+    {
+      "name": "Naturdenkmal Nr. 13 Oak of Krampnitzer Strasse 17, Sacrow (Stiel-Eiche, Quercus robur)",
+      "place": "Krampnitzer Strasse 17, shore of the Sacrower See",
+      "latitude": 52.428776,
+      "longitude": 13.089546,
+      "status": "lead",
+      "reason": "City page (fetched 2026-10-20): girth 600 cm, Flur 3 Flurstueck 10/2, 'am Ufer des Sacrower Sees'. Commons photo (WikiVagant, 2018-09-01, geotag = list coordinate) says the trunk is hidden behind a fence and bushes seen from the street: access to the trunk not established (a private plot is likely; Baumarchiv also mentions a private plot at the south tip of the lake). OSM tree node 8678713312 (circumference 6.0) at 52.428776,13.089546. No access evidence, no photo of the trunk.",
+      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-13-stiel-eiche-sacrow"
+    },
+    {
+      "name": "Naturdenkmal Nr. 16 Copper/Red Beech west of Sacrow (Rotbuche, Fagus sylvatica)",
+      "place": "Koenigswald, west of Sacrow, 'Strasse nach Sacrow'",
+      "latitude": 52.425965,
+      "longitude": 13.08178,
+      "status": "lead",
+      "reason": "City page (fetched 2026-10-20): girth 405 cm, Flur 3 Flurstueck 35, 'westlich von Sacrow im Koenigswald'. OSM node 8679244125 (circumference 4.05) sits exactly on the register coordinate, so not independent. Forest tree with a register point only: no photograph, no recent observation (lifecheck NONE), pin cannot be placed on a crown. Reason: no photo or exact pin in reach. Public forest, so access is not the issue.",
+      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-16-rotbuche-bei-sacrow"
+    },
+    {
+      "name": "Naturdenkmal Nr. 27 Caucasian Wingnut of Berliner Strasse 52 (Pterocarya fraxinifolia)",
+      "place": "Berliner Strasse 52, garden behind the house",
+      "latitude": 52.409256,
+      "longitude": 13.079765,
+      "status": "held",
+      "reason": "Register (search result of the city page, Flur 2 Flurstueck 762): girth 375 cm, 'im Garten hinter dem Haus Berliner Strasse 52'. Private garden behind a house: no public access evidence (hard rule 10). Wikidata Q106393705.",
+      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-27-kaukasische-fluegelnuss-der-berliner-vorstadt"
+    },
+    {
+      "name": "Naturdenkmal Nr. 28 Small-leaved Lime of Hebbelstrasse 37 (Winter-Linde, Tilia cordata)",
+      "place": "Hebbelstrasse 37, 'auf dem Grundstueck hinter dem Haus'",
+      "latitude": 52.405269,
+      "longitude": 13.061464,
+      "status": "held",
+      "reason": "City page (fetched 2026-10-20): girth 350 cm, stands on the plot behind the house at Hebbelstrasse 37. Private plot, no access evidence (hard rule 10). Commons photo January 2021 (Wikidata P18).",
+      "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-28-winter-linde-der-hebbelstrasse"
+    },
+    {
+      "name": "Naturdenkmal Nr. 40 Eleven Turkey Oaks of Paetowstrasse (Zerr-Eiche, Quercus cerris)",
+      "place": "Paetowstrasse, unpaved southern section beside the allotment colony, 80 to 100 m SW of pot_010",
+      "latitude": 52.3809,
+      "longitude": 13.0513,
+      "status": "lead",
+      "reason": "City page (fetched 2026-10-20): eleven Turkey oaks (foreign species), girths 160 to 295 cm, Flur 14 Flurstuecke 32 and 34. Eleven OSM natural=tree nodes (denotation natural_monument, mapped 2021-05) run in a row about 70 m long from 52.38073,13.05115 to 52.38119,13.05171 along a track: a short row, modest girth, not one place to stand; Turkey oaks reach about 200 years. Could be a single stop with pot_010 if a later pass wants it; walkable from pot_010 (OSM shows highway=track and footway nearby, one way access=private near it)."
+    },
+    {
+      "name": "Naturdenkmal Nr. 26 Apple Tree of Alexandrowka",
+      "place": "Alexandrowka colony",
+      "latitude": 52.410591,
+      "longitude": 13.058016,
+      "status": "held",
+      "reason": "Register girth 260 cm (de.wikipedia list), Wikidata Q106393704 with a Commons image; the garden of the Russian colony belongs to its houses and no source found says which garden or whether it is visible from a public path. Not researched further this pass: no access evidence."
     }
   ],
   "blocked": [
