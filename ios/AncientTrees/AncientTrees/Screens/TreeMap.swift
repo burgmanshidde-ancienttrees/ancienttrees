@@ -346,8 +346,12 @@ struct TreeMap: UIViewRepresentable {
             let zoom = max(map.zoomLevel, Self.zoom(forMeters: 20_000))
             map.setCenter(.init(latitude: sel.lat, longitude: sel.lng),
                           zoomLevel: zoom, animated: true)
-        } else if selected == nil {
+        } else if selected == nil, context.coordinator.centred != nil {
+            // A tree was just let go: say once what is in view now, which
+            // regionDidChange skipped while it was selected. Its own write is
+            // deferred to the next tick, so this is safe inside an update.
             context.coordinator.centred = nil
+            context.coordinator.mapView(map, regionDidChangeAnimated: false)
         }
 
         context.coordinator.sync(trees: trees, mine: mine, route: route,
@@ -958,12 +962,14 @@ struct TreeMap: UIViewRepresentable {
                     }
                 }
             }
-            // Reported while a tree is selected too (2026-10-20). The guard here
-            // protected a sideways pager that no longer exists: a selected tree
-            // now replaces the list in the sheet, so nothing shuffles, and
-            // skipping the report left the count reading "No trees in view"
-            // once the tree was let go over a map full of pins.
-            guard let binding = parent.region else { return }
+            // NOT while a tree is selected. Reporting then (tried 2026-10-20)
+            // froze Hidde's phone on a pin tap: the sheet rising moves the
+            // map's inset every frame, every move reported a region, and every
+            // report rebuilt the list of trees in view under a card that does
+            // not even show it. The Mac's simulator never felt it. The count
+            // that read "No trees in view" after letting go is fixed by one
+            // report at the moment of letting go instead (updateUIView).
+            guard parent.selected == nil, let binding = parent.region else { return }
             let now = TreeMap.region(map.visibleCoordinateBounds)
             if let last = binding.wrappedValue {
                 let a = CLLocation(latitude: last.center.latitude, longitude: last.center.longitude)

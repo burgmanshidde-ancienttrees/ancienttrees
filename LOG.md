@@ -21,7 +21,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 ## 2026-10-20 session with Hidde: your own trees get the pin step too
 - **App (next build):** tapping one of your own trees on the Map tab or in My trees now shows it in the sheet first (your photograph, the name, a cross), as our trees do; the card opens your tree's page. No save and no share on it (it is yours, and has no public page yet).
-- **Not reproduced:** Hidde reports the app freezing when the map opens. The Map tab, a city's map and My trees all open and take a pin tap in the simulator at about 1 percent CPU; waiting on which screen and which build before changing anything.
+- **Freeze on a pin tap, fixed (next build):** Hidde's phone hung when a tree's card came up. My own change from this afternoon: the map reported what was in view while a tree was selected, the rising sheet moves the map every frame, and every report rebuilt the list of trees. Measured on the simulator: 66 percent of a Mac core for a second per tap before, 3 percent after; a phone is several times slower. Now the map stays quiet while a tree is selected and reports once when it is let go, so the count is still right afterwards ("8 trees", checked).
 
 ## 2026-10-20 session with Hidde: a "Yes" waits for a newer version, four months on
 
