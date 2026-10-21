@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-21 (session with Hidde): Tangier fig live from a reader, and a stranger's photo with GPS is never parked again
+
+- **Product:** tng_001, The Moreton Bay Fig of the Mendoubia (Tangier), live as a lone tree page from a stranger's app photograph and three-paragraph note (sighting 2aa7147b, 2026-10-18). The story quotes them: the 800-to-1,000-year age on the signs against their 120 to 140 years, planted by the Mendoub's residency. Wikipedia's Mendoubia page is the written source. lis_037 (Lisbon dragon tree) now quotes its reader too.
+- **Rule (Hidde):** "user content is the most valuable thing"; a good photo plus a GPS fix goes live, whatever the focus areas, sources or certainty; their words go on the page quoted and unnamed. CLAUDE.md (Verify), DECISIONS.md, and preflight `note_a_strangers_photo_with_gps_waits_for_nothing()`. Out-of-focus now covers our own research only.
+- **Data:** two stale sighting rows corrected: the Montsouris plane has been live as par_034 since 10-13; the Santranges oak is held (its photo shows a well, not the tree).
+- **Mail:** the Tangier reader gets the automatic "your tree is on Ancient Trees" mail on the next knock after the deploy.
+- **Breakage, separate:** the iOS app workflow failed on 2026-10-21 (session-start brief); not looked at in this session.
+
 ## 2026-10-21 (window from 14:48 UTC): one reader photograph cleared, then stopped
 
 Rung 1: the one queued sighting (lis_037, Lisbon dragon tree) was already the tree's live lead photo, same sighting id, so nothing new for readers to see. I viewed it (Dracaena draco, fits the recognition line) and recorded the verdict in data/sightings-processed.json. sightings_publish.py's `add` copied the same picture beside itself; I reverted the city file and moved the duplicate jpg out of site/public/photos (to out/tmp). Worth a fix: `add` should skip a sighting that is already the lead photo. Preflight 0 problems.
