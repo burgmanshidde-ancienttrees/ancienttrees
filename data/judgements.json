@@ -156,6 +156,34 @@
    "agreed": null
   },
   {
+   "id": "sight:9b10ae23-bba4-4af8-a9ae-95b93aba9209",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "Dragon Tree in Lisbon",
+   "city": null,
+   "species": "Dragon Tree",
+   "photo": "p_742e4f4b38d1bead996f5a7d/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
+   "reader_note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Dragon Tree"
+   },
+   "verdict": "publish",
+   "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
+   "hidde": null,
+   "agreed": null
+  },
+  {
    "id": "sight:ed90210d-8ed3-4c85-8af7-f75f6f34ff15",
    "seen": "2026-10-19",
    "kind": "photo of a tree we map",
@@ -361,8 +389,8 @@
    },
    "verdict": "lead",
    "reason": "Looked at the extra photograph on 2026-10-18 (main file was not on the runner): a huge Moreton Bay Fig with sweeping buttress roots beside the Jardin de la Mendoubia, Tangier; visibly big and worth the walk, the reader's age (about 120 to 140 years) is a basis. No register or encyclopaedia entry within 300 m. Morocco is out of focus (Africa, Hidde), so no verify pass now; kept as a lead with its coordinate, goes live when a source or a second account turns up.",
-   "hidde": null,
-   "agreed": null,
+   "hidde": "please put the moreton bay fig live forget about our focus areas - user content is the most valuable thing. if we have a good photo and gps then never hold back and just publish, especially if they give so much information; people can always tell us its wrong. our goal should be pages google loves instead of 100% sure",
+   "agreed": false,
    "shown": [
     "2026-10-21"
    ]
@@ -2300,18 +2328,18 @@
    "agreed": null
   },
   {
-   "id": "sight:9b10ae23-bba4-4af8-a9ae-95b93aba9209",
-   "seen": "2026-10-20",
+   "id": "sight:2aa7147b-3a7b-49eb-8b8a-da81f726eda1",
+   "seen": "2026-10-18",
    "kind": "photo of a tree we map",
-   "tree": "Dragon Tree in Lisbon",
-   "city": null,
-   "species": "Dragon Tree",
-   "photo": "p_742e4f4b38d1bead996f5a7d/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
-   "reader_note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
+   "tree": "The Moreton Bay Fig of the Mendoubia",
+   "city": "Tangier",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "photo": "p_3ede14c55de0e0de9b87562a/2AA7147B-3A7B-49EB-8B8A-DA81F726EDA1.jpg",
+   "reader_note": "The Mendoubia Moreton Bay Fig (Ficus macrophylla) is the most notable tree located in the Mendoubia Gardens (Jardin de la Mendoubia) in central Tangier, Morocco. Native to the subtropical coastal rainforests of eastern Australia, the species was introduced to North Africa in the late 19th century. Planted between the 1880s and 1900s during Tangier's diplomatic expansion, the tree was placed adjacent to the residency of the Mendoub (the representative of the Moroccan Sultan to the international a",
    "reader_girth_cm": null,
    "coords": [
-    null,
-    null
+    35.7851216666667,
+    -5.81336166666667
    ],
    "register": {
     "verdict": "unlisted",
@@ -2320,12 +2348,15 @@
    },
    "measure": {
     "score": null,
-    "note": "nothing measurable about Dragon Tree"
+    "note": "nothing measurable about Moreton Bay Fig"
    },
    "verdict": "publish",
-   "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
-   "hidde": null,
-   "agreed": null
+   "reason": "Looked at it: the whole Moreton Bay fig from buttress roots to crown in daylight and colour, the white Mendoubia building behind; GPS fix at the tree; the reader's note gives species, planting window, age and trunk measures. Live as tng_001 on Hidde's 2026-10-21 ruling (a good photo plus GPS goes live, focus areas or not), their words quoted on the page.",
+   "hidde": "please put the moreton bay fig live forget about our focus areas - user content is the most valuable thing (2026-10-21)",
+   "agreed": true,
+   "shown": [
+    "2026-10-21"
+   ]
   }
  ]
 }

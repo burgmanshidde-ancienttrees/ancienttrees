@@ -831,8 +831,8 @@
     "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
     "nearest": []
    },
-   "status": "lead",
-   "why": "Reader's pedunculate oak near Santranges (Cher), girth 440 cm, age given as 245. Photograph viewed 2026-10-15: it shows a garden well on a mown lawn, not the oak, so nobody has seen this tree and its GPS fix is where the well stands, apparently a private garden. Not publishable until the reader sends a photograph of the oak itself and where it stands is public (hard rule 10). When it comes, the 245 years goes on the page as the reader's estimate (Hidde, 2026-10-15). Already asked: the 2026-10-13 reply on the Montsouris plane (submission 352) asked this reader for a photo of the oak and whether the public can reach it. Waiting on their answer; no second mail.",
+   "status": "hold",
+   "why": "2026-10-21: hold, wrong subject. The photograph (viewed 2026-10-15) shows a garden well on a mown lawn, not the oak, so nobody has seen this tree. Reader's girth 440 cm and age 245 kept; goes live the moment a photograph of the oak arrives. Reader's pedunculate oak near Santranges (Cher), girth 440 cm, age given as 245. Photograph viewed 2026-10-15: it shows a garden well on a mown lawn, not the oak, so nobody has seen this tree and its GPS fix is where the well stands, apparently a private garden. Not publishable until the reader sends a photograph of the oak itself and where it stands is public (hard rule 10). When it comes, the 245 years goes on the page as the reader's estimate (Hidde, 2026-10-15). Already asked: the 2026-10-13 reply on the Montsouris plane (submission 352) asked this reader for a photo of the oak and whether the public can reach it. Waiting on their answer; no second mail.",
    "seen": "2026-10-04",
    "unlinked": true
   },
@@ -869,10 +869,11 @@
      }
     ]
    },
-   "status": "lead",
-   "why": "Reader photograph of a London plane in Parc Montsouris, girth 450 cm, age given as 186 (park-opening inference, not a source). Corroborate.py: nearest register entry is a copper beech 44 m away, a different species, so not the same tree; no encyclopaedia article within 300 m. Single contributor, no source, 450 cm is ordinary for a London plane; stays a lead until a second account or a source names it. Reviewed 2026-10-05.",
+   "status": "published",
+   "why": "Live as par_034 since 2026-10-13 (matched to the Paris inventory, Hidde's yes); this lead row was left stale until 2026-10-21.",
    "seen": "2026-10-05",
-   "unlinked": true
+   "unlinked": true,
+   "tree_id": "par_034"
   },
   {
    "sighting_id": "7c8bec8f-b77b-415c-b4ec-a1589130c4a3",
@@ -1111,10 +1112,11 @@
     "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
     "nearest": []
    },
-   "status": "lead",
-   "why": "2026-10-18 verdict: lead. Looked at the extra photograph (main file not on disk): a huge Moreton Bay Fig (Ficus macrophylla) with sweeping buttress roots, beside a white Moorish-windowed building, Jardin de la Mendoubia, Tangier. Visibly big and worth the walk; the reader's age (~120-140 years) is a basis. No register or encyclopaedia entry within 300 m, so no written source yet. Morocco is out of focus (Africa), so no verify pass now; kept with its coordinate. Goes live when a source or a second account turns up.",
+   "status": "published",
+   "why": "2026-10-21 verdict: publish. Hidde: a good reader photograph with GPS goes live whatever the focus list says. Live as tng_001 with the reader's own words on the page.",
    "seen": "2026-10-18",
-   "unlinked": true
+   "unlinked": true,
+   "tree_id": "tng_001"
   },
   {
    "sighting_id": "ed90210d-8ed3-4c85-8af7-f75f6f34ff15",

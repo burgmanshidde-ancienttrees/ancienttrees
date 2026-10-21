@@ -1604,10 +1604,45 @@ def note_a_reader_photograph_is_not_a_reason():
             # flags.
             if tree.get("verified_sources"):
                 continue
+            # A stranger's good photograph with their GPS fix is the reason
+            # (Hidde, 2026-10-21: "if we have a good photo and gps than never
+            # hold back and just publish"). Nara was our own account.
+            if reader_found(tree):
+                continue
             out.append("%s (%s) came from a reader's photograph and has no age, "
                        "no measurement and no source. A photograph is not a "
                        "reason. Give it one, or move it to data/leads/."
                        % (tree.get("id"), tree.get("name")))
+    return out
+
+
+def note_a_strangers_photo_with_gps_waits_for_nothing():
+    """A stranger's sighting with a photograph and a GPS fix is not parked.
+
+    Hidde, 2026-10-21, on the Mendoubia fig in Tangier, kept as a lead for
+    three days because Morocco was out of focus and no register named it:
+    "forget about our focus areas - user content is the most valuable thing",
+    then "if we have a good photo and gps than never hold back and just
+    publish especially if they give so much information - people can always
+    tell us its wrong". Focus areas, a missing written source and wanting to
+    be sure are not reasons to wait. Only a wrong tree, a wrong subject or a
+    bad frame are (those are `reject` or `hold`, not `lead`).
+    """
+    import ours
+    with open("data/leads/_sightings.json", encoding="utf-8") as fh:
+        leads = json.load(fh).get("leads", [])
+    out = []
+    for r in leads:
+        if r.get("mine") or r.get("status") != "lead":
+            continue
+        if ours.is_ours((r.get("photo") or "").split("/")[0]):
+            continue
+        if not (r.get("photo") and r.get("latitude") and r.get("longitude")):
+            continue
+        out.append("sighting %s (%s) is a stranger's photograph with a GPS fix, "
+                   "still a lead. Look at it and publish it, their note on the page "
+                   "(Hidde, 2026-10-21); only a wrong tree, subject or frame holds it."
+                   % (r.get("sighting_id", "?")[:8], r.get("name")))
     return out
 
 
@@ -3532,6 +3567,7 @@ def main():
                  + check_tree_labels_are_translated() + check_city_indent()
                  + check_a_by_licence_names_its_author()
                  + note_a_reader_photograph_is_not_a_reason()
+                 + note_a_strangers_photo_with_gps_waits_for_nothing()
                  + note_a_young_tree_is_not_ancient()
                  + note_submissions_waiting_for_a_verdict()
                  + note_overseas_trees_have_a_frame()):
