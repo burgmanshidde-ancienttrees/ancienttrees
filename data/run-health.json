@@ -2,84 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-31T18:23:22+00:00",
-   "date": "2026-08-31",
-   "run_id": "33424707234",
-   "minutes": 101.4,
-   "minutes_basis": "measured",
-   "attempts": 3,
-   "turns": 710,
-   "denials": 42,
-   "denials_source": "permission_denials: Bash(bash), Bash(cd), Bash(comm), Bash(curl), Bash(env), Bash(for), Bash(gh), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(until), Bash(wc)",
-   "ended": "success",
-   "tokens": 50709947,
-   "claims_held": [
-    "regensburg"
-   ],
-   "commits": 39,
-   "cities_touched": 14,
-   "cities": [
-    {
-     "city": "girona",
-     "trees": 7
-    },
-    {
-     "city": "kamakura",
-     "trees": 6
-    },
-    {
-     "city": "nagoya",
-     "trees": 6
-    },
-    {
-     "city": "naha",
-     "trees": 6
-    },
-    {
-     "city": "pamplona",
-     "trees": 6
-    },
-    {
-     "city": "ronda",
-     "trees": 6
-    },
-    {
-     "city": "sapporo",
-     "trees": 6
-    },
-    {
-     "city": "segovia",
-     "trees": 6
-    },
-    {
-     "city": "tarragona",
-     "trees": 4
-    },
-    {
-     "city": "vilnius",
-     "trees": 3
-    },
-    {
-     "city": "perugia",
-     "trees": 2
-    },
-    {
-     "city": "vienna",
-     "trees": 2
-    },
-    {
-     "city": "cagliari",
-     "trees": 1
-    },
-    {
-     "city": "porto",
-     "trees": 0
-    }
-   ],
-   "trees": 61,
-   "logged": true
-  },
-  {
    "started": "2026-08-31T23:29:08+00:00",
    "date": "2026-09-01",
    "run_id": "33450854457",
@@ -24207,6 +24129,45 @@
     }
    ],
    "trees": 5,
+   "logged": true
+  },
+  {
+   "started": "2026-10-21T22:59:05+00:00",
+   "date": "2026-10-21",
+   "run_id": "39690262639",
+   "minutes": 24.4,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 141,
+   "denials": 1,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; for ...)",
+   "ended": "success",
+   "tokens": 157897,
+   "claims_held": [
+    "rotterdam",
+    "leiden"
+   ],
+   "commits": 10,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "imperia",
+     "trees": 2
+    },
+    {
+     "city": "dresden",
+     "trees": 0
+    },
+    {
+     "city": "heidelberg",
+     "trees": 0
+    },
+    {
+     "city": "new-york",
+     "trees": 0
+    }
+   ],
+   "trees": 2,
    "logged": true
   }
  ],
