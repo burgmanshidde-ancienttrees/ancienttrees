@@ -200,11 +200,3 @@ App half (explore, feedback, map-full, map, own-tree, paywall): discover, map, t
 - WARN APP: map-full, the floating "Map" pill sits on top of the second card's title ("The Weteringp... ch Elm") and hides part of the name; the pill should sit clear of the list. This control was the odd one out in the 2026-09 sweeps too.
 - NOTE APP: own-tree shows a large flat drawn tree as the hero of a reader's own tree, with no sentence saying no photograph exists; CLAUDE.md allows the silhouette only beside that sentence. Probably the sweep fixture has no photo, but a real tree added without one would read the same.
 
-## 2026-10-06
-
-Web half: read berlin (63), barcelona (56), tenerife (4) and the Berlin tallest-tree page; titles and counts match the city files, no em dashes or banned words in berlin, barcelona, amsterdam, lisbon or christchurch. Nothing found on the web half.
-
-App half (collect-ticked, collection-tab-full, collection-tab, collection, contribute, directions): the screens read clearly and the sign-in sheet, directions chooser and collection page agree with their data (all eight oak entries carry confirmed pins).
-
-- NOTE APP: collection-tab-full shows the profile with "2 Trees" above "0 Species" and "0 Countries", so the stats contradict themselves for a collector who has two trees. Probably the test account's own-added trees carry no species or country; if a real reader's first photographed tree can read the same, the counts should fall back to the tree's own species and place. For a session.
-
