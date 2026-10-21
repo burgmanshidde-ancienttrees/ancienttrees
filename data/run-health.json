@@ -2,36 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-31T10:14:12+00:00",
-   "date": "2026-08-31",
-   "run_id": "33381467622",
-   "minutes": 26.8,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 199,
-   "denials": 24,
-   "denials_source": "permission_denials: Bash(bash), Bash(cp), Bash(curl), Bash(for), Bash(npm), Bash(printenv), Bash(python3), Bash(rm), Bash(test)",
-   "ended": "success",
-   "tokens": 41614518,
-   "claims_held": [
-    "prague"
-   ],
-   "commits": 9,
-   "cities_touched": 2,
-   "cities": [
-    {
-     "city": "graz",
-     "trees": 2
-    },
-    {
-     "city": "philadelphia",
-     "trees": 1
-    }
-   ],
-   "trees": 3,
-   "logged": false
-  },
-  {
    "started": "2026-08-31T18:23:22+00:00",
    "date": "2026-08-31",
    "run_id": "33424707234",
@@ -24197,6 +24167,46 @@
     }
    ],
    "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-21T19:53:38+00:00",
+   "date": "2026-10-21",
+   "run_id": "39665459138",
+   "minutes": 14.5,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 98,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 608176,
+   "claims_held": [
+    "new-york+san-francisco+heidelberg",
+    "leiden",
+    "alkmaar"
+   ],
+   "commits": 9,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "san-francisco",
+     "trees": 2
+    },
+    {
+     "city": "heidelberg",
+     "trees": 1
+    },
+    {
+     "city": "new-york",
+     "trees": 1
+    },
+    {
+     "city": "potsdam",
+     "trees": 1
+    }
+   ],
+   "trees": 5,
    "logged": true
   }
  ],
