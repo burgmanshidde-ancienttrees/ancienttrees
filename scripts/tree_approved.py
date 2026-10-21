@@ -28,6 +28,7 @@ import datetime
 import glob
 import json
 import os
+import re
 import sys
 import urllib.request
 
@@ -109,15 +110,39 @@ def display_name(user_id):
         return None
 
 
+def full_note(sid):
+    key = os.environ.get("SUPABASE_SERVICE_KEY")
+    if not key:
+        return None
+    req = urllib.request.Request(
+        f"{SUPA}/rest/v1/sightings?select=note&id=eq.{sid}",
+        headers={"apikey": key, "Authorization": "Bearer " + key})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            rows = json.loads(r.read()) or []
+        return rows[0].get("note") if rows else None
+    except Exception:
+        return None
+
+
 def what_they_gave(sid):
     """What the reader filled in when adding the tree: age, trunk size, a note."""
+    # A note can carry what the fields do not: the Tangier fig's reader gave
+    # the trunk as "2.2 to 2.8 m" in prose and left girth empty, and the mail
+    # would have asked them for it (2026-10-21).
     sid = str(sid).lower()
     for l in (load(LEADS, {}).get("leads") or []):
         if str(l.get("sighting_id") or "").lower() == sid:
+            # data/leads/_sightings.json keeps 500 characters; the measure was
+            # in the third paragraph, so read the whole note when we can.
+            note = (full_note(sid) or l.get("note") or "").strip()
+            size = re.search(r"\d+(?:[.,]\d+)?\s*(?:cm|m|metres?|meters?|ft|feet)\b", note, re.I) \
+                and re.search(r"girth|circumference|diameter|trunk|around", note, re.I)
+            years = re.search(r"\d{2,4}\s*(?:years|yrs|jaar|ans|años|anni|jahre)", note, re.I)
             return {
-                "age": bool(l.get("age")),
-                "trunk": bool(l.get("girth_cm") or l.get("girth_hugs")),
-                "story": len((l.get("note") or "").strip()) >= 40,
+                "age": bool(l.get("age") or years),
+                "trunk": bool(l.get("girth_cm") or l.get("girth_hugs") or size),
+                "story": len(note) >= 40,
             }
     return {"age": False, "trunk": False, "story": False}
 

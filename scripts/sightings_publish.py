@@ -488,6 +488,9 @@ def address_of(user_id):
 # inbox is the one thing about the exchange they did not ask for. The app
 # already shows the status on their own tree, which is where the answer
 # belongs. The mail code stays for the day he wants it back.
+# Asked again 2026-10-21 for photos on existing trees, he said yes and then
+# withdrew it: "denk je niet dat mensen daar op een gegeven moment klaar mee
+# zijn", "doe maar niet". Mail fatigue outweighs the thanks.
 MAIL_WHEN_LIVE = False
 VERDICT_STATUS = {"approve": "published", "add": "published",
                   "reject": "declined", "hold": "checking"}
