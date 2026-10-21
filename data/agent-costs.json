@@ -4,6 +4,14 @@
   "2026-10-21": [
    {
     "date": "2026-10-21",
+    "target": "enrich: lisbon+seattle+washington-dc+nuremberg+freiburg+hallstatt+regensburg (10 trees)",
+    "kind": "verify",
+    "tokens": 65000,
+    "trees": 0,
+    "note": "3 improved (sea_020, sea_021 SDOT heritage record id plus autumn best_time; frb_008 best_time); 14 gaps dead-ended; e-gov.ooe.gv.at unreachable on 443 for hst_006"
+   },
+   {
+    "date": "2026-10-21",
     "target": "hst_006,hst_007,pot_011-014,rgb_006,rot_017,rot_018,srm_006,thm_001,wdc_018,wdc_020,wdc_021",
     "kind": "photo",
     "tokens": 150000,

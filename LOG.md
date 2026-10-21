@@ -17,6 +17,8 @@ Rung 1: the one queued sighting (lis_037, Lisbon dragon tree) was already the tr
 
 Photos on the roster: photo_hunt sweep queued candidates for 14 new trees; a photo-judge pass looked at 44 and approved 8 (hst_007, pot_012, pot_013, pot_014, rgb_006, thm_001, wdc_018, wdc_020), none held, 36 rejected; reverse one with `python3 scripts/photo_apply.py hold <tree_id> <candidate_url> --reason "..."`. Weakest: wdc_020 (over-processed colours, barriers) and wdc_018 (375x500 iNaturalist CC0). Open: wdc_018's iNaturalist GPS (6 m) could confirm its pin. Still no photo: hst_006, pot_011, rot_017, rot_018, srm_006, wdc_021.
 
+Enrichment, 7 proven cities (10 trees): verify pass improved 3. sea_020 and sea_021 got the SDOT Heritage Tree record id and an autumn best_time; frb_008 got an autumn best_time. 14 gaps dead-ended for 90 days. Not closed: hst_006's pin (e-gov.ooe.gv.at refused port 443 from this runner), lis_037 and frb_008 register and measurement (nothing found; the Ebringen NatURWALDpfad brochure PDF could not be read, pdftotext missing). SDOT diameter and height left out, units unconfirmed.
+
 Broken, not mine to fix from Linux: iOS app run 39580864787 failed `FlowWalk.testEveryFlowLeavesAWayBack` (search-to-a-tree: after "first-result" no tab bar, back button or dismiss; 229 passed, 1 failed). No ios/ commits since the last green run, so it is either data-driven (the first search result) or a flake; it needs a Mac session. For Hidde: nothing to do yet, the next scheduled ios.yml run says which.
 
 ## 2026-10-21 (retry window): the Lisbon dragon tree is live

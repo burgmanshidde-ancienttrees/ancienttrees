@@ -781,8 +781,8 @@
         "https://www.inaturalist.org/observations/390049639"
       ],
       "official_register": {
-        "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y)",
-        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47272%27&outFields=*&f=json"
+        "name": "SDOT Trees (Seattle Department of Transportation street tree inventory, Heritage Tree flag), no. TRE-47272",
+        "url": null
       },
       "access": "View from the public sidewalk at 16th Ave E and E Aloha St; the trunk stands on a private lot, so look from the pavement only.",
       "transport": "Capitol Hill Station (Link light rail) about 1.2 km, roughly 15 minutes on foot; King County Metro stops on 15th Ave E.",
@@ -798,6 +798,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: clear yellow, one of the most reliable autumn trees",
+        "kind": "colour"
       }
     },
     {
@@ -819,8 +827,8 @@
         "https://www.inaturalist.org/observations/370909571"
       ],
       "official_register": {
-        "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner Parks)",
-        "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1054309%27&outFields=*&f=json"
+        "name": "SDOT Trees (Seattle Department of Transportation tree inventory, Heritage Tree flag), no. TRE-1054309",
+        "url": null
       },
       "access": "Free, in Leschi Park (Seattle Parks), open 6 am to 10 pm per the city park page.",
       "transport": "King County Metro routes serve Lake Washington Blvd and Jackson St near Leschi, about 5 to 10 minutes on foot from the stop; confirm the route before travelling.",
@@ -836,6 +844,14 @@
         "license": null,
         "attribution": null,
         "status": "missing"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "label": "October to November: clear yellow, one of the most reliable autumn trees",
+        "kind": "colour"
       }
     }
   ]
