@@ -15,6 +15,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - **Live:** photographs on nyc_028 (Kingsland weeping beech), dre_028 (fingered horse chestnut), dre_010 (white elm, Königsbrücker Strasse); nyc_028 now has a photo, so Google can show it. dre_017 held: pre-2025 photos of a twin oak pair, one felled June 2025. Reversal: `photo_apply.py hold <id> <url> --reason revert`. About 60 iNaturalist candidates remain unjudged in the queue.
 - **Nothing else:** health.py flagged only that GitHub dropped 6 of 12 knocks. Spokane claimed then released (1 unmined row, under the six-candidate floor). No write pass: the writable pile is 1 READY lead plus held trees. A second viewing pass looked at the other 61 candidates and approved none (wrong subject or species, close-ups, or trunk ambiguity). Tooling note: photo_apply.py matches iNaturalist candidates by observation url, so verdicts for photos of one observation can land on the wrong one; feed it thumb urls. The sweep also re-adds about 93 already-judged candidates.
+- **Scout:** Chicago retried, stays stalled on licence. The Forest Preserves of Cook County champion layer (106 rows with GNSS coordinates) carries no licence and a sensitive-areas notice; those trees are already leads. Whether a county layer with no reuse restriction counts as open is Hidde's call; nothing imported. Leipzig claimed and released (1 tree to target).
 
 ## 2026-10-21 night run (19:53 UTC window): five trees live
 
