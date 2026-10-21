@@ -36,6 +36,7 @@ Web half: read /lisbon and the new Goethe-Institut dragon tree page (reader find
 App half (collect-describe, collect-identify, collect-intro, collect-place, collect-ticked, collection-tab-full; iPhone SE). Unlike yesterday, identify, place and ticked now show their own screens: "Which one is it?", "Where does it stand?" and "You found ..." read clearly and agree with themselves.
 
 - WARN APP: collect-describe is still the "Add a tree" start sheet (identical to collect-intro, over a photograph), so the describe step of the flow was not seen tonight; the sweep stops one screen early or the screen is not reachable.
+- NOTE APP: collection-tab-full, the sub-tab reads "Want to visit" while CLAUDE.md and the headline numbers call the list "Want to go"; one name for one list (PRODUCT_COPY.md). The two Collected tiles are the same placeholder drawing with only "Amsterdam" on them, so a collector cannot tell which tree is which (fixture data, so only worth a look if real trees without photographs render this way).
 - NOTE APP: collect-identify, the Wilhelminalinde row ends "Just off the Kalverstraat beside the Amsterdam Museum, 2.5..." so the line is cut inside a figure and the reader cannot tell what 2.5 was; end the clamp on a word or drop the trailing number.
 - NOTE APP: collect-ticked reads "You found The Wilhelminalinde" with a capital mid-sentence ("the Wilhelminalinde"), and "Lime, 128 years old" is a bare figure for a tree whose age is a planting date (Verify: state the basis; "planted 1898" or "about 128 years").
 
