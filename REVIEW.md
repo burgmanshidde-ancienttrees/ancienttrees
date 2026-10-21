@@ -30,6 +30,14 @@ Web half: read /lisbon and the new Goethe-Institut dragon tree page (reader find
 - WARN /lisbon (meta_description, og): "a nearly 2,850-year-old olive, a dragon tree nobody can age, and thirty-five more" names two trees plus thirty-five, 37, while data/cities/lisbon.json holds 36 trees after lis_037 went in; the count is over by one (SEO blueprint count promises; CLAUDE.md "when a place grows, its intro and meta grow with it"). Say "thirty-four more". question_meta ("and thirty-five more" after the olive) is right at 36.
 - NOTE /bamberg/great-lime-of-teuchatz (title, meta): "350 Year Old Tree" / "A 350-year-old" takes the low end of a legend-dated "roughly 350 to 400 years, if a local legend holds" (Verify: never sharpen a vague source). "Up to about 400 years" or the range would match the data.
 
+## 2026-10-21 (app half)
+
+App half (collect-describe, collect-identify, collect-intro, collect-place, collect-ticked, collection-tab-full; iPhone SE). Unlike yesterday, identify, place and ticked now show their own screens: "Which one is it?", "Where does it stand?" and "You found ..." read clearly and agree with themselves.
+
+- WARN APP: collect-describe is still the "Add a tree" start sheet (identical to collect-intro, over a photograph), so the describe step of the flow was not seen tonight; the sweep stops one screen early or the screen is not reachable.
+- NOTE APP: collect-identify, the Wilhelminalinde row ends "Just off the Kalverstraat beside the Amsterdam Museum, 2.5..." so the line is cut inside a figure and the reader cannot tell what 2.5 was; end the clamp on a word or drop the trailing number.
+- NOTE APP: collect-ticked reads "You found The Wilhelminalinde" with a capital mid-sentence ("the Wilhelminalinde"), and "Lime, 128 years old" is a bare figure for a tree whose age is a planting date (Verify: state the basis; "planted 1898" or "about 128 years").
+
 ## 2026-10-20
 
 Web half: read /freiburg (count now 8, intro "Seven are natural monuments; the eighth is a reader's find" agrees with the list), the new Schönberg Beech page (reader find, no sender name, no em dashes) and the moved Kam Tin Tree House. Two findings.
