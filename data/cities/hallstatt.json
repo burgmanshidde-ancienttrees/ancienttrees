@@ -338,10 +338,14 @@
       "how_to_recognise": "You can recognise it by its height, 27 metres when protected; the round-crowned copper beech 80 metres off is its neighbour. It stands about eight metres west of the Forstverwaltung building, opposite the Gemeindeamt.",
       "verify_notes": "Register nd147 (Land Oberösterreich Naturschutzbuch, protected 1980-12-18, parcel 206/4): Bergulme (Ulmus glabra), position 'opposite the Gemeindeamt Gosau, about 8 m west of the Forstverwaltung building'. Wikipedia list (reproducing the register): 27 m tall, one of the largest specimens of this rare species in Upper Austria. No girth or age in either source. Alive: not confirmed recently. lifecheck returned NONE; the only dated evidence is a Commons photograph taken 2015-10-23. Wych elm is exposed to Dutch elm disease, so flagged with 'register only, last seen 2015'. Coordinate is the register/Commons coordinate (same number on the Commons photo, not an independent fix), approximate. The register's own text gives the offset from a named building, which makes the spot findable at a glance. Neighbouring Blutbuche (ND148) is already live as hst_005, about 80 m away, so the two form one stop in Gosau.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bergulme_Gosau_NDM.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Stefan Hartig, via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-21",
+        "width": 3264,
+        "height": 4928
       }
     }
   ]
