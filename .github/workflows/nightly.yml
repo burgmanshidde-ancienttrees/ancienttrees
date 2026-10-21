@@ -258,6 +258,12 @@ jobs:
           # log would make every address look new.
           python3 scripts/private_store.py pull
           python3 scripts/contributor_reply.py --send
+          # A congratulation, with the link, the day a tree a reader ADDED goes
+          # live (Hidde, 2026-10-09). Once per tree; a photograph on a tree we
+          # already had still sends nothing. It runs before the invitation scan:
+          # an open ambassador seat rides in its P.S. (Hidde, 2026-10-21), and
+          # the scan then sees that reader as asked.
+          python3 scripts/tree_approved.py --send
           # The standard first contact (Hidde, 2026-10-02): a reader whose
           # photograph is live in a place with no ambassador is invited once,
           # from the same address. The badge follows their answer, by hand.
@@ -269,10 +275,6 @@ jobs:
           # 2026-10-06): one mail per ambassador per knock, listing the trees
           # that went live since the last one, never one mail per tree.
           python3 scripts/ambassador.py --heads-up --send
-          # And a congratulation, with the link, the day a tree a reader
-          # ADDED goes live (Hidde, 2026-10-09). Once per tree; a photograph on
-          # a tree we already had still sends nothing.
-          python3 scripts/tree_approved.py --send
           python3 scripts/private_store.py push
           if ! git diff --quiet data/ambassadors.json data/tree-approved-mailed.json; then
             git config user.name "claude[bot]"

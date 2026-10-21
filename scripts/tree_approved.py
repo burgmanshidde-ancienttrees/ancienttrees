@@ -147,7 +147,34 @@ def what_they_gave(sid):
     return {"age": False, "trunk": False, "story": False}
 
 
-def mail_for(name, tree, city_name, page, gave=None):
+AMBASSADORS = os.path.join(ROOT, "data", "ambassadors.json")
+
+
+def seat_open(uid, slug):
+    """True when this place has no ambassador and this reader was never asked
+    for it, nor asked never to be mailed (ambassador.py's own skip rules)."""
+    doc = load(AMBASSADORS, {})
+    if any(e.get("place_slug") == slug for e in doc.get("ambassadors", [])):
+        return False
+    ref = people.ref(uid)
+    for i in doc.get("invited", []):
+        if people.ref(i.get("user_id")) == ref and i.get("place_slug") in (slug, "*"):
+            return False
+    return True
+
+
+def note_invited(uid, slug, place, tree_name):
+    """Record the P.S. as the invitation, so ambassador.py --invite-scan does
+    not send a second mail for the same place."""
+    doc = load(AMBASSADORS, {})
+    doc.setdefault("invited", []).append({
+        "user_id": people.ref(uid), "place_slug": slug, "place_name": place,
+        "date": datetime.date.today().isoformat(), "trees": [tree_name],
+        "note": "asked in a P.S. under the congratulation mail (tree_approved.py)"})
+    save(AMBASSADORS, doc, indent=2)
+
+
+def mail_for(name, tree, city_name, page, gave=None, seat=False):
     """THE ASK FOLLOWS WHAT THEY GAVE (Hidde, 2026-10-20, on the Freiburg beech,
     which arrived as a photograph and a pin and nothing else: "ask if they have
     more info on the tree (age, girth, story etc) ... make that standard unless
@@ -176,6 +203,14 @@ def mail_for(name, tree, city_name, page, gave=None):
         f"{ask}\n\n"
         f"Ancient Trees\n{BASE_URL}\n"
     )
+    # THE AMBASSADOR ASK RIDES ALONG, SMALL (Hidde, 2026-10-21: "is het niet
+    # subtieler om je mail te schrijven en eronder minder groot also: city is
+    # still looking for an ambassador - let us know if your interested"). The
+    # Freiburg reader got the congratulation and a separate invitation on the
+    # same day; one mail with a P.S. replaces the second.
+    if seat:
+        body += (f"\nP.S. {city_name} is still looking for an ambassador, somebody who adds "
+                 f"photos and keeps an eye on the list. Let us know if you're interested.\n")
     return subject, body
 
 
@@ -200,9 +235,13 @@ def main(argv):
         if not addr:
             print(f"  {tree['id']}: no address for the account (no service key, or the account is gone)")
             continue
-        subject, body = mail_for(display_name(people.uid(uid)), tree, city_name, page, what_they_gave(sid))
+        seat = seat_open(uid, city_slug)
+        subject, body = mail_for(display_name(people.uid(uid)), tree, city_name, page,
+                                 what_they_gave(sid), seat=seat)
         if send_mail(addr, subject, body, really, sid):
             done[sid] = {"tree_id": tree["id"], "date": datetime.date.today().isoformat()}
+            if seat:
+                note_invited(uid, city_slug, city_name, tree["name"])
             sent += 1
     if really:
         save(MAILED, mailed)
