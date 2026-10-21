@@ -203,6 +203,16 @@ belongs in Helpful Details or nowhere.
 - NO: "It comes with version 1.0.3: Discover now follows the season of your own half of the world."
 - YES: "What people get: which trees near them are at their best now, a walk to one, a photograph that collects it."
 
+**a reader who offers a call gets the call, and her opinion is the ask** (added 2026-10-15)
+
+- NO: "Op de Helmond-pagina staan nu 19 bomen. Zit jouw favoriet ertussen?"
+- YES: "Ik ben benieuwd wat je van het initiatief vindt. Dus we kunnen zeker even bellen."
+
+**who are you is answered with the About story in one flow, not a product definition** (added 2026-10-21)
+
+- NO: "Goed dat je het vraagt! Ik ben Hidde, ik woon in Baarn, zo'n 30 minuten onder Amsterdam. Ancient Trees is een kaart van bijzondere oude bomen..."
+- YES: "Ik ben Hidde, ik woon in Baarn en werk aan Ancient Trees, en dan het verhaal van de About-pagina (Lisabon, geen expert maar fan)"
+
 ## What to do instead, in order
 
 1. **First sentence: the reader or the world, never us and never the market.**

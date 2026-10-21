@@ -260,6 +260,23 @@ Each is the 10-10 rule below, broken in a new way. Read this section before draf
 
 On a reply to a reader who reported a dead yew and had sent photographs of two other trees. Thank them for each thing they gave, in its own sentence (the report, the photographs), and close with "Thanks again". Generous thanks is not the repeated thanks the copy-check warns about: that is the same thank-you pasted twice for one thing.
 
+## The tree ask goes once per thread (Hidde, 2026-10-20)
+
+A thank-you to Richard Weddle (he had pointed us to the Glasgow Treelovers) closed with "Is there a Glasgow tree of your own?", though our first reply had already asked for help adding trees. His verdict: **"just say thank you, stop asking for more tree input when this already happened earlier in the conversation."** Read the thread before adding the ask. If it was asked once, the reply is a thank-you and stops. mailcheck's ASKING TWICE catches it.
+
 ## Every reply activates, with the ask that fits the person (Hidde, 2026-10-10)
 
 "we moeten mensen een beetje activeren naar of de app downloaden of controleren of ambassadeur. net wat gepast is." A thank-you alone ends the thread. Close every reply with the one ask that fits who they are: a forester or arborist is asked which tree we miss; a local enthusiast is asked to check the list or offered the ambassador role (described honestly, see drafts/ambassador-mails.md); somebody walking past trees is pointed at the app. One of them, never all three.
+
+
+## Calibration 2026-10-15: a careful expert who asks who we are (Dr. Joachim Bauer, SDW Koeln)
+
+Hidde rewrote my draft, which answered Bauer's questions as facts about the data and then asked for his list. His version: "Ik ben Hidde, ik woon in Baarn, vlak bij Amsterdam. En laat ik gelijk eerlijk zijn: ik ben geen bomenexpert, maar een fan van bomen." Then honesty that the selection criteria are still being found ("bomen die de moeite waard zijn om een detour voor te nemen"), the goal (not botanically perfect, but a large public interested in trees), and the ask turned into a request for his opinion and advice, with help finding trees last. Lesson: when an expert is wary, answer as a person and ask for his judgement; do not defend the method or ask for his material first.
+
+## Calibration 2026-10-21: a network that offers to cooperate (Harald von der Stein, N-BfB Koeln)
+
+Harald asked what would help and how we picture working together. My draft listed what we look for, asked for three trees and left the cooperation unanswered. Hidde rewrote it: thank him for the long reply and for wanting to help; we are still building, so trees, locations, photos and stories all help; sharing the app in their newsletter or a link on their site helps enormously; walks one day, still the future; an online call is welcome, in English or Dutch since he speaks no German. Lesson: when someone offers cooperation and asks how, answer every part of the question generously; their offer is the occasion for the newsletter and link ask, and a call they hinted at is accepted, not stepped around.
+
+## Calibration 2026-10-15: a journalist who asked who you are (Wibren, Omrop Fryslan)
+
+I added a Leeuwarden line (34 trees live) and the app link to his own short answer. His verdict: "dat van leeuwarden weet hij al, dat van die app hoeft er ook niet in." A journalist asking about the person gets the person: answer his questions, give the phone number, stop. Do not add what he already knows, and the app line is not automatic in a press reply. Also: Baarn is "zo'n 30 minuten onder Amsterdam", not "vlak bij".
