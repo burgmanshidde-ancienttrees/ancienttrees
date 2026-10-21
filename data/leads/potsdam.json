@@ -92,11 +92,12 @@
    "place": "Koenigswald, west of Sacrow, 'Strasse nach Sacrow'",
    "latitude": 52.425965,
    "longitude": 13.08178,
-   "status": "lead",
+   "status": "published",
    "reason": "City page (fetched 2026-10-20): girth 405 cm, Flur 3 Flurstueck 35, 'westlich von Sacrow im Koenigswald'. OSM node 8679244125 (circumference 4.05) sits exactly on the register coordinate, so not independent. Forest tree with a register point only: no photograph, no recent observation (lifecheck NONE), pin cannot be placed on a crown. Reason: no photo or exact pin in reach. Public forest, so access is not the issue.",
    "source_url": "https://www.potsdam.de/de/content/naturdenkmal-nr-16-rotbuche-bei-sacrow",
    "species": "Beech (Fagus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "published_as": "pot_015"
   },
   {
    "name": "Naturdenkmal Nr. 27 Caucasian Wingnut of Berliner Strasse 52 (Pterocarya fraxinifolia)",

@@ -208,6 +208,24 @@
     "note": "nyc_028, nyc_029 verified but held (descendant tree, implausible register diameter); NYC Parks site 405"
    }
   ],
+  "2026-10-21": [
+   {
+    "date": "2026-10-21",
+    "target": "san-francisco",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 2,
+    "note": "Pleasant blue gums and Third/Yosemite pepper flagged; Garfield sequoia found dead; 2 leads"
+   },
+   {
+    "date": "2026-10-21",
+    "target": "san-francisco+heidelberg+new-york+potsdam",
+    "kind": "write",
+    "tokens": 145000,
+    "trees": 5,
+    "note": "sfo_009, sfo_010, hei_007, nyc_028, pot_015 merged with de overlays; inn_007 and Pelgrimvaderskerk beech held on access"
+   }
+  ],
   "2026-08-05": [
    {
     "target": "Napoli",

@@ -31,7 +31,9 @@
    "longitude": 12.10607131,
    "reason": "VERIFIED 2026-10-20 as rgb_006 in data/research/regensburg-verified.json (flagged: bus time unverified).",
    "species": "Oak (Quercus sp.)",
-   "species_basis": "genus read from the tree's own name; ask the reader which species"
+   "species_basis": "genus read from the tree's own name; ask the reader which species",
+   "status": "published",
+   "published_as": "rgb_006"
   },
   {
    "name": "Naturdenkmal Dorflinde in Eilsbrunn, Gde. Sinzing",

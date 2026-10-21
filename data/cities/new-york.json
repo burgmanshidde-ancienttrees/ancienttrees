@@ -4,9 +4,9 @@
   "face_tree_id": "nyc_004",
   "status": "needs_curation",
   "intro": "New York City runs a government registry for this: the Parks Department's Great Trees of New York City list, started in 1985 and expanded in 2024 after a nomination drive drew more than 270 submissions. Most trees here carry that designation; the rest earned their place another way, like a magnolia that is a city landmark and a pear that came out of Ground Zero alive. The five boroughs each hold at least one. Some are colonial-era survivors; one was planted so a park would have something to be famous for.",
-  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and twenty-five more.",
+  "meta_description": "NYC runs an official Great Trees registry. Meet a 300-year-old Greenwich Village elm, a wild tulip tree older than the city itself, and twenty-six more.",
   "question_answer": "New York City's oldest tree is very likely the Queens Giant, a tulip tree in Alley Pond Park estimated between 350 and 450 years old by different measures, old enough to predate the Dutch colony of New Amsterdam entirely. It stands in a wooded section of the park in eastern Queens, reachable on foot from the Douglaston Long Island Rail Road station.",
-  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and 26 more trees.",
+  "question_meta": "NYC's oldest tree is likely the Queens Giant, a 350-450 year old tulip tree in Alley Pond Park. Its story, exact location, and 27 more trees.",
   "question_context": "The Queens Giant's claim to being New York City's oldest living thing rests on measurement rather than legend. At 133.8 feet, it is the tallest carefully measured tree in the five boroughs, and tulip trees of that height in undisturbed forest are reliably centuries old; the New York City Parks Department states it is at least 368 years old, while some arborists place the range as wide as 350 to 450. Either figure puts its germination before the 1664 English takeover of New Amsterdam, and some local accounts connect trees in this stretch of Alley Pond Park to 17th century land dealings between the Dutch West India Company and the Matinecock people who lived here first, though no source ties this specific trunk to a documented transaction. What is not in question is that it has spent its entire life essentially unmanaged, growing in what is now protected forest rather than a planted garden, which is rare enough in New York that the Parks Department calls it possibly the oldest living organism in the metropolitan area. Getting there: Douglaston station on the LIRR Port Washington line, then a short walk into Alley Pond Park's wooded trails.",
   "faq": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "q": "Are New York City's Great Trees free to see?",
-      "a": "Twenty-three of the twenty-seven stand in free public parks or cemeteries. The New York Botanical Garden charges general admission to its grounds, but the Thain Family Forest tree is within that same free-to-walk woodland once inside."
+      "a": "Twenty-four of the twenty-eight stand in free public parks or cemeteries. The New York Botanical Garden charges general admission to its grounds, but the Thain Family Forest tree is within that same free-to-walk woodland once inside."
     },
     {
       "q": "How does a tree become an official Great Tree of New York City?",
@@ -1110,6 +1110,36 @@
       "curation_status": "flagged",
       "location_precision": "approximate",
       "notes": "- On NYC Parks' Great Trees list (2024 update): Brooklyn Paper (fetched) says an English elm in Fort Greene Park was 'planted as part of the park's original design' by Olmsted and Vaux. The Parks entry itself (parks/fort-greene-park/facilities/great-trees) and its Tree Trail map return 405 to fetchers and were not read.\n- Age is derived from that: Olmsted and Vaux's redesign dates from the 1860s (gothamcanoe says planted perhaps late 1860s, 'unknown planting date'), so about 160 years, broad band; whether THIS elm belongs to that 1860s planting is the paper's claim and the Parks text's, not independently dated. Bridge-claim caution: do not state an exact planting year.\n- Size: gothamcanoe (undated blog) eyeballs the trunk at 'perhaps 10 feet' diameter and about 80 ft tall, calling it the largest tree in the park barring one rival, one of 37 elms among 760 trees. A search summary quoted the Parks entry as a 68 in trunk diameter (about 173 cm, girth about 540 cm) and about 80 ft; I could NOT see that number on a fetched page, so it is not recorded as girth_cm. The blogger's 10 ft is an estimate and contradicts it: do not use either as fact.\n- Alive: lifecheck RECENT, iNaturalist 2026-08-12 (390691522) in the park's east side; proves a tree photographed there, not which trunk. Park-wide tree removals in the renovation (Wikipedia) are a risk to check; the Parks Great Tree status suggests it is protected.\n- Pin: park-level, east side only; no tree-level coordinate found: approximate. Parks Tree Trail map PDF (B032) would place it but is blocked.\n- Distance: the Hattie Carthan Magnolia (nyc_021) is about 2.2 km east and the MacDonough ginkgo (nyc_024) about 2.7 km south-east; a Brooklyn day, not one walk. Prospect Park trees (nyc_003, nyc_015, nyc_016) are about 4 km south."
+    },
+    {
+      "id": "nyc_028",
+      "name": "The Weeping Beech of Weeping Beech Park",
+      "species": "Weeping Beech (Fagus sylvatica 'Pendula')",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Weeping Beech Park, 37th Avenue at Parsons Boulevard, Flushing, Queens",
+        "latitude": 40.7636,
+        "longitude": -73.8242,
+        "neighbourhood": "Flushing, Queens"
+      },
+      "story": "In December 1998 a tree in Flushing was given a funeral. The weeping beech that had stood here since 1847 had been declared dead by the Parks Department, and the following March a ten-foot section of its trunk was kept as a memorial.\n\nThat original arrived from Belgium as a cutting, brought over by Samuel Bowne Parsons and planted in 1847. By 1966, when the city made it a landmark, it spread 85 feet, stood 65 feet tall and measured 14 feet round.\n\nThis page is about what came after. The park named for it holds a grove of weeping beeches descended from the 1847 tree, and a large weeping beech now stands on the original's spot, behind the Kingsland Homestead. How it got there depends on who tells it. NY1 reported in 2022 that a cross-section of the old trunk was replanted on the same ground and a new tree grew there; the Queens Chronicle describes eight young trees around the stump as offshoots. Either way it is a descendant, and that is what we call it.\n\nNobody has published an age or a girth for the living tree, so we give neither. If you know when it took the old one's place, tell us.\n\nThe park is free. Look too for the big Cedar of Lebanon in the playground and the Golden Larch on the 37th Avenue sidewalk. Our pin marks the park rather than the trunk.",
+      "how_to_recognise": "You can recognise it as the large weeping beech behind the Kingsland Homestead, on the spot where the 1847 original stood. Young weeping beeches, offshoots of the old tree, grow around the old stump.",
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Weeping_Beech_(Queens)",
+        "https://www.ny1.com/nyc/all-boroughs/human-interest/2022/08/15/a-massive-weeping-beech-tree-grows-in-flushing",
+        "https://www.qchron.com/news/north/historic-douglaston-beech-tree-has-beginnings-in-flushing/article_f624e606-e073-5c73-9201-4a4403cf7319.html"
+      ],
+      "access": "Free, public NYC park (playground and beech grove behind the Kingsland Homestead); the two museum houses keep their own hours.",
+      "transport": "Flushing-Main St (7 train) station is the nearest hub; walk time not measured.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "THE ORIGINAL IS DEAD; this entry is the living replacement/offspring only. Original: cutting brought from Belgium by Samuel Bowne Parsons, planted 1847, NYC Landmark 1966 (spread 85 ft, height 65 ft, girth 14 ft then), declared dead by Parks 1998, funeral December 1998, a 10 ft trunk section kept as memorial March 1999 (Wikipedia). Alive today: Wikipedia says the park has a grove of weeping beeches descended from the 1847 original and, as of 2022, 'a large weeping beech occupies the site of the original'. NY1 (16 Aug 2022): a cross-section of the old trunk was replanted on the same spot and a new tree now stands there, behind Kingsland Homestead. Queens Chronicle: eight young trees around the stump are offshoots. Sources differ on whether the big tree is a replanting or offspring: state as 'descendant'. No age or girth source for the living tree; leave empty. Lifecheck RECENT: iNaturalist observation 2026-07-24 within range (https://www.inaturalist.org/observations/384756042). Pin is the Wikidata Q60748087 coordinate for the park, not the trunk. Also in the park per Wikipedia: Golden Larch on 37th Ave sidewalk, large Cedar of Lebanon in the playground, abutting Northern Red Oak (49 in diameter) and White Oak (50 in), both over 80 ft; unpinned, left as leads. Douglaston weeping beech (maybe a first cutting, kept by the Douglaston Garden Club) is separate and unverified. Great Trees id=115 not readable (405). Write pass 2026-10-21: species common name aligned to the canonical 'Weeping Beech' used on other pages (same Latin name)."
     }
   ]
 }

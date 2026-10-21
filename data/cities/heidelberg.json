@@ -2,17 +2,17 @@
   "city": "Heidelberg",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Heidelberg protects six designated trees, from a hollow, cable-strapped linden by the funicular's upper station to a stand of horse chestnuts on the way up to the castle. Most carry no recorded age, only a designation date, so this page says so plainly rather than guessing. The Molkenkur Linden is the closest to a documented age, put at roughly 200 years by the local paper. All six are free to visit, and five of six pins are approximate rather than fixed at the trunk.",
+  "intro": "Heidelberg protects seven designated trees, from a hollow, cable-strapped linden by the funicular's upper station to a stand of horse chestnuts on the way up to the castle and a pair of oaks on a forest track above Ziegelhausen. Most carry no recorded age, only a designation date, so this page says so plainly rather than guessing. The Molkenkur Linden is the closest to a documented age, put at roughly 200 years by the local paper. All seven are free to visit, and six of seven pins are approximate rather than fixed at the trunk.",
   "meta_description": "Heidelberg's ancient trees: a hollow, cable-strapped linden above the castle, horse chestnuts, a rare hybrid linden, oaks and more. All free.",
   "question_meta": "Heidelberg's best-documented old tree is the Molkenkur Linden above the castle, put at roughly 200 years by the local paper. Where it stands.",
-  "question_answer": "The closest thing to a documented age among Heidelberg's designated trees belongs to the Molkenkur Linden, hollow inside and held together with cables, put at roughly 200 years by the Rhein-Neckar-Zeitung. It stands at the Molkenkur viewpoint above Heidelberg Castle. The other five trees on this page carry no recorded age at all, only the date they were designated a natural monument.",
-  "question_context": "The 200-year figure for the Molkenkur Linden comes from a newspaper feature rather than a growth-rate reading or a ring count, and this page carries it as a loose middle point, 150 to 250 years, rather than a precise number. The trunk is genuinely hollow, and the crown has been held together with steel cables for twenty years, a maintenance choice the city has committed to rather than felling it. Nothing else here has comparable evidence. The Schlossberg Beech, the Neuenheimer Landstrasse Swamp Cypress, the Zwingerstrasse Horse Chestnuts, the Bergstrasse Crimean Linden and the Ringstrasse Oak are each documented only by a state register entry giving a name, a coordinate and a designation date between 1939 and 1986, with no age, girth or description attached to any. Five of the six pins here come from that register's own coordinate rather than a reading at the trunk, hence approximate: expect the right stretch of street or garden rather than the exact spot. Where a tree's age or position is unknown, this page states that rather than inventing a number, and asks a visitor who can measure or place it more precisely to tell us.",
+  "question_answer": "The closest thing to a documented age among Heidelberg's designated trees belongs to the Molkenkur Linden, hollow inside and held together with cables, put at roughly 200 years by the Rhein-Neckar-Zeitung. It stands at the Molkenkur viewpoint above Heidelberg Castle. The other six trees on this page carry no recorded age at all, only the date they were designated a natural monument.",
+  "question_context": "The 200-year figure for the Molkenkur Linden comes from a newspaper feature rather than a growth-rate reading or a ring count, and this page carries it as a loose middle point, 150 to 250 years, rather than a precise number. The trunk is genuinely hollow, and the crown has been held together with steel cables for twenty years, a maintenance choice the city has committed to rather than felling it. Nothing else here has comparable evidence. The Schlossberg Beech, the Neuenheimer Landstrasse Swamp Cypress, the Zwingerstrasse Horse Chestnuts, the Bergstrasse Crimean Linden, the Ringstrasse Oak and the Münchelstrasse Oaks are each documented only by a state register entry giving a name, a coordinate and a designation date between 1939 and 1986, with no age, girth or description attached to any. Six of the seven pins here come from that register's own coordinate rather than a reading at the trunk, hence approximate: expect the right stretch of street or garden rather than the exact spot. Where a tree's age or position is unknown, this page states that rather than inventing a number, and asks a visitor who can measure or place it more precisely to tell us.",
   "hero_tree_id": "hei_001",
   "oldest_tree_id": "hei_001",
   "faq": [
     {
       "q": "What is the oldest tree in Heidelberg?",
-      "a": "The Molkenkur Linden above the castle is the best-documented, put at roughly 200 years by the local paper. The other five designated trees here carry no recorded age at all."
+      "a": "The Molkenkur Linden above the castle is the best-documented, put at roughly 200 years by the local paper. The other six designated trees here carry no recorded age at all."
     },
     {
       "q": "Why is the Molkenkur Linden hollow?",
@@ -20,11 +20,11 @@
     },
     {
       "q": "Are the pins for these trees exact?",
-      "a": "Five of the six are approximate: the coordinate comes from the state register's own map rather than a GPS reading taken at the trunk, so expect the right street or garden rather than the exact spot."
+      "a": "Six of the seven are approximate: the coordinate comes from the state register's own map rather than a GPS reading taken at the trunk, so expect the right street or garden rather than the exact spot."
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes, all six stand on open public ground: a viewpoint, a castle garden, streets and a tram stop. No ticket needed for any of them, though the castle courtyard itself is separately ticketed."
+      "a": "Yes. Six stand on open public ground: a viewpoint, a castle garden, streets and a tram stop. The Münchelstrasse oaks stand on or beside a public forest track above Ziegelhausen; keep to the track. No ticket needed for any of them, though the castle courtyard itself is separately ticketed."
     }
   ],
   "trees": [
@@ -265,6 +265,40 @@
         "name": "Naturdenkmal, Einzelgebilde (LUBW Schutzgebietssteckbrief), no. 82210001217",
         "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000004"
       }
+    },
+    {
+      "id": "hei_007",
+      "name": "The Münchelstrasse Oaks",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Münchelstrasse (forest track above Ziegelhausen), 69118 Heidelberg",
+        "latitude": 49.41711,
+        "longitude": 8.77402,
+        "neighbourhood": "Ziegelhausen"
+      },
+      "story": "On 5 April 1951 two pedunculate oaks on Münchelstrasse were made natural monuments on the same day, together with a lime a little further along the same track. Seventy-five years later all three are still in the register, and both oaks were photographed standing in November 2024.\n\nMünchelstrasse is not a town street but a forest track climbing above Ziegelhausen, the Heidelberg district on the Neckar east of the old town. The oaks are registered separately, as Münchelstrasse (1) and (2), about 70 metres apart, so this is a short walk between two trunks rather than a single stop. The lime, Linde Münchelstrasse, stands roughly 50 metres beyond the second oak.\n\nThat is close to everything on the record. The Baden-Württemberg register gives the names, the species and the date, and no girth, no height and no age. We have found no other source that does better, and we will not guess. A protection order in 1951 says somebody thought them worth keeping then; how old they already were, nobody wrote down. If you have put a tape round either trunk, or know why these two were singled out, tell us.\n\nOur pins come from the register's map rather than a GPS fix at the trunk, so expect to look around once you are on the track. We have not confirmed whether the ground at their feet is public, so stay on the path.",
+      "how_to_recognise": "You can recognise them as the two oaks on the Münchelstrasse forest track above Ziegelhausen, about 70 metres apart. A registered lime stands some 50 metres further along the same track.",
+      "verified_sources": [
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
+        "https://commons.wikimedia.org/wiki/Category:Natural_monuments_in_Heidelberg",
+        "https://nominatim.openstreetmap.org/reverse?lat=49.416813&lon=8.77382&format=jsonv2&zoom=18"
+      ],
+      "official_register": {
+        "name": "LUBW Schutzgebietsverzeichnis Baden-Württemberg, Naturdenkmal Einzelgebilde 82210001208 and 82210001209",
+        "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000027"
+      },
+      "access": "Stands on or beside Münchelstrasse, mapped in OpenStreetMap as a public track (highway=track, no access restriction seen). No source states opening conditions; evidence only.",
+      "transport": "Ziegelhausen, Heidelberg; bus to Ziegelhausen then an uphill walk on Münchelstrasse (exact stop and time not verified).",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Two separately registered pedunculate oaks, 82210001208 'Stieleiche Münchelstrasse (1)' (LUBW map centre 49.416813, 8.77382) and 82210001209 '(2)' (49.417398, 8.774223), about 70 m apart, folded into one entry. Both designated 1951-04-05. The register's 'Linde Münchelstrasse' (82210001211, 49.418177, 8.774663, also designated 1951-04-05, about 50 m further on) belongs to the same group and could be named in the story; no photo of it found. Coordinates are LUBW-derived map centres (de.wikipedia comment: 'von Kartenmittelpunkt (LUBW) abgeleitet'), so approximate; the Commons Object location on both photos is identical to the register centre, so it is not an independent GPS fix. Alive: both trunks photographed 2024-11-04 by Commons user Albrecht62 (CC BY-SA 4.0), files 'Stieleiche Münchelstraße-1.jpg' (pageid 154870714) and 'Stieleiche Münchelstraße-2.jpg' (pageid 154870908), Commons category Natural monuments in Heidelberg. Species: register name 'Stieleiche' plus Commons description; single register source, so flagged 'register only'. No girth, height or age found: LUBW Steckbriefe carry none (earlier pass 2026-10-14), no other source found in two searches. Age left empty; the page asks the reader. Photo route is open (photographs exist), judging the frame is for the photo pass. Not verified: whether the trunks stand on public ground or beside the track."
     }
   ]
 }
