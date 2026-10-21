@@ -62,8 +62,8 @@
     "score": null,
     "note": "nothing measurable about Dragon Tree"
    },
-   "verdict": "lead",
-   "reason": "Looked at it: a fine old Dracaena draco with a wide umbrella crown, in a garden cafe. Unlisted in any register and no article within 300 m; one reader only. Whether the Goethe-Institut garden is open without asking at a desk is not stated, so it waits as a lead until a source says the garden is public.",
+   "verdict": "publish",
+   "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
    "hidde": null,
    "agreed": null
   },
@@ -2272,6 +2272,34 @@
    "measure": null,
    "verdict": "hold",
    "reason": "Not a tree submission. A home office window scene: blinds, a clock, headphones on the sill, trees visible only distantly through the glass. Nothing to research.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:9b10ae23-bba4-4af8-a9ae-95b93aba9209",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "Dragon Tree in Lisbon",
+   "city": null,
+   "species": "Dragon Tree",
+   "photo": "p_742e4f4b38d1bead996f5a7d/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
+   "reader_note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Dragon Tree"
+   },
+   "verdict": "publish",
+   "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
    "hidde": null,
    "agreed": null
   }

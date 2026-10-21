@@ -1536,6 +1536,53 @@
         "url": null
       },
       "height_m": 4.4
+    },
+    {
+      "id": "lis_037",
+      "name": "The Dragon Tree of the Goethe-Institut Garden",
+      "species": "Dragon Tree (Dracaena draco)",
+      "age_estimate": "",
+      "age_min": null,
+      "age_max": null,
+      "location": {
+        "address": "Goethe-Institut Portugal, Campo dos Mártires da Pátria 37, Lisbon",
+        "latitude": 38.7207418820315,
+        "longitude": -9.14097573782063,
+        "neighbourhood": "Campo dos Mártires da Pátria (Santana)"
+      },
+      "how_to_recognise": "A grey, heavily forking dragon tree with a wide umbrella crown of leaf tufts, standing in the middle of the garden cafe's terrace.",
+      "story": "A reader found this one, in the garden of the Goethe-Institut at Campo dos Mártires da Pátria. The photograph shows a dragon tree, Dracaena draco, and it does not look like most trees. The trunk is thick and grey, and it splits into a thicket of forking limbs that run out sideways and then turn up, each ending in a tuft of stiff, sword-shaped leaves. Together they make a dense umbrella that reaches over the garden tables, so the cafe sits in its shade.\n\nDragon trees grow naturally on the Atlantic islands, the Canaries and Madeira among them, and they were planted in gardens across Portugal. Their branching is the whole point: a young plant is a single spike, and only with age does it begin to fork, so a crown this wide has had decades to build. We have no age or girth for this one, no register lists it, and the reader gave none.\n\nThe institute is housed in the Palácio Valmor, and Time Out Lisboa describes its garden as an esplanade with large trees and an old dragon tree, with a cafe that serves lunch. It is a short walk from the Weeping Fig of Campo Santana.\n\nIf you go, a tape around the trunk, a wider photograph, or anything you know about its age would make this page longer.",
+      "verified_sources": [
+        "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/goethe-institut"
+      ],
+      "found_by_reader": {
+        "sighting_id": "9b10ae23-bba4-4af8-a9ae-95b93aba9209",
+        "date": "2026-10-20"
+      },
+      "verify_notes": "2026-10-21: published from a reader's app photograph (sighting 9b10ae23, GPS fix at the tree) on Hidde's 2026-10-12 ruling. corroborate.py: no register entry within 100 m, no encyclopaedia article within 300 m. Open to the public: Time Out Lisboa lists it as a garden esplanade with a cafe (Mon-Thu 08:30-21:00, Fri 08:30-20:00, Sat 09:00-17:30, as listed, may be out of date), and the Goethe-Institut's own events page says visitors can use the garden terrace in summer. Species from the photograph. No age, no girth; the page asks. An earlier verdict held it as a lead on the access doubt; the Time Out listing settles that.",
+      "access": "Free to enter the garden through the institute at Campo dos Mártires da Pátria 37; it is run as a public garden cafe. Hours as listed by Time Out Lisboa: Mon to Thu 08:30 to 21:00, Fri to 20:00, Sat 09:00 to 17:30. Check before you go.",
+      "transport": "A short walk from Campo Santana (Campo dos Mártires da Pátria); Intendente and Martim Moniz metro stations are both about 10 minutes on foot.",
+      "photo": {
+        "url": "https://ancienttrees.app/photos/lis_037-the-dragon-tree-of-the-goethe-institut-garden.jpg",
+        "license": "Provided by a reader through the Ancient Trees app, all rights reserved",
+        "attribution": null,
+        "status": "approved",
+        "width": 1200,
+        "height": 1600,
+        "source": "contributor",
+        "contributor_user_id": "p_742e4f4b38d1bead996f5a7d",
+        "sighting_id": "9b10ae23-bba4-4af8-a9ae-95b93aba9209",
+        "note": "Photographed by a reader and sent through the app (date unknown); a viewing pass approved it on 2026-10-21: A reader's photograph of an unmapped dragon tree in the Goethe-Institut garden, Lisbon; published as a new tree on Hidde's 2026-10-12 ruling. Daylight, colour, the whole umbrella crown fills the frame, tables of the garden cafe beneath. Species seen: Dracaena draco, thick forking grey trunk, tufts of sword-shaped leaves at the branch tips. Not an open licence: ask before reuse elsewhere. No name is printed beside it (2026-09-04). Comes off the page when the account is deleted (scripts/photo_takedown.py)."
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": {
+        "kind": "reader GPS fix",
+        "sighting_id": "9b10ae23-bba4-4af8-a9ae-95b93aba9209",
+        "moved_m": 0,
+        "date": "2026-10-21",
+        "note": "The pin marks where a reader stood to photograph this tree; the photograph was checked to show it (CLAUDE.md 2026-09-08, made automatic 2026-10-05)."
+      }
     }
   ],
   "hero_tree_id": "lis_017"
