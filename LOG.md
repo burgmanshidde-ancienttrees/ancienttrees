@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-21 night run (19:53 UTC window): five trees live
+
+- **Live:** sfo_009 (Mary Ellen Pleasant's blue gums), sfo_010 (Third and Yosemite pepper), hei_007 (Münchelstrasse oaks), nyc_028 (weeping beech, descendant of the 1847 original), pot_015 (Königswald beech). None has a photograph, so Google will not show them. German overlays for hei_007 and pot_015 added. preflight 0 problems. prepare.py: 92 cities claimable, READY pile 3 (under 60, shelf refill flagged).
+- **Held:** inn_007 (pin on a house, private yard), Rotterdam Pelgrimvaderskerk beech (church garden, open two days a week), nyc_029 (duplicate-ish of nyc_003). Regensburg READY lead was already rgb_006 and is marked so.
+- **Found:** Garfield Square sequoia in San Francisco is a stump (moved to blocked). sfo_008's pin may sit about 300 m off the DataSF Quesada median; needs a look at aerial imagery.
+- **Breakage, separate:** iOS app run 39580864787 (FlowWalk back-way test) failed; needs a Mac, not touched. Rungs 1 to 3 otherwise clear.
+
 ## 2026-10-21 (session with Hidde): the Santranges well is closed for good
 
 Hidde has turned down the Santranges oak photograph (a garden well, not the oak) about ten times: "kun je ergens registreren dat die waterput al 10 keer is afgekeurd onthoud dat". No script looped; every session reopened the file and brought it back as news. Now `rejected` with `closed_by_hidde` in data/leads/_sightings.json, verdict `reject` with his answer in data/judgements.json, `rejected` in data/sightings-processed.json. New preflight check `check_a_closed_sighting_stays_closed()` fails if any of the three reopens. The reader's girth and age stay on the row; a new photograph of the oak arrives as a new sighting and is judged fresh.
