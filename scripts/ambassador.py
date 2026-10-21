@@ -322,7 +322,8 @@ def sync():
 INVITE_SUBJECT = "Your {place} trees"
 INVITE_BODY = (
     "Hi,\n\n"
-    "Thanks so much for adding {what} in {place}. {itis} live, for everybody to see:\n"
+    "Thanks so much for your photographs of {what} in {place}. They are on the trees' pages now, "
+    "for everybody to see:\n"
     "{links}\n\n"
     "We would love to make you our ambassador for {place}: somebody who adds photos, checks the "
     "facts and helps sharpen the list. What do you think of our {place} list, is it missing any, "
@@ -417,6 +418,12 @@ def invite_scan(send):
     for (uid, slug), pairs in sorted(_contributions().items()):
         names = [n for n, _ in pairs]
         if ours.is_ours(uid) or slug in covered or uid in badged or (people.ref(uid), slug) in already or people.ref(uid) in never:
+            continue
+        # TWO TREES BEFORE WE ASK (Hidde, 2026-10-21: "maybe we can do that if
+        # someone adds more than 1 tree in a city"). One photograph is a visit;
+        # two trees in one place is somebody who walks there. A reader who
+        # ADDED a tree was already asked in the P.S. of tree_approved.py.
+        if len(pairs) < 2:
             continue
         place = place_name(slug)
         what, itis = _what(names)
