@@ -745,7 +745,12 @@ struct MapTab: View {
             .opacity(sheetHeight == .full ? 0 : 1)
             .accessibilityHidden(sheetHeight == .full)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 10)
+            // The grip row above already carries its own air (Hidde,
+            // 2026-10-20: the grip stays as it is on every sheet), so the
+            // count adds none above it: 24 from the grip, 16 to the first
+            // card, which was 35 and 24 (measured in the simulator; the list
+            // itself starts flush under this strip).
+            .padding(.bottom, 11)
             .accessibilityIdentifier("map-count")
     }
 

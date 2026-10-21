@@ -231,7 +231,9 @@ struct CollectView: View {
                 .padding(.horizontal, 1)
             }
             .scrollClipDisabled()
-            .padding(.top, -6)
+            // The chip is 44 to hit and 32 to see; the overhang below lets
+            // the photos sit 16 under the chips rather than 21.
+            .padding(.top, -6).padding(.bottom, -3)
             .accessibilityIdentifier("collected-countries")
         }
     }
@@ -754,7 +756,8 @@ struct CollectView: View {
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("collect-lane")
-        .padding(.top, 4)
+        // 28 from the tags to the tab words, BrandSheet's gap between
+        // sections; the tab's own 12 above its word is most of it.
     }
 
     private func laneTab(_ title: String, _ which: Lane, id: String) -> some View {
@@ -1067,7 +1070,7 @@ struct CollectView: View {
     }
 
     @ViewBuilder private var whoYouAre: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 12) {
             whoRow
             // YOUR TAGS ON THEIR OWN ROW, under the whole header and level
             // with the page's left edge (Hidde, 2026-10-16: "the alignment is
@@ -1079,6 +1082,13 @@ struct CollectView: View {
                     HStack(spacing: 6) { tags }
                     VStack(alignment: .leading, spacing: 4) { tags }
                 }
+                // 44 to hit, the pill's own height to lay out (Hidde,
+                // 2026-10-20, the "midden" spacing pass): the ambassador
+                // tag's 44-point tap frame added ten invisible points above
+                // and below the tags. Always 44 tall here, so the overhang is
+                // the same with one tag or two.
+                .frame(minHeight: 44)
+                .padding(.vertical, -9.5)
             }
         }
     }

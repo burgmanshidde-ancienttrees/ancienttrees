@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-21 (session): less air in the map sheet and on My trees
+
+**Product (app, next build):** Hidde found the map sheet at its lowest stop and My trees "not using the space". Benchmarked (Polarsteps' profile measured, Google Maps' and Apple Maps' list sheets from their App Store screens), shown as now / middle / tight; he chose the middle and kept the grip where it is on every sheet. Built and measured in the simulator: at peek the first tree card shows 46 points above the tab bar instead of 29 (grip to "7 trees" 25, to the card 16); on My trees the photos start about 25 points higher (tags to tabs 27, was 41). Tap targets unchanged, BottomSheet untouched. Reference in CONVENTIONS.md, "Vertical rhythm of a profile header".
+
 ## 2026-10-21 (session with Hidde): Tangier fig live from a reader, and a stranger's photo with GPS is never parked again
 
 - **Product:** tng_001, The Moreton Bay Fig of the Mendoubia (Tangier), live as a lone tree page from a stranger's app photograph and three-paragraph note (sighting 2aa7147b, 2026-10-18). The story quotes them: the 800-to-1,000-year age on the signs against their 120 to 140 years, planted by the Mendoub's residency. Wikipedia's Mendoubia page is the written source. lis_037 (Lisbon dragon tree) now quotes its reader too.
