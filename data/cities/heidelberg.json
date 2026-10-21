@@ -282,10 +282,11 @@
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Heidelberg",
         "https://commons.wikimedia.org/wiki/Category:Natural_monuments_in_Heidelberg",
-        "https://nominatim.openstreetmap.org/reverse?lat=49.416813&lon=8.77382&format=jsonv2&zoom=18"
+        "https://nominatim.openstreetmap.org/reverse?lat=49.416813&lon=8.77382&format=jsonv2&zoom=18",
+        "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000027"
       ],
       "official_register": {
-        "name": "LUBW Schutzgebietsverzeichnis Baden-Württemberg, Naturdenkmal Einzelgebilde 82210001208 and 82210001209",
+        "name": "Naturdenkmal Stieleiche Münchelstraße (1) and (2), LUBW Baden-Württemberg, protected 1951-04-05, no. 82210001208, 82210001209",
         "url": "https://rips-dienste.lubw.baden-wuerttemberg.de/rips/ripsservices/apps/naturschutz/schutzgebiete/steckbrief.aspx?id=2219013000027"
       },
       "access": "Stands on or beside Münchelstrasse, mapped in OpenStreetMap as a public track (highway=track, no access restriction seen). No source states opening conditions; evidence only.",
