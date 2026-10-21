@@ -19,6 +19,8 @@ Photos on the roster: photo_hunt sweep queued candidates for 14 new trees; a pho
 
 Enrichment, 7 proven cities (10 trees): verify pass improved 3. sea_020 and sea_021 got the SDOT Heritage Tree record id and an autumn best_time; frb_008 got an autumn best_time. 14 gaps dead-ended for 90 days. Not closed: hst_006's pin (e-gov.ooe.gv.at refused port 443 from this runner), lis_037 and frb_008 register and measurement (nothing found; the Ebringen NatURWALDpfad brochure PDF could not be read, pdftotext missing). SDOT diameter and height left out, units unconfirmed.
 
+Supply: US/UK/DE/AT cities are full or walled (Vienna has 2 slots; claim released, wall written). Took the scouting RETRY, San Francisco: DataSF moved to data.sf.gov with renamed fields; 232 landmark rows, 30 not palms, kept in data/registers/san-francisco-landmark-trees.json (PDDL). Still stalled, nothing to publish from it; one lead worth a pass, the Moreton Bay Fig at 1580 Valencia St (72 in DBH, seen from the pavement). Verdict rewritten in data/register-scouting.json with `retried`.
+
 Broken, not mine to fix from Linux: iOS app run 39580864787 failed `FlowWalk.testEveryFlowLeavesAWayBack` (search-to-a-tree: after "first-result" no tab bar, back button or dismiss; 229 passed, 1 failed). No ios/ commits since the last green run, so it is either data-driven (the first search result) or a flake; it needs a Mac session. For Hidde: nothing to do yet, the next scheduled ios.yml run says which.
 
 ## 2026-10-21 (retry window): the Lisbon dragon tree is live

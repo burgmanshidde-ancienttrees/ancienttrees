@@ -52,11 +52,6 @@
       "released_at": "2026-10-14T21:25:52+00:00"
     },
     {
-      "slug": "vienna",
-      "kind": "verify",
-      "released_at": "2026-10-14T22:42:32+00:00"
-    },
-    {
       "slug": "washington-dc",
       "kind": "verify",
       "released_at": "2026-10-14T23:16:53+00:00"
@@ -140,6 +135,11 @@
       "slug": "nuremberg",
       "kind": "verify",
       "released_at": "2026-10-21T09:08:35+00:00"
+    },
+    {
+      "slug": "vienna",
+      "kind": "verify",
+      "released_at": "2026-10-21T15:04:21+00:00"
     }
   ]
 }
