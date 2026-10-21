@@ -43,6 +43,23 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIRST_BATCH = "2026-08-08"
 
 
+def strip_prefixes(subject):
+    """Lower-cased subject without any run of reply and forward prefixes.
+
+    Repeats until none is left, in any order: Harald von der Stein's
+    "Fw: Fwd: Welcher Baum in Köln fehlt uns noch?" (2026-10-20, a reply
+    forwarded on by Dr. Bauer) kept its "fwd:" under a single pass, so it
+    never matched our subject and Hidde had to name it himself."""
+    t = subject.strip().lower()
+    while True:
+        for p in ("re:", "fwd:", "fw:", "aw:", "antw:", "wg:", "r:"):
+            if t.startswith(p):
+                t = t[len(p):].strip()
+                break
+        else:
+            return t
+
+
 def our_subjects():
     """The subjects we sent, normalised. A reply keeps them behind "Re:".
 
@@ -60,10 +77,7 @@ def our_subjects():
     d = json.load(open(os.path.join(ROOT, "data", "outreach-sent.json")))
     out = set()
     for s2 in d["sent"]:
-        t = (s2.get("subject") or "").strip().lower()
-        for p in ("re:", "fwd:", "fw:", "aw:", "antw:", "r:"):
-            while t.startswith(p):
-                t = t[len(p):].strip()
+        t = strip_prefixes(s2.get("subject") or "")
         if len(t) > 12:
             out.add(t)
     return out
@@ -208,10 +222,7 @@ def main():
         h = email.message_from_bytes(hdr[0][1])
         frm = email.utils.parseaddr(h.get("From", ""))[1].lower()
         subj_peek = decode(h.get("Subject"))
-        subj_norm = subj_peek.strip().lower()
-        for pre in ("re:", "fwd:", "fw:", "aw:", "antw:", "r:"):
-            while subj_norm.startswith(pre):
-                subj_norm = subj_norm[len(pre):].strip()
+        subj_norm = strip_prefixes(subj_peek)
         # BOUNCES. A dead address answers from mailer-daemon, never from the
         # address we wrote to, so the sender filter above hid every one of
         # them: 146 mails out and this reader could not have told us that one
