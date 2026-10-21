@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-21 (session with Hidde): the Santranges well is closed for good
+
+Hidde has turned down the Santranges oak photograph (a garden well, not the oak) about ten times: "kun je ergens registreren dat die waterput al 10 keer is afgekeurd onthoud dat". No script looped; every session reopened the file and brought it back as news. Now `rejected` with `closed_by_hidde` in data/leads/_sightings.json, verdict `reject` with his answer in data/judgements.json, `rejected` in data/sightings-processed.json. New preflight check `check_a_closed_sighting_stays_closed()` fails if any of the three reopens. The reader's girth and age stay on the row; a new photograph of the oak arrives as a new sighting and is judged fresh.
+
+Also checked, nothing changed: no lead with a photograph is held back for being in Russia, India, Israel or Africa. The Tangier fig was the only one; Morocco's Cèdre Gouraud is dead and "Prayer trees in Egypt" is a Commons category, not a tree.
+
 ## 2026-10-21 (session): report a second thing on the same tree
 
 A reader told Hidde that after one report on a tree, "Something's wrong" was gone and the line only said "Thanks, that helps", so a second report meant the flag up top. Now the line stays on both surfaces (Google Maps keeps "Suggest an edit" the same way); a new report shows its own follow-up question. Live on the website with the next deploy; in the app from the next build. App build checked; the reported state was not looked at on screen (it needs a signed-in tap, which simctl cannot do).

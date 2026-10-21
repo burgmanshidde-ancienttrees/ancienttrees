@@ -1650,6 +1650,42 @@ def note_a_strangers_photo_with_gps_waits_for_nothing():
     return out
 
 
+def check_a_closed_sighting_stays_closed():
+    """A photograph Hidde closed is never reopened or shown to him again.
+
+    Hidde, 2026-10-21, on the Santranges oak whose photograph is a garden
+    well: "kun je ergens registreren dat die waterput al 10 keer is afgekeurd
+    onthoud dat". No script looped; session after session looked at the same
+    file again and wrote a fresh lead or hold, and each one came back to him.
+    `closed_by_hidde` on the lead in data/leads/_sightings.json carries his
+    words. Such a row stays `rejected`, its judgement keeps his answer (so the
+    inspect page skips it) and sightings-processed.json keeps it `rejected`.
+    A new photograph of the tree arrives as a new sighting id, so this never
+    blocks the tree itself."""
+    with open("data/leads/_sightings.json", encoding="utf-8") as fh:
+        leads = json.load(fh).get("leads", [])
+    with open("data/judgements.json", encoding="utf-8") as fh:
+        judged = {j.get("id"): j for j in json.load(fh).get("judgements", [])}
+    with open("data/sightings-processed.json", encoding="utf-8") as fh:
+        done = json.load(fh).get("done", {})
+    out = []
+    for r in leads:
+        if not r.get("closed_by_hidde"):
+            continue
+        sid = r.get("sighting_id", "?")
+        j = judged.get("lead:" + sid) or judged.get("sight:" + sid) or {}
+        if r.get("status") != "rejected":
+            out.append("sighting %s was closed by Hidde and is now '%s' again: %s"
+                       % (sid[:8], r.get("status"), r["closed_by_hidde"]))
+        if not j.get("hidde") or j.get("verdict") != "reject":
+            out.append("sighting %s was closed by Hidde but its judgement lost his answer, "
+                       "so the inspect page would show it again" % sid[:8])
+        if (done.get(sid) or {}).get("outcome") != "rejected":
+            out.append("sighting %s was closed by Hidde but sightings-processed.json no "
+                       "longer says rejected, so the inbox would judge it again" % sid[:8])
+    return out
+
+
 def note_a_young_tree_is_not_ancient():
     """A recorded age only counts as a reason when the age is actually old.
 
@@ -3524,6 +3560,7 @@ def main():
                 + check_contributor_photos_are_traceable()
                 + check_every_submission_got_a_verdict()
                 + check_a_reader_verdict_looked_at_the_photograph()
+                + check_a_closed_sighting_stays_closed()
                 + check_a_readers_new_tree_carries_their_photograph()
                 + check_a_readers_age_reaches_the_page()
                 + check_a_permission_covers_the_photographer_it_names()
