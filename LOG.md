@@ -21,6 +21,8 @@ Enrichment, 7 proven cities (10 trees): verify pass improved 3. sea_020 and sea_
 
 Supply: US/UK/DE/AT cities are full or walled (Vienna has 2 slots; claim released, wall written). Took the scouting RETRY, San Francisco: DataSF moved to data.sf.gov with renamed fields; 232 landmark rows, 30 not palms, kept in data/registers/san-francisco-landmark-trees.json (PDDL). Still stalled, nothing to publish from it; one lead worth a pass, the Moreton Bay Fig at 1580 Valencia St (72 in DBH, seen from the pavement). Verdict rewritten in data/register-scouting.json with `retried`.
 
+Page gaps: wrote the Willow Oak species intro (data/species/willow-oak.json) from its three Washington DC trees; pagegaps now shows none open.
+
 Broken, not mine to fix from Linux: iOS app run 39580864787 failed `FlowWalk.testEveryFlowLeavesAWayBack` (search-to-a-tree: after "first-result" no tab bar, back button or dismiss; 229 passed, 1 failed). No ios/ commits since the last green run, so it is either data-driven (the first search result) or a flake; it needs a Mac session. For Hidde: nothing to do yet, the next scheduled ios.yml run says which.
 
 ## 2026-10-21 (retry window): the Lisbon dragon tree is live
