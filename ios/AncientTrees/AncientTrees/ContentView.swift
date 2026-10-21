@@ -961,6 +961,14 @@ struct ContentView: View {
             if phase == .active, account.isSignedIn, !profiles.meLoaded {
                 Task { await reloadTheAccount() }
             }
+            // COMING BACK ASKS FOR NEW TREES TOO (Hidde, 2026-10-21: "why cant
+            // i find it in the app?", the Tangier fig an hour after it went
+            // live). The catalogue was checked only at a cold launch and on
+            // Home's pull to refresh, and iOS keeps the app in memory for days,
+            // so a phone could sit on an old list indefinitely. The check is the
+            // few-dozen-byte version feed; refresh() ignores a second call while
+            // one runs, so the launch and this never fetch twice.
+            if phase == .active { Task { await store.refresh() } }
         }
         .task {
             // AT LAUNCH TOO, not only on the transition (Hidde, 2026-08-29:
