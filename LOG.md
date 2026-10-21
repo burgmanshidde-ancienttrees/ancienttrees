@@ -14,7 +14,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-22 night run (22:59 UTC window): three photographs approved
 
 - **Live:** photographs on nyc_028 (Kingsland weeping beech), dre_028 (fingered horse chestnut), dre_010 (white elm, Königsbrücker Strasse); nyc_028 now has a photo, so Google can show it. dre_017 held: pre-2025 photos of a twin oak pair, one felled June 2025. Reversal: `photo_apply.py hold <id> <url> --reason revert`. About 60 iNaturalist candidates remain unjudged in the queue.
-- **Nothing else:** health.py flagged only that GitHub dropped 6 of 12 knocks. Spokane claimed then released (1 unmined row, under the six-candidate floor). No write pass: the writable pile is 1 READY lead plus held trees. I stopped here with most of the window left, which breaks the window rule.
+- **Nothing else:** health.py flagged only that GitHub dropped 6 of 12 knocks. Spokane claimed then released (1 unmined row, under the six-candidate floor). No write pass: the writable pile is 1 READY lead plus held trees. A second viewing pass looked at the other 61 candidates and approved none (wrong subject or species, close-ups, or trunk ambiguity). Tooling note: photo_apply.py matches iNaturalist candidates by observation url, so verdicts for photos of one observation can land on the wrong one; feed it thumb urls. The sweep also re-adds about 93 already-judged candidates.
 
 ## 2026-10-21 night run (19:53 UTC window): five trees live
 
