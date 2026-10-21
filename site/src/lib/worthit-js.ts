@@ -134,7 +134,7 @@ export const WORTHIT_JS = `
       { headers: { 'apikey': '${SUPABASE_KEY}', 'Authorization': 'Bearer ' + s.access_token } })
       .then(function(r) { return r.ok ? r.json() : []; })
       .then(function(rows) {
-        var st = state(tree);
+        var st = state(tree), seenReport = false;
         (rows || []).forEach(function(row) {
           var why = String(row.why || '');
           // Newest first, so the FIRST vote-shaped row is the standing one.
@@ -146,8 +146,12 @@ export const WORTHIT_JS = `
               st.vote = false;   // decided: no standing vote
             }
           }
-          if (why.indexOf('report detail') === 0) st.detailed = true;
-          else if (why.indexOf('report') === 0) st.reported = true;
+          // Newest first, so only the detail written AFTER the latest report
+          // closes that report's question; an older one belonged to an
+          // earlier report (several per tree since 2026-10-21).
+          if (why.indexOf('report detail') === 0) {
+            if (!seenReport) st.detailed = true;
+          } else if (why.indexOf('report') === 0) { st.reported = true; seenReport = true; }
         });
         if (st.vote === false) st.vote = null;
       })
@@ -164,7 +168,7 @@ export const WORTHIT_JS = `
   }
   function openWhy(box, heading) {
     var why = box.querySelector('.worthit-why');
-    if (!why || state(box.dataset.tree).reported) return;
+    if (!why) return;
     var q = why.querySelector('.worthit-q');
     if (q) q.textContent = heading;
     why.hidden = false;
@@ -178,11 +182,22 @@ export const WORTHIT_JS = `
   // it is"), never a redirect to the form: the Google Maps convention is
   // "Add details (optional)" inside the same sheet, and sending people away
   // for an optional sentence lost the context when they came back.
+  //
+  // "Something's wrong" STAYS after a report, so the same reader can report a
+  // second thing (a reader, 2026-10-21: after one report the only way left was
+  // the flag up top). Google Maps keeps "Suggest an edit" in place after you
+  // send one; the thanks is the confirmation, not the end of the control.
   function reportDone(box) {
     var tree = box.dataset.tree;
     show(box, '.worthit-why', false);
-    show(box, '.worthit-report', false);
-    show(box, '.worthit-thanks', true);
+    var rep = box.querySelector('.worthit-report');
+    if (rep) rep.setAttribute('aria-expanded', 'false');
+    var thanks = box.querySelector('.worthit-thanks');
+    if (thanks) {
+      if (!thanks.dataset.orig) thanks.dataset.orig = thanks.textContent;
+      thanks.textContent = thanks.dataset.orig;
+      thanks.hidden = false;
+    }
     var form = box.querySelector('.worthit-detail');
     if (!form) return;
     if (state(tree).detailed) {
@@ -295,6 +310,11 @@ export const WORTHIT_JS = `
         }
         why.hidden = !open;
       }
+      // The chips replace the last report's thanks and question while open.
+      if (state(tree).reported) {
+        show(box, '.worthit-thanks', !open);
+        show(box, '.worthit-detail', !open && !state(tree).detailed);
+      }
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
       return;
     }
@@ -323,9 +343,11 @@ export const WORTHIT_JS = `
       return;
     }
 
-    if (state(tree).reported) { reportDone(box); return; }
     state(tree).reported = true;
+    state(tree).detailed = false;
     state(tree).reason = btn.dataset.reason;
+    var ta = box.querySelector('.worthit-detail textarea');
+    if (ta) ta.value = '';
     send(box, 'report', btn.dataset.reason);
     reportDone(box);
   }

@@ -51,7 +51,12 @@ final class MyVotes {
     func setVote(_ treeId: String, _ value: String) {
         if value.isEmpty { byTree[treeId] = nil } else { byTree[treeId] = value }
     }
-    func markReported(_ treeId: String, reason: String) { reports[treeId] = reason }
+    /// A second report on the same tree is a new case, so it gets its own
+    /// follow-up question rather than the first one's thanks.
+    func markReported(_ treeId: String, reason: String) {
+        reports[treeId] = reason
+        detailed.remove(treeId)
+    }
     func markDetailed(_ treeId: String) { detailed.insert(treeId) }
 
     /// Signing out takes them off the screen, exactly as it takes the
@@ -113,6 +118,8 @@ final class MyVotes {
             // down was removed on 2026-09-04.
             if why.hasPrefix("report detail") { saidMore.insert(tree); continue }
             if why.hasPrefix("report") {
+                // A later report reopens its own follow-up question.
+                saidMore.remove(tree)
                 // "report: wrong location" -> "wrong location", which is the
                 // key the follow-up question is looked up under.
                 said[tree] = why.contains(": ")
@@ -181,33 +188,34 @@ struct WorthItView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            if !reported {
-                // ITS OWN ENTRY, never nested under the vote (2026-08-16:
-                // "je kunt een boom niet leuk vinden of niet de moeite vinden
-                // zonder dat er iets mis is"). With the thumbs down gone this
-                // is the only way in, which is what the website has done all
-                // along.
-                Button { whyOpen.toggle() } label: {
-                    Text("Something's wrong")
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(Brand.inkSoft)
-                        .underline()
-                        .frame(minHeight: 44)
-                        .contentShape(.rect)
-                }
-                .buttonStyle(.plain)
-                // The 44-point target stays for the finger; the layout gets
-                // back what a line of footnote does not need, so the gaps
-                // above and below match the rest of the page (2026-09-27).
-                .padding(.vertical, -13)
-                .accessibilityIdentifier("worthit-report")
+            // ITS OWN ENTRY, never nested under the vote (2026-08-16:
+            // "je kunt een boom niet leuk vinden of niet de moeite vinden
+            // zonder dat er iets mis is"). With the thumbs down gone this
+            // is the only way in, which is what the website has done all
+            // along. It STAYS after a report: a reader who reported a wrong
+            // pin found no way to also say the tree was hard to reach
+            // (2026-10-21). Google Maps keeps "Suggest an edit" in place
+            // after you send one, the thanks is only the confirmation.
+            Button { whyOpen.toggle() } label: {
+                Text("Something's wrong")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(Brand.inkSoft)
+                    .underline()
+                    .frame(minHeight: 44)
+                    .contentShape(.rect)
             }
-            if whyOpen && !reported {
+            .buttonStyle(.plain)
+            // The 44-point target stays for the finger; the layout gets
+            // back what a line of footnote does not need, so the gaps
+            // above and below match the rest of the page (2026-09-27).
+            .padding(.vertical, -13)
+            .accessibilityIdentifier("worthit-report")
+            if whyOpen {
                 Text("What's wrong? (optional)")
                     .font(.footnote.weight(.semibold))
                 chipRow
             }
-            if reported {
+            if reported && !whyOpen {
                 Text(detailSent ? "Thanks, that helps." : "Thanks, we'll check it.")
                     .font(.footnote).foregroundStyle(.secondary)
                 if !detailSent, let ask = Self.asks[reason] {
@@ -249,6 +257,7 @@ struct WorthItView: View {
         Button(label) {
             guard account.isSignedIn else { signingIn = true; return }
             votes.markReported(tree.id, reason: reason)
+            detail = ""
             whyOpen = false
             send("report", reason)
         }

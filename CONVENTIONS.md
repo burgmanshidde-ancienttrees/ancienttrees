@@ -1074,6 +1074,12 @@ needs sign-in, and the account is the reply channel.
 
 Recorded from our own corpus, 2026-08-21.
 
+After a report the entry point stays where it was: Google Maps keeps "Suggest
+an edit" on the place after you send one, and the thanks is only the
+confirmation. A reader can report a second thing on the same tree, and that
+report gets its own follow-up question. Added 2026-10-21, after a reader found
+the report line gone once they had used it.
+
 ---
 
 ## Search
