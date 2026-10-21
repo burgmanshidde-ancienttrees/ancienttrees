@@ -2,36 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-30T19:20:19+00:00",
-   "date": "2026-08-30",
-   "run_id": "33330077885",
-   "minutes": 20.9,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 162,
-   "denials": 29,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(nohup), Bash(python3), Bash(rm), Bash(wc)",
-   "ended": "success",
-   "tokens": 29267503,
-   "claims_held": [
-    "taormina"
-   ],
-   "commits": 13,
-   "cities_touched": 2,
-   "cities": [
-    {
-     "city": "coimbra",
-     "trees": 4
-    },
-    {
-     "city": "rothenburg-ob-der-tauber",
-     "trees": 4
-    }
-   ],
-   "trees": 8,
-   "logged": true
-  },
-  {
    "started": "2026-08-30T22:13:04+00:00",
    "date": "2026-08-30",
    "run_id": "33338532177",
@@ -24198,6 +24168,25 @@
    "tokens": null,
    "claims_held": [],
    "commits": 0,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": false
+  },
+  {
+   "started": "2026-10-21T02:56:32+00:00",
+   "date": "2026-10-21",
+   "run_id": "39535741969",
+   "minutes": 0.3,
+   "minutes_basis": "wall clock: the agent wrote no duration, which usually means the job was cancelled at its timeout",
+   "attempts": 1,
+   "turns": null,
+   "denials": null,
+   "denials_source": "NOT FOUND; result keys were: ",
+   "ended": "cut off at the cap, no result record",
+   "tokens": null,
+   "claims_held": [],
+   "commits": 1,
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
