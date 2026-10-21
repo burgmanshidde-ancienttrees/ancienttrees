@@ -29,6 +29,7 @@ Web half: read /lisbon and the new Goethe-Institut dragon tree page (reader find
 
 - WARN /lisbon (meta_description, og): "a nearly 2,850-year-old olive, a dragon tree nobody can age, and thirty-five more" names two trees plus thirty-five, 37, while data/cities/lisbon.json holds 36 trees after lis_037 went in; the count is over by one (SEO blueprint count promises; CLAUDE.md "when a place grows, its intro and meta grow with it"). Say "thirty-four more". question_meta ("and thirty-five more" after the olive) is right at 36.
 - NOTE /bamberg/great-lime-of-teuchatz (title, meta): "350 Year Old Tree" / "A 350-year-old" takes the low end of a legend-dated "roughly 350 to 400 years, if a local legend holds" (Verify: never sharpen a vague source). "Up to about 400 years" or the range would match the data.
+- NOTE /hallstatt/obertraun-dorfeibe (title, meta): "200 Year Old Tree" / "A 200-year-old" sharpens the data's "roughly 200 years" with age_max 260 (Verify: never sharpen a vague source). Say "Roughly 200 years old".
 
 ## 2026-10-21 (app half)
 
