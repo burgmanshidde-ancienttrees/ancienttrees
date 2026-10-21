@@ -43,7 +43,7 @@ import ShareButton from "./ShareButton.astro";
 import Sheet from "./Sheet.astro";
 import { speciesIcon } from "../lib/species-icons";
 import { latinHtml } from "../lib/latin";
-import { imgSrcset, photoDims, HERO_OWN_SHAPE_BELOW } from "../lib/images";
+import { imgSrcset, photoDims } from "../lib/images";
 import { locationIsApproximate } from "../lib/tree-copy";
 import { icon } from "../lib/icons";
 import { ui } from "../lib/i18n";
@@ -117,11 +117,13 @@ const visibleCrumbs = p.crumbs.slice(0, -1);
 // shape instead of being cut into the wide strip (Hidde, 2026-10-13, on the
 // Munch-eika: "portrait trees really come out bad on desktop"; option A of the
 // benchmark, Wikipedia and Unsplash; half the photographed trees are portrait).
-// 4:3 counts too since 2026-10-15 (HERO_OWN_SHAPE_BELOW, images.ts).
-// Landscape keeps the strip. The phone does not change. Decided from the stored
+// 4:3 stays in the strip on a desktop (Hidde, 2026-10-15: beside the facts it
+// came out small with a gap under it; the hero itself is to be discussed),
+// while the phone keeps 4:3 at its own shape (HERO_OWN_SHAPE_BELOW, images.ts).
+// Landscape keeps the strip. Decided from the stored
 // size, so the page is laid out right before the picture arrives.
 const leadDims = photoDims(photo);
-const tall = !!(photo && photo.url && leadDims.width && leadDims.width / leadDims.height < HERO_OWN_SHAPE_BELOW);
+const tall = !!(photo && photo.url && leadDims.width && leadDims.width / leadDims.height < 1.25);
 // NEVER TALLER THAN 3:4 (Hidde, 2026-10-14, on a 9:16 phone photo of the Su
 // Fundale oak: "this page doesnt seem balanced ... it looks better at the other
 // page", the 3:4 Sa Tuppa cork oak). A taller photo is cropped to 3:4 around

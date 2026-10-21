@@ -258,7 +258,7 @@ export function photoDims(p: unknown): { width: number; height: number } {
  * 4:3 KEEPS ITS OWN SHAPE TOO (Hidde, 2026-10-15, on the Cardón of the Expo:
  * "this page really doesnt work for this picture"; a 4:3 phone photograph cut
  * to the wide strip lost 40 percent of its height, the cactus its top). The
- * same cut-off decides the desktop layout in TreeDetail.astro. */
+ * phone only: on a desktop 4:3 went back to the strip the same day. */
 export const HERO_OWN_SHAPE_BELOW = 1.4;
 
 export function heroFrame(p: unknown): number {
