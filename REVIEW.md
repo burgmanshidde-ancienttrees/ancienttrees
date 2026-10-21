@@ -23,6 +23,13 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-21
+
+Web half: read /lisbon and the new Goethe-Institut dragon tree page (reader find, no sender name, no em dashes, access stated), /bamberg and two of its tree pages, plus london, aachen and paris for banned words. Two findings.
+
+- WARN /lisbon (meta_description, og): "a nearly 2,850-year-old olive, a dragon tree nobody can age, and thirty-five more" names two trees plus thirty-five, 37, while data/cities/lisbon.json holds 36 trees after lis_037 went in; the count is over by one (SEO blueprint count promises; CLAUDE.md "when a place grows, its intro and meta grow with it"). Say "thirty-four more". question_meta ("and thirty-five more" after the olive) is right at 36.
+- NOTE /bamberg/great-lime-of-teuchatz (title, meta): "350 Year Old Tree" / "A 350-year-old" takes the low end of a legend-dated "roughly 350 to 400 years, if a local legend holds" (Verify: never sharpen a vague source). "Up to about 400 years" or the range would match the data.
+
 ## 2026-10-20
 
 Web half: read /freiburg (count now 8, intro "Seven are natural monuments; the eighth is a reader's find" agrees with the list), the new Schönberg Beech page (reader find, no sender name, no em dashes) and the moved Kam Tin Tree House. Two findings.
