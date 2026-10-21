@@ -72,11 +72,6 @@
       "released_at": "2026-10-14T23:25:13+00:00"
     },
     {
-      "slug": "nuremberg",
-      "kind": "verify",
-      "released_at": "2026-10-18T13:54:47+00:00"
-    },
-    {
       "slug": "las-vegas",
       "kind": "verify",
       "released_at": "2026-10-19T02:55:15+00:00"
@@ -140,6 +135,11 @@
       "slug": "new-york",
       "kind": "verify",
       "released_at": "2026-10-20T16:19:17+00:00"
+    },
+    {
+      "slug": "nuremberg",
+      "kind": "verify",
+      "released_at": "2026-10-21T09:08:35+00:00"
     }
   ]
 }
