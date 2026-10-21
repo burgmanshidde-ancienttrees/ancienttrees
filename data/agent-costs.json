@@ -1,6 +1,17 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-21": [
+   {
+    "date": "2026-10-21",
+    "target": "hst_006,hst_007,pot_011-014,rgb_006,rot_017,rot_018,srm_006,thm_001,wdc_018,wdc_020,wdc_021",
+    "kind": "photo",
+    "tokens": 150000,
+    "trees": 0,
+    "photos_approved": 8,
+    "note": "44 candidates viewed; 8 approved (identity from register-entry images, geotags or a plaque), 36 rejected; Rotterdam and Sanremo candidate sets were all non-tree images"
+   }
+  ],
   "2026-10-20": [
    {
     "date": "2026-10-20",

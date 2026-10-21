@@ -13,7 +13,11 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 ## 2026-10-21 (window from 14:48 UTC): one reader photograph cleared, then stopped
 
-Rung 1: the one queued sighting (lis_037, Lisbon dragon tree) was already the tree's live lead photo, same sighting id, so nothing new for readers to see. I viewed it (Dracaena draco, fits the recognition line) and recorded the verdict in data/sightings-processed.json. sightings_publish.py's `add` copied the same picture beside itself; I reverted the city file and moved the duplicate jpg out of site/public/photos (to out/tmp). Worth a fix: `add` should skip a sighting that is already the lead photo. Preflight 0 problems. No other lane worked in this window.
+Rung 1: the one queued sighting (lis_037, Lisbon dragon tree) was already the tree's live lead photo, same sighting id, so nothing new for readers to see. I viewed it (Dracaena draco, fits the recognition line) and recorded the verdict in data/sightings-processed.json. sightings_publish.py's `add` copied the same picture beside itself; I reverted the city file and moved the duplicate jpg out of site/public/photos (to out/tmp). Worth a fix: `add` should skip a sighting that is already the lead photo. Preflight 0 problems.
+
+Photos on the roster: photo_hunt sweep queued candidates for 14 new trees; a photo-judge pass looked at 44 and approved 8 (hst_007, pot_012, pot_013, pot_014, rgb_006, thm_001, wdc_018, wdc_020), none held, 36 rejected; reverse one with `python3 scripts/photo_apply.py hold <tree_id> <candidate_url> --reason "..."`. Weakest: wdc_020 (over-processed colours, barriers) and wdc_018 (375x500 iNaturalist CC0). Open: wdc_018's iNaturalist GPS (6 m) could confirm its pin. Still no photo: hst_006, pot_011, rot_017, rot_018, srm_006, wdc_021.
+
+Broken, not mine to fix from Linux: iOS app run 39580864787 failed `FlowWalk.testEveryFlowLeavesAWayBack` (search-to-a-tree: after "first-result" no tab bar, back button or dismiss; 229 passed, 1 failed). No ios/ commits since the last green run, so it is either data-driven (the first search result) or a flake; it needs a Mac session. For Hidde: nothing to do yet, the next scheduled ios.yml run says which.
 
 ## 2026-10-21 (retry window): the Lisbon dragon tree is live
 
