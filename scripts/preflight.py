@@ -73,6 +73,10 @@ def check_city(path):
         wc = len(intro.split())
         if not INTRO_MIN <= wc <= INTRO_MAX:
             out.append("%s: intro is %d words, Contract C requires %d-%d" % (slug, wc, INTRO_MIN, INTRO_MAX))
+    # The build throws on this ([city].astro); found 2026-10-21 when Tangier
+    # passed preflight and stopped the deploy.
+    if not d.get("faq"):
+        out.append("%s: no FAQ block, Contract C requires 3-4 real questions" % slug)
 
     for key in ("meta_description", "question_meta"):
         v = d.get(key) or ""
