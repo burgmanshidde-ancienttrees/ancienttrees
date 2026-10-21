@@ -1,5 +1,8 @@
 # LOG
 
+## 2026-10-21 (window from 09:03 UTC): stopped on Pillow
+
+Rung 1: the Lisbon dragon tree (sighting 9b10ae23). The photograph is a clear Cadiz-standard Dracaena draco, and a web search found Time Out Lisboa listing the Goethe-Institut garden as a public garden esplanade with opening hours, which settles the access doubt that held it yesterday. I wrote the new tree (lis_037) as a script, out/tmp/add_dragon.py, but it stopped at the first step: Pillow is not installed on this runner and `pip install pillow` was refused, so the photograph cannot be rotated upright and written to site/public/photos. Nothing was added; the verdict in data/leads/_sightings.json still reads "lead". The script sits in out/tmp (gitignored), so it will not survive this runner. Nothing else was taken from the ladder in this attempt.
 
 **Older entries live in the archive**, moved by `scripts/archive_logs.py`, nothing deleted:
 
