@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-21 (window from 14:48 UTC): one reader photograph cleared, then stopped
+
+Rung 1: the one queued sighting (lis_037, Lisbon dragon tree) was already the tree's live lead photo, same sighting id, so nothing new for readers to see. I viewed it (Dracaena draco, fits the recognition line) and recorded the verdict in data/sightings-processed.json. sightings_publish.py's `add` copied the same picture beside itself; I reverted the city file and moved the duplicate jpg out of site/public/photos (to out/tmp). Worth a fix: `add` should skip a sighting that is already the lead photo. Preflight 0 problems. No other lane worked in this window.
+
 ## 2026-10-21 (retry window): the Lisbon dragon tree is live
 
 The Goethe-Institut garden dragon tree (lis_037) is on the Lisbon page, with the reader's photograph, a written verdict and the Portuguese overlay. Pillow installed fine this time. The reader's verdict also needed a `sight:` entry in data/judgements.json, which preflight looks for; the `lead:` one alone was not enough. Preflight clean; the site build and qa.py were not run on this runner (no dist).

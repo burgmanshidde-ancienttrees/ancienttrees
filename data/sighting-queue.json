@@ -1,41 +1,5 @@
 {
  "_note": "Photographs readers sent through the app, matched to a tree we map, waiting for a viewing pass. Judge with the photo-judge agent and apply with scripts/sightings_publish.py. Rebuilt on every knock from the rows without a verdict.",
  "written": "2026-10-21",
- "queue": [
-  {
-   "sighting_id": "9b10ae23-bba4-4af8-a9ae-95b93aba9209",
-   "user_id": "p_742e4f4b38d1bead996f5a7d",
-   "tree_id": "lis_037",
-   "city_slug": "lisbon",
-   "city": "Lisbon",
-   "tree_name": "The Dragon Tree of the Goethe-Institut Garden",
-   "match": "app",
-   "distance_m": 0,
-   "mine": false,
-   "current_photo": "approved",
-   "current_source": "contributor",
-   "tree_species": "Dragon Tree (Dracaena draco)",
-   "recognise": "A grey, heavily forking dragon tree with a wide umbrella crown of leaf tufts, standing in the middle of the garden cafe's terrace.",
-   "tree_girth_cm": null,
-   "tree_height_m": null,
-   "story": "A reader found this one, in the garden of the Goethe-Institut at Campo dos Mártires da Pátria. The photograph shows a dragon tree, Dracaena draco, and it does not look like most trees. The trunk is thick and grey, and it splits into a thicket of forking limbs that run out sideways and then turn up, each ending in a tuft of stiff, sword-shaped leaves. Together they make a dense umbrella that reaches over the garden tables, so the cafe sits in its shade.\n\nDragon trees grow naturally on the Atlantic islands, the Canaries and Madeira among them, and they were planted in gardens across Portugal. Their branching is the whole point: a young plant is a single spike, and only with age does it begin t",
-   "name": "Dragon Tree in Lisbon",
-   "species": "Dragon Tree",
-   "girth_cm": null,
-   "girth_hugs": null,
-   "note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
-   "taken_at": "2026-10-20",
-   "photo_path": "de4ed97a-01e5-42ce-83c3-28883cf6d91b/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
-   "sign_path": null,
-   "sign_file": null,
-   "extra_files": [],
-   "latitude": 38.7207418820315,
-   "longitude": -9.14097573782063,
-   "file": "out/sightings/9b10ae23-bba4-4af8-a9ae-95b93aba9209.jpg",
-   "light": null,
-   "vouched": null,
-   "rank": 1,
-   "worth": "the tree already has one: ship this only if it is better"
-  }
- ]
+ "queue": []
 }
