@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-21 (session): report a second thing on the same tree
+
+A reader told Hidde that after one report on a tree, "Something's wrong" was gone and the line only said "Thanks, that helps", so a second report meant the flag up top. Now the line stays on both surfaces (Google Maps keeps "Suggest an edit" the same way); a new report shows its own follow-up question. Live on the website with the next deploy; in the app from the next build. App build checked; the reported state was not looked at on screen (it needs a signed-in tap, which simctl cannot do).
+
 ## 2026-10-21 (session): less air in the map sheet and on My trees
 
 **Product (app, next build):** Hidde found the map sheet at its lowest stop and My trees "not using the space". Benchmarked (Polarsteps' profile measured, Google Maps' and Apple Maps' list sheets from their App Store screens), shown as now / middle / tight; he chose the middle and kept the grip where it is on every sheet. Built and measured in the simulator: at peek the first tree card shows 46 points above the tab bar instead of 29 (grip to "7 trees" 25, to the card 16); on My trees the photos start about 25 points higher (tags to tabs 27, was 41). Tap targets unchanged, BottomSheet untouched. Reference in CONVENTIONS.md, "Vertical rhythm of a profile header".
