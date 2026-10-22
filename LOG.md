@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night window (from 17:39 UTC): reader photo, photo sweep
+
+Rung 1: a reader's photograph of the Weeping Cedar of the Vallée-aux-Loups (cma_001) looked at, same tree, daylight and colour, added beside the lead photo; the verdict record had to be stubbed by hand in data/judgements.json because sightings_publish.py had already cleared the queue entry (judgement.py --scan found nothing). Health clear. Own supply is paused, so rung 6: photo_hunt --recheck on the kept set, then a photo-judge pass: 26 images viewed, 1 approved (bne_004, Brisbane banyan, iNaturalist CC BY, 500px only), 32 rejects recorded; most kept-set candidates are generic park files shared by several trees. To check: msl_003 Krüsellinde may have been missed in a 2020 photo (life check). Prepare's REFILL note is moot while supply is paused. Not pushed (credential note); Run health pushes.
+
 ## 2026-10-22 session: the night runs under the demand cut
 
 Own supply paused (Hidde: "moeten we de nachtruns nog aanpassen dan?"): preflight now refuses a new tree of our own (check_own_supply_is_paused, SUPPLY_PAUSED in findable.py); a reader's tree still ships. thin_pages.py writes data/index-kept.json, the cities with a page still in Google; enrich.py --next and photo_hunt.py (without --city) take their queue from it instead of the 259-city roster. The 12 trees held past the pace cap stay in data/research/held-pace-2026-10-22/ (README says why). CLAUDE.md recovery mode says so.
