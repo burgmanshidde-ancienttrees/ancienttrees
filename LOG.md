@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session: the night runs under the demand cut
+
+Own supply paused (Hidde: "moeten we de nachtruns nog aanpassen dan?"): preflight now refuses a new tree of our own (check_own_supply_is_paused, SUPPLY_PAUSED in findable.py); a reader's tree still ships. thin_pages.py writes data/index-kept.json, the cities with a page still in Google; enrich.py --next and photo_hunt.py (without --city) take their queue from it instead of the 259-city roster. The 12 trees held past the pace cap stay in data/research/held-pace-2026-10-22/ (README says why). CLAUDE.md recovery mode says so.
+
 ## 2026-10-22 session: the demand cut, hreflang, the sources line
 
 Google: the 09-28 fall sits inside the September 2026 spam update (24 Sep to 8 Oct), no core update since May. Demand cut added to scripts/thin_pages.py (DEMAND_CUT 50): 720 more pages carry the googlebot noindex, 598 English tree pages in 101 cities and 84 place pages stay in Google, every unique-photo page and reader-found tree kept; Bing keeps everything. hreflang now names only indexable alternates. The Sources line on every tree page says the story was written with AI and readers correct it, in eight languages. The recrawl sitemap was already live since 10-01 (robots.txt names it), nothing for Hidde to submit. Preflight 0 problems; the Astro build runs in CI on this push. Each change is its own commit.

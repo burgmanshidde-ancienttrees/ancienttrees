@@ -714,6 +714,16 @@ def main():
     if "--city" in sys.argv:
         cities = [c.strip().lower()
                   for c in sys.argv[sys.argv.index("--city") + 1].split(",")]
+    # Without --city the sweep covers the kept set (data/index-kept.json, the
+    # cities with a page still in Google after the demand cut of 2026-10-22):
+    # a photograph found elsewhere returns nothing to Google, so the alphabet
+    # through 2,500 photo-less trees is the wrong shape. --all restores it.
+    elif "--all" not in sys.argv:
+        try:
+            cities = list(json.load(open(os.path.join(ROOT, "data", "index-kept.json")))["cities"])
+            print(f"sweeping the kept set: {len(cities)} cities with a page in Google (--all for every city)")
+        except (OSError, ValueError, KeyError):
+            cities = []
 
     queue = {}
     if os.path.exists(QUEUE):

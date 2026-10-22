@@ -110,6 +110,20 @@ ADD_NEEDS_RICH = False
 ADD_NEEDS_PHOTO = True
 
 
+# OWN SUPPLY PAUSED WHILE GOOGLE RECOVERS (Hidde, 2026-10-22, "moeten we de
+# nachtruns nog aanpassen dan?", after the night run had made 84 trees in a
+# day and held 12 past the pace cap). The 09-28 demotion fell inside the
+# September 2026 spam update, and what that policy punishes is many pages made
+# at once, whether or not each one carries a noindex: Google still crawls them.
+# So until Search Console moves, no new tree of our own goes live at all. A
+# reader's tree (reader_added) still ships: the person who stood there is the
+# source and it is the opposite of scaled content. Trees live on 2026-10-22 are
+# in data/photo-baseline.json and stay. Research continues into data/leads/ and
+# data/research/; the pages wait. preflight's check_own_supply_is_paused()
+# reads this; False needs Hidde and a Search Console week that moved.
+SUPPLY_PAUSED = True
+
+
 def has_approved_photo(tree):
     p = tree.get("photo") or {}
     return bool(p.get("url")) and p.get("status") == "approved"

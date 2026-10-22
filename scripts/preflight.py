@@ -1710,6 +1710,37 @@ def check_a_new_tree_has_a_photograph():
     return out
 
 
+def check_own_supply_is_paused():
+    """No new tree of our own while Google recovers (Hidde, 2026-10-22).
+
+    The night run had made 84 trees in a day and held 12 past the pace cap;
+    many pages at once is the shape the September 2026 spam update punished,
+    noindex or not. A reader's tree still ships. Trees live on 2026-10-22 are
+    in data/photo-baseline.json. SUPPLY_PAUSED in scripts/findable.py; lifting
+    it needs Hidde and a Search Console week that moved.
+    """
+    from findable import SUPPLY_PAUSED, reader_added
+    if not SUPPLY_PAUSED:
+        return []
+    try:
+        with open(os.path.join("data", "photo-baseline.json"), encoding="utf-8") as fh:
+            base = set(json.load(fh).get("ids", []))
+    except (OSError, ValueError):
+        return []
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            if tree.get("id") in base or reader_added(tree):
+                continue
+            out.append("%s: %s (%s) is a new tree of our own. Supply is paused while Google recovers "
+                       "(Hidde, 2026-10-22, SUPPLY_PAUSED in findable.py): keep it in data/leads/ or "
+                       "data/research/ with its photo; a reader's tree still ships."
+                       % (path, tree.get("id"), tree.get("name")))
+    return out
+
+
 def check_a_closed_sighting_stays_closed():
     """A photograph Hidde closed is never reopened or shown to him again.
 
@@ -3639,6 +3670,7 @@ def main():
                 + check_covered_countries_want_a_photo_or_a_pin()
                 + check_a_new_tree_is_rich_or_a_readers()
                 + check_a_new_tree_has_a_photograph()
+                + check_own_supply_is_paused()
                 + check_story_length()
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()

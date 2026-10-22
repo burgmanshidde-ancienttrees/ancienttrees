@@ -158,11 +158,18 @@ def open_gaps(t, led):
 # ---- the queue ---------------------------------------------------------------
 
 def roster():
-    try:
-        d = json.load(open(os.path.join(ROOT, "data", "depth-roster-frozen.json")))
-        return list(d["cities"].items())
-    except (OSError, ValueError, KeyError):
-        return []
+    """The cities depth goes to: since 2026-10-22 the kept set, the cities with
+    a page still in Google after the demand cut (data/index-kept.json, written
+    by scripts/thin_pages.py), by pre-demotion impressions. The frozen roster
+    (259 cities, every one with ten impressions) is the fallback when that
+    file is missing."""
+    for name in ("index-kept.json", "depth-roster-frozen.json"):
+        try:
+            d = json.load(open(os.path.join(ROOT, "data", name)))
+            return list(d["cities"].items())
+        except (OSError, ValueError, KeyError):
+            continue
+    return []
 
 
 def city_trees(slug):

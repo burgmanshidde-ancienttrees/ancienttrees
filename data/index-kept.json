@@ -1,0 +1,660 @@
+{
+ "generated": "scripts/thin_pages.py",
+ "why": "Cities with a page Google is still asked to show (the demand cut, 2026-10-22). enrich.py and photo_hunt.py take their queue from here.",
+ "cities": {
+  "singapore": {
+   "impressions": 359,
+   "kept_trees": 5,
+   "trees": 34,
+   "place_page": true
+  },
+  "lisbon": {
+   "impressions": 316,
+   "kept_trees": 18,
+   "trees": 36,
+   "place_page": true
+  },
+  "amsterdam": {
+   "impressions": 284,
+   "kept_trees": 8,
+   "trees": 27,
+   "place_page": true
+  },
+  "barcelona": {
+   "impressions": 284,
+   "kept_trees": 14,
+   "trees": 56,
+   "place_page": true
+  },
+  "seville": {
+   "impressions": 259,
+   "kept_trees": 9,
+   "trees": 44,
+   "place_page": true
+  },
+  "bath": {
+   "impressions": 255,
+   "kept_trees": 2,
+   "trees": 5,
+   "place_page": true
+  },
+  "tenerife": {
+   "impressions": 241,
+   "kept_trees": 4,
+   "trees": 4,
+   "place_page": true
+  },
+  "berlin": {
+   "impressions": 224,
+   "kept_trees": 50,
+   "trees": 63,
+   "place_page": true
+  },
+  "rome": {
+   "impressions": 221,
+   "kept_trees": 10,
+   "trees": 31,
+   "place_page": true
+  },
+  "palermo": {
+   "impressions": 216,
+   "kept_trees": 9,
+   "trees": 21,
+   "place_page": true
+  },
+  "oahu": {
+   "impressions": 213,
+   "kept_trees": 5,
+   "trees": 21,
+   "place_page": true
+  },
+  "tokyo": {
+   "impressions": 209,
+   "kept_trees": 16,
+   "trees": 22,
+   "place_page": true
+  },
+  "munich": {
+   "impressions": 206,
+   "kept_trees": 31,
+   "trees": 63,
+   "place_page": true
+  },
+  "new-york": {
+   "impressions": 188,
+   "kept_trees": 8,
+   "trees": 28,
+   "place_page": true
+  },
+  "edinburgh": {
+   "impressions": 173,
+   "kept_trees": 5,
+   "trees": 16,
+   "place_page": true
+  },
+  "brussels": {
+   "impressions": 171,
+   "kept_trees": 4,
+   "trees": 35,
+   "place_page": true
+  },
+  "dublin": {
+   "impressions": 168,
+   "kept_trees": 4,
+   "trees": 17,
+   "place_page": true
+  },
+  "brisbane": {
+   "impressions": 163,
+   "kept_trees": 2,
+   "trees": 20,
+   "place_page": true
+  },
+  "paris": {
+   "impressions": 163,
+   "kept_trees": 12,
+   "trees": 32,
+   "place_page": true
+  },
+  "malaga": {
+   "impressions": 161,
+   "kept_trees": 5,
+   "trees": 9,
+   "place_page": true
+  },
+  "vienna": {
+   "impressions": 161,
+   "kept_trees": 22,
+   "trees": 58,
+   "place_page": true
+  },
+  "london": {
+   "impressions": 147,
+   "kept_trees": 25,
+   "trees": 32,
+   "place_page": true
+  },
+  "alicante": {
+   "impressions": 146,
+   "kept_trees": 1,
+   "trees": 21,
+   "place_page": true
+  },
+  "athens": {
+   "impressions": 130,
+   "kept_trees": 6,
+   "trees": 12,
+   "place_page": true
+  },
+  "cadiz": {
+   "impressions": 125,
+   "kept_trees": 4,
+   "trees": 5,
+   "place_page": true
+  },
+  "pamplona": {
+   "impressions": 125,
+   "kept_trees": 0,
+   "trees": 14,
+   "place_page": true
+  },
+  "porto": {
+   "impressions": 124,
+   "kept_trees": 17,
+   "trees": 27,
+   "place_page": true
+  },
+  "prague": {
+   "impressions": 119,
+   "kept_trees": 21,
+   "trees": 30,
+   "place_page": true
+  },
+  "cagliari": {
+   "impressions": 116,
+   "kept_trees": 1,
+   "trees": 14,
+   "place_page": true
+  },
+  "glasgow": {
+   "impressions": 110,
+   "kept_trees": 4,
+   "trees": 6,
+   "place_page": true
+  },
+  "ede": {
+   "impressions": 100,
+   "kept_trees": 1,
+   "trees": 7,
+   "place_page": true
+  },
+  "hinode": {
+   "impressions": 98,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "palma-de-mallorca": {
+   "impressions": 95,
+   "kept_trees": 2,
+   "trees": 6,
+   "place_page": true
+  },
+  "los-angeles": {
+   "impressions": 94,
+   "kept_trees": 3,
+   "trees": 11,
+   "place_page": true
+  },
+  "madrid": {
+   "impressions": 93,
+   "kept_trees": 11,
+   "trees": 17,
+   "place_page": true
+  },
+  "arnhem": {
+   "impressions": 92,
+   "kept_trees": 3,
+   "trees": 32,
+   "place_page": true
+  },
+  "milan": {
+   "impressions": 92,
+   "kept_trees": 13,
+   "trees": 30,
+   "place_page": true
+  },
+  "austin": {
+   "impressions": 91,
+   "kept_trees": 3,
+   "trees": 10,
+   "place_page": true
+  },
+  "krakow": {
+   "impressions": 91,
+   "kept_trees": 8,
+   "trees": 38,
+   "place_page": true
+  },
+  "houston": {
+   "impressions": 90,
+   "kept_trees": 0,
+   "trees": 11,
+   "place_page": true
+  },
+  "montreal": {
+   "impressions": 90,
+   "kept_trees": 1,
+   "trees": 13,
+   "place_page": true
+  },
+  "sintra": {
+   "impressions": 87,
+   "kept_trees": 3,
+   "trees": 5,
+   "place_page": true
+  },
+  "florence": {
+   "impressions": 86,
+   "kept_trees": 8,
+   "trees": 27,
+   "place_page": true
+  },
+  "the-hague": {
+   "impressions": 84,
+   "kept_trees": 3,
+   "trees": 26,
+   "place_page": true
+  },
+  "new-orleans": {
+   "impressions": 83,
+   "kept_trees": 2,
+   "trees": 8,
+   "place_page": true
+  },
+  "reykjavik": {
+   "impressions": 80,
+   "kept_trees": 3,
+   "trees": 4,
+   "place_page": true
+  },
+  "liverpool": {
+   "impressions": 78,
+   "kept_trees": 1,
+   "trees": 2,
+   "place_page": true
+  },
+  "valencia": {
+   "impressions": 77,
+   "kept_trees": 2,
+   "trees": 31,
+   "place_page": true
+  },
+  "guerneville": {
+   "impressions": 76,
+   "kept_trees": 2,
+   "trees": 2,
+   "place_page": true
+  },
+  "copenhagen": {
+   "impressions": 75,
+   "kept_trees": 41,
+   "trees": 49,
+   "place_page": true
+  },
+  "chicago": {
+   "impressions": 72,
+   "kept_trees": 1,
+   "trees": 38,
+   "place_page": true
+  },
+  "nara": {
+   "impressions": 72,
+   "kept_trees": 4,
+   "trees": 15,
+   "place_page": true
+  },
+  "warsaw": {
+   "impressions": 72,
+   "kept_trees": 16,
+   "trees": 39,
+   "place_page": true
+  },
+  "istanbul": {
+   "impressions": 70,
+   "kept_trees": 4,
+   "trees": 14,
+   "place_page": true
+  },
+  "cyprus": {
+   "impressions": 69,
+   "kept_trees": 0,
+   "trees": 4,
+   "place_page": true
+  },
+  "nijmegen": {
+   "impressions": 69,
+   "kept_trees": 1,
+   "trees": 20,
+   "place_page": true
+  },
+  "cork": {
+   "impressions": 68,
+   "kept_trees": 2,
+   "trees": 13,
+   "place_page": true
+  },
+  "dallas": {
+   "impressions": 68,
+   "kept_trees": 1,
+   "trees": 12,
+   "place_page": true
+  },
+  "venice": {
+   "impressions": 68,
+   "kept_trees": 6,
+   "trees": 11,
+   "place_page": true
+  },
+  "hobart": {
+   "impressions": 66,
+   "kept_trees": 0,
+   "trees": 11,
+   "place_page": true
+  },
+  "takeo": {
+   "impressions": 65,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "fukuoka": {
+   "impressions": 64,
+   "kept_trees": 11,
+   "trees": 18,
+   "place_page": true
+  },
+  "monterey": {
+   "impressions": 64,
+   "kept_trees": 2,
+   "trees": 3,
+   "place_page": true
+  },
+  "ottawa": {
+   "impressions": 63,
+   "kept_trees": 0,
+   "trees": 21,
+   "place_page": true
+  },
+  "portland": {
+   "impressions": 63,
+   "kept_trees": 2,
+   "trees": 33,
+   "place_page": true
+  },
+  "sydney": {
+   "impressions": 63,
+   "kept_trees": 1,
+   "trees": 7,
+   "place_page": true
+  },
+  "kanazawa": {
+   "impressions": 60,
+   "kept_trees": 3,
+   "trees": 7,
+   "place_page": true
+  },
+  "sardinia": {
+   "impressions": 60,
+   "kept_trees": 5,
+   "trees": 7,
+   "place_page": true
+  },
+  "vilnius": {
+   "impressions": 57,
+   "kept_trees": 3,
+   "trees": 12,
+   "place_page": true
+  },
+  "coimbra": {
+   "impressions": 56,
+   "kept_trees": 0,
+   "trees": 5,
+   "place_page": true
+  },
+  "beijing": {
+   "impressions": 55,
+   "kept_trees": 1,
+   "trees": 7,
+   "place_page": true
+  },
+  "boston": {
+   "impressions": 55,
+   "kept_trees": 2,
+   "trees": 13,
+   "place_page": true
+  },
+  "fulufjallet": {
+   "impressions": 55,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "madeira": {
+   "impressions": 55,
+   "kept_trees": 1,
+   "trees": 10,
+   "place_page": true
+  },
+  "san-francisco": {
+   "impressions": 55,
+   "kept_trees": 3,
+   "trees": 11,
+   "place_page": true
+  },
+  "seoul": {
+   "impressions": 54,
+   "kept_trees": 5,
+   "trees": 8,
+   "place_page": true
+  },
+  "utrecht": {
+   "impressions": 54,
+   "kept_trees": 8,
+   "trees": 30,
+   "place_page": true
+  },
+  "osaka": {
+   "impressions": 53,
+   "kept_trees": 1,
+   "trees": 6,
+   "place_page": true
+  },
+  "crete": {
+   "impressions": 52,
+   "kept_trees": 3,
+   "trees": 4,
+   "place_page": true
+  },
+  "hong-kong": {
+   "impressions": 52,
+   "kept_trees": 5,
+   "trees": 21,
+   "place_page": true
+  },
+  "budapest": {
+   "impressions": 51,
+   "kept_trees": 1,
+   "trees": 13,
+   "place_page": true
+  },
+  "kyoto": {
+   "impressions": 51,
+   "kept_trees": 11,
+   "trees": 18,
+   "place_page": true
+  },
+  "leipzig": {
+   "impressions": 51,
+   "kept_trees": 23,
+   "trees": 29,
+   "place_page": true
+  },
+  "granada": {
+   "impressions": 50,
+   "kept_trees": 3,
+   "trees": 9,
+   "place_page": true
+  },
+  "ibiza": {
+   "impressions": 47,
+   "kept_trees": 0,
+   "trees": 1,
+   "place_page": true
+  },
+  "melbourne": {
+   "impressions": 47,
+   "kept_trees": 1,
+   "trees": 16,
+   "place_page": false
+  },
+  "kagoshima": {
+   "impressions": 37,
+   "kept_trees": 4,
+   "trees": 16,
+   "place_page": false
+  },
+  "oslo": {
+   "impressions": 34,
+   "kept_trees": 3,
+   "trees": 4,
+   "place_page": false
+  },
+  "bucaco": {
+   "impressions": 31,
+   "kept_trees": 3,
+   "trees": 18,
+   "place_page": false
+  },
+  "leiden": {
+   "impressions": 31,
+   "kept_trees": 1,
+   "trees": 19,
+   "place_page": false
+  },
+  "manchester": {
+   "impressions": 28,
+   "kept_trees": 1,
+   "trees": 5,
+   "place_page": false
+  },
+  "charleston": {
+   "impressions": 23,
+   "kept_trees": 1,
+   "trees": 3,
+   "place_page": true
+  },
+  "belgrade": {
+   "impressions": 20,
+   "kept_trees": 1,
+   "trees": 5,
+   "place_page": false
+  },
+  "miyazaki": {
+   "impressions": 20,
+   "kept_trees": 1,
+   "trees": 8,
+   "place_page": false
+  },
+  "nuremberg": {
+   "impressions": 18,
+   "kept_trees": 1,
+   "trees": 20,
+   "place_page": false
+  },
+  "freiburg": {
+   "impressions": 17,
+   "kept_trees": 1,
+   "trees": 8,
+   "place_page": false
+  },
+  "hamburg": {
+   "impressions": 12,
+   "kept_trees": 2,
+   "trees": 6,
+   "place_page": false
+  },
+  "dresden": {
+   "impressions": 11,
+   "kept_trees": 1,
+   "trees": 32,
+   "place_page": false
+  },
+  "amt-neuhaus": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "assisi": {
+   "impressions": 0,
+   "kept_trees": 0,
+   "trees": 6,
+   "place_page": true
+  },
+  "baarn": {
+   "impressions": 0,
+   "kept_trees": 3,
+   "trees": 8,
+   "place_page": false
+  },
+  "bad-staffelstein": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "giessen": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 4,
+   "place_page": false
+  },
+  "munsterland": {
+   "impressions": 0,
+   "kept_trees": 2,
+   "trees": 4,
+   "place_page": false
+  },
+  "ramsau-bei-berchtesgaden": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "takachiho": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 5,
+   "place_page": false
+  },
+  "tangier": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "untermerzbach": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "volkenroda": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  }
+ }
+}
