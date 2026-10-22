@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 third attempt: Minneapolis register retried, nothing shipped
+
+No product change. No claims stood. READY leads (Oxford 2, Madrid 1) are own supply and own supply is paused, so no write pass. Retried the BACKUP register: the MPRB Heritage Tree page renders now but gives no licence, says trees may be on private land, and offers only a Google My Map; still not imported (note and "retried" date in data/register-scouting.json). Next angle: mail MPRB for the list and licence; Hidde sends.
+
 ## 2026-10-22 photo viewing pass pj2 on the kept set: nothing approved, 70 rejects recorded
 
 No product change: no tree gained a photograph. 32 images looked at as pixels (Arnhem arn_004/005/007/008/021/026/027/028, Florence flo_007/016, Kagoshima kag_011, Baarn brn_007, Utrecht utr_006/007/031, Nijmegen nij_019/020, The Hague hag_024/027/028/030, Vienna vie_035/036, Singapore sgp_015, Amsterdam ams_016/027, Brisbane bne_005/013); 70 tree-candidate rejects written to data/photo-queue.json so none is judged again. Approvals: none, so no reversal commands. The swept Arnhem candidates are sculptures (Pluto, VLUCHT) with trees as background; the rest are monuments, information panels, buildings, swans, overviews, two black-and-white archival street scenes, and an iNaturalist bunya pine offered for the Cook and Hoop Pines. One near miss worth a lead: "Firenze, giardini del bobolino, 10.jpg" is a fine multi-stemmed red-barked cupressaceous conifer in the Bobolino, not our cedar or stone pine. Remaining unjudged rows in kept-set cities are mostly last-resort radius hits (Mapillary, street files); not worth a pass without a better sweep. Preflight 0 problems.
