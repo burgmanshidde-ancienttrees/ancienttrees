@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (09:06 UTC window): photos and scouting, no tree added
+
+- Ladder: no reader photos waiting, health clear. Nothing writable: the one written tree (ftw_018) has no confirmed photo path and the other "awaiting a writer" files are stale or duplicates. prepare.py 7-day visits line not shown by this run's output.
+- Photo sweep Chicago (36 trees, 6 new candidates) and Seattle (27, 2 new): sweeps otherwise exhausted. Viewing pass on the 19 roster-fetched images (hong-kong, pittsburgh, luxembourg-city, como, trieste, dresden): 0 approved, 18 rejected (wrong species, close-ups, felled twin, non-tree). Chicago and Seattle candidates were not fetched by `photo_fetch.py --roster` (it said nothing to fetch for them); next run should check why.
+- Chicago enrichment: only season gaps left, recorded as dead ends (`enrich.py --done chicago`). Catania scouted: same dataset as the national MASAF list, 3 to 4 trees round Villa Bellini, verdict `exhausted` in register-scouting.json.
+- Left open: the Texas famous-trees batch (4 trees with an open photo) for the next run.
+
 ## 2026-10-22 (session with Hidde): a new tree of our own needs a photograph
 
 - **Rule (Hidde):** "we should only focus on trees with photos". It reverses 10-18's photo-less trees for Bing. New preflight FAIL `check_a_new_tree_has_a_photograph()` (`ADD_NEEDS_PHOTO` in scripts/findable.py): a new tree needs a lead photo with status `approved`, a reader's tree is exempt, and the 3,880 trees live today are in data/photo-baseline.json. Tested on a copy: quiet on today's data, fires on a new photo-less tree, passes one with a photo and a reader's. CLAUDE.md (Google recovery mode) and DECISIONS.md updated.
