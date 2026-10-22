@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (retry attempt): pace cap holds 12 trees
+
+Eleven new city files an earlier attempt left uncommitted (bregenz, college-station, coppell, goliad, hagerum, hochosterwitz, leonstein, ogi, sakurai, shikokuchuo, winterswijk; 12 trees, all with approved photographs) failed preflight: 84 new trees in 24 hours against the cap of 60, and three Texas places (college-station, coppell, goliad) missing from data/us-states.json. Moved to data/research/held-pace-2026-10-22/ to restore tomorrow: add the three states, move the files back, run preflight. Nothing else was writable: 3 READY leads (two Oxford, one Madrid) wait on photos, and every claim was already free.
+
 ## 2026-10-22 night run (12:29 UTC window): enrichment leiden+frankfurt+regensburg
 
 Rungs 1 to 3 clear (no sightings waiting, health green). Rung 4: enrichment pass on 7 trees; one gap closed (frk_023 Bethmannpark Ginkgo girth 484 cm, height 26 m from Baumkunde.de, a private register, noted as such), 10 gaps dead-ended for 90 days. Preflight 0 problems.

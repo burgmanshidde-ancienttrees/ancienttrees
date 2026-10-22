@@ -1,0 +1,106 @@
+{
+  "city": "Shikokuchuo",
+  "country": "Japan",
+  "status": "needs_curation",
+  "intro": "Shikokuchuo, in Ehime, has two very different giants. In the town at Shimokashiwa, a Chinese juniper more than 8 metres round has been a National Natural Monument since 1924 and now leans on many wooden props. High on Mt Tamatori, a katsura has lost its central trunk and grown into a ring of stems 15 metres round and 30 metres tall.",
+  "meta_description": "Shikokuchuo's two giants: a juniper 8 metres round, a National Natural Monument since 1924, and a 30 metre katsura on Mt Tamatori.",
+  "question_meta": "Shikokuchuo's old trees: the Shimokashiwa juniper, a National Natural Monument since 1924, and the 30 metre katsura on Mt Tamatori.",
+  "question_answer": "Shikokuchuo in Ehime Prefecture has two famous old trees. The Shimokashiwa juniper is a Chinese juniper designated a National Natural Monument in December 1924, measured then at about 8.2 metres round below a large burl. The great katsura of Mt Tamatori is an Ehime Prefecture Natural Monument, more than 300 years old, 30 metres tall and 15 metres round, a ring of stems around a hollow base.",
+  "question_context": "Shikokuchuo lies on the north side of Shikoku, in Ehime Prefecture, and its two famous trees could hardly be further apart in what a visit asks of you. The juniper is the easy one. It stands on a small plot beside the road in Shimokashiwa, propped on many poles with a stone marker at its foot, and you see it from the roadside; directions point to a drive along National Route 11. One account says a Jizo statue has sat in a hollow at its base since 1783. The katsura is the hard one. It grows at about 1,060 metres on the north slope of Mt Tamatori in the Tomisato district, roughly 25 kilometres of mountain road from Iyo-Mishima station and then on foot. We have found no description of the path, the parking or the signage, and the newest photograph of it dates from 2010, so go prepared. In October and November its leaves turn pink and yellow and smell of burnt sugar as they fall. Both trees need a car. If you reach either, a dated photograph would help.",
+  "faq": [
+    {
+      "q": "Which tree in Shikokuchuo is a National Natural Monument?",
+      "a": "The Chinese juniper at Shimokashiwa, designated on 9 December 1924. The katsura on Mt Tamatori is a natural monument of Ehime Prefecture."
+    },
+    {
+      "q": "How do you get to the katsura on Mt Tamatori?",
+      "a": "By car, roughly 25 kilometres of mountain road from Iyo-Mishima station, then on foot. We have found no published route description, so plan carefully."
+    },
+    {
+      "q": "When is the best time to see the Tamatori katsura?",
+      "a": "October and November, when katsura leaves turn pink and yellow and give off a smell like burnt sugar as they fall."
+    }
+  ],
+  "trees": [
+    {
+      "id": "skc_001",
+      "name": "Tamatoriyama-no-Ōkatsura",
+      "species": "Katsura (Cercidiphyllum japonicum)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_basis": "source",
+      "girth_cm": 1500,
+      "height_m": 30,
+      "location": {
+        "address": "North slope of Mt Tamatori (about 1,060 m), Samukawayama, Tomisato-cho, Shikokuchuo, Ehime",
+        "latitude": 33.866122,
+        "longitude": 133.53075,
+        "neighbourhood": "Tomisato"
+      },
+      "verified_sources": [
+        "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%84%E3%83%A9_(%E6%A4%8D%E7%89%A9)",
+        "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg"
+      ],
+      "access": "Remote mountain tree reached by a mountain road and then on foot; I found no source describing the route, parking or whether it is signed. Car only, far from any station.",
+      "transport": "Roughly 25 km of mountain road from Iyo-Mishima station per the earlier pass; car only. No public transport verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Fifteen metres round, and there is no trunk in the middle. This katsura on the slopes of Mt Tamatori has lost its central stem, and what stands there now is a ring of trunks rising around a hollow base, 30 metres tall.\n\nThe 15 metres is the measure of that whole fountain of stems, not of one trunk, which makes it no less of a sight: a single tree standing like a small grove. A 2024 book by Koyama Yoji gives the figures and an age of more than 300 years, and lists it as a Natural Monument of Ehime Prefecture.\n\nIt grows on the north side of the mountain at about 1,060 metres, in the Tomisato district of Shikokuchuo. In autumn katsura leaves turn pink and yellow, and as they fall they give off a smell often compared to caramel or burnt sugar.\n\nWe have to be plain about two things. The newest photograph we know of was taken in 2010; the 2024 book is cited for it in the present tense, but we have found no dated sighting since. And we have found no description of the way in: not the path, not the parking, not whether there is a sign. It is roughly 25 kilometres of mountain road from Iyo-Mishima station, by car only, and then on foot. If you have been, tell us how you got there.",
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "October and November, when the leaves turn pink and yellow and smell of burnt sugar as they fall"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "attribution": "ball banban",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg",
+        "width": 1067,
+        "height": 1600,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by the ring of trunks, 15 metres round in all, rising around a hollow base where the central trunk has gone. It stands on the north slope of Mt Tamatori at about 1,060 metres."
+    },
+    {
+      "id": "skc_002",
+      "name": "Shimokashiwa no Taihaku",
+      "species": "Chinese Juniper (Juniperus chinensis)",
+      "age_estimate": "not documented",
+      "girth_cm": 818,
+      "location": {
+        "address": "Shimokashiwa-cho, Shikokuchuo, Ehime Prefecture",
+        "latitude": 33.98438,
+        "longitude": 133.5585,
+        "neighbourhood": "Shimokashiwa"
+      },
+      "verified_sources": [
+        "https://kunishitei.bunka.go.jp/heritage/detail/401/2538",
+        "https://en.wikipedia.org/wiki/List_of_Natural_Monuments_of_Japan_(Ehime)",
+        "https://commons.wikimedia.org/wiki/File:Oohaku01.jpg"
+      ],
+      "access": "Stands on a small plot beside a road in the town, propped with many poles, seen from the roadside; no gate in the photograph.",
+      "transport": "In Shikokuchuo; no public-transport time verified, nearest sources point to a car route along National Route 11.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This juniper was already more than 8 metres round when Japan made it a National Natural Monument in December 1924. Today its branches rest on a crowd of wooden props.\n\nThe 1924 designation report measured it in the old units: 2 jo 7 shaku below a large burl about a metre up the trunk, roughly 8.2 metres, and 2 jo 1 shaku above it, about 6.4 metres. Later and larger figures have been published, but the 1924 ones are the only measurements we have been able to confirm.\n\nThe tree is a Chinese juniper, ibuki in Japanese. A photograph from June 2016 shows it in full leaf: a huge conifer with fine scale foliage, its limbs held up by many poles, and a stone marker at its foot. One account says a Jizo statue has sat in a hollow at its base since 1783.\n\nNobody has given it an age we could confirm. If you know where a reliable figure comes from, tell us.\n\nIt stands on a small plot beside the road in Shimokashiwa, in Shikokuchuo, and you see it from the roadside; the photographs show no gate. Directions point to a drive along National Route 11, and you will want a car.\n\nThe most recent dated photograph we know of is the one from 2016. It has stood here as a protected tree for a century, and if you pass, a new picture would tell us it still does.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Oohaku01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Dokudami",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Oohaku01.jpg",
+        "width": 1482,
+        "height": 1600,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by the many wooden props holding up its branches and the stone marker at its foot, a huge juniper more than 8 metres round. It stands on a small roadside plot in Shimokashiwa.",
+      "official_register": {
+        "name": "National Natural Monument, designated 1924-12-09 (Agency for Cultural Affairs)",
+        "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/2538"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "city": "Hägerum",
+  "country": "Sweden",
+  "status": "needs_curation",
+  "intro": "Just west of the Hägerum manor farm in Oskarshamn municipality grows an oak that measured 6.95 metres round at chest height in 2003, a richly branched tree with a broad crown. It has been a protected natural monument since 1958, though nobody has recorded its age or even which oak it is. It stands in a fenced pasture beside a farm track, and the view is from the path outside the fence.",
+  "meta_description": "Hägerums ek near Oskarshamn: an oak 6.95 metres round, a protected natural monument since 1958, beside a farm track at Hägerum.",
+  "question_meta": "Hägerums ek, near Oskarshamn in Kalmar county: an oak 6.95 metres round and a protected natural monument since 22 August 1958.",
+  "question_answer": "Hägerums ek is an oak just west of the Hägerum manor farm in Döderhult parish, Oskarshamn municipality, Kalmar county. It was protected as a naturminne on 22 August 1958, and in 2003 the Biological Museum in Oskarshamn measured its girth at 6.95 metres at breast height. It is described as richly branched with a broad crown. Its age is not recorded.",
+  "question_context": "Hägerum is a manor farm in Döderhult parish, in Oskarshamn municipality on the Småland coast of Kalmar county. The oak stands just west of the farm buildings, in a fenced pasture beside a farm track. A photograph from 2019 shows a visitor on the path outside the fence, and that is as close as any source takes you: none describes a right of way into the field, so the fence is the edge of the visit and the farm is to be left alone. The Biological Museum in Oskarshamn measured its girth at 6.95 metres in 2003 and describes it as richly branched with a broad crown. The county protected it in 1958. Photographs from May and June 2019 are the most recent sign of it we have found. Neither its age nor its exact species has been written down; it is probably a pedunculate oak, but no source confirms that. No public-transport time from Oskarshamn has been checked, so plan on a car or bicycle.",
+  "faq": [
+    {
+      "q": "Can you visit Hägerums ek?",
+      "a": "You can see it from the path outside the fence of the pasture where it grows. No source describes a right of way into the field, so stay outside the fence."
+    },
+    {
+      "q": "How big is Hägerums ek?",
+      "a": "It measured 6.95 metres round at breast height in 2003, according to the Biological Museum in Oskarshamn."
+    },
+    {
+      "q": "How old is the oak at Hägerum?",
+      "a": "No source gives an age. It has been a protected natural monument since 1958."
+    }
+  ],
+  "trees": [
+    {
+      "id": "hgr_001",
+      "name": "Hägerums ek",
+      "species": "Oak (Quercus sp.)",
+      "age_estimate": "not documented",
+      "girth_cm": 695,
+      "location": {
+        "address": "Just west of the Hägerum manor farm buildings, Döderhult parish, Oskarshamn municipality, Kalmar county",
+        "latitude": 57.415355,
+        "longitude": 16.22039,
+        "neighbourhood": "Hägerum"
+      },
+      "verified_sources": [
+        "https://sv.wikipedia.org/wiki/H%C3%A4gerum",
+        "https://www.bimon.se/sida_kvalitet/nminne_bilder.php",
+        "https://commons.wikimedia.org/wiki/File:H%C3%A4gerums_ek,_juni_2019a.jpg"
+      ],
+      "access": "Stands in a fenced pasture beside a farm track west of Hägerum farm; the 2019 photograph shows a visitor on the path outside the fence. No source states a right of way: respect the fence and the farm.",
+      "transport": "Rural, near Döderhult/Oskarshamn; no public-transport time verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This oak has been protected by law since 1958, and in 2003 it measured 6.95 metres round at chest height.\n\nThe county board of Kalmar made it a naturminne, a protected natural monument, on 22 August 1958. The measurement came 45 years later, from the Biological Museum in Oskarshamn, which describes a richly branched oak with a broad crown. That museum is also the source of the most recent check we know of, a photograph dated May 2019. Another from June 2019 shows it in full leaf. Nothing we have found is newer, so if you see it, tell us how it is.\n\nIt stands just west of the farm buildings of Hägerum, a manor farm in Döderhult parish, Oskarshamn municipality.\n\nTwo things nobody has written down. The first is its age: no source gives one, and a girth like this alone does not settle it. The second is its species. It is probably a pedunculate oak, but no source says so, which is why we list it simply as an oak. A look at the acorns, which hang on long stalks in a pedunculate oak, would answer it.\n\nThis is farmland. The oak grows in a fenced pasture beside a farm track, and the 2019 photograph shows a visitor on the path outside the fence. No source describes a right of way into the field, so stay on the path, outside the fence, and leave the farm in peace.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/H%C3%A4gerums_ek%2C_juni_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Holger.Ellgaard",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:H%C3%A4gerums_ek,_juni_2019a.jpg",
+        "width": 4755,
+        "height": 3525,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by the broad, richly branched crown and a trunk almost 7 metres round. It stands in a fenced pasture beside a farm track, just west of the Hägerum farm buildings.",
+      "official_register": {
+        "name": "Swedish naturminne (protected natural monument), protected 22 August 1958, Länsstyrelsen Kalmar",
+        "url": "https://www.bimon.se/sida_kvalitet/nminne_bilder.php"
+      }
+    }
+  ]
+}

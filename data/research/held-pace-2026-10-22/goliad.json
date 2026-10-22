@@ -1,0 +1,61 @@
+{
+  "city": "Goliad, Texas",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The live oak on the north lawn of the Goliad County Courthouse shaded court sessions from 1846 to 1870 and, by the state marker's account as quoted, was also used for hangings, among them during the Cart War of 1857. It is called the Cart War Oak or the Goliad Hanging Tree, and the lawn is open ground on the town square.",
+  "meta_description": "The Cart War Oak in Goliad, Texas: the live oak on the courthouse lawn where court met from 1846 to 1870.",
+  "question_meta": "The Cart War Oak in Goliad, Texas: the live oak on the courthouse lawn where court met from 1846 to 1870.",
+  "question_answer": "The tree we map for Goliad is the Cart War Oak, also called the Goliad Hanging Tree, a live oak on the north lawn of the Goliad County Courthouse. By the state marker's account as quoted, court sessions met under it from 1846 to 1870. No age has been published.",
+  "question_context": "The oak stands on the north lawn of the Goliad County Courthouse, on open ground on the town square with no ticket. Goliad is about 150 km southwest of Houston, reached by car.\n\nThe marker's history is known here through quotation. Our pin is approximate, set to the lawn, and the species is read from photographs.\n\nNo written source gives an age, girth or height for the oak, and none says how the marker's account was first compiled. The courthouse behind it is a Second Empire building of 1894, so the tree stood on the square before the present courthouse did. Photographs from January 2015 and visitor reports from 2018 show it alive. A second oak, the Baptist Oak, stands about 150 m away and is a separate tree. If you can tell us the species or the age, a note on the page will do. The lawn is open to everyone and costs nothing.",
+  "faq": [
+    {
+      "q": "Where is the Goliad Hanging Tree?",
+      "a": "On the north lawn of the Goliad County Courthouse, on the town square, beside a state historical marker."
+    },
+    {
+      "q": "Can I visit the Cart War Oak?",
+      "a": "Yes. The courthouse lawn is open ground on the town square, with no ticket to buy."
+    }
+  ],
+  "oldest_tree_id": "gld_001",
+  "trees": [
+    {
+      "id": "gld_001",
+      "name": "Cart War Oak (Goliad Hanging Tree)",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "height_m": null,
+      "location": {
+        "address": "North lawn, Goliad County Courthouse, 127 N Courthouse Square, Goliad, TX 77963",
+        "latitude": 28.6663,
+        "longitude": -97.3918,
+        "neighbourhood": "Goliad courthouse square"
+      },
+      "verified_sources": [
+        "https://www.texasescapes.com/TexasHistory/TexasHistoricTrees/Goliad/GoliadHangingTree.htm",
+        "https://en.wikipedia.org/wiki/List_of_hanging_trees",
+        "https://commons.wikimedia.org/wiki/File:Hanging_Tree,_Texas_Historical_Marker,_Goliad_County_Courthouse,_Goliad,_Texas_(16075150350).jpg"
+      ],
+      "access": "Courthouse lawn on the town square; open grounds, no ticket. Courthouse hours not established.",
+      "transport": "Car; Goliad is about 150 km southwest of Houston. No public transport established.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Goliad County Courthouse north lawn",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Hanging_Tree%2C_Goliad_County_Courthouse%2C_Goliad%2C_Texas_%2816075147710%29.jpg",
+        "license": "CC BY-SA 2.0",
+        "attribution": "Ken Lund",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Hanging_Tree,_Goliad_County_Courthouse,_Goliad,_Texas_(16075147710).jpg",
+        "status": "approved"
+      },
+      "story": "For a quarter of a century, Goliad held court in the shade of this oak. The state historical marker beside it, as it has been quoted, says court sessions met here from 1846 to 1870, and that the tree was also used for hangings that no court ordered. The worst of them came in 1857, during the Cart War against Mexican cartmen. About 70 men were killed before the Texas Rangers intervened, and some of them were hanged from this tree.\n\nTexas Escapes called it the Cart War Oak in 2001 and placed it on the north side of the courthouse lawn, where Texas Highways puts it too. Others know it as the Goliad Hanging Tree. The figures above are the marker's, known through quotation, and little else has been written about the tree, so read them as the marker's account rather than a full history.\n\nThe courthouse behind it is the Second Empire building of 1894. The oak is still alive: photographs from January 2015 and visitors in 2018 show it standing on the lawn.\n\nNo written source names its species, though photographs show a live oak. Nobody has published its age, girth or height either. If you know any of them, tell us.\n\nThe lawn is open ground on the town square, with no ticket to buy.",
+      "how_to_recognise": "You can recognise it by the state historical marker standing beside it. It stands on the north lawn of the Goliad County Courthouse, on the town square."
+    }
+  ]
+}

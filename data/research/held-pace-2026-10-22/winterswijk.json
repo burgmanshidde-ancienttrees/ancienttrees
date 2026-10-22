@@ -1,0 +1,67 @@
+{
+  "city": "Winterswijk",
+  "country": "Netherlands",
+  "status": "needs_curation",
+  "intro": "The oldest tree in Winterswijk, by the reckoning of the local history society, is an oak in a pasture at Brinkheurne, planted between 1750 and 1800. Lightning tore its bark open in 1975; it was repaired in 1981 and has kept growing, to 6 metres round by 2015. It stands alone in the field because the hedge bank it grew in was cleared in the 19th century and this tree was left.",
+  "meta_description": "The old oak of Sieverdink near Winterswijk: about 250 years old, 6 metres round, struck by lightning in 1975 and still growing.",
+  "question_meta": "Winterswijk's oldest tree is the Sieverdink oak at Brinkheurne, planted between 1750 and 1800 and 6 metres round in 2015.",
+  "question_answer": "The oldest tree in Winterswijk is the Oude eik van Sieverdink, a pedunculate oak in a pasture at Brinkheurne, according to the local history society Oud-Winterswijk. The national register's claim form dates its planting to between 1750 and 1800, so it is roughly 250 years old. In 2015 it measured 6 metres round and 20 metres tall. It survived a lightning strike in September 1975 that tore away its bark over many metres.",
+  "question_context": "The Sieverdink oak stands in the countryside of Winterswijk, in the hamlet of Brinkheurne, by a farm of the same name on Bothoekweg. Dutch Wikipedia notes that it may in fact stand just across the line in the neighbouring hamlet of Kotten. The tree began as part of a houtwal, a wooded hedge bank, and when the bank was cleared in the 19th century the oak was the one left standing. That is why it now has a pasture to itself. Its girth grew from 5 metres in 1972 to 6 metres in 2015, lightning and tree surgery included. In 2018 a group of 24 photographers made it the subject of an exhibition and a book. The meadow is private farmland and no source says it may be entered, so the view is from the public roads, Sieverdinkweg and Bothoekweg, which meet just to the northeast. No bus time has been confirmed; it is a walk or a bicycle ride out from Winterswijk. Our pin is close to the tree rather than exact.",
+  "faq": [
+    {
+      "q": "How old is the oldest tree in Winterswijk?",
+      "a": "Roughly 250 years. The register's claim form puts the planting of the Sieverdink oak between 1750 and 1800."
+    },
+    {
+      "q": "Can you walk up to the Sieverdink oak?",
+      "a": "No source says the pasture may be entered. It is working farmland, so look at the tree from Sieverdinkweg or Bothoekweg."
+    },
+    {
+      "q": "What happened to the oak in 1975?",
+      "a": "Lightning struck it in September 1975, tearing off bark over many metres and breaking branches. Tree surgeons repaired it in 1981, and it has added about 80 centimetres of girth since the strike."
+    }
+  ],
+  "trees": [
+    {
+      "id": "wtw_001",
+      "name": "Oude eik van Sieverdink",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "roughly 250 years",
+      "age_min": 225,
+      "age_max": 275,
+      "age_basis": "source",
+      "girth_cm": 600,
+      "height_m": 20,
+      "location": {
+        "address": "Pasture southwest of the crossing of Sieverdinkweg and Bothoekweg (farm Sieverdink, Bothoekweg 9-11), Brinkheurne",
+        "latitude": 51.944731,
+        "longitude": 6.752036,
+        "neighbourhood": "Brinkheurne, Winterswijk"
+      },
+      "verified_sources": [
+        "https://nl.wikipedia.org/wiki/Oude_eik_van_Sieverdink",
+        "https://bomen.meetnetportaal.nl/index.php?c=portal&mm=claim&m=custom&options=monumentale_bomen/claimformulier.xml",
+        "https://www.oudwinterswijk.nl/diversen/oudste-boom/oudste-boom-van-winterswijk/"
+      ],
+      "access": "Stands alone in a pasture by the Sieverdink farm; view it from the public roads Sieverdinkweg and Bothoekweg. The meadow itself is farmland: no source says it can be entered.",
+      "transport": "Rural hamlet near Winterswijk; no public-transport time verified, walking or cycling from Winterswijk.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Lightning hit this oak in September 1975, ripped its bark away over many metres and broke off branches. It kept growing anyway. Tree surgeons repaired it in 1981, and in the decades after the strike it put on about 80 centimetres of girth. In 2015 it measured 6 metres round and 20 metres tall.\n\nThe local history society Oud-Winterswijk calls it the oldest tree in Winterswijk. The claim form of the national register of monumental trees has it planted between 1750 and 1800, which makes it roughly 250 years old. It began as one tree in a houtwal, a wooded hedge bank. In the 19th century the bank was cleared and this oak was left standing. No source says why it was spared.\n\nThat is why it stands alone in a pasture today. In 1972 it was 5 metres round, so the lightning came when it was already a big tree. In 2018 it was the subject of an exhibition and a book by 24 photographers.\n\nEven its address is slightly unsettled. It stands by the Sieverdink farm in the hamlet of Brinkheurne, though Dutch Wikipedia notes it may sit just over the line in Kotten.\n\nThe meadow is working farmland, and no source says you may walk into it. Look at it from Sieverdinkweg or Bothoekweg.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/20190813EikSieverdink.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "attribution": "WeeJeeVee",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:20190813EikSieverdink.jpg",
+        "width": 3062,
+        "height": 2110,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by standing alone: one big oak, 6 metres round, in the open pasture by the Sieverdink farm. It stands southwest of the crossing of Sieverdinkweg and Bothoekweg, seen from the road.",
+      "official_register": {
+        "name": "Landelijk Register van Monumentale Bomen, no. 1678358",
+        "url": "https://bomen.meetnetportaal.nl/index.php?c=portal&mm=claim&m=custom&options=monumentale_bomen/claimformulier.xml"
+      }
+    }
+  ]
+}
