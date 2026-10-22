@@ -168,7 +168,8 @@
    "place": "Ann Arbor",
    "country": "United States",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#77). No city heritage-tree register published; the Ann Arbor Forestry Department is said to keep a list but it is not online. The Michigan Big Tree Register (Michigan Botanical Society, michiganbotanicalsociety.org/big-tree, a Google Doc) lists champions by county with owner-approved locations, among them a chinkapin oak in Ann Arbor (Washtenaw; measurements not interpreted). Licence for reuse not yet read and the doc not parsed. Next angle: read the doc's terms, extract the Washtenaw rows, and treat as finding aid (each needs a second source and a pin)."
+   "retried": "2026-10-22",
+   "note": "RETRIED 2026-10-22: the big-tree page (curl 200) states no licence or reuse terms and lists only county-level statewide rankings (a black willow in Washtenaw, 323 in., 1982), no per-tree coordinates or Ann Arbor rows; nothing to extract. SCOUTED 2026-10-15 on scout_next.py --target (#77). No city heritage-tree register published; the Ann Arbor Forestry Department is said to keep a list but it is not online. The Michigan Big Tree Register (Michigan Botanical Society, michiganbotanicalsociety.org/big-tree, a Google Doc) lists champions by county with owner-approved locations, among them a chinkapin oak in Ann Arbor (Washtenaw; measurements not interpreted). Licence for reuse not yet read and the doc not parsed. Next angle: read the doc's terms, extract the Washtenaw rows, and treat as finding aid (each needs a second source and a pin)."
   },
   {
    "place": "Nashville",
@@ -708,8 +709,9 @@
   {
    "place": "Las Vegas",
    "country": "United States",
-   "status": "stalled",
-   "note": "SCOUTED 2026-08-18. Nevada Division of Forestry's 2015 Nevada Big Tree Register (statewide champion-tree PDF) carries at least 11 UNLV campus champions, 3 at Winchester Park and 2 at The Springs Preserve, all in Clark County/Las Vegas, all genuinely walkable clusters. No explicit open-licence statement found (only a generic accuracy disclaimer on a sibling NV.gov site), so not imported as a register file; used as a verification/lead source for hand-verified layer-1 entries instead, same treatment as Toronto's Ontario Heritage Tree data. Full writeup and extraction method in OPEN_DATA_SURVEY.md. Next: a verify pass to place each UNLV tree on campus (the register gives no street address) and find per-tree second sources."
+   "status": "found",
+   "retried": "2026-10-22",
+   "note": "RETRIED 2026-10-22: the verify pass the note below asks for has happened; Las Vegas is published (11 trees, lvg_ ids), with two more verified entries (lvg_015, lvg_016) that sit on already-live trees and stay unwritten. The register is still a lead source, not an import. SCOUTED 2026-08-18. Nevada Division of Forestry's 2015 Nevada Big Tree Register (statewide champion-tree PDF) carries at least 11 UNLV campus champions, 3 at Winchester Park and 2 at The Springs Preserve, all in Clark County/Las Vegas, all genuinely walkable clusters. No explicit open-licence statement found (only a generic accuracy disclaimer on a sibling NV.gov site), so not imported as a register file; used as a verification/lead source for hand-verified layer-1 entries instead, same treatment as Toronto's Ontario Heritage Tree data. Full writeup and extraction method in OPEN_DATA_SURVEY.md. Next: a verify pass to place each UNLV tree on campus (the register gives no street address) and find per-tree second sources."
   },
   {
    "place": "Mexico City",

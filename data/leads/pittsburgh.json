@@ -2,47 +2,39 @@
   "city": "Pittsburgh",
   "country": "United States",
   "city_slug": "pittsburgh",
-  "note": "Verify pass 2026-09-11. passcheck had only one Wikidata lead (an Anne Frank sapling, not chased) and no register. Found the naming body: City of Pittsburgh Shade Tree Commission's 'Remarkable Trees of Pittsburgh' program (partnership with Tree Pittsburgh), confirmed via official meeting minutes (a real government PDF). remarkabletreespgh.com itself, which almost certainly has the full designated list with better detail and photos, is JavaScript-rendered and returned nothing to plain curl or WebFetch this pass; a browser-rendering pass should retry it directly and would likely upgrade all four delivered trees plus surface more. 4 trees delivered (pit_001-004), reaching the 4-tree floor.",
+  "note": "Verify pass 2026-09-11. passcheck had only one Wikidata lead (an Anne Frank sapling, not chased) and no register. Found the naming body: City of Pittsburgh Shade Tree Commission's 'Remarkable Trees of Pittsburgh' program (partnership with Tree Pittsburgh), confirmed via official meeting minutes (a real government PDF). remarkabletreespgh.com itself, which almost certainly has the full designated list with better detail and photos, is JavaScript-rendered and returned nothing to plain curl or WebFetch this pass; a browser-rendering pass should retry it directly and would likely upgrade all four delivered trees plus surface more. 4 trees delivered (pit_001-004), reaching the 4-tree floor. Pass 2026-10-22: the program's Google My Map KML gave 16 tree points; 12 new trees delivered to data/research/pittsburgh-verified.json (pit_005-016) from Shade Tree Commission minutes 2023-03-16 and 2024-03-21 plus the map coordinates. All one-source (government minutes), no girth or age published anywhere.",
   "leads": [
     {
-      "name": "The Copper Beech of Frick Park",
-      "species": "Copper Beech (Fagus sylvatica 'Purpurea' / 'Atropunicea')",
+      "name": "Pin upgrade for pit_001 to pit_004 (Mellon Park cypress, katsura, lacebark pine, Phillips Park white oak)",
+      "species": "various",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "Named 'Tree of a Kind' in the same official Shade Tree Commission minutes (2023-03-16). Not pursued this pass for time; would need a second source and a location within Frick Park."
+      "why": "The Remarkable Trees map has tree-level points: Mellon bald cypress 40.45177,-79.91696; katsura 40.4522,-79.91681; lacebark pine 40.45465,-79.9145; Phillips Park white oak 40.39147,-79.9917 (current pins 40.4535,-79.9168 / 40.4548,-79.9168 / 40.3906,-79.9916). Cypress and katsura are about 100 m from the current pin and the lacebark pine is 190 m off. Official tree-level evidence for pin_source; apply as a pin move."
     },
     {
-      "name": "The European Hornbeam of Arsenal Park",
-      "species": "European Hornbeam (Carpinus betulus)",
+      "name": "Frick Park elm (Tree of a Kind, waiting on Champion measurements, 2023 minutes)",
+      "species": "Elm sp.",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "Named 'Champion Tree' in the same minutes. Not pursued this pass."
+      "why": "Not on the map and not in the 2024 designations; no point or update found. The 2024 Champion elm is in Allegheny Commons (pit_011), a different tree."
     },
     {
-      "name": "The Specimen Bald Cypress of Arsenal Park",
-      "species": "Bald Cypress (Taxodium distichum)",
-      "lat": null,
-      "lng": null,
+      "name": "Anne Frank's Tree at the Community Day School (Wikidata Q140073093)",
+      "species": "Horse chestnut descendant sapling (unchecked)",
+      "lat": 40.4261,
+      "lng": -79.91859,
       "status": "lead",
-      "why": "Named 'Specimen Tree' in the same minutes, distinct from the Mellon Park champion (pit_001). Not pursued this pass."
+      "why": "School grounds: hard rule 10 needs evidence the grounds are open. Not chased."
     },
     {
-      "name": "The Bald Cypress and Elm of Frick Park / Stanton Ave",
-      "species": "Bald Cypress (Stanton Ave) and Elm sp. (Frick Park)",
+      "name": "Remarkable Trees 2024 classes not on the map: nothing unmatched",
+      "species": "-",
       "lat": null,
       "lng": null,
       "status": "lead",
-      "why": "Named 'Tree of a Kind and Specimen Tree' (Stanton Ave bald cypress) and 'Tree of a Kind, waiting on measurements for Champion Tree' (Frick Park elm) in the same minutes. Not pursued this pass; the elm's designation was explicitly still pending as of March 2023, worth checking for an update."
-    },
-    {
-      "name": "remarkabletreespgh.com full registry and map",
-      "species": "Various",
-      "lat": null,
-      "lng": null,
-      "status": "lead",
-      "why": "The program's own site (2023 and 2024 Remarkable Trees pages, plus an interactive map) almost certainly carries every designated tree with photos, precise locations and nomination writeups, but is JavaScript-rendered and returned empty/no content to plain curl and WebFetch on every attempt this pass. Highest-value lead for upgrading pit_001-004 from approximate to confirmed precision and for finding the remaining ~11 of the 15 trees that met criteria in the inaugural round (44 submissions, 15 qualified, only 8 identified this pass via the minutes)."
+      "why": "All 16 map points are matched: 4 already live (pit_001-004), 12 delivered (pit_005-016). 2024 minutes tabled 3 nominations and rejected 5; names not published. The 2025 class, if any, is not on the 2024 map; check remarkabletreespgh.com for a 2025 page."
     }
   ],
   "blocked": []

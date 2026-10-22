@@ -1,0 +1,330 @@
+[
+ {
+  "id": "pit_005",
+  "name": "The Specimen Bald Cypress of Arsenal Park",
+  "species": "Bald Cypress (Taxodium distichum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Arsenal Park, near the main entrance off 40th Street, Pittsburgh, Pennsylvania",
+   "latitude": 40.46703,
+   "longitude": -79.96076,
+   "neighbourhood": "Lawrenceville"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: Bald Cypress, Arsenal Park, Specimen Tree)",
+   "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "confirmed",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2023 class, category Specimen Tree (program definition: notable example of its kind on public property). Location per program: near the main entrance of Arsenal Park off 40th Street. Nominator's age note: 'easily over 50 years old' (a nominator's guess, not an age basis). No girth or height published. Park opened 4 July 1907 on the grounds of the former Allegheny Arsenal (Atlas Obscura / city park page), no bridge to this tree's age. Deciduous conifer, so a bare-silhouette and autumn-bronze tree. Stands about 20 m from the European hornbeam (pit_006): one place to stand, two trees. One source (government minutes) flagged; Pittsburgh Parks Conservancy / program page agree on existence. Alive: named in 2023, recheck via lifecheck. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_006",
+  "name": "The Champion European Hornbeam of Arsenal Park",
+  "species": "European Hornbeam (Carpinus betulus)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Arsenal Park, southeast of the flagpole near the 40th Street entrance, Pittsburgh, Pennsylvania",
+   "latitude": 40.4672,
+   "longitude": -79.96065,
+   "neighbourhood": "Lawrenceville"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: European Hornbeam, Arsenal Park, Champion Tree)",
+   "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "confirmed",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2023, category Pittsburgh Champion (program definition: largest or one of the largest of its species on public property). Program page says it is likely one of the largest, if not the largest, European hornbeams on city property and could be nominated to the Pennsylvania Champion Trees registry (claim of the program, not independently measured). No girth or height published. Location per program: southeast of the flagpole near the 40th Street entrance. About 20 m from the Arsenal Park bald cypress (pit_005). One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_007",
+  "name": "The Stanton Avenue Bald Cypress",
+  "species": "Bald Cypress (Taxodium distichum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "6300 block of Stanton Avenue, Highland Park, Pittsburgh, Pennsylvania",
+   "latitude": 40.46914,
+   "longitude": -79.91974,
+   "neighbourhood": "Highland Park"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: Bald Cypress, Stanton Avenue, Tree of a Kind and Specimen Tree)",
+   "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "confirmed",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2023, carries three categories: Giving Tree (rich in wildlife, key role in urban ecosystem), Specimen Tree, Tree of a Kind. Program gives only the address 'Stanton Avenue, 6300 block' (Highland Park); the Nominatim reverse geocode of the map point returns East Liberty / 6036 Stanton Avenue, i.e. the numbering differs, so the street position rests on the program map point, not the address. Whether it stands on park land or the street right-of-way is not stated; public property by program definition. About 1.2 km from the Highland Park champions (pit_009, pit_010). One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_008",
+  "name": "The Copper Beech of Frick Park",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Frick Park, reached through the gatehouse at Reynolds and Homewood Streets, Pittsburgh, Pennsylvania",
+   "latitude": 40.446,
+   "longitude": -79.90327,
+   "neighbourhood": "Point Breeze"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: Copper Beech, Frick Park, Tree of a Kind)",
+   "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "confirmed",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2023, Tree of a Kind (unique in appearance, origin, growth or other aspect). Program location: Frick Park via the gatehouse at Reynolds and Homewood Streets. Map point reverse-geocodes to Tranquil Trail inside Frick Park (OSM), so a trail runs past it. Purple foliage makes it distinguishable among the park's native trees. Frick Park is a large public park (Wikipedia); free. No girth/height/age published. One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_009",
+  "name": "The Champion Ginkgo of Highland Park",
+  "species": "Ginkgo (Ginkgo biloba)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Highland Park, below the super playground, near Reservoir Drive Walk, Pittsburgh, Pennsylvania",
+   "latitude": 40.47979,
+   "longitude": -79.91788,
+   "neighbourhood": "Highland Park"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Pittsburgh Champion, Ginkgo, Highland Park below super playground)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "confirmed",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Pittsburgh Champion (largest of its species on public property). City minutes place it 'in Highland Park below super playground'. A Bayne Library page says Pittsburgh's largest known ginkgo is in Highland Park with a trunk circumference of roughly eighteen feet (about 550 cm): that page was only a search-result pointer in this pass, not fetched and not tied to this tree, so NOT recorded as girth_cm. Writer may ask the reader. About 100 m from the Highland Park black locust (pit_010). One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_010",
+  "name": "The Champion Black Locust of Highland Park",
+  "species": "Black Locust (Robinia pseudoacacia)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Highland Park, near Reservoir Drive, Pittsburgh, Pennsylvania",
+   "latitude": 40.48062,
+   "longitude": -79.91763,
+   "neighbourhood": "Highland Park"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Pittsburgh Champion, Black Locust, Highland Park)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "approximate",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Pittsburgh Champion (largest of its species on public property). Minutes give only 'Highland Park'. Black locust is common and hard to tell apart from neighbours, so pin kept approximate despite the map point; the map point is about 100 m from the Highland Park ginkgo (pit_009), near the reservoir. A Highland Park Reservoir tree-removal dispute (PublicSource, state dam-safety rules vs city) concerns reservoir-embankment trees; not shown to involve this tree, but worth a recheck. No girth/height/age published. One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_011",
+  "name": "The Champion American Elm of Allegheny Commons",
+  "species": "American Elm (Ulmus americana)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Allegheny Commons, West North Avenue, Pittsburgh, Pennsylvania",
+   "latitude": 40.453823,
+   "longitude": -80.011632,
+   "neighbourhood": "Allegheny Center"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Pittsburgh Champion, American Elm, Allegheny Commons)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "approximate",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Pittsburgh Champion. Minutes: Allegheny Commons, a linear public park on Pittsburgh's North Side; map point reverse-geocodes to West North Avenue. American elm in a park that holds many elms and other trees, so kept approximate. An earlier 2023 minute noted a Frick Park elm 'waiting on measurements for Champion Tree'; this one is a different tree in a different park. A surviving mature American elm is notable given Dutch elm disease (general fact, no source for this tree's survival story). No girth/height/age published. One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_012",
+  "name": "The Sycamore of Hazelwood Greenway",
+  "species": "American Sycamore (Platanus occidentalis)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Hazelwood Greenway, Pittsburgh, Pennsylvania",
+   "latitude": 40.40668,
+   "longitude": -79.93593,
+   "neighbourhood": "Hazelwood"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Tree of a Kind, American Sycamore, Hazelwood Greenway)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "approximate",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Tree of a Kind. Greenway is a public open-space corridor (a greenway, not a formal park: access is by foot; unverified whether there is a path to the exact tree). Sycamore of unstated size. Pin approximate: greenway woodland with other sycamores likely. about 5.5 km from the Mellon Park cluster. Weak for 'worth the walk' without girth; delivered as one source flagged. Alive check: lifecheck found NO recent observation near the point; alive unconfirmed beyond the 2024 designation, so flagged."
+ },
+ {
+  "id": "pit_013",
+  "name": "The Crabapple of Morrow Park",
+  "species": "Crabapple (Malus sp.)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Morrow Park, Liberty Avenue, Pittsburgh, Pennsylvania",
+   "latitude": 40.4565575,
+   "longitude": -79.9389445,
+   "neighbourhood": "Bloomfield"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Tree of a Kind, Crabapple, Morrow Park, also specimen tree)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "approximate",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Tree of a Kind (and specimen tree). The map point carries no species or category text, the minutes supply them. Morrow Park is a small park at Liberty Avenue in Bloomfield (map point reverse-geocodes to Liberty Avenue). Species only 'crabapple' (genus Malus presumably; do not claim a species). Park is small, so a location_site could be claimed after a source states park size: not done. Spring blossom is the likely peak but no source says so. About 1.9 km from the Mellon Park cluster. One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_014",
+  "name": "The Giving Tree Pin Oak of Brighton Heights Park",
+  "species": "Pin Oak (Quercus palustris)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Brighton Heights Park, near Cobbler Circle, Pittsburgh, Pennsylvania",
+   "latitude": 40.48623,
+   "longitude": -80.0301,
+   "neighbourhood": "Brighton Heights"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Giving Tree, Pin Oak, Brighton Heights Park)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "approximate",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Giving Tree (tree rich with wildlife, key role in the urban ecosystem). Pin oak in a park with other oaks, kept approximate. No size published. Far from other candidates (North Side, 10 km from Mellon). One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_015",
+  "name": "The Witness Pin Oak of West End Park",
+  "species": "Pin Oak (Quercus palustris)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "West End Park, Elkton Street, Pittsburgh, Pennsylvania",
+   "latitude": 40.44538,
+   "longitude": -80.03352,
+   "neighbourhood": "West End (Elliott)"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Witness Tree, Oak, West End Park; commissioners note the tree is part of KDKA's opening branding)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "approximate",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Witness Tree (historical or cultural significance). Minutes say 'Oak, West End Park' and add that the oak is part of KDKA's (TV station) opening branding; a commissioner proposed contacting KDKA about it. The map point labels it Pin oak (Quercus palustris); the minutes say only 'Oak', so species rests on the program map. The KDKA connection is stated in the minutes only as a remark; the writer needs a second source before telling the story. One source flagged. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ },
+ {
+  "id": "pit_016",
+  "name": "The Witness Sawtooth Oak of Westinghouse Park",
+  "species": "Sawtooth Oak (Quercus acutissima)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "location": {
+   "address": "Westinghouse Park, North Murtland Street, Pittsburgh, Pennsylvania",
+   "latitude": 40.45256,
+   "longitude": -79.90428,
+   "neighbourhood": "Point Breeze North"
+  },
+  "verified_sources": [
+   "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Witness Tree, Sawtooth Oak, Westinghouse Park)"
+  ],
+  "official_register": {
+   "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+   "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+  },
+  "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+  "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+  "location_precision": "confirmed",
+  "pin_source": "pin_source: City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+  "curation_status": "flagged",
+  "verify_notes": "Remarkable Trees 2024, Witness Tree (historical or cultural significance). The minutes do not say what it witnessed; the program's own write-up was not read for text. A sawtooth oak is an Asian species, distinct from park natives. Westinghouse Park is in Point Breeze, near the Frick Park copper beech (pit_008, about 0.7 km). One source flagged: needs the history from a second source before a story. Alive check: lifecheck found recent (within 10 days) iNaturalist observations within the radius; these are nearby observations, not proof of this trunk, so alive rests on the 2023/2024 designation plus nearby activity. Photographs not hunted."
+ }
+]
