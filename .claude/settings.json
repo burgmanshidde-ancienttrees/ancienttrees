@@ -108,6 +108,18 @@
         ]
       }
     ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 scripts/hooks/copy_after_edit.py 2>/dev/null || true",
+            "timeout": 25
+          }
+        ]
+      }
+    ],
     "UserPromptSubmit": [
       {
         "hooks": [

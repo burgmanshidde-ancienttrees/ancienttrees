@@ -160,6 +160,33 @@ CALQUES = [
 ]
 
 
+# SHAPES THAT READ MACHINE-WRITTEN (Hidde, 2026-10-22, on the city page's app
+# block: "The walking routes, your saved trees, and the collection of the ones
+# you have stood in front of: the Ancient Trees app." His words: "dit loopt
+# scheef en lijkt door ai geschreven"). Not a banned word, a sentence shape:
+# a list held back behind a colon so the name lands as a reveal, when nothing
+# was hidden. These run on both surfaces, because that sentence lived on the
+# website, where the tics above never looked.
+AI_SHAPES = [
+    (re.compile(r",[^:]{10,}:\s+(?:that is |this is |that's )?(?:the|your|a|an)\s+"
+                r"[^:.,!?]{1,40}\.?$", re.I),
+     "colon reveal: a list held back behind a colon, then the name; say what it is first"),
+    (re.compile(r"\bwhether you(?:'re| are)\b", re.I),
+     "whether-you're: brochure padding; name the one reader this is for"),
+    (re.compile(r"\bthe ones you have (?:stood|been|walked)\b", re.I),
+     "roundabout: say \"the ones you visited\""),
+    (re.compile(r"\bnot (?:just |only )?(?:a |an |the )?[\w' ]{1,25}, (?:just|but) (?:a |an |the )?", re.I),
+     "defining by denying: say what it is, not what it is not"),
+]
+
+
+def ai_shape(text):
+    for pattern, why in AI_SHAPES:
+        if pattern.search(text):
+            return why
+    return None
+
+
 def calque(text):
     for pattern, why in CALQUES:
         if pattern.search(text):
@@ -183,7 +210,7 @@ SITE = ROOT / "site" / "src"
 # looser than the Swift pattern: the website writes its copy in .astro props,
 # in i18n tables and in template literals, and a rule that only reads one of
 # those would miss the translation of the sentence it just caught.
-COMMENT = re.compile(r"^\s*(//|\*|/\*).*$", re.M)
+COMMENT = re.compile(r"^[ \t]*(//|\*|/\*).*$", re.M)
 SITE_STRING = re.compile(r"""["'`]((?:[^"'`\\\n]|\\.){25,300})["'`]""")
 
 
@@ -245,7 +272,7 @@ def main():
             continue
         # Interpolated strings are mostly numbers and names; the tics live in
         # the prose around them and this still sees that.
-        promise = data_promise(text) or calque(text)
+        promise = data_promise(text) or calque(text) or ai_shape(text)
         if promise:
             hits.append((path, line, text, promise))
             continue
@@ -255,7 +282,7 @@ def main():
                 break
 
     for path, line, text in site_sentences():
-        promise = data_promise(text) or calque(text)
+        promise = data_promise(text) or calque(text) or ai_shape(text)
         if promise:
             hits.append((path, line, text, promise))
 
