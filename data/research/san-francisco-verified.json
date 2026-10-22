@@ -154,5 +154,71 @@
   "story": "This eucalyptus is older than the forest around it. Angelo Beretta, the Presidio's post trader, planted it on 4 July 1876 to mark the hundredth birthday of the Declaration of Independence, a decade before the Army began the plantation that grew into the Presidio's woods.\n\nHe planted three, in front of his store at the Main Post. When the Army enlarged the parade ground, two of them came out. The third stayed. The Presidio Trust, which manages the ground, says it was spared by a special act of Congress; no second source names the act, so that detail rests on the Trust's word.\n\nA century later, on 4 July 1976, Beretta's family gave the plaque at its base, which records the planting date and his name. That plaque matters more than usual, because a younger Bicentennial Tree stands nearby and is easy to take for this one.\n\nThe National Park Service said in 2025 that the Centennial Tree still stands near the centre of the parade ground that cost it its two companions.\n\nNobody has published a girth or a height, and one San Francisco tree writer rates it more for its history than its size. The pin is our estimate for the middle of the Main Parade Ground rather than a surveyed point, so walk to the centre of the lawn and look for the plaque. If you have measured the trunk, tell us.",
   "how_to_recognise": "You can recognise it by the plaque at its base, with Angelo Beretta's name and the date July 4, 1876. It stands near the centre of the Main Parade Ground; the younger Bicentennial Tree nearby is a different tree.",
   "written": true
+ },
+ {
+  "id": "sfo_012",
+  "name": "The Cork Oak of 20th and Noe",
+  "species": "Cork Oak (Quercus suber)",
+  "age_estimate": "at least 75 years",
+  "age_min": 75,
+  "age_max": null,
+  "girth_cm": 176,
+  "location": {
+   "address": "20th Street at Noe Street (hillside Cork Oak Tree Community Garden; DataSF address 4090 20th St)",
+   "latitude": 37.757863,
+   "longitude": -122.432119,
+   "neighbourhood": "Dolores Heights"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees",
+   "https://doloresheights.org/2025/10/13/cork-oak-tree-garden-at-20th-noe-streets/",
+   "https://data.sf.gov/resource/tkzw-k3nq.json (treeid 240351)",
+   "https://www.inaturalist.org/observations/389185521"
+  ],
+  "official_register": {
+   "name": "San Francisco Landmark Tree No. 15 (Public Works Significant and Landmark Trees list; DataSF Street Tree List treeid 240351)",
+   "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
+  },
+  "access": "Free. On the public right-of-way at the top of a hillside community garden at 20th and Noe Streets (Public Works list: 'Public right-of-way').",
+  "transport": "Muni J Church, 20th St and Church St stop, about 400 m (two blocks) east (transport detail from map knowledge, not source-checked)",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Cork Oak Tree Community Garden, 20th and Noe Streets",
+   "radius_m": 30
+  },
+  "curation_status": "flagged",
+  "verify_notes": "Official Landmark Tree No. 15 (Public Works list says 'Public right-of-way'; Dolores Heights Improvement Club post of 2025-10-13 names the hillside garden at 20th and Noe 'Cork Oak Tree Community Garden' in recognition of this tree, 'at the top of the garden'). Landmark route: neighbours petitioned, Dolores Heights Improvement Club supported, Landmark Tree Committee heard it 2021-11-04, committee forwarded ordinance with positive recommendation Sept 2022 (citizenportal.ai summary, a pointer only; its page and sfenvironment.org 403 to curl and WebFetch, so the nomination form with measurements was NOT read; full Board adoption not confirmed from a page, but the tree is on the Public Works list as designated). Search summaries say Urban Forestry Council found it met criteria on age (at least 75 years), physical attributes, environmental benefits and neighbourhood value, and a committee member called it one of the largest oaks seen in the Bay Area / possibly the biggest cork oak in the city (pointer only, not a page I read; do not state as fact). Girth 176 cm is DataSF mapdbh 22 in (56 cm diameter) times pi, register DBH may be an old estimate; treat as a floor. Age: 'at least 75 years' is the designation criterion, not a measured age; no upper bound sourced (age_max left null). Alive: iNaturalist observation 2026-06-21 (lifecheck RECENT) and the garden post of Oct 2025. Pin is the DataSF coordinate, the register address 4090 20th St is a side-yard record; small named site, so approximate with location_site. Cork oak is an uncommon tree in SF. Hosts: sfenvironment.org and citizenportal.ai 403 to curl and WebFetch; web.archive.org had no snapshot of the nomination form."
+ },
+ {
+  "id": "sfo_013",
+  "name": "The Moreton Bay Fig of Valencia Street",
+  "species": "Moreton Bay Fig (Ficus macrophylla)",
+  "age_estimate": "over a century",
+  "age_min": 100,
+  "age_max": null,
+  "girth_cm": 574,
+  "location": {
+   "address": "Valencia Street south of Cesar Chavez Street, west side, beside St. Luke's Hospital (official address 3555 Cesar Chavez St; DataSF 1580 Valencia St)",
+   "latitude": 37.748516,
+   "longitude": -122.420316,
+   "neighbourhood": "Mission / Bernal Heights"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees",
+   "http://www.sftrees.com/new-page-1",
+   "http://www.sftrees.com/landmark-trees",
+   "https://burritojustice.com/2010/09/16/history-of-a-tree-a-branch-a-block/",
+   "https://data.sf.gov/resource/tkzw-k3nq.json (treeid 251597)",
+   "https://www.inaturalist.org/observations/262869523"
+  ],
+  "official_register": {
+   "name": "San Francisco Landmark Tree (Public Works Significant and Landmark Trees list, listed at 3555 Cesar Chavez Street; DataSF treeid 251597)",
+   "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
+  },
+  "access": "Free to see from the Valencia Street sidewalk. The tree stands in a side yard on private ground beside St. Luke's Hospital, so view-only; a historical marker about the Bancroft Library is described as standing near it. Do not imply entry to the lot.",
+  "transport": "Muni 14 and 49 run on Mission St, about 300 m east; BART 24th St Mission about 1.2 km north (transport detail from map knowledge, not source-checked)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Landmark tree added to the City's list by Mayor Gavin Newsom on 2008-03-24 (sftrees.com Top 10 Trees, #4; fetched). sftrees.com calls it by far the largest Moreton Bay fig in San Francisco, a rare species in the city (more common in southern California), 'getting on in years, has recently lost some big limbs, but still a mammoth tree'. Burrito Justice 2010-09-16 (fetched): 'well over 100 years old, may have been planted by Bancroft himself' (speculation: Hubert Howe Bancroft had his library at Valencia and Army, now Cesar Chavez, 1881 to 1906; a bronze historical marker about the library is to the right of the tree; his old photos from 1880s show no fig, so NO planting link is sourced; do not bridge). Same post: a second large limb fell in about a year, one onto a car in 2010; a commenter was 'heartbroken' at the damage. Search summary (pointer only, not a page I read): scheduled for removal in 1999 for new construction, owner built around it and signed a tree easement with Friends of the Urban Forest. Age: only 'over 100 years' from the blog; age_max left null. Girth: DataSF mapdbh 72 in = 183 cm diameter times pi = 574 cm; diameter at breast height of a buttressed fig, register estimate, never confirmed by a second source; sanity plausible for a big fig. Alive: lifecheck RECENT, iNaturalist observation 2025-02-23; but branch failures reported 2009 to 2010, so condition may have changed. Pin: DataSF coordinate on the side yard; address mismatch (Public Works lists 3555 Cesar Chavez, DataSF 1580 Valencia; both describe the same corner per sftrees). Private ground; that it is seen from the sidewalk is inferred from the blog's marker 'below the tree' and sftrees' street-side location, no source states it outright. View-only: pin on the viewing place (Valencia St frontage). Worth the visit: the largest fig of its kind in the city. One credible US source (government list) plus independent blog corroboration."
  }
 ]

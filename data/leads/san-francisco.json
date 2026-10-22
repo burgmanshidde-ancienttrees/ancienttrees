@@ -1,194 +1,214 @@
 {
-  "leads": [
-    {
-      "candidate": "Giant Sequoia of Garfield Square (Harrison and 25th Streets)",
-      "reason": "A genuinely public giant sequoia (sequoiadendron giganteum) in a city park, possibly dating to the founding of Garfield Square in 1884 per a 2012 SF Recreation and Parks communication (Rec and Park staff quoted disagreeing on exact age, some saying 200 years which the reporter calls likely hyperbole; oldest photo evidence found by Rec and Park dates only to 1938). Source: missionlocal.org, \"Wind splits giant sequoia that may date to 1884\", fetched directly, 2023-02-23. NOT verified alive today: the article reports the multi-trunked tree snapped one of its three trunks off entirely in a February 2023 windstorm, showed abundant grey fungus in the trunk, and SF Rec and Park staff on scene speculated it would \"likely have to be removed entirely.\" No later source was found confirming either survival or removal as of this pass (2026-09), and the time budget did not allow a further search. A future pass should check for post-2023 news, a recent photo, or satellite/street-level imagery of the Harrison/25th corner before verifying this one alive; do not ship without that check, per the alive-now bar."
-    },
-    {
-      "name": "Cabbage Palm (Cordyline australis), California state champion",
-      "species": "Cabbage Palm (Cordyline australis)",
-      "latitude": 37.799269,
-      "longitude": -122.458271,
-      "location_precision": "approximate",
-      "girth_cm": 274,
-      "height_m": 11,
-      "measured": "1997-01-01",
-      "county": "San Francisco",
-      "register_id": "ca-bigtrees-51",
-      "status": "lead",
-      "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion, 149.75 points; 4.4 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-      "sources": []
-    },
-    {
-      "name": "Santa Cruz Cypress (Hesperocyparis abramsiana), California state champion",
-      "species": "Santa Cruz Cypress (Hesperocyparis abramsiana)",
-      "latitude": 37.893499,
-      "longitude": -122.242626,
-      "location_precision": "approximate",
-      "girth_cm": 201,
-      "height_m": 18,
-      "measured": "2016-01-01",
-      "county": "Contra Costa",
-      "register_id": "ca-bigtrees-425",
-      "status": "lead",
-      "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion, 147.5 points; 20.0 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-      "sources": []
-    },
-    {
-      "name": "New Zealand Christmas Tree (Metrosideros excelsa), California national champion",
-      "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
-      "latitude": 37.7718762,
-      "longitude": -122.4627358,
-      "location_precision": "approximate",
-      "girth_cm": 859,
-      "height_m": 20,
-      "measured": "2018-01-01",
-      "county": "San Francisco",
-      "register_id": "ca-bigtrees-442",
-      "status": "lead",
-      "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 424.5 points; 4.1 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-      "sources": []
-    },
-    {
-      "name": "Bunya-Bunya (Araucaria bidwillii), California state champion",
-      "species": "Bunya-Bunya (Araucaria bidwillii)",
-      "latitude": 37.981058,
-      "longitude": -122.510203,
-      "location_precision": "approximate",
-      "girth_cm": 704,
-      "height_m": 34,
-      "measured": "2024-10-04",
-      "county": "Marin",
-      "register_id": "ca-bigtrees-510",
-      "status": "lead",
-      "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion, 401.75 points; 24.1 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-      "sources": []
-    },
-    {
-      "name": "Greek Fir (Abies cephalonica), California national champion",
-      "species": "Greek Fir (Abies cephalonica)",
-      "latitude": 37.676841,
-      "longitude": -122.448129,
-      "location_precision": "approximate",
-      "girth_cm": 574,
-      "height_m": 30,
-      "measured": "2023-08-18",
-      "county": "San Mateo",
-      "register_id": "ca-bigtrees-567",
-      "status": "lead",
-      "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 348.5 points; 11.5 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
-      "sources": []
-    },
-    {
-      "candidate": "1801 Bush Street, six blue gums (Landmark Tree 1)",
-      "reason": "Official list says 'Adjacent'; ensemble of six, access and pin not checked. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "3rd Street and Yosemite median triangle, Brazilian pepper",
-      "reason": "On official list; not researched (candidate cap); needs alive check and pin. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "757 Pennsylvania Avenue, California buckeye",
-      "reason": "On official list; sftrees places a landmarked buckeye down stairs from 22nd St to the Caltrain tracks; access and pin not verified. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02. 2026-10-22 pass: sftrees.com says to take the 22nd Street stairs down to the Caltrain tracks and 'walk forward until you see the very large tree on the right'; official list says 'Behind, Assessor's Block 416B, Lot 11'. The route runs along railway land, so open access is not established; DataSF register point (back yard, Potrero Hill) is a parcel point, not the trunk. No photo, no recent sighting found.",
-      "status": "lead",
-      "latitude": 37.756647,
-      "longitude": -122.392914,
-      "location_precision": "approximate"
-    },
-    {
-      "candidate": "1701 Franklin Street, flaxleaf paperbark",
-      "reason": "On official list; not researched; likely front garden. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "Dolores Street Guadalupe palm grove (median across 1608-1650 Dolores)",
-      "reason": "On official list; not researched; may fold with sfo_002. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "Blue Elderberry, Bernal Heights Natural Area (Folsom St at Bernal Heights Blvd)",
-      "status": "lead",
-      "latitude": 37.743763,
-      "longitude": -122.412796,
-      "location_precision": "approximate",
-      "reason": "Official Landmark Tree (sfpublicworks.org list; DataSF treeid 262217, Rec/Park, no DBH). Public natural area, alive per iNaturalist 2026-08-16 near the pin (lifecheck RECENT). Held back: a shrub-like Sambucus mexicana, nothing published on why it was landmarked, no photo of this trunk, pin is register-only. Only a generic arborist blog (arboristnow.com) describes it. Verified 2026-10-21 pass."
-    },
-    {
-      "candidate": "Flaxleaf paperbark, 1701 Franklin Street",
-      "status": "lead",
-      "latitude": 37.790574,
-      "longitude": -122.424146,
-      "location_precision": "approximate",
-      "reason": "Official Landmark Tree (sfpublicworks.org; DataSF treeid 7946, sidewalk cutout, DBH 18 in = 46 cm, species recorded as Melaleuca ericifolia in DataSF versus M. linariifolia on the official list). Small sidewalk tree, no history, no photo, lifecheck NONE. Needs a dated sighting and a reason to visit. 2026-10-21 pass."
-    },
-    {
-      "candidate": "1700 Quesada Ave medians: Mariposa plum (treeid 18547) and blackwood acacia (treeid 18550)",
-      "status": "lead",
-      "latitude": 37.733457,
-      "longitude": -122.391659,
-      "location_precision": "approximate",
-      "reason": "Flagged 'Landmark tree' in the DataSF Street Tree List (DBH 30 in each, median cutouts) but NOT on the SF Public Works list of designated Landmark Trees (read 2026-10-22), which names only the Quesada median palms; no second source. Quesada Gardens (1700 block) is public. Needs the designation confirmed before anything ships. 2026-10-22 pass."
-    },
-    {
-      "candidate": "Centennial Tree neighbours: Bicentennial Tree, Presidio Main Parade Ground",
-      "status": "lead",
-      "reason": "HMDB 284786 marker for a 1976 companion planting beside the 1876 Centennial Tree (sfo_011 in san-francisco-verified.json). Young; not a reason to walk. 2026-10-22 pass."
-    }
-  ],
-  "blocked": [
-    {
-      "candidate": "Presidio/Strybing Arboretum Moon Tree",
-      "reason": "Brief named this 'the Presidio Moon Tree' but NASA's own Moon Tree registry (nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees) places it at Strybing Arboretum in Golden Gate Park, not the Presidio, planted 22 July 1976 in the Redwood Grove. NASA's own dedicated page for it (fetched via Wayback Machine, snapshot 2025-07-19, last updated by NASA 15 Sept 2023) states verbatim: 'The arboretum has no record of the tree, the only evidence we have at present are the two clippings above from the San Francisco Chronicle.' NASA's own master list (science.nasa.gov/resource/apollo-moon-trees) lists it under the 'status unknown' table. Not a collectible point: nobody, including NASA and the arboretum, can identify which specific redwood in the Redwood Grove this is, so no pin can be honestly placed at tree-level, and there is no evidence the tree is alive or even correctly identified among the grove's many redwoods. Would require a bridge claim ('a moon tree stands somewhere in the Redwood Grove') to ship, which is exactly the trap the brief warned about. Leaving for a future pass only if the arboretum or Urban Forestry ever documents a specific specimen."
-    },
-    {
-      "candidate": "Mission Dolores cemetery/garden trees",
-      "reason": "Searched for an individually old or notable tree in the Mission Dolores cemetery/garden. Multiple sources agree the garden was substantially restored in 1994 with mostly newer plantings from the 1791-period plant list, and the only tree-age claim found (cypresses planted in the cemetery, from a secondary genealogy source) was vague, undated and not about a specific identifiable specimen. No individually named or documented old tree turned up in two searches. Not pursued further given the time budget; the ground itself (founded 1776, oldest intact building in SF) is exactly the kind of place this project looks, so a future pass with more time could recheck for a specific dated cypress or palm."
-    },
-    {
-      "candidate": "Giant Sequoia at 3066 Market Street",
-      "reason": "Officially a Landmark Tree (sfenvironment.org register), but multiple sources (socketsite.com, the 2014 landmark petition itself) confirm it stands in the REAR YARD of a private residential property at 3066 Market Street, a backyard tree saved from removal by a landmark designation rather than a publicly accessible one. The official register itself warns \"many trees are in private backyards and are not available for public viewing,\" and this is one of them. Fails hard rule 10 (private garden). Not the same tree as the Garfield Square giant sequoia below."
-    },
-    {
-      "candidate": "730 28th Avenue, California Buckeye (backyard)",
-      "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "4124 23rd Street, Coast Live Oak (backyard)",
-      "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "2626 Vallejo Street, Monterey Cypress (backyard)",
-      "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "115 Parker Avenue, Howell's Manzanita (backyard)",
-      "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "2251 Filbert Street, Canary Island Pine (backyard)",
-      "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "4 Montclair Terrace, Coast Redwood (backyard)",
-      "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "46A Cook Street, Cook pine hybrid (backyard)",
-      "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "46 Stillings Avenue and 313 Scott Street, Coast Redwoods",
-      "reason": "Residential addresses, no evidence of public viewing. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "20-28 Rosemont Terrace, Coast Live Oak",
-      "reason": "Removed, structural failure per official list. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "2694 McAllister Street, California Buckeye",
-      "reason": "Removed, tree died per official list. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
-    },
-    {
-      "candidate": "Giant Sequoia of Garfield Square (Harrison and 25th)",
-      "reason": "Dead: snapped in the February 2023 windstorm and shown as a stump on 22 March 2023 (The Standard, https://sfstandard.com/2023/03/28/the-tree-carnage-across-the-city-is-even-worse-than-you-think/, fetched 2026-10-21). Never ship; supersedes the earlier lead."
-    }
-  ]
+ "leads": [
+  {
+   "candidate": "Giant Sequoia of Garfield Square (Harrison and 25th Streets)",
+   "reason": "A genuinely public giant sequoia (sequoiadendron giganteum) in a city park, possibly dating to the founding of Garfield Square in 1884 per a 2012 SF Recreation and Parks communication (Rec and Park staff quoted disagreeing on exact age, some saying 200 years which the reporter calls likely hyperbole; oldest photo evidence found by Rec and Park dates only to 1938). Source: missionlocal.org, \"Wind splits giant sequoia that may date to 1884\", fetched directly, 2023-02-23. NOT verified alive today: the article reports the multi-trunked tree snapped one of its three trunks off entirely in a February 2023 windstorm, showed abundant grey fungus in the trunk, and SF Rec and Park staff on scene speculated it would \"likely have to be removed entirely.\" No later source was found confirming either survival or removal as of this pass (2026-09), and the time budget did not allow a further search. A future pass should check for post-2023 news, a recent photo, or satellite/street-level imagery of the Harrison/25th corner before verifying this one alive; do not ship without that check, per the alive-now bar."
+  },
+  {
+   "name": "Cabbage Palm (Cordyline australis), California state champion",
+   "species": "Cabbage Palm (Cordyline australis)",
+   "latitude": 37.799269,
+   "longitude": -122.458271,
+   "location_precision": "approximate",
+   "girth_cm": 274,
+   "height_m": 11,
+   "measured": "1997-01-01",
+   "county": "San Francisco",
+   "register_id": "ca-bigtrees-51",
+   "status": "lead",
+   "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion, 149.75 points; 4.4 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
+   "sources": []
+  },
+  {
+   "name": "Santa Cruz Cypress (Hesperocyparis abramsiana), California state champion",
+   "species": "Santa Cruz Cypress (Hesperocyparis abramsiana)",
+   "latitude": 37.893499,
+   "longitude": -122.242626,
+   "location_precision": "approximate",
+   "girth_cm": 201,
+   "height_m": 18,
+   "measured": "2016-01-01",
+   "county": "Contra Costa",
+   "register_id": "ca-bigtrees-425",
+   "status": "lead",
+   "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion, 147.5 points; 20.0 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
+   "sources": []
+  },
+  {
+   "name": "New Zealand Christmas Tree (Metrosideros excelsa), California national champion",
+   "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
+   "latitude": 37.7718762,
+   "longitude": -122.4627358,
+   "location_precision": "approximate",
+   "girth_cm": 859,
+   "height_m": 20,
+   "measured": "2018-01-01",
+   "county": "San Francisco",
+   "register_id": "ca-bigtrees-442",
+   "status": "lead",
+   "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 424.5 points; 4.1 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
+   "sources": []
+  },
+  {
+   "name": "Bunya-Bunya (Araucaria bidwillii), California state champion",
+   "species": "Bunya-Bunya (Araucaria bidwillii)",
+   "latitude": 37.981058,
+   "longitude": -122.510203,
+   "location_precision": "approximate",
+   "girth_cm": 704,
+   "height_m": 34,
+   "measured": "2024-10-04",
+   "county": "Marin",
+   "register_id": "ca-bigtrees-510",
+   "status": "lead",
+   "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. State champion, 401.75 points; 24.1 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
+   "sources": []
+  },
+  {
+   "name": "Greek Fir (Abies cephalonica), California national champion",
+   "species": "Greek Fir (Abies cephalonica)",
+   "latitude": 37.676841,
+   "longitude": -122.448129,
+   "location_precision": "approximate",
+   "girth_cm": 574,
+   "height_m": 30,
+   "measured": "2023-08-18",
+   "county": "San Mateo",
+   "register_id": "ca-bigtrees-567",
+   "status": "lead",
+   "reason": "California Registry of Big Trees (Cal Poly UFEI, selectree.calpoly.edu/api/bigtrees/getAllBt), read 2026-09-27. FINDING AID ONLY: the licence is unstated, so this register is never the cited source; a verify pass must find the tree in an independent source (park, garden, city, press) before it can ship. Units as published: circumference in INCHES, height in FEET. National champion, 348.5 points; 11.5 km from the city centre. Needs: an independent source, public access (hard rule 10), and a pin checked on aerial imagery.",
+   "sources": []
+  },
+  {
+   "candidate": "1801 Bush Street, six blue gums (Landmark Tree 1)",
+   "reason": "Official list says 'Adjacent'; ensemble of six, access and pin not checked. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "3rd Street and Yosemite median triangle, Brazilian pepper",
+   "reason": "On official list; not researched (candidate cap); needs alive check and pin. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "757 Pennsylvania Avenue, California buckeye",
+   "reason": "On official list; sftrees places a landmarked buckeye down stairs from 22nd St to the Caltrain tracks; access and pin not verified. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02. 2026-10-22 pass: sftrees.com says to take the 22nd Street stairs down to the Caltrain tracks and 'walk forward until you see the very large tree on the right'; official list says 'Behind, Assessor's Block 416B, Lot 11'. The route runs along railway land, so open access is not established; DataSF register point (back yard, Potrero Hill) is a parcel point, not the trunk. No photo, no recent sighting found.",
+   "status": "lead",
+   "latitude": 37.756647,
+   "longitude": -122.392914,
+   "location_precision": "approximate"
+  },
+  {
+   "candidate": "1701 Franklin Street, flaxleaf paperbark",
+   "reason": "On official list; not researched; likely front garden. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "Dolores Street Guadalupe palm grove (median across 1608-1650 Dolores)",
+   "reason": "On official list; not researched; may fold with sfo_002. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "Blue Elderberry, Bernal Heights Natural Area (Folsom St at Bernal Heights Blvd)",
+   "status": "lead",
+   "latitude": 37.743763,
+   "longitude": -122.412796,
+   "location_precision": "approximate",
+   "reason": "Official Landmark Tree (sfpublicworks.org list; DataSF treeid 262217, Rec/Park, no DBH). Public natural area, alive per iNaturalist 2026-08-16 near the pin (lifecheck RECENT). Held back: a shrub-like Sambucus mexicana, nothing published on why it was landmarked, no photo of this trunk, pin is register-only. Only a generic arborist blog (arboristnow.com) describes it. Verified 2026-10-21 pass."
+  },
+  {
+   "candidate": "Flaxleaf paperbark, 1701 Franklin Street",
+   "status": "lead",
+   "latitude": 37.790574,
+   "longitude": -122.424146,
+   "location_precision": "approximate",
+   "reason": "Official Landmark Tree (sfpublicworks.org; DataSF treeid 7946, sidewalk cutout, DBH 18 in = 46 cm, species recorded as Melaleuca ericifolia in DataSF versus M. linariifolia on the official list). Small sidewalk tree, no history, no photo, lifecheck NONE. Needs a dated sighting and a reason to visit. 2026-10-21 pass."
+  },
+  {
+   "candidate": "1700 Quesada Ave medians: Mariposa plum (treeid 18547) and blackwood acacia (treeid 18550)",
+   "status": "lead",
+   "latitude": 37.733457,
+   "longitude": -122.391659,
+   "location_precision": "approximate",
+   "reason": "Flagged 'Landmark tree' in the DataSF Street Tree List (DBH 30 in each, median cutouts) but NOT on the SF Public Works list of designated Landmark Trees (read 2026-10-22), which names only the Quesada median palms; no second source. Quesada Gardens (1700 block) is public. Needs the designation confirmed before anything ships. 2026-10-22 pass."
+  },
+  {
+   "candidate": "Centennial Tree neighbours: Bicentennial Tree, Presidio Main Parade Ground",
+   "status": "lead",
+   "reason": "HMDB 284786 marker for a 1976 companion planting beside the 1876 Centennial Tree (sfo_011 in san-francisco-verified.json). Young; not a reason to walk. 2026-10-22 pass."
+  },
+  {
+   "candidate": "Two Flowering Ash, Bernal Heights Branch Library (500 Cortland Ave)",
+   "status": "lead",
+   "reason": "Official Landmark Trees (Public Works list; DataSF treeids 24539 and 24540, Rec/Park, sidewalk cutouts at 37.73896,-122.41616). Public, free to see. DataSF DBH 50 in each is implausible for Fraxinus ornus (likely corrupt), no source says why they are remarkable, 2008 ordinance PDF is a scan (sfbos.archive.sf.gov) and was not readable. Needs a reason to walk. 2026-10-22 pass."
+  },
+  {
+   "candidate": "Sweet Bay (Laurus nobilis), 555 Battery St",
+   "status": "lead",
+   "reason": "DataSF Landmark tree treeid 1716, DBH 18 in (46 cm), sidewalk cutout at 37.796259,-122.400666. Not on the Public Works list text read; nothing says why it is remarkable. 2026-10-22 pass."
+  },
+  {
+   "candidate": "Blue Elderberry, Bernal Heights Natural Area (update)",
+   "status": "lead",
+   "reason": "2026-10-22: arboristnow.com (2018) and forestknolls.info (2010 roster) only name it; no size, age, reason or access given; BOS ordinance 08-0042 cites Assessor Block 5548 Lot 002. Still no reason to walk."
+  },
+  {
+   "candidate": "Norfolk Island Pine, 2040 Sutter St (back yard)",
+   "status": "lead",
+   "reason": "DataSF treeid 264740, planter Private, Back Yard; private, likely not visible. Not researched further; fails access evidence. 2026-10-22 pass."
+  }
+ ],
+ "blocked": [
+  {
+   "candidate": "Presidio/Strybing Arboretum Moon Tree",
+   "reason": "Brief named this 'the Presidio Moon Tree' but NASA's own Moon Tree registry (nssdc.gsfc.nasa.gov/planetary/lunar/moon_trees) places it at Strybing Arboretum in Golden Gate Park, not the Presidio, planted 22 July 1976 in the Redwood Grove. NASA's own dedicated page for it (fetched via Wayback Machine, snapshot 2025-07-19, last updated by NASA 15 Sept 2023) states verbatim: 'The arboretum has no record of the tree, the only evidence we have at present are the two clippings above from the San Francisco Chronicle.' NASA's own master list (science.nasa.gov/resource/apollo-moon-trees) lists it under the 'status unknown' table. Not a collectible point: nobody, including NASA and the arboretum, can identify which specific redwood in the Redwood Grove this is, so no pin can be honestly placed at tree-level, and there is no evidence the tree is alive or even correctly identified among the grove's many redwoods. Would require a bridge claim ('a moon tree stands somewhere in the Redwood Grove') to ship, which is exactly the trap the brief warned about. Leaving for a future pass only if the arboretum or Urban Forestry ever documents a specific specimen."
+  },
+  {
+   "candidate": "Mission Dolores cemetery/garden trees",
+   "reason": "Searched for an individually old or notable tree in the Mission Dolores cemetery/garden. Multiple sources agree the garden was substantially restored in 1994 with mostly newer plantings from the 1791-period plant list, and the only tree-age claim found (cypresses planted in the cemetery, from a secondary genealogy source) was vague, undated and not about a specific identifiable specimen. No individually named or documented old tree turned up in two searches. Not pursued further given the time budget; the ground itself (founded 1776, oldest intact building in SF) is exactly the kind of place this project looks, so a future pass with more time could recheck for a specific dated cypress or palm."
+  },
+  {
+   "candidate": "Giant Sequoia at 3066 Market Street",
+   "reason": "Officially a Landmark Tree (sfenvironment.org register), but multiple sources (socketsite.com, the 2014 landmark petition itself) confirm it stands in the REAR YARD of a private residential property at 3066 Market Street, a backyard tree saved from removal by a landmark designation rather than a publicly accessible one. The official register itself warns \"many trees are in private backyards and are not available for public viewing,\" and this is one of them. Fails hard rule 10 (private garden). Not the same tree as the Garfield Square giant sequoia below."
+  },
+  {
+   "candidate": "730 28th Avenue, California Buckeye (backyard)",
+   "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "4124 23rd Street, Coast Live Oak (backyard)",
+   "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "2626 Vallejo Street, Monterey Cypress (backyard)",
+   "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "115 Parker Avenue, Howell's Manzanita (backyard)",
+   "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "2251 Filbert Street, Canary Island Pine (backyard)",
+   "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "4 Montclair Terrace, Coast Redwood (backyard)",
+   "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "46A Cook Street, Cook pine hybrid (backyard)",
+   "reason": "Backyard: private. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "46 Stillings Avenue and 313 Scott Street, Coast Redwoods",
+   "reason": "Residential addresses, no evidence of public viewing. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "20-28 Rosemont Terrace, Coast Live Oak",
+   "reason": "Removed, structural failure per official list. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "2694 McAllister Street, California Buckeye",
+   "reason": "Removed, tree died per official list. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+  },
+  {
+   "candidate": "Giant Sequoia of Garfield Square (Harrison and 25th)",
+   "reason": "Dead: snapped in the February 2023 windstorm and shown as a stump on 22 March 2023 (The Standard, https://sfstandard.com/2023/03/28/the-tree-carnage-across-the-city-is-even-worse-than-you-think/, fetched 2026-10-21). Never ship; supersedes the earlier lead."
+  }
+ ]
 }

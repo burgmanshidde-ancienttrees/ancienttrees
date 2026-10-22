@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (second attempt): three Texas place files built, held by the pace guard
+
+- Nothing was READY. Verified and wrote four famous Texas trees that already had open photos (Century Tree, Houston Campsite Oak, Cart War Oak, Rio Frio Landmark Oak). Three have approved photographs and full place files, parked in `data/research/texas-places/` (college-station, coppell, goliad; ids clg_001, cpl_001, gld_001). They pass preflight except `check_publishing_pace()` (75 new trees in 24 hours, cap 60), so they were not published. Next run once the count drops: move the three files into data/cities/, add the three slugs to data/us-states.json ("Texas"), run preflight, merge, then release no claim (none held).
+- Rio Frio oak (txf_004) is written but held: its photo has no geotag and was shot from inside the fenced land. Kept in data/research/texas-famous-verified.json, story intact, until a roadside photo turns up.
+- San Francisco deepen pass: sfo_012 (Cork Oak, Landmark Tree 15) and sfo_013 (Moreton Bay Fig, view-only) verified, no photographs, so they wait for a photo (ADD_NEEDS_PHOTO). Claim on san-francisco stays until they merge or the claim expires. 4 leads kept. sfenvironment.org and citizenportal.ai return 403.
+- inn_007 skipped: pin on a building, probably private yard, no photo.
+
 ## 2026-10-22 night run (09:06 UTC window): photos and scouting, no tree added
 
 - Ladder: no reader photos waiting, health clear. Nothing writable: the one written tree (ftw_018) has no confirmed photo path and the other "awaiting a writer" files are stale or duplicates. prepare.py 7-day visits line not shown by this run's output.
