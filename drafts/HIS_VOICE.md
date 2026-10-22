@@ -333,3 +333,15 @@ The line works because it is a definition anyone can test by standing in front o
 ## Calibration 2026-10-15: a journalist who asked who you are (Wibren, Omrop Fryslan)
 
 I added a Leeuwarden line (34 trees live) and the app link to his own short answer. His verdict: "dat van leeuwarden weet hij al, dat van die app hoeft er ook niet in." A journalist asking about the person gets the person: answer his questions, give the phone number, stop. Do not add what he already knows, and the app line is not automatic in a press reply. (Superseded 2026-10-22: a Dutch mail mentions no Amsterdam at all; see "His standard intro".)
+
+## Calibration 2026-10-22: a Reddit post to a city subreddit (r/Lisbon)
+
+My draft had a bold-free but numbered ask list, "Two things I could use help with:", and register names in brackets; Hidde said Reddit readers spot AI text and "je moet echt je best doen als mij over te komen". He wrote his own:
+
+> I'm mapping Lisbon's oldest trees - any suggestions?
+>
+> I used to travel a lot for work and loved visiting the parks when I had some time to kill. Since then I've been keeping a list of old trees worth a visit. There are 36 so far. Jardim da Estrela and Jardim Botânico da Ajuda were my favourite parks.
+>
+> A few of the oldest ones still don't have a good photo though. The big plane tree at Hospital Pulido Valente in Lumiar (apparently 364 years old) and the olive in Santa Iria de Azoia, which is supposed to be almost 3000 years old. If anyone lives near one of those I'd love a photo.
+
+Lesson for every post where a stranger reads him: start from his life, not the product ("time to kill" on work trips); name places he liked, not facts we hold; numbers rounded and hedged the way a person repeats what they read ("apparently", "supposed to be almost 3000"); short plain paragraphs, no bold, no lists, no colon reveals; at most two asks, and end on a question. No link in a subreddit that bans self promotion; it goes in a comment when somebody asks. Draft in this shape and let him put one sentence of his own in before it goes out.
