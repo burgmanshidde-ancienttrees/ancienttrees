@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 22:55 window: iOS failure read, nothing shipped
+
+Rung 2: health.py flags the iOS app run of 20:24 (1h48m). Log: 229 passed, 1 failed, `testEveryFlowLeavesAWayBack`: flow "search-to-a-tree" has no tab bar, back button or dismiss after "first-result". No ios/ commit since the green run of 11:34 (only a test string), so this is a data/feed change or a flaky tap, not an app edit; it cannot be reproduced on this Linux runner and the night run never builds the app. For Hidde or a Mac session: rerun ios.yml once; if it fails again, look at the first search result's tree screen (the SearchFlow in FlowWalk). Reader inbox empty, READY leads still only Oxford 2 and Madrid 1 (own supply paused), enrichment says nothing to do. No deploy dispatch attempted (403 earlier).
+
 ## 2026-10-22 session: three outreach batches on Hidde's desk for 10-23
 
 Press round 4 (the ten regional desks left from 10-20, autumn hook where the page has it), a source batch of ten people-run sites our pages cite, and tourism batch 2 (Porto, The Hague, Ede, Cagliari). All drafted, mailcheck and dry runs clean, every link 200, previews in drafts/batch-*-2026-10-23-preview.md (private, pushed to the private store). Nothing sent; his word goes into approved_word first. Inbox read: nothing waits for a reply.
