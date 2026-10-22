@@ -32,7 +32,12 @@ confidence.
 
 Never use: "hidden gem", "must-see", "breathtaking", "nestled". Never use em
 dashes, anywhere, in any field. No fill-in-the-city-name templating: every
-story is written from this tree's own facts.
+story is written from this tree's own facts. No colon reveals ("which is
+exactly the point: this is not...", "Getting there means committing to it: a
+bus..."): end the sentence and start a new one, or join with a comma and a
+plain clause. It was the most common machine shape on our indexed pages
+(481 sentences, rewritten 2026-10-22), and preflight refuses it in any story
+with an approved photograph.
 
 Flagged trees keep their hedged phrasing: "by that tradition", "a 1913 monument
 claims", "somewhere between". The flag is in the data; the honesty must also be

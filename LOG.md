@@ -42,12 +42,18 @@ Madrid's tourist office answered the 10-20 tourism mail by pointing at the city'
 - **Held:** Häradseken (no public path known on Gotland farmland), Mogadouro (no written source), Hamerenne (private front garden).
 - **Waste, said plainly:** the four Texas trees were verified and written twice. A night run took this LOG's "next lane: Texas" an hour before my claim, and my claim was named `photo-batch-2`, so neither side could see the other. A claim should name the place or list it covers. Cost of the pass: verify 226k, write 175k, for 10 trees, about 40k a tree.
 
+## 2026-10-22 (session with Hidde): 481 colon reveals out of the indexed stories
+
+- **Product:** every colon reveal in the 1,183 stories Google indexes is rewritten (481 sentences, 218 place files): a full stop or a comma and a plain clause, every fact and number unchanged (the apply script refused any sentence whose numbers changed), every story still 150 to 250 words. Translations, now out of Google, keep their older wording.
+- **Guard:** preflight's `check_no_colon_reveal_in_an_indexed_story()` refuses the shape in any story with an approved photograph; BRIEF_WRITING.md and CLAUDE.md (Stories) say so. **For the night run:** approving a photograph on a tree whose story has one means rewriting that sentence in the same commit.
+- **Reddit:** Hidde posted his own r/Lisbon post with a reader's photo (118 views, 1 upvote in the first hour, no comments yet). Replies are in drafts/reddit-lisbon.md.
+
 ## 2026-10-22 (session with Hidde): what Google sees on the indexed pages, five checks
 
 - **Fixed, live with the next deploy:** (1) 118 paid trees told Google `isAccessibleForFree: true` because "under 6 free" sat in their access line; paid_entry now decides first, English and translated pages. (2) 280 sources written "url (note)" rendered as one broken link; the link is now the url alone (site/src/lib/tree-sources.ts). (3) 23 dead source links repointed: Luxembourg's dated register download to the dataset page (9 trees), four renamed Wikipedia lists (Graz, Innsbruck, Berlin-Mitte, Kopčany; 14 sources). Innsbruck inn_003 and inn_006 had every link dead and now have a live one.
 - **Measured, nothing to fix:** shared text on 60 indexed tree pages is a median 31%, and it is all interface (sheet buttons and dialogs), no story sentence on 20%+ of pages. JSON-LD is clean (WebSite, Organization, TouristAttraction, BreadcrumbList).
 - **For the night run:** `python3 scripts/source_links.py` (new) lists about 40 remaining dead source links on indexed trees, one per tree; repoint each (the host's search, the Wayback Machine), never drop a tree's last source. PageSpeed Insights answered 429 today (keyless quota); retry `python3 scripts/pagespeed.py` another day.
-- **Waits on Hidde:** 431 indexed stories (36%) carry the colon reveal ("which is exactly the point: this is not..."); rewriting those 481 sentences is a priced job, not started.
+- **Colon reveals:** done the same afternoon on Hidde's "waar wacht je op", see the entry above.
 
 ## 2026-10-22 (session with Hidde): translations out of Google too
 

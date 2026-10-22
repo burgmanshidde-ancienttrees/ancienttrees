@@ -1062,6 +1062,34 @@ def harmful_invitations(text):
     return out
 
 
+_COLON_REVEAL = re.compile(r"\w[^:\n]{3,80}: (?:a|an|the|it|this|that|one|no|not|nothing|just)\b")
+
+
+def check_no_colon_reveal_in_an_indexed_story():
+    """No colon reveal ("which is exactly the point: this is not...") in the
+    story of a tree Google indexes (an approved photograph).
+
+    Hidde, 2026-10-22: 481 of these sat in 431 of the 1,183 indexed stories,
+    36 percent, the most frequent machine-written shape on the pages Google
+    still shows during recovery; all were rewritten that day, facts and
+    numbers untouched. A tree that gains a photograph joins the index, so its
+    story is held to the same line then: rewrite the sentence (a full stop, or
+    a comma and a plain clause), never just swap in a dash.
+    """
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            if (tree.get("photo") or {}).get("status") != "approved":
+                continue
+            m = _COLON_REVEAL.search(tree.get("story") or "")
+            if m:
+                out.append("%s/%s: colon reveal in an indexed story (%r); rewrite the sentence"
+                           % (city.get("city", path), tree.get("id"), m.group(0)[-60:]))
+    return out
+
+
 def check_no_invitation_to_harm_the_tree():
     """Never ask a reader to do something that damages the tree, and do not
     replace it with a warning either: just do not bring it up.
@@ -3601,6 +3629,7 @@ def main():
                 + check_translations_have_no_stray_script()
                 + check_every_tree_names_a_source()
                 + check_no_invitation_to_harm_the_tree()
+                + check_no_colon_reveal_in_an_indexed_story()
                 + check_tree_name_fits_a_title()
                 + check_no_new_thin_places()
                 + check_no_null_objects()
