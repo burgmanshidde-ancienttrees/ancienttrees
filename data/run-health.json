@@ -2,38 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-08-31T23:29:08+00:00",
-   "date": "2026-09-01",
-   "run_id": "33450854457",
-   "minutes": 71.8,
-   "minutes_basis": "measured",
-   "attempts": 3,
-   "turns": 533,
-   "denials": 55,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(file), Bash(for), Bash(gh), Bash(git), Bash(if), Bash(kill), Bash(mkdir), Bash(pip), Bash(python3), Bash(rm), Bash(set), Bash(test), Bash(wc), Bash(which)",
-   "ended": "success",
-   "tokens": 39881501,
-   "claims_held": [],
-   "commits": 18,
-   "cities_touched": 3,
-   "cities": [
-    {
-     "city": "warsaw",
-     "trees": 2
-    },
-    {
-     "city": "turin",
-     "trees": 1
-    },
-    {
-     "city": "vilnius",
-     "trees": 1
-    }
-   ],
-   "trees": 4,
-   "logged": true
-  },
-  {
    "started": "2026-09-01T02:31:19+00:00",
    "date": "2026-09-01",
    "run_id": "33462833995",
@@ -24168,6 +24136,64 @@
     }
    ],
    "trees": 2,
+   "logged": true
+  },
+  {
+   "started": "2026-10-22T01:38:50+00:00",
+   "date": "2026-10-22",
+   "run_id": "39706843235",
+   "minutes": 72.7,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 208,
+   "denials": 3,
+   "denials_source": "permission_denials: Bash(cat ; import ; for ; ? ...), Bash(env)",
+   "ended": "success",
+   "tokens": 385139,
+   "claims_held": [
+    "frankfurt"
+   ],
+   "commits": 17,
+   "cities_touched": 9,
+   "cities": [
+    {
+     "city": "pittsburgh",
+     "trees": 8
+    },
+    {
+     "city": "potsdam",
+     "trees": 3
+    },
+    {
+     "city": "regensburg",
+     "trees": 2
+    },
+    {
+     "city": "frankfurt",
+     "trees": 1
+    },
+    {
+     "city": "glasgow",
+     "trees": 1
+    },
+    {
+     "city": "san-antonio",
+     "trees": 1
+    },
+    {
+     "city": "san-francisco",
+     "trees": 1
+    },
+    {
+     "city": "studena",
+     "trees": 1
+    },
+    {
+     "city": "washington-dc",
+     "trees": 1
+    }
+   ],
+   "trees": 19,
    "logged": true
   }
  ],
