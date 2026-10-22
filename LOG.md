@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (06:36 UTC window): Leiden +2, seven READY leads held
+
+Rung 1 empty (0 photographs waiting). Rung 2: the health "Smoke test skipped" flag is a 1-second if-condition skip on every push while Build and deploy succeeded, answered with health.py --answer. Write pass on the 9 READY leads: lei_025 (Endegeest linden) and lei_026 (Jan Wolkers's oak) live in Leiden (17 to 19, Oegstgeest day-trip trees, nl overlay done). The other seven held with reasons (Pittsburgh x4 no honest recognition line or access, Wilhelmina linden unconfirmed standing, Pelgrimvaderskerk beech no access source, Insingen linden too thin). Next: enrichment (chicago+frankfurt+regensburg).
+
 ## 2026-10-22 night run (02:55 UTC window): photograph sweep, one approval
 
 - **Live:** the Presidio Centennial Tree (San Francisco) now has a photograph (BrokenSphere, CC BY-SA 3.0; reversal `python3 scripts/photo_apply.py hold sfo_011`). Rung 1 empty, health.py's only flags were push-skipped deploys (a dispatched deploy was running). `photo_hunt.py --recheck` on glasgow, san-francisco, washington-dc, pittsburgh found little; a viewing pass over 40 fetched files rejected 39 (wrong subject or species). Next time: queue the named Commons files for the Yamaki Pine (wdc_025: "Japanese White Pine 'Hiroshima Survivor', 30 April 2012.JPG", Sage Ross CC BY-SA, viewed and fits). Nothing written: the one written tree waiting, ftw_018, is held on unknown access.
