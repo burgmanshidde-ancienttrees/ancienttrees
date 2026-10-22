@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session with Hidde: a reply-mail skill
+
+Hidde asked whether a skill would help with mails. The rules for a reply lived in seven places (HIS_VOICE.md, five memory notes, mailcheck.py), loaded only when a session remembered. New project skill `.claude/skills/reply-mail/SKILL.md` bundles them in order: read the voice file and the thread, do the fix first, the reply shape, the never-list, a de-AI cutting pass, mailcheck, show with the full mail above the draft. It points at the existing files and rewrites none of them. Loads from the next session on.
+
 ## 2026-10-22 session with Hidde: press round 3 and tourism batch 1 sent
 - Hidde: "verstuur beide". Twenty mails out through outreach_send.py: ten regional desks (press round 3, roster cities in the US, UK and Germany, one tree and one sourced fact each) and ten official visit-the-city sites (tourism batch 1, the map as a resource for their parks page). Every link checked live before sending; no repeats, nobody on the do-not-contact list. Logged in drafts/OUTREACH.md (private); link check on 2026-10-29 is in OUTREACH_STRATEGY.md's dates.
 - Prof. Roloff answered the 10-20 link ask with a no (too many such requests); his thank-you reply draft waits for Hidde to send.
