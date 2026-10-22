@@ -3,10 +3,10 @@
   "country": "Netherlands",
   "face_tree_id": "lei_006",
   "status": "needs_curation",
-  "intro": "Eight of Leiden's seventeen remarkable trees stand inside one garden. Hortus Botanicus, founded in 1590, keeps a tulip tree sown by professor Herman Boerhaave in 1716, the first zelkovas ever to leave Japan and the thickest horse chestnut in the Netherlands. Beyond the garden walls: a beech named for a student writer on the medieval fortress mound, two planes around a statue in the Van der Werfpark, a Caucasian wingnut that beat a copper beech in a public vote, and a Persian ironwood grove that gave its name to a garden cultivar now sold across Europe.",
-  "meta_description": "Eighteen verified old trees in Leiden, eight inside a botanical garden founded in 1590, including the first zelkovas ever to leave Japan.",
+  "intro": "Eight of Leiden's nineteen remarkable trees stand inside one garden. Hortus Botanicus, founded in 1590, keeps a tulip tree sown by professor Herman Boerhaave in 1716, the first zelkovas ever to leave Japan and the thickest horse chestnut in the Netherlands. Outside the walls: a beech named for a student writer on the medieval fortress mound, two planes in the Van der Werfpark, a wingnut that won a public vote, and a Persian ironwood grove that named a garden cultivar. Just over the line in Oegstgeest stand a linden said to date from 1648 and Jan Wolkers's favourite oak.",
+  "meta_description": "Nineteen verified old trees in Leiden, eight inside a botanical garden founded in 1590, including the first zelkovas ever to leave Japan.",
   "question_answer": "Leiden's oldest documented tree is the Tulip Tree of Boerhaave in the Hortus Botanicus, sown on 12 October 1716 by professor Herman Boerhaave from seed shipped from Virginia, making it roughly 310 years old. The garden itself calls it the oldest tree of its species anywhere on the European continent. A date-plum in the same garden, dated 1740, is next.",
-  "question_meta": "A 1716 tulip tree sown by Herman Boerhaave himself is Leiden's oldest documented tree. All eighteen, including one fighting for its life.",
+  "question_meta": "A 1716 tulip tree sown by Herman Boerhaave himself is Leiden's oldest documented tree. All nineteen, including one fighting for its life.",
   "question_context": "Leiden's oldest-tree claim rests on unusually good paperwork: the Hortus Botanicus has a dated planting record naming Herman Boerhaave, the seed's origin in Virginia and even the London merchant who shipped it, which is why the Tulip Tree of Boerhaave anchors this page with more confidence than most European cities can offer for anything close to 300 years old. The garden's date-plum, recorded as 1740, comes next, and its Golden Chain Tree very nearly beat both: a popular story once dated it to 1601 until the Hortus's own archival research debunked that in the 1930s and settled on the 1720s instead, a rare case of an institution correcting its own legend downward rather than letting it stand. Most of the others come from the national monumental tree register, which records a planting decade rather than a year, so several ages on this page are given as bands of twenty to fifty years instead of single dates. Two trees are honestly in trouble: the Beets Beech on the Burcht mound and the beech at Groenesteeg cemetery are both fighting root fungus, the second under active treatment by its caretakers. None of that changes what each of them has already lived through.",
   "faq": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "q": "Are Leiden's remarkable trees free to visit?",
-      "a": "Eight of the seventeen stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The rest, the Burcht mound, Groenesteeg cemetery, the Plantsoen park and the Van der Werfpark, are all free and open year-round."
+      "a": "Eight of the nineteen stand in the Hortus Botanicus, which charges garden admission (around 14 euros). The rest, the Burcht mound, Groenesteeg cemetery, the Plantsoen park, the Van der Werfpark and the two trees in Oegstgeest, are all free and open year-round."
     },
     {
       "q": "What is the thickest tree in Leiden?",
@@ -769,6 +769,92 @@
         "url": null
       },
       "height_m": 25
+    },
+    {
+      "id": "lei_025",
+      "name": "The Endegeest Linden",
+      "species": "Common Lime (Tilia x europaea)",
+      "age_estimate": "300 to 400 years; planted in the 1600s by the register's band, 1648 by an unsourced tradition",
+      "age_min": 300,
+      "age_max": 400,
+      "age_basis": "source",
+      "girth_cm": 565,
+      "height_m": 20,
+      "location": {
+        "address": "In the green in front of Kasteel Endegeest, Oegstgeest",
+        "latitude": 52.173002,
+        "longitude": 4.462899,
+        "neighbourhood": "Oegstgeest"
+      },
+      "story": "For eighty years nobody around Leiden was allowed a tall tree. During the Eighty Years' War the land outside the city had to stay open as a field of fire, and the national register says this linden went into the ground in front of Kasteel Endegeest straight after the war ended in 1648. That would make it, in the register's words, one of the oldest lindens in the Netherlands.\n\nThe date has had a second look. A 2023 article in the tree journal Arbor Vitae points out that 1648 is precise, repeated from website to website, and backed by no source anyone has found; the tree did not even make a 1989 list of the country's large lindens. So: planted some time in the 1600s by the register's own band, between 300 and 400 years ago, with the exact year a tradition rather than a record.\n\nNobody disputes the trunk. Measurements run from 5.58 to 5.70 metres round, on a tree about 20 metres tall that stands on its own in the green before the castle, with room on every side.\n\nIt has watched the house change hands. The castle was rebuilt around 1650 for Elisabeth van Schouwen and Jacob van Berchem, passed to the city of Leiden in 1895, spent a long stretch as a place of mental health care, and has recently gone back into private hands. A public walking route still loops around the castle and past the linden.",
+      "how_to_recognise": "You can recognise it by the trunk, about 5.6 metres round, on a linden standing on its own. It stands in the green in front of Kasteel Endegeest, by the castle entrance.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1694858, used with written permission)",
+        "https://edepot.wur.nl/638864",
+        "https://www.anwb.nl/wandelen/routes/jan-wolkerswandeling"
+      ],
+      "access": "Free to see: the register lists it as visitable and visible, and a public walking route loops around the castle past it. The estate is privately owned and parts are being redeveloped, so expect fences or changed paths in places.",
+      "transport": "In Oegstgeest, about 1.5 km north-west of Leiden Centraal station as the crow flies, roughly a 25 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "pin_source": "LRMB register coordinate",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1694858",
+        "url": null
+      },
+      "best_time": {
+        "months": [
+          6,
+          7
+        ],
+        "kind": "flowers",
+        "label": "late June into July, when the linden flowers and the crown hums with bees"
+      }
+    },
+    {
+      "id": "lei_026",
+      "name": "Jan Wolkers's Oak",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "somewhere between about 125 and 225 years; the register's 1890s band, its own note of early 1800s photographs, and the Bomenstichting's 1800 to 1850 disagree",
+      "age_min": 125,
+      "age_max": 225,
+      "age_basis": "source",
+      "girth_cm": 467,
+      "height_m": 15,
+      "location": {
+        "address": "IJsbaanterrein, Oegstgeesterweg 43, Oegstgeest, at the water on the boundary with the Oud Poelgeest estate",
+        "latitude": 52.178498,
+        "longitude": 4.48532,
+        "neighbourhood": "Oegstgeest"
+      },
+      "story": "Jan Wolkers had a favourite tree, and the national register of monumental trees names it: this pedunculate oak at the water's edge in Oegstgeest, the village where the writer was born. The register adds that it turns up again and again in his books.\n\nIt stands on a boundary. On one side is the ground of the IJsclub Oegstgeest, the village ice club; on the other, the Oud Poelgeest estate, which played a large part in Wolkers's youth. In the last years of the German occupation the teenage Wolkers wandered those woods with a sketchbook and a paint box, and the sketchbook survives.\n\nHow old the oak is depends on whom you ask. The register dates its planting to the 1890s, then says in the same entry that old photographs point to the early nineteenth century. The Bomenstichting, which keeps that register, has put it between 1800 and 1850, and the municipality calls it more than 120 years old. Somewhere between about 125 and 225 years, then, with the photographs arguing for the older end.\n\nWhat can be checked is the trunk: 4.67 metres round, on a tree about 15 metres tall.\n\nThe estate behind it has a tree pedigree of its own. Herman Boerhaave, the Leiden physician who ran the Hortus Botanicus, bought Oud Poelgeest in 1724 and planted trees there because his garden in town had run out of room. The oak stands outside the estate, on municipal ground, a twenty minute walk from Leiden Centraal.",
+      "how_to_recognise": "You can recognise it by the trunk, 4.67 metres round, on an oak right at the water's edge. It stands where the IJsclub Oegstgeest ice-rink ground meets the Oud Poelgeest estate.",
+      "verified_sources": [
+        "data/registers/netherlands-lrmb.json (LRMB v2024, Bomenstichting, nr 1692873, used with written permission)",
+        "https://www.bnnvara.nl/vroegevogels/artikelen/jan-wolkers-en-kasteel-oud-poelgeest",
+        "Gemeente Oegstgeest article in Centraal Plus, 2026-09-02, naming the oak as a current monumental tree (per the 2026-10-22 verify pass)"
+      ],
+      "access": "Free; on municipal ground at the edge of the ice-rink site, which the register lists as visitable",
+      "transport": "In Oegstgeest, about 1.5 km north of Leiden Centraal station as the crow flies, roughly a 20 minute walk",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "pin_source": "LRMB register coordinate",
+      "official_register": {
+        "name": "Landelijk Register Monumentale Bomen (Bomenstichting), no. 1692873",
+        "url": null
+      }
     }
   ]
 }
