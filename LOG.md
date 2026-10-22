@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session: the demand cut, hreflang, the sources line
+
+Google: the 09-28 fall sits inside the September 2026 spam update (24 Sep to 8 Oct), no core update since May. Demand cut added to scripts/thin_pages.py (DEMAND_CUT 50): 720 more pages carry the googlebot noindex, 598 English tree pages in 101 cities and 84 place pages stay in Google, every unique-photo page and reader-found tree kept; Bing keeps everything. hreflang now names only indexable alternates. The Sources line on every tree page says the story was written with AI and readers correct it, in eight languages. The recrawl sitemap was already live since 10-01 (robots.txt names it), nothing for Hidde to submit. Preflight 0 problems; the Astro build runs in CI on this push. Each change is its own commit.
+
 ## 2026-10-22 session: about page tightened
 
 About page: "huge" from four to one, "marvel" from two to one, and the sources line now says what is true ("written with AI, and readers who know the trees correct them" instead of "corrected by people who know the trees"). A comment marks where the Wilder (wilder.pt) article link goes once it is published; Hidde wants it linked (2026-10-22). Hidde's own text otherwise untouched.
