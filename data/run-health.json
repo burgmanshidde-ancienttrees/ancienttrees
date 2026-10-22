@@ -2,29 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-01T08:58:57+00:00",
-   "date": "2026-09-01",
-   "run_id": "33489807347",
-   "minutes": 12.5,
-   "minutes_basis": "measured",
-   "attempts": 1,
-   "turns": 101,
-   "denials": 12,
-   "denials_source": "permission_denials: Bash(cd), Bash(curl), Bash(for), Bash(gh), Bash(python3)",
-   "ended": "success",
-   "tokens": 16145801,
-   "claims_held": [
-    "madeira",
-    "brisbane",
-    "alicante"
-   ],
-   "commits": 5,
-   "cities_touched": 0,
-   "cities": [],
-   "trees": 0,
-   "logged": false
-  },
-  {
    "started": "2026-09-01T11:56:58+00:00",
    "date": "2026-09-01",
    "run_id": "33505050835",
@@ -24239,6 +24216,46 @@
    "commits": 9,
    "cities_touched": 0,
    "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-22T12:28:54+00:00",
+   "date": "2026-10-22",
+   "run_id": "39778599285",
+   "minutes": 15.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 123,
+   "denials": 5,
+   "denials_source": "permission_denials: Bash(cd && git), Bash(cd && rm), Bash(git ; for ; do ; done ...), Bash(git), Bash(rm)",
+   "ended": "success",
+   "tokens": 802053,
+   "claims_held": [],
+   "commits": 8,
+   "cities_touched": 5,
+   "cities": [
+    {
+     "city": "berlin",
+     "trees": 0
+    },
+    {
+     "city": "frankfurt",
+     "trees": 0
+    },
+    {
+     "city": "graz",
+     "trees": 0
+    },
+    {
+     "city": "innsbruck",
+     "trees": 0
+    },
+    {
+     "city": "kopcany",
+     "trees": 0
+    }
+   ],
    "trees": 0,
    "logged": true
   }
