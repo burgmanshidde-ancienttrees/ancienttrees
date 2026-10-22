@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session: about page tightened
+
+About page: "huge" from four to one, "marvel" from two to one, and the sources line now says what is true ("written with AI, and readers who know the trees correct them" instead of "corrected by people who know the trees"). A comment marks where the Wilder (wilder.pt) article link goes once it is published; Hidde wants it linked (2026-10-22). Hidde's own text otherwise untouched.
+
 ## 2026-10-22 night run (third retry): cap at 73 of 60, nothing shipped
 
 No claims standing. Only 3 READY leads, none with an approved photograph. Tried goliad.json into data/cities again: preflight fails on `check_publishing_pace()` (73 new trees in 24 hours, cap 60) and the missing data/us-states.json entry; moved it back out to out/tmp/. The 15 written trees still wait for the count to drop. Manchester register retry not attempted (the TPO layer is protection, not remarkable status, per the scouting note). No trees added.
