@@ -236,7 +236,7 @@ export const MODES: Record<string, RankMode> = {
       // No age is not a gap to hide. It is the publish-and-ask rule of
       // 2026-08-13: say we do not know and the reader with a tape measure
       // can tell us, which is worth more than a number we guessed.
-      return est || "Age not established. Tell us if you know it.";
+      return est || "We don't know its age yet. Tell us if you do.";
     },
     groupBy: (r) => r.country ?? "Elsewhere",
     rows: (citiesBySlug, curatedNote) => {
