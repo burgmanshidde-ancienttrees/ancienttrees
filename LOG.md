@@ -21,7 +21,7 @@ Hidde asked how our US supply looks after three US downloads in a day. Verdict: 
 
 ## 2026-10-22 (session with Hidde): Madrid's Guia Verde read, four leads
 
-Madrid's tourist office answered the 10-20 tourism mail by pointing at the city's new Guia Verde de Madrid (2026 PDF on madrid.es). Read it: mostly parks in general, few single trees. Four new leads in data/leads/madrid.json, best the Castellana elm opposite the Hotel Villa Magna, "Madrid's oldest street tree" (18 m, 380 cm, singular under the 1997 PGOU); it needs a second source, a trunk pin and an open photo. The guide's photos are all rights reserved. Register lead: the 1997 PGOU catalogue of arboles singulares. Reply draft asking who at the city could release the photos: drafts/reply-madrid-turismo-2026-10-22.md, waits on Hidde.
+Madrid's tourist office answered the 10-20 tourism mail by pointing at the city's new Guia Verde de Madrid (2026 PDF on madrid.es). Read it: mostly parks in general, few single trees. Four new leads in data/leads/madrid.json, best the Castellana elm opposite the Hotel Villa Magna, "Madrid's oldest street tree" (18 m, 380 cm, singular under the 1997 PGOU); it needs a second source, a trunk pin and an open photo. The guide's photos are all rights reserved. Register lead: the 1997 PGOU catalogue of arboles singulares. Reply draft asking who at the city could release the photos: drafts/reply-madrid-turismo-2026-10-22.md, sent on Hidde's "verstuur" the same day.
 
 ## 2026-10-22 (session with Hidde): ten famous trees with photos written, parked behind the pace guard
 
