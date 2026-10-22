@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (fourth attempt): nothing shipped, pace guard still at 75
+
+- Shipped nothing. Tried the three Texas place files (college-station, coppell, goliad) again: preflight still fails only `check_publishing_pace()` at 75 new trees in 24 hours (cap 60), so I reverted the move. Next run once the count drops: move the three files from data/research/texas-places/ into data/cities/, add the slugs to data/us-states.json ("Texas"), preflight, merge.
+- READY leads: 0. san-francisco photo recheck: 8 trees, 0 new candidates. The san-francisco claim stands (sfo_012, sfo_013 need stories, which add new trees, so they wait on the same guard).
+
 ## 2026-10-22 night run (third attempt): enrichment only, new trees still behind the pace guard
 
 - Nothing READY. Everything awaiting a writer is either already published (stale files), a duplicate, or adds new trees, which the pace guard (75 in 24 hours, cap 60) still refuses; so no new trees this window. The san-francisco claim stays (sfo_012, sfo_013 still need stories; release refused until merged).
