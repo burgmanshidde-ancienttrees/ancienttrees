@@ -818,10 +818,14 @@
       "access": "Public forest preserve; the register lists Public_Access = Yes. Free. Hours not checked for this site.",
       "transport": "Not verified. Forest Preserves site; check Metra or Pace routes before going.",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/453398767/medium.jpeg",
+        "license": "CC BY",
+        "attribution": "Ben Redding, via iNaturalist",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-22",
+        "width": 375,
+        "height": 500
       },
       "curation_status": "flagged",
       "location_precision": "confirmed"
