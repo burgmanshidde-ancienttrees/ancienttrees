@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 r/Lisbon thread read: replies drafted, Gigantes Verdes scouted
+
+- Hidde's r/Lisbon post (16 upvotes, 2.3K views after 8h). New since the last pass: a commenter posted a photo of the Santa Iria olive (lis_036, no photo yet); others pointed to Gigantes Verdes, a volunteer big-tree map. Replies for him to post are in drafts/reddit-lisbon.md (photo permission ask first, then the tracking question, the cork oak, a grandparent memory to quote on lis_003 with consent).
+- Gigantes Verdes (Associação VERDE): all rights reserved per their terms, so blocked as a source to import, a finding aid only; recorded in data/register-scouting.json. Permission would be an outreach mail, only if Hidde wants it.
+
 ## 2026-10-22 fifth attempt: nothing shipped, nothing live changed
 
 - No claims standing. READY leads: 3 (oxford x2, madrid x1), but own supply is paused and none has an approved photograph, so none can ship. Awaiting-a-writer files are the same story, plus several duplicate-by-coordinate flags (las-vegas, london, munich, new-york, taiwan, washington-dc) that passcheck --pending says to fold by hand.
