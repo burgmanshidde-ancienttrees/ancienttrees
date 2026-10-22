@@ -41,6 +41,10 @@ Change the English in `UIStrings` (site/src/lib/i18n.ts) and rewrite es/it/nl/de
 - For pitch copy: `python3 scripts/pitchcheck.py --text "..."`.
 - Render it and look at it at 375px before calling it done (eyes rule).
 
-## 6. When Hidde says a sentence is off
+## 6. When a decision changes the product
+
+A rule change (who may add a tree, what counts as a source, what is free, what ships) makes some sentence on the site false without anyone touching it. In the same session as the decision, grep site/src and ios/AncientTrees/AncientTrees for the old claim (its key words, in English, then each UIStrings language) and rewrite every hit. "Verified against two independent sources" stood on four pages for weeks after a reader's photo with GPS became a source; this step is why. The Monday review reads that week's DECISIONS.md entries against the product too, as a backstop.
+
+## 7. When Hidde says a sentence is off
 
 Record it before the next reply: if the shape can be grepped, add it to `AI_SHAPES` or `TICS` in scripts/copycheck.py with his words in the comment; otherwise add the pair to PRODUCT_COPY.md. Then grep the product for the same shape and fix every copy of it, not only the one he saw.

@@ -220,6 +220,21 @@ jobs:
                the register and copycheck.py already greps for its five habits,
                so do not repeat those; this duty is about the English itself.
                If it all reads well, say so in one line.
+               Two more questions for the same added strings (Hidde,
+               2026-10-22, on "...the ones you have stood in front of: the
+               Ancient Trees app": "hoe zorgen we dat de website tekst niet
+               weer langzaam afdwaalt"). Does it read machine-written: read
+               step 3 of .claude/skills/product-copy/SKILL.md and judge
+               against that list. Any shape copycheck.py does not yet catch
+               goes in as a NOTE "copycheck: add to AI_SHAPES" with a regex.
+               And is it still true: read the DECISIONS.md entries dated in
+               the last seven days, and for each one that changed what the
+               product does, grep site/src and ios/AncientTrees/AncientTrees
+               for the sentence it made false, changed this week or not. That
+               drift is the one no grep of new text can see: "verified against
+               two independent sources" stood on four pages for weeks after a
+               reader's photo with GPS became a source. Each hit is a WARN
+               with the file, the sentence, the decision and a replacement.
             7. Commit ONLY REVIEW.md with the message
                "Fresh-eyes review: <n> finding(s)" and push. Twice, per 4b:
                once for the web half and once when the app findings join it.

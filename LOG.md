@@ -52,6 +52,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 Live on main for the next app build: the Settings card shows name and address only; the ambassador tag stays on My trees and the public profile (Hidde: "op de setting pagina ... mag die weg"). Built and looked at in the simulator, signed in as a Paris ambassador. The website's settings page never had it.
 
+## 2026-10-22 session with Hidde: copy drift guard
+
+The Monday fresh-eyes review (review.yml 6b) now also reads the week's new strings for machine-written shapes (and proposes regexes for copycheck's `AI_SHAPES`) and reads that week's DECISIONS.md entries against all product copy for sentences they made false. CLAUDE.md, How to work: a decision that changes the product greps the product for the old claim in the same session; the product-copy skill gained that step. Applied to today's photo rule: nothing on the site contradicts it.
+
 ## 2026-10-22 session with Hidde: copy sweep live on both surfaces
 
 Hidde: "voer alle voorstellen door in alle talen, behalve de titels/meta en de voorwaarden". 68 sentences rewritten (commits 5466b4bdd web, 0ab9b8183 app plus web), every language a string exists in: colon reveals, morals ("A map of scattered pins is a list"), Dutch tense ("tell us and we correct it"), "the button wakes up", the badge promise on the home page, and the "verified against two independent sources" claims on /explore, /support, /contribute and /press, which stopped being true when a reader's photo with GPS became a source. Left for Hidde: homeTitle, homeDescription, citiesDescription, exploreDescription (Google recovery) and /terms. Kept on purpose: "Made for people who love being outside" on the home page (his own line). One /app sentence stays as it was, because it shares a line with a hand-drawn icon and iconcheck refuses any edit to that line until the icon is replaced. App strings ship with the next build.
