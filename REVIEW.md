@@ -208,12 +208,3 @@ App half (people, photo-viewer, place-pin, profile-edit, profile-signed-in, prof
 
 ---
 
-## 2026-10-07
-
-Web half: read utrecht (30 trees; title, meta and the ginkgo and linden ages agree with the city file) and the Oude Hortus Ginkgo page, and scanned utrecht, vienna, tokyo, warsaw and munich for em dashes and banned words. Nothing found on the web half.
-
-App half (explore, feedback, map-full, map, own-tree, paywall): discover, map, the feedback sign-in and the paywall read clearly and agree with each other.
-
-- WARN APP: map-full, the floating "Map" pill sits on top of the second card's title ("The Weteringp... ch Elm") and hides part of the name; the pill should sit clear of the list. This control was the odd one out in the 2026-09 sweeps too.
-- NOTE APP: own-tree shows a large flat drawn tree as the hero of a reader's own tree, with no sentence saying no photograph exists; CLAUDE.md allows the silhouette only beside that sentence. Probably the sweep fixture has no photo, but a real tree added without one would read the same.
-
