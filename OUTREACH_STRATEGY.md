@@ -64,6 +64,16 @@ Posts, not mails, and Hidde posts them himself from his own accounts; a session 
 - **Done:** 2026-10-16 the Big Tree Seekers / Big Trees of New York admin and the coordinator of Australia's National Register of Big Trees were mailed in Hidde's own words (log in drafts/OUTREACH.md). Answers decide whether the Facebook posts happen.
 - **Measure:** the digest's numbers the morning after, never upvotes.
 
+### Reddit after the first post (r/Lisbon, 2026-10-22)
+
+The first post (1,400 views, 10 upvotes, four strangers naming a tree in four hours, one of them a tree we were missing) settled the shape and the limits. Hidde: "gaat het niet opvallen als wij voor 100 steden ongeveer dezelfde post doen?" Yes, so:
+
+- **Ten posts, then a verdict.** One city a week, only cities Hidde has actually been to (the post is true: "I kept a list"), never from a template: each opens with a real memory of that city, names two trees without a good photo, ends on a question. Five in the Lisbon shape, five with a short list of four or five trees (one sentence each, why he liked it), alternating, so the ten say which shape brings contributions.
+- **No link in the post.** One link, once, in a reply to somebody who says they will go; none in any other reply, even when asked (point to that reply). Thank every tip; ask for a photo only when somebody says they live or walk near the tree. Then upvote and stop: too much OP makes the thread Hidde's instead of theirs.
+- **Count per post, in one table:** strangers naming a tree, photos or accounts within seven days. Views and upvotes are written down and do not count. More than one contribution a post on average means the channel works.
+- **Scale is not Hidde in a hundred subs.** It is ambassadors posting as themselves in their own city (komoot's Pioneer model, Hugo in Lisbon the first): the ten posts are the proof and the invitation. Every tip becomes a lead in data/leads/<city>.json the same day, source "reader tip on r/<city>", no name.
+- **A Reddit link is nofollow:** it counts for nothing as a backlink and for something as people who come direct or type the name afterwards, and as a thread that itself ranks for "oldest trees in <city>" with our name in it. Backlinks still come from societies, parks and papers, by mail.
+
 ## The daily rhythm
 
 1. `contacts_db.py --build` then `--ready source --limit 15` (and the other groups on their days).
