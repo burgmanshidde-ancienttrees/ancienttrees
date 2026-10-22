@@ -291,6 +291,15 @@ Then he wrote the paragraph himself and named the strategy: **"telling them how 
 
 So when somebody says they are busy but leaves an opening: first say you understand, without a "but". Then name the ways anyone could help as options ("if someone does have time"), not as a task for them: missing trees, a photo with the app in passing, sharing the app on their site or in a mail. Close with "either way, thanks" so nothing hangs on it. The App Store link belongs here, in the sentence about the photo ("het is geen harde weigering, je moet m goed plaatsen"): a reason beside it, never as a plug on its own at the end. mailcheck lets it through only in that paragraph. Never set them a specific job (pick a handful, check the list). This is the one place where more than one way to help is fine, because nothing is being asked of them in particular.
 
+## His standard intro: who we are (Hidde, 2026-10-22)
+
+When a mail has to say who we are (a first mail, or somebody who asked), reuse the intro sent to Peter Raggers on 2026-10-21. Hidde: "the intro you gave to Peter yesterday was better, please remember that one and reuse." My "I'm Hidde, I live in Baarn, about 30 minutes from Amsterdam" on its own "makes no sense": where he lives only works joined to what he does ("and I work on Ancient Trees").
+
+- NL (as sent to Peter): "Ik ben Hidde, ik woon in Baarn en werk aan Ancient Trees, een website en app met bijzondere oude bomen die de moeite waard zijn om naartoe te lopen. Het begon in Lissabon, waar ik tijdens werkreizen door de parken liep en me verwonderde over de oude jacaranda's en vijgenbomen. Ik ben geen bomenexpert, maar wel een grote fan, en ik wil het voor anderen makkelijker maken om zulke bomen te zien."
+- EN: "I'm Hidde, I live in Baarn in the Netherlands and work on Ancient Trees, a website and app with remarkable old trees worth walking to. It started in Lisbon, where I walked through the parks on work trips and wondered at the old jacarandas and fig trees. I'm not a tree expert, but a big fan, and I want to make it easier for others to see trees like these."
+
+Outside the Netherlands add "in the Netherlands" after Baarn. The intro already says "worth walking to", so the standard line below is for when they ask which trees, not stacked on top of the intro.
+
 ## His standard line: which trees, and for whom (Hidde, 2026-10-22)
 
 When somebody asks what counts as "ancient", or which trees we pick, use his line, not a list of criteria. He has used it before and wants it as the standard. Its first outing was to Dr. Bauer (2026-10-15), who passed it on to Harald von der Stein, and Harald then offered to cooperate.
