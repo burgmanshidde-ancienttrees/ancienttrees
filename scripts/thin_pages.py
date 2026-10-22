@@ -107,6 +107,12 @@ GOOGLE_ONLY_WEAK_TREES = True
 # shows recovery: places and countries first, then species, each step only
 # once the previous one earns impressions. False lets them all back at once.
 STRICT_CUT = True
+# And every translation of a place or tree page (Hidde, 2026-10-22, the same
+# afternoon: "translation uit de index halen dan?"). They are machine
+# translations of our own pages, the form Google's spam policy names, and only
+# four of them ever showed in a digest's top pages; those stay. Google only:
+# Bing keeps them. False lets the roster's translations back.
+TRANSLATIONS_OUT = True
 # Listing pages, one data file each: (folder in data/, url prefix).
 LISTINGS = [("species", "/species/"), ("parks", "/parks/"), ("collections", "/collections/"),
             ("states", "/united-states/"), ("countries", "/")]
@@ -278,7 +284,7 @@ def main():
             if has_photo(t) if INDEX_NEEDS_PHOTO else findable(t):
                 # The strict cut: a photographed tree keeps its English page,
                 # its translations go when its place is off the roster.
-                if strict:
+                if strict or TRANSLATIONS_OUT:
                     groups["strict_cut"] += [u for u in (f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real)
                                              if u not in t_keep]
                 continue
@@ -321,6 +327,8 @@ def main():
         #     roster leaves Google; its photographed tree pages stay.
         if strict:
             groups["strict_cut"] += [u for u in city_urls if u not in t_keep]
+        elif TRANSLATIONS_OUT:
+            groups["strict_cut"] += [u for u in city_urls[1:] if u not in t_keep]
         # 3. Question pages: ~45 percent template shared with every other
         #    question page and with their own city page. Kept only where
         #    Search Console ever showed one.
@@ -398,7 +406,7 @@ def main():
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
            f"| 4 | Tree pages without a photograph (since 2026-10-06), finished pages included since 2026-10-18 (the 2026-10-09 exception for finished pages in a proven city is closed, RETURN_ENRICHED). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
-           f"| 5 | The strict cut (2026-10-22): species, park, collection, state and country pages, place pages of cities off the roster, and translations there; Google only, Bing keeps them | {len(strict_cut)} |",
+           f"| 5 | The strict cut (2026-10-22): species, park, collection, state and country pages, place pages of cities off the roster, and every translation of a place or tree page; Google only, Bing keeps them | {len(strict_cut)} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | of which Google-only (the googlebot tag) | {len(google_only)} |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",

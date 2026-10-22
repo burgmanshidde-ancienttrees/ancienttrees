@@ -30,6 +30,11 @@ Madrid's tourist office answered the 10-20 tourism mail by pointing at the city'
 - **Held:** Häradseken (no public path known on Gotland farmland), Mogadouro (no written source), Hamerenne (private front garden).
 - **Waste, said plainly:** the four Texas trees were verified and written twice. A night run took this LOG's "next lane: Texas" an hour before my claim, and my claim was named `photo-batch-2`, so neither side could see the other. A claim should name the place or list it covers. Cost of the pass: verify 226k, write 175k, for 10 trees, about 40k a tree.
 
+## 2026-10-22 (session with Hidde): translations out of Google too
+
+- **Product (Hidde: "translation uit de index halen dan?"):** every translation of a place or tree page (654 urls) joins the strict cut, googlebot tag only, Bing keeps them (`TRANSLATIONS_OUT` in scripts/thin_pages.py). Four translations a digest showed before 09-28 stay. Google's index goes to about 1,450 English pages, nearly all photographed trees plus roster places.
+- **For the night run:** new translation passes pause while `TRANSLATIONS_OUT` holds (CLAUDE.md, recovery mode); the BACKUP lane is register scouting.
+
 ## 2026-10-22 (session with Hidde): readers' words on the page; iOS test green again; Baarn line refused
 
 - **Product:** the Montsouris plane (par_034, English and French) and the Hammundeseiche (fwd_001) now quote their readers instead of paraphrasing them. New `scripts/reader_words.py` lists every stranger's note on a live tree that no story quotes yet (0 left today); sightings_publish.py prints it after publishing. Rule in CLAUDE.md, Reader input.
