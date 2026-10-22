@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (01:38 UTC window): Potsdam +3 trees
+
+- **Live:** Potsdam goes from 15 to 18 trees: the pollarded linden of Fahrland, the Babelsberger Strasse oak and the Nattwerder lindens (register-only, no photographs yet, confirmed pins). German overlay and counts updated. Preflight 0 problems. 7-day visits line not printed by prepare.py this run.
+- **Wall:** Rothenburg ob der Tauber verified empty (near register trees already live or blocked; Bettwar and Insingen lindens stay leads), walled 48h.
+- **Health:** the Smoke test BLOCKER is the push-trigger skip (1s, by its condition), Build and deploy succeeded; answered with health.py --answer. No reader submissions waiting.
+
 ## 2026-10-22 night run (22:59 UTC window): three photographs approved
 
 - **Live:** photographs on nyc_028 (Kingsland weeping beech), dre_028 (fingered horse chestnut), dre_010 (white elm, Königsbrücker Strasse); nyc_028 now has a photo, so Google can show it. dre_017 held: pre-2025 photos of a twin oak pair, one felled June 2025. Reversal: `photo_apply.py hold <id> <url> --reason revert`. About 60 iNaturalist candidates remain unjudged in the queue.

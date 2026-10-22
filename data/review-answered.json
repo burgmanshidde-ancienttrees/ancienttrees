@@ -104,6 +104,10 @@
     "2026-10-20": {
       "note": "Smoke test shows skipped on push by design (1s, conditional job); Build and deploy succeeded 0.9h ago, site is updating.",
       "at": "2026-10-20T15:14:52+00:00"
+    },
+    "2026-10-22": {
+      "note": "Smoke test skips (1s) on every push by its if-condition; Build and deploy succeeded 2.2h ago, site is updating.",
+      "at": "2026-10-22T01:39:59+00:00"
     }
   }
 }

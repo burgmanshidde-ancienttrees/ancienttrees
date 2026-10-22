@@ -72,11 +72,6 @@
       "released_at": "2026-10-20T00:43:53+00:00"
     },
     {
-      "slug": "rothenburg-ob-der-tauber",
-      "kind": "verify",
-      "released_at": "2026-10-20T00:55:02+00:00"
-    },
-    {
       "slug": "chicago",
       "kind": "verify",
       "released_at": "2026-10-20T01:37:38+00:00"
@@ -145,6 +140,11 @@
       "slug": "leipzig",
       "kind": "verify",
       "released_at": "2026-10-21T23:15:34+00:00"
+    },
+    {
+      "slug": "rothenburg-ob-der-tauber",
+      "kind": "verify",
+      "released_at": "2026-10-22T01:41:24+00:00"
     }
   ]
 }

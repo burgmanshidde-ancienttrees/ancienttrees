@@ -1,6 +1,32 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-22": [
+   {
+    "date": "2026-10-22",
+    "target": "rothenburg-ob-der-tauber",
+    "kind": "verify",
+    "tokens": 60000,
+    "trees": 0,
+    "note": "near register trees already live or blocked; Bettwar and Insingen left as leads"
+   },
+   {
+    "date": "2026-10-22",
+    "target": "potsdam",
+    "kind": "verify",
+    "tokens": 110000,
+    "trees": 3,
+    "note": "Fahrland linden, Babelsberger Str oak, Nattwerder lindens; rest of register private plots or avenues"
+   },
+   {
+    "date": "2026-10-22",
+    "target": "potsdam",
+    "kind": "write",
+    "tokens": 95000,
+    "trees": 3,
+    "note": "three stories plus German overlay and count fixes in en and de"
+   }
+  ],
   "2026-10-21": [
    {
     "date": "2026-10-21",
