@@ -106,8 +106,8 @@
       "at": "2026-10-20T15:14:52+00:00"
     },
     "2026-10-22": {
-      "note": "Smoke test skips (1s) on every push by its if-condition; Build and deploy succeeded 2.2h ago, site is updating.",
-      "at": "2026-10-22T01:39:59+00:00"
+      "note": "Smoke test shows skipped on every push (1s, an if-condition), while Build and deploy succeeded 1.6h ago; the site is updating, no failing log to read.",
+      "at": "2026-10-22T06:37:39+00:00"
     }
   }
 }
