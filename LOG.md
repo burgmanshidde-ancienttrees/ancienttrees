@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session: US photo push, nothing to approve
+
+Hidde asked how our US supply looks after three US downloads in a day. Verdict: plenty of trees (456 in 76 places, second after the Netherlands) but 90 photographs, so most US tree pages sit outside Google. The cities Google shows are nearly bare: Oahu 5/21, New York 8/28, Houston 0/11, Chicago 1/38, Portland 2/33, Dallas 1/12.
+
+- `photo_hunt.py --recheck` over all 32 US roster cities (free API sweep). Only 15 trees had candidates nobody had judged; the rest were rejected in earlier passes.
+- One photo-judge pass on those 15 (94k tokens): 0 approved. All 18 images were off-subject; ten champion trees in Chicago and Pittsburgh all drew the same 1941 "Champion" train postcard. "champion" is now a not-distinctive word in photo_hunt.py.
+- Read: Commons is exhausted for the US photo gap. The next real source is a new one (Flickr CC, state champion-tree registers with photos, or readers), not another sweep.
+
 ## 2026-10-22 (session with Hidde): Madrid's Guia Verde read, four leads
 
 Madrid's tourist office answered the 10-20 tourism mail by pointing at the city's new Guia Verde de Madrid (2026 PDF on madrid.es). Read it: mostly parks in general, few single trees. Four new leads in data/leads/madrid.json, best the Castellana elm opposite the Hotel Villa Magna, "Madrid's oldest street tree" (18 m, 380 cm, singular under the 1997 PGOU); it needs a second source, a trunk pin and an open photo. The guide's photos are all rights reserved. Register lead: the 1997 PGOU catalogue of arboles singulares. Reply draft asking who at the city could release the photos: drafts/reply-madrid-turismo-2026-10-22.md, waits on Hidde.

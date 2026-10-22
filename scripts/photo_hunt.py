@@ -501,6 +501,8 @@ NOT_DISTINCTIVE = {
     "promenade", "vineyard", "orchard", "playground", "graveyard", "arboretum",
     "millennium", "centenary", "historic", "ancient", "veteran", "twisted",
     "gnarled", "hollow", "weeping", "giant", "grande", "grand",
+    # 2026-10-22: ten US champion trees all drew one 1941 "Champion" train postcard
+    "champion",
 }
 
 # Titles that are near-certainly not a photograph of a tree, even when the
