@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 (session with Hidde): the strict cut, 367 more pages out of Google
+
+- **Product (Hidde: "ik ga liever te ver nu met meer kans op herstel en dat we dan langzaam weer toe laten"; "alleen uit Google, Bing houdt ze"):** every species (197), park (49), collection (19), state (10) and country page, the place pages of cities off the frozen roster, and translations there now carry the googlebot noindex. Bing keeps them via sitemap-bing.xml. 367 paths, `STRICT_CUT` in scripts/thin_pages.py (group 5 in data/noindex.md). Kept: the roster, anything a digest's top pages showed before 09-28, and every photographed tree page in English. Google's index goes from about 2,450 urls to about 2,080, nearly all photographed trees plus roster places.
+- **Ratchet widened with Hidde's yes:** qa's `check_the_noindex_split_holds()` lets the strict cut's listing and place pages carry the googlebot tag (it allowed tree pages only); question pages still never may. The recrawl and Bing sitemaps skip listed paths the build did not make (six listing files with too few trees).
+- **Not verified locally** (no local build): the deploy's qa run is the first full check of the tags.
+- **Letting back:** only once Search Console shows recovery, in steps, places and countries first, then species, each step after the previous one earns impressions.
+
 ## 2026-10-22 night run (fourth attempt): nothing shipped, pace guard still at 75
 
 - Shipped nothing. Tried the three Texas place files (college-station, coppell, goliad) again: preflight still fails only `check_publishing_pace()` at 75 new trees in 24 hours (cap 60), so I reverted the move. Next run once the count drops: move the three files from data/research/texas-places/ into data/cities/, add the slugs to data/us-states.json ("Texas"), preflight, merge.

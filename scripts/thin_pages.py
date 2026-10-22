@@ -94,6 +94,23 @@ GUARD_MARGIN = 10  # pages this script does not enumerate (collections, species)
 # on everything; reversing it needs Hidde.
 GOOGLE_ONLY_WEAK_TREES = True
 
+# THE STRICT CUT, Hidde 2026-10-22 ("ik ga liever te ver nu met meer kans op
+# herstel en dat we dan langzaam weer toe laten"; "alleen uit Google, Bing
+# houdt ze"). What Google still saw after the photo rule was mostly the
+# photographed trees and the frozen roster, plus about 375 pages whose shape
+# is the template: species, park, collection, state and country pages that
+# re-list trees already on their city pages, the place pages of cities no
+# reader found before 09-28, and their translations. All of those leave
+# Google (googlebot tag, Bing keeps them in sitemap-bing.xml). Kept: anything
+# on the frozen roster or shown in a digest's top pages before 09-28, and every
+# photographed tree page in English. Let back in steps once Search Console
+# shows recovery: places and countries first, then species, each step only
+# once the previous one earns impressions. False lets them all back at once.
+STRICT_CUT = True
+# Listing pages, one data file each: (folder in data/, url prefix).
+LISTINGS = [("species", "/species/"), ("parks", "/parks/"), ("collections", "/collections/"),
+            ("states", "/united-states/"), ("countries", "/")]
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://ancienttrees.app"
 LANGS = ["de", "es", "fr", "it", "ja", "nl", "pt"]
@@ -209,7 +226,7 @@ def main():
         roster_imps = {}
     t_keep = page_evidence()
 
-    groups = {"fallback": [], "thin_places": [], "question_pages": [], "weak_trees": []}
+    groups = {"fallback": [], "thin_places": [], "question_pages": [], "weak_trees": [], "strict_cut": []}
     kept_thin, a_places = [], []
     total_pages = 0
     nf = os.path.join(ROOT, "data", "noindex.json")
@@ -256,8 +273,14 @@ def main():
         #    a finished page is the opposite of the demoted shape. 182 pages
         #    qualified the day this was written; scripts/enrich.py works
         #    toward the rest, city by city, most readers first.
+        strict = STRICT_CUT and slug not in on_roster and slug not in EARNED_KEEP
         for t, ts in zip(trees, tslugs):
             if has_photo(t) if INDEX_NEEDS_PHOTO else findable(t):
+                # The strict cut: a photographed tree keeps its English page,
+                # its translations go when its place is off the roster.
+                if strict:
+                    groups["strict_cut"] += [u for u in (f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real)
+                                             if u not in t_keep]
                 continue
             if RETURN_ENRICHED and INDEX_NEEDS_PHOTO and slug in on_roster and enriched(t, enrich_gaps(t)):
                 en_url = f"{BASE}/{slug}/{ts}"
@@ -294,6 +317,10 @@ def main():
         if INDEX_NEEDS_PHOTO and slug not in on_roster and not any(has_photo(t) for t in trees):
             groups["thin_places"] += city_urls + q_urls
             continue
+        # 2c. The strict cut (2026-10-22): the place page of a city off the
+        #     roster leaves Google; its photographed tree pages stay.
+        if strict:
+            groups["strict_cut"] += [u for u in city_urls if u not in t_keep]
         # 3. Question pages: ~45 percent template shared with every other
         #    question page and with their own city page. Kept only where
         #    Search Console ever showed one.
@@ -301,6 +328,20 @@ def main():
         # answered the same question as its own city page's FAQ, so two pages
         # chased one query.
         groups["question_pages"] += q_urls
+
+    # 5. The strict cut's listing pages: every species, park, collection, state
+    #    and country page, unless it is on the roster or readers found it.
+    if STRICT_CUT:
+        for folder, prefix in LISTINGS:
+            for p in sorted(glob.glob(os.path.join(ROOT, "data", folder, "*.json"))):
+                try:
+                    d = json.load(open(p))
+                except (OSError, ValueError):
+                    continue
+                s = (d.get("slug") if isinstance(d, dict) else None) or os.path.basename(p)[:-5]
+                u = f"{BASE}{prefix}{s}"
+                if s not in on_roster and u not in t_keep:
+                    groups["strict_cut"].append(u)
 
     returning.sort(key=lambda r: -r[0])
     take = RETURN_PER_BUILD
@@ -332,8 +373,12 @@ def main():
     # thin place is not on the thin_places list (that list holds place and
     # question pages), so in practice this is the whole weak_trees group; the
     # subtraction is what keeps it true if a group ever grows to include one.
-    others = {u[len(BASE):] for k, v in groups.items() if k != "weak_trees" for u in v}
-    google_only = sorted({u[len(BASE):] for u in groups["weak_trees"]} - others) if GOOGLE_ONLY_WEAK_TREES else []
+    # The strict cut is Google's objection only too (Hidde, 2026-10-22), so it
+    # joins the googlebot tag on the same terms.
+    google_side = ("weak_trees", "strict_cut")
+    others = {u[len(BASE):] for k, v in groups.items() if k not in google_side for u in v}
+    google_only = sorted({u[len(BASE):] for k in google_side for u in groups[k]} - others) if GOOGLE_ONLY_WEAK_TREES else []
+    strict_cut = sorted({u[len(BASE):] for u in groups["strict_cut"]})
     if returning:
         print(f"finished pages returning to the index this build: {take} of {len(returning)} "
               f"(RETURN_PER_BUILD {RETURN_PER_BUILD}); {len(held_back)} wait for a later build")
@@ -342,6 +387,7 @@ def main():
                "note": "Every path here leaves sitemap.xml and renders a self canonical (site/src/layouts/Base.astro). A path in google_only renders <meta name=googlebot content=noindex>, which only Google reads, and is offered to Bing in sitemap-bing.xml; every other path renders <meta name=robots content=noindex> for every engine. Pages stay live. Undo by emptying 'paths' and removing the thin_pages step from deploy.yml.",
                "counts": {k: len(set(v)) for k, v in groups.items()},
                "google_only": google_only,
+               "strict_cut": strict_cut,
                "paths": paths},
               open(nf, "w"), indent=1, ensure_ascii=False)
 
@@ -352,6 +398,7 @@ def main():
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
            f"| 4 | Tree pages without a photograph (since 2026-10-06), finished pages included since 2026-10-18 (the 2026-10-09 exception for finished pages in a proven city is closed, RETURN_ENRICHED). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
+           f"| 5 | The strict cut (2026-10-22): species, park, collection, state and country pages, place pages of cities off the roster, and translations there; Google only, Bing keeps them | {len(strict_cut)} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | of which Google-only (the googlebot tag) | {len(google_only)} |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",

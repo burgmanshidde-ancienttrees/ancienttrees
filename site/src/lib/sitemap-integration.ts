@@ -80,6 +80,12 @@ export default function sitemapIntegration(): AstroIntegration {
         // pages, so without this the change would be found at Google's own
         // slow pace. Delete this block once Search Console shows the pages
         // as "Excluded by noindex".
+        // The strict cut (2026-10-22) lists a listing page by its data file,
+        // and a few files build no page (too few trees); a sitemap never names
+        // a url the build did not make.
+        const built = (p: string) =>
+          fs.existsSync(path.join(distRoot, `${p.replace(/^\//, "")}.html`)) ||
+          fs.existsSync(path.join(distRoot, p.replace(/^\//, ""), "index.html"));
         const nf = path.join(process.cwd(), "../data/noindex.json");
         if (fs.existsSync(nf)) {
           const nd = JSON.parse(fs.readFileSync(nf, "utf-8"));
@@ -88,6 +94,7 @@ export default function sitemapIntegration(): AstroIntegration {
             ? raw.map((p: string) => [p, nd.since ?? fallback])
             : Object.entries(raw);
           const rec = dated
+            .filter(([p]) => built(p))
             .map(([p, d]) => `  <url><loc>${BASE_URL}${p}</loc><lastmod>${d}</lastmod></url>\n`)
             .join("");
           fs.writeFileSync(
@@ -103,7 +110,7 @@ export default function sitemapIntegration(): AstroIntegration {
         // submitted in Bing Webmaster Tools only and is named nowhere Google
         // looks: not in robots.txt, not in a sitemap index. The same lastmod
         // as the main sitemap, because it is the same page.
-        const bing = googleOnlyPaths();
+        const bing = googleOnlyPaths().filter(built);
         if (bing.length) {
           const rows = bing
             .map((p) => `${BASE_URL}${p}`)

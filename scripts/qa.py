@@ -2328,10 +2328,20 @@ def check_the_noindex_split_holds():
             seg = seg[1:]
         return len(seg) == 2 and seg[1] not in qslugs
 
-    not_trees = sorted(p for p in google_only if not is_tree_page(p))
+    # Widened 2026-10-22 (Hidde: "alleen uit Google, Bing houdt ze"): the strict
+    # cut's listing and place pages may leave Google alone too. A question page
+    # never may, it duplicates its city page in any index.
+    strict_cut = set(doc.get("strict_cut") or [])
+
+    def is_question_page(p):
+        seg = [x for x in p.split("/") if x]
+        return len(seg) >= 2 and seg[-1] in qslugs
+
+    not_trees = sorted(p for p in google_only
+                       if not is_tree_page(p) and (p not in strict_cut or is_question_page(p)))
     if not_trees:
-        out.append("noindex.json: %d google_only paths are not tree pages (only a tree page "
-                   "may leave Google alone), e.g. %s" % (len(not_trees), ", ".join(not_trees[:3])))
+        out.append("noindex.json: %d google_only paths are neither tree pages nor the strict cut's "
+                   "listing and place pages, e.g. %s" % (len(not_trees), ", ".join(not_trees[:3])))
 
     def built(p):
         # The page is <path>.html; <path>/index.html beside it is the
