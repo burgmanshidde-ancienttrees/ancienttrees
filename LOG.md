@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session with Hidde: no ambassador tag on app Settings
+
+Live on main for the next app build: the Settings card shows name and address only; the ambassador tag stays on My trees and the public profile (Hidde: "op de setting pagina ... mag die weg"). Built and looked at in the simulator, signed in as a Paris ambassador. The website's settings page never had it.
+
 ## 2026-10-22 session with Hidde: a reply-mail skill
 
 Hidde asked whether a skill would help with mails. The rules for a reply lived in seven places (HIS_VOICE.md, five memory notes, mailcheck.py), loaded only when a session remembered. New project skill `.claude/skills/reply-mail/SKILL.md` bundles them in order: read the voice file and the thread, do the fix first, the reply shape, the never-list, a de-AI cutting pass, mailcheck, show with the full mail above the draft. It points at the existing files and rewrites none of them. Loads from the next session on.
