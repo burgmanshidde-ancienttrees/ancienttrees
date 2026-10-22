@@ -97,6 +97,14 @@ def owners(live=None):
     return out
 
 
+def sender(sid, j, who):
+    """The account behind one judgement row: the owners() map, else the first
+    part of its photo path when that is an account id or code."""
+    photo = str(j.get("photo") or "")
+    return who.get(sid) or (photo.split("/")[0]
+                            if re.match(r"^([0-9a-f-]{36}|p_[0-9a-f]{24})/", photo) else None)
+
+
 def selection(include_answered=False, live=None, fresh_days=2):
     """[(sighting id, judgement row, how many sightings of the same tree)],
     strangers only, one row per tree, newest first as judgements.json keeps them.
@@ -113,14 +121,24 @@ def selection(include_answered=False, live=None, fresh_days=2):
     live = live if live is not None else live_index()
     who = owners(live)
     rows = json.load(open("data/judgements.json", encoding="utf-8")).get("judgements", [])
+    # The page shows one row per tree, so his answer is about the tree: other
+    # photographs of it seen that day or before are answered with it (Hidde,
+    # 2026-10-22, "alle vier eens", after which three sibling photos surfaced).
+    answered = {}
+    for j in rows:
+        if j.get("hidde") and j.get("tree"):
+            k = (j["tree"].lower(), (j.get("city") or "").lower())
+            answered[k] = max(answered.get(k, ""), str(j.get("seen") or ""))
     by_tree, out = {}, []
     for j in rows:
         sid = str(j.get("id", "")).split(":", 1)[-1].lower()
-        uid = who.get(sid) or (str(j.get("photo") or "").split("/")[0]
-                               if re.match(r"^([0-9a-f-]{36}|p_[0-9a-f]{24})/", str(j.get("photo") or "")) else None)
+        uid = sender(sid, j, who)
         if uid and ours.is_ours(uid):
             continue
         if j.get("hidde") and not include_answered:
+            continue
+        k = ((j.get("tree") or "").lower(), (j.get("city") or "").lower())
+        if not include_answered and str(j.get("seen") or "") <= answered.get(k, ""):
             continue
         if "SUPERSEDED" in (j.get("reason") or ""):
             continue

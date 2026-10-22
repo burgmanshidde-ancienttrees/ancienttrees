@@ -88,7 +88,10 @@ def week_numbers():
     """New visitors, and new visitors from search, for the seven days to
     yesterday and the seven before: the digest's first two headline rows
     (Hidde, 2026-10-19: "i want to keep GA and get rid of cloudflare").
-    Returns ([this week, week before], [from search, from search]) or None."""
+    Search is split by engine (Hidde, 2026-10-22: "is this only google or also
+    bing"): "organic" is every engine, and only the Google row answers whether
+    Google is coming back.
+    Returns ([this week, week before], [from search], [Google], [Bing]) or None."""
     c = creds()
     if not c:
         return None
@@ -96,16 +99,20 @@ def week_numbers():
     rows = _report(tok, {
         "dateRanges": [{"startDate": "7daysAgo", "endDate": "yesterday", "name": "now"},
                        {"startDate": "14daysAgo", "endDate": "8daysAgo", "name": "before"}],
-        "dimensions": [{"name": "sessionMedium"}],
+        "dimensions": [{"name": "sessionMedium"}, {"name": "sessionSource"}],
         "metrics": [{"name": "newUsers"}]})
-    new, search = [0, 0], [0, 0]
+    new, search, google, bing = [0, 0], [0, 0], [0, 0], [0, 0]
     for row in rows:
-        medium, rng, n = row[0], row[1], int(float(row[2]))
+        medium, source, rng, n = row[0], row[1].lower(), row[2], int(float(row[3]))
         w = 0 if rng == "now" else 1
         new[w] += n
         if medium == "organic":
             search[w] += n
-    return new, search
+            if "google" in source:
+                google[w] += n
+            elif "bing" in source:
+                bing[w] += n
+    return new, search, google, bing
 
 
 def lines(daily, pages, sources, returning):

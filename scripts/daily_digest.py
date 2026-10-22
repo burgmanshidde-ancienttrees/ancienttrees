@@ -1832,6 +1832,41 @@ def _page_link(slug, t):
     return "not live yet"
 
 
+_READERS = {}
+
+
+def _reader_letter(uid):
+    """A letter per person, the same in every block of one entry, so Hidde can
+    see one reader sending four trees apart from four readers sending one
+    (Hidde, 2026-10-22: "were the trees send in all from the same user"). Never
+    the account or its code: DATA.md is public."""
+    if not uid:
+        return "?"
+    try:
+        import people
+        uid = people.ref(uid)
+    except Exception:
+        pass
+    if uid not in _READERS:
+        n = len(_READERS)
+        _READERS[uid] = chr(ord("A") + n % 26) + ("" if n < 26 else str(n // 26))
+    return _READERS[uid]
+
+
+def _reader_tally(letters):
+    """One line under a table: who sent how many of its rows."""
+    known = [l for l in letters if l != "?"]
+    if not known:
+        return None
+    count = {}
+    for l in known:
+        count[l] = count.get(l, 0) + 1
+    parts = ["reader %s %d" % (l, n) for l, n in sorted(count.items(), key=lambda x: (-x[1], x[0]))]
+    if len(count) == 1:
+        return "- All from one reader (%s)." % parts[0]
+    return "- From %d readers: %s." % (len(count), ", ".join(parts))
+
+
 def reader_trees_to_inspect(today):
     """Every tree a stranger sent that Hidde has not looked at, every morning.
 
@@ -1846,14 +1881,17 @@ def reader_trees_to_inspect(today):
     """
     import inspect_readers as ir    # one selection for the table and the page
     live = ir.live_index()
-    out_rows = []
+    who = ir.owners(live)
+    out_rows, letters = [], []
     for sid, j, n in ir.selection(False, live):
         hit = live.get(sid)
         page = "[%s](%s)" % (hit[1].get("id"), _tree_url(hit[0], hit[1].get("name"))) if hit else "-"
         m = j.get("measure") or {}
         girth = j.get("reader_girth_cm")
-        out_rows.append("| %s | %s | %s | %s | %s | %s | %s |" % (
-            j.get("seen") or "-", (j.get("tree") or "-")[:44] + (" (%d photos)" % n if n > 1 else ""),
+        letters.append(_reader_letter(ir.sender(sid, j, who)))
+        out_rows.append("| %s | %s | %s | %s | %s | %s | %s | %s |" % (
+            j.get("seen") or "-", letters[-1],
+            (j.get("tree") or "-")[:44] + (" (%d photos)" % n if n > 1 else ""),
             j.get("city") or (hit[0] if hit else "-"),
             (j.get("species") or "-")[:30], "%s cm" % girth if girth else "-",
             j.get("verdict") or "open", page))
@@ -1863,9 +1901,10 @@ def reader_trees_to_inspect(today):
     return "\n".join([
         "**Trees readers sent, for you to inspect** (%d you have not looked at; ours left out)" % len(out_rows),
         "",
-        "| Judged | Tree | Where | Species | Their girth | Our verdict | Page |",
-        "|---|---|---|---|---:|---|---|",
+        "| Judged | Reader | Tree | Where | Species | Their girth | Our verdict | Page |",
+        "|---|---|---|---|---|---:|---|---|",
         *out_rows,
+        *([_reader_tally(letters)] if _reader_tally(letters) else []),
         "- Photographs and the readers' own words: `python3 scripts/inspect_readers.py` (a local page, "
         "never in this public file). Your answer goes in with `python3 scripts/judgement.py --feedback <id> \"...\"`.",
     ])
@@ -1886,14 +1925,15 @@ def readers_gave_section(today):
     photographs a reader sent that were published (sightings-processed.json,
     by publish date; our own photographs never enter it as `published` for a
     reader because judgement and inbox mark them `mine`), and submissions whose
-    outcome is `changed`, meaning a reader's correction altered a page. Tree
-    and city only, never who: DATA.md is public and a name is never printed."""
+    outcome is `changed`, meaning a reader's correction altered a page. Who is
+    a letter only (`_reader_letter()`): DATA.md is public and a name is never
+    printed."""
     # Readers only (Hidde, 2026-10-14: "ik wil alleen de door gebruikers
     # gesuggereerde bomen boven in de daily digest incl link als ze live
     # staan"). The night run's own photo approvals moved to
     # night_photos_section(), lower down; each row here links its page.
     since = today - datetime.timedelta(days=2)
-    out = []
+    out, letters = [], []
     try:
         with open(os.path.join(ROOT, "data", "sightings-processed.json")) as f:
             done = json.load(f).get("done", {})
@@ -1934,8 +1974,9 @@ def readers_gave_section(today):
         name = (t or {}).get("name") or tid
         what = "a reader's photograph, published" + (
             " beside the one it had" if d.get("outcome") == "added" else "")
-        out.append("| %s | %s | %s | %s | %s |" % (day.isoformat()[5:], name, city, what,
-                                                   _page_link(slug, t) if t else "not live yet"))
+        letters.append(_reader_letter(owner.get(str(sid).lower())))
+        out.append("| %s | %s | %s | %s | %s | %s |" % (day.isoformat()[5:], letters[-1], name, city,
+                                                        what, _page_link(slug, t) if t else "not live yet"))
     key = os.environ.get("SUPABASE_SERVICE_KEY")
     if key:
         try:
@@ -1945,15 +1986,18 @@ def readers_gave_section(today):
             for r in rows or []:
                 if r.get("id") in TEST_SUBMISSION_IDS or is_ours(r.get("user_id")):
                     continue
-                out.append("| %s | %s | %s | a reader's %s changed the page | - |" % (
-                    str(r.get("created_at"))[5:10], r.get("tree") or "-",
+                letters.append(_reader_letter(r.get("user_id")))
+                out.append("| %s | %s | %s | %s | a reader's %s changed the page | - |" % (
+                    str(r.get("created_at"))[5:10], letters[-1], r.get("tree") or "-",
                     r.get("city") or "-", r.get("kind") or "report"))
         except Exception:
             pass
     if not out:
         return None
+    tally = _reader_tally(letters)
     return "\n".join(["**What readers gave us, and it went live**", "",
-                      "| Day | Tree | Where | What | Page |", "|---|---|---|---|---|", *out])
+                      "| Day | Reader | Tree | Where | What | Page |", "|---|---|---|---|---|---|", *out,
+                      *([tally] if tally else [])])
 
 
 def night_photos_section(today):
@@ -3389,7 +3433,9 @@ def headline_section(today):
     web = H.get("web")
     rows = [
         ("New website visitors", "people", web[0] if web else None),
-        ("... of which from search", "Google's recovery", web[1] if web else None),
+        ("... of which from search", "every search engine", web[1] if web else None),
+        ("... from Google", "Google's recovery", web[2] if web else None),
+        ("... from Bing", "Bing", web[3] if web else None),
         ("App downloads (first-time)", "people", H.get("downloads")),
         ("New accounts", "people", H.get("accounts")),
         ("Phones back within 30 days", "people who stay", H.get("back30")),
