@@ -4,6 +4,22 @@
   "2026-10-22": [
    {
     "date": "2026-10-22",
+    "target": "frankfurt",
+    "kind": "verify",
+    "tokens": 127000,
+    "trees": 2,
+    "note": "supply exhausted; frk_022, frk_023 flagged, 6 leads added; flurbaum.de new lead source"
+   },
+   {
+    "date": "2026-10-22",
+    "target": "frankfurt",
+    "kind": "write",
+    "tokens": 101000,
+    "trees": 2,
+    "note": "frk_022, frk_023 plus German overlay"
+   },
+   {
+    "date": "2026-10-22",
     "target": "chicago",
     "kind": "verify",
     "tokens": 90000,

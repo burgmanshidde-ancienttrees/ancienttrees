@@ -1,362 +1,422 @@
 {
- "leads": [
-  {
-   "candidate": "Eisenholzbaeume am Untermainkai (Parrotia persica, Persian ironwood, multi-stemmed group)",
-   "coords": [
-    50.105332,
-    8.671875
-   ],
-   "reason": "On the official 2025 Naturdenkmal register (entry 026) and on public riverside promenade ground (Untermainkai, Innenstadt), so likely publishable. Blocked only on evidence: the frankfurt.de detail page 403s to curl and WebFetch (Cloudflare) and no wayback snapshot could be fetched this pass (archive.org rate-limited us with 429 after repeated calls). Height/crown figures reported by WebSearch's own summary (19-23m height, 19-22m crown) were never confirmed on a directly-fetched page per the no-search-summary-as-source rule, so they are NOT recorded as fact. Next pass: retry the wayback snapshot once the 429 cooldown has passed, or find a second source (monumentaltrees.com browser session, a Frankfurt tree blog, Wikimedia Commons file description).",
-   "lat": 50.105332,
-   "lng": 8.671875,
-   "position_basis": "recovered from the lead's own `coords` field (field)"
-  },
-  {
-   "candidate": "Schwarze Maulbeere an der Liebfrauenschule (Black mulberry, Morus nigra)",
-   "coords": [
-    50.116736,
-    8.684772
-   ],
-   "reason": "Facts look strong (WebSearch summary: ND entry 017, ~200+ years old, girth 3.31m, height 12m, planted ~1760, stands beside the grave of Goethe's mother Catharina Elisabeth Goethe who was buried there in 1808) but every source found describes it as standing 'auf dem Schulhof' (on the schoolyard) of the Liebfrauenschule. Hard rule 10's school test requires real evidence the grounds are genuinely open (a public path, a churchyard the school merely borders, stated weekend access) before a school-ground tree ships, and no source fetched this pass stated that. The Goethe grave connection suggests it may actually be in or beside the adjoining Liebfrauenkirche churchyard rather than a closed schoolyard proper, which would pass, but this needs a source that says so explicitly, not an inference. Do not ship without that evidence. All numeric claims here also came only from a WebSearch summary, never a directly-fetched page, so they need re-confirming too.",
-   "lat": 50.116736,
-   "lng": 8.684772,
-   "position_basis": "recovered from the lead's own `coords` field (field)"
-  },
-  {
-   "candidate": "Sumpfzypressen im Zoo Frankfurt (5 Bald Cypresses, Taxodium distichum, at the Grosser Weiher pond)",
-   "coords": [
-    50.115693,
-    8.701195
-   ],
-   "reason": "On the official register (entry 018), inside Frankfurt Zoo (paid entry, so access is fine per the paid-entry rule). Only the official register plus a WebSearch summary (not a fetched page) describe it so far; no independent second source or measurements confirmed yet. Likely verifiable next pass via photo-auge.de (found in search results: https://photo-auge.de/bedeutende-baeume/sumpfzypresse-im-frankfurter-zoo/, not yet fetched) or the Zoo's own site.",
-   "lat": 50.115693,
-   "lng": 8.701195,
-   "position_basis": "recovered from the lead's own `coords` field (field)"
-  },
-  {
-   "candidate": "Wilde Weinrebe im Botanischen Garten (wild grapevine, register entry 012)",
-   "coords": [
-    50.12748,
-    8.65751
-   ],
-   "reason": "On the official register, right next to the verified Dawn Redwood (frk_002) in the same Botanical Garden, but a vine is a questionable collectible point on its own (not scored, not researched this pass). Worth a look for a future pass but likely a minor addition to the Botanical Garden stop rather than its own entry.",
-   "lat": 50.12748,
-   "lng": 8.65751,
-   "position_basis": "recovered from the lead's own `coords` field (field)"
-  },
-  {
-   "candidate": "Ginkgo im Brentanopark, Roedelheim (register entry 021 / Wikidata Q15111648)",
-   "coords": [
-    50.123927,
-    8.613951
-   ],
-   "reason": "On the official 2025 register, has a Wikipedia short description (Beschreibung: Y) and a Wikidata entry with a Commons photo, so it is well set up for a fast verify next pass. Not pursued this pass because Roedelheim (~5km from centre) does not join the Westend cluster or any other cluster worked this pass; would need 1-2 more Roedelheim trees to justify its own walk, or could stand alone.",
-   "lat": 50.123927,
-   "lng": 8.613951,
-   "position_basis": "recovered from the lead's own `coords` field (field)"
-  },
-  {
-   "candidate": "Friedenseiche, Sossenheim (register entry 022) and Schwanheimer Alteichen (register entry 030) and Schlossplatzeiche, Hoechst (register entry 024)",
-   "coords": [
-    [
-     50.118534,
-     8.568319
-    ],
-    [
-     50.0823,
-     8.5898
-    ],
-    [
-     50.0987,
-     8.54776
-    ]
-   ],
-   "reason": "All three carry a filled Beschreibung on the Wikipedia register mirror (meaning a frankfurt.de detail page with real facts likely exists) and Schlossplatzeiche/Schwanheimer Alteichen are only about 3km apart in Frankfurt's western districts (Hoechst/Zeilsheim/Schwanheim), a plausible second cluster for a future pass. Not pursued this pass purely for time; each looked promising in the register table."
-  },
-  {
-   "candidate": "Offenbach am Main city natural monuments (Wikidata candidates, 5.3-8.8km from Frankfurt centre): Eiche/Bismarckstrasse, Eibe/Geleitsstrasse, Jahn-Eiche, Mark-Eiche, August-Reiss-Eiche, Zwei Ginkgobaeume von Rumpenheim",
-   "coords": null,
-   "reason": "Genuinely inside the ~30 minute transit day-trip boundary from Frankfurt (Offenbach am Main is the neighbouring city, S-Bahn-connected) and licence-clean (Wikidata CC0 plus Hesse single-natural-monument designation), but not researched this pass: six candidates spread across Offenbach's own downtown and its Rumpenheim district are not obviously a tight walkable cluster without checking their mutual distances first, and Frankfurt proper had enough supply to fill this pass's window. Good candidate for a dedicated Offenbach pass or a second Frankfurt-area pass once Frankfurt itself is deeper."
-  },
-  {
-   "candidate": "Bad Vilbel, Neu-Isenburg, Dreieich, Langen, Kelsterbach, Raunheim Wikidata candidates (9-20km from centre)",
-   "coords": null,
-   "reason": "These are separate towns around Frankfurt, mostly beyond a comfortable 30-minute transit day trip and each represented by only 1-3 scattered candidates with no internal clustering evident from coordinates alone. Not a Frankfurt city page concern; recorded here only so a future pass does not re-scout the same Wikidata file from zero. See data/research/frankfurt-wikidata-candidates.json for the full list, sorted by distance."
-  },
-  {
-   "candidate": "Senckenberg-Eibe (Senckenberg yew, Palmengarten, Wikidata Q2269925)",
-   "coords": [
-    50.1254,
-    8.65705
-   ],
-   "reason": "No photograph in reach: the only Commons file is a black-and-white 1907 scan (not eligible) and no geotagged modern photo within 150 m. Pin is a Wikidata coordinate, park-level (Palmengarten NE edge, south of a playground, north of a greenhouse per de.wikipedia). About 400 years old, transplanted 1907 over 3.5 km by steam rollers. Remarkable story, would ship with a photo or a Palmengarten sighting.",
-   "lat": 50.1254,
-   "lng": 8.65705
-  },
-  {
-   "candidate": "Eiche am Schulhof (Q125389967), Eiche am Jungfernstieg, Speierlinge am Rotenberg (Frankfurt north, Bad Vilbel area)",
-   "coords": null,
-   "reason": "Wikidata single natural monuments about 7 to 10 km north, not examined this pass; some are on school grounds (hard rule 10 school test). Not clustered with the Frankfurt city set."
-  },
-  {
-   "candidate": "Roteiche im Ostpark (register entry 025), Eibe in der Berger Strasse (031), Kastanie am Schaeferkoeppel (032, about 110 years, 5.30 m girth), Linden am Friedhof Nieder-Erlenbach (036)",
-   "coords": [
-    [
-     50.121767,
-     8.725317
-    ],
-    [
-     50.12481,
-     8.7058
-    ],
-    [
-     50.221751,
-     8.721743
-    ],
-    [
-     50.202269,
-     8.706683
-    ]
-   ],
-   "reason": "On the official register; Roteiche, Kastanie and Linden carry Commons photos but no city page text was read this pass (frankfurt.de pages are reachable through web.archive.org/web/2025/<url> with a browser user agent, which worked 2026-10-07). Eibe in der Berger Strasse has no photo and a register pin only. Next pass: read the Wayback city pages for the Eibe and the two Nieder-Erlenbach pages, check whether the cemetery lindens count as a small site."
-  },
-  {
-   "candidate": "Eisenholzbaeume am Untermainkai (entry 026) and Schwarze Maulbeere (entry 017)",
-   "coords": [
-    [
-     50.105332,
-     8.671875
-    ],
-    [
-     50.116736,
-     8.684772
-    ]
-   ],
-   "reason": "Still no photograph and the pin is the register coordinate only. Retry via Wayback: the frankfurt.de page for these is at the same path scheme (not in the 'Naturdenkmale' list of pages read here, so the slug may differ). Mulberry remains on the school ground question."
-  },
-  {
-   "candidate": "Roteiche im Ostpark (Red oak, Quercus rubra, register entry 025)",
-   "coords": [
-    50.121767,
-    8.725317
-   ],
-   "lat": 50.121767,
-   "lng": 8.725317,
-   "reason": "2026-10-13 deepen pass. Photo in hand: Commons 'Roteiche, 3, Ostend, Frankfurt am Main.jpg' (GeorgDerReisende, CC BY-SA 4.0, taken 2025-11-13, captioned red oak at the north-eastern end of the Ostpark), so findable and recent (alive Nov 2025). Register coordinate from de.wikipedia Naturdenkmale list (entry 025). Missing for RICH: any measurement (girth or height) and the per-tree frankfurt.de page, which 403s (WebFetch, curl) and has no Wayback snapshot (availability API empty for the Eisenholz page too). Park is public (Ostpark). Next pass: a source with the register figures (Amtsblatt Nr. 44/2025 PDF, or a browser session on frankfurt.de) turns this into a deliverable."
-  },
-  {
-   "candidate": "Eisenholzbaeume am Untermainkai (entry 026), re-check 2026-10-13",
-   "coords": [
-    50.105332,
-    8.671875
-   ],
-   "lat": 50.105332,
-   "lng": 8.671875,
-   "reason": "Re-tried: frankfurt.de page 403 again via WebFetch, no Wayback snapshot, Commons has no file for it (search 0 hits). Still no fetched measurement, no photo. WebSearch pointer only: city page lists height 19-23 m, crown 19-22 m, no age, 15 m protection zone; unconfirmed per search-summary rule. photo-auge.de Sumpfzypresse page for entry 018 is a photo album page with no text, no figures."
-  },
-  {
-   "candidate": "Eiche, Bismarckstrasse 193, Offenbach (Wikidata Q119289109)",
-   "coords": [
-    50.09864,
-    8.75427
-   ],
-   "lat": 50.09864,
-   "lng": 8.75427,
-   "reason": "2026-10-18 verify pass. Wikipedia ND list (citing the 1979 Offenbach naturalist survey): about 200 years old in 1979, 25 m, at Bismarckstrasse 193. A street address; no source says whether the tree is on a public verge or in a private garden, so access is unsettled (hard rule 10). Commons has a photo ('Eiche Bismarckstrasse 2.jpg'). Next pass: find a source naming the ground."
-  },
-  {
-   "candidate": "Jahn-Eiche, Offenbach (Q57241744, ND 11)",
-   "coords": [
-    50.09462,
-    8.76118
-   ],
-   "lat": 50.09462,
-   "lng": 8.76118,
-   "reason": "2026-10-18. Pedunculate oak planted winter 1911/12 for Turnvater Jahn, solitary tree at Gutenbergstrasse / Starkenburgring with a memorial stone, ND since July 1988 (Wikipedia ND list citing the 88th Bericht des Offenbacher Vereins fuer Naturkunde, 1988). Public street corner. Only about 115 years old, so a modest tree; lifecheck OLD (2018 Commons photo). Deliverable as flagged if Offenbach gets a pass of its own; August Reiss Oak (frk_017) is the Offenbach anchor."
-  },
-  {
-   "candidate": "Mark-Eiche, Offenbach (Q119289326)",
-   "coords": [
-    50.0847,
-    8.7766
-   ],
-   "lat": 50.0847,
-   "lng": 8.7766,
-   "reason": "2026-10-18. Six-stemmed pedunculate oak, about 23 m (1979 survey via Wikipedia ND list), about 170 m north of the Stadthalle, about 50 m west of the Hainbach. Commons photo exists. Not verified further (age unknown, no current source). Candidate for an Offenbach forest walk with frk_017 (about 1.5 km apart)."
-  },
-  {
-   "candidate": "Zwei Ginkgobaeume im Schlossgarten Rumpenheim, Offenbach (Q119289494)",
-   "coords": [
-    50.1321,
-    8.8013
-   ],
-   "lat": 50.1321,
-   "lng": 8.8013,
-   "reason": "2026-10-18. Male and female ginkgo in the Rumpenheim palace garden, ND per 1979 survey; the ND list shows two near-identical entries (50.1321, 8.8013 and 8.8019). Palace garden access not checked. Four slender Lombardy oaks stood there in 1979, only one remained as ND by 2015 (FR article). Not pursued: no age or measurement. 2026-10-22 verify pass (as frk_022) then write pass: NOT written, fails the findable rule (no confirmed pin, a palace park is not a small site, the CC0 Commons photos by Karsten Ratzke of 2020-10-28 'Rumpenheim, Schlossgarten, Ginko 1/2' are camera positions, trunk identity unproven). Verify notes: The city register via the Wikipedia ND list carries ginkgos in the Rumpenheim Schlossgarten as two listings, each one male and one female, at 50.1321 8.8013 and 50.1321 8.8019 (about 40 m apart). No age, girth or height in any fetched source. Two Commons CC0 photographs by Karsten Ratzke dated 2020-10-28, 'Rumpenheim, Schlossgarten, Ginko 1' (camera 50.132269 8.802292) and 'Ginko 2' (camera 50.132225 8.801444); camera positions are not tree fixes, so the pin stays approximate and trunk identity is unproven. Alive: 2020 photos only, flagged. Park context from the city's page: English landscape garden of the 1780s east of the former summer residence of the Landgraves of Hesse-Kassel, praised by Hirschfeld (1779-85) for its catalpas; the city says the tree stock is over-aged. Four slender Lombardy-type oaks stood here in 1979, only one remains as ND (FR 2015). Do not claim an age. Weak candidate. Sources: https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Offenbach_am_Main; https://www.offenbach.de/gaeste/sehenswert/parks/schlosspark.php; https://commons.wikimedia.org/wiki/File:Rumpenheim,_Schlossgarten,_Ginko_2.jpg"
-  },
-  {
-   "candidate": "Eibe, Geleitsstrasse 64, Offenbach (Q119289753)",
-   "coords": [
-    50.1017,
-    8.7571
-   ],
-   "lat": 50.1017,
-   "lng": 8.7571,
-   "reason": "2026-10-18. Yew about 10 m high; the Wikipedia ND list says 'auf Privatgrundstueck' (private property). Hard rule 10: not shipped unless visible from the street and a source says so. Kept as a lead only."
-  },
-  {
-   "candidate": "Eisenholzbaeume am Untermainkai (ND 026), re-check 2026-10-18",
-   "coords": [
-    50.105332,
-    8.671875
-   ],
-   "lat": 50.105332,
-   "lng": 8.671875,
-   "reason": "Third attempt: frankfurt.de 403, Amtsblatt PDF 403, Wayback 404 for both. No fetched figure, no photograph, register coordinate only. Germany is a covered country, so a new tree needs a photo or a confirmed pin: stays a lead. Public riverside promenade, on the 2025 register."
-  },
-  {
-   "candidate": "Sumpfzypressen im Zoo (ND 018), Maulbeere an der Liebfrauenschule (ND 017), Eibe in der Berger Strasse (ND 031)",
-   "coords": [
-    [
-     50.115693,
-     8.701195
-    ],
-    [
-     50.116736,
-     8.684772
-    ],
-    [
-     50.12481,
-     8.7058
-    ]
-   ],
-   "reason": "2026-10-18. Register rows only (no description text in the Wikipedia mirror), frankfurt.de 403, no Commons file found by search (Commons search for Eibe Berger Strasse and Sumpfzypresse Zoo returned nothing relevant). No photo and register-coordinate pins only, so under the covered-country rule they cannot ship. Maulbeere still on the school-yard question."
-  },
-  {
-   "candidate": "Weitere Frankfurter Naturdenkmale mit Fotos aber ohne Beschreibung: Speierling Graf-von-Stauffenberg-Allee (ND 001, Riedberg, Commons 'Speierling, 1, Riedberg, Frankfurt am Main.jpg'); Eiche Herrenwiese (003); Eiche Wolfsweide (005); Nussbaum am Niddaaltarm (009); Linde Bartholomaeusgasse (027, Zeilsheim); Speierlinge (006, 023)",
-   "coords": [
-    [
-     50.175377,
-     8.616509
-    ],
-    [
-     50.080801,
-     8.603985
-    ],
-    [
-     50.14761,
-     8.698791
-    ],
-    [
-     50.149725,
-     8.629383
-    ],
-    [
-     50.094045,
-     8.492553
-    ]
-   ],
-   "reason": "2026-10-18. All on the 2025 register with a coordinate and no description, no measurement. Only the Riedberg Speierling has a Commons image. Not looked at; no age or size basis, and the species-size rule gives no floor. Leave unless a source with figures turns up."
-  },
-  {
-   "candidate": "Enkheimer Alteichen, oldest single stem at the Nachtigallenweg (Bergen-Enkheim)",
-   "coords": [
-    50.15346,
-    8.78001
-   ],
-   "lat": 50.15346,
-   "lng": 8.78001,
-   "reason": "2026-10-19. Citizen survey 2016 (Kaltenborn, tape at 1.30 m): 78 oaks over 3 m girth; thickest single stem 4.46 m, about 35 m, germinated about 1670 by the girth x 0.8 formula (de.wikipedia 'Enkheimer Alteichen'). FNP 2016-10-25 (fetched) independently gives 4.46 m for the thickest of 51 oaks then found and says it stands 'tief im Wald'; a Wikipedia photo caption says 4.30 m, so figure disputed. Commons photos by Kaltolaf (CC BY-SA 4.0, 2016-06-12) have no geotag, so which trunk is unproven. Citizen survey, no official register, none of the 78 is a Naturdenkmal except the Berger Warte oak (frk_019). Not delivered: no individual pin, no photo that settles the trunk. Survey coordinates: Nachtigallenweg 50.15346,8.78001; Wagenweg 50.15656,8.78097 (five trees 250 to 280 years at 50 m spacing, a walkable row); Gaenseweiher 50.14729,8.79164; Dammweg/Postweg 50.14765,8.76919 (six trees, easy from the main path, Waldrastplatz). A GPS fix at the Nachtigallenweg tree would settle it."
-  },
-  {
-   "candidate": "Second oak at the Berger Warte, opposite side of the B521 from the Naturdenkmal oak (frk_019)",
-   "coords": [
-    50.1629,
-    8.7357
-   ],
-   "lat": 50.1629,
-   "lng": 8.7357,
-   "reason": "2026-10-19. de.wikipedia 'Enkheimer Alteichen': unmarked twin of near-identical habit across the road, girth 4.00 or 4.10 m, about 300 m north-west of the old Jewish cemetery Bergen. No coordinate, no photograph. Fold with frk_019 if a page is ever written."
-  },
-  {
-   "candidate": "Eiche am Brentano Bad, Roedelheim (Baumkunde 7325)",
-   "coords": [
-    50.126045,
-    8.620033
-   ],
-   "lat": 50.126045,
-   "lng": 8.620033,
-   "reason": "2026-10-19. Pedunculate oak, girth 6.12 m (2020), 22 m, about 300 years, 'vital' May 2024 but cut back hard; stands on the grounds of the Frankfurter Sportjugend, Baumkunde access 'Privatgelaende'. Hard rule 10: not shipped. Next pass: only if a source says the grounds are open."
-  },
-  {
-   "candidate": "Trauben-Eiche im Holzhausenpark, Nordend (Baumkunde 2174)",
-   "coords": [],
-   "lat": null,
-   "lng": null,
-   "reason": "2026-10-19. Sessile oak, girth about 4.5 m (an entry figure, not measured; date 2023-09-22), planted about 1850 per the Frankfurt Baumkataster as quoted by Baumkunde, public park. A modest 175-year tree: not remarkable enough for a page; kept as a lead. No coordinate read."
-  },
-  {
-   "candidate": "Eiche an der Wolfsweide (ND 005) and Eiche an der Herrenwiese (ND 003)",
-   "coords": [],
-   "lat": null,
-   "lng": null,
-   "reason": "2026-10-19. frankfurt.de pages exist (403 to fetchers; search snippet only, not a source): Wolfsweide Pedunculate oak 25 m, crown 23 m, girth 3.58 m, 15 m protected radius; Herrenwiese Pedunculate oak at the Muehlgraben, no size. Baumkunde has neither. Needs a Wayback copy of the pages (none found for the Speierling page, availability API empty)."
-  },
-  {
-   "candidate": "Speierling Graf-von-Stauffenberg-Allee: delisting question",
-   "coords": [
-    50.175377,
-    8.616509
-   ],
-   "lat": 50.175377,
-   "lng": 8.616509,
-   "reason": "2026-10-19, delivered as frk_018 flagged. Commons file description (2020) says it was a Naturdenkmal in January 2014 but no longer; the 2025 city list still carries ND 001. If a reader or the Amtsblatt shows delisting, the page must drop the protection claim, not the tree."
-  },
-  {
-   "candidate": "Eiche an der Wolfsweide (ND 005), Preungesheim, re-check 2026-10-20",
-   "coords": [
-    50.14761,
-    8.698791
-   ],
-   "lat": 50.14761,
-   "lng": 8.698791,
-   "reason": "2026-10-20 deepen pass. Register mirror (de.wikipedia ND list, wikitext) has coordinate only; city page figures (Quercus robur, 25 m, crown 23 m, girth 3.58 m, 15 m radius) reach us only as a search summary, frankfurt.de 403, Wayback availability empty. Commons geosearch 400 m: no tree photo. Register coordinate is approximate, no photo, covered country: stays a lead."
-  },
-  {
-   "candidate": "Nussbaum am Niddaaltarm (ND 009, Heddernheim) and Eiche an der Herrenwiese (ND 003, Schwanheim)",
-   "coords": [
-    [
-     50.149725,
-     8.629383
-    ],
-    [
-     50.080801,
-     8.603985
-    ]
-   ],
-   "reason": "2026-10-20. Commons geosearch (300 m) returns no tree photograph for either; register rows carry no description or size. No photo or exact pin in reach."
-  },
-  {
-   "candidate": "Eiche von Neu-Isenburg, Engwaad (Q119293200)",
-   "coords": [
-    50.05729,
-    8.71613
-   ],
-   "lat": 50.05729,
-   "lng": 8.71613,
-   "reason": "2026-10-20. Wikidata: state natural monument, height 20 m, photo Stiel-Eiche Engwaad Neu-Isenburg.jpg (Frank Murmann, CC BY 3.0, 2018) but no geotag, so the trunk is unproven. No girth or age found, single Wikidata source, stands in a wood. No photo or exact pin in reach."
-  }
- ],
- "blocked": [
-  {
-   "candidate": "Hängebuche im Louisa-Park (Weeping Beech, Park Louisa, Sachsenhausen; Q66371845)",
-   "coords": [
-    50.08695,
-    8.66806
-   ],
-   "lat": 50.08695,
-   "lng": 8.66806,
-   "reason": "DEAD. Frankfurter Rundschau 2019-08-09 ('Baeumesterben in Frankfurt'): the 89-year-old weeping beech in Park Louisa, 1.10 m trunk diameter, was dead from climate stress and had to be felled. Not on the 2025 register. Never ship; Wikidata still lists it as a remarkable tree."
-  }
- ]
+  "leads": [
+    {
+      "candidate": "Eisenholzbaeume am Untermainkai (Parrotia persica, Persian ironwood, multi-stemmed group)",
+      "coords": [
+        50.105332,
+        8.671875
+      ],
+      "reason": "On the official 2025 Naturdenkmal register (entry 026) and on public riverside promenade ground (Untermainkai, Innenstadt), so likely publishable. Blocked only on evidence: the frankfurt.de detail page 403s to curl and WebFetch (Cloudflare) and no wayback snapshot could be fetched this pass (archive.org rate-limited us with 429 after repeated calls). Height/crown figures reported by WebSearch's own summary (19-23m height, 19-22m crown) were never confirmed on a directly-fetched page per the no-search-summary-as-source rule, so they are NOT recorded as fact. Next pass: retry the wayback snapshot once the 429 cooldown has passed, or find a second source (monumentaltrees.com browser session, a Frankfurt tree blog, Wikimedia Commons file description).",
+      "lat": 50.105332,
+      "lng": 8.671875,
+      "position_basis": "recovered from the lead's own `coords` field (field)"
+    },
+    {
+      "candidate": "Schwarze Maulbeere an der Liebfrauenschule (Black mulberry, Morus nigra)",
+      "coords": [
+        50.116736,
+        8.684772
+      ],
+      "reason": "Facts look strong (WebSearch summary: ND entry 017, ~200+ years old, girth 3.31m, height 12m, planted ~1760, stands beside the grave of Goethe's mother Catharina Elisabeth Goethe who was buried there in 1808) but every source found describes it as standing 'auf dem Schulhof' (on the schoolyard) of the Liebfrauenschule. Hard rule 10's school test requires real evidence the grounds are genuinely open (a public path, a churchyard the school merely borders, stated weekend access) before a school-ground tree ships, and no source fetched this pass stated that. The Goethe grave connection suggests it may actually be in or beside the adjoining Liebfrauenkirche churchyard rather than a closed schoolyard proper, which would pass, but this needs a source that says so explicitly, not an inference. Do not ship without that evidence. All numeric claims here also came only from a WebSearch summary, never a directly-fetched page, so they need re-confirming too.",
+      "lat": 50.116736,
+      "lng": 8.684772,
+      "position_basis": "recovered from the lead's own `coords` field (field)"
+    },
+    {
+      "candidate": "Sumpfzypressen im Zoo Frankfurt (5 Bald Cypresses, Taxodium distichum, at the Grosser Weiher pond)",
+      "coords": [
+        50.115693,
+        8.701195
+      ],
+      "reason": "On the official register (entry 018), inside Frankfurt Zoo (paid entry, so access is fine per the paid-entry rule). Only the official register plus a WebSearch summary (not a fetched page) describe it so far; no independent second source or measurements confirmed yet. Likely verifiable next pass via photo-auge.de (found in search results: https://photo-auge.de/bedeutende-baeume/sumpfzypresse-im-frankfurter-zoo/, not yet fetched) or the Zoo's own site.",
+      "lat": 50.115693,
+      "lng": 8.701195,
+      "position_basis": "recovered from the lead's own `coords` field (field)"
+    },
+    {
+      "candidate": "Wilde Weinrebe im Botanischen Garten (wild grapevine, register entry 012)",
+      "coords": [
+        50.12748,
+        8.65751
+      ],
+      "reason": "On the official register, right next to the verified Dawn Redwood (frk_002) in the same Botanical Garden, but a vine is a questionable collectible point on its own (not scored, not researched this pass). Worth a look for a future pass but likely a minor addition to the Botanical Garden stop rather than its own entry.",
+      "lat": 50.12748,
+      "lng": 8.65751,
+      "position_basis": "recovered from the lead's own `coords` field (field)"
+    },
+    {
+      "candidate": "Ginkgo im Brentanopark, Roedelheim (register entry 021 / Wikidata Q15111648)",
+      "coords": [
+        50.123927,
+        8.613951
+      ],
+      "reason": "On the official 2025 register, has a Wikipedia short description (Beschreibung: Y) and a Wikidata entry with a Commons photo, so it is well set up for a fast verify next pass. Not pursued this pass because Roedelheim (~5km from centre) does not join the Westend cluster or any other cluster worked this pass; would need 1-2 more Roedelheim trees to justify its own walk, or could stand alone.",
+      "lat": 50.123927,
+      "lng": 8.613951,
+      "position_basis": "recovered from the lead's own `coords` field (field)"
+    },
+    {
+      "candidate": "Friedenseiche, Sossenheim (register entry 022) and Schwanheimer Alteichen (register entry 030) and Schlossplatzeiche, Hoechst (register entry 024)",
+      "coords": [
+        [
+          50.118534,
+          8.568319
+        ],
+        [
+          50.0823,
+          8.5898
+        ],
+        [
+          50.0987,
+          8.54776
+        ]
+      ],
+      "reason": "All three carry a filled Beschreibung on the Wikipedia register mirror (meaning a frankfurt.de detail page with real facts likely exists) and Schlossplatzeiche/Schwanheimer Alteichen are only about 3km apart in Frankfurt's western districts (Hoechst/Zeilsheim/Schwanheim), a plausible second cluster for a future pass. Not pursued this pass purely for time; each looked promising in the register table."
+    },
+    {
+      "candidate": "Offenbach am Main city natural monuments (Wikidata candidates, 5.3-8.8km from Frankfurt centre): Eiche/Bismarckstrasse, Eibe/Geleitsstrasse, Jahn-Eiche, Mark-Eiche, August-Reiss-Eiche, Zwei Ginkgobaeume von Rumpenheim",
+      "coords": null,
+      "reason": "Genuinely inside the ~30 minute transit day-trip boundary from Frankfurt (Offenbach am Main is the neighbouring city, S-Bahn-connected) and licence-clean (Wikidata CC0 plus Hesse single-natural-monument designation), but not researched this pass: six candidates spread across Offenbach's own downtown and its Rumpenheim district are not obviously a tight walkable cluster without checking their mutual distances first, and Frankfurt proper had enough supply to fill this pass's window. Good candidate for a dedicated Offenbach pass or a second Frankfurt-area pass once Frankfurt itself is deeper."
+    },
+    {
+      "candidate": "Bad Vilbel, Neu-Isenburg, Dreieich, Langen, Kelsterbach, Raunheim Wikidata candidates (9-20km from centre)",
+      "coords": null,
+      "reason": "These are separate towns around Frankfurt, mostly beyond a comfortable 30-minute transit day trip and each represented by only 1-3 scattered candidates with no internal clustering evident from coordinates alone. Not a Frankfurt city page concern; recorded here only so a future pass does not re-scout the same Wikidata file from zero. See data/research/frankfurt-wikidata-candidates.json for the full list, sorted by distance."
+    },
+    {
+      "candidate": "Senckenberg-Eibe (Senckenberg yew, Palmengarten, Wikidata Q2269925)",
+      "coords": [
+        50.1254,
+        8.65705
+      ],
+      "reason": "No photograph in reach: the only Commons file is a black-and-white 1907 scan (not eligible) and no geotagged modern photo within 150 m. Pin is a Wikidata coordinate, park-level (Palmengarten NE edge, south of a playground, north of a greenhouse per de.wikipedia). About 400 years old, transplanted 1907 over 3.5 km by steam rollers. Remarkable story, would ship with a photo or a Palmengarten sighting.",
+      "lat": 50.1254,
+      "lng": 8.65705
+    },
+    {
+      "candidate": "Eiche am Schulhof (Q125389967), Eiche am Jungfernstieg, Speierlinge am Rotenberg (Frankfurt north, Bad Vilbel area)",
+      "coords": null,
+      "reason": "Wikidata single natural monuments about 7 to 10 km north, not examined this pass; some are on school grounds (hard rule 10 school test). Not clustered with the Frankfurt city set."
+    },
+    {
+      "candidate": "Roteiche im Ostpark (register entry 025), Eibe in der Berger Strasse (031), Kastanie am Schaeferkoeppel (032, about 110 years, 5.30 m girth), Linden am Friedhof Nieder-Erlenbach (036)",
+      "coords": [
+        [
+          50.121767,
+          8.725317
+        ],
+        [
+          50.12481,
+          8.7058
+        ],
+        [
+          50.221751,
+          8.721743
+        ],
+        [
+          50.202269,
+          8.706683
+        ]
+      ],
+      "reason": "On the official register; Roteiche, Kastanie and Linden carry Commons photos but no city page text was read this pass (frankfurt.de pages are reachable through web.archive.org/web/2025/<url> with a browser user agent, which worked 2026-10-07). Eibe in der Berger Strasse has no photo and a register pin only. Next pass: read the Wayback city pages for the Eibe and the two Nieder-Erlenbach pages, check whether the cemetery lindens count as a small site."
+    },
+    {
+      "candidate": "Eisenholzbaeume am Untermainkai (entry 026) and Schwarze Maulbeere (entry 017)",
+      "coords": [
+        [
+          50.105332,
+          8.671875
+        ],
+        [
+          50.116736,
+          8.684772
+        ]
+      ],
+      "reason": "Still no photograph and the pin is the register coordinate only. Retry via Wayback: the frankfurt.de page for these is at the same path scheme (not in the 'Naturdenkmale' list of pages read here, so the slug may differ). Mulberry remains on the school ground question."
+    },
+    {
+      "candidate": "Roteiche im Ostpark (Red oak, Quercus rubra, register entry 025)",
+      "coords": [
+        50.121767,
+        8.725317
+      ],
+      "lat": 50.121767,
+      "lng": 8.725317,
+      "reason": "2026-10-13 deepen pass. Photo in hand: Commons 'Roteiche, 3, Ostend, Frankfurt am Main.jpg' (GeorgDerReisende, CC BY-SA 4.0, taken 2025-11-13, captioned red oak at the north-eastern end of the Ostpark), so findable and recent (alive Nov 2025). Register coordinate from de.wikipedia Naturdenkmale list (entry 025). Missing for RICH: any measurement (girth or height) and the per-tree frankfurt.de page, which 403s (WebFetch, curl) and has no Wayback snapshot (availability API empty for the Eisenholz page too). Park is public (Ostpark). Next pass: a source with the register figures (Amtsblatt Nr. 44/2025 PDF, or a browser session on frankfurt.de) turns this into a deliverable."
+    },
+    {
+      "candidate": "Eisenholzbaeume am Untermainkai (entry 026), re-check 2026-10-13",
+      "coords": [
+        50.105332,
+        8.671875
+      ],
+      "lat": 50.105332,
+      "lng": 8.671875,
+      "reason": "Re-tried: frankfurt.de page 403 again via WebFetch, no Wayback snapshot, Commons has no file for it (search 0 hits). Still no fetched measurement, no photo. WebSearch pointer only: city page lists height 19-23 m, crown 19-22 m, no age, 15 m protection zone; unconfirmed per search-summary rule. photo-auge.de Sumpfzypresse page for entry 018 is a photo album page with no text, no figures."
+    },
+    {
+      "candidate": "Eiche, Bismarckstrasse 193, Offenbach (Wikidata Q119289109)",
+      "coords": [
+        50.09864,
+        8.75427
+      ],
+      "lat": 50.09864,
+      "lng": 8.75427,
+      "reason": "2026-10-18 verify pass. Wikipedia ND list (citing the 1979 Offenbach naturalist survey): about 200 years old in 1979, 25 m, at Bismarckstrasse 193. A street address; no source says whether the tree is on a public verge or in a private garden, so access is unsettled (hard rule 10). Commons has a photo ('Eiche Bismarckstrasse 2.jpg'). Next pass: find a source naming the ground."
+    },
+    {
+      "candidate": "Jahn-Eiche, Offenbach (Q57241744, ND 11)",
+      "coords": [
+        50.09462,
+        8.76118
+      ],
+      "lat": 50.09462,
+      "lng": 8.76118,
+      "reason": "2026-10-18. Pedunculate oak planted winter 1911/12 for Turnvater Jahn, solitary tree at Gutenbergstrasse / Starkenburgring with a memorial stone, ND since July 1988 (Wikipedia ND list citing the 88th Bericht des Offenbacher Vereins fuer Naturkunde, 1988). Public street corner. Only about 115 years old, so a modest tree; lifecheck OLD (2018 Commons photo). Deliverable as flagged if Offenbach gets a pass of its own; August Reiss Oak (frk_017) is the Offenbach anchor."
+    },
+    {
+      "candidate": "Mark-Eiche, Offenbach (Q119289326)",
+      "coords": [
+        50.0847,
+        8.7766
+      ],
+      "lat": 50.0847,
+      "lng": 8.7766,
+      "reason": "2026-10-18. Six-stemmed pedunculate oak, about 23 m (1979 survey via Wikipedia ND list), about 170 m north of the Stadthalle, about 50 m west of the Hainbach. Commons photo exists. Not verified further (age unknown, no current source). Candidate for an Offenbach forest walk with frk_017 (about 1.5 km apart)."
+    },
+    {
+      "candidate": "Zwei Ginkgobaeume im Schlossgarten Rumpenheim, Offenbach (Q119289494)",
+      "coords": [
+        50.1321,
+        8.8013
+      ],
+      "lat": 50.1321,
+      "lng": 8.8013,
+      "reason": "2026-10-18. Male and female ginkgo in the Rumpenheim palace garden, ND per 1979 survey; the ND list shows two near-identical entries (50.1321, 8.8013 and 8.8019). Palace garden access not checked. Four slender Lombardy oaks stood there in 1979, only one remained as ND by 2015 (FR article). Not pursued: no age or measurement. 2026-10-22 verify pass (as frk_022) then write pass: NOT written, fails the findable rule (no confirmed pin, a palace park is not a small site, the CC0 Commons photos by Karsten Ratzke of 2020-10-28 'Rumpenheim, Schlossgarten, Ginko 1/2' are camera positions, trunk identity unproven). Verify notes: The city register via the Wikipedia ND list carries ginkgos in the Rumpenheim Schlossgarten as two listings, each one male and one female, at 50.1321 8.8013 and 50.1321 8.8019 (about 40 m apart). No age, girth or height in any fetched source. Two Commons CC0 photographs by Karsten Ratzke dated 2020-10-28, 'Rumpenheim, Schlossgarten, Ginko 1' (camera 50.132269 8.802292) and 'Ginko 2' (camera 50.132225 8.801444); camera positions are not tree fixes, so the pin stays approximate and trunk identity is unproven. Alive: 2020 photos only, flagged. Park context from the city's page: English landscape garden of the 1780s east of the former summer residence of the Landgraves of Hesse-Kassel, praised by Hirschfeld (1779-85) for its catalpas; the city says the tree stock is over-aged. Four slender Lombardy-type oaks stood here in 1979, only one remains as ND (FR 2015). Do not claim an age. Weak candidate. Sources: https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Offenbach_am_Main; https://www.offenbach.de/gaeste/sehenswert/parks/schlosspark.php; https://commons.wikimedia.org/wiki/File:Rumpenheim,_Schlossgarten,_Ginko_2.jpg"
+    },
+    {
+      "candidate": "Eibe, Geleitsstrasse 64, Offenbach (Q119289753)",
+      "coords": [
+        50.1017,
+        8.7571
+      ],
+      "lat": 50.1017,
+      "lng": 8.7571,
+      "reason": "2026-10-18. Yew about 10 m high; the Wikipedia ND list says 'auf Privatgrundstueck' (private property). Hard rule 10: not shipped unless visible from the street and a source says so. Kept as a lead only."
+    },
+    {
+      "candidate": "Eisenholzbaeume am Untermainkai (ND 026), re-check 2026-10-18",
+      "coords": [
+        50.105332,
+        8.671875
+      ],
+      "lat": 50.105332,
+      "lng": 8.671875,
+      "reason": "Third attempt: frankfurt.de 403, Amtsblatt PDF 403, Wayback 404 for both. No fetched figure, no photograph, register coordinate only. Germany is a covered country, so a new tree needs a photo or a confirmed pin: stays a lead. Public riverside promenade, on the 2025 register."
+    },
+    {
+      "candidate": "Sumpfzypressen im Zoo (ND 018), Maulbeere an der Liebfrauenschule (ND 017), Eibe in der Berger Strasse (ND 031)",
+      "coords": [
+        [
+          50.115693,
+          8.701195
+        ],
+        [
+          50.116736,
+          8.684772
+        ],
+        [
+          50.12481,
+          8.7058
+        ]
+      ],
+      "reason": "2026-10-18. Register rows only (no description text in the Wikipedia mirror), frankfurt.de 403, no Commons file found by search (Commons search for Eibe Berger Strasse and Sumpfzypresse Zoo returned nothing relevant). No photo and register-coordinate pins only, so under the covered-country rule they cannot ship. Maulbeere still on the school-yard question."
+    },
+    {
+      "candidate": "Weitere Frankfurter Naturdenkmale mit Fotos aber ohne Beschreibung: Speierling Graf-von-Stauffenberg-Allee (ND 001, Riedberg, Commons 'Speierling, 1, Riedberg, Frankfurt am Main.jpg'); Eiche Herrenwiese (003); Eiche Wolfsweide (005); Nussbaum am Niddaaltarm (009); Linde Bartholomaeusgasse (027, Zeilsheim); Speierlinge (006, 023)",
+      "coords": [
+        [
+          50.175377,
+          8.616509
+        ],
+        [
+          50.080801,
+          8.603985
+        ],
+        [
+          50.14761,
+          8.698791
+        ],
+        [
+          50.149725,
+          8.629383
+        ],
+        [
+          50.094045,
+          8.492553
+        ]
+      ],
+      "reason": "2026-10-18. All on the 2025 register with a coordinate and no description, no measurement. Only the Riedberg Speierling has a Commons image. Not looked at; no age or size basis, and the species-size rule gives no floor. Leave unless a source with figures turns up."
+    },
+    {
+      "candidate": "Enkheimer Alteichen, oldest single stem at the Nachtigallenweg (Bergen-Enkheim)",
+      "coords": [
+        50.15346,
+        8.78001
+      ],
+      "lat": 50.15346,
+      "lng": 8.78001,
+      "reason": "2026-10-19. Citizen survey 2016 (Kaltenborn, tape at 1.30 m): 78 oaks over 3 m girth; thickest single stem 4.46 m, about 35 m, germinated about 1670 by the girth x 0.8 formula (de.wikipedia 'Enkheimer Alteichen'). FNP 2016-10-25 (fetched) independently gives 4.46 m for the thickest of 51 oaks then found and says it stands 'tief im Wald'; a Wikipedia photo caption says 4.30 m, so figure disputed. Commons photos by Kaltolaf (CC BY-SA 4.0, 2016-06-12) have no geotag, so which trunk is unproven. Citizen survey, no official register, none of the 78 is a Naturdenkmal except the Berger Warte oak (frk_019). Not delivered: no individual pin, no photo that settles the trunk. Survey coordinates: Nachtigallenweg 50.15346,8.78001; Wagenweg 50.15656,8.78097 (five trees 250 to 280 years at 50 m spacing, a walkable row); Gaenseweiher 50.14729,8.79164; Dammweg/Postweg 50.14765,8.76919 (six trees, easy from the main path, Waldrastplatz). A GPS fix at the Nachtigallenweg tree would settle it."
+    },
+    {
+      "candidate": "Second oak at the Berger Warte, opposite side of the B521 from the Naturdenkmal oak (frk_019)",
+      "coords": [
+        50.1629,
+        8.7357
+      ],
+      "lat": 50.1629,
+      "lng": 8.7357,
+      "reason": "2026-10-19. de.wikipedia 'Enkheimer Alteichen': unmarked twin of near-identical habit across the road, girth 4.00 or 4.10 m, about 300 m north-west of the old Jewish cemetery Bergen. No coordinate, no photograph. Fold with frk_019 if a page is ever written."
+    },
+    {
+      "candidate": "Eiche am Brentano Bad, Roedelheim (Baumkunde 7325)",
+      "coords": [
+        50.126045,
+        8.620033
+      ],
+      "lat": 50.126045,
+      "lng": 8.620033,
+      "reason": "2026-10-19. Pedunculate oak, girth 6.12 m (2020), 22 m, about 300 years, 'vital' May 2024 but cut back hard; stands on the grounds of the Frankfurter Sportjugend, Baumkunde access 'Privatgelaende'. Hard rule 10: not shipped. Next pass: only if a source says the grounds are open."
+    },
+    {
+      "candidate": "Trauben-Eiche im Holzhausenpark, Nordend (Baumkunde 2174)",
+      "coords": [],
+      "lat": null,
+      "lng": null,
+      "reason": "2026-10-19. Sessile oak, girth about 4.5 m (an entry figure, not measured; date 2023-09-22), planted about 1850 per the Frankfurt Baumkataster as quoted by Baumkunde, public park. A modest 175-year tree: not remarkable enough for a page; kept as a lead. No coordinate read."
+    },
+    {
+      "candidate": "Eiche an der Wolfsweide (ND 005) and Eiche an der Herrenwiese (ND 003)",
+      "coords": [],
+      "lat": null,
+      "lng": null,
+      "reason": "2026-10-19. frankfurt.de pages exist (403 to fetchers; search snippet only, not a source): Wolfsweide Pedunculate oak 25 m, crown 23 m, girth 3.58 m, 15 m protected radius; Herrenwiese Pedunculate oak at the Muehlgraben, no size. Baumkunde has neither. Needs a Wayback copy of the pages (none found for the Speierling page, availability API empty)."
+    },
+    {
+      "candidate": "Speierling Graf-von-Stauffenberg-Allee: delisting question",
+      "coords": [
+        50.175377,
+        8.616509
+      ],
+      "lat": 50.175377,
+      "lng": 8.616509,
+      "reason": "2026-10-19, delivered as frk_018 flagged. Commons file description (2020) says it was a Naturdenkmal in January 2014 but no longer; the 2025 city list still carries ND 001. If a reader or the Amtsblatt shows delisting, the page must drop the protection claim, not the tree."
+    },
+    {
+      "candidate": "Eiche an der Wolfsweide (ND 005), Preungesheim, re-check 2026-10-20",
+      "coords": [
+        50.14761,
+        8.698791
+      ],
+      "lat": 50.14761,
+      "lng": 8.698791,
+      "reason": "2026-10-20 deepen pass. Register mirror (de.wikipedia ND list, wikitext) has coordinate only; city page figures (Quercus robur, 25 m, crown 23 m, girth 3.58 m, 15 m radius) reach us only as a search summary, frankfurt.de 403, Wayback availability empty. Commons geosearch 400 m: no tree photo. Register coordinate is approximate, no photo, covered country: stays a lead."
+    },
+    {
+      "candidate": "Nussbaum am Niddaaltarm (ND 009, Heddernheim) and Eiche an der Herrenwiese (ND 003, Schwanheim)",
+      "coords": [
+        [
+          50.149725,
+          8.629383
+        ],
+        [
+          50.080801,
+          8.603985
+        ]
+      ],
+      "reason": "2026-10-20. Commons geosearch (300 m) returns no tree photograph for either; register rows carry no description or size. No photo or exact pin in reach."
+    },
+    {
+      "candidate": "Eiche von Neu-Isenburg, Engwaad (Q119293200)",
+      "coords": [
+        50.05729,
+        8.71613
+      ],
+      "lat": 50.05729,
+      "lng": 8.71613,
+      "reason": "2026-10-20. Wikidata: state natural monument, height 20 m, photo Stiel-Eiche Engwaad Neu-Isenburg.jpg (Frank Murmann, CC BY 3.0, 2018) but no geotag, so the trunk is unproven. No girth or age found, single Wikidata source, stands in a wood. No photo or exact pin in reach."
+    },
+    {
+      "candidate": "Rosskastanie im Hauptfriedhof, Nordend-West (flurbaum.de Starke Baeume)",
+      "coords": [
+        50.1329,
+        8.6856
+      ],
+      "lat": 50.1329,
+      "lng": 8.6856,
+      "reason": "2026-10-22 verify pass. Common horse chestnut, girth 480 cm at 130 cm, about 35 m, crown about 28 m, planted 1893 per the Frankfurt Baumkataster as quoted by flurbaum.de (Stand Oktober 2024), 90 m south-east of Schopenhauer's grave. Access 'zeitlich beschraenkt (oeffentlich)' (cemetery hours). Single private source quoting the city cadastre, no register entry, frankfurt.de 403, no Baumkunde entry found. A good chestnut but not remarkable enough alone and the pin is a cemetery coordinate. Lead for a pass with a second source or a photo."
+    },
+    {
+      "candidate": "Gemeine Esche, Heddernheimer Friedhof (flurbaum.de)",
+      "coords": [
+        50.1538,
+        8.6373
+      ],
+      "lat": 50.1538,
+      "lng": 8.6373,
+      "reason": "2026-10-22. Ash, girth 444 cm at 130 cm, about 31 m, about 185 years (germinated c. 1840), Stand August 2024. Cemetery, access time-limited. Single private source, ash dieback risk makes alive status unstable. Lead only."
+    },
+    {
+      "candidate": "Stieleiche auf der Schwanheimer Duene (flurbaum.de)",
+      "coords": [
+        50.0865,
+        8.5589
+      ],
+      "lat": 50.0865,
+      "lng": 8.5589,
+      "reason": "2026-10-22. Pedunculate oak about 200 years (germinated c. 1820) on the inland dune in the NSG Schwanheimer Duene, visible from the boardwalk only (no girth measured). Stand Juli 2024. Single source, no girth, no photo: no remarkable measurable fact. Lead."
+    },
+    {
+      "candidate": "Rosskastanie Untergasse 5 and Platane Zum gruenen Baum (Mainstrasse 54), Kelsterbach (Q133805552, Q133805527)",
+      "coords": [
+        50.0685,
+        8.5308
+      ],
+      "lat": 50.0685,
+      "lng": 8.5308,
+      "reason": "2026-10-22. Kreis Gross-Gerau Naturdenkmale (ND 041, ND 022) per the de.wikipedia Kelsterbach list: rows carry species and coordinates only, no age, girth or height, and the plane stands at a restaurant (private grounds, access unknown). Kelsterbach is a separate town. Not shipped."
+    },
+    {
+      "candidate": "Bad Vilbel Naturdenkmaeler (Eiche am Seckbacher Busch 440.142 is frk_019; Friedhof plane and chestnut 440.177; Juedischer Friedhof chestnut 440.178; Eiche am Schulhof 440.232; Eiche am Jungfernstieg 440.256; Speierling and Mispel am Rotenberg 440.143/144)",
+      "coords": [
+        50.18549,
+        8.75123
+      ],
+      "lat": 50.18549,
+      "lng": 8.75123,
+      "reason": "2026-10-22. de.wikipedia 'Liste der Naturdenkmaeler in Bad Vilbel' (status 1 Jan 2014, wikitext read): descriptions give protection reasons only ('ortsbildpraegende Altbaeume', 'maechtiger Altbaum'), no age, girth or height. Jewish cemetery usually locked, Schulhof oak is a former prison/school ground. Several Speierlinge were delisted 2016 (small, not rooted, fallen). Separate town 12 km away; nothing worth the walk is documented. Not shipped."
+    },
+    {
+      "candidate": "Libanonzeder, Schlosspark Bad Homburg (flurbaum.de, 650 cm)",
+      "coords": [
+        50.22753,
+        8.6109
+      ],
+      "lat": 50.22753,
+      "lng": 8.6109,
+      "reason": "2026-10-22. Already published under Bad Homburg (data/cities/bad-homburg.json); not a Frankfurt tree. Do not re-research."
+    }
+  ],
+  "blocked": [
+    {
+      "candidate": "Hängebuche im Louisa-Park (Weeping Beech, Park Louisa, Sachsenhausen; Q66371845)",
+      "coords": [
+        50.08695,
+        8.66806
+      ],
+      "lat": 50.08695,
+      "lng": 8.66806,
+      "reason": "DEAD. Frankfurter Rundschau 2019-08-09 ('Baeumesterben in Frankfurt'): the 89-year-old weeping beech in Park Louisa, 1.10 m trunk diameter, was dead from climate stress and had to be felled. Not on the 2025 register. Never ship; Wikidata still lists it as a remarkable tree."
+    }
+  ]
 }
