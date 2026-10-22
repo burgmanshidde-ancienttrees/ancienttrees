@@ -42,6 +42,11 @@ Madrid's tourist office answered the 10-20 tourism mail by pointing at the city'
 - **Held:** Häradseken (no public path known on Gotland farmland), Mogadouro (no written source), Hamerenne (private front garden).
 - **Waste, said plainly:** the four Texas trees were verified and written twice. A night run took this LOG's "next lane: Texas" an hour before my claim, and my claim was named `photo-batch-2`, so neither side could see the other. A claim should name the place or list it covers. Cost of the pass: verify 226k, write 175k, for 10 trees, about 40k a tree.
 
+## 2026-10-22 (session with Hidde): Hong Kong OVT photo sweep, low yield
+
+- We hold 698 of the 713 OVT/SWT register trees (data/registers/hongkong-ovt.json) and publish 21. A Commons geosearch (40 m) on the 50 biggest unpublished ones found open-licence files near 33, but they are street-photography series ("SS2", "Px3") of roads, shops and statues; the five most promising, viewed, held no whole-tree photograph (aerial roots close-up, a statue, a street with the banyan in the background, privet flowers). Treat Commons geosearch on Hong Kong OVT trees as exhausted; script and results in out/tmp/hk_ovt_sweep.py and out/tmp/hk-ovt-photos.json (not committed).
+- Better routes, both waiting on Hidde: a reader's photo ask in r/HongKong in his voice (as in r/Lisbon), and a first mail to the maker of HKU's Digital Arboretum (digarb.hku.hk), suggested by a commenter on his r/Lisbon post. Kowloon Park alone holds seven big unpublished OVT figs, a walk if photos turn up.
+
 ## 2026-10-22 (session with Hidde): 481 colon reveals out of the indexed stories
 
 - **Product:** every colon reveal in the 1,183 stories Google indexes is rewritten (481 sentences, 218 place files): a full stop or a comma and a plain clause, every fact and number unchanged (the apply script refused any sentence whose numbers changed), every story still 150 to 250 words. Translations, now out of Google, keep their older wording.
