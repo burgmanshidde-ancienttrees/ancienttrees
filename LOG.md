@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 restart attempt: nothing shipped, no claims standing
+
+No claims standing. READY has 3 leads (2 Oxford, 1 Madrid): the Oxford ones are approximate pins with no photograph (one a young oak, one a 2008 sighting needing a life check), so `ADD_NEEDS_PHOTO` and the supply pause keep them out. Staged cities need a verify pass but own supply is paused; Stirling was already retried. Nothing useful to dispatch under the rules.
+
 ## 2026-10-22 late attempt: nothing shipped, Stirling retried
 
 No standing claims. READY is Oxford 2 and Madrid 1, both without an approved photograph, and own supply is paused, so no write pass. Enrichment: nothing to do. BACKUP register retry, Stirling: Wikidata within 25 km holds only the Wallace Oak (Torwood, Falkirk), already a lead in glasgow.json. Verdict stays stalled, note updated. Honest result: nothing useful left on the ladder under recovery mode.
