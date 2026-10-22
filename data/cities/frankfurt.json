@@ -2,7 +2,7 @@
   "city": "Frankfurt",
   "country": "Germany",
   "status": "needs_curation",
-  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the twenty trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: a ginkgo from about 1750 in Rödelheim, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach an oak planted around 1590.",
+  "intro": "Frankfurt bent a subway line rather than lose a lime tree, and in 1907 it hauled a 300-year-old yew across town behind two steam rollers. Five of the twenty-one trees here stand within a few hundred metres of each other in the Westend, around the Palmengarten and Gruneburgpark, which makes that the walk. The rest are out in the districts: a ginkgo from about 1750 in Rödelheim, a peace oak of 1871 in Sossenheim, thirty wood-pasture oaks in the Schwanheimer Wald, three village trees in Nieder-Erlenbach, and over the line in Offenbach, oaks planted around 1590 and in 1911.",
   "meta_description": "Frankfurt's Naturdenkmal trees: the lime the U-Bahn curves around, a yew moved by steam roller in 1907, and an oak planted around 1590 in Offenbach.",
   "question_answer": "Frankfurt's oldest tree is probably the Senckenberg Yew in the Palmengarten, roughly 400 years old: it was already about 300 when two steam rollers moved it across the city in 1907, and local tradition has it planted before the Thirty Years War. The oldest on the city's register with a dated record is the Eschersheimer Linde, a large-leaved lime from the end of the 17th century beside Lindenbaum U-Bahn station. The Schwanheim oaks rival both, a group the city dates to up to 500 years without dating any single trunk.",
   "question_meta": "The Senckenberg Yew in the Palmengarten, roughly 400 years old and moved across Frankfurt by steam roller in 1907, is probably the city's oldest tree.",
@@ -14,11 +14,11 @@
     },
     {
       "q": "Can I see several of Frankfurt's old trees in one walk?",
-      "a": "Yes. Five of the twenty are in the Westend within a few hundred metres of each other: two beeches and the Senckenberg Yew in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all five. In Nieder-Erlenbach in the far north, the cemetery limes and the oak on An der Bleiche are about 500 metres apart."
+      "a": "Yes. Five of the twenty-one are in the Westend within a few hundred metres of each other: two beeches and the Senckenberg Yew in the Palmengarten, the dawn redwood in the Botanical Garden next door, and the eight-stemmed lime in Gruneburgpark. Bockenheimer Warte is the station for all five. In Nieder-Erlenbach in the far north, the cemetery limes and the oak on An der Bleiche are about 500 metres apart."
     },
     {
       "q": "Are Frankfurt's old trees free to visit?",
-      "a": "Fifteen of the twenty cost nothing and have no gate: the trees on public streets and squares, in Gruneburgpark, the Ostpark, the Bockenheimer Anlage, the Botanical Garden, the Schwanheimer Wald, the Nieder-Erlenbach cemetery and the Offenbach city forest. The two beeches and the Senckenberg Yew are inside the Palmengarten, which sells an admission ticket. The Goethe Ginkgo is free, but the Petrihaus grounds in Rödelheim open only for events and on the last Sunday afternoon of each month from spring to autumn. The oak on An der Bleiche stands on church grounds and is seen from the street."
+      "a": "Sixteen of the twenty-one cost nothing and have no gate: the trees on public streets and squares, in Gruneburgpark, the Ostpark, the Bockenheimer Anlage, the Botanical Garden, the Schwanheimer Wald, the Nieder-Erlenbach cemetery, the Offenbach city forest, and a street corner in Offenbach. The two beeches and the Senckenberg Yew are inside the Palmengarten, which sells an admission ticket. The Goethe Ginkgo is free, but the Petrihaus grounds in Rödelheim open only for events and on the last Sunday afternoon of each month from spring to autumn. The oak on An der Bleiche stands on church grounds and is seen from the street."
     },
     {
       "q": "Why does the U-Bahn curve at Lindenbaum?",
@@ -873,6 +873,47 @@
         "license": "",
         "attribution": "",
         "status": "missing"
+      }
+    },
+    {
+      "id": "frk_021",
+      "name": "The Jahn Oak of Offenbach",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "planted 1911/12 (about 115 years)",
+      "age_min": 110,
+      "age_max": 120,
+      "location": {
+        "address": "Corner of Gutenbergstrasse and Starkenburgring, Offenbach am Main",
+        "latitude": 50.09469,
+        "longitude": 8.76115,
+        "neighbourhood": "Offenbach"
+      },
+      "verified_sources": [
+        "https://www.offenbach.de/gaeste/stadtgeschichte/geschichte-offenbach/1900-1932/jahn-eiche.php",
+        "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Offenbach_am_Main",
+        "https://commons.wikimedia.org/wiki/File:Offenbacher_Jahn-Eiche_by_DaB._5.jpg"
+      ],
+      "official_register": {
+        "name": "Offenbach am Main Naturdenkmal no. 11 (Wikipedia mirror of the city list, citing the 88th Bericht des Offenbacher Vereins fuer Naturkunde, 1988)",
+        "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Offenbach_am_Main"
+      },
+      "access": "Free; open street corner at a road junction, tree and memorial stones on public ground per the city's own page.",
+      "transport": "Offenbach am Main, S-Bahn from Frankfurt Hbf to central Offenbach (journey time and walk from the stop not measured).",
+      "location_precision": "confirmed",
+      "curation_status": "flagged",
+      "verify_notes": "Planted by Offenbach gymnasts in 1911 (city page by Lothar R. Braun) for the 100th anniversary of the first German Turnplatz at the Hasenheide, Berlin, 1811; a low stone at the trunk is inscribed 'Zur Erinnerung an die Eroeffnung des ersten deutschen Turnplatzes in der Hasenheide in Berlin 1811 - 19. Juni - 1911'. Wikipedia ND list: planted winter 1911/12, Naturdenkmal since July 1988. The planting followed a gymnastics show on the Bieberer Berg after which all Offenbach and Buergel clubs merged into the Offenbacher Turnerschaft. A second stone, a pyramid boulder brought from the Taunus, was unveiled at the oak on 10 Aug 1928 (Jahn's 150th birthday) for 211 club members killed in WWI; its metal plaque is gone, scars remain. City page: wide-reaching, well-formed crown marking the junction. Pin: six geotagged CC0 photos of the oak by DaB. (2018-10-11) lie 8 to 22 m from 50.09469, 8.76115; register coordinate 50.09462, 8.76118 agrees. Alive: last dated photo 2018 (lifecheck OLD), city page current; flagged for thin recent confirmation. Modest age, historically significant. No girth or height in any fetched source. Photo in hand: Commons 'Offenbacher Jahn-Eiche by DaB. 5.jpg' (CC0). Offenbach is a separate city beside Frankfurt, like frk_017. WRITE PASS 2026-10-22: photo viewed (960px): whole tree in leaf, daylight and colour, trunk centred, Commons description 'Totale von Norden, 2018', geotag 50.094567, 8.761211 about 13 m from the pin, category Jahn-Eiche (Offenbach): approved. photo_light.py could not run (no PIL here).",
+      "story": "This oak was planted for the hundredth birthday of a sports ground in Berlin. In 1811 the first German Turnplatz, an open-air gymnastics ground, opened in the Hasenheide, and a century later the gymnasts of Offenbach marked the date with a tree. A low stone at the trunk still says so: in memory of the opening of the first German Turnplatz in the Hasenheide in Berlin, 1811, 19 June, 1911.\n\nThe planting followed a gymnastics display on the Bieberer Berg, after which every club in Offenbach and Bürgel merged into the Offenbacher Turnerschaft. The register dates it to the winter of 1911 to 1912, so it is about 115 years old.\n\nThen the oak took on a heavier job. On 10 August 1928, the 150th birthday of the gymnastics pioneer Friedrich Ludwig Jahn, whose name it carries, a second stone was unveiled beside it: a pyramid-shaped boulder brought from the Taunus, for 211 club members killed in the First World War. Its metal plaque has since gone. The scars where it was fixed have not.\n\nThe tree is no giant: a wide, well-formed crown marking a road junction, made natural monument number 11 in July 1988. Nobody has published its girth or height, and the newest dated photograph we know of is from 2018. If you have put a tape round it, tell us.\n\nIt stands on the corner of Gutenbergstraße and Starkenburgring in Offenbach, free and on public ground, an S-Bahn ride from Frankfurt.",
+      "how_to_recognise": "You can recognise it by the two stones at its foot: a low inscribed stone at the trunk and a pyramid-shaped boulder with the scars of a lost plaque. It stands on the corner of Gutenbergstraße and Starkenburgring.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Offenbacher_Jahn-Eiche_by_DaB._5.jpg",
+        "license": "CC0",
+        "attribution": "DaB., via Wikimedia Commons",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-22",
+        "width": 4320,
+        "height": 3240,
+        "taken_month": 10
       }
     }
   ],

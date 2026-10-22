@@ -14,6 +14,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-22 night run (01:38 UTC window): Potsdam +3 trees
 
 - **Live:** Potsdam goes from 15 to 18 trees: the pollarded linden of Fahrland, the Babelsberger Strasse oak and the Nattwerder lindens (register-only, no photographs yet, confirmed pins). German overlay and counts updated. Preflight 0 problems. 7-day visits line not printed by prepare.py this run.
+- **Live:** Frankfurt 20 to 21: the Jahn Oak in Offenbach (confirmed pin, CC0 photograph looked at and approved, so Google can show it). Rumpenheim ginkgos stay a lead (approximate pin, not findable). frankfurt.de returned 403 for three more candidates (Untermainkai ironwoods, zoo bald cypresses, Liebfrauenschule mulberry). Portland refused to claim: already over its target.
 - **Wall:** Rothenburg ob der Tauber verified empty (near register trees already live or blocked; Bettwar and Insingen lindens stay leads), walled 48h.
 - **Health:** the Smoke test BLOCKER is the push-trigger skip (1s, by its condition), Build and deploy succeeded; answered with health.py --answer. No reader submissions waiting.
 
