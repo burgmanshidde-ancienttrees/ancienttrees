@@ -18,6 +18,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Held:** Häradseken (no public path known on Gotland farmland), Mogadouro (no written source), Hamerenne (private front garden).
 - **Waste, said plainly:** the four Texas trees were verified and written twice. A night run took this LOG's "next lane: Texas" an hour before my claim, and my claim was named `photo-batch-2`, so neither side could see the other. A claim should name the place or list it covers. Cost of the pass: verify 226k, write 175k, for 10 trees, about 40k a tree.
 
+## 2026-10-22 (session with Hidde): readers' words on the page; iOS test green again; Baarn line refused
+
+- **Product:** the Montsouris plane (par_034, English and French) and the Hammundeseiche (fwd_001) now quote their readers instead of paraphrasing them. New `scripts/reader_words.py` lists every stranger's note on a live tree that no story quotes yet (0 left today); sightings_publish.py prints it after publishing. Rule in CLAUDE.md, Reader input.
+- **Fixed:** iOS CI failed on one unit test still looking for the pre-copy-sweep wording ("Allowing photos"); the test reads the new sentence. App unchanged.
+- **Mail:** mailcheck refuses "I live in Baarn" without what he does in the same sentence, and "minutes from Amsterdam" (Hidde: "when will you remember that this sentence is weird"). drafts/group-messages.md (untracked, names people) now opens with a status table: Fred Breglia and Samuel Mitchell were mailed on 10-16, the Ancient Tree Forum is not mailed again; only the four Reddit mod messages are open. Hidde's Reddit account is new, so he comments for a week before the first post.
+
 ## 2026-10-22 (session with Hidde): the strict cut, 367 more pages out of Google
 
 - **Product (Hidde: "ik ga liever te ver nu met meer kans op herstel en dat we dan langzaam weer toe laten"; "alleen uit Google, Bing houdt ze"):** every species (197), park (49), collection (19), state (10) and country page, the place pages of cities off the frozen roster, and translations there now carry the googlebot noindex. Bing keeps them via sitemap-bing.xml. 367 paths, `STRICT_CUT` in scripts/thin_pages.py (group 5 in data/noindex.md). Kept: the roster, anything a digest's top pages showed before 09-28, and every photographed tree page in English. Google's index goes from about 2,450 urls to about 2,080, nearly all photographed trees plus roster places.

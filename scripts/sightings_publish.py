@@ -665,6 +665,14 @@ def main():
     if published:
         print("Now: python3 scripts/preflight.py, then commit data/cities, site/public/photos, "
               "data/photo-manifest.json, data/sighting-queue.json and data/sightings-processed.json together.")
+        # Their words go on the page too (Hidde, 2026-10-22: "zonde om die
+        # niet te gebruiken"): the notes these readers wrote that no story
+        # quotes yet, printed here so the session that published the photo
+        # writes the quote in the same commit.
+        import subprocess
+        for tid in sorted({e["tree_id"] for e in published}):
+            subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "reader_words.py"),
+                            "--tree", tid])
     return 0
 
 
