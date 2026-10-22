@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session: three outreach batches on Hidde's desk for 10-23
+
+Press round 4 (the ten regional desks left from 10-20, autumn hook where the page has it), a source batch of ten people-run sites our pages cite, and tourism batch 2 (Porto, The Hague, Ede, Cagliari). All drafted, mailcheck and dry runs clean, every link 200, previews in drafts/batch-*-2026-10-23-preview.md (private, pushed to the private store). Nothing sent; his word goes into approved_word first. Inbox read: nothing waits for a reply.
+
 ## 2026-10-22 r/Lisbon thread read: replies drafted, Gigantes Verdes scouted
 
 - Hidde's r/Lisbon post (16 upvotes, 2.3K views after 8h). New since the last pass: a commenter posted a photo of the Santa Iria olive (lis_036, no photo yet); others pointed to Gigantes Verdes, a volunteer big-tree map. Replies for him to post are in drafts/reddit-lisbon.md (photo permission ask first, then the tracking question, the cork oak, a grandparent memory to quote on lis_003 with consent).
