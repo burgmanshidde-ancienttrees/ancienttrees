@@ -15,6 +15,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 Hidde asked how current the open list is. Item 19 ("I have seen this one" behaves differently on web) is gone from PRODUCT_TODO.md: that control no longer exists, collecting is by photograph on web and app since 2026-10-10/14 (Collect this tree, camera then seal, one sheet). Item 17 (Hide My Email second account) now carries a count: 9 of 36 accounts use an Apple relay address, 1 of them has saves; no duplicate proven. Checked afterwards: Apple sign-in is already live on the web (2026-09-17) and the web route answers, so Apple on both surfaces is one account; the only unclosable case is Google on the web plus hidden Apple in the app, which needs a merge flow. Noted on the item. Nothing in the product changed.
 
+## 2026-10-22 night run (14:49 window): nothing publishable, pace cap
+
+Rungs 1 and 2 clear (no reader photos, health green). Tried to merge the three Texas places; preflight refused on the pace cap (75 new trees in 24 hours against 60) and the missing us-states entries, so I moved them out of data/cities again (now in out/tmp/, copies still in data/research/texas-places/). Photo recheck sweeps on Munich and Paris found 6 new Munich candidates; the only one fetched (Luitpoldpark, muc_027) shows a stand of bare trees, not this one, so nothing approved. enrich.py says nothing to do. No trees added; this window did nothing useful beyond confirming the cap.
+
 ## 2026-10-22 night run (retry attempt): pace cap holds 12 trees
 
 Eleven new city files an earlier attempt left uncommitted (bregenz, college-station, coppell, goliad, hagerum, hochosterwitz, leonstein, ogi, sakurai, shikokuchuo, winterswijk; 12 trees, all with approved photographs) failed preflight: 84 new trees in 24 hours against the cap of 60, and three Texas places (college-station, coppell, goliad) missing from data/us-states.json. Moved to data/research/held-pace-2026-10-22/ to restore tomorrow: add the three states, move the files back, run preflight. Nothing else was writable: 3 READY leads (two Oxford, one Madrid) wait on photos, and every claim was already free.
