@@ -92,7 +92,8 @@ const graph = [
     "@type": "TouristAttraction",
     name: x.name,
     description: x.story.slice(0, 300),
-    isAccessibleForFree: (tree.access ?? "").toLowerCase().includes("free"),
+    // Same rule as the English page (2026-10-22): paid_entry first.
+    isAccessibleForFree: !tree.paid_entry && !/^paid/i.test(tree.access ?? "") && (tree.access ?? "").toLowerCase().includes("free"),
     geo: { "@type": "GeoCoordinates", latitude: loc.latitude, longitude: loc.longitude },
   },
   breadcrumbSchema(crumbItems, canonical),

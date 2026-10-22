@@ -175,7 +175,9 @@ const graph = [
     "@type": "TouristAttraction",
     name: tree.name,
     description: (tree.story ?? "").slice(0, 300),
-    isAccessibleForFree: (tree.access ?? "").toLowerCase().includes("free"),
+    // paid_entry first: "under 6 free" in a paid tree's access line made 118
+    // paid trees tell Google they were free (found 2026-10-22).
+    isAccessibleForFree: !tree.paid_entry && !/^paid/i.test(tree.access ?? "") && (tree.access ?? "").toLowerCase().includes("free"),
     ...(photo?.url ? { image: metaImageUrls(photo.url) } : {}),
     // url, address and containedInPlace added 2026-08-18. They do not buy a
     // rich snippet, which TouristAttraction rarely gets: they tell a search
