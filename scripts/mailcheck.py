@@ -106,10 +106,14 @@ CHECKS = [
     # from Amsterdam" on its own "makes no sense", and then "when will you
     # remember that this sentence is weird". Where he lives only works joined
     # to what he does, in the one sentence: drafts/HIS_VOICE.md, "His standard
-    # intro". Older drafts still carry the bare form.
+    # intro". Older drafts still carry the bare form. Same day, later: "to
+    # stacey the 30 min from amsterdam is relevant, its not relevant for dutch
+    # peeps": the English intro carries it, a Dutch mail never does.
     ("WHERE HE LIVES WITHOUT WHAT HE DOES (use his standard intro)", [
         r"\b(?:[Ll]ive|[Ww]oon) in Baarn\b(?![^.]*(?:Ancient Trees|work on|werk aan))",
-        r"minutes from Amsterdam", r"minuten (?:van|onder) Amsterdam",
+    ]),
+    ("AMSTERDAM IN A DUTCH MAIL (only foreigners need it)", [
+        r"minuten (?:van|onder|vanaf) Amsterdam", r"(?:vlak ?bij|onder) Amsterdam",
     ]),
     # Hidde, 2026-08-15: "remarkable = opmerkelijk in het nederlands.
     # ongelofelijke bomen nooit gebruiken is raar." The English word is

@@ -26,7 +26,7 @@ If they corrected us or gave us a tree, change the site first and reply "it is o
 4. One ask, last, plain, fitted to the person: a tree they know (where exactly it stands, a photo if they walk past), an introduction, a link only in a later reply after their help was used. Drop the ask when they have already given or it was asked earlier in the thread, When they say they are busy or cannot help much: no task for them, but his form instead: "I completely understand", the ways anyone could help as options, "either way, thanks" (HIS_VOICE.md, 2026-10-22).
 5. Out. No summary, no promise of what happens next.
 
-Language: theirs. Capitals as any decent letter. "Sie" stays "Sie". Baarn is "zo'n 30 minuten onder Amsterdam". Sign "Hidde" only on a draft he will approve; automated mails are signed Ancient Trees.
+Language: theirs. Capitals as any decent letter. "Sie" stays "Sie". Abroad, Baarn is "in the Netherlands, about 30 minutes from Amsterdam"; to Dutch people just Baarn. Sign "Hidde" only on a draft he will approve; automated mails are signed Ancient Trees.
 
 ## 4. Never
 

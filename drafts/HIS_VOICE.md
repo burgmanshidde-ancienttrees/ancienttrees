@@ -296,9 +296,9 @@ So when somebody says they are busy but leaves an opening: first say you underst
 When a mail has to say who we are (a first mail, or somebody who asked), reuse the intro sent to Peter Raggers on 2026-10-21. Hidde: "the intro you gave to Peter yesterday was better, please remember that one and reuse." My "I'm Hidde, I live in Baarn, about 30 minutes from Amsterdam" on its own "makes no sense": where he lives only works joined to what he does ("and I work on Ancient Trees").
 
 - NL (as sent to Peter): "Ik ben Hidde, ik woon in Baarn en werk aan Ancient Trees, een website en app met bijzondere oude bomen die de moeite waard zijn om naartoe te lopen. Het begon in Lissabon, waar ik tijdens werkreizen door de parken liep en me verwonderde over de oude jacaranda's en vijgenbomen. Ik ben geen bomenexpert, maar wel een grote fan, en ik wil het voor anderen makkelijker maken om zulke bomen te zien."
-- EN: "I'm Hidde, I live in Baarn in the Netherlands and work on Ancient Trees, a website and app with remarkable old trees worth walking to. It started in Lisbon, where I walked through the parks on work trips and wondered at the old jacarandas and fig trees. I'm not a tree expert, but a big fan, and I want to make it easier for others to see trees like these."
+- EN: "I'm Hidde, I live in Baarn in the Netherlands, about 30 minutes from Amsterdam, and work on Ancient Trees, a website and app with remarkable old trees worth walking to. It started in Lisbon, where I walked through the parks on work trips and wondered at the old jacarandas and fig trees. I'm not a tree expert, but a big fan, and I want to make it easier for others to see trees like these."
 
-Outside the Netherlands add "in the Netherlands" after Baarn. The intro already says "worth walking to", so the standard line below is for when they ask which trees, not stacked on top of the intro.
+Outside the Netherlands add "in the Netherlands, about 30 minutes from Amsterdam" after Baarn (Hidde, 2026-10-22, on the reply to Stacey in Glasgow: "the 30 min from amsterdam is relevant, its not relevant for dutch peeps"). A Dutch mail never mentions Amsterdam: Baarn is enough. mailcheck's AMSTERDAM IN A DUTCH MAIL. The intro already says "worth walking to", so the standard line below is for when they ask which trees, not stacked on top of the intro.
 
 ## His standard ask to an expert: judge the list (Hidde, 2026-10-22)
 
@@ -328,4 +328,4 @@ The line works because it is a definition anyone can test by standing in front o
 
 ## Calibration 2026-10-15: a journalist who asked who you are (Wibren, Omrop Fryslan)
 
-I added a Leeuwarden line (34 trees live) and the app link to his own short answer. His verdict: "dat van leeuwarden weet hij al, dat van die app hoeft er ook niet in." A journalist asking about the person gets the person: answer his questions, give the phone number, stop. Do not add what he already knows, and the app line is not automatic in a press reply. Also: Baarn is "zo'n 30 minuten onder Amsterdam", not "vlak bij".
+I added a Leeuwarden line (34 trees live) and the app link to his own short answer. His verdict: "dat van leeuwarden weet hij al, dat van die app hoeft er ook niet in." A journalist asking about the person gets the person: answer his questions, give the phone number, stop. Do not add what he already knows, and the app line is not automatic in a press reply. (Superseded 2026-10-22: a Dutch mail mentions no Amsterdam at all; see "His standard intro".)
