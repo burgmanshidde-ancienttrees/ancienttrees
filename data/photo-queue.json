@@ -3,7 +3,7 @@
   "ams_001": {
    "city": "Amsterdam",
    "name": "The Heimanseik",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -534,14 +534,14 @@
   "arn_002": {
    "city": "Arnhem",
    "name": "The Dalweg Oak",
-   "checked": "2026-08-22",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "arn_003": {
    "city": "Arnhem",
    "name": "The Huissensedijk Plane",
-   "checked": "2026-08-22",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -597,19 +597,9 @@
   "arn_004": {
    "city": "Arnhem",
    "name": "The Poplar of Lauwersgrachtpark",
-   "checked": "2026-08-22",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
-    {
-     "title": "File:'Pluto' door Ignatius van Logteren, Lauwersgrachtpark, Arnhem.jpg",
-     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/%27Pluto%27_door_Ignatius_van_Logteren%2C_Lauwersgrachtpark%2C_Arnhem.jpg/960px-%27Pluto%27_door_Ignatius_van_Logteren%2C_Lauwersgrachtpark%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-     "url": "https://commons.wikimedia.org/wiki/File:%27Pluto%27_door_Ignatius_van_Logteren,_Lauwersgrachtpark,_Arnhem.jpg",
-     "licence": "CC BY-SA 4.0",
-     "author": "FakirNL",
-     "lat": null,
-     "lng": null,
-     "cats": "Category:2022 in Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Sculptures Category:Netherlands photographs taken on 2022-04-28 Category:Self-published work Category:Statues at the Jansbuitensingel by Ignatius van Logteren Category:Statues of Pluto (mythology) Category:Taken with Google Pixel 4a"
-    },
     {
      "title": "File:'Venus' (Lauwersgrachtpark) door Ignatius van Logteren, Lauwersgrachtpark, Arnhem.jpg",
      "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/%27Venus%27_%28Lauwersgrachtpark%29_door_Ignatius_van_Logteren%2C_Lauwersgrachtpark%2C_Arnhem.jpg/960px-%27Venus%27_%28Lauwersgrachtpark%29_door_Ignatius_van_Logteren%2C_Lauwersgrachtpark%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -633,6 +623,16 @@
      "cats": "Category:2010 in Arnhem Category:Art Nouveau architecture in Arnhem Category:CC-Zero Category:De Gruyter Category:Houses in Arnhem Category:Images from Wiki Loves Monuments 2010 Category:Netherlands photographs taken on 2010-09-28 Category:Photographs by Henk van Gaal Category:Rijksmonumenten in Arnhem Category:Rijksmonumenten with known IDs Category:Roggestraat (Arnhem) Category:Self-published work Category:Shops in Arnhem Category:Taken with Sony DSC-HX5V",
      "judged": "reject",
      "verdict": "Shopping-street corner building (Musiskwartier entrance) with pedestrians. No tree in the frame."
+    },
+    {
+     "title": "File:'Pluto' door Ignatius van Logteren, Lauwersgrachtpark, Arnhem.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/%27Pluto%27_door_Ignatius_van_Logteren%2C_Lauwersgrachtpark%2C_Arnhem.jpg/960px-%27Pluto%27_door_Ignatius_van_Logteren%2C_Lauwersgrachtpark%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:%27Pluto%27_door_Ignatius_van_Logteren,_Lauwersgrachtpark,_Arnhem.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2022 in Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Sculptures Category:Gelderland photographs taken on 2022-04-28 Category:Self-published work Category:Statues at the Jansbuitensingel by Ignatius van Logteren Category:Statues of Pluto (mythology) Category:Taken with Google Pixel 4a"
     }
    ]
   },
@@ -9352,7 +9352,9 @@
      "author": "Sailko",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work",
+     "judged": "reject",
+     "verdict": "park scene with sculptures; a cedar limb crosses the frame, tree not the subject"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 07.jpg",
@@ -9392,7 +9394,9 @@
      "author": "Sailko",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a lone redwood-type conifer, neither the cedar nor the stone pine"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 14.jpg",
@@ -9412,7 +9416,9 @@
      "author": "Sailko",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work",
+     "judged": "reject",
+     "verdict": "wide garden view, several trees, none the subject"
     }
    ]
   },
@@ -18389,7 +18395,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.219136,
      "lng": 5.256107,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gardens and parks of Kasteel Groeneveld (Baarn) Category:Information boards in the Netherlands Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gardens and parks of Kasteel Groeneveld (Baarn) Category:Information boards in the Netherlands Category:Self-published work",
+     "judged": "reject",
+     "verdict": "information sign is the subject, against the light"
     },
     {
      "title": "File:Baarn - Groeneveld - Landgoed Groeneveld - View towards Kasteel Groeneveld.jpg",
@@ -18399,7 +18407,9 @@
      "author": "Txllxt TxllxT",
      "lat": 52.219709,
      "lng": 5.255904,
-     "cats": "Category:CC-BY-SA-4.0 Category:Gardens and parks of Kasteel Groeneveld (Baarn) Category:Netherlands photographs taken on 2021-04-26 Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Gardens and parks of Kasteel Groeneveld (Baarn) Category:Netherlands photographs taken on 2021-04-26 Category:Self-published work",
+     "judged": "reject",
+     "verdict": "estate avenue view, no copper beech as subject"
     },
     {
      "title": "File:Baarn - Groeneveld - Landgoed Groeneveld 8.jpg",
@@ -21555,7 +21565,7 @@
   "ams_018": {
    "city": "Amsterdam",
    "name": "The Westkant Plane of Wertheimpark",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -25898,7 +25908,9 @@
      "author": "Sailko",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work",
+     "judged": "reject",
+     "verdict": "park scene with sculptures; a cedar limb crosses the frame, tree not the subject"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 07.jpg",
@@ -25938,7 +25950,9 @@
      "author": "Sailko",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a lone redwood-type conifer, neither the cedar nor the stone pine"
     },
     {
      "title": "File:Firenze, giardini del bobolino, 14.jpg",
@@ -25958,7 +25972,9 @@
      "author": "Sailko",
      "lat": null,
      "lng": null,
-     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work"
+     "cats": "Category:All media supported by Wikimedia CH Category:Bobolino Category:CC-BY-3.0 Category:Images by Sailko - Supported by Wikimedia CH Category:Photographs by User:Sailko Category:Self-published work",
+     "judged": "reject",
+     "verdict": "fountain basin and yuccas, no stone pine as subject"
     },
     {
      "title": "File:Via del bobolino 01.JPG",
@@ -25968,7 +25984,9 @@
      "author": "Sailko",
      "lat": null,
      "lng": null,
-     "cats": "Category:Bobolino Category:CC-BY-SA-3.0 Category:Photographs by User:Sailko Category:Self-published work Category:Streets in Florence Category:Taken with Canon PowerShot G12"
+     "cats": "Category:Bobolino Category:CC-BY-SA-3.0 Category:Photographs by User:Sailko Category:Self-published work Category:Streets in Florence Category:Taken with Canon PowerShot G12",
+     "judged": "reject",
+     "verdict": "street wall with vegetation, no stone pine"
     }
    ]
   },
@@ -30213,7 +30231,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46",
+     "judged": "reject",
+     "verdict": "distant autumn park landscape, no single tree the subject"
     }
    ]
   },
@@ -30349,7 +30369,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46",
+     "judged": "reject",
+     "verdict": "distant autumn park landscape, no single tree the subject"
     },
     {
      "title": "File:Luitpoldpark Muenchen-33.jpg",
@@ -30359,7 +30381,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Bavaria with known IDs Category:Luitpoldpark (München) Category:Photographs by User:Rufus46",
+     "judged": "reject",
+     "verdict": "Luitpoldpark autumn lawn scene, no single tree the subject, no Amur cork tree identifiable"
     }
    ]
   },
@@ -32194,7 +32218,7 @@
   "ali_001": {
    "city": "Alicante",
    "name": "Ficus Gabriel Miró II",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -32214,7 +32238,7 @@
   "ali_002": {
    "city": "Alicante",
    "name": "Ficus Gabriel Miró IV",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -32266,7 +32290,7 @@
   "ali_004": {
    "city": "Alicante",
    "name": "Ficus Gabriel Miró III",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -32529,7 +32553,7 @@
   "ali_007": {
    "city": "Alicante",
    "name": "Ficus of Parque de Canalejas (west)",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -32648,14 +32672,14 @@
   "ali_008": {
    "city": "Alicante",
    "name": "The Ficus de Benalúa",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "ali_009": {
    "city": "Alicante",
    "name": "The Fig of Plaza de Navarro Rodrigo",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -32980,7 +33004,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-27.476355,153.0292971667"
+     "obs_location": "-27.476355,153.0292971667",
+     "judged": "reject",
+     "verdict": "Indian banyan (prop roots, plaque Ficus benghalensis), not a Moreton Bay fig; geotag 75 m off, it is bne_004"
     },
     {
      "title": "iNat obs 263547839 (Ficus benghalensis)",
@@ -32989,7 +33015,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-27.476355,153.0292971667"
+     "obs_location": "-27.476355,153.0292971667",
+     "judged": "reject",
+     "verdict": "plaque for the banyan fig, not this Moreton Bay fig"
     }
    ]
   },
@@ -33094,7 +33122,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-27.476355,153.0292971667"
+     "obs_location": "-27.476355,153.0292971667",
+     "judged": "approve",
+     "verdict": "banyan fills frame, fused aerial-root pillars and leathery ovate leaves, Ficus benghalensis plaque at the trunk; iNat geotag 15 m from pin (4 m accuracy); daylight, colour, centre crop holds"
     },
     {
      "title": "iNat obs 263547839 (Ficus benghalensis)",
@@ -33103,7 +33133,9 @@
      "licence": "CC BY",
      "author": "(c) Andrew Sebastian, some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "-27.476355,153.0292971667"
+     "obs_location": "-27.476355,153.0292971667",
+     "judged": "reject",
+     "verdict": "close-up of the Banyan Fig plaque, no tree"
     }
    ]
   },
@@ -34502,7 +34534,7 @@
   "ali_010": {
    "city": "Alicante",
    "name": "The Ficus of Avenida de Salamanca",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -38282,7 +38314,7 @@
   "ams_023": {
    "city": "Amsterdam",
    "name": "The Van Loon Copper Beech",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -38420,7 +38452,7 @@
   "ams_024": {
    "city": "Amsterdam",
    "name": "The Rijksmuseum Poplar",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -39451,7 +39483,7 @@
   "ams_028": {
    "city": "Amsterdam",
    "name": "The Weteringplantsoen Plane",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -39483,7 +39515,7 @@
   "ams_030": {
    "city": "Amsterdam",
    "name": "The Falckplantsoen Pagoda Tree",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -39965,7 +39997,7 @@
   "ams_032": {
    "city": "Amsterdam",
    "name": "The Last Elm of Stationsplein",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -43582,7 +43614,7 @@
   "arn_005": {
    "city": "Arnhem",
    "name": "The Scarlet Oak of Velperplein",
-   "checked": "2026-08-22",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -43692,6 +43724,16 @@
      "cats": "Category:1961 in Arnhem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Photographs by G.Th. Delemarre Category:Velperplein, Arnhem",
      "judged": "reject",
      "verdict": "Archival black-and-white RCE street photograph of shopfronts on the Velperplein. B&W archival imagery never ships, and there is no tree in it anyway."
+    },
+    {
+     "title": "File:Sculptuur-oorlogsmonument 'VLUCHT' door Ruud-Jan Kokke, Apeldoornsestraat-Velperplein, Arnhem.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke%2C_Apeldoornsestraat-Velperplein%2C_Arnhem.jpg/960px-Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke%2C_Apeldoornsestraat-Velperplein%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke,_Apeldoornsestraat-Velperplein,_Arnhem.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2022 in Arnhem Category:2022 sculptures in the Netherlands Category:Apeldoornseweg, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Sculptures Category:FoP-Netherlands Category:Ruud-Jan Kokke Category:Sculptures in Arnhem Category:Sculptures of letters and words in the Netherlands Category:Self-published work Category:Velperplein, Arnhem Category:World War II memorials in Arnhem"
     }
    ]
   },
@@ -43954,7 +43996,7 @@
   "arn_007": {
    "city": "Arnhem",
    "name": "The Oriental Plane of Velperplein",
-   "checked": "2026-08-22",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -44064,13 +44106,23 @@
      "cats": "Category:1961 in Arnhem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Photographs by G.Th. Delemarre Category:Velperplein, Arnhem",
      "judged": "reject",
      "verdict": "A 1961 Rijksdienst survey photograph of the facade of Velperplein 19-20. An archival building record."
+    },
+    {
+     "title": "File:Sculptuur-oorlogsmonument 'VLUCHT' door Ruud-Jan Kokke, Apeldoornsestraat-Velperplein, Arnhem.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke%2C_Apeldoornsestraat-Velperplein%2C_Arnhem.jpg/960px-Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke%2C_Apeldoornsestraat-Velperplein%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke,_Apeldoornsestraat-Velperplein,_Arnhem.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2022 in Arnhem Category:2022 sculptures in the Netherlands Category:Apeldoornseweg, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Sculptures Category:FoP-Netherlands Category:Ruud-Jan Kokke Category:Sculptures in Arnhem Category:Sculptures of letters and words in the Netherlands Category:Self-published work Category:Velperplein, Arnhem Category:World War II memorials in Arnhem"
     }
    ]
   },
   "arn_008": {
    "city": "Arnhem",
    "name": "The Black Walnut of Velperplein",
-   "checked": "2026-08-22",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -44180,13 +44232,23 @@
      "cats": "Category:1961 in Arnhem Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Images with coordinates from RCE Category:Photographs by G.Th. Delemarre Category:Velperplein, Arnhem",
      "judged": "reject",
      "verdict": "A 1961 Rijksdienst survey photograph of a facade. Archival building record."
+    },
+    {
+     "title": "File:Sculptuur-oorlogsmonument 'VLUCHT' door Ruud-Jan Kokke, Apeldoornsestraat-Velperplein, Arnhem.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke%2C_Apeldoornsestraat-Velperplein%2C_Arnhem.jpg/960px-Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke%2C_Apeldoornsestraat-Velperplein%2C_Arnhem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Sculptuur-oorlogsmonument_%27VLUCHT%27_door_Ruud-Jan_Kokke,_Apeldoornsestraat-Velperplein,_Arnhem.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "FakirNL",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:2022 in Arnhem Category:2022 sculptures in the Netherlands Category:Apeldoornseweg, Arnhem Category:CC-BY-SA-4.0 Category:Files by User:FakirNL/Arnhem/Sculptures Category:FoP-Netherlands Category:Ruud-Jan Kokke Category:Sculptures in Arnhem Category:Sculptures of letters and words in the Netherlands Category:Self-published work Category:Velperplein, Arnhem Category:World War II memorials in Arnhem"
     }
    ]
   },
   "arn_009": {
    "city": "Arnhem",
    "name": "The Sessile Oak of Musispark",
-   "checked": "2026-08-22",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -45335,7 +45397,9 @@
      "author": "Rufus46",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Hartmannshofer Bach Category:Landschaftsschutzgebiet Kapuzinerhölzl und Hartmannshofer Wald Category:Photographs by User:Rufus46 Category:Protected areas with known WDPA-ID"
+     "cats": "Category:CC-BY-SA-3.0 Category:Hartmannshofer Bach Category:Landschaftsschutzgebiet Kapuzinerhölzl und Hartmannshofer Wald Category:Photographs by User:Rufus46 Category:Protected areas with known WDPA-ID",
+     "judged": "reject",
+     "verdict": "a brook and footbridge, no red oak as subject"
     }
    ]
   },
@@ -46427,7 +46491,7 @@
   "ali_011": {
    "city": "Alicante",
    "name": "The Fig of Paseito de Ramiro",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -46613,7 +46677,7 @@
   "ali_012": {
    "city": "Alicante",
    "name": "Ficus of Parque de Canalejas (north)",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -46697,7 +46761,7 @@
   "ali_014": {
    "city": "Alicante",
    "name": "The Ficus of Plaza de la Pipa",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -46712,14 +46776,14 @@
   "ams_034": {
    "city": "Amsterdam",
    "name": "The Jakoba Mulder Tulip Tree",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "ams_035": {
    "city": "Amsterdam",
    "name": "The Old Lady of the Forest",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -46835,14 +46899,14 @@
   "ams_039": {
    "city": "Amsterdam",
    "name": "The Beatrix Lime",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "ams_040": {
    "city": "Amsterdam",
    "name": "The Catalpa of the Cleopatralaan",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -63547,7 +63611,7 @@
   "ali_015": {
    "city": "Alicante",
    "name": "The Araucaria of Plaza de Calvo Sotelo",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -66255,7 +66319,9 @@
      "author": "Hyppolyte de Saint-Rambert",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Milvus migrans in Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) Category:Self-published work",
+     "judged": "reject",
+     "verdict": "a black kite on a wire, no tree"
     },
     {
      "title": "File:Gionnosu Ryokuchi Park (Gionnosucho, Kagoshima) VLux5 hdsr mm18.jpg",
@@ -71473,7 +71539,7 @@
   "ali_016": {
    "city": "Alicante",
    "name": "The Ficus of Plaza de Calvo Sotelo",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -71602,14 +71668,14 @@
   "arn_010": {
    "city": "Arnhem",
    "name": "The Lorentz Monument Oak",
-   "checked": "2026-09-05",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "arn_011": {
    "city": "Arnhem",
    "name": "The Watermill Oak",
-   "checked": "2026-09-05",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -71665,14 +71731,14 @@
   "arn_012": {
    "city": "Arnhem",
    "name": "The North Meadow Oak",
-   "checked": "2026-09-05",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "arn_013": {
    "city": "Arnhem",
    "name": "The Zijpendaalseweg Oak",
-   "checked": "2026-09-05",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -71788,7 +71854,7 @@
   "arn_014": {
    "city": "Arnhem",
    "name": "The Sonsbeek Yew",
-   "checked": "2026-09-05",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -72947,7 +73013,9 @@
      "author": "Tulp8",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-4.0 Category:Cantonspark Category:Sculptures in Baarn Category:Self-published work"
+     "cats": "Category:CC-BY-SA-4.0 Category:Cantonspark Category:Sculptures in Baarn Category:Self-published work",
+     "judged": "reject",
+     "verdict": "stone fountain is the subject, no tulip tree"
     },
     {
      "title": "File:Baarn Cantonspark Wintertuin.JPG",
@@ -72957,7 +73025,9 @@
      "author": "Atsje",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570 Category:Wintertuin, Cantonspark"
+     "cats": "Category:CC-BY-SA-3.0 Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570 Category:Wintertuin, Cantonspark",
+     "judged": "reject",
+     "verdict": "winter garden glasshouse, no tulip tree as subject"
     },
     {
      "title": "File:Baarn Cantonspark Wintertuin Tuinmanshuisje.JPG",
@@ -72967,7 +73037,9 @@
      "author": "Atsje",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cantonspark Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cantonspark Category:Self-published work Category:Taken with Olympus FE-360 / X-875 / C-570",
+     "judged": "reject",
+     "verdict": "a gardener's house, no tree as subject"
     },
     {
      "title": "File:Baarn Cantonspark colonnade.JPG",
@@ -85907,7 +85979,9 @@
      "author": "A. J. van der Wal",
      "lat": null,
      "lng": null,
-     "cats": "Category:1966 in Utrecht (city) Category:Bartholomeïgasthuis Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Geertebolwerk Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat Category:Photographs by Ton van der Wal Category:Rijksmonumenten with known IDs"
+     "cats": "Category:1966 in Utrecht (city) Category:Bartholomeïgasthuis Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Geertebolwerk Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat Category:Photographs by Ton van der Wal Category:Rijksmonumenten with known IDs",
+     "judged": "reject",
+     "verdict": "black-and-white archival street view, no tree"
     },
     {
      "title": "File:Van af Geertebolwerk - Utrecht - 20236982 - RCE.jpg",
@@ -85917,7 +85991,9 @@
      "author": "A. J. van der Wal",
      "lat": null,
      "lng": null,
-     "cats": "Category:1966 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat"
+     "cats": "Category:1966 in Utrecht (city) Category:Buildings with addresses Category:CC-BY-SA-4.0 Category:Images from the Rijksdienst voor het Cultureel Erfgoed Category:Lange Smeestraat",
+     "judged": "reject",
+     "verdict": "black-and-white archival street facades, no tree"
     },
     {
      "title": "File:Bartholomeus Seumeren.jpg",
@@ -90081,7 +90157,9 @@
      "licence": "CC BY",
      "author": "(c) H. v.d. B., some rights reserved (CC BY)",
      "source": "inaturalist",
-     "obs_location": "51.8184192932,5.8706152439"
+     "obs_location": "51.8184192932,5.8706152439",
+     "judged": "reject",
+     "verdict": "leaf close-up, crown and trunk not readable"
     }
    ]
   },
@@ -107720,7 +107798,7 @@
   "ali_017": {
    "city": "Alicante",
    "name": "The Araucaria of Plaza de Santa Teresa",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -107750,28 +107828,28 @@
   "ali_018": {
    "city": "Alicante",
    "name": "The Araucaria of Plaza de Galicia",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "ali_019": {
    "city": "Alicante",
    "name": "The Centenary Olives of Plaza de Galicia",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "ali_020": {
    "city": "Alicante",
    "name": "The Centenary Elms of Panteón de Quijano",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "ali_021": {
    "city": "Alicante",
    "name": "The Silky Oaks of Passeig de Canalejas",
-   "checked": "2026-10-19",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -113058,7 +113136,9 @@
      "author": "Panek",
      "lat": 52.20633056,
      "lng": 20.99349722,
-     "cats": "Category:Betula in April Category:Birch avenue in Rakowiec allotments Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR"
+     "cats": "Category:Betula in April Category:Birch avenue in Rakowiec allotments Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR",
+     "judged": "reject",
+     "verdict": "an avenue of birches, not a silver lime; geotag about 190 m off"
     },
     {
      "title": "File:Wawa pomnik przyr 348 1.JPG",
@@ -113080,7 +113160,9 @@
      "author": "Panek",
      "lat": 52.20633889,
      "lng": 20.99324722,
-     "cats": "Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Monumental dawn redwood in allotment 491 (Warsaw-Rakowiec) Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR"
+     "cats": "Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Monumental dawn redwood in allotment 491 (Warsaw-Rakowiec) Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR",
+     "judged": "reject",
+     "verdict": "a deciduous conifer (dawn redwood or larch), not a silver lime; geotag about 190 m off"
     },
     {
      "title": "File:Wawa pomnik przyr 350 3.JPG",
@@ -116065,7 +116147,9 @@
      "author": "Panek",
      "lat": 52.20633056,
      "lng": 20.99349722,
-     "cats": "Category:Betula in April Category:Birch avenue in Rakowiec allotments Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR"
+     "cats": "Category:Betula in April Category:Birch avenue in Rakowiec allotments Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR",
+     "judged": "reject",
+     "verdict": "an avenue of birches, not a silver lime; geotag about 190 m off"
     },
     {
      "title": "File:Wawa pomnik przyr 344 1.JPG",
@@ -116111,7 +116195,9 @@
      "author": "Panek",
      "lat": 52.20633889,
      "lng": 20.99324722,
-     "cats": "Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Monumental dawn redwood in allotment 491 (Warsaw-Rakowiec) Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR"
+     "cats": "Category:CC-BY-SA-3.0-PL Category:Files with coordinates missing SDC location of creation Category:Images by User:Panek/Mokotów Category:Images from Wiki Loves Earth 2015 Category:Images from Wiki Loves Earth 2015 in Poland Category:Images from Wiki Loves Earth missing SDC depicts Category:Images from Wiki Loves Earth missing SDC location of creation Category:Monumental dawn redwood in allotment 491 (Warsaw-Rakowiec) Category:Poland photographs taken on 2015-04-24 Category:Self-published work Category:Spring in Warsaw Category:Taken with Fujifilm FinePix HS50EXR",
+     "judged": "reject",
+     "verdict": "a deciduous conifer (dawn redwood or larch), not a silver lime; geotag about 190 m off"
     },
     {
      "title": "File:Wawa pomnik przyr 350 3.JPG",
@@ -128926,7 +129012,9 @@
      "author": "Gugerell",
      "lat": 48.24331033,
      "lng": 16.35755633,
-     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Wertheimsteinpark"
+     "cats": "Category:CC-Zero Category:Files with coordinates missing SDC location of creation Category:Images by Peter Gugerell, Vienna Category:Self-published work Category:Wertheimsteinpark",
+     "judged": "reject",
+     "verdict": "park path with benches and people, no single tree the subject"
     }
    ]
   },
@@ -131135,7 +131223,9 @@
      "author": "Z thomas",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:July 2025 Dresden photographs Category:Naturdenkmal Stieleichen Hüblerstrasse Dresden Category:Photos by Z thomas Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:July 2025 Dresden photographs Category:Naturdenkmal Stieleichen Hüblerstrasse Dresden Category:Photos by Z thomas Category:Self-published work",
+     "judged": "reject",
+     "verdict": "stump of the felled twin oak, not the surviving tree"
     },
     {
      "title": "File:Stieleiche Hüblerstraße Dresden gefällt 2025-07-13 5.jpg",
@@ -131157,7 +131247,9 @@
      "author": "Z thomas",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:July 2025 Dresden photographs Category:Naturdenkmal Stieleichen Hüblerstrasse Dresden Category:Photos by Z thomas Category:Self-published work"
+     "cats": "Category:CC-BY-4.0 Category:Files with coordinates missing SDC location of creation Category:July 2025 Dresden photographs Category:Naturdenkmal Stieleichen Hüblerstrasse Dresden Category:Photos by Z thomas Category:Self-published work",
+     "judged": "reject",
+     "verdict": "stump of the felled twin oak in the street, not the surviving tree"
     },
     {
      "title": "File:Stieleiche hüblerstraße Dresden 20250527.jpg",
@@ -133640,7 +133732,9 @@
      "author": "Rainer Halama",
      "lat": 52.04138265,
      "lng": 7.47496868,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:Rainer Halama/WLM2021 Category:Files with coordinates missing SDC location of creation (52° N, 7° E) Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021, DE-NW Category:Images from Wiki Loves Monuments 2021 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Taken with Sony ILCE-6000 Category:Uploaded with LrMediaWiki Category:Wegekapelle Krüsellinde"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:Rainer Halama/WLM2021 Category:Files with coordinates missing SDC location of creation (52° N, 7° E) Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021, DE-NW Category:Images from Wiki Loves Monuments 2021 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Taken with Sony ILCE-6000 Category:Uploaded with LrMediaWiki Category:Wegekapelle Krüsellinde",
+     "judged": "reject",
+     "verdict": "the wayside chapel with only a young tree beside it; no large lime in frame"
     },
     {
      "title": "File:Altenberge-Wegekapelle Krüsellinde DSC7755.jpg",
@@ -133650,7 +133744,9 @@
      "author": "Rainer Halama",
      "lat": 52.0413711,
      "lng": 7.47497405,
-     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:Rainer Halama/WLM2021 Category:Files with coordinates missing SDC location of creation (52° N, 7° E) Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021, DE-NW Category:Images from Wiki Loves Monuments 2021 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Taken with Sony ILCE-6000 Category:Uploaded with LrMediaWiki Category:Wegekapelle Krüsellinde"
+     "cats": "Category:CC-BY-SA-4.0 Category:Files by User:Rainer Halama/WLM2021 Category:Files with coordinates missing SDC location of creation (52° N, 7° E) Category:Images from Wiki Loves Monuments 2021 Category:Images from Wiki Loves Monuments 2021, DE-NW Category:Images from Wiki Loves Monuments 2021 in Germany Category:Images from Wiki Loves Monuments missing SDC depicts Category:Images from Wiki Loves Monuments missing SDC location of creation Category:Taken with Sony ILCE-6000 Category:Uploaded with LrMediaWiki Category:Wegekapelle Krüsellinde",
+     "judged": "reject",
+     "verdict": "close-up of the wayside chapel, no tree"
     }
    ]
   },

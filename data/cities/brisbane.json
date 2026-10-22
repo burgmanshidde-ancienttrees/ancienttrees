@@ -127,10 +127,14 @@
       "access": "Free. City Botanic Gardens is open 24 hours, 7 days a week; the cafe and information kiosk keep their own hours.",
       "transport": "Short walk from Central Station (about 10 minutes) or the QUT Gardens Point ferry terminal (about 5 minutes)",
       "photo": {
-        "url": null,
-        "license": null,
-        "attribution": null,
-        "status": "missing"
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/473476603/medium.jpg",
+        "license": "CC BY",
+        "attribution": "Andrew Sebastian, via iNaturalist",
+        "status": "approved",
+        "approved_by": "viewing pass",
+        "approved_on": "2026-10-22",
+        "width": 500,
+        "height": 375
       },
       "location_precision": "confirmed",
       "curation_status": "ai_generated",
