@@ -10,6 +10,7 @@
 // coordinate, photo, licence and walk stays in the one canonical city file,
 // so a pin corrected in English is corrected everywhere.
 import fs from "node:fs";
+import { isNoindexed } from "./noindex";
 import path from "node:path";
 import { DATA } from "./data-dir";
 import { BASE_URL } from "./schema";
@@ -262,6 +263,10 @@ export interface UIStrings {
   pinApproximate: string;
   discoverMore: string;
   sourcesHeading: string;
+  /** Under the Sources heading. Since 2026-10-22 it also says HOW the story
+   *  was made (written with AI, corrected by readers), the disclosure Google's
+   *  content guidance asks for where a reader would wonder; the about page
+   *  says the same. */
   sourcesLine: string;
   /** Link under the sources to /about (2026-10-01). */
   howWeCheck: string;
@@ -644,7 +649,7 @@ const EN: UIStrings = {
   pinApproximate: "Approximate",
   discoverMore: "Discover more",
   sourcesHeading: "Sources",
-  sourcesLine: "Where the facts on this page come from.",
+  sourcesLine: "Where the facts on this page come from. The story was written with AI from these sources, and readers who know the tree correct it.",
     howWeCheck: "How we choose and check trees",
   takeMeThere: "Take me there",
   showOnMap: "Show on the map",
@@ -934,7 +939,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinApproximate: "Aproximada",
     discoverMore: "Descubre más",
     sourcesHeading: "Fuentes",
-    sourcesLine: "De dónde salen los datos de esta página.",
+    sourcesLine: "De dónde salen los datos de esta página. La historia se escribió con IA a partir de estas fuentes, y los lectores que conocen el árbol la corrigen.",
     howWeCheck: "Cómo elegimos y comprobamos los árboles",
     takeMeThere: "Cómo llegar",
     showOnMap: "Ver en el mapa",
@@ -1223,7 +1228,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinApproximate: "Approssimativa",
     discoverMore: "Scopri di più",
     sourcesHeading: "Fonti",
-    sourcesLine: "Da dove vengono i dati di questa pagina.",
+    sourcesLine: "Da dove vengono i dati di questa pagina. La storia è stata scritta con l'IA a partire da queste fonti, e i lettori che conoscono l'albero la correggono.",
     howWeCheck: "Come scegliamo e verifichiamo gli alberi",
     takeMeThere: "Portami lì",
     showOnMap: "Mostra sulla mappa",
@@ -1512,7 +1517,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinApproximate: "Bij benadering",
     discoverMore: "Ontdek meer",
     sourcesHeading: "Bronnen",
-    sourcesLine: "Waar de gegevens op deze pagina vandaan komen.",
+    sourcesLine: "Waar de gegevens op deze pagina vandaan komen. Het verhaal is met AI geschreven op basis van deze bronnen, en lezers die de boom kennen verbeteren het.",
     howWeCheck: "Hoe we bomen kiezen en controleren",
     takeMeThere: "Breng me erheen",
     showOnMap: "Toon op de kaart",
@@ -1801,7 +1806,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinApproximate: "Ungefähr",
     discoverMore: "Mehr entdecken",
     sourcesHeading: "Quellen",
-    sourcesLine: "Woher die Angaben auf dieser Seite stammen.",
+    sourcesLine: "Woher die Angaben auf dieser Seite stammen. Die Geschichte wurde mit KI aus diesen Quellen geschrieben, und Leser, die den Baum kennen, korrigieren sie.",
     howWeCheck: "Wie wir Bäume auswählen und prüfen",
     takeMeThere: "Route planen",
     showOnMap: "Auf der Karte zeigen",
@@ -2090,7 +2095,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinApproximate: "Aproximada",
     discoverMore: "Descobrir mais",
     sourcesHeading: "Fontes",
-    sourcesLine: "De onde vêm os dados desta página.",
+    sourcesLine: "De onde vêm os dados desta página. A história foi escrita com IA a partir destas fontes, e os leitores que conhecem a árvore corrigem-na.",
     howWeCheck: "Como escolhemos e verificamos as árvores",
     takeMeThere: "Como chegar",
     showOnMap: "Ver no mapa",
@@ -2379,7 +2384,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinApproximate: "Approximative",
     discoverMore: "Découvrir plus",
     sourcesHeading: "Sources",
-    sourcesLine: "D’où viennent les informations de cette page.",
+    sourcesLine: "D’où viennent les informations de cette page. L’histoire a été écrite avec une IA à partir de ces sources, et les lecteurs qui connaissent l’arbre la corrigent.",
     howWeCheck: "Comment nous choisissons et vérifions les arbres",
     takeMeThere: "M'y emmener",
     showOnMap: "Voir sur la carte",
@@ -2667,7 +2672,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     pinApproximate: "おおよそ",
     discoverMore: "もっと見る",
     sourcesHeading: "出典",
-    sourcesLine: "このページの情報の出どころ。",
+    sourcesLine: "このページの情報の出どころ。物語はこれらの出典をもとにAIが書き、木を知る読者が直しています。",
     howWeCheck: "木の選び方と確認の方法",
     takeMeThere: "ここへ行く",
     showOnMap: "地図で見る",
@@ -3010,11 +3015,19 @@ export function hreflangForCity(slug: string, kind: "city" | "question", treeSlu
   const enPath = kind === "question" ? `/${slug}/oldest-tree` : treeSlug ? `/${slug}/${treeSlug}` : `/${slug}`;
   const variants: Record<string, string> = {};
   for (const l of langs) {
-    variants[l] = kind === "question"
+    const path = kind === "question"
       ? `/${l}/${slug}/${QUESTION_SLUG[l] ?? "oldest-tree"}`
       : treeSlug ? `/${l}/${slug}/${treeSlug}` : `/${l}/${slug}`;
+    // An alternate on the recovery noindex list is left out (2026-10-22).
+    // Google drops a noindexed page from an hreflang cluster anyway and still
+    // crawls it as an alternate, so naming it only spends crawl on a page we
+    // asked Google not to list; TRANSLATIONS_OUT in scripts/thin_pages.py
+    // put every translation there. A page with no indexable alternate carries
+    // no block at all: a self-only cluster says nothing.
+    if (isNoindexed(path)) continue;
+    variants[l] = path;
   }
-  return Object.keys(variants).length ? hreflangSet(enPath, variants) : "";
+  return Object.keys(variants).length && !isNoindexed(enPath) ? hreflangSet(enPath, variants) : "";
 }
 
 /** getStaticPaths for a language's city pages, shared so the per-language
