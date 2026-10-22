@@ -44,6 +44,14 @@
    },
    {
     "date": "2026-10-22",
+    "target": "chicago",
+    "kind": "write",
+    "tokens": 135000,
+    "trees": 10,
+    "note": "chi_030 to chi_039 (FPCC register, flagged); chi_007/012/014/015/017/024 claims and city counts corrected"
+   },
+   {
+    "date": "2026-10-22",
     "target": "glasgow+san-francisco+washington-dc+pittsburgh",
     "kind": "verify",
     "tokens": 56000,
