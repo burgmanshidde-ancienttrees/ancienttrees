@@ -4,6 +4,14 @@
   "2026-10-22": [
    {
     "date": "2026-10-22",
+    "target": "species:swamp-white-oak",
+    "kind": "write",
+    "tokens": 55000,
+    "trees": 0,
+    "note": "page-gap pass: species intro from gby_001, ott_017, chi_028"
+   },
+   {
+    "date": "2026-10-22",
     "target": "frankfurt",
     "kind": "verify",
     "tokens": 127000,
