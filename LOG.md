@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 fifth attempt: nothing shipped, nothing live changed
+
+- No claims standing. READY leads: 3 (oxford x2, madrid x1), but own supply is paused and none has an approved photograph, so none can ship. Awaiting-a-writer files are the same story, plus several duplicate-by-coordinate flags (las-vegas, london, munich, new-york, taiwan, washington-dc) that passcheck --pending says to fold by hand.
+- `photo_hunt.py --recheck` swept 40 kept-set trees: 0 new candidates. `photo_fetch.py --roster` fetched only 7 images (luxembourg-city, como, trieste), too few for a photo-judge pass.
+- Stirling register retry (BACKUP): its note's next angle is Wikidata/OSM nodes, a research hunt with low yield while supply is paused. Not started; status left as stalled.
+- Deploy not dispatched (403 in earlier attempts).
+
 ## 2026-10-22 fourth attempt: nothing to ship, deploy still not dispatched
 
 No product change. No claims stood. Reader inbox empty. READY leads are only Oxford 2 and Madrid 1 (own supply, paused, no write pass). `photo_hunt.py --recheck` swept the kept set again: 0 new candidates, nothing left unchecked. The Brisbane hero fix (bd86678a6) is on main, but both push-triggered deploys were "skipped" and `gh workflow run deploy.yml` returns 403 from this token, so the site is still not confirmed rebuilt. For Hidde: dispatch Build and deploy once (or let the next knock do it) and check that it goes green.
