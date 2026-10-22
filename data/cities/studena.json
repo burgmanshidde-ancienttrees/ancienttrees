@@ -1,0 +1,57 @@
+{
+  "city": "Studena",
+  "country": "Bulgaria",
+  "status": "needs_curation",
+  "oldest_tree_id": "std_001",
+  "hero_tree_id": "std_001",
+  "intro": "Studena, a village in Svilengrad Municipality in south-eastern Bulgaria, keeps a pedunculate oak in the field at its entrance that local tradition puts at about 350 years old. It is named for Grandpa Kolyo, the landowner who used to rest under it. The oak won Bulgaria's Tree with Roots contest for 2021 and finished 14th in European Tree of the Year 2022. It stands on private farmland and is seen from the road.",
+  "meta_description": "Grandpa Kolyo's Oak at Studena near Svilengrad, a pedunculate oak said to be about 350 years old, Bulgaria's entry to European Tree of the Year 2022.",
+  "question_answer": "The tree we map in Studena is Grandpa Kolyo's Oak, a pedunculate oak in a field beside the road into the village from Svilengrad. Local tradition gives it about 350 years; nobody has published a measurement.",
+  "question_meta": "Grandpa Kolyo's Oak at Studena, said to be about 350 years old, stands in a field at the village entrance near Svilengrad. Where it is and what is known.",
+  "question_context": "The oak takes its name from Nikola Dimitrov Angelov, Grandpa Kolyo to the village, who owned the field and used to rest in its shade. Tradition says it is a survivor of the dense forest that once covered this corner of Bulgaria, and puts its age at about 350 years; that figure comes from the village and the contest entry rather than from a ring count or a girth, and no measurement has been published. In 2019 a cross was put up nearby. The oak won Bulgaria's Tree with Roots contest for 2021 with 737 votes and went on to European Tree of the Year 2022, where it finished 14th with 24,431 votes. The field is private farmland, so the tree is seen from the roadside, where it is visible from the whole village. The coordinate on the map is the contest's own GPS point for the trunk, so the pin sits in the field; stop on the road beside it. If you know its girth, tell us.",
+  "faq": [
+    {
+      "q": "How old is Grandpa Kolyo's Oak?",
+      "a": "Local tradition and the contest entry put it at about 350 years. Nobody has published a measurement, so treat it as an estimate."
+    },
+    {
+      "q": "Can you walk up to it?",
+      "a": "No. It stands on private farmland; see it from the road into the village, where it is in plain view."
+    }
+  ],
+  "trees": [
+    {
+      "id": "std_001",
+      "name": "Grandpa Kolyo's Oak (Studena)",
+      "species": "Pedunculate Oak (Quercus robur)",
+      "age_estimate": "about 350 years",
+      "age_min": 300,
+      "age_max": 400,
+      "girth_cm": null,
+      "location": {
+        "address": "Field southeast of Studena village, right of the road entering from Svilengrad, Svilengrad Municipality, Haskovo Province, Bulgaria",
+        "latitude": 41.913381,
+        "longitude": 26.390831,
+        "neighbourhood": "Studena"
+      },
+      "verified_sources": [
+        "https://www.svilengrad.bg/bg/novini/350-godishniyat-dab-v-selo-studena-specheli-titlata-darvo-s-koren-2021/",
+        "https://darik.bg/350-godishen-leten-dab-krai-selo-studena-ste-se-bori-za-evropeisko-darvo-na-godinata",
+        "https://www.treeoftheyear.org/previous-years/2022/Grandpa-Kolyo-s-tree"
+      ],
+      "access": "Stands in a field beside the entrance road to the village, visible from the whole village and from the road; the field is private farmland (owner named after), so view from the roadside.",
+      "transport": "Svilengrad municipality village; by car from Svilengrad, public transport not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "- Species: contest entry says English oak (Quercus robur); Bulgarian press calls it 'summer oak' (летен дъб), which is the usual Bulgarian name for Q. robur. Taken from the contest, not independently checked.\n- Bulgaria 'Tree with Roots 2021' winner (737 votes, awarded 1 Feb 2022 per Svilengrad municipality) and Bulgaria's entry to European Tree of the Year 2022 (24,431 votes, 14th).\n- Named for landowner Nikola Dimitrov Angelov ('Grandpa Kolyo'), who rested under it; tradition says it descends from the dense forest that once covered the area; a cross was erected nearby in 2019.\n- Age 350 years is local tradition and the contest figure, not measured. No girth or height found on the municipality page; contest page not fetched.\n- Alive: 2022 municipality and Darik articles; lifecheck NONE (nothing geotagged). Flagged.\n- Pin: only the contest GPS, not cross-checked against a map: approximate.\n- Sources are the municipality and the contest chain (one origin); no independent second source.",
+      "story": "Grandpa Kolyo used to rest under this oak, and the village of Studena named it after him. He was Nikola Dimitrov Angelov, and the field where it stands, at the entrance to the village on the road from Svilengrad, was his.\n\nLocal tradition gives the tree about 350 years and says it is a survivor of the dense forest that once covered this corner of south-eastern Bulgaria. That is tradition rather than record. The age comes from the village and from the contest entry, and nobody has published a girth or a height. If you have stood beside it with a tape measure, tell us.\n\nIt is visible from the whole village and from the road in. In 2019 a cross was put up nearby. Two years later the oak won Bulgaria's Tree with Roots contest for 2021 with 737 votes, and in 2022 it represented the country in European Tree of the Year, finishing 14th with 24,431 votes.\n\nThe field is private farmland. See the oak from the roadside, which is where the village sees it from too.",
+      "how_to_recognise": "You can recognise it as the lone oak in the field to the right of the road as you enter Studena from Svilengrad, visible from the whole village.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
+    }
+  ]
+}

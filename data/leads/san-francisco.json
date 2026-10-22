@@ -89,7 +89,11 @@
     },
     {
       "candidate": "757 Pennsylvania Avenue, California buckeye",
-      "reason": "On official list; sftrees places a landmarked buckeye down stairs from 22nd St to the Caltrain tracks; access and pin not verified. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02."
+      "reason": "On official list; sftrees places a landmarked buckeye down stairs from 22nd St to the Caltrain tracks; access and pin not verified. Source: https://sfpublicworks.org/services/significant-and-landmark-trees read 2026-10-02. 2026-10-22 pass: sftrees.com says to take the 22nd Street stairs down to the Caltrain tracks and 'walk forward until you see the very large tree on the right'; official list says 'Behind, Assessor's Block 416B, Lot 11'. The route runs along railway land, so open access is not established; DataSF register point (back yard, Potrero Hill) is a parcel point, not the trunk. No photo, no recent sighting found.",
+      "status": "lead",
+      "latitude": 37.756647,
+      "longitude": -122.392914,
+      "location_precision": "approximate"
     },
     {
       "candidate": "1701 Franklin Street, flaxleaf paperbark",
@@ -114,6 +118,19 @@
       "longitude": -122.424146,
       "location_precision": "approximate",
       "reason": "Official Landmark Tree (sfpublicworks.org; DataSF treeid 7946, sidewalk cutout, DBH 18 in = 46 cm, species recorded as Melaleuca ericifolia in DataSF versus M. linariifolia on the official list). Small sidewalk tree, no history, no photo, lifecheck NONE. Needs a dated sighting and a reason to visit. 2026-10-21 pass."
+    },
+    {
+      "candidate": "1700 Quesada Ave medians: Mariposa plum (treeid 18547) and blackwood acacia (treeid 18550)",
+      "status": "lead",
+      "latitude": 37.733457,
+      "longitude": -122.391659,
+      "location_precision": "approximate",
+      "reason": "Flagged 'Landmark tree' in the DataSF Street Tree List (DBH 30 in each, median cutouts) but NOT on the SF Public Works list of designated Landmark Trees (read 2026-10-22), which names only the Quesada median palms; no second source. Quesada Gardens (1700 block) is public. Needs the designation confirmed before anything ships. 2026-10-22 pass."
+    },
+    {
+      "candidate": "Centennial Tree neighbours: Bicentennial Tree, Presidio Main Parade Ground",
+      "status": "lead",
+      "reason": "HMDB 284786 marker for a 1976 companion planting beside the 1876 Centennial Tree (sfo_011 in san-francisco-verified.json). Young; not a reason to walk. 2026-10-22 pass."
     }
   ],
   "blocked": [

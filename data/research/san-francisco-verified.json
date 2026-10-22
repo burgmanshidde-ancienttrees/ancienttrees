@@ -1,131 +1,158 @@
 [
-  {
-    "id": "sfo_007",
-    "name": "The Yellow Christmas Tree of Stanyan Street",
-    "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
-    "age_estimate": "planted in the late 1950s",
-    "age_min": 65,
-    "age_max": 75,
-    "location": {
-      "address": "1221 Stanyan Street, in front of the house",
-      "latitude": 37.76156,
-      "longitude": -122.45227,
-      "neighbourhood": "Cole Valley"
-    },
-    "verified_sources": [
-      "https://sfpublicworks.org/services/significant-and-landmark-trees (SF Public Works official list of designated Landmark Trees: '1221 Stanyan Street: New Zealand Christmas Tree')",
-      "http://www.sftrees.com/blog/2016/5/30/my-favorite-tree (Mike Sullivan, 2016: yellow mutation from Motiti Island 1940, cutting planted in front of 1221 Stanyan by Victor Reiter's family, 'more than 70 years later thriving', blooms yellow around Memorial Day, seen from the street)",
-      "https://www.sfenvironment.org/landmark-tree-program (seen only via search result; page 403s to fetchers; designation by Urban Forestry Council 2019, unanimous vote)"
-    ],
-    "access": "Visible from the public sidewalk on Stanyan Street; it stands in front of a private home, so look from the pavement only.",
-    "transport": "Muni N Judah or 6/7 to Haight St and Stanyan, short walk (stop not verified)",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Official Landmark Tree (2019). Rare YELLOW-flowering cultivar of the common red NZ Christmas tree: natural mutation found 1940 on Motiti Island NZ; Victor Reiter obtained a cutting in the late 1950s and planted it in front of the family home. Blooms around Memorial Day. Pin is the geocoded building at 1221 Stanyan (Nominatim), not the trunk; aerial not checked, so approximate. Alive: lifecheck RECENT, iNaturalist observation 2026-04-19 within radius (not proven same trunk): https://www.inaturalist.org/observations/351189918. Age: no source dates the tree itself beyond the late-1950s planting per Sullivan. Different from the CA Big Trees NZ Christmas tree champion lead. Front of a dwelling: viewing place is the pavement; do not imply entry. Girth unknown.",
-    "story": "New Zealand Christmas trees flower red. This one flowers yellow. The yellow form began as a natural mutation, found on Motiti Island in New Zealand's Bay of Plenty in 1940, in a species that otherwise blooms crimson.\n\nVictor Reiter got hold of a cutting in the late 1950s and his family planted it in front of their home at 1221 Stanyan Street, on the edge of Cole Valley. The local tree writer Mike Sullivan, writing in 2016, called it his favourite tree in the city and found it thriving more than seventy years after that first yellow plant turned up. In 2019 the Urban Forestry Council voted unanimously to make it an official Landmark Tree.\n\nIts moment comes around Memorial Day, at the end of May, when it blooms, and the flowers can still cover it in late June. Every other New Zealand Christmas tree you pass in the city flowers red.\n\nThis is a front garden, not a park, and the right way to see it is from the public pavement on Stanyan Street, without stepping off it. Our pin marks the address rather than the trunk.\n\nThe city still lists it among its landmark trees, but the newest dated photograph we have found is from June 2012, when it was in full yellow flower. Nobody has published its girth. If you photograph it from the pavement in flower, send it to us.",
-    "how_to_recognise": "You can recognise it in early summer by its yellow flowers, where the city's other New Zealand Christmas trees bloom red. It stands in front of the house at 1221 Stanyan Street; look from the pavement.",
-    "best_time": {
-      "months": [
-        5,
-        6
-      ],
-      "kind": "flowers",
-      "label": "late May into June, when it blooms yellow instead of red"
-    },
-    "photo": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/San_Francisco_landmarks_%287442111080%29.jpg",
-      "license": "CC BY 2.0",
-      "attribution": "Akos Kokai, via Wikimedia Commons",
-      "status": "approved",
-      "width": 3000,
-      "height": 4000
-    }
+ {
+  "id": "sfo_007",
+  "name": "The Yellow Christmas Tree of Stanyan Street",
+  "species": "New Zealand Christmas Tree (Metrosideros excelsa)",
+  "age_estimate": "planted in the late 1950s",
+  "age_min": 65,
+  "age_max": 75,
+  "location": {
+   "address": "1221 Stanyan Street, in front of the house",
+   "latitude": 37.76156,
+   "longitude": -122.45227,
+   "neighbourhood": "Cole Valley"
   },
-  {
-    "id": "sfo_008",
-    "name": "The Canary Palms of Quesada Avenue",
-    "species": "Canary Island Date Palm (Phoenix canariensis)",
-    "age_estimate": "around a century",
-    "age_min": 90,
-    "age_max": 105,
-    "location": {
-      "address": "Quesada Avenue median, just west of 3rd Street",
-      "latitude": 37.731,
-      "longitude": -122.3893,
-      "neighbourhood": "Bayview"
-    },
-    "verified_sources": [
-      "https://sfpublicworks.org/services/significant-and-landmark-trees (SF Public Works official list: 'Quesada Street Median (West of 3rd Street to dead end): 13 Canary Island Date Palms')",
-      "https://www.sanfranciscostory.com/quesada-gardens/ (fetched directly: median planted around 1920 with Canary Island Date Palms, same as Dolores Street; palms survived the twentieth century)"
-    ],
-    "access": "Free, public street median in the Bayview; walk along the sidewalk.",
-    "transport": "Muni T Third or the 15 bus on 3rd Street, then a short walk west on Quesada (stop not verified)",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Official Landmark Tree group of 13 palms on one compact block, one place to stand (like the Dolores palms already published as sfo_002). Planting date conflict: sanfranciscostory.com says about 1920; a search summary (lead only) says about 1932. Do not narrow. Pin: Nominatim places Quesada Avenue between roughly 37.7299,-122.3854 and 37.7331,-122.3911; I set an approximate mid-block point, NOT checked on aerial imagery. lifecheck NONE at pin: alive evidence is only the official list and undated-recent articles; flag. Girth and height unknown.",
-    "story": "Thirteen Canary Island date palms line the median of Quesada Avenue in the Bayview, and San Francisco counts all thirteen as one Landmark Tree. Public Works lists them that way: the Quesada Street median, from just west of 3rd Street to the dead end, 13 palms.\n\nThey are the same species as the far better known palms down the middle of Dolores Street. Local history has the Quesada median planted with them around 1920. One account puts it closer to 1932, and we have not been able to settle which, so call them roughly a century old, give or take a decade.\n\nWhat they have seen since is most of the Bayview's twentieth century, and they outlasted all of it; the city's current landmark list still carries all thirteen. A palm of this kind holds no rings to count, and nobody has published the height or the girth of any of the thirteen, so the age rests on the planting date alone.\n\nThis is a street, not a park, and that is the appeal: the whole landmark stands on one compact block, so there is one place to go and thirteen trees to count. Walk the sidewalk rather than the median itself.\n\nOur pin is a mid-block point that has not been checked against aerial imagery, so treat it as the street rather than a spot. The 3rd Street end is the easy one to find. If you know when these palms were really planted, tell us.",
-    "how_to_recognise": "You can recognise them as the row of thirteen Canary Island date palms down the median of Quesada Avenue, running west from 3rd Street to the dead end."
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (SF Public Works official list of designated Landmark Trees: '1221 Stanyan Street: New Zealand Christmas Tree')",
+   "http://www.sftrees.com/blog/2016/5/30/my-favorite-tree (Mike Sullivan, 2016: yellow mutation from Motiti Island 1940, cutting planted in front of 1221 Stanyan by Victor Reiter's family, 'more than 70 years later thriving', blooms yellow around Memorial Day, seen from the street)",
+   "https://www.sfenvironment.org/landmark-tree-program (seen only via search result; page 403s to fetchers; designation by Urban Forestry Council 2019, unanimous vote)"
+  ],
+  "access": "Visible from the public sidewalk on Stanyan Street; it stands in front of a private home, so look from the pavement only.",
+  "transport": "Muni N Judah or 6/7 to Haight St and Stanyan, short walk (stop not verified)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Official Landmark Tree (2019). Rare YELLOW-flowering cultivar of the common red NZ Christmas tree: natural mutation found 1940 on Motiti Island NZ; Victor Reiter obtained a cutting in the late 1950s and planted it in front of the family home. Blooms around Memorial Day. Pin is the geocoded building at 1221 Stanyan (Nominatim), not the trunk; aerial not checked, so approximate. Alive: lifecheck RECENT, iNaturalist observation 2026-04-19 within radius (not proven same trunk): https://www.inaturalist.org/observations/351189918. Age: no source dates the tree itself beyond the late-1950s planting per Sullivan. Different from the CA Big Trees NZ Christmas tree champion lead. Front of a dwelling: viewing place is the pavement; do not imply entry. Girth unknown.",
+  "story": "New Zealand Christmas trees flower red. This one flowers yellow. The yellow form began as a natural mutation, found on Motiti Island in New Zealand's Bay of Plenty in 1940, in a species that otherwise blooms crimson.\n\nVictor Reiter got hold of a cutting in the late 1950s and his family planted it in front of their home at 1221 Stanyan Street, on the edge of Cole Valley. The local tree writer Mike Sullivan, writing in 2016, called it his favourite tree in the city and found it thriving more than seventy years after that first yellow plant turned up. In 2019 the Urban Forestry Council voted unanimously to make it an official Landmark Tree.\n\nIts moment comes around Memorial Day, at the end of May, when it blooms, and the flowers can still cover it in late June. Every other New Zealand Christmas tree you pass in the city flowers red.\n\nThis is a front garden, not a park, and the right way to see it is from the public pavement on Stanyan Street, without stepping off it. Our pin marks the address rather than the trunk.\n\nThe city still lists it among its landmark trees, but the newest dated photograph we have found is from June 2012, when it was in full yellow flower. Nobody has published its girth. If you photograph it from the pavement in flower, send it to us.",
+  "how_to_recognise": "You can recognise it in early summer by its yellow flowers, where the city's other New Zealand Christmas trees bloom red. It stands in front of the house at 1221 Stanyan Street; look from the pavement.",
+  "best_time": {
+   "months": [
+    5,
+    6
+   ],
+   "kind": "flowers",
+   "label": "late May into June, when it blooms yellow instead of red"
   },
-  {
-    "id": "sfo_009",
-    "name": "Mary Ellen Pleasant's Blue Gums",
-    "species": "Blue Gum (Eucalyptus globulus)",
-    "age_estimate": "over 120 years",
-    "age_min": 122,
-    "age_max": 150,
-    "age_basis": "source",
-    "girth_cm": 455,
-    "location": {
-      "address": "Octavia Street, west side, between Bush and Sutter Streets (adjacent to 1801 Bush Street; register addresses 1661 Octavia Street)",
-      "latitude": 37.78749,
-      "longitude": -122.4269,
-      "neighbourhood": "Pacific Heights"
-    },
-    "verified_sources": [
-      "https://sfpublicworks.org/services/significant-and-landmark-trees (official Landmark Tree list, item 1: '1801 Bush Street (Adjacent): Six Blue Gum Eucalyptus', fetched 2026-10-21)",
-      "https://www.sfheritage.org/community/landmark-tuesdays-mary-ellen-pleasant-memorial-park/ (fetched: six eucalyptus planted by Pleasant before her death in 1904; Structure of Merit 1974; floor plaque)",
-      "https://en.wikipedia.org/wiki/Mary_Ellen_Pleasant (fetched via API: 1974 Structure of Merit, SW corner of Octavia and Bush, 'Mary Ellen Pleasant Memorial Park, the smallest park in San Francisco')",
-      "https://data.sf.gov/resource/tkzw-k3nq.json (DataSF Street Tree List, PDDL; six records 1661 Octavia St Tree 1-6, legalstatus Landmark tree; stored in data/registers/san-francisco-landmark-trees.json)"
-    ],
-    "official_register": {
-      "name": "San Francisco Public Works, Significant and Landmark Trees",
-      "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
-    },
-    "access": "Free. Six trees on the public sidewalk of Octavia Street, with a round floor plaque to Mary Ellen Pleasant; nothing to enter.",
-    "transport": "Muni buses on Bush, Sutter and Fillmore Streets are a short walk away (exact stops not verified)",
-    "location_precision": "approximate",
-    "location_site": {
-      "name": "Mary Ellen Pleasant Memorial Park, six sidewalk trees on Octavia Street",
-      "radius_m": 30
-    },
-    "curation_status": "ai_generated",
-    "verify_notes": "ENSEMBLE of six blue gums in a row along the west side of Octavia between Bush and Sutter, one place to stand, marked by a floor plaque (SF Heritage). Plaque text per SF Heritage: 'Mother of Civil Rights in California. She supported the western terminus of the underground railway for fugitive slaves 1850-1865. This legendary pioneer once lived on this site and planted these six trees.' Mary Ellen Pleasant (1814-1904), Gold Rush-era entrepreneur and abolitionist; her 30-room mansion (the 'Bell Mansion', lived there with Thomas Bell, 1870s photo on OpenSFHistory) stood here and is gone; the gums are what remains. Planted 'before her death in 1904' (SF Heritage): so at least 122 years; the mansion dates from the 1870s so an upper bound near 150 years (my inference, mansion date not fetched from a source; do not narrow). Designation: Structure of Merit 1974 (SF Heritage, Wikipedia); one search summary says 'landmark trees since 1996' (not seen on a fetched page, ignore); the 1976 'smallest park' dedication per the same summary is also unfetched, but Wikipedia says it is known as the smallest park in San Francisco. A search summary says the city has since said it is not an official city park; not seen on a page. DBH per DataSF in INCHES: Tree 1 48, Tree 2 49, Tree 3 57, Tree 4 39, Tree 5 49, Tree 6 30. Largest 57 in = 145 cm diameter, girth_cm 455 (diameter times pi, the largest of the six; DataSF register). Register coordinates (all on the curb cutouts, treeids 138024-138028, 138087): 37.787741,-122.426943 / 37.787607,-122.426921 / 37.787536,-122.426910 / 37.787485,-122.426896 / 37.787438,-122.426887 / 37.787317,-122.426860; pin given is the middle of the row. Approximate because not checked on aerial imagery, though the row is unmistakable on the sidewalk and the register has per-tree points. Alive: lifecheck RECENT, iNaturalist observation 2026-04-30 at the row (https://www.inaturalist.org/observations/356928764, not proven same trunk) plus the register still lists all six. Another blog (sftrees.com landmark list) places 'several trees, across street from 1650 Octavia/Bush' with a historical marker in the sidewalk. 2010 landmark tour blog (forestknolls.info) visited the six eucalyptus and said some Presidio eucalyptus are larger. Photo: none found, none hunted; Commons search for the park returned nothing."
-  },
-  {
-    "id": "sfo_010",
-    "name": "The Brazilian Pepper of Third and Yosemite",
-    "species": "Brazilian Pepper (Schinus terebinthifolius)",
-    "age_estimate": "not documented",
-    "girth_cm": 383,
-    "location": {
-      "address": "Median triangle at 3rd Street and Yosemite Avenue (register address 5490 03rd St)",
-      "latitude": 37.72797,
-      "longitude": -122.393306,
-      "neighbourhood": "Bayview"
-    },
-    "verified_sources": [
-      "https://sfpublicworks.org/services/significant-and-landmark-trees (official Landmark Tree list, item 2: '3rd Street and Yosemite Median Triangle: Brazilian Pepper', fetched 2026-10-21)",
-      "https://data.sf.gov/resource/tkzw-k3nq.json (DataSF Street Tree List, PDDL, treeid 22364, '5490 03rd St | Tree 1', Median : Cutout, Landmark tree, DBH 48 in)",
-      "https://forestknolls.info/2010/08/16/landmark-tree-tour/ (fetched: 2010 visit, 'an ancient Brazilian Pepper Tree, growing on a traffic island', had lost branches after storms)"
-    ],
-    "official_register": {
-      "name": "San Francisco Public Works, Significant and Landmark Trees",
-      "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
-    },
-    "access": "Free. It stands on a public traffic-island median; view from the pavement and mind the traffic on 3rd Street.",
-    "transport": "Muni T Third Street runs along 3rd Street; nearest stop not verified",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "FLAGGED: thin alive evidence. Official list and DataSF register still carry it as a Landmark tree (register re-fetched 2026-10-21, but registers have no vitality field). Dated observation: only the 2010 tour blog (storm branch loss, 'ancient'); lifecheck OLD (nearest hit a 2013 Commons photo), no recent photo or news found on this trunk. One source in practice (city list and DataSF are the same authority) plus a 2010 eyewitness. No planting date or history found in three searches; age not documented, do not infer. Size: DataSF DBH 48 inches = 122 cm diameter, girth_cm 383 by diameter times pi (a very large pepper; plausible for a long-lived Schinus but the DataSF DBH is a map-survey figure, date unknown). Pin is the register coordinate for the cutout in the median, not checked on aerial imagery, so approximate. Planter code DPW. Nearby but separate: the Quesada Avenue median palms (sfo_008)."
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/San_Francisco_landmarks_%287442111080%29.jpg",
+   "license": "CC BY 2.0",
+   "attribution": "Akos Kokai, via Wikimedia Commons",
+   "status": "approved",
+   "width": 3000,
+   "height": 4000
   }
+ },
+ {
+  "id": "sfo_008",
+  "name": "The Canary Palms of Quesada Avenue",
+  "species": "Canary Island Date Palm (Phoenix canariensis)",
+  "age_estimate": "around a century",
+  "age_min": 90,
+  "age_max": 105,
+  "location": {
+   "address": "Quesada Avenue median, just west of 3rd Street",
+   "latitude": 37.731,
+   "longitude": -122.3893,
+   "neighbourhood": "Bayview"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (SF Public Works official list: 'Quesada Street Median (West of 3rd Street to dead end): 13 Canary Island Date Palms')",
+   "https://www.sanfranciscostory.com/quesada-gardens/ (fetched directly: median planted around 1920 with Canary Island Date Palms, same as Dolores Street; palms survived the twentieth century)"
+  ],
+  "access": "Free, public street median in the Bayview; walk along the sidewalk.",
+  "transport": "Muni T Third or the 15 bus on 3rd Street, then a short walk west on Quesada (stop not verified)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Official Landmark Tree group of 13 palms on one compact block, one place to stand (like the Dolores palms already published as sfo_002). Planting date conflict: sanfranciscostory.com says about 1920; a search summary (lead only) says about 1932. Do not narrow. Pin: Nominatim places Quesada Avenue between roughly 37.7299,-122.3854 and 37.7331,-122.3911; I set an approximate mid-block point, NOT checked on aerial imagery. lifecheck NONE at pin: alive evidence is only the official list and undated-recent articles; flag. Girth and height unknown.",
+  "story": "Thirteen Canary Island date palms line the median of Quesada Avenue in the Bayview, and San Francisco counts all thirteen as one Landmark Tree. Public Works lists them that way: the Quesada Street median, from just west of 3rd Street to the dead end, 13 palms.\n\nThey are the same species as the far better known palms down the middle of Dolores Street. Local history has the Quesada median planted with them around 1920. One account puts it closer to 1932, and we have not been able to settle which, so call them roughly a century old, give or take a decade.\n\nWhat they have seen since is most of the Bayview's twentieth century, and they outlasted all of it; the city's current landmark list still carries all thirteen. A palm of this kind holds no rings to count, and nobody has published the height or the girth of any of the thirteen, so the age rests on the planting date alone.\n\nThis is a street, not a park, and that is the appeal: the whole landmark stands on one compact block, so there is one place to go and thirteen trees to count. Walk the sidewalk rather than the median itself.\n\nOur pin is a mid-block point that has not been checked against aerial imagery, so treat it as the street rather than a spot. The 3rd Street end is the easy one to find. If you know when these palms were really planted, tell us.",
+  "how_to_recognise": "You can recognise them as the row of thirteen Canary Island date palms down the median of Quesada Avenue, running west from 3rd Street to the dead end."
+ },
+ {
+  "id": "sfo_009",
+  "name": "Mary Ellen Pleasant's Blue Gums",
+  "species": "Blue Gum (Eucalyptus globulus)",
+  "age_estimate": "over 120 years",
+  "age_min": 122,
+  "age_max": 150,
+  "age_basis": "source",
+  "girth_cm": 455,
+  "location": {
+   "address": "Octavia Street, west side, between Bush and Sutter Streets (adjacent to 1801 Bush Street; register addresses 1661 Octavia Street)",
+   "latitude": 37.78749,
+   "longitude": -122.4269,
+   "neighbourhood": "Pacific Heights"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (official Landmark Tree list, item 1: '1801 Bush Street (Adjacent): Six Blue Gum Eucalyptus', fetched 2026-10-21)",
+   "https://www.sfheritage.org/community/landmark-tuesdays-mary-ellen-pleasant-memorial-park/ (fetched: six eucalyptus planted by Pleasant before her death in 1904; Structure of Merit 1974; floor plaque)",
+   "https://en.wikipedia.org/wiki/Mary_Ellen_Pleasant (fetched via API: 1974 Structure of Merit, SW corner of Octavia and Bush, 'Mary Ellen Pleasant Memorial Park, the smallest park in San Francisco')",
+   "https://data.sf.gov/resource/tkzw-k3nq.json (DataSF Street Tree List, PDDL; six records 1661 Octavia St Tree 1-6, legalstatus Landmark tree; stored in data/registers/san-francisco-landmark-trees.json)"
+  ],
+  "official_register": {
+   "name": "San Francisco Public Works, Significant and Landmark Trees",
+   "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
+  },
+  "access": "Free. Six trees on the public sidewalk of Octavia Street, with a round floor plaque to Mary Ellen Pleasant; nothing to enter.",
+  "transport": "Muni buses on Bush, Sutter and Fillmore Streets are a short walk away (exact stops not verified)",
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Mary Ellen Pleasant Memorial Park, six sidewalk trees on Octavia Street",
+   "radius_m": 30
+  },
+  "curation_status": "ai_generated",
+  "verify_notes": "ENSEMBLE of six blue gums in a row along the west side of Octavia between Bush and Sutter, one place to stand, marked by a floor plaque (SF Heritage). Plaque text per SF Heritage: 'Mother of Civil Rights in California. She supported the western terminus of the underground railway for fugitive slaves 1850-1865. This legendary pioneer once lived on this site and planted these six trees.' Mary Ellen Pleasant (1814-1904), Gold Rush-era entrepreneur and abolitionist; her 30-room mansion (the 'Bell Mansion', lived there with Thomas Bell, 1870s photo on OpenSFHistory) stood here and is gone; the gums are what remains. Planted 'before her death in 1904' (SF Heritage): so at least 122 years; the mansion dates from the 1870s so an upper bound near 150 years (my inference, mansion date not fetched from a source; do not narrow). Designation: Structure of Merit 1974 (SF Heritage, Wikipedia); one search summary says 'landmark trees since 1996' (not seen on a fetched page, ignore); the 1976 'smallest park' dedication per the same summary is also unfetched, but Wikipedia says it is known as the smallest park in San Francisco. A search summary says the city has since said it is not an official city park; not seen on a page. DBH per DataSF in INCHES: Tree 1 48, Tree 2 49, Tree 3 57, Tree 4 39, Tree 5 49, Tree 6 30. Largest 57 in = 145 cm diameter, girth_cm 455 (diameter times pi, the largest of the six; DataSF register). Register coordinates (all on the curb cutouts, treeids 138024-138028, 138087): 37.787741,-122.426943 / 37.787607,-122.426921 / 37.787536,-122.426910 / 37.787485,-122.426896 / 37.787438,-122.426887 / 37.787317,-122.426860; pin given is the middle of the row. Approximate because not checked on aerial imagery, though the row is unmistakable on the sidewalk and the register has per-tree points. Alive: lifecheck RECENT, iNaturalist observation 2026-04-30 at the row (https://www.inaturalist.org/observations/356928764, not proven same trunk) plus the register still lists all six. Another blog (sftrees.com landmark list) places 'several trees, across street from 1650 Octavia/Bush' with a historical marker in the sidewalk. 2010 landmark tour blog (forestknolls.info) visited the six eucalyptus and said some Presidio eucalyptus are larger. Photo: none found, none hunted; Commons search for the park returned nothing."
+ },
+ {
+  "id": "sfo_010",
+  "name": "The Brazilian Pepper of Third and Yosemite",
+  "species": "Brazilian Pepper (Schinus terebinthifolius)",
+  "age_estimate": "not documented",
+  "girth_cm": 383,
+  "location": {
+   "address": "Median triangle at 3rd Street and Yosemite Avenue (register address 5490 03rd St)",
+   "latitude": 37.72797,
+   "longitude": -122.393306,
+   "neighbourhood": "Bayview"
+  },
+  "verified_sources": [
+   "https://sfpublicworks.org/services/significant-and-landmark-trees (official Landmark Tree list, item 2: '3rd Street and Yosemite Median Triangle: Brazilian Pepper', fetched 2026-10-21)",
+   "https://data.sf.gov/resource/tkzw-k3nq.json (DataSF Street Tree List, PDDL, treeid 22364, '5490 03rd St | Tree 1', Median : Cutout, Landmark tree, DBH 48 in)",
+   "https://forestknolls.info/2010/08/16/landmark-tree-tour/ (fetched: 2010 visit, 'an ancient Brazilian Pepper Tree, growing on a traffic island', had lost branches after storms)"
+  ],
+  "official_register": {
+   "name": "San Francisco Public Works, Significant and Landmark Trees",
+   "url": "https://sfpublicworks.org/services/significant-and-landmark-trees"
+  },
+  "access": "Free. It stands on a public traffic-island median; view from the pavement and mind the traffic on 3rd Street.",
+  "transport": "Muni T Third Street runs along 3rd Street; nearest stop not verified",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "FLAGGED: thin alive evidence. Official list and DataSF register still carry it as a Landmark tree (register re-fetched 2026-10-21, but registers have no vitality field). Dated observation: only the 2010 tour blog (storm branch loss, 'ancient'); lifecheck OLD (nearest hit a 2013 Commons photo), no recent photo or news found on this trunk. One source in practice (city list and DataSF are the same authority) plus a 2010 eyewitness. No planting date or history found in three searches; age not documented, do not infer. Size: DataSF DBH 48 inches = 122 cm diameter, girth_cm 383 by diameter times pi (a very large pepper; plausible for a long-lived Schinus but the DataSF DBH is a map-survey figure, date unknown). Pin is the register coordinate for the cutout in the median, not checked on aerial imagery, so approximate. Planter code DPW. Nearby but separate: the Quesada Avenue median palms (sfo_008)."
+ },
+ {
+  "id": "sfo_011",
+  "name": "The Centennial Tree of the Presidio",
+  "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+  "age_estimate": "planted in 1876",
+  "age_min": 145,
+  "age_max": 150,
+  "location": {
+   "address": "Main Parade Ground, Main Post, Presidio of San Francisco",
+   "latitude": 37.7985,
+   "longitude": -122.4587,
+   "neighbourhood": "Presidio"
+  },
+  "verified_sources": [
+   "https://presidio.gov/explore/blog/discover-eight-presidio-memorials-and-monuments (Presidio Trust, the ground's manager: Angelo Beretta, post trader, planted three eucalyptus in front of his store at the Main Post in 1876; Army removed two when it enlarged the parade ground; the third was preserved by a special act of Congress and became the Centennial Tree)",
+   "https://www.nps.gov/goga/learn/photosmultimedia/now-and-then-presidio.htm (NPS Golden Gate NRA, page last updated 2025-03-26: planted 1876 in honour of his three daughters; the Centennial Tree 'still stands near the center of the parade ground')",
+   "http://www.sftrees.com/new-page-1 (Mike Sullivan, San Francisco Trees: blue gum, planted 4 July 1876, plaque at the base, gift of Beretta's descendants in 1976)"
+  ],
+  "access": "Free; open lawn on the Main Parade Ground of the Presidio, a public national park site. Presidio Trust publishes no hours for the tree.",
+  "transport": "Presidio Go shuttle or Muni 43 to the Main Post, short walk across the parade ground (stop not verified)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Dated, documented planting: 4 July 1876 by Angelo Beretta, the Presidio's post trader, to mark the centennial of the Declaration of Independence. Sources disagree on the three trees (one for each of his children per Presidio Trust; three daughters per NPS and sftrees); do not state which. Two of three removed when the Army enlarged the parade ground; the survivor kept 'by a special act of Congress' (Presidio Trust wording, no second source for the Act). Plaque at the base: 'planted July 4, 1876 by Angelo Beretta Post Trader, gift from his family July 4, 1976' (Commons file Presidio_of_SF_Centennial_Tree_plaque.JPG; HMDB 284771 reads the same but 403s to fetchers). Presidio Trust planning (Main Post Update, 2010) says to maintain it as a symbolic object (seen only via search summary). Presidio forest context: the Army plantation of 1886 onward is younger than this tree, so this predates the forest. Alive: NPS 2025 'still stands'; lifecheck RECENT 2026-08-29 near the pin (iNaturalist, not confirmed as this trunk). Pin: NO coordinate found (Nominatim empty, Commons plaque photo not geotagged); the point is my estimate for the centre of the Main Parade Ground, so approximate. Size: no girth or height in any source. sftrees calls it more historically significant than visually spectacular. Photo hunt, not done by me: Commons has Presidio_of_SF_Centennial_Tree_1.JPG and _2.JPG (BrokenSphere, CC BY-SA 3.0, 2009-02-08), unchecked for which trunk. A younger 'Bicentennial Tree' (HMDB 284786) stands nearby, not this tree.",
+  "story": "This eucalyptus is older than the forest around it. Angelo Beretta, the Presidio's post trader, planted it on 4 July 1876 to mark the hundredth birthday of the Declaration of Independence, a decade before the Army began the plantation that grew into the Presidio's woods.\n\nHe planted three, in front of his store at the Main Post. When the Army enlarged the parade ground, two of them came out. The third stayed. The Presidio Trust, which manages the ground, says it was spared by a special act of Congress; no second source names the act, so that detail rests on the Trust's word.\n\nA century later, on 4 July 1976, Beretta's family gave the plaque at its base, which records the planting date and his name. That plaque matters more than usual, because a younger Bicentennial Tree stands nearby and is easy to take for this one.\n\nThe National Park Service said in 2025 that the Centennial Tree still stands near the centre of the parade ground that cost it its two companions.\n\nNobody has published a girth or a height, and one San Francisco tree writer rates it more for its history than its size. The pin is our estimate for the middle of the Main Parade Ground rather than a surveyed point, so walk to the centre of the lawn and look for the plaque. If you have measured the trunk, tell us.",
+  "how_to_recognise": "You can recognise it by the plaque at its base, with Angelo Beretta's name and the date July 4, 1876. It stands near the centre of the Main Parade Ground; the younger Bicentennial Tree nearby is a different tree.",
+  "written": true
+ }
 ]

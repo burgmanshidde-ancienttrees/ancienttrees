@@ -3,11 +3,11 @@
   "country": "United States",
   "status": "needs_curation",
   "oldest_tree_id": "sfo_001",
-  "intro": "San Francisco was a town of a few hundred people in 1848 and Golden Gate Park was bare dunes into the 1870s, so every tree here was planted on purpose, and 150 years counts as old. Nine of the ten are city Landmark Trees, designated one at a time by ordinance, from a cork oak atop a stairway street to six blue gums that Mary Ellen Pleasant planted outside her home and a Cole Valley pohutukawa that flowers yellow instead of red. The tenth is the tree the city lights every Christmas.",
+  "intro": "San Francisco was a town of a few hundred people in 1848 and Golden Gate Park was bare dunes into the 1870s, so every tree here was planted on purpose, and 150 years counts as old. Nine of the eleven are city Landmark Trees, designated one at a time by ordinance, from a cork oak atop a stairway street to six blue gums that Mary Ellen Pleasant planted outside her home and a Cole Valley pohutukawa that flowers yellow instead of red. The other two are the city's Christmas tree and a Presidio blue gum planted in 1876.",
   "meta_description": "Every tree in San Francisco was planted on purpose. The city's Landmark Trees, plus the cypress it has lit as its Christmas tree since 1929.",
   "question_answer": "Nobody has dated most of San Francisco's remarkable trees, so the honest answer is a planting era rather than an age. The oldest here is Uncle John's Tree, the Monterey cypress on the lawn outside McLaren Lodge at the eastern end of Golden Gate Park, which the park's historians put at planted around 1880, so roughly 135 to 155 years old. It is named for John McLaren, the park's long-serving superintendent, who died in 1943, and it has been lit as the city's Christmas tree since 1929. Mary Ellen Pleasant's six blue gums on Octavia Street may run it close: she planted them before her death in 1904, and nobody has published the year. The yellow-flowered pohutukawa on Stanyan Street dates from the late 1950s; the rest carry no documented planting date, and the city's Landmark Tree register does not record one. If you know a date, or have a photograph old enough to help, tell us.",
   "question_meta": "Uncle John's Tree, a Monterey cypress planted around 1880 outside McLaren Lodge, is the oldest tree on this San Francisco page. Where to find it.",
-  "question_context": "San Francisco keeps a Landmark Tree register rather than an ancient-tree register, and the difference explains this page. Trees are designated one at a time under Article 16 of the Public Works Code, on grounds of size, rarity or the part they play in a street, and the list runs to roughly twenty-five trees citywide. Nine of the ten here come off it. What that register does not record is age, and neither does anything else within reach: not the 2005 Board of Supervisors resolution that landmarked the bay laurel outside the Customs House, not the city's own entry for the Dolores Street palms, not Mike Sullivan's Trees of San Francisco, which is the standard reference for this city. That leaves the dating to circumstance. The gold rush arrived in 1849, Golden Gate Park was sand dunes until the 1870s, and the Mission and Bernal Heights streets these trees stand on were laid out later still, so a tree of 150 years is an early one by local reckoning. If you can date any of the nine, that is the gap this page would most like closed.",
+  "question_context": "San Francisco keeps a Landmark Tree register rather than an ancient-tree register, and the difference explains this page. Trees are designated one at a time under Article 16 of the Public Works Code, on grounds of size, rarity or the part they play in a street, and the list runs to roughly twenty-five trees citywide. Nine of the eleven here come off it. What that register does not record is age, and neither does anything else within reach: not the 2005 Board of Supervisors resolution that landmarked the bay laurel outside the Customs House, not the city's own entry for the Dolores Street palms, not Mike Sullivan's Trees of San Francisco, which is the standard reference for this city. That leaves the dating to circumstance. The gold rush arrived in 1849, Golden Gate Park was sand dunes until the 1870s, and the Mission and Bernal Heights streets these trees stand on were laid out later still, so a tree of 150 years is an early one by local reckoning. If you can date any of the nine, that is the gap this page would most like closed.",
   "faq": [
     {
       "q": "What is the oldest tree in San Francisco?",
@@ -376,6 +376,38 @@
       "location_precision": "approximate",
       "curation_status": "flagged",
       "verify_notes": "FLAGGED: thin alive evidence. Official list and DataSF register still carry it as a Landmark tree (register re-fetched 2026-10-21, but registers have no vitality field). Dated observation: only the 2010 tour blog (storm branch loss, 'ancient'); lifecheck OLD (nearest hit a 2013 Commons photo), no recent photo or news found on this trunk. One source in practice (city list and DataSF are the same authority) plus a 2010 eyewitness. No planting date or history found in three searches; age not documented, do not infer. Size: DataSF DBH 48 inches = 122 cm diameter, girth_cm 383 by diameter times pi (a very large pepper; plausible for a long-lived Schinus but the DataSF DBH is a map-survey figure, date unknown). Pin is the register coordinate for the cutout in the median, not checked on aerial imagery, so approximate. Planter code DPW. Nearby but separate: the Quesada Avenue median palms (sfo_008)."
+    },
+    {
+      "id": "sfo_011",
+      "name": "The Centennial Tree of the Presidio",
+      "species": "Tasmanian Blue Gum (Eucalyptus globulus)",
+      "age_estimate": "planted in 1876",
+      "age_min": 145,
+      "age_max": 150,
+      "location": {
+        "address": "Main Parade Ground, Main Post, Presidio of San Francisco",
+        "latitude": 37.7985,
+        "longitude": -122.4587,
+        "neighbourhood": "Presidio"
+      },
+      "verified_sources": [
+        "https://presidio.gov/explore/blog/discover-eight-presidio-memorials-and-monuments (Presidio Trust, the ground's manager: Angelo Beretta, post trader, planted three eucalyptus in front of his store at the Main Post in 1876; Army removed two when it enlarged the parade ground; the third was preserved by a special act of Congress and became the Centennial Tree)",
+        "https://www.nps.gov/goga/learn/photosmultimedia/now-and-then-presidio.htm (NPS Golden Gate NRA, page last updated 2025-03-26: planted 1876 in honour of his three daughters; the Centennial Tree 'still stands near the center of the parade ground')",
+        "http://www.sftrees.com/new-page-1 (Mike Sullivan, San Francisco Trees: blue gum, planted 4 July 1876, plaque at the base, gift of Beretta's descendants in 1976)"
+      ],
+      "access": "Free; open lawn on the Main Parade Ground of the Presidio, a public national park site. Presidio Trust publishes no hours for the tree.",
+      "transport": "Presidio Go shuttle or Muni 43 to the Main Post, short walk across the parade ground (stop not verified)",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "verify_notes": "Dated, documented planting: 4 July 1876 by Angelo Beretta, the Presidio's post trader, to mark the centennial of the Declaration of Independence. Sources disagree on the three trees (one for each of his children per Presidio Trust; three daughters per NPS and sftrees); do not state which. Two of three removed when the Army enlarged the parade ground; the survivor kept 'by a special act of Congress' (Presidio Trust wording, no second source for the Act). Plaque at the base: 'planted July 4, 1876 by Angelo Beretta Post Trader, gift from his family July 4, 1976' (Commons file Presidio_of_SF_Centennial_Tree_plaque.JPG; HMDB 284771 reads the same but 403s to fetchers). Presidio Trust planning (Main Post Update, 2010) says to maintain it as a symbolic object (seen only via search summary). Presidio forest context: the Army plantation of 1886 onward is younger than this tree, so this predates the forest. Alive: NPS 2025 'still stands'; lifecheck RECENT 2026-08-29 near the pin (iNaturalist, not confirmed as this trunk). Pin: NO coordinate found (Nominatim empty, Commons plaque photo not geotagged); the point is my estimate for the centre of the Main Parade Ground, so approximate. Size: no girth or height in any source. sftrees calls it more historically significant than visually spectacular. Photo hunt, not done by me: Commons has Presidio_of_SF_Centennial_Tree_1.JPG and _2.JPG (BrokenSphere, CC BY-SA 3.0, 2009-02-08), unchecked for which trunk. A younger 'Bicentennial Tree' (HMDB 284786) stands nearby, not this tree.",
+      "story": "This eucalyptus is older than the forest around it. Angelo Beretta, the Presidio's post trader, planted it on 4 July 1876 to mark the hundredth birthday of the Declaration of Independence, a decade before the Army began the plantation that grew into the Presidio's woods.\n\nHe planted three, in front of his store at the Main Post. When the Army enlarged the parade ground, two of them came out. The third stayed. The Presidio Trust, which manages the ground, says it was spared by a special act of Congress; no second source names the act, so that detail rests on the Trust's word.\n\nA century later, on 4 July 1976, Beretta's family gave the plaque at its base, which records the planting date and his name. That plaque matters more than usual, because a younger Bicentennial Tree stands nearby and is easy to take for this one.\n\nThe National Park Service said in 2025 that the Centennial Tree still stands near the centre of the parade ground that cost it its two companions.\n\nNobody has published a girth or a height, and one San Francisco tree writer rates it more for its history than its size. The pin is our estimate for the middle of the Main Parade Ground rather than a surveyed point, so walk to the centre of the lawn and look for the plaque. If you have measured the trunk, tell us.",
+      "how_to_recognise": "You can recognise it by the plaque at its base, with Angelo Beretta's name and the date July 4, 1876. It stands near the centre of the Main Parade Ground; the younger Bicentennial Tree nearby is a different tree.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }
