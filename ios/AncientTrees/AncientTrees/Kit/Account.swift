@@ -684,9 +684,9 @@ public enum SignInReason: Equatable, Identifiable {
         case .seasonAlerts:
             "We can only tell you about a tree if we know where to reach you."
         case .feedback:
-            "Every vote, correction and tip gets checked and answered, and your account is how the answer reaches you."
+            "We check every vote, correction and tip, and your account lets us tell you what came of it."
         case .ambassador:
-            "Your account is how we reach you about the list."
+            "We use your account to write to you about the list."
         }
     }
 }

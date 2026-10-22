@@ -547,7 +547,7 @@ struct TreeDetail: View {
         .sheet(isPresented: $removing) {
             BrandSheet(
                 title: "Remove \(tree.name) from your trees?",
-                message: "Your photograph goes with it. What you have already sent us stays sent.",
+                message: "Your photograph goes with it. Anything you already sent us stays with us.",
                 buttons: [
                     .destructive("Remove", id: "remove-mine-confirm") {
                         removing = false
@@ -1772,7 +1772,7 @@ struct TreeDetail: View {
             // about our own database at the moment somebody has just given us
             // something, and it never said what happens next. The reader is the
             // subject here and the next step is named.
-            "You've added this tree. We're taking a look at it, and once it's verified, we will add it to our map."
+            "You've added this tree. We'll check it and then add it to our map."
         }
     }
 

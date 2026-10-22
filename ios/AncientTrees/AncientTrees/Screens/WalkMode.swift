@@ -310,7 +310,7 @@ struct WalkMode: View {
         VStack(alignment: .leading, spacing: 10) {
             Text("We cannot open this walk")
                 .font(.brand(20, .heavy)).foregroundStyle(Brand.ink)
-            Text("Its trees are not in this copy of the map. Try again after the app has updated.")
+            Text("This walk's trees are not on your map yet. Try again after the app updates.")
                 .font(.footnote).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             Button { dismiss() } label: { loud("Close", "xmark") }

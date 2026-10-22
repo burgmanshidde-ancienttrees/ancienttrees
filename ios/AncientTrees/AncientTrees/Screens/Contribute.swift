@@ -49,7 +49,7 @@ struct ContributeView: View {
                     // sentence to where it is met first.
                     if !account.isSignedIn {
                         Section {
-                            Text("Sending needs a free account. It keeps the trees you send, so you can see what happened to each one.")
+                            Text("You need an account to send a tree, so you can see what happened to each one you sent.")
                                 .font(.footnote).foregroundStyle(Brand.inkSoft)
                             Button("Sign in") { signingIn = true }
                                 .font(.callout.weight(.semibold))

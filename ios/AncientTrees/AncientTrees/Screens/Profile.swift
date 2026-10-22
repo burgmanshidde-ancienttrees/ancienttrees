@@ -647,7 +647,7 @@ struct ProfileView: View {
             .sheet(isPresented: $confirmingDelete) {
                 BrandSheet(
                     title: "Delete your account?",
-                    message: "We delete your email address and your collection. This cannot be undone.",
+                    message: "We will delete your email address and your collection. You cannot undo this.",
                     buttons: [
                         .destructive("Delete", id: "delete-final") {
                             confirmingDelete = false

@@ -100,7 +100,7 @@ struct PlacePin: View {
                     Text("Drag the map until the pin sits on the tree.")
                         .font(.subheadline).foregroundStyle(Brand.ink)
                     Text(movedMetres < 5
-                         ? "Zoom in as far as you like. The button wakes up once you have moved it."
+                         ? "Zoom in as far as you like. You can send once you have moved the pin."
                          : "That is \(movedMetres) m from where we have it.")
                         .font(.caption).foregroundStyle(Brand.inkSoft)
                     Button {
@@ -124,7 +124,7 @@ struct PlacePin: View {
                             .font(.caption).foregroundStyle(.red)
                     }
                     if !account.isSignedIn {
-                        Text("Sending needs a free account, so we can tell you what your correction changed.")
+                        Text("You need an account to send this, so we can tell you what your correction changed.")
                             .font(.caption2).foregroundStyle(Brand.inkSoft)
                     }
                 }

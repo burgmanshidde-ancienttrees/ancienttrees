@@ -1650,6 +1650,38 @@ def note_a_strangers_photo_with_gps_waits_for_nothing():
     return out
 
 
+def check_a_new_tree_has_a_photograph():
+    """A new tree of our own ships only with an approved photograph.
+
+    Hidde, 2026-10-22, after 15 famous US trees went live from their Commons
+    photographs: "we should only focus on trees with photos". It reverses the
+    2026-10-18 call (photo-less trees for readers and Bing), which had the
+    night runs shipping register rows nobody can picture. A reader's tree is
+    exempt: the person who stood there is the source. Trees live on 10-22 are
+    in data/photo-baseline.json and keep their pages. Removing this needs Hidde.
+    """
+    from findable import ADD_NEEDS_PHOTO, has_approved_photo, reader_added
+    if not ADD_NEEDS_PHOTO:
+        return []
+    try:
+        with open(os.path.join("data", "photo-baseline.json"), encoding="utf-8") as fh:
+            base = set(json.load(fh).get("ids", []))
+    except (OSError, ValueError):
+        return []
+    out = []
+    for path in sorted(glob.glob("data/cities/*.json")):
+        with open(path, encoding="utf-8") as fh:
+            city = json.load(fh)
+        for tree in city.get("trees", []):
+            if tree.get("id") in base or reader_added(tree) or has_approved_photo(tree):
+                continue
+            out.append("%s: %s (%s) is new and has no approved photograph. Since 2026-10-22 a new "
+                       "tree of our own ships only with one (Hidde: \"we should only focus on trees "
+                       "with photos\"); a reader's tree is exempt. Find a photo or keep it in data/leads/."
+                       % (path, tree.get("id"), tree.get("name")))
+    return out
+
+
 def check_a_closed_sighting_stays_closed():
     """A photograph Hidde closed is never reopened or shown to him again.
 
@@ -3577,6 +3609,7 @@ def main():
                 + check_a_tree_can_be_told_apart()
                 + check_covered_countries_want_a_photo_or_a_pin()
                 + check_a_new_tree_is_rich_or_a_readers()
+                + check_a_new_tree_has_a_photograph()
                 + check_story_length()
                 + check_one_common_name_per_species()
                 + check_register_says_the_tree_is_gone()

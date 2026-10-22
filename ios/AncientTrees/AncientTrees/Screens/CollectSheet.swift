@@ -749,7 +749,7 @@ struct CollectSheet: View {
     /// testable on a machine with no photo library to refuse.
     static func placeReason(libraryRefused: Bool) -> String {
         libraryRefused
-            ? "We cannot read where your photograph was taken, so drag the map until the pin sits on the tree. Allowing photos would place it for you."
+            ? "We cannot read where your photograph was taken, so drag the map until the pin sits on the tree. If you allow access to your photos, we can place it for you."
             : "Your photograph does not say where it was taken, so drag the map until the pin sits on the tree."
     }
 
@@ -1093,7 +1093,7 @@ struct CollectSheet: View {
                 .buttonStyle(SheetButtonStyle(kind: .primary))
                 .accessibilityIdentifier("collect-unsure-done")
                 .padding(.top, 22)
-            sheetFootnote("Trees standing close together catch us out too. Telling us is more useful than a guess.")
+            sheetFootnote("Trees standing close together catch us out too, so just say if you are not sure.")
         }
     }
 
@@ -1222,7 +1222,7 @@ struct CollectSheet: View {
                 : "None of our trees is pinned near your photo. If it is one of ours, our pin is off and your photo helps us fix it."
         }
         if candidates.contains(where: { $0.precision == .approximate }) {
-            return "Our own pin is rough for some of these, so we cannot tell you which is which. Pick one if you know, and say you are not sure if you do not."
+            return "Our pin is rough for some of these, so we cannot tell you which is which. Pick one if you know, or say you are not sure."
         }
         return fix == .device
             ? "You are standing among trees we map. Pick the one in your photograph."

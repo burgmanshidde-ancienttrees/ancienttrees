@@ -59,9 +59,9 @@ public enum Feature: String, Sendable {
         case .walkBeyondFirst:
             "Hand-picked routes that string the best trees of a city into one afternoon."
         case .badges:
-            "A drawn badge for every species, city and country you have stood in front of."
+            "A drawn badge for every species, city and country you collect."
         case .photoUpload:
-            "Photograph a tree nobody has photographed yet, and offer it for its page."
+            "Photograph a tree nobody has photographed yet, and your photo can go on its page."
         case .seasonAlerts:
             "A quiet nudge in the week a tree near you is at its best."
         }

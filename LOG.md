@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 (session with Hidde): a new tree of our own needs a photograph
+
+- **Rule (Hidde):** "we should only focus on trees with photos". It reverses 10-18's photo-less trees for Bing. New preflight FAIL `check_a_new_tree_has_a_photograph()` (`ADD_NEEDS_PHOTO` in scripts/findable.py): a new tree needs a lead photo with status `approved`, a reader's tree is exempt, and the 3,880 trees live today are in data/photo-baseline.json. Tested on a copy: quiet on today's data, fires on a new photo-less tree, passes one with a photo and a reader's. CLAUDE.md (Google recovery mode) and DECISIONS.md updated.
+- **For the night run:** READY leads in `leads.py` are mostly photo-less register rows, and writing them now fails preflight. Run `photo_hunt.py` on a place before you verify or write it, and take leads that already carry an open photo first (data/leads/_famous-*.json, about 130 with a pin).
+- **Next lane (Hidde: "if the texas trees seem valuable lets try that one"):** Famous Trees of Texas (data/research/texas-famous-trees.json, 93 not yet live). A photo sweep runs first; the trees with an open photo go to a check in batches of 20.
+
 ## 2026-10-22 session with Hidde: no ambassador tag on app Settings
 
 Live on main for the next app build: the Settings card shows name and address only; the ambassador tag stays on My trees and the public profile (Hidde: "op de setting pagina ... mag die weg"). Built and looked at in the simulator, signed in as a Paris ambassador. The website's settings page never had it.

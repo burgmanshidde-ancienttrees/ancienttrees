@@ -1176,7 +1176,7 @@ struct NothingNearby: View {
         ContentUnavailableView {
             Label("No trees near you yet", systemImage: "tree")
         } description: {
-            Text("None of our trees is within fifty kilometres of here.")
+            Text("None of our trees is within fifty kilometres of you.")
         }
     }
 }

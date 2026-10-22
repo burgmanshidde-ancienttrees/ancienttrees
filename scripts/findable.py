@@ -99,6 +99,22 @@ def enriched(tree, gaps):
 ADD_NEEDS_RICH = False
 
 
+# NO NEW TREE OF OUR OWN WITHOUT A PHOTOGRAPH (Hidde, 2026-10-22, after the
+# first batch of famous US trees went live from their Commons photographs: "we
+# should only focus on trees with photos"). Reverses the 2026-10-18 call that
+# let photo-less trees ship for readers and Bing. A new tree needs a lead photo
+# with status `approved`; a reader's tree (reader_added) is exempt, because the
+# person who stood there is the source. Trees live that day are in
+# data/photo-baseline.json and stay (hard rule 3). preflight's
+# check_a_new_tree_has_a_photograph() reads this; False needs Hidde.
+ADD_NEEDS_PHOTO = True
+
+
+def has_approved_photo(tree):
+    p = tree.get("photo") or {}
+    return bool(p.get("url")) and p.get("status") == "approved"
+
+
 def reader_added(tree):
     """A tree that came through a reader: a sighting id on it or on its
     photograph, or a contributor's photograph (source + contributor_user_id,

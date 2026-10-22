@@ -827,7 +827,7 @@ struct CollectView: View {
             if lane == .want && list.isEmpty {
                 wantEmpty
             } else if lane == .seen && timeline.isEmpty {
-                Text("You add a tree here by photographing it. Tap the camera and stand in front of one.")
+                Text("You can add a tree here by photographing it with the camera button.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .padding(.top, 4)
             } else if lane == .want {
@@ -1632,7 +1632,7 @@ struct CollectView: View {
                                        distance: distanceLabel(t)))
                     .font(.brand(24, .bold, relativeTo: .title))
                     .foregroundStyle(Brand.ink)
-                Text("You can collect it by photographing it while you stand there. Trees, species and places fill your collection, and the years they have seen add up.")
+                Text("You can collect it by photographing it while you stand there. Each tree adds to your trees, species and places, and its years to your total.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 SheetLink(route: .tree(t.id)) { TreeCard(tree: t) }
@@ -1652,7 +1652,7 @@ struct CollectView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("No trees yet")
                     .font(.brand(24, .bold, relativeTo: .title)).foregroundStyle(Brand.ink)
-                Text("You can start your collection by photographing any tree, whether we map it or not.")
+                Text("You can start your collection by photographing any tree.")
                     .font(.subheadline).foregroundStyle(Brand.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
             }

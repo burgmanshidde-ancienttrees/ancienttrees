@@ -81,7 +81,7 @@ struct MergeChooser: View {
                 BrandSheet(
                     icon: "arrow.triangle.merge",
                     title: "Merge into \(t.name)?",
-                    message: "Your photos move to its page and this copy goes from your trees.",
+                    message: "Your photos move to its page, and this copy leaves your trees.",
                     buttons: [
                         .primary("Merge trees", id: "merge-confirm") {
                             confirming = nil

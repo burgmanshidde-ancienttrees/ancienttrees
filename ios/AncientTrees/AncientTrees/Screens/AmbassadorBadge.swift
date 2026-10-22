@@ -152,7 +152,7 @@ struct EarlyAdopterSheet: View {
         BrandSheet(
             icon: "sparkle",
             title: "You're an early adopter",
-            message: "You are one of the first users of Ancient Trees. This badge is only for them.",
+            message: "This badge is only for the first people to use Ancient Trees, and you are one of them.",
             buttons: [.primary("Done", id: "early-adopter-done") { dismiss() }],
             tint: .gold)
             // One container with a name, as the sign-in sheet carries, so the
@@ -369,7 +369,7 @@ struct AmbassadorApplySheet: View {
             BrandSheet(
                 icon: "checkmark.seal",
                 title: "Become the ambassador for \(place)",
-                message: "An ambassador helps make this list as good as it can be.",
+                message: "An ambassador helps us get the trees of this place right.",
                 points: ["Add photographs of the trees",
                          "Check the facts and tell us which trees are missing",
                          "Help put together walks past them"],

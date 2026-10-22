@@ -403,7 +403,7 @@ struct HomeView: View {
             // fact, which is the one thing this project does not do to its own
             // readers. What is left is true: trees go on every week, and the
             // map has gaps.
-            Text("New trees go on every week, and there are still cities where we have only a handful. You can add one by photographing it and filling in what you know.")
+            Text("You can add a tree by photographing it and filling in what you know.")
                 .font(.subheadline).foregroundStyle(Brand.inkSoft)
                 .fixedSize(horizontal: false, vertical: true)
             Button {

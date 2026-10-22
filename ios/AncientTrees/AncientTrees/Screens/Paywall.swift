@@ -82,7 +82,7 @@ struct PaywallView: View {
             // is no processor and the price is not public yet. A screen that
             // walks somebody through a charge that cannot happen is the one
             // kind of dishonesty this project cannot afford.
-            Text("Plus is not open yet. We are building it, and this is the list.")
+            Text("Plus is not open yet. Below is what we plan for it.")
                 .font(.subheadline.weight(.medium))
                 .padding(.top, 2)
         }
