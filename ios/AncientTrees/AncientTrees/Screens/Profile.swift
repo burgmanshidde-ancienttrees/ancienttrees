@@ -189,7 +189,9 @@ struct ProfileView: View {
                     if let e = account.email {
                         Text(e).font(.footnote).foregroundStyle(Brand.inkSoft).lineLimit(1)
                     }
-                    AmbassadorBadge(places: profiles.myPlaces)
+                    // No ambassador tag here (Hidde, 2026-10-22: "op de
+                    // setting pagina ... mag die weg"); it lives on My trees
+                    // and the public profile.
                 } else {
                     Text("Sign in")
                         .font(.brand(18, .bold, relativeTo: .headline))
