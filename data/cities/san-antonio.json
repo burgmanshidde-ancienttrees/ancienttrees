@@ -2,11 +2,11 @@
   "city": "San Antonio",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "The most photographed tree at the Alamo arrived on a mule cart in 1912 and did not watch the 1836 battle, whatever the postcards suggest. A few streets away a bald cypress on the River Walk is said to be the one a marksman fired from on the night Ben Milam was killed. Four verified trees, two of them genuinely old and two of them state champions that got their size on speed rather than centuries.",
-  "meta_description": "San Antonio's oldest tree is a bald cypress on the River Walk, over 200 years old. Four verified remarkable trees and how to reach each one.",
-  "question_meta": "A bald cypress on the River Walk, over 200 years old, is San Antonio's oldest tree. Where to find it and the city's other three remarkable trees.",
+  "intro": "The most photographed tree at the Alamo arrived on a mule cart in 1912 and did not watch the 1836 battle, whatever the postcards suggest. A few streets away a bald cypress on the River Walk is said to be the one a marksman fired from on the night Ben Milam was killed. On the Alamo's rear lawn stands a pecan the site's own horticulturist dates to 1850. Five verified trees, three of them genuinely old and two of them state champions that got their size on speed rather than centuries.",
+  "meta_description": "San Antonio's oldest tree is a bald cypress on the River Walk, over 200 years old. Five verified remarkable trees and how to reach each one.",
+  "question_meta": "A bald cypress on the River Walk, over 200 years old, is San Antonio's oldest tree. Where to find it and the city's other remarkable trees.",
   "question_answer": "San Antonio's oldest tree is the bald cypress on the River Walk known as the Ben Milam Cypress, over 200 years old and 762 centimetres round. It stands downtown between the Commerce Street and Houston Street bridges, free to see from the public path at any hour.",
-  "question_context": "The cypress is the only one of the city's four verified trees whose age runs past two centuries, and even there the figure is a floor rather than a measurement. What ties it to 1835 is local tradition: the shot that killed Ben Milam during the Siege of Bexar is said to have come from its branches, and at over 200 years old the tree was certainly already standing that December. The Alamo's Big Tree is the one people assume is older and is not. The nurseryman Walter Whall dug it up from a ranch outside town in 1912 or 1913, already around forty years old, and hauled it whole to the Convento Courtyard, which puts it at roughly 155 to 160 years today. The other two are champions by size rather than age. Trinity University's Mexican sycamore is the largest in Texas and only about forty years old, and the Texas mountain laurel on the University of the Incarnate Word grounds holds the state title at 9.8 metres tall for a plant most Texans know as a shrub. All four are free to visit.",
+  "question_context": "The cypress is the only one of the city's five verified trees whose age runs past two centuries, and even there the figure is a floor rather than a measurement. What ties it to 1835 is local tradition: the shot that killed Ben Milam during the Siege of Bexar is said to have come from its branches, and at over 200 years old the tree was certainly already standing that December. The Alamo's Big Tree is the one people assume is older and is not. The nurseryman Walter Whall dug it up from a ranch outside town in 1912 or 1913, already around forty years old, and hauled it whole to the Convento Courtyard, which puts it at roughly 155 to 160 years today. A pecan on the Alamo's rear lawn may be older; its 1850 planting date is the site's word, undocumented. The other two are champions by size rather than age. Trinity University's Mexican sycamore is the largest in Texas and only about forty years old, and the Texas mountain laurel on the University of the Incarnate Word grounds holds the state title at 9.8 metres tall. All five are free to visit.",
   "faq": [
     {
       "q": "What is the oldest tree in San Antonio?",
@@ -18,11 +18,11 @@
     },
     {
       "q": "Are San Antonio's remarkable trees free to visit?",
-      "a": "All four are. The Alamo's grounds and courtyards are free to enter and only the interior exhibits need a ticket. The River Walk cypress is visible from the public path at any hour, and the Trinity University and Incarnate Word campuses are both open to walk onto."
+      "a": "All five are. The Alamo's grounds and courtyards are free to enter and only the interior exhibits need a ticket. The River Walk cypress is visible from the public path at any hour, and the Trinity University and Incarnate Word campuses are both open to walk onto."
     },
     {
       "q": "Can you walk between them?",
-      "a": "Between the two downtown ones. The Ben Milam Cypress and the Alamo's Big Tree are a few minutes apart on foot. The Mexican sycamore is about 4.5 kilometres north at Trinity University and the mountain laurel is on the Incarnate Word campus off Broadway, both reachable by VIA bus."
+      "a": "Between the three downtown ones. The Ben Milam Cypress, the Alamo's Big Tree and the Alamo pecan are a few minutes apart on foot. The Mexican sycamore is about 4.5 kilometres north at Trinity University and the mountain laurel is on the Incarnate Word campus off Broadway, both reachable by VIA bus."
     },
     {
       "q": "Why is a forty-year-old tree on this list?",
@@ -189,6 +189,43 @@
       "official_register": {
         "name": "Texas Big Tree Registry (Texas A&M Forest Service), no. 1175",
         "url": null
+      }
+    },
+    {
+      "id": "san_005",
+      "name": "The Alamo Pecan",
+      "species": "Pecan (Carya illinoinensis)",
+      "age_estimate": "roughly 170 years",
+      "age_min": 150,
+      "age_max": 180,
+      "age_basis": "source",
+      "girth_cm": 366,
+      "height_m": 24,
+      "location": {
+        "address": "The Alamo, 300 Alamo Plaza, San Antonio, TX 78205 (rear grounds beside Bonham Street)",
+        "latitude": 29.4268,
+        "longitude": -98.4856,
+        "neighbourhood": "Downtown"
+      },
+      "verified_sources": [
+        "https://sanantonioreport.org/heritage-tree-the-pecan-tree-at-the-alamo/",
+        "https://sanantonioreport.org/?p=135717"
+      ],
+        "access": "Alamo grounds are free to enter, 9:00 to 17:30 daily except 25 December (thealamo.org FAQ, per the 2026-10-13 enrich note). The tree stands in the rear grounds, which are also used for events, so if it is fenced off on the day, tell us.",
+      "transport": "Alamo is a main VIA bus stop (Blue and Yellow routes per 2012 article); the tree is on the Alamo grounds, a short walk in from Alamo Plaza.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "The Alamo grounds, rear lawn by Bonham Street",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "The oldest tree at the Alamo, by its own horticulturist's account, is not the famous oak in the courtyard. It is a pecan in the back yard. Mark Nauschutz, who looked after the grounds, said it was planted in 1850 by Peter Gallagher, who owned the land where the gift shop now stands. That would put it in the ground fourteen years after the battle. Nobody has produced a document for the date, and the 2012 newspaper piece that reported it notes that arborists will not name an age without boring a core, so take 1850 as the story the Alamo tells rather than a record. On that story it is roughly 170 years old.\n\nThe measurements are firmer. In 2012 it stood about 24 metres tall, with a crown some 25 metres across and a trunk 366 centimetres round. Nauschutz called it a pampered princess, because its keepers fuss over it so much, and its shade has been the staging ground for weddings, receptions and military ceremonies.\n\nOne newspaper series is the only written source, and the last dated mention of this trunk is a photograph caption from 2015. If you have stood under it since, tell us. Our pin marks the rear lawn beside Bonham Street rather than the trunk itself. The Alamo grounds are free, open 9:00 to 17:30 every day except 25 December, and the transplanted Big Tree in the Convento Courtyard is a few minutes' walk away.",
+      "how_to_recognise": "You can recognise it as the tall pecan, about 24 metres, with a trunk 3.66 metres round. It stands on the rear lawn beside Bonham Street, not in the Convento Courtyard where the low, wide live oak is.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
       }
     }
   ]

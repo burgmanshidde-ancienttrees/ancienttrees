@@ -1,0 +1,40 @@
+[
+  {
+    "id": "san_005",
+    "name": "The Alamo Pecan",
+    "species": "Pecan (Carya illinoinensis)",
+    "age_estimate": "roughly 170 years",
+    "age_min": 150,
+    "age_max": 180,
+    "age_basis": "source",
+    "girth_cm": 366,
+    "height_m": 24,
+    "location": {
+      "address": "The Alamo, 300 Alamo Plaza, San Antonio, TX 78205 (rear grounds beside Bonham Street)",
+      "latitude": 29.4268,
+      "longitude": -98.4856,
+      "neighbourhood": "Downtown"
+    },
+    "verified_sources": [
+      "https://sanantonioreport.org/heritage-tree-the-pecan-tree-at-the-alamo/",
+      "https://sanantonioreport.org/?p=135717"
+    ],
+    "official_register": null,
+    "access": "Alamo grounds are free to enter, 9:00 to 17:30 daily except 25 December (thealamo.org FAQ, per the 2026-10-13 enrich note). The tree stands in the rear grounds used for events; confirm it is within the free area.",
+    "transport": "Alamo is a main VIA bus stop (Blue and Yellow routes per 2012 article); the tree is on the Alamo grounds, a short walk in from Alamo Plaza.",
+    "location_precision": "approximate",
+    "location_site": {
+      "name": "The Alamo grounds, rear lawn by Bonham Street",
+      "radius_m": 50
+    },
+    "curation_status": "flagged",
+    "story": "The oldest tree at the Alamo, by its own horticulturist's account, is not the famous oak in the courtyard. It is a pecan in the back yard. Mark Nauschutz, who looked after the grounds, said it was planted in 1850 by Peter Gallagher, who owned the land where the gift shop now stands. That would put it in the ground fourteen years after the battle. Nobody has produced a document for the date, and the 2012 newspaper piece that reported it notes that arborists will not name an age without boring a core, so take 1850 as the story the Alamo tells rather than a record. On that story it is roughly 170 years old.\n\nThe measurements are firmer. In 2012 it stood about 24 metres tall, with a crown some 25 metres across and a trunk 366 centimetres round. Nauschutz called it a pampered princess, because its keepers fuss over it so much, and its shade has been the staging ground for weddings, receptions and military ceremonies.\n\nOne newspaper series is the only written source, and the last dated mention of this trunk is a photograph caption from 2015. If you have stood under it since, tell us. Our pin marks the rear lawn beside Bonham Street rather than the trunk itself. The Alamo grounds are free, open 9:00 to 17:30 every day except 25 December, and the transplanted Big Tree in the Convento Courtyard is a few minutes' walk away.",
+    "how_to_recognise": "You can recognise it as the tall pecan, about 24 metres, with a trunk 3.66 metres round. It stands on the rear lawn beside Bonham Street, not in the Convento Courtyard where the low, wide live oak is.",
+    "photo": {
+      "url": null,
+      "license": null,
+      "attribution": null,
+      "status": "missing"
+    }
+  }
+]

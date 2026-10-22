@@ -79,9 +79,89 @@
    "sources": [],
    "finding_aid": "Famous Trees of Texas, Texas A&M Forest Service (famoustreesoftexas.tfs.tamu.edu; map layer services5.arcgis.com/ELI1iJkCzTIagHkp/arcgis/rest/services/TestTrees/FeatureServer/0). All rights reserved: finding aid only, never quoted or cited as the source. Tree page: https://famoustreesoftexas.tfs.tamu.edu/burnt-oak/",
    "status": "lead"
+  },
+  {
+   "name": "Menefee Oak",
+   "species": "Plateau Live Oak (Quercus fusiformis)",
+   "reason": "2026-10-22 pass. San Antonio Report Heritage Tree series (2012, updated 2016): at E. Ashby, E. Elmira and River Road, near the Pearl, 12 ft circumference, 46 in DBH, 35 ft, planted 1930 with a memorial marker. Public intersection, visible from the street. Only about 95 years old and no second source or alive check after 2016, so not a genuinely old tree; kept in case a Pearl cluster is wanted.",
+   "location": {
+    "latitude": 29.4465,
+    "longitude": -98.4815,
+    "address": "E. Ashby, E. Elmira and River Road, San Antonio"
+   },
+   "location_precision": "approximate",
+   "sources": [
+    "https://sanantonioreport.org/heritage-tree-the-menefee-oak/"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Anaqua at the Bexar County Courthouse",
+   "species": "Anaqua (Ehretia anacua)",
+   "reason": "2026-10-22 pass. San Antonio Report 2012: south lawn of the courthouse, Nueva St at Main, 45 ft tall, 39 ft canopy, a bird-sown volunteer, 'decades-old' with no figure. No girth, no age basis: not remarkable on the evidence.",
+   "sources": [
+    "https://sanantonioreport.org/heritage-tree-the-anaqua-at-the-bexar-county-courthouse/"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Avocado at the Spanish Governor's Palace",
+   "species": "Avocado (Persea americana)",
+   "reason": "2026-10-22 pass. San Antonio Report 2012: courtyard of the Spanish Governor's Palace, 105 Military Plaza, 13 in DBH, 41 ft, age guess 40 to 50 years, froze to the ground in 1983 and 1989. Young; interesting only as a curiosity (possibly the last of its kind in San Antonio per the city forester). Palace admission is ticketed.",
+   "sources": [
+    "https://sanantonioreport.org/heritage-tree-the-avocado-tree-at-the-spanish-governors-palace/"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Mexican Olive at the Alamo",
+   "species": "Texas Wild Olive (Cordia boisieri)",
+   "reason": "2026-10-22 pass. San Antonio Report 2012: north wall of the Alamo, 9 in DBH, 19 ft, about 50 years; small and young, no case for a page.",
+   "sources": [
+    "https://sanantonioreport.org/heritage-tree-the-mexican-olive-at-the-alamo/"
+   ],
+   "status": "lead"
+  },
+  {
+   "name": "Texas Big Tree Registry leads 861, 2350, 1010, 11443",
+   "reason": "2026-10-22 pass: no place named for any of the four and no independent source found by search; the registry has no per-tree pages and its licence is lead-only. The 1010 entry appears to be a Texas Mountain Laurel at St Francis Episcopal (per the 2026-10-13 note) and no web source for it was found. No photo or exact pin in reach.",
+   "status": "lead"
+  },
+  {
+   "name": "The Taco Land Live Oak",
+   "species": "Plateau Live Oak (Quercus fusiformis)",
+   "reason": "2026-10-22 write pass: held back, not shipped. Stands on a commercial lot (the former Taco Land bar, 103 W Grayson St, planned as a Velvet Taco with a patio per SA Current 2021); whether a visitor can reach it without being a customer, or whether the restaurant opened with the tree kept, is not established (hard rule 10). No statement of the tree after 2021, and the pin is the building's address point, not the trunk. Verified facts kept below; ship once a source or reader confirms it stands and can be seen from the street or an open patio.",
+   "location": {
+    "address": "103 W Grayson St, San Antonio, TX 78212 (former Taco Land, now Velvet Taco site)",
+    "latitude": 29.44464,
+    "longitude": -98.48174,
+    "neighbourhood": "Pearl"
+   },
+   "location_precision": "approximate",
+   "girth_cm": 437,
+   "height_m": 11,
+   "age_estimate": "100 to 200 years",
+   "sources": [
+    "https://sanantonioreport.org/heritage-tree-the-live-oak-at-taco-land/",
+    "https://www.sacurrent.com/food-drink/velvet-taco-will-open-its-two-san-antonio-locations-soon-including-one-at-former-taco-land-site-25298887/"
+   ],
+   "verify_notes": "FLAGGED: alive and access both thin. San Antonio Report 'Heritage Tree: The Live Oak at Taco Land' (Maeckle, 10 June 2012, updated 31 Jan 2020): 103 West Grayson Street, west bank of the river, 25 yards from the water (which the article says explains its size and health). Figures from the article's box: circumference 14 ft 4 in (437 cm), DBH 4 ft 7 in, 37 ft tall (11 m), canopy 70 ft. Age: local lore says over 500 years; City Forester Michael Nentwich doubts it and suggests 100 to 200 years (box: 'Probably 100-200 years'). Use 100 to 200, never the 500 lore as fact. Context: Taco Land, a punk and rock bar, has been closed since a 2005 robbery in which founder Ram Ayala and a doorman were killed (as stated in the article). New owners David Adelman and Ricardo Chavira hired an arborist to prune it and planned an outdoor bar removing the concrete patio and tin roof so the roots could thrive. SA Current (8 Jan 2021, updated 5 Aug 2024) says the Velvet Taco on the former site would keep 'some of the building's original murals and trademark oak tree' (implies retained, does not say so outright). Address discrepancy: 101 W Grayson (SA Current) vs 103 W Grayson (SA Report, Velvet Taco release, TDLR filing). Pin is the OSM address point for 103 W Grayson (Nominatim 29.44464,-98.48174), the building, not the trunk: approximate. No post-2021 statement of the tree seen; not a heritage-tree designation by itself (the series' title is not an official register). Two news sources, neither a register.",
+   "status": "lead"
   }
  ],
  "blocked": [
+  {
+   "name": "Burnt Oak (Salado Creek)",
+   "species": "Live Oak (Quercus virginiana)",
+   "reason": "2026-10-22 pass: the finding aid says the site is not open to the public, and a search places it on Pecan Valley Country Club land (private); no second source. Moved from leads.",
+   "status": "blocked"
+  },
+  {
+   "name": "Quadrangle Oak, Fort Sam Houston",
+   "species": "Live Oak",
+   "reason": "2026-10-22 pass: historical marker (hmdb m=308822) and JBSA/TCLF pages exist, but Fort Sam Houston is an active military installation that requires identification to enter, so it fails hard rule 10 (permission needed). No age or girth figure found either.",
+   "status": "blocked"
+  },
   {
    "name": "Rough Riders Pecan (Theodore Roosevelt Tree)",
    "species": "Pecan (Carya illinoinensis)",

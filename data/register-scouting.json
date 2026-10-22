@@ -153,7 +153,8 @@
    "place": "San Antonio",
    "country": "United States",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#193). One search: no city register with coordinates. Texas Historic Tree Coalition lists historic and heritage trees statewide (list not reached); Quadrangle Oak at Fort Sam Houston has a marker with a coordinate (29.4440N, 98.4617W, hmdb.org m=308822) and was named second most historic tree in 1976 by the Bicentennial Committee. Next angle: fetch the Texas Historic Tree Coalition Bexar County rows and the Texas A&M Forest Service Big Tree list."
+   "retried": "2026-10-22",
+   "note": "RETRIED 2026-10-22: Texas Historic Tree Coalition pages gave no Bexar rows; hmdb.org, famoustreesoftexas.tfs.tamu.edu and texasescapes.com unreachable from the runner. Quadrangle Oak blocked (Fort Sam Houston needs ID, hard rule 10), Burnt Oak blocked (private country club). Published the Alamo Pecan (san_005, one source, 2015 last sighting); Taco Land live oak held (restaurant lot). City is thin on old trees. SCOUTED 2026-10-15 on scout_next.py --target (#193). One search: no city register with coordinates. Texas Historic Tree Coalition lists historic and heritage trees statewide (list not reached); Quadrangle Oak at Fort Sam Houston has a marker with a coordinate (29.4440N, 98.4617W, hmdb.org m=308822) and was named second most historic tree in 1976 by the Bicentennial Committee. Next angle: fetch the Texas Historic Tree Coalition Bexar County rows and the Texas A&M Forest Service Big Tree list."
   },
   {
    "place": "Santa Fe",

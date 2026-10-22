@@ -4,6 +4,22 @@
   "2026-10-22": [
    {
     "date": "2026-10-22",
+    "target": "san-antonio",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 0,
+    "note": "two weak one-source trees; Quadrangle and Burnt Oak blocked for access"
+   },
+   {
+    "date": "2026-10-22",
+    "target": "san-antonio",
+    "kind": "write",
+    "tokens": 75000,
+    "trees": 1,
+    "note": "Alamo Pecan published (4 to 5); Taco Land oak back to leads"
+   },
+   {
+    "date": "2026-10-22",
     "target": "washington-dc",
     "kind": "verify",
     "tokens": 160000,
