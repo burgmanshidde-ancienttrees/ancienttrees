@@ -1,0 +1,43 @@
+[
+  {
+    "id": "gla_006",
+    "name": "The Wallace Yew",
+    "species": "European Yew (Taxus baccata)",
+    "age_estimate": "disputed, 300 to 800 years",
+    "age_min": 250,
+    "age_max": 800,
+    "location": {
+      "address": "Wallace Monument and birthplace site, Park Avenue, Elderslie, Renfrewshire PA5",
+      "latitude": 55.835191,
+      "longitude": -4.488655,
+      "neighbourhood": "Elderslie (Renfrewshire, about 11 km west of Glasgow centre)"
+    },
+    "verified_sources": [
+      "https://scotlands-yew-trees.org/yews-in-depth/the-wallace-yew-elderslie-more-than-it-appears-to-be/",
+      "https://www.ancient-yew.org/yew_trees/elderslie-the-wallace-yew-2338/",
+      "https://en.wikipedia.org/wiki/Wallace_Yew",
+      "https://commons.wikimedia.org/wiki/File:Trunk_of_the_Wallace_Yew_(geograph_7720946).jpg"
+    ],
+    "official_register": {
+      "name": "Ancient Yew Group database, tree ID 2338 (a society record, not a statutory register)",
+      "url": "https://www.ancient-yew.org/yew_trees/elderslie-the-wallace-yew-2338/"
+    },
+    "access": "Stands in the open grass of the Wallace Monument and birthplace site beside the ruins of Wallace's house; protected by a fence (SYTHI photo 2021), so seen from outside it. No opening hours found; no sign of a gate or ticket in any source. Not verified from OSM (Overpass is dead from this runner).",
+    "transport": "Day trip from Glasgow. ScotRail from Glasgow Central to Johnstone, four trains an hour, about 14 minutes (ScotRail average), then about 11 minutes on foot east to Park Avenue. Elderslie's own station closed in 1966. Buses also stop at Park Avenue, Elderslie.",
+    "location_precision": "confirmed",
+    "curation_status": "flagged",
+    "age_basis": "source",
+    "story": "Nobody agrees whether the Wallace Yew is seven centuries old or closer to three. Elderslie's legend says William Wallace planted it, or that it grew up alongside him, which would make it about 700 years old. Scotland's Yew Tree Heritage Initiative reports that expert investigation points instead to a planting about 300 years ago, perhaps in the 1760s, when the Wallace estate passed to the Speirs family. Then it argues the other way. Parish records of the 1700s already called it \"this ancient tree\", and the Statistical Account of Scotland in 1845 thought it \"co-eval with, some say older than\" the village's Wallace Oak, which fell in a storm in 1856. A 1977 guidebook muddied things further, saying the yew by the house was seeded from an older tree known as Wallace's Yew. Nobody has ever recorded its girth.\n\nWhat it has survived is less disputed. It was set on fire in 1978. On 12 January 2005 a storm ripped away half the trunk almost to the ground. Since about 2008 a Ganoderma fungus has been at the wood, and the tree is reported to be in decline, regrowing from what is left. Renfrewshire Council took twelve cuttings that year; six rooted, to be planted nearby as clones.\n\nIt stands fenced in the grass beside the ruins of Wallace's house in Elderslie, about 11 kilometres west of central Glasgow: roughly a quarter of an hour by train from Glasgow Central to Johnstone, then about 11 minutes on foot.",
+    "how_to_recognise": "You can recognise it by the iron fence ringing it: a lone yew regrowing from what a 2005 storm left of its trunk. It stands in the grass beside the ruins of Wallace's house, by the Wallace Monument.",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/The_Wallace_Yew_%28geograph_7720934%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Richard Sutcliffe, via Geograph Britain and Ireland / Wikimedia Commons",
+      "attribution_url": "https://www.geograph.org.uk/photo/7720934",
+      "status": "approved",
+      "width": 1600,
+      "height": 1067,
+      "taken_month": 3
+    }
+  }
+]

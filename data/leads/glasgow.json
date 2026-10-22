@@ -1,0 +1,44 @@
+{
+  "leads": [
+    {
+      "name": "Pollok Beech (the Wishing Tree), Pollok Country Park",
+      "approx_location": "behind Pollok House, Pollok Country Park (no coordinate fetched)",
+      "reason": "alive status unproven and sources conflict. Friends of Glasgow Botanic Gardens (2018-04-06): about 250 years old, burned out by vandals about 2017, split in two, sparse new growth, cuttings taken. Glasgow City Council Pollok heritage trail (via search summary, PDF 403): blew down in the March 1982 gales and lives on from a layered branch. No report from 2019 onward found. Wikipedia: 7 m girth at grade, thought 250 years old. Needs a dated recent photo or council statement, plus a pin; lifecheck NONE at a guessed coordinate.",
+      "sources": ["https://glasgowbotanicgardens.com/2018/04/06/once-more-unto-the-beech/", "https://en.wikipedia.org/wiki/Pollok_Country_Park", "https://glasgow.gov.uk/media/3644/Pollok-Country-Park-HT/pdf/Pollok_Country_Park_HT.pdf"]
+    },
+    {
+      "name": "Large Oak near Pollok House (planted about 1680)",
+      "approx_location": "Pollok House grounds",
+      "reason": "only evidence is a row in the planting-date table of the Pollok Park Conservation Area Appraisal 2016 (glasgow.gov.uk, via search summary); no individual identification, pin, girth or photograph. No photo or exact pin in reach.",
+      "sources": ["https://glasgow.gov.uk/media/1608/Pollok-Park-Conservation-Area-Appraisal/pdf/Pollok_Park_Conservation_Area_Appraisal.pdf"]
+    },
+    {
+      "name": "Kelvingrove Park London plane (claimed largest in Glasgow)",
+      "reason": "no source found for any named or largest plane in Kelvingrove; searches returned only the Suffragette Oak (already gla_002) and felled ash. Claim must not be repeated.",
+      "sources": []
+    },
+    {
+      "name": "Wallace Oak (Elderslie), companion to gla_006",
+      "reason": "context only: lead for the story of gla_006; the oak itself is dead (see blocked).",
+      "sources": ["https://en.wikipedia.org/wiki/Wallace_Oak_(Elderslie)"]
+    }
+  ],
+  "blocked": [
+    {
+      "name": "Wallace Oak, Elderslie",
+      "reason": "dead: fell in a storm in 1856 (Wikipedia; SYTHI)",
+      "wikidata": "Q80488954"
+    },
+    {
+      "name": "Glasgow Botanic Gardens Weeping Ash planted 1818",
+      "reason": "felled after disease (search result, Botanic Gardens); dead",
+      "sources": []
+    },
+    {
+      "name": "Darnley Sycamore and Argyle Street Ash",
+      "reason": "already published as gla_001 and gla_005; not re-verified this pass (the pass found a Yelp/Wikipedia/Glasgow Guardian trail for the ash but no new facts needed). Darnley storm-damage status after Eowyn NOT checked: recommend a lifecheck by the next pass.",
+      "sources": ["https://archivisthistoryblog.wordpress.com/2025/01/25/the-old-plane-tree-of-darnley/"]
+    }
+  ],
+  "notes": "Pass 2026-10-22. No Woodland Trust Ancient Tree Inventory data used. Improvement Service TPO layer, Necropolis, Botanic Gardens (beyond the felled ash) and Bellahouston not researched: searches returned nothing and the pass stopped at the single verified tree; hosts: glasgow.gov.uk media PDFs return 403 to WebFetch, no PDF tools on the runner (use curl plus a text extractor)."
+}

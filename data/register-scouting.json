@@ -66,7 +66,8 @@
    "place": "Glasgow",
    "country": "United Kingdom",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#150). No Glasgow heritage-tree register with coordinates found. Glasgow City Council publishes its confirmed TPOs as a document list (no coordinates seen). The Improvement Service Scotland-wide TPO layer (spatialhub.scot, OGL) may hold Glasgow points and polygons, not yet checked; TPO is protection, not remarkable-tree status, so a finding aid at most. Named trees to lead-check: Argyle Street ash (UK Tree of the Year 2025), Darnley Sycamore (Heritage Tree, storm damaged by Eowyn), Kelvingrove Park London plane (largest-in-Glasgow claim unverified). Next angle: Ancient Tree Inventory rows for Glasgow, then those three as leads."
+   "retried": "2026-10-22",
+   "note": "RETRIED 2026-10-22: no register or coordinate layer found (Improvement Service TPO layer and Necropolis/Bellahouston not reached; glasgow.gov.uk PDFs 403). The named-tree route gave one tree: the Wallace Yew at Elderslie (gla_006, day trip, published). Darnley Sycamore and Argyle ash already live (survival of the sycamore after Eowyn unchecked); Kelvingrove plane claim has no source; Pollok Beech and a Pollok oak stay leads. SCOUTED 2026-10-15 on scout_next.py --target (#150). No Glasgow heritage-tree register with coordinates found. Glasgow City Council publishes its confirmed TPOs as a document list (no coordinates seen). The Improvement Service Scotland-wide TPO layer (spatialhub.scot, OGL) may hold Glasgow points and polygons, not yet checked; TPO is protection, not remarkable-tree status, so a finding aid at most. Named trees to lead-check: Argyle Street ash (UK Tree of the Year 2025), Darnley Sycamore (Heritage Tree, storm damaged by Eowyn), Kelvingrove Park London plane (largest-in-Glasgow claim unverified). Next angle: Ancient Tree Inventory rows for Glasgow, then those three as leads."
   },
   {
    "place": "Pittsburgh",
