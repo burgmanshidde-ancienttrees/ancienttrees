@@ -4,6 +4,22 @@
   "2026-10-22": [
    {
     "date": "2026-10-22",
+    "target": "chicago",
+    "kind": "verify",
+    "tokens": 90000,
+    "trees": 7,
+    "note": "FPCC champion register, one source each, flagged"
+   },
+   {
+    "date": "2026-10-22",
+    "target": "chicago",
+    "kind": "write",
+    "tokens": 100000,
+    "trees": 7,
+    "note": "chi_023 to chi_029; chi_017/chi_018/chi_008 claims and city counts corrected"
+   },
+   {
+    "date": "2026-10-22",
     "target": "glasgow+san-francisco+washington-dc+pittsburgh",
     "kind": "verify",
     "tokens": 56000,
