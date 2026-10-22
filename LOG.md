@@ -30,6 +30,13 @@ Madrid's tourist office answered the 10-20 tourism mail by pointing at the city'
 - **Held:** Häradseken (no public path known on Gotland farmland), Mogadouro (no written source), Hamerenne (private front garden).
 - **Waste, said plainly:** the four Texas trees were verified and written twice. A night run took this LOG's "next lane: Texas" an hour before my claim, and my claim was named `photo-batch-2`, so neither side could see the other. A claim should name the place or list it covers. Cost of the pass: verify 226k, write 175k, for 10 trees, about 40k a tree.
 
+## 2026-10-22 (session with Hidde): what Google sees on the indexed pages, five checks
+
+- **Fixed, live with the next deploy:** (1) 118 paid trees told Google `isAccessibleForFree: true` because "under 6 free" sat in their access line; paid_entry now decides first, English and translated pages. (2) 280 sources written "url (note)" rendered as one broken link; the link is now the url alone (site/src/lib/tree-sources.ts). (3) 23 dead source links repointed: Luxembourg's dated register download to the dataset page (9 trees), four renamed Wikipedia lists (Graz, Innsbruck, Berlin-Mitte, Kopčany; 14 sources). Innsbruck inn_003 and inn_006 had every link dead and now have a live one.
+- **Measured, nothing to fix:** shared text on 60 indexed tree pages is a median 31%, and it is all interface (sheet buttons and dialogs), no story sentence on 20%+ of pages. JSON-LD is clean (WebSite, Organization, TouristAttraction, BreadcrumbList).
+- **For the night run:** `python3 scripts/source_links.py` (new) lists about 40 remaining dead source links on indexed trees, one per tree; repoint each (the host's search, the Wayback Machine), never drop a tree's last source. PageSpeed Insights answered 429 today (keyless quota); retry `python3 scripts/pagespeed.py` another day.
+- **Waits on Hidde:** 431 indexed stories (36%) carry the colon reveal ("which is exactly the point: this is not..."); rewriting those 481 sentences is a priced job, not started.
+
 ## 2026-10-22 (session with Hidde): translations out of Google too
 
 - **Product (Hidde: "translation uit de index halen dan?"):** every translation of a place or tree page (654 urls) joins the strict cut, googlebot tag only, Bing keeps them (`TRANSLATIONS_OUT` in scripts/thin_pages.py). Four translations a digest showed before 09-28 stay. Google's index goes to about 1,450 English pages, nearly all photographed trees plus roster places.
