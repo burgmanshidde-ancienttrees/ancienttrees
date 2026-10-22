@@ -1,7 +1,7 @@
 {
   "city": "Lisbon",
   "country": "Portugal",
-  "updated": "2026-09-16",
+  "updated": "2026-10-22",
   "about": "Trees found while researching Lisbon that are not published. 'leads' failed only on our evidence bar, on the count, or on being folded into a shipped entry; they are the raw material if Lisbon grows. 'blocked' must never ship, each with its one-line reason. Register figures are ICNF's: girth and height in METRES, and age_register is the age at last_measured, not today.",
   "leads": [
     {
@@ -307,6 +307,17 @@
       "girth_m": 7.3,
       "source": "ICNF, Arvoredo de Interesse Publico (CC BY 4.0)",
       "note": "Not researched this pass: south bank of the Tagus (Seixal district), a bridge or ferry crossing away from central Lisbon, so day-trip framing and transport time both need checking before this is worth chasing. Girth 7.3 m is a big holm oak and worth a look in a dedicated south-bank pass."
+    },
+    {
+      "name": "Trees of the Jardim Botânico de Lisboa (Escola Politécnica)",
+      "species": "unknown; the garden is known for large Ficus macrophylla and a palm avenue",
+      "place": "Jardim Botânico de Lisboa, Rua da Escola Politécnica 58, Príncipe Real",
+      "latitude": 38.7183,
+      "longitude": -9.15,
+      "source": "reader tip on r/Lisbon, 2026-10-22 (no name kept); paid entry, so public",
+      "note": "No tree of ours inside this garden yet (lis_003 and lis_013 stand on the square outside). Which trunk is worth the walk is open: ask the tipster, then verify against the Lisbon municipal inventory and ICNF. Needs an open-licence photo before it ships.",
+      "status": "open",
+      "added": "2026-10-22"
     }
   ],
   "blocked": [
