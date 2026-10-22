@@ -1,0 +1,178 @@
+{
+  "city": "Riverside",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Riverside has made city landmarks of four of its trees, and each one has a name attached. Eliza Tibbets planted the Parent Washington Navel Orange Tree in 1873; it now lives in a 22-foot insect-screen tent. The Chicago White Sox planted a redwood in Low Park in 1914, 400 metres away. Theodore Roosevelt planted a palm on Victoria Avenue in 1903. And a sycamore on a median island near Fairmount Park is a landmark nobody has explained. Together they make a short drive across the city, with the first two an easy walk apart.",
+  "meta_description": "Four Riverside landmark trees: the 1873 Parent Navel Orange, the White Sox redwood of 1914, Roosevelt's 1903 palm and a native sycamore.",
+  "question_meta": "Riverside's oldest mapped tree is the Parent Navel Orange Tree, planted by Eliza Tibbets in 1873, now in a screen tent on Magnolia Avenue.",
+  "question_answer": "The oldest tree in Riverside that we map is the Parent Washington Navel Orange Tree, about 150 years old, planted by Eliza Tibbets in 1873 at what is now the corner of Magnolia and Arlington avenues. It is California Historical Landmark number 20, maintained by UC Riverside and the city, and still bearing fruit at the December 2025 harvest. Since 2019 it has stood inside a 22-foot insect-screen tent to keep out citrus greening disease, so you see it through the screen.",
+  "question_context": "The four landmark trees spread across Riverside, and all four are free and on public ground. Start at the corner of Magnolia and Arlington avenues, where the Parent Navel Orange Tree stands in a small city landmark plot looked after by UC Riverside and the city's Parks Department. Since June 2019 it has lived inside a 22-foot insect-screen tent against citrus greening disease, so you see it through the screen; older photographs show it without. About 400 metres away, Low Park sits at the head of Magnolia and Palm avenues, and the Chicago White Sox Redwood Tree stands there beside the tablet Charles Comiskey added in 1927. The Roosevelt Palm is about three kilometres off on Victoria Avenue near Myrtle Street, a street listed on the National Register of Historic Places, and it shares a small plot with five other palms; look for the 1965 tablet at its foot. The Native Sycamore stands on a median island where La Paz Lane meets Bubbling Well Road, by Fairmount Park, about six kilometres north of the orange. See it from the pavement, since crossing to the island means stepping into traffic. We have not checked bus routes between them.",
+  "faq": [
+    {
+      "q": "Where is the original navel orange tree?",
+      "a": "At the corner of Magnolia and Arlington avenues in Riverside, inside a 22-foot insect-screen tent since 2019. Eliza Tibbets planted it in 1873."
+    },
+    {
+      "q": "Which palm did Theodore Roosevelt plant in Riverside?",
+      "a": "The Roosevelt Palm on Victoria Avenue near Myrtle Street, planted on 7 May 1903. It stands with five other palms; it is the one over the 1965 tablet."
+    },
+    {
+      "q": "Why is there a White Sox tree in Riverside?",
+      "a": "Chicago White Sox players planted a redwood in Low Park in 1914, after an exhibition game in the city. Owner Charles Comiskey added a tablet in 1927."
+    },
+    {
+      "q": "Are Riverside's landmark trees free to visit?",
+      "a": "Yes. All four are on public ground: a landmark plot, a city park, a street frontage and a median island."
+    }
+  ],
+  "trees": [
+    {
+      "id": "rvs_001",
+      "name": "Parent Washington Navel Orange Tree",
+      "species": "Washington Navel Orange (Citrus x sinensis 'Washington')",
+      "age_estimate": "about 150 years",
+      "age_min": 150,
+      "age_max": 153,
+      "age_basis": "source",
+      "location": {
+        "address": "Magnolia Avenue at Arlington Avenue, Riverside, California",
+        "latitude": 33.946097822,
+        "longitude": -117.401752632,
+        "neighbourhood": "Arlington Heights, Riverside"
+      },
+      "verified_sources": [
+        "https://cnas.ucr.edu/media/2025/12/06/its-harvest-time-riversides-150-year-old-parent-navel-orange-tree",
+        "https://en.wikipedia.org/wiki/Washington_navel_orange_tree_(Riverside,_California)",
+        "https://www.wikidata.org/wiki/Q85814522"
+      ],
+      "access": "Free, in a small city landmark plot at the corner of Magnolia and Arlington avenues. Since June 2019 the tree is inside a 22 ft tall insect-screen tent to keep out citrus greening disease, so it is seen through the screen (Wikipedia, 2019). Maintained by UC Riverside and the City of Riverside Parks Department.",
+      "transport": "Riverside city street corner; public transport not checked.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "Riverside keeps its most famous tree in a tent. Since June 2019 the Parent Washington Navel Orange Tree has lived inside a 22-foot insect screen, put up to keep out citrus greening disease.\n\nThe tree is about 150 years old. Eliza Tibbets planted it here in 1873, one of two young trees the US Department of Agriculture sent her. The variety itself had reached the department three years earlier, in 1870, from Bahia in Brazil. It is California Historical Landmark number 20 and City of Riverside Landmark number 15.\n\nIt is not a museum piece. UC Riverside and the city's Parks Department look after it together, and in December 2025 the university reported harvest time at the tree, with the old orange in good health and still bearing.\n\nIt stands on a small landmark plot at the corner of Magnolia and Arlington avenues, free to visit at any time. You see it through the screen now, which takes some getting used to: the photograph on this page was taken before the tent went up. The Chicago White Sox redwood in Low Park is about 400 metres away, an easy walk.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Parent_Navel_Orange_Tree_Riverside.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "Eric T. Gunther",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Parent_Navel_Orange_Tree_Riverside.jpg",
+        "status": "approved",
+        "width": 4032,
+        "height": 3024
+      },
+      "how_to_recognise": "You can recognise it by the 22-foot insect-screen tent it has stood inside since 2019, with an orange tree inside. It stands on a small landmark plot at the corner of Magnolia and Arlington avenues."
+    },
+    {
+      "id": "rvs_002",
+      "name": "Chicago White Sox Redwood Tree",
+      "species": "Redwood (Sequoioideae sp., species not confirmed)",
+      "age_estimate": "planted in 1914",
+      "age_min": 110,
+      "age_max": 113,
+      "age_basis": "source",
+      "location": {
+        "address": "Low Park, at the junction of Magnolia and Palm avenues, Riverside, California",
+        "latitude": 33.946821106,
+        "longitude": -117.400947259,
+        "neighbourhood": "Low Park, Riverside"
+      },
+      "verified_sources": [
+        "https://www.raincrossgazette.com/a-redwood-planted-in-low-park-more-than-100-years-ago-tells-an-unknown-story-about-riversiders-and-major-league-baseball/",
+        "https://en.wikipedia.org/wiki/List_of_landmarks_in_Riverside,_California",
+        "https://www.wikidata.org/wiki/Q140613826"
+      ],
+      "access": "Free, public city park (Low Park) at the head of Magnolia and Palm avenues.",
+      "transport": "Riverside city street; public transport not checked.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Low Park",
+        "radius_m": 50
+      },
+      "curation_status": "flagged",
+      "story": "On 25 March 1914 the Chicago White Sox played an exhibition game in Riverside, against the Los Angeles Angels, and planted a redwood. It is still in Low Park, more than 110 years later.\n\nThe exact date and the game come from a local history site; the marker gives only the year. By 1927 the tree was almost 40 feet tall, and the club's owner, Charles Comiskey, had a tablet put up beside it that year. The city later made it City of Riverside Landmark number 60, which is a fair honour for a tree whose only planting crew were professional ballplayers.\n\nTwo things we cannot tell you. The sources call it only a redwood, without saying whether it is a coast redwood, a giant sequoia or something else; if you can tell from the needles or the cones, let us know. And the most recent sign of it is a single photograph taken in August 2026, which shows it standing but says nothing more about its health. A second sighting would help.\n\nLow Park sits at the head of Magnolia and Palm avenues, free and open, about 400 metres from the Parent Navel Orange Tree, so the two make a short walk.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Chicago_White_Sox_Redwood_Tree_and_Low_Park.jpg",
+        "license": "CC0",
+        "attribution": "Josiah.r.white",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Chicago_White_Sox_Redwood_Tree_and_Low_Park.jpg",
+        "status": "approved",
+        "width": 3072,
+        "height": 4080
+      },
+      "how_to_recognise": "You can recognise it as the redwood with the 1927 tablet from Charles Comiskey beside it. It stands in Low Park, where Magnolia and Palm avenues meet."
+    },
+    {
+      "id": "rvs_003",
+      "name": "Roosevelt Palm",
+      "species": "Mexican Fan Palm (Washingtonia robusta)",
+      "age_estimate": "planted in 1903",
+      "age_min": 122,
+      "age_max": 124,
+      "age_basis": "source",
+      "location": {
+        "address": "Victoria Avenue at Myrtle Street, Riverside, California",
+        "latitude": 33.957274618,
+        "longitude": -117.370370959,
+        "neighbourhood": "Victoria Avenue, Riverside"
+      },
+      "verified_sources": [
+        "https://www.raincrossgazette.com/when-teddy-came-to-riverside/",
+        "https://en.wikipedia.org/wiki/List_of_landmarks_in_Riverside,_California",
+        "https://www.wikidata.org/wiki/Q140723663"
+      ],
+      "access": "Free, public street frontage on Victoria Avenue (NRHP-listed 2000). Stands on a small piece of land with five other palms; a 1965 tablet marks it.",
+      "transport": "Riverside city street; public transport not checked.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "Roosevelt Palm plot on Victoria Avenue",
+        "radius_m": 50
+      },
+      "curation_status": "ai_generated",
+      "story": "Theodore Roosevelt planted this palm on 7 May 1903, on a visit to Riverside. The tablet beneath it says 8 May. The local historians who checked the dates say the tablet is wrong, and the tablet has been saying it since 1965.\n\nThe Native Daughters of the Golden West put that tablet up on 27 March 1965, and its text calls the tree a Queen Victoria palm. It is a Mexican fan palm, Washingtonia robusta, as a local history site that researched the visit records. The city made it City of Riverside Landmark number 64, and it stands on Victoria Avenue, itself listed on the National Register of Historic Places in 2000.\n\nThe practical problem is that it has company. The palm shares a small piece of land near Myrtle Street with five other palms, and nothing about the trunks themselves tells you which of the six a president planted. The tablet does: the Roosevelt Palm is the one standing over it. We do not have a photograph we can be sure shows the right trunk, so if you visit, a picture that includes the tablet would help the next person.\n\nThe most recent report, from October 2025, has it still standing along Victoria Avenue. It is on the public street frontage and free to see at any hour, about three kilometres from the Parent Navel Orange Tree.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Roosevelt_Palm.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "CAMarq",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Roosevelt_Palm.jpg",
+        "status": "held",
+        "held_reason": "held 2026-10-22: the frame shows six palms and nothing marks which is the Roosevelt Palm",
+        "width": 672,
+        "height": 1120
+      },
+      "how_to_recognise": "You can recognise it by the 1965 tablet at its foot: of the six palms on the plot, it is the one standing over the tablet. It stands on Victoria Avenue near Myrtle Street."
+    },
+    {
+      "id": "rvs_004",
+      "name": "Native Sycamore Tree (Riverside)",
+      "species": "Plane (Platanus sp.)",
+      "location": {
+        "address": "Median island on La Paz Lane at Bubbling Well Road, Riverside, California",
+        "latitude": 33.997868921,
+        "longitude": -117.382314771,
+        "neighbourhood": "La Paz Lane, Riverside"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/List_of_landmarks_in_Riverside,_California",
+        "https://www.wikidata.org/wiki/Q140723835"
+      ],
+      "access": "Free; a tree in a street median island, seen from the road; crossing the street is a safety issue. Public land.",
+      "transport": "Riverside city streets, near Fairmount Park; public transport not checked.",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "La Paz Lane median island",
+        "radius_m": 30
+      },
+      "curation_status": "flagged",
+      "story": "Riverside has listed a sycamore growing in the middle of a road as one of its official landmarks. It is City of Riverside Landmark number 65, and it stands on the median island where La Paz Lane meets Bubbling Well Road, on the edge of Fairmount Park.\n\nThat listing is almost all anyone has written down about it, and we would rather say so than dress it up. The landmark list names it the Native Sycamore and gives no species, no age, no measurement and no story of how it came to be honoured. The word native points towards the California sycamore, Platanus racemosa, but nothing we could find confirms it, so we list it as a sycamore of unknown species. If you know it, or know why the city picked this tree, tell us.\n\nWhat we can say is that it was standing in July 2026, when a photographer recorded it on the island. The tree is best seen from the pavement rather than from the island itself, because crossing to it means stepping into traffic.\n\nIt is on public land and free to look at, about six kilometres north of the Parent Navel Orange Tree.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Native_Sycamore_Tree.jpg",
+        "license": "CC0",
+        "attribution": "Josiah.r.white",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Native_Sycamore_Tree.jpg",
+        "status": "approved",
+        "width": 3072,
+        "height": 4080
+      },
+      "how_to_recognise": "You can recognise it as the sycamore on the median island in the road, not in the park beside it. It stands where La Paz Lane meets Bubbling Well Road, by Fairmount Park."
+    }
+  ]
+}

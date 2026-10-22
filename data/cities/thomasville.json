@@ -1,0 +1,62 @@
+{
+  "city": "Thomasville",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Thomasville bought a corner lot in 1966 to give one live oak a park of its own. The Big Oak has stood at Crawford and Monroe streets since around 1680, by the local history centre's estimate, and its crown now spreads 169 feet. Trucks have taken limbs off it three times. The city answers with cables, columns, lightning protection, a yearly inspection and a phone number that triggers a camera across the street, so visitors can photograph themselves beneath it.",
+  "meta_description": "Thomasville's Big Oak is a live oak of over 300 years with a 169-foot crown, in its own downtown park since 1966.",
+  "question_meta": "Thomasville's oldest tree is the Big Oak, a live oak dated to around 1680, with a 169-foot crown at Crawford and Monroe streets.",
+  "question_answer": "The oldest tree in Thomasville is the Big Oak, a southern live oak dated to around 1680 by the Thomasville History Center's curator, who says the date is not exact; call it over 300 years. It stands in Elizabeth Ireland Poe Park at Crawford and Monroe streets downtown, with a crown spreading 169 feet, a height of about 72 feet and a trunk close to 28 feet round. It joined the Live Oak Society in 1936 as its 49th member.",
+  "question_context": "The Big Oak has a small park to itself, Elizabeth Ireland Poe Park, at the corner of Crawford and Monroe streets in downtown Thomasville, Georgia. The city bought the lot in 1966 to make the park. It is free and open, with no gate, and there is no public transport to speak of; street parking is the usual approach, though we have not confirmed the nearest spaces. Traffic has been the tree's real enemy: trucks clipped its limbs in 1973, in 1975 and again in 2005. Today city Public Works and arborists inspect it every year and keep it on cables and columns, with a lightning protection system. Look for the posted phone number. Dial it and a remote camera across the street takes a keepsake photograph of you under the tree. The crown spreads 169 feet and the tree stands about 72 feet tall. The marker gives the girth as 27.5 feet, other sources nearer 28; heights also vary by source. It joined the Live Oak Society in 1936 as its 49th member, when the trunk measured 21 feet 6 inches round. The local history centre dates it to around 1680, while saying the date is not exact.",
+  "faq": [
+    {
+      "q": "How old is the Big Oak in Thomasville?",
+      "a": "Over 300 years. The Thomasville History Center's curator dates it to around 1680, while saying the date is not exact."
+    },
+    {
+      "q": "How big is the Big Oak?",
+      "a": "Its crown spreads 169 feet and it stands about 72 feet tall, with a trunk close to 28 feet round. Figures vary a little between sources and the marker."
+    },
+    {
+      "q": "Was the Big Oak a lynching tree?",
+      "a": "No. Local historian Jack Hadley has said it was not."
+    }
+  ],
+  "trees": [
+    {
+      "id": "thv_001",
+      "name": "The Big Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "over 300 years",
+      "age_min": 300,
+      "age_basis": "source",
+      "girth_cm": 850,
+      "height_m": 22,
+      "location": {
+        "address": "Crawford Street at Monroe Street, Elizabeth Ireland Poe Park, Thomasville, Georgia",
+        "latitude": 30.841113888,
+        "longitude": -83.981722222,
+        "neighbourhood": "Downtown Thomasville"
+      },
+      "verified_sources": [
+        "https://www.walb.com/2026/08/27/whats-keeping-thomasvilles-big-oak-alive-after-more-than-300-years/",
+        "https://en.wikipedia.org/wiki/The_Big_Oak",
+        "https://www.wikidata.org/wiki/Q7717719"
+      ],
+      "access": "Free, in a small public park (Elizabeth Ireland Poe Park) at the corner of Crawford and Monroe streets, downtown Thomasville. A posted phone number activates a remote camera across the street for a keepsake photo (WALB 2026).",
+      "transport": "No public transport; downtown Thomasville, street parking nearby (not verified).",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Dial the number posted by the Big Oak and a camera across the street takes your picture with it. Thomasville treats this tree the way other towns treat a courthouse.\n\nIt earned that. The local history centre's curator puts its start around 1680, while admitting the date is not exact, so call it over 300 years. Its crown spreads 169 feet, it stands about 72 feet tall, and the trunk measures roughly 28 feet round; the marker says 27.5, and heights vary by source. When it joined the Live Oak Society in 1936, as the 49th member, the girth was 21 feet 6 inches.\n\nIn 1966 the city bought the corner lot outright to make a park around it, the Elizabeth Ireland Poe Park. Traffic has been the real threat. Trucks clipped its limbs in 1973, in 1975 and again in 2005, and today city Public Works and arborists inspect it every year and keep it on cables, columns and a lightning protection system.\n\nOne story told about it does not hold: local historian Jack Hadley has said it was never a lynching tree.\n\nIt is free and open, at Crawford and Monroe streets in the middle of town.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/The_Big_Oak%2C_Thomasville%2C_GA%2C_US.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Jud McCranie",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Big_Oak%2C_Thomasville%2C_GA%2C_US.jpg",
+        "status": "approved",
+        "width": 5941,
+        "height": 4016
+      },
+      "how_to_recognise": "You can recognise it by a crown 169 feet across, held up by cables and columns, that fills a small corner park on its own. It stands in Elizabeth Ireland Poe Park at Crawford and Monroe streets."
+    }
+  ]
+}

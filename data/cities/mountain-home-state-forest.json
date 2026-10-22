@@ -1,0 +1,95 @@
+{
+  "city": "Mountain Home State Forest",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Two giant sequoias in Mountain Home Grove take their names from the first pages of Genesis, and they had very different fires. Genesis, once ranked seventh among the largest trees known, lost its top in the 2020 Castle Fire and was badly burned at the base. The Adam Tree, named around 1884 and measured at 29 metres round in 1978, came through with a blackened base and little else. The grove sits in a state demonstration forest above Springville, free to enter and a long mountain drive from anywhere.",
+  "meta_description": "Mountain Home Grove holds Genesis, once the seventh-largest tree known, burned in the 2020 Castle Fire, and the Adam Tree, named around 1884.",
+  "question_meta": "Genesis, a giant sequoia once ranked seventh-largest on Earth, stands burned but alive in Mountain Home Grove after the 2020 Castle Fire.",
+  "question_answer": "The tree Mountain Home is known for is Genesis, a giant sequoia that ranked seventh among the largest trees known before the 2020 Castle Fire. Its last full measurement, from 2013, gave it 86.2 metres of height and 24.04 metres of girth, figures that date from before the fire took its top and burned its base. Visitors in 2021 found it badly damaged but alive, and nothing more recent has been published. The grove's other named giant, the Adam Tree, held the title of largest in the grove until Genesis was measured in 1985. Neither tree has a published age.",
+  "question_context": "Mountain Home Grove lies in Mountain Home Demonstration State Forest, run by CAL FIRE, in the mountains of Tulare County above the town of Springville. The surrounding land is a patchwork of the state forest, Balch Park and Giant Sequoia National Monument. There is no bus and no shortcut: the way in is by car on mountain roads, and the condition of those roads and of the trails to the two named trees changes with the season and with the aftermath of the 2020 Castle Fire, so check with CAL FIRE or Tulare County before setting out. Entry is free. The Adam Tree stands to the north of Genesis, a few kilometres apart within the grove, and between them they tell the fire's story from both sides: one tree that lost its crown, one that was barely touched. Adam was named around 1884 by Jesse Hoskins and was the grove's largest until Genesis was measured in 1985. Both pins are approximate, and neither tree has a published age. The latest visitor reports date from 2021, so anyone who walks the grove now sees more than we can tell you.",
+  "faq": [
+    {
+      "q": "What is the largest tree in Mountain Home Grove?",
+      "a": "Genesis, a giant sequoia measured in 2013 at 86.2 metres tall and 24.04 metres round. Those are pre-fire figures: the 2020 Castle Fire took its top, so it is shorter today by an amount nobody has published."
+    },
+    {
+      "q": "Did the Castle Fire kill the sequoias at Mountain Home?",
+      "a": "Not the two named here. Visitors in 2021 found Genesis badly damaged but alive and the Adam Tree nearly untouched. We have found no report on either since 2023."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. The grove is in a state forest with no entry fee. It is reached by car from Springville; check road and trail status with CAL FIRE before you go."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mhf_001",
+      "name": "Adam Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "girth_cm": 2900,
+      "location": {
+        "address": "Mountain Home Grove, Mountain Home Demonstration State Forest area, Tulare County, California",
+        "latitude": 36.2434,
+        "longitude": -118.673,
+        "neighbourhood": "Mountain Home Grove"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Adam_Tree",
+        "https://en.wikipedia.org/wiki/Mountain_Home_Grove",
+        "https://sequoiaquest.com/mountain-home-june-25-27-2021.html",
+        "https://www.ilovetrees.net/mountain-home-castle-fire/",
+        "https://www.wikidata.org/wiki/Q4678611"
+      ],
+      "access": "Free; in the Mountain Home Grove (CAL FIRE demonstration forest / Balch Park / Giant Sequoia National Monument land). Reached on foot inside the grove; the exact trail and seasonal road status were not confirmed from a fetched official page, so say 'check with CAL FIRE or Tulare County before going'.",
+      "transport": "No public transport. Nearest town Springville, California, by car on mountain roads.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The Adam Tree was the largest sequoia in Mountain Home Grove for exactly as long as nobody had measured Genesis. Jesse Hoskins named it around 1884, and in 1978 the tree surveyors Flint and Law put numbers on it: 29 metres round and 991.6 cubic metres of wood. Seven years later the same pair measured Genesis, elsewhere in the grove, and Adam slipped to second place at home. Ranked against every giant sequoia known, it now sits 20th or 21st; the lists disagree by one place.\n\nThe Castle Fire burned through Mountain Home in 2020 and took the top off Genesis. Adam came off far better. A visitor who walked the grove in June 2021 wrote that it looked virtually untouched; another account describes a blackened, undermined base on a tree that was otherwise fine. Both are hobbyist trip reports, and we have found nothing written about it since 2023, so its present state rests on their word.\n\nThe grove is free to enter. Getting here is a drive on mountain roads from Springville, with no bus, and we could not confirm the trail to the tree or whether the road is open in a given month, so check with CAL FIRE or Tulare County before you set out.\n\nNobody has published an age for the Adam Tree. If you know how old it is, or you have stood under it since the fire, tell us.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Adam_Tree_-_Mountain_Home_Grove.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Mikesclark",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Adam_Tree_-_Mountain_Home_Grove.jpg",
+        "status": "approved",
+        "width": 1325,
+        "height": 2000
+      },
+      "how_to_recognise": "You can recognise it by the trunk, 29 metres round when measured in 1978, the second-largest sequoia in the grove after Genesis. It stands in Mountain Home Grove, north of Genesis."
+    },
+    {
+      "id": "mhf_002",
+      "name": "Genesis Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "girth_cm": 2404,
+      "height_m": 86.2,
+      "location": {
+        "address": "Mountain Home Grove, Mountain Home Demonstration State Forest, Tulare County, California",
+        "latitude": 36.215119,
+        "longitude": -118.669395,
+        "neighbourhood": "Mountain Home Grove"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Genesis_Tree",
+        "https://en.wikipedia.org/wiki/Mountain_Home_Grove",
+        "https://sequoiaquest.com/mountain-home-june-25-27-2021.html",
+        "https://www.ilovetrees.net/mountain-home-castle-fire/",
+        "https://www.wikidata.org/wiki/Q5532789"
+      ],
+      "access": "Free; inside Mountain Home Demonstration State Forest (CAL FIRE). Reached on foot in the grove; trail and seasonal road status not confirmed from a fetched official page (cal fire page returned 403).",
+      "transport": "No public transport. Nearest town Springville, California, by car.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Before the 2020 Castle Fire, Genesis ranked seventh among the largest trees known on Earth. Then the fire came through Mountain Home Grove, and the figures on this page became history.\n\nThe name came late. The tree surveyors Flint and Law named and measured it in 1985, a century after the neighbouring Adam Tree had been named, and promptly demoted Adam to second-largest in the grove. The last full measurement, from 2013, gave Genesis a height of 86.2 metres and a girth of 24.04 metres at chest height. Read both numbers as a record of the tree before the fire. It is shorter now, by an amount nobody has published.\n\nTwo visitors who walked the grove in 2021 described the damage the same way: the top gone, many branches lost, the base badly burned. Neither said it was dead. That is also the most recent word we have; nothing written since 2023 says whether Genesis is holding on or declining. If you have seen it lately, we would like to know.\n\nThe grove is part of a state demonstration forest run by CAL FIRE and is free to enter. It is a drive on mountain roads from Springville with no public transport, and we could not confirm the trail or the road's season, so check with CAL FIRE before you go. No age has been published for it either.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Genesis_tree.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Mikesclark",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Genesis_tree.jpg",
+        "status": "approved",
+        "width": 1688,
+        "height": 3000
+      },
+      "how_to_recognise": "You can recognise it by the fire damage on the grove's largest sequoia: a badly burned base and a crown that lost its top in 2020. It stands in Mountain Home Grove, south of the Adam Tree."
+    }
+  ]
+}

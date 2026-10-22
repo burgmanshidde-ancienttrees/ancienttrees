@@ -1,0 +1,61 @@
+{
+  "city": "Stanislaus National Forest",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The largest known juniper in the United States stands in Sardine Meadow, at the end of a rough Forest Service road in the Stanislaus National Forest. The Bennett Juniper is about 3.9 metres across and 24 metres tall, and cores taken in the 1930s and again in 1989 both put it near 3,000 years, though the hollow trunk keeps the full count out of reach. It survived the 2018 Donnell Fire, and since 2022 its three acres belong to the Mother Lode Land Trust.",
+  "meta_description": "The Bennett Juniper in Stanislaus National Forest is the largest known juniper in the US, cored at close to 3,000 years old.",
+  "question_meta": "The Bennett Juniper, cored at close to 3,000 years, is the largest known juniper in the US, in Sardine Meadow, Stanislaus National Forest.",
+  "question_answer": "The oldest tree in Stanislaus National Forest that we map is the Bennett Juniper, a grand juniper in Sardine Meadow cored at about 3,000 years. A core taken in the 1930s gave about 3,000; a second in 1989 gave almost 3,000. The trunk is partly hollow, so neither reached the centre, and the man it is named after believed it was over 6,000, by extrapolation rather than measurement. By the American Forests points formula it is the largest known juniper in the United States, about 3.9 metres across and 24 metres tall.",
+  "question_context": "The Bennett Juniper stands in Sardine Meadow, on a three-acre preserve that is a private inholding inside Stanislaus National Forest. The Mother Lode Land Trust has owned it since November 2022, and entry is free. Getting there is the hard part. From the Pinecrest side you follow Forest Service road 5N01 and then the unpaved 5N83Y and 5N83YB to a pull-around, where a short signed path leads to the tree. A high-clearance vehicle is needed, and snow closes the road in winter; one listing gives the season as mid-April to mid-December, though we have only seen that secondhand. There is no public transport. When the Forest Service ran a field trip to the tree in October 2025, it set out from the Summit Ranger Station at Pinecrest. The tree came through the 2018 Donnell Fire. What waits at the end is the largest known juniper in the United States, about 3.9 metres across and 24 metres tall, cored at close to 3,000 years. It was long counted a western juniper and is now placed in the grand juniper; one book calls it a mountain juniper.",
+  "faq": [
+    {
+      "q": "How old is the Bennett Juniper?",
+      "a": "Close to 3,000 years by two cores, one from the 1930s and one from 1989. The trunk is partly hollow, so a full count is impossible, and older claims of 6,000 years rest on extrapolation."
+    },
+    {
+      "q": "Can you drive to the Bennett Juniper?",
+      "a": "Almost. Unpaved Forest Service roads lead to a pull-around with a short walking path to the tree. You need high clearance, and snow closes the road in winter."
+    },
+    {
+      "q": "Who owns the Bennett Juniper?",
+      "a": "The Mother Lode Land Trust, since November 2022. The three-acre preserve sits inside Stanislaus National Forest and is free to visit."
+    }
+  ],
+  "trees": [
+    {
+      "id": "snf_001",
+      "name": "Bennett Juniper",
+      "species": "Grand Juniper (Juniperus grandis)",
+      "age_estimate": "roughly 3,000 years (disputed)",
+      "age_basis": "source",
+      "girth_cm": 1216,
+      "height_m": 24,
+      "location": {
+        "address": "Sardine Meadow, Stanislaus National Forest inholding, Tuolumne County, California",
+        "latitude": 38.30911667,
+        "longitude": -119.7971,
+        "neighbourhood": "Sardine Meadow"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Bennett_Juniper",
+        "https://www.trailsoffroad.com/US/california/scout-routes/4981-bennett-juniper-road",
+        "https://www.wikidata.org/wiki/Q20857822"
+      ],
+      "access": "Free. Three-acre preserve on a Stanislaus National Forest inholding, owned by Mother Lode Land Trust since Nov 2022. Reached by unpaved Forest Service road 5N83Y/5N83YB off 5N01 to a pull-around with a short walking path and signs (Trails Offroad). High clearance needed; road closed by snow in winter (OnX listing: seasonal, 15 April to 15 December, seen only in a search summary).",
+      "transport": "No public transport. By car from Pinecrest (Forest Service field trip in October 2025 started at Summit Ranger Station, Pinecrest) on rough dirt roads, high clearance.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The largest known juniper in the United States stands in a three-acre clearing at the end of a rough forest road. By the American Forests points formula the Bennett Juniper scores 573: a trunk about 3.9 metres across and 24 metres tall.\n\nHow old it is depends on who you ask. A core taken in the 1930s by Glock suggested about 3,000 years; another, taken in 1989 by Peter Brown, said almost 3,000. Neither could reach the middle, because the tree is partly hollow. The man it is named after, Bennett, believed it was over 6,000 years old, by extrapolation rather than by any core. Read 3,000 as the best working figure and the rest as a dispute that cannot be settled without the missing wood.\n\nEven its species has moved. It was long counted a western juniper; the USDA now places it in the grand juniper, and a 2001 University of California Press book calls it a mountain juniper. It came through the 2018 Donnell Fire, and in November 2022 the ground passed to the Mother Lode Land Trust, which looks after it as a preserve inside Stanislaus National Forest.\n\nMost of what we know comes from one family of sources, so take the details as reported rather than settled. Getting there takes high clearance on unpaved Forest Service roads from the Pinecrest side, and snow closes them in winter. Entry is free.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Bennett_Juniper_south_side.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Dave Bunnell",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Bennett_Juniper_south_side.jpg",
+        "status": "approved",
+        "width": 5133,
+        "height": 7414
+      },
+      "how_to_recognise": "You can recognise it by the trunk, about 3.9 metres across, in a signed three-acre preserve. It stands at the end of a short walking path from the pull-around on Forest Road 5N83Y in Sardine Meadow."
+    }
+  ]
+}

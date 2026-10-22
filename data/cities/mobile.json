@@ -1,0 +1,57 @@
+{
+  "city": "Mobile",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Mobile's best-known tree comes with a hanging. Charles Boyington, a printer executed on 20 February 1835 for the murder of Nathaniel Frost, swore an oak would grow from his heart to prove his innocence, and the live oak by the Church Street Graveyard is the one the city has pointed to ever since. The cemetery wall was moved back after 1900, so the Boyington Oak now stands outside it on Bayou Street, free to see, with its own festival every May.",
+  "meta_description": "The Boyington Oak in Mobile, Alabama, is the live oak said to have grown from a hanged man's grave in 1835, outside the Church Street Graveyard.",
+  "question_meta": "Mobile's Boyington Oak stands outside the Church Street Graveyard, the live oak of a legend about a printer hanged in 1835.",
+  "question_answer": "The tree Mobile is known for is the Boyington Oak, a southern live oak on Bayou Street just outside the wall of the Church Street Graveyard. By the city's legend it grew from the grave of Charles Boyington, hanged in 1835 for a murder he swore he did not commit, who said an oak would rise from his heart as proof. The hanging is on record; the link to the tree is folklore. Nobody has dated the oak, so its age is open. It was still standing in May 2025, when Mobile held its sixth annual Boyington Oak Festival.",
+  "question_context": "The Boyington Oak stands in downtown Mobile, at the Church Street Graveyard, whose address is 106 South Scott Street. The tree is not inside the cemetery. When the wall was moved back after 1900, the oak ended up on the outside, at the edge of Bayou Street, so you can see it from the public street at any hour without passing a gate. The graveyard itself offers free city walking tours that start from its Scott Street gate, and the oak is a short walk from there along the wall. Downtown is walkable; we have not checked the nearest bus stop. The legend is the reason to come. Charles Boyington, a printer, was hanged on 20 February 1835 for the murder of Nathaniel Frost and buried in the potter's field corner of this graveyard, swearing that an oak would grow from his heart to prove him innocent. The hanging is on record; the link between his grave and this tree is folklore, and nobody has dated the oak. Ghost stories attach to it freely. Each May Mobile holds a Boyington Oak Festival, and the sixth, in 2025, included a trolley ride out to the tree.",
+  "faq": [
+    {
+      "q": "Is the Boyington Oak inside the cemetery?",
+      "a": "No. It stands just outside the wall of the Church Street Graveyard, on the edge of Bayou Street, because the wall was moved back after 1900."
+    },
+    {
+      "q": "Did the oak really grow from Charles Boyington's grave?",
+      "a": "That is the legend. Boyington was hanged in 1835 and buried in the graveyard's potter's field corner, but no ring count or record ties the tree to his grave."
+    },
+    {
+      "q": "Is it free to see?",
+      "a": "Yes. It is visible from the public street, and the graveyard runs free walking tours from its Scott Street gate."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mob_001",
+      "name": "Boyington Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "location": {
+        "address": "Bayou Street, outside the wall of Church Street Graveyard (106 S Scott St), Mobile, Alabama",
+        "latitude": 30.6861,
+        "longitude": -88.0515,
+        "neighbourhood": "Church Street Graveyard, Mobile"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Boyington_Oak",
+        "https://www.fox10tv.com/2025/05/13/6th-annual-boyington-oak-festival",
+        "https://www.wikidata.org/wiki/Q4952495"
+      ],
+      "access": "Free. The oak stands just outside the cemetery wall on the edge of Bayou Street, visible from the public street (Wikipedia). The graveyard itself has free city walking tours from the Scott Street gate.",
+      "transport": "Downtown Mobile; walkable from the Church Street Graveyard, Scott Street gate. Bus stop not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Charles Boyington swore an oak would grow from his heart to prove he was innocent. He was hanged in Mobile on 20 February 1835, and there is an oak.\n\nBoyington was a printer, convicted of murdering Nathaniel Frost the year before. He was buried in the potter's field corner of the Church Street Graveyard, and by the story Mobile has told ever since, the live oak that grew there is the one he promised. Nobody has dated the tree with a ring count, and no age for it is on the record we could check, so the legend is doing the dating here. That is worth saying plainly: the oak and the hanging are both real, and the link between them is folklore.\n\nMobile has embraced it anyway. When the cemetery wall was moved back after 1900, the tree ended up on the outside, so today it stands at the edge of Bayou Street, free to see at any hour from the public pavement. In May 2025 Mobile held its sixth annual Boyington Oak Festival, with a trolley ride out to the tree, and a local station reported it still standing almost 200 years after the execution. Ghost stories come with it.\n\nThe graveyard itself runs free walking tours from its Scott Street gate. If you know how old the oak really is, tell us.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Boyington_Oak_in_Mobile.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Altairisfar",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Boyington_Oak_in_Mobile.jpg",
+        "status": "approved",
+        "width": 2299,
+        "height": 3066
+      },
+      "how_to_recognise": "You can recognise it as the live oak outside the wall of the Church Street Graveyard rather than inside it. It stands on the edge of Bayou Street, just beyond the cemetery wall."
+    }
+  ]
+}

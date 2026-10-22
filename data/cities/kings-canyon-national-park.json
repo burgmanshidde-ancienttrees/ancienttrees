@@ -144,6 +144,38 @@
         "height": 640,
         "taken_month": 5
       }
+    },
+    {
+      "id": "kcy_004",
+      "name": "Hart Tree",
+      "species": "Giant Sequoia (Sequoiadendron giganteum)",
+      "location": {
+        "address": "Redwood Mountain Grove, Kings Canyon National Park, Fresno County, California",
+        "latitude": 36.6952,
+        "longitude": -118.891,
+        "neighbourhood": "Redwood Mountain Grove"
+      },
+      "verified_sources": [
+        "https://www.nps.gov/seki/two-sequoia-groves-and-a-wildfire.htm",
+        "https://www.nps.gov/seki/planyourvisit/trailcond.htm",
+        "https://en.wikipedia.org/wiki/Hart_Tree",
+        "https://www.wikidata.org/wiki/Q5674087"
+      ],
+      "access": "Free to walk (park entry fee for Kings Canyon NP applies, amount not verified here). Reached by the Redwood Canyon trail loop (Hart Tree, Sugar Bowl, Big Springs). NPS trail condition entry dated 18 June 2026: maintained trail cleared from the trailhead down Redwood Creek; other routes densely overgrown with extreme fire damage from the 2021 KNP Complex Fire. Seasonal dirt road, not accessible by vehicle in winter.",
+      "transport": "No public transport. By car to the Redwood Canyon trailhead on the Generals Highway; walking distance of the loop not recorded in a fetched source.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "The Hart Tree came through the 2021 KNP Complex Fire with green branches to spare. The Roosevelt Tree, 37 metres to the south, did not survive it.\n\nMichael Hart found this sequoia around 1880, and it still carries his name. It holds about 980 cubic metres of wood, which ranks it 24th or 25th among all known giant sequoias, depending on whose list you read. Nobody we could find has published its height or girth, and nobody has published an age.\n\nThe fire swept through Redwood Mountain Grove in 2021. When the National Park Service went back to look, the photograph it published from July 2022 showed the Hart Tree overall in good shape, with numerous green branches remaining. Its neighbour was dead. That contrast is the reason to make the walk: two giants of the same grove, one standing and one gone, a short stone's throw apart.\n\nYou reach it on foot by the Redwood Canyon loop, the trail that also passes the Sugar Bowl and Big Springs. In June 2026 the park reported the maintained trail cleared from the trailhead down Redwood Creek, while the other routes were densely overgrown and badly fire-damaged. The trailhead is down a dirt road off the Generals Highway that closes to cars in winter, and the Kings Canyon park entry fee applies. If you know how old it is, tell us.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Hart_Tree_%281%29.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "DiverDave",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Hart_Tree_%281%29.JPG",
+        "status": "approved",
+        "width": 1200,
+        "height": 1600
+      },
+      "how_to_recognise": "You can recognise it as the living sequoia at the end of the Hart Tree Trail, green branches still on it after the 2021 fire. It stands 37 metres north of the Roosevelt Tree, which died in that fire."
     }
   ]
 }

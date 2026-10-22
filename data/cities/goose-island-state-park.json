@@ -1,0 +1,63 @@
+{
+  "city": "Goose Island State Park",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The Big Tree at Goose Island is a live oak over 1,000 years old by the Texas Forest Service, and nearer 2,000 by other recent estimates. Its trunk is more than 35 feet round and its crown spreads about 90 feet. It was the Texas state champion live oak from 1969 to 2003, and Texas Parks and Wildlife counts it among the largest live oaks in the country. Hurricane Harvey passed over in 2017 and left it relatively unscathed.",
+  "meta_description": "The Big Tree in Goose Island State Park, Texas, is a live oak over 1,000 years old, state champion from 1969 to 2003.",
+  "question_meta": "Goose Island State Park's Big Tree is a live oak over 1,000 years old, possibly nearer 2,000, and a former Texas champion.",
+  "question_answer": "The oldest tree in Goose Island State Park is the Big Tree, a southern live oak the Texas Forest Service estimates at over 1,000 years old; other recent estimates put it nearer 2,000. Its trunk is more than 35 feet round, it stands over 45 feet tall and its crown spreads about 90 feet. It held the Texas state champion title for live oaks from 1969 to 2003 and was a charter member of the Live Oak Society. Locals also call it the Bishop Oak or the Lamar Oak.",
+  "question_context": "The Big Tree stands in Goose Island State Park, at 3918 Park Road 13, north of Rockport. It is in the park's Lamar section, which is why some locals call it the Lamar Oak; others know it as the Bishop Oak. You reach it by car, since no public transport runs out here, and the tree is right beside the park road with parking next to it, so the walk is a matter of steps rather than miles. A fence rings the base to keep feet off the roots, but the crown spreads about 90 feet, well past the fence, and visitors can stand underneath it. An older newspaper account describes rangers opening a gate for visitors; that arrangement may have changed, so expect the fence. The park opens daily from 6 a.m. to 10 p.m., and entry is $5 for adults and free for children under 13. The tree came through Hurricane Harvey in August 2017 relatively unscathed, and Texas Parks and Wildlife still lists it among the largest live oaks in the United States. Its age stays a range rather than a number: over 1,000 years by the Texas Forest Service, nearer 2,000 by other estimates.",
+  "faq": [
+    {
+      "q": "How old is the Big Tree at Goose Island?",
+      "a": "Over 1,000 years by the Texas Forest Service's estimate; other recent estimates say closer to 2,000. The sources do not agree on a single figure."
+    },
+    {
+      "q": "Can you walk under the Big Tree?",
+      "a": "Yes. The base is fenced to protect the roots, but you can stand beneath the crown."
+    },
+    {
+      "q": "Does it cost money to see the Big Tree?",
+      "a": "It is inside Goose Island State Park, where entry is $5 for adults and free for children under 13. The park is open daily from 6 a.m. to 10 p.m."
+    }
+  ],
+  "trees": [
+    {
+      "id": "gis_001",
+      "name": "The Big Tree",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "over 1,000 years",
+      "age_min": 1000,
+      "age_max": 2000,
+      "age_basis": "source",
+      "girth_cm": 1067,
+      "height_m": 14,
+      "location": {
+        "address": "Goose Island State Park, 3918 Park Road 13, Rockport, Texas",
+        "latitude": 28.1525,
+        "longitude": -96.9766,
+        "neighbourhood": "Lamar, Goose Island State Park"
+      },
+      "verified_sources": [
+        "https://tpwd.texas.gov/state-parks/goose-island",
+        "https://en.wikipedia.org/wiki/The_Big_Tree,_Rockport",
+        "https://www.wikidata.org/wiki/Q7717840"
+      ],
+      "access": "Paid park entry: Goose Island State Park open daily 6 a.m. to 10 p.m., adults $5, under 13 free (TPWD). The tree stands by the road with parking; the base is fenced to protect the roots, though visitors can stand under the crown (Wikipedia). The ranger-led gate opening in a 2008 article may have changed.",
+      "transport": "No public transport; by car, 12 km north of Rockport (distance not verified here), Goose Island State Park.",
+      "location_precision": "confirmed",
+      "curation_status": "ai_generated",
+      "story": "The Texas Forest Service put this live oak at over 1,000 years old. Other recent estimates say nearer 2,000. The sources do not settle it, and we will not pretend to.\n\nIt was the Texas state champion live oak from 1969 to 2003, and Texas Parks and Wildlife still calls it one of the largest live oaks in the United States. The trunk is over 35 feet round, the tree over 45 feet tall, and the crown spreads about 90 feet. It was a charter member of the Live Oak Society, number 16, and locals also know it as the Bishop Oak or the Lamar Oak.\n\nHurricane Harvey struck this coast on 25 August 2017. The Big Tree came through relatively unscathed, which says as much about it as any measurement.\n\nThe tree stands by the road inside Goose Island State Park, with parking beside it. A fence keeps people off the roots at the base, but you can stand under the crown. The park opens daily from 6 a.m. to 10 p.m., with entry at $5 for adults and free for children under 13, and you will need a car: it lies north of Rockport on Park Road 13.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Big_tree.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Larry D. Moore",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Big_tree.jpg",
+        "status": "approved",
+        "width": 1794,
+        "height": 1299
+      },
+      "how_to_recognise": "You can recognise it by the fence around a live oak trunk over 35 feet round, under a crown about 90 feet across. It stands beside the park road, with parking, in the Lamar section of Goose Island State Park."
+    }
+  ]
+}

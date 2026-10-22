@@ -1,0 +1,61 @@
+{
+  "city": "Logan Canyon",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The Jardine Juniper is often said to be 3,000 years old. Cores taken in the 1950s said about 1,500. It is a Rocky Mountain juniper only about 12 metres tall with a trunk 7.2 metres round, found in 1923 on a ridge above Logan Canyon, and the walk to it is a day: about 11 miles there and back from Wood Camp on US-89.",
+  "meta_description": "The Jardine Juniper above Logan Canyon, Utah, is about 1,500 years old by its cores: an 11-mile round-trip hike from Wood Camp on US-89.",
+  "question_meta": "Logan Canyon's oldest tree is the Jardine Juniper, about 1,500 years old by its cores, still showing green in an undated report.",
+  "question_answer": "The oldest tree in Logan Canyon is the Jardine Juniper, a Rocky Mountain juniper about 1,500 years old by cores taken in the 1950s. It is often credited with 3,000 years, but the cores do not support that. The tree is about 12 metres tall with a trunk 7.2 metres round, and it was found in 1923 by Maurice Blood Linford. Visit Utah reports a small bunch of greenery still alive in its upper branches; that report is undated, and we have found no dated sighting since 2020.",
+  "question_context": "The Jardine Juniper Trail starts at the Wood Camp Campground trailhead on US-89, a drive up Logan Canyon from the city of Logan, Utah. There is no public transport up the canyon, and parking at the trailhead is paid. Visit Utah gives the hike as about 11 miles there and back with roughly 2,145 feet of elevation gain. The tree itself is only about 2.5 kilometres from the trailhead in a straight line, so treat the mileage as Visit Utah's figure for the trail as walked; the route was realigned by the Forest Service in recent years. The trail is open all year, but in spring 2026 hikers reported snow and mud lingering on the shady side. Do not expect a tall tree at the top. The Jardine Juniper is about 12 metres high; what stops people is the trunk, 7.2 metres round, on a tree about 1,500 years old by cores taken in the 1950s. Maurice Blood Linford found it in 1923. The latest word on its health is an undated report of a small bunch of green in the upper branches, so a dated report from anyone who makes the climb is worth more than usual.",
+  "faq": [
+    {
+      "q": "Is the Jardine Juniper still alive?",
+      "a": "As far as we know. Visit Utah reports a small bunch of green in the upper branches, but the report is undated, and we have found no dated sighting since 2020."
+    },
+    {
+      "q": "How long is the hike to the Jardine Juniper?",
+      "a": "About 11 miles round trip with roughly 2,145 feet of gain, starting from the Wood Camp Campground trailhead on US-89 in Logan Canyon. Parking there is paid."
+    },
+    {
+      "q": "Is the Jardine Juniper 3,000 years old?",
+      "a": "Probably not. That figure is often repeated, but cores taken in the 1950s indicated about 1,500 years."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lgc_001",
+      "name": "Jardine Juniper",
+      "species": "Rocky Mountain Juniper (Juniperus scopulorum)",
+      "age_estimate": "roughly 1,500 years",
+      "age_basis": "source",
+      "girth_cm": 720,
+      "height_m": 12,
+      "location": {
+        "address": "Logan Canyon, Uinta-Wasatch-Cache National Forest, Cache County, Utah",
+        "latitude": 41.81605,
+        "longitude": -111.63257,
+        "neighbourhood": "Logan Canyon"
+      },
+      "verified_sources": [
+        "https://www.visitutah.com/articles/jardine-juniper-trail",
+        "https://en.wikipedia.org/wiki/Jardine_Juniper",
+        "https://www.wikidata.org/wiki/Q16997958"
+      ],
+      "access": "Free. Jardine Juniper Trail from Wood Camp Campground trailhead on US-89 in Logan Canyon (GPS 41.797418,-111.646806 per Visit Utah); about 11 miles round trip with roughly 2,145 ft elevation gain (Visit Utah); parking at the trailhead is paid. Open year-round per the article; Trailforks reports in spring 2026 show snow and mud on the shady side.",
+      "transport": "No public transport. By car up Logan Canyon on US-89 from Logan, Utah.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "Hikers will tell you the Jardine Juniper is 3,000 years old. The wood disagrees: cores taken in the 1950s put it at about 1,500, a figure the state's own tourism site repeats. Half the legend is still a very old tree.\n\nMaurice Blood Linford found it in 1923 on a ridge above Logan Canyon and named it after William Marion Jardine. It is not tall, about 12 metres, but the trunk measures 7.2 metres round. At 1,500 years it was already old when the first Europeans reached North America.\n\nWhether it is still alive is a fair question, and the answer is thinner than we would like. Visit Utah reports a small bunch of greenery in the upper branches and says it is still alive, but the article carries no date, and we have found no dated sighting of the tree since 2020. If you make the climb, tell us what you see up there.\n\nAnd it is a climb. The Jardine Juniper Trail starts at the Wood Camp Campground trailhead on US-89, where parking is paid, and runs about 11 miles there and back with roughly 2,145 feet of gain, by Visit Utah's figures. It is open all year, but the shady side holds snow and mud well into spring.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jardine_Juniper.jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Danielle Philli",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Jardine_Juniper.jpg",
+        "status": "approved",
+        "width": 2432,
+        "height": 3647
+      },
+      "how_to_recognise": "You can recognise it by a trunk 7.2 metres round on a tree only about 12 metres tall, with a small bunch of green in its upper branches. It stands at the top of the Jardine Juniper Trail above Wood Camp."
+    }
+  ]
+}

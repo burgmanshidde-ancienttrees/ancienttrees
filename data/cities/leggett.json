@@ -1,0 +1,60 @@
+{
+  "city": "Leggett",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Leggett is where US-101 meets a coast redwood with a road through it. The Chandelier Tree is 84 metres tall by laser, rather less than the 315 feet its sign claims, and in the late 1930s the Underwood family cut a tunnel through its base, 6 feet wide and 6 feet 9 inches high, wide enough for a car. It has been a paid roadside stop ever since, in a private park open every day of the year but Christmas and Thanksgiving.",
+  "meta_description": "The Chandelier Tree at Leggett is an 84-metre coast redwood with a car tunnel cut through its base in the late 1930s.",
+  "question_meta": "Leggett's Chandelier Tree is an 84-metre coast redwood with a 1930s car tunnel through its base, in a private park on US-101.",
+  "question_answer": "The tree Leggett is known for is the Chandelier Tree, a coast redwood 84 metres tall by laser rangefinder, with a tunnel cut through its base in the late 1930s that cars can drive through. The sign at the park claims 315 feet in height and 21 feet in width; modern measurements give 276 feet and 16 feet across at chest height. An age of 2,400 years is often quoted but we could not trace it to a source. The name comes from limbs 4 to 7 feet thick that branch out from about 100 feet up.",
+  "question_context": "The Chandelier Tree stands in Drive-Thru Tree Park, a privately owned park at 67402 Drive Thru Tree Road, Leggett, just off US-101 in Mendocino County where the highway meets CA-271. There is no public transport; nearly everyone arrives by car, and the car is the point. The tunnel through the base is 6 feet wide and 6 feet 9 inches high, cut in the late 1930s by the Underwood family, who had bought the grove in 1921. Cutting it damaged the tree, and it has also made the place a roadside stop for close to ninety years. Larger vehicles may not fit, and there is a separate fee for walking through on foot. The park opens daily except Christmas and Thanksgiving. One listing gives $15 a car, with hours from 8:30 a.m. to 8 p.m. in summer and to 5 p.m. off-season; these come from secondhand listings rather than the owners, so call 707-925-6363 before you rely on them. Look up once you are through: the limbs that give the tree its name, 4 to 7 feet thick, branch out from about 100 feet. A road blog found the tree standing and the park busy in July 2026.",
+  "faq": [
+    {
+      "q": "Can you still drive through the Chandelier Tree?",
+      "a": "Yes. It is the park's attraction and the tree was standing and open to visitors in July 2026. The tunnel is 6 feet wide and 6 feet 9 inches high, so larger vehicles may not fit."
+    },
+    {
+      "q": "How tall is the Chandelier Tree?",
+      "a": "About 84 metres, 276 feet, by laser rangefinder. The park's sign says 315 feet."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "Entry is paid. One listing gives $15 per car, with a separate fee for pedestrians; call the park on 707-925-6363 to confirm. It is closed on Christmas and Thanksgiving."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lgt_001",
+      "name": "Chandelier Tree",
+      "species": "Coast Redwood (Sequoia sempervirens)",
+      "height_m": 84,
+      "location": {
+        "address": "Drive-Thru Tree Park, 67402 Drive Thru Tree Rd, Leggett, California",
+        "latitude": 39.8583984,
+        "longitude": -123.7192347,
+        "neighbourhood": "Leggett"
+      },
+      "verified_sources": [
+        "https://en.wikipedia.org/wiki/Chandelier_Tree",
+        "https://www.gribblenation.org/2026/07/the-chandelier-tree-and-drive-thru-tree.html",
+        "https://www.roadsideamerica.com/tip/11298",
+        "https://www.wikidata.org/wiki/Q1061704"
+      ],
+      "access": "Paid entry to Drive-Thru Tree Park, privately owned, open daily except Christmas and Thanksgiving. Roadside America lists $15 per car with 8:30 to 8 pm in summer and 8:30 to 5 pm off-season (call to verify, 707-925-6363); Wikipedia lists a fee for pedestrians to walk through. A 6 ft wide, 6 ft 9 in high tunnel through the base; larger vehicles may not fit.",
+      "transport": "No public transport. By car on US-101 at Leggett, Mendocino County; the park is on CA-271 (Postmile MEN 16.20).",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "The sign at the Chandelier Tree says 315 feet. A laser rangefinder says 276, about 84 metres, which is still taller than almost anything you will drive under in your life.\n\nThe sign is generous in other ways too. It gives the trunk as 21 feet wide; a modern measure at chest height gives 16. You will also see the tree described as 2,400 years old, a figure we could not trace to any source, so we leave its age open. If you know where a real estimate comes from, tell us.\n\nWhat nobody disputes is the hole. The Underwood family bought this grove in 1921 and in the late 1930s cut a tunnel through the base, 6 feet wide and 6 feet 9 inches high, so that cars could pass through a living redwood. Cutting a tree this way damages it, and the tunnel is the reason the place exists: it has been a paid roadside stop on US-101 ever since. Larger vehicles may not fit. The name comes from higher up, where limbs 4 to 7 feet thick sprout from about 100 feet and hang like the arms of a chandelier.\n\nThe park is privately owned and open daily except Christmas and Thanksgiving. One listing gives $15 a car, with a smaller fee for walking through, and longer hours in summer; ring ahead on 707-925-6363, as these details come from secondhand listings rather than the owners. A road blog found it standing and busy in July 2026.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/CarRedwoodLeggett01-05.jpg",
+        "license": "CC BY-SA 2.5",
+        "attribution": "Bobak Ha'Eri",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:CarRedwoodLeggett01-05.jpg",
+        "status": "approved",
+        "width": 480,
+        "height": 640
+      },
+      "how_to_recognise": "You can recognise it by the tunnel through its base, 6 feet wide and 6 feet 9 inches high, and the thick limbs branching out from about 100 feet up. It stands in Drive-Thru Tree Park at Leggett.",
+      "paid_entry": true
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "city": "Long Beach, Mississippi",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "The Friendship Oak has lost all its leaves to two hurricanes, Camille and Katrina, and is still here at more than 500 years old by the University of Southern Mississippi's count. It stands on the university's Gulf Park campus in Long Beach, a southern live oak 59 feet tall with a crown 155 feet across. Its trunk was 14 feet round when it joined the Live Oak Society around 1940 and 19.8 feet when the state measured it in 2011.",
+  "meta_description": "The Friendship Oak in Long Beach, Mississippi, is a live oak over 500 years old that survived Camille and Katrina, on USM's Gulf Park campus.",
+  "question_meta": "The Friendship Oak, over 500 years old, stands on USM's Gulf Park campus in Long Beach, Mississippi, after two hurricanes stripped it bare.",
+  "question_answer": "The oldest tree in Long Beach, Mississippi, is the Friendship Oak, a southern live oak the University of Southern Mississippi puts at more than 500 years old. It stands on the university's Gulf Park campus, 59 feet tall with a trunk 19.8 feet round and a crown 155 feet across, by a 2011 state measurement. Hurricanes Camille and Katrina both stripped it of leaves; a limb broke in 2017 and the tree has been braced since. It is member 110 of the Live Oak Society.",
+  "question_context": "The Friendship Oak stands at Friendship Oak Circle on the Avenue of the Oaks, on the University of Southern Mississippi's Gulf Park campus in Long Beach. The campus grounds are open rather than gated, and no visiting hours are published, so the tree is there whenever you are. In March 2025 the university finished a beautification project around it: new sidewalks, lighting, benches and an off-street viewing area, meant in its words as a welcoming space for students, faculty and visitors. The ribbon-cutting crowd that month toured the tree. There is no fee. Most people come by car along the Mississippi Gulf Coast; we have not checked a bus route. What you will see is a southern live oak 59 feet tall with a crown 155 feet across, which is wider than the tree is tall by a long way. Look for the bracing: a limb broke off in August 2017 and the tree has been supported since. It joined the Live Oak Society around 1940 as member 110, when its trunk measured 14 feet round; by 2011 that was 19.8 feet. Hurricanes Camille and Katrina both stripped it of its leaves, and both times it grew them back.",
+  "faq": [
+    {
+      "q": "How old is the Friendship Oak?",
+      "a": "More than 500 years, according to the University of Southern Mississippi, on whose campus it stands."
+    },
+    {
+      "q": "Can visitors see the Friendship Oak?",
+      "a": "Yes. It is on open campus grounds at Friendship Oak Circle, with a viewing area, benches and lighting added in 2025. There is no fee."
+    },
+    {
+      "q": "Did Hurricane Katrina damage the Friendship Oak?",
+      "a": "Katrina stripped its leaves, as Camille had before it, and the tree recovered both times. A limb broke in 2017 and has been braced."
+    }
+  ],
+  "trees": [
+    {
+      "id": "lbm_001",
+      "name": "Friendship Oak",
+      "species": "Southern Live Oak (Quercus virginiana)",
+      "age_estimate": "more than 500 years",
+      "age_min": 500,
+      "age_basis": "source",
+      "girth_cm": 604,
+      "height_m": 18,
+      "location": {
+        "address": "USM Gulf Park campus, Avenue of the Oaks at Friendship Oak Circle, Long Beach, Mississippi",
+        "latitude": 30.35176944,
+        "longitude": -89.13609444,
+        "neighbourhood": "Gulf Park campus"
+      },
+      "verified_sources": [
+        "https://www.usm.edu/news/2025/release/friendship-oak-beautification-project.php",
+        "https://en.wikipedia.org/wiki/Friendship_Oak",
+        "https://www.wikidata.org/wiki/Q5504407"
+      ],
+      "access": "Free to view on the University of Southern Mississippi Gulf Park campus. USM news release 24 March 2025: beautification project finished (new sidewalks, lighting, benches, off-street viewing) aiming for a 'welcoming space for students, faculty and visitors'. No visiting hours published in what I fetched; campus grounds, not a gated site.",
+      "transport": "Car; Long Beach, Mississippi on the Gulf Coast. Public transport not checked.",
+      "location_precision": "approximate",
+      "curation_status": "ai_generated",
+      "story": "Hurricane Camille stripped the Friendship Oak of its leaves in 1969. Hurricane Katrina did it again in 2005. Both times the tree came back, and it is still standing on the Mississippi coast at more than 500 years old, by the university's own count.\n\nThe count comes from the University of Southern Mississippi, on whose Gulf Park campus it stands. When the oak joined the Live Oak Society as member 110, around 1940, its trunk measured 14 feet round. The state Forestry Commission measured it again in 2011 and found 19.8 feet, with a height of 59 feet and a crown 155 feet across: almost six feet of girth added in seven decades, by a tree that was already old.\n\nNot everything held. A limb broke off in August 2017, and the tree has been braced since. In March 2025 the university finished a project around it with new sidewalks, lighting, benches and a place to stand off the street, meant, in its words, as a welcoming space for students, faculty and visitors, and the ribbon-cutting crowd toured the tree.\n\nIt is free to see, on open campus grounds rather than behind a gate, at Friendship Oak Circle on the Avenue of the Oaks in Long Beach. You will most likely come by car along the Gulf Coast.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/FriendshipOakLimbs.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Woodlot",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:FriendshipOakLimbs.jpg",
+        "status": "approved",
+        "width": 4000,
+        "height": 3000
+      },
+      "how_to_recognise": "You can recognise it by a crown 155 feet across over a trunk 19.8 feet round, with bracing on the limbs since 2017. It stands at Friendship Oak Circle on the Gulf Park campus, ringed by new paths and benches."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "city": "Oroville",
+  "country": "United States",
+  "status": "needs_curation",
+  "intro": "Oroville's Mother Orange Tree has been dug up and moved twice, the second time in 1964 to make way for the Oroville Dam. It is a Mediterranean sweet orange from Mazatlan, bought in Sacramento in 1856 and planted in 1856 by its plaque, or 1854 by one other account. The 1998 frost hollowed its trunk and stopped the fruit for a time; the fruit came back, and in 2003 UC Riverside cloned it. It is California Historical Landmark number 1043.",
+  "meta_description": "The Mother Orange Tree in Oroville is a sweet orange from the 1850s, moved twice and cloned in 2003, now at the State Parks office.",
+  "question_meta": "Oroville's oldest tree is the Mother Orange Tree, a sweet orange from the 1850s at the State Parks office on Glen Drive.",
+  "question_answer": "The oldest tree in Oroville is the Mother Orange Tree, a sweet orange planted in the 1850s, in 1854 by one account and 1856 by its plaque. It was bought in Sacramento in 1856 by Judge Joseph Lewis, moved in 1862 and again in 1964 for the Oroville Dam, and now stands outside the California State Parks office at 400 Glen Drive. The most recent account of its health is a visitor's from September 2021, who found it healthy and green.",
+  "question_context": "The Mother Orange Tree stands at the entrance of the California State Parks district office at 400 Glen Drive in Oroville, Butte County, and a sign on Glen Drive points the way. It is free to see and outdoors, so the office's opening hours do not decide when you can visit. A fence keeps visitors a short distance back from the trunk. The oranges on the branches are not for picking; a visitor in 2021 found that fallen fruit on the ground was treated as fair game. We have not checked public transport, so plan on a car. The tree has not always stood here. It was bought in Sacramento in 1856, moved in 1862, and moved again in 1964 to make way for the Oroville Dam. After the 1998 frost, decay fungus hollowed the trunk and the fruit stopped for a time before coming back; in 2003 UC Riverside cloned it. It is California Historical Landmark number 1043. Its planting year is 1856 on the plaque and 1854 in one other account. Our latest report of its health is that visitor's from September 2021, who found it healthy and green, so a fresh one is welcome.",
+  "faq": [
+    {
+      "q": "How old is the Mother Orange Tree?",
+      "a": "About 170 years. It was planted in 1854 according to one account and in 1856 according to the plaque."
+    },
+    {
+      "q": "Where is the Mother Orange Tree?",
+      "a": "Outside the California State Parks office at 400 Glen Drive in Oroville. It was moved there in 1964, when the Oroville Dam was built."
+    },
+    {
+      "q": "Can I pick an orange from the Mother Orange Tree?",
+      "a": "No. The tree is fenced and its fruit is not for picking."
+    }
+  ],
+  "trees": [
+    {
+      "id": "oro_001",
+      "name": "Mother Orange Tree",
+      "species": "Sweet Orange (Citrus x sinensis)",
+      "age_estimate": "planted in the 1850s",
+      "age_min": 168,
+      "age_max": 172,
+      "age_basis": "source",
+      "location": {
+        "address": "California State Parks district office, 400 Glen Drive, Oroville, California",
+        "latitude": 39.511111111,
+        "longitude": -121.504277777,
+        "neighbourhood": "Oroville"
+      },
+      "verified_sources": [
+        "https://kathrynreed.com/eat-and-drink/oldest-orange-tree-in-california-hails-from-mexico/",
+        "https://en.wikipedia.org/wiki/Mother_Orange_Tree",
+        "https://www.wikidata.org/wiki/Q1956029"
+      ],
+      "access": "Free to see at the entrance of the California State Parks Oroville office; a fence keeps visitors a short distance away. The fruit is not for picking (fallen fruit is fair game per the 2021 visitor). Office hours not verified; the tree is outside.",
+      "transport": "Oroville, Butte County; a sign on Glen Drive points to the tree. Public transport not checked.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This orange tree has been dug up and moved twice, the second time in 1964 to get out of the way of the Oroville Dam.\n\nIt is a Mediterranean sweet orange from Mazatlan, Mexico. Judge Joseph Lewis bought it in Sacramento in 1856, and here the record splits: the plaque and several sources give 1856 for the planting, Wikipedia gives 1854. Either way it is about 170 years old. It is California Historical Landmark number 1043, and a sign on Glen Drive points you to it.\n\nIt was a big tree once, over 60 feet tall before the twentieth century. The hard frost of 1998 nearly finished it: decay fungus hollowed the trunk and the fruit stopped for a while. Then the fruit came back. In 2003 UC Riverside cloned it.\n\nThe most recent account we have of the tree itself is a visitor's from September 2021, who found it healthy with lush green leaves. That is five years ago; if you have seen it since, tell us how it looks.\n\nIt stands outside the California State Parks office at 400 Glen Drive, free to see from behind a fence that keeps visitors a few steps back. The fruit on the tree is not for picking.",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/The_Mother_Orange_Tree.jpg",
+        "license": "Public domain",
+        "attribution": "Podruznik (English Wikipedia)",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Mother_Orange_Tree.jpg",
+        "status": "approved",
+        "width": 3264,
+        "height": 2448
+      },
+      "how_to_recognise": "You can recognise it as the fenced orange tree at the entrance of the California State Parks office, with a hollowed trunk from the 1998 frost. It stands at 400 Glen Drive, where a street sign points to it."
+    }
+  ]
+}
