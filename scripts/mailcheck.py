@@ -102,6 +102,15 @@ CHECKS = [
         r"in your grounds", r"bij jullie,", r"no vosso recinto",
         r"en su recinto", r"da voi,", r"davon bei Ihnen",
     ]),
+    # Hidde, 2026-10-22, twice in one day: "I live in Baarn, about 30 minutes
+    # from Amsterdam" on its own "makes no sense", and then "when will you
+    # remember that this sentence is weird". Where he lives only works joined
+    # to what he does, in the one sentence: drafts/HIS_VOICE.md, "His standard
+    # intro". Older drafts still carry the bare form.
+    ("WHERE HE LIVES WITHOUT WHAT HE DOES (use his standard intro)", [
+        r"\b(?:[Ll]ive|[Ww]oon) in Baarn\b(?![^.]*(?:Ancient Trees|work on|werk aan))",
+        r"minutes from Amsterdam", r"minuten (?:van|onder) Amsterdam",
+    ]),
     # Hidde, 2026-08-15: "remarkable = opmerkelijk in het nederlands.
     # ongelofelijke bomen nooit gebruiken is raar." The English word is
     # remarkable everywhere; the Dutch word is opmerkelijk, never ongelofelijk.
