@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session: product list checked against the product
+
+Hidde asked how current the open list is. Item 19 ("I have seen this one" behaves differently on web) is gone from PRODUCT_TODO.md: that control no longer exists, collecting is by photograph on web and app since 2026-10-10/14 (Collect this tree, camera then seal, one sheet). Item 17 (Hide My Email second account) now carries a count: 9 of 36 accounts use an Apple relay address, 1 of them has saves; no duplicate proven. Decision stays his. Nothing in the product changed.
+
 ## 2026-10-22 night run (retry attempt): pace cap holds 12 trees
 
 Eleven new city files an earlier attempt left uncommitted (bregenz, college-station, coppell, goliad, hagerum, hochosterwitz, leonstein, ogi, sakurai, shikokuchuo, winterswijk; 12 trees, all with approved photographs) failed preflight: 84 new trees in 24 hours against the cap of 60, and three Texas places (college-station, coppell, goliad) missing from data/us-states.json. Moved to data/research/held-pace-2026-10-22/ to restore tomorrow: add the three states, move the files back, run preflight. Nothing else was writable: 3 READY leads (two Oxford, one Madrid) wait on photos, and every claim was already free.
@@ -45,7 +49,7 @@ Madrid's tourist office answered the 10-20 tourism mail by pointing at the city'
 ## 2026-10-22 (session with Hidde): Hong Kong OVT photo sweep, low yield
 
 - We hold 698 of the 713 OVT/SWT register trees (data/registers/hongkong-ovt.json) and publish 21. A Commons geosearch (40 m) on the 50 biggest unpublished ones found open-licence files near 33, but they are street-photography series ("SS2", "Px3") of roads, shops and statues; the five most promising, viewed, held no whole-tree photograph (aerial roots close-up, a statue, a street with the banyan in the background, privet flowers). Treat Commons geosearch on Hong Kong OVT trees as exhausted; script and results in out/tmp/hk_ovt_sweep.py and out/tmp/hk-ovt-photos.json (not committed).
-- Better routes, both waiting on Hidde: a reader's photo ask in r/HongKong in his voice (as in r/Lisbon), and a first mail to the maker of HKU's Digital Arboretum (digarb.hku.hk), suggested by a commenter on his r/Lisbon post. Kowloon Park alone holds seven big unpublished OVT figs, a walk if photos turn up.
+- Better routes, both waiting on Hidde: a reader's photo ask in r/HongKong in his voice (as in r/Lisbon), and Gavin Scott Coates, who made HKU's Digital Arboretum (digarb.hku.hk, suggested by a commenter on his r/Lisbon post) and is the Gavin Sally Bunker of leafy.hk introduced on 2026-10-14; Hidde contacts him on WhatsApp himself, so no mail. Kowloon Park alone holds seven big unpublished OVT figs, a walk if photos turn up.
 
 ## 2026-10-22 (session with Hidde): 481 colon reveals out of the indexed stories
 

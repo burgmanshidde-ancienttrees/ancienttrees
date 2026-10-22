@@ -34,9 +34,8 @@ Weekly analysis retries Tue/Wed; Canada map (phone slide-north awaiting deploy);
 13. Coverage steer, READ 2026-09-24 (28 days of Search Console): the US is 30% of impressions (13,723) at CTR 1.0%, the UK 3,588 at 2.6%. We publish 56 US places / 254 trees and 25 UK places / 103 trees, so the US is a CTR and position problem, not a coverage one: the next US work is titles and ranking on the pages that already take impressions, not more cities. New Zealand is the real gap (2 places, 7 trees): its register was never scouted, scout dispatched 2026-09-24. UK outside London (Liverpool at 2, Stirling, Canterbury, Stratford with one lead each) waits on supply. Australia: Adelaide and Canberra hold one lead each.
 14. DONE 2026-09-25: phone maps drop the zoom group, the chip row takes the full width.
 16. Search: measured 2026-09-25. App has it on Map and Discover; the website only on home and /explore. Small next step: a search icon in the phone top bar that opens /explore with the field focused (AllTrails pattern).
-17. DONE 2026-09-25: parity table in LOG.md; the one accidental gap (app sign-out never ended the session on the server) is fixed. Open, needs Hidde: Apple Hide My Email makes a second empty account (CONVENTIONS.md).
+17. DONE 2026-09-25: parity table in LOG.md; the one accidental gap (app sign-out never ended the session on the server) is fixed. Open, needs Hidde: Apple Hide My Email makes a second empty account (CONVENTIONS.md). Counted 2026-10-22: 9 of 36 accounts carry a relay address, 1 of the 9 has saves against 9 of the other 27; a duplicate cannot be proven because the real address is hidden. The reference fix is the same sign-in buttons on web and app (Apple on the website too).
 18. DONE 2026-09-25: city and country tap separately on the tree page, app and web. Follow-up: send the finished place line in /api/trees.json so the rule is not written in Swift and TypeScript both.
-19. "I have seen this one" behaves differently on web: find out what.
 
 ### DON'T, with the reason
 - Season and month collections: themed lists do not pull (see the finding above), and the 2026-08-26 decision put the season story in Plus.
