@@ -557,5 +557,67 @@
       "height": 3240,
       "taken_month": 10
     }
+  },
+  {
+    "id": "frk_022",
+    "name": "The Great Oak of the Leonhard-Eissnert-Park",
+    "species": "Oak (Quercus sp.)",
+    "age_estimate": "200 to 380 years, sources differ",
+    "age_min": 200,
+    "age_max": 380,
+    "girth_cm": 608,
+    "height_m": 28,
+    "location": {
+      "address": "Leonhard-Eissnert-Park, Offenbach-Bieberer Berg",
+      "latitude": 50.09743,
+      "longitude": 8.79428,
+      "neighbourhood": "Bieberer Berg, Offenbach am Main"
+    },
+    "verified_sources": [
+      "https://www.flurbaum.de/f-stadt.html",
+      "https://www.monumentale-eichen.de/hessen/4-kategorie/offenbach/"
+    ],
+    "access": "Free, public park (Leonhard-Eissnert-Park), open at all times per flurbaum.de ('Zugang: unbeschraenkt moeglich (oeffentlich)'); the tree is on a meadow in the park.",
+    "transport": "Not verified: Offenbach-Bieber S-Bahn station is in the same district as the Bieberer Berg park; the walk from there and the travel time from Frankfurt were not checked.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Two careful people have measured this oak, and they cannot agree what it is. One says sessile oak, about 380 years old, which would put its first shoot around 1650, soon after the Thirty Years War. The other says pedunculate oak, about 200. That is a gap of nearly two centuries on the same trunk.\n\nNeither is an official register, and Offenbach's list of natural monuments does not include it. Both are private surveyors who date their visits. Flurbaum.de, in May 2026, measured it at 6.08 metres round at 1.30 metres up and about 30 metres tall, with a crown about as wide, and describes the trunk as three-stemmed. Rainer Lippert's Monumentale Eichen list, updated in March 2022, gives 5.91 metres at the waist and 27 metres tall. Measuring at different heights explains the girth. Nothing on record explains the age, so we give the whole range and call it an oak. If you know which oak it is, tell us.\n\nEither way it was already old in 1911, when Leonhard Eissnert began laying out a woodland park here on the Bieberer Berg. It stands on a meadow in that park, free and open at all hours. The May 2026 visit found some lower branches sawn off and recorded no dieback.\n\nThe park is in Offenbach-Bieber, part of Offenbach am Main, the separate city on Frankfurt's eastern edge. Offenbach-Bieber has its own S-Bahn station; check RMV for the walk from there.",
+    "how_to_recognise": "You can recognise it by the trunk, about six metres round, on a meadow, with some lower branches sawn off. It stands in the Leonhard-Eissnert-Park on the Bieberer Berg in Offenbach.",
+    "verify_notes": "Two independent private measurers, both with dated measurements and near-identical coordinates, no official register. (1) flurbaum.de 'Starke Baeume in Frankfurt am Main' (Stand Mai 2026): Traubeneiche (Quercus petraea), three stems, girth 608 cm at 130 cm, height about 30 m, crown about 30 m, 'im Jahr der Messung geschaetzt 380 Jahre alt, demnach um 1650 gekeimt', meadow/park, flat, 122 m elevation, coordinates 50.0974, 8.7943, damage: some lower branches sawn off. (2) Monumentale Eichen (Rainer Lippert), last update 10 March 2022: 'Stieleiche' (pedunculate oak), girth 5.91 m measured at waist height ('Taillenumfang'), height 27 m, crown about 28 m, 'etwa 200 Jahre', coordinates 50.097429, 8.794285. CONFLICTS: species (sessile vs pedunculate), age (380 vs about 200) and girth (608 vs 591 cm, different measuring heights). Age is not sharpened: given as the range, and the page should ask the reader to name the species. Only the flurbaum entry mentions three stems; do not state it as fact beyond 'one source says three-stemmed'. Alive: observed May 2026 by flurbaum.de (branch damage noted, no dieback noted). Park background: laid out from 1911 as Waldpark by Leonhard Eissnert (Regionalpark RheinMain); a tree this size predates the park, but no source says what the park did with it, so no bridge claim. Not a Naturdenkmal: the Offenbach list names the August-Reiss-Oak (frk_017) and Jahn Oak (frk_021) instead. Pin: two source coordinates about 30 m apart in a park, no crown identified, so approximate. No photograph checked; Commons geosearch within 150 m finds only 2013-era Panoramio uploads of unknown subject (File:Offenbach, Germany - panoramio - h4ck3rm1k3 (28).jpg is 26 m away), not verified as this tree."
+  },
+  {
+    "id": "frk_023",
+    "name": "The Bethmannpark Ginkgo",
+    "species": "Ginkgo (Ginkgo biloba)",
+    "age_estimate": "roughly 150 to 275 years, sources differ",
+    "age_min": 150,
+    "age_max": 275,
+    "girth_cm": 484,
+    "height_m": 26,
+    "location": {
+      "address": "Bethmannpark, Friedberger Landstrasse, Frankfurt",
+      "latitude": 50.119,
+      "longitude": 8.68987,
+      "neighbourhood": "Nordend-Ost"
+    },
+    "verified_sources": [
+      "https://www.baumkunde.de/baumregister/189-ginkgo_im_bethmannpark_in_frankfurt_am_main/",
+      "https://www.monumentale-eichen.de/andere-baumarten/ginkgos/"
+    ],
+    "access": "Free, public city park (Bethmannpark); the register entry says publicly accessible. Park opening hours were not read (frankfurt.de returns 403).",
+    "transport": "Not verified. The park lies about 1 km east of the Konstablerwache area; tram stop Hessendenkmal is mapped about 120 m from the tree (Commons geotag), line numbers not checked.",
+    "location_precision": "approximate",
+    "curation_status": "flagged",
+    "story": "Frankfurt's famous ginkgo is the one in Rödelheim that may have given Goethe two leaves for a poem. This one, in the Bethmannpark, is eight metres taller, and hardly anyone has written about it. Rainer Lippert, whose Monumentale Eichen site lists notable ginkgos, marks it as unknown in the literature.\n\nWhat is known comes from a single visit. On 30 June 2015 the tree register at Baumkunde.de measured it at 4.84 metres round and 26 metres tall, gave its age as about 150 years and its condition as vital. Lippert's list carries the same figures from the same year, so that is one measurement repeated, not two that agree. Neither says at what height the tape went round, or whether the trunk is one stem or several.\n\nThe age is less settled than the size. The register says 150; other estimates run older, so we give it somewhere between 150 and 275 years and do not pick. No source connects this tree to Goethe. That story belongs to Rödelheim.\n\nThe 2015 entry is also the newest sign of life we have found, and we know of no photograph of it. The Bethmannpark is a free public park on the Friedberger Landstrasse, about a kilometre east of the Konstablerwache, and the Hessendenkmal tram stop is close by. The pin is approximate, so look for the fan-shaped leaves. If you have stood under it since 2015, tell us how it looks, and a photograph would settle it.",
+    "how_to_recognise": "You can recognise it by the fan-shaped ginkgo leaves on a trunk 4.84 metres round, about 26 metres tall. It stands in the Bethmannpark, off the Friedberger Landstrasse near the Hessendenkmal tram stop.",
+    "best_time": {
+      "months": [
+        10,
+        11
+      ],
+      "kind": "autumn colour",
+      "label": "late October into November, when the fan-shaped leaves turn gold"
+    },
+    "verify_notes": "ONE MEASUREMENT CHAIN, flagged. Baumkunde.de register (Baumregister 189): girth 4.84 m 'gemessen' on 30 June 2015, height 26.0 m, age 150, condition 'vital', 'oeffentlich zugaenglich', coordinates N50 07.14' E8 41.3922' (about 50.1190, 8.6899). Rainer Lippert's Monumentale Eichen list (ginkgo page) carries the same figures (4.84 m, 26 m, about 150 years, year 2015), so it is the same measurement, not an independent one; it marks the tree as unknown in the literature. A monumentaltrees.com search snippet (page itself 403, not read, so only a pointer) gives a planting around 1800 +-50 and a possible multi-stem explanation for the large girth; that is why the age is a wide range here: 150 (register) to 275 (1800 +-50 would be 225 +-50). Do not sharpen. Whether the trunk is single or multi-stemmed is not stated by any fetched page; Baumkunde and Lippert do not give the measuring height. Alive: only the 2015 'vital' entry; lifecheck.py found no recent observation (nearest iNaturalist hit within range was an almond, not this tree), no Commons photograph of the ginkgo within 250 m. So alive-now is thin: flagged. Not the Goethe Ginkgo: that is the Roedelheim tree (frk_007); no source links Goethe to this one. Bethmannpark is about 3 ha, a protected monument since 1976 and bought by the city in 1941 (search snippet of frankfurt.de, not fetched). Pin: register coordinate in a 3 ha park, no crown identified, approximate. A park visit or reader GPS fix would settle both pin and condition."
   }
 ]
