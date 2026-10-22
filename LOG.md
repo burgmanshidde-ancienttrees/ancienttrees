@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (retry, 15:00): photo lane while the pace cap holds
+
+Resolved a LOG.md rebase conflict. The pace cap still holds 54 verified trees, so I added no verify or write passes. Munich photo recheck found 7 new candidates (muc_022, 026, 027, 037); a photo-judge pass was dispatched on them. Tulsa register retry: still no county list, only the Creek Council Oak, noted in data/register-scouting.json. No trees added.
+
 ## 2026-10-22 session: product list checked against the product
 
 Hidde asked how current the open list is. Item 19 ("I have seen this one" behaves differently on web) is gone from PRODUCT_TODO.md: that control no longer exists, collecting is by photograph on web and app since 2026-10-10/14 (Collect this tree, camera then seal, one sheet). Item 17 (Hide My Email second account) now carries a count: 9 of 36 accounts use an Apple relay address, 1 of them has saves; no duplicate proven. Checked afterwards: Apple sign-in is already live on the web (2026-09-17) and the web route answers, so Apple on both surfaces is one account; the only unclosable case is Google on the web plus hidden Apple in the app, which needs a merge flow. Noted on the item. Nothing in the product changed.
