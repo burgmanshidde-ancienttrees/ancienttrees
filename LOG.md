@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 later attempt: nothing shipped, nothing claimed
+
+No claims standing. Three READY leads (two Oxford, one Madrid) have no approved photograph and own supply is paused, so none ships. Health clear, reader inbox empty. `photo_hunt --recheck` swept 40 kept-set trees (Alicante, Amsterdam, Arnhem): 4 new candidates in Arnhem, but `photo_fetch` says nothing to fetch for them, so no viewing pass was worth the tokens. Manchester register retried: still none; two named-tree leads noted in data/register-scouting.json (Heaton Park eucalyptus, Alexandra Park Railway Poplar), each needs a second source. No trees added.
+
 ## 2026-10-22 night window (from 17:39 UTC): reader photo, photo sweep
 
 Rung 1: a reader's photograph of the Weeping Cedar of the Vallée-aux-Loups (cma_001) looked at, same tree, daylight and colour, added beside the lead photo; the verdict record had to be stubbed by hand in data/judgements.json because sightings_publish.py had already cleared the queue entry (judgement.py --scan found nothing). Health clear. Own supply is paused, so rung 6: photo_hunt --recheck on the kept set, then a photo-judge pass: 26 images viewed, 1 approved (bne_004, Brisbane banyan, iNaturalist CC BY, 500px only), 32 rejects recorded; most kept-set candidates are generic park files shared by several trees. To check: msl_003 Krüsellinde may have been missed in a 2020 photo (life check). Prepare's REFILL note is moot while supply is paused. Not pushed (credential note); Run health pushes.
