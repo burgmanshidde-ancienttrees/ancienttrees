@@ -212,7 +212,7 @@ so qa.py fails the deploy when the table and the json disagree.
 | 7 | Rotterdam | 21.42 | 104,938 | 17 | 1 | 2 | 83 | 30 | measured |
 | 8 | Tenerife | 25.70 | - | 4 | 4 | - | - | 30 | measured |
 | 9 | Birmingham | 37.53 | - | - | - | - | - | 60 | predicted (travel demand) |
-| 10 | Seattle | 34.27 | 398,724 | 21 | 3 | 2 | - | 30 | measured |
+| 10 | Seattle | 34.27 | 398,724 | 30 | 3 | 4 | - | 30 | measured |
 | 11 | Palma de Mallorca | 21.42 | 84,075 | 6 | 2 | 1 | 8 | 30 | measured |
 | 12 | Yakushima | 21.42 | - | 2 | 1 | - | 1 | 10 | measured |
 | 13 | Seville | 21.42 | 170,545 | 44 | 12 | 2 | - | 30 | measured |
@@ -265,9 +265,9 @@ so qa.py fails the deploy when the table and the json disagree.
 | 60 | Helsinki | 8.57 | 148,908 | 12 | 3 | 1 | 13 | 30 | measured |
 | 61 | Milwaukee | 10.63 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 62 | Jersey City | 10.08 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 63 | Chicago | 8.57 | 485,769 | 28 | 2 | 2 | 11 | 60 | measured |
-| 64 | Atlanta | 10.29 | - | - | - | - | - | 30 | predicted (travel demand) |
-| 65 | Anchorage | 10.25 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 63 | Atlanta | 10.29 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 64 | Anchorage | 10.25 | - | - | - | - | - | 30 | predicted (travel demand) |
+| 65 | Chicago | 8.57 | 485,769 | 38 | 2 | 3 | 9 | 60 | measured |
 | 66 | Raleigh | 10.07 | - | - | - | - | - | 30 | predicted (travel demand) |
 | 67 | Bali | 9.95 | - | - | - | - | - | 60 | predicted (travel demand) |
 | 68 | Cleveland | 9.76 | - | - | - | - | - | 30 | predicted (travel demand) |
