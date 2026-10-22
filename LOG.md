@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 late attempt: nothing shipped, Stirling retried
+
+No standing claims. READY is Oxford 2 and Madrid 1, both without an approved photograph, and own supply is paused, so no write pass. Enrichment: nothing to do. BACKUP register retry, Stirling: Wikidata within 25 km holds only the Wallace Oak (Torwood, Falkirk), already a lead in glasgow.json. Verdict stays stalled, note updated. Honest result: nothing useful left on the ladder under recovery mode.
+
 ## 2026-10-22 22:55 window: iOS failure read, nothing shipped
 
 Rung 2: health.py flags the iOS app run of 20:24 (1h48m). Log: 229 passed, 1 failed, `testEveryFlowLeavesAWayBack`: flow "search-to-a-tree" has no tab bar, back button or dismiss after "first-result". No ios/ commit since the green run of 11:34 (only a test string), so this is a data/feed change or a flaky tap, not an app edit; it cannot be reproduced on this Linux runner and the night run never builds the app. For Hidde or a Mac session: rerun ios.yml once; if it fails again, look at the first search result's tree screen (the SearchFlow in FlowWalk). Reader inbox empty, READY leads still only Oxford 2 and Madrid 1 (own supply paused), enrichment says nothing to do. No deploy dispatch attempted (403 earlier).
