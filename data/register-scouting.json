@@ -129,7 +129,8 @@
    "place": "Oxford",
    "country": "United Kingdom",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-15 on scout_next.py --target (#304). One search: no Oxford notable or heritage tree register with open terms. Oxford City Council TPO points are on planning.data.gov.uk (OGL v3.0) but are protection, not remarkableness. Veteran-tree knowledge (Blenheim Park 291 living ancient oaks, High Park 220) sits in the Woodland Trust Ancient Tree Inventory, off limits without written permission. Next angle: Oxford University Parks and college garden tree trails, Blenheim's own published oak survey (finding aids)."
+   "note": "SCOUTED 2026-10-15, RETRIED 2026-10-22: stalled. No open register or tree-level coordinate list for Oxford. Wikidata (tree items within 15 km) returns nothing; Commons 'Trees in Oxford' holds geograph street scenes, no named-tree files with a clean ID except the felled 'Tolkien' pine. Friends of Headington Hill Park tree walk names a rare butternut (22 m, Monumental Trees of England listing) and a 3.7 m oak (about 150 years) but places them only by what3words, no open coordinate or photo. Tolkien's black pine was felled 2014 (blocked). Addison's Walk Great Oak and Iffley church chestnut have no usable source or recent life check. University Parks and Harcourt Arboretum publish no veteran or champion list. Leads stored in data/leads/oxford.json. Woodland Trust Ancient Tree Inventory untouched (off limits). Oxford already has five trees live (oxf_001 to oxf_005). Reopen only if a photo of the Headington Hill butternut appears or someone supplies what3words conversions.",
+   "retried": "2026-10-22"
   },
   {
    "place": "Canterbury",

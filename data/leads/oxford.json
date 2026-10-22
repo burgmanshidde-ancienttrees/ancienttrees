@@ -1,0 +1,44 @@
+{
+ "leads": [
+  {
+   "name": "Butternut, Headington Hill Park",
+   "species": "Butternut (Juglans cinerea)",
+   "latitude": 51.7535,
+   "longitude": -1.2385,
+   "location_precision": "approximate",
+   "height_m": 22,
+   "reason": "no photo or exact pin in reach. Friends of Headington Hill Park tree walk (friendsofheadingtonhillpark.org.uk/tree-map/, fetched 2026-10-22) calls it very rare in the UK, 22 m high, 34 m spread, listed as one of the Monumental Trees of England (cross-check only). Placed by what3words (glue.chefs.sleep), no open coordinate; pin above is the park centre only. No Commons photo of it found. Park is public parkland (city-owned, open). One source, a Friends group."
+  },
+  {
+   "name": "English oak, Headington Hill Park",
+   "species": "English Oak (Quercus robur)",
+   "latitude": 51.7535,
+   "longitude": -1.2385,
+   "location_precision": "approximate",
+   "girth_cm": 370,
+   "reason": "no photo or exact pin in reach. Same Friends tree walk: spread over 30 m, girth 3.7 m, age about 150 years by their girth-in-inches rule (so not ancient). Weak candidate; a young tree is not ancient."
+  },
+  {
+   "name": "Black pine (Tolkien's tree), Oxford Botanic Garden",
+   "reason": "Felled 2014 after losing two large limbs (Tolkien Society, thetolkienist.com); a seed-grown replacement was planted 2021 by King Charles III and is young. Original at about 51.7505,-1.2476 (Commons geograph file CC BY-SA 2.0 by Paul Harrop shows the stump era tree). Known dead, never ship."
+  },
+  {
+   "name": "The Great Oak, Addison's Walk, Magdalen College",
+   "reason": "Only source is a visitor blog (oxfordvisit.com), no coordinate, no girth, no age, no register; Addison's Walk is a paid college walk. Finding aid at best. Needs a college or Magdalen source and a coordinate before it is a candidate."
+  },
+  {
+   "name": "Iffley church horse chestnut",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "latitude": 51.7277,
+   "longitude": -1.2382,
+   "location_precision": "approximate",
+   "reason": "Commons geograph photo (CC BY-SA 2.0, ceridwen, geograph 735624) describes it as a magnificent old tree overshadowing the church entrance, with condition anxieties in 2008. Photo is from about 2008 and the tree is not shown to be alive now. Needs a recent alive check (lifecheck.py) and a second source. Same churchyard as oxf_001 Iffley Yew; could be a twin entry there."
+  }
+ ],
+ "blocked": [
+  {
+   "name": "Tolkien's black pine (original)",
+   "reason": "Known dead, felled 2014."
+  }
+ ]
+}
