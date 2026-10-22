@@ -1,0 +1,50 @@
+{
+  "city": "Madrid",
+  "country": "Spain",
+  "city_slug": "madrid",
+  "note": "From the Guia Verde de Madrid (Ayuntamiento de Madrid, 2026, ISBN 978-84-7812-884-6, PDF on madrid.es, Zonas Verdes), which Madrid's tourist office pointed us to on 2026-10-22. The guide is about parks and green infrastructure in general and names few single trees; these are the ones we do not publish yet. The guide is one official source for each; a second source, a placeable pin and an open-licence photo are still needed. Its images are copyright the Ayuntamiento and the photographers (no open licence stated), so none can be used.",
+  "leads": [
+    {
+      "name": "The Elm of the Paseo de la Castellana (opposite the Hotel Villa Magna)",
+      "species": "Elm (Ulmus sp.)",
+      "lat": 40.4325,
+      "lng": -3.6888,
+      "location_precision": "approximate",
+      "status": "lead",
+      "why": "The guide calls it Madrid's oldest street tree, after the loss of the last two older ones, on the Castellana, the northern extension of the Prado-Recoletos axis completed in 1834. 18 m tall, 380 cm girth, crown 14 m across. Protected as a singular tree under Madrid's 1997 Plan General de Ordenacion Urbana. A second passage places it 'frente al hotel Villa Magna' (Paseo de la Castellana 22); the pin is the hotel frontage, not the trunk. Species given only as olmo. Free, on the street.",
+      "source": "Guia Verde de Madrid (2026), pages 15 to 17 and the tree-lined streets chapter",
+      "needs": "second source, trunk-level pin, open-licence photo (Commons search for the Castellana elm)"
+    },
+    {
+      "name": "The plane trees of the Fuente de Apolo",
+      "species": "London Plane (Platanus x hispanica)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "The guide names 'los platanos de la fuente de Apolo' on the Paseo del Prado among the singular trees of the Prado-Recoletos-Castellana axis. No measurements or age given. An ensemble; ships only if one plane stands out or the group is the destination with one place to stand.",
+      "source": "Guia Verde de Madrid (2026), tree-lined streets chapter",
+      "needs": "which trunk, measurements or age, photo"
+    },
+    {
+      "name": "The Olivar de la Hinojosa, Parque Juan Carlos I",
+      "species": "Olive (Olea europaea)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "More than 2,000 centenary olive trees on about 21 hectares, an olive grove kept when the park was built. A grove, not one tree: worth it only if a single veteran olive inside it can be named and pinned.",
+      "source": "Guia Verde de Madrid (2026), urban and singular parks chapter",
+      "needs": "a single named or measured olive, pin, photo"
+    },
+    {
+      "name": "Weeping pagoda tree and ginkgo, Parque del Oeste",
+      "species": "Pagoda Tree (Styphnolobium japonicum 'Pendula') / Ginkgo (Ginkgo biloba)",
+      "lat": null,
+      "lng": null,
+      "status": "lead",
+      "why": "The guide names 'ejemplares notables' of both beside the Abuelo cedar (already live as mad_009). No measurements or position.",
+      "source": "Guia Verde de Madrid (2026), historic parks chapter",
+      "needs": "which trunks, measurements, pin, photo"
+    }
+  ],
+  "register_lead": "The guide says the Castellana elm is protected as a singular tree under Madrid's 1997 Plan General de Ordenacion Urbana. That plan's catalogue of arboles singulares is a city-level list of designated trees, unlike the bulk inventory OPEN_DATA_SURVEY.md rejected. Worth scouting for a published list and its licence."
+}

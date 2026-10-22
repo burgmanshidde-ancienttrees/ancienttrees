@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 (session with Hidde): Madrid's Guia Verde read, four leads
+
+Madrid's tourist office answered the 10-20 tourism mail by pointing at the city's new Guia Verde de Madrid (2026 PDF on madrid.es). Read it: mostly parks in general, few single trees. Four new leads in data/leads/madrid.json, best the Castellana elm opposite the Hotel Villa Magna, "Madrid's oldest street tree" (18 m, 380 cm, singular under the 1997 PGOU); it needs a second source, a trunk pin and an open photo. The guide's photos are all rights reserved. Register lead: the 1997 PGOU catalogue of arboles singulares. Reply draft asking who at the city could release the photos: drafts/reply-madrid-turismo-2026-10-22.md, waits on Hidde.
+
 ## 2026-10-22 (session with Hidde): ten famous trees with photos written, parked behind the pace guard
 
 - **Ready, not live:** 10 trees with approved Commons photos, 8 new places, ready in data/research/photo-batch-2-places/ (winterswijk, leonstein, hochosterwitz, bregenz, ogi, hagerum, shikokuchuo, sakurai) plus kna_002 Tate-no-Omayumi for Koriyama in data/research/photo-batch-2-verified.json. Preflight passes on them except `check_publishing_pace()` (82 in 24 hours). **Next run once the count drops:** move the eight files into data/cities/, append kna_002 (from the verified file, without `_city`, `_slug`, `alive_basis`, `country`, `place`, `place_note`) to data/cities/koriyama.json, preflight, merge. The night run's three Texas files (data/research/texas-places/) go first, they were parked earlier.
