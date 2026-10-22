@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (12:29 UTC window): enrichment leiden+frankfurt+regensburg
+
+Rungs 1 to 3 clear (no sightings waiting, health green). Rung 4: enrichment pass on 7 trees; one gap closed (frk_023 Bethmannpark Ginkgo girth 484 cm, height 26 m from Baumkunde.de, a private register, noted as such), 10 gaps dead-ended for 90 days. Preflight 0 problems.
+
 ## 2026-10-22 session: US photo push, nothing to approve
 
 Hidde asked how our US supply looks after three US downloads in a day. Verdict: plenty of trees (456 in 76 places, second after the Netherlands) but 90 photographs, so most US tree pages sit outside Google. The cities Google shows are nearly bare: Oahu 5/21, New York 8/28, Houston 0/11, Chicago 1/38, Portland 2/33, Dallas 1/12.
