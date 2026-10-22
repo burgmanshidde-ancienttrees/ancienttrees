@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (third attempt): enrichment only, new trees still behind the pace guard
+
+- Nothing READY. Everything awaiting a writer is either already published (stale files), a duplicate, or adds new trees, which the pace guard (75 in 24 hours, cap 60) still refuses; so no new trees this window. The san-francisco claim stays (sfo_012, sfo_013 still need stories; release refused until merged).
+- Seattle enrichment: 9 SDOT street trees, pin-only gaps with no photograph and no register page; recorded as dead ends (`enrich.py --done seattle`). Dispatched an enrichment verify pass on leiden+frankfurt+regensburg (answer to out/enrich/leiden+frankfurt+regensburg.answer.json).
+
 ## 2026-10-22 night run (second attempt): three Texas place files built, held by the pace guard
 
 - Nothing was READY. Verified and wrote four famous Texas trees that already had open photos (Century Tree, Houston Campsite Oak, Cart War Oak, Rio Frio Landmark Oak). Three have approved photographs and full place files, parked in `data/research/texas-places/` (college-station, coppell, goliad; ids clg_001, cpl_001, gld_001). They pass preflight except `check_publishing_pace()` (75 new trees in 24 hours, cap 60), so they were not published. Next run once the count drops: move the three files into data/cities/, add the three slugs to data/us-states.json ("Texas"), run preflight, merge, then release no claim (none held).
