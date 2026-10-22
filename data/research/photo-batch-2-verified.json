@@ -1,0 +1,459 @@
+[
+ {
+  "name": "Oude eik van Sieverdink",
+  "country": "Netherlands",
+  "place": "Winterswijk (Brinkheurne)",
+  "place_note": "No published place; nearest published tree borculo.json bcl_001 at 26 km. Winterswijk has no page.",
+  "species": "Pedunculate Oak (Quercus robur)",
+  "age_estimate": "roughly 250 years",
+  "age_min": 225,
+  "age_max": 275,
+  "age_basis": "source",
+  "girth_cm": 600,
+  "height_m": 20,
+  "location": {
+   "address": "Pasture southwest of the crossing of Sieverdinkweg and Bothoekweg (farm Sieverdink, Bothoekweg 9-11), Brinkheurne",
+   "latitude": 51.944731,
+   "longitude": 6.752036,
+   "neighbourhood": "Brinkheurne, Winterswijk"
+  },
+  "location_precision": "approximate",
+  "access": "Stands alone in a pasture by the Sieverdink farm; view it from the public roads Sieverdinkweg and Bothoekweg. The meadow itself is farmland: no source says it can be entered.",
+  "transport": "Rural hamlet near Winterswijk; no public-transport time verified, walking or cycling from Winterswijk.",
+  "verified_sources": [
+   "https://nl.wikipedia.org/wiki/Oude_eik_van_Sieverdink",
+   "https://bomen.meetnetportaal.nl/index.php?c=portal&mm=claim&m=custom&options=monumentale_bomen/claimformulier.xml",
+   "https://www.oudwinterswijk.nl/diversen/oudste-boom/oudste-boom-van-winterswijk/"
+  ],
+  "official_register": {
+   "name": "Landelijk Register van Monumentale Bomen, no. 1678358",
+   "url": "https://bomen.meetnetportaal.nl/index.php?c=portal&mm=claim&m=custom&options=monumentale_bomen/claimformulier.xml"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/20190813EikSieverdink.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "WeeJeeVee",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:20190813EikSieverdink.jpg",
+   "width": 3062,
+   "height": 2110,
+   "status": "approved"
+  },
+  "alive_basis": "Commons photo 2019-08-13 in leaf; 24-photographer exhibition and book 2018; nl.wikipedia (sourced to the register) read 2024-08-25 gives 2015 measurements and says the tree grew 80 cm in girth in 35 years after a 1975 lightning strike repaired by tree surgery in 1981.",
+  "curation_status": "ai_generated",
+  "id": "wtw_001",
+  "_city": "Winterswijk",
+  "_slug": "winterswijk",
+  "story": "Lightning hit this oak in September 1975, ripped its bark away over many metres and broke off branches. It kept growing anyway. Tree surgeons repaired it in 1981, and in the decades after the strike it put on about 80 centimetres of girth. In 2015 it measured 6 metres round and 20 metres tall.\n\nThe local history society Oud-Winterswijk calls it the oldest tree in Winterswijk. The claim form of the national register of monumental trees has it planted between 1750 and 1800, which makes it roughly 250 years old. It began as one tree in a houtwal, a wooded hedge bank. In the 19th century the bank was cleared and this oak was left standing. No source says why it was spared.\n\nThat is why it stands alone in a pasture today. In 1972 it was 5 metres round, so the lightning came when it was already a big tree. In 2018 it was the subject of an exhibition and a book by 24 photographers.\n\nEven its address is slightly unsettled. It stands by the Sieverdink farm in the hamlet of Brinkheurne, though Dutch Wikipedia notes it may sit just over the line in Kotten.\n\nThe meadow is working farmland, and no source says you may walk into it. Look at it from Sieverdinkweg or Bothoekweg.",
+  "how_to_recognise": "You can recognise it by standing alone: one big oak, 6 metres round, in the open pasture by the Sieverdink farm. It stands southwest of the crossing of Sieverdinkweg and Bothoekweg, seen from the road."
+ },
+ {
+  "name": "Bühler-Linde (Leonstein)",
+  "country": "Austria",
+  "place": "Leonstein (Grünburg)",
+  "place_note": "No published place; nearest published tree hallstatt.json hst_006 at 51 km.",
+  "species": "Large-leaved Lime (Tilia platyphyllos)",
+  "age_estimate": "not documented",
+  "location": {
+   "address": "Heindlmühlstraße 1, Leonstein, Grünburg (in front of the Hasengütl farm, also called Bühler or Höchtl)",
+   "latitude": 47.905542,
+   "longitude": 14.231394,
+   "neighbourhood": "Leonstein"
+  },
+  "location_precision": "approximate",
+  "access": "Stands on the grass at a road junction in front of the Hasengütl farm with a signposted parking bay and a bench beside the road; seen from public roads. The farm itself is private.",
+  "transport": "Leonstein, Grünburg (Upper Austria); no public-transport time verified.",
+  "verified_sources": [
+   "https://commons.wikimedia.org/wiki/Category:B%C3%BChler-Linde_(Gr%C3%BCnburg)",
+   "https://www.wikidata.org/wiki/Q124353497",
+   "https://commons.wikimedia.org/wiki/File:Hasenguetl_in_Leonstein_mit_Linde_2.jpg"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Buehler-Linde_in_Leonstein_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Christoph Waghubinger (Lewenstein)",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Buehler-Linde_in_Leonstein_1.jpg",
+   "width": 6967,
+   "height": 4630,
+   "status": "approved"
+  },
+  "alive_basis": "Commons photos 2021-05-21 (lead, in leaf with mistletoe) and 2022-03-19 (Hasenguetl_in_Leonstein_mit_Linde_2.jpg, described as a multi-stemmed summer lime).",
+  "curation_status": "flagged",
+  "id": "leo_001",
+  "_city": "Leonstein",
+  "_slug": "leonstein",
+  "story": "This lime has a signposted parking bay and a bench of its own, and almost no paperwork.\n\nIt grows on the grass at a road junction in Leonstein, part of Grünburg in Upper Austria, in front of the Hasengütl farm. Locals also call the farm Bühler or Höchtl, and the tree carries the first of those names. Photographs from May 2021 and March 2022 show a very large, broad, multi-stemmed large-leaved lime, with clumps of mistletoe hanging in its crown.\n\nThat is close to everything on record. The tree is not on Upper Austria's list of natural monuments. Nobody has published its age, its girth or its height, and everything we know comes from a single photographer's pictures and notes on Wikimedia Commons. A lime this broad standing in front of an old farm invites guesses about who planted it and when. We have no source for any of them, and if you know its story or its age, tell us.\n\nWhat the species does, it does on schedule. Large-leaved limes flower in June, a little earlier than the other limes, with pale, scented blossom that fills with bees for about a fortnight.\n\nThe farm itself is private. The tree stands at the road's edge, so the view from the junction and the bench is the whole visit, and it is enough. Our pin is approximate; look for the farm at Heindlmühlstraße 1.",
+  "how_to_recognise": "You can recognise it by the multi-stemmed lime with mistletoe in its crown, beside a signposted parking bay and a bench. It stands on the grass at the junction in front of the Hasengütl farm, Heindlmühlstraße 1.",
+  "best_time": {
+   "months": [
+    6
+   ],
+   "kind": "flowers",
+   "label": "June, when the scented lime blossom opens and the crown fills with bees"
+  }
+ },
+ {
+  "name": "Linde Hochosterwitz",
+  "country": "Austria",
+  "place": "Hochosterwitz (Maigern, Carinthia)",
+  "place_note": "No published place; nearest published tree ljubljana.json lju_004 at 78 km. Hochosterwitz castle (paid entry) is a few hundred metres up the hill.",
+  "species": "Lime (Tilia sp.)",
+  "age_estimate": "roughly 450 years (on-site sign)",
+  "age_min": 450,
+  "age_max": 450,
+  "age_basis": "source",
+  "location": {
+   "address": "South foot of the Hochosterwitz hill, near Maigern, Carinthia",
+   "latitude": 46.75421,
+   "longitude": 14.45055,
+   "neighbourhood": "Maigern"
+  },
+  "location_precision": "confirmed",
+  "access": "Stands at the foot of the castle hill beside a wooden bench on open woodland slope, no fence or gate in the photograph; reachable on foot. No source states ownership or rights of way.",
+  "transport": "Near Maigern/Hochosterwitz; no public-transport time verified.",
+  "verified_sources": [
+   "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_01.jpg",
+   "https://commons.wikimedia.org/wiki/Category:Linde_Hochosterwitz"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Linde_Hochosterwitz_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Niki.L",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Linde_Hochosterwitz_01.jpg",
+   "width": 3456,
+   "height": 4608,
+   "status": "approved"
+  },
+  "alive_basis": "Commons photo 2019-12-29 (winter, leafless, mistletoe, plaque on the trunk). No 2020+ evidence seen.",
+  "curation_status": "flagged",
+  "id": "hoc_001",
+  "_city": "Hochosterwitz",
+  "_slug": "hochosterwitz",
+  "story": "The only written record of this tree's age hangs on its own trunk. A small plaque reads \"Linde, Alter etwa 450 Jahre\": lime, about 450 years old.\n\nThat is the tree's own claim, and we have found nothing to check it against. It is not on Carinthia's list of natural monuments, no survey has measured it, and everything we know comes from the plaque and one photographer's pictures. Read the 450 years as the sign's estimate, not a dating.\n\nWhat the photographs do show is a tree built for the number. The trunk is massive and flares into big buttress roots where it meets the slope. Above it the crown divides into upright limbs like a candelabra, with mistletoe in the branches. A wooden bench sits beside it.\n\nIt grows at the south foot of the hill crowned by Hochosterwitz castle, near Maigern, on open wooded slope with no fence or gate in sight. The castle, which charges for entry, is a few hundred metres further up.\n\nTwo gaps remain. The pictures were taken in December 2019, bare, so nobody has recorded which lime it is, and we know of no photograph since. If you pass in summer, the leaves would settle the species, and a picture would tell us it is still standing.",
+  "how_to_recognise": "You can recognise it by the plaque on the trunk giving its age as about 450 years, the big buttress roots and the wooden bench beside it. It stands at the south foot of the Hochosterwitz castle hill."
+ },
+ {
+  "name": "Japanischer Schnurbaum, Bregenz",
+  "country": "Austria",
+  "place": "Bregenz (Rieden-Vorkloster)",
+  "place_note": "No published place; nearest published tree robenhausen.json rbh_001 at 73 km (Switzerland).",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "roughly 75 years",
+  "age_min": 70,
+  "age_max": 80,
+  "age_basis": "source",
+  "girth_cm": 270,
+  "height_m": 12.5,
+  "location": {
+   "address": "Johann-Jörg-Weg beside the schoolyard of the Hauptschule Rieden-Vorkloster, Bregenz",
+   "latitude": 47.4922093,
+   "longitude": 9.7241186,
+   "neighbourhood": "Rieden-Vorkloster"
+  },
+  "location_precision": "approximate",
+  "access": "VIEW ONLY from the public street Johann-Jörg-Weg: the lead photograph shows the trunk at the edge of the street behind a low hedge, with a street name sign and the school building behind. Do not enter school grounds.",
+  "transport": "Bregenz Rieden-Vorkloster district; no public-transport time verified.",
+  "verified_sources": [
+   "https://www.vol.at/japanischer-schnurbaum-jetzt-naturdenkmal/1730404",
+   "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Bregenz",
+   "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum,_Bregenz.jpg"
+  ],
+  "official_register": {
+   "name": "Naturdenkmal Vorarlberg ND-213 (Bregenz)",
+   "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkm%C3%A4ler_im_Bezirk_Bregenz"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Japanischer_Schnurbaum%2C_Bregenz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "HanifeBiyikli",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Japanischer_Schnurbaum,_Bregenz.jpg",
+   "width": 1130,
+   "height": 1425,
+   "status": "approved"
+  },
+  "alive_basis": "Commons photo 2016-05-30 (Wiki Loves Earth, in full leaf); vol.at 2010: vital with 11-25% leaf loss. NO 2020+ evidence found, say so plainly.",
+  "curation_status": "flagged",
+  "id": "bgz_001",
+  "_city": "Bregenz",
+  "_slug": "bregenz",
+  "story": "This tree is twice as wide as it is tall. Its crown spreads 26 metres; the whole tree stands only 12.5 metres high.\n\nIt is a Japanese pagoda tree beside the schoolyard of the Hauptschule in Rieden-Vorkloster, and it is young for this map. It was planted around 1950, which makes it roughly 75 years old, and its trunk is 86 centimetres thick. It is not a veteran; what sets it apart is that spread. On 1 July 2010 the Bregenz town council declared it a natural monument, listed in the Vorarlberg register as ND-213. A newspaper report that year called it vital, with 11 to 25 percent leaf loss.\n\nThe species flowers late. In August, when almost nothing else around it is in bloom, a pagoda tree opens clusters of cream flowers, and a crown this wide has a great deal of room for them.\n\nThe last photograph we know of was taken in May 2016, in full leaf. We have found nothing more recent, so we cannot confirm how it is doing now. If you walk past, tell us.\n\nSee it from the street, Johann-Jörg-Weg, where the trunk stands at the edge behind a low hedge, with the school building behind it. The school grounds are not open to visitors, and from the pavement you see all of it anyway.",
+  "how_to_recognise": "You can recognise it by the low, very broad crown, 26 metres across on a tree 12.5 metres tall. It stands behind a low hedge on Johann-Jörg-Weg, at the edge of the schoolyard in Rieden-Vorkloster.",
+  "best_time": {
+   "months": [
+    8
+   ],
+   "kind": "flowers",
+   "label": "August, when the wide crown opens clusters of cream flowers"
+  }
+ },
+ {
+  "name": "Ōkakumaki (Ogi Park)",
+  "country": "Japan",
+  "place": "Ogi Park, Ogi City, Saga",
+  "place_note": "Nearest published tree fukuoka.json fuk_015 at 18 km (Fukuoka); Ogi is Saga prefecture, not a published place.",
+  "species": "Buddhist Pine (Podocarpus macrophyllus)",
+  "age_estimate": "roughly 350 years (local tradition)",
+  "age_min": 300,
+  "age_max": 350,
+  "age_basis": "source",
+  "location": {
+   "address": "Ogi Park, Ogi, Saga Prefecture",
+   "latitude": 33.288833,
+   "longitude": 130.196061,
+   "neighbourhood": "Ogi Park"
+  },
+  "location_precision": "approximate",
+  "access": "Public park (Ogi Park, a Japanese Top 100 historic park); the tree stands inside the park. Park is open all year; no ticket seen in sources.",
+  "transport": "Ogi, Saga Prefecture; no public-transport time verified in this pass.",
+  "verified_sources": [
+   "https://summer.walkerplus.com/odekake/detail/ar1041s44772/",
+   "https://commons.wikimedia.org/wiki/Category:%C5%8Cakumaki",
+   "https://ja.wikipedia.org/wiki/%E5%B0%8F%E5%9F%8E%E5%85%AC%E5%9C%92"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Grand_Squared_Buddhist_Pine_in_Ogi_Park_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "そらみみ",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Grand_Squared_Buddhist_Pine_in_Ogi_Park_1.jpg",
+   "width": 3953,
+   "height": 2965,
+   "status": "approved"
+  },
+  "alive_basis": "Walkerplus page (text states content gathered up to 2026-01-31) names the 350-year-old kakumaki as a park feature; Commons photo 2017-12-02 with geotag 33.288833,130.196061 and heading.",
+  "curation_status": "flagged",
+  "id": "ogi_001",
+  "_city": "Ogi",
+  "_slug": "ogi",
+  "story": "This tree has been clipped into a box. Its name says so: kaku-maki means squared maki, and the maki in question is an inumaki, a Buddhist pine, pruned by generation after generation of gardeners until the crown became a cube.\n\nLocal tradition puts it at about 350 years old, and the published range runs from 300 to 350. That figure is tradition, not a measurement, and we have found no survey behind it. What is certain is the work: a shape like this does not happen once, it lasts only as long as somebody keeps cutting it, and here somebody has, for generations.\n\nIt grows in Ogi Park in Saga Prefecture, one of Japan's 100 notable historic parks. The tree itself carries no natural monument designation. Current visitor information for the park, gathered up to January 2026, still names the 350-year-old kakumaki among the things to see, and a photograph from December 2017 shows it in place.\n\nThe park is public, open all year, and no source mentions a ticket. Our pin comes from where a photographer stood, so it is close rather than exact; inside the park, the square crown is the giveaway.\n\nNobody has published a recent girth or height. If you measure it, tell us.",
+  "how_to_recognise": "You can recognise it by the crown, clipped into a square block, which is what kaku-maki means. It stands inside Ogi Park; the pin is close rather than exact, so look for the cube."
+ },
+ {
+  "name": "Hägerums ek",
+  "country": "Sweden",
+  "place": "Hägerum, Oskarshamn municipality",
+  "place_note": "No published place; nearest published tree rumskulla.json rkm_001 at 50 km. Not on Öland.",
+  "species": "Oak (Quercus sp.)",
+  "age_estimate": "not documented",
+  "girth_cm": 695,
+  "location": {
+   "address": "Just west of the Hägerum manor farm buildings, Döderhult parish, Oskarshamn municipality, Kalmar county",
+   "latitude": 57.415355,
+   "longitude": 16.22039,
+   "neighbourhood": "Hägerum"
+  },
+  "location_precision": "approximate",
+  "access": "Stands in a fenced pasture beside a farm track west of Hägerum farm; the 2019 photograph shows a visitor on the path outside the fence. No source states a right of way: respect the fence and the farm.",
+  "transport": "Rural, near Döderhult/Oskarshamn; no public-transport time verified.",
+  "verified_sources": [
+   "https://sv.wikipedia.org/wiki/H%C3%A4gerum",
+   "https://www.bimon.se/sida_kvalitet/nminne_bilder.php",
+   "https://commons.wikimedia.org/wiki/File:H%C3%A4gerums_ek,_juni_2019a.jpg"
+  ],
+  "official_register": {
+   "name": "Swedish naturminne (protected natural monument), protected 22 August 1958, Länsstyrelsen Kalmar",
+   "url": "https://www.bimon.se/sida_kvalitet/nminne_bilder.php"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/H%C3%A4gerums_ek%2C_juni_2019a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Holger.Ellgaard",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:H%C3%A4gerums_ek,_juni_2019a.jpg",
+   "width": 4755,
+   "height": 3525,
+   "status": "approved"
+  },
+  "alive_basis": "Biologiska museet i Oskarshamn (bimon.se) photo dated 2019-05-15 and measurement 2003; Commons photo 2019-06-17 in leaf. No 2020+ evidence.",
+  "curation_status": "flagged",
+  "id": "hgr_001",
+  "_city": "Hägerum",
+  "_slug": "hagerum",
+  "story": "This oak has been protected by law since 1958, and in 2003 it measured 6.95 metres round at chest height.\n\nThe county board of Kalmar made it a naturminne, a protected natural monument, on 22 August 1958. The measurement came 45 years later, from the Biological Museum in Oskarshamn, which describes a richly branched oak with a broad crown. That museum is also the source of the most recent check we know of, a photograph dated May 2019. Another from June 2019 shows it in full leaf. Nothing we have found is newer, so if you see it, tell us how it is.\n\nIt stands just west of the farm buildings of Hägerum, a manor farm in Döderhult parish, Oskarshamn municipality.\n\nTwo things nobody has written down. The first is its age: no source gives one, and a girth like this alone does not settle it. The second is its species. It is probably a pedunculate oak, but no source says so, which is why we list it simply as an oak. A look at the acorns, which hang on long stalks in a pedunculate oak, would answer it.\n\nThis is farmland. The oak grows in a fenced pasture beside a farm track, and the 2019 photograph shows a visitor on the path outside the fence. No source describes a right of way into the field, so stay on the path, outside the fence, and leave the farm in peace.",
+  "how_to_recognise": "You can recognise it by the broad, richly branched crown and a trunk almost 7 metres round. It stands in a fenced pasture beside a farm track, just west of the Hägerum farm buildings."
+ },
+ {
+  "name": "Tamatoriyama-no-Ōkatsura",
+  "country": "Japan",
+  "place": "Tomisato, Shikokuchuo, Ehime (Mt Tamatori)",
+  "place_note": "No published place; nearest published tree otoyo.json oty_001 at 17 km straight line (Kochi, across the mountains).",
+  "species": "Katsura (Cercidiphyllum japonicum)",
+  "age_estimate": "over 300 years",
+  "age_min": 300,
+  "age_max": null,
+  "age_basis": "source",
+  "girth_cm": 1500,
+  "height_m": 30,
+  "location": {
+   "address": "North slope of Mt Tamatori (about 1,060 m), Samukawayama, Tomisato-cho, Shikokuchuo, Ehime",
+   "latitude": 33.866122,
+   "longitude": 133.53075,
+   "neighbourhood": "Tomisato"
+  },
+  "location_precision": "approximate",
+  "access": "Remote mountain tree reached by a mountain road and then on foot; I found no source describing the route, parking or whether it is signed. Car only, far from any station.",
+  "transport": "Roughly 25 km of mountain road from Iyo-Mishima station per the earlier pass; car only. No public transport verified.",
+  "verified_sources": [
+   "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%84%E3%83%A9_(%E6%A4%8D%E7%89%A9)",
+   "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 3.0",
+   "attribution": "ball banban",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%8F%96%E5%B1%B1%E3%81%AE%E5%A4%A7%E6%A1%82_-_panoramio.jpg",
+   "width": 1067,
+   "height": 1600,
+   "status": "approved"
+  },
+  "alive_basis": "Photo dated 2010 only (panoramio upload); ja.wikipedia (2024 book source, Koyama 2024 p.216) lists it in the present tense. No 2020+ dated sighting found.",
+  "curation_status": "flagged",
+  "id": "skc_001",
+  "_city": "Shikokuchuo",
+  "_slug": "shikokuchuo",
+  "story": "Fifteen metres round, and there is no trunk in the middle. This katsura on the slopes of Mt Tamatori has lost its central stem, and what stands there now is a ring of trunks rising around a hollow base, 30 metres tall.\n\nThe 15 metres is the measure of that whole fountain of stems, not of one trunk, which makes it no less of a sight: a single tree standing like a small grove. A 2024 book by Koyama Yoji gives the figures and an age of more than 300 years, and lists it as a Natural Monument of Ehime Prefecture.\n\nIt grows on the north side of the mountain at about 1,060 metres, in the Tomisato district of Shikokuchuo. In autumn katsura leaves turn pink and yellow, and as they fall they give off a smell often compared to caramel or burnt sugar.\n\nWe have to be plain about two things. The newest photograph we know of was taken in 2010; the 2024 book is cited for it in the present tense, but we have found no dated sighting since. And we have found no description of the way in: not the path, not the parking, not whether there is a sign. It is roughly 25 kilometres of mountain road from Iyo-Mishima station, by car only, and then on foot. If you have been, tell us how you got there.",
+  "how_to_recognise": "You can recognise it by the ring of trunks, 15 metres round in all, rising around a hollow base where the central trunk has gone. It stands on the north slope of Mt Tamatori at about 1,060 metres.",
+  "best_time": {
+   "months": [
+    10,
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "October and November, when the leaves turn pink and yellow and smell of burnt sugar as they fall"
+  }
+ },
+ {
+  "name": "Amidaji no Keyaki",
+  "country": "Japan",
+  "place": "Jionji, Sakurai, Nara",
+  "place_note": "Nearest published tree uda.json uda_001 at 6.8 km; Sakurai is about 27-31 minutes by direct train from Nara per the earlier pass.",
+  "species": "Saw-leaf Zelkova (Zelkova serrata)",
+  "age_estimate": "roughly 400 to 800 years",
+  "age_min": 400,
+  "age_max": 800,
+  "age_basis": "source",
+  "girth_cm": 600,
+  "height_m": null,
+  "location": {
+   "address": "Jionji 383, Sakurai, Nara, in front of Amida Hall beside Tamatsura Shrine",
+   "latitude": 34.520083,
+   "longitude": 135.866972,
+   "neighbourhood": "Jionji"
+  },
+  "location_precision": "approximate",
+  "access": "Stands in front of the Amida Hall of Jionji beside Tamatsura Shrine, leaning over the old road from a stone retaining wall; public and free to see.",
+  "transport": "Near Yamato-Asakura station on the JR Sakurai Line (name from the temple listings), then walk; time not verified here.",
+  "verified_sources": [
+   "http://www.hitozato-kyoboku.com/sakurai-amidaji-keyaki.htm",
+   "http://www.tree-flower.jp/29/amidaji_keyaki_586/amidaji.html",
+   "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15310888693).jpg"
+  ],
+  "official_register": {
+   "name": "Nara Prefecture protected tree (hogo jumoku), designated 1972-10-02",
+   "url": "http://www.hitozato-kyoboku.com/sakurai-amidaji-keyaki.htm"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Amidaji_no_Keyaki_%2815310888693%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 2.0",
+   "attribution": "coniferconifer from japan",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Amidaji_no_Keyaki_(15310888693).jpg",
+   "width": 4032,
+   "height": 2272,
+   "status": "approved"
+  },
+  "alive_basis": "hitozato-kyoboku survey photographed 2023-07-25 and cites a 2023-04 Ministry of the Environment giant-tree measurement; Commons photo 2014-11-22.",
+  "curation_status": "flagged",
+  "id": "skr_001",
+  "_city": "Sakurai",
+  "_slug": "sakurai",
+  "story": "The prefecture's sign beside this zelkova says it is 800 years old. Sakurai's tourist association says 400. Neither shows its working, and the 800 rests on tradition, so the honest answer is somewhere between the two.\n\nIts measurements disagree almost as much. The Ministry of the Environment's giant-tree survey of April 2023 gives a height of 22 metres and a girth of 6.05 metres. Another listing has 15 metres and 6, and an older survey of the Kinki region 10 metres and 5.2. We give the girth as about 6 metres and leave the height open.\n\nWhat nobody disputes is where it stands and how. It grows in front of the Amida Hall of Jionji, beside Tamatsura Shrine, rooted in a stone retaining wall and leaning out over the old road below. The trunk is hollow, and locally it is known as the tree that was struck by lightning. Nara Prefecture lists it as a protected tree, designated in October 1972 according to the listings we have seen.\n\nIt was photographed for a survey of village giants in July 2023, so it was standing then.\n\nThe tree is in the open and free to see. The nearest station named in the temple listings is Yamato-Asakura on the JR Sakurai Line, a walk away. Sakurai itself is roughly half an hour by train from Nara.",
+  "how_to_recognise": "You can recognise it by the hollow trunk, about 6 metres round, leaning out over the old road from a stone retaining wall. It stands in front of the Amida Hall of Jionji, beside Tamatsura Shrine."
+ },
+ {
+  "name": "Tate-no-Omayumi",
+  "country": "Japan",
+  "place": "Konan, Koriyama, Fukushima",
+  "place_note": "Nearest published tree koriyama.json kna_001 at 10.6 km. Koriyama has a published place; this tree is in its Konan district, outside the city.",
+  "species": "Japanese Spindle (Euonymus hamiltonianus)",
+  "age_estimate": "roughly 300 to 340 years",
+  "age_min": 300,
+  "age_max": 340,
+  "age_basis": "source",
+  "girth_cm": 355,
+  "height_m": 7.3,
+  "location": {
+   "address": "Tate, Nakayachi 1459, Konan-machi, Koriyama, Fukushima",
+   "latitude": 37.408,
+   "longitude": 140.14536,
+   "neighbourhood": "Konan"
+  },
+  "location_precision": "approximate",
+  "access": "Stands beside a shrine on a road curve, seen from the road; earlier pass found no dedicated parking.",
+  "transport": "Konan district of Koriyama; no public-transport time verified, expect bus or car.",
+  "verified_sources": [
+   "https://www.pref.fukushima.lg.jp/site/shinrinkankyouzei/kyoboku-kencyu.html",
+   "https://commons.wikimedia.org/wiki/Category:Tate-no-Omayumi",
+   "https://commons.wikimedia.org/wiki/File:Tate-no-Omayumi_(8112790876).jpg"
+  ],
+  "official_register": {
+   "name": "Koriyama City Natural Monument (designated 1979-11-20) and Fukushima Prefecture Green Cultural Property",
+   "url": "https://www.pref.fukushima.lg.jp/site/shinrinkankyouzei/kyoboku-kencyu.html"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tate-no-Omayumi_%288112790876%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 2.0",
+   "attribution": "M Murakami from Fukushima, Japan",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Tate-no-Omayumi_(8112790876).jpg",
+   "width": 4352,
+   "height": 3264,
+   "status": "approved"
+  },
+  "alive_basis": "Fukushima Prefecture giant-tree survey FY2016-17 (page updated 2018-09-12) measured it; Commons photo 2012-10-21. An earlier pass cited a June 2024 blog visit that I could not re-find.",
+  "curation_status": "flagged",
+  "id": "kna_002",
+  "_city": "Koriyama",
+  "_slug": "koriyama",
+  "story": "Mayumi, the Japanese spindle, normally grows to the size of a shrub. This one is 7.3 metres tall with a trunk 3.55 metres round.\n\nIt is protected twice over. Koriyama made it a city natural monument, on 20 November 1979 according to the city's list of designations, and Fukushima Prefecture counts it among its Green Cultural Properties. The prefecture's giant-tree survey of 2016 and 2017 measured it at those figures and put its age at 340 years.\n\nThe local tourism association gives slightly different numbers: about 6 metres tall, a trunk about a metre across, and more than 300 years old. Either way the two agree on the point. This is a plant that usually stays modest, and here it has had three centuries to ignore that.\n\nIt stands beside a shrine where the road bends at Tate, in the Konan district, well outside central Koriyama. Look at it from the road; we know of no dedicated parking. Expect to come by car or bus.\n\nOne caution about the map. Two sources put the tree about 155 metres apart, and neither has been checked on the ground, so our pin is approximate. Look for the shrine on the curve. If you stand beside it, a GPS fix from your phone would settle the map for everyone who comes after you.\n\nIf you know its story, tell us.",
+  "how_to_recognise": "You can recognise it by its size, a spindle tree 7.3 metres tall and 3.55 metres round where the species is usually a shrub. It stands beside a shrine on a bend in the road at Tate, Nakayachi."
+ },
+ {
+  "name": "Shimokashiwa no Taihaku",
+  "country": "Japan",
+  "place": "Shimokashiwa-cho, Shikokuchuo, Ehime",
+  "place_note": "No published place near; nearest published tree otoyo.json oty_001 at 27 km (across the mountains, car only).",
+  "species": "Chinese Juniper (Juniperus chinensis)",
+  "age_estimate": "not documented",
+  "girth_cm": 818,
+  "location": {
+   "address": "Shimokashiwa-cho, Shikokuchuo, Ehime Prefecture",
+   "latitude": 33.98438,
+   "longitude": 133.5585,
+   "neighbourhood": "Shimokashiwa"
+  },
+  "location_precision": "approximate",
+  "access": "Stands on a small plot beside a road in the town, propped with many poles, seen from the roadside; no gate in the photograph.",
+  "transport": "In Shikokuchuo; no public-transport time verified, nearest sources point to a car route along National Route 11.",
+  "verified_sources": [
+   "https://kunishitei.bunka.go.jp/heritage/detail/401/2538",
+   "https://en.wikipedia.org/wiki/List_of_Natural_Monuments_of_Japan_(Ehime)",
+   "https://commons.wikimedia.org/wiki/File:Oohaku01.jpg"
+  ],
+  "official_register": {
+   "name": "National Natural Monument, designated 1924-12-09 (Agency for Cultural Affairs)",
+   "url": "https://kunishitei.bunka.go.jp/heritage/detail/401/2538"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Oohaku01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Dokudami",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Oohaku01.jpg",
+   "width": 1482,
+   "height": 1600,
+   "status": "approved"
+  },
+  "alive_basis": "Commons photo 2016-06-28 (in full leaf, many props); Shikokuchuo city tourism lists in municipal PDFs (undated). No 2020+ dated sighting.",
+  "curation_status": "flagged",
+  "id": "skc_002",
+  "_city": "Shikokuchuo",
+  "_slug": "shikokuchuo",
+  "story": "This juniper was already more than 8 metres round when Japan made it a National Natural Monument in December 1924. Today its branches rest on a crowd of wooden props.\n\nThe 1924 designation report measured it in the old units: 2 jo 7 shaku below a large burl about a metre up the trunk, roughly 8.2 metres, and 2 jo 1 shaku above it, about 6.4 metres. Later and larger figures have been published, but the 1924 ones are the only measurements we have been able to confirm.\n\nThe tree is a Chinese juniper, ibuki in Japanese. A photograph from June 2016 shows it in full leaf: a huge conifer with fine scale foliage, its limbs held up by many poles, and a stone marker at its foot. One account says a Jizo statue has sat in a hollow at its base since 1783.\n\nNobody has given it an age we could confirm. If you know where a reliable figure comes from, tell us.\n\nIt stands on a small plot beside the road in Shimokashiwa, in Shikokuchuo, and you see it from the roadside; the photographs show no gate. Directions point to a drive along National Route 11, and you will want a car.\n\nThe most recent dated photograph we know of is the one from 2016. It has stood here as a protected tree for a century, and if you pass, a new picture would tell us it still does.",
+  "how_to_recognise": "You can recognise it by the many wooden props holding up its branches and the stone marker at its foot, a huge juniper more than 8 metres round. It stands on a small roadside plot in Shimokashiwa."
+ }
+]

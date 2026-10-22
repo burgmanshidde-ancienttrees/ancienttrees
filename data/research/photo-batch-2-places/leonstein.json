@@ -1,0 +1,65 @@
+{
+  "city": "Leonstein",
+  "country": "Austria",
+  "status": "needs_curation",
+  "intro": "Leonstein's best-known tree has its own parking bay and bench. The Bühler-Linde is a very large, multi-stemmed large-leaved lime on the grass at a road junction, in front of the Hasengütl farm that locals also call Bühler. Its age has never been published, and its story lives mostly in one photographer's record, which makes it a tree to see for yourself.",
+  "meta_description": "The Bühler-Linde in Leonstein, Upper Austria: a huge multi-stemmed lime at a road junction, with its own parking bay and bench.",
+  "question_meta": "The Bühler-Linde: a vast multi-stemmed lime in front of the Hasengütl farm in Leonstein, Upper Austria, with a bench and parking bay.",
+  "question_answer": "The Bühler-Linde is a very large, multi-stemmed large-leaved lime standing in front of the Hasengütl farm in Leonstein, part of Grünburg in Upper Austria. It has a signposted parking bay and a bench beside it at the road junction. Its age, girth and height have not been published, and it is not on Upper Austria's list of natural monuments.",
+  "question_context": "Leonstein is a village in the municipality of Grünburg, in Upper Austria. The lime grows at a road junction in front of the Hasengütl farm, Heindlmühlstraße 1, a farm that also goes by the names Bühler and Höchtl; the tree takes the first of them. Someone thought it worth a signposted parking bay and a bench, though it is not even on the list of protected trees. Photographs from May 2021 and March 2022 show a broad crown on several stems, with mistletoe hanging in it. The species, a large-leaved lime, flowers in June, a little earlier than other limes, with pale scented blossom that draws bees for about a fortnight; that is the time to come. The farm is private. The tree stands on the grass by the road, so everything worth seeing is visible from the junction and the bench. No public-transport time to the village has been checked. Nobody has published how old the tree is. If you know, or know who planted it, we would like to hear.",
+  "faq": [
+    {
+      "q": "Is the Bühler-Linde a protected natural monument?",
+      "a": "Not as far as we can find. It does not appear on Upper Austria's list of natural monuments."
+    },
+    {
+      "q": "When does the Bühler-Linde flower?",
+      "a": "Large-leaved limes flower in June, for about a fortnight, with pale and scented blossom."
+    },
+    {
+      "q": "Can you park near the tree?",
+      "a": "Yes. There is a signposted parking bay and a bench beside the road at the junction. The farm itself is private."
+    }
+  ],
+  "trees": [
+    {
+      "id": "leo_001",
+      "name": "Bühler-Linde (Leonstein)",
+      "species": "Large-leaved Lime (Tilia platyphyllos)",
+      "age_estimate": "not documented",
+      "location": {
+        "address": "Heindlmühlstraße 1, Leonstein, Grünburg (in front of the Hasengütl farm, also called Bühler or Höchtl)",
+        "latitude": 47.905542,
+        "longitude": 14.231394,
+        "neighbourhood": "Leonstein"
+      },
+      "verified_sources": [
+        "https://commons.wikimedia.org/wiki/Category:B%C3%BChler-Linde_(Gr%C3%BCnburg)",
+        "https://www.wikidata.org/wiki/Q124353497",
+        "https://commons.wikimedia.org/wiki/File:Hasenguetl_in_Leonstein_mit_Linde_2.jpg"
+      ],
+      "access": "Stands on the grass at a road junction in front of the Hasengütl farm with a signposted parking bay and a bench beside the road; seen from public roads. The farm itself is private.",
+      "transport": "Leonstein, Grünburg (Upper Austria); no public-transport time verified.",
+      "location_precision": "approximate",
+      "curation_status": "flagged",
+      "story": "This lime has a signposted parking bay and a bench of its own, and almost no paperwork.\n\nIt grows on the grass at a road junction in Leonstein, part of Grünburg in Upper Austria, in front of the Hasengütl farm. Locals also call the farm Bühler or Höchtl, and the tree carries the first of those names. Photographs from May 2021 and March 2022 show a very large, broad, multi-stemmed large-leaved lime, with clumps of mistletoe hanging in its crown.\n\nThat is close to everything on record. The tree is not on Upper Austria's list of natural monuments. Nobody has published its age, its girth or its height, and everything we know comes from a single photographer's pictures and notes on Wikimedia Commons. A lime this broad standing in front of an old farm invites guesses about who planted it and when. We have no source for any of them, and if you know its story or its age, tell us.\n\nWhat the species does, it does on schedule. Large-leaved limes flower in June, a little earlier than the other limes, with pale, scented blossom that fills with bees for about a fortnight.\n\nThe farm itself is private. The tree stands at the road's edge, so the view from the junction and the bench is the whole visit, and it is enough. Our pin is approximate; look for the farm at Heindlmühlstraße 1.",
+      "best_time": {
+        "months": [
+          6
+        ],
+        "kind": "flowers",
+        "label": "June, when the scented lime blossom opens and the crown fills with bees"
+      },
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Buehler-Linde_in_Leonstein_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Christoph Waghubinger (Lewenstein)",
+        "attribution_url": "https://commons.wikimedia.org/wiki/File:Buehler-Linde_in_Leonstein_1.jpg",
+        "width": 6967,
+        "height": 4630,
+        "status": "approved"
+      },
+      "how_to_recognise": "You can recognise it by the multi-stemmed lime with mistletoe in its crown, beside a signposted parking bay and a bench. It stands on the grass at the junction in front of the Hasengütl farm, Heindlmühlstraße 1."
+    }
+  ]
+}

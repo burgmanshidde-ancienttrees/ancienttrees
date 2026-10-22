@@ -13866,6 +13866,22 @@
    "tokens": 157699,
    "trees": 15,
    "note": "Opus write pass: 15 stories and recognition lines, place copy for 10 slugs, question_context rewritten to 150-200 words after a preflight refusal; no best_time. Tokens from the agent's own usage line. Photos looked at in session: 14 approved, the Roosevelt Palm held (six palms, trunk unknown)."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verify",
+   "target": "photo-batch-2 (19 famous trees with an open photo: 15 focus-country leads, 4 Famous Trees of Texas)",
+   "tokens": 226137,
+   "trees": 15,
+   "note": "17 verifiable, 2 dead despite good-looking photos (Birr Castle poplar blown down 2014, Quebec cannonball elm felled 2021); session then held Mogadouro (no written source) and Hamerenne (private garden). Texas photo sweep before it: 93 trees, 4 usable, zero tokens. Tokens from the agent's own usage line."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "write",
+   "target": "photo-batch-2 (15 written, 10 kept, 8 new places)",
+   "tokens": 175282,
+   "trees": 10,
+   "note": "Opus write pass. Four Texas stories wasted: a night run had verified and written the same trees an hour earlier from the LOG's 'next lane' note (session claim was named photo-batch-2, so it could not see them). Häradseken held on access. Five intros lengthened after a Contract C refusal. Parked behind the pace guard (82 in 24 hours). Tokens from the agent's own usage line."
   }
  ]
 }

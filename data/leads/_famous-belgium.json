@@ -104,10 +104,11 @@
         "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_s%C3%A9culaire,_Hamerenne.01.jpg",
         "https://commons.wikimedia.org/wiki/File:Ch%C3%AAne_s%C3%A9culaire,_Hamerenne.02.jpg"
       ],
-      "status": "lead",
+      "status": "blocked",
       "species": "Oak (Quercus sp.)",
       "species_basis": "genus read from the tree's own name; ask the reader which species",
-      "verify_note": "2026-09-26 pass: no independent source beyond the bare Commons category found despite several search attempts (general web search, Wallonia arbres-remarquables search, fr.wikipedia's list of remarkable trees in Belgium, which covers other Namur-province villages like Liernu and Han-sur-Lesse but has no Hamerenne or Wanlin entry). Hamerenne is a hamlet of Rochefort, Namur province. What would unblock it: Wallonia's own AHREM/WalOnMap remarkable-trees geoportal (JS-rendered, not reachable by a plain text-search or curl fetch in this pass) or the DNF's remarkable-trees census searched by commune rather than by tree name. Left as a lead rather than blocked, since nothing found suggests a problem with the tree itself, only a gap in what this pass could reach."
+      "verify_note": "2026-09-26 pass: no independent source beyond the bare Commons category found despite several search attempts (general web search, Wallonia arbres-remarquables search, fr.wikipedia's list of remarkable trees in Belgium, which covers other Namur-province villages like Liernu and Han-sur-Lesse but has no Hamerenne or Wanlin entry). Hamerenne is a hamlet of Rochefort, Namur province. What would unblock it: Wallonia's own AHREM/WalOnMap remarkable-trees geoportal (JS-rendered, not reachable by a plain text-search or curl fetch in this pass) or the DNF's remarkable-trees census searched by commune rather than by tree name. Left as a lead rather than blocked, since nothing found suggests a problem with the tree itself, only a gap in what this pass could reach.",
+      "reason": "2026-10-22 photo-batch-2: on the lawn of a private house, view-only from the road (hard rule 10)."
     },
     {
       "name": "Opgaande eik bij oude kleiwinning (Volkershouw, Wetteren)",

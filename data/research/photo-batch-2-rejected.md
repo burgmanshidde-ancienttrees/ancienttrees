@@ -1,0 +1,11 @@
+# photo-batch-2 rejected (2026-10-22)
+
+- Birr Castle Grey Poplar (Ireland): DEAD. The 200-year-old grey poplar by the Camcor river blew down in the February 2014 storms during the European Tree of the Year vote; the trunk was left lying by the river (Irish Tree Register yearbook 2023/24). The Commons file's own description says "broken by storm". Sources: https://www.irishtimes.com/news/environment/european-tree-of-the-year-contender-blows-over-in-storms-1.1692428 , https://www.treeregister.org/files/modules/website-version-tree-reg-yearbook-23-2023-24-web.pdf . No replacement found.
+- L'arbre avec un boulet (Quebec City, Canada): FELLED. The City of Quebec cut the diseased elm (about 27 percent sound wood) in early 2021; the cannonball is a fire bomb set as a corner guard and the 1759 legend is disputed. Sources: https://montreal.ctvnews.ca/quebec-city-s-famous-cannonball-tree-to-be-cut-down-due-to-illness-1.5348425 , https://globalnews.ca/news/7702970/quebec-city-removes-famous-cannonball-tree . The 2012 Commons photo shows the old tree.
+- Tree of Mogadouro: held in session 2026-10-22, no written source at all (two geotagged photos and a Commons category), species unknown.
+- Chêne séculaire (Hamerenne): held in session 2026-10-22, stands on the lawn of a private house behind a hedge, view-only from the road (hard rule 10: not somebody's home).
+- Häradseken: held 2026-10-22, no source shows a public path to it on Gotland farmland; access cannot be stated honestly (hard rule 10). Story kept in data/research/photo-batch-2-held.json.
+- Houston Campsite Oak: dropped 2026-10-22, the night run verified and wrote the same tree as txf_ in data/research/texas-famous-verified.json first; theirs merges.
+- Cart War Oak: dropped 2026-10-22, the night run verified and wrote the same tree as txf_ in data/research/texas-famous-verified.json first; theirs merges.
+- Rio Frio Landmark Oak: dropped 2026-10-22, the night run verified and wrote the same tree as txf_ in data/research/texas-famous-verified.json first; theirs merges.
+- Century Tree: dropped 2026-10-22, the night run verified and wrote the same tree as txf_ in data/research/texas-famous-verified.json first; theirs merges.

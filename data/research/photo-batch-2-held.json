@@ -1,0 +1,44 @@
+[
+ {
+  "name": "Häradseken",
+  "country": "Sweden",
+  "place": "Roma parish, Gotland",
+  "place_note": "No published place; nearest published tree trollskogen.json trs_001 at 78 km (Öland, not reachable by land).",
+  "species": "Oak (Quercus sp.)",
+  "age_estimate": "not documented",
+  "location": {
+   "address": "Ajmunds 1:9, Roma parish, Gotland",
+   "latitude": 57.531119,
+   "longitude": 18.3863,
+   "neighbourhood": "Roma"
+  },
+  "location_precision": "approximate",
+  "access": "Protected natural monument (naturminne) on farmland, property Ajmunds 1:9; no source states a public path to it or opening rules. I did not see the access situation.",
+  "transport": "Rural central Gotland near Roma; no public-transport time verified.",
+  "verified_sources": [
+   "https://www.wikidata.org/wiki/Q86920232",
+   "https://catalog.lansstyrelsen.se/store/30/resource/2013__12",
+   "https://commons.wikimedia.org/wiki/File:H%C3%A4radseken.jpg"
+  ],
+  "official_register": {
+   "name": "Swedish naturminne 2003621, decided 1959-03-10, Länsstyrelsen Gotland",
+   "url": "https://www.wikidata.org/wiki/Q86920232"
+  },
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/H%C3%A4radseken.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Tulipasylvestris",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:H%C3%A4radseken.jpg",
+   "width": 2872,
+   "height": 1969,
+   "status": "approved"
+  },
+  "alive_basis": "Commons photo 2020-05-31 (Wiki Loves Earth 2020, id 2003621).",
+  "curation_status": "flagged",
+  "id": "rmg_001",
+  "_city": "Roma, Gotland",
+  "_slug": "roma-gotland",
+  "story": "Its name means the oak of the härad, the hundred, an old Swedish administrative district. Nobody has written down why this oak carries it.\n\nThat silence is worth respecting. A name like Häradseken invites a picture of judges and farmers meeting in its shade, and no source we have found says that ever happened. We do not know, and we will not guess.\n\nWhat is on record is short. The county board of Gotland protected it as a naturminne, a natural monument, on 10 March 1959, on the farm property Ajmunds 1:9 in Roma parish, in the middle of the island. It sits in the official register under number 2003621. A photograph taken for Wiki Loves Earth in May 2020 shows it standing.\n\nThere the record stops. No source gives its age, its girth or its height, or even which oak it is, so we list it simply as an oak. If you know any of it, or the story behind the name, tell us.\n\nIt grows on farmland, and we have found no source that describes a public path to it or any rules for visiting. Our pin is the register's point and approximate. Do not cross fields or enter the farm to reach it; if you cannot see it from a public road, leave it be.",
+  "how_to_recognise": "You can recognise it by its place in the register: the protected oak on the farm property Ajmunds 1:9. It stands on farmland in Roma parish, central Gotland, at the register's approximate point."
+ }
+]

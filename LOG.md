@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 (session with Hidde): ten famous trees with photos written, parked behind the pace guard
+
+- **Ready, not live:** 10 trees with approved Commons photos, 8 new places, ready in data/research/photo-batch-2-places/ (winterswijk, leonstein, hochosterwitz, bregenz, ogi, hagerum, shikokuchuo, sakurai) plus kna_002 Tate-no-Omayumi for Koriyama in data/research/photo-batch-2-verified.json. Preflight passes on them except `check_publishing_pace()` (82 in 24 hours). **Next run once the count drops:** move the eight files into data/cities/, append kna_002 (from the verified file, without `_city`, `_slug`, `alive_basis`, `country`, `place`, `place_note`) to data/cities/koriyama.json, preflight, merge. The night run's three Texas files (data/research/texas-places/) go first, they were parked earlier.
+- **Found gone despite a good photo:** Birr Castle grey poplar (blew down 2014), the Québec cannonball elm (felled 2021), and the Everseiche looks dead in a July 2025 photo. A photo is not a life check.
+- **Held:** Häradseken (no public path known on Gotland farmland), Mogadouro (no written source), Hamerenne (private front garden).
+- **Waste, said plainly:** the four Texas trees were verified and written twice. A night run took this LOG's "next lane: Texas" an hour before my claim, and my claim was named `photo-batch-2`, so neither side could see the other. A claim should name the place or list it covers. Cost of the pass: verify 226k, write 175k, for 10 trees, about 40k a tree.
+
 ## 2026-10-22 (session with Hidde): the strict cut, 367 more pages out of Google
 
 - **Product (Hidde: "ik ga liever te ver nu met meer kans op herstel en dat we dan langzaam weer toe laten"; "alleen uit Google, Bing houdt ze"):** every species (197), park (49), collection (19), state (10) and country page, the place pages of cities off the frozen roster, and translations there now carry the googlebot noindex. Bing keeps them via sitemap-bing.xml. 367 paths, `STRICT_CUT` in scripts/thin_pages.py (group 5 in data/noindex.md). Kept: the roster, anything a digest's top pages showed before 09-28, and every photographed tree page in English. Google's index goes from about 2,450 urls to about 2,080, nearly all photographed trees plus roster places.
