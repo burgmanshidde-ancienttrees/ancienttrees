@@ -220,7 +220,8 @@
    "place": "Washington DC",
    "country": "United States",
    "status": "stalled",
-   "note": "SCOUTED 2026-10-05 on scout_next.py --target (#112). DC Open Data (opendata.dc.gov) search for heritage or special trees returns only a StoryMap on heritage tree relocations, no point dataset of protected trees. The Urban Forest Preservation Act protects them but no coordinates list was found. Next angles: Casey Trees champion list (check licence and coordinates), DDOT Urban Forestry layers for a heritage flag. Already a live city, so this is deepening supply only."
+   "retried": "2026-10-22",
+   "note": "RETRIED 2026-10-22: the finding aid is the NPS notable-trees and witness-tree ArcGIS layers (most DC points already published or blocked); Casey Trees pages 403 to curl (Wayback copies work, no new public trunks). Four verified, one shipped (wdc_025 Yamaki Pine, potted bonsai at the National Arboretum); the Lincoln Memorial elm, Roosevelt Island cypress and Congressional Cemetery oak are held leads (approximate pin, no photo, no small site); a GPS fix or photo at the cemetery gate would free the oak. SCOUTED 2026-10-05 on scout_next.py --target (#112). DC Open Data (opendata.dc.gov) search for heritage or special trees returns only a StoryMap on heritage tree relocations, no point dataset of protected trees. The Urban Forest Preservation Act protects them but no coordinates list was found. Next angles: Casey Trees champion list (check licence and coordinates), DDOT Urban Forestry layers for a heritage flag. Already a live city, so this is deepening supply only."
   },
   {
    "place": "Detroit",

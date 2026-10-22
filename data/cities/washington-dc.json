@@ -2,9 +2,9 @@
   "city": "Washington DC",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The twenty below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Ten sit on or near the Mall and Capitol grounds, one walk apart; a few lie across the line in Virginia and Maryland.",
+  "intro": "Washington is a planned city, and its remarkable trees were planned with it, which means they come with paperwork most cities can only envy. The National Park Service keeps a register of witness trees, individuals that stood through history, and the Architect of the Capitol records plantings to the year. The twenty-one below run from the two original 1912 cherry trees that started the Tidal Basin tradition to a bur oak older than the memorial it shades. Ten sit on or near the Mall and Capitol grounds, one walk apart; a few lie across the line in Virginia and Maryland.",
   "meta_description": "Washington DC's remarkable trees keep federal paperwork: the two original 1912 Tidal Basin cherries, a bur oak at the Grant Memorial, and more, mapped.",
-  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and nineteen more remarkable trees nearby.",
+  "question_meta": "The oldest documented tree in Washington DC is the Grant Memorial Bur Oak on the Capitol grounds. Its story, and twenty more remarkable trees nearby.",
   "question_answer": "The oldest tree on our Washington map is the Travilah Oak, a white oak of more than 330 years in Potomac, Maryland, a day trip out of the city. The oldest documented tree in central Washington DC is the Grant Memorial Bur Oak in Union Square, at the foot of the Capitol, which predates the memorial landscape laid out around it. The city's biggest tree, and possibly its oldest overall, is the champion chestnut oak in Battery Kemble Park.",
   "question_context": "Age and documentation are different things in Washington, and the distinction shapes this whole list. Most cities on this site guess at their oldest tree from girth and legend; Washington can often simply look it up. The Architect of the Capitol has recorded plantings on the Capitol grounds since the Olmsted landscape was laid out, which is how the Grant Memorial Bur Oak's seniority over its own memorial is a matter of record rather than estimate. The National Park Service goes further and keeps a formal register of witness trees, individuals that stood through documented history, from the mulberry that predates the Washington Monument's completion to the elm whose cuttings became the disease-resistant Jefferson cultivar planted across the country. Even the champion chestnut oak in Battery Kemble Park, the city's largest tree, carries an official co-champion designation with measurements behind it. None of these trees rivals a European yew for age. What they offer instead is certainty, and for a project built on verification, a 150-year-old tree with a planting ledger can be a better tree than a 500-year-old one with a story.",
   "faq": [
@@ -815,6 +815,42 @@
       },
       "how_to_recognise": "You can recognise it as the one big oak standing alone in the grassy field, with picnic tables near it. It stands beside the parking lot at Oxon Hill Farm, by the Bald Eagle Road entrance.",
       "verify_notes": "- Register: NPS NCR Witness Tree layer (federal, 2018) HALS MD-13 'Oxon Cove Park & Oxon Hill Farm, near parking lot'; DBH 56.5 in (about 143 cm diameter; girth about 451 cm worked from it). HALS: 'likely planted in at least the early nineteenth century', a living witness to the War of 1812, the Godding Croft farms and the evolution of Oxon Hill Farm.\n- Independent source: Forest Foundation family forest blog, 29 May 2023 (fetched): 'now believed to be at least 200 years old'; stands alone in a grassy field near the parking lot with picnic tables and a view of Washington; 'still stands'. This also gives a dated alive confirmation (2023).\n- Context from the register text: land was Oxon Hill Manor (Addison family); Dr Samuel Debutts built Mount Welby; Mary Debutts wrote in 1815 that at Bladensburg 'we heard every fire. Our house shook' and saw the Capitol burning. The blog ties the tree to the night of 24 Aug 1814; the register says only that it likely dates to at least the early nineteenth century. Do not claim the tree was standing in 1814 as a fact; age is 'at least about 200 years'.\n- Pin: register coordinate (38.80249,-77.00367) near the car park; the field has one big oak but the crown was not confirmed against imagery: approximate, small named site.\n- Companion NPS register items on the same farm: boxwoods 150 to 250 years old east of the farmhouse (HALS MD-20, 38.80209,-77.00870), a red maple (no photo, 38.80222,-77.00903). Boxwood is a shrub group, not a collectible tree; recorded as lead only.\n- Outside DC (Maryland); within the district's day-trip range by car."
+    },
+    {
+      "id": "wdc_025",
+      "name": "The Yamaki Pine",
+      "species": "Japanese White Pine (Pinus parviflora 'Miyajima')",
+      "age_estimate": "about 400 years",
+      "age_min": 390,
+      "age_max": 400,
+      "location": {
+        "address": "National Bonsai & Penjing Museum, Japanese Pavilion entrance, U.S. National Arboretum, 3501 New York Avenue NE, Washington, DC 20002",
+        "latitude": 38.91242,
+        "longitude": -76.96894,
+        "neighbourhood": "U.S. National Arboretum (Ivy City / Arboretum)"
+      },
+      "verified_sources": [
+        "https://www.bonsai-nbf.org/yamaki-pine",
+        "https://en.wikipedia.org/wiki/Yamaki_Pine",
+        "https://www.bonsai-nbf.org/visit"
+      ],
+      "access": "Free; no ticket needed. National Bonsai & Penjing Museum open daily 10:00 am to 4:00 pm (National Bonsai Foundation page; the USDA page adds federal-holiday closures November to February). The Arboretum grounds open 8 am to 5 pm. The tree is the display at the entrance to the Japanese Pavilion. On foot only via the 24th and R Streets NE gate; parking on the grounds is free.",
+      "transport": "Stadium-Armory Metro (Blue/Orange/Silver), then B2 Metrobus to Bladensburg Road at Rand Street, then walk R Street two blocks to the Arboretum gate (National Bonsai Foundation directions; the walk inside the grounds to the museum is not timed from a source).",
+      "location_precision": "approximate",
+      "location_site": {
+        "name": "National Bonsai & Penjing Museum, Japanese Pavilion",
+        "radius_m": 50
+      },
+      "curation_status": "ai_generated",
+      "story": "Washington looked after this pine for 25 years before anyone here learned it had survived Hiroshima.\n\nIt is a bonsai: a Japanese white pine in a pot, not a tree rooted in the ground, and it is worth the trip anyway. The Yamaki family's account, repeated by the National Bonsai Foundation, has it in training since 1625. That is a date for its life as a bonsai, not a ring count, so the tree may be older than its training. The foundation marked its 400th anniversary in 2025.\n\nIn 1945 it stood in the Yamaki family nursery in Hiroshima. Officials of the Potomac Bonsai Association report that a garden wall sheltered it from the bomb. In 1976 the bonsai master Masaru Yamaki gave it to the United States, one of 53 bonsai Japan sent for the bicentennial, and by the foundation's account the oldest of them. Outside Japan, nobody knew its wartime history until 2001, when his grandsons came to visit it and told the story.\n\nThe foundation now calls it the Peace Tree. It stands at the entrance to the Japanese Pavilion of the National Bonsai & Penjing Museum, inside the U.S. National Arboretum. Entry is free, daily from 10 am to 4 pm. It was repotted in 2025, which at roughly four centuries old is the kind of gardening nobody rushes.",
+      "how_to_recognise": "You can recognise it as a bonsai, a Japanese white pine in a pot rather than a tree in the ground. It stands at the entrance to the Japanese Pavilion of the National Bonsai & Penjing Museum.",
+      "age_basis": "source",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      }
     }
   ]
 }

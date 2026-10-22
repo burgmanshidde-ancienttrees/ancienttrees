@@ -1102,6 +1102,149 @@
     {
       "candidate": "Chinese Hackberry, Reynolds Center (update)",
       "why_a_lead": "This pass could not find any Smithsonian page placing a hackberry at 8th and F or dating it 1900-1910; the only Smithsonian hackberry record found (accession 2011-0440A) is displayed at the National Portrait Gallery with uncertain provenance and 403s to fetch. Treat the lead as unverified."
+    },
+    {
+      "candidate": "1910 Japanese Flowering Cherries, East Potomac Golf Course (HALS DC-8; update 2026-10-22)",
+      "why_a_lead": "NPS notable-trees layer and HALS call these 'possibly' the surviving quarantined trees of the 1910 gift, older than the 1912 Tidal Basin cherries; the Washington Post says definite proof does not exist and DNA does not match the 1912 Yoshinos. NPS layer points: 14 trees, 38.8753 to 38.8756, -77.0292 to -77.0298, DBH 27 to 47 in. Not shipped: identity unproven, an ensemble on an active golf course (access is paid golf), and the grove sits inside a 2026 renovation plan (NYT via FactCheck.org 2026-09: 'in the Fazio plan, the grove is shown in the middle of the practice range. Its fate is uncertain'; 529 trees removed at East Potomac Park 2026-08/09, cherries disputed). Recheck alive status and whether a public path passes the grove before any pass.",
+      "status": "open"
+    },
+    {
+      "candidate": "Southern Magnolias, Historic Congressional Cemetery (Tree Walk stop 5)",
+      "why_a_lead": "Cemetery arboretum page (congressionalcemetery.org/arboretum/southernmagnolia/): several southern magnolias near the chapel, at the LGBTQ+ section intersection and south of the cenotaphs, designated witness trees, young in 1913 photographs, cultivar 'Bracken's Brown Beauty'. An ensemble across 35 acres with no individual coordinates or measurements: not one collectible point. Also on the cemetery: largest willow oak in the NE section (stop 19, planted after most of the 1800s), River Birch in the oldest section (sponsorship page only). Swamp white oak verified as wdc_024 and held below until findable.",
+      "status": "open"
+    },
+    {
+      "candidate": "Casey Trees 2023 largest-tree contest entries (Washington, DC)",
+      "why_a_lead": "Casey Trees posts (Wayback copies read 2026-10-22): entries are mostly private yards (Willow Oak 218 in circumference, 100 ft; Silver Maple 'Howard' 161 in), a Chinese pagoda near the Trinity Washington University driveway (180 in), and an oak by Michigan Park Community Playground (184 in). Nothing placed to a public trunk; the National Arboretum willow oak (271 in) is the published wdc_007. The Casey Trees pages 403 to curl; use web.archive.org.",
+      "status": "open"
+    },
+    {
+      "name": "The Lincoln Memorial Elm",
+      "species": "American Elm (Ulmus americana)",
+      "lat": 38.88819,
+      "lng": -77.04888,
+      "status": "held",
+      "why": "Not findable on 2026-10-22 write pass. Verified (NPS notable-trees layer, about 100 years) but not findable: approximate NPS point among many elms between the Lincoln Memorial and the Korean War Memorial, no photograph, no small named site. Ships as soon as an open-licence photo or an on-site GPS fix settles which elm.",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0 (NPS National Capital Region Notable Trees layer, feature 5 'Lincoln Elm')",
+        "https://www.nps.gov/articles/silent-sentinels-of-storied-landscapes.htm (NPS: Florence Harding planted two American elms at the 23rd Street entrance to the Lincoln Memorial grounds in 1921)"
+      ],
+      "verified_entry": {
+        "id": "wdc_022",
+        "name": "The Lincoln Memorial Elm",
+        "species": "American Elm (Ulmus americana)",
+        "age_estimate": "about a century",
+        "age_min": 90,
+        "age_max": 110,
+        "location": {
+          "address": "Lincoln Memorial grounds, between the Lincoln Memorial and the Korean War Veterans Memorial, National Mall, Washington, DC",
+          "latitude": 38.88819,
+          "longitude": -77.04888,
+          "neighbourhood": "West Potomac Park / National Mall"
+        },
+        "verified_sources": [
+          "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0 (NPS National Capital Region Notable Trees layer, feature 5 'Lincoln Elm')",
+          "https://www.nps.gov/articles/silent-sentinels-of-storied-landscapes.htm (NPS: Florence Harding planted two American elms at the 23rd Street entrance to the Lincoln Memorial grounds in 1921)"
+        ],
+        "official_register": {
+          "name": "NPS National Capital Region Notable Trees (Silent Sentinels of Storied Landscapes)",
+          "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_UERLA_StoryMap_Notable_Trees_Public/FeatureServer/0"
+        },
+        "access": "Free, public NPS ground on the National Mall west of the Reflecting Pool, open to walk up to at any hour.",
+        "transport": "Foggy Bottom-GWU Metro (Blue/Orange/Silver), roughly 1.5 km to the Lincoln Memorial (walk not timed from a source); DC Circulator/tour stops at the memorial.",
+        "location_precision": "approximate",
+        "location_site": null,
+        "curation_status": "flagged",
+        "verify_notes": "FLAGGED: one source (NPS), US one-source rule.\n- NPS notable-trees layer, feature 'Lincoln Elm': 'Near the Lincoln Memorial, a few elms survive from the first phases of planting in the 1920s... Between the Lincoln Memorial and the Korean War Memorial is one outstanding American elm about 100 years in age. The tree has the classic form of a mature elm; its main branches sweeping and curving upwards before descending in elegant lines. A recent storm tore off one of its branches.' The planned planting was a double semicircle of elms east of the memorial, scaled back to an alternating design; at the time many elms were dedicated as memorial trees. Elms around the memorial are of many ages (healthy distribution); NPS arborists prune against Dutch elm disease.\n- NPS Silent Sentinels article (fetched): in 1921 American Forests sponsored a memorial planting campaign and First Lady Florence Harding planted two American elms at the 23rd Street entrance to the Lincoln Memorial grounds for the armistice that ended WWI. The article does NOT say this outstanding elm is one of those two; do not claim it. Age is NPS's 'about 100 years', no tree-specific planting record.\n- No girth or height published. Layer point (38.88819,-77.04888) is NPS's placement for the tree, but many elms stand here; approximate. The layer's own image of it carries 'non-commercial use only', so not a photo candidate.\n- Alive: NPS storymap text is current (recent storm branch loss mentioned); lifecheck RECENT hit (iNat 2025-01-20) is only a generic nearby observation, not this trunk.\n- Photo: Commons geosearch within 150 m returned no tree photo that identifies this elm; none recorded.\n- Neighbours: the Willow Oak Circle (wdc_009) is about 100 m north-east. A photo or on-site GPS would settle which elm; the page can ask the reader."
+      }
+    },
+    {
+      "name": "The Theodore Roosevelt Island Bald Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "lat": 38.89481,
+      "lng": -77.06083,
+      "status": "held",
+      "why": "Not findable on 2026-10-22 write pass. Verified (NPS Witness Tree / HALS DC-48, DBH 40 in) but not findable: approximate register point in the east-side marsh, several bald cypresses along the boardwalk, no photograph, and whether a visitor can reach the trunk is unread. Needs a photo, an on-site GPS fix, or the NPS register image checked as this trunk.",
+      "sources": [
+        "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0 (NPS NCR Witness Trees, HALS DC-48, objects 53 and 54)",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1100/dc1158/data/dc1158data.pdf (HALS DC-48, scanned, not text-readable)",
+        "https://www.nps.gov/this/faqs.htm (island open 6 am to 10 pm)"
+      ],
+      "verified_entry": {
+        "id": "wdc_023",
+        "name": "The Theodore Roosevelt Island Bald Cypress",
+        "species": "Bald Cypress (Taxodium distichum)",
+        "age_estimate": "not documented",
+        "age_min": null,
+        "age_max": null,
+        "girth_cm": 319,
+        "location": {
+          "address": "Theodore Roosevelt Island, marshland on the east side of the island, George Washington Memorial Parkway, Washington, DC",
+          "latitude": 38.89481,
+          "longitude": -77.06083,
+          "neighbourhood": "Theodore Roosevelt Island (Potomac River, off Rosslyn)"
+        },
+        "verified_sources": [
+          "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NCR_Witness_Trees_2018_view/FeatureServer/0 (NPS NCR Witness Trees, HALS DC-48, objects 53 and 54)",
+          "https://tile.loc.gov/storage-services/master/pnp/habshaer/dc/dc1100/dc1158/data/dc1158data.pdf (HALS DC-48, scanned, not text-readable)",
+          "https://www.nps.gov/this/faqs.htm (island open 6 am to 10 pm)"
+        ],
+        "official_register": {
+          "name": "NPS National Capital Region Witness Tree Protection Program / HALS DC-48 (Library of Congress)",
+          "url": "https://www.loc.gov/item/dc1158"
+        },
+        "access": "Free NPS island, open 6 am to 10 pm daily (NPS FAQ). Reached by car only from the northbound GW Parkway lanes (about 90 parking spaces) or on foot or bike from the Mount Vernon Trail; bicycles are not allowed on the island itself. The register places the tree in the east-side marsh, so whether a visitor can stand at the trunk (boardwalk or trail edge) was not read from a source.",
+        "transport": "Parking lot off the northbound GW Parkway; foot or bike via the Mount Vernon Trail (NPS). No Metro walk time read from a source.",
+        "location_precision": "approximate",
+        "location_site": null,
+        "curation_status": "flagged",
+        "verify_notes": "FLAGGED: register only (NPS/HALS), no dated alive check of THIS trunk, marsh position, pin approximate.\n- NPS Witness Tree layer / HALS DC-48 text: 'significant for its size and apparent age. It is possibly the largest specimen of its species within the District of Columbia, and is one of the oldest, if not the oldest, trees found on Theodore Roosevelt Island. It is also a rare surviving example of the original, naturally-established vegetation present on the island prior to its historical development.' DBH 40 in (about 102 cm; girth about 319 cm worked from it, not a published girth). The layer flags the species 'out of range in DC' (native range southeastern US) while HALS calls it naturally established: conflict to keep in view. No age figure published; HALS metadata fields list building dates 'before 1800' but that is a catalogue field, not an age claim; do not use. Context: island replanted by Olmsted Jr and the CCC 1934-37 (about 20,000 native trees and shrubs) after federal acquisition in 1931 (search summary of the LOC entry and island histories; planting claim not seen on a fetched page).\n- Two register points 4 m apart (38.894812,-77.060835 and 38.894765,-77.060874), layer note 'Duplicate points?': folded into one entry.\n- Alive: iNaturalist shows Taxodium distichum observed on the island in 2026 (e.g. obs 401662720, 2026-09-19, CC BY, 'Theodore Roosevelt Island'), so cypresses stand there, but none ties to the HALS trunk. HALS was surveyed years ago.\n- Photo: none identified. The NPS layer shows a register image (npgallery asset 4e0f5cc1-3bd9-4fba-8ca6-7367d8bbe449), public domain per NPS, not checked as this trunk. Candidate only.\n- Other bald cypresses stand along the swamp boardwalk (DC Great Outdoors guide, search summary only); which one is the HALS tree is unknown."
+      }
+    },
+    {
+      "name": "The Congressional Cemetery Swamp White Oak",
+      "species": "Swamp White Oak (Quercus bicolor)",
+      "lat": 38.88265,
+      "lng": -76.97888,
+      "status": "held",
+      "why": "Not findable on 2026-10-22 write pass. Verified (cemetery arboretum page and blog, at least 113 years from 1913 photographs) but not findable: the pin is the 1801 E St SE address point, not the trunk, and the 35-acre cemetery is not a small site. 'Near the gates' would make a gate site if a photo, the Tree Walk map or a GPS fix confirms it; then ship.",
+      "sources": [
+        "https://congressionalcemetery.org/arboretum/swampwhiteoak/",
+        "https://congressionalcemetery.org/blog/congressional-cemetery-is-now-a-level-1-arboretum/",
+        "https://congressionalcemetery.org/tree-sponsorship/",
+        "https://congressionalcemetery.org/self-guided-tours/"
+      ],
+      "verified_entry": {
+        "id": "wdc_024",
+        "name": "The Congressional Cemetery Swamp White Oak",
+        "species": "Swamp White Oak (Quercus bicolor)",
+        "age_estimate": "over a century",
+        "age_min": 113,
+        "age_max": null,
+        "height_m": null,
+        "location": {
+          "address": "Historic Congressional Cemetery, 1801 E Street SE, Washington, DC 20003 (the large oak near the cemetery gates)",
+          "latitude": 38.88265,
+          "longitude": -76.97888,
+          "neighbourhood": "Hill East / Capitol Hill"
+        },
+        "verified_sources": [
+          "https://congressionalcemetery.org/arboretum/swampwhiteoak/",
+          "https://congressionalcemetery.org/blog/congressional-cemetery-is-now-a-level-1-arboretum/",
+          "https://congressionalcemetery.org/tree-sponsorship/",
+          "https://congressionalcemetery.org/self-guided-tours/"
+        ],
+        "official_register": {
+          "name": "Historic Congressional Cemetery Arboretum (Level 1, ArbNet), Tree Walk stop 1, designated Witness Tree",
+          "url": "https://congressionalcemetery.org/arboretum/swampwhiteoak/"
+        },
+        "access": "Free to walk in; cemetery grounds open daily 7:00 am to 7:00 pm (cemetery's own hours page). It is an active burial ground; the cemetery runs a self-guided Tree Walk with this oak as stop 1.",
+        "transport": "Potomac Avenue Metro (Blue/Orange/Silver), about 0.7 km from the E Street entrance (distance estimated from coordinates, walk not timed from a source); also Stadium-Armory Metro.",
+        "location_precision": "approximate",
+        "location_site": null,
+        "curation_status": "flagged",
+        "verify_notes": "FLAGGED: one source family, the owner of the ground (Historic Congressional Cemetery, a 501(c)(3)); US one-source rule and owner-of-ground rule. Arboretum accreditation reported by Hill Rag 2026-10-18.\n- Arboretum page (fetched 2026-10-22): 'HCC's swamp oak is over 120 years old, having been documented in photographs from 1913 as a young, established tree.' Designated WITNESS TREE ('has lived for over a century and has been a witness to cemetery history'). Max height for species 95 ft, max age 300 yrs (species figures, not this tree).\n- Cemetery blog 2026-09-01 (fetched): 'The large swamp white oak near the gates of the cemetery. Historical images place it as at least 113 years old. It is a large specimen for its age.' Photo credited 2026 (Vincent Vassal), so alive in 2026.\n- CONFLICT: the tree-sponsorship page (a fundraising page) calls it 'a designated Witness Tree pre-dating the Civil War'; the arboretum page and blog rest on the 1913 photographs. Use 'over a century' (1913 photograph, young established tree) and do not claim pre-Civil War.\n- No girth or height measured for this tree published. Species is rare as an old specimen in DC cemetery planting; 'a large specimen for its age' is the cemetery's own wording.\n- Pin: the cemetery says 'near the gates'; coordinate is the 1801 E St SE address point (Nominatim, 38.8826554,-76.9788787), NOT the trunk. Approximate, cemetery gate level. Cemetery is 35 acres so not a small site. An on-site GPS fix or the cemetery's Tree Walk map would settle it.\n- Other Congressional Cemetery trees: southern magnolias (stop 5, several trees, witness trees, young in 1913 photographs, so about 110 years or more) are an ensemble across the grounds, recorded as lead; largest willow oak NE section near LGBTQ+ section (stop 19, 'likely planted after most of the 1800s'); River Birch in the oldest section (sponsorship page only). Linden Oak (Montgomery Parks) is dead, not this."
+      }
     }
   ],
   "blocked": [
