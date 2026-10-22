@@ -151,6 +151,21 @@
    "candidate": "Norfolk Island Pine, 2040 Sutter St (back yard)",
    "status": "lead",
    "reason": "DataSF treeid 264740, planter Private, Back Yard; private, likely not visible. Not researched further; fails access evidence. 2026-10-22 pass."
+  },
+  {
+   "candidate": "Dr. Hurd Manzanita, 115 Parker Ave (sidewalk cutout)",
+   "status": "lead",
+   "reason": "DataSF treeid 253858 at 37.783584,-122.454718 lists siteinfo 'Sidewalk: Curb side : Cutout', planter Private, so the earlier 'backyard' block reason looks wrong and the tree may be street-visible. Cultivar shrub-tree, no size, no Commons or iNaturalist open photo within 150 m (checked 2026-10-22). No photo, so it waits. Source: data/registers/san-francisco-landmark-trees.json (DataSF)."
+  },
+  {
+   "candidate": "Norfolk Island Pine, 46A Cook St (front yard)",
+   "status": "lead",
+   "reason": "DataSF treeid 248932 at 37.78283,-122.452287 lists 'Front Yard : Yard', not back yard, so it may be seen from the street (view-only). No size, no open photo within 150 m on Commons or iNaturalist (checked 2026-10-22). No photo, so it waits. Source: DataSF via data/registers/san-francisco-landmark-trees.json."
+  },
+  {
+   "candidate": "2694 McAllister St Buckeye, 2626 Vallejo Monterey Cypress, 4124 23rd St oak, 46 Stillings redwood, 20 Rosemont Pl oak: re-check 2026-10-22",
+   "status": "lead",
+   "reason": "Register rows re-read: all private yards (back or front yard), no open photo within 150 m on Commons or iNaturalist. Stay blocked or removed as already recorded; nothing new for a deepen pass. No unmined register candidate in San Francisco has an open photo."
   }
  ],
  "blocked": [
