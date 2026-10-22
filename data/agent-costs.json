@@ -4,6 +4,22 @@
   "2026-10-22": [
    {
     "date": "2026-10-22",
+    "target": "regensburg",
+    "kind": "verify",
+    "tokens": 135000,
+    "trees": 0,
+    "note": "two oaks pinned from OSM nodes plus ordinances; the other ND rows have no coordinate"
+   },
+   {
+    "date": "2026-10-22",
+    "target": "regensburg",
+    "kind": "write",
+    "tokens": 105000,
+    "trees": 2,
+    "note": "two stories, rgb_001 register top-up, en and de city text rewrite"
+   },
+   {
+    "date": "2026-10-22",
     "target": "glasgow",
     "kind": "verify",
     "tokens": 90000,
