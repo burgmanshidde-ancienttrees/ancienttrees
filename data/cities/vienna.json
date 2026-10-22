@@ -204,19 +204,20 @@
       "id": "vie_005",
       "name": "The Mozart-Platane",
       "species": "Oriental Plane (Platanus orientalis)",
-      "age_estimate": "245 years",
+      "age_estimate": "245 to 280 years",
       "age_min": 230,
-      "age_max": 260,
+      "age_max": 280,
       "location": {
         "address": "Rennweg 14, 1030 Wien",
         "latitude": 48.1954,
         "longitude": 16.3839,
         "neighbourhood": "Landstraße, 3rd district"
       },
-      "story": "A memorial stone at its base calls this tree the Jacquin-Platane, but almost nobody in Vienna uses that name. Nikolaus Joseph von Jacquin planted it around 1780 as director of the university's Botanical Garden, and Wolfgang Amadeus Mozart walked past it often enough, on his way to piano lessons at Jacquin's house nearby, that the tree took his name instead. It has stood on Rennweg since before the French Revolution, and it has been protected as one of Vienna's first natural monuments since 1936, registered simply as Naturdenkmal Nr. 9. A property boundary shifted at some point in its life, and the tree now grows on the public sidewalk, just outside the fence of the Botanical Institute it once stood inside. Its trunk, roughly six metres around, has gone partially hollow with age, and Vienna's parks department now lists it as endangered. In 2009 the city closed Rennweg overnight and tested the tree's stability with rope winches, treating a quarter-millennium-old plane tree with the same seriousness as a structural inspection. It is around 245 years old now, close enough to Mozart's own lifetime that the story holds up better than most tree legends do.",
+      "story": "A memorial stone at its base calls this tree the Jacquin-Platane, but almost nobody in Vienna uses that name. Nikolaus Joseph von Jacquin planted it around 1780 as director of the university's Botanical Garden, and Wolfgang Amadeus Mozart walked past it often enough, on his way to piano lessons at Jacquin's house nearby, that the tree took his name instead. It has stood on Rennweg since before the French Revolution, and it has been protected as one of Vienna's first natural monuments since 1936, registered simply as Naturdenkmal Nr. 9. A property boundary shifted at some point in its life, and the tree now grows on the public sidewalk, just outside the fence of the Botanical Institute it once stood inside. Its trunk, roughly six metres around, has gone partially hollow with age, and Vienna's parks department now lists it as endangered. In 2009 the city closed Rennweg overnight and tested the tree's stability with rope winches, treating a quarter-millennium-old plane tree with the same seriousness as a structural inspection. Its planting is dated to about 1780, and Vienna's tourist board puts it at around 280 years; either way it is close enough to Mozart's own lifetime that the story holds up better than most tree legends do.",
       "verified_sources": [
         "https://de.wikipedia.org/wiki/Mozart-Platane",
-        "https://austria-forum.org/af/AustriaWiki/Mozart-Platane"
+        "https://austria-forum.org/af/AustriaWiki/Mozart-Platane",
+        "https://www.wien.info/de/lebenswertes-wien/nachhaltiges-wien/stadt-baeume-1108844"
       ],
       "access": "Free, public sidewalk",
       "transport": "5 min walk from the Rennweg tram stop (Tram O)",
@@ -237,7 +238,8 @@
         "name": "Naturdenkmale (Stadt Wien, MA 22), no. 3247601",
         "url": null
       },
-      "girth_cm": 638
+      "girth_cm": 638,
+      "verify_notes": "2026-10-22: WienTourismus (wien.info, Stadtbäume article) calls the Morgenländische Platane at Rennweg 14 Vienna's oldest tree, about 280 years, girth over six metres. Added as a source and widened age_max to 280. Not moved the city's 'oldest' crown: our question_answer gives it to the Singerstraße plane (>280); one tourism article does not settle it."
     },
     {
       "id": "vie_006",
