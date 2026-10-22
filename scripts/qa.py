@@ -2390,7 +2390,9 @@ def check_the_noindex_split_holds():
     elif bing.exists():
         locs = set(re.findall(r"<loc>([^<]+)</loc>", bing.read_text(encoding="utf-8")))
         extra = sorted(u for u in locs if u[len(base):] not in google_only)
-        missing = sorted(p for p in google_only if base + p not in locs)
+        # A listing file that builds no page (too few trees) is on the strict
+        # cut by its data file and rightly absent from the sitemap.
+        missing = sorted(p for p in google_only if base + p not in locs and built(p) is not None)
         if extra:
             out.append("sitemap-bing.xml holds %d urls that are not Google-only pages, e.g. %s"
                        % (len(extra), ", ".join(extra[:3])))

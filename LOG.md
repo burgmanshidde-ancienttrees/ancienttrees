@@ -17,6 +17,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 - **Ratchet widened with Hidde's yes:** qa's `check_the_noindex_split_holds()` lets the strict cut's listing and place pages carry the googlebot tag (it allowed tree pages only); question pages still never may. The recrawl and Bing sitemaps skip listed paths the build did not make (six listing files with too few trees).
 - **Not verified locally** (no local build): the deploy's qa run is the first full check of the tags.
 - **Letting back:** only once Search Console shows recovery, in steps, places and countries first, then species, each step after the previous one earns impressions.
+- **Press, wait (Hidde: "laten we maar even wachten we zijn met beide in contact geweest"):** no follow-up to Omrop Fryslân (Wybren, last mail 10-15) and no news pitch to Omroep Brabant (link ask 10-15) until Hidde says so.
 
 ## 2026-10-22 night run (fourth attempt): nothing shipped, pace guard still at 75
 
