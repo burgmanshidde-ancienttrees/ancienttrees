@@ -2,44 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-01T02:31:19+00:00",
-   "date": "2026-09-01",
-   "run_id": "33462833995",
-   "minutes": 61.2,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 400,
-   "denials": 35,
-   "denials_source": "permission_denials: Bash(cat), Bash(cd), Bash(curl), Bash(echo), Bash(env), Bash(for), Bash(gh), Bash(if), Bash(ls), Bash(pip), Bash(python3), Bash(rm), Bash(test)",
-   "ended": "success",
-   "tokens": 12500498,
-   "claims_held": [
-    "write-pass-batch"
-   ],
-   "commits": 12,
-   "cities_touched": 4,
-   "cities": [
-    {
-     "city": "delft",
-     "trees": 4
-    },
-    {
-     "city": "kagoshima",
-     "trees": 1
-    },
-    {
-     "city": "naples",
-     "trees": 1
-    },
-    {
-     "city": "valencia",
-     "trees": 1
-    }
-   ],
-   "trees": 7,
-   "logged": true
-  },
-  {
    "started": "2026-09-01T06:05:54+00:00",
    "date": "2026-09-01",
    "run_id": "33476144288",
@@ -24194,6 +24156,47 @@
     }
    ],
    "trees": 19,
+   "logged": true
+  },
+  {
+   "started": "2026-10-22T02:55:13+00:00",
+   "date": "2026-10-22",
+   "run_id": "39713947094",
+   "minutes": 33.1,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 152,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 116828,
+   "claims_held": [
+    "pittsburgh",
+    "leiden",
+    "rotterdam",
+    "rothenburg-ob-der-tauber"
+   ],
+   "commits": 16,
+   "cities_touched": 4,
+   "cities": [
+    {
+     "city": "chicago",
+     "trees": 7
+    },
+    {
+     "city": "frankfurt",
+     "trees": 2
+    },
+    {
+     "city": "san-francisco",
+     "trees": 0
+    },
+    {
+     "city": "washington-dc",
+     "trees": 0
+    }
+   ],
+   "trees": 9,
    "logged": true
   }
  ],
