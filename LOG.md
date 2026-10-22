@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (02:55 UTC window): photograph sweep, one approval
+
+- **Live:** the Presidio Centennial Tree (San Francisco) now has a photograph (BrokenSphere, CC BY-SA 3.0; reversal `python3 scripts/photo_apply.py hold sfo_011`). Rung 1 empty, health.py's only flags were push-skipped deploys (a dispatched deploy was running). `photo_hunt.py --recheck` on glasgow, san-francisco, washington-dc, pittsburgh found little; a viewing pass over 40 fetched files rejected 39 (wrong subject or species). Next time: queue the named Commons files for the Yamaki Pine (wdc_025: "Japanese White Pine 'Hiroshima Survivor', 30 April 2012.JPG", Sage Ross CC BY-SA, viewed and fits). Nothing written: the one written tree waiting, ftw_018, is held on unknown access.
+
 ## 2026-10-22 night run, later attempt: San Francisco +1, Studena new
 
 - **Live:** San Francisco 10 to 11: the Presidio Centennial Tree (1876 blue gum, approximate pin, no photograph yet; Commons has two CC BY-SA candidates to check). New one-tree place Studena (Grandpa Kolyo's Oak, Tree of the Year), out of Google until four. Preflight 0 problems. san-francisco claim released.
