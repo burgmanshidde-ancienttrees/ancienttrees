@@ -366,10 +366,41 @@ def check_app_link(path, text, body):
     # mails to readers pass through here as temp files and were still sending
     # it ("the message about the app is very irrelevant keep that out of all
     # mails to users", Hidde, after the dead-yew reader got one).
-    if "6806177833" in body or re.search(r"apps\.apple\.com", body):
+    # Not a hard ban (Hidde, 2026-10-22: "het is geen harde weigering, je moet
+    # m goed plaatsen"): a link is fine inside the paragraph that tells them
+    # how the app helps, a photo of a tree they walk past. A plug at the end
+    # with no such reason beside it still fails.
+    for para in re.split(r"\n\s*\n", body):
+        if "6806177833" not in para and not re.search(r"apps\.apple\.com", para):
+            continue
+        if re.search(r"\b(photo|photograph|picture|foto|Foto|fotograf)", para, re.I):
+            continue
         return [("APP LINK IN A MAIL", "6806177833",
-                 "Hidde, 2026-10-15, 10-16 and 10-19: no App Store link in a "
-                 "mail to a reader. Answer them and ask about a tree.")]
+                 "Hidde, 2026-10-15, 10-16 and 10-19: no App Store link as a "
+                 "plug. Only inside the paragraph that says how the app helps "
+                 "(a photo when they walk past a tree), 2026-10-22.")]
+    return []
+
+
+def check_link_on_its_own_line(path, text, body):
+    """Every link stands alone on its line, nothing before or after it
+    (Hidde, 2026-10-22, after Katherine could not open a link that sat at the
+    end of a sentence: "past links differently so we dont have the same
+    problem again"). A link glued to text or punctuation is the one a mail
+    program or a company filter is most likely to cut wrong. outreach_send.py
+    also sends every link as a real anchor in an HTML twin."""
+    if not BODY_SPLIT.search(text):
+        return []
+    # Reply drafts written from today only, so old drafts and the automated
+    # templates (temp files) are untouched; the HTML twin covers those.
+    dated = re.search(r"reply-.*?(\d{4}-\d{2}-\d{2})", os.path.basename(str(path)))
+    if not dated or dated.group(1) < "2026-10-22":
+        return []
+    for line in body.splitlines():
+        if re.search(r"https?://", line) and not re.fullmatch(r"\s*https?://\S+\s*", line):
+            return [("LINK NOT ON ITS OWN LINE", line.strip()[:60],
+                     "Hidde, 2026-10-22: put every link alone on its own line, "
+                     "no words or punctuation beside it.")]
     return []
 
 
@@ -423,6 +454,7 @@ def check(path):
     body = body_of(text)
     hits = list(check_reply_length(path, body))
     hits += check_app_link(path, text, body)
+    hits += check_link_on_its_own_line(path, text, body)
     hits += check_no_unshipped_feature(path, body)
     for label, patterns in CHECKS:
         for pat in patterns:

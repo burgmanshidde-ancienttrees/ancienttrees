@@ -277,6 +277,30 @@ Hidde rewrote my draft, which answered Bauer's questions as facts about the data
 
 Harald asked what would help and how we picture working together. My draft listed what we look for, asked for three trees and left the cooperation unanswered. Hidde rewrote it: thank him for the long reply and for wanting to help; we are still building, so trees, locations, photos and stories all help; sharing the app in their newsletter or a link on their site helps enormously; walks one day, still the future; an online call is welcome, in English or Dutch since he speaks no German. Lesson: when someone offers cooperation and asks how, answer every part of the question generously; their offer is the occasion for the newsletter and link ask, and a call they hinted at is accepted, not stepped around.
 
+## When they say they have little time, ask for nothing (Hidde, 2026-10-22)
+
+Katherine (National Trust Victoria) wrote that the Trust is "very time poor" and could not offer a person, while still offering to look for a sort of tree if we named one. My draft took that offer up and asked her to pick a handful of trees from the Register. His verdict: **"she kind of turned down the offer, so asking this is a bit too much. You do that more often: if they already state it's too much, don't ask for more."**
+
+Then he wrote the paragraph himself and named the strategy: **"telling them how they can help but expecting nothing and staying kind."**
+
+> I completely understand your time constraints. If someone does have time, telling us which trees are missing, or taking a photo with the app when walking past one, really helps. That's why we built the iOS app: [link]
+>
+> What would also really help is sharing the app on your website or in an email, so more people go out and take pictures.
+>
+> Either way, thanks for your help so far, and have a lovely day.
+
+So when somebody says they are busy but leaves an opening: first say you understand, without a "but". Then name the ways anyone could help as options ("if someone does have time"), not as a task for them: missing trees, a photo with the app in passing, sharing the app on their site or in a mail. Close with "either way, thanks" so nothing hangs on it. The App Store link belongs here, in the sentence about the photo ("het is geen harde weigering, je moet m goed plaatsen"): a reason beside it, never as a plug on its own at the end. mailcheck lets it through only in that paragraph. Never set them a specific job (pick a handful, check the list). This is the one place where more than one way to help is fine, because nothing is being asked of them in particular.
+
+## His standard line: which trees, and for whom (Hidde, 2026-10-22)
+
+When somebody asks what counts as "ancient", or which trees we pick, use his line, not a list of criteria. He has used it before and wants it as the standard. Its first outing was to Dr. Bauer (2026-10-15), who passed it on to Harald von der Stein, and Harald then offered to cooperate.
+
+- EN, verbatim, nothing added before or after it (Hidde, 2026-10-22: "gebruik dit gewoon veel sympathieker"): "For now the definition is a tree worth walking to. For tree experts, but just as much to get a wider public excited about going outside to see one."
+- NL: "De definitie is voor nu: een boom die het waard is om voor om te lopen. Voor boomexperts, maar juist ook om een breder publiek enthousiast te maken om naar buiten te gaan."
+- DE (as sent to Bauer): "Am Ende geht es mir um Bäume, für die sich ein Umweg lohnt und die man gern besucht. Mein Ziel ist, ein größeres Publikum für Bäume zu begeistern."
+
+The line works because it is a definition anyone can test by standing in front of a tree. Do not add biggest, oldest or rarest as a checklist after it. If they offered one of those, take up the offer in the ask instead.
+
 ## Calibration 2026-10-15: a journalist who asked who you are (Wibren, Omrop Fryslan)
 
 I added a Leeuwarden line (34 trees live) and the app link to his own short answer. His verdict: "dat van leeuwarden weet hij al, dat van die app hoeft er ook niet in." A journalist asking about the person gets the person: answer his questions, give the phone number, stop. Do not add what he already knows, and the app line is not automatic in a press reply. Also: Baarn is "zo'n 30 minuten onder Amsterdam", not "vlak bij".

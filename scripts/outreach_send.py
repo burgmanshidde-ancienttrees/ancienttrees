@@ -63,6 +63,21 @@ import mailer
 import sys
 from email.message import EmailMessage
 from email.utils import formataddr, parseaddr
+from html import escape
+
+
+def html_twin(body):
+    """The plain body as minimal HTML: escaped, links as anchors, line breaks kept."""
+    out = []
+    for part in re.split(r"(https?://\S+)", body):
+        if re.match(r"https?://", part):
+            url = part.rstrip(".,;:!?)")
+            tail = part[len(url):]
+            out.append(f'<a href="{escape(url)}">{escape(url)}</a>{escape(tail)}')
+        else:
+            out.append(escape(part))
+    return ("<div style=\"font-family:sans-serif;font-size:14px\">"
+            + "".join(out).replace("\n", "<br>\n") + "</div>")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SENT_PATH = os.path.join(ROOT, "data", "outreach-sent.json")
@@ -251,6 +266,12 @@ def main():
             msg["In-Reply-To"] = " ".join(m["in_reply_to"].split())
             msg["References"] = " ".join((m.get("references") or m["in_reply_to"]).split())
         msg.set_content(m["body"])
+        # And an HTML twin with every link as a real anchor (2026-10-22: Katherine
+        # Masiulanis could not open the Melbourne link from a plain-text mail
+        # behind her work's Barracuda filter; Hidde: "past links differently so
+        # we dont have the same problem again"). A plain-text link is only a
+        # link if her mail program guesses it is one.
+        msg.add_alternative(html_twin(m["body"]), subtype="html")
         if server is None:
             server = mailer.connect(creds, timeout=30)
         server.send_message(msg)
