@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (third retry): cap at 73 of 60, nothing shipped
+
+No claims standing. Only 3 READY leads, none with an approved photograph. Tried goliad.json into data/cities again: preflight fails on `check_publishing_pace()` (73 new trees in 24 hours, cap 60) and the missing data/us-states.json entry; moved it back out to out/tmp/. The 15 written trees still wait for the count to drop. Manchester register retry not attempted (the TPO layer is protection, not remarkable status, per the scouting note). No trees added.
+
 ## 2026-10-22 night run (second retry): cap still holds, Inverness retried
 
 No claims standing; 3 READY leads (two Oxford, one Madrid) have no approved photograph so none ships. 15 written trees (photo-batch-2 10, texas-famous 4, ftw_018) wait only on the 24-hour pace cap, as do the 11 held city files in data/research/held-pace-2026-10-22/ (add college-station, coppell, goliad to data/us-states.json when restoring). Inverness register retry: Wikidata has no tree items inside it, still stalled, noted. Munich photo recheck repeated the earlier result (muc_022, 026, 027, 037 candidates await a photo-judge pass). No trees added.
