@@ -300,6 +300,10 @@ When a mail has to say who we are (a first mail, or somebody who asked), reuse t
 
 Outside the Netherlands add "in the Netherlands, about 30 minutes from Amsterdam" after Baarn (Hidde, 2026-10-22, on the reply to Stacey in Glasgow: "the 30 min from amsterdam is relevant, its not relevant for dutch peeps"). A Dutch mail never mentions Amsterdam: Baarn is enough. mailcheck's AMSTERDAM IN A DUTCH MAIL. The intro already says "worth walking to", so the standard line below is for when they ask which trees, not stacked on top of the intro.
 
+## Open with a sorry when we may have misled them (Hidde, 2026-10-22: "leer menselijk worden")
+
+Stacey (Glasgow) asked where he is based and whether he has a connection to Glasgow or Scotland. I cut his sorry because she had not accused us of anything. His verdict: "ik zou wel openen met iets van een verontschuldiging als ik die impressie heb gemaakt". When their question shows our mail may have given a wrong impression, the reply opens with one short sorry for it, in the thanks line: "Thanks for your reply, and sorry if my mail gave the impression that I'm from Glasgow." This is not the "answer a charge nobody made" fault: that one defends us, this one is a person being polite. One sorry, at the start, then the answer.
+
 ## His standard ask to an expert: judge the list (Hidde, 2026-10-22)
 
 My ask to John Beetham ("Which trees in Melbourne, or anywhere in Australia, do you think we are missing?") was "not very strong". He rewrote it: show the page as work in progress, ask them to judge the selection both ways (are these good, what is missing, what does not belong), then photos as a later wish, and out kindly.
