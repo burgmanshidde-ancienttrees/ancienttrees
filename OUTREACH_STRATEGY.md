@@ -90,4 +90,5 @@ A group that brings nothing in two weeks stops. A group that works gets more of 
 |---|---|
 | 2026-10-21 | press readout: rounds 1 (big cities) and 2 (small cities) |
 | 2026-10-22, 23, 26 | link check for source batches 1, 2 and 3 |
+| 2026-10-29 | link check for press round 3 and tourism batch 1 (both sent 2026-10-22) |
 | 2026-11-02 | first two-week verdict per group |

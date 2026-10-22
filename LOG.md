@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 session with Hidde: press round 3 and tourism batch 1 sent
+- Hidde: "verstuur beide". Twenty mails out through outreach_send.py: ten regional desks (press round 3, roster cities in the US, UK and Germany, one tree and one sourced fact each) and ten official visit-the-city sites (tourism batch 1, the map as a resource for their parks page). Every link checked live before sending; no repeats, nobody on the do-not-contact list. Logged in drafts/OUTREACH.md (private); link check on 2026-10-29 is in OUTREACH_STRATEGY.md's dates.
+- Prof. Roloff answered the 10-20 link ask with a no (too many such requests); his thank-you reply draft waits for Hidde to send.
+
 ## 2026-10-22 (session with Hidde): 15 famous US trees live from their Commons photographs
 
 - **Product:** first batch of Hidde's 2026-10-21 call ("bomen met fotos zijn interessant, die mogen live"). 15 named US trees from Wikidata, each with an open-licence Commons photo looked at in session: Adam and Genesis (new place Mountain Home State Forest), the Hart Tree (Kings Canyon, now four), Bennett Juniper, Jardine Juniper, the Chandelier Tree (Leggett), Boyington Oak (Mobile), Friendship Oak (Long Beach, Mississippi), The Big Oak (Thomasville), The Big Tree (Goose Island State Park), Mother Orange Tree (Oroville), and Riverside as a new four-tree place (Parent Navel Orange, White Sox Redwood, Roosevelt Palm, a landmark sycamore). The Roosevelt Palm photo is held (six palms, trunk unknown).
