@@ -1,384 +1,618 @@
 [
-  {
-    "id": "sea_009",
-    "name": "The Hiawatha Playfield Red Oak",
-    "species": "Northern Red Oak (Quercus rubra)",
-    "age_estimate": "planted 1911",
-    "age_min": 110,
-    "age_max": 120,
-    "girth_cm": 478,
-    "location": {
-      "address": "Hiawatha Playfield, 2700 California Ave SW, West Seattle",
-      "latitude": 47.5782,
-      "longitude": -122.385,
-      "neighbourhood": "Admiral, West Seattle"
-    },
-    "verified_sources": [
-      "https://pauldorpat.com/2023/06/01/seattle-now-then-hiawatha-playfield-1911/",
-      "http://ecoyards.com/seattles-heritage-trees/",
-      "https://commons.wikimedia.org/wiki/File:Seattle_-_Hiawatha_Playfield_-_Northern_Red_Oak.jpg"
-    ],
-    "access": "Free; Hiawatha Playfield is a public Seattle Parks playfield",
-    "transport": "Not verified; city bus service on California Ave SW, exact stop and walk time not checked",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "story": "This oak is 55 feet wider than it is tall. When the tree expert Arthur Lee Jacobson measured it for a 2023 newspaper column, he found a crown 133 feet across on a tree 78 feet high, over a trunk 15 feet 8 inches round.\n\nIt is a northern red oak, a species from the other side of the continent, and it has spent its life at the edge of a playing field in West Seattle. Hiawatha Playfield opened in 1911, and the whole ground is now a city landmark. One local tree blog says this oak went in that year with the trees around it, when the Olmsted Brothers laid out what it calls Seattle's first playfield. That blog is the only source tying the tree to the opening, so read 1911 as likely rather than proven, which would make the oak a little over a century old.\n\nThe city lists it as a Heritage Tree, the programme Seattle runs with the group PlantAmnesty. Jacobson's verdict in 2023 was that it is not even halfway to the 250 years the species can live. Most trees on a list like this are admired for having survived. This one is still growing into itself, mostly sideways.\n\nThe pin marks the playfield rather than the trunk. Look toward the school side, and look for the crown first: it is the measurement you can see from a distance.",
-    "how_to_recognise": "You can recognise it by the crown, about 133 feet across on a tree only 78 feet tall, over a trunk 15 feet 8 inches round. It stands in Hiawatha Playfield, on the side toward West Seattle High School.",
-    "best_time": {
-      "months": [
-        10
-      ],
-      "kind": "autumn colour",
-      "label": "October, when that 133-foot crown turns red"
-    }
+ {
+  "id": "sea_009",
+  "name": "The Hiawatha Playfield Red Oak",
+  "species": "Northern Red Oak (Quercus rubra)",
+  "age_estimate": "planted 1911",
+  "age_min": 110,
+  "age_max": 120,
+  "girth_cm": 478,
+  "location": {
+   "address": "Hiawatha Playfield, 2700 California Ave SW, West Seattle",
+   "latitude": 47.5782,
+   "longitude": -122.385,
+   "neighbourhood": "Admiral, West Seattle"
   },
-  {
-    "id": "sea_010",
-    "name": "The Chinese Scholar Tree of Cal Anderson Park",
-    "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
-    "age_estimate": "over a century",
-    "age_min": 100,
-    "age_max": 130,
-    "location": {
-      "address": "Cal Anderson Park, northwest corner near Capitol Hill Station entrance, Nagle Pl, Seattle",
-      "latitude": 47.619,
-      "longitude": -122.3199,
-      "neighbourhood": "Capitol Hill"
-    },
-    "verified_sources": [
-      "https://web.archive.org/web/2018/https://www.capitolhillseattle.com/2017/12/capitol-hill-historical-society-landmarks-at-cal-anderson-park/",
-      "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/",
-      "https://www.seattle.gov/parks/allparks/cal-anderson-park"
-    ],
-    "access": "Free; public city park, open daylight hours; tree stands at the park edge beside the sidewalk and station entrance",
-    "transport": "Capitol Hill Link light rail station is at the tree's corner of the park, about a 1 minute walk",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "story": "When the Capitol Hill light rail station was being dug, this tree stood just inside the construction wall, and a local reporter wrote in 2015 that it was probably only still standing because it was a Heritage Tree.\n\nThat listing, run by the city with the group PlantAmnesty, is the likeliest reason a century-old tree came through the dig. It is a Chinese scholar tree, also known as the Japanese pagoda tree, and the Capitol Hill Historical Society describes it as more than a century old and one of the trees still left from the Olmsted Brothers' design for the park. Nobody has published a planting year, so a century and a bit is as close as the sources go.\n\nThe same 2015 article called it the largest of its kind in the Pacific Northwest. No measurement has been published to go with that, so read it as a proud local claim rather than a ranking anybody has checked. If you have a tape measure, the trunk is the one figure this page is missing, and we would like it.\n\nSo the tree has seen the park as the Olmsteds planned it and the neighbourhood as it is now, with a train station built right beside it. The pin marks the corner rather than the trunk, but the corner does most of the work: come up out of the station entrance at the northwest of the park and it is right there.",
-    "how_to_recognise": "You can recognise it by where it stands: the very northwest corner of Cal Anderson Park, beside the Capitol Hill light rail station entrance, at the edge of the pavement.",
-    "best_time": {
-      "months": [
-        8
-      ],
-      "kind": "flowers",
-      "label": "August, when it flowers cream while almost nothing else in the city does"
-    }
-  },
-  {
-    "id": "sea_011",
-    "name": "The London Plane of Summit Place Triangle",
-    "species": "London Plane (Platanus x acerifolia)",
-    "age_estimate": "not documented",
-    "location": {
-      "address": "Triangle of Belmont Ave E, Bellevue Pl E and Summit Ave E (nearest address 906 Summit Ave E), Seattle",
-      "latitude": 47.62703,
-      "longitude": -122.32526,
-      "neighbourhood": "Capitol Hill"
-    },
-    "verified_sources": [
-      "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/CH_NorthCapitol%20HillTreeWalk.pdf",
-      "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/"
-    ],
-    "access": "Free; the tree stands in a small public street triangle (Summit Place Triangle), open at all times, on the pavement edge",
-    "transport": "Roughly 10 to 12 minutes on foot from Capitol Hill Link station (about 1 km north-northwest along Broadway/E Roy St, walk time not measured precisely)",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "story": "This is a park where the tree is most of the park. Summit Place Triangle is the scrap of ground left where Belmont Avenue East, Bellevue Place East and Summit Avenue East meet, and a London plane fills it. In 2015 a Capitol Hill reporter described the effect rather than the trunk: it shades the entire space in summer, spreading 100 feet from side to side.\n\nThe city takes it seriously. It is an official Seattle Heritage Tree, one of the trees named by the programme the city runs with the group PlantAmnesty, and it is the closing stop on the city's own North Capitol Hill tree walk, which finishes at this triangle.\n\nWhat nobody has written down is how old it is. There is no planting date, no girth and no height on record. It would be easy to borrow a date from the Olmsted plantings in Volunteer Park, a short walk away, and it would be wrong: that is a different story about different trees, and no source connects this one to it. A blank is more honest than a borrowed number.\n\nSo the page asks instead. If you live on Capitol Hill and know when this tree went in, or you pass with a tape measure, tell us and the figure goes here. It stands on public ground, open at all hours, about ten to twelve minutes' walk north of the Capitol Hill light rail station.",
-    "how_to_recognise": "You can recognise it by the crown, about 100 feet across, which shades the whole triangle. It stands where Belmont Ave E, Bellevue Pl E and Summit Ave E meet, near 906 Summit Ave E."
-  },
-  {
-    "id": "sea_012",
-    "name": "The Wedgwood Scarlet Oak",
-    "species": "Scarlet Oak (Quercus coccinea)",
-    "age_estimate": "planted in the 1920s, probably",
-    "age_min": 90,
-    "age_max": 110,
-    "location": {
-      "address": "Northeast corner of NE 77th St and 38th Ave NE, Seattle",
-      "latitude": 47.685,
-      "longitude": -122.2872,
-      "neighbourhood": "Wedgwood"
-    },
-    "verified_sources": [
-      "https://sdotblog.seattle.gov/2016/06/20/preserving-a-best-in-city-scarlet-oak/",
-      "https://wedgwoodinseattlehistory.com/2016/06/25/preserving-wedgwoods-scarlet-oak-heritage-tree/",
-      "https://wedgwoodinseattlehistory.com/2023/11/01/enjoying-the-trees-of-wedgwood/",
-      "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/NE_WedgwoodTreeWalk.pdf"
-    ],
-    "access": "Free; stands in the public street right-of-way at the corner, viewable from the pavement. Do not enter adjoining private lots.",
-    "transport": "Neighbourhood street in Wedgwood; bus service on 35th Ave NE about 3 blocks west, stop and walk time not verified",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "story": "This oak is held together with hardware rated to 54,000 pounds. A windstorm in March 2016 cracked its trunk, and instead of taking it down, Seattle's street-tree crews cabled and braced it, promised to inspect it every year, and estimated the work could buy ten years or more for what they called an otherwise healthy and vigorous tree.\n\nThat effort tells you its standing. It is a scarlet oak growing in the street right-of-way at a Wedgwood corner, which puts it in the city's own care, and it is one of the few such trees named a Seattle Heritage Tree and classed Best in City. It received its Heritage plaque at a ceremony in 2008. Arthur Lee Jacobson's Trees of Seattle counts it among the most outstanding of its kind in the city, and the local history blog that has followed it for years gives its height as 95 feet.\n\nWho planted it is a neighbourhood argument rather than a record. The same blog thinks it likely went in during the 1920s, probably by the family who ran a plant nursery here, while an earlier post floated another family entirely. So call it roughly a century, give or take.\n\nIt has seen the corner change around it, most recently a new house going up beside it in 2020. Admire it from the pavement; the lots on either side are private. The pin marks the intersection, and the tree is on its northeast corner.",
-    "how_to_recognise": "You can recognise it by the cables and bracing in the crown, fitted after a 2016 storm cracked the trunk, on a tree about 95 feet tall. It stands on the northeast corner of NE 77th St and 38th Ave NE.",
-    "best_time": {
-      "months": [
-        10,
-        11
-      ],
-      "kind": "autumn colour",
-      "label": "late October into November, when a scarlet oak earns its name"
-    }
-  },
-  {
-    "id": "sea_013",
-    "name": "The Volunteer Park Copper Beech",
-    "species": "Copper Beech (Fagus sylvatica f. purpurea)",
-    "age_estimate": "not documented",
-    "girth_cm": 567,
-    "location": {
-      "address": "Volunteer Park, behind the Seattle Asian Art Museum, 1400 E Prospect St",
-      "latitude": 47.630793,
-      "longitude": -122.314387,
-      "neighbourhood": "Capitol Hill"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)",
-      "https://web.archive.org/ (CHS/McGarry 2015 via data/leads/seattle.json: largest in Seattle, 92 ft in 2000 per Jacobson)"
-    ],
-    "access": "Free; public Seattle Parks land, open daily",
-    "transport": "Not verified; walk time from Capitol Hill not checked",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "story": "Two measurements taken nineteen years apart put this copper beech at almost exactly the same height: 92 feet when the tree expert Arthur Lee Jacobson recorded it in 2000, and 94 feet when the city surveyed it in 2019. Nineteen years, two feet: this beech was already near its full height when the century began.\n\nThe trunk is the bigger number. The city gives the trunk as 71 inches across at chest height, which comes to roughly 18 and a half feet round. A Capitol Hill writer, drawing on Jacobson's records in 2015, called it the largest copper beech in Seattle, and the city lists it as one of its Heritage Trees.\n\nA copper beech is a purple-leaved form of the European beech, so this is an Old World tree grown up on the far side of North America. It stands in Volunteer Park, behind the building that houses the Seattle Asian Art Museum, a short walk from the park's giant sequoia. Its leaves open purple in spring and turn copper before they fall, which is where the name comes from.\n\nWhat nobody has published is when it was planted. The city's measurements say what it has become and nothing about when it began. If you know, or know who would, tell us, because the age is the one number this page is missing.",
-    "how_to_recognise": "You can recognise it by the purple leaves on a tree 94 feet tall, over a trunk about 18 and a half feet round. It stands in Volunteer Park, behind the Seattle Asian Art Museum.",
-    "best_time": {
-      "months": [
-        5
-      ],
-      "kind": "fresh leaves",
-      "label": "May, when the new leaves open purple"
-    }
-  },
-  {
-    "id": "sea_014",
-    "name": "The Roanoke Street Lombardy Poplar",
-    "species": "Lombardy Poplar (Populus nigra 'Italica')",
-    "age_estimate": "not documented",
-    "girth_cm": 646,
-    "location": {
-      "address": "Roanoke Street Mini Park, E Roanoke St street-end at Fairview Ave E",
-      "latitude": 47.643111,
-      "longitude": -122.328921,
-      "neighbourhood": "Eastlake"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)",
-      "https://seattle.gov/parks/parks/roanoke-street-mini-park",
-      "https://www.yearofseattleparks.com/2010/01/10/roanoke-street-mini-park/"
-    ],
-    "access": "Free; public mini park at a street-end on Lake Union",
-    "transport": "Not verified; bus on Eastlake Ave E, stop and walk time not checked",
-    "location_precision": "confirmed",
-    "curation_status": "ai_generated",
-    "story": "Lombardy poplars are famous for being narrow, and the city's figure for this one says otherwise: a trunk 81 inches across at chest height, which is about 21 feet round, under a tree recorded at 108 feet tall. For a tree planted almost everywhere as a slim green column along a fence line, that is an unusually heavy base.\n\nIt stands in Roanoke Street Mini Park, a scrap of public ground where East Roanoke Street runs out at Lake Union, in Eastlake. In 2010 the city named it a Heritage Tree together with three weeping willows beside it, and treated the four as a heritage grove, which is recorded on a plaque in the south part of the park. So the poplar shares the honour, and the shoreline, with three trees of a completely different shape: one shooting straight up, three hanging down.\n\nThe last city survey was in 2019, and naturalists logged the tree on iNaturalist as recently as April 2026. It is a different tree from the University of Washington's world's-fair poplar.\n\nNobody has published a planting date, and a trunk that thick on a poplar is worth a second look. If you pass with a tape measure, a girth taken at chest height would settle it, and the figure goes on this page.",
-    "how_to_recognise": "You can recognise it as the tall, upright poplar among three weeping willows, 108 feet high on a trunk about 21 feet round. It stands in Roanoke Street Mini Park, at the Lake Union end of E Roanoke St."
-  },
-  {
-    "id": "sea_015",
-    "name": "The Ballard Playground London Planes",
-    "species": "London Plane (Platanus x acerifolia)",
-    "age_estimate": "not documented",
-    "girth_cm": 606,
-    "location": {
-      "address": "Ballard Playground, near 2644 NW 60th St (register address), by 26th Ave NW",
-      "latitude": 47.672839,
-      "longitude": -122.390278,
-      "neighbourhood": "Ballard"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)"
-    ],
-    "access": "Free; Seattle Parks playground (OSM area Ballard Playground). Adjoins a school site: stay on the park side.",
-    "transport": "Not verified",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "story": "Two London planes stand twenty metres apart at Ballard Playground, and the city measures them as near twins: trunks 76 and 75 inches across at chest height, each close to 20 feet round. Then they part company upward. One reaches 80 feet, the other stops at 64.\n\nBoth carry Seattle's Heritage Tree designation, and standing between them you see them as one sight: two trunks more than six feet thick, sharing a corner of a neighbourhood playground in Ballard. The city last surveyed them in 2019 and recorded both in good condition.\n\nThat survey is close to everything anyone has written down. No planting date has been published, no local history names them, and as far as we can find nobody has photographed them for any public collection. So the age is open, and so is the story: who planted a pair of planes this size beside a playground, and when. If you know, tell us.\n\nThe pin marks the larger tree, which sits inside the playground. Its partner stands a short way north, and we have not confirmed whether it is inside the park boundary or just beyond it. The playground borders a school site, so look from the park side and leave the school grounds alone.",
-    "how_to_recognise": "You can recognise them as a matched pair of London planes about 20 metres apart, each trunk close to 20 feet round; the taller reaches 80 feet. They stand in Ballard Playground near 26th Ave NW."
-  },
-  {
-    "id": "sea_016",
-    "name": "The Seward Park Lake Washington Boulevard Douglas Fir",
-    "species": "Douglas Fir (Pseudotsuga menziesii)",
-    "age_estimate": "not documented",
-    "girth_cm": 559,
-    "location": {
-      "address": "Seward Park, by Lake Washington Blvd S (register address 5898 Lake Washington Blvd S)",
-      "latitude": 47.560148,
-      "longitude": -122.250625,
-      "neighbourhood": "Seward Park"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)"
-    ],
-    "access": "Free; inside Seward Park (OSM park area), public",
-    "transport": "Not verified",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "story": "This is the Seward Park Douglas fir you can actually find. The city records it at 125 feet tall with a trunk 70 inches across at chest height, about 18 feet round, and it stands by Lake Washington Boulevard South rather than somewhere deep in the woods.\n\nThat matters because Seward Park already has a famous fir, and this is not it. The Big Tree, the 400 to 500 year old survivor of two forest fires, stands a little over a kilometre away in the old-growth interior, in a spot nobody publishes. This one is a city Heritage Tree with a pin that marks the trunk.\n\nThe last city survey of it was in 2019, and naturalists recorded it standing on iNaturalist in April 2026. Beyond that the record is thin. Nobody has published its age, and a Douglas fir this size could be a lot of things: a big tree is not automatically an old one, and we would rather leave the number blank than borrow one from its famous neighbour.\n\nSo stand at its base and look up 125 feet, then walk into the forest knowing the Big Tree in there is taller still. If you know when this one started, or what it has seen, tell us.",
-    "how_to_recognise": "You can recognise it as a Douglas fir about 125 feet tall with a trunk around 18 feet round. It stands beside Lake Washington Blvd S (city address 5898), not in the forest interior."
-  },
-  {
-    "id": "sea_017",
-    "name": "The Roanoke Park European White Elm",
-    "species": "European White Elm (Ulmus laevis)",
-    "age_estimate": "not documented",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 399,
-    "height_m": 23.2,
-    "location": {
-      "address": "Roanoke Park, 950 E Roanoke St, Seattle",
-      "latitude": 47.643904,
-      "longitude": -122.320573,
-      "neighbourhood": "Eastlake / Portage Bay"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521858&outFields=*&f=json",
-      "https://www.seattle.gov/parks/allparks/roanoke-park",
-      "https://www.openstreetmap.org/way/13801411"
-    ],
-    "official_register": {
-      "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-100726",
-      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521858&outFields=*&f=json"
-    },
-    "access": "Free; Roanoke Park is a Seattle Parks and Recreation park, open 4 a.m. to 11:30 p.m. (seattle.gov park page)",
-    "transport": "Not verified; Eastlake/Capitol Hill bus and Link, stop and walk time not checked",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE 2019-08-19); Heritage flag HERITAGE=Y. DIAM 50 in and TREEHEIGHT 76 ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (2002-01-01) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2019-08-15, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register comment: 'SurfNote=HERITAGE TREE'; crown spread 76 ft (register estimate). Ulmus laevis is an unusual elm for the city; species is the register's, not independently confirmed. Roanoke Park sits about 700 m from sea_014 (Roanoke Street Lombardy Poplar) and a Babylon Weeping Willow (TRE-1047702, 30 in) stands at the mini park; a short two-tree walk.",
-    "story": "By the city's own estimate, this elm's crown is as wide as the tree is tall: 76 feet each way. It is a European white elm, Ulmus laevis, an unusual elm to find in Seattle, and the city lists it as a Heritage Tree.\n\nThose numbers come from Seattle's street-tree inventory, which also gives the trunk as 50 inches across, about 13 feet round, and the height as roughly 23 metres. That inventory is the only source we have for this tree, the species included, and the pin on our map is the city's own coordinate for the trunk. A city crew last checked it in August 2019 and recorded it in service. We found no later sighting we could tie to this tree, so 2019 is the latest firm word on it.\n\nRoanoke Park is a small neighbourhood park between Eastlake and Portage Bay, free and open from four in the morning until half past eleven at night. About 700 metres away on Roanoke Street stands a Heritage Lombardy poplar, which turns this into a short walk past two of the city's listed trees.\n\nNobody has published an age for this elm. If you know when it went in, or remember it as a smaller tree, tell us.",
-    "how_to_recognise": "You can recognise it as an elm whose crown spreads about as wide as it is tall, some 76 feet, on a trunk around 13 feet round. It stands in Roanoke Park, at the city's register point for Heritage Tree TRE-100726."
-  },
-  {
-    "id": "sea_018",
-    "name": "The Ross Playground Bigleaf Maple",
-    "species": "Bigleaf Maple (Acer macrophyllum)",
-    "age_estimate": "not documented",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 503,
-    "height_m": 28.0,
-    "location": {
-      "address": "Ross Playground, 4320 4th Ave NW, Seattle",
-      "latitude": 47.659026,
-      "longitude": -122.361795,
-      "neighbourhood": "Fremont"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521669&outFields=*&f=json",
-      "https://www.seattle.gov/parks/find/parks/ross-playground",
-      "https://www.openstreetmap.org/way/32526883"
-    ],
-    "official_register": {
-      "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1047729",
-      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521669&outFields=*&f=json"
-    },
-    "access": "Free; Ross Playground is a Seattle Parks and Recreation park, open 6 a.m. to 10 p.m. (seattle.gov park page)",
-    "transport": "Not verified; bus on Leary Way / 4th Ave NW, stop and walk time not checked",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE 2019-09-03); Heritage flag HERITAGE=Y. DIAM 63 in and TREEHEIGHT 92 ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (1980-11-05) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2019-08-28, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register crown spread 99 ft (estimate). Register address 4300 4th Ave NW lies inside the OSM polygon of Ross Playground (4320 4th Ave NW). A lifecheck RECENT hit within 150 m (iNaturalist 2026-09-06) is a nearby observation, not this trunk. At 63 in diameter it is among the largest heritage maples in the register.",
-    "story": "The trunk of this bigleaf maple is 63 inches across, about 16 and a half feet round, which puts it among the largest Heritage maples in Seattle's tree inventory. The same record gives it a height of 92 feet, about 28 metres, and a crown estimated at 99 feet wide. It spreads further than it climbs.\n\nIt stands in Ross Playground, a small Fremont park on 4th Avenue NW, free and open from six in the morning until ten at night. Bigleaf maple is the native maple of this coast, and the city has listed this one as a Heritage Tree.\n\nEverything we know comes from that one place: the city's street-tree inventory, which also supplies the coordinate our pin uses, at the trunk. A city crew last checked the tree in August 2019 and recorded it in service. Naturalists have logged plants within 150 metres since then, as recently as September 2026, but none of those records is clearly this maple, so 2019 is the latest word on it we can stand behind.\n\nNobody has published an age for it either. A trunk this size invites a guess, and we would rather leave the line empty than make one. If you know how long this maple has stood over the playground, tell us.",
-    "how_to_recognise": "You can recognise it by its size: a bigleaf maple about 92 feet tall with a trunk some 16 feet round and a crown near 99 feet wide. It stands in Ross Playground on 4th Ave NW, at the city's register point."
-  },
-  {
-    "id": "sea_019",
-    "name": "The Wallingford Playfield Pin Oak",
-    "species": "Pin Oak (Quercus palustris)",
-    "age_estimate": "not documented",
-    "age_min": null,
-    "age_max": null,
-    "girth_cm": 399,
-    "location": {
-      "address": "Wallingford Playfield, 4219 Wallingford Ave N, Seattle",
-      "latitude": 47.659023,
-      "longitude": -122.337491,
-      "neighbourhood": "Wallingford"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199641335&outFields=*&f=json",
-      "https://www.seattle.gov/parks/allparks/wallingford-playfield",
-      "https://www.openstreetmap.org/way/158265918"
-    ],
-    "official_register": {
-      "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1145024",
-      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199641335&outFields=*&f=json"
-    },
-    "access": "Free; Wallingford Playfield is a Seattle Parks and Recreation park, open 4 a.m. to 11:30 p.m. (seattle.gov park page)",
-    "transport": "Not verified; bus on N 45th St / Wallingford Ave N, stop and walk time not checked",
-    "location_precision": "confirmed",
-    "curation_status": "flagged",
-    "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE none); Heritage flag HERITAGE=Y. DIAM 50 in and TREEHEIGHT 0 (not recorded; no height given) ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (1950-01-01) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2021-09-10, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register has no height and no comment text for this tree. A pin oak of 50 in diameter is unusually large for the species; lifecheck found a RECENT iNaturalist record within the radius (2025-08-26) that may or may not be this trunk. Weakest of the three: flagged, one source.",
-    "story": "Pin oaks seldom grow a trunk this thick. This one measures 50 inches across, about 13 feet round, in Seattle's street-tree inventory, which lists it as a city Heritage Tree in Wallingford Playfield.\n\nThat inventory is the only source for it, and a thin one. It records no height and carries no notes, so we cannot tell you how tall the tree is. The pin on our map is the city's coordinate for the trunk. A city crew last confirmed it in service in September 2021. An iNaturalist record from August 2025 sits within range of the pin and may be this oak, or may be a neighbour; we cannot say which.\n\nThe record also fills in its planting field, but with a bookkeeping date rather than a planting, so it is no evidence of age, and we give none.\n\nWallingford Playfield is a neighbourhood park on Wallingford Avenue North, free and open from four in the morning until half past eleven at night. Pin oaks turn dark red to russet in autumn, which makes October and November the months to come and look for it.\n\nNobody has dated this oak or put a tape to its height. If you can do either, tell us, and we will put your figure on the page.",
-    "how_to_recognise": "You can recognise it as an oak with a trunk about 13 feet round, 50 inches across, and in autumn by leaves turning dark red to russet. It stands in Wallingford Playfield, at the city's register point.",
-    "best_time": {
-      "months": [
-        10,
-        11
-      ],
-      "kind": "autumn colour",
-      "label": "October into November, when a pin oak turns dark red to russet"
-    }
-  },
-  {
-    "id": "sea_020",
-    "name": "The Aloha Street Tulip Tree",
-    "species": "Tulip Tree (Liriodendron tulipifera)",
-    "age_estimate": "not documented",
-    "girth_cm": 367,
-    "height_m": 28,
-    "location": {
-      "address": "747 16th Ave E, at E Aloha St, Seattle",
-      "latitude": 47.62681,
-      "longitude": -122.31138,
-      "neighbourhood": "Capitol Hill"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47272%27&outFields=*&f=json",
-      "https://arthurleej.com/articles/a-specialcapt.html",
-      "https://www.inaturalist.org/observations/390049639"
-    ],
-    "official_register": {
-      "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y)",
-      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47272%27&outFields=*&f=json"
-    },
-    "access": "View from the public sidewalk at 16th Ave E and E Aloha St; the trunk stands on a private lot, so look from the pavement only.",
-    "transport": "Capitol Hill Station (Link light rail) about 1.2 km, roughly 15 minutes on foot; King County Metro stops on 15th Ave E.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Register (SDOT inventory tree TRE-47272, HERITAGE=Y, comment 'HERITAGE TREE. Crownspread 69'): last known diameter 46 in (about 117 cm, girth about 367 cm by diameter x pi), height 92 ft (about 28 m), status INSVC, last verified 2024-07. Ownership listed PRIV (property owner approved heritage designation); register coordinate 47.62681,-122.31138 is the tree record, not checked on aerial imagery, so precision stays approximate. Jacobson (Seattle tree expert, 'Special Capitol Hill Trees', 2001): 'towering tulip tree at 16th Avenue E and E Aloha Street, where the street, curb and sidewalk were realigned to accommodate the tree's immense size', listed under trees that are conspicuous and loved, not under big or old. A neighbourhood walk guide lists it at 747 E Aloha; a mosaic art piece sits at the corner (seen in search results only, the Seattle arts page is behind Cloudflare). A 2010 Capitol Hill Seattle post, seen only as a search summary, says it passed 10 years as a heritage tree in 2010 and calls it 70+ ft; the register's 92 ft is the later figure. Alive: lifecheck RECENT, iNaturalist observation 2026-08-10 within range. No planting date found, age left blank. Register plus one expert article; flagged for one official source and private lot.",
-    "story": "Seattle realigned a street for this tree. At the corner of 16th Avenue East and East Aloha Street on Capitol Hill, the roadway, the curb and the sidewalk were all shifted to accommodate its size, as the Seattle tree expert Arthur Lee Jacobson recorded in his 2001 survey of the hill's special trees.\n\nHe listed it among the trees that are conspicuous and loved, rather than the big or the old. The city's figures suggest he was being modest. Its tree records give the trunk as 46 inches across, roughly 12 feet round, a height of 92 feet, about 28 metres, and a crown 69 feet wide. The tree is a city Heritage Tree, a listing the owner of the lot agreed to, and the city last recorded it in service in July 2024.\n\nThat lot is private, so this is a tree to see from the public sidewalk at the corner, and a crown 69 feet across leaves plenty to look at from there. Stay on the pavement.\n\nA tulip tree is neither a tulip nor a poplar, despite the nickname tulip poplar. It is a magnolia relative, and its leaves give it away: four lobes, with the tip cut off square as if somebody took scissors to it.\n\nNobody has published when it was planted or how old it is. If you know the history of this corner, tell us.",
-    "how_to_recognise": "You can recognise it by its size, about 92 feet tall with a crown 69 feet wide, and by square-tipped, four-lobed leaves. It stands at the corner of 16th Ave E and E Aloha St, where the street and sidewalk were realigned around it."
-  },
-  {
-    "id": "sea_021",
-    "name": "The Leschi Park Tulip Tree",
-    "species": "Tulip Tree (Liriodendron tulipifera)",
-    "age_estimate": "not documented",
-    "girth_cm": 415,
-    "height_m": 32,
-    "location": {
-      "address": "Leschi Park, 201 Lakeside Ave S, Seattle",
-      "latitude": 47.60101,
-      "longitude": -122.28665,
-      "neighbourhood": "Leschi"
-    },
-    "verified_sources": [
-      "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1054309%27&outFields=*&f=json",
-      "https://www.seattle.gov/parks/parks/leschi-park",
-      "https://www.inaturalist.org/observations/370909571"
-    ],
-    "official_register": {
-      "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner Parks)",
-      "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1054309%27&outFields=*&f=json"
-    },
-    "access": "Free, in Leschi Park (Seattle Parks), open 6 am to 10 pm per the city park page.",
-    "transport": "King County Metro routes serve Lake Washington Blvd and Jackson St near Leschi, about 5 to 10 minutes on foot from the stop; confirm the route before travelling.",
-    "location_precision": "approximate",
-    "curation_status": "flagged",
-    "verify_notes": "Register (SDOT inventory tree TRE-1054309, HERITAGE=Y, ownership PARK, address 201 LAKESIDE AVE S which is Leschi Park's own address on the city page): last known diameter 52 in (about 132 cm, girth about 415 cm by diameter x pi), height 106 ft (about 32 m), status INSVC, last verified 2019-08, crown spread 74 ft. Register coordinate 47.60101,-122.28665 sits in the park, individual crown not confirmed on aerial imagery, so approximate. The register date 'planted 2011' is an inventory entry, not a planting date; age left blank. Alive: lifecheck RECENT, iNaturalist observation 2026-06-12 in range (identity of the tulip tree on that observation not checked). Register-only for vitality (last verified 2019); flagged. Colman Park forestry note did not mention it; no second source found.",
-    "story": "Seattle once realigned a Capitol Hill street to make room for a tulip tree. The one in Leschi Park is bigger: 106 feet tall to that tree's 92, and 52 inches across the trunk to its 46.\n\nThose figures come from the city's tree records, which list it as a Heritage Tree on park land, about 32 metres high with a crown 74 feet wide. Across 52 inches of diameter, the trunk works out at roughly 13 and a half feet round, a little over four metres.\n\nThe records are also the only source for it, and they are not new. A city crew last noted the tree in service in August 2019. A naturalist photographed a plant close to the city's point for it in June 2026, but whether that picture shows this trunk is not certain, so treat the 2019 entry as the firm word on it. The pin sits at that city point inside the park; the crown itself has not been checked against it.\n\nA tulip tree is a magnolia relative, not a poplar, whatever its old nickname says. Its leaves have four lobes and a tip cut off square, which is the quickest way to tell it from a maple.\n\nLeschi Park is free and open from six in the morning until ten at night. Nobody has published an age for this tree. If you know when it was planted, tell us.",
-    "how_to_recognise": "You can recognise it by its height, about 106 feet, a trunk some 13 and a half feet round, and square-tipped, four-lobed leaves. It stands in Leschi Park, 201 Lakeside Ave S, near the city's register point."
+  "verified_sources": [
+   "https://pauldorpat.com/2023/06/01/seattle-now-then-hiawatha-playfield-1911/",
+   "http://ecoyards.com/seattles-heritage-trees/",
+   "https://commons.wikimedia.org/wiki/File:Seattle_-_Hiawatha_Playfield_-_Northern_Red_Oak.jpg"
+  ],
+  "access": "Free; Hiawatha Playfield is a public Seattle Parks playfield",
+  "transport": "Not verified; city bus service on California Ave SW, exact stop and walk time not checked",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "This oak is 55 feet wider than it is tall. When the tree expert Arthur Lee Jacobson measured it for a 2023 newspaper column, he found a crown 133 feet across on a tree 78 feet high, over a trunk 15 feet 8 inches round.\n\nIt is a northern red oak, a species from the other side of the continent, and it has spent its life at the edge of a playing field in West Seattle. Hiawatha Playfield opened in 1911, and the whole ground is now a city landmark. One local tree blog says this oak went in that year with the trees around it, when the Olmsted Brothers laid out what it calls Seattle's first playfield. That blog is the only source tying the tree to the opening, so read 1911 as likely rather than proven, which would make the oak a little over a century old.\n\nThe city lists it as a Heritage Tree, the programme Seattle runs with the group PlantAmnesty. Jacobson's verdict in 2023 was that it is not even halfway to the 250 years the species can live. Most trees on a list like this are admired for having survived. This one is still growing into itself, mostly sideways.\n\nThe pin marks the playfield rather than the trunk. Look toward the school side, and look for the crown first: it is the measurement you can see from a distance.",
+  "how_to_recognise": "You can recognise it by the crown, about 133 feet across on a tree only 78 feet tall, over a trunk 15 feet 8 inches round. It stands in Hiawatha Playfield, on the side toward West Seattle High School.",
+  "best_time": {
+   "months": [
+    10
+   ],
+   "kind": "autumn colour",
+   "label": "October, when that 133-foot crown turns red"
   }
+ },
+ {
+  "id": "sea_010",
+  "name": "The Chinese Scholar Tree of Cal Anderson Park",
+  "species": "Japanese Pagoda Tree (Styphnolobium japonicum)",
+  "age_estimate": "over a century",
+  "age_min": 100,
+  "age_max": 130,
+  "location": {
+   "address": "Cal Anderson Park, northwest corner near Capitol Hill Station entrance, Nagle Pl, Seattle",
+   "latitude": 47.619,
+   "longitude": -122.3199,
+   "neighbourhood": "Capitol Hill"
+  },
+  "verified_sources": [
+   "https://web.archive.org/web/2018/https://www.capitolhillseattle.com/2017/12/capitol-hill-historical-society-landmarks-at-cal-anderson-park/",
+   "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/",
+   "https://www.seattle.gov/parks/allparks/cal-anderson-park"
+  ],
+  "access": "Free; public city park, open daylight hours; tree stands at the park edge beside the sidewalk and station entrance",
+  "transport": "Capitol Hill Link light rail station is at the tree's corner of the park, about a 1 minute walk",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "When the Capitol Hill light rail station was being dug, this tree stood just inside the construction wall, and a local reporter wrote in 2015 that it was probably only still standing because it was a Heritage Tree.\n\nThat listing, run by the city with the group PlantAmnesty, is the likeliest reason a century-old tree came through the dig. It is a Chinese scholar tree, also known as the Japanese pagoda tree, and the Capitol Hill Historical Society describes it as more than a century old and one of the trees still left from the Olmsted Brothers' design for the park. Nobody has published a planting year, so a century and a bit is as close as the sources go.\n\nThe same 2015 article called it the largest of its kind in the Pacific Northwest. No measurement has been published to go with that, so read it as a proud local claim rather than a ranking anybody has checked. If you have a tape measure, the trunk is the one figure this page is missing, and we would like it.\n\nSo the tree has seen the park as the Olmsteds planned it and the neighbourhood as it is now, with a train station built right beside it. The pin marks the corner rather than the trunk, but the corner does most of the work: come up out of the station entrance at the northwest of the park and it is right there.",
+  "how_to_recognise": "You can recognise it by where it stands: the very northwest corner of Cal Anderson Park, beside the Capitol Hill light rail station entrance, at the edge of the pavement.",
+  "best_time": {
+   "months": [
+    8
+   ],
+   "kind": "flowers",
+   "label": "August, when it flowers cream while almost nothing else in the city does"
+  }
+ },
+ {
+  "id": "sea_011",
+  "name": "The London Plane of Summit Place Triangle",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "not documented",
+  "location": {
+   "address": "Triangle of Belmont Ave E, Bellevue Pl E and Summit Ave E (nearest address 906 Summit Ave E), Seattle",
+   "latitude": 47.62703,
+   "longitude": -122.32526,
+   "neighbourhood": "Capitol Hill"
+  },
+  "verified_sources": [
+   "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/CH_NorthCapitol%20HillTreeWalk.pdf",
+   "https://web.archive.org/web/2020/https://www.capitolhillseattle.com/2015/01/pikespines-a-comforting-search-for-capitol-hills-largest-and-likely-oldest-trees/"
+  ],
+  "access": "Free; the tree stands in a small public street triangle (Summit Place Triangle), open at all times, on the pavement edge",
+  "transport": "Roughly 10 to 12 minutes on foot from Capitol Hill Link station (about 1 km north-northwest along Broadway/E Roy St, walk time not measured precisely)",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "This is a park where the tree is most of the park. Summit Place Triangle is the scrap of ground left where Belmont Avenue East, Bellevue Place East and Summit Avenue East meet, and a London plane fills it. In 2015 a Capitol Hill reporter described the effect rather than the trunk: it shades the entire space in summer, spreading 100 feet from side to side.\n\nThe city takes it seriously. It is an official Seattle Heritage Tree, one of the trees named by the programme the city runs with the group PlantAmnesty, and it is the closing stop on the city's own North Capitol Hill tree walk, which finishes at this triangle.\n\nWhat nobody has written down is how old it is. There is no planting date, no girth and no height on record. It would be easy to borrow a date from the Olmsted plantings in Volunteer Park, a short walk away, and it would be wrong: that is a different story about different trees, and no source connects this one to it. A blank is more honest than a borrowed number.\n\nSo the page asks instead. If you live on Capitol Hill and know when this tree went in, or you pass with a tape measure, tell us and the figure goes here. It stands on public ground, open at all hours, about ten to twelve minutes' walk north of the Capitol Hill light rail station.",
+  "how_to_recognise": "You can recognise it by the crown, about 100 feet across, which shades the whole triangle. It stands where Belmont Ave E, Bellevue Pl E and Summit Ave E meet, near 906 Summit Ave E."
+ },
+ {
+  "id": "sea_012",
+  "name": "The Wedgwood Scarlet Oak",
+  "species": "Scarlet Oak (Quercus coccinea)",
+  "age_estimate": "planted in the 1920s, probably",
+  "age_min": 90,
+  "age_max": 110,
+  "location": {
+   "address": "Northeast corner of NE 77th St and 38th Ave NE, Seattle",
+   "latitude": 47.685,
+   "longitude": -122.2872,
+   "neighbourhood": "Wedgwood"
+  },
+  "verified_sources": [
+   "https://sdotblog.seattle.gov/2016/06/20/preserving-a-best-in-city-scarlet-oak/",
+   "https://wedgwoodinseattlehistory.com/2016/06/25/preserving-wedgwoods-scarlet-oak-heritage-tree/",
+   "https://wedgwoodinseattlehistory.com/2023/11/01/enjoying-the-trees-of-wedgwood/",
+   "https://www.seattle.gov/documents/Departments/Trees/GetInvovled/TreeWalks/NE_WedgwoodTreeWalk.pdf"
+  ],
+  "access": "Free; stands in the public street right-of-way at the corner, viewable from the pavement. Do not enter adjoining private lots.",
+  "transport": "Neighbourhood street in Wedgwood; bus service on 35th Ave NE about 3 blocks west, stop and walk time not verified",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "story": "This oak is held together with hardware rated to 54,000 pounds. A windstorm in March 2016 cracked its trunk, and instead of taking it down, Seattle's street-tree crews cabled and braced it, promised to inspect it every year, and estimated the work could buy ten years or more for what they called an otherwise healthy and vigorous tree.\n\nThat effort tells you its standing. It is a scarlet oak growing in the street right-of-way at a Wedgwood corner, which puts it in the city's own care, and it is one of the few such trees named a Seattle Heritage Tree and classed Best in City. It received its Heritage plaque at a ceremony in 2008. Arthur Lee Jacobson's Trees of Seattle counts it among the most outstanding of its kind in the city, and the local history blog that has followed it for years gives its height as 95 feet.\n\nWho planted it is a neighbourhood argument rather than a record. The same blog thinks it likely went in during the 1920s, probably by the family who ran a plant nursery here, while an earlier post floated another family entirely. So call it roughly a century, give or take.\n\nIt has seen the corner change around it, most recently a new house going up beside it in 2020. Admire it from the pavement; the lots on either side are private. The pin marks the intersection, and the tree is on its northeast corner.",
+  "how_to_recognise": "You can recognise it by the cables and bracing in the crown, fitted after a 2016 storm cracked the trunk, on a tree about 95 feet tall. It stands on the northeast corner of NE 77th St and 38th Ave NE.",
+  "best_time": {
+   "months": [
+    10,
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "late October into November, when a scarlet oak earns its name"
+  }
+ },
+ {
+  "id": "sea_013",
+  "name": "The Volunteer Park Copper Beech",
+  "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+  "age_estimate": "not documented",
+  "girth_cm": 567,
+  "location": {
+   "address": "Volunteer Park, behind the Seattle Asian Art Museum, 1400 E Prospect St",
+   "latitude": 47.630793,
+   "longitude": -122.314387,
+   "neighbourhood": "Capitol Hill"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)",
+   "https://web.archive.org/ (CHS/McGarry 2015 via data/leads/seattle.json: largest in Seattle, 92 ft in 2000 per Jacobson)"
+  ],
+  "access": "Free; public Seattle Parks land, open daily",
+  "transport": "Not verified; walk time from Capitol Hill not checked",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "story": "Two measurements taken nineteen years apart put this copper beech at almost exactly the same height: 92 feet when the tree expert Arthur Lee Jacobson recorded it in 2000, and 94 feet when the city surveyed it in 2019. Nineteen years, two feet: this beech was already near its full height when the century began.\n\nThe trunk is the bigger number. The city gives the trunk as 71 inches across at chest height, which comes to roughly 18 and a half feet round. A Capitol Hill writer, drawing on Jacobson's records in 2015, called it the largest copper beech in Seattle, and the city lists it as one of its Heritage Trees.\n\nA copper beech is a purple-leaved form of the European beech, so this is an Old World tree grown up on the far side of North America. It stands in Volunteer Park, behind the building that houses the Seattle Asian Art Museum, a short walk from the park's giant sequoia. Its leaves open purple in spring and turn copper before they fall, which is where the name comes from.\n\nWhat nobody has published is when it was planted. The city's measurements say what it has become and nothing about when it began. If you know, or know who would, tell us, because the age is the one number this page is missing.",
+  "how_to_recognise": "You can recognise it by the purple leaves on a tree 94 feet tall, over a trunk about 18 and a half feet round. It stands in Volunteer Park, behind the Seattle Asian Art Museum.",
+  "best_time": {
+   "months": [
+    5
+   ],
+   "kind": "fresh leaves",
+   "label": "May, when the new leaves open purple"
+  }
+ },
+ {
+  "id": "sea_014",
+  "name": "The Roanoke Street Lombardy Poplar",
+  "species": "Lombardy Poplar (Populus nigra 'Italica')",
+  "age_estimate": "not documented",
+  "girth_cm": 646,
+  "location": {
+   "address": "Roanoke Street Mini Park, E Roanoke St street-end at Fairview Ave E",
+   "latitude": 47.643111,
+   "longitude": -122.328921,
+   "neighbourhood": "Eastlake"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)",
+   "https://seattle.gov/parks/parks/roanoke-street-mini-park",
+   "https://www.yearofseattleparks.com/2010/01/10/roanoke-street-mini-park/"
+  ],
+  "access": "Free; public mini park at a street-end on Lake Union",
+  "transport": "Not verified; bus on Eastlake Ave E, stop and walk time not checked",
+  "location_precision": "confirmed",
+  "curation_status": "ai_generated",
+  "story": "Lombardy poplars are famous for being narrow, and the city's figure for this one says otherwise: a trunk 81 inches across at chest height, which is about 21 feet round, under a tree recorded at 108 feet tall. For a tree planted almost everywhere as a slim green column along a fence line, that is an unusually heavy base.\n\nIt stands in Roanoke Street Mini Park, a scrap of public ground where East Roanoke Street runs out at Lake Union, in Eastlake. In 2010 the city named it a Heritage Tree together with three weeping willows beside it, and treated the four as a heritage grove, which is recorded on a plaque in the south part of the park. So the poplar shares the honour, and the shoreline, with three trees of a completely different shape: one shooting straight up, three hanging down.\n\nThe last city survey was in 2019, and naturalists logged the tree on iNaturalist as recently as April 2026. It is a different tree from the University of Washington's world's-fair poplar.\n\nNobody has published a planting date, and a trunk that thick on a poplar is worth a second look. If you pass with a tape measure, a girth taken at chest height would settle it, and the figure goes on this page.",
+  "how_to_recognise": "You can recognise it as the tall, upright poplar among three weeping willows, 108 feet high on a trunk about 21 feet round. It stands in Roanoke Street Mini Park, at the Lake Union end of E Roanoke St."
+ },
+ {
+  "id": "sea_015",
+  "name": "The Ballard Playground London Planes",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "not documented",
+  "girth_cm": 606,
+  "location": {
+   "address": "Ballard Playground, near 2644 NW 60th St (register address), by 26th Ave NW",
+   "latitude": 47.672839,
+   "longitude": -122.390278,
+   "neighbourhood": "Ballard"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)"
+  ],
+  "access": "Free; Seattle Parks playground (OSM area Ballard Playground). Adjoins a school site: stay on the park side.",
+  "transport": "Not verified",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "Two London planes stand twenty metres apart at Ballard Playground, and the city measures them as near twins: trunks 76 and 75 inches across at chest height, each close to 20 feet round. Then they part company upward. One reaches 80 feet, the other stops at 64.\n\nBoth carry Seattle's Heritage Tree designation, and standing between them you see them as one sight: two trunks more than six feet thick, sharing a corner of a neighbourhood playground in Ballard. The city last surveyed them in 2019 and recorded both in good condition.\n\nThat survey is close to everything anyone has written down. No planting date has been published, no local history names them, and as far as we can find nobody has photographed them for any public collection. So the age is open, and so is the story: who planted a pair of planes this size beside a playground, and when. If you know, tell us.\n\nThe pin marks the larger tree, which sits inside the playground. Its partner stands a short way north, and we have not confirmed whether it is inside the park boundary or just beyond it. The playground borders a school site, so look from the park side and leave the school grounds alone.",
+  "how_to_recognise": "You can recognise them as a matched pair of London planes about 20 metres apart, each trunk close to 20 feet round; the taller reaches 80 feet. They stand in Ballard Playground near 26th Ave NW."
+ },
+ {
+  "id": "sea_016",
+  "name": "The Seward Park Lake Washington Boulevard Douglas Fir",
+  "species": "Douglas Fir (Pseudotsuga menziesii)",
+  "age_estimate": "not documented",
+  "girth_cm": 559,
+  "location": {
+   "address": "Seward Park, by Lake Washington Blvd S (register address 5898 Lake Washington Blvd S)",
+   "latitude": 47.560148,
+   "longitude": -122.250625,
+   "neighbourhood": "Seward Park"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0 (City of Seattle SDOT Trees, HERITAGE=Y)"
+  ],
+  "access": "Free; inside Seward Park (OSM park area), public",
+  "transport": "Not verified",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "story": "This is the Seward Park Douglas fir you can actually find. The city records it at 125 feet tall with a trunk 70 inches across at chest height, about 18 feet round, and it stands by Lake Washington Boulevard South rather than somewhere deep in the woods.\n\nThat matters because Seward Park already has a famous fir, and this is not it. The Big Tree, the 400 to 500 year old survivor of two forest fires, stands a little over a kilometre away in the old-growth interior, in a spot nobody publishes. This one is a city Heritage Tree with a pin that marks the trunk.\n\nThe last city survey of it was in 2019, and naturalists recorded it standing on iNaturalist in April 2026. Beyond that the record is thin. Nobody has published its age, and a Douglas fir this size could be a lot of things: a big tree is not automatically an old one, and we would rather leave the number blank than borrow one from its famous neighbour.\n\nSo stand at its base and look up 125 feet, then walk into the forest knowing the Big Tree in there is taller still. If you know when this one started, or what it has seen, tell us.",
+  "how_to_recognise": "You can recognise it as a Douglas fir about 125 feet tall with a trunk around 18 feet round. It stands beside Lake Washington Blvd S (city address 5898), not in the forest interior."
+ },
+ {
+  "id": "sea_017",
+  "name": "The Roanoke Park European White Elm",
+  "species": "European White Elm (Ulmus laevis)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 399,
+  "height_m": 23.2,
+  "location": {
+   "address": "Roanoke Park, 950 E Roanoke St, Seattle",
+   "latitude": 47.643904,
+   "longitude": -122.320573,
+   "neighbourhood": "Eastlake / Portage Bay"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521858&outFields=*&f=json",
+   "https://www.seattle.gov/parks/allparks/roanoke-park",
+   "https://www.openstreetmap.org/way/13801411"
+  ],
+  "official_register": {
+   "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-100726",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521858&outFields=*&f=json"
+  },
+  "access": "Free; Roanoke Park is a Seattle Parks and Recreation park, open 4 a.m. to 11:30 p.m. (seattle.gov park page)",
+  "transport": "Not verified; Eastlake/Capitol Hill bus and Link, stop and walk time not checked",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE 2019-08-19); Heritage flag HERITAGE=Y. DIAM 50 in and TREEHEIGHT 76 ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (2002-01-01) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2019-08-15, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register comment: 'SurfNote=HERITAGE TREE'; crown spread 76 ft (register estimate). Ulmus laevis is an unusual elm for the city; species is the register's, not independently confirmed. Roanoke Park sits about 700 m from sea_014 (Roanoke Street Lombardy Poplar) and a Babylon Weeping Willow (TRE-1047702, 30 in) stands at the mini park; a short two-tree walk.",
+  "story": "By the city's own estimate, this elm's crown is as wide as the tree is tall: 76 feet each way. It is a European white elm, Ulmus laevis, an unusual elm to find in Seattle, and the city lists it as a Heritage Tree.\n\nThose numbers come from Seattle's street-tree inventory, which also gives the trunk as 50 inches across, about 13 feet round, and the height as roughly 23 metres. That inventory is the only source we have for this tree, the species included, and the pin on our map is the city's own coordinate for the trunk. A city crew last checked it in August 2019 and recorded it in service. We found no later sighting we could tie to this tree, so 2019 is the latest firm word on it.\n\nRoanoke Park is a small neighbourhood park between Eastlake and Portage Bay, free and open from four in the morning until half past eleven at night. About 700 metres away on Roanoke Street stands a Heritage Lombardy poplar, which turns this into a short walk past two of the city's listed trees.\n\nNobody has published an age for this elm. If you know when it went in, or remember it as a smaller tree, tell us.",
+  "how_to_recognise": "You can recognise it as an elm whose crown spreads about as wide as it is tall, some 76 feet, on a trunk around 13 feet round. It stands in Roanoke Park, at the city's register point for Heritage Tree TRE-100726."
+ },
+ {
+  "id": "sea_018",
+  "name": "The Ross Playground Bigleaf Maple",
+  "species": "Bigleaf Maple (Acer macrophyllum)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 503,
+  "height_m": 28.0,
+  "location": {
+   "address": "Ross Playground, 4320 4th Ave NW, Seattle",
+   "latitude": 47.659026,
+   "longitude": -122.361795,
+   "neighbourhood": "Fremont"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521669&outFields=*&f=json",
+   "https://www.seattle.gov/parks/find/parks/ross-playground",
+   "https://www.openstreetmap.org/way/32526883"
+  ],
+  "official_register": {
+   "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1047729",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199521669&outFields=*&f=json"
+  },
+  "access": "Free; Ross Playground is a Seattle Parks and Recreation park, open 6 a.m. to 10 p.m. (seattle.gov park page)",
+  "transport": "Not verified; bus on Leary Way / 4th Ave NW, stop and walk time not checked",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE 2019-09-03); Heritage flag HERITAGE=Y. DIAM 63 in and TREEHEIGHT 92 ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (1980-11-05) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2019-08-28, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register crown spread 99 ft (estimate). Register address 4300 4th Ave NW lies inside the OSM polygon of Ross Playground (4320 4th Ave NW). A lifecheck RECENT hit within 150 m (iNaturalist 2026-09-06) is a nearby observation, not this trunk. At 63 in diameter it is among the largest heritage maples in the register.",
+  "story": "The trunk of this bigleaf maple is 63 inches across, about 16 and a half feet round, which puts it among the largest Heritage maples in Seattle's tree inventory. The same record gives it a height of 92 feet, about 28 metres, and a crown estimated at 99 feet wide. It spreads further than it climbs.\n\nIt stands in Ross Playground, a small Fremont park on 4th Avenue NW, free and open from six in the morning until ten at night. Bigleaf maple is the native maple of this coast, and the city has listed this one as a Heritage Tree.\n\nEverything we know comes from that one place: the city's street-tree inventory, which also supplies the coordinate our pin uses, at the trunk. A city crew last checked the tree in August 2019 and recorded it in service. Naturalists have logged plants within 150 metres since then, as recently as September 2026, but none of those records is clearly this maple, so 2019 is the latest word on it we can stand behind.\n\nNobody has published an age for it either. A trunk this size invites a guess, and we would rather leave the line empty than make one. If you know how long this maple has stood over the playground, tell us.",
+  "how_to_recognise": "You can recognise it by its size: a bigleaf maple about 92 feet tall with a trunk some 16 feet round and a crown near 99 feet wide. It stands in Ross Playground on 4th Ave NW, at the city's register point."
+ },
+ {
+  "id": "sea_019",
+  "name": "The Wallingford Playfield Pin Oak",
+  "species": "Pin Oak (Quercus palustris)",
+  "age_estimate": "not documented",
+  "age_min": null,
+  "age_max": null,
+  "girth_cm": 399,
+  "location": {
+   "address": "Wallingford Playfield, 4219 Wallingford Ave N, Seattle",
+   "latitude": 47.659023,
+   "longitude": -122.337491,
+   "neighbourhood": "Wallingford"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199641335&outFields=*&f=json",
+   "https://www.seattle.gov/parks/allparks/wallingford-playfield",
+   "https://www.openstreetmap.org/way/158265918"
+  ],
+  "official_register": {
+   "name": "Seattle Heritage Tree Program (SDOT Trees register), no. TRE-1145024",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=OBJECTID%3D199641335&outFields=*&f=json"
+  },
+  "access": "Free; Wallingford Playfield is a Seattle Parks and Recreation park, open 4 a.m. to 11:30 p.m. (seattle.gov park page)",
+  "transport": "Not verified; bus on N 45th St / Wallingford Ave N, stop and walk time not checked",
+  "location_precision": "confirmed",
+  "curation_status": "flagged",
+  "verify_notes": "Seattle SDOT Trees inventory point (tree-level asset coordinate, MODDATE none); Heritage flag HERITAGE=Y. DIAM 50 in and TREEHEIGHT 0 (not recorded; no height given) ft in the register, converted: girth = pi x diameter. PLANTED_DATE in the register (1950-01-01) is an inventory-entry date, not a planting: no age basis, leave age empty. Register LAST_VERIFY_DATE 2021-09-10, status INSVC; no dated independent observation of this trunk found (lifecheck near-by iNaturalist records are other plants), so alive is register-only. Pin is the register point; not checked against aerial imagery. Register has no height and no comment text for this tree. A pin oak of 50 in diameter is unusually large for the species; lifecheck found a RECENT iNaturalist record within the radius (2025-08-26) that may or may not be this trunk. Weakest of the three: flagged, one source.",
+  "story": "Pin oaks seldom grow a trunk this thick. This one measures 50 inches across, about 13 feet round, in Seattle's street-tree inventory, which lists it as a city Heritage Tree in Wallingford Playfield.\n\nThat inventory is the only source for it, and a thin one. It records no height and carries no notes, so we cannot tell you how tall the tree is. The pin on our map is the city's coordinate for the trunk. A city crew last confirmed it in service in September 2021. An iNaturalist record from August 2025 sits within range of the pin and may be this oak, or may be a neighbour; we cannot say which.\n\nThe record also fills in its planting field, but with a bookkeeping date rather than a planting, so it is no evidence of age, and we give none.\n\nWallingford Playfield is a neighbourhood park on Wallingford Avenue North, free and open from four in the morning until half past eleven at night. Pin oaks turn dark red to russet in autumn, which makes October and November the months to come and look for it.\n\nNobody has dated this oak or put a tape to its height. If you can do either, tell us, and we will put your figure on the page.",
+  "how_to_recognise": "You can recognise it as an oak with a trunk about 13 feet round, 50 inches across, and in autumn by leaves turning dark red to russet. It stands in Wallingford Playfield, at the city's register point.",
+  "best_time": {
+   "months": [
+    10,
+    11
+   ],
+   "kind": "autumn colour",
+   "label": "October into November, when a pin oak turns dark red to russet"
+  }
+ },
+ {
+  "id": "sea_020",
+  "name": "The Aloha Street Tulip Tree",
+  "species": "Tulip Tree (Liriodendron tulipifera)",
+  "age_estimate": "not documented",
+  "girth_cm": 367,
+  "height_m": 28,
+  "location": {
+   "address": "747 16th Ave E, at E Aloha St, Seattle",
+   "latitude": 47.62681,
+   "longitude": -122.31138,
+   "neighbourhood": "Capitol Hill"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47272%27&outFields=*&f=json",
+   "https://arthurleej.com/articles/a-specialcapt.html",
+   "https://www.inaturalist.org/observations/390049639"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47272%27&outFields=*&f=json"
+  },
+  "access": "View from the public sidewalk at 16th Ave E and E Aloha St; the trunk stands on a private lot, so look from the pavement only.",
+  "transport": "Capitol Hill Station (Link light rail) about 1.2 km, roughly 15 minutes on foot; King County Metro stops on 15th Ave E.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (SDOT inventory tree TRE-47272, HERITAGE=Y, comment 'HERITAGE TREE. Crownspread 69'): last known diameter 46 in (about 117 cm, girth about 367 cm by diameter x pi), height 92 ft (about 28 m), status INSVC, last verified 2024-07. Ownership listed PRIV (property owner approved heritage designation); register coordinate 47.62681,-122.31138 is the tree record, not checked on aerial imagery, so precision stays approximate. Jacobson (Seattle tree expert, 'Special Capitol Hill Trees', 2001): 'towering tulip tree at 16th Avenue E and E Aloha Street, where the street, curb and sidewalk were realigned to accommodate the tree's immense size', listed under trees that are conspicuous and loved, not under big or old. A neighbourhood walk guide lists it at 747 E Aloha; a mosaic art piece sits at the corner (seen in search results only, the Seattle arts page is behind Cloudflare). A 2010 Capitol Hill Seattle post, seen only as a search summary, says it passed 10 years as a heritage tree in 2010 and calls it 70+ ft; the register's 92 ft is the later figure. Alive: lifecheck RECENT, iNaturalist observation 2026-08-10 within range. No planting date found, age left blank. Register plus one expert article; flagged for one official source and private lot.",
+  "story": "Seattle realigned a street for this tree. At the corner of 16th Avenue East and East Aloha Street on Capitol Hill, the roadway, the curb and the sidewalk were all shifted to accommodate its size, as the Seattle tree expert Arthur Lee Jacobson recorded in his 2001 survey of the hill's special trees.\n\nHe listed it among the trees that are conspicuous and loved, rather than the big or the old. The city's figures suggest he was being modest. Its tree records give the trunk as 46 inches across, roughly 12 feet round, a height of 92 feet, about 28 metres, and a crown 69 feet wide. The tree is a city Heritage Tree, a listing the owner of the lot agreed to, and the city last recorded it in service in July 2024.\n\nThat lot is private, so this is a tree to see from the public sidewalk at the corner, and a crown 69 feet across leaves plenty to look at from there. Stay on the pavement.\n\nA tulip tree is neither a tulip nor a poplar, despite the nickname tulip poplar. It is a magnolia relative, and its leaves give it away: four lobes, with the tip cut off square as if somebody took scissors to it.\n\nNobody has published when it was planted or how old it is. If you know the history of this corner, tell us.",
+  "how_to_recognise": "You can recognise it by its size, about 92 feet tall with a crown 69 feet wide, and by square-tipped, four-lobed leaves. It stands at the corner of 16th Ave E and E Aloha St, where the street and sidewalk were realigned around it."
+ },
+ {
+  "id": "sea_021",
+  "name": "The Leschi Park Tulip Tree",
+  "species": "Tulip Tree (Liriodendron tulipifera)",
+  "age_estimate": "not documented",
+  "girth_cm": 415,
+  "height_m": 32,
+  "location": {
+   "address": "Leschi Park, 201 Lakeside Ave S, Seattle",
+   "latitude": 47.60101,
+   "longitude": -122.28665,
+   "neighbourhood": "Leschi"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1054309%27&outFields=*&f=json",
+   "https://www.seattle.gov/parks/parks/leschi-park",
+   "https://www.inaturalist.org/observations/370909571"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner Parks)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1054309%27&outFields=*&f=json"
+  },
+  "access": "Free, in Leschi Park (Seattle Parks), open 6 am to 10 pm per the city park page.",
+  "transport": "King County Metro routes serve Lake Washington Blvd and Jackson St near Leschi, about 5 to 10 minutes on foot from the stop; confirm the route before travelling.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (SDOT inventory tree TRE-1054309, HERITAGE=Y, ownership PARK, address 201 LAKESIDE AVE S which is Leschi Park's own address on the city page): last known diameter 52 in (about 132 cm, girth about 415 cm by diameter x pi), height 106 ft (about 32 m), status INSVC, last verified 2019-08, crown spread 74 ft. Register coordinate 47.60101,-122.28665 sits in the park, individual crown not confirmed on aerial imagery, so approximate. The register date 'planted 2011' is an inventory entry, not a planting date; age left blank. Alive: lifecheck RECENT, iNaturalist observation 2026-06-12 in range (identity of the tulip tree on that observation not checked). Register-only for vitality (last verified 2019); flagged. Colman Park forestry note did not mention it; no second source found.",
+  "story": "Seattle once realigned a Capitol Hill street to make room for a tulip tree. The one in Leschi Park is bigger: 106 feet tall to that tree's 92, and 52 inches across the trunk to its 46.\n\nThose figures come from the city's tree records, which list it as a Heritage Tree on park land, about 32 metres high with a crown 74 feet wide. Across 52 inches of diameter, the trunk works out at roughly 13 and a half feet round, a little over four metres.\n\nThe records are also the only source for it, and they are not new. A city crew last noted the tree in service in August 2019. A naturalist photographed a plant close to the city's point for it in June 2026, but whether that picture shows this trunk is not certain, so treat the 2019 entry as the firm word on it. The pin sits at that city point inside the park; the crown itself has not been checked against it.\n\nA tulip tree is a magnolia relative, not a poplar, whatever its old nickname says. Its leaves have four lobes and a tip cut off square, which is the quickest way to tell it from a maple.\n\nLeschi Park is free and open from six in the morning until ten at night. Nobody has published an age for this tree. If you know when it was planted, tell us.",
+  "how_to_recognise": "You can recognise it by its height, about 106 feet, a trunk some 13 and a half feet round, and square-tipped, four-lobed leaves. It stands in Leschi Park, 201 Lakeside Ave S, near the city's register point."
+ },
+ {
+  "id": "sea_022",
+  "name": "The NW 62nd Street Bigleaf Maple",
+  "species": "Bigleaf Maple (Acer macrophyllum)",
+  "age_estimate": "not documented",
+  "girth_cm": 734,
+  "height_m": 26,
+  "location": {
+   "address": "1707 NW 62nd St, Seattle",
+   "latitude": 47.673723,
+   "longitude": -122.379407,
+   "neighbourhood": "Ballard"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-100952%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-100952%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 1707 NW 62nd St, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-100952, address 1707 NW 62ND ST): diameter 92 in (girth about 734 cm by diameter x pi), height 86 ft (about 26 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Crown spread about 72 ft per the register. Register coordinate 47.673723,-122.379407 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2023-01-17 within range (https://www.inaturalist.org/observations/146783858), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_023",
+  "name": "The NW 59th Street Giant Sequoia",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "age_estimate": "not documented",
+  "girth_cm": 606,
+  "height_m": 29,
+  "location": {
+   "address": "1525 NW 59th St, Seattle",
+   "latitude": 47.671284,
+   "longitude": -122.377555,
+   "neighbourhood": "Ballard"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1047682%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1047682%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 1525 NW 59th St, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-1047682, address 1525 NW 59TH ST): diameter 76 in (girth about 606 cm by diameter x pi), height 95 ft (about 29 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Crown spread about 47 ft per the register. Register coordinate 47.671284,-122.377555 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2026-04-20 within range (https://www.inaturalist.org/observations/351495583), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_024",
+  "name": "The NW 59th Street Lombardy Poplars",
+  "species": "Lombardy Poplar (Populus nigra 'Italica')",
+  "age_estimate": "not documented",
+  "girth_cm": 614,
+  "height_m": 37,
+  "location": {
+   "address": "1143 NW 59th St, Seattle",
+   "latitude": 47.671284,
+   "longitude": -122.372675,
+   "neighbourhood": "Ballard"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1055412%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1055412%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 1143 NW 59th St, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-1055412, address 1143 NW 59TH ST): diameter 77 in (girth about 614 cm by diameter x pi), height 122 ft (about 37 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Two register trees at the same address, TRE-1055412 (77 in, 122 ft; this entry) and TRE-1055411 (72 in, 121 ft, 47.671281,-122.372541, about 10 m east), folded into one entry. Crown spread 30 ft each. Register condition rating 4. Poplar at 122 ft (37 m) is plausible for the species; compare the published sea_014. Register coordinate 47.671284,-122.372675 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2026-06-08 within range (https://www.inaturalist.org/observations/369830593), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_025",
+  "name": "The North 47th Street European Chestnut",
+  "species": "European Chestnut (Castanea sativa)",
+  "age_estimate": "not documented",
+  "girth_cm": 583,
+  "height_m": 14,
+  "location": {
+   "address": "502 N 47th St, Seattle",
+   "latitude": 47.662926,
+   "longitude": -122.352544,
+   "neighbourhood": "Fremont"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-5702%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-5702%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 502 N 47th St, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-5702, address 502 N 47TH ST): diameter 73 in (girth about 583 cm by diameter x pi), height 47 ft (about 14 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Height only 47 ft against a 73 in diameter: a wide, low crown (crown spread about 69 ft per register). Defect fields: trunk defect 1, root problem 1, topped 0. Register coordinate 47.662926,-122.352544 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2023-08-03 within range (https://www.inaturalist.org/observations/176531824), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_026",
+  "name": "The Eastern Avenue Coast Redwood",
+  "species": "Coast Redwood (Sequoia sempervirens)",
+  "age_estimate": "not documented",
+  "girth_cm": 495,
+  "height_m": 26,
+  "location": {
+   "address": "4625 Eastern Ave N, Seattle",
+   "latitude": 47.66326,
+   "longitude": -122.329242,
+   "neighbourhood": "Wallingford"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1055567%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1055567%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 4625 Eastern Ave N, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-1055567, address 4625 EASTERN AVE N): diameter 62 in (girth about 495 cm by diameter x pi), height 85 ft (about 26 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Crown spread about 46 ft per the register. Register coordinate 47.663260,-122.329242 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2025-05-02 within range (https://www.inaturalist.org/observations/277848102), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_027",
+  "name": "The East Highland Drive Coast Redwood",
+  "species": "Coast Redwood (Sequoia sempervirens)",
+  "age_estimate": "not documented",
+  "girth_cm": 782,
+  "height_m": 35,
+  "location": {
+   "address": "2105 E Highland Dr, Seattle",
+   "latitude": 47.630516,
+   "longitude": -122.304597,
+   "neighbourhood": "Capitol Hill (Montlake border)"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1047719%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1047719%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 2105 E Highland Dr, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-1047719, address 2105 E HIGHLAND DR): diameter 98 in (girth about 782 cm by diameter x pi), height 114 ft (about 35 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Crown spread about 45 ft per the register. Among the largest-diameter redwoods in the city layer (98 in). Register coordinate 47.630516,-122.304597 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2026-07-25 within range (https://www.inaturalist.org/observations/391196335), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_028",
+  "name": "The Newport Way Giant Sequoia",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "age_estimate": "not documented",
+  "girth_cm": 798,
+  "height_m": 45,
+  "location": {
+   "address": "1116 Newport Way, Seattle",
+   "latitude": 47.611902,
+   "longitude": -122.284201,
+   "neighbourhood": "Madrona"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1065177%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-1065177%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 1116 Newport Way, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-1065177, address 1116 NEWPORT WAY): diameter 100 in (girth about 798 cm by diameter x pi), height 148 ft (about 45 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Register comment \"BIC\" (read as Best in City; the abbreviation is not expanded in the register). Crown spread about 63 ft. Most recently verified of the set: register LAST_VERIFY 2023-08-25. 148 ft (45 m) tall is plausible for a giant sequoia planted in the 19th or early 20th century in this climate; no planting source. Register coordinate 47.611902,-122.284201 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2023-07-02 within range (https://www.inaturalist.org/observations/171022028), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_029",
+  "name": "The 12th Avenue NE London Plane",
+  "species": "London Plane (Platanus x acerifolia)",
+  "age_estimate": "not documented",
+  "girth_cm": 622,
+  "height_m": 23,
+  "location": {
+   "address": "4123 12th Ave NE, Seattle",
+   "latitude": 47.657521,
+   "longitude": -122.315596,
+   "neighbourhood": "University District"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-26847%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-26847%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 4123 12th Ave NE, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-26847, address 4123 12TH AVE NE): diameter 78 in (multi-stem, girth about 622 cm by diameter x pi), height 77 ft (about 23 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). Register notes multi-trunk and topped (topped 2, branch defect 2, trunk defect 1, root problem 1), condition rating 3 (lowest of the set); crown spread about 89 ft. The 78 in figure may be a combined multi-stem measure, so girth is labelled as such. Register coordinate 47.657521,-122.315596 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: iNaturalist observation 2026-08-30 within range (https://www.inaturalist.org/observations/396282311), identity not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ },
+ {
+  "id": "sea_030",
+  "name": "The 17th Avenue East Sugar Maple",
+  "species": "Sugar Maple (Acer saccharum)",
+  "age_estimate": "not documented",
+  "girth_cm": 463,
+  "height_m": 27,
+  "location": {
+   "address": "615 17th Ave E, Seattle",
+   "latitude": 47.624954,
+   "longitude": -122.310064,
+   "neighbourhood": "Capitol Hill"
+  },
+  "verified_sources": [
+   "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47570%27&outFields=*&f=json"
+  ],
+  "official_register": {
+   "name": "City of Seattle Heritage Tree register (SDOT tree inventory, HERITAGE=Y, owner private frontage)",
+   "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0/query?where=UNITID%3D%27TRE-47570%27&outFields=*&f=json"
+  },
+  "access": "Free to see from the public street or sidewalk; the tree stands on private frontage at 615 17th Ave E, so view from the pavement and do not enter the property.",
+  "transport": "King County Metro bus serves the nearby arterial; stop and walk time not verified.",
+  "location_precision": "approximate",
+  "curation_status": "flagged",
+  "verify_notes": "Register (City of Seattle SDOT tree inventory, HERITAGE=Y, unit TRE-47570, address 615 17TH AVE E): diameter 58 in (girth about 463 cm by diameter x pi), height 90 ft (about 27 m), status INSVC, ownership PRIV (the tree stands on the private frontage and is seen from the public sidewalk). The register comment says: specimen and photo in the book \"Trees of Seattle\", 17 May 2007, diameter 47 in; height 90 ft on 25 June 2019. So the diameter has grown from 47 in (2007) to 58 in (register now). Both figures come from the city record, the book was not seen. Register LAST_VERIFY 2024-07-23. Sits within about 1 km of published sea_020 (Aloha Street Tulip Tree). Register coordinate 47.624954,-122.310064 from the city inventory; individual crown not confirmed on aerial imagery by this pass, so approximate; the address and size are what tell it apart on the street. Register planted date is an inventory entry, not a planting source; age left blank. One source (the city register, last verified 2019 unless noted), US one-source bar, flagged. life: register last verified 2024-07-23; iNaturalist nearby 2025-2026 not checked. Host overpass-api.de timed out (OSM tree node check not done); Commons geosearch near the Newport Way tree returned nothing. No photograph hunted."
+ }
 ]

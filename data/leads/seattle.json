@@ -254,7 +254,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_028"
   },
   {
    "name": "Japanese Umbrella Pine",
@@ -464,7 +465,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_022"
   },
   {
    "name": "Common (Euro) Mountain Ash",
@@ -569,7 +571,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_027"
   },
   {
    "name": "English Walnut",
@@ -674,7 +677,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_030"
   },
   {
    "name": "Common (Fruiting) Pear Tree",
@@ -779,7 +783,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_023"
   },
   {
    "name": "(Sweet) Mazzard Cherry",
@@ -1364,7 +1369,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_029"
   },
   {
    "name": "European Chestnut",
@@ -1379,7 +1385,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_025"
   },
   {
    "name": "Empress Tree",
@@ -2114,7 +2121,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_024"
   },
   {
    "name": "Lombardy Poplar",
@@ -2129,7 +2137,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "folded into sea_024 (twin poplar, about 10 m)"
   },
   {
    "name": "Douglas Fir",
@@ -2234,7 +2243,8 @@
     "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/SDOT_Trees_CDL/FeatureServer/0"
    ],
    "source": "City of Seattle (SDOT) street tree layer, rows flagged HERITAGE=Y: the city's designated heritage trees on public right of way (government). Facts only.",
-   "status": "open"
+   "status": "delivered",
+   "status_note": "verified in data/research/seattle-verified.json as sea_026"
   },
   {
    "name": "Copper Beech",
