@@ -449,9 +449,9 @@ struct WhenPermissionIsRefused {
         let refused = CollectSheet.placeReason(libraryRefused: true)
         let missing = CollectSheet.placeReason(libraryRefused: false)
         #expect(refused != missing)
-        #expect(!missing.contains("Allowing photos"),
+        #expect(!missing.contains("allow access to your photos"),
                 "a photograph with no location was told to change a setting that would not help")
-        #expect(refused.contains("Allowing photos"),
+        #expect(refused.contains("allow access to your photos"),
                 "a refused library was not told the one thing that would fix it")
     }
 
