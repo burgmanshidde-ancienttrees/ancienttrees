@@ -1,5 +1,41 @@
 {
  "_note": "Photographs readers sent through the app, matched to a tree we map, waiting for a viewing pass. Judge with the photo-judge agent and apply with scripts/sightings_publish.py. Rebuilt on every knock from the rows without a verdict.",
  "written": "2026-10-22",
- "queue": []
+ "queue": [
+  {
+   "sighting_id": "0f3ee1e1-ad84-4a57-bf98-6a0b50826651",
+   "user_id": "p_cdc28055a82c5ea92ef49afc",
+   "tree_id": "cma_001",
+   "city_slug": "chatenay-malabry",
+   "city": "Chatenay-Malabry",
+   "tree_name": "The Weeping Cedar of the Vallée-aux-Loups (Cèdre pleureur)",
+   "match": "app",
+   "distance_m": 0,
+   "mine": false,
+   "current_photo": "approved",
+   "current_source": null,
+   "tree_species": "Blue Weeping Atlas Cedar (Cedrus atlantica 'Glauca Pendula')",
+   "recognise": "You can recognise it by the props: about thirty resin supports shaped like stalagmites, holding up branches that sweep the ground across an area the size of a tennis court. It is the tree you can walk in underneath.",
+   "tree_girth_cm": 500,
+   "tree_height_m": 14,
+   "story": "Every blue weeping Atlas cedar in the world came off this one tree. The cultivar Cedrus atlantica 'Glauca Pendula' appeared here as a mutation around 1873, and every specimen since has been a cutting or a graft descended from it. If you have seen one draped over a lawn in a park or a garden somewhere, you have seen a copy of this.\n\nIt is about 150 years old, roughly five metres round and only 14 metres tall, and it spreads its branches across about 700 square metres, near enough a tennis court. The department calls it the largest of its kind anywhere, which more or less follows from being the first.\n\nWeeping branches that long cannot hold themselves up. In 2011 the artist Francis Ballu made ",
+   "name": "The Weeping Cedar of the Vallée-aux-Loups (Cèdre pleureur)",
+   "species": null,
+   "girth_cm": null,
+   "girth_hugs": null,
+   "note": "",
+   "taken_at": "2026-08-19",
+   "photo_path": "154c94b7-0841-4161-bcab-47405b9a8051/0F3EE1E1-AD84-4A57-BF98-6A0B50826651.jpg",
+   "sign_path": null,
+   "sign_file": null,
+   "extra_files": [],
+   "latitude": 48.77117,
+   "longitude": 2.27116,
+   "file": "out/sightings/0f3ee1e1-ad84-4a57-bf98-6a0b50826651.jpg",
+   "light": null,
+   "vouched": null,
+   "rank": 1,
+   "worth": "the tree already has one: ship this only if it is better"
+  }
+ ]
 }
