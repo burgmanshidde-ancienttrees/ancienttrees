@@ -23,6 +23,20 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22
+
+Web half: read the new Riverside, Mobile, Thomasville, Oroville and Logan Canyon pages and the Roosevelt Palm and Boyington Oak tree pages; no em dashes on any of them. Not a Monday, so no corpus or copy audit. One real finding.
+
+- WARN /riverside/roosevelt-palm (meta description, og, twitter): "A 1903-year-old Mexican Fan Palm in Victoria Avenue, Riverside." The data says age_estimate "planted in 1903", and a planting year is printed as an age (hard rule 2; Verify: a derived estimate states its basis). Same fault in the built HTML of 65 tree pages, e.g. /riverside/chicago-white-sox-redwood-tree ("1914-year-old"), /oroville/mother-orange-tree ("1850-year-old"), /seattle/wedgwood-scarlet-oak ("1920-year-old"), /cardiff/raoul-wallenberg-tree ("1985-year-old"), /leiden/old-plane-of-the-plantsoen ("1800-year-old"). `metaLead` (site/src/lib/i18n.ts:612) trusts whatever `ageToken()` (site/src/lib/tree-copy.ts:16) hands it; the sentence-has-no-"years" guard exists in the no-range branch but pages with age_min/age_max take the in-range branch, where a year inside a wide band passes, or the meta takes its age from another path. The 2026-08-10, 08-28 and 09-13 reviews found the same shape. Wanted: a qa.py check on built HTML refusing `\b(1[0-9]|20)\d\d-year-old`, and the token refusing a number with no "year" after it in the sentence. Meta should read "Planted in 1903".
+
+## 2026-10-22 (app half)
+
+App half (collection-tab, collection, contribute, directions, early-adopter-sheet, early-adopter; iPhone SE). Two findings.
+
+- NOTE APP: collection-tab and early-adopter, the sub-tab reads "Want to visit" while CLAUDE.md and the headline numbers call the list "Want to go" (PRODUCT_COPY.md: one name for one list). Raised on 10-21 and still there.
+- NOTE APP: contribute, the sign-in sheet over "Tell us" promises "Every vote, correction and tip gets checked and answered", and the sheet behind says "Sending needs a free account". An answer to every tip is a promise the pipeline keeps only when a reader's verdict is written (check_every_submission_got_a_verdict covers submissions, not votes), and "free account" sits oddly beside premium as the destination (CLAUDE.md: copy never says "free forever"; "free" alone is allowed, so only worth a look).
+- NOTE APP: collection and directions are the same photograph full-bleed with no map or tree behind it, so "directions" shows the sheet over a tree photo rather than a tree page; early-adopter shows a fixture profile ("test", Paris ambassador) so it is not judged.
+
 ## 2026-10-21
 
 Web half: read /lisbon and the new Goethe-Institut dragon tree page (reader find, no sender name, no em dashes, access stated), /bamberg and two of its tree pages, plus london, aachen and paris for banned words. Two findings.
