@@ -4,6 +4,14 @@
   "2026-10-22": [
    {
     "date": "2026-10-22",
+    "target": "glasgow+san-francisco+washington-dc+pittsburgh",
+    "kind": "verify",
+    "tokens": 56000,
+    "trees": 0,
+    "note": "enrichment, 11 trees: nothing closed, 18 gaps dead-ended"
+   },
+   {
+    "date": "2026-10-22",
     "target": "photos1 roster (krakow, san-francisco, hong-kong, washington-dc, pittsburgh, luxembourg-city, enschede, como, trieste, dresden)",
     "kind": "photo",
     "tokens": 130000,

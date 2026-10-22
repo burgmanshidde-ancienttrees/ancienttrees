@@ -14,6 +14,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-22 night run (02:55 UTC window): photograph sweep, one approval
 
 - **Live:** the Presidio Centennial Tree (San Francisco) now has a photograph (BrokenSphere, CC BY-SA 3.0; reversal `python3 scripts/photo_apply.py hold sfo_011`). Rung 1 empty, health.py's only flags were push-skipped deploys (a dispatched deploy was running). `photo_hunt.py --recheck` on glasgow, san-francisco, washington-dc, pittsburgh found little; a viewing pass over 40 fetched files rejected 39 (wrong subject or species). Next time: queue the named Commons files for the Yamaki Pine (wdc_025: "Japanese White Pine 'Hiroshima Survivor', 30 April 2012.JPG", Sage Ross CC BY-SA, viewed and fits). Nothing written: the one written tree waiting, ftw_018, is held on unknown access.
+- **Also live:** the Yamaki Pine (wdc_025) now has a photograph (Sage Ross, CC BY-SA 3.0, queued from the named Commons file and viewed; reversal `python3 scripts/photo_apply.py hold wdc_025`).
+- **Enrichment pass** on glasgow+san-francisco+washington-dc+pittsburgh (11 trees): closed nothing, 18 gaps recorded as dead ends (`enrich.py --done`). Pittsburgh champions have no sizes in the Shade Tree Commission minutes; remarkabletreespgh.com returns a stub to automated fetches (a browser session could read the champion measurements). Claims released (washington-dc with --force: wdc_017 is a 0 m duplicate of wdc_012, not a pending tree).
 
 ## 2026-10-22 night run, later attempt: San Francisco +1, Studena new
 
