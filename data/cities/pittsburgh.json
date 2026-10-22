@@ -2,29 +2,29 @@
   "city": "Pittsburgh",
   "country": "United States",
   "status": "needs_curation",
-  "intro": "In March 2023 Pittsburgh's Shade Tree Commission drew up its first official list of Remarkable Trees, chosen from 44 resident nominations. Three of the winners stand together in Mellon Park, the city's first public arboretum: a champion bald cypress, a katsura that smells of caramel every October, and a lacebark pine grown for its peeling bark. A fourth, a white oak, was named for what it feeds rather than how big it is.",
-  "meta_description": "Pittsburgh's official Remarkable Trees: a champion bald cypress, a caramel-scented katsura, a peeling lacebark pine.",
-  "question_meta": "Pittsburgh has not published an age for any of its four Remarkable Trees; the record names the champion by size, not years.",
-  "question_answer": "Pittsburgh's own Remarkable Trees program has not published an age for any of the four trees it named in March 2023. The closest it comes to a superlative is the bald cypress in Mellon Park, named the largest of its kind on public land anywhere in the city. No height or girth was published alongside that title.",
-  "question_context": "The city's Shade Tree Commission, working with Tree Pittsburgh, opened an official call for Remarkable Trees in 2023 and took 44 nominations from residents; 15 met the criteria and became the program's first list, recorded in the commission's own March 2023 meeting minutes. Three from that first list stand together in Mellon Park, the city's first public arboretum: a bald cypress named the largest of its kind on Pittsburgh's public land, a katsura honoured as a Tree of a Kind for its caramel-smelling autumn leaves, and a lacebark pine named for its peeling, patchwork bark. A fourth, a white oak in Phillips Park, carries the program's Giving Tree title, awarded for what a tree provides to the wildlife around it rather than for its size. None of the four has a published age, height or girth; the program measured them by kind of remarkableness rather than by number. Only one source names the Phillips Park oak, the commission's own minutes, so its exact spot inside the park and its story beyond the citation are still open questions a reader on the ground could answer faster than any register.",
+  "intro": "Pittsburgh names its own remarkable trees. Since 2023 the city's Shade Tree Commission, with Tree Pittsburgh, has listed them from residents' nominations, and twelve are on this page. Five are Pittsburgh Champions, the commission's title for the largest of a species on public land: a bald cypress in Mellon Park, a hornbeam in Arsenal Park, a ginkgo and a black locust a hundred metres apart in Highland Park, and an American elm in Allegheny Commons. The rest were chosen for a caramel scent, peeling bark, purple leaves, the wildlife they feed, or a history nobody has yet written down.",
+  "meta_description": "Pittsburgh's official Remarkable Trees: five city champions, a caramel-scented katsura, a purple beech in Frick Park and a Witness Tree oak.",
+  "question_meta": "Pittsburgh has not published an age for any of the 12 Remarkable Trees on this page; its champions are named by size, not years.",
+  "question_answer": "Pittsburgh's own Remarkable Trees program has not published an age for any of the twelve trees on this page. It names trees by size and character instead: five here are Pittsburgh Champions, the commission's category for the largest tree of a species on public land, among them a bald cypress in Mellon Park and a ginkgo in Highland Park. No height or girth was published with any of those titles.",
+  "question_context": "The city's Shade Tree Commission, working with Tree Pittsburgh, opened an official call for Remarkable Trees in 2023 and took 44 nominations from residents; 15 met the criteria and became the program's first list, recorded in the commission's March 2023 meeting minutes, and a second round followed in March 2024. Three trees from the first list stand together in Mellon Park, the city's first public arboretum: a champion bald cypress, a katsura with caramel-smelling autumn leaves, and a lacebark pine named for its peeling bark. Arsenal Park in Lawrenceville holds a champion hornbeam and a specimen bald cypress about twenty metres apart, and Highland Park a champion ginkgo and a champion black locust about a hundred metres apart, with a third bald cypress on Stanton Avenue nearby. A copper beech in Frick Park and a sawtooth oak in Westinghouse Park, named a Witness Tree, are about 700 metres from each other. A white oak in Phillips Park carries the Giving Tree title, and the champion American elm stands in Allegheny Commons on the North Side. None of the twelve has a published age, height or girth; the program judges trees by kind of remarkableness rather than by number.",
   "hero_tree_id": "pit_001",
   "oldest_tree_id": "pit_001",
   "faq": [
     {
       "q": "What is the oldest tree in Pittsburgh on this page?",
-      "a": "No age has been published for any of the four. The closest thing to a superlative is the bald cypress in Mellon Park, named the largest of its kind on public land in the city."
+      "a": "No age has been published for any of the twelve. The city ranks by size instead: five are Pittsburgh Champions, the largest of their species on public land in the city, among them the bald cypress in Mellon Park and the ginkgo in Highland Park."
     },
     {
       "q": "Are these trees free to visit?",
-      "a": "Yes. All four stand in public city parks, Mellon Park and Phillips Park, with no entry fee."
+      "a": "Yes. All twelve stand on public ground with no entry fee: in Mellon, Phillips, Arsenal, Highland, Frick and Westinghouse Parks, in Allegheny Commons, and on Stanton Avenue."
     },
     {
       "q": "What is the Remarkable Trees of Pittsburgh program?",
-      "a": "An official City of Pittsburgh initiative, run by the Shade Tree Commission with Tree Pittsburgh, that took 44 tree nominations from residents in 2023 and named 15 across several categories: Champion, Tree of a Kind, and Giving Tree among them."
+      "a": "An official City of Pittsburgh initiative, run by the Shade Tree Commission with Tree Pittsburgh, that took 44 tree nominations from residents in 2023 and named 15, with a second round in 2024. Its categories include Pittsburgh Champion, Specimen Tree, Tree of a Kind, Giving Tree and Witness Tree."
     },
     {
       "q": "How do I get there?",
-      "a": "The three Mellon Park trees stand near the corner of Fifth Avenue and Beechwood Boulevard in Shadyside/Point Breeze. The Phillips Park oak is in Beechview; its exact spot within the park is still an open question we would like a reader to answer."
+      "a": "The trees fall into small groups. Three stand in Mellon Park near Fifth Avenue and Beechwood Boulevard; two in Arsenal Park by the 40th Street entrance in Lawrenceville; two in Highland Park near Reservoir Drive, with the Stanton Avenue cypress about 1.2 km away; and the Frick Park copper beech and the Westinghouse Park oak about 700 metres apart. The Phillips Park oak in Beechview and the Allegheny Commons elm on the North Side stand on their own."
     }
   ],
   "trees": [
@@ -189,6 +189,329 @@
       "official_register": {
         "name": "Remarkable Trees of Pittsburgh (Pittsburgh Shade Tree Commission), Giving Tree",
         "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      }
+    },
+    {
+      "id": "pit_005",
+      "name": "The Specimen Bald Cypress of Arsenal Park",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Arsenal Park, near the main entrance off 40th Street, Pittsburgh, Pennsylvania",
+        "latitude": 40.46703,
+        "longitude": -79.96076,
+        "neighbourhood": "Lawrenceville"
+      },
+      "story": "Arsenal Park holds two of Pittsburgh's Remarkable Trees about twenty metres apart, and this bald cypress is the one that was not chosen for size. When the city's Shade Tree Commission listed it in March 2023, it went in as a Specimen Tree: a notable example of its kind on public property, which is a different honour from being the biggest. Its neighbour, a hornbeam, took the commission's Pittsburgh Champion title in the same round.\n\nThe ground is older than anything recorded about the tree. The park opened on 4 July 1907 on land that had been the Allegheny Arsenal. Nobody has written down when this cypress was planted, so the park's date says nothing about the tree's.\n\nWhat the tree does announce, every year, is that it is a long way from home. Bald cypress is a conifer of southern swamps and river bottoms, at ease in standing water, and here it grows a few steps from the 40th Street entrance in Lawrenceville. It is also one of the few conifers that drops every needle. In autumn the feathery foliage turns rust and falls, and through the winter it stands as a bare, tapering spire, a conifer with nothing on it at all.\n\nNo age, girth or height has been published. If you know when it went in, or you have put a tape round it, tell us.",
+      "how_to_recognise": "You can recognise it by soft, feathery needles on a conifer that stands completely bare in winter. It stands near the main entrance off 40th Street, about 20 metres from the champion hornbeam.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: Bald Cypress, Arsenal Park, Specimen Tree)",
+        "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the needles turn rust before they fall"
+      }
+    },
+    {
+      "id": "pit_006",
+      "name": "The Champion European Hornbeam of Arsenal Park",
+      "species": "Hornbeam (Carpinus betulus)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Arsenal Park, southeast of the flagpole near the 40th Street entrance, Pittsburgh, Pennsylvania",
+        "latitude": 40.4672,
+        "longitude": -79.96065,
+        "neighbourhood": "Lawrenceville"
+      },
+      "story": "Pittsburgh's tree program reckons this hornbeam is good enough for Pennsylvania's state champion register, and has never published a number to back it up. The city's Shade Tree Commission listed it in March 2023 as a Pittsburgh Champion, the commission's own category for the largest, or one of the largest, trees of a species on public property. The Remarkable Trees program goes further: it calls this likely one of the biggest European hornbeams on city land, if not the biggest, and a possible nominee for the state list. That is the program's judgement, not a measurement anyone has released.\n\nHornbeam is a European tree with a reputation for the hardest wood in the forest. It was turned into butchers' blocks and the cogs of mill wheels, and the old English name says as much: horn for hard, beam for tree. The trunk is smooth and grey and ripples like flexed muscle, and many of the dry brown leaves hang on through the winter.\n\nIt stands in Arsenal Park in Lawrenceville, opened on 4 July 1907 on the grounds of the former Allegheny Arsenal. About twenty metres away is a bald cypress listed the same day as a Specimen Tree, so one stop by the 40th Street entrance gives you both.\n\nNo age, height or girth has been published. A tape measure would settle the state question; if you bring one, tell us what it says.",
+      "how_to_recognise": "You can recognise it by the smooth grey trunk, fluted like flexed muscle, and its sharply toothed, pleated leaves. It stands southeast of the flagpole by the 40th Street entrance, about 20 metres from a bald cypress.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: European Hornbeam, Arsenal Park, Champion Tree)",
+        "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      }
+    },
+    {
+      "id": "pit_007",
+      "name": "The Stanton Avenue Bald Cypress",
+      "species": "Bald Cypress (Taxodium distichum)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "6300 block of Stanton Avenue, Highland Park, Pittsburgh, Pennsylvania",
+        "latitude": 40.46914,
+        "longitude": -79.91974,
+        "neighbourhood": "Highland Park"
+      },
+      "story": "The city gave this bald cypress three titles at once. In March 2023 Pittsburgh's Shade Tree Commission listed it as a Giving Tree, for the wildlife it supports and its part in the city's ecosystem; as a Specimen Tree, a notable example of its species on public property; and as a Tree of a Kind, the category for trees unusual in appearance, origin or growth.\n\nThe last one is easy to believe. Bald cypress belongs to the swamps and river bottoms of the American South, where it stands in water for months at a time, and this one grows on Stanton Avenue on the Highland Park side of the city. It is a conifer that behaves like an oak: the soft needles turn copper in autumn and fall, and from late November it stands bare until spring.\n\nFinding it takes a little care. The program lists it on the 6300 block of Stanton Avenue, but the address at the city's own map point reads closer to 6000, and our pin follows the map. The record says it is on public ground without saying whether that is park or street. It is about 1.2 kilometres from the Highland Park ginkgo and black locust, both city champions, which makes the three a reasonable walk.\n\nNobody has published an age, girth or height for it. If it stands outside your window and you know its story, tell us.",
+      "how_to_recognise": "You can recognise it as the conifer on Stanton Avenue whose soft, feathery needles turn copper and fall every autumn. It stands at the pin, on public ground; the listed 6300 block address runs a little off.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: Bald Cypress, Stanton Avenue, Tree of a Kind and Specimen Tree)",
+        "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the needles turn copper before they drop"
+      }
+    },
+    {
+      "id": "pit_008",
+      "name": "The Copper Beech of Frick Park",
+      "species": "Copper Beech (Fagus sylvatica f. purpurea)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Frick Park, reached through the gatehouse at Reynolds and Homewood Streets, Pittsburgh, Pennsylvania",
+        "latitude": 40.446,
+        "longitude": -79.90327,
+        "neighbourhood": "Point Breeze"
+      },
+      "story": "In a park of native green woodland, this beech is the wrong colour on purpose. A copper beech is a form of the European beech whose leaves come out purple instead of green, and in Frick Park that one trait is enough to pick it out from everything growing around it.\n\nPittsburgh's Shade Tree Commission named it a Remarkable Tree in the program's opening round, in March 2023, as a Tree of a Kind, the commission's category for trees unique in appearance, origin or growth. It was listed for what it looks like, not for its size, and no measurement was published.\n\nThe colour moves through the year. The leaves open a glossy purple in spring, darken through the summer, and turn copper before they fall in late autumn. In winter, with the leaves gone, it is a smooth grey beech like any other, which makes that the one season you could walk straight past it.\n\nThe route in is the one the program gives: through the gatehouse at Reynolds and Homewood Streets in Point Breeze. The city's map point for the tree sits on Tranquil Trail, so the path leads you to it. Frick Park is large, public and free, and the sawtooth oak in Westinghouse Park, another tree on the city's list, is about 700 metres away.\n\nNobody has published when this beech was planted, or by whom. If you know, tell us.",
+      "how_to_recognise": "You can recognise it by its leaves, purple where the woodland around it is green, on a smooth grey beech trunk. It stands beside Tranquil Trail, reached through the gatehouse at Reynolds and Homewood Streets.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/22384_stc_meeting_minutes_march_2023.pdf (Shade Tree Commission minutes 2023-03-16: Copper Beech, Frick Park, Tree of a Kind)",
+        "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2023-remarkable-trees/"
+      },
+      "best_time": {
+        "months": [
+          10,
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "late October into November, when the purple leaves turn copper before they fall"
+      }
+    },
+    {
+      "id": "pit_009",
+      "name": "The Champion Ginkgo of Highland Park",
+      "species": "Ginkgo (Ginkgo biloba)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Highland Park, below the super playground, near Reservoir Drive Walk, Pittsburgh, Pennsylvania",
+        "latitude": 40.47979,
+        "longitude": -79.91788,
+        "neighbourhood": "Highland Park"
+      },
+      "story": "Pittsburgh's champion ginkgo grows just below a children's playground in Highland Park. In March 2024 the city's Shade Tree Commission named it a Pittsburgh Champion, the commission's own category for the largest tree of a species on public property, which makes this the biggest ginkgo the city has on record on its own land. It is a city title, not a state or national one.\n\nThe tree is a far older design than anything else in the park. Ginkgo is the last living species of a lineage that goes back to the age of the dinosaurs, and its fan-shaped, notched leaves look almost exactly like fossil leaves laid down many millions of years ago. It comes from China, it shrugs off city air, and it has been planted along streets and in parks across the world.\n\nNovember is its moment. The whole crown turns butter gold, and then, often within a day or two, lets go of nearly every leaf at once, leaving a yellow circle on the grass beneath it.\n\nThe commission did not publish a girth, a height or an age. The title says it is bigger than any other ginkgo on city land; by how much is a question for whoever stands under it with a tape. If that is you, tell us. The city's champion black locust is about 100 metres away, so one visit covers both.",
+      "how_to_recognise": "You can recognise it by its fan-shaped leaves, notched in the middle, unlike any other tree around it, and in November by the gold crown. It stands below the super playground near Reservoir Drive Walk.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Pittsburgh Champion, Ginkgo, Highland Park below super playground)"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+      },
+      "best_time": {
+        "months": [
+          11
+        ],
+        "kind": "autumn colour",
+        "label": "November, when the crown turns butter gold and drops in a day or two"
+      }
+    },
+    {
+      "id": "pit_010",
+      "name": "The Champion Black Locust of Highland Park",
+      "species": "Black Locust (Robinia pseudoacacia)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Highland Park, near Reservoir Drive, Pittsburgh, Pennsylvania",
+        "latitude": 40.48062,
+        "longitude": -79.91763,
+        "neighbourhood": "Highland Park"
+      },
+      "story": "Two of Pittsburgh's champion trees stand about a hundred metres apart in Highland Park, and they could hardly be less alike. One is a ginkgo from China. This one is a black locust, a native of the eastern United States, and in March 2024 the city's Shade Tree Commission named it a Pittsburgh Champion, the commission's own category for the largest tree of a species on public property.\n\nBlack locust is a tough, fast-growing member of the pea family. Its roots fix their own nitrogen, so it thrives on poor ground, and its timber resists rot so well that it has long been split into fence posts. The bark runs in deep, rope-like ridges, and the twigs carry short paired thorns.\n\nIts moment comes at the turn of May and June, when the crown hangs with clusters of white pea flowers, heavily scented, for about a fortnight. Stand under it then and you will smell it before you see it.\n\nTwo honest cautions. The pin is approximate: black locusts are common and look much alike, and the city's map places this one near the reservoir rather than at a marked spot. Trees on the Highland Park Reservoir embankment have also been the subject of a removal dispute under state dam-safety rules; nothing ties this tree to it, but if you find it gone, tell us.\n\nNo age, girth or height has been published.",
+      "how_to_recognise": "You can recognise it by its size, the largest black locust the city knows of on public land, and its deep rope-like bark ridges. It stands near Reservoir Drive, about 100 metres from the champion ginkgo.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Pittsburgh Champion, Black Locust, Highland Park)"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+      },
+      "best_time": {
+        "months": [
+          5,
+          6
+        ],
+        "kind": "flowers",
+        "label": "late May into June, when it hangs with scented white flowers"
+      }
+    },
+    {
+      "id": "pit_011",
+      "name": "The Champion American Elm of Allegheny Commons",
+      "species": "American Elm (Ulmus americana)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Allegheny Commons, West North Avenue, Pittsburgh, Pennsylvania",
+        "latitude": 40.453823,
+        "longitude": -80.011632,
+        "neighbourhood": "Allegheny Center"
+      },
+      "story": "Dutch elm disease killed most of the great American elms that once arched over the streets of the eastern United States. In March 2024 Pittsburgh's Shade Tree Commission named this one, in Allegheny Commons on the North Side, a Pittsburgh Champion: the commission's own category for the largest tree of a species on public property.\n\nThat makes it a rare thing to see at size. The disease is a fungus carried from tree to tree by bark beetles, and once it reached North America in the twentieth century it went through the country's favourite street tree for decades. Plenty of American elms are still planted and still standing, but a champion-sized one is the exception.\n\nHow this one came through, nobody has published. The commission did not record its age, girth or height, and we will not guess at a story nobody has told.\n\nAllegheny Commons is a long, narrow public park, free to walk, and it holds a good many elms among its other trees. Our pin is approximate, near West North Avenue, so size is your best guide: the champion should be the biggest American elm in the park. American elm leaves are lopsided at the base and double-toothed along the edge, and in October they turn yellow.\n\nIf you know this tree, its age or its measurements, tell us. A city champion deserves a number.",
+      "how_to_recognise": "You can recognise it by its size: it is the largest American elm the city knows of on public land, so look for the biggest elm in the Commons. It stands on the West North Avenue side of the park.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Pittsburgh Champion, American Elm, Allegheny Commons)"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "approximate",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
+      }
+    },
+    {
+      "id": "pit_016",
+      "name": "The Witness Sawtooth Oak of Westinghouse Park",
+      "species": "Sawtooth Oak (Quercus acutissima)",
+      "age_estimate": "not documented",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": null,
+      "location": {
+        "address": "Westinghouse Park, North Murtland Street, Pittsburgh, Pennsylvania",
+        "latitude": 40.45256,
+        "longitude": -79.90428,
+        "neighbourhood": "Point Breeze North"
+      },
+      "story": "This oak was named a Witness Tree, and the record does not say what it witnessed. Pittsburgh's Shade Tree Commission gave it that title in March 2024, the category the city's Remarkable Trees program keeps for trees of historical or cultural significance. The commission's minutes name the species and the park, and stop there.\n\nIt is the odd one out in other ways too. A sawtooth oak is not American. Quercus acutissima comes from East Asia, and its leaves look more like a chestnut's than an oak's: long, narrow and glossy, with a neat row of bristle-tipped teeth down each edge. The acorns sit in shaggy, fringed cups. Among the native trees of the park, it is easy to pick out once you know what you are looking for.\n\nWestinghouse Park, in Point Breeze North, is named for George Westinghouse, the inventor of the railway air brake, who built his companies in Pittsburgh. Whether this tree's significance has anything to do with him, no source we have says, and we will not guess.\n\nThe pin is a tree-level point from the city's own map, near North Murtland Street. The copper beech in Frick Park, another tree on the city's list, is about 700 metres away, so the two make a short walk.\n\nNo age, girth or height has been published. If you know why this oak was chosen as a witness, or what it has seen, tell us: that is the story this page is still missing.",
+      "how_to_recognise": "You can recognise it by its leaves, long and glossy like a chestnut's with bristle-tipped teeth, and its acorns in shaggy cups, unlike the park's native oaks. It stands near North Murtland Street.",
+      "verified_sources": [
+        "https://www.pittsburghpa.gov/files/assets/city/v/1/bac/documents/stc/24845_stc_meeting_minutes_march_2024.pdf (Shade Tree Commission minutes 2024-03-21: Witness Tree, Sawtooth Oak, Westinghouse Park)"
+      ],
+      "access": "Free; public city park, no admission. Opening hours not checked in this pass.",
+      "transport": "Public transit (Pittsburgh Regional Transit buses serve the area); nearest stop and walk time not verified in this pass.",
+      "photo": {
+        "url": null,
+        "license": null,
+        "attribution": null,
+        "status": "missing"
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "City of Pittsburgh Shade Tree Commission / Tree Pittsburgh Remarkable Trees map, tree-level point for this designated specimen (coordinate used as a fact only; no text or photo taken from the program). Reverse geocode (Nominatim/OSM) used for the street name only.",
+      "official_register": {
+        "name": "City of Pittsburgh Shade Tree Commission, Remarkable Trees of Pittsburgh",
+        "url": "https://remarkabletreespgh.com/2024-remarkable-trees/"
       }
     }
   ]
