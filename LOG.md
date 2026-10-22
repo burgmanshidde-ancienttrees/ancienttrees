@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run, later attempt: San Francisco +1, Studena new
+
+- **Live:** San Francisco 10 to 11: the Presidio Centennial Tree (1876 blue gum, approximate pin, no photograph yet; Commons has two CC BY-SA candidates to check). New one-tree place Studena (Grandpa Kolyo's Oak, Tree of the Year), out of Google until four. Preflight 0 problems. san-francisco claim released.
+- **Held:** ftw_018 (public ground unknown), inn_007 (pin on a private building), Pittsburgh READY four (school grounds, indistinguishable pins), Rothenburg/Rotterdam/Leiden (walls). Leiden Jan Wolkersboom oak could ship once its wall expires.
+- **Open:** city_names.py cannot resolve Studena (no Wikipedia article); sfo_011 transport still says "(stop not verified)".
+
 ## 2026-10-22 night run (01:38 UTC window): Potsdam +3 trees
 
 - **Live:** Potsdam goes from 15 to 18 trees: the pollarded linden of Fahrland, the Babelsberger Strasse oak and the Nattwerder lindens (register-only, no photographs yet, confirmed pins). German overlay and counts updated. Preflight 0 problems. 7-day visits line not printed by prepare.py this run.
