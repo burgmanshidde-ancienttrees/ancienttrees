@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 fourth attempt: nothing to ship, deploy still not dispatched
+
+No product change. No claims stood. Reader inbox empty. READY leads are only Oxford 2 and Madrid 1 (own supply, paused, no write pass). `photo_hunt.py --recheck` swept the kept set again: 0 new candidates, nothing left unchecked. The Brisbane hero fix (bd86678a6) is on main, but both push-triggered deploys were "skipped" and `gh workflow run deploy.yml` returns 403 from this token, so the site is still not confirmed rebuilt. For Hidde: dispatch Build and deploy once (or let the next knock do it) and check that it goes green.
+
 ## 2026-10-22 19:41 window: deploy fix (Brisbane hero), nothing else to publish
 
 Rung 2: the Build and deploy run of 18:05 failed on qa's soft-hero check (Brisbane hero, the City Botanic Gardens banyan, was the 500px iNaturalist rendition while 3648px photos sit elsewhere in the city). Switched that same photograph to its 1024px `large.jpg` rendition (checked 200 OK) in data/cities/brisbane.json, preflight 0 problems, pushed as bd86678a6. The push's deploy run came back "skipped" in 9s, so the site is not yet confirmed rebuilt: the next run should check `gh run list --workflow=deploy.yml` and dispatch a deploy if it is still red. qa.py cannot run here (no site/dist, build is refused). No reader submissions waiting. `photo_hunt.py --recheck` swept 40 kept-set trees: 0 new candidates. Enrichment says nothing to do; own supply is paused, so the 54 awaiting-writer trees and READY leads were not touched. Nothing else shipped.
