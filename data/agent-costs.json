@@ -52,6 +52,22 @@
    },
    {
     "date": "2026-10-22",
+    "target": "seattle",
+    "kind": "verify",
+    "tokens": 72000,
+    "trees": 9,
+    "note": "sea_022 to sea_030, SDOT Heritage register, private frontage, one source each, flagged"
+   },
+   {
+    "date": "2026-10-22",
+    "target": "seattle",
+    "kind": "write",
+    "tokens": 130000,
+    "trees": 9,
+    "note": "sea_022 to sea_030 merged, none held; Castanea sativa renamed Sweet Chestnut; intro, question_context counts and free-to-visit FAQ updated"
+   },
+   {
+    "date": "2026-10-22",
     "target": "glasgow+san-francisco+washington-dc+pittsburgh",
     "kind": "verify",
     "tokens": 56000,
