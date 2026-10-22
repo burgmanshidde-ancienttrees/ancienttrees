@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-22 night run (second retry): cap still holds, Inverness retried
+
+No claims standing; 3 READY leads (two Oxford, one Madrid) have no approved photograph so none ships. 15 written trees (photo-batch-2 10, texas-famous 4, ftw_018) wait only on the 24-hour pace cap, as do the 11 held city files in data/research/held-pace-2026-10-22/ (add college-station, coppell, goliad to data/us-states.json when restoring). Inverness register retry: Wikidata has no tree items inside it, still stalled, noted. Munich photo recheck repeated the earlier result (muc_022, 026, 027, 037 candidates await a photo-judge pass). No trees added.
+
 ## 2026-10-22 night run (retry, 15:00): photo lane while the pace cap holds
 
 Resolved a LOG.md rebase conflict. The pace cap still holds 54 verified trees, so I added no verify or write passes. Munich photo recheck found 7 new candidates (muc_022, 026, 027, 037); a photo-judge pass was dispatched on them. Tulsa register retry: still no county list, only the Creek Council Oak, noted in data/register-scouting.json. No trees added.
