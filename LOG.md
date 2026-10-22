@@ -15,7 +15,8 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 - **Live:** Potsdam goes from 15 to 18 trees: the pollarded linden of Fahrland, the Babelsberger Strasse oak and the Nattwerder lindens (register-only, no photographs yet, confirmed pins). German overlay and counts updated. Preflight 0 problems. 7-day visits line not printed by prepare.py this run.
 - **Live:** Frankfurt 20 to 21: the Jahn Oak in Offenbach (confirmed pin, CC0 photograph looked at and approved, so Google can show it). Rumpenheim ginkgos stay a lead (approximate pin, not findable). frankfurt.de returned 403 for three more candidates (Untermainkai ironwoods, zoo bald cypresses, Liebfrauenschule mulberry). Portland refused to claim: already over its target.
-- **Wall:** Rothenburg ob der Tauber verified empty (near register trees already live or blocked; Bettwar and Insingen lindens stay leads), walled 48h.
+- **Photo:** pot_017 (Babelsberger Strasse oak) approved after viewing: Commons "Haplochromis", CC BY-SA 4.0, on-pin geotag, the Wikidata photo. Four others rejected (sapling, wrong street, plaque, pavement shot of a possibly different trunk). Reversal: `photo_apply.py hold pot_017 <url> --reason revert`. photo_light.py cannot run here (no Pillow), judged by eye.
+- **Wall:** Leiden verified empty again: Endegeest linden and Wolkers oak are strong but have no photograph or confirmed pin (NL rule), kept as leads. Rothenburg ob der Tauber verified empty (near register trees already live or blocked; Bettwar and Insingen lindens stay leads), walled 48h.
 - **Health:** the Smoke test BLOCKER is the push-trigger skip (1s, by its condition), Build and deploy succeeded; answered with health.py --answer. No reader submissions waiting.
 
 ## 2026-10-22 night run (22:59 UTC window): three photographs approved

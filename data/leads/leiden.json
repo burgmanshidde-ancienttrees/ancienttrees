@@ -190,6 +190,38 @@
    "how_to_recognise": "You can recognise it as the only weeping willow in the park, apart from the two big planes and the silver maples. It stands at the water's edge beside the statue of Pieter van der Werff.",
    "removed": "2026-10-10",
    "removed_reason": "Dead or felled per the register itself: Landelijk Register Monumentale Bomen nr 1690139 carries status 5, Dood/geveld (checked 2026-10-10 against the Bomenstichting ArcGIS layer). Inspector remark: \"Span en stormankers en dood hout. Zwavelzwam op de stam ca 1 meter boven met beton gevulde wond.\" Removed under the rule that a dead tree is never a collectible entry."
+  },
+  {
+   "name": "De linde van Endegeest (LRMB 1694858)",
+   "species": "Tilia x europaea",
+   "lat": 52.173002,
+   "lng": 4.462899,
+   "status": "lead",
+   "why": "2026-10-22 verify pass. Register planted 1648 (Bomenstichting, 4th in Zuid-Holland top 10, Oegstgeester Courant 2018-03-06: 565 cm girth, 20 m; Dendrologische Vereniging questions the planting year, monumentaltrees age 378 +/-10 from 2017, a 2023 girth of 558 cm is cited). In front of Kasteel Endegeest, Oegstgeest (5 km from the Leiden walk, bus). Alive: MEC Oegstgeest 2025-11 page says the linden in front of the castle is almost 400 years old (guided walk 9 Nov 2025). Access: estate semi-public, council-hosted walking route passes it, parts being redeveloped; unsure. Held because NL is a covered country and there is no photograph (Commons has none) and no confirmed pin (register coordinate only). Would ship with a photo or GPS fix; age 300-400, girth 558-570 cm."
+  },
+  {
+   "name": "Jan Wolkersboom, zomereik Oud Poelgeest (LRMB 1692873)",
+   "species": "Quercus robur",
+   "lat": 52.178498,
+   "lng": 4.48532,
+   "status": "lead",
+   "why": "2026-10-22 verify pass. Oak at the water by the IJsclub Oegstgeest ice rink beside Oud Poelgeest and the MEC; Jan Wolkers drew it in the 1944-45 hunger winter (Werkkleding). Bomenstichting: 467 cm girth, 15 m, 1800-1850 by old photos; register says 1890-1900; council (centraalplus 2026-09-02) says over 120 years: ages conflict, record both. Alive: council article 2026-09-02 names it as a current example; MEC ommetje says it still stands. Outside the estate, by the ice rink path, apparently free to see. Held because NL covered country: no photograph on Commons and only a register coordinate, no confirmed pin."
+  },
+  {
+   "name": "Wilhelminalinde Stadspark (LRMB 1690112)",
+   "species": "Tilia x europaea",
+   "lat": 52.154688,
+   "lng": 4.502386,
+   "status": "lead",
+   "why": "2026-10-22 verify pass. Coronation linden of 1898 in the Plantsoen (hetplantsoen.nl: planted 1898 for the Kroningsfeesten), 20 m from the published Old Plane lei_009. No alive evidence (lifecheck NONE); one regional article hints that such trees were replaced in spring after dying the first winter, not tied to Leiden. No photo, register coordinate only. Young for the site; low priority."
+  },
+  {
+   "name": "Moerascypres Van der Werfpark (LRMB 1690138), update",
+   "species": "Taxodium distichum",
+   "lat": 52.15577,
+   "lng": 4.49111,
+   "status": "lead",
+   "why": "2026-10-22 verify pass, second look. monumentaltrees (cross-check only, 403 to fetch) lists a swamp cypress in the park at 333 cm girth; no alive evidence from the last years found (lifecheck RECENT hit was a daisy, not the tree), no photo, no confirmed pin. Stays a lead."
   }
  ]
 }

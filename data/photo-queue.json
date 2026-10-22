@@ -36120,7 +36120,7 @@
   "pot_001": {
    "city": "Potsdam",
    "name": "The Linden of Park Jagdschloss Glienicke",
-   "checked": "2026-10-14",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -36154,14 +36154,14 @@
   "pot_002": {
    "city": "Potsdam",
    "name": "The King's Linden",
-   "checked": "2026-10-14",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
   "pot_003": {
    "city": "Potsdam",
    "name": "The Schlosspark Glienicke Oak",
-   "checked": "2026-10-14",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -36195,7 +36195,7 @@
   "pot_004": {
    "city": "Potsdam",
    "name": "The Jägerhof Oak",
-   "checked": "2026-10-14",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": []
   },
@@ -124633,7 +124633,7 @@
   "pot_007": {
    "city": "Potsdam",
    "name": "The Lime of Weberplatz",
-   "checked": "2026-10-14",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -124680,7 +124680,9 @@
      "author": "Kvikk",
      "lat": null,
      "lng": null,
-     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Potsdam Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Self-published work Category:Weberplatz (Potsdam) Category:Weberviertel (Babelsberg)"
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Potsdam Category:Files with coordinates missing SDC location of creation Category:On OSM Category:Self-published work Category:Weberplatz (Potsdam) Category:Weberviertel (Babelsberg)",
+     "judged": "reject",
+     "verdict": "House facade with a newly planted staked sapling, not the 380 cm lime by the church sacristy"
     }
    ]
   },
@@ -124768,7 +124770,7 @@
   "pot_009": {
    "city": "Potsdam",
    "name": "The Oaks of the Jungfernsee",
-   "checked": "2026-10-14",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -141227,7 +141229,7 @@
   "pot_011": {
    "city": "Potsdam",
    "name": "The Three Oaks of the Weinmeisterweg",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "sweep": 5,
    "candidates": [
     {
@@ -141985,6 +141987,95 @@
      "cats": "Category:2018 in Flushing, Queens Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:NRHP site pictures by user:CaptJayRuffins Category:New York City photographs taken on 2018-10-10 Category:Self-published work Category:Trees in Queens, New York City Category:Unidentified Fagus Category:Weeping Beech Park"
     }
    ]
+  },
+  "pot_015": {
+   "city": "Potsdam",
+   "name": "The Beech of the Königswald, Sacrow",
+   "checked": "2026-10-22",
+   "sweep": 5,
+   "candidates": []
+  },
+  "pot_016": {
+   "city": "Potsdam",
+   "name": "The Pollarded Linden of Fahrland",
+   "checked": "2026-10-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Potsdam OT Neu Fahrland Am Lehnitzsee 8 Baudenkmal.JPG",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Potsdam_OT_Neu_Fahrland_Am_Lehnitzsee_8_Baudenkmal.JPG/960px-Potsdam_OT_Neu_Fahrland_Am_Lehnitzsee_8_Baudenkmal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Potsdam_OT_Neu_Fahrland_Am_Lehnitzsee_8_Baudenkmal.JPG",
+     "licence": "CC BY-SA 3.0",
+     "author": "Norhei",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-3.0 Category:Cultural heritage monuments in Potsdam Category:Neu Fahrland Category:Self-published work Category:Taken with Canon EOS 400D Category:Villas in Potsdam",
+     "judged": "reject",
+     "verdict": "Street of villas in Neu Fahrland (Am Lehnitzsee), bare birches; no pollarded lime, wrong street"
+    }
+   ]
+  },
+  "pot_017": {
+   "city": "Potsdam",
+   "name": "The Oak of Babelsberger Strasse",
+   "checked": "2026-10-22",
+   "sweep": 5,
+   "candidates": [
+    {
+     "title": "File:Naturdenkmal Nr. 36 Stiel-Eiche an der Babelsberger Straße.jpg (Wikidata Q106393714)",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Naturdenkmal_Nr._36_Stiel-Eiche_an_der_Babelsberger_Stra%C3%9Fe.jpg/960px-Naturdenkmal_Nr._36_Stiel-Eiche_an_der_Babelsberger_Stra%C3%9Fe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr._36_Stiel-Eiche_an_der_Babelsberger_Stra%C3%9Fe.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Haplochromis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche (Babelsberger Straße, Potsdam) Category:On OSM Category:Photographs by Alex Giltjes Category:Quercus in Brandenburg in December 2020 Category:Quercus robur in the Northern Hemisphere in December 2020 Category:Self-published work",
+     "source": "wikidata/Q106393714",
+     "judged": "approve",
+     "verdict": "Named Naturdenkmal Nr. 36, Wikidata P18, file coordinate on our pin; deep-furrowed oak bark, zigzag crown, broad trunk on a lawn between housing blocks; sunny daylight, fills frame"
+    },
+    {
+     "title": "File:20240128 xl 0856-Naturdenkmal an der Babelsberger Straße.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/20240128_xl_0856-Naturdenkmal_an_der_Babelsberger_Stra%C3%9Fe.jpg/960px-20240128_xl_0856-Naturdenkmal_an_der_Babelsberger_Stra%C3%9Fe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20240128_xl_0856-Naturdenkmal_an_der_Babelsberger_Stra%C3%9Fe.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Molgreen",
+     "lat": 52.39262222,
+     "lng": 13.07005556,
+     "cats": "Category:Brandenburg photographs taken on 2024-01-28 Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche (Babelsberger Straße, Potsdam) Category:On OSM Category:Quercus in Brandenburg in January 2024 Category:Quercus robur in January 2024 Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "Half the frame is pavement and railing; camera geotag ~80 m west of the pin facing west (282), so possibly another trunk"
+    },
+    {
+     "title": "File:20240128 xl 0856-Naturdenkmal an der Babelsberger Straße Kennzeichnung.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/20240128_xl_0856-Naturdenkmal_an_der_Babelsberger_Stra%C3%9Fe_Kennzeichnung.jpg/960px-20240128_xl_0856-Naturdenkmal_an_der_Babelsberger_Stra%C3%9Fe_Kennzeichnung.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:20240128_xl_0856-Naturdenkmal_an_der_Babelsberger_Stra%C3%9Fe_Kennzeichnung.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Molgreen",
+     "lat": 52.39266389,
+     "lng": 13.07029722,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Germany photographs taken on 2024-01-28 Category:Naturdenkmal Stieleiche (Babelsberger Straße, Potsdam) Category:Nature reserve signs in Brandenburg Category:Nature reserve signs in Potsdam Category:Self-published work Category:Uploaded with Mobile/Android",
+     "judged": "reject",
+     "verdict": "Close-up of the Naturdenkmal owl plaque on bark, not the tree"
+    },
+    {
+     "title": "File:Naturdenkmal Nr. 36 Stiel-Eiche an der Babelsberger Straße.jpg",
+     "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Naturdenkmal_Nr._36_Stiel-Eiche_an_der_Babelsberger_Stra%C3%9Fe.jpg/960px-Naturdenkmal_Nr._36_Stiel-Eiche_an_der_Babelsberger_Stra%C3%9Fe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "url": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Nr._36_Stiel-Eiche_an_der_Babelsberger_Stra%C3%9Fe.jpg",
+     "licence": "CC BY-SA 4.0",
+     "author": "Haplochromis",
+     "lat": null,
+     "lng": null,
+     "cats": "Category:CC-BY-SA-4.0 Category:Files with coordinates missing SDC location of creation Category:Naturdenkmal Stieleiche (Babelsberger Straße, Potsdam) Category:On OSM Category:Photographs by Alex Giltjes Category:Quercus in Brandenburg in December 2020 Category:Quercus robur in the Northern Hemisphere in December 2020 Category:Self-published work"
+    }
+   ]
+  },
+  "pot_018": {
+   "city": "Potsdam",
+   "name": "The Lindens of Nattwerder",
+   "checked": "2026-10-22",
+   "sweep": 5,
+   "candidates": []
   }
  },
  "notes": [
