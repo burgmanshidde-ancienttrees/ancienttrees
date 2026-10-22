@@ -1,0 +1,3 @@
+# Catania scouting, 2026-10-22
+
+No new register: Sicily's regional elenco equals MASAF (see data/register-scouting.json, Sicily and Catania entries). Licence CC BY 4.0 per data/registers/italy-masaf.json. Register trees within 25 km of Catania centre were listed from data/registers/italy-masaf.json (Haversine from 37.5079, 15.0830); 5 in the city (Villa Bellini x3, Via Etnea 397 dracaena, Villa San Saverio fig), 15 more at 7-24 km. Existing leads in data/leads/catania.json cover the nearest ones; unworked pointers: Trecastagni Santa Maria dei Tremonti oak (01/L355/CT/19, 380 cm, 13.8 km), Zafferana Acquarocca degli Zappini beech (02/M139/CT/19, 630 cm, 22 km). No fetches made this pass.
