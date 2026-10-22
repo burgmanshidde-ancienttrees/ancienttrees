@@ -1,0 +1,604 @@
+[
+ {
+  "id": "mhf_001",
+  "name": "Adam Tree",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "location": {
+   "address": "Mountain Home Grove, Mountain Home Demonstration State Forest area, Tulare County, California",
+   "latitude": 36.2434,
+   "longitude": -118.673,
+   "neighbourhood": "Mountain Home Grove"
+  },
+  "location_precision": "approximate",
+  "girth_cm": 2900,
+  "access": "Free; in the Mountain Home Grove (CAL FIRE demonstration forest / Balch Park / Giant Sequoia National Monument land). Reached on foot inside the grove; the exact trail and seasonal road status were not confirmed from a fetched official page, so say 'check with CAL FIRE or Tulare County before going'.",
+  "transport": "No public transport. Nearest town Springville, California, by car on mountain roads.",
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Adam_Tree",
+   "https://en.wikipedia.org/wiki/Mountain_Home_Grove",
+   "https://sequoiaquest.com/mountain-home-june-25-27-2021.html",
+   "https://www.ilovetrees.net/mountain-home-castle-fire/",
+   "https://www.wikidata.org/wiki/Q4678611"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Adam_Tree_-_Mountain_Home_Grove.jpg",
+   "license": "CC BY-SA 3.0",
+   "attribution": "Mikesclark",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Adam_Tree_-_Mountain_Home_Grove.jpg",
+   "status": "approved",
+   "width": 1325,
+   "height": 2000
+  },
+  "alive_basis": "Sequoia Quest trip report, 25-27 June 2021, after the Castle Fire: 'looks virtually untouched'. ilovetrees.net (post June 2021, modified May 2023): 'blackened base, undermined, but ok'. No source after 2023 found.",
+  "place": "Mountain Home Grove (near Springville, Tulare County)",
+  "place_note": "Stands alone; no published city nearby known to this pass (check backlog.py by distance). Pairs with Genesis Tree (usb1_002) in the same grove.",
+  "curation_status": "flagged",
+  "_city": "Mountain Home State Forest",
+  "_slug": "mountain-home-state-forest",
+  "story": "The Adam Tree was the largest sequoia in Mountain Home Grove for exactly as long as nobody had measured Genesis. Jesse Hoskins named it around 1884, and in 1978 the tree surveyors Flint and Law put numbers on it: 29 metres round and 991.6 cubic metres of wood. Seven years later the same pair measured Genesis, elsewhere in the grove, and Adam slipped to second place at home. Ranked against every giant sequoia known, it now sits 20th or 21st; the lists disagree by one place.\n\nThe Castle Fire burned through Mountain Home in 2020 and took the top off Genesis. Adam came off far better. A visitor who walked the grove in June 2021 wrote that it looked virtually untouched; another account describes a blackened, undermined base on a tree that was otherwise fine. Both are hobbyist trip reports, and we have found nothing written about it since 2023, so its present state rests on their word.\n\nThe grove is free to enter. Getting here is a drive on mountain roads from Springville, with no bus, and we could not confirm the trail to the tree or whether the road is open in a given month, so check with CAL FIRE or Tulare County before you set out.\n\nNobody has published an age for the Adam Tree. If you know how old it is, or you have stood under it since the fire, tell us.",
+  "how_to_recognise": "You can recognise it by the trunk, 29 metres round when measured in 1978, the second-largest sequoia in the grove after Genesis. It stands in Mountain Home Grove, north of Genesis."
+ },
+ {
+  "id": "mhf_002",
+  "name": "Genesis Tree",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "location": {
+   "address": "Mountain Home Grove, Mountain Home Demonstration State Forest, Tulare County, California",
+   "latitude": 36.215119,
+   "longitude": -118.669395,
+   "neighbourhood": "Mountain Home Grove"
+  },
+  "location_precision": "approximate",
+  "girth_cm": 2404,
+  "height_m": 86.2,
+  "access": "Free; inside Mountain Home Demonstration State Forest (CAL FIRE). Reached on foot in the grove; trail and seasonal road status not confirmed from a fetched official page (cal fire page returned 403).",
+  "transport": "No public transport. Nearest town Springville, California, by car.",
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Genesis_Tree",
+   "https://en.wikipedia.org/wiki/Mountain_Home_Grove",
+   "https://sequoiaquest.com/mountain-home-june-25-27-2021.html",
+   "https://www.ilovetrees.net/mountain-home-castle-fire/",
+   "https://www.wikidata.org/wiki/Q5532789"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Genesis_tree.jpg",
+   "license": "CC BY-SA 3.0",
+   "attribution": "Mikesclark",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Genesis_tree.jpg",
+   "status": "approved",
+   "width": 1688,
+   "height": 3000
+  },
+  "alive_basis": "ALIVE BUT DAMAGED, evidence only to 2021: Sequoia Quest trip report June 2021 and ilovetrees.net (post June 2021, modified May 2023) both list it as heavily damaged by the Castle Fire (2020), lost top and many branches, badly burned base; neither says it is dead. No source after 2023 found, so status is 'no recent source'. A later viewing or a CAL FIRE check could settle whether it is declining.",
+  "place": "Mountain Home Grove (near Springville, Tulare County)",
+  "place_note": "Stands alone; shares the grove with Adam Tree (usb1_001).",
+  "curation_status": "flagged",
+  "_city": "Mountain Home State Forest",
+  "_slug": "mountain-home-state-forest",
+  "story": "Before the 2020 Castle Fire, Genesis ranked seventh among the largest trees known on Earth. Then the fire came through Mountain Home Grove, and the figures on this page became history.\n\nThe name came late. The tree surveyors Flint and Law named and measured it in 1985, a century after the neighbouring Adam Tree had been named, and promptly demoted Adam to second-largest in the grove. The last full measurement, from 2013, gave Genesis a height of 86.2 metres and a girth of 24.04 metres at chest height. Read both numbers as a record of the tree before the fire. It is shorter now, by an amount nobody has published.\n\nTwo visitors who walked the grove in 2021 described the damage the same way: the top gone, many branches lost, the base badly burned. Neither said it was dead. That is also the most recent word we have; nothing written since 2023 says whether Genesis is holding on or declining. If you have seen it lately, we would like to know.\n\nThe grove is part of a state demonstration forest run by CAL FIRE and is free to enter. It is a drive on mountain roads from Springville with no public transport, and we could not confirm the trail or the road's season, so check with CAL FIRE before you go. No age has been published for it either.",
+  "how_to_recognise": "You can recognise it by the fire damage on the grove's largest sequoia: a badly burned base and a crown that lost its top in 2020. It stands in Mountain Home Grove, south of the Adam Tree."
+ },
+ {
+  "id": "kcy_004",
+  "name": "Hart Tree",
+  "species": "Giant Sequoia (Sequoiadendron giganteum)",
+  "location": {
+   "address": "Redwood Mountain Grove, Kings Canyon National Park, Fresno County, California",
+   "latitude": 36.6952,
+   "longitude": -118.891,
+   "neighbourhood": "Redwood Mountain Grove"
+  },
+  "location_precision": "approximate",
+  "access": "Free to walk (park entry fee for Kings Canyon NP applies, amount not verified here). Reached by the Redwood Canyon trail loop (Hart Tree, Sugar Bowl, Big Springs). NPS trail condition entry dated 18 June 2026: maintained trail cleared from the trailhead down Redwood Creek; other routes densely overgrown with extreme fire damage from the 2021 KNP Complex Fire. Seasonal dirt road, not accessible by vehicle in winter.",
+  "transport": "No public transport. By car to the Redwood Canyon trailhead on the Generals Highway; walking distance of the loop not recorded in a fetched source.",
+  "verified_sources": [
+   "https://www.nps.gov/seki/two-sequoia-groves-and-a-wildfire.htm",
+   "https://www.nps.gov/seki/planyourvisit/trailcond.htm",
+   "https://en.wikipedia.org/wiki/Hart_Tree",
+   "https://www.wikidata.org/wiki/Q5674087"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Hart_Tree_%281%29.JPG",
+   "license": "CC BY-SA 3.0",
+   "attribution": "DiverDave",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Hart_Tree_%281%29.JPG",
+   "status": "approved",
+   "width": 1200,
+   "height": 1600
+  },
+  "alive_basis": "NPS 'Two Sequoia Groves and a Wildfire': Hart Tree 'overall in good shape with numerous green branches remaining', photo caption dated 26 July 2022, after the 2021 KNP Complex Fire. NPS trail conditions entry 18 June 2026 for the Redwood Canyon loop.",
+  "place": "Redwood Mountain Grove, Kings Canyon National Park",
+  "place_note": "Stands alone, on a hike; nearest published place not checked. 37 m north of the Roosevelt Tree, which died in the 2021 KNP Complex fire per Wikipedia (do not confuse).",
+  "curation_status": "ai_generated",
+  "_city": "Kings Canyon National Park",
+  "_slug": "kings-canyon-national-park",
+  "story": "The Hart Tree came through the 2021 KNP Complex Fire with green branches to spare. The Roosevelt Tree, 37 metres to the south, did not survive it.\n\nMichael Hart found this sequoia around 1880, and it still carries his name. It holds about 980 cubic metres of wood, which ranks it 24th or 25th among all known giant sequoias, depending on whose list you read. Nobody we could find has published its height or girth, and nobody has published an age.\n\nThe fire swept through Redwood Mountain Grove in 2021. When the National Park Service went back to look, the photograph it published from July 2022 showed the Hart Tree overall in good shape, with numerous green branches remaining. Its neighbour was dead. That contrast is the reason to make the walk: two giants of the same grove, one standing and one gone, a short stone's throw apart.\n\nYou reach it on foot by the Redwood Canyon loop, the trail that also passes the Sugar Bowl and Big Springs. In June 2026 the park reported the maintained trail cleared from the trailhead down Redwood Creek, while the other routes were densely overgrown and badly fire-damaged. The trailhead is down a dirt road off the Generals Highway that closes to cars in winter, and the Kings Canyon park entry fee applies. If you know how old it is, tell us.",
+  "how_to_recognise": "You can recognise it as the living sequoia at the end of the Hart Tree Trail, green branches still on it after the 2021 fire. It stands 37 metres north of the Roosevelt Tree, which died in that fire."
+ },
+ {
+  "id": "snf_001",
+  "name": "Bennett Juniper",
+  "species": "Grand Juniper (Juniperus grandis)",
+  "age_estimate": "roughly 3,000 years (disputed)",
+  "age_basis": "source",
+  "girth_cm": 1216,
+  "height_m": 24,
+  "location": {
+   "address": "Sardine Meadow, Stanislaus National Forest inholding, Tuolumne County, California",
+   "latitude": 38.30911667,
+   "longitude": -119.7971,
+   "neighbourhood": "Sardine Meadow"
+  },
+  "location_precision": "approximate",
+  "access": "Free. Three-acre preserve on a Stanislaus National Forest inholding, owned by Mother Lode Land Trust since Nov 2022. Reached by unpaved Forest Service road 5N83Y/5N83YB off 5N01 to a pull-around with a short walking path and signs (Trails Offroad). High clearance needed; road closed by snow in winter (OnX listing: seasonal, 15 April to 15 December, seen only in a search summary).",
+  "transport": "No public transport. By car from Pinecrest (Forest Service field trip in October 2025 started at Summit Ranger Station, Pinecrest) on rough dirt roads, high clearance.",
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Bennett_Juniper",
+   "https://www.trailsoffroad.com/US/california/scout-routes/4981-bennett-juniper-road",
+   "https://www.wikidata.org/wiki/Q20857822"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Bennett_Juniper_south_side.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Dave Bunnell",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Bennett_Juniper_south_side.jpg",
+   "status": "approved",
+   "width": 5133,
+   "height": 7414
+  },
+  "alive_basis": "Wikipedia: saved from the 2018 Donnell Fire, property transferred to Mother Lode Land Trust Nov 2022; Stanislaus National Forest listed a field trip to the tree for 3 October 2025 (seen only in a search summary; the fs.usda.gov page returned 403). Commons photo 2017.",
+  "place": "Sardine Meadow, Stanislaus National Forest (near Pinecrest)",
+  "place_note": "Stands alone, remote. Not near a published city to this pass's knowledge.",
+  "curation_status": "flagged",
+  "_city": "Stanislaus National Forest",
+  "_slug": "stanislaus-national-forest",
+  "story": "The largest known juniper in the United States stands in a three-acre clearing at the end of a rough forest road. By the American Forests points formula the Bennett Juniper scores 573: a trunk about 3.9 metres across and 24 metres tall.\n\nHow old it is depends on who you ask. A core taken in the 1930s by Glock suggested about 3,000 years; another, taken in 1989 by Peter Brown, said almost 3,000. Neither could reach the middle, because the tree is partly hollow. The man it is named after, Bennett, believed it was over 6,000 years old, by extrapolation rather than by any core. Read 3,000 as the best working figure and the rest as a dispute that cannot be settled without the missing wood.\n\nEven its species has moved. It was long counted a western juniper; the USDA now places it in the grand juniper, and a 2001 University of California Press book calls it a mountain juniper. It came through the 2018 Donnell Fire, and in November 2022 the ground passed to the Mother Lode Land Trust, which looks after it as a preserve inside Stanislaus National Forest.\n\nMost of what we know comes from one family of sources, so take the details as reported rather than settled. Getting there takes high clearance on unpaved Forest Service roads from the Pinecrest side, and snow closes them in winter. Entry is free.",
+  "how_to_recognise": "You can recognise it by the trunk, about 3.9 metres across, in a signed three-acre preserve. It stands at the end of a short walking path from the pull-around on Forest Road 5N83Y in Sardine Meadow."
+ },
+ {
+  "id": "lgc_001",
+  "name": "Jardine Juniper",
+  "species": "Rocky Mountain Juniper (Juniperus scopulorum)",
+  "age_estimate": "roughly 1,500 years",
+  "age_basis": "source",
+  "girth_cm": 720,
+  "height_m": 12,
+  "location": {
+   "address": "Logan Canyon, Uinta-Wasatch-Cache National Forest, Cache County, Utah",
+   "latitude": 41.81605,
+   "longitude": -111.63257,
+   "neighbourhood": "Logan Canyon"
+  },
+  "location_precision": "approximate",
+  "access": "Free. Jardine Juniper Trail from Wood Camp Campground trailhead on US-89 in Logan Canyon (GPS 41.797418,-111.646806 per Visit Utah); about 11 miles round trip with roughly 2,145 ft elevation gain (Visit Utah); parking at the trailhead is paid. Open year-round per the article; Trailforks reports in spring 2026 show snow and mud on the shady side.",
+  "transport": "No public transport. By car up Logan Canyon on US-89 from Logan, Utah.",
+  "verified_sources": [
+   "https://www.visitutah.com/articles/jardine-juniper-trail",
+   "https://en.wikipedia.org/wiki/Jardine_Juniper",
+   "https://www.wikidata.org/wiki/Q16997958"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jardine_Juniper.jpg",
+   "license": "CC BY 2.0",
+   "attribution": "Danielle Philli",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Jardine_Juniper.jpg",
+   "status": "approved",
+   "width": 2432,
+   "height": 3647
+  },
+  "alive_basis": "Visit Utah article (undated): 'it's still alive', small bunch of greenery in the upper branches. Trailforks user reports May 2026 describe the trail, not the tree (search summary). Uinta-Wasatch-Cache project page shows the trail realignment completed (decision 2019). No dated sighting of the tree itself after 2020 seen: 'no recent source'.",
+  "place": "Logan Canyon (Logan, Utah)",
+  "place_note": "Stands alone, about a day hike from Logan; check whether Logan is published.",
+  "curation_status": "flagged",
+  "_city": "Logan Canyon",
+  "_slug": "logan-canyon",
+  "story": "Hikers will tell you the Jardine Juniper is 3,000 years old. The wood disagrees: cores taken in the 1950s put it at about 1,500, a figure the state's own tourism site repeats. Half the legend is still a very old tree.\n\nMaurice Blood Linford found it in 1923 on a ridge above Logan Canyon and named it after William Marion Jardine. It is not tall, about 12 metres, but the trunk measures 7.2 metres round. At 1,500 years it was already old when the first Europeans reached North America.\n\nWhether it is still alive is a fair question, and the answer is thinner than we would like. Visit Utah reports a small bunch of greenery in the upper branches and says it is still alive, but the article carries no date, and we have found no dated sighting of the tree since 2020. If you make the climb, tell us what you see up there.\n\nAnd it is a climb. The Jardine Juniper Trail starts at the Wood Camp Campground trailhead on US-89, where parking is paid, and runs about 11 miles there and back with roughly 2,145 feet of gain, by Visit Utah's figures. It is open all year, but the shady side holds snow and mud well into spring.",
+  "how_to_recognise": "You can recognise it by a trunk 7.2 metres round on a tree only about 12 metres tall, with a small bunch of green in its upper branches. It stands at the top of the Jardine Juniper Trail above Wood Camp."
+ },
+ {
+  "id": "lgt_001",
+  "name": "Chandelier Tree",
+  "species": "Coast Redwood (Sequoia sempervirens)",
+  "location": {
+   "address": "Drive-Thru Tree Park, 67402 Drive Thru Tree Rd, Leggett, California",
+   "latitude": 39.8583984,
+   "longitude": -123.7192347,
+   "neighbourhood": "Leggett"
+  },
+  "location_precision": "approximate",
+  "height_m": 84,
+  "access": "Paid entry to Drive-Thru Tree Park, privately owned, open daily except Christmas and Thanksgiving. Roadside America lists $15 per car with 8:30 to 8 pm in summer and 8:30 to 5 pm off-season (call to verify, 707-925-6363); Wikipedia lists a fee for pedestrians to walk through. A 6 ft wide, 6 ft 9 in high tunnel through the base; larger vehicles may not fit.",
+  "transport": "No public transport. By car on US-101 at Leggett, Mendocino County; the park is on CA-271 (Postmile MEN 16.20).",
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Chandelier_Tree",
+   "https://www.gribblenation.org/2026/07/the-chandelier-tree-and-drive-thru-tree.html",
+   "https://www.roadsideamerica.com/tip/11298",
+   "https://www.wikidata.org/wiki/Q1061704"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/CarRedwoodLeggett01-05.jpg",
+   "license": "CC BY-SA 2.5",
+   "attribution": "Bobak Ha'Eri",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:CarRedwoodLeggett01-05.jpg",
+   "status": "approved",
+   "width": 480,
+   "height": 640
+  },
+  "alive_basis": "Gribblenation blog post dated 13 July 2026: Chandelier Tree still standing, park a popular stop. Wikipedia: Tripadvisor Travelers' Choice 2022.",
+  "place": "Leggett, Mendocino County, California",
+  "place_note": "Stands alone on US-101; not near a published city.",
+  "curation_status": "flagged",
+  "_city": "Leggett",
+  "_slug": "leggett",
+  "story": "The sign at the Chandelier Tree says 315 feet. A laser rangefinder says 276, about 84 metres, which is still taller than almost anything you will drive under in your life.\n\nThe sign is generous in other ways too. It gives the trunk as 21 feet wide; a modern measure at chest height gives 16. You will also see the tree described as 2,400 years old, a figure we could not trace to any source, so we leave its age open. If you know where a real estimate comes from, tell us.\n\nWhat nobody disputes is the hole. The Underwood family bought this grove in 1921 and in the late 1930s cut a tunnel through the base, 6 feet wide and 6 feet 9 inches high, so that cars could pass through a living redwood. Cutting a tree this way damages it, and the tunnel is the reason the place exists: it has been a paid roadside stop on US-101 ever since. Larger vehicles may not fit. The name comes from higher up, where limbs 4 to 7 feet thick sprout from about 100 feet and hang like the arms of a chandelier.\n\nThe park is privately owned and open daily except Christmas and Thanksgiving. One listing gives $15 a car, with a smaller fee for walking through, and longer hours in summer; ring ahead on 707-925-6363, as these details come from secondhand listings rather than the owners. A road blog found it standing and busy in July 2026.",
+  "how_to_recognise": "You can recognise it by the tunnel through its base, 6 feet wide and 6 feet 9 inches high, and the thick limbs branching out from about 100 feet up. It stands in Drive-Thru Tree Park at Leggett."
+ },
+ {
+  "id": "mob_001",
+  "name": "Boyington Oak",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "location": {
+   "address": "Bayou Street, outside the wall of Church Street Graveyard (106 S Scott St), Mobile, Alabama",
+   "latitude": 30.6861,
+   "longitude": -88.0515,
+   "neighbourhood": "Church Street Graveyard, Mobile"
+  },
+  "location_precision": "approximate",
+  "access": "Free. The oak stands just outside the cemetery wall on the edge of Bayou Street, visible from the public street (Wikipedia). The graveyard itself has free city walking tours from the Scott Street gate.",
+  "transport": "Downtown Mobile; walkable from the Church Street Graveyard, Scott Street gate. Bus stop not checked.",
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/Boyington_Oak",
+   "https://www.fox10tv.com/2025/05/13/6th-annual-boyington-oak-festival",
+   "https://www.wikidata.org/wiki/Q4952495"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Boyington_Oak_in_Mobile.jpg",
+   "license": "CC BY-SA 3.0",
+   "attribution": "Altairisfar",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Boyington_Oak_in_Mobile.jpg",
+   "status": "approved",
+   "width": 2299,
+   "height": 3066
+  },
+  "alive_basis": "FOX10 article 13 May 2025: the oak 'still stands almost 200 years later'; 6th annual Boyington Oak Festival 17 May 2025 includes a trolley ride to the tree (search summary).",
+  "place": "Mobile, Alabama (Church Street Graveyard)",
+  "place_note": "Belongs with Mobile. Duffee Oak (also Mobile) was blocked, see rejected list.",
+  "curation_status": "flagged",
+  "_city": "Mobile",
+  "_slug": "mobile",
+  "story": "Charles Boyington swore an oak would grow from his heart to prove he was innocent. He was hanged in Mobile on 20 February 1835, and there is an oak.\n\nBoyington was a printer, convicted of murdering Nathaniel Frost the year before. He was buried in the potter's field corner of the Church Street Graveyard, and by the story Mobile has told ever since, the live oak that grew there is the one he promised. Nobody has dated the tree with a ring count, and no age for it is on the record we could check, so the legend is doing the dating here. That is worth saying plainly: the oak and the hanging are both real, and the link between them is folklore.\n\nMobile has embraced it anyway. When the cemetery wall was moved back after 1900, the tree ended up on the outside, so today it stands at the edge of Bayou Street, free to see at any hour from the public pavement. In May 2025 Mobile held its sixth annual Boyington Oak Festival, with a trolley ride out to the tree, and a local station reported it still standing almost 200 years after the execution. Ghost stories come with it.\n\nThe graveyard itself runs free walking tours from its Scott Street gate. If you know how old the oak really is, tell us.",
+  "how_to_recognise": "You can recognise it as the live oak outside the wall of the Church Street Graveyard rather than inside it. It stands on the edge of Bayou Street, just beyond the cemetery wall."
+ },
+ {
+  "id": "lbm_001",
+  "name": "Friendship Oak",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "age_estimate": "more than 500 years",
+  "age_min": 500,
+  "age_basis": "source",
+  "girth_cm": 604,
+  "height_m": 18,
+  "location": {
+   "address": "USM Gulf Park campus, Avenue of the Oaks at Friendship Oak Circle, Long Beach, Mississippi",
+   "latitude": 30.35176944,
+   "longitude": -89.13609444,
+   "neighbourhood": "Gulf Park campus"
+  },
+  "location_precision": "approximate",
+  "access": "Free to view on the University of Southern Mississippi Gulf Park campus. USM news release 24 March 2025: beautification project finished (new sidewalks, lighting, benches, off-street viewing) aiming for a 'welcoming space for students, faculty and visitors'. No visiting hours published in what I fetched; campus grounds, not a gated site.",
+  "transport": "Car; Long Beach, Mississippi on the Gulf Coast. Public transport not checked.",
+  "verified_sources": [
+   "https://www.usm.edu/news/2025/release/friendship-oak-beautification-project.php",
+   "https://en.wikipedia.org/wiki/Friendship_Oak",
+   "https://www.wikidata.org/wiki/Q5504407"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/FriendshipOakLimbs.jpg",
+   "license": "CC BY-SA 3.0",
+   "attribution": "Woodlot",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:FriendshipOakLimbs.jpg",
+   "status": "approved",
+   "width": 4000,
+   "height": 3000
+  },
+  "alive_basis": "USM news release posted 24 March 2025 (ribbon cutting 21 March 2025): tree toured by attendees, 'more than 500 years old'. Limb broke Aug 2017, braced.",
+  "place": "Long Beach, Mississippi (USM Gulf Park)",
+  "place_note": "Stands alone on the Mississippi Gulf Coast; no published nearby city known.",
+  "curation_status": "ai_generated",
+  "_city": "Long Beach, Mississippi",
+  "_slug": "long-beach-mississippi",
+  "story": "Hurricane Camille stripped the Friendship Oak of its leaves in 1969. Hurricane Katrina did it again in 2005. Both times the tree came back, and it is still standing on the Mississippi coast at more than 500 years old, by the university's own count.\n\nThe count comes from the University of Southern Mississippi, on whose Gulf Park campus it stands. When the oak joined the Live Oak Society as member 110, around 1940, its trunk measured 14 feet round. The state Forestry Commission measured it again in 2011 and found 19.8 feet, with a height of 59 feet and a crown 155 feet across: almost six feet of girth added in seven decades, by a tree that was already old.\n\nNot everything held. A limb broke off in August 2017, and the tree has been braced since. In March 2025 the university finished a project around it with new sidewalks, lighting, benches and a place to stand off the street, meant, in its words, as a welcoming space for students, faculty and visitors, and the ribbon-cutting crowd toured the tree.\n\nIt is free to see, on open campus grounds rather than behind a gate, at Friendship Oak Circle on the Avenue of the Oaks in Long Beach. You will most likely come by car along the Gulf Coast.",
+  "how_to_recognise": "You can recognise it by a crown 155 feet across over a trunk 19.8 feet round, with bracing on the limbs since 2017. It stands at Friendship Oak Circle on the Gulf Park campus, ringed by new paths and benches."
+ },
+ {
+  "id": "thv_001",
+  "name": "The Big Oak",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "age_estimate": "over 300 years",
+  "age_min": 300,
+  "age_basis": "source",
+  "girth_cm": 850,
+  "height_m": 22,
+  "location": {
+   "address": "Crawford Street at Monroe Street, Elizabeth Ireland Poe Park, Thomasville, Georgia",
+   "latitude": 30.841113888,
+   "longitude": -83.981722222,
+   "neighbourhood": "Downtown Thomasville"
+  },
+  "location_precision": "approximate",
+  "access": "Free, in a small public park (Elizabeth Ireland Poe Park) at the corner of Crawford and Monroe streets, downtown Thomasville. A posted phone number activates a remote camera across the street for a keepsake photo (WALB 2026).",
+  "transport": "No public transport; downtown Thomasville, street parking nearby (not verified).",
+  "verified_sources": [
+   "https://www.walb.com/2026/08/27/whats-keeping-thomasvilles-big-oak-alive-after-more-than-300-years/",
+   "https://en.wikipedia.org/wiki/The_Big_Oak",
+   "https://www.wikidata.org/wiki/Q7717719"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/The_Big_Oak%2C_Thomasville%2C_GA%2C_US.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "Jud McCranie",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Big_Oak%2C_Thomasville%2C_GA%2C_US.jpg",
+   "status": "approved",
+   "width": 5941,
+   "height": 4016
+  },
+  "alive_basis": "WALB report 27 Aug 2026: city Public Works and arborists maintain it, annual inspections, lightning protection, cables and columns.",
+  "place": "Thomasville, Georgia",
+  "place_note": "Belongs with Thomasville; place not known to be published.",
+  "curation_status": "ai_generated",
+  "_city": "Thomasville",
+  "_slug": "thomasville",
+  "story": "Dial the number posted by the Big Oak and a camera across the street takes your picture with it. Thomasville treats this tree the way other towns treat a courthouse.\n\nIt earned that. The local history centre's curator puts its start around 1680, while admitting the date is not exact, so call it over 300 years. Its crown spreads 169 feet, it stands about 72 feet tall, and the trunk measures roughly 28 feet round; the marker says 27.5, and heights vary by source. When it joined the Live Oak Society in 1936, as the 49th member, the girth was 21 feet 6 inches.\n\nIn 1966 the city bought the corner lot outright to make a park around it, the Elizabeth Ireland Poe Park. Traffic has been the real threat. Trucks clipped its limbs in 1973, in 1975 and again in 2005, and today city Public Works and arborists inspect it every year and keep it on cables, columns and a lightning protection system.\n\nOne story told about it does not hold: local historian Jack Hadley has said it was never a lynching tree.\n\nIt is free and open, at Crawford and Monroe streets in the middle of town.",
+  "how_to_recognise": "You can recognise it by a crown 169 feet across, held up by cables and columns, that fills a small corner park on its own. It stands in Elizabeth Ireland Poe Park at Crawford and Monroe streets."
+ },
+ {
+  "id": "gis_001",
+  "name": "The Big Tree",
+  "species": "Southern Live Oak (Quercus virginiana)",
+  "age_estimate": "over 1,000 years",
+  "age_min": 1000,
+  "age_max": 2000,
+  "age_basis": "source",
+  "girth_cm": 1067,
+  "height_m": 14,
+  "location": {
+   "address": "Goose Island State Park, 3918 Park Road 13, Rockport, Texas",
+   "latitude": 28.1525,
+   "longitude": -96.9766,
+   "neighbourhood": "Lamar, Goose Island State Park"
+  },
+  "location_precision": "confirmed",
+  "access": "Paid park entry: Goose Island State Park open daily 6 a.m. to 10 p.m., adults $5, under 13 free (TPWD). The tree stands by the road with parking; the base is fenced to protect the roots, though visitors can stand under the crown (Wikipedia). The ranger-led gate opening in a 2008 article may have changed.",
+  "transport": "No public transport; by car, 12 km north of Rockport (distance not verified here), Goose Island State Park.",
+  "verified_sources": [
+   "https://tpwd.texas.gov/state-parks/goose-island",
+   "https://en.wikipedia.org/wiki/The_Big_Tree,_Rockport",
+   "https://www.wikidata.org/wiki/Q7717840"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Big_tree.jpg",
+   "license": "CC BY 4.0",
+   "attribution": "Larry D. Moore",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Big_tree.jpg",
+   "status": "approved",
+   "width": 1794,
+   "height": 1299
+  },
+  "alive_basis": "Texas Parks and Wildlife park page (current, undated) lists the Big Tree as one of the largest live oaks in the US; Wikipedia: relatively unscathed by Hurricane Harvey, 25 Aug 2017. Commons file geotag 28.1523,-96.9767. No news item after 2020 seen.",
+  "place": "Goose Island State Park, near Rockport, Texas",
+  "place_note": "Stands alone in a state park; Rockport/Fulton not known to be published.",
+  "curation_status": "ai_generated",
+  "_city": "Goose Island State Park",
+  "_slug": "goose-island-state-park",
+  "story": "The Texas Forest Service put this live oak at over 1,000 years old. Other recent estimates say nearer 2,000. The sources do not settle it, and we will not pretend to.\n\nIt was the Texas state champion live oak from 1969 to 2003, and Texas Parks and Wildlife still calls it one of the largest live oaks in the United States. The trunk is over 35 feet round, the tree over 45 feet tall, and the crown spreads about 90 feet. It was a charter member of the Live Oak Society, number 16, and locals also know it as the Bishop Oak or the Lamar Oak.\n\nHurricane Harvey struck this coast on 25 August 2017. The Big Tree came through relatively unscathed, which says as much about it as any measurement.\n\nThe tree stands by the road inside Goose Island State Park, with parking beside it. A fence keeps people off the roots at the base, but you can stand under the crown. The park opens daily from 6 a.m. to 10 p.m., with entry at $5 for adults and free for children under 13, and you will need a car: it lies north of Rockport on Park Road 13.",
+  "how_to_recognise": "You can recognise it by the fence around a live oak trunk over 35 feet round, under a crown about 90 feet across. It stands beside the park road, with parking, in the Lamar section of Goose Island State Park."
+ },
+ {
+  "id": "oro_001",
+  "name": "Mother Orange Tree",
+  "species": "Sweet Orange (Citrus x sinensis)",
+  "age_estimate": "planted in the 1850s",
+  "age_min": 168,
+  "age_max": 172,
+  "age_basis": "source",
+  "location": {
+   "address": "California State Parks district office, 400 Glen Drive, Oroville, California",
+   "latitude": 39.511111111,
+   "longitude": -121.504277777,
+   "neighbourhood": "Oroville"
+  },
+  "location_precision": "approximate",
+  "access": "Free to see at the entrance of the California State Parks Oroville office; a fence keeps visitors a short distance away. The fruit is not for picking (fallen fruit is fair game per the 2021 visitor). Office hours not verified; the tree is outside.",
+  "transport": "Oroville, Butte County; a sign on Glen Drive points to the tree. Public transport not checked.",
+  "verified_sources": [
+   "https://kathrynreed.com/eat-and-drink/oldest-orange-tree-in-california-hails-from-mexico/",
+   "https://en.wikipedia.org/wiki/Mother_Orange_Tree",
+   "https://www.wikidata.org/wiki/Q1956029"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/The_Mother_Orange_Tree.jpg",
+   "license": "Public domain",
+   "attribution": "Podruznik (English Wikipedia)",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:The_Mother_Orange_Tree.jpg",
+   "status": "approved",
+   "width": 3264,
+   "height": 2448
+  },
+  "alive_basis": "Visitor blog post dated 8 Sept 2021: healthy, lush green leaves. Wikipedia: cloned by UC Riverside in 2003; fruit production resumed after the 1998 frost.",
+  "place": "Oroville, Butte County, California",
+  "place_note": "Belongs with Oroville if that place is ever opened; stands alone for now.",
+  "curation_status": "flagged",
+  "_city": "Oroville",
+  "_slug": "oroville",
+  "story": "This orange tree has been dug up and moved twice, the second time in 1964 to get out of the way of the Oroville Dam.\n\nIt is a Mediterranean sweet orange from Mazatlan, Mexico. Judge Joseph Lewis bought it in Sacramento in 1856, and here the record splits: the plaque and several sources give 1856 for the planting, Wikipedia gives 1854. Either way it is about 170 years old. It is California Historical Landmark number 1043, and a sign on Glen Drive points you to it.\n\nIt was a big tree once, over 60 feet tall before the twentieth century. The hard frost of 1998 nearly finished it: decay fungus hollowed the trunk and the fruit stopped for a while. Then the fruit came back. In 2003 UC Riverside cloned it.\n\nThe most recent account we have of the tree itself is a visitor's from September 2021, who found it healthy with lush green leaves. That is five years ago; if you have seen it since, tell us how it looks.\n\nIt stands outside the California State Parks office at 400 Glen Drive, free to see from behind a fence that keeps visitors a few steps back. The fruit on the tree is not for picking.",
+  "how_to_recognise": "You can recognise it as the fenced orange tree at the entrance of the California State Parks office, with a hollowed trunk from the 1998 frost. It stands at 400 Glen Drive, where a street sign points to it."
+ },
+ {
+  "id": "rvs_001",
+  "name": "Parent Washington Navel Orange Tree",
+  "species": "Washington Navel Orange (Citrus x sinensis 'Washington')",
+  "age_estimate": "about 150 years",
+  "age_min": 150,
+  "age_max": 153,
+  "age_basis": "source",
+  "location": {
+   "address": "Magnolia Avenue at Arlington Avenue, Riverside, California",
+   "latitude": 33.946097822,
+   "longitude": -117.401752632,
+   "neighbourhood": "Arlington Heights, Riverside"
+  },
+  "location_precision": "confirmed",
+  "access": "Free, in a small city landmark plot at the corner of Magnolia and Arlington avenues. Since June 2019 the tree is inside a 22 ft tall insect-screen tent to keep out citrus greening disease, so it is seen through the screen (Wikipedia, 2019). Maintained by UC Riverside and the City of Riverside Parks Department.",
+  "transport": "Riverside city street corner; public transport not checked.",
+  "verified_sources": [
+   "https://cnas.ucr.edu/media/2025/12/06/its-harvest-time-riversides-150-year-old-parent-navel-orange-tree",
+   "https://en.wikipedia.org/wiki/Washington_navel_orange_tree_(Riverside,_California)",
+   "https://www.wikidata.org/wiki/Q85814522"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Parent_Navel_Orange_Tree_Riverside.jpg",
+   "license": "CC BY 3.0",
+   "attribution": "Eric T. Gunther",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Parent_Navel_Orange_Tree_Riverside.jpg",
+   "status": "approved",
+   "width": 4032,
+   "height": 3024
+  },
+  "alive_basis": "UC Riverside CNAS item dated 6 Dec 2025: harvest at the 150-year-old tree (reported estimate about 2,000 oranges; search summary).",
+  "place": "Riverside, California",
+  "place_note": "Belongs with Riverside (several other Riverside landmark trees in this batch: usb1_013, usb1_014, usb1_015).",
+  "curation_status": "ai_generated",
+  "_city": "Riverside",
+  "_slug": "riverside",
+  "story": "Riverside keeps its most famous tree in a tent. Since June 2019 the Parent Washington Navel Orange Tree has lived inside a 22-foot insect screen, put up to keep out citrus greening disease.\n\nThe tree is about 150 years old. Eliza Tibbets planted it here in 1873, one of two young trees the US Department of Agriculture sent her. The variety itself had reached the department three years earlier, in 1870, from Bahia in Brazil. It is California Historical Landmark number 20 and City of Riverside Landmark number 15.\n\nIt is not a museum piece. UC Riverside and the city's Parks Department look after it together, and in December 2025 the university reported harvest time at the tree, with the old orange in good health and still bearing.\n\nIt stands on a small landmark plot at the corner of Magnolia and Arlington avenues, free to visit at any time. You see it through the screen now, which takes some getting used to: the photograph on this page was taken before the tent went up. The Chicago White Sox redwood in Low Park is about 400 metres away, an easy walk.",
+  "how_to_recognise": "You can recognise it by the 22-foot insect-screen tent it has stood inside since 2019, with an orange tree inside. It stands on a small landmark plot at the corner of Magnolia and Arlington avenues."
+ },
+ {
+  "id": "rvs_002",
+  "name": "Chicago White Sox Redwood Tree",
+  "species": "Redwood (Sequoioideae sp., species not confirmed)",
+  "age_estimate": "planted in 1914",
+  "age_min": 110,
+  "age_max": 113,
+  "age_basis": "source",
+  "location": {
+   "address": "Low Park, at the junction of Magnolia and Palm avenues, Riverside, California",
+   "latitude": 33.946821106,
+   "longitude": -117.400947259,
+   "neighbourhood": "Low Park, Riverside"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Low Park",
+   "radius_m": 50
+  },
+  "access": "Free, public city park (Low Park) at the head of Magnolia and Palm avenues.",
+  "transport": "Riverside city street; public transport not checked.",
+  "verified_sources": [
+   "https://www.raincrossgazette.com/a-redwood-planted-in-low-park-more-than-100-years-ago-tells-an-unknown-story-about-riversiders-and-major-league-baseball/",
+   "https://en.wikipedia.org/wiki/List_of_landmarks_in_Riverside,_California",
+   "https://www.wikidata.org/wiki/Q140613826"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Chicago_White_Sox_Redwood_Tree_and_Low_Park.jpg",
+   "license": "CC0",
+   "attribution": "Josiah.r.white",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Chicago_White_Sox_Redwood_Tree_and_Low_Park.jpg",
+   "status": "approved",
+   "width": 3072,
+   "height": 4080
+  },
+  "alive_basis": "Commons CC0 photo dated 5 Aug 2026 by Josiah.r.white, titled 'Chicago White Sox Redwood Tree and Low Park' (pixels not viewed). Raincross Gazette (March 2022, updated 2023) does not say whether it still stands.",
+  "place": "Riverside, California (Low Park)",
+  "place_note": "Belongs with Riverside; sits 400 m from the Parent Navel Orange Tree (usb1_012).",
+  "curation_status": "flagged",
+  "_city": "Riverside",
+  "_slug": "riverside",
+  "story": "On 25 March 1914 the Chicago White Sox played an exhibition game in Riverside, against the Los Angeles Angels, and planted a redwood. It is still in Low Park, more than 110 years later.\n\nThe exact date and the game come from a local history site; the marker gives only the year. By 1927 the tree was almost 40 feet tall, and the club's owner, Charles Comiskey, had a tablet put up beside it that year. The city later made it City of Riverside Landmark number 60, which is a fair honour for a tree whose only planting crew were professional ballplayers.\n\nTwo things we cannot tell you. The sources call it only a redwood, without saying whether it is a coast redwood, a giant sequoia or something else; if you can tell from the needles or the cones, let us know. And the most recent sign of it is a single photograph taken in August 2026, which shows it standing but says nothing more about its health. A second sighting would help.\n\nLow Park sits at the head of Magnolia and Palm avenues, free and open, about 400 metres from the Parent Navel Orange Tree, so the two make a short walk.",
+  "how_to_recognise": "You can recognise it as the redwood with the 1927 tablet from Charles Comiskey beside it. It stands in Low Park, where Magnolia and Palm avenues meet."
+ },
+ {
+  "id": "rvs_003",
+  "name": "Roosevelt Palm",
+  "species": "Mexican Fan Palm (Washingtonia robusta)",
+  "age_estimate": "planted in 1903",
+  "age_min": 122,
+  "age_max": 124,
+  "age_basis": "source",
+  "location": {
+   "address": "Victoria Avenue at Myrtle Street, Riverside, California",
+   "latitude": 33.957274618,
+   "longitude": -117.370370959,
+   "neighbourhood": "Victoria Avenue, Riverside"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "Roosevelt Palm plot on Victoria Avenue",
+   "radius_m": 50
+  },
+  "access": "Free, public street frontage on Victoria Avenue (NRHP-listed 2000). Stands on a small piece of land with five other palms; a 1965 tablet marks it.",
+  "transport": "Riverside city street; public transport not checked.",
+  "verified_sources": [
+   "https://www.raincrossgazette.com/when-teddy-came-to-riverside/",
+   "https://en.wikipedia.org/wiki/List_of_landmarks_in_Riverside,_California",
+   "https://www.wikidata.org/wiki/Q140723663"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Roosevelt_Palm.jpg",
+   "license": "CC BY-SA 4.0",
+   "attribution": "CAMarq",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Roosevelt_Palm.jpg",
+   "status": "held",
+   "held_reason": "held 2026-10-22: the frame shows six palms and nothing marks which is the Roosevelt Palm",
+   "width": 672,
+   "height": 1120
+  },
+  "alive_basis": "Raincross Gazette article dated 7 May 2023, updated 14 Oct 2025: 'still stands along Victoria Avenue near Myrtle on a small piece of land along with five other palm trees'.",
+  "place": "Riverside, California (Victoria Avenue)",
+  "place_note": "Belongs with Riverside, 3 km from the Parent Navel Orange Tree.",
+  "curation_status": "ai_generated",
+  "_city": "Riverside",
+  "_slug": "riverside",
+  "story": "Theodore Roosevelt planted this palm on 7 May 1903, on a visit to Riverside. The tablet beneath it says 8 May. The local historians who checked the dates say the tablet is wrong, and the tablet has been saying it since 1965.\n\nThe Native Daughters of the Golden West put that tablet up on 27 March 1965, and its text calls the tree a Queen Victoria palm. It is a Mexican fan palm, Washingtonia robusta, as a local history site that researched the visit records. The city made it City of Riverside Landmark number 64, and it stands on Victoria Avenue, itself listed on the National Register of Historic Places in 2000.\n\nThe practical problem is that it has company. The palm shares a small piece of land near Myrtle Street with five other palms, and nothing about the trunks themselves tells you which of the six a president planted. The tablet does: the Roosevelt Palm is the one standing over it. We do not have a photograph we can be sure shows the right trunk, so if you visit, a picture that includes the tablet would help the next person.\n\nThe most recent report, from October 2025, has it still standing along Victoria Avenue. It is on the public street frontage and free to see at any hour, about three kilometres from the Parent Navel Orange Tree.",
+  "how_to_recognise": "You can recognise it by the 1965 tablet at its foot: of the six palms on the plot, it is the one standing over the tablet. It stands on Victoria Avenue near Myrtle Street."
+ },
+ {
+  "id": "rvs_004",
+  "name": "Native Sycamore Tree (Riverside)",
+  "species": "Sycamore (Platanus sp.)",
+  "location": {
+   "address": "Median island on La Paz Lane at Bubbling Well Road, Riverside, California",
+   "latitude": 33.997868921,
+   "longitude": -117.382314771,
+   "neighbourhood": "La Paz Lane, Riverside"
+  },
+  "location_precision": "approximate",
+  "location_site": {
+   "name": "La Paz Lane median island",
+   "radius_m": 30
+  },
+  "access": "Free; a tree in a street median island, seen from the road; crossing the street is a safety issue. Public land.",
+  "transport": "Riverside city streets, near Fairmount Park; public transport not checked.",
+  "verified_sources": [
+   "https://en.wikipedia.org/wiki/List_of_landmarks_in_Riverside,_California",
+   "https://www.wikidata.org/wiki/Q140723835"
+  ],
+  "photo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Native_Sycamore_Tree.jpg",
+   "license": "CC0",
+   "attribution": "Josiah.r.white",
+   "attribution_url": "https://commons.wikimedia.org/wiki/File:Native_Sycamore_Tree.jpg",
+   "status": "approved",
+   "width": 3072,
+   "height": 4080
+  },
+  "alive_basis": "Commons CC0 photo dated 27 July 2026 by Josiah.r.white (pixels not viewed). No second source.",
+  "place": "Riverside, California",
+  "place_note": "Belongs with Riverside, next to Fairmount Park.",
+  "curation_status": "flagged",
+  "_city": "Riverside",
+  "_slug": "riverside",
+  "story": "Riverside has listed a sycamore growing in the middle of a road as one of its official landmarks. It is City of Riverside Landmark number 65, and it stands on the median island where La Paz Lane meets Bubbling Well Road, on the edge of Fairmount Park.\n\nThat listing is almost all anyone has written down about it, and we would rather say so than dress it up. The landmark list names it the Native Sycamore and gives no species, no age, no measurement and no story of how it came to be honoured. The word native points towards the California sycamore, Platanus racemosa, but nothing we could find confirms it, so we list it as a sycamore of unknown species. If you know it, or know why the city picked this tree, tell us.\n\nWhat we can say is that it was standing in July 2026, when a photographer recorded it on the island. The tree is best seen from the pavement rather than from the island itself, because crossing to it means stepping into traffic.\n\nIt is on public land and free to look at, about six kilometres north of the Parent Navel Orange Tree.",
+  "how_to_recognise": "You can recognise it as the sycamore on the median island in the road, not in the park beside it. It stands where La Paz Lane meets Bubbling Well Road, by Fairmount Park."
+ }
+]

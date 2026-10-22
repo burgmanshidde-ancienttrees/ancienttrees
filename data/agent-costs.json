@@ -13850,6 +13850,22 @@
    "photos_approved": 0,
    "trees": 0,
    "note": "21 distinct images viewed for 13 trees (29 queue rows): 0 approved, 0 held, 29 rejected; 13 were not tree photographs (train postcard, sculpture, castle facades, lamp, firebugs), the rest crown-only, cone or foliage close-ups, or park scenes with no single subject. Tokens estimated."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "verify",
+   "target": "us-photo-batch-1 (20 US Wikidata leads with a Commons photo)",
+   "tokens": 185533,
+   "trees": 15,
+   "note": "Hidde 2026-10-21: famous trees with an open-licence photo may go live; first batch. 15 verified, 5 blocked: 1 dead (King Arthur, Castle Fire 2020), 1 private yard (Seven Sisters Oak), 2 access unsettled (Duffie Oak, Council Oak), 1 plural with no pin (Fairmount bald cypresses). Tokens from the agent's own usage line."
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "write",
+   "target": "us-photo-batch-1 (15 US trees, 10 new places)",
+   "tokens": 157699,
+   "trees": 15,
+   "note": "Opus write pass: 15 stories and recognition lines, place copy for 10 slugs, question_context rewritten to 150-200 words after a preflight refusal; no best_time. Tokens from the agent's own usage line. Photos looked at in session: 14 approved, the Roosevelt Palm held (six palms, trunk unknown)."
   }
  ]
 }
