@@ -100,7 +100,7 @@ export function treeSources(tree: { verified_sources?: string[] }): TreeSource[]
   for (const entry of raw) {
     const s = String(entry ?? "").trim();
     if (/^https?:\/\//i.test(s)) {
-      const h = hostLabel(s);
+      const h = hostLabel(s.split(/\s/)[0]);
       hostCount.set(h, (hostCount.get(h) ?? 0) + 1);
     }
   }
@@ -110,9 +110,16 @@ export function treeSources(tree: { verified_sources?: string[] }): TreeSource[]
     if (seen.has(s)) continue;
     seen.add(s);
     if (/^https?:\/\//i.test(s)) {
-      const h = hostLabel(s);
-      const hint = (hostCount.get(h) ?? 0) > 1 ? pathHint(s) : "";
-      out.push({ href: s, label: hint ? `${h}, ${hint}` : h });
+      // "url (what it says)" is how 280 sources are written; the link is the
+      // url alone, or the page linked to the whole line (found 2026-10-22).
+      // A closing bracket stays when the url opened one ("..._(Baum)").
+      let href = s.split(/\s/)[0].replace(/[,.;]+$/, "");
+      while (href.endsWith(")") && (href.match(/\(/g) ?? []).length < (href.match(/\)/g) ?? []).length) {
+        href = href.slice(0, -1);
+      }
+      const h = hostLabel(href);
+      const hint = (hostCount.get(h) ?? 0) > 1 ? pathHint(href) : "";
+      out.push({ href, label: hint ? `${h}, ${hint}` : h });
     } else {
       out.push({ label: textLabel(s) });
     }
