@@ -300,6 +300,22 @@ When a mail has to say who we are (a first mail, or somebody who asked), reuse t
 
 Outside the Netherlands add "in the Netherlands" after Baarn. The intro already says "worth walking to", so the standard line below is for when they ask which trees, not stacked on top of the intro.
 
+## His standard ask to an expert: judge the list (Hidde, 2026-10-22)
+
+My ask to John Beetham ("Which trees in Melbourne, or anywhere in Australia, do you think we are missing?") was "not very strong". He rewrote it: show the page as work in progress, ask them to judge the selection both ways (are these good, what is missing, what does not belong), then photos as a later wish, and out kindly.
+
+> I've been working on the Melbourne page, and you can see where it stands, with 16 trees so far, here:
+> https://ancienttrees.app/melbourne
+>
+> I was hoping you could help me improve this list. Have a look at the trees I've selected so far: do you agree they're good ones? Are some missing, or do some not deserve to be there?
+>
+> Eventually I could really use some help finding or taking photos of these trees.
+>
+> Either way, have a lovely day,
+> Hidde
+
+Why it is stronger: it asks for their judgement on something concrete we made, which an expert enjoys giving, instead of an open "what are we missing", which asks them to do the search. Use this for anyone who knows a city's trees (first mails and help asks), with the city and count filled in.
+
 ## His standard line: which trees, and for whom (Hidde, 2026-10-22)
 
 When somebody asks what counts as "ancient", or which trees we pick, use his line, not a list of criteria. He has used it before and wants it as the standard. Its first outing was to Dr. Bauer (2026-10-15), who passed it on to Harald von der Stein, and Harald then offered to cooperate.

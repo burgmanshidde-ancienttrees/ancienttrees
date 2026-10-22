@@ -22,7 +22,7 @@ If they corrected us or gave us a tree, change the site first and reply "it is o
 
 1. Thanks and the answer in one line. Thank separately for each thing they gave; close with "Thanks again" when they gave a lot.
 2. What changed, as fact. At most one short sorry inside a sentence.
-3. Something true about us only if they raised it. Asked which trees we pick: his standard line (HIS_VOICE.md, 2026-10-22). Saying who we are (a first mail, or they asked): his standard intro, the Peter Raggers one (HIS_VOICE.md, 2026-10-22).
+3. Something true about us only if they raised it. Asked which trees we pick: his standard line (HIS_VOICE.md, 2026-10-22). Saying who we are (a first mail, or they asked): his standard intro, the Peter Raggers one (HIS_VOICE.md, 2026-10-22). Asking an expert for help with a city: his standard ask, judge the list (HIS_VOICE.md, 2026-10-22).
 4. One ask, last, plain, fitted to the person: a tree they know (where exactly it stands, a photo if they walk past), an introduction, a link only in a later reply after their help was used. Drop the ask when they have already given or it was asked earlier in the thread, When they say they are busy or cannot help much: no task for them, but his form instead: "I completely understand", the ways anyone could help as options, "either way, thanks" (HIS_VOICE.md, 2026-10-22).
 5. Out. No summary, no promise of what happens next.
 

@@ -15,10 +15,12 @@ Katherine Masiulanis at the National Trust in Victoria gave me your address and 
 
 I'm Hidde, I live in Baarn in the Netherlands and work on Ancient Trees, a website and app with remarkable old trees worth walking to. It started in Lisbon, where I walked through the parks on work trips and wondered at the old jacarandas and fig trees. I'm not a tree expert, but a big fan, and I want to make it easier for others to see trees like these.
 
-Melbourne has 16 trees on it so far:
+I've been working on the Melbourne page, and you can see where it stands, with 16 trees so far, here:
 https://ancienttrees.app/melbourne
 
-Which trees in Melbourne, or anywhere in Australia, do you think we are missing?
+I was hoping you could help me improve this list. Have a look at the trees I've selected so far: do you agree they're good ones? Are some missing, or do some not deserve to be there?
 
-Thanks,
+Eventually I could really use some help finding or taking photos of these trees.
+
+Either way, have a lovely day,
 Hidde
