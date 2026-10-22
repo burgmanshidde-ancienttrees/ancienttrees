@@ -113,6 +113,34 @@ STRICT_CUT = True
 # four of them ever showed in a digest's top pages; those stay. Google only:
 # Bing keeps them. False lets the roster's translations back.
 TRANSLATIONS_OUT = True
+# THE DEMAND CUT (Hidde, 2026-10-22, "laten we al jouw andere punten
+# doorvoeren", after "ik heb al vaker meer snijden voorgesteld"). The frozen
+# roster turned out to be 259 cities, every city with ten impressions in the
+# ten days before 09-28, so the strict cut left 1,183 photographed tree pages
+# in Google, most of them a Commons photograph plus an AI story in a city nobody
+# had searched. Google's spam policy names the remedy for scaled content
+# ("exclude it from Search"), and the evidence against "made to rank" is one of
+# two things: people searched this city before the demotion, or the page holds
+# something only we have. So an English tree page stays in Google only when its
+# city had DEMAND_CUT impressions in those ten days (92 cities held 73 percent of
+# all impressions), or its photograph is unique to us (a reader's, our own, or
+# one a tree society handed us: unique_photo()), or a reader found the tree.
+# Place pages of the other cities leave with their trees. Google only, Bing
+# keeps every page in sitemap-bing.xml. 0 restores the roster-wide rule.
+DEMAND_CUT = 50
+
+
+def unique_photo(t):
+    """A photograph that exists nowhere else on the web: a reader's through the
+    app, our own, or one handed to us with permission. A Commons, Flickr or
+    iNaturalist photograph is on other sites too and proves nothing about us."""
+    p = t.get("photo") or {}
+    if p.get("status") != "approved":
+        return False
+    if p.get("source") in ("contributor", "mine"):
+        return True
+    lic = (p.get("license") or "").lower()
+    return "provided by" in lic or "permission" in lic
 # Listing pages, one data file each: (folder in data/, url prefix).
 LISTINGS = [("species", "/species/"), ("parks", "/parks/"), ("collections", "/collections/"),
             ("states", "/united-states/"), ("countries", "/")]
@@ -280,6 +308,10 @@ def main():
         #    qualified the day this was written; scripts/enrich.py works
         #    toward the rest, city by city, most readers first.
         strict = STRICT_CUT and slug not in on_roster and slug not in EARNED_KEEP
+        # The demand cut: a roster city under DEMAND_CUT impressions is treated
+        # like a city off the roster, unless readers found it (EARNED_KEEP).
+        low_demand = bool(DEMAND_CUT) and slug not in EARNED_KEEP and roster_imps.get(slug, 0) < DEMAND_CUT
+        strict = strict or (STRICT_CUT and low_demand)
         for t, ts in zip(trees, tslugs):
             if has_photo(t) if INDEX_NEEDS_PHOTO else findable(t):
                 # The strict cut: a photographed tree keeps its English page,
@@ -287,6 +319,14 @@ def main():
                 if strict or TRANSLATIONS_OUT:
                     groups["strict_cut"] += [u for u in (f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real)
                                              if u not in t_keep]
+                # The demand cut (2026-10-22): in a city under DEMAND_CUT the
+                # English page leaves Google too, unless its photograph is
+                # unique to us, a reader found the tree, or readers found the
+                # page before 09-28.
+                en_url = f"{BASE}/{slug}/{ts}"
+                if strict and low_demand and en_url not in t_keep and not unique_photo(t) \
+                        and not (t.get("found_by_reader") or {}).get("sighting_id"):
+                    groups["strict_cut"].append(en_url)
                 continue
             if RETURN_ENRICHED and INDEX_NEEDS_PHOTO and slug in on_roster and enriched(t, enrich_gaps(t)):
                 en_url = f"{BASE}/{slug}/{ts}"
@@ -406,7 +446,7 @@ def main():
            f"| 2 | Place and question pages of places with 1 to 3 trees ({len(a_places)} places); their tree pages stay indexed | {len(set(groups['thin_places']))} |",
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
            f"| 4 | Tree pages without a photograph (since 2026-10-06), finished pages included since 2026-10-18 (the 2026-10-09 exception for finished pages in a proven city is closed, RETURN_ENRICHED). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
-           f"| 5 | The strict cut (2026-10-22): species, park, collection, state and country pages, place pages of cities off the roster, and every translation of a place or tree page; Google only, Bing keeps them | {len(strict_cut)} |",
+           f"| 5 | The strict cut (2026-10-22): species, park, collection, state and country pages, place pages of cities off the roster, and every translation of a place or tree page; since 2026-10-22 also the tree pages of cities under {DEMAND_CUT} pre-demotion impressions unless the photograph is ours or a reader found the tree (the demand cut); Google only, Bing keeps them | {len(strict_cut)} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | of which Google-only (the googlebot tag) | {len(google_only)} |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",
