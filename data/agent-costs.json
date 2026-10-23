@@ -1,6 +1,16 @@
 {
  "note": "Token cost per agent pass, as each pass reported it. Recorded so the daily retro has something to measure instead of an impression. 'trees' is what reached data/cities, not what the pass drafted.",
  "days": {
+  "2026-10-23": [
+   {
+    "date": "2026-10-23",
+    "target": "kept set photos: Munich, Dublin, Milan, The Hague, Nijmegen",
+    "kind": "photo-judge",
+    "tokens": 45000,
+    "trees": 0,
+    "note": "13 images viewed for 16 trees, 0 approved, 36 rejects recorded; every remaining kept-set candidate was a park-wide file (aerials, sculptures, a mineral); queue for the kept set is now empty"
+   }
+  ],
   "2026-10-22": [
    {
     "date": "2026-10-22",
