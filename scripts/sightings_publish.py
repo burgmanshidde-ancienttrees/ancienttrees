@@ -85,6 +85,7 @@ import datetime
 import json
 import os
 import re
+import unicodedata
 import smtplib
 import sys
 
@@ -434,6 +435,31 @@ def supa_coordinates(sighting_ids):
     return out
 
 
+TRANSLIT = {"ß": "ss", "ø": "o", "æ": "ae", "œ": "oe", "ł": "l", "đ": "d", "ð": "d", "þ": "th", "ħ": "h"}
+
+
+def page_slug(name):
+    """slugify() in site/src/lib/slug.ts, the one rule the pages are built
+    with. Not this file's slugify(), which names photo files and keeps "the"."""
+    s = name.lower().replace("'", "").replace("’", "")
+    if s.startswith("the "):
+        s = s[4:]
+    s = "".join(TRANSLIT.get(c, c) for c in s)
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+
+
+def page_url(t):
+    """The tree's live page, from its name as published today (names change)."""
+    path = os.path.join(ROOT, "data", "cities", f"{t['city_slug']}.json")
+    name = t["tree_name"]
+    if os.path.exists(path):
+        for x in json.load(open(path, encoding="utf-8")).get("trees", []):
+            if x.get("id") == t.get("tree_id"):
+                name = x.get("name") or name
+    return f"{BASE_URL}/{t['city_slug']}/{page_slug(name)}"
+
+
 def mail_for(trees, first, display_name=None):
     """One mail for every photograph of one reader that went live since the
     last. `first` is their first mail from us: it carries the one ask, and a
@@ -441,8 +467,7 @@ def mail_for(trees, first, display_name=None):
     HIS_VOICE.md 2026-10-20). Signed Ancient Trees, never as Hidde."""
     name = (display_name or "").strip()
     hi = f"Hi {name}," if name else "Hi,"
-    pages = [(t["tree_name"], t["city"], f"{BASE_URL}/{t['city_slug']}/{slugify(t['tree_name'])}")
-             for t in trees]
+    pages = [(t["tree_name"], t["city"], page_url(t)) for t in trees]
     if len(pages) == 1:
         tree, city, page = pages[0]
         subject = f"Your photo is on the page of {tree}"
@@ -548,8 +573,9 @@ def address_of(user_id):
 # zijn", "doe maar niet". Mail fatigue outweighs the thanks.
 # 2026-10-23 he answered the fatigue himself: the first photograph mails at
 # once, later ones wait and go together, at most one mail per 30 days
-# (flush_mail). Built off; True once he has approved the text.
-MAIL_WHEN_LIVE = False
+# (flush_mail). On since the same day, when he approved the text
+# (drafts/photo-live-mail.md): "Ja, de tekst is goed, zet de mail aan."
+MAIL_WHEN_LIVE = True
 VERDICT_STATUS = {"approve": "published", "add": "published",
                   "reject": "declined", "hold": "checking"}
 
@@ -611,6 +637,12 @@ def send_mail(addr, subject, body, really, sighting_id):
 def main():
     files = [a for a in sys.argv[1:] if not a.startswith("--")]
     really = "--send" in sys.argv
+    # The mail step in nightly.yml, which holds the SMTP secrets and pulls the
+    # do-not-contact list; publishing only queues (queue_mail).
+    if "--flush-mail" in sys.argv:
+        if MAIL_WHEN_LIVE:
+            flush_mail(really, datetime.date.today().isoformat())
+        return 0
     qdoc = load(QUEUE, {"queue": []})
     rows = []
     # --vouched: the photographs of a reader Hidde vouches for go live as they
@@ -705,8 +737,6 @@ def main():
             queue_mail(entry, today)
         else:
             print("  mail: off, a photograph going live sends no mail yet (MAIL_WHEN_LIVE)")
-    if MAIL_WHEN_LIVE:
-        flush_mail(really, today)
     # And any photograph published earlier whose tree still has a rough pin.
     for line in catch_up_pins(done, today):
         print(f"  {line}")

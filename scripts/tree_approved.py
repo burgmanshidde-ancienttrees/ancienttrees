@@ -7,9 +7,9 @@ gamification for this." The convention is Google Maps': a place you added that
 it accepts arrives as a mail saying so, with the link (CONVENTIONS.md
 2026-10-09, the word "Approved").
 
-Narrow on purpose, because the 2026-10-02 rulings stand beside it: a PHOTOGRAPH
-going live on a tree we already had still sends nothing (MAIL_WHEN_LIVE in
-sightings_publish.py). This is only for a tree that did not exist here until a
+Narrow on purpose: a PHOTOGRAPH going live on a tree we already had is mailed
+by sightings_publish.py instead (MAIL_WHEN_LIVE, since 2026-10-23: the first at
+once, then at most one bundle per 30 days). This is only for a tree that did not exist here until a
 reader sent it, which is the rarer and bigger thing. How it knows: the sighting
 went into data/leads/_sightings.json as a NEW tree (that is where a sighting
 matching nothing we map lands), and a published tree now carries a contributor
