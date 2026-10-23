@@ -15,6 +15,10 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 
 App: a raised list on the map stayed stuck once no trees were in view (Hidde's report). The empty-list lock now stops raising only, never lowering (BottomSheet.swift). Checked on the iPhone 17 Pro simulator: raised over Amsterdam, panned to Ruigoord, dragged down to peek, and an upward swipe still leaves it down. For Hidde: next build carries this fix.
 
+## 2026-10-24 session: Wilder's article is out, four followed links
+
+wilder.pt published the Lisbon interview on 2026-10-23 (Ines Sequeira): links to the home page, /lisbon, /porto and /contribute, all followed, no App Store link. The second press placement ever and the first with links. Watched by backlinks.py, contacts_db marks Wilder linked, details in drafts/OUTREACH.md. Nothing in the product changed; the digest's GA and Portugal download rows are where it shows from 10-25.
+
 ## 2026-10-24 session: Show HN posted
 
 Hidde posted "Show HN: I'm mapping the old trees worth walking to (3,800 so far)" at 15:04 Dutch time, news.ycombinator.com/item?id=50208440, from his own account; first comment in his About-page voice with the AI paragraph in his own framing (drafts/show-hn.md, local). Measure over the week: points and comments on the item, visitors with referrer news.ycombinator.com in Google Analytics, submissions and accounts. OUTREACH_STRATEGY's "later or not at all" was replaced on his word on 10-23.
