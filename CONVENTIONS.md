@@ -1340,6 +1340,31 @@ where the bubble parts, and past zoom 14 the pins and the same-spot stacks
 are back. qa's `check_every_web_map_piles_with_the_same_numbers()` refuses a
 map file that writes those numbers as literals.
 
+**Benchmark: do the references pile at all? (2026-10-24, Hidde: "je wil ook
+niet nodeloos bubbels openklikken en je wil trouwens ook niet dat je altijd
+inzoomt bij bubbels klikken.")** Looked at in the browser the same day.
+**Airbnb** (airbnb.com/s/Lisbon, zoom 12.8 down to 9.8, "over 1,000 homes"):
+never a counted bubble at any zoom. It draws a ranked handful of full price
+pins (about ten to fifteen in view) plus small white unlabelled ovals,
+Airbnb's "mini-pins", for lower-ranked listings; the rest are simply not
+drawn, and zooming in draws more (Airbnb's help: "You can zoom in or move
+around the map to find additional listings that don't appear at first"). A
+tap or hover on any pin opens that listing's card; nothing ever zooms for
+you. Airbnb's engineering write-up says the full pins go to the listings most
+likely to be booked and mini-pins draw about eight times fewer clicks
+(airbnb.tech, "Improving search ranking for maps"). **Google Maps** web
+("parks in Lisbon", zoom 10.5 to 11): every result pin drawn, overlapping
+where they collide, labels dropped where there is no room; no counts, a tap
+opens the place. **Apple Maps** search results: the same, thinned by zoom.
+**AllTrails** sat behind its device check again. So a RESULTS map (Airbnb,
+Google Maps, Apple Maps) never piles into bubbles; a tap always reaches a
+thing. Counted bubbles with a tap that zooms are MapKit's default for a
+library of annotations and the web clustering libraries' default (the
+2026-10-20 table above), used by komoot's highlights and iNaturalist's
+observations. Both are conventions; they answer different questions
+("which should I look at" versus "how many are here"). Open with Hidde
+2026-10-24: which one every surface follows.
+
 Read 2026-08-29, after Hidde saw two trees a couple of streets apart in Baarn
 drawn as a bubble marked 2:
 - https://maplibre.org/maplibre-style-spec/sources/
