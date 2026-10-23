@@ -248,7 +248,9 @@
      "lat": 52.35821,
      "lng": 4.874136,
      "cats": "Category:CC-BY-SA-3.0 Category:Jacob Obrechtstraat 2, Amsterdam Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photographs by Ben Bender Category:Photos from Panoramio Category:Photos from Panoramio ID 4678999",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: villa facades, no poplar"
     },
     {
      "title": "File:Vondel park - panoramio (3).jpg",
@@ -4409,7 +4411,9 @@
      "lat": 47.4982184,
      "lng": 19.0527998,
      "cats": "Category:CC-BY-SA-3.0 Category:Danubius Fountain Category:Files with coordinates missing SDC location of creation Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 1164929",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: Danubius fountain in grey winter light, distant bare trees and a birch"
     },
     {
      "title": "File:Budapest 20260412 180659.jpg",
@@ -4644,7 +4648,9 @@
      "lat": 47.498109,
      "lng": 19.052806,
      "cats": "Category:CC-BY-3.0 Category:Files with coordinates missing SDC location of creation Category:Hungary photographs taken on 2011-03-05 Category:Népdal (Horvay János, 1929) Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 5152111",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: bronze shepherd statue, thin bare trunks behind; no black locust as subject"
     },
     {
      "title": "File:Evening reflections in Budapest (52755154027).jpg",
@@ -12118,7 +12124,9 @@
      "lat": 52.367516,
      "lng": 4.909065,
      "cats": "Category:Amsterdam-Centrum Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2006-05-14 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 642024",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: Wertheimpark gate with sphinx pillars, not the Hortus Turkish hazel"
     }
    ],
    "exhausted": "2026-08-08: both candidates are other Hortus-corner and Wertheim park scenes",
@@ -16475,7 +16483,9 @@
      "lat": 52.367258,
      "lng": 4.907109,
      "cats": "Category:Brug 233, Dr. D.M. Sluyspad Category:CC-BY-3.0 Category:Hortusplantsoen, Amsterdam Category:Netherlands photographs taken on 2012-04-10 Category:Nieuwe Herengracht, Amsterdam Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: canal view with distant bare trees, no Turner's oak as subject"
     },
     {
      "title": "File:Camassia leichtlinii (Asparagaceae) (26796834794).jpg",
@@ -22214,7 +22224,9 @@
      "lat": 52.367516,
      "lng": 4.909065,
      "cats": "Category:Amsterdam-Centrum Category:CC-BY-SA-3.0 Category:Netherlands photographs taken on 2006-05-14 Category:Panoramio files uploaded by Panoramio upload bot Category:Panoramio images reviewed by trusted users Category:Photos from Panoramio Category:Photos from Panoramio ID 642024",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: Wertheimpark gate with sphinx pillars and a cyclist; no oriental plane as subject"
     }
    ],
    "exhausted": "All five judged: a park path view, and an iNaturalist pair that is a worm's-eye trunk shot plus bark. Commons and iNat hold no portrait of this plane.",
@@ -83537,7 +83549,9 @@
      "lat": 52.09328611,
      "lng": 5.12293056,
      "cats": "Category:CC-BY-3.0 Category:GFDL Category:Janskerkhof 13, Utrecht Category:License migration redundant Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: house facade at Janskerkhof, only a leaf corner of a tree"
     },
     {
      "title": "File:Mie de Waschvrouw (18179115143).jpg",
@@ -83889,7 +83903,9 @@
      "lat": 52.09338056,
      "lng": 5.12635,
      "cats": "Category:CC-BY-3.0 Category:GFDL Category:License migration redundant Category:Lucasbolwerk 8, Utrecht Category:Rijksmonumenten missing SDC inception Category:Rijksmonumenten with known IDs Category:Self-published work Category:Taken with Panasonic Lumix DMC-TZ10",
-     "source": "last-resort"
+     "source": "last-resort",
+     "judged": "reject",
+     "verdict": "Viewed: building facade, no tree"
     },
     {
      "title": "File:Lucasbrug.jpg",
@@ -143377,6 +143393,10 @@
   {
    "date": "2026-09-01",
    "note": "Third session viewing pass the same evening. The queue was dry for the demand roster, so the sweep was re-run with --recheck on twelve photo-less cities holding trees that had never been asked at all (Las Vegas, New Orleans, Oahu, Maastricht, Houston, Venlo, Rouen, Toronto, Seattle, Sorrento, Perugia, Rotterdam). That produced new candidates and three approvals: the Hitachi Tree on Oahu, and the Tree of Life and the Dueling Oak in New Orleans. The lesson for the next pass is that asking a city that was never asked beats re-scoring a city that was: two of the three best photographs of the whole evening came out of this sweep."
+  },
+  {
+   "date": "2026-10-23",
+   "note": "Kept-set viewing pass found NO fetchable candidate: every unjudged candidate on a photo-less kept-set tree is last-resort, 505 with no geotag and 215 at 30 to 100 m (photo_fetch's 30 m gate). Seven of the most tree-like titles in the 30 to 48 m band were viewed anyway (Wertheimpark, Lucasbolwerk, Janskerkhof, Erzsebet ter x2, Hortus canal, Museumkwartier): all buildings, a statue, a gate or a distant fountain, 0 approvals, which adds 8 rejects to the 30 m measurement. The kept set needs a fresh name-led sweep, not another viewing pass on this queue."
   }
  ]
 }
