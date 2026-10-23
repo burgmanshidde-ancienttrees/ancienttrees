@@ -564,7 +564,15 @@ struct BottomSheet<Header: View, Content: View>: View {
                         // 2026-10-12: "als er helemaal geen bomen zijn om te
                         // tonen moet je mss die lijst niet omhoog kunnen
                         // trekken").
-                        if locked { return }
+                        // LOCKED STOPS RAISING, NEVER LOWERING (Hidde,
+                        // 2026-10-23: "wanneer de lijst omhoog is en geen trees
+                        // in view krijg ik m niet meer naar beneden"). A sheet
+                        // raised over trees that then panned out of view must
+                        // still come down.
+                        if locked {
+                            drag = max(0, value.translation.height)
+                            return
+                        }
                         if height != .full {
                             // Below full height the sheet owns the finger in
                             // BOTH directions, which is what makes a swipe up
@@ -579,7 +587,7 @@ struct BottomSheet<Header: View, Content: View>: View {
                     .onEnded { value in
                         defer { handingOff = false }
                         guard drag != 0 else { return }
-                        let settled = target - value.translation.height
+                        let settled = target - (locked ? max(0, value.translation.height) : value.translation.height)
                         let next = SheetHeight.allCases.min {
                             abs(($0 == .full ? page : stop($0)) - settled)
                                 < abs(($1 == .full ? page : stop($1)) - settled)
