@@ -1281,6 +1281,37 @@ def check_one_tree_places_have_no_question_page():
     return out
 
 
+def check_one_season_draws_one_badge():
+    """A tree's year never carries two badges of the same kind.
+
+    Hidde, 2026-10-15 on the Santo Amaro olives ("does this tree have fruit
+    twice?") and again 2026-10-24 on the Paiva Couceiro ginkgo ("there are
+    still two icons"): the species calendar, shifted for latitude, landed its
+    autumn moment one month from the tree's own best_time and both were drawn.
+    seasonBlock() in site/src/lib/phenology.ts draws at most one badge per
+    kind; this reads every built tree page and refuses a second badge whose
+    icon is the same as another's. Removing this check needs Hidde.
+    """
+    out = []
+    for page in sorted(DIST.rglob("*.html")):
+        html = page.read_text(encoding="utf-8", errors="replace")
+        if 'class="season-plot"' not in html:
+            continue
+        icons = re.findall(r'<span class="sc-peakbadge"[^>]*>(.*?)</span>', html, re.S)
+        seen = set()
+        for icon in icons:
+            key = re.sub(r"\s+", "", icon)
+            if key in seen:
+                out.append(str(page.relative_to(DIST)))
+                break
+            seen.add(key)
+    if out:
+        return ["%d tree page(s) draw two season badges of the same kind, one season "
+                "gets one badge (phenology.ts seasonBlock), e.g. %s"
+                % (len(out), ", ".join(out[:5]))]
+    return []
+
+
 def check_an_organisation_beside_a_name_was_asked_for():
     """An ambassador's organisation is printed only on an explicit yes.
 
@@ -3167,6 +3198,7 @@ def main():
     failures += check_save_flow_integrity()
     failures += check_the_session_is_known_before_anything_asks()
     failures += check_tick_has_its_wiring()
+    failures += check_one_season_draws_one_badge()
     failures += check_every_tree_you_gave_us_comes_back()
     failures += check_hidden_means_hidden()
     failures += check_css_braces_balance()

@@ -526,9 +526,13 @@ export function seasonBlock(tree: Tree, lat: number): string {
   // badge sat on Nov, and the species' fruit moment in Oct drew a second one.
   // A species moment of the same kind inside the tree's own months is that
   // same season, so it is not drawn again.
-  const btMonths = hasBt ? bt.months ?? [] : [];
+  // 2026-10-24, the Paiva Couceiro ginkgo (Hidde: "there are still two icons"):
+  // the species' colour month is shifted a month earlier for Lisbon's latitude
+  // (October), the tree's own best_time says November, and the month test let
+  // both through. The same KIND as the tree's own peak is the same season
+  // whatever month the species calendar lands on; the tree's months win.
   for (const mo of moments) {
-    const sameSeason = mo.kind === kind && mo.month !== null && btMonths.includes(mo.month);
+    const sameSeason = mo.kind === kind;
     if ((mo.word === "striking" || mo.word === "worth the trip") && mo.month !== peakM && mo.month !== null && !sameSeason) {
       badges.push(badge(mo.month, mo.kind));
       marked.push([mo.month, mo.kind]);
