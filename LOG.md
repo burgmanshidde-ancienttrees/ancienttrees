@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, sixteenth attempt: nothing shipped
+
+- No claims standing, inbox empty, READY is 3 photo-less own trees (oxford 2, madrid 1) and `SUPPLY_PAUSED` is True, so no write pass. `enrich.py --next`, `recognise.py --stuck` and `pagegaps.py` all report nothing to do. The 54 "awaiting a writer" trees cannot go live while supply is paused.
+- I reran `photo_hunt.py --recheck` against the fifteenth entry's note: 0 new candidates again. Stirling was retried twice today already, still stalled. iOS failure is the same appfit hang, nothing new.
+- Do not rerun any of the above until Search Console moves or a reader's tree arrives.
 ## 2026-10-23 night run, fifteenth attempt (22:50): nothing shipped
 
 - Inbox empty, READY the same 3 photo-less own trees (supply paused). health.py exit 1 is only the iOS app: both failed runs (40013002762, 40017321068) died in appfit's `xcodebuild test` hanging past 30 minutes on the iPhone SE simulator, then the 110-minute cap; the appsweep after it produced 40 screenshots. A runner hang, no assertion failure, and the run before succeeded, so no source fix is possible from this runner. For Hidde: nothing yet; if the next scheduled iOS run hangs too, the SweepFrames step needs a look on the Mac.
