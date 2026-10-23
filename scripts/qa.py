@@ -2318,6 +2318,44 @@ def _lastmod_counts(date):
     return n, len(entries)
 
 
+def check_every_web_map_piles_with_the_same_numbers():
+    """Every map on the website that draws trees piles them with the SAME three
+    numbers, read from lib/map.ts, and the city map is one of them.
+
+    Hidde, 2026-10-15: "map interaction need to stay consistent so do
+    everywhere"; 2026-10-24, on /lisbon's 36 pins drawn over each other while
+    /explore, the country maps, My trees and the app showed counted bubbles:
+    "kunnen we die interacties gelijk houden?". The city map had been the one
+    map left out, because its pins are DOM markers that MapLibre cannot pile
+    by itself; it now carries a clustered source of its own trees
+    (city-map-script.ts, 'citytrees') that decides which pins show.
+
+    Two things refuse here: the city map losing that source again, and any
+    map file writing the radius, distance or last zoom as a literal instead
+    of the shared constant, which is how two surfaces drift apart (the web
+    piled to zoom 11 while the app piled to 15 until 2026-10-20).
+
+    Removing this needs Hidde."""
+    problems = []
+    lib = ROOT / "site" / "src" / "lib"
+    city = (lib / "city-map-script.ts").read_text()
+    for want in ("addSource('citytrees'", "cluster: true",
+                 "clusterMaxZoom: ${CLUSTER_MAX_ZOOM}", "clusterRadius: ${CLUSTER_DISTANCE}",
+                 "querySourceFeatures('citytrees')"):
+        if want not in city:
+            problems.append("city-map-script.ts no longer piles the city's own trees "
+                            "through the shared clustered source (missing %r)" % want)
+    literal = re.compile(r"(clusterRadius|clusterMaxZoom|'circle-radius')\s*:\s*\d")
+    for f in sorted(lib.glob("*map*.ts")):
+        for i, line in enumerate(f.read_text().splitlines(), 1):
+            m = literal.search(line)
+            # The tree dot (radius 7) is a pin, not a pile; only a pile's radius is shared.
+            if m and not (m.group(1) == "'circle-radius'" and "cluster" not in line.lower() and "pile" not in line.lower()):
+                problems.append("%s:%d writes a pile number as a literal; read it from lib/map.ts (%s)"
+                                % (f.name, i, line.strip()[:70]))
+    return problems
+
+
 def check_the_noindex_split_holds():
     """Pages Google alone is asked not to list carry the googlebot tag and only
     that; everything else on the noindex list carries the generic robots tag;
@@ -3160,6 +3198,7 @@ def main():
         check_hidden_means_hidden,
         check_an_organisation_beside_a_name_was_asked_for,
         check_app_crashes_reach_a_person,
+        check_every_web_map_piles_with_the_same_numbers,
     ]
     if args.source_only:
         # The photo checks are left out on purpose: they read every image in

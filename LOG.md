@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24 city map piles its own trees like every other map (live)
+
+Hidde, on /lisbon (36 trees): the city map drew every species pin over the others zoomed out while /explore, the country maps, My trees and the app showed counted bubbles ("kunnen we die interacties gelijk houden?"). The city map now carries a clustered source of its own trees that decides which DOM pins show and draws the same moss bubble with the count, from the shared numbers in lib/map.ts (radius 13, distance 40, piles to zoom 14); a tap zooms to where the bubble parts, past zoom 14 the species pins and the same-spot stacks are back, and a selected tree flies to 15.5 so its pin never lands inside a bubble. Checked on a mockup of the live pages at 375px and desktop: Lisbon 6+2+16+10 plus two pins, Palermo, London 27 in six piles plus five, Bruges one 2 beside two pins. qa `check_every_web_map_piles_with_the_same_numbers()` refuses a map file writing those numbers as literals. CONVENTIONS.md "How close two pins have to be" got the dated line. Seen in passing, not fixed: /london at 375px opens at zoom 8.4, below FAR, so the live page shows one 32 bubble and no pins until you zoom in.
+
 ## 2026-10-23 night run, seventh attempt: nothing published
 
 No claims stood. READY is still 3 (Oxford 2, Madrid 1, no photos, supply paused). Staged-city and refill advice only adds leads while `SUPPLY_PAUSED` holds; Stirling register already retried today. Nothing dispatched.

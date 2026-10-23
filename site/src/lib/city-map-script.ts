@@ -20,7 +20,7 @@
 // proximity check that needed it went; there is no duplicate of it left here.
 import {MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
-import { mapScript, CLUSTER_RADIUS, CLUSTER_DISTANCE } from "./map";
+import { mapScript, CLUSTER_RADIUS, CLUSTER_DISTANCE, CLUSTER_MAX_ZOOM } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
@@ -209,18 +209,78 @@ if (OTHER_CITIES.features.length) {
     map.on('mouseleave', 'othercity', function() { map.getCanvas().style.cursor = ''; });
   });
 }
-function updatePinsFar() {
+// THIS CITY'S OWN TREES PILE LIKE EVERY OTHER MAP'S (Hidde, 2026-10-24, on
+// /lisbon's 36 pins drawn over each other: "kunnen we die interacties gelijk
+// houden?"; 2026-10-15: "map interaction need to stay consistent so do
+// everywhere"). The pins are DOM markers with the species drawn on them, so
+// MapLibre cannot pile them itself. A clustered source of the same trees,
+// never drawn as pins, says which trees stand alone at this zoom and draws
+// the bubble for the rest: the explore map's own bubble, same radius, same
+// distance, same last zoom (lib/map.ts, one place for the numbers). A tap
+// zooms to where the bubble parts, as on /explore. Past CLUSTER_MAX_ZOOM
+// every pin is back and only the same-spot stacks below remain. Under FAR
+// the othercities source already folds this city into the world's clusters.
+var CITY_TREES = {type: 'FeatureCollection', features: markers.map(function(m, i) {
+  return {type: 'Feature', geometry: {type: 'Point', coordinates: [m.lng, m.lat]}, properties: {i: i}};
+})};
+var cityPilesReady = false;
+if (markers.length > 1) {
+  map.on('load', function() {
+    if (map.getSource('citytrees')) { return; }
+    var from = OTHER_CITIES.features.length ? FAR : 0;
+    map.addSource('citytrees', {type: 'geojson', data: CITY_TREES, cluster: true,
+      clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE}});
+    map.addLayer({id: 'citypile', type: 'circle', source: 'citytrees', minzoom: from,
+      filter: ['has', 'point_count'],
+      paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${CLUSTER_RADIUS},
+              'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+    map.addLayer({id: 'citypile-n', type: 'symbol', source: 'citytrees', minzoom: from,
+      filter: ['has', 'point_count'],
+      layout: {'text-field': ['get', 'point_count_abbreviated'], 'text-font': ['Noto Sans Regular'],
+               'text-size': 12, 'text-allow-overlap': true},
+      paint: {'text-color': '#F6F2E9'}});
+    map.on('click', 'citypile', function(e) {
+      var f = e.features[0];
+      map.getSource('citytrees').getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
+        map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
+      });
+    });
+    map.on('mouseenter', 'citypile', function() { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', 'citypile', function() { map.getCanvas().style.cursor = ''; });
+    cityPilesReady = true;
+    // The source piles per tile, and a tile arrives after the camera does.
+    map.on('sourcedata', function(e) { if (e.sourceId === 'citytrees' && e.isSourceLoaded) { updatePins(); } });
+    map.on('idle', updatePins);
+    updatePins();
+  });
+}
+function updatePins() {
   // The opening fitBounds fires 'zoom' before the pins exist (var pins is
   // hoisted but still undefined), and a throw there stopped every pin being
   // drawn (Hidde, 2026-10-10: "they dont show any pins anymore").
-  if (!pins) { return; }
+  if (!pins || !STACKS) { return; }
   var far = OTHER_CITIES.features.length > 0 && map.getZoom() < FAR;
-  for (var i = 0; i < pins.length; i++) { pins[i].style.visibility = far ? 'hidden' : ''; }
-  document.querySelectorAll('.pin-stack, .stack-legs-host').forEach(function(el) {
-    el.style.visibility = far ? 'hidden' : '';
-  });
+  // Which trees stand alone at this zoom is the source's own answer: a tree
+  // inside a pile is not among the loose features it hands back. Past the
+  // last piling zoom nothing piles, so nothing is asked.
+  var loose = null;
+  if (!far && cityPilesReady && map.getZoom() < ${CLUSTER_MAX_ZOOM} + 1) {
+    // A tile still on its way would answer with no trees at all and hide
+    // every pin for a frame; the sourcedata handler comes back when it lands.
+    if (!map.isSourceLoaded('citytrees')) { return; }
+    loose = {};
+    map.querySourceFeatures('citytrees').forEach(function(f) {
+      if (!f.properties.cluster) { loose[f.properties.i] = true; }
+    });
+  }
+  function on(i) { return !far && (loose === null || loose[i] === true); }
+  for (var i = 0; i < pins.length; i++) { pins[i].style.visibility = on(i) ? '' : 'hidden'; }
+  // A same-spot stack is inside a pile when its trees are; a spread stack's
+  // legs only exist at zoom 17, where nothing piles.
+  STACKS.forEach(function(s) { s.bubble.style.visibility = s.ix.some(on) ? '' : 'hidden'; });
+  document.querySelectorAll('.stack-legs-host').forEach(function(el) { el.style.visibility = far ? 'hidden' : ''; });
 }
-map.on('zoom', updatePinsFar);
+map.on('move', updatePins);
 var CHOOSER_CITIES = ${chooserCitiesJson};
 var cityPanel = document.querySelector('.panel');
 // The chooser goes INSIDE the sheet's scroller, never beside it. .panel's own
@@ -325,7 +385,7 @@ function setActive(idx, fly, scroll) {
     }
   }
   if (fly === 'keep') { map.easeTo({ center: [m.lng, m.lat], duration: 600, offset: flyOffset }); }
-  else if (fly) { map.flyTo({ center: [m.lng, m.lat], zoom: 14.5, duration: 1200, offset: flyOffset }); }
+  else if (fly) { map.flyTo({ center: [m.lng, m.lat], zoom: ${CLUSTER_MAX_ZOOM} + 1.5, duration: 1200, offset: flyOffset }); }
 }
 
 // --- a tapped pin -------------------------------------------------------------
@@ -568,7 +628,7 @@ function paintStacks() {
   });
 }
 if (markers.length > 1) { map.fitBounds(HOME, { padding: 70, maxZoom: 13 }); }
-updatePinsFar();
+updatePins();
 
 // A tap on a card OPENS the tree since 2026-10-04 (TreeCard.astro: the whole
 // card is one link, as in the app and on AllTrails and Airbnb). What the list

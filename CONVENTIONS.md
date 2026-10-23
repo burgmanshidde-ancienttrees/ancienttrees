@@ -1329,6 +1329,17 @@ zoom 12 and 15 where the app drew a bubble. Read 2026-10-20:
 - https://developer.apple.com/documentation/mapkit/mkclusterannotation
 - https://developer.apple.com/documentation/mapkitjs/clustering-annotations
 
+**The city map too (2026-10-24).** Hidde, on /lisbon's 36 species pins drawn
+over each other at the opening zoom while /explore, the country maps, My
+trees and the app showed counted bubbles: "kunnen we die interacties gelijk
+houden?" The city map's pins are DOM markers, which MapLibre cannot pile, so
+it now carries a clustered source of its own trees (`citytrees` in
+city-map-script.ts) with the SAME three numbers from lib/map.ts; the source
+decides which pins show and draws the bubble for the rest, a tap zooms to
+where the bubble parts, and past zoom 14 the pins and the same-spot stacks
+are back. qa's `check_every_web_map_piles_with_the_same_numbers()` refuses a
+map file that writes those numbers as literals.
+
 Read 2026-08-29, after Hidde saw two trees a couple of streets apart in Baarn
 drawn as a bubble marked 2:
 - https://maplibre.org/maplibre-style-spec/sources/
