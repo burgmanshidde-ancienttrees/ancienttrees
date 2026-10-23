@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, third attempt: nothing published
+
+No claims stood. READY is still 3 (Oxford 2, Madrid 1, no photos). The written batches parked earlier (photo-batch-2: 10, texas-famous: 4) are own supply, so they stay unmerged while `SUPPLY_PAUSED` holds. Sightings 0, enrichment nothing to do. health.py's "deploy skipped" is only cancelled or skipped runs from pushes landing close together, not a failing build.
+
 ## 2026-10-23 night run, second attempt: nothing published
 
 No claims stood, READY is 3 (Oxford 2, Madrid 1, no photos, supply paused). `photo_hunt.py --recheck` swept 40 more trees, no new candidates. Claimed Bamberg for a verify pass, found it already holds its 9 trees and only 6 open leads, released it (now a 48h wall in data/walls.json). Munich is full (63 of 60). Stirling register retry was done in the first attempt. Nothing worth dispatching while supply is paused.
