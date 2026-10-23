@@ -3828,3 +3828,17 @@ coordinates and no licence sentence could be read. No proving sentence, so
 nothing imported. Tempe's tree inventory is CC BY 4.0 point data but is a full
 street-tree inventory, which layer 2 does not take. No Phoenix or Scottsdale
 heritage-tree dataset found.
+
+## Mapillary as a photo source: tried 2026-10-23, verdict "a life check, rarely a photograph"
+
+Hidde, 2026-10-23, after finding the Catania figs on Google Street View: "ja probeer maar". Google's imagery is never usable (its terms forbid it, and CLAUDE.md excludes it), so Mapillary, the volunteer street-level archive, was the open alternative.
+
+**Licence.** Mapillary's help centre says all images are shared under CC BY-SA 4.0 and gives the credit line: the image linked, "by" the username linked to the profile, "licensed under CC-BY-SA". Images uploaded before 29 April 2014 were CC BY-NC. Not checked: whether Mapillary's own Terms of Use add limits (a 2016 forum thread says they restrict building place databases); read them before the first image ships. Sources: help.mapillary.com article 115001770409 (403 to curl, read through search), the Mapillary blog of 2014-03-17, Wikipedia.
+
+**Access.** Every API call needs a client token from mapillary.com/dashboard/developers (the graph API answers 500 and the tiles 403 without one). A token means a Mapillary account, which a session may not create (hard list 5): Hidde's to make if we go on. The web viewer works without an account.
+
+**Two trees looked at in the viewer:**
+- Catania, Piazza Santa Maria del Gesù (the r/sicily tip): coverage, a walked sequence by robot8a dated 5 September 2026. The big Ficus macrophylla trunks show at the edge of the frames, under the canopy, never filling one. Proves the trees stood seven weeks ago and where on the square; not a page photograph.
+- Den Bosch, Sint Janskerkhof plane (dbo_005): coverage, a dashcam sequence through a windscreen facing the Janshuis; the tree is not in the frame nearest the pin.
+
+**Verdict.** Mapillary frames are dashcam and walking captures: the tree is at the edge, behind glass, or out of shot, so almost none meets the Cadiz standard. What it is good for is the rung-3 question no register answers, whether a street or square tree still stands, with a date, and which trunk sits where. If Hidde makes the token, the first use is a life check in scripts/lifecheck.py for trees on streets and squares (images within 50 m, newest capture date), not a photo lane. Photographs from it only by hand, one frame at a time, credited "by <username>, CC BY-SA 4.0".
