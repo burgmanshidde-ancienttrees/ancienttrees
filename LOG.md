@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, fourth attempt: nothing published
+
+No claims stood. READY is 3 (Oxford 2, Madrid 1, no photos, supply paused, so no write pass). Enrichment and page gaps: nothing to do. prepare.py's staged-city and refill advice assumes supply is open; with `SUPPLY_PAUSED` a verify pass would only add leads, and the walls already hold the likely cities. Stirling already retried three times today, not repeated. Nothing dispatched.
+
 ## 2026-10-23 night run, third attempt: nothing published
 
 No claims stood. READY is still 3 (Oxford 2, Madrid 1, no photos). The written batches parked earlier (photo-batch-2: 10, texas-famous: 4) are own supply, so they stay unmerged while `SUPPLY_PAUSED` holds. Sightings 0, enrichment nothing to do. health.py's "deploy skipped" is only cancelled or skipped runs from pushes landing close together, not a failing build.
