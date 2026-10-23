@@ -31,6 +31,10 @@ Rung 1 and 2 clear (0 sightings waiting, health green). Own supply is paused, so
 
 App: a raised list on the map stayed stuck once no trees were in view (Hidde's report). The empty-list lock now stops raising only, never lowering (BottomSheet.swift). Checked on the iPhone 17 Pro simulator: raised over Amsterdam, panned to Ruigoord, dragged down to peek, and an upward swipe still leaves it down. For Hidde: next build carries this fix.
 
+## 2026-10-24 session: the six weeks concentrate on Lisbon
+
+After the cold-start research (reports/Kip ei start van content apps.md: nine apps, every one grew contributors in one dense place with a few named people), Hidde chose Lisbon ("Yes, Lisbon"). GO_TO_MARKET.md carries the revised plan and the measure: Lisbon trees with a stranger's photograph, 5 today, ten by 2026-12-05. Lisbon stands at 36 trees, 18 approved photos, 32 confirmed pins; Commons is judged out for the 18 photo-less trees (every candidate rejected by 10-19), so photographs come from people. A search pass found fifteen people and bodies who already photograph Lisbon's trees (drafts/lisbon-ten.md, local: Commons uploaders, three juntas, Gigantes Verdes, a tree-walk organiser), and ten first mails are drafted in drafts/lisbon-ten-mails.md, one tree each, for Hidde to send two or three a week. Side finding: JF Penha de França's felling notice of 10-20 on Praça Paiva Couceiro is a white poplar, not our ginkgo (lis_008 stands). Instagram: six posts drafted as a business card (drafts/instagram-first-six.md).
+
 ## 2026-10-24 session: Wilder's article is out, four followed links
 
 wilder.pt published the Lisbon interview on 2026-10-23 (Ines Sequeira): links to the home page, /lisbon, /porto and /contribute, all followed, no App Store link. The second press placement ever and the first with links. Watched by backlinks.py, contacts_db marks Wilder linked, details in drafts/OUTREACH.md. Nothing in the product changed; the digest's GA and Portugal download rows are where it shows from 10-25.
