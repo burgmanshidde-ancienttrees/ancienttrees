@@ -1,2388 +1,2391 @@
 {
-  "_note": "One verdict per reader submission. See DECISIONS.md 2026-09-23.",
-  "judgements": [
-    {
-      "id": "sight:84ebae36-c683-4d39-86ac-a7db33d70910",
-      "seen": "before 2026-09-23",
-      "kind": "photo of a tree we map",
-      "tree": "The Twisted Muku of Omiya Gate, Kyoto Gyoen",
-      "city": "Kyoto",
-      "species": "Muku Tree (Aphananthe aspera)",
-      "photo": "https://ancienttrees.app/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Recorded retroactively on 2026-09-23: approved by a viewing pass; reason in the photo note",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
-      "seen": "2026-10-20",
-      "kind": "photo of a tree we map",
-      "tree": "The Weeping Fig of Campo Santana",
-      "city": "Lisbon",
-      "species": "Weeping Fig (Ficus benjamina)",
-      "photo": "p_0ca44ad155ecd346c570f251/BF8D0DF1-B2D1-4E04-90E8-A2B7FB8FE61F.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 129,
-      "current_photo": "held",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable"
-      },
-      "verdict": "publish",
-      "reason": "Looked at it: large fig with hanging aerial roots in daylight and colour, trunk and crown fill the frame, park and playground behind; GPS fix 129 m from the pin confirmed it; replaces a held panoramio photo.",
-      "hidde": "ja, eens",
-      "agreed": true,
-      "shown": [
-        "2026-10-21",
-        "2026-10-22"
-      ]
-    },
-    {
-      "id": "lead:9b10ae23-bba4-4af8-a9ae-95b93aba9209",
-      "seen": "2026-10-20",
-      "kind": "a tree we do not map",
-      "tree": "Dragon Tree in Lisbon",
-      "city": null,
-      "species": "Dragon Tree",
-      "photo": "p_742e4f4b38d1bead996f5a7d/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
-      "reader_note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Dragon Tree"
-      },
-      "verdict": "publish",
-      "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
-      "hidde": "ja, eens",
-      "agreed": true,
-      "shown": [
-        "2026-10-21",
-        "2026-10-22"
-      ]
-    },
-    {
-      "id": "sight:c33bbde9-798f-4a25-a895-b2a0adb0fbc2",
-      "seen": "2026-10-20",
-      "kind": "photo of a tree we map",
-      "tree": "The Moreton Bay Fig of Jardim Constantino",
-      "city": "Lisbon",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "photo": "out/sightings/c33bbde9-798f-4a25-a895-b2a0adb0fbc2.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 0,
-      "current_photo": "approved",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Looked at it: whole buttressed crown and surface roots in daylight, tree fills the frame, matches the recognition line; added beside the existing photograph.",
-      "hidde": "ja, eens",
-      "agreed": true,
-      "shown": [
-        "2026-10-21",
-        "2026-10-22"
-      ]
-    },
-    {
-      "id": "sight:8215fd62-ee37-4a5c-a9db-e264948aa7dd",
-      "seen": "2026-10-20",
-      "kind": "photo of a tree we map",
-      "tree": "The Moreton Bay Fig of Jardim Constantino",
-      "city": "Lisbon",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "photo": "out/sightings/8215fd62-ee37-4a5c-a9db-e264948aa7dd.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 0,
-      "current_photo": "approved",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Looked at it: wide view of the same spreading fig crown and surface roots beside the play area; added beside the others.",
-      "hidde": "ja, eens (zelfde boom, alle vier eens 2026-10-22)",
-      "agreed": true
-    },
-    {
-      "id": "sight:85adce04-5a65-40b2-a9e2-204356105fd2",
-      "seen": "2026-10-20",
-      "kind": "photo of a tree we map",
-      "tree": "The Paperbark of Jardim Constantino",
-      "city": "Lisbon",
-      "species": "Prickly Paperbark (Melaleuca styphelioides)",
-      "photo": "out/sightings/85adce04-5a65-40b2-a9e2-204356105fd2.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 0,
-      "current_photo": "approved",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Looked at it: full trunk with papery peeling bark and plaque, matches the recognition line; added.",
-      "hidde": "ja, eens",
-      "agreed": true,
-      "shown": [
-        "2026-10-21",
-        "2026-10-22"
-      ]
-    },
-    {
-      "id": "sight:61edc8cd-a91d-4c97-af90-e26427894d86",
-      "seen": "2026-10-20",
-      "kind": "photo of a tree we map",
-      "tree": "The Weeping Fig of Campo Santana",
-      "city": "Lisbon",
-      "species": "Weeping Fig (Ficus benjamina)",
-      "photo": "out/sightings/61edc8cd-a91d-4c97-af90-e26427894d86.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 0,
-      "current_photo": "approved",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Looked at it: huge fluted fig trunk with plaque, glossy leaves and hanging roots in daylight; added.",
-      "hidde": "ja, eens (zelfde boom, alle vier eens 2026-10-22)",
-      "agreed": true
-    },
-    {
-      "id": "sight:9b10ae23-bba4-4af8-a9ae-95b93aba9209",
-      "seen": "2026-10-20",
-      "kind": "photo of a tree we map",
-      "tree": "Dragon Tree in Lisbon",
-      "city": null,
-      "species": "Dragon Tree",
-      "photo": "p_742e4f4b38d1bead996f5a7d/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
-      "reader_note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Dragon Tree"
-      },
-      "verdict": "publish",
-      "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
-      "hidde": "ja, eens (zelfde boom, alle vier eens 2026-10-22)",
-      "agreed": true
-    },
-    {
-      "id": "sight:ed90210d-8ed3-4c85-8af7-f75f6f34ff15",
-      "seen": "2026-10-19",
-      "kind": "photo of a tree we map",
-      "tree": "The Schönberg Beech above Ebringen",
-      "city": "Freiburg",
-      "species": "European Beech",
-      "photo": "p_c42cb7cb55255ee10572d165/ED90210D-8ED3-4C85-8AF7-F75F6F34FF15.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        47.9543033333333,
-        7.80672833333333
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about European Beech"
-      },
-      "verdict": "publish",
-      "reason": "Looked at the photograph (fetched 2026-10-20; it never reached the GitHub runner): a veteran beech on the Schönberg above Ebringen, split low into several moss-covered stems, one limb bending to the ground, a Rotbuche label on it; daylight, colour, tree fills the frame. No register or article within 300 m, no web source, no age or girth. Live as frb_008 under the 2026-10-12 reader rule (GPS fix, stranger's account); the page asks for a girth.",
-      "hidde": null,
-      "agreed": null,
-      "shown": [
-        "2026-10-21"
-      ]
-    },
-    {
-      "id": "lead:ed90210d-8ed3-4c85-8af7-f75f6f34ff15",
-      "seen": "2026-10-19",
-      "kind": "a tree we do not map",
-      "tree": "European Beech in Freiburg",
-      "city": null,
-      "species": "European Beech",
-      "photo": "p_c42cb7cb55255ee10572d165/ED90210D-8ED3-4C85-8AF7-F75F6F34FF15.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about European Beech"
-      },
-      "verdict": "publish",
-      "reason": "Same photograph as sight:ed90210d, looked at and live as frb_008 under the 2026-10-12 reader rule.",
-      "hidde": null,
-      "agreed": null,
-      "shown": [
-        "2026-10-21"
-      ]
-    },
-    {
-      "id": "lead:c86ff6bf-232a-499b-bf45-d34626073ac7",
-      "seen": "2026-10-18",
-      "kind": "a tree we do not map",
-      "tree": "The Tulip Tree of Cantonspark",
-      "city": null,
-      "species": "Tulip Tree (Liriodendron sp.)",
-      "photo": "p_6312cf4c9007b0fcfae9011c/C86FF6BF-232A-499B-BF45-D34626073AC7.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Tulip Tree (Liriodendron sp.)"
-      },
-      "verdict": "lead",
-      "reason": "Owner-account photograph (ours). No register entry, measurement or note sets it apart yet; no page until a source or a visible size does.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:9a081475-2fea-4507-85b9-4f3480a59f69",
-      "seen": "2026-10-18",
-      "kind": "photo of a tree we map",
-      "tree": "The Moreton Bay Fig of Jardim Constantino",
-      "city": "Lisbon",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "photo": "out/sightings/9a081475-2fea-4507-85b9-4f3480a59f69.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 30,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Moreton Bay Fig (Ficus macrophylla)"
-      },
-      "verdict": "publish",
-      "reason": "Looked at it: the fig whole, trunk, buttresses and spreading surface roots, the Prometheus statue behind; fig leaves and aerial roots match. First photograph of this tree, a stranger's, taken while collecting it in the app.",
-      "hidde": "Al besproken, akkoord",
-      "agreed": true
-    },
-    {
-      "id": "sight:3dcae924-1609-4868-b248-d493560024ef",
-      "seen": "2026-10-18",
-      "kind": "photo of a tree we map",
-      "tree": "The Moreton Bay Fig of Jardim Constantino",
-      "city": "Lisbon",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "photo": "out/sightings/3dcae924-1609-4868-b248-d493560024ef.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 103,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Moreton Bay Fig (Ficus macrophylla)"
-      },
-      "verdict": "publish",
-      "reason": "Looked at it: the same fig from under its 26 m crown, aerial roots and people for scale. Added beside the lead photograph.",
-      "hidde": "Al besproken, akkoord",
-      "agreed": true
-    },
-    {
-      "id": "sight:e52911e0-b8d8-4885-9255-dfbec62e6335",
-      "seen": "2026-10-18",
-      "kind": "photo of a tree we map",
-      "tree": "The Paperbark of Jardim Constantino",
-      "city": "Lisbon",
-      "species": "Prickly Paperbark (Melaleuca styphelioides)",
-      "photo": "out/sightings/e52911e0-b8d8-4885-9255-dfbec62e6335.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 12,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Prickly Paperbark (Melaleuca styphelioides)"
-      },
-      "verdict": "publish",
-      "reason": "Looked at it: the forked trunk in daylight, white papery peeling bark filling the frame, fine leaves against blue sky. First photograph of this tree, a stranger's, taken while collecting it in the app.",
-      "hidde": "Al besproken, akkoord",
-      "agreed": true
-    },
-    {
-      "id": "lead:f9336891-77a8-4a77-b859-a5940a4c5657",
-      "seen": "2026-10-18",
-      "kind": "a tree we do not map",
-      "tree": "A tree in Baarn",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/F9336891-77A8-4A77-B859-A5940A4C5657.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Owner-account photograph (mine, never credited) of a large old willow (Salix) trunk with a second stem, on a waterside bank in Baarn. Looked at the photograph: a big girth, but no register entry within 100 m, no Wikipedia article within 300 m, no note, age or girth given. Nearest tree we publish is 910 m away. Kept as a lead with its coordinate; a page needs a source or a measured girth.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:2aa7147b-3a7b-49eb-8b8a-da81f726eda1",
-      "seen": "2026-10-18",
-      "kind": "a tree we do not map",
-      "tree": "Moreton Bay Fig",
-      "city": null,
-      "species": "Moreton Bay Fig",
-      "photo": "p_3ede14c55de0e0de9b87562a/2AA7147B-3A7B-49EB-8B8A-DA81F726EDA1.jpg",
-      "reader_note": "The Mendoubia Moreton Bay Fig (Ficus macrophylla) is the most notable tree located in the Mendoubia Gardens (Jardin de la Mendoubia) in central Tangier, Morocco. Native to the subtropical coastal rainforests of eastern Australia, the species was introduced to North Africa in the late 19th century. Planted between the 1880s and 1900s during Tangier's diplomatic expansion, the tree was placed adjacent to the residency of the Mendoub (the representative of the Moroccan Sultan to the international a",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Moreton Bay Fig"
-      },
-      "verdict": "lead",
-      "reason": "Looked at the extra photograph on 2026-10-18 (main file was not on the runner): a huge Moreton Bay Fig with sweeping buttress roots beside the Jardin de la Mendoubia, Tangier; visibly big and worth the walk, the reader's age (about 120 to 140 years) is a basis. No register or encyclopaedia entry within 300 m. Morocco is out of focus (Africa, Hidde), so no verify pass now; kept as a lead with its coordinate, goes live when a source or a second account turns up.",
-      "hidde": "please put the moreton bay fig live forget about our focus areas - user content is the most valuable thing. if we have a good photo and gps then never hold back and just publish, especially if they give so much information; people can always tell us its wrong. our goal should be pages google loves instead of 100% sure",
-      "agreed": false,
-      "shown": [
-        "2026-10-21"
-      ]
-    },
-    {
-      "id": "sight:2aa7147b-3a7b-49eb-8b8a-da81f726eda1",
-      "seen": "2026-10-18",
-      "kind": "photo of a tree we map",
-      "tree": "The Moreton Bay Fig of the Mendoubia",
-      "city": "Tangier",
-      "species": "Moreton Bay Fig (Ficus macrophylla)",
-      "photo": "p_3ede14c55de0e0de9b87562a/2AA7147B-3A7B-49EB-8B8A-DA81F726EDA1.jpg",
-      "reader_note": "The Mendoubia Moreton Bay Fig (Ficus macrophylla) is the most notable tree located in the Mendoubia Gardens (Jardin de la Mendoubia) in central Tangier, Morocco. Native to the subtropical coastal rainforests of eastern Australia, the species was introduced to North Africa in the late 19th century. Planted between the 1880s and 1900s during Tangier's diplomatic expansion, the tree was placed adjacent to the residency of the Mendoub (the representative of the Moroccan Sultan to the international a",
-      "reader_girth_cm": null,
-      "coords": [
-        35.7851216666667,
-        -5.81336166666667
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Moreton Bay Fig"
-      },
-      "verdict": "publish",
-      "reason": "Looked at it: the whole Moreton Bay fig from buttress roots to crown in daylight and colour, the white Mendoubia building behind; GPS fix at the tree; the reader's note gives species, planting window, age and trunk measures. Live as tng_001 on Hidde's 2026-10-21 ruling (a good photo plus GPS goes live, focus areas or not), their words quoted on the page.",
-      "hidde": "please put the moreton bay fig live forget about our focus areas - user content is the most valuable thing (2026-10-21)",
-      "agreed": true,
-      "shown": [
-        "2026-10-21"
-      ]
-    },
-    {
-      "id": "lead:34bc1a6d-a58a-427c-985e-d252a97a697b",
-      "seen": "2026-10-15",
-      "kind": "a tree we do not map",
-      "tree": "The Meiji Jingu Gaien Ginkgo Avenue",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/34BC1A6D-A58A-427C-985E-D252A97A697B.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Duplicate of tok_009, The Meiji Jingu Gaien Ginkgo Avenue, live in Tokyo since the first pass; the inbox missed the match because the phone's fix was 588 m from our approximate pin (past the 30 m match radius) and about 150 m north of the Picture Gallery. Owner-account photograph, never published. Nothing new to judge.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:d9c08351-03d1-4b51-a6ec-972f08d308e8",
-      "seen": "2026-10-13",
-      "kind": "a tree we do not map",
-      "tree": "The Great Lawn Plane of Parc Montsouris",
-      "city": "Paris",
-      "species": "London Plane",
-      "photo": "p_1ca91d2bab15f40502a64368/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
-      "reader_note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
-      "reader_girth_cm": 450,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "near",
-        "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
-        "nearest": [
-          {
-            "lat": 48.8226040553664,
-            "lng": 2.3367012188551644,
-            "source": "paris-arbres-remarquables",
-            "designation": "Arbre remarquable de Paris",
-            "name": "Hêtre 'riversii'",
-            "species": "Fagus sylvatica",
-            "girth_cm": 420.0,
-            "height_m": 22.0,
-            "distance_m": 43.8
-          }
-        ]
-      },
-      "measure": {
-        "score": 0.879,
-        "via": "girth",
-        "note": "88% of the genus reference (512 cm, n=2, max 512)  THIN: fewer than ten records, treat as a hint"
-      },
-      "verdict": "publish",
-      "reason": "Viewed 2026-10-13: a whole London plane with a heart-shaped crown on the Grande pelouse of Parc Montsouris, daylight, tree fills the frame. Matched to the Ville de Paris inventory record 113345 (480 cm, 25 m), 33 m from the reader's GPS fix, which gives a confirmed pin and a written source. Published as par_034 on Hidde's yes; the night run's lead verdict judged the girth without opening the photograph.",
-      "hidde": "publish (2026-10-13, session: 'follow your suggestion')",
-      "agreed": false
-    },
-    {
-      "id": "sight:c067dcde-0600-4d9b-b42c-110224aae671",
-      "seen": "2026-10-12",
-      "kind": "photo of a tree we map",
-      "tree": "The Town Hall Plane",
-      "city": "Baarn",
-      "species": "London Plane (Platanus x acerifolia)",
-      "photo": "out/sightings/c067dcde-0600-4d9b-b42c-110224aae671.jpg",
-      "reader_note": "",
-      "match": "app",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Viewed: whole plane in leaf on the lawn before the building, daylight, fits the record. Hidde's own photograph, no credit; the tree had none, so it leads.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:96eaf812-a172-46c5-bc50-e84c565bf580",
-      "seen": "2026-10-12",
-      "kind": "photo of a tree we map",
-      "tree": "The Town Hall Plane",
-      "city": "Baarn",
-      "species": "London Plane (Platanus x acerifolia)",
-      "photo": "out/sightings/96eaf812-a172-46c5-bc50-e84c565bf580.jpg",
-      "reader_note": "",
-      "match": "app",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Viewed: trunk close-up of the same plane with the same building behind; added beside the lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:a0a58c4d-6a30-46f7-aec2-d6de44c6abcb",
-      "seen": "2026-10-12",
-      "kind": "photo of a tree we map",
-      "tree": "The Town Hall Plane",
-      "city": "Baarn",
-      "species": "London Plane (Platanus x acerifolia)",
-      "photo": "out/sightings/a0a58c4d-6a30-46f7-aec2-d6de44c6abcb.jpg",
-      "reader_note": "",
-      "match": "app",
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Viewed: a tree-label sign, not the tree. It names Platanus hispanica, 26 m, 110 cm diameter (our record says 450 cm girth).",
-      "hidde": null,
-      "agreed": null,
-      "shown": [
-        "2026-10-21"
-      ]
-    },
-    {
-      "id": "sight:c006895e-2256-4094-bca9-6d940476cd21",
-      "seen": "2026-10-12",
-      "kind": "photo of a tree we map",
-      "tree": "The Lagunària de la Llotja",
-      "city": "Palma de Mallorca",
-      "species": "Norfolk Island Hibiscus (Lagunaria patersonii)",
-      "photo": "out/sightings/c006895e-2256-4094-bca9-6d940476cd21.jpg",
-      "reader_note": "",
-      "match": "app",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "A fig nobody had mapped, beside La Llotja: the reader's photograph shows curtains of aerial roots worth the walk, and their GPS fix puts the pin on the trunk. No written source names it; published on Hidde's 2026-10-12 ruling that good reader input goes live, as The Fig of La Llotja (plm_006), species asked of readers. Not the Lagunaria (plm_003) it was tagged to.",
-      "hidde": "publish: Hidde's own call on 2026-10-12 ('if users have good input - just use it')",
-      "agreed": true
-    },
-    {
-      "id": "lead:7c8bec8f-b77b-415c-b4ec-a1589130c4a3",
-      "seen": "2026-10-06",
-      "kind": "a tree we do not map",
-      "tree": "A tree in Tokyo",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/7C8BEC8F-B77B-415C-B4EC-A1589130C4A3.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run (not in out/sightings). Nothing sets it apart yet. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:a4fa2700-1d89-4bf7-8f6e-0eafa60dc4d9",
-      "seen": "2026-10-06",
-      "kind": "a tree we do not map",
-      "tree": "A tree in Tokyo",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/A4FA2700-1D89-4BF7-8F6E-0EAFA60DC4D9.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:ae06e952-7de0-46ab-aada-af2be3d5c8ca",
-      "seen": "2026-10-06",
-      "kind": "a tree we do not map",
-      "tree": "Ginkgo in Tokyo",
-      "city": null,
-      "species": "Ginkgo",
-      "photo": "p_6312cf4c9007b0fcfae9011c/AE06E952-7DE0-46AB-AADA-AF2BE3D5C8CA.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Ginkgo"
-      },
-      "verdict": "lead",
-      "reason": "Own sighting of a ginkgo in Tokyo, nothing measurable; photograph not viewed this run. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:d0d4ee1d-a0c3-4c4f-966f-ee01f7ecb592",
-      "seen": "2026-10-06",
-      "kind": "a tree we do not map",
-      "tree": "A tree in Tokyo",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/D0D4EE1D-A0C3-4C4F-966F-EE01F7ECB592.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:038ab20e-98e0-4335-b154-08263b494999",
-      "seen": "2026-10-06",
-      "kind": "a tree we do not map",
-      "tree": "A tree in Tokyo",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/038AB20E-98E0-4335-B154-08263B494999.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:e0458b06-5210-49c5-9346-2380ad069f7f",
-      "seen": "2026-10-05",
-      "kind": "photo of a tree we map",
-      "tree": "The Southern Mahogany of Edinburgh Gardens",
-      "city": "Melbourne",
-      "species": "Southern Mahogany (Eucalyptus botryoides)",
-      "photo": "out/sightings/e0458b06-5210-49c5-9346-2380ad069f7f.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": ""
-      },
-      "verdict": "publish",
-      "reason": "Viewed: eucalyptus with rough fibrous bark and broad crown fits the record (434 cm, 25 m); tree had no photograph, so it leads.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:1b9adcb8-c06f-48b5-b8c0-398f6227a257",
-      "seen": "2026-10-05",
-      "kind": "photo of a tree we map",
-      "tree": "The Finer Holm Oak of Edinburgh Gardens",
-      "city": "Melbourne",
-      "species": "Holm Oak (Quercus ilex)",
-      "photo": "out/sightings/1b9adcb8-c06f-48b5-b8c0-398f6227a257.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": ""
-      },
-      "verdict": "hold",
-      "reason": "Viewed: bare deciduous forked tree, not an evergreen holm oak; rejected as wrong tree.",
-      "hidde": "hold: a bare deciduous tree, not our evergreen holm oak (discussed 2026-10-13)",
-      "agreed": true
-    },
-    {
-      "id": "lead:d9c08351-03d1-4b51-a6ec-972f08d308e8",
-      "seen": "2026-10-05",
-      "kind": "a tree we do not map",
-      "tree": "London Plane in Paris",
-      "city": "Paris",
-      "species": "London Plane",
-      "photo": "p_1ca91d2bab15f40502a64368/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
-      "reader_note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
-      "reader_girth_cm": 450,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "near",
-        "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
-        "nearest": [
-          {
-            "lat": 48.8226040553664,
-            "lng": 2.3367012188551644,
-            "source": "paris-arbres-remarquables",
-            "designation": "Arbre remarquable de Paris",
-            "name": "Hêtre 'riversii'",
-            "species": "Fagus sylvatica",
-            "girth_cm": 420.0,
-            "height_m": 22.0,
-            "distance_m": 43.8
-          }
-        ]
-      },
-      "measure": {
-        "score": 0.879,
-        "via": "girth",
-        "note": "88% of the genus reference (512 cm, n=2, max 512)  THIN: fewer than ten records, treat as a hint"
-      },
-      "verdict": "publish",
-      "reason": "SUPERSEDED 2026-10-13: published as par_034; see sight:d9c08351-03d1-4b51-a6ec-972f08d308e8 for the verdict.",
-      "hidde": "publish (2026-10-13, session: 'follow your suggestion')",
-      "agreed": false
-    },
-    {
-      "id": "lead:6151f7e2-9211-4c2b-8ce8-e1bf17daa3e7",
-      "seen": "2026-10-04",
-      "kind": "a tree we do not map",
-      "tree": "Ginkgo in Tokyo",
-      "city": null,
-      "species": "Ginkgo",
-      "photo": "p_6312cf4c9007b0fcfae9011c/6151F7E2-9211-4C2B-8CE8-E1BF17DAA3E7.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Ginkgo"
-      },
-      "verdict": "lead",
-      "reason": "Own sighting of a ginkgo in Tokyo, nothing measurable, no register or write-up within 300 m, photograph not viewed this run. Nothing sets it apart. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:8f4e7266-cc24-46b3-9a6d-5e8a94bba199",
-      "seen": "2026-10-04",
-      "kind": "a tree we do not map",
-      "tree": "Pedunculate Oak",
-      "city": null,
-      "species": "Pedunculate Oak",
-      "photo": "p_1ca91d2bab15f40502a64368/8F4E7266-CC24-46B3-9A6D-5E8A94BBA199.jpg",
-      "reader_note": "",
-      "reader_girth_cm": 440,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": 1.122,
-        "via": "girth",
-        "note": "112% of the genus reference (392 cm, n=2, max 392)  THIN: fewer than ten records, treat as a hint"
-      },
-      "verdict": "reject",
-      "reason": "Pedunculate oak, reader gives 245 years and 440 cm girth, about the norm for the species. Looked at the photograph on 2026-10-05: it shows a stone garden well under a little roof, with only fruit-tree branches in frame, not the oak, and the setting reads as a private garden. One contributor, no register or write-up within 300 m, no frame of the tree itself and public access unknown, so it stays a lead. A photograph of the oak and a word on whether the public can reach it would reopen it.",
-      "hidde": "reject, closed: Hidde, 2026-10-21: 'kun je ergens registreren dat die waterput al 10 keer is afgekeurd onthoud dat'. Closed: the photograph is a garden well, not the oak. Never show it to him again and never re-judge this photograph. It reopens only when the reader sends a new photograph of the oak itself (a different file).",
-      "agreed": true
-    },
-    {
-      "id": "sight:55b91b6b-2126-4579-800f-41cf3f12d87a",
-      "seen": "2026-10-03",
-      "kind": "photo of a tree we map",
-      "tree": "The Whitebeam of Víkurgarður",
-      "city": "Reykjavik",
-      "species": "Swedish Whitebeam (Sorbus intermedia)",
-      "photo": "out/sightings/55b91b6b-2126-4579-800f-41cf3f12d87a.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "current_photo": "none",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Looked at the file: right species and setting, whole crown readable in daylight, tree is the subject. Reykjavik's oldest tree had no photograph; published as lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:c3722c87-18af-4a1e-9d8c-a7beddf77f09",
-      "seen": "2026-10-03",
-      "kind": "photo of a tree we map",
-      "tree": "The Larch of Hólavallagarður",
-      "city": "Reykjavik",
-      "species": "European Larch (Larix decidua)",
-      "photo": "out/sightings/c3722c87-18af-4a1e-9d8c-a7beddf77f09.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "current_photo": "none",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Looked at the file: old gnarled larch among headstones, trunk and limbs readable, matches the cemetery setting. Tree had no photograph; published as lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:322fc46b-8bed-4ea1-a971-14a894bbf367",
-      "seen": "2026-10-03",
-      "kind": "photo of a tree we map",
-      "tree": "The City Hall Maple",
-      "city": "Reykjavik",
-      "species": "Sycamore (Acer pseudoplatanus)",
-      "photo": "out/sightings/322fc46b-8bed-4ea1-a971-14a894bbf367.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "current_photo": "none",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Hidde overruled the hold on 2026-10-03; published as the lead on 2026-10-09 after a second look at the file (species and corner match)",
-      "hidde": "zet de andere foto's van onze Reykjavik gebruiker ook maar online, ik vertrouw hem meer dan jou; ook zijn semi slechte foto's zijn beter dan geen",
-      "agreed": false
-    },
-    {
-      "id": "sight:e36a052c-3a48-4eed-ba48-5ab48574fa05",
-      "seen": "2026-10-02",
-      "kind": "photo of a tree we map",
-      "tree": "The Camphor of Oimatsu Tenjin Shrine",
-      "city": "Fukuoka",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "photo": "out/sightings/e36a052c-3a48-4eed-ba48-5ab48574fa05.jpg",
-      "reader_note": "",
-      "reader_girth_cm": 500,
-      "match": "distance",
-      "distance_m": 0,
-      "current_photo": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Own photograph at the trunk, light OK, camphor foliage and the lantern-and-komainu setting match the entry written from it. Published as fuk_016 on Hidde's call, overruling the run's earlier lead verdict (lead:e36a052c-3a48-4eed-ba48-5ab48574fa05).",
-      "hidde": "itoshima ik was er het was mooi en de foto ook dus keur hem goed",
-      "agreed": true
-    },
-    {
-      "id": "sight:0ee5b139-7042-4bcb-a109-4e8b8d051174",
-      "seen": "2026-10-02",
-      "kind": "photo of a tree we map",
-      "tree": "The Sacred Cedar of Kirishima Jingu",
-      "city": "Kagoshima",
-      "species": "",
-      "photo": "out/sightings/0ee5b139-7042-4bcb-a109-4e8b8d051174.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "distance",
-      "distance_m": 0,
-      "current_photo": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Own photograph at the trunk, light OK, species and setting match the entry. Published as kag_015 on Hidde's call (review page), overruling the run's lead verdict (lead:0ee5b139-7042-4bcb-a109-4e8b8d051174).",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": true
-    },
-    {
-      "id": "sight:1993a31d-f025-44d3-bcc1-6caa9cbba0eb",
-      "seen": "2026-10-02",
-      "kind": "photo of a tree we map",
-      "tree": "The Leaning Camphor of the Shiroyama Car Park",
-      "city": "Kagoshima",
-      "species": "",
-      "photo": "out/sightings/1993a31d-f025-44d3-bcc1-6caa9cbba0eb.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "distance",
-      "distance_m": 0,
-      "current_photo": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Own photograph at the trunk, light OK, species and setting match the entry. Published as kag_016 on Hidde's call (review page), overruling the run's lead verdict (lead:1993a31d-f025-44d3-bcc1-6caa9cbba0eb).",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": true
-    },
-    {
-      "id": "sight:8bfeb681-540d-4b78-8df5-06a95191adb2",
-      "seen": "2026-10-02",
-      "kind": "photo of a tree we map",
-      "tree": "Chichibu-sugi, the Cedar of Takachiho Shrine",
-      "city": "Takachiho",
-      "species": "Japanese Cedar (Cryptomeria japonica)",
-      "photo": "out/sightings/8bfeb681-540d-4b78-8df5-06a95191adb2.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "distance",
-      "distance_m": 0,
-      "current_photo": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Own photograph at the trunk, species and setting match; published with tkc_001 when Takachiho opened at three on Hidde's call (overruling the run's lead verdict lead:8bfeb681-540d-4b78-8df5-06a95191adb2).",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": true
-    },
-    {
-      "id": "sight:b9a2d2df-77ba-4240-8c90-63ca0a83b1c9",
-      "seen": "2026-10-02",
-      "kind": "photo of a tree we map",
-      "tree": "Meoto-sugi, the Wedded Cedars of Takachiho Shrine",
-      "city": "Takachiho",
-      "species": "Japanese Cedar (Cryptomeria japonica)",
-      "photo": "out/sightings/b9a2d2df-77ba-4240-8c90-63ca0a83b1c9.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "distance",
-      "distance_m": 0,
-      "current_photo": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Own photograph at the trunk, species and setting match; published with tkc_002 when Takachiho opened at three on Hidde's call (overruling the run's lead verdict lead:b9a2d2df-77ba-4240-8c90-63ca0a83b1c9).",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": true
-    },
-    {
-      "id": "lead:59e829e3-784f-4302-a98e-2c40d1be8824",
-      "seen": "2026-10-02",
-      "kind": "a tree we do not map",
-      "tree": "Camphor Tree in Fukuoka",
-      "city": null,
-      "species": "Camphor Tree",
-      "photo": "p_6312cf4c9007b0fcfae9011c/59E829E3-784F-4302-A98E-2C40D1BE8824.jpg",
-      "reader_note": "",
-      "reader_girth_cm": 700,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": 1.75,
-        "via": "girth",
-        "note": "175% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
-      },
-      "verdict": "lead",
-      "reason": "Own sighting, no register or write-up near it, photograph not viewed by the runner (verdict of 2026-10-02)",
-      "hidde": "put it live i vouch for it i was there (publish, as fuk_018, 2026-10-04)",
-      "agreed": false
-    },
-    {
-      "id": "sight:59e829e3-784f-4302-a98e-2c40d1be8824",
-      "seen": "2026-10-02",
-      "kind": "photo of a tree we map",
-      "tree": "The Camphor of Kofuji Tenmangu",
-      "city": "Fukuoka",
-      "species": "Camphor Tree",
-      "photo": "out/sightings/59e829e3-784f-4302-a98e-2c40d1be8824.jpg",
-      "reader_note": "",
-      "reader_girth_cm": 700,
-      "match": "tree_id",
-      "distance_m": 0,
-      "current_photo": null,
-      "measure": {
-        "score": 1.75,
-        "via": "girth",
-        "note": "175% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
-      },
-      "verdict": "publish",
-      "reason": "Own photograph at the shrine, whole tree in daylight and in leaf, camphor, setting matches the entry. Published as fuk_018 on Hidde's call in session 2026-10-04, overruling the run's lead verdict (lead:59e829e3-784f-4302-a98e-2c40d1be8824).",
-      "hidde": "put it live i vouch for it i was there (2026-10-04)",
-      "agreed": true
-    },
-    {
-      "id": "lead:e36a052c-3a48-4eed-ba48-5ab48574fa05",
-      "seen": "2026-10-01",
-      "kind": "a tree we do not map",
-      "tree": "A tree near Fukuoka",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/E36A052C-3A48-4EED-BA48-5AB48574FA05.jpg",
-      "reader_note": "",
-      "reader_girth_cm": 500,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "LOOKED 2026-10-01: camphor foliage over a sandy shrine-style yard with several camphors standing together, a pushchair in frame. Own sighting, girth entered as 500 cm. No register entry within 100 m, no article within 300 m, no source, nothing in the frames separates this trunk from its neighbours. Kyushu shrine camphors of that girth are common, so this is the Nara pattern: kept as a lead until a source or a second reader names it.",
-      "hidde": "itoshima ik was er het was mooi en de foto ook dus keur hem goed (publish)",
-      "agreed": false
-    },
-    {
-      "id": "sight:0ac9eef6-08d3-4236-a17e-3ac9f36303d9",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Horse Chestnut of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "photo": "out/sightings/0ac9eef6-08d3-4236-a17e-3ac9f36303d9.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": "none",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Whole tree in leaf, daylight, matches the Paris plaque (1894 horse chestnut, hollow trunk, 3.6 m girth). Lead photo for a tree that had none.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:401983c9-c965-4d40-b376-707b0c4c02b8",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Turkey Oak of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Turkey Oak (Quercus cerris)",
-      "photo": "out/sightings/401983c9-c965-4d40-b376-707b0c4c02b8.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "Whole tree in leaf, daylight, setting matches the square; oak crown consistent with Turkey oak and a 190 cm trunk. Published as the lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:5ef6e499-c980-40e0-a456-fbf5c224e3a8",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Turkey Oak of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Turkey Oak (Quercus cerris)",
-      "photo": "out/sightings/5ef6e499-c980-40e0-a456-fbf5c224e3a8.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "Trunk and bark close-up with lobed oak leaves; added beside the lead photograph.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:722e85a4-63fe-434a-b058-d41389ff7769",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Horse Chestnut of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "photo": "out/sightings/722e85a4-63fe-434a-b058-d41389ff7769.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": "reader lead photograph (0ac9eef6)",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "Hollow trunk at eye level with the city's plaque on the bark; same tree, same reader, same minutes as the lead. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
-      "hidde": "publish all frames (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "sight:fc9e2246-a080-4bd3-b67f-cc75e407336c",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Horse Chestnut of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "photo": "out/sightings/fc9e2246-a080-4bd3-b67f-cc75e407336c.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": "reader lead photograph (0ac9eef6)",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "Looking up the fissured trunk into the yellowing crown. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
-      "hidde": "publish all frames (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "sight:cccde1b1-93ce-45d6-8fc8-7341432edf30",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Horse Chestnut of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "photo": "out/sightings/cccde1b1-93ce-45d6-8fc8-7341432edf30.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": "reader lead photograph (0ac9eef6)",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "The split hollow trunk from below, glasshouse of the square behind. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
-      "hidde": "publish all frames (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "sight:8bb90abb-6768-4f14-822b-a89d797061d6",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Horse Chestnut of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "photo": "out/sightings/8bb90abb-6768-4f14-822b-a89d797061d6.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": "reader lead photograph (0ac9eef6)",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "The plaque on the trunk: planted 1894, 18 m, 3.60 m girth in 2011, which is our entry word for word. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
-      "hidde": "publish all frames (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "sight:ca7d8605-6a37-47ca-9b68-b7a6c1415446",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Horse Chestnut of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "photo": "out/sightings/ca7d8605-6a37-47ca-9b68-b7a6c1415446.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": "reader lead photograph (0ac9eef6)",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "The Paris Nature board at the foot of the tree with the city's own photographs of it. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
-      "hidde": "publish all frames (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "sight:689af5c2-fb5a-4473-9f73-334895a5f1b2",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Horse Chestnut of Square Rene-Le Gall",
-      "city": "Paris",
-      "species": "Horse Chestnut (Aesculus hippocastanum)",
-      "photo": "out/sightings/689af5c2-fb5a-4473-9f73-334895a5f1b2.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": null,
-      "current_photo": "reader lead photograph (0ac9eef6)",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Turkey Oak (Quercus cerris)"
-      },
-      "verdict": "publish",
-      "reason": "A conker on the ground beneath it, early October. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
-      "hidde": "publish all frames (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "sight:a7f41ada-be81-462a-8356-763b5d1323bd",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Dragon Tree of Quinta Conde dos Arcos",
-      "city": "Lisbon",
-      "species": "Dragon Tree (Dracaena draco)",
-      "photo": "out/sightings/a7f41ada-be81-462a-8356-763b5d1323bd.jpg",
-      "reader_note": null,
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 20,
-      "current_photo": "Commons lead (wide shot)",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "The whole dragon tree, umbrella crown over the fluted trunk; 20 m from our confirmed pin. Declined 2026-10-01 because the page had a lead; added beside it 2026-10-02 on Hidde's ruling: reader photographs are extras by default.",
-      "hidde": "add as extra (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "sight:ef0d9ead-41b5-4fcb-8004-015d6b5afe1e",
-      "seen": "2026-10-01",
-      "kind": "photo of a tree we map",
-      "tree": "The Dragon Tree of Quinta Conde dos Arcos",
-      "city": "Lisbon",
-      "species": "Dragon Tree (Dracaena draco)",
-      "photo": "out/sightings/ef0d9ead-41b5-4fcb-8004-015d6b5afe1e.jpg",
-      "reader_note": null,
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 20,
-      "current_photo": "Commons lead (wide shot)",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "The trunk at eye level, fused knuckled limbs and aerial roots. Declined 2026-10-01 because the page had a lead; added beside it 2026-10-02 on Hidde's ruling: reader photographs are extras by default.",
-      "hidde": "add as extra (2026-10-02, in session)",
-      "agreed": null,
-      "decided": "2026-10-02"
-    },
-    {
-      "id": "lead:8bfeb681-540d-4b78-8df5-06a95191adb2",
-      "seen": "2026-09-29",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/8BFEB681-540D-4B78-8DF5-06A95191ADB2.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Same spot as b9a2d2df (Japanese cedar, Minamiaso area); no register entry or write-up; photo not viewed this run. Stays a lead.",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": false
-    },
-    {
-      "id": "lead:b9a2d2df-77ba-4240-8c90-63ca0a83b1c9",
-      "seen": "2026-09-29",
-      "kind": "a tree we do not map",
-      "tree": "Japanese Cedar near Minamiaso",
-      "city": null,
-      "species": "Japanese Cedar",
-      "photo": "p_6312cf4c9007b0fcfae9011c/B9A2D2DF-77BA-4240-8C90-63CA0A83B1C9.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Japanese Cedar"
-      },
-      "verdict": "lead",
-      "reason": "Reader-named Japanese cedar, no register entry or write-up, nothing measurable; photo not viewed this run. Stays a lead.",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": false
-    },
-    {
-      "id": "lead:0ee5b139-7042-4bcb-a109-4e8b8d051174",
-      "seen": "2026-09-29",
-      "kind": "a tree we do not map",
-      "tree": "I think it’s a Japanese cedar. It’s next to a beautiful shri",
-      "city": null,
-      "species": "Cedar (Cedrus sp.)",
-      "photo": "p_5ce4a9c7b8aa8e78f008005e/0EE5B139-7042-4BCB-A109-4E8B8D051174.jpg",
-      "reader_note": "I think it’s a Japanese cedar. It’s next to a beautiful shrine ",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Cedar (Cedrus sp.)"
-      },
-      "verdict": "lead",
-      "reason": "Cedar beside a shrine near Kagoshima, no register entry or write-up, shrine unnamed; photo not viewed this run. Stays a lead until the shrine is named.",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": false
-    },
-    {
-      "id": "lead:50bab485-dcc6-479f-a4fa-f45756d8558e",
-      "seen": "2026-09-28",
-      "kind": "a tree we do not map",
-      "tree": "A tree near Minamiaso",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/50BAB485-DCC6-479F-A4FA-F45756D8558E.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "No register entry or write-up within 100 m and nothing measurable; photo not viewed this run. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:70e18ab5-cc32-492e-b2a4-a816e854582b",
-      "seen": "2026-09-28",
-      "kind": "a tree we do not map",
-      "tree": "A tree near Ueki",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/70E18AB5-CC32-492E-B2A4-A816E854582B.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "No register entry or write-up within 100 m and nothing measurable; photo not viewed this run. Stays a lead.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:f0d60c06-022d-4a1d-afdc-37d66b3b6d4e",
-      "seen": "2026-09-25",
-      "kind": "photo of a tree we map",
-      "tree": "El Gran Capitán",
-      "city": "Seville",
-      "species": "River Red Gum (Eucalyptus camaldulensis)",
-      "photo": "out/sightings/f0d60c06-022d-4a1d-afdc-37d66b3b6d4e.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 0,
-      "current_photo": "none",
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Tree had no photo (status missing). Exact GPS match (distance_m=0) from app. Species and description both checked yes: eucalyptus foliage/pale bark visible, clearly the tallest tree over the surrounding palms, matching the tallest-tree-in-Seville story. Well lit, colour, in leaf (photo_light.py OK). Published to site/public/photos.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:01d9c8b8-147f-40d5-af0c-d81857c90f91",
-      "seen": "2026-09-25",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/01D9C8B8-147F-40D5-AF0C-D81857C90F91.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Ordinary backlit street tree beside apartment blocks, no unusual girth or crown shape, no plaque legible, no register or write-up within 100m. Not pursued.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:b4b65fef-1ac7-4ebd-ae21-88200be2fb81",
-      "seen": "2026-09-25",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/B4B65FEF-1AC7-4EBD-AE21-88200BE2FB81.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Striking solitary buttressed specimen (kapok/silk-floss type) on the lawn at Kagoshima honko waterfront by the Sakurajima ferry terminal, spectacle visible in the photograph, but no register entry and no web source names it (checked JP and EN). Worth a proper research pass on this exact spot before it clears the normal bar.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:9f1810d8-0bbf-4220-81f7-47c9177c974a",
-      "seen": "2026-09-25",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/9F1810D8-0BBF-4220-81F7-47C9177C974A.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Duplicate of b4b65fef, same tree photographed 17 seconds later. See that verdict.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:1993a31d-f025-44d3-bcc1-6caa9cbba0eb",
-      "seen": "2026-09-25",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/1993A31D-F025-44D3-BCC1-6CAA9CBBA0EB.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Canopy of large trees over a car park/gate 250m from kag_001, likely Shiroyama Park's own approach road. No single trunk stands out as a collectible point, no register or write-up within 100m.",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": false
-    },
-    {
-      "id": "lead:d8ccd98d-702c-4e1e-8c23-bdb5a712b806",
-      "seen": "2026-09-25",
-      "kind": "a tree we do not map",
-      "tree": "Biggest of the park - 4m girth\n",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/D8CCD98D-702C-4E1E-8C23-BDB5A712B806.jpg",
-      "reader_note": "Biggest of the park - 4m girth\n",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Wide, well-balanced tree given its own circular brick planter in the centre of a city park plaza, reader notes 4m girth, no published tree nearby at all. Strongest of this batch, but no register entry or source found; needs a research pass to place the park before it clears the normal bar. SUPERSEDED 2026-09-26: resolved and published as kag_014 (Kagoshima); see sight:d8ccd98d-702c-4e1e-8c23-bdb5a712b806 for the full verdict.",
-      "hidde": "publish (Hidde, review page 2026-10-02)",
-      "agreed": true
-    },
-    {
-      "id": "sight:16539189-abe6-4f04-a8a9-52ec0c3752db",
-      "seen": "2026-09-25",
-      "kind": "photo of a tree we map",
-      "tree": "The Camphor of Shiroyama",
-      "city": "Kagoshima",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "photo": "out/sightings/16539189-abe6-4f04-a8a9-52ec0c3752db.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "distance",
-      "distance_m": 12,
-      "current_photo": "none",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Camphor Tree (Cinnamomum camphora)"
-      },
-      "verdict": "publish",
-      "reason": "Tree had no photo at all (status missing). Distance-matched 12m to kag_001, the app also matched it directly by tree_id in a second identical submission. Species and description both checked yes: buttressed camphor base with identification plaque, roped off from the path in Shiroyama Park, matches the recognition line and story. Well lit forest shot, tree fills frame, person for scale shows the size. Published.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:27cb465f-fb1c-4e42-b241-bbd8fe7b196c",
-      "seen": "2026-09-25",
-      "kind": "photo of a tree we map",
-      "tree": "The Akou of Uchiumi",
-      "city": "Miyazaki",
-      "species": "Sea Fig (Ficus superba)",
-      "photo": "out/sightings/27cb465f-fb1c-4e42-b241-bbd8fe7b196c.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 40,
-      "current_photo": "none",
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Sea Fig (Ficus superba)"
-      },
-      "verdict": "publish",
-      "reason": "Tree had no photo at all (status missing). App-matched (distance 40m). Species and description both checked yes: wild aerial-root fig mass poured over the wall and rock beside the shrine's approach sign, matching the recognition line's description of the wildest-looking akou fig. Daylight, well exposed, in leaf, tree fills the frame. Published.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:d8ccd98d-702c-4e1e-8c23-bdb5a712b806",
-      "seen": "2026-09-25",
-      "kind": "photo of a tree we do not map",
-      "tree": "The Camphor of Kyoken Park",
-      "city": "Kagoshima",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "photo": "out/sightings/229.jpg",
-      "reader_note": "Biggest of the park - 4m girth",
-      "reader_girth_cm": null,
-      "match": "unmatched (new tree)",
-      "distance_m": null,
-      "current_photo": "none",
-      "measure": {
-        "score": null,
-        "note": "no register or published record to compare against; reader-estimated girth only"
-      },
-      "verdict": "publish",
-      "reason": "No tree of ours stood nearby. Reverse-geocoded the coordinate to Kyoken Park (Chuo-cho, Kagoshima), a public neighbourhood park a few minutes from Kagoshima-Chuo Station. The park own official page and a second independent source (secret-kichi.net) both confirm a camphor as the park named symbol tree, with real sourced history (Saigo Takamori former residence, then a girls school from 1911, a park since 1951). Species and description both checked: a single large camphor filling its own circular brick planter at the park centre, matching the reader photograph and the sources naming of the symbol tree, well lit, tree fills frame. Two independent sources clear the normal bar even though neither measures this exact specimen; girth (400cm) is the reader own unverified estimate, flagged in the entry, and no age is documented anywhere for the tree itself. Published as kag_014.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:12168ca4-f893-4296-a444-14bd9e2c4e09",
-      "seen": "2026-09-22",
-      "kind": "a tree we do not map",
-      "tree": "Fig?",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/12168CA4-F893-4296-A444-14BD9E2C4E09.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Banyan-type fig in the landscaped grounds at Aoshima resort, Miyazaki. Tended garden setting, not a wild site. No register hit, no source. Could be genuine or an ordinary planting; garden's own records not yet checked.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:48129024-139c-4b61-9136-2a2bd746b52e",
-      "seen": "2026-09-22",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/48129024-139C-4B61-9136-2A2BD746B52E.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Ornamental Araucaria on manicured resort lawn, Aoshima, Miyazaki, beside a restaurant. Planted specimen, unremarkable girth, no register hit. Unlikely to clear the bar.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:8230d205-81b7-498a-b1ca-c70bfc009b95",
-      "seen": "2026-09-22",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/8230D205-81B7-498A-B1CA-C70BFC009B95.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Genuinely large sugi at an unnamed shrine, Taketa, with an unread interpretive signboard at its base, the kind used for designated trees. Strongest of the Taketa batch but no shrine name, no register hit yet. Worth a return pass to read the sign.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:c920cf02-072d-492c-8b22-fc0495614270",
-      "seen": "2026-09-22",
-      "kind": "a tree we do not map",
-      "tree": "Kamfertree around 100 years old",
-      "city": null,
-      "species": "Camphor Tree",
-      "photo": "p_6312cf4c9007b0fcfae9011c/C920CF02-072D-492C-8B22-FC0495614270.jpg",
-      "reader_note": "",
-      "reader_girth_cm": 400,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": {
-        "score": 1.0,
-        "via": "girth",
-        "note": "100% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
-      },
-      "verdict": "lead",
-      "reason": "Ordinary-looking tree in semi-wild ground, Kawaminami, Miyazaki. Reader's name, age and girth are self-reported, not a source. No shrine, plaque or register hit. Least distinctive of this batch.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:5d23ad5d-ee3b-449e-91bf-12956befbb8c",
-      "seen": "2026-09-20",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/5D23AD5D-EE3B-449E-91BF-12956BEFBB8C.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Tree at an unnamed shrine near Oka Castle, Taketa, 330m from acd2ee12. Shrine has no name in OSM, no register hit. Needs the shrine's name before further research.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:acd2ee12-76dd-412d-9fe0-f2f0bdefb000",
-      "seen": "2026-09-20",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/ACD2EE12-76DD-412D-9FE0-F2F0BDEFB000.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Striking self-seeded tree on the ishigaki wall of Oka Castle (nationally designated historic site), Taketa. No register hit, no source naming this specific tree, species not yet identified. Needs ID and a source before it clears the bar.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:01c07566-c1a7-48ee-a9a7-c9053bb506a5",
-      "seen": "2026-09-16",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/01C07566-C1A7-48EE-A9A7-C9053BB506A5.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A genuinely substantial tree (broad multi-stem crown, thick trunk) in what looks like a riverside or canal park beside an apartment tower, but the submission carries no coordinates, no city and no species. Cannot be placed on the map or matched to a register without a location. Worth revisiting if the reader sends a follow-up with where this is.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:d0e24fa3-7097-47b1-b108-ac1dc932c287",
-      "seen": "2026-09-13",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/D0E24FA3-7097-47B1-B108-AC1DC932C287.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Not a tree. The photograph shows a person's legs on a bed, no tree, no location. Nothing to research.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:4f9e3110-5807-4226-951e-537c61658dee",
-      "seen": "2026-09-13",
-      "kind": "photo of a tree we map",
-      "tree": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
-      "city": "Kyoto",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "photo": "https://ancienttrees.app/photos/kyo_017-camphor-of-shimodachiuri-gate-kyoto-gyoen.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Recorded retroactively on 2026-09-23: Closes a photo gap on kyo_017, which had none",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:84ebae36-c683-4d39-86ac-a7db33d70910",
-      "seen": "2026-09-11",
-      "kind": "a tree we do not map",
-      "tree": "Twisted pale-trunked tree by the Omiya gate, Kyoto Gyoen",
-      "city": null,
-      "species": "probably Muku (Aphananthe aspera), unconfirmed",
-      "photo": "site/public/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about probably Muku (Aphananthe aspera), unconfirmed"
-      },
-      "verdict": "hold",
-      "reason": "Superseded by sight:84ebae36-c683-4d39-86ac-a7db33d70910, the same underlying sighting matched to kyo_019 (The Twisted Muku of Omiya Gate) and already verdicted publish. This lead: record predates that match; nothing further to judge here.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:9c414769-c025-4ec6-b707-55c981c22855",
-      "seen": "2026-09-11",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/9C414769-C025-4EC6-B707-55C981C22855.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A gnarled, heavily-scarred cherry (or similar deciduous) tree standing right beside a torii gate at a shrine entrance on a Kyoto street, stone lanterns and dedication pillars naming a kyomai school beside it. Characterful trunk with an old healed wound. No coordinates or species confirmed. Publicly visible street-side shrine, a plausible candidate once located.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:a90d9031-8708-45ed-a717-7ce1678173a2",
-      "seen": "2026-09-11",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/A90D9031-8708-45ED-A717-7CE1678173A2.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Genuinely striking veteran: massive burled, multi-scarred trunk with broken/snapped upper limbs, and an official interpretive signboard at its base (Japanese text, not transcribed) suggesting a designated or named tree. Strongest photo of this whole batch. No coordinates, no city and the sign was not read, so it cannot be placed or matched to a register yet. Worth chasing if the reader can say where this was taken.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:c8842af2-e25c-403a-a0a0-8f3b4e6b37a5",
-      "seen": "2026-09-11",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/C8842AF2-E25C-403A-A0A0-8F3B4E6B37A5.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A large canopy tree behind a clipped hedge, with a 立入禁止 (no entry) sign posted at the boundary. Access looks restricted beyond the hedge; only visible from outside, not approachable. No coordinates or species. Not promising unless the tree is viewable from public ground, which the sign argues against.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:5d5debc9-0545-40a6-88a1-79f40b62cbd1",
-      "seen": "2026-09-11",
-      "kind": "photo of a tree we map",
-      "tree": "Ginkgo of Inui Gate, Kyoto Gyoen",
-      "city": "Kyoto",
-      "species": "Ginkgo (Ginkgo biloba)",
-      "photo": "https://ancienttrees.app/photos/kyo_018-ginkgo-of-inui-gate-kyoto-gyoen.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Recorded retroactively on 2026-09-23: kyo_018 had no photo",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:aec13148-46f8-49c4-8735-7d8a2c7c3c28",
-      "seen": "2026-09-11",
-      "kind": "photo of a tree we map",
-      "tree": "The Camphor of Munakata Shrine",
-      "city": "Kyoto",
-      "species": "Camphor Tree (Cinnamomum camphora)",
-      "photo": "https://ancienttrees.app/photos/kyo_006-the-camphor-of-munakata-shrine.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Recorded retroactively on 2026-09-23: kyo_006's current photo (iNaturalist) is a tight crop of moss-covered branches with no trunk or ground visible",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:b77fcaee-e20e-4722-9b42-5d60aca6a3cc",
-      "seen": "2026-09-11",
-      "kind": "photo of a tree we map",
-      "tree": "The Hackberry of Demizu-guchi",
-      "city": "Kyoto",
-      "species": "Chinese Hackberry (Celtis sinensis)",
-      "photo": "https://ancienttrees.app/photos/kyo_011-the-hackberry-of-demizu-guchi.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Recorded retroactively on 2026-09-23: kyo_011 had no photo",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:0c00d472-ba14-4cf4-b53d-a1d407d2c2e4",
-      "seen": "2026-09-08",
-      "kind": "a tree we do not map",
-      "tree": "The Veteran Cedar above the Nigatsu-do Steps",
-      "city": null,
-      "species": "Japanese Cedar (Cryptomeria japonica)",
-      "photo": "p_6312cf4c9007b0fcfae9011c/0C00D472-BA14-4CF4-B53D-A1D407D2C2E4.jpg",
-      "reader_note": "Reader wrote \"I am not sure which one it is\"",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": {
-        "score": null,
-        "note": "nothing measurable about Japanese Cedar (Cryptomeria japonica)"
-      },
-      "verdict": "lead",
-      "reason": "The exact case CLAUDE.md records: a tall sugi at the top of a stone stairway with lanterns, at what looks like the Nigatsu-do precinct in Nara, reader wrote 'I am not sure which one it is'. The slope holds several similar cedars and nothing in the photo (no plaque, no distinguishing bark or setting detail) tells them apart. Cannot ship without a recognition line or a second source naming this specific trunk; a plain lead until one exists.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:fe5c2523-a0b1-4a4d-b9ad-10f3d5c8a1cc",
-      "seen": "2026-09-08",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/FE5C2523-A0B1-4A4D-B9AD-10F3D5C8A1CC.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": {
-        "verdict": "unlisted",
-        "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
-        "nearest": []
-      },
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A tree with dramatic exposed, moss-covered surface roots over rocks beside a stream, deer visible in the background, almost certainly Nara Park. Genuinely photogenic root structure, but no coordinates and the park holds many similar specimens, so it needs a location and something distinguishing before it can be matched to a candidate.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:1ccb34b2-ecda-41b1-9d34-2ec98b238ae4",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/1CCB34B2-ECDA-41B1-9D34-2EC98B238AE4.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A tall, full-crowned cedar beside a small shrine building and a house, exposed surface roots at the base. A decent specimen but visually ordinary among Japanese shrine cedars, no plaque or distinguishing mark. No coordinates or species confirmed.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:1d61e594-71c7-4620-9de1-6cb28bf643d3",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/1D61E594-71C7-4620-9DE1-6CB28BF643D3.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A large ginkgo with a full crown and exposed surface roots, standing in open ground beside a modern black-clad building (a shop or ryokan) on a Kyoto street. Companion photo: lead:b6706a98-e0b8-4790-9e97-ef93ec90c711 shows the same tree from the street side, a stone monument and the same building visible. Publicly visible, decent size, but no coordinates, species unconfirmed (looks like Ginkgo biloba) and no name.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:3ff2072f-e865-48d3-8248-8ff507419b84",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/3FF2072F-E865-48D3-8248-8FF507419B84.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A wide-canopied tree in open parkland beside a pond and pavilion, almost certainly Nara Park. Ordinary from this distance, no trunk detail, no coordinates.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:64685b04-4d75-4cb1-837c-17923ac69ef0",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "Not sure ",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/64685B04-4D75-4CB1-837C-17923AC69EF0.jpg",
-      "reader_note": "Not sure ",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A tall, slightly leaning cedar beside a road, power lines crossing in front of the crown. Reader wrote 'Not sure'. Ordinary specimen, no coordinates, no distinguishing feature.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:a837bea4-a793-40f5-b17d-942b3294557f",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "I’m not sure which one",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/A837BEA4-A793-40F5-B17D-942B3294557F.jpg",
-      "reader_note": "I’m not sure which one",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Identical image to lead:0c00d472-ba14-4cf4-b53d-a1d407d2c2e4 (the Nigatsu-do steps cedar), same reader uncertainty ('I'm not sure which one'). A duplicate send of the same photo, not a second tree; see that entry for the real verdict.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:b425b49f-7fdc-4777-8d29-e5435f2eeacb",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "I’m not sure which one it is\n",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/B425B49F-7FDC-4777-8D29-E5435F2EEACB.jpg",
-      "reader_note": "I’m not sure which one it is\n",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A visibly ancient, heavily propped tree (iron braces holding up the trunk and a low limb) in a temple courtyard, deer nearby, a two-storey temple hall behind it: looks like the Nigatsu-do/Todai-ji precinct in Nara. Evergreen broadleaf crown, not a cedar, possibly a nagi or similar venerated species. Reader wrote 'I'm not sure which one it is'. The bracing marks this as an individually protected, named tree, but nothing in the photo says which one. A strong candidate once identified.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:b6706a98-e0b8-4790-9e97-ef93ec90c711",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/B6706A98-E0B8-4790-9E97-EF93EC90C711.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "lead",
-      "reason": "Same ginkgo as lead:1d61e594-71c7-4620-9de1-6cb28bf643d3, photographed from the street side: same building, a stone monument in the foreground. Companion angle, not a second tree. Same verdict reasoning: no coordinates, publicly visible, decent specimen.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:b7db17d2-df60-4c9d-9cb5-79de2196dc29",
-      "seen": "2026-09-07",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/B7DB17D2-DF60-4C9D-9CB5-79DE2196DC29.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "lead",
-      "reason": "A distinctive multi-stem tree with knotted, scarred bark and moss, standing beside a long whitewashed compound wall (looks like a temple or estate boundary). Genuinely characterful trunk, but no coordinates, no species confirmed and no name.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:9a4db707-9393-4c31-b7c1-5dfcf25cc155",
-      "seen": "2026-09-05",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/9A4DB707-9393-4C31-B7C1-5DFCF25CC155.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Same visit as ff725d9a-9950-4f0f-a657-1cf19901c9c0 (Watercypres): the Cantonspark, Baarn pinetum, already resolved as a pin correction on brn_001. This frame shows a dawn redwood trunk plus a ginkgo branch (an arboretum planting), not a distinct new candidate.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:d09c4709-fd01-4476-889a-4d1b860aeacd",
-      "seen": "2026-09-05",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/D09C4709-FD01-4476-889A-4D1B860AEACD.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Same visit and location as the other two Cantonspark, Baarn photos (already resolved as brn_001's pin correction): a conifer hedge screen in the pinetum, no distinct tree visible. Not a candidate on its own.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:ff725d9a-9950-4f0f-a657-1cf19901c9c0",
-      "seen": "2026-09-05",
-      "kind": "a tree we do not map",
-      "tree": "Watercypres\n",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/FF725D9A-9950-4F0F-A657-1CF19901C9C0.jpg",
-      "reader_note": "Watercypres\n",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Reader wrote 'Watercypres' (Dutch for dawn redwood). This is almost certainly the exact Cantonspark, Baarn visit CLAUDE.md records: a reader's GPS fix that showed our brn_001 pin (the Cantonspark Dawn Redwood) sitting hundreds of metres from where the photo was actually taken. That correction already shipped: brn_001's story now notes the pin was moved closer to the old pinetum on a reader's correction. Not a new tree, holding rather than leaving open.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:22864b26-6a53-48f4-bb3c-2b52adc12e0a",
-      "seen": "2026-09-05",
-      "kind": "photo of a tree we map",
-      "tree": "The Cantonspark Dawn Redwood",
-      "city": "Baarn",
-      "species": "Dawn Redwood (Metasequoia glyptostroboides)",
-      "photo": "https://ancienttrees.app/photos/brn_001-the-cantonspark-dawn-redwood.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Recorded retroactively on 2026-09-23: Whole tree centered, blue sky, well exposed, in leaf",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:a6971e9a-593b-4718-8ff6-00e0c898c566",
-      "seen": "2026-09-05",
-      "kind": "photo of a tree we map",
-      "tree": "The Cantonspark Giant Sequoia",
-      "city": "Baarn",
-      "species": "Giant Sequoia (Sequoiadendron giganteum)",
-      "photo": "https://ancienttrees.app/photos/brn_002-the-cantonspark-giant-sequoia.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "measure": null,
-      "verdict": "publish",
-      "reason": "Recorded retroactively on 2026-09-23: Whole tree in frame, crown to base, good daylight, in leaf, unmistakably the sequoia",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:4d6fb810-870d-40b1-92db-d5e3820bba06",
-      "seen": "2026-09-04",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/4D6FB810-870D-40B1-92DB-D5E3820BBA06.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Not a tree submission. A home window scene: a windowsill with a toy, a laptop, a back garden with hydrangeas. A tree is visible only incidentally through the window. Nothing to research.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "lead:e3fa3f6b-e016-42f5-999a-e01ce41e82a0",
-      "seen": "2026-09-04",
-      "kind": "a tree we do not map",
-      "tree": "A tree I found",
-      "city": null,
-      "species": null,
-      "photo": "p_6312cf4c9007b0fcfae9011c/E3FA3F6B-E016-42F5-999A-E01CE41E82A0.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "coords": [
-        null,
-        null
-      ],
-      "register": null,
-      "measure": null,
-      "verdict": "hold",
-      "reason": "Not a tree submission. A home office window scene: blinds, a clock, headphones on the sill, trees visible only distantly through the glass. Nothing to research.",
-      "hidde": null,
-      "agreed": null
-    },
-    {
-      "id": "sight:0f3ee1e1-ad84-4a57-bf98-6a0b50826651",
-      "seen": "2026-10-22",
-      "kind": "photo of a tree we map",
-      "tree": "The Weeping Cedar of the Vallée-aux-Loups",
-      "city": "Chatenay-Malabry",
-      "species": null,
-      "photo": "out/sightings/0f3ee1e1-ad84-4a57-bf98-6a0b50826651.jpg",
-      "reader_note": "",
-      "reader_girth_cm": null,
-      "match": "app",
-      "distance_m": 0,
-      "current_photo": null,
-      "measure": {
-        "score": null,
-        "note": "no girth given"
-      },
-      "verdict": "publish",
-      "reason": "Weeping blue Atlas cedar, the tunnel under the crown, daylight and colour; looked at the pixels, it is the tree. Added beside the lead photograph.",
-      "hidde": null,
-      "agreed": null
-    }
-  ]
+ "_note": "One verdict per reader submission. See DECISIONS.md 2026-09-23.",
+ "judgements": [
+  {
+   "id": "sight:84ebae36-c683-4d39-86ac-a7db33d70910",
+   "seen": "before 2026-09-23",
+   "kind": "photo of a tree we map",
+   "tree": "The Twisted Muku of Omiya Gate, Kyoto Gyoen",
+   "city": "Kyoto",
+   "species": "Muku Tree (Aphananthe aspera)",
+   "photo": "https://ancienttrees.app/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: approved by a viewing pass; reason in the photo note",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:0f3ee1e1-ad84-4a57-bf98-6a0b50826651",
+   "seen": "2026-10-22",
+   "kind": "photo of a tree we map",
+   "tree": "The Weeping Cedar of the Vallée-aux-Loups",
+   "city": "Chatenay-Malabry",
+   "species": null,
+   "photo": "out/sightings/0f3ee1e1-ad84-4a57-bf98-6a0b50826651.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": "no girth given"
+   },
+   "verdict": "publish",
+   "reason": "Weeping blue Atlas cedar, the tunnel under the crown, daylight and colour; looked at the pixels, it is the tree. Added beside the lead photograph.",
+   "hidde": "ja, ziet er goed uit",
+   "agreed": true,
+   "shown": [
+    "2026-10-23"
+   ]
+  },
+  {
+   "id": "sight:bf8d0df1-b2d1-4e04-90e8-a2b7fb8fe61f",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "The Weeping Fig of Campo Santana",
+   "city": "Lisbon",
+   "species": "Weeping Fig (Ficus benjamina)",
+   "photo": "p_0ca44ad155ecd346c570f251/BF8D0DF1-B2D1-4E04-90E8-A2B7FB8FE61F.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 129,
+   "current_photo": "held",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable"
+   },
+   "verdict": "publish",
+   "reason": "Looked at it: large fig with hanging aerial roots in daylight and colour, trunk and crown fill the frame, park and playground behind; GPS fix 129 m from the pin confirmed it; replaces a held panoramio photo.",
+   "hidde": "ja, eens",
+   "agreed": true,
+   "shown": [
+    "2026-10-21",
+    "2026-10-22"
+   ]
+  },
+  {
+   "id": "lead:9b10ae23-bba4-4af8-a9ae-95b93aba9209",
+   "seen": "2026-10-20",
+   "kind": "a tree we do not map",
+   "tree": "Dragon Tree in Lisbon",
+   "city": null,
+   "species": "Dragon Tree",
+   "photo": "p_742e4f4b38d1bead996f5a7d/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
+   "reader_note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Dragon Tree"
+   },
+   "verdict": "publish",
+   "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
+   "hidde": "ja, eens",
+   "agreed": true,
+   "shown": [
+    "2026-10-21",
+    "2026-10-22"
+   ]
+  },
+  {
+   "id": "sight:c33bbde9-798f-4a25-a895-b2a0adb0fbc2",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "The Moreton Bay Fig of Jardim Constantino",
+   "city": "Lisbon",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "photo": "out/sightings/c33bbde9-798f-4a25-a895-b2a0adb0fbc2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 0,
+   "current_photo": "approved",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Looked at it: whole buttressed crown and surface roots in daylight, tree fills the frame, matches the recognition line; added beside the existing photograph.",
+   "hidde": "ja, eens",
+   "agreed": true,
+   "shown": [
+    "2026-10-21",
+    "2026-10-22"
+   ]
+  },
+  {
+   "id": "sight:8215fd62-ee37-4a5c-a9db-e264948aa7dd",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "The Moreton Bay Fig of Jardim Constantino",
+   "city": "Lisbon",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "photo": "out/sightings/8215fd62-ee37-4a5c-a9db-e264948aa7dd.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 0,
+   "current_photo": "approved",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Looked at it: wide view of the same spreading fig crown and surface roots beside the play area; added beside the others.",
+   "hidde": "ja, eens (zelfde boom, alle vier eens 2026-10-22)",
+   "agreed": true
+  },
+  {
+   "id": "sight:85adce04-5a65-40b2-a9e2-204356105fd2",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "The Paperbark of Jardim Constantino",
+   "city": "Lisbon",
+   "species": "Prickly Paperbark (Melaleuca styphelioides)",
+   "photo": "out/sightings/85adce04-5a65-40b2-a9e2-204356105fd2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 0,
+   "current_photo": "approved",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Looked at it: full trunk with papery peeling bark and plaque, matches the recognition line; added.",
+   "hidde": "ja, eens",
+   "agreed": true,
+   "shown": [
+    "2026-10-21",
+    "2026-10-22"
+   ]
+  },
+  {
+   "id": "sight:61edc8cd-a91d-4c97-af90-e26427894d86",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "The Weeping Fig of Campo Santana",
+   "city": "Lisbon",
+   "species": "Weeping Fig (Ficus benjamina)",
+   "photo": "out/sightings/61edc8cd-a91d-4c97-af90-e26427894d86.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 0,
+   "current_photo": "approved",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Looked at it: huge fluted fig trunk with plaque, glossy leaves and hanging roots in daylight; added.",
+   "hidde": "ja, eens (zelfde boom, alle vier eens 2026-10-22)",
+   "agreed": true
+  },
+  {
+   "id": "sight:9b10ae23-bba4-4af8-a9ae-95b93aba9209",
+   "seen": "2026-10-20",
+   "kind": "photo of a tree we map",
+   "tree": "Dragon Tree in Lisbon",
+   "city": null,
+   "species": "Dragon Tree",
+   "photo": "p_742e4f4b38d1bead996f5a7d/9B10AE23-BBA4-4AF8-A9AE-95B93ABA9209.jpg",
+   "reader_note": "Inside the Goethe Institute, there’s a beautiful garden rich with bushes, shrubs and trees. The dragon plant is just one of many trees worth seeing there.",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Dragon Tree"
+   },
+   "verdict": "publish",
+   "reason": "Dracaena draco in daylight, clear Cadiz-standard frame; Time Out Lisboa lists the Goethe-Institut garden esplanade as public with opening hours",
+   "hidde": "ja, eens (zelfde boom, alle vier eens 2026-10-22)",
+   "agreed": true
+  },
+  {
+   "id": "sight:ed90210d-8ed3-4c85-8af7-f75f6f34ff15",
+   "seen": "2026-10-19",
+   "kind": "photo of a tree we map",
+   "tree": "The Schönberg Beech above Ebringen",
+   "city": "Freiburg",
+   "species": "European Beech",
+   "photo": "p_c42cb7cb55255ee10572d165/ED90210D-8ED3-4C85-8AF7-F75F6F34FF15.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    47.9543033333333,
+    7.80672833333333
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about European Beech"
+   },
+   "verdict": "publish",
+   "reason": "Looked at the photograph (fetched 2026-10-20; it never reached the GitHub runner): a veteran beech on the Schönberg above Ebringen, split low into several moss-covered stems, one limb bending to the ground, a Rotbuche label on it; daylight, colour, tree fills the frame. No register or article within 300 m, no web source, no age or girth. Live as frb_008 under the 2026-10-12 reader rule (GPS fix, stranger's account); the page asks for a girth.",
+   "hidde": null,
+   "agreed": null,
+   "shown": [
+    "2026-10-21"
+   ]
+  },
+  {
+   "id": "lead:ed90210d-8ed3-4c85-8af7-f75f6f34ff15",
+   "seen": "2026-10-19",
+   "kind": "a tree we do not map",
+   "tree": "European Beech in Freiburg",
+   "city": null,
+   "species": "European Beech",
+   "photo": "p_c42cb7cb55255ee10572d165/ED90210D-8ED3-4C85-8AF7-F75F6F34FF15.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about European Beech"
+   },
+   "verdict": "publish",
+   "reason": "Same photograph as sight:ed90210d, looked at and live as frb_008 under the 2026-10-12 reader rule.",
+   "hidde": null,
+   "agreed": null,
+   "shown": [
+    "2026-10-21"
+   ]
+  },
+  {
+   "id": "lead:c86ff6bf-232a-499b-bf45-d34626073ac7",
+   "seen": "2026-10-18",
+   "kind": "a tree we do not map",
+   "tree": "The Tulip Tree of Cantonspark",
+   "city": null,
+   "species": "Tulip Tree (Liriodendron sp.)",
+   "photo": "p_6312cf4c9007b0fcfae9011c/C86FF6BF-232A-499B-BF45-D34626073AC7.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Tulip Tree (Liriodendron sp.)"
+   },
+   "verdict": "lead",
+   "reason": "Owner-account photograph (ours). No register entry, measurement or note sets it apart yet; no page until a source or a visible size does.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:9a081475-2fea-4507-85b9-4f3480a59f69",
+   "seen": "2026-10-18",
+   "kind": "photo of a tree we map",
+   "tree": "The Moreton Bay Fig of Jardim Constantino",
+   "city": "Lisbon",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "photo": "out/sightings/9a081475-2fea-4507-85b9-4f3480a59f69.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 30,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Moreton Bay Fig (Ficus macrophylla)"
+   },
+   "verdict": "publish",
+   "reason": "Looked at it: the fig whole, trunk, buttresses and spreading surface roots, the Prometheus statue behind; fig leaves and aerial roots match. First photograph of this tree, a stranger's, taken while collecting it in the app.",
+   "hidde": "Al besproken, akkoord",
+   "agreed": true
+  },
+  {
+   "id": "sight:3dcae924-1609-4868-b248-d493560024ef",
+   "seen": "2026-10-18",
+   "kind": "photo of a tree we map",
+   "tree": "The Moreton Bay Fig of Jardim Constantino",
+   "city": "Lisbon",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "photo": "out/sightings/3dcae924-1609-4868-b248-d493560024ef.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 103,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Moreton Bay Fig (Ficus macrophylla)"
+   },
+   "verdict": "publish",
+   "reason": "Looked at it: the same fig from under its 26 m crown, aerial roots and people for scale. Added beside the lead photograph.",
+   "hidde": "Al besproken, akkoord",
+   "agreed": true
+  },
+  {
+   "id": "sight:e52911e0-b8d8-4885-9255-dfbec62e6335",
+   "seen": "2026-10-18",
+   "kind": "photo of a tree we map",
+   "tree": "The Paperbark of Jardim Constantino",
+   "city": "Lisbon",
+   "species": "Prickly Paperbark (Melaleuca styphelioides)",
+   "photo": "out/sightings/e52911e0-b8d8-4885-9255-dfbec62e6335.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 12,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Prickly Paperbark (Melaleuca styphelioides)"
+   },
+   "verdict": "publish",
+   "reason": "Looked at it: the forked trunk in daylight, white papery peeling bark filling the frame, fine leaves against blue sky. First photograph of this tree, a stranger's, taken while collecting it in the app.",
+   "hidde": "Al besproken, akkoord",
+   "agreed": true
+  },
+  {
+   "id": "lead:f9336891-77a8-4a77-b859-a5940a4c5657",
+   "seen": "2026-10-18",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Baarn",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/F9336891-77A8-4A77-B859-A5940A4C5657.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Owner-account photograph (mine, never credited) of a large old willow (Salix) trunk with a second stem, on a waterside bank in Baarn. Looked at the photograph: a big girth, but no register entry within 100 m, no Wikipedia article within 300 m, no note, age or girth given. Nearest tree we publish is 910 m away. Kept as a lead with its coordinate; a page needs a source or a measured girth.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:2aa7147b-3a7b-49eb-8b8a-da81f726eda1",
+   "seen": "2026-10-18",
+   "kind": "a tree we do not map",
+   "tree": "Moreton Bay Fig",
+   "city": null,
+   "species": "Moreton Bay Fig",
+   "photo": "p_3ede14c55de0e0de9b87562a/2AA7147B-3A7B-49EB-8B8A-DA81F726EDA1.jpg",
+   "reader_note": "The Mendoubia Moreton Bay Fig (Ficus macrophylla) is the most notable tree located in the Mendoubia Gardens (Jardin de la Mendoubia) in central Tangier, Morocco. Native to the subtropical coastal rainforests of eastern Australia, the species was introduced to North Africa in the late 19th century. Planted between the 1880s and 1900s during Tangier's diplomatic expansion, the tree was placed adjacent to the residency of the Mendoub (the representative of the Moroccan Sultan to the international a",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Moreton Bay Fig"
+   },
+   "verdict": "lead",
+   "reason": "Looked at the extra photograph on 2026-10-18 (main file was not on the runner): a huge Moreton Bay Fig with sweeping buttress roots beside the Jardin de la Mendoubia, Tangier; visibly big and worth the walk, the reader's age (about 120 to 140 years) is a basis. No register or encyclopaedia entry within 300 m. Morocco is out of focus (Africa, Hidde), so no verify pass now; kept as a lead with its coordinate, goes live when a source or a second account turns up.",
+   "hidde": "please put the moreton bay fig live forget about our focus areas - user content is the most valuable thing. if we have a good photo and gps then never hold back and just publish, especially if they give so much information; people can always tell us its wrong. our goal should be pages google loves instead of 100% sure",
+   "agreed": false,
+   "shown": [
+    "2026-10-21"
+   ]
+  },
+  {
+   "id": "sight:2aa7147b-3a7b-49eb-8b8a-da81f726eda1",
+   "seen": "2026-10-18",
+   "kind": "photo of a tree we map",
+   "tree": "The Moreton Bay Fig of the Mendoubia",
+   "city": "Tangier",
+   "species": "Moreton Bay Fig (Ficus macrophylla)",
+   "photo": "p_3ede14c55de0e0de9b87562a/2AA7147B-3A7B-49EB-8B8A-DA81F726EDA1.jpg",
+   "reader_note": "The Mendoubia Moreton Bay Fig (Ficus macrophylla) is the most notable tree located in the Mendoubia Gardens (Jardin de la Mendoubia) in central Tangier, Morocco. Native to the subtropical coastal rainforests of eastern Australia, the species was introduced to North Africa in the late 19th century. Planted between the 1880s and 1900s during Tangier's diplomatic expansion, the tree was placed adjacent to the residency of the Mendoub (the representative of the Moroccan Sultan to the international a",
+   "reader_girth_cm": null,
+   "coords": [
+    35.7851216666667,
+    -5.81336166666667
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Moreton Bay Fig"
+   },
+   "verdict": "publish",
+   "reason": "Looked at it: the whole Moreton Bay fig from buttress roots to crown in daylight and colour, the white Mendoubia building behind; GPS fix at the tree; the reader's note gives species, planting window, age and trunk measures. Live as tng_001 on Hidde's 2026-10-21 ruling (a good photo plus GPS goes live, focus areas or not), their words quoted on the page.",
+   "hidde": "please put the moreton bay fig live forget about our focus areas - user content is the most valuable thing (2026-10-21)",
+   "agreed": true,
+   "shown": [
+    "2026-10-21"
+   ]
+  },
+  {
+   "id": "lead:34bc1a6d-a58a-427c-985e-d252a97a697b",
+   "seen": "2026-10-15",
+   "kind": "a tree we do not map",
+   "tree": "The Meiji Jingu Gaien Ginkgo Avenue",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/34BC1A6D-A58A-427C-985E-D252A97A697B.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Duplicate of tok_009, The Meiji Jingu Gaien Ginkgo Avenue, live in Tokyo since the first pass; the inbox missed the match because the phone's fix was 588 m from our approximate pin (past the 30 m match radius) and about 150 m north of the Picture Gallery. Owner-account photograph, never published. Nothing new to judge.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:d9c08351-03d1-4b51-a6ec-972f08d308e8",
+   "seen": "2026-10-13",
+   "kind": "a tree we do not map",
+   "tree": "The Great Lawn Plane of Parc Montsouris",
+   "city": "Paris",
+   "species": "London Plane",
+   "photo": "p_1ca91d2bab15f40502a64368/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
+   "reader_note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
+   "reader_girth_cm": 450,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 48.8226040553664,
+      "lng": 2.3367012188551644,
+      "source": "paris-arbres-remarquables",
+      "designation": "Arbre remarquable de Paris",
+      "name": "Hêtre 'riversii'",
+      "species": "Fagus sylvatica",
+      "girth_cm": 420.0,
+      "height_m": 22.0,
+      "distance_m": 43.8
+     }
+    ]
+   },
+   "measure": {
+    "score": 0.879,
+    "via": "girth",
+    "note": "88% of the genus reference (512 cm, n=2, max 512)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "publish",
+   "reason": "Viewed 2026-10-13: a whole London plane with a heart-shaped crown on the Grande pelouse of Parc Montsouris, daylight, tree fills the frame. Matched to the Ville de Paris inventory record 113345 (480 cm, 25 m), 33 m from the reader's GPS fix, which gives a confirmed pin and a written source. Published as par_034 on Hidde's yes; the night run's lead verdict judged the girth without opening the photograph.",
+   "hidde": "publish (2026-10-13, session: 'follow your suggestion')",
+   "agreed": false
+  },
+  {
+   "id": "sight:c067dcde-0600-4d9b-b42c-110224aae671",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Town Hall Plane",
+   "city": "Baarn",
+   "species": "London Plane (Platanus x acerifolia)",
+   "photo": "out/sightings/c067dcde-0600-4d9b-b42c-110224aae671.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Viewed: whole plane in leaf on the lawn before the building, daylight, fits the record. Hidde's own photograph, no credit; the tree had none, so it leads.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:96eaf812-a172-46c5-bc50-e84c565bf580",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Town Hall Plane",
+   "city": "Baarn",
+   "species": "London Plane (Platanus x acerifolia)",
+   "photo": "out/sightings/96eaf812-a172-46c5-bc50-e84c565bf580.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Viewed: trunk close-up of the same plane with the same building behind; added beside the lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:a0a58c4d-6a30-46f7-aec2-d6de44c6abcb",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Town Hall Plane",
+   "city": "Baarn",
+   "species": "London Plane (Platanus x acerifolia)",
+   "photo": "out/sightings/a0a58c4d-6a30-46f7-aec2-d6de44c6abcb.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Viewed: a tree-label sign, not the tree. It names Platanus hispanica, 26 m, 110 cm diameter (our record says 450 cm girth).",
+   "hidde": null,
+   "agreed": null,
+   "shown": [
+    "2026-10-21"
+   ]
+  },
+  {
+   "id": "sight:c006895e-2256-4094-bca9-6d940476cd21",
+   "seen": "2026-10-12",
+   "kind": "photo of a tree we map",
+   "tree": "The Lagunària de la Llotja",
+   "city": "Palma de Mallorca",
+   "species": "Norfolk Island Hibiscus (Lagunaria patersonii)",
+   "photo": "out/sightings/c006895e-2256-4094-bca9-6d940476cd21.jpg",
+   "reader_note": "",
+   "match": "app",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "A fig nobody had mapped, beside La Llotja: the reader's photograph shows curtains of aerial roots worth the walk, and their GPS fix puts the pin on the trunk. No written source names it; published on Hidde's 2026-10-12 ruling that good reader input goes live, as The Fig of La Llotja (plm_006), species asked of readers. Not the Lagunaria (plm_003) it was tagged to.",
+   "hidde": "publish: Hidde's own call on 2026-10-12 ('if users have good input - just use it')",
+   "agreed": true
+  },
+  {
+   "id": "lead:7c8bec8f-b77b-415c-b4ec-a1589130c4a3",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/7C8BEC8F-B77B-415C-B4EC-A1589130C4A3.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run (not in out/sightings). Nothing sets it apart yet. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:a4fa2700-1d89-4bf7-8f6e-0eafa60dc4d9",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/A4FA2700-1D89-4BF7-8F6E-0EAFA60DC4D9.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:ae06e952-7de0-46ab-aada-af2be3d5c8ca",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "Ginkgo in Tokyo",
+   "city": null,
+   "species": "Ginkgo",
+   "photo": "p_6312cf4c9007b0fcfae9011c/AE06E952-7DE0-46AB-AADA-AF2BE3D5C8CA.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Ginkgo"
+   },
+   "verdict": "lead",
+   "reason": "Own sighting of a ginkgo in Tokyo, nothing measurable; photograph not viewed this run. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:d0d4ee1d-a0c3-4c4f-966f-ee01f7ecb592",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/D0D4EE1D-A0C3-4C4F-966F-EE01F7ECB592.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:038ab20e-98e0-4335-b154-08263b494999",
+   "seen": "2026-10-06",
+   "kind": "a tree we do not map",
+   "tree": "A tree in Tokyo",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/038AB20E-98E0-4335-B154-08263B494999.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Own Tokyo sighting, no name, species or measurement; photograph not viewed this run. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:e0458b06-5210-49c5-9346-2380ad069f7f",
+   "seen": "2026-10-05",
+   "kind": "photo of a tree we map",
+   "tree": "The Southern Mahogany of Edinburgh Gardens",
+   "city": "Melbourne",
+   "species": "Southern Mahogany (Eucalyptus botryoides)",
+   "photo": "out/sightings/e0458b06-5210-49c5-9346-2380ad069f7f.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": ""
+   },
+   "verdict": "publish",
+   "reason": "Viewed: eucalyptus with rough fibrous bark and broad crown fits the record (434 cm, 25 m); tree had no photograph, so it leads.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:1b9adcb8-c06f-48b5-b8c0-398f6227a257",
+   "seen": "2026-10-05",
+   "kind": "photo of a tree we map",
+   "tree": "The Finer Holm Oak of Edinburgh Gardens",
+   "city": "Melbourne",
+   "species": "Holm Oak (Quercus ilex)",
+   "photo": "out/sightings/1b9adcb8-c06f-48b5-b8c0-398f6227a257.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": ""
+   },
+   "verdict": "hold",
+   "reason": "Viewed: bare deciduous forked tree, not an evergreen holm oak; rejected as wrong tree.",
+   "hidde": "hold: a bare deciduous tree, not our evergreen holm oak (discussed 2026-10-13)",
+   "agreed": true
+  },
+  {
+   "id": "lead:d9c08351-03d1-4b51-a6ec-972f08d308e8",
+   "seen": "2026-10-05",
+   "kind": "a tree we do not map",
+   "tree": "London Plane in Paris",
+   "city": "Paris",
+   "species": "London Plane",
+   "photo": "p_1ca91d2bab15f40502a64368/D9C08351-03D1-4B51-A6EC-972F08D308E8.jpg",
+   "reader_note": "This tree has a beautiful heart-shaped crown. \n\nIt stands in the central field. Given its circumference, it seems likely that it has been there since the park opened. If so, it has witnessed the parties in the early 1900s thrown by the artist, who received the key to the park from the park ranger, so he could have fun there with his friends. \n\n« Le Jardin », poem by Jacques Prévert, in Paroles :\nDes milliers et des milliers d'années\nNe sauraient suffire\nPour dire la petite seconde d'éternité\nOù ",
+   "reader_girth_cm": 450,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "near",
+    "why": "the nearest register entry is 44 m away (paris-arbres-remarquables): possibly the same tree, possibly its neighbour, so check before leaning on it",
+    "nearest": [
+     {
+      "lat": 48.8226040553664,
+      "lng": 2.3367012188551644,
+      "source": "paris-arbres-remarquables",
+      "designation": "Arbre remarquable de Paris",
+      "name": "Hêtre 'riversii'",
+      "species": "Fagus sylvatica",
+      "girth_cm": 420.0,
+      "height_m": 22.0,
+      "distance_m": 43.8
+     }
+    ]
+   },
+   "measure": {
+    "score": 0.879,
+    "via": "girth",
+    "note": "88% of the genus reference (512 cm, n=2, max 512)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "publish",
+   "reason": "SUPERSEDED 2026-10-13: published as par_034; see sight:d9c08351-03d1-4b51-a6ec-972f08d308e8 for the verdict.",
+   "hidde": "publish (2026-10-13, session: 'follow your suggestion')",
+   "agreed": false
+  },
+  {
+   "id": "lead:6151f7e2-9211-4c2b-8ce8-e1bf17daa3e7",
+   "seen": "2026-10-04",
+   "kind": "a tree we do not map",
+   "tree": "Ginkgo in Tokyo",
+   "city": null,
+   "species": "Ginkgo",
+   "photo": "p_6312cf4c9007b0fcfae9011c/6151F7E2-9211-4C2B-8CE8-E1BF17DAA3E7.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Ginkgo"
+   },
+   "verdict": "lead",
+   "reason": "Own sighting of a ginkgo in Tokyo, nothing measurable, no register or write-up within 300 m, photograph not viewed this run. Nothing sets it apart. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:8f4e7266-cc24-46b3-9a6d-5e8a94bba199",
+   "seen": "2026-10-04",
+   "kind": "a tree we do not map",
+   "tree": "Pedunculate Oak",
+   "city": null,
+   "species": "Pedunculate Oak",
+   "photo": "p_1ca91d2bab15f40502a64368/8F4E7266-CC24-46B3-9A6D-5E8A94BBA199.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 440,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": 1.122,
+    "via": "girth",
+    "note": "112% of the genus reference (392 cm, n=2, max 392)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "reject",
+   "reason": "Pedunculate oak, reader gives 245 years and 440 cm girth, about the norm for the species. Looked at the photograph on 2026-10-05: it shows a stone garden well under a little roof, with only fruit-tree branches in frame, not the oak, and the setting reads as a private garden. One contributor, no register or write-up within 300 m, no frame of the tree itself and public access unknown, so it stays a lead. A photograph of the oak and a word on whether the public can reach it would reopen it.",
+   "hidde": "reject, closed: Hidde, 2026-10-21: 'kun je ergens registreren dat die waterput al 10 keer is afgekeurd onthoud dat'. Closed: the photograph is a garden well, not the oak. Never show it to him again and never re-judge this photograph. It reopens only when the reader sends a new photograph of the oak itself (a different file).",
+   "agreed": true
+  },
+  {
+   "id": "sight:55b91b6b-2126-4579-800f-41cf3f12d87a",
+   "seen": "2026-10-03",
+   "kind": "photo of a tree we map",
+   "tree": "The Whitebeam of Víkurgarður",
+   "city": "Reykjavik",
+   "species": "Swedish Whitebeam (Sorbus intermedia)",
+   "photo": "out/sightings/55b91b6b-2126-4579-800f-41cf3f12d87a.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "current_photo": "none",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Looked at the file: right species and setting, whole crown readable in daylight, tree is the subject. Reykjavik's oldest tree had no photograph; published as lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:c3722c87-18af-4a1e-9d8c-a7beddf77f09",
+   "seen": "2026-10-03",
+   "kind": "photo of a tree we map",
+   "tree": "The Larch of Hólavallagarður",
+   "city": "Reykjavik",
+   "species": "European Larch (Larix decidua)",
+   "photo": "out/sightings/c3722c87-18af-4a1e-9d8c-a7beddf77f09.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "current_photo": "none",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Looked at the file: old gnarled larch among headstones, trunk and limbs readable, matches the cemetery setting. Tree had no photograph; published as lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:322fc46b-8bed-4ea1-a971-14a894bbf367",
+   "seen": "2026-10-03",
+   "kind": "photo of a tree we map",
+   "tree": "The City Hall Maple",
+   "city": "Reykjavik",
+   "species": "Sycamore (Acer pseudoplatanus)",
+   "photo": "out/sightings/322fc46b-8bed-4ea1-a971-14a894bbf367.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "current_photo": "none",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Hidde overruled the hold on 2026-10-03; published as the lead on 2026-10-09 after a second look at the file (species and corner match)",
+   "hidde": "zet de andere foto's van onze Reykjavik gebruiker ook maar online, ik vertrouw hem meer dan jou; ook zijn semi slechte foto's zijn beter dan geen",
+   "agreed": false
+  },
+  {
+   "id": "sight:e36a052c-3a48-4eed-ba48-5ab48574fa05",
+   "seen": "2026-10-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Camphor of Oimatsu Tenjin Shrine",
+   "city": "Fukuoka",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "out/sightings/e36a052c-3a48-4eed-ba48-5ab48574fa05.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 500,
+   "match": "distance",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Own photograph at the trunk, light OK, camphor foliage and the lantern-and-komainu setting match the entry written from it. Published as fuk_016 on Hidde's call, overruling the run's earlier lead verdict (lead:e36a052c-3a48-4eed-ba48-5ab48574fa05).",
+   "hidde": "itoshima ik was er het was mooi en de foto ook dus keur hem goed",
+   "agreed": true
+  },
+  {
+   "id": "sight:0ee5b139-7042-4bcb-a109-4e8b8d051174",
+   "seen": "2026-10-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Sacred Cedar of Kirishima Jingu",
+   "city": "Kagoshima",
+   "species": "",
+   "photo": "out/sightings/0ee5b139-7042-4bcb-a109-4e8b8d051174.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "distance",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Own photograph at the trunk, light OK, species and setting match the entry. Published as kag_015 on Hidde's call (review page), overruling the run's lead verdict (lead:0ee5b139-7042-4bcb-a109-4e8b8d051174).",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": true
+  },
+  {
+   "id": "sight:1993a31d-f025-44d3-bcc1-6caa9cbba0eb",
+   "seen": "2026-10-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Leaning Camphor of the Shiroyama Car Park",
+   "city": "Kagoshima",
+   "species": "",
+   "photo": "out/sightings/1993a31d-f025-44d3-bcc1-6caa9cbba0eb.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "distance",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Own photograph at the trunk, light OK, species and setting match the entry. Published as kag_016 on Hidde's call (review page), overruling the run's lead verdict (lead:1993a31d-f025-44d3-bcc1-6caa9cbba0eb).",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": true
+  },
+  {
+   "id": "sight:8bfeb681-540d-4b78-8df5-06a95191adb2",
+   "seen": "2026-10-02",
+   "kind": "photo of a tree we map",
+   "tree": "Chichibu-sugi, the Cedar of Takachiho Shrine",
+   "city": "Takachiho",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "photo": "out/sightings/8bfeb681-540d-4b78-8df5-06a95191adb2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "distance",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Own photograph at the trunk, species and setting match; published with tkc_001 when Takachiho opened at three on Hidde's call (overruling the run's lead verdict lead:8bfeb681-540d-4b78-8df5-06a95191adb2).",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": true
+  },
+  {
+   "id": "sight:b9a2d2df-77ba-4240-8c90-63ca0a83b1c9",
+   "seen": "2026-10-02",
+   "kind": "photo of a tree we map",
+   "tree": "Meoto-sugi, the Wedded Cedars of Takachiho Shrine",
+   "city": "Takachiho",
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "photo": "out/sightings/b9a2d2df-77ba-4240-8c90-63ca0a83b1c9.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "distance",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Own photograph at the trunk, species and setting match; published with tkc_002 when Takachiho opened at three on Hidde's call (overruling the run's lead verdict lead:b9a2d2df-77ba-4240-8c90-63ca0a83b1c9).",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": true
+  },
+  {
+   "id": "lead:59e829e3-784f-4302-a98e-2c40d1be8824",
+   "seen": "2026-10-02",
+   "kind": "a tree we do not map",
+   "tree": "Camphor Tree in Fukuoka",
+   "city": null,
+   "species": "Camphor Tree",
+   "photo": "p_6312cf4c9007b0fcfae9011c/59E829E3-784F-4302-A98E-2C40D1BE8824.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 700,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": 1.75,
+    "via": "girth",
+    "note": "175% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "lead",
+   "reason": "Own sighting, no register or write-up near it, photograph not viewed by the runner (verdict of 2026-10-02)",
+   "hidde": "put it live i vouch for it i was there (publish, as fuk_018, 2026-10-04)",
+   "agreed": false
+  },
+  {
+   "id": "sight:59e829e3-784f-4302-a98e-2c40d1be8824",
+   "seen": "2026-10-02",
+   "kind": "photo of a tree we map",
+   "tree": "The Camphor of Kofuji Tenmangu",
+   "city": "Fukuoka",
+   "species": "Camphor Tree",
+   "photo": "out/sightings/59e829e3-784f-4302-a98e-2c40d1be8824.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 700,
+   "match": "tree_id",
+   "distance_m": 0,
+   "current_photo": null,
+   "measure": {
+    "score": 1.75,
+    "via": "girth",
+    "note": "175% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "publish",
+   "reason": "Own photograph at the shrine, whole tree in daylight and in leaf, camphor, setting matches the entry. Published as fuk_018 on Hidde's call in session 2026-10-04, overruling the run's lead verdict (lead:59e829e3-784f-4302-a98e-2c40d1be8824).",
+   "hidde": "put it live i vouch for it i was there (2026-10-04)",
+   "agreed": true
+  },
+  {
+   "id": "lead:e36a052c-3a48-4eed-ba48-5ab48574fa05",
+   "seen": "2026-10-01",
+   "kind": "a tree we do not map",
+   "tree": "A tree near Fukuoka",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/E36A052C-3A48-4EED-BA48-5AB48574FA05.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 500,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "LOOKED 2026-10-01: camphor foliage over a sandy shrine-style yard with several camphors standing together, a pushchair in frame. Own sighting, girth entered as 500 cm. No register entry within 100 m, no article within 300 m, no source, nothing in the frames separates this trunk from its neighbours. Kyushu shrine camphors of that girth are common, so this is the Nara pattern: kept as a lead until a source or a second reader names it.",
+   "hidde": "itoshima ik was er het was mooi en de foto ook dus keur hem goed (publish)",
+   "agreed": false
+  },
+  {
+   "id": "sight:0ac9eef6-08d3-4236-a17e-3ac9f36303d9",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/0ac9eef6-08d3-4236-a17e-3ac9f36303d9.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "none",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Whole tree in leaf, daylight, matches the Paris plaque (1894 horse chestnut, hollow trunk, 3.6 m girth). Lead photo for a tree that had none.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:401983c9-c965-4d40-b376-707b0c4c02b8",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Turkey Oak of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Turkey Oak (Quercus cerris)",
+   "photo": "out/sightings/401983c9-c965-4d40-b376-707b0c4c02b8.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "Whole tree in leaf, daylight, setting matches the square; oak crown consistent with Turkey oak and a 190 cm trunk. Published as the lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:5ef6e499-c980-40e0-a456-fbf5c224e3a8",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Turkey Oak of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Turkey Oak (Quercus cerris)",
+   "photo": "out/sightings/5ef6e499-c980-40e0-a456-fbf5c224e3a8.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "Trunk and bark close-up with lobed oak leaves; added beside the lead photograph.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:722e85a4-63fe-434a-b058-d41389ff7769",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/722e85a4-63fe-434a-b058-d41389ff7769.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "Hollow trunk at eye level with the city's plaque on the bark; same tree, same reader, same minutes as the lead. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:fc9e2246-a080-4bd3-b67f-cc75e407336c",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/fc9e2246-a080-4bd3-b67f-cc75e407336c.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "Looking up the fissured trunk into the yellowing crown. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:cccde1b1-93ce-45d6-8fc8-7341432edf30",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/cccde1b1-93ce-45d6-8fc8-7341432edf30.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "The split hollow trunk from below, glasshouse of the square behind. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:8bb90abb-6768-4f14-822b-a89d797061d6",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/8bb90abb-6768-4f14-822b-a89d797061d6.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "The plaque on the trunk: planted 1894, 18 m, 3.60 m girth in 2011, which is our entry word for word. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:ca7d8605-6a37-47ca-9b68-b7a6c1415446",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/ca7d8605-6a37-47ca-9b68-b7a6c1415446.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "The Paris Nature board at the foot of the tree with the city's own photographs of it. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:689af5c2-fb5a-4473-9f73-334895a5f1b2",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Horse Chestnut of Square Rene-Le Gall",
+   "city": "Paris",
+   "species": "Horse Chestnut (Aesculus hippocastanum)",
+   "photo": "out/sightings/689af5c2-fb5a-4473-9f73-334895a5f1b2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": null,
+   "current_photo": "reader lead photograph (0ac9eef6)",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Turkey Oak (Quercus cerris)"
+   },
+   "verdict": "publish",
+   "reason": "A conker on the ground beneath it, early October. Declined on 2026-10-01 as a frame beside a better lead; added beside it on 2026-10-02 on Hidde's ruling: add all tree photos to the page.",
+   "hidde": "publish all frames (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:a7f41ada-be81-462a-8356-763b5d1323bd",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Dragon Tree of Quinta Conde dos Arcos",
+   "city": "Lisbon",
+   "species": "Dragon Tree (Dracaena draco)",
+   "photo": "out/sightings/a7f41ada-be81-462a-8356-763b5d1323bd.jpg",
+   "reader_note": null,
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 20,
+   "current_photo": "Commons lead (wide shot)",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "The whole dragon tree, umbrella crown over the fluted trunk; 20 m from our confirmed pin. Declined 2026-10-01 because the page had a lead; added beside it 2026-10-02 on Hidde's ruling: reader photographs are extras by default.",
+   "hidde": "add as extra (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "sight:ef0d9ead-41b5-4fcb-8004-015d6b5afe1e",
+   "seen": "2026-10-01",
+   "kind": "photo of a tree we map",
+   "tree": "The Dragon Tree of Quinta Conde dos Arcos",
+   "city": "Lisbon",
+   "species": "Dragon Tree (Dracaena draco)",
+   "photo": "out/sightings/ef0d9ead-41b5-4fcb-8004-015d6b5afe1e.jpg",
+   "reader_note": null,
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 20,
+   "current_photo": "Commons lead (wide shot)",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "The trunk at eye level, fused knuckled limbs and aerial roots. Declined 2026-10-01 because the page had a lead; added beside it 2026-10-02 on Hidde's ruling: reader photographs are extras by default.",
+   "hidde": "add as extra (2026-10-02, in session)",
+   "agreed": null,
+   "decided": "2026-10-02"
+  },
+  {
+   "id": "lead:8bfeb681-540d-4b78-8df5-06a95191adb2",
+   "seen": "2026-09-29",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/8BFEB681-540D-4B78-8DF5-06A95191ADB2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Same spot as b9a2d2df (Japanese cedar, Minamiaso area); no register entry or write-up; photo not viewed this run. Stays a lead.",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": false
+  },
+  {
+   "id": "lead:b9a2d2df-77ba-4240-8c90-63ca0a83b1c9",
+   "seen": "2026-09-29",
+   "kind": "a tree we do not map",
+   "tree": "Japanese Cedar near Minamiaso",
+   "city": null,
+   "species": "Japanese Cedar",
+   "photo": "p_6312cf4c9007b0fcfae9011c/B9A2D2DF-77BA-4240-8C90-63CA0A83B1C9.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Japanese Cedar"
+   },
+   "verdict": "lead",
+   "reason": "Reader-named Japanese cedar, no register entry or write-up, nothing measurable; photo not viewed this run. Stays a lead.",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": false
+  },
+  {
+   "id": "lead:0ee5b139-7042-4bcb-a109-4e8b8d051174",
+   "seen": "2026-09-29",
+   "kind": "a tree we do not map",
+   "tree": "I think it’s a Japanese cedar. It’s next to a beautiful shri",
+   "city": null,
+   "species": "Cedar (Cedrus sp.)",
+   "photo": "p_5ce4a9c7b8aa8e78f008005e/0EE5B139-7042-4BCB-A109-4E8B8D051174.jpg",
+   "reader_note": "I think it’s a Japanese cedar. It’s next to a beautiful shrine ",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Cedar (Cedrus sp.)"
+   },
+   "verdict": "lead",
+   "reason": "Cedar beside a shrine near Kagoshima, no register entry or write-up, shrine unnamed; photo not viewed this run. Stays a lead until the shrine is named.",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": false
+  },
+  {
+   "id": "lead:50bab485-dcc6-479f-a4fa-f45756d8558e",
+   "seen": "2026-09-28",
+   "kind": "a tree we do not map",
+   "tree": "A tree near Minamiaso",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/50BAB485-DCC6-479F-A4FA-F45756D8558E.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "No register entry or write-up within 100 m and nothing measurable; photo not viewed this run. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:70e18ab5-cc32-492e-b2a4-a816e854582b",
+   "seen": "2026-09-28",
+   "kind": "a tree we do not map",
+   "tree": "A tree near Ueki",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/70E18AB5-CC32-492E-B2A4-A816E854582B.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "No register entry or write-up within 100 m and nothing measurable; photo not viewed this run. Stays a lead.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:f0d60c06-022d-4a1d-afdc-37d66b3b6d4e",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we map",
+   "tree": "El Gran Capitán",
+   "city": "Seville",
+   "species": "River Red Gum (Eucalyptus camaldulensis)",
+   "photo": "out/sightings/f0d60c06-022d-4a1d-afdc-37d66b3b6d4e.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 0,
+   "current_photo": "none",
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Tree had no photo (status missing). Exact GPS match (distance_m=0) from app. Species and description both checked yes: eucalyptus foliage/pale bark visible, clearly the tallest tree over the surrounding palms, matching the tallest-tree-in-Seville story. Well lit, colour, in leaf (photo_light.py OK). Published to site/public/photos.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:01d9c8b8-147f-40d5-af0c-d81857c90f91",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/01D9C8B8-147F-40D5-AF0C-D81857C90F91.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Ordinary backlit street tree beside apartment blocks, no unusual girth or crown shape, no plaque legible, no register or write-up within 100m. Not pursued.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:b4b65fef-1ac7-4ebd-ae21-88200be2fb81",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/B4B65FEF-1AC7-4EBD-AE21-88200BE2FB81.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Striking solitary buttressed specimen (kapok/silk-floss type) on the lawn at Kagoshima honko waterfront by the Sakurajima ferry terminal, spectacle visible in the photograph, but no register entry and no web source names it (checked JP and EN). Worth a proper research pass on this exact spot before it clears the normal bar.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:9f1810d8-0bbf-4220-81f7-47c9177c974a",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/9F1810D8-0BBF-4220-81F7-47C9177C974A.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Duplicate of b4b65fef, same tree photographed 17 seconds later. See that verdict.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:1993a31d-f025-44d3-bcc1-6caa9cbba0eb",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/1993A31D-F025-44D3-BCC1-6CAA9CBBA0EB.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Canopy of large trees over a car park/gate 250m from kag_001, likely Shiroyama Park's own approach road. No single trunk stands out as a collectible point, no register or write-up within 100m.",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": false
+  },
+  {
+   "id": "lead:d8ccd98d-702c-4e1e-8c23-bdb5a712b806",
+   "seen": "2026-09-25",
+   "kind": "a tree we do not map",
+   "tree": "Biggest of the park - 4m girth\n",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/D8CCD98D-702C-4E1E-8C23-BDB5A712B806.jpg",
+   "reader_note": "Biggest of the park - 4m girth\n",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Wide, well-balanced tree given its own circular brick planter in the centre of a city park plaza, reader notes 4m girth, no published tree nearby at all. Strongest of this batch, but no register entry or source found; needs a research pass to place the park before it clears the normal bar. SUPERSEDED 2026-09-26: resolved and published as kag_014 (Kagoshima); see sight:d8ccd98d-702c-4e1e-8c23-bdb5a712b806 for the full verdict.",
+   "hidde": "publish (Hidde, review page 2026-10-02)",
+   "agreed": true
+  },
+  {
+   "id": "sight:16539189-abe6-4f04-a8a9-52ec0c3752db",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we map",
+   "tree": "The Camphor of Shiroyama",
+   "city": "Kagoshima",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "out/sightings/16539189-abe6-4f04-a8a9-52ec0c3752db.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "distance",
+   "distance_m": 12,
+   "current_photo": "none",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Camphor Tree (Cinnamomum camphora)"
+   },
+   "verdict": "publish",
+   "reason": "Tree had no photo at all (status missing). Distance-matched 12m to kag_001, the app also matched it directly by tree_id in a second identical submission. Species and description both checked yes: buttressed camphor base with identification plaque, roped off from the path in Shiroyama Park, matches the recognition line and story. Well lit forest shot, tree fills frame, person for scale shows the size. Published.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:27cb465f-fb1c-4e42-b241-bbd8fe7b196c",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we map",
+   "tree": "The Akou of Uchiumi",
+   "city": "Miyazaki",
+   "species": "Sea Fig (Ficus superba)",
+   "photo": "out/sightings/27cb465f-fb1c-4e42-b241-bbd8fe7b196c.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "match": "app",
+   "distance_m": 40,
+   "current_photo": "none",
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Sea Fig (Ficus superba)"
+   },
+   "verdict": "publish",
+   "reason": "Tree had no photo at all (status missing). App-matched (distance 40m). Species and description both checked yes: wild aerial-root fig mass poured over the wall and rock beside the shrine's approach sign, matching the recognition line's description of the wildest-looking akou fig. Daylight, well exposed, in leaf, tree fills the frame. Published.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:d8ccd98d-702c-4e1e-8c23-bdb5a712b806",
+   "seen": "2026-09-25",
+   "kind": "photo of a tree we do not map",
+   "tree": "The Camphor of Kyoken Park",
+   "city": "Kagoshima",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "out/sightings/229.jpg",
+   "reader_note": "Biggest of the park - 4m girth",
+   "reader_girth_cm": null,
+   "match": "unmatched (new tree)",
+   "distance_m": null,
+   "current_photo": "none",
+   "measure": {
+    "score": null,
+    "note": "no register or published record to compare against; reader-estimated girth only"
+   },
+   "verdict": "publish",
+   "reason": "No tree of ours stood nearby. Reverse-geocoded the coordinate to Kyoken Park (Chuo-cho, Kagoshima), a public neighbourhood park a few minutes from Kagoshima-Chuo Station. The park own official page and a second independent source (secret-kichi.net) both confirm a camphor as the park named symbol tree, with real sourced history (Saigo Takamori former residence, then a girls school from 1911, a park since 1951). Species and description both checked: a single large camphor filling its own circular brick planter at the park centre, matching the reader photograph and the sources naming of the symbol tree, well lit, tree fills frame. Two independent sources clear the normal bar even though neither measures this exact specimen; girth (400cm) is the reader own unverified estimate, flagged in the entry, and no age is documented anywhere for the tree itself. Published as kag_014.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:12168ca4-f893-4296-a444-14bd9e2c4e09",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "Fig?",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/12168CA4-F893-4296-A444-14BD9E2C4E09.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Banyan-type fig in the landscaped grounds at Aoshima resort, Miyazaki. Tended garden setting, not a wild site. No register hit, no source. Could be genuine or an ordinary planting; garden's own records not yet checked.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:48129024-139c-4b61-9136-2a2bd746b52e",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/48129024-139C-4B61-9136-2A2BD746B52E.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Ornamental Araucaria on manicured resort lawn, Aoshima, Miyazaki, beside a restaurant. Planted specimen, unremarkable girth, no register hit. Unlikely to clear the bar.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:8230d205-81b7-498a-b1ca-c70bfc009b95",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/8230D205-81B7-498A-B1CA-C70BFC009B95.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Genuinely large sugi at an unnamed shrine, Taketa, with an unread interpretive signboard at its base, the kind used for designated trees. Strongest of the Taketa batch but no shrine name, no register hit yet. Worth a return pass to read the sign.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:c920cf02-072d-492c-8b22-fc0495614270",
+   "seen": "2026-09-22",
+   "kind": "a tree we do not map",
+   "tree": "Kamfertree around 100 years old",
+   "city": null,
+   "species": "Camphor Tree",
+   "photo": "p_6312cf4c9007b0fcfae9011c/C920CF02-072D-492C-8B22-FC0495614270.jpg",
+   "reader_note": "",
+   "reader_girth_cm": 400,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": {
+    "score": 1.0,
+    "via": "girth",
+    "note": "100% of the genus reference (400 cm, n=1, max 400)  THIN: fewer than ten records, treat as a hint"
+   },
+   "verdict": "lead",
+   "reason": "Ordinary-looking tree in semi-wild ground, Kawaminami, Miyazaki. Reader's name, age and girth are self-reported, not a source. No shrine, plaque or register hit. Least distinctive of this batch.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:5d23ad5d-ee3b-449e-91bf-12956befbb8c",
+   "seen": "2026-09-20",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/5D23AD5D-EE3B-449E-91BF-12956BEFBB8C.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Tree at an unnamed shrine near Oka Castle, Taketa, 330m from acd2ee12. Shrine has no name in OSM, no register hit. Needs the shrine's name before further research.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:acd2ee12-76dd-412d-9fe0-f2f0bdefb000",
+   "seen": "2026-09-20",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/ACD2EE12-76DD-412D-9FE0-F2F0BDEFB000.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Striking self-seeded tree on the ishigaki wall of Oka Castle (nationally designated historic site), Taketa. No register hit, no source naming this specific tree, species not yet identified. Needs ID and a source before it clears the bar.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:01c07566-c1a7-48ee-a9a7-c9053bb506a5",
+   "seen": "2026-09-16",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/01C07566-C1A7-48EE-A9A7-C9053BB506A5.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A genuinely substantial tree (broad multi-stem crown, thick trunk) in what looks like a riverside or canal park beside an apartment tower, but the submission carries no coordinates, no city and no species. Cannot be placed on the map or matched to a register without a location. Worth revisiting if the reader sends a follow-up with where this is.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:d0e24fa3-7097-47b1-b108-ac1dc932c287",
+   "seen": "2026-09-13",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/D0E24FA3-7097-47B1-B108-AC1DC932C287.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Not a tree. The photograph shows a person's legs on a bed, no tree, no location. Nothing to research.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:4f9e3110-5807-4226-951e-537c61658dee",
+   "seen": "2026-09-13",
+   "kind": "photo of a tree we map",
+   "tree": "Camphor of Shimodachiuri Gate, Kyoto Gyoen",
+   "city": "Kyoto",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "https://ancienttrees.app/photos/kyo_017-camphor-of-shimodachiuri-gate-kyoto-gyoen.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: Closes a photo gap on kyo_017, which had none",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:84ebae36-c683-4d39-86ac-a7db33d70910",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "Twisted pale-trunked tree by the Omiya gate, Kyoto Gyoen",
+   "city": null,
+   "species": "probably Muku (Aphananthe aspera), unconfirmed",
+   "photo": "site/public/photos/kyo_019-the-twisted-muku-of-omiya-gate-kyoto-gyoen.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about probably Muku (Aphananthe aspera), unconfirmed"
+   },
+   "verdict": "hold",
+   "reason": "Superseded by sight:84ebae36-c683-4d39-86ac-a7db33d70910, the same underlying sighting matched to kyo_019 (The Twisted Muku of Omiya Gate) and already verdicted publish. This lead: record predates that match; nothing further to judge here.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:9c414769-c025-4ec6-b707-55c981c22855",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/9C414769-C025-4EC6-B707-55C981C22855.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A gnarled, heavily-scarred cherry (or similar deciduous) tree standing right beside a torii gate at a shrine entrance on a Kyoto street, stone lanterns and dedication pillars naming a kyomai school beside it. Characterful trunk with an old healed wound. No coordinates or species confirmed. Publicly visible street-side shrine, a plausible candidate once located.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:a90d9031-8708-45ed-a717-7ce1678173a2",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/A90D9031-8708-45ED-A717-7CE1678173A2.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Genuinely striking veteran: massive burled, multi-scarred trunk with broken/snapped upper limbs, and an official interpretive signboard at its base (Japanese text, not transcribed) suggesting a designated or named tree. Strongest photo of this whole batch. No coordinates, no city and the sign was not read, so it cannot be placed or matched to a register yet. Worth chasing if the reader can say where this was taken.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:c8842af2-e25c-403a-a0a0-8f3b4e6b37a5",
+   "seen": "2026-09-11",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/C8842AF2-E25C-403A-A0A0-8F3B4E6B37A5.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A large canopy tree behind a clipped hedge, with a 立入禁止 (no entry) sign posted at the boundary. Access looks restricted beyond the hedge; only visible from outside, not approachable. No coordinates or species. Not promising unless the tree is viewable from public ground, which the sign argues against.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:5d5debc9-0545-40a6-88a1-79f40b62cbd1",
+   "seen": "2026-09-11",
+   "kind": "photo of a tree we map",
+   "tree": "Ginkgo of Inui Gate, Kyoto Gyoen",
+   "city": "Kyoto",
+   "species": "Ginkgo (Ginkgo biloba)",
+   "photo": "https://ancienttrees.app/photos/kyo_018-ginkgo-of-inui-gate-kyoto-gyoen.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: kyo_018 had no photo",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:aec13148-46f8-49c4-8735-7d8a2c7c3c28",
+   "seen": "2026-09-11",
+   "kind": "photo of a tree we map",
+   "tree": "The Camphor of Munakata Shrine",
+   "city": "Kyoto",
+   "species": "Camphor Tree (Cinnamomum camphora)",
+   "photo": "https://ancienttrees.app/photos/kyo_006-the-camphor-of-munakata-shrine.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: kyo_006's current photo (iNaturalist) is a tight crop of moss-covered branches with no trunk or ground visible",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:b77fcaee-e20e-4722-9b42-5d60aca6a3cc",
+   "seen": "2026-09-11",
+   "kind": "photo of a tree we map",
+   "tree": "The Hackberry of Demizu-guchi",
+   "city": "Kyoto",
+   "species": "Chinese Hackberry (Celtis sinensis)",
+   "photo": "https://ancienttrees.app/photos/kyo_011-the-hackberry-of-demizu-guchi.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: kyo_011 had no photo",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:0c00d472-ba14-4cf4-b53d-a1d407d2c2e4",
+   "seen": "2026-09-08",
+   "kind": "a tree we do not map",
+   "tree": "The Veteran Cedar above the Nigatsu-do Steps",
+   "city": null,
+   "species": "Japanese Cedar (Cryptomeria japonica)",
+   "photo": "p_6312cf4c9007b0fcfae9011c/0C00D472-BA14-4CF4-B53D-A1D407D2C2E4.jpg",
+   "reader_note": "Reader wrote \"I am not sure which one it is\"",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": {
+    "score": null,
+    "note": "nothing measurable about Japanese Cedar (Cryptomeria japonica)"
+   },
+   "verdict": "lead",
+   "reason": "The exact case CLAUDE.md records: a tall sugi at the top of a stone stairway with lanterns, at what looks like the Nigatsu-do precinct in Nara, reader wrote 'I am not sure which one it is'. The slope holds several similar cedars and nothing in the photo (no plaque, no distinguishing bark or setting detail) tells them apart. Cannot ship without a recognition line or a second source naming this specific trunk; a plain lead until one exists.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:fe5c2523-a0b1-4a4d-b9ad-10f3d5c8a1cc",
+   "seen": "2026-09-08",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/FE5C2523-A0B1-4A4D-B9AD-10F3D5C8A1CC.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": {
+    "verdict": "unlisted",
+    "why": "no register entry within 100 m: only this reader has said it is remarkable, so it needs the normal bar",
+    "nearest": []
+   },
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A tree with dramatic exposed, moss-covered surface roots over rocks beside a stream, deer visible in the background, almost certainly Nara Park. Genuinely photogenic root structure, but no coordinates and the park holds many similar specimens, so it needs a location and something distinguishing before it can be matched to a candidate.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:1ccb34b2-ecda-41b1-9d34-2ec98b238ae4",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/1CCB34B2-ECDA-41B1-9D34-2EC98B238AE4.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A tall, full-crowned cedar beside a small shrine building and a house, exposed surface roots at the base. A decent specimen but visually ordinary among Japanese shrine cedars, no plaque or distinguishing mark. No coordinates or species confirmed.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:1d61e594-71c7-4620-9de1-6cb28bf643d3",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/1D61E594-71C7-4620-9DE1-6CB28BF643D3.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A large ginkgo with a full crown and exposed surface roots, standing in open ground beside a modern black-clad building (a shop or ryokan) on a Kyoto street. Companion photo: lead:b6706a98-e0b8-4790-9e97-ef93ec90c711 shows the same tree from the street side, a stone monument and the same building visible. Publicly visible, decent size, but no coordinates, species unconfirmed (looks like Ginkgo biloba) and no name.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:3ff2072f-e865-48d3-8248-8ff507419b84",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/3FF2072F-E865-48D3-8248-8FF507419B84.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A wide-canopied tree in open parkland beside a pond and pavilion, almost certainly Nara Park. Ordinary from this distance, no trunk detail, no coordinates.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:64685b04-4d75-4cb1-837c-17923ac69ef0",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "Not sure ",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/64685B04-4D75-4CB1-837C-17923AC69EF0.jpg",
+   "reader_note": "Not sure ",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A tall, slightly leaning cedar beside a road, power lines crossing in front of the crown. Reader wrote 'Not sure'. Ordinary specimen, no coordinates, no distinguishing feature.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:a837bea4-a793-40f5-b17d-942b3294557f",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "I’m not sure which one",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/A837BEA4-A793-40F5-B17D-942B3294557F.jpg",
+   "reader_note": "I’m not sure which one",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Identical image to lead:0c00d472-ba14-4cf4-b53d-a1d407d2c2e4 (the Nigatsu-do steps cedar), same reader uncertainty ('I'm not sure which one'). A duplicate send of the same photo, not a second tree; see that entry for the real verdict.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:b425b49f-7fdc-4777-8d29-e5435f2eeacb",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "I’m not sure which one it is\n",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/B425B49F-7FDC-4777-8D29-E5435F2EEACB.jpg",
+   "reader_note": "I’m not sure which one it is\n",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A visibly ancient, heavily propped tree (iron braces holding up the trunk and a low limb) in a temple courtyard, deer nearby, a two-storey temple hall behind it: looks like the Nigatsu-do/Todai-ji precinct in Nara. Evergreen broadleaf crown, not a cedar, possibly a nagi or similar venerated species. Reader wrote 'I'm not sure which one it is'. The bracing marks this as an individually protected, named tree, but nothing in the photo says which one. A strong candidate once identified.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:b6706a98-e0b8-4790-9e97-ef93ec90c711",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/B6706A98-E0B8-4790-9E97-EF93EC90C711.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "Same ginkgo as lead:1d61e594-71c7-4620-9de1-6cb28bf643d3, photographed from the street side: same building, a stone monument in the foreground. Companion angle, not a second tree. Same verdict reasoning: no coordinates, publicly visible, decent specimen.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:b7db17d2-df60-4c9d-9cb5-79de2196dc29",
+   "seen": "2026-09-07",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/B7DB17D2-DF60-4C9D-9CB5-79DE2196DC29.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "lead",
+   "reason": "A distinctive multi-stem tree with knotted, scarred bark and moss, standing beside a long whitewashed compound wall (looks like a temple or estate boundary). Genuinely characterful trunk, but no coordinates, no species confirmed and no name.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:9a4db707-9393-4c31-b7c1-5dfcf25cc155",
+   "seen": "2026-09-05",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/9A4DB707-9393-4C31-B7C1-5DFCF25CC155.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Same visit as ff725d9a-9950-4f0f-a657-1cf19901c9c0 (Watercypres): the Cantonspark, Baarn pinetum, already resolved as a pin correction on brn_001. This frame shows a dawn redwood trunk plus a ginkgo branch (an arboretum planting), not a distinct new candidate.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:d09c4709-fd01-4476-889a-4d1b860aeacd",
+   "seen": "2026-09-05",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/D09C4709-FD01-4476-889A-4D1B860AEACD.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Same visit and location as the other two Cantonspark, Baarn photos (already resolved as brn_001's pin correction): a conifer hedge screen in the pinetum, no distinct tree visible. Not a candidate on its own.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:ff725d9a-9950-4f0f-a657-1cf19901c9c0",
+   "seen": "2026-09-05",
+   "kind": "a tree we do not map",
+   "tree": "Watercypres\n",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/FF725D9A-9950-4F0F-A657-1CF19901C9C0.jpg",
+   "reader_note": "Watercypres\n",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Reader wrote 'Watercypres' (Dutch for dawn redwood). This is almost certainly the exact Cantonspark, Baarn visit CLAUDE.md records: a reader's GPS fix that showed our brn_001 pin (the Cantonspark Dawn Redwood) sitting hundreds of metres from where the photo was actually taken. That correction already shipped: brn_001's story now notes the pin was moved closer to the old pinetum on a reader's correction. Not a new tree, holding rather than leaving open.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:22864b26-6a53-48f4-bb3c-2b52adc12e0a",
+   "seen": "2026-09-05",
+   "kind": "photo of a tree we map",
+   "tree": "The Cantonspark Dawn Redwood",
+   "city": "Baarn",
+   "species": "Dawn Redwood (Metasequoia glyptostroboides)",
+   "photo": "https://ancienttrees.app/photos/brn_001-the-cantonspark-dawn-redwood.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: Whole tree centered, blue sky, well exposed, in leaf",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "sight:a6971e9a-593b-4718-8ff6-00e0c898c566",
+   "seen": "2026-09-05",
+   "kind": "photo of a tree we map",
+   "tree": "The Cantonspark Giant Sequoia",
+   "city": "Baarn",
+   "species": "Giant Sequoia (Sequoiadendron giganteum)",
+   "photo": "https://ancienttrees.app/photos/brn_002-the-cantonspark-giant-sequoia.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "measure": null,
+   "verdict": "publish",
+   "reason": "Recorded retroactively on 2026-09-23: Whole tree in frame, crown to base, good daylight, in leaf, unmistakably the sequoia",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:4d6fb810-870d-40b1-92db-d5e3820bba06",
+   "seen": "2026-09-04",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/4D6FB810-870D-40B1-92DB-D5E3820BBA06.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Not a tree submission. A home window scene: a windowsill with a toy, a laptop, a back garden with hydrangeas. A tree is visible only incidentally through the window. Nothing to research.",
+   "hidde": null,
+   "agreed": null
+  },
+  {
+   "id": "lead:e3fa3f6b-e016-42f5-999a-e01ce41e82a0",
+   "seen": "2026-09-04",
+   "kind": "a tree we do not map",
+   "tree": "A tree I found",
+   "city": null,
+   "species": null,
+   "photo": "p_6312cf4c9007b0fcfae9011c/E3FA3F6B-E016-42F5-999A-E01CE41E82A0.jpg",
+   "reader_note": "",
+   "reader_girth_cm": null,
+   "coords": [
+    null,
+    null
+   ],
+   "register": null,
+   "measure": null,
+   "verdict": "hold",
+   "reason": "Not a tree submission. A home office window scene: blinds, a clock, headphones on the sill, trees visible only distantly through the glass. Nothing to research.",
+   "hidde": null,
+   "agreed": null
+  }
+ ]
 }
