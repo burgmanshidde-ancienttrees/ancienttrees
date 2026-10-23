@@ -339,6 +339,15 @@ final class FlowWalk: XCTestCase {
     /// identifier of their own, so this takes the first button that has a tree
     /// page's shape: an image and two lines of text under it.
     private static func firstCard(_ app: XCUIApplication) -> XCUIElement? {
+        // On the search screen, a tree among the results. Waited for: the
+        // results fill after the typed query is matched, and a tap before
+        // that landed on whatever button sat low on the screen, which made
+        // search-to-a-tree fail on some runs and pass on others (2026-10-21,
+        // 10-22).
+        if app.otherElements["map-search"].exists {
+            let hit = app.buttons["search-result-tree"].firstMatch
+            return hit.waitForExistence(timeout: 10) ? hit : nil
+        }
         let cards = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'tree-card'"))
         if cards.count > 0 { return cards.element(boundBy: 0) }
         // Fall back to the first hittable button below the middle of the
@@ -358,7 +367,8 @@ final class FlowWalk: XCTestCase {
         if app.buttons["tab-map"].exists { return true }
         let bar = app.navigationBars.firstMatch
         if bar.exists, bar.buttons.count > 0 { return true }
-        for label in ["Cancel", "Close", "Done", "Not now"] {
+        // "Back to the map" is the search screen's arrow, its one way out.
+        for label in ["Cancel", "Close", "Done", "Not now", "Back to the map"] {
             if app.buttons[label].firstMatch.exists { return true }
         }
         // A sheet you drag away: the grabber is the handle and the way out.

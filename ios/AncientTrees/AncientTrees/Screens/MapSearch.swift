@@ -185,6 +185,7 @@ struct MapSearch: View {
             if lane == .top { head("Trees") }
             ForEach(r.trees) { t in
                 row(t.name, "\(t.commonName) · \(t.city)", "tree") { onPick(.tree(t)); dismiss() }
+                    .accessibilityIdentifier("search-result-tree")
             }
         }
     }
