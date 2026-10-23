@@ -58,7 +58,7 @@ Posts, not mails, and Hidde posts them himself from his own accounts; a session 
 
 - **Start when the app is tested and stable**, not before: posting was planned for about a week after 2026-10-16.
 - **Order:** Big Tree Seekers (via its admin), r/marijuanaenthusiasts (Reddit's real tree community; r/trees is cannabis), then one city subreddit a week: r/lisbon, r/Edinburgh, r/Munich, r/london. r/bath waits until Bath has more than five trees.
-- **Parked at Hidde's wish:** Dutch and Flemish groups and r/Amsterdam (home turf). Product Hunt waits for phase 2; Hacker News and r/SideProject later or not at all.
+- **Parked at Hidde's wish:** Dutch and Flemish groups and r/Amsterdam (home turf). Product Hunt waits for phase 2. Hacker News: a Show HN drafted 2026-10-23 on Hidde's "lets do 3 then", after the Reddit practice; it replaces the earlier "later or not at all" (drafts/show-hn.md, local). r/SideProject still later.
 - **Shape that works:** be open that he built it, lead with one tree (a number in the title, one strong photo with its licence credit), ask which tree is missing, link last or in a comment. Ask the admin or mods first.
 - **Reddit:** a fresh account first comments for one to two weeks (10 to 20 useful comments, no links) before any post. **Facebook:** Hidde has no profile; admins are reached by mail instead.
 - **Done:** 2026-10-16 the Big Tree Seekers / Big Trees of New York admin and the coordinator of Australia's National Register of Big Trees were mailed in Hidde's own words (log in drafts/OUTREACH.md). Answers decide whether the Facebook posts happen.
