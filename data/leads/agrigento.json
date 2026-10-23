@@ -14,6 +14,17 @@
     {"name": "Moreton Bay Fig of the Basilica dell'Immacolata", "species": "Moreton Bay Fig (Ficus macrophylla)", "girth_cm": 400, "height_m": 9, "latitude": 37.309761, "longitude": 13.5835, "source": "italy-masaf register, sheet_id 09/A089/AG/19, Via Pirandello", "status": "open", "added": "2026-10-23"}
   ],
   "note": "Seven register trees inside the archaeological park, within about 2 km of each other: a walk (paid entry to the park counts as public). The register gives no ages; online figures run from 300 to over 1,000 years for the olives, so any age needs a named source and stays as vague as it gives it. Several sit near the Kolymbetra garden (FAI, its own ticket); check which side of that gate each trunk stands. Pins are register coordinates, default approximate. Under own-supply pause: nothing ships until a photo is approved and supply reopens; a Commons sweep of the park is the next cheap step.",
-  "blocked": [],
+  "blocked": [
+    {
+      "name": "The olive of Borgo Giallonardo",
+      "species": "Olive (Olea europaea)",
+      "place": "Borgo Giallonardo, Realmonte (Agrigento), a country hotel",
+      "latitude": null,
+      "longitude": null,
+      "source": "reader tip on r/sicily, 2026-10-23 (no name kept): 'an absolutely huge olive tree on the ground of Borgo Giallonardo', 'by far the largest olive tree I have ever seen'; staff told them several hundred years, nobody knows exactly",
+      "reason": "access: it stands in a hotel's grounds, so a visitor may need the reception's permission (hard rule 10). Open again if a source shows non-guests can walk in, or a reader sends a photo and says how they got there.",
+      "added": "2026-10-23"
+    }
+  ],
   "updated": "2026-10-23"
 }
