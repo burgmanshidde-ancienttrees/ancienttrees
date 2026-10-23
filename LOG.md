@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, fourth attempt: nothing new, said plainly
+Nothing changed on the site. No claims, READY leads still the same 3 (photo-less, supply paused). `photo_hunt.py --recheck` swept 40 more kept-set trees (Alicante, Amsterdam, Arnhem): 0 new candidates. Stirling already retried yesterday. Remaining kept-set photo-less trees: about 985, same sweep next run.
+
 ## 2026-10-23 night run, third attempt: two species intros
 Wrote the two missing species intros (Sugar Maple, Eastern White Pine) from the site's own trees; `pagegaps.py --check` now clean. Bing only while the strict cut holds. Not built or qa-run here (no site/dist). Nothing else workable: claims empty, READY leads photo-less under the supply pause, enrich empty.
 
