@@ -360,7 +360,7 @@ struct MapTab: View {
                     showsRecentre: true,
                     // Off while a walk is on screen, for the same reason as on
                     // the walk page itself: its stops must stay countable.
-                    clusters: shownWalk == nil,
+                    declutter: shownWalk == nil,
                     region: $mapRegion,
                     moveTo: moveRequest,
                     selected: $selected)

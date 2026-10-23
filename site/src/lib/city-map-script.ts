@@ -20,7 +20,7 @@
 // proximity check that needed it went; there is no duplicate of it left here.
 import {MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
-import { mapScript, CLUSTER_RADIUS, CLUSTER_DISTANCE, CLUSTER_MAX_ZOOM } from "./map";
+import { mapScript, PIN_DISTANCE, STACK_ZOOM, PILES_JS, PINS_JS } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
@@ -122,9 +122,11 @@ export function cityMapScript(
     }))
   );
   // This city travels in the same source as every other one, so zoomed out it
-  // joins the clusters the way its trees do on /explore instead of sitting as
-  // a pile of 34-pixel pins on top of them (Hidde, 2026-10-10: "uitzoomen gaat
-  // niet lekker vanuit een stadspagina ... trek dit gelijk").
+  // sits among the other cities the way its trees do on /explore instead of
+  // as a pile of 34-pixel pins on top of them (Hidde, 2026-10-10: "uitzoomen
+  // gaat niet lekker vanuit een stadspagina ... trek dit gelijk"). Drawn the
+  // Airbnb way like every map (PINS_JS): a pin where it fits, ranked first,
+  // a dot where it does not; home gets the full pin before any other.
   const otherCitiesJson = JSON.stringify({
     type: "FeatureCollection",
     features: [
@@ -132,16 +134,21 @@ export function cityMapScript(
         ? [{
             type: "Feature",
             geometry: { type: "Point", coordinates: [center[1], center[0]] },
-            properties: { slug: "", city: "", n: markers.length, home: 1 },
+            properties: { slug: "", city: "", n: markers.length, home: 1, pr: 0 },
           }]
         : []),
       ...otherCities.map((c) => ({
         type: "Feature",
         geometry: { type: "Point", coordinates: [c.lng, c.lat] },
-        properties: { slug: c.slug, city: c.city, n: c.n, home: 0 },
+        properties: { slug: c.slug, city: c.city, n: c.n, home: 0, pr: 1 + (c.rank ?? 99) },
       })),
     ],
   });
+  // Which tree gets its full pin where two would collide: a photograph
+  // first, then our own order (lib/map.ts, PIN_DISTANCE).
+  const pinOrderJson = JSON.stringify(
+    markers.map((m, i) => i).sort((a, b) => Number(!markers[a].shot) - Number(!markers[b].shot) || a - b)
+  );
   const ranked = [...otherCities].sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99) || b.n - a.n);
   const chooserCitiesJson = JSON.stringify(
     ranked.map((c) => ({ url: c.slug, city: c.city, country: c.country, n: c.n, ph: c.ph, lat: c.lat, lng: c.lng }))
@@ -149,7 +156,7 @@ export function cityMapScript(
 
   const home = homeBounds(inTown && inTown.length >= 2 ? inTown : markers);
 
-  return mapScript(`
+  return mapScript(`${PILES_JS}${PINS_JS}
 var markers = ${data};
 // The opening frame: the cluster, not every outlier. See homeBounds().
 var HOME = ${JSON.stringify(home)};
@@ -168,116 +175,75 @@ map.on('load', function() { map.resize(); });
 new ResizeObserver(function() { map.resize(); }).observe(document.getElementById('map'));
 var OTHER_CITIES = ${otherCitiesJson};
 // FAR is the zoom below which the map stops being this city and becomes the
-// world: the explore map's clusters (same radius, same bubble, same count of
-// trees) with this city's pins folded into them. Above it the pins come back
-// and the other cities go, so the two are never drawn on top of each other.
+// world: the other cities, drawn like the trees on /explore, with this city
+// among them. Above it the pins come back and the other cities go, so the
+// two are never drawn on top of each other.
 var FAR = 9;
 if (OTHER_CITIES.features.length) {
   map.on('load', function() {
     if (map.getSource('othercities')) { return; }
-    map.addSource('othercities', {type: 'geojson', data: OTHER_CITIES, cluster: true,
-      clusterMaxZoom: FAR - 1, clusterRadius: ${CLUSTER_DISTANCE},
-      clusterProperties: {n: ['+', ['get', 'n']], home: ['max', ['get', 'home']]}});
-    map.addLayer({id: 'othercity', type: 'circle', source: 'othercities', maxzoom: FAR,
-      paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${CLUSTER_RADIUS},
-              'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-    map.addLayer({id: 'othercity-n', type: 'symbol', source: 'othercities', maxzoom: FAR,
-      layout: {'text-field': ['to-string', ['get', 'n']], 'text-font': ['Noto Sans Regular'], 'text-size': 12},
-      paint: {'text-color': '#F6F2E9'}});
+    map.addSource('othercities', {type: 'geojson', data: OTHER_CITIES});
     function goHome() { map.fitBounds(HOME, { padding: 70, maxZoom: 13, duration: 900 }); }
-    // The explore map's rules: a bubble that is one city opens that city (this
-    // one flies back home), a bubble of several zooms in.
-    map.on('click', 'othercity', function(e) {
-      var f = e.features[0], p = f.properties;
-      if (!p.cluster) {
-        if (p.home) { goHome(); } else { window.location.href = '/' + p.slug; }
-        return;
-      }
-      var src = map.getSource('othercities');
-      src.getClusterLeaves(p.cluster_id, 1000, 0).then(function(leaves) {
-        if (leaves.length === 1) {
-          var q = leaves[0].properties;
-          if (q.home) { goHome(); } else { window.location.href = '/' + q.slug; }
-          return;
-        }
-        src.getClusterExpansionZoom(p.cluster_id).then(function(zoom) {
-          map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
-        });
-      });
-    });
-    map.on('mouseenter', 'othercity', function() { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', 'othercity', function() { map.getCanvas().style.cursor = ''; });
+    // The explore map's rule: a pin or a dot opens its city (this one flies
+    // back home).
+    atPinLayers(map, 'othercities', 'othercity', function(p) {
+      if (p.home) { goHome(); } else { window.location.href = '/' + p.slug; }
+    }, null, null);
+    ['othercity', 'othercity-dot'].forEach(function(l) { map.setLayerZoomRange(l, 0, FAR); });
   });
 }
-// THIS CITY'S OWN TREES PILE LIKE EVERY OTHER MAP'S (Hidde, 2026-10-24, on
-// /lisbon's 36 pins drawn over each other: "kunnen we die interacties gelijk
-// houden?"; 2026-10-15: "map interaction need to stay consistent so do
-// everywhere"). The pins are DOM markers with the species drawn on them, so
-// MapLibre cannot pile them itself. A clustered source of the same trees,
-// never drawn as pins, says which trees stand alone at this zoom and draws
-// the bubble for the rest: the explore map's own bubble, same radius, same
-// distance, same last zoom (lib/map.ts, one place for the numbers). A tap
-// zooms to where the bubble parts, as on /explore. Past CLUSTER_MAX_ZOOM
-// every pin is back and only the same-spot stacks below remain. Under FAR
-// the othercities source already folds this city into the world's clusters.
-var CITY_TREES = {type: 'FeatureCollection', features: markers.map(function(m, i) {
-  return {type: 'Feature', geometry: {type: 'Point', coordinates: [m.lng, m.lat]}, properties: {i: i}};
-})};
-var cityPilesReady = false;
-if (markers.length > 1) {
-  map.on('load', function() {
-    if (map.getSource('citytrees')) { return; }
-    var from = OTHER_CITIES.features.length ? FAR : 0;
-    map.addSource('citytrees', {type: 'geojson', data: CITY_TREES, cluster: true,
-      clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE}});
-    map.addLayer({id: 'citypile', type: 'circle', source: 'citytrees', minzoom: from,
-      filter: ['has', 'point_count'],
-      paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${CLUSTER_RADIUS},
-              'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-    map.addLayer({id: 'citypile-n', type: 'symbol', source: 'citytrees', minzoom: from,
-      filter: ['has', 'point_count'],
-      layout: {'text-field': ['get', 'point_count_abbreviated'], 'text-font': ['Noto Sans Regular'],
-               'text-size': 12, 'text-allow-overlap': true},
-      paint: {'text-color': '#F6F2E9'}});
-    map.on('click', 'citypile', function(e) {
-      var f = e.features[0];
-      map.getSource('citytrees').getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
-        map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
-      });
-    });
-    map.on('mouseenter', 'citypile', function() { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', 'citypile', function() { map.getCanvas().style.cursor = ''; });
-    cityPilesReady = true;
-    // The source piles per tile, and a tile arrives after the camera does.
-    map.on('sourcedata', function(e) { if (e.sourceId === 'citytrees' && e.isSourceLoaded) { updatePins(); } });
-    map.on('idle', updatePins);
-    updatePins();
-  });
-}
+// WHICH PINS SHOW: THE AIRBNB WAY (Hidde, 2026-10-24: "volledige pins voor
+// wat past, kleine stippen voor de rest, nooit bubbels, een tik opent altijd
+// de boom"; lib/map.ts PIN_DISTANCE has the benchmark). The pins are DOM
+// markers with the species drawn on them, so this does by hand what
+// MapLibre's symbol collision does on the circle-pin maps: in PIN_ORDER
+// (photograph first, then our order) a pin is drawn in full when no full pin
+// already stands within PIN_DISTANCE of it, and as a dot otherwise. A dot
+// still selects its tree. The selected pin always stays full, and a same-spot
+// stack's bubble counts as placed so no pin is drawn over it. Below
+// STACK_ZOOM the stack is its first tree's pin like any other (the bubble
+// would read as the clustering we no longer do). Redone on every move,
+// which is what Airbnb does: pan or zoom and more pins fit.
+var PIN_ORDER = ${pinOrderJson};
+var PIN_DISTANCE = ${PIN_DISTANCE};
+var STACK_ZOOM = ${STACK_ZOOM};
 function updatePins() {
   // The opening fitBounds fires 'zoom' before the pins exist (var pins is
   // hoisted but still undefined), and a throw there stopped every pin being
   // drawn (Hidde, 2026-10-10: "they dont show any pins anymore").
   if (!pins || !STACKS) { return; }
   var far = OTHER_CITIES.features.length > 0 && map.getZoom() < FAR;
-  // Which trees stand alone at this zoom is the source's own answer: a tree
-  // inside a pile is not among the loose features it hands back. Past the
-  // last piling zoom nothing piles, so nothing is asked.
-  var loose = null;
-  if (!far && cityPilesReady && map.getZoom() < ${CLUSTER_MAX_ZOOM} + 1) {
-    // A tile still on its way would answer with no trees at all and hide
-    // every pin for a frame; the sourcedata handler comes back when it lands.
-    if (!map.isSourceLoaded('citytrees')) { return; }
-    loose = {};
-    map.querySourceFeatures('citytrees').forEach(function(f) {
-      if (!f.properties.cluster) { loose[f.properties.i] = true; }
-    });
+  var near = map.getZoom() >= STACK_ZOOM;
+  var placed = [];
+  function fits(p) {
+    for (var k = 0; k < placed.length; k++) {
+      var dx = placed[k].x - p.x, dy = placed[k].y - p.y;
+      if (dx * dx + dy * dy < PIN_DISTANCE * PIN_DISTANCE) { return false; }
+    }
+    return true;
   }
-  function on(i) { return !far && (loose === null || loose[i] === true); }
-  for (var i = 0; i < pins.length; i++) { pins[i].style.visibility = on(i) ? '' : 'hidden'; }
-  // A same-spot stack is inside a pile when its trees are; a spread stack's
-  // legs only exist at zoom 17, where nothing piles.
-  STACKS.forEach(function(s) { s.bubble.style.visibility = s.ix.some(on) ? '' : 'hidden'; });
+  STACKS.forEach(function(s) {
+    s.bubble.style.visibility = far || !near ? 'hidden' : '';
+    // Its first tree stands for the stack below STACK_ZOOM (never while spread).
+    if (openStack !== s) { pins[s.ix[0]].classList.toggle('pin-stacked', near); }
+    if (!far && near) { placed.push(map.project([markers[s.ix[0]].lng, markers[s.ix[0]].lat])); }
+  });
+  if (!far && activeIdx >= 0 && !stackOf[activeIdx]) {
+    placed.push(map.project([markers[activeIdx].lng, markers[activeIdx].lat]));
+  }
+  PIN_ORDER.forEach(function(i) {
+    pins[i].style.visibility = far ? 'hidden' : '';
+    if (far || pins[i].classList.contains('pin-stacked')) { return; }
+    // A spread stack's pins stand 36 apart by design: never dots.
+    if (stackOf[i] && openStack === stackOf[i]) { pins[i].classList.remove('pin-mini'); return; }
+    var full = i === activeIdx;
+    if (!full) {
+      var p = map.project([markers[i].lng, markers[i].lat]);
+      full = fits(p);
+      if (full) { placed.push(p); }
+    }
+    pins[i].classList.toggle('pin-mini', !full);
+  });
   document.querySelectorAll('.stack-legs-host').forEach(function(el) { el.style.visibility = far ? 'hidden' : ''; });
 }
 map.on('move', updatePins);
@@ -363,6 +329,7 @@ function setActive(idx, fly, scroll) {
   // A tree that shares its spot comes out of the pile to be lit.
   if (stackOf[idx]) { spreadStack(stackOf[idx]); }
   pins[idx].classList.add('active');
+  updatePins();
   var card = document.getElementById('tree-' + (idx + 1));
   card.classList.add('active');
   // On a phone the cards live inside the bottom sheet, and picking a tree
@@ -385,7 +352,7 @@ function setActive(idx, fly, scroll) {
     }
   }
   if (fly === 'keep') { map.easeTo({ center: [m.lng, m.lat], duration: 600, offset: flyOffset }); }
-  else if (fly) { map.flyTo({ center: [m.lng, m.lat], zoom: ${CLUSTER_MAX_ZOOM} + 1.5, duration: 1200, offset: flyOffset }); }
+  else if (fly) { map.flyTo({ center: [m.lng, m.lat], zoom: 14.5, duration: 1200, offset: flyOffset }); }
 }
 
 // --- a tapped pin -------------------------------------------------------------
@@ -602,7 +569,8 @@ function spreadStack(s) {
     var dx = Math.round(R * Math.cos(a)), dy = Math.round(R * Math.sin(a));
     html += '<i class="stack-leg" style="width:' + (R - 17) + 'px;transform:rotate(' + (a * 180 / Math.PI) + 'deg)"></i>';
     pinMarkers[i].setOffset([dx, dy]);
-    pins[i].classList.remove('pin-stacked');
+    // Full pins, whatever the dot rule made of them before the zoom in.
+    pins[i].classList.remove('pin-stacked', 'pin-mini');
   });
   legs.innerHTML = html;
   s.legs = new maplibregl.Marker({ element: legs }).setLngLat([m.lng, m.lat]).addTo(map);

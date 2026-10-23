@@ -838,114 +838,35 @@ struct WhenPermissionIsRefused {
     }
 }
 
-/// The map's own grid, which decides which trees pile into one bubble.
-@Suite struct ClusterGridTests {
+/// Which pins show (MapLayers, the note on pinDistance): a full pin where
+/// it fits, a dot where it does not, never a counted bubble. MapLibre does
+/// the placing; what is ours to test is the order it places in and the one
+/// number both surfaces share.
+@Suite struct PinRuleTests {
 
-    /// The old key was `column * 100_000 + row`, and the row index passes
-    /// 100,000 at zoom 13.5. Two cells far apart then shared a key and their
-    /// trees were drawn as one bubble at the mean of both, which is a pile of
-    /// trees standing where none of them are.
-    @Test func cellsFarApartDoNotShareAKeyAtHighZoom() {
-        // zoom 14: the world is 512 * 2^14 points across, cells are 60 wide,
-        // so indices run to roughly 139,000.
-        let cell = 60.0 / (512.0 * pow(2.0, 14.0))
-
-        let a = MapLayers.cellKey(x: 1 * cell, y: 100_000 * cell, cell: cell)
-        let b = MapLayers.cellKey(x: 2 * cell, y: 0, cell: cell)
-
-        #expect(a != b, "two cells a long way apart landed in the same bubble")
+    /// A tree with a photograph gets its pin before one without, which is the
+    /// whole of our ranking (Airbnb ranks by bookability; we rank by what is
+    /// worth the walk).
+    @Test func aPhotographedTreeIsPlacedFirst() {
+        #expect(MapLayers.pinPriority(hasPhoto: true) < MapLayers.pinPriority(hasPhoto: false))
     }
 
-    @Test func theSameCellAlwaysGivesTheSameKey() {
-        let cell = 60.0 / (512.0 * pow(2.0, 9.0))
-        // Two points inside one cell, neither on a boundary.
-        let a = MapLayers.cellKey(x: 10 * cell + cell / 4, y: 20 * cell + cell / 4, cell: cell)
-        let b = MapLayers.cellKey(x: 10 * cell + cell / 2, y: 20 * cell + cell / 2, cell: cell)
-        #expect(a == b)
+    /// The distance two pin centres keep is the website's PIN_DISTANCE
+    /// (lib/map.ts); qa.py holds the two files equal, this holds the number
+    /// a pin can actually clear: a 38 point pin plus the padding round it.
+    @Test func twoPinsThatWouldTouchKeepTheSharedDistance() {
+        #expect(MapLayers.pinDistance == 40)
+        #expect(MapLayers.pinDistance >= 38, "pins narrower than the rule would overlap before they are dropped")
     }
 
-    @Test func neighbouringCellsDiffer() {
-        let cell = 60.0 / (512.0 * pow(2.0, 9.0))
-        let here = MapLayers.cellKey(x: 10 * cell, y: 20 * cell, cell: cell)
-        #expect(here != MapLayers.cellKey(x: 11 * cell, y: 20 * cell, cell: cell))
-        #expect(here != MapLayers.cellKey(x: 10 * cell, y: 21 * cell, cell: cell))
-    }
-
-    /// A tree you added yourself is one of the numbers (Hidde, 2026-08-29:
-    /// "zelfgemaakte bomen moeten gewoon mee clusteren met de getallen als je
-    /// uitzoomt"). It used to sit in a source of its own, and a grid can only
-    /// group what it is handed, so a city collapsing to one bubble left your
-    /// own pin hanging beside it at full size.
-    ///
-    /// The point of testing the grouping rather than the map: this is the whole
-    /// decision, and it can be asked without a simulator, a style or a pixel.
-    @Test func yourOwnTreeJoinsThePileBesideIt() {
-        // Zoom 6, a continent on the screen: everything in Amsterdam is one
-        // pile at this range.
-        let cell = 60.0 / (512.0 * pow(2.0, 6.0))
-        let ours = [CLLocationCoordinate2D(latitude: 52.3731, longitude: 4.8922),
-                    CLLocationCoordinate2D(latitude: 52.3600, longitude: 4.9100)]
-        let yours = CLLocationCoordinate2D(latitude: 52.3700, longitude: 4.8800)
-
-        let grouped = MapLayers.groups(of: ours + [yours], cell: cell)
-
-        #expect(grouped.count == 1, "three trees in one city drew more than one bubble")
-        #expect(grouped[0].count == 3, "the pile did not count the tree you added")
-    }
-
-    /// And it comes back out on its own when the map is close enough, or a
-    /// photograph you took would be locked inside a bubble forever.
-    @Test func yourOwnTreeStandsAloneWhenTheMapIsClose() {
-        let cell = 60.0 / (512.0 * pow(2.0, 15.0))
-        let ours = CLLocationCoordinate2D(latitude: 52.3731, longitude: 4.8922)
-        let yours = CLLocationCoordinate2D(latitude: 52.3700, longitude: 4.8800)
-
-        let grouped = MapLayers.groups(of: [ours, yours], cell: cell)
-
-        #expect(grouped.count == 2)
-        #expect(grouped.allSatisfy { $0.count == 1 })
-    }
-
-    /// Two trees either side of a cell boundary were two piles a hair apart,
-    /// so their bubbles lay on top of each other (Hidde, 2026-10-20, Leusden's
-    /// 9 over its 10). Touching pins are one pile, wherever the lines fall.
-    @Test func twoTreesThatWouldTouchAreOnePileAcrossABoundary() {
-        let cell = 44.0 / (512.0 * pow(2.0, 11.0))
-        // Straddling a boundary in x, a tenth of a cell apart.
-        let lonPerCell = cell * 360.0
-        let edge = (floor((5.39 + 180.0) / 360.0 / cell) + 1) * cell * 360.0 - 180.0
-        let a = CLLocationCoordinate2D(latitude: 52.15, longitude: edge - lonPerCell * 0.05)
-        let b = CLLocationCoordinate2D(latitude: 52.15, longitude: edge + lonPerCell * 0.05)
-
-        #expect(MapLayers.groups(of: [a, b], cell: cell).count == 1)
-    }
-
-    /// The promise itself: whatever comes in, no two piles that come out are
-    /// closer than a cell, so no bubble or pin is drawn over another.
-    @Test func noTwoPilesAreCloserThanACell() {
-        let zoom = 10.5
-        let cell = 44.0 / (512.0 * pow(2.0, zoom))
-        var rng = SystemRandomNumberGenerator()
-        // Three hundred trees scattered round Amersfoort, about the density
-        // in the screenshot and well past it.
-        let coords = (0..<300).map { _ in
-            CLLocationCoordinate2D(latitude: 52.10 + Double.random(in: 0...0.2, using: &rng),
-                                   longitude: 5.20 + Double.random(in: 0...0.3, using: &rng))
-        }
-        let piles = MapLayers.piles(of: coords, cell: cell)
-
-        #expect(piles.reduce(0) { $0 + $1.members.count } == coords.count)
-        func xy(_ c: CLLocationCoordinate2D) -> (Double, Double) {
-            let lat = c.latitude * .pi / 180
-            return ((c.longitude + 180) / 360, (1 - log(tan(lat) + 1 / cos(lat)) / .pi) / 2)
-        }
-        for i in piles.indices {
-            for j in piles.indices where j > i {
-                let (ax, ay) = xy(piles[i].centre), (bx, by) = xy(piles[j].centre)
-                let d = ((ax - bx) * (ax - bx) + (ay - by) * (ay - by)).squareRoot()
-                #expect(d >= cell * 0.999, "two piles \(d / cell) cells apart")
-            }
-        }
+    /// Two trees on one coordinate are one spot, to about a metre; two a
+    /// street apart are not (the stack is the one bubble left).
+    @Test func aSpotIsAboutAMetre() {
+        let a = CLLocationCoordinate2D(latitude: 52.373100, longitude: 4.892200)
+        let b = CLLocationCoordinate2D(latitude: 52.373104, longitude: 4.892204)
+        let c = CLLocationCoordinate2D(latitude: 52.373600, longitude: 4.892200)
+        #expect(MapLayers.spotKey(a) == MapLayers.spotKey(b))
+        #expect(MapLayers.spotKey(a) != MapLayers.spotKey(c))
     }
 }
 

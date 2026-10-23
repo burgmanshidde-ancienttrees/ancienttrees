@@ -35,7 +35,7 @@ struct PinPicker: View {
             TreeMap(trees: trees,
                     focus: start,
                     spanMeters: spanMeters,
-                    clusters: false,
+                    declutter: false,
                     region: $region,
                     selected: .constant(nil))
                 .ignoresSafeArea(edges: .bottom)

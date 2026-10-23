@@ -1329,7 +1329,8 @@ zoom 12 and 15 where the app drew a bubble. Read 2026-10-20:
 - https://developer.apple.com/documentation/mapkit/mkclusterannotation
 - https://developer.apple.com/documentation/mapkitjs/clustering-annotations
 
-**The city map too (2026-10-24).** Hidde, on /lisbon's 36 species pins drawn
+**The city map too (2026-10-24, morning; superseded the same day by "What we
+do" above).** Hidde, on /lisbon's 36 species pins drawn
 over each other at the opening zoom while /explore, the country maps, My
 trees and the app showed counted bubbles: "kunnen we die interacties gelijk
 houden?" The city map's pins are DOM markers, which MapLibre cannot pile, so
@@ -1362,8 +1363,26 @@ thing. Counted bubbles with a tap that zooms are MapKit's default for a
 library of annotations and the web clustering libraries' default (the
 2026-10-20 table above), used by komoot's highlights and iNaturalist's
 observations. Both are conventions; they answer different questions
-("which should I look at" versus "how many are here"). Open with Hidde
-2026-10-24: which one every surface follows.
+("which should I look at" versus "how many are here"). Hidde, the same
+day, shown Lisbon both ways: "Doe de Airbnb-manier overal: volledige pins
+voor wat past, kleine stippen voor de rest, nooit bubbels, een tik opent
+altijd de boom. Web en app."
+
+**What we do, everywhere, since 2026-10-24:** every tree is drawn. A tree
+gets its full pin when no full pin already stands within 40 points of it
+(`PIN_DISTANCE` in lib/map.ts, `pinDistance` in TreeMap.swift; qa holds the
+two equal), placed in order: a tree with a photograph first, then our own
+order (`pr` on every feature). A tree whose pin did not fit is a small dot
+(14px cream with a moss ring on the city map's species pins; a 4px moss dot
+on the circle-pin maps and in the app) that still opens or selects its
+tree. Nothing ever zooms for you. The circle-pin maps and the app hand the
+placing to MapLibre's own symbol collision (a symbol layer that forbids
+overlap, sorted by `pr`, over a dot layer that cannot collide); the city
+map's DOM pins do the same pass by hand on every move. Counted bubbles are
+gone from every surface, with one exception: trees on exactly one spot
+(the entry below) keep their bubble, and only from zoom 14 (`STACK_ZOOM`,
+`stackZoom`); below that the spot is one ordinary pin. The 2026-10-20 table
+above now records what we chose NOT to copy.
 
 Read 2026-08-29, after Hidde saw two trees a couple of streets apart in Baarn
 drawn as a bubble marked 2:

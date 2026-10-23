@@ -97,7 +97,7 @@ struct WalkDetail: View {
                         // them a few hundred metres apart collapse into one
                         // bubble marked 4, which hides the whole route.
                         spanMeters: frame.meters,
-                        clusters: false,
+                        declutter: false,
                         // The stops are the page, so the frame is the stops.
                         fitsTrees: true,
                         selected: $selected)

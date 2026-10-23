@@ -46,36 +46,53 @@ setTimeout(function () {
 }, 5000);`;
 
 
-/** ONE SIZE FOR EVERY CLUSTER (Hidde, 2026-10-04, on the Italy map: "doordat
- *  de ballen groter worden zie je bijna geen kaart meer"). The bubbles grew
- *  with their count, 28, 36 and 48 pixels across, so a country of piles was
- *  mostly green. Apple's MapKit clusters and Google's markerclusterer draw
- *  the count in a bubble of one size, and mapping guidance says why: a size
- *  that varies is read as a quantity, and the number already says it. 13 is
- *  a 26 pixel bubble plus its ring, the app's clusterPin at 32 points.
- *  CONVENTIONS.md 2026-10-04. */
-export const CLUSTER_RADIUS = 13;
-
-/** WHEN PINS PILE, the same two numbers as the app (Hidde, 2026-10-20: "trek
- *  het gelijk als dat ook de conventie is"). Google Maps and AllTrails pile
- *  the same way on web and phone; only WHEN a map regroups belongs to its
- *  engine (MapLibre per whole zoom level, the app on every settled zoom).
- *  CLUSTER_DISTANCE is clusterCellPoints in TreeMap.swift, supercluster's own
- *  default. CLUSTER_MAX_ZOOM 14 is MapLibre's example value and lands where
- *  the app stops (it piles below zoom 15); this was 11, so between 12 and 15
- *  the web drew pins over each other that the app drew as one bubble.
- *  CONVENTIONS.md, "How close two pins have to be". */
-export const CLUSTER_DISTANCE = 40;
-export const CLUSTER_MAX_ZOOM = 14;
-
-/** TREES ON ONE SPOT, on every clustered map (Hidde, 2026-10-15: "map
- *  interaction need to stay consistent so do everywhere"). The city map and
- *  the app do it first (spreadStack() in city-map-script.ts, MapLayers.spread
- *  in TreeMap.swift); this is the same behaviour for maps that draw trees as
- *  circles in a clustered GeoJSON source: /explore, the country maps, My trees.
+/** WHICH PINS SHOW: THE AIRBNB WAY, ON EVERY MAP (Hidde, 2026-10-24: "doe de
+ *  Airbnb-manier overal: volledige pins voor wat past, kleine stippen voor de
+ *  rest, nooit bubbels, een tik opent altijd de boom. Web en app.").
  *
- *  Native clustering stops at clusterMaxZoom, and from there trees on one
- *  coordinate drew one dot over the other with only the top one reachable.
+ *  Looked at the same day (CONVENTIONS.md, "How close two pins have to be"):
+ *  Airbnb never piles listings into a counted bubble at any zoom. It draws
+ *  a ranked handful of full pins, small unlabelled dots for the rest, and
+ *  zooming in draws more; a tap always opens a listing and nothing zooms for
+ *  you. Google Maps draws every result pin, overlapping where it must, no
+ *  counts. The counted bubbles this replaced (2026-10-04 to 10-24) were
+ *  MapKit's and the web clustering libraries' default, and Hidde's verdict on
+ *  them: "je wil ook niet nodeloos bubbels openklikken en je wil trouwens ook
+ *  niet dat je altijd inzoomt bij bubbels klikken."
+ *
+ *  So every map draws every tree, and the only question is which get the
+ *  full pin: a tree with a photograph before one without (`pr` on the
+ *  feature, 0 or 1; Airbnb ranks by what you are likely to book, we rank by
+ *  what is worth the walk), then our own order, and a pin that would collide
+ *  with one already placed is drawn as a dot instead. PIN_DISTANCE is the
+ *  collision rule, centre to centre, the same 40 the app uses (TreeMap.swift,
+ *  pinDistance) and supercluster's own default. The circle-pin maps (explore,
+ *  country, state, My trees) hand the placing to MapLibre's symbol collision
+ *  (PINS_JS); the city map does the same pass over its DOM pins
+ *  (city-map-script.ts). The one bubble left is a same-spot stack, below.
+ *  qa: check_every_map_shows_pins_the_same_way(). */
+export const PIN_DISTANCE = 40;
+/** The full pin on the circle-pin maps: a moss disc with a 2px cream ring. */
+export const PIN_RADIUS = 7;
+/** The dot a tree becomes where its pin did not fit. */
+export const DOT_RADIUS = 4;
+/** The same-spot stack's bubble (CONVENTIONS.md 2026-10-15), 26px plus ring,
+ *  the app's stackPin at 32 points. */
+export const STACK_RADIUS = 13;
+/** From this zoom a same-spot stack is its bubble; below it the stack is one
+ *  ordinary pin, because below it two pins a street apart would overlap
+ *  anyway and the bubble would read as the clustering we no longer do. The
+ *  same number as the app's stackZoom (TreeMap.swift). */
+export const STACK_ZOOM = 14;
+
+/** TREES ON ONE SPOT, on every map (Hidde, 2026-10-15: "map interaction need
+ *  to stay consistent so do everywhere"). The city map and the app do it
+ *  first (spreadStack() in city-map-script.ts, MapLayers.spread in
+ *  TreeMap.swift); this is the same behaviour for maps that draw trees as
+ *  circles in a GeoJSON source: /explore, the country maps, My trees.
+ *
+ *  Trees on one coordinate drew one dot over the other with only the top one
+ *  reachable, and no zoom parts them.
  *  So before the data goes in, atMarkPiles() gives every feature a `pile`:
  *  0 alone, n on the one feature that stands for a pile of n, -1 on the rest.
  *  The tree layer draws pile 0 only; atPileLayers() adds a bubble (the
@@ -110,10 +127,12 @@ function atMarkPiles(features) {
 function atPileLayers(map, source, treeLayer, open, hollow) {
   var pileOnly = ['all', ['!', ['has', 'point_count']], ['>=', ['coalesce', ['get', 'pile'], 0], 2]];
   map.setFilter(treeLayer, ['all', ['!', ['has', 'point_count']], ['==', ['coalesce', ['get', 'pile'], 0], 0]]);
-  map.addLayer({id: treeLayer + '-pile', type: 'circle', source: source, filter: pileOnly,
-    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${CLUSTER_RADIUS},
+  // The bubble only from STACK_ZOOM; below it the stack is one ordinary pin
+  // (atPinLayers draws the pile's first tree there).
+  map.addLayer({id: treeLayer + '-pile', type: 'circle', source: source, filter: pileOnly, minzoom: ${STACK_ZOOM},
+    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92, 'circle-radius': ${STACK_RADIUS},
             'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-  map.addLayer({id: treeLayer + '-pile-n', type: 'symbol', source: source, filter: pileOnly,
+  map.addLayer({id: treeLayer + '-pile-n', type: 'symbol', source: source, filter: pileOnly, minzoom: ${STACK_ZOOM},
     layout: {'text-field': ['to-string', ['get', 'pile']], 'text-font': ['Noto Sans Regular'],
              'text-size': 12, 'text-allow-overlap': true},
     paint: {'text-color': '#F6F2E9'}});
@@ -169,6 +188,62 @@ function atPileLayers(map, source, treeLayer, open, hollow) {
   map.on('mouseenter', treeLayer + '-pile', function() { map.getCanvas().style.cursor = 'pointer'; });
   map.on('mouseleave', treeLayer + '-pile', function() { map.getCanvas().style.cursor = ''; });
 }`;
+
+/** THE PINS OF A CIRCLE-PIN MAP (explore, country, state, My trees, and the
+ *  other cities on a city map), the Airbnb way: see PIN_DISTANCE. Two layers
+ *  on one plain source. Under: every tree as a dot. Over: the full pin, a
+ *  symbol whose placement MapLibre decides, lowest `pr` first, and a symbol
+ *  that would collide with one already placed is simply not drawn, which
+ *  leaves its dot showing. A tap on either opens the tree; a symbol that was
+ *  not placed is not in queryRenderedFeatures, so the tap falls through to
+ *  the dot. The same-spot stacks (PILES_JS) are added on top.
+ *  `hollowExpr`, when given, is a MapLibre expression naming the features
+ *  drawn hollow (My trees: a tree saved but not yet collected). */
+export const PINS_JS = `
+function atPinImage(map, name, hollow) {
+  if (map.hasImage(name)) { return; }
+  var r = ${PIN_RADIUS}, dpr = Math.min(window.devicePixelRatio || 1, 3), d = (r + 2) * 2;
+  var c = document.createElement('canvas');
+  c.width = d * dpr; c.height = d * dpr;
+  var g = c.getContext('2d');
+  g.scale(dpr, dpr);
+  g.beginPath();
+  g.arc(d / 2, d / 2, hollow ? r - 0.25 : r, 0, Math.PI * 2);
+  if (!hollow) { g.fillStyle = '#4A6B2A'; g.fill(); }
+  g.lineWidth = hollow ? 2.5 : 2;
+  g.strokeStyle = hollow ? '#4A6B2A' : '#F6F2E9';
+  g.stroke();
+  map.addImage(name, g.getImageData(0, 0, c.width, c.height), {pixelRatio: dpr});
+}
+function atPinLayers(map, source, treeLayer, open, hollowExpr, hollow) {
+  atPinImage(map, 'at-pin', false);
+  atPinImage(map, 'at-pin-hollow', true);
+  var loose = ['all', ['!', ['has', 'point_count']], ['==', ['coalesce', ['get', 'pile'], 0], 0]];
+  // A same-spot pile's first tree stands for the pile below STACK_ZOOM, where
+  // the bubble is not drawn (atPileLayers).
+  var pileHead = ['all', ['!', ['has', 'point_count']], ['>=', ['coalesce', ['get', 'pile'], 0], 2]];
+  var dotPaint = {'circle-color': hollowExpr ? ['case', hollowExpr, 'rgba(0,0,0,0)', '#4A6B2A'] : '#4A6B2A',
+                  'circle-radius': ${DOT_RADIUS},
+                  'circle-stroke-width': 1.5,
+                  'circle-stroke-color': hollowExpr ? ['case', hollowExpr, '#4A6B2A', '#F6F2E9'] : '#F6F2E9'};
+  var pinLayout = {'icon-image': hollowExpr ? ['case', hollowExpr, 'at-pin-hollow', 'at-pin'] : 'at-pin',
+                   'icon-allow-overlap': false, 'icon-ignore-placement': false,
+                   'icon-padding': ${(PIN_DISTANCE - (PIN_RADIUS + 2) * 2) / 2},
+                   'symbol-sort-key': ['coalesce', ['get', 'pr'], 1]};
+  map.addLayer({id: treeLayer + '-dot', type: 'circle', source: source, filter: loose, paint: dotPaint});
+  map.addLayer({id: treeLayer + '-head-dot', type: 'circle', source: source, filter: pileHead, maxzoom: ${STACK_ZOOM}, paint: dotPaint});
+  map.addLayer({id: treeLayer, type: 'symbol', source: source, filter: loose, layout: pinLayout});
+  map.addLayer({id: treeLayer + '-head', type: 'symbol', source: source, filter: pileHead, maxzoom: ${STACK_ZOOM}, layout: pinLayout});
+  [treeLayer, treeLayer + '-dot', treeLayer + '-head', treeLayer + '-head-dot'].forEach(function(l) {
+    map.on('click', l, function(e) {
+      var f = e.features[0];
+      open(f.properties, f.geometry.coordinates);
+    });
+    map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
+  });
+  atPileLayers(map, source, treeLayer, open, hollow);
+}`;
 export function mapScript(body: string): string {
   return `\n<script defer src="${MAPLIBRE_JS}"></script>\n<script>\n` +
     `document.addEventListener("DOMContentLoaded", function () {\n${body}\n${COLLAPSE_ATTRIBUTION}\n});\n</script>\n`;
@@ -206,11 +281,12 @@ export interface CountryMapCity {
   slug: string;
   city: string;
   count: number;
-  markers: { lat: number; lng: number; url?: string }[];
+  /** `pr` 0 for a tree with a photograph, 1 without: which gets the full pin first. */
+  markers: { lat: number; lng: number; url?: string; pr?: 0 | 1 }[];
 }
 
-/** Every tree in the country, clustered the way /explore and the app cluster
- *  them: a cluster of one city opens that city, a pin opens its tree. */
+/** Every tree in the country, drawn the way /explore and the app draw them
+ *  (PINS_JS): a pin or a dot per tree, and either opens its tree. */
 export function countryMapScript(cities: CountryMapCity[],
                                  frame?: [[number, number], [number, number]],
                                  focus?: [[number, number], [number, number]]): string {
@@ -218,19 +294,18 @@ export function countryMapScript(cities: CountryMapCity[],
   // niet echt mooi trek dit ook gelijk met app"). It was one dot per CITY with
   // its count and its name printed beside it, and in a country with forty
   // cities the names and numbers piled over each other. The app's country
-  // page draws its TreeMap instead: every tree, clustered, no labels of our
-  // own over the base map's. So this is the explore map's cluster and pin
-  // style, and its rules: a cluster that is one city's trees opens that city,
-  // a mixed one zooms, a pin opens its tree.
+  // page draws its TreeMap instead: every tree, no labels of our own over
+  // the base map's. So this is the explore map's pin style and its one rule:
+  // a pin or a dot opens its tree.
   const data = {
     type: "FeatureCollection",
     features: cities.flatMap((c) => c.markers.map((m) => ({
       type: "Feature",
       geometry: { type: "Point", coordinates: [m.lng, m.lat] },
-      properties: { cs: "/" + c.slug, url: m.url ?? "/" + c.slug },
+      properties: { cs: "/" + c.slug, url: m.url ?? "/" + c.slug, pr: m.pr ?? 1 },
     }))),
   };
-  return mapScript(`${PILES_JS}
+  return mapScript(`${PILES_JS}${PINS_JS}
 var TREES = atMarkPiles(${JSON.stringify(data)}.features);
 TREES = { type: 'FeatureCollection', features: TREES };
 var map = new maplibregl.Map({
@@ -271,43 +346,8 @@ map.on('zoomstart', function(e) { if (e.originalEvent) { touched = true; } });
 new ResizeObserver(function() { map.resize(); fit(); }).observe(document.getElementById('map'));
 map.on('load', function() {
   fit();
-  map.addSource('trees', {type: 'geojson', data: TREES, cluster: true,
-                          clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE}});
-  map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
-    filter: ['has', 'point_count'],
-    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
-            'circle-radius': ${CLUSTER_RADIUS},
-            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-  map.addLayer({id: 'cluster-count', type: 'symbol', source: 'trees',
-    filter: ['has', 'point_count'],
-    layout: {'text-field': ['get', 'point_count_abbreviated'], 'text-font': ['Noto Sans Regular'],
-             'text-size': 12, 'text-allow-overlap': true},
-    paint: {'text-color': '#F6F2E9'}});
-  map.addLayer({id: 'tree', type: 'circle', source: 'trees',
-    filter: ['!', ['has', 'point_count']],
-    paint: {'circle-color': '#4A6B2A', 'circle-radius': 7,
-            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-  map.on('click', 'clusters', function(e) {
-    var f = map.queryRenderedFeatures(e.point, {layers: ['clusters']})[0];
-    var src = map.getSource('trees');
-    src.getClusterLeaves(f.properties.cluster_id, 1000, 0).then(function(leaves) {
-      var cities = {};
-      leaves.forEach(function(l) { cities[l.properties.cs] = true; });
-      var keys = Object.keys(cities);
-      if (keys.length === 1) { window.location.href = keys[0]; return; }
-      src.getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
-        map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
-      });
-    });
-  });
-  map.on('click', 'tree', function(e) {
-    window.location.href = e.features[0].properties.url;
-  });
-  atPileLayers(map, 'trees', 'tree', function(p) { window.location.href = p.url; });
-  ['clusters', 'tree'].forEach(function(l) {
-    map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
-  });
+  map.addSource('trees', {type: 'geojson', data: TREES});
+  atPinLayers(map, 'trees', 'tree', function(p) { window.location.href = p.url; }, null, null);
 });
 `);
 }
@@ -322,6 +362,9 @@ export interface ExploreTreeFeature {
     id: string; name: string; url: string; cs: string; city: string; age: string; now: 0 | 1;
     /** Behind a ticket. The filter hides these; 241 of 3,055 trees. */
     paid?: 0 | 1;
+    /** 0 with a photograph, 1 without: which tree gets the full pin where two
+     *  collide (PIN_DISTANCE). */
+    pr?: 0 | 1;
     /** Index into the species list the page ships beside the features. An
      *  index rather than the name, because 3,055 copies of "Pedunculate Oak"
      *  is 45KB of the same twelve words. */
@@ -339,8 +382,8 @@ export interface ExploreCityRow {
   rank: number;
 }
 
-/** The /explore world map: one GeoJSON circle layer per tree with native
- * clustering, plus the register layer fetched separately. Ported from the
+/** The /explore world map: every tree as a pin or a dot (PINS_JS), plus the
+ * register layer fetched separately. Ported from the
  * inline `script` string in build_explore_page(), build_site.py:4641-4805. */
 export function exploreMapScript(features: ExploreTreeFeature[], cities: ExploreCityRow[],
                                  species: string[] = []): string {
@@ -349,7 +392,7 @@ export function exploreMapScript(features: ExploreTreeFeature[], cities: Explore
   const speciesJson = JSON.stringify(species);
   return (
     mapScript(
-    `${PILES_JS}
+    `${PILES_JS}${PINS_JS}
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
 var SPECIES = ${speciesJson};
@@ -385,10 +428,8 @@ var SPECIES = ${speciesJson};
 // should be able to say so. It belongs in the app's row too; that half needs
 // a Mac and is written down.
 //
-// FILTERING RE-SOURCES, it does not hide a layer. A "filter" on the circle
-// layer would leave the CLUSTER counts including everything it hides, so a
-// cluster would say 40 and open to three. setData re-clusters, which is the
-// only honest way to filter a clustered map.
+// FILTERING RE-SOURCES, it does not hide a layer: the same-spot piles are
+// marked on the data (atMarkPiles), so what is hidden must leave the data.
 var FILTERS = { free: false, fav: false, mine: false, sp: -1 };
 function filtersOn() {
   return FILTERS.free || FILTERS.fav || FILTERS.mine || FILTERS.sp >= 0;
@@ -518,28 +559,16 @@ try {
 function initTreeLayers() {
   if (map.getSource('trees')) { return; }
   atMarkPiles(DATA.features);
-  map.addSource('trees', {type: 'geojson', data: DATA, cluster: true,
-                          clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE}});
+  map.addSource('trees', {type: 'geojson', data: DATA});
   // The season heartbeat (a pulse and a gold dot behind trees at their peak)
   // is switched off: Hidde, 2026-10-03, "its not good enough lets look at it
   // later". The 'now' property still travels in DATA, so bringing it back is
-  // this layer, its requestAnimationFrame loop and the two gold cases on the
-  // tree layer (git history has all three).
-  map.addLayer({id: 'clusters', type: 'circle', source: 'trees',
-    filter: ['has', 'point_count'],
-    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
-            'circle-radius': ${CLUSTER_RADIUS},
-            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-  map.addLayer({id: 'cluster-count', type: 'symbol', source: 'trees',
-    filter: ['has', 'point_count'],
-    layout: {'text-field': ['get', 'point_count_abbreviated'],
-             'text-font': ['Noto Sans Regular'], 'text-size': 12},
-    paint: {'text-color': '#F6F2E9'}});
-  map.addLayer({id: 'tree', type: 'circle', source: 'trees',
-    filter: ['!', ['has', 'point_count']],
-    paint: {'circle-color': '#4A6B2A',
-            'circle-radius': 7,
-            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
+  // a halo layer, its requestAnimationFrame loop and the two gold cases on
+  // the tree layer (git history has all three).
+  // A pin or a dot opens its tree, as in the app (TreeMap.swift onSelectTree,
+  // and the city page since 2026-10-04). The popup this replaced was a third
+  // way of showing a tree, with its own links and its own Save pill.
+  atPinLayers(map, 'trees', 'tree', function(p) { if (p.url) { window.location.href = p.url; } }, null, null);
   // The register layer: officially designated trees from a government
   // register, not our own research. Visually quieter than the curated
   // trees on purpose (small, hollow, grey) so the two layers read as
@@ -569,36 +598,6 @@ function initTreeLayers() {
       map.on('mouseleave', 'register', function() { map.getCanvas().style.cursor = ''; });
     }).catch(function() { /* the map works without this layer */ });
   }
-  // One map experience, not two (Hidde, 2026-07-30): the world map is the
-  // launcher, the city page (map plus tree list) is the destination. A
-  // cluster that is entirely one city's trees opens that city's page; only
-  // a multi-city cluster zooms. getClusterLeaves/ExpansionZoom are Promises
-  // in MapLibre v4 (the old callback form failed silently once).
-  map.on('click', 'clusters', function(e) {
-    var f = map.queryRenderedFeatures(e.point, {layers: ['clusters']})[0];
-    var src = map.getSource('trees');
-    src.getClusterLeaves(f.properties.cluster_id, 1000, 0).then(function(leaves) {
-      var cities = {};
-      leaves.forEach(function(l) { cities[l.properties.cs] = true; });
-      var keys = Object.keys(cities);
-      if (keys.length === 1) { window.location.href = keys[0]; return; }
-      src.getClusterExpansionZoom(f.properties.cluster_id).then(function(zoom) {
-        map.easeTo({center: f.geometry.coordinates, zoom: zoom + 0.5, duration: 700});
-      });
-    });
-  });
-  // A pin opens its tree, as in the app (TreeMap.swift onSelectTree, and the
-  // city page since 2026-10-04). The popup this replaced was a third way of
-  // showing a tree, with its own links and its own Save pill.
-  map.on('click', 'tree', function(e) {
-    var p = e.features[0].properties;
-    if (p.url) { window.location.href = p.url; }
-  });
-  atPileLayers(map, 'trees', 'tree', function(p) { if (p.url) { window.location.href = p.url; } });
-  ['clusters', 'tree'].forEach(function(l) {
-    map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
-  });
 }
 map.on('style.load', initTreeLayers);
 if (map.isStyleLoaded()) { initTreeLayers(); }
@@ -683,7 +682,7 @@ renderPanel();
  * like.
  */
 export function myTreesMapScript(): string {
-  return mapScript(`${PILES_JS}
+  return mapScript(`${PILES_JS}${PINS_JS}
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [8, 48], zoom: 2.6, minZoom: 1.3,
@@ -699,56 +698,21 @@ var pending = null;
 
 function initMine() {
   if (map.getSource('mine')) { return; }
-  map.addSource('mine', { type: 'geojson', data: EMPTY, cluster: true,
-                          clusterMaxZoom: ${CLUSTER_MAX_ZOOM}, clusterRadius: ${CLUSTER_DISTANCE} });
-  map.addLayer({id: 'mine-clusters', type: 'circle', source: 'mine',
-    filter: ['has', 'point_count'],
-    paint: {'circle-color': '#4A6B2A', 'circle-opacity': 0.92,
-            'circle-radius': ${CLUSTER_RADIUS},
-            'circle-stroke-width': 2, 'circle-stroke-color': '#F6F2E9'}});
-  map.addLayer({id: 'mine-count', type: 'symbol', source: 'mine',
-    filter: ['has', 'point_count'],
-    layout: {'text-field': ['get', 'point_count_abbreviated'],
-             'text-font': ['Noto Sans Regular'], 'text-size': 12},
-    paint: {'text-color': '#F6F2E9'}});
+  map.addSource('mine', { type: 'geojson', data: EMPTY });
   // TWO KINDS OF PIN, because the profile holds two independent lists and
   // they mean opposite things: a tree you have stood in front of is done, a
   // tree you saved is still ahead of you. Filled moss for collected, hollow
   // for a favourite, which is the same filled-versus-hollow language the
-  // heart itself uses.
-  map.addLayer({id: 'mine-tree', type: 'circle', source: 'mine',
-    filter: ['!', ['has', 'point_count']],
-    paint: {'circle-color': ['case', ['==', ['get', 'got'], 1], '#4A6B2A', 'rgba(0,0,0,0)'],
-            'circle-radius': 7,
-            'circle-stroke-width': 2.5,
-            'circle-stroke-color': ['case', ['==', ['get', 'got'], 1], '#F6F2E9', '#4A6B2A']}});
-  map.on('click', 'mine-tree', function(e) {
-    var p = e.features[0].properties;
-    // A tree only you have may have no page at all: sharing is what gives it
-    // one, and somebody who turned that off has no url to point at.
-    // Straight to the tree when it has a page, as every other pin does since
-    // 2026-10-04; the name alone when sharing is off and there is no page.
-    if (p.url) { window.location.href = p.url; return; }
-    new maplibregl.Popup({offset: 12})
-      .setLngLat(e.features[0].geometry.coordinates)
-      .setHTML('<strong>' + p.name + '</strong><br>' + p.city)
-      .addTo(map);
-  });
-  atPileLayers(map, 'mine', 'mine-tree', function(p, c) {
+  // heart itself uses. A pin or a dot opens the tree.
+  // A tree only you have may have no page at all: sharing is what gives it
+  // one, and somebody who turned that off has no url to point at. Straight
+  // to the tree when it has a page, as every other pin does since
+  // 2026-10-04; the name alone when sharing is off and there is no page.
+  atPinLayers(map, 'mine', 'mine-tree', function(p, c) {
     if (p.url) { window.location.href = p.url; return; }
     new maplibregl.Popup({offset: 12}).setLngLat(c)
       .setHTML('<strong>' + p.name + '</strong><br>' + p.city).addTo(map);
-  }, function(p) { return p.got !== 1; });
-  map.on('click', 'mine-clusters', function(e) {
-    var f = map.queryRenderedFeatures(e.point, {layers: ['mine-clusters']})[0];
-    map.getSource('mine').getClusterExpansionZoom(f.properties.cluster_id).then(function(z) {
-      map.easeTo({center: f.geometry.coordinates, zoom: z + 0.5, duration: 700});
-    });
-  });
-  ['mine-clusters', 'mine-tree'].forEach(function(l) {
-    map.on('mouseenter', l, function() { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', l, function() { map.getCanvas().style.cursor = ''; });
-  });
+  }, ['!=', ['get', 'got'], 1], function(p) { return p.got !== 1; });
   if (pending) { paint(pending); pending = null; }
 }
 

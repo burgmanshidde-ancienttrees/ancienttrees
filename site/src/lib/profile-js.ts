@@ -201,7 +201,9 @@ export const PROFILE_JS = `
       features.push({
         type: 'Feature',
         geometry: { type: 'Point', coordinates: [c.x, c.y] },
-        properties: { name: c.n, city: c.c || '', url: c.u, got: got[id] ? 1 : 0 }
+        // pr: the order the list is built in, collected first, decides which
+        // pin shows where two collide (lib/map.ts PINS_JS).
+        properties: { name: c.n, city: c.c || '', url: c.u, got: got[id] ? 1 : 0, pr: features.length }
       });
     });
     ourPins = features;

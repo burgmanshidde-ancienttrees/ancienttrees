@@ -13,7 +13,7 @@ import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import { cityIsRenderable, slugify, distSpan, type CityEntry } from "../lib/trees";
 import { speciesCommon } from "../lib/species";
-import { cityFace, cityFaceSrcset } from "../lib/images";
+import { cityFace, cityFaceSrcset, usablePhoto } from "../lib/images";
 import { mapHead, exploreMapScript, type ExploreTreeFeature, type ExploreCityRow } from "../lib/map";
 import { haversineKm } from "../lib/walks";
 import { searchForm, SEARCH_WIDGET_JS } from "../lib/search-form";
@@ -82,6 +82,7 @@ for (const entry of allCities) {
         city: entry.data.city,
         age: t.age_estimate ?? "",
         now: 0 as 0 | 1,
+        pr: (usablePhoto(t) ? 0 : 1) as 0 | 1,
         ...(t.paid_entry ? { paid: 1 as 1 } : {}),
         ...(sp === undefined ? {} : { sp }),
       },

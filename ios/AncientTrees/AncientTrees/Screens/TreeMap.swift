@@ -14,10 +14,11 @@
 // it ships with iOS, and keeping it meant MapTab, WalkMode and TreeDetail did
 // not have to be touched at all. Only the rendering moved.
 //
-// Clustering is why MKMapView was chosen in the first place, so it is the thing
-// to check first on any change here: MapLibre clusters on the SOURCE, with the
-// same configuration the website's map uses, which is one behaviour for both
-// surfaces instead of two.
+// WHICH PINS SHOW is the thing to check first on any change here: since
+// 2026-10-24 every map, web and app, draws a tree as a full pin where it fits
+// and a dot where it does not, and never a counted bubble (MapLayers, the
+// note on pinDistance). The website's lib/map.ts carries the same rule and
+// the same number, which is one behaviour for both surfaces instead of two.
 
 import SwiftUI
 import MapKit      // MKCoordinateRegion only, as the coordinate-exchange type
@@ -135,12 +136,13 @@ struct TreeMap: UIViewRepresentable {
     private var sheetCoverage: SheetHeight? { sheetLift ?? inheritedLift }
     /// How wide the first look is. Four kilometres suits "what is near me"; a
     /// tree's own page wants the street it stands in, and at four kilometres the
-    /// tree itself disappears into a cluster bubble.
+    /// tree itself was a dot among dots.
     var spanMeters: CLLocationDistance = 4000
-    /// Off on a tree's own page. Clustering is right when the question is "what
-    /// is around here" and wrong when the answer is already known: the subject
-    /// of the page was disappearing into a bubble marked 11.
-    var clusters = true
+    /// Whether a pin that would collide with another is drawn as a dot. Right
+    /// when the question is "what is around here" and wrong when the answer is
+    /// already known: off on a tree's own page, on a walk (its stops must stay
+    /// countable) and in the pin picker.
+    var declutter = true
 
     /// FIT THESE TREES rather than aim at a point, for a map whose whole job is
     /// showing a set: a city, a country, a walk, your own collection.
@@ -355,7 +357,7 @@ struct TreeMap: UIViewRepresentable {
         }
 
         context.coordinator.sync(trees: trees, mine: mine, route: route,
-                                 routeIsReal: routeIsReal, clusters: clusters, on: map)
+                                 routeIsReal: routeIsReal, declutter: declutter, on: map)
         if let style = map.style { MapLayers.select(selected?.id, on: style) }
     }
 
@@ -500,7 +502,7 @@ struct TreeMap: UIViewRepresentable {
                               mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
                               route: [CLLocationCoordinate2D],
                               routeIsReal: Bool,
-                              clusters: Bool)?
+                              declutter: Bool)?
         private var drawnTreeIDs: Set<String> = []
         private var drawnMineIDs: Set<String> = []
         private var drawnRoute = 0
@@ -551,14 +553,14 @@ struct TreeMap: UIViewRepresentable {
                 drawnRoute = 0
                 pending = (trees: parent.trees, mine: parent.mine,
                            route: parent.route, routeIsReal: parent.routeIsReal,
-                           clusters: parent.clusters)
+                           declutter: parent.declutter)
             }
-            MapLayers.install(on: style, clustered: parent.clusters)
+            MapLayers.install(on: style, declutter: parent.declutter)
             styleReady = true
             if let p = pending {
                 pending = nil
                 sync(trees: p.trees, mine: p.mine, route: p.route,
-                     routeIsReal: p.routeIsReal, clusters: p.clusters, on: map)
+                     routeIsReal: p.routeIsReal, declutter: p.declutter, on: map)
             }
             startBreathing(on: style)
             }
@@ -611,10 +613,10 @@ struct TreeMap: UIViewRepresentable {
                   mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
                   route: [CLLocationCoordinate2D],
                   routeIsReal: Bool,
-                  clusters: Bool,
+                  declutter: Bool,
                   on map: MLNMapView) {
             guard styleReady, let style = map.style else {
-                pending = (trees, mine, route, routeIsReal, clusters)
+                pending = (trees, mine, route, routeIsReal, declutter)
                 return
             }
             // The collected set joins the identity of what is drawn: without
@@ -626,14 +628,14 @@ struct TreeMap: UIViewRepresentable {
             MainActor.assumeIsolated {
             if wantTrees != drawnTreeIDs {
                 drawnTreeIDs = wantTrees
-                MapLayers.setTrees(trees, on: style, clustered: clusters,
+                MapLayers.setTrees(trees, on: style, declutter: declutter,
                                    zoom: map.zoomLevel,
                                    collected: parent.collected,
                                    favourites: parent.favourites)
             }
             if wantMine != drawnMineIDs {
                 drawnMineIDs = wantMine
-                MapLayers.setMine(mine, on: style, clustered: clusters, zoom: map.zoomLevel)
+                MapLayers.setMine(mine, on: style, declutter: declutter, zoom: map.zoomLevel)
             }
             if route.count != drawnRoute {
                 drawnRoute = route.count
@@ -657,46 +659,24 @@ struct TreeMap: UIViewRepresentable {
             // near a pin counts as a tap on it, which is what every map does.
             let box = CGRect(x: point.x - 22, y: point.y - 22, width: 44, height: 44)
 
-            let clusterHits = map.visibleFeatures(in: box,
-                                                  styleLayerIdentifiers: [MapLayers.live(MapLayers.clusterLayer, on: style)])
-            if let cluster = clusterHits.first {
-                // TREES ON ONE SPOT never come apart by zooming, so their
-                // bubble zooms onto the spot and then spreads them (Hidde,
-                // 2026-10-15; MapLayers.stackSpots). The spread happens once
-                // the camera lands, in regionDidChangeAnimated.
-                let spot = MapLayers.spotMembers(at: cluster.coordinate, on: style)
+            // TREES ON ONE SPOT never come apart by zooming, so their bubble
+            // zooms onto the spot and then spreads them (Hidde, 2026-10-15;
+            // MapLayers.stackSpots). The spread happens once the camera lands,
+            // in regionDidChangeAnimated. The one bubble left on this map.
+            let stackHits = map.visibleFeatures(in: box,
+                                                styleLayerIdentifiers: [MapLayers.live(MapLayers.stackLayer, on: style)])
+            if let stack = stackHits.first {
+                let spot = MapLayers.spotMembers(at: stack.coordinate, on: style)
                 if spot.count > 1, let here = spot.first {
                     let key = MapLayers.spotKey(here)
                     if map.zoomLevel >= 16.5 {
-                        MapLayers.spread(key, in: map, on: style, clustered: parent.clusters)
+                        MapLayers.spread(key, in: map, on: style, declutter: parent.declutter)
                     } else {
                         pendingSpread = key
                         map.setCenter(here, zoomLevel: 17, animated: true)
                     }
                     return
                 }
-                // Tapping a pile zooms into it rather than opening anything,
-                // which is what Google Maps does and what a pile of pins needs.
-                //
-                // ONE TAP HAS TO BE ENOUGH (Hidde, 2026-08-26: "ik vind dat als
-                // je een keer op het getal klikt, je in een keer zover moet
-                // inzoomen dat alles uitklapt"). This used to add a fixed two
-                // zoom levels, which has nothing to do with how far apart the
-                // trees in that particular pile stand: a bubble marked 2 over
-                // two trees fifty metres apart took three taps to come apart,
-                // and a bubble over a whole province came apart on the first.
-                // A fixed step cannot be right for both.
-                //
-                // So the pile says where to go. We cluster ourselves, so the
-                // members are known exactly, and the target is the zoom that
-                // fits their spread on screen. That guarantees separation: a
-                // spread filling the viewport puts its members hundreds of
-                // points apart, against the sixty that makes them one bubble.
-                let members = MapLayers.clusterMembers(at: cluster.coordinate, on: style)
-                map.setCenter(Coordinator.centre(of: members) ?? cluster.coordinate,
-                              zoomLevel: Coordinator.zoomToSplit(members, in: map),
-                              animated: true)
-                return
             }
             // Yours first: they are drawn on top, so a tap that lands on one
             // meant that one. They were not in this list at all, which is why
@@ -710,9 +690,26 @@ struct TreeMap: UIViewRepresentable {
                 return
             }
 
+            // A pin, or the dot a pin became where it did not fit: a tap always
+            // opens the tree (Hidde, 2026-10-24, the Airbnb way). A symbol
+            // MapLibre did not place is not among the visible features, so a
+            // tap on its dot reaches the dot layer underneath.
             let treeHits = map.visibleFeatures(in: box,
                                                styleLayerIdentifiers: [MapLayers.live(MapLayers.treeLayer, on: style),
-                                                                       MapLayers.live(MapLayers.peakLayer, on: style)])
+                                                                       MapLayers.live(MapLayers.peakLayer, on: style),
+                                                                       MapLayers.live(MapLayers.spreadLayer, on: style),
+                                                                       MapLayers.live(MapLayers.dotLayer, on: style)])
+            // One of yours, whether at rest or spread out of a pile.
+            if let hit = treeHits.first(where: {
+                   let kind = $0.attribute(forKey: MapLayers.kindKey) as? String
+                   return kind == "mine" || (kind == "spread"
+                       && UUID(uuidString: ($0.attribute(forKey: MapLayers.idKey) as? String) ?? "") != nil)
+               }),
+               let raw = hit.attribute(forKey: MapLayers.idKey) as? String,
+               let id = UUID(uuidString: raw) {
+                parent.onSelectMine?(id)
+                return
+            }
             if let hit = treeHits.first,
                let id = hit.attribute(forKey: MapLayers.idKey) as? String,
                let tree = parent.trees.first(where: { $0.id == id }) {
@@ -726,53 +723,8 @@ struct TreeMap: UIViewRepresentable {
             // A tap on the map itself folds a spread pile back, and where a
             // pin selects rather than opens, lets the selected tree go: Apple
             // Maps puts its list back on a tap on empty map.
-            MapLayers.fold(on: style, zoom: map.zoomLevel, clustered: parent.clusters)
+            MapLayers.fold(on: style, zoom: map.zoomLevel, declutter: parent.declutter)
             if parent.onSelectTree == nil, parent.selected != nil { parent.selected = nil }
-        }
-
-        /// The mean of a pile, so the camera lands on the trees rather than on
-        /// the bubble's own drawn position.
-        static func centre(of members: [CLLocationCoordinate2D]) -> CLLocationCoordinate2D? {
-            guard !members.isEmpty else { return nil }
-            var lat = 0.0, lon = 0.0
-            for c in members { lat += c.latitude; lon += c.longitude }
-            return .init(latitude: lat / Double(members.count),
-                         longitude: lon / Double(members.count))
-        }
-
-        /// The zoom at which a pile actually comes apart, rather than a step.
-        ///
-        /// Works in the same normalised web mercator the clusterer uses, so the
-        /// arithmetic here and the arithmetic that built the bubble agree by
-        /// construction. Three cases, and the last one is the reason for the
-        /// ceiling: trees on ONE coordinate never separate at any zoom, which
-        /// is not hypothetical here (a register rounding to two decimals put
-        /// six Kalopa trees on one grid point). Chasing that split would zoom
-        /// to infinity, so it stops somewhere useful instead.
-        static func zoomToSplit(_ members: [CLLocationCoordinate2D],
-                                in map: MLNMapView) -> Double {
-            let hardMax = 17.0
-            guard members.count > 1 else { return min(map.zoomLevel + 2.0, hardMax) }
-            func merc(_ c: CLLocationCoordinate2D) -> (x: Double, y: Double) {
-                let x = (c.longitude + 180.0) / 360.0
-                let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
-                return (x, (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0)
-            }
-            let pts = members.map(merc)
-            let dx = (pts.map(\.x).max() ?? 0) - (pts.map(\.x).min() ?? 0)
-            let dy = (pts.map(\.y).max() ?? 0) - (pts.map(\.y).min() ?? 0)
-            // Room to breathe, so the outermost pins are not on the bezel.
-            let pad = 96.0
-            let w = Swift.max(Double(map.bounds.width) - pad, 80.0)
-            let h = Swift.max(Double(map.bounds.height) - pad, 80.0)
-            var world = Double.greatestFiniteMagnitude
-            if dx > 0 { world = Swift.min(world, w / dx) }
-            if dy > 0 { world = Swift.min(world, h / dy) }
-            guard world < .greatestFiniteMagnitude else { return hardMax }
-            let z = log2(world / 512.0)
-            // Never go backwards, and always move enough to feel like something
-            // happened, even when the pile is already nearly apart.
-            return Swift.min(Swift.max(z, map.zoomLevel + 1.0), hardMax)
         }
 
         /// Pan the map and the list follows. Google Maps, Apple Maps and Airbnb
@@ -950,15 +902,15 @@ struct TreeMap: UIViewRepresentable {
         }
 
         func mapView(_ map: MLNMapView, regionDidChangeAnimated animated: Bool) {
-            // Our own clustering regroups on a change of zoom level and does
-            // nothing on a pan, which is what makes a pan free.
+            // MapLibre places the pins itself at every zoom; this only folds a
+            // spread pile whose zoom changed under it.
             if let style = map.style {
                 MainActor.assumeIsolated {
-                    MapLayers.cluster(on: style, zoom: map.zoomLevel, clustered: parent.clusters)
+                    MapLayers.redraw(on: style, zoom: map.zoomLevel, declutter: parent.declutter)
                     // The camera has landed on a pile somebody tapped: spread it.
                     if let key = pendingSpread {
                         pendingSpread = nil
-                        MapLayers.spread(key, in: map, on: style, clustered: parent.clusters)
+                        MapLayers.spread(key, in: map, on: style, declutter: parent.declutter)
                     }
                 }
             }
@@ -1100,8 +1052,13 @@ enum MapLayers {
     /// pin it is showing in the sheet (recorded 2026-10-18).
     static let selectedLayer = "at-trees-selected"
     static let haloLayer = "at-trees-halo"
-    static let clusterLayer = "at-cluster"
-    static let clusterCount = "at-cluster-count"
+    /// The same-spot stack's bubble, the one bubble left on this map.
+    static let stackLayer = "at-cluster"
+    /// Every tree as a dot, under the pins: what shows where a pin did not fit.
+    static let dotLayer = "at-trees-dot"
+    /// A spread stack's pins, 36 points apart by design, so drawn on a layer
+    /// that allows overlap: the dot rule would otherwise drop one of them.
+    static let spreadLayer = "at-trees-spread"
     static let mineLayer = "at-mine-pin"
     static let routeLayer = "at-route-line"
     /// The legs of a spread pile: thin lines from the real spot to each pin.
@@ -1109,7 +1066,7 @@ enum MapLayers {
     static let legsLayer = "at-stack-legs-line"
     static let legsDot = "at-stack-legs-dot"
     static let idKey = "at_id"
-    /// How many trees a bubble stands for. NOT "point_count", which is
+    /// How many trees a stack's bubble stands for. NOT "point_count", which is
     /// MapLibre's own reserved cluster property: a feature carrying it makes
     /// the WHOLE source load as empty, silently, valid GeoJSON and all. That
     /// single word cost most of 2026-08-24. Proof: the same 974 features with
@@ -1142,7 +1099,7 @@ enum MapLayers {
     ///
     /// `leaves` held "the trees", so opening a tree page, whose map draws one
     /// tree, replaced it for every map in the app. Going back and zooming out
-    /// re-clustered the Map tab from that single tree, and the map emptied.
+    /// re-declutter the Map tab from that single tree, and the map emptied.
     /// Nothing redraws it, because the coordinator thinks it has already drawn
     /// what it was asked for.
     ///
@@ -1155,17 +1112,17 @@ enum MapLayers {
     /// dead map's cluster state is the same bug pointing the other way.
     final class StyleState {
         var registered: Set<String> = []
-        /// Every tree of OURS as a point feature, kept so clustering can be
-        /// recomputed on a zoom change without rebuilding any of this.
+        /// Every tree of OURS as a point feature, kept so a same-spot pile can
+        /// be spread and folded without rebuilding any of this.
         var leaves: [MLNPointFeature] = []
         /// And every tree the person added themselves. Kept apart only so a
-        /// change to one does not mean rebuilding the other; they cluster
-        /// together, which is the whole point.
+        /// change to one does not mean rebuilding the other; they are drawn
+        /// in one source, so they collide with each other like any two pins.
         var mine: [MLNPointFeature] = []
-        var lastBucket: Int = .min
-        /// The zoom the pins were last built for. See the hysteresis in cluster().
-        var lastClusterZoom: Double = -99
-        var lastClustered = true
+        /// Whether the pins were last built with the dot rule on, and whether
+        /// at or past stackZoom. See redraw().
+        var lastDeclutter: Bool? = nil
+        var lastNear: Bool? = nil
         /// The pile that is spread out right now, if any: its spot, where each
         /// of its trees is drawn while spread, and the zoom it was spread at.
         /// See stackSpots().
@@ -1241,7 +1198,7 @@ enum MapLayers {
     // to the wrong map. Everything that needs a style is handed the style it
     // is drawing.
 
-    static func install(on style: MLNStyle, clustered: Bool) {
+    static func install(on style: MLNStyle, declutter: Bool) {
         // A FRESH state for this style. A style loads once per map view, so
         // this is where a map starts remembering, and starting clean is what
         // keeps one map from inheriting another's.
@@ -1319,7 +1276,7 @@ enum MapLayers {
     /// region change recomputes at the real zoom. That is exactly the shape of
     /// a wrong guess that corrects itself, which is the kind nobody can report
     /// and everybody sees.
-    static func setTrees(_ trees: [Tree], on style: MLNStyle, clustered: Bool,
+    static func setTrees(_ trees: [Tree], on style: MLNStyle, declutter: Bool,
                          zoom: Double,
                          collected: Set<String> = [], favourites: Set<String> = []) {
         let month = Calendar.current.component(.month, from: Date())
@@ -1364,11 +1321,12 @@ enum MapLayers {
             // image itself; the halo underneath takes one warm tone for all of
             // them, which reads as a season rather than as a paint chart.
             f.attributes = [idKey: t.id, "icon": name, "peaking": peaking,
-                            countKey: 1, kindKey: "tree", "at_label": ""]
+                            countKey: 1, kindKey: "tree", "at_label": "",
+                            "pr": pinPriority(hasPhoto: t.photo != nil)]
             features.append(f)
         }
         state(for: style).leaves = features
-        cluster(on: style, zoom: zoom, clustered: clustered, force: true)
+        redraw(on: style, zoom: zoom, declutter: declutter, force: true)
     }
 
     /// Hand the style a fresh source built from these points.
@@ -1387,7 +1345,7 @@ enum MapLayers {
     ///
     /// The file name is new every time because MapLibre caches a source's URL:
     /// rewriting the same path leaves the previous contents in place.
-    private static func apply(_ features: [MLNPointFeature], on style: MLNStyle, clustered: Bool) {
+    private static func apply(_ features: [MLNPointFeature], on style: MLNStyle, declutter: Bool) {
         let st = state(for: style)
         var out: [[String: Any]] = []
         out.reserveCapacity(features.count)
@@ -1418,7 +1376,7 @@ enum MapLayers {
         // identifiers, and the old set is retired once the new source reports
         // its points (or after a second, for an empty map). The double buffer
         // every map SDK's own docs give for swapping a GeoJSON source.
-        let old = (layers: [clusterCount, clusterLayer, peakLayer, haloLayer, treeLayer, selectedLayer, mineLayer]
+        let old = (layers: [stackLayer, peakLayer, haloLayer, dotLayer, treeLayer, spreadLayer, selectedLayer, mineLayer]
                     .map { live($0, on: style) },
                    source: st.liveSourceID)
         st.retired.append(old)
@@ -1430,7 +1388,7 @@ enum MapLayers {
         st.liveSourceID = "\(treeSource)-\(st.seq)-\(st.writeCount)"
         let source = MLNShapeSource(identifier: st.liveSourceID, url: file, options: [:])
         style.addSource(source)
-        addTreeLayers(on: style, source: source, clustered: clustered)
+        addTreeLayers(on: style, source: source, declutter: declutter)
         retireWhenDrawn(st.liveSourceID, gen: st.gen, on: style, expecting: !features.isEmpty, tries: 0)
     }
 
@@ -1479,244 +1437,60 @@ enum MapLayers {
         }
     }
 
-    /// WHERE THE PILING STOPS, and both numbers are the convention rather than
-    /// a guess (Hidde, 2026-08-29: "de pinnen lijken wat te snel te clusteren,
-    /// het zou in dit geval nicer zijn als ze wel gewoon apart te zien zijn wat
-    /// zijn hier conventies in?"). He was looking at two trees a couple of
-    /// streets apart in Baarn drawn as a bubble marked 2.
+    /// WHICH PINS SHOW: THE AIRBNB WAY (Hidde, 2026-10-24: "doe de Airbnb-manier
+    /// overal: volledige pins voor wat past, kleine stippen voor de rest, nooit
+    /// bubbels, een tik opent altijd de boom. Web en app.").
     ///
-    /// What the references do, recorded in CONVENTIONS.md: MapLibre and Mapbox
-    /// cluster on a radius in PIXELS, defaulting to 50; the supercluster
-    /// library underneath them defaults to 40; MapKit does not take a number at
-    /// all and clusters when two annotation views would OVERLAP. All three
-    /// answer the same question, which is whether the pins would collide, not
-    /// whether the trees are near each other.
+    /// Looked at that day (CONVENTIONS.md, "How close two pins have to be"):
+    /// Airbnb never piles listings into a counted bubble at any zoom. It draws
+    /// a ranked handful of full pins, small unlabelled dots for the rest, and
+    /// zooming in draws more; a tap always opens a listing and nothing zooms
+    /// for you. Google Maps draws every result pin, overlapping where it must.
+    /// The counted bubbles this replaced (our own grid, 2026-08-24 to 10-24)
+    /// were MapKit's default, and Hidde's verdict on them: "je wil ook niet
+    /// nodeloos bubbels openklikken en je wil trouwens ook niet dat je altijd
+    /// inzoomt bij bubbels klikken."
     ///
-    /// Ours are 38 points across, so 44 is a pin's width plus a hair: two that
-    /// would touch become one bubble and two that would not stay two. It was
-    /// 60, which is a thumb rather than a pin, and it piled up trees that were
-    /// comfortably far apart on screen.
-    ///
-    /// 40 since 2026-10-20, when the grid became a distance (see piles()):
-    /// a grid cell of 44 only piled trees that shared a cell, a radius of 44
-    /// piles everything within 44 in any direction, which is more, and Hidde
-    /// felt it at once ("ik heb het idee dat die nu te snel clustert"). 40 is
-    /// supercluster's own default, and two 38 point pins whose centres are 40
-    /// apart just clear each other.
-    private static let clusterCellPoints = 40.0
-    /// And past this nothing piles up at all. Left at 15 deliberately: raising
-    /// it makes pins cluster for LONGER, which is the opposite of what was
-    /// asked, and lowering it drops a whole city's worth of overlapping pins on
-    /// the map at a zoom where they cannot be told apart.
-    private static let clusterMaxZoom = 15.0
+    /// So the source is a plain collection of every tree and MapLibre places
+    /// the pins: a symbol layer that does not allow overlap drops a pin whose
+    /// collision box meets one already placed, lowest `pr` first, and the dot
+    /// layer underneath shows where it stood. A pin is 38 points across and
+    /// this is the distance two centres must keep, so the padding round the
+    /// icon is (pinDistance - 38) / 2. The website uses the same number
+    /// (lib/map.ts PIN_DISTANCE; qa holds the two equal) and supercluster's
+    /// own default is 40.
+    static let pinDistance = 40.0
+    /// From this zoom a same-spot stack is its bubble (stackSpots); below it
+    /// the stack is one ordinary pin, because below it two pins a street
+    /// apart would overlap anyway and the bubble would read as the
+    /// clustering this map no longer does. The website's STACK_ZOOM.
+    static let stackZoom = 14.0
 
-    /// WHICH GRID CELL A POINT FALLS IN, as one number.
-    ///
-    /// Pulled out and rewritten 2026-08-28, because the old expression was
-    /// `column * 100_000 + row` and the row index outgrows 100,000 partway up
-    /// the range this is actually used in. The grid is `worldPoints / 60`
-    /// cells wide, `worldPoints` is `512 * 2^zoom`, so the largest index is
-    /// `8.53 * 2^zoom`: it passes 100,000 at zoom 13.5 and reaches about
-    /// 280,000 at zoom 15, which is where clustering stops. Between 13.5 and 15
-    /// two cells a long way apart therefore shared a key, and a bubble was
-    /// drawn at the MEAN of both groups, which is a pile of trees standing
-    /// somewhere none of them are.
-    ///
-    /// A shift rather than a bigger multiplier, because a multiplier is a
-    /// number somebody has to keep checking against a zoom range. Both indices
-    /// are non-negative and fit in 32 bits at any zoom this map can reach, so
-    /// this cannot collide at all.
-    nonisolated static func cellKey(x: Double, y: Double, cell: Double) -> Int64 {
-        (Int64(floor(x / cell)) << 32) | Int64(floor(y / cell))
-    }
+    /// Which tree gets the full pin where two collide: one with a photograph
+    /// before one without. Airbnb ranks by what you are likely to book; we
+    /// rank by what is worth the walk, and a photograph is the one thing on a
+    /// pin that answers that. Lower places first.
+    nonisolated static func pinPriority(hasPhoto: Bool) -> Int { hasPhoto ? 0 : 1 }
 
-    /// WHICH POINTS FALL TOGETHER, as groups of indices into what was handed in.
-    ///
-    /// Pure and nonisolated on purpose: it is the whole of the clustering
-    /// decision, so a test can ask the question that cannot be asked of a map
-    /// (does a tree somebody added themselves join the pile beside it) without
-    /// a simulator, a style or a single pixel.
-    nonisolated static func groups(of coords: [CLLocationCoordinate2D],
-                                   cell: Double) -> [[Int]] {
-        piles(of: coords, cell: cell).map(\.members)
-    }
-
-    /// The groups, each with the spot its bubble is drawn on.
-    ///
-    /// NO TWO PILES CLOSER THAN A CELL (Hidde, 2026-10-20, a screenshot of
-    /// Soest and Leusden: "er gaat een hoop mis met de pinnen"). This used to
-    /// be a fixed grid, one pile per cell, and a grid only answers whether two
-    /// trees share a cell, never whether two pins touch. Trees either side of
-    /// a cell boundary became two piles whose bubbles stood a few points
-    /// apart: a 9 over a 10 at Leusden, a 5 with two more rings showing round
-    /// its edge at Baarn, two single pins half on top of each other.
-    ///
-    /// Now it is the distance rule MapKit and supercluster use, run until it
-    /// holds: anything within a cell of a pile joins it, the pile moves to its
-    /// members' centre, and passes repeat until no two piles are closer than a
-    /// cell. That last part is what the grid could never promise. Distances in
-    /// the same normalised web mercator as before, and the spot is the mean in
-    /// mercator, converted back, so what is measured is what is drawn.
-    nonisolated static func piles(of coords: [CLLocationCoordinate2D],
-                                  cell: Double) -> [(members: [Int], centre: CLLocationCoordinate2D)] {
-        struct Pile { var x: Double; var y: Double; var members: [Int] }
-        var piles: [Pile] = coords.enumerated().map { i, c in
-            let lat = min(max(c.latitude, -85.05), 85.05) * .pi / 180.0
-            return Pile(x: (c.longitude + 180.0) / 360.0,
-                        y: (1.0 - log(tan(lat) + 1.0 / cos(lat)) / .pi) / 2.0,
-                        members: [i])
-        }
-        let r2 = cell * cell
-        var merged = true
-        while merged && piles.count > 1 {
-            merged = false
-            // A grid only to FIND neighbours: anything within a cell of a pile
-            // lies in its own cell or one of the eight round it.
-            var buckets: [Int64: [Int]] = [:]
-            for (i, p) in piles.enumerated() {
-                buckets[cellKey(x: p.x, y: p.y, cell: cell), default: []].append(i)
-            }
-            // The biggest piles take their neighbours first, so a city's pile
-            // swallows the stray tree beside it rather than the other way round.
-            let order = piles.indices.sorted {
-                piles[$0].members.count != piles[$1].members.count
-                    ? piles[$0].members.count > piles[$1].members.count
-                    : piles[$0].members[0] < piles[$1].members[0]
-            }
-            var taken = [Bool](repeating: false, count: piles.count)
-            var next: [Pile] = []
-            for i in order where !taken[i] {
-                taken[i] = true
-                var p = piles[i]
-                let cx = Int64(floor(p.x / cell)), cy = Int64(floor(p.y / cell))
-                var sx = p.x * Double(p.members.count), sy = p.y * Double(p.members.count)
-                for dx in -1...1 {
-                    for dy in -1...1 {
-                        for j in buckets[((cx + Int64(dx)) << 32) | (cy + Int64(dy))] ?? [] where !taken[j] {
-                            let q = piles[j]
-                            let ddx = q.x - piles[i].x, ddy = q.y - piles[i].y
-                            guard ddx * ddx + ddy * ddy < r2 else { continue }
-                            taken[j] = true
-                            merged = true
-                            sx += q.x * Double(q.members.count)
-                            sy += q.y * Double(q.members.count)
-                            p.members += q.members
-                        }
-                    }
-                }
-                p.x = sx / Double(p.members.count)
-                p.y = sy / Double(p.members.count)
-                next.append(p)
-            }
-            piles = next
-        }
-        return piles.map { p in
-            let lat = atan(sinh(.pi * (1.0 - 2.0 * p.y))) * 180.0 / .pi
-            return (p.members.sorted(), CLLocationCoordinate2D(latitude: lat, longitude: p.x * 360.0 - 180.0))
-        }
-    }
-
-    /// OUR OWN CLUSTERING, 2026-08-24, because MapLibre's does not work here.
-    ///
-    /// Ten hypotheses were tested across two days. With
-    /// `MLNShapeSourceOptionClustered` set, the source yields exactly one
-    /// feature whatever it is given: as an MLNShapeCollectionFeature, as an
-    /// MLNShape parsed from real GeoJSON, and as a file URL, which is the path
-    /// MapLibre's own clustering example uses. Options were stripped to
-    /// `.clustered` alone, then varied one at a time (radius, maximum cluster
-    /// zoom, source zoom range, buffer). The proof that it is not our data:
-    /// six bare points around Amsterdam with no properties at all, handed to a
-    /// clustered source, rendered NOTHING, while the same six unclustered
-    /// render six. MapLibre logs no error in any of these cases.
-    ///
-    /// So the source is left plain and this does the work. A grid in world
-    /// space, sized so a cell is about sixty points on screen at the current
-    /// zoom, which is what a thumb covers. Cells holding one tree emit that
-    /// tree; cells holding more emit one bubble carrying `at_count`, which
-    /// is the same attribute MapLibre's own clusters carry, so the layers and
-    /// the tap handler did not have to change at all.
-    ///
-    /// Deliberately in WORLD space rather than screen space: clusters then stay
-    /// put while you pan and only regroup when you zoom, which is how every map
-    /// that does this behaves. Recomputed once per whole zoom level, so a pan
-    /// costs nothing and a pinch costs one pass over the trees.
-    static func cluster(on style: MLNStyle, zoom: Double, clustered: Bool, force: Bool = false) {
+    /// Hand the style every tree. Nothing here groups anything: MapLibre
+    /// decides pin or dot at every zoom by itself (addTreeLayers), so a zoom
+    /// costs no pass over the trees and a pan nothing at all. What this still
+    /// does is fold a spread pile whose zoom changed under it (its pins stand
+    /// a fixed number of points from the spot at the zoom they were spread
+    /// at) and rebuild when the dot rule is switched.
+    static func redraw(on style: MLNStyle, zoom: Double, declutter: Bool, force: Bool = false) {
         let st = state(for: style)
-        // OURS AND YOURS IN ONE PASS (Hidde, 2026-08-29: "zelfgemaakte bomen
-        // moeten gewoon mee clusteren met de getallen als je uitzoomt"). They
-        // used to live in a source of their own, which cannot cluster with
-        // anything: a grid only sees the points it is handed. So a city of
-        // forty trees collapsed to one bubble marked 40 with your own pin
-        // hanging beside it at full size, saying nothing except that it had
-        // been left out of the arithmetic.
         let all = st.leaves + st.mine
-        // A SPREAD PILE FOLDS when the zoom changes under it: its pins stand a
-        // fixed number of points from the spot at the zoom they were spread
-        // at, and any other zoom would draw them somewhere no tree stands.
         var force = force
         if st.spreadKey != nil && abs(zoom - st.spreadZoom) > 0.05 {
             clearSpread(on: style)
             force = true
         }
-        // EVERY TIME THE CAMERA SETTLES AT A NEW ZOOM, which is MapKit's rule
-        // (CONVENTIONS.md, "How close two pins have to be", benchmarked
-        // 2026-10-20 after Hidde: "een 2 blijft een 2"). This is called from
-        // regionDidChange, so once per finished gesture, the moment Google's
-        // markerclusterer also regroups (its map "idle"). It used to regroup
-        // only per whole zoom level, as supercluster does, plus a 0.45 dead
-        // band: a pile built at 12.1 stood until 13.0 or later while its trees
-        // drew apart to nearly twice the distance on screen. Apple clusters
-        // pins that collide in the view you are looking at, so a pile parts
-        // the moment its pins would clear each other.
-        let bucket = clustered && zoom < clusterMaxZoom ? 0 : 99
-        // A pan wobbles the zoom by hundredths and moves no pin apart (Hidde,
-        // 2026-08-24: "de iconen verdwijnen als ik over de map scroll"), so a
-        // pan alone never regroups.
-        if !force && bucket == st.lastBucket && clustered == st.lastClustered
-            && (bucket == 99 || abs(zoom - st.lastClusterZoom) < 0.05) { return }
-        st.lastBucket = bucket
-        st.lastClustered = clustered
-        st.lastClusterZoom = zoom
-
-        if bucket == 99 {
-            apply(stackSpots(all, on: style, clustered: clustered), on: style, clustered: clustered)
-            return
-        }
-
-        // Normalised web mercator, both axes in 0...1, so the cell is a plain
-        // fraction of the world and no trigonometry is needed per tree.
-        let worldPoints = 512.0 * pow(2.0, zoom)
-        let cell = clusterCellPoints / worldPoints
-        var out: [MLNPointFeature] = []
-        for pile in piles(of: all.map(\.coordinate), cell: cell) {
-            let group = pile.members.map { all[$0] }
-            if group.count == 1 {
-                out.append(group[0])
-                continue
-            }
-            let shown = min(group.count, 99)
-            let icon = "at-cluster-\(shown)"
-            // ON THE STYLE BEING DRAWN, not on mapRef's. mapRef is whichever
-            // map loaded last, which with several maps alive is regularly not
-            // this one.
-            if !hasImage(icon, on: style) {
-                noteImage(icon, on: style)
-                style.setImage(clusterPin(count: shown), forName: icon)
-            }
-            let bubble = MLNPointFeature()
-            bubble.coordinate = pile.centre
-            // The SAME keys as a leaf, every one of them. A feature carrying
-            // a subset of the others' properties made the whole source load as
-            // empty: 974 features in, zero out, no error. Measured 2026-08-24
-            // by emitting the bubbles as ordinary leaves, which rendered, and
-            // then putting them back, which did not.
-            bubble.attributes = [countKey: group.count, idKey: "",
-                                 "peaking": false,
-                                 kindKey: "cluster", "at_label": String(group.count),
-                                 "icon": icon]
-            out.append(bubble)
-        }
-        apply(stackSpots(out, on: style, clustered: clustered), on: style, clustered: clustered)
+        let near = zoom >= stackZoom
+        if !force && st.lastDeclutter == declutter && st.lastNear == near { return }
+        st.lastDeclutter = declutter
+        st.lastNear = near
+        apply(stackSpots(all, on: style, declutter: declutter && near), on: style, declutter: declutter)
     }
 
     /// The key of a spot, to about a metre: what "the same place" means here.
@@ -1729,16 +1503,17 @@ enum MapLayers {
     /// as on the website's city map. CONVENTIONS.md, "Two trees on exactly the
     /// same spot".
     ///
-    /// The grid above stops piling at clusterMaxZoom, and from there every
-    /// tree is drawn alone, so two on one coordinate drew one pin on top of
-    /// the other and the lower one could not be reached at all. This pass
-    /// runs on whatever the grid produced: trees still sharing a spot become
-    /// one bubble, the same bubble with the same keys as the grid's, or, when
-    /// that pile is the one spread out, its trees at their spread positions.
+    /// Two trees on one coordinate drew one pin on top of the other and the
+    /// lower one could not be reached at all, and no zoom parts them. This
+    /// pass runs over every tree: trees sharing a spot become one bubble with
+    /// the count, the one bubble left on this map, or, when that pile is the
+    /// one spread out, its trees at their spread positions.
     /// The legs back to the spot live in their own source (spread()).
     private static func stackSpots(_ features: [MLNPointFeature], on style: MLNStyle,
-                                   clustered: Bool) -> [MLNPointFeature] {
-        guard clustered else { return features }
+                                   declutter: Bool) -> [MLNPointFeature] {
+        // Below stackZoom (or with the dot rule off) the first tree on a spot
+        // stands for it: no bubble, and no second pin drawn over the first.
+        guard declutter else { return spotHeads(features) }
         let st = state(for: style)
         var spots: [String: [Int]] = [:]
         var order: [String] = []
@@ -1758,6 +1533,7 @@ enum MapLayers {
                     moved.coordinate = st.spreadCoords[n]
                     moved.title = f.title
                     moved.attributes = f.attributes
+                    moved.attributes[kindKey] = "spread"
                     extra.append(moved)
                 }
                 continue
@@ -1766,37 +1542,42 @@ enum MapLayers {
             let icon = "at-cluster-\(shown)"
             if !hasImage(icon, on: style) {
                 noteImage(icon, on: style)
-                style.setImage(clusterPin(count: shown), forName: icon)
+                style.setImage(stackPin(count: shown), forName: icon)
             }
             let bubble = MLNPointFeature()
             bubble.coordinate = features[ix[0]].coordinate
-            // The grid's bubble, key for key: see the note there.
+            // THE SAME KEYS AS A LEAF, every one of them. A feature carrying a
+            // subset of the others' properties made the whole source load as
+            // empty: 974 features in, zero out, no error. Measured 2026-08-24.
             bubble.attributes = [countKey: ix.count, idKey: "",
                                  "peaking": false,
                                  kindKey: "cluster", "at_label": String(ix.count),
-                                 "icon": icon]
+                                 "icon": icon, "pr": 0]
             extra.append(bubble)
         }
         guard !piled.isEmpty else { return features }
         return features.enumerated().filter { !piled.contains($0.offset) }.map(\.element) + extra
     }
 
-    /// The trees standing on the spot of a bubble, or none when the bubble is
-    /// the grid's pile of trees that are merely near each other.
+    /// Every feature, minus the trees under the first one on their spot.
+    private static func spotHeads(_ features: [MLNPointFeature]) -> [MLNPointFeature] {
+        var seen = Set<String>()
+        return features.filter { f in
+            guard (f.attributes[kindKey] as? String) != "cluster" else { return true }
+            return seen.insert(spotKey(f.coordinate)).inserted
+        }
+    }
+
+    /// The trees standing on the spot of a bubble.
     ///
-    /// Never by comparing the tapped coordinate with a spot: a feature read
-    /// back from the map comes from its tiles, rounded to the tile grid, so at
-    /// city zoom it misses the spot by more than a metre (measured 2026-10-15:
-    /// the first tap only zoomed). So the grid's own members decide while it
-    /// is piling, and past that the nearest shared spot within fifty metres.
+    /// Never by comparing the tapped coordinate with a spot exactly: a feature
+    /// read back from the map comes from its tiles, rounded to the tile grid,
+    /// so at city zoom it misses the spot by more than a metre (measured
+    /// 2026-10-15: the first tap only zoomed). So the nearest shared spot
+    /// within fifty metres.
     static func spotMembers(at coordinate: CLLocationCoordinate2D,
                             on style: MLNStyle) -> [CLLocationCoordinate2D] {
         let st = state(for: style)
-        if st.lastBucket != 99 {
-            let members = clusterMembers(at: coordinate, on: style)
-            guard members.count > 1, Set(members.map(spotKey)).count == 1 else { return [] }
-            return members
-        }
         var spots: [String: [CLLocationCoordinate2D]] = [:]
         for c in (st.leaves + st.mine).map(\.coordinate) { spots[spotKey(c), default: []].append(c) }
         var best: [CLLocationCoordinate2D] = []
@@ -1813,7 +1594,7 @@ enum MapLayers {
     /// Spread the pile on `key` round its spot: two side by side, more on a
     /// circle from the top, a fixed number of points out at the zoom it is
     /// spread at (36, or 44 for three and more: a pin is 38 across).
-    static func spread(_ key: String, in map: MLNMapView, on style: MLNStyle, clustered: Bool) {
+    static func spread(_ key: String, in map: MLNMapView, on style: MLNStyle, declutter: Bool) {
         let st = state(for: style)
         let members = (st.leaves + st.mine).map(\.coordinate).filter { spotKey($0) == key }
         guard members.count > 1, let spot = members.first else { return }
@@ -1841,14 +1622,14 @@ enum MapLayers {
         st.spreadZoom = map.zoomLevel
         (style.source(withIdentifier: legsSource) as? MLNShapeSource)?.shape =
             MLNShapeCollectionFeature(shapes: shapes)
-        cluster(on: style, zoom: map.zoomLevel, clustered: clustered, force: true)
+        redraw(on: style, zoom: map.zoomLevel, declutter: declutter, force: true)
     }
 
     /// Fold a spread pile back into its bubble. A tap on the map does this.
-    static func fold(on style: MLNStyle, zoom: Double, clustered: Bool) {
+    static func fold(on style: MLNStyle, zoom: Double, declutter: Bool) {
         guard state(for: style).spreadKey != nil else { return }
         clearSpread(on: style)
-        cluster(on: style, zoom: zoom, clustered: clustered, force: true)
+        redraw(on: style, zoom: zoom, declutter: declutter, force: true)
     }
 
     private static func clearSpread(on style: MLNStyle) {
@@ -1859,44 +1640,43 @@ enum MapLayers {
             MLNShapeCollectionFeature(shapes: [])
     }
 
-    /// The trees inside the bubble drawn at `coordinate`.
-    ///
-    /// Recomputed with the same grid that built the bubble rather than carried
-    /// on the feature, and that is not tidiness: every feature in this source
-    /// must carry exactly the SAME attribute keys or the whole source loads as
-    /// empty, 974 features in and zero out with no error (see cluster()). So
-    /// four bounding-box keys on a bubble would mean four dead keys on all
-    /// 1,800 leaves. Regrouping costs one pass over the trees, on a tap.
-    static func clusterMembers(at coordinate: CLLocationCoordinate2D,
-                               on style: MLNStyle) -> [CLLocationCoordinate2D] {
-        let st = state(for: style)
-        guard st.lastBucket != 99 else { return [] }
-        let worldPoints = 512.0 * pow(2.0, st.lastClusterZoom)
-        let cell = clusterCellPoints / worldPoints
-        let coords = (st.leaves + st.mine).map(\.coordinate)
-        // A bubble is drawn at its pile's centre, so the nearest centre is it.
-        var best: [CLLocationCoordinate2D] = []
-        var bestDistance = Double.greatestFiniteMagnitude
-        for pile in piles(of: coords, cell: cell) where pile.members.count > 1 {
-            let dLat = pile.centre.latitude - coordinate.latitude
-            let dLon = pile.centre.longitude - coordinate.longitude
-            let d = dLat * dLat + dLon * dLon
-            if d < bestDistance { bestDistance = d; best = pile.members.map { coords[$0] } }
-        }
-        return best
-    }
-
     /// Everything drawn from the tree source. Separate from install() because
     /// the source itself is now born in setTrees, and these have to be rebuilt
     /// with it.
     private static func addTreeLayers(on style: MLNStyle, source trees: MLNShapeSource,
-                                      clustered: Bool) {
+                                      declutter: Bool) {
+        // EVERY TREE AS A DOT, under the pins. A pin's image covers its own
+        // dot; where MapLibre did not place the pin the dot is what shows. A
+        // circle layer never collides, so no tree is ever simply gone.
+        let dots = MLNCircleStyleLayer(identifier: live(dotLayer, on: style), source: trees)
+        dots.predicate = NSPredicate(format: "at_kind == 'tree' OR at_kind == 'mine'")
+        dots.circleColor = NSExpression(forConstantValue: moss)
+        dots.circleRadius = NSExpression(forConstantValue: 4)
+        dots.circleStrokeColor = NSExpression(forConstantValue: UIColor.white)
+        dots.circleStrokeWidth = NSExpression(forConstantValue: 1.5)
+        style.addLayer(dots)
+
+        // THE PIN, placed by MapLibre: see pinDistance. Overlap is allowed
+        // only where the dot rule is off (a tree's page, a walk, the picker).
+        func place(_ layer: MLNSymbolStyleLayer) {
+            layer.iconImageName = NSExpression(forKeyPath: "icon")
+            layer.iconAllowsOverlap = NSExpression(forConstantValue: !declutter)
+            layer.iconIgnoresPlacement = NSExpression(forConstantValue: false)
+            layer.iconPadding = NSExpression(forConstantValue: (pinDistance - 38) / 2)
+            layer.symbolSortKey = NSExpression(forKeyPath: "pr")
+            layer.iconAnchor = NSExpression(forConstantValue: "center")
+        }
         let pins = MLNSymbolStyleLayer(identifier: live(treeLayer, on: style), source: trees)
-        pins.iconImageName = NSExpression(forKeyPath: "icon")
-        pins.iconAllowsOverlap = NSExpression(forConstantValue: true)
-        pins.iconAnchor = NSExpression(forConstantValue: "center")
+        place(pins)
         pins.predicate = pinPredicate(peaking: false, without: state(for: style).selectedID)
         style.addLayer(pins)
+
+        let spread = MLNSymbolStyleLayer(identifier: live(spreadLayer, on: style), source: trees)
+        spread.iconImageName = NSExpression(forKeyPath: "icon")
+        spread.iconAllowsOverlap = NSExpression(forConstantValue: true)
+        spread.iconAnchor = NSExpression(forConstantValue: "center")
+        spread.predicate = NSPredicate(format: "at_kind == 'spread'")
+        style.addLayer(spread)
 
         // The halo goes UNDER the peaking pin and is the thing that breathes.
         // Its colour follows the moment, same as the pin: a ginkgo's gold, a
@@ -1912,9 +1692,7 @@ enum MapLayers {
         style.addLayer(halo)
 
         let peak = MLNSymbolStyleLayer(identifier: live(peakLayer, on: style), source: trees)
-        peak.iconImageName = NSExpression(forKeyPath: "icon")
-        peak.iconAllowsOverlap = NSExpression(forConstantValue: true)
-        peak.iconAnchor = NSExpression(forConstantValue: "center")
+        place(peak)
         peak.predicate = pinPredicate(peaking: true, without: state(for: style).selectedID)
         style.addLayer(peak)
 
@@ -1926,15 +1704,15 @@ enum MapLayers {
         chosen.iconScale = NSExpression(forConstantValue: 1.5)
         chosen.predicate = NSPredicate(format: "%K == %@", idKey, state(for: style).selectedID ?? "")
         style.addLayer(chosen)
-        if clustered {
-            // A SYMBOL layer with a rendered image, not a circle layer plus a
-            // text layer. Two days went into the circle-and-text pair and it
-            // never painted a single bubble; worse, once any feature matched
-            // it, the whole source stopped rendering, leaves included, with no
-            // error anywhere. Symbol layers reading `icon` are the one thing on
-            // this map that has always worked, so the count is drawn into the
-            // image and there is nothing left to go wrong at layer level.
-            let bubble = MLNSymbolStyleLayer(identifier: live(clusterLayer, on: style), source: trees)
+        if declutter {
+            // THE SAME-SPOT STACK'S BUBBLE. A SYMBOL layer with a rendered
+            // image, not a circle layer plus a text layer. Two days went into
+            // the circle-and-text pair and it never painted a single bubble;
+            // worse, once any feature matched it, the whole source stopped
+            // rendering, leaves included, with no error anywhere. Symbol
+            // layers reading `icon` are the one thing on this map that has
+            // always worked, so the count is drawn into the image.
+            let bubble = MLNSymbolStyleLayer(identifier: live(stackLayer, on: style), source: trees)
             bubble.predicate = NSPredicate(format: "at_kind == 'cluster'")
             bubble.iconImageName = NSExpression(forKeyPath: "icon")
             bubble.iconAllowsOverlap = NSExpression(forConstantValue: true)
@@ -1950,18 +1728,16 @@ enum MapLayers {
         // toevoegen door een foto"). It is the only pin on this map that can
         // be a picture of the actual tree rather than a drawing of its species.
         //
-        // A feature only reaches this layer when the clusterer left it
-        // standing alone; inside a pile it is one of the numbers instead.
+        // Placed like every other pin, and first: your own photograph is the
+        // one pin on this map that is a picture of the actual tree.
         let minePins = MLNSymbolStyleLayer(identifier: live(mineLayer, on: style), source: trees)
+        place(minePins)
         minePins.predicate = NSPredicate(format: "at_kind == 'mine'")
-        minePins.iconImageName = NSExpression(forKeyPath: "icon")
-        minePins.iconAllowsOverlap = NSExpression(forConstantValue: true)
-        minePins.iconAnchor = NSExpression(forConstantValue: "center")
         style.addLayer(minePins)
     }
 
     static func setMine(_ mine: [(id: UUID, lat: Double, lng: Double, name: String, photo: UIImage?)],
-                        on style: MLNStyle, clustered: Bool, zoom: Double) {
+                        on style: MLNStyle, declutter: Bool, zoom: Double) {
         let features = mine.map { m -> MLNPointFeature in
             let f = MLNPointFeature()
             f.coordinate = .init(latitude: m.lat, longitude: m.lng)
@@ -1986,11 +1762,11 @@ enum MapLayers {
             // one-line change away from emptying the entire map.
             f.attributes = [idKey: m.id.uuidString, "icon": icon,
                             "peaking": false, countKey: 1,
-                            kindKey: "mine", "at_label": ""]
+                            kindKey: "mine", "at_label": "", "pr": -1]
             return f
         }
         state(for: style).mine = features
-        cluster(on: style, zoom: zoom, clustered: clustered, force: true)
+        redraw(on: style, zoom: zoom, declutter: declutter, force: true)
     }
 
     static func setRoute(_ pts: [CLLocationCoordinate2D], real: Bool, on style: MLNStyle) {
@@ -2123,13 +1899,11 @@ enum MapLayers {
         }
     }
 
-    /// A cluster bubble with its number already drawn in. Moss, white ring,
-    /// white figure, and ONE SIZE whatever the count (Hidde, 2026-10-04: "doordat
-    /// de ballen groter worden zie je bijna geen kaart meer"). It grew from 34
-    /// to 46 points with the count; MapKit's own clusters and Google's
-    /// markerclusterer keep one size and let the number say how many, and the
-    /// website draws the same 30 (lib/map.ts CLUSTER_RADIUS).
-    private static func clusterPin(count: Int) -> UIImage {
+    /// A same-spot stack's bubble with its number already drawn in. Moss,
+    /// white ring, white figure, and ONE SIZE whatever the count (Hidde,
+    /// 2026-10-04: "doordat de ballen groter worden zie je bijna geen kaart
+    /// meer"); the website draws the same 30 (lib/map.ts STACK_RADIUS).
+    private static func stackPin(count: Int) -> UIImage {
         let d: CGFloat = 32
         let size = CGSize(width: d, height: d)
         return UIGraphicsImageRenderer(size: size).image { ctx in

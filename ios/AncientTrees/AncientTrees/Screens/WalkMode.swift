@@ -169,7 +169,7 @@ struct WalkMode: View {
                     routeIsReal: (walk.shape?.count ?? 0) > 1 || (liveRoute?.count ?? 0) > 1,
                     showsRecentre: true,
                     spanMeters: openingSpan,
-                    clusters: false,
+                    declutter: false,
                     selected: $selected)
                 .ignoresSafeArea()
             topBar

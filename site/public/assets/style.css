@@ -1560,8 +1560,14 @@ footer { border-top: 1px solid var(--cream-dark); }
 /* The bookmark (2026-10-15), red as the app's TreeMap draws it. The colour is
    set on the svg itself for the same reason as the ticket's below. */
 .pin-tree .pin-fav svg.pin-fav-ic { width: 9px; height: 9px; fill: #D93340; color: #D93340; }
+/* A DOT WHERE A PIN DID NOT FIT (2026-10-24, the Airbnb way, lib/map.ts
+   PIN_DISTANCE): the same element, shrunk to a 14px moss-ringed cream dot with
+   its drawing and corners hidden; it still selects its tree. */
+.pin-tree.pin-mini { width: 14px; height: 14px; border-width: 2px; box-shadow: 0 1px 4px rgba(26,26,20,0.3); }
+.pin-tree.pin-mini svg, .pin-tree.pin-mini .pin-got, .pin-tree.pin-mini .pin-fav, .pin-tree.pin-mini .pin-ticket,
+.pin-tree.pin-mini .pin-bits { display: none; }
 /* TREES ON ONE SPOT (2026-10-15): one bubble, the explore map's cluster drawn
-   as an element (CLUSTER_RADIUS 13 plus its 2px ring), until a tap spreads the
+   as an element (STACK_RADIUS 13 plus its 2px ring), until a tap spreads the
    pins round a dot on the real spot. city-map-script.ts, spreadStack(). */
 .pin-tree.pin-stacked, .pin-stack.pin-stacked { display: none; }
 .pin-stack { width: 30px; height: 30px; padding: 0; border-radius: 50%; border: 2px solid #F6F2E9;

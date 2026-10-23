@@ -2318,41 +2318,63 @@ def _lastmod_counts(date):
     return n, len(entries)
 
 
-def check_every_web_map_piles_with_the_same_numbers():
-    """Every map on the website that draws trees piles them with the SAME three
-    numbers, read from lib/map.ts, and the city map is one of them.
+def check_every_map_shows_pins_the_same_way():
+    """Every map, web and app, draws its trees the Airbnb way and with the SAME
+    distance: a full pin where it fits, a dot where it does not, never a
+    counted bubble, and a tap always opens the tree.
 
-    Hidde, 2026-10-15: "map interaction need to stay consistent so do
-    everywhere"; 2026-10-24, on /lisbon's 36 pins drawn over each other while
-    /explore, the country maps, My trees and the app showed counted bubbles:
-    "kunnen we die interacties gelijk houden?". The city map had been the one
-    map left out, because its pins are DOM markers that MapLibre cannot pile
-    by itself; it now carries a clustered source of its own trees
-    (city-map-script.ts, 'citytrees') that decides which pins show.
+    Hidde, 2026-10-24, after the city map had been given the counted bubbles
+    the other maps had: "je wil ook niet nodeloos bubbels openklikken en je
+    wil trouwens ook niet dat je altijd inzoomt bij bubbels klikken", then,
+    with Airbnb and Google Maps looked at (CONVENTIONS.md, "How close two
+    pins have to be"): "doe de Airbnb-manier overal ... nooit bubbels, een
+    tik opent altijd de boom. Web en app." It is the third time the map
+    interaction has been asked to be the same everywhere (2026-10-15,
+    2026-10-24 twice), so a check holds it rather than prose.
 
-    Two things refuse here: the city map losing that source again, and any
-    map file writing the radius, distance or last zoom as a literal instead
-    of the shared constant, which is how two surfaces drift apart (the web
-    piled to zoom 11 while the app piled to 15 until 2026-10-20).
+    Three things refuse here. A web map source that clusters again
+    (`cluster: true` in lib/*map*.ts). The app growing a cluster pin or a
+    grid again (clusterPin, clusterCellPoints in TreeMap.swift). And the two
+    surfaces drifting apart on the one number the rule has: PIN_DISTANCE in
+    lib/map.ts and pinDistance in TreeMap.swift must be equal, and the city
+    map must read the website's from lib/map.ts rather than write its own.
+    The same-spot stack (one bubble on one coordinate, 2026-10-15) is the one
+    bubble that stays, by Hidde's choice that day.
 
     Removing this needs Hidde."""
     problems = []
     lib = ROOT / "site" / "src" / "lib"
-    city = (lib / "city-map-script.ts").read_text()
-    for want in ("addSource('citytrees'", "cluster: true",
-                 "clusterMaxZoom: ${CLUSTER_MAX_ZOOM}", "clusterRadius: ${CLUSTER_DISTANCE}",
-                 "querySourceFeatures('citytrees')"):
-        if want not in city:
-            problems.append("city-map-script.ts no longer piles the city's own trees "
-                            "through the shared clustered source (missing %r)" % want)
-    literal = re.compile(r"(clusterRadius|clusterMaxZoom|'circle-radius')\s*:\s*\d")
     for f in sorted(lib.glob("*map*.ts")):
         for i, line in enumerate(f.read_text().splitlines(), 1):
-            m = literal.search(line)
-            # The tree dot (radius 7) is a pin, not a pile; only a pile's radius is shared.
-            if m and not (m.group(1) == "'circle-radius'" and "cluster" not in line.lower() and "pile" not in line.lower()):
-                problems.append("%s:%d writes a pile number as a literal; read it from lib/map.ts (%s)"
-                                % (f.name, i, line.strip()[:70]))
+            if re.search(r"cluster\s*:\s*true", line):
+                problems.append("%s:%d clusters a source again; every map draws pins and dots (PINS_JS)"
+                                % (f.name, i))
+    web = (lib / "map.ts").read_text()
+    m = re.search(r"export const PIN_DISTANCE = (\d+);", web)
+    if not m:
+        problems.append("lib/map.ts no longer exports PIN_DISTANCE")
+    city = (lib / "city-map-script.ts").read_text()
+    if "${PIN_DISTANCE}" not in city or "pin-mini" not in city:
+        problems.append("city-map-script.ts no longer places its pins by PIN_DISTANCE from lib/map.ts with dots for the rest")
+    swift = ROOT / "ios" / "AncientTrees" / "AncientTrees" / "Screens" / "TreeMap.swift"
+    if swift.exists():
+        src = swift.read_text()
+        for word in ("clusterPin(", "clusterCellPoints", "clusterMaxZoom"):
+            if word in src:
+                problems.append("TreeMap.swift carries %s again; the app draws pins and dots, never a counted bubble" % word)
+        a = re.search(r"static let pinDistance\s*=\s*(\d+(?:\.\d+)?)", src)
+        if not a:
+            problems.append("TreeMap.swift no longer names pinDistance")
+        elif m and float(a.group(1)) != float(m.group(1)):
+            problems.append("the app places pins %s apart and the website %s: one rule, one number"
+                            % (a.group(1), m.group(1)))
+        # And where a same-spot stack becomes its bubble, the one bubble left.
+        wz = re.search(r"export const STACK_ZOOM = (\d+);", web)
+        az = re.search(r"static let stackZoom\s*=\s*(\d+(?:\.\d+)?)", src)
+        if not wz or not az:
+            problems.append("STACK_ZOOM (lib/map.ts) and stackZoom (TreeMap.swift) must both exist")
+        elif float(wz.group(1)) != float(az.group(1)):
+            problems.append("a stack becomes a bubble at zoom %s on the web and %s in the app" % (wz.group(1), az.group(1)))
     return problems
 
 
@@ -3198,7 +3220,7 @@ def main():
         check_hidden_means_hidden,
         check_an_organisation_beside_a_name_was_asked_for,
         check_app_crashes_reach_a_person,
-        check_every_web_map_piles_with_the_same_numbers,
+        check_every_map_shows_pins_the_same_way,
     ]
     if args.source_only:
         # The photo checks are left out on purpose: they read every image in
