@@ -23,7 +23,13 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
-## 2026-10-22
+## 2026-10-23
+
+Web half: read the last 24 hours of commits (demand cut, Sources/AI line, about page, photo vendoring, photo-live mail) and sampled built pages. The "written with AI, readers correct it" line renders on tree pages; no em dashes on about or London; no "free forever" or "no accounts" anywhere in site/dist. Not a Monday, so no corpus or copy audit. One finding, a repeat.
+
+- WARN (repeat of 2026-10-22) meta description "A 1903-year-old Mexican Fan Palm" still ships on /riverside/roosevelt-palm, "1914-year-old Redwood" on /riverside/chicago-white-sox-redwood-tree, "1950-year-old Dawn Redwood" on the Queen's Quarter, Belfast Dawn Redwood page, and others: a planting year printed as an age (hard rule 2, Verify: derived ages state their basis). Nothing in the last 24 hours touched `metaLead`/`ageToken()`, and the qa.py check on built HTML that yesterday's entry asked for has not landed. This is the fourth review to see this shape (08-10, 08-28, 09-13, 10-22); prose findings do not hold it, so it needs the check first: refuse `\b(1[0-9]|20)\d\d-year-old` in a description meta (about 200 pages match the pattern, most legitimately 1000 or 1100; the true errors are years 1500 to 2025).
+
+
 
 Web half: read the new Riverside, Mobile, Thomasville, Oroville and Logan Canyon pages and the Roosevelt Palm and Boyington Oak tree pages; no em dashes on any of them. Not a Monday, so no corpus or copy audit. One real finding.
 
