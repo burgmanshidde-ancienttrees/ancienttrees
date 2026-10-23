@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 second restart: nothing to ship
+
+No claims; READY still 3 leads without photographs; inbox empty; supply paused. `photo_hunt.py --recheck` found 0 new candidates in its 40-tree slice. `vendor_photos.py` still cannot downscale bne_004 and chi_023 (no Pillow on this runner). Deploy dispatch refused (HTTP 403 from this token), so the live site stays behind main until the next scheduled build. For Hidde: nothing.
+
 ## 2026-10-23 restart attempt: nothing to ship, and why
 
 No claims standing. READY holds 3 leads (two Oxford, one Madrid), none with an approved photograph. The 15 written trees (photo-batch-2, texas-famous, ftw_018) and the 11 held city files are not waiting on the pace cap any more: own supply is paused (SUPPLY_PAUSED), per data/research/held-pace-2026-10-22/README.md, so merging them would break the 10-22 ruling. Stirling register was retried earlier today. Refill and verify lanes add leads only, and the shelf already holds more than the paused supply can use. No trees added.
