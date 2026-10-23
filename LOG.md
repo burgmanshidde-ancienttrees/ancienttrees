@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, third attempt: two species intros
+Wrote the two missing species intros (Sugar Maple, Eastern White Pine) from the site's own trees; `pagegaps.py --check` now clean. Bing only while the strict cut holds. Not built or qa-run here (no site/dist). Nothing else workable: claims empty, READY leads photo-less under the supply pause, enrich empty.
+
 ## 2026-10-23 night run, second attempt: nothing to do, said plainly
 Nothing changed on the site. No claims standing. READY leads (3: Oxford x2, Madrid) have no approved photograph and own supply is paused (`SUPPLY_PAUSED`), so no write pass. Written-and-ready batches (photo-batch-2, texas-famous) are held by the same pause. `enrich.py --next` and `photo_gaps.py --shortlist` empty; pagegaps only species pages, which the strict cut keeps out of Google. Stirling register retried yesterday and stays stalled. iOS fix (FlowWalk) is running in CI. Open for Hidde: when own supply restarts, photo-batch-2 (10 trees) and texas-famous (4) are ready to merge.
 
