@@ -29,6 +29,79 @@ written down; treat those as weaker and re-check before leaning on them.
 
 ---
 
+## Telling somebody a tree near them is at its best: a dated push, opt-in per place (2026-10-23, looked up)
+
+Hidde, 2026-10-22, on Season Radar as the retention hook and the paid feature
+in one: "mag je me overtuigen waarom dat de oplossing is volgens jou want ik
+snap t nog niet". Looked up before any design, for docs/season-radar-case.md.
+
+**Weathernews 紅葉Ch. (Japan), the closest thing to Season Radar that ships.**
+Since 2015 the Weathernews app lets a person register up to five foliage spots
+out of 750 and sends a push the day a spot reaches peak colour (見頃):
+"事前に登録した名所が"見頃"になったらスマホにPUSH通知でお知らせするサービスです" (a
+service that push-notifies your phone when a spot you registered beforehand
+reaches its peak). Since 2018 it also pushes when colouring starts (色づき開始).
+The notification in their own screenshot, sent at 19:00: "嵐山の紅葉が11月21日に
+見頃になりました。紅葉狩り計画はお早めに!" (The leaves at Arashiyama reached their
+peak on 21 November. Plan your leaf-viewing trip early!). Per spot the page
+shows the current stage on a five-step scale (まだ not yet, 色づき colouring,
+見頃 peak, 落葉はじめ starting to fall, 落葉 fallen) and a forecast peak date;
+the search screen offers "見頃日で" (by peak date) and "ここの見頃" (peak here, by
+location). Their own pitch is planning: the colours last weeks, so the push is
+when to go, never go now. The same company's cherry blossom channel does the
+same for 700 spots, and lets a person register the one tree on their daily
+route as "My Sakura". Sources: jp.weathernews.com/news/3858/ (2015-09-17),
+jp.weathernews.com/news/24805 (2018-09-21), weathernews.jp/koyo/ (read
+2026-10-23: 1,200 spots with a forecast peak date),
+global.weathernews.com/blog/article-2026022701/. Not checked: whether the push
+is still free today (a 2021 mention lists a mail version under paid members).
+
+**eBird Alerts (Cornell).** Subscribe by region (county to country) to a Rare
+Bird Alert or a Needs Alert (species you have not recorded there); an email
+daily or hourly, "only sent out when NEW reports of rare or target species are
+submitted". Email, never push; signed in only. Source: support.ebird.org,
+article 48000960317. **Audubon Bird Guide** adds the push: a custom species
+list under My Audubon, a bell with "Seen in The Last 24 Hours" when eBird holds
+a sighting; the app asks the device's notification permission first. Source:
+apphelp.audubon.org, article 8416224. **Merlin Bird ID** sends no nearby-bird
+push at all; its nearby list is a filter by location and date (Explore Birds).
+Source: support.ebird.org, Merlin FAQ 48000961587.
+
+**AllTrails.** No dated or seasonal push. Trail Conditions (Plus and Peak
+only) is a Conditions Card on the trail page: today's weather, precipitation,
+snow depth, air quality, sun and moon, "dynamic and varies based on the day,
+time, or location on the trail". Base members get the 7-day forecast. Best
+season is not a field; the community's trip reports carry it. Source:
+support.alltrails.com article 36933535617300, read in the browser 2026-10-23.
+**Strava**: per-type push toggles under You > Settings > Push Notifications
+(kudos, comments, club posts); nothing time- or place-based. Source:
+support.strava.com article 15402139. **komoot**: nothing found on notification
+types beyond navigation voice and Send to phone; not a reference here.
+**PictureThis**: care reminders per plant (water, fertilise, mist, repot), each
+with its own schedule and notification, set from the plant's own page. Source:
+App Store listing 1252497129.
+
+**Apple (developer.apple.com, "Asking permission to use notifications", read
+2026-10-23).** "Make the request in a context that helps people understand why
+your app needs authorization", the example being after a person schedules a
+first task; asking on first launch is worse. Provisional authorization: the app
+sends quietly without a prompt, the notification lands in Notification Center
+only, with Keep and Turn Off buttons, and "the person is only asked to keep or
+turn off notifications when they actually receive the notification".
+
+**What we take from it, if Season Radar is built:** (1) The push is dated and
+named: one tree, its moment, the date, as Weathernews writes it. (2) Opt-in per
+thing the person chose, never a blanket "notify me": Weathernews per spot,
+PictureThis per plant, Audubon per list; for us a saved tree, or the city they
+gave as home. (3) Ask for permission at the first save ("tell me when this one
+is at its best"), never at launch; or send the first one provisionally. (4) The
+message sells planning ("plan early"), because people scout from far away
+(Hidde, 2026-10-19). (5) A settings row per notification type, like Strava, so
+turning one off never turns all off. (6) What no reference does: a push for a
+place the person never chose. "Near you" therefore means the home city they
+gave us or a saved tree, never the phone's background location (the near-a-tree
+banner stays foreground only, NearbyBanner.swift, 2026-10-10).
+
 ## Your face in the bar, and a flag nobody had to pick (2026-10-20, from memory)
 
 **The bar.** AllTrails, komoot, Airbnb, Google and Polarsteps all show your round profile picture where the account sits once you are signed in, and your initial when there is no picture; signed out they say Log in in words. From memory: their signed-in bars were not opened this session (no account of ours there). **Ours (Hidde approved the mockup, "ja bouw alles"):** the desktop bar's Account word is now your 32-point face with the caret, the initial drawn as .profile-avatar draws it, signed out still "Sign in" in words so the two never look alike (the 2026-10-06 lesson). This reverses 2026-10-10's "none [icons] in the menu bar": that was a line-art person, this is your own photo. The phone keeps its full menu. Base.astro `atPaintFace`.
