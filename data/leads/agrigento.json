@@ -1,0 +1,19 @@
+{
+  "city": "Agrigento",
+  "country": "Italy",
+  "about": "Leads for Agrigento, from the MASAF national register, read after a reader tip on r/sicily, 2026-10-23 (no name kept): 'some old trees at Valley of the Temple', ages online given as anything from 300 to over 1,000 years.",
+  "leads": [
+    {"name": "Olive of the Valle dei Templi (06)", "species": "Olive (Olea europaea)", "girth_cm": 640, "height_m": 5, "latitude": 37.293725, "longitude": 13.581258, "source": "italy-masaf register, sheet_id 06/A089/AG/19, locality Valle dei Templi", "status": "open", "added": "2026-10-23"},
+    {"name": "Olive of the Valle dei Templi (02)", "species": "Olive (Olea europaea)", "girth_cm": 550, "height_m": 6.5, "latitude": 37.288767, "longitude": 13.600508, "source": "italy-masaf register, sheet_id 02/A089/AG/19, locality Valle dei Templi", "status": "open", "added": "2026-10-23"},
+    {"name": "Olive of the Valle dei Templi (07)", "species": "Olive (Olea europaea)", "girth_cm": 470, "height_m": 7.5, "latitude": 37.293689, "longitude": 13.580997, "source": "italy-masaf register, sheet_id 07/A089/AG/19, locality Valle dei Templi; 25 m from 06, may fold into one ensemble", "status": "open", "added": "2026-10-23"},
+    {"name": "Olive of the Valle dei Templi (03)", "species": "Olive (Olea europaea)", "girth_cm": 420, "height_m": 5, "latitude": 37.289125, "longitude": 13.599761, "source": "italy-masaf register, sheet_id 03/A089/AG/19, locality Valle dei Templi", "status": "open", "added": "2026-10-23"},
+    {"name": "Olive of the Valle dei Templi (01)", "species": "Olive (Olea europaea)", "girth_cm": 380, "height_m": 5, "latitude": 37.289514, "longitude": 13.59325, "source": "italy-masaf register, sheet_id 01/A089/AG/19, locality Valle dei Templi", "status": "open", "added": "2026-10-23"},
+    {"name": "Carob of the Valle dei Templi", "species": "Carob (Ceratonia siliqua)", "girth_cm": 400, "height_m": 8, "latitude": 37.290961, "longitude": 13.583547, "source": "italy-masaf register, sheet_id 05/A089/AG/19, locality Valle dei Templi", "status": "open", "added": "2026-10-23"},
+    {"name": "Myrtle of the Valle dei Templi", "species": "Myrtle (Myrtus communis)", "height_m": 7.5, "latitude": 37.291714, "longitude": 13.58225, "source": "italy-masaf register, sheet_id 04/A089/AG/19, locality Valle dei Templi; a 7.5 m myrtle is big for the species", "status": "open", "added": "2026-10-23"},
+    {"name": "Moreton Bay Figs of Piazza Aldo Moro", "species": "Moreton Bay Fig (Ficus macrophylla)", "girth_cm": 430, "height_m": 9, "latitude": 37.310025, "longitude": 13.585169, "source": "italy-masaf register, sheet_ids 08/A089/AG/19 (420 cm) and 10/A089/AG/19 (430 cm), two figs on the square in the upper town", "status": "open", "added": "2026-10-23"},
+    {"name": "Moreton Bay Fig of the Basilica dell'Immacolata", "species": "Moreton Bay Fig (Ficus macrophylla)", "girth_cm": 400, "height_m": 9, "latitude": 37.309761, "longitude": 13.5835, "source": "italy-masaf register, sheet_id 09/A089/AG/19, Via Pirandello", "status": "open", "added": "2026-10-23"}
+  ],
+  "note": "Seven register trees inside the archaeological park, within about 2 km of each other: a walk (paid entry to the park counts as public). The register gives no ages; online figures run from 300 to over 1,000 years for the olives, so any age needs a named source and stays as vague as it gives it. Several sit near the Kolymbetra garden (FAI, its own ticket); check which side of that gate each trunk stands. Pins are register coordinates, default approximate. Under own-supply pause: nothing ships until a photo is approved and supply reopens; a Commons sweep of the park is the next cheap step.",
+  "blocked": [],
+  "updated": "2026-10-23"
+}
