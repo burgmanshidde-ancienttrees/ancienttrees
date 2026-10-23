@@ -72,11 +72,6 @@
       "released_at": "2026-10-20T01:37:38+00:00"
     },
     {
-      "slug": "bamberg",
-      "kind": "verify",
-      "released_at": "2026-10-20T07:08:44+00:00"
-    },
-    {
       "slug": "fort-worth",
       "kind": "verify",
       "released_at": "2026-10-20T07:09:59+00:00"
@@ -150,6 +145,11 @@
       "slug": "san-francisco",
       "kind": "verify",
       "released_at": "2026-10-22T12:34:47+00:00"
+    },
+    {
+      "slug": "bamberg",
+      "kind": "verify",
+      "released_at": "2026-10-23T14:34:35+00:00"
     }
   ]
 }

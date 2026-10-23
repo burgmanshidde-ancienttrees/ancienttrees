@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, second attempt: nothing published
+
+No claims stood, READY is 3 (Oxford 2, Madrid 1, no photos, supply paused). `photo_hunt.py --recheck` swept 40 more trees, no new candidates. Claimed Bamberg for a verify pass, found it already holds its 9 trees and only 6 open leads, released it (now a 48h wall in data/walls.json). Munich is full (63 of 60). Stirling register retry was done in the first attempt. Nothing worth dispatching while supply is paused.
+
 ## 2026-10-23 night run (14:28 UTC window): nothing published, supply paused
 
 Rung 1 and 2 clear (0 sightings waiting, health green). Own supply is paused, so no tree work. Ran `photo_hunt.py --recheck` (40 trees swept, no new candidates) and fetched the only four queued candidates: two Luxembourg sycamore saplings (not the tree), a giant-sequoia photo for the Trieste Ghost Pine (species mismatch) and a worm's-eye chestnut for the Trieste plane (wrong species, no frame). All four rejected, nothing approved. Enrichment, recognition lines and page gaps all say nothing to do. Scouted Stirling again (rung 5): only Inchmahome yews/oaks and the Bridge of Allan sequoia as leads, still stalled, note in data/register-scouting.json. READY leads (Oxford 2, Madrid 1) have no photo, so they wait. Nothing refused by the shell.
