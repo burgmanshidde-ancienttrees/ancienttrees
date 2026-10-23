@@ -90,6 +90,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import people  # noqa: E402  account ids as codes in public files (2026-10-19)
+import ours  # noqa: E402
 
 import mailer
 from email.message import EmailMessage
@@ -433,21 +434,68 @@ def supa_coordinates(sighting_ids):
     return out
 
 
-def mail_for(entry, reason):
-    page = f"{BASE_URL}/{entry['city_slug']}/{slugify(entry['tree_name'])}"
-    name = credit_name(entry.get("display_name"))
-    subject = "Your photograph is on the tree's page"
-    body = (
-        f"Hi {name},\n\n"
-        f"Your photograph of {entry['tree_name']} in {entry['city']} is now on its page:\n"
-        f"{page}\n\n"
-        f"Thank you. A photograph taken by somebody who stood in front of the tree is "
-        f"worth more to the page than anything we could find ourselves.\n\n"
-        f"Is there another tree near you that we should have on the map? Add it in the app "
-        f"the same way, or reply to this mail.\n\n"
-        f"Hidde\nAncient Trees\n{BASE_URL}\n"
-    )
-    return subject, body
+def mail_for(trees, first, display_name=None):
+    """One mail for every photograph of one reader that went live since the
+    last. `first` is their first mail from us: it carries the one ask, and a
+    later mail is a thank-you only (the tree ask goes once per thread,
+    HIS_VOICE.md 2026-10-20). Signed Ancient Trees, never as Hidde."""
+    name = (display_name or "").strip()
+    hi = f"Hi {name}," if name else "Hi,"
+    pages = [(t["tree_name"], t["city"], f"{BASE_URL}/{t['city_slug']}/{slugify(t['tree_name'])}")
+             for t in trees]
+    if len(pages) == 1:
+        tree, city, page = pages[0]
+        subject = f"Your photo is on the page of {tree}"
+        said = f"Thanks for your photo of {tree} in {city}. It's on the tree's page now:\n{page}\n"
+    else:
+        subject = "Your photos are on the trees' pages"
+        said = "Thanks for your photos. They're on the trees' pages now:\n" + "".join(
+            f"{tree}, {city}\n{page}\n" for tree, city, page in pages)
+    ask = ("\nIf you know another old tree that should be on the map, "
+           "you can add it in the app the same way.\n") if first else ""
+    return subject, f"{hi}\n\n{said}{ask}\nThanks again,\nAncient Trees\n"
+
+
+# AT MOST ONE MAIL PER READER PER MAIL_GAP_DAYS (Hidde, 2026-10-23: "eerste
+# live foto meteen een mail, daarna hooguit één per 30 dagen, gebundeld").
+# Codes and tree ids only, never an address: this repository is public.
+MAILED = os.path.join(ROOT, "data", "photo-live-mailed.json")
+MAIL_GAP_DAYS = 30
+
+
+def queue_mail(entry, today):
+    doc = load(MAILED, {"readers": {}})
+    r = doc["readers"].setdefault(entry["user_id"], {"last": None, "pending": [], "sent": []})
+    if any(p["sighting_id"] == entry["sighting_id"] for p in r["pending"] + r["sent"]):
+        return
+    r["pending"].append({k: entry.get(k) for k in
+                         ("sighting_id", "tree_id", "tree_name", "city", "city_slug", "display_name")}
+                        | {"live": today})
+    save(MAILED, doc)
+
+
+def flush_mail(really, today):
+    """Send what is due: a first mail at once, a bundle once the gap has passed."""
+    doc = load(MAILED, {"readers": {}})
+    for ref, r in doc["readers"].items():
+        if not r["pending"] or ours.is_ours(ref):
+            continue
+        if r["last"]:
+            waited = (datetime.date.fromisoformat(today) - datetime.date.fromisoformat(r["last"])).days
+            if waited < MAIL_GAP_DAYS:
+                print(f"  mail {ref}: {len(r['pending'])} photo(s) wait, last mail {waited} day(s) ago")
+                continue
+        addr = address_of(people.uid(ref))
+        if not addr:
+            print(f"  mail {ref}: no address resolved (no service key, or account gone)")
+            continue
+        subject, body = mail_for(r["pending"], first=not r["last"],
+                                 display_name=r["pending"][-1].get("display_name"))
+        if send_mail(addr, subject, body, really, r["pending"][0]["sighting_id"]):
+            r["sent"] += [{"sighting_id": p["sighting_id"], "tree_id": p["tree_id"], "mailed": today}
+                          for p in r["pending"]]
+            r["pending"], r["last"] = [], today
+    save(MAILED, doc)
 
 
 def mailcheck_ok(text):
@@ -498,6 +546,9 @@ def address_of(user_id):
 # Asked again 2026-10-21 for photos on existing trees, he said yes and then
 # withdrew it: "denk je niet dat mensen daar op een gegeven moment klaar mee
 # zijn", "doe maar niet". Mail fatigue outweighs the thanks.
+# 2026-10-23 he answered the fatigue himself: the first photograph mails at
+# once, later ones wait and go together, at most one mail per 30 days
+# (flush_mail). Built off; True once he has approved the text.
 MAIL_WHEN_LIVE = False
 VERDICT_STATUS = {"approve": "published", "add": "published",
                   "reject": "declined", "hold": "checking"}
@@ -650,15 +701,12 @@ def main():
         published.append(entry)
         print(f"  {'ADDED' if extra else 'PUBLISHED'} {entry['tree_id']} {entry['tree_name'][:40]}: {fname} {w}x{h}"
               f"{f', replaced {old_url}' if old_url else ''}{f' ({dropped} vendored file(s) removed)' if dropped else ''}")
-        if not MAIL_WHEN_LIVE:
-            print("  mail: off, a photograph going live sends no mail (Hidde, 2026-10-02)")
-            continue
-        addr = address_of(people.uid(entry["user_id"]))
-        if addr:
-            subject, body = mail_for(entry, reason)
-            send_mail(addr, subject, body, really, sid)
+        if MAIL_WHEN_LIVE and really:
+            queue_mail(entry, today)
         else:
-            print(f"  mail: no address resolved for {entry['user_id'][:8]} (no service key, or account gone)")
+            print("  mail: off, a photograph going live sends no mail yet (MAIL_WHEN_LIVE)")
+    if MAIL_WHEN_LIVE:
+        flush_mail(really, today)
     # And any photograph published earlier whose tree still has a rough pin.
     for line in catch_up_pins(done, today):
         print(f"  {line}")
