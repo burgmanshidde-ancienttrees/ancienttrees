@@ -29,7 +29,7 @@ Written after a week of trying channels by hand: two Reddit posts (r/Lisbon, r/s
 6. **Facebook groups from mid-November**, once Hidde's new personal account has lived a few weeks. Give-posts (one tree, one photo), not asks. Big Tree Seekers and the Dutch and UK groups first.
 7. **Show HN once more, Tuesday 2026-10-28 15:00**, same title, comment visible. If it lands, answer for two hours; if not, HN is done.
 8. **Product Hunt stays parked.** Its audience is makers, the launch burns a day and is not repeatable, and the app has no Android build, which is the first comment every time. Revisit at Android or at a feature worth a launch day.
-9. **Apple featuring nomination**: one form, Hidde's account, whenever he has ten minutes. Low odds, zero cost.
+9. **Apple featuring nomination**: done (the autumn event, 2026-10-15, drafts/PITCH_VOICE.md). Nothing to do until the next event or version.
 
 **What this refuses:** building pages around a thread (10-23 cost a day for one tree); link asks to websites (0 of 45); any new channel before the four above have seven days of numbers; measuring anything in views.
 
