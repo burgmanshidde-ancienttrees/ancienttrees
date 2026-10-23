@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 restart attempt: nothing to ship, and why
+
+No claims standing. READY holds 3 leads (two Oxford, one Madrid), none with an approved photograph. The 15 written trees (photo-batch-2, texas-famous, ftw_018) and the 11 held city files are not waiting on the pace cap any more: own supply is paused (SUPPLY_PAUSED), per data/research/held-pace-2026-10-22/README.md, so merging them would break the 10-22 ruling. Stirling register was retried earlier today. Refill and verify lanes add leads only, and the shelf already holds more than the paused supply can use. No trees added.
+
 ## 2026-10-23 03:00 window: photo sweep and vendoring, no new trees
 
 - Rung 1 inbox empty. Rung 2: Smoke skipped (push condition) and iOS failure (FlowWalk, needs a Mac) answered in health.py. Supply paused and READY leads lack photographs, so no write pass.
