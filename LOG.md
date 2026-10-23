@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, thirteenth attempt: nothing shipped
+
+- No claims standing; sightings inbox empty. READY leads are 3 (Oxford 2, Madrid 1), all our own trees without a photograph, so `ADD_NEEDS_PHOTO` and the paused own supply keep them waiting.
+- `photo_hunt.py --recheck` run twice: both swept the same 40 kept-set trees (ali, ams, arn), 0 new candidates; the sweep does not advance past them. A session with time should look at why the other ~985 unchecked photo-less trees are never reached.
+
 ## 2026-10-23 night run, twelfth attempt (19:44 window): nothing published
 
 Rungs 1 and 2 clear (0 reader photos waiting, health.py clean, 0 BLOCKER). Own supply is paused, enrichment says nothing to do, `recognise.py --stuck` and `pagegaps.py` are empty. `photo_hunt.py --recheck` swept 40 kept-set trees: 0 new candidates, so no viewing pass. Scout target Stirling was already retried earlier today (still stalled), so I did not repeat it. Nothing refused in the shell.
