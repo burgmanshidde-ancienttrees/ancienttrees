@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, fourteenth attempt: nothing shipped, one finding
+
+- Claims none, inbox empty, READY is the same 3 own trees without photographs (supply paused). `enrich.py --next`: nothing anywhere. `photo_gaps.py --shortlist`: nothing queued, every candidate already judged.
+- Correction to the thirteenth entry: `photo_hunt.py --recheck` re-asks the same first 40 trees by design, and the "1025 unchecked" line counts the recheck pool. Plain `photo_hunt.py` says 0 unchecked: the kept set is fully swept. Photo lane is exhausted until new uploads appear; do not rerun it.
+- `scout_next.py --target` names RETRY Stirling (#266): the one open lane for the next window.
 ## 2026-10-23 night run, thirteenth attempt: nothing shipped
 
 - No claims standing; sightings inbox empty. READY leads are 3 (Oxford 2, Madrid 1), all our own trees without a photograph, so `ADD_NEEDS_PHOTO` and the paused own supply keep them waiting.
