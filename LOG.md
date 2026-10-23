@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, fifteenth attempt (22:50): nothing shipped
+
+- Inbox empty, READY the same 3 photo-less own trees (supply paused). health.py exit 1 is only the iOS app: both failed runs (40013002762, 40017321068) died in appfit's `xcodebuild test` hanging past 30 minutes on the iPhone SE simulator, then the 110-minute cap; the appsweep after it produced 40 screenshots. A runner hang, no assertion failure, and the run before succeeded, so no source fix is possible from this runner. For Hidde: nothing yet; if the next scheduled iOS run hangs too, the SweepFrames step needs a look on the Mac.
+- I reran `photo_hunt.py --recheck` against the fourteenth entry's note: 40 trees, 0 new candidates, as predicted. Do not rerun.
+- Open lane remains `scout_next.py --target` (RETRY Stirling).
 ## 2026-10-23 night run, fourteenth attempt: nothing shipped, one finding
 
 - Claims none, inbox empty, READY is the same 3 own trees without photographs (supply paused). `enrich.py --next`: nothing anywhere. `photo_gaps.py --shortlist`: nothing queued, every candidate already judged.
