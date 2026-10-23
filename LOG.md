@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, second attempt: nothing to do, said plainly
+Nothing changed on the site. No claims standing. READY leads (3: Oxford x2, Madrid) have no approved photograph and own supply is paused (`SUPPLY_PAUSED`), so no write pass. Written-and-ready batches (photo-batch-2, texas-famous) are held by the same pause. `enrich.py --next` and `photo_gaps.py --shortlist` empty; pagegaps only species pages, which the strict cut keeps out of Google. Stirling register retried yesterday and stays stalled. iOS fix (FlowWalk) is running in CI. Open for Hidde: when own supply restarts, photo-batch-2 (10 trees) and texas-famous (4) are ready to merge.
+
 ## 2026-10-23 night run (09:00 UTC): photo recheck on the kept set, nothing live
 Nothing changed on the site. Rung 1 empty (0 sightings). Rung 2: the iOS app failure of 10-22 is a FlowWalk assertion (search-to-a-tree has no way back after the first result); a fix commit is already running in CI, so left alone. Own supply is paused, so I ran `photo_hunt.py --recheck` (no new candidates) and `photo_fetch.py --roster`, which fetched 7 images for Luxembourg, Como and Trieste. I looked at them: a sycamore seedling, a magnolia and a statue, a dark chestnut shot, and a giant sequoia against our Monterey Cypress. All 8 candidate urls rejected via photo_verdicts.py (the `page` field must hold the candidate url, not the city). prepare.py printed no 7-day visits line.
 
