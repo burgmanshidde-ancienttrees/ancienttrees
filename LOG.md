@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run, seventh attempt: nothing published
+
+No claims stood. READY is still 3 (Oxford 2, Madrid 1, no photos, supply paused). Staged-city and refill advice only adds leads while `SUPPLY_PAUSED` holds; Stirling register already retried today. Nothing dispatched.
+
 ## 2026-10-23 night run, sixth attempt: nothing published, photo lane checked
 
 No claims stood. READY is 3 (Oxford 2, Madrid 1, no photos, supply paused). `photo_hunt.py --recheck` swept 40 kept-set trees (Alicante, Amsterdam, Arnhem), 0 new candidates. A photo-judge pass found every fetchable candidate in the kept set already judged; 720 unjudged are last-resort (no geotag, or 30 to 100 m off the pin). It viewed the 7 nearest, all wrong subjects, 8 rejects recorded (6de16587b). No approvals. Next photo step is a by-name sweep on the 35 trees left, not another viewing pass. Pillow was missing on the runner and was installed.
