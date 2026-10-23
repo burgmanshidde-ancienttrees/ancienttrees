@@ -355,3 +355,7 @@ Same thread, same day, on telling xpto47 how to spot the Bensaúde cork oak. My 
 ## Calibration 2026-10-23: the list-shaped city post (r/sicily), his cut
 
 My draft gave every bullet a fact ("half of it sick so go while it's there", "where people have left notes since 1992", "planted over a Roman mosaic"). He kept the fact on two bullets only, the two that are the hook (the Orto Botanico crown, the 2,000-year chestnut he has not seen), and cut the rest to names: "The ficus on Piazza Marina", "The dragon tree at Villa Malfitano". His close: "Which ones should I add and photos of the trees would be great :) Thanks!" So: in a list post the bullets are names, a fact only where it makes someone click, and the ask is one plain sentence with a smiley, not two sentences.
+
+## Calibration 2026-10-23: replies under a tip thread (r/sicily)
+
+Two lessons from his own hand. (1) Photos: my drafts asked nearly every tipster for a photo; Hidde: "is het niet gek om iedereen om fotos te vragen als ze overduidelijk ze niet hebben". The post already asks once; a reply asks the one thing that person can know (where in the park, can you walk in), never a photo by reflex. (2) AI: when someone in the thread raises AI, he says it plainly himself: **"Thanks! To be honest, I did consult ai to improve the list but think in the end humans are way better in doing it"**. True to the product (every tree page says the story was written with AI), said once, no defence.
