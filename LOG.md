@@ -11,6 +11,13 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 03:00 window: photo sweep and vendoring, no new trees
+
+- Rung 1 inbox empty. Rung 2: Smoke skipped (push condition) and iOS failure (FlowWalk, needs a Mac) answered in health.py. Supply paused and READY leads lack photographs, so no write pass.
+- `photo_hunt.py --recheck` swept 40 kept-set trees; photo-judge viewed 13 files for 16 trees, approved none (park-wide aerials, sculptures, a mineral; The Hague beech has no geotag). Kept-set queue has no unjudged candidates left.
+- `vendor_photos.py` put 22 photographs on our own domain; bne_004 and chi_023 failed to downscale (Pillow missing on this runner), still to vendor.
+- For Hidde: nothing.
+
 ## 2026-10-22 restart attempt: nothing shipped, no claims standing
 
 No claims standing. READY has 3 leads (2 Oxford, 1 Madrid): the Oxford ones are approximate pins with no photograph (one a young oak, one a 2008 sighting needing a life check), so `ADD_NEEDS_PHOTO` and the supply pause keep them out. Staged cities need a verify pass but own supply is paused; Stirling was already retried. Nothing useful to dispatch under the rules.

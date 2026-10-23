@@ -108,6 +108,10 @@
     "2026-10-22": {
       "note": "Smoke test shows skipped on every push (1s, an if-condition), while Build and deploy succeeded 1.6h ago; the site is updating, no failing log to read.",
       "at": "2026-10-22T06:37:39+00:00"
+    },
+    "2026-10-23": {
+      "note": "Smoke skipped by its push condition, Build and deploy succeeded; iOS failure already read (FlowWalk back-way), needs a Mac",
+      "at": "2026-10-23T03:00:00+00:00"
     }
   }
 }
