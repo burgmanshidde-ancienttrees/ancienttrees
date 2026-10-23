@@ -1,5 +1,42 @@
 # Go-to-market plan
 
+## Traction plan, 2026-10-24 (Hidde: "maak nog eens een tractie strategie als je alles bij elkaar meeneemt")
+
+Written after a week of trying channels by hand: two Reddit posts (r/Lisbon, r/sicily), a Show HN, four press rounds, four link-ask batches. This replaces nothing below; it is the current read, with the numbers, and the plan for the next six weeks.
+
+**What we know, in numbers**
+
+| Channel | What it gave | Cost | Verdict |
+|---|---|---|---|
+| Google search, before 2026-09-28 | ~2,000 impressions a day, most of the site's visitors | nothing, ran at night | the engine; demoted 09-28, now ~50 a day, 3 Google visitors last week |
+| Google Analytics now | 28 new visitors last week, 8 from any search | | the floor we stand on |
+| App Store | 14 first-time downloads a week, 200 to 300 ever, 35 accounts | | people, slowly; nobody knows it exists |
+| Reddit, one post | ~3,500 views, 8 to 10 tips, ~10 visitors in GA, 0 accounts seen yet | a day of Hidde and the machine the first time; 30 min of Hidde when repeated | data and people to recruit, not traffic |
+| Show HN, 2026-10-24 | 1 point; the maker's comment auto-killed (karma 1 account) | an afternoon | retry Tuesday with the comment visible; a lottery ticket, not a plan |
+| Press, 4 rounds, 58 desks | 2 replies (both "who are you"), 1 forwarded pitch landing as an article in 2027 (Oud-Utrecht), 1 Lisbon interview (2026-10-15) | 10 mails a day of machine, one word of Hidde | the only channel with a measured app effect; slow, compounding |
+| Outreach mail, 500 sent | 31 replies (6%), 2 live links back, 7 ambassadors | | link asks to sites: nothing; mails to a person who loves trees: everything we have |
+| Ambassadors | 7 people, 1 walk being organised (Lisbon), 1 newsletter mention offered (Glasgow), 1 e-bulletin (Oak Society), 2 Facebook groups asked | | the only thing that scales without Hidde posting |
+
+**The arithmetic.** Before the demotion Google alone was worth more than every other channel together will be for a year. A Reddit post is a dozen visitors; a press article is a few hundred and keeps sending; a Product Hunt day is typically a few hundred to a thousand visitors who are makers, not tree people, and leaves a nofollow link; a Show HN that lands is thousands, once. None of these moves the weekly numbers the way 2,000 impressions a day did. So the plan is built on two things: get Google back, and turn the people the channels do reach into contributors and ambassadors, because those two compound and the rest does not.
+
+**The plan, six weeks**
+
+1. **Google recovery is the main job and it is the machine's.** Photographs on the kept set (data/index-kept.json), every night, until Search Console moves. Nothing else on the machine's side outranks it. Checkpoint: the digest's "from Google" row.
+2. **Press, regional, three desks a day, continuous.** Rounds 1 to 4 are out (58 desks); round 5 drafts next week; replies read from 10-29. One word a round from Hidde. The one channel that measurably moved the app.
+3. **Reddit as recruitment, one city a week, 30 minutes.** Rome, Barcelona or Edinburgh next (OUTREACH_STRATEGY.md has the sub sizes). Post, answer, link in the edit and when asked, every tip a lead the same day, a page only when the tip is as good as the Messina fig. Count per post after seven days: tips, photos, accounts; not views. After five posts with no contributor, stop.
+4. **Every tipster and replier becomes an ambassador ask**, one mail, in the thread's own channel. That is how the ambassador count grows from 7; the app does not do it.
+5. **The offers already on the table get closed**: Quercus Lisboa's walk, the Glasgow Treelovers newsletter, the Oak Society bulletin, Fred Breglia's two Facebook groups. Each is a hundred tree lovers handed over; a status list is one script away.
+6. **Facebook groups from mid-November**, once Hidde's new personal account has lived a few weeks. Give-posts (one tree, one photo), not asks. Big Tree Seekers and the Dutch and UK groups first.
+7. **Show HN once more, Tuesday 2026-10-28 15:00**, same title, comment visible. If it lands, answer for two hours; if not, HN is done.
+8. **Product Hunt stays parked.** Its audience is makers, the launch burns a day and is not repeatable, and the app has no Android build, which is the first comment every time. Revisit at Android or at a feature worth a launch day.
+9. **Apple featuring nomination**: one form, Hidde's account, whenever he has ten minutes. Low odds, zero cost.
+
+**What this refuses:** building pages around a thread (10-23 cost a day for one tree); link asks to websites (0 of 45); any new channel before the four above have seven days of numbers; measuring anything in views.
+
+**The checkpoint, 2026-12-05:** Google's row in the digest (impressions a day), accounts a week, ambassadors, and contributions a week. If Google is still at the floor, the plan does not change (the machine keeps at photos) but the expectation does: traction then comes from people, which means the app and the ambassador loop, and that is phase 2's question.
+
+---
+
 Written 2026-07-21. Grounded in CLAUDE.md, DISTRIBUTION.md, COMPETITION.md and OPEN_DATA_SURVEY.md. Not a list of ideas: a phased plan, each phase opened by a demand signal, so nothing scales before there is evidence it should.
 
 ## The one honest fact this plan is built around
