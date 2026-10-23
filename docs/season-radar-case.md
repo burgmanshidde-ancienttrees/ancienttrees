@@ -213,10 +213,9 @@ zoals bij Polarsteps, en de echte vraag is wat de Plus-stap is als veel mensen
 bomen uploaden. Zijn volgorde staat: eerst Google terug en mensen die bomen
 toevoegen, Plus pas bij echte gratis tractie (DECISIONS.md 2026-10-23). Wat dit
 stuk fout had: weekcohorten van 8 tot 16 telefoons als bewijs, en content (het
-seizoen) als betaalde laag. Gebouwd: één rij in de digest onder "Phones back
-within 30 days", hoeveel van die telefoons in die dertig dagen iets gaven
-(bewaard, afgevinkt, gefotografeerd). Eerst gebouwd op de eerste 24 uur,
-verbreed op zijn vraag "hoezo maakt het uit of ze direct wat toevoegen": dat
-maakt niet uit. Van de 23 telefoons die op drie dagen of meer terugkwamen gaven
-er 10 ooit iets en 13 nooit; de zin "wie terugkomt is wie bijdraagt" klopte
-niet.
+seizoen) als betaalde laag. Een rij in de digest (van de telefoons terug binnen dertig dagen, hoeveel
+gaven er iets) is gebouwd en binnen het uur op zijn woord weer weggehaald:
+"slechte titel en vraag me af of dit nou het getal is". Terecht: gratis tractie
+staat al in zijn zeven kopgetallen. Wat wel bleef hangen: van de 23 telefoons
+die op drie dagen of meer terugkwamen gaven er 10 ooit iets en 13 nooit, dus de
+zin "wie terugkomt is wie bijdraagt" klopte niet.
