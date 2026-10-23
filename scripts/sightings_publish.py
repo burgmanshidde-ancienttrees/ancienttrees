@@ -237,7 +237,8 @@ def drop_vendored(old_url):
 def apply_to_city(entry, block, as_extra=False):
     """Put the photograph on the tree, as the lead or beside it.
 
-    AS AN EXTRA (2026-09-12, when trees gained photos[]). The choice used to be
+    BESIDE THE ONE IT HAD (since 2026-10-23 as the lead, the old lead moving
+    into the strip; see READER FIRST below). AS AN EXTRA (2026-09-12, when trees gained photos[]). The choice used to be
     replace or discard, and both are wrong for the ordinary case: a reader sends
     a good photograph of a tree that already has a good one, and the two answer
     different questions. The Camphor of Munakata Shrine is the worked example,
@@ -257,7 +258,13 @@ def apply_to_city(entry, block, as_extra=False):
                 # applied on two nights would otherwise produce exactly that.
                 urls = {(x or {}).get("url") for x in extras} | {old.get("url")}
                 if block["url"] not in urls:
-                    extras.append(block)
+                    # READER FIRST (Hidde, 2026-10-23: "if google appreciates
+                    # them as lead better then make them lead"): the reader's
+                    # photograph leads, the one it had moves into the strip.
+                    # unique_photo() in thin_pages.py reads the lead only.
+                    if old.get("url"):
+                        extras.insert(0, old)
+                    t["photo"] = block
                 break
             if old.get("url") and old.get("url") != block["url"]:
                 t["photo_replaced"] = {k: old.get(k) for k in ("url", "license", "attribution", "status")}
