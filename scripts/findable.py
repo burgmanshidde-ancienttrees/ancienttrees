@@ -132,7 +132,12 @@ def has_approved_photo(tree):
 def reader_added(tree):
     """A tree that came through a reader: a sighting id on it or on its
     photograph, or a contributor's photograph (source + contributor_user_id,
-    the pair sightings_publish.py writes)."""
+    the pair sightings_publish.py writes), or a stranger's public tip
+    (`found_by_reader.tip`, the thread or mail it came from, never a name).
+    Hidde, 2026-10-23, on the r/sicily thread: a tree a reader named in
+    public is theirs, and the thread gets "it's on the map now"."""
     import json as _json
     blob = _json.dumps(tree)
+    if (tree.get("found_by_reader") or {}).get("tip"):
+        return True
     return '"sighting_id"' in blob or '"contributor_user_id"' in blob

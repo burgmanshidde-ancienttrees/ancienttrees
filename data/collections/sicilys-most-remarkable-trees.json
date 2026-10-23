@@ -1,10 +1,10 @@
 {
   "slug": "sicilys-most-remarkable-trees",
   "title": "Sicily's Most Remarkable Old Trees",
-  "seo_title": "The 12 Oldest and Biggest Trees in Sicily",
+  "seo_title": "The 13 Oldest and Biggest Trees in Sicily",
   "status": "published",
-  "meta_description": "Twelve trees in Sicily worth the walk: Palermo's figs with Europe's largest crown, the Falcone tree, Catania's 14-metre fig and the 2,200-year chestnut on Etna.",
-  "intro": "Most of Sicily's great trees are Australian. The Moreton Bay figs that fill Palermo's squares and Catania's main park were planted in the 1800s, when the island's gardens were filling up with trees from other continents, and in 180 years they have grown trunks 14 and 24 metres round and dropped aerial roots that thickened into trunks of their own. The island's truly old trees stand on Etna. The Hundred-Horse Chestnut above Sant'Alfio was put at roughly 2,200 years by Italy's agricultural research council in 2022, and earlier guesses ran to 4,000. This list runs west to east, Palermo first, then Catania, then the slope of the volcano. Every tree on it can be visited. Two ask for a ticket, the rest stand in public parks and squares, and where a number is a tradition rather than a measurement the entry says so.",
+  "meta_description": "Thirteen trees in Sicily worth the walk: Palermo's figs with Europe's largest crown, the Falcone tree, Messina's 25-metre fig and the 2,200-year chestnut on Etna.",
+  "intro": "Most of Sicily's great trees are Australian. The Moreton Bay figs that fill Palermo's squares and Catania's main park were planted in the 1800s, when the island's gardens were filling up with trees from other continents, and in 180 years they have grown trunks 14 and 24 metres round and dropped aerial roots that thickened into trunks of their own. The island's truly old trees stand on Etna. The Hundred-Horse Chestnut above Sant'Alfio was put at roughly 2,200 years by Italy's agricultural research council in 2022, and earlier guesses ran to 4,000. This list runs west to east, Palermo first, then Catania and the slope of the volcano, then Messina. Every tree on it can be visited. Two ask for a ticket, the rest stand in public parks and squares, and where a number is a tradition rather than a measurement the entry says so.",
   "entries": [
     {
       "city_slug": "palermo",
@@ -65,6 +65,11 @@
       "city_slug": "santalfio",
       "tree_id": "sal_002",
       "note": "Five hundred metres up the path from the famous tree, on private land but plainly visible from the path. One source dates it to roughly 1,800 years, another confirms only that it is over a thousand."
+    },
+    {
+      "city_slug": "messina",
+      "tree_id": "mes_001",
+      "note": "Twenty-five metres round by the regional register's 2026 list, 14.5 by a local paper's tape in 2020, and one of the largest of its species in Italy either way. A reader in Messina pointed it out under its Sicilian name, 'miricanu, the American. Free, in the public garden by the port."
     }
   ]
 }

@@ -1,0 +1,77 @@
+{
+  "city": "Messina",
+  "country": "Italy",
+  "status": "needs_curation",
+  "intro": "Messina's biggest tree is a Moreton Bay fig in Villa Mazzini, the old public garden beside the port, and how big depends on where you put the tape: 14.5 metres round by a local paper's count in 2020, 25 by the regional register's list of 2026. Either way it is one of the largest of its species in Italy. The aerial roots dropped from its limbs have thickened into a wall of pillars around the base. Of the three figs in the garden, this is the one with the information board in front of it. Free, by the ferries.",
+  "meta_description": "The Moreton Bay fig of Villa Mazzini in Messina is 14.5 to 25 metres round, one of the largest of its species in Italy. Free, in the garden by the port.",
+  "question_meta": "Messina's biggest tree is the Moreton Bay fig of Villa Mazzini, one of the largest of its species in Italy. Where it stands and how to reach it.",
+  "question_answer": "The biggest tree in Messina is a Moreton Bay fig (Ficus macrophylla) in Villa Mazzini, the public garden between Via Garibaldi and the port. Sicily's register of monumental trees lists it at 25.13 metres round and 21 metres tall in its July 2026 update; a Messina paper measured 14.5 metres round and 17 tall in 2020, and the difference is where the tape went around a base widened by aerial roots. Nobody has dated it. The garden is free and the tree stands in the open, with an information board in front of its trunk.",
+  "question_context": "The two girths are not a contradiction so much as two ways of measuring a fig whose base is a ring of fused aerial roots: a tape run around the whole base gives a far larger number than one run around the original trunk. Both figures are published, and the page gives both rather than picking one. The 2020 article in LetteraEmme counted it among the five largest Ficus macrophylla in Italy and described seven primary and eighteen secondary limbs leaving the trunk at about 2.6 metres. No source gives a planting date; the paper calls it centuries old and so does this page. Villa Mazzini holds three of these figs, and the register lists two of them, at 25.13 and 18.85 metres round. The tree came to the map through a reader on Reddit, who named it in one word, 'miricanu, the American; the species is Australian. The register's coordinates put it about 90 metres from the araucaria whose fall radius was fenced off after the cyclone of early 2026, so the fig itself stayed reachable when the garden reopened.",
+  "hero_tree_id": "mes_001",
+  "oldest_tree_id": "mes_001",
+  "faq": [
+    {
+      "q": "What is the biggest tree in Messina?",
+      "a": "The Moreton Bay fig of Villa Mazzini, listed by Sicily's register of monumental trees at 25.13 metres round and 21 metres tall. A local paper's 2020 count gave 14.5 metres round; the difference is where the tape went around the aerial roots."
+    },
+    {
+      "q": "How old is it?",
+      "a": "Nobody has dated it. The local paper calls it centuries old and no source gives a planting date, so this page does not guess."
+    },
+    {
+      "q": "Is it free to visit?",
+      "a": "Yes. Villa Mazzini is a public garden with no ticket. The fig stands in the open with an information board in front of its trunk."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Villa Mazzini lies between Via Garibaldi and the port, beside Piazza Unità d'Italia. It is a short walk from the ferry terminal and the cathedral, and about 20 minutes on foot from Messina Centrale station."
+    }
+  ],
+  "trees": [
+    {
+      "id": "mes_001",
+      "name": "The Moreton Bay Fig of Villa Mazzini",
+      "species": "Moreton Bay Fig (Ficus macrophylla)",
+      "age_estimate": "not documented; a local paper calls it centuries old",
+      "age_min": null,
+      "age_max": null,
+      "girth_cm": 2513,
+      "height_m": 21,
+      "location": {
+        "address": "Villa Mazzini, Via Garibaldi / Piazza Unità d'Italia, Messina",
+        "latitude": 38.198244,
+        "longitude": 15.556653,
+        "neighbourhood": "Centro, by the port"
+      },
+      "story": "Which number you believe depends on where you put the tape. Sicily's register of monumental trees, in its list of July 2026, gives this fig a trunk 25 metres round; a Messina paper that walked the garden in 2020 made it 14.5. Both are enormous for a tree in a city park, and the paper counted it among the five largest Moreton Bay figs in Italy. About 2.6 metres up, the trunk divides into seven main limbs and eighteen smaller ones, and the aerial roots that drop from them have thickened into the wall of pillars that makes the base so wide, and so hard to measure.\n\nVilla Mazzini is the old public garden beside the port, and it holds three of these figs. This is the biggest, the one with the information board on a post in front of its trunk. Nobody has dated it. The paper calls it centuries old and leaves it there, and so do we.\n\nA reader in Messina pointed us to it with one word: 'miricanu, the American. The species is Australian; its relatives in Palermo were planted in the 1840s and 1860s. The register's name for it is plainer, fico magnolioide, the magnolia-leaved fig, for the big glossy leaves with a rust-coloured underside.\n\nFree, no gate, a few minutes on foot from the ferries and the cathedral.",
+      "verified_sources": [
+        "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf",
+        "https://www.letteraemme.it/cinque-alberi-messina-forse-non-conoscete/2/"
+      ],
+      "access": "Free. Villa Mazzini is a public garden by the port, open in daylight hours; the fig stands in the open with an information board in front of it. After a cyclone in early 2026 the garden reopened with only the ground within 24 metres of a damaged araucaria fenced off (La Sicilia, 2026-02-22); by the register's coordinates the fig stands about 90 metres from it.",
+      "transport": "Between Via Garibaldi and the port, beside Piazza Unità d'Italia; a short walk from the ferry terminal and the cathedral, about 20 minutes on foot from Messina Centrale station (not verified).",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Messina-8015.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "GodeNehler, via Wikimedia Commons, CC BY-SA 4.0",
+        "status": "approved",
+        "width": 8192,
+        "height": 5464,
+        "taken_month": 5
+      },
+      "curation_status": "flagged",
+      "location_precision": "confirmed",
+      "pin_source": "Regione Siciliana register sheet 05/F158/ME/19 (38°11'53.68\" N 15°33'23.95\" E); the Commons photograph's geotag stands 45 m away in the same garden",
+      "found_by_reader": {
+        "tip": "r/sicily, 2026-10-23",
+        "thread": "https://www.reddit.com/r/sicily/comments/1xda1j0/"
+      },
+      "verify_notes": "Reader tip on r/sicily, 2026-10-23: one word, 'Miricanu, plus a link to letteraemme.it (2020-11-14, page 2 of 5: Ficus macrophylla, Villa Mazzini, about 14.5 m round, about 17 m tall, splits at 2.6 m into 7 primary and 18 secondary branches, 'secolare', among the five largest in Italy, three ficus in the garden). Second source: Regione Siciliana, elenco degli alberi monumentali aggiornato al 17.07.2026, sheets 05/F158/ME/19 (Ficus macrophylla, Villa Mazzini, 2513 cm, 21 m, 38°11'53.68\" 15°33'23.95\") and 06/F158/ME/19 (1885 cm, 15.5 m); an older row 01/F158/ME/19 at 38°11'53\" 15°33'24\" is the same tree before remeasurement. Not in the MASAF national list we imported. Girth conflict stated on the page, not resolved. Age: no source, left undocumented. Photo File:Messina-8015.jpg (GodeNehler, 2025-05-03, geotag 38.198452 15.557093), looked at: the whole tree in daylight and colour, the information board in front of the trunk, Cadiz standard; the board and the trunk width settle which of the three figs this is. Ships under the reader-tip exemption to the supply pause (found_by_reader.tip, Hidde 2026-10-23).",
+      "how_to_recognise": "You can recognise it by the information board on a post in front of its trunk and by the base, a wall of fused aerial roots wider than any other tree in the garden. Of the three big figs in Villa Mazzini it is the widest.",
+      "official_register": {
+        "name": "Elenco degli alberi monumentali di Sicilia (Regione Siciliana, updated 17.07.2026), sheet 05/F158/ME/19",
+        "url": "https://www.regione.sicilia.it/system/files/2026-07/elenco_degli_alberi_monumentali_di_sicilia_aggiornato_al_17.07.2026.pdf"
+      }
+    }
+  ]
+}

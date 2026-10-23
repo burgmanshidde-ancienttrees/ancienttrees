@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 session: Reddit threads (r/Lisbon, r/sicily), a Sicily collection, the Messina fig live
+
+**In the product:** /collections/sicilys-most-remarkable-trees (13 trees: Palermo, Catania, Sant'Alfio, Messina) as the page Hidde's r/sicily post links to in its edit; out of Google like every collection under the strict cut. /messina/the-moreton-bay-fig-of-villa-mazzini is the first tree from a Reddit tip to go live: regional register sheet 05/F158/ME/19 (25.13 m round) plus LetteraEmme 2020, a CC BY-SA Commons photograph with the board in front of the trunk, looked at. **Rule:** a stranger's public tip is a reader's tree under the supply pause (`found_by_reader.tip`, findable.reader_added; CLAUDE.md). **Outreach:** a post is for people, not tips, the name goes in every thread (OUTREACH_STRATEGY.md); HIS_VOICE got his AI line and the no-photo-ask-by-reflex lesson. **Leads:** Seia (Souto da Lapa chestnuts, the tipster's photos were off the internet), Agrigento (7 Valle dei Templi register trees, a walk; the Borgo Giallonardo olive blocked on hotel grounds), Syracuse, Pozzallo. r/sicily gave 8 places in two hours and no accounts; GA referrals to check tomorrow for both subs.
+
 ## 2026-10-23 session: Mapillary tried as a photo source
 
 Two trees looked at in the viewer (Catania figs, Den Bosch plane): coverage at both, frames from dashcams and walks where the tree is at the edge or out of shot. Verdict in OPEN_DATA_SURVEY.md: a dated life check, rarely a photograph; the API needs a free token Hidde would have to create. Nothing in the product changed.
