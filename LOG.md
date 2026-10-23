@@ -13,7 +13,7 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 <!-- archive-index -->
 ## 2026-10-23 session: source batch sent, Season Radar session started
 
-Hidde: "verstuur een batch!" The source batch of ten (people-run sites our tree pages cite, link ask) went out; press round 4 and tourism batch 2 wait for his word. Sent log and contacts database in the private store. A separate session makes the case for Season Radar as the retention lever, honestly, with references; nothing built.
+Hidde: "verstuur een batch!" The source batch of ten (people-run sites our tree pages cite, link ask) went out, then on his second word press round 4 (ten regional desks) and tourism batch 2 (Porto, The Hague, Ede, Cagliari): 24 mails today. Every desk from the 10-20 press list is now mailed; round 5 needs new desks from the kept set. Sent log and contacts database in the private store. A separate session makes the case for Season Radar as the retention lever, honestly, with references; nothing built.
 
 ## 2026-10-23 second restart: nothing to ship
 
