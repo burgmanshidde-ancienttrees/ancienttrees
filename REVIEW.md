@@ -29,6 +29,11 @@ Web half: read the last 24 hours of commits (demand cut, Sources/AI line, about 
 
 - WARN (repeat of 2026-10-22) meta description "A 1903-year-old Mexican Fan Palm" still ships on /riverside/roosevelt-palm, "1914-year-old Redwood" on /riverside/chicago-white-sox-redwood-tree, "1950-year-old Dawn Redwood" on the Queen's Quarter, Belfast Dawn Redwood page, and others: a planting year printed as an age (hard rule 2, Verify: derived ages state their basis). Nothing in the last 24 hours touched `metaLead`/`ageToken()`, and the qa.py check on built HTML that yesterday's entry asked for has not landed. This is the fourth review to see this shape (08-10, 08-28, 09-13, 10-22); prose findings do not hold it, so it needs the check first: refuse `\b(1[0-9]|20)\d\d-year-old` in a description meta (about 200 pages match the pattern, most legitimately 1000 or 1100; the true errors are years 1500 to 2025).
 
+App half (iPhone SE, six screens: Discover, Feedback sign-in sheet, map list, map pin, map, own tree):
+- NOTE APP map list (map-full.png): the floating "Map" pill sits on top of the second card and covers its subtitle ("N… t" is cut mid-word under the pill), so the card reads as broken. A person sees an unreadable line; appfit does not measure a control over card text. For a session, not a night run (visual work).
+- NOTE APP Discover (explore.png): the banner says "765 trees at their best this month · 13 within 20 km of you" while the shelf below leads with Baarn trees and the map screens sit on Amsterdam; nothing contradicts, but the 13 depends on a location the screen never states. Worth a look only if the count is not from a real fix.
+- The Feedback sheet, own-tree and map screens read consistently; no promise the product cannot keep.
+
 
 
 Web half: read the new Riverside, Mobile, Thomasville, Oroville and Logan Canyon pages and the Roosevelt Palm and Boyington Oak tree pages; no em dashes on any of them. Not a Monday, so no corpus or copy audit. One real finding.
