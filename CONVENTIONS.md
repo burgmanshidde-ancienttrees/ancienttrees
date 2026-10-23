@@ -3657,3 +3657,27 @@ Hidde, on My trees at the half stop: "the vertical alignment seems too big here 
 **Settled with Hidde the same evening:** the tight version felt "opgepropt"; the middle one is the direction, and the grip stays exactly where it is on every sheet ("die moet consistent zijn ... heeft die niet gewoon lucht nodig"). So BottomSheet's 44 grip row is not touched; only what sits under it moves: 28 between blocks, 12 to 16 inside a group.
 
 **Built 2026-10-21 (his "ja, bouw het midden zo, greepje ongemoeid"), measured in the simulator on iPhone 17 Pro.** My trees: photo to tags 13, tags to tab words 27, tab line to chips 14, chips to photos 17 (Collect.swift: tags 44 tall with a 9.5 overhang, lanePicker top 4 gone, chips bottom -3). Map at peek: grip to count 25, count to first card 16, 46 of the card above the tab bar (MapTab.swift countStrip: no top padding, 11 below). BottomSheet untouched.
+
+## Notes from visitors on a tree page, and the empty photo as an ask (2026-10-24, looked up)
+
+Hidde, after the cold-start research: "meer ugc toelaten en meer naar vorm 2", "tekst is ook heel waardevol dus toch commenting ofzo", then "negeer mijn regel tegen comments", and "benchmark dit alles". His 2026-08-14 ruling (no comments or reviews, moderation and personal data through the back door) is lifted by him on 2026-10-24; what replaces it is below.
+
+### What the references do
+
+| Product | Text from visitors | Shape | Ask wording | Empty photo state | Read |
+|---|---|---|---|---|---|
+| komoot highlight | "Tips": one per person, name, date, sport, translated flag | flat list, no replies, no rating on the tip | "In the know? Log-in to add a tip for other adventurers!" under the tips | photo count on the hero (24) | komoot.com/highlight/4521996, 2026-10-24, phone width |
+| Atlas Obscura place | none on the page any more (comments retired); "Added by", "Edited by", "Published" credits instead | wiki edits by volunteers, staff review | "Been Here?", "Want to Visit?", "Add to List" under the hero; "Edit this listing: Make an Edit, Add Photos" at the foot | always a hero (Commons photo with credit) | atlasobscura.com/places/the-sobreiro-monumental-monumental-cork-oak, 2026-10-24 |
+| AllTrails trail | reviews: name, date, stars, text, activity, optional photos | flat, newest first, one per person per visit | "Write review" button; "Add photos" in the photo grid | "No photos yet", first-to-add prompt (from memory; the site blocks a phone-width fetch) | memory, 2026-10-24 |
+| Google Maps place | reviews: name, date, stars, text | flat, sortable; photos separate | "Add a photo" on the grey placeholder where the photo would be; "Write a review" | a grey placeholder carrying the one "Add a photo" control (from memory) | memory, 2026-10-24 |
+| iNaturalist observation | comments and identifications: name, date, text | flat thread; your own observation shows a quality label (Needs ID, Research Grade), no pending banner | "Add a comment", "Suggest an identification" | n/a | CONVENTIONS.md 2026-10-09 entry; the site sits behind a Cloudflare bot check today, not bypassed |
+
+### What ours does, decided 2026-10-24
+
+- **Notes, not comments.** One note per person per tree, dated, bound to a visit; no replies, no likes, no stars (the thumbs exist). The komoot/AllTrails shape, Atlas Obscura having retired open comments is the warning.
+- **Section "From people who stood here"** after the story, before the season chart: cards on --surface, name in 13px/600, date in 12px ink-light, text 16px/1.5. The name is the display name only when that profile is public (2026-10-19 default for new accounts), otherwise "A visitor". Never a sender name from mail or a form (2026-08-11 rule unchanged).
+- **Your own note** shows at once on --moss-light with "Your note" and "Not official yet" in moss; the iNaturalist quality-label shape, not a banner. It becomes a plain note when the night run reads it (hours), and the "it is on the page" mail goes with it, as for photographs. His words: "mensen moeten direct zien dat ie er staat zelf incl pending en zsm toch een mail".
+- **The ask under the notes**: "Been here? Leave a note", the quiet addphoto button (1px cream-dark border, moss text, 44px), because the hero already carries the loud one.
+- **The empty hero asks**: under "No photograph yet" (14px ink-light) one sentence in 14px ink-mid, "Been here? Yours would be the first on this page.", above the existing "Add a photo" button. One control, not several; Google Maps and AllTrails put the one ask where the photo would be.
+- **At collect time in the app**: one optional text field under the photo, "What did you see?", the same note. Not benchmarked here; Strava and Polarsteps ask for a title or a note at save, which is the reference for the next build.
+- Mockup: scratchpad tree-mock (build.py over the live page of lis_008), launch.json "tree-mock", looked at 375 and desktop.
