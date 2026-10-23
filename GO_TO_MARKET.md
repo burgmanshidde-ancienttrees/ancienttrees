@@ -35,6 +35,25 @@ Written after a week of trying channels by hand: two Reddit posts (r/Lisbon, r/s
 
 **The checkpoint, 2026-12-05:** Google's row in the digest (impressions a day), accounts a week, ambassadors, and contributions a week. If Google is still at the floor, the plan does not change (the machine keeps at photos) but the expectation does: traction then comes from people, which means the app and the ambassador loop, and that is phase 2's question.
 
+## The plan, revised the same evening: one dense place, Lisbon (Hidde, 2026-10-24: "Yes, Lisbon")
+
+The afternoon plan above spread the effort (a Reddit city a week, press everywhere, groups from November). The cold-start research (reports/Kip ei start van content apps.md, nine apps) says the opposite: every app that turned readers into contributors did it in one dense place with a handful of named people, and measured density there, not reach. So the six weeks concentrate. Items 1, 2 and 7 of the afternoon plan stand (Google recovery, regional press at one word a round, HN once more); the rest is replaced by this.
+
+**Why Lisbon.** An ambassador who already ran a walk with the app (Hugo, Quercus Lisboa, 2026-10-19: four trees and photos came out of it), the Wilder article of 2026-10-23 with four followed links and an explicit ask for photos and ambassadors, 36 trees, 18 with a photo, 5 with a reader's photo, 32 confirmed pins, and two walkable clusters: Estrela, Príncipe Real and São Bento (seven trees within a kilometre) and Arroios with Santana (six, where the reader photos already are).
+
+**The measure for six weeks:** Lisbon trees carrying a stranger's photograph. 5 on 2026-10-24. Target by 2026-12-05: every tree on the Estrela walk photographed, ten Lisbon trees with a reader's photo. Beside it: Lisbon accounts, contributions a week (12 last week), and Google's row for the record.
+
+1. **The Estrela walk complete.** Every tree on it with an approved photograph, a recognition line and a confirmed pin; the machine's photo sweep takes Lisbon's 18 photo-less trees first (lis_018, lis_019, lis_021 are on the walk).
+2. **Ten named people who already photograph Lisbon's trees**, each written to about one specific photo-less tree (drafts/lisbon-ten.md). Machine drafts, Hidde sends, over the six weeks, not in one day. The Behance pattern: praise work they did, ask for one thing.
+3. **Two gathering places, answer only:** r/Lisbon (the thread is open) and one Portuguese tree group. A named tree becomes a lead the same day and a page when it is as good as the Messina fig; the thread hears "it's on the map now". No new posts of our own in other cities for six weeks.
+4. **The first-photo loop, checked end to end:** a new app user learns before their first photo that it leads the page and their words are quoted; the "it's live" mail goes within hours; the digest shows every Lisbon contribution.
+5. **Hugo:** offer a second walk with a printed list and the Estrela page; nothing beyond what he volunteers.
+6. **Press stays at its pace**, regional, one word a round; Portuguese desks may now cite Wilder. No new lanes.
+
+**Not in these six weeks:** opening cities or spreading ambassadors; a Reddit city a week (replaced by 3); Facebook groups beyond one Portuguese one; badges, streaks, partnerships; Product Hunt; expecting Google to move.
+
+**Checkpoint 2026-12-05:** the Lisbon reader-photo count against 5, Lisbon accounts, contributions a week, Google's row. If Lisbon moved and Google did not, the method is proven and the next place gets it; if neither moved, the ambassador loop is the question for phase 2.
+
 ---
 
 Written 2026-07-21. Grounded in CLAUDE.md, DISTRIBUTION.md, COMPETITION.md and OPEN_DATA_SURVEY.md. Not a list of ideas: a phased plan, each phase opened by a demand signal, so nothing scales before there is evidence it should.
