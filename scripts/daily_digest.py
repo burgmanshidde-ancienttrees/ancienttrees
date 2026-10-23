@@ -3372,12 +3372,13 @@ def _hl_app(_today):
     def back(a, b):
         # Phones whose first day was a and b days ago, so each has had its
         # full thirty days: the share seen again on days 1 to 30 after it,
-        # and, of those, how many had already saved, ticked or photographed
-        # a tree in their first 24 hours. Hidde, 2026-10-23, parking Plus
-        # until there is free traction: the one thing to watch meanwhile is
-        # whether the people who stay are the people who contribute (in the
-        # 103 phones to that date, the ones back on three days or more were
-        # largely the ones who had given something).
+        # and, of those, how many saved, ticked or photographed a tree at any
+        # point in those thirty days. Hidde, 2026-10-23, parking Plus until
+        # there is free traction: the one thing to watch meanwhile is whether
+        # the people who stay come to contribute. The first version counted
+        # only the first 24 hours; Hidde: "hoezo maakt het uit of ze direct
+        # wat toevoegen", and it does not (of the 23 phones back on three
+        # days or more to that date, 5 gave at once, 5 later, 13 never).
         r = _posthog("""
             SELECT count(), countIf(again > 0), countIf(again > 0 AND gave > 0)
             FROM (
@@ -3385,7 +3386,7 @@ def _hl_app(_today):
                 countIf(toDate(e.timestamp) > toDate(f.first)
                         AND e.timestamp < f.first + INTERVAL 31 DAY) AS again,
                 countIf(e.event IN ('tree_saved', 'tree_visited', 'sighting_recorded')
-                        AND e.timestamp < f.first + INTERVAL 1 DAY) AS gave
+                        AND e.timestamp < f.first + INTERVAL 31 DAY) AS gave
               FROM events e
               JOIN (%s) f ON e.distinct_id = f.distinct_id
               WHERE f.first >= now() - INTERVAL %d DAY
@@ -3448,7 +3449,7 @@ def headline_section(today):
         ("App downloads (first-time)", "people", H.get("downloads")),
         ("New accounts", "people", H.get("accounts")),
         ("Phones back within 30 days", "people who stay", H.get("back30")),
-        ("... of which gave on their first visit", "do the ones who stay contribute",
+        ("... of which gave something in those 30 days", "do the ones who stay contribute",
          H.get("back30_gave")),
         ("Trees saved to Want to go", "intent", H.get("saves")),
         ("Trees collected", "goal 1: stood at a tree", H.get("collected")),
@@ -3462,8 +3463,8 @@ def headline_section(today):
     out.append("")
     out.append("Website visitors are Google Analytics' count, so only people who accepted "
                "the cookie bar. The 30-day row is the phones that arrived five weeks ago, "
-               "so it moves slowly; the row under it is how many of those had saved, "
-               "ticked or photographed a tree within their first 24 hours.")
+               "so it moves slowly; the row under it is how many of those saved, "
+               "ticked or photographed a tree at any point in those 30 days.")
     return "\n".join(out)
 
 

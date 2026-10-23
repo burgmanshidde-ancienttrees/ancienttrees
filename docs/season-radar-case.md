@@ -214,7 +214,9 @@ bomen uploaden. Zijn volgorde staat: eerst Google terug en mensen die bomen
 toevoegen, Plus pas bij echte gratis tractie (DECISIONS.md 2026-10-23). Wat dit
 stuk fout had: weekcohorten van 8 tot 16 telefoons als bewijs, en content (het
 seizoen) als betaalde laag. Gebouwd: één rij in de digest onder "Phones back
-within 30 days", hoeveel van die telefoons in hun eerste 24 uur iets gaven
-(bewaard, afgevinkt, gefotografeerd). Eerste lezing: 1 van 7 en 0 van 6. De
-mensen die blijven gaven dus niet meteen iets; de zin "wie terugkomt is wie
-bijdraagt" klopte voor dat venster niet.
+within 30 days", hoeveel van die telefoons in die dertig dagen iets gaven
+(bewaard, afgevinkt, gefotografeerd). Eerst gebouwd op de eerste 24 uur,
+verbreed op zijn vraag "hoezo maakt het uit of ze direct wat toevoegen": dat
+maakt niet uit. Van de 23 telefoons die op drie dagen of meer terugkwamen gaven
+er 10 ooit iets en 13 nooit; de zin "wie terugkomt is wie bijdraagt" klopte
+niet.
