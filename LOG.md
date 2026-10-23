@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 night run (09:00 UTC): photo recheck on the kept set, nothing live
+Nothing changed on the site. Rung 1 empty (0 sightings). Rung 2: the iOS app failure of 10-22 is a FlowWalk assertion (search-to-a-tree has no way back after the first result); a fix commit is already running in CI, so left alone. Own supply is paused, so I ran `photo_hunt.py --recheck` (no new candidates) and `photo_fetch.py --roster`, which fetched 7 images for Luxembourg, Como and Trieste. I looked at them: a sycamore seedling, a magnolia and a statue, a dark chestnut shot, and a giant sequoia against our Monterey Cypress. All 8 candidate urls rejected via photo_verdicts.py (the `page` field must hold the candidate url, not the city). prepare.py printed no 7-day visits line.
+
 ## 2026-10-23 session: readers' photos lead the page, and readers hear when theirs is live
 
 What changed in the product: a reader's photograph now becomes the LEAD on a tree's page, the old lead moving into the strip ("if google appreciates them as lead better then make them lead"; `unique_photo()` reads the lead only). Applied to the three trees that had one as an extra only (cma_001, lis_030, tkc_001). And a reader whose photograph goes live gets a mail: the first at once, later ones bundled, at most one per 30 days (text he approved in drafts/photo-live-mail.md; sent by nightly.yml's mail step). The weeping cedar's reader is queued for the first one. Hidde agreed on the cedar (judgement filed). The red iOS check is one flaky test (search-to-a-tree in FlowWalk, 229 of 230 pass); not fixed.
