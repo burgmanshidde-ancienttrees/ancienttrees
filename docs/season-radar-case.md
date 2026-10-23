@@ -204,3 +204,17 @@ overtuiging dat Weathernews' mechanisme ook voor bomen werkt, terwijl onze eigen
 cijfers het niet kunnen bewijzen voordat het bestaat? En wil hij het als betaalde
 functie houden (zoals 2026-08-18 zegt) of eerst gratis aanzetten om te meten of
 het mensen terugbrengt, en pas dan de prijs erachter?
+
+## 7. Uitkomst (2026-10-23, zelfde dag)
+
+Hidde: niet overtuigd, en terecht. Het seizoen was een gok voor Plus, een push
+is "ooit interessant maar niet het belangrijkst", terugkomen is een maandmaat
+zoals bij Polarsteps, en de echte vraag is wat de Plus-stap is als veel mensen
+bomen uploaden. Zijn volgorde staat: eerst Google terug en mensen die bomen
+toevoegen, Plus pas bij echte gratis tractie (DECISIONS.md 2026-10-23). Wat dit
+stuk fout had: weekcohorten van 8 tot 16 telefoons als bewijs, en content (het
+seizoen) als betaalde laag. Gebouwd: één rij in de digest onder "Phones back
+within 30 days", hoeveel van die telefoons in hun eerste 24 uur iets gaven
+(bewaard, afgevinkt, gefotografeerd). Eerste lezing: 1 van 7 en 0 van 6. De
+mensen die blijven gaven dus niet meteen iets; de zin "wie terugkomt is wie
+bijdraagt" klopte voor dat venster niet.

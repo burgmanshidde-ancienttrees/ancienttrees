@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-23 session: the Season Radar case, answered; Plus parked; one digest row
+Made the case that Season Radar (a dated push) is the retention hook and the paid feature (docs/season-radar-case.md, conventions looked up in CONVENTIONS.md: Weathernews 紅葉Ch., eBird, Audubon, AllTrails, Strava, Apple; mockup beside the reference in a preview). Hidde was not convinced and was right: return is a monthly, trip-shaped thing, season is content, and the open question is the Plus step once people upload trees, which is parked until free traction (DECISIONS.md 2026-10-23). Today's cohorts: 103 stranger phones, 60 opened on one day only; back within 7 days 1 in 3 in September, 1 in 5 in October (not the 1 in 13 quoted on 10-22). **Changed in the digest:** under "Phones back within 30 days" a row saying how many of those had saved, ticked or photographed a tree in their first 24 hours. First reading: 1 of 7 this week, 0 of 6 the week before, so the people who stay did not give at first; the session's own line that "the ones who come back are the ones who contribute" was wrong on that window. Nothing in the product changed.
+
 ## 2026-10-23 night run, fourth attempt: nothing new, said plainly
 Nothing changed on the site. No claims, READY leads still the same 3 (photo-less, supply paused). `photo_hunt.py --recheck` swept 40 more kept-set trees (Alicante, Amsterdam, Arnhem): 0 new candidates. Stirling already retried yesterday. Remaining kept-set photo-less trees: about 985, same sweep next run.
 
