@@ -208,17 +208,3 @@ Web half: read salt-lake-city (new, 5 trees; title, meta, intro and counts agree
 
 App half (paywall, people, photo-viewer, place-pin, profile-edit, profile-signed-in): the paywall says plainly that Plus is not open and nothing is charged, the pin-correction sheet, Find people, the photo viewer with its CC BY-SA credit and Settings (now "0 collected") read clearly and agree with each other. Nothing found.
 
-## 2026-10-08
-
-Web half: read vienna (50), delft (11), chicago (16) and nuremberg (18); titles agree with the city files and none carries em dashes or banned words.
-
-- WARN /delft (data/cities/delft.json lines 5-6): the title says "11 to See" but the page intro and the meta description both still say "Eight verified ancient trees", a stale count after Delft gained three trees today. This is the self-contradiction CLAUDE.md names ("when a place grows, its intro and meta grow with it"; hard-coded counts in copy). The count-promise check apparently does not see the word "Eight" in a hand-written intro or meta.
-
-## 2026-10-08 (app half)
-
-App half (people, photo-viewer, place-pin, profile-edit, profile-signed-in, profile): people, the pin-correction sheet, the photo viewer and Settings read clearly and agree with each other.
-
-- NOTE APP: profile-signed-in shows only the full-screen hero photograph and tagline ("Trees worth the walk, wherever you are.") with no profile content at all, so the frame does not show what its name promises. Probably the sweep caught the splash before the screen loaded, but a signed-in screen that can be photographed as a splash is worth a look for a session.
-
----
-
