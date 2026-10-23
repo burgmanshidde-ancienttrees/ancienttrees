@@ -43,7 +43,7 @@ The afternoon plan above spread the effort (a Reddit city a week, press everywhe
 
 **The measure for six weeks:** Lisbon trees carrying a stranger's photograph. 5 on 2026-10-24. Target by 2026-12-05: every tree on the Estrela walk photographed, ten Lisbon trees with a reader's photo. Beside it: Lisbon accounts, contributions a week (12 last week), and Google's row for the record.
 
-1. **The Estrela walk complete.** Every tree on it with an approved photograph, a recognition line and a confirmed pin; the machine's photo sweep takes Lisbon's 18 photo-less trees first (lis_018, lis_019, lis_021 are on the walk).
+1. **The Estrela walk complete.** Every tree on it with an approved photograph, a recognition line and a confirmed pin. Commons is a documented dead end for Lisbon's 18 photo-less trees (every candidate judged and rejected by 2026-10-19; the 48 unjudged candidates sit on trees that already have a photo), so those photographs come from people: items 2 and 5, and the app.
 2. **Ten named people who already photograph Lisbon's trees**, each written to about one specific photo-less tree (drafts/lisbon-ten.md). Machine drafts, Hidde sends, over the six weeks, not in one day. The Behance pattern: praise work they did, ask for one thing.
 3. **Two gathering places, answer only:** r/Lisbon (the thread is open) and one Portuguese tree group. A named tree becomes a lead the same day and a page when it is as good as the Messina fig; the thread hears "it's on the map now". No new posts of our own in other cities for six weeks.
 4. **The first-photo loop, checked end to end:** a new app user learns before their first photo that it leads the page and their words are quoted; the "it's live" mail goes within hours; the digest shows every Lisbon contribution.
