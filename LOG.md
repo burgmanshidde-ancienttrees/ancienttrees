@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 17:00 UTC, night run: Reddit queue worked, no tree made
+
+Nothing changed in the product. Rung 1: no reader photographs waiting. Rung 2: the Postbox check failure of 11:35 was only sqlcheck saying tree_notes.sql was not pasted yet; the table has been live since, so I recorded the answer with health.py. Rung 4: harvested r/lisbon (32 comments) and r/sicily (none new), closed 11 open items with a reason (no tree tip in any of them) and drafted nothing new. Two earlier drafts wait.
+For Hidde: 2 Reddit replies in drafts/batch-community-preview.md (the Santa Iria cypress photo ask in r/lisbon, the Grizzly Giant comment in r/marijuanaenthusiasts). Because that batch waits for his word, I left the mail batch and the archive asks alone tonight.
+Nothing else was open: enrichment says nothing to do, no recognition lines are stuck, own supply is paused, and the only page gap is one species page that Google would not see anyway. Photo hunts for Google are off the ladder. One r/lisbon commenter says they will come back with the location of a tree; the next run should check that thread.
+
 ## 2026-10-24, session with Hidde: every website map shows the same tree card
 
 - **Live with this deploy:** a tap on a tree on /explore (every language), the country and state maps and your profile map now shows the same Airbnb card as the city map, instead of jumping straight to the tree page. On a phone the card sits over the map above the sheet's peek; on a desktop it sits beside the pin. The card opens the tree and its heart saves.
