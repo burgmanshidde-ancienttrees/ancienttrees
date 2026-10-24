@@ -6,10 +6,10 @@ A reply to five of them below. One sentence that answers what was asked, a photo
 > Thanks! Turns out it's a Ficus virens, apparently 10 metres round. Added it: ancienttrees.app/palermo/the-white-fig-of-villino-favaloro
 
 **SuccoDiFruttaEU** (the Ficuzza oak, ~400 years):
-> That sounds amazing, do you remember roughly where in the forest it is? And if you happen to have a photo I'd love to see it
+> That sounds amazing, Ficuzza is pretty big though, do you remember roughly where it is? Near the hunting lodge, or along a trail? And if you happen to have a photo I'd love to see it
 
 **ohno** (the 2,000-year olive in "Innari"):
-> Where is Innari? I can't find it on the map
+> Found it, the one near Pettineo! Have you been there? I'm trying to work out if you can just walk up to it
 
 **Bjork_piedi_Serj** (a fig in Ortigia, a huge cactus near the Zimmiti shop):
 > Thanks! Do you remember roughly where in Ortigia the ficus is?

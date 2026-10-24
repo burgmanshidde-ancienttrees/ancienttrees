@@ -15,6 +15,19 @@
       "note": "One source so far; not in the MASAF register. Coordinates are the garden, not the trunk: pick the big one of the three. Needs a second source. Photo found 2026-10-23: Commons File:Messina-8015.jpg (CC BY-SA 4.0, GodeNehler, geotag 38.198452, 15.557093 inside the garden): the whole tree in daylight with the information board in front of the trunk, Cadiz standard; looked at. The board settles which of the three this is; the geotag is a GPS fix for the pin. Pages 3 to 5 of the article name four more Messina trees, unread; comments there mention a baobab at the former military hospital on Viale Europa and a tree on Via Garibaldi opposite the garden. 2026-10-23: live as mes_001 in data/cities/messina.json.",
       "status": "published",
       "added": "2026-10-23"
+    },
+    {
+      "name": "The Olive of Innari",
+      "species": "Olive (Olea europaea)",
+      "girth_cm": 460,
+      "height_m": 8.0,
+      "place": "contrada Innari, Pettineo (Messina), about 150 m up, inland from the Tyrrhenian coast",
+      "latitude": 37.969667,
+      "longitude": 14.28525,
+      "source": "reader tip on r/sicily, 2026-10-24 (no name kept): 'There is an olive tree in Innari that's estimated to be 2000 years old.' Regione Siciliana list updated 17.07.2026, row 259, sheet 01/G522/ME/19, 'Olivo di Innari', Pettineo, c/da Innari, 37°58'10.80\" 14°17'06.90\", girth 460 cm (740 at the base), 8 m, urban no. Olive Oil Times (oliveoiltimes.com, 'Sicily monumental olive trees') calls it the island's oldest and largest olive, 2,081 years, 19.6 m round.",
+      "note": "The girths disagree badly (4.6 or 7.4 m on the register, 19.6 m in the magazine); state both if it ships. The 2,000 years is the magazine's and the tipster's, never sharpened. Not in our MASAF import. Access is the open question: a contrada in the olive groves, probably private land; Pettineo runs guided walks among its old olives at its autumn olive festival (Balarm). Needs a source saying a visitor can walk up to it, and a photo. Pettineo's register also lists olives at c/da Maviti, Fontecà and Catena (sheets 02 to 04), a possible small walk.",
+      "status": "open",
+      "added": "2026-10-24"
     }
   ],
   "blocked": [],
