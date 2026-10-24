@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24 later attempt in the 08:34 window: nothing shipped
+
+- No claims standing, inbox empty, READY still 3 own trees without photographs (supply paused), so no write pass. iOS red is still the 30-minute `xcodebuild` hang on the large phone (run 40017321068); needs a Mac session.
+- `photo_hunt.py --recheck` swept 40 trees in the kept set: 0 new candidates. Photo queue holds nothing newly judgeable.
+
 ## 2026-10-24 08:34 window: nothing shipped
 
 - Inbox empty. health.py exit 1 is the same iOS hang plus the push-skipped smoke test. Supply paused, READY is 3 photo-less own trees, so no write pass.
