@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-25 night run, sixteenth attempt: nothing shipped
+
+Sightings inbox empty. health.py: the deploy "skipped" runs are cancelled by newer pushes (one deploy running), and the ios.yml failure is the pill fix the fifteenth attempt pushed, now rebuilding. Reddit harvest and watch found nothing new; the 2 open items (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant) are already drafted and the preview is rebuilt, no mail batch started while that batch waits. Own supply is paused, so READY leads and staged cities were not dispatched.
+
+For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
+
 ## 2026-10-24 night run, fifteenth attempt: one app fix, no trees
 
 The iOS run failed appfit on the new Add a photo pill: its touch target (inset -4 on all sides) put the button's right edge at W-16 against the page's W-20. Now the target grows vertically only (TreeDetail.swift addPhotoRow); not rebuilt here (no Xcode), the next ios.yml run confirms. Site deploy skips were concurrency, one deploy is running. READY leads (3) and every staged city only make trees of our own, which are paused, so no verify or write pass was dispatched. Community drafts unchanged.
