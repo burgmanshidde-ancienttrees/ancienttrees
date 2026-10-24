@@ -16,7 +16,7 @@
   },
   "amsterdam": {
    "impressions": 284,
-   "kept_trees": 8,
+   "kept_trees": 7,
    "trees": 27,
    "place_page": true
   },
@@ -58,8 +58,8 @@
   },
   "palermo": {
    "impressions": 216,
-   "kept_trees": 9,
-   "trees": 21,
+   "kept_trees": 10,
+   "trees": 22,
    "place_page": true
   },
   "oahu": {
@@ -106,7 +106,7 @@
   },
   "brisbane": {
    "impressions": 163,
-   "kept_trees": 2,
+   "kept_trees": 3,
    "trees": 20,
    "place_page": true
   },
@@ -516,37 +516,31 @@
    "impressions": 47,
    "kept_trees": 1,
    "trees": 16,
-   "place_page": false
+   "place_page": true
   },
   "kagoshima": {
    "impressions": 37,
    "kept_trees": 4,
    "trees": 16,
-   "place_page": false
+   "place_page": true
   },
   "oslo": {
    "impressions": 34,
    "kept_trees": 3,
    "trees": 4,
-   "place_page": false
+   "place_page": true
   },
   "bucaco": {
    "impressions": 31,
    "kept_trees": 3,
    "trees": 18,
-   "place_page": false
-  },
-  "leiden": {
-   "impressions": 31,
-   "kept_trees": 1,
-   "trees": 19,
-   "place_page": false
+   "place_page": true
   },
   "manchester": {
    "impressions": 28,
    "kept_trees": 1,
    "trees": 5,
-   "place_page": false
+   "place_page": true
   },
   "charleston": {
    "impressions": 23,
@@ -554,41 +548,35 @@
    "trees": 3,
    "place_page": true
   },
-  "belgrade": {
-   "impressions": 20,
-   "kept_trees": 1,
-   "trees": 5,
-   "place_page": false
-  },
   "miyazaki": {
    "impressions": 20,
    "kept_trees": 1,
    "trees": 8,
-   "place_page": false
+   "place_page": true
   },
   "nuremberg": {
    "impressions": 18,
    "kept_trees": 1,
    "trees": 20,
-   "place_page": false
+   "place_page": true
   },
   "freiburg": {
    "impressions": 17,
    "kept_trees": 1,
    "trees": 8,
-   "place_page": false
+   "place_page": true
   },
   "hamburg": {
    "impressions": 12,
    "kept_trees": 2,
    "trees": 6,
-   "place_page": false
+   "place_page": true
   },
   "dresden": {
    "impressions": 11,
    "kept_trees": 1,
    "trees": 32,
-   "place_page": false
+   "place_page": true
   },
   "amt-neuhaus": {
    "impressions": 0,
@@ -606,9 +594,15 @@
    "impressions": 0,
    "kept_trees": 3,
    "trees": 8,
-   "place_page": false
+   "place_page": true
   },
   "bad-staffelstein": {
+   "impressions": 0,
+   "kept_trees": 1,
+   "trees": 1,
+   "place_page": false
+  },
+  "chatenay-malabry": {
    "impressions": 0,
    "kept_trees": 1,
    "trees": 1,
@@ -618,13 +612,13 @@
    "impressions": 0,
    "kept_trees": 1,
    "trees": 4,
-   "place_page": false
+   "place_page": true
   },
   "munsterland": {
    "impressions": 0,
    "kept_trees": 2,
    "trees": 4,
-   "place_page": false
+   "place_page": true
   },
   "ramsau-bei-berchtesgaden": {
    "impressions": 0,
@@ -634,9 +628,9 @@
   },
   "takachiho": {
    "impressions": 0,
-   "kept_trees": 1,
+   "kept_trees": 2,
    "trees": 5,
-   "place_page": false
+   "place_page": true
   },
   "tangier": {
    "impressions": 0,

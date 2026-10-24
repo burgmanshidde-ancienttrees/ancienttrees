@@ -128,6 +128,31 @@ TRANSLATIONS_OUT = True
 # Place pages of the other cities leave with their trees. Google only, Bing
 # keeps every page in sitemap-bing.xml. 0 restores the roster-wide rule.
 DEMAND_CUT = 50
+# THE READER CUT (Hidde, 2026-10-24: "ik ga liever te ver en voeg langzaam weer
+# dingen toe", two days after the demand cut). Google is asked to show only
+# what holds something a reader gave us: a tree page with reader content
+# (reader_content()), and the place page of a city where at least one tree has
+# it. Every other tree and place page, the frozen-roster exceptions and the
+# pre-09-28 page evidence included, carries the googlebot noindex; Bing keeps
+# them. The home page and the site's own pages are untouched. 106 tree pages in
+# 35 cities qualified the day this was written, against 598 under the demand
+# cut. It grows by itself: a reader's photograph on a tree puts that page back.
+# Let back in steps, the demand cut's cities first (data/index-kept.json still
+# names them, so the depth lanes keep working there). False returns to the
+# demand cut.
+READER_ONLY = True
+
+
+def reader_content(t):
+    """Something on the page only a reader gave us: a photograph unique to us
+    as the lead, a reader's photograph in the strip, or a tree a reader found
+    (through the app or a public tip)."""
+    if unique_photo(t):
+        return True
+    if any((p or {}).get("source") == "contributor" for p in t.get("photos") or []):
+        return True
+    fr = t.get("found_by_reader") or {}
+    return bool(fr.get("sighting_id") or fr.get("tip"))
 
 
 def unique_photo(t):
@@ -260,7 +285,8 @@ def main():
         roster_imps = {}
     t_keep = page_evidence()
 
-    groups = {"fallback": [], "thin_places": [], "question_pages": [], "weak_trees": [], "strict_cut": []}
+    groups = {"fallback": [], "thin_places": [], "question_pages": [], "weak_trees": [], "strict_cut": [],
+              "reader_cut": []}
     kept_thin, a_places = [], []
     total_pages = 0
     nf = os.path.join(ROOT, "data", "noindex.json")
@@ -327,6 +353,10 @@ def main():
                 if strict and low_demand and en_url not in t_keep and not unique_photo(t) \
                         and not (t.get("found_by_reader") or {}).get("sighting_id"):
                     groups["strict_cut"].append(en_url)
+                # The reader cut (2026-10-24): without reader content the
+                # English page leaves Google too, whatever its city earned.
+                if READER_ONLY and not reader_content(t):
+                    groups["reader_cut"].append(en_url)
                 continue
             if RETURN_ENRICHED and INDEX_NEEDS_PHOTO and slug in on_roster and enriched(t, enrich_gaps(t)):
                 en_url = f"{BASE}/{slug}/{ts}"
@@ -337,7 +367,7 @@ def main():
             urls = [f"{BASE}/{slug}/{ts}"] + [f"{BASE}/{lang}/{slug}/{ts}" for lang in langs_real]
             # A tree page readers found before 09-28 stays while it waits
             # for a photograph, if it is still findable on the ground.
-            if INDEX_NEEDS_PHOTO and findable(t):
+            if INDEX_NEEDS_PHOTO and findable(t) and not (READER_ONLY and not reader_content(t)):
                 urls = [u for u in urls if u not in t_keep]
             groups["weak_trees"] += urls
         # 2. Places with one to three trees: the PLACE pages leave the index,
@@ -369,6 +399,13 @@ def main():
             groups["strict_cut"] += [u for u in city_urls if u not in t_keep]
         elif TRANSLATIONS_OUT:
             groups["strict_cut"] += [u for u in city_urls[1:] if u not in t_keep]
+        # 2d. The reader cut (2026-10-24): a place page stays in Google only
+        #     when one of its trees holds reader content, roster or not.
+        if READER_ONLY:
+            if any(reader_content(t) for t in trees):
+                groups["strict_cut"] = [u for u in groups["strict_cut"] if u != city_urls[0]]
+            else:
+                groups["reader_cut"] += city_urls
         # 3. Question pages: ~45 percent template shared with every other
         #    question page and with their own city page. Kept only where
         #    Search Console ever showed one.
@@ -390,6 +427,8 @@ def main():
                 u = f"{BASE}{prefix}{s}"
                 if s not in on_roster and u not in t_keep:
                     groups["strict_cut"].append(u)
+                elif READER_ONLY:
+                    groups["reader_cut"].append(u)
 
     returning.sort(key=lambda r: -r[0])
     take = RETURN_PER_BUILD
@@ -423,10 +462,12 @@ def main():
     # subtraction is what keeps it true if a group ever grows to include one.
     # The strict cut is Google's objection only too (Hidde, 2026-10-22), so it
     # joins the googlebot tag on the same terms.
-    google_side = ("weak_trees", "strict_cut")
+    google_side = ("weak_trees", "strict_cut", "reader_cut")
     others = {u[len(BASE):] for k, v in groups.items() if k not in google_side for u in v}
     google_only = sorted({u[len(BASE):] for k in google_side for u in groups[k]} - others) if GOOGLE_ONLY_WEAK_TREES else []
-    strict_cut = sorted({u[len(BASE):] for u in groups["strict_cut"]})
+    # The reader cut's place and listing pages are Google-only on the same
+    # terms as the strict cut's, so qa's split check reads them from one list.
+    strict_cut = sorted({u[len(BASE):] for u in groups["strict_cut"] + groups["reader_cut"]})
     if returning:
         print(f"finished pages returning to the index this build: {take} of {len(returning)} "
               f"(RETURN_PER_BUILD {RETURN_PER_BUILD}); {len(held_back)} wait for a later build")
@@ -444,13 +485,18 @@ def main():
     # scripts/photo_hunt.py read it in place of the frozen roster, so depth
     # goes to the 101 cities Google is asked to show and not to the 259 the
     # roster named. Rewritten on every run of this script.
+    # The reader cut does not narrow it: the demand cut's cities are the first
+    # step back, so depth keeps going to them.
     kept = {}
+    reader_only = {u[len(BASE):] for u in groups["reader_cut"]} - \
+        {u[len(BASE):] for k, v in groups.items() if k != "reader_cut" for u in v}
+    paths_before = {p for p in paths if p not in reader_only}
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
         slug = os.path.basename(path)[:-5]
         d = json.load(open(path))
         trees = [t for t in d.get("trees") or [] if renderable(t)]
-        n_kept = sum(1 for t in trees if f"/{slug}/{slugify(t['name'])}" not in paths)
-        place_kept = f"/{slug}" not in paths
+        n_kept = sum(1 for t in trees if f"/{slug}/{slugify(t['name'])}" not in paths_before)
+        place_kept = f"/{slug}" not in paths_before
         if n_kept or place_kept:
             kept[slug] = {"impressions": roster_imps.get(slug, 0), "kept_trees": n_kept,
                           "trees": len(trees), "place_page": place_kept}
@@ -467,6 +513,7 @@ def main():
            f"| 3 | Question pages, which repeat their city page's FAQ | {len(set(groups['question_pages']))} |",
            f"| 4 | Tree pages without a photograph (since 2026-10-06), finished pages included since 2026-10-18 (the 2026-10-09 exception for finished pages in a proven city is closed, RETURN_ENRICHED). Out of GOOGLE only since 2026-10-08: Bing, DuckDuckGo and Yahoo keep them, via sitemap-bing.xml | {len(set(groups['weak_trees']))} |",
            f"| 5 | The strict cut (2026-10-22): species, park, collection, state and country pages, place pages of cities off the roster, and every translation of a place or tree page; since 2026-10-22 also the tree pages of cities under {DEMAND_CUT} pre-demotion impressions unless the photograph is ours or a reader found the tree (the demand cut); Google only, Bing keeps them | {len(strict_cut)} |",
+           f"| 6 | The reader cut (2026-10-24): every tree page without reader content and every place page where no tree has it, roster and page evidence included, plus the remaining listing pages; Google only, Bing keeps them | {len(set(groups['reader_cut']))} |",
            f"| | **All, without double counting** | **{len(paths)}** |",
            f"| | of which Google-only (the googlebot tag) | {len(google_only)} |",
            f"| | Pages in the site (city, question, tree, all languages) | {total_pages} |", "",
