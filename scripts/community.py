@@ -72,6 +72,12 @@ def load():
     d.setdefault("seen_posts", [])  # watched threads already queued or skipped
     d.setdefault("after", {})       # sub -> last utc watched
     d.setdefault("items", [])
+    once, seen_ids = [], set()
+    for i in d["items"]:  # one row per id; a repeated row was listed and answered twice
+        if i["id"] not in seen_ids:
+            seen_ids.add(i["id"])
+            once.append(i)
+    d["items"] = once
     return d
 
 
@@ -337,11 +343,17 @@ def main():
         harvest(d)
     if a.watch:
         watch(d)
+    # the same id can sit in the store more than once; a verdict covers every row
     if a.reply:
-        find(d, a.reply[0])["reply"] = a.reply[1]
+        find(d, a.reply[0])
+        for i in d["items"]:
+            if i["id"] == a.reply[0]:
+                i["reply"] = a.reply[1]
     if a.done:
-        i = find(d, a.done[0])
-        i["status"], i["note"] = "done", a.done[1]
+        find(d, a.done[0])
+        for i in d["items"]:
+            if i["id"] == a.done[0]:
+                i["status"], i["note"] = "done", a.done[1]
     save(d)
     if a.open:
         show_open(d)

@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 23:44 window
+
+- Rung 2: the smoke test was red because the new "Add a photo" pill on tree pages was 36px tall at 375px (floor 44). Now 44px on phones (style.css, `.addphoto-btn.tonal`), pushed as 92166dd74. Reader inbox empty. Not yet re-verified by a smoke run; the next smoke run will say.
+- Rung 4: harvested 22 new Reddit comments (r/lisbon, r/sicily). The Sicily tips (Ortigia ficus, Villa Bellini, Agrigento olive) are already leads; 20 items closed with a reason. Two replies drafted. community.py had repeated rows per id, so a verdict closed only one copy and the preview listed the same reply four times; now one row per id and verdicts cover all. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md (the r/lisbon Santa Iria photo asks permission to use it; the Grizzly Giant thread).
+
 ## 2026-10-24, night run, twelfth attempt: nothing shipped
 
 Nothing changed in the product. Same state as the eleventh: no claims, inbox empty, 3 READY leads (Oxford x2, Madrid) held by the supply pause, last real deploy green. For Hidde: paste supabase/tree-notes.sql to clear the Postbox check.
