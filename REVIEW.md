@@ -209,13 +209,3 @@ App half (profile, refused, review-ask, search, signin-email, signin): Settings,
 - WARN APP: search ("lis"), the Species row "Elm" shows the subtitle "the city register lists American Elm, Ulmus amer..." (truncated) where every other row shows a tree count; a sentence explaining our data model is leaking into a result row, and the next row ("Elm, listed as Lombarts' Elm") reads as a duplicate species. A reader cannot tell what either row will open.
 - NOTE APP: signin-email is pixel-identical to signin (the three-button sheet), so the sweep frame does not show the email step it is named for; that screen ships unlooked-at.
 
-## 2026-10-09
-
-Web half: read salt-lake-city (new, 5 trees; title, meta, intro and counts agree, the Liberty Park and Temple Square stories say plainly that no planting date is sourced) and the Temple Square Wych Elm page; scanned seville, barcelona, amsterdam, singapore, munsterland and salt-lake-city for em dashes and banned words, none found.
-
-- WARN /salt-lake-city and every city page (site/src/lib/i18n.ts:500 `visitedOf`, site/src/pages/[city].astro:292): the progress line still reads "0 of 5 visited in Salt Lake City" while today's commit c3f83988 renamed Seen to Collected everywhere and the tick to "Mark as collected". The same page now says Collected on the cards and "visited" in the counter, two words for one act. Suggest "collected in {city}" in all eight languages.
-
-## 2026-10-09 (app half)
-
-App half (paywall, people, photo-viewer, place-pin, profile-edit, profile-signed-in): the paywall says plainly that Plus is not open and nothing is charged, the pin-correction sheet, Find people, the photo viewer with its CC BY-SA credit and Settings (now "0 collected") read clearly and agree with each other. Nothing found.
-
