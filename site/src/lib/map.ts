@@ -4,6 +4,7 @@
 // through the bundled npm package (see site-config.ts's note on MAPLIBRE_JS).
 import {MAPLIBRE_JS, MAPLIBRE_CSS, MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
+import { mapCardJs } from "./map-card-js";
 
 /** MapLibre, loaded without blocking the page.
  *
@@ -293,7 +294,7 @@ export interface CountryMapCity {
   city: string;
   count: number;
   /** pinPriority(): which tree gets the full pin first. */
-  markers: { lat: number; lng: number; url?: string; pr?: number }[];
+  markers: { lat: number; lng: number; url?: string; pr?: number; id?: string }[];
 }
 
 /** Every tree in the country, drawn the way /explore and the app draw them
@@ -313,10 +314,10 @@ export function countryMapScript(cities: CountryMapCity[],
     features: cities.flatMap((c) => c.markers.map((m) => ({
       type: "Feature",
       geometry: { type: "Point", coordinates: [m.lng, m.lat] },
-      properties: { cs: "/" + c.slug, url: m.url ?? "/" + c.slug, pr: m.pr ?? 1 },
+      properties: { id: m.id ?? "", cs: "/" + c.slug, url: m.url ?? "/" + c.slug, pr: m.pr ?? 1 },
     }))),
   };
-  return mapScript(`${PILES_JS}${PINS_JS}
+  return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs()}
 var TREES = atMarkPiles(${JSON.stringify(data)}.features);
 TREES = { type: 'FeatureCollection', features: TREES };
 var map = new maplibregl.Map({
@@ -358,7 +359,10 @@ new ResizeObserver(function() { map.resize(); fit(); }).observe(document.getElem
 map.on('load', function() {
   fit();
   map.addSource('trees', {type: 'geojson', data: TREES});
-  atPinLayers(map, 'trees', 'tree', function(p) { window.location.href = p.url; }, null, null);
+  // A pin or a dot shows the tree's card, the same as on every map (map-card-js.ts).
+  var openCard = null;
+  atPinLayers(map, 'trees', 'tree', function(p, c) { if (openCard) openCard(p, c); }, null, null);
+  openCard = atCirclePinCard(map, 'trees', 'tree');
 });
 `);
 }
@@ -396,13 +400,13 @@ export interface ExploreCityRow {
  * register layer fetched separately. Ported from the
  * inline `script` string in build_explore_page(), build_site.py:4641-4805. */
 export function exploreMapScript(features: ExploreTreeFeature[], cities: ExploreCityRow[],
-                                 species: string[] = []): string {
+                                 species: string[] = [], lang = "en"): string {
   const geojson = JSON.stringify({ type: "FeatureCollection", features });
   const citiesJson = JSON.stringify(cities);
   const speciesJson = JSON.stringify(species);
   return (
     mapScript(
-    `${PILES_JS}${PINS_JS}
+    `${PILES_JS}${PINS_JS}${mapCardJs(lang)}
 var DATA = ${geojson};
 var CITIES = ${citiesJson};
 var SPECIES = ${speciesJson};
@@ -575,10 +579,12 @@ function initTreeLayers() {
   // later". The 'now' property still travels in DATA, so bringing it back is
   // a halo layer, its requestAnimationFrame loop and the two gold cases on
   // the tree layer (git history has all three).
-  // A pin or a dot opens its tree, as in the app (TreeMap.swift onSelectTree,
-  // and the city page since 2026-10-04). The popup this replaced was a third
-  // way of showing a tree, with its own links and its own Save pill.
-  atPinLayers(map, 'trees', 'tree', function(p) { if (p.url) { window.location.href = p.url; } }, null, null);
+  // A pin or a dot shows its tree's card, the one every map shows
+  // (map-card-js.ts, Hidde 2026-10-24: the city map and this one are one
+  // thing). It replaced 10-04's jump straight to the tree page.
+  var openCard = null;
+  atPinLayers(map, 'trees', 'tree', function(p, c) { if (openCard) openCard(p, c); }, null, null);
+  openCard = atCirclePinCard(map, 'trees', 'tree');
   // The register layer: officially designated trees from a government
   // register, not our own research. Visually quieter than the curated
   // trees on purpose (small, hollow, grey) so the two layers read as
@@ -692,7 +698,7 @@ renderPanel();
  * like.
  */
 export function myTreesMapScript(): string {
-  return mapScript(`${PILES_JS}${PINS_JS}
+  return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs()}
 var map = new maplibregl.Map({
   container: 'map', style: '${MAP_STYLE}',
   center: [8, 48], zoom: 2.6, minZoom: 1.3,
@@ -714,15 +720,14 @@ function initMine() {
   // tree you saved is still ahead of you. Filled moss for collected, hollow
   // for a favourite, which is the same filled-versus-hollow language the
   // heart itself uses. A pin or a dot opens the tree.
-  // A tree only you have may have no page at all: sharing is what gives it
-  // one, and somebody who turned that off has no url to point at. Straight
-  // to the tree when it has a page, as every other pin does since
-  // 2026-10-04; the name alone when sharing is off and there is no page.
-  atPinLayers(map, 'mine', 'mine-tree', function(p, c) {
-    if (p.url) { window.location.href = p.url; return; }
-    new maplibregl.Popup({offset: 12}).setLngLat(c)
-      .setHTML('<strong>' + p.name + '</strong><br>' + p.city).addTo(map);
-  }, ['!=', ['get', 'got'], 1], function(p) { return p.got !== 1; });
+  // A pin or a dot shows the tree's card, the one every map shows
+  // (map-card-js.ts). A tree only you have may have no page at all: sharing
+  // is what gives it one, so its card carries the name and place and opens
+  // nothing.
+  var openCard = null;
+  atPinLayers(map, 'mine', 'mine-tree', function(p, c) { if (openCard) openCard(p, c); },
+    ['!=', ['get', 'got'], 1], function(p) { return p.got !== 1; });
+  openCard = atCirclePinCard(map, 'mine', 'mine-tree');
   if (pending) { paint(pending); pending = null; }
 }
 

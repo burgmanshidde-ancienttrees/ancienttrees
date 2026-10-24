@@ -272,7 +272,7 @@ const mapScript = countryMapScript(
     count: c.count,
     markers: renderableTrees(c.city).map((t) => {
       const ts = treeSlugsForCity(c.city)[t.id];
-      return { lat: t.location.latitude!, lng: t.location.longitude!, url: ts ? `/${c.slug}/${ts}` : undefined,
+      return { id: t.id, lat: t.location.latitude!, lng: t.location.longitude!, url: ts ? `/${c.slug}/${ts}` : undefined,
                pr: pinPriority(Boolean(usablePhoto(t)), savesOf(t.id)) };
     }),
   })),

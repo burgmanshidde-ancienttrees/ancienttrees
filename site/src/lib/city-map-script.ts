@@ -25,6 +25,7 @@ import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
 import { ui } from "./i18n";
+import { mapCardJs } from "./map-card-js";
 
 // The saved-tree corner of a pin: the cards' own bookmark, filled.
 const PIN_BOOKMARK = icon("bookmark-simple", "fill", "pin-fav-ic");
@@ -157,7 +158,7 @@ export function cityMapScript(
 
   const home = homeBounds(inTown && inTown.length >= 2 ? inTown : markers);
 
-  return mapScript(`${PILES_JS}${PINS_JS}
+  return mapScript(`${PILES_JS}${PINS_JS}${mapCardJs(lang)}
 var markers = ${data};
 // The opening frame: the cluster, not every outlier. See homeBounds().
 var HOME = ${JSON.stringify(home)};
@@ -358,17 +359,8 @@ function setActive(idx, fly, scroll, noSheet) {
 
 // --- a tapped pin -------------------------------------------------------------
 var phoneMq = window.matchMedia('(max-width: 800px)');
-var popEl = null;
 function cardOf(idx) { return document.getElementById('tree-' + (idx + 1)); }
 function hrefOf(card) { var a = card && card.querySelector('.tree-name a'); return a ? a.href : null; }
-// Species and age, the card's own line without the Latin and the place, as
-// the app's place row prints it.
-function metaOf(card) {
-  var b = card && card.querySelector('[data-meta]');
-  var parts = ((b && b.getAttribute('data-meta')) || '').split(' · ');
-  parts[0] = (parts[0] || '').replace(/\\s*\\([^)]*\\)\\s*$/, '');
-  return parts.slice(0, 2).filter(Boolean).join(' · ');
-}
 function clearPin() {
   if (activeIdx >= 0) {
     pins[activeIdx].classList.remove('active');
@@ -376,92 +368,22 @@ function clearPin() {
     activeIdx = -1;
   }
 }
-function closePop() { if (popEl) { popEl.remove(); popEl = null; } document.documentElement.style.removeProperty('--map-pop-lift'); clearPin(); }
-function placePop() {
-  if (!popEl || activeIdx < 0) return;
-  var m = markers[activeIdx];
-  var p = map.project([m.lng, m.lat]);
-  var W = map.getContainer().clientWidth, H = map.getContainer().clientHeight;
-  var w = popEl.offsetWidth, h = popEl.offsetHeight;
-  // A phone: Airbnb's mobile card, the width of the map less 16 a side, at the
-  // bottom of the part of the map the sheet's peek leaves showing.
-  if (phoneMq.matches) {
-    var mr = map.getContainer().getBoundingClientRect();
-    var st = window.atSheetTop ? window.atSheetTop() : null;
-    var bottom = (st !== null ? Math.min(mr.bottom, st) : mr.bottom) - mr.top;
-    popEl.style.left = '16px';
-    popEl.style.top = Math.max(16, bottom - h - 12) + 'px';
-    document.documentElement.style.setProperty('--map-pop-lift', (h + 12) + 'px');
-    return;
-  }
-  // Beside the pin, never over it: right of it when there is room, else left;
-  // kept 16 from every edge of the map.
-  var x = p.x + 36 + w > W - 16 ? p.x - 36 - w : p.x + 36;
-  var y = Math.min(Math.max(16, p.y - h / 2), H - h - 16);
-  popEl.style.left = Math.max(16, x) + 'px';
-  popEl.style.top = y + 'px';
-}
-function showPop(idx) {
-  if (popEl) popEl.remove();
-  var card = cardOf(idx);
-  if (!card) return;
-  popEl = document.createElement('div');
-  popEl.className = 'map-pop' + (phoneMq.matches ? ' map-pop--phone' : '');
-  var copy = card.cloneNode(true);
-  copy.removeAttribute('id');
-  copy.classList.remove('active');
-  popEl.appendChild(copy);
-  var close = document.createElement('button');
-  close.type = 'button';
-  close.className = 'map-pop-close';
-  close.setAttribute('aria-label', ${JSON.stringify(ui(lang).photoClose)});
-  close.innerHTML = ${JSON.stringify(icon("x"))};
-  close.addEventListener('click', function(e) { e.stopPropagation(); closePop(); });
-  // With a photograph the pair floats on it; without one, the save already
-  // sits on the name's row, so the cross joins it there (2026-10-20).
-  var row = copy.classList.contains('tree-card-nophoto') && copy.querySelector('.tree-card-top');
-  if (row) { row.appendChild(close); } else { popEl.appendChild(close); }
-  // The card opens the tree page; its heart still saves, as on every card.
-  popEl.addEventListener('click', function(e) {
-    if (e.target.closest('.heart-card, .map-pop-close, a')) return;
-    var href = hrefOf(card); if (href) window.location.href = href;
-  });
-  map.getContainer().appendChild(popEl);
-  placePop();
-}
-map.on('move', placePop);
-// And when the window changes size, or the card is left hanging off the map.
-map.on('resize', placePop);
-// A tap on the map itself lets the tree go, on both (the sheet's own
-// listener drops a phone's sheet back to the list).
-map.on('click', function() { if (popEl) closePop(); else if (phoneMq.matches) clearPin(); });
-document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && popEl) closePop(); });
+// THE CARD OF A TAPPED PIN is the one every map shows (map-card-js.ts): this
+// page hands it the tree's own card from the list, and the card lets the pin
+// go when it closes.
+var mapCard = atMapCard(map, { gap: 36, onClose: clearPin });
+// A tap on the map with no card open still lets a phone's pin go (the sheet's
+// own listener drops the sheet back to the list).
+map.on('click', function() { if (!mapCard.isOpen() && phoneMq.matches) clearPin(); });
 
-// A PIN ON A PHONE SHOWS AIRBNB'S CARD (Hidde, 2026-10-24: "de nieuwe preview
-// pinnen a la airbnb zijn er niet op mobile web"), replacing 10-20's sheet that
-// became the tree (Apple Maps; the app keeps that). Airbnb's mobile site: the
-// pin grows, a card with the photograph rises over the bottom of the map, the
-// card opens the listing, a tap on the map lets it go. The sheet drops to its
-// peek first; the map only moves when the pin would sit behind the card.
+// A PIN SHOWS AIRBNB'S CARD on a phone and on a desktop (Hidde, 2026-10-24:
+// "de nieuwe preview pinnen a la airbnb zijn er niet op mobile web"),
+// replacing 10-20's sheet that became the tree (Apple Maps; the app keeps
+// that). On a phone the sheet drops to its peek first (inside mapCard.open).
 function selectTree(idx) {
   var card = cardOf(idx);
-  if (phoneMq.matches) {
-    if (window.atSheetPeek) { window.atSheetPeek(); }
-    setActive(idx, false, false, true);
-    showPop(idx);
-    if (popEl) {
-      var m = markers[idx], mr = map.getContainer().getBoundingClientRect();
-      var cardTop = popEl.getBoundingClientRect().top - mr.top;
-      var p = map.project([m.lng, m.lat]);
-      if (p.y > cardTop - 48 || p.y < 48) {
-        map.easeTo({ center: [m.lng, m.lat], duration: 600,
-                     offset: [0, Math.round(cardTop / 2 - mr.height / 2)] });
-      }
-    }
-  } else {
-    setActive(idx, false, false);
-    showPop(idx);
-  }
+  setActive(idx, false, false, phoneMq.matches);
+  if (card) { mapCard.open(card, [markers[idx].lng, markers[idx].lat], hrefOf(card)); }
 }
 // On a phone the open card's photograph is the way into the tree page, and
 // the cross (.sheet-back, which sheet-js.ts closes the tree on) lets the pin go.
@@ -627,7 +549,7 @@ var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (min-w
 document.querySelectorAll('.tree-card').forEach(function(card, idx) {
   if (canHover) {
     // Not while a pin's card is open: it would move the lit pin away from it.
-    card.addEventListener('mouseenter', function() { if (!popEl) setActive(idx, false, false); });
+    card.addEventListener('mouseenter', function() { if (!mapCard.isOpen()) setActive(idx, false, false); });
   }
 });
 

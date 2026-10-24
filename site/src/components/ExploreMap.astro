@@ -201,7 +201,7 @@ const ICON = {
 };
 
 const searchFormHtml = searchForm("explore", "ex-q", "ex-search");
-const mapScript = exploreMapScript(features, cityRows, speciesList);
+const mapScript = exploreMapScript(features, cityRows, speciesList, lang);
 const scripts = mapScript + SEARCH_WIDGET_JS;
 ---
 <Base title={title} description={description} canonical={canonical} lang={lang} headExtra={mapHead() + hreflangSet("/explore", exploreVariants)} footer={false}>

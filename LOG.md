@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24, session with Hidde: every website map shows the same tree card
+
+- **Live with this deploy:** a tap on a tree on /explore (every language), the country and state maps and your profile map now shows the same Airbnb card as the city map, instead of jumping straight to the tree page. On a phone the card sits over the map above the sheet's peek; on a desktop it sits beside the pin. The card opens the tree and its heart saves.
+- **How it stays one thing:** the tap lives once, in site/src/lib/map-card-js.ts, and every map calls it. qa.py `check_one_tree_card_on_every_map()` fails the deploy if a map builds its own card, opens a popup for a tree, or jumps straight to a page. Tested against the old code: it refuses all five map scripts.
+- Checked through a proxy of the live site at 375px and desktop, on /explore and /lisbon: opening, closing with a map tap, the heart asking to sign in, and the pin released on close. The country and profile maps use the same function as /explore and were not opened in the proxy.
+
 ## 2026-10-24 late window: Reddit queue closed
 
 - Nothing new is live on the site. The 3 READY leads (2 Oxford, 1 Madrid) are our own trees, so they wait under the supply pause (a new tree of our own needs an approved photograph). No claims were standing.

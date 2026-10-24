@@ -320,7 +320,7 @@ export const MY_TREES_JS = `
         }).map(function(row) {
           return { type: 'Feature',
                    geometry: { type: 'Point', coordinates: [row.lng, row.lat] },
-                   properties: { name: titleOf(row),
+                   properties: { id: 'own-' + row.id, name: titleOf(row),
                                  city: 'A tree only you have',
                                  // Its own unlisted page, when there is one.
                                  // A sighting somebody unshared has none, and

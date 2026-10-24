@@ -203,7 +203,7 @@ export const PROFILE_JS = `
         geometry: { type: 'Point', coordinates: [c.x, c.y] },
         // pr: the order the list is built in, collected first, decides which
         // pin shows where two collide (lib/map.ts PINS_JS).
-        properties: { name: c.n, city: c.c || '', url: c.u, got: got[id] ? 1 : 0, pr: features.length }
+        properties: { id: id, name: c.n, city: c.c || '', url: c.u, got: got[id] ? 1 : 0, pr: features.length }
       });
     });
     ourPins = features;

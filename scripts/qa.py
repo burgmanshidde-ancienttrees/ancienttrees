@@ -2382,6 +2382,57 @@ def check_every_map_shows_pins_the_same_way():
     return problems
 
 
+def check_one_tree_card_on_every_map():
+    """A tapped tree on any website map shows the one card from
+    lib/map-card-js.ts, and no map builds its own.
+
+    Hidde, 2026-10-24, after the Airbnb card went onto the city map and not
+    onto /explore: "kun je altijd de city maps en de explore map gelijk houden
+    en hoe zorgen we dat die dingen nooit meer uit elkaar lopen". The pins were
+    already held by check_every_map_shows_pins_the_same_way(); what a TAP did
+    was not, so each map script had its own. Now the interaction is one piece
+    and this refuses three ways back: a map script (lib/*map*.ts) that makes
+    its own .map-pop or a tree Popup, a tree pin whose tap jumps straight to
+    `p.url`, and a map script that draws tree pins without carrying
+    mapCardJs() and calling the shared card.
+
+    Removing this needs Hidde."""
+    problems = []
+    lib = ROOT / "site" / "src" / "lib"
+    shared = lib / "map-card-js.ts"
+    if not shared.exists() or "function atMapCard(" not in shared.read_text():
+        return ["lib/map-card-js.ts no longer defines atMapCard: the one tapped-tree card is gone"]
+    for f in sorted(lib.glob("*map*.ts")):
+        if f == shared:
+            continue
+        src = f.read_text()
+        lines = src.splitlines()
+        for i, line in enumerate(lines, 1):
+            if re.search(r"""className\s*=\s*['"]map-pop""", line):
+                problems.append("%s:%d builds its own map card; use atMapCard (map-card-js.ts)" % (f.name, i))
+            # The register layer's popup stays: those dots have no tree page.
+            if "maplibregl.Popup" in line and "'register'" not in "\n".join(lines[max(0, i - 6):i]):
+                problems.append("%s:%d opens a MapLibre popup for a tree; use the shared card" % (f.name, i))
+            if re.search(r"location\.href\s*=\s*p\.url", line):
+                problems.append("%s:%d a tree pin jumps straight to its page; it shows the shared card" % (f.name, i))
+        # Every function that draws tree pins carries the shared card.
+        # (Split at each export: the bodies are template strings full of
+        # their own braces.)
+        for part in re.split(r"\n(?=export )", src):
+            m = re.match(r"export function (\w+)", part)
+            if not m:
+                continue
+            name, body = m.group(1), part
+            trees = re.search(r"atPinLayers\(map, '(trees|mine)'", body) or "pin-tree" in body
+            if not trees:
+                continue
+            if "${mapCardJs(" not in body:
+                problems.append("%s: %s draws tree pins without mapCardJs()" % (f.name, name))
+            if "atCirclePinCard(" not in body and "atMapCard(" not in body:
+                problems.append("%s: %s never opens the shared card" % (f.name, name))
+    return problems
+
+
 def check_the_noindex_split_holds():
     """Pages Google alone is asked not to list carry the googlebot tag and only
     that; everything else on the noindex list carries the generic robots tag;
@@ -3225,6 +3276,7 @@ def main():
         check_an_organisation_beside_a_name_was_asked_for,
         check_app_crashes_reach_a_person,
         check_every_map_shows_pins_the_same_way,
+        check_one_tree_card_on_every_map,
     ]
     if args.source_only:
         # The photo checks are left out on purpose: they read every image in
