@@ -1956,7 +1956,8 @@ struct TreeDetail: View {
             .sheet(isPresented: $noteSignIn, onDismiss: { if account.isSignedIn { openNote() } }) {
                 SignInSheet(reason: .feedback, localCount: 0)
             }
-            .accessibilityIdentifier("tree-notes")
+            // No identifier on the stack: one there is inherited by every
+            // child and hides the button's own (seen in SignedOutWalk).
         }
     }
 

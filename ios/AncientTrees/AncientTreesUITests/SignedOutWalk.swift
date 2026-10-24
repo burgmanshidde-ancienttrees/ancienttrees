@@ -71,7 +71,9 @@ final class SignedOutWalk: XCTestCase {
 
     func testNoteAsks() {
         // "Leave a note for the next visitor" (2026-10-24), under the story.
-        let app = launch(["-tree=ams_001"])
+        // -notesdemo: the block hides itself while the server has no notes
+        // function (TreeNotes.gone), and the runner has no server.
+        let app = launch(["-tree=ams_001", "-notesdemo"])
         let b = app.descendants(matching: .any)["tree-note-ask"].firstMatch
         XCTAssertTrue(b.waitForExistence(timeout: 10), "the note button is not on the tree page")
         app.swipeUp(); app.swipeUp()
