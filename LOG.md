@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 sixth attempt: nothing shipped
+
+Nothing changed in the product. No claims standing, inbox empty, READY is 3 own leads (oxford 2, madrid 1) held by the supply pause. health.py's skipped builds (log-only pushes) and Postbox failure were already answered; a deploy dispatched 16:49 is still running. No new angle on any rung, so I did not repeat earlier work.
+
 ## 2026-10-24 17:09 window (fifth attempt): nothing shipped
 
 Nothing changed in the product. The inbox is empty, and health.py's 'skipped' builds and the Postbox failure are the ones already answered. Own supply is paused and READY is still 3 own leads. `private_store.py pull` brought back the Reddit queue with 17 open items, duplicates again, though the harvest found 0 new comments. None carries a tree tip, and the r/lisbon commenter has still not posted a location. I did not re-close the queue, because the next pull restores it. The queue and the pull need a fix: `--done` loses its effect once a pull restores the duplicates. For Hidde: the 2 Reddit replies in drafts/batch-community-preview.md still wait.
