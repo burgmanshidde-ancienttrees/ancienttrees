@@ -70,7 +70,7 @@ final class SignedOutWalk: XCTestCase {
     }
 
     func testNoteAsks() {
-        // "Leave a note for the next visitor" (2026-10-24), under the story.
+        // "Write a note" (2026-10-25), inside the grey empty card under the story.
         // -notesdemo: the block hides itself while the server has no notes
         // function (TreeNotes.gone), and the runner has no server.
         let app = launch(["-tree=ams_001", "-notesdemo"])

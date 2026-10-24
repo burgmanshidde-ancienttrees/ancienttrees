@@ -3649,6 +3649,8 @@ body:has(form.hero-search) .nav-search, body:has(form.ex-search) .nav-search { d
 .td-notes-empty-act .addphoto-btn, .td-notes-btns .addphoto-btn { min-height: 44px; height: 44px; padding: 0 1.1rem;
   display: inline-flex; align-items: center; font-size: 15px; }
 .td-notes-empty-act .addphoto-btn { background: #fff; }
+.td-note-ask { gap: 8px; color: var(--ink); }
+.td-note-ask .ic { width: 18px; height: 18px; flex: none; }
 .td-notes-btns { margin-top: 12px; }
 .td-notes-btns:empty { display: none; }
 .td-notes[hidden] { display: none; }

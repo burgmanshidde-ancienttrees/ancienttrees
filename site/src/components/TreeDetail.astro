@@ -329,7 +329,7 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
       <section class="td-section td-notes" id="td-notes" data-tree={tree.id} data-near={nearNotesJson}
         data-yours={U.noteYours} data-visitor={U.noteVisitor} data-none={U.notesNone} data-borrowed={U.notesBorrowed}
         data-signin={U.noteSignIn} data-saving={U.noteSaving} data-failed={U.noteFailed} data-add={U.noteAdd}
-        data-save={U.noteSave} data-shown-as={U.noteShownAs("{name}")} data-shown-anon={U.noteShownAnon}
+        data-save={U.noteSave} data-write={U.noteWrite} data-edit-mine={U.noteEditMine} data-shown-as={U.noteShownAs("{name}")} data-shown-anon={U.noteShownAnon}
         data-leaf-icon={icon("leaf", "fill")}>
         <h2>{U.notesHeading}</h2>
         <div class="td-notes-body">
@@ -347,7 +347,7 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
             <p class="td-notes-empty-t">{U.notesEmptyTitle}</p>
             <p class="td-notes-empty-s">{U.notesEmptyAsk}</p>
             <div class="td-notes-empty-act">
-              <button type="button" class="addphoto-btn quiet td-note-ask" id="td-note-ask">{U.noteWrite}</button>
+              <button type="button" class="addphoto-btn quiet td-note-ask" id="td-note-ask"><Fragment set:html={icon("note-pencil", "regular")} /><span class="td-note-ask-l">{U.noteWrite}</span></button>
             </div>
           </div>
         </div>

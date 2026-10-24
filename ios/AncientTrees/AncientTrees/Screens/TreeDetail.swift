@@ -802,15 +802,23 @@ struct TreeDetail: View {
                             .clipped()
                             .tag(i)
                         }
+                        // THE LAST PAGE ASKS (Hidde, 2026-10-25: "the grey swipe
+                        // card was fine ... a good interaction that didnt break
+                        // the page"). A grey photograph-sized card, the app's
+                        // surfaceMuted tile, the same as the website's.
+                        addPhotoPage.tag(tree.shots.count)
                       }
                       // Dots, one per photograph, the way AllTrails shows a
                       // trail's photos (Hidde, 2026-10-13: "i like the
                       // alltrails design better which shows dots"). The system
                       // page control, so VoiceOver gets it for free; none for
                       // a single photograph.
-                      .tabViewStyle(.page(indexDisplayMode: tree.shots.count > 1 ? .always : .never))
-                      .indexViewStyle(.page(backgroundDisplayMode: .never))
+                      // Our own dots since 2026-10-25, the website's: white on
+                      // a photograph, ink on the grey add page, where the
+                      // system's white dots vanished.
+                      .tabViewStyle(.page(indexDisplayMode: .never))
                     }
+                    .overlay(alignment: .bottom) { pageDots.padding(.bottom, 12) }
                     .clipped()
                     // Tapping the photograph opens it, which is what every
                     // photograph in every app does and what this one did not.
@@ -819,7 +827,7 @@ struct TreeDetail: View {
                     // taps meant for the story below it, which is the fault
                     // TreeCard records at the top of this file's sibling.
                     .contentShape(.rect)
-                    .onTapGesture { photoAt = shotAt; showingPhoto = true }
+                    .onTapGesture { if shotAt < tree.shots.count { photoAt = shotAt; showingPhoto = true } }
                     .accessibilityAddTraits(.isButton)
                     .accessibilityIdentifier("tree-photo-open")
                     // The way to the map, in the corner a card already trained
@@ -843,7 +851,23 @@ struct TreeDetail: View {
                     }
                     // No camera over a photograph that is already there
                     // (Hidde, 2026-10-13: "feels a bit big and takes up prime
-                    // space"). It is addPhotoRow, under the story.
+                    // space"). It is addPhotoRow, on the footer line below.
+                // THE PHOTOGRAPH'S FOOTER LINE CARRIES THE ADD (Hidde,
+                // 2026-10-25: "integrate the button better"). Google Maps' tonal
+                // pill directly under the photographs; right-aligned on the
+                // page's edge, as the website puts it opposite the credit. It
+                // steps aside in place while the add page shows.
+                HStack(spacing: 0) {
+                    Spacer(minLength: 0)
+                    addPhotoRow
+                        .opacity(shotAt >= tree.shots.count ? 0 : 1)
+                        .allowsHitTesting(shotAt < tree.shots.count)
+                }
+                .padding(.horizontal, 20)
+                .padding(.top, 2)
+                // The page's own 20 above the name would leave 30 between pill
+                // and name; the website has 15 (measured 2026-10-25). Pull in.
+                .padding(.bottom, -11)
 
             }
         } else if mine == nil {
@@ -1894,10 +1918,10 @@ struct TreeDetail: View {
 
     /// komoot's Tips and AllTrails' reviews in shape (CONVENTIONS.md, "Notes
     /// from visitors on a tree page"): one note per person per tree, dated,
-    /// live at once, no replies or likes. Empty: the nearest tree's real note,
-    /// faded, with the line that says whose tree it is (Airbnb); nothing
-    /// nearby, a ghost example (Apple HIG: show what the content will look
-    /// like). One button, the guidance inside the sheet.
+    /// live at once, no replies or likes. Empty: one grey card, his words and
+    /// the button inside it, holding the nearest tree's real note when there
+    /// is one (Airbnb). Once there are notes the button sits under them. The
+    /// guidance is inside the sheet.
     @ViewBuilder private var notesSection: some View {
         if !notes.gone {
             VStack(alignment: .leading, spacing: 10) {
@@ -1914,45 +1938,52 @@ struct TreeDetail: View {
                     noteCard(body: n.body, date: n.date, name: n.author_name ?? "A visitor",
                              avatar: n.author_avatar, initial: n.author_name?.first, mine: false)
                 }
-                if here.isEmpty, notes.mine == nil, notes.loaded {
-                    if let b = notes.borrowed(near: nearIds),
-                       let from = nearbyTrees.first(where: { $0.id == b.tree_id }) {
-                        Text("Nobody has written about this tree yet. Nearby, at \(from.name), a visitor left this:")
-                            .font(.footnote)
-                            .foregroundStyle(Brand.inkSoft)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Button { navigator.push = .tree(from.id) } label: {
-                            noteCard(body: b.body, date: b.date, name: b.author_name ?? "A visitor",
-                                     avatar: b.author_avatar, initial: b.author_name?.first, mine: false)
-                                .opacity(0.85)
-                        }
-                        .buttonStyle(.plain)
-                        .accessibilityLabel("A note on \(from.name)")
-                    } else {
-                        // Never styled like a real note: dashed, no fill, italic.
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Nobody yet. A note looks like this:")
-                                .font(.caption).foregroundStyle(Brand.inkSoft)
-                            Text("Best seen from the north side around four, when the sun comes through the leaves.")
-                                .font(.system(size: 15)).italic()
+                // EMPTY: ONE GREY CARD WITH THE ASK INSIDE (Hidde, 2026-10-25:
+                // "a grey card like the cards are in app when you have not
+                // bookmarked a tree yet"; "the button should be where the
+                // eventual photo or note ends up"). His words for the ask. The
+                // nearest tree's real note, when there is one, sits in the card.
+                if here.isEmpty, notes.mine == nil {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Image(systemName: "text.bubble")
+                            .font(.system(size: 22, weight: .regular))
+                            .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                            .padding(.bottom, 6)
+                            .accessibilityHidden(true)
+                        Text("No notes yet")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundStyle(Brand.ink)
+                        if notes.loaded, let b = notes.borrowed(near: nearIds),
+                           let from = nearbyTrees.first(where: { $0.id == b.tree_id }) {
+                            Text("Nearby, at \(from.name), a visitor left this:")
+                                .font(.system(size: 14))
+                                .foregroundStyle(Brand.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                            Button { navigator.push = .tree(from.id) } label: {
+                                noteCard(body: b.body, date: b.date, name: b.author_name ?? "A visitor",
+                                         avatar: b.author_avatar, initial: b.author_name?.first, mine: false,
+                                         onGrey: true)
+                                    .opacity(0.85)
+                            }
+                            .buttonStyle(.plain)
+                            .padding(.top, 6)
+                            .accessibilityLabel("A note on \(from.name)")
+                        } else {
+                            Text("Did you visit the tree? Leave a note for the next visitor.")
+                                .font(.system(size: 14))
                                 .foregroundStyle(Brand.inkSoft)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
-                        .padding(.horizontal, 14).padding(.vertical, 12)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Brand.hairline, style: StrokeStyle(lineWidth: 1, dash: [4, 3])) }
-                        .accessibilityHidden(true)
+                        noteButton(onGrey: true)
+                            .padding(.top, 10)
                     }
+                    .padding(.horizontal, 16).padding(.top, 20).padding(.bottom, 16)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+                } else {
+                    noteButton(onGrey: false)
+                        .padding(.top, 2)
                 }
-                // The quiet pills side by side, as Google Maps keeps Add a
-                // photo and Write a review together under a place.
-                // The photo ask leads and is the filled pill (Hidde, 2026-10-24:
-                // "de add photo moet meer aandacht krijgen"); the note is quiet.
-                FlowRow(spacing: 10) {
-                    if tree.photo != nil { addPhotoRow }
-                    noteButton
-                }
-                .padding(.top, 2)
             }
             .task(id: tree.id + (account.session?.userId ?? "")) {
                 await notes.load(tree: tree.id, near: nearIds, token: await account.freshToken())
@@ -1975,7 +2006,7 @@ struct TreeDetail: View {
     /// leaf for "A visitor"), the name at 13 semibold, the date in caption
     /// grey, the words at 16. Yours on the moss tint.
     private func noteCard(body: String, date: Date, name: String, avatar: String?,
-                          initial: Character?, mine: Bool) -> some View {
+                          initial: Character?, mine: Bool, onGrey: Bool = false) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(spacing: 8) {
                 ZStack {
@@ -2010,20 +2041,21 @@ struct TreeDetail: View {
         }
         .padding(.horizontal, 14).padding(.vertical, 12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(mine ? Brand.mossTint : Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+        .background(mine ? Brand.mossTint : onGrey ? Brand.surface : Brand.surfaceMuted, in: .rect(cornerRadius: 14))
     }
 
     /// The one ask, a quiet pill like addPhotoRow (Hidde, 2026-10-24: "the
     /// text and button dont really work together this way"): the guidance is
     /// inside the sheet.
-    private var noteButton: some View {
+    private func noteButton(onGrey: Bool) -> some View {
         Button { openNote() } label: {
-            Label(notes.mine == nil ? "Leave a note for the next visitor" : "Edit your note",
+            Label(notes.mine == nil ? "Write a note" : "Edit your note",
                   systemImage: "square.and.pencil")
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(Brand.ink)
                 .padding(.horizontal, 18)
                 .frame(minHeight: 44)
+                .background(onGrey ? Brand.surface : Color.clear, in: .capsule)
                 .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
                 .contentShape(.capsule)
         }
@@ -2180,19 +2212,78 @@ struct TreeDetail: View {
     /// below the description; neither lays it over the header image
     /// (CONVENTIONS.md, "Add a photo on a place that has one"). A tree with no
     /// photograph keeps addPhotoButton in its empty frame. Same as the website.
+    private func startAddPhoto() {
+        navigator.collectAbout = tree.name; navigator.collectTree = tree.id
+        navigator.collectAddsPhoto = true; navigator.collectNearby = true
+    }
+
+    /// Since 2026-10-25 Google Maps' tonal pill ("+ Add photos & videos",
+    /// read that day) on the photograph's footer line, 36 points like the
+    /// website's; the 44 point touch target comes from the content shape.
     private var addPhotoRow: some View {
-        Button { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
+        Button { startAddPhoto() } label: {
             Label("Add a photo", systemImage: "camera")
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(Brand.onMoss)
-                .padding(.horizontal, 18)
-                .frame(minHeight: 44)
-                .background(Brand.moss, in: .capsule)
-                .contentShape(.capsule)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Brand.moss)
+                .padding(.horizontal, 14)
+                .frame(height: 36)
+                .background(Brand.mossTint, in: .capsule)
+                .contentShape(.rect.inset(by: -4))
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("tree-add-photo")
         .accessibilityLabel("Add a photograph of this tree")
+    }
+
+    /// One dot per page, the add page included (AllTrails' dots, Hidde
+    /// 2026-10-13), drawn like the website's .photo-dots.
+    private var pageDots: some View {
+        let onAdd = shotAt >= tree.shots.count
+        return HStack(spacing: 6) {
+            ForEach(0...tree.shots.count, id: \.self) { i in
+                Circle()
+                    .fill(onAdd ? (i == shotAt ? Brand.inkSoft : Brand.ink.opacity(0.25))
+                                : Color.white.opacity(i == shotAt ? 1 : 0.55))
+                    .frame(width: 7, height: 7)
+                    .shadow(color: .black.opacity(onAdd ? 0 : 0.35), radius: 1)
+            }
+        }
+        .allowsHitTesting(false)
+        .accessibilityHidden(true)
+    }
+
+    /// The hero's last page: the ask where the photographs are.
+    private var addPhotoPage: some View {
+        VStack(spacing: 6) {
+            Image(systemName: "camera")
+                .font(.system(size: 30, weight: .regular))
+                .foregroundStyle(Brand.inkSoft.opacity(0.45))
+                .padding(.bottom, 4)
+            Text("Your photo here")
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(Brand.ink)
+            Text("Seen this tree? Show the next visitor how it looks.")
+                .font(.system(size: 14))
+                .foregroundStyle(Brand.inkSoft)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 250)
+            Button { startAddPhoto() } label: {
+                Text("Add a photo")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Brand.moss)
+                    .padding(.horizontal, 18)
+                    .frame(minHeight: 44)
+                    .background(Brand.surface, in: .capsule)
+                    .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                    .contentShape(.capsule)
+            }
+            .buttonStyle(.plain)
+            .padding(.top, 10)
+            .accessibilityIdentifier("tree-add-photo-page")
+        }
+        .padding(24)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Brand.surfaceMuted)
     }
 
     /// One action in the bar, drawn as a circle. Same 52 points, same border

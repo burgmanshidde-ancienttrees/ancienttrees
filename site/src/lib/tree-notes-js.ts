@@ -43,6 +43,9 @@ export const TREE_NOTES_JS = `
   var ghost = body.innerHTML;
   function placeAsk() {
     if (!askBtn) return;
+    // The app's words: "Edit your note" once you have one.
+    var l = askBtn.querySelector('.td-note-ask-l');
+    if (l) l.textContent = own ? T('edit-mine') : T('write');
     var act = body.querySelector('.td-notes-empty-act');
     (act || btnsBox || sec).appendChild(askBtn);
   }

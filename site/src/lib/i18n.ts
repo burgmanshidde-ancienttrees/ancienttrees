@@ -548,6 +548,7 @@ export interface UIStrings {
   notesEmptyTitle: string;
   notesEmptyAsk: string;
   noteWrite: string;
+  noteEditMine: string;
   photoAddTitle: string;
   photoAddAsk: string;
   noteAsk: string;
@@ -863,6 +864,7 @@ const EN: UIStrings = {
   notesEmptyTitle: "No notes yet",
   notesEmptyAsk: "Did you visit the tree? Leave a note for the next visitor.",
   noteWrite: "Write a note",
+  noteEditMine: "Edit your note",
   photoAddTitle: "Your photo here",
   photoAddAsk: "Seen this tree? Show the next visitor how it looks.",
   noteAsk: "Leave a note for the next visitor",
@@ -922,6 +924,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     notesEmptyTitle: "Aún no hay notas",
     notesEmptyAsk: "¿Has visitado el árbol? Deja una nota para el próximo visitante.",
     noteWrite: "Escribir una nota",
+    noteEditMine: "Editar tu nota",
     photoAddTitle: "Tu foto aquí",
     photoAddAsk: "¿Has visto este árbol? Enseña al próximo visitante cómo es.",
     noteAsk: "Deja una nota para el próximo visitante",
@@ -1236,6 +1239,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     notesEmptyTitle: "Ancora nessuna nota",
     notesEmptyAsk: "Hai visitato l'albero? Lascia una nota per il prossimo visitatore.",
     noteWrite: "Scrivi una nota",
+    noteEditMine: "Modifica la tua nota",
     photoAddTitle: "La tua foto qui",
     photoAddAsk: "Hai visto questo albero? Mostra al prossimo visitatore com'è.",
     noteAsk: "Lascia una nota per il prossimo visitatore",
@@ -1550,6 +1554,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     notesEmptyTitle: "Nog geen notities",
     notesEmptyAsk: "Ben je bij de boom geweest? Laat een notitie achter voor de volgende bezoeker.",
     noteWrite: "Schrijf een notitie",
+    noteEditMine: "Bewerk je notitie",
     photoAddTitle: "Jouw foto hier",
     photoAddAsk: "Deze boom gezien? Laat de volgende bezoeker zien hoe hij eruitziet.",
     noteAsk: "Laat een notitie achter voor de volgende bezoeker",
@@ -1864,6 +1869,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     notesEmptyTitle: "Noch keine Notizen",
     notesEmptyAsk: "Warst du am Baum? Hinterlass eine Notiz für den nächsten Besucher.",
     noteWrite: "Notiz schreiben",
+    noteEditMine: "Deine Notiz bearbeiten",
     photoAddTitle: "Dein Foto hier",
     photoAddAsk: "Diesen Baum gesehen? Zeig dem nächsten Besucher, wie er aussieht.",
     noteAsk: "Hinterlass eine Notiz für den nächsten Besucher",
@@ -2178,6 +2184,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     notesEmptyTitle: "Ainda sem notas",
     notesEmptyAsk: "Visitou a árvore? Deixe uma nota para o próximo visitante.",
     noteWrite: "Escrever uma nota",
+    noteEditMine: "Editar a sua nota",
     photoAddTitle: "A sua foto aqui",
     photoAddAsk: "Viu esta árvore? Mostre ao próximo visitante como ela é.",
     noteAsk: "Deixe uma nota para o próximo visitante",
@@ -2492,6 +2499,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     notesEmptyTitle: "Pas encore de notes",
     notesEmptyAsk: "Vous avez vu l'arbre ? Laissez une note au prochain visiteur.",
     noteWrite: "Écrire une note",
+    noteEditMine: "Modifier votre note",
     photoAddTitle: "Votre photo ici",
     photoAddAsk: "Vous avez vu cet arbre ? Montrez au prochain visiteur à quoi il ressemble.",
     noteAsk: "Laissez une note au prochain visiteur",
@@ -2806,6 +2814,7 @@ const TABLE: Record<string, Partial<UIStrings>> = {
     notesEmptyTitle: "まだメモはありません",
     notesEmptyAsk: "この木を訪れましたか？次に訪れる人にメモを残しましょう。",
     noteWrite: "メモを書く",
+    noteEditMine: "メモを編集",
     photoAddTitle: "あなたの写真をここに",
     photoAddAsk: "この木を見ましたか？次に訪れる人にその姿を見せてください。",
     noteAsk: "次に訪れる人にメモを残す",
