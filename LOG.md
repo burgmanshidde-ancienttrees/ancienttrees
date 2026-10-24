@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24, night run, eleventh attempt: nothing shipped
+
+Nothing changed in the product. No claims, inbox empty, 3 READY leads still held by the supply pause, site healthy (the "skipped" builds are log-only pushes; Postbox check is still only the unpasted tree_notes.sql). Reddit queue is the same as the tenth attempt: replies drafted, waiting for Hidde. The window's remaining work is Hidde's to unblock, not a run's.
+
 ## 2026-10-24, night run, tenth attempt (rung 4, community)
 
 - No claims standing. 3 READY leads (Oxford x2, Madrid x1) left unwritten on purpose: own supply is paused under recovery mode.
