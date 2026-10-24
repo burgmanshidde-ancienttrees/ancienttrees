@@ -33,7 +33,10 @@ const photoFields = z
     // scripts/photo_takedown.py keeps the deletion promise by asking whether
     // that account still exists, and it can only ask about an id it can see.
     // preflight refuses one without the other in either direction.
-    source: z.enum(["contributor"]).nullable().optional(),
+    // "mine" is our own photograph (2026-10-24, the Piazza Marina fig): no
+    // licence line, never credited, counts as unique to us in
+    // thin_pages.unique_photo(). Missing here it broke the build.
+    source: z.enum(["contributor", "mine"]).nullable().optional(),
     contributor_user_id: z.string().nullable().optional(),
     // Set when the account behind a published photograph was deleted
     // (2026-09-04). The picture stays under the licence in /terms and the
