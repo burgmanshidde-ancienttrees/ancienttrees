@@ -9,7 +9,7 @@ A reply to five of them below. One sentence that answers what was asked, a photo
 > That sounds amazing, Ficuzza is pretty big though, do you remember roughly where it is? Near the hunting lodge, or along a trail? And if you happen to have a photo I'd love to see it
 
 **ohno** (the 2,000-year olive in "Innari"):
-> Found it, the one near Pettineo! Have you been there? I'm trying to work out if you can just walk up to it
+> Found it, the one near Pettineo! Have you been there? I'm trying to work out if you can just walk up to it, and if you have a photo I'd love to see it
 
 **Bjork_piedi_Serj** (a fig in Ortigia, a huge cactus near the Zimmiti shop):
 > Thanks! Do you remember roughly where in Ortigia the ficus is?
