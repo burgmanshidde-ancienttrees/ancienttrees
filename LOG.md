@@ -11,6 +11,14 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24, night run, tenth attempt (rung 4, community)
+
+- No claims standing. 3 READY leads (Oxford x2, Madrid x1) left unwritten on purpose: own supply is paused under recovery mode.
+- Reddit: harvested and watched, all 17 open items closed. 4 replies drafted for Hidde, left unposted. The Grizzly Giant draft had a wrong history claim (Grant and the 1864 act), so I rewrote it with no claim in it. 8 items closed with `--done`, each with its reason.
+- For Hidde: 4 Reddit replies in drafts/batch-community-preview.md.
+- For Hidde: Postbox check fails only because supabase/tree-notes.sql has never been pasted (sqlcheck: table tree_notes). Paste it and the check goes green.
+- No mail batch started this run.
+
 ## 2026-10-24 20:05 window (ninth attempt): nothing shipped
 
 Nothing changed in the product. Inbox empty. health.py still flags the Postbox check from 11:35; its log shows only sqlcheck naming tree_notes.sql as not pasted (the already-answered case, no site fault). The Reddit harvest found 0 new comments in r/lisbon and r/sicily, so the commenter still has not posted a tree location. READY is the same 3 own leads under the supply pause. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md still wait.
