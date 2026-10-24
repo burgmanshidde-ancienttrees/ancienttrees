@@ -1761,12 +1761,21 @@ def product_section(today):
                 yday_ = (today - datetime.timedelta(days=1)).isoformat()
                 fresh = [r for r in allrows if str(r.get("created_at"))[:10] >= yday_]
                 fresh_trees = sum(1 for r in fresh if r.get("kind") in ("tree", "city"))
-                fresh_fb = len(fresh) - fresh_trees
                 parts = []
                 if fresh_trees:
                     parts.append("%d tree submission%s" % (fresh_trees, "" if fresh_trees == 1 else "s"))
-                if fresh_fb:
-                    parts.append("%d feedback report%s" % (fresh_fb, "" if fresh_fb == 1 else "s"))
+                # Named by kind and place, never "1 feedback report" (Hidde,
+                # 2026-10-25, about a Porto ambassador request that the line
+                # hid: "daar hoort het").
+                kinds = collections.Counter(
+                    (r.get("kind") or "feedback",
+                     r.get("city") if r.get("kind") == "ambassador" else None)
+                    for r in fresh if r.get("kind") not in ("tree", "city"))
+                for (kind, city), n in sorted(kinds.items(), key=lambda kv: str(kv[0])):
+                    what = "ambassador request" if kind == "ambassador" else "%s report" % kind
+                    one = ("an " if what[:1] in "aeiou" else "a ") + what
+                    parts.append((one if n == 1 else "%d %ss" % (n, what))
+                                 + (" for %s" % city if city else ""))
                 ATTENTION.append("%s arrived %s (%d total)"
                                  % (" and ".join(parts) or "a submission", _ago(since), total))
             out.append("- %-12s %d total (%d trees sent, %d feedback), newest %s" % (
@@ -1917,6 +1926,44 @@ def reader_trees_to_inspect(today):
         "- Photographs and the readers' own words: `python3 scripts/inspect_readers.py` (a local page, "
         "never in this public file). Your answer goes in with `python3 scripts/judgement.py --feedback <id> \"...\"`.",
     ])
+
+
+def waiting_for_you_section(today):
+    """What the runs and sessions of the last day left for Hidde, from the
+    "For Hidde:" lines in LOG.md, newest first, each kind once.
+
+    Hidde, 2026-10-25, after a Porto ambassador request and Reddit drafts
+    reached him only through chat: "heb ik nog iets anders belangrijks
+    gemist ... daar hoort het". The runs already write these lines; until
+    now they lived only in LOG.md, which he does not read daily."""
+    path = os.path.join(ROOT, "LOG.md")
+    if not os.path.exists(path):
+        return ""
+    since = (today - datetime.timedelta(days=1)).isoformat()
+    lines, seen, entry_day = [], set(), None
+    for line in open(path, encoding="utf-8"):
+        m = re.match(r"^## (\d{4}-\d{2}-\d{2})", line)
+        if m:
+            entry_day = m.group(1)
+            continue
+        if not entry_day or entry_day < since:
+            continue
+        for hit in re.finditer(r"\*{0,2}for hidde\*{0,2}:\*{0,2}\s*(.+?)(?:(?<=[.)])\s|$)",
+                               line, flags=re.I):
+            text = hit.group(1).strip().strip("*").strip()
+            if not text or text.lower().startswith("nothing"):
+                continue
+            key = re.sub(r"[\d\W]+", " ", text.lower())
+            key = re.sub(r"\b(still|wait|waits|the)\b", "", key).split()
+            key = " ".join(key[:6])
+            if key in seen:
+                continue
+            seen.add(key)
+            lines.append("- %s" % text[:220])
+    if not lines:
+        return ""
+    return "**Waiting for you** (what the runs left for you since %s)\n\n%s" % (
+        since, "\n".join(lines[:8]))
 
 
 def readers_gave_section(today):
@@ -3631,6 +3678,7 @@ def main():
             _weekly(["%s: failed today (%s)." % (fn.__name__, str(e)[:90])])
 
     block(reader_trees_to_inspect, today)
+    block(waiting_for_you_section, today)
     block(readers_gave_section, today)
     block(lambda: "\n".join(judgement_lines()).strip())
     block(searched_section, today)

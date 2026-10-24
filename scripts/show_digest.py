@@ -81,6 +81,76 @@ def readers_words(md, day):
     return text, shown, missing
 
 
+def readers_in_full(day):
+    """Everything a stranger sent since the digest's day, word for word.
+
+    Hidde, 2026-10-25, after a Porto ambassador request reached the digest as
+    "1 feedback report": "ik wil vanaf nu altijd exacte feedback berichten in
+    mn daily digest net als tree inzendingen of notities, niet samenvatten,
+    gewoon geheel aan me geven". DATA.md is public, so the words never go
+    there; this page is local and fetches them. Submissions (every kind,
+    votes included), notes on trees, and the note under a shared app
+    photograph. Never a name or an address."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import inbox
+    from daily_digest import is_ours, TEST_SUBMISSION_IDS
+    key = inbox.load_key()
+    if not key:
+        return "**Everything readers sent, in full**: no database key on this Mac, nothing read."
+    since = urllib.parse.quote(day + "T00:00:00")
+    rows = []
+    try:
+        for r in inbox.get("/rest/v1/submissions?select=id,created_at,kind,city,tree,page,why,"
+                           "location_hint,girth_cm,photo,outcome,reply_text,user_id"
+                           "&created_at=gte.%s&order=created_at.asc" % since, key) or []:
+            if r.get("id") in TEST_SUBMISSION_IDS or is_ours(r.get("user_id")):
+                continue
+            extra = []
+            if r.get("location_hint"):
+                extra.append("where: %s" % r["location_hint"])
+            if r.get("girth_cm"):
+                extra.append("girth: %s cm" % r["girth_cm"])
+            if r.get("photo"):
+                extra.append("with a photograph")
+            if r.get("reply_text"):
+                extra.append("our reply: “%s”" % r["reply_text"])
+            rows.append((r["created_at"], "%s (#%s, %s)" % (r.get("kind") or "?", r["id"], r.get("page") or "web"),
+                         r.get("tree") or r.get("city") or "-", r.get("why") or "", extra,
+                         r.get("outcome") or "open"))
+    except Exception as e:
+        rows.append(("", "submissions", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
+    try:
+        for r in inbox.get("/rest/v1/tree_notes?select=user_id,tree_id,body,hidden,created_at"
+                           "&created_at=gte.%s&order=created_at.asc" % since, key) or []:
+            if is_ours(r.get("user_id")):
+                continue
+            rows.append((r["created_at"], "note on a tree", r.get("tree_id") or "-", r.get("body") or "",
+                         ["hidden"] if r.get("hidden") else [], "live"))
+    except Exception as e:
+        rows.append(("", "tree notes", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
+    try:
+        for r in inbox.get("/rest/v1/sightings?select=user_id,tree_id,name,note,shared,status,updated_at"
+                           "&shared=eq.true&updated_at=gte.%s&order=updated_at.asc" % since, key) or []:
+            if is_ours(r.get("user_id")):
+                continue
+            rows.append((r["updated_at"], "app photograph", r.get("tree_id") or r.get("name") or "-",
+                         r.get("note") or "", [], r.get("status") or ""))
+    except Exception as e:
+        rows.append(("", "app photographs", "-", "database unreadable (%s)" % str(e)[:60], [], ""))
+    head = "**Everything readers sent since %s, in full** (word for word; names and addresses left out)" % day
+    if not rows:
+        return head + "\n\nNothing."
+    out = [head, "", "| When (UTC) | What | Tree or place | Their words, in full | Also | Status |",
+           "|---|---|---|---|---|---|"]
+    for when, what, where, words, extra, status in sorted(rows, key=lambda r: r[0]):
+        cell = lambda s: re.sub(r"\s+", " ", str(s)).replace("|", "/")
+        out.append("| %s | %s | %s | %s | %s | %s |" % (
+            cell(when[:16].replace("T", " ")), cell(what), cell(where),
+            "“%s”" % cell(words) if words.strip() else "(nothing typed)",
+            cell("; ".join(extra)) or "-", cell(status)))
+    return "\n".join(out)
+
+
 def newest_entry():
     txt = open(os.path.join(ROOT, "DATA.md"), encoding="utf-8").read()
     m = re.search(r"^## \d{4}-\d{2}-\d{2} \(previous UTC day\)$", txt, flags=re.M)
@@ -167,6 +237,10 @@ def main():
             md = extra + " (computed now)\n\n" + md if extra.endswith("none.") else \
                 extra.replace("\n\n", " (computed now)\n\n", 1) + "\n\n" + md
     md, shown, missing = readers_words(md, day)
+    try:
+        md = readers_in_full(day) + "\n\n" + md
+    except Exception as e:
+        md = "**Everything readers sent, in full**: failed (%s)\n\n" % str(e)[:90] + md
     if missing < 0:
         print("READER WORDS NOT SHOWN: no database key (~/.ancienttrees-supabase.env); the page still says 'read it in the database'.")
     elif missing:
