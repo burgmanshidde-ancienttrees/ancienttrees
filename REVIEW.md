@@ -23,6 +23,14 @@ suspect; a reviewer that finds fifteen nitpicks a day is worse.
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24
+
+Web half: last 24 hours were mostly night-run logs, the Airbnb-style pin change (map.ts, TreeMap.swift), the Sicily collection and the new Messina fig (reader tip). Read the built Messina tree page and checked the built site for the age-meta fault. Not a Monday, so no corpus or copy audit. Two findings.
+
+- WARN (repeat of 10-22 and 10-23, fifth review to see it) meta description still prints a planting year as an age: a grep of site/dist for `description" content="...(15xx-20xx)-year-old` matches about 110 tree pages (/riverside/roosevelt-palm, /seattle/wedgwood-scarlet-oak, /cardiff/raoul-wallenberg-tree, /cork/1870-magnolia-of-fota, /leiden/old-plane-of-the-plantsoen and more). Hard rule 2 and Verify (derived ages state their basis). Prose findings have not held this for two months; it needs the qa.py check on built HTML first (refuse a four-digit year from 1500 to 2025 directly before "-year-old" in a description meta).
+- WARN /messina/moreton-bay-fig-of-villa-mazzini (meta description, og:description, twitter:description): "A Moreton Bay Fig 25.1 metres round in Centro, Messina" states the register's girth as fact, while the page's own story, intro and FAQ say the girth is disputed (14.5 m by a 2020 paper, 25.13 by the register) and the city meta says "14.5 to 25 metres round". The tree-level meta takes girth_cm alone and drops the conflict (never sharpen a vague source; Verify: conflict is stated). Say "14.5 to 25 metres round" or drop the number. The meta also ends in a bare "…" mid-sentence ("Sicily's register of monumental…").
+- NOTE same page: the story quotes the reader's word as `'miricanu` with an opening quote mark and no closing one, twice (story and city question_context). Reads like a typo; either `'Miricanu'` or the word without quotes. Also og:image points at upload.wikimedia.org although commit a78b2cbcb vendored the photograph onto our own domain; the page may be serving the hotlink for social cards only.
+
 ## 2026-10-23
 
 Web half: read the last 24 hours of commits (demand cut, Sources/AI line, about page, photo vendoring, photo-live mail) and sampled built pages. The "written with AI, readers correct it" line renders on tree pages; no em dashes on about or London; no "free forever" or "no accounts" anywhere in site/dist. Not a Monday, so no corpus or copy audit. One finding, a repeat.
