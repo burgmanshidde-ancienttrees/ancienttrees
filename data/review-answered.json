@@ -114,8 +114,8 @@
       "at": "2026-10-23T03:00:00+00:00"
     },
     "2026-10-24": {
-      "note": "Postbox check failure and the migration line are one cause: supabase/tree-notes.sql not yet pasted by Hidde (already FOR HIDDE). Not fixable by a run.",
-      "at": "2026-10-24T13:16:57+00:00"
+      "note": "pal_001 feed-count failure was the 11:40 and 12:01 builds, before images.ts let source mine through showable(); the 12:25 build with the fix succeeded, later runs skipped (LOG-only commits)",
+      "at": "2026-10-24T13:21:43+00:00"
     }
   }
 }

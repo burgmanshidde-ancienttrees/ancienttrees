@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24, last attempt (Sonnet): nothing shippable, nothing broken
+
+Shipped no trees, on purpose. Own supply is paused, so the 3 READY leads (2 Oxford, 1 Madrid) wait. No claims were standing, no reader photographs waiting, `enrich.py --next` has nothing, and the `archive` outreach group has 0 ready.
+- health.py's "Build and deploy keeps failing" is stale. The pal_001 feed-count failure was the 11:40 and 12:01 builds, before images.ts let source `mine` through `showable()`. The 12:25 build with the fix succeeded and the later runs skipped (LOG-only commits). Answered with `health.py --answer`.
+- Still open, not touched: the Postbox check failure (1.8h old) and one migration not pasted into the database (`python3 scripts/sqlcheck.py` names it). Both need a look by someone with those logins.
+
 ## 2026-10-24, late attempt (Sonnet)
 
 - Shipped no trees: own supply is paused, and the 3 READY leads (2 Oxford, 1 Madrid) are our own trees, so they wait.
