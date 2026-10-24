@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 night run, seventeenth attempt (nothing shipped)
+
+Nothing changed in the product. Sightings inbox is empty, both open Reddit items already carry drafted replies (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant), no claims stood. The 3 READY leads (Oxford x2, Madrid) cannot ship under the paused own supply. Graz and Nuremberg were claimed and released: 0 of 7 and 3 of 16 leads carry a coordinate, so a verify pass would fail on the pin. Both are walls for 48h. Stage 1 and 2 cities have no placed supply either. Open: the iOS workflow shows FAILED since 2026-10-24 (not investigated this attempt).
+
 ## 2026-10-25 night run, sixteenth attempt: nothing shipped
 
 Sightings inbox empty. health.py: the deploy "skipped" runs are cancelled by newer pushes (one deploy running), and the ios.yml failure is the pill fix the fifteenth attempt pushed, now rebuilding. Reddit harvest and watch found nothing new; the 2 open items (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant) are already drafted and the preview is rebuilt, no mail batch started while that batch waits. Own supply is paused, so READY leads and staged cities were not dispatched.
