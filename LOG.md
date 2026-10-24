@@ -45,7 +45,7 @@ Shipped no trees, on purpose. Own supply is paused, so the 3 READY leads (2 Oxfo
 
 **Machinery:** supabase/tree-notes.sql (table, RLS, GRANT, `tree_notes_for()`); scripts/tree_notes.py (`--new --seen`, `--hide <code> <tree_id> "why"`) runs at every knock. **Live first for photographs:** `sightings_publish.py --live-first` at every knock puts a reader's photograph in the strip of a tree that already has a lead (photo-less pages keep the judged path, since the strip's first picture would become the hero); `--unstrip <sighting_id>` undoes one, the judge's approve promotes, hold or reject removes; the digest's machine part lists each with its undo. Schema accepts `source: "mine"` (the Piazza Marina fig had broken every build since 10:01).
 
-**FOR HIDDE:** paste supabase/tree-notes.sql into the Supabase SQL editor once; until then the notes section hides itself on web and app (the function answers 404) and nothing else is affected. The app's tree page is on branch tree-page-app; merged to main after the UI test, carried by the next build.
+Hidde pasted supabase/tree-notes.sql the same afternoon (the first try ran an old tab's SQL and failed on an `events` column; a clean tab succeeded) and the block shows on the ginkgo page. The app's tree page is merged to main, carried by the next build.
 
 **Not done:** the collect sheet's optional "What did you see?" field (CONVENTIONS.md names Strava and Polarsteps as the reference for the next build); the night run does not yet quote a visitor's note into a story (reader_words.py reads sightings only).
 
