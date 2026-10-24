@@ -1952,7 +1952,12 @@ struct TreeDetail: View {
             .task(id: tree.id + (account.session?.userId ?? "")) {
                 await notes.load(tree: tree.id, near: nearIds, token: await account.freshToken())
             }
-            .sheet(isPresented: $writingNote) { noteSheet }
+            .sheet(isPresented: $writingNote) {
+                BrandSheet(title: "A note for the next visitor", message: tree.name,
+                           buttons: noteSheetButtons,
+                           footnote: noteFailed ? "That did not go through. Try again in a moment." : nil,
+                           extra: { noteFields })
+            }
             .sheet(isPresented: $noteSignIn, onDismiss: { if account.isSignedIn { openNote() } }) {
                 SignInSheet(reason: .feedback, localCount: 0)
             }
@@ -2032,49 +2037,51 @@ struct TreeDetail: View {
     }
 
     /// THE NOTE SHEET (CONVENTIONS.md "One button, the guidance inside the
-    /// sheet"; the web's note-dlg): the prompt as the field's placeholder, two
-    /// examples under it, the name and date it will show, Add note. Editing
-    /// your own note reopens it prefilled with Save and Delete.
-    private var noteSheet: some View {
+    /// sheet"; the web's note-dlg): a BrandSheet, presented inline above so
+    /// sheetcheck sees it. The prompt as the field's placeholder, two examples
+    /// under it, the name and date it will show, Add note. Editing your own
+    /// note reopens it prefilled with Save and Delete.
+    private var noteSheetButtons: [SheetButton] {
+        var b: [SheetButton] = [
+            .primary(notes.mine == nil ? "Add note" : "Save note", id: "tree-note-send") { submitNote() },
+        ]
+        if notes.mine != nil {
+            b.append(.destructiveQuiet("Delete note", id: "tree-note-delete") { deleteNote() })
+        }
+        b.append(.quiet("Cancel") { writingNote = false })
+        return b
+    }
+
+    private var noteFields: some View {
         let named = (profiles.myPublic ?? false) ? profiles.me?.display_name : nil
-        return BrandSheet(
-            title: "A note for the next visitor",
-            message: tree.name,
-            buttons: [
-                .primary(notes.mine == nil ? "Add note" : "Save note", id: "tree-note-send") { submitNote() },
-            ] + (notes.mine != nil ? [SheetButton.destructiveQuiet("Delete note", id: "tree-note-delete") { deleteNote() }] : [])
-              + [.quiet("Cancel") { writingNote = false }],
-            footnote: noteFailed ? "That did not go through. Try again in a moment." : nil,
-            extra: {
-                VStack(alignment: .leading, spacing: 10) {
-                    ZStack(alignment: .topLeading) {
-                        TextEditor(text: $noteText)
-                            .font(.system(size: 16))
-                            .scrollContentBackground(.hidden)
-                            .frame(minHeight: 120)
-                            .padding(.horizontal, 10).padding(.vertical, 8)
-                            .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
-                            .accessibilityIdentifier("tree-note-field")
-                        if noteText.isEmpty {
-                            Text("What should they know? Where to stand, when to come, what you noticed.")
-                                .font(.system(size: 16))
-                                .foregroundStyle(Brand.inkSoft.opacity(0.7))
-                                .padding(.horizontal, 15).padding(.vertical, 16)
-                                .allowsHitTesting(false)
-                        }
-                    }
-                    Text("For example: \u{201C}Best seen from the north side around four, when the sun comes through.\u{201D} Or: \u{201C}There was a church on this square until 1755.\u{201D}")
-                        .font(.footnote).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
-                    Text(named.map { "Shown as \($0) with today's date. Public right away." }
-                         ?? "Shown as \u{201C}A visitor\u{201D} with today's date. Public right away.")
-                        .font(.footnote).foregroundStyle(Brand.inkSoft)
-                        .fixedSize(horizontal: false, vertical: true)
+        return VStack(alignment: .leading, spacing: 10) {
+            ZStack(alignment: .topLeading) {
+                TextEditor(text: $noteText)
+                    .font(.system(size: 16))
+                    .scrollContentBackground(.hidden)
+                    .frame(minHeight: 120)
+                    .padding(.horizontal, 10).padding(.vertical, 8)
+                    .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+                    .accessibilityIdentifier("tree-note-field")
+                if noteText.isEmpty {
+                    Text("What should they know? Where to stand, when to come, what you noticed.")
+                        .font(.system(size: 16))
+                        .foregroundStyle(Brand.inkSoft.opacity(0.7))
+                        .padding(.horizontal, 15).padding(.vertical, 16)
+                        .allowsHitTesting(false)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.top, 16)
-                .disabled(noteSaving)
-            })
+            }
+            Text("For example: \u{201C}Best seen from the north side around four, when the sun comes through.\u{201D} Or: \u{201C}There was a church on this square until 1755.\u{201D}")
+                .font(.footnote).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+            Text(named.map { "Shown as \($0) with today's date. Public right away." }
+                 ?? "Shown as \u{201C}A visitor\u{201D} with today's date. Public right away.")
+                .font(.footnote).foregroundStyle(Brand.inkSoft)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.top, 16)
+        .disabled(noteSaving)
     }
 
     private func submitNote() {
