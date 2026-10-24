@@ -67,7 +67,15 @@ export const ADD_PHOTO_JS = `
   // The button's own label, in whichever language rendered it (quiet or not),
   // read back from the DOM rather than guessed, so resetting it after a busy
   // or failed state never reverts to the English default on a translated page.
-  var originalLabel = btn.textContent;
+  // The words live in .addphoto-l so a status never wipes the tonal pill's camera.
+  var label = btn.querySelector('.addphoto-l') || btn;
+  var originalLabel = label.textContent;
+  // A second way in, the phone's last swipe card (TreeDetail.astro): its
+  // button presses this one, so there is still one control and one flow.
+  document.addEventListener('click', function(e) {
+    var b = e.target.closest && e.target.closest('[data-press="addphoto-btn"]');
+    if (b) { e.preventDefault(); btn.click(); }
+  });
 
   function session() {
     // The one answer, verified with the server (collection-js), when it is on the page.
@@ -304,19 +312,19 @@ export const ADD_PHOTO_JS = `
     if (!f || busy) return;
     var s = session();
     if (!s) { say(msgSignIn); return; }
-    busy = true; btn.disabled = true; btn.textContent = msgSending;
+    busy = true; btn.disabled = true; label.textContent = msgSending;
     say('');
     if (collecting && window.atSnack) window.atSnack(msgSending, null, null, true);
     window.atDownsize(f, 1600, function(blob) {
       if (!blob) {
-        busy = false; btn.disabled = false; btn.textContent = originalLabel;
+        busy = false; btn.disabled = false; label.textContent = originalLabel;
         say(msgBadFile);
         if (collecting && window.atSnack) window.atSnack(msgBadFile);
         return;
       }
       var id = uuid();
       var uid = userId(s);
-      if (!uid) { busy = false; btn.disabled = false; btn.textContent = originalLabel;
+      if (!uid) { busy = false; btn.disabled = false; label.textContent = originalLabel;
         say(msgSignIn); if (collecting && window.atSnack) window.atSnack(msgSignIn); collecting = false; return; }
       var path = encodeURIComponent(uid) + '/' + id + '.jpg';
       fetch(SB + '/storage/v1/object/sightings/' + path, {
@@ -359,7 +367,7 @@ export const ADD_PHOTO_JS = `
         collecting = false;
         if (window.at) at.track('tree-photo-sent');
       }).catch(function() {
-        busy = false; btn.disabled = false; btn.textContent = originalLabel;
+        busy = false; btn.disabled = false; label.textContent = originalLabel;
         say(msgFailed);
         if (collecting && window.atSnack) window.atSnack(msgFailed);
         collecting = false;

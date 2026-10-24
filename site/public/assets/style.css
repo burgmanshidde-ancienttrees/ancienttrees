@@ -1073,6 +1073,11 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
 .addphoto-btn.quiet { background: none; color: var(--moss); border: 1px solid var(--cream-dark);
   padding: 0.55rem 1rem; }
 .addphoto-btn[disabled] { opacity: 0.6; cursor: default; }
+/* Google Maps' tonal pill under the photographs ("+ Add photos & videos"), in
+   our moss: the photograph's own footer line, opposite the credit (2026-10-25). */
+.addphoto-btn.tonal { background: var(--moss-light); color: var(--moss); display: inline-flex; align-items: center;
+  gap: 6px; min-height: 36px; height: 36px; padding: 0 14px; font-size: 14px; }
+.addphoto-btn.tonal .ic { width: 18px; height: 18px; flex: none; }
 .addphoto-note { margin: 0.5rem 0 0; font-family: var(--sans); font-size: 13px;
   line-height: 1.45; color: var(--ink-mid); }
 /* Whose photographs we can use, said once under the button (2026-09-24). */
@@ -2522,6 +2527,17 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
   .tree-photo.tree-hero .photo-track::-webkit-scrollbar { display: none; }
   .tree-photo.tree-hero .photo-track > .photo-open { display: block; flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; }
   .tree-photo.tree-hero .photo-track img { width: 100%; max-height: 60svh; }
+  .tree-photo.tree-hero .photo-track > .photo-addslide { display: flex; flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always;
+    flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 24px; box-sizing: border-box;
+    background: #F2F2F2; text-align: center; color: var(--ink); }
+  .photo-addslide .pa-ic { color: rgba(92,99,80,0.45); }
+  .photo-addslide .pa-ic svg { width: 34px; height: 34px; display: block; }
+  .photo-addslide b { font-size: 17px; }
+  .photo-addslide .pa-s { font-size: 14px; line-height: 1.4; color: var(--ink-mid); max-width: 250px; }
+  .photo-addslide .pa-btn { margin-top: 10px; background: #fff; }
+  /* On the grey card the white dots would vanish: ink, as on a light ground. */
+  .tree-photo.at-add .photo-dots i { background: rgba(38,48,30,0.25); box-shadow: none; }
+  .tree-photo.at-add .photo-dots i.on { background: var(--ink-mid); }
   .tree-photo.tree-hero .photo-strip { display: none; }
   /* AllTrails' dots (Hidde, 2026-10-13): one per photograph, the one showing
      filled, centred at the foot of the picture, clear of the map inset. */
@@ -2533,6 +2549,20 @@ main.content-page.has-tree-bar { padding-bottom: 5.4rem; }
   .td-show-map .photo-dots { display: none; }
 }
 .tree-photo.tree-hero figcaption { margin-top: 0.4rem; }
+/* THE FOOTER LINE CARRIES THE ADD (2026-10-25): credit left, the tonal pill
+   right, on the photograph's own edges; a status from the upload breaks onto
+   its own line below. While the phone's last card (the add card) shows, the
+   pill steps aside in place, so nothing jumps. */
+figcaption.pc-row { display: flex; flex-wrap: wrap; align-items: center; column-gap: 12px; min-height: 36px; }
+.tree-photo.tree-hero figcaption.pc-row { margin-top: 8px; }
+figcaption.pc-row .pc-credit { flex: 1 1 auto; min-width: 0; }
+figcaption.pc-row .pc-end, figcaption.pc-row .pc-end .addphoto { display: contents; }
+figcaption.pc-row .addphoto-btn { margin-left: auto; flex: none; }
+figcaption.pc-row .addphoto-note { flex-basis: 100%; text-align: right; }
+.tree-photo.at-add figcaption.pc-row .addphoto-btn { visibility: hidden; }
+/* The phone's last swipe card: a grey photograph-sized ask (the app's
+   surfaceMuted tile). Desktop has the pill and the strip, so no card. */
+.tree-photo.tree-hero .photo-addslide { display: none; }
 .tree-noph.tree-hero { margin: 0 0 1.75rem; }
 /* The hero's full-bleed treatment applies to the drawing too, so a page with
    no photograph has the same shape as a page with one. */
@@ -3604,17 +3634,23 @@ body:has(form.hero-search) .nav-search, body:has(form.ex-search) .nav-search { d
 .td-note-borrowed { opacity: 0.85; }
 .td-notes-none { margin: 0 0 10px; font-size: 14px; line-height: 1.45; color: var(--ink-mid); }
 .td-notes-none a { color: var(--moss); }
-/* The ghost example when nobody has written anywhere nearby: dashed, no fill,
-   italic, never styled like a real note. */
-.td-note-ghost { background: none; border: 1px dashed var(--cream-dark); }
-.td-note-ghost-l { display: block; font-size: 12px; color: var(--ink-light); }
-.td-note-ghost p { font-style: italic; color: var(--ink-light); font-size: 15px; }
-.td-notes-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; align-items: flex-start; }
-.td-notes-btns .addphoto { display: flex; flex-direction: column; margin-top: 0; }
-/* Both pills the same 44 (Hidde, 2026-10-24: "niet goed uitgelijnd"): the
-   photo one filled, the note quiet. */
-.td-notes-btns .addphoto-btn { min-height: 44px; height: 44px; padding: 0 1.1rem; display: inline-flex; align-items: center; font-size: 15px; }
-.td-notes-btns .addphoto-note { font-size: 13px; margin: 6px 0 0; }
+/* EMPTY NOTES: ONE GREY CARD WITH THE ASK INSIDE (Hidde, 2026-10-25). The
+   app's empty Want to visit row (Home.swift wantToVisitEmpty): the grey is
+   Brand.surfaceMuted, #F2F2F2; the faint icon its bookmark at 45 percent.
+   Radius 14 and the 16 inside are the note card's own. */
+.td-notes-empty { background: #F2F2F2; border-radius: 14px; padding: 20px 16px 16px; }
+.td-notes-empty-ic { display: block; margin: 0 0 10px; color: rgba(92,99,80,0.45); }
+.td-notes-empty-ic svg { width: 26px; height: 26px; display: block; }
+.td-notes-empty-t { margin: 0; font-size: 16px; font-weight: 600; color: var(--ink); }
+.td-notes-empty-s { margin: 4px 0 0; font-size: 14px; line-height: 1.45; color: var(--ink-mid); }
+.td-notes-empty .td-notes-none { margin: 4px 0 10px; }
+.td-notes-empty .td-note { background: #fff; }
+.td-notes-empty-act { margin-top: 14px; }
+.td-notes-empty-act .addphoto-btn, .td-notes-btns .addphoto-btn { min-height: 44px; height: 44px; padding: 0 1.1rem;
+  display: inline-flex; align-items: center; font-size: 15px; }
+.td-notes-empty-act .addphoto-btn { background: #fff; }
+.td-notes-btns { margin-top: 12px; }
+.td-notes-btns:empty { display: none; }
 .td-notes[hidden] { display: none; }
 
 /* The note sheet: the field on --surface at radius 14, the examples in 13px. */

@@ -171,8 +171,25 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
       tree-page-js.ts, so there is only ever one map on the page. */}
   <div class="td-hero">
     {photo && photo.url ? (
-      <PhotoFigure photo={photo} photos={p.shots} alt={p.name} lang={p.lang} variant="hero"
+      <PhotoFigure photo={photo} photos={p.shots} alt={p.name} lang={p.lang} variant="hero" addSlide
         widths={[700, 1100, 1600]} sizes="(max-width: 900px) 100vw, 720px">
+        {/* ADD A PHOTO WHERE THE PHOTOGRAPHS ARE (Hidde, 2026-10-25: "it should
+            be somewhere where the photo already is ... you need to see that
+            multiple photos are possible"). Google Maps, read that day: a tonal
+            "+ Add photos & videos" pill directly under the photographs. Ours
+            sits on the photograph's own footer line, opposite the credit, so it
+            adds no row ("integrate the button better"); on a phone the last
+            swipe card asks too ("the grey swipe card was fine"), and the
+            footer pill steps aside while that card shows. The one AddPhoto on
+            the page; the card's button presses it. CONVENTIONS.md, "Add a photo
+            on a place that already has one". */}
+        <AddPhoto slot="caption-end" tonal treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
+        <Fragment slot="add-slide">
+          <span class="pa-ic" aria-hidden="true"><Fragment set:html={icon("camera", "regular")} /></span>
+          <b>{U.photoAddTitle}</b>
+          <span class="pa-s">{U.photoAddAsk}</span>
+          <button type="button" class="addphoto-btn quiet pa-btn" data-press="addphoto-btn">{U.addPhotoBtn}</button>
+        </Fragment>
         <Fragment slot="overlay">
           <a class="td-back" href={p.cityUrl} aria-label={U.goBack} title={U.goBack}><Fragment set:html={icon("arrow-left")} /></a>
           <div class="td-tools">
@@ -306,10 +323,9 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
           sheet (Hidde: "the text and button dont really work together").
           Above Getting there since 16:09 the same day (Hidde: "onder getting
           there te veel niet interessante info om zo hoog te staan, dus
-          omwisselen"). The photo offer leads the row and is the filled pill
-          (Hidde, same message: "de add photo moet meer aandacht krijgen");
-          the note is the quiet one. Google Maps keeps Add a photo and Write a
-          review together under the place. */}
+          omwisselen"). Notes only since 2026-10-25: the photo offer moved to
+          the photographs (Google Maps, read that day, has "Add photos" under
+          the photos and "Write a review" with the reviews, never together). */}
       <section class="td-section td-notes" id="td-notes" data-tree={tree.id} data-near={nearNotesJson}
         data-yours={U.noteYours} data-visitor={U.noteVisitor} data-none={U.notesNone} data-borrowed={U.notesBorrowed}
         data-signin={U.noteSignIn} data-saving={U.noteSaving} data-failed={U.noteFailed} data-add={U.noteAdd}
@@ -317,17 +333,25 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
         data-leaf-icon={icon("leaf", "fill")}>
         <h2>{U.notesHeading}</h2>
         <div class="td-notes-body">
-          <div class="td-note td-note-ghost" aria-hidden="true">
-            <span class="td-note-ghost-l">{U.notesExampleLabel}</span>
-            <p>{U.notesExample}</p>
+          {/* EMPTY: A GREY CARD WITH THE ASK INSIDE (Hidde, 2026-10-25: "you kind
+              of want a grey card like the cards are in app when you have not
+              bookmarked a tree yet"; "the button should be where the eventual
+              photo or note ends up"). The app's empty Want to visit row on
+              Brand.surfaceMuted; Airbnb's "New · 1 review" states the fact in
+              plain words, no made-up example. The words are his: "Did you visit
+              the tree? leave a note for the next visitor." TREE_NOTES_JS keeps
+              the button in this card while the tree has no notes, and moves it
+              under the list once it has. */}
+          <div class="td-notes-empty">
+            <span class="td-notes-empty-ic" aria-hidden="true"><Fragment set:html={icon("chat-text", "regular")} /></span>
+            <p class="td-notes-empty-t">{U.notesEmptyTitle}</p>
+            <p class="td-notes-empty-s">{U.notesEmptyAsk}</p>
+            <div class="td-notes-empty-act">
+              <button type="button" class="addphoto-btn quiet td-note-ask" id="td-note-ask">{U.noteWrite}</button>
+            </div>
           </div>
         </div>
-        <div class="td-notes-btns">
-          {photo && photo.url && (
-            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
-          )}
-          <button type="button" class="addphoto-btn quiet td-note-ask" id="td-note-ask">{U.noteAsk}</button>
-        </div>
+        <div class="td-notes-btns"></div>
       </section>
 
       {/* GETTING THERE: ONE BLOCK WITH A HEADING, as the app draws it (Hidde,

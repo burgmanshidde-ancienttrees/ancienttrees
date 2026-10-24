@@ -11,7 +11,7 @@
 //      from a public profile). The page lists this tree's notes; when there are
 //      none it borrows the nearest other tree's note as the example (Airbnb's
 //      "this host has N reviews", Hidde 2026-10-24: "look at airbnb"), and when
-//      the place has none at all it keeps the ghost example the page rendered.
+//      the place has none at all it keeps the grey empty card the page rendered.
 //   2. Signed in, reads your own row (RLS: own rows only), so your note shows
 //      as "Your note" even when your profile is private, and the sheet opens
 //      prefilled to edit it.
@@ -34,7 +34,19 @@ export const TREE_NOTES_JS = `
   var near = [];
   try { near = JSON.parse(sec.getAttribute('data-near') || '[]'); } catch (e) {}
   var body = sec.querySelector('.td-notes-body');
+  var btnsBox = sec.querySelector('.td-notes-btns');
+  // The one button lives where the next note will appear: inside the grey
+  // empty card while there are none, under the list once there are (Hidde,
+  // 2026-10-25). Taken out before the card is kept as the empty state, so
+  // redrawing the card never makes a second, dead copy of it.
+  if (askBtn && askBtn.parentNode) askBtn.parentNode.removeChild(askBtn);
   var ghost = body.innerHTML;
+  function placeAsk() {
+    if (!askBtn) return;
+    var act = body.querySelector('.td-notes-empty-act');
+    (act || btnsBox || sec).appendChild(askBtn);
+  }
+  placeAsk();
   var T = function(k) { return sec.getAttribute('data-' + k) || ''; };
   var LOCALE = document.documentElement.lang || 'en';
   var dlg = document.getElementById('note-dlg');
@@ -120,26 +132,31 @@ export const TREE_NOTES_JS = `
       var ul = el('div', 'td-notes-list');
       list.forEach(function(c) { ul.appendChild(c); });
       body.appendChild(ul);
+      placeAsk();
       return;
     }
     // Nobody here yet: the nearest neighbour's note, the real thing, faded,
-    // with the line that says whose tree it is; else the ghost example.
+    // with the line that says whose tree it is, inside the same grey card;
+    // else the card as the page rendered it.
     var borrowed = null, from = null;
     for (var i = 0; i < near.length && !borrowed; i++) {
       for (var j = 0; j < rows.length; j++) {
         if (rows[j].tree_id === near[i].id) { borrowed = rows[j]; from = near[i]; break; }
       }
     }
-    if (!borrowed) { body.innerHTML = ghost; return; }
-    var p = el('p', 'td-notes-none');
-    p.appendChild(document.createTextNode(T('none') + ' '));
-    var parts = T('borrowed').split('{tree}');
-    p.appendChild(document.createTextNode(parts[0]));
-    var a = el('a', null, from.name); a.href = from.url;
-    p.appendChild(a);
-    p.appendChild(document.createTextNode(parts[1] || ''));
-    body.appendChild(p);
-    body.appendChild(card(borrowed, false, true));
+    body.innerHTML = ghost;
+    if (borrowed) {
+      var box = body.querySelector('.td-notes-empty');
+      var ask = box && box.querySelector('.td-notes-empty-s');
+      var p = el('p', 'td-notes-none');
+      var parts = T('borrowed').split('{tree}');
+      p.appendChild(document.createTextNode(parts[0]));
+      var a = el('a', null, from.name); a.href = from.url;
+      p.appendChild(a);
+      p.appendChild(document.createTextNode(parts[1] || ''));
+      if (ask) { ask.parentNode.insertBefore(p, ask); ask.parentNode.insertBefore(card(borrowed, false, true), ask); ask.remove(); }
+    }
+    placeAsk();
   }
 
   function load() {

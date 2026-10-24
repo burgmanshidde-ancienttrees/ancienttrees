@@ -16,6 +16,7 @@
 // control had shipped with the English sentences baked into the script,
 // invisible to every translated page).
 import { ui } from "../lib/i18n";
+import { icon } from "../lib/icons";
 interface Props {
   treeId: string;
   treeName: string;
@@ -23,9 +24,14 @@ interface Props {
   lng: number;
   /** The page already shows a photograph, so this is an offer, not a gap. */
   quiet?: boolean;
+  /** Google Maps' tonal pill with a camera ("+ Add photos & videos" under the
+   *  photographs): the tree page's control on the photograph's own footer
+   *  line (2026-10-25, CONVENTIONS.md "Add a photo on a place that already
+   *  has one"). */
+  tonal?: boolean;
   lang?: string;
 }
-const { treeId, treeName, lat, lng, quiet = false, lang = "en" } = Astro.props;
+const { treeId, treeName, lat, lng, quiet = false, tonal = false, lang = "en" } = Astro.props;
 const U = ui(lang);
 ---
 <div class="addphoto" id="addphoto" data-tree-id={treeId} data-tree-name={treeName}
@@ -34,8 +40,8 @@ const U = ui(lang);
      data-msg-badfile={U.addPhotoBadFile} data-msg-thanks={U.addPhotoThanks}
      data-msg-failed={U.addPhotoFailed} data-msg-waiting={U.addPhotoWaiting}
      data-msg-onpage={U.addPhotoOnPage} data-msg-seemine={U.addPhotoSeeMine}>
-  <button type="button" id="addphoto-btn" class={quiet ? "addphoto-btn quiet" : "addphoto-btn"}>
-    {U.addPhotoBtn}
+  <button type="button" id="addphoto-btn" class={tonal ? "addphoto-btn tonal" : quiet ? "addphoto-btn quiet" : "addphoto-btn"}>
+    {tonal && <Fragment set:html={icon("camera", "regular")} />}<span class="addphoto-l">{U.addPhotoBtn}</span>
   </button>
   <input id="addphoto-file" type="file" accept="image/*" hidden />
   {/* The camera directly, for the collect sheet's "Take a photograph". */}

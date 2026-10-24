@@ -58,9 +58,16 @@ interface Props {
   /** "hero" is the full-bleed treatment ported from the app's tree page:
    *  edge to edge on a phone, a fixed crop height, credit underneath. */
   variant?: "inline" | "hero";
+  /** The tree page's ask on the photographs themselves (Hidde, 2026-10-25:
+   *  "it should be somewhere where the photo already is"). A phone gets a
+   *  last swipe card from the "add-slide" slot, which also makes a single
+   *  photograph swipeable so its dots say more can come; every width gets the
+   *  "caption-end" slot on the credit line, opposite the credit. */
+  addSlide?: boolean;
 }
 const { photo, photos, alt, lang = "en", widths = [700, 1100, 1600],
-        sizes = "(max-width: 800px) 100vw, 760px", variant = "inline" } = Astro.props;
+        sizes = "(max-width: 800px) 100vw, 760px", variant = "inline", addSlide = false } = Astro.props;
+const hasCaptionEnd = Astro.slots.has("caption-end");
 const t = ui(lang);
 
 const set: Shot[] = (photos && photos.length ? photos : [photo]).filter((p) => p?.url);
@@ -91,7 +98,8 @@ const leadCredit = shots[0].credit;
 // on a portrait tree that strip pushed the facts off the first screen. The
 // frame takes the lead's shape up to 4:5 (heroFrame, the same answer the app
 // reads from the feed). A desktop keeps the strip under the picture.
-const swipe = variant === "hero" && many;
+const withAdd = variant === "hero" && addSlide;
+const swipe = variant === "hero" && (many || withAdd);
 ---
 <figure class={variant === "hero" ? "tree-photo tree-hero" : "tree-photo"}
   style={variant === "hero" ? `--hero-ar:${heroFrame(lead)}` : undefined}>
@@ -111,19 +119,20 @@ const swipe = variant === "hero" && many;
                alt="" loading="lazy" />
         </button>
       ))}
+      {withAdd && <div class="photo-addslide"><slot name="add-slide" /></div>}
     </div>
     {/* One dot per photograph, the one showing filled: AllTrails' trail
         photos (Hidde, 2026-10-13: "i like the alltrails design better which
         shows dots"). The slides carry the words; the dots are only a sign. */}
-    {swipe && <span class="photo-dots" aria-hidden="true">{shots.map((_, i) => <i class={i === 0 ? "on" : undefined}></i>)}</span>}
+    {swipe && <span class="photo-dots" aria-hidden="true">{shots.map((_, i) => <i class={i === 0 ? "on" : undefined}></i>)}{withAdd && <i></i>}</span>}
     <slot name="overlay" />
   </div>
   {/* The credit under the picture is the credit OF the picture showing, so on
       a phone it changes as the lead is swiped; a licence obliges it. One
       figcaption (a figure takes one) holding a line per photograph; a blank
       line where none is owed, so a swipe never makes the page below it jump. */}
-  {(swipe ? shots.some((s) => s.credit) : leadCredit) && (
-    <figcaption>
+  {((swipe ? shots.some((s) => s.credit) : leadCredit) || hasCaptionEnd) && (
+    <figcaption class={hasCaptionEnd ? "pc-row" : undefined}>
       {(swipe ? shots : shots.slice(0, 1)).map((s, i) => (
         <span class="pc-credit" data-i={i} hidden={i !== 0}>
           {s.credit && s.link && <Fragment>{s.link.before}<a href={s.photo.attribution_url} rel="noopener">{s.link.name}</a>{s.link.after}</Fragment>}
@@ -131,6 +140,7 @@ const swipe = variant === "hero" && many;
           {!s.credit && <Fragment set:html="&nbsp;" />}
         </span>
       ))}
+      {hasCaptionEnd && <span class="pc-end"><slot name="caption-end" /></span>}
     </figcaption>
   )}
 
@@ -205,6 +215,10 @@ const swipe = variant === "hero" && many;
     fig.querySelectorAll<HTMLElement>(":scope > figcaption > .pc-credit").forEach((c) => {
       c.hidden = c.dataset.i !== String(at);
     });
+    // On the add card the footer's own Add a photo steps aside (kept in
+    // place, so nothing jumps): two of the same button never stand together.
+    const last = track.lastElementChild;
+    fig.classList.toggle("at-add", !!last && last.classList.contains("photo-addslide") && at === track.children.length - 1);
   }, { capture: true, passive: true });
 
   document.addEventListener("click", (e) => {
