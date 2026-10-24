@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 night run, fourteenth attempt: nothing shipped
+
+No claims standing. 3 READY leads (Oxford 2, Madrid 1) have no approved photograph, and own supply is paused, so none can go live. Sightings inbox empty. Community queue: 2 open items, both already drafted (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant); preview rebuilt, nothing new to push. Stirling register retry already done on 10-22 and 10-23 with no new angle, left stalled.
+
+For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
+
 ## 2026-10-24 night run, thirteenth attempt (short)
 
 Nothing shipped; no product change. Checked: no claims standing, sighting inbox empty, no new Reddit comments. The 3 READY leads (Oxford x2, Madrid) have no approved photograph and own supply is paused, so they wait. health.py's smoke/deploy flags predate the 44px Add-a-photo fix (92166dd74); the 23:22 deploy succeeded and pushes are skipped by design.
