@@ -2,144 +2,6 @@
  "note": "One record per night run, written by the workflow's own Run health step, never by the run. A run cannot leave this empty by giving up, which is the entire point: on 2026-08-15 four runs ended after nine minutes of a sixty minute window and left no trace at all. 'denials' counts commands the allowlist refused; it read 4 to 25 until 2026-08-15 and has returned null since, because the SDK key it reads went away. Treat a null as a broken instrument, not a zero.",
  "runs": [
   {
-   "started": "2026-09-03T01:11:53+00:00",
-   "date": "2026-09-03",
-   "run_id": "33696142247",
-   "minutes": 73.2,
-   "minutes_basis": "measured",
-   "attempts": 4,
-   "turns": 374,
-   "denials": 28,
-   "denials_source": "permission_denials: Bash(cat), Bash(echo), Bash(env), Bash(for), Bash(git), Bash(if), Bash(ls), Bash(mkdir), Bash(python3), Bash(rm), Bash(test)",
-   "ended": "success",
-   "tokens": 1289025,
-   "claims_held": [
-    "_famous-germany"
-   ],
-   "commits": 34,
-   "cities_touched": 29,
-   "cities": [
-    {
-     "city": "freiburg",
-     "trees": 7
-    },
-    {
-     "city": "stuttgart",
-     "trees": 7
-    },
-    {
-     "city": "heidelberg",
-     "trees": 6
-    },
-    {
-     "city": "taipei",
-     "trees": 4
-    },
-    {
-     "city": "uda",
-     "trees": 3
-    },
-    {
-     "city": "minamialps",
-     "trees": 2
-    },
-    {
-     "city": "nihonmatsu",
-     "trees": 2
-    },
-    {
-     "city": "albersdorf",
-     "trees": 1
-    },
-    {
-     "city": "bad-staffelstein",
-     "trees": 1
-    },
-    {
-     "city": "collm",
-     "trees": 1
-    },
-    {
-     "city": "hainich-national-park",
-     "trees": 1
-    },
-    {
-     "city": "heede",
-     "trees": 1
-    },
-    {
-     "city": "higashiagatsuma",
-     "trees": 1
-    },
-    {
-     "city": "higashine",
-     "trees": 1
-    },
-    {
-     "city": "iga",
-     "trees": 1
-    },
-    {
-     "city": "koenigslutter",
-     "trees": 1
-    },
-    {
-     "city": "koriyama",
-     "trees": 1
-    },
-    {
-     "city": "nagano",
-     "trees": 1
-    },
-    {
-     "city": "nikaho",
-     "trees": 1
-    },
-    {
-     "city": "ofunato",
-     "trees": 1
-    },
-    {
-     "city": "ono",
-     "trees": 1
-    },
-    {
-     "city": "otama",
-     "trees": 1
-    },
-    {
-     "city": "solingen",
-     "trees": 1
-    },
-    {
-     "city": "takayama",
-     "trees": 1
-    },
-    {
-     "city": "tsuruoka",
-     "trees": 1
-    },
-    {
-     "city": "ueda",
-     "trees": 1
-    },
-    {
-     "city": "untermerzbach",
-     "trees": 1
-    },
-    {
-     "city": "enschede",
-     "trees": 0
-    },
-    {
-     "city": "hiroshima",
-     "trees": 0
-    }
-   ],
-   "trees": 51,
-   "logged": true
-  },
-  {
    "started": "2026-09-03T02:26:44+00:00",
    "date": "2026-09-03",
    "run_id": "33705766077",
@@ -24010,6 +23872,25 @@
    "tokens": 417405,
    "claims_held": [],
    "commits": 5,
+   "cities_touched": 0,
+   "cities": [],
+   "trees": 0,
+   "logged": true
+  },
+  {
+   "started": "2026-10-24T17:09:25+00:00",
+   "date": "2026-10-24",
+   "run_id": "40114788374",
+   "minutes": 3.6,
+   "minutes_basis": "measured",
+   "attempts": 4,
+   "turns": 48,
+   "denials": 0,
+   "denials_source": "permission_denials: no names in the record",
+   "ended": "success",
+   "tokens": 304048,
+   "claims_held": [],
+   "commits": 4,
    "cities_touched": 0,
    "cities": [],
    "trees": 0,
