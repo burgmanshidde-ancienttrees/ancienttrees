@@ -11,6 +11,9 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24 night run (02:55): nothing shipped
+
+- Inbox empty, READY still 3 photo-less own trees (supply paused), prepare.py shelf unchanged. health.py exit 1 is the same iOS appfit hang (run 40017321068) plus a skipped smoke test; no source fix possible from Linux. Stirling RETRY not repeated: already stalled twice on 10-23. Nothing new since the sixteenth attempt; waiting on Search Console or a reader's tree.
 ## 2026-10-23 night run, sixteenth attempt: nothing shipped
 
 - No claims standing, inbox empty, READY is 3 photo-less own trees (oxford 2, madrid 1) and `SUPPLY_PAUSED` is True, so no write pass. `enrich.py --next`, `recognise.py --stuck` and `pagegaps.py` all report nothing to do. The 54 "awaiting a writer" trees cannot go live while supply is paused.
