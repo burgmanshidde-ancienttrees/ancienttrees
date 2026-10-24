@@ -236,8 +236,13 @@ def drop_vendored(old_url):
     return removed
 
 
-def apply_to_city(entry, block, as_extra=False):
+def apply_to_city(entry, block, as_extra=False, as_strip=False):
     """Put the photograph on the tree, as the lead or beside it.
+
+    AS_STRIP (2026-10-24, live first): appended to photos[] and nothing else;
+    the lead is not touched. This is the knock's own move for a photograph
+    nobody has looked at yet; the judge's `approve` later promotes it to the
+    lead through the PROMOTION branch below, which takes it out of the strip.
 
     BESIDE THE ONE IT HAD (since 2026-10-23 as the lead, the old lead moving
     into the strip; see READER FIRST below). AS AN EXTRA (2026-09-12, when trees gained photos[]). The choice used to be
@@ -254,6 +259,12 @@ def apply_to_city(entry, block, as_extra=False):
     for t in city.get("trees", []):
         if t.get("id") == entry["tree_id"]:
             old = t.get("photo") or {}
+            if as_strip:
+                extras = t.setdefault("photos", [])
+                urls = {(x or {}).get("url") for x in extras} | {old.get("url")}
+                if block["url"] not in urls:
+                    extras.append(block)
+                break
             if as_extra:
                 extras = t.setdefault("photos", [])
                 # preflight refuses the same url twice, and an `add` verdict
@@ -295,7 +306,7 @@ def apply_to_city(entry, block, as_extra=False):
         if url and url != block["url"]:
             drop_vendored(url)
     # Nothing is replaced by an extra, so nothing may be un-vendored either.
-    return None if as_extra else (old or {}).get("url")
+    return None if (as_extra or as_strip) else (old or {}).get("url")
 
 
 def metres(lat1, lon1, lat2, lon2):
@@ -577,7 +588,107 @@ def address_of(user_id):
 # (drafts/photo-live-mail.md): "Ja, de tekst is goed, zet de mail aan."
 MAIL_WHEN_LIVE = True
 VERDICT_STATUS = {"approve": "published", "add": "published",
-                  "reject": "declined", "hold": "checking"}
+                  "reject": "declined", "hold": "checking",
+                  # In the strip, for everyone, waiting for the look that may
+                  # make it the lead: on the page, so "published" is the truth
+                  # the app tells them.
+                  "strip": "published"}
+
+
+def in_strip(entry):
+    """The file name of this sighting's photograph in the tree's strip, or None.
+
+    Read from the city file, not from the queue: sightings_inbox.py rebuilds
+    the queue on every knock from the rows without a verdict."""
+    path = os.path.join(ROOT, "data", "cities", f"{entry['city_slug']}.json")
+    city = load(path, {"trees": []})
+    for t in city.get("trees", []):
+        if t.get("id") != entry["tree_id"]:
+            continue
+        for x in t.get("photos") or []:
+            if (x or {}).get("sighting_id") == entry["sighting_id"]:
+                return (x.get("url") or "").rsplit("/", 1)[-1] or True
+    return None
+
+
+def unstrip(entry):
+    """Take this sighting's photograph out of the strip again (a hold, a
+    reject, or Hidde's overrule). Returns the url removed, or None."""
+    path = os.path.join(ROOT, "data", "cities", f"{entry['city_slug']}.json")
+    city = load(path, None)
+    if not city:
+        return None
+    gone = None
+    for t in city.get("trees", []):
+        if t.get("id") != entry["tree_id"]:
+            continue
+        kept = []
+        for x in t.get("photos") or []:
+            if (x or {}).get("sighting_id") == entry["sighting_id"]:
+                gone = x.get("url")
+            else:
+                kept.append(x)
+        if t.get("photos") is not None:
+            if kept:
+                t["photos"] = kept
+            else:
+                del t["photos"]
+    if gone:
+        save(path, city, indent=2)
+        drop_vendored(gone)
+    return gone
+
+
+def live_first(queue, today, really):
+    """LIVE FIRST, THEN CHECKED (Hidde, 2026-10-24: "laten we dan de conventie
+    aanhouden", after reading that AllTrails, komoot, iNaturalist, Polarsteps
+    and Untappd publish first and moderate after; CONVENTIONS.md "Notes from
+    visitors on a tree page").
+
+    Every photograph a reader sent of a tree we map goes into that tree's
+    photo strip at the knock that reads it, for everyone, no look taken. The
+    one step that stays behind a look is the promotion to LEAD photograph
+    (this trunk, daylight): the entry stays in the queue, the judge's
+    `approve` promotes it, `add` leaves it where it is, `hold` or `reject`
+    takes it out again (main()). A wrong trunk at the top of a page is the
+    fault that costs trust; a wrong frame in a strip is a report away.
+
+    Only trees that already have a lead: on a photo-less page the strip's
+    first picture IS the hero (usablePhotos), which would make the unlooked-at
+    photograph the lead through the back door. Those keep the old path and
+    are judged within hours. Ours (`mine`) never go up by themselves
+    (2026-09-07)."""
+    n = 0
+    for e in queue:
+        if e.get("mine") or not has_lead(e.get("current_photo")) or in_strip(e):
+            continue
+        src = os.path.join(ROOT, e["file"])
+        if not os.path.exists(src):
+            continue
+        stem = f"{e['tree_id']}-{slugify(e['tree_name'])}"
+        fname = f"{stem}-{e['sighting_id'][:8]}.jpg"
+        try:
+            w, h = write_image(src, os.path.join(PHOTOS, fname))
+        except Exception as ex:
+            print(f"  {e['sighting_id'][:8]}: could not write the image ({ex.__class__.__name__}: {str(ex)[:80]})")
+            continue
+        block = photo_block(e, w, h, "", today, fname=fname)
+        block["note"] = (f"Photographed by a reader and sent through the app "
+                         f"({(e.get('taken_at') or '')[:10] or 'date unknown'}); in the strip "
+                         f"since {today}, live first (CONVENTIONS.md 2026-10-24), the look that "
+                         f"may make it the lead still to come. Not an open licence: ask before "
+                         f"reuse elsewhere. No name is printed beside it (2026-09-04). Comes off "
+                         f"the page when the account is deleted (scripts/photo_takedown.py).")
+        block["live_first_on"] = today
+        apply_to_city(e, block, as_strip=True)
+        mark_status(e["sighting_id"], "strip", really)
+        n += 1
+        print(f"  STRIP   {e['tree_id']} {e['tree_name'][:40]}: {fname} {w}x{h} (undo: "
+              f"sightings_publish.py --unstrip {e['sighting_id']})")
+        if MAIL_WHEN_LIVE and really:
+            queue_mail(e, today)
+    print(f"sightings publish: {n} photograph(s) into the strip, live first; the lead look is the judge's")
+    return n
 
 
 def mark_status(sighting_id, verdict, really):
@@ -649,6 +760,22 @@ def main():
     # are (data/sightings-vouched.json; 2026-10-05, "ook zijn semi slechte
     # foto's beter dan geen"). Lead when the tree has none, extra beside it
     # when it has; his word stands in for the species and description look.
+    if "--live-first" in sys.argv:
+        live_first(qdoc.get("queue", []), datetime.date.today().isoformat(), really)
+        return 0
+    if "--unstrip" in sys.argv:
+        sid = sys.argv[sys.argv.index("--unstrip") + 1]
+        e = next((q for q in qdoc.get("queue", []) if q["sighting_id"] == sid), None)
+        done_e = load(PROCESSED, {"done": {}}).get("done", {}).get(sid)
+        if not e and done_e and done_e.get("city_slug"):
+            e = {"sighting_id": sid, "tree_id": done_e["tree_id"], "city_slug": done_e["city_slug"]}
+        if not e:
+            print(f"sightings publish: {sid} is not in the queue; name the city file by hand")
+            return 1
+        gone = unstrip(e)
+        mark_status(sid, "hold", really)
+        print(f"sightings publish: {'removed ' + gone if gone else 'nothing in the strip for ' + sid}")
+        return 0
     if "--vouched" in sys.argv:
         for e in qdoc.get("queue", []):
             if not e.get("vouched"):
@@ -684,7 +811,11 @@ def main():
                          "date": today, "tree_id": entry["tree_id"], "reason": reason[:300]}
             counts[verdict] += 1
             mark_status(sid, verdict, really)
-            print(f"  {verdict.upper():7} {entry['tree_id']} {entry['tree_name'][:40]}: {reason[:80]}")
+            # Live first, then checked: a photograph the knock put in the strip
+            # comes out again on a hold or a reject.
+            gone = unstrip(entry) if in_strip(entry) else None
+            print(f"  {verdict.upper():7} {entry['tree_id']} {entry['tree_name'][:40]}: {reason[:80]}"
+                  + (f" (taken out of the strip: {gone.rsplit('/', 1)[-1]})" if gone else ""))
             continue
         seen = (r.get("species_seen") or "").strip()
         match = (r.get("species_match") or "").strip().lower()
@@ -708,8 +839,22 @@ def main():
         if not os.path.exists(src):
             print(f"  {sid}: file missing at {entry['file']}, run sightings_inbox.py again")
             continue
+        # A photograph already in the strip (live first) mailed them when it
+        # went up; its promotion to the lead sends nothing more. queue_mail's
+        # own 30-day bundling would catch most of these; this catches all.
+        entry["_was_in_strip"] = bool(in_strip(entry))
         # An extra needs a name of its own or it would overwrite the lead's file.
         extra = verdict == "add"
+        if extra and in_strip(entry):
+            # Already where `add` would put it (live first at the knock): the
+            # verdict only closes the entry.
+            done[sid] = {"outcome": "added", "date": today, "tree_id": entry["tree_id"],
+                         "city_slug": entry["city_slug"], "file": in_strip(entry), "reason": reason[:300],
+                         "lat": entry.get("latitude"), "lon": entry.get("longitude")}
+            counts["add"] += 1
+            mark_status(sid, verdict, really)
+            print(f"  KEPT    {entry['tree_id']} {entry['tree_name'][:40]}: already in the strip, stays")
+            continue
         stem = f"{entry['tree_id']}-{slugify(entry['tree_name'])}"
         fname = f"{stem}-{entry['sighting_id'][:8]}.jpg" if extra else f"{stem}.jpg"
         try:
@@ -721,7 +866,7 @@ def main():
         old_url = apply_to_city(entry, block, as_extra=extra)
         dropped = drop_vendored(old_url) if old_url and old_url != block["url"] else 0
         done[sid] = {"outcome": "added" if extra else "published", "date": today,
-                     "tree_id": entry["tree_id"], "file": fname, "reason": reason[:300],
+                     "tree_id": entry["tree_id"], "city_slug": entry["city_slug"], "file": fname, "reason": reason[:300],
                      "lat": entry.get("latitude"), "lon": entry.get("longitude")}
         pin = pin_from_reader(entry["city_slug"], entry["tree_id"], entry.get("latitude"),
                               entry.get("longitude"), sid, entry.get("taken_at"), today)
@@ -733,9 +878,9 @@ def main():
         published.append(entry)
         print(f"  {'ADDED' if extra else 'PUBLISHED'} {entry['tree_id']} {entry['tree_name'][:40]}: {fname} {w}x{h}"
               f"{f', replaced {old_url}' if old_url else ''}{f' ({dropped} vendored file(s) removed)' if dropped else ''}")
-        if MAIL_WHEN_LIVE and really:
+        if MAIL_WHEN_LIVE and really and not entry.get("_was_in_strip"):
             queue_mail(entry, today)
-        else:
+        elif not MAIL_WHEN_LIVE:
             print("  mail: off, a photograph going live sends no mail yet (MAIL_WHEN_LIVE)")
     # And any photograph published earlier whose tree still has a rough pin.
     for line in catch_up_pins(done, today):

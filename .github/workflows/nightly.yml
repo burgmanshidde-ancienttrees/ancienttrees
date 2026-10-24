@@ -386,10 +386,15 @@ jobs:
           fi
           # A reader Hidde vouches for goes live as sent (data/sightings-vouched.json).
           python3 scripts/sightings_publish.py --vouched --send || true
-          if ! git diff --quiet -- data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json || [ -n "$(git ls-files --others --exclude-standard site/public/photos data/photo-live-mailed.json)" ]; then
+          # Live first, then checked (2026-10-24): every reader photograph of a
+          # tree that has a lead goes into its strip now; the lead look is the run's.
+          python3 scripts/sightings_publish.py --live-first --send || true
+          # And the notes visitors wrote since the last knock, for the run to read.
+          python3 scripts/tree_notes.py --new --seen || true
+          if ! git diff --quiet -- data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json data/notes-seen.json || [ -n "$(git ls-files --others --exclude-standard site/public/photos data/photo-live-mailed.json data/notes-seen.json)" ]; then
             git config user.name "claude[bot]"
             git config user.email "41898282+claude[bot]@users.noreply.github.com"
-            git add -A data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json
+            git add -A data/sighting-queue.json data/sightings-processed.json data/leads data/sightings-vouched.json data/cities site/public/photos data/photo-manifest.json data/photo-live-mailed.json data/notes-seen.json
             git commit -m "Photographs readers sent, queued for a look; vouched ones live"
             git push
           fi

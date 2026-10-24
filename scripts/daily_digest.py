@@ -2028,10 +2028,36 @@ def night_photos_section(today):
                 continue
             out.append("| %s | %s | %s | `photo_apply.py hold %s` |"
                        % (day.isoformat()[5:], t.get("name"), c.get("city"), t.get("id")))
-    if not out:
+    # And the reader photographs the knock put in a strip before anybody
+    # looked (live first, 2026-10-24), each with its undo.
+    strip = []
+    for fp in sorted(_glob.glob(os.path.join(ROOT, "data", "cities", "*.json"))):
+        try:
+            c = json.load(open(fp))
+        except ValueError:
+            continue
+        for t in c.get("trees", []):
+            for x in t.get("photos") or []:
+                if not (x or {}).get("live_first_on"):
+                    continue
+                try:
+                    day = datetime.date.fromisoformat(str(x["live_first_on"])[:10])
+                except (TypeError, ValueError):
+                    continue
+                if day < since:
+                    continue
+                strip.append("| %s | %s | %s | `sightings_publish.py --unstrip %s` |"
+                             % (day.isoformat()[5:], t.get("name"), c.get("city"), x.get("sighting_id", "?")))
+    parts = []
+    if out:
+        parts.append("\n".join(["**Photographs the night run approved** (%d; the last column undoes one)" % len(out), "",
+                                "| Day | Tree | Where | Overrule |", "|---|---|---|---|", *out]))
+    if strip:
+        parts.append("\n".join(["**Reader photographs in a strip, live first, not yet looked at** (%d)" % len(strip), "",
+                                "| Day | Tree | Where | Undo |", "|---|---|---|---|", *strip]))
+    if not parts:
         return None
-    return "\n".join(["**Photographs the night run approved** (%d; the last column undoes one)" % len(out), "",
-                      "| Day | Tree | Where | Overrule |", "|---|---|---|---|", *out])
+    return "\n\n".join(parts)
 
 
 def photos_on_existing_section(_today=None):
