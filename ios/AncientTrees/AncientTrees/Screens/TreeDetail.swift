@@ -245,8 +245,11 @@ struct TreeDetail: View {
                     // Google Maps, komoot): the practical rows before the
                     // contributions, the contributions before the sources.
                     // Add a photo sits with the notes now, not under the story.
-                    if mine == nil, hasGettingThere { gettingThere }
+                    // Notes above Getting there (Hidde, 2026-10-24 16:09: "onder
+                    // getting there te veel niet interessante info om zo hoog
+                    // te staan, dus omwisselen"). Same on the website.
                     if mine == nil { notesSection }
+                    if mine == nil, hasGettingThere { gettingThere }
                     // "Something's wrong", low on the page, which is where he
                     // asked for it (2026-09-04: "de something's wrong knop maar
                     // wel naar beneden"). The vote that used to head this block
@@ -1943,9 +1946,11 @@ struct TreeDetail: View {
                 }
                 // The quiet pills side by side, as Google Maps keeps Add a
                 // photo and Write a review together under a place.
+                // The photo ask leads and is the filled pill (Hidde, 2026-10-24:
+                // "de add photo moet meer aandacht krijgen"); the note is quiet.
                 FlowRow(spacing: 10) {
-                    noteButton
                     if tree.photo != nil { addPhotoRow }
+                    noteButton
                 }
                 .padding(.top, 2)
             }
@@ -2179,10 +2184,10 @@ struct TreeDetail: View {
         Button { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
             Label("Add a photo", systemImage: "camera")
                 .font(.subheadline.weight(.semibold))
-                .foregroundStyle(Brand.ink)
+                .foregroundStyle(Brand.onMoss)
                 .padding(.horizontal, 18)
                 .frame(minHeight: 44)
-                .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                .background(Brand.moss, in: .capsule)
                 .contentShape(.capsule)
         }
         .buttonStyle(.plain)
