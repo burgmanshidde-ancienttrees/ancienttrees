@@ -12,7 +12,7 @@ A reply to five of them below. One sentence that answers what was asked, a photo
 > Found it, the one near Pettineo! Have you been there? I'm trying to work out if you can just walk up to it, and if you have a photo I'd love to see it
 
 **Bjork_piedi_Serj** (a fig in Ortigia, a huge cactus near the Zimmiti shop):
-> Thanks! Do you remember roughly where in Ortigia the ficus is?
+No reply. Their directions were enough: the fig is the Giardino Aretusa one, already a lead, and the cactus spot is filed. They left Sicily as a kid, so there is nothing left to ask them.
 
 **Chloe_Lifter** ("How old is this tree?", about the photo in the post, the Piazza Marina fig):
 > It was planted around 1863, so roughly 160 years. Not that old for a tree, but with all the aerial roots the trunk is apparently 36 metres round. More about it here: ancienttrees.app/palermo/ficus-of-piazza-marina
