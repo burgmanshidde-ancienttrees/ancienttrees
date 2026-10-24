@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 (fourth attempt): nothing shipped, state re-checked
+
+Nothing changed in the product. No claims standing, inbox empty, health.py's 'skipped' builds are log-only pushes (path filters) and the Postbox failure was already answered. READY is still 3 own leads (oxford 2, madrid 1) under a paused supply. The Stirling register retry has been tried on 10-15, 10-22 and 10-23 with no new angle, so I did not repeat it. Open for the next run: check the r/lisbon thread for the commenter's tree location; the 997 leads needing only a source could feed a verify pass on a staged US city (fort-worth, portland, san-francisco), which is leads-only work while supply is paused.
+
 ## 2026-10-24 (third attempt): Reddit queue closed for real, no trees
 
 Nothing shipped to the product. No claims were standing; 3 READY leads (oxford 2, madrid 1) are own trees, and own supply is paused. The inbox was empty. `private_store.py pull` had restored the Reddit queue with duplicate ids, so the earlier `--done` calls were lost and `--done` only touched the first of two copies. I deduplicated data/outreach-community.json and closed everything without a tip. Two items stay open: the Santa Iria cypress photo ask (Hidde posts it) and the Grizzly Giant reply (the stale Grant draft is gone). One r/lisbon commenter (19riuyxs4wn0g) still owes a location; check that thread. Pushed to the private store.
