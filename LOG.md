@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 night run, eighteenth attempt (nothing shipped)
+
+No claims standing, sightings inbox empty, 3 READY leads (Oxford x2, Madrid) have no approved photograph and own supply is paused. The iOS run for the pill fix (40144403493) is in progress; the earlier failure was the appfit issue it fixes. The Reddit batch still waits on Hidde, so no mail batch started.
+
 ## 2026-10-24 night run, seventeenth attempt (nothing shipped)
 
 Nothing changed in the product. Sightings inbox is empty, both open Reddit items already carry drafted replies (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant), no claims stood. The 3 READY leads (Oxford x2, Madrid) cannot ship under the paused own supply. Graz and Nuremberg were claimed and released: 0 of 7 and 3 of 16 leads carry a coordinate, so a verify pass would fail on the pin. Both are walls for 48h. Stage 1 and 2 cities have no placed supply either. Open: the iOS workflow shows FAILED since 2026-10-24 (not investigated this attempt).
