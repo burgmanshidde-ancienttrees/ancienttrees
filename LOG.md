@@ -14,6 +14,12 @@ So absence from this file is not evidence something was never tried: `grep -ri "
 ## 2026-10-24 night run, restart after early stop
 
 Nothing new live. No standing claims. READY leads were 3 (Oxford 2, Madrid 1), own supply is paused and they have no photographs, so none written. Ran the kept-set photo sweep (`photo_hunt.py --recheck`) and a photo-judge pass over the 35 trees with unjudged candidates (Singapore, Amsterdam, Chicago, Utrecht, Budapest): 712 candidates, 0 approved, 1 held (sgp_027, earlier closer-geotag hold kept). Commons is spent for the kept set; further photos need iNaturalist or readers. Not done: iOS app workflow shows FAILED (newest finished run 10-23), not investigated this attempt.
+<!-- archive-index -->
+## 2026-10-24 session: r/sicily's second day, the Villino Favaloro fig live
+
+**In the product:** /palermo/the-white-fig-of-villino-favaloro (pal_022), a reader tip from the thread: a white fig (Ficus virens), 10 m round and 20 m tall by MASAF and the Regione Siciliana list, sheet 18/G273/PA/19. It leans out of the closed garden of the Basile villa on Piazza Virgilio and is seen from the street. BlogSicilia 2023 is the second source. A CC BY 4.0 Commons photograph by Esculapio, taken 2026-10-02, was looked at and approved, and it is also the life check. The reader's words are quoted on the page in English and Italian. It is in the Sicily collection (now 14 trees). Pin is approximate, register point by the railings. **Leads:** the Ficuzza oak (Palermo leads, no register row), the Ortigia fig and the Zimmiti cactus (Syracuse), and the "Innari" olive (Sardinia file, place unknown). **For Hidde:** replies for the five new comments are in drafts/reddit-sicily-replies-2026-10-24.md. Chloe_Lifter's "How old is this tree?" gets no draft because it is unclear which tree it means. The build runs in CI only, so the page has not been looked at rendered yet.
+
+
 ## 2026-10-24 later attempt in the 08:34 window: nothing shipped
 
 - No claims standing, inbox empty, READY still 3 own trees without photographs (supply paused), so no write pass. iOS red is still the 30-minute `xcodebuild` hang on the large phone (run 40017321068); needs a Mac session.
