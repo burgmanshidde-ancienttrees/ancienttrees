@@ -14,7 +14,7 @@ A reply to five of them below. One sentence that answers what was asked, a photo
 **Bjork_piedi_Serj** (a fig in Ortigia, a huge cactus near the Zimmiti shop):
 > Thanks! Do you remember roughly where in Ortigia the ficus is?
 
-**4024-6775-9536** ("there's already a national list"):
-> yes i started from the national list, but not every tree on it is worth a visit so i'm trying to find the ones that are
+**Chloe_Lifter** ("How old is this tree?", about the photo in the post, the Piazza Marina fig):
+> It was planted around 1863, so roughly 160 years. Not that old for a tree, but with all the aerial roots the trunk is apparently 36 metres round
 
-**Chloe_Lifter** ("How old is this tree?"): no draft. The comment does not say which tree, and if it carried a photo, the paste did not show it. Worth a look in the thread.
+**4024-6775-9536** ("there's already a national list"): no reply. It goes nowhere.
