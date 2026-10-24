@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 (late window): Reddit queue closed, no trees
+
+Nothing shipped to the product. No claims were standing. Only 3 READY leads (oxford 2, madrid 1), under the six-candidate minimum for a pass, and own supply is paused. The sightings inbox was empty. Reddit: 12 open items, 3 with drafts, the other 9 closed with `--done` (no tip, no location). I rewrote the Grizzly Giant draft, which wrongly put 1903 "earlier than Grant"; it was Roosevelt who camped with Muir. For Hidde: 3 Reddit replies in drafts/batch-community-preview.md. Archive-ask lead from the thread: digarb.hku.hk (HKU Hong Kong tree registry) and Gigantes Verdes (Portugal) as contacts.
+
 ## 2026-10-24 17:00 UTC, night run: Reddit queue worked, no tree made
 
 Nothing changed in the product. Rung 1: no reader photographs waiting. Rung 2: the Postbox check failure of 11:35 was only sqlcheck saying tree_notes.sql was not pasted yet; the table has been live since, so I recorded the answer with health.py. Rung 4: harvested r/lisbon (32 comments) and r/sicily (none new), closed 11 open items with a reason (no tree tip in any of them) and drafted nothing new. Two earlier drafts wait.
