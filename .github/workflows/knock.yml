@@ -83,7 +83,7 @@ jobs:
       # the night shift for the same allowance twice a day and losing.
       #
       # The ordering is CLAUDE.md's own: a broken site is rung 2 and new
-      # coverage is rung 4. So on a day with no review yet, this dispatches
+      # coverage is rung 5. So on a day with no review yet, this dispatches
       # one and does NOT dispatch a night run in the same cycle, which is the
       # half that actually frees the allowance. A dispatch is also never
       # dropped, so it fixes the delivery half at the same time.

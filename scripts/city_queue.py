@@ -843,7 +843,7 @@ def main():
             print("  because he named the city (rule 1(d)). Use the 80/20 rule hard.\n")
             print("  " + ", ".join("* %s (#%d)" % (c["city"], c["rank"])
                                    for c in dry_named))
-        print("\n  NOTHING TO OPEN THEM FROM (%d): scout a register (rung 5) or"
+        print("\n  NOTHING TO OPEN THEM FROM (%d): scout a register (rung 6) or"
               % len(dry_rest))
         print("  wait for Hidde to name one. Do not research these from zero.\n")
         print("  " + ", ".join("%s (#%d)" % (c["city"], c["rank"]) for c in dry_rest[:15]))

@@ -119,7 +119,7 @@ def page_facts():
             "pin_share": sum(1 for t in trees
                              if t.get("location_precision") == "confirmed") / n,
             # A line saying which trunk this is when the pin cannot. Hidde's
-            # rung 7, and the cheapest thing on the ladder, so worth knowing
+            # rung 8, and the cheapest thing on the ladder, so worth knowing
             # whether it moves anything in search as well as on the ground.
             "recognise_share": sum(1 for t in trees if t.get("how_to_recognise")) / n,
             "age_share": sum(1 for t in trees if t.get("age_estimate")) / n,
