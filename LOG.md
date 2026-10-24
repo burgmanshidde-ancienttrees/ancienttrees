@@ -10,11 +10,10 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
-
+<!-- archive-index -->
 ## 2026-10-24 night run, restart after early stop
 
 Nothing new live. No standing claims. READY leads were 3 (Oxford 2, Madrid 1), own supply is paused and they have no photographs, so none written. Ran the kept-set photo sweep (`photo_hunt.py --recheck`) and a photo-judge pass over the 35 trees with unjudged candidates (Singapore, Amsterdam, Chicago, Utrecht, Budapest): 712 candidates, 0 approved, 1 held (sgp_027, earlier closer-geotag hold kept). Commons is spent for the kept set; further photos need iNaturalist or readers. Not done: iOS app workflow shows FAILED (newest finished run 10-23), not investigated this attempt.
-<!-- archive-index -->
 ## 2026-10-24 later attempt in the 08:34 window: nothing shipped
 
 - No claims standing, inbox empty, READY still 3 own trees without photographs (supply paused), so no write pass. iOS red is still the 30-minute `xcodebuild` hang on the large phone (run 40017321068); needs a Mac session.
