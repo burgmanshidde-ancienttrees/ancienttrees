@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 20:05 window (ninth attempt): nothing shipped
+
+Nothing changed in the product. Inbox empty. health.py still flags the Postbox check from 11:35; its log shows only sqlcheck naming tree_notes.sql as not pasted (the already-answered case, no site fault). The Reddit harvest found 0 new comments in r/lisbon and r/sicily, so the commenter still has not posted a tree location. READY is the same 3 own leads under the supply pause. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md still wait.
+
 ## 2026-10-24 eighth attempt: nothing shipped
 
 Nothing changed in the product. No claims, inbox empty, READY is the same 3 own leads (oxford 2, madrid 1) under the supply pause, so no write pass. health.py's skipped builds and Postbox failure are the ones already answered. No new angle.
