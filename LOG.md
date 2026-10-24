@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24 session: three UNLV trees get photographs from the campus grounds superintendent
+
+**What changed:** the weeping mulberry, Camperdown elm and Texas olive in Las Vegas have photographs mailed by UNLV's grounds superintendent (answering our 10-07 mail), uncredited per the mailed-photo ruling, pins moved to his coordinates and confirmed (two geotags agree within 20 m). They now count as reader content, so the three pages and /las-vegas go back into Google. Two colon reveals in those stories rewritten. `outreach_inbox.py --save-from <address>` now saves one matched sender's attachments to out/mail-photos/. **For Hidde:** reply drafted in drafts/reply-james-kearney-2026-10-24.md; he says more photos follow.
+
 ## 2026-10-24 session: the night run asks for photo archives, no more Commons hunting for Google
 
 **What changed:** rung 4 now drafts archive asks after Reddit: societies, photographers and ambassadors who hold photographs of our trees that are on no open site, asked to let us use them, credited (new group `archive` in OUTREACH_STRATEGY.md and contacts_db.py, first among the groups). Commons photo sweeps only when nothing else is left, for readers. Why: one archive gave Copenhagen 32 pages in Google, all readers together 51 photos. **For the night run:** the `archive` group has no feeder script yet; start from the warm repliers (society 12, garden 6), the ambassadors and the societies in data/outreach-contacts-*.json, and log what a feeder would need.

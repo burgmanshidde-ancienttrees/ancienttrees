@@ -130,6 +130,29 @@ def attachment_names(msg):
     return out
 
 
+def save_attachments(msg, folder, date):
+    """Write a matched sender's attachments to out/mail-photos/<sender>/.
+
+    Added 2026-10-24: James Kearney (UNLV grounds) sent three photographs of
+    campus trees, and this reader could only print their names. Only for the
+    one address named with --save-from, which must already pass the sender
+    filter; out/ is not committed, so nobody's files reach the public repo."""
+    os.makedirs(folder, exist_ok=True)
+    stamp = (email.utils.parsedate_to_datetime(date).strftime("%Y%m%d") if date else "undated")
+    out = []
+    for part in msg.walk():
+        fn = part.get_filename()
+        data = part.get_payload(decode=True) if fn else None
+        if not data:
+            continue
+        safe = "".join(c if c.isalnum() or c in ".-_" else "_" for c in decode(fn))
+        path = os.path.join(folder, f"{stamp}-{safe}")
+        with open(path, "wb") as f:
+            f.write(data)
+        out.append(path)
+    return out
+
+
 def body_of(msg, limit=4000):
     if msg.is_multipart():
         for part in msg.walk():
@@ -193,6 +216,11 @@ def sync_sent(answered):
 
 def main():
     read_bodies = "--read" in sys.argv
+    save_from, save_dir = None, None
+    if "--save-from" in sys.argv:
+        save_from = sys.argv[sys.argv.index("--save-from") + 1].lower()
+        save_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                "out", "mail-photos", save_from.split("@")[0])
     since = FIRST_BATCH
     if "--since" in sys.argv:
         since = sys.argv[sys.argv.index("--since") + 1]
@@ -279,7 +307,11 @@ def main():
                 for line in body_of(msg).splitlines():
                     print("    " + line)
                 names = attachment_names(msg)
-                if names:
+                if names and save_from and frm == save_from:
+                    print(f"    ATTACHMENTS ({len(names)}), saved to {save_dir}:")
+                    for p in save_attachments(msg, save_dir, date):
+                        print(f"      {p}")
+                elif names:
                     print(f"    ATTACHMENTS ({len(names)}), not read here:")
                     for n in names:
                         print(f"      {n}")
