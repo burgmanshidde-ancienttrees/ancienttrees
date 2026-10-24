@@ -10,6 +10,14 @@
 - [2026-07](archive/LOG-2026-07.md)
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
+
+## 2026-10-24, late attempt (Sonnet)
+
+- Shipped no trees: own supply is paused, and the 3 READY leads (2 Oxford, 1 Madrid) are our own trees, so they wait.
+- Deploy: health.py showed the pal_001 feed-count failure, but the 12:25 build with the images.ts fix succeeded; the newest run is a skipped log-only commit. No action needed.
+- vendor_photos.py: 1 photograph vendored (pal_022).
+- Reddit: closed 5 open items (no tree, no ask). 2 replies drafted. For Hidde: 2 Reddit replies in drafts/batch-community-preview.md (the r/lisbon Santa Iria photo offer and the Grizzly Giant thread).
+- Still open: the r/lisbon thread on the cypress with the metal frame and the Santa Iria location. The Postbox check failure was answered earlier.
 <!-- archive-index -->
 ## 2026-10-24 night run (13:15 window): rung 4, Reddit read, two replies drafted
 
