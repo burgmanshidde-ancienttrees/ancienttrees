@@ -277,6 +277,15 @@ html:not([data-signed-in="1"]) .nav-drop-menu .nav-yours { display: none; }
 .map-pop .tree-card .tree-card-top .heart-card { margin-top: 0; }
 .map-pop .tree-card-nophoto .tree-name { padding-top: 4px; }
 .map-pop .map-pop-close svg, .map-pop .heart-card svg { width: 16px; height: 16px; }
+/* On a phone the card is Airbnb's mobile one (2026-10-24): the map's width
+   less 16 a side, low over the map, the photograph cropped to keep the map
+   above it in view. The script sets left and top, and lifts the map's own
+   buttons (.walks, --map-pop-lift) above the card as Airbnb does. The photo
+   drops the card's 16:10 ratio: with a fixed height that ratio made it 272
+   wide in a 343 card (Hidde, 2026-10-24: "een hoop mis"). */
+.map-pop.map-pop--phone { width: auto; right: 16px; }
+.map-pop--phone .tree-card .tree-card-photo { width: 100%; height: 170px; aspect-ratio: auto; overflow: hidden; }
+.map-pop--phone .tree-card .tree-card-photo img { width: 100%; height: 170px; object-fit: cover; aspect-ratio: auto; }
 .stage .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
 /* The one tree card, used by TreeCard.astro on every page that shows a tree
@@ -1564,6 +1573,11 @@ footer { border-top: 1px solid var(--cream-dark); }
    PIN_DISTANCE): the same element, shrunk to a 14px moss-ringed cream dot with
    its drawing and corners hidden; it still selects its tree. */
 .pin-tree.pin-mini { width: 14px; height: 14px; border-width: 2px; box-shadow: 0 1px 4px rgba(26,26,20,0.3); }
+/* Full pins lie OVER the dots, as on Airbnb's map: in DOM order a dot could
+   land on a pin's middle and hide its tree, so it read as an empty ring
+   (Hidde, 2026-10-24, on the phone map). The selected pin (z 5) stays on top. */
+.pin-tree:not(.pin-mini) { z-index: 2; }
+.pin-tree.pin-mini { z-index: 1; }
 .pin-tree.pin-mini svg, .pin-tree.pin-mini .pin-got, .pin-tree.pin-mini .pin-fav, .pin-tree.pin-mini .pin-ticket,
 .pin-tree.pin-mini .pin-bits { display: none; }
 /* TREES ON ONE SPOT (2026-10-15): one bubble, the explore map's cluster drawn
@@ -1936,7 +1950,7 @@ footer { border-top: 1px solid var(--cream-dark); }
      takes it away the moment the sheet covers the map. The peek height is
      measured by the sheet script, because it depends on how the city name
      wraps. */
-  .walks { bottom: calc(var(--sheet-peek, 4.5rem) + 0.6rem); z-index: 15;
+  .walks { bottom: calc(var(--sheet-peek, 4.5rem) + 0.6rem + var(--map-pop-lift, 0px)); z-index: 15;
     transition: bottom 260ms cubic-bezier(0.22, 0.61, 0.36, 1), opacity 160ms linear; }
   .map-tools { margin: 0 0.75rem; }
   :root[data-sheet="half"] .walks,

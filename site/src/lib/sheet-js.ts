@@ -206,6 +206,15 @@ export const SHEET_JS = `
     openTree(id);
   };
 
+  // A tapped pin on a phone shows Airbnb's card over the map (city-map-script.ts
+  // selectTree, Hidde 2026-10-24), so the sheet gets out of the way first: back
+  // to the list, down to the peek, as touching the map already does.
+  window.atSheetPeek = function() {
+    if (!mq.matches) return;
+    closeTree();
+    setDetent('peek');
+  };
+
   // Where the sheet will COME TO REST, not where it is: the map wants to know
   // this the instant a pin is tapped, and at that moment the sheet is still
   // sliding, so a getBoundingClientRect would read the old position and put

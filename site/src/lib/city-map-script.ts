@@ -312,7 +312,7 @@ var pins = [];
 var pinMarkers = [];
 var activeIdx = -1;
 
-function setActive(idx, fly, scroll) {
+function setActive(idx, fly, scroll, noSheet) {
   // Selecting a tree OUTSIDE the chosen walk releases the walk instead of
   // leaving the tree dimmed under it (Hidde, 2026-08-14: "the tree stays in
   // opacity mode instead of jumping out of the hike and towards the tree").
@@ -336,7 +336,7 @@ function setActive(idx, fly, scroll) {
   // On a phone the cards live inside the bottom sheet, and picking a tree
   // means opening THAT tree rather than scrolling a list behind a map. The
   // sheet publishes this hook; on desktop it is undefined and nothing changes.
-  if (window.atSheetFocus) { window.atSheetFocus(card.dataset.treeId); }
+  if (window.atSheetFocus && !noSheet) { window.atSheetFocus(card.dataset.treeId); }
   if (scroll) { card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
   // A tree centred in the map element is a tree hidden behind the sheet, since
   // the sheet covers the lower half of it. Maps recentres on the part of the
@@ -376,13 +376,24 @@ function clearPin() {
     activeIdx = -1;
   }
 }
-function closePop() { if (popEl) { popEl.remove(); popEl = null; } clearPin(); }
+function closePop() { if (popEl) { popEl.remove(); popEl = null; } document.documentElement.style.removeProperty('--map-pop-lift'); clearPin(); }
 function placePop() {
   if (!popEl || activeIdx < 0) return;
   var m = markers[activeIdx];
   var p = map.project([m.lng, m.lat]);
   var W = map.getContainer().clientWidth, H = map.getContainer().clientHeight;
   var w = popEl.offsetWidth, h = popEl.offsetHeight;
+  // A phone: Airbnb's mobile card, the width of the map less 16 a side, at the
+  // bottom of the part of the map the sheet's peek leaves showing.
+  if (phoneMq.matches) {
+    var mr = map.getContainer().getBoundingClientRect();
+    var st = window.atSheetTop ? window.atSheetTop() : null;
+    var bottom = (st !== null ? Math.min(mr.bottom, st) : mr.bottom) - mr.top;
+    popEl.style.left = '16px';
+    popEl.style.top = Math.max(16, bottom - h - 12) + 'px';
+    document.documentElement.style.setProperty('--map-pop-lift', (h + 12) + 'px');
+    return;
+  }
   // Beside the pin, never over it: right of it when there is room, else left;
   // kept 16 from every edge of the map.
   var x = p.x + 36 + w > W - 16 ? p.x - 36 - w : p.x + 36;
@@ -395,7 +406,7 @@ function showPop(idx) {
   var card = cardOf(idx);
   if (!card) return;
   popEl = document.createElement('div');
-  popEl.className = 'map-pop';
+  popEl.className = 'map-pop' + (phoneMq.matches ? ' map-pop--phone' : '');
   var copy = card.cloneNode(true);
   copy.removeAttribute('id');
   copy.classList.remove('active');
@@ -426,18 +437,27 @@ map.on('resize', placePop);
 map.on('click', function() { if (popEl) closePop(); else if (phoneMq.matches) clearPin(); });
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && popEl) closePop(); });
 
+// A PIN ON A PHONE SHOWS AIRBNB'S CARD (Hidde, 2026-10-24: "de nieuwe preview
+// pinnen a la airbnb zijn er niet op mobile web"), replacing 10-20's sheet that
+// became the tree (Apple Maps; the app keeps that). Airbnb's mobile site: the
+// pin grows, a card with the photograph rises over the bottom of the map, the
+// card opens the listing, a tap on the map lets it go. The sheet drops to its
+// peek first; the map only moves when the pin would sit behind the card.
 function selectTree(idx) {
   var card = cardOf(idx);
   if (phoneMq.matches) {
-    var row = document.querySelector('.place-row');
-    if (row && card) {
-      row.querySelector('.place-title strong').textContent = markers[idx].name;
-      row.querySelector('.place-title span').textContent = metaOf(card);
-      var sh = row.querySelector('[data-share]');
-      var href = hrefOf(card);
-      if (sh && href) { sh.setAttribute('data-share-url', href); sh.setAttribute('data-share-title', markers[idx].name); }
+    if (window.atSheetPeek) { window.atSheetPeek(); }
+    setActive(idx, false, false, true);
+    showPop(idx);
+    if (popEl) {
+      var m = markers[idx], mr = map.getContainer().getBoundingClientRect();
+      var cardTop = popEl.getBoundingClientRect().top - mr.top;
+      var p = map.project([m.lng, m.lat]);
+      if (p.y > cardTop - 48 || p.y < 48) {
+        map.easeTo({ center: [m.lng, m.lat], duration: 600,
+                     offset: [0, Math.round(cardTop / 2 - mr.height / 2)] });
+      }
     }
-    setActive(idx, 'keep', false);
   } else {
     setActive(idx, false, false);
     showPop(idx);
