@@ -32,6 +32,10 @@ var hero = document.querySelector('.td-hero');
 var insetHost = document.querySelector('.td-inset');
 var sideHost = document.querySelector('.td-side-map');
 var wide = window.matchMedia('(min-width: 900px)');
+// NO PHOTOGRAPH: THE MAP IS THE PICTURE (2026-10-24, CONVENTIONS.md "A tree
+// page without a photograph"). The one map fills the hero at every width,
+// non-interactive, zoom 16; the side card has no map on these pages.
+var noPhoto = !!(hero && hero.querySelector('.td-nophoto'));
 var map = null;
 
 function interactive(on) {
@@ -41,19 +45,19 @@ function interactive(on) {
   });
 }
 function place() {
-  var host = wide.matches ? sideHost : insetHost;
+  var host = (wide.matches && !noPhoto) ? sideHost : insetHost;
   if (host && mapEl && mapEl.parentNode !== host) host.appendChild(mapEl);
   if (wide.matches && hero) hero.classList.remove('td-show-map');
   if (map) {
     map.resize();
-    interactive(wide.matches || (hero && hero.classList.contains('td-show-map')));
+    interactive(!noPhoto && (wide.matches || (hero && hero.classList.contains('td-show-map'))));
     map.jumpTo({ center: [LNG, LAT] });
   }
 }
 if (mapEl) {
   place();
   map = new maplibregl.Map({
-    container: mapEl, style: '${MAP_STYLE}', center: [LNG, LAT], zoom: 15,
+    container: mapEl, style: '${MAP_STYLE}', center: [LNG, LAT], zoom: noPhoto ? 16 : 15,
     scrollZoom: false, attributionControl: false
   });
   map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: ${JSON.stringify(MAP_CREDIT)} }), 'top-left');
@@ -61,7 +65,7 @@ if (mapEl) {
   dot.className = 'pin pin-dot';
   new maplibregl.Marker({ element: dot }).setLngLat([LNG, LAT]).addTo(map);
   map.on('load', function () { map.resize(); });
-  interactive(wide.matches);
+  interactive(wide.matches && !noPhoto);
   if (wide.addEventListener) wide.addEventListener('change', place);
 }
 
@@ -81,7 +85,7 @@ if (insetHost) insetHost.addEventListener('transitionend', function (e) {
   if (e.propertyName === 'width') recentre();
 });
 var insetBtn = document.querySelector('.td-inset-hit');
-if (insetBtn) insetBtn.addEventListener('click', function () { swap(true); });
+if (insetBtn && !noPhoto) insetBtn.addEventListener('click', function () { swap(true); });
 var backBtn = document.querySelector('.td-photo-back');
 if (backBtn) backBtn.addEventListener('click', function () { swap(false); });
 

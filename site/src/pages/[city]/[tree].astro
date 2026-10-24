@@ -15,6 +15,7 @@ import { SHARE_JS } from "../../lib/share-js";
 import { WORTHIT_JS } from "../../lib/worthit-js";
 import { DOWNSIZE_JS } from "../../lib/image-downsize-js";
 import { ADD_PHOTO_JS } from "../../lib/add-photo-js";
+import { TREE_NOTES_JS } from "../../lib/tree-notes-js";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { VISITED_SYNC_JS } from "../../lib/visited-sync-js";
 import { seasonBlock } from "../../lib/phenology";
@@ -147,6 +148,9 @@ const others = allTrees
   .filter((t) => t.id !== tree.id)
   .sort((a, b) => kmBetween(here, { latitude: a.location.latitude!, longitude: a.location.longitude! }) - kmBetween(here, { latitude: b.location.latitude!, longitude: b.location.longitude! }));
 const nearby = others.slice(0, 3);
+// The nearest dozen, for the borrowed note under an empty notes block
+// (tree-notes-js.ts): nearest first, so the example comes from two streets away.
+const nearNotes = others.slice(0, 12).map((t) => ({ id: t.id, name: t.name, url: `/${cslug}/${tslugs[t.id]}` }));
 
 const countryUrl = countryPages.has(country) ? `${BASE_URL}/${countryPages.get(country)}` : null;
 const crumbItems: [string, string | null][] = [
@@ -249,7 +253,7 @@ const hreflangBlock = hb ? "\n" + hb : "";
 const headExtra = mapHead() + ogImage + hreflangBlock + "\n" + ldScript(graph);
 // VISITED_SYNC_JS came back with the seal (2026-10-10): the collect sheet.
 const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TREE_ACTIONS_JS + VISITED_SYNC_JS + SHARE_JS
-  + DOWNSIZE_JS + ADD_PHOTO_JS;
+  + DOWNSIZE_JS + ADD_PHOTO_JS + TREE_NOTES_JS;
 ---
 <Base title={title} description={description} canonical={canonical} headExtra={headExtra}>
   <TreeDetail
@@ -262,6 +266,9 @@ const scripts = treePageScript(loc.latitude!, loc.longitude!) + WORTHIT_JS + TRE
     country={country}
     countryUrl={countryUrl ? `/${countryPages.get(country)}` : null}
     cityName={cityName} cityUrl={`/${cslug}`} crumbs={crumbItems} canonical={canonical}
+    parkName={parkPage ? (parkPage.name || parkPage.park) : null}
+    parkUrl={parkPage ? `/parks/${parkPage.slug}` : null}
+    nearNotes={nearNotes}
     shots={shots} nearby={nearbyCards} chips={chips} seasonHtml={seasonHtml} />
   <Fragment slot="scripts" set:html={scripts} />
 </Base>

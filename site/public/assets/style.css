@@ -3525,3 +3525,86 @@ body:has(form.hero-search) .nav-search, body:has(form.ex-search) .nav-search { d
   .nav-search .ats-drop .ats-head { padding: 14px var(--gutter) 4px; }
   .nav-search .ats-drop .ats-empty { padding: 14px var(--gutter); }
 }
+
+/* THE TREE PAGE REBUILT, 2026-10-24 (Hidde: "bouw alles"; CONVENTIONS.md
+   entries of the same day). Numbers copied from the components already here:
+   section rhythm 1.75rem to 2rem, 10px inside a group, cards on --surface at
+   radius 14, the quiet addphoto pill for every secondary ask. */
+
+/* The map as the picture where there is no photograph. The one #map fills the
+   stage; the whole stage is a link to the city map on this tree. */
+.td-hero .td-nophoto .photo-stage { aspect-ratio: 3 / 2; background: var(--cream-dark); display: block; }
+.td-nophoto .td-inset, .td-page.td-nophoto-page .td-hero .td-inset { display: block; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: 0; border-radius: 0; box-shadow: none; z-index: 0; }
+.td-nophoto .td-inset .maplibregl-ctrl-attrib { display: block; }
+.td-nophoto .td-inset-hit, .td-page.td-nophoto-page .td-hero .td-inset-hit { display: block; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; border: 0; border-radius: 0; background: none; z-index: 1; }
+.td-nophoto .td-back, .td-nophoto .td-tools { z-index: 5; }
+.td-hero-ask { position: absolute; left: 16px; right: 16px; bottom: 14px; z-index: 3; display: flex; align-items: center; gap: 12px;
+  background: rgba(255,255,255,0.94); border-radius: 14px; padding: 12px 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+.td-hero-ask-t { flex: 1; min-width: 0; }
+.td-hero-ask-t b { display: block; font-size: 14px; color: var(--ink); }
+.td-hero-ask-t span { display: block; font-size: 13px; line-height: 1.35; color: var(--ink-mid); margin-top: 2px; }
+.td-hero-ask .td-addphoto { padding: 0; text-align: right; flex: none; }
+.td-hero-ask .addphoto { display: flex; flex-direction: column; align-items: flex-end; }
+.td-hero-ask .addphoto-btn { padding: 0.6rem 0.95rem; font-size: 14px; }
+.td-hero-ask .addphoto-note { font-size: 12px; margin: 4px 0 0; max-width: 11rem; text-align: right; }
+.photo-stage.has-own .td-hero-ask { position: absolute; }
+.td-nophoto .photo-stage.has-own .td-inset, .td-nophoto .photo-stage.has-own .td-inset-hit { display: none; }
+@media (min-width: 900px) {
+  .td-page.td-nophoto-page .td-side-map { display: none; }
+  .td-hero .td-nophoto .photo-stage { aspect-ratio: 16 / 7; border-radius: 16px; overflow: hidden; }
+}
+
+/* Under the title: the district plain, the park a link, the thumb. */
+.td-page .tree-place a { color: var(--moss); }
+
+/* The story, collapsed to about six lines with Read more. */
+.td-story-wrap { position: relative; margin-top: 1.75rem; }
+.td-story-wrap .td-story { margin-top: 0; }
+.td-story-wrap.is-collapsed .td-story { max-height: 9.5em; overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
+.td-story-more { display: inline-block; margin-top: 6px; padding: 0; border: 0; background: none; font: inherit; font-size: 15px; font-weight: 600;
+  color: var(--moss); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; min-height: 32px; }
+.td-story-more[hidden] { display: none; }
+
+/* Getting there: one block with a heading, four rows at 15px. */
+.td-access.td-section { margin-top: 2rem; display: block; }
+.td-access.td-section p { margin: 0 0 10px; font-size: 15px; color: var(--ink-mid); }
+.td-access.td-section p:last-child { margin-bottom: 0; }
+.td-access.td-section .td-address { color: var(--ink); }
+.td-access .which-one { color: var(--ink-mid); }
+
+/* From people who stood here. */
+.td-notes-list { display: flex; flex-direction: column; gap: 10px; }
+.td-note { background: var(--surface); border-radius: 14px; padding: 12px 14px; }
+.td-note p { margin: 6px 0 0; font-size: 16px; line-height: 1.5; color: var(--ink); white-space: pre-line; }
+.td-note-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 12px; color: var(--ink-light); }
+.td-note-meta b { color: var(--ink); font-weight: 600; font-size: 13px; }
+.td-note-who { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+/* The face beside a note: the bar's round profile picture, 28px; the initial
+   without a picture; the leaf for "A visitor". */
+.td-avatar { width: 28px; height: 28px; border-radius: 50%; background: var(--moss) center/cover no-repeat; color: #fff; font-size: 12px; font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.td-avatar-anon { background: var(--cream-dark); color: var(--moss); }
+.td-avatar-anon svg { width: 16px; height: 16px; }
+.td-note-mine { background: var(--moss-light); }
+.td-note-borrowed { opacity: 0.85; }
+.td-notes-none { margin: 0 0 10px; font-size: 14px; line-height: 1.45; color: var(--ink-mid); }
+.td-notes-none a { color: var(--moss); }
+/* The ghost example when nobody has written anywhere nearby: dashed, no fill,
+   italic, never styled like a real note. */
+.td-note-ghost { background: none; border: 1px dashed var(--cream-dark); }
+.td-note-ghost-l { display: block; font-size: 12px; color: var(--ink-light); }
+.td-note-ghost p { font-style: italic; color: var(--ink-light); font-size: 15px; }
+.td-notes-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; align-items: flex-start; }
+.td-notes-btns .addphoto { display: flex; flex-direction: column; }
+.td-notes-btns .addphoto-note { font-size: 13px; margin: 6px 0 0; }
+.td-notes[hidden] { display: none; }
+
+/* The note sheet: the field on --surface at radius 14, the examples in 13px. */
+dialog.at-sheet .note-field { width: 100%; box-sizing: border-box; min-height: 120px; margin-top: 0.5rem; padding: 12px 14px; border: 1px solid var(--cream-dark); border-radius: 14px;
+  font: inherit; font-size: 16px; line-height: 1.45; color: var(--ink); background: var(--surface); resize: none; text-align: left; }
+dialog.at-sheet .note-field:focus { outline: none; border-color: var(--moss); }
+dialog.at-sheet .note-eg { margin: 10px 0 0; font-size: 13px; line-height: 1.5; color: var(--ink-light); text-align: left; }
+dialog.at-sheet .note-who { margin: 12px 0 0; font-size: 13px; color: var(--ink-mid); text-align: left; }
+dialog.at-sheet .note-status { margin: 10px 0 0; font-size: 13px; color: var(--ink-mid); }
+dialog.at-sheet .note-status[hidden] { display: none; }

@@ -41,7 +41,6 @@ import WorthIt from "./WorthIt.astro";
 import SaveHeart from "./SaveHeart.astro";
 import ShareButton from "./ShareButton.astro";
 import Sheet from "./Sheet.astro";
-import { speciesIcon } from "../lib/species-icons";
 import { latinHtml } from "../lib/latin";
 import { imgSrcset, photoDims } from "../lib/images";
 import { locationIsApproximate } from "../lib/tree-copy";
@@ -80,6 +79,14 @@ interface Props {
   canonical: string;
   shots: any[];
   nearby: { name: string; url: string; meta: string; photo?: string | null }[];
+  /** The nearest trees of the same place, nearest first, for the borrowed
+   * note under an empty notes block (tree-notes-js.ts). */
+  nearNotes?: { id: string; name: string; url: string }[];
+  /** The park this tree stands in, when we publish a page about it: the one
+   * link under the title since 2026-10-24 (CONVENTIONS.md, "Under the title:
+   * the last step"). */
+  parkName?: string | null;
+  parkUrl?: string | null;
   chips: { href: string; label: string; icon: string }[];
   seasonHtml?: string;
 }
@@ -132,8 +139,24 @@ const tallAr = tall ? Math.max(leadDims.width / leadDims.height, 0.75) : 0;
 // The seal, empty and filled, painted by aria-pressed like the bookmark.
 const sealOff = icon("camera", "bold", "ic seal-off");
 const sealOn = icon("seal-check", "fill", "ic seal-on");
+// ACCESS ONLY WHEN THERE IS SOMETHING TO MEET (Hidde, 2026-10-24: "free public
+// space we can leave that out, lets only say something when its paid").
+// AllTrails prints "Fee required" on a trail that charges and nothing on one
+// that does not. A line that is only "Free, public park" says nothing a
+// visitor must know; hours, a gate, a ticket, a view-only spot or a desk do.
+// The same line is rendered in every language, so the test reads the English
+// data field, never the translation.
+const accessPlainFree = /^free\b/i.test(p.access || "") &&
+  !/\d|gate|book|reception|ticket|closed|fenc|private|view|hour|open(ing)? (from|at)|permission|ask|entrance|locked|behind|except|but|however|not /i.test(p.access || "");
+const accessRow = !tree.paid_entry && !!p.access && !accessPlainFree;
+// Under the title, the park once: when the district IS the park, the link
+// alone (Villa Bellini is not "Villa Bellini · Villa Bellini").
+const parkLink = p.parkUrl && p.parkName ? { name: p.parkName, url: p.parkUrl } : null;
+const districtShown = p.district && !(parkLink && p.district.toLowerCase() === parkLink.name.toLowerCase()) ? p.district : null;
+const noPhoto = !(photo && photo.url);
+const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
 ---
-<main class:list={["content-page", "td-page", { "td-tall": tall }]}
+<main class:list={["content-page", "td-page", { "td-tall": tall, "td-nophoto-page": noPhoto }]}
   style={tall ? `--td-ar:${tallAr.toFixed(4)}` : undefined}>
   {/* WHERE YOU ARE, a thin row, and nothing else (Hidde, 2026-09-24: the
       white bar holding share "is logical in the app because of the back
@@ -165,26 +188,29 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
         </Fragment>
       </PhotoFigure>
     ) : (
-      <figure class="tree-noph tree-hero">
+      {/* NO PHOTOGRAPH: THE MAP IS THE PICTURE (Hidde, 2026-10-24, CONVENTIONS.md
+          "A tree page without a photograph: the map is the picture"). Google
+          Maps always opens a place on the map; AllTrails' preview map stands
+          alone when a trail has no photos; none of them draws an empty frame.
+          The one #map element fills the stage, non-interactive, the whole
+          stage a link to the city map on this tree; at its foot one card
+          carries the ask and the existing Add a photo control. No inset, no
+          swap button: the hero is the map. */}
+      <figure class="tree-noph tree-hero td-nophoto">
         <div class="photo-stage">
-          <span class="tree-noph-art" aria-hidden="true"><Fragment set:html={`<svg viewBox="0 0 40 40">${speciesIcon(tree)}</svg>`} /></span>
-          <span class="td-nophoto">{U.noPhotoYet}</span>
-          {/* The app's camera on an empty hero (addPhotoButton, camera.fill):
-              on the web it is the control that takes a photograph of a tree we
-              have none of. Under the drawing rather than in the corner, because
-              the web's control carries a sentence the app's icon does not. */}
-<a class="td-back" href={p.cityUrl} aria-label={U.goBack} title={U.goBack}><Fragment set:html={icon("arrow-left")} /></a>
+          <div class="td-inset"><div id="map" class="map td-map"></div></div>
+          <a class="td-inset-hit" href={expandUrl} aria-label={U.openFullMap} title={U.openFullMap}></a>
+          <a class="td-back" href={p.cityUrl} aria-label={U.goBack} title={U.goBack}><Fragment set:html={icon("arrow-left")} /></a>
           <div class="td-tools">
             <ShareButton url={p.canonical} title={p.name} label={U.share} copied={U.shareCopied} />
             <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="flag" lang={p.lang} />
           </div>
-          <div class="td-addphoto">
-            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
+          <div class="td-hero-ask">
+            <div class="td-hero-ask-t"><b>{U.noPhotoYet}</b><span>{U.noPhotoAsk}</span></div>
+            <div class="td-addphoto">
+              <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
+            </div>
           </div>
-          <div class="td-inset"><div id="map" class="map td-map"></div></div>
-          <button type="button" class="td-inset-hit" aria-label={U.showOnMap}></button>
-          <button type="button" class="td-photo-back td-photo-back-art" aria-label={U.showPhoto}><Fragment set:html={icon("image")} /></button>
-          <a class="td-expand" href={expandUrl} aria-label={U.openFullMap} title={U.openFullMap}><Fragment set:html={icon("arrows-out-simple")} /></a>
         </div>
       </figure>
     )}
@@ -196,16 +222,21 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
       <div class="td-group">
         <h1>{p.name}{(tree as any).label && <span class="tree-label">{(tree as any).label}</span>}</h1>
         <div class="tree-place-row">
-          {/* A BREADCRUMB, broad to narrow: country, city, district (Hidde,
-              2026-10-08: "Japan - Tokyo - neighbourhood is the build up and
-              all clickable or at least only make things look clickable"). The
-              order AllTrails, Tripadvisor and Wikipedia use. Country and city
-              are links and underlined; the district has no page, so it is
-              plain text and looks it. Same on the app's tree page. */}
-          <p class="tree-place">{p.country && (
-            <Fragment>{p.countryUrl ? <a href={p.countryUrl}>{p.country}</a> : <span>{p.country}</span>}<span class="tree-place-sep" aria-hidden="true">·</span></Fragment>
-          )}<a href={p.cityUrl}>{p.cityName}</a>{p.district && (
-            <Fragment><span class="tree-place-sep" aria-hidden="true">·</span><span class="tree-place-district">{p.district}</span></Fragment>
+          {/* THE LAST STEP ONLY (Hidde, 2026-10-24: "is de home portugal
+              lisbon crumble wel nodig als portugal en lisbon ook onder de
+              titel staan?"; CONVENTIONS.md "Under the title: the last step,
+              not the path again"). AllTrails, read on the Wayback copy of the
+              Muir Woods page: the crumb at the top carries the path, the line
+              under the title carries the direct holder as one link. The crumb
+              above stays (blueprint line 36). Here: the district, plain
+              because it has no page, the park as a link where a park page
+              exists, and the thumb. The 2026-10-08 country-city-district line
+              is superseded. Without a district the city stands in, so the
+              row never shows a lone thumb. */}
+          <p class="tree-place">{districtShown
+            ? <span class="tree-place-district">{districtShown}</span>
+            : (!parkLink && <a href={p.cityUrl}>{p.cityName}</a>)}{parkLink && (
+            <Fragment>{districtShown && <span class="tree-place-sep" aria-hidden="true">·</span>}<a href={parkLink.url}>{parkLink.name}</a></Fragment>
           )}</p>
           <span class="tree-place-dot" aria-hidden="true">·</span>
           <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
@@ -253,34 +284,65 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
         <div class="td-yours-row"></div>
       </section>
 
-      {/* READ MORE on the access and transport lines only, two lines each,
-          expanded in place (AllTrails, App Store; Hidde, 2026-09-27). The
-          story always shows in full: it is why the tree is worth the walk. */}
-      <div class="prose-block td-story"><p set:html={latinHtml(p.story)} /></div>
-      {p.seasonHtml && <Fragment set:html={p.seasonHtml} />}
+      {/* THE STORY, collapsed to about six lines with Read more (Hidde,
+          2026-10-24, lifting his 09-27 wish for the full text: "look at the
+          page holistically"). AllTrails and Google Maps both truncate the
+          description and put the practical rows before the long text. The
+          inline script at the foot collapses only a story that is really
+          longer than the window, so a short one never gets a button. */}
+      <div class="td-story-wrap">
+        <div class="prose-block td-story"><p set:html={latinHtml(p.story)} /></div>
+        <button type="button" class="td-story-more" data-more={U.readMore} data-less={U.readLess} hidden>{U.readMore}</button>
+      </div>
 
-      {/* Add a photo on a page that already has a picture, on every tree since
-          2026-10-12 (Hidde: "make it consistent"), UNDER THE STORY since
-          2026-10-13 (Hidde: "takes up prime space"): Google Maps keeps Add a
-          photo in a place's Photos section, Apple Maps Add Your Photos in
-          Ratings & Photos, both below the description. A photo-less page has
-          its button in the hero instead. Same place as the app (addPhotoRow). */}
-      {photo && photo.url && (
-        <div class="td-addphoto-quiet">
-          <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} quiet />
-        </div>
+      {/* GETTING THERE: ONE BLOCK WITH A HEADING, as the app draws it (Hidde,
+          2026-10-24: "the app section of getting there looks better, should
+          we get that one in web as well?"). Four rows, icon left: the address,
+          how to recognise it (its own row since today), access only when there
+          is something to meet (accessRow above), transport. A ticket stays
+          high in the facts card. */}
+      {(p.address || p.recognise || accessRow || p.transport) && (
+        <section class="td-access td-section">
+          <h2>{U.gettingThere}</h2>
+          {p.address && <p><Fragment set:html={icon("map-pin")} /><span class="td-address">{p.address}</span></p>}
+          {p.recognise && <p><Fragment set:html={icon("eye")} /><span class="which-one">{p.recognise}</span></p>}
+          {accessRow && <p><Fragment set:html={icon("person-simple-walk")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.access}</span></p>}
+          {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}
+        </section>
       )}
 
-      {/* HOW TO GET IN AND HOW TO GET THERE (accessBlock: figure.walk and
-          tram.fill, footnote, secondary). The address line leads on the web
-          because the web has no map sheet to carry it. */}
-      <div class="td-access">
-        {(p.address || p.recognise) && (
-          <p><Fragment set:html={icon("map-pin")} /><span>{p.address && <span class="td-address">{p.address}</span>}{p.recognise && <span class="which-one">{p.recognise}</span>}</span></p>
-        )}
-        {!tree.paid_entry && p.access && <p><Fragment set:html={icon("person-simple-walk")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.access}</span></p>}
-        {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}
-      </div>
+      {/* FROM PEOPLE WHO STOOD HERE (2026-10-24; CONVENTIONS.md "Notes from
+          visitors on a tree page"): komoot's Tips, AllTrails' reviews. One
+          note per person per tree, dated, live at once, no replies or likes.
+          Filled by TREE_NOTES_JS; what is rendered here is the empty state's
+          ghost example (Apple HIG: show what the content will look like),
+          replaced by the real notes, or by the nearest tree's real note when
+          this tree has none (Airbnb). One button, the guidance inside the
+          sheet (Hidde: "the text and button dont really work together").
+          The photo offer sits beside it on a page that has a picture: Google
+          Maps keeps Add a photo and Write a review together under the place
+          (2026-10-13: "takes up prime space" above the story). */}
+      <section class="td-section td-notes" id="td-notes" data-tree={tree.id} data-near={nearNotesJson}
+        data-yours={U.noteYours} data-visitor={U.noteVisitor} data-none={U.notesNone} data-borrowed={U.notesBorrowed}
+        data-signin={U.noteSignIn} data-saving={U.noteSaving} data-failed={U.noteFailed} data-add={U.noteAdd}
+        data-save={U.noteSave} data-shown-as={U.noteShownAs("{name}")} data-shown-anon={U.noteShownAnon}
+        data-leaf-icon={icon("leaf", "fill")}>
+        <h2>{U.notesHeading}</h2>
+        <div class="td-notes-body">
+          <div class="td-note td-note-ghost" aria-hidden="true">
+            <span class="td-note-ghost-l">{U.notesExampleLabel}</span>
+            <p>{U.notesExample}</p>
+          </div>
+        </div>
+        <div class="td-notes-btns">
+          <button type="button" class="addphoto-btn quiet td-note-ask" id="td-note-ask">{U.noteAsk}</button>
+          {photo && photo.url && (
+            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} quiet />
+          )}
+        </div>
+      </section>
+
+      {p.seasonHtml && <Fragment set:html={p.seasonHtml} />}
 
       {/* The official register lives HERE, as the first source, and not in
           the fact card (Hidde, 2026-10-08: "they should just be on the website
@@ -412,6 +474,24 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
       <button type="button" class="sheet-b sheet-b--quiet" data-own-del-no>{U.cancel}</button>
     </div>
   </Sheet>
+  {/* THE NOTE SHEET (CONVENTIONS.md "One button, the guidance inside the
+      sheet"; mock tree-mock/note-sheet.html): the prompt is the field's
+      placeholder, two examples under it, the name and date it will show,
+      Add note. Editing your own note reopens it prefilled with Save and
+      Delete. The sheet is Sheet.astro like every overlay (sheetcheck). */}
+  <Sheet lang={p.lang} class="note-dlg" id="note-dlg" aria-labelledby="note-dlg-h">
+    <h3 class="at-sheet-h" id="note-dlg-h">{U.noteSheetTitle}</h3>
+    <p class="at-sheet-p">{p.name}</p>
+    <textarea class="note-field" id="note-field" maxlength="1000" rows="4" placeholder={U.notePlaceholder}></textarea>
+    <p class="note-eg">{U.noteExamples}</p>
+    <p class="note-who" id="note-who"></p>
+    <div class="at-sheet-btns">
+      <button type="button" class="sheet-b sheet-b--primary" id="note-send">{U.noteAdd}</button>
+      <button type="button" class="sheet-b sheet-b--redq" id="note-del" hidden>{U.noteDelete}</button>
+      <button type="button" class="sheet-b sheet-b--quiet" id="note-cancel">{U.cancel}</button>
+    </div>
+    <p class="note-status" id="note-status" role="status" hidden></p>
+  </Sheet>
   <Sheet lang={p.lang} class="dir-pick" aria-label={U.dirTitle}>
     <h3 class="at-sheet-h">{U.dirTitle}</h3>
     <div class="at-sheet-btns">
@@ -450,5 +530,20 @@ const sealOn = icon("seal-check", "fill", "ic seal-on");
       b.addEventListener('click', function() { el.classList.add('open'); b.remove(); });
       (el.closest('.td-access p') || el).insertAdjacentElement('afterend', b);
     });
+    // The story: collapsed only when it is clearly longer than the window
+    // (about six lines), so a short story never gets a Read more.
+    var w = document.querySelector('.td-story-wrap');
+    if (w) {
+      var st = w.querySelector('.td-story'), btn = w.querySelector('.td-story-more');
+      if (st && btn && st.scrollHeight > 240) {
+        w.classList.add('is-collapsed');
+        btn.hidden = false;
+        btn.addEventListener('click', function() {
+          var c = w.classList.toggle('is-collapsed');
+          btn.textContent = btn.getAttribute(c ? 'data-more' : 'data-less');
+          if (c) { try { w.scrollIntoView({ block: 'nearest' }); } catch (e) {} }
+        });
+      }
+    }
   })();
 </script>
