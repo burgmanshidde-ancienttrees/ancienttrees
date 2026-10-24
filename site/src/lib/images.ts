@@ -478,14 +478,10 @@ export interface TreeLike {
  * check_approved_photos_reach_the_feed() now fails the deploy on it. */
 function showable(photo: Photo | null | undefined): Photo | null {
   const p = photo ?? {};
-  // Our own photograph (source "mine", 2026-10-24, the Piazza Marina fig)
-  // carries no licence line and no credit: it is ours, uncredited like a
-  // reader's. A reader's carries the terms licence and no credit.
-  const ours = p.source === "mine";
   if (
     p.url &&
-    (p.license || ours) &&
-    (p.attribution || p.source === "contributor" || ours) &&
+    p.license &&
+    (p.attribution || p.source === "contributor") &&
     (p.status === "approved" || p.status === "found_needs_check")
   ) {
     if (p.url.includes("/wiki/File:")) return null;
