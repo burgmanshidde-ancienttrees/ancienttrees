@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 night run, fifteenth attempt: one app fix, no trees
+
+The iOS run failed appfit on the new Add a photo pill: its touch target (inset -4 on all sides) put the button's right edge at W-16 against the page's W-20. Now the target grows vertically only (TreeDetail.swift addPhotoRow); not rebuilt here (no Xcode), the next ios.yml run confirms. Site deploy skips were concurrency, one deploy is running. READY leads (3) and every staged city only make trees of our own, which are paused, so no verify or write pass was dispatched. Community drafts unchanged.
+
+For Hidde: 2 Reddit replies in drafts/batch-community-preview.md
+
 ## 2026-10-24 night run, fourteenth attempt: nothing shipped
 
 No claims standing. 3 READY leads (Oxford 2, Madrid 1) have no approved photograph, and own supply is paused, so none can go live. Sightings inbox empty. Community queue: 2 open items, both already drafted (r/lisbon Santa Iria photo, r/marijuanaenthusiasts Grizzly Giant); preview rebuilt, nothing new to push. Stirling register retry already done on 10-22 and 10-23 with no new angle, left stalled.
