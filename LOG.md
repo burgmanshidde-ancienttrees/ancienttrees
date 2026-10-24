@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 late window: Reddit queue closed
+
+- Nothing new is live on the site. The 3 READY leads (2 Oxford, 1 Madrid) are our own trees, so they wait under the supply pause (a new tree of our own needs an approved photograph). No claims were standing.
+- Reddit: 15 open items, 13 closed (no tree tip, private land, or a pointer only), 2 replies drafted. The r/lisbon photo-permission reply and the Grizzly Giant reply are left unsent.
+- For Hidde: 2 Reddit replies in drafts/batch-community-preview.md.
+
 ## 2026-10-24, 13:47 window (Sonnet): nothing new, nothing shipped
 
 No trees shipped, on purpose: own supply is paused. Rung 1 empty (0 photographs waiting). Rung 2: health.py still lists the Postbox failure, the skipped smoke test and the unpasted tree-notes.sql migration; all three were answered earlier and need Hidde's Supabase login. Rung 4: harvest found 0 new comments; the 2 drafted Reddit replies already wait in drafts/batch-community-preview.md. Backup lane: Stirling is a RETRY target but was retried 10-22 and 10-23 with no register found, so not repeated. Nothing else on the ladder has work under recovery mode.
