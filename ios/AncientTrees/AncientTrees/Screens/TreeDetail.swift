@@ -114,6 +114,18 @@ struct TreeDetail: View {
     @State private var pendingPicked: LibraryPicker.Picked?
     /// "Merge with another tree" from the ⋯ menu (MergeChooser).
     @State private var merging = false
+    // NOTES FROM VISITORS (2026-10-24, Kit/TreeNotes.swift): the list, the
+    // sheet that writes one, and the sign-in it asks for first.
+    @State private var notes = TreeNotes()
+    @State private var writingNote = false
+    @State private var noteText = ""
+    @State private var noteSaving = false
+    @State private var noteFailed = false
+    @State private var noteSignIn = false
+    @Environment(Profiles.self) private var profiles
+    /// The story folded to about six lines (Hidde, 2026-10-24, lifting his
+    /// 09-27 wish for the full text: "look at the page holistically").
+    @State private var storyOpen = false
 
     /// The live record, so a draft that is saved on this page turns into a
     /// saved tree on this page without being opened again.
@@ -228,9 +240,13 @@ struct TreeDetail: View {
                     // and transport lines are ours to research, not blanks for
                     // you to fill about a tree you already stood at.
                     story
-                    if mine == nil, tree.photo != nil { addPhotoRow }
                     if mine != nil { morePhotosRow }
-                    if mine == nil, tree.hasAccessInfo { accessBlock }
+                    // THE ORDER OF THE REFERENCES (2026-10-24, AllTrails,
+                    // Google Maps, komoot): the practical rows before the
+                    // contributions, the contributions before the sources.
+                    // Add a photo sits with the notes now, not under the story.
+                    if mine == nil, hasGettingThere { gettingThere }
+                    if mine == nil { notesSection }
                     // "Something's wrong", low on the page, which is where he
                     // asked for it (2026-09-04: "de something's wrong knop maar
                     // wel naar beneden"). The vote that used to head this block
@@ -827,43 +843,54 @@ struct TreeDetail: View {
                     // space"). It is addPhotoRow, under the story.
 
             }
+        } else if mine == nil {
+            // NO PHOTOGRAPH: THE MAP IS THE PICTURE (Hidde, 2026-10-24: "i
+            // really dont like the add a photo default background";
+            // CONVENTIONS.md "A tree page without a photograph: the map is the
+            // picture"). Google Maps always opens a place on the map; AllTrails'
+            // preview map stands alone when a trail has no photos; none of them
+            // draws an empty frame. The map fills the box, the whole box opens
+            // the full map, and at its foot one card carries the ask and the
+            // Add a photo control. No inset and no swap: the hero is the map.
+            Color.clear
+                .frame(height: 300)
+                .overlay { MapInset(lat: tree.lat, lng: tree.lng, side: nil, height: 300) }
+                .clipped()
+                .contentShape(.rect)
+                .onTapGesture { navigator.push = .treeMap(tree.id) }
+                .accessibilityElement(children: .contain)
+                .accessibilityIdentifier("tree-empty-photo")
+                .overlay(alignment: .bottom) {
+                    HStack(alignment: .center, spacing: 12) {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("No photograph yet")
+                                .font(.system(size: 14, weight: .semibold))
+                                .foregroundStyle(Brand.ink)
+                            Text("Been here? Yours would be the first on this page.")
+                                .font(.system(size: 13))
+                                .foregroundStyle(Brand.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        Spacer(minLength: 0)
+                        addPhotoButton
+                    }
+                    .padding(.horizontal, 14).padding(.vertical, 12)
+                    .background(Brand.surface.opacity(0.94), in: .rect(cornerRadius: 14))
+                    .shadow(color: .black.opacity(0.12), radius: 8, y: 4)
+                    // On the page's own 20 point edges (appfit DRIFT).
+                    .padding(.horizontal, 20).padding(.bottom, 14)
+                }
         } else {
-            // The whole empty frame is the door to the camera, on a tree of
-            // ours that nobody has photographed (Hidde, 2026-08-26). The map
-            // inset stays on top of it and keeps its own tap, so the corner
-            // still goes to the map rather than to the camera.
-            // A TAP ON THE BOX, not a Button wrapping it, and the reason is
-            // the same one SheetLink was written for this afternoon.
-            //
-            // A Button's reported frame is the union of everything inside it,
-            // and this one holds two overlays, one of which is a UIKit map view
-            // whose layer sits on a half point. So the button measured 403.3 at
-            // x=-0.5 on a 402 point screen and failed the layout gate, while
-            // its own container measured 402.8: the box was never too wide, the
-            // element around it was. Half a point, invisible, and it kept the
-            // gate red, which kept the app's fresh-eyes review blind, because
-            // that review pulls its screenshots from the newest green run.
-            //
-            // The tap does exactly what the Button did and the element is
-            // declared by hand, so what VoiceOver reads is unchanged.
+            // Your own tree without a picture: the species mark on the muted
+            // surface, as before.
             Color.clear
                 .frame(height: 300)
                 .overlay { heroFallback }
                 .clipped()
-                .contentShape(.rect)
-                .onTapGesture { if mine == nil { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } }
                 .accessibilityElement(children: .combine)
-                .accessibilityAddTraits(mine == nil ? .isButton : [])
                 .accessibilityIdentifier("tree-empty-photo")
-                .accessibilityLabel(mine == nil ? "Add a photograph of this tree" : "No photograph")
+                .accessibilityLabel("No photograph")
             .overlay(alignment: .bottomTrailing) {
-                // SWAPS IN PLACE, the same as on a tree that has a photograph
-                // (Hidde, 2026-08-26: "nu is de interactie weer dat je van dat
-                // kaartje naar de map pagina gaat, maar je wilt dat je in
-                // discover blijft maar wel een kaartje opent"). This one still
-                // handed you to the Map tab, which is the behaviour the other
-                // branch lost an hour ago; a photograph-less tree is not a
-                // reason to throw away where somebody was reading.
                 Button { withAnimation(.easeInOut(duration: 0.22)) { showingMap.toggle() } } label: {
                     MapInset(lat: tree.lat, lng: tree.lng, side: 56).padding(10)
                 }
@@ -871,9 +898,6 @@ struct TreeDetail: View {
                 .accessibilityIdentifier("tree-map-swap")
                 .accessibilityLabel("Show this tree on the map")
             }
-            // Bottom left since 2026-10-14: the frame runs up under the
-            // status bar now, and at the top the pill sat behind the clock.
-            .overlay(alignment: .bottomLeading) { addPhotoButton }
         }
     }
 
@@ -1098,30 +1122,22 @@ struct TreeDetail: View {
     /// label a coordinate with a place name).
     @ViewBuilder private var placeLink: some View {
         if mine == nil {
-            // A BREADCRUMB, broad to narrow: country, city, district (Hidde,
-            // 2026-10-08: "Japan - Tokyo - neighbourhood is the build up and
-            // all clickable or at least only make things look clickable which
-            // is not the case of the neighbourhood so far"). The order
-            // AllTrails, Tripadvisor and Wikipedia use for a place. Country
-            // and city each open their page and are underlined; the district
-            // has no page, so it is plain grey text and does not pretend. It
-            // gives way first when the line is short of room. The website's
-            // tree page draws the same line (lib/place-line.ts).
-            let district = Self.placeDistrict(neighbourhood: tree.neighbourhood, city: tree.city)
-            HStack(spacing: 0) {
-                if !tree.country.isEmpty {
-                    Button { navigator.push = .country(tree.country) } label: {
-                        Text(tree.country)
-                            .underline()
-                            .lineLimit(1)
-                            .fixedSize()
-                            .frame(minHeight: 44)
-                            .contentShape(.rect)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("See every tree in \(tree.country)")
-                    crumbDot
-                }
+            // THE LAST STEP ONLY (Hidde, 2026-10-24: "is de home portugal
+            // lisbon crumble wel nodig als portugal en lisbon ook onder de
+            // titel staan?"; CONVENTIONS.md "Under the title: the last step,
+            // not the path again"). AllTrails, read on the Wayback copy of the
+            // Muir Woods page: under the title the direct holder as one link,
+            // not the country and region again. The 2026-10-08 country, city,
+            // district line is superseded. The district, plain grey because it
+            // has no page; without one the city stands in, so the line never
+            // shows a lone thumb. The website's tree page draws the same.
+            if let district = Self.placeDistrict(neighbourhood: tree.neighbourhood, city: tree.city) {
+                Text(district)
+                    .foregroundStyle(Brand.inkSoft)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+                    .frame(minHeight: 44)
+            } else {
                 Button { navigator.push = .city(tree.citySlug) } label: {
                     Text(tree.city)
                         .underline()
@@ -1130,17 +1146,9 @@ struct TreeDetail: View {
                         .contentShape(.rect)
                 }
                 .buttonStyle(.plain)
-                .layoutPriority(1)
+                .foregroundStyle(Brand.ink)
                 .accessibilityLabel("See every tree in \(tree.city)")
-                if let district {
-                    crumbDot
-                    Text(district)
-                        .foregroundStyle(Brand.inkSoft)
-                        .lineLimit(1)
-                        .truncationMode(.tail)
-                }
             }
-            .foregroundStyle(Brand.ink)
         } else if let found = minePlace {
             // Near a city we publish, so there is a page to open.
             Button { navigator.push = .city(found.slug) } label: {
@@ -1659,15 +1667,35 @@ struct TreeDetail: View {
             if tree.story.isEmpty, mine != nil {
                 blank("What makes this tree special?", .story)
             } else {
-                // IN FULL, always (Hidde, 2026-09-27: "not sure the main story
-                // deserves a read more"). The story is why the tree is worth
-                // the walk and is capped at 250 words already; Read more is for
-                // the access and transport lines, which are the long ones.
-                Text(tree.storyText)
-                    .fixedSize(horizontal: false, vertical: true)
+                // FOLDED TO ABOUT SIX LINES (Hidde, 2026-10-24: "look at the
+                // page holistically", lifting 2026-09-27's full text). AllTrails
+                // and Google Maps both truncate the description and put the
+                // practical rows before the long text. A short story never gets
+                // the button: the cut is by length, not by the view.
+                VStack(alignment: .leading, spacing: 0) {
+                    Text(tree.storyText)
+                        .lineLimit(storyOpen || !storyIsLong ? nil : 6)
+                        .fixedSize(horizontal: false, vertical: true)
+                    if storyIsLong {
+                        Button { withAnimation(.snappy) { storyOpen.toggle() } } label: {
+                            Text(storyOpen ? "Read less" : "Read more")
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Brand.moss)
+                                .padding(.top, 4)
+                                .frame(minHeight: 44, alignment: .topLeading)
+                                .contentShape(.rect)
+                        }
+                        .buttonStyle(.plain)
+                        .padding(.bottom, -18)
+                        .accessibilityIdentifier("read-more")
+                    }
+                }
             }
         }
     }
+
+    /// Six lines of story at 17 points on a phone is roughly 420 characters.
+    private var storyIsLong: Bool { tree.story.count > 420 }
 
     /// That the tree was saved, and what happens to it next, at the top of the
     /// page somebody lands on the moment they add one.
@@ -1809,20 +1837,266 @@ struct TreeDetail: View {
         }
     }
 
-    private var accessBlock: some View {
-        // A VStack of two empty lines still spends its own spacing, so a tree
-        // with neither would leave a gap in the page where a block used to be.
+    /// GETTING THERE: ONE BLOCK WITH A HEADING, on both surfaces (Hidde,
+    /// 2026-10-24: "the app section of getting there looks better, should we
+    /// get that one in web as well?"; CONVENTIONS.md). The rows, icon left in
+    /// a fixed column: how to recognise it, access only when there is
+    /// something to meet, transport. A ticket stays high in the facts card.
+    private var gettingThere: some View {
         VStack(alignment: .leading, spacing: 16) {
+            Text("Getting there")
+                .font(.brand(18, .bold, relativeTo: .headline))
+                .foregroundStyle(Brand.ink)
             // A FIXED COLUMN FOR THE ICONS, because two SF Symbols are two
             // different widths and a Label puts its text straight after its
             // own: a walking figure is narrow and a tram is wide, so these two
             // lines started their text two points apart. Nobody can name that
             // and everybody can see it, which is the whole reason the drift
             // check exists.
-            accessLine(tree.access, "figure.walk")
+            accessLine(tree.howToRecognise, "eye")
+            if showsAccess { accessLine(tree.access, "figure.walk") }
             accessLine(tree.transport, "tram.fill")
         }
         .font(.subheadline)
+        .accessibilityIdentifier("tree-getting-there")
+    }
+
+    private var hasGettingThere: Bool {
+        !tree.howToRecognise.isEmpty || showsAccess
+            || !tree.transport.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
+    /// ACCESS ONLY WHEN THERE IS SOMETHING TO MEET (Hidde, 2026-10-24: "free
+    /// public space we can leave that out, lets only say something when its
+    /// paid"). AllTrails prints "Fee required" on a trail that charges and
+    /// nothing on one that does not. "Free, public park" says nothing a
+    /// visitor must know; hours, a gate, a ticket, a view-only spot or a desk
+    /// do. The same test as the website's (TreeDetail.astro accessPlainFree).
+    private var showsAccess: Bool {
+        let a = tree.access.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !a.isEmpty, !tree.paidEntry else { return false }
+        return !Self.accessPlainFree(a)
+    }
+
+    static func accessPlainFree(_ a: String) -> Bool {
+        guard a.range(of: "^free\\b", options: [.regularExpression, .caseInsensitive]) != nil else { return false }
+        let meets = "\\d|gate|book|reception|ticket|closed|fenc|private|view|hour|open(ing)? (from|at)|permission|ask|entrance|locked|behind|except|but|however|not "
+        return a.range(of: meets, options: [.regularExpression, .caseInsensitive]) == nil
+    }
+
+    // MARK: - From people who stood here (2026-10-24)
+
+    /// The nearest trees of ours, nearest first, for the borrowed note.
+    private var nearIds: [String] { nearbyTrees.prefix(12).map(\.id) }
+
+    /// komoot's Tips and AllTrails' reviews in shape (CONVENTIONS.md, "Notes
+    /// from visitors on a tree page"): one note per person per tree, dated,
+    /// live at once, no replies or likes. Empty: the nearest tree's real note,
+    /// faded, with the line that says whose tree it is (Airbnb); nothing
+    /// nearby, a ghost example (Apple HIG: show what the content will look
+    /// like). One button, the guidance inside the sheet.
+    @ViewBuilder private var notesSection: some View {
+        if !notes.gone {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("From people who stood here")
+                    .font(.brand(18, .bold, relativeTo: .headline))
+                    .foregroundStyle(Brand.ink)
+                let here = notes.here(tree.id)
+                if let m = notes.mine {
+                    noteCard(body: m.body, date: m.date, name: "Your note",
+                             avatar: profiles.me?.avatar_url, initial: profiles.me?.display_name.first,
+                             mine: true)
+                }
+                ForEach(here) { n in
+                    noteCard(body: n.body, date: n.date, name: n.author_name ?? "A visitor",
+                             avatar: n.author_avatar, initial: n.author_name?.first, mine: false)
+                }
+                if here.isEmpty, notes.mine == nil, notes.loaded {
+                    if let b = notes.borrowed(near: nearIds),
+                       let from = nearbyTrees.first(where: { $0.id == b.tree_id }) {
+                        Text("Nobody has written about this tree yet. Nearby, at \(from.name), a visitor left this:")
+                            .font(.footnote)
+                            .foregroundStyle(Brand.inkSoft)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Button { navigator.push = .tree(from.id) } label: {
+                            noteCard(body: b.body, date: b.date, name: b.author_name ?? "A visitor",
+                                     avatar: b.author_avatar, initial: b.author_name?.first, mine: false)
+                                .opacity(0.85)
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("A note on \(from.name)")
+                    } else {
+                        // Never styled like a real note: dashed, no fill, italic.
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("Nobody yet. A note looks like this:")
+                                .font(.caption).foregroundStyle(Brand.inkSoft)
+                            Text("Best seen from the north side around four, when the sun comes through the leaves.")
+                                .font(.system(size: 15)).italic()
+                                .foregroundStyle(Brand.inkSoft)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                        .padding(.horizontal, 14).padding(.vertical, 12)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(Brand.hairline, style: StrokeStyle(lineWidth: 1, dash: [4, 3])) }
+                        .accessibilityHidden(true)
+                    }
+                }
+                // The quiet pills side by side, as Google Maps keeps Add a
+                // photo and Write a review together under a place.
+                FlowRow(spacing: 10) {
+                    noteButton
+                    if tree.photo != nil { addPhotoRow }
+                }
+                .padding(.top, 2)
+            }
+            .task(id: tree.id + (account.session?.userId ?? "")) {
+                await notes.load(tree: tree.id, near: nearIds, token: await account.freshToken())
+            }
+            .sheet(isPresented: $writingNote) { noteSheet }
+            .sheet(isPresented: $noteSignIn, onDismiss: { if account.isSignedIn { openNote() } }) {
+                SignInSheet(reason: .feedback, localCount: 0)
+            }
+            .accessibilityIdentifier("tree-notes")
+        }
+    }
+
+    /// A note as a card: the face (the picture, else the initial, else the
+    /// leaf for "A visitor"), the name at 13 semibold, the date in caption
+    /// grey, the words at 16. Yours on the moss tint.
+    private func noteCard(body: String, date: Date, name: String, avatar: String?,
+                          initial: Character?, mine: Bool) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 8) {
+                ZStack {
+                    Circle().fill(mine || initial != nil ? Brand.moss : Brand.creamDark)
+                    if let avatar, let u = URL(string: avatar) {
+                        TreePhoto(url: u) { Color.clear }.clipShape(.circle)
+                    } else if let initial {
+                        Text(String(initial).uppercased())
+                            .font(.brand(12, .black, relativeTo: .caption))
+                            .foregroundStyle(Brand.onMoss)
+                    } else {
+                        Image(systemName: "leaf.fill")
+                            .font(.system(size: 12, weight: .semibold))
+                            .foregroundStyle(Brand.moss)
+                    }
+                }
+                .frame(width: 28, height: 28)
+                .accessibilityHidden(true)
+                Text(name)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(Brand.ink)
+                    .lineLimit(1)
+                Spacer(minLength: 8)
+                Text(date.formatted(date: .abbreviated, time: .omitted))
+                    .font(.caption).foregroundStyle(Brand.inkSoft)
+            }
+            Text(body)
+                .font(.system(size: 16))
+                .lineSpacing(3)
+                .foregroundStyle(Brand.ink)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(.horizontal, 14).padding(.vertical, 12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(mine ? Brand.mossTint : Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+    }
+
+    /// The one ask, a quiet pill like addPhotoRow (Hidde, 2026-10-24: "the
+    /// text and button dont really work together this way"): the guidance is
+    /// inside the sheet.
+    private var noteButton: some View {
+        Button { openNote() } label: {
+            Label(notes.mine == nil ? "Leave a note for the next visitor" : "Edit your note",
+                  systemImage: "square.and.pencil")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Brand.ink)
+                .padding(.horizontal, 18)
+                .frame(minHeight: 44)
+                .overlay { Capsule().strokeBorder(Brand.hairline, lineWidth: 1) }
+                .contentShape(.capsule)
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("tree-note-ask")
+    }
+
+    /// Signed out, the sign-in sheet and nothing else (hard rule 11: the
+    /// server decides who is signed in). The gate is SignedOutWalk's
+    /// testNoteAsks.
+    private func openNote() {
+        guard account.isSignedIn else { noteSignIn = true; return }
+        noteText = notes.mine?.body ?? ""
+        noteFailed = false
+        writingNote = true
+    }
+
+    /// THE NOTE SHEET (CONVENTIONS.md "One button, the guidance inside the
+    /// sheet"; the web's note-dlg): the prompt as the field's placeholder, two
+    /// examples under it, the name and date it will show, Add note. Editing
+    /// your own note reopens it prefilled with Save and Delete.
+    private var noteSheet: some View {
+        let named = (profiles.myPublic ?? false) ? profiles.me?.display_name : nil
+        return BrandSheet(
+            title: "A note for the next visitor",
+            message: tree.name,
+            buttons: [
+                .primary(notes.mine == nil ? "Add note" : "Save note", id: "tree-note-send") { submitNote() },
+            ] + (notes.mine != nil ? [SheetButton.destructiveQuiet("Delete note", id: "tree-note-delete") { deleteNote() }] : [])
+              + [.quiet("Cancel") { writingNote = false }],
+            footnote: noteFailed ? "That did not go through. Try again in a moment." : nil,
+            extra: {
+                VStack(alignment: .leading, spacing: 10) {
+                    ZStack(alignment: .topLeading) {
+                        TextEditor(text: $noteText)
+                            .font(.system(size: 16))
+                            .scrollContentBackground(.hidden)
+                            .frame(minHeight: 120)
+                            .padding(.horizontal, 10).padding(.vertical, 8)
+                            .background(Brand.surfaceMuted, in: .rect(cornerRadius: 14))
+                            .accessibilityIdentifier("tree-note-field")
+                        if noteText.isEmpty {
+                            Text("What should they know? Where to stand, when to come, what you noticed.")
+                                .font(.system(size: 16))
+                                .foregroundStyle(Brand.inkSoft.opacity(0.7))
+                                .padding(.horizontal, 15).padding(.vertical, 16)
+                                .allowsHitTesting(false)
+                        }
+                    }
+                    Text("For example: \u{201C}Best seen from the north side around four, when the sun comes through.\u{201D} Or: \u{201C}There was a church on this square until 1755.\u{201D}")
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Text(named.map { "Shown as \($0) with today's date. Public right away." }
+                         ?? "Shown as \u{201C}A visitor\u{201D} with today's date. Public right away.")
+                        .font(.footnote).foregroundStyle(Brand.inkSoft)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.top, 16)
+                .disabled(noteSaving)
+            })
+    }
+
+    private func submitNote() {
+        let text = noteText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !text.isEmpty, !noteSaving else { return }
+        noteSaving = true
+        Task {
+            guard let token = await account.freshToken() else { noteSaving = false; noteSignIn = true; return }
+            let ok = await notes.save(tree: tree.id, body: text, token: token)
+            noteSaving = false
+            if ok { writingNote = false } else { noteFailed = true }
+        }
+    }
+
+    private func deleteNote() {
+        guard !noteSaving else { return }
+        noteSaving = true
+        Task {
+            guard let token = await account.freshToken() else { noteSaving = false; return }
+            let ok = await notes.delete(tree: tree.id, token: token)
+            noteSaving = false
+            if ok { writingNote = false } else { noteFailed = true }
+        }
     }
 
     /// The highest-intent moment there is for this feature: you are on a tree
@@ -1875,13 +2149,10 @@ struct TreeDetail: View {
             Button { navigator.collectAbout = tree.name; navigator.collectTree = tree.id; navigator.collectAddsPhoto = true; navigator.collectNearby = true } label: {
                 Label("Add a photo", systemImage: "camera.fill")
                     .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(Brand.ink)
+                    .foregroundStyle(Brand.onMoss)
                     .padding(.horizontal, 14)
                     .frame(minHeight: 44)
-                    .background(.regularMaterial, in: .capsule)
-                    // On the page's own 20 point edge, like every other
-                    // left edge on the tree page (appfit DRIFT, 2026-10-12).
-                    .padding(.leading, 20).padding(.bottom, 10)
+                    .background(Brand.moss, in: .capsule)
             }
             .buttonStyle(.plain)
             .accessibilityIdentifier("tree-add-photo")

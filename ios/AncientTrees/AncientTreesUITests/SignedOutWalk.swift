@@ -69,6 +69,15 @@ final class SignedOutWalk: XCTestCase {
         tap(app, "worthit-count"); expectSignIn(app, after: "worthit-count")
     }
 
+    func testNoteAsks() {
+        // "Leave a note for the next visitor" (2026-10-24), under the story.
+        let app = launch(["-tree=ams_001"])
+        let b = app.descendants(matching: .any)["tree-note-ask"].firstMatch
+        XCTAssertTrue(b.waitForExistence(timeout: 10), "the note button is not on the tree page")
+        app.swipeUp(); app.swipeUp()
+        tap(app, "tree-note-ask"); expectSignIn(app, after: "tree-note-ask")
+    }
+
     func testCollectAsksBeforeTheChoice() {
         // Sign in FIRST, then the overlay (Hidde, 2026-10-12: "first login
         // than overlay"): every way to collect needs the account, so the
