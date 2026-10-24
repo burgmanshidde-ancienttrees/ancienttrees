@@ -1,12 +1,12 @@
 # Six people on r/sicily answered overnight
 
-A reply to five of them below. One sentence that answers what was asked, no photo asks, lower-case is fine (HIS_VOICE.md, calibrations 10-22 and 10-23). Posted by hand, never by a run.
+A reply to five of them below. One sentence that answers what was asked, a photo ask only where they stood there themselves, lower-case is fine (HIS_VOICE.md, calibrations 10-22 and 10-23). Posted by hand, never by a run.
 
 **ILGIOVlNEITALIANO** (Villino Favaloro, now live):
 > Thanks! Turns out it's a Ficus virens, apparently 10 metres round. Added it: ancienttrees.app/palermo/the-white-fig-of-villino-favaloro
 
 **SuccoDiFruttaEU** (the Ficuzza oak, ~400 years):
-> That sounds amazing, do you remember roughly where in the forest it is?
+> That sounds amazing, do you remember roughly where in the forest it is? And if you happen to have a photo I'd love to see it
 
 **ohno** (the 2,000-year olive in "Innari"):
 > Where is Innari? I can't find it on the map
