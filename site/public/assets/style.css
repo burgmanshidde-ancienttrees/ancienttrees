@@ -1078,6 +1078,7 @@ dialog.at-sheet .priv-step .set-foot { text-align: left; }
 .addphoto-btn.tonal { background: var(--moss-light); color: var(--moss); display: inline-flex; align-items: center;
   gap: 6px; min-height: 36px; height: 36px; padding: 0 14px; font-size: 14px; }
 .addphoto-btn.tonal .ic { width: 18px; height: 18px; flex: none; }
+@media (max-width: 899px) { .addphoto-btn.tonal { min-height: 44px; height: 44px; } }
 .addphoto-note { margin: 0.5rem 0 0; font-family: var(--sans); font-size: 13px;
   line-height: 1.45; color: var(--ink-mid); }
 /* Whose photographs we can use, said once under the button (2026-09-24). */
