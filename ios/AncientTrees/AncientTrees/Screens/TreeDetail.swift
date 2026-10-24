@@ -2228,7 +2228,9 @@ struct TreeDetail: View {
                 .padding(.horizontal, 14)
                 .frame(height: 36)
                 .background(Brand.mossTint, in: .capsule)
-                .contentShape(.rect.inset(by: -4))
+                .padding(.vertical, 4)
+                .contentShape(.rect)
+                .padding(.vertical, -4)
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("tree-add-photo")
