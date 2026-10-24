@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 17:09 window (fifth attempt): nothing shipped
+
+Nothing changed in the product. The inbox is empty, and health.py's 'skipped' builds and the Postbox failure are the ones already answered. Own supply is paused and READY is still 3 own leads. `private_store.py pull` brought back the Reddit queue with 17 open items, duplicates again, though the harvest found 0 new comments. None carries a tree tip, and the r/lisbon commenter has still not posted a location. I did not re-close the queue, because the next pull restores it. The queue and the pull need a fix: `--done` loses its effect once a pull restores the duplicates. For Hidde: the 2 Reddit replies in drafts/batch-community-preview.md still wait.
+
 ## 2026-10-24 (fourth attempt): nothing shipped, state re-checked
 
 Nothing changed in the product. No claims standing, inbox empty, health.py's 'skipped' builds are log-only pushes (path filters) and the Postbox failure was already answered. READY is still 3 own leads (oxford 2, madrid 1) under a paused supply. The Stirling register retry has been tried on 10-15, 10-22 and 10-23 with no new angle, so I did not repeat it. Open for the next run: check the r/lisbon thread for the commenter's tree location; the 997 leads needing only a source could feed a verify pass on a staged US city (fort-worth, portland, san-francisco), which is leads-only work while supply is paused.
