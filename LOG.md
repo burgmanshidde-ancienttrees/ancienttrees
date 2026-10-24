@@ -11,6 +11,12 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 night run, thirteenth attempt (short)
+
+Nothing shipped; no product change. Checked: no claims standing, sighting inbox empty, no new Reddit comments. The 3 READY leads (Oxford x2, Madrid) have no approved photograph and own supply is paused, so they wait. health.py's smoke/deploy flags predate the 44px Add-a-photo fix (92166dd74); the 23:22 deploy succeeded and pushes are skipped by design.
+For Hidde: 2 Reddit replies in drafts/batch-community-preview.md (r/lisbon Santa Iria photo ask, r/marijuanaenthusiasts Grizzly Giant).
+The iOS workflow still reads failure (0.8h ago): log not read this attempt.
+
 ## 2026-10-24 23:44 window
 
 - Rung 2: the smoke test was red because the new "Add a photo" pill on tree pages was 36px tall at 375px (floor 44). Now 44px on phones (style.css, `.addphoto-btn.tonal`), pushed as 92166dd74. Reader inbox empty. Not yet re-verified by a smoke run; the next smoke run will say.
