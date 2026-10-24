@@ -9,6 +9,7 @@ Sources:
 
 Stdlib only (hard rule 5). Safe to run twice a day: the second run is a no-op.
 """
+import collections
 import datetime
 import hashlib
 import ours as _ours
@@ -1781,6 +1782,7 @@ def product_section(today):
 
     try:
         acc, newest_at, page = 0, None, 1
+        recent = collections.Counter()
         while page <= 10:
             users, _ = _supa("/auth/v1/admin/users?page=%d&per_page=1000" % page, key)
             users = (users or {}).get("users") or []
@@ -1790,12 +1792,19 @@ def product_section(today):
                 c = u.get("created_at")
                 if c and (newest_at is None or c > newest_at):
                     newest_at = c
+                d = _days_since(c, today) if c else None
+                if d is not None and d <= 1:
+                    recent[d] += 1
             if len(users) < 1000:
                 break
             page += 1
         since = _days_since(newest_at, today)
         if since is not None and since <= 1:
-            ATTENTION.append("an account was opened %s (%d total)" % (_ago(since), acc))
+            # Counted, not "an account": 2026-10-24 opened six and the line
+            # still said one.
+            n = recent[since]
+            ATTENTION.append("%s opened %s (%d total)" % (
+                "an account was" if n == 1 else "%d accounts were" % n, _ago(since), acc))
         out.append("- %-12s %d total, newest %s" % ("Accounts:", acc, _ago(since)))
     except Exception as e:
         out.append("- Accounts: unreadable (%s)" % str(e)[:60])
