@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 eighth attempt: nothing shipped
+
+Nothing changed in the product. No claims, inbox empty, READY is the same 3 own leads (oxford 2, madrid 1) under the supply pause, so no write pass. health.py's skipped builds and Postbox failure are the ones already answered. No new angle.
+
 ## 2026-10-24 seventh attempt: nothing shipped
 
 Nothing changed in the product. No claims standing, inbox empty, READY is still 3 own leads (oxford 2, madrid 1) under the supply pause. The Reddit queue came back with the same duplicates and no tree tip. Nothing new to act on.
