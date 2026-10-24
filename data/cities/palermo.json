@@ -50,13 +50,15 @@
       "access": "Free, public square (Piazza Marina / Giardino Garibaldi)",
       "transport": "15 min walk from Palermo Centrale station, near the historic harbour",
       "photo": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Fico_magnolioide%2C_Piazza_Marina%2C_Palermo.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Margherito1, via Wikimedia Commons",
+        "url": "https://ancienttrees.app/photos/pal_001-the-ficus-of-piazza-marina.jpg",
+        "license": null,
+        "attribution": null,
         "status": "approved",
-        "width": 3264,
-        "height": 2448,
-        "taken_month": 6
+        "width": 1200,
+        "height": 1600,
+        "taken_month": 10,
+        "source": "mine",
+        "note": "Our own photograph, taken 2026-10-15 from the pavement outside the railings, a person in front for scale; Hidde says it is this tree (2026-10-24, 'just add it'). No GPS in the file. Looked at: daylight, colour, the crown and the aerial-root trunk fill the frame. Uncredited, never named. The Commons photograph that led before moved into the strip."
       },
       "curation_status": "flagged",
       "notes": "Location taken directly from Italy's official AMI national monumental-trees register (read with a purpose-built binary XLS parser), confirmed. Age and history corroborated by Italian Wikipedia and Il Post's March 2026 report on the tree's declining health, which is the source for the disease details in the story; this is a live, evolving situation, worth a status recheck on future passes. The circumference figure is genuinely disputed between sources (20m vs 36m), presented as such rather than picking one. The 'largest tree in Europe' superlative sometimes attached to this tree is deliberately not used here per hard rule 8, since the Orto Botanico's own ficus (pal_003) carries a more specifically sourced canopy-area superlative that would conflict with it. Photo viewed directly: an unmistakable mature Ficus macrophylla with a dense forest of aerial roots and secondary trunks behind an ornamental iron fence, matching the square and story exactly.",
@@ -68,7 +70,18 @@
       "official_register": {
         "name": "Elenco degli alberi monumentali d'Italia (MASAF), Sicilia, no. 03/G273/PA/19",
         "url": null
-      }
+      },
+      "photos": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Fico_magnolioide%2C_Piazza_Marina%2C_Palermo.jpg",
+          "license": "CC BY-SA 4.0",
+          "attribution": "Margherito1, via Wikimedia Commons",
+          "status": "approved",
+          "width": 3264,
+          "height": 2448,
+          "taken_month": 6
+        }
+      ]
     },
     {
       "id": "pal_002",
