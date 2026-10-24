@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 
+## 2026-10-24 (third attempt): Reddit queue closed for real, no trees
+
+Nothing shipped to the product. No claims were standing; 3 READY leads (oxford 2, madrid 1) are own trees, and own supply is paused. The inbox was empty. `private_store.py pull` had restored the Reddit queue with duplicate ids, so the earlier `--done` calls were lost and `--done` only touched the first of two copies. I deduplicated data/outreach-community.json and closed everything without a tip. Two items stay open: the Santa Iria cypress photo ask (Hidde posts it) and the Grizzly Giant reply (the stale Grant draft is gone). One r/lisbon commenter (19riuyxs4wn0g) still owes a location; check that thread. Pushed to the private store.
+For Hidde: 2 Reddit replies in drafts/batch-community-preview.md.
+
 ## 2026-10-24 (late window): Reddit queue closed, no trees
 
 Nothing shipped to the product. No claims were standing. Only 3 READY leads (oxford 2, madrid 1), under the six-candidate minimum for a pass, and own supply is paused. The sightings inbox was empty. Reddit: 12 open items, 3 with drafts, the other 9 closed with `--done` (no tip, no location). I rewrote the Grizzly Giant draft, which wrongly put 1903 "earlier than Grant"; it was Roosevelt who camped with Muir. For Hidde: 3 Reddit replies in drafts/batch-community-preview.md. Archive-ask lead from the thread: digarb.hku.hk (HKU Hong Kong tree registry) and Gigantes Verdes (Portugal) as contacts.
