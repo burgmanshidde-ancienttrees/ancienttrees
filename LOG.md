@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24 08:34 window: nothing shipped
+
+- Inbox empty. health.py exit 1 is the same iOS hang plus the push-skipped smoke test. Supply paused, READY is 3 photo-less own trees, so no write pass.
+- `photo_hunt.py --recheck` found 0 new candidates; `photo_fetch.py --roster` fetched 2 (lux_009, iNat leaf and seedling close-ups). I looked at both and they are not the tree; `photo_verdicts.py` refused the reject ("no candidate matching luxembourg-city"), so nothing was recorded. Not debugged.
+
 ## 2026-10-24 night run, restart after early stop: nothing shipped
 
 - No claims standing, sighting inbox empty. READY leads are 3 (Oxford 2, Madrid 1), all our own trees, held by SUPPLY_PAUSED and ADD_NEEDS_PHOTO, so no write pass.
