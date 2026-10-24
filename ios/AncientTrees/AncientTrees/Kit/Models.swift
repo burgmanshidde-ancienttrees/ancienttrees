@@ -216,6 +216,9 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
     /// memberwise initialiser keeps compiling at every call site and a feed
     /// that does not carry it decodes to nil.
     public var girthCm: Int? = nil
+    /// Readers' Want to go saves, a count the feed carries (lib/saves.ts):
+    /// the map's pin order where two pins collide (MapLayers.pinPriority).
+    public var saves: Int? = nil
     /// Set when this tree is a day trip from its city rather than a walk in
     /// town. Decided by the website (site/src/lib/day-trips.ts) and read here,
     /// never re-decided: the answer travels, the rule stays on the server.
@@ -251,6 +254,7 @@ public struct Tree: Codable, Identifiable, Hashable, Sendable {
         case citySlug = "city_slug"
         case bestTime = "best_time"
         case girthCm = "girth_cm"
+        case saves
         case dayTrip = "day_trip"
         case storyLatin = "story_latin"
     }

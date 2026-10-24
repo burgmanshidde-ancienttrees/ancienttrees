@@ -23,6 +23,7 @@ import type { CityEntry } from "./trees";
 import { peakFor, seasonKey } from "./phenology";
 import { renderableTrees, slugify } from "./trees";
 import { usablePhoto, usablePhotos, thumbUrl, cardUrl, creditRequired, creditName, creditText, heroFrame } from "./images";
+import { savesOf } from "./saves";
 import { BASE_URL } from "./schema";
 import { latinRanges } from "./latin";
 
@@ -96,6 +97,9 @@ export interface FeedTree {
    * the app decodes an Int: one 365.8 would make Swift reject the whole trees
    * array, and every phone would quietly stop updating. */
   girth_cm: number | null;
+  /** Readers' Want to go saves, counts only (lib/saves.ts). The app's pin
+   * order where two pins collide (TreeMap.swift pinPriority). */
+  saves: number;
   /** Set only on a tree that is a day trip from its city (lib/day-trips.ts). */
   day_trip?: DayTrip;
   url: string;
@@ -173,6 +177,7 @@ export function feedTrees(cities: CityEntry[]): FeedTree[] {
           const g = Number((t as any).girth_cm);
           return Number.isFinite(g) && g > 0 ? Math.round(g) : null;
         })(),
+        saves: savesOf(t.id),
         url: `/${city.id}/${slugify(t.name)}`,
         // No `register`: the official register is shown on the website only,
         // in the tree's sources (Hidde, 2026-10-08: remove from the app).

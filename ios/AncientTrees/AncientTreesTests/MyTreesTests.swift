@@ -848,7 +848,14 @@ struct WhenPermissionIsRefused {
     /// whole of our ranking (Airbnb ranks by bookability; we rank by what is
     /// worth the walk).
     @Test func aPhotographedTreeIsPlacedFirst() {
-        #expect(MapLayers.pinPriority(hasPhoto: true) < MapLayers.pinPriority(hasPhoto: false))
+        #expect(MapLayers.pinPriority(hasPhoto: true, saves: 0) < MapLayers.pinPriority(hasPhoto: false, saves: 500))
+    }
+
+    /// And among photographed trees, the one more readers saved (Hidde,
+    /// 2026-10-24: "photo and likes").
+    @Test func theSavedTreeIsPlacedBeforeTheUnsavedOne() {
+        #expect(MapLayers.pinPriority(hasPhoto: true, saves: 3) < MapLayers.pinPriority(hasPhoto: true, saves: 0))
+        #expect(MapLayers.pinPriority(hasPhoto: false, saves: 3) < MapLayers.pinPriority(hasPhoto: false, saves: 0))
     }
 
     /// The distance two pin centres keep is the website's PIN_DISTANCE

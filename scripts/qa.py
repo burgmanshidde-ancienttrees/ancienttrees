@@ -2368,6 +2368,10 @@ def check_every_map_shows_pins_the_same_way():
         elif m and float(a.group(1)) != float(m.group(1)):
             problems.append("the app places pins %s apart and the website %s: one rule, one number"
                             % (a.group(1), m.group(1)))
+        # And the priority is one arithmetic: a photograph, then readers' saves.
+        if "(hasPhoto ? 0 : 100000) - Math.min(Math.max(0, Math.round(saves)), 99999)" not in web \
+                or "(hasPhoto ? 0 : 100_000) - min(max(0, saves), 99_999)" not in src:
+            problems.append("pinPriority differs between lib/map.ts and TreeMap.swift: photo first, then saves, one arithmetic")
         # And where a same-spot stack becomes its bubble, the one bubble left.
         wz = re.search(r"export const STACK_ZOOM = (\d+);", web)
         az = re.search(r"static let stackZoom\s*=\s*(\d+(?:\.\d+)?)", src)

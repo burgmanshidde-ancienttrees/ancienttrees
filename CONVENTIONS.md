@@ -1371,8 +1371,11 @@ altijd de boom. Web en app."
 **What we do, everywhere, since 2026-10-24:** every tree is drawn. A tree
 gets its full pin when no full pin already stands within 40 points of it
 (`PIN_DISTANCE` in lib/map.ts, `pinDistance` in TreeMap.swift; qa holds the
-two equal), placed in order: a tree with a photograph first, then our own
-order (`pr` on every feature). A tree whose pin did not fit is a small dot
+two equal), placed in order: a tree with a photograph first, then the tree
+more readers saved to Want to go (Hidde, the same day: "i think photo and
+likes are the best way"; counts in data/tree-saves.json, nightly from
+scripts/tree_saves.py), then our own order (`pr` on every feature,
+`pinPriority()` in lib/map.ts and TreeMap.swift). A tree whose pin did not fit is a small dot
 (14px cream with a moss ring on the city map's species pins; a 4px moss dot
 on the circle-pin maps and in the app) that still opens or selects its
 tree. Nothing ever zooms for you. The circle-pin maps and the app hand the

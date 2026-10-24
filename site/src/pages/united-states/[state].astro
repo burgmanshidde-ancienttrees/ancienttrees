@@ -16,7 +16,8 @@ import { GROUP_ORDER, speciesGroup, speciesCommon, speciesScientific, speciesPag
 import { usablePhoto, cityFace, cityFaceTree, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../../lib/schema";
 import { fitTitle } from "../../lib/title";
-import { mapHead, countryMapScript } from "../../lib/map";
+import { mapHead, countryMapScript, pinPriority } from "../../lib/map";
+import { savesOf } from "../../lib/saves";
 import { TREE_ACTIONS_JS } from "../../lib/tree-actions-js";
 import { usStateOf, stateSlug, assertEveryUsPlaceHasAState, STATE_MIN_TREES, STATE_MIN_PLACES } from "../../lib/us-states";
 
@@ -168,7 +169,7 @@ const mapScript = countryMapScript(
     markers: renderableTrees(c.city).map((t) => {
       const ts = treeSlugsForCity(c.city)[t.id];
       return { lat: t.location.latitude!, lng: t.location.longitude!, url: ts ? `/${c.slug}/${ts}` : undefined,
-               pr: (usablePhoto(t) ? 0 : 1) as 0 | 1 };
+               pr: pinPriority(Boolean(usablePhoto(t)), savesOf(t.id)) };
     }),
   })),
   undefined

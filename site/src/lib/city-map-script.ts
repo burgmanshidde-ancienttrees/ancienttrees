@@ -20,7 +20,7 @@
 // proximity check that needed it went; there is no duplicate of it left here.
 import {MAP_STYLE, MAP_CREDIT} from "./site-config";
 import { NO_PHOTO_CARD } from "./images";
-import { mapScript, PIN_DISTANCE, STACK_ZOOM, PILES_JS, PINS_JS } from "./map";
+import { mapScript, pinPriority, PIN_DISTANCE, STACK_ZOOM, PILES_JS, PINS_JS } from "./map";
 import { distSpan } from "./trees";
 import type { WalkMarker, Walk } from "./walks";
 import { icon } from "./icons";
@@ -145,9 +145,10 @@ export function cityMapScript(
     ],
   });
   // Which tree gets its full pin where two would collide: a photograph
-  // first, then our own order (lib/map.ts, PIN_DISTANCE).
+  // first, then readers' saves, then our own order (lib/map.ts pinPriority).
   const pinOrderJson = JSON.stringify(
-    markers.map((m, i) => i).sort((a, b) => Number(!markers[a].shot) - Number(!markers[b].shot) || a - b)
+    markers.map((m, i) => i).sort((a, b) =>
+      pinPriority(markers[a].shot, markers[a].saves ?? 0) - pinPriority(markers[b].shot, markers[b].saves ?? 0) || a - b)
   );
   const ranked = [...otherCities].sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99) || b.n - a.n);
   const chooserCitiesJson = JSON.stringify(

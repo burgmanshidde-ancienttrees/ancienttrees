@@ -1322,7 +1322,7 @@ enum MapLayers {
             // them, which reads as a season rather than as a paint chart.
             f.attributes = [idKey: t.id, "icon": name, "peaking": peaking,
                             countKey: 1, kindKey: "tree", "at_label": "",
-                            "pr": pinPriority(hasPhoto: t.photo != nil)]
+                            "pr": pinPriority(hasPhoto: t.photo != nil, saves: t.saves ?? 0)]
             features.append(f)
         }
         state(for: style).leaves = features
@@ -1466,11 +1466,15 @@ enum MapLayers {
     /// clustering this map no longer does. The website's STACK_ZOOM.
     static let stackZoom = 14.0
 
-    /// Which tree gets the full pin where two collide: one with a photograph
-    /// before one without. Airbnb ranks by what you are likely to book; we
-    /// rank by what is worth the walk, and a photograph is the one thing on a
-    /// pin that answers that. Lower places first.
-    nonisolated static func pinPriority(hasPhoto: Bool) -> Int { hasPhoto ? 0 : 1 }
+    /// Which tree gets the full pin where two collide, lower first: one with
+    /// a photograph before one without, and among equals the tree more
+    /// readers saved to Want to go (Hidde, 2026-10-24: "i think photo and
+    /// likes are the best way"; `saves` in the feed). Airbnb ranks by what
+    /// you are likely to book; we rank by what is worth the walk. The same
+    /// arithmetic as lib/map.ts pinPriority(); qa holds the two equal.
+    nonisolated static func pinPriority(hasPhoto: Bool, saves: Int) -> Int {
+        (hasPhoto ? 0 : 100_000) - min(max(0, saves), 99_999)
+    }
 
     /// Hand the style every tree. Nothing here groups anything: MapLibre
     /// decides pin or dot at every zoom by itself (addTreeLayers), so a zoom

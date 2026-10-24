@@ -14,7 +14,8 @@ import { COUNTRY_MIN_CITIES, GROUP_ORDER, speciesGroup, speciesCommon, speciesSc
 import { usablePhoto, imgSrcset, cityFace, countryFaceTree, metaImageUrls, ogImageUrl, NO_PHOTO_SVG } from "../lib/images";
 import { breadcrumbSchema, ldScript, SITE_SCHEMA, BASE_URL } from "../lib/schema";
 import { fitTitle } from "../lib/title";
-import { mapHead, countryMapScript, countryName } from "../lib/map";
+import { mapHead, countryMapScript, pinPriority, countryName } from "../lib/map";
+import { savesOf } from "../lib/saves";
 // The shared tree card carries a save heart, and a heart is a no-op without
 // the delegated handler and the sign-in dialog behind it. qa.py enforces the
 // pairing; this is the page paying it.
@@ -272,7 +273,7 @@ const mapScript = countryMapScript(
     markers: renderableTrees(c.city).map((t) => {
       const ts = treeSlugsForCity(c.city)[t.id];
       return { lat: t.location.latitude!, lng: t.location.longitude!, url: ts ? `/${c.slug}/${ts}` : undefined,
-               pr: (usablePhoto(t) ? 0 : 1) as 0 | 1 };
+               pr: pinPriority(Boolean(usablePhoto(t)), savesOf(t.id)) };
     }),
   })),
   intro.data.map_frame,

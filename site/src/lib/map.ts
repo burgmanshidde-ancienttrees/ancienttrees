@@ -61,9 +61,10 @@ setTimeout(function () {
  *  niet dat je altijd inzoomt bij bubbels klikken."
  *
  *  So every map draws every tree, and the only question is which get the
- *  full pin: a tree with a photograph before one without (`pr` on the
- *  feature, 0 or 1; Airbnb ranks by what you are likely to book, we rank by
- *  what is worth the walk), then our own order, and a pin that would collide
+ *  full pin: a tree with a photograph before one without, then the one more
+ *  readers saved (`pr` on the feature, pinPriority(); Airbnb ranks by what
+ *  you are likely to book, we rank by what is worth the walk), then our own
+ *  order, and a pin that would collide
  *  with one already placed is drawn as a dot instead. PIN_DISTANCE is the
  *  collision rule, centre to centre, the same 40 the app uses (TreeMap.swift,
  *  pinDistance) and supercluster's own default. The circle-pin maps (explore,
@@ -72,6 +73,16 @@ setTimeout(function () {
  *  (city-map-script.ts). The one bubble left is a same-spot stack, below.
  *  qa: check_every_map_shows_pins_the_same_way(). */
 export const PIN_DISTANCE = 40;
+
+/** WHICH TREE GETS THE FULL PIN where two collide, as a sort key, lower
+ *  first: a photograph before none, and among equals the tree more readers
+ *  saved to Want to go (Hidde, 2026-10-24: "i think photo and likes are the
+ *  best way"; saves from data/tree-saves.json, lib/saves.ts). The app's
+ *  TreeMap.swift pinPriority is the same arithmetic; qa holds the two equal.
+ *  Kept small so a feature carries one short number. */
+export function pinPriority(hasPhoto: boolean, saves: number): number {
+  return (hasPhoto ? 0 : 100000) - Math.min(Math.max(0, Math.round(saves)), 99999);
+}
 /** The full pin on the circle-pin maps: a moss disc with a 2px cream ring. */
 export const PIN_RADIUS = 7;
 /** The dot a tree becomes where its pin did not fit. */
@@ -281,8 +292,8 @@ export interface CountryMapCity {
   slug: string;
   city: string;
   count: number;
-  /** `pr` 0 for a tree with a photograph, 1 without: which gets the full pin first. */
-  markers: { lat: number; lng: number; url?: string; pr?: 0 | 1 }[];
+  /** pinPriority(): which tree gets the full pin first. */
+  markers: { lat: number; lng: number; url?: string; pr?: number }[];
 }
 
 /** Every tree in the country, drawn the way /explore and the app draw them
@@ -362,9 +373,8 @@ export interface ExploreTreeFeature {
     id: string; name: string; url: string; cs: string; city: string; age: string; now: 0 | 1;
     /** Behind a ticket. The filter hides these; 241 of 3,055 trees. */
     paid?: 0 | 1;
-    /** 0 with a photograph, 1 without: which tree gets the full pin where two
-     *  collide (PIN_DISTANCE). */
-    pr?: 0 | 1;
+    /** pinPriority(): which tree gets the full pin where two collide. */
+    pr?: number;
     /** Index into the species list the page ships beside the features. An
      *  index rather than the name, because 3,055 copies of "Pedunculate Oak"
      *  is 45KB of the same twelve words. */

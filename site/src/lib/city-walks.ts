@@ -9,6 +9,7 @@
 import { walkableTrees, type CityEntry, type Tree } from "./trees";
 import { speciesIcon } from "./species-icons";
 import { usablePhoto } from "./images";
+import { savesOf } from "./saves";
 import { planWalks, walkRouteFor, humanDuration, kmLabel, type WalkMarker } from "./walks";
 
 export interface PageWalk {
@@ -40,6 +41,7 @@ export function pageWalksFor(city: CityEntry): PageWalk[] {
     id: t.id,
     area: (t.location.neighbourhood ?? "").trim(),
     shot: Boolean(usablePhoto(t)),
+    saves: savesOf(t.id),
   }));
 
   const out: PageWalk[] = [];

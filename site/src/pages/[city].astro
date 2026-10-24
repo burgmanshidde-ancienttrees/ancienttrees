@@ -31,6 +31,7 @@ import { VISITED_SYNC_JS } from "../lib/visited-sync-js";
 import { type WalkMarker } from "../lib/walks";
 import { hasWalksPage } from "../lib/city-walks";
 import { cityMapScript } from "../lib/city-map-script";
+import { savesOf } from "../lib/saves";
 import { SHEET_JS } from "../lib/sheet-js";
 import { otherCitiesFor, nearbyCitiesFor, cityCentre } from "../lib/other-cities";
 import { publishedStatePages, usStateOf } from "../lib/us-states";
@@ -185,6 +186,7 @@ const markers: WalkMarker[] = trees.map((t, i) => {
     id: t.id,
     area: (t.location.neighbourhood ?? "").trim(),
     shot: Boolean(cphoto),
+    saves: savesOf(t.id),
     ...(t.paid_entry ? { paid: true } : {}),
     ...(pk?.map ? { peak: { months: pk.months, effect: pk.map.effect, colour: pk.map.colour, ...(pk.level ? { level: pk.level } : {}) } } : {}),
   };
