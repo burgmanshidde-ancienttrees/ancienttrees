@@ -110,8 +110,12 @@ const swipe = variant === "hero" && (many || withAdd);
   <div class="photo-stage">
     <div class="photo-track">
       <button type="button" class="photo-open" aria-label={t.photoOpen} data-i="0">
+        {/* The hero's lead is the first thing on the page, so it loads at once
+            and first (2026-10-25: lazy kept the top of every tree page white
+            for seconds, measured on /paris and /lisbon at 375 and desktop). */}
         <img {...imgSrcset(lead.url, widths, sizes, shots[0].dims.width, shots[0].dims.height)}
-             alt={alt} loading="lazy" />
+             alt={alt} loading={variant === "hero" ? "eager" : "lazy"}
+             fetchpriority={variant === "hero" ? "high" : undefined} />
       </button>
       {swipe && shots.slice(1).map((s, i) => (
         <button type="button" class="photo-open photo-slide" aria-label={s.label} data-i={i + 1}>
