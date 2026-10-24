@@ -481,7 +481,9 @@ function showable(photo: Photo | null | undefined): Photo | null {
   if (
     p.url &&
     p.license &&
-    (p.attribution || p.source === "contributor") &&
+    // A reader's photograph and our own (source "mine", 2026-10-24) print no
+    // name; both still carry a licence line, which the feed sends as a string.
+    (p.attribution || p.source === "contributor" || p.source === "mine") &&
     (p.status === "approved" || p.status === "found_needs_check")
   ) {
     if (p.url.includes("/wiki/File:")) return null;
