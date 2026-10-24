@@ -11,6 +11,11 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24 night run, restart after early stop: nothing shipped
+
+- No claims standing, sighting inbox empty. READY leads are 3 (Oxford 2, Madrid 1), all our own trees, held by SUPPLY_PAUSED and ADD_NEEDS_PHOTO, so no write pass.
+- iOS red is the known SweepFrames xcodebuild hang (killed at 30 min, run 40013002762); needs a Mac session. Smoke "skipped" is the normal push-skip.
+
 ## 2026-10-24 night run (02:55): nothing shipped
 
 - Inbox empty, READY still 3 photo-less own trees (supply paused), prepare.py shelf unchanged. health.py exit 1 is the same iOS appfit hang (run 40017321068) plus a skipped smoke test; no source fix possible from Linux. Stirling RETRY not repeated: already stalled twice on 10-23. Nothing new since the sixteenth attempt; waiting on Search Console or a reader's tree.
