@@ -39,7 +39,7 @@ FREEMAIL = {"gmail.com", "hotmail.com", "yahoo.com", "outlook.com", "libero.it",
 MANUAL = ("notes", "linked", "linked_url", "segment", "hold")
 
 # The groups of the strategy, one ask each (OUTREACH_STRATEGY.md).
-SEGMENTS = ("source", "press", "tourism", "garden", "society", "guide", "council", "reader", "other")
+SEGMENTS = ("archive", "source", "press", "tourism", "garden", "society", "guide", "council", "reader", "other")
 EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$", re.I)
 JUNK = re.compile(r"example\.|beispiel|domein\.nl|przyklad|xxxxx|legalmail|^pec\.|@pec\.|"
                   r"abbonament|publicid|pubblicit|contabilid|rrhh|assinatur|suscrip|"

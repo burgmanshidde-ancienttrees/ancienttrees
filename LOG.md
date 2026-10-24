@@ -11,6 +11,10 @@
 
 So absence from this file is not evidence something was never tried: `grep -ri "<place>" archive/` before concluding a hunt is new. Re-running an exhausted hunt is this project's most repeated waste.
 <!-- archive-index -->
+## 2026-10-24 session: the night run asks for photo archives, no more Commons hunting for Google
+
+**What changed:** rung 4 now drafts archive asks after Reddit: societies, photographers and ambassadors who hold photographs of our trees that are on no open site, asked to let us use them, credited (new group `archive` in OUTREACH_STRATEGY.md and contacts_db.py, first among the groups). Commons photo sweeps only when nothing else is left, for readers. Why: one archive gave Copenhagen 32 pages in Google, all readers together 51 photos. **For the night run:** the `archive` group has no feeder script yet; start from the warm repliers (society 12, garden 6), the ambassadors and the societies in data/outreach-contacts-*.json, and log what a feeder would need.
+
 ## 2026-10-24 session: the reader cut, Google sees only pages with reader content
 
 **What changed:** Google is now asked to show only tree pages with something a reader gave us (a unique photo, a reader's photo in the strip, a reader-found tree) and the place pages of cities where one tree has it, plus home and the site's own pages (Hidde: "ik ga liever te ver en voeg langzaam weer dingen toe"). 105 tree pages and 27 place pages in 34 cities stay, down from 598 tree pages; 1,413 more pages carry the googlebot noindex, Bing keeps everything. `READER_ONLY` in scripts/thin_pages.py, one flag back. A reader's photograph on a tree returns its page by itself. **For the night run:** Commons photos no longer put a page in Google; the photo lane prepares the first step back (data/index-kept.json still names the demand cut's 108 cities), reader input is what grows the index. **Not verified locally:** qa.py needs the Astro build, so the split check runs in CI on deploy.
