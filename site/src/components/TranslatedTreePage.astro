@@ -120,6 +120,8 @@ const nearbyCards = nearby.map((t) => ({
     { latitude: loc.latitude!, longitude: loc.longitude! },
     { latitude: t.location.latitude!, longitude: t.location.longitude! })),
 }));
+// The nearest three, for the borrowed note under an empty notes block.
+const nearNotes = nearbyCards.map((n) => ({ id: n.id, name: n.name, url: n.url }));
 // Names only, as the app labels its chips (2026-09-24).
 const chips = [
   { href: `/${lang}/${cslug}`, label: tr.city, icon: "buildings" },
@@ -145,7 +147,6 @@ const ageValue = ageNumber ?? (ageText.length > 24 ? "" : ageText) || U.unknownA
     recognise={null} address={loc.address ?? null}
     district={placeDistrict(loc.neighbourhood, tr.city)}
     cityName={tr.city} cityUrl={`/${lang}/${cslug}`} crumbs={crumbItems} canonical={canonical}
-    nearNotes={nearbyCards.map((n) => ({ id: n.id, name: n.name, url: n.url }))}
-    shots={shots} nearby={nearbyCards} chips={chips} />
+    nearNotes={nearNotes} shots={shots} nearby={nearbyCards} chips={chips} />
   <Fragment slot="scripts" set:html={scripts} />
 </Base>
