@@ -3610,7 +3610,10 @@ body:has(form.hero-search) .nav-search, body:has(form.ex-search) .nav-search { d
 .td-note-ghost-l { display: block; font-size: 12px; color: var(--ink-light); }
 .td-note-ghost p { font-style: italic; color: var(--ink-light); font-size: 15px; }
 .td-notes-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; align-items: flex-start; }
-.td-notes-btns .addphoto { display: flex; flex-direction: column; }
+.td-notes-btns .addphoto { display: flex; flex-direction: column; margin-top: 0; }
+/* Both pills the same 44 (Hidde, 2026-10-24: "niet goed uitgelijnd"): the
+   photo one filled, the note quiet. */
+.td-notes-btns .addphoto-btn { min-height: 44px; height: 44px; padding: 0 1.1rem; display: inline-flex; align-items: center; font-size: 15px; }
 .td-notes-btns .addphoto-note { font-size: 13px; margin: 6px 0 0; }
 .td-notes[hidden] { display: none; }
 

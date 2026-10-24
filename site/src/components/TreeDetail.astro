@@ -296,6 +296,40 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
         <button type="button" class="td-story-more" data-more={U.readMore} data-less={U.readLess} hidden>{U.readMore}</button>
       </div>
 
+      {/* FROM PEOPLE WHO STOOD HERE (2026-10-24; CONVENTIONS.md "Notes from
+          visitors on a tree page"): komoot's Tips, AllTrails' reviews. One
+          note per person per tree, dated, live at once, no replies or likes.
+          Filled by TREE_NOTES_JS; what is rendered here is the empty state's
+          ghost example (Apple HIG: show what the content will look like),
+          replaced by the real notes, or by the nearest tree's real note when
+          this tree has none (Airbnb). One button, the guidance inside the
+          sheet (Hidde: "the text and button dont really work together").
+          Above Getting there since 16:09 the same day (Hidde: "onder getting
+          there te veel niet interessante info om zo hoog te staan, dus
+          omwisselen"). The photo offer leads the row and is the filled pill
+          (Hidde, same message: "de add photo moet meer aandacht krijgen");
+          the note is the quiet one. Google Maps keeps Add a photo and Write a
+          review together under the place. */}
+      <section class="td-section td-notes" id="td-notes" data-tree={tree.id} data-near={nearNotesJson}
+        data-yours={U.noteYours} data-visitor={U.noteVisitor} data-none={U.notesNone} data-borrowed={U.notesBorrowed}
+        data-signin={U.noteSignIn} data-saving={U.noteSaving} data-failed={U.noteFailed} data-add={U.noteAdd}
+        data-save={U.noteSave} data-shown-as={U.noteShownAs("{name}")} data-shown-anon={U.noteShownAnon}
+        data-leaf-icon={icon("leaf", "fill")}>
+        <h2>{U.notesHeading}</h2>
+        <div class="td-notes-body">
+          <div class="td-note td-note-ghost" aria-hidden="true">
+            <span class="td-note-ghost-l">{U.notesExampleLabel}</span>
+            <p>{U.notesExample}</p>
+          </div>
+        </div>
+        <div class="td-notes-btns">
+          {photo && photo.url && (
+            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} />
+          )}
+          <button type="button" class="addphoto-btn quiet td-note-ask" id="td-note-ask">{U.noteAsk}</button>
+        </div>
+      </section>
+
       {/* GETTING THERE: ONE BLOCK WITH A HEADING, as the app draws it (Hidde,
           2026-10-24: "the app section of getting there looks better, should
           we get that one in web as well?"). Four rows, icon left: the address,
@@ -311,37 +345,6 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
           {p.transport && <p><Fragment set:html={icon("train-simple")} /><span class="td-clamp td-clamp-2" data-more={U.readMore}>{p.transport}</span></p>}
         </section>
       )}
-
-      {/* FROM PEOPLE WHO STOOD HERE (2026-10-24; CONVENTIONS.md "Notes from
-          visitors on a tree page"): komoot's Tips, AllTrails' reviews. One
-          note per person per tree, dated, live at once, no replies or likes.
-          Filled by TREE_NOTES_JS; what is rendered here is the empty state's
-          ghost example (Apple HIG: show what the content will look like),
-          replaced by the real notes, or by the nearest tree's real note when
-          this tree has none (Airbnb). One button, the guidance inside the
-          sheet (Hidde: "the text and button dont really work together").
-          The photo offer sits beside it on a page that has a picture: Google
-          Maps keeps Add a photo and Write a review together under the place
-          (2026-10-13: "takes up prime space" above the story). */}
-      <section class="td-section td-notes" id="td-notes" data-tree={tree.id} data-near={nearNotesJson}
-        data-yours={U.noteYours} data-visitor={U.noteVisitor} data-none={U.notesNone} data-borrowed={U.notesBorrowed}
-        data-signin={U.noteSignIn} data-saving={U.noteSaving} data-failed={U.noteFailed} data-add={U.noteAdd}
-        data-save={U.noteSave} data-shown-as={U.noteShownAs("{name}")} data-shown-anon={U.noteShownAnon}
-        data-leaf-icon={icon("leaf", "fill")}>
-        <h2>{U.notesHeading}</h2>
-        <div class="td-notes-body">
-          <div class="td-note td-note-ghost" aria-hidden="true">
-            <span class="td-note-ghost-l">{U.notesExampleLabel}</span>
-            <p>{U.notesExample}</p>
-          </div>
-        </div>
-        <div class="td-notes-btns">
-          <button type="button" class="addphoto-btn quiet td-note-ask" id="td-note-ask">{U.noteAsk}</button>
-          {photo && photo.url && (
-            <AddPhoto treeId={tree.id} treeName={p.name} lat={loc.latitude!} lng={loc.longitude!} lang={p.lang} quiet />
-          )}
-        </div>
-      </section>
 
       {p.seasonHtml && <Fragment set:html={p.seasonHtml} />}
 

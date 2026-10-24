@@ -477,7 +477,9 @@ export function seasonBlock(tree: Tree, lat: number): string {
   const [vals, moments] = highlightCurve(ph);
   if (Math.max(...vals) - Math.min(...vals) < 0.02) {
     if (hasBt) return seasonCurve(tree);
-    return '<p class="ph-foot ph-noseason">This tree looks much the same in every month of the year, so there is no season to chart.</p>';
+    // Nothing: an honest gap is silent (Hidde, 2026-10-24: "de season chart
+    // als die er niet is gewoon leeg laten, niks zeggen").
+    return "";
   }
 
   const now = new Date().getMonth() + 1;
