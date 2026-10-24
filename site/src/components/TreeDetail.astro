@@ -188,15 +188,15 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
         </Fragment>
       </PhotoFigure>
     ) : (
-      {/* NO PHOTOGRAPH: THE MAP IS THE PICTURE (Hidde, 2026-10-24, CONVENTIONS.md
-          "A tree page without a photograph: the map is the picture"). Google
-          Maps always opens a place on the map; AllTrails' preview map stands
-          alone when a trail has no photos; none of them draws an empty frame.
-          The one #map element fills the stage, non-interactive, the whole
-          stage a link to the city map on this tree; at its foot one card
-          carries the ask and the existing Add a photo control. No inset, no
-          swap button: the hero is the map. */}
       <figure class="tree-noph tree-hero td-nophoto">
+        {/* NO PHOTOGRAPH: THE MAP IS THE PICTURE (Hidde, 2026-10-24, CONVENTIONS.md
+            "A tree page without a photograph: the map is the picture"). Google
+            Maps always opens a place on the map; AllTrails' preview map stands
+            alone when a trail has no photos; none of them draws an empty frame.
+            The one #map element fills the stage, non-interactive, the whole
+            stage a link to the city map on this tree; at its foot one card
+            carries the ask and the existing Add a photo control. No inset, no
+            swap button: the hero is the map. */}
         <div class="photo-stage">
           <div class="td-inset"><div id="map" class="map td-map"></div></div>
           <a class="td-inset-hit" href={expandUrl} aria-label={U.openFullMap} title={U.openFullMap}></a>
@@ -233,11 +233,12 @@ const nearNotesJson = JSON.stringify((p.nearNotes ?? []).slice(0, 12));
               exists, and the thumb. The 2026-10-08 country-city-district line
               is superseded. Without a district the city stands in, so the
               row never shows a lone thumb. */}
-          <p class="tree-place">{districtShown
-            ? <span class="tree-place-district">{districtShown}</span>
-            : (!parkLink && <a href={p.cityUrl}>{p.cityName}</a>)}{parkLink && (
-            <Fragment>{districtShown && <span class="tree-place-sep" aria-hidden="true">·</span>}<a href={parkLink.url}>{parkLink.name}</a></Fragment>
-          )}</p>
+          <p class="tree-place">
+            {districtShown && <span class="tree-place-district">{districtShown}</span>}
+            {!districtShown && !parkLink && <a href={p.cityUrl}>{p.cityName}</a>}
+            {districtShown && parkLink && <span class="tree-place-sep" aria-hidden="true">·</span>}
+            {parkLink && <a href={parkLink.url}>{parkLink.name}</a>}
+          </p>
           <span class="tree-place-dot" aria-hidden="true">·</span>
           <WorthIt treeId={tree.id} city={p.cityName} treeName={p.name} part="vote" lang={p.lang} />
         </div>
