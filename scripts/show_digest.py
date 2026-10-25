@@ -8,6 +8,7 @@ order, nothing reworded), and chat carries only what needs him: the two lines
 this script prints.
 
     python3 scripts/show_digest.py        # build the page, print the top lines
+    python3 scripts/show_digest.py --seen # after he has looked: everything on that page is seen
 
 Written to out/digest/index.html and mirrored next to the inspect page, so the
 same preview server shows both: `preview_start {name: "inspect"}`, then open
@@ -17,6 +18,7 @@ server (four lines; /private/tmp can be cleared on a reboot).
 import datetime
 import hashlib
 import html
+import json
 import os
 import re
 import sys
@@ -81,8 +83,26 @@ def readers_words(md, day):
     return text, shown, missing
 
 
+SEEN_AT = os.path.join(ROOT, "data", "digest-seen.json")
+BUILT = os.path.join(OUT, "built.json")
+
+
+def last_seen():
+    """When Hidde last looked at this page, as UTC ISO, or None.
+
+    Hidde, 2026-10-25: "zorg dat ik vanaf nu elke dag bij de digest alles wat
+    wordt ingestuurd zie". The page shows everything sent since he last
+    looked, not since the digest's day, so a skipped morning hides nothing.
+    `show_digest.py --seen` moves the mark to when the page he saw was built."""
+    try:
+        return json.load(open(SEEN_AT, encoding="utf-8")).get("seen_at")
+    except Exception:
+        return None
+
+
 def readers_in_full(day):
-    """Everything a stranger sent since the digest's day, word for word.
+    """Everything a stranger sent since Hidde last looked (else since the
+    digest's day), word for word.
 
     Hidde, 2026-10-25, after a Porto ambassador request reached the digest as
     "1 feedback report": "ik wil vanaf nu altijd exacte feedback berichten in
@@ -97,7 +117,9 @@ def readers_in_full(day):
     key = inbox.load_key()
     if not key:
         return "**Everything readers sent, in full**: no database key on this Mac, nothing read."
-    since = urllib.parse.quote(day + "T00:00:00")
+    since_iso = last_seen() or (day + "T00:00:00")
+    day = since_iso[:16].replace("T", " ") + " UTC, when you last looked" if last_seen() else day
+    since = urllib.parse.quote(since_iso)
     rows = []
     try:
         for r in inbox.get("/rest/v1/submissions?select=id,created_at,kind,city,tree,page,why,"
@@ -219,7 +241,29 @@ code{padding:1px 4px}pre{padding:10px;overflow-x:auto}a{color:#3d6b35}ul{padding
 %(body)s</body></html>"""
 
 
+def mark_seen():
+    """He has looked: everything up to when that page was built is seen, and
+    so is every reader photograph it counted."""
+    try:
+        built = json.load(open(BUILT, encoding="utf-8"))["built_at"]
+    except Exception:
+        print("show_digest: build the page first (python3 scripts/show_digest.py); nothing marked")
+        return 1
+    with open(SEEN_AT, "w", encoding="utf-8") as fh:
+        json.dump({"_note": "When Hidde last looked at the digest page (show_digest.py --seen). "
+                            "The page shows everything readers sent after this.", "seen_at": built}, fh, indent=1)
+    import subprocess
+    subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "reader_photos.py"), "--seen"])
+    print("show_digest: seen up to %s UTC" % built)
+    return 0
+
+
 def main():
+    if "--seen" in sys.argv:
+        return mark_seen()
+    os.makedirs(OUT, exist_ok=True)
+    with open(BUILT, "w", encoding="utf-8") as fh:
+        json.dump({"built_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")}, fh)
     head, md = newest_entry()
     if head is None:
         print("DATA.md carries no day entry")

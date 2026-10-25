@@ -665,6 +665,28 @@ def check_notes_are_read_before_they_are_marked_read():
     return out
 
 
+def check_everything_sent_reaches_hidde():
+    """The digest page shows everything readers sent since Hidde last looked.
+
+    Hidde, 2026-10-25: "zorg dat ik vanaf nu elke dag bij de digest alles wat
+    wordt ingestuurd zie". Submissions, tree notes and app-photo notes word for
+    word (readers_in_full), counted from his last look (last_seen, set by
+    `show_digest.py --seen`), never only from the digest's day, so a skipped
+    morning hides nothing. Removing this check needs Hidde.
+    """
+    root = Path(__file__).resolve().parent.parent
+    show = (root / "scripts/show_digest.py").read_text(encoding="utf-8")
+    need = {"def last_seen(": "a record of when he last looked",
+            "since_iso = last_seen()": "readers_in_full() counting from his last look",
+            "md = readers_in_full(day)": "the page calling readers_in_full()",
+            "def mark_seen(": "the --seen mark",
+            "tree_notes?select": "notes on trees",
+            "sightings?select": "app-photo notes",
+            "submissions?select": "submissions"}
+    return ["scripts/show_digest.py lost %s: the digest page must show everything readers sent since "
+            "Hidde last looked (Hidde, 2026-10-25)." % why for frag, why in need.items() if frag not in show]
+
+
 def check_every_reader_photo_reaches_hidde():
     """The digest page counts and links every reader photograph he has not seen.
 
@@ -3343,6 +3365,7 @@ def main():
         check_notes_are_read_before_they_are_marked_read,
         check_ambassador_requests_reach_hidde,
         check_every_reader_photo_reaches_hidde,
+        check_everything_sent_reaches_hidde,
         check_every_site_route_is_claimed_or_excluded,
         check_app_downloads_are_their_own_block,
         check_auth_corpus_agreement,
@@ -3541,6 +3564,7 @@ def main():
     failures += check_notes_are_read_before_they_are_marked_read()
     failures += check_ambassador_requests_reach_hidde()
     failures += check_every_reader_photo_reaches_hidde()
+    failures += check_everything_sent_reaches_hidde()
     failures += check_every_site_route_is_claimed_or_excluded()
     failures += check_a_stored_session_is_verified_with_the_server()
     failures += check_run_prompt_forbids_compound_commands()
