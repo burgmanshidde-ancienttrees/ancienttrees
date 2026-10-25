@@ -116,6 +116,10 @@
     "2026-10-24": {
       "note": "Postbox check failed 11:35 only on sqlcheck: tree_notes.sql not yet pasted; LOG 86c647b6b says the table is live since, next scheduled run should be green",
       "at": "2026-10-24T16:45:02+00:00"
+    },
+    "2026-10-25": {
+      "note": "Smoke test skips are by design (smoke.yml line 36: not on claude[bot] pushes); last scheduled run 10-24 18:54 and last person push 22:37 succeeded. Build and deploy green.",
+      "at": "2026-10-25T08:54:45+00:00"
     }
   }
 }
