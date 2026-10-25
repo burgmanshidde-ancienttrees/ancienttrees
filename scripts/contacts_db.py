@@ -39,7 +39,7 @@ FREEMAIL = {"gmail.com", "hotmail.com", "yahoo.com", "outlook.com", "libero.it",
 MANUAL = ("notes", "linked", "linked_url", "segment", "hold")
 
 # The groups of the strategy, one ask each (OUTREACH_STRATEGY.md).
-SEGMENTS = ("archive", "source", "press", "tourism", "garden", "society", "guide", "council", "reader", "other")
+SEGMENTS = ("archive", "nature", "guide", "source", "press", "tourism", "garden", "society", "council", "reader", "other")
 EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$", re.I)
 JUNK = re.compile(r"example\.|beispiel|domein\.nl|przyklad|xxxxx|legalmail|^pec\.|@pec\.|"
                   r"abbonament|publicid|pubblicit|contabilid|rrhh|assinatur|suscrip|"
@@ -78,8 +78,8 @@ def norm(a):
 def guess_segment(c):
     t = (c.get("type") or "").lower()
     blob = " ".join(str(c.get(k) or "") for k in ("org", "email", "source_url", "outlet"))
-    if t == "archive":  # typed by the night run's sourcing (data/outreach-contacts-archive.json)
-        return "archive"
+    if t in ("archive", "nature", "guide"):  # typed by the night run's sourcing
+        return t
     if "press" in t or "(press" in blob or t in ("newspaper", "media", "broadcaster"):
         return "press"
     if t in ("garden", "arboretum", "park", "cemetery", "estate", "university"):
